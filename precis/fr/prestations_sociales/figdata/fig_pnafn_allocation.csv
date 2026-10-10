@@ -1,46 +1,67 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-09-25
-# séries (tunisia_data) : pnafn-allocation, ipc-pnafn-base1987
-# sources (citation) : @arrete-2024-07-10-allocation-pauvres, @ins-annuaire
-# fiches : 
-# méthode/hypothèses : Les dates de tous les paliers et les montants antérieurs à 180 dinars restent à fiabiliser. Le pouvoir d'achat est calculé avec l'indice annuel moyen des prix à la consommation., Indice reconstitué par chaînage des taux annuels publiés par l'INS. Une date en cours d'année est déflatée par l'indice annuel moyen.
-# note : Allocation mensuelle du PNAFN, en dinars courants et constants de 1987, 1987-2018
-Date de l'état,Allocation mensuelle (D courants),Pouvoir d'achat (D constants de 1987),Point de mesure,Attestation
-1^er^ janvier 1987,"7,7","7,7",Changement de palier,À fiabiliser
-1^er^ janvier 1988,"7,7","7,2",Repère annuel,À fiabiliser
-1^er^ janvier 1989,"7,7","6,7",Repère annuel,À fiabiliser
-1^er^ janvier 1990,"7,7","6,3",Repère annuel,À fiabiliser
-1^er^ janvier 1991,"7,7","5,8",Repère annuel,À fiabiliser
-1^er^ janvier 1992,"7,7","5,5",Repère annuel,À fiabiliser
-1^er^ janvier 1993,"7,7","5,3",Repère annuel,À fiabiliser
-1^er^ janvier 1994,"7,7","5,1",Repère annuel,À fiabiliser
-1^er^ janvier 1995,"7,7","4,8",Repère annuel,À fiabiliser
-1^er^ janvier 1996,"7,7","4,6",Repère annuel,À fiabiliser
-1^er^ janvier 1997,"7,7","4,4",Repère annuel,À fiabiliser
-1^er^ janvier 1998,"7,7","4,3",Repère annuel,À fiabiliser
-1^er^ janvier 1999,"7,7","4,2",Repère annuel,À fiabiliser
-1^er^ janvier 2000,"36,3","19,1",Changement de palier,À fiabiliser
-1^er^ janvier 2001,"36,3","18,8",Repère annuel,À fiabiliser
-1^er^ janvier 2002,"36,3","18,2",Repère annuel,À fiabiliser
-1^er^ janvier 2003,"36,3","17,8",Repère annuel,À fiabiliser
-1^er^ janvier 2004,"36,3","17,1",Repère annuel,À fiabiliser
-1^er^ janvier 2005,"36,3","16,8",Repère annuel,À fiabiliser
-1^er^ janvier 2006,"36,3","16,1",Repère annuel,À fiabiliser
-1^er^ janvier 2007,"36,3","15,6",Repère annuel,À fiabiliser
-1^er^ janvier 2008,"36,3","14,9",Repère annuel,À fiabiliser
-1^er^ janvier 2009,"53,333","21,1",Changement de palier,À fiabiliser
-1^er^ juillet 2009,"56,666","22,4",Changement de palier,À fiabiliser
-1^er^ janvier 2010,"56,666","21,5",Repère annuel,À fiabiliser
-1^er^ juillet 2010,"63,333",24,Changement de palier,À fiabiliser
-1^er^ janvier 2011,"63,333","23,2",Repère annuel,À fiabiliser
-1^er^ juillet 2011,70,"25,6",Changement de palier,À fiabiliser
-1^er^ janvier 2012,70,"24,2",Repère annuel,À fiabiliser
-1^er^ avril 2012,100,"34,6",Changement de palier,À fiabiliser
-1^er^ janvier 2013,100,"32,6",Repère annuel,À fiabiliser
-1^er^ juillet 2013,110,"35,9",Changement de palier,À fiabiliser
-1^er^ janvier 2014,110,34,Repère annuel,À fiabiliser
-1^er^ juillet 2014,120,"37,1",Changement de palier,À fiabiliser
-1^er^ janvier 2015,150,"44,3",Changement de palier,À fiabiliser
-1^er^ janvier 2016,150,"42,7",Repère annuel,À fiabiliser
-1^er^ janvier 2017,150,"40,6",Repère annuel,À fiabiliser
-1^er^ janvier 2018,150,"37,8",Repère annuel,À fiabiliser
-1^er^ avril 2018,180,"45,3",Changement de palier,À fiabiliser
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : pnafn-allocation, pnafn-transfert-smig-banque-mondiale, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @arrete-2024-07-10-allocation-pauvres, @banquemondiale2022pad4815, @banquemondiale2026ppiaf000292, @bct-ra, @ins-annuaire
+# fiches : sources/amen-social-etudes-rapports.md, sources/bct-archives.md
+# méthode/hypothèses : Les dates de tous les paliers et les montants antérieurs à 180 dinars restent à fiabiliser. Le montant de 180 dinars est constaté par l'arrêté conjoint du 10 juillet 2024 à la date de sa publication. Le pouvoir d'achat est calculé avec l'indice annuel moyen des prix à la consommation., LU À L'IMAGE (400 dpi), chaque étiquette au-dessus de sa barre ; l'appariement est confirmé par le texte de la pièce (180/379 = 47,5 % pour « 47 percent » en 2018 ; 180/429 = 42,0 % pour « 42 percent » en 2021). QUINZE ANNÉES IRRÉGULIÈRES : ni 1988-1989, ni 1991-1994, ni 2016-2017 ; RIEN N'EST INTERPOLÉ, et un palier lu une année ne dit pas depuis quand il vaut. CHIFFRES DE SECONDE MAIN SUR LE DROIT : la source dite est « Institut National de la Statistique and MoSA data », AUCUN TEXTE N'EST CITÉ ; à ne pas prendre pour un barème légal (la figure donne 15 D en 1990 et 25,8 D en 1995). Régime du salaire minimum non dit (40 ou 48 heures). La courbe du rapport transfert / salaire minimum n'a pas d'étiquettes : NON LUE ; le rapport ne figure qu'au fichier des recoupements, calculé. PPIAF000292 écrit 7,9 % en 1987, les étiquettes donnent 7,7 / 105 = 7,3 % : non tranché. La figure 3 de PPIAF000292 (1987-2025) est sans étiquettes : non lue., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Allocation mensuelle du programme national d'aide aux familles nécessiteuses, en dinars courants et en dinars constants de 2025, 1987-2024 : série du chapitre et, à part, quinze valeurs annuelles d'une figure de la Banque mondiale, 1987-2021
+Série,Date de l'état,Allocation mensuelle (D courants),Pouvoir d'achat (D de 2025),Point de mesure
+Série du chapitre (paliers),1^er^ janvier 1987,"7,7","48,7",Changement de palier
+Série du chapitre (paliers),1^er^ janvier 1988,"7,7","45,4",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1989,"7,7","42,2",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1990,"7,7","39,6",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1991,"7,7","36,7",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1992,"7,7","34,8",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1993,"7,7","33,4",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1994,"7,7","31,9",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1995,"7,7","30,1",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1996,"7,7",29,Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1997,"7,7",28,Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1998,"7,7","27,1",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 1999,"7,7","26,4",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2000,"36,3","120,9",Changement de palier
+Série du chapitre (paliers),1^er^ janvier 2001,"36,3","118,6",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2002,"36,3","115,3",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2003,"36,3","112,3",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2004,"36,3","108,4",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2005,"36,3","106,2",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2006,"36,3",102,Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2007,"36,3","98,6",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2008,"36,3",94,Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2009,"53,333","133,3",Changement de palier
+Série du chapitre (paliers),1^er^ juillet 2009,"56,666","141,7",Changement de palier
+Série du chapitre (paliers),1^er^ janvier 2010,"56,666","135,7",Repère annuel
+Série du chapitre (paliers),1^er^ juillet 2010,"63,333","151,7",Changement de palier
+Série du chapitre (paliers),1^er^ janvier 2011,"63,333","146,5",Repère annuel
+Série du chapitre (paliers),1^er^ juillet 2011,70,"161,9",Changement de palier
+Série du chapitre (paliers),1^er^ janvier 2012,70,"153,4",Repère annuel
+Série du chapitre (paliers),1^er^ avril 2012,100,"219,1",Changement de palier
+Série du chapitre (paliers),1^er^ janvier 2013,100,"206,5",Repère annuel
+Série du chapitre (paliers),1^er^ juillet 2013,110,"227,1",Changement de palier
+Série du chapitre (paliers),1^er^ janvier 2014,110,"215,3",Repère annuel
+Série du chapitre (paliers),1^er^ juillet 2014,120,"234,9",Changement de palier
+Série du chapitre (paliers),1^er^ janvier 2015,150,"280,4",Changement de palier
+Série du chapitre (paliers),1^er^ janvier 2016,150,"270,3",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2017,150,"256,7",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2018,150,"238,9",Repère annuel
+Série du chapitre (paliers),1^er^ avril 2018,180,"286,6",Changement de palier
+Série du chapitre (paliers),1^er^ janvier 2019,180,"268,4",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2020,180,"254,1",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2021,180,"240,4",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2022,180,"221,9",Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2023,180,203,Repère annuel
+Série du chapitre (paliers),1^er^ janvier 2024,180,"189,7",Repère annuel
+"Banque mondiale, figure de 2022 (valeur de l'année)",1987,"7,7","48,7","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",1990,15,"77,1","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",1995,"25,8","100,7","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2000,"36,3","120,9","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2005,"43,3","126,7","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2010,"56,7","135,8","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2011,"68,3",158,"Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2012,"92,5","202,7","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2013,105,"216,8","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2014,115,"225,1","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2015,150,"280,4","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2018,180,"286,6","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2019,180,"268,4","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2020,180,"254,1","Étiquette de la figure, année entière"
+"Banque mondiale, figure de 2022 (valeur de l'année)",2021,180,"240,4","Étiquette de la figure, année entière"

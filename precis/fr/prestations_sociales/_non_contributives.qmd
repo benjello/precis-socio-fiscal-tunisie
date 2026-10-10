@@ -1,4 +1,4 @@
-# Les prestations non contributives (assistance sociale) {#sec-prest-non-contributives}
+# L'assistance sociale : du programme d'aide aux familles nécessiteuses à l'Amen social {#sec-prest-non-contributives .domicile-unique}
 
 ```{python}
 #| echo: false
@@ -6,8 +6,11 @@
 import sys
 from pathlib import Path
 
+sys.path.insert(0, ".")
 sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import figtools
 import openfisca_tables as ot
+from figures import assistance as fig_as
 
 TABLES = Path.cwd() / "tables"
 
@@ -24,227 +27,293 @@ def table(nom, legende, label):
     print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
 ```
 
-Ce bloc associe les transferts et aides monétaires du PNAFN et de l'AMEN social aux soins non monétaires ouverts par l'assistance médicale et par l'AMEN [@loi-86-83-lfr-1986, art. 13 ; @loi-87-29-amg, art. 1-4 ; @loi-amen-social-2019, art. 11-13].
+Les allocations familiales servies par les caisses de sécurité sociale en contrepartie de cotisations ont leur propre chapitre (@sec-prest-familiales) ; les subventions aux prix des produits de base, ouvertes à tout acheteur, sont l'objet du volume [« La compensation »](../compensation/index.html) ; les pensions minimales des régimes de retraite sont traitées dans le volume [« Retraites »](../retraites/index.html).
 
-## Comment l'assistance est attribuée
+Ce chapitre décrit l'assistance sociale : les aides que l'État sert sans cotisation préalable, sous condition de ressources, aux ménages qu'il désigne comme pauvres ou à revenu limité. Elle réunit quatre ensembles : une aide monétaire permanente — l'allocation du [programme national d'aide aux familles nécessiteuses](#g-pnafn) (PNAFN), versée depuis les années 1980, puis le [transfert monétaire](#g-transfert-monetaire) du programme [Amen social](#g-amen-social), depuis 2020 — ; l'accès gratuit ou à tarif réduit aux soins publics ; des allocations pour enfants ; des aides ponctuelles liées aux fêtes, à la rentrée scolaire ou à une situation particulière.
 
-La chaîne de l'assistance ne comporte pas les mêmes maillons que celle de la sécurité sociale. Les textes cités permettent d'en distinguer cinq étapes.
+Le chapitre donne l'état du droit en 2026, puis la mise en place et les réformes dans l'ordre des dates, puis une section par dispositif. Deux sections chiffrées le terminent, tenues séparées : ce que l'administration constate — allocataires et crédits —, puis ce que les études estiment — ciblage, effet sur la pauvreté, coût. Les montants sont en dinars (D) et en millions de dinars courants (MD).
 
-1. **Le [ciblage](#g-ciblage).** Il désigne la population visée : « familles nécessiteuses » dans le vocabulaire des années 1980, « [catégories pauvres](#g-categories-pauvres) » et « [catégories à revenu limité](#g-categories-revenu-limite) » depuis 2019. Le ciblage a pris trois formes successives : la condition d'état sans barème (« tout tunisien indigent »), la condition de revenu chiffrée en multiples du salaire minimum, et depuis 2020 le score.
-2. **La condition de ressources.** Elle est exprimée en fractions ou multiples du salaire minimum et modulée par la taille du ménage.
-3. **Le contingentement.** Deux des dispositifs majeurs — les cartes de soins gratuits et à tarifs réduits — ne sont pas des droits ouverts sous condition de ressources mais des **prestations à enveloppe fermée**, attribuées dans la limite d'un nombre global de cartes et de quotas régionaux dont les décrets renvoient la fixation à des arrêtés conjoints.
-4. **Le score.** Depuis 2020, un modèle de *scoring* fondé sur le « test des moyens approximé » (*proxy means test*) et sur une définition multidimensionnelle de la pauvreté classe les demandeurs. L'arrêté du 19 mai 2020 en énumère les dimensions sans fixer les pondérations [@arrete-2020-05-19-scoring, art. 2-3].
-5. **Le montant et la durée.** Le montant du transfert AMEN est fixé par des arrêtés conjoints depuis 2020. Pour le PNAFN, les arrêtés de 2024, de 2025 et de 2026 constatent un montant et organisent son relèvement.
+## Vue d'ensemble {#sec-nc-vue-ensemble}
 
-Les sections qui suivent exposent séparément ces cinq étapes et les textes qui les régissent.
-
-## Le PNAFN, de 1986 à l'AMEN social
-
-### Le financement budgétaire
-
-L'article 13 de la loi de finances rectificative de 1986 autorise les organismes de sécurité sociale « à participer au financement du programme national d'aide aux familles nécessiteuses » et renvoie à un arrêté conjoint pour fixer leur contribution annuelle [@loi-86-83-lfr-1986, art. 13].
-
-Les trois textes de financement se lisent en série.
-
-| Date | Texte | Ce qu'il établit |
-|---|---|---|
-| 1^er^ septembre 1986 | loi n° 86-83, art. 13 [@loi-86-83-lfr-1986, art. 13] | les organismes de sécurité sociale sont **autorisés à participer** au financement ; la contribution annuelle de chacun sera fixée par arrêté conjoint |
-| 6 janvier 1987 | arrêté conjoint [@arrete-1987-01-06-financement-pnafn, art. 1-2] | contribution pour l'année 1986 : **4 000 000 D** pour la CNRPS et **4 000 000 D** pour la CNSS, soit 8 millions de dinars à parts égales |
-| 31 décembre 1987 | loi n° 87-83, art. 67 [@loi-87-83-lf-1988, art. 67] | un montant de **2 500 000 D** est recouvré **annuellement au profit du budget général de l'État** ; la contribution de chaque organisme sera fixée par arrêté du Premier ministre |
-
-Ces textes établissent une contribution de 8 millions de dinars au titre de 1986, répartie à parts égales entre la CNRPS et la CNSS, puis un prélèvement annuel de 2,5 millions de dinars au profit du budget général de l'État. À compter de la loi de finances pour 1988, la répartition entre organismes relève d'un arrêté du Premier ministre.
-
-### Le programme comme fournisseur de listes
-
-Les textes de l'aide médicale utilisent aussi les listes du programme. Le décret n° 98-1812 prévoit que la première liste des bénéficiaires de la carte de soins gratuits tienne compte des « listes nominatives des bénéficiaires des aides permanentes dans le cadre des programmes nationaux d'aide aux nécessiteux » [@decret-98-1812-amg1, art. 5]. Le décret n° 2012-2521 dispose ensuite que la liste des éligibles est élaborée au vu des listes des bénéficiaires et des éligibles aux aides monétaires directes accordées dans le cadre du programme national d'aide aux familles nécessiteuses [@decret-2012-2521-amg1-pnafn, art. 5].
-
-Le décret n° 2014-1526 crée par ailleurs une unité de gestion par objectifs chargée d'instaurer une **banque de données sur les familles nécessiteuses et à revenu limité**, pour une durée de quatre ans en quatre étapes [@decret-2014-1526-banque-donnees, art. 3]. La loi organique de 2019 institue ensuite un registre de données sur les catégories pauvres et les catégories à revenu limité [@loi-amen-social-2019, art. 18 à 22].
-
-### Le montant de l'allocation
-
-La série historique disponible comporte onze paliers entre 1987 et 2018. Elle est conservée pour rendre visible l'évolution de longue période du montant mensuel.
-
-```{python}
-#| echo: false
-#| output: asis
-table("pnafn_allocation",
-      "Allocation mensuelle du programme national d'aide aux familles nécessiteuses : onze paliers de 1987 à 2018",
-      "tbl-pnafn-allocation")
-```
+En 2026, l'État verse aux ménages que le programme Amen social classe parmi les [catégories pauvres](#g-categories-pauvres) un transfert de base de 280 dinars par mois (@tbl-amen-base), augmenté de 10 dinars par enfant à charge de 6 à 18 ans (@tbl-amen-supplement) ; une allocation de 30 dinars par mois et par enfant, avant six ans puis de 6 à 18 ans, est ouverte aux catégories pauvres et aux [catégories à revenu limité](#g-categories-revenu-limite) (@tbl-amen-vs-afnc) ; les soins publics leur sont gratuits ou à tarif réduit. Les textes ne règlent pas l'articulation du supplément de 10 dinars avec l'allocation des 6 à 18 ans (@sec-af-non-contributive).
 
 ```{python}
 #| label: fig-pnafn-allocation
 #| echo: false
 #| output: asis
-import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import pnafn as fig_pnafn
-import figtools
 figtools.figure_tabs(
-    fig_pnafn.fig_allocation(), fig_pnafn.table(),
-    "pnafn-allocation", "ipc-pnafn-base1987",
+    fig_as.fig_aide_permanente(), fig_as.table_aide_permanente(),
+    fig_as.SERIE_PNAFN, fig_as.SERIE_PNAFN_BM, *fig_as.SERIES_IPC,
     slug="fig_pnafn_allocation",
-    caption="Allocation mensuelle du PNAFN, en dinars courants et constants de 1987, 1987-2018",
+    caption=("Allocation mensuelle du programme national d'aide aux familles nécessiteuses, "
+             "en dinars courants et en dinars constants de 2025, 1987-2024 : série du "
+             "chapitre et, à part, quinze valeurs annuelles d'une figure de la Banque "
+             "mondiale, 1987-2021"),
     note_lecture=(
-        "La courbe grise retrace les paliers en dinars courants. La courbe orange indique "
-        "le pouvoir d'achat du montant applicable, en dinars constants de 1987. Elle est "
-        "recalculée au début de chaque année afin de montrer l'érosion entre deux "
-        "revalorisations ; les losanges signalent les changements de palier. Les deux "
-        "séries partagent la même échelle et commencent donc ensemble à 7,7 dinars en 1987. "
-        "La conversion utilise l'indice annuel moyen des prix à la consommation : pour "
-        "les changements intervenus en cours d'année, elle ne mesure donc pas les prix du "
-        "mois exact. Le palier de "
-        "180 dinars est constaté par l'arrêté conjoint du 10 juillet 2024 à la date de sa "
-        "publication ; cet arrêté ne dit pas depuis quand ce montant est servi, et la date "
-        "du 1er avril 2018 à laquelle la série le place n'est établie par aucun texte "
-        "identifié. Les sources administratives de toutes les dates et des autres montants "
-        "restent à établir."
-    ),
+        "La courbe grise retrace les onze paliers de l'allocation en dinars courants, de "
+        "7,7 dinars en 1987 à 180 dinars en 2018. La courbe orange donne le pouvoir d'achat "
+        "du montant applicable, en dinars de 2025 : montant × indice des prix de 2025 / "
+        "indice des prix de l'année. Elle est recalculée au début de chaque année, ce qui "
+        "montre l'érosion entre deux revalorisations ; les losanges signalent les changements "
+        "de palier. Les 7,7 dinars de 1987 valent 48,7 dinars de 2025 ; les 36,3 dinars de "
+        "2000, 120,9 ; les 180 dinars de 2018, 286,6 à leur fixation et 189,7 en 2024. La "
+        "conversion emploie l'indice annuel moyen des prix à la consommation : pour un "
+        "changement intervenu en cours d'année, elle ne mesure pas les prix du mois exact. Le "
+        "montant de 180 dinars est constaté par l'arrêté conjoint du 10 juillet 2024 à la "
+        "date de sa publication : la figure le prolonge jusqu'à cette année. Cet arrêté ne "
+        "dit pas depuis quand ce montant est servi, et la date du 1^er^ avril 2018 à laquelle "
+        "la série le place n'est établie par aucun texte identifié. Les sources "
+        "administratives de toutes les dates et des autres montants restent à établir. "
+        "Les carrés bleus et les triangles violets sont une seconde famille, jamais reliée "
+        "à la première : les quinze valeurs annuelles du transfert mensuel du programme "
+        "qu'une figure de la Banque mondiale de 2022 imprime, en dinars courants puis "
+        "converties en dinars de 2025 par le même indice. Chaque point est placé au milieu "
+        "de son année ; rien n'est interpolé entre deux points. Cette figure donne pour "
+        "source « l'Institut national de la statistique et le ministère des Affaires "
+        "sociales », sans citer de texte. Les deux familles concordent en 1987 (7,7 "
+        "dinars), en 2000 (36,3), en 2015 (150) et de 2019 à 2021 (180) ; en 2012, 2013 et "
+        "2014, la valeur de la Banque mondiale (92,5 ; 105 ; 115) égale la moyenne sur "
+        "l'année des deux paliers de la série. Elles divergent ailleurs : 15 dinars en 1990 "
+        "et 25,8 en 1995, quand la série tient 7,7 dinars de 1987 à 2000 ; 43,3 en 2005, "
+        "quand elle tient 36,3 de 2000 à 2009 ; 56,7 en 2010, 68,3 en 2011 et 180 en 2018, "
+        "années où la série passe de 56,7 à 63,3, de 63,3 à 70 et de 150 à 180. En dinars "
+        "de 2025, l'écart est de 77,1 contre 39,6 en 1990, de 100,7 contre 30,1 en 1995 et "
+        "de 126,7 contre 106,2 en 2005. Aucune des deux familles n'est établie par un "
+        "texte : la figure ne tranche pas. Le transfert de l'Amen social, de 180 dinars en "
+        "2020 à 280 dinars en 2026, est au tableau de son montant de base."),
     generated="{{< meta date >}}",
 )
 ```
 
 <!-- TODO (documentaliste) : fiabiliser les onze montants et dates de la série PNAFN ;
-voir https://github.com/openfisca/openfisca-tunisia/issues/462. -->
+voir https://github.com/openfisca/openfisca-tunisia/issues/462. Les quinze valeurs annuelles de la figure 4 du PAD4815 de la
+Banque mondiale (série `pnafn-transfert-smig-banque-mondiale`), tracées à part, contredisent la série en 1990, 1995 et 2005 et
+ne coïncident pas en 2010, 2011 et 2018 : constat inscrit à docs/notes/backlog-modele.md. -->
 
-L'arrêté conjoint du 10 juillet 2024 constate que l'allocation est fixée à 180 dinars à la date de sa publication et autorise son augmentation dans la limite du [transfert monétaire](#g-transfert-monetaire) de l'AMEN social, alors fixé à 240 dinars [@arrete-2024-07-10-allocation-pauvres, art. 1]. Il ne fixe donc pas à lui seul le montant effectivement servi après ce relèvement. L'arrêté conjoint du 29 août 2025 porte de 240 à 260 dinars le montant auquel l'allocation peut être alignée, avec effet au 1^er^ janvier 2025 [@arrete-2025-08-29-allocation-pauvres, art. 1-2]. L'arrêté conjoint du 5 août 2026 remplace à son tour l'article premier de l'arrêté de 2024 : l'allocation, « fixée à 260 dinars à la date de la publication du présent arrêté conjoint », est augmentée « sans que le montant de cette allocation ne dépasse le montant des transferts monétaires mensuels directs attribués dans le cadre du programme « AMEN SOCIAL », fixé à 280 dinars » ; l'arrêté entre en application à partir du 1^er^ janvier 2026 [@arrete-2026-08-05-allocation-pauvres, art. 1-2]. D'un arrêté à l'autre, le montant constaté de l'allocation passe ainsi de 180 dinars en juillet 2024 à 260 dinars en août 2026, et la limite de son relèvement de 240 dinars à 260 puis à 280 dinars, chaque limite étant le montant de base du transfert de l'AMEN social pour l'année considérée (@tbl-amen-base). Comme celui de 2024, l'arrêté de 2026 fixe une limite et non le montant servi après le relèvement. Ses visas citent, avant le décret gouvernemental n° 2020-317 et les arrêtés de 2020, des textes des régimes de pensions — la loi n° 2002-32, le décret n° 74-499 et le décret-loi n° 2020-30 —, et son dispositif ne dit pas qui perçoit l'« allocation monétaire mensuelle attribuée aux catégories pauvres » : par ses visas, ce texte ne se rattache donc pas au seul programme national d'aide aux familles nécessiteuses [@arrete-2026-08-05-allocation-pauvres]. Le [livre « Retraites »](../retraites/_secteur_prive.html#sec-rtns-autres-elements) cite le même arrêté pour ce que ses visas établissent des régimes de pensions.
+<!-- TODO (rédacteur) : prolonger cette figure par la base du transfert de l'Amen social (2020-2026) et la renommer alors
+`fig-nc-aide-permanente` ; il manque une série du cache (`precis/_seriescache/`) pour le montant de base, à écrire par
+`scripts/generate_prestations_tables.py` (`openfisca_tables.ecrire_serie_parametres`), comme `pnafn-allocation`. -->
 
-L'arrêté de 2024 conserve enfin deux traces de l'architecture ancienne : le coût est imputé sur le budget de l'État, et les caisses adressent aux ministères des décomptes périodiques « chaque trois mois », rappel du versement trimestriel d'origine.
+| Rupture | Ce que la loi cherche | Avant → après | Effet |
+|---|---|---|---|
+| [**1986-1988 — une aide permanente, une assistance médicale gratuite**](#r-nc-1986) | rubrique de la loi de finances rectificative : « Contribution des organismes de sécurité sociale pour l'aide aux familles nécessiteuses » ; loi de 1987, article premier : « Il est institué deux catégories de livrets d'assistance médicale gratuite. Ils sont délivrés en fonction du revenu de la famille » | aucun texte publié → une aide monétaire que les textes ne connaissent que comme une dépense, cofinancée par les caisses ; deux catégories de livrets de soins délivrés selon le revenu | 1986 pour la contribution ; [1^er^ janvier 1988]{.insecable} pour les livrets |
+| [**2019-2020 — l'Amen social**](#r-nc-2019) | « garantir le droit à un revenu minimum et le droit aux prestations de soins au profit des catégories pauvres et des catégories à revenu limité », premier des cinq buts de l'article 7 | programme sans texte propre → programme créé par une loi organique : deux publics nommés, pauvreté définie comme privation multidimensionnelle, classement par un score, registre de données | loi publiée le [5 février 2019]{.insecable} ; prestations ouvertes le [25 mai 2020]{.insecable} |
+| [**2022 — une allocation familiale**](#r-nc-2022) | objet non dit par le décret-loi | supplément de 10 D par enfant des seules catégories pauvres → allocation de 30 D par enfant de moins de six ans, ouverte aussi aux catégories à revenu limité non affiliées à un régime de sécurité sociale ; étendue aux 6 à 18 ans, par un programme pilote en 2022 puis par décret en 2025 | arrêté du [1^er^ avril 2022]{.insecable} ; [1^er^ janvier 2025]{.insecable} pour les 6 à 18 ans |
 
-### Une superposition, non un remplacement
+: L'assistance sociale : mise en place et deux grandes réformes ; entre guillemets, les mots des textes {#tbl-nc-ruptures}
 
-L'article 23 de la loi organique de 2019 dispose que les programmes d'aides sociales en vigueur à la date de sa promulgation « demeurent exécutoires jusqu'à leur adaptation » avec ses dispositions [@loi-amen-social-2019, art. 23]. Les arrêtés de 2024, de 2025 et de 2026 distinguent l'allocation du programme du transfert AMEN et organisent le relèvement de la première par référence au second.
+:::: {.chronologie-repliable titre="Assistance sociale : les textes de la mise en place et des deux réformes, avec leurs articles, 1986-2025"}
 
-## L'aide médicale
+| Date | Portée | Texte | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-nc-1986}1986 | **mise en place** | loi n° 86-83 du 1^er^ septembre 1986, loi de finances rectificative [@loi-86-83-lfr-1986, art. 13] | chapitre 3, « Dispositions diverses », rubrique « Contribution des organismes de sécurité sociale pour l'aide aux familles nécessiteuses » : les organismes de sécurité sociale « sont autorisés à participer au financement du programme national d'aide aux familles nécessiteuses » |
+| []{#r-nc-1987}[1^er^ janvier 1988]{.insecable} | **mise en place** | loi n° 87-29 du 12 juin 1987 [@loi-87-29-amg, art. 1-4] | intitulé : « relative au régime de l'assistance médicale gratuite » ; deux catégories de livrets de soins, délivrés en fonction du revenu de la famille ; effet au 1^er^ janvier 1988 (art. 4) |
+| []{#r-nc-2019}[5 février 2019]{.insecable} (publication) | **rupture** | loi organique n° 2019-10 du 30 janvier 2019 [@loi-amen-social-2019, art. 1, 7 et 11 à 13] | crée le programme « AMEN SOCIAL » « pour la promotion des catégories pauvres et des catégories à revenu limité » (art. 1) ; cinq buts (art. 7) ; transferts, soutien occasionnel, soins (art. 11 à 13) |
+| []{#r-nc-2020}[25 mai 2020]{.insecable} | étape — de 2019 | décret gouvernemental n° 2020-317 du 19 mai 2020 [@decret-gouv-2020-317-amen, art. 4] et arrêtés du même jour [@arrete-2020-05-19-transferts, art. 2 ; @arrete-2020-05-19-scoring, art. 2-3 ; @arrete-2020-05-19-appui-occasionnel, art. 4] | intitulé du décret : « fixant les conditions et les procédures de bénéfice, de retrait et d'opposition au programme « AMEN SOCIAL » » ; les arrêtés fixent le transfert, le modèle de score et l'appui occasionnel |
+| []{#r-nc-2022}[2 février 2022]{.insecable} (publication) | **rupture** | décret-loi n° 2022-8 du 31 janvier 2022 [@decret-loi-2022-8-allocation-familiale] | intitulé : « complétant la loi organique n° 2019-10 du 30 janvier 2019, relative à la création du programme « AMEN SOCIAL » » ; ajoute l'article 11 bis ; le texte ne dit pas son objet |
+| []{#r-nc-2025}[1^er^ janvier 2025]{.insecable} | étape — de 2022 | décret n° 2025-426 du 2 octobre 2025 [@decret-2025-426-allocation-familiale-6-18, art. 1-2] | institue une allocation familiale « au titre des enfants âgés de 6 ans à 18 ans » ; ni rubrique ni objet au-delà de l'article premier |
 
-### Le régime de 1987 : la dualité est d'origine
+::::
 
-La loi n° 87-29 du 12 juin 1987 institue le régime de l'assistance médicale gratuite. Son article premier accorde le bénéfice des soins dans les établissements publics hospitaliers et sanitaires aux titulaires de **livrets de soins**, et institue d'emblée « **deux catégories de livrets** d'assistance médicale gratuite », délivrés **en fonction du revenu de la famille** ; l'article 2 crée un droit annuel d'affiliation dont sont exonérés les titulaires de livrets de première catégorie, et l'article 3 une contribution aux frais de soins et d'hospitalisation, l'un et l'autre fixés par la loi de finances. La loi prend effet au 1^er^ janvier 1988 [@loi-87-29-amg, art. 1-4].
+- **Qui y a droit.** Le transfert est ouvert au demandeur dont le revenu mensuel moyen ne dépasse pas un plafond qui va de deux tiers du salaire minimum pour une personne seule à deux salaires minimums pour un ménage de cinq personnes et plus (@tbl-amen-plafonds ; en dinars, @tbl-nc-plafonds-dinars), sous deux conditions de patrimoine et après classement par un score dont aucun texte publié ne donne le seuil (@sec-nc-eligibilite).
+- **Combien d'allocataires, quels crédits.** Le ministère des Affaires sociales compte 242 833 allocataires du transfert mensuel en décembre 2018 et 337 199 en décembre 2023 ; les décomptes que rapporte la Banque mondiale vont de 367 550 ménages au 30 novembre 2024 à 386 351 au 22 mai 2026 (@fig-nc-montee-en-charge). Les crédits affectés au programme passent de 735,1 MD en 2021 à 1 015,5 MD en 2023 (@sec-nc-administration).
+- **Qui finance.** Le budget de l'État, après une contribution des caisses de sécurité sociale de 8 MD en 1986 puis un prélèvement de 2,5 MD par an à partir de 1988 (@sec-nc-mise-en-place) ; depuis 2021, des prêts de la Banque internationale pour la reconstruction et le développement et des dons financent une partie des transferts et des allocations pour enfants (@sec-nc-financement-exterieur).
+- **Deux aides permanentes coexistent.** La loi organique de 2019 maintient les programmes antérieurs jusqu'à leur adaptation : l'allocation du programme d'aide aux familles nécessiteuses est relevée, de 2024 à 2026, dans la limite du transfert de l'Amen social (@sec-nc-pnafn-allocation).
+- **Ce que les études estiment.** Le ciblage, l'effet sur la pauvreté et le coût rapporté au PIB ne sont connus que par des simulations et des estimations de la Banque mondiale et par une enquête de l'UNICEF, présentées à part avec leur méthode (@sec-nc-etudes).
 
-Il faut en tirer une correction de chronologie : **la dualité entre soins gratuits et soins à [tarif réduit](#g-amg2) date de 1987, non de 1998**. Ce que font les décrets de 1998, c'est remplacer le livret par une carte, refondre les deux catégories dans deux décrets distincts et changer le vocabulaire. Présenter 1998 comme la bascule vers un système à deux étages serait inexact.
+## L'état du droit en 2026 {#sec-nc-etat-du-droit}
 
-Le décret n° 88-175 précise les conditions d'attribution des livrets : « Ne peuvent bénéficier de l'assistance médicale gratuite que les personnes justifiant d'un **revenu familial annuel égal ou inférieur au salaire minimum inter-professionnel garanti** ». Le partage entre la première et la deuxième catégorie est arrêté par des **commissions régionales**, sur proposition de commissions locales, « selon des critères fixés par la commission nationale de l'assistance médicale gratuite » [@decret-88-175-livrets-amg, art. 1]. Le livret est valable cinq ans, renouvelable sur demande présentée six mois avant l'échéance [@decret-88-175-livrets-amg, art. 9].
+En 2026, sept prestations composent l'assistance sociale ; chacune a sa section, où son montant est donné avec ses dates.
 
-**Le droit d'affiliation et les contributions aux frais de soins** ont, eux, une série publiée, portée par deux lois de finances.
+| Prestation | Qui | Montant en 2026 | Depuis |
+|---|---|---|---|
+| Transfert monétaire permanent (@sec-nc-transfert) | catégories pauvres : ressources sous le plafond et classement par le score | 280 D par mois, par individu ou par famille | [25 mai 2020]{.insecable} (180 D) ; 280 D au [1^er^ janvier 2026]{.insecable} |
+| Supplément par enfant (@sec-nc-montant) | allocataires du transfert, par enfant à charge de 6 à 18 ans, jusqu'à 25 ans en études, en apprentissage ou en formation | 10 D par mois ; doublé pour l'enfant titulaire d'une carte de handicap | [25 mai 2020]{.insecable} ; bornes d'âge du [1^er^ février 2022]{.insecable} |
+| Allocation familiale des moins de six ans (@sec-nc-af-moins-6) | catégories pauvres ; catégories à revenu limité non affiliées à un régime de sécurité sociale | 30 D par mois et par enfant | arrêté du [1^er^ avril 2022]{.insecable} |
+| Allocation familiale des 6 à 18 ans (@sec-nc-af-6-18) | familles pauvres ; familles à revenu limité non affiliées à un régime de sécurité sociale | 30 D par mois et par enfant | instituée au [1^er^ janvier 2025]{.insecable} ; montant exécutoire le [9 novembre 2025]{.insecable} |
+| Soins dans les structures publiques (@sec-nc-aide-medicale) | catégories pauvres et à revenu limité bénéficiaires de l'Amen social | gratuits ou à tarif réduit | livrets en 1988, cartes en 1998, support électronique en 2022 |
+| Appui financier occasionnel (@sec-nc-aides) | catégories pauvres pour les fêtes ; les deux catégories pour la rentrée | 60 D pour chacune de trois fêtes ; 100 D par enfant à la rentrée scolaire ; 120 D à la rentrée universitaire | [25 mai 2020]{.insecable} ; 100 D au [1^er^ septembre 2024]{.insecable} |
+| Allocation du programme d'aide aux familles nécessiteuses (@sec-nc-pnafn-allocation) | « catégories pauvres », selon les arrêtés qui la relèvent | 260 D constatés en août 2026, relevés dans la limite de 280 D | années 1980 ; relèvement organisé en 2024, 2025 et 2026 |
 
-| Élément | Loi de finances 1988 [@loi-87-83-lf-1988, art. 62-65] | Loi de finances 1991 [@loi-90-111-lf-1991, art. 65-66] |
+: L'assistance sociale en 2026 : prestations, publics et montants {#tbl-nc-etat-2026}
+
+- **Trois points que les textes de 2026 ne règlent pas.** Le régime du salaire minimum — 48 ou 40 heures par semaine — qui sert de référence aux plafonds de ressources (@sec-nc-eligibilite) ; le seuil de score qui ouvre le transfert (@sec-nc-eligibilite) ; le cumul du supplément de 10 dinars et de l'allocation de 30 dinars pour un enfant de 6 à 18 ans (@sec-nc-af-cumul).
+- **Des montants fixés par arrêté, relevés chaque année depuis 2022.** La base du transfert gagne 20 dinars à chaque 1^er^ janvier de 2022 à 2026 (@tbl-amen-base) ; les allocations pour enfants sont de 30 dinars depuis leur création ; l'aide de rentrée scolaire double en 2024.
+- **Des prestations dues à compter de la demande.** Le transfert est dû à compter du mois d'enregistrement de la demande, et le dossier est mis à jour au moins tous les deux ans (@sec-nc-eligibilite).
+
+## La mise en place, 1986-1988 {#sec-nc-mise-en-place}
+
+Le programme national d'aide aux familles nécessiteuses n'est créé par aucun texte publié : il apparaît en 1986 comme une dépense que les caisses de sécurité sociale sont autorisées à cofinancer. L'assistance médicale gratuite, elle, est instituée par une loi en 1987.
+
+[L'article 13 de la loi de finances rectificative de 1986](#r-nc-fin-1986), rangé sous la rubrique « Contribution des organismes de sécurité sociale pour l'aide aux familles nécessiteuses », autorise les organismes de sécurité sociale « à participer au financement du programme national d'aide aux familles nécessiteuses » et renvoie à un arrêté conjoint pour fixer leur contribution annuelle. Deux textes fixent ensuite cette participation :
+
+- au titre de 1986, [un arrêté conjoint du 6 janvier 1987](#r-nc-fin-1987) fixe une contribution de 8 millions de dinars, répartie à parts égales entre la Caisse nationale de retraite et de prévoyance sociale (CNRPS) et la Caisse nationale de sécurité sociale (CNSS) ;
+- à partir de 1988, [la loi de finances](#r-nc-fin-1988) lui substitue un prélèvement de 2,5 millions de dinars, recouvré chaque année au profit du budget général de l'État ; la répartition entre organismes relève alors d'un arrêté du Premier ministre.
+
+[La loi n° 87-29 du 12 juin 1987](#r-nc-1987) institue dans le même temps le régime de l'assistance médicale gratuite, avec deux catégories de livrets de soins délivrés selon le revenu de la famille ; elle prend effet au 1^er^ janvier 1988 (@sec-nc-aide-medicale).
+
+:::: {.chronologie-repliable titre="Financement du programme d'aide aux familles nécessiteuses par les caisses de sécurité sociale : textes et montants, 1986-1988"}
+
+| Date | Texte | Ce qu'il établit |
 |---|---|---|
-| Droit annuel d'affiliation (deuxième catégorie) | 6 D | **10 D** |
-| Consultation externe en dispensaire | 300 millimes | **400 millimes** |
-| Consultation en hôpital de circonscription | 500 millimes | **700 millimes** |
-| Consultation en hôpital régional, principal, universitaire ou institut spécialisé | 1 D | **1,500 D** |
-| Hospitalisation en médecine générale, gynécologie-obstétrique, spécialités médicales | 5 D | **7 D** |
-| Hospitalisation en chirurgie ou spécialités chirurgicales | 10 D | **13 D** |
+| []{#r-nc-fin-1986}1^er^ septembre 1986 | loi n° 86-83, art. 13 [@loi-86-83-lfr-1986, art. 13] | les organismes de sécurité sociale, « y compris la caisse de retraite du personnel des services publics de l'électricité, du gaz et du transport », sont **autorisés à participer** au financement ; la contribution annuelle de chacun sera fixée par arrêté conjoint des ministres des affaires sociales et du plan et des finances |
+| []{#r-nc-fin-1987}6 janvier 1987 | arrêté conjoint [@arrete-1987-01-06-financement-pnafn, art. 1-2] | contribution pour l'année 1986 : **4 000 000 D** pour la CNRPS et **4 000 000 D** pour la CNSS, soit 8 millions de dinars à parts égales |
+| []{#r-nc-fin-1988}31 décembre 1987 | loi n° 87-83, art. 67 [@loi-87-83-lf-1988, art. 67] | un montant de **2 500 000 D** est recouvré **annuellement au profit du budget général de l'État** ; la contribution de chaque organisme sera fixée par arrêté du Premier ministre |
 
-Les titulaires de livrets de première catégorie sont exonérés du droit d'affiliation comme de la contribution [@loi-87-83-lf-1988, art. 62 et 64]. Le non-paiement du droit entraîne la suspension des effets du livret et son retrait provisoire [@loi-87-83-lf-1988, art. 63] ; un arrêté du 17 février 1988 en organise le paiement, en une seule tranche en janvier ou, sur autorisation, en deux tranches égales de trois dinars en janvier et en juillet [@arrete-1988-02-17-droit-affiliation-amg].
+::::
 
-La cotisation annuelle de **10 dinars** attachée par le décret de 1998 à la carte de soins à tarifs réduits reprend le taux fixé par la loi de finances pour 1991.
+## Les grandes réformes, 1988-2025 {#sec-nc-reformes}
 
-### AMG1 : la carte de soins gratuits
+Deux réformes changent le public et la nature de l'assistance : la loi organique de 2019, qui crée l'Amen social, et le décret-loi de 2022, qui y ajoute une allocation familiale. Entre 1988 et 2019, le montant de l'aide permanente est relevé sans texte publié, et les soins passent du livret à la carte.
 
-Le décret n° 98-1812 fixe les conditions d'attribution et de retrait de la carte de soins gratuits. Il **ne pose aucun seuil de revenu**. Il pose une condition d'état — la carte est attribuée à « tout tunisien indigent, à son conjoint et à ses enfants légalement à charge » — et surtout un **contingentement** : la carte est attribuée « dans la limite du nombre global de cartes et des quotas régionaux qui sont fixés par arrêté conjoint des ministres des affaires sociales et de la santé publique » [@decret-98-1812-amg1, art. 2].
+### 1988-2019 : des montants relevés sans texte publié, des cartes de soins contingentées {#sec-nc-entre-temps}
 
-C'est le trait structurant de ce dispositif : une prestation à **enveloppe fermée, contingentée par gouvernorat**, et non un droit ouvert sous condition de ressources. Le décret renvoie à un arrêté conjoint la fixation du nombre global de cartes et des quotas régionaux [@decret-98-1812-amg1, art. 2]. <!-- RECHERCHE r-amg-cartes-quotas : arrêtés fixant le nombre global de cartes et les quotas régionaux (voir docs/recherches.yml) -->
+De 1987 à 2018, l'allocation mensuelle du programme d'aide aux familles nécessiteuses passe de 7,7 à 180 dinars ; la série du chapitre compte onze paliers, dont aucun n'est fondé sur un texte identifié, et une figure de la Banque mondiale donne d'autres montants pour 1990, 1995 et 2005 (@fig-pnafn-allocation, @sec-nc-pnafn-allocation). En 1998, deux décrets remplacent les livrets de soins par des cartes attribuées dans la limite d'un nombre global et de quotas régionaux (@sec-nc-cartes-1998). Le programme sert alors de liste à l'aide médicale : les bénéficiaires de ses aides permanentes entrent en compte pour l'attribution des cartes de soins gratuits, en 1998 puis en 2012, et un décret de 2014 engage la constitution d'une banque de données sur les familles nécessiteuses et à revenu limité (@sec-nc-listes).
 
-Les ayants droit sont le conjoint, les enfants à charge jusqu'à la majorité ou jusqu'à la fin des études sans dépasser 25 ans, les enfants handicapés jusqu'à ce qu'ils disposent de ressources, et la fille tant qu'elle ne dispose pas de ressources ou n'est pas à la charge de son mari ; la gratuité est totale, sans contribution ni cotisation [@decret-98-1812-amg1, art. 3-4].
+### 2019-2020 : l'Amen social {#sec-nc-amen-2019}
 
-### AMG2 : la carte de soins à tarifs réduits
+[La loi organique n° 2019-10 du 30 janvier 2019](#r-nc-lo-1) crée le programme « AMEN SOCIAL » « pour la promotion des catégories pauvres et des catégories à revenu limité ». Elle ne comporte aucune disposition d'entrée en vigueur différée ; les prestations, elles, ne sont ouvertes qu'à compter des textes d'application du 19 mai 2020, exécutoires le 25 mai 2020.
 
-Le décret n° 98-409 organise le second étage. Contrairement au précédent, il énonce une condition de ressources chiffrée, assise sur le revenu **annuel** de la famille et exprimée en multiples du salaire minimum.
+**Ce que la loi cherche.** [Son article 7](#r-nc-lo-7) énonce cinq buts. Le programme « a pour but de » :
 
-| Taille de la famille | Plafond de revenu annuel |
-|---|---|
-| 2 personnes ou moins | 1 × salaire minimum |
-| 3 à 5 personnes | 1,5 × salaire minimum |
-| plus de 5 personnes | 2 × salaire minimum |
+1. « garantir le droit à un revenu minimum et le droit aux prestations de soins au profit des catégories pauvres et des catégories à revenu limité » ;
+2. « promouvoir les catégories pauvres et les catégories à revenu limité, améliorer leurs conditions de vie et assurer leur accès aux services de base tels que les soins, l'éducation, l'enseignement, la formation professionnelle, l'emploi, le logement et le transport » ;
+3. « renforcer les mécanismes d'inclusion et d'autonomisation économique et concrétisation du principe de « compter sur soi-même » » ;
+4. « réduire la pauvreté, d'éviter d'y retomber et de la transmettre de génération en génération » ;
+5. « lutter contre l'exclusion, de réduire les disparités sociales et régionales, renforcer l'égalité des chances et consacrer la justice sociale et la solidarité ».
 
-Source : @decret-98-409-amg2, art. 2. Membres pris en compte à l'origine : le candidat, son conjoint et les enfants légalement à charge ; les **ascendants légalement à charge** y sont ajoutés en 2005, les seuils restant inchangés [@decret-2005-2886-amg2-ascendants].
+**Deux publics, définis par la privation.** [L'article 2](#r-nc-lo-2) retient une définition multidimensionnelle de la pauvreté : sont visés « les individus ou les familles qui souffrent d'une privation multidimensionnelle touchant le revenu, la santé, l'éducation, le logement, l'accès aux services publics et les conditions de vie ». Le ministère chargé des affaires sociales met en place un modèle de score, fixé par arrêté, qui identifie les éligibles et les classe en catégories pauvres et en catégories à revenu limité. Le [ciblage](#g-ciblage) change ainsi de forme pour la troisième fois : condition d'état sans barème dans les textes des années 1980 et 1990 (« tout tunisien indigent »), condition de revenu chiffrée en multiples du salaire minimum, puis, depuis 2020, [score](#g-score-eligibilite).
 
-S'y ajoute une condition d'exclusion : le bénéficiaire « ne doit pas être affilié à l'un des régimes de sécurité sociale et sa situation ne lui permet pas l'affiliation ». Le contingentement est identique à celui de l'AMG1, par nombre global de cartes et quotas régionaux [@decret-98-409-amg2, art. 2 et 14]. La cotisation annuelle est de **dix dinars** par carte [@decret-98-409-amg2, art. 10] et la validité de la carte de cinq ans, validée annuellement par apposition d'un cachet [@decret-98-409-amg2, art. 12].
+**Quatre familles de prestations.** La loi prévoit [des transferts monétaires mensuels](#r-nc-lo-11) aux catégories pauvres, dont le mode de calcul et le montant sont fixés par arrêté conjoint (@sec-nc-transfert) ; un [soutien financier occasionnel](#g-appui-financier-occasionnel) (@sec-nc-aides) ; des prestations de soins dans les structures publiques (@sec-nc-aide-medicale) ; [des priorités d'accès](#r-nc-lo-14) au logement social, à la formation, à l'emploi et à l'enseignement. [Les bénéficiaires](#r-nc-lo-8) sont les Tunisiens et les étrangers résidant légalement, sous condition de réciprocité. Un [registre de données](#r-nc-lo-18), mis à jour au moins tous les deux ans, recense les deux catégories.
 
-Les tarifs sont exprimés en pourcentage des tarifs applicables aux malades payants.
+**Les programmes antérieurs sont maintenus.** [L'article 23](#r-nc-lo-23) dispose que les programmes d'aides sociales en vigueur à la date de la promulgation de la loi « demeurent exécutoires jusqu'à leur adaptation » avec ses dispositions : l'Amen social se superpose à l'aide antérieure, il ne la remplace pas (@sec-nc-pnafn-allocation).
 
-| Prestation | Tarif |
-|---|---|
-| Consultation en centre de santé de base (médecine générale) | 20 % |
-| Consultation en hôpital de circonscription | 25 % |
-| Consultation de spécialité en hôpital régional | 30 % |
-| Consultation de maître de conférences en établissement à vocation universitaire | 30 % |
-| Hospitalisation | forfait égal au tarif d'une journée, **quelle que soit la durée du séjour** |
-| Accompagnant | moitié du forfait, ou tiers sur prescription médicale |
-| Explorations, actes chirurgicaux et actes de la nomenclature | 20 %, **plafonnés à 30 D** |
-| Séance d'hémodialyse | 1 D |
-| Prothèses et implants | 20 % du prix coûtant, **plafonnés à 50 D** |
+**Une agence prévue, une gestion par le ministère.** [La loi prévoit](#r-nc-lo-5) un Conseil supérieur du développement social et une Agence nationale de l'intégration et du développement social ; dans l'attente de la création de l'agence, [le décret gouvernemental de 2020](#r-nc-lo-agence) confie la gestion du programme aux services du ministère des Affaires sociales.
 
-Source : @decret-98-409-amg2, art. 17, 18, 21 et 22. Les montants sont arrondis par tranche entière de 500 millimes.
+:::: {.chronologie-repliable titre="Loi organique n° 2019-10 : buts, publics, prestations, institutions prévues, registre de données et maintien des programmes antérieurs, article par article"}
 
-### Les modifications établies
+| Article | Texte | Ce qu'il établit |
+|---|---|---|
+| []{#r-nc-lo-1}art. 1 | loi organique n° 2019-10 du 30 janvier 2019 [@loi-amen-social-2019, art. 1] | « Il est créé en vertu de la présente loi un programme “AMEN SOCIAL” …, pour la promotion des catégories pauvres et des catégories à revenu limité » ; la loi est rangée en trois chapitres : dispositions générales ; du programme ; les prestations allouées aux bénéficiaires (transferts et soutien financier ; prestations de soins ; mécanismes d'inclusion et d'autonomisation économique) |
+| []{#r-nc-lo-2}art. 2 | même loi [@loi-amen-social-2019, art. 2] | définition multidimensionnelle de la pauvreté ; le ministère « instaure un modèle de score sur la base des dimensions de privation » en vue d'identifier les catégories éligibles « et de les classer en catégories pauvres et en catégories à revenu limité » ; « Le modèle de score est fixé par arrêté du ministre chargé des affaires sociales » |
+| []{#r-nc-lo-5}art. 5 et 6 | même loi [@loi-amen-social-2019, art. 5-6] | Conseil supérieur du développement social, présidé par le chef du gouvernement (art. 5) ; Agence nationale de l'intégration et du développement social, établissement public à créer par décret gouvernemental (art. 6) |
+| []{#r-nc-lo-7}art. 7 | même loi [@loi-amen-social-2019, art. 7] | les cinq buts du programme, cités au texte |
+| []{#r-nc-lo-8}art. 8 | même loi [@loi-amen-social-2019, art. 8] | bénéficiaires : les Tunisiens et les étrangers résidant légalement, sous condition de réciprocité ; les prestations indûment attribuées sont récupérables ; les conditions et procédures sont renvoyées à un décret gouvernemental |
+| []{#r-nc-lo-11}art. 11 à 13 | même loi [@loi-amen-social-2019, art. 11-13] | « des transferts financiers directs versés chaque mois » aux catégories pauvres, mode de calcul et montant fixés par arrêté conjoint (art. 11) ; soutien financier occasionnel, cas d'octroi et montants fixés par arrêté conjoint (art. 12) ; prestations de soins dans les structures publiques (art. 13) |
+| []{#r-nc-lo-14}art. 14 à 17 | même loi [@loi-amen-social-2019, art. 14-17] | priorités d'accès au logement social, à la formation, à l'emploi et à l'enseignement |
+| []{#r-nc-lo-18}art. 18 à 22 | même loi [@loi-amen-social-2019, art. 18 à 22] | registre de données sur les catégories pauvres et les catégories à revenu limité, mis à jour au moins tous les deux ans ; rapport annuel adressé au président du parlement et au chef du gouvernement ; le secret professionnel et fiscal est déclaré inopposable aux structures détentrices de bases publiques |
+| []{#r-nc-lo-23}art. 23 | même loi [@loi-amen-social-2019, art. 23] | les programmes d'aides sociales en vigueur à la date de la promulgation « demeurent exécutoires jusqu'à leur adaptation » |
+| []{#r-nc-lo-agence}[25 mai 2020]{.insecable} | décret gouvernemental n° 2020-317 du 19 mai 2020 [@decret-gouv-2020-317-amen, art. 29] | dans l'attente de la création et de la mise en place de l'Agence, la gestion du programme est confiée aux services compétents du ministère des Affaires sociales |
 
-Le décret n° 2005-2886 ajoute les ascendants légalement à charge aux membres pris en compte pour le plafond de revenu de l'AMG2 [@decret-2005-2886-amg2-ascendants]. En 2012, la composition des commissions est remaniée : la présidence locale revient au chef de l'unité locale de promotion sociale, tandis que la CNAM et la Ligue tunisienne des droits de l'homme y entrent [@decret-2012-2522-amg2-commissions, art. 5 et 7]. Le même texte ouvre des cartes annuelles renouvelables à des catégories spécifiques, dont les licenciés économiques après épuisement de la protection de la loi n° 96-101, les ascendants d'affiliés proches de 55 ans et certains travailleurs saisonniers du bâtiment.
+::::
 
-La composition des commissions locales de 1988 mérite d'être rapprochée de cette recomposition : le décret n° 88-175 y faisait siéger le secrétaire général de circonscription du parti au pouvoir et le président de la cellule locale, et la commission nationale réunissait le parti, l'union syndicale, l'union nationale de la femme et les organisations patronales [@decret-88-175-livrets-amg, art. 4 et 11]. Le changement de 2012 est donc un changement de composition, et les deux textes en donnent la teneur exacte.
+### 2022 : une allocation familiale pour les enfants des catégories pauvres et à revenu limité {#sec-nc-af-2022}
 
-### La sortie du système papier
+[Le décret-loi n° 2022-8 du 31 janvier 2022](#r-nc-2022) ajoute à la loi organique un article 11 bis, qui ouvre aux catégories pauvres et aux catégories à revenu limité une allocation familiale mensuelle au titre des enfants de moins de six ans. Le texte ne dit pas son objet : il ne porte ni rubrique ni exposé, et son intitulé ne nomme que la loi qu'il complète. Un arrêté du 1^er^ avril 2022 fixe l'allocation à 30 dinars par mois et par enfant ; un arrêté du même jour borne aux 6 à 18 ans le supplément de 10 dinars attaché au transfert (@sec-af-non-contributive).
 
-Le décret n° 2022-919 crée un « système de soins électronique AMEN » au profit des catégories pauvres et à revenu limité bénéficiaires de l'AMEN social, géré par le ministère des Affaires sociales. Un **support de soins électronique personnel** est attribué au bénéficiaire et à ses ayants droit, en remplacement de la carte papier, et couvre les soins, les médicaments, l'hospitalisation, l'appareillage de prothèse et la réadaptation dans les structures publiques ; les cartes des millésimes 2011 à 2017 sont prorogées à titre transitoire jusqu'au 31 décembre 2022, et les régimes particuliers de gratuité et de tarifs réduits sont maintenus [@decret-2022-919-soins-amen, art. 1-2, 5-6, 20-21]. Le volume s'en tient à cette organisation juridique.
+L'extension aux enfants de 6 à 18 ans est une étape de cette réforme. Un programme pilote financé par un don verse 30 dinars par enfant de cette tranche d'âge à partir de 2022 ; [le décret n° 2025-426 du 2 octobre 2025](#r-nc-2025) institue l'allocation à compter du 1^er^ janvier 2025 (@sec-nc-af-6-18).
 
-## L'AMEN social (2019 →)
+Deux dispositifs naissent la même année : un programme d'autonomisation économique (@sec-nc-autonomisation) et un support de soins électronique, qui remplace les cartes de papier (@sec-nc-soins-2022).
 
-### La loi organique n° 2019-10
+## Le transfert monétaire permanent {#sec-nc-transfert}
 
-La loi organique n° 2019-10 du 30 janvier 2019 crée le programme AMEN social « pour la promotion des catégories pauvres et des catégories à revenu limité » [@loi-amen-social-2019, art. 1]. Elle ne comporte **aucune disposition d'entrée en vigueur différée** ; les prestations, elles, ne sont ouvertes qu'à compter des textes d'application de mai 2020.
+Le transfert monétaire permanent est la somme que l'État verse chaque mois aux ménages des catégories pauvres : un montant de base par individu ou par famille, de 180 dinars en 2020 et de 280 dinars en 2026, et un supplément de 10 dinars par enfant à charge.
 
-Son article 2 retient une définition **multidimensionnelle** de la pauvreté : sont visés « les individus ou les familles qui souffrent d'une privation multidimensionnelle touchant le revenu, la santé, l'éducation, le logement, l'accès aux services publics et les conditions de vie », le ministère chargé des affaires sociales mettant en place un modèle de *scoring* fixé par arrêté [@loi-amen-social-2019, art. 2].
+### Qui y a droit {#sec-nc-eligibilite}
 
-Les prestations prévues sont les **transferts financiers directs mensuels** aux catégories pauvres, dont le mode de calcul et le montant sont fixés par arrêté conjoint (art. 11) ; le **soutien financier occasionnel** (art. 12) ; les **prestations de soins** dans les structures publiques (art. 13) ; et des priorités d'accès au logement social, à la formation, à l'emploi et à l'enseignement (art. 14 à 17). Un **registre de données** est institué, mis à jour au moins tous les deux ans, un rapport annuel étant adressé au président du parlement et au chef du gouvernement, et le secret professionnel et fiscal étant déclaré inopposable aux structures détentrices de bases publiques (art. 18 à 22). Les bénéficiaires sont les Tunisiens et les étrangers résidant légalement sous condition de réciprocité, et les prestations indûment attribuées sont récupérables (art. 8). Un article 11 bis, ajouté en 2022, y ajoutera l'allocation familiale examinée plus bas.
+Trois conditions fixées par [le décret gouvernemental n° 2020-317](#r-nc-elig-age) ouvrent le bénéfice du programme : l'âge, le revenu et le patrimoine ; le classement par le score s'y ajoute.
 
-L'article 5 prévoit un Conseil supérieur du développement social présidé par le chef du gouvernement, et l'article 6 une Agence nationale de l'intégration et du développement social, établissement public à créer par décret gouvernemental. Dans l'attente de la création et de la mise en place de l'Agence, le décret gouvernemental de 2020 confie la gestion du programme aux services compétents du ministère des Affaires sociales [@decret-gouv-2020-317-amen, art. 29].
+**L'âge.** Le demandeur a 18 ans au moins à la date du dépôt ; l'âge est ramené à 16 ans « dans les cas exceptionnels ».
 
-### Les conditions d'éligibilité
-
-Le décret gouvernemental n° 2020-317 fixe les conditions et procédures de bénéfice, de retrait et d'opposition. La condition d'âge est de 18 ans au moins à la date du dépôt, « dans les cas exceptionnels » ramenée à 16 ans [@decret-gouv-2020-317-amen, art. 4]. La condition de revenu porte sur la **moyenne mensuelle des revenus nets, permanents et non permanents, des douze derniers mois** précédant la demande, tous revenus confondus.
+**Le revenu.** La condition porte sur la moyenne mensuelle des revenus nets, permanents et non permanents, des douze derniers mois précédant la demande, tous revenus confondus. [Cette moyenne](#r-nc-elig-revenu) ne doit pas dépasser un plafond exprimé en multiples du salaire minimum et croissant avec la taille du ménage.
 
 ```{python}
 #| echo: false
 #| output: asis
 table("amen_plafonds_ressources",
-      "Plafonds de ressources de l'AMEN social selon la composition du ménage, en multiples du salaire minimum : état au 25 mai 2020",
+      "Plafonds de ressources de l'Amen social selon la composition du ménage, en multiples du salaire minimum : état au 25 mai 2020",
       "tbl-amen-plafonds")
 ```
 
-Membres pris en compte : les conjoints, les enfants et les ascendants à charge « vivant sous le même toit et partageant la nourriture » [@decret-gouv-2020-317-amen, art. 5]. L'article 5 exprime ces plafonds en multiples du « salaire minimum interprofessionnel garanti des différentes professions », sans dire lequel des deux régimes de ce salaire, celui de 48 heures ou celui de 40 heures par semaine, il retient ; la formule est la même dans les éditions française et arabe, et le texte qui préciserait ce régime n'est pas identifié ici. <!-- RECHERCHE r-amen-smig-regime : texte, circulaire ou formulaire disant quel régime du salaire minimum (48 ou 40 heures) sert de référence aux plafonds de l'art. 5 du décret gouvernemental n° 2020-317 (voir docs/recherches.yml) --> Le décret ne comporte pas de clause d'entrée en vigueur : publié au *Journal officiel* du 20 mai 2020, déposé le même jour au siège du gouvernorat de Tunis, il devient exécutoire cinq jours après ce dépôt, jour du dépôt non compté, soit le **25 mai 2020** [@loi93-64, art. 2].
+Les membres pris en compte sont les conjoints, les enfants et les ascendants à charge « vivant sous le même toit et partageant la nourriture ». Le décret exprime ces plafonds en multiples du « salaire minimum interprofessionnel garanti des différentes professions », sans dire lequel des deux régimes de ce salaire, celui de 48 heures ou celui de 40 heures par semaine, il retient ; la formule est la même dans les éditions française et arabe, et le texte qui préciserait ce régime n'est pas identifié ici. <!-- RECHERCHE r-amen-smig-regime : texte, circulaire ou formulaire disant quel régime du salaire minimum (48 ou 40 heures) sert de référence aux plafonds de l'art. 5 du décret gouvernemental n° 2020-317 (voir docs/recherches.yml) --> Le tableau qui suit convertit donc les plafonds en dinars pour chacun des deux régimes, à la date où le décret devient exécutoire et au 1^er^ janvier 2026 ; le salaire minimum est celui du volume [« Le marché du travail »](../marche_travail/_salaire_minimum.html#sec-mt-salaire-minimum).
 
-Deux conditions de patrimoine s'y ajoutent : ne pas être propriétaire d'un logement secondaire, et n'avoir réalisé, ni soi-même ni un membre de la famille, d'opérations d'achat ou de vente dépassant trente fois le salaire minimum au cours des trois dernières années [@decret-gouv-2020-317-amen, art. 6-7]. En sus de ces conditions, le modèle de *scoring* sert à identifier et classer les bénéficiaires [@decret-gouv-2020-317-amen, art. 9].
+```{python}
+#| echo: false
+#| output: asis
+print(fig_as.markdown_plafonds_dinars())
+print("\n: Plafonds de ressources de l'Amen social en dinars par mois, selon la composition du "
+      "ménage et le régime du salaire minimum retenu, au 25 mai 2020 et au 1^er^ janvier 2026 : "
+      "multiples de l'article 5 appliqués au salaire minimum mensuel en vigueur à chaque date "
+      "{#tbl-nc-plafonds-dinars}\n")
+```
 
-Une **majoration d'un demi-salaire minimum** est prévue si un membre de la famille est lourdement handicapé : « la moyenne de revenu mensuel mentionnée au premier alinéa du présent article est majorée d'un demi salaire minimum interprofessionnel des différentes professions si un des membres de la famille est lourdement handicapé » [@decret-gouv-2020-317-amen, art. 5]. Tel que le texte se lit dans ses deux éditions, la majoration porte sur le plafond du premier alinéa de l'article 5, et ce premier alinéa est celui qui contient les quatre tirets : l'article 7 du même décret appelle en effet « deuxième alinéa de l'article 5 » l'alinéa qui définit les membres de la famille [@decret-gouv-2020-317-amen, art. 7]. La majoration vaut donc pour chacun des quatre paliers, et rien dans le texte ne la réserve à l'un d'eux. Les deux éditions divergent en revanche sur la personne handicapée : l'édition arabe exige un membre de la famille **à charge** (« في الكفالة »), l'édition française dit seulement « un des membres de la famille ». La majoration relève un plafond de ressources, non un montant versé. Cette lecture repose sur le décompte des alinéas de l'article 5 ; les plafonds du tableau (@tbl-amen-plafonds) sont ceux qui valent sans majoration.
+[Un plafond est relevé d'un demi-salaire minimum](#r-nc-elig-handicap) quand un membre de la famille est lourdement handicapé ; cette majoration vaut pour chacun des quatre paliers.
+
+**Le patrimoine.** Le demandeur [ne doit pas être propriétaire d'un logement secondaire](#r-nc-elig-patrimoine), et ni lui ni un membre de sa famille ne doit avoir réalisé, au cours des trois dernières années, d'opérations d'achat ou de vente dépassant trente fois le salaire minimum.
+
+**Le score.** En sus de ces conditions, un modèle de score sert à identifier et à classer les bénéficiaires. [L'arrêté du 19 mai 2020](#r-nc-elig-score) dispose qu'il « adopte le test des moyens approximé "Proxy Means Test" et il est basé sur la définition de la pauvreté multidimensionnelle », déclinée en sept familles de variables : caractéristiques démographiques, géographiques, éducation, santé, situation professionnelle et économique, caractéristiques du logement et accès aux services publics de base. Le même arrêté prévoit que le modèle de score est actualisé tous les cinq ans, et chaque fois que nécessaire : la première échéance tombe en mai 2025.
+
+L'arrêté énumère les dimensions du score sans en fixer les coefficients. Ni la loi organique, qui renvoie le modèle à un arrêté, ni cet arrêté, ni le décret gouvernemental n° 2020-317 ne fixent le seuil de score qui ouvre le transfert monétaire : ce seuil est fixé par circulaire du ministre des affaires sociales, et ni la circulaire ni le seuil ne sont publics ; les pondérations ne le sont pas davantage. Selon la Banque mondiale, bailleur du programme, les critères d'éligibilité du transfert permanent ont été révisés par une circulaire ministérielle d'octobre 2025 [@banquemondiale2026ppiaf000292, § 4], soit cinq ans et cinq mois après l'arrêté ; cette circulaire n'est pas publique non plus, et rien de publié ne dit si elle actualise le modèle de score lui-même ou seulement le seuil. <!-- RECHERCHE r-amen-seuil-score-circulaires : circulaires du ministre des affaires sociales fixant le seuil de score et révisant les critères d'éligibilité (mai 2022, octobre 2025) (voir docs/recherches.yml) --> Ce que les documents de la Banque mondiale disent du seuil et du ciblage est à la section des études (@sec-nc-etudes-ciblage).
+
+**Le versement.** [Le transfert est dû](#r-nc-elig-procedure) à compter du mois d'enregistrement de la demande et payé à terme échu ; la décision est rendue dans un délai de quarante-cinq jours, sept en cas d'urgence ; le dossier est mis à jour au moins tous les deux ans.
+
+Le décret ne comporte pas de clause d'entrée en vigueur : publié au *Journal officiel* du 20 mai 2020, déposé le même jour au siège du gouvernorat de Tunis, il devient exécutoire cinq jours après ce dépôt, jour du dépôt non compté, soit [le 25 mai 2020](#r-nc-elig-date).
+
+:::: {.chronologie-repliable titre="Amen social : majoration du plafond de ressources pour handicap lourd, article 5 du décret gouvernemental n° 2020-317, éditions française et arabe"}
+
+[]{#r-nc-elig-handicap}Une **majoration d'un demi-salaire minimum** est prévue si un membre de la famille est lourdement handicapé : « la moyenne de revenu mensuel mentionnée au premier alinéa du présent article est majorée d'un demi salaire minimum interprofessionnel des différentes professions si un des membres de la famille est lourdement handicapé » [@decret-gouv-2020-317-amen, art. 5]. Tel que le texte se lit dans ses deux éditions, la majoration porte sur le plafond du premier alinéa de l'article 5, et ce premier alinéa est celui qui contient les quatre tirets : l'article 7 du même décret appelle en effet « deuxième alinéa de l'article 5 » l'alinéa qui définit les membres de la famille [@decret-gouv-2020-317-amen, art. 7]. La majoration vaut donc pour chacun des quatre paliers, et rien dans le texte ne la réserve à l'un d'eux. Les deux éditions divergent en revanche sur la personne handicapée : l'édition arabe exige un membre de la famille **à charge** (« في الكفالة »), l'édition française dit seulement « un des membres de la famille ». La majoration relève un plafond de ressources, non un montant versé. Cette lecture repose sur le décompte des alinéas de l'article 5 ; les plafonds du tableau (@tbl-amen-plafonds) sont ceux qui valent sans majoration.
 
 <!-- TODO (relecture humaine) : valider la lecture D3 avant d'engendrer les plafonds majorés
 (docs/notes/prestations-sociales-lectures-2026-10-09.md, § 3 : art. 5 et 7 du décret gouvernemental n° 2020-317 lus à l'image dans les
 deux éditions, JORT n° 45 du 20 mai 2020, p. 1093 en français, p. 1248 en arabe). La note ajoute que l'édition arabe fait foi pour
 la condition « à charge » : à confirmer et à sourcer avant de l'écrire. -->
 
-**La procédure** est décrite avec précision par le décret : dépôt en ligne ou auprès des **unités locales de promotion sociale**, identifiant social obligatoire, **enquête sociale** validée par le chef d'unité et comportant obligatoirement les propositions du travailleur social, examen par une **commission technique régionale** présidée par le directeur régional des affaires sociales et réunie tous les quinze jours, qui valide automatiquement les dossiers conformes au score et à la proposition du travailleur social ; décision sur la demande dans un délai de quarante-cinq jours, sept jours en cas d'urgence ; transferts dus **à compter du mois d'enregistrement de la demande** et payés à terme échu ; opposition sous quinze jours ; mise à jour du dossier au moins tous les deux ans ; retrait en cas de fausse déclaration [@decret-gouv-2020-317-amen, art. 12 à 28].
+::::
 
-### Le score d'éligibilité
+:::: {.chronologie-repliable titre="Amen social : procédure de demande, enquête sociale, commission régionale, délais, opposition et retrait (décret gouvernemental n° 2020-317, articles 12 à 28)"}
 
-L'arrêté du 19 mai 2020 relatif au modèle de *scoring* dispose que celui-ci « adopte le **test des moyens approximé "Proxy Means Test"** et il est basé sur la définition de la pauvreté multidimensionnelle », déclinée en sept familles de variables : caractéristiques démographiques, géographiques, éducation, santé, situation professionnelle et économique, caractéristiques du logement et accès aux services publics de base. Le modèle est mis à jour au moins une fois tous les cinq ans [@arrete-2020-05-19-scoring, art. 2-3].
+[]{#r-nc-elig-procedure}La procédure est décrite avec précision par le décret [@decret-gouv-2020-317-amen, art. 12 à 28] :
 
-L'arrêté énumère les dimensions du score sans en fixer les coefficients. Ni la loi organique, qui renvoie le modèle à un arrêté [@loi-amen-social-2019, art. 2], ni cet arrêté, ni le décret gouvernemental n° 2020-317 [@decret-gouv-2020-317-amen, art. 9] ne fixent le seuil de score qui ouvre le transfert monétaire : aucun texte publié au *Journal officiel* ne donne ce seuil ni les pondérations. Selon la Banque mondiale, bailleur du programme, les critères d'éligibilité du transfert permanent ont été révisés par une circulaire ministérielle d'octobre 2025 [@banquemondiale2026ppiaf000292, § 4] ; cette circulaire n'est pas identifiée ici. <!-- RECHERCHE r-amen-seuil-score-circulaires : circulaires du ministre des affaires sociales fixant le seuil de score et révisant les critères d'éligibilité (mai 2022, octobre 2025) (voir docs/recherches.yml) -->
+- dépôt de la demande en ligne ou auprès des **unités locales de promotion sociale**, avec un identifiant social obligatoire ;
+- **enquête sociale** validée par le chef d'unité et comportant obligatoirement les propositions du travailleur social ;
+- examen par une **commission technique régionale** présidée par le directeur régional des affaires sociales et réunie tous les quinze jours, qui valide automatiquement les dossiers conformes au score et à la proposition du travailleur social ;
+- décision sur la demande dans un délai de quarante-cinq jours, sept jours en cas d'urgence ;
+- transferts dus **à compter du mois d'enregistrement de la demande** et payés à terme échu ;
+- opposition sous quinze jours ;
+- mise à jour du dossier au moins tous les deux ans ;
+- retrait en cas de fausse déclaration.
 
-### Le transfert monétaire permanent
+::::
 
-L'arrêté conjoint fondateur du 19 mai 2020 construit le transfert en deux éléments : un montant de base mensuel servi par individu ou par famille, et une allocation supplémentaire par enfant à charge, doublée pour l'enfant titulaire d'une carte de handicap [@arrete-2020-05-19-transferts, art. 2]. La base a été revalorisée en 2022 puis chaque année jusqu'en 2026 : de 180 dinars à l'origine, elle atteint 280 dinars au 1^er^ janvier 2026 [@arrete-2026-04-21-transferts, art. 1-2].
+:::: {.chronologie-repliable titre="Amen social : conditions d'âge, de revenu et de patrimoine, modèle de score, date exécutoire — textes et articles, 2019-2020"}
+
+| Objet | Texte | Ce qu'il établit |
+|---|---|---|
+| []{#r-nc-elig-age}âge | décret gouvernemental n° 2020-317 du 19 mai 2020 [@decret-gouv-2020-317-amen, art. 4] | intitulé : « fixant les conditions et les procédures de bénéfice, de retrait et d'opposition au programme « AMEN SOCIAL » » ; conditions « relatives à l'âge, au revenu et aux propriétés » (art. 3) ; 18 ans au moins à la date du dépôt, 16 ans « dans les cas exceptionnels » (art. 4) |
+| []{#r-nc-elig-revenu}revenu | même décret [@decret-gouv-2020-317-amen, art. 5] | « Le demandeur du bénéfice ne doit avoir aucun revenu ou la moyenne de son revenu mensuel ne doit dépasser un montant » égal à deux tiers du salaire minimum pour l'individu, à un salaire minimum pour deux personnes, à une fois et demie pour trois ou quatre personnes, à deux fois pour cinq personnes et plus ; membres pris en compte : conjoints, enfants et ascendants à charge « vivant sous le même toit et partageant la nourriture » |
+| []{#r-nc-elig-patrimoine}patrimoine | même décret [@decret-gouv-2020-317-amen, art. 6-7] | pas de logement secondaire (art. 6) ; pas d'opérations d'achat ou de vente dépassant trente fois le salaire minimum au cours des trois dernières années, par le demandeur ou un membre de sa famille (art. 7) |
+| []{#r-nc-elig-score}score | loi organique n° 2019-10 [@loi-amen-social-2019, art. 2] ; arrêté du ministre des affaires sociales du 19 mai 2020 [@arrete-2020-05-19-scoring, art. 2-3] ; même décret [@decret-gouv-2020-317-amen, art. 9] | la loi renvoie le modèle à un arrêté ; l'arrêté retient le test des moyens approximé et sept familles de variables, et prévoit que le modèle est actualisé tous les cinq ans et chaque fois que nécessaire (art. 3) ; le décret applique le score « en sus » des conditions de l'article 5 pour identifier et classer les bénéficiaires ; ni seuil ni coefficient |
+| []{#r-nc-elig-date}date exécutoire | loi n° 93-64 du 5 juillet 1993 [@loi93-64, art. 2] | un texte sans clause d'effet devient exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, jour du dépôt non compté : dépôt le 20 mai 2020, exécution le 25 mai 2020 |
+
+::::
+
+### Combien {#sec-nc-montant}
+
+[L'arrêté conjoint fondateur du 19 mai 2020](#r-nc-tr-2020) construit le transfert en deux éléments : un montant de base mensuel servi par individu ou par famille, et une allocation supplémentaire par enfant à charge, doublée pour l'enfant titulaire d'une carte de handicap. La base a été revalorisée en 2022 puis chaque année jusqu'en 2026 : de 180 dinars à l'origine, elle atteint [280 dinars au 1^er^ janvier 2026](#r-nc-tr-2026).
 
 ```{python}
 #| echo: false
 #| output: asis
 table("amen_base",
-      "Allocation de base mensuelle du transfert AMEN : montant initial au 25 mai 2020, jour où l'arrêté fondateur devient exécutoire, puis revalorisations prenant effet au 1^er^ janvier de 2022 à 2026",
+      "Allocation de base mensuelle du transfert de l'Amen social : montant initial au 25 mai 2020, jour où l'arrêté fondateur devient exécutoire, puis revalorisations prenant effet au 1^er^ janvier de 2022 à 2026",
       "tbl-amen-base")
 ```
 
-Les revalorisations de 2022 à 2026 prennent effet au **1^er^ janvier** de l'année : chaque arrêté énonce cette date, antérieure à sa propre signature — celui du 21 avril 2026 « prend effet à compter du 1^er^ janvier 2026 » [@arrete-2026-04-21-transferts, art. 2]. L'arrêté fondateur, lui, ne comporte pas de clause d'entrée en vigueur, son article 3 n'ordonnant que sa publication. Publié au *Journal officiel* du 20 mai 2020, fascicule déposé le même jour au siège du gouvernorat de Tunis, il devient exécutoire cinq jours après ce dépôt, jour du dépôt non compté [@loi93-64, art. 2] : le montant initial de 180 dinars est donc daté du **25 mai 2020**, et non du jour de la publication.
+Les revalorisations de 2022 à 2026 prennent effet au **1^er^ janvier** de l'année : chaque arrêté énonce cette date, antérieure à sa propre signature — celui du 21 avril 2026 « prend effet à compter du 1^er^ janvier 2026 ». L'arrêté fondateur, lui, ne comporte pas de clause d'entrée en vigueur, son article 3 n'ordonnant que sa publication. Publié au *Journal officiel* du 20 mai 2020, fascicule déposé le même jour au siège du gouvernorat de Tunis, il devient exécutoire cinq jours après ce dépôt, jour du dépôt non compté : le montant initial de 180 dinars est donc daté du [**25 mai 2020**](#r-nc-tr-date), et non du jour de la publication.
 
-Le supplément par enfant a connu, lui, une modification de bornes d'âge décisive pour l'articulation des dispositifs.
+Le montant de base ne suit pas les prix : il est fixé par arrêté, sans règle d'indexation. Les 180 dinars de l'allocation antérieure valent 286,6 dinars de 2025 à la date où la série les place, en avril 2018, et 189,7 en 2024 (@fig-pnafn-allocation) ; ce que les documents de la Banque mondiale disent du transfert rapporté au salaire minimum est à la section des études (@sec-nc-etudes-smig).
+
+Le supplément par enfant a connu une modification de ses bornes d'âge.
 
 ```{python}
 #| echo: false
@@ -254,23 +323,213 @@ table("amen_supplement_enfant",
       "tbl-amen-supplement")
 ```
 
-À l'origine, le supplément vaut pour tout enfant à charge de moins de 18 ans ; l'arrêté du 1^er^ avril 2022 le borne aux enfants de 6 à 18 ans à compter du 1^er^ février 2022, sans le supprimer [@arrete-2022-04-01-transferts, art. 1]. Depuis cette date, il vise la tranche d'âge qui est aussi celle de l'allocation des enfants de 6 à 18 ans (@sec-af-non-contributive). Ce déplacement de borne doit être distingué de la mise en montant de l'[allocation familiale non contributive](#g-allocation-familiale-non-contributive). Les enfants de moins de six ans sortent du supplément de dix dinars le 1^er^ février 2022. L'arrêté du 1^er^ avril fixe ensuite l'allocation familiale à trente dinars ; le tableau qui la compare au transfert porte l'état daté du 8 avril 2022, jour de sa publication. Les deux dates ne coïncident donc pas, et les textes cités ne permettent pas de déduire ici les modalités de service pendant l'intervalle.
+À l'origine, le supplément vaut pour tout enfant à charge de moins de 18 ans ; [l'arrêté du 1^er^ avril 2022](#r-nc-tr-2022) le borne aux enfants de 6 à 18 ans à compter du 1^er^ février 2022, sans le supprimer. Depuis cette date, il vise la tranche d'âge qui est aussi celle de l'allocation des enfants de 6 à 18 ans (@sec-nc-af-cumul).
 
-### L'autonomisation économique
+:::: {.chronologie-repliable titre="Transfert monétaire permanent de l'Amen social : arrêtés fixant le montant de base et le supplément par enfant, date par date, 2020-2026"}
 
-Le décret n° 2022-715 crée un programme d'autonomisation économique au profit des bénéficiaires de l'AMEN social **et des personnes handicapées**, finançant des projets individuels ou collectifs sur des crédits annuels inscrits au budget du ministère, dont **30 % sont réservés aux personnes handicapées**. Une règle d'articulation importante y figure : le transfert monétaire mensuel est **maintenu pendant un an, renouvelable une fois**, à compter du lancement du projet [@decret-2022-715-autonomisation, art. 1-5]. Les conditions exigées du candidat ne sont pas établies ici.
+| Date d'effet | Portée | Texte | Ce qui change |
+|---|---|---|---|
+| []{#r-nc-tr-2020}[25 mai 2020]{.insecable} | point de départ | arrêté conjoint du 19 mai 2020 [@arrete-2020-05-19-transferts, art. 2] | montant de base de 180 D par mois, « للفرد أو للأسرة الواحدة », pour l'individu ou pour la famille ; supplément de 10 D par enfant à charge de moins de 18 ans, jusqu'à 25 ans en études ou en formation, doublé pour l'enfant titulaire d'une carte de handicap |
+| []{#r-nc-tr-date}[25 mai 2020]{.insecable} | date exécutoire | loi n° 93-64 du 5 juillet 1993 [@loi93-64, art. 2] | l'arrêté fondateur n'a pas de clause d'effet : dépôt du fascicule le 20 mai 2020, exécution cinq jours après, jour du dépôt non compté |
+| []{#r-nc-tr-2022}[1^er^ janvier 2022]{.insecable} ; [1^er^ février 2022]{.insecable} | étape | arrêté conjoint du 1^er^ avril 2022 [@arrete-2022-04-01-transferts, art. 1] | base 180 → 200 D au 1^er^ janvier 2022 ; supplément de 10 D borné aux enfants à charge de 6 à 18 ans « et ce à compter du 1^er^ février 2022 », jusqu'à 25 ans pour ceux qui poursuivent des études, un apprentissage ou une formation professionnelle |
+| []{#r-nc-tr-2023}[1^er^ janvier 2023]{.insecable} | ajustement | arrêté conjoint du 3 avril 2023 [@arrete-2023-04-03-transferts, art. 1-2] | base 200 → 220 D ; seul l'alinéa 1 de l'article 2 est remplacé |
+| []{#r-nc-tr-2024}[1^er^ janvier 2024]{.insecable} | ajustement | arrêté conjoint du 28 février 2024 [@arrete-2024-02-28-transferts, art. 1-2] | base 220 → 240 D ; même alinéa |
+| []{#r-nc-tr-2025}[1^er^ janvier 2025]{.insecable} | ajustement | arrêté conjoint du 29 janvier 2025 [@arrete-2025-01-29-transferts, art. 1-2] | base 240 → 260 D ; même alinéa |
+| []{#r-nc-tr-2026}[1^er^ janvier 2026]{.insecable} | ajustement | arrêté conjoint du 21 avril 2026 [@arrete-2026-04-21-transferts, art. 1-2] | base 260 → 280 D : « Un montant de base mensuel égal à 280 dinars servi pour l'individu ou pour la famille » ; « Le présent arrêté prend effet à compter du 1^er^ janvier 2026 » |
 
-## Les allocations familiales non contributives (2022 →) {#sec-af-non-contributive}
+::::
 
-Un point de vocabulaire d'abord, parce qu'il commande la chronologie. Ce que le dispositif AMEN comporte depuis 2020, c'est le **supplément de dix dinars par enfant** attaché au transfert monétaire ; ce n'est pas une allocation familiale. L'allocation familiale non contributive, comme prestation propre, **n'existe qu'à compter de 2022**, pour les enfants de moins de six ans ; une seconde allocation, pour les enfants de 6 à 18 ans, est versée à partir de 2022 au titre d'un programme pilote financé par un don, puis instituée par décret en 2025.
+## L'aide médicale {#sec-nc-aide-medicale}
 
-Son fondement est le décret-loi n° 2022-8 du 31 janvier 2022, qui complète la loi organique de 2019 par un **article 11 bis** : « Les catégories pauvres et les catégories à revenu limité bénéficient d'une allocation familiale payable mensuellement, au titre des enfants âgés de moins de 6 ans. Les situations d'octroi et le montant […] sont fixés par arrêté conjoint du ministre chargé des affaires sociales et du ministre chargé des finances » [@decret-loi-2022-8-allocation-familiale]. Sur le plan des sources du droit, une loi organique est ici complétée par un décret-loi pris pendant la période des mesures exceptionnelles ouverte en 2021 : le fait est signalé pour ce qu'il est, un mode d'édiction.
+Depuis 1988, les ménages à faible revenu accèdent aux soins des structures publiques gratuitement ou à tarif réduit : avec un livret, puis, en 1998, avec une carte attribuée dans la limite de quotas, puis, depuis 2022, avec un support électronique lié à l'Amen social.
 
-L'arrêté conjoint du 1^er^ avril 2022 en fixe le régime. L'allocation est octroyée au titre des enfants à charge âgés de moins de six ans, aux catégories pauvres **et** aux catégories à revenu limité bénéficiant du programme, et son montant est de **trente dinars par mois et par enfant** [@arrete-2022-04-01-allocation-familiale, art. 2-3].
+| Depuis | Support | Qui | À quel prix | Mode d'attribution |
+|---|---|---|---|---|
+| [[1^er^ janvier 1988]{.insecable}](#r-nc-am-1987) | livret de soins, deux catégories | familles dont le revenu annuel ne dépasse pas le salaire minimum | gratuité en première catégorie ; droit annuel d'affiliation et contribution aux frais en seconde | commissions régionales, sur proposition de commissions locales |
+| [1998](#r-nc-am-1998-gratuit) | carte de soins gratuits ; carte de soins à tarifs réduits | « tout tunisien indigent » ; familles sous un plafond de revenu annuel et non affiliées à la sécurité sociale | gratuité ; cotisation annuelle de 10 D et tarifs de 20 à 30 % | dans la limite d'un nombre global de cartes et de quotas régionaux |
+| [2022](#r-nc-am-2022) | support de soins électronique personnel | catégories pauvres et à revenu limité bénéficiaires de l'Amen social | soins, médicaments, hospitalisation, appareillage et réadaptation dans les structures publiques | géré par le ministère des Affaires sociales |
+
+: L'aide médicale : trois supports, 1988-2022 {#tbl-nc-aide-medicale}
+
+- **La dualité entre soins gratuits et soins à tarif réduit date de 1987.** Les décrets de 1998 remplacent le livret par une carte et refondent les deux catégories dans deux textes distincts.
+- **Depuis 1998, une prestation à enveloppe fermée.** Les cartes ne sont pas un droit ouvert sous condition de ressources : elles sont attribuées dans la limite d'un nombre global et de quotas régionaux fixés par arrêté conjoint.
+- **De 2004 à 2022, des cartes prorogées.** Sept décrets au moins prolongent la validité de cartes déjà délivrées ; les dernières cartes prorogées sont celles des années 2011 à 2017 (@tbl-nc-cartes-prorogations).
+
+### Les livrets, 1988 {#sec-nc-livrets-1988}
+
+[La loi n° 87-29 du 12 juin 1987](#r-nc-am-1987) institue le régime de l'assistance médicale gratuite. Son article premier accorde le bénéfice des soins dans les établissements publics hospitaliers et sanitaires aux titulaires de **livrets de soins**, et institue d'emblée « **deux catégories de livrets** d'assistance médicale gratuite », délivrés **en fonction du revenu de la famille** ; l'article 2 crée un droit annuel d'affiliation dont sont exonérés les titulaires de livrets de première catégorie, et l'article 3 une contribution aux frais de soins et d'hospitalisation, l'un et l'autre fixés par la loi de finances. La loi prend effet au 1^er^ janvier 1988.
+
+[Le décret n° 88-175](#r-nc-am-1988-decret) précise les conditions d'attribution des livrets : « Ne peuvent bénéficier de l'assistance médicale gratuite que les personnes justifiant d'un **revenu familial annuel égal ou inférieur au salaire minimum inter-professionnel garanti** ». Le partage entre la première et la deuxième catégorie est arrêté par des **commissions régionales**, sur proposition de commissions locales, « selon des critères fixés par la commission nationale de l'assistance médicale gratuite ».
+
+Le droit annuel d'affiliation des titulaires de la seconde catégorie est de 6 dinars en 1988 et de 10 dinars en 1991 ; la contribution à une consultation en dispensaire passe de 300 à 400 millimes, celle d'une hospitalisation en chirurgie de 10 à 13 dinars ([lois de finances pour 1988](#r-nc-am-lf1988) et [pour 1991](#r-nc-am-lf1991)).
+
+:::: {.chronologie-repliable titre="Assistance médicale gratuite : droit d'affiliation et contributions aux frais de soins des titulaires de livrets, tarifs de 1988 et de 1991"}
+
+| Élément | 1988<br>(D) | 1991<br>(D) |
+|---|---:|---:|
+| Droit annuel d'affiliation (deuxième catégorie) | 6 | **10** |
+| Consultation externe en dispensaire | 0,300 | **0,400** |
+| Consultation en hôpital de circonscription | 0,500 | **0,700** |
+| Consultation en hôpital régional, principal, universitaire ou institut spécialisé | 1 | **1,500** |
+| Hospitalisation en médecine générale, gynécologie-obstétrique, spécialités médicales | 5 | **7** |
+| Hospitalisation en chirurgie ou spécialités chirurgicales | 10 | **13** |
+
+: Droit d'affiliation et contributions aux frais de soins et d'hospitalisation des titulaires de livrets, lois de finances pour 1988 et pour 1991 {#tbl-nc-amg-tarifs-1988}
+
+| Date | Texte | Ce qu'il établit |
+|---|---|---|
+| []{#r-nc-am-lf1988}gestion 1988 | loi de finances pour 1988 [@loi-87-83-lf-1988, art. 62-65] | tarifs de la colonne 1988 (art. 62 à 65) ; les titulaires de livrets de première catégorie sont exonérés du droit d'affiliation comme de la contribution (art. 62 et 64) ; le non-paiement du droit entraîne la suspension des effets du livret et son retrait provisoire (art. 63) |
+| []{#r-nc-am-1988-arrete}17 février 1988 | arrêté du 17 février 1988 [@arrete-1988-02-17-droit-affiliation-amg] | paiement du droit en une seule tranche en janvier ou, sur autorisation, en deux tranches égales de trois dinars en janvier et en juillet |
+| []{#r-nc-am-lf1991}gestion 1991 | loi de finances pour 1991 [@loi-90-111-lf-1991, art. 65-66] | tarifs de la colonne 1991 ; la cotisation annuelle de **10 dinars** attachée par le décret de 1998 à la carte de soins à tarifs réduits reprend ce taux |
+
+::::
+
+### Les cartes de soins, 1998 {#sec-nc-cartes-1998}
+
+Deux décrets de 1998 remplacent le livret par une carte et changent le mode d'attribution : c'est la rupture propre à l'aide médicale.
+
+**La carte de soins gratuits.** [Le décret n° 98-1812](#r-nc-am-1998-gratuit) fixe les conditions d'attribution et de retrait de la [carte de soins gratuits](#g-amg1). Il ne pose aucun seuil de revenu. Il pose une condition d'état — la carte est attribuée à « tout tunisien indigent, à son conjoint et à ses enfants légalement à charge » — et un **contingentement** : la carte est attribuée « dans la limite du nombre global de cartes et des quotas régionaux qui sont fixés par arrêté conjoint des ministres des affaires sociales et de la santé publique ». Le décret renvoie à un arrêté conjoint la fixation du nombre global de cartes et des quotas régionaux. <!-- RECHERCHE r-amg-cartes-quotas : arrêtés fixant le nombre global de cartes et les quotas régionaux (voir docs/recherches.yml) --> La gratuité est totale, sans contribution ni cotisation.
+
+**La carte de soins à tarifs réduits.** [Le décret n° 98-409](#r-nc-am-1998-reduit) organise le second étage, celui de la [carte de soins à tarifs réduits](#g-amg2). Il énonce une condition de ressources chiffrée, assise sur le revenu **annuel** de la famille et exprimée en multiples du salaire minimum.
+
+| Taille de la famille | Plafond de revenu annuel<br>(salaires minimums) |
+|---|---:|
+| 2 personnes ou moins | 1 |
+| 3 à 5 personnes | 1,5 |
+| plus de 5 personnes | 2 |
+
+: Carte de soins à tarifs réduits : plafond de revenu annuel de la famille, [décret n° 98-409](#r-nc-am-1998-reduit) {#tbl-nc-amg2-plafonds}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces plafonds auront un paramètre daté et sourcé en amont
+(constat inscrit à docs/notes/backlog-modele.md). -->
+
+Les membres pris en compte sont, à l'origine, le candidat, son conjoint et les enfants légalement à charge ; les ascendants légalement à charge y sont ajoutés [en 2005](#r-nc-am-2005), les seuils restant inchangés. S'y ajoute une condition d'exclusion : le bénéficiaire « ne doit pas être affilié à l'un des régimes de sécurité sociale et sa situation ne lui permet pas l'affiliation ». Le contingentement est identique à celui de la carte de soins gratuits, par nombre global de cartes et quotas régionaux. [La cotisation annuelle](#r-nc-am-cotisation) est de dix dinars par carte, et [les tarifs](#r-nc-am-tarifs) vont de 20 à 30 % de ceux des malades payants selon la structure de soins.
+
+**Des catégories nouvelles en 2012.** [Un décret de 2012](#r-nc-am-2012-reduit) ouvre des cartes annuelles renouvelables à des catégories spécifiques, dont les licenciés économiques après épuisement de la protection de la loi n° 96-101, les ascendants d'affiliés proches de 55 ans et certains travailleurs saisonniers du bâtiment.
+
+**Des cartes prorogées, de 2004 à 2022.** De 2004 à 2022, sept décrets au moins n'ont d'autre objet que de prolonger la validité de cartes délivrées entre 1999 et 2017 : six pour la carte à tarifs réduits, en 2004, 2011, 2016, 2020, 2021 et 2022, et un pour la carte de soins gratuits, en 2011 (@tbl-nc-cartes-prorogations). La prorogation de 2020 énumère les cartes des années 2011 à 2015, celle de 2021 les cartes de 2011 à 2016 ; celle de 2022 va jusqu'à 2017.
+
+:::: {.chronologie-repliable titre="Carte de soins à tarifs réduits : tarifs par prestation, cotisation annuelle et validité, décret n° 98-409"}
+
+| Prestation | Tarif<br>(% du tarif des malades payants, sauf mention) |
+|---|---|
+| Consultation en centre de santé de base (médecine générale) | 20 |
+| Consultation en hôpital de circonscription | 25 |
+| Consultation de spécialité en hôpital régional | 30 |
+| Consultation de maître de conférences en établissement à vocation universitaire | 30 |
+| Hospitalisation | forfait égal au tarif d'une journée, **quelle que soit la durée du séjour** |
+| Accompagnant | moitié du forfait, ou tiers sur prescription médicale |
+| Explorations, actes chirurgicaux et actes de la nomenclature | 20, **plafonnés à 30 D** |
+| Séance d'hémodialyse | 1 D |
+| Prothèses et implants | 20 % du prix coûtant, **plafonnés à 50 D** |
+
+: Tarifs applicables aux titulaires de la carte de soins à tarifs réduits ; les montants sont arrondis par tranche entière de 500 millimes {#tbl-nc-amg2-tarifs}
+
+| Objet | Texte | Ce qu'il établit |
+|---|---|---|
+| []{#r-nc-am-tarifs}tarifs | décret n° 98-409 du 18 février 1998 [@decret-98-409-amg2, art. 17, 18, 21 et 22] | les tarifs du tableau |
+| []{#r-nc-am-cotisation}cotisation et validité | même décret [@decret-98-409-amg2, art. 10 et 12] | cotisation annuelle de **dix dinars** par carte (art. 10) ; carte valable cinq ans, validée annuellement par apposition d'un cachet (art. 12) |
+
+::::
+
+:::: {.chronologie-repliable titre="Aide médicale : textes, date par date, avec leur portée — livrets, cartes de soins gratuits et à tarifs réduits, support électronique, 1987-2022"}
+
+| Date | Portée | Texte | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-nc-am-1987}[1^er^ janvier 1988]{.insecable} | **mise en place** | loi n° 87-29 du 12 juin 1987 [@loi-87-29-amg, art. 1-4] | livrets de soins de deux catégories, délivrés en fonction du revenu de la famille (art. 1) ; droit annuel d'affiliation, dont les titulaires de la première catégorie sont exonérés (art. 2) ; contribution aux frais de soins et d'hospitalisation (art. 3) ; effet au 1^er^ janvier 1988 (art. 4) |
+| []{#r-nc-am-1988-decret}1988 | modalité | décret n° 88-175 [@decret-88-175-livrets-amg, art. 1 et 9] | revenu familial annuel égal ou inférieur au salaire minimum ; partage entre les deux catégories par des commissions régionales (art. 1) ; livret valable cinq ans, renouvelable sur demande présentée six mois avant l'échéance (art. 9) |
+| []{#r-nc-am-1998-reduit}1998 | **rupture** — propre à l'aide médicale | décret n° 98-409 du 18 février 1998 [@decret-98-409-amg2, art. 2 et 14] | intitulé : « fixant les catégories des bénéficiaires des tarifs réduits de soins et d'hospitalisation dans les structures sanitaires publiques relevant du ministère de la santé publique ainsi que les modalités de leur prise en charge et les tarifs auxquels ils sont assujettis » ; plafond de revenu annuel en multiples du salaire minimum et non-affiliation (art. 2) ; « dans la limite du nombre global des cartes et des quotas régionaux » (art. 2 et 14) |
+| []{#r-nc-am-1998-gratuit}1998 | **rupture** — propre à l'aide médicale | décret n° 98-1812 du 21 septembre 1998 [@decret-98-1812-amg1, art. 2 à 4] | intitulé : « fixant les conditions et les modalités d'attribution et de retrait de la carte de soins gratuits » ; « tout tunisien indigent », nombre global de cartes et quotas régionaux (art. 2) ; ayants droit : le conjoint, les enfants à charge jusqu'à la majorité ou jusqu'à la fin des études sans dépasser 25 ans, les enfants handicapés jusqu'à ce qu'ils disposent de ressources, et la fille tant qu'elle ne dispose pas de ressources ou n'est pas à la charge de son mari ; gratuité totale, sans contribution ni cotisation (art. 3-4) |
+| []{#r-nc-am-2005}2005 | ajustement | décret n° 2005-2886 du 24 octobre 2005 [@decret-2005-2886-amg2-ascendants] | les ascendants légalement à charge s'ajoutent aux membres de la famille pris en compte pour le plafond de la carte à tarifs réduits ; seuils inchangés |
+| []{#r-nc-am-2012-gratuit}2012 | ajustement | décret n° 2012-2521 du 16 octobre 2012 [@decret-2012-2521-amg1-pnafn, art. 5] | carte de soins gratuits : la liste des éligibles est élaborée au vu des listes des bénéficiaires et des éligibles aux aides monétaires directes du programme national d'aide aux familles nécessiteuses |
+| []{#r-nc-am-2012-reduit}2012 | ajustement — un public nouveau | décret n° 2012-2522 du 16 octobre 2012 [@decret-2012-2522-amg2-commissions, art. 5 et 7] | carte à tarifs réduits : composition des commissions remaniée (art. 5 et 7) ; cartes annuelles renouvelables pour des catégories spécifiques |
+| []{#r-nc-am-2022}2022 | étape — de 2019 | décret n° 2022-919 du 29 novembre 2022 [@decret-2022-919-soins-amen, art. 1-2, 5-6, 20-21] | « système de soins électronique AMEN » (art. 1-2) ; support de soins électronique personnel (art. 5) ; soins couverts (art. 6) ; cartes des années 2011 à 2017 prorogées jusqu'au 31 décembre 2022 (art. 20) ; régimes particuliers de gratuité et de tarifs réduits maintenus (art. 21) |
+
+::::
+
+:::: {.chronologie-repliable titre="Cartes de soins : les décrets qui en prorogent la validité ou en modifient les pièces, 2004-2022"}
+
+Ces décrets sont donnés par leur numéro et leur publication au *Journal officiel*.
+
+| Décret | *Journal officiel* | Carte | Ce qui change |
+|---|---|---|---|
+| n° 2004-2730 du 31 décembre 2004 | n° 1 de 2005, p. 16-17 | à tarifs réduits | cartes délivrées en décembre 1999 et en 2000 : validité prolongée au 31 décembre 2005 |
+| n° 2004-2731 du 31 décembre 2004 | n° 1 de 2005, p. 17 | gratuits | modifie le décret n° 98-1812 |
+| n° 2009-1034 du 13 avril 2009 | n° 31, p. 1063 | à tarifs réduits | la déclaration fiscale des revenus est retirée des pièces exigées |
+| n° 2011-560 du 14 mai 2011 | n° 36, p. 730 | gratuits | cartes de 2006 prolongées au 31 décembre 2011 |
+| n° 2011-561 du 14 mai 2011 | n° 36, p. 730-731 | à tarifs réduits | cartes de 2006 prolongées au 31 décembre 2011 |
+| décret gouvernemental n° 2016-111 du 25 janvier 2016 | n° 8, p. 252-253 | à tarifs réduits | cartes de 2011 prolongées au 31 décembre 2016 |
+| décret gouvernemental n° 2016-112 du 25 janvier 2016 | n° 8, p. 253 | gratuits | modifie le décret n° 98-1812 |
+| décrets gouvernementaux n° 2016-1401 et n° 2016-1402 du 27 décembre 2016 | n° 105 | gratuits ; à tarifs réduits | seul l'intitulé de ces deux textes est connu ici |
+| décret gouvernemental n° 2020-475 du 23 juillet 2020 | n° 74, p. 1637-1638 | gratuits | modifie le décret n° 98-1812 |
+| décret gouvernemental n° 2020-476 du 23 juillet 2020 | n° 74, p. 1638-1639 | à tarifs réduits | cartes de 2011 à 2015 prolongées au 31 décembre 2020 |
+| décret gouvernemental n° 2021-66 du 12 janvier 2021 | n° 9, p. 250-251 | à tarifs réduits | cartes de 2011 à 2016 prolongées au 31 décembre 2021 |
+| décret gouvernemental n° 2021-67 du 12 janvier 2021 | n° 9, p. 251-252 | gratuits | modifie le décret n° 98-1812 |
+
+: Décrets modifiant les décrets n° 98-409 et n° 98-1812, hors ceux du registre de l'aide médicale {#tbl-nc-cartes-prorogations}
+
+<!-- TODO (bibliographe) : créer les clés de ces treize décrets (numéros, dates, JORT et pages dans docs/notes/prestations-assistance.md,
+§ 2.5), puis porter les citations dans ce tableau. La note compte onze décrets de prorogation sur seize modificatifs de 2004 à 2022 :
+décompte à confirmer avant de l'écrire. TODO (documentaliste) : établir l'objet du décret n° 99-1372 du 21 juin 1999
+(JORT n° 52, p. 1052-1053), visé comme ayant modifié l'article 24 du décret n° 98-409 ; lire les décrets de la chaîne de la carte de
+soins gratuits (n° 2004-2731, 2016-112, 2020-475, 2021-67), dont la note ne donne que la place dans la chaîne ; lire les décrets
+n° 93-529 et n° 94-1738 (tarifs réduits antérieurs à 1998, le second abrogé par l'art. 25 du décret n° 98-409). -->
+
+::::
+
+:::: {.chronologie-repliable titre="Commissions d'attribution des livrets et des cartes de soins : composition en 1988 et en 2012"}
+
+| Date | Texte | Composition |
+|---|---|---|
+| []{#r-nc-am-commissions-1988}1988 | décret n° 88-175 [@decret-88-175-livrets-amg, art. 4 et 11] | la commission locale fait siéger le secrétaire général de circonscription du parti au pouvoir et le président de la cellule locale ; la commission nationale réunit le parti, l'union syndicale, l'union nationale de la femme et les organisations patronales |
+| []{#r-nc-am-commissions-2012}2012 | décret n° 2012-2522 [@decret-2012-2522-amg2-commissions, art. 5 et 7] | la présidence locale revient au chef de l'unité locale de promotion sociale ; la Caisse nationale d'assurance maladie et la Ligue tunisienne des droits de l'homme entrent dans les commissions |
+
+Le changement de 2012 est un changement de composition, et les deux textes en donnent la teneur exacte.
+
+::::
+
+### Le support électronique, 2022 {#sec-nc-soins-2022}
+
+[Le décret n° 2022-919](#r-nc-am-2022) crée un « système de soins électronique AMEN » au profit des catégories pauvres et à revenu limité bénéficiaires de l'Amen social, géré par le ministère des Affaires sociales. Un **support de soins électronique personnel** est attribué au bénéficiaire et à ses ayants droit, en remplacement de la carte de papier, et couvre les soins, les médicaments, l'hospitalisation, l'appareillage de prothèse et la réadaptation dans les structures publiques ; les cartes des années 2011 à 2017 sont prorogées à titre transitoire jusqu'au 31 décembre 2022, et les régimes particuliers de gratuité et de tarifs réduits sont maintenus.
+
+<!-- TODO (documentaliste) : établir si un arrêté d'application du décret n° 2022-919 a été pris et si le système est entré en
+service (docs/notes/prestations-assistance.md, § 2.6). -->
+
+## Les allocations pour enfants {#sec-af-non-contributive}
+
+L'Amen social verse 30 dinars par mois et par enfant aux catégories pauvres et aux catégories à revenu limité non affiliées à un régime de sécurité sociale : pour les enfants de moins de six ans depuis 2022, pour ceux de 6 à 18 ans par un programme pilote à partir de 2022 puis en vertu d'un décret depuis 2025. Cette [allocation familiale non contributive](#g-allocation-familiale-non-contributive) est distincte du supplément de 10 dinars par enfant attaché au transfert monétaire depuis 2020 (@sec-nc-montant).
+
+Le tableau met en regard les deux allocations — 30 dinars par enfant de moins de six ans à l'état du 8 avril 2022, 30 dinars par enfant de 6 à 18 ans à celui du 9 novembre 2025 — et les états successifs de la base du transfert monétaire de 2020 à 2026.
+
+```{python}
+#| echo: false
+#| output: asis
+table("amen_vs_afnc",
+      "Transfert de l'Amen social et allocations familiales non contributives : états fixés par les arrêtés de 2020 à 2026, allocation des moins de six ans au 8 avril 2022, allocation des 6 à 18 ans au 9 novembre 2025",
+      "tbl-amen-vs-afnc")
+```
+
+- **Combien d'enfants.** Selon le ministère des Affaires sociales, 156 418 enfants de moins de six ans et 422 542 enfants de 6 à 18 ans sont allocataires en décembre 2023 ; selon les décomptes que rapporte la Banque mondiale, 137 014 et 463 903 en mai 2026 (@sec-nc-enfants-constat).
+- **Sans plafond du nombre d'enfants.** L'allocation est servie pour chaque enfant, là où le régime contributif s'arrête au troisième depuis 1989 (@sec-prest-familiales).
+- **Un champ plus large que celui du transfert.** Elle couvre aussi les catégories à revenu limité, qui ne perçoivent pas de transfert, à l'exclusion de celles qui sont affiliées à un régime de sécurité sociale.
+- **Un financement extérieur.** L'allocation des moins de six ans est adossée à un prêt de la Banque internationale pour la reconstruction et le développement ; celle des 6 à 18 ans est d'abord financée par un don (@sec-nc-financement-exterieur).
+
+### Avant six ans, depuis 2022 {#sec-nc-af-moins-6}
+
+Son fondement est [le décret-loi n° 2022-8 du 31 janvier 2022](#r-nc-af-dl), qui complète la loi organique de 2019 par un **article 11 bis** : « Les catégories pauvres et les catégories à revenu limité bénéficient d'une allocation familiale payable mensuellement, au titre des enfants âgés de moins de 6 ans. Les situations d'octroi et le montant […] sont fixés par arrêté conjoint du ministre chargé des affaires sociales et du ministre chargé des finances ». Sur le plan des sources du droit, une loi organique est ici complétée par un décret-loi pris pendant la période des mesures exceptionnelles ouverte en 2021 : le fait est signalé pour ce qu'il est, un mode d'édiction.
+
+[L'arrêté conjoint du 1^er^ avril 2022](#r-nc-af-2022) en fixe le régime. L'allocation est octroyée au titre des enfants à charge âgés de moins de six ans, aux catégories pauvres **et** aux catégories à revenu limité bénéficiant du programme, et son montant est de **trente dinars par mois et par enfant**.
 
 Quatre traits la distinguent des allocations familiales contributives. Elle est servie **sans plafonnement du nombre d'enfants**, là où le régime contributif s'arrête au troisième depuis 1989. Son champ est **plus large que celui du transfert monétaire**, puisqu'il couvre aussi les catégories à revenu limité, qui ne perçoivent pas de transfert. Elle comporte une **exclusion explicite** : « Les catégories à revenu limité affiliées à l'un des régimes de sécurité sociale sont exclues du bénéfice de cette allocation familiale ». Cette exclusion vise donc cette catégorie précise, sans énoncer une interdiction générale de cumul pour les catégories pauvres. Enfin, l'arrêté vise expressément la loi qui approuve un accord de prêt de la Banque internationale pour la reconstruction et le développement : le financement du dispositif par un bailleur figure **dans le visa du texte lui-même**, et non seulement dans les commentaires qui l'entourent.
 
-**L'allocation des enfants de 6 à 18 ans est d'abord un programme pilote, de 2022 à 2024.** L'article 11 bis de la loi organique ne vise que les enfants de moins de six ans : cette seconde allocation ne procède alors pas d'elle, et elle est connue par un rapport administratif et par les documents de ses bailleurs. Selon le rapport de suivi et d'évaluation de l'AMEN social du ministère des Affaires sociales pour 2023, un second programme pilote d'allocation familiale — le premier, de décembre 2020 à janvier 2022, portait sur les enfants de moins de six ans — est engagé en exécution d'une convention signée le 28 septembre 2022 entre le ministère, l'Agence des États-Unis pour le développement international (USAID) et l'UNICEF. Le rapport chiffre cette convention à 191 millions de dinars, dont 188 millions de transferts (allocations familiales et aides scolaires), de septembre 2022 à décembre 2023, pour environ 418 000 enfants ; il compte, en décembre 2023, 422 542 enfants de 6 à 18 ans dans 217 157 familles, pour un crédit de 124,6 millions de dinars financé par ce don [@mas-amen-social-2023]. L'UNICEF, qui finance et accompagne le programme, en date le démarrage de juillet 2022 et rapporte, d'après les données du programme, 111 682 enfants allocataires en juillet 2022 et 422 683 en décembre 2023, à raison de trente dinars par enfant et par mois [@unicef2024allocations618, p. 2 et 20]. Les deux sources donnent ainsi, pour décembre 2023, deux effectifs qui diffèrent de 141 enfants, et deux dates de départ, juillet et septembre 2022.
+L'antécédent doctrinal de ce dispositif — l'introduction graduelle d'une allocation universelle pour enfant — est documenté par @unicef2020, qui en décrit le principe avant que les textes de 2022 ne l'établissent.
+
+<!-- TODO (documentaliste) : établir les phases et les dates de financement de cette prestation
+par des sources citables, notamment les accords de prêt et les documents de projet. -->
+
+### De 6 à 18 ans : un programme pilote en 2022, un décret en 2025 {#sec-nc-af-6-18}
+
+**L'allocation des enfants de 6 à 18 ans est d'abord un programme pilote, de 2022 à 2024.** L'article 11 bis de la loi organique ne vise que les enfants de moins de six ans : cette seconde allocation ne procède alors pas d'elle, et elle est connue par un rapport administratif et par les documents de ses bailleurs. Selon le rapport de suivi et d'évaluation de l'Amen social du ministère des Affaires sociales pour 2023, un second programme pilote d'allocation familiale — le premier, de décembre 2020 à janvier 2022, portait sur les enfants de moins de six ans — est engagé en exécution d'une convention signée le 28 septembre 2022 entre le ministère, l'Agence des États-Unis pour le développement international (USAID) et l'UNICEF. Le rapport chiffre cette convention à 191 millions de dinars, dont 188 millions de transferts (allocations familiales et aides scolaires), de septembre 2022 à décembre 2023, pour environ 418 000 enfants ; il compte, en décembre 2023, 422 542 enfants de 6 à 18 ans dans 217 157 familles, pour un crédit de 124,6 millions de dinars financé par ce don [@mas-amen-social-2023]. L'UNICEF, qui finance et accompagne le programme, en date le démarrage de juillet 2022 et rapporte, d'après les données du programme, 111 682 enfants allocataires en juillet 2022 et 422 683 en décembre 2023, à raison de trente dinars par enfant et par mois [@unicef2024allocations618, p. 2 et 20]. Les deux sources donnent ainsi, pour décembre 2023, deux effectifs qui diffèrent de 141 enfants, et deux dates de départ, juillet et septembre 2022.
 
 Pour les enfants des familles qui perçoivent le transfert monétaire, le rapport du ministère pour 2023 indique que le don apporte vingt dinars en plus de dix dinars financés par le budget du ministère — le montant du supplément par enfant (@tbl-amen-supplement) —, soit trente dinars par enfant [@mas-amen-social-2023]. Sur la fin du programme pilote, les sources ne concordent pas : l'UNICEF indique un financement prévu jusqu'en décembre 2023 et prolongé jusqu'en avril 2024 [@unicef2024allocations618, p. 55] ; la Banque mondiale, bailleur du programme, écrit que le pilote est exécuté par l'UNICEF jusqu'en décembre 2024 et que le gouvernement décide en octobre 2025 d'instituer l'allocation [@banquemondiale2026ppiaf000292, § 13 et 28].
 
@@ -278,96 +537,560 @@ Pour les enfants des familles qui perçoivent le transfert monétaire, le rappor
 tableau 13) ne sont lues que sur la couche texte arabe, dont l'ordre des mots est perturbé : confirmer à l'image la date de la
 convention, les montants de 191, 188 et 124,6 millions de dinars, les effectifs de décembre 2023 et surtout la phrase des 20 D du don
 et des 10 D du budget (PDF 37), avant toute citation littérale (docs/notes/prestations-sociales-lectures-2026-10-09.md, § 1.1 et § 5).
-Série à instantaner pour une figure en deux segments, don puis budget : enfants de 6 à 18 ans allocataires, juillet 2022 et
-décembre 2023 (UNICEF), décembre 2023 (ministère), mai 2026 (Banque mondiale, ISR08116 : 463 903). -->
+La série des enfants de 6 à 18 ans allocataires est tracée à la figure de la montée en charge (`fig-nc-montee-en-charge`), pilote
+et allocation instituée séparés par une rupture de série. -->
 
-**Le décret n° 2025-426 du 2 octobre 2025 l'institue ensuite.** Il crée « une allocation familiale au profit des familles pauvres et à faible revenu au titre des enfants âgés de 6 ans à 18 ans », renvoie ses conditions d'attribution et son montant à un arrêté conjoint des ministres chargés des affaires sociales et des finances, et fait entrer cette institution en vigueur **à compter du 1^er^ janvier 2025** [@decret-2025-426-allocation-familiale-6-18, art. 1-2]. Il ne vise que la Constitution, et non la loi organique de 2019, dont l'article 11 bis ne connaît que les enfants de moins de six ans. Le décret ne fixe lui-même aucun montant.
+**[Le décret n° 2025-426 du 2 octobre 2025](#r-nc-af-2025-decret) l'institue ensuite.** Il crée « une allocation familiale au profit des familles pauvres et à faible revenu au titre des enfants âgés de 6 ans à 18 ans », renvoie ses conditions d'attribution et son montant à un arrêté conjoint des ministres chargés des affaires sociales et des finances, et fait entrer cette institution en vigueur **à compter du 1^er^ janvier 2025**. Il ne vise que la Constitution, et non la loi organique de 2019, dont l'article 11 bis ne connaît que les enfants de moins de six ans. Le décret ne fixe lui-même aucun montant.
 
-L'arrêté conjoint du 3 novembre 2025 fixe ce montant à **trente dinars par mois pour chaque enfant à charge**, soit le montant retenu en 2022 pour les moins de six ans. Il subordonne le bénéfice de l'allocation à ce que les familles pauvres et les familles à revenu limité bénéficient des avantages sociaux « conformément au registre des données sociales » de la loi organique de 2019, et reprend l'exclusion de 2022 : « Les familles à revenu limité affiliées à l'un des régimes de sécurité sociale sont exclues du bénéfice de l'allocation » [@arrete-2025-11-03-allocation-familiale-6-18, art. 1-2]. L'arrêté ne comporte pas de clause d'effet, son article 3 n'ordonnant que sa publication : publié au *Journal officiel* du 4 novembre 2025, fascicule déposé le même jour au siège du gouvernorat de Tunis, il devient exécutoire le **9 novembre 2025** [@loi93-64, art. 2].
+[L'arrêté conjoint du 3 novembre 2025](#r-nc-af-2025-arrete) fixe ce montant à **trente dinars par mois pour chaque enfant à charge**, soit le montant retenu en 2022 pour les moins de six ans. Il subordonne le bénéfice de l'allocation à ce que les familles pauvres et les familles à revenu limité bénéficient des avantages sociaux « conformément au registre des données sociales » de la loi organique de 2019, et reprend l'exclusion de 2022 : « Les familles à revenu limité affiliées à l'un des régimes de sécurité sociale sont exclues du bénéfice de l'allocation ». L'arrêté ne comporte pas de clause d'effet, son article 3 n'ordonnant que sa publication : publié au *Journal officiel* du 4 novembre 2025, fascicule déposé le même jour au siège du gouvernorat de Tunis, il devient exécutoire le [**9 novembre 2025**](#r-nc-af-date).
 
 Le décret ouvre l'allocation au 1^er^ janvier 2025 ; l'arrêté qui en fixe le montant devient exécutoire le 9 novembre 2025 et ne dit pas depuis quand ce montant est dû. Le tableau des deux allocations (@tbl-amen-vs-afnc) porte donc les trente dinars à cette seconde date : il donne l'état du droit publié, et ne décrit ni les versements du programme pilote de 2022 à 2024, ni ceux de l'année 2025.
-
-Le supplément de dix dinars par enfant à charge du transfert monétaire vise, depuis le 1^er^ février 2022, les enfants de 6 à 18 ans (@tbl-amen-supplement) : c'est la tranche d'âge de l'allocation de trente dinars. Ni le décret ni l'arrêté de 2025 ne mentionnent ce supplément, et l'arrêté ne vise pas l'arrêté conjoint du 19 mai 2020 qui le fonde ; les revalorisations de 2023 à 2026 ne remplacent que l'alinéa relatif au montant de base (@tbl-amen-base), celle du 21 avril 2026 comprise [@arrete-2026-04-21-transferts, art. 1], de sorte que l'alinéa du supplément reste en vigueur dans sa rédaction de 2022. Le texte qui réglerait le cumul des deux versements depuis 2025 n'est pas identifié ici. En l'état des textes identifiés, le droit ne dit donc pas si, pour un enfant de 6 à 18 ans d'une famille qui perçoit le transfert monétaire, les deux montants sont dus ensemble.
-
-<!-- RECHERCHE r-amen-cumul-supplement-6-18 : texte réglant le cumul du supplément de 10 D par enfant de 6 à 18 ans avec l'allocation familiale de 30 D des 6 à 18 ans (voir docs/recherches.yml) -->
 
 <!-- TODO (documentaliste) : établir ce qui a été servi au titre de l'année 2025 (institution au 1er janvier 2025, montant exécutoire
 le 9 novembre 2025 ; la Banque mondiale, PPIAF000292, § 28, évoque un financement rétroactif des allocations de 2025) et à partir de
 quand le budget relaie le don (question D4 de docs/notes/prestations-sociales-plan-architecte.md). -->
 
-Le tableau met en regard les deux allocations familiales — trente dinars par enfant de moins de six ans à l'état du 8 avril 2022, trente dinars par enfant de 6 à 18 ans à celui du 9 novembre 2025 — et les états successifs de la base du transfert monétaire de 2020 à 2026.
+### Le supplément de 10 dinars et l'allocation de 30 dinars {#sec-nc-af-cumul}
 
-```{python}
-#| echo: false
-#| output: asis
-table("amen_vs_afnc",
-      "Transfert AMEN et allocations familiales non contributives : états fixés par les arrêtés de 2020 à 2026, allocation des moins de six ans au 8 avril 2022, allocation des 6 à 18 ans au 9 novembre 2025",
-      "tbl-amen-vs-afnc")
-```
+Le supplément de dix dinars par enfant à charge du transfert monétaire vise, depuis le 1^er^ février 2022, les enfants de 6 à 18 ans (@tbl-amen-supplement) : c'est la tranche d'âge de l'allocation de trente dinars. Ni le décret ni l'arrêté de 2025 ne mentionnent ce supplément, et l'arrêté ne vise pas l'arrêté conjoint du 19 mai 2020 qui le fonde ; les revalorisations de 2023 à 2026 ne remplacent que l'alinéa relatif au montant de base (@tbl-amen-base), [celle du 21 avril 2026](#r-nc-af-2026) comprise, de sorte que l'alinéa du supplément reste en vigueur dans sa rédaction de 2022. Le texte qui réglerait le cumul des deux versements depuis 2025 n'est pas identifié ici. En l'état des textes identifiés, le droit ne dit donc pas si, pour un enfant de 6 à 18 ans d'une famille qui perçoit le transfert monétaire, les deux montants sont dus ensemble.
 
-Sources : arrêtés conjoints cités à la section précédente ; @arrete-2022-04-01-allocation-familiale, art. 3 ; @arrete-2025-11-03-allocation-familiale-6-18, art. 2.
+<!-- RECHERCHE r-amen-cumul-supplement-6-18 : texte réglant le cumul du supplément de 10 D par enfant de 6 à 18 ans avec l'allocation familiale de 30 D des 6 à 18 ans (voir docs/recherches.yml) -->
 
-L'antécédent doctrinal de ce dispositif — l'introduction graduelle d'une allocation universelle pour enfant — est documenté par @unicef2020, qui en décrit le principe avant que les textes de 2022 ne l'établissent.
+:::: {.chronologie-repliable titre="Allocations pour enfants de l'Amen social : textes, dates d'effet et articulation avec le supplément par enfant, 2020-2026"}
 
-<!-- TODO (documentaliste) : établir les phases et les dates de financement de cette prestation
-par des sources citables, notamment les accords de prêt et les documents de projet. -->
+| Date | Portée | Texte | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-nc-af-dl}[2 février 2022]{.insecable} (publication) | **rupture** | décret-loi n° 2022-8 du 31 janvier 2022 [@decret-loi-2022-8-allocation-familiale] | article 11 bis de la loi organique : allocation familiale mensuelle au titre des enfants de moins de six ans ; visas : la Constitution et le décret présidentiel n° 2021-117 du 22 septembre 2021 relatif aux mesures exceptionnelles ; aucun accord de prêt n'est visé |
+| []{#r-nc-af-supplement}[1^er^ février 2022]{.insecable} | étape | arrêté conjoint du 1^er^ avril 2022 modifiant l'arrêté du 19 mai 2020 [@arrete-2022-04-01-transferts, art. 1] | le supplément de 10 D est borné aux enfants de 6 à 18 ans, sans être supprimé |
+| []{#r-nc-af-2022}[8 avril 2022]{.insecable} (publication) | étape | arrêté conjoint du 1^er^ avril 2022 fixant les allocations familiales [@arrete-2022-04-01-allocation-familiale, art. 2-3] | enfants à charge de moins de six ans des catégories pauvres et des catégories à revenu limité ; 30 D par mois et par enfant ; exclusion des catégories à revenu limité affiliées à un régime de sécurité sociale ; vise la loi n° 2021-28 du 22 juin 2021 approuvant l'accord de prêt conclu le 2 avril 2021 avec la Banque internationale pour la reconstruction et le développement |
+| []{#r-nc-af-2025-decret}[1^er^ janvier 2025]{.insecable} | étape | décret n° 2025-426 du 2 octobre 2025 [@decret-2025-426-allocation-familiale-6-18, art. 1-2] | allocation familiale « au profit des familles pauvres et à faible revenu au titre des enfants âgés de 6 ans à 18 ans » ; effet de l'article premier au 1^er^ janvier 2025 ; visa : la Constitution seule |
+| []{#r-nc-af-2025-arrete}[9 novembre 2025]{.insecable} | étape | arrêté conjoint du 3 novembre 2025 [@arrete-2025-11-03-allocation-familiale-6-18, art. 1-2] | 30 D par mois pour chaque enfant à charge ; condition tenant au registre des données sociales ; exclusion des familles à revenu limité affiliées ; l'arrêté du 19 mai 2020 n'est pas visé |
+| []{#r-nc-af-date}[9 novembre 2025]{.insecable} | date exécutoire | loi n° 93-64 du 5 juillet 1993 [@loi93-64, art. 2] | l'arrêté du 3 novembre 2025 n'a pas de clause d'effet : dépôt du fascicule le 4 novembre 2025, exécution cinq jours après, jour du dépôt non compté |
+| []{#r-nc-af-2026}[1^er^ janvier 2026]{.insecable} | ajustement | arrêté conjoint du 21 avril 2026 [@arrete-2026-04-21-transferts, art. 1] | ne remplace que l'alinéa du montant de base ; l'alinéa du supplément reste dans sa rédaction de 2022 |
 
-## Les aides ponctuelles
+**Février et avril 2022.** Le déplacement de la borne d'âge du supplément doit être distingué de la mise en montant de l'allocation familiale. Les enfants de moins de six ans sortent du supplément de dix dinars le 1^er^ février 2022. L'arrêté du 1^er^ avril fixe ensuite l'allocation familiale à trente dinars ; le tableau qui la compare au transfert porte l'état daté du 8 avril 2022, jour de sa publication. Les deux dates ne coïncident donc pas, et les textes cités ne permettent pas de déduire ici les modalités de service pendant l'intervalle.
 
-L'article 12 de la loi organique prévoit un [soutien financier occasionnel](#g-appui-financier-occasionnel), dont les cas d'octroi et les montants sont fixés par arrêté conjoint. Deux arrêtés se sont succédé, le second abrogeant expressément le premier ; un troisième, du 10 juillet 2025, modifie celui de 2022 et porte l'aide de rentrée scolaire de 50 à 100 dinars par enfant à compter du 1^er^ septembre 2024.
+::::
+
+## Les aides ponctuelles {#sec-nc-aides}
+
+L'Amen social sert, en plus du transfert mensuel, des aides versées à date fixe — trois fêtes religieuses, la rentrée scolaire et universitaire — ou selon la situation du ménage ; s'y ajoutent une aide exceptionnelle versée une fois en 2021, des aides catégorielles créées par les lois de finances pour 2025 et 2026, et un programme d'autonomisation économique.
+
+[L'article 12 de la loi organique](#r-nc-ap-lo) prévoit un [soutien financier occasionnel](#g-appui-financier-occasionnel), dont les cas d'octroi et les montants sont fixés par arrêté conjoint. Deux arrêtés se sont succédé, le second abrogeant expressément le premier ; un troisième, du 10 juillet 2025, modifie celui de 2022 et porte l'aide de rentrée scolaire de 50 à 100 dinars par enfant à compter du 1^er^ septembre 2024.
 
 ```{python}
 #| echo: false
 #| output: asis
 table("aides_ponctuelles",
-      "Appui financier occasionnel de l'AMEN social : montants de l'arrêté du 8 décembre 2022, avant le modificatif du 10 juillet 2025 qui porte l'aide de rentrée scolaire à 100 D à compter du 1^er^ septembre 2024",
+      "Appui financier occasionnel de l'Amen social : montants de l'arrêté du 8 décembre 2022, avant le modificatif du 10 juillet 2025 qui porte l'aide de rentrée scolaire à 100 D à compter du 1^er^ septembre 2024",
       "tbl-aides-ponctuelles")
 ```
 
-Chaque aide a son échéance de paiement, que l'arrêté fixe : dans la première semaine du mois pour le Ramadan, avant la fin de ce mois pour l'Aïd al-Fitr, avant la date de la fête pour l'Aïd al-Idha, au début de l'année scolaire ou universitaire pour les deux aides de rentrée. Les cinq montants sont ceux de l'arrêté de 2020 [@arrete-2020-05-19-appui-occasionnel, art. 4], repris à l'identique par celui de 2022.
+Le tableau donne les montants **fixés en 2022** ; l'arrêté de 2025 n'en change qu'un, celui de l'aide de rentrée scolaire. Il s'agit de la même aide à trois dates, non de deux aides : 50 dinars par enfant dans les arrêtés de 2020 et de 2022, 100 dinars à compter du 1^er^ septembre 2024 (@tbl-nc-rentree-scolaire), les quatre autres montants restant ceux de 2022.
 
-Le champ, lui, n'est pas identique dans les deux textes. En 2020, les aides liées aux fêtes et celles liées à la rentrée sont réservées aux catégories pauvres, à l'exception des aides de rentrée dont les catégories à revenu limité bénéficient également. En 2022, l'appui « fêtes » reste réservé aux catégories pauvres, tandis que les aides de rentrée sont ouvertes aux deux catégories et étendues aux établissements publics de formation et d'apprentissage professionnel ainsi qu'aux centres d'éducation spécialisée, publics et associatifs. L'arrêté de 2022 ajoute par ailleurs deux prestations : la prise en charge des **abonnements annuels de transport scolaire et universitaire**, à hauteur des tarifs des entreprises de transport public ; et un appui pour dépenses exceptionnelles nécessitées par des conditions sanitaires ou sociales d'urgence, ou pour la prise en charge d'enfants scolarisés exposés à l'inadaptation sociale et au décrochage, d'un montant **compris entre 60 et 200 dinars** selon la situation financière de la famille, **au plus quatre fois par an**, ces deux limites pouvant être dépassées à titre exceptionnel sur autorisation du comité général de la promotion sociale [@arrete-2022-12-08-appui-occasionnel, art. 2-4].
+| Date d'effet | Montant par enfant<br>(D) | Enfants visés |
+|:----------|-------:|:-------------------------------|
+| [[25 mai 2020]{.insecable}](#r-nc-rs-2020) | 50 | enfants scolarisés des catégories pauvres et des catégories à revenu limité |
+| [décembre 2022](#r-nc-rs-2022) | 50 | les mêmes, et les enfants inscrits dans un établissement public de formation ou d'apprentissage professionnel ou dans un centre d'éducation spécialisée, public ou associatif |
+| [[1^er^ septembre 2024]{.insecable}](#r-nc-rs-2024) | 100 | les mêmes, et les enfants inscrits en classe préparatoire publique, dans un kouttab ou dans un centre d'éducation spécialisée, de réadaptation ou de formation professionnelle des personnes handicapées |
 
-L'arrêté conjoint du 10 juillet 2025 remplace les deux premières dispositions de l'article 3 et la quatrième disposition de l'article 4 de l'arrêté de 2022, puis ajoute à ce dernier un alinéa sur le cumul [@arrete-2025-07-10-appui-occasionnel, art. 1-2]. Le tableau ci-dessus donne les montants **fixés en 2022** ; l'arrêté de 2025 n'en change qu'un, celui de l'aide de rentrée scolaire. Il s'agit de la même aide à deux dates, non de deux aides : 50 dinars par enfant dans les arrêtés de 2020 et de 2022, 100 dinars à compter du 1^er^ septembre 2024, les quatre autres montants restant ceux de 2022.
+: Aide de rentrée scolaire de l'Amen social : montant par enfant et enfants visés, aux trois dates d'effet, 2020-2024 {#tbl-nc-rentree-scolaire tbl-colwidths="[23,17,60]"}
 
-| Aide de rentrée scolaire | État fixé en 2022 | Nouvel état, effet au 1^er^ septembre 2024 |
-|---|---:|---:|
-| Par enfant relevant des catégories visées par l'arrêté | 50 D [@arrete-2022-12-08-appui-occasionnel, art. 4] | **100 D** [@arrete-2025-07-10-appui-occasionnel, art. 1 et 3] |
+:::: {.chronologie-repliable titre="Aide de rentrée scolaire de l'Amen social : arrêtés, articles et pages du Journal officiel, montants de 2020, 2022 et 2024"}
+
+| Date d'effet | Texte | Ce qu'il établit |
+|---|---|---|
+| []{#r-nc-rs-2020}[25 mai 2020]{.insecable} | arrêté conjoint du 19 mai 2020 [@arrete-2020-05-19-appui-occasionnel, art. 4], *Journal officiel* n° 45 du 20 mai 2020, p. 1097 | 50 D par enfant scolarisé, au début de l'année scolaire ; aide ouverte aux catégories pauvres et aux catégories à revenu limité |
+| []{#r-nc-rs-2022}décembre 2022 | arrêté conjoint du 8 décembre 2022 [@arrete-2022-12-08-appui-occasionnel, art. 3-5], *Journal officiel* n° 136 du 9 décembre 2022, p. 3446-3447 | même montant de 50 D (art. 4) ; champ étendu aux établissements publics de formation et d'apprentissage professionnel et aux centres d'éducation spécialisée, publics et associatifs (art. 3) ; abroge l'arrêté de 2020 (art. 5) |
+| []{#r-nc-rs-2024}[1^er^ septembre 2024]{.insecable} | arrêté conjoint du 10 juillet 2025 [@arrete-2025-07-10-appui-occasionnel, art. 1 et 3], *Journal officiel* n° 88 de 2025, édition arabe, p. 2058-2059 | 50 → 100 D par enfant ; champ étendu aux classes préparatoires publiques, aux kouttab et aux centres des personnes handicapées (art. 1) ; effet au 1^er^ septembre 2024 (art. 3) |
+
+::::
 
 <!-- TODO (rédacteur) : remplacer par un tableau engendré, quand le palier de 100 D au
 1er septembre 2024 sera daté et sourcé en amont (constat inscrit à docs/notes/backlog-modele.md) ;
 le tableau des cinq aides donnera alors l'état en vigueur et sa légende sera à reprendre. -->
 
-Le texte étend la rédaction relative à l'aide de rentrée et aux abonnements annuels de transport aux enfants inscrits en **classes préparatoires publiques**, dans les **kouttab** et dans les centres d'éducation spécialisée, de réadaptation ou de formation professionnelle des personnes handicapées, publics ou privés relevant d'associations du secteur. Il interdit le cumul des sommes fixées à l'article 4 avec d'autres sommes octroyées **au même titre** dans le cadre de programmes ou de mécanismes publics [@arrete-2025-07-10-appui-occasionnel, art. 1-2]. L'arrêté donne à l'ensemble de ses dispositions effet au **1^er^ septembre 2024**, antérieurement à sa publication au *Journal officiel* du 11 juillet 2025 [@arrete-2025-07-10-appui-occasionnel, art. 3].
+- **Les crédits.** Selon le ministère des Affaires sociales, les crédits affectés aux aides des fêtes passent de 27,1 MD en 2021 à 30,5 MD en 2023, ceux des aides de rentrée scolaire et universitaire de 51,0 à 60,9 MD (@sec-nc-credits).
+- **Le champ.** Les aides des fêtes sont réservées aux catégories pauvres ; les aides de rentrée sont ouvertes aussi aux catégories à revenu limité.
+- **Depuis 2022, deux prestations de plus.** La prise en charge des abonnements annuels de transport scolaire et universitaire, et un appui pour dépenses exceptionnelles de 60 à 200 dinars, au plus quatre fois par an.
+- **Depuis 2025, pas de cumul.** Les sommes de l'appui occasionnel ne se cumulent pas avec d'autres sommes octroyées au même titre par des programmes publics.
+
+:::: {.chronologie-repliable titre="Appui financier occasionnel de l'Amen social : champ, échéances de paiement, prestations ajoutées et montants, arrêtés de 2020, 2022 et 2025"}
+
+**Les échéances.** Chaque aide a son échéance de paiement, que l'arrêté fixe : dans la première semaine du mois pour le Ramadan, avant la fin de ce mois pour l'Aïd al-Fitr, avant la date de la fête pour l'Aïd al-Idha, au début de l'année scolaire ou universitaire pour les deux aides de rentrée. Les cinq montants sont ceux de l'arrêté de 2020, repris à l'identique par celui de 2022.
+
+**Le champ.** Il n'est pas identique dans les deux textes. En 2020, les aides liées aux fêtes et celles liées à la rentrée sont réservées aux catégories pauvres, à l'exception des aides de rentrée dont les catégories à revenu limité bénéficient également. En 2022, l'appui « fêtes » reste réservé aux catégories pauvres, tandis que les aides de rentrée sont ouvertes aux deux catégories et étendues aux établissements publics de formation et d'apprentissage professionnel ainsi qu'aux centres d'éducation spécialisée, publics et associatifs. L'arrêté de 2022 ajoute par ailleurs deux prestations : la prise en charge des **abonnements annuels de transport scolaire et universitaire**, à hauteur des tarifs des entreprises de transport public ; et un appui pour dépenses exceptionnelles nécessitées par des conditions sanitaires ou sociales d'urgence, ou pour la prise en charge d'enfants scolarisés exposés à l'inadaptation sociale et au décrochage, d'un montant **compris entre 60 et 200 dinars** selon la situation financière de la famille, **au plus quatre fois par an**, ces deux limites pouvant être dépassées à titre exceptionnel sur autorisation du comité général de la promotion sociale.
+
+**Le modificatif de 2025.** L'arrêté conjoint du 10 juillet 2025 remplace les deux premières dispositions de l'article 3 et la quatrième disposition de l'article 4 de l'arrêté de 2022, puis ajoute à ce dernier un alinéa sur le cumul. Il étend la rédaction relative à l'aide de rentrée et aux abonnements annuels de transport aux enfants inscrits en **classes préparatoires publiques**, dans les **kouttab** et dans les centres d'éducation spécialisée, de réadaptation ou de formation professionnelle des personnes handicapées, publics ou privés relevant d'associations du secteur. Il interdit le cumul des sommes fixées à l'article 4 avec d'autres sommes octroyées **au même titre** dans le cadre de programmes ou de mécanismes publics. L'arrêté donne à l'ensemble de ses dispositions effet au **1^er^ septembre 2024**, antérieurement à sa publication au *Journal officiel* du 11 juillet 2025.
+
+| Date d'effet | Portée | Texte | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-nc-ap-lo}[5 février 2019]{.insecable} (publication) | fondement | loi organique n° 2019-10 [@loi-amen-social-2019, art. 11-13] | art. 12 : soutien financier occasionnel, cas d'octroi et montants fixés par arrêté conjoint |
+| []{#r-nc-ap-2020}[25 mai 2020]{.insecable} | point de départ | arrêté conjoint du 19 mai 2020 [@arrete-2020-05-19-appui-occasionnel, art. 4] | 60 D pour le Ramadan, pour l'Aïd al-Fitr et pour l'Aïd al-Idha, par individu ou famille ; 50 D par enfant scolarisé à la rentrée scolaire ; 120 D à la rentrée universitaire ; les catégories à revenu limité n'ont que l'appui de rentrée |
+| []{#r-nc-ap-2022}décembre 2022 | étape | arrêté conjoint du 8 décembre 2022 [@arrete-2022-12-08-appui-occasionnel, art. 2-4] | abroge l'arrêté de 2020 ; mêmes montants (art. 4) ; transport scolaire et universitaire, appui pour dépenses exceptionnelles de 60 à 200 D, au plus quatre fois par an (art. 2 à 4) |
+| []{#r-nc-ap-2025}[1^er^ septembre 2024]{.insecable} | ajustement | arrêté conjoint du 10 juillet 2025 [@arrete-2025-07-10-appui-occasionnel, art. 1-3] | aide de rentrée scolaire 50 → 100 D par enfant (art. 1) ; champ étendu et cumul interdit (art. 1-2) ; effet au 1^er^ septembre 2024 (art. 3) |
 
 <!-- TODO (documentaliste) : vérifier l'édition française de l'arrêté du 10 juillet 2025 si elle devient disponible ; l'édition arabe du JORT n° 88 de 2025, pp. 2058-2059, fonde la présente lecture. -->
 
-### Les aides exceptionnelles
+::::
 
-Un arrêté conjoint du 20 août 2021 a fixé le montant d'une aide de **300 dinars versée une seule fois**, sur le fondement d'un accord de prêt avec la Banque internationale pour la reconstruction et le développement au titre d'un projet d'appui à la riposte d'urgence contre le Covid-19 en matière de protection sociale. Il vise cinq catégories : les bénéficiaires des transferts monétaires mensuels, les titulaires d'une faible allocation de vieillesse ou pension de retraite, les titulaires de cartes de soins gratuits sans transfert monétaire, les titulaires de cartes de soins à tarifs réduits — ces quatre catégories sans condition — et les personnes sans aucune couverture sociale, sous trois conditions cumulatives portant sur le revenu du foyer, l'âge du véhicule détenu et le nombre de véhicules achetés ou vendus [@arrete-2021-08-20-aides-covid, art. 2].
+### L'aide exceptionnelle de 2021 {#sec-nc-aide-2021}
 
-L'arrêté articule explicitement quatre populations : bénéficiaires du transfert AMEN, titulaires d'une faible pension, titulaires d'une carte de soins gratuits et titulaires d'une carte de soins à tarifs réduits [@arrete-2021-08-20-aides-covid, art. 2].
+[Un arrêté conjoint du 20 août 2021](#r-nc-ap-2021) a fixé le montant d'une aide de **300 dinars versée une seule fois**, sur le fondement d'un accord de prêt avec la Banque internationale pour la reconstruction et le développement au titre d'un projet d'appui à la riposte d'urgence contre le Covid-19 en matière de protection sociale. Elle va à cinq catégories, dont les allocataires du transfert mensuel et les titulaires de cartes de soins. Selon les décomptes que rapporte la Banque mondiale, 896 675 ménages ont reçu un transfert temporaire au titre de ce projet, le dernier versement datant de 2022 [@banquemondiale2025isr04716, p. 4] ; les mesures de 2020 qui l'ont précédé — un complément de 50 dinars pendant deux mois aux 260 000 ménages du transfert, deux versements de 200 dinars à 450 000 ménages titulaires de la carte à tarifs réduits, un versement de 200 dinars à 300 000 autres ménages — sont décrites par le document d'évaluation du projet [@banquemondiale2021pad4414, § 23].
 
-### Les prestations catégorielles des lois de finances récentes
+:::: {.chronologie-repliable titre="Aide exceptionnelle de 300 dinars de 2021 : les cinq catégories visées et leurs conditions, arrêté du 20 août 2021"}
 
-Les lois de finances pour 2025 et 2026 portent plusieurs prestations catégorielles dont le régime juridique est ensuite précisé par arrêté. **Toutes les lignes du tableau ci-dessous sont dérivées** : elles proviennent de résumés en langue arabe, les éditions françaises correspondantes n'étant pas disponibles ici, et elles ne sont pas attestées en français.
+[]{#r-nc-ap-2021}L'arrêté vise cinq catégories [@arrete-2021-08-20-aides-covid, art. 2] : les bénéficiaires des transferts monétaires mensuels, les titulaires d'une faible allocation de vieillesse ou pension de retraite, les titulaires de cartes de soins gratuits sans transfert monétaire, les titulaires de cartes de soins à tarifs réduits — ces quatre catégories sans condition — et les personnes sans aucune couverture sociale, sous trois conditions cumulatives portant sur le revenu du foyer, l'âge du véhicule détenu et le nombre de véhicules achetés ou vendus. Il articule ainsi explicitement quatre populations : bénéficiaires du transfert de l'Amen social, titulaires d'une faible pension, titulaires d'une carte de soins gratuits et titulaires d'une carte de soins à tarifs réduits.
 
-| Texte | Article | Objet | Montant | Attestation |
-|---|---|---|---|---|
-| Loi de finances 2025 | art. 26 | patients allergiques au gluten des familles pauvres et à revenu limité inscrites à l'AMEN | 30 D / mois / personne | dérivé |
-| Loi de finances 2026 | art. 35 | *xeroderma pigmentosum* ; allergiques au gluten inscrits à l'AMEN | 130 D / mois / personne | dérivé |
-| Loi de finances 2026 | art. 71 | enfants diabétiques des familles inscrites à l'AMEN | 150 D (lecteur de glycémie sans piqûre) | dérivé |
-| Loi de finances 2026 | art. 81 | enfants atteints de troubles du spectre autistique | 150 D / mois | dérivé |
-| Loi de finances 2026 | art. 96 | création d'un fonds d'encadrement matériel et social des orphelins des familles pauvres et à revenu limité | — | dérivé |
+::::
 
-Un texte d'application est en revanche établi : l'arrêté conjoint du 30 juillet 2025 fixe les modalités d'octroi de l'allocation pour la prise en charge des dépenses alimentaires des patients allergiques au gluten — demande écrite accompagnée d'un certificat médical, dépôt selon la procédure du décret gouvernemental de 2020, enregistrement au registre des données — et dispose qu'il entre en vigueur **à compter du 1^er^ janvier 2025**, soit sept mois avant sa publication [@arrete-2025-07-30-gluten, art. 3].
+### Les aides catégorielles des lois de finances pour 2025 et 2026 {#sec-nc-aides-categorielles}
+
+Les lois de finances pour 2025 et 2026 créent plusieurs aides destinées à des personnes atteintes d'une maladie ou d'un handicap déterminés, dont le régime est ensuite précisé par arrêté. Ces cinq lignes reposent sur le résumé en langue arabe de chaque article ; le texte même des articles reste à établir.
+
+| Loi de finances | Article | Bénéficiaires | Montant |
+|---|---|---|---|
+| pour 2025 | art. 26 | patients allergiques au gluten des familles pauvres et à revenu limité inscrites à l'Amen social | 30 D par mois et par personne |
+| pour 2026 | art. 35 | personnes atteintes de *xeroderma pigmentosum* ; patients allergiques au gluten inscrits à l'Amen social | 130 D par mois et par personne |
+| pour 2026 | art. 71 | enfants diabétiques des familles inscrites à l'Amen social | 150 D (lecteur de glycémie sans piqûre) |
+| pour 2026 | art. 81 | enfants atteints de troubles du spectre autistique | 150 D par mois |
+| pour 2026 | art. 96 | orphelins des familles pauvres et à revenu limité : création d'un fonds d'encadrement matériel et social | — |
+
+: Aides catégorielles créées par les lois de finances pour 2025 et 2026 {#tbl-nc-aides-categorielles}
 
 <!-- TODO (documentaliste) : établir sur les éditions françaises les articles des lois de
 finances 2025 et 2026 dont les cinq lignes du tableau sont dérivées. -->
 
-## Dispositifs adjacents, bornant l'assistance
+Un texte d'application est établi : [l'arrêté conjoint du 30 juillet 2025](#r-nc-ap-gluten) fixe les modalités d'octroi de l'allocation pour la prise en charge des dépenses alimentaires des patients allergiques au gluten, et entre en vigueur **à compter du 1^er^ janvier 2025**, soit sept mois avant sa publication.
 
-Les aides aux **personnes âgées**, les aides aux **personnes handicapées** et les **primes complémentaires aux faibles pensions** sont adjacentes aux dispositifs étudiés, mais ne relèvent pas du périmètre de ce volume. Le livre « Retraites » traite les pensions minimales fixées par les régimes, non ces primes complémentaires.
+:::: {.chronologie-repliable titre="Aide aux patients allergiques au gluten : modalités de demande et date d'effet, arrêté du 30 juillet 2025"}
+
+[]{#r-nc-ap-gluten}L'arrêté conjoint du 30 juillet 2025 [@arrete-2025-07-30-gluten, art. 3] retient une demande écrite accompagnée d'un certificat médical, déposée selon la procédure du décret gouvernemental de 2020 et enregistrée au registre des données ; il entre en vigueur à compter du 1^er^ janvier 2025.
+
+::::
+
+### L'autonomisation économique {#sec-nc-autonomisation}
+
+[Le décret n° 2022-715](#r-nc-ap-autonomisation) crée un programme d'autonomisation économique au profit des bénéficiaires de l'Amen social **et des personnes handicapées**, finançant des projets individuels ou collectifs sur des crédits annuels inscrits au budget du ministère, dont **30 % sont réservés aux personnes handicapées**. Une règle d'articulation y figure : le transfert monétaire mensuel est **maintenu pendant un an, renouvelable une fois**, à compter du lancement du projet. Selon le ministère des Affaires sociales, 95 projets sont financés en 2020, 198 en 2021, 220 en 2022 et 307 en 2023 [@mas-amen-social-2023, tabl. 17].
+
+:::: {.chronologie-repliable titre="Programme d'autonomisation économique : texte et articles, décret n° 2022-715"}
+
+| Date | Texte | Ce qu'il établit |
+|---|---|---|
+| []{#r-nc-ap-autonomisation}2022 | décret n° 2022-715 [@decret-2022-715-autonomisation, art. 1-5] | programme au profit des bénéficiaires de l'Amen social et des personnes handicapées ; projets individuels ou collectifs ; crédits annuels au budget du ministère, dont 30 % réservés aux personnes handicapées ; transfert mensuel maintenu un an, renouvelable une fois |
+
+::::
+
+<!-- TODO (documentaliste) : établir les conditions exigées du candidat au programme d'autonomisation économique (décret n° 2022-715). -->
+
+## Les dispositifs antérieurs à l'Amen social {#sec-nc-anciens}
+
+La loi organique de 2019 maintient les programmes d'aides sociales antérieurs « jusqu'à leur adaptation » (@sec-nc-amen-2019). Le principal est l'allocation du programme national d'aide aux familles nécessiteuses, dont les listes ont aussi servi à l'attribution des cartes de soins.
+
+### L'allocation du programme d'aide aux familles nécessiteuses, 1987-2026 {#sec-nc-pnafn-allocation}
+
+L'allocation est une somme mensuelle versée aux familles inscrites au programme. La série disponible comporte onze paliers entre 1987 et 2018, de 7,7 à 180 dinars par mois (@fig-pnafn-allocation) ; aucun de ces paliers n'est fondé sur un texte identifié. À partir de 2024, trois arrêtés conjoints constatent son montant et organisent son relèvement dans la limite du transfert de l'Amen social.
+
+**Deux séries qui ne concordent pas avant 2012.** Une figure du document de financement additionnel de la Banque mondiale de 2022 imprime le transfert mensuel du programme pour quinze années, de 1987 à 2021, avec pour source « l'Institut national de la statistique et le ministère des Affaires sociales », sans texte de droit [@banquemondiale2022pad4815, fig. 4]. Elle donne 7,7 dinars en 1987, 15 en 1990, 25,8 en 1995, 36,3 en 2000, 43,3 en 2005, 56,7 en 2010, puis 180 dinars de 2018 à 2021. La série à onze paliers tient, elle, 7,7 dinars de 1987 à 2000 et 36,3 dinars de 2000 à 2009 : les deux concordent en 1987, en 2000, en 2015 et de 2019 à 2021, et divergent en 1990, 1995 et 2005 (@fig-pnafn-allocation). La conséquence porte sur le pouvoir d'achat de l'aide : en dinars de 2025, l'allocation de 1995 vaut 30,1 dinars selon la série à paliers et 100,7 selon la valeur de la Banque mondiale ; celle de 2005, 106,2 ou 126,7. Aucun des montants antérieurs à 2024 n'étant établi par un texte identifié, le pouvoir d'achat de l'aide n'est pas établi avant 2000, ni de 2000 à 2009 ; l'érosion que la série à paliers montre de 1987 à 1999 ne se retrouve pas dans les valeurs de la Banque mondiale, qui montent de 48,7 dinars de 2025 en 1987 à 120,9 en 2000.
+
+| Arrêté conjoint | Montant constaté à la publication<br>(D par mois) | Limite du relèvement<br>(D par mois) | Effet |
+|---|---:|---:|---|
+| [10 juillet 2024](#r-nc-pn-2024) | 180 | 240 | publication |
+| [29 août 2025](#r-nc-pn-2025) | — | 260 | [1^er^ janvier 2025]{.insecable} |
+| [5 août 2026](#r-nc-pn-2026) | 260 | 280 | [1^er^ janvier 2026]{.insecable} |
+
+: Allocation monétaire mensuelle attribuée aux catégories pauvres : montant constaté et limite du relèvement, arrêtés conjoints de 2024 à 2026 {#tbl-nc-pnafn-arretes}
+
+L'arrêté conjoint du 10 juillet 2024 constate que l'allocation est fixée à 180 dinars à la date de sa publication et autorise son augmentation dans la limite du transfert monétaire de l'Amen social, alors fixé à 240 dinars. Il ne fixe donc pas à lui seul le montant effectivement servi après ce relèvement. L'arrêté conjoint du 29 août 2025 porte de 240 à 260 dinars le montant auquel l'allocation peut être alignée, avec effet au 1^er^ janvier 2025. L'arrêté conjoint du 5 août 2026 remplace à son tour l'article premier de l'arrêté de 2024 : l'allocation, « fixée à 260 dinars à la date de la publication du présent arrêté conjoint », est augmentée « sans que le montant de cette allocation ne dépasse le montant des transferts monétaires mensuels directs attribués dans le cadre du programme « AMEN SOCIAL », fixé à 280 dinars » ; l'arrêté entre en application à partir du 1^er^ janvier 2026. D'un arrêté à l'autre, le montant constaté de l'allocation passe ainsi de 180 dinars en juillet 2024 à 260 dinars en août 2026, et la limite de son relèvement de 240 dinars à 260 puis à 280 dinars, chaque limite étant le montant de base du transfert de l'Amen social pour l'année considérée (@tbl-amen-base). Comme celui de 2024, l'arrêté de 2026 fixe une limite et non le montant servi après le relèvement.
+
+Les visas de l'arrêté de 2026 citent, avant le décret gouvernemental n° 2020-317 et les arrêtés de 2020, des textes des régimes de pensions — la loi n° 2002-32, le décret n° 74-499 et le décret-loi n° 2020-30 —, et son dispositif ne dit pas qui perçoit l'« allocation monétaire mensuelle attribuée aux catégories pauvres » : par ses visas, ce texte ne se rattache donc pas au seul programme national d'aide aux familles nécessiteuses. Le [livre « Retraites »](../retraites/_secteur_prive.html#sec-rtns-autres-elements) cite le même arrêté pour ce que ses visas établissent des régimes de pensions.
+
+L'arrêté de 2024 conserve enfin deux traces de l'architecture ancienne : le coût est imputé sur le budget de l'État, et les caisses adressent aux ministères des décomptes périodiques « chaque trois mois », rappel du versement trimestriel d'origine.
+
+:::: {.chronologie-repliable titre="Allocation mensuelle du programme d'aide aux familles nécessiteuses : onze montants, 1987-2018, et arrêtés de relèvement de 2024, 2025 et 2026"}
+
+La série est conservée pour rendre visible l'évolution de longue période du montant mensuel ; les sources administratives de ses dates et de ses montants restent à établir.
+
+```{python}
+#| echo: false
+#| output: asis
+table("pnafn_allocation",
+      "Allocation mensuelle du programme national d'aide aux familles nécessiteuses : onze paliers de 1987 à 2018",
+      "tbl-pnafn-allocation")
+```
+
+| Date d'effet | Portée | Texte | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-nc-pn-2024}juillet 2024 (publication) | étape — de 2019 | arrêté conjoint du 10 juillet 2024 [@arrete-2024-07-10-allocation-pauvres, art. 1] | allocation constatée à 180 D ; relèvement dans la limite du transfert de l'Amen social, 240 D ; coût imputé sur le budget de l'État ; décomptes des caisses « chaque trois mois » |
+| []{#r-nc-pn-2025}[1^er^ janvier 2025]{.insecable} | étape | arrêté conjoint du 29 août 2025 [@arrete-2025-08-29-allocation-pauvres, art. 1-2] | limite du relèvement 240 → 260 D |
+| []{#r-nc-pn-2026}[1^er^ janvier 2026]{.insecable} | étape | arrêté conjoint du 5 août 2026 [@arrete-2026-08-05-allocation-pauvres, art. 1-2 ; @arrete-2026-08-05-allocation-pauvres] | article premier (nouveau) de l'arrêté de 2024 : allocation constatée à 260 D ; limite du relèvement 260 → 280 D ; visas de textes des régimes de pensions |
+
+::::
+
+### Les listes du programme et la banque de données, 1998-2019 {#sec-nc-listes}
+
+Les textes de l'aide médicale emploient les listes du programme. [Le décret n° 98-1812](#r-nc-li-1998) prévoit que la première liste des bénéficiaires de la carte de soins gratuits tienne compte des « listes nominatives des bénéficiaires des aides permanentes dans le cadre des programmes nationaux d'aide aux nécessiteux ». [Le décret n° 2012-2521](#r-nc-li-2012) dispose ensuite que la liste des éligibles est élaborée au vu des listes des bénéficiaires et des éligibles aux aides monétaires directes accordées dans le cadre du programme national d'aide aux familles nécessiteuses.
+
+[Le décret n° 2014-1526](#r-nc-li-2014) crée par ailleurs une unité de gestion par objectifs chargée d'instaurer une **banque de données sur les familles nécessiteuses et à revenu limité**, pour une durée de quatre ans en quatre étapes. [La loi organique de 2019](#r-nc-li-2019) institue ensuite un registre de données sur les catégories pauvres et les catégories à revenu limité.
+
+:::: {.chronologie-repliable titre="Listes du programme d'aide aux familles nécessiteuses, banque de données et registre : textes et articles, 1998-2019"}
+
+| Date | Texte | Ce qu'il établit |
+|---|---|---|
+| []{#r-nc-li-1998}1998 | décret n° 98-1812 [@decret-98-1812-amg1, art. 5] | la première liste des bénéficiaires de la carte de soins gratuits tient compte des listes nominatives des bénéficiaires des aides permanentes |
+| []{#r-nc-li-2012}2012 | décret n° 2012-2521 [@decret-2012-2521-amg1-pnafn, art. 5] | la liste des éligibles est élaborée au vu des listes des bénéficiaires et des éligibles aux aides monétaires directes du programme |
+| []{#r-nc-li-2014}2014 | décret n° 2014-1526 [@decret-2014-1526-banque-donnees, art. 3] | unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité, quatre ans en quatre étapes |
+| []{#r-nc-li-2019}2019 | loi organique n° 2019-10 [@loi-amen-social-2019, art. 18 à 22] | registre de données sur les catégories pauvres et les catégories à revenu limité |
+
+<!-- TODO (documentaliste) : lire le décret gouvernemental n° 2018-626 (JORT n° 63 de 2018), qui proroge l'unité de gestion de la
+banque de données et dont seul l'intitulé est connu (docs/notes/prestations-assistance.md, § 1.3). -->
+
+::::
+
+## Les aides voisines {#sec-nc-adjacents}
+
+Trois aides s'adressent à des publics proches de ceux de l'assistance : les aides aux **personnes âgées**, les aides aux **personnes handicapées** et les **primes complémentaires aux faibles pensions**. Les pensions minimales fixées par les régimes de retraite sont exposées dans le volume [« Retraites »](../retraites/index.html).
 
 <!-- TODO (documentaliste) : établir les séries datées des montants des aides aux personnes âgées
 et aux personnes handicapées à partir des arrêtés correspondants. -->
+
+## Ce que l'administration constate {#sec-nc-administration}
+
+Cette section réunit les décomptes de l'administration : allocataires, enfants aidés, crédits. Ils viennent de deux familles de documents. La première est le rapport de suivi et d'évaluation de l'Amen social du ministère des Affaires sociales pour 2023 [@mas-amen-social-2023] : il compte les allocataires actifs inscrits en décembre de chaque année d'après les fichiers de paiement, et donne des crédits « affectés » par intervention, non des dépenses exécutées. La seconde est celle des rapports d'exécution du projet que finance la Banque mondiale [@banquemondiale2025isr04716 ; @banquemondiale2026isr08116] : leurs indicateurs sont des décomptes du ministère, renseignés par son unité de gestion et rapportés par la Banque. S'y ajoutent, pour les enfants de 6 à 18 ans, les données du programme que reproduit l'UNICEF [@unicef2024allocations618, p. 20]. La figure qui suit en donne la vue d'ensemble : la montée en charge du transfert permanent de 2010 à 2026, puis celle des allocations pour enfants de 2022 à 2026. Aucun de ces chiffres n'est une estimation ; les simulations et les enquêtes sont à la section suivante (@sec-nc-etudes).
+
+```{python}
+#| label: fig-nc-montee-en-charge
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    fig_as.vues_montee_en_charge(), fig_as.table_montee_en_charge(),
+    fig_as.SERIE_ALLOCATAIRES, fig_as.SERIE_SUIVI,
+    slug="fig_nc_montee_en_charge",
+    caption=("La montée en charge de l'aide permanente et des allocations pour enfants : "
+             "allocataires et ménages du transfert permanent, 2010-2026, et enfants "
+             "allocataires par tranche d'âge, 2022-2026, par famille de sources"),
+    note_lecture=(
+        "Trois familles de décomptes sont tracées, jamais reliées entre elles. Le ministère "
+        "des Affaires sociales compte des allocataires — individus ou familles — inscrits "
+        "en décembre : c'est la seule série annuelle, et la seule que relie un trait. Les "
+        "documents de la Banque mondiale rapportent des décomptes du ministère en ménages, "
+        "et l'UNICEF des données du programme : ce sont des points isolés, tracés sans "
+        "trait. Allocataires et ménages ne sont pas la même unité : un écart entre un point "
+        "bleu et un carré orange ne mesure rien. Un décompte daté au jour est placé à son "
+        "jour, un décompte daté au mois au milieu du mois, un décompte daté de la seule "
+        "année au milieu de l'année. Les discordances sont laissées telles quelles : pour "
+        "2010, 124 000 ménages selon deux documents de la Banque mondiale et 130 000 selon "
+        "un troisième ; en 2025, 385 231 ménages datés de septembre dans un commentaire et "
+        "du 31 octobre au tableau du même rapport, 383 192 datés d'octobre puis de "
+        "novembre ; en avril 2026, 386 351 et 387 668 dans le même rapport ; pour les "
+        "enfants de 6 à 18 ans en décembre 2023, 422 542 selon le ministère et 422 683 "
+        "selon l'UNICEF. Deux valeurs des pièces ne sont pas tracées et figurent à "
+        "l'onglet « Données » : « plus de 150 000 » enfants de moins de six ans en mars "
+        "2025, qui est une borne, et le zéro du 27 mars 2026. Ce zéro est le départ d'un "
+        "indicateur créé ce jour-là pour l'allocation instituée en 2025 : le trait rouge "
+        "mixte marque cette rupture de série, les décomptes antérieurs des 6 à 18 ans "
+        "étant ceux du programme pilote financé par un don, dont le départ est daté de "
+        "juillet ou de septembre 2022 selon les sources. Les traits pointillés numérotés "
+        "sont des dates de droit : ils situent les décomptes, ils n'établissent pas de "
+        "lien de cause entre un texte et une variation."),
+    generated="{{< meta date >}}",
+    nominal=False,
+)
+```
+
+- **Le transfert permanent.** Le ministère compte 242 833 allocataires en décembre 2018, 261 802 en décembre 2020, année où les prestations de l'Amen social sont ouvertes, et 337 199 en décembre 2023 [@mas-amen-social-2023, tabl. 4] ; les décomptes que rapporte la Banque mondiale, en ménages, vont de 124 000 ou 130 000 en 2010 à 260 000 en 2020, 367 550 au 30 novembre 2024 et 386 351 au 22 mai 2026 (@tbl-nc-effectifs).
+- **Les enfants de moins de six ans.** 138 266 allocataires en décembre 2022, année où l'allocation est créée, 156 418 en décembre 2023 et 158 779 au 30 novembre 2024, puis 143 806 au 31 octobre 2025 et 137 014 au 22 mai 2026 (@tbl-nc-enfants).
+- **Les enfants de 6 à 18 ans.** 111 682 en juillet 2022 et 422 683 en décembre 2023 selon l'UNICEF, pour le programme pilote ; 463 903 au 22 mai 2026 selon les rapports d'exécution de la Banque mondiale, pour l'allocation instituée au 1^er^ janvier 2025 — deux dispositifs que la figure sépare par une rupture de série (@sec-nc-enfants-constat).
+
+```{python}
+#| label: fig-nc-beneficiaires
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    fig_as.vues_allocataires(), fig_as.table_allocataires(),
+    fig_as.SERIE_ALLOCATAIRES,
+    slug="fig_nc_beneficiaires",
+    caption=("Allocataires du transfert mensuel de l'aide permanente : nombre en décembre, "
+             "entrées et sorties de l'année, 2018-2023, selon le ministère des Affaires "
+             "sociales"),
+    note_lecture=(
+        "La première vue donne le nombre d'allocataires actifs inscrits en décembre de "
+        "chaque année ; la seconde, les entrées et les sorties de l'année. Un allocataire "
+        "est un individu ou une famille, au sens de l'arrêté conjoint du 19 mai 2020 : le "
+        "rapport écrit « bénéficiaire » à ce tableau et « ménages » à celui du classement "
+        "par le score, pour des totaux égaux à une unité près. Ce n'est pas un nombre de "
+        "personnes couvertes. Le rapport imprime trois totaux pour 2023 : 337 178 dans son "
+        "texte introductif, 337 199 au tableau des entrées et des sorties, tracé ici, et "
+        "337 200 au tableau par montant versé. Le solde des entrées et des sorties égale la "
+        "variation du nombre de décembre."),
+    generated="{{< meta date >}}",
+    nominal=False,
+)
+```
+
+| Date | Allocataires selon le ministère<br>(individus ou familles) | Ménages selon la Banque mondiale<br>(décomptes du ministère rapportés) | Source |
+|---|---:|---:|---|
+| 2010 | | 124 000 ; 130 000 | 124 000 : [@banquemondiale2022pad4815, § 11 ; @banquemondiale2026ppiaf000292, § 11] ; 130 000 : [@banquemondiale2021pad4414, § 84] |
+| décembre 2018 | 242 833 | | [@mas-amen-social-2023, tabl. 4] |
+| décembre 2019 | 255 508 | | [@mas-amen-social-2023, tabl. 4] |
+| décembre 2020 | 261 802 | 260 000 en 2020 | [@mas-amen-social-2023, tabl. 4] ; [@banquemondiale2021pad4414, § 84] |
+| décembre 2021 | 268 258 | 265 000 en 2021 | [@mas-amen-social-2023, tabl. 4] ; [@banquemondiale2022pad4815, § 11] |
+| décembre 2022 | 305 930 | | [@mas-amen-social-2023, tabl. 4] |
+| décembre 2023 | 337 199 | | [@mas-amen-social-2023, tabl. 4] |
+| [30 novembre 2024]{.insecable} | | 367 550 | [@banquemondiale2025isr04716, p. 5] |
+| septembre 2025 | | 385 231 | [@banquemondiale2025isr04716, p. 5 et 7] |
+| octobre 2025 | | 383 192 | [@banquemondiale2025isr04716, p. 2 et 5] |
+| avril 2026 | | 386 351 ; 387 668 | [@banquemondiale2026isr08116, p. 2, 5 et 9] |
+
+: Allocataires de l'aide monétaire permanente, par date et par source, 2010-2026 : stocks de décembre du ministère des Affaires sociales et décomptes rapportés par la Banque mondiale {#tbl-nc-effectifs tbl-colwidths="[22,18,21,39]"}
+
+<!-- TODO (rédacteur) : la série `amen-social-effectifs-suivi` est versée au cache et tracée à la figure de la montée en charge
+(ménages du transfert, enfants de 0 à 5 ans et de 6 à 18 ans). Restent des tableaux faits main, à engendrer depuis la même série :
+celui-ci, celui des enfants et celui du suivi du projet (ménages vérifiés par la nouvelle procédure, ménages payés par moyen
+numérique, inscrits au registre, enquêtes sociales). -->
+
+- **Un nombre d'allocataires en hausse de 39 % en cinq ans.** De 242 833 en décembre 2018 à 337 199 en décembre 2023 selon le ministère ; l'essentiel de la hausse vient de 2022 et de 2023, où les entrées dépassent 44 000 par an (@fig-nc-beneficiaires).
+- **Deux unités, deux sources.** Le ministère compte des allocataires, individus ou familles ; les documents de la Banque mondiale comptent des ménages. Les deux colonnes du tableau ne se raccordent pas.
+- **Des chiffres discordants, donnés tels quels.** Pour 2010, 124 000 ménages selon deux documents de la Banque mondiale, 130 000 selon un troisième ; pour avril 2026, 386 351 et 387 668 dans le même rapport.
+- **Plus d'un milliard de dinars de crédits affectés en 2023.** 735,1 MD en 2021, 818,5 MD en 2022, 1 015,5 MD en 2023, dont 867,0 MD pour le transfert mensuel ; soit 0,56 %, 0,59 % et 0,68 % du PIB (@fig-nc-credits).
+
+### Les allocataires du transfert mensuel, 2018-2023 {#sec-nc-allocataires}
+
+Le rapport du ministère pour 2023 compte les allocataires actifs inscrits en décembre de chaque année, et suit les entrées, les sorties et les retours par un identifiant individuel [@mas-amen-social-2023, tabl. 3 à 5].
+
+**Trois totaux pour 2023.** Le rapport en imprime trois : 337 178 allocataires « à la fin de l'année 2023 » dans son texte introductif, sans tableau ; 337 199 au tableau des entrées et des sorties, seule valeur cohérente avec le solde de l'année ; 337 200 au tableau de la répartition par montant versé et à celui du classement par le score. De même, pour décembre 2022, 305 930 au tableau des entrées et des sorties et 305 926 à celui du classement [@mas-amen-social-2023, tabl. 4, 7 et 10].
+
+**Le montant versé.** En décembre 2023, 230 278 allocataires reçoivent 220 dinars par mois, 37 332 reçoivent 230 dinars, 34 519 reçoivent 240 dinars, 21 395 reçoivent 250 dinars et 13 676 de 260 à 340 dinars [@mas-amen-social-2023, tabl. 7] . Ces montants correspondent à la base de 220 dinars de 2023 (@tbl-amen-base), seule ou augmentée de suppléments de 10 dinars par enfant (@tbl-amen-supplement).
+
+**Le classement par le score.** Le rapport compte, parmi les ménages du transfert, ceux qui ont été classés par le score : 191 388 classés et 93 399 non classés en juin 2022, 218 082 et 87 844 en décembre 2022, 287 547 et 49 653 en décembre 2023 [@mas-amen-social-2023, tabl. 10].
+
+:::: {.chronologie-repliable titre="Allocataires du transfert mensuel : retours après interruption, taux de renouvellement et de continuité, 2019-2023, selon le ministère des Affaires sociales"}
+
+| Année | Retours après interruption<br>(allocataires) | Taux de renouvellement<br>(%) | Taux de continuité<br>(%) |
+|---|---:|---:|---:|
+| 2019 | 0 | 12,1 | 91,5 |
+| 2020 | 744 | 10,1 | 93,7 |
+| 2021 | 883 | 12,0 | 92,8 |
+| 2022 | 1 587 | 16,5 | 85,6 |
+| 2023 | 485 | 18,6 | 86,1 |
+
+: Retours, renouvellement et continuité des allocataires du transfert mensuel, 2019-2023 [@mas-amen-social-2023, tabl. 5] {#tbl-nc-continuite}
+
+Les définitions de ces indicateurs sont au tableau 3 du rapport.
+
+::::
+
+### Les crédits, 2021-2023 {#sec-nc-credits}
+
+Le rapport du ministère donne les crédits affectés à chaque intervention du programme pour trois années [@mas-amen-social-2023, tabl. 1]. La @fig-nc-credits les donne en millions de dinars, puis, pour le total et pour le transfert mensuel, en part du PIB aux prix courants des comptes de la nation de l'Institut national de la statistique [@ins-cnat-2015].
+
+```{python}
+#| label: fig-nc-credits
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    fig_as.vues_credits(), fig_as.table_credits(),
+    fig_as.SERIE_CREDITS, fig_as.SERIE_PIB,
+    slug="fig_nc_credits",
+    caption=("Crédits affectés au programme Amen social, par intervention, en millions de "
+             "dinars courants, puis total et transfert mensuel en part du PIB (base 2015), "
+             "2021-2023, selon le ministère des Affaires sociales"),
+    note_lecture=(
+        "Première vue : chaque barre empile les crédits affectés aux interventions du "
+        "programme. Seconde vue : le total des crédits et, parmi eux, le transfert mensuel, "
+        "rapportés au PIB aux prix courants des comptes de la nation de l'Institut national "
+        "de la statistique, base 2015 — 0,56 % du PIB en 2021, 0,59 % en 2022 et 0,68 % en "
+        "2023 pour le total ; 0,49 %, 0,49 % et 0,58 % pour le transfert mensuel. Les trois "
+        "années relèvent de cette seule base et y sont établies directement, sans "
+        "rétropolation ; leur PIB est celui de l'édition 2021-2025 des comptes de la nation "
+        "(voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Dans les deux "
+        "vues, ce sont des crédits affectés, non des dépenses exécutées. Les documents de la "
+        "Banque mondiale donnent pour le seul transfert 0,6 % du PIB en 2021 et 0,61 % en "
+        "2022 : ces estimations ne sont pas tracées ici, et "
+        "l'écart avec les parts calculées sur les crédits est constaté, non expliqué. Le rapport n'imprime pas de "
+        "crédit pour l'allocation des enfants de moins de six ans en 2021 : aucune valeur "
+        "n'est tracée. Pour la même allocation en 2023, le tableau du rapport donne 45,8 MD, "
+        "tracés ici, et son texte un autre montant. Les soins — cartes de soins gratuits et "
+        "à tarifs réduits — n'y figurent pas : leur budget relève du ministère de la Santé. "
+        "L'allocation des enfants de 6 à 18 ans, financée par un don en 2022 et 2023, n'est "
+        "pas dans ce tableau."),
+    generated="{{< meta date >}}",
+)
+```
+
+- **Le transfert mensuel fait 84 % à 88 % du total.** 645,0 MD sur 735,1 en 2021, 687,4 sur 818,5 en 2022, 867,0 sur 1 015,5 en 2023.
+- **En part du PIB.** Rapporté au PIB aux prix courants des comptes de la nation en base 2015 ([annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)), le total des crédits affectés fait 0,56 % en 2021, 0,59 % en 2022 et 0,68 % en 2023 ; le transfert mensuel, 0,49 %, 0,49 % et 0,58 %. Les documents de la Banque mondiale donnent pour le seul transfert 0,6 % du PIB en 2021 et 0,61 % en 2022 (@sec-nc-etudes-pib), des niveaux proches de la part du total des crédits plutôt que de celle du transfert ; l'écart est constaté, non expliqué.
+- **Les aides de rentrée et des fêtes.** 51,0 MD puis 53,9 et 60,9 MD pour la rentrée scolaire et universitaire ; 27,1 MD puis 26,7 et 30,5 MD pour les fêtes.
+- **L'allocation des moins de six ans.** 40,1 MD en 2022 et 45,8 MD en 2023 au tableau des crédits ; le texte du même rapport imprime un autre montant pour 2023, sans rapprocher les deux.
+- **Hors de ce tableau.** Les soins, dont le budget est géré par le ministère de la Santé [@banquemondiale2022pad4815, encadré 1] ; l'allocation des 6 à 18 ans, pour laquelle le rapport donne un crédit de 124,6 MD financé par un don en 2023 (@sec-nc-af-6-18).
+
+La Banque mondiale donne, pour 2021, un budget du programme en dollars : 259,3 millions, dont 228,9 pour le transfert permanent, 18,2 pour les fêtes religieuses, 6,5 pour la rentrée scolaire, 2,5 pour le transport, 1,8 pour les activités génératrices de revenu et 1,4 pour l'aide ponctuelle [@banquemondiale2022pad4815, encadré 1]. Ses rubriques ne se recoupent pas terme à terme avec celles du ministère : la rentrée scolaire y pèse 6,5 millions de dollars, quand le ministère lui affecte 51,0 MD.
+
+### Les enfants allocataires, 2022-2026 {#sec-nc-enfants-constat}
+
+Trois sources comptent les enfants pour lesquels une allocation est versée : le rapport du ministère pour 2023, le rapport de l'UNICEF sur le programme pilote des 6 à 18 ans, qui reproduit les données du programme, et les rapports d'exécution de la Banque mondiale.
+
+| Date | Enfants de moins de six ans<br>(allocataires) | Enfants de 6 à 18 ans<br>(allocataires) | Source |
+|---|---:|---:|---|
+| juillet 2022 | | 111 682 | données du programme, selon l'UNICEF [@unicef2024allocations618, p. 20] |
+| décembre 2022 | 138 266 | | ministère [@mas-amen-social-2023] |
+| décembre 2023 | 156 418 | 422 542 ; 422 683 | ministère [@mas-amen-social-2023, tabl. 13] ; 422 683 selon l'UNICEF [@unicef2024allocations618, p. 20] |
+| [30 novembre 2024]{.insecable} | 158 779 | | décomptes du ministère rapportés par la Banque mondiale [@banquemondiale2025isr04716, p. 4] |
+| [31 octobre 2025]{.insecable} | 143 806 | | [@banquemondiale2025isr04716, p. 4] |
+| 22 mai 2026 | 137 014 | 463 903 | [@banquemondiale2026isr08116, p. 4-5] |
+
+: Enfants allocataires des allocations de l'Amen social, par date et par source, 2022-2026 {#tbl-nc-enfants tbl-colwidths="[22,18,18,42]"}
+
+- **Avant six ans.** 138 266 enfants de 96 366 familles en décembre 2022 et 156 418 enfants de 110 848 familles en décembre 2023, selon le ministère [@mas-amen-social-2023] ; 137 014 en mai 2026. La Banque mondiale rapporte que la baisse tient au passage d'enfants à l'allocation des 6 à 18 ans et à la baisse de la natalité [@banquemondiale2026isr08116, p. 4] ; en octobre 2025, les 143 806 enfants aidés sont 73,3 % des 196 202 enfants de cet âge inscrits au registre, l'écart tenant aux contrôles croisés avec les caisses de sécurité sociale [@banquemondiale2025isr04716, p. 7-8].
+- **De 6 à 18 ans.** 422 542 enfants de 217 157 familles en décembre 2023 selon le ministère, soit en moyenne deux allocations par famille, et 463 903 en mai 2026, pour une cible de 450 000 [@banquemondiale2026isr08116, p. 5]. Ce dernier indicateur part de zéro au 27 mars 2026 : il ne compte que l'allocation instituée en 2025, non le programme pilote.
+- **Deux chiffres pour les enfants des familles du transfert, en décembre 2023.** Le tableau du rapport compte 144 023 enfants aidés sur 172 911 inscrits, soit 83,3 % ; le texte de la même page écrit 127 911 [@mas-amen-social-2023, tabl. 13].
+- **Le rythme des versements.** Selon les rapports d'exécution, l'allocation des moins de six ans due pour avril à juin 2025 est payée en octobre 2025, et les deux allocations dues pour janvier à mars 2026 le sont en mai 2026 [@banquemondiale2025isr04716, p. 4 ; @banquemondiale2026isr08116, p. 4-5].
+
+:::: {.chronologie-repliable titre="Enfants aidés en décembre 2023 selon la couverture de leur famille : transfert mensuel, carte de soins à tarifs réduits, carte de soins gratuits, d'après le ministère des Affaires sociales"}
+
+| Couverture de la famille | Enfants de moins de six ans<br>(aidés) | Enfants de 6 à 18 ans<br>(aidés) | Enfants aidés<br>(total publié) | Enfants inscrits | Part aidée<br>(%) |
+|---|---:|---:|---:|---:|---:|
+| Transfert mensuel | 27 270 | 123 602 | 144 023 | 172 911 | 83,3 |
+| Carte de soins à tarifs réduits | 123 234 | 253 804 | 377 292 | 502 659 | 75,1 |
+| Carte de soins gratuits | 1 156 | 3 613 | 4 656 | 8 438 | 55,2 |
+| Total publié | 156 418 | 422 542 | 525 971 | 684 008 | 76,9 |
+
+: Enfants aidés en décembre 2023, selon la couverture de leur famille [@mas-amen-social-2023, tabl. 13] {#tbl-nc-enfants-couverture}
+
+Les colonnes d'âge ne s'additionnent pas pour donner le total publié, que le rapport imprime à part.
+
+::::
+
+### Le suivi du projet financé par la Banque mondiale, 2024-2026 {#sec-nc-suivi-projet}
+
+Les rapports d'exécution du projet donnent, à trois dates, des indicateurs que le ministère renseigne et que la Banque mondiale rapporte, avec la cible fixée par le projet.
+
+| Indicateur | [30 novembre 2024]{.insecable} | [31 octobre 2025]{.insecable} | [22 mai 2026]{.insecable} | Cible |
+|:---|---:|---:|---:|---:|
+| Ménages du transfert permanent | 367 550 | 383 192 | 386 351 | 370 000 |
+| dont vérifiés par la nouvelle procédure | 85 925 | 85 930 | 128 326 | 270 000 |
+| Enfants de moins de six ans allocataires | 158 779 | 143 806 | 137 014 | 120 000 |
+| Enfants de 6 à 18 ans allocataires | | | 463 903 | 450 000 |
+| Ménages payés par un moyen numérique | | 198 400 | 209 600 | 300 000 |
+| Ménages ayant reçu un transfert temporaire | 896 675 | 896 675 | | 900 000 |
+
+: Indicateurs de suivi du projet d'appui à la protection sociale, 2024-2026 : décomptes du ministère des Affaires sociales rapportés par la Banque mondiale [@banquemondiale2025isr04716, p. 2 à 8 ; @banquemondiale2026isr08116, p. 2 à 9] {#tbl-nc-suivi-projet tbl-colwidths="[36,17,17,15,15]"}
+
+- **Les dates.** Le nombre de ménages du transfert est celui d'octobre 2025 et d'avril 2026 ; les mêmes rapports donnent aussi 385 231 pour septembre 2025 et 387 668 pour avril 2026 (@tbl-nc-effectifs). Les ménages payés par un moyen numérique sont ceux d'août 2025, soit 46 % des ménages, contre 43 % au 30 novembre 2024.
+- **Les cibles.** Celles du rapport de juillet 2026, fixées pour mars 2030 ; le rapport de novembre 2025 visait 310 000 ménages au transfert, dont 248 000 vérifiés par la nouvelle procédure, et 80 % de ménages payés par un moyen numérique. La cible de 900 000 ménages pour les transferts temporaires est celle du projet d'origine.
+- **La recertification.** Les ménages du transfert dont l'éligibilité a été vérifiée par la nouvelle procédure sont 85 930 en octobre 2025, 135 237 dossiers étant en attente, et 128 326 en mai 2026 [@banquemondiale2025isr04716, p. 5 ; @banquemondiale2026isr08116, p. 5 et 16].
+- **Le registre.** En octobre 2025, 636 916 ménages éligibles y sont inscrits ; 868 172 enquêtes sociales ont été réalisées en mai 2026 [@banquemondiale2025isr04716, p. 6 ; @banquemondiale2026isr08116, p. 11].
+- **La clôture du projet** est reportée à mars 2030 [@banquemondiale2026isr08116].
+
+### Le financement extérieur, 2020-2026 {#sec-nc-financement-exterieur}
+
+Une partie des transferts et des allocations pour enfants est financée par des prêts et par des dons.
+
+- **Un prêt de 247,8 millions d'euros en 2021.** L'accord de prêt n° 9230-TN avec la Banque internationale pour la reconstruction et le développement affecte 82,6 millions d'euros aux transferts temporaires, 99,12 millions au plus au transfert permanent, 16,52 millions aux allocations familiales et 47,082 millions à des dépenses éligibles sous conditions de résultat [@banquemondiale2021pret9230tn]. L'arrêté du 1^er^ avril 2022 sur les allocations familiales [vise la loi qui l'approuve](#r-nc-af-2022). Parmi les conditions de résultat figurent 50 000 ménages supplémentaires au transfert permanent, pour 310 000 au total, l'extension de l'allocation à tous les enfants de moins de six ans et la publication de deux rapports annuels.
+- **Deux programmes pilotes financés par des dons.** Selon le ministère, le pilote de l'allocation des moins de six ans, de décembre 2020 à janvier 2022, est financé par la banque allemande de développement avec l'UNICEF ; celui des 6 à 18 ans relève d'une convention de 191 millions de dinars signée le 28 septembre 2022 avec l'Agence des États-Unis pour le développement international et l'UNICEF [@mas-amen-social-2023].
+- **Un second prêt additionnel en 2026.** La Banque mondiale propose en mars 2026 un prêt de 75,4 millions d'euros ; elle chiffre le financement annuel de l'allocation des 6 à 18 ans à 50 millions de dollars, pour 30 dinars par enfant et par mois et 450 000 enfants, et prévoit le financement rétroactif des allocations de 2025 dans la limite de 20 % du prêt [@banquemondiale2026ppiaf000292, § 13 et 28].
+
+## Selon les études {#sec-nc-etudes}
+
+Le ciblage du transfert, son effet sur la pauvreté et son coût rapporté au PIB ne sont pas dans les décomptes de l'administration : ils sont connus par des simulations et des estimations de la Banque mondiale, bailleur du programme, et par une enquête de l'UNICEF, qui finance et accompagne l'allocation des 6 à 18 ans. Chaque résultat est donné avec sa méthode, et dit s'il est simulé, estimé ou observé. Aucun de ces documents ne dit la base du PIB qu'il emploie.
+
+| Document et auteur | Données | Calcul | Nature du résultat |
+|---|---|---|---|
+| Document d'évaluation du projet, 2021, services de la Banque mondiale [@banquemondiale2021pad4414] | enquête sur le budget, la consommation et le niveau de vie des ménages de 2015 | formule de score appliquée aux ménages de l'enquête ; part du dixième le plus pauvre couverte | simulé |
+| Premier financement additionnel, 2022, services de la Banque mondiale, d'après une étude menée avec le Centre de recherches et d'études sociales (CRES) [@banquemondiale2022pad4815] | même enquête de 2015 | nouvelle formule de score ; déciles de dépense par tête ; variante avec les critères d'exclusion de la loi organique | simulé |
+| Second financement additionnel, 2026, Banque mondiale et ministère des Finances [@banquemondiale2026ppiaf000292] | même enquête, édition de 2021 ; données administratives et règles de 2024 | incidence fiscale selon la méthode *Commitment to Equity* (CEQ) ; contribution marginale ; déciles de revenu de marché | simulé |
+| Rapport de recherche sur l'allocation des 6 à 18 ans, 2024, UNICEF Tunisie [@unicef2024allocations618] | enquête téléphonique en quatre vagues, 2023-2024 : 2 239 puis 1 975 ménages | évolutions chez les ménages bénéficiaires, sans groupe de contrôle | observé, sans effet causal |
+
+: Les études et les rapports extérieurs sur l'Amen social : auteurs, données, calcul et nature des résultats {#tbl-nc-etudes}
+
+- **Des simulations, non des mesures.** Les résultats de 2021 et de 2022 appliquent le score à une enquête de 2015, antérieure au programme ; celui de 2026 combine une enquête de 2021 et les règles de 2024.
+- **Un coût de 0,4 à 0,9 % du PIB.** Trois documents de la Banque mondiale, écrits à trois dates, donnent le coût du transfert en part du PIB : ces valeurs ne forment pas une série (@sec-nc-etudes-pib).
+- **Une enquête sans groupe de contrôle.** Le rapport de l'UNICEF décrit des évolutions observées chez les bénéficiaires ; il ne mesure pas un effet de l'allocation (@sec-nc-etudes-unicef).
+
+<!-- TODO (documentaliste) : études citées par ces documents, à récupérer (PDF à ranger dans tunisia-data) avant de les citer pour
+elles-mêmes : CRES et BAD, « Vers l'adoption d'un modèle de ciblage optimal des pauvres par les programmes d'assistance sociale en
+Tunisie », 2017 ; CRES et Banque mondiale, « Identification des ménages pauvres et vulnérables en Tunisie : rapport technique de
+ciblage », 2021 ; CRES, étude sur le secteur informel, 2016 ; Banque mondiale, « Tunisia Economic Monitor, Strengthening Social
+Safety Nets for Increased Efficiency and Equity », automne 2025 ; analyse d'incidence fiscale CEQ de la Banque mondiale et du
+ministère des Finances (enquête de 2021, règles de 2024) ; rapport annuel de l'Amen social pour 2022 ; UNICEF, « Coût, impact et
+financement de l'allocation pour enfants en Tunisie », 2019 (source du tableau 6 du PAD4414, répartition par décile de cinq
+interventions, non reprise ici faute d'unité et de méthode). À relire à l'image avant tout usage : PAD4815, figure 4 (transfert et
+salaire minimum, 1987-2021) et figure 7 (couverture de la carte de soins par décile) ; rapport du ministère pour 2023, figure 9 ;
+UNICEF 2024, figure 3. Non repris faute de source et de méthode : la part des allocataires dans les deux premiers déciles, 30 % en
+2022 et 44 % en 2025 (PPIAF000292, § 54). Non repris non plus, faute de méthode dans les documents qui les rapportent : les
+résultats attribués aux simulations CRES-BAD de 2017 sur le mode de sélection antérieur — 4,6 % de ménages non couverts sur 8,3 %
+à couvrir, soit un taux d'exclusion de 53,1 % ; 40 % des prestations au cinquième le plus pauvre ; pauvreté réduite de 0,8 point
+(PAD4414, § 85 ; PAD4815, § 62) — et l'effet simulé d'une allocation de 30 D aux moins de six ans, −0,6 point de pauvreté et
+−1 point de pauvreté des enfants (PAD4414, § 88) : à reprendre d'après les études elles-mêmes. La fiche UNICEF de deux pages de 2024 ne se cite pas seule.
+(docs/notes/prestations-sociales-lectures-2026-10-09.md, § 1.10 à § 1.11.) -->
+
+### Le ciblage par le score : simulations sur l'enquête de 2015 {#sec-nc-etudes-ciblage}
+
+**Méthode.** Pour évaluer son projet, la Banque mondiale applique la formule de score — le test des moyens approximé — aux ménages de l'enquête nationale sur le budget, la consommation et le niveau de vie des ménages de 2015, puis classe la population en dixièmes. Elle compare le mode de sélection antérieur à l'Amen social à une sélection de tous les allocataires par le score, pour un programme couvrant 8 % de la population, sa couverture d'alors, ou 10 %. Le document ne décrit ni les variables et les poids de la formule, ni la précision de l'échantillon [@banquemondiale2021pad4414, § 86-87].
+
+| Couverture du programme<br>(% de la population) | Mode de sélection antérieur<br>(% du dixième le plus pauvre couvert) | Score pour tous les allocataires<br>(%) | Sélection antérieure, et score pour les deux points ajoutés<br>(%) |
+|---:|---:|---:|---:|
+| 8 | 17,4 | 46,9 | — |
+| 10 | 22,5 | 56,0 | 33,2 |
+
+: Part du dixième le plus pauvre de la population couverte par le transfert permanent, selon la couverture du programme et le mode de sélection : simulation de la Banque mondiale sur l'enquête de 2015 [@banquemondiale2021pad4414, tabl. 5] {#tbl-nc-ciblage-simule}
+
+**Résultats simulés.** À couverture inchangée, le score ferait passer de 17,4 % à 46,9 % la part du dixième le plus pauvre que le transfert atteint ; avec une couverture de 10 %, de 22,5 % à 56,0 %, ou à 33,2 % si le score ne sert qu'à choisir les deux points de couverture ajoutés.
+
+Le document de 2022 reprend l'exercice d'après une étude menée avec le CRES, sur la même enquête et par déciles de dépense par tête : pour un programme couvrant 10 % de la population, 54 % des allocataires choisis par le score seraient dans le premier décile et 23 % dans le deuxième ; 65 % dans le premier décile quand s'ajoutent les critères d'exclusion de la loi organique [@banquemondiale2022pad4815, § 64-65]. La même étude simule la pauvreté et l'inégalité : un taux de pauvreté de 15,2 % en 2015, de 14,3 % avec le transfert tel qu'il est alors attribué et de 13,0 % avec le score ; un indice de Gini de 32,8, de 32,5 et de 32,0 [@banquemondiale2022pad4815, fig. 10]. Le document ne dit pas si le taux de 15,2 % s'entend avant ou après transferts.
+
+**Le seuil, selon la Banque mondiale.** Le document de 2022 décrit les nouveaux allocataires comme ceux qui remplissent les conditions d'éligibilité et dont le score est inférieur au premier décile [@banquemondiale2022pad4815, § 34] ; c'est la description d'un bailleur, non une règle publiée (@sec-nc-eligibilite). Le même document indique que la nouvelle procédure est engagée à titre pilote en février 2022 à Kairouan, Nabeul et Jendouba [@banquemondiale2022pad4815, § 67] : aucun de ces résultats ne mesure le ciblage du score après sa mise en œuvre.
+
+:::: {.chronologie-repliable titre="Couverture du transfert permanent par décile de dépense par tête sous le mode de sélection antérieur : simulation sur l'enquête de 2015 rapportée par la Banque mondiale"}
+
+| Décile de dépense par tête | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Ménages du décile couverts par le transfert (%) | 17,4 | 13,9 | 12,1 | 9,2 | 7,8 | 6 | 5 | 4,1 | 2,2 | 1,1 |
+
+: Part des ménages de chaque décile couverts par le transfert permanent, 2015 [@banquemondiale2022pad4815, fig. 6] {#tbl-nc-couverture-deciles}
+
+La figure du document donne pour source l'étude menée avec le CRES en 2021.
+
+::::
+
+### L'incidence sur la pauvreté et les inégalités : l'analyse de 2026 {#sec-nc-etudes-incidence}
+
+**Méthode.** Le document de mars 2026 rend compte d'une analyse d'incidence fiscale menée par la Banque mondiale avec le ministère des Finances. Elle suit la méthode *Commitment to Equity* (CEQ), sur l'enquête nationale sur le budget, la consommation et le niveau de vie des ménages de 2021, avec les données administratives et les règles de l'année 2024. L'effet d'une intervention y est sa contribution marginale : l'écart entre l'indicateur de pauvreté ou d'inégalité calculé sans elle et avec elle ; les ménages sont classés par déciles de revenu de marché. L'étude elle-même n'est ni nommée ni jointe au document, qui n'imprime aucun tableau par décile [@banquemondiale2026ppiaf000292, § 56-57].
+
+**Résultats simulés.** Selon cette analyse, plus de 50 % de la dépense du transfert permanent va aux 20 % de ménages les plus pauvres, et moins de 7 % aux 30 % les plus aisés. Le programme réduit l'indice de Gini de 1,09 point et le taux de pauvreté de 2,14 points de pourcentage, l'essentiel venant du transfert permanent. Pour l'allocation des 6 à 18 ans, 55,9 % de la dépense va aux deux premiers déciles ; sa contribution marginale est de −0,35 point pour la pauvreté et de −0,141 point de Gini pour l'inégalité [@banquemondiale2026ppiaf000292, § 56-57].
+
+Ces résultats combinent une enquête de 2021 et des règles de 2024 : ils simulent l'effet des règles, ils ne mesurent pas la pauvreté après la réforme.
+
+**Le contexte donné par le même document.** Il rappelle les taux de pauvreté de l'Institut national de la statistique, 20,2 % en 2010 et 16,6 % en 2021, et donne, d'après l'enquête de 2021, la pauvreté des ménages selon leur nombre d'enfants de 6 à 18 ans : 13,8 % avec un enfant, 22,2 % avec deux, 33,9 % avec trois [@banquemondiale2026ppiaf000292, § 10 et 12].
+
+### Le coût rapporté au PIB {#sec-nc-etudes-pib}
+
+Les trois documents de la Banque mondiale rapportent le coût du transfert permanent au PIB. Ces valeurs viennent de trois documents écrits à trois dates, chacun rapportant la dépense au PIB nominal de l'année tel qu'il était alors publié : elles ne forment pas une série et ne se raccordent pas aux crédits du ministère, dont la part du PIB en base 2015 est donnée à part (@sec-nc-credits).
+
+| Année | Transfert permanent<br>(% du PIB) | Document |
+|---|---:|---|
+| 2008 | 0,4 | [@banquemondiale2021pad4414, § 84] |
+| 2020 | 0,6 | [@banquemondiale2021pad4414, § 84] |
+| 2021 | 0,6 | [@banquemondiale2022pad4815, encadré 1] |
+| 2022 | 0,61 | [@banquemondiale2026ppiaf000292, § 55] |
+| 2025 | 0,91 | [@banquemondiale2026ppiaf000292, § 55] |
+
+: Coût du transfert permanent en part du PIB, selon trois documents de la Banque mondiale ; estimations de ses services {#tbl-nc-pib}
+
+Le document de 2022 écrit aussi « environ 0,56 % du PIB », sans année, et estime à 0,75 % le coût d'un transfert étendu à 310 000 ménages et porté à 200 dinars [@banquemondiale2022pad4815, § 61] ; celui de 2021 estimait à 0,7 % le coût d'une couverture de 10 % de la population [@banquemondiale2021pad4414, § 86]. Pour l'allocation de 30 dinars aux enfants de moins de six ans, le document de 2021 donne deux coûts : 0,05 % du PIB dans un paragraphe, 0,03 % dans un autre [@banquemondiale2021pad4414, § 80 et 88].
+
+### Le transfert rapporté au salaire minimum et à la consommation {#sec-nc-etudes-smig}
+
+Les documents de la Banque mondiale rapportent le montant du transfert au salaire minimum, sans dire le régime retenu : 47 % en 2018 et 42 % en 2021 selon le document de 2022 [@banquemondiale2022pad4815, § 61] ; près de 50 % en 2025, contre 7,9 % en 1987, selon celui de 2026 [@banquemondiale2026ppiaf000292, § 55]. Ils le rapportent aussi à la consommation par tête du cinquième le plus pauvre, d'après l'enquête de 2015 : environ un tiers pour les 180 dinars de 2020 selon le document de 2021 [@banquemondiale2021pad4414, § 84], environ 38 % en 2018 selon celui de 2022 [@banquemondiale2022pad4815, § 61].
+
+Le transfert de base et les plafonds de ressources en dinars, aux deux régimes du salaire minimum, sont aux tableaux du droit (@tbl-amen-base, @tbl-nc-plafonds-dinars).
+
+### L'allocation des 6 à 18 ans : l'enquête de l'UNICEF, 2023-2024 {#sec-nc-etudes-unicef}
+
+**Méthode.** L'UNICEF, qui finance et accompagne le programme pilote, en publie une étude en mai 2024. Elle repose sur une enquête téléphonique en quatre vagues sur douze mois, auprès d'un échantillon de ménages bénéficiaires de l'Amen social ayant des enfants de 6 à 18 ans, stratifié selon qu'ils perçoivent le transfert mensuel ou détiennent une carte de soins gratuits ou à tarifs réduits : 2 239 ménages à la première vague, 1 975 à la quatrième, soit une attrition de 12 %, pour un taux de réponse de 52 %. S'y ajoutent des entretiens et des groupes de discussion. L'enquête n'a pas de groupe de contrôle : le rapport écrit que cette absence « prévient l'estimation de l'impact du programme » [@unicef2024allocations618, p. 24-25, 89-104]. Ses résultats sont donc des évolutions observées chez les bénéficiaires, non des effets de l'allocation.
+
+**Ce que l'enquête observe.** Entre les vagues, 29,5 % des ménages titulaires de la carte de soins gratuits passent au transfert mensuel ; 20 % des ménages ont une carte de handicap pour au moins un enfant ; une femme est cheffe de ménage dans 31 % des ménages du transfert mensuel, 22 % de ceux de la carte de soins gratuits et 3 % de ceux de la carte à tarifs réduits [@unicef2024allocations618, p. 3 et 94].
+
+**Ce que le rapport reproduit des données du programme.** L'allocation mensuelle va à 111 682 enfants en juillet 2022 et à 422 683 en décembre 2023 (@tbl-nc-enfants). Pour l'aide de rentrée scolaire, le rapport donne deux séries : de 240 000 enfants en 2022 à plus de 500 000 en 2023, et de 465 397 à 512 204 [@unicef2024allocations618, p. 20 et 27-28].
+
+**Une estimation de couverture.** Le rapport écrit que le programme « couvre 73 % de tous les enfants vivant dans la pauvreté en Tunisie » [@unicef2024allocations618, p. 20]. Ce taux rapporte le nombre d'allocataires à une estimation du nombre d'enfants pauvres — 26 % des enfants à la fin de 2021 —, dont le rapport ne donne pas le dénominateur ; les enfants allocataires n'étant pas tous pauvres, ce n'est pas un taux de couverture des enfants pauvres au sens d'une enquête.

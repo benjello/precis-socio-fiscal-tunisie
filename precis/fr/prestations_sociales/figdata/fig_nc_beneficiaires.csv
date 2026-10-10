@@ -1,0 +1,13 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : mas-amen-social-2023-beneficiaires-bruts
+# sources (citation) : @mas-amen-social-2023
+# fiches : sources/mas-amen-social-2023.md
+# méthode/hypothèses : Trois totaux de bénéficiaires en 2023 selon les pages : 337 178 (texte), 337 199 (tableau des flux), 337 200 (répartition et score). Stock 2022 du classement inférieur de 4 au tableau des flux. Les colonnes d'âge du tableau des aides aux enfants ne sont pas sommées à la place du total publié.
+# note : Allocataires du transfert mensuel de l'aide permanente : nombre en décembre, entrées et sorties de l'année, 2018-2023, selon le ministère des Affaires sociales
+Année,Allocataires en décembre (individus ou familles),Entrées de l'année,Sorties de l'année,Solde
+2018,242 833,—,—,—
+2019,255 508,21 764,9 089,12 675
+2020,261 802,16 385,10 091,6 294
+2021,268 258,19 267,12 811,6 456
+2022,305 930,44 059,6 387,37 672
+2023,337 199,46 972,15 703,31 269

@@ -3024,3 +3024,140 @@
     لم تُقرأ قوانين المالية لسنوات 1998-2010. الفوارق مع أرقام البنك الدولي مُشار
     إليها دون تصحيح.'
   fiche: sources/finances-locales-fccl-lois-de-finances.md
+- id: mas-amen-social-2023-beneficiaires-bruts
+  titre: 'Ministère des Affaires sociales : bénéficiaires, flux et enfants aidés d''Amen
+    social'
+  sources:
+  - mas-amen-social-2023
+  build: scripts/extract_mas_amen_social_2023.py:main
+  raw:
+  - data/raw/caisses/mas/amen_social_suivi_evaluation_2023_ar.pdf
+  output: data/processed/caisses/mas_amen_social_2023_beneficiaires_bruts.csv
+  unite: personnes, familles, enfants, pourcentages et millions de dinars selon la
+    ligne
+  perimetre: stocks de décembre et flux 2018-2023 ; aides enfants 2022-2023, projets
+    2020-2023 et répartitions 2013/2023
+  caveats: 'Trois totaux de bénéficiaires en 2023 selon les pages : 337 178 (texte),
+    337 199 (tableau des flux), 337 200 (répartition et score). Stock 2022 du classement
+    inférieur de 4 au tableau des flux. Les colonnes d''âge du tableau des aides aux
+    enfants ne sont pas sommées à la place du total publié.'
+  titre_ar: 'وزارة الشؤون الاجتماعية: المنتفعون والتدفقات ومنح الأطفال ضمن برنامج
+    الأمان'
+  unite_ar: أشخاص وأسر وأطفال ونسب وملايين الدنانير بحسب السطر
+  perimetre_ar: الرصيد في ديسمبر والتدفقات 2018-2023، وباقي المؤشرات بحسب الجدول
+  caveats_ar: ثلاث قيم مختلفة لعدد المنتفعين في 2023 بحسب الصفحة؛ بقيت منفصلة.
+  fiche: sources/mas-amen-social-2023.md
+- id: mas-amen-social-2023-credits-bruts
+  titre: 'Ministère des Affaires sociales : crédits du programme Amen social, 2021-2023'
+  sources:
+  - mas-amen-social-2023
+  build: scripts/extract_mas_amen_social_2023.py:main
+  raw:
+  - data/raw/caisses/mas/amen_social_suivi_evaluation_2023_ar.pdf
+  output: data/processed/caisses/mas_amen_social_2023_credits_bruts.csv
+  unite: milliers de dinars courants
+  perimetre: crédits affectés aux interventions du programme Amen social, tableau
+    1 p. PDF 7 ; non cotisations ni prestations CNSS
+  caveats: 'Case 2021 enfants moins de 6 ans non imprimée : aucune valeur créée. Le
+    texte PDF 36 annonce une autre dépense pour les enfants en 2023 ; ni l''une ni
+    l''autre n''est substituée.'
+  titre_ar: 'وزارة الشؤون الاجتماعية: اعتمادات برنامج الأمان الاجتماعي 2021-2023'
+  unite_ar: آلاف الدنانير الجارية
+  perimetre_ar: التدخلات الممولة ضمن برنامج الأمان الاجتماعي، الجدول 1
+  caveats_ar: خانة الأطفال دون السادسة لسنة 2021 غير منشورة. هذه ليست اشتراكات الضمان
+    الاجتماعي.
+  fiche: sources/mas-amen-social-2023.md
+- id: amen-social-effectifs-suivi
+  titre: 'Amen social : ménages du transfert permanent et enfants allocataires, points
+    datés des rapports de la Banque mondiale et de l''UNICEF, 2010-2026'
+  sources:
+  - banquemondiale2025isr04716
+  - banquemondiale2026isr08116
+  - banquemondiale2021pad4414
+  - banquemondiale2022pad4815
+  - banquemondiale2026ppiaf000292
+  - unicef2024allocations618
+  - mas-amen-social-2023
+  build: uv run python scripts/build_amen_social_etudes.py
+  raw:
+  - sources/transcriptions/amen-social-effectifs-suivi.csv
+  - data/processed/caisses/mas_amen_social_2023_beneficiaires_bruts.csv
+  output: data/processed/assistance-sociale/amen_social_effectifs_suivi.csv
+  unite: ménages, enfants, enquêtes ou % selon la ligne (colonne `unite`)
+  perimetre: 'décomptes administratifs du programme Amen social, une ligne par attestation
+    : ménages du transfert monétaire permanent (2010, 2020, 2021, mars 2021, novembre
+    2024, septembre à novembre 2025, avril et mai 2026, 2025), ménages retenus par
+    la nouvelle procédure de sélection (novembre 2024 à mai 2026), ménages payés par
+    moyen numérique (août 2025, mai 2026), enfants de 0 à 5 ans allocataires (novembre
+    2024, mars et octobre 2025, mai 2026) et parts par type de couverture (décembre
+    2023), enfants de 6 à 18 ans allocataires (juillet 2022, décembre 2023, mai 2026),
+    enfants hors registre et allocation de rentrée scolaire (UNICEF, 2022-2024), transferts
+    temporaires, inscrits au registre, enquêtes sociales ; rapprochements avec les
+    séries du ministère dans amen_social_recoupements.csv'
+  caveats: 'DÉCOMPTES DU MINISTÈRE RAPPORTÉS PAR LA BANQUE MONDIALE OU PAR L''UNICEF
+    (colonne `producteur`), sauf cinq lignes prises au rapport du ministère pour 2023
+    que la série mas-amen-social-2023-beneficiaires-bruts ne porte pas (texte p. 38
+    : 127 911 ; figure 9 : parts de décembre 2023). LES STOCKS ET FLUX 2018-2023 DU
+    MINISTÈRE NE SONT PAS RECOPIÉS ICI : voir mas-amen-social-2023-beneficiaires-bruts.
+    UNE LIGNE PAR ATTESTATION, AUCUN ARBITRAGE : 124 000 ou 130 000 ménages en 2010
+    ; 383 192 (daté d''octobre p. 2, de novembre p. 5) ou 385 231 (daté du 31 octobre
+    au tableau, de septembre au commentaire) en 2025 ; 386 351 ou 387 668 en avril
+    2026 ; 85 925 au 30 novembre 2024 puis 80 975 au 30 mai 2025 pour la nouvelle
+    procédure ; 896 675 ménages servis et 896 657 éligibles aux transferts temporaires
+    ; 422 683 (UNICEF) ou 422 542 (ministère) enfants de 6 à 18 ans en décembre 2023
+    ; 127 911 (texte) ou 144 023 (tableau) enfants des familles du transfert ; 240
+    000 ou 465 397 enfants à la rentrée de 2022. La date du tableau des indicateurs
+    est celle de l''arrêté du rapport, le commentaire en donne souvent une autre :
+    les deux sont versées. `qualificatif` (« over », « about ») : une borne n''est
+    pas une valeur. ANOMALIES IMPRIMÉES GARDÉES : « 209.60 » ménages (ISR08116, p.
+    13) ; 463 903 enfants « under the age of six » (p. 2, coquille pour 6-18 ans)
+    ; 868 172 enquêtes sociales répété à l''identique d''un rapport à l''autre. Unités
+    non homogènes d''une pièce à l''autre (« ménages » à la Banque, « bénéficiaires
+    » au ministère). Série de points, non série annuelle : rien n''est interpolé.
+    Pilote des 6-18 ans sur don (2022-2024), puis allocation légale (2026) : rupture
+    de nature. Enquêtes de satisfaction (IBM) hors série.'
+  titre_ar: 'الأمان الاجتماعي: الأسر المنتفعة بالتحويل النقدي القار والأطفال المنتفعون
+    بالمنح، نقاط مؤرخة من تقارير البنك الدولي واليونيسف، 2010-2026'
+  unite_ar: أسر أو أطفال أو أبحاث اجتماعية أو نسب مئوية بحسب السطر
+  perimetre_ar: تعدادات إدارية لبرنامج الأمان الاجتماعي، سطر لكل قيمة منشورة مع مصدرها
+    وصفحتها وتاريخها
+  caveats_ar: تعدادات وزارة الشؤون الاجتماعية كما ينقلها البنك الدولي أو اليونيسف.
+    القيم المتضاربة محفوظة كلها دون ترجيح ولا استكمال. لا تُنسخ هنا سلاسل الوزارة
+    2018-2023.
+  fiche: sources/amen-social-etudes-rapports.md
+- id: pnafn-transfert-smig-banque-mondiale
+  titre: Transfert mensuel du PNAFN et salaire minimum, quinze années de 1987 à 2021,
+    selon la Banque mondiale (PAD4815, figure 4)
+  sources:
+  - banquemondiale2022pad4815
+  - banquemondiale2026ppiaf000292
+  build: uv run python scripts/build_amen_social_etudes.py
+  raw:
+  - sources/transcriptions/pnafn-transfert-smig-banque-mondiale.csv
+  output: data/processed/assistance-sociale/pnafn_transfert_smig_banque_mondiale.csv
+  unite: dinars courants par mois ; % du salaire minimum pour les quatre lignes de
+    texte
+  perimetre: 'étiquettes des barres de la figure 4 du document de financement additionnel
+    de 2022 (p. PDF 38) : transfert mensuel du PNAFN et salaire minimum pour 1987,
+    1990, 1995, 2000, 2005, 2010 à 2015 et 2018 à 2021 ; pourcentages du salaire minimum
+    écrits dans le texte (2018 et 2021 dans PAD4815 ; 1987 et 2025 dans PPIAF000292)'
+  caveats: 'LU À L''IMAGE (400 dpi), chaque étiquette au-dessus de sa barre ; l''appariement
+    est confirmé par le texte de la pièce (180/379 = 47,5 % pour « 47 percent » en
+    2018 ; 180/429 = 42,0 % pour « 42 percent » en 2021). QUINZE ANNÉES IRRÉGULIÈRES
+    : ni 1988-1989, ni 1991-1994, ni 2016-2017 ; RIEN N''EST INTERPOLÉ, et un palier
+    lu une année ne dit pas depuis quand il vaut. CHIFFRES DE SECONDE MAIN SUR LE
+    DROIT : la source dite est « Institut National de la Statistique and MoSA data
+    », AUCUN TEXTE N''EST CITÉ ; à ne pas prendre pour un barème légal (la figure
+    donne 15 D en 1990 et 25,8 D en 1995). Régime du salaire minimum non dit (40 ou
+    48 heures). La courbe du rapport transfert / salaire minimum n''a pas d''étiquettes
+    : NON LUE ; le rapport ne figure qu''au fichier des recoupements, calculé. PPIAF000292
+    écrit 7,9 % en 1987, les étiquettes donnent 7,7 / 105 = 7,3 % : non tranché. La
+    figure 3 de PPIAF000292 (1987-2025) est sans étiquettes : non lue.'
+  titre_ar: التحويل الشهري للبرنامج الوطني لإعانة العائلات المعوزة والأجر الأدنى،
+    خمس عشرة سنة بين 1987 و2021، وفق البنك الدولي
+  unite_ar: بالدينار الجاري في الشهر
+  perimetre_ar: القيم المكتوبة فوق أعمدة الرسم 4 من وثيقة التمويل الإضافي لسنة 2022
+  caveats_ar: قُرئت القيم من الصورة. خمس عشرة سنة غير منتظمة دون استكمال. المصدر المذكور
+    بيانات المعهد الوطني للإحصاء ووزارة الشؤون الاجتماعية دون ذكر أي نص قانوني. نظام
+    الأجر الأدنى غير مذكور.
+  fiche: sources/amen-social-etudes-rapports.md
