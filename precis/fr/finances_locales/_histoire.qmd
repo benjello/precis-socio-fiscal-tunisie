@@ -21,6 +21,7 @@ Depuis 1957, les conseils des collectivités locales sont tour à tour élus, no
 - **Deux questions reviennent d'un texte à l'autre.** Les conseils sont-ils élus ou nommés ? Leurs décisions, notamment budgétaires, sont-elles approuvées d'avance ou contrôlées après coup ?
 - **Entre les réformes, trois étapes.** Le conseil régional de 1989 ; la loi organique de 1995, qui met fin à l'approbation préalable des tarifs et des emprunts des communes (@sec-fl-hist-modifications) ; les dissolutions de 2011 (@sec-fl-hist-2011).
 - **Les finances suivent.** En 1975, le budget (@sec-fl-budg-1975), le fonds commun et la caisse de prêts (@sec-fl-transferts-1975), deux taxes sur l'activité (@sec-fl-activite-code) ; en 1997, le code de la fiscalité locale (@sec-fl-code-1997) ; en 2018, le budget (@sec-fl-budg-ccl) et le pouvoir de fixer les droits (@sec-fl-ccl-2018).
+- **Les communes couvrent une part croissante du pays.** Elles sont 94 en 1957 et 350 à la fin de 2017 ; la part de la population vivant en milieu communal passe de 40 % au recensement de 1966 à 68 % à celui de 2014 (@sec-fl-hist-longue-periode).
 - **Aucune commune n'a de conseil élu depuis le 14 mars 2023.** L'état du droit est au chapitre des compétences (@sec-fl-comp-depuis-2023).
 
 <!-- TODO (rédacteur) : frise des réformes et des étapes, de 1957 à 2026 (1957, 1959, 1963, 1975, 1989, 1997, 2011, 2014, 2018, 2022, 2023, 2025, 2026). -->
@@ -369,9 +370,48 @@ Aucune commune n'a de conseil élu depuis le 14 mars 2023 : l'état du droit est
 
 ::::
 
-## La longue période : le nombre de communes {#sec-fl-hist-longue-periode}
+## La longue période : le nombre de communes et la population communale {#sec-fl-hist-longue-periode}
 
-Le nombre de communes passe de 94 en 1957 à 350 à la fin de 2017 (@tbl-fl-hist-communes).
+Le nombre de communes passe de 94 en 1957 à 350 à la fin de 2017 (@tbl-fl-hist-communes) ; la part de la population vivant en milieu communal passe de 40,1 % au recensement de 1966 à 67,7 % à celui de 2014 (@fig-fl-hist-population).
+
+Le milieu communal est celui que l'Institut national de la statistique définit ainsi : « Une agglomération est classée communale lorsqu'elle est érigée officiellement en municipalité » [@ins-rgph-2014-vol3, p. 19]. La population communale varie donc aussi quand un décret crée une commune ou étend son périmètre.
+
+```{python}
+#| label: fig-fl-hist-population
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import population as pop
+import figtools
+figtools.figure_tabs(
+    pop.vues_population(), pop.table_population(), pop.SERIE, pop.SERIE_COMMUNES,
+    slug="fig_fl_hist_population",
+    caption=("Population du milieu communal et du milieu non communal aux recensements de "
+             "1966 à 2014, en millions d'habitants ; part du milieu communal, en %, et nombre "
+             "de communes, 1957-2024"),
+    nominal=False,
+    note_lecture=(
+        "Le milieu communal est celui de l'Institut national de la statistique : une "
+        "agglomération est communale lorsqu'elle est érigée en municipalité. Six "
+        "recensements, six points : rien n'est lissé ni interpolé entre eux. Les valeurs de "
+        "1966 à 1994 sont celles des tableaux rétrospectifs des volumes des recensements de "
+        "2004 et de 2014, non celles des publications de ces recensements. Le périmètre des "
+        "communes change d'un recensement à l'autre, et aucune série à périmètre constant "
+        "n'est publiée. Le recensement de 1956 n'est pas ventilé par milieu dans ces "
+        "tableaux. Dans la seconde vue, le nombre de communes est donné aux trois dates du "
+        "@tbl-fl-hist-communes, sans trait entre elles. Le trait pointillé gris marque les "
+        "communes créées et étendues de 2015 à 2017, qui couvrent tout le territoire avant "
+        "les élections de mai 2018 : « non communal » n'a plus le même sens ensuite. Le "
+        "losange violet de 2024 est la part de la population urbaine selon la classification "
+        "en urbain et rural qui remplace alors la classification communal / non communal : "
+        "une autre mesure, qui ne prolonge pas la courbe."),
+)
+```
+
+- **La part communale gagne près de 28 points en quarante-huit ans.** Elle est de 40,1 % en 1966, 47,5 % en 1975, 52,8 % en 1984, 61,0 % en 1994, 64,9 % en 2004 et 67,7 % en 2014 [@ins-rgph-2004-vol1, tabl. 3 ; @ins-rgph-2014-vol3, tabl. 6 et 7].
+- **La population non communale reste presque stable en nombre.** Elle passe de 2,7 millions d'habitants en 1966 à 3,5 millions en 2014, quand la population communale passe de 1,8 à 7,4 millions [@ins-rgph-2004-vol1, tabl. 3 ; @ins-rgph-2014-vol1, p. 11] : la croissance de la population, de 4,5 à 11,0 millions d'habitants, se fait pour l'essentiel en milieu communal.
+- **Deux effets, que la source ne sépare pas.** Selon l'Institut, la population communale augmente « sous l'effet des créations des nouvelles communes et des extensions des périmètres communaux et surtout sous l'effet certain de l'exode rural » [@ins-rgph-2014-vol3, p. 15]. Ce que la création de communes ajoute à la part communale n'est pas mesuré : aucune série à périmètre constant n'est publiée, et le nombre de communes n'est établi ici qu'à trois dates.
+- **Après 2014, la mesure change** (@sec-fl-hist-carte). Les communes créées et étendues de 2015 à 2017 couvrent tout le territoire avant les élections municipales de mai 2018 : « non communal » n'a plus le même sens. Au recensement de 2024, l'Institut remplace la classification communal / non communal par une classification en urbain et rural, selon laquelle 72 % de la population est urbaine [@ins-rgph-2024-flash-demographie, p. 3] ; cette part ne prolonge pas la série.
 
 | Date | Nombre de communes | Source |
 |---|---|---|
