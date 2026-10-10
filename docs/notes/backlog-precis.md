@@ -105,7 +105,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
-| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; plan de conversion du volume dans `docs/notes/prestations-sociales-plan-architecte.md` | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
+| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; frontière entre régimes et assistance à établir sur trois points | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 
@@ -575,16 +575,64 @@ liste qui suit le tableau, citations comprises. Restent :
 
 ## Prestations sociales
 
-- **Découpé en chapitres le 4 octobre 2026** (déplacement seul, aucune valeur changée, ancres
-  gardées) : `index.qmd` (« Présentation » : introduction, conventions, présentation générale
-  `#sec-prest-presentation`, encadré des caisses), partie « Les prestations contributives »
-  (`_contributives.qmd`, `#sec-prest-contributives` : chapeau et ouverture du droit) —
-  `_prestations_familiales.qmd` (`#sec-prest-familiales`), `_autres_risques.qmd` (maladie,
-  maternité, décès, accidents du travail, perte d'emploi, CNAM ; `#sec-prest-autres-risques`) —,
-  `_non_contributives.qmd` (`#sec-prest-non-contributives`), `_matrice.qmd` ; annexe
-  `_notations.qmd` (« Les notations du volume »).
-- **Arabe** : `precis/ar/prestations_sociales/_quarto.yml` déclare les chapitres traduits (état
-  constaté le 6 octobre 2026).
+- **État d'ensemble au 10 octobre 2026 : le volume entier est au format « ruptures au premier plan,
+  détail replié »**, en cinq chapitres et une annexe (le glossaire), dans cet ordre :
+  1. `index.qmd`, « Présentation » (`#sec-prest-presentation`) — refaite le 10 octobre 2026 :
+     renvois aux volumes voisins en tête ; « Vue d'ensemble » (`#sec-prest-vue-ensemble`) avec
+     le tableau des naissances de dispositifs, 1951-2025 (`#tbl-prest-naissances`, treize lignes,
+     sans citation de loi, dates reprises des chapitres) ; « Les chapitres du volume »
+     (`#sec-prest-chapitres`, une ligne par chapitre sous son titre) ; « Comment lire le volume »
+     (`#sec-prest-guide-lecture`) ; « Les organismes » (`#sec-prest-organismes`, encadré engendré).
+     Deux blocs repliés : le classement ouverture × forme avec ses textes (`#tbl-prest-classement`,
+     l'ancien tableau « Deux axes »), le vocabulaire des textes. L'encadré des quatre conventions,
+     « Le périmètre de l'assistance » et la cellule Python sont retirés. **Reste** : une frise
+     (`fig-prest-frise`) quand un composant existera dans `scripts/` — le tableau en tient lieu.
+  2. `_matrice.qmd`, « Qui est couvert : les régimes et les prestations »
+     (`#sec-matrice-regimes`, identifiant gardé : `remunerations_publiques/index.qmd` y mène) —
+     remonté en deuxième position et refait le 10 octobre 2026 ; il absorbe `_contributives.qmd`
+     (supprimé ; `#sec-prest-contributives` est désormais la section « Comment un droit
+     s'ouvre »). Trois sections : « La matrice » (`#sec-matrice-lecture`), « Entre les régimes et
+     l'assistance » (`#sec-matrice-frontiere`), « Comment un droit s'ouvre ». La matrice
+     (`#tbl-matrice-regimes`) porte neuf régimes **et les deux catégories de l'Amen social**, en
+     sept colonnes de symboles ; un second tableau (`#tbl-matrice-assistance`) dit, prestation par
+     prestation, ce que reçoivent les catégories pauvres et les catégories à revenu limité,
+     d'après `_non_contributives.qmd`. Les articles de chaque case sont au registre replié
+     (`#tbl-matrice-textes`, l'ancienne matrice). **Reste** (TODO du chapitre, textes à lire,
+     tous dans le corpus *a priori*) : la frontière — l'affiliation fait-elle obstacle au
+     transfert mensuel (décret gouvernemental n° 2020-317, art. 3 à 9) ; une famille des
+     catégories pauvres affiliée cumule-t-elle allocations familiales et allocation de 30 D
+     (arrêtés du 1er avril 2022 et du 3 novembre 2025) ; la carte de soins gratuits et le support
+     de 2022 connaissent-ils la condition de non-affiliation de la carte à tarifs réduits — ;
+     l'extension de la loi n° 96-101 aux régimes agricoles et aux contractuels publics ; l'entrée
+     du régime de la loi n° 2002-32 dans l'assurance maladie ; les dates d'effet et la pagination
+     des textes de 2024 ; douze notions de glossaire à créer (terminologue). La colonne
+     « Maladie, maternité » réunit les deux indemnités, que l'ancienne matrice ne séparait pas :
+     à scinder quand les articles auront été relus régime par régime.
+  3. `_prestations_familiales.qmd` (`#sec-prest-familiales`) — converti le 9 octobre 2026
+     (entrée ci-dessous).
+  4. `_autres_risques.qmd` (`#sec-prest-autres-risques`) — converti (entrée ci-dessous).
+  5. `_non_contributives.qmd` (`#sec-prest-non-contributives`) — converti (entrée ci-dessous) ;
+     **le 10 octobre 2026, le passage sur le score est corrigé d'après la précision du
+     propriétaire** : le transfert est ouvert aux ménages dont le score se situe dans le premier
+     décile (Banque mondiale, PAD4815, § 34) ; ne sont pas publics les coefficients du modèle ni
+     la valeur du score qui borne ce décile. Mis en accord : vue d'ensemble, état du droit,
+     `#sec-nc-eligibilite`, ligne de registre `#r-nc-elig-score`, `#sec-nc-etudes-ciblage` ; fiche
+     `r-amen-seuil-score-circulaires` (circulaires de mai 2022 et d'octobre 2025, à obtenir du
+     ministère : hors corpus).
+  L'annexe `_notations.qmd` est supprimée : ses sept symboles (A, N, r, n̄, τ_r, W, W̄) sont
+  définis sous la formule de `#sec-pf-regime-1961` et redéfinis là où ils resservent
+  (`#sec-pf-reforme-1976`, `#sec-pf-etat-du-droit`) ; aucun renvoi ne visait ses identifiants.
+- **Graphie** : « Amen social » dans tout le volume français, « AMEN SOCIAL » dans les seules
+  citations de la loi. **Restent en « AMEN social »** : `precis/glossaire.yml` (sept occurrences,
+  dont le terme de l'entrée `amen-social`, d'où quinze dans le `_glossaire.qmd` engendré de ce
+  volume et une dans celui de la compensation) — au terminologue — et
+  `precis/fr/caisses/index.qmd` (une occurrence).
+- **Arabe** : `precis/ar/prestations_sociales/_quarto.yml` suit le nouvel ordre depuis le
+  10 octobre 2026 (`_contributives.qmd` et `_notations.qmd` retirés de la liste, `_matrice.qmd`
+  en deuxième position). Les `.qmd` arabes ne sont pas touchés : `_contributives.qmd` et
+  `_notations.qmd` y restent sur le disque, hors du livre, et l'`index.qmd` arabe, non encore
+  retraduit, renvoie à `@sec-prest-contributives`, que le livre arabe ne contient plus — un
+  renvoi non résolu au rendu arabe, jusqu'à la synchronisation de traduction (différée).
 - **La compensation est sortie du volume le 6 octobre 2026** : `_compensation.qmd` est supprimé,
   son texte forme le volume IX (rubrique « La compensation » ci-dessous) ; le plan du volume
   (`index.qmd`) y renvoie par un lien entre livres.

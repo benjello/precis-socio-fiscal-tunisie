@@ -16,14 +16,12 @@ book:
     center: "[Accueil](../index.html) · [À propos et contribuer](../a-propos.html) · [Le PIB et ses changements de base](../annexe-pib.html) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
   chapters:
     - index.qmd
-    - _contributives.qmd
+    - _matrice.qmd
     - _prestations_familiales.qmd
     - _autres_risques.qmd
     - _non_contributives.qmd
-    - _matrice.qmd
 
   appendices:
-    - _notations.qmd
     - _glossaire.qmd
 
 bibliography:
