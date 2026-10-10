@@ -1,0 +1,13 @@
+- libelle: Taux de la taxe sur les immeubles bâtis — un ou deux services
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/taux/un_ou_deux_services.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.taux.un_ou_deux_services/table/
+- libelle: Taux de la taxe sur les immeubles bâtis — trois ou quatre services
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/taux/trois_ou_quatre_services.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.taux.trois_ou_quatre_services/table/
+- libelle: Taux de la taxe sur les immeubles bâtis — plus de quatre services
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/taux/plus_de_quatre_services.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.taux.plus_de_quatre_services/table/
+- libelle: Taux de la taxe sur les immeubles bâtis — plus de quatre services et d'autres
+    services
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/taux/plus_de_quatre_services_et_autres_services.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.taux.plus_de_quatre_services_et_autres_services/table/
