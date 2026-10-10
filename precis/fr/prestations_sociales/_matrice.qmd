@@ -1,16 +1,67 @@
-# Qui reçoit quoi : la matrice régime × prestation {#sec-matrice-regimes}
+# Qui est couvert : les régimes et les prestations {#sec-matrice-regimes}
 
-Cette matrice est le point d'arrivée du volume. Une prestation contributive est ouverte aux affiliés **de certains régimes**, sous des conditions de stage et d'assiette qui diffèrent. Cette lecture croisée fait apparaître les écarts de couverture établis par les textes cités ; les intitulés de colonnes rappellent aussi la forme des prestations, sans modifier ce classement par régime.
+Les pensions, régime par régime, sont l'objet du volume [« Retraites »](../retraites/index.html).
 
-::: {.callout-important title="Convention de lecture de la matrice"}
-**●** la prestation est **ouverte**, et la case indique le texte qui l'ouvre.
-**○** la prestation est **fermée** : elle est attestée comme non comprise dans le régime.
-**?** la question n'est **pas tranchée** par les sources identifiées.
+Ce chapitre dit, pour chaque population, quelles prestations lui sont ouvertes et à quel titre. Deux voies mènent à une prestation. La première est l'affiliation à un régime de sécurité sociale, qui ouvre des droits en contrepartie de cotisations. La seconde est celle des ressources : l'État classe un ménage parmi les [catégories pauvres](#g-categories-pauvres) ou les [catégories à revenu limité](#g-categories-revenu-limite) du programme [Amen social](#g-amen-social) et lui sert, sans cotisation, les aides de l'assistance sociale. Le chapitre donne la matrice des deux voies (@sec-matrice-lecture), la frontière que les textes tracent entre elles (@sec-matrice-frontiere), puis la manière dont un droit s'ouvre (@sec-prest-contributives).
 
-**Aucune case n'est laissée vide** : le point d'interrogation signale des sources non concluantes. Les prestations familiales sont prises au sens large de l'article 51 de la loi n° 60-30 : allocations familiales, allocations pour congés de naissance et allocations pour congés de jeunes travailleurs.
-:::
+## La matrice {#sec-matrice-lecture}
 
-| Régime | Prestations familiales monétaires | Indemnités maladie / couches monétaires | Soins non monétaires | Capital ou indemnité de décès monétaire | Accidents du travail mixtes | Perte d'emploi mixte | Assurance maladie non monétaire |
+Une prestation contributive n'est ouverte qu'aux affiliés de certains régimes : les [prestations familiales](#g-prestations-familiales) ne le sont que dans deux des sept régimes du secteur privé gérés par la Caisse nationale de sécurité sociale (CNSS) et, sous une autre forme, dans le secteur public. Les ménages que l'Amen social classe reçoivent, eux, des allocations pour enfants, l'accès aux soins publics et, pour les catégories pauvres, un transfert monétaire mensuel ; l'assistance ne comprend aucune prestation attachée à la maternité, au décès, à l'accident du travail ou à la cessation d'activité.
+
+Le tableau donne l'état du droit en 2026. Il se lit ainsi :
+
+- ● la prestation est ouverte ;
+- (●) la caisse ne sert pas de prestation, mais l'employeur public verse une indemnité ou maintient le traitement ;
+- ○ la prestation n'est pas ouverte ;
+- ? les textes identifiés ne tranchent pas ;
+- → la prestation est traitée dans un autre volume.
+
+La colonne « Maladie, maternité » est celle des indemnités versées pendant l'arrêt de travail ; la colonne « Soins », celle de la prise en charge des soins ; la colonne « Pension, transfert », celle d'un revenu mensuel durable — la pension d'un régime, le transfert monétaire mensuel de l'assistance. La ligne « Où lire » renvoie à la section qui détaille chaque colonne pour les régimes, et au volume « Retraites » pour les pensions ; le détail de l'assistance est au tableau suivant (@tbl-matrice-assistance).
+
+| Qui | Enfants | [Maladie,]{.insecable} [maternité]{.insecable} | Soins | Décès | [Accident]{.insecable} du travail | [Cessation]{.insecable} [d'activité]{.insecable} | [Pension,]{.insecable} [transfert]{.insecable} |
+|:---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Affiliés d'un régime de sécurité sociale** | | | | | | | |
+| Salariés non agricoles | ● | ● | ● | ● | ● | ● | → |
+| Salariés agricoles | ○ | ● | ● | ● | ● | ? | → |
+| Salariés agricoles, régime amélioré | ● | ● | ● | ● | ● | ? | → |
+| Travailleurs non salariés | ○ | ● | ● | ● | ○ | ○ | → |
+| Tunisiens à l'étranger | ○ | ● | ● | ● | ? | ○ | → |
+| Bas revenus | ○ | ○ | ● | ○ | ● | ○ | → |
+| Artistes, créateurs, intellectuels | ○ | ● | ● | ● | ? | ○ | → |
+| Agents publics | (●) | (●) | ● | ● | ● | ? | → |
+| Travailleuses agricoles | ○ | ● | ● | ● | ● | ○ | → |
+| *Où lire* | @sec-prest-familiales | @sec-ar-maladie-maternite | @sec-ar-assurance-maladie | @sec-ar-deces | @sec-ar-atmp | @sec-perte-emploi | [Retraites](../retraites/index.html) |
+| **Ménages classés par l'Amen social, sans cotisation** | | | | | | | |
+| Catégories pauvres | ● | ○ | ● | ○ | ○ | ○ | ● |
+| Catégories à revenu limité | ● | ○ | ● | ○ | ○ | ○ | ○ |
+
+: Qui est couvert, pour quoi : les régimes de sécurité sociale et l'assistance sociale, état du droit en 2026 {#tbl-matrice-regimes .sm}
+
+Le second tableau reprend les sept colonnes du premier, en lignes, pour les ménages que couvre l'assistance : il dit ce que chaque catégorie reçoit, pour quel montant et depuis quand.
+
+| Prestation | Catégories pauvres | Catégories à revenu limité | Depuis | Où lire |
+|:---|:---|:---|:---|:---|
+| Enfants | allocation de 30 D par mois et par enfant, avant six ans puis de 6 à 18 ans ; supplément de 10 D par mois et par enfant de 6 à 18 ans, attaché au transfert mensuel ; aide de rentrée scolaire, de 50 D puis de 100 D par enfant | la même allocation de 30 D, sauf pour les familles affiliées à un régime de sécurité sociale ; la même aide de rentrée scolaire | supplément et aide de rentrée au [25 mai 2020]{.insecable} ; allocation avant six ans par l'arrêté du [1^er^ avril 2022]{.insecable} ; de 6 à 18 ans, programme pilote en 2022, puis allocation instituée au [1^er^ janvier 2025]{.insecable} ; aide de rentrée de 100 D au [1^er^ septembre 2024]{.insecable} | @sec-af-non-contributive, @tbl-amen-vs-afnc, @tbl-nc-rentree-scolaire |
+| Maladie, maternité : indemnités | aucune | aucune | — | @tbl-nc-etat-2026 |
+| Soins | gratuits ou à tarif réduit dans les structures publiques | gratuits ou à tarif réduit dans les structures publiques | livrets de soins au [1^er^ janvier 1988]{.insecable} ; cartes de soins gratuits et à tarifs réduits en 1998 ; support électronique de l'Amen social en 2022 | @sec-nc-aide-medicale, @tbl-nc-aide-medicale |
+| Décès | aucune prestation propre à ce risque | aucune prestation propre à ce risque | — | @sec-nc-aides |
+| Accident du travail | aucune | aucune | — | @tbl-nc-etat-2026 |
+| Cessation d'activité | aucune prestation propre à ce risque | aucune prestation propre à ce risque | — | @sec-matrice-frontiere |
+| Transfert mensuel | transfert monétaire mensuel de l'Amen social, de 180 D en 2020 à 280 D en 2026 ; allocation du programme d'aide aux familles nécessiteuses, maintenue : 180 D constatés en 2024, 260 D en août 2026 | aucun | allocation du programme d'aide aux familles nécessiteuses depuis les années 1980 ; transfert de l'Amen social depuis le [25 mai 2020]{.insecable} | @sec-nc-transfert, @tbl-amen-base, @sec-nc-pnafn-allocation |
+
+: Ce que reçoivent les ménages classés par l'Amen social, prestation par prestation : état du droit en 2026 et dates de création {#tbl-matrice-assistance .sm tbl-colwidths="[13,28,21,25,13]"}
+
+- **Les prestations familiales : deux régimes de la CNSS sur sept.** Le régime des salariés non agricoles les sert depuis le 1^er^ avril 1961, le régime agricole amélioré depuis le 1^er^ octobre 1989, pour les trois premiers enfants et aux mêmes taux (@sec-pf-reforme-1989) [@loi89-73]. Le régime agricole de base ne couvre que les assurances sociales et les pensions [@loi81-6, art. 1].
+- **Les non-salariés : une énumération qui commence à l'article 68.** Leurs régimes sont construits par extension d'articles numérotés de la loi n° 60-30 : le décret n° 95-1166 étend « les articles 68 à 98, 100 à 107, 109 à 120 », le décret n° 89-107 « les articles 68 à 96, 100 à 120 » [@decret95-1166, art. 1 ; @decret89-107, art. 1]. C'est ce point de départ, et non une exclusion expresse, qui laisse en dehors les prestations familiales des articles 51 à 67. La couverture se lit aussi par risque : l'employé de maison relève du régime des bas revenus pour les soins et les pensions, et de la loi n° 94-28, qui le cite nommément, pour les accidents du travail [@loi94-28, art. 4].
+- **Le secteur public : l'employeur sert, le traitement est maintenu.** L'indemnité à caractère familial de l'agent public est servie par son employeur et non par la caisse (@sec-pf-secteur-public). Il n'y a pas d'indemnité journalière de maladie : le statut maintient le traitement, et les congés de maternité et de paternité sont à plein traitement depuis la loi de 2024 (@sec-ar-conges-2024).
+- **Les cases non tranchées.** La loi n° 96-101 vise « les travailleurs régis par la loi [n° 60-30] » : son extension aux deux régimes agricoles et la situation des agents publics contractuels ne sont pas tranchées par les textes identifiés. Il en va de même de la réparation des accidents du travail des Tunisiens à l'étranger et des artistes, et de l'entrée du régime des bas revenus dans le régime de base d'assurance maladie de 2007 : la colonne « Soins » y porte les soins du régime lui-même.
+- **L'assistance : deux aides mensuelles coexistent, et quatre risques restent sans prestation.** La loi organique de 2019 maintient les programmes antérieurs jusqu'à leur adaptation : l'allocation du [programme national d'aide aux familles nécessiteuses](#g-pnafn), versée depuis les années 1980, est relevée de 2024 à 2026 dans la limite du [transfert monétaire](#g-transfert-monetaire) de l'Amen social, ouvert le 25 mai 2020 (@sec-nc-pnafn-allocation) ; jusqu'à cette date, l'assistance réunit cette allocation et l'aide médicale (@sec-nc-mise-en-place). Un appui pour dépenses exceptionnelles, de 60 à 200 D, peut répondre à une urgence sanitaire ou sociale (@sec-nc-aides) ; l'assistance ne comporte ni indemnité de maladie ou de maternité, ni capital au décès, ni rente d'accident (@tbl-nc-etat-2026).
+
+:::: {.chronologie-repliable titre="Régimes et prestations : textes et articles ouvrant ou fermant chaque case de la matrice des régimes, 1960-2024"}
+
+Chaque case porte le texte qui ouvre la prestation (●) ou celui dont il résulte qu'elle n'est pas comprise dans le régime (○). Les prestations familiales sont prises au sens de l'article 51 de la loi n° 60-30 : allocations familiales, allocations pour congés de naissance et allocations pour congés de jeunes travailleurs. La colonne « Assurance maladie » porte la date d'ouverture énoncée par le décret n° 2007-1366.
+
+| Régime | Prestations familiales | Indemnités de maladie et de couches | Soins | Capital ou indemnité de décès | Accidents du travail | Cessation d'activité | Assurance maladie |
 |---|---|---|---|---|---|---|---|
 | **Salariés non agricoles** (loi n° 60-30) | ● arts 51-67 | ● arts 71-82 | ● art. 91 | ● arts 83-87 | ● loi n° 94-28, art. 4 | ● loi n° 96-101 | ● 1^er^ juillet 2007 |
 | **Salariés agricoles** (loi n° 81-6, titres I-II) | ○ art. 1^er^ | ● art. 1^er^ | ● art. 1^er^ | ● art. 1^er^ | ● loi n° 94-28, art. 4 | ? | ● 1^er^ juillet 2007 |
@@ -19,22 +70,52 @@ Cette matrice est le point d'arrivée du volume. Une prestation contributive est
 | **Tunisiens à l'étranger** (décret n° 89-107) | ○ art. 1^er^ | ● arts 1 et 3 | ● arts 1 et 3 | ● arts 1 et 3 | ? | ○ | ● 1^er^ juillet 2007 |
 | **Bas revenus** (loi n° 2002-32) | ○ art. 1^er^ | ○ art. 1^er^ | ● arts 10-11 | ○ art. 1^er^ | ● loi n° 94-28, art. 4 | ○ | ? |
 | **Artistes, créateurs, intellectuels** (loi n° 2002-104) | ○ art. 1^er^ | ● arts 9-10 | ● art. 9 | ● arts 9-10 | ? | ○ | ● 1^er^ juillet 2007 |
-| **Secteur public** (CNRPS) | ● loi n° 88-39 | ○ traitement maintenu | ● loi n° 72-2 | ● décret n° 93-308 | ● loi n° 95-56 | ? | ● 1^er^ juillet 2007 |
+| **Agents publics** (CNRPS) | ● loi n° 88-39 | ○ traitement maintenu | ● loi n° 72-2 | ● décret n° 93-308 | ● loi n° 95-56 | ? | ● 1^er^ juillet 2007 |
 | **Travailleuses agricoles** (décret-loi n° 2024-4) | ○ arts 1 et 17 | ● art. 25 | ● art. 24 | ● arts 47-48 | ● arts 38-48 | ○ | ● art. 24 |
 
-Sources : @loi60-30 ; @loi81-6 ; @loi89-73 ; @decret95-1166 ; @decret89-107 ; @loi2002-32 ; @loi2002-104 ; @loi88-39 ; @loi72-2 ; @decret93-308 ; @loi95-56 ; @loi94-28 ; @loi96-101 ; @decret2007-1366 ; @decret-loi2024-4. La colonne « assurance maladie » porte la date d'ouverture énoncée par le décret n° 2007-1366.
+: Les régimes de sécurité sociale : article ouvrant ou fermant chaque prestation {#tbl-matrice-textes}
 
-Chaque case demande d'être lue avec les précisions données plus haut, et cinq d'entre elles appellent un commentaire.
+Textes : @loi60-30 ; @loi81-6 ; @loi89-73 ; @decret95-1166 ; @decret89-107 ; @loi2002-32 ; @loi2002-104 ; @loi88-39 ; @loi72-2 ; @decret93-308 ; @loi95-56 ; @loi94-28 ; @loi96-101 ; @decret2007-1366 ; @decret-loi2024-4. Les textes de l'assistance sociale sont au registre de son chapitre (@sec-prest-non-contributives).
 
-**Les prestations familiales ne sont ouvertes qu'à deux régimes CNSS sur sept.** Le régime des salariés non agricoles depuis 1960, et le régime agricole amélioré depuis le 1^er^ octobre 1989 : l'article 92 de la loi n° 81-6, ajouté par la loi n° 89-73, dispose que « les allocations familiales sont servies du chef de l'assuré pour les trois premiers enfants selon les mêmes conditions et aux mêmes taux que ceux prévus par les articles 52 à 65 de la loi n° 60-30 » [@loi89-73]. Le régime agricole de base, lui, ne couvre que les assurances sociales et les pensions [@loi81-6, art. 1].
+::::
 
-**La fermeture pour les régimes de non-salariés tient au point de départ de l'énumération.** Le décret n° 95-1166 étend « les articles 68 à 98, 100 à 107, 109 à 120 » de la loi n° 60-30 [@decret95-1166, art. 1] et le décret n° 89-107 « les articles 68 à 96, 100 à 120 » [@decret89-107, art. 1] : dans les deux cas l'énumération commence à 68, et les articles 51 à 67 restent en dehors.
+:::: {.chronologie-repliable titre="Régime de la loi n° 2002-32 : dénomination dans les trois volumes et entrée dans l'assurance maladie"}
 
-**Le secteur public a un dispositif familial de nature différente**, servi par l'employeur et non par la caisse, ce que la matrice ne peut pas rendre par un symbole. Il n'y a pas non plus d'indemnité journalière de maladie dans le secteur public : le traitement est maintenu par le statut, et les congés de maternité et de paternité sont servis à plein traitement depuis 2024.
+La loi n° 2002-32 ne donne pas de nom abrégé au régime qu'elle institue pour « certaines catégories de travailleurs » ; ce volume l'appelle régime des « bas revenus », les volumes « Cotisations sociales » et « Retraites » régime des travailleurs à faibles revenus. Il s'agit dans les trois cas du même régime, dont le volume « Retraites » expose les règles de pension à partir de la loi elle-même [@loi2002-32, art. 13-14]. Ce régime est absent de la liste du décret n° 2007-1366, d'où le point d'interrogation de la colonne « Assurance maladie ».
 
-**La colonne « perte d'emploi » comporte quatre points d'interrogation**, et c'est un résultat en soi. La loi n° 96-101 vise « les travailleurs régis par la loi [n° 60-30] » : son extension aux régimes agricoles n'est pas tranchée par les textes identifiés, non plus que la situation des agents publics contractuels.
+::::
 
-**La ligne « bas revenus » appelle deux remarques.** D'abord son point d'interrogation en assurance maladie : ce régime est absent de la liste du décret n° 2007-1366. Ensuite sa dénomination : la loi n° 2002-32 ne donne pas de nom abrégé au régime qu'elle institue pour « certaines catégories de travailleurs » ; ce livre l'appelle régime des « bas revenus », les livres « Cotisations sociales » et « Retraites » régime des travailleurs à faibles revenus. Il s'agit dans les trois cas du même régime, dont le livre « Retraites » expose les règles de pension à partir de la loi elle-même [@loi2002-32, art. 13-14].
+## Entre les régimes et l'assistance {#sec-matrice-frontiere}
+
+Les deux voies de la matrice n'ont pas le même critère : l'affiliation pour les régimes, les ressources pour l'assistance. Les textes ne posent pas de règle générale d'exclusion de l'une par l'autre ; ils tracent la frontière prestation par prestation.
+
+- **Les allocations pour enfants.** L'allocation de 30 D de l'Amen social est fermée aux catégories à revenu limité « affiliées à l'un des régimes de sécurité sociale » : l'arrêté de 2022, pour les enfants de moins de six ans, et celui de 2025, pour les enfants de 6 à 18 ans, le disent dans les mêmes termes. L'exclusion vise cette seule catégorie ; ces textes n'énoncent pas d'interdiction générale de cumul pour les catégories pauvres (@sec-nc-af-moins-6, @sec-nc-af-6-18).
+- **Les soins.** Le décret de 1998 sur la [carte de soins à tarifs réduits](#g-amg2) pose une condition d'exclusion : le bénéficiaire « ne doit pas être affilié à l'un des régimes de sécurité sociale et sa situation ne lui permet pas l'affiliation » (@sec-nc-cartes-1998).
+- **Le passage d'une voie à l'autre.** Le salarié licencié pour raisons économiques garde quatre trimestres ses allocations familiales et son droit aux soins (@sec-ar-cessation-1996) ; un décret de 2012 lui ouvre ensuite une carte annuelle de soins à tarifs réduits, une fois cette protection épuisée (@sec-nc-cartes-1998).
+- **L'appui occasionnel.** Depuis le 1^er^ septembre 2024, les sommes fixées par l'article de l'arrêté où figure l'aide de rentrée scolaire ne se cumulent pas avec d'autres sommes octroyées au même titre dans le cadre de programmes ou de mécanismes publics (@sec-nc-aides).
+- **Le transfert mensuel.** Ses conditions portent sur l'âge, sur le revenu des douze derniers mois, tous revenus confondus, sur le patrimoine et sur le classement par un score (@sec-nc-eligibilite).
+
+<!-- TODO (documentaliste) : la frontière n'est établie que sur les points ci-dessus. Restent à établir, par les
+textes : (1) si l'affiliation à un régime de sécurité sociale fait obstacle au transfert monétaire mensuel de
+l'Amen social (décret gouvernemental n° 2020-317, art. 3 à 9 : le chapitre de l'assistance n'en relève que l'âge, le
+revenu, le patrimoine et le score) ; (2) si une famille des catégories pauvres affiliée à un régime qui sert les
+allocations familiales (loi n° 60-30, art. 51 à 67) peut percevoir aussi l'allocation de 30 D (arrêtés du 1er avril
+2022 et du 3 novembre 2025 : seule l'exclusion des catégories à revenu limité affiliées est relevée) ; (3) si la
+carte de soins gratuits et le support électronique de 2022 connaissent la condition de non-affiliation de la carte à
+tarifs réduits (décret n° 98-1812 ; décret n° 2022-919). Ouvrir une fiche de recherche si la lecture ne tranche pas. -->
+
+## Comment un droit s'ouvre {#sec-prest-contributives}
+
+Dans un régime de sécurité sociale, une prestation suppose six étapes, et c'est leur variation d'un régime à l'autre qui fait l'essentiel du droit.
+
+1. **L'affiliation.** En principe obligatoire et attachée à l'exercice d'une activité assujettie ; volontaire pour les travailleurs tunisiens à l'étranger [@decret89-107, art. 3] ; au choix entre deux régimes pour certaines catégories [@loi2002-32, art. 2].
+2. **Le régime.** Il détermine les prestations ouvertes (@tbl-matrice-regimes).
+3. **Le [stage](#g-stage-cotisation).** La durée minimale d'immatriculation et de travail exigée avant que le droit ne s'ouvre ; elle diffère d'une prestation à l'autre (@tbl-ar-etat-2026).
+4. **L'assiette.** Les salaires déclarés pour les salariés ; un revenu forfaitaire — une classe multipliée par le salaire minimum — pour les non-salariés et les Tunisiens à l'étranger.
+5. **Le fait générateur.** Naissance ou charge d'enfant, incapacité constatée, accouchement, décès, accident.
+6. **Le service.** Par la caisse du régime ou, pour les indemnités à caractère familial et le maintien du salaire après un accident du travail dans le secteur public, par l'employeur.
+
+Dans l'assistance sociale, le droit s'ouvre par une demande, sous des conditions d'âge, de revenu et de patrimoine et après un classement par un score ; le transfert est dû à compter du mois d'enregistrement de la demande, et le dossier est mis à jour au moins tous les deux ans (@sec-nc-eligibilite).
 
 <!-- TODO (documentaliste) : établir l'extension éventuelle de la loi n° 96-101 aux régimes
 agricoles et aux agents contractuels, ainsi que l'entrée éventuelle du régime de la loi

@@ -1,73 +1,80 @@
 # Présentation {#sec-prest-presentation}
 
-```{python}
-#| echo: false
-#| output: false
-import sys
-from pathlib import Path
+Les pensions sont l'objet du volume [« Retraites »](../retraites/index.html) ; les cotisations qui financent les régimes, du volume [« Cotisations sociales »](../cotisations_sociales/index.html) ; les organismes, leurs comptes et leur budget, du volume [« Les caisses de sécurité sociale »](../caisses/index.html) ; les subventions aux prix des produits de base, des carburants et du transport, du volume [« La compensation »](../compensation/index.html).
 
-sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
-import openfisca_tables as ot
+Ce volume traite des prestations sociales autres que les pensions. Il réunit celles que les caisses de sécurité sociale servent à leurs affiliés en contrepartie de cotisations — [prestations familiales](#g-prestations-familiales), indemnités de maladie et de maternité, soins et assurance maladie, [capital décès](#g-capital-deces), réparation des [accidents du travail](#g-accident-du-travail), protection des travailleurs ayant cessé leur travail pour des raisons économiques — et celles que l'État sert sans cotisation, sous [condition de ressources](#g-condition-de-ressources) : l'assistance sociale, du [programme national d'aide aux familles nécessiteuses](#g-pnafn) à l'[Amen social](#g-amen-social). Il prend les régimes du côté de ce qu'ils servent, et non de ce qu'ils prélèvent.
 
-TABLES = Path.cwd() / "tables"
+## Vue d'ensemble {#sec-prest-vue-ensemble}
 
+Les prestations sociales forment deux ensembles : des prestations ouvertes par l'affiliation à un régime, financées par des cotisations et servies par les caisses ; une assistance sous condition de ressources, financée par le budget de l'État et gérée par le ministère des Affaires sociales.
 
-def table(nom, legende, label):
-    """Tableau de paramètres législatifs conservé sous forme de snapshot versionné.
+Le tableau donne les dispositifs dans l'ordre de leur naissance. La colonne « Forme » dit ce qui est servi : une somme — prestation monétaire —, un soin, un bien ou l'accès à un service — prestation non monétaire —, ou les deux — prestation mixte.
 
-    Les valeurs, les dates d'effet et leurs références sont réunies par le générateur
-    `scripts/generate_prestations_tables.py`.
+| Depuis | Dispositif | Qui y a droit | Financé par | Forme | Où lire |
+|:---|:---|:---|:---|:---|:---|
+| 1951 ; texte en vigueur depuis le [1^er^ juillet 1993]{.insecable} | capital-décès du secteur public | ayants droit des agents publics et des retraités | cotisation propre | monétaire | @sec-ar-deces-public |
+| [1^er^ avril 1961]{.insecable} | allocations familiales, après les caisses d'allocations familiales de 1944 | salariés non agricoles ; salariés de certaines entreprises agricoles depuis le [1^er^ octobre 1989]{.insecable} | cotisations | monétaire | @sec-prest-familiales |
+| [1^er^ avril 1961]{.insecable} | indemnités de maladie, de couches et de décès ; soins | salariés non agricoles du secteur privé et leur famille | cotisations | monétaire ; soins non monétaires | @sec-ar-mise-en-place |
+| [1^er^ mai 1980]{.insecable} | majoration pour salaire unique | foyers d'allocataires dont le conjoint n'a pas d'activité | cotisations | monétaire | @sec-pf-salaire-unique |
+| 1986 | aide permanente du programme national d'aide aux familles nécessiteuses | familles inscrites au programme | budget de l'État ; les caisses y contribuent à l'origine | monétaire | @sec-nc-mise-en-place |
+| [1^er^ janvier 1988]{.insecable} | assistance médicale gratuite : livrets, puis cartes de soins en 1998 | familles dont le revenu annuel ne dépasse pas le salaire minimum, à l'origine | budget de l'État | non monétaire | @sec-nc-aide-medicale |
+| [1^er^ octobre 1994]{.insecable} | contribution aux frais de crèche | enfants des mères salariées, sous plafond de salaire | cotisations | non monétaire : versée à la crèche | @sec-pf-creche |
+| [1^er^ janvier 1995]{.insecable} ; [1^er^ janvier 1996]{.insecable} au secteur public | réparation des accidents du travail et des maladies professionnelles par un régime légal | tous les travailleurs ou assimilés ; agents publics | cotisation propre au régime ; employeur public | mixte | @sec-ar-atmp |
+| loi du [18 novembre 1996]{.insecable} | protection sociale des travailleurs ayant cessé leur travail pour des raisons économiques ou technologiques | salariés licenciés pour ces raisons | cotisations | mixte | @sec-perte-emploi |
+| [1^er^ juillet 2007]{.insecable} | régime de base d'assurance maladie | assurés sociaux des deux secteurs et leurs ayants droit | cotisations | non monétaire | @sec-ar-assurance-maladie |
+| [25 mai 2020]{.insecable} | Amen social : transfert monétaire mensuel, appui occasionnel, soins | catégories pauvres ; catégories à revenu limité pour les soins et les aides de rentrée | budget de l'État ; prêts et dons depuis 2021 | mixte | @sec-nc-amen-2019 |
+| 2022 ; [1^er^ janvier 2025]{.insecable} pour les 6 à 18 ans | allocation familiale de l'Amen social | enfants des catégories pauvres, et des catégories à revenu limité non affiliées à un régime de sécurité sociale | budget de l'État, prêts et dons | monétaire | @sec-af-non-contributive |
+| loi du [12 août 2024]{.insecable} | congés de maternité et de paternité communs aux deux secteurs | agents publics ; salariés et non-salariés du secteur privé | cotisations ; employeur public | monétaire | @sec-ar-conges-2024 |
 
-    Le rendu est du Markdown, et non un DataFrame stylé, afin que Pandoc voie les
-    citations qu'il contient et les résolve.
-    """
-    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
-```
+: Les prestations sociales dans l'ordre de leur naissance, 1951-2025 : public, financement, forme {#tbl-prest-naissances .sm tbl-colwidths="[14,24,22,14,14,12]"}
 
-Ce volume traite des prestations sociales autres que les pensions de vieillesse : d'un côté les prestations **contributives** servies par les caisses de sécurité sociale au titre d'une affiliation et de cotisations — [prestations familiales](#g-prestations-familiales), indemnités de maladie et de maternité, [capital décès](#g-capital-deces), réparation des [accidents du travail](#g-accident-du-travail), assurance maladie — ; de l'autre les prestations **non contributives** d'assistance sociale, attribuées sous [condition de ressources](#g-condition-de-ressources) et financées par le budget de l'État.
+- **Le partage entre prestations contributives et assistance commande le droit, le financeur et le gestionnaire.** D'un côté l'affiliation et la cotisation, les caisses de sécurité sociale et leurs régimes ; de l'autre la condition de ressources, le budget de l'État et le ministère des Affaires sociales. Ce partage ne recoupe pas celui du secteur privé et du secteur public.
+- **La couverture dépend du régime, ou des ressources.** Un affilié n'a droit qu'aux prestations que son régime ouvre ; un ménage sans cotisation, qu'à celles de la catégorie où l'Amen social le classe. La matrice du volume croise les deux (@tbl-matrice-regimes).
+- **Pour chaque prestation, cinq réponses.** Qui y a droit, pour quel montant, financé par qui, et, quand une série existe, combien de bénéficiaires et quelle dépense. L'état du droit en 2026 tient en trois tableaux : les prestations familiales (@sec-pf-etat-du-droit), les autres risques (@tbl-ar-etat-2026), l'assistance sociale (@tbl-nc-etat-2026).
 
-Le partage avec les autres livres du précis est le suivant. Le livre « Retraites » traite la branche vieillesse, organisée par régime ; le livre « Cotisations sociales » traite le prélèvement qui finance les régimes ; le livre [« Les caisses de sécurité sociale »](../caisses/index.html) traite les organismes qui les gèrent, leurs comptes et leur budget. Les mêmes régimes servent donc plusieurs livres pour des objets distincts : le prélèvement, les caisses, la pension, les autres prestations. Ce volume-ci prend les régimes du côté des prestations qu'ils ouvrent, et non du côté de ce qu'ils prélèvent.
-
-::: {.callout-note title="Quatre conventions de lecture, retenues dans tout ce qui suit"}
-**1. L'axe principal est le partage contributif / non contributif.** Il commande l'ouverture du droit — affiliation et cotisation d'un côté, condition de ressources de l'autre —, le financement, l'organisme gestionnaire et le contentieux. Il ne recoupe pas la distinction entre secteur privé et secteur public : un agent public relève du bloc contributif pour son capital-décès et peut relever du bloc d'assistance pour ses soins.
-
-**2. La forme constitue un axe transversal.** Une [prestation monétaire](#g-prestation-monetaire) sert une somme ; une [prestation non monétaire](#g-prestation-non-monetaire) fournit un soin, un bien, un service ou l'accès à un service ; une prestation est **mixte** lorsqu'un même dispositif combine ces deux formes. La législation sociale emploie traditionnellement d'autres termes : l'article 68 de la loi n° 60-30 parle ainsi d'« indemnités en espèces » et les distingue de l'octroi des soins, tandis que la loi organique relative à l'AMEN social parle de « transferts financiers directs » et de « prestations de soins » [@loi60-30, art. 68 ; @loi-amen-social-2019, art. 11 à 13]. Ces qualifications légales sont conservées dans l'exposé de chaque dispositif, puis rapportées à la classification moderne monétaire / non monétaire / mixte.
-
-**3. Certains éléments de l'assistance relèvent de textes distincts.** Les décrets relatifs aux [cartes de soins](#g-amg1) prévoient un nombre global et des [quotas régionaux](#g-quota-regional) fixés par arrêté conjoint [@decret-98-1812-amg1, art. 2 ; @decret-98-409-amg2, art. 2 et 14]. L'arrêté relatif au [score](#g-score-eligibilite) de l'[AMEN social](#g-amen-social) en énumère les dimensions sans fixer leurs pondérations [@arrete-2020-05-19-scoring, art. 2-3]. L'allocation du [programme national d'aide aux familles nécessiteuses](#g-pnafn) est, quant à elle, constatée et encadrée par les arrêtés de 2024 et de 2025.
-
-**4. Trois niveaux d'attestation.** *Texte établi* : l'énoncé est celui de l'article tel que publié au JORT ; *référence* : seuls le numéro, les dates, le fascicule et la page du texte sont établis ; *dérivé* : l'énoncé est déduit d'un renvoi ou d'un intitulé, et non du texte de l'article. Les tableaux qui comportent des lignes dérivées portent une colonne d'attestation. Une donnée dérivée n'est jamais présentée ici comme attestée.
-:::
-
-## Le plan du volume
-
-Trois chapitres traitent des prestations contributives : la manière dont une prestation contributive est ouverte (@sec-prest-contributives), les prestations familiales (@sec-prest-familiales), puis la maladie, la maternité, le décès, les accidents du travail et la perte d'emploi (@sec-prest-autres-risques). Les prestations non contributives de l'assistance sociale font l'objet d'un chapitre (@sec-prest-non-contributives). Le dernier chapitre croise les deux ensembles dans une matrice régime × prestation (@sec-matrice-regimes). La compensation — la Caisse générale de compensation et les subventions aux prix des produits de base, des carburants et du transport, qui ne sont pas des prestations mais opèrent par les prix un transfert aux ménages — fait l'objet du volume [« La compensation »](../compensation/index.html).
-
-## Le périmètre de l'assistance
-
-L'article 13 de la loi de finances rectificative du 1^er^ septembre 1986 autorise les organismes de sécurité sociale à participer au financement du programme national d'aide aux familles nécessiteuses [@loi-86-83-lfr-1986, art. 13]. Cette trace budgétaire ouvre la chronologie du programme exposée plus bas.
-
-Pour l'assistance non contributive, ce volume traite des aides monétaires, de l'aide médicale et de l'AMEN social. Les dispositifs de soutien à l'emploi et d'amélioration des conditions de vie restent hors de son périmètre.
-
-## Les organismes
-
-{{< include _encadre_caisses.qmd >}}
-
-Un point de vocabulaire mérite d'être fixé d'emblée : la CNAM n'a pas seulement reçu l'assurance maladie créée en 2004. L'article 8 de la loi n° 2004-71 lui confie aussi la gestion des régimes de réparation des accidents du travail des secteurs public et privé et le service des indemnités de maladie et de couches prévues par les régimes antérieurs [@loi2004-71, art. 8]. Une part du dispositif décrit plus bas a donc **changé de gestionnaire en 2007 sans changer de contenu** : les lois n° 60-30, n° 94-28 et n° 95-56 continuent de fixer les droits.
-
-## Deux axes de classement
-
-Le tableau suivant croise l'axe principal d'ouverture du droit — contributif ou non contributif — avec la forme de ce qui est servi. Il oriente la lecture sans substituer un nouveau plan au partage qui structure le volume.
+:::: {.chronologie-repliable titre="Classement des prestations selon l'ouverture du droit et la forme : textes et articles par dispositif, 1960-2025"}
 
 | Dispositif | Ouverture | Forme | Contenu |
 |---|---|---|---|
-| Prestations familiales | Contributive par l'affiliation aux régimes qui les ouvrent ; non contributive, pour l'allocation familiale de l'AMEN, selon les catégories admises au programme [@loi60-30, art. 51-67 ; @loi88-39 ; @loi94-88, art. 2-4 ; @decret-loi-2022-8-allocation-familiale] | Mixte | Allocations familiales, majoration pour salaire unique et allocation familiale non contributive, monétaires ; contribution aux frais de crèche, non monétaire |
+| Prestations familiales | Contributive par l'affiliation aux régimes qui les ouvrent ; non contributive, pour l'allocation familiale de l'Amen social, selon les catégories admises au programme [@loi60-30, art. 51-67 ; @loi88-39 ; @loi94-88, art. 2-4 ; @decret-loi-2022-8-allocation-familiale] | Mixte | Allocations familiales, majoration pour salaire unique et allocation familiale non contributive, monétaires ; contribution aux frais de crèche, non monétaire |
 | Indemnités de maladie et de maternité | Contributive, sous conditions d'affiliation, de stage et d'interruption d'activité [@loi60-30, art. 68 et 71-82 ; @loi2024-44, art. 1 et 9] | Monétaire | Indemnités remplaçant une partie du revenu pendant la maladie, la grossesse ou les couches |
 | Assurance maladie et soins contributifs | Contributive, par l'affiliation à un régime auquel les soins ou l'assurance maladie sont ouverts [@loi60-30, art. 68 et 91 ; @loi2004-71, art. 1-5 ; @decret2007-1366, art. 1-2] | Non monétaire | Octroi ou prise en charge de soins au bénéfice de l'assuré et de ses ayants droit |
 | Capital ou indemnité de décès | Contributive, selon le régime du défunt ou de l'assuré et les ayants droit désignés [@loi60-30, art. 83-87 ; @decret93-308, art. 1-9] | Monétaire | Indemnité du secteur privé ou capital-décès du secteur public |
 | Accidents du travail et maladies professionnelles | Contributive, par l'exercice d'une activité couverte et la réalisation du risque professionnel [@loi94-28, art. 3-5 et 33-49 ; @loi95-56, art. 2 et 5] | Mixte | Soins, indemnités ou maintien du traitement, capitaux et rentes |
-| Protection contre la perte d'emploi | Contributive, pour les travailleurs compris dans le champ de la loi n° 96-101 et dont la perte d'emploi répond aux conditions prévues [@loi96-101, art. 2-9] | Mixte | Prise en charge de sommes dues et maintien temporaire des prestations familiales et du droit aux soins |
-| PNAFN et transferts AMEN | Non contributive ; pour l'AMEN, appartenance aux catégories pauvres et classement selon les ressources et le score [@loi-86-83-lfr-1986, art. 13 ; @loi-amen-social-2019, art. 2 et 11 ; @decret-gouv-2020-317-amen, art. 4-9 ; @arrete-2024-07-10-allocation-pauvres, art. 1 ; @arrete-2025-08-29-allocation-pauvres, art. 1-2] | Monétaire | Allocation du PNAFN et transferts monétaires mensuels de l'AMEN social |
-| Aide médicale et soins AMEN | Non contributive, selon l'indigence ou les ressources, le contingentement des cartes et l'admission à l'AMEN social [@loi-87-29-amg, art. 1-4 ; @decret-98-1812-amg1, art. 2-4 ; @decret-98-409-amg2, art. 2 et 14 ; @loi-amen-social-2019, art. 13 ; @decret-2022-919-soins-amen, art. 1-6] | Non monétaire | Accès gratuit ou à tarif réduit aux soins, puis support de soins électronique AMEN |
-| Aides occasionnelles et autonomisation | Non contributive, au bénéfice des catégories admises à l'AMEN social et, pour l'autonomisation, des personnes handicapées [@loi-amen-social-2019, art. 12 ; @arrete-2022-12-08-appui-occasionnel, art. 2-4 ; @decret-2022-715-autonomisation, art. 1-5] | Mixte | Sommes occasionnelles, prise en charge d'abonnements de transport et financement de projets d'autonomisation |
+| Protection des travailleurs ayant cessé leur travail pour des raisons économiques ou technologiques | Contributive, pour les travailleurs compris dans le champ de la loi n° 96-101 et dont la cessation du travail répond aux conditions prévues [@loi96-101, art. 2-9] | Mixte | Prise en charge de sommes dues et maintien temporaire des prestations familiales et du droit aux soins |
+| Allocation du programme national d'aide aux familles nécessiteuses et transferts de l'Amen social | Non contributive ; pour l'Amen social, appartenance aux catégories pauvres et classement selon les ressources et le score [@loi-86-83-lfr-1986, art. 13 ; @loi-amen-social-2019, art. 2 et 11 ; @decret-gouv-2020-317-amen, art. 4-9 ; @arrete-2024-07-10-allocation-pauvres, art. 1 ; @arrete-2025-08-29-allocation-pauvres, art. 1-2] | Monétaire | Allocation du programme et transferts monétaires mensuels de l'Amen social |
+| Aide médicale et soins de l'Amen social | Non contributive, selon l'indigence ou les ressources, le contingentement des cartes et l'admission à l'Amen social [@loi-87-29-amg, art. 1-4 ; @decret-98-1812-amg1, art. 2-4 ; @decret-98-409-amg2, art. 2 et 14 ; @loi-amen-social-2019, art. 13 ; @decret-2022-919-soins-amen, art. 1-6] | Non monétaire | Accès gratuit ou à tarif réduit aux soins, puis support de soins électronique |
+| Aides occasionnelles et autonomisation | Non contributive, au bénéfice des catégories admises à l'Amen social et, pour l'autonomisation, des personnes handicapées [@loi-amen-social-2019, art. 12 ; @arrete-2022-12-08-appui-occasionnel, art. 2-4 ; @decret-2022-715-autonomisation, art. 1-5] | Mixte | Sommes occasionnelles, prise en charge d'abonnements de transport et financement de projets d'autonomisation |
 
-La forme qualifie ce qui est servi au bénéficiaire, non son financement. Ainsi, la contribution aux frais de crèche est versée directement à la crèche pour la prise en charge de l'enfant : elle constitue ici une **prestation non monétaire**, même si son montant est fixé en argent [@loi94-88, art. 2-4].
+: Ouverture du droit et forme des prestations : textes par dispositif {#tbl-prest-classement}
+
+::::
+
+:::: {.chronologie-repliable titre="Vocabulaire des textes : « indemnités en espèces », « transferts financiers directs », prestation monétaire, non monétaire, mixte"}
+
+Une [prestation monétaire](#g-prestation-monetaire) sert une somme ; une [prestation non monétaire](#g-prestation-non-monetaire) fournit un soin, un bien, un service ou l'accès à un service ; une prestation est mixte lorsqu'un même dispositif combine ces deux formes. La législation sociale emploie d'autres termes : l'article 68 de la loi n° 60-30 parle d'« indemnités en espèces » et les distingue de l'octroi des soins ; la loi organique qui crée l'Amen social parle de « transferts financiers directs » et de « prestations de soins » [@loi60-30, art. 68 ; @loi-amen-social-2019, art. 11 à 13]. Ces qualifications légales sont conservées dans l'exposé de chaque dispositif ; le volume dit « transferts monétaires mensuels » pour les premiers.
+
+La forme qualifie ce qui est servi au bénéficiaire, non son financement. La contribution aux frais de crèche est versée directement à la crèche pour la prise en charge de l'enfant : elle est ici une prestation non monétaire, même si son montant est fixé en argent [@loi94-88, art. 2-4].
+
+::::
+
+## Les chapitres du volume {#sec-prest-chapitres}
+
+Le volume compte cinq chapitres ; quatre suivent cette présentation.
+
+- **Qui est couvert : les régimes et les prestations** (@sec-matrice-regimes) : la matrice des régimes de sécurité sociale et de l'assistance sociale — qui reçoit quoi, à quel titre —, la frontière que les textes tracent entre les deux, et la manière dont un droit s'ouvre.
+- **Les prestations familiales** (@sec-prest-familiales) : les allocations familiales du secteur privé depuis 1961, la majoration pour salaire unique, la contribution aux frais de crèche et les indemnités à caractère familial du secteur public.
+- **Maladie, maternité, décès, accidents du travail, cessation d'activité pour raisons économiques** (@sec-prest-autres-risques) : pour chacun de ces risques, qui est couvert, à quelles conditions, pour quel montant et pendant combien de temps ; l'assurance maladie depuis 2007.
+- **L'assistance sociale : du programme d'aide aux familles nécessiteuses à l'Amen social** (@sec-prest-non-contributives) : le transfert monétaire mensuel, l'aide médicale, les allocations pour enfants et les aides ponctuelles ; puis ce que l'administration constate — allocataires et crédits — et, à part, ce que les études estiment.
+
+Le glossaire complète le volume en annexe.
+
+## Comment lire le volume {#sec-prest-guide-lecture}
+
+Le chapitre des régimes et des prestations se lit d'abord : il dit qui est couvert, et renvoie pour chaque case à la section qui détaille. Les trois chapitres suivants ont le même ordre : une vue d'ensemble, la mise en place, les grandes réformes dans l'ordre des dates avec ce que la loi cherche dans ses propres mots, l'état du droit en 2026, une section par prestation, puis la longue période ; celui de l'assistance donne l'état du droit en 2026 avant la mise en place. Dans chaque section, l'essentiel est au premier plan ; les longs tableaux de textes, article par article et date par date, sont dans des blocs repliés dont le titre dit le contenu, et que « Tout déplier » ouvre d'un geste. Le nom d'une loi ou sa date est un lien vers la ligne du registre qui porte sa référence complète. Les montants sont en dinars (D) courants, sauf quand ils sont dits « de 2025 » : ils sont alors ramenés aux prix de 2025 par l'indice des prix à la consommation. Les décomptes de l'administration et les estimations des études sont tenus séparés (@sec-nc-administration, @sec-nc-etudes).
+
+## Les organismes {#sec-prest-organismes}
+
+{{< include _encadre_caisses.qmd >}}
+
+La [Caisse nationale d'assurance maladie](#g-cnam) (CNAM) n'a pas seulement reçu l'assurance maladie créée en 2004. La loi lui confie aussi la gestion des régimes de réparation des accidents du travail des secteurs public et privé et le service des indemnités de maladie et de couches des régimes antérieurs [@loi2004-71, art. 8]. Ces prestations ont donc changé de gestionnaire sans changer de contenu : les lois n° 60-30, n° 94-28 et n° 95-56 continuent de fixer les droits (@sec-ar-reforme-2007).
