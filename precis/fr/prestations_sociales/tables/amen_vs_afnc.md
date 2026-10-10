@@ -1,4 +1,4 @@
-| Date de l'état | Base mensuelle du transfert AMEN | Allocation familiale non contributive, par enfant de moins de 6 ans | Allocation familiale, par enfant de 6 à 18 ans | Texte |
+| Date de l'état | Base mensuelle du transfert de l'Amen social | Allocation familiale non contributive, par enfant de moins de 6 ans | Allocation familiale, par enfant de 6 à 18 ans | Texte |
 |---|---:|---:|---:|---|
 | 25 mai 2020 | 180 D | — | — | [@arrete-2020-05-19-transferts, art. 2] |
 | 1^er^ janvier 2022 | 200 D | — | — | [@arrete-2022-04-01-transferts, art. 1] |
