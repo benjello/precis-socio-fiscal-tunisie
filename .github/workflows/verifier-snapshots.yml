@@ -89,6 +89,7 @@ jobs:
           # gardés contre une dérive du modèle. Ils le sont depuis la fusion des dépôts.
           uv run python scripts/generate_retraites_tables.py
           uv run python scripts/generate_marche_travail_tables.py
+          uv run python scripts/generate_finances_locales_tables.py
 
       # POURQUOI UN CONTRÔLE ET NON UN GÉNÉRATEUR ICI. Le relevé de l'impôt sur les
       # sociétés porte des lignes qu'un paramètre ne peut pas porter — la NATURE du
@@ -147,6 +148,8 @@ jobs:
             echo '    uv run python scripts/generate_retraites_tables.py'
             echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
             echo '    uv run python scripts/generate_marche_travail_tables.py'
+            echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
+            echo '    uv run python scripts/generate_finances_locales_tables.py'
             echo '```'
             echo
             echo "puis relire le diff — une valeur qui change est un fait juridique, pas"

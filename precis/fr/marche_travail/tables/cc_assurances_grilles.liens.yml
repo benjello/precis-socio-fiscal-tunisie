@@ -1,3 +1,154 @@
-- libelle: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
-  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base
-  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base/table/
+- libelle: 'Assurances — échelle 1 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_1
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_1/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 1
+- libelle: 'Assurances — échelle 2 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_2
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_2/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 2
+- libelle: 'Assurances — échelle 3 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_3
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_3/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 3
+- libelle: 'Assurances — exceptionnel : salaire de base, cases de la ligne (dinars
+    par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_exceptionnelle
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_exceptionnelle/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Exceptionnel
+- libelle: 'Assurances — échelle 4 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_4
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_4/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 4
+- libelle: 'Assurances — échelle 5 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_5
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_5/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 5
+- libelle: 'Assurances — échelle 6 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_6
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_6/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 6
+- libelle: 'Assurances — échelle 7 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_7
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_7/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 7
+- libelle: 'Assurances — échelle 8 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_8
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_8/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 8
+- libelle: 'Assurances — échelle 9 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_9
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_9/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 9
+- libelle: 'Assurances — échelle 10 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_10
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_10/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 10
+- libelle: 'Assurances — échelle 11 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_11
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_11/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 11
+- libelle: 'Assurances — échelle 12 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_12
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_12/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 12
+- libelle: 'Assurances — échelle 13 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_13
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_13/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 13
+- libelle: 'Assurances — échelle 14 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_14
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_14/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 14
+- libelle: 'Assurances — échelle 15 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_15
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_15/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 15
+- libelle: 'Assurances — échelle 16 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_16
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_16/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 16
+- libelle: 'Assurances — échelle 17 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_17
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_17/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 17
+- libelle: 'Assurances — échelle 18 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_18
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_18/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 18
+- libelle: 'Assurances — échelle 19 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_19
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_19/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 19
+- libelle: 'Assurances — échelle 20 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_20
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_20/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 20
+- libelle: 'Assurances — échelle 21 : salaire de base, cases de la ligne (dinars par
+    mois)'
+  parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base/echelle_21
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.assurances.salaire_base.echelle_21/table/
+  grille: salaire_base
+  libelle_grille: 'Assurances : salaire de base, cases de la grille (dinars par mois)'
+  ligne: Échelle 21

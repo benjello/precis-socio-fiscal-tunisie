@@ -1,64 +1,64 @@
 # Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
-# séries (tunisia_data) : cc-grille-textile, ipc-longue-periode, bct-ipc-base2015
+# séries (tunisia_data) : cc-grille-textile-salaire-base-agents-payes-a-l-heure, ipc-longue-periode, bct-ipc-base2015
 # sources (citation) : @avenant5-textile-1994, @avenant6-textile-1996, @avenant7-textile-1999, @avenant8-textile-2002, @avenant9-textile-2006, @avenant10-textile-2009, @avenant11-textile-2011, @avenant12-textile-2013, @avenants-2014-textile-btp, @avenant14-textile-2016, @avenant15-textile-2017, @avenant16-textile-2019, @avenant17-textile-2022, @avenant18-textile-2024, @bct-ra, @ins-annuaire
 # fiches : sources/bct-archives.md
 # méthode/hypothèses : DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
-# note : Convention collective nationale, puis sectorielle, du textile : salaire de base de deux cases de la grille, en dinars courants par heure à chaque date d'effet (1994-2026) et en dinars de 2025 par heure, en moyenne de l'année (1995-2025)
+# note : Convention collective nationale, puis sectorielle, du textile, agents payés à l'heure : salaire de base du bas et du haut de la grille, en dinars courants par heure à chaque date d'effet (1994-2026) et en dinars de 2025 par heure, en moyenne de l'année (1995-2025)
 Case de la grille,Année,"Salaire de base, moyenne de l'année (dinars courants par heure)",Indice des prix à la consommation (base 100 en 1970),Salaire de base (dinars de 2025 par heure)
-"Agents payés à l'heure, catégorie I, échelon 0",1995,0.774,536.0,3.023
-"Agents payés à l'heure, catégorie I, échelon 0",1996,0.812,555.9,3.058
-"Agents payés à l'heure, catégorie I, échelon 0",1997,0.85,576.5,3.087
-"Agents payés à l'heure, catégorie I, échelon 0",1998,0.888,594.5,3.127
-"Agents payés à l'heure, catégorie I, échelon 0",1999,0.926,610.5,3.175
-"Agents payés à l'heure, catégorie I, échelon 0",2000,0.964,628.3,3.212
-"Agents payés à l'heure, catégorie I, échelon 0",2001,1.002,640.5,3.275
-"Agents payés à l'heure, catégorie I, échelon 0",2002,1.04,658.6,3.306
-"Agents payés à l'heure, catégorie I, échelon 0",2003,1.08,676.5,3.342
-"Agents payés à l'heure, catégorie I, échelon 0",2004,1.125,701.0,3.358
-"Agents payés à l'heure, catégorie I, échelon 0",2005,1.159,715.3,3.391
-"Agents payés à l'heure, catégorie I, échelon 0",2006,1.207,745.0,3.39
-"Agents payés à l'heure, catégorie I, échelon 0",2007,1.25,770.6,3.394
-"Agents payés à l'heure, catégorie I, échelon 0",2008,1.306,808.4,3.381
-"Agents payés à l'heure, catégorie I, échelon 0",2009,1.369,837.0,3.423
-"Agents payés à l'heure, catégorie I, échelon 0",2010,1.437,873.9,3.44
-"Agents payés à l'heure, catégorie I, échelon 0",2011,1.509,904.8,3.489
-"Agents payés à l'heure, catégorie I, échelon 0",2012,1.594,955.1,3.493
-"Agents payés à l'heure, catégorie I, échelon 0",2013,1.625,1013.5,3.355
-"Agents payés à l'heure, catégorie I, échelon 0",2014,1.69,1069.0,3.308
-"Agents payés à l'heure, catégorie I, échelon 0",2015,1.757,1119.5,3.284
-"Agents payés à l'heure, catégorie I, échelon 0",2016,1.871,1161.2,3.373
-"Agents payés à l'heure, catégorie I, échelon 0",2017,1.935,1223.0,3.311
-"Agents payés à l'heure, catégorie I, échelon 0",2018,2.051,1314.2,3.266
-"Agents payés à l'heure, catégorie I, échelon 0",2019,2.195,1403.5,3.273
-"Agents payés à l'heure, catégorie I, échelon 0",2020,2.348,1482.6,3.314
-"Agents payés à l'heure, catégorie I, échelon 0",2021,2.399,1567.2,3.203
-"Agents payés à l'heure, catégorie I, échelon 0",2022,2.618,1697.4,3.227
-"Agents payés à l'heure, catégorie I, échelon 0",2023,2.676,1855.7,3.018
-"Agents payés à l'heure, catégorie I, échelon 0",2024,2.85,1986.0,3.003
-"Agents payés à l'heure, catégorie I, échelon 0",2025,3.035,2092.7,3.035
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2000,1.563,628.3,5.206
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2001,1.626,640.5,5.313
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2002,1.689,658.6,5.367
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2003,1.753,676.5,5.424
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2004,1.822,701.0,5.438
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2005,1.877,715.3,5.49
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2006,1.953,745.0,5.485
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2007,2.02,770.6,5.485
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2008,2.103,808.4,5.445
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2009,2.191,837.0,5.479
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2010,2.287,873.9,5.476
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2011,2.386,904.8,5.519
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2012,2.506,955.1,5.492
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2013,2.55,1013.5,5.265
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2014,2.643,1069.0,5.173
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2015,2.738,1119.5,5.119
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2016,2.902,1161.2,5.231
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2017,2.994,1223.0,5.123
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2018,3.16,1314.2,5.032
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2019,3.365,1403.5,5.017
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2020,3.585,1482.6,5.06
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2021,3.663,1567.2,4.891
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2022,3.996,1697.4,4.927
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2023,4.085,1855.7,4.607
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2024,4.351,1986.0,4.585
-"Agents payés à l'heure, catégorie IV-2, échelon 20",2025,4.633,2092.7,4.633
+"Catégorie I, échelon 0",1995,0.774,536.0,3.023
+"Catégorie I, échelon 0",1996,0.812,555.9,3.058
+"Catégorie I, échelon 0",1997,0.85,576.5,3.087
+"Catégorie I, échelon 0",1998,0.888,594.5,3.127
+"Catégorie I, échelon 0",1999,0.926,610.5,3.175
+"Catégorie I, échelon 0",2000,0.964,628.3,3.212
+"Catégorie I, échelon 0",2001,1.002,640.5,3.275
+"Catégorie I, échelon 0",2002,1.04,658.6,3.306
+"Catégorie I, échelon 0",2003,1.08,676.5,3.342
+"Catégorie I, échelon 0",2004,1.125,701.0,3.358
+"Catégorie I, échelon 0",2005,1.159,715.3,3.391
+"Catégorie I, échelon 0",2006,1.207,745.0,3.39
+"Catégorie I, échelon 0",2007,1.25,770.6,3.394
+"Catégorie I, échelon 0",2008,1.306,808.4,3.381
+"Catégorie I, échelon 0",2009,1.369,837.0,3.423
+"Catégorie I, échelon 0",2010,1.437,873.9,3.44
+"Catégorie I, échelon 0",2011,1.509,904.8,3.489
+"Catégorie I, échelon 0",2012,1.594,955.1,3.493
+"Catégorie I, échelon 0",2013,1.625,1013.5,3.355
+"Catégorie I, échelon 0",2014,1.69,1069.0,3.308
+"Catégorie I, échelon 0",2015,1.757,1119.5,3.284
+"Catégorie I, échelon 0",2016,1.871,1161.2,3.373
+"Catégorie I, échelon 0",2017,1.935,1223.0,3.311
+"Catégorie I, échelon 0",2018,2.051,1314.2,3.266
+"Catégorie I, échelon 0",2019,2.195,1403.5,3.273
+"Catégorie I, échelon 0",2020,2.348,1482.6,3.314
+"Catégorie I, échelon 0",2021,2.399,1567.2,3.203
+"Catégorie I, échelon 0",2022,2.618,1697.4,3.227
+"Catégorie I, échelon 0",2023,2.676,1855.7,3.018
+"Catégorie I, échelon 0",2024,2.85,1986.0,3.003
+"Catégorie I, échelon 0",2025,3.035,2092.7,3.035
+"Catégorie IV-2, échelon 20",2000,1.563,628.3,5.206
+"Catégorie IV-2, échelon 20",2001,1.626,640.5,5.313
+"Catégorie IV-2, échelon 20",2002,1.689,658.6,5.367
+"Catégorie IV-2, échelon 20",2003,1.753,676.5,5.424
+"Catégorie IV-2, échelon 20",2004,1.822,701.0,5.438
+"Catégorie IV-2, échelon 20",2005,1.877,715.3,5.49
+"Catégorie IV-2, échelon 20",2006,1.953,745.0,5.485
+"Catégorie IV-2, échelon 20",2007,2.02,770.6,5.485
+"Catégorie IV-2, échelon 20",2008,2.103,808.4,5.445
+"Catégorie IV-2, échelon 20",2009,2.191,837.0,5.479
+"Catégorie IV-2, échelon 20",2010,2.287,873.9,5.476
+"Catégorie IV-2, échelon 20",2011,2.386,904.8,5.519
+"Catégorie IV-2, échelon 20",2012,2.506,955.1,5.492
+"Catégorie IV-2, échelon 20",2013,2.55,1013.5,5.265
+"Catégorie IV-2, échelon 20",2014,2.643,1069.0,5.173
+"Catégorie IV-2, échelon 20",2015,2.738,1119.5,5.119
+"Catégorie IV-2, échelon 20",2016,2.902,1161.2,5.231
+"Catégorie IV-2, échelon 20",2017,2.994,1223.0,5.123
+"Catégorie IV-2, échelon 20",2018,3.16,1314.2,5.032
+"Catégorie IV-2, échelon 20",2019,3.365,1403.5,5.017
+"Catégorie IV-2, échelon 20",2020,3.585,1482.6,5.06
+"Catégorie IV-2, échelon 20",2021,3.663,1567.2,4.891
+"Catégorie IV-2, échelon 20",2022,3.996,1697.4,4.927
+"Catégorie IV-2, échelon 20",2023,4.085,1855.7,4.607
+"Catégorie IV-2, échelon 20",2024,4.351,1986.0,4.585
+"Catégorie IV-2, échelon 20",2025,4.633,2092.7,4.633

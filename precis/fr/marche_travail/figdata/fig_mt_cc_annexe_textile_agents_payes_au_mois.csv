@@ -1,0 +1,64 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-09
+# séries (tunisia_data) : cc-grille-textile-salaire-base-agents-payes-au-mois, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @avenant5-textile-1994, @avenant6-textile-1996, @avenant7-textile-1999, @avenant8-textile-2002, @avenant9-textile-2006, @avenant10-textile-2009, @avenant11-textile-2011, @avenant12-textile-2013, @avenants-2014-textile-btp, @avenant14-textile-2016, @avenant15-textile-2017, @avenant16-textile-2019, @avenant17-textile-2022, @avenant18-textile-2024, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Convention collective nationale, puis sectorielle, du textile, agents payés au mois : salaire de base du bas et du haut de la grille, en dinars courants par mois à chaque date d'effet (1994-2026) et en dinars de 2025 par mois, en moyenne de l'année (1995-2025)
+Case de la grille,Année,"Salaire de base, moyenne de l'année (dinars courants par mois)",Indice des prix à la consommation (base 100 en 1970),Salaire de base (dinars de 2025 par mois)
+"Catégorie 1A, échelon 1",1995,161.365,536.0,630.0
+"Catégorie 1A, échelon 1",1996,169.365,555.9,637.6
+"Catégorie 1A, échelon 1",1997,177.365,576.5,643.8
+"Catégorie 1A, échelon 1",1998,185.365,594.5,652.5
+"Catégorie 1A, échelon 1",1999,193.365,610.5,662.8
+"Catégorie 1A, échelon 1",2000,201.365,628.3,670.7
+"Catégorie 1A, échelon 1",2001,209.365,640.5,684.1
+"Catégorie 1A, échelon 1",2002,217.365,658.6,690.7
+"Catégorie 1A, échelon 1",2003,225.699,676.5,698.2
+"Catégorie 1A, échelon 1",2004,234.865,701.0,701.2
+"Catégorie 1A, échelon 1",2005,242.032,715.3,708.1
+"Catégorie 1A, échelon 1",2006,252.032,745.0,708.0
+"Catégorie 1A, échelon 1",2007,261.032,770.6,708.9
+"Catégorie 1A, échelon 1",2008,275.296,808.4,712.7
+"Catégorie 1A, échelon 1",2009,289.729,837.0,724.4
+"Catégorie 1A, échelon 1",2010,306.273,873.9,733.4
+"Catégorie 1A, échelon 1",2011,322.51,904.8,745.9
+"Catégorie 1A, échelon 1",2012,340.402,955.1,745.9
+"Catégorie 1A, échelon 1",2013,346.806,1013.5,716.1
+"Catégorie 1A, échelon 1",2014,360.383,1069.0,705.5
+"Catégorie 1A, échelon 1",2015,374.367,1119.5,699.8
+"Catégorie 1A, échelon 1",2016,398.292,1161.2,717.8
+"Catégorie 1A, échelon 1",2017,411.64,1223.0,704.4
+"Catégorie 1A, échelon 1",2018,435.895,1314.2,694.1
+"Catégorie 1A, échelon 1",2019,465.891,1403.5,694.7
+"Catégorie 1A, échelon 1",2020,497.986,1482.6,702.9
+"Catégorie 1A, échelon 1",2021,508.776,1567.2,679.4
+"Catégorie 1A, échelon 1",2022,555.105,1697.4,684.4
+"Catégorie 1A, échelon 1",2023,567.48,1855.7,640.0
+"Catégorie 1A, échelon 1",2024,604.366,1986.0,636.8
+"Catégorie 1A, échelon 1",2025,643.65,2092.7,643.6
+"Catégorie 17, échelon 20",2000,559.892,628.3,1864.9
+"Catégorie 17, échelon 20",2001,572.892,640.5,1871.8
+"Catégorie 17, échelon 20",2002,585.892,658.6,1861.7
+"Catégorie 17, échelon 20",2003,599.225,676.5,1853.7
+"Catégorie 17, échelon 20",2004,613.392,701.0,1831.2
+"Catégorie 17, échelon 20",2005,624.725,715.3,1827.7
+"Catégorie 17, échelon 20",2006,640.558,745.0,1799.3
+"Catégorie 17, échelon 20",2007,654.558,770.6,1777.6
+"Catégorie 17, échelon 20",2008,679.226,808.4,1758.3
+"Catégorie 17, échelon 20",2009,707.036,837.0,1767.8
+"Catégorie 17, échelon 20",2010,737.723,873.9,1766.6
+"Catégorie 17, échelon 20",2011,769.184,904.8,1779.1
+"Catégorie 17, échelon 20",2012,805.387,955.1,1764.7
+"Catégorie 17, échelon 20",2013,818.346,1013.5,1689.8
+"Catégorie 17, échelon 20",2014,845.819,1069.0,1655.8
+"Catégorie 17, échelon 20",2015,874.116,1119.5,1634.0
+"Catégorie 17, échelon 20",2016,922.53,1161.2,1662.6
+"Catégorie 17, échelon 20",2017,949.54,1223.0,1624.8
+"Catégorie 17, échelon 20",2018,998.621,1314.2,1590.2
+"Catégorie 17, échelon 20",2019,1059.319,1403.5,1579.5
+"Catégorie 17, échelon 20",2020,1124.264,1482.6,1586.9
+"Catégorie 17, échelon 20",2021,1148.623,1567.2,1533.8
+"Catégorie 17, échelon 20",2022,1253.218,1697.4,1545.1
+"Catégorie 17, échelon 20",2023,1281.156,1855.7,1444.8
+"Catégorie 17, échelon 20",2024,1364.431,1986.0,1437.7
+"Catégorie 17, échelon 20",2025,1453.119,2092.7,1453.1

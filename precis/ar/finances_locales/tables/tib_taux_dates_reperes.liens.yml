@@ -1,0 +1,12 @@
+- libelle: نسبة المعلوم على العقارات المبنية — خدمة أو خدمتان
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/taux/un_ou_deux_services.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_immeubles_batis.taux.un_ou_deux_services/table/
+- libelle: نسبة المعلوم على العقارات المبنية — ثلاث أو أربع خدمات
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/taux/trois_ou_quatre_services.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_immeubles_batis.taux.trois_ou_quatre_services/table/
+- libelle: نسبة المعلوم على العقارات المبنية — أكثر من أربع خدمات
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/taux/plus_de_quatre_services.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_immeubles_batis.taux.plus_de_quatre_services/table/
+- libelle: نسبة المعلوم على العقارات المبنية — أكثر من أربع خدمات وخدمات أخرى
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/taux/plus_de_quatre_services_et_autres_services.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_immeubles_batis.taux.plus_de_quatre_services_et_autres_services/table/

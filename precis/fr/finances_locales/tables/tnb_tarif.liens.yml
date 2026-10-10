@@ -1,0 +1,12 @@
+- libelle: Tarif au mètre carré de la taxe sur les terrains non bâtis — zone à haute
+    densité
+  parametre: parameters/fiscalite_locale/taxe_terrains_non_batis/tarif_m2/haute_densite.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_terrains_non_batis.tarif_m2.haute_densite/table/
+- libelle: Tarif au mètre carré de la taxe sur les terrains non bâtis — zone à moyenne
+    densité
+  parametre: parameters/fiscalite_locale/taxe_terrains_non_batis/tarif_m2/moyenne_densite.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_terrains_non_batis.tarif_m2.moyenne_densite/table/
+- libelle: Tarif au mètre carré de la taxe sur les terrains non bâtis — zone à basse
+    densité
+  parametre: parameters/fiscalite_locale/taxe_terrains_non_batis/tarif_m2/basse_densite.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_terrains_non_batis.tarif_m2.basse_densite/table/
