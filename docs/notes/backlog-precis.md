@@ -107,7 +107,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; plan de conversion du volume dans `docs/notes/prestations-sociales-plan-architecte.md` | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
-| Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire convertie le 10 octobre 2026 ; compétences à convertir | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
+| Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -2120,15 +2120,43 @@ Volume créé le 4 octobre 2026 (`precis/fr/finances_locales/`), d'après le pla
 chapitre « La longue période » est dissous, chaque chapitre porte ses séries. Une entrée par
 chapitre ci-dessous, dans l'ordre du volume ; les `TODO` des `.qmd` détaillent chaque lacune.
 
-**État d'ensemble (9 octobre 2026).** Convertis au format « ruptures au premier plan, détail
-replié », avec domicile unique des références : budgets (ch. 5), impôts sur les immeubles
-(ch. 6), impôts sur l'activité (ch. 7), taxes et redevances (ch. 8), transferts (ch. 9).
-Resserré le même jour, sans registre (il ne cite aucune loi) : notions (ch. 2).
-Converti le 10 octobre 2026 (troisième vague) : histoire (ch. 3). **Non converti** : compétences (ch. 4).
+**État d'ensemble (10 octobre 2026).** Les neuf chapitres sont au format « ruptures au premier
+plan, détail replié ». Huit portent le domicile unique des références : histoire (ch. 3) et
+compétences (ch. 4), convertis le 10 octobre 2026 ; budgets (ch. 5), impôts sur les immeubles
+(ch. 6), impôts sur l'activité (ch. 7), taxes et redevances (ch. 8), transferts (ch. 9),
+convertis le 9 octobre 2026. Les notions (ch. 2), resserrées le 9 octobre, n'ont pas de registre
+(elles ne citent aucune loi). La présentation (ch. 1) annonce les neuf chapitres sous leurs
+titres. Le partage entre les deux chapitres d'institutions : les réformes à l'histoire, l'état
+du droit aux compétences ; raccords de fin de chantier faits le 10 octobre 2026 (voir les
+entrées des chapitres 3 et 4).
 Plans : `finances-locales-impots-plan-architecte.md`,
-`finances-locales-transferts-budgets-plan-architecte.md` ; lectures du 9 octobre 2026 :
+`finances-locales-transferts-budgets-plan-architecte.md`,
+`finances-locales-histoire-competences-notions-plan-architecte.md` ; lectures :
 `finances-locales-impots-lectures-2026-10-09.md`,
-`finances-locales-transferts-budgets-lectures-2026-10-09.md`.
+`finances-locales-transferts-budgets-lectures-2026-10-09.md`,
+`finances-locales-institutions-lectures-2026-10-10.md`.
+
+**Ce qui reste pour le volume (10 octobre 2026)** — le détail est dans les entrées ci-dessous :
+
+- **Frises de tête** : faites dans aucun chapitre ; un `TODO (rédacteur)` les attend aux
+  chapitres 3, 6, 7 et 8, le tableau des réformes en tient lieu.
+- **Tableaux encore faits main**, faute de paramètres datés et sourcés en amont : taxe sur les
+  établissements (maximum, taux, montants) et taxe hôtelière au chapitre 7 ; pénalité de retard
+  et contribution au fonds de l'habitat au chapitre 6 ; tarifs des taxes et redevances au
+  chapitre 8 ; seuils de l'approbation au chapitre 5 ; parts et critères du fonds et des
+  subventions au chapitre 9. Seuls les trois barèmes des taxes sur les immeubles sont engendrés.
+- **Figure des barèmes des taxes sur les immeubles**, en dinars courants et en dinars de 2025 :
+  devenue faisable (séries complètes de 1997 à 2017), non faite.
+- **Lectures en attente** : loi organique n° 91-24 ; loi organique n° 85-43, p. 643-644, et
+  sens de « paragraphes 2 - 10 et 12 » ; décret-loi n° 2026-4, art. 14 à 27, 35 à 48 et 100 à
+  131, et art. 57 à 99 à relever pour les budgets ; édition française du code de 2018 et du
+  décret-loi de 2026, **à obtenir**.
+- **2012** : décrets de dissolution, de nomination et de prorogation à lire ; aucun total pour
+  l'année ; rien n'est établi sur ce qui relie les prorogations aux élections de 2018.
+- **Constitution de 2014** : numéro spécial du JORT du 10 février 2014 **à obtenir** ; le
+  chapitre VII est cité d'après la traduction reproduite par Dafflon et Gilbert.
+- **Libellés arabes** : attributs `titre` des blocs repliés des chapitres 2 à 9 à traduire,
+  avec les chapitres eux-mêmes ; libellés des figures du 9 octobre non relus.
 
 **Livre arabe.** `precis/ar/finances_locales/` a son `_quarto.yml` et ses références ; il est
 sauté au rendu tant que la traduction n'a pas livré `index.qmd`. Les chapitres 3 à 9 y sont
@@ -2152,7 +2180,9 @@ figures nouvelles restent à traduire.
   le porte depuis le 10 octobre 2026 comme réforme publiée, non entrée en vigueur
   (`#sec-fl-hist-2026` : art. 1, 2, 12, 29, 30, 51, 52, 55, 56, 136, 137 et 139 ; p. 2058 et
   2065 lues à l'image le 10 octobre, art. 14 à 27, 35 à 48 et 100 à 131 à lire) ; celui des
-  compétences ne le mentionne pas ; sort du code de la fiscalité
+  compétences le donne à l'état du droit comme texte publié non entré en vigueur
+  (`#sec-fl-comp-dissolution-2023`, ligne `r-fl-comp-2026` : art. 12, 29, 30, 56, 136 et 139) et
+  renvoie à `@sec-fl-hist-2026` pour l'objet du texte et la dissolution ; sort du code de la fiscalité
   locale et du décret de tarifs n° 2016-805 à son entrée en vigueur, que le texte ne règle
   pas. **Corpus** : fascicule arabe lisible (`PDFs/JORT/2026/ar/Ja0962026.pdf`) ; édition
   française **à obtenir** (le fichier « fr » est l'arabe) ; absent de `jort_cache.db`. À
@@ -2166,8 +2196,9 @@ figures nouvelles restent à traduire.
   conseils élus de toute collectivité le pouvoir d'arrêter le montant ou le tarif des droits ;
   l'art. 237 en fait une matière du conseil municipal. Les deux références sont justes
   (`finances-locales-institutions-lectures-2026-10-10.md`, § 4) ; `TODO` retirés.
-- **Tableaux de paramètres** : tous faits main, avec leur `TODO (rédacteur)` ; aucun paramètre
-  des finances locales dans la base. Constats versés à `docs/notes/backlog-modele.md`.
+- **Tableaux de paramètres** : trois engendrés au chapitre des impôts sur les immeubles
+  (`tbl-fl-tib-taux`, `tbl-fl-tib-prix-reference`, `tbl-fl-tnb-tarif`) ; les autres faits main,
+  avec leur `TODO (rédacteur)`. Constats versés à `docs/notes/backlog-modele.md`.
 - **Sources des séries** : présentées une fois, `#sec-fl-lp-sources` (ch. 5). Six séries de
   `tunisia-data`, lues par `figtools.series()` dans `precis/_seriescache/`. Les fichiers Banque
   mondiale de 1992 et 1997 sont snapshotés par `scripts/snapshot_finances_locales_bm.py` et
@@ -2190,6 +2221,10 @@ figures nouvelles restent à traduire.
   (`precis/legendes.scss`) ; une date ou un nombre à espace (« 1 169 MD ») peut encore se
   couper en fin de ligne dans le texte courant — à trancher pour tout le volume.
 - **Frise de tête** : faite dans aucun chapitre ; le tableau des réformes en tient lieu.
+- **Renvois entre chapitres** : contrôlés le 10 octobre 2026 — tout `@sec-fl-…` vise un titre,
+  tout `@tbl-fl-…` ou `@fig-fl-…` une légende, tout lien `(#…)` un identifiant du même fichier ;
+  aucun renvoi ne vise l'un des identifiants devenus simples ancres ; seul lien entrant depuis
+  un autre volume : la page d'accueil (`precis/fr/index.qmd`).
 - **Glossaire** : 40 notions du chapitre des notions, toutes `provisoire` (termes arabes sans
   texte bilingue ; à trancher par un arabophone : « التعديل » pour péréquation, « الرسم » pour
   la taxe, « معلوم الاستعمال » pour la redevance d'utilisation) ; quinze notions d'institutions
@@ -2207,13 +2242,14 @@ figures nouvelles restent à traduire.
 
 ### Chapitre 1 — Présentation (`index.qmd`)
 
-Rédigée le 4 octobre 2026, **mise à jour le 9 octobre 2026** : trois mouvements (notions,
-institutions, ressources) au lieu de quatre ; le mouvement « Les chiffres » et le renvoi au
-chapitre de la longue période sont retirés ; le fonds commun est suivi des « subventions
-annuelles » ; la phrase qui disait les chapitres d'institutions « à écrire » est remplacée par
-le plan commun des cinq chapitres convertis et un renvoi aux sources (`@sec-fl-lp-sources`).
-**Reste** : la phrase sur le plan commun ne vaut pas pour les chapitres 2 à 4 tant qu'ils ne
-sont pas convertis.
+Rédigée le 4 octobre 2026, mise à jour le 9 octobre, **mise en accord avec les neuf chapitres
+le 10 octobre 2026** : sous les trois mouvements (notions, institutions, ressources), une ligne
+par chapitre, avec son titre actuel et ce qu'il donne ; un guide de lecture
+(`#sec-fl-guide-lecture`, identifiant nouveau) dit où se lisent les réformes, l'état du droit des
+institutions, puis les budgets, impôts, taxes et transferts, et que les longs tableaux de textes
+sont dans des blocs repliés ; la section du périmètre, titrée « Le champ du volume »
+(`#sec-fl-perimetre` gardé), ne dit plus ce que le volume ne traite pas. La phrase qui prêtait le
+même plan à tous les chapitres est retirée : le plan commun n'est dit que des chapitres 5 à 9.
 
 ### Chapitre 2 — Les notions (`_notions.qmd`) — resserré le 9 octobre 2026
 
@@ -2269,12 +2305,21 @@ sont plus des titres mais des ancres (`sec-fl-hist-1959`, `-1975`, `-1989`, `-20
 **Fiches RECHERCHE ancrées au chapitre** : `r-fl-dissolutions-2011` (2011 établi : dix-huit
 décrets, 212 conseils en somme de tableaux ; 2012 ouvert), `r-fl-duree-delegation-speciale`
 (nouvelle), `r-fl-constitution-2014-numero-special`, `r-fl-conseil-superieur-collectivites`
-(nouvelle, ancrée ici à `#sec-fl-hist-carte` ; le chapitre des compétences peut y ajouter la
-sienne), `r-fl-nombre-communes` (déplacée à `#sec-fl-hist-longue-periode`).
+(nouvelle ; depuis le 10 octobre le constat est dit en entier à `#sec-fl-comp-instances`, où
+la fiche a sa seconde ancre, et `#sec-fl-hist-carte` le dit en une proposition avec renvoi), `r-fl-nombre-communes` (déplacée à `#sec-fl-hist-longue-periode`).
 `r-fl-elections-municipales-apres-2023` n'est plus ancrée qu'au chapitre des compétences.
 
 **Lacunes**, lisibles dans le corpus sauf mention :
 
+- **raccords du 10 octobre 2026 avec le chapitre des compétences** : la Haute instance des
+  finances locales est dite en entier à `#sec-fl-comp-instances` ; ici, une proposition au premier
+  plan et deux lignes de registre réduites à la date, au texte et à un renvoi
+  (`r-fl-hist-2019-instance`, `-2020-instance`, gardées parce que le premier plan les lie) ; le
+  registre de 1985-2008 ne dit plus « non établi » pour l'autorité d'approbation d'avant 1985 ni
+  pour l'article 42 de 1975, lus à l'image le 5 octobre (p. 1058) et portés au registre
+  `tbl-fl-comp-1975` : il y renvoie. **À trancher** : l'article 43 de 1975 réserve aux ministres
+  les § 2, 9, 10 et 12 de l'article 42 (note du 5 octobre), celui de 1985 les « paragraphes 2 -
+  10 et 12 » ; l'article 42 entre 1975 et 1995 (loi n° 91-24) n'est pas établi ;
 - 2012 : décrets n° 2012-910, 2012-1122, 2012-2007, 2012-2536 à 2012-2538, 2012-2771, 2012-2885,
   2012-2895 et 2012-2943 à lire ; aucun total pour l'année ; décrets de 2012 à 2017 à lire avant
   de dire ce qui relie les prorogations aux élections de 2018 (le chapitre n'en dit rien) ;
@@ -2286,7 +2331,7 @@ sienne), `r-fl-nombre-communes` (déplacée à `#sec-fl-hist-longue-periode`).
   de 2009), fascicule sans couche texte utile, **OCR ou lecture à l'image** ;
 - loi organique n° 91-24 (JORT n° 30 de 1991, fascicule scanné, **OCR**, page à vérifier) ; loi
   organique n° 85-43, p. 643-644, et sens de « paragraphes 2 - 10 et 12 » (édition arabe) ;
-  art. 42, 43, 45, 46 et 48 de la loi organique des communes dans leur rédaction de 1975 ;
+  art. 48 de la loi organique des communes dans sa rédaction de 1975 ;
   clauses d'effet des lois organiques de 1985 à 2008 ; loi n° 75-38 (intitulé seul, sans clé) ;
 - loi municipale de 1957 : clause finale (fascicule du 15 mars 1957 absent du corpus, sur
   pist.tn) ; décrets d'avant 1956, **à obtenir** ;
@@ -2316,8 +2361,10 @@ publié et non entré en vigueur (art. 1, 12, 29, 30, 55, 56, 136 et 139). Fiche
 
 - **Renvois au chapitre d'histoire** : par ses identifiants d'avant conversion
   (`sec-fl-hist-lois-1975`, `-modifications`, `-code-2018`, `-2023-2025`, tous gardés comme titres par
-  le plan) ; à porter sur
-  `sec-fl-hist-2026` pour le décret-loi de 2026 quand ce chapitre sera converti.
+  le plan) ; depuis le 10 octobre 2026, `@sec-fl-hist-2026` pour le décret-loi de 2026, dont la
+  ligne de registre ne garde que les art. 12, 29, 30, 56, 136 et 139 (art. 1, 51, 52 et 55 :
+  `tbl-fl-hist-2026`) ; l'art. 56 y est traduit comme au chapitre d'histoire (« entrave
+  manifeste au fonctionnement des services »).
 - **Redite retirée, qui vit à `_histoire.qmd`** : place de la loi de 1975 dans les six lois et
   délégation spéciale au premier plan (`#sec-fl-hist-lois-1975`) ; statut du gouvernorat et
   composition du conseil régional (`#sec-fl-hist-1989`, que le plan fond dans
@@ -2330,19 +2377,22 @@ publié et non entré en vigueur (art. 1, 12, 29, 30, 55, 56, 136 et 139). Fiche
   `_taxes_redevances.qmd`. **Reste** : `_budgets.qmd` ne cite pas l'art. 9 (obligation
   permanente sur les ressources ordinaires réalisées, programme de maîtrise), que seul le
   registre des organes de ce chapitre porte ; décret d'application de l'art. 9 non cherché.
-- **Matières soumises à approbation, 1995 et 2006** : la note du 10 octobre (§ 6) donne neuf
-  matières en 1995 et onze en 2006, et la renumérotation de l'art. 42 en art. 25 ; non portées
-  au registre faute des clés `loi-org85-43`, `loi-org95-68` et `loi-org2006-48` (**bibliographe**), un
-  `TODO (rédacteur)` les attend sous `tbl-fl-comp-1975`. L'avant → après de 1995 n'est pas
-  établi.
+- **Approbation des délibérations, 1985, 1995 et 2006** : portées le 10 octobre 2026 au registre
+  du contrôle des actes (`tbl-fl-comp-controle-articles`, lignes `r-fl-comp-controle-1985`,
+  `-1995`, `-2006`), une ligne par loi, avec renvoi au registre du chapitre d'histoire
+  (`tbl-fl-hist-modifs-communes`) qui en porte le texte. **États de lecture** : n° 85-43, p. 642
+  lue à l'image, p. 643-644 non lues, « paragraphes 2 - 10 et 12 » cité tel qu'imprimé ;
+  n° 95-68 et n° 2006-48, couche texte — repris sans guillemets ici, alors que le registre du
+  chapitre d'histoire en cite des passages entre guillemets : **à relire à l'image, ou
+  guillemets à retirer** ; n° 91-24 non lue (fascicule scanné, **OCR**).
 - **Dates d'effet** : loi n° 75-33, exécutoire le 22 mai 1975 (aucune clause ; rectificatif du
-  1er août 1975 à lire) ; loi organique n° 89-11 (p. 220-221), non établie, le registre des
+  1er août 1975 lu à l'image, sans date d'effet, numéros d'articles à relire) ; loi organique n° 89-11 (p. 220-221), non établie, le registre des
   dates donne sa publication. **Lisible dans le corpus, à l'image.**
 - **Instances nationales** : désignation des membres de la Haute instance (décret gouvernemental
   n° 2019-351) et indemnités (n° 2020-31) portées au registre, clés versées dans les deux
-  `references.json` ; mise en place du Conseil supérieur non identifiée : la phrase et l'ancre
-  `r-fl-conseil-superieur-collectivites` attendent la fiche, créée avec la conversion de
-  `_histoire.qmd` (`TODO (rédacteur)` sous `#sec-fl-comp-instances`) ; activité de la Haute
+  `references.json` ; mise en place du Conseil supérieur non identifiée : constat et ancre
+  `r-fl-conseil-superieur-collectivites` posés le 10 octobre 2026 sous `#sec-fl-comp-instances`
+  (champ `ou` de la fiche : les deux chapitres) ; activité de la Haute
   instance : rien d'établi.
 - **Lacunes** : modificatifs et édition arabe de la loi n° 75-33, et son sort après 2018 ;
   textes de création des agences citées par Dafflon et Gilbert et décret n° 2004-1182 (couche

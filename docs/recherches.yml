@@ -1371,7 +1371,9 @@
 
 - id: r-fl-conseil-superieur-collectivites
   objet: texte de mise en place du Conseil supérieur des collectivités locales (code de 2018, art. 47 à 60) — composition, élection ou nomination de ses membres
-  ou: [precis/fr/finances_locales/_histoire.qmd#sec-fl-hist-carte]
+  ou:
+  - precis/fr/finances_locales/_competences.qmd#sec-fl-comp-instances
+  - precis/fr/finances_locales/_histoire.qmd#sec-fl-hist-carte
   requetes:
     titres_like: ['%conseil superieur des collectivites%', '%المجلس الأعلى للجماعات المحلية%']
     iort_ar: [المجلس الأعلى للجماعات المحلية]
