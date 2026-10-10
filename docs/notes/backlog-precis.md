@@ -2339,6 +2339,25 @@ la fiche a sa seconde ancre, et `#sec-fl-hist-carte` le dit en une proposition a
   Constitution de 2014 ;
 - nombre de communes de 1957 à 2014 ; texte de mise en place du Conseil supérieur des
   collectivités locales ; activité de la Haute instance des finances locales ;
+- **population communale et non communale** (`#sec-fl-hist-longue-periode`,
+  `fig-fl-hist-population`, 10 octobre 2026 ; module `figures/population.py`, série
+  `population-milieu-communal-recensements` versée au cache, six clés `ins-rgph-*` versées en
+  français et en arabe). Éditions retenues : tableau 3 du volume 1 du recensement de 2004 pour
+  1966-2004, volume 1 du recensement de 2014 pour 2014 (part de 2014 calculée sur ses effectifs,
+  égale aux 67,7 % qu'imprime le volume 3) ; 2024 (urbain / rural) tracé à part. Le nombre de
+  communes de la figure est la table `COMMUNES` du module, reprise à la main de
+  `tbl-fl-hist-communes` : à tenir en accord avec le tableau. Restent :
+  - ventilation du recensement de 1956 par milieu : aucune des publications lues ne la
+    donne, **à obtenir** ;
+  - publications d'origine des recensements de 1966, 1975, 1984 et 1994 (valeurs et définition
+    du milieu communal à chaque date) : absentes du portail de l'Institut, **à obtenir** ;
+  - nombre de communes aux dates intermédiaires : annexe « Division administrative du pays »
+    des annuaires statistiques (nombre de communes par gouvernorat, à des dates de situation),
+    fichiers présents dans le dépôt des données, **à lire à l'image** ; complète la fiche
+    `r-fl-nombre-communes` ;
+  - aucune série à périmètre constant n'est publiée : la part de la hausse due aux créations et
+    extensions de communes reste non mesurée ; ventilation communal / non communal de 2024 non
+    publiée ;
 - décret-loi n° 2026-4 : art. 14 à 27, 35 à 48 et 100 à 131, intitulés des titres III et
   suivants, mode de nomination de la commission provisoire de gestion ;
 - frise des réformes en tête du chapitre (`TODO (rédacteur)`) ; onze attributs `titre` à

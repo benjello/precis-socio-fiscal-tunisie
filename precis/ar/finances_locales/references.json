@@ -2283,6 +2283,120 @@
       "publisher-place": "تونس",
       "URL": "https://www.ins.tn/publication/annuaire-statistique-de-la-tunisie-2019-2023",
       "note": "citation-key: ins-annuaire\nمجموعة من طبعات نشرية سنوية للمعهد الوطني للإحصاء. الطبعات المستخدمة لمؤشر أسعار الاستهلاك: 1995-2001 و1998-2002 و1999-2003 و2019-2023."
+    },
+    {
+      "id": "ins-rgph-2004-vol1",
+      "type": "report",
+      "title": "التعداد العام للسكان والسكنى لسنة 2004: النتائج الأولى، المجلد 1",
+      "title-short": "المعهد الوطني للإحصاء، تعداد 2004، المجلد 1",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/rgph2004_vol1.pdf",
+      "note": "citation-key: ins-rgph-2004-vol1\nPublication en arabe. Tableau 1 (p. 1) : population totale aux recensements de 1956 à 2004 ; tableau 3 (p. 2) : population du milieu communal et du milieu non communal de 1966 à 2004, en milliers, avec les parts. Date de publication non relevée. Consulté le 10 octobre 2026."
+    },
+    {
+      "id": "ins-rgph-2014-chiffres",
+      "type": "report",
+      "title": "التعداد العام للسكان والسكنى 2014: «التعداد بالأرقام»",
+      "title-short": "المعهد الوطني للإحصاء، تعداد 2014 بالأرقام",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/sites/default/files/publication/pdf/RGPH%202014-V0.pdf",
+      "note": "citation-key: ins-rgph-2014-chiffres\nP. 8 : population par gouvernorat, sexe et milieu en 2014. Date de publication non relevée. Consulté le 10 octobre 2026."
+    },
+    {
+      "id": "ins-rgph-2014-vol1",
+      "type": "report",
+      "title": "التعداد العام للسكان والسكنى 2014: المجلد 1",
+      "title-short": "المعهد الوطني للإحصاء، تعداد 2014، المجلد 1",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/RGPH%202014-V1_0.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            9
+          ]
+        ]
+      },
+      "note": "citation-key: ins-rgph-2014-vol1\nPublication en arabe, datée de septembre 2015. P. 11 : population du milieu communal, du milieu non communal et des deux milieux en 2014, en effectifs. Consulté le 10 octobre 2026."
+    },
+    {
+      "id": "ins-rgph-2014-vol3",
+      "type": "report",
+      "title": "التعداد العام للسكان والسكنى 2014: المجلد 3، الخصائص الديموغرافية والخصوبة",
+      "title-short": "المعهد الوطني للإحصاء، تعداد 2014، المجلد 3",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/sites/default/files-ftp1/files/publication/pdf/RGPH%202014-V3.pdf",
+      "note": "citation-key: ins-rgph-2014-vol3\nTableaux 6 et 7 (p. 14-15) : population communale et non communale de 1966 à 2014, en milliers, avec les parts ; p. 19 : définition du milieu communal. Date de publication non relevée. Consulté le 10 octobre 2026."
+    },
+    {
+      "id": "ins-rgph-2024-bilan-demographique",
+      "type": "report",
+      "title": "التعداد العام للسكان والسكنى 2024: الحصيلة الديموغرافية",
+      "title-short": "المعهد الوطني للإحصاء، تعداد 2024، الحصيلة الديموغرافية",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/2025-05/Bilan_D%C3%A9mographique.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            5
+          ]
+        ]
+      },
+      "note": "citation-key: ins-rgph-2024-bilan-demographique\nDaté de mai 2025. P. 7 : population totale à chaque recensement, de 1956 à 2024. Consulté le 10 octobre 2026."
+    },
+    {
+      "id": "ins-rgph-2024-flash-demographie",
+      "type": "report",
+      "title": "التعداد العام للسكان والسكنى 2024: نشرية الديموغرافيا",
+      "title-short": "المعهد الوطني للإحصاء، تعداد 2024، نشرية الديموغرافيا",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/DEMOGRAPHIE-FR.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            9
+          ]
+        ]
+      },
+      "note": "citation-key: ins-rgph-2024-flash-demographie\nDaté de septembre 2025. P. 3 : population urbaine et population rurale en 2024, selon la classification qui remplace la classification communal / non communal. Consulté le 10 octobre 2026."
     }
   ]
 }

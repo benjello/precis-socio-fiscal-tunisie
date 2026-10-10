@@ -1,0 +1,37 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-10
+# séries (tunisia_data) : population-milieu-communal-recensements, finances-locales-nombre-communes
+# sources (citation) : @ins-rgph-2004-vol1, @ins-rgph-2014-chiffres, @ins-rgph-2014-vol1, @ins-rgph-2014-vol3, @ins-rgph-2024-bilan-demographique, @ins-rgph-2024-flash-demographie, @dafflon-gilbert-2018
+# fiches : sources/ins-recensements-population-milieu.md
+# méthode/hypothèses : PLUSIEURS LECTURES PAR GRANDEUR : une même valeur est versée autant de fois que de publications lues, aucune n'écrase l'autre ; ne pas sommer les lignes ; pour une figure, choisir une édition (voir la fiche). DÉFINITION, telle que l'INS la donne (volume 3 de 2014, p. 19) : « En Tunisie le milieu urbain est assimilé au milieu communal. Une agglomération est classée communale lorsqu'elle est érigée officiellement en municipalité. » LE PÉRIMÈTRE BOUGE À CHAQUE RECENSEMENT : créations de communes et extensions de périmètres font passer des habitants d'un milieu à l'autre (le volume 1 de 2004 cite une création et neuf extensions pour 1994-2004) ; aucune série à périmètre constant n'est publiée. RUPTURE DE CLASSIFICATION EN 2024 (colonne `classification`) : le Flash Démographie de septembre 2025 écrit que la classification « urbain ou rural », adoptée « dans le cadre du projet DEGURBA », « vient remplacer l'ancienne classification (communal/non communal) » ; 8 615 826 urbains et 3 356 339 ruraux ne sont PAS une population communale et ne prolongent pas la série 1966-2014 ; aucune ventilation communal/non communal de 2024 n'a été trouvée (case vide, `non_publie`). 1956 : total seul, ventilation non obtenue (`non_obtenu`). 1966-1994 lus dans les tableaux rétrospectifs des publications de 2004 et de 2014, non dans les publications d'origine. AUCUN RACCORD, AUCUNE INTERPOLATION, AUCUN TOTAL CALCULÉ (le tableau 7 de 2014 n'en imprime pas). ÉCARTS ENTRE ÉDITIONS SIGNALÉS, NON CORRIGÉS : total de 2004, 9 910 872 (volume de 2004) contre 9 906 563 (Bilan de 2024) ; total de 2014, 10 982 754 (volume 1, Bilan de 2024) contre 10 982 477 (Flash de 2025) et 10 982,5 milliers (volume 3) ; milieux de 2014, 7 437 037 et 3 545 717 (volume 1) contre 7 437,5 et 3 545,0 (volume 3) et 7 437,7 et 3 545,1 (« Recensement en chiffres ») ; 2024, urbain + rural = 11 972 165 pour un total de 11 972 169. Dates de référence : seules celles de 2004 et de 2024 sont relevées dans les publications lues. Lu à l'image le 10 octobre 2026., Trois dates seulement, non reliées : le nombre de communes entre 1957 et 2014 n'est pas établi.
+# note : Population du milieu communal et du milieu non communal aux recensements de 1966 à 2014, en millions d'habitants ; part du milieu communal, en %, et nombre de communes, 1957-2024
+Date,Grandeur,Valeur,Unité,Publication lue
+1966,population du milieu communal,1819700,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1966,population du milieu non communal,2713600,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1966,population totale,4533300,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1966,part du milieu communal,40.1,%,"recensement de 2004, volume 1, tableau 3 (part imprimée)"
+1975,population du milieu communal,2655800,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1975,population du milieu non communal,2932400,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1975,population totale,5588200,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1975,part du milieu communal,47.5,%,"recensement de 2004, volume 1, tableau 3 (part imprimée)"
+1984,population du milieu communal,3680800,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1984,population du milieu non communal,3285400,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1984,population totale,6966200,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1984,part du milieu communal,52.8,%,"recensement de 2004, volume 1, tableau 3 (part imprimée)"
+1994,population du milieu communal,5361800,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1994,population du milieu non communal,3423600,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1994,population totale,8785400,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+1994,part du milieu communal,61.0,%,"recensement de 2004, volume 1, tableau 3 (part imprimée)"
+2004,population du milieu communal,6429500,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+2004,population du milieu non communal,3481400,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+2004,population totale,9910900,habitants,"recensement de 2004, volume 1, tableau 3 (milliers à une décimale)"
+2004,part du milieu communal,64.9,%,"recensement de 2004, volume 1, tableau 3 (part imprimée)"
+2014,population du milieu communal,7437037,habitants,"recensement de 2014, volume 1, p. 11 (effectifs)"
+2014,population du milieu non communal,3545717,habitants,"recensement de 2014, volume 1, p. 11 (effectifs)"
+2014,population totale,10982754,habitants,"recensement de 2014, volume 1, p. 11 (effectifs)"
+2014,part du milieu communal,67.7,%,rapport des deux effectifs du volume 1 du recensement de 2014 ; le volume 3 imprime la même part
+2024,population urbaine (classification de 2024),8615826,habitants,"recensement de 2024, Flash Démographie, p. 3"
+2024,population rurale (classification de 2024),3356339,habitants,"recensement de 2024, Flash Démographie, p. 3"
+2024,part de la population urbaine (classification de 2024),72.0,%,"recensement de 2024, Flash Démographie, p. 3"
+15 mars 1957,nombre de communes,94,communes,tableau annexé à la loi municipale du 14 mars 1957
+2014,nombre de communes,264,communes,"Dafflon et Gilbert (2018), p. 34-37"
+fin 2017,nombre de communes,350,communes,"Dafflon et Gilbert (2018), p. 34-37"
