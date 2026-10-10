@@ -1,153 +1,368 @@
-# Compétences et organisation {#sec-fl-competences}
+# Les compétences : qui fait quoi, qui décide {#sec-fl-competences .domicile-unique}
 
-Ce chapitre expose ce que les collectivités locales font, et comment elles sont organisées pour le faire. Il mobilise quatre notions du chapitre des notions. La [délégation](#g-delegation-competences) et la [dévolution](#g-devolution-competences) sont les deux formes de la décentralisation ; la [déconcentration](#g-deconcentration) n'en est pas une (@sec-fl-trois-volets). La [libre administration](#g-libre-administration) est le droit, pour des collectivités dotées d'organes élus, de régler une part des affaires publiques (@sec-fl-libre-administration). La [subsidiarité](#g-subsidiarite) attribue une responsabilité à l'autorité la plus proche des citoyens qui est à même de l'exercer (@sec-fl-subsidiarite). La [tutelle](#g-tutelle), enfin, est le contrôle du centre sur les décisions locales, de légalité ou d'opportunité, *a priori* ou *a posteriori* (@sec-fl-tutelle).
+La suite des réformes des collectivités locales, de 1957 à 2026, est au chapitre d'histoire (@sec-fl-histoire). Ce chapitre en donne l'état du droit : ce que font les collectivités locales, qui décide de leur dépense et de leur recette, qui contrôle leurs décisions. Trois notions y servent : la [délégation](#g-delegation-competences) et la [dévolution](#g-devolution-competences), les deux formes de la décentralisation, dont la [déconcentration](#g-deconcentration) ne fait pas partie (@sec-fl-trois-volets) ; la [subsidiarité](#g-subsidiarite), qui attribue une responsabilité à l'autorité la plus proche des citoyens à même de l'exercer (@sec-fl-subsidiarite).
 
-Le chapitre suit l'ordre des textes : l'organisation antérieure au code de 2018, les compétences que ce code définit, l'organisation qu'il met en place, puis les textes intervenus depuis 2023. Le code des collectivités locales n'a d'édition identifiée qu'en arabe ; les passages cités en sont traduits par nous. Un texte qui ne fixe pas lui-même sa date d'effet est daté du jour où il devient exécutoire : avant 1993, un jour franc après sa publication ; depuis, cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, jour du dépôt non compté [@loi93-64, art. 2].
+Le chapitre donne trois états : la loi organique des communes de 1975, le code des collectivités locales de 2018, le droit en octobre 2026. Le code de 2018 et les décrets-lois de 2023 et de 2026 sur les conseils municipaux n'ont d'édition identifiée qu'en arabe : leur traduction, sans guillemets, est la nôtre. Un texte sans date d'effet propre est daté du jour où il devient exécutoire ([registre des dates](#r-fl-comp-dates-regle)).
 
-## Avant le code de 2018 {#sec-fl-comp-avant-2018}
+## Vue d'ensemble {#sec-fl-comp-vue-ensemble}
 
-### La commune de la loi organique de 1975 {#sec-fl-comp-communes-1975}
+La loi organique des communes de 1975 ne donne pas de liste de compétences et soumet les décisions financières du conseil municipal à une approbation préalable ; le code des collectivités locales de 2018 distingue trois catégories de compétences et remplace l'approbation par le recours au juge ; depuis le 14 mars 2023, les communes n'ont plus de conseil élu pour exercer ces compétences (@tbl-fl-comp-etats).
 
-La loi n° 75-33 du 14 mai 1975 promulgue la loi organique des communes et abroge le décret du 14 mars 1957 portant loi municipale [@loi75-33, art. 2 de la loi]. Son premier article définit la commune comme « une collectivité publique locale, dotée de la personnalité civile et de l'autonomie financière et chargée de la gestion des intérêts municipaux », qui participe « dans le cadre du plan national de développement » à la promotion économique, sociale et culturelle de la localité [@loi75-33, art. 1]. Elle est créée par décret, sur proposition du ministre de l'Intérieur [@loi75-33, art. 2].
+| Question | [Loi de 1975](#r-fl-comp-1975-attributions) | [Code de 2018](#r-fl-comp-ccl-categories) | [Octobre 2026](#r-fl-comp-2023-dissolution) |
+|---|---|---|---|
+| Liste de compétences | aucune : le conseil « règle par ses délibérations les affaires de la commune » | compétences propres, partagées, transférées ; compétence générale de la commune | commune : celles du code, sans conseil élu pour les exercer ; conseils locaux, régionaux et de districts : délibération sur les plans de développement |
+| Qui fixe les droits et redevances | le conseil, sous approbation préalable (@sec-fl-moduler-droits) | le conseil élu | non établi : le décret-loi de 2023 ne le dit pas (@sec-fl-moduler-droits) |
+| Qui contrôle les actes | approbation préalable ; nullité déclarée par le gouverneur | le juge, saisi par le gouverneur ou par un intéressé | le secrétaire général gère sous la supervision du gouverneur ; rien de plus n'est établi |
+| Moyens des compétences transférées | — | fixés par la loi, avec les crédits et les moyens | aucune loi de transfert identifiée |
 
-La loi ne dresse pas de liste de compétences. Le conseil municipal « règle par ses délibérations les affaires de la commune » : il examine et approuve le budget, fixe le programme d'équipement dans la limite des ressources, définit les actions de développement conformément au plan national, donne son avis sur les affaires d'intérêt local et est consulté sur tout projet de l'État ou d'une autre collectivité sur son territoire [@loi75-33, art. 36]. Dafflon et Gilbert relèvent que ni la Constitution de 1959 ni l'organisation provisoire des pouvoirs publics de 2011 ne donnaient de liste de compétences communales, et que la loi organique ne les énumérait pas davantage : ils les reconstituent par inférence [@dafflon-gilbert-2018, p. 125-130].
+: Compétences, pouvoir de fixer les droits et contrôle des actes de la commune : trois états du droit, 1975, 2018 et octobre 2026 {#tbl-fl-comp-etats}
 
-La loi organise en revanche une tutelle étendue, *a priori* et d'opportunité au sens du chapitre des notions.
+- **L'état du droit en octobre 2026.** Aucune commune n'a de conseil élu depuis le 14 mars 2023 : son secrétaire général en gère les affaires courantes sous la supervision du gouverneur. Un décret-loi du 30 septembre 2026 abroge le code de 2018, mais n'entre en vigueur qu'après les prochaines élections municipales (@sec-fl-comp-depuis-2023).
+- **Ce qui commande la dépense.** La commune a en propre les services de proximité — voirie, déchets ménagers, éclairage public, marchés — et le code lie tout transfert de compétence au transfert des crédits et des moyens (@sec-fl-comp-categories, @tbl-fl-comp-commune).
+- **Ce que cela coûte.** []{#sec-fl-comp-longue-periode}Dafflon relève l'absence de toute classification fonctionnelle dans la nomenclature budgétaire du code [@dafflon-2021-budget-local] : les dépenses des communes se lisent par titre et par nature — rémunérations, service de la dette —, au chapitre des budgets (@sec-fl-budg-nomenclature, @sec-fl-budg-depenses, @sec-fl-budg-longue-periode).
 
-- **Approbation préalable.** Ne sont exécutoires qu'après approbation de l'autorité supérieure les délibérations portant sur le budget, les contributions extraordinaires et les emprunts, les taxes locales et droits divers, les aliénations et acquisitions, les baux de plus de trois ans, les transactions au-delà d'un seuil, le classement et l'alignement des voies, les foires et marchés, l'intervention dans des entreprises industrielles ou commerciales, les règlements généraux, ainsi que les dons et legs grevés de charges [@loi75-33, art. 42]. L'approbation revient, selon l'objet, au gouverneur, aux ministres de l'Intérieur et des Finances, ou au délégué ; elle est acquise tacitement au bout de quinze jours [@loi75-33, art. 43 et 45].
-- **Nullité et annulation.** Une délibération étrangère aux attributions du conseil ou contraire aux lois est nulle de plein droit ; la nullité est déclarée par arrêté motivé du gouverneur, qui prononce aussi l'annulation des délibérations auxquelles ont pris part des membres intéressés [@loi75-33, art. 38-41].
-- **Dissolution.** Le conseil peut être dissous par décret motivé ou, en cas d'urgence, suspendu deux mois au plus par arrêté du ministre de l'Intérieur ; une délégation spéciale nommée par décret le remplace [@loi75-33, art. 12-13].
+<!-- TODO (documentaliste) : dépenses des collectivités par fonction et part dans la dépense publique : aucune série identifiée (les budgets par commune de la Direction générale sont par nature) ; à chercher dans les rapports de la Haute instance des finances locales et les comptes de la nation. -->
 
-Les autres délibérations sont exécutoires quinze jours après leur dépôt [@loi75-33, art. 46]. La loi a été modifiée à plusieurs reprises, notamment par la loi organique n° 2006-48 du 17 juillet 2006, dont Dafflon et Gilbert analysent la rédaction [@dafflon-gilbert-2018, p. 125-126] ; ces modificatifs ne sont pas exposés ici.
+:::: {.chronologie-repliable titre="Dates d'application des textes des compétences : la règle générale et les clauses propres, 1975-2026"}
 
-<!-- TODO (documentaliste) : lire les modificatifs de la loi n° 75-33 (lois organiques n° 85-43, 91-24, 95-68, 2006-48, 2008-57), l'édition arabe et la fin du texte (JORT n° 34 de 1975, p. 1059-1065) ; établir le sort de la loi après le code de 2018. -->
+| Date d'effet | Texte et article | Ce que le texte dit de sa date, ou le calcul |
+|---|---|---|
+| []{#r-fl-comp-dates-1956}règle générale, avant 1993 | décret du [13 septembre 1956]{.insecable} [@decret-1956-09-13-publication] | un texte sans clause d'effet devient exécutoire un jour franc après sa publication au *Journal officiel* |
+| []{#r-fl-comp-dates-regle}règle générale, depuis 1993 | loi n° 93-64 [@loi93-64, art. 2] | un texte sans clause d'effet devient exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, jour du dépôt non compté |
+| []{#r-fl-comp-dates-1975}[22 mai 1975]{.insecable} | loi organique des communes [@loi75-33] | aucune clause : publiée au *Journal officiel* du [20 mai 1975]{.insecable}, exécutoire un jour franc après |
+| []{#r-fl-comp-dates-1976}[1^er^ janvier 1976]{.insecable} | loi sur la caisse des prêts et de soutien des collectivités locales [@loi75-37, art. 6] | clause propre : la loi prend effet le [1^er^ janvier 1976]{.insecable} |
+| []{#r-fl-comp-dates-1989}date d'effet non établie ici | loi organique relative aux conseils régionaux [@loi-org89-11] | la loi paraît au *Journal officiel* du [10 février 1989]{.insecable} |
+| []{#r-fl-comp-dates-2018}[22 mai 2018]{.insecable} ; pour les communes, après les élections de 2018 | code des collectivités locales [@loi-org-2018-29-ccl, art. 383, p. 1759] | clause propre : les dispositions du code s'appliquent à chaque catégorie de collectivités après la proclamation des résultats définitifs de ses élections (@sec-fl-hist-code-2018) |
+| []{#r-fl-comp-dates-2023}[14 mars 2023]{.insecable} | dissolution des conseils municipaux [@decretloi2023-9, p. 694] | aucune clause : *Journal officiel* du [9 mars 2023]{.insecable}, déposé le même jour |
+| []{#r-fl-comp-dates-2025}[18 mars 2025]{.insecable} | loi organique n° 2025-4 du [12 mars 2025]{.insecable} [@loi-org2025-4] | aucune clause : *Journal officiel* du [13 mars 2025]{.insecable}, déposé le même jour |
+| []{#r-fl-comp-dates-2025-decret}[10 avril 2025]{.insecable} | décret n° 2025-177 du [4 avril 2025]{.insecable} [@decret2025-177] | aucune clause : *Journal officiel* du [5 avril 2025]{.insecable}, déposé le même jour |
+| []{#r-fl-comp-dates-2026}après les prochaines élections municipales | décret-loi relatif aux conseils municipaux [@decretloi2026-4, art. 136, p. 2074] | clause propre : entrée en vigueur dès la proclamation des résultats définitifs des premières élections municipales qui suivent sa publication |
 
-### Le gouvernorat et son conseil régional {#sec-fl-comp-conseils-regionaux}
+: Dates d'application des textes des compétences {#tbl-fl-comp-dates}
 
-La loi organique n° 89-11 du 4 février 1989 fait du gouvernorat un objet double : « une circonscription territoriale administrative de l'État » et, « en outre, une collectivité publique dotée de la personnalité morale et de l'autonomie financière, gérée par un conseil régional et soumise à la tutelle du ministre de l'intérieur » [@loi-org89-11, art. 1]. Le conseil régional examine toute question intéressant le gouvernorat ; il élabore le plan régional de développement dans le cadre du plan national, les plans d'aménagement hors des périmètres communaux, et réalise les projets régionaux arrêtés par les ministères [@loi-org89-11, art. 2]. Il arrête le budget de fonctionnement et d'équipement du gouvernorat, ainsi que les impôts et taxes recouvrés à son profit [@loi-org89-11, art. 3].
+Le code des collectivités locales, le décret-loi de 2023 et celui de 2026 sont cités dans l'édition arabe du *Journal officiel*, dont les pages sont données ; les lois de 1975 et de 1989, la loi organique et le décret de 2025, dans l'édition française.
 
-Le conseil n'est pas élu au suffrage direct : le gouverneur le préside, sans prendre part au vote, et il réunit les députés de la circonscription, les présidents des communes et ceux des conseils ruraux [@loi-org89-11, art. 6]. Le ministre de l'Intérieur prononce par arrêté motivé la nullité ou l'annulation de ses délibérations [@loi-org89-11, art. 18-21]. Dafflon et Gilbert parlent d'une « double casquette » : le gouvernorat est à la fois une circonscription déconcentrée et une collectivité, et les compétences du conseil sont cadrées par le plan national, ce qui assure selon eux une « mainmise nationale » sur la planification régionale [@dafflon-gilbert-2018, p. 122-124].
+::::
 
-## Les compétences dans le code des collectivités locales {#sec-fl-comp-code-2018}
+## Avant 2018 : pas de liste de compétences, une approbation préalable {#sec-fl-comp-avant-2018}
 
-### Trois catégories et un principe {#sec-fl-comp-categories}
+Avant le code de 2018, deux lois organiques disent ce que décident la commune et le gouvernorat. La définition de la commune, la composition du conseil régional et les modifications de la loi de 1975 sont au chapitre d'histoire (@sec-fl-hist-lois-1975, @sec-fl-hist-modifications).
 
-Le code des collectivités locales, promulgué par la loi organique n° 2018-29 du 9 mai 2018, définit les collectivités locales comme des personnes publiques dotées de la personnalité juridique et de l'autonomie administrative et financière ; elles se composent de communes, de régions et de districts, chaque catégorie couvrant tout le territoire de la République [@loi-org-2018-29-ccl, art. 2]. Chacune gère les intérêts locaux selon le principe de libre administration (« التدبير الحر ») [@loi-org-2018-29-ccl, art. 4], par des conseils élus [@loi-org-2018-29-ccl, art. 5].
+### La commune de 1975 {#sec-fl-comp-communes-1975}
 
-Le code distingue trois catégories de compétences : des [compétences propres](#g-competences-propres) (« صلاحيات ذاتية »), que la collectivité exerce seule ; des [compétences partagées](#g-competences-partagees) (« صلاحيات مشتركة ») avec l'autorité centrale, exercées en coordination et en coopération avec elle ; des [compétences transférées](#g-competences-transferees) (« صلاحيات منقولة ») par l'autorité centrale. Les conditions d'exercice des compétences partagées sont renvoyées à une loi, prise après avis du Conseil supérieur des collectivités locales [@loi-org-2018-29-ccl, art. 13]. Les termes français sont ceux d'une traduction du code que citent Hammami, Dafflon et Gilbert [@hammami-dafflon-gilbert-2021, p. 26-27].
+Sous [la loi organique des communes de 1975](#r-fl-comp-1975-statut), le conseil municipal « règle par ses délibérations les affaires de la commune », sans liste de compétences, et ses décisions financières ne s'exécutent qu'une fois approuvées.
 
-Quatre règles encadrent ces catégories.
+- **Ce que le conseil décide.** Il approuve le budget, fixe le programme d'équipement dans la limite des ressources, définit les actions de développement conformément au plan national et donne son avis sur les projets de l'État sur son territoire ([article 36](#r-fl-comp-1975-attributions)).
+- **Pas de liste de compétences.** Dafflon et Gilbert relèvent que ni la Constitution de 1959, ni l'organisation provisoire des pouvoirs publics de 2011, ni la loi organique n'énuméraient les compétences communales : ils les reconstituent par inférence [@dafflon-gilbert-2018, p. 125-130].
+- **L'approbation préalable.** Douze matières ne sont exécutoires qu'après l'approbation de l'autorité supérieure, dont le budget, les contributions extraordinaires et les emprunts, les taxes locales et droits divers, les aliénations et acquisitions ([article 42](#r-fl-comp-1975-approbation)). L'approbation revient au gouverneur, aux ministres ou au délégué, et elle est acquise tacitement au bout de quinze jours ([articles 43 et 45](#r-fl-comp-1975-autorites)). C'est une tutelle *a priori* et d'opportunité, au sens du chapitre des notions (@sec-fl-tutelle).
+- **Nullité et dissolution.** Le gouverneur déclare nulle une délibération contraire aux lois ([articles 38 à 41](#r-fl-comp-1975-nullite)) ; le conseil peut être dissous par décret motivé ([articles 12 et 13](#r-fl-comp-1975-dissolution)).
 
-- **Exclusivité.** Les compétences propres sont exclusives ; l'autorité centrale peut en exercer une part à la demande de la collectivité, et plusieurs collectivités peuvent en exercer une part en coopération [@loi-org-2018-29-ccl, art. 14]. Une collectivité peut aussi charger une autre collectivité, ou un établissement ou une entreprise publics, d'exercer l'une de ses compétences propres, par convention à durée déterminée [@loi-org-2018-29-ccl, art. 12]. Aucune répartition de compétences n'emporte de tutelle d'une collectivité sur une autre [@loi-org-2018-29-ccl, art. 11].
-- **Subsidiarité.** Les compétences partagées et transférées sont réparties entre les catégories « sur la base du principe de subsidiarité » (« على أساس مبدأ التفريع ») : chacune reçoit celles qu'elle est la plus à même d'exercer, par sa proximité des habitants [@loi-org-2018-29-ccl, art. 15].
-- **Transfert par la loi, avec les moyens.** Tout transfert ou extension de compétence est fixé par la loi et s'accompagne d'un transfert de crédits et de moyens proportionnés aux charges, dans la limite du budget de l'État et après avis de la Haute instance des finances locales [@loi-org-2018-29-ccl, art. 16] ; ces crédits sont gérés selon la libre administration [@loi-org-2018-29-ccl, art. 17].
-- **Compétence générale de la commune.** La commune a « la compétence de principe générale » pour les affaires locales [@loi-org-2018-29-ccl, art. 18] ; la région et le district n'exercent que les compétences à dimension régionale ou de district et celles que la loi leur attribue [@loi-org-2018-29-ccl, art. 19-20].
+:::: {.chronologie-repliable titre="Loi organique des communes de 1975 : attributions du conseil, matières soumises à approbation, nullité et dissolution (art. 1, 2, 12, 13, 36 à 46)"}
 
-Pour exercer ces compétences, le conseil de la collectivité dispose d'un [pouvoir réglementaire](#g-pouvoir-reglementaire-local) (« السلطة الترتيبية »), dans les limites de son territoire et de ses compétences ; il peut en déléguer une part à son président [@loi-org-2018-29-ccl, art. 25-26]. Ses arrêtés sont publiés au *Journal officiel des collectivités locales* [@loi-org-2018-29-ccl, art. 28].
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-comp-1975-statut}La commune | loi de promulgation et loi organique des communes [@loi75-33, art. 2 de la loi, art. 1 et 2 de la loi organique] | la loi de promulgation abroge le décret du [14 mars 1957]{.insecable} portant loi municipale (art. 2 de la loi) ; la commune est « une collectivité publique locale, dotée de la personnalité civile et de l'autonomie financière et chargée de la gestion des intérêts municipaux », qui participe « dans le cadre du plan national de développement » à la promotion économique, sociale et culturelle de la localité (art. 1) ; elle est créée par décret, sur proposition du ministre de l'Intérieur (art. 2) |
+| []{#r-fl-comp-1975-attributions}Attributions du conseil | loi organique des communes [@loi75-33, art. 36] | le conseil municipal « règle par ses délibérations les affaires de la commune » : il examine et approuve le budget, fixe le programme d'équipement dans la limite des ressources, définit les actions de développement conformément au plan national, donne son avis sur les affaires d'intérêt local, est consulté sur tout projet de l'État ou d'une autre collectivité sur son territoire |
+| []{#r-fl-comp-1975-approbation}Matières soumises à approbation | loi organique des communes [@loi75-33, art. 42] | ne sont exécutoires qu'après approbation de l'autorité supérieure les délibérations portant sur : le budget ; les contributions extraordinaires et les emprunts ; les taxes locales et droits divers ; les aliénations et acquisitions ; les baux de plus de trois ans ; les transactions au-delà d'un seuil ; la dénomination des rues ; le classement et l'alignement des voies ; les foires et marchés ; l'intervention dans des entreprises industrielles ou commerciales ; les règlements généraux ; les dons et legs grevés de charges |
+| []{#r-fl-comp-1975-autorites}Autorité d'approbation et délais | loi organique des communes [@loi75-33, art. 43, 45 et 46] | l'approbation revient, selon l'objet, au gouverneur, aux ministres de l'Intérieur et des Finances, ou au délégué (art. 43) ; elle est acquise tacitement au bout de quinze jours (art. 45) ; les autres délibérations sont exécutoires quinze jours après leur dépôt (art. 46) |
+| []{#r-fl-comp-1975-nullite}Nullité et annulation | loi organique des communes [@loi75-33, art. 38-41] | une délibération étrangère aux attributions du conseil ou contraire aux lois est nulle de plein droit ; la nullité est déclarée par arrêté motivé du gouverneur, qui prononce aussi l'annulation des délibérations auxquelles ont pris part des membres intéressés |
+| []{#r-fl-comp-1975-dissolution}Dissolution | loi organique des communes [@loi75-33, art. 12-13] | le conseil peut être dissous par décret motivé ou, en cas d'urgence, suspendu deux mois au plus par arrêté du ministre de l'Intérieur ; une délégation spéciale nommée par décret le remplace ; ces deux articles portent les numéros 11 et 12 depuis la renumérotation de 2006 (@sec-fl-hist-modifications) |
+
+: La loi organique des communes de 1975 : attributions du conseil et tutelle, article par article {#tbl-fl-comp-1975}
+
+La loi est modifiée à cinq reprises de 1985 à 2008 (@sec-fl-hist-modifications) ; Dafflon et Gilbert analysent la rédaction issue de la loi organique n° 2006-48 du 17 juillet 2006 [@dafflon-gilbert-2018, p. 125-126].
+
+::::
+
+<!-- TODO (documentaliste) : lire la loi organique n° 91-24, le rectificatif du 1er août 1975 (JORT n° 53, p. 1628) et l'édition arabe de la loi n° 75-33 ; établir le sort de la loi après le code de 2018 ; date d'effet de la loi organique n° 89-11 (JORT n° 10 de 1989, p. 220-221). -->
+
+<!-- TODO (rédacteur) : la liste des matières soumises à approbation existe en deux états postérieurs — loi organique n° 95-68, art. 42 nouveau (neuf matières), et loi organique n° 2006-48, art. 42 nouveau (onze matières, baux de plus de deux ans), devenu art. 25 par la renumérotation de son art. 6, qui fait aussi des art. 12 et 13 les art. 11 et 12 ; ce que change la loi organique n° 85-43 à l'approbation (docs/notes/finances-locales-institutions-lectures-2026-10-10.md, § 1.4 et 6, note portée par la branche du chapitre d'histoire ; textes de 1995 et de 2006 lus en couche texte : sans guillemets). À porter au registre `tbl-fl-comp-1975` quand les clés `loi-org85-43`, `loi-org95-68` et `loi-org2006-48` seront versées (bibliographe), en accord avec le registre de `_histoire.qmd#sec-fl-hist-modifications`. -->
+
+### Le conseil régional de 1989 {#sec-fl-comp-conseils-regionaux}
+
+Sous [la loi organique du 4 février 1989](#r-fl-comp-1989-statut), abrogée le 18 mars 2025, le conseil régional élabore le plan régional de développement dans le cadre du plan national et arrête le budget du gouvernorat.
+
+- **Ce que le conseil décide.** Avec le budget du gouvernorat, il arrête les impôts et taxes recouvrés à son profit, et il réalise les projets régionaux arrêtés par les ministères ([articles 2 et 3](#r-fl-comp-1989-attributions)).
+- **Un conseil sous tutelle.** Le gouverneur le préside ; le ministre de l'Intérieur peut annuler ses délibérations ([articles 18 à 21](#r-fl-comp-1989-tutelle)).
+- **La « double casquette ».** Dafflon et Gilbert nomment ainsi un gouvernorat à la fois circonscription déconcentrée et collectivité ; le cadre du plan national assure selon eux une « mainmise nationale » sur la planification régionale [@dafflon-gilbert-2018, p. 122-124].
+
+:::: {.chronologie-repliable titre="Loi organique n° 89-11 sur les conseils régionaux : attributions et tutelle (art. 1 à 3, 6, 18 à 21)"}
+
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-comp-1989-statut}Le gouvernorat et son conseil | loi organique relative aux conseils régionaux [@loi-org89-11, art. 1 et 6] | le gouvernorat est « une circonscription territoriale administrative de l'État » et, « en outre, une collectivité publique dotée de la personnalité morale et de l'autonomie financière, gérée par un conseil régional et soumise à la tutelle du ministre de l'intérieur » (art. 1) ; le conseil n'est pas élu au suffrage direct : le gouverneur le préside, sans prendre part au vote, et il réunit les députés de la circonscription, les présidents des communes et ceux des conseils ruraux (art. 6) |
+| []{#r-fl-comp-1989-attributions}Attributions | loi organique relative aux conseils régionaux [@loi-org89-11, art. 2 et 3] | le conseil examine toute question intéressant le gouvernorat ; il élabore le plan régional de développement dans le cadre du plan national, les plans d'aménagement hors des périmètres communaux, et réalise les projets régionaux arrêtés par les ministères (art. 2) ; il arrête le budget de fonctionnement et d'équipement du gouvernorat, ainsi que les impôts et taxes recouvrés à son profit (art. 3) |
+| []{#r-fl-comp-1989-tutelle}Nullité et annulation | loi organique relative aux conseils régionaux [@loi-org89-11, art. 18-21] | le ministre de l'Intérieur prononce par arrêté motivé la nullité ou l'annulation des délibérations du conseil |
+
+: La loi organique de 1989 sur les conseils régionaux : statut, attributions et tutelle {#tbl-fl-comp-1989}
+
+::::
+
+## 2018 : trois catégories de compétences {#sec-fl-comp-code-2018}
+
+Le code des collectivités locales de 2018 énumère les compétences de chaque catégorie de collectivités. Ce qu'il cherche et son entrée en vigueur par étapes sont au chapitre d'histoire (@sec-fl-hist-code-2018).
+
+### Compétences propres, partagées, transférées {#sec-fl-comp-categories}
+
+[Le code](#r-fl-comp-ccl-categories) distingue trois catégories de compétences : des [compétences propres](#g-competences-propres) (« صلاحيات ذاتية »), que la collectivité exerce seule ; des [compétences partagées](#g-competences-partagees) (« صلاحيات مشتركة ») avec l'autorité centrale, exercées en coordination et en coopération avec elle ; des [compétences transférées](#g-competences-transferees) (« صلاحيات منقولة ») par l'autorité centrale. Les termes français sont ceux d'une traduction du code que citent Hammami, Dafflon et Gilbert [@hammami-dafflon-gilbert-2021, p. 26-27].
+
+Communes, régions et districts gèrent les intérêts locaux par des conseils élus, selon le principe de [libre administration](#g-libre-administration), « التدبير الحر » ([articles 2, 4 et 5](#r-fl-comp-ccl-principes), @sec-fl-libre-administration). Quatre règles encadrent les trois catégories.
+
+- **Exclusivité.** Les compétences propres sont exclusives, sauf demande de la collectivité, coopération ou convention ; aucune répartition de compétences n'emporte de tutelle d'une collectivité sur une autre ([articles 11, 12 et 14](#r-fl-comp-ccl-exclusivite)).
+- **Subsidiarité.** Les compétences partagées et transférées sont réparties entre les catégories sur la base du principe de subsidiarité, « مبدأ التفريع » : chacune reçoit celles qu'elle est la plus à même d'exercer, par sa proximité des habitants ([article 15](#r-fl-comp-ccl-subsidiarite)).
+- **Transfert par la loi, avec les moyens.** Tout transfert ou extension de compétence est fixé par la loi et s'accompagne d'un transfert de crédits et de moyens proportionnés aux charges, dans la limite du budget de l'État et après avis de la Haute instance des finances locales ; ces crédits sont gérés selon la libre administration ([articles 16 et 17](#r-fl-comp-ccl-transfert)).
+- **Compétence générale de la commune.** La commune a la compétence de principe générale, « الاختصاص المبدئي العام », pour les affaires locales ; la région et le district n'exercent que les compétences à dimension régionale ou de district et celles que la loi leur attribue ([articles 18 à 20](#r-fl-comp-ccl-generale)).
+
+Pour exercer ces compétences, le conseil dispose d'un [pouvoir réglementaire](#g-pouvoir-reglementaire-local), dans les limites de son territoire ([articles 25 à 28](#r-fl-comp-ccl-reglementaire)).
 
 La loi prévue pour les compétences partagées, et les lois de transfert, ne sont pas identifiées ici. Les compétences partagées et transférées n'ont donc, en l'état des textes identifiés, pas d'autres conditions d'exercice que celles du code.
 
 <!-- RECHERCHE r-fl-loi-competences-partagees : loi fixant l'exercice des compétences partagées (CCL, art. 13, al. 2) ou loi de transfert (art. 16) (voir docs/recherches.yml) -->
 
+:::: {.chronologie-repliable titre="Code des collectivités locales : les compétences, principes et pouvoir réglementaire (art. 2, 4, 5, 11 à 20 et 25 à 28), édition arabe"}
+
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-comp-ccl-principes}Collectivités locales, libre administration, conseils élus | code des collectivités locales [@loi-org-2018-29-ccl, art. 2, 4 et 5] | les collectivités locales sont des personnes publiques dotées de la personnalité juridique et de l'autonomie administrative et financière ; elles se composent de communes, de régions et de districts, chaque catégorie couvrant tout le territoire de la République (art. 2, p. 1710) ; chacune gère les intérêts locaux selon le principe de libre administration, « التدبير الحر » (art. 4), par des conseils élus (art. 5) |
+| []{#r-fl-comp-ccl-categories}Trois catégories de compétences | code des collectivités locales [@loi-org-2018-29-ccl, art. 13] | compétences propres, que la collectivité exerce seule ; compétences transférées par l'autorité centrale ; compétences partagées avec elle, exercées en coordination et en coopération ; les conditions d'exercice des compétences partagées sont renvoyées à une loi, prise après avis du Conseil supérieur des collectivités locales (p. 1711) |
+| []{#r-fl-comp-ccl-exclusivite}Exclusivité des compétences propres | code des collectivités locales [@loi-org-2018-29-ccl, art. 11, 12 et 14] | les compétences propres sont exclusives ; l'autorité centrale peut en exercer une part à la demande de la collectivité, et plusieurs collectivités peuvent en exercer une part en coopération (art. 14) ; une collectivité peut charger une autre collectivité, ou un établissement ou une entreprise publics, d'exercer l'une de ses compétences propres, par convention à durée déterminée (art. 12) ; aucune répartition de compétences n'emporte de tutelle d'une collectivité sur une autre (art. 11) |
+| []{#r-fl-comp-ccl-subsidiarite}Subsidiarité | code des collectivités locales [@loi-org-2018-29-ccl, art. 15] | les compétences partagées et transférées sont réparties entre les catégories sur la base du principe de subsidiarité, « على أساس مبدأ التفريع » : chacune reçoit celles qu'elle est la plus à même d'exercer, par sa proximité des habitants |
+| []{#r-fl-comp-ccl-transfert}Transfert par la loi, avec les moyens | code des collectivités locales [@loi-org-2018-29-ccl, art. 16 et 17] | tout transfert ou extension de compétence est fixé par la loi et s'accompagne d'un transfert de crédits et de moyens proportionnés aux charges, dans la limite du budget de l'État et après avis de la Haute instance des finances locales (art. 16) ; ces crédits sont gérés selon la libre administration (art. 17) |
+| []{#r-fl-comp-ccl-generale}Compétence générale de la commune | code des collectivités locales [@loi-org-2018-29-ccl, art. 18 à 20] | la commune a la compétence de principe générale pour les affaires locales (art. 18) ; la région et le district n'exercent que les compétences à dimension régionale ou de district et celles que la loi leur attribue (art. 19 et 20) |
+| []{#r-fl-comp-ccl-reglementaire}Pouvoir réglementaire | code des collectivités locales [@loi-org-2018-29-ccl, art. 25, 26 et 28] | le conseil de la collectivité dispose d'un pouvoir réglementaire, dans les limites de son territoire et de ses compétences ; il peut en déléguer une part à son président (art. 25 et 26, p. 1712) ; ses arrêtés sont publiés au *Journal officiel des collectivités locales* (art. 28) |
+
+: Les compétences dans le code des collectivités locales : principes, article par article {#tbl-fl-comp-ccl-principes}
+
+::::
+
 ### Les compétences de la commune {#sec-fl-comp-commune}
 
-Le code énumère les compétences de la commune dans les trois catégories (@tbl-fl-comp-commune).
+La commune exerce en propre les services et les équipements de proximité ; en partage avec l'autorité centrale, l'économie locale, les réseaux et l'entretien des écoles et des dispensaires ; par transfert, la construction et l'entretien des établissements de santé, d'éducation, de culture et de sport (@tbl-fl-comp-commune).
 
 | Catégorie | Contenu | Articles |
 |---|---|---|
-| Propres | services et équipements de proximité ; budget, emprunts et biens communaux ; fixation des droits, redevances et taxes, quelle que soit leur dénomination ; programme d'investissement communal ; plans d'urbanisme et règlements locaux de construction ; services publics communaux : voirie, jardins, collecte et tri des déchets ménagers jusqu'aux décharges contrôlées, éclairage public, eaux pluviales, marchés, abattoirs, propreté ; vie sociale, culturelle et sportive ; avis sur les projets de l'État sur le territoire communal | 235-242 |
-| Partagées | économie locale et emploi ; patrimoine culturel ; zones d'activités ; équipements collectifs sociaux, sportifs, culturels et touristiques ; littoral ; réseaux d'assainissement ; ouvrages contre les inondations ; transport urbain et scolaire ; entretien des écoles de base, des dispensaires et des centres de santé de base ; entretien des routes de l'État en zone urbaine | 243 |
-| Transférées | construction et entretien des établissements de santé, des établissements éducatifs, des équipements culturels et des équipements sportifs | 244 |
+| Propres | services et équipements de proximité ; budget, emprunts et biens communaux ; droits, redevances et taxes ; programme d'investissement ; plans d'urbanisme ; services publics communaux : voirie, jardins, déchets ménagers, éclairage public, eaux pluviales, marchés, abattoirs, propreté ; vie sociale, culturelle et sportive ; avis sur les projets de l'État | [[235 à 242]{.insecable}](#r-fl-comp-commune-propres) |
+| Partagées | économie locale et emploi ; patrimoine culturel ; zones d'activités ; équipements collectifs sociaux, sportifs, culturels et touristiques ; littoral ; réseaux d'assainissement ; ouvrages contre les inondations ; transport urbain et scolaire ; entretien des écoles de base, des dispensaires et des centres de santé de base ; entretien des routes de l'État en zone urbaine | [243](#r-fl-comp-commune-partagees) |
+| Transférées | construction et entretien des établissements de santé, des établissements éducatifs, des équipements culturels et des équipements sportifs | [244](#r-fl-comp-commune-transferees) |
 
 : Les compétences de la commune dans le code des collectivités locales {#tbl-fl-comp-commune}
 
-Source : @loi-org-2018-29-ccl, art. 234-244.
+- **Le conseil fixe les droits.** La fixation des droits, redevances et taxes est une matière du conseil municipal ([article 237](#r-fl-comp-commune-droits)) ; la règle, commune à toutes les collectivités, et son état en 2026 sont au chapitre des taxes (@sec-fl-ccl-categories, @sec-fl-moduler-droits).
+- **Le transfert, avec ses ressources.** Tout transfert de compétence s'accompagne obligatoirement du transfert des ressources financières et humaines nécessaires, par une convention entre l'autorité centrale et la commune ([article 244](#r-fl-comp-commune-transferees)).
+- **Un avis obligatoire, qui ne bloque pas.** L'avis du conseil sur les projets de l'État est obligatoire, mais son défaut ou son opposition n'empêchent pas la réalisation du projet ([article 242](#r-fl-comp-commune-avis)).
 
-Deux dispositions lient ces compétences aux finances. Le conseil fixe lui-même les droits, redevances et taxes de la commune [@loi-org-2018-29-ccl, art. 237], ce qui rejoint la distinction entre impôts fixés par la loi et droits fixés par délibération (@sec-fl-ccl-categories). Et tout transfert de compétence s'accompagne « obligatoirement » du transfert des ressources financières et humaines nécessaires à son exercice, la réalisation passant par une convention entre l'autorité centrale et la commune [@loi-org-2018-29-ccl, art. 244]. L'avis du conseil sur les projets de l'État, enfin, est obligatoire, mais son défaut ou son opposition n'empêchent pas la réalisation du projet [@loi-org-2018-29-ccl, art. 242].
+:::: {.chronologie-repliable titre="Compétences de la commune dans le code de 2018 : articles 234 à 244, édition arabe"}
 
-<!-- TODO (documentaliste) : pouvoir du conseil de fixer droits, redevances et taxes — ce chapitre cite l'art. 237 du code de 2018 (compétences de la commune), le chapitre des taxes l'art. 139 (régime financier, texte arabe relevé à l'image le 9 octobre 2026, `_taxes_redevances.qmd#sec-fl-ccl-categories`). Relire l'art. 237 et dire si les deux articles portent la même règle ou si l'une des deux références est à corriger ; non tranché à la rédaction. -->
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-comp-commune-ensemble}Ensemble | code des collectivités locales [@loi-org-2018-29-ccl, art. 234-244] | la commune a des compétences propres, des compétences partagées avec l'autorité centrale et des compétences transférées par elle (art. 234, p. 1739) |
+| []{#r-fl-comp-commune-propres}Compétences propres | code des collectivités locales [@loi-org-2018-29-ccl, art. 235-242] | services et équipements de proximité (art. 235) ; budget, emprunts, gestion des biens communaux (art. 236) ; engagements financiers, droits, redevances et taxes (art. 237) ; programme d'investissement et d'équipement communal (art. 238, p. 1740) ; plans d'urbanisme et règlements locaux de construction (art. 239) ; services publics communaux : voirie, jardins, collecte et tri des déchets ménagers jusqu'aux décharges contrôlées, éclairage public, eaux pluviales, marchés, abattoirs, propreté (art. 240) ; vie sociale, culturelle et sportive (art. 241) ; avis sur les projets de l'État (art. 242) |
+| []{#r-fl-comp-commune-droits}Droits, redevances et taxes | code des collectivités locales [@loi-org-2018-29-ccl, art. 237] | le conseil municipal règle les affaires communales ; il se saisit notamment des engagements financiers et de la fixation des droits, redevances et taxes, quelle que soit leur dénomination, « مهما كانت تسميتها », y compris ceux de la publicité et des services rendus (p. 1739-1740) ; la compétence des conseils élus de toute collectivité pour arrêter le montant ou le tarif des droits, et leurs exonérations et réductions, est à l'article 139 (@sec-fl-ccl-categories) |
+| []{#r-fl-comp-commune-avis}Avis sur les projets de l'État | code des collectivités locales [@loi-org-2018-29-ccl, art. 242] | l'avis du conseil est obligatoire ; son défaut ou son opposition n'empêchent pas la réalisation du projet |
+| []{#r-fl-comp-commune-partagees}Compétences partagées | code des collectivités locales [@loi-org-2018-29-ccl, art. 243] | économie locale et emploi ; patrimoine culturel ; zones d'activités ; équipements collectifs sociaux, sportifs, culturels et touristiques ; littoral ; réseaux d'assainissement ; ouvrages contre les inondations ; transport urbain et scolaire ; entretien des écoles de base, des dispensaires et des centres de santé de base ; entretien des routes de l'État en zone urbaine (p. 1740-1741) |
+| []{#r-fl-comp-commune-transferees}Compétences transférées | code des collectivités locales [@loi-org-2018-29-ccl, art. 244] | construction et entretien des établissements de santé, des établissements éducatifs, des équipements culturels et des équipements sportifs ; tout transfert s'accompagne obligatoirement du transfert des ressources financières et humaines nécessaires à son exercice, la réalisation passant par une convention entre l'autorité centrale et la commune (p. 1741) |
 
-### Les compétences de la région et du district {#sec-fl-comp-region-district}
+: Les compétences de la commune dans le code de 2018, article par article {#tbl-fl-comp-commune-articles}
 
-La région, collectivité dotée de la personnalité juridique, gère les affaires régionales selon la libre administration et œuvre au développement global et solidaire [@loi-org-2018-29-ccl, art. 293]. Ses compétences propres portent sur les plans de développement régional, élaborés par la démocratie participative, sur les services et équipements à dimension régionale et sur le transport non urbain à l'intérieur de la région [@loi-org-2018-29-ccl, art. 296]. Ses compétences partagées couvrent l'aménagement du territoire régional, les zones industrielles, artisanales et touristiques, la formation professionnelle, le transport urbain à dimension régionale et le marché du travail [@loi-org-2018-29-ccl, art. 297] ; ses compétences transférées, l'entretien des infrastructures et équipements régionaux et le soutien à l'investissement, avec la même obligation de transfert des moyens [@loi-org-2018-29-ccl, art. 298].
+::::
 
-Le [district](#g-district) (« الإقليم ») est chargé de l'intégration et de la complémentarité du développement entre les zones qui le composent [@loi-org-2018-29-ccl, art. 356] ; son conseil est élu par les membres des conseils municipaux et régionaux [@loi-org-2018-29-ccl, art. 357]. Il délibère sur les plans d'aménagement et propose des projets — transport, communications, eau, électricité, assainissement — que les autorités centrales et locales financent [@loi-org-2018-29-ccl, art. 358].
+### La région et le district {#sec-fl-comp-region-district}
 
-Les dispositions du code relatives à la région et au district sont abrogées depuis le 18 mars 2025 (@sec-fl-comp-conseils-2025).
+Les compétences que le code donne à la région et au [district](#g-district) (« الإقليم ») n'ont été exercées par aucun conseil élu, et sont abrogées depuis le 18 mars 2025 ([loi organique du 12 mars 2025](#r-fl-comp-region-abrogation)). La région y avait en propre les plans de développement régional, les services et équipements régionaux et le transport non urbain ; le district, l'intégration du développement entre ses zones. Les conseils régionaux et de districts de 2026 sont ceux de la loi de 2025 (@sec-fl-comp-conseils-2025).
 
-### Délégation ou dévolution ? {#sec-fl-comp-delegation-devolution}
+:::: {.chronologie-repliable titre="Région et district dans le code de 2018 : compétences propres, partagées et transférées (art. 293 à 298 et 356 à 358), abrogées en 2025"}
 
-Le code ne parle ni de délégation ni de dévolution : il dit « propres », « partagées », « transférées ». Le rapprochement avec les notions du chapitre 2 est une lecture de la doctrine, qui n'est pas unanime sur la correspondance.
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-comp-region-statut}La région | code des collectivités locales [@loi-org-2018-29-ccl, art. 293] | collectivité dotée de la personnalité juridique, la région gère les affaires régionales selon la libre administration et œuvre au développement global et solidaire (p. 1747) |
+| []{#r-fl-comp-region-propres}Région : compétences propres | code des collectivités locales [@loi-org-2018-29-ccl, art. 296] | plans de développement régional, élaborés par la démocratie participative ; services et équipements à dimension régionale ; transport non urbain à l'intérieur de la région |
+| []{#r-fl-comp-region-partagees}Région : compétences partagées | code des collectivités locales [@loi-org-2018-29-ccl, art. 297] | aménagement du territoire régional ; zones industrielles, artisanales et touristiques ; formation professionnelle ; transport urbain à dimension régionale ; marché du travail (p. 1748) |
+| []{#r-fl-comp-region-transferees}Région : compétences transférées | code des collectivités locales [@loi-org-2018-29-ccl, art. 298] | entretien des infrastructures et équipements régionaux ; soutien à l'investissement ; même obligation de transfert des moyens que pour la commune |
+| []{#r-fl-comp-district}Le district | code des collectivités locales [@loi-org-2018-29-ccl, art. 356 à 358] | le district est chargé de l'intégration et de la complémentarité du développement entre les zones qui le composent (art. 356, p. 1756) ; son conseil est élu par les membres des conseils municipaux et régionaux (art. 357) ; il délibère sur les plans d'aménagement et propose des projets — transport, communications, eau, électricité, assainissement — que les autorités centrales et locales financent (art. 358) |
+| []{#r-fl-comp-region-abrogation}Abrogation, le [18 mars 2025]{.insecable} | loi organique n° 2025-4 du [12 mars 2025]{.insecable} [@loi-org2025-4, art. 10] | sont abrogées « les dispositions relatives à la région et au district » du code des collectivités locales (art. 10) |
+
+: La région et le district dans le code de 2018, article par article {#tbl-fl-comp-region-district}
+
+::::
+
+### Délégation ou dévolution : la lecture de la doctrine {#sec-fl-comp-delegation-devolution}
+
+Le code ne parle ni de délégation ni de dévolution : il dit compétences propres, partagées, transférées (« ذاتية », « مشتركة », « منقولة »). Le rapprochement avec les notions du chapitre des notions (@sec-fl-trois-volets) est une lecture de la doctrine, qui n'est pas unanime sur la correspondance.
 
 - Dans une note à la Direction générale des collectivités locales, Dafflon et Gilbert distinguent la tâche « entièrement dévolue », que la collectivité conçoit, décide et met en œuvre, de la tâche dont elle n'assure que la mise en œuvre d'un composant décidé plus haut, qui relève de la délégation. Ils proposent d'attribuer chaque tâche en cinq étapes : la préciser, identifier ses composants, choisir le niveau de chaque composant selon des critères explicites, évaluer les besoins, puis la financer [@dafflon-gilbert-2016-dgcl, p. 1-2].
 - Hammami, Dafflon et Gilbert relèvent que la Constitution de 2014 parle de compétences « déléguées », le code de compétences « transférées », et se demandent si l'écart tient à la traduction. Selon eux, le code esquisse la définition des compétences propres et partagées et reste silencieux sur celle des compétences transférées [@hammami-dafflon-gilbert-2021, p. 27-28]. Une responsabilité « partagée » sans autre précision conduit, à leurs yeux, à l'inaction, à une recentralisation de fait ou aux doublons ; ils proposent de la préciser composant par composant [@hammami-dafflon-gilbert-2021, p. 28-29].
-- Dans leur ouvrage de 2018, les mêmes auteurs observent que dresser la liste des compétences ne dit rien de la frontière entre délégation et dévolution, où demeure une « zone grise » [@dafflon-gilbert-2018, p. 135].
+- Dans leur ouvrage de 2018, Dafflon et Gilbert observent que dresser la liste des compétences ne dit rien de la frontière entre délégation et dévolution, où demeure une « zone grise » [@dafflon-gilbert-2018, p. 135].
 
-## L'organisation {#sec-fl-comp-organisation}
+## Qui décide, qui contrôle {#sec-fl-comp-organisation}
 
-### Conseils, présidents, administrations {#sec-fl-comp-organes}
-
-Le conseil municipal, élu, élit son président et ses adjoints [@loi-org-2018-29-ccl, art. 203]. Le président représente la commune ; sous le contrôle du conseil, il gère les biens, dirige l'administration, nomme les agents dans la limite du budget, prépare le budget et en ordonnance les dépenses, gère les recettes et recense les immeubles et les activités soumis aux impôts locaux [@loi-org-2018-29-ccl, art. 256-257]. L'administration municipale est placée sous l'autorité du président et dirigée par un secrétaire général ; ses agents relèvent du statut général de la fonction publique et sont payés sur le budget communal, l'autorité centrale pouvant mettre à sa disposition des agents qu'elle continue de rémunérer [@loi-org-2018-29-ccl, art. 271-273]. Les dépenses de rémunération ne doivent pas dépasser la moitié des ressources ordinaires réalisées ; au-delà, la collectivité soumet un programme de maîtrise à la Haute instance des finances locales et à l'autorité centrale [@loi-org-2018-29-ccl, art. 9].
-
-Le code ne permet de dissoudre un conseil qu'à défaut d'autre solution, par décret gouvernemental motivé, après consultation du Conseil supérieur des collectivités locales et sur avis de la Haute cour administrative, pour violation grave de la loi ou blocage manifeste des intérêts des habitants ; un recours devant le tribunal administratif suspend l'effet de la dissolution jusqu'au rejet de la demande de sursis [@loi-org-2018-29-ccl, art. 204]. La région avait des organes de même structure [@loi-org-2018-29-ccl, art. 299 et suiv.].
-
-### Les instances nationales {#sec-fl-comp-instances}
-
-Le code crée deux instances nationales.
-
-- Le [Conseil supérieur des collectivités locales](#g-conseil-superieur-collectivites-locales) (« المجلس الأعلى للجماعات المحلية ») réunit des présidents de communes, élus par leurs pairs dans chaque région ou désignés selon la population et l'indice de développement, et les présidents des régions et des districts [@loi-org-2018-29-ccl, art. 48]. Il traite du développement et de l'équilibre entre les régions et de la coopération entre collectivités [@loi-org-2018-29-ccl, art. 47] ; son avis est obligatoire sur les projets de loi qui intéressent les collectivités, notamment sur la planification, le budget et les finances locales [@loi-org-2018-29-ccl, art. 53], et il évalue les transferts de compétences [@loi-org-2018-29-ccl, art. 55].
-- La [Haute instance des finances locales](#g-haute-instance-finances-locales) (« الهيئة العليا للمالية المحلية »), placée sous la supervision du Conseil supérieur, propose au gouvernement les ressources transférables aux collectivités et les critères de leur répartition, étudie au préalable le coût des transferts de compétences et suit l'endettement local [@loi-org-2018-29-ccl, art. 61]. Elle est présidée par un magistrat financier et réunit des représentants du Conseil supérieur, des ministères concernés et de la Caisse des prêts et de soutien des collectivités locales [@loi-org-2018-29-ccl, art. 63].
-
-Le code inscrit enfin la décentralisation dans la durée : l'État en fournit « progressivement » les conditions, une loi d'orientation votée dans la première année de chaque législature fixe un plan de soutien, et le gouvernement en rend compte chaque année au Parlement [@loi-org-2018-29-ccl, art. 66-68].
+Dans le code de 2018, le conseil élu délibère, son président exécute et le juge contrôle ; deux instances nationales suivent les finances locales. Ce qui s'en applique à une commune sans conseil élu est à l'état du droit (@sec-fl-comp-depuis-2023).
 
 ### Le contrôle des actes {#sec-fl-comp-controle}
 
-Le code substitue au contrôle préalable de 1975 un contrôle par le juge. Les arrêtés réglementaires de la commune sont exécutoires cinq jours après leur publication en ligne au *Journal officiel des collectivités locales* [@loi-org-2018-29-ccl, art. 276]. Le gouverneur, de sa propre initiative ou à la demande d'un intéressé, peut contester les décisions communales devant le juge administratif et demander le sursis à leur exécution ; tout intéressé peut aussi saisir directement le juge [@loi-org-2018-29-ccl, art. 278]. La nullité des délibérations auxquelles ont pris part des membres intéressés est prononcée par le tribunal administratif, non plus par le gouverneur [@loi-org-2018-29-ccl, art. 279]. Au regard des notions, la tutelle passe ainsi d'un contrôle *a priori*, d'opportunité, à un contrôle *a posteriori*, de légalité (@tbl-fl-tutelles).
+Le contrôle du budget est au chapitre des budgets (@sec-fl-budg-ccl-controle). Pour les autres actes de la commune, le code de 2018 remplace l'approbation préalable de 1975 par le recours au juge : la [tutelle](#g-tutelle) passe d'un contrôle *a priori*, d'opportunité, à un contrôle *a posteriori*, de légalité (@tbl-fl-comp-controle ; pour ces notions, @tbl-fl-tutelles).
 
-| Objet | Loi organique des communes de 1975 | Code des collectivités locales de 2018 |
+| Objet | [Loi organique des communes de 1975](#r-fl-comp-controle-1975) | [Code des collectivités locales de 2018](#r-fl-comp-controle-recours) |
 |---|---|---|
-| Budget, emprunts, taxes et droits | approbation préalable de l'autorité supérieure | délibération exécutoire ; recours devant la Cour des comptes contre les décisions budgétaires |
+| Budget, emprunts, taxes et droits | approbation préalable de l'autorité supérieure | délibération exécutoire ; recours devant la Cour des comptes contre les décisions budgétaires (@tbl-fl-budg-controle) |
 | Délibération contraire à la loi | nullité déclarée par arrêté du gouverneur | recours du gouverneur ou d'un intéressé devant le juge administratif |
 | Dissolution du conseil | décret motivé | décret gouvernemental motivé, après avis du Conseil supérieur et de la Haute cour administrative |
 
 : Le contrôle des actes de la commune, en 1975 et en 2018 {#tbl-fl-comp-controle}
 
-Sources : @loi75-33, art. 12, 38-46 ; @loi-org-2018-29-ccl, art. 197, 204 et 276-279.
+- **Des arrêtés exécutoires après leur publication.** Les arrêtés réglementaires de la commune sont exécutoires cinq jours après leur publication en ligne ([article 276](#r-fl-comp-controle-execution)).
+- **Le recours du gouverneur ou d'un intéressé.** Le gouverneur peut demander au juge administratif le sursis à l'exécution d'une décision communale ([article 278](#r-fl-comp-controle-recours)) ; le tribunal administratif, et non plus le gouverneur, annule les délibérations auxquelles ont pris part des membres intéressés ([article 279](#r-fl-comp-controle-nullite)).
+- **La dissolution, sous le contrôle du juge.** Un conseil n'est dissous qu'à défaut d'autre solution, pour violation grave de la loi ou blocage manifeste des intérêts des habitants ; un recours devant le tribunal administratif en suspend l'effet ([article 204](#r-fl-comp-controle-dissolution)). La dissolution générale de 2023 ne suit pas cette procédure (@sec-fl-comp-dissolution-2023).
 
-Le contrôle budgétaire et financier est exposé avec les budgets (@sec-fl-budgets-comptes).
+:::: {.chronologie-repliable titre="Contrôle des actes de la commune : articles de 1975 et de 2018 (art. 197, 204, 276 à 279)"}
 
-### Services, entreprises et agences {#sec-fl-comp-agences}
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-comp-controle-1975}Approbation, nullité et dissolution, 1975 | loi organique des communes [@loi75-33, art. 12, 38-46] | approbation préalable de douze matières, nullité déclarée par le gouverneur, dissolution par décret motivé : le détail est au registre de la loi de 1975 (@tbl-fl-comp-1975) |
+| []{#r-fl-comp-controle-execution}Exécution des arrêtés, 2018 | code des collectivités locales [@loi-org-2018-29-ccl, art. 276] | les arrêtés réglementaires de la commune sont exécutoires cinq jours après leur publication en ligne au *Journal officiel des collectivités locales* (p. 1745) |
+| []{#r-fl-comp-controle-recours}Recours devant le juge administratif, 2018 | code des collectivités locales [@loi-org-2018-29-ccl, art. 278] | le gouverneur, de sa propre initiative ou à la demande d'un intéressé, peut contester les décisions communales devant le juge administratif et demander le sursis à leur exécution ; tout intéressé peut aussi saisir directement le juge (p. 1745-1746) |
+| []{#r-fl-comp-controle-nullite}Membres intéressés, 2018 | code des collectivités locales [@loi-org-2018-29-ccl, art. 279] | la nullité des délibérations auxquelles ont pris part des membres intéressés est prononcée par le tribunal administratif |
+| []{#r-fl-comp-controle-budget}Décisions budgétaires, 2018 | code des collectivités locales [@loi-org-2018-29-ccl, art. 197, 204 et 276-279] | recours devant la Cour des comptes contre les décisions budgétaires (art. 197, p. 1735) ; le détail est au chapitre des budgets (@sec-fl-budg-ccl-controle) |
+| []{#r-fl-comp-controle-dissolution}Dissolution d'un conseil, 2018 | code des collectivités locales [@loi-org-2018-29-ccl, art. 204] | un conseil n'est dissous qu'à défaut d'autre solution, par décret gouvernemental motivé, après consultation du Conseil supérieur des collectivités locales et sur avis de la Haute cour administrative, pour violation grave de la loi ou blocage manifeste des intérêts des habitants ; un recours devant le tribunal administratif suspend l'effet de la dissolution jusqu'au rejet de la demande de sursis (p. 1735) |
 
-La collectivité gère ses services directement ou indirectement, selon l'efficacité et la qualité du service [@loi-org-2018-29-ccl, art. 80] : en régie, éventuellement dotée d'un budget spécial et d'une comptabilité d'entreprise [@loi-org-2018-29-ccl, art. 81-82], par concession [@loi-org-2018-29-ccl, art. 83], ou par des entreprises publiques locales, établissements publics locaux ou sociétés anonymes dont les collectivités détiennent plus de la moitié du capital [@loi-org-2018-29-ccl, art. 103-104].
+: Le contrôle des actes de la commune : textes et articles, 1975 et 2018 {#tbl-fl-comp-controle-articles}
 
-Deux organismes nationaux servent les collectivités. La Caisse des prêts et de soutien des collectivités locales succède depuis le 1er janvier 1976 à la caisse des prêts aux communes ; elle consent aux collectivités des prêts d'investissement et des subventions [@loi75-37, art. 1, 4 et 6]. Son rôle dans le financement de l'investissement relève du chapitre des transferts de l'État. Le Centre de formation et d'appui à la décentralisation accueille la commission nationale de formation des élus, que le code institue en même temps qu'il réserve à la formation au moins 0,5 % du budget de fonctionnement des collectivités [@loi-org-2018-29-ccl, art. 43-44].
+::::
 
-D'autres tâches locales sont exercées par des organismes nationaux : agences foncières, de réhabilitation urbaine ou de protection du littoral, sociétés de distribution d'eau et d'électricité, office de l'assainissement, agence de gestion des déchets. Selon Dafflon et Gilbert, une partie de ces tâches entre dans le champ des compétences qui pourraient être dévolues ou déléguées aux collectivités, et leur exercice par des organismes nationaux prive celles-ci de ressources potentielles [@dafflon-gilbert-2018, p. 130-134].
+### Les instances nationales {#sec-fl-comp-instances}
+
+Le code crée deux instances nationales : la [Haute instance des finances locales](#g-haute-instance-finances-locales) (« الهيئة العليا للمالية المحلية »), qui propose les ressources à transférer aux collectivités, chiffre le coût des transferts de compétences et suit l'endettement local, et le [Conseil supérieur des collectivités locales](#g-conseil-superieur-collectivites-locales) (« المجلس الأعلى للجماعات المحلية »), consulté sur les projets de loi qui intéressent les collectivités.
+
+- **La Haute instance des finances locales.** Placée sous la supervision du Conseil supérieur, elle propose aussi au gouvernement les critères de répartition des ressources transférées ([article 61](#r-fl-comp-instances-haute)). Un magistrat financier la préside ([article 63](#r-fl-comp-instances-haute-composition)).
+- **Le Conseil supérieur des collectivités locales.** Formé de présidents de communes, de régions et de districts, il donne un avis obligatoire sur les projets de loi qui intéressent les collectivités, notamment sur la planification, le budget et les finances locales, et il évalue les transferts de compétences ([articles 47, 53 et 55](#r-fl-comp-instances-conseil)).
+- **Une décentralisation progressive.** L'État fournit progressivement les conditions de la décentralisation ; une loi d'orientation votée dans la première année de chaque législature fixe un plan de soutien, et le gouvernement en rend compte chaque année au Parlement ([articles 66 à 68](#r-fl-comp-instances-progressivite)).
+
+- **La mise en place de la Haute instance.** Ses membres sont désignés par [un décret du 10 avril 2019](#r-fl-comp-instances-2019), et leurs indemnités fixées par [un décret du 16 janvier 2020](#r-fl-comp-instances-2020).
+
+<!-- TODO (rédacteur) : dès que la fiche `r-fl-conseil-superieur-collectivites` est dans docs/recherches.yml (elle est créée avec la conversion de `_histoire.qmd`, champ `ou` : ce fichier, `#sec-fl-comp-instances`), ajouter au point ci-dessus « Aucun texte de mise en place du Conseil supérieur n'est identifié ici. » et, juste après la liste, l'ancre RECHERCHE r-fl-conseil-superieur-collectivites. Sans la fiche, l'ancre fait échouer `recherches.py verifier`. -->
+
+<!-- TODO (documentaliste) : activité de la Haute instance des finances locales (avis, rapports annuels de l'art. 62) : rien n'en est dit au chapitre ; décret d'application de l'art. 9 du code ; sort des deux instances à l'entrée en vigueur du décret-loi n° 2026-4, où la Haute instance ne paraît pas (indice tiré du texte converti, à confirmer à l'image). -->
+
+:::: {.chronologie-repliable titre="Conseil supérieur des collectivités locales et Haute instance des finances locales : composition et attributions (art. 47 à 68) ; désignation et indemnités des membres de la Haute instance, 2019-2020"}
+
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-comp-instances-conseil}Conseil supérieur : attributions | code des collectivités locales [@loi-org-2018-29-ccl, art. 47, 53 et 55] | il traite du développement et de l'équilibre entre les régions et de la coopération entre collectivités (art. 47, p. 1715) ; son avis est obligatoire sur les projets de loi qui intéressent les collectivités, notamment sur la planification, le budget et les finances locales (art. 53) ; il évalue les transferts de compétences (art. 55) |
+| []{#r-fl-comp-instances-conseil-composition}Conseil supérieur : composition | code des collectivités locales [@loi-org-2018-29-ccl, art. 48] | des présidents de communes, élus par leurs pairs dans chaque région ou désignés selon la population et l'indice de développement, et les présidents des régions et des districts |
+| []{#r-fl-comp-instances-haute}Haute instance : attributions | code des collectivités locales [@loi-org-2018-29-ccl, art. 61] | placée sous la supervision du Conseil supérieur, elle propose au gouvernement les ressources transférables aux collectivités et les critères de leur répartition, étudie au préalable le coût des transferts de compétences et suit l'endettement local (p. 1716-1717) |
+| []{#r-fl-comp-instances-haute-composition}Haute instance : composition | code des collectivités locales [@loi-org-2018-29-ccl, art. 63] | présidée par un magistrat financier, elle réunit des représentants du Conseil supérieur, des ministères concernés et de la Caisse des prêts et de soutien des collectivités locales |
+| []{#r-fl-comp-instances-2019}Haute instance : désignation des membres, décret du [10 avril 2019]{.insecable} | décret gouvernemental n° 2019-351 [@decret-gouv2019-351, p. 1043] | sont désignés une présidente, juge financier, et sept membres : un représentant du ministère chargé des affaires locales, deux du ministère des finances, un du ministère chargé des domaines de l'État, un de la Caisse des prêts et de soutien des collectivités locales, un expert-comptable et un comptable |
+| []{#r-fl-comp-instances-2020}Haute instance : indemnités, décret du [16 janvier 2020]{.insecable} | décret gouvernemental n° 2020-31 [@decret-gouv2020-31, p. 301-302] | indemnités et avantages du président et des membres de la Haute instance, imputés au budget du ministère des affaires locales et de l'environnement |
+| []{#r-fl-comp-instances-progressivite}Progressivité | code des collectivités locales [@loi-org-2018-29-ccl, art. 66-68] | l'État fournit progressivement les conditions de la décentralisation ; une loi d'orientation votée dans la première année de chaque législature fixe un plan de soutien ; le gouvernement en rend compte chaque année au Parlement (p. 1717) |
+
+: Les instances nationales du code des collectivités locales, article par article {#tbl-fl-comp-instances}
+
+::::
+
+### Conseil, président, administration {#sec-fl-comp-organes}
+
+Dans la commune du code de 2018, le conseil élu délibère, le président qu'il élit prépare le budget et en ordonnance les dépenses, et un secrétaire général dirige l'administration sous l'autorité du président.
+
+- **Le président, ordonnateur.** Sous le contrôle du conseil, il gère les biens et les recettes, nomme les agents dans la limite du budget et recense les immeubles et les activités soumis aux impôts locaux ([articles 203, 256 et 257](#r-fl-comp-organes-president)).
+- **Des agents payés sur le budget communal.** Les agents relèvent du statut général de la fonction publique ; l'autorité centrale peut mettre à la disposition de la commune des agents qu'elle continue de rémunérer ([articles 271 à 273](#r-fl-comp-organes-administration)). Les rémunérations ne doivent pas dépasser la moitié des ressources ordinaires réalisées ([article 9](#r-fl-comp-organes-plafond)) ; la règle de prévision correspondante et ce qu'elles pèsent sont au chapitre des budgets (@sec-fl-budg-ccl-principes, @sec-fl-budg-depenses).
+- **Le secrétaire général.** Depuis le 14 mars 2023, il gère les affaires courantes de la commune sans conseil ni président élus, sous la supervision du gouverneur (@sec-fl-comp-dissolution-2023).
+
+:::: {.chronologie-repliable titre="Organes de la commune dans le code de 2018 : conseil, président, administration (art. 9, 203, 256, 257, 271 à 273, 299)"}
+
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-comp-organes-president}Conseil et président | code des collectivités locales [@loi-org-2018-29-ccl, art. 203, 256 et 257] | le conseil municipal, élu, élit son président et ses adjoints (art. 203, p. 1735) ; le président représente la commune ; sous le contrôle du conseil, il gère les biens, dirige l'administration, nomme les agents dans la limite du budget, prépare le budget et en ordonnance les dépenses, gère les recettes et recense les immeubles et les activités soumis aux impôts locaux (art. 256 et 257, p. 1742) |
+| []{#r-fl-comp-organes-administration}Administration municipale | code des collectivités locales [@loi-org-2018-29-ccl, art. 271-273] | l'administration municipale est placée sous l'autorité du président et dirigée par un secrétaire général ; ses agents relèvent du statut général de la fonction publique et sont payés sur le budget communal, l'autorité centrale pouvant mettre à sa disposition des agents qu'elle continue de rémunérer (p. 1745) |
+| []{#r-fl-comp-organes-plafond}Plafond des rémunérations | code des collectivités locales [@loi-org-2018-29-ccl, art. 9] | obligation permanente : les dépenses de rémunération ne doivent pas dépasser la moitié des ressources ordinaires réalisées, « الموارد الاعتيادية المحققة » ; au-delà, la collectivité soumet un programme de maîtrise à la Haute instance des finances locales et à l'autorité centrale, exécuté par convention avec celle-ci (p. 1710-1711). L'article 135, règle de prévision du budget, mesure le même plafond de moitié sur les ressources du titre I de l'année écoulée (@tbl-fl-budg-art135) |
+| []{#r-fl-comp-organes-region}Organes de la région | code des collectivités locales [@loi-org-2018-29-ccl, art. 299 et suiv.] | la région avait des organes de même structure ; ces articles sont abrogés depuis le [18 mars 2025]{.insecable} (@sec-fl-comp-region-district) |
+
+: Les organes de la commune dans le code de 2018, article par article {#tbl-fl-comp-organes}
+
+La dissolution d'un conseil (article 204) est au registre du contrôle des actes (@tbl-fl-comp-controle-articles).
+
+::::
+
+### Services, entreprises et organismes nationaux {#sec-fl-comp-agences}
+
+La Caisse des prêts et de soutien des collectivités locales, qui [depuis 1976](#r-fl-comp-agences-caisse) prête aux collectivités et subventionne leurs investissements, a sa section au chapitre des transferts (@sec-fl-cpscl). Une partie des tâches locales est, elle, exercée par des organismes nationaux, hors du budget des collectivités.
+
+- **Les organismes nationaux.** Agences foncières, de réhabilitation urbaine ou de protection du littoral, sociétés de distribution d'eau et d'électricité, office de l'assainissement, agence de gestion des déchets : selon Dafflon et Gilbert, une partie de leurs tâches pourrait être dévolue ou déléguée aux collectivités, que leur exercice par des organismes nationaux prive de ressources potentielles [@dafflon-gilbert-2018, p. 130-134].
+- **Les modes de gestion.** La collectivité gère ses services en régie, par concession ou par des entreprises publiques locales ([articles 80 à 83, 103 et 104](#r-fl-comp-agences-gestion)).
+- **La formation des élus.** Le code réserve à la formation au moins 0,5 % du budget de fonctionnement des collectivités ([articles 43 et 44](#r-fl-comp-agences-formation)).
 
 <!-- TODO (documentaliste) : lire les textes de création des agences citées par Dafflon et Gilbert (AFD 2018, § 4.4) et le décret n° 2004-1182 sur le Centre de formation et d'appui à la décentralisation (JORT n° 44 de 2004, couche texte décalée), pour dater leur création. -->
 
-## Depuis 2023 {#sec-fl-comp-depuis-2023}
+:::: {.chronologie-repliable titre="Gestion des services locaux : régie, concession, entreprises publiques locales, formation (art. 43, 44, 80 à 83, 103 et 104) ; caisse des prêts et de soutien des collectivités locales, loi de 1975"}
 
-### La dissolution des conseils municipaux {#sec-fl-comp-dissolution-2023}
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-comp-agences-gestion}Modes de gestion des services | code des collectivités locales [@loi-org-2018-29-ccl, art. 80 à 83, 103 et 104] | la collectivité gère ses services directement ou indirectement, selon l'efficacité et la qualité du service (art. 80, p. 1719) : en régie, éventuellement dotée d'un budget spécial et d'une comptabilité d'entreprise (art. 81 et 82), par concession (art. 83), ou par des entreprises publiques locales, établissements publics locaux ou sociétés anonymes dont les collectivités détiennent plus de la moitié du capital (art. 103 et 104, p. 1722) |
+| []{#r-fl-comp-agences-formation}Formation | code des collectivités locales [@loi-org-2018-29-ccl, art. 43-44] | au moins 0,5 % du budget de fonctionnement des collectivités est réservé à la formation ; une commission nationale de formation des élus est instituée, accueillie par le Centre de formation et d'appui à la décentralisation (p. 1714) |
+| []{#r-fl-comp-agences-caisse}Caisse des prêts et de soutien, [1^er^ janvier 1976]{.insecable} | loi n° 75-37 du [14 mai 1975]{.insecable} [@loi75-37, art. 1, 4 et 6] | la caisse succède depuis le [1^er^ janvier 1976]{.insecable} à la caisse des prêts aux communes ; elle consent aux collectivités des prêts d'investissement et des subventions (@sec-fl-cpscl) |
 
-Le décret-loi n° 2023-9 du 8 mars 2023 dissout tous les conseils municipaux, jusqu'à l'élection de nouveaux conseils. Le chargé du secrétariat général de chaque commune en gère les affaires courantes et l'administration, « sous la supervision du gouverneur » [@decretloi2023-9, art. 1-2]. Publié au *Journal officiel* du 9 mars 2023 et déposé le même jour, il est exécutoire le 14 mars 2023. La procédure de dissolution du code, conseil par conseil et sous le contrôle du juge, n'est pas celle qu'il suit : il abroge les dispositions contraires [@decretloi2023-9, art. 3].
+: Gestion des services locaux, formation et caisse des prêts : textes et articles {#tbl-fl-comp-agences}
+
+::::
+
+## L'état du droit en octobre 2026 {#sec-fl-comp-depuis-2023}
+
+La suite des textes de 2023 à 2025 est au chapitre d'histoire (@sec-fl-hist-2023-2025). En octobre 2026, deux régimes coexistent : des communes sans conseil élu, dont le code de 2018 reste le régime, et des conseils locaux, régionaux et de districts régis par une loi organique de 2025 (@tbl-fl-comp-2026). Un décret-loi du 30 septembre 2026 abroge le code de 2018 ; il n'est pas entré en vigueur.
+
+| Question | [Commune](#r-fl-comp-2023-dissolution) | [Conseils locaux, régionaux et de districts](#r-fl-comp-2025-statut) |
+|---|---|---|
+| Organe délibérant | aucun conseil élu depuis le [14 mars 2023]{.insecable} | des conseils élus de proche en proche (@sec-fl-hist-2023-2025) |
+| Compétences | celles du code de 2018 : propres, partagées, transférées | délibération sur les projets de plans de développement |
+| Budget | règles du code de 2018 ; l'autorité qui l'adopte n'est pas établie (@sec-fl-budg-etat-du-droit) | préparé et approuvé selon la loi organique du budget de 1975 (@sec-fl-budg-2025) |
+| Exécution | le secrétaire général, pour les affaires courantes | le président du conseil, ordonnateur |
+| Contrôle | supervision du gouverneur | approbation du budget par la tutelle, selon la loi de 1975 |
+
+: Qui décide dans les collectivités locales, en octobre 2026 {#tbl-fl-comp-2026}
+
+### La commune sans conseil élu {#sec-fl-comp-dissolution-2023}
+
+Depuis le 14 mars 2023, aucune commune n'a de conseil élu : le chargé du secrétariat général de chaque commune en gère les affaires courantes, « الشؤون العادية », et l'administration, sous la supervision du gouverneur ([décret-loi du 8 mars 2023](#r-fl-comp-2023-dissolution)).
+
+- **Ce qui est établi.** Tous les conseils municipaux sont dissous jusqu'à l'élection de nouveaux conseils, par un texte qui abroge les dispositions contraires et ne suit pas la procédure de dissolution du code (@sec-fl-comp-controle). [La loi organique de 2025](#r-fl-comp-2025-abrogations) n'abroge expressément que les dispositions du code relatives à la région et au district ; elle abroge aussi, sans les nommer, les dispositions contraires. En l'état des textes identifiés, les compétences de la commune restent celles du code (@sec-fl-comp-commune).
+- **Ce qui ne l'est pas.** Le décret-loi ne dit pas ce que recouvrent les affaires courantes. Ni l'autorité qui adopte le budget communal (@sec-fl-budg-etat-du-droit), ni celle qui arrête le tarif d'un droit ou d'une redevance (@sec-fl-moduler-droits) ne sont établies, en l'état des textes identifiés.
+- **Un texte publié, qui n'est pas en vigueur.** [Le décret-loi du 30 septembre 2026](#r-fl-comp-2026) relatif aux conseils municipaux abroge le code de 2018, mais n'entre en vigueur qu'après la proclamation des résultats définitifs des premières élections municipales qui suivent sa publication ; jusque-là, le décret-loi de 2023 reste applicable. Les délibérations du conseil municipal sur le budget et sur les droits et redevances n'y sont exécutoires qu'après l'approbation du gouverneur ; quand un conseil est dissous, le secrétaire général gère les affaires courantes sous la supervision du gouverneur, comme depuis 2023, jusqu'à la nomination d'une commission provisoire de gestion.
 
 Aucun texte convoquant l'élection de nouveaux conseils municipaux n'est identifié ici. Les communes restent donc, en l'état des textes identifiés, administrées par leur secrétaire général sous la supervision du gouverneur.
 
 <!-- RECHERCHE r-fl-elections-municipales-apres-2023 : texte convoquant ou organisant l'élection de nouveaux conseils municipaux après le décret-loi n° 2023-9 (voir docs/recherches.yml) -->
 
+<!-- TODO (documentaliste) : décret-loi n° 2026-4 — art. 14 à 27, 35 à 48 et 100 à 131 à lire pour ce qu'ils disent des compétences de la commune, de ses organes et du contrôle de ses actes ; mode de nomination de la commission provisoire de gestion ; absence de la délégation spéciale, de la libre administration et du juge administratif à confirmer à l'image. Repris ici : art. 12, 29, 30, 136 et 139 d'après docs/notes/finances-locales-impots-lectures-2026-10-09.md, § D.5 ; art. 1, 55 et 56 d'après docs/notes/finances-locales-institutions-lectures-2026-10-10.md, § 3. À son entrée en vigueur, les sections sur le code de 2018 passent à l'histoire et l'état du droit est à récrire. -->
+
+:::: {.chronologie-repliable titre="Communes sans conseil élu : décret-loi n° 2023-9 de dissolution des conseils municipaux, articles 1 à 3, et décret-loi n° 2026-4 relatif aux conseils municipaux, articles 1, 12, 29, 30, 55, 56, 136 et 139 — édition arabe"}
+
+| Date d'effet | Texte et article | Ce que dit le texte |
+|---|---|---|
+| []{#r-fl-comp-2023-dissolution}[14 mars 2023]{.insecable} | décret-loi n° 2023-9 du [8 mars 2023]{.insecable}, relatif à la dissolution des conseils municipaux [@decretloi2023-9, art. 1 à 3] | tous les conseils municipaux sont dissous jusqu'à l'élection de nouveaux conseils (art. 1) ; le chargé du secrétariat général de la commune en gère les affaires courantes, « الشؤون العادية », et l'administration, sous la supervision du gouverneur, « تحت إشراف والي الجهة » (art. 2) ; les dispositions contraires sont abrogées (art. 3) ; le texte n'a ni visa ni considérant et n'énonce pas de but ; page 694 |
+| []{#r-fl-comp-2026}après les prochaines élections municipales | décret-loi n° 2026-4 du [30 septembre 2026]{.insecable}, relatif aux conseils municipaux [@decretloi2026-4, art. 1, 12, 29, 30, 55, 56, 136 et 139] | art. 1 (p. 2058) : le conseil municipal, collectivité locale dotée de la personnalité juridique et de l'autonomie administrative et financière, fournit des services au citoyen et gère les intérêts municipaux dans le cadre de l'unité de l'État ; art. 12 (p. 2059) : le conseil délibère notamment sur les droits, redevances et taxes, leurs exonérations et réductions ; art. 29 (p. 2062) : les délibérations sont exécutoires un mois après leur dépôt au siège du gouvernorat ; art. 30 : celles qui portent sur le budget, l'emprunt, les aliénations, les plans d'aménagement et les droits communaux ne le sont qu'après l'approbation du gouverneur ; art. 55 (p. 2065) : le conseil est dissous de plein droit en cas de démission collective ou si le budget n'est pas adopté dans le délai ; art. 56 : il peut être dissous par décret pour manquement grave à la loi ou blocage manifeste des services municipaux ou des intérêts des habitants ; le secrétaire général gère alors les affaires courantes sous la supervision du gouverneur, « تحت إشراف الوالي », jusqu'à la nomination d'une commission provisoire de gestion, « لجنة مؤقتة للتسيير » ; art. 136 (p. 2074) : entrée en vigueur après la proclamation des résultats définitifs des premières élections municipales qui suivent la publication, le décret-loi n° 2023-9 restant applicable jusque-là ; art. 139 : abrogation du code des collectivités locales de 2018 |
+
+: Les textes de la commune sans conseil élu, 2023-2026 {#tbl-fl-comp-textes-2023-2026}
+
+::::
+
 ### Conseils locaux, régionaux et de districts {#sec-fl-comp-conseils-2025}
 
-La loi organique n° 2025-4 du 12 mars 2025, exécutoire le 18 mars 2025, considère les conseils locaux, les conseils régionaux et les conseils de districts « comme des collectivités locales jouissant de la personnalité juridique et de l'autonomie administrative et financière ». Ces conseils « délibèrent sur les projets de plans de développement locaux, régionaux et de districts » ; leur organisation est fixée par décret [@loi-org2025-4, art. 1]. Le [conseil local](#g-conseil-local) siège à la délégation, le conseil régional et le conseil de district au gouvernorat [@loi-org2025-4, art. 7]. Leur budget relève de la loi organique du budget des collectivités locales de 1975, et leur président en est l'ordonnateur [@loi-org2025-4, art. 5 et 8].
+Depuis le 18 mars 2025, les [conseils locaux](#g-conseil-local), les conseils régionaux et les conseils de districts ont le statut de collectivités locales ; ils œuvrent à l'inclusion économique et sociale, délibèrent sur les projets de plans de développement et n'ont pas de liste de compétences propres, partagées ou transférées ([loi organique du 12 mars 2025](#r-fl-comp-2025-statut)). Leur élection, de proche en proche, est au chapitre d'histoire (@sec-fl-hist-2023-2025).
 
-La loi abroge les dispositions du code de 2018 relatives à la région et au district, la loi organique de 1989 sur les conseils régionaux et la loi de 1994 sur les conseils locaux de développement ; les biens, le patrimoine et les dotations des anciens conseils régionaux passent à l'État et sont mis à la disposition du gouverneur [@loi-org2025-4, art. 9-10]. Les dispositions du code relatives à la commune ne sont pas visées par cette abrogation expresse ; la loi abroge aussi, sans les nommer, les dispositions « antérieures contraires ».
+- **Une compétence de délibération.** Les conseils « délibèrent sur les projets de plans de développement locaux, régionaux et de districts » ; les conseils de districts transmettent leurs synthèses au ministère chargé de la planification ([décret du 4 avril 2025](#r-fl-comp-2025-decret)).
+- **Leur budget.** Il relève de la loi organique du budget des collectivités locales de 1975, et non du code de 2018 ; le président de chaque conseil le prépare, le soumet au conseil et l'exécute ([articles 5 et 8](#r-fl-comp-2025-budget), @sec-fl-budg-2025).
+- **Les biens des anciens conseils régionaux.** Les biens, le patrimoine et les dotations des conseils régionaux de la loi de 1989 passent à l'État et sont mis à la disposition du gouverneur ([article 9](#r-fl-comp-2025-biens)).
 
-Le décret n° 2025-177 du 4 avril 2025, exécutoire le 10 avril 2025, organise le fonctionnement des nouveaux conseils : leur président supervise la préparation du budget, le soumet au conseil et l'exécute ; les conseils délibèrent sur les propositions de plans de développement, et les conseils de districts transmettent leurs synthèses au ministère chargé de la planification [@decret2025-177, art. 1, 5 et 7].
+:::: {.chronologie-repliable titre="Conseils locaux, régionaux et de districts : loi organique n° 2025-4 et décret n° 2025-177, articles et pages"}
 
-Au regard des notions, ces conseils ont une compétence de délibération sur des plans de développement, non une liste de compétences propres, partagées ou transférées.
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-fl-comp-2025-statut}Statut et compétence | loi organique n° 2025-4 du [12 mars 2025]{.insecable} [@loi-org2025-4, art. 1] | les conseils locaux, les conseils régionaux et les conseils de districts sont considérés « comme des collectivités locales jouissant de la personnalité juridique et de l'autonomie administrative et financière » ; ils œuvrent à l'inclusion économique et sociale globale et équitable et « délibèrent sur les projets de plans de développement locaux, régionaux et de districts », dans le cadre de l'unité de l'État ; leur organisation est fixée par décret (p. 706) |
+| []{#r-fl-comp-2025-siege}Siège | loi organique n° 2025-4 [@loi-org2025-4, art. 7] | le conseil local siège à la délégation, le conseil régional et le conseil de district au gouvernorat |
+| []{#r-fl-comp-2025-budget}Budget et ordonnateur | loi organique n° 2025-4 [@loi-org2025-4, art. 5 et 8] | le budget des conseils relève de la loi organique du budget des collectivités locales de 1975 ; leur président en est l'ordonnateur |
+| []{#r-fl-comp-2025-biens}Biens des anciens conseils régionaux | loi organique n° 2025-4 [@loi-org2025-4, art. 9] | les biens, le patrimoine et les dotations des anciens conseils régionaux passent à l'État et sont mis à la disposition du gouverneur (art. 9) |
+| []{#r-fl-comp-2025-abrogations}Abrogations | loi organique n° 2025-4 [@loi-org2025-4, art. 10] | sont abrogées les dispositions du code de 2018 relatives à la région et au district, la loi organique de 1989 sur les conseils régionaux et la loi de 1994 sur les conseils locaux de développement, ainsi que, sans être nommées, les dispositions « antérieures contraires » (art. 10, p. 707) ; les dispositions du code relatives à la commune ne sont pas visées par cette abrogation expresse |
+| []{#r-fl-comp-2025-decret}Fonctionnement des conseils, [10 avril 2025]{.insecable} | décret n° 2025-177 du [4 avril 2025]{.insecable} [@decret2025-177, art. 1, 5 et 7] | le président supervise la préparation du budget, le soumet au conseil et l'exécute (art. 1) ; les conseils délibèrent sur les propositions de plans de développement (art. 5) ; les conseils de districts transmettent leurs synthèses au ministère chargé de la planification (art. 7) ; page 836 |
 
-## La longue période {#sec-fl-comp-longue-periode}
+: Les conseils locaux, régionaux et de districts : textes et articles, 2025 {#tbl-fl-comp-2025}
 
-Les budgets des collectivités ne classent pas leurs dépenses par fonction : Dafflon relève l'absence de toute classification fonctionnelle dans la nomenclature du code [@dafflon-2021-budget-local]. Les dépenses des communes se lisent donc par titre et par nature — rémunérations, service de la dette —, au chapitre des budgets (@sec-fl-budg-nomenclature, @sec-fl-budg-depenses).
+::::
 
-<!-- TODO (documentaliste) : dépenses des collectivités par fonction et part dans la dépense publique : aucune série identifiée (les budgets par commune de la Direction générale sont par nature) ; à chercher dans les rapports de la Haute instance des finances locales et les comptes de la nation. -->
+<!-- TODO (documentaliste) : loi organique n° 2025-4, art. 1er — les passages entre guillemets viennent de la couche texte de l'édition française (JORT n° 30 de 2025, p. 706) ; à relire à l'image. -->
