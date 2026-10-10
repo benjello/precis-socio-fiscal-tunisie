@@ -124,7 +124,8 @@ def _entete_grille(g: dict) -> str:
 MOTS = {
     "fr": {
         "branches": ("Branche", "Convention : signature, arrêté d'agrément, date d'effet",
-                     "Grille<br>(unité)", "Bas et haut tracés, avec leur période"),
+                     "Grille<br>(unité)",
+                     "Bas et haut tracés, avec leur période ; sans courbe, dates d'effet"),
         "creation": "{convention}<br>agréée le {agrement}<br>en vigueur le {effet}",
         "grilles": ("Branche", "Grille<br>(unité)", "Lignes", "Colonnes", "Cases",
                     "Dates d'effet", "Période", "Cases vides"),
@@ -133,6 +134,8 @@ MOTS = {
         "forme": "{l} ligne{sl} et {c} colonne{sc}, soit {n} case{sn}",
         "forme_une": "Dans la base législative, la grille a {forme} à chacune de ses {d} "
                      "dates d'effet, de {debut} à {fin}.",
+        "forme_une_date": "Dans la base législative, la grille a {forme} à sa seule date "
+                          "d'effet, en {debut}.",
         "forme_tete": "Dans la base législative, la grille a ",
         "forme_de_a": "{forme} de {debut} à {fin}", "forme_en": "{forme} en {debut}",
         "forme_depuis": "{forme} depuis {debut}", "puis": " ; puis ",
@@ -144,7 +147,8 @@ MOTS = {
     },
     "ar": {
         "branches": ("الفرع", "الاتفاقية: الإمضاء، قرار المصادقة، تاريخ المفعول",
-                     "الشبكة<br>(الوحدة)", "أسفل الشبكة وأعلاها المرسومان، مع فترتهما"),
+                     "الشبكة<br>(الوحدة)",
+                     "أسفل الشبكة وأعلاها المرسومان، مع فترتهما؛ دون منحنى، تواريخ المفعول"),
         "creation": "{convention}<br>قرار المصادقة: {agrement}<br>تاريخ المفعول: {effet}",
         "grilles": ("الفرع", "الشبكة<br>(الوحدة)", "الأسطر", "الأعمدة", "الخانات",
                     "تواريخ المفعول", "الفترة", "الخانات الفارغة"),
@@ -152,6 +156,8 @@ MOTS = {
         "forme": "{l} سطرًا و{c} عمودًا، أي {n} خانة",
         "forme_une": "في القاعدة التشريعية، للشبكة {forme} في كلّ من تواريخ مفعولها "
                      "الـ{d}، من {debut} إلى {fin}.",
+        "forme_une_date": "في القاعدة التشريعية، للشبكة {forme} في تاريخ مفعولها الوحيد، "
+                          "سنة {debut}.",
         "forme_tete": "في القاعدة التشريعية، للشبكة ",
         "forme_de_a": "{forme} من {debut} إلى {fin}", "forme_en": "{forme} سنة {debut}",
         "forme_depuis": "{forme} منذ {debut}", "puis": "؛ ثمّ ",
@@ -249,17 +255,23 @@ def forme_grille(nom: str, cle: str | None = None) -> str:
     """« Dans la base législative, la grille a 18 lignes et 17 colonnes, soit 306 cases, de
     1994 à 1998 ; puis 18 lignes et 21 colonnes, soit 378 cases, depuis 1999. » : les formes
     successives de la grille, telles que l'index les compte. Aucun de ces nombres n'est
-    écrit dans l'annexe."""
+    écrit dans l'annexe.
+
+    Une grille sans courbe est close ou n'a qu'une ou deux dates : sa dernière forme ne vaut
+    pas « depuis » mais « de … à … », et une grille d'une seule date n'a pas « chacune de
+    ses dates »."""
     m = MOTS[figtools.lang()]
     g = une_grille(nom, cle)
     formes = g["formes"]
+    if g["dates"] == 1:
+        return m["forme_une_date"].format(forme=_forme(formes[0]), debut=g["debut"][:4])
     if len(formes) == 1:
         return m["forme_une"].format(forme=_forme(formes[0]), d=g["dates"],
                                      debut=g["debut"][:4], fin=g["fin"][:4])
     morceaux = []
     for rang, f in enumerate(formes):
         debut, fin = f["depuis"][:4], f["jusqu_a"][:4]
-        modele = ("forme_depuis" if rang == len(formes) - 1
+        modele = ("forme_depuis" if rang == len(formes) - 1 and g["tracee"]
                   else "forme_en" if debut == fin else "forme_de_a")
         morceaux.append(m[modele].format(forme=_forme(f), debut=debut, fin=fin))
     return m["forme_tete"] + m["puis"].join(morceaux) + "."

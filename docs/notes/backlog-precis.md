@@ -1503,13 +1503,17 @@ grille, et écrit `tables/cc_index.yml`, `tables/cc_<branche>_grilles.liens.yml`
 nœud le plus profond commun aux cases de même grandeur et de même unité de la branche (`grilles`).
 La création de chaque convention et la suite des avenants viennent des notes, non des paramètres.
 
-**État au 9 octobre 2026, version 0.128 du modèle** (borne `VERSION_MINIMALE` relevée à 0.128) :
-trois branches, cinq grilles, toutes tracées — textile horaire (7 lignes × 21 colonnes, 147
-cases) et mensuelle (18 × 21, 378) ; bâtiment, personnel occasionnel (9 lignes, puis 10 depuis
-2008 ; 11 cases en tout) et personnel
-administratif et technique (19 × 11, 209) ; assurances (22 × 14, 308) —, soit 1 053 cases,
-29 148 valeurs et **144 cases vides** (illisibles sur le fascicule : 127 dans la grille mensuelle
-du textile, 16 dans la grille mensuelle du bâtiment, 1 dans les assurances). L'index ne liste
+**État au 10 octobre 2026, version 0.129 du modèle** (borne `VERSION_MINIMALE` relevée à 0.129,
+publiée le 10 octobre 2026) : trois branches, sept grilles, dont cinq tracées — textile horaire
+(7 lignes × 21 colonnes, 147 cases) et mensuelle (18 × 21, 378) ; bâtiment, personnel occasionnel
+(9 lignes, puis 10 depuis 2008 ; 11 cases en tout) et personnel administratif et technique
+(19 × 11, 209) ; assurances, grilles de 1993 à 2021 (22 × 14, 308) — et deux sans courbe, aux
+assurances : grilles de 1975 à 1992 (`salaire_base_avant_1993`, 22 × 12, 264 cases, 6 dates,
+motif « antérieure ») et grille n° 1 du 1er juin 1990 (`salaire_base_avant_1993_grille_1_de_1990`,
+22 × 12, 264 cases, 1 date, motif « peu de dates »). Soit 1 581 cases, 30 935 valeurs et
+**193 cases vides** (illisibles sur le fascicule : 127 dans la grille mensuelle du textile, 16
+dans la grille mensuelle du bâtiment, 1 dans les assurances de 1993 à 2021, 49 dans les
+assurances de 1975 à 1992). Ces comptes sont ceux de `cc_index.yml`. L'index ne liste
 plus les cases une à une : il porte, par grille, ses comptes, sa période et les fiches de sa case
 du bas et de sa case du haut ; la série d'une grille ne porte que ces deux cases.
 
@@ -1530,25 +1534,33 @@ Règles écrites dans le générateur (fonctions pures, testées dans
   l'annexe la mentionne, avec sa période et son lien (`autres_grilles`) ;
 - **la vue en tableau d'un nœud n'existe sur le site qu'en deçà de 200 cases**
   (`PLAFOND_VUE_TABLEAU`) : l'adresse `…/table/` des trois grandes grilles répond 404. Elles ont
-  un lien par ligne (`liens_grille`) — 18, 19 et 22 liens —, rendus en une ligne sous la figure.
+  un lien par ligne (`liens_grille`) — 18, 19 et 22 liens, et 22 pour chacune des deux grilles
+  des assurances antérieures à 1993 (264 cases) —, rendus en une ligne sous la figure.
 
 Ce qui lui manque :
 
-- **régénérer quand la 0.129 du modèle sera publiée** (openfisca-tunisia, PR n° 490, ouverte le
-  9 octobre 2026) : elle ajoute aux assurances deux nœuds frères de `salaire_base` —
-  `salaire_base_avant_1993` (1975-1992, clos au 1er juin 1993) et
-  `salaire_base_avant_1993_grille_1_de_1990` (une seule date). Le générateur y est prêt, et un
-  test en imite la forme : la première sort « antérieure », la seconde « peu de dates », aucune
-  ne fournit de bas ni de haut, et `cc.autres_grilles("assurances")` — déjà appelé dans l'annexe —
-  les mentionnera avec leur période et leurs liens (un par ligne : 264 cases chacune). À faire
-  alors : relever la borne, régénérer, relire le libellé de leurs liens (il vient des
-  `short_label` des deux nœuds) et écrire dans la section des assurances ce que sont ces grilles
-  (hors indemnité complémentaire provisoire) ; le tableau `@tbl-mt-cc-grilles-hors-series` du
-  chapitre pourra alors renvoyer à l'annexe pour les assurances ;
-- **les 144 cases vides** : à relire sur un meilleur exemplaire des fascicules — textile mensuel,
+- **assurances, grilles antérieures au 1er juin 1993 — versées le 10 octobre 2026** (modèle
+  0.129, PR n° 490) : section `#sec-mt-cc-annexe-assurances-avant-1993` de l'annexe, sans
+  courbe, mentionnées par `cc.autres_grilles` avec leur période et un lien par ligne (22 liens
+  par grille, 44 adresses). Restent : **aucune grille entre le 1er janvier 1975 et le 1er janvier
+  1983** et le **protocole d'accord du 8 juin 1984** relatif à l'augmentation des salaires, que
+  vise l'avenant n° 1 — restent à obtenir (documentaliste ; présence au corpus non vérifiée ; TODO dans l'annexe, sans fiche de `docs/recherches.yml` : aucune recherche
+  n'a été menée) ; la série change d'entreprises entre le 1er janvier 1989 (avenant n° 1) et le
+  1er juin 1990 (grille n° 2), ce que l'annexe dit sans le mesurer ; deux cases à réserve
+  (échelle 16, échelon 12, de 1990 à 1992 : éditions divergentes ; échelle 4, échelon 9, 1975 :
+  rectificatif de 1976) ne sont dites que dans la base législative ; le libellé des deux
+  grilles vient des `short_label` du modèle, inégaux (« Salaire de base avant le 1er juin
+  1993 » ne dit pas « hors indemnité complémentaire provisoire », l'autre le dit ; « 1er » sans
+  exposant) — à harmoniser en amont ; le tableau `@tbl-mt-cc-grilles-hors-series` du chapitre
+  ne donne que le textile et le bâtiment : l'annexe y renvoie pour eux, et le chapitre peut
+  renvoyer à l'annexe pour les assurances ; `index.qmd` du volume dit encore que l'annexe suit
+  le bas et le haut « de chaque grille » ; `cc.forme_grille` (une seule date ; dernière forme
+  d'une grille sans courbe) n'a pas de test — le module `figures/conventions.py` n'en a aucun ;
+- **les 193 cases vides** : à relire sur un meilleur exemplaire des fascicules — textile mensuel,
   grilles de 1994 (1 case), 1999 (42), 2000 (30), 2002, 2003 et 2004 (18 chacune, l'échelon 18
   des dix-huit lignes) ; bâtiment mensuel, grilles de 1996 (7), 1998 (5), 2001, 2002, 2003 et
-  2004 (1 chacune) ; assurances, grille de 1996 (1). Le compte de l'annexe est calculé : il
+  2004 (1 chacune) ; assurances, grille de 1996 (1), grilles de 1983 (1) et de 1989 (48, télécopie dégradée que
+  reproduisent les deux éditions). Le compte de l'annexe est calculé : il
   baissera à la régénération quand une case sera lue en amont ;
 - **la vue en tableau des grandes grilles** : le site de la base législative ne rend pas en un
   tableau un nœud de 200 cases ou plus ; si ce plafond est levé en amont (visualiseur des
@@ -1591,7 +1603,8 @@ Ce qui lui manque :
   à faire à la livraison de sa traduction. L'index et les liens arabes sont engendrés, mentions
   en arabe, mais les noms des branches, des grilles et des cases y restent en français (les
   `short_label` du modèle n'existent qu'en français) : à trancher avec le relecteur de l'arabe,
-  comme l'intitulé arabe du renvoi (`INTRO_BASE` de `figures/conventions.py`,
+  comme l'en-tête arabe de la quatrième colonne du tableau d'ouverture (« دون منحنى، تواريخ
+  المفعول », posé le 10 octobre 2026), l'intitulé arabe du renvoi (`INTRO_BASE` de `figures/conventions.py`,
   `cases` de `MOTS` dans le générateur) et les mentions arabes posées le 9 octobre 2026 avec les
   grilles entières (`MOTS` de `figures/conventions.py` : en-têtes des deux tableaux, « سطرًا
   بسطر », « الخانات الفارغة » ; `cases_ligne` du générateur) ;

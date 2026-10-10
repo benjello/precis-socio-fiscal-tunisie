@@ -3,8 +3,8 @@
   libelle: Assurances
   description: Convention collective nationale, puis sectorielle, des assurances
   liens_grilles: cc_assurances_grilles.liens.yml
-  cases: 308
-  cases_vides: 1
+  cases: 836
+  cases_vides: 50
   grilles:
   - cle: salaire_base
     libelle: ''
@@ -62,6 +62,64 @@
     tracee: true
     motif: courante
     serie: cc-grille-assurances-salaire-base
+  - cle: salaire_base_avant_1993
+    libelle: ''
+    grandeur: Salaire de base avant le 1er juin 1993
+    unite: دينار في الشهر
+    parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base_avant_1993
+    lignes: 22
+    colonnes: 12
+    cases: 264
+    formes:
+    - depuis: '1975-01-01'
+      jusqu_a: '1975-01-01'
+      lignes: 21
+      colonnes: 12
+      cases: 252
+    - depuis: '1983-01-01'
+      jusqu_a: '1992-06-01'
+      lignes: 22
+      colonnes: 12
+      cases: 264
+    dates: 6
+    debut: '1975-01-01'
+    fin: '1992-06-01'
+    cloture: '1993-06-01'
+    valeurs: 1523
+    cases_vides: 49
+    dates_cases_vides:
+    - '1983-01-01'
+    - '1989-01-01'
+    lignes_closes: 0
+    hors_rang: []
+    tracee: false
+    motif: anterieure
+  - cle: salaire_base_avant_1993_grille_1_de_1990
+    libelle: ''
+    grandeur: Salaire de base, grille n° 1 du 1er juin 1990, hors indemnité complémentaire
+      provisoire
+    unite: دينار في الشهر
+    parametre: parameters/marche_travail/conventions_collectives/assurances/salaire_base_avant_1993_grille_1_de_1990
+    lignes: 22
+    colonnes: 12
+    cases: 264
+    formes:
+    - depuis: '1990-06-01'
+      jusqu_a: '1990-06-01'
+      lignes: 22
+      colonnes: 12
+      cases: 264
+    dates: 1
+    debut: '1990-06-01'
+    fin: '1990-06-01'
+    cloture: '1991-06-01'
+    valeurs: 264
+    cases_vides: 0
+    dates_cases_vides: []
+    lignes_closes: 0
+    hors_rang: []
+    tracee: false
+    motif: peu_de_dates
 - branche: batiment
   libelle: Bâtiment et travaux publics
   description: Convention collective nationale, puis sectorielle, du bâtiment et des
