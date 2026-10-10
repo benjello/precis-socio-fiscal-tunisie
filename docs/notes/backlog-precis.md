@@ -2159,10 +2159,10 @@ figures nouvelles restent à traduire.
   JORT n° 39 de 2018 ; édition française **à obtenir** (absente de pist.tn et du corpus, comme
   celle du n° 51 de 2018). Les traductions du volume sont de travail, sans guillemets. Le nom
   français des niveaux (« باب », « قسم ») n'est pas établi.
-- **Art. 237 ou art. 139 ?** `_competences.qmd` cite l'art. 237 du code pour le pouvoir du
-  conseil de fixer droits, redevances et taxes, `_taxes_redevances.qmd` l'art. 139 (lu à
-  l'image). Non tranché ; un `TODO (documentaliste)` aux deux endroits. **Lisible dans le
-  corpus.**
+- **Art. 237 et art. 139 du code de 2018** : tranché le 10 octobre 2026 — l'art. 139 donne aux
+  conseils élus de toute collectivité le pouvoir d'arrêter le montant ou le tarif des droits ;
+  l'art. 237 en fait une matière du conseil municipal. Les deux références sont justes
+  (`finances-locales-institutions-lectures-2026-10-10.md`, § 4) ; `TODO` retirés.
 - **Tableaux de paramètres** : tous faits main, avec leur `TODO (rédacteur)` ; aucun paramètre
   des finances locales dans la base. Constats versés à `docs/notes/backlog-modele.md`.
 - **Sources des séries** : présentées une fois, `#sec-fl-lp-sources` (ch. 5). Six séries de
@@ -2260,18 +2260,63 @@ communes) ; numéro spécial du JORT du 10 février 2014 (Constitution), **à ob
 des conseils dissous en 2011-2012 et nombre de communes de 1957 à 2014 ; texte arabe de la
 Constitution de 2014 ; décrets d'avant 1956, **à obtenir**.
 
-### Chapitre 4 — Compétences (`_competences.qmd`) — non converti
+### Chapitre 4 — Les compétences : qui fait quoi, qui décide (`_competences.qmd`) — converti le 10 octobre 2026
 
-Rédigé le 5 octobre 2026 (note `finances-locales-competences.md`). **Mis à jour le 9 octobre
-2026** sur deux points : sa longue période ne promet plus de chiffres « au chapitre de la
-longue période » — elle dit qu'aucune classification fonctionnelle n'existe (Dafflon) et
-renvoie aux dépenses par nature du chapitre des budgets ; un `TODO` pose la question de
-l'art. 237. Fiches : `r-fl-loi-competences-partagees`, `r-fl-elections-municipales-apres-2023`.
-**Lacunes** : modificatifs, fin du texte et édition arabe de la loi n° 75-33, et son sort après
-2018 ; textes de création des agences citées par Dafflon et Gilbert et décret n° 2004-1182
-(couche texte décalée) ; **dépenses par fonction et part dans la dépense publique : aucune
-série identifiée**, à chercher dans les rapports de la Haute instance des finances locales —
-**à obtenir**.
+`.domicile-unique`, d'après `finances-locales-histoire-competences-notions-plan-architecte.md`
+(§ 2.4 et 3.2). Rédigé le 5 octobre 2026 (note `finances-locales-competences.md`) sous le titre
+« Compétences et organisation ». Plan : vue d'ensemble (`tbl-fl-comp-etats`, trois états du
+droit) ; avant 2018 (commune de 1975, conseil régional de 1989) ; 2018, trois catégories de
+compétences ; qui décide, qui contrôle ; **l'état du droit en octobre 2026**, le seul du volume
+(`#sec-fl-comp-depuis-2023`, `tbl-fl-comp-2026`). Douze blocs repliés, tous des registres à
+ancres `r-fl-comp-…` (66 lignes). Premier plan : 3 417 mots contre 3 520 (repliés : 3 920) ;
+la cible du plan (− 38 %) n'est pas tenue, parce que deux tableaux courts et l'état du droit
+entrent au premier plan. Tous les identifiants sont gardés ; `sec-fl-comp-longue-periode`
+devient une ancre de la vue d'ensemble. Le décret-loi n° 2026-4 entre au chapitre, comme texte
+publié et non entré en vigueur (art. 1, 12, 29, 30, 55, 56, 136 et 139). Fiches :
+`r-fl-loi-competences-partagees`, `r-fl-elections-municipales-apres-2023`.
+
+- **Renvois au chapitre d'histoire** : par ses identifiants d'avant conversion
+  (`sec-fl-hist-lois-1975`, `-modifications`, `-code-2018`, `-2023-2025`, tous gardés comme titres par
+  le plan) ; à porter sur
+  `sec-fl-hist-2026` pour le décret-loi de 2026 quand ce chapitre sera converti.
+- **Redite retirée, qui vit à `_histoire.qmd`** : place de la loi de 1975 dans les six lois et
+  délégation spéciale au premier plan (`#sec-fl-hist-lois-1975`) ; statut du gouvernorat et
+  composition du conseil régional (`#sec-fl-hist-1989`, que le plan fond dans
+  `#sec-fl-hist-modifications`) ; récit des décrets-lois de 2023 et
+  statut des conseils de 2025 (`#sec-fl-hist-2023-2025`). Les articles correspondants restent
+  dans les registres repliés de ce chapitre.
+- **Art. 237 et art. 139 ; art. 9 et art. 135 du code de 2018** : tranché par
+  `finances-locales-institutions-lectures-2026-10-10.md` (§ 4 et 5) — deux règles compatibles à
+  chaque fois, aucune référence à corriger ; les `TODO` sont retirés, ici et à
+  `_taxes_redevances.qmd`. **Reste** : `_budgets.qmd` ne cite pas l'art. 9 (obligation
+  permanente sur les ressources ordinaires réalisées, programme de maîtrise), que seul le
+  registre des organes de ce chapitre porte ; décret d'application de l'art. 9 non cherché.
+- **Matières soumises à approbation, 1995 et 2006** : la note du 10 octobre (§ 6) donne neuf
+  matières en 1995 et onze en 2006, et la renumérotation de l'art. 42 en art. 25 ; non portées
+  au registre faute des clés `loi-org85-43`, `loi-org95-68` et `loi-org2006-48` (**bibliographe**), un
+  `TODO (rédacteur)` les attend sous `tbl-fl-comp-1975`. L'avant → après de 1995 n'est pas
+  établi.
+- **Dates d'effet** : loi n° 75-33, exécutoire le 22 mai 1975 (aucune clause ; rectificatif du
+  1er août 1975 à lire) ; loi organique n° 89-11 (p. 220-221), non établie, le registre des
+  dates donne sa publication. **Lisible dans le corpus, à l'image.**
+- **Instances nationales** : désignation des membres de la Haute instance (décret gouvernemental
+  n° 2019-351) et indemnités (n° 2020-31) portées au registre, clés versées dans les deux
+  `references.json` ; mise en place du Conseil supérieur non identifiée : la phrase et l'ancre
+  `r-fl-conseil-superieur-collectivites` attendent la fiche, créée avec la conversion de
+  `_histoire.qmd` (`TODO (rédacteur)` sous `#sec-fl-comp-instances`) ; activité de la Haute
+  instance : rien d'établi.
+- **Lacunes** : modificatifs et édition arabe de la loi n° 75-33, et son sort après 2018 ;
+  textes de création des agences citées par Dafflon et Gilbert et décret n° 2004-1182 (couche
+  texte décalée) ; activité de la Haute instance des finances locales et existence du
+  Conseil supérieur ; décret-loi n° 2026-4, art. 14 à 27, 35 à 48 et 100 à 131, à lire pour
+  les compétences, les organes et le contrôle (art. 1, 55 et 56 repris de la note du
+  10 octobre, § 3) ; qui adopte le budget communal et arrête un tarif depuis le
+  14 mars 2023 ; **dépenses par fonction et part dans la dépense publique : aucune série
+  identifiée**, à chercher dans les rapports de la Haute instance — **à obtenir**.
+- **Tableau de tête** : `tbl-fl-comp-etats` suit le plan, sauf deux cases — la case « 1975, qui
+  fixe les droits » dit « le conseil, sous approbation préalable » (art. 42 de 1975) avant le
+  renvoi ; la « supervision du gouverneur » y est sans guillemets (traduction de travail).
+- **Livre arabe** : chapitre non traduit ; douze attributs `titre` à traduire.
 
 ### Chapitre 5 — Budgets et comptes (`_budgets.qmd`) — converti le 9 octobre 2026
 
