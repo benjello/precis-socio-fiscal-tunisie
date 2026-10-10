@@ -21,7 +21,7 @@ dont aucune valeur ne datait de 1960.
 Ne sont PAS générés, faute de contrepartie dans le modèle : les tableaux de structure
 juridique (conditions d'âge de l'enfant à charge, congés de maternité, multiplicateurs du
 capital décès, tarifs de l'aide médicale, matrice régime × prestation). Les aides
-ponctuelles de l'AMEN social sont désormais générées avec leur référence à l'arrêté de 2022.
+ponctuelles de l'Amen social sont désormais générées avec leur référence à l'arrêté de 2022.
 """
 
 from __future__ import annotations
@@ -69,7 +69,7 @@ MOTS = {
         "supp": "Supplément mensuel", "handicap": "Carte de handicap",
         "age_min": "Âge minimal", "age_max": "Âge maximal",
         "age_etudiant": "Âge maximal en études, apprentissage ou formation",
-        "amen_transfert": "Base mensuelle du transfert AMEN",
+        "amen_transfert": "Base mensuelle du transfert de l'Amen social",
         "afnc": "Allocation familiale non contributive, par enfant de moins de 6 ans",
         "afnc_6_18": "Allocation familiale, par enfant de 6 à 18 ans",
         "menage": "Composition du ménage", "plafond_revenu": "Plafond de revenu mensuel",
