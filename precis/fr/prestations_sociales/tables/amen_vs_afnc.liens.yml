@@ -1,6 +1,9 @@
 - libelle: Base mensuelle du transfert AMEN
   parametre: parameters/prestations/non_contributives/amen_social/allocation_base.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.amen_social.allocation_base/table/
-- libelle: Allocation familiale non contributive, par enfant
+- libelle: Allocation familiale non contributive, par enfant de moins de 6 ans
   parametre: parameters/prestations/non_contributives/allocation_familiale.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.allocation_familiale/table/
+- libelle: Allocation familiale, par enfant de 6 à 18 ans
+  parametre: parameters/prestations/non_contributives/allocation_familiale_6_18.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.allocation_familiale_6_18/table/

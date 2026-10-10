@@ -34,7 +34,7 @@ La chaîne de l'assistance ne comporte pas les mêmes maillons que celle de la s
 2. **La condition de ressources.** Elle est exprimée en fractions ou multiples du salaire minimum et modulée par la taille du ménage.
 3. **Le contingentement.** Deux des dispositifs majeurs — les cartes de soins gratuits et à tarifs réduits — ne sont pas des droits ouverts sous condition de ressources mais des **prestations à enveloppe fermée**, attribuées dans la limite d'un nombre global de cartes et de quotas régionaux dont les décrets renvoient la fixation à des arrêtés conjoints.
 4. **Le score.** Depuis 2020, un modèle de *scoring* fondé sur le « test des moyens approximé » (*proxy means test*) et sur une définition multidimensionnelle de la pauvreté classe les demandeurs. L'arrêté du 19 mai 2020 en énumère les dimensions sans fixer les pondérations [@arrete-2020-05-19-scoring, art. 2-3].
-5. **Le montant et la durée.** Le montant du transfert AMEN est fixé par des arrêtés conjoints depuis 2020. Pour le PNAFN, les arrêtés de 2024 et de 2025 constatent un montant et organisent son relèvement.
+5. **Le montant et la durée.** Le montant du transfert AMEN est fixé par des arrêtés conjoints depuis 2020. Pour le PNAFN, les arrêtés de 2024, de 2025 et de 2026 constatent un montant et organisent son relèvement.
 
 Les sections qui suivent exposent séparément ces cinq étapes et les textes qui les régissent.
 
@@ -93,9 +93,11 @@ figtools.figure_tabs(
         "La conversion utilise l'indice annuel moyen des prix à la consommation : pour "
         "les changements intervenus en cours d'année, elle ne mesure donc pas les prix du "
         "mois exact. Le palier de "
-        "180 dinars est constaté par l'arrêté conjoint du 10 juillet 2024, sans que "
-        "celui-ci établisse la date encodée du 1er avril 2018. Les sources "
-        "administratives de toutes les dates et des autres montants restent à fiabiliser."
+        "180 dinars est constaté par l'arrêté conjoint du 10 juillet 2024 à la date de sa "
+        "publication ; cet arrêté ne dit pas depuis quand ce montant est servi, et la date "
+        "du 1er avril 2018 à laquelle la série le place n'est établie par aucun texte "
+        "identifié. Les sources administratives de toutes les dates et des autres montants "
+        "restent à établir."
     ),
     generated="{{< meta date >}}",
 )
@@ -104,13 +106,13 @@ figtools.figure_tabs(
 <!-- TODO (documentaliste) : fiabiliser les onze montants et dates de la série PNAFN ;
 voir https://github.com/openfisca/openfisca-tunisia/issues/462. -->
 
-L'arrêté conjoint du 10 juillet 2024 constate que l'allocation est fixée à 180 dinars à la date de sa publication et autorise son augmentation dans la limite du [transfert monétaire](#g-transfert-monetaire) de l'AMEN social, alors fixé à 240 dinars [@arrete-2024-07-10-allocation-pauvres, art. 1]. Il ne fixe donc pas à lui seul le montant effectivement servi après ce relèvement. L'arrêté conjoint du 29 août 2025 porte de 240 à 260 dinars le montant auquel l'allocation peut être alignée, avec effet au 1^er^ janvier 2025 [@arrete-2025-08-29-allocation-pauvres, art. 1-2].
+L'arrêté conjoint du 10 juillet 2024 constate que l'allocation est fixée à 180 dinars à la date de sa publication et autorise son augmentation dans la limite du [transfert monétaire](#g-transfert-monetaire) de l'AMEN social, alors fixé à 240 dinars [@arrete-2024-07-10-allocation-pauvres, art. 1]. Il ne fixe donc pas à lui seul le montant effectivement servi après ce relèvement. L'arrêté conjoint du 29 août 2025 porte de 240 à 260 dinars le montant auquel l'allocation peut être alignée, avec effet au 1^er^ janvier 2025 [@arrete-2025-08-29-allocation-pauvres, art. 1-2]. L'arrêté conjoint du 5 août 2026 remplace à son tour l'article premier de l'arrêté de 2024 : l'allocation, « fixée à 260 dinars à la date de la publication du présent arrêté conjoint », est augmentée « sans que le montant de cette allocation ne dépasse le montant des transferts monétaires mensuels directs attribués dans le cadre du programme « AMEN SOCIAL », fixé à 280 dinars » ; l'arrêté entre en application à partir du 1^er^ janvier 2026 [@arrete-2026-08-05-allocation-pauvres, art. 1-2]. D'un arrêté à l'autre, le montant constaté de l'allocation passe ainsi de 180 dinars en juillet 2024 à 260 dinars en août 2026, et la limite de son relèvement de 240 dinars à 260 puis à 280 dinars, chaque limite étant le montant de base du transfert de l'AMEN social pour l'année considérée (@tbl-amen-base). Comme celui de 2024, l'arrêté de 2026 fixe une limite et non le montant servi après le relèvement. Ses visas citent, avant le décret gouvernemental n° 2020-317 et les arrêtés de 2020, des textes des régimes de pensions — la loi n° 2002-32, le décret n° 74-499 et le décret-loi n° 2020-30 —, et son dispositif ne dit pas qui perçoit l'« allocation monétaire mensuelle attribuée aux catégories pauvres » : par ses visas, ce texte ne se rattache donc pas au seul programme national d'aide aux familles nécessiteuses [@arrete-2026-08-05-allocation-pauvres]. Le [livre « Retraites »](../retraites/_secteur_prive.html#sec-rtns-autres-elements) cite le même arrêté pour ce que ses visas établissent des régimes de pensions.
 
 L'arrêté de 2024 conserve enfin deux traces de l'architecture ancienne : le coût est imputé sur le budget de l'État, et les caisses adressent aux ministères des décomptes périodiques « chaque trois mois », rappel du versement trimestriel d'origine.
 
 ### Une superposition, non un remplacement
 
-L'article 23 de la loi organique de 2019 dispose que les programmes d'aides sociales en vigueur à la date de sa promulgation « demeurent exécutoires jusqu'à leur adaptation » avec ses dispositions [@loi-amen-social-2019, art. 23]. Les arrêtés de 2024 et de 2025 distinguent l'allocation du programme du transfert AMEN et organisent le relèvement de la première par référence au second.
+L'article 23 de la loi organique de 2019 dispose que les programmes d'aides sociales en vigueur à la date de sa promulgation « demeurent exécutoires jusqu'à leur adaptation » avec ses dispositions [@loi-amen-social-2019, art. 23]. Les arrêtés de 2024, de 2025 et de 2026 distinguent l'allocation du programme du transfert AMEN et organisent le relèvement de la première par référence au second.
 
 ## L'aide médicale
 
@@ -201,18 +203,24 @@ L'article 5 prévoit un Conseil supérieur du développement social présidé pa
 
 Le décret gouvernemental n° 2020-317 fixe les conditions et procédures de bénéfice, de retrait et d'opposition. La condition d'âge est de 18 ans au moins à la date du dépôt, « dans les cas exceptionnels » ramenée à 16 ans [@decret-gouv-2020-317-amen, art. 4]. La condition de revenu porte sur la **moyenne mensuelle des revenus nets, permanents et non permanents, des douze derniers mois** précédant la demande, tous revenus confondus.
 
-| Composition du ménage | Plafond de revenu mensuel |
-|---|---|
-| Individu | 2/3 × salaire minimum |
-| 2 personnes | 1 × salaire minimum |
-| 3 ou 4 personnes | 1,5 × salaire minimum |
-| 5 personnes et plus | 2 × salaire minimum |
+```{python}
+#| echo: false
+#| output: asis
+table("amen_plafonds_ressources",
+      "Plafonds de ressources de l'AMEN social selon la composition du ménage, en multiples du salaire minimum : état au 25 mai 2020",
+      "tbl-amen-plafonds")
+```
 
-Source : @decret-gouv-2020-317-amen, art. 5. Membres pris en compte : les conjoints, les enfants et les ascendants à charge « vivant sous le même toit et partageant la nourriture ».
+Membres pris en compte : les conjoints, les enfants et les ascendants à charge « vivant sous le même toit et partageant la nourriture » [@decret-gouv-2020-317-amen, art. 5]. L'article 5 exprime ces plafonds en multiples du « salaire minimum interprofessionnel garanti des différentes professions », sans dire lequel des deux régimes de ce salaire, celui de 48 heures ou celui de 40 heures par semaine, il retient ; la formule est la même dans les éditions française et arabe, et le texte qui préciserait ce régime n'est pas identifié ici. <!-- RECHERCHE r-amen-smig-regime : texte, circulaire ou formulaire disant quel régime du salaire minimum (48 ou 40 heures) sert de référence aux plafonds de l'art. 5 du décret gouvernemental n° 2020-317 (voir docs/recherches.yml) --> Le décret ne comporte pas de clause d'entrée en vigueur : publié au *Journal officiel* du 20 mai 2020, déposé le même jour au siège du gouvernorat de Tunis, il devient exécutoire cinq jours après ce dépôt, jour du dépôt non compté, soit le **25 mai 2020** [@loi93-64, art. 2].
 
 Deux conditions de patrimoine s'y ajoutent : ne pas être propriétaire d'un logement secondaire, et n'avoir réalisé, ni soi-même ni un membre de la famille, d'opérations d'achat ou de vente dépassant trente fois le salaire minimum au cours des trois dernières années [@decret-gouv-2020-317-amen, art. 6-7]. En sus de ces conditions, le modèle de *scoring* sert à identifier et classer les bénéficiaires [@decret-gouv-2020-317-amen, art. 9].
 
-Une **majoration d'un demi-salaire minimum** est prévue si un membre de la famille est lourdement handicapé. La portée exacte de cette majoration n'est pas réglée par le texte : le décret énonce que « la moyenne de revenu mensuel mentionnée au premier alinéa du présent article est majorée d'un demi salaire minimum », or le premier alinéa de l'article 5 est le chapeau et non les quatre paliers qui le suivent. Selon qu'on lit la majoration comme uniforme sur chaque palier ou comme attachée au seul premier cas, les seuils diffèrent. Ce chapitre ne tranche pas cette lecture.
+Une **majoration d'un demi-salaire minimum** est prévue si un membre de la famille est lourdement handicapé : « la moyenne de revenu mensuel mentionnée au premier alinéa du présent article est majorée d'un demi salaire minimum interprofessionnel des différentes professions si un des membres de la famille est lourdement handicapé » [@decret-gouv-2020-317-amen, art. 5]. Tel que le texte se lit dans ses deux éditions, la majoration porte sur le plafond du premier alinéa de l'article 5, et ce premier alinéa est celui qui contient les quatre tirets : l'article 7 du même décret appelle en effet « deuxième alinéa de l'article 5 » l'alinéa qui définit les membres de la famille [@decret-gouv-2020-317-amen, art. 7]. La majoration vaut donc pour chacun des quatre paliers, et rien dans le texte ne la réserve à l'un d'eux. Les deux éditions divergent en revanche sur la personne handicapée : l'édition arabe exige un membre de la famille **à charge** (« في الكفالة »), l'édition française dit seulement « un des membres de la famille ». La majoration relève un plafond de ressources, non un montant versé. Cette lecture repose sur le décompte des alinéas de l'article 5 ; les plafonds du tableau (@tbl-amen-plafonds) sont ceux qui valent sans majoration.
+
+<!-- TODO (relecture humaine) : valider la lecture D3 avant d'engendrer les plafonds majorés
+(docs/notes/prestations-sociales-lectures-2026-10-09.md, § 3 : art. 5 et 7 du décret gouvernemental n° 2020-317 lus à l'image dans les
+deux éditions, JORT n° 45 du 20 mai 2020, p. 1093 en français, p. 1248 en arabe). La note ajoute que l'édition arabe fait foi pour
+la condition « à charge » : à confirmer et à sourcer avant de l'écrire. -->
 
 **La procédure** est décrite avec précision par le décret : dépôt en ligne ou auprès des **unités locales de promotion sociale**, identifiant social obligatoire, **enquête sociale** validée par le chef d'unité et comportant obligatoirement les propositions du travailleur social, examen par une **commission technique régionale** présidée par le directeur régional des affaires sociales et réunie tous les quinze jours, qui valide automatiquement les dossiers conformes au score et à la proposition du travailleur social ; décision sur la demande dans un délai de quarante-cinq jours, sept jours en cas d'urgence ; transferts dus **à compter du mois d'enregistrement de la demande** et payés à terme échu ; opposition sous quinze jours ; mise à jour du dossier au moins tous les deux ans ; retrait en cas de fausse déclaration [@decret-gouv-2020-317-amen, art. 12 à 28].
 
@@ -220,21 +228,21 @@ Une **majoration d'un demi-salaire minimum** est prévue si un membre de la fami
 
 L'arrêté du 19 mai 2020 relatif au modèle de *scoring* dispose que celui-ci « adopte le **test des moyens approximé "Proxy Means Test"** et il est basé sur la définition de la pauvreté multidimensionnelle », déclinée en sept familles de variables : caractéristiques démographiques, géographiques, éducation, santé, situation professionnelle et économique, caractéristiques du logement et accès aux services publics de base. Le modèle est mis à jour au moins une fois tous les cinq ans [@arrete-2020-05-19-scoring, art. 2-3].
 
-L'arrêté énumère les dimensions du score sans en fixer les coefficients.
+L'arrêté énumère les dimensions du score sans en fixer les coefficients. Ni la loi organique, qui renvoie le modèle à un arrêté [@loi-amen-social-2019, art. 2], ni cet arrêté, ni le décret gouvernemental n° 2020-317 [@decret-gouv-2020-317-amen, art. 9] ne fixent le seuil de score qui ouvre le transfert monétaire : aucun texte publié au *Journal officiel* ne donne ce seuil ni les pondérations. Selon la Banque mondiale, bailleur du programme, les critères d'éligibilité du transfert permanent ont été révisés par une circulaire ministérielle d'octobre 2025 [@banquemondiale2026ppiaf000292, § 4] ; cette circulaire n'est pas identifiée ici. <!-- RECHERCHE r-amen-seuil-score-circulaires : circulaires du ministre des affaires sociales fixant le seuil de score et révisant les critères d'éligibilité (mai 2022, octobre 2025) (voir docs/recherches.yml) -->
 
 ### Le transfert monétaire permanent
 
-L'arrêté conjoint fondateur du 19 mai 2020 construit le transfert en deux éléments : un montant de base mensuel servi par individu ou par famille, et une allocation supplémentaire par enfant à charge, doublée pour l'enfant titulaire d'une carte de handicap [@arrete-2020-05-19-transferts, art. 2]. La base a été revalorisée en 2022 puis chaque année jusqu'en 2025.
+L'arrêté conjoint fondateur du 19 mai 2020 construit le transfert en deux éléments : un montant de base mensuel servi par individu ou par famille, et une allocation supplémentaire par enfant à charge, doublée pour l'enfant titulaire d'une carte de handicap [@arrete-2020-05-19-transferts, art. 2]. La base a été revalorisée en 2022 puis chaque année jusqu'en 2026 : de 180 dinars à l'origine, elle atteint 280 dinars au 1^er^ janvier 2026 [@arrete-2026-04-21-transferts, art. 1-2].
 
 ```{python}
 #| echo: false
 #| output: asis
 table("amen_base",
-      "Allocation de base mensuelle du transfert AMEN : montant initial publié le 20 mai 2020, puis revalorisations prenant effet au 1^er^ janvier de 2022 à 2025",
+      "Allocation de base mensuelle du transfert AMEN : montant initial au 25 mai 2020, jour où l'arrêté fondateur devient exécutoire, puis revalorisations prenant effet au 1^er^ janvier de 2022 à 2026",
       "tbl-amen-base")
 ```
 
-Les revalorisations de 2022 à 2025 prennent effet au **1^er^ janvier** de l'année. L'arrêté fondateur est publié le 20 mai 2020 ; faute de clause spéciale et de date de dépôt du *Journal officiel* établie ici, cette date n'est pas présentée comme sa date d'effet.
+Les revalorisations de 2022 à 2026 prennent effet au **1^er^ janvier** de l'année : chaque arrêté énonce cette date, antérieure à sa propre signature — celui du 21 avril 2026 « prend effet à compter du 1^er^ janvier 2026 » [@arrete-2026-04-21-transferts, art. 2]. L'arrêté fondateur, lui, ne comporte pas de clause d'entrée en vigueur, son article 3 n'ordonnant que sa publication. Publié au *Journal officiel* du 20 mai 2020, fascicule déposé le même jour au siège du gouvernorat de Tunis, il devient exécutoire cinq jours après ce dépôt, jour du dépôt non compté [@loi93-64, art. 2] : le montant initial de 180 dinars est donc daté du **25 mai 2020**, et non du jour de la publication.
 
 Le supplément par enfant a connu, lui, une modification de bornes d'âge décisive pour l'articulation des dispositifs.
 
@@ -246,7 +254,7 @@ table("amen_supplement_enfant",
       "tbl-amen-supplement")
 ```
 
-Ce déplacement de borne doit être distingué de la mise en montant de l'[allocation familiale non contributive](#g-allocation-familiale-non-contributive). Les enfants de moins de six ans sortent du supplément de dix dinars le 1^er^ février 2022. L'arrêté du 1^er^ avril fixe ensuite l'allocation familiale à trente dinars ; le tableau qui la compare au transfert porte l'état daté du 8 avril 2022, jour de sa publication. Les deux dates ne coïncident donc pas, et les textes cités ne permettent pas de déduire ici les modalités de service pendant l'intervalle.
+À l'origine, le supplément vaut pour tout enfant à charge de moins de 18 ans ; l'arrêté du 1^er^ avril 2022 le borne aux enfants de 6 à 18 ans à compter du 1^er^ février 2022, sans le supprimer [@arrete-2022-04-01-transferts, art. 1]. Depuis cette date, il vise la tranche d'âge qui est aussi celle de l'allocation des enfants de 6 à 18 ans (@sec-af-non-contributive). Ce déplacement de borne doit être distingué de la mise en montant de l'[allocation familiale non contributive](#g-allocation-familiale-non-contributive). Les enfants de moins de six ans sortent du supplément de dix dinars le 1^er^ février 2022. L'arrêté du 1^er^ avril fixe ensuite l'allocation familiale à trente dinars ; le tableau qui la compare au transfert porte l'état daté du 8 avril 2022, jour de sa publication. Les deux dates ne coïncident donc pas, et les textes cités ne permettent pas de déduire ici les modalités de service pendant l'intervalle.
 
 ### L'autonomisation économique
 
@@ -254,7 +262,7 @@ Le décret n° 2022-715 crée un programme d'autonomisation économique au profi
 
 ## Les allocations familiales non contributives (2022 →) {#sec-af-non-contributive}
 
-Un point de vocabulaire d'abord, parce qu'il commande la chronologie. Ce que le dispositif AMEN comporte depuis 2020, c'est le **supplément de dix dinars par enfant** attaché au transfert monétaire ; ce n'est pas une allocation familiale. L'allocation familiale non contributive, comme prestation propre, **n'existe qu'à compter de 2022**.
+Un point de vocabulaire d'abord, parce qu'il commande la chronologie. Ce que le dispositif AMEN comporte depuis 2020, c'est le **supplément de dix dinars par enfant** attaché au transfert monétaire ; ce n'est pas une allocation familiale. L'allocation familiale non contributive, comme prestation propre, **n'existe qu'à compter de 2022**, pour les enfants de moins de six ans ; une seconde allocation, pour les enfants de 6 à 18 ans, est versée à partir de 2022 au titre d'un programme pilote financé par un don, puis instituée par décret en 2025.
 
 Son fondement est le décret-loi n° 2022-8 du 31 janvier 2022, qui complète la loi organique de 2019 par un **article 11 bis** : « Les catégories pauvres et les catégories à revenu limité bénéficient d'une allocation familiale payable mensuellement, au titre des enfants âgés de moins de 6 ans. Les situations d'octroi et le montant […] sont fixés par arrêté conjoint du ministre chargé des affaires sociales et du ministre chargé des finances » [@decret-loi-2022-8-allocation-familiale]. Sur le plan des sources du droit, une loi organique est ici complétée par un décret-loi pris pendant la période des mesures exceptionnelles ouverte en 2021 : le fait est signalé pour ce qu'il est, un mode d'édiction.
 
@@ -262,17 +270,42 @@ L'arrêté conjoint du 1^er^ avril 2022 en fixe le régime. L'allocation est oct
 
 Quatre traits la distinguent des allocations familiales contributives. Elle est servie **sans plafonnement du nombre d'enfants**, là où le régime contributif s'arrête au troisième depuis 1989. Son champ est **plus large que celui du transfert monétaire**, puisqu'il couvre aussi les catégories à revenu limité, qui ne perçoivent pas de transfert. Elle comporte une **exclusion explicite** : « Les catégories à revenu limité affiliées à l'un des régimes de sécurité sociale sont exclues du bénéfice de cette allocation familiale ». Cette exclusion vise donc cette catégorie précise, sans énoncer une interdiction générale de cumul pour les catégories pauvres. Enfin, l'arrêté vise expressément la loi qui approuve un accord de prêt de la Banque internationale pour la reconstruction et le développement : le financement du dispositif par un bailleur figure **dans le visa du texte lui-même**, et non seulement dans les commentaires qui l'entourent.
 
-Le tableau met en regard le montant de trente dinars fixé par l'arrêté du 1^er^ avril 2022 et les états successifs de la base du transfert monétaire jusqu'en 2025.
+**L'allocation des enfants de 6 à 18 ans est d'abord un programme pilote, de 2022 à 2024.** L'article 11 bis de la loi organique ne vise que les enfants de moins de six ans : cette seconde allocation ne procède alors pas d'elle, et elle est connue par un rapport administratif et par les documents de ses bailleurs. Selon le rapport de suivi et d'évaluation de l'AMEN social du ministère des Affaires sociales pour 2023, un second programme pilote d'allocation familiale — le premier, de décembre 2020 à janvier 2022, portait sur les enfants de moins de six ans — est engagé en exécution d'une convention signée le 28 septembre 2022 entre le ministère, l'Agence des États-Unis pour le développement international (USAID) et l'UNICEF. Le rapport chiffre cette convention à 191 millions de dinars, dont 188 millions de transferts (allocations familiales et aides scolaires), de septembre 2022 à décembre 2023, pour environ 418 000 enfants ; il compte, en décembre 2023, 422 542 enfants de 6 à 18 ans dans 217 157 familles, pour un crédit de 124,6 millions de dinars financé par ce don [@mas-amen-social-2023]. L'UNICEF, qui finance et accompagne le programme, en date le démarrage de juillet 2022 et rapporte, d'après les données du programme, 111 682 enfants allocataires en juillet 2022 et 422 683 en décembre 2023, à raison de trente dinars par enfant et par mois [@unicef2024allocations618, p. 2 et 20]. Les deux sources donnent ainsi, pour décembre 2023, deux effectifs qui diffèrent de 141 enfants, et deux dates de départ, juillet et septembre 2022.
+
+Pour les enfants des familles qui perçoivent le transfert monétaire, le rapport du ministère pour 2023 indique que le don apporte vingt dinars en plus de dix dinars financés par le budget du ministère — le montant du supplément par enfant (@tbl-amen-supplement) —, soit trente dinars par enfant [@mas-amen-social-2023]. Sur la fin du programme pilote, les sources ne concordent pas : l'UNICEF indique un financement prévu jusqu'en décembre 2023 et prolongé jusqu'en avril 2024 [@unicef2024allocations618, p. 55] ; la Banque mondiale, bailleur du programme, écrit que le pilote est exécuté par l'UNICEF jusqu'en décembre 2024 et que le gouvernement décide en octobre 2025 d'instituer l'allocation [@banquemondiale2026ppiaf000292, § 13 et 28].
+
+<!-- TODO (documentaliste) : les pages du rapport du ministère pour 2023 sur l'allocation des 6 à 18 ans (PDF 36-38, § 6.2 et
+tableau 13) ne sont lues que sur la couche texte arabe, dont l'ordre des mots est perturbé : confirmer à l'image la date de la
+convention, les montants de 191, 188 et 124,6 millions de dinars, les effectifs de décembre 2023 et surtout la phrase des 20 D du don
+et des 10 D du budget (PDF 37), avant toute citation littérale (docs/notes/prestations-sociales-lectures-2026-10-09.md, § 1.1 et § 5).
+Série à instantaner pour une figure en deux segments, don puis budget : enfants de 6 à 18 ans allocataires, juillet 2022 et
+décembre 2023 (UNICEF), décembre 2023 (ministère), mai 2026 (Banque mondiale, ISR08116 : 463 903). -->
+
+**Le décret n° 2025-426 du 2 octobre 2025 l'institue ensuite.** Il crée « une allocation familiale au profit des familles pauvres et à faible revenu au titre des enfants âgés de 6 ans à 18 ans », renvoie ses conditions d'attribution et son montant à un arrêté conjoint des ministres chargés des affaires sociales et des finances, et fait entrer cette institution en vigueur **à compter du 1^er^ janvier 2025** [@decret-2025-426-allocation-familiale-6-18, art. 1-2]. Il ne vise que la Constitution, et non la loi organique de 2019, dont l'article 11 bis ne connaît que les enfants de moins de six ans. Le décret ne fixe lui-même aucun montant.
+
+L'arrêté conjoint du 3 novembre 2025 fixe ce montant à **trente dinars par mois pour chaque enfant à charge**, soit le montant retenu en 2022 pour les moins de six ans. Il subordonne le bénéfice de l'allocation à ce que les familles pauvres et les familles à revenu limité bénéficient des avantages sociaux « conformément au registre des données sociales » de la loi organique de 2019, et reprend l'exclusion de 2022 : « Les familles à revenu limité affiliées à l'un des régimes de sécurité sociale sont exclues du bénéfice de l'allocation » [@arrete-2025-11-03-allocation-familiale-6-18, art. 1-2]. L'arrêté ne comporte pas de clause d'effet, son article 3 n'ordonnant que sa publication : publié au *Journal officiel* du 4 novembre 2025, fascicule déposé le même jour au siège du gouvernorat de Tunis, il devient exécutoire le **9 novembre 2025** [@loi93-64, art. 2].
+
+Le décret ouvre l'allocation au 1^er^ janvier 2025 ; l'arrêté qui en fixe le montant devient exécutoire le 9 novembre 2025 et ne dit pas depuis quand ce montant est dû. Le tableau des deux allocations (@tbl-amen-vs-afnc) porte donc les trente dinars à cette seconde date : il donne l'état du droit publié, et ne décrit ni les versements du programme pilote de 2022 à 2024, ni ceux de l'année 2025.
+
+Le supplément de dix dinars par enfant à charge du transfert monétaire vise, depuis le 1^er^ février 2022, les enfants de 6 à 18 ans (@tbl-amen-supplement) : c'est la tranche d'âge de l'allocation de trente dinars. Ni le décret ni l'arrêté de 2025 ne mentionnent ce supplément, et l'arrêté ne vise pas l'arrêté conjoint du 19 mai 2020 qui le fonde ; les revalorisations de 2023 à 2026 ne remplacent que l'alinéa relatif au montant de base (@tbl-amen-base), celle du 21 avril 2026 comprise [@arrete-2026-04-21-transferts, art. 1], de sorte que l'alinéa du supplément reste en vigueur dans sa rédaction de 2022. Le texte qui réglerait le cumul des deux versements depuis 2025 n'est pas identifié ici. En l'état des textes identifiés, le droit ne dit donc pas si, pour un enfant de 6 à 18 ans d'une famille qui perçoit le transfert monétaire, les deux montants sont dus ensemble.
+
+<!-- RECHERCHE r-amen-cumul-supplement-6-18 : texte réglant le cumul du supplément de 10 D par enfant de 6 à 18 ans avec l'allocation familiale de 30 D des 6 à 18 ans (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : établir ce qui a été servi au titre de l'année 2025 (institution au 1er janvier 2025, montant exécutoire
+le 9 novembre 2025 ; la Banque mondiale, PPIAF000292, § 28, évoque un financement rétroactif des allocations de 2025) et à partir de
+quand le budget relaie le don (question D4 de docs/notes/prestations-sociales-plan-architecte.md). -->
+
+Le tableau met en regard les deux allocations familiales — trente dinars par enfant de moins de six ans à l'état du 8 avril 2022, trente dinars par enfant de 6 à 18 ans à celui du 9 novembre 2025 — et les états successifs de la base du transfert monétaire de 2020 à 2026.
 
 ```{python}
 #| echo: false
 #| output: asis
 table("amen_vs_afnc",
-      "Transfert AMEN et allocation familiale non contributive : états fixés par les arrêtés de 2020 à 2025, allocation familiale au 8 avril 2022",
+      "Transfert AMEN et allocations familiales non contributives : états fixés par les arrêtés de 2020 à 2026, allocation des moins de six ans au 8 avril 2022, allocation des 6 à 18 ans au 9 novembre 2025",
       "tbl-amen-vs-afnc")
 ```
 
-Sources : arrêtés conjoints cités à la section précédente ; @arrete-2022-04-01-allocation-familiale, art. 3.
+Sources : arrêtés conjoints cités à la section précédente ; @arrete-2022-04-01-allocation-familiale, art. 3 ; @arrete-2025-11-03-allocation-familiale-6-18, art. 2.
 
 L'antécédent doctrinal de ce dispositif — l'introduction graduelle d'une allocation universelle pour enfant — est documenté par @unicef2020, qui en décrit le principe avant que les textes de 2022 ne l'établissent.
 
@@ -281,13 +314,13 @@ par des sources citables, notamment les accords de prêt et les documents de pro
 
 ## Les aides ponctuelles
 
-L'article 12 de la loi organique prévoit un [soutien financier occasionnel](#g-appui-financier-occasionnel), dont les cas d'octroi et les montants sont fixés par arrêté conjoint. Deux arrêtés se sont succédé, le second abrogeant expressément le premier.
+L'article 12 de la loi organique prévoit un [soutien financier occasionnel](#g-appui-financier-occasionnel), dont les cas d'octroi et les montants sont fixés par arrêté conjoint. Deux arrêtés se sont succédé, le second abrogeant expressément le premier ; un troisième, du 10 juillet 2025, modifie celui de 2022 et porte l'aide de rentrée scolaire de 50 à 100 dinars par enfant à compter du 1^er^ septembre 2024.
 
 ```{python}
 #| echo: false
 #| output: asis
 table("aides_ponctuelles",
-      "Appui financier occasionnel de l'AMEN social : montants fixés par l'arrêté de 2022 avant le modificatif de 2025",
+      "Appui financier occasionnel de l'AMEN social : montants de l'arrêté du 8 décembre 2022, avant le modificatif du 10 juillet 2025 qui porte l'aide de rentrée scolaire à 100 D à compter du 1^er^ septembre 2024",
       "tbl-aides-ponctuelles")
 ```
 
@@ -295,11 +328,15 @@ Chaque aide a son échéance de paiement, que l'arrêté fixe : dans la premièr
 
 Le champ, lui, n'est pas identique dans les deux textes. En 2020, les aides liées aux fêtes et celles liées à la rentrée sont réservées aux catégories pauvres, à l'exception des aides de rentrée dont les catégories à revenu limité bénéficient également. En 2022, l'appui « fêtes » reste réservé aux catégories pauvres, tandis que les aides de rentrée sont ouvertes aux deux catégories et étendues aux établissements publics de formation et d'apprentissage professionnel ainsi qu'aux centres d'éducation spécialisée, publics et associatifs. L'arrêté de 2022 ajoute par ailleurs deux prestations : la prise en charge des **abonnements annuels de transport scolaire et universitaire**, à hauteur des tarifs des entreprises de transport public ; et un appui pour dépenses exceptionnelles nécessitées par des conditions sanitaires ou sociales d'urgence, ou pour la prise en charge d'enfants scolarisés exposés à l'inadaptation sociale et au décrochage, d'un montant **compris entre 60 et 200 dinars** selon la situation financière de la famille, **au plus quatre fois par an**, ces deux limites pouvant être dépassées à titre exceptionnel sur autorisation du comité général de la promotion sociale [@arrete-2022-12-08-appui-occasionnel, art. 2-4].
 
-L'arrêté conjoint du 10 juillet 2025 remplace les deux premières dispositions de l'article 3 et la quatrième disposition de l'article 4 de l'arrêté de 2022, puis ajoute à ce dernier un alinéa sur le cumul [@arrete-2025-07-10-appui-occasionnel, art. 1-2]. Le tableau ci-dessus garde les montants **fixés en 2022** ; le changement de montant publié en 2025 concerne l'aide de rentrée scolaire :
+L'arrêté conjoint du 10 juillet 2025 remplace les deux premières dispositions de l'article 3 et la quatrième disposition de l'article 4 de l'arrêté de 2022, puis ajoute à ce dernier un alinéa sur le cumul [@arrete-2025-07-10-appui-occasionnel, art. 1-2]. Le tableau ci-dessus donne les montants **fixés en 2022** ; l'arrêté de 2025 n'en change qu'un, celui de l'aide de rentrée scolaire. Il s'agit de la même aide à deux dates, non de deux aides : 50 dinars par enfant dans les arrêtés de 2020 et de 2022, 100 dinars à compter du 1^er^ septembre 2024, les quatre autres montants restant ceux de 2022.
 
 | Aide de rentrée scolaire | État fixé en 2022 | Nouvel état, effet au 1^er^ septembre 2024 |
 |---|---:|---:|
 | Par enfant relevant des catégories visées par l'arrêté | 50 D [@arrete-2022-12-08-appui-occasionnel, art. 4] | **100 D** [@arrete-2025-07-10-appui-occasionnel, art. 1 et 3] |
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré, quand le palier de 100 D au
+1er septembre 2024 sera daté et sourcé en amont (constat inscrit à docs/notes/backlog-modele.md) ;
+le tableau des cinq aides donnera alors l'état en vigueur et sa légende sera à reprendre. -->
 
 Le texte étend la rédaction relative à l'aide de rentrée et aux abonnements annuels de transport aux enfants inscrits en **classes préparatoires publiques**, dans les **kouttab** et dans les centres d'éducation spécialisée, de réadaptation ou de formation professionnelle des personnes handicapées, publics ou privés relevant d'associations du secteur. Il interdit le cumul des sommes fixées à l'article 4 avec d'autres sommes octroyées **au même titre** dans le cadre de programmes ou de mécanismes publics [@arrete-2025-07-10-appui-occasionnel, art. 1-2]. L'arrêté donne à l'ensemble de ses dispositions effet au **1^er^ septembre 2024**, antérieurement à sa publication au *Journal officiel* du 11 juillet 2025 [@arrete-2025-07-10-appui-occasionnel, art. 3].
 

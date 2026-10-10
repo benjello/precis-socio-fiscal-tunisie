@@ -1,0 +1,12 @@
+- libelle: Plafond de revenu mensuel — Individu
+  parametre: parameters/prestations/non_contributives/amen_social/eligibilite/un_membre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.amen_social.eligibilite.un_membre/table/
+- libelle: Plafond de revenu mensuel — 2 personnes
+  parametre: parameters/prestations/non_contributives/amen_social/eligibilite/deux_membres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.amen_social.eligibilite.deux_membres/table/
+- libelle: Plafond de revenu mensuel — 3 ou 4 personnes
+  parametre: parameters/prestations/non_contributives/amen_social/eligibilite/trois_quatre_membres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.amen_social.eligibilite.trois_quatre_membres/table/
+- libelle: Plafond de revenu mensuel — 5 personnes et plus
+  parametre: parameters/prestations/non_contributives/amen_social/eligibilite/plus_de_cinq_membres.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prestations.non_contributives.amen_social.eligibilite.plus_de_cinq_membres/table/
