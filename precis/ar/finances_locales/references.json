@@ -2248,6 +2248,41 @@
       },
       "note": "citation-key: loi-org2006-48\nJORT n° 59 du 25 juillet 2006, édition française p. 1923-1930, couche texte ; art. 6 (renumérotation) : p. 1929-1930. Note : docs/notes/finances-locales-institutions-lectures-2026-10-10.md, § 1.4 et 6.",
       "URL": "https://www.pist.tn/jort/2006/2006A/Ja0592006.pdf"
+    },
+    {
+      "id": "bct-ra",
+      "type": "dataset",
+      "note": "citation-key: bct-ra\nTitre relevé en couverture des fascicules (« Rapport Annuel 2024 ») et confirmé sur bct.gov.tn ; les métadonnées PDF portent un code de service interne, inutilisable. Publication annuelle depuis 1959. Le tableau « Principaux indicateurs de l'emploi » ne figure toutefois que dans 14 rapports sur 66, d'où une série d'emploi limitée à 2007-2024.",
+      "publisher": "Banque Centrale de Tunisie",
+      "title": "Rapport Annuel",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/page.jsp?id=77",
+      "author": [
+        {
+          "literal": "Banque Centrale de Tunisie (BCT)"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ins-annuaire",
+      "type": "report",
+      "title": "التقرير الإحصائي السنوي لتونس (طبعات 1995-2001 و1998-2002 و1999-2003 و2019-2023)",
+      "title-short": "المعهد الوطني للإحصاء، التقرير الإحصائي السنوي لتونس",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء، تونس",
+      "publisher-place": "تونس",
+      "URL": "https://www.ins.tn/publication/annuaire-statistique-de-la-tunisie-2019-2023",
+      "note": "citation-key: ins-annuaire\nمجموعة من طبعات نشرية سنوية للمعهد الوطني للإحصاء. الطبعات المستخدمة لمؤشر أسعار الاستهلاك: 1995-2001 و1998-2002 و1999-2003 و2019-2023."
     }
   ]
 }
