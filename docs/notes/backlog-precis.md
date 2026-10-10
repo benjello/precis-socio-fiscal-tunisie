@@ -2495,8 +2495,13 @@ de `scripts/generate_finances_locales_tables.py`, avec leur onglet « Base légi
 valeurs et les dates d'effet faites main concordaient toutes (37 valeurs). Les registres repliés
 des décrets restent écrits dans le chapitre. Restent faits main, faute de paramètres : la
 pénalité de retard (`tbl-fl-penalite-retard`) et la contribution au fonds de l'habitat
-(`tbl-fl-immeubles-fnah`). Une figure des deux barèmes, en dinars courants et en dinars de
-2025, est désormais faisable (séries complètes de 1997 à 2017) : non faite. **À reprendre,
+(`tbl-fl-immeubles-fnah`). **Figures des deux barèmes faites le 10 octobre 2026** : `fig-fl-tib-prix-reference` (quatre
+panneaux à axe partagé, un par catégorie) et `fig-fl-tnb-tarif` (un panneau, axe
+logarithmique), chacune en dinars courants et en dinars de 2025, placées après leur tableau ;
+séries `fl-tib-prix-reference` et `fl-tnb-tarif` émises au cache par le même générateur, module
+`figures/baremes.py`. Les niveaux en dinars de 2025 et les hausses de prix cités dans le texte
+sont écrits à la main d'après `baremes.reperes()` : à relire si l'indice de 2025 est révisé ou
+si l'année de base change. **À reprendre,
 d'après les lectures du 9 octobre 2026** (`finances-locales-impots-lectures-2026-10-09.md`), non fait :
 - l'état du droit y est dit pour 2025 avec un `TODO` de confirmation, alors que la loi de
   finances pour 2026 est inventoriée (aucun article du code modifié, aucun abandon

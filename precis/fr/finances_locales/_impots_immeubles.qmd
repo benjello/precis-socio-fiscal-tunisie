@@ -20,7 +20,7 @@ La taxe sur les immeubles bâtis et la taxe sur les terrains non bâtis sont deu
 
 <!-- TODO (documentaliste) : relever mot pour mot la rubrique de l'art. 33 de la loi de finances pour 2009 (la note documentaire la donne avec les sigles « TIB » et « TNB », qui ne sont sans doute pas ceux du texte) et celle des art. 53, 56 et 57 de la loi de finances pour 2006 ; plan de l'architecte, § 8, A. -->
 
-- **Le calcul n'a pas changé depuis 1997.** La taxe sur les immeubles bâtis est égale à un taux de 8 à 14 %, selon les services dont bénéficie l'immeuble, appliqué à 2 % d'un prix de référence au mètre carré multiplié par la superficie couverte (@sec-fl-tib-1997) ; la taxe sur les terrains non bâtis à 0,3 % de la valeur vénale du terrain (@sec-fl-tnb-1997). Seuls les barèmes en dinars ont été relevés, deux fois, en 2008 et en 2017 (@sec-fl-immeubles-baremes).
+- **Le calcul n'a pas changé depuis 1997.** La taxe sur les immeubles bâtis est égale à un taux de 8 à 14 %, selon les services dont bénéficie l'immeuble, appliqué à 2 % d'un prix de référence au mètre carré multiplié par la superficie couverte (@sec-fl-tib-1997) ; la taxe sur les terrains non bâtis à 0,3 % de la valeur vénale du terrain (@sec-fl-tnb-1997). Seuls les barèmes en dinars ont été relevés, deux fois, en 2008 et en 2017, moins que les prix : en dinars de 2025, le prix de référence maximal passe de 1 056 D par mètre carré en 1998 à 356 D en 2025 (@sec-fl-immeubles-baremes, @fig-fl-tib-prix-reference).
 - **La collectivité décide peu.** Elle choisit son prix de référence dans une fourchette que fixe un décret, et accorde le dégrèvement ; l'assiette, les taux et les exonérations sont dans la loi (@sec-fl-tib-prix-reference, @sec-fl-immeubles-degrevement).
 - **Cinq lois ont abandonné des arriérés**, de 2002 à 2025, contre un paiement partiel ou le règlement des années récentes (@sec-fl-immeubles-abandons).
 - **Les deux taxes pèsent peu dans les budgets communaux.** La taxe sur les immeubles bâtis fournit 7 % des recettes de fonctionnement des communes en 2008, 5 % en 2012 et 3 % en 2023 ; la taxe sur les terrains non bâtis, de 2,1 % à 3,1 % sur toute la période (@fig-fl-immeubles-rendement). Le taux de recouvrement publié de la première va de 24 % en 2008 à 11 % en 2011 et 18 % en 2019 (@fig-fl-immeubles-recouvrement).
@@ -261,9 +261,9 @@ Les textes des autres dispositions sont réunis, chacun dans sa section, aux reg
 
 ::::
 
-## L'état du droit en 2025 {#sec-fl-immeubles-etat-du-droit}
+## L'état du droit en 2026 {#sec-fl-immeubles-etat-du-droit}
 
-En 2025, les deux taxes se calculent comme en 1997, sur les barèmes en vigueur depuis le 1^er^ janvier 2017. Le code prévoit une révision des barèmes tous les trois ans ; aucun décret n'est identifié entre ceux de 1997 et ceux de 2007, ni depuis ceux de 2017. Les barèmes de 2017 sont donc tenus ici pour ceux de 2025.
+En 2026, les deux taxes se calculent comme en 1997, sur les barèmes en vigueur depuis le 1^er^ janvier 2017. Le code prévoit une révision des barèmes tous les trois ans ; aucun décret n'est identifié entre ceux de 1997 et ceux de 2007, ni depuis ceux de 2017. Les barèmes de 2017 sont donc tenus ici pour ceux de 2025 ; en dinars de 2025, ils valent 42 % de moins qu'en 2017 (@fig-fl-tib-prix-reference, @fig-fl-tnb-tarif).
 
 <!-- RECHERCHE r-cfl-prix-reference-1998-2006 : décret fixant le prix de référence de la TIB, le tarif de la TNB ou le minimum de la TCL entre 1997 et 2007 (voir docs/recherches.yml) -->
 
@@ -271,24 +271,23 @@ En 2025, les deux taxes se calculent comme en 1997, sur les barèmes en vigueur 
 
 <!-- RECHERCHE r-cfl-tarif-tnb-apres-2017 : décret fixant le tarif au m² de la TNB après le décret gouvernemental n° 2017-396 (voir docs/recherches.yml) -->
 
-<!-- TODO (documentaliste) : confirmer l'état du droit pour 2026 — la loi de finances pour 2026 (JORT n° 148 de 2025, édition arabe) a-t-elle été inventoriée pour tous les articles du code de la fiscalité locale, ou seulement pour les art. 41 à 45 et les amnisties ? Si oui, le titre et la première phrase de cette section passent à 2026 (plan de l'architecte, § 8, H). -->
 
 ### Les règles en vigueur {#sec-fl-immeubles-regles}
 
-Le @tbl-fl-immeubles-etat réunit, pour chacune des deux taxes, les règles applicables en 2025 ; chaque ligne renvoie à la section qui la détaille.
+Le @tbl-fl-immeubles-etat réunit, pour chacune des deux taxes, les règles applicables en 2026 ; chaque ligne renvoie à la section qui la détaille.
 
 | Élément | Taxe sur les immeubles bâtis | Taxe sur les terrains [non bâtis]{.insecable} |
 |---|---|---|
 | Redevable | propriétaire ou usufruitier, à défaut possesseur ou occupant ([depuis 1997](#r-fl-imm-1997-champ)) | propriétaire ou usufruitier, à défaut possesseur ou occupant ([depuis 1997](#r-fl-imm-1997-tnb-champ)) |
 | Assiette | 2 % du prix de référence du mètre carré couvert, multiplié par la superficie couverte ([depuis 1997](#r-fl-imm-1997-assiette)) | valeur vénale réelle du terrain ; à défaut, superficie ([depuis 1997](#r-fl-imm-1997-tnb-taux)) |
 | Taux | 8, 10, 12 ou 14 % de l'assiette, selon le nombre de services (@tbl-fl-tib-taux) | 0,3 % de la valeur vénale ; à défaut, tarif au mètre carré |
-| Barème en dinars | prix de référence : de 100 à 356 D par mètre carré selon la catégorie, [depuis le 1^er^ janvier 2017](#r-fl-imm-prix-2017) (@tbl-fl-tib-prix-reference) | tarif : 0,385 D, 0,115 D ou 0,040 D par mètre carré selon la zone, [depuis le 1^er^ janvier 2017](#r-fl-imm-tarif-2017) (@tbl-fl-tnb-tarif) |
+| Barème en dinars | prix de référence : de 100 à 356 D par mètre carré selon la catégorie, [depuis le 1^er^ janvier 2017](#r-fl-imm-prix-2017) (@tbl-fl-tib-prix-reference, @fig-fl-tib-prix-reference) | tarif : 0,385 D, 0,115 D ou 0,040 D par mètre carré selon la zone, [depuis le 1^er^ janvier 2017](#r-fl-imm-tarif-2017) (@tbl-fl-tnb-tarif, @fig-fl-tnb-tarif) |
 | Exonérations | immeubles publics non loués, lieux de culte, États étrangers et organismes internationaux, associations ; biens publics transférés dans une émission de *sukuk* ([depuis 2014](#r-fl-imm-exo-2014)) | catégories de 1997, modifiées [en 2002](#r-fl-imm-exo-2002), [en 2005](#r-fl-imm-exo-2005) et [en 2014](#r-fl-imm-exo-2014) |
 | Dégrèvement | total, pour les contribuables aidés par l'État ou une collectivité ; le dégrèvement partiel est supprimé [depuis 2003](#r-fl-imm-degrevement-2003) | — |
 | Contribution adossée | 4 % de l'assiette, pour les immeubles d'habitation, au profit du Fonds national d'amélioration de l'habitat ([depuis 2005](#r-fl-imm-fnah-2005)) | — |
 | Pénalité de retard | 1,25 % par mois, dans la limite du principal ([depuis 2023](#r-fl-imm-penalite-2023)), sous la réserve du paragraphe 10 de l'article (@sec-fl-immeubles-penalite) | la même |
 
-: Les deux taxes sur les immeubles : les règles en vigueur en 2025 {#tbl-fl-immeubles-etat}
+: Les deux taxes sur les immeubles : les règles en vigueur en 2026 {#tbl-fl-immeubles-etat}
 
 - **La collectivité qui encaisse** est celle du lieu de l'immeuble ; elle ne fixe que le prix de référence, dans la fourchette du décret, et accorde le dégrèvement.
 - **L'attestation de paiement** conditionne les permis et les actes énumérés de 2006 à 2013, du permis de bâtir au permis de démolir (@tbl-fl-immeubles-attestation).
@@ -298,9 +297,11 @@ Le @tbl-fl-immeubles-etat réunit, pour chacune des deux taxes, les règles appl
 
 Le code ne chiffre pas lui-même les deux grandeurs en dinars qui déterminent le montant de ces taxes : le prix de référence du mètre carré couvert, pour les immeubles bâtis, et le tarif au mètre carré, pour les terrains non bâtis dont la valeur vénale fait défaut. Il les renvoie l'un et l'autre à un décret pris tous les trois ans. Trois générations de décrets sont identifiées, en 1997, 2007 et 2017 ; chacune abroge la précédente.
 
+Chaque barème est donné en dinars courants, dans un tableau, et en dinars de 2025, sur une figure : le montant en vigueur dans l'année est multiplié par l'indice des prix à la consommation de 2025 et divisé par celui de l'année. Les hausses de prix citées sont celles de cet indice, en moyenne annuelle, entre les années de deux dates d'effet ; la première année couverte sur douze mois est 1998.
+
 #### Le prix de référence du mètre carré couvert {#sec-fl-tib-prix-reference}
 
-Le prix de référence du mètre carré couvert est le prix au mètre carré sur lequel se calcule l'assiette de la taxe sur les immeubles bâtis. Le décret fixe, pour chacune des quatre catégories de superficie, un minimum et un maximum ; dans ces limites, la collectivité fixe son prix par arrêté motivé, selon les services rendus (@tbl-fl-tib-prix-reference).
+Le prix de référence du mètre carré couvert est le prix au mètre carré sur lequel se calcule l'assiette de la taxe sur les immeubles bâtis. Le décret fixe, pour chacune des quatre catégories de superficie, un minimum et un maximum ; dans ces limites, la collectivité fixe son prix par arrêté motivé, selon les services rendus. Le @tbl-fl-tib-prix-reference donne les valeurs exactes aux trois dates d'effet ; la @fig-fl-tib-prix-reference, leur évolution en dinars courants et en dinars de 2025.
 
 ```{python}
 #| echo: false
@@ -314,9 +315,22 @@ print(ot.markdown_avec_legende(Path.cwd() / "tables" / "tib_prix_reference.md",
                                "tbl-fl-tib-prix-reference"))
 ```
 
-- **Le minimum de la première catégorie n'a pas bougé** : 100 D par mètre carré depuis 1997.
-- **Au 1^er^ janvier 2008**, minimums et maximums sont relevés, sauf ce minimum : de 8 % pour les autres bornes.
-- **Au 1^er^ janvier 2017**, seuls les maximums montent, de 10 %.
+```{python}
+#| label: fig-fl-tib-prix-reference
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import baremes
+baremes.figure_prix_reference(
+    caption=("Prix de référence du mètre carré couvert de la taxe sur les immeubles bâtis : "
+             "minimum et maximum par catégorie de superficie, en dinars courants et en dinars "
+             "de 2025 par mètre carré, 1997-2026 (valeurs exactes au @tbl-fl-tib-prix-reference)"))
+```
+
+- **Le minimum de la première catégorie n'a pas bougé** : 100 D par mètre carré depuis 1997, soit 352 D de 2025 en 1998 et 100 D en 2025.
+- **Au 1^er^ janvier 2008**, minimums et maximums sont relevés, sauf ce minimum : de 8 % pour les autres bornes, alors que les prix ont augmenté de 40 % de 1997 à 2008.
+- **Au 1^er^ janvier 2017**, seuls les maximums montent, de 10 % ; les prix ont augmenté de 51 % de 2008 à 2017, puis de 71 % de 2017 à 2025, sans nouveau relèvement.
+- **En dinars de 2025, aucun relèvement ne ramène le barème au niveau du décret précédent.** Le maximum de la quatrième catégorie vaut 1 056 D de 2025 par mètre carré en 1998, 839 D en 2008, 609 D en 2017 et 356 D en 2025 ; le relèvement de 2017 le porte de 584 D en 2016 à 609 D, sans rattraper la baisse depuis 2008 (@fig-fl-tib-prix-reference).
 - **Depuis 2017, les fourchettes se chevauchent** : le maximum d'une catégorie dépasse le minimum de la suivante, dans les deux éditions du *Journal officiel*.
 
 Les arrêtés par lesquels chaque collectivité fixe son prix dans la fourchette ne sont pas identifiés ici.
@@ -339,7 +353,7 @@ L'obligation de réviser les fourchettes tous les trois ans vient du code [@loi9
 
 #### Le tarif au mètre carré des terrains non bâtis {#sec-fl-tnb-tarif}
 
-Le tarif au mètre carré sert à calculer la taxe sur les terrains non bâtis quand la valeur vénale réelle du terrain fait défaut : la taxe est alors égale au tarif de la zone multiplié par la superficie. Il distingue trois zones du plan d'aménagement urbain selon leur densité : haute (« ذات كثافة عمرانية مرتفعة »), moyenne et basse (@tbl-fl-tnb-tarif).
+Le tarif au mètre carré sert à calculer la taxe sur les terrains non bâtis quand la valeur vénale réelle du terrain fait défaut : la taxe est alors égale au tarif de la zone multiplié par la superficie. Il distingue trois zones du plan d'aménagement urbain selon leur densité : haute (« ذات كثافة عمرانية مرتفعة »), moyenne et basse. Le @tbl-fl-tnb-tarif donne les valeurs exactes aux trois dates d'effet ; la @fig-fl-tnb-tarif, leur évolution en dinars courants et en dinars de 2025.
 
 ```{python}
 #| echo: false
@@ -353,8 +367,21 @@ print(ot.markdown_avec_legende(Path.cwd() / "tables" / "tnb_tarif.md",
                                "tbl-fl-tnb-tarif"))
 ```
 
+```{python}
+#| label: fig-fl-tnb-tarif
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import baremes
+baremes.figure_tarif(
+    caption=("Tarif au mètre carré de la taxe sur les terrains non bâtis, par zone, en dinars "
+             "courants et en dinars de 2025 par mètre carré, 1997-2026 (valeurs exactes au "
+             "@tbl-fl-tnb-tarif)"))
+```
+
 - **Un rapport de un à dix** sépare la zone de basse densité de la zone de haute densité, aux trois dates.
-- **Le relèvement de 2008** est de 6 % environ ; **celui de 2017**, de 21 à 25 %.
+- **Le relèvement de 2008** est de 6 % environ, alors que les prix ont augmenté de 40 % de 1997 à 2008 ; **celui de 2017**, de 21 à 25 %, alors qu'ils ont augmenté de 51 % de 2008 à 2017, puis de 71 % de 2017 à 2025.
+- **En dinars de 2025, le tarif de la zone de haute densité** vaut 1,056 D par mètre carré en 1998, 0,823 D en 2008, 0,659 D en 2017 et 0,385 D en 2025 ; le relèvement de 2017 le porte de 0,573 D en 2016 à 0,659 D, sans rattraper la baisse depuis 2008. Les deux autres zones suivent la même évolution (@fig-fl-tnb-tarif).
 
 :::: {.chronologie-repliable titre="Tarif au mètre carré des terrains non bâtis : les trois décrets, dates d'effet et pages, 1997-2017"}
 

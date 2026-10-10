@@ -2238,6 +2238,41 @@
       },
       "note": "citation-key: loi-org2006-48\nJORT n° 59 du 25 juillet 2006, édition française p. 1923-1930, couche texte ; art. 6 (renumérotation) : p. 1929-1930. Note : docs/notes/finances-locales-institutions-lectures-2026-10-10.md, § 1.4 et 6.",
       "URL": "https://www.pist.tn/jort/2006/2006F/Jo0592006.pdf"
+    },
+    {
+      "id": "bct-ra",
+      "type": "dataset",
+      "note": "citation-key: bct-ra\nTitre relevé en couverture des fascicules (« Rapport Annuel 2024 ») et confirmé sur bct.gov.tn ; les métadonnées PDF portent un code de service interne, inutilisable. Publication annuelle depuis 1959. Le tableau « Principaux indicateurs de l'emploi » ne figure toutefois que dans 14 rapports sur 66, d'où une série d'emploi limitée à 2007-2024.",
+      "publisher": "Banque Centrale de Tunisie",
+      "title": "Rapport annuel",
+      "URL": "https://www.bct.gov.tn/bct/siteprod/page.jsp?id=77",
+      "author": [
+        {
+          "literal": "Banque centrale de Tunisie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ins-annuaire",
+      "type": "report",
+      "title": "Annuaire statistique de la Tunisie (éditions 1995-2001, 1998-2002, 1999-2003 et 2019-2023)",
+      "title-short": "INS, Annuaire statistique de la Tunisie",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut National de la Statistique, Tunisie",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/publication/annuaire-statistique-de-la-tunisie-2019-2023",
+      "note": "citation-key: ins-annuaire\nEnsemble d'éditions d'une publication annuelle de l'INS, à édition glissante sur cinq ans ou plus. Éditions utilisées pour l'indice des prix à la consommation : 1995-2001, 1998-2002, 1999-2003 et 2019-2023."
     }
   ]
 }

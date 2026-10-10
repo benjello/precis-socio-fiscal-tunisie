@@ -13,7 +13,13 @@ versé en 0.125), pour le chapitre « Les impôts sur les immeubles » :
   - `tib_prix_reference.md` : le minimum et le maximum du prix de référence du mètre carré
     couvert, une ligne par catégorie de superficie, une colonne par grandeur et par date ;
   - `tnb_tarif.md` : le tarif au mètre carré de la taxe sur les terrains non bâtis, une
-    ligne par zone de densité, une colonne par date.
+    ligne par zone de densité, une colonne par date ;
+  - deux séries longues au cache `precis/_seriescache/`, par le composant commun
+    `ot.ecrire_serie_parametres` : `fl-tib-prix-reference` (huit grandeurs, le minimum et le
+    maximum de chaque catégorie) et `fl-tnb-tarif` (trois zones), une ligne par grandeur et
+    par date d'effet, avec le texte et son lien au Journal officiel. Les figures en escalier
+    du chapitre les lisent par `figtools.series()` ; chacune a sa série, donc ses propres
+    liens « Base législative ».
 
 LA FORME DES DEUX BARÈMES. `ot.tableau_dates_reperes` met un paramètre par ligne ; ici une
 ligne réunit plusieurs paramètres — le minimum et le maximum d'une même catégorie —, et le
@@ -50,6 +56,9 @@ TNB = f"{FL}/taxe_terrains_non_batis"
 RACINE = Path(__file__).parent.parent / "precis"
 LIVRE = "finances_locales"
 LANGUES = ("fr", "ar")
+CACHE = RACINE / "_seriescache"
+SERIE_PRIX = "fl-tib-prix-reference"
+SERIE_TARIF = "fl-tnb-tarif"
 
 # Date d'effet -> ancre de la ligne du registre replié, dans `_impots_immeubles.qmd`.
 ANCRES_PRIX = {"1997-03-13": "r-fl-imm-prix-1997", "2008-01-01": "r-fl-imm-prix-2008",
@@ -289,6 +298,14 @@ def ecrire_taux() -> int:
     return code
 
 
+def ecrire_series() -> int:
+    """Les deux barèmes en séries longues, que tracent les figures en escalier du chapitre."""
+    prix = [parametre_prix(c, borne) for c in CATEGORIES for borne in ("minimum", "maximum")]
+    tarif = [parametre_tarif(z) for z in ZONES]
+    return (ot.ecrire_serie_parametres(SERIE_PRIX, prix, CACHE)
+            or ot.ecrire_serie_parametres(SERIE_TARIF, tarif, CACHE))
+
+
 def main() -> int:
     if not ot.openfisca_utilisable():
         print(
@@ -298,7 +315,8 @@ def main() -> int:
         return 1
     return (ecrire_taux()
             or ecrire_cote_a_cote("tib_prix_reference.md", tableau_prix, ANCRES_PRIX)
-            or ecrire_cote_a_cote("tnb_tarif.md", tableau_tarif, ANCRES_TARIF))
+            or ecrire_cote_a_cote("tnb_tarif.md", tableau_tarif, ANCRES_TARIF)
+            or ecrire_series())
 
 
 if __name__ == "__main__":
