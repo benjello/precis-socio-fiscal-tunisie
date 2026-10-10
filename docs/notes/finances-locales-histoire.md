@@ -5,6 +5,32 @@
 > fichier cible `precis/fr/finances_locales/_histoire.qmd` (ancre `sec-fl-histoire`). Rien n'y est
 > rédigé pour le précis.
 >
+> **Corrections du 10 octobre 2026** (lectures : `finances-locales-institutions-lectures-2026-10-10.md`,
+> qui prime sur cette note là où elles divergent ; le reste de la note n'est pas récrit).
+>
+> - § 1.4 : la loi n° 75-33 n'a aucune clause d'effet ; elle est exécutoire le 22 mai 1975
+>   (publication le 20, un jour franc). Le rectificatif d'août 1975 corrige des mots, sans date.
+>   Les lois organiques n° 85-43, 95-68 et 2006-48 sont lues (85-43 : p. 642 seule) ; seule la
+>   n° 91-24 reste connue par son intitulé. La loi n° 2006-48 renumérote bien la loi organique
+>   (art. 6) : les art. 12 et 13 de 1975 deviennent 11 et 12, l'art. 42 devient 25.
+> - § 1.6 : le décret n° 2011-383 dissout **22** conseils, non 23. Les décrets de dissolution de
+>   2011 sont **dix-huit**, pour 212 conseils (somme des lignes de tableau, doublons non cherchés),
+>   tous lus ; leur fondement est « art. 12 et 13 de 1975, devenus 11 et 12 en 2006 », et non le
+>   seul art. 13. Les fascicules n° 74, 78, 84 et 86 de 2011 ont une édition française ; seul le
+>   n° 92 n'en a pas. Le JORT n° 59 imprime « Décret n° 2012-1091 » pour un décret du 6 août 2011 :
+>   le millésime est 2011. S'y ajoute le décret n° 2011-4252 du 24 novembre 2011, qui dissout tous
+>   les conseils régionaux (JORT n° 92, AR p. 2942-2943), absent de cette note.
+> - § 1.7 : l'art. 21 de la loi constituante n° 2011-6 n'est plus une piste ; il est lu (JORT
+>   n° 97 de 2011, AR p. 3114) : pouvoir du chef du gouvernement de dissoudre, nommer et proroger ;
+>   en vigueur dès l'adoption, le 10 décembre 2011 (art. 28). Les décrets de 2012 lus s'y fondent.
+>   Rien n'est lu qui relie ces prorogations aux élections de 2018.
+> - § 1.11 : le décret-loi n° 2023-9 n'a ni visa ni considérant : il n'énonce aucun but (ce n'est
+>   pas une lacune de lecture). Le décret-loi n° 2026-4 du 30 septembre 2026, postérieur à cette
+>   note, est au chapitre (`#sec-fl-hist-2026`).
+> - § 6 : le plan proposé est remplacé par celui de
+>   `finances-locales-histoire-competences-notions-plan-architecte.md`, § 2.3, appliqué le
+>   10 octobre 2026.
+>
 > **Sources.** Textes lus au *Journal officiel*, dans les fascicules du corpus local
 > (`~/projets/PDFs-legislation-tunisie/PDFs/JORT/`) ou, quand le corpus ne les a pas, téléchargés
 > de pist.tn (1957, n° « 122 » de pist.tn, voir § 1.1). Les fascicules antérieurs à 2000 sont des
