@@ -2195,8 +2195,21 @@ Plans : `finances-locales-impots-plan-architecte.md`,
   subventions au chapitre 9. Seuls les trois barèmes des taxes sur les immeubles sont engendrés.
 - **Figure des barèmes des taxes sur les immeubles**, en dinars courants et en dinars de 2025 :
   devenue faisable (séries complètes de 1997 à 2017), non faite.
-- **Lectures en attente** : loi organique n° 91-24 ; loi organique n° 85-43, p. 643-644, et
-  sens de « paragraphes 2 - 10 et 12 » ; décret-loi n° 2026-4, art. 14 à 27, 35 à 48 et 100 à
+- **Approbation des délibérations communales, 1975-2018** (lecture du 10 octobre 2026,
+  `docs/notes/finances-locales-approbation-1975-2018.md`), portée aux chapitres 3, 4 et 8.
+  **Établi** : tarifs approuvés par le gouverneur de 1975 à 1995 (ou le délégué jusqu'en 1985),
+  sans approbation propre de 1995 à 2018, sauf la redevance des déchets non ménagers ; budget
+  approuvé jusqu'en 2018 ; emprunts approuvés par les ministres jusqu'en 1995, et autorisés
+  depuis 1985 par l'art. 66 du code de la comptabilité publique (loi n° 85-47) ; loi organique
+  n° 91-24 lue (art. 48 et 90 seuls) ; « 2 - 10 et 12 » = 2, 10 et 12. **Reste, lisible dans le
+  corpus (image ou OCR)** : art. 66 d'origine (loi n° 73-81, JORT n° 51 de 1973) et ses
+  modificatifs après 1985 (fiche `r-fl-ccp-art66-modificatifs`, terme arabe à jouer, loi
+  n° 85-109 à ouvrir) ; décret n° 90-1960, p. 1849-1853 ; décrets n° 76-826, n° 95-1121 et
+  n° 58-234 ; loi n° 75-33 hors p. 1058-1060 et durée des baux de l'art. 43, 3e tiret ; loi
+  organique n° 2008-57 ; date de dépôt du JORT n° 59 de 1995 (date d'effet de la loi organique
+  n° 95-68) ; numéros des art. 43, 44 et 46 après 2006. Le motif du retrait de 1995 n'est dit
+  par aucun exposé ni rubrique.
+- **Lectures en attente** : décret-loi n° 2026-4, art. 14 à 27, 35 à 48 et 100 à
   131, et art. 57 à 99 à relever pour les budgets ; édition française du code de 2018 et du
   décret-loi de 2026, **à obtenir**.
 - **2012** : décrets de dissolution, de nomination et de prorogation à lire ; aucun total pour
@@ -2365,9 +2378,14 @@ la fiche a sa seconde ancre, et `#sec-fl-hist-carte` le dit en une proposition a
   (`r-fl-hist-2019-instance`, `-2020-instance`, gardées parce que le premier plan les lie) ; le
   registre de 1985-2008 ne dit plus « non établi » pour l'autorité d'approbation d'avant 1985 ni
   pour l'article 42 de 1975, lus à l'image le 5 octobre (p. 1058) et portés au registre
-  `tbl-fl-comp-1975` : il y renvoie. **À trancher** : l'article 43 de 1975 réserve aux ministres
-  les § 2, 9, 10 et 12 de l'article 42 (note du 5 octobre), celui de 1985 les « paragraphes 2 -
-  10 et 12 » ; l'article 42 entre 1975 et 1995 (loi n° 91-24) n'est pas établi ;
+  `tbl-fl-comp-1975` : il y renvoie. **Tranché le 10 octobre 2026** : l'article 43 de 1985
+  réserve aux ministres les paragraphes 2, 10 et 12 (édition arabe), le 9 passant au
+  gouverneur ; l'article 42 n'est modifié ni en 1985 ni en 1991 ; le premier plan et le registre
+  disent ce qui sort de la liste en 1995 (emprunts, taxes et droits, foires et marchés, dons et
+  legs grevés, acquisitions) ; ligne de 1991 portée au registre (`r-fl-hist-1991`), avec son avant →
+  après sur le plein temps, depuis la rédaction de 1985 de l'art. 48 ; guillemets retirés des
+  lignes de 1995 et de 2006 (couche texte). **À trancher** : la portée de la ligne de 1995,
+  laissée à « ajustement » ;
 - 2012 : décrets n° 2012-910, 2012-1122, 2012-2007, 2012-2536 à 2012-2538, 2012-2771, 2012-2885,
   2012-2895 et 2012-2943 à lire ; aucun total pour l'année ; décrets de 2012 à 2017 à lire avant
   de dire ce qui relie les prorogations aux élections de 2018 (le chapitre n'en dit rien) ;
@@ -2377,9 +2395,9 @@ la fiche a sa seconde ancre, et `#sec-fl-hist-carte` le dit en une proposition a
   10 octobre, dont le résumé dit « neuf » : **à trancher** ;
 - source de la durée d'un an des délégations spéciales : art. 161 du code électoral (JORT n° 30
   de 2009), fascicule sans couche texte utile, **OCR ou lecture à l'image** ;
-- loi organique n° 91-24 (JORT n° 30 de 1991, fascicule scanné, **OCR**, page à vérifier) ; loi
-  organique n° 85-43, p. 643-644, et sens de « paragraphes 2 - 10 et 12 » (édition arabe) ;
-  art. 48 de la loi organique des communes dans sa rédaction de 1975 ;
+- loi organique n° 85-43 : date d'adoption à relire dans l'édition française ;
+  art. 48 de la loi organique des communes dans sa rédaction de 1975 ; date d'effet de la loi
+  organique n° 95-68 ;
   clauses d'effet des lois organiques de 1985 à 2008 ; loi n° 75-38 (intitulé seul, sans clé) ;
 - loi municipale de 1957 : clause finale (fascicule du 15 mars 1957 absent du corpus, sur
   pist.tn) ; décrets d'avant 1956, **à obtenir** ;
@@ -2428,11 +2446,18 @@ publié et non entré en vigueur (art. 1, 12, 29, 30, 55, 56, 136 et 139). Fiche
 - **Approbation des délibérations, 1985, 1995 et 2006** : portées le 10 octobre 2026 au registre
   du contrôle des actes (`tbl-fl-comp-controle-articles`, lignes `r-fl-comp-controle-1985`,
   `-1995`, `-2006`), une ligne par loi, avec renvoi au registre du chapitre d'histoire
-  (`tbl-fl-hist-modifs-communes`) qui en porte le texte. **États de lecture** : n° 85-43, p. 642
-  lue à l'image, p. 643-644 non lues, « paragraphes 2 - 10 et 12 » cité tel qu'imprimé ;
-  n° 95-68 et n° 2006-48, couche texte — repris sans guillemets ici, alors que le registre du
-  chapitre d'histoire en cite des passages entre guillemets : **à relire à l'image, ou
-  guillemets à retirer** ; n° 91-24 non lue (fascicule scanné, **OCR**).
+  (`tbl-fl-hist-modifs-communes`) qui en porte le texte. Complétées le 10 octobre 2026 d'après
+  `docs/notes/finances-locales-approbation-1975-2018.md` : avant → après de 1985 et de 1995,
+  art. 44 de 1975 et détail de l'art. 43 au registre `tbl-fl-comp-1975`, ligne
+  `r-fl-comp-controle-emprunts` (loi n° 85-47, art. 66 du code de la comptabilité publique),
+  ligne « Budget, emprunts, taxes et droits » de `tbl-fl-comp-controle` scindée en trois.
+  Constat et ancre `r-fl-ccp-art66-modificatifs` sous `#sec-fl-comp-communes-1975` : le maintien
+  de l'art. 66 jusqu'en 2018 n'est vérifié que sur les titres de l'index. **États de lecture** :
+  n° 85-43, p. 642-643 lues en entier (OCR relu, édition arabe à l'image pour les art. 43 à
+  46) ; n° 85-47, OCR, sans guillemets ; n° 95-68 et n° 2006-48, couche texte, sans guillemets
+  dans les deux chapitres, **à relire à l'image** avant toute citation ; n° 91-24 lue en entier.
+  **Non établi** : l'application de l'art. 44 de la loi organique des communes à l'autorisation
+  des emprunts ; la durée des baux approuvés par le délégué en 1975 (art. 43, 3e tiret).
 - **Dates d'effet** : loi n° 75-33, exécutoire le 22 mai 1975 (aucune clause ; rectificatif du
   1er août 1975 lu à l'image, sans date d'effet, numéros d'articles à relire) ; loi organique n° 89-11 (p. 220-221), non établie, le registre des
   dates donne sa publication. **Lisible dans le corpus, à l'image.**
@@ -2450,9 +2475,9 @@ publié et non entré en vigueur (art. 1, 12, 29, 30, 55, 56, 136 et 139). Fiche
   10 octobre, § 3) ; qui adopte le budget communal et arrête un tarif depuis le
   14 mars 2023 ; **dépenses par fonction et part dans la dépense publique : aucune série
   identifiée**, à chercher dans les rapports de la Haute instance — **à obtenir**.
-- **Tableau de tête** : `tbl-fl-comp-etats` suit le plan, sauf deux cases — la case « 1975, qui
-  fixe les droits » dit « le conseil, sous approbation préalable » (art. 42 de 1975) avant le
-  renvoi ; la « supervision du gouverneur » y est sans guillemets (traduction de travail).
+- **Tableau de tête** : `tbl-fl-comp-etats` suit le plan, sauf deux cases — la colonne de la loi
+  organique des communes couvre 1975-2018, et sa case « qui fixe les droits » dit les deux
+  régimes (approbation jusqu'en 1995, aucune approbation propre ensuite) avant le renvoi ; la « supervision du gouverneur » y est sans guillemets (traduction de travail).
 - **Livre arabe** : chapitre non traduit ; douze attributs `titre` à traduire.
 
 ### Chapitre 5 — Budgets et comptes (`_budgets.qmd`) — converti le 9 octobre 2026
@@ -2602,8 +2627,15 @@ lire à l'image). **Lacunes**, lisibles dans le corpus sauf mention :
 - annexes des décrets de tarifs : aucune valeur transcrite (annexe française de 1998 rognée,
   édition arabe du JORT n° 59 de 1998 **à lire à l'image** ; annexe de 2016 à transcrire) ;
   six modificatifs du décret de 1998 connus par leur intitulé, sans clé ;
-- décret n° 90-1960 du 28 novembre 1990 et son modificatif n° 95-1121 : la faculté tarifaire
-  de la collectivité peut être antérieure à 1998 ;
+- **avant 1998** (porté le 10 octobre 2026 à `#sec-fl-moduler-droits`) : `tbl-fl-taxes-pouvoir`
+  commence en 1975 — deux lignes, 22 mai 1975 et 6 décembre 1990 —, registre
+  `tbl-fl-taxes-textes-1975-1995` (loi n° 75-35, art. 11 ; lois organiques n° 75-33, 85-43 et
+  95-68 ; décret n° 90-1960) ; l'art. 93 du code reprend l'art. 8 du décret
+  n° 90-1960. **Reste, lisible dans le corpus à l'image** : décret n° 90-1960, p. 1849-1853
+  (tarifs laissés à la collectivité ; clause d'effet, la date du 6 décembre 1990 étant calculée
+  sur les seuls art. 8 à 10) ; décrets n° 76-826, n° 95-1121 et n° 58-234, connus par leur seul
+  intitulé ; la case « Contrôle » de 2016 reprend l'exception des déchets non ménagers
+  (art. 93 du code, sans modificatif au registre du chapitre) : **à confirmer** ;
 - loi n° 2002-76, art. 3 (réduction de moitié pour les cas sociaux après le 1er août 2002) ;
   barème des parkings de la LF 2003, art. 79, à transcrire ; arrêtés du 4 mars 1997 et du
   30 mai 2003 ; antécédents abrogés en 1997 (décrets de 1887 à 1956, **à obtenir** ; loi
