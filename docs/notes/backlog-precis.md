@@ -588,7 +588,35 @@ liste qui suit le tableau, citations comprises. Restent :
 - **La compensation est sortie du volume le 6 octobre 2026** : `_compensation.qmd` est supprimé,
   son texte forme le volume IX (rubrique « La compensation » ci-dessous) ; le plan du volume
   (`index.qmd`) y renvoie par un lien entre livres.
-- **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée par l'IPC des annuaires de l'INS (`ins-annuaire-ipc`). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches).
+- **Chapitre des prestations familiales converti le 9 octobre 2026** (`_prestations_familiales.qmd`,
+  « ruptures au premier plan, détail replié », section `.domicile-unique`, 42 lignes de registre
+  `#r-pf-…`, huit blocs repliés) : vue d'ensemble, mise en place 1944-1961, grandes réformes
+  (1980, 1989, 1994 ; 1976 et 1986 dans l'entre-temps), état du droit en 2026, une section par
+  prestation adjointe, secteur public, longue période. Trois figures nouvelles, tirées de la
+  série `prestations-familiales-parametres` (écrite par `generate_prestations_tables.py`) :
+  `#fig-pf-montant-max`, `#fig-pf-plafond-smig`, `#fig-pf-msu-creche-reel` ; dinars de 2025 par
+  `scripts/dinars_constants.py`, le déflateur du marché du travail remonté dans `scripts/`
+  (`marche_travail/figures/deflateur.py` le réexporte). Aucun tableau de cotisations dans ce
+  chapitre : le financement renvoie à `cotisations_sociales/_autres_branches.html#sec-cot-famille`.
+  **Restent, par disponibilité :**
+  - *lisible au corpus* : la **date d'effet de la loi n° 96-65** (fin de l'article unique à relire,
+    JORT n° 60 du 26 juillet 1996, déposé le 30 juillet : 4 août 1996 si l'article ne dit rien) et
+    celle de la **loi n° 96-101** (mention de dépôt du JORT n° 94 de 1996 à relever à l'image,
+    rectificatif au JORT n° 7 de 1997, p. 114) — le chapitre dit « non établie ici » ; la **loi
+    n° 82-71** du 15 août 1982 (JORT n° 55, p. 1737), lue partiellement, sans clé de
+    bibliographie : ligne de registre sans ancre ni citation ;
+  - *à dépouiller* : les lois modifiant les articles 52, 54 et 61 de la loi n° 60-30 **de 2007 à
+    2026** (fiche `r-pf-art61-apres-1988`, couverte jusqu'au 23 juillet 2007) ; un éventuel décret
+    de fixation des indemnités familiales du secteur public **postérieur à 1996** (aucune passe
+    documentée, pas de fiche) ;
+  - *à obtenir* : le décret du 8 juin 1944 et ses modificatifs (hors de la couverture de
+    `jort_cache.db`) ;
+  - *arabe* : le chapitre arabe garde l'ancien plan et la légende « constants de 1990 » de
+    `fig-cnss-allocations-familiales`, dont le module trace désormais des dinars de 2025
+    (traduction différée) ;
+  - *tableau fait main* : `tbl-pf-ages` (âges limites, art. 54), faute de grandeur à la base des
+    tableaux (`backlog-modele.md`).
+- **Dépense des allocations familiales, 1990-2004 — fait le 3 octobre 2026** (`#fig-cnss-allocations-familiales`, `#sec-pf-longue-periode`), tirée de la rétrospective financière 1990-2004 de la CNSS (`cnss-retrospective-1990-2004`, exemplaire papier numérisé ; série `cnss-retrospective-ressources-emplois` snapshotée le 3 octobre 2026), déflatée, depuis le 9 octobre 2026, par l'indice du précis en **dinars de 2025** (`scripts/dinars_constants.py` ; 346 MD de 2025 en 1990, 209 en 2004 — avant : IPC des annuaires de l'INS, base 1990). Restent : allocataires, enfants, montant moyen, dépense avant 1990 et après 2004 (TODO du chapitre). **221 valeurs de 1999** (et quelques-unes de 2000) masquées par la reliure restent à lire sur l'original papier (tunisia-data#26) ; en attendant, la figure trace des estimations hachurées ou creuses. Quand le classeur revient : réinjecter dans tunisia-data, relancer `figtools.refresh_cache("cnss-retrospective-ressources-emplois")`, puis relire la note de lecture, qui cite des montants. Depuis le 3 octobre 2026, la figure a trois vues : millions de dinars, % du PIB (PIB du ministère des Finances, série `irpp-ratios`, rupture de base des comptes nationaux marquée en 1997, non corrigée) et % du total des ressources de la CNSS (tableau de l'ensemble, page 78, toutes branches). Depuis le 9 octobre 2026, une quatrième vue donne les millions de dinars de 2025, à part des dinars courants.
 - **Onze paliers de l'allocation** entre 1987 et 2018 n'ont aucun fondement textuel publié.
   Les décisions ou circulaires de la direction générale de la promotion sociale et
   les rapports administratifs sont à chercher **hors du JORT**. L'arrêté de 2024
@@ -1326,7 +1354,7 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 Ligne éditoriale rappelée par l'humain : le précis vise l'**impact économique, distributif et budgétaire**, l'**évolution sur le temps long** et les **ruptures de réforme** ; on retient d'un texte sa **date, sa valeur et sa source**, sans les détails administratifs sans impact (modalités de déclaration, de recouvrement, procédures). Les chapitres déjà écrits en contiennent beaucoup (par exemple le recouvrement des impôts locaux dans le volume VII). Chantier à mener plus tard, **sans forcément réécrire le texte** : réduire la visibilité de ces sections (encadrés repliés, niveau de titre plus bas) ou les **repousser en annexe** du volume. Une passe par volume, à décider avec l'humain. Les nouveaux chapitres appliquent la règle dès leur rédaction.
 ## Le marché du travail
 
-### Annexe « Les conventions collectives, branche par branche » (8 octobre 2026, premier jet ; repris le 9 octobre 2026)
+### Annexe « Les conventions collectives, branche par branche » (8 octobre 2026, premier jet ; repris le 9 octobre 2026 ; grilles entières le 9 octobre 2026)
 
 `precis/fr/marche_travail/_annexe_conventions.qmd` (`#sec-mt-cc-annexe`), déclarée dans les
 `appendices` du `_quarto.yml` français, avant le glossaire. Décision du propriétaire du 8 octobre
@@ -1336,27 +1364,70 @@ par branche, la création, la description de la grille, la figure en escalier et
 avenants, et renvoie pour chaque grille à sa vue en tableau sur le site de la base législative
 (`…/parameters/<nœud de la grille>/table/`). `scripts/generate_conventions_collectives_tables.py`
 (appelé par `generate_marche_travail_tables.py`, donc gardé par le contrôle de fraîcheur) parcourt
-`marche_travail/conventions_collectives` d'`openfisca-tunisia` 0.122 sans nommer de branche ni de
-grille, et écrit `tables/cc_index.yml`, `tables/cc_<branche>_grilles.liens.yml` (un lien par
-grille, contrôlé par `scripts/verifier_liens_base_legislative.py`) et les séries
-`_seriescache/cc-grille-<branche>.csv`. La grille d'une case se déduit des chemins : le nœud le
-plus profond commun aux cases de même grandeur et de même unité de la branche (`grilles`). Trois
-branches, huit cases, 212 valeurs, 6 dates sans valeur (« non publiée », au 1er janvier 2026,
-bâtiment et assurances). La création de chaque convention et la suite des avenants viennent des
-notes, non des paramètres.
+`marche_travail/conventions_collectives` d'`openfisca-tunisia` sans nommer de branche ni de
+grille, et écrit `tables/cc_index.yml`, `tables/cc_<branche>_grilles.liens.yml` (contrôlé par
+`scripts/verifier_liens_base_legislative.py`) et une série par grille tracée,
+`_seriescache/cc-grille-<branche>-<grille>.csv`. La grille d'une case se déduit des chemins : le
+nœud le plus profond commun aux cases de même grandeur et de même unité de la branche (`grilles`).
+La création de chaque convention et la suite des avenants viennent des notes, non des paramètres.
+
+**État au 9 octobre 2026, version 0.128 du modèle** (borne `VERSION_MINIMALE` relevée à 0.128) :
+trois branches, cinq grilles, toutes tracées — textile horaire (7 lignes × 21 colonnes, 147
+cases) et mensuelle (18 × 21, 378) ; bâtiment, personnel occasionnel (9 lignes, puis 10 depuis
+2008 ; 11 cases en tout) et personnel
+administratif et technique (19 × 11, 209) ; assurances (22 × 14, 308) —, soit 1 053 cases,
+29 148 valeurs et **144 cases vides** (illisibles sur le fascicule : 127 dans la grille mensuelle
+du textile, 16 dans la grille mensuelle du bâtiment, 1 dans les assurances). L'index ne liste
+plus les cases une à une : il porte, par grille, ses comptes, sa période et les fiches de sa case
+du bas et de sa case du haut ; la série d'une grille ne porte que ces deux cases.
+
+Règles écrites dans le générateur (fonctions pures, testées dans
+`tests/test_conventions_collectives.py`) :
+
+- **le bas et le haut se choisissent par grille, à sa dernière date publiée** (`bas_et_haut`),
+  parmi les cases qui y ont une valeur en vigueur : une ligne close avant (l'ouvrier hautement
+  qualifié du bâtiment, 2008) ou une case illisible à cette date ne concourt pas ;
+- **une colonne sans rang parmi des colonnes numérotées n'est pas un échelon** (`hors_rang`) : le
+  bas de la grille mensuelle du textile est l'échelon 1 (confirmation) de la catégorie 1A, non
+  la colonne de stage, égale à l'échelon 1 jusqu'en 2007 et plus basse ensuite ;
+- **trois espèces de valeur vide** (`etat_grille`), distinguées par la forme de la grille : grille
+  non publiée (aucune case n'a de valeur à la date), ligne close (plus aucune date ensuite), case
+  vide parce qu'illisible (les autres) ;
+- **une grille n'a sa courbe que si elle est courante** (`marque_tracees`) : au moins trois dates
+  publiées, et pas de grille de même unité qui commence à sa date de clôture ou après. Sinon
+  l'annexe la mentionne, avec sa période et son lien (`autres_grilles`) ;
+- **la vue en tableau d'un nœud n'existe sur le site qu'en deçà de 200 cases**
+  (`PLAFOND_VUE_TABLEAU`) : l'adresse `…/table/` des trois grandes grilles répond 404. Elles ont
+  un lien par ligne (`liens_grille`) — 18, 19 et 22 liens —, rendus en une ligne sous la figure.
 
 Ce qui lui manque :
 
-- **les pages de la base législative** : les trois vues de grille répondent (9 octobre 2026) —
-  `textile.salaire_base.agents_payes_a_l_heure`, `batiment.salaire_base.personnel_occasionnel`,
-  `assurances.salaire_base`, en français et en arabe. Elles ne donnent que les cases versées en
-  amont : le renvoi de l'annexe dit « les cases de la grille », non « la grille entière » ;
-- **les grilles entières** : chaque branche n'a que deux à quatre cases (bas et haut). Restent
-  toutes les autres catégories et échelons, la grille mensuelle du textile (17 catégories) et celle
-  du bâtiment (19 catégories, 11 échelons), les 21 échelles des assurances ; à verser en amont : la
-  vue de la grille les montre alors sans que l'annexe change, et la figure garde le bas et le
-  haut. Si une branche n'a qu'une case d'une unité donnée, sa grille est prise au nœud qui
-  contient la case — à revoir si ce nœud est une catégorie et non la grille ;
+- **régénérer quand la 0.129 du modèle sera publiée** (openfisca-tunisia, PR n° 490, ouverte le
+  9 octobre 2026) : elle ajoute aux assurances deux nœuds frères de `salaire_base` —
+  `salaire_base_avant_1993` (1975-1992, clos au 1er juin 1993) et
+  `salaire_base_avant_1993_grille_1_de_1990` (une seule date). Le générateur y est prêt, et un
+  test en imite la forme : la première sort « antérieure », la seconde « peu de dates », aucune
+  ne fournit de bas ni de haut, et `cc.autres_grilles("assurances")` — déjà appelé dans l'annexe —
+  les mentionnera avec leur période et leurs liens (un par ligne : 264 cases chacune). À faire
+  alors : relever la borne, régénérer, relire le libellé de leurs liens (il vient des
+  `short_label` des deux nœuds) et écrire dans la section des assurances ce que sont ces grilles
+  (hors indemnité complémentaire provisoire) ; le tableau `@tbl-mt-cc-grilles-hors-series` du
+  chapitre pourra alors renvoyer à l'annexe pour les assurances ;
+- **les 144 cases vides** : à relire sur un meilleur exemplaire des fascicules — textile mensuel,
+  grilles de 1994 (1 case), 1999 (42), 2000 (30), 2002, 2003 et 2004 (18 chacune, l'échelon 18
+  des dix-huit lignes) ; bâtiment mensuel, grilles de 1996 (7), 1998 (5), 2001, 2002, 2003 et
+  2004 (1 chacune) ; assurances, grille de 1996 (1). Le compte de l'annexe est calculé : il
+  baissera à la régénération quand une case sera lue en amont ;
+- **la vue en tableau des grandes grilles** : le site de la base législative ne rend pas en un
+  tableau un nœud de 200 cases ou plus ; si ce plafond est levé en amont (visualiseur des
+  paramètres), `PLAFOND_VUE_TABLEAU` se relève et chaque grille retrouve un lien unique ;
+- **une case tracée vide avant la dernière date publiée** : `cc.figure` la refuse par une erreur
+  explicite — le composant `figtools.figure_escalier` ne sait ni commencer un trait par une
+  valeur vide ni interrompre la vue en dinars constants (il relierait les années de part et
+  d'autre). Aucune case tracée n'est dans ce cas (les dix n'ont de vide que le 1er janvier
+  2026) ; à traiter dans `figtools` le jour où cela arrive ;
+- **deux grilles de même unité sous une même grandeur** ne se distingueraient pas (`grilles`) :
+  aucune branche versée n'en a ;
 - **les indemnités** (transport, présence, assiduité) : relevées en partie dans les notes, pas
   dans les paramètres ; le générateur les prendra sous un nœud frère de `salaire_base` ;
 - **les autres branches** : commerce, industrie hôtelière, mécanique et électricité d'abord
@@ -1367,8 +1438,10 @@ Ce qui lui manque :
   fascicules de l'édition française présents au corpus, à ouvrir ; grilles de 1990-1992 hors
   indemnité complémentaire provisoire (données au chapitre, non à l'annexe) ; pages des arrêtés et
   des avenants n° 6 à 18 dans l'édition arabe ;
-- **bâtiment, avenant n° 16** : second exemplaire du JORT n° 132 du 2 décembre 2022 à obtenir (ses
-  grilles sont données d'après la reproduction d'un site tiers, sans lien) ;
+- **bâtiment, avenant n° 16** : second exemplaire du JORT n° 132 du 2 décembre 2022 à obtenir. Les
+  deux grilles entières des 1er décembre 2021, 1er janvier 2023 et 1er janvier 2024 — 220 cases
+  par date — sont lues sur la reproduction d'un site tiers, sans lien ; l'annexe le dit pour les
+  deux grilles (section, note de lecture et réserve de chaque figure) ;
 - **assurances** : application du décret n° 2026-68 à la branche non établie. Les dix-huit clés
   `cc-assurances-*` — dont `cc-assurances-avenant11-grille-2015`, citée au registre
   `#r-cc-assurances-grille-2014` — sont tenues en double, à l'identique, dans les
@@ -1387,17 +1460,27 @@ Ce qui lui manque :
   en arabe, mais les noms des branches, des grilles et des cases y restent en français (les
   `short_label` du modèle n'existent qu'en français) : à trancher avec le relecteur de l'arabe,
   comme l'intitulé arabe du renvoi (`INTRO_BASE` de `figures/conventions.py`,
-  `cases` de `MOTS` dans le générateur) ;
-- **figures** : une figure en escalier par branche, par le composant commun. Chaque figure
-  trace, par unité, la case la plus basse et la plus haute d'après leur dernière valeur
-  (`_tracees` de `figures/conventions.py`) : dans celle des assurances, l'échelle 1, échelon 1,
-  et le quatorzième échelon de l'échelle 21 ; les douzième et treizième échelons ne se lisent
-  qu'à la vue de la grille. La légende de chaque figure est écrite d'après `cc_index.yml`. Pas de lecture
-  en dinars constants ni de rapport au SMIG dans l'annexe ;
-- **prose de l'annexe** (9 octobre 2026) : ni compte ni montant saisi — les nombres d'avenants,
-  de cases et de dates d'effet, et les montants, ne sont que dans les figures
-  engendrées ; le tableau d'ouverture ne porte plus que la création (signature, agrément, date
-  d'effet) et les cases tracées. Les tableaux des avenants du textile et du bâtiment restent
+  `cases` de `MOTS` dans le générateur) et les mentions arabes posées le 9 octobre 2026 avec les
+  grilles entières (`MOTS` de `figures/conventions.py` : en-têtes des deux tableaux, « سطرًا
+  بسطر », « الخانات الفارغة » ; `cases_ligne` du générateur) ;
+- **figures** : une figure en escalier par grille tracée, par le composant commun, en dinars
+  courants et en dinars de 2025 — cinq figures. Le bas et le haut viennent de l'index. Les
+  étiquettes `fig-mt-cc-annexe-textile` et `-batiment`, que cite le chapitre, restent celles des
+  grilles horaires ; les grilles mensuelles ont `-textile-mensuelle` et `-batiment-mensuelle`.
+  Dans la figure des assurances, les douzième et treizième échelons de l'échelle 21 ne se lisent
+  qu'à la vue de la ligne. Une grille tracée sans figure déclarée dans l'annexe fait échouer le
+  rendu (`autres_grilles`). Pas de rapport au SMIG dans l'annexe ;
+- **prose de l'annexe** (9 octobre 2026) : ni compte ni montant saisi — les nombres de lignes, de
+  colonnes, de cases, de dates d'effet et de cases vides sont au tableau `@tbl-cc-annexe-grilles`
+  et dans la phrase des cases vides, engendrés depuis l'index ; les montants ne sont que dans
+  les figures. Le tableau d'ouverture a une ligne par grille : création de la convention, grille
+  et unité, cases tracées. La forme de chaque grille (lignes, colonnes, cases, et la date où
+  elle change) est une phrase engendrée (`cc.formes_branche`, d'après `formes` de l'index) : les
+  totaux écrits en toutes lettres — sept, dix-sept ou dix-neuf catégories, onze, douze ou
+  quatorze échelons, vingt et une échelles — sont retirés des descriptions. Restent à la main
+  les noms et les numéros qui désignent (catégories I à IV-2, échelles 1 à 21, treizième et
+  quatorzième échelons créés par l'avenant n° 5) et les registres repliés, qui disent ce que
+  chaque texte fixe. Les tableaux des avenants du textile et du bâtiment restent
   faits main, avec leur titre de bloc et leurs bornes : à engendrer quand les avenants seront
   versés en amont ;
 - **chapitre** (9 octobre 2026) : le tableau replié `@tbl-mt-cc-grilles` (62 grilles, 1974-2026)
@@ -1742,8 +1825,10 @@ en donnait trois.
     2025 (`#fig-augmentations-reel`, `#fig-salaires-categories-reel`) ; texte, légendes et
     libellés des modules mis d'accord, les bornes des libellés de `salaires_categories.py` étant
     lues dans les séries ;
-  - **`prestations_sociales`, non touché** : ses modules gardent leurs propres années de base
-    (`cnss_allocations_familiales.py` : 1990 ; `pnafn.py` : 1987) et ne lisent pas cette série.
+  - **`prestations_sociales`** : `cnss_allocations_familiales.py` et le module nouveau
+    `prestations_familiales.py` sont passés aux dinars de 2025 le 9 octobre 2026, par
+    `scripts/dinars_constants.py` (le déflateur de ce volume, remonté dans `scripts/`) ;
+    `pnafn.py` garde sa base 1987 et ne lit pas cette série.
 
 ## La compensation
 
@@ -2185,8 +2270,16 @@ ancres `r-fl-imm-…`. Trois fiches : `r-cfl-prix-reference-1998-2006`,
 `r-cfl-prix-reference-tib-apres-2017`, `r-cfl-tarif-tnb-apres-2017`. **Mis à jour le 9 octobre
 2026 avec la dissolution de la longue période** : la phrase de l'évaluation de la Banque
 mondiale sur 2006-2007 (53,5 puis 28,2 MD) y est écrite, sous son titre ; renvoi à
-`@fig-fl-lp-impots` au chapitre des budgets. **À reprendre, d'après les lectures du 9 octobre
-2026** (`finances-locales-impots-lectures-2026-10-09.md`), non fait :
+`@fig-fl-lp-impots` au chapitre des budgets. **Tableaux engendrés le 9 octobre 2026** : les
+taux selon les services (`tbl-fl-tib-taux`), le prix de référence du mètre carré couvert
+(`tbl-fl-tib-prix-reference`) et le tarif des terrains non bâtis (`tbl-fl-tnb-tarif`) viennent
+de `scripts/generate_finances_locales_tables.py`, avec leur onglet « Base législative » ; les
+valeurs et les dates d'effet faites main concordaient toutes (37 valeurs). Les registres repliés
+des décrets restent écrits dans le chapitre. Restent faits main, faute de paramètres : la
+pénalité de retard (`tbl-fl-penalite-retard`) et la contribution au fonds de l'habitat
+(`tbl-fl-immeubles-fnah`). Une figure des deux barèmes, en dinars courants et en dinars de
+2025, est désormais faisable (séries complètes de 1997 à 2017) : non faite. **À reprendre,
+d'après les lectures du 9 octobre 2026** (`finances-locales-impots-lectures-2026-10-09.md`), non fait :
 - l'état du droit y est dit pour 2025 avec un `TODO` de confirmation, alors que la loi de
   finances pour 2026 est inventoriée (aucun article du code modifié, aucun abandon
   d'arriérés) : titre et section à passer à 2026 ;

@@ -1,4 +1,4 @@
-# Les prestations familiales {#sec-prest-familiales}
+# Les prestations familiales {#sec-prest-familiales .domicile-unique}
 
 ```{python}
 #| echo: false
@@ -24,39 +24,125 @@ def table(nom, legende, label):
     print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
 ```
 
-Les prestations familiales du secteur privé sont exposées selon le plan suivi pour chaque dispositif de ce précis : leurs origines, antérieures à la loi n° 60-30 (@sec-pf-origines) ; le régime de cette loi dans son état du 1^er^ avril 1961, d'un seul tenant (@sec-pf-loi-1960) ; ses réformes, une par une (@sec-pf-reformes) ; les deux prestations qui lui ont été adjointes en 1980 et en 1994, la majoration pour salaire unique et la contribution aux frais de crèche ; enfin la vue de longue période (@sec-pf-longue-periode). Le secteur public, qui relève d'un dispositif distinct servi par l'employeur, est traité ensuite (@sec-pf-secteur-public) ; l'allocation familiale non contributive créée en 2022 l'est avec l'assistance sociale (@sec-af-non-contributive).
+Les [prestations familiales](#g-prestations-familiales) sont ce que la sécurité sociale verse au salarié du secteur privé parce qu'il a des enfants à charge : les [allocations familiales](#g-allocation-familiale), calculées en pourcentage du salaire, auxquelles s'ajoutent depuis 1980 une [majoration pour salaire unique](#g-majoration-salaire-unique) et depuis 1994 une [contribution aux frais de crèche](#g-contribution-frais-creche), toutes deux fixées en dinars. La [Caisse nationale de sécurité sociale](#g-cnss) les sert.
 
-## Les origines {#sec-pf-origines}
+Trois sujets voisins ont leur propre place. L'agent public reçoit de son employeur une indemnité distincte, décrite dans ce chapitre après les prestations du secteur privé (@sec-pf-secteur-public). L'allocation familiale versée sans cotisation aux ménages de l'Amen social relève de l'assistance sociale (@sec-af-non-contributive). Les cotisations qui financent la branche sont exposées au volume « Cotisations sociales » ([les prestations familiales dans le taux global](../cotisations_sociales/_autres_branches.html#sec-cot-famille)).
 
-La loi n° 60-30 ne crée pas les allocations familiales : elle succède à une législation antérieure, qu'elle abroge. Son article 131 abroge, sous réserve de ses dispositions transitoires, le **décret du 8 juin 1944** et les textes qui l'ont modifié ou complété, jusqu'à la loi n° 59-15 du 13 janvier 1959, ainsi que plusieurs textes qui s'y rattachent, dont un décret de 1945 étendant le bénéfice du décret de 1944 au personnel des usines à huile [@loi60-30, art. 131].
+Le chapitre donne d'abord une vue d'ensemble (@sec-pf-vue-ensemble), puis la mise en place du régime au 1^er^ avril 1961 (@sec-pf-loi-1960), ses réformes dans l'ordre de leur effet (@sec-pf-reformes) et l'état du droit en 2026 (@sec-pf-etat-du-droit) ; viennent ensuite une section par prestation adjointe (@sec-pf-salaire-unique, @sec-pf-creche), le secteur public (@sec-pf-secteur-public) et la longue période (@sec-pf-longue-periode). Les montants sont en dinars (D) courants, sauf quand ils sont dits « de 2025 » : ils sont alors ramenés aux prix de 2025 par l'indice des prix à la consommation.
 
-Les dispositions transitoires de la loi dessinent les institutions de ce régime antérieur. Des **caisses d'allocations familiales** existaient, dont la Caisse nationale de sécurité sociale est chargée de liquider les obligations actives et passives, dans les conditions prévues par la loi n° 58-130 du 22 novembre 1958, et dont le patrimoine lui est dévolu [@loi60-30, art. 124]. Les employeurs affiliés à la **Caisse centrale des prestations sociales** sont dispensés de redemander leur affiliation à la Caisse nationale [@loi60-30, art. 125], et les bénéficiaires de prestations familiales qui y étaient immatriculés, d'une nouvelle immatriculation au titre des prestations familiales [@loi60-30, art. 126]. L'avoir net d'un « Compte de surcompensation des allocations familiales », ouvert dans les écritures du Trésor, est transféré à la Caisse nationale pour lui servir de fonds de réserve [@loi60-30, art. 122]. Les organismes qui, en vertu d'une disposition antérieure, étaient dispensés de l'affiliation à une caisse d'allocations familiales demeurent dispensés de l'affiliation à la Caisse nationale [@loi60-30, art. 121].
+## Vue d'ensemble {#sec-pf-vue-ensemble}
 
-Le passage d'un régime à l'autre est ménagé par deux articles. La limitation aux quatre premiers enfants posée par la loi nouvelle ne s'applique pas aux travailleurs dont les droits sont nés avant son entrée en vigueur : ceux dont les droits sont déjà liquidés restent régis par la législation antérieure relative aux allocations familiales, sauf application des articles 54 et 64 de la loi nouvelle, et ceux dont les droits ne sont pas encore liquidés relèvent de la loi nouvelle [@loi60-30, art. 127]. Cette dérogation n'ouvre cependant pas droit aux allocations au titre d'un enfant né après le 1^er^ janvier 1961, sauf s'il vient en rang utile au sens de l'article 52 [@loi60-30, art. 128].
+En 2026, la caisse verse au salarié, pour chacun de ses trois premiers enfants, un pourcentage de son salaire trimestriel pris dans la limite de 122 dinars : au plus 21,960 D pour le premier enfant, 19,520 D pour le deuxième et 17,080 D pour le troisième, par trimestre (@tbl-af-evolution). Les taux sont ceux de 1976, le plafond celui de 1986, la limite de trois enfants celle de 1989 ; en dinars de 2025, le maximum du premier enfant passe de 217 D par trimestre en 1962 à 22 D en 2025 (@fig-pf-montant-max).
 
-Le contenu du régime de 1944 — son champ, ses taux, son assiette — n'est pas établi ici.
+```{python}
+#| label: fig-pf-montant-max
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import prestations_familiales as pf
+import figtools
+figtools.figure_tabs(
+    pf.vues_montant_max(), pf.table_montant_max(),
+    pf.SERIE, *pf.SERIES_IPC,
+    slug="fig_pf_montant_max",
+    caption=("Allocation familiale maximale par trimestre, pour le premier enfant et pour un "
+             "foyer de trois ou de quatre enfants, en dinars de 2025 et en dinars courants, "
+             "1962-2025"),
+    nominal=False,
+    note_lecture=(
+        "Le maximum est ce que reçoit le salarié dont la rémunération trimestrielle atteint "
+        "ou dépasse le plafond de l'assiette : le taux du rang de l'enfant multiplié par ce "
+        "plafond ; pour un foyer, la somme des rangs servis. La première vue le donne en "
+        "dinars de 2025 — la moyenne des montants en vigueur dans l'année, multipliée par le "
+        "rapport de l'indice des prix de 2025 à celui de l'année — ; la seconde en dinars "
+        "courants, en marches posées aux dates d'effet. Entre deux lois, la courbe en dinars "
+        "de 2025 descend au rythme des prix ; elle remonte en 1976 (taux par rang, plafond "
+        "porté à 72 D) et en 1986 (plafond porté à 122 D), sans retrouver son niveau de "
+        "1962. La courbe du foyer de quatre enfants s'arrête en 1988 : depuis le 1^er^ "
+        "janvier 1989, le quatrième rang n'est plus servi, sauf droits acquis. Un salarié "
+        "dont le salaire est inférieur au plafond reçoit moins que ce maximum."),
+)
+```
+
+| Réforme | Ce que la loi cherche | Avant → après | Effet |
+|---|---|---|---|
+| [**1961 — un régime et une caisse nationale**](#r-pf-rupture-1961) | une organisation « destinée à protéger les travailleurs et leur famille contre les risques inhérents à la nature humaine » ; rubrique « Les prestations familiales » | caisses d'allocations familiales du décret du 8 juin 1944 → une caisse nationale ; 15 % du salaire trimestriel plafonné à 52,500 D, pour quatre enfants au plus | [1^er^ avril 1961]{.insecable} |
+| [**1980 — la majoration pour salaire unique**](#r-pf-rupture-1980) | rubrique créée : « Majoration pour Salaire Unique » ; la loi ne dit pas d'objet au-delà | indemnité servie par certains employeurs → majoration légale servie par la caisse au foyer dont le conjoint n'a pas d'activité | [1^er^ mai 1980]{.insecable} |
+| [**1989 — trois enfants ; les salariés de certaines entreprises agricoles**](#r-pf-rupture-1989) | les deux lois du 6 mai 1988 ne disent pas leur objet ; rubrique de la loi du 2 septembre 1989 : « Dispositions particulières applicables aux salariés employés par certaines entreprises agricoles » | quatre enfants → trois, au secteur privé comme au secteur public ; un régime de plus sert les allocations | [1^er^ janvier 1989]{.insecable} ; [1^er^ octobre 1989]{.insecable} pour les entreprises agricoles |
+| [**1994 — la contribution aux frais de crèche**](#r-pf-rupture-1994) | « Est instituée une contribution aux frais de prise en charge des enfants dans les crèches autorisées par le ministère de tutelle » | aucune aide de garde → 15 D par enfant et par mois versés à la crèche, pour les enfants des mères salariées sous plafond de salaire | montant servi à compter du [1^er^ octobre 1994]{.insecable} |
+
+: Les prestations familiales : mise en place et trois grandes réformes ; entre guillemets, les mots des lois {#tbl-pf-ruptures}
+
+:::: {.chronologie-repliable titre="Mise en place et grandes réformes des prestations familiales : textes, articles et dates d'effet, 1960-1995"}
+
+| Date d'effet | Texte et article | Ce que dit le texte |
+|---|---|---|
+| []{#r-pf-rupture-1961}[1^er^ avril 1961]{.insecable} | loi n° 60-30 du 14 décembre 1960 « relative à l'organisation des régimes de Sécurité Sociale » [@loi60-30, art. 1, 2, 51 à 67 et 130] | art. 1^er^ : « Il est institué une organisation de la Sécurité Sociale, destinée à protéger les travailleurs et leur famille contre les risques inhérents à la nature humaine, susceptibles d'affecter les conditions matérielles et morales de leur existence. » Art. 2 : cette organisation assure « le service des prestations définies par un régime de prestations familiales et un régime d'assurances sociales ». Titre II, chapitre premier, « Les prestations familiales » : art. 51 à 67. Art. 130 : entrée en vigueur le 1^er^ avril 1961, sauf les articles d'application immédiate |
+| []{#r-pf-rupture-1980}[1^er^ mai 1980]{.insecable} | loi n° 80-36 du 28 mai 1980 « complétant la loi n° 60-30 » [@loi80-36, art. 1-2] | ajoute au chapitre premier du titre II une « Section I bis — Majoration pour Salaire Unique » et un article 65 bis ; art. 2 : effet au 1^er^ mai 1980 |
+| []{#r-pf-rupture-1989}[1^er^ janvier 1989]{.insecable} ; [1^er^ octobre 1989]{.insecable} | loi n° 88-38 du 6 mai 1988 « complétant et modifiant la loi n° 60-30 » [@loi88-38, art. 1 et 5] ; loi n° 88-39 du 6 mai 1988 « relative à l'octroi des indemnités familiales dans le secteur public » [@loi88-39] ; loi n° 89-73 du 2 septembre 1989 [@loi89-73, art. 91-92 et art. 4 de la loi] | loi n° 88-38 : allocations dues « pour les trois premiers enfants », effet au 1^er^ janvier 1989, droits acquis maintenus. Loi n° 88-39 : indemnité familiale du secteur public « dans la limite des trois premiers enfants », sans effet sur les droits acquis avant le 1^er^ janvier 1989. Loi n° 89-73 : titre III ajouté à la loi n° 81-6, « Dispositions particulières applicables aux salariés employés par certaines entreprises agricoles », qui leur ouvre les allocations familiales ; entrée en vigueur le 1^er^ octobre 1989 |
+| []{#r-pf-rupture-1994}[1^er^ octobre 1994]{.insecable} | loi n° 94-88 du 26 juillet 1994 « relative à la contribution aux frais de prise en charge des enfants dans les crèches » [@loi94-88, art. 1-4] ; décret n° 95-114 du 16 janvier 1995 [@decret95-114, art. 1 et 4] | art. 1^er^ de la loi : « Est instituée une contribution aux frais de prise en charge des enfants dans les crèches autorisées par le ministère de tutelle conformément à un cahier des charges établi à cet effet et adopté par décret. » La loi n'a pas de clause d'effet ; l'article 4 du décret sert le montant « à compter du 1^er^ octobre 1994 » |
+
+: Mise en place et grandes réformes : textes et dates d'effet {#tbl-pf-ruptures-textes}
+
+::::
+
+- **Qui y a droit.** Les salariés du régime des salariés non agricoles et, depuis le 1^er^ octobre 1989, ceux de certaines entreprises agricoles : deux des régimes de la matrice du volume (@sec-matrice-regimes). Le droit s'ouvre dès le premier [enfant à charge](#g-enfant-a-charge) et s'arrête au troisième, sauf pour l'enfant handicapé ou infirme, servi quel que soit son rang, et sauf droits acquis avant 1989.
+- **Combien.** Un taux par rang — 18 %, 16 % et 14 % — appliqué au salaire trimestriel plafonné. Le plafond est fixé en dinars par la loi, et non en multiple du salaire minimum : il vaut 1,11 fois le salaire minimum d'un trimestre en 1961 et 0,07 fois en 2026 (@fig-pf-plafond-smig).
+- **Deux prestations adjointes, fixées en dinars.** La majoration pour salaire unique — 9,375 D, 18,750 D ou 23,475 D par trimestre selon le nombre d'enfants — et la contribution aux frais de crèche — 15 D par enfant et par mois —, aux montants de 1980 et de 1994 (@tbl-salaire-unique, @tbl-creche, @fig-pf-msu-creche-reel).
+- **Financé par qui.** Par les cotisations de sécurité sociale assises sur les salaires, dont une part du taux global revient à la branche ([volume « Cotisations sociales »](../cotisations_sociales/_autres_branches.html#sec-cot-famille)) ; l'indemnité du secteur public, elle, est à la charge de l'employeur.
+- **Ce que la caisse verse.** 67,4 millions de dinars en 1990 et 70,1 millions en 2004, en dinars courants ; soit 346 puis 209 millions de dinars de 2025 (@sec-pf-lp-depense).
+
+## La mise en place, 1944-1961 {#sec-pf-loi-1960}
+
+La loi n° 60-30 remplace, au [1^er^ avril 1961](#r-pf-1961-entree-en-vigueur), les caisses d'allocations familiales du décret du 8 juin 1944 par une caisse nationale, et fixe l'allocation à 15 % du salaire trimestriel plafonné pour chacun des quatre premiers enfants.
+
+### Avant 1961 : les caisses d'allocations familiales {#sec-pf-origines}
+
+La loi n° 60-30 ne crée pas les allocations familiales : elle succède à une législation qu'elle abroge. [Son article 131](#r-pf-1944-abrogation) abroge, sous réserve de ses dispositions transitoires, le **décret du 8 juin 1944** et les textes qui l'ont modifié ou complété, jusqu'à la loi n° 59-15 du 13 janvier 1959, ainsi que plusieurs textes qui s'y rattachent, dont un décret de 1945 étendant le bénéfice du décret de 1944 au personnel des usines à huile.
+
+Les dispositions transitoires de la loi dessinent les institutions de ce régime antérieur : des **caisses d'allocations familiales**, que la Caisse nationale de sécurité sociale [liquide et dont elle reçoit le patrimoine](#r-pf-1944-caisses) ; une **Caisse centrale des prestations sociales**, dont [les employeurs affiliés et les bénéficiaires immatriculés](#r-pf-1944-affiliation) passent à la caisse nationale sans formalité ; un « Compte de surcompensation des allocations familiales », ouvert dans les écritures du Trésor, dont [l'avoir net](#r-pf-1944-surcompensation) devient le fonds de réserve de la caisse nationale.
+
+Les droits nés sous le régime antérieur sont ménagés. La limitation aux quatre premiers enfants posée par la loi nouvelle [ne s'applique pas](#r-pf-1944-droits-acquis) aux travailleurs dont les droits sont nés avant son entrée en vigueur ; cette dérogation n'ouvre cependant pas droit aux allocations au titre d'un enfant né après le 1^er^ janvier 1961, sauf s'il vient en rang utile.
+
+Le décret du 8 juin 1944 est connu ici par la loi qui l'abroge : le champ, les taux et l'assiette du régime antérieur à 1961 ne sont pas établis ici.
 
 <!-- TODO (documentaliste) : lire le décret du 8 juin 1944 (16 djoumada II 1363) et ses
 modificatifs énumérés par l'art. 131, 1°, de la loi n° 60-30 (décrets du 12 octobre 1944 au
 15 septembre 1955, loi n° 59-15 du 13 janvier 1959), au Journal officiel tunisien, hors de la
 couverture de jort_cache.db, pour donner le champ, les taux et l'assiette du régime antérieur à
-1961. -->
+1961. Aucune fiche de recherche n'est ouverte : aucune passe n'est documentée pour ce texte,
+qui est à lire et non à chercher. -->
 
-## Le régime de la loi n° 60-30 {#sec-pf-loi-1960}
+:::: {.chronologie-repliable titre="Passage du régime de 1944 à la loi n° 60-30 : textes abrogés, caisses dissoutes, dévolution et droits acquis, articles 121 à 131"}
 
-Les articles de la loi n° 60-30 relatifs aux allocations familiales entrent en vigueur le 1^er^ avril 1961 : ils ne sont pas au nombre des dispositions d'application immédiate [@loi60-30, art. 130].
+| Objet | Article de la loi n° 60-30 | Ce que dit l'article |
+|---|---|---|
+| []{#r-pf-1944-abrogation}Textes abrogés | art. 131 [@loi60-30, art. 131] | abroge, sous réserve des dispositions transitoires, le décret du 8 juin 1944 et les textes qui l'ont modifié ou complété, jusqu'à la loi n° 59-15 du 13 janvier 1959, ainsi que plusieurs textes qui s'y rattachent, dont un décret de 1945 étendant le bénéfice du décret de 1944 au personnel des usines à huile |
+| []{#r-pf-1944-caisses}Caisses d'allocations familiales | art. 124 [@loi60-30, art. 124] | la Caisse nationale de sécurité sociale est chargée de liquider leurs obligations actives et passives, dans les conditions prévues par la loi n° 58-130 du 22 novembre 1958 ; leur patrimoine lui est dévolu |
+| []{#r-pf-1944-affiliation}Employeurs et bénéficiaires déjà inscrits | art. 125 et 126 [@loi60-30, art. 125-126] | les employeurs affiliés à la Caisse centrale des prestations sociales sont dispensés de redemander leur affiliation à la caisse nationale ; les bénéficiaires de prestations familiales qui y étaient immatriculés sont dispensés d'une nouvelle immatriculation au titre des prestations familiales |
+| []{#r-pf-1944-surcompensation}Compte de surcompensation | art. 122 [@loi60-30, art. 122] | l'avoir net du « Compte de surcompensation des allocations familiales », ouvert dans les écritures du Trésor, est transféré à la caisse nationale pour lui servir de fonds de réserve |
+| []{#r-pf-1944-dispenses}Organismes dispensés | art. 121 [@loi60-30, art. 121] | les organismes qui, en vertu d'une disposition antérieure, étaient dispensés de l'affiliation à une caisse d'allocations familiales demeurent dispensés de l'affiliation à la caisse nationale |
+| []{#r-pf-1944-droits-acquis}Droits nés avant la loi | art. 127 et 128 [@loi60-30, art. 127-128] | la limitation aux quatre premiers enfants ne s'applique pas aux travailleurs dont les droits sont nés avant l'entrée en vigueur : ceux dont les droits sont déjà liquidés restent régis par la législation antérieure relative aux allocations familiales, sauf application des articles 54 et 64 de la loi nouvelle ; ceux dont les droits ne sont pas encore liquidés relèvent de la loi nouvelle. La dérogation n'ouvre pas droit aux allocations au titre d'un enfant né après le 1^er^ janvier 1961, sauf s'il vient en rang utile au sens de l'article 52 |
 
-**Trois composantes.** L'article 51 de la loi n° 60-30 définit les prestations familiales comme comprenant trois choses : les **allocations familiales**, les **allocations pour congés de naissance** et les **allocations pour congés de jeunes travailleurs**. Les deux dernières sont des remboursements à l'employeur, qui a avancé les indemnités de congé supplémentaire prévues par les décrets du 27 mai 1948 et du 20 janvier 1949 [@loi60-30, art. 66-67]. Le terme légal est donc plus large que l'usage courant, qui ne retient que la première composante.
+: Dispositions transitoires de la loi n° 60-30 relatives aux allocations familiales {#tbl-pf-transitoire-1960}
 
-**Qui y a droit.** Les allocations familiales sont dues aux travailleurs salariés des établissements et professions énumérés à l'article 34 de la loi n° 60-30, dès le premier [enfant à charge](#g-enfant-a-charge), pour les enfants résidant en Tunisie ; le droit est maintenu au travailleur tunisien pour ses enfants résidant à l'étranger, et reconnu au travailleur étranger sous condition d'une convention de réciprocité [@loi60-30, art. 52]. L'allocataire est le père ou la mère, l'adoptant, le tuteur officieux salarié ou la personne ayant la garde de l'enfant au sens de l'article 57 du Code du statut personnel, à condition qu'elle assure effectivement logement, nourriture et habillement [@loi60-30, art. 53].
+::::
 
-**Jusqu'à quel âge.** L'enfant ouvre droit sans condition jusqu'à 14 ans, jusqu'à 18 ans s'il est en apprentissage, jusqu'à 20 ans s'il poursuit des études ou si, fille, elle remplace la mère décédée, impotente, divorcée ou veuve, et au-delà en cas d'infirmité ou de maladie incurable [@loi60-30, art. 54]. Ces limites ont été relevées en 1996 : le tableau qui les met en regard est donné avec [la réforme de 1996](#sec-pf-reforme-1996).
+### Le régime de la loi n° 60-30 au 1^er^ avril 1961 {#sec-pf-regime-1961}
 
-**Combien d'enfants.** Quatre au maximum : le cinquième enfant et les suivants, dans l'ordre de primogéniture ou d'adoption, n'ouvrent droit « en aucun cas » aux allocations [@loi60-30, art. 52].
+Les articles de la loi relatifs aux allocations familiales entrent en vigueur le [1^er^ avril 1961](#r-pf-1961-entree-en-vigueur) : ils ne sont pas au nombre des dispositions d'application immédiate.
 
-**Le maintien du droit.** Le droit est **maintenu** dans plusieurs situations de rupture : décès du salarié par accident du travail, y compris pour les enfants nés dans les trois cents jours suivants ; incapacité temporaire, et incapacité permanente d'au moins 40 % ; interruption de travail pour maladie dans la limite de 365 jours ; période légale de couches, prorogeable jusqu'à un an [@loi60-30, art. 56-58].
+**Trois composantes.** [La loi](#r-pf-1961-composantes) définit les prestations familiales comme comprenant trois choses : les **allocations familiales**, les **allocations pour congés de naissance** et les **allocations pour congés de jeunes travailleurs**. Les deux dernières sont des remboursements à l'employeur, qui a avancé les indemnités de congé supplémentaire prévues par des décrets de 1948 et de 1949. Le terme légal est donc plus large que l'usage courant, qui ne retient que la première composante.
 
-**Le montant.** L'allocation afférente à chaque enfant est un pourcentage de la rémunération trimestrielle du travailleur, prise dans la limite d'un plafond ; le montant servi au foyer est la somme des allocations des enfants venant en rang utile [@loi60-30, art. 61].
+**Qui y a droit.** Les allocations familiales sont dues aux travailleurs salariés des établissements et professions que la loi énumère, dès le premier [enfant à charge](#g-enfant-a-charge), pour les enfants résidant en Tunisie ; [le droit est maintenu](#r-pf-1961-champ) au travailleur tunisien pour ses enfants résidant à l'étranger, et reconnu au travailleur étranger sous condition d'une convention de réciprocité. [L'allocataire](#r-pf-1961-allocataire) est le père ou la mère, l'adoptant, le tuteur officieux salarié ou la personne ayant la garde de l'enfant, à condition qu'elle assure effectivement logement, nourriture et habillement.
+
+**Jusqu'à quel âge.** En 1961, l'enfant ouvre droit [sans condition jusqu'à 14 ans](#r-pf-1961-ages), jusqu'à 18 ans s'il est en apprentissage, jusqu'à 20 ans s'il poursuit des études ou si, fille, elle remplace la mère décédée, impotente, divorcée ou veuve, et au-delà en cas d'infirmité ou de maladie incurable. Depuis la loi du 22 juillet 1996, ces limites sont de 16 ans sans condition et de 21 ans pour les études (@tbl-pf-ages).
+
+**Combien d'enfants.** Quatre au maximum en 1961 : le cinquième enfant et les suivants, dans l'ordre de primogéniture ou d'adoption, n'ouvrent droit [« en aucun cas »](#r-pf-1961-champ) aux allocations. Trois depuis le 1^er^ janvier 1989 (@sec-pf-reforme-1989).
+
+**Le maintien du droit.** Le droit [survit à plusieurs ruptures](#r-pf-1961-maintien) : décès du salarié par accident du travail, y compris pour les enfants nés dans les trois cents jours suivants ; incapacité temporaire, et incapacité permanente d'au moins 40 % ; interruption de travail pour maladie dans la limite de 365 jours ; période légale de couches, prorogeable jusqu'à un an.
+
+**Le montant.** L'allocation afférente à chaque enfant est [un pourcentage de la rémunération trimestrielle](#r-pf-1961-montant) du travailleur, prise dans la limite d'un plafond ; le montant servi au foyer est la somme des allocations des enfants venant en rang utile.
 
 ::: {.callout-note title="La formule des allocations familiales"}
 Le montant trimestriel des allocations familiales servies du chef d'un travailleur est la somme, sur les rangs servis, d'un taux propre à chaque rang appliqué à sa rémunération plafonnée :
@@ -67,105 +153,127 @@ $$
 
 où $A$ est le montant trimestriel des allocations familiales, $N$ le nombre d'enfants à charge ouvrant droit, $r$ le rang de l'enfant dans l'ordre de primogéniture ou d'adoption, $\bar n$ le nombre maximal de rangs servis, $\tau_r$ le taux de l'allocation afférente à l'enfant de rang $r$, $W$ la rémunération globale trimestrielle du travailleur et $\bar W$ le plafond de l'assiette trimestrielle.
 
-Au 1^er^ avril 1961, ces grandeurs valent, $\bar W$ en dinars [@loi60-30, art. 52, 61 et 130] :
+Au [1^er^ avril 1961](#r-pf-1961-montant), ces grandeurs valent, $\bar W$ en dinars :
 
 $$
 \tau_1 = \tau_2 = \tau_3 = \tau_4 = 15\,\%, \qquad \bar W = 52{,}500, \qquad \bar n = 4
 $$
 
-Trois réformes ont modifié ces valeurs : les taux $\tau_r$ et le plafond $\bar W$ en 1976, le plafond $\bar W$ en 1986, le nombre $\bar n$ en 1989 (@sec-pf-reformes). Leur série complète est donnée par le tableau de longue période (@tbl-af-evolution).
+Trois lois ont modifié ces valeurs : les taux $\tau_r$ et le plafond $\bar W$ en 1976, le plafond $\bar W$ en 1986, le nombre $\bar n$ en 1989 (@sec-pf-reformes). Leur série complète est donnée par le @tbl-af-evolution.
 :::
 
-L'assiette n'a qu'un plafond : la loi de 1960 écarte la part des gains qui dépasse 52,500 dinars par trimestre, sans fixer de minimum [@loi60-30, art. 61]. Le montant servi aux orphelins ne peut être inférieur à 50 % du maximum de l'allocation lorsque les bénéficiaires sont les enfants de travailleurs décédés ou atteints d'une incapacité permanente d'au moins 40 % [@loi60-30, art. 63]. Les allocations sont versées par la caisse au moins une fois par trimestre, dans les quarante-cinq jours suivant le terme de la période [@loi60-30, art. 65].
+Le salarié dont la rémunération atteint le plafond reçoit donc, en 1961, 7,875 D par enfant et par trimestre, soit 31,500 D pour quatre enfants (@fig-pf-montant-max). L'assiette n'a qu'un plafond : la loi écarte la part des gains qui dépasse 52,500 D par trimestre, sans fixer de minimum. Le montant servi aux orphelins [ne peut être inférieur à 50 % du maximum](#r-pf-1961-orphelins) de l'allocation lorsque les bénéficiaires sont les enfants de travailleurs décédés ou atteints d'une incapacité permanente d'au moins 40 %. La caisse verse les allocations [au moins une fois par trimestre](#r-pf-1961-versement).
 
-## Les réformes des allocations familiales {#sec-pf-reformes}
+:::: {.chronologie-repliable titre="Prestations familiales au 1er avril 1961 : champ, allocataire, âges, maintien du droit, montant, orphelins et versement, articles 51 à 67 et 130 de la loi n° 60-30"}
 
-L'article 61, alinéa 2, de la loi n° 60-30, qui porte le montant, a été réécrit trois fois, et chaque réécriture ne touche pas les mêmes grandeurs ; une quatrième loi, en 1996, a modifié les conditions tenant à l'enfant et à l'allocataire. Les réformes sont présentées dans l'ordre de leur effet ; leurs valeurs sont rassemblées dans le tableau de longue période (@tbl-af-evolution).
+| Objet | Article de la loi n° 60-30 | Ce que dit l'article |
+|---|---|---|
+| []{#r-pf-1961-entree-en-vigueur}Entrée en vigueur | art. 130 [@loi60-30, art. 130] | « La présente loi entre en vigueur le 1^er^ avril 1961, sauf en ce qui concerne les dispositions prévues par les articles 1 à 33, 119, 124 à 126 et 129, qui sont d'application immédiate. » Les articles 51 à 67 ne sont pas de ceux-là |
+| []{#r-pf-1961-composantes}Les trois composantes | art. 51, 66 et 67 [@loi60-30, art. 51, 66 et 67] | art. 51 : « Les prestations familiales prévues par la présente loi comprennent : 1° les allocations familiales ; 2° les allocations pour congés de naissance ; 3° les allocations pour congés de jeunes travailleurs ». Art. 66 : la caisse rembourse à l'employeur l'avance faite en exécution du décret du 27 mai 1948, qui accorde au chef de famille salarié un congé supplémentaire à l'occasion de chaque naissance. Art. 67 : même mécanisme pour les indemnités de congé supplémentaire des jeunes travailleurs du commerce, de l'industrie et des professions libérales, prévues par le décret du 20 janvier 1949 |
+| []{#r-pf-1961-champ}Champ et nombre d'enfants | art. 52 [@loi60-30, art. 52] | allocations dues aux travailleurs salariés des établissements ou professions énumérés à l'article 34, à partir du premier enfant à charge résidant en Tunisie, et seulement pour les quatre premiers enfants : « Le cinquième enfant et suivants, dans l'ordre de primogéniture ou d'adoption, n'ouvrent, en aucun cas, droit aux allocations familiales. » Le droit est maintenu au travailleur tunisien pour ses enfants résidant à l'étranger ; il est reconnu au travailleur étranger dont les enfants résident à l'étranger s'il est ressortissant d'un État lié à la Tunisie par une convention de réciprocité en matière d'allocations familiales |
+| []{#r-pf-1961-allocataire}Allocataire | art. 53 [@loi60-30, art. 53] | 1° le père ou la mère, du chef de leurs enfants ou de ceux nés d'un premier lit ; 2° l'adoptant ou le conjoint de l'adoptant ; 3° le tuteur officieux salarié ; 4° la personne ayant la garde de l'enfant au sens de l'article 57 du Code du statut personnel, à condition qu'elle assure effectivement logement, nourriture et habillement |
+| []{#r-pf-1961-ages}Âges limites | art. 54 [@loi60-30, art. 54] | moins de 14 ans sans condition ; jusqu'à 18 ans en apprentissage ; jusqu'à 20 ans pour les études ou pour la fille qui remplace la mère décédée, impotente, divorcée ou veuve ; au-delà de 20 ans en cas d'infirmité ou de maladie incurable ; maintien pendant les vacances scolaires |
+| []{#r-pf-1961-maintien}Maintien du droit | art. 56 à 58 [@loi60-30, art. 56-58] | art. 56 : allocations maintenues en cas de décès du salarié dû à un accident du travail ou à une maladie professionnelle, tant que les enfants y ont droit, et pour les enfants nés dans les trois cents jours suivant le décès. Art. 57 : maintenues pendant l'incapacité temporaire et, si l'incapacité permanente atteint 40 %, pendant celle-ci. Art. 58 : conservées pendant une interruption de travail pour maladie, dans la limite de 365 jours, et pendant la période légale de couches, prorogeable jusqu'à un an si la salariée a interrompu son activité pour élever son enfant |
+| Décès du salarié pour une autre cause | art. 59 de la même loi | le droit passe à la personne qui recueille les enfants, sous condition d'un stage d'activité : six mois dans l'année précédant la cessation, ou huit mois en moyenne sur les dix années antérieures |
+| []{#r-pf-1961-montant}Montant, plafond et rangs | art. 52, 61 et 130 [@loi60-30, art. 52, 61 et 130] | art. 61, alinéa 2 : « le taux de l'allocation afférente à chaque enfant est fixé à 15 % de cette rémunération » ; la part des salaires, rémunérations ou gains « dépassant 52 D, 500 par trimestre » n'entre pas en compte pour le calcul des allocations du trimestre. L'édition arabe porte le même montant de 52,500 dinars |
+| []{#r-pf-1961-orphelins}Orphelins | art. 63 [@loi60-30, art. 63] | le montant des allocations servies aux orphelins ne peut être inférieur à 50 % du maximum de l'allocation de l'article 61 lorsque les bénéficiaires sont les enfants de travailleurs décédés ou victimes d'accidents du travail ou de maladies professionnelles atteints d'une incapacité permanente d'au moins 40 % |
+| []{#r-pf-1961-versement}Versement | art. 65 [@loi60-30, art. 65] | les allocations sont versées par la caisse nationale au moins une fois par trimestre, dans les quarante-cinq jours suivant le terme de la période |
 
-### 1976 : des taux dégressifs par rang {#sec-pf-reforme-1976}
+: Les prestations familiales dans la loi n° 60-30, article par article {#tbl-pf-loi-1960-articles}
 
-La **loi n° 75-82 du 30 décembre 1975**, avec effet au 1^er^ janvier 1976, opère la rupture de méthode du dispositif : le taux unique de 15 % fait place à des taux dégressifs selon le rang de l'enfant, et le plafond de l'assiette passe de 52,500 à 72 dinars par trimestre [@loi75-82, art. 1-2]. Avec les notations de 1961 :
+::::
+
+## Les grandes réformes, 1976-1996 {#sec-pf-reformes}
+
+Trois lois changent ce que le régime sert et à qui : celle de 1980 crée une prestation, celles de 1988 et de 1989 ramènent le droit à trois enfants et l'ouvrent aux salariés de certaines entreprises agricoles, celle de 1994 crée une aide à la garde (@tbl-pf-ruptures). Entre elles, deux lois règlent le niveau de l'allocation — les taux en 1976, le plafond en 1976 et en 1986 — et une loi de 1996 relève les âges limites de l'enfant. La @fig-pf-montant-max en montre l'effet sur le montant maximal.
+
+### 1961-1980 : des taux par rang et un plafond relevé {#sec-pf-reforme-1976}
+
+Pendant quinze ans, le taux de 15 % et le plafond de 52,500 D ne changent pas. [Au 1^er^ janvier 1976](#r-pf-reg-1976), le taux unique fait place à des taux dégressifs selon le rang de l'enfant, et le plafond de l'assiette passe à 72 D par trimestre. En notant $\tau_r$ le taux de l'allocation de l'enfant de rang $r$ et $\bar W$ le plafond de l'assiette trimestrielle, en dinars :
 
 $$
 \tau_1 = 18\,\%, \qquad \tau_2 = 16\,\%, \qquad \tau_3 = 14\,\%, \qquad \tau_4 = 12\,\%, \qquad \bar W = 72
 $$
 
-Le nombre de rangs servis reste de quatre.
+Le nombre de rangs servis reste de quatre. Le maximum du premier enfant passe de 7,875 D à 12,960 D par trimestre, celui du quatrième de 7,875 D à 8,640 D : la hausse est d'autant plus forte que le rang est bas. En dinars de 2025, le maximum du premier enfant, tombé de 217 D par trimestre en 1962 à 128 D en 1975, remonte à 200 D en 1976 (@fig-pf-montant-max). La loi ne dit pas son objet : son article premier remplace l'alinéa qui fixe le montant.
 
-### 1986 : le plafond porté à 122 dinars {#sec-pf-reforme-1986}
+### 1980 : la majoration pour salaire unique {#sec-pf-reforme-1980}
 
-La **loi n° 86-75 du 28 juillet 1986**, avec effet au 1^er^ mai 1986, reprend la rédaction de 1976 en ne changeant que le plafond, porté à $\bar W = 122$ dinars par trimestre ; les quatre taux sont inchangés [@loi86-75, art. 1-2].
+[Au 1^er^ mai 1980](#r-pf-reg-1980), une seconde prestation s'ajoute aux allocations familiales, sous la rubrique « Majoration pour Salaire Unique » : la caisse verse 9,375 D, 18,750 D ou 23,475 D par trimestre, selon qu'il a un, deux ou trois enfants et plus à charge, au salarié qui a droit aux allocations familiales et dont le conjoint n'exerce aucune activité professionnelle (@tbl-salaire-unique). La caisse se substitue, dans la limite de ces montants, aux employeurs qui servaient déjà une indemnité de même nature. La prestation a sa section (@sec-pf-salaire-unique).
 
-### 1989 : les trois premiers enfants {#sec-pf-reforme-1989}
+### 1980-1989 : le plafond porté à 122 dinars {#sec-pf-reforme-1986}
 
-La **loi n° 88-38 du 6 mai 1988**, avec effet au 1^er^ janvier 1989, limite le droit aux **trois premiers enfants** : $\bar n = 3$. L'enfant substituant, en cas de décès dans le groupe des trois premiers, vient en rang utile sans porter le nombre au-delà de trois [@loi88-38, art. 1 et 5]. La réécriture de l'article 61 qui l'accompagne ne fixe plus que trois taux : le quatrième rang disparaît, corollaire de cette limitation [@loi88-38]. Taux et plafond sont inchangés.
+[Au 1^er^ mai 1986](#r-pf-reg-1986), le plafond de l'assiette trimestrielle passe de 72 D à 122 D ; les quatre taux par rang sont inchangés. Le maximum du premier enfant passe de 12,960 D à 21,960 D par trimestre ; en dinars de 2025, il était revenu à 94 D en 1985 et remonte à 139 D en 1987, première année entière au nouveau plafond (@fig-pf-montant-max). Rapporté au salaire minimum d'un trimestre, le plafond était descendu de 0,80 en 1976 à 0,25 ; il remonte à 0,43 (@fig-pf-plafond-smig).
 
-La même année, le droit s'étend au-delà du régime des salariés non agricoles : à compter du 1^er^ octobre 1989, le régime agricole amélioré sert les allocations familiales pour les trois premiers enfants, aux mêmes conditions et aux mêmes taux que ceux de la loi n° 60-30 [@loi89-73]. La matrice de fin de volume en donne la portée, régime par régime (@sec-matrice-regimes).
+### 1989 : les trois premiers enfants, et les salariés de certaines entreprises agricoles {#sec-pf-reforme-1989}
 
-### 1996 : l'âge des enfants et l'attributaire {#sec-pf-reforme-1996}
+[Au 1^er^ janvier 1989](#r-pf-reg-1989), les allocations familiales ne sont plus dues que « pour les trois premiers enfants » : le quatrième rang, servi à 12 % depuis 1976, disparaît du barème, et le maximum d'un foyer de quatre enfants passe de 73,200 D à 58,560 D par trimestre. Les droits acquis avant cette date sont maintenus. En cas de décès d'un des trois premiers enfants, l'enfant suivant vient en rang utile, sans que le nombre d'enfants servis dépasse trois. Taux et plafond sont inchangés. La loi ne dit pas son objet.
 
-La **loi n° 96-65 du 22 juillet 1996** réécrit l'article 54 : elle relève la plupart des limites d'âge et fait servir les enfants handicapés ou infirmes quel que soit leur rang, c'est-à-dire en dehors du nombre maximal de rangs $\bar n$ de la formule [@loi96-65]. Les deux états successifs sont les suivants.
+Le même jour, une seconde loi du 6 mai 1988 pose la même limite de trois enfants pour l'[indemnité familiale du secteur public](#r-pf-reg-1989-public), elle aussi sans effet sur les droits acquis (@sec-pf-secteur-public).
 
-| Situation de l'enfant | Loi n° 60-30, art. 54 (origine) | Art. 54 nouveau, loi n° 96-65 |
+[Au 1^er^ octobre 1989](#r-pf-reg-1989-agricole), le droit s'étend au-delà du régime des salariés non agricoles. Un titre ajouté à la loi sur la sécurité sociale agricole, « Dispositions particulières applicables aux salariés employés par certaines entreprises agricoles », fait bénéficier ses assurés des allocations familiales, servies pour les trois premiers enfants « selon les mêmes conditions et aux mêmes taux » que ceux de la loi n° 60-30. Ce régime couvre les coopérateurs salariés et les salariés des sociétés, coopératives et autres personnes morales agricoles, tous les salariés des exploitants qui emploient au moins trente salariés permanents, et les pêcheurs des petits bateaux. Les autres salariés agricoles n'ont pas de prestations familiales ; la matrice du volume en donne la portée, régime par régime (@sec-matrice-regimes).
+
+### 1994 : la contribution aux frais de crèche {#sec-pf-reforme-1994}
+
+[Une loi du 26 juillet 1994](#r-pf-reg-1994) institue « une contribution aux frais de prise en charge des enfants dans les crèches autorisées par le ministère de tutelle ». Elle n'appartient pas à la loi n° 60-30 : c'est un texte autonome, que complète un décret de 1995. Les caisses de sécurité sociale versent à la crèche 15 D par mois, onze mois par an, pour l'enfant de deux à trente-six mois dont la mère, salariée, gagne au plus deux fois et demie le salaire minimum (@tbl-creche). Le montant est servi à compter du 1^er^ octobre 1994. La prestation a sa section (@sec-pf-creche).
+
+### Depuis 1994 : l'âge des enfants et le maintien du droit {#sec-pf-reforme-1996}
+
+[Une loi du 22 juillet 1996](#r-pf-reg-1996-ages) relève la plupart des limites d'âge de l'enfant et fait servir les enfants handicapés ou infirmes quel que soit leur rang, c'est-à-dire en dehors du nombre maximal de trois. Les deux états successifs sont les suivants.
+
+| Situation de l'enfant | En 1961 | Depuis la loi du 22 juillet 1996 |
 |---|---|---|
 | Sans condition | moins de 14 ans | moins de **16 ans** |
-| Apprentissage (rémunération ≤ 75 % du salaire minimum) | jusqu'à 18 ans | jusqu'à 18 ans |
+| Apprentissage (rémunération ne dépassant pas 75 % du salaire minimum) | jusqu'à 18 ans | jusqu'à 18 ans |
 | Scolarité du second degré, supérieure, technique ou professionnelle | jusqu'à 20 ans | jusqu'à **21 ans** |
 | Fille remplaçant la mère décédée, impotente, divorcée ou veuve | jusqu'à 20 ans | jusqu'à **21 ans** |
 | Infirmité ou maladie incurable | au-delà de 20 ans | au-delà de **21 ans**, et titulaires d'une carte d'handicapé non pris en charge intégralement |
-| Rang de l'enfant | — | les enfants handicapés ou infirmes sont servis **quel que soit leur rang** |
+| Rang de l'enfant | dans la limite des rangs servis | les enfants handicapés ou infirmes sont servis **quel que soit leur rang** |
 
-Sources : @loi60-30, art. 54 ; @loi96-65. La date d'effet de la loi n° 96-65 n'est pas établie ici.
+: Âges limites de l'enfant ouvrant droit aux allocations familiales, en 1961 et depuis 1996 {#tbl-pf-ages}
 
-La même loi ajoute que la personne ayant la garde de l'enfant peut être attributaire même sans activité propre, si le droit est ouvert du chef du père ou de la mère [@loi96-65].
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand les âges limites de l'article 54
+seront versés, datés et sourcés, à la base des tableaux (constat à docs/notes/backlog-modele.md). -->
 
-La loi n° 96-101 du 18 novembre 1996, enfin, maintient le droit pendant quatre trimestres au travailleur licencié pour raisons économiques ou technologiques [@loi96-101, art. 7] ; elle est exposée avec la protection contre la perte d'emploi (@sec-perte-emploi).
+La même loi permet à la personne qui a la garde de l'enfant d'être attributaire même sans activité propre, si le droit est ouvert du chef du père ou de la mère. Sa date d'effet n'est pas établie ici.
 
-## La majoration pour salaire unique
+<!-- TODO (documentaliste) : date d'effet de la loi n° 96-65 du 22 juillet 1996. Lecture D9 du
+9 octobre 2026 : aucune clause d'effet dans le début de l'article unique, fin de l'article non
+relue ; JORT n° 60 du 26 juillet 1996, déposé au siège du gouvernorat de Tunis le 30 juillet
+1996, ce qui donnerait le 4 août 1996 si l'article ne dit rien. Relire la fin de l'article avant
+d'écrire cette date. Même question pour la loi n° 96-101 du 18 novembre 1996 : aucune clause
+(onze articles parcourus), mention de dépôt du JORT n° 94 non relevée, rectificatif au JORT n° 7
+du 24 janvier 1997, p. 114, à lire. -->
 
-Le texte fondateur de ce dispositif est la **loi n° 80-36 du 28 mai 1980**, dont l'intitulé ne porte que « complétant la loi n° 60-30 ». Son article premier ajoute à la loi de 1960 une section I bis et un article 65 bis [@loi80-36].
+[Une loi du 18 novembre 1996](#r-pf-reg-1996-licencies), « relative à la protection sociale des travailleurs », maintient enfin les allocations familiales et la majoration pour salaire unique, pendant les quatre trimestres qui suivent celui de la cessation d'activité, au travailleur qui a cessé son travail pour des raisons économiques ou technologiques ; elle est exposée avec la protection contre la perte d'emploi (@sec-perte-emploi). L'état du droit qui en résulte est décrit à la section suivante (@sec-pf-etat-du-droit).
 
-Trois conditions cumulatives ouvrent la majoration : des enfants à charge au sens de l'article 53, un **droit ouvert aux allocations familiales**, et un **conjoint n'exerçant aucune activité professionnelle** — c'est cette dernière qui donne au dispositif son nom. Les montants trimestriels énoncés par l'article 65 bis, avec effet au 1^er^ mai 1980, sont les suivants.
+:::: {.chronologie-repliable titre="Allocations familiales, majoration pour salaire unique et contribution aux frais de crèche : textes et articles, date par date, avec leur portée, 1961-1996"}
 
-```{python}
-#| echo: false
-#| output: asis
-table("salaire_unique",
-      "Majoration trimestrielle pour salaire unique, article 65 bis de la loi n° 60-30 ajouté par la loi n° 80-36, avec effet au 1^er^ mai 1980",
-      "tbl-salaire-unique")
-```
+| Date d'effet | Texte et article | Ce qui change | Portée |
+|---|---|---|---|
+| [1^er^ avril 1961]{.insecable} | loi n° 60-30, articles 51 à 67 ([registre de la mise en place](#r-pf-1961-montant)) | 15 % du salaire trimestriel plafonné à 52,500 D, pour chacun des quatre premiers enfants | mise en place |
+| []{#r-pf-reg-1976}[1^er^ janvier 1976]{.insecable} | loi n° 75-82 du 30 décembre 1975 « modifiant la loi numéro 60-30 » [@loi75-82, art. 1-2] | art. 61, alinéa 2 : taux unique de 15 % → 18 %, 16 %, 14 % et 12 % du premier au quatrième enfant ; plafond 52,500 D → 72 D. « Le montant trimestriel de l'allocation est calculé en pourcentage de la rémunération globale trimestrielle du travailleur plafonnée à 72 D, 000 ». Art. 2 : effet au 1^er^ janvier 1976. Le texte ne dit pas son objet | ajustement majeur |
+| []{#r-pf-reg-1980}[1^er^ mai 1980]{.insecable} | loi n° 80-36 du 28 mai 1980 [@loi80-36, art. 1-2] | section I bis et article 65 bis ajoutés : majoration pour salaire unique de 9,375 D, 18,750 D ou 23,475 D par trimestre | rupture |
+| date d'effet non établie ici | loi n° 82-71 du 15 août 1982 | ajoute à la loi n° 60-30 une disposition sur le maintien des prestations familiales des travailleurs dont le licenciement est constaté par la commission de contrôle des licenciements ; seul l'objet de ce texte est connu ici | étape (maintien du droit) |
+| []{#r-pf-reg-1986}[1^er^ mai 1986]{.insecable} | loi n° 86-75 du 28 juillet 1986 [@loi86-75, art. 1-2] | art. 61, alinéa 2 : plafond 72 D → 122 D ; quatre taux inchangés. Art. 2 : effet au 1^er^ mai 1986 | ajustement |
+| []{#r-pf-reg-1989}[1^er^ janvier 1989]{.insecable} | loi n° 88-38 du 6 mai 1988 [@loi88-38, art. 1 et 5] | art. 52, alinéas 2 à 4 nouveaux : allocations dues « pour les trois premiers enfants » ; hors décès dans le groupe des trois premiers, le quatrième enfant et les suivants ne viennent jamais en rang utile ; en cas de décès, l'enfant substituant vient en rang utile sans porter le nombre au-delà de trois. Art. 61, alinéa 2 nouveau : trois taux — 18 %, 16 %, 14 % —, plafond de 122 D inchangé. Art. 5 : entrée en vigueur le 1^er^ janvier 1989, « les droits acquis antérieurement à cette date sont maintenus ». La loi modifie aussi l'article 110 (prescription) et ajoute un article 111 bis. Elle ne dit pas son objet | rupture |
+| []{#r-pf-reg-1989-public}[1^er^ janvier 1989]{.insecable} | loi n° 88-39 du 6 mai 1988 [@loi88-39] | article unique : indemnité familiale du secteur public « dans la limite des trois premiers enfants » ; droits acquis avant le 1^er^ janvier 1989 réservés. Elle ne dit pas son objet | rupture (secteur public) |
+| []{#r-pf-reg-1989-agricole}[1^er^ octobre 1989]{.insecable} | loi n° 89-73 du 2 septembre 1989 « modifiant et complétant la loi n° 81-6 du 12 février 1981, organisant les régimes de sécurité sociale dans le secteur agricole » [@loi89-73] | titre III nouveau (art. 86 à 101), « Dispositions particulières applicables aux salariés employés par certaines entreprises agricoles ». Art. 86 : régime obligatoire pour les coopérateurs salariés des entreprises agricoles ayant la forme de société, des sociétés de mise en valeur, des coopératives agricoles et de toute personne morale agricole non assujettie à un régime couvrant les mêmes risques ; pour tous les salariés des autres exploitants agricoles employant au moins trente salariés permanents ; pour les pêcheurs des bateaux de moins de trente tonneaux de jauge brute, les pêcheurs indépendants et les petits armateurs. Art. 90 : cotisation de 15 %, dont 10 % à la charge de l'employeur et 5 % à celle du salarié. Art. 91 : les assurés « bénéficient des prestations prévues par la présente loi ainsi que des allocations familiales ». Art. 92 : allocations servies pour les trois premiers enfants « selon les mêmes conditions et aux mêmes taux que ceux prévus par les articles 52 à 65 de la loi n° 60-30 », maintenues aux titulaires de pensions. Art. 4 de la loi : entrée en vigueur le 1^er^ octobre 1989 | rupture (un régime de plus) |
+| []{#r-pf-reg-1994}[1^er^ octobre 1994]{.insecable} | loi n° 94-88 du 26 juillet 1994 [@loi94-88, art. 2-4] ; décret n° 95-114 du 16 janvier 1995 [@decret95-114, art. 1 et 4] | contribution aux frais de crèche : 15 D par enfant et par mois, onze mois par an | rupture |
+| []{#r-pf-reg-1996-ages}date d'effet non établie ici | loi n° 96-65 du 22 juillet 1996 [@loi96-65] ; état antérieur [@loi60-30, art. 54] | art. 54 nouveau : 14 → 16 ans sans condition, 20 → 21 ans pour les études, enfants handicapés ou infirmes servis quel que soit leur rang ; art. 53, dernier alinéa nouveau : la personne ayant la garde peut être attributaire, à défaut d'activité propre assujettie, si le droit est ouvert du fait de l'activité du père ou de la mère et si l'enfant vient en rang utile auprès d'eux ; art. 55, alinéa 3 modifié | étape (conditions tenant à l'enfant) |
+| []{#r-pf-reg-1996-licencies}date d'effet non établie ici | loi n° 96-101 du 18 novembre 1996 « relatif à la protection sociale des travailleurs » [@loi96-101, art. 7] | chapitre II, « Octroi des prestations familiales et de soins en faveur des travailleurs ayant cessé leur travail pour des raisons économiques ou technologiques » ; art. 7 : maintien des allocations familiales et de la majoration pour salaire unique « au titre des quatre trimestres suivant celui au cours duquel ils ont cessé leur activité » | étape (maintien du droit), exposée avec la perte d'emploi |
 
-Source : @loi80-36, art. 65 bis. Effet au 1^er^ mai 1980 (art. 2).
+: Prestations familiales du secteur privé : chronologie des textes, 1961-1996 {#tbl-pf-chronologie}
 
-Deux traits méritent d'être relevés. La majoration est liquidée dans les mêmes conditions et délais que l'[allocation familiale](#g-allocation-familiale) et versée à la personne qui a la garde des enfants ; et la caisse « se substitue aux employeurs affiliés qui assurent à leurs salariés, à la date de la promulgation de la présente loi, le service d'une indemnité de même nature dans la limite des taux susmentionnés », la différence éventuelle restant à la charge de l'employeur [@loi80-36]. La loi de 1980 **légalise et plafonne une pratique conventionnelle préexistante**, elle ne crée pas la prestation à partir de rien.
+<!-- TODO (bibliographe) : créer la clé de la loi n° 82-71 du 15 août 1982 (JORT n° 55 de 1982,
+p. 1737) ; (documentaliste) relire son dispositif à l'image, lu partiellement. Sa ligne ne porte
+ni ancre ni citation en attendant. -->
 
-Une confusion de vocabulaire doit être écartée. L'*intitulé* du décret n° 74-463, relatif à des catégories de personnels militaires, porte l'expression « [majoration pour salaire unique](#g-majoration-salaire-unique) », mais son dispositif accorde aux intéressés « les indemnités à caractère familial dans les mêmes conditions que les fonctionnaires de l'État » [@decret74-463, art. 1]. Dans le secteur privé, le dispositif est celui que la loi de 1980 inscrit à l'article 65 bis de la loi n° 60-30.
+::::
 
-Aucun texte revalorisant les trois montants de 1980 n'est identifié ici. Il n'est donc pas établi que ces montants soient nominalement inchangés.
+## L'état du droit en 2026 {#sec-pf-etat-du-droit}
 
-<!-- RECHERCHE r-majoration-creche-revalorisation : revalorisation de la majoration pour salaire unique (voir docs/recherches.yml) -->
-
-## La contribution aux frais de crèche
-
-Ce dispositif n'appartient pas à la loi n° 60-30 : c'est un texte autonome de 1994, complété par un décret de 1995.
-
-La loi n° 94-88 institue une [contribution aux frais de prise en charge des enfants](#g-contribution-frais-creche) dans les crèches autorisées, servie au titre des enfants « des assurées sociales et des affiliées aux caisses de sécurité sociale » dont le salaire ne dépasse pas un montant fixé par décret, et seulement pour les enfants admis au régime des allocations familiales ; elle est à la charge des caisses et versée **directement à la crèche**, pour les enfants de deux à trente-six mois, onze mois par année, et n'est pas servie pendant le congé de maternité [@loi94-88, art. 2-4]. Le décret n° 95-114 en fixe les paramètres, avec effet au 1^er^ octobre 1994.
-
-```{python}
-#| echo: false
-#| output: asis
-table("creche",
-      "Contribution aux frais de crèche : paramètres fixés avec effet au 1^er^ octobre 1994",
-      "tbl-creche")
-```
-
-Le champ est explicitement **genré** : la loi vise « les assurées sociales » et « les affiliées », le décret « la mère bénéficiaire ». Comme pour la majoration pour salaire unique, aucun texte revalorisant le montant de 15 dinars n'est identifié ici.
-
-<!-- RECHERCHE r-majoration-creche-revalorisation : revalorisation de la contribution aux frais de crèche (voir docs/recherches.yml) -->
-
-## Longue période et données {#sec-pf-longue-periode}
-
-Le tableau suivant rassemble les quatre états de l'article 61, alinéa 2, de la loi n° 60-30 depuis son entrée en vigueur ; aucun n'est antérieur au 1^er^ avril 1961.
+En 2026, les allocations familiales du secteur privé sont servies pour trois enfants, aux taux de 18 %, 16 % et 14 % d'un salaire trimestriel plafonné à 122 D : c'est l'état que fixent, à trois dates, les lois de 1975, de 1986 et de 1988.
 
 ```{python}
 #| echo: false
@@ -175,77 +283,120 @@ table("af_evolution",
       "tbl-af-evolution")
 ```
 
-Sources : les textes cités, dans leur édition du *Journal officiel* ; chaque ligne porte sa date d'effet telle que l'énonce l'article final du texte. Celle de la loi n° 60-30 est le 1^er^ avril 1961 : ses articles sur les allocations familiales ne sont pas au nombre des dispositions d'application immédiate [@loi60-30, art. 130].
+Chaque ligne porte la date d'effet qu'énonce le texte ; [les articles sont au registre des réformes](#r-pf-reg-1989). Aucun état n'est antérieur au 1^er^ avril 1961.
 
-Trois conséquences. Les taux de 18, 16 et 14 % datent de **1976** et non de 1988 ; le plafond de 122 dinars date de **1986** et non de 1988 ; ce que la loi n° 88-38 apporte, c'est la suppression du quatrième rang, corollaire de la limitation du droit aux **trois premiers enfants** qu'elle opère au même article [@loi88-38, art. 1]. La rupture de méthode, elle, est celle de 1976 : le taux unique de 15 % fait place à des taux dégressifs par rang, et le plafond de l'assiette passe de 52,500 à 72 dinars par trimestre.
+- **Les bénéficiaires.** Les salariés du régime des salariés non agricoles et ceux des entreprises agricoles du titre ajouté en 1989 (@sec-pf-reforme-1989) ; le droit est maintenu pendant quatre trimestres au salarié licencié pour raisons économiques ou technologiques (@sec-perte-emploi).
+- **Les enfants.** Les trois premiers, jusqu'à 16 ans sans condition, 18 ans en apprentissage, 21 ans pour les études ; l'enfant handicapé ou infirme est servi quel que soit son rang (@tbl-pf-ages). Le quatrième enfant dont le droit était acquis avant le 1^er^ janvier 1989 le conserve.
+- **Le montant.** En notant $\tau_r$ le taux du rang $r$, $W$ la rémunération trimestrielle du salarié et $\bar W$ le plafond de l'assiette, l'allocation de l'enfant de rang $r$ est $\tau_r \cdot \min(W,\ \bar W)$, avec $\tau_1 = 18\,\%$, $\tau_2 = 16\,\%$, $\tau_3 = 14\,\%$ et $\bar W = 122$ D. Elle est au plus de 21,960 D, 19,520 D et 17,080 D par trimestre, soit 58,560 D pour un foyer de trois enfants — 7,320 D, 6,507 D et 5,693 D par mois.
+- **Le plafond.** 122 D par trimestre, soit moins d'un dixième du salaire minimum d'un trimestre : le salarié payé au salaire minimum pendant tout le trimestre dépasse le plafond et reçoit le maximum (@fig-pf-plafond-smig).
+- **Les prestations adjointes.** La majoration pour salaire unique et la contribution aux frais de crèche, à leurs montants de 1980 et de 1994 (@sec-pf-salaire-unique, @sec-pf-creche).
 
-Le plafond de l'assiette est fixé en dinars par la loi, et non en multiple du salaire minimum : à la différence d'une limite indexée, il ne suit l'évolution des salaires que lorsqu'une loi le réécrit.
+Aucun texte modifiant les taux, le plafond ou le nombre d'enfants servis n'est identifié ici après la loi du 6 mai 1988.
 
-Les comptes de bilan de la CNSS donnent, de 1990 à 2004, ce que la caisse verse au titre de ces prestations [@cnss-retrospective-1990-2004]. Sur toute cette période, les taux par rang et le plafond de l'assiette sont ceux qu'applique la loi n° 88-38 depuis le 1^er^ janvier 1989 (@tbl-af-evolution). La figure suivante montre la dépense par régime et par prestation, en dinars courants, et son total en dinars constants de 1990, déflaté par l'indice des prix à la consommation familiale [@ins-annuaire], puis la même dépense rapportée au PIB et aux ressources de la caisse (@fig-cnss-allocations-familiales).
+<!-- RECHERCHE r-pf-art61-apres-1988 : texte modifiant les taux, le plafond ou le nombre d'enfants des allocations familiales après la loi n° 88-38 (voir docs/recherches.yml) -->
+
+## La majoration pour salaire unique {#sec-pf-salaire-unique}
+
+Depuis le 1^er^ mai 1980, la caisse verse 9,375 D, 18,750 D ou 23,475 D par trimestre au salarié qui a droit aux allocations familiales et dont le conjoint n'exerce aucune activité professionnelle, selon qu'il a un, deux ou trois enfants et plus à charge.
 
 ```{python}
-#| label: fig-cnss-allocations-familiales
-#| fig-cap: "Allocations familiales et majoration pour salaire unique versées par la CNSS, en dinars courants et constants de 1990 et rapportées au PIB et aux ressources de la caisse, 1990-2004."
+#| echo: false
+#| output: asis
+table("salaire_unique",
+      "Majoration trimestrielle pour salaire unique, article 65 bis de la loi n° 60-30 ajouté par la loi n° 80-36, avec effet au 1^er^ mai 1980",
+      "tbl-salaire-unique")
+```
+
+Source : [article 65 bis](#r-pf-msu-art65bis) de la loi n° 60-30 ; effet au [1^er^ mai 1980](#r-pf-msu-effet).
+
+```{python}
+#| label: fig-pf-msu-creche-reel
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import cnss_allocations_familiales as caf
+from figures import prestations_familiales as pf
 import figtools
 figtools.figure_tabs(
-    caf.vues(), caf.table(),
-    "cnss-retrospective-ressources-emplois", "ins-annuaire-ipc", "irpp-ratios",
-    slug="fig_cnss_allocations_familiales",
-    caption=("Allocations familiales et majoration pour salaire unique versées par la "
-             "CNSS, en dinars courants et constants de 1990 et rapportées au PIB et aux "
-             "ressources de la caisse, 1990-2004"),
+    pf.vues_montants_fixes(), pf.table_montants_fixes(),
+    pf.SERIE, *pf.SERIES_IPC,
+    slug="fig_pf_msu_creche_reel",
+    caption=("Majoration pour salaire unique, contribution aux frais de crèche et indemnité "
+             "à caractère familial du secteur public, par mois, en dinars de 2025 et en "
+             "dinars courants, 1981-2025"),
+    nominal=False,
     note_lecture=(
-        "Les barres empilent, en millions de dinars **courants**, les allocations "
-        "familiales du régime des salariés non agricoles, celles du régime agricole "
-        "amélioré et du régime des étudiants, la majoration pour salaire unique, les "
-        "allocations familiales et de salaire unique des pensionnés du régime non "
-        "agricole, imputées sur la branche des pensions jusqu'en 1994, et les allocations "
-        "familiales servies au titre de la convention tuniso-française. Le total passe de "
-        "67,4 millions de dinars en 1990 à 70,1 en 2004 ; en dinars constants de 1990, "
-        "il revient à 40,7 millions, soit une baisse de 40 %. La ligne des pensionnés "
-        "est nulle à partir de 1995, l'année où les allocations familiales de la branche des "
-        "prestations familiales augmentent d'environ 3 millions de dinars ; les tableaux "
-        "de la caisse ne disent pas si les deux mouvements sont liés. Ces tableaux ne "
-        "comptent ni les allocataires ni les enfants : la baisse est celle de la dépense, "
-        "non du montant servi par enfant. La colonne 1999 est en partie masquée par la "
-        "reliure de l'exemplaire consulté : la barre hachurée et le point creux de cette "
-        "année comprennent des estimations, dont l'onglet Données donne le détail. "
-        "Trois vues se partagent le graphique : en millions de dinars, celle qui vient "
-        "d'être décrite ; en pourcentage du PIB que retient le ministère des Finances "
-        "[@minfin-indicateurs-fp] ; en pourcentage du total des ressources de la CNSS, "
-        "toutes branches et tous régimes, tel que le donnent ses comptes de bilan. Sur la "
-        "vue au PIB, la ligne pointillée marque le passage, en 1997, de la base 1983 à la "
-        "base 1997 des comptes nationaux, dont les niveaux sont d'environ 10 % plus "
-        "élevés [@ins-cnat-2015] : à montant égal, les ratios en sont abaissés d'environ un "
-        "dixième à partir de 1997, et la rupture n'est pas corrigée. Le total des ressources de la caisse comprend "
-        "les accidents du travail et les maladies professionnelles à partir de 1995, la "
-        "protection sociale des travailleurs à partir de 1997 : le dénominateur s'élargit "
-        "d'autant à ces dates. Ces deux vues se passent de déflateur, numérateur et "
-        "dénominateur étant des dinars de la même année ; leurs barres de 1999 sont "
-        "hachurées comme dans la première."),
+        "Les trois prestations sont fixées en dinars. Pour les lire sur un même axe, tout "
+        "est ramené au mois : la majoration pour salaire unique, fixée par trimestre et par "
+        "foyer, est divisée par trois ; la contribution aux frais de crèche et l'indemnité "
+        "du secteur public sont fixées par mois et par enfant — seule l'indemnité du premier "
+        "enfant est tracée. La première vue donne les montants en dinars de 2025 : la "
+        "moyenne des montants en vigueur dans l'année, multipliée par le rapport de l'indice "
+        "des prix de 2025 à celui de l'année ; chaque courbe commence la première année où "
+        "le montant vaut douze mois. La seconde vue donne les dinars courants. Aucun texte "
+        "revalorisant la majoration ou la contribution n'est identifié ici ; pour "
+        "l'indemnité du secteur public, le dernier décret identifié est celui de 1996, et "
+        "les montants antérieurs au 1^er^ mai 1986 ne sont pas connus ici."),
 )
 ```
 
-<!-- TODO (documentaliste) : construire les séries de longue période des allocations familiales
-contributives — nombre d'allocataires et d'enfants bénéficiaires, montant moyen servi, dépense
-de la branche avant 1990 et après 2004 — à partir des rapports annuels de la CNSS, et le plafond
-de l'assiette rapporté au SMIG trimestriel à chaque date du tableau. La dépense de 1990 à 2004
-est tirée de la rétrospective financière de la caisse ; ses montants de 1999 comprennent des
-estimations en attendant la relecture de l'original papier (tunisia-data#26). -->
+<!-- RECHERCHE r-majoration-creche-revalorisation : revalorisation de la majoration pour salaire unique (voir docs/recherches.yml) -->
+
+- **Trois conditions cumulatives.** Des enfants à charge, un **droit ouvert aux allocations familiales** et un **conjoint n'exerçant aucune activité professionnelle** : c'est cette dernière qui donne son nom à la [majoration pour salaire unique](#g-majoration-salaire-unique). Seuls les salariés des régimes qui servent les allocations familiales peuvent donc la recevoir.
+- **Liquidation et versement.** La majoration est liquidée dans les mêmes conditions et délais que l'[allocation familiale](#g-allocation-familiale) et versée à la personne qui a la garde des enfants.
+- **Une pratique d'employeurs, reprise par la caisse.** La caisse [« se substitue aux employeurs affiliés »](#r-pf-msu-substitution) qui servaient déjà à leurs salariés une indemnité de même nature, dans la limite des montants légaux ; la différence éventuelle reste à la charge de l'employeur. La loi de 1980 reprend ainsi, en la plafonnant, une indemnité que des employeurs versaient déjà.
+- **Le pouvoir d'achat.** Ramenée au mois, la majoration d'un foyer de trois enfants et plus vaut 83 D de 2025 en 1981 et 7,8 D en 2025 ; celle d'un foyer d'un enfant, 33 D puis 3,1 D (@fig-pf-msu-creche-reel). Aucun texte revalorisant les trois montants de 1980 n'est identifié ici ; il n'est donc pas établi que ces montants soient nominalement inchangés.
+
+:::: {.chronologie-repliable titre="Majoration pour salaire unique : article 65 bis de la loi n° 60-30, date d'effet, substitution aux employeurs, et l'intitulé du décret n° 74-463 sur les personnels militaires"}
+
+| Objet | Texte et article | Ce que dit le texte |
+|---|---|---|
+| []{#r-pf-msu-art65bis}Conditions et montants | loi n° 80-36 du 28 mai 1980, dont l'intitulé ne porte que « complétant la loi n° 60-30 » ; son article premier ajoute à la loi de 1960 une section I bis et un article 65 bis [@loi80-36, art. 65 bis] | « Il est attribué à l'assuré ayant des enfants à charge au sens de l'article 53 précédent ouvrant droit au bénéfice des allocations familiales et dont le conjoint n'exerce aucune activité professionnelle une indemnité dite « majoration pour salaire unique » dont le montant trimestriel est de : 9d,375 si le foyer comporte un enfant à charge, 18d,750 si le foyer comporte 2 enfants à charge, 23d,475 si le foyer comporte 3 enfants ou plus à charge. » La majoration est « liquidée dans les mêmes conditions et dans les mêmes délais que l'allocation familiale » et « versée à la personne qui a la garde des enfants » |
+| []{#r-pf-msu-effet}Date d'effet | même loi [@loi80-36, art. 2] | « La présente loi prend effet à compter du 1^er^ mai 1980. » |
+| []{#r-pf-msu-substitution}Substitution aux employeurs | même loi [@loi80-36, art. 1] | « La Caisse Nationale de Sécurité Sociale se substitue aux employeurs affiliés qui assurent à leurs salariés, à la date de la promulgation de la présente loi le service d'une indemnité de même nature dans la limite des taux sus-mentionnés » ; « seule reste à la charge de l'employeur la différence éventuelle entre le taux de la majoration légale et celui de la majoration contractuelle » |
+| []{#r-pf-msu-decret-1974}Un intitulé de 1974 qui porte la même expression | décret n° 74-463 du 11 avril 1974 [@decret74-463, art. 1] | l'intitulé, relatif à certaines catégories de personnels militaires, porte « l'indemnité dite majoration pour salaire unique » ; le dispositif accorde aux intéressés, en plus de la solde, « les indemnités à caractère familial dans les mêmes conditions que les fonctionnaires de l'État », avec effet au 1^er^ janvier 1974. L'expression de l'intitulé ne désigne donc pas la prestation du secteur privé, qui est celle de l'article 65 bis |
+| Maintien au salarié licencié | loi n° 96-101 du 18 novembre 1996, article 7 ([registre des réformes](#r-pf-reg-1996-licencies)) | la majoration est maintenue, avec les allocations familiales, pendant les quatre trimestres qui suivent celui de la cessation d'activité pour raisons économiques ou technologiques |
+
+: Majoration pour salaire unique : textes {#tbl-pf-msu-textes}
+
+::::
+
+## La contribution aux frais de crèche {#sec-pf-creche}
+
+Depuis le 1^er^ octobre 1994, les caisses de sécurité sociale versent à la crèche 15 D par mois, onze mois par an, pour l'enfant de deux à trente-six mois dont la mère, assurée sociale, gagne au plus deux fois et demie le salaire minimum.
+
+```{python}
+#| echo: false
+#| output: asis
+table("creche",
+      "Contribution aux frais de crèche : paramètres fixés avec effet au 1^er^ octobre 1994",
+      "tbl-creche")
+```
+
+- **Qui y a droit.** Les enfants [« des assurées sociales et des affiliées aux caisses de sécurité sociale »](#r-pf-creche-champ) dont le salaire, indemnités comprises, ne dépasse pas le plafond, et seulement les enfants admis au régime des allocations familiales. Le champ est réservé aux mères : la loi vise « les assurées sociales » et « les affiliées », le décret « la mère bénéficiaire ».
+- **Le plafond de salaire suit le salaire minimum, le montant non.** Le plafond est fixé à deux fois et demie le salaire minimum garanti et se relève donc avec lui ; la [contribution](#g-contribution-frais-creche), fixée à 15 D, vaut 59 D de 2025 en 1995 et 15 D en 2025 (@fig-pf-msu-creche-reel).
+- **Versée à la crèche, non à la famille.** La contribution est [à la charge des caisses](#r-pf-creche-charge) et servie directement à la crèche, chaque trimestre ; elle n'est pas servie pendant le congé de maternité.
+- **Depuis 1994.** Aucun texte revalorisant le montant de 15 D n'est identifié ici.
+
+<!-- RECHERCHE r-majoration-creche-revalorisation : revalorisation de la contribution aux frais de crèche (voir docs/recherches.yml) -->
+
+:::: {.chronologie-repliable titre="Contribution aux frais de crèche : loi n° 94-88 et décret n° 95-114, article par article — champ, plafond de salaire, demande, attestation de présence et versement"}
+
+| Objet | Texte et article | Ce que dit le texte |
+|---|---|---|
+| Institution | loi n° 94-88 du 26 juillet 1994, article premier ([registre des grandes réformes](#r-pf-rupture-1994)) | contribution aux frais de prise en charge des enfants dans les crèches autorisées par le ministère de tutelle, conformément à un cahier des charges adopté par décret ; montant, modalités et conditions fixés par décret |
+| []{#r-pf-creche-champ}Champ | loi n° 94-88 [@loi94-88, art. 2-4] | art. 2 : « La contribution est servie au titre des enfants des assurées sociales et des affiliées aux caisses de sécurité sociale dont le salaire mensuel y compris les indemnités ne dépasse pas un montant qui sera fixé par décret » ; ces dispositions « ne s'appliquent qu'au titre des enfants admis au régime des allocations familiales » |
+| []{#r-pf-creche-charge}Charge, âge, durée | loi n° 94-88 [@loi94-88, art. 2-4] | art. 3 : contribution à la charge des caisses de sécurité sociale. Art. 4 : servie « directement à la crèche », pour les enfants dont l'âge est compris entre deux et trente-six mois, onze mois par année ; non servie pendant le congé de maternité |
+| []{#r-pf-creche-montant}Montant et plafond de salaire | décret n° 95-114 du 16 janvier 1995 [@decret95-114, art. 1] | quinze dinars par enfant et par mois, durant onze mois par an ; servie au titre des enfants des assurées sociales actives dont le revenu mensuel, y compris les indemnités, ne dépasse pas deux fois et demie le salaire minimum garanti ; attribuée par la caisse sur demande présentée par la mère bénéficiaire |
+| Formalités et versement | même décret, articles 2 et 3 | art. 2 : la crèche dépose tous les trois mois une attestation de présence, visée par le commissaire régional à la jeunesse et à l'enfance. Art. 3 : contribution servie trimestriellement et directement à la crèche, dans un délai d'un mois à compter du dépôt de l'attestation |
+| []{#r-pf-creche-effet}Date d'effet | décret n° 95-114 [@decret95-114, art. 4] | « Le montant de la contribution visé à l'article premier du présent décret est servi à compter du 1^er^ octobre 1994. » La loi n'a pas de clause d'effet |
+
+: Contribution aux frais de crèche : textes {#tbl-pf-creche-textes}
+
+::::
 
 ## Le secteur public : les indemnités à caractère familial {#sec-pf-secteur-public}
 
-Le secteur public a un dispositif **entièrement distinct**, qu'il ne faut pas confondre avec les allocations familiales. La loi n° 88-39, en un article unique, dispose que l'indemnité familiale est servie aux agents de l'État, des collectivités locales, des établissements publics, des offices et des sociétés nationales « autres que ceux soumis au régime de sécurité sociale institué par la loi n° 60-30 », dans les conditions prévues par le **décret du 22 novembre 1918** tel que modifié, et dans la limite des trois premiers enfants ; le montant est fixé par décret [@loi88-39].
-
-Trois traits en découlent. Le critère est celui d'une **exclusion réciproque** : on relève de l'un ou de l'autre régime, jamais des deux. Le renvoi se fait à un texte de 1918, encore opérant en 1988. Et le montant est fixé **en dinars par décret**, non en pourcentage d'un salaire — la différence avec les allocations familiales du privé est structurelle, non seulement de niveau.
-
-Le payeur, enfin, est l'**employeur public et non la caisse**. La loi dit que l'indemnité est « servie aux agents » et le décret de 1996 vise « les indemnités familiales dues aux fonctionnaires et agents de l'État, des collectivités publiques locales et des établissements publics à caractère administratif » ; aucun des deux textes ne mentionne la CNRPS [@loi88-39 ; @decret96-1906]. Il s'agit d'une indemnité de rémunération portée par le budget de l'employeur, non d'une prestation de sécurité sociale. Ce constat vaut pour les agents en activité : pour les retraités, l'indemnité familiale s'ajoute à la pension de retraite, dans les mêmes conditions que pour les agents en activité [@loi85-12, art. 40], et le livre « Retraites » la traite parmi les accessoires de la pension.
-
-Les taux ont été fixés successivement par quatre décrets. Le premier, le décret n° 75-952 du 30 décembre 1975, est abrogé par celui de 1986 [@decret86-611, art. 2] ; ses taux ne sont pas connus ici. Les trois suivants énoncent chacun leur date d'effet : le décret n° 86-611 le 1^er^ mai 1986 [@decret86-611, art. 3] ; le décret n° 88-1136, signé le 11 juin 1988, le 1^er^ janvier 1989, en ne fixant plus que trois taux, conformément à la limitation aux trois premiers enfants posée par la loi n° 88-39 [@decret88-1136, art. 1-2 ; @loi88-39] ; le décret n° 96-1906, qui abroge les deux précédents, le 1^er^ novembre 1996 [@decret96-1906, art. 4-5].
+L'agent public reçoit de son employeur, et non d'une caisse, une indemnité fixée en dinars par décret pour chacun de ses trois premiers enfants : 7,320 D, 6,507 D et 5,693 D par mois depuis le 1^er^ novembre 1996.
 
 ```{python}
 #| echo: false
@@ -255,10 +406,133 @@ table("cnrps_indemnites_familiales",
       "tbl-indemnites-familiales-public")
 ```
 
-Sources : @decret86-611, art. 1 ; @decret88-1136, art. 1 ; @decret96-1906, art. 1 à 3. Depuis 1989, l'indemnité du quatrième enfant n'est servie que si le droit a été acquis avant le 1^er^ janvier 1989. Le décret de 1996 sert aussi 4,880 D par mois à l'enfant handicapé venant après le troisième rang ; ni le décret de 1986 ni celui de 1988 ne fixent de montant distinct pour l'enfant handicapé.
+Sources : les décrets [de 1986](#r-pf-public-1986), [de 1988](#r-pf-public-1988) et [de 1996](#r-pf-public-1996). Depuis 1989, l'indemnité du quatrième enfant n'est servie que si le droit a été acquis avant le 1^er^ janvier 1989.
 
-La loi n° 88-39 précise que ses dispositions « ne s'appliquent pas aux droits acquis antérieurement au 1^er^ janvier 1989 » [@loi88-39]. Le décret n° 88-1136 ne fixe que trois taux et n'abroge pas le décret de 1986 : le quatrième enfant dont le droit était acquis avant 1989 conserve le taux de 4,700 dinars, que le décret de 1996 porte à 4,880 dinars [@decret88-1136, art. 1 ; @decret96-1906, art. 2-3].
+- **Un dispositif distinct des allocations familiales.** [La loi du 6 mai 1988](#r-pf-public-loi-1988) sert l'indemnité familiale aux agents de l'État, des collectivités locales, des établissements publics, des offices et des sociétés nationales « autres que ceux soumis au régime de sécurité sociale institué par la loi n° 60-30 » : on relève de l'un ou de l'autre régime, jamais des deux. Elle renvoie, pour les conditions, à un **décret du 22 novembre 1918**, encore en vigueur en 1988.
+- **Un montant en dinars, le même pour tous.** L'indemnité est fixée par décret, par rang d'enfant, et non en pourcentage d'un salaire. Sur un trimestre, les montants de 1996 font 21,960 D, 19,521 D et 17,079 D : à un millime près, les maximums des allocations familiales du secteur privé (@tbl-af-evolution).
+- **Le payeur est l'employeur public, non la caisse.** La loi dit l'indemnité « servie aux agents », [le décret de 1996](#r-pf-public-1996) vise « les indemnités familiales dues aux fonctionnaires et agents de l'État, des collectivités publiques locales et des établissements publics à caractère administratif » ; aucun des deux textes ne mentionne la [caisse de retraite et de prévoyance du secteur public](#g-cnrps). L'indemnité est un élément de rémunération porté par le budget de l'employeur, non une prestation de sécurité sociale. Pour les retraités, elle [s'ajoute à la pension](#r-pf-public-retraites), dans les mêmes conditions que pour les agents en activité ; le volume « Retraites » la traite parmi les accessoires de la pension.
+- **Trois enfants depuis 1989, droits acquis réservés.** La limite de trois enfants « ne s'applique pas aux droits acquis antérieurement au 1^er^ janvier 1989 » : le quatrième enfant dont le droit était acquis conserve le taux de 4,700 D, porté à 4,880 D en 1996. Le décret de 1996 sert aussi 4,880 D par mois à l'enfant handicapé venant après le troisième rang.
+- **Le pouvoir d'achat.** L'indemnité du premier enfant vaut 48 D de 2025 par mois en 1987 et 7,3 D en 2025 ; le décret de 1996 l'a ramenée de 7,600 D à 7,320 D courants (@fig-pf-msu-creche-reel).
+
+Quatre décrets fixent successivement les taux ; les montants du premier, de 1975, ne sont pas connus ici, et le dernier identifié ici est celui de 1996.
+
+:::: {.chronologie-repliable titre="Indemnités à caractère familial du secteur public : loi n° 88-39, décrets de fixation des taux et dates d'effet, 1918-1996"}
+
+| Date d'effet | Texte et article | Ce que dit le texte |
+|---|---|---|
+| []{#r-pf-public-1975}non établie ici | décret n° 75-952 du 30 décembre 1975, portant fixation du taux des indemnités à caractère familial [@decret75-952] | seul l'intitulé de ce texte est connu ici ; le décret de 1986 l'abroge [@decret86-611, art. 2] |
+| []{#r-pf-public-1986}[1^er^ mai 1986]{.insecable} | décret n° 86-611 du 3 juin 1986 [@decret86-611, art. 1 et 3] | taux mensuels : 7,600 D, 6,500 D, 5,600 D et 4,700 D du premier au quatrième enfant ; art. 3 : effet au 1^er^ mai 1986. Aucun montant distinct pour l'enfant handicapé |
+| []{#r-pf-public-loi-1988}[1^er^ janvier 1989]{.insecable} | loi n° 88-39 du 6 mai 1988 « relative à l'octroi des indemnités familiales dans le secteur public » [@loi88-39] | article unique : « L'indemnité familiale est servie aux agents de l'État, des collectivités publiques locales, des établissements publics des offices et des sociétés nationales autres que ceux soumis au régime de sécurité sociale institué par la loi n° 60-30 du 14 décembre 1960, dans les conditions et selon les modalités prévues par le décret du 22 novembre 1918 tel qu'amendé ou modifié par les textes subséquents, et dans la limite des trois premiers enfants. Le montant des indemnités est fixé par décret. Les dispositions de la présente loi ne s'appliquent pas aux droits acquis antérieurement au 1^er^ janvier 1989. » |
+| []{#r-pf-public-1988}[1^er^ janvier 1989]{.insecable} | décret n° 88-1136 du 11 juin 1988 [@decret88-1136, art. 1-2] | trois taux seulement — 7,600 D, 6,500 D, 5,600 D —, conformément à la limite de trois enfants ; art. 2 : effet au 1^er^ janvier 1989. Le décret n'abroge pas celui de 1986 : le quatrième enfant dont le droit était acquis avant 1989 conserve le taux de 4,700 D |
+| []{#r-pf-public-1996}[1^er^ novembre 1996]{.insecable} | décret n° 96-1906 du 16 octobre 1996 [@decret96-1906, art. 1 à 5] | art. 1^er^ : 7,320 D, 6,507 D et 5,693 D par mois pour les trois premiers enfants. Art. 2 : 4,880 D pour le quatrième enfant ayant acquis ce droit avant le 1^er^ janvier 1989. Art. 3 : 4,880 D pour l'enfant handicapé venant après le troisième rang. Art. 4 : abroge les décrets de 1986 et de 1988. Art. 5 : effet au 1^er^ novembre 1996 |
+| []{#r-pf-public-retraites}— | loi n° 85-12 du 5 mars 1985 [@loi85-12, art. 40] | l'indemnité familiale s'ajoute à la pension de retraite, dans les mêmes conditions que pour les agents en activité |
+
+: Indemnités à caractère familial du secteur public : textes {#tbl-pf-public-textes}
+
+::::
 
 <!-- TODO (documentaliste) : lire le décret n° 75-952 (JORT n° 87 de 1975, p. 2884) pour compléter
 la série en amont de 1986, et la circulaire n° 42 du 25 octobre 1996 (JORT n° 94 de 1996,
-pp. 2349-2364), seize pages, source la plus détaillée sur la gestion du dispositif. -->
+pp. 2349-2364), seize pages, source la plus détaillée sur la gestion du dispositif. Vérifier aussi
+qu'aucun décret de fixation des taux n'est postérieur à celui de 1996, et ouvrir alors une fiche
+à docs/recherches.yml : aucune passe n'est documentée à ce jour. -->
+
+## Longue période et données {#sec-pf-longue-periode}
+
+Les comptes de la branche — ressources, emplois et résultat — sont au volume « Les caisses » ([les régimes de la caisse, 1990-2004](../caisses/_comptes_longue_periode.html#sec-caisses-cnss-regimes)). Cette section montre ce que valent les montants fixés par les textes, puis ce que la caisse verse.
+
+### Le pouvoir d'achat des montants {#sec-pf-lp-montants}
+
+Les allocations familiales sont un pourcentage du salaire, mais d'un salaire plafonné en dinars : dès que les salaires dépassent le plafond, l'allocation devient un montant fixe, et son pouvoir d'achat ne tient qu'aux relèvements du plafond. Il y en a eu deux, en 1976 et en 1986.
+
+- **Le maximum par enfant.** En dinars de 2025, le maximum du premier enfant vaut 217 D par trimestre en 1962, 200 D en 1976, 139 D en 1987 et 22 D en 2025 ; celui d'un foyer de trois enfants, 651 D, 533 D, 370 D et 59 D (@fig-pf-montant-max).
+- **Le plafond et le salaire minimum.** Le plafond de l'assiette dépasse le salaire minimum d'un trimestre en 1961 (1,11) ; il en vaut 0,80 après le relèvement de 1976, 0,43 après celui de 1986, et 0,07 en 2026 (@fig-pf-plafond-smig).
+- **Les montants en dinars.** La majoration pour salaire unique, la contribution aux frais de crèche et l'indemnité du secteur public suivent la même pente depuis leur fixation (@fig-pf-msu-creche-reel).
+
+```{python}
+#| label: fig-pf-plafond-smig
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import prestations_familiales as pf
+import figtools
+figtools.figure_tabs(
+    pf.fig_plafond_smig(), pf.table_plafond_smig(),
+    pf.SERIE, pf.SERIE_SMIG,
+    slug="fig_pf_plafond_smig",
+    caption=("Plafond de l'assiette trimestrielle des allocations familiales, rapporté au "
+             "salaire minimum d'un trimestre (régime de 48 heures), 1961-2026"),
+    nominal=False,
+    note_lecture=(
+        "Le plafond de l'assiette, fixé par trimestre, est divisé par trois fois le salaire "
+        "minimum interprofessionnel garanti mensuel du régime de 48 heures ; le rapport est "
+        "recalculé à chaque date d'effet de l'un ou de l'autre. Au-dessus de 1, un salarié "
+        "payé au salaire minimum touche moins que le maximum, et l'allocation croît avec le "
+        "salaire ; au-dessous, tout salarié à temps plein atteint le plafond. Chaque hausse "
+        "du salaire minimum abaisse le rapport d'une marche ; les deux relèvements du "
+        "plafond, en 1976 et en 1986, le remontent sans le ramener à 1. Avant 1974, le "
+        "salaire minimum est le minimum horaire de la première zone, converti au mois à "
+        "raison de 208 heures ; l'indemnité de cherté de vie servie de 1971 à 1973 n'y est "
+        "pas comprise."),
+)
+```
+
+### Ce que la caisse verse, 1990-2004 {#sec-pf-lp-depense}
+
+Les comptes de bilan de la caisse donnent, de 1990 à 2004, ce qu'elle verse au titre de ces prestations [@cnss-retrospective-1990-2004]. Sur toute cette période, les taux par rang et le plafond de l'assiette sont ceux de 1989 (@tbl-af-evolution) : à barème constant, la dépense varie avec le nombre d'enfants servis et avec la part des salaires inférieurs au plafond.
+
+- **En dinars courants**, le total passe de 67,4 millions de dinars en 1990 à 70,1 millions en 2004, avec un sommet de 77,9 millions en 1997.
+- **En dinars de 2025**, il passe de 346 à 209 millions, soit une baisse de 40 %.
+- **En proportion du PIB**, de 0,62 % à 0,19 % ; le PIB est celui que retient le ministère des Finances [@minfin-indicateurs-fp], en base 1983 jusqu'en 1996 et en base 1997 ensuite, sans rétropolation : la rupture, qui abaisse les ratios d'environ un dixième à partir de 1997, n'est pas corrigée ([annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
+- **En proportion des ressources de la caisse**, toutes branches et tous régimes, de 17,6 % à 5,0 %.
+
+Ces comptes ne comptent ni les allocataires ni les enfants : la baisse est celle de la dépense, non du montant servi par enfant (@fig-cnss-allocations-familiales).
+
+```{python}
+#| label: fig-cnss-allocations-familiales
+#| fig-cap: "Allocations familiales et majoration pour salaire unique versées par la CNSS, en dinars courants et en dinars de 2025, et rapportées au PIB et aux ressources de la caisse, 1990-2004."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cnss_allocations_familiales as caf
+import figtools
+figtools.figure_tabs(
+    caf.vues(), caf.table(),
+    "cnss-retrospective-ressources-emplois", *caf.SERIES_IPC, "irpp-ratios",
+    slug="fig_cnss_allocations_familiales",
+    caption=("Allocations familiales et majoration pour salaire unique versées par la "
+             "CNSS, en dinars courants et en dinars de 2025, et rapportées au PIB et aux "
+             "ressources de la caisse, 1990-2004"),
+    nominal=False,
+    note_lecture=(
+        "Les barres empilent ce que la caisse verse, par régime et par prestation ; quatre "
+        "vues en changent l'unité : millions de dinars courants, millions de dinars de "
+        "2025, pourcentage du PIB, pourcentage du total des ressources de la caisse. Le "
+        "total passe de 67,4 à 70,1 millions de dinars courants de 1990 à 2004, soit de 346 "
+        "à 209 millions de dinars de 2025. La barre hachurée de 1999 comprend des "
+        "estimations : la reliure de l'exemplaire consulté masque une partie de la colonne. "
+        "Sur la vue au PIB, celui que retient le ministère des Finances "
+        "[@minfin-indicateurs-fp], le trait pointillé marque le passage, en 1997, de la base "
+        "1983 à la base 1997 des comptes nationaux, non corrigé [@ins-cnat-2015]. Ces "
+        "comptes ne comptent ni les allocataires ni les enfants : la baisse est celle de la "
+        "dépense, non du montant servi par enfant."),
+)
+```
+
+:::: {.chronologie-repliable titre="Dépense de prestations familiales de la CNSS, 1990-2004 : composantes tracées, pensionnés imputés sur la branche des pensions jusqu'en 1994, colonne 1999, déflateur, changement de base du PIB et périmètre des ressources"}
+
+- **Les composantes.** Les barres empilent, en millions de dinars, les allocations familiales du régime des salariés non agricoles ; celles du régime des salariés de certaines entreprises agricoles, que les comptes de la caisse nomment « régime agricole amélioré », et du régime des étudiants ; la majoration pour salaire unique ; les allocations familiales et de salaire unique des pensionnés du régime non agricole ; les allocations familiales servies au titre de la convention tuniso-française. Les congés de naissance, de 0,1 million de dinars par an au plus, ne sont pas tracés.
+- **Les pensionnés.** Leurs allocations sont imputées sur la branche des pensions jusqu'en 1994. La ligne est nulle à partir de 1995, l'année où les allocations familiales de la branche des prestations familiales augmentent d'environ 3 millions de dinars ; les tableaux de la caisse ne disent pas si les deux mouvements sont liés.
+- **La colonne 1999.** Elle est en partie masquée par la reliure de l'exemplaire consulté : la barre hachurée de cette année comprend des estimations, dont l'onglet « Données » donne le détail ; les ratios de 1999 sont hachurés de même.
+- **Le déflateur.** Les dinars de 2025 sont obtenus par l'indice des prix à la consommation [@ins-annuaire ; @bct-ra] : le montant de l'année, multiplié par le rapport de l'indice de 2025 à celui de l'année.
+- **Le PIB.** Celui que retient le ministère des Finances [@minfin-indicateurs-fp]. Il passe en 1997 de la base 1983 à la base 1997 des comptes nationaux, dont les niveaux sont d'environ 10 % plus élevés [@ins-cnat-2015] : à montant égal, les ratios en sont abaissés d'environ un dixième à partir de 1997, et la rupture n'est pas corrigée.
+- **Les ressources de la caisse.** Le total, toutes branches et tous régimes, tel que le donnent ses comptes de bilan, comprend les accidents du travail et les maladies professionnelles à partir de 1995, la protection sociale des travailleurs à partir de 1997 : le dénominateur s'élargit d'autant à ces dates. Les vues en pourcentage se passent de déflateur, numérateur et dénominateur étant des dinars de la même année.
+
+::::
+
+<!-- TODO (documentaliste) : construire les séries de longue période des allocations familiales
+contributives — nombre d'allocataires et d'enfants bénéficiaires, montant moyen servi, dépense
+de la branche avant 1990 et après 2004 — à partir des rapports annuels de la CNSS. La dépense de
+1990 à 2004 est tirée de la rétrospective financière de la caisse ; ses montants de 1999
+comprennent des estimations en attendant la relecture de l'original papier (tunisia-data#26). Le
+plafond de l'assiette rapporté au SMIG trimestriel est fait (fig-pf-plafond-smig). -->

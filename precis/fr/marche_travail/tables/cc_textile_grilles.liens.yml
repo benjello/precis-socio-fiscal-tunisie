@@ -2,3 +2,151 @@
     (dinars par heure)'
   parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_a_l_heure
   url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_a_l_heure/table/
+  grille: salaire_base.agents_payes_a_l_heure
+  libelle_grille: 'Textile — agents payés à l''heure : salaire de base, cases de la
+    grille (dinars par heure)'
+  ligne: ''
+- libelle: 'Textile — agents payés au mois, catégorie 1A : salaire de base, cases
+    de la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_1a
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_1a/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 1A
+- libelle: 'Textile — agents payés au mois, catégorie 1B : salaire de base, cases
+    de la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_1b
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_1b/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 1B
+- libelle: 'Textile — agents payés au mois, catégorie 2 : salaire de base, cases de
+    la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_2
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_2/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 2
+- libelle: 'Textile — agents payés au mois, catégorie 3 : salaire de base, cases de
+    la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_3
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_3/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 3
+- libelle: 'Textile — agents payés au mois, catégorie 4 : salaire de base, cases de
+    la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_4
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_4/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 4
+- libelle: 'Textile — agents payés au mois, catégorie 5 : salaire de base, cases de
+    la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_5
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_5/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 5
+- libelle: 'Textile — agents payés au mois, catégorie 6 : salaire de base, cases de
+    la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_6
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_6/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 6
+- libelle: 'Textile — agents payés au mois, catégorie 7 : salaire de base, cases de
+    la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_7
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_7/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 7
+- libelle: 'Textile — agents payés au mois, catégorie 8 : salaire de base, cases de
+    la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_8
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_8/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 8
+- libelle: 'Textile — agents payés au mois, catégorie 9 : salaire de base, cases de
+    la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_9
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_9/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 9
+- libelle: 'Textile — agents payés au mois, catégorie 10 : salaire de base, cases
+    de la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_10
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_10/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 10
+- libelle: 'Textile — agents payés au mois, catégorie 11 : salaire de base, cases
+    de la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_11
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_11/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 11
+- libelle: 'Textile — agents payés au mois, catégorie 12 : salaire de base, cases
+    de la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_12
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_12/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 12
+- libelle: 'Textile — agents payés au mois, catégorie 13 : salaire de base, cases
+    de la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_13
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_13/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 13
+- libelle: 'Textile — agents payés au mois, catégorie 14 : salaire de base, cases
+    de la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_14
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_14/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 14
+- libelle: 'Textile — agents payés au mois, catégorie 15 : salaire de base, cases
+    de la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_15
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_15/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 15
+- libelle: 'Textile — agents payés au mois, catégorie 16 : salaire de base, cases
+    de la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_16
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_16/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 16
+- libelle: 'Textile — agents payés au mois, catégorie 17 : salaire de base, cases
+    de la ligne (dinars par mois)'
+  parametre: parameters/marche_travail/conventions_collectives/textile/salaire_base/agents_payes_au_mois/categorie_17
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.conventions_collectives.textile.salaire_base.agents_payes_au_mois.categorie_17/table/
+  grille: salaire_base.agents_payes_au_mois
+  libelle_grille: 'Textile — agents payés au mois : salaire de base, cases de la grille
+    (dinars par mois)'
+  ligne: Catégorie 17

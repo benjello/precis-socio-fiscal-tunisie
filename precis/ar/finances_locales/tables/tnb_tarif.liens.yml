@@ -1,0 +1,12 @@
+- libelle: مبلغ المعلوم على الأراضي غير المبنية للمتر المربع — منطقة ذات كثافة عمرانية
+    مرتفعة
+  parametre: parameters/fiscalite_locale/taxe_terrains_non_batis/tarif_m2/haute_densite.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_terrains_non_batis.tarif_m2.haute_densite/table/
+- libelle: مبلغ المعلوم على الأراضي غير المبنية للمتر المربع — منطقة ذات كثافة عمرانية
+    متوسطة
+  parametre: parameters/fiscalite_locale/taxe_terrains_non_batis/tarif_m2/moyenne_densite.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_terrains_non_batis.tarif_m2.moyenne_densite/table/
+- libelle: مبلغ المعلوم على الأراضي غير المبنية للمتر المربع — منطقة ذات كثافة عمرانية
+    منخفضة
+  parametre: parameters/fiscalite_locale/taxe_terrains_non_batis/tarif_m2/basse_densite.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_terrains_non_batis.tarif_m2.basse_densite/table/
