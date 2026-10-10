@@ -54,7 +54,7 @@ Le second tableau reprend les sept colonnes du premier, en lignes, pour les mén
 - **Les prestations familiales : deux régimes de la CNSS sur sept.** Le régime des salariés non agricoles les sert depuis le 1^er^ avril 1961, le régime agricole amélioré depuis le 1^er^ octobre 1989, pour les trois premiers enfants et aux mêmes taux (@sec-pf-reforme-1989) [@loi89-73]. Le régime agricole de base ne couvre que les assurances sociales et les pensions [@loi81-6, art. 1].
 - **Les non-salariés : une énumération qui commence à l'article 68.** Leurs régimes sont construits par extension d'articles numérotés de la loi n° 60-30 : le décret n° 95-1166 étend « les articles 68 à 98, 100 à 107, 109 à 120 », le décret n° 89-107 « les articles 68 à 96, 100 à 120 » [@decret95-1166, art. 1 ; @decret89-107, art. 1]. C'est ce point de départ, et non une exclusion expresse, qui laisse en dehors les prestations familiales des articles 51 à 67. La couverture se lit aussi par risque : l'employé de maison relève du régime des bas revenus pour les soins et les pensions, et de la loi n° 94-28, qui le cite nommément, pour les accidents du travail [@loi94-28, art. 4].
 - **Le secteur public : l'employeur sert, le traitement est maintenu.** L'indemnité à caractère familial de l'agent public est servie par son employeur et non par la caisse (@sec-pf-secteur-public). Il n'y a pas d'indemnité journalière de maladie : le statut maintient le traitement, et les congés de maternité et de paternité sont à plein traitement depuis la loi de 2024 (@sec-ar-conges-2024).
-- **Les cases non tranchées.** La loi n° 96-101 vise « les travailleurs régis par la loi [n° 60-30] » : son extension aux deux régimes agricoles et la situation des agents publics contractuels ne sont pas tranchées par les textes identifiés. Il en va de même de la réparation des accidents du travail des Tunisiens à l'étranger et des artistes, et de l'entrée du régime des bas revenus dans le régime de base d'assurance maladie de 2007 : la colonne « Soins » y porte les soins du régime lui-même.
+- **Les cases non tranchées.** La loi n° 96-101 vise « les travailleurs régis par la loi [n° 60-30] », dans sa rédaction de 1996 comme dans celle de 2002 [@loi96-101, art. 7 ; @loi2002-24, art. 2] : aucun texte qui l'étende aux deux régimes agricoles ou aux agents publics contractuels n'est identifié ici. <!-- RECHERCHE r-loi96-101-extension : texte étendant la loi n° 96-101 aux régimes agricoles ou aux agents contractuels (voir docs/recherches.yml) --> La réparation des accidents du travail des Tunisiens à l'étranger et des artistes n'est pas tranchée non plus par les textes identifiés. Le régime des bas revenus n'est pas dans la liste des régimes entrés dans l'assurance maladie le 1^er^ juillet 2007, et aucun texte qui l'y fasse entrer n'est identifié ici : la colonne « Soins » y porte les soins du régime lui-même. <!-- RECHERCHE r-am-extension-loi2002-32 : décret étendant la loi n° 2004-71 au régime de la loi n° 2002-32, en application de l'art. 2 du décret n° 2007-1366 (voir docs/recherches.yml) -->
 - **L'assistance : deux aides mensuelles coexistent, et quatre risques restent sans prestation.** La loi organique de 2019 maintient les programmes antérieurs jusqu'à leur adaptation : l'allocation du [programme national d'aide aux familles nécessiteuses](#g-pnafn), versée depuis les années 1980, est relevée de 2024 à 2026 dans la limite du [transfert monétaire](#g-transfert-monetaire) de l'Amen social, ouvert le 25 mai 2020 (@sec-nc-pnafn-allocation) ; jusqu'à cette date, l'assistance réunit cette allocation et l'aide médicale (@sec-nc-mise-en-place). Un appui pour dépenses exceptionnelles, de 60 à 200 D, peut répondre à une urgence sanitaire ou sociale (@sec-nc-aides) ; l'assistance ne comporte ni indemnité de maladie ou de maternité, ni capital au décès, ni rente d'accident (@tbl-nc-etat-2026).
 
 :::: {.chronologie-repliable titre="Régimes et prestations : textes et articles ouvrant ou fermant chaque case de la matrice des régimes, 1960-2024"}
@@ -75,7 +75,7 @@ Chaque case porte le texte qui ouvre la prestation (●) ou celui dont il résul
 
 : Les régimes de sécurité sociale : article ouvrant ou fermant chaque prestation {#tbl-matrice-textes}
 
-Textes : @loi60-30 ; @loi81-6 ; @loi89-73 ; @decret95-1166 ; @decret89-107 ; @loi2002-32 ; @loi2002-104 ; @loi88-39 ; @loi72-2 ; @decret93-308 ; @loi95-56 ; @loi94-28 ; @loi96-101 ; @decret2007-1366 ; @decret-loi2024-4. Les textes de l'assistance sociale sont au registre de son chapitre (@sec-prest-non-contributives).
+Textes : @loi60-30 ; @loi81-6 ; @loi89-73 ; @decret95-1166 ; @decret89-107 ; @loi2002-32 ; @loi2002-104 ; @loi88-39 ; @loi72-2 ; @decret93-308 ; @loi95-56 ; @loi94-28 ; @loi96-101 ; @loi2002-24 ; @decret2007-1366 ; @decret-loi2024-4. Dates auxquelles les textes de régime sans clause d'effet deviennent exécutoires : le 19 janvier 1989 pour le décret n° 89-107, un jour franc après sa publication ; le 19 juillet 1995 pour le décret n° 95-1166, le 21 mars 2002 pour la loi n° 2002-32, le 5 janvier 2003 pour la loi n° 2002-104 et le 28 octobre 2024 pour le décret-loi n° 2024-4, cinq jours après le dépôt du *Journal officiel*, jour du dépôt non compté. Les textes de l'assistance sociale sont au registre de son chapitre (@sec-prest-non-contributives).
 
 ::::
 
@@ -89,20 +89,11 @@ La loi n° 2002-32 ne donne pas de nom abrégé au régime qu'elle institue pour
 
 Les deux voies de la matrice n'ont pas le même critère : l'affiliation pour les régimes, les ressources pour l'assistance. Les textes ne posent pas de règle générale d'exclusion de l'une par l'autre ; ils tracent la frontière prestation par prestation.
 
-- **Les allocations pour enfants.** L'allocation de 30 D de l'Amen social est fermée aux catégories à revenu limité « affiliées à l'un des régimes de sécurité sociale » : l'arrêté de 2022, pour les enfants de moins de six ans, et celui de 2025, pour les enfants de 6 à 18 ans, le disent dans les mêmes termes. L'exclusion vise cette seule catégorie ; ces textes n'énoncent pas d'interdiction générale de cumul pour les catégories pauvres (@sec-nc-af-moins-6, @sec-nc-af-6-18).
-- **Les soins.** Le décret de 1998 sur la [carte de soins à tarifs réduits](#g-amg2) pose une condition d'exclusion : le bénéficiaire « ne doit pas être affilié à l'un des régimes de sécurité sociale et sa situation ne lui permet pas l'affiliation » (@sec-nc-cartes-1998).
-- **Le passage d'une voie à l'autre.** Le salarié licencié pour raisons économiques garde quatre trimestres ses allocations familiales et son droit aux soins (@sec-ar-cessation-1996) ; un décret de 2012 lui ouvre ensuite une carte annuelle de soins à tarifs réduits, une fois cette protection épuisée (@sec-nc-cartes-1998).
+- **Le transfert mensuel.** Ni la loi organique de 2019 ni le décret du 19 mai 2020 ne posent de condition de non-affiliation à un régime de sécurité sociale. Les conditions portent sur l'âge, sur le revenu des douze derniers mois et sur le patrimoine, et un score classe les ménages ; les salaires et les pensions entrent seulement dans le revenu comparé au plafond (@sec-nc-eligibilite) [@loi-amen-social-2019 ; @decret-gouv-2020-317-amen, art. 3 à 9]. Un texte de régime écrit, lui, une règle de non-cumul : pour la travailleuse agricole, les prestations de l'Amen social ne peuvent être cumulées avec celles de la couverture sociale [@decret-loi2024-4, art. 35].
+- **Les allocations pour enfants.** L'allocation de 30 D de l'Amen social est fermée aux catégories à revenu limité « affiliées à l'un des régimes de sécurité sociale » : l'arrêté de 2022, pour les enfants de moins de six ans, et celui de 2025, pour les enfants de 6 à 18 ans, le disent dans les mêmes termes [@arrete-2022-04-01-allocation-familiale, art. 2 ; @arrete-2025-11-03-allocation-familiale-6-18, art. 1]. L'exclusion vise cette seule catégorie. Pour une famille des catégories pauvres affiliée à un régime qui sert les allocations familiales, la règle de cumul des deux allocations n'est pas identifiée ici : ni ces arrêtés ni la loi de 1960 n'en disent rien (@sec-nc-af-moins-6, @sec-nc-af-6-18). <!-- RECHERCHE r-amen-cumul-af-contributive : texte réglant le cumul de l'allocation familiale de l'Amen social avec les allocations familiales de la loi n° 60-30 pour une famille pauvre affiliée (voir docs/recherches.yml) -->
+- **Les soins.** La condition de non-affiliation est écrite pour deux des trois titres de soins. La [carte de soins à tarifs réduits](#g-amg2) l'exige depuis 1998 : le bénéficiaire « ne doit pas être affilié à l'un des régimes de sécurité sociale et sa situation ne lui permet pas l'affiliation ». La [carte de soins gratuits](#g-amg1) ne la connaît pas : le décret de 1998 l'attribue à « tout tunisien indigent », et ses modificatifs de 2004, 2012, 2016, 2020 et 2021 n'ajoutent pas de condition de ce type [@decret-98-1812-amg1, art. 2]. Le support électronique de 2022 l'exige des ayants droit du titulaire, et ne l'écrit pas pour le titulaire lui-même [@decret-2022-919-soins-amen, art. 3] (@sec-nc-cartes-1998, @sec-nc-soins-2022).
+- **Le passage d'une voie à l'autre.** Le salarié licencié pour raisons économiques, ou après la fermeture inopinée et définitive de son entreprise, garde quatre trimestres ses soins et ses allocations familiales (@sec-ar-cessation-1996) ; un décret de 2012 lui ouvre ensuite une carte annuelle de soins à tarifs réduits, une fois cette protection épuisée (@sec-nc-cartes-1998).
 - **L'appui occasionnel.** Depuis le 1^er^ septembre 2024, les sommes fixées par l'article de l'arrêté où figure l'aide de rentrée scolaire ne se cumulent pas avec d'autres sommes octroyées au même titre dans le cadre de programmes ou de mécanismes publics (@sec-nc-aides).
-- **Le transfert mensuel.** Ses conditions portent sur l'âge, sur le revenu des douze derniers mois, tous revenus confondus, sur le patrimoine et sur le classement par un score (@sec-nc-eligibilite).
-
-<!-- TODO (documentaliste) : la frontière n'est établie que sur les points ci-dessus. Restent à établir, par les
-textes : (1) si l'affiliation à un régime de sécurité sociale fait obstacle au transfert monétaire mensuel de
-l'Amen social (décret gouvernemental n° 2020-317, art. 3 à 9 : le chapitre de l'assistance n'en relève que l'âge, le
-revenu, le patrimoine et le score) ; (2) si une famille des catégories pauvres affiliée à un régime qui sert les
-allocations familiales (loi n° 60-30, art. 51 à 67) peut percevoir aussi l'allocation de 30 D (arrêtés du 1er avril
-2022 et du 3 novembre 2025 : seule l'exclusion des catégories à revenu limité affiliées est relevée) ; (3) si la
-carte de soins gratuits et le support électronique de 2022 connaissent la condition de non-affiliation de la carte à
-tarifs réduits (décret n° 98-1812 ; décret n° 2022-919). Ouvrir une fiche de recherche si la lecture ne tranche pas. -->
 
 ## Comment un droit s'ouvre {#sec-prest-contributives}
 
@@ -117,21 +108,9 @@ Dans un régime de sécurité sociale, une prestation suppose six étapes, et c'
 
 Dans l'assistance sociale, le droit s'ouvre par une demande, sous des conditions d'âge, de revenu et de patrimoine et après un classement par un score ; le transfert est dû à compter du mois d'enregistrement de la demande, et le dossier est mis à jour au moins tous les deux ans (@sec-nc-eligibilite).
 
-<!-- TODO (documentaliste) : établir l'extension éventuelle de la loi n° 96-101 aux régimes
-agricoles et aux agents contractuels, ainsi que l'entrée éventuelle du régime de la loi
-n° 2002-32 dans l'assurance maladie. -->
-
-<!-- TODO (documentaliste) : établir la pagination des textes de 2024 et postérieurs :
-les éditions française et arabe d'un même fascicule ne portent pas les mêmes folios ; l'article
-17 de la loi de finances 2025 est cité sur l'édition arabe, et le folio français du décret-loi
-n° 2024-4 n'est pas établi. Toute citation de ces textes doit préciser l'édition.
--->
-
-<!-- TODO (documentaliste) : dates d'effet non établies, les articles finaux n'ayant pas été lus,
-pour les lois n° 96-65, n° 96-101, n° 2002-32 et n° 2002-104 et pour les décrets
-n° 95-1166, n° 89-107 et le décret-loi n° 2024-4. L'article 34 de la loi n° 60-30, qui énumère
+<!-- TODO (documentaliste) : l'article 34 de la loi n° 60-30 (JORT n° 57 de 1960, p. 1602-1613), qui énumère
 les établissements et professions assujettis et commande donc tout le champ du régime des
-salariés non agricoles, n'a pas été lu non plus. -->
+salariés non agricoles, n'a pas été lu. -->
 
 <!-- TODO (terminologue) : douze notions de ce livre restent à créer dans
 precis/glossaire.yml. Côté contributif : indemnite-de-couches, assurances-sociales,

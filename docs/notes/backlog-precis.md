@@ -105,7 +105,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
-| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; frontière entre régimes et assistance à établir sur trois points | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
+| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 
@@ -575,6 +575,55 @@ liste qui suit le tableau, citations comprises. Restent :
 
 ## Prestations sociales
 
+- **Lectures du 10 octobre 2026 portées dans le volume** (`docs/notes/prestations-sociales-lectures-2026-10-10.md` ;
+  quatre chapitres, corrections ciblées, aucun plan changé).
+  - *Levé* : les dates d'effet des lois n° 95-101 (10 décembre 1995), du 22 juillet 1996 (4 août 1996),
+    n° 96-101 (1er décembre 1996), n° 2002-24 (7 mars 2002), n° 2002-32 (21 mars 2002), n° 2017-47
+    (3 juillet 2017), n° 2024-44 (17 août 2024), du décret-loi n° 2024-4 (28 octobre 2024), de l'art. 17 de
+    la loi de finances pour 2025 (1er janvier 2025, art. 84) et de la loi n° 82-71 (fourchette du 19 au
+    22 août 1982), chacune avec son calcul dans sa ligne de registre ; **la section de la cessation
+    d'activité (`#sec-perte-emploi`) dit l'état du droit du 7 mars 2002** (loi n° 2002-24), la rédaction de
+    1996 étant l'état antérieur, avec le rectificatif de 1997 et les décrets d'application ; la loi n° 82-71
+    (art. 65 ter, clé `loi82-71`) ; la frontière entre régimes et assistance (`#sec-matrice-frontiere`) ;
+    le score (source du ministère pour le premier décile, circulaire du 10 mai 2022) ; les rentes de la loi
+    n° 94-28 (art. 42 à 53) ; l'art. 2 de la loi n° 95-101 ; l'art. 17 de la loi de finances pour 2025 dans
+    son texte français ; les aides catégorielles des lois de finances pour 2025 et 2026 (condition de
+    l'art. 81 ajoutée) ; les aides aux familles d'accueil (`#tbl-nc-familles-accueil`, deux séries) ; les
+    modalités, les taux et le plafond de 2008 de l'assurance maladie (bloc replié) ; les décrets
+    n° 99-1372 et n° 2018-626 ; les conditions du programme d'autonomisation ; le tableau 13 du rapport du
+    ministère pour 2023 (il ne se referme pas).
+  - *Trouvé en écrivant, hors de la note* : les décrets de 1997 sont modifiés — n° 2002-886 et
+    n° 2006-1025 pour le décret n° 97-1925 (aide plafonnée à trois, puis six, puis douze mensualités),
+    n° 2002-887 pour le décret n° 97-1926 (articles 1 à 7 remplacés). Lus par le rédacteur sur la couche
+    texte du corpus (`2002/fr/Jo0342002.pdf`, police décalée, décodée ; `2006/fr/Jo0312006.pdf`) :
+    **à relire à l'image par le documentaliste**, dates d'effet à établir, modificatif postérieur à 2006 à
+    chercher.
+  - *Reste, lisible au corpus* : relecture à l'image des textes repris de la couche texte (loi n° 2002-24,
+    rectificatif de 1997, décrets de 1997, 2002 et 2006, loi n° 94-28 art. 42 à 53, décrets n° 2007-1367,
+    n° 2008-756 et n° 2021-318, arrêté du 3 juin 2008, arrêtés des familles d'accueil, décret n° 2022-715
+    dont les articles finaux, lois de finances pour 2025 — texte français de jibaya.tn — et pour 2026 —
+    arabe) ; dates d'effet des décrets de 1997 (mention de dépôt du n° 80 non relevée) ; art. 34 de la loi
+    n° 60-30 ; décrets n° 99-1514, n° 2016-1401, n° 93-529, n° 94-1738, n° 2019-1130, n° 2002-916 ;
+    décret n° 75-952 et circulaire n° 42 de 1996 ; décret du 6 avril 1950 ; loi n° 95-56 et gestion des
+    accidents du travail du secteur public ; arrêté conjoint du 25 juin 2007 (affections lourdes ou
+    chroniques).
+  - *Reste, à dépouiller* : révisions du plafond annuel des soins ambulatoires après 2008 ; arrêtés des
+    familles d'accueil après 2010 et 2017 ; arrêtés d'application des art. 35, 71 et 81 de la loi de
+    finances pour 2026 ; lois de finances de 2007 à 2026 pour les art. 52, 54 et 61 de la loi n° 60-30 ;
+    six fiches de recherche ouvertes le 10 octobre 2026 (`r-ar-etat-2026-modificatifs`,
+    `r-am-extension-loi2002-32`, `r-amen-carte-arrete-cahier-des-charges`, `r-amen-cumul-af-contributive`,
+    `r-loi96-101-extension`, `r-pf-taux-apres-1996`).
+  - *Reste, à obtenir* : les circulaires n° 12 du 10 mai 2022 et d'octobre 2025 (ministère des Affaires
+    sociales) ; le rapport technique entier CRES-Banque mondiale (le résumé est rangé) ; le décret du
+    8 juin 1944 ; l'édition française du JORT n° 149 de 2024 (absente de pist.tn) ; les séries de données
+    (CNSS, CNAM, CNRPS, PNAFN, versements de 2025).
+  - *Hors de ce volume* : le volume des cotisations nomme encore le fonds de 2025 par la traduction de
+    l'arabe (« perte de postes de travail ») ; le texte français dit « Fonds d'assurance contre la perte
+    d'emploi pour des motifs économiques ». Les lignes de catalogue de `tunisia-data` pour les cinq
+    fichiers du ministère rangés le 10 octobre 2026 sont proposées dans la note (§ 6.3), non écrites.
+  - *Tableaux faits main ajoutés* : `tbl-ar-cessation-etats`, `tbl-ar-am-taux`, `tbl-ar-am-plafond`,
+    `tbl-nc-familles-accueil` (`backlog-modele.md`).
+
 - **État d'ensemble au 10 octobre 2026 : le volume entier est au format « ruptures au premier plan,
   détail replié »**, en cinq chapitres et une annexe (le glossaire), dans cet ordre :
   1. `index.qmd`, « Présentation » (`#sec-prest-presentation`) — refaite le 10 octobre 2026 :
@@ -597,15 +646,16 @@ liste qui suit le tableau, citations comprises. Restent :
      sept colonnes de symboles ; un second tableau (`#tbl-matrice-assistance`) dit, prestation par
      prestation, ce que reçoivent les catégories pauvres et les catégories à revenu limité,
      d'après `_non_contributives.qmd`. Les articles de chaque case sont au registre replié
-     (`#tbl-matrice-textes`, l'ancienne matrice). **Reste** (TODO du chapitre, textes à lire,
-     tous dans le corpus *a priori*) : la frontière — l'affiliation fait-elle obstacle au
-     transfert mensuel (décret gouvernemental n° 2020-317, art. 3 à 9) ; une famille des
-     catégories pauvres affiliée cumule-t-elle allocations familiales et allocation de 30 D
-     (arrêtés du 1er avril 2022 et du 3 novembre 2025) ; la carte de soins gratuits et le support
-     de 2022 connaissent-ils la condition de non-affiliation de la carte à tarifs réduits — ;
-     l'extension de la loi n° 96-101 aux régimes agricoles et aux contractuels publics ; l'entrée
-     du régime de la loi n° 2002-32 dans l'assurance maladie ; les dates d'effet et la pagination
-     des textes de 2024 ; douze notions de glossaire à créer (terminologue). La colonne
+     (`#tbl-matrice-textes`, l'ancienne matrice). **La frontière est établie le 10 octobre 2026** : aucune
+     condition de non-affiliation pour le transfert mensuel (loi organique n° 2019-10, décret
+     gouvernemental n° 2020-317) ni pour la carte de soins gratuits (décret n° 98-1812 et
+     modificatifs de 2004, 2012, 2016, 2020 et 2021) ; condition écrite pour la carte à tarifs
+     réduits et pour les ayants droit du support de 2022 ; cumul des deux allocations familiales
+     pour une famille pauvre affiliée : règle non identifiée (fiche `r-amen-cumul-af-contributive`).
+     **Reste** : l'extension de la loi n° 96-101 aux régimes agricoles et aux contractuels publics
+     (fiche `r-loi96-101-extension`) ; l'entrée du régime de la loi n° 2002-32 dans l'assurance
+     maladie (fiche `r-am-extension-loi2002-32`) ; l'art. 34 de la loi n° 60-30, non lu ; douze
+     notions de glossaire à créer (terminologue). La colonne
      « Maladie, maternité » réunit les deux indemnités, que l'ancienne matrice ne séparait pas :
      à scinder quand les articles auront été relus régime par régime.
   3. `_prestations_familiales.qmd` (`#sec-prest-familiales`) — converti le 9 octobre 2026
@@ -647,16 +697,14 @@ liste qui suit le tableau, citations comprises. Restent :
   (`marche_travail/figures/deflateur.py` le réexporte). Aucun tableau de cotisations dans ce
   chapitre : le financement renvoie à `cotisations_sociales/_autres_branches.html#sec-cot-famille`.
   **Restent, par disponibilité :**
-  - *lisible au corpus* : la **date d'effet de la loi n° 96-65** (fin de l'article unique à relire,
-    JORT n° 60 du 26 juillet 1996, déposé le 30 juillet : 4 août 1996 si l'article ne dit rien) et
-    celle de la **loi n° 96-101** (mention de dépôt du JORT n° 94 de 1996 à relever à l'image,
-    rectificatif au JORT n° 7 de 1997, p. 114) — le chapitre dit « non établie ici » ; la **loi
-    n° 82-71** du 15 août 1982 (JORT n° 55, p. 1737), lue partiellement, sans clé de
-    bibliographie : ligne de registre sans ancre ni citation ;
+  - *levé le 10 octobre 2026* : dates d'effet de la loi du 22 juillet 1996 (4 août 1996, à citer
+    par sa date : deux lois sont imprimées sous le n° 96-65) et de la loi n° 96-101 (1er décembre
+    1996) ; loi n° 82-71 lue à l'image, clé `loi82-71`, ligne de registre `#r-pf-reg-1982`. Seule
+    reste « non établie ici » la date d'effet du décret n° 75-952, non lu ;
   - *à dépouiller* : les lois modifiant les articles 52, 54 et 61 de la loi n° 60-30 **de 2007 à
-    2026** (fiche `r-pf-art61-apres-1988`, couverte jusqu'au 23 juillet 2007) ; un éventuel décret
-    de fixation des indemnités familiales du secteur public **postérieur à 1996** (aucune passe
-    documentée, pas de fiche) ;
+    2026** (fiche `r-pf-art61-apres-1988` ; passe du 10 octobre 2026 sur les intitulés seuls, lois de
+    finances non dépouillées) ; un éventuel décret de fixation des indemnités familiales du secteur
+    public **postérieur à 1996** (fiche `r-pf-taux-apres-1996`, intitulés seuls) ;
   - *à obtenir* : le décret du 8 juin 1944 et ses modificatifs (hors de la couverture de
     `jort_cache.db`) ;
   - *arabe* : le chapitre arabe garde l'ancien plan et la légende « constants de 1990 » de
@@ -670,21 +718,23 @@ liste qui suit le tableau, citations comprises. Restent :
   les rapports administratifs sont à chercher **hors du JORT**. L'arrêté de 2024
   confirme 180 D à sa publication, pas la date de départ attribuée à 2018 (issue
   openfisca-tunisia #462) : aucune date de palier ne devient certaine par interpolation.
-- **Lecture immédiate des aides adjacentes** : arrêtés du 30 septembre 1997 et du
-  12 décembre 2003 (personnes âgées), du 1er juin 2006 et du 28 avril 2017
-  (personnes handicapées). Les quatre fascicules français sont **locaux et textuels** :
-  `Jo08197.pdf`, `Jo1022003.pdf`, `Jo0462006.pdf`, `Jo0422017.pdf`. Celui de 1997
-  renvoie au montant servi par un programme administratif : il ne donne pas à lui seul
-  une série chiffrée. Le décret n° 2018-626 sur la banque de données est également
-  lisible dans `2018/fr/Jo0632018.pdf` ; son contenu restait noté comme inconnu.
-- **Lois de finances** : l'extrait français local `PDFs/Lois_de_Finances/Loi_de_Finances_2025.pdf`
-  contient l'article 26 sur l'aide aux patients allergiques au gluten : le lire et
-  relever sa page avant de conserver la qualification « dérivée » du tableau. La LF
-  2026 est au corpus en arabe, pas dans une édition française vérifiée : ses autres
-  articles demandent lecture arabe puis confirmation française si celle-ci paraît.
-- **Conflit de pagination** des éditions française et arabe de textes de 2024 et postérieurs :
-  certains folios restent à établir. La date de la loi n° 2017-47 est tranchée au JORT
-  n° 50 de 2017 : 15 juin 2017, publié le 23 juin.
+- **Aides adjacentes — fait le 10 octobre 2026** : arrêtés du 30 septembre 1997 (deux), du
+  12 décembre 2003 et du 24 juin 2010 (personnes âgées), du 1er juin 2006 et du 28 avril 2017
+  (personnes handicapées), lus sur la couche texte et portés à `#sec-nc-adjacents` — famille
+  d'accueil d'une personne âgée : 90, 100, 150 D ; d'une personne handicapée : 150, 200 D. Les
+  deux aides « à la personne » renvoient au montant du programme d'aide aux familles
+  nécessiteuses. Reste : arrêtés postérieurs à 2010 et à 2017, relecture à l'image. Le décret
+  n° 2018-626 est lu et porté (`#r-nc-li-2018`).
+- **Lois de finances — fait le 10 octobre 2026** : art. 26 de la loi de finances pour 2025 (texte
+  français, p. 3427) et art. 35, 71, 81, 96 et 110 de la loi de finances pour 2026 (édition arabe,
+  la seule : le fichier « français » de pist.tn est l'arabe), portés à
+  `#sec-nc-aides-categorielles`. Reste : les arrêtés d'application des articles de 2026.
+- **Pagination des textes de 2024 et postérieurs — établie le 10 octobre 2026** et portée aux
+  notices : décret-loi n° 2024-4, p. 2897-2902 en français ; loi n° 2024-44, p. 2215-2216 ;
+  décret n° 2022-919, p. 3367-3370 ; loi de finances pour 2025, art. 17 p. 3423 du texte français
+  (fascicule français absent de pist.tn ; folio arabe à trancher entre 6420-6421 et 6421-6422) ;
+  loi de finances pour 2026, art. 35 p. 4238. La date de la loi n° 2017-47 est tranchée au JORT
+  n° 50 de 2017 : 15 juin 2017, publié le 23 juin, exécutoire le 3 juillet 2017.
 - **OCR ciblé** : décret n° 75-952 (`1975/fr/Jo08775.pdf`, scan local) pour la série
   des indemnités familiales antérieure à 1986. La circulaire n° 42 de 1996,
   **textuelle et déjà locale** dans `1996/fr/Jo09496.pdf` (à partir de la p. 2349),

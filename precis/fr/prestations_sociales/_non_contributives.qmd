@@ -253,11 +253,11 @@ print("\n: Plafonds de ressources de l'Amen social en dinars par mois, selon la 
 
 **Le score.** En sus de ces conditions, un modèle de score sert à identifier et à classer les bénéficiaires. [L'arrêté du 19 mai 2020](#r-nc-elig-score) dispose qu'il « adopte le test des moyens approximé "Proxy Means Test" et il est basé sur la définition de la pauvreté multidimensionnelle », déclinée en sept familles de variables : caractéristiques démographiques, géographiques, éducation, santé, situation professionnelle et économique, caractéristiques du logement et accès aux services publics de base. Le même arrêté prévoit que le modèle de score est actualisé tous les cinq ans, et chaque fois que nécessaire : la première échéance tombe en mai 2025.
 
-Le transfert monétaire est ouvert aux ménages dont le score se situe dans le premier décile. La règle est établie ici par un document de la Banque mondiale, bailleur du programme, qui décrit les nouveaux allocataires comme ceux qui remplissent les conditions d'éligibilité et dont le score est inférieur au premier décile — « score below the first decile » [@banquemondiale2022pad4815, § 34] ; ni la loi organique, qui renvoie le modèle à un arrêté, ni cet arrêté, ni le décret gouvernemental n° 2020-317 ne l'énoncent.
+Le transfert monétaire est ouvert aux ménages que le score classe dans le premier décile. Le ministère des Affaires sociales l'écrit dans son rapport de suivi du programme pour 2022 : le classement parmi les ménages les plus pauvres — le décile le plus pauvre — rend éligible au transfert mensuel, sous réserve des conditions préalables [@mas-amen-social-2022, p. 18]. La Banque mondiale, bailleur du programme, décrit de même les nouveaux allocataires comme ceux qui remplissent les conditions d'éligibilité et dont le score est inférieur au premier décile — « score below the first decile » [@banquemondiale2022pad4815, § 34]. Ni la loi organique, qui renvoie le modèle à un arrêté, ni cet arrêté, ni le décret gouvernemental n° 2020-317 n'énoncent cette règle.
 
 Deux éléments ne sont pas publics : les coefficients du modèle — ceux de la régression du test des moyens approximé, qui donnent le score d'un ménage à partir de ses caractéristiques, et dont l'arrêté n'énumère que les dimensions — et la valeur du score qui borne ce décile. Un ménage ne peut donc pas calculer lui-même s'il y entre. Le score est un test des moyens approximé, fondé sur des caractéristiques observables du ménage et non sur son revenu déclaré ; ce que les simulations de la Banque mondiale en disent est à la section des études (@sec-nc-etudes-ciblage).
 
-La règle est mise en œuvre par des circulaires du ministre des affaires sociales, dont le texte n'est pas identifié ici : celle de mai 2022, puis celle d'octobre 2025 qui, selon la Banque mondiale, révise les critères d'éligibilité du transfert permanent [@banquemondiale2026ppiaf000292, § 4], soit cinq ans et cinq mois après l'arrêté. Rien de publié ne dit si cette révision actualise le modèle de score lui-même, le décile retenu ou les autres critères. <!-- RECHERCHE r-amen-seuil-score-circulaires : circulaires du ministre des affaires sociales fixant le seuil de score et révisant les critères d'éligibilité (mai 2022, octobre 2025) (voir docs/recherches.yml) -->
+La règle est mise en œuvre par des circulaires du ministre des affaires sociales, dont le texte n'est pas identifié ici. La première, la circulaire n° 12 du 10 mai 2022, porte d'après son intitulé sur les procédures pratiques du bénéfice du transfert mensuel, des soins gratuits et des soins à tarif réduit [@mas-textes-legislatifs-2022] ; selon le ministère, elle fixe les règles de ciblage des bénéficiaires du transfert [@mas-amen-social-2022, p. 19]. La seconde, d'octobre 2025, révise selon la Banque mondiale les critères d'éligibilité du transfert permanent [@banquemondiale2026ppiaf000292, § 4], soit cinq ans et cinq mois après l'arrêté. Rien de publié ne dit si cette révision actualise le modèle de score lui-même, le décile retenu ou les autres critères. <!-- RECHERCHE r-amen-seuil-score-circulaires : circulaires du ministre des affaires sociales fixant le seuil de score et révisant les critères d'éligibilité (mai 2022, octobre 2025) (voir docs/recherches.yml) -->
 
 **Le versement.** [Le transfert est dû](#r-nc-elig-procedure) à compter du mois d'enregistrement de la demande et payé à terme échu ; la décision est rendue dans un délai de quarante-cinq jours, sept en cas d'urgence ; le dossier est mis à jour au moins tous les deux ans.
 
@@ -392,7 +392,7 @@ Le droit annuel d'affiliation des titulaires de la seconde catégorie est de 6 d
 
 Deux décrets de 1998 remplacent le livret par une carte et changent le mode d'attribution : c'est la rupture propre à l'aide médicale.
 
-**La carte de soins gratuits.** [Le décret n° 98-1812](#r-nc-am-1998-gratuit) fixe les conditions d'attribution et de retrait de la [carte de soins gratuits](#g-amg1). Il ne pose aucun seuil de revenu. Il pose une condition d'état — la carte est attribuée à « tout tunisien indigent, à son conjoint et à ses enfants légalement à charge » — et un **contingentement** : la carte est attribuée « dans la limite du nombre global de cartes et des quotas régionaux qui sont fixés par arrêté conjoint des ministres des affaires sociales et de la santé publique ». Le décret renvoie à un arrêté conjoint la fixation du nombre global de cartes et des quotas régionaux. <!-- RECHERCHE r-amg-cartes-quotas : arrêtés fixant le nombre global de cartes et les quotas régionaux (voir docs/recherches.yml) --> La gratuité est totale, sans contribution ni cotisation.
+**La carte de soins gratuits.** [Le décret n° 98-1812](#r-nc-am-1998-gratuit) fixe les conditions d'attribution et de retrait de la [carte de soins gratuits](#g-amg1). Il ne pose aucun seuil de revenu, ni aucune condition tenant à l'affiliation à un régime de sécurité sociale, et ses modificatifs de 2004, 2012, 2016, 2020 et 2021 n'en ajoutent pas. Il pose une condition d'état — la carte est attribuée à « tout tunisien indigent, à son conjoint et à ses enfants légalement à charge » — et un **contingentement** : la carte est attribuée « dans la limite du nombre global de cartes et des quotas régionaux qui sont fixés par arrêté conjoint des ministres des affaires sociales et de la santé publique ». Le décret renvoie à un arrêté conjoint la fixation du nombre global de cartes et des quotas régionaux. <!-- RECHERCHE r-amg-cartes-quotas : arrêtés fixant le nombre global de cartes et les quotas régionaux (voir docs/recherches.yml) --> La gratuité est totale, sans contribution ni cotisation.
 
 **La carte de soins à tarifs réduits.** [Le décret n° 98-409](#r-nc-am-1998-reduit) organise le second étage, celui de la [carte de soins à tarifs réduits](#g-amg2). Il énonce une condition de ressources chiffrée, assise sur le revenu **annuel** de la famille et exprimée en multiples du salaire minimum.
 
@@ -411,7 +411,7 @@ Les membres pris en compte sont, à l'origine, le candidat, son conjoint et les 
 
 **Des catégories nouvelles en 2012.** [Un décret de 2012](#r-nc-am-2012-reduit) ouvre des cartes annuelles renouvelables à des catégories spécifiques, dont les licenciés économiques après épuisement de la protection de la loi n° 96-101, les ascendants d'affiliés proches de 55 ans et certains travailleurs saisonniers du bâtiment.
 
-**Des cartes prorogées, de 2004 à 2022.** De 2004 à 2022, sept décrets au moins n'ont d'autre objet que de prolonger la validité de cartes délivrées entre 1999 et 2017 : six pour la carte à tarifs réduits, en 2004, 2011, 2016, 2020, 2021 et 2022, et un pour la carte de soins gratuits, en 2011 (@tbl-nc-cartes-prorogations). La prorogation de 2020 énumère les cartes des années 2011 à 2015, celle de 2021 les cartes de 2011 à 2016 ; celle de 2022 va jusqu'à 2017.
+**Des cartes prorogées, de 2004 à 2022.** De 2004 à 2022, onze décrets au moins prolongent la validité de cartes délivrées entre 1999 et 2017 : cinq pour la carte à tarifs réduits et cinq pour la carte de soins gratuits, en 2004, 2011, 2016, 2020 et 2021, puis le décret de 2022 pour les deux (@tbl-nc-cartes-prorogations). La prorogation de 2020 énumère les cartes des années 2011 à 2015, celle de 2021 les cartes de 2011 à 2016 ; celle de 2022 va jusqu'à 2017.
 
 :::: {.chronologie-repliable titre="Carte de soins à tarifs réduits : tarifs par prestation, cotisation annuelle et validité, décret n° 98-409"}
 
@@ -447,37 +447,38 @@ Les membres pris en compte sont, à l'origine, le candidat, son conjoint et les 
 | []{#r-nc-am-2005}2005 | ajustement | décret n° 2005-2886 du 24 octobre 2005 [@decret-2005-2886-amg2-ascendants] | les ascendants légalement à charge s'ajoutent aux membres de la famille pris en compte pour le plafond de la carte à tarifs réduits ; seuils inchangés |
 | []{#r-nc-am-2012-gratuit}2012 | ajustement | décret n° 2012-2521 du 16 octobre 2012 [@decret-2012-2521-amg1-pnafn, art. 5] | carte de soins gratuits : la liste des éligibles est élaborée au vu des listes des bénéficiaires et des éligibles aux aides monétaires directes du programme national d'aide aux familles nécessiteuses |
 | []{#r-nc-am-2012-reduit}2012 | ajustement — un public nouveau | décret n° 2012-2522 du 16 octobre 2012 [@decret-2012-2522-amg2-commissions, art. 5 et 7] | carte à tarifs réduits : composition des commissions remaniée (art. 5 et 7) ; cartes annuelles renouvelables pour des catégories spécifiques |
-| []{#r-nc-am-2022}2022 | étape — de 2019 | décret n° 2022-919 du 29 novembre 2022 [@decret-2022-919-soins-amen, art. 1-2, 5-6, 20-21] | « système de soins électronique AMEN » (art. 1-2) ; support de soins électronique personnel (art. 5) ; soins couverts (art. 6) ; cartes des années 2011 à 2017 prorogées jusqu'au 31 décembre 2022 (art. 20) ; régimes particuliers de gratuité et de tarifs réduits maintenus (art. 21) |
+| []{#r-nc-am-2022}[6 décembre 2022]{.insecable} | étape — de 2019 | décret n° 2022-919 du 29 novembre 2022 [@decret-2022-919-soins-amen, art. 1-3, 5-6, 9, 20-21 et 23] | « système de soins électronique AMEN » (art. 1-2) ; ayants droit du bénéficiaire, à condition d'être inscrits avec lui dans la base de données du programme et de n'être affiliés à aucun régime de sécurité sociale : le conjoint, les enfants jusqu'à la majorité ou jusqu'à la fin de leurs études sans dépasser 25 ans, les enfants handicapés sans ressources, la fille sans ressources qui n'est pas à la charge de son mari, les petits-enfants sous tutelle légale (art. 3) ; support de soins électronique personnel (art. 5) ; soins couverts (art. 6) ; cahier des charges de la carte approuvé par arrêté conjoint des ministres chargés des technologies de la communication, des affaires sociales et de la santé (art. 9) ; cartes des années 2011 à 2017 prorogées jusqu'au 31 décembre 2022 (art. 20) ; régimes particuliers de gratuité et de tarifs réduits maintenus (art. 21) ; dispositions antérieures contraires abrogées, sans que les décrets de 1998 soient nommés (art. 23). Aucune clause d'effet : dépôt du *Journal officiel* n° 131 le 1^er^ décembre 2022, exécution cinq jours après, jour du dépôt non compté |
 
 ::::
 
-:::: {.chronologie-repliable titre="Cartes de soins : les décrets qui en prorogent la validité ou en modifient les pièces, 2004-2022"}
+:::: {.chronologie-repliable titre="Cartes de soins : les décrets qui en prorogent la validité ou en modifient les pièces, 1999-2022"}
 
 Ces décrets sont donnés par leur numéro et leur publication au *Journal officiel*.
 
 | Décret | *Journal officiel* | Carte | Ce qui change |
 |---|---|---|---|
+| n° 99-1372 du 21 juin 1999 | n° 52, p. 1052-1053 | à tarifs réduits | article 24 du décret n° 98-409 remplacé : les cartes de deuxième catégorie du régime de 1987 restent valables jusqu'à la fin de 1999, leurs titulaires devant demander le tarif réduit avant le 30 septembre 1999 |
 | n° 2004-2730 du 31 décembre 2004 | n° 1 de 2005, p. 16-17 | à tarifs réduits | cartes délivrées en décembre 1999 et en 2000 : validité prolongée au 31 décembre 2005 |
-| n° 2004-2731 du 31 décembre 2004 | n° 1 de 2005, p. 17 | gratuits | modifie le décret n° 98-1812 |
+| n° 2004-2731 du 31 décembre 2004 | n° 1 de 2005, p. 17 | gratuits | article 11 nouveau du décret n° 98-1812 : cartes délivrées en décembre 1999 et en 2000 prolongées au 31 décembre 2005 |
 | n° 2009-1034 du 13 avril 2009 | n° 31, p. 1063 | à tarifs réduits | la déclaration fiscale des revenus est retirée des pièces exigées |
 | n° 2011-560 du 14 mai 2011 | n° 36, p. 730 | gratuits | cartes de 2006 prolongées au 31 décembre 2011 |
 | n° 2011-561 du 14 mai 2011 | n° 36, p. 730-731 | à tarifs réduits | cartes de 2006 prolongées au 31 décembre 2011 |
 | décret gouvernemental n° 2016-111 du 25 janvier 2016 | n° 8, p. 252-253 | à tarifs réduits | cartes de 2011 prolongées au 31 décembre 2016 |
-| décret gouvernemental n° 2016-112 du 25 janvier 2016 | n° 8, p. 253 | gratuits | modifie le décret n° 98-1812 |
+| décret gouvernemental n° 2016-112 du 25 janvier 2016 | n° 8, p. 253 | gratuits | cartes de 2011 prolongées au 31 décembre 2016 |
 | décrets gouvernementaux n° 2016-1401 et n° 2016-1402 du 27 décembre 2016 | n° 105 | gratuits ; à tarifs réduits | seul l'intitulé de ces deux textes est connu ici |
-| décret gouvernemental n° 2020-475 du 23 juillet 2020 | n° 74, p. 1637-1638 | gratuits | modifie le décret n° 98-1812 |
+| décret gouvernemental n° 2020-475 du 23 juillet 2020 | n° 74, p. 1637-1638 | gratuits | cartes de 2011 à 2015 prolongées au 31 décembre 2020 |
 | décret gouvernemental n° 2020-476 du 23 juillet 2020 | n° 74, p. 1638-1639 | à tarifs réduits | cartes de 2011 à 2015 prolongées au 31 décembre 2020 |
 | décret gouvernemental n° 2021-66 du 12 janvier 2021 | n° 9, p. 250-251 | à tarifs réduits | cartes de 2011 à 2016 prolongées au 31 décembre 2021 |
-| décret gouvernemental n° 2021-67 du 12 janvier 2021 | n° 9, p. 251-252 | gratuits | modifie le décret n° 98-1812 |
+| décret gouvernemental n° 2021-67 du 12 janvier 2021 | n° 9, p. 251-252 | gratuits | cartes de 2011 à 2016 prolongées au 31 décembre 2021 |
 
 : Décrets modifiant les décrets n° 98-409 et n° 98-1812, hors ceux du registre de l'aide médicale {#tbl-nc-cartes-prorogations}
 
-<!-- TODO (bibliographe) : créer les clés de ces treize décrets (numéros, dates, JORT et pages dans docs/notes/prestations-assistance.md,
-§ 2.5), puis porter les citations dans ce tableau. La note compte onze décrets de prorogation sur seize modificatifs de 2004 à 2022 :
-décompte à confirmer avant de l'écrire. TODO (documentaliste) : établir l'objet du décret n° 99-1372 du 21 juin 1999
-(JORT n° 52, p. 1052-1053), visé comme ayant modifié l'article 24 du décret n° 98-409 ; lire les décrets de la chaîne de la carte de
-soins gratuits (n° 2004-2731, 2016-112, 2020-475, 2021-67), dont la note ne donne que la place dans la chaîne ; lire les décrets
-n° 93-529 et n° 94-1738 (tarifs réduits antérieurs à 1998, le second abrogé par l'art. 25 du décret n° 98-409). -->
+<!-- TODO (bibliographe) : créer les clés de ces quatorze décrets (numéros, dates, JORT et pages dans docs/notes/prestations-assistance.md,
+§ 2.5, et prestations-sociales-lectures-2026-10-10.md, § 3.2), puis porter les citations dans ce tableau. TODO (documentaliste) :
+lire les décrets n° 99-1514 du 5 juillet 1999 et n° 2016-1401 du 27 décembre 2016, visés par les modificatifs du décret n° 98-1812,
+et les décrets n° 93-529 et n° 94-1738 (tarifs réduits antérieurs à 1998, le second abrogé par l'art. 25 du décret n° 98-409) ;
+relire la rédaction d'origine de l'art. 24 du décret n° 98-409, pour dire de combien le décret n° 99-1372 prolonge la période
+transitoire ; les décrets de la chaîne de la carte de soins gratuits sont repris de la couche texte, à relire à l'image. -->
 
 ::::
 
@@ -496,8 +497,10 @@ Le changement de 2012 est un changement de composition, et les deux textes en do
 
 [Le décret n° 2022-919](#r-nc-am-2022) crée un « système de soins électronique AMEN » au profit des catégories pauvres et à revenu limité bénéficiaires de l'Amen social, géré par le ministère des Affaires sociales. Un **support de soins électronique personnel** est attribué au bénéficiaire et à ses ayants droit, en remplacement de la carte de papier, et couvre les soins, les médicaments, l'hospitalisation, l'appareillage de prothèse et la réadaptation dans les structures publiques ; les cartes des années 2011 à 2017 sont prorogées à titre transitoire jusqu'au 31 décembre 2022, et les régimes particuliers de gratuité et de tarifs réduits sont maintenus.
 
-<!-- TODO (documentaliste) : établir si un arrêté d'application du décret n° 2022-919 a été pris et si le système est entré en
-service (docs/notes/prestations-assistance.md, § 2.6). -->
+- **Les ayants droit ne doivent pas être affiliés.** Le conjoint, les enfants et les petits-enfants sous tutelle du titulaire doivent être inscrits avec lui dans la base de données du programme et n'être affiliés à aucun régime de sécurité sociale ; cette condition n'est pas écrite pour le titulaire lui-même, dont le droit tient à son classement par l'Amen social (@sec-matrice-frontiere).
+- **La mise en service.** Le cahier des charges de la carte est renvoyé à un arrêté conjoint, qui n'est pas identifié ici ; le ministère des Affaires sociales rapporte que la distribution des cartes a commencé en 2022 [@mas-amen-social-2022, p. 19].
+
+<!-- RECHERCHE r-amen-carte-arrete-cahier-des-charges : arrêté conjoint approuvant le cahier des charges de la carte de soins électronique, décret n° 2022-919, art. 9 (voir docs/recherches.yml) -->
 
 ## Les allocations pour enfants {#sec-af-non-contributive}
 
@@ -524,7 +527,7 @@ Son fondement est [le décret-loi n° 2022-8 du 31 janvier 2022](#r-nc-af-dl), q
 
 [L'arrêté conjoint du 1^er^ avril 2022](#r-nc-af-2022) en fixe le régime. L'allocation est octroyée au titre des enfants à charge âgés de moins de six ans, aux catégories pauvres **et** aux catégories à revenu limité bénéficiant du programme, et son montant est de **trente dinars par mois et par enfant**.
 
-Quatre traits la distinguent des allocations familiales contributives. Elle est servie **sans plafonnement du nombre d'enfants**, là où le régime contributif s'arrête au troisième depuis 1989. Son champ est **plus large que celui du transfert monétaire**, puisqu'il couvre aussi les catégories à revenu limité, qui ne perçoivent pas de transfert. Elle comporte une **exclusion explicite** : « Les catégories à revenu limité affiliées à l'un des régimes de sécurité sociale sont exclues du bénéfice de cette allocation familiale ». Cette exclusion vise donc cette catégorie précise, sans énoncer une interdiction générale de cumul pour les catégories pauvres. Enfin, l'arrêté vise expressément la loi qui approuve un accord de prêt de la Banque internationale pour la reconstruction et le développement : le financement du dispositif par un bailleur figure **dans le visa du texte lui-même**, et non seulement dans les commentaires qui l'entourent.
+Quatre traits la distinguent des allocations familiales contributives. Elle est servie **sans plafonnement du nombre d'enfants**, là où le régime contributif s'arrête au troisième depuis 1989. Son champ est **plus large que celui du transfert monétaire**, puisqu'il couvre aussi les catégories à revenu limité, qui ne perçoivent pas de transfert. Elle comporte une **exclusion explicite** : « Les catégories à revenu limité affiliées à l'un des régimes de sécurité sociale sont exclues du bénéfice de cette allocation familiale ». Cette exclusion vise donc cette catégorie précise, sans énoncer une interdiction générale de cumul pour les catégories pauvres : ce que les textes disent d'une famille pauvre affiliée à un régime qui sert des allocations familiales est exposé avec la frontière entre les régimes et l'assistance (@sec-matrice-frontiere). Enfin, l'arrêté vise expressément la loi qui approuve un accord de prêt de la Banque internationale pour la reconstruction et le développement : le financement du dispositif par un bailleur figure **dans le visa du texte lui-même**, et non seulement dans les commentaires qui l'entourent.
 
 L'antécédent doctrinal de ce dispositif — l'introduction graduelle d'une allocation universelle pour enfant — est documenté par @unicef2020, qui en décrit le principe avant que les textes de 2022 ne l'établissent.
 
@@ -536,13 +539,6 @@ par des sources citables, notamment les accords de prêt et les documents de pro
 **L'allocation des enfants de 6 à 18 ans est d'abord un programme pilote, de 2022 à 2024.** L'article 11 bis de la loi organique ne vise que les enfants de moins de six ans : cette seconde allocation ne procède alors pas d'elle, et elle est connue par un rapport administratif et par les documents de ses bailleurs. Selon le rapport de suivi et d'évaluation de l'Amen social du ministère des Affaires sociales pour 2023, un second programme pilote d'allocation familiale — le premier, de décembre 2020 à janvier 2022, portait sur les enfants de moins de six ans — est engagé en exécution d'une convention signée le 28 septembre 2022 entre le ministère, l'Agence des États-Unis pour le développement international (USAID) et l'UNICEF. Le rapport chiffre cette convention à 191 millions de dinars, dont 188 millions de transferts (allocations familiales et aides scolaires), de septembre 2022 à décembre 2023, pour environ 418 000 enfants ; il compte, en décembre 2023, 422 542 enfants de 6 à 18 ans dans 217 157 familles, pour un crédit de 124,6 millions de dinars financé par ce don [@mas-amen-social-2023]. L'UNICEF, qui finance et accompagne le programme, en date le démarrage de juillet 2022 et rapporte, d'après les données du programme, 111 682 enfants allocataires en juillet 2022 et 422 683 en décembre 2023, à raison de trente dinars par enfant et par mois [@unicef2024allocations618, p. 2 et 20]. Les deux sources donnent ainsi, pour décembre 2023, deux effectifs qui diffèrent de 141 enfants, et deux dates de départ, juillet et septembre 2022.
 
 Pour les enfants des familles qui perçoivent le transfert monétaire, le rapport du ministère pour 2023 indique que le don apporte vingt dinars en plus de dix dinars financés par le budget du ministère — le montant du supplément par enfant (@tbl-amen-supplement) —, soit trente dinars par enfant [@mas-amen-social-2023]. Sur la fin du programme pilote, les sources ne concordent pas : l'UNICEF indique un financement prévu jusqu'en décembre 2023 et prolongé jusqu'en avril 2024 [@unicef2024allocations618, p. 55] ; la Banque mondiale, bailleur du programme, écrit que le pilote est exécuté par l'UNICEF jusqu'en décembre 2024 et que le gouvernement décide en octobre 2025 d'instituer l'allocation [@banquemondiale2026ppiaf000292, § 13 et 28].
-
-<!-- TODO (documentaliste) : les pages du rapport du ministère pour 2023 sur l'allocation des 6 à 18 ans (PDF 36-38, § 6.2 et
-tableau 13) ne sont lues que sur la couche texte arabe, dont l'ordre des mots est perturbé : confirmer à l'image la date de la
-convention, les montants de 191, 188 et 124,6 millions de dinars, les effectifs de décembre 2023 et surtout la phrase des 20 D du don
-et des 10 D du budget (PDF 37), avant toute citation littérale (docs/notes/prestations-sociales-lectures-2026-10-09.md, § 1.1 et § 5).
-La série des enfants de 6 à 18 ans allocataires est tracée à la figure de la montée en charge (`fig-nc-montee-en-charge`), pilote
-et allocation instituée séparés par une rupture de série. -->
 
 **[Le décret n° 2025-426 du 2 octobre 2025](#r-nc-af-2025-decret) l'institue ensuite.** Il crée « une allocation familiale au profit des familles pauvres et à faible revenu au titre des enfants âgés de 6 ans à 18 ans », renvoie ses conditions d'attribution et son montant à un arrêté conjoint des ministres chargés des affaires sociales et des finances, et fait entrer cette institution en vigueur **à compter du 1^er^ janvier 2025**. Il ne vise que la Constitution, et non la loi organique de 2019, dont l'article 11 bis ne connaît que les enfants de moins de six ans. Le décret ne fixe lui-même aucun montant.
 
@@ -634,8 +630,6 @@ le tableau des cinq aides donnera alors l'état en vigueur et sa légende sera �
 | []{#r-nc-ap-2022}décembre 2022 | étape | arrêté conjoint du 8 décembre 2022 [@arrete-2022-12-08-appui-occasionnel, art. 2-4] | abroge l'arrêté de 2020 ; mêmes montants (art. 4) ; transport scolaire et universitaire, appui pour dépenses exceptionnelles de 60 à 200 D, au plus quatre fois par an (art. 2 à 4) |
 | []{#r-nc-ap-2025}[1^er^ septembre 2024]{.insecable} | ajustement | arrêté conjoint du 10 juillet 2025 [@arrete-2025-07-10-appui-occasionnel, art. 1-3] | aide de rentrée scolaire 50 → 100 D par enfant (art. 1) ; champ étendu et cumul interdit (art. 1-2) ; effet au 1^er^ septembre 2024 (art. 3) |
 
-<!-- TODO (documentaliste) : vérifier l'édition française de l'arrêté du 10 juillet 2025 si elle devient disponible ; l'édition arabe du JORT n° 88 de 2025, pp. 2058-2059, fonde la présente lecture. -->
-
 ::::
 
 ### L'aide exceptionnelle de 2021 {#sec-nc-aide-2021}
@@ -650,20 +644,30 @@ le tableau des cinq aides donnera alors l'état en vigueur et sa légende sera �
 
 ### Les aides catégorielles des lois de finances pour 2025 et 2026 {#sec-nc-aides-categorielles}
 
-Les lois de finances pour 2025 et 2026 créent plusieurs aides destinées à des personnes atteintes d'une maladie ou d'un handicap déterminés, dont le régime est ensuite précisé par arrêté. Ces cinq lignes reposent sur le résumé en langue arabe de chaque article ; le texte même des articles reste à établir.
+Les lois de finances pour 2025 et 2026 créent plusieurs aides destinées à des personnes atteintes d'une maladie ou d'un handicap déterminés, dont le régime est ensuite précisé par arrêté conjoint des ministres chargés des affaires sociales, de la santé et des finances. L'aide de 2025 s'applique à compter du [1^er^ janvier 2025]{.insecable}, celles de 2026 à compter du [1^er^ janvier 2026]{.insecable}. La loi de finances pour 2026 est parue en arabe : ses termes sont ici traduits.
 
 | Loi de finances | Article | Bénéficiaires | Montant |
 |---|---|---|---|
-| pour 2025 | art. 26 | patients allergiques au gluten des familles pauvres et à revenu limité inscrites à l'Amen social | 30 D par mois et par personne |
-| pour 2026 | art. 35 | personnes atteintes de *xeroderma pigmentosum* ; patients allergiques au gluten inscrits à l'Amen social | 130 D par mois et par personne |
-| pour 2026 | art. 71 | enfants diabétiques des familles inscrites à l'Amen social | 150 D (lecteur de glycémie sans piqûre) |
-| pour 2026 | art. 81 | enfants atteints de troubles du spectre autistique | 150 D par mois |
-| pour 2026 | art. 96 | orphelins des familles pauvres et à revenu limité : création d'un fonds d'encadrement matériel et social | — |
+| [pour 2025](#r-nc-ac-2025) | art. 26 | patients allergiques au gluten des familles pauvres et à revenu limité inscrites à l'Amen social | 30 D par mois et par personne |
+| [pour 2026](#r-nc-ac-2026) | art. 35 | personnes atteintes de *xeroderma pigmentosum*, sans condition de ressources ; patients allergiques au gluten des familles pauvres et à revenu limité inscrites à l'Amen social | 130 D par mois et par personne |
+| [pour 2026](#r-nc-ac-2026) | art. 71 | enfants diabétiques des familles pauvres et à revenu limité inscrites à l'Amen social | 150 D, sans périodicité énoncée (lecteur de glycémie sans piqûre) |
+| [pour 2026](#r-nc-ac-2026) | art. 81 | enfants atteints de troubles du spectre autistique des familles pauvres et à revenu limité inscrites à l'Amen social | 150 D par mois |
+| [pour 2026](#r-nc-ac-2026) | art. 96 | orphelins des familles démunies et à revenu limité : création d'un fonds d'accompagnement matériel et social, sans prestation définie | — |
 
 : Aides catégorielles créées par les lois de finances pour 2025 et 2026 {#tbl-nc-aides-categorielles}
 
-<!-- TODO (documentaliste) : établir sur les éditions françaises les articles des lois de
-finances 2025 et 2026 dont les cinq lignes du tableau sont dérivées. -->
+:::: {.chronologie-repliable titre="Aides catégorielles des lois de finances pour 2025 et 2026 : articles, pages du Journal officiel et dates d'effet"}
+
+| Date d'effet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-nc-ac-2025}[1^er^ janvier 2025]{.insecable} | loi de finances pour 2025 [@lf-2025, art. 26 et 84] | article 26, page 3427 du texte français : allocation mensuelle de 30 dinars par personne aux patients allergiques au gluten issus de familles pauvres et à faible revenu inscrits à l'Amen social, au titre de la prise en charge des dépenses alimentaires ; modalités fixées par arrêté conjoint. Article 84 : application à compter du 1^er^ janvier 2025 |
+| []{#r-nc-ac-2026}[1^er^ janvier 2026]{.insecable} | loi de finances pour 2026 [@lf-2026, art. 35, 71, 81, 96 et 110] | édition arabe, traduite ici. Article 35, page 4238 : 130 dinars par mois et par personne aux personnes atteintes de *xeroderma pigmentosum*, pour une partie des dépenses de protection, et aux malades allergiques au gluten des familles pauvres et à revenu limité inscrites à l'Amen social, pour une partie des dépenses alimentaires ; l'article 26 de la loi de finances pour 2025 n'est pas abrogé expressément. Article 71, page 4249 : 150 dinars pour l'achat d'un lecteur de glycémie sans piqûre. Article 81, page 4252 : 150 dinars par mois pour une partie des dépenses de réadaptation et d'insertion. Article 96, page 4256 : fonds placé sous la tutelle du ministère chargé de la famille, financé par une contribution des entreprises publiques et privées, à un taux fixé par un texte réglementaire, et par des dons. Article 110, page 4258 : application à compter du 1^er^ janvier 2026, sauf les articles 56, 60, 61 et 62 |
+
+::::
+
+<!-- TODO (documentaliste) : arrêtés conjoints d'application des articles 35, 71 et 81 de la loi de finances pour 2026, non
+cherchés ; articles repris de la couche texte (texte français collecté sur jibaya.tn pour 2025, édition arabe pour 2026), à
+relire à l'image. -->
 
 Un texte d'application est établi : [l'arrêté conjoint du 30 juillet 2025](#r-nc-ap-gluten) fixe les modalités d'octroi de l'allocation pour la prise en charge des dépenses alimentaires des patients allergiques au gluten, et entre en vigueur **à compter du 1^er^ janvier 2025**, soit sept mois avant sa publication.
 
@@ -675,17 +679,18 @@ Un texte d'application est établi : [l'arrêté conjoint du 30 juillet 2025](#r
 
 ### L'autonomisation économique {#sec-nc-autonomisation}
 
-[Le décret n° 2022-715](#r-nc-ap-autonomisation) crée un programme d'autonomisation économique au profit des bénéficiaires de l'Amen social **et des personnes handicapées**, finançant des projets individuels ou collectifs sur des crédits annuels inscrits au budget du ministère, dont **30 % sont réservés aux personnes handicapées**. Une règle d'articulation y figure : le transfert monétaire mensuel est **maintenu pendant un an, renouvelable une fois**, à compter du lancement du projet. Selon le ministère des Affaires sociales, 95 projets sont financés en 2020, 198 en 2021, 220 en 2022 et 307 en 2023 [@mas-amen-social-2023, tabl. 17].
+[Le décret n° 2022-715](#r-nc-ap-autonomisation) crée un programme d'autonomisation économique au profit des bénéficiaires de l'Amen social **et des personnes handicapées**, finançant des projets individuels ou collectifs sur des crédits annuels inscrits au budget du ministère, dont **30 % sont réservés aux personnes handicapées**. Le candidat doit être bénéficiaire de l'Amen social, comme chef de ménage ou comme membre du ménage — condition dont les personnes handicapées sont dispensées —, avoir 18 ans au moins et le niveau de connaissances que demande son projet ; les femmes, les personnes handicapées et les diplômés au chômage sont prioritaires. Une règle d'articulation y figure : le transfert monétaire mensuel est **maintenu pendant un an, renouvelable une fois**, à compter du lancement du projet. Selon le ministère des Affaires sociales, 95 projets sont financés en 2020, 198 en 2021, 220 en 2022 et 307 en 2023 [@mas-amen-social-2023, tabl. 17].
 
 :::: {.chronologie-repliable titre="Programme d'autonomisation économique : texte et articles, décret n° 2022-715"}
 
 | Date | Texte | Ce qu'il établit |
 |---|---|---|
-| []{#r-nc-ap-autonomisation}2022 | décret n° 2022-715 [@decret-2022-715-autonomisation, art. 1-5] | programme au profit des bénéficiaires de l'Amen social et des personnes handicapées ; projets individuels ou collectifs ; crédits annuels au budget du ministère, dont 30 % réservés aux personnes handicapées ; transfert mensuel maintenu un an, renouvelable une fois |
+| []{#r-nc-ap-autonomisation}2022 | décret n° 2022-715 du 20 septembre 2022 [@decret-2022-715-autonomisation, art. 1-6] | programme au profit des bénéficiaires de l'Amen social et des personnes handicapées ; projets individuels ou collectifs, financés par bons d'achat (art. 2) ; crédits annuels au budget du ministère, dont 30 % réservés aux personnes handicapées (art. 4) ; transfert mensuel maintenu un an, renouvelable une fois, à compter du lancement du projet (art. 5) ; conditions du candidat (art. 6) : être bénéficiaire de l'Amen social comme chef de ménage ou l'un de ses membres, sauf pour les personnes handicapées ; avoir 18 ans au moins à la date du dépôt de la demande ; avoir le niveau minimum de connaissances et de compétences requis par le projet ; détenir une carte de handicap valide, pour une personne handicapée ; priorité aux femmes, aux personnes handicapées et aux titulaires de diplômes de l'enseignement supérieur ou de la formation professionnelle en chômage |
 
 ::::
 
-<!-- TODO (documentaliste) : établir les conditions exigées du candidat au programme d'autonomisation économique (décret n° 2022-715). -->
+<!-- TODO (documentaliste) : décret n° 2022-715 (JORT n° 106 du 27 septembre 2022, p. 2702-2704) — articles finaux non lus :
+clause d'effet à vérifier avant d'écrire une date d'effet (dépôt le 27 septembre 2022) ; art. 6 repris de la couche texte. -->
 
 ## Les dispositifs antérieurs à l'Amen social {#sec-nc-anciens}
 
@@ -735,7 +740,7 @@ table("pnafn_allocation",
 
 Les textes de l'aide médicale emploient les listes du programme. [Le décret n° 98-1812](#r-nc-li-1998) prévoit que la première liste des bénéficiaires de la carte de soins gratuits tienne compte des « listes nominatives des bénéficiaires des aides permanentes dans le cadre des programmes nationaux d'aide aux nécessiteux ». [Le décret n° 2012-2521](#r-nc-li-2012) dispose ensuite que la liste des éligibles est élaborée au vu des listes des bénéficiaires et des éligibles aux aides monétaires directes accordées dans le cadre du programme national d'aide aux familles nécessiteuses.
 
-[Le décret n° 2014-1526](#r-nc-li-2014) crée par ailleurs une unité de gestion par objectifs chargée d'instaurer une **banque de données sur les familles nécessiteuses et à revenu limité**, pour une durée de quatre ans en quatre étapes. [La loi organique de 2019](#r-nc-li-2019) institue ensuite un registre de données sur les catégories pauvres et les catégories à revenu limité.
+[Le décret n° 2014-1526](#r-nc-li-2014) crée par ailleurs une unité de gestion par objectifs chargée d'instaurer une **banque de données sur les familles nécessiteuses et à revenu limité**, pour une durée de quatre ans en quatre étapes, [prolongée d'un an en 2018](#r-nc-li-2018). [La loi organique de 2019](#r-nc-li-2019) institue ensuite un registre de données sur les catégories pauvres et les catégories à revenu limité.
 
 :::: {.chronologie-repliable titre="Listes du programme d'aide aux familles nécessiteuses, banque de données et registre : textes et articles, 1998-2019"}
 
@@ -744,10 +749,8 @@ Les textes de l'aide médicale emploient les listes du programme. [Le décret n�
 | []{#r-nc-li-1998}1998 | décret n° 98-1812 [@decret-98-1812-amg1, art. 5] | la première liste des bénéficiaires de la carte de soins gratuits tient compte des listes nominatives des bénéficiaires des aides permanentes |
 | []{#r-nc-li-2012}2012 | décret n° 2012-2521 [@decret-2012-2521-amg1-pnafn, art. 5] | la liste des éligibles est élaborée au vu des listes des bénéficiaires et des éligibles aux aides monétaires directes du programme |
 | []{#r-nc-li-2014}2014 | décret n° 2014-1526 [@decret-2014-1526-banque-donnees, art. 3] | unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité, quatre ans en quatre étapes |
+| []{#r-nc-li-2018}[13 août 2018]{.insecable} | décret gouvernemental n° 2018-626 du 26 juillet 2018 [@decret2018-626, art. 1-2] | la durée de réalisation du projet de banque de données est prolongée d'un an à compter de l'expiration de la période prévue en 2014 (art. 1) ; l'unité de gestion compte six cadres ayant rang de chef de service d'administration centrale (art. 2). Dépôt du *Journal officiel* n° 63 le 8 août 2018 : exécution cinq jours après, jour du dépôt non compté |
 | []{#r-nc-li-2019}2019 | loi organique n° 2019-10 [@loi-amen-social-2019, art. 18 à 22] | registre de données sur les catégories pauvres et les catégories à revenu limité |
-
-<!-- TODO (documentaliste) : lire le décret gouvernemental n° 2018-626 (JORT n° 63 de 2018), qui proroge l'unité de gestion de la
-banque de données et dont seul l'intitulé est connu (docs/notes/prestations-assistance.md, § 1.3). -->
 
 ::::
 
@@ -755,8 +758,41 @@ banque de données et dont seul l'intitulé est connu (docs/notes/prestations-as
 
 Trois aides s'adressent à des publics proches de ceux de l'assistance : les aides aux **personnes âgées**, les aides aux **personnes handicapées** et les **primes complémentaires aux faibles pensions**. Les pensions minimales fixées par les régimes de retraite sont exposées dans le volume [« Retraites »](../retraites/index.html).
 
-<!-- TODO (documentaliste) : établir les séries datées des montants des aides aux personnes âgées
-et aux personnes handicapées à partir des arrêtés correspondants. -->
+Deux de ces aides ont un montant propre, fixé par arrêté : celle que reçoit la famille qui accueille une personne âgée nécessiteuse, et celle que reçoit la famille qui accueille une personne handicapée sans soutien (@tbl-nc-familles-accueil).
+
+| Date d'effet | Famille d'accueil<br>d'une personne âgée<br>(D par mois) | Famille d'accueil<br>d'une personne handicapée<br>(D par mois) |
+|---|---:|---:|
+| [1997](#r-nc-fa-1997) | 90 | |
+| [[29 décembre 2003]{.insecable}](#r-nc-fa-2003) | 100 | |
+| [[15 juin 2006]{.insecable}](#r-nc-fa-2006) | | 150 |
+| [[5 juillet 2010]{.insecable}](#r-nc-fa-2010) | 150 | |
+| [[3 juin 2017]{.insecable}](#r-nc-fa-2017) | | 200 |
+
+: Aides mensuelles aux familles d'accueil d'une personne âgée nécessiteuse et d'une personne handicapée sans soutien : montants fixés par les arrêtés de 1997 à 2017 {#tbl-nc-familles-accueil}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré, avec une colonne en dinars constants, quand ces deux séries
+seront portées en amont (docs/notes/backlog-modele.md). -->
+
+- **La famille d'accueil d'une personne âgée.** L'aide n'est pas due si la personne âgée dispose d'un revenu mensuel régulier supérieur à la moitié du salaire minimum.
+- **Les aides sans montant propre.** L'aide à la personne handicapée nécessiteuse est égale à l'allocation du programme d'aide aux familles nécessiteuses, dont elle suit le montant (@sec-nc-pnafn-allocation) ; l'aide à la personne âgée nécessiteuse restée à son domicile est celle que sert le programme d'aide aux personnes âgées à domicile.
+
+:::: {.chronologie-repliable titre="Aides aux familles d'accueil des personnes âgées et des personnes handicapées, aides aux personnes âgées et handicapées nécessiteuses : arrêtés, articles et montants, 1997-2017"}
+
+| Date d'effet | Texte et article | Ce que dit le texte |
+|---|---|---|
+| []{#r-nc-fa-1997}arrêté du [30 septembre 1997]{.insecable} ; date d'effet non relevée ici | arrêté du ministre des affaires sociales [@arrete-1997-09-30-famille-accueil-personne-agee, art. 2-3] | aide à la famille d'accueil d'une personne âgée nécessiteuse : 90 D par mois (art. 3) ; pas d'aide si la personne âgée dispose d'un revenu mensuel régulier dépassant la moitié du salaire minimum interprofessionnel garanti (art. 2) |
+| []{#r-nc-fa-1997-domicile}arrêté du [30 septembre 1997]{.insecable} ; date d'effet non relevée ici | arrêté du ministre des affaires sociales [@arrete-1997-09-30-personnes-agees, art. 1-2] | aide aux personnes de 60 ans au moins, sans soutien, non hébergées en établissement, sans revenu régulier, pension de retraite ni autre aide sociale (art. 1) ; son montant est celui du programme d'aide aux personnes âgées à domicile (art. 2) |
+| []{#r-nc-fa-2003}[29 décembre 2003]{.insecable} | arrêté du 12 décembre 2003 [@arrete-2003-12-12-famille-accueil-personne-agee, art. 1] | article 3 nouveau de l'arrêté de 1997 : 90 → 100 D par mois. Dépôt du *Journal officiel* n° 102 le 24 décembre 2003 : exécution cinq jours après, jour du dépôt non compté |
+| []{#r-nc-fa-2006}[15 juin 2006]{.insecable} | arrêté conjoint du 1^er^ juin 2006 [@arrete-2006-06-01-personnes-handicapees, art. 1-3] | personne handicapée nécessiteuse : aide égale à celle du programme national d'aide aux familles nécessiteuses (art. 1) ; famille accueillant une personne handicapée sans soutien : 150 D par mois (art. 2), et des aides en nature (art. 3). Dépôt du *Journal officiel* n° 46 le 10 juin 2006 : exécution cinq jours après, jour du dépôt non compté |
+| []{#r-nc-fa-2010}[5 juillet 2010]{.insecable} | arrêté du 24 juin 2010 [@arrete-2010-06-24-famille-accueil-personne-agee, art. 2-4] | famille d'accueil d'une personne âgée : 100 → 150 D par mois (art. 3) ; même condition de revenu (art. 2) ; l'arrêté de 1997 modifié est annulé (art. 4). Dépôt du *Journal officiel* n° 52 le 30 juin 2010 : exécution cinq jours après, jour du dépôt non compté |
+| []{#r-nc-fa-2017}[3 juin 2017]{.insecable} | arrêté conjoint du 28 avril 2017 [@arrete-2017-04-28-personnes-handicapees, art. 1] | article 2 nouveau de l'arrêté de 2006 : 150 → 200 D par mois. Dépôt du *Journal officiel* n° 42 le 29 mai 2017 : exécution cinq jours après, jour du dépôt non compté |
+
+::::
+
+<!-- TODO (documentaliste) : arrêtés postérieurs au 5 juillet 2010 (famille d'accueil d'une personne âgée) et au 3 juin 2017
+(famille accueillant une personne handicapée) non cherchés au-delà des intitulés : les deux séries ne valent pas état du droit
+en 2026. Mention de dépôt du JORT n° 81 du 10 octobre 1997 non relevée. Numéro de la loi d'orientation de 2005 sur les personnes
+handicapées (art. 17) non relevé. Arrêtés repris de la couche texte, à relire à l'image. -->
 
 ## Ce que l'administration constate {#sec-nc-administration}
 
@@ -961,7 +997,7 @@ Trois sources comptent les enfants pour lesquels une allocation est versée : le
 
 : Enfants aidés en décembre 2023, selon la couverture de leur famille [@mas-amen-social-2023, tabl. 13] {#tbl-nc-enfants-couverture}
 
-Les colonnes d'âge ne s'additionnent pas pour donner le total publié, que le rapport imprime à part.
+Le tableau, repris tel que le rapport l'imprime, ne se referme ni en colonnes ni en lignes : les trois lignes totalisent 151 660 enfants de moins de six ans et 381 019 enfants de 6 à 18 ans, quand le total publié en compte 156 418 et 422 542, et la ligne du transfert mensuel additionne 150 872 enfants pour les deux âges, quand son total publié est de 144 023.
 
 ::::
 
@@ -1014,13 +1050,13 @@ Le ciblage du transfert, son effet sur la pauvreté et son coût rapporté au PI
 <!-- TODO (documentaliste) : études citées par ces documents, à récupérer (PDF à ranger dans tunisia-data) avant de les citer pour
 elles-mêmes : CRES et BAD, « Vers l'adoption d'un modèle de ciblage optimal des pauvres par les programmes d'assistance sociale en
 Tunisie », 2017 ; CRES et Banque mondiale, « Identification des ménages pauvres et vulnérables en Tunisie : rapport technique de
-ciblage », 2021 ; CRES, étude sur le secteur informel, 2016 ; Banque mondiale, « Tunisia Economic Monitor, Strengthening Social
+ciblage », rapport entier (le résumé de 16 pages est obtenu et rangé, sans coefficient ni seuil de score) ; CRES, étude sur le secteur informel, 2016 ; Banque mondiale, « Tunisia Economic Monitor, Strengthening Social
 Safety Nets for Increased Efficiency and Equity », automne 2025 ; analyse d'incidence fiscale CEQ de la Banque mondiale et du
-ministère des Finances (enquête de 2021, règles de 2024) ; rapport annuel de l'Amen social pour 2022 ; UNICEF, « Coût, impact et
+ministère des Finances (enquête de 2021, règles de 2024) ; UNICEF, « Coût, impact et
 financement de l'allocation pour enfants en Tunisie », 2019 (source du tableau 6 du PAD4414, répartition par décile de cinq
 interventions, non reprise ici faute d'unité et de méthode). À relire à l'image avant tout usage : PAD4815, figure 4 (transfert et
-salaire minimum, 1987-2021) et figure 7 (couverture de la carte de soins par décile) ; rapport du ministère pour 2023, figure 9 ;
-UNICEF 2024, figure 3. Non repris faute de source et de méthode : la part des allocataires dans les deux premiers déciles, 30 % en
+salaire minimum, 1987-2021) et figure 7 (couverture de la carte de soins par décile) ; UNICEF 2024, figure 3. Rapport du ministère
+pour 2022 : seules les p. 17 à 19 sont lues (chapitres III et IV, p. 20-26, non lus). Non repris faute de source et de méthode : la part des allocataires dans les deux premiers déciles, 30 % en
 2022 et 44 % en 2025 (PPIAF000292, § 54). Non repris non plus, faute de méthode dans les documents qui les rapportent : les
 résultats attribués aux simulations CRES-BAD de 2017 sur le mode de sélection antérieur — 4,6 % de ménages non couverts sur 8,3 %
 à couvrir, soit un taux d'exclusion de 53,1 % ; 40 % des prestations au cinquième le plus pauvre ; pauvreté réduite de 0,8 point
