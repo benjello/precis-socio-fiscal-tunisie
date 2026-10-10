@@ -27,7 +27,7 @@ sont du droit :
 
 - « les paramètres d'assiette de l'IRPP », « le décret n° 95-114 en fixe les paramètres »,
   « le paramètre décisif de l'aide médicale gratuite » — le mot au sens ordinaire ;
-- « le modèle de score » et « le modèle de *scoring* » de l'AMEN social, en arabe
+- « le modèle de score » et « le modèle de *scoring* » de l'Amen social, en arabe
   « أنموذج التنقيط » — un objet juridique, institué par arrêté ;
 - « le modèle français de carrière », quatre fois, en arabe « النموذج الفرنسي » — du droit
   comparé ;

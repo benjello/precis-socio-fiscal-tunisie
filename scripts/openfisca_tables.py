@@ -918,7 +918,7 @@ def tableau_a_la_date(
 ) -> "pd.DataFrame | None":
     """Rendu VERTICAL — un paramètre par ligne — d'un dispositif à millésime unique.
 
-    La contribution aux frais de crèche ou les aides ponctuelles de l'AMEN social n'ont
+    La contribution aux frais de crèche ou les aides ponctuelles de l'Amen social n'ont
     qu'une seule date d'effet : les mettre en colonnes donnerait un tableau d'une ligne et
     de cinq colonnes hétérogènes (un montant, une durée, deux âges, un plafond). La lecture
     par ligne « Paramètre / Valeur / Texte » est celle du chapitre. Elle sert aussi de fiche

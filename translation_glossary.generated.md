@@ -17,7 +17,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Allocation de vieillesse | منحة الشيخوخة |  |
 | Allocation familiale | المنحة العائلية |  |
 | Allocation familiale non contributive | المنحة العائلية غير المساهماتية |  |
-| AMEN social | برنامج الأمان الاجتماعي |  |
+| Amen social | برنامج الأمان الاجتماعي |  |
 | Annuité liquidable | السنة القابلة للتصفية |  |
 | Appui financier occasionnel | الدعم المادي الظرفي |  |
 | Arrêté interne | قرار داخلي |  |
