@@ -110,11 +110,15 @@ PAQUETS = {
         # que quelques cases des assurances et du bâtiment et ignore trois grilles : l'annexe,
         # qui décrit et trace chaque grille, ne pourrait être engendrée. La borne passe à la
         # 0.128, dernière version publiée le 9 octobre 2026, dont les snapshots sont tirés.
+        # La 0.129 ajoute aux assurances les grilles antérieures au 1er juin 1993, dans deux
+        # nœuds à part, frères de `salaire_base` (openfisca-tunisia PR #490) : en deçà,
+        # l'index et les liens de l'annexe les ignoreraient et sortiraient différents de ceux
+        # que la CI régénère. La borne passe à la 0.129, publiée le 10 octobre 2026.
         # La 0.125 verse aussi les paramètres de la fiscalité locale — taxe sur les
         # immeubles bâtis et taxe sur les terrains non bâtis, sous `fiscalite_locale/`
         # (PR #485) : en deçà, les barèmes du chapitre « Les impôts sur les immeubles »
         # du volume « Finances locales » ne pourraient être engendrés.
-        "version_minimale": (0, 128),
+        "version_minimale": (0, 129),
     },
 }
 

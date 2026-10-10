@@ -1,6 +1,6 @@
 # Les conventions collectives, branche par branche {#sec-mt-cc-annexe .domicile-unique}
 
-Cette annexe donne, pour les conventions collectives de branche du textile, du bâtiment et des travaux publics, et des assurances, le salaire de base du bas et du haut de chaque grille à chacune de ses dates d'effet, et mène, pour chaque grille, à sa base législative, qui la donne en entier : toutes ses cases, date par date, avec le texte qui fixe chaque montant. Elle dit aussi, pour chaque branche, comment la convention est née, ce que sont ses grilles et quels avenants les ont révisées. La lecture d'ensemble — la convention cadre de 1973, les trois étages de salaires, l'inventaire des branches et l'écart entre le bas des grilles et le salaire minimum — est au chapitre des conventions collectives (@sec-mt-conventions, @sec-mt-cc-smig).
+Cette annexe donne, pour les conventions collectives de branche du textile, du bâtiment et des travaux publics, et des assurances, le salaire de base du bas et du haut de chaque grille tracée à chacune de ses dates d'effet, et mène, pour chaque grille, à sa base législative, qui la donne en entier : toutes ses cases, date par date, avec le texte qui fixe chaque montant. Elle dit aussi, pour chaque branche, comment la convention est née, ce que sont ses grilles et quels avenants les ont révisées. La lecture d'ensemble — la convention cadre de 1973, les trois étages de salaires, l'inventaire des branches et l'écart entre le bas des grilles et le salaire minimum — est au chapitre des conventions collectives (@sec-mt-conventions, @sec-mt-cc-smig).
 
 ```{python}
 #| echo: false
@@ -29,7 +29,8 @@ print(cc.tableau_branches({
                    "[24 décembre 1975]{.insecable}", "[1^er^ janvier 1975]{.insecable}"),
 }))
 print("\n: Les conventions de branche de l'annexe : signature, agrément, date d'effet, "
-      "grilles et cases tracées de chaque grille, avec leur période {#tbl-cc-annexe-branches "
+      "grilles et, pour chacune, cases tracées avec leur période ou, pour une grille sans "
+      "courbe, dates d'effet et période {#tbl-cc-annexe-branches "
       "tbl-colwidths=\"[16,27,24,33]\"}\n")
 ```
 
@@ -44,10 +45,10 @@ print("\n: Ce que la base législative donne de chaque grille : lignes (catégor
       "{#tbl-cc-annexe-grilles tbl-colwidths=\"[15,30,8,9,7,10,12,9]\"}\n")
 ```
 
-- **Chaque grille a sa figure, qui en trace le bas et le haut.** Une grille compte une case par ligne — catégorie, échelle ou emploi — et par échelon. Sa figure en suit, à chaque date d'effet, la case la plus basse et la case la plus haute de sa dernière date publiée. Une branche qui a une grille horaire et une grille mensuelle a donc deux figures.
+- **Une figure par grille, qui en trace le bas et le haut — sauf pour une grille sans courbe.** Une grille compte une case par ligne — catégorie, échelle ou emploi — et par échelon. Sa figure en suit, à chaque date d'effet, la case la plus basse et la case la plus haute de sa dernière date publiée. Une branche qui a une grille horaire et une grille mensuelle a donc deux figures. Une grille close à laquelle une autre a succédé, ou qui a moins de trois dates d'effet, n'a pas de courbe : elle est donnée sous les figures de sa branche, avec ses dates d'effet, sa période et sa base législative. C'est le cas des grilles des assurances antérieures au 1^er^ juin 1993 (@sec-mt-cc-annexe-assurances-avant-1993).
 - **Chaque figure a deux vues.** En dinars courants, une marche par date d'effet. En dinars constants — ceux de la dernière année dont l'indice des prix à la consommation est publié —, un point par année : la moyenne des montants en vigueur dans l'année, rapportée aux prix de l'année de référence, selon la règle suivie pour le salaire minimum (@fig-mt-sm-evolution). Cette seconde vue dit ce que la grille permet d'acheter : entre deux grilles, la courbe descend au rythme des prix.
-- **Une valeur vaut de sa date d'effet à la veille de la suivante.** La date d'effet est celle que la grille énonce elle-même ; elle précède souvent de plusieurs mois la signature de l'avenant et l'arrêté qui l'agrée.
-- **Ce sont des salaires de base.** Les indemnités et les primes de chaque convention s'y ajoutent. Les séries commencent à la première grille qui comprend l'[indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire) : les grilles antérieures ne mesurent pas la même grandeur.
+- **Une valeur vaut de sa date d'effet à la veille de la suivante.** La date d'effet est celle que la grille énonce elle-même ; elle précède souvent de plusieurs mois la signature de l'avenant et l'arrêté qui l'agrée. Pour les grilles des assurances antérieures au 1^er^ juin 1993, il n'est pas établi que chaque valeur ait valu jusqu'à la grille suivante (@sec-mt-cc-annexe-assurances-avant-1993).
+- **Ce sont des salaires de base.** Les indemnités et les primes de chaque convention s'y ajoutent. Les courbes commencent à la première grille qui comprend l'[indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire) : les grilles antérieures ne mesurent pas la même grandeur. Celles des assurances, de 1975 à 1992, sont données à part, sans courbe (@sec-mt-cc-annexe-assurances-avant-1993) ; celles du textile et du bâtiment et des travaux publics sont au chapitre des conventions collectives (@tbl-mt-cc-grilles-hors-series).
 - **« Non publiée » n'est ni zéro ni la valeur précédente.** [Le décret n° 2026-68](#r-cc-annexe-2026-68) relève de 5 %, à compter du 1^er^ janvier 2026, les [salaires de base](#g-salaire-de-base-conventionnel) de tous les échelons des dernières grilles annexées aux conventions sectorielles. Pour le bâtiment et pour les assurances, la grille qui en résulte n'est pas donnée ici : la dernière grille n'est pas prolongée au-delà du 31 décembre 2025, et le trait de la figure s'arrête au 1^er^ janvier 2026, sur un cercle creux qui porte « non publiée » (@sec-mt-cc-2026). Pour les assurances, la façon dont ce décret s'applique à la branche n'est pas établie ici.
 - **Sous chaque figure, la base législative donne la grille entière.** Un lien mène à la vue en tableau de la grille : toutes ses cases, à toutes leurs dates d'effet, avec le texte et la référence de chaque montant. Une grille trop grande pour une seule vue s'ouvre ligne par ligne — une catégorie ou une échelle à la fois. L'onglet « Données » de la figure donne, année par année, les cases tracées : leur moyenne en dinars courants, l'indice des prix et le montant en dinars constants.
 
@@ -341,14 +342,14 @@ La convention collective nationale des assurances fixe, depuis 1975, les salaire
 - **Champ.** Elle vaut pour l'ensemble du personnel du secteur des assurances ; [la convention révisée de 1983](#r-cc-assurances-1983) en exclut les agents généraux d'assurance et leurs employés, les concierges des immeubles de rapport et les agents contractuels.
 - **Intitulé.** [L'arrêté du 24 mai 2007](#r-cc-assurances-2007) remplace l'appellation « nationale » par « sectorielle ».
 
-### La grille {#sec-mt-cc-annexe-assurances-grille}
+### Les grilles {#sec-mt-cc-annexe-assurances-grille}
 
-La convention n'a qu'une grille de salaires, mensuelle, par échelle et par échelon.
+La convention a une grille de salaires mensuelle, par échelle et par échelon, qui court de 1975 à 2021. Ses grilles successives ne mesurent pas toutes la même grandeur, et sont données ici séparément : celles du 1^er^ juin 1993 au 1^er^ juin 2021, qui comprennent l'[indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire), sont tracées (@sec-mt-cc-annexe-assurances-evolution) ; celles de 1975 à 1992, qui ne la comprennent pas ou ne disent pas la comprendre, sont données à part, sans courbe, comme la première des deux grilles qui coexistent au 1^er^ juin 1990, celle des entreprises ayant appliqué l'avenant n° 1 (@sec-mt-cc-annexe-assurances-avant-1993).
 
 - **Des échelles numérotées**, de 1 à 21, depuis [la convention de 1975](#r-cc-assurances-texte). Elles sont regroupées en catégories, de A à G en 1975, puis, [à compter du 1^er^ janvier 1983](#r-cc-assurances-1983), de V à I : V, agents de services et assimilés (échelles 1 à 3 et hors classe) ; IV, agents d'exécution (échelles 4 à 9) ; III, personnel d'encadrement (10 à 12) ; II, cadres supérieurs (13 à 15) ; I, cadres de direction (16 à 21). Depuis cette date, la grille porte en outre, entre l'échelle 3 et l'échelle 4, une ligne « Exceptionnel ».
-- **Des échelons d'ancienneté dans chaque échelle** : [l'avenant n° 5](#r-cc-assurances-av5) crée les treizième et quatorzième échelons au 1^er^ juin 1999, le quatorzième étant atteint au terme de trente-trois ans de service.
+- **Des échelons d'ancienneté dans chaque échelle**, douze depuis [la convention de 1975](#r-cc-assurances-texte) : [l'avenant n° 5](#r-cc-assurances-av5) crée les treizième et quatorzième échelons au 1^er^ juin 1999, le quatorzième étant atteint au terme de trente-trois ans de service.
 - **Unité et durée du travail.** Le salaire est mensuel, pour 40 heures par semaine, soit 2 080 heures par an ([article 30 de la convention révisée](#r-cc-assurances-1983)).
-- **Ce que le salaire de base comprend.** Depuis la grille du 1^er^ juin 1993, celle de [l'avenant n° 3](#r-cc-assurances-av3), il comprend l'indemnité complémentaire provisoire : c'est la première grille des séries de cette section (@sec-mt-cc-annexe-assurances-evolution). Il ne comprend ni l'indemnité de transport, ni les treizième et quatorzième mois, ni la prime de rendement, que la convention sert en sus.
+- **Ce que le salaire de base comprend.** Depuis la grille du 1^er^ juin 1993, celle de [l'avenant n° 3](#r-cc-assurances-av3), il comprend l'indemnité complémentaire provisoire : c'est la première grille tracée de cette section (@sec-mt-cc-annexe-assurances-evolution). Aucune grille antérieure ne dit la comprendre (@sec-mt-cc-annexe-assurances-avant-1993). Il ne comprend ni l'indemnité de transport, ni les treizième et quatorzième mois, ni la prime de rendement, que la convention sert en sus.
 
 ```{python}
 #| echo: false
@@ -358,7 +359,7 @@ print(cc.formes_branche("assurances"))
 
 ### Le bas et le haut de la grille, à chaque date d'effet {#sec-mt-cc-annexe-assurances-evolution}
 
-La figure suit l'échelle 1, échelon 1, qui est le salaire le plus bas de la grille, et le quatorzième échelon de l'échelle 21, qui en est le plus élevé depuis sa création, le 1^er^ juin 1999 (@fig-mt-cc-annexe-assurances). Jusqu'au 31 mai 1999, le salaire le plus élevé est le douzième échelon de l'échelle 21 : il se lit, comme le treizième, dans la base législative de la grille, sous la figure, à la ligne de l'échelle 21.
+La figure trace les grilles du 1^er^ juin 1993 au 1^er^ juin 2021, qui comprennent toutes l'indemnité complémentaire provisoire. Elle suit l'échelle 1, échelon 1, qui est le salaire le plus bas de la grille, et le quatorzième échelon de l'échelle 21, qui en est le plus élevé depuis sa création, le 1^er^ juin 1999 (@fig-mt-cc-annexe-assurances). Jusqu'au 31 mai 1999, le salaire le plus élevé est le douzième échelon de l'échelle 21 : il se lit, comme le treizième, dans la base législative de la grille, sous la figure, à la ligne de l'échelle 21.
 
 - **La grille du 1^er^ juin 2014 paraît à part de son avenant** : l'avenant n° 11 est publié sans elle, et [elle l'est au numéro suivant du *Journal officiel*, celui du 13 janvier 2015](#r-cc-assurances-grille-2014).
 - **À compter du 1^er^ janvier 2026, le montant n'est pas publié** (@sec-mt-cc-annexe-lecture).
@@ -393,6 +394,23 @@ cc.figure(
 #| echo: false
 #| output: asis
 print(cc.base_legislative("assurances", "salaire_base"))
+```
+
+### Les grilles antérieures au 1^er^ juin 1993 {#sec-mt-cc-annexe-assurances-avant-1993}
+
+Les grilles de 1975 à 1992 ne mesurent pas la même grandeur que celles de 1993 à 2021 : elles sont données à part, sans courbe, et ne se comparent pas aux grilles tracées sans cette réserve. Leur base législative, à la fin de cette section, les donne en entier, ligne par ligne.
+
+- **Ce qui les sépare des grilles tracées : l'[indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire).** Les grilles du 1^er^ juin 1993 et les suivantes la comprennent ([avenant n° 3](#r-cc-assurances-av3)). Aucune grille antérieure ne dit la comprendre : une note de bas de grille l'exclut de celle du 1^er^ janvier 1989 ([avenant n° 1](#r-cc-assurances-av1)) et de celles des 1^er^ juin 1990, 1991 et 1992 ([avenant n° 2](#r-cc-assurances-av2)) ; celles du [1^er^ janvier 1975](#r-cc-assurances-texte) et du [1^er^ janvier 1983](#r-cc-assurances-1983) ne la mentionnent pas.
+- **Ces grilles ne forment pas une suite continue.** Une valeur se lit de sa date d'effet à la veille de la date suivante, sans qu'il soit établi qu'elle ait valu tout ce temps : aucune grille n'est donnée ici entre celle du 1^er^ janvier 1975 et celle du 1^er^ janvier 1983.
+- **Au 1^er^ juin 1990, deux grilles coexistent.** [L'avenant n° 2](#r-cc-assurances-av2) en publie deux à cette date : la première s'applique aux entreprises qui ont appliqué l'avenant n° 1 ; la seconde, à celles qui ont servi à leur personnel les augmentations de salaires prévues en 1988 par deux circulaires du Premier ministre et par un décret. La série de 1975 à 1992 porte, à cette date, la seconde, que prolongent les grilles des 1^er^ juin 1991 et 1992, applicables à toutes les entreprises ; la première est donnée à part, à cette seule date.
+- **Entre 1989 et 1990, la série change d'entreprises.** La grille du 1^er^ janvier 1989 est celle de l'avenant n° 1, dont [l'arrêté d'agrément](#r-cc-assurances-av1) écarte les employeurs et les travailleurs visés par ces circulaires et ce décret. Du 1^er^ janvier 1989 au 1^er^ juin 1990, la série passe donc des entreprises qui appliquent l'avenant n° 1 à celles qui ne l'appliquent pas.
+- **Les cases illisibles sur le fascicule sont vides**, sans valeur déduite ni reportée ; leur nombre et les grilles où elles se trouvent sont dits en tête de l'annexe (@sec-mt-cc-annexe-lecture).
+
+<!-- TODO (documentaliste) : grilles des assurances entre le 1er janvier 1975 et le 1er janvier 1983, et protocole d'accord du 8 juin 1984 relatif à l'augmentation des salaires, que vise l'avenant n° 1 : à lire ; voir docs/notes/backlog-precis.md. -->
+
+```{python}
+#| echo: false
+#| output: asis
 print(cc.autres_grilles("assurances"))
 ```
 
@@ -400,7 +418,7 @@ print(cc.autres_grilles("assurances"))
 
 La chaîne des avenants — arrêtés d'agrément, pages du *Journal officiel*, objet et dates d'effet de chacun — est donnée dans le volume [« Les rémunérations dans le secteur public »](../remunerations_publiques/_regime_marche_controle.html#sec-marche-controle-assurances). Le tableau replié donne les textes cités dans cette section.
 
-:::: {.chronologie-repliable titre="Convention collective des assurances : arrêtés d'agrément de 1975 et de 1983, avenants qui changent la structure de la grille et grille de 2014 publiée à part, 1975-2015"}
+:::: {.chronologie-repliable titre="Convention collective des assurances : arrêtés d'agrément de 1975 et de 1983, avenants n° 1 et n° 2 et leurs grilles de 1989 à 1992, avenants qui changent la structure de la grille et grille de 2014 publiée à part, 1975-2015"}
 
 | Date de l'arrêté | Texte | *Journal officiel* | Ce qu'il fixe |
 |---|---|---|---|
@@ -408,11 +426,13 @@ La chaîne des avenants — arrêtés d'agrément, pages du *Journal officiel*, 
 | []{#r-cc-assurances-texte}[24 décembre 1975]{.insecable} | convention signée le [24 juillet 1975]{.insecable}, texte et grilles [@cc-assurances-texte-1975] | n° 7 du [30 janvier 1976]{.insecable}, p. 270-279 | 21 échelles en 7 catégories, 12 échelons ; salaire mensuel |
 | []{#r-cc-assurances-effet}[24 décembre 1975]{.insecable} | convention, article 70 [@cc-assurances-texte-1975, art. 70] | même numéro | entrée en vigueur à compter du [1^er^ janvier 1975]{.insecable} |
 | []{#r-cc-assurances-1983}[23 août 1983]{.insecable} | arrêté d'agrément de la convention révisée [@cc-assurances-1983] | n° 74 des 15 et [18 novembre 1983]{.insecable}, p. 2935-2947 | 7 catégories → 5 catégories ; champ : agents généraux, concierges des immeubles de rapport et agents contractuels exclus ; 40 heures par semaine (art. 30) ; effet pécuniaire au [1^er^ janvier 1983]{.insecable} |
+| []{#r-cc-assurances-av1}[22 mars 1989]{.insecable} | arrêté d'agrément de l'avenant n° 1 [@cc-assurances-avenant1-1989] | n° 21 du [24 mars 1989]{.insecable}, p. 569-570 | grille à compter du [1^er^ janvier 1989]{.insecable}, dont une note exclut l'indemnité complémentaire provisoire (p. 570) ; l'arrêté (art. 3) écarte de l'avenant les employeurs et les travailleurs visés par les circulaires du Premier ministre n° 31 et n° 84 des [1^er^ avril]{.insecable} et [9 octobre 1988]{.insecable} et par le décret n° 88-1889 du [10 novembre 1988]{.insecable} |
+| []{#r-cc-assurances-av2}[9 novembre 1990]{.insecable} | arrêté d'agrément de l'avenant n° 2 [@cc-assurances-avenant2-1990] | n° 74 du [16 novembre 1990]{.insecable}, p. 1718-1722 | grilles hors indemnité complémentaire provisoire : n° 1 et n° 2 à compter du [1^er^ juin 1990]{.insecable} — la n° 1 pour les entreprises ayant appliqué l'avenant n° 1, la n° 2 pour celles qui ont servi les augmentations prévues par ces circulaires et ce décret —, n° 3 à compter du [1^er^ juin 1991]{.insecable} et n° 4 à compter du [1^er^ juin 1992]{.insecable}, pour toutes les entreprises |
 | []{#r-cc-assurances-av3}[7 septembre 1993]{.insecable} | arrêté d'agrément de l'avenant n° 3 [@cc-assurances-avenant3-1993] | n° 72 du [24 septembre 1993]{.insecable}, p. 1597-1602 | grilles hors indemnité complémentaire provisoire → grilles qui la comprennent, à compter du [1^er^ juin 1993]{.insecable} |
 | []{#r-cc-assurances-av5}[9 juin 1999]{.insecable} | arrêté d'agrément de l'avenant n° 5 [@cc-assurances-avenant5-1999] | n° 48 du [15 juin 1999]{.insecable}, édition arabe, p. 1179-1183 | 12 échelons → 14 échelons, à compter du [1^er^ juin 1999]{.insecable} |
 | []{#r-cc-assurances-2007}[24 mai 2007]{.insecable} | arrêté d'agrément de l'avenant n° 7 [@cc-assurances-avenant7-2007] | n° 44 du [1^er^ juin 2007]{.insecable}, édition arabe, p. 1920-1925 | convention « nationale » → convention « sectorielle » |
 | []{#r-cc-assurances-grille-2014}[16 décembre 2014]{.insecable} | grille des salaires de l'avenant n° 11, agréé à cette date [@cc-assurances-avenant11-grille-2015, p. 151] | n° 4 du [13 janvier 2015]{.insecable}, édition arabe, p. 151 | grille des salaires à compter du [1^er^ juin 2014]{.insecable} : 21 échelles, 14 échelons ; l'avenant n° 11 paraît sans elle au n° 3 du [9 janvier 2015]{.insecable} [@cc-assurances-avenants-10-11] |
 
-: Convention collective des assurances : les textes qui la créent, ceux qui changent la structure de sa grille et la grille de 2014, 1975-2015 {#tbl-cc-assurances-textes}
+: Convention collective des assurances : les textes qui la créent, les avenants n° 1 et n° 2 et leurs grilles, les textes qui changent la structure de la grille et la grille de 2014, 1975-2015 {#tbl-cc-assurances-textes}
 
 ::::

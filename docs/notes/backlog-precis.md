@@ -1503,13 +1503,17 @@ grille, et écrit `tables/cc_index.yml`, `tables/cc_<branche>_grilles.liens.yml`
 nœud le plus profond commun aux cases de même grandeur et de même unité de la branche (`grilles`).
 La création de chaque convention et la suite des avenants viennent des notes, non des paramètres.
 
-**État au 9 octobre 2026, version 0.128 du modèle** (borne `VERSION_MINIMALE` relevée à 0.128) :
-trois branches, cinq grilles, toutes tracées — textile horaire (7 lignes × 21 colonnes, 147
-cases) et mensuelle (18 × 21, 378) ; bâtiment, personnel occasionnel (9 lignes, puis 10 depuis
-2008 ; 11 cases en tout) et personnel
-administratif et technique (19 × 11, 209) ; assurances (22 × 14, 308) —, soit 1 053 cases,
-29 148 valeurs et **144 cases vides** (illisibles sur le fascicule : 127 dans la grille mensuelle
-du textile, 16 dans la grille mensuelle du bâtiment, 1 dans les assurances). L'index ne liste
+**État au 10 octobre 2026, version 0.129 du modèle** (borne `VERSION_MINIMALE` relevée à 0.129,
+publiée le 10 octobre 2026) : trois branches, sept grilles, dont cinq tracées — textile horaire
+(7 lignes × 21 colonnes, 147 cases) et mensuelle (18 × 21, 378) ; bâtiment, personnel occasionnel
+(9 lignes, puis 10 depuis 2008 ; 11 cases en tout) et personnel administratif et technique
+(19 × 11, 209) ; assurances, grilles de 1993 à 2021 (22 × 14, 308) — et deux sans courbe, aux
+assurances : grilles de 1975 à 1992 (`salaire_base_avant_1993`, 22 × 12, 264 cases, 6 dates,
+motif « antérieure ») et grille n° 1 du 1er juin 1990 (`salaire_base_avant_1993_grille_1_de_1990`,
+22 × 12, 264 cases, 1 date, motif « peu de dates »). Soit 1 581 cases, 30 935 valeurs et
+**193 cases vides** (illisibles sur le fascicule : 127 dans la grille mensuelle du textile, 16
+dans la grille mensuelle du bâtiment, 1 dans les assurances de 1993 à 2021, 49 dans les
+assurances de 1975 à 1992). Ces comptes sont ceux de `cc_index.yml`. L'index ne liste
 plus les cases une à une : il porte, par grille, ses comptes, sa période et les fiches de sa case
 du bas et de sa case du haut ; la série d'une grille ne porte que ces deux cases.
 
@@ -1530,25 +1534,33 @@ Règles écrites dans le générateur (fonctions pures, testées dans
   l'annexe la mentionne, avec sa période et son lien (`autres_grilles`) ;
 - **la vue en tableau d'un nœud n'existe sur le site qu'en deçà de 200 cases**
   (`PLAFOND_VUE_TABLEAU`) : l'adresse `…/table/` des trois grandes grilles répond 404. Elles ont
-  un lien par ligne (`liens_grille`) — 18, 19 et 22 liens —, rendus en une ligne sous la figure.
+  un lien par ligne (`liens_grille`) — 18, 19 et 22 liens, et 22 pour chacune des deux grilles
+  des assurances antérieures à 1993 (264 cases) —, rendus en une ligne sous la figure.
 
 Ce qui lui manque :
 
-- **régénérer quand la 0.129 du modèle sera publiée** (openfisca-tunisia, PR n° 490, ouverte le
-  9 octobre 2026) : elle ajoute aux assurances deux nœuds frères de `salaire_base` —
-  `salaire_base_avant_1993` (1975-1992, clos au 1er juin 1993) et
-  `salaire_base_avant_1993_grille_1_de_1990` (une seule date). Le générateur y est prêt, et un
-  test en imite la forme : la première sort « antérieure », la seconde « peu de dates », aucune
-  ne fournit de bas ni de haut, et `cc.autres_grilles("assurances")` — déjà appelé dans l'annexe —
-  les mentionnera avec leur période et leurs liens (un par ligne : 264 cases chacune). À faire
-  alors : relever la borne, régénérer, relire le libellé de leurs liens (il vient des
-  `short_label` des deux nœuds) et écrire dans la section des assurances ce que sont ces grilles
-  (hors indemnité complémentaire provisoire) ; le tableau `@tbl-mt-cc-grilles-hors-series` du
-  chapitre pourra alors renvoyer à l'annexe pour les assurances ;
-- **les 144 cases vides** : à relire sur un meilleur exemplaire des fascicules — textile mensuel,
+- **assurances, grilles antérieures au 1er juin 1993 — versées le 10 octobre 2026** (modèle
+  0.129, PR n° 490) : section `#sec-mt-cc-annexe-assurances-avant-1993` de l'annexe, sans
+  courbe, mentionnées par `cc.autres_grilles` avec leur période et un lien par ligne (22 liens
+  par grille, 44 adresses). Restent : **aucune grille entre le 1er janvier 1975 et le 1er janvier
+  1983** et le **protocole d'accord du 8 juin 1984** relatif à l'augmentation des salaires, que
+  vise l'avenant n° 1 — restent à obtenir (documentaliste ; présence au corpus non vérifiée ; TODO dans l'annexe, sans fiche de `docs/recherches.yml` : aucune recherche
+  n'a été menée) ; la série change d'entreprises entre le 1er janvier 1989 (avenant n° 1) et le
+  1er juin 1990 (grille n° 2), ce que l'annexe dit sans le mesurer ; deux cases à réserve
+  (échelle 16, échelon 12, de 1990 à 1992 : éditions divergentes ; échelle 4, échelon 9, 1975 :
+  rectificatif de 1976) ne sont dites que dans la base législative ; le libellé des deux
+  grilles vient des `short_label` du modèle, inégaux (« Salaire de base avant le 1er juin
+  1993 » ne dit pas « hors indemnité complémentaire provisoire », l'autre le dit ; « 1er » sans
+  exposant) — à harmoniser en amont ; le tableau `@tbl-mt-cc-grilles-hors-series` du chapitre
+  ne donne que le textile et le bâtiment : l'annexe y renvoie pour eux, et le chapitre peut
+  renvoyer à l'annexe pour les assurances ; `index.qmd` du volume dit encore que l'annexe suit
+  le bas et le haut « de chaque grille » ; `cc.forme_grille` (une seule date ; dernière forme
+  d'une grille sans courbe) n'a pas de test — le module `figures/conventions.py` n'en a aucun ;
+- **les 193 cases vides** : à relire sur un meilleur exemplaire des fascicules — textile mensuel,
   grilles de 1994 (1 case), 1999 (42), 2000 (30), 2002, 2003 et 2004 (18 chacune, l'échelon 18
   des dix-huit lignes) ; bâtiment mensuel, grilles de 1996 (7), 1998 (5), 2001, 2002, 2003 et
-  2004 (1 chacune) ; assurances, grille de 1996 (1). Le compte de l'annexe est calculé : il
+  2004 (1 chacune) ; assurances, grille de 1996 (1), grilles de 1983 (1) et de 1989 (48, télécopie dégradée que
+  reproduisent les deux éditions). Le compte de l'annexe est calculé : il
   baissera à la régénération quand une case sera lue en amont ;
 - **la vue en tableau des grandes grilles** : le site de la base législative ne rend pas en un
   tableau un nœud de 200 cases ou plus ; si ce plafond est levé en amont (visualiseur des
@@ -1591,7 +1603,8 @@ Ce qui lui manque :
   à faire à la livraison de sa traduction. L'index et les liens arabes sont engendrés, mentions
   en arabe, mais les noms des branches, des grilles et des cases y restent en français (les
   `short_label` du modèle n'existent qu'en français) : à trancher avec le relecteur de l'arabe,
-  comme l'intitulé arabe du renvoi (`INTRO_BASE` de `figures/conventions.py`,
+  comme l'en-tête arabe de la quatrième colonne du tableau d'ouverture (« دون منحنى، تواريخ
+  المفعول », posé le 10 octobre 2026), l'intitulé arabe du renvoi (`INTRO_BASE` de `figures/conventions.py`,
   `cases` de `MOTS` dans le générateur) et les mentions arabes posées le 9 octobre 2026 avec les
   grilles entières (`MOTS` de `figures/conventions.py` : en-têtes des deux tableaux, « سطرًا
   بسطر », « الخانات الفارغة » ; `cases_ligne` du générateur) ;
@@ -2195,8 +2208,21 @@ Plans : `finances-locales-impots-plan-architecte.md`,
   subventions au chapitre 9. Seuls les trois barèmes des taxes sur les immeubles sont engendrés.
 - **Figure des barèmes des taxes sur les immeubles**, en dinars courants et en dinars de 2025 :
   devenue faisable (séries complètes de 1997 à 2017), non faite.
-- **Lectures en attente** : loi organique n° 91-24 ; loi organique n° 85-43, p. 643-644, et
-  sens de « paragraphes 2 - 10 et 12 » ; décret-loi n° 2026-4, art. 14 à 27, 35 à 48 et 100 à
+- **Approbation des délibérations communales, 1975-2018** (lecture du 10 octobre 2026,
+  `docs/notes/finances-locales-approbation-1975-2018.md`), portée aux chapitres 3, 4 et 8.
+  **Établi** : tarifs approuvés par le gouverneur de 1975 à 1995 (ou le délégué jusqu'en 1985),
+  sans approbation propre de 1995 à 2018, sauf la redevance des déchets non ménagers ; budget
+  approuvé jusqu'en 2018 ; emprunts approuvés par les ministres jusqu'en 1995, et autorisés
+  depuis 1985 par l'art. 66 du code de la comptabilité publique (loi n° 85-47) ; loi organique
+  n° 91-24 lue (art. 48 et 90 seuls) ; « 2 - 10 et 12 » = 2, 10 et 12. **Reste, lisible dans le
+  corpus (image ou OCR)** : art. 66 d'origine (loi n° 73-81, JORT n° 51 de 1973) et ses
+  modificatifs après 1985 (fiche `r-fl-ccp-art66-modificatifs`, terme arabe à jouer, loi
+  n° 85-109 à ouvrir) ; décret n° 90-1960, p. 1849-1853 ; décrets n° 76-826, n° 95-1121 et
+  n° 58-234 ; loi n° 75-33 hors p. 1058-1060 et durée des baux de l'art. 43, 3e tiret ; loi
+  organique n° 2008-57 ; date de dépôt du JORT n° 59 de 1995 (date d'effet de la loi organique
+  n° 95-68) ; numéros des art. 43, 44 et 46 après 2006. Le motif du retrait de 1995 n'est dit
+  par aucun exposé ni rubrique.
+- **Lectures en attente** : décret-loi n° 2026-4, art. 14 à 27, 35 à 48 et 100 à
   131, et art. 57 à 99 à relever pour les budgets ; édition française du code de 2018 et du
   décret-loi de 2026, **à obtenir**.
 - **2012** : décrets de dissolution, de nomination et de prorogation à lire ; aucun total pour
@@ -2365,9 +2391,14 @@ la fiche a sa seconde ancre, et `#sec-fl-hist-carte` le dit en une proposition a
   (`r-fl-hist-2019-instance`, `-2020-instance`, gardées parce que le premier plan les lie) ; le
   registre de 1985-2008 ne dit plus « non établi » pour l'autorité d'approbation d'avant 1985 ni
   pour l'article 42 de 1975, lus à l'image le 5 octobre (p. 1058) et portés au registre
-  `tbl-fl-comp-1975` : il y renvoie. **À trancher** : l'article 43 de 1975 réserve aux ministres
-  les § 2, 9, 10 et 12 de l'article 42 (note du 5 octobre), celui de 1985 les « paragraphes 2 -
-  10 et 12 » ; l'article 42 entre 1975 et 1995 (loi n° 91-24) n'est pas établi ;
+  `tbl-fl-comp-1975` : il y renvoie. **Tranché le 10 octobre 2026** : l'article 43 de 1985
+  réserve aux ministres les paragraphes 2, 10 et 12 (édition arabe), le 9 passant au
+  gouverneur ; l'article 42 n'est modifié ni en 1985 ni en 1991 ; le premier plan et le registre
+  disent ce qui sort de la liste en 1995 (emprunts, taxes et droits, foires et marchés, dons et
+  legs grevés, acquisitions) ; ligne de 1991 portée au registre (`r-fl-hist-1991`), avec son avant →
+  après sur le plein temps, depuis la rédaction de 1985 de l'art. 48 ; guillemets retirés des
+  lignes de 1995 et de 2006 (couche texte). **À trancher** : la portée de la ligne de 1995,
+  laissée à « ajustement » ;
 - 2012 : décrets n° 2012-910, 2012-1122, 2012-2007, 2012-2536 à 2012-2538, 2012-2771, 2012-2885,
   2012-2895 et 2012-2943 à lire ; aucun total pour l'année ; décrets de 2012 à 2017 à lire avant
   de dire ce qui relie les prorogations aux élections de 2018 (le chapitre n'en dit rien) ;
@@ -2377,9 +2408,9 @@ la fiche a sa seconde ancre, et `#sec-fl-hist-carte` le dit en une proposition a
   10 octobre, dont le résumé dit « neuf » : **à trancher** ;
 - source de la durée d'un an des délégations spéciales : art. 161 du code électoral (JORT n° 30
   de 2009), fascicule sans couche texte utile, **OCR ou lecture à l'image** ;
-- loi organique n° 91-24 (JORT n° 30 de 1991, fascicule scanné, **OCR**, page à vérifier) ; loi
-  organique n° 85-43, p. 643-644, et sens de « paragraphes 2 - 10 et 12 » (édition arabe) ;
-  art. 48 de la loi organique des communes dans sa rédaction de 1975 ;
+- loi organique n° 85-43 : date d'adoption à relire dans l'édition française ;
+  art. 48 de la loi organique des communes dans sa rédaction de 1975 ; date d'effet de la loi
+  organique n° 95-68 ;
   clauses d'effet des lois organiques de 1985 à 2008 ; loi n° 75-38 (intitulé seul, sans clé) ;
 - loi municipale de 1957 : clause finale (fascicule du 15 mars 1957 absent du corpus, sur
   pist.tn) ; décrets d'avant 1956, **à obtenir** ;
@@ -2447,11 +2478,18 @@ publié et non entré en vigueur (art. 1, 12, 29, 30, 55, 56, 136 et 139). Fiche
 - **Approbation des délibérations, 1985, 1995 et 2006** : portées le 10 octobre 2026 au registre
   du contrôle des actes (`tbl-fl-comp-controle-articles`, lignes `r-fl-comp-controle-1985`,
   `-1995`, `-2006`), une ligne par loi, avec renvoi au registre du chapitre d'histoire
-  (`tbl-fl-hist-modifs-communes`) qui en porte le texte. **États de lecture** : n° 85-43, p. 642
-  lue à l'image, p. 643-644 non lues, « paragraphes 2 - 10 et 12 » cité tel qu'imprimé ;
-  n° 95-68 et n° 2006-48, couche texte — repris sans guillemets ici, alors que le registre du
-  chapitre d'histoire en cite des passages entre guillemets : **à relire à l'image, ou
-  guillemets à retirer** ; n° 91-24 non lue (fascicule scanné, **OCR**).
+  (`tbl-fl-hist-modifs-communes`) qui en porte le texte. Complétées le 10 octobre 2026 d'après
+  `docs/notes/finances-locales-approbation-1975-2018.md` : avant → après de 1985 et de 1995,
+  art. 44 de 1975 et détail de l'art. 43 au registre `tbl-fl-comp-1975`, ligne
+  `r-fl-comp-controle-emprunts` (loi n° 85-47, art. 66 du code de la comptabilité publique),
+  ligne « Budget, emprunts, taxes et droits » de `tbl-fl-comp-controle` scindée en trois.
+  Constat et ancre `r-fl-ccp-art66-modificatifs` sous `#sec-fl-comp-communes-1975` : le maintien
+  de l'art. 66 jusqu'en 2018 n'est vérifié que sur les titres de l'index. **États de lecture** :
+  n° 85-43, p. 642-643 lues en entier (OCR relu, édition arabe à l'image pour les art. 43 à
+  46) ; n° 85-47, OCR, sans guillemets ; n° 95-68 et n° 2006-48, couche texte, sans guillemets
+  dans les deux chapitres, **à relire à l'image** avant toute citation ; n° 91-24 lue en entier.
+  **Non établi** : l'application de l'art. 44 de la loi organique des communes à l'autorisation
+  des emprunts ; la durée des baux approuvés par le délégué en 1975 (art. 43, 3e tiret).
 - **Dates d'effet** : loi n° 75-33, exécutoire le 22 mai 1975 (aucune clause ; rectificatif du
   1er août 1975 lu à l'image, sans date d'effet, numéros d'articles à relire) ; loi organique n° 89-11 (p. 220-221), non établie, le registre des
   dates donne sa publication. **Lisible dans le corpus, à l'image.**
@@ -2469,9 +2507,9 @@ publié et non entré en vigueur (art. 1, 12, 29, 30, 55, 56, 136 et 139). Fiche
   10 octobre, § 3) ; qui adopte le budget communal et arrête un tarif depuis le
   14 mars 2023 ; **dépenses par fonction et part dans la dépense publique : aucune série
   identifiée**, à chercher dans les rapports de la Haute instance — **à obtenir**.
-- **Tableau de tête** : `tbl-fl-comp-etats` suit le plan, sauf deux cases — la case « 1975, qui
-  fixe les droits » dit « le conseil, sous approbation préalable » (art. 42 de 1975) avant le
-  renvoi ; la « supervision du gouverneur » y est sans guillemets (traduction de travail).
+- **Tableau de tête** : `tbl-fl-comp-etats` suit le plan, sauf deux cases — la colonne de la loi
+  organique des communes couvre 1975-2018, et sa case « qui fixe les droits » dit les deux
+  régimes (approbation jusqu'en 1995, aucune approbation propre ensuite) avant le renvoi ; la « supervision du gouverneur » y est sans guillemets (traduction de travail).
 - **Livre arabe** : chapitre non traduit ; douze attributs `titre` à traduire.
 
 ### Chapitre 5 — Budgets et comptes (`_budgets.qmd`) — converti le 9 octobre 2026
@@ -2621,8 +2659,15 @@ lire à l'image). **Lacunes**, lisibles dans le corpus sauf mention :
 - annexes des décrets de tarifs : aucune valeur transcrite (annexe française de 1998 rognée,
   édition arabe du JORT n° 59 de 1998 **à lire à l'image** ; annexe de 2016 à transcrire) ;
   six modificatifs du décret de 1998 connus par leur intitulé, sans clé ;
-- décret n° 90-1960 du 28 novembre 1990 et son modificatif n° 95-1121 : la faculté tarifaire
-  de la collectivité peut être antérieure à 1998 ;
+- **avant 1998** (porté le 10 octobre 2026 à `#sec-fl-moduler-droits`) : `tbl-fl-taxes-pouvoir`
+  commence en 1975 — deux lignes, 22 mai 1975 et 6 décembre 1990 —, registre
+  `tbl-fl-taxes-textes-1975-1995` (loi n° 75-35, art. 11 ; lois organiques n° 75-33, 85-43 et
+  95-68 ; décret n° 90-1960) ; l'art. 93 du code reprend l'art. 8 du décret
+  n° 90-1960. **Reste, lisible dans le corpus à l'image** : décret n° 90-1960, p. 1849-1853
+  (tarifs laissés à la collectivité ; clause d'effet, la date du 6 décembre 1990 étant calculée
+  sur les seuls art. 8 à 10) ; décrets n° 76-826, n° 95-1121 et n° 58-234, connus par leur seul
+  intitulé ; la case « Contrôle » de 2016 reprend l'exception des déchets non ménagers
+  (art. 93 du code, sans modificatif au registre du chapitre) : **à confirmer** ;
 - loi n° 2002-76, art. 3 (réduction de moitié pour les cas sociaux après le 1er août 2002) ;
   barème des parkings de la LF 2003, art. 79, à transcrire ; arrêtés du 4 mars 1997 et du
   30 mai 2003 ; antécédents abrogés en 1997 (décrets de 1887 à 1956, **à obtenir** ; loi
