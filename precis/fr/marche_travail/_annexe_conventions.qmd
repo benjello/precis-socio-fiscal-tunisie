@@ -1,6 +1,6 @@
 # Les conventions collectives, branche par branche {#sec-mt-cc-annexe .domicile-unique}
 
-Cette annexe donne, pour les conventions collectives de branche du textile, du bâtiment et des travaux publics, et des assurances, le salaire de base du bas et du haut de la grille à chacune de ses dates d'effet, et mène, pour chaque grille, à sa base législative : ses cases, date par date, avec le texte qui fixe chaque montant. Elle dit aussi, pour chaque branche, comment la convention est née, ce qu'est sa grille et quels avenants l'ont révisée. La lecture d'ensemble — la convention cadre de 1973, les trois étages de salaires, l'inventaire des branches et l'écart entre le bas des grilles et le salaire minimum — est au chapitre des conventions collectives (@sec-mt-conventions, @sec-mt-cc-smig).
+Cette annexe donne, pour les conventions collectives de branche du textile, du bâtiment et des travaux publics, et des assurances, le salaire de base du bas et du haut de chaque grille à chacune de ses dates d'effet, et mène, pour chaque grille, à sa base législative, qui la donne en entier : toutes ses cases, date par date, avec le texte qui fixe chaque montant. Elle dit aussi, pour chaque branche, comment la convention est née, ce que sont ses grilles et quels avenants les ont révisées. La lecture d'ensemble — la convention cadre de 1973, les trois étages de salaires, l'inventaire des branches et l'écart entre le bas des grilles et le salaire minimum — est au chapitre des conventions collectives (@sec-mt-conventions, @sec-mt-cc-smig).
 
 ```{python}
 #| echo: false
@@ -15,7 +15,7 @@ from figures import conventions as cc
 
 ## Ce que l'annexe donne, et comment la lire {#sec-mt-cc-annexe-lecture}
 
-Les branches, la création de leur convention et les cases de la grille tracées ici tiennent en un tableau (@tbl-cc-annexe-branches).
+Les branches, la création de leur convention, leurs grilles et les cases tracées ici tiennent en un tableau (@tbl-cc-annexe-branches). Un second dit ce que la base législative donne de chaque grille (@tbl-cc-annexe-grilles).
 
 ```{python}
 #| echo: false
@@ -28,17 +28,36 @@ print(cc.tableau_branches({
     "assurances": ("signée le [24 juillet 1975]{.insecable}",
                    "[24 décembre 1975]{.insecable}", "[1^er^ janvier 1975]{.insecable}"),
 }))
-print("\n: Les conventions de branche de l'annexe : signature, agrément, date d'effet et "
-      "cases de la grille tracées, avec leur période {#tbl-cc-annexe-branches "
-      "tbl-colwidths=\"[14,18,15,14,39]\"}\n")
+print("\n: Les conventions de branche de l'annexe : signature, agrément, date d'effet, "
+      "grilles et cases tracées de chaque grille, avec leur période {#tbl-cc-annexe-branches "
+      "tbl-colwidths=\"[16,27,24,33]\"}\n")
 ```
 
-- **Chaque figure trace le bas et le haut de la grille.** Une grille compte des dizaines de cases — une par catégorie et par échelon. La figure d'une branche en suit, à chaque date d'effet, la plus basse et une case du haut de la grille.
+```{python}
+#| echo: false
+#| output: asis
+ORDRE = ("textile", "batiment", "assurances")
+print(cc.tableau_grilles(ORDRE))
+print("\n: Ce que la base législative donne de chaque grille : lignes (catégories, échelles "
+      "ou emplois), colonnes (échelons) et cases à la dernière date d'effet, dates d'effet, "
+      "période et cases vides "
+      "{#tbl-cc-annexe-grilles tbl-colwidths=\"[15,30,8,9,7,10,12,9]\"}\n")
+```
+
+- **Chaque grille a sa figure, qui en trace le bas et le haut.** Une grille compte une case par ligne — catégorie, échelle ou emploi — et par échelon. Sa figure en suit, à chaque date d'effet, la case la plus basse et la case la plus haute de sa dernière date publiée. Une branche qui a une grille horaire et une grille mensuelle a donc deux figures.
 - **Chaque figure a deux vues.** En dinars courants, une marche par date d'effet. En dinars constants — ceux de la dernière année dont l'indice des prix à la consommation est publié —, un point par année : la moyenne des montants en vigueur dans l'année, rapportée aux prix de l'année de référence, selon la règle suivie pour le salaire minimum (@fig-mt-sm-evolution). Cette seconde vue dit ce que la grille permet d'acheter : entre deux grilles, la courbe descend au rythme des prix.
 - **Une valeur vaut de sa date d'effet à la veille de la suivante.** La date d'effet est celle que la grille énonce elle-même ; elle précède souvent de plusieurs mois la signature de l'avenant et l'arrêté qui l'agrée.
 - **Ce sont des salaires de base.** Les indemnités et les primes de chaque convention s'y ajoutent. Les séries commencent à la première grille qui comprend l'[indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire) : les grilles antérieures ne mesurent pas la même grandeur.
 - **« Non publiée » n'est ni zéro ni la valeur précédente.** [Le décret n° 2026-68](#r-cc-annexe-2026-68) relève de 5 %, à compter du 1^er^ janvier 2026, les [salaires de base](#g-salaire-de-base-conventionnel) de tous les échelons des dernières grilles annexées aux conventions sectorielles. Pour le bâtiment et pour les assurances, la grille qui en résulte n'est pas donnée ici : la dernière grille n'est pas prolongée au-delà du 31 décembre 2025, et le trait de la figure s'arrête au 1^er^ janvier 2026, sur un cercle creux qui porte « non publiée » (@sec-mt-cc-2026). Pour les assurances, la façon dont ce décret s'applique à la branche n'est pas établie ici.
-- **Sous chaque figure, la base législative de la grille.** Un lien mène à la page de la grille, qui donne les cases de la grille à toutes leurs dates d'effet, avec le texte et la référence de chaque montant. L'onglet « Données » de la figure donne, année par année, les cases tracées : leur moyenne en dinars courants, l'indice des prix et le montant en dinars constants.
+- **Sous chaque figure, la base législative donne la grille entière.** Un lien mène à la vue en tableau de la grille : toutes ses cases, à toutes leurs dates d'effet, avec le texte et la référence de chaque montant. Une grille trop grande pour une seule vue s'ouvre ligne par ligne — une catégorie ou une échelle à la fois. L'onglet « Données » de la figure donne, année par année, les cases tracées : leur moyenne en dinars courants, l'indice des prix et le montant en dinars constants.
+
+```{python}
+#| echo: false
+#| output: asis
+print("- **Certaines cases de la base législative sont vides, parce qu'illisibles sur le "
+      "fascicule.** " + cc.cases_vides(ORDRE) + ". Une case vide n'est ni déduite ni reportée "
+      "de la grille précédente : elle reprend à la première grille où elle est lue.\n")
+```
 
 :::: {.chronologie-repliable titre="Textes communs aux branches de l'annexe : publication des avenants dans l'édition arabe (1996) et hausse des grilles par décret (2026)"}
 
@@ -65,13 +84,22 @@ La convention collective nationale du textile fixe, depuis 1974, les salaires de
 
 Chaque avenant de salaires porte deux grilles par date d'effet.
 
-- **La grille des agents payés à l'heure**, celle du personnel d'exécution, en dinars par heure. Elle compte sept catégories — I, II, III-1, III-2, III-3, IV-1 et IV-2 — et, dans chacune, des échelons numérotés à partir de 0, l'échelon 0 étant celui de la confirmation. Les échelons vont de 0 à 16 dans [la convention de 1974](#r-cc-textile-convention), et de 0 à 20 dans les grilles de [2011](#r-cc-textile-av11) et des années suivantes ; la date du passage de 16 à 20 échelons n'est pas établie ici. La grille ne dit pas à quelle durée hebdomadaire du travail elle se rapporte.
-- **La grille des agents payés au mois**, en dinars par mois, de dix-sept catégories.
+- **La grille des agents payés à l'heure**, celle du personnel d'exécution, en dinars par heure. Elle classe les agents en catégories — I, II, III-1, III-2, III-3, IV-1 et IV-2 — et, dans chacune, en échelons numérotés à partir de 0, l'échelon 0 étant celui de la confirmation. La grille du 1^er^ mai 1999, la première de [l'avenant n° 7](#r-cc-textile-av7), ajoute des échelons en haut de chaque catégorie. La grille ne dit pas à quelle durée hebdomadaire du travail elle se rapporte.
+- **La grille des agents payés au mois**, en dinars par mois. Elle classe les agents en catégories numérotées, la première en deux lignes, 1A et 1B. Chaque ligne porte une colonne de stage, puis des échelons numérotés à partir de 1, l'échelon 1 étant celui de la confirmation ; la grille du 1^er^ mai 1999 y ajoute, elle aussi, des échelons. La colonne de stage est égale à l'échelon 1 jusqu'à la grille de 2007 ; elle est plus basse depuis celle du 1^er^ mai 2008, la première de [l'avenant n° 10](#r-cc-textile-av10).
 - **Ce que le salaire de base comprend.** [L'avenant n° 5](#r-cc-textile-av5) intègre l'indemnité complémentaire provisoire aux salaires de base à compter du 1^er^ mai 1994 : c'est la première grille des séries de cette section (@sec-mt-cc-annexe-textile-evolution). La grille d'origine et celles de 1990 à 1992, qui ne la comprennent pas, sont données au chapitre (@tbl-mt-cc-grilles-hors-series).
 
-### Le bas et le haut de la grille, à chaque date d'effet {#sec-mt-cc-annexe-textile-evolution}
+```{python}
+#| echo: false
+#| output: asis
+print(cc.formes_branche("textile"))
+```
 
-La figure suit, dans la grille des agents payés à l'heure, la catégorie I, échelon 0, qui est le salaire le plus bas de la grille ; et la catégorie IV-2, échelon 20, qui en est le salaire le plus haut — cet échelon existe depuis la grille du 1^er^ mai 1999 (@fig-mt-cc-annexe-textile). Sous la figure, la base législative de la grille en donne les cases, date par date.
+### Le bas et le haut de chaque grille, à chaque date d'effet {#sec-mt-cc-annexe-textile-evolution}
+
+Chaque grille a sa figure, et, dessous, sa base législative, qui la donne en entier.
+
+- **Agents payés à l'heure** (@fig-mt-cc-annexe-textile) : la figure suit la catégorie I, échelon 0, qui est le salaire le plus bas de la grille, et la catégorie IV-2, échelon 20, qui en est le plus haut — cet échelon existe depuis la grille du 1^er^ mai 1999.
+- **Agents payés au mois** (@fig-mt-cc-annexe-textile-mensuelle) : la figure suit la catégorie 1A, échelon 1, qui est le salaire de confirmation le plus bas, et la catégorie 17, échelon 20, qui est le salaire le plus haut de la grille — cet échelon existe, lui aussi, depuis la grille du 1^er^ mai 1999. La colonne de stage, qui précède l'échelon 1, n'est pas un échelon : elle se lit dans la base législative.
 
 - **La grille de 2005 prend effet le 15 juin**, quand les autres grilles de 1994 à 2012 prennent effet un 1^er^ mai : la grille de [l'avenant n° 9](#r-cc-textile-av9) porte cette date « à titre exceptionnel ».
 - **La grille du 1^er^ janvier 2026 est publiée** : [l'avenant n° 18](#r-cc-textile-av18), agréé en 2024, la fixe à l'avance, avant le décret de 2026 (@sec-mt-cc-2026).
@@ -80,13 +108,15 @@ La figure suit, dans la grille des agents payés à l'heure, la catégorie I, é
 #| label: fig-mt-cc-annexe-textile
 #| echo: false
 #| output: asis
+SOURCES_TEXTILE = ["avenant5-textile-1994", "avenant6-textile-1996", "avenant7-textile-1999",
+                   "avenant8-textile-2002", "avenant9-textile-2006", "avenant10-textile-2009",
+                   "avenant11-textile-2011", "avenant12-textile-2013",
+                   "avenants-2014-textile-btp", "avenant14-textile-2016",
+                   "avenant15-textile-2017", "avenant16-textile-2019",
+                   "avenant17-textile-2022", "avenant18-textile-2024"]
 cc.figure(
-    "textile",
-    sources=["avenant5-textile-1994", "avenant6-textile-1996", "avenant7-textile-1999",
-             "avenant8-textile-2002", "avenant9-textile-2006", "avenant10-textile-2009",
-             "avenant11-textile-2011", "avenant12-textile-2013", "avenants-2014-textile-btp",
-             "avenant14-textile-2016", "avenant15-textile-2017", "avenant16-textile-2019",
-             "avenant17-textile-2022", "avenant18-textile-2024"],
+    "textile", grille="salaire_base.agents_payes_a_l_heure",
+    sources=SOURCES_TEXTILE,
     note_lecture=(
         "En dinars courants, chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
         "suivante. Seules la première et la dernière valeur de chaque case sont écrites ; "
@@ -99,7 +129,35 @@ cc.figure(
 ```{python}
 #| echo: false
 #| output: asis
-print(cc.base_legislative("textile"))
+print(cc.base_legislative("textile", "salaire_base.agents_payes_a_l_heure"))
+```
+
+```{python}
+#| label: fig-mt-cc-annexe-textile-mensuelle
+#| echo: false
+#| output: asis
+cc.figure(
+    "textile", grille="salaire_base.agents_payes_au_mois",
+    sources=SOURCES_TEXTILE,
+    note_lecture=(
+        "En dinars courants, chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
+        "suivante. Le trait du bas est l'échelon 1 de la catégorie 1A, le salaire de "
+        "confirmation le plus bas ; la colonne de stage qui le précède, égale à l'échelon 1 "
+        "jusqu'à la grille de 2007 et plus basse depuis celle du 1er mai 2008, n'est pas un "
+        "échelon et se lit dans la base législative de la grille, sous la figure. Le trait du "
+        "haut commence le 1er mai 1999, date de la grille qui crée cet échelon. Seules "
+        "la première et la dernière valeur de chaque case sont écrites ; les autres se lisent "
+        "au survol d'un point ou dans la base législative. Ce sont des salaires de base, hors "
+        "indemnités de la convention."),
+    generated="{{< meta date >}}",
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+print(cc.base_legislative("textile", "salaire_base.agents_payes_au_mois"))
+print(cc.autres_grilles("textile"))
 ```
 
 ### Les avenants {#sec-mt-cc-annexe-textile-avenants}
@@ -119,10 +177,10 @@ La convention est révisée par une sentence arbitrale en 1983, puis, à partir 
 | Avenant n° 4 | [12 août 1993]{.insecable} | [7 septembre 1993]{.insecable} | n° 70 du [17 septembre 1993]{.insecable}, p. 1518-1525 | — |
 | []{#r-cc-textile-av5}Avenant n° 5 | [12 août 1994]{.insecable} | [22 septembre 1994]{.insecable} [@avenant5-textile-1994, p. 1637] | n° 78 du [4 octobre 1994]{.insecable}, p. 1637-1641 | 1^er^ mai 1994 et 1995 |
 | []{#r-cc-textile-av6}Avenant n° 6 | [23 juillet 1996]{.insecable} | [24 juillet 1996]{.insecable} [@avenant6-textile-1996] | n° 60 du [26 juillet 1996]{.insecable}, édition arabe | 1^er^ mai 1996, 1997 et 1998 |
-| Avenant n° 7 | [28 mai 1999]{.insecable} | [9 juin 1999]{.insecable} [@avenant7-textile-1999] | n° 48 du [15 juin 1999]{.insecable}, édition arabe | 1^er^ mai 1999, 2000 et 2001 |
+| []{#r-cc-textile-av7}Avenant n° 7 | [28 mai 1999]{.insecable} | [9 juin 1999]{.insecable} [@avenant7-textile-1999] | n° 48 du [15 juin 1999]{.insecable}, édition arabe | 1^er^ mai 1999, 2000 et 2001 |
 | Avenant n° 8 | [14 novembre 2002]{.insecable} | [25 novembre 2002]{.insecable} [@avenant8-textile-2002] | n° 97 du [29 novembre 2002]{.insecable}, édition arabe | 1^er^ mai 2002, 2003 et 2004 |
 | []{#r-cc-textile-av9}Avenant n° 9 | [29 décembre 2005]{.insecable} | [17 janvier 2006]{.insecable} [@avenant9-textile-2006] | n° 7 du [24 janvier 2006]{.insecable}, édition arabe | [15 juin 2005]{.insecable}, date fixée « à titre exceptionnel » ; 1^er^ mai 2006 et 2007 |
-| Avenant n° 10 | [28 janvier 2009]{.insecable} | [17 février 2009]{.insecable} [@avenant10-textile-2009] | n° 16 du [24 février 2009]{.insecable}, édition arabe | 1^er^ mai 2008, 2009 et 2010 |
+| []{#r-cc-textile-av10}Avenant n° 10 | [28 janvier 2009]{.insecable} | [17 février 2009]{.insecable} [@avenant10-textile-2009] | n° 16 du [24 février 2009]{.insecable}, édition arabe | 1^er^ mai 2008, 2009 et 2010 |
 | []{#r-cc-textile-av11}Avenant n° 11 | [23 septembre 2011]{.insecable} | [11 octobre 2011]{.insecable} [@avenant11-textile-2011] | n° 78 du [14 octobre 2011]{.insecable}, édition arabe | [1^er^ mai 2011]{.insecable} |
 | Avenant n° 12 | [29 janvier 2013]{.insecable} | [19 février 2013]{.insecable} [@avenant12-textile-2013] | n° 16 du [22 février 2013]{.insecable}, édition arabe | [1^er^ mai 2012]{.insecable} |
 | Avenant n° 13 | [2 octobre 2014]{.insecable} | [17 octobre 2014]{.insecable} [@avenants-2014-textile-btp] | n° 90 du [7 novembre 2014]{.insecable}, édition arabe | [1^er^ mai 2014]{.insecable} |
@@ -134,7 +192,7 @@ La convention est révisée par une sentence arbitrale en 1983, puis, à partir 
 
 : La convention collective du textile et les textes qui la révisent, 1974-2024 {#tbl-cc-textile-avenants .sm tbl-colwidths="[14,21,21,22,22]"}
 
-Les dates de signature et d'agrément de la sentence arbitrale et des avenants sont celles que rappelle l'arrêté d'agrément de l'avenant n° 18. La dernière colonne donne les dates d'effet des grilles que trace la figure de la branche (@fig-mt-cc-annexe-textile) ; un tiret y marque un texte antérieur à cette série.
+Les dates de signature et d'agrément de la sentence arbitrale et des avenants sont celles que rappelle l'arrêté d'agrément de l'avenant n° 18. La dernière colonne donne les dates d'effet des grilles que tracent les figures de la branche (@fig-mt-cc-annexe-textile, @fig-mt-cc-annexe-textile-mensuelle) ; un tiret y marque un texte antérieur à ces séries.
 
 <!-- TODO (documentaliste) : la sentence arbitrale de 1983 et les avenants n° 2 (1989) et n° 4
 (1993) n'ont pas de clé dans `references.json` ; leurs grilles ne sont pas établies. Pages des
@@ -160,39 +218,48 @@ La convention collective nationale du bâtiment et des travaux publics fixe, dep
 Chaque avenant de salaires porte deux grilles par date d'effet.
 
 - **La grille du personnel occasionnel**, en dinars par heure : un salaire par catégorie, sans échelon. Les catégories sont le manœuvre ordinaire, le manœuvre spécialisé, l'aide-ouvrier, l'ouvrier qualifié de première puis de deuxième catégorie, l'ouvrier hautement qualifié et le chef d'équipe, à trois degrés. L'ouvrier hautement qualifié n'a qu'une ligne dans les grilles de 1999 à 2007 ; [celle du 1^er^ mai 2008](#r-cc-btp-av9) le divise en deux niveaux. La grille ne dit pas à quelle durée hebdomadaire du travail elle se rapporte.
-- **La grille du personnel administratif et technique à traitement mensuel**, en dinars par mois, de dix-neuf catégories et onze échelons ; [en 1975](#r-cc-btp-convention), elle porte la mention « base : 48 heures/semaine ».
+- **La grille du personnel administratif et technique à traitement mensuel**, en dinars par mois, par catégorie numérotée et par échelon d'ancienneté ; [en 1975](#r-cc-btp-convention), elle porte la mention « base : 48 heures/semaine ».
 - **Ce que le salaire de base comprend.** Chaque grille des séries de cette section (@sec-mt-cc-annexe-batiment-evolution) mentionne que ses salaires comprennent l'indemnité complémentaire provisoire. Les indemnités de présence et de transport de la convention s'y ajoutent. La grille d'origine et celle de 1990 sont données au chapitre (@tbl-mt-cc-grilles-hors-series).
 
-### Le bas et le haut de la grille, à chaque date d'effet {#sec-mt-cc-annexe-batiment-evolution}
+```{python}
+#| echo: false
+#| output: asis
+print(cc.formes_branche("batiment"))
+```
 
-La figure suit, dans la grille du personnel occasionnel, le manœuvre ordinaire, qui est le salaire le plus bas de la grille, et le chef d'équipe du troisième degré, qui en est le plus élevé (@fig-mt-cc-annexe-batiment). Sous la figure, la base législative de la grille en donne les cases, date par date.
+### Le bas et le haut de chaque grille, à chaque date d'effet {#sec-mt-cc-annexe-batiment-evolution}
 
-- **Les grilles de [l'avenant n° 16](#r-cc-btp-av16) — 1^er^ décembre 2021, 1^er^ janvier 2023 et 1^er^ janvier 2024 — sont données d'après une reproduction.** Le fascicule de l'édition arabe qui les porte n'est pas en ligne ; ses pages sont reproduites par un site tiers.
+Chaque grille a sa figure, et, dessous, sa base législative, qui la donne en entier.
+
+- **Personnel occasionnel** (@fig-mt-cc-annexe-batiment) : la figure suit le manœuvre ordinaire, qui est le salaire le plus bas de la grille, et le chef d'équipe du troisième degré, qui en est le plus élevé.
+- **Personnel administratif et technique** (@fig-mt-cc-annexe-batiment-mensuelle) : la figure suit la catégorie 1, échelon 1, qui est le salaire le plus bas de la grille, et la catégorie 19, échelon 11, qui en est le plus élevé.
+- **Les grilles de [l'avenant n° 16](#r-cc-btp-av16) — 1^er^ décembre 2021, 1^er^ janvier 2023 et 1^er^ janvier 2024 — sont données d'après une reproduction, pour les deux grilles et pour toutes leurs cases.** Le fascicule de l'édition arabe qui les porte n'est pas en ligne ; ses pages sont reproduites par un site tiers.
 - **À compter du 1^er^ janvier 2026, le montant n'est pas publié** (@sec-mt-cc-annexe-lecture, @sec-mt-cc-2026).
 
 ```{python}
 #| label: fig-mt-cc-annexe-batiment
 #| echo: false
 #| output: asis
-cc.figure(
-    "batiment",
-    sources=["avenant5-btp-1996", "avenant6-btp-1999", "avenant7-btp-2002",
-             "avenant8-btp-2006", "avenant9-btp-2009", "avenant10-btp-2011",
-             "avenant11-btp-2013", "avenants-2014-textile-btp", "avenant13-btp-2016",
-             "avenant14-btp-2017", "avenant15-btp-2018", "avenant16-btp-2022",
-             "paie-tunisie-2022-reproduction-jort-132", "decret2026-68"],
-    caveats=("Les grilles de l'avenant n° 16 (1er décembre 2021, 1er janvier 2023, "
-             "1er janvier 2024) sont celles des pages 3712 à 3714 de l'édition arabe du "
-             "Journal officiel n° 132 du 2 décembre 2022, telles qu'un site tiers les "
-             "reproduit."),
-    note_lecture=(
+SOURCES_BTP = ["avenant5-btp-1996", "avenant6-btp-1999", "avenant7-btp-2002",
+               "avenant8-btp-2006", "avenant9-btp-2009", "avenant10-btp-2011",
+               "avenant11-btp-2013", "avenants-2014-textile-btp", "avenant13-btp-2016",
+               "avenant14-btp-2017", "avenant15-btp-2018", "avenant16-btp-2022",
+               "paie-tunisie-2022-reproduction-jort-132", "decret2026-68"]
+RESERVE_BTP = ("Les grilles de l'avenant n° 16 (1er décembre 2021, 1er janvier 2023, "
+               "1er janvier 2024) sont celles des pages 3712 à 3714 de l'édition arabe du "
+               "Journal officiel n° 132 du 2 décembre 2022, telles qu'un site tiers les "
+               "reproduit : toutes leurs cases en viennent.")
+NOTE_BTP = (
         "En dinars courants, chaque marche est une grille : le trait court de sa date d'effet à la veille de la "
         "suivante. Seules la première et la dernière valeur de chaque case sont écrites ; "
         "les autres se lisent au survol d'un point ou dans la base législative de la grille, sous la figure. Le cercle creux du 1er janvier 2026 marque la date "
         "à compter de laquelle le montant n'est pas publié : le trait s'y arrête. Les marches "
         "du 1er décembre 2021, du 1er janvier 2023 et du 1er janvier 2024 sont les grilles "
         "de l'avenant n° 16, données d'après la reproduction de l'édition arabe du Journal "
-        "officiel par un site tiers."),
+        "officiel par un site tiers.")
+cc.figure(
+    "batiment", grille="salaire_base.personnel_occasionnel",
+    sources=SOURCES_BTP, caveats=RESERVE_BTP, note_lecture=NOTE_BTP,
     generated="{{< meta date >}}",
 )
 ```
@@ -200,7 +267,25 @@ cc.figure(
 ```{python}
 #| echo: false
 #| output: asis
-print(cc.base_legislative("batiment"))
+print(cc.base_legislative("batiment", "salaire_base.personnel_occasionnel"))
+```
+
+```{python}
+#| label: fig-mt-cc-annexe-batiment-mensuelle
+#| echo: false
+#| output: asis
+cc.figure(
+    "batiment", grille="salaire_base.personnel_administratif_technique",
+    sources=SOURCES_BTP, caveats=RESERVE_BTP, note_lecture=NOTE_BTP,
+    generated="{{< meta date >}}",
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+print(cc.base_legislative("batiment", "salaire_base.personnel_administratif_technique"))
+print(cc.autres_grilles("batiment"))
 ```
 
 ### Les avenants {#sec-mt-cc-annexe-batiment-avenants}
@@ -232,7 +317,7 @@ Des avenants numérotés à partir de 1 révisent la convention depuis 1983. [L'
 
 : La convention collective du bâtiment et des travaux publics et ses avenants, 1975-2022 {#tbl-cc-btp-avenants .sm tbl-colwidths="[14,21,21,22,22]"}
 
-Les dates de signature des avenants n° 1 à 15 sont celles que rappelle le préambule de l'avenant n° 15 ; les dates d'agrément des avenants n° 6 à 9, celles que rappelle l'arrêté d'agrément de l'avenant n° 16. La dernière colonne donne les dates d'effet des grilles que trace la figure de la branche (@fig-mt-cc-annexe-batiment) ; un tiret y marque un texte antérieur à cette série.
+Les dates de signature des avenants n° 1 à 15 sont celles que rappelle le préambule de l'avenant n° 15 ; les dates d'agrément des avenants n° 6 à 9, celles que rappelle l'arrêté d'agrément de l'avenant n° 16. La dernière colonne donne les dates d'effet des grilles que tracent les figures de la branche (@fig-mt-cc-annexe-batiment, @fig-mt-cc-annexe-batiment-mensuelle) ; un tiret y marque un texte antérieur à ces séries.
 
 <!-- TODO (documentaliste) : les avenants n° 1 (1983), n° 2 (1989) et n° 4 (1993) n'ont pas de clé
 dans `references.json`, et l'arrêté d'agrément du 12 mars 1975 n'a pas de clé distincte de celle
@@ -260,14 +345,20 @@ La convention collective nationale des assurances fixe, depuis 1975, les salaire
 
 La convention n'a qu'une grille de salaires, mensuelle, par échelle et par échelon.
 
-- **Vingt et une échelles**, numérotées de 1 à 21 depuis [la convention de 1975](#r-cc-assurances-texte). Elles sont regroupées en sept catégories, de A à G, en 1975, puis en cinq [à compter du 1^er^ janvier 1983](#r-cc-assurances-1983) : V, agents de services et assimilés (échelles 1 à 3 et hors classe) ; IV, agents d'exécution (échelles 4 à 9) ; III, personnel d'encadrement (10 à 12) ; II, cadres supérieurs (13 à 15) ; I, cadres de direction (16 à 21).
-- **Douze échelons d'ancienneté par échelle jusqu'au 31 mai 1999, quatorze ensuite** : [l'avenant n° 5](#r-cc-assurances-av5) crée les treizième et quatorzième échelons au 1^er^ juin 1999, le quatorzième étant atteint au terme de trente-trois ans de service.
+- **Des échelles numérotées**, de 1 à 21, depuis [la convention de 1975](#r-cc-assurances-texte). Elles sont regroupées en catégories, de A à G en 1975, puis, [à compter du 1^er^ janvier 1983](#r-cc-assurances-1983), de V à I : V, agents de services et assimilés (échelles 1 à 3 et hors classe) ; IV, agents d'exécution (échelles 4 à 9) ; III, personnel d'encadrement (10 à 12) ; II, cadres supérieurs (13 à 15) ; I, cadres de direction (16 à 21). Depuis cette date, la grille porte en outre, entre l'échelle 3 et l'échelle 4, une ligne « Exceptionnel ».
+- **Des échelons d'ancienneté dans chaque échelle** : [l'avenant n° 5](#r-cc-assurances-av5) crée les treizième et quatorzième échelons au 1^er^ juin 1999, le quatorzième étant atteint au terme de trente-trois ans de service.
 - **Unité et durée du travail.** Le salaire est mensuel, pour 40 heures par semaine, soit 2 080 heures par an ([article 30 de la convention révisée](#r-cc-assurances-1983)).
 - **Ce que le salaire de base comprend.** Depuis la grille du 1^er^ juin 1993, celle de [l'avenant n° 3](#r-cc-assurances-av3), il comprend l'indemnité complémentaire provisoire : c'est la première grille des séries de cette section (@sec-mt-cc-annexe-assurances-evolution). Il ne comprend ni l'indemnité de transport, ni les treizième et quatorzième mois, ni la prime de rendement, que la convention sert en sus.
 
+```{python}
+#| echo: false
+#| output: asis
+print(cc.formes_branche("assurances"))
+```
+
 ### Le bas et le haut de la grille, à chaque date d'effet {#sec-mt-cc-annexe-assurances-evolution}
 
-La figure suit l'échelle 1, échelon 1, qui est le salaire le plus bas de la grille, et le quatorzième échelon de l'échelle 21, qui en est le plus élevé depuis sa création, le 1^er^ juin 1999 (@fig-mt-cc-annexe-assurances). Jusqu'au 31 mai 1999, le salaire le plus élevé est le douzième échelon de l'échelle 21 : il se lit, comme le treizième, dans la base législative de la grille, sous la figure.
+La figure suit l'échelle 1, échelon 1, qui est le salaire le plus bas de la grille, et le quatorzième échelon de l'échelle 21, qui en est le plus élevé depuis sa création, le 1^er^ juin 1999 (@fig-mt-cc-annexe-assurances). Jusqu'au 31 mai 1999, le salaire le plus élevé est le douzième échelon de l'échelle 21 : il se lit, comme le treizième, dans la base législative de la grille, sous la figure, à la ligne de l'échelle 21.
 
 - **La grille du 1^er^ juin 2014 paraît à part de son avenant** : l'avenant n° 11 est publié sans elle, et [elle l'est au numéro suivant du *Journal officiel*, celui du 13 janvier 2015](#r-cc-assurances-grille-2014).
 - **À compter du 1^er^ janvier 2026, le montant n'est pas publié** (@sec-mt-cc-annexe-lecture).
@@ -277,7 +368,7 @@ La figure suit l'échelle 1, échelon 1, qui est le salaire le plus bas de la gr
 #| echo: false
 #| output: asis
 cc.figure(
-    "assurances",
+    "assurances", grille="salaire_base",
     sources=["cc-assurances-avenant3-1993", "cc-assurances-avenant4-1996",
              "cc-assurances-avenant5-1999", "cc-assurances-avenant6-2002",
              "cc-assurances-avenant7-2007", "cc-assurances-avenant8-2009",
@@ -301,7 +392,8 @@ cc.figure(
 ```{python}
 #| echo: false
 #| output: asis
-print(cc.base_legislative("assurances"))
+print(cc.base_legislative("assurances", "salaire_base"))
+print(cc.autres_grilles("assurances"))
 ```
 
 ### Les textes de création et les avenants qui changent la grille {#sec-mt-cc-annexe-assurances-textes}

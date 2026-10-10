@@ -105,7 +105,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
-| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; plan de conversion du volume dans `docs/notes/prestations-sociales-plan-architecte.md` | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
+| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; plan de conversion du volume dans `docs/notes/prestations-sociales-plan-architecte.md` | Décret n° 2018-626 dans le JORT n° 63 de 2018 et LF 2025, art. 26, dans l'extrait français local |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences à convertir | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 
@@ -633,19 +633,40 @@ liste qui suit le tableau, citations comprises. Restent :
     **locaux et textuels** : `arrete-2026-04-21-transferts` (`2026/fr/Jo0402026.pdf`, p. 786),
     `decret-2025-426-allocation-familiale-6-18` (`2025/fr/Jo1212025.pdf`, p. 2518),
     `arrete-2025-11-03-allocation-familiale-6-18` (`2025/fr/Jo1322025.pdf`, p. 2963) ;
-  - **reste, pour le documentaliste** (TODO du chapitre) : la portée de la majoration pour
-    handicap lourd de l'article 5 (les quatre paliers ou le premier seul ; décret lisible dans
-    `2020/fr/Jo0452020.pdf`, p. 1093, et dans l'édition arabe) ; le cumul de l'allocation des
-    6 à 18 ans avec le supplément de 10 D par enfant, qu'aucun texte lu ne règle ; ce qui est dû
-    de janvier à novembre 2025 (institution au 1er janvier 2025, montant exécutoire le
-    9 novembre) ; le fondement des enfants de 6 à 18 ans aidés en 2023 selon le rapport du
-    ministère ; le seuil de score (circulaire n° 12 du 12 mai 2022, hors *Journal officiel*, à
-    obtenir) : il n'est pas au chapitre ;
+  - **reprise du 9 octobre 2026, d'après `docs/notes/prestations-sociales-lectures-2026-10-09.md`** (réponses D0 à D5, D11 ; six passages,
+    rien de réorganisé) : l'allocation des 6 à 18 ans est décrite comme un programme pilote sur
+    don depuis 2022 (rapport du ministère pour 2023, UNICEF 2024, Banque mondiale 2026), puis
+    instituée par le décret n° 2025-426, qui ne vise que la Constitution ; le supplément de 10 D
+    est dit borné aux 6 à 18 ans depuis le 1er février 2022, non supprimé ; la majoration pour
+    handicap lourd est dite valoir pour les quatre paliers, avec la divergence « à charge » de
+    l'édition arabe ; le seuil de score est dit fixé par aucun texte publié ; les visas de
+    l'arrêté du 5 août 2026 (textes de pensions) sont signalés, avec renvoi au livre
+    « Retraites ». Trois clés créées en français et en arabe (`mas-amen-social-2023`, sans
+    adresse publique vérifiée ; `unicef2024allocations618` ; `banquemondiale2026ppiaf000292`),
+    PDF rangés dans `tunisia-data` ; trois fiches de recherche créées
+    (`r-amen-smig-regime`, `r-amen-seuil-score-circulaires`, `r-amen-cumul-supplement-6-18`) ;
+  - **reste, pour la relecture humaine** : valider la lecture D3 (décompte des alinéas de
+    l'article 5, appuyé sur l'article 7 ; décret lisible dans `2020/fr/Jo0452020.pdf`, p. 1093,
+    et dans l'édition arabe, p. 1248) avant d'engendrer les plafonds majorés ; dire si l'édition
+    arabe fait foi pour la condition « à charge », et sur quel texte ;
+  - **reste, pour le documentaliste** (TODO et ancres du chapitre) : relire **à l'image** les
+    pages du rapport du ministère pour 2023 sur l'allocation des 6 à 18 ans (PDF 36-38, lues sur
+    la seule couche texte arabe : convention du 28 septembre 2022, 191, 188 et 124,6 millions de
+    dinars, effectifs de décembre 2023, phrase des 20 D du don et des 10 D du budget) — le PDF
+    est local, aucune OCR à lancer ; ce qui a été servi au titre de 2025 (institution au
+    1er janvier, montant exécutoire le 9 novembre) ; la règle de cumul du supplément de 10 D et
+    de l'allocation de 30 D depuis 2025 (`r-amen-cumul-supplement-6-18`, aucun texte identifié) ;
+    le régime du salaire minimum des plafonds (`r-amen-smig-regime`) ; les circulaires du score,
+    mai 2022 et octobre 2025, hors *Journal officiel*, **à obtenir**
+    (`r-amen-seuil-score-circulaires`) ; les six études citées de seconde main par les pièces
+    de la Banque mondiale (§ 1.10 de la note), à récupérer avant toute section d'études ;
   - **reste, pour le terminologue** : la définition de « allocation familiale non
     contributive » au glossaire ne connaît que les moins de six ans ;
   - **non fait ici** (conversion du chapitre, `docs/notes/prestations-sociales-plan-architecte.md`) :
     figures de l'aide permanente, des bénéficiaires et des crédits ; séries du rapport de suivi
-    du ministère pour 2023, à instantaner ; rapports extérieurs rangés mais non dépouillés.
+    du ministère pour 2023, à instantaner — dont les enfants de 6 à 18 ans allocataires, à tracer en deux
+    segments, don puis budget (juillet 2022, décembre 2023, mai 2026 ; § 1.11 de la note de lectures) ;
+    rapports extérieurs dépouillés dans la note de lectures, section d'études non écrite.
 
 - **Tableau engendré — fait le 3 octobre 2026** : les indemnités familiales du secteur public
   (`tbl-indemnites-familiales-public`) sont désormais le tableau du livre « Retraites », émis
@@ -1253,7 +1274,7 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 Ligne éditoriale rappelée par l'humain : le précis vise l'**impact économique, distributif et budgétaire**, l'**évolution sur le temps long** et les **ruptures de réforme** ; on retient d'un texte sa **date, sa valeur et sa source**, sans les détails administratifs sans impact (modalités de déclaration, de recouvrement, procédures). Les chapitres déjà écrits en contiennent beaucoup (par exemple le recouvrement des impôts locaux dans le volume VII). Chantier à mener plus tard, **sans forcément réécrire le texte** : réduire la visibilité de ces sections (encadrés repliés, niveau de titre plus bas) ou les **repousser en annexe** du volume. Une passe par volume, à décider avec l'humain. Les nouveaux chapitres appliquent la règle dès leur rédaction.
 ## Le marché du travail
 
-### Annexe « Les conventions collectives, branche par branche » (8 octobre 2026, premier jet ; repris le 9 octobre 2026)
+### Annexe « Les conventions collectives, branche par branche » (8 octobre 2026, premier jet ; repris le 9 octobre 2026 ; grilles entières le 9 octobre 2026)
 
 `precis/fr/marche_travail/_annexe_conventions.qmd` (`#sec-mt-cc-annexe`), déclarée dans les
 `appendices` du `_quarto.yml` français, avant le glossaire. Décision du propriétaire du 8 octobre
@@ -1263,27 +1284,70 @@ par branche, la création, la description de la grille, la figure en escalier et
 avenants, et renvoie pour chaque grille à sa vue en tableau sur le site de la base législative
 (`…/parameters/<nœud de la grille>/table/`). `scripts/generate_conventions_collectives_tables.py`
 (appelé par `generate_marche_travail_tables.py`, donc gardé par le contrôle de fraîcheur) parcourt
-`marche_travail/conventions_collectives` d'`openfisca-tunisia` 0.122 sans nommer de branche ni de
-grille, et écrit `tables/cc_index.yml`, `tables/cc_<branche>_grilles.liens.yml` (un lien par
-grille, contrôlé par `scripts/verifier_liens_base_legislative.py`) et les séries
-`_seriescache/cc-grille-<branche>.csv`. La grille d'une case se déduit des chemins : le nœud le
-plus profond commun aux cases de même grandeur et de même unité de la branche (`grilles`). Trois
-branches, huit cases, 212 valeurs, 6 dates sans valeur (« non publiée », au 1er janvier 2026,
-bâtiment et assurances). La création de chaque convention et la suite des avenants viennent des
-notes, non des paramètres.
+`marche_travail/conventions_collectives` d'`openfisca-tunisia` sans nommer de branche ni de
+grille, et écrit `tables/cc_index.yml`, `tables/cc_<branche>_grilles.liens.yml` (contrôlé par
+`scripts/verifier_liens_base_legislative.py`) et une série par grille tracée,
+`_seriescache/cc-grille-<branche>-<grille>.csv`. La grille d'une case se déduit des chemins : le
+nœud le plus profond commun aux cases de même grandeur et de même unité de la branche (`grilles`).
+La création de chaque convention et la suite des avenants viennent des notes, non des paramètres.
+
+**État au 9 octobre 2026, version 0.128 du modèle** (borne `VERSION_MINIMALE` relevée à 0.128) :
+trois branches, cinq grilles, toutes tracées — textile horaire (7 lignes × 21 colonnes, 147
+cases) et mensuelle (18 × 21, 378) ; bâtiment, personnel occasionnel (9 lignes, puis 10 depuis
+2008 ; 11 cases en tout) et personnel
+administratif et technique (19 × 11, 209) ; assurances (22 × 14, 308) —, soit 1 053 cases,
+29 148 valeurs et **144 cases vides** (illisibles sur le fascicule : 127 dans la grille mensuelle
+du textile, 16 dans la grille mensuelle du bâtiment, 1 dans les assurances). L'index ne liste
+plus les cases une à une : il porte, par grille, ses comptes, sa période et les fiches de sa case
+du bas et de sa case du haut ; la série d'une grille ne porte que ces deux cases.
+
+Règles écrites dans le générateur (fonctions pures, testées dans
+`tests/test_conventions_collectives.py`) :
+
+- **le bas et le haut se choisissent par grille, à sa dernière date publiée** (`bas_et_haut`),
+  parmi les cases qui y ont une valeur en vigueur : une ligne close avant (l'ouvrier hautement
+  qualifié du bâtiment, 2008) ou une case illisible à cette date ne concourt pas ;
+- **une colonne sans rang parmi des colonnes numérotées n'est pas un échelon** (`hors_rang`) : le
+  bas de la grille mensuelle du textile est l'échelon 1 (confirmation) de la catégorie 1A, non
+  la colonne de stage, égale à l'échelon 1 jusqu'en 2007 et plus basse ensuite ;
+- **trois espèces de valeur vide** (`etat_grille`), distinguées par la forme de la grille : grille
+  non publiée (aucune case n'a de valeur à la date), ligne close (plus aucune date ensuite), case
+  vide parce qu'illisible (les autres) ;
+- **une grille n'a sa courbe que si elle est courante** (`marque_tracees`) : au moins trois dates
+  publiées, et pas de grille de même unité qui commence à sa date de clôture ou après. Sinon
+  l'annexe la mentionne, avec sa période et son lien (`autres_grilles`) ;
+- **la vue en tableau d'un nœud n'existe sur le site qu'en deçà de 200 cases**
+  (`PLAFOND_VUE_TABLEAU`) : l'adresse `…/table/` des trois grandes grilles répond 404. Elles ont
+  un lien par ligne (`liens_grille`) — 18, 19 et 22 liens —, rendus en une ligne sous la figure.
 
 Ce qui lui manque :
 
-- **les pages de la base législative** : les trois vues de grille répondent (9 octobre 2026) —
-  `textile.salaire_base.agents_payes_a_l_heure`, `batiment.salaire_base.personnel_occasionnel`,
-  `assurances.salaire_base`, en français et en arabe. Elles ne donnent que les cases versées en
-  amont : le renvoi de l'annexe dit « les cases de la grille », non « la grille entière » ;
-- **les grilles entières** : chaque branche n'a que deux à quatre cases (bas et haut). Restent
-  toutes les autres catégories et échelons, la grille mensuelle du textile (17 catégories) et celle
-  du bâtiment (19 catégories, 11 échelons), les 21 échelles des assurances ; à verser en amont : la
-  vue de la grille les montre alors sans que l'annexe change, et la figure garde le bas et le
-  haut. Si une branche n'a qu'une case d'une unité donnée, sa grille est prise au nœud qui
-  contient la case — à revoir si ce nœud est une catégorie et non la grille ;
+- **régénérer quand la 0.129 du modèle sera publiée** (openfisca-tunisia, PR n° 490, ouverte le
+  9 octobre 2026) : elle ajoute aux assurances deux nœuds frères de `salaire_base` —
+  `salaire_base_avant_1993` (1975-1992, clos au 1er juin 1993) et
+  `salaire_base_avant_1993_grille_1_de_1990` (une seule date). Le générateur y est prêt, et un
+  test en imite la forme : la première sort « antérieure », la seconde « peu de dates », aucune
+  ne fournit de bas ni de haut, et `cc.autres_grilles("assurances")` — déjà appelé dans l'annexe —
+  les mentionnera avec leur période et leurs liens (un par ligne : 264 cases chacune). À faire
+  alors : relever la borne, régénérer, relire le libellé de leurs liens (il vient des
+  `short_label` des deux nœuds) et écrire dans la section des assurances ce que sont ces grilles
+  (hors indemnité complémentaire provisoire) ; le tableau `@tbl-mt-cc-grilles-hors-series` du
+  chapitre pourra alors renvoyer à l'annexe pour les assurances ;
+- **les 144 cases vides** : à relire sur un meilleur exemplaire des fascicules — textile mensuel,
+  grilles de 1994 (1 case), 1999 (42), 2000 (30), 2002, 2003 et 2004 (18 chacune, l'échelon 18
+  des dix-huit lignes) ; bâtiment mensuel, grilles de 1996 (7), 1998 (5), 2001, 2002, 2003 et
+  2004 (1 chacune) ; assurances, grille de 1996 (1). Le compte de l'annexe est calculé : il
+  baissera à la régénération quand une case sera lue en amont ;
+- **la vue en tableau des grandes grilles** : le site de la base législative ne rend pas en un
+  tableau un nœud de 200 cases ou plus ; si ce plafond est levé en amont (visualiseur des
+  paramètres), `PLAFOND_VUE_TABLEAU` se relève et chaque grille retrouve un lien unique ;
+- **une case tracée vide avant la dernière date publiée** : `cc.figure` la refuse par une erreur
+  explicite — le composant `figtools.figure_escalier` ne sait ni commencer un trait par une
+  valeur vide ni interrompre la vue en dinars constants (il relierait les années de part et
+  d'autre). Aucune case tracée n'est dans ce cas (les dix n'ont de vide que le 1er janvier
+  2026) ; à traiter dans `figtools` le jour où cela arrive ;
+- **deux grilles de même unité sous une même grandeur** ne se distingueraient pas (`grilles`) :
+  aucune branche versée n'en a ;
 - **les indemnités** (transport, présence, assiduité) : relevées en partie dans les notes, pas
   dans les paramètres ; le générateur les prendra sous un nœud frère de `salaire_base` ;
 - **les autres branches** : commerce, industrie hôtelière, mécanique et électricité d'abord
@@ -1294,8 +1358,10 @@ Ce qui lui manque :
   fascicules de l'édition française présents au corpus, à ouvrir ; grilles de 1990-1992 hors
   indemnité complémentaire provisoire (données au chapitre, non à l'annexe) ; pages des arrêtés et
   des avenants n° 6 à 18 dans l'édition arabe ;
-- **bâtiment, avenant n° 16** : second exemplaire du JORT n° 132 du 2 décembre 2022 à obtenir (ses
-  grilles sont données d'après la reproduction d'un site tiers, sans lien) ;
+- **bâtiment, avenant n° 16** : second exemplaire du JORT n° 132 du 2 décembre 2022 à obtenir. Les
+  deux grilles entières des 1er décembre 2021, 1er janvier 2023 et 1er janvier 2024 — 220 cases
+  par date — sont lues sur la reproduction d'un site tiers, sans lien ; l'annexe le dit pour les
+  deux grilles (section, note de lecture et réserve de chaque figure) ;
 - **assurances** : application du décret n° 2026-68 à la branche non établie. Les dix-huit clés
   `cc-assurances-*` — dont `cc-assurances-avenant11-grille-2015`, citée au registre
   `#r-cc-assurances-grille-2014` — sont tenues en double, à l'identique, dans les
@@ -1314,17 +1380,27 @@ Ce qui lui manque :
   en arabe, mais les noms des branches, des grilles et des cases y restent en français (les
   `short_label` du modèle n'existent qu'en français) : à trancher avec le relecteur de l'arabe,
   comme l'intitulé arabe du renvoi (`INTRO_BASE` de `figures/conventions.py`,
-  `cases` de `MOTS` dans le générateur) ;
-- **figures** : une figure en escalier par branche, par le composant commun. Chaque figure
-  trace, par unité, la case la plus basse et la plus haute d'après leur dernière valeur
-  (`_tracees` de `figures/conventions.py`) : dans celle des assurances, l'échelle 1, échelon 1,
-  et le quatorzième échelon de l'échelle 21 ; les douzième et treizième échelons ne se lisent
-  qu'à la vue de la grille. La légende de chaque figure est écrite d'après `cc_index.yml`. Pas de lecture
-  en dinars constants ni de rapport au SMIG dans l'annexe ;
-- **prose de l'annexe** (9 octobre 2026) : ni compte ni montant saisi — les nombres d'avenants,
-  de cases et de dates d'effet, et les montants, ne sont que dans les figures
-  engendrées ; le tableau d'ouverture ne porte plus que la création (signature, agrément, date
-  d'effet) et les cases tracées. Les tableaux des avenants du textile et du bâtiment restent
+  `cases` de `MOTS` dans le générateur) et les mentions arabes posées le 9 octobre 2026 avec les
+  grilles entières (`MOTS` de `figures/conventions.py` : en-têtes des deux tableaux, « سطرًا
+  بسطر », « الخانات الفارغة » ; `cases_ligne` du générateur) ;
+- **figures** : une figure en escalier par grille tracée, par le composant commun, en dinars
+  courants et en dinars de 2025 — cinq figures. Le bas et le haut viennent de l'index. Les
+  étiquettes `fig-mt-cc-annexe-textile` et `-batiment`, que cite le chapitre, restent celles des
+  grilles horaires ; les grilles mensuelles ont `-textile-mensuelle` et `-batiment-mensuelle`.
+  Dans la figure des assurances, les douzième et treizième échelons de l'échelle 21 ne se lisent
+  qu'à la vue de la ligne. Une grille tracée sans figure déclarée dans l'annexe fait échouer le
+  rendu (`autres_grilles`). Pas de rapport au SMIG dans l'annexe ;
+- **prose de l'annexe** (9 octobre 2026) : ni compte ni montant saisi — les nombres de lignes, de
+  colonnes, de cases, de dates d'effet et de cases vides sont au tableau `@tbl-cc-annexe-grilles`
+  et dans la phrase des cases vides, engendrés depuis l'index ; les montants ne sont que dans
+  les figures. Le tableau d'ouverture a une ligne par grille : création de la convention, grille
+  et unité, cases tracées. La forme de chaque grille (lignes, colonnes, cases, et la date où
+  elle change) est une phrase engendrée (`cc.formes_branche`, d'après `formes` de l'index) : les
+  totaux écrits en toutes lettres — sept, dix-sept ou dix-neuf catégories, onze, douze ou
+  quatorze échelons, vingt et une échelles — sont retirés des descriptions. Restent à la main
+  les noms et les numéros qui désignent (catégories I à IV-2, échelles 1 à 21, treizième et
+  quatorzième échelons créés par l'avenant n° 5) et les registres repliés, qui disent ce que
+  chaque texte fixe. Les tableaux des avenants du textile et du bâtiment restent
   faits main, avec leur titre de bloc et leurs bornes : à engendrer quand les avenants seront
   versés en amont ;
 - **chapitre** (9 octobre 2026) : le tableau replié `@tbl-mt-cc-grilles` (62 grilles, 1974-2026)

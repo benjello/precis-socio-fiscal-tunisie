@@ -1173,6 +1173,65 @@
         ]
       },
       "title-short": "Arrêté conjoint du 3 novembre 2025 (allocation familiale des 6 à 18 ans)"
+    },
+    {
+      "id": "mas-amen-social-2023",
+      "type": "report",
+      "note": "citation-key: mas-amen-social-2023\nRapport administratif du ministère (fichiers de paiement et crédits « affectés »), 48 p., en arabe. Date de parution et adresse de publication non établies : exemplaire transmis, aucune adresse d'origine vérifiée ; copie locale tunisia-data/data/raw/caisses/mas/amen_social_suivi_evaluation_2023_ar.pdf, SHA-256 977bad7bedd8de52baae49a269c7285eb97666c1f05795dd2bee5914198c7d2b (fiche sources/mas-amen-social-2023.md). Pages utilisées : PDF 36-38 (allocations pour enfants ; § 6.2 et tableau 13), lues le 9 octobre 2026 sur la couche texte arabe, dont l'ordre des mots est perturbé : citations à relire à l'image, en particulier la phrase des 20 D du don et des 10 D du budget (PDF 37). Discordances internes du rapport consignées dans docs/notes/prestations-sociales-lectures-2026-10-09.md, § 1.1.",
+      "title": "تقرير المتابعة والتقييم لبرنامج الأمان الاجتماعي لسنة 2023 [Rapport de suivi et d'évaluation du programme Amen social pour l'année 2023]",
+      "author": [
+        {
+          "literal": "Ministère des Affaires sociales, Instance générale de la promotion sociale"
+        }
+      ],
+      "number-of-pages": "48",
+      "language": "ar",
+      "title-short": "Rapport de suivi de l'Amen social pour 2023"
+    },
+    {
+      "id": "unicef2024allocations618",
+      "type": "report",
+      "note": "citation-key: unicef2024allocations618\nCouverture datée « MAI 2024 », 124 p. ; auteurs et bureau d'étude non relevés (page de crédits à lire). Rapport de l'organisme qui finance et accompagne le programme : rapport extérieur. MÉTHODE (p. 24-25 ; annexe 1, p. 88-105) : enquête téléphonique longitudinale en quatre vagues (2023-2024) auprès de ménages bénéficiaires ayant des enfants de 6 à 18 ans (2 239 ménages à la vague 1, 1 975 à la vague 4, taux de réponse 52 %), volet qualitatif ; pas de groupe de contrôle, donc aucun effet causal. UTILISÉ ICI pour les seules données du programme (p. 2, 19-20 : démarrage en juillet 2022, 30 D par enfant et par mois, 111 682 enfants en juillet 2022 et 422 683 en décembre 2023 ; note 4, p. 19), non pour ses estimations. Copie locale : tunisia-data/data/raw, unicef_2024_allocations_enfants_6_18_rapport.pdf, SHA-256 8011292c810ef2179afabdb5acd96afa9155157557c867cd8698ea1a0ff49eb7 ; adresse du catalogue de tunisia-data (collecte du 9 octobre 2026).",
+      "title": "Rapport de recherche sur le programme d'allocations familiales pour les 6-18 ans en Tunisie",
+      "author": [
+        {
+          "literal": "UNICEF Tunisie"
+        }
+      ],
+      "publisher": "UNICEF",
+      "number-of-pages": "124",
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            5
+          ]
+        ]
+      },
+      "URL": "https://www.unicef.org/tunisia/media/7871/file"
+    },
+    {
+      "id": "banquemondiale2026ppiaf000292",
+      "type": "report",
+      "note": "citation-key: banquemondiale2026ppiaf000292\nProject Paper, rapport n° PPIAF000292, projet P176352 ; date du 6 mars 2026 d'après la note documentaire du 9 octobre 2026. Rapport extérieur (bailleur du programme). UTILISÉ ICI pour des faits rapportés : § 13 et § 28 (pilote de l'allocation des 6 à 18 ans exécuté par l'UNICEF jusqu'en décembre 2024 ; décision d'octobre 2025 de l'instituer) ; § 4 (critères d'éligibilité du transfert permanent révisés par une « Ministerial Circular No. 53, issued in October 2025 » — le rapport de suivi ISR04716 du 25 novembre 2025 écrit « Circular No. 5 on October 3, 2025 »). Les parts du PIB de ce document ne disent pas leur base. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/wb_2026_social_protection_af2_ppiaf000292.pdf, SHA-256 071edb223a67237f35527143b719ed2b87b5c2e79bfc5c33275ccdd425d1db8c ; adresse du catalogue de tunisia-data (collecte du 9 octobre 2026).",
+      "title": "Tunisia Social Development Promotion Support Project – Second Additional Financing: Project Paper",
+      "author": [
+        {
+          "literal": "Banque mondiale"
+        }
+      ],
+      "publisher": "Banque mondiale",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            6
+          ]
+        ]
+      },
+      "URL": "https://documents.worldbank.org/curated/en/099031026105517065/pdf/BOSIB-4b996e72-5f8f-4efa-a0b6-e58471608bd1.pdf",
+      "genre": "Project Paper, rapport n° PPIAF000292"
     }
   ]
 }
