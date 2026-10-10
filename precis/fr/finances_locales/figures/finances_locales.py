@@ -131,6 +131,30 @@ figtools.register_provenance(
     fiche="sources/finances-locales-banque-mondiale.md",
 )
 
+# Le fichier de 2002-2012. Le catalogue de l'entrepôt range sous un même identifiant les trois
+# fichiers de la Banque mondiale et leurs trois rapports ; celui que cette série lit ne vient
+# que du document de 2014 : sa ligne de sources ne cite donc que lui.
+_M_BM2014 = figtools.meta(SERIE_BM2014)
+figtools.register_provenance(
+    SERIE_BM2014,
+    titre=("Finances des communes selon la Banque mondiale, 2002-2012 : recettes et dépenses "
+           "par titre, fonds commun, investissements et remboursement du capital (document "
+           "d'évaluation de 2014, tableau 1)"),
+    titre_ar="مالية البلديات حسب البنك الدولي، 2002-2012 (وثيقة التقييم لسنة 2014، الجدول 1)",
+    sources=["wb-pforr-pad-2014"],
+    unite="millions de dinars courants",
+    unite_ar="بملايين الدنانير الجارية",
+    perimetre=("communes ; agrégats des titres I et II ; le titre II comprend le "
+               "remboursement du capital"),
+    perimetre_ar="البلديات؛ مجاميع العنوانين الأول والثاني",
+    caveats=("Valeurs saisies depuis la page du document ; face aux agrégats de la Direction "
+             "générale des collectivités locales de 2008 à 2012, recettes du titre I "
+             "concordantes, écarts de 10 à 14 MD sur les dépenses du titre I et les ressources "
+             "du titre II. Série séparée, jamais fusionnée avec les autres."),
+    caveats_ar="قيم منقولة من صفحة الوثيقة. سلسلة منفصلة.",
+    fiche=_M_BM2014.get("fiche", "sources/finances-locales-banque-mondiale.md"),
+)
+
 # La série des lois de finances. Le catalogue de l'entrepôt la rattache à vingt et une clés,
 # une par loi de finances, que la bibliographie du volume ne porte pas : la source se dit en
 # une ligne, et chaque valeur garde sa loi, son fascicule et sa page dans les colonnes
