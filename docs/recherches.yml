@@ -2213,6 +2213,43 @@
   - recenser les fascicules de 2018-2026 absents du corpus
   - chercher les délibérations tarifaires au Journal officiel des collectivités locales
 
+- id: r-transport-tarifs-apres-2000
+  objet: acte fixant ou modifiant les tarifs du transport public collectif de personnes (réseaux urbains et suburbains, métro léger et TGM, interurbain par route, abonnements scolaires) après les arrêtés du ministre du transport du 6 février 1999 (interurbain) et du 17 février 2000 (urbain) — relèvements constatés par l'INS entre mars 2000 et novembre 2007, en août 2010 et en juin 2021
+  ou: [precis/fr/compensation/_transport.qmd#sec-compensation-transport-etat-du-droit]
+  requetes:
+    titres_fts: [tarifs AND transport]
+    titres_like: ['%transport scolaire%', '%abonnement%scolaire%', '%transport public collectif%', '%metro leger%']
+    iort_ar: [تعريفات النقل, تعريفة النقل, الاشتراكات المدرسية, معاليم النقل, النقل العمومي]
+    depuis: 2000-02-25
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Titres de jort_cache seulement, dernière publication indexée le 2 octobre 2026. Requêtes jouées en plus de celles du champ requetes, en SQL : titre like ''%tarif%'' avec ''%transport%'', ''%voyageurs%'', ''%metro%'', ''%chemins de fer%'', ''%louage%'' ou ''%taxi%'' depuis le 1er janvier 2000 ; titre like ''%abonnement%'' avec ''%scolaire%'' ou ''%transport%'' ; ''%eleves%'' ou ''%etudiants%'' avec ''%transport%'' ; ''%تعريف%'' avec ''%النقل%'' ou ''%نقل%'' ; ''%اشتراكات%'' ; arrêtés portant « transport » ou « النقل » au titre ou au ministère dans trois fenêtres de signature (mars 2000-novembre 2007 : 115 arrêtés ; juin-septembre 2010 : aucun ; avril-juin 2021 : 3), filtrés sur prix, tarif, سعر, أسعار, تعريف, voyageurs, personnes. Après le 17 février 2000, aucune réponse ne porte sur un tarif de transport collectif de personnes (ports, manutention, marchandises, amendes transactionnelles, autorisations). NON FAIT : plein texte des fascicules ; miroir iort ; fascicules inconnus de la base ; lecture des 115 arrêtés de 2000-2007 au-delà de leur intitulé. Voie latérale ouverte, hors Journal officiel : INS, Bulletin mensuel de la statistique, prix du billet d''autobus à Tunis (450 jusqu''en juillet 2010, 470 d''août 2010 à mai 2021, 500 depuis juin 2021).'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - jouer le plein texte (« tarifs de transport », « abonnements scolaires ») sur les fascicules de 2000 à 2010 et de 2021
+  - chercher les communiqués de la société des transports de Tunis et de la SNCFT aux archives du web (2003, 2005, 2008, 2010, 2021)
+  - relever dans le Bulletin mensuel de la statistique antérieur à novembre 2008, s'il est obtenu, le mois de chaque relèvement entre 2000 et 2007
+
+- id: r-transport-decret-manque-a-gagner
+  objet: décret fixant la méthode de calcul du manque à gagner des transporteurs publics de personnes en cas de gratuité ou de tarifs réduits (loi n° 2004-33 du 19 avril 2004, art. 12), et décret fixant l'assiette et le recouvrement du droit sur le transport collectif public dû par les bénéficiaires (même loi, art. 11) — autres que le décret gouvernemental n° 2017-987 du 17 août 2017, limité aux corps actifs
+  ou: [precis/fr/compensation/_transport.qmd#sec-compensation-transport-etat-du-droit]
+  requetes:
+    titres_fts: [manque gagner OR (gratuite AND transport) OR (tarifs AND reduits AND transport)]
+    iort_ar: [النقل العمومي, 33 لسنة 2004]
+    depuis: 2004-04-20
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Titres de jort_cache seulement, dernière publication indexée le 2 octobre 2026. Requêtes jouées en plus, en SQL : titre like ''%gratuit%'', ''%reduction%'' ou ''%tarif reduit%'' avec ''%transport%'' ; ''%handicap%'' avec ''%transport%'' ou ''%gratuit%'' ; ''%compensation%'' avec ''%transport%''. « النقل العمومي » depuis 2000 rend quatre notices, dont le décret gouvernemental n° 2017-987 (intitulé arabe seul à l''index ; lu à l''image dans l''édition arabe, JORT n° 70-71 de 2017, p. 2970-2971). « 33 لسنة 2004 » rend deux notices sans rapport (décret gouvernemental n° 2016-1101 ; arrêté du 10 octobre 2019 sur les amendes transactionnelles). Trouvés par ailleurs : arrêtés du 25 juin 1998 (douanes) et du 24 juin 2011 (sûreté intérieure). Constat extérieur concordant, qui ne vaut pas preuve d''inexistence : la Cour des comptes relève l''absence des deux décrets en octobre 2007 (rapport mis en ligne en 2008, p. 99) puis dans son rapport mis en ligne en juin 2016 (p. 281). NON FAIT : plein texte, miroir iort.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - jouer le plein texte (« manque à gagner », « droit sur le transport collectif ») sur les fascicules de 2004 à 2026
+  - lire l'arrêté du 15 août 2011 sur la gratuité des agents des forces de sûreté intérieure relevant du ministère de la justice, visé par le décret n° 2017-987
 - id: r-fisc-art63-decret-zones
   objet: décret gouvernemental fixant, pour l'article 63 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés (loi n° 2017-8, art. 1er), la liste des zones de développement régional et des activités exclues — soit un texte propre, soit la confirmation par un texte que l'annexe n° 2 du décret gouvernemental n° 2017-389 en tient lieu
   ou: [precis/fr/fiscalite/_depenses_fiscales.qmd#sec-df-zones-carte]
