@@ -701,10 +701,11 @@ from figures import entreprises_publiques as ep
 ep.tableau_etude(
     "wb-tunisia-per-2020",
     caption=("Chiffres d'ensemble de la revue des dépenses publiques de la Banque mondiale, "
-             "tels qu'elle les imprime. Les pages non numérotées sont données par leur rang "
-             "dans le fichier. Source : Banque mondiale [@wb-tunisia-per-2020]"),
+             "tels qu'elle les imprime. Source : Banque mondiale [@wb-tunisia-per-2020]"),
     tbl_id="tbl-ep-banque-mondiale")
 ```
+
+<!-- TODO (documentaliste) : dans le tableau de la Banque mondiale, la page « 11 » est le rang de la page dans le fichier (résumé exécutif, sans numéro imprimé relevé) et non un numéro imprimé ; relever le numéro imprimé, ou citer par section du rapport (« Executive Summary »). La page 42 est imprimée. -->
 
 La part des entreprises publiques dans le PIB — « between 9 and 10 percent of GDP » — est, selon la Banque mondiale, une estimation du gouvernement, qu'elle rapporte sans en donner la méthode.
 

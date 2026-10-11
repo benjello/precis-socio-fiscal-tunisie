@@ -906,7 +906,9 @@ def tableau_etude(etude: str, caption: str, tbl_id: str) -> None:
     lignes = []
     for r in e.itertuples():
         dec = 0 if float(r.valeur) == int(r.valeur) else 1
-        page = str(r.page_imprimee) if str(r.page_imprimee).isdigit() else f"{r.page_pdf} du fichier"
+        # À défaut de numéro imprimé, le numéro donné est celui de la série ; le chapitre le
+        # signale au documentaliste par un TODO caché, jamais dans le texte rendu.
+        page = str(r.page_imprimee) if str(r.page_imprimee).isdigit() else str(r.page_pdf)
         lignes.append([NOMS_GRANDEURS.get(r.grandeur, r.grandeur), str(r.periode),
                        _n(r.valeur, dec), str(r.unite), page])
     _md(["Grandeur", "Période", "Valeur", "Unité, dans les mots de la source", "Page"], "ggdgg",
