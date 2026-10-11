@@ -6,7 +6,7 @@ La série du poste « transport » de la dépense de compensation — 111,0 mill
 
 La [compensation du transport](#g-compensation-transport) n'est pas un fonds : c'est une somme de subventions par société, inscrites aux dépenses d'intervention du ministère du Transport sous le libellé « soutien du transport public ». Elle rémunère des tarifs que l'État impose aux transporteurs publics au-dessous du tarif ordinaire. Le ministère des Finances en nomme trois composantes quand il explique la hausse du poste en 2010 : le nombre de bénéficiaires du transport scolaire et universitaire, le transport à tarifs réduits et le transport gratuit de certaines catégories [@minfin-finances-publiques-2010, p. 34 du PDF]. Le budget de 2013 affecte la hausse de l'année, 52,5 MD, en particulier au transport scolaire et universitaire [@minfin-budget-transport-2013, p. 6 du PDF].
 
-Le @fig-compensation-transport-soutien donne la répartition de ces crédits entre les sociétés, de 2012 à 2017, seules années où elle est publiée société par société.
+Le @fig-compensation-transport-soutien donne la répartition de ces crédits entre les sociétés, de 2012 à 2017, seules années pour lesquelles elle est établie ici société par société.
 
 ```{python}
 #| label: fig-compensation-transport-soutien
@@ -46,10 +46,10 @@ tr.figure(
 
 Quatre faits s'y lisent.
 
-- **Les sociétés régionales d'abord.** Elles reçoivent chaque année 55 à 58 % des crédits ; la société des transports de Tunis, 29 à 31 % ; la SNCFT, 11 à 12 %.
+- **Les sociétés régionales d'abord.** Elles reçoivent chaque année de 55,0 à 57,6 % des crédits ; la société des transports de Tunis, de 28,8 à 31,0 % ; la SNCFT, de 10,9 à 11,9 %.
 - **Un périmètre plus large que le transport terrestre.** Le bac de Kerkennah reçoit 4,0 MD en 2012 et 10,0 MD en 2017 ; la compagnie aérienne Tunisair Express entre dans la ligne avec la loi de finances complémentaire pour 2014 — 5,0 MD, pris sur les crédits de la SNCFT et des sociétés régionales — et reçoit 5,0 MD en 2015, 2,0 MD en 2016 et 3,0 MD en 2017.
 - **Des crédits, non des dépenses constatées.** Leur somme égale le poste « transport » voté. Le réalisé s'en écarte peu : 384,0 MD pour 385,0 en 2014, 415,9 MD pour 416,0 en 2015, 448,2 MD pour 450,0 en 2017 (@tbl-compensation-2012-2025).
-- **Aucune décomposition par nature.** Le budget ne sépare pas le scolaire, les tarifs réduits et les gratuités ; la part de chacun dans le poste n'est publiée par aucune source budgétaire.
+- **Aucune décomposition par nature.** Le budget ne sépare pas le scolaire, les tarifs réduits et les gratuités ; la part de chacun dans le poste n'est donnée par aucune des sources budgétaires identifiées.
 
 Avant 2012 et après 2017, cette répartition par société n'est pas établie. Un rapport du ministère des Finances donne, de 2016 à 2024, les « interventions » du budget par entreprise, sur un périmètre plus large que le poste (@sec-compensation-transport-interventions).
 
@@ -59,17 +59,17 @@ Avant 2012 et après 2017, cette répartition par société n'est pas établie. 
 
 Avant 1984, aucun texte identifié ne fait payer par l'État, ni par un fonds, l'écart entre un tarif réduit et le tarif ordinaire. Ce qui porte alors le nom de « compensation » dans les transports est une caisse de la profession : les transporteurs routiers l'alimentent, et elle sert les transporteurs.
 
-- **Des taxes de compensation sur les transports automobiles, à partir de 1948.** Un arrêté du 23 février 1948, refondu le 28 février 1957 et modifié jusqu'en 1965, institue des « taxes de compensation sur les transports automobiles ». Seuls les intitulés de ces textes sont connus ici.
+- **Des taxes de compensation sur les transports automobiles, à partir de 1948.** Un arrêté du 23 février 1948, refondu le 28 février 1957 et modifié jusqu'en 1965, porte sur des « taxes de compensation sur les transports automobiles ». Seuls les intitulés de ces textes sont connus ici.
 - **Une caisse spéciale, en 1963.** L'État institue par [la loi n° 63-13 du 27 mai 1963](#r-tr-1963) la « caisse spéciale de compensation des transports routiers ». Ses ressources sont prélevées sur les transporteurs : une surtaxe de 1950, une taxe de 1957 sur les taxis et une redevance par tonne autorisée. Elle secourt d'anciens titulaires de licences et subventionne des sociétés de transport. Elle ne finance aucun tarif.
 - **Les centres de visite technique, en 1978.** [La loi de finances pour 1978](#r-tr-1978) ajoute aux emplois de la caisse la création et le fonctionnement des centres de visite technique des véhicules, et à ses ressources le droit de visite.
 
-Le plan du chapitre place donc la naissance de la compensation du transport, au sens d'un tarif préférentiel payé par un tiers, en 1984 et non en 1963 (@sec-compensation-transport-1984).
+La compensation du transport, au sens d'un tarif préférentiel payé par un tiers, naît donc en 1984, et non en 1963 (@sec-compensation-transport-1984).
 
 :::: {.chronologie-repliable titre="Caisse spéciale de compensation des transports routiers et taxes de compensation sur les transports automobiles : textes, date par date, 1948-1982"}
 
 | Effet | Portée | Texte et articles | Avant → après |
 |---|---|---|---|
-| [23 février 1948]{.insecable} | point de départ | arrêté du 23 février 1948 ; refonte par un arrêté du 28 février 1957 ; modifications jusqu'au décret n° 65-303 du 15 juin 1965 | taxes de compensation sur les transports automobiles ; seuls les intitulés de ces textes sont connus ici |
+| non établie | point de départ | arrêté du 23 février 1948 ; refonte par un arrêté du 28 février 1957 ; modifications jusqu'au décret n° 65-303 du 15 juin 1965 | taxes de compensation sur les transports automobiles ; seuls les intitulés de ces textes sont connus ici |
 | []{#r-tr-1963}[1^er^ janvier 1963]{.insecable} | étape | loi n° 63-13 du 27 mai 1963 [@loi63-13] | caisse spéciale de compensation des transports routiers : ressources prélevées sur les transporteurs (surtaxe de 1950, taxe de 1957 sur les taxis, redevance par tonne autorisée) ; secours à d'anciens titulaires de licences et subventions à des sociétés |
 | []{#r-tr-1978}[1^er^ janvier 1978]{.insecable} | ajustement | loi n° 77-81 du 31 décembre 1977, loi de finances pour 1978 [@lf-1978, art. 37 et 38] | la caisse finance aussi, en tout ou en partie, la création et le fonctionnement des centres de visite technique, et reçoit le droit de visite |
 | [1^er^ janvier 1982]{.insecable} | ajustement | loi n° 81-100 du 31 décembre 1981, loi de finances pour 1982, art. 110 | disposition sur la « caisse spéciale des transports routiers » ; seul l'intitulé de l'article est connu ici |
@@ -164,14 +164,14 @@ Cette gratuité n'est donc pas inscrite au soutien du transport public du minist
 |---|---|---|---|
 | []{#r-tr-1984-caisse}[1^er^ janvier 1984]{.insecable} | **rupture** | loi n° 83-113 du 30 décembre 1983, loi de finances pour 1984 [@lf-1984, art. 99 à 103, p. 3385-3386] | caisse spéciale de 1963, financée par les transporteurs, sans objet tarifaire → caisse de compensation et de soutien des transports routiers, fonds spécial du Trésor : subventions d'exploitation pour les tarifs préférentiels (art. 100) ; ressources : droit de visite technique, 40 % de la taxe unique de compensation de transports routiers, remboursements de prêts (art. 101) ; programme d'emploi arrêté par le ministre des finances sur proposition du ministre des transports et des communications, prévisions de dépenses évaluatives (art. 102) ; suppression de la caisse de 1963 (art. 103) |
 | []{#r-tr-1984-taxe}[1^er^ janvier 1984]{.insecable} | **rupture** (même réforme) | loi n° 83-113 du 30 décembre 1983 [@lf-1984, art. 38 et 39, p. 3378 ; tableau F] | taxe unique de compensation de transports routiers, due chaque mois par véhicule (@tbl-compensation-transport-taxe-1984) ; prévision de la caisse pour 1984 : 5 600 000 D |
-| [21 mars 1984]{.insecable} | ajustement | loi n° 84-2 du 21 mars 1984, loi de finances complémentaire | réduction du taux de la taxe unique ; seul l'intitulé de la disposition est connu ici |
-| []{#r-tr-1985}[août 1985]{.insecable} | étape | loi n° 85-77 du 4 août 1985 portant organisation des transports terrestres [@loi85-77, art. 7 et 10] | principes tarifaires : couverture des coûts réels du service (art. 7) ; politique tarifaire définie par le ministre (art. 10) |
-| []{#r-tr-2001}[novembre 2001]{.insecable} | étape | décret n° 2001-2621 du 9 novembre 2001 [@decret2001-2621, art. 10, 19, 20 et 27] | cahier des charges de la SNCFT : hausse des tarifs interurbains limitée à 3 % par an (art. 10) ; contribution pour obligation de service public (art. 19 et 20) ; déficit des banlieues compensé par contrat, tarifs réduits et gratuités des grandes lignes compensés sur la base du tarif moyen pondéré (art. 27) |
-| []{#r-tr-2003}[avril 2003]{.insecable} | étape institutionnelle | loi n° 2003-33 du 28 avril 2003 [@loi2003-33] | société nationale des transports et société du métro léger de Tunis → une seule entreprise ; seul l'intitulé de la loi est connu ici |
-| []{#r-tr-2004}[avril 2004]{.insecable} | **rupture** | loi n° 2004-33 du 19 avril 2004 portant organisation des transports terrestres [@loi2004-33, art. 6, 11 et 12] | l'État fixe les tarifs et les règles de financement (art. 6) ; financement par les usagers, l'État, les autorités régionales et les bénéficiaires indirects (art. 11) ; gratuité et tarifs réduits compensés par l'autorité qui les décide, selon une méthode fixée par décret (art. 12) |
-| []{#r-tr-2017}[septembre 2017]{.insecable} | étape (de la rupture de 2004) | décret gouvernemental n° 2017-987 du 17 août 2017 [@decret-gouv2017-987, art. 1 à 4] | gratuité des corps actifs : coût annuel fixé au forfait et réparti par société (art. 2) ; conventions, quatre tranches trimestrielles (art. 3) ; charge du budget du ministère concerné (art. 4) |
+| non établie | ajustement | loi n° 84-2 du 21 mars 1984, loi de finances complémentaire | réduction du taux de la taxe unique ; seul l'intitulé de la disposition est connu ici |
+| []{#r-tr-1985}non établie | étape | loi n° 85-77 du 4 août 1985 portant organisation des transports terrestres, fascicule du 9 août 1985 [@loi85-77, art. 7 et 10] | principes tarifaires : couverture des coûts réels du service (art. 7) ; politique tarifaire définie par le ministre (art. 10) |
+| []{#r-tr-2001}non établie | étape | décret n° 2001-2621 du 9 novembre 2001, fascicule du 16 novembre 2001 [@decret2001-2621, art. 10, 19, 20 et 27] | cahier des charges de la SNCFT : hausse des tarifs interurbains limitée à 3 % par an (art. 10) ; contribution pour obligation de service public (art. 19 et 20) ; déficit des banlieues compensé par contrat, tarifs réduits et gratuités des grandes lignes compensés sur la base du tarif moyen pondéré (art. 27) |
+| []{#r-tr-2003}non établie | étape institutionnelle | loi n° 2003-33 du 28 avril 2003, fascicule du 29 avril 2003 [@loi2003-33] | société nationale des transports et société du métro léger de Tunis → une seule entreprise ; seul l'intitulé de la loi est connu ici |
+| []{#r-tr-2004}non établie | **rupture** | loi n° 2004-33 du 19 avril 2004 portant organisation des transports terrestres, fascicule du 20 avril 2004 [@loi2004-33, art. 6, 11 et 12] | l'État fixe les tarifs et les règles de financement (art. 6) ; financement par les usagers, l'État, les autorités régionales et les bénéficiaires indirects (art. 11) ; gratuité et tarifs réduits compensés par l'autorité qui les décide, selon une méthode fixée par décret (art. 12) |
+| []{#r-tr-2017}non établie | étape (de la rupture de 2004) | décret gouvernemental n° 2017-987 du 17 août 2017, fascicule des 1^er^-5 septembre 2017 [@decret-gouv2017-987, art. 1 à 4] | gratuité des corps actifs : coût annuel fixé au forfait et réparti par société (art. 2) ; conventions, quatre tranches trimestrielles (art. 3) ; charge du budget du ministère concerné (art. 4) |
 
-: Les textes de la compensation du transport public, 1984-2017. La colonne « Effet » donne le mois de publication quand le texte n'énonce pas de date d'effet. {#tbl-compensation-transport-textes}
+: Les textes de la compensation du transport public, 1984-2017. La date d'effet est dite « non établie » quand elle n'est pas relevée dans le texte ; la date du fascicule du *Journal officiel* est alors donnée avec le texte. {#tbl-compensation-transport-textes}
 
 ::::
 
@@ -199,7 +199,7 @@ Trois régimes dérogent au tarif ordinaire ; chacun est détaillé dans sa sect
 
 : Les trois régimes dérogatoires au tarif ordinaire du transport public, en octobre 2026. {#tbl-compensation-transport-regimes}
 
-Les bénéficiaires de l'abonnement scolaire, des gratuités et des tarifs réduits autres que ceux des corps actifs sont ceux des arrêtés de 1998 : aucun texte postérieur qui les modifie n'est identifié.
+L'abonnement scolaire, les tarifs réduits et les gratuités des enfants, des personnes handicapées, des agents de contrôle et des douaniers sont ceux des arrêtés de 1998 : aucun texte postérieur qui les modifie n'est identifié. Les gratuités des forces de sécurité et des blessés de la révolution viennent de textes de 2011, de 2012 et de 2017.
 
 ### Comment la subvention se calcule
 
@@ -260,7 +260,7 @@ L'INS relève chaque mois, parmi les prix moyens de détail à Tunis, un billet 
 - **En 2021, une refonte autant qu'une hausse.** Selon la presse, qui reprend l'agence Tunis Afrique Presse, les tickets d'autobus de la société des transports de Tunis sont ramenés le 1^er^ juin 2021 à trois paliers : 500 millimes pour les sections 1 à 3, vendues jusque-là 320, 470 et 650 millimes ; 1 dinar pour les sections 4 à 6, vendues 800, 970 et 1 170 millimes ; 1,5 dinar pour les sections 7 à 10, vendues 1 350, 1 850 et 2 150 millimes [@presse-wmc-2021-05-30]. Le ticket d'une section augmente de 56 % ; celui de trois sections baisse.
 - **Ce que mesure le billet de l'INS.** Ses 470 millimes sont, la veille du relèvement de 2021, le prix du ticket de deux sections selon la presse. C'est un recoupement, non une définition publiée par l'INS, et il ne permet pas de relier d'un trait les 390 millimes du ticket de deux sections de 1998 aux 450 millimes de 2007.
 
-Aucun acte ne porte ces deux relèvements au *Journal officiel* (@sec-compensation-transport-etat-du-droit).
+L'acte qui porte chacun de ces deux relèvements n'est pas identifié (@sec-compensation-transport-etat-du-droit).
 
 :::: {.chronologie-repliable titre="Tarifs du transport public de personnes fixés par arrêté : tickets, abonnements ordinaires et tarifs interurbains, date par date, 1987-2000"}
 
@@ -269,7 +269,7 @@ Aucun acte ne porte ces deux relèvements au *Journal officiel* (@sec-compensati
 | []{#r-tr-t-1987}[16 février 1987]{.insecable} | point de départ | arrêté du 14 février 1987 [@arrete-1987-02-14-tarifs-voyageurs, art. 5, p. 261] | ticket d'une section 140 millimes, de deux sections 210, de trois 280, de quatre 350, de cinq 420 ; tarif réduit 120 ; abonnement annuel ordinaire 102 D (une section) et 125 D (deux sections) ; interurbain : 200 millimes de 0 à 10 km, 20 par place-kilomètre jusqu'à 150 km, 16 au-delà |
 | []{#r-tr-t-1989}[31 août 1989]{.insecable} | étape | arrêté du 10 août 1989, réseaux urbains [@arrete-1989-08-10-tarifs-urbains, p. 1282-1284] | tickets : 140, 210, 280, 350, 420 → 150, 240, 310, 390, 470 millimes ; tarif réduit 120 → 130 ; abonnement annuel ordinaire 102 → 112,500 D et 125 → 137,500 D ; abonnement scolaire d'une ligne urbaine 14,800 D |
 | [31 août 1989]{.insecable} | étape | arrêté du 10 août 1989, interurbain [@arrete-1989-08-10-tarifs-interurbains, p. 1285-1286] | 200 → 220 millimes de 0 à 10 km ; 20 → 22 par place-kilomètre jusqu'à 150 km ; 16 → 18 au-delà |
-| [automne 1989]{.insecable} | ajustement | arrêté du 30 septembre 1989, JORT n° 67, p. 1584-1586 | modifie l'arrêté urbain du 10 août 1989 ; seul son intitulé est connu ici, et le barème de l'automne 1989 n'est pas établi |
+| non établie | ajustement | arrêté du 30 septembre 1989, JORT n° 67, p. 1584-1586 | modifie l'arrêté urbain du 10 août 1989 ; seul son intitulé est connu ici, et le barème de l'automne 1989 n'est pas établi |
 | []{#r-tr-t-1990}[12 août 1990]{.insecable} | étape | arrêté du 30 juillet 1990, réseaux urbains [@arrete-1990-07-30-tarifs-urbains, p. 1045-1048] | tickets → 170, 260, 340, 430, 520 millimes ; tarif réduit 130 → 140 ; abonnement annuel ordinaire 112 D et 138 D ; abonnement scolaire inchangé |
 | [12 août 1990]{.insecable} | étape | arrêté du 30 juillet 1990, interurbain [@arrete-1990-07-30-tarifs-interurbains, p. 1048] | 245 millimes de 0 à 10 km ; 24,5 par place-kilomètre ; 20 au-delà de 150 km |
 | []{#r-tr-t-1991}[14 juillet 1991]{.insecable} | étape | arrêté du 2 juillet 1991, réseaux urbains [@arrete-1991-07-02-tarifs-urbains, p. 1294-1297] | tickets → 190, 290, 380, 480, 580 millimes ; tarif réduit 140 → 160 ; abonnement annuel ordinaire 126 D et 155 D ; abonnement scolaire 14,800 → 16,300 D |
@@ -313,7 +313,7 @@ L'abonnement scolaire est le tarif préférentiel qui commande le poste : l'él�
 - **L'abonnement scolaire monte moins vite que le ticket.** De 1989 à 1998, il augmente de 31 %, quand le ticket d'une section passe de 150 à 260 millimes, soit 73 % de plus (@tbl-compensation-transport-tarifs-reperes). En dinars de 2025, il recule de 81,0 à 68,3 D.
 - **D'autres abonnements scolaires, en 1998.** Zone urbaine 28,900 D ; ligne suburbaine de trois sections et plus 41,700 D ; réseau général 53,200 D ; métro, une ligne 19,400 D et le réseau 37,860 D ; TGM en deuxième classe 48,100 D.
 
-Après 1998, aucun barème n'est publié. Deux indications subsistent, qui ne se mettent pas en série avec lui. L'INS relève à Tunis un « abonnement scolaire (bus) », dont il ne dit ni la durée ni le réseau : 23,7 D de novembre 2007 à juillet 2010, environ 24 à 25 D jusqu'en août 2024, puis 25,850 D à partir de septembre 2024 — soit, en dinars de 2025, 61,4 D en moyenne en 2008 et 25,9 D en 2025 [@ins-bms]. La presse rapporte en mars 2018 les abonnements scolaires annuels de la société des transports de Tunis : 36,500 D pour la zone urbaine d'autobus, 66,250 D pour le réseau général d'autobus, 60,050 D pour le TGM en deuxième classe [@presse-tuniscope-2018-03-06] — environ 25 % de plus qu'au barème de 1998, vingt ans plus tard.
+Aucun barème de l'abonnement scolaire postérieur à 1998 n'est identifié (@sec-compensation-transport-etat-du-droit). Deux indications subsistent, qui ne se mettent pas en série avec lui. L'INS relève à Tunis un « abonnement scolaire (bus) », dont il ne dit ni la durée ni le réseau : 23,7 D de novembre 2007 à juillet 2010, environ 24 à 25 D jusqu'en août 2024, puis 25,850 D à partir de septembre 2024 — soit, en dinars de 2025, 61,4 D en moyenne en 2008 et 25,9 D en 2025 [@ins-bms]. La presse rapporte en mars 2018 les abonnements scolaires annuels de la société des transports de Tunis : 36,500 D pour la zone urbaine d'autobus, 66,250 D pour le réseau général d'autobus, 60,050 D pour le TGM en deuxième classe [@presse-tuniscope-2018-03-06] — environ 25 % de plus qu'au barème de 1998, vingt ans plus tard.
 
 Le @fig-compensation-transport-abonnements-prix met en regard, sur une échelle logarithmique, l'abonnement ordinaire et l'abonnement scolaire des arrêtés, puis le relevé de l'INS.
 
@@ -388,11 +388,11 @@ Le nombre d'abonnements scolaires est donné à la section de la longue période
 |---|---|---|---|
 | [31 août 1989]{.insecable} | point de départ | arrêté du 10 août 1989, réseaux urbains [@arrete-1989-08-10-tarifs-urbains, art. 11] | tarif réduit du ticket pour les enfants, les militaires, les journalistes et les invalides |
 | []{#r-tr-g-1998}[6 mai 1998]{.insecable} | étape | arrêté du 27 avril 1998 [@arrete-1998-04-27-tarifs-urbains, art. 10, 11 et 12] | gratuité : enfants de moins de trois ans, titulaires de la carte de handicapé et leur accompagnant, agents de contrôle du ministère du Transport (art. 10) ; tarif réduit : enfants de trois à sept ans, militaires, journalistes, invalides (art. 11) ; réduction jusqu'à 90 % pour certaines catégories, au choix de la société (art. 12) |
-| []{#r-tr-g-douanes}[juillet 1998]{.insecable} | ajustement | arrêté des ministres du transport et des finances du 25 juin 1998 [@arrete-1998-06-25-gratuite-douanes, art. 1 et 2, p. 1422] | gratuité des agents des douanes en uniforme sur les lignes intérieures des sociétés nationales et régionales, dans les zones que l'arrêté énumère |
-| []{#r-tr-g-2011}[juin 2011]{.insecable} | étape | arrêté conjoint du 24 juin 2011 [@arrete-2011-06-24-gratuite-surete, art. 1 à 4, p. 1100-1101] | gratuité des agents des forces de sûreté intérieure sur tous les réseaux publics (art. 1 à 3) ; « sont imputées sur le budget de l'État […] les compensations dues en raison des services rendus par les sociétés de transport » (art. 4) ; remplace un arrêté du 2 janvier 1999 |
-| []{#r-tr-g-2012}[décembre 2012]{.insecable} | ajustement | loi n° 2012-26 du 24 décembre 2012 [@loi2012-26] | gratuité du transport des blessés de la révolution et des familles des martyrs ; seul l'intitulé de la loi est connu ici, la règle étant rapportée par la Cour des comptes |
+| []{#r-tr-g-douanes}non établie | ajustement | arrêté des ministres du transport et des finances du 25 juin 1998, fascicule du 3 juillet 1998 [@arrete-1998-06-25-gratuite-douanes, art. 1 et 2, p. 1422] | gratuité des agents des douanes en uniforme sur les lignes intérieures des sociétés nationales et régionales, dans les zones que l'arrêté énumère |
+| []{#r-tr-g-2011}non établie | étape | arrêté conjoint du 24 juin 2011, fascicule du 28 juin 2011 [@arrete-2011-06-24-gratuite-surete, art. 1 à 4, p. 1100-1101] | gratuité des agents des forces de sûreté intérieure sur tous les réseaux publics (art. 1 à 3) ; « sont imputées sur le budget de l'État […] les compensations dues en raison des services rendus par les sociétés de transport » (art. 4) ; remplace un arrêté du 2 janvier 1999 |
+| []{#r-tr-g-2012}non établie | ajustement | loi n° 2012-26 du 24 décembre 2012, fascicule du 28 décembre 2012 [@loi2012-26] | gratuité du transport des blessés de la révolution et des familles des martyrs ; seul l'intitulé de la loi est connu ici, la règle étant rapportée par la Cour des comptes |
 
-: Les textes des gratuités et des tarifs réduits, 1989-2012. Le décret de 2017 sur les corps actifs est au registre des grandes réformes (@tbl-compensation-transport-textes). La colonne « Effet » donne le mois de publication quand le texte n'énonce pas de date d'effet. {#tbl-compensation-transport-gratuites-textes}
+: Les textes des gratuités et des tarifs réduits, 1989-2012. Le décret de 2017 sur les corps actifs est au registre des grandes réformes (@tbl-compensation-transport-textes). La date d'effet est dite « non établie » quand elle n'est pas relevée dans le texte ; la date du fascicule est alors donnée avec le texte. {#tbl-compensation-transport-gratuites-textes}
 
 ::::
 
@@ -438,7 +438,7 @@ tr.figure(
 
 ### Les transferts du budget par entreprise, 2016-2024 {#sec-compensation-transport-interventions}
 
-Après 2017, la répartition du poste par société n'est plus publiée. Le ministère des Finances donne en revanche, dans un rapport annexé au projet de loi de finances, les transferts du budget à chaque entreprise publique, par nature ; la colonne des « interventions » du ministère du Transport est la plus proche du poste, sans s'y confondre.
+Après 2017, la répartition du poste par société n'est pas établie ici. Le ministère des Finances donne, dans un rapport annexé au projet de loi de finances, les transferts du budget à chaque entreprise publique, par nature ; la colonne des « interventions » du ministère du Transport est la plus proche du poste, sans s'y confondre.
 
 ```{python}
 #| label: fig-compensation-transport-interventions

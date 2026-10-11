@@ -169,8 +169,8 @@ PROVENANCE = {
                    "de Tunis et TGM (hors colonnes propres aux sociétés de Sfax et du Sahel)"),
         caveats=("Tarif à sa date d'effet. La date d'effet des arrêtés du 26 août 1993 et du "
                  "17 février 2000 n'est pas établie. Un arrêté du 30 septembre 1989, qui modifie "
-                 "celui du 10 août 1989, n'est connu que par son intitulé. Aucun tarif n'est "
-                 "publié au Journal officiel après février 2000.")),
+                 "celui du 10 août 1989, n'est connu que par son intitulé. Aucun tarif "
+                 "postérieur à février 2000 n'est identifié au Journal officiel.")),
     INS: dict(
         perimetre=("INS, Bulletin mensuel de la statistique, tableau des prix moyens de détail "
                    "à Tunis, numéros de novembre 2008 à juillet 2026 : billet d'autobus, billet "
