@@ -3223,3 +3223,51 @@
     توزيع سنة 1956 غير متوفّر. لا ربط ولا استكمال. الفوارق بين النشريات مُشار إليها
     دون تصحيح.'
   fiche: sources/ins-recensements-population-milieu.md
+- id: ins-commerce-exterieur-par-regime
+  titre: 'Commerce extérieur par régime (général / off shore) : exportations et importations
+    de biens, 1998-2023 (INS, Annuaire statistique, tableau 14.2)'
+  sources:
+  - ins-annuaire
+  build: uv run python scripts/build_ins_commerce_exterieur_par_regime.py
+  raw:
+  - sources/transcriptions/ins-commerce-exterieur-par-regime.csv
+  output: data/processed/ins-publications/commerce_exterieur_par_regime_1998_2023.csv
+  unite: millions de dinars courants ; part_off_shore_pct en % (calculée)
+  perimetre: INS, Annuaire statistique de la Tunisie, chapitre 14, tableau 14.2 «
+    Évolution des échanges par groupement sectoriel d'activité », lignes « Ensemble
+    des Produits », « régime général » et « régime off shore » ; échanges de biens,
+    valeur ; une ligne par année et par flux (exportations, importations), 1998-2023
+    ; valeur de la DERNIÈRE édition qui imprime l'année, édition nommée (colonne `edition`)
+  caveats: 'STATISTIQUE PUBLIQUE, non budgétaire. L''ANNUAIRE NE DÉFINIT PAS LES DEUX
+    RÉGIMES dans les pages lues ; le libellé arabe est « régime non résident » (نظام
+    غير مقيم), qui n''est pas la notion d''entreprise totalement exportatrice du code
+    de 1993 : ne pas assimiler sans source. PART NON PUBLIÉE : part_off_shore_pct
+    = 100 × régime off shore / ensemble, tels qu''imprimés, arrondie au dixième. ARBITRAGE
+    : chaque année est imprimée dans une à trois éditions ; la série retient la dernière
+    (même source, même tableau, millésimes successifs) ; nb_editions_differentes compte
+    les éditions antérieures aux chiffres différents — 2001, 2002, 2004 (exportations
+    12 054,9 puis 12 403,8), 2005, 2007, 2014, 2021 ; toutes les attestations sont
+    dans ins-commerce-exterieur-par-regime-editions. LA DERNIÈRE ANNÉE D''UNE ÉDITION
+    EST SOUVENT RÉVISÉE PAR LA SUIVANTE (dix des treize attestations révisées) : 2023,
+    imprimée dans la seule édition 2019-2023 (`nb_editions` = 1), peut l''être encore.
+    EN 2004 ET 2005 LA RÉVISION PORTE SUR LE SEUL RÉGIME OFF SHORE (+ 2 à + 4 %),
+    le régime général ne bougeant pas ; 2003 et les années antérieures ne sont imprimées
+    dans aucune édition postérieure à cette révision : la source ne dit pas s''il
+    s''agit de chiffres provisoires devenus définitifs ou d''un changement de méthode
+    — ne pas tracer la part d''un trait continu à travers 2003-2004 sans le dire.
+    Régime général + régime off shore = ensemble à 0,1 près (arrondis). RELU À L''IMAGE
+    : en-têtes et trois lignes de total des 22 éditions. Ventilation par groupement
+    sectoriel non transcrite. Montants courants ; aucun ratio au PIB. Série arrêtée
+    à 2023 (édition 2019-2023).'
+  titre_ar: 'التجارة الخارجية حسب النظام (عام / غير مقيم): صادرات وواردات السلع، 1998-2023
+    (المعهد الوطني للإحصاء، النشرية الإحصائية السنوية، الجدول 14.2)'
+  unite_ar: بملايين الدنانير بالأسعار الجارية؛ الحصة بالنسبة المائوية (محسوبة)
+  perimetre_ar: النشرية الإحصائية السنوية لتونس، الباب 14، الجدول 14.2، أسطر «مجموع
+    المواد» و«نظام عام» و«نظام غير مقيم»؛ سطر لكلّ سنة ولكلّ اتجاه؛ قيمة آخر طبعة
+    تنشر السنة
+  caveats_ar: 'إحصاء عمومي. النشرية لا تعرّف النظامين في الصفحات المقروءة. الحصة غير
+    منشورة: تُحسب بقسمة النظام غير المقيم على المجموع كما هما مطبوعان. كلّ سنة مطبوعة
+    في طبعة إلى ثلاث طبعات، وتُعتمد الأخيرة؛ المراجعات بين الطبعات مُحصاة لا مُصحَّحة.
+    قُرئت أسطر المجموع في الطبعات الاثنتين والعشرين من الصورة. التوزيع حسب القطاعات
+    غير منقول.'
+  fiche: sources/ins-commerce-exterieur-par-regime.md

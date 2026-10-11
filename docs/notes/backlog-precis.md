@@ -380,9 +380,10 @@ liste qui suit le tableau, citations comprises. Restent :
   - **méthode des rapports PLF 2022 à 2025** : non établie (introduction et table des
     matières seules) ; données employées par le ministère non décrites dans le rapport 2021 ;
   - **crédits budgétaires** des primes et des prises en charge de cotisations : non relevés
-    (fonds spéciaux du Trésor, budgets par mission, lois de règlement, comptes du Fonds
-    tunisien de l'investissement — à obtenir) ; le chapitre ne publie que les paiements
-    déclarés du rapport PLF 2021 ;
+    (tableaux « ب » des fonds du Trésor annexés aux lois de finances de 1994 à 2019, lois de
+    règlement 2010-2016, budgets par ministère depuis 2013, comptes du Fonds tunisien de
+    l'investissement — à obtenir ou à transcrire) ; le chapitre publie les sommes déclarées
+    des cinq rapports (2018-2023) et le compte du FOPRODI à la BCT (2016-2025) ;
   - **mentions dans les chapitres d'impôt (6 octobre 2026)** : chaque avantage établi par un
     texte est signalé, avec renvoi à `@sec-depenses-fiscales`, dans `_impot_societes.qmd`
     (paramètres d'origine, « 2017 », « 2019 », rendement), `_impot_revenu.qmd` (BIC,
@@ -409,14 +410,11 @@ liste qui suit le tableau, citations comprises. Restent :
     soutien des entreprises totalement exportatrices », `2014/fr/Jo1052014.pdf` ; à ouvrir
     pour confirmer qu'aucun texte n'a touché à l'échéance du 1er janvier 2014. LF 2014,
     art. 49-50 et 54 (`2013/fr/`, JORT n° 105) : connus par leur intitulé, non repris ;
-  - **zones de développement régional — lisible** : décret gouvernemental n° 2017-389,
-    `2017/fr/Jo0252017.pdf` ; loi n° 2019-47, `2019/fr/Jo0472019.pdf` (portée fiscale non
-    établie) ;
-  - **rapports annexés aux PLF 2022 et 2023 — à obtenir** : non archivés dans
-    `tunisia-data` (`data/raw/gbo/` ne porte que les rapports 2021, 2024 et 2025) ; adresses
-    sur gbo.tn dans la note, § 2.2, relevées le 5 octobre 2026 et non recontrôlées. Seule
-    leur introduction (p. 7) est connue. Rapport annexé au PLF 2026 : non cherché.
-    Existence d'un rapport pour les PLF 2019 et 2020 : non établie ;
+  - **rapport annexé au PLF 2026 — non trouvé** : absent, le 11 octobre 2026, de la rubrique
+    du portail gbo.tn et de la page « loi de finances » de finances.gov.tn (vues par année
+    non parcourues) ; à rechercher. Existence d'un rapport pour les PLF 2019 et 2020 : non
+    établie. Les rapports 2022 et 2023 sont dans `tunisia-data` depuis le 6 octobre 2026 ;
+    leur partie « dépenses fiscales » (périmètre, exercices, méthode) reste à lire ;
   - **série du coût à reconstruire, avec sa rupture de périmètre** : les rapports 2024 et
     2025 excluent les exonérations des médicaments et des engrais, que le rapport 2021
     compte (274,5 et 249,9 MD en 2019). Les deux CSV traités de `tunisia-data` cousent trois
@@ -442,6 +440,49 @@ liste qui suit le tableau, citations comprises. Restent :
     relever sur l'image ;
   - **à croiser avec « Cotisations sociales »** : coût des prises en charge de cotisations
     patronales (code de 1993, art. 25 ; loi n° 99-59, connue par son intitulé).
+- **Primes, zones, sommes versées, commerce extérieur par régime (`_depenses_fiscales.qmd`,
+  11 octobre 2026)** sur la note `docs/notes/fiscalite-incitations-primes-zones-2026-10-11.md`
+  et les séries `gbo-avantages-financiers-par-rapport`, `bct-foprodi-fonapra` et
+  `ins-commerce-exterieur-par-regime` de `tunisia-data` (qui font foi quand elles divergent
+  de la note). Écrit : `@sec-df-loi-2019-47` (portée fiscale et financière de la loi
+  n° 2019-47) ; `@sec-df-primes-zones` (barème de 2011 → 2017, primes de la loi de 2016,
+  carte des zones 1994-2024, barèmes successifs, registre des décrets et listes nominatives
+  repliés) ; `@sec-df-sommes-versees` (cinq rapports, une colonne par rapport, 2018-2023) ;
+  `@sec-df-foprodi` (comptes de la BCT, 2016-2025) ; `@sec-df-commerce-exterieur` (part du
+  régime off shore, 1998-2023, figure). Clos : décret gouvernemental n° 2017-389 et loi
+  n° 2019-47, lus. Restent :
+  - **que l'annexe n° 2 du décret n° 2017-389 vaille pour l'article 63 du code de l'impôt** :
+    établi par aucun texte lu (fiche `r-fisc-art63-decret-zones`) ; chercher la note commune
+    de la direction générale des impôts sur les articles 63 et 64 — hors corpus, à obtenir ;
+  - **dates d'effet de 1994 et de 1999** : mention de dépôt du JORT n° 21 de 1994 à lire sur
+    la page (`1994/fr/Jo02194.pdf`, lisible) ; articles 2 et suivants du décret n° 99-486
+    (`1999/fr/Jo02099.pdf`, couche texte à police décalée : à lire à l'image) ;
+  - **vingt décrets de retouche des zones et des primes (1995-2009)** et décret n° 2011-3197 :
+    intitulés seuls ; **rédactions des articles 23, 25 et 25 bis du code de 1993** entre 2005
+    et 2016 (durées de déduction et de prise en charge par catégorie de zones) : non lues ;
+  - **sommes versées avant 2016** : aucune série (FOPRODI : rien entre 1992 et 2015 ;
+    éditions 1977-1986 du rapport de la BCT à lire à l'image ; Cour des comptes, archives du
+    web de l'APII et de l'APIA non ouvertes) ; mise à niveau et primes agricoles avant 2018 :
+    néant ;
+  - **coût côté CNSS des prises en charge de la contribution patronale** : non établi (les
+    rapports comptent des sommes versées ou portées en dette de l'État) ; états financiers et
+    rapports d'activité de la CNSS, rapports annuels de performance de la mission Affaires
+    sociales — à obtenir ; cause de la chute de la ligne 031106 entre 2018 et 2019 non dite ;
+  - **nombre et emploi des entreprises totalement exportatrices** : rien dans `tunisia-data`,
+    non cherché en ligne (répertoire national des entreprises de l'INS, APII, FIPA, archives
+    du web) ;
+  - **définition des régimes « général » et « off shore » par l'INS** : non lue ; ventilation
+    par groupement sectoriel du tableau 14.2 non transcrite ; cause de la révision 2004-2005
+    du régime off shore non dite par l'annuaire ;
+  - **tableaux de barème faits main** (quatre) : à engendrer quand le barème sera versé en
+    amont (`docs/notes/backlog-modele.md`) ; **dinars constants** : le chapitre n'a pas
+    d'année de référence, les montants sont en dinars courants seulement — à trancher ;
+  - **glossaire** : entrées candidates non créées, faute d'arbitrage du terminologue —
+    prime de développement régional, FOPRODI, Fonds tunisien de l'investissement (termes
+    arabes relevés dans la note, § 3) ; la définition de « zones de développement régional »
+    n'est pas retouchée (terme arabe des « zones d'encouragement » de 1994-2016 non relevé) ;
+  - **AR** : les onze clés nouvelles de `precis/ar/fiscalite/references.json` gardent leur
+    intitulé français (l'index ne porte l'intitulé arabe que pour la loi n° 2019-47).
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
   et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en

@@ -2212,3 +2212,57 @@
   - lire à l'image les 44 fascicules arabes à couche texte illisible de 2020 à 2025
   - recenser les fascicules de 2018-2026 absents du corpus
   - chercher les délibérations tarifaires au Journal officiel des collectivités locales
+
+- id: r-fisc-art63-decret-zones
+  objet: décret gouvernemental fixant, pour l'article 63 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés (loi n° 2017-8, art. 1er), la liste des zones de développement régional et des activités exclues — soit un texte propre, soit la confirmation par un texte que l'annexe n° 2 du décret gouvernemental n° 2017-389 en tient lieu
+  ou: [precis/fr/fiscalite/_depenses_fiscales.qmd#sec-df-zones-carte]
+  requetes:
+    titres_like: ['%zones de developpement regional%', '%2017-389%']
+    iort_ar: [مناطق التنمية الجهوية, 389 لسنة 2017]
+    plein_texte: [2017-389]
+    depuis: 2017-02-14
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache, français et arabe, années 2015 et suivantes : trois réponses, toutes des articles de lois de finances (loi n° 2017-66, art. 20 ; loi n° 2018-56 ; loi n° 2019-78, art. 44), aucun décret (requêtes lancées en SQL sur la colonne titre ; ni la FTS ni le miroir iort n''ont été interrogés). Plein texte « 2017-389 » dans les fascicules français de 2017 à 2026 : trente fascicules — le décret, l''arrêté du JORT n° 38 de 2017 sur les commissions, le décret n° 2024-182, et vingt-sept visas ; aucun ne rattache l''annexe n° 2 à l''article 63. Loi n° 2017-66, art. 20, lu : il renvoie aux zones « au sens de l''article 63 » sans nommer de décret. Lacunes : le corpus français de 2018 ne compte que 70 fascicules ; aucun fascicule arabe parcouru au plein texte ; les notes communes de la direction générale des impôts, hors Journal officiel, non cherchées. Requêtes lancées à la main (SQL et pdftotext), non par recherches.py. Note : docs/notes/fiscalite-incitations-primes-zones-2026-10-11.md, § 1.6 et § 4.2.'
+    couvert_jusqu_au: 2026-07-24
+    resultat: aucun
+  a_faire:
+  - chercher la note commune de la direction générale des impôts commentant les articles 63 et 64
+  - rejouer par scripts/recherches.py (FTS, miroir iort, fascicules arabes)
+
+- id: r-fisc-zones-modif-99-483
+  objet: texte modifiant la délimitation des zones d'encouragement au développement régional (décret n° 99-483) entre le décret n° 2008-387 du 11 février 2008 et l'abrogation du code de 1993
+  ou: [precis/fr/fiscalite/_depenses_fiscales.qmd#sec-df-zones-carte]
+  requetes:
+    titres_like: ['%developpement regional%zones%', '%developpement regional%prime%', '%99-483%']
+    iort_ar: [483 لسنة 1999, 539 لسنة 1994, التنمية الجهوية]
+    plein_texte: [décret n° 99-483]
+    depuis: 2008-02-11
+  periode:
+    jusqu_au: 2016-12-31
+    motif: le code de 1993 est abrogé au 1er janvier 2017 (loi n° 2016-71, art. 26 à 29)
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache (SQL sur la colonne titre ; le terme arabe « التنمية الجهوية » a été croisé avec « مناطق » ou « منح ») : le dernier texte visant le décret n° 99-483 est le décret n° 2008-387 ; une seule notice arabe répond, le décret n° 2011-3197, qui modifie le décret des primes et non celui des zones. Plein texte « décret n° 99-483 » dans les quatre cents premières lignes (sommaire) de chaque fascicule français de 2008 à 2016 : seul le JORT n° 15 de 2008 répond. Lacunes : sommaires de plus de quatre cents lignes non couverts ; fascicules sans couche texte non couverts ; édition arabe non parcourue (notices à intitulé arabe seul : 37 % en 2011, 40 à 70 % en 2015-2016). Requêtes lancées à la main, non par recherches.py.'
+    couvert_jusqu_au: 2016-12-31
+    resultat: aucun
+
+- id: r-fisc-modificatifs-2017-389
+  objet: texte modifiant le décret gouvernemental n° 2017-389 du 9 mars 2017 (barème des primes, annexes, zones), autre que le décret n° 2024-182 du 4 avril 2024
+  ou: [precis/fr/fiscalite/_depenses_fiscales.qmd#sec-df-primes-bareme]
+  requetes:
+    titres_like: ['%2017-389%', '%incitations financi%']
+    iort_ar: [389 لسنة 2017, الحوافز المالية]
+    plein_texte: [2017-389]
+    depuis: 2017-03-28
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache (SQL sur la colonne titre) : une seule notice, le décret n° 2024-182 (JORT n° 47 de 2024), déjà connu. Plein texte des fascicules français de 2017 à 2026 : les visas citent le décret sans modificatif jusqu''au JORT n° 23 de 2024, puis « tel que modifié et complété par le décret n° 2024-182 », et lui seul, jusqu''au JORT n° 75 de 2026 (décret n° 2026-148 du 23 juillet 2026). Lacunes : corpus français de 2018 incomplet (70 fascicules) ; actualisation des listes par la voie de l''article 4 du décret (approbation du conseil supérieur d''investissement) non cherchée hors Journal officiel. Requêtes lancées à la main, non par recherches.py.'
+    couvert_jusqu_au: 2026-07-24
+    resultat: aucun
