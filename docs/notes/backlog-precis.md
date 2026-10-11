@@ -2251,11 +2251,14 @@ Plans : `finances-locales-impots-plan-architecte.md`,
 
 - **Frises de tête** : faites dans aucun chapitre ; un `TODO (rédacteur)` les attend aux
   chapitres 3, 6, 7 et 8, le tableau des réformes en tient lieu.
-- **Tableaux encore faits main**, faute de paramètres datés et sourcés en amont : taxe sur les
-  établissements (maximum, taux, montants) et taxe hôtelière au chapitre 7 ; pénalité de retard
-  et contribution au fonds de l'habitat au chapitre 6 ; tarifs des taxes et redevances au
-  chapitre 8 ; seuils de l'approbation au chapitre 5 ; parts et critères du fonds et des
-  subventions au chapitre 9. Seuls les trois barèmes des taxes sur les immeubles sont engendrés.
+- **Tableaux encore faits main**, faute de paramètres datés et sourcés en amont : pénalité de
+  retard et contribution au fonds de l'habitat au chapitre 6 ; forfaits qui comprennent la taxe
+  sur les établissements au chapitre 7 ; tarifs des taxes et redevances au chapitre 8 ; seuils
+  de l'approbation au chapitre 5 ; parts et critères du fonds et des subventions au chapitre 9.
+  Sont engendrés (11 octobre 2026) : les trois barèmes des taxes sur les immeubles, et, pour la
+  taxe sur les établissements, le minimum, le maximum et les taux par assiette. Le tableau de
+  la taxe hôtelière (deux lignes) reste fait main, ses valeurs étant versées : la forme commune
+  ne rend pas ses deux lignes de registre.
 - **Figure des barèmes des taxes sur les immeubles**, en dinars courants et en dinars de 2025 :
   devenue faisable (séries complètes de 1997 à 2017), non faite.
 - **Approbation des délibérations communales, 1975-2018** (lecture du 10 octobre 2026,
@@ -2685,14 +2688,26 @@ déclaration, amnisties) ; longue période avec `fig-fl-activite-rendement`. Tro
 fonds de 2021, devenu sans objet, est retiré ; le renvoi à la comparaison des quatre impôts
 vise le chapitre des budgets. **Lacunes** : loi n° 75-34, art. 9, année de la date d'effet à
 confirmer sur l'édition arabe (**à lire à l'image**) ; plafond de la taxe de 1976 à 1996
-(décrets de 1975-1976 et LF 1976, 1980, 1992, non lus) ; unité du maximum dans les décrets
-n° 2003-1345 et 2006-3360 ; doctrine administrative sur le chiffre d'affaires brut « local »,
+(décrets de 1975-1976 et LF 1976, 1980, 1992, non lus) ; édition arabe non lue pour le code
+(art. 35 à 45), les lois de finances pour 2013 (art. 13, 14, 23 et 24), pour 2021 (art. 13) et
+complémentaire pour 2012 (art. 50), et les trois décrets du maximum (n° 97-435, 2003-1345,
+2006-3360) — fascicules **dans le corpus**, couche texte à décoder ou **à lire à l'image** ;
+celle de la loi de finances pour 2014 (art. 49) est lisible sur sa couche texte ; libellés
+arabes des tableaux engendrés à confronter à ces éditions (chiffre d'affaires brut, produits à
+prix homologués, redevables taxés sur leur impôt, maximum et sa suppression) ; doctrine administrative sur le chiffre d'affaires brut « local »,
 1997-2013, **à obtenir** ; produit de la taxe avant ou après écrêtement au profit du fonds
 depuis 2013, et série du montant écrêté, **à obtenir** ; amnisties de 2012, 2019, 2024 et 2025
 (objet, années, conditions), loi n° 2006-25, décret-loi n° 2006-1, arrêté de calendrier de
 2026 ; pages françaises des art. 37 (LF 2016), 42 (LF 2019), 52 et 57 (LF 2023), 67 et 69
-(LF 2024) ; LF 1993, art. 39, et décrets des zones municipales touristiques ; art. 7 initial
-du décret-loi n° 2020-33.
+(LF 2024) ; LF 1993, art. 39, non lu (rédaction initiale, nom du fonds et part de la taxe
+hôtelière avant 1997), et décrets des zones municipales touristiques ; art. 7 initial du
+décret-loi n° 2020-33. **Mis à jour le 11 octobre 2026** : les tableaux du minimum, du maximum
+et des taux sont engendrés (48 + 4 + 6 valeurs comparées aux tableaux faits main, aucun
+écart), avec deux figures en escalier (`fig-fl-tcl-minimum`, `fig-fl-tcl-maximum`) ; l'unité
+du maximum est établie — le code dit « un maximum qui sera fixé par décret », le décret
+n° 97-435 « 50.000 dinars par année », les décrets n° 2003-1345 et 2006-3360 « montant maximum
+annuel », aucun ne disant s'il s'entend par redevable ou par établissement ; pages corrigées :
+LF 2014, art. 49, p. 3680-3681 ; LF 2021, art. 13, p. 3125-3127 (§ 6, p. 3127).
 
 ### Chapitre 8 — Taxes, redevances et autonomie fiscale (`_taxes_redevances.qmd`) — converti le 9 octobre 2026
 

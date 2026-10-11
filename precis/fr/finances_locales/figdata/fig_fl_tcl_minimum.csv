@@ -1,0 +1,119 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : fl-tcl-minimum, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @decret97-433, @decret2007-1187, @decret2017-395, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : aucun décret n'est identifié entre ceux de 1997 et ceux de 2007, ni depuis ceux de 2017 : le dernier palier est prolongé jusqu'en 2026, DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Minimum de la taxe sur les établissements : taxe par mètre carré de référence des quatre catégories d'immeuble, au taux de 8 % de la taxe sur les immeubles bâtis, en dinars courants et en dinars de 2025 par mètre carré, 1997-2026 (valeurs exactes et autres taux au @tbl-fl-tcl-minimum)
+Grandeur,Année,"Taxe par mètre carré de référence, au taux de 8 %, moyenne de l'année (dinars courants par m²)",Indice des prix à la consommation (base 100 en 1970),"Taxe par mètre carré de référence, au taux de 8 % (dinars de 2025 par m²)"
+"Catégorie 1 : usage administratif, commercial ou non commercial",1998,0.76,594.5,2.675
+"Catégorie 1 : usage administratif, commercial ou non commercial",1999,0.76,610.5,2.605
+"Catégorie 1 : usage administratif, commercial ou non commercial",2000,0.76,628.3,2.531
+"Catégorie 1 : usage administratif, commercial ou non commercial",2001,0.76,640.5,2.483
+"Catégorie 1 : usage administratif, commercial ou non commercial",2002,0.76,658.6,2.415
+"Catégorie 1 : usage administratif, commercial ou non commercial",2003,0.76,676.5,2.351
+"Catégorie 1 : usage administratif, commercial ou non commercial",2004,0.76,701.0,2.269
+"Catégorie 1 : usage administratif, commercial ou non commercial",2005,0.76,715.3,2.223
+"Catégorie 1 : usage administratif, commercial ou non commercial",2006,0.76,745.0,2.135
+"Catégorie 1 : usage administratif, commercial ou non commercial",2007,0.76,770.6,2.064
+"Catégorie 1 : usage administratif, commercial ou non commercial",2008,0.815,808.4,2.11
+"Catégorie 1 : usage administratif, commercial ou non commercial",2009,0.815,837.0,2.038
+"Catégorie 1 : usage administratif, commercial ou non commercial",2010,0.815,873.9,1.952
+"Catégorie 1 : usage administratif, commercial ou non commercial",2011,0.815,904.8,1.885
+"Catégorie 1 : usage administratif, commercial ou non commercial",2012,0.815,955.1,1.786
+"Catégorie 1 : usage administratif, commercial ou non commercial",2013,0.815,1013.5,1.683
+"Catégorie 1 : usage administratif, commercial ou non commercial",2014,0.815,1069.0,1.595
+"Catégorie 1 : usage administratif, commercial ou non commercial",2015,0.815,1119.5,1.524
+"Catégorie 1 : usage administratif, commercial ou non commercial",2016,0.815,1161.2,1.469
+"Catégorie 1 : usage administratif, commercial ou non commercial",2017,0.9,1223.0,1.54
+"Catégorie 1 : usage administratif, commercial ou non commercial",2018,0.9,1314.2,1.433
+"Catégorie 1 : usage administratif, commercial ou non commercial",2019,0.9,1403.5,1.342
+"Catégorie 1 : usage administratif, commercial ou non commercial",2020,0.9,1482.6,1.27
+"Catégorie 1 : usage administratif, commercial ou non commercial",2021,0.9,1567.2,1.202
+"Catégorie 1 : usage administratif, commercial ou non commercial",2022,0.9,1697.4,1.11
+"Catégorie 1 : usage administratif, commercial ou non commercial",2023,0.9,1855.7,1.015
+"Catégorie 1 : usage administratif, commercial ou non commercial",2024,0.9,1986.0,0.948
+"Catégorie 1 : usage administratif, commercial ou non commercial",2025,0.9,2092.7,0.9
+"Catégorie 2 : structure légère, usage industriel",1998,0.52,594.5,1.83
+"Catégorie 2 : structure légère, usage industriel",1999,0.52,610.5,1.782
+"Catégorie 2 : structure légère, usage industriel",2000,0.52,628.3,1.732
+"Catégorie 2 : structure légère, usage industriel",2001,0.52,640.5,1.699
+"Catégorie 2 : structure légère, usage industriel",2002,0.52,658.6,1.652
+"Catégorie 2 : structure légère, usage industriel",2003,0.52,676.5,1.609
+"Catégorie 2 : structure légère, usage industriel",2004,0.52,701.0,1.552
+"Catégorie 2 : structure légère, usage industriel",2005,0.52,715.3,1.521
+"Catégorie 2 : structure légère, usage industriel",2006,0.52,745.0,1.461
+"Catégorie 2 : structure légère, usage industriel",2007,0.52,770.6,1.412
+"Catégorie 2 : structure légère, usage industriel",2008,0.56,808.4,1.45
+"Catégorie 2 : structure légère, usage industriel",2009,0.56,837.0,1.4
+"Catégorie 2 : structure légère, usage industriel",2010,0.56,873.9,1.341
+"Catégorie 2 : structure légère, usage industriel",2011,0.56,904.8,1.295
+"Catégorie 2 : structure légère, usage industriel",2012,0.56,955.1,1.227
+"Catégorie 2 : structure légère, usage industriel",2013,0.56,1013.5,1.156
+"Catégorie 2 : structure légère, usage industriel",2014,0.56,1069.0,1.096
+"Catégorie 2 : structure légère, usage industriel",2015,0.56,1119.5,1.047
+"Catégorie 2 : structure légère, usage industriel",2016,0.56,1161.2,1.009
+"Catégorie 2 : structure légère, usage industriel",2017,0.62,1223.0,1.061
+"Catégorie 2 : structure légère, usage industriel",2018,0.62,1314.2,0.987
+"Catégorie 2 : structure légère, usage industriel",2019,0.62,1403.5,0.924
+"Catégorie 2 : structure légère, usage industriel",2020,0.62,1482.6,0.875
+"Catégorie 2 : structure légère, usage industriel",2021,0.62,1567.2,0.828
+"Catégorie 2 : structure légère, usage industriel",2022,0.62,1697.4,0.764
+"Catégorie 2 : structure légère, usage industriel",2023,0.62,1855.7,0.699
+"Catégorie 2 : structure légère, usage industriel",2024,0.62,1986.0,0.653
+"Catégorie 2 : structure légère, usage industriel",2025,0.62,2092.7,0.62
+"Catégorie 3 : béton solide, usage industriel",1998,0.64,594.5,2.253
+"Catégorie 3 : béton solide, usage industriel",1999,0.64,610.5,2.194
+"Catégorie 3 : béton solide, usage industriel",2000,0.64,628.3,2.132
+"Catégorie 3 : béton solide, usage industriel",2001,0.64,640.5,2.091
+"Catégorie 3 : béton solide, usage industriel",2002,0.64,658.6,2.034
+"Catégorie 3 : béton solide, usage industriel",2003,0.64,676.5,1.98
+"Catégorie 3 : béton solide, usage industriel",2004,0.64,701.0,1.911
+"Catégorie 3 : béton solide, usage industriel",2005,0.64,715.3,1.872
+"Catégorie 3 : béton solide, usage industriel",2006,0.64,745.0,1.798
+"Catégorie 3 : béton solide, usage industriel",2007,0.64,770.6,1.738
+"Catégorie 3 : béton solide, usage industriel",2008,0.685,808.4,1.773
+"Catégorie 3 : béton solide, usage industriel",2009,0.685,837.0,1.713
+"Catégorie 3 : béton solide, usage industriel",2010,0.685,873.9,1.64
+"Catégorie 3 : béton solide, usage industriel",2011,0.685,904.8,1.584
+"Catégorie 3 : béton solide, usage industriel",2012,0.685,955.1,1.501
+"Catégorie 3 : béton solide, usage industriel",2013,0.685,1013.5,1.414
+"Catégorie 3 : béton solide, usage industriel",2014,0.685,1069.0,1.341
+"Catégorie 3 : béton solide, usage industriel",2015,0.685,1119.5,1.28
+"Catégorie 3 : béton solide, usage industriel",2016,0.685,1161.2,1.235
+"Catégorie 3 : béton solide, usage industriel",2017,0.755,1223.0,1.292
+"Catégorie 3 : béton solide, usage industriel",2018,0.755,1314.2,1.202
+"Catégorie 3 : béton solide, usage industriel",2019,0.755,1403.5,1.126
+"Catégorie 3 : béton solide, usage industriel",2020,0.755,1482.6,1.066
+"Catégorie 3 : béton solide, usage industriel",2021,0.755,1567.2,1.008
+"Catégorie 3 : béton solide, usage industriel",2022,0.755,1697.4,0.931
+"Catégorie 3 : béton solide, usage industriel",2023,0.755,1855.7,0.851
+"Catégorie 3 : béton solide, usage industriel",2024,0.755,1986.0,0.796
+"Catégorie 3 : béton solide, usage industriel",2025,0.755,2092.7,0.755
+"Catégorie 4 : usage industriel, plus de 5 000 m²",1998,0.84,594.5,2.957
+"Catégorie 4 : usage industriel, plus de 5 000 m²",1999,0.84,610.5,2.879
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2000,0.84,628.3,2.798
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2001,0.84,640.5,2.745
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2002,0.84,658.6,2.669
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2003,0.84,676.5,2.598
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2004,0.84,701.0,2.508
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2005,0.84,715.3,2.458
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2006,0.84,745.0,2.36
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2007,0.84,770.6,2.281
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2008,0.9,808.4,2.33
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2009,0.9,837.0,2.25
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2010,0.9,873.9,2.155
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2011,0.9,904.8,2.082
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2012,0.9,955.1,1.972
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2013,0.9,1013.5,1.858
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2014,0.9,1069.0,1.762
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2015,0.9,1119.5,1.682
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2016,0.9,1161.2,1.622
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2017,0.99,1223.0,1.694
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2018,0.99,1314.2,1.576
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2019,0.99,1403.5,1.476
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2020,0.99,1482.6,1.397
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2021,0.99,1567.2,1.322
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2022,0.99,1697.4,1.221
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2023,0.99,1855.7,1.116
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2024,0.99,1986.0,1.043
+"Catégorie 4 : usage industriel, plus de 5 000 m²",2025,0.99,2092.7,0.99

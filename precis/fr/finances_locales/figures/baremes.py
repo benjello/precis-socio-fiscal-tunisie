@@ -1,17 +1,25 @@
-"""Figures des barèmes en dinars des deux taxes sur les immeubles (chapitre « Les impôts sur
-les immeubles »), chacune en deux vues : dinars courants, dinars constants.
+"""Figures des barèmes en dinars des impôts locaux — les deux taxes sur les immeubles
+(chapitre « Les impôts sur les immeubles ») et la taxe sur les établissements (chapitre « Les
+impôts sur l'activité ») —, chacune en deux vues : dinars courants, dinars constants.
 
     from figures import baremes
     baremes.figure_prix_reference()   # fig-fl-tib-prix-reference
     baremes.figure_tarif()            # fig-fl-tnb-tarif
+    baremes.figure_minimum_tcl()      # fig-fl-tcl-minimum
+    baremes.figure_maximum_tcl()      # fig-fl-tcl-maximum
 
-D'OÙ VIENNENT LES DONNÉES. Deux séries longues de `precis/_seriescache/`, lues par
+D'OÙ VIENNENT LES DONNÉES. Quatre séries longues de `precis/_seriescache/`, lues par
 `figtools.series()` — une ligne par grandeur et par date d'effet, avec le texte et son lien
 au Journal officiel —, émises hors du build par `scripts/generate_finances_locales_tables.py` :
 
   - `fl-tib-prix-reference` : minimum et maximum du prix de référence du mètre carré
     couvert, pour chacune des quatre catégories de superficie ;
-  - `fl-tnb-tarif` : tarif au mètre carré des terrains non bâtis, par zone de densité.
+  - `fl-tnb-tarif` : tarif au mètre carré des terrains non bâtis, par zone de densité ;
+  - `fl-tcl-minimum` : taxe par mètre carré de référence du minimum de la taxe sur les
+    établissements, seize grandeurs (quatre catégories d'immeuble, quatre taux de la taxe
+    sur les immeubles bâtis) ;
+  - `fl-tcl-maximum` : maximum de la taxe sur les établissements, close par une valeur vide
+    à la date de sa suppression.
 
 L'indice des prix et l'année des dinars constants sont ceux du précis
 (`scripts/dinars_constants.py`).
@@ -35,8 +43,14 @@ panneau, les bandes se confondent. La figure a donc quatre panneaux aux axes par
 par rang — à 1 300 px de fenêtre la figure n'a que 700 px —, un par catégorie : le maximum en trait plein, le minimum en tirets, la fourchette en aplat.
 Le tarif a trois grandeurs, dans un rapport de un à dix : un panneau, à axe logarithmique,
 où une même baisse en pourcentage a la même hauteur dans les trois zones.
+Le minimum de la taxe sur les établissements a seize grandeurs, qui suivent toutes le même
+mouvement : la figure n'en trace que quatre, les quatre catégories d'immeuble au taux de
+8 % (`TAUX_TRACE`), sur un panneau à axe linéaire ; les douze autres sont au tableau du
+chapitre. Le maximum n'a qu'une grandeur ; son dernier palier s'arrête à la date de sa
+suppression, marquée d'une croix, et n'est pas prolongé.
 
-LES PHRASES DE LECTURE (`lecture_prix`, `lecture_tarif`) sont calculées sur les points que
+LES PHRASES DE LECTURE (`lecture_prix`, `lecture_tarif`, `lecture_minimum_tcl`,
+`lecture_maximum_tcl`) sont calculées sur les points que
 les figures tracent ; `reperes()` rend les mêmes nombres pour qui veut les relire.
 """
 from __future__ import annotations
@@ -57,6 +71,9 @@ import figtools  # noqa: E402
 
 SERIE_PRIX = "fl-tib-prix-reference"
 SERIE_TARIF = "fl-tnb-tarif"
+SERIE_MINIMUM = "fl-tcl-minimum"
+SERIE_MAXIMUM = "fl-tcl-maximum"
+TAUX_TRACE = 8  # taux de la taxe sur les immeubles bâtis dont la figure du minimum trace les montants
 FIN = 2026  # dernière année tracée en dinars courants : les barèmes de 2017 valent encore
 BASE = dinars_constants.ANNEE_BASE
 
@@ -72,7 +89,7 @@ MOTS = {
         "cat_3": "Catégorie 3 : de 200 à 400 m²", "cat_4": "Catégorie 4 : plus de 400 m²",
         "minimum": "minimum", "maximum": "maximum", "borne": "{categorie} — {borne}",
         "fourchette": "fourchette dans laquelle la collectivité fixe son prix",
-        "decret": "date d'effet d'un décret",
+        "decret": "date d'effet d'un décret", "texte": "date d'effet d'un texte",
         "haute": "Zone de haute densité", "moyenne": "Zone de moyenne densité",
         "basse": "Zone de basse densité",
         "prix": "Prix de référence du mètre carré couvert", "tarif": "Tarif au mètre carré",
@@ -96,13 +113,38 @@ MOTS = {
                             "d'aménagement urbain"),
         "reserve": ("aucun décret n'est identifié entre ceux de 1997 et ceux de 2007, ni "
                     "depuis ceux de 2017 : le dernier palier est prolongé jusqu'en {fin}"),
+        "tcl_cat_1": "Catégorie 1 : usage administratif, commercial ou non commercial",
+        "tcl_cat_2": "Catégorie 2 : structure légère, usage industriel",
+        "tcl_cat_3": "Catégorie 3 : béton solide, usage industriel",
+        "tcl_cat_4": "Catégorie 4 : usage industriel, plus de 5 000 m²",
+        "au_taux": "{categorie} — taux de {taux} %",
+        "minimum_tcl": "Taxe par mètre carré de référence, au taux de {taux} %",
+        "maximum_tcl": "Maximum de la taxe", "maximum_court": "Maximum de la taxe",
+        "supprime": "maximum supprimé", "suppression": "suppression du maximum",
+        "courant_an": "dinars par an", "courant_an_long": "dinars courants par an",
+        "constant_an": "dinars de {base} par an",
+        "titre_minimum": ("Taxe sur les établissements : taxe par mètre carré de référence "
+                          "du minimum fixée par décret, par catégorie d'immeuble et par taux "
+                          "de la taxe sur les immeubles bâtis, à chaque date d'effet, 1997-2017"),
+        "titre_maximum": ("Taxe sur les établissements : maximum de la taxe fixé par décret, "
+                          "à chaque date d'effet, de 1997 à sa suppression en 2012"),
+        "unite_an": "dinars courants par an",
+        "perimetre_minimum": ("les trois décrets identifiés, à leur date d'effet (13 mars "
+                              "1997, 1er janvier 2008, 1er janvier 2017) ; quatre catégories "
+                              "d'immeuble, quatre taux de la taxe sur les immeubles bâtis"),
+        "perimetre_maximum": ("les trois décrets, à leur date d'effet (13 mars 1997, 26 juin "
+                              "2003, 1er janvier 2007), et la loi de finances complémentaire "
+                              "pour 2012, qui supprime le maximum à partir du 1er janvier 2012"),
+        "reserve_maximum": ("aucun maximum n'est fixé du 1er janvier au 12 mars 1997 ; les "
+                            "plafonds antérieurs à 1997, fixés en application de la loi de "
+                            "1975, ne sont pas dans la série"),
     },
     "ar": {
         "cat_1": "الصنف 1: إلى 100 م²", "cat_2": "الصنف 2: من 100 إلى 200 م²",
         "cat_3": "الصنف 3: من 200 إلى 400 م²", "cat_4": "الصنف 4: أكثر من 400 م²",
         "minimum": "الحد الأدنى", "maximum": "الحد الأقصى", "borne": "{categorie} — {borne}",
         "fourchette": "المجال الذي تضبط فيه الجماعة المحلية ثمنها",
-        "decret": "تاريخ نفاذ أمر",
+        "decret": "تاريخ نفاذ أمر", "texte": "تاريخ نفاذ نص",
         "haute": "منطقة ذات كثافة عمرانية مرتفعة", "moyenne": "منطقة ذات كثافة عمرانية متوسطة",
         "basse": "منطقة ذات كثافة عمرانية منخفضة",
         "prix": "الثمن المرجعي للمتر المربع المبني", "tarif": "المبلغ للمتر المربع",
@@ -124,6 +166,30 @@ MOTS = {
                             "1 جانفي 2008، 1 جانفي 2017)؛ ثلاث مناطق من مثال التهيئة العمرانية"),
         "reserve": ("لم يُحدَّد أيّ أمر بين أوامر 1997 وأوامر 2007، ولا بعد أوامر 2017: "
                     "تُمدَّد الدرجة الأخيرة إلى سنة {fin}"),
+        "tcl_cat_1": "الصنف 1: استعمال إداري أو نشاط تجاري أو غير تجاري",
+        "tcl_cat_2": "الصنف 2: متانة خفيفة، نشاط صناعي",
+        "tcl_cat_3": "الصنف 3: عقار متين، نشاط صناعي",
+        "tcl_cat_4": "الصنف 4: نشاط صناعي، أكثر من 5000 م²",
+        "au_taux": "{categorie} — نسبة {taux} %",
+        "minimum_tcl": "المعلوم بالمتر المربع المرجعي، بنسبة {taux} %",
+        "maximum_tcl": "الحد الأقصى للمعلوم", "maximum_court": "الحد الأقصى للمعلوم",
+        "supprime": "حُذف الحد الأقصى", "suppression": "حذف الحد الأقصى",
+        "courant_an": "دينار في السنة", "courant_an_long": "دينار جارٍ في السنة",
+        "constant_an": "دينار سنة {base} في السنة",
+        "titre_minimum": ("المعلوم على المؤسسات: المعلوم بالمتر المربع المرجعي للحد الأدنى "
+                          "المضبوط بأمر، حسب صنف العقار ونسبة المعلوم على العقارات المبنية، "
+                          "في كلّ تاريخ نفاذ، 1997-2017"),
+        "titre_maximum": ("المعلوم على المؤسسات: الحد الأقصى للمعلوم المضبوط بأمر، في كلّ "
+                          "تاريخ نفاذ، من 1997 إلى حذفه سنة 2012"),
+        "unite_an": "دينار جارٍ في السنة",
+        "perimetre_minimum": ("الأوامر الثلاثة المحدَّدة، في تاريخ نفاذها (13 مارس 1997، "
+                              "1 جانفي 2008، 1 جانفي 2017)؛ أربعة أصناف من العقارات وأربع "
+                              "نسب للمعلوم على العقارات المبنية"),
+        "perimetre_maximum": ("الأوامر الثلاثة، في تاريخ نفاذها (13 مارس 1997، 26 جوان 2003، "
+                              "1 جانفي 2007)، وقانون المالية التكميلي لسنة 2012 الذي يحذف "
+                              "الحد الأقصى ابتداء من 1 جانفي 2012"),
+        "reserve_maximum": ("لم يُضبط أيّ حد أقصى من 1 جانفي إلى 12 مارس 1997؛ والحدود القصوى "
+                            "السابقة لسنة 1997، المضبوطة تطبيقًا لقانون 1975، ليست في السلسلة"),
     },
 }
 
@@ -145,6 +211,21 @@ for _serie, _sources, _genre in (
         caveats_ar=MOTS["ar"]["reserve"].format(fin=FIN))
 
 
+for _serie, _sources, _genre, _unite, _reserve in (
+        (SERIE_MINIMUM, ["decret97-433", "decret2007-1187", "decret2017-395"], "minimum",
+         "unite", "reserve"),
+        (SERIE_MAXIMUM, ["decret97-435", "decret2003-1345", "decret2006-3360", "lfc-2012"],
+         "maximum", "unite_an", "reserve_maximum")):
+    figtools.register_provenance(
+        _serie, sources=_sources,
+        titre=MOTS["fr"][f"titre_{_genre}"], titre_ar=MOTS["ar"][f"titre_{_genre}"],
+        unite=MOTS["fr"][_unite], unite_ar=MOTS["ar"][_unite],
+        perimetre=MOTS["fr"][f"perimetre_{_genre}"],
+        perimetre_ar=MOTS["ar"][f"perimetre_{_genre}"],
+        caveats=MOTS["fr"][_reserve].format(fin=FIN),
+        caveats_ar=MOTS["ar"][_reserve].format(fin=FIN))
+
+
 # --- les grandeurs ---------------------------------------------------------------------
 
 def courbes_prix() -> dict:
@@ -156,6 +237,16 @@ def courbes_prix() -> dict:
 
 def courbes_tarif() -> dict:
     return {zone: (_m(zone), couleur) for zone, couleur in ZONES}
+
+
+def courbes_minimum() -> dict:
+    """Les quatre catégories d'immeuble, au taux `TAUX_TRACE` de la taxe sur les immeubles bâtis."""
+    return {f"categorie_{n}_taux_{TAUX_TRACE}": (_m(f"tcl_cat_{n}"), couleur)
+            for n, couleur in CATEGORIES}
+
+
+def courbes_maximum() -> dict:
+    return {"maximum": (_m("maximum_court"), BLEU)}
 
 
 def _nombre(valeur: float, decimales: int) -> str:
@@ -184,9 +275,9 @@ def _marques(ax, dates: list[str]) -> None:
         ax.axvline(figtools.abscisse_date(date), color=GRIS, lw=0.8, ls=(0, (1, 2.5)), zorder=1)
 
 
-def _poignee_decret() -> Line2D:
+def _poignee_decret(cle: str = "decret") -> Line2D:
     return Line2D([], [], color=GRIS, lw=0.8, ls=(0, (1, 2.5)),
-                  label=figtools.fig_text(_m("decret")))
+                  label=figtools.fig_text(_m(cle)))
 
 
 def _escalier(ax, lignes, couleur, libelle, fmt, *, tirets=False, dessous=False,
@@ -196,9 +287,18 @@ def _escalier(ax, lignes, couleur, libelle, fmt, *, tirets=False, dessous=False,
                  solid_capstyle="butt", dash_capstyle="butt", zorder=3)
     for i, (date, v, etat, texte, _lien) in enumerate(lignes):
         x = figtools.abscisse_date(date)
+        if v is None:  # suppression : le palier précédent s'arrête ici, une croix le dit
+            if i:
+                croix, = ax.plot([x], [lignes[i - 1][1]], "x", color=couleur, ms=8, mew=2,
+                                 zorder=4)
+                figtools.infobulle(croix, f"{date} · {libelle} : {_m('supprime')} · {texte}")
+                ax.annotate(figtools.fig_text(_m("supprime")), xy=(x, lignes[i - 1][1]),
+                            xytext=(-6, -8), textcoords="offset points", ha="right",
+                            va="top", fontsize=8.5, color=couleur, zorder=5)
+            continue
         x_suivant = figtools.abscisse_date(lignes[i + 1][0]) if i + 1 < len(lignes) else FIN + 1
         ax.plot([x, x_suivant], [v, v], **style)
-        if i + 1 < len(lignes) and lignes[i + 1][1] != v:
+        if i + 1 < len(lignes) and lignes[i + 1][1] not in (None, v):
             ax.plot([x_suivant, x_suivant], [v, lignes[i + 1][1]], color=couleur, lw=1, zorder=3)
         point, = ax.plot([x], [v], "o", color=couleur, ms=4, zorder=4,
                          mfc="white" if etat == "reprise" else couleur)
@@ -330,6 +430,89 @@ def _vues_tarif() -> list:
     return vues
 
 
+def _vues_minimum() -> list:
+    ft = figtools.fig_text
+    courbes = courbes_minimum()
+    etats = figtools.serie_escalier(SERIE_MINIMUM, courbes)
+    reels = _constants(SERIE_MINIMUM, courbes)
+    dates = _dates(etats)
+    fmt = lambda v: _nombre(v, 3)  # noqa: E731
+    reperes = (min(min(r) for r in reels.values()), *(int(d[:4]) for d in dates[1:]), BASE)
+    vues = []
+    for constante in (False, True):
+        fig, ax = plt.subplots(figsize=(9.5, 5.8))
+        for cle, (libelle, couleur) in courbes.items():
+            if constante:
+                _annuelle(ax, reels[cle], couleur, libelle, fmt, reperes=reperes)
+            else:
+                _escalier(ax, etats[cle], couleur, libelle, fmt)
+        _marques(ax, dates)
+        sommet = max(max(reels[c].values()) if constante else max(v for _d, v, *_ in etats[c])
+                     for c in courbes)
+        ax.set_ylim(0, 1.12 * sommet)
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _p: _nombre(y, 1)))
+        ax.grid(True, axis="y", alpha=0.3)
+        if constante:
+            _axe_x(ax, dates, BASE, 1996.2, BASE + 2.2, _m("x_annee"))
+        else:
+            _axe_x(ax, dates, FIN, 1996.2, FIN + 1.6, _m("x_effet"))
+        unite = _m("constant", base=BASE) if constante else _m("courant")
+        ax.set_ylabel(ft(_m("axe", grandeur=_m("minimum_tcl", taux=TAUX_TRACE), unite=unite)))
+        poignees = [Line2D([], [], color=couleur, lw=2.2, marker="o", ms=4, label=ft(libelle))
+                    for libelle, couleur in courbes.values()]
+        ax.legend(handles=poignees + [_poignee_decret()], loc="upper center",
+                  bbox_to_anchor=(0.5, -0.13), ncol=2, fontsize=8, frameon=False)
+        fig.tight_layout()
+        vues.append(fig)
+    return vues
+
+
+def _annees_maximum(etats: list, points: dict) -> list[tuple[int, int]]:
+    """Pour chaque relèvement, (dernière année pleine avant, première année pleine depuis)."""
+    return [(int(d[:4]) - 1, int(d[:4]) if d[5:] == "01-01" else int(d[:4]) + 1)
+            for d, v, etat, *_ in etats if etat == "changement"]
+
+
+def _vues_maximum() -> list:
+    ft = figtools.fig_text
+    courbes = courbes_maximum()
+    etats = figtools.serie_escalier(SERIE_MAXIMUM, courbes)["maximum"]
+    reels = _constants(SERIE_MAXIMUM, courbes)["maximum"]
+    dates = [d for d, *_ in etats]
+    libelle, couleur = courbes["maximum"]
+    fmt = lambda v: _nombre(v, 0)  # noqa: E731
+    reperes = (min(reels), max(reels), *(a for paire in _annees_maximum(etats, reels)
+                                         for a in paire))
+    vues = []
+    for constante in (False, True):
+        fig, ax = plt.subplots(figsize=(9.5, 5.0))
+        if constante:
+            _annuelle(ax, reels, couleur, libelle, fmt, reperes=reperes)
+        else:
+            _escalier(ax, etats, couleur, libelle, fmt)
+        _marques(ax, dates)
+        sommet = max(reels.values()) if constante else max(v for _d, v, *_ in etats if v)
+        ax.set_ylim(0, 1.15 * sommet)
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _p: _nombre(y, 0)))
+        ax.grid(True, axis="y", alpha=0.3)
+        ax.set_xticks([figtools.abscisse_date(d) for d in dates])
+        ax.set_xticklabels([d[:4] for d in dates], fontsize=8.5)
+        ax.set_xlim(1996.2, int(dates[-1][:4]) + 1.6)
+        ax.set_xlabel(ft(_m("x_annee" if constante else "x_effet")), fontsize=9)
+        unite = _m("constant_an", base=BASE) if constante else _m("courant_an")
+        ax.set_ylabel(ft(_m("axe", grandeur=_m("maximum_tcl"), unite=unite)))
+        poignees = [Line2D([], [], color=couleur, lw=2.2, marker="o", ms=4, label=ft(libelle)),
+                    _poignee_decret("texte")]
+        if not constante:
+            poignees.insert(1, Line2D([], [], color=couleur, lw=0, marker="x", ms=7, mew=2,
+                                      label=ft(_m("suppression"))))
+        ax.legend(handles=poignees, loc="upper center", bbox_to_anchor=(0.5, -0.14), ncol=3,
+                  fontsize=8, frameon=False)
+        fig.tight_layout()
+        vues.append(fig)
+    return vues
+
+
 # --- les nombres du texte ---------------------------------------------------------------
 
 def reperes() -> dict:
@@ -377,6 +560,24 @@ LECTURES = {
             "hauteur dans les trois zones. Le tarif de la zone de haute densité vaut, en "
             "dinars de {base} par mètre carré, {p0} en {a0}, {p1v} en {a1v} puis {p1} en "
             "{a1}, {p2v} en {a2v} puis {p2} en {a2}, et {pfin} en {base}."),
+        "minimum": (
+            " Les quatre courbes sont les quatre catégories d'immeuble, au taux de {taux} % "
+            "de la taxe sur les immeubles bâtis ; les montants des trois autres taux sont au "
+            "tableau. Le montant de la première catégorie vaut, en dinars de {base} par mètre "
+            "carré, {p0} en {a0}, {p1v} en {a1v} puis {p1} en {a1}, {p2v} en {a2v} puis {p2} "
+            "en {a2}, et {pfin} en {base}."),
+        "maximum": (
+            "Chaque trait pointillé marque une date d'effet : 13 mars 1997, 26 juin 2003 et "
+            "1^er^ janvier 2007 pour les trois décrets, 1^er^ janvier 2012 pour la loi qui "
+            "supprime le maximum. En dinars courants, une valeur vaut de sa date d'effet à la "
+            "veille de la suivante ; la croix marque la fin du dernier palier, à la "
+            "suppression. En dinars de {base}, chaque point est la moyenne des montants en "
+            "vigueur au premier jour de chacun des douze mois de l'année, multipliée par "
+            "l'indice des prix à la consommation de {base} et divisée par celui de l'année ; "
+            "la série va de {a0}, première année couverte sur douze mois, à {afin}, dernière "
+            "année où le maximum s'applique. Le maximum vaut, en dinars de {base} par an, "
+            "{p0} en {a0}, {suite}, et {pfin} en {afin}."),
+        "maximum_etape": "{pv} en {av} puis {p} en {a}",
     },
     "ar": {
         "commune": (
@@ -398,17 +599,33 @@ LECTURES = {
             "المناطق الثلاث. يبلغ مبلغ المنطقة ذات الكثافة العمرانية المرتفعة، بدينار سنة "
             "{base} للمتر المربع، {p0} سنة {a0}، و{p1v} سنة {a1v} ثمّ {p1} سنة {a1}، و{p2v} "
             "سنة {a2v} ثمّ {p2} سنة {a2}، و{pfin} سنة {base}."),
+        "minimum": (
+            " المنحنيات الأربعة هي أصناف العقارات الأربعة، بنسبة {taux} % للمعلوم على "
+            "العقارات المبنية؛ ومبالغ النسب الثلاث الأخرى في الجدول. يبلغ مبلغ الصنف الأوّل، "
+            "بدينار سنة {base} للمتر المربع، {p0} سنة {a0}، و{p1v} سنة {a1v} ثمّ {p1} سنة "
+            "{a1}، و{p2v} سنة {a2v} ثمّ {p2} سنة {a2}، و{pfin} سنة {base}."),
+        "maximum": (
+            "كلّ خطّ منقّط يبيّن تاريخ نفاذ: 13 مارس 1997 و26 جوان 2003 و1 جانفي 2007 "
+            "للأوامر الثلاثة، و1 جانفي 2012 للقانون الذي يحذف الحد الأقصى. بالدينار الجاري، "
+            "تسري القيمة من تاريخ نفاذها إلى اليوم السابق لتاريخ نفاذ القيمة الموالية؛ "
+            "والعلامة × تبيّن نهاية الدرجة الأخيرة عند الحذف. بدينار سنة {base}، كلّ نقطة هي "
+            "معدّل المبالغ الجاري بها العمل في اليوم الأوّل من كلّ شهر من أشهر السنة الاثني "
+            "عشر، مضروبًا في الرقم القياسي لأسعار الاستهلاك لسنة {base} ومقسومًا على رقم "
+            "السنة؛ تمتدّ السلسلة من سنة {a0}، أوّل سنة مغطّاة على اثني عشر شهرًا، إلى سنة "
+            "{afin}، آخر سنة يُطبَّق فيها الحد الأقصى. يبلغ الحد الأقصى، بدينار سنة {base} في "
+            "السنة، {p0} سنة {a0}، و{suite}، و{pfin} سنة {afin}."),
+        "maximum_etape": "{pv} سنة {av} ثمّ {p} سنة {a}",
     },
 }
 
 
-def _lecture(genre: str, points: dict, decimales: int) -> str:
+def _lecture(genre: str, points: dict, decimales: int, **autres) -> str:
     a0, a1v, a1, a2v, a2, _base = reperes()["annees"]
     textes = LECTURES[figtools.lang()]
     n = lambda a: _nombre(points[a], decimales)  # noqa: E731
     champs = dict(base=BASE, fin=FIN, a0=a0, a1v=a1v, a1=a1, a2v=a2v, a2=a2, p0=n(a0),
                   p1v=n(a1v), p1=n(a1), p2v=n(a2v), p2=n(a2), pfin=n(BASE))
-    return (textes["commune"] + textes[genre]).format(**champs)
+    return (textes["commune"] + textes[genre]).format(**champs, **autres)
 
 
 def lecture_prix() -> str:
@@ -419,15 +636,49 @@ def lecture_tarif() -> str:
     return _lecture("tarif", reperes()["tarif"]["haute"], 3)
 
 
+def reperes_tcl() -> dict:
+    """Les nombres du chapitre des impôts sur l'activité, sur les points des deux figures.
+
+    `minimum` : {clé: {année: dinars de l'année de base par mètre carré}} ; `maximum` :
+    {année: dinars de l'année de base par an} ; `etapes` : pour chaque relèvement du
+    maximum, (dernière année pleine avant, première année pleine depuis).
+    """
+    etats = figtools.serie_escalier(SERIE_MAXIMUM, courbes_maximum())["maximum"]
+    maximum = _constants(SERIE_MAXIMUM, courbes_maximum())["maximum"]
+    return {"minimum": _constants(SERIE_MINIMUM, courbes_minimum()), "maximum": maximum,
+            "etapes": _annees_maximum(etats, maximum)}
+
+
+def lecture_minimum_tcl() -> str:
+    points = reperes_tcl()["minimum"][f"categorie_1_taux_{TAUX_TRACE}"]
+    return _lecture("minimum", points, 3, taux=TAUX_TRACE)
+
+
+def lecture_maximum_tcl() -> str:
+    r = reperes_tcl()
+    points, textes = r["maximum"], LECTURES[figtools.lang()]
+    n = lambda a: _nombre(points[a], 0)  # noqa: E731
+    separateur = "، و" if figtools.lang() == "ar" else ", "
+    suite = separateur.join(textes["maximum_etape"].format(pv=n(av), av=av, p=n(a), a=a)
+                            for av, a in r["etapes"])
+    a0, afin = min(points), max(points)
+    return textes["maximum"].format(base=BASE, a0=a0, afin=afin, p0=n(a0), pfin=n(afin),
+                                    suite=suite)
+
+
 # --- les deux figures -------------------------------------------------------------------
 
 def _figure(serie: str, courbes: dict, vues: list, genre: str, slug: str, caption: str,
-            lecture: str, decimales: int) -> None:
+            lecture: str, decimales: int, unites: tuple[str, str] = ("courant_long", "constant"),
+            **champs) -> None:
+    """`unites` : clés de `MOTS` des unités courante et constante ; `champs` complète le
+    libellé de la grandeur (le taux tracé, pour le minimum de la taxe sur les établissements)."""
+    grandeur = _m(genre, **champs)
     libelles = {
         "parametre": _m("grandeur"),
-        "moyenne": _m("moyenne_an", grandeur=_m(genre), unite=_m("courant_long")),
+        "moyenne": _m("moyenne_an", grandeur=grandeur, unite=_m(unites[0])),
         "ipc": _m("ipc"),
-        "reel": _m("reel", grandeur=_m(genre), unite=_m("constant", base=BASE)),
+        "reel": _m("reel", grandeur=grandeur, unite=_m(unites[1], base=BASE)),
     }
     table = figtools.table_escalier_constants(
         serie, courbes, base=BASE, ipc=dinars_constants.ipc(), libelles=libelles,
@@ -449,3 +700,16 @@ def figure_tarif(caption: str) -> None:
     """`fig-fl-tnb-tarif` : à appeler dans un chunk `#| output: asis` étiqueté."""
     _figure(SERIE_TARIF, courbes_tarif(), _vues_tarif(), "tarif", "fig_fl_tnb_tarif",
             caption, lecture_tarif(), 3)
+
+
+def figure_minimum_tcl(caption: str) -> None:
+    """`fig-fl-tcl-minimum` : à appeler dans un chunk `#| output: asis` étiqueté."""
+    _figure(SERIE_MINIMUM, courbes_minimum(), _vues_minimum(), "minimum_tcl",
+            "fig_fl_tcl_minimum", caption, lecture_minimum_tcl(), 3, taux=TAUX_TRACE)
+
+
+def figure_maximum_tcl(caption: str) -> None:
+    """`fig-fl-tcl-maximum` : à appeler dans un chunk `#| output: asis` étiqueté."""
+    _figure(SERIE_MAXIMUM, courbes_maximum(), _vues_maximum(), "maximum_tcl",
+            "fig_fl_tcl_maximum", caption, lecture_maximum_tcl(), 1,
+            unites=("courant_an_long", "constant_an"))

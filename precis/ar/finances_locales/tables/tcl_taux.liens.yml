@@ -1,0 +1,19 @@
+- libelle: نسبة المعلوم على المؤسسات — رقم المعاملات الخام المحلي
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/chiffre_affaires_brut_local.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_etablissements.taux.chiffre_affaires_brut_local/table/
+- libelle: نسبة المعلوم على المؤسسات — رقم المعاملات الخام
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/chiffre_affaires_brut.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_etablissements.taux.chiffre_affaires_brut/table/
+- libelle: نسبة المعلوم على المؤسسات — التصدير والخدمات المسداة لغير المقيمين
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/exportation_et_non_residents.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_etablissements.taux.exportation_et_non_residents/table/
+- libelle: نسبة المعلوم على المؤسسات — منتجات خاضعة للمصادقة الإدارية للأسعار، هامش
+    لا يتجاوز 6 %
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/produits_prix_homologues.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_etablissements.taux.produits_prix_homologues/table/
+- libelle: نسبة المعلوم على المؤسسات — الضريبة، المطالبون بالأداء المعيّنون سنة 1997
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/impot_regime_1997.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_etablissements.taux.impot_regime_1997/table/
+- libelle: نسبة المعلوم على المؤسسات — الضريبة، المطالبون بالأداء المعيّنون سنة 2013
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/impot_regime_2013.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_etablissements.taux.impot_regime_2013/table/
