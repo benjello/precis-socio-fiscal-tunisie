@@ -70,7 +70,7 @@ Les deux impôts sont créés par deux lois du 14 mai 1975, au profit des commun
 
 ### La taxe sur les établissements {#sec-fl-tcl-1997}
 
-Dans le code de 1997, la taxe sur les établissements est le plus grand de deux montants — une fraction du chiffre d'affaires brut local, ou un minimum calculé sur la superficie des locaux —, dans la limite d'un maximum annuel. Le code ne définit pas le mot « local ». Dans le cas général, la taxe s'écrit :
+Dans le code de 1997, la taxe sur les établissements est le plus grand de deux montants — une fraction du chiffre d'affaires brut local, ou un minimum calculé sur la superficie des locaux —, dans la limite d'un maximum que le code renvoie à un décret. Le code ne définit pas le mot « local ». Dans le cas général, la taxe s'écrit :
 
 $$
 T = \max\left(\tau\,A,\; \mu\,s\right)
@@ -81,7 +81,7 @@ où $T$ est la taxe annuelle, $\tau$ son taux, $A$ le chiffre d'affaires brut lo
 - **Qui paie.** Les personnes physiques soumises à l'impôt sur le revenu au titre des bénéfices industriels et commerciaux ou des bénéfices non commerciaux, les personnes morales soumises à l'impôt sur les sociétés, les sociétés de personnes et les associations en participation, même exonérées de ces impôts ([article 35](#r-fl-act-1997-redevables)). Les établissements touristiques soumis à la taxe hôtelière sont exonérés ([article 36](#r-fl-act-1997-exonerations)).
 - **Sur quelle assiette, à quel taux.** 0,2 % du chiffre d'affaires brut local ; ou 25 % de l'impôt sur le revenu ou sur les sociétés, dans trois cas : les contribuables au forfait, les établissements dont la marge brute réglementée ne dépasse pas 4 %, et les établissements déficitaires qui justifient d'une comptabilité régulière ([articles 37 et 38 § I](#r-fl-act-1997-assiette)).
 - **Le minimum.** La taxe ne peut être inférieure à la taxe sur les immeubles bâtis des locaux exploités, calculée sur 5 % du prix de référence du mètre carré, et non sur 2 %, multipliée par la superficie couverte ; ce minimum est dû même sans chiffre d'affaires ([article 38 § II](#r-fl-act-1997-minimum), @sec-fl-tcl-minimum).
-- **Le maximum.** Un décret fixe un maximum annuel ; si le minimum le dépasse, c'est le minimum qui est dû ([article 38 § III](#r-fl-act-1997-maximum), @sec-fl-tcl-2012-2013).
+- **Le maximum.** La taxe ne peut excéder « un maximum qui sera fixé par décret » ; le code ne dit pas à quelle période ce maximum se rapporte, et ce sont les décrets qui le fixent par année. Si le minimum le dépasse, c'est le minimum qui est dû ([article 38 § III](#r-fl-act-1997-maximum), @sec-fl-tcl-2012-2013).
 - **À qui va le produit.** Quand l'activité s'exerce dans plusieurs collectivités, la taxe se répartit entre elles selon la superficie couverte de chaque centre ou agence (@sec-fl-tcl-partage).
 
 Les établissements agricoles et de pêche soumis à l'impôt sur les sociétés acquittent une taxe égale à la taxe sur les immeubles bâtis de chacun de leurs locaux ([article 38 § IV](#r-fl-act-1997-agricoles)). La taxe est déclarée et payée à la recette des finances, chaque mois ; les redevables taxés sur leur impôt la paient avec celui-ci (@sec-fl-tcl-declaration).
@@ -108,7 +108,7 @@ Source : code de la fiscalité locale, rédaction de 1997 [@loi97-11, art. 39 ; 
 | []{#r-fl-act-1997-exonerations}Établissements : exonérations | code, art. 36 [@loi97-11, art. 36] | personnes que le code de l'impôt sur le revenu et de l'impôt sur les sociétés exonère à ses art. 3 § 6 et 45 § 2 ; établissements touristiques soumis à la taxe hôtelière ; régimes spéciaux, légaux ou conventionnels, maintenus |
 | []{#r-fl-act-1997-assiette}Établissements : assiette et taux | code, art. 37 et 38 § I [@loi97-11, art. 37 et 38 § I] | 0,2 % du chiffre d'affaires brut local ; 25 % de l'impôt pour les forfaitaires de l'art. 44 § IV du code de l'impôt sur le revenu et de l'impôt sur les sociétés, les marges brutes réglementées d'au plus 4 % et les déficitaires |
 | []{#r-fl-act-1997-minimum}Établissements : minimum | code, art. 38 § II [@loi97-11, art. 38 § II] | taxe sur les immeubles bâtis des locaux, calculée sur 5 % du prix de référence ; quatre catégories d'immeubles — à usage administratif ou d'activité commerciale ou non commerciale, construction légère industrielle, béton industriel, immeubles industriels de plus de 5 000 m² ; « taxe par mètre carré de référence » fixée par décret tous les trois ans |
-| []{#r-fl-act-1997-maximum}Établissements : maximum | code, art. 38 § III [@loi97-11, art. 38 § III] | maximum annuel fixé par décret ; le minimum est dû s'il le dépasse |
+| []{#r-fl-act-1997-maximum}Établissements : maximum | code, art. 38 § III [@loi97-11, art. 38 § III] | « un maximum qui sera fixé par décret », sans mention de la période à laquelle il se rapporte : ce sont les décrets qui le disent annuel ; le minimum est dû s'il le dépasse |
 | []{#r-fl-act-1997-agricoles}Établissements agricoles et de pêche | code, art. 38 § IV [@loi97-11, art. 38 § IV] | taxe égale à la taxe sur les immeubles bâtis de chaque local, pour ceux qui sont soumis à l'impôt sur les sociétés |
 | []{#r-fl-act-1997-declaration}Établissements : déclaration, contrôle | code, art. 39 et 40 [@loi97-11, art. 39 ; @loi97-11, art. 40] | déclaration mensuelle à la recette des finances ; règles du code de l'impôt sur le revenu et de l'impôt sur les sociétés pour le contrôle et le contentieux |
 
@@ -128,23 +128,35 @@ Les fonds qui reçoivent l'excédent sont présentés au chapitre des transferts
 
 []{#sec-fl-tcl-2011-2014}[]{#sec-fl-tcl-maximum}Au 1^er^ janvier 2012, la taxe sur les établissements perd son maximum annuel ; au 1^er^ janvier 2013, son produit au-delà de 100 000 D par an pour chaque établissement est affecté à un fonds (@tbl-fl-tcl-maximum).
 
-| Depuis le | Maximum annuel de la taxe<br>(D) |
-|---|--:|
-| [[13 mars 1997]{.insecable}](#r-fl-act-plafond-1997) | 50 000 |
-| [[26 juin 2003]{.insecable}](#r-fl-act-plafond-2003) | 60 000 |
-| [[1^er^ janvier 2007]{.insecable}](#r-fl-act-plafond-2007) | 100 000 |
-| [[1^er^ janvier 2012]{.insecable}](#r-fl-act-plafond-2012) | aucun : maximum supprimé |
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "tcl_maximum.md",
+                               "Maximum de la taxe sur les établissements, en dinars par an, à compter du 13 mars 1997, du 26 juin 2003 et du 1^er^ janvier 2007, et sa suppression au 1^er^ janvier 2012",
+                               "tbl-fl-tcl-maximum"))
+```
 
-: Maximum annuel de la taxe sur les établissements, de 1997 à sa suppression {#tbl-fl-tcl-maximum}
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré quand le maximum sera daté et sourcé dans la base de paramètres ; figure en escalier (figtools.fig_escalier) après versement (plan de l'architecte, § 5.2 et 6). -->
+```{python}
+#| label: fig-fl-tcl-maximum
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import baremes
+baremes.figure_maximum_tcl(
+    caption=("Maximum de la taxe sur les établissements, en dinars courants et en dinars de "
+             "2025 par an, de 1997 à sa suppression au 1^er^ janvier 2012 (valeurs exactes au "
+             "@tbl-fl-tcl-maximum)"))
+```
 
 - **Un maximum relevé deux fois.** Trois décrets le fixent, chacun abrogeant le précédent : il double en dix ans.
+- **En dinars de 2025**, le maximum vaut 176 007 D par an en 1998 et 158 876 D en 2002 ; le relèvement de 2003 le porte à 179 120 D en 2004, celui de 2007 de 168 541 D en 2006 à 271 570 D en 2007 ; il vaut 231 291 D en 2011, dernière année où il s'applique (@fig-fl-tcl-maximum).
 - **Sa suppression.** [La loi de finances complémentaire pour 2012](#r-fl-act-plafond-2012) abroge le paragraphe du code qui prévoyait le maximum, sous la rubrique « Suppression de la limite maximale » de la taxe, et fixe elle-même la date du 1^er^ janvier 2012.
 - **L'excédent versé à un fonds.** [La loi de finances pour 2013](#r-fl-act-fonds-2013) crée un « fonds de coopération entre les collectivités locales », « destiné au développement des ressources financières des collectivités locales dont notamment les petites communes à ressources limitées », et le finance par le produit de la taxe qui dépasse 100 000 D par an « pour chaque établissement ». [Au 1^er^ janvier 2021](#r-fl-act-fonds-2021), ce même excédent figure parmi les ressources d'un fonds d'appui à la décentralisation, « destiné à financer les budgets des collectivités locales ».
-- **Un même montant, deux unités.** Le seuil de 2013 est égal au dernier maximum, 100 000 D ; le décret de 1997 fixait le maximum « par année », sans autre précision.
-
-<!-- TODO (documentaliste) : relire les décrets n° 2003-1345 et 2006-3360 pour l'unité du maximum (« par année » seul, comme le décret n° 97-435 ?) (note du 9 octobre 2026, § F). -->
+- **Un même montant, deux objets.** Le seuil de 2013 est égal au dernier maximum, 100 000 D. Le maximum plafonnait la taxe due : le code ne disait pas à quelle période il se rapportait, et ce sont les décrets qui le disent — « 50.000 dinars par année » [en 1997](#r-fl-act-plafond-1997), « montant maximum annuel » [en 2003](#r-fl-act-plafond-2003) et [en 2007](#r-fl-act-plafond-2007) ; aucun des trois ne dit s'il s'entend par redevable ou par établissement. Le seuil de 2013 répartit le produit d'une taxe qui n'est plus plafonnée, et la loi le compte « pour chaque établissement ».
 
 ### 2013-2014 : un taux réduit, puis la taxe étendue à l'exportation et aux entreprises exonérées {#sec-fl-tcl-2013-2014}
 
@@ -176,15 +188,15 @@ Au 1^er^ janvier 2013, la taxe reçoit un taux réduit de 0,1 % ; au 1^er^ janvi
 | Date d'effet | Portée | Texte et article | Avant → après |
 |---|---|---|---|
 | [1^er^ janvier 1997]{.insecable} | point de départ | code, art. 38 § I [@loi97-11, art. 38 § I] | — → 0,2 % du chiffre d'affaires brut local ; 25 % de l'impôt dans trois cas |
-| []{#r-fl-act-plafond-1997}[13 mars 1997]{.insecable} | point de départ | décret n° 97-435 du 3 mars 1997, p. 390 [@decret97-435] | art. 38 § III : — → maximum de 50 000 D « par année » ; sans clause d'effet |
-| []{#r-fl-act-plafond-2003}[26 juin 2003]{.insecable} | étape — de 1997 | décret n° 2003-1345 du 16 juin 2003, p. 1992 [@decret2003-1345] | art. 38 § III : maximum 50 000 D → 60 000 D ; abroge le décret de 1997 ; sans clause d'effet |
-| []{#r-fl-act-plafond-2007}[1^er^ janvier 2007]{.insecable} | étape — de 1997 | décret n° 2006-3360 du 25 décembre 2006 ; effet, art. 2 [@decret2006-3360, art. 2, p. 29] | art. 38 § III : maximum 60 000 D → 100 000 D ; abroge le décret de 2003 |
+| []{#r-fl-act-plafond-1997}[13 mars 1997]{.insecable} | point de départ | décret n° 97-435 du 3 mars 1997, p. 390 [@decret97-435] | art. 38 § III : — → maximum de 50 000 D ; art. 1^er^ : « 50.000 dinars par année », sans dire s'il s'entend par redevable ou par établissement ; sans clause d'effet |
+| []{#r-fl-act-plafond-2003}[26 juin 2003]{.insecable} | étape — de 1997 | décret n° 2003-1345 du 16 juin 2003, p. 1992 [@decret2003-1345] | art. 38 § III : maximum 50 000 D → 60 000 D ; « montant maximum annuel », dans l'intitulé et à l'art. 1^er^, sans dire s'il s'entend par redevable ou par établissement ; abroge le décret de 1997 ; sans clause d'effet |
+| []{#r-fl-act-plafond-2007}[1^er^ janvier 2007]{.insecable} | étape — de 1997 | décret n° 2006-3360 du 25 décembre 2006 ; effet, art. 2 [@decret2006-3360, art. 2, p. 29] | art. 38 § III : maximum 60 000 D → 100 000 D ; « montant maximum annuel », dans l'intitulé et à l'art. 1^er^, sans dire s'il s'entend par redevable ou par établissement ; abroge le décret de 2003 |
 | []{#r-fl-act-plafond-2012}[1^er^ janvier 2012]{.insecable} | **rupture** — la fin du maximum | loi de finances complémentaire pour 2012 [@lfc-2012, art. 50, p. 930] | art. 38 § III abrogé : maximum de 100 000 D → aucun maximum ; l'article fixe lui-même cette date ; rubrique « Suppression de la limite maximale de la taxe sur les établissements à caractère industriel, commercial ou professionnel » |
 | []{#r-fl-act-fonds-2013}[1^er^ janvier 2013]{.insecable} | **rupture** — l'excédent à un fonds | loi de finances pour 2013 [@lf-2013, art. 14, p. 5 ; @lf-2013, art. 13, p. 5] | hors code, rubrique « Création d'un fonds de coopération entre les collectivités locales » : fonds spécial du Trésor (art. 13), financé par le produit de la taxe « qui dépasse au titre d'une année 100 000 dinars pour chaque établissement » (art. 14) |
 | []{#r-fl-act-assiette-2013}[1^er^ janvier 2013]{.insecable} | **rupture** — l'assiette et les taux | loi de finances pour 2013 [@lf-2013, art. 23, p. 8] | art. 37 al. 2 : assiette sur l'impôt pour les forfaitaires de l'art. 44 § IV, les marges réglementées ≤ 4 % et les déficitaires → pour les forfaitaires de l'art. 44 bis et les établissements en perte |
 | []{#r-fl-act-taux-2013}[1^er^ janvier 2013]{.insecable} | **rupture** — l'assiette et les taux | loi de finances pour 2013 [@lf-2013, art. 24, p. 8] | art. 38 § I : — → taux réduit de 0,1 % pour les produits à prix homologués à marge brute ≤ 6 % ; option pour 25 % de l'impôt, exercée en janvier ; rubrique des art. 23 et 24, « Réduction du taux de la taxe sur les établissements due par les entreprises qui commercialisent des produits soumis au régime de l'homologation administrative des prix » |
-| []{#r-fl-act-assiette-2014}[1^er^ janvier 2014]{.insecable} | **rupture** — l'assiette et les taux | loi de finances pour 2014 [@lf-2014, art. 49, p. 3680] | rubrique des art. 49 et 50, « Soumission du chiffre d'affaires provenant de l'exportation à la TCL » ; art. 37 et 39 § I : chiffre d'affaires brut « local » → chiffre d'affaires brut ; art. 38 § I : 0,1 % pour le chiffre d'affaires provenant de l'exportation et, pour leur activité avec les non-résidents, celui des établissements de santé prêtant la totalité de leurs services aux non-résidents, des prestataires de services financiers non résidents et des sociétés d'investissement à capital variable à règles d'investissement allégées |
-| []{#r-fl-act-fonds-2021}[1^er^ janvier 2021]{.insecable} | étape — de 2012-2013 | loi de finances pour 2021 [@lf-2021, art. 13, p. 3125-3126] | hors code, rubrique « Institution d'un fonds d'appui à la décentralisation, de péréquation, de régularisation et de solidarité entre les collectivités locales » : alimenté par le produit de la taxe « qui dépasse au cours de l'année 100.000 dinars pour chaque établissement » |
+| []{#r-fl-act-assiette-2014}[1^er^ janvier 2014]{.insecable} | **rupture** — l'assiette et les taux | loi de finances pour 2014 [@lf-2014, art. 49, p. 3680-3681] | rubrique des art. 49 et 50, « Soumission du chiffre d'affaires provenant de l'exportation à la TCL » ; art. 37 et 39 § I : chiffre d'affaires brut « local » → chiffre d'affaires brut ; art. 38 § I : 0,1 % pour le chiffre d'affaires provenant de l'exportation et, pour leur activité avec les non-résidents, celui des établissements de santé prêtant la totalité de leurs services aux non-résidents, des prestataires de services financiers non résidents et des sociétés d'investissement à capital variable à règles d'investissement allégées |
+| []{#r-fl-act-fonds-2021}[1^er^ janvier 2021]{.insecable} | étape — de 2012-2013 | loi de finances pour 2021 [@lf-2021, art. 13, p. 3125-3127] | hors code, rubrique « Institution d'un fonds d'appui à la décentralisation, de péréquation, de régularisation et de solidarité entre les collectivités locales » : alimenté par le produit de la taxe « qui dépasse au cours de l'année 100.000 dinars pour chaque établissement » ; le § 6, p. 3127, supprime le fonds de coopération de 2013 |
 
 : Les textes qui ont modifié l'assiette, les taux et le maximum de la taxe sur les établissements depuis 1997 {#tbl-fl-activite-textes}
 
@@ -225,20 +237,21 @@ Les dates d'effet sont celles que fixe chaque loi de finances pour l'ensemble de
 
 ### Assiettes et taux {#sec-fl-tcl-etat}
 
-En 2026, la taxe est de 0,2 % du chiffre d'affaires brut ; de 0,1 % pour le chiffre d'affaires à l'exportation, certains services aux non-résidents et les produits à prix homologués à faible marge ; de 25 % de l'impôt pour les forfaitaires et les établissements en perte (@tbl-fl-tcl-taux).
+En 2026, la taxe est de 0,2 % du chiffre d'affaires brut ; de 0,1 % pour le chiffre d'affaires à l'exportation, certains services aux non-résidents et les produits à prix homologués à faible marge ; de 25 % de l'impôt pour les forfaitaires et les établissements en perte. Le tableau donne le taux de chaque assiette aux trois dates où l'un d'eux change ; sa dernière colonne est l'état du droit en 2026 (@tbl-fl-tcl-taux).
 
-| Depuis le | Jusqu'au | Assiette | Taux<br>(% de l'assiette) | Option |
-|---|---|---|--:|---|
-| [[1^er^ janvier 1997]{.insecable}](#r-fl-act-1997-assiette) | [31 décembre 2013]{.insecable} | chiffre d'affaires brut local | 0,2 | — |
-| [[1^er^ janvier 1997]{.insecable}](#r-fl-act-1997-assiette) | [31 décembre 2012]{.insecable} | impôt sur le revenu ou sur les sociétés des forfaitaires, des établissements à marge brute réglementée d'au plus 4 % et des établissements déficitaires | 25 | — |
-| [[1^er^ janvier 2013]{.insecable}](#r-fl-act-taux-2013) | en vigueur | chiffre d'affaires des établissements qui commercialisent des produits à prix homologués à marge brute d'au plus 6 % | 0,1 | 25 % de l'impôt |
-| [[1^er^ janvier 2013]{.insecable}](#r-fl-act-assiette-2013) | en vigueur | impôt des forfaitaires de l'article 44 bis et des établissements en perte | 25 | — |
-| [[1^er^ janvier 2014]{.insecable}](#r-fl-act-assiette-2014) | en vigueur | chiffre d'affaires brut | 0,2 | — |
-| [[1^er^ janvier 2014]{.insecable}](#r-fl-act-assiette-2014) | en vigueur | chiffre d'affaires provenant de l'exportation ; chiffre d'affaires réalisé avec les non-résidents par les établissements de santé qui leur prêtent la totalité de leurs services, par les prestataires de services financiers non résidents et par les sociétés d'investissement à capital variable à règles d'investissement allégées | 0,1 | — |
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "tcl_taux.md",
+                               "Taux de la taxe sur les établissements selon l'assiette, au 1^er^ janvier 1997, au 1^er^ janvier 2013 et au 1^er^ janvier 2014 ; « — » : l'assiette n'existe pas à cette date",
+                               "tbl-fl-tcl-taux"))
+```
 
-: Assiettes et taux de la taxe sur les établissements depuis 1997 ; « en vigueur » s'entend en 2026 {#tbl-fl-tcl-taux}
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces taux seront datés et sourcés dans la base de paramètres ; figure en escalier des taux après versement (plan de l'architecte, § 5.2 et 6). Le taux de la taxe hôtelière est au tableau `tbl-fl-taxe-hoteliere`, celui de l'auto-entrepreneur au tableau `tbl-fl-tcl-forfaits`. -->
+- **Deux assiettes changent sans que leur taux change**, et ont chacune deux lignes : le chiffre d'affaires brut, « local » jusqu'au 31 décembre 2013 ; l'impôt, dont les redevables ne sont plus les mêmes [depuis le 1^er^ janvier 2013](#r-fl-act-assiette-2013). Les établissements au taux réduit des produits à prix homologués peuvent opter, en janvier, pour 25 % de leur impôt.
 
 - **Qui la doit.** Les redevables de 1997 et, depuis 2002, les groupements d'intérêt économique ; depuis 2014, les entreprises de quatre régimes jusque-là exonérés (@tbl-fl-tcl-redevables).
 - **Entre quelles bornes.** Aucun maximum depuis 2012 ; un minimum par mètre carré, dû même sans chiffre d'affaires (@sec-fl-tcl-minimum).
@@ -246,35 +259,37 @@ En 2026, la taxe est de 0,2 % du chiffre d'affaires brut ; de 0,1 % pour le chif
 
 ### Le minimum par mètre carré {#sec-fl-tcl-minimum}
 
-La taxe ne peut être inférieure à un montant par mètre carré de superficie couverte, la « taxe par mètre carré de référence », qui dépend de la catégorie de l'immeuble et du taux de la taxe sur les immeubles bâtis applicable au local. Le barème en vigueur date [du 1^er^ janvier 2017](#r-fl-act-minimum-2017) (@tbl-fl-tcl-minimum).
+La taxe ne peut être inférieure à un montant par mètre carré de superficie couverte, la « taxe par mètre carré de référence », qui dépend de la catégorie de l'immeuble et du taux de la taxe sur les immeubles bâtis applicable au local. Le tableau donne les seize montants aux trois dates d'effet ; le barème en vigueur, dans sa dernière colonne, date [du 1^er^ janvier 2017](#r-fl-act-minimum-2017) (@tbl-fl-tcl-minimum).
 
-| Catégorie d'immeuble | Taux de 8 %<br>(D/m²) | Taux de 10 %<br>(D/m²) | Taux de 12 %<br>(D/m²) | Taux de 14 %<br>(D/m²) |
-|---|--:|--:|--:|--:|
-| 1 : usage administratif, commercial ou non commercial | 0,900 | 1,125 | 1,345 | 1,570 |
-| 2 : construction légère industrielle | 0,620 | 0,770 | 0,920 | 1,075 |
-| 3 : béton industriel | 0,755 | 0,950 | 1,135 | 1,320 |
-| 4 : industriel de plus de 5 000 m² | 0,990 | 1,240 | 1,485 | 1,735 |
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "tcl_minimum.md",
+                               "Minimum de la taxe sur les établissements : taxe par mètre carré de référence, selon la catégorie d'immeuble et le taux de la taxe sur les immeubles bâtis applicable au local, à compter du 13 mars 1997, du 1^er^ janvier 2008 et du 1^er^ janvier 2017",
+                               "tbl-fl-tcl-minimum"))
+```
 
-: Minimum de la taxe sur les établissements depuis le 1^er^ janvier 2017 : taxe par mètre carré de référence, selon la catégorie d'immeuble et le taux de la taxe sur les immeubles bâtis applicable au local {#tbl-fl-tcl-minimum}
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré (ot.markdown_un_tableau_en_onglets) quand ces montants seront datés et sourcés dans la base de paramètres. -->
+```{python}
+#| label: fig-fl-tcl-minimum
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import baremes
+baremes.figure_minimum_tcl(
+    caption=("Minimum de la taxe sur les établissements : taxe par mètre carré de référence des "
+             "quatre catégories d'immeuble, au taux de 8 % de la taxe sur les immeubles bâtis, en "
+             "dinars courants et en dinars de 2025 par mètre carré, 1997-2026 (valeurs exactes et "
+             "autres taux au @tbl-fl-tcl-minimum)"))
+```
 
 - **Deux relèvements.** Les seize montants de [1997](#r-fl-act-minimum-1997) sont relevés de 7 à 8 % [au 1^er^ janvier 2008](#r-fl-act-minimum-2008), puis de 10 à 11 % au 1^er^ janvier 2017 : pour un local administratif ou commercial au taux de 8 %, 0,760 D, puis 0,815 D, puis 0,900 D par mètre carré.
+- **En dinars de 2025, aucun relèvement ne ramène le minimum au niveau du décret précédent.** Pour ce même local, le montant vaut 2,675 D de 2025 par mètre carré en 1998, 2,110 D en 2008, 1,540 D en 2017 et 0,900 D en 2025 ; le relèvement de 2017 le porte de 1,469 D en 2016 à 1,540 D. Les prix ont augmenté de 40 % de 1997 à 2008, de 51 % de 2008 à 2017, puis de 71 % de 2017 à 2025 (@fig-fl-tcl-minimum).
 
-:::: {.chronologie-repliable titre="Minimum de la taxe sur les établissements : montants par mètre carré selon la catégorie d'immeuble, barèmes de 1997 et de 2008, et les trois décrets, 1997-2017"}
-
-| En vigueur | Catégorie d'immeuble | Taux de 8 %<br>(D/m²) | Taux de 10 %<br>(D/m²) | Taux de 12 %<br>(D/m²) | Taux de 14 %<br>(D/m²) |
-|---|---|--:|--:|--:|--:|
-| du [13 mars 1997]{.insecable} au [31 décembre 2007]{.insecable} | 1 : usage administratif, commercial ou non commercial | 0,760 | 0,950 | 1,140 | 1,330 |
-| les mêmes dates | 2 : construction légère industrielle | 0,520 | 0,650 | 0,780 | 0,910 |
-| les mêmes dates | 3 : béton industriel | 0,640 | 0,800 | 0,960 | 1,120 |
-| les mêmes dates | 4 : industriel de plus de 5 000 m² | 0,840 | 1,050 | 1,260 | 1,470 |
-| du [1^er^ janvier 2008]{.insecable} au [31 décembre 2016]{.insecable} | 1 : usage administratif, commercial ou non commercial | 0,815 | 1,020 | 1,220 | 1,425 |
-| les mêmes dates | 2 : construction légère industrielle | 0,560 | 0,700 | 0,835 | 0,975 |
-| les mêmes dates | 3 : béton industriel | 0,685 | 0,860 | 1,030 | 1,200 |
-| les mêmes dates | 4 : industriel de plus de 5 000 m² | 0,900 | 1,125 | 1,350 | 1,575 |
-
-: Minimum de la taxe sur les établissements, barèmes de 1997 et de 2008 : taxe par mètre carré de référence, selon la catégorie d'immeuble et le taux de la taxe sur les immeubles bâtis applicable au local {#tbl-fl-tcl-minimum-anciens}
+:::: {.chronologie-repliable titre="Minimum de la taxe sur les établissements : les trois décrets, dates d'effet et pages, 1997-2017"}
 
 | Date d'effet | Portée | Texte et article | Ce que fait le décret |
 |---|---|---|---|
@@ -302,6 +317,8 @@ Cette partie réunit la taxe hôtelière, impôt distinct que le code construit 
 | Affectation du produit | la moitié au fonds spécial du Trésor pour la protection des zones touristiques | [[1^er^ janvier 1997]{.insecable}](#r-fl-act-hoteliere-fonds) |
 
 : La taxe hôtelière : assiette, taux et affectation du produit {#tbl-fl-taxe-hoteliere}
+
+<!-- TODO (rédacteur) : tableau gardé fait main le 11 octobre 2026, alors que ses deux valeurs sont datées et sourcées dans la base de paramètres (openfisca-tunisia 0.133, `fiscalite_locale/taxe_hoteliere/taux` et `…/part_affectee_fonds`, comparées et identiques : 2 % et 50 % au 1er janvier 1997). La forme commune des tableaux engendrés a une ancre de registre et une unité par colonne de date ; les deux lignes ont chacune leur ligne de registre (`r-fl-act-hoteliere-1997`, `r-fl-act-hoteliere-fonds`) et leur base (le chiffre d'affaires, le produit de la taxe). À engendrer quand une date d'effet s'ajoutera à l'une des deux séries. -->
 
 - **Qui paie.** Les exploitants des établissements touristiques au sens de la législation en vigueur ; ils sont exonérés de la taxe sur les établissements et de la taxe sur les immeubles bâtis ([articles 36 et 1^er^](#r-fl-act-hoteliere-exonerations)). Le recouvrement, le contrôle et le contentieux suivent les règles de la taxe sur les établissements ([articles 44 et 45](#r-fl-act-hoteliere-regles)).
 - **La moitié du produit à un fonds du Trésor.** [La loi de finances pour 1997](#r-fl-act-hoteliere-fonds) l'affecte au fonds spécial du Trésor pour la protection des zones touristiques.
@@ -380,7 +397,7 @@ La déclaration des lots non couverts ou non bâtis, exigée depuis 2016, sert c
 | []{#r-fl-act-partage-2005}[1^er^ janvier 2005]{.insecable} | **rupture** — des critères | loi de finances pour 2005 [@lf-2005, art. 81, p. 3445] | art. 38 § V : à défaut de superficie, critères de répartition fixés par décret ; rubrique « Rationalisation de la répartition de la taxe sur les établissements à caractère industriel, commercial ou professionnel entre les collectivités locales » |
 | []{#r-fl-act-partage-2006}[23 janvier 2006]{.insecable} | étape — de 2005 | décret n° 2006-49 du 9 janvier 2006, p. 181-182 [@decret2006-49] | critères : carrière 50 %, immeubles non bâtis ou non couverts 30 %, chiffre d'affaires ; sans clause d'effet |
 | [1^er^ janvier 2013]{.insecable} | **rupture** — l'excédent à un fonds | loi de finances pour 2013 [@lf-2013, art. 14, p. 5] | hors code : produit au-delà de 100 000 D par an pour chaque établissement affecté au fonds de coopération entre les collectivités locales |
-| [1^er^ janvier 2021]{.insecable} | étape — de 2012-2013 | loi de finances pour 2021 [@lf-2021, art. 13, p. 3125-3126] | hors code : le même excédent alimente le fonds d'appui à la décentralisation |
+| [1^er^ janvier 2021]{.insecable} | étape — de 2012-2013 | loi de finances pour 2021 [@lf-2021, art. 13, p. 3125-3127] | hors code : le même excédent alimente le fonds d'appui à la décentralisation |
 | [1^er^ janvier 2016]{.insecable} | ajustement | loi de finances pour 2016 [@lf-2016, art. 37] | art. 39 § I et 40 § III : les lots non couverts ou non bâtis sont déclarés, sous peine d'amende ; la rubrique de l'article, en arabe, porte sur la répartition de la taxe entre les collectivités |
 | []{#r-fl-act-partage-2021}[1^er^ janvier 2021]{.insecable} | étape — de 2005 | loi de finances pour 2021 [@lf-2021, art. 37, p. 3136] | art. 38 § V : répartition à la superficie bâtie ou couverte ; critères de 2006 repris dans la loi ; rubrique « Rationalisation de la répartition de la taxe à caractère industriel commercial ou professionnel » |
 | [1^er^ janvier 2024]{.insecable} | ajustement | loi de finances pour 2024 [@lf-2024, art. 67] | art. 40 § III : l'amende des lots non déclarés suit les règles de la taxe sur les terrains non bâtis ; la rubrique de l'article, en arabe, porte sur la répartition de la taxe |

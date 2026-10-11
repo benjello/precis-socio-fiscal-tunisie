@@ -118,7 +118,13 @@ PAQUETS = {
         # immeubles bâtis et taxe sur les terrains non bâtis, sous `fiscalite_locale/`
         # (PR #485) : en deçà, les barèmes du chapitre « Les impôts sur les immeubles »
         # du volume « Finances locales » ne pourraient être engendrés.
-        "version_minimale": (0, 129),
+        # La 0.133 verse la taxe sur les établissements — taux par assiette, minimum par
+        # mètre carré, maximum jusqu'à sa suppression, seuil de l'excédent affecté à un
+        # fonds — et la taxe hôtelière, sous `fiscalite_locale/` (PR #491) : en deçà, les
+        # tableaux et les deux séries du chapitre « Les impôts sur l'activité » du même
+        # volume ne pourraient être engendrés. Les 0.130 à 0.132 sont des PR à formules
+        # (#454, #455 et #460). La borne passe à la 0.133, publiée le 11 octobre 2026.
+        "version_minimale": (0, 133),
     },
 }
 

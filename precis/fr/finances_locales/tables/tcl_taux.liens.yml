@@ -1,0 +1,21 @@
+- libelle: Taux de la taxe sur les établissements — chiffre d'affaires brut local
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/chiffre_affaires_brut_local.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_etablissements.taux.chiffre_affaires_brut_local/table/
+- libelle: Taux de la taxe sur les établissements — chiffre d'affaires brut
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/chiffre_affaires_brut.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_etablissements.taux.chiffre_affaires_brut/table/
+- libelle: Taux de la taxe sur les établissements — exportation et services aux non-résidents
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/exportation_et_non_residents.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_etablissements.taux.exportation_et_non_residents/table/
+- libelle: Taux de la taxe sur les établissements — produits à prix homologués à marge
+    d'au plus 6 %
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/produits_prix_homologues.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_etablissements.taux.produits_prix_homologues/table/
+- libelle: Taux de la taxe sur les établissements — impôt, redevables désignés en
+    1997
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/impot_regime_1997.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_etablissements.taux.impot_regime_1997/table/
+- libelle: Taux de la taxe sur les établissements — impôt, redevables désignés en
+    2013
+  parametre: parameters/fiscalite_locale/taxe_etablissements/taux/impot_regime_2013.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_etablissements.taux.impot_regime_2013/table/
