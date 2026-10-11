@@ -1,0 +1,5 @@
+series: [transport-abonnements-scolaires]
+sources: [minfin-budget-transport-2013, minfin-budget-transport-2014, minfin-budget-transport-2015, minfin-budget-transport-2016, minfin-budget-transport-2017]
+fiches: [sources/minfin-budget-transport.md]
+caveats: [Deux segments qui ne se raccordent pas : éditions 2013 à 2016, puis édition 2017. L'année 2016 a deux valeurs, 565 649 et 433 032, sans explication de la source. Prévisions et chiffres de documents budgétaires, non un dénombrement constaté ; la source ne dit pas l'unité.]
+generated: 2026-10-11

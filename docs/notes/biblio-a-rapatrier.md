@@ -3533,3 +3533,40 @@ AR sur l'arabe (la pagination arabe diffère de la française avant 2000 et sur 
 - [ ] `cc-assurances-avenant8-2009` et `-avenant9-2012` AR, `-avenant4-1996` AR : début de page arabe non relu (sommaire illisible).
 - [ ] `cherif-kammoun-tajir` : éditeur, année et ISBN **non complétés**. Notices : BNT (https://www.bibliotheque.nat.tn/BNTK/doc/SYRACUSE/764026) — tome 4 « أنظمة التأجير والتقاعد والحماية الاجتماعية في الوظيفة العمومية », Tunis, Dar Ishamat fi adabiyyat al-mu'assasa, 2011, ISBN 9789973450142 ; ARP (https://bibliotheque.arp.tn/opac_css/index.php?lvl=notice_display&id=80739) — même titre et même éditeur, **2006**, 117 p., ISBN 978-9973-45-014-2. Années en désaccord, et titre différent de celui de l'entrée (« نظام التأجير بالوظيفة العمومية ») : à trancher sur la page de titre du scan avant de compléter.
 - [ ] Le TODO du chapitre `_regime_statutaire_autonome.qmd` (clés à verser) est périmé : toutes les clés qu'il liste existent désormais.
+
+## Versement du 11/10/2026 (compensation, chapitre « Le transport public ») — À REPORTER DANS ZOTERO
+
+Trente-huit clés versées à la main dans `precis/fr/compensation/references.json` et
+`precis/ar/compensation/references.json`, d'après `docs/notes/compensation-transport-2026-10-11.md`
+(§ 3) et les `sources` du catalogue de `tunisia-data` — les clés sont celles du catalogue, non
+celles que la note suggérait :
+
+- *Journal officiel* (25) : `loi63-13`, `lf-1978`, `loi85-77`, `decret2001-2621`, `loi2003-33`,
+  `loi2004-33`, `loi2012-26`, `decret-gouv2017-987`, les quinze arrêtés tarifaires de 1987 à 2000
+  (`arrete-1987-02-14-tarifs-voyageurs` … `arrete-2000-02-17-tarifs-urbains`),
+  `arrete-1998-06-25-gratuite-douanes`, `arrete-2011-06-24-gratuite-surete`. URL arabes tirées de
+  `pdf_ar` de `jort_cache.db`, fichiers arabes non ouverts, champ `page` vide.
+- Rapports (11) : `minfin-budget-transport-2013` à `-2017` (captures d'archive),
+  `minfin-transferts-garanties` (une clé pour quatre éditions, comme au catalogue),
+  `minfin-entreprises-publiques-lf2020` et `-lf2021`, `cour-comptes-2008-transport-terrestre`,
+  `cour-comptes-2016-ministere-transport`, `banque-mondiale-2016-livre-blanc-transports`.
+- Presse (2) : `presse-wmc-2021-05-30`, `presse-tuniscope-2018-03-06`.
+- `lf-1984` : note et pages complétées (art. 38-39, p. 3378 ; art. 99 à 103, p. 3385-3386).
+
+À faire :
+
+- [ ] `decret-gouv2017-987` : l'édition française du JORT n° 70-71 de 2017 répond 404 sur pist.tn
+  (`2017F/Jo0702017.pdf`, `Jo0712017.pdf`) et manque au corpus local ; l'entrée française n'a ni
+  URL ni page, et son titre est une traduction du précis. `precis/urls-jort.json` : ajout à la main
+  de `https://www.pist.tn/jort/2017/2017A/Ja0712017.pdf` (à confirmer par
+  `scripts/verifier_urls_jort.py`).
+- [ ] Intitulés des arrêtés : repris de l'index du *Journal officiel*, accents rétablis, non
+  confrontés aux fascicules ; `arrete-2011-06-24-gratuite-surete` : signataires à vérifier.
+- [ ] Dates de parution non lues : budgets du ministère du Transport, rapport sur les transferts,
+  rapports sur les entreprises publiques. `minfin-entreprises-publiques-lf2021` : URL avec espaces
+  encodés, à contrôler.
+- [ ] Clés non créées, textes connus par leur seul intitulé : arrêtés du 23 février 1948 et du
+  28 février 1957, décret n° 65-303, loi de finances pour 1982 (art. 110), arrêté du 30 septembre
+  1989, arrêtés des 23 avril 1982, 12 juillet 1989 et 6 mai 1993 (personnes handicapées), loi
+  n° 2006-55, arrêté du 15 août 2011.
+- [ ] Rapport de la Cour des comptes sur la SNTRI (2017), rangé dans `tunisia-data`, non exploité.

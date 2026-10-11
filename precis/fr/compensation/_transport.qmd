@@ -1,0 +1,687 @@
+# Le transport public {#sec-compensation-transport}
+
+La série du poste « transport » de la dépense de compensation — 111,0 millions de dinars (MD) en 2003, 660,0 MD en 2024 — est donnée au chapitre de la dépense (@sec-compensation-par-poste). Ce chapitre ouvre le poste : ce que l'État paie et à quelles sociétés ; les textes qui ont mis ce financement en place, de la caisse des transporteurs de 1963 au fonds spécial de 1984, puis les lois de 1985 et de 2004 et les décrets de 2001 et de 2017 ; l'état du droit en octobre 2026 ; les tarifs et les abonnements ; l'abonnement scolaire et universitaire ; les gratuités et les réductions, avec l'autorité qui les rembourse ; enfin la longue période — tarifs en dinars courants et en dinars de 2025, subvention par société, abonnements scolaires, comptes des sociétés. Le budgétaire vient d'abord ; les constats de la Cour des comptes, puis un rapport de la Banque mondiale, ont chacun leur section.
+
+## Vue d'ensemble : ce que l'État paie, et à qui {#sec-compensation-transport-vue}
+
+La [compensation du transport](#g-compensation-transport) n'est pas un fonds : c'est une somme de subventions par société, inscrites aux dépenses d'intervention du ministère du Transport sous le libellé « soutien du transport public ». Elle rémunère des tarifs que l'État impose aux transporteurs publics au-dessous du tarif ordinaire. Le ministère des Finances en nomme trois composantes quand il explique la hausse du poste en 2010 : le nombre de bénéficiaires du transport scolaire et universitaire, le transport à tarifs réduits et le transport gratuit de certaines catégories [@minfin-finances-publiques-2010, p. 34]. Le budget de 2013 affecte la hausse de l'année, 52,5 MD, en particulier au transport scolaire et universitaire [@minfin-budget-transport-2013, p. 6].
+
+Le @fig-compensation-transport-soutien donne la répartition de ces crédits entre les sociétés, de 2012 à 2017, seules années pour lesquelles elle est établie ici société par société.
+
+```{python}
+#| label: fig-compensation-transport-soutien
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.figure(
+    "soutien_par_societe",
+    caption=("Le soutien du transport public par société bénéficiaire, 2012-2017 : crédits du "
+             "budget du ministère du Transport, en millions de dinars courants, en part des "
+             "crédits, en part de la dépense de compensation et en part du PIB"),
+    note_lecture=(
+        "Chaque barre empile les crédits inscrits au budget du ministère du Transport pour "
+        "les sociétés régionales de transport, la société des transports de Tunis (autobus, "
+        "puis métro), la Société nationale des chemins de fer tunisiens (SNCFT) et les autres "
+        "bénéficiaires — bac de Kerkennah, Tunisair Express, Société nationale de transport "
+        "interurbain, transport scolaire rural. Le nombre qui surmonte la barre est le total "
+        "des crédits. Ce sont des crédits votés — loi de finances ou loi de finances "
+        "complémentaire — de 2012 à 2016, et une prévision pour 2017 ; une lecture par "
+        "année, celle de l'édition la plus récente du budget, les autres étant dans les "
+        "données. Le rond noir est le poste « transport » de la dépense de compensation : "
+        "il se confond avec le total des crédits, sauf en 2014, 2015 et 2017, où le réalisé "
+        "est un peu inférieur. Deuxième vue : chaque bénéficiaire en part du total des "
+        "crédits de l'année.\n\n"
+        "Troisième vue : les mêmes crédits rapportés à la dépense de compensation de l'année, "
+        "les trois postes réunis — produits de base, carburants, transport. Le numérateur est "
+        "un crédit voté, le dénominateur la dépense réalisée du chapitre de la dépense : le "
+        "rapport dit un ordre de grandeur, non une part exacte. Il varie surtout avec le "
+        "dénominateur, que le poste des carburants fait passer de 5 514 MD en 2013 à "
+        "2 211 MD en 2016.\n\n"
+        "Quatrième vue : les crédits en part du PIB — celui de l'INS en [base "
+        "2015](../annexe-pib.html#pib-base-2015), rétropolée par l'INS pour 2012-2014, "
+        "valeurs d'origine ensuite ; la base est dite au-dessus du cadre. Toute la période "
+        "est dans la même base : aucune rupture de série n'y tombe (voir l'[annexe sur le "
+        "PIB](../annexe-pib.html#sec-pib-ruptures))."))
+```
+
+::: {.callout-note collapse="true" title="Soutien du transport public par société, 2012-2017 : montants des crédits, en millions de dinars"}
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.tableau_soutien(
+    caption=("Le soutien du transport public par société, 2012-2017 : crédits du budget du "
+             "ministère du Transport (millions de dinars courants, MD). Sous chaque année, "
+             "l'état du chiffre : loi de finances (LF), loi de finances complémentaire (LFC) "
+             "ou prévision. Les autres bénéficiaires sont la société du bac de Kerkennah, "
+             "Tunisair Express, la Société nationale de transport interurbain et le transport "
+             "scolaire rural ; SNCFT : Société nationale des chemins de fer tunisiens. Source : "
+             "budgets du ministère du Transport [@minfin-budget-transport-2013 ; "
+             "@minfin-budget-transport-2014 ; @minfin-budget-transport-2015 ; "
+             "@minfin-budget-transport-2016 ; @minfin-budget-transport-2017]."),
+    tbl_id="tbl-compensation-transport-soutien")
+```
+:::
+
+Cinq faits se lisent sur le @fig-compensation-transport-soutien.
+
+- **Les sociétés régionales d'abord.** Elles reçoivent chaque année de 55,0 à 57,6 % des crédits ; la société des transports de Tunis, de 28,8 à 31,0 % ; la SNCFT, de 10,9 à 11,9 %.
+- **Un périmètre plus large que le transport terrestre.** Le bac de Kerkennah reçoit 4,0 MD en 2012 et 10,0 MD en 2017 ; la compagnie aérienne Tunisair Express entre dans la ligne avec la loi de finances complémentaire pour 2014 — 5,0 MD, pris sur les crédits de la SNCFT et des sociétés régionales — et reçoit 5,0 MD en 2015, 2,0 MD en 2016 et 3,0 MD en 2017.
+- **Des crédits, non des dépenses constatées.** Leur somme égale le poste « transport » voté. Le réalisé s'en écarte peu : 384,0 MD pour 385,0 en 2014, 415,9 MD pour 416,0 en 2015, 448,2 MD pour 450,0 en 2017 (@tbl-compensation-2012-2025).
+- **Moins d'un demi-point de PIB, et une part très variable de la compensation.** Les crédits valent 0,38 % du PIB en 2012, 0,46 % en 2015 et 0,44 % en 2017. Rapportés à la dépense de compensation réalisée, tous postes réunis, ils en font 7,7 % en 2012, 6,0 % en 2013, 14,4 % en 2015, 19,6 % en 2016 et 12,9 % en 2017 : c'est le poste des carburants qui fait varier ce rapport, non le transport (@sec-compensation-par-poste).
+- **Aucune décomposition par nature.** Le budget ne sépare pas le scolaire, les tarifs réduits et les gratuités ; la part de chacun dans le poste n'est donnée par aucune des sources budgétaires identifiées.
+
+Avant 2012 et après 2017, cette répartition par société n'est pas établie. Un rapport du ministère des Finances donne, de 2016 à 2024, les « interventions » du budget par entreprise, sur un périmètre plus large que le poste (@sec-compensation-transport-interventions).
+
+<!-- TODO (documentaliste) : budgets du ministère du Transport de 2018 à 2026 (ligne « دعم النقل العمومي » par société) à collecter sur finances.gov.tn et gbo.tn, puis aux archives du web ; budgets antérieurs à 2013 aux archives de portail.finances.gov.tn — docs/notes/compensation-transport-2026-10-11.md, § 5, point 1. Les pages 34 (rapport sur les finances publiques 2010) et 6 (budget 2013) citées ci-dessus sont les pages du fichier, lues sur le texte extrait : pagination imprimée à relever. -->
+
+## La mise en place : une caisse des transporteurs, 1948-1983 {#sec-compensation-transport-mise-en-place .domicile-unique}
+
+Avant 1984, aucun texte identifié ne fait payer par l'État, ni par un fonds, l'écart entre un tarif réduit et le tarif ordinaire. Ce qui porte alors le nom de « compensation » dans les transports est une caisse de la profession : les transporteurs routiers l'alimentent, et elle sert les transporteurs.
+
+- **Des taxes de compensation sur les transports automobiles, à partir de 1948.** Un arrêté du 23 février 1948, refondu le 28 février 1957 et modifié jusqu'en 1965, porte sur des « taxes de compensation sur les transports automobiles ». Seuls les intitulés de ces textes sont connus ici.
+- **Une caisse spéciale, en 1963.** L'État institue par [la loi n° 63-13 du 27 mai 1963](#r-tr-1963) la « caisse spéciale de compensation des transports routiers ». Ses ressources sont prélevées sur les transporteurs : une surtaxe de 1950, une taxe de 1957 sur les taxis et une redevance par tonne autorisée. Elle secourt d'anciens titulaires de licences et subventionne des sociétés de transport. Elle ne finance aucun tarif.
+- **Les centres de visite technique, en 1978.** [La loi de finances pour 1978](#r-tr-1978) ajoute aux emplois de la caisse la création et le fonctionnement des centres de visite technique des véhicules, et à ses ressources le droit de visite.
+
+La compensation du transport, au sens d'un tarif préférentiel payé par un tiers, naît donc en 1984, et non en 1963 (@sec-compensation-transport-1984).
+
+:::: {.chronologie-repliable titre="Caisse spéciale de compensation des transports routiers et taxes de compensation sur les transports automobiles : textes, date par date, 1948-1982"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| non établie | point de départ | arrêté du 23 février 1948 ; refonte par un arrêté du 28 février 1957 ; modifications jusqu'au décret n° 65-303 du 15 juin 1965 | taxes de compensation sur les transports automobiles ; seuls les intitulés de ces textes sont connus ici |
+| []{#r-tr-1963}[1^er^ janvier 1963]{.insecable} | étape | loi n° 63-13 du 27 mai 1963 [@loi63-13] | caisse spéciale de compensation des transports routiers : ressources prélevées sur les transporteurs (surtaxe de 1950, taxe de 1957 sur les taxis, redevance par tonne autorisée) ; secours à d'anciens titulaires de licences et subventions à des sociétés |
+| []{#r-tr-1978}[1^er^ janvier 1978]{.insecable} | ajustement | loi n° 77-81 du 31 décembre 1977, loi de finances pour 1978 [@lf-1978, art. 37 et 38] | la caisse finance aussi, en tout ou en partie, la création et le fonctionnement des centres de visite technique, et reçoit le droit de visite |
+| [1^er^ janvier 1982]{.insecable} | ajustement | loi n° 81-100 du 31 décembre 1981, loi de finances pour 1982, art. 110 | disposition sur la « caisse spéciale des transports routiers » ; seul l'intitulé de l'article est connu ici |
+
+: La caisse spéciale de compensation des transports routiers, texte par texte, 1948-1982 {#tbl-compensation-transport-textes-1963}
+
+::::
+
+<!-- TODO (documentaliste) : la loi n° 63-13 et les articles 37 et 38 de la loi de finances pour 1978 ne sont connus que par une lecture dégradée (docs/notes/compensation-transport-2026-10-11.md, § 2) : à relire sur les fascicules avant toute citation littérale ; lire les arrêtés de 1948 et de 1957 et l'article 110 de la loi de finances pour 1982, dont seuls les intitulés sont relevés. (bibliographe) : verser les clés de ces trois derniers textes, absentes de la bibliographie. -->
+
+## Les grandes réformes, 1984-2017 {#sec-compensation-transport-reformes .domicile-unique}
+
+Cinq textes changent ce que l'État doit aux transporteurs publics et la voie par laquelle il le paie.
+
+| Année | Ce qui change | Portée |
+|---|---|---|
+| 1984 | un fonds spécial du Trésor subventionne les entreprises publiques de transport routier de personnes pour leurs tarifs préférentiels ; il est alimenté par une taxe sur les véhicules de transport | **rupture** |
+| 1985 | les tarifs doivent permettre de couvrir le coût réel du service ; la politique tarifaire appartient au ministre | étape |
+| 2001 | la Société nationale des chemins de fer tunisiens a, par son cahier des charges, un droit à compensation pour les tarifs que l'État lui impose | étape |
+| 2004 | l'autorité qui impose une gratuité ou un tarif réduit en compense le manque à gagner ; la méthode de calcul est renvoyée à un décret | **rupture** |
+| 2017 | le coût de la gratuité des corps actifs est fixé au forfait et mis à la charge du budget de chaque ministère | étape |
+
+: Les grandes réformes de la compensation du transport public, 1984-2017. Les textes et leurs articles sont au registre replié à la fin de la section. {#tbl-compensation-transport-reformes}
+
+Entre ces dates, l'État relève les tarifs par arrêté, presque chaque année de 1989 à 1993, puis en 1998 ; après 2000, deux relèvements sont constatés, en août 2010 et en juin 2021 (@sec-compensation-transport-tarifs). En 2003, la société nationale des transports et la société du métro léger de Tunis fusionnent en une seule entreprise, la société des transports de Tunis, par [la loi n° 2003-33](#r-tr-2003).
+
+### 1984 : un fonds spécial paie le tarif préférentiel {#sec-compensation-transport-1984}
+
+La [loi de finances pour 1984](#r-tr-1984-caisse) ouvre, sous la rubrique « Création d'une caisse de compensation et de soutien des transports routiers », un [fonds spécial du Trésor](#g-fonds-special-tresor) de ce nom, « destiné à consolider et à promouvoir le secteur des transports routiers », dont le ministre des transports et des communications est l'ordonnateur. C'est le premier texte identifié qui fasse payer un tarif préférentiel par un tiers.
+
+- **Ce que la caisse paie.** Son premier objet est « d'accorder des subventions d'exploitation aux entreprises de transport public routier de personnes dans le capital desquelles l'État ou les collectivités publiques détiennent directement une participation supérieure à 40 % ». La loi dit à quoi servent ces subventions : elles « sont destinées à couvrir les moins-values de recettes résultant de l'application d'un tarif préférentiel accordé par voie législative ou réglementaire à certains usagers ». Quatre autres objets suivent : l'équipement et la modernisation du transport public routier, les stations d'accueil de voyageurs, les centres de visite technique, des réalisations sociales pour le personnel du secteur.
+- **Qui l'alimente.** Ses ressources sont le droit de visite technique des véhicules, « 40 % du produit de la taxe unique de compensation de transports routiers » que la même loi institue, les remboursements des prêts qu'elle accorde et les recettes que d'autres textes lui attribueraient. Ce sont donc les véhicules de transport — autocars, louages, taxis, camions — qui financent le tarif préférentiel, non le budget général.
+- **Ce qu'elle remplace.** La caisse spéciale de 1963 est supprimée ; son solde au 31 décembre 1983 est versé à la nouvelle caisse (@sec-compensation-transport-mise-en-place).
+
+La [taxe unique de compensation de transports routiers](#g-taxe-unique-compensation-transports-routiers), créée par [la même loi](#r-tr-1984-taxe), est due chaque mois par véhicule.
+
+| Véhicule | Tarif mensuel |
+|---|---|
+| Transport en commun de personnes de plus de neuf places | 4 D par place assise offerte ; réduit de 60 % pour le transport touristique et le transport urbain |
+| Voiture de louage | 1 D, 5 D ou 10 D par place, selon la zone |
+| Taxi | 5 D dans les gouvernorats de Tunis, de l'Ariana et de Ben Arous ; 3 D ailleurs |
+| Taxi « grand tourisme » | 20 D ou 50 D |
+| Transport de marchandises pour le compte d'autrui | 6 D par tonne de charge utile |
+| Transport de marchandises pour compte propre | 9 D par tonne de charge utile |
+
+: La taxe unique de compensation de transports routiers à sa création, le 1^er^ janvier 1984. Les textes sont au registre replié à la fin de la section ; les modifications ultérieures de la taxe relèvent du volume [« La fiscalité »](../fiscalite/index.html). {#tbl-compensation-transport-taxe-1984}
+
+La même loi de finances prévoit pour la caisse 5 600 000 D en 1984, quand elle en prévoit 145 000 000 pour la Caisse générale de compensation (@tbl-compensation-reformes) : la prévision de la caisse des transports représente alors moins de 4 % de celle de la Caisse générale, et elle est hors du budget général.
+
+La date à laquelle le budget général prend le relais de ce fonds n'est pas établie. En 1984, la subvention est financée par une taxe affectée ; en 2007, elle figure au budget sous une ligne « ministère du Transport (compensation) » [@minfin-finances-publiques-2010] ; le poste est suivi année par année à partir de 2003 (@sec-compensation-par-poste). Entre 1985 et 2002, ni les crédits du fonds, ni ses recettes, ni l'année de sa suppression ne sont établis ici.
+
+<!-- TODO (documentaliste) : établir, sur les tableaux des fonds spéciaux des lois de finances de 1985 à 2002 et sur les rapports annuels de la Banque centrale des mêmes années, les crédits et les recettes de la caisse de compensation et de soutien des transports routiers, l'année de sa suppression et celle où le budget général prend le relais de la taxe affectée — docs/notes/compensation-transport-2026-10-11.md, § 5, point 3. Rien n'indique que la taxe unique de compensation de transports routiers soit affectée au poste « transport » après 1984 : ne pas l'écrire. Les articles 40 à 47 de la loi n° 83-113 (réductions, paiement, sanctions) ne sont pas repris ; la loi n° 84-2 du 21 mars 1984 et les lois de finances de 1985 et de 1988 à 1995 modifient la taxe (intitulés seuls). -->
+
+### 1985 : le tarif doit couvrir le coût {#sec-compensation-transport-1985}
+
+[La loi n° 85-77 du 4 août 1985](#r-tr-1985), qui organise les transports terrestres, pose deux principes tarifaires. Les tarifs peuvent permettre une juste rémunération du transporteur, qui couvre les coûts réels du service rendu. La politique tarifaire est définie par le ministre chargé des transports, de manière à obtenir l'utilisation optimale du système de transports terrestres, sur le plan économique et social. Elle ne dit pas qui supporte l'écart entre ce tarif et celui des usagers à tarif préférentiel.
+
+### 2001 : un droit écrit à compensation pour les chemins de fer {#sec-compensation-transport-2001}
+
+Par [le décret n° 2001-2621 du 9 novembre 2001](#r-tr-2001), l'État fixe le cahier des charges de la Société nationale des chemins de fer tunisiens (SNCFT). Quatre règles y concernent la compensation.
+
+- **L'obligation de service public.** L'État peut imposer à la société des tarifs inférieurs aux tarifs commerciaux ; cette obligation ouvre droit à une compensation financière. La contribution est fixée de sorte que les recettes et la contribution couvrent ensemble la totalité des charges imputables au service, dans le contexte d'une gestion efficace.
+- **Les banlieues.** L'État verse une contribution destinée à compenser le déficit du transport urbain de voyageurs, définie par contrat.
+- **Les grandes lignes.** Les tarifs réduits et les gratuités que l'État impose sur les transports interurbains donnent lieu à une compensation calculée sur la base du tarif moyen pondéré.
+- **Le plafond de hausse.** Les tarifs interurbains sont approuvés par le ministre dans la limite de 3 % par an ; au-delà, une compensation est allouée sur justification.
+
+La Cour des comptes relève que la SNCFT est la seule entreprise pour laquelle les montants de la compensation reposent sur des critères clairs (@sec-compensation-transport-cour).
+
+### 2004 : l'autorité qui décide la gratuité la paie {#sec-compensation-transport-2004}
+
+[La loi n° 2004-33 du 19 avril 2004](#r-tr-2004), qui remplace celle de 1985, pose trois règles.
+
+- **Les tarifs.** L'État fixe les tarifs du transport public de personnes et les règles de son financement.
+- **Le financement.** Les services de transport collectif public sont financés par les usagers et, le cas échéant, par l'État, par les autorités régionales organisatrices et par les bénéficiaires indirects de ces services ; ces derniers sont soumis à un droit sur le transport collectif public, dont l'assiette est renvoyée à un décret.
+- **La gratuité et les tarifs réduits.** L'État et l'autorité régionale organisatrice peuvent obliger un transporteur public de personnes à accorder la gratuité ou des tarifs réduits à certaines catégories d'usagers. Le manque à gagner qui en résulte pour le transporteur est alors compensé par l'autorité qui a pris la mesure, selon une méthode de calcul fixée par décret.
+
+La règle de 1984 — couvrir les moins-values de recettes d'un tarif préférentiel — devient ainsi une obligation de l'autorité qui décide, et vaut pour tout transporteur public de personnes. Le décret général qui devait en fixer le calcul n'est pas identifié ici (@sec-compensation-transport-etat-du-droit).
+
+### 2017 : un forfait pour la gratuité des corps actifs {#sec-compensation-transport-2017}
+
+[Le décret gouvernemental n° 2017-987 du 17 août 2017](#r-tr-2017) est le premier texte d'application de la règle de 2004, pour une seule catégorie. Il est exposé ici d'après l'édition arabe du *Journal officiel*.
+
+- **Qui.** Les agents et cadres des corps actifs des ministères de l'intérieur, de la justice et de la défense, des douanes et de la protection civile voyagent gratuitement sur les lignes intérieures — urbaines, régionales et interurbaines — des sociétés nationales et régionales de transport terrestre.
+- **Combien.** Le coût annuel de cette gratuité est fixé au forfait, par décisions conjointes du ministre des finances, du ministre du transport et des ministres concernés, et réparti entre les sociétés.
+- **Qui paie.** Le coût est à la charge du budget du ministère dont relèvent les agents ; il est versé aux sociétés, par convention, en quatre tranches égales, au début de chaque trimestre.
+
+Cette gratuité n'est donc pas inscrite au soutien du transport public du ministère du Transport : elle passe par le budget des ministères dont relèvent ces agents. Les montants de ces forfaits ne sont pas établis ici.
+
+:::: {.chronologie-repliable titre="Compensation du transport public : lois, décrets et articles, date par date, 1984-2017"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-tr-1984-caisse}[1^er^ janvier 1984]{.insecable} | **rupture** | loi n° 83-113 du 30 décembre 1983, loi de finances pour 1984 [@lf-1984, art. 99 à 103, p. 3385-3386] | caisse spéciale de 1963, financée par les transporteurs, sans objet tarifaire → caisse de compensation et de soutien des transports routiers, fonds spécial du Trésor : subventions d'exploitation pour les tarifs préférentiels (art. 100) ; ressources : droit de visite technique, 40 % de la taxe unique de compensation de transports routiers, remboursements de prêts (art. 101) ; programme d'emploi arrêté par le ministre des finances sur proposition du ministre des transports et des communications, prévisions de dépenses évaluatives (art. 102) ; suppression de la caisse de 1963 (art. 103) |
+| []{#r-tr-1984-taxe}[1^er^ janvier 1984]{.insecable} | **rupture** (même réforme) | loi n° 83-113 du 30 décembre 1983 [@lf-1984, art. 38 et 39, p. 3378 ; tableau F] | taxe unique de compensation de transports routiers, due chaque mois par véhicule (@tbl-compensation-transport-taxe-1984) ; prévision de la caisse pour 1984 : 5 600 000 D |
+| non établie | ajustement | loi n° 84-2 du 21 mars 1984, loi de finances complémentaire | réduction du taux de la taxe unique ; seul l'intitulé de la disposition est connu ici |
+| []{#r-tr-1985}non établie | étape | loi n° 85-77 du 4 août 1985 portant organisation des transports terrestres, fascicule du 9 août 1985 [@loi85-77, art. 7 et 10] | principes tarifaires : couverture des coûts réels du service (art. 7) ; politique tarifaire définie par le ministre (art. 10) |
+| []{#r-tr-2001}non établie | étape | décret n° 2001-2621 du 9 novembre 2001, fascicule du 16 novembre 2001 [@decret2001-2621, art. 10, 19, 20 et 27] | cahier des charges de la SNCFT : hausse des tarifs interurbains limitée à 3 % par an (art. 10) ; contribution pour obligation de service public (art. 19 et 20) ; déficit des banlieues compensé par contrat, tarifs réduits et gratuités des grandes lignes compensés sur la base du tarif moyen pondéré (art. 27) |
+| []{#r-tr-2003}non établie | étape institutionnelle | loi n° 2003-33 du 28 avril 2003, fascicule du 29 avril 2003 [@loi2003-33] | société nationale des transports et société du métro léger de Tunis → une seule entreprise ; seul l'intitulé de la loi est connu ici |
+| []{#r-tr-2004}non établie | **rupture** | loi n° 2004-33 du 19 avril 2004 portant organisation des transports terrestres, fascicule du 20 avril 2004 [@loi2004-33, art. 6, 11 et 12] | l'État fixe les tarifs et les règles de financement (art. 6) ; financement par les usagers, l'État, les autorités régionales et les bénéficiaires indirects (art. 11) ; gratuité et tarifs réduits compensés par l'autorité qui les décide, selon une méthode fixée par décret (art. 12) |
+| []{#r-tr-2017}non établie | étape (de la rupture de 2004) | décret gouvernemental n° 2017-987 du 17 août 2017, fascicule des 1^er^-5 septembre 2017 [@decret-gouv2017-987, art. 1 à 4] | gratuité des corps actifs : coût annuel fixé au forfait et réparti par société (art. 2) ; conventions, quatre tranches trimestrielles (art. 3) ; charge du budget du ministère concerné (art. 4) |
+
+: Les textes de la compensation du transport public, 1984-2017. La date d'effet est dite « non établie » quand elle n'est pas relevée dans le texte ; la date du fascicule du *Journal officiel* est alors donnée avec le texte. {#tbl-compensation-transport-textes}
+
+::::
+
+<!-- TODO (documentaliste) : la loi n° 85-77 (lecture dégradée), la loi n° 2004-33 et le décret n° 2001-2621 (texte extrait sans accents) sont exposés ici sans citation littérale : à relire sur les fascicules, puis citer leurs mots et relever les rubriques sous lesquelles les articles sont placés. Date d'effet de ces trois textes et du décret n° 2017-987 à calculer (loi n° 93-64 : cinq jours après le dépôt du fascicule). Édition française du JORT n° 70-71 de 2017 absente de pist.tn : pagination française du décret n° 2017-987 inconnue. Loi n° 2006-55, qui modifie la loi n° 2004-33 : non exploitée. -->
+
+## L'état du droit en octobre 2026 {#sec-compensation-transport-etat-du-droit .domicile-unique}
+
+En octobre 2026, trois questions se règlent par des textes d'âge très inégal : qui fixe les tarifs, qui a droit à un tarif réduit ou à la gratuité, et comment se calcule ce que l'État doit au transporteur.
+
+### Qui fixe les tarifs
+
+L'État fixe les tarifs du transport public de personnes, d'après [la loi de 2004](#r-tr-2004) ; pour les chemins de fer, le ministre chargé du transport approuve ceux de la Société nationale des chemins de fer tunisiens (SNCFT), d'après [son cahier des charges](#r-tr-2001). Le dernier barème publié au *Journal officiel* est celui de [l'arrêté du 27 avril 1998](#r-tr-t-1998), repris sans changement pour Tunis par [un arrêté du 17 février 2000](#r-tr-t-2000). Aucun acte fixant les tarifs n'est identifié après cette date : les tarifs en vigueur ne sont connus que par le relevé de prix de l'Institut national de la statistique — 500 millimes le billet d'autobus à Tunis depuis juin 2021 — et par la presse (@sec-compensation-transport-tarifs).
+
+<!-- RECHERCHE r-transport-tarifs-apres-2000 : acte fixant ou modifiant les tarifs du transport public collectif de personnes après les arrêtés du 6 février 1999 et du 17 février 2000 (voir docs/recherches.yml) -->
+
+### Qui a droit à quel tarif
+
+Trois régimes dérogent au tarif ordinaire ; chacun est détaillé dans sa section.
+
+| Régime | Bénéficiaires | Section |
+|---|---|---|
+| Abonnement scolaire et universitaire | élèves, apprentis, stagiaires et étudiants, sous des limites d'âge | @sec-compensation-transport-scolaire |
+| Gratuité | enfants de moins de trois ans, personnes handicapées, agents de contrôle du ministère du Transport, corps actifs des ministères de l'intérieur, de la justice, de la défense, des douanes et de la protection civile, blessés de la révolution et familles des martyrs | @sec-compensation-transport-gratuites |
+| Tarif réduit | enfants de trois à sept ans, militaires, journalistes, invalides ; autres catégories au choix de la société, jusqu'à 90 % de réduction | @sec-compensation-transport-gratuites |
+
+: Les trois régimes dérogatoires au tarif ordinaire du transport public, en octobre 2026. {#tbl-compensation-transport-regimes}
+
+L'abonnement scolaire, les tarifs réduits et les gratuités des enfants, des personnes handicapées, des agents de contrôle et des douaniers sont ceux des arrêtés de 1998 : aucun texte postérieur qui les modifie n'est identifié. Les gratuités des forces de sécurité et des blessés de la révolution viennent de textes de 2011, de 2012 et de 2017.
+
+### Comment la subvention se calcule
+
+Trois règles écrites coexistent ; aucune ne couvre le transport scolaire des sociétés routières, qui fait l'essentiel du poste.
+
+| Objet | Règle | D'où vient la règle |
+|---|---|---|
+| Toute gratuité et tout tarif réduit imposés | manque à gagner compensé par l'autorité qui a pris la mesure ; méthode de calcul fixée par décret | [loi de 2004](#r-tr-2004) |
+| Chemins de fer | banlieues : contribution définie par contrat ; grandes lignes : compensation sur la base du tarif moyen pondéré | [cahier des charges de 2001](#r-tr-2001) |
+| Gratuité des corps actifs | forfait annuel, à la charge du budget du ministère concerné | [décret de 2017](#r-tr-2017) |
+
+: Les règles écrites de calcul de la compensation du transport public, en octobre 2026. {#tbl-compensation-transport-calcul}
+
+Le décret général que la loi de 2004 annonce — la méthode de calcul du manque à gagner — n'est pas identifié ici, non plus que celui qui devait fixer l'assiette du droit sur le transport collectif public dû par les bénéficiaires indirects. En l'état des textes identifiés, la subvention du transport scolaire et des tarifs réduits des sociétés routières n'a donc pas de formule publiée.
+
+<!-- RECHERCHE r-transport-decret-manque-a-gagner : décret fixant la méthode de calcul du manque à gagner des transporteurs publics (loi n° 2004-33, art. 12) et décret fixant l'assiette du droit sur le transport collectif public (art. 11) (voir docs/recherches.yml) -->
+
+La pratique n'est connue que par la réponse du ministère du Transport à la Cour des comptes, imprimée dans le rapport que celle-ci met en ligne en 2008. Le ministère y écrit que la compensation du transport scolaire et universitaire est calculée sur la base du tarif moyen de l'abonnement annuel, que celle du transport gratuit est fixée au forfait, que les compensations accordées ne suffisent pas à couvrir le manque à gagner, et qu'un projet de décret sur la méthode de calcul a été transmis aux parties concernées [@cour-comptes-2008-transport-terrestre, p. 113]. C'est la position du ministère, non un constat de la Cour ; les constats de celle-ci sont à part (@sec-compensation-transport-cour).
+
+## Les tarifs et les abonnements {#sec-compensation-transport-tarifs .domicile-unique}
+
+Le tarif ordinaire est la référence de toute la compensation : c'est par rapport à lui que se mesure ce que l'élève, l'abonné ou le voyageur gratuit ne paie pas. Sur les réseaux urbains, il se compte en sections — un ticket d'une section, de deux sections, et ainsi jusqu'à cinq ; sur les lignes interurbaines par route, en millimes par place et par kilomètre. Deux sources le donnent, qui ne se raccordent pas : les arrêtés du ministre du transport publiés au *Journal officiel* de 1987 à 2000, puis le relevé de prix de l'Institut national de la statistique (INS) à Tunis, de novembre 2007 à juillet 2026. Entre février 2000 et novembre 2007, aucun tarif n'est établi. La comparaison des deux segments est à la section de la longue période (@sec-compensation-transport-tarifs-constants).
+
+Dans tout le chapitre, un montant en dinars ou en millimes de 2025 est, pour une année donnée, la moyenne des montants en vigueur au premier jour de chacun de ses douze mois, multipliée par le rapport de l'indice des prix à la consommation de 2025 à celui de l'année. Il n'est donné que pour les années entièrement établies : 1987, dont le tarif de janvier n'est pas connu, et 1993, dont l'arrêté n'a pas de date d'effet établie, n'en ont pas.
+
+### 1987-2000 : les arrêtés publiés
+
+Le @fig-compensation-transport-tarifs-arretes donne les tarifs repères que ces arrêtés fixent pour les réseaux urbains : le ticket ordinaire d'une et de deux sections, l'abonnement annuel ordinaire d'une ligne à une et à deux sections.
+
+```{python}
+#| label: fig-compensation-transport-tarifs-arretes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.figure(
+    "tarifs_arretes",
+    caption=("Les tarifs repères des réseaux urbains fixés par arrêté, 1987-2000 : ticket "
+             "ordinaire et abonnement annuel ordinaire, en prix courants et en dinars de 2025"),
+    note_lecture=(
+        "En haut, le ticket ordinaire d'une section (noir) et de deux sections (bleu), en "
+        "millimes ; en bas, l'abonnement annuel ordinaire d'une ligne à une section (noir) et "
+        "à deux sections (bleu), en dinars. Réseaux urbains et suburbains des sociétés de "
+        "transport routier, métro léger de Tunis et TGM, hors colonnes propres aux sociétés "
+        "de Sfax et du Sahel. Première vue : les tarifs en marches, chaque marche posée à la "
+        "date d'effet de l'arrêté ; une marque creuse signale une date d'effet non établie, "
+        "posée à la date du fascicule (septembre 1993, février 2000). Le trait s'arrête au "
+        "dernier arrêté, de février 2000.\n\n"
+        "Seconde vue : les mêmes tarifs en millimes et en dinars de 2025, un point par année "
+        "— moyenne des tarifs en vigueur au premier jour de chacun des douze mois, déflatée "
+        "par l'indice des prix à la consommation. Les années 1987 et 1993, qui ne sont pas "
+        "entièrement établies, manquent, et le trait s'interrompt."))
+```
+
+::: {.callout-note collapse="true" title="Tarifs repères des réseaux urbains fixés par arrêté, 1987-1998 : montants à la date d'effet, et montants annuels en dinars de 2025"}
+| Date d'effet | Ticket d'une section<br>(millimes) | Ticket de deux sections<br>(millimes) | Abonnement annuel ordinaire, une section<br>(D) | Abonnement annuel ordinaire, deux sections<br>(D) |
+|---|---:|---:|---:|---:|
+| [[16 février 1987]{.insecable}](#r-tr-t-1987) | 140 | 210 | 102,000 | 125,000 |
+| [[31 août 1989]{.insecable}](#r-tr-t-1989) | 150 | 240 | 112,500 | 137,500 |
+| [[12 août 1990]{.insecable}](#r-tr-t-1990) | 170 | 260 | 112,000 | 138,000 |
+| [[14 juillet 1991]{.insecable}](#r-tr-t-1991) | 190 | 290 | 126,000 | 155,000 |
+| [[3 septembre 1992]{.insecable}](#r-tr-t-1992) | 210 | 320 | 135,000 | 165,000 |
+| [non établie (arrêté du 26 août 1993)](#r-tr-t-1993) | 230 | 350 | 142,000 | 174,000 |
+| [[6 mai 1998]{.insecable}](#r-tr-t-1998) | 260 | 390 | 167,000 | 205,000 |
+
+: Les tarifs repères des réseaux urbains fixés par arrêté, à leur date d'effet, 1987-1998 (prix courants). Réseaux urbains et suburbains des sociétés de transport routier, métro léger de Tunis et TGM, hors colonnes propres aux sociétés de Sfax et du Sahel. Les textes sont au registre replié de la section. {#tbl-compensation-transport-tarifs-reperes}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.tableau_annuel(
+    ("ticket_1_section", "ticket_2_sections", "abonnement_annuel_ordinaire_1_section",
+     "abonnement_annuel_ordinaire_2_sections", "interurbain_place_km_10_150_km"),
+    caption=("Les tarifs repères fixés par arrêté, en millimes et en dinars de 2025, par année, "
+             "1988-1999 : moyenne des tarifs en vigueur au premier jour de chacun des douze "
+             "mois, déflatée par l'indice des prix à la consommation. Les années 1987 et 1993 "
+             "ne sont pas entièrement établies."),
+    tbl_id="tbl-compensation-transport-tarifs-2025")
+```
+:::
+
+- **Une hausse presque chaque année de 1989 à 1993, puis une seule en 1998.** Le ticket d'une section passe de 140 millimes en février 1987 à 230 après l'arrêté d'août 1993, et à 260 en mai 1998.
+- **Un tarif à peu près stable en pouvoir d'achat.** En millimes de 2025, le ticket d'une section vaut 826 en 1988, 954 en 1994 et 891 en 1999 ; celui de deux sections, 1 239, 1 452 et 1 337. L'abonnement annuel ordinaire d'une section vaut 602 D de 2025 en 1988 et 572 D en 1999.
+- **L'interurbain suit la même pente.** Le prix de la place par kilomètre, de plus de dix à cent cinquante kilomètres, passe de 20 millimes en 1987 à 33,2 après l'arrêté d'août 1993 et à 37,5 le 8 février 1999 — 118 millimes de 2025 en 1988, 138 en 1994 et 126 en 1999.
+- **Le dernier barème publié est celui de 1998.** L'arrêté du 17 février 2000 n'en remplace que la première annexe : les tarifs de Tunis sont inchangés, et la société de Sfax reçoit une cinquième section à 790 millimes et une sixième à 1 000.
+
+### 2007-2026 : le relevé de prix de l'INS
+
+L'INS relève chaque mois, parmi les prix moyens de détail à Tunis, un billet d'autobus, un billet de train de deuxième classe et un abonnement scolaire. Ce sont des prix relevés, non des tarifs ; l'INS ne dit pas à quel trajet correspond chaque billet.
+
+| Période | Billet d'autobus<br>(millimes) | Billet de train de 2^e^ classe<br>(millimes) |
+|---|---:|---:|
+| novembre 2007 – octobre 2009 | 450 | |
+| novembre 2009 – juillet 2010 | 450 | 7 700 |
+| août 2010 – mai 2021 | 470 | 8 000 |
+| juin 2021 – juillet 2026 | 500 | 8 000 |
+
+: Le billet d'autobus et le billet de train de deuxième classe au relevé des prix de détail de l'INS à Tunis, novembre 2007 – juillet 2026 (millimes, prix courants). Une case vide est un mois où la ligne n'est pas relevée. Source : INS, *Bulletin mensuel de la statistique* [@ins-bms]. En millimes de 2025, le billet d'autobus vaut 1 165 en moyenne en 2008, 1 098 en 2010, 651 en 2021 et 500 en 2025 (@fig-compensation-transport-tarifs). {#tbl-compensation-transport-ins}
+
+- **Deux relèvements en dix-neuf ans.** Le billet d'autobus passe de 450 à 470 millimes en août 2010, puis à 500 en juin 2021 ; le billet de train, de 7 700 à 8 000 millimes en août 2010, et ne bouge plus.
+- **Un gel de onze ans.** Le ministère des Finances écrit, dans son rapport annexé au projet de loi de finances pour 2020, que la société des transports de Tunis subit « le gel des tarifs depuis l'année 2010 » [@minfin-entreprises-publiques-lf2020, p. 72] ; la Cour des comptes relève de même des tarifs non actualisés depuis 2010 [@cour-comptes-2016-ministere-transport, p. 281].
+- **En 2021, une refonte autant qu'une hausse.** Selon la presse, qui reprend l'agence Tunis Afrique Presse, les tickets d'autobus de la société des transports de Tunis sont ramenés le 1^er^ juin 2021 à trois paliers : 500 millimes pour les sections 1 à 3, vendues jusque-là 320, 470 et 650 millimes ; 1 dinar pour les sections 4 à 6, vendues 800, 970 et 1 170 millimes ; 1,5 dinar pour les sections 7 à 10, vendues 1 350, 1 850 et 2 150 millimes [@presse-wmc-2021-05-30]. Le ticket d'une section augmente de 56 % ; celui de trois sections baisse.
+- **Ce que mesure le billet de l'INS.** Ses 470 millimes sont, la veille du relèvement de 2021, le prix du ticket de deux sections selon la presse. C'est un recoupement, non une définition publiée par l'INS, et il ne permet pas de relier d'un trait les 390 millimes du ticket de deux sections de 1998 aux 450 millimes de 2007.
+
+L'acte qui porte chacun de ces deux relèvements n'est pas identifié (@sec-compensation-transport-etat-du-droit).
+
+:::: {.chronologie-repliable titre="Tarifs du transport public de personnes fixés par arrêté : tickets, abonnements ordinaires et tarifs interurbains, date par date, 1987-2000"}
+
+| Effet | Portée | Texte et pages | Avant → après |
+|---|---|---|---|
+| []{#r-tr-t-1987}[16 février 1987]{.insecable} | point de départ | arrêté du 14 février 1987 [@arrete-1987-02-14-tarifs-voyageurs, art. 5, p. 261] | ticket d'une section 140 millimes, de deux sections 210, de trois 280, de quatre 350, de cinq 420 ; tarif réduit 120 ; abonnement annuel ordinaire 102 D (une section) et 125 D (deux sections) ; interurbain : 200 millimes de 0 à 10 km, 20 par place-kilomètre jusqu'à 150 km, 16 au-delà |
+| []{#r-tr-t-1989}[31 août 1989]{.insecable} | étape | arrêté du 10 août 1989, réseaux urbains [@arrete-1989-08-10-tarifs-urbains, p. 1282-1284] | tickets : 140, 210, 280, 350, 420 → 150, 240, 310, 390, 470 millimes ; tarif réduit 120 → 130 ; abonnement annuel ordinaire 102 → 112,500 D et 125 → 137,500 D ; abonnement scolaire d'une ligne urbaine 14,800 D |
+| [31 août 1989]{.insecable} | étape | arrêté du 10 août 1989, interurbain [@arrete-1989-08-10-tarifs-interurbains, p. 1285-1286] | 200 → 220 millimes de 0 à 10 km ; 20 → 22 par place-kilomètre jusqu'à 150 km ; 16 → 18 au-delà |
+| non établie | ajustement | arrêté du 30 septembre 1989, JORT n° 67, p. 1584-1586 | modifie l'arrêté urbain du 10 août 1989 ; seul son intitulé est connu ici, et le barème de l'automne 1989 n'est pas établi |
+| []{#r-tr-t-1990}[12 août 1990]{.insecable} | étape | arrêté du 30 juillet 1990, réseaux urbains [@arrete-1990-07-30-tarifs-urbains, p. 1045-1048] | tickets → 170, 260, 340, 430, 520 millimes ; tarif réduit 130 → 140 ; abonnement annuel ordinaire 112 D et 138 D ; abonnement scolaire inchangé |
+| [12 août 1990]{.insecable} | étape | arrêté du 30 juillet 1990, interurbain [@arrete-1990-07-30-tarifs-interurbains, p. 1048] | 245 millimes de 0 à 10 km ; 24,5 par place-kilomètre ; 20 au-delà de 150 km |
+| []{#r-tr-t-1991}[14 juillet 1991]{.insecable} | étape | arrêté du 2 juillet 1991, réseaux urbains [@arrete-1991-07-02-tarifs-urbains, p. 1294-1297] | tickets → 190, 290, 380, 480, 580 millimes ; tarif réduit 140 → 160 ; abonnement annuel ordinaire 126 D et 155 D ; abonnement scolaire 14,800 → 16,300 D |
+| [14 juillet 1991]{.insecable} | étape | arrêté du 2 juillet 1991, interurbain [@arrete-1991-07-02-tarifs-interurbains, art. 11, p. 1297-1298] | 275 millimes de 0 à 10 km ; 27,5 par place-kilomètre ; 22,5 au-delà de 150 km |
+| []{#r-tr-t-1992}[3 septembre 1992]{.insecable} | étape | arrêté du 24 août 1992, réseaux urbains [@arrete-1992-08-24-tarifs-urbains, p. 1128-1133] | tickets → 210, 320, 420, 530, 640 millimes ; tarif réduit 160 → 180 ; abonnement annuel ordinaire 135 D et 165 D ; abonnement scolaire inchangé |
+| [3 septembre 1992]{.insecable} | étape | arrêté du 24 août 1992, interurbain [@arrete-1992-08-24-tarifs-interurbains, p. 1134] | 302 millimes de 0 à 10 km ; 30,2 par place-kilomètre ; 25 au-delà de 150 km |
+| []{#r-tr-t-1993}non établie | étape | arrêté du 26 août 1993, réseaux urbains [@arrete-1993-08-26-tarifs-urbains, p. 1430-1435] | tickets → 230, 350, 460, 580, 700 millimes ; tarif réduit 180 → 200 ; abonnement annuel ordinaire 142 D et 174 D ; abonnement scolaire 16,300 → 17,200 D ; fascicule du 7 septembre 1993 |
+| non établie | étape | arrêté du 26 août 1993, interurbain [@arrete-1993-08-26-tarifs-interurbains, p. 1436] | 332 millimes de 0 à 10 km ; 33,2 par place-kilomètre ; 27,5 au-delà de 150 km |
+| []{#r-tr-t-1998}[6 mai 1998]{.insecable} | étape | arrêté du 27 avril 1998 [@arrete-1998-04-27-tarifs-urbains, art. 21, p. 997-1001] | tickets → 260, 390, 520, 650, 790 millimes ; tarif réduit 210 millimes (une ou deux sections) et 320 (trois à cinq sections) ; carte hebdomadaire d'une section 2,350 D ; abonnement mensuel d'une section 16,700 D ; abonnement annuel ordinaire 167 D et 205 D |
+| []{#r-tr-t-1999}[8 février 1999]{.insecable} | étape | arrêté du 6 février 1999, interurbain [@arrete-1999-02-06-tarifs-interurbains, art. 2, p. 229] | 375 millimes de 0 à 10 km ; 37,5 par place-kilomètre ; 30,9 au-delà de 150 km |
+| []{#r-tr-t-2000}non établie | ajustement | arrêté du 17 février 2000 [@arrete-2000-02-17-tarifs-urbains, p. 535-536] | remplace la seule annexe 1 : tarifs de Tunis inchangés ; société de Sfax : cinquième section à 790 millimes, sixième à 1 000 ; fascicule du 25 février 2000 |
+
+: Les arrêtés tarifaires du transport public de personnes, 1987-2000. Quand l'arrêté n'énonce pas de date d'effet, celle-ci est la date à laquelle il devient exécutoire : un jour franc après la publication jusqu'en 1993 ; cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis ensuite, d'après la loi n° 93-64 [@loi93-64, art. 2] — date de dépôt inconnue pour les arrêtés de 1993 et de 2000. {#tbl-compensation-transport-arretes}
+
+::::
+
+<!-- TODO (documentaliste) : (1) l'absence de clause d'effet des arrêtés urbains de 1991 et de 1992 n'est constatée que sur une lecture dégradée : à relire ; (2) lire l'arrêté du 30 septembre 1989 (JORT n° 67, p. 1584-1586) ; (3) arrêtés antérieurs à 1987 (1er août 1977, 15 août et 24 novembre 1981, 10 décembre 1982, 20 août 1983, 10 février et 28 mars 1986) à lire sur les fascicules ; (4) tarifs de la SNCFT : les arrêtés « portant approbation des tarifs » ne publient pas les barèmes ; (5) acte du relèvement d'août 2010, qui touche le même mois l'autobus et le train — docs/notes/compensation-transport-2026-10-11.md, § 1.2 et § 5. -->
+
+## L'abonnement scolaire et universitaire {#sec-compensation-transport-scolaire .domicile-unique}
+
+L'abonnement scolaire est le tarif préférentiel qui commande le poste : l'élève ou l'étudiant paie une fraction du prix de l'abonnement ordinaire, et l'État verse au transporteur une subvention à ce titre. Ses règles sont celles de [l'arrêté du 29 juillet 1998](#r-tr-s-1998), dernier texte publié sur le sujet.
+
+**Qui y a droit.** Les élèves, les stagiaires de premier niveau de la formation professionnelle et les apprentis, jusqu'à 25 ans ; les étudiants, jusqu'à 30 ans au premier cycle, 33 ans au deuxième et 35 ans au troisième ; les élèves des établissements privés agréés qui suivent au moins vingt heures de cours par semaine pendant six mois. L'exercice d'une activité rémunérée en exclut.
+
+**Ce qu'il ouvre.** L'abonnement vaut pour l'année scolaire, hors dimanches, jours fériés et vacances ; il est majoré de 50 % pour couvrir ces jours, et un abonnement d'été est vendu à 50 % du prix.
+
+**À quel prix.** Une ligne urbaine d'une ou deux sections coûte 19,400 D par an à partir du 1^er^ août 1998 ; l'abonnement ordinaire correspondant, 167 D pour une section et 205 D pour deux, d'après [l'arrêté du 27 avril 1998](#r-tr-t-1998).
+
+| Date d'effet | Abonnement scolaire, une ligne urbaine<br>(D) | Abonnement scolaire, zone urbaine<br>(D) | Abonnement ordinaire, une section<br>(D) | Prix scolaire rapporté au prix ordinaire<br>(%) |
+|---|---:|---:|---:|---:|
+| [[31 août 1989]{.insecable}](#r-tr-t-1989) | 14,800 | 22,200 | 112,500 | 13,2 |
+| [[12 août 1990]{.insecable}](#r-tr-t-1990) | 14,800 | 22,150 | 112,000 | 13,2 |
+| [[14 juillet 1991]{.insecable}](#r-tr-t-1991) | 16,300 | 24,400 | 126,000 | 12,9 |
+| [[3 septembre 1992]{.insecable}](#r-tr-t-1992) | 16,300 | 24,400 | 135,000 | 12,1 |
+| [non établie (arrêté du 26 août 1993)](#r-tr-t-1993) | 17,200 | 25,700 | 142,000 | 12,1 |
+| [[1^er^ août 1998]{.insecable}](#r-tr-s-1998) | 19,400 | 28,900 | 167,000 | 11,6 |
+
+: L'abonnement scolaire annuel fixé par arrêté, 1989-1998, en regard de l'abonnement annuel ordinaire d'une ligne à une section. La dernière colonne rapporte l'abonnement scolaire d'une ligne urbaine à l'abonnement ordinaire d'une section. L'abonnement ordinaire de 1998 est celui de l'arrêté du 27 avril 1998, en vigueur le 6 mai. Les textes sont aux registres repliés de cette section et de la précédente. {#tbl-compensation-transport-scolaire}
+
+- **L'élève paie environ un huitième du prix ordinaire, ou moins.** En 1998, 19,400 D pour un abonnement ordinaire de 167 D sur une section, soit 11,6 %, et de 205 D sur deux sections, soit 9,5 %. La Cour des comptes écrit de son côté que les réductions consenties aux élèves et aux étudiants atteignent 90 % du tarif normal [@cour-comptes-2008-transport-terrestre, p. 99].
+- **L'abonnement scolaire monte moins vite que le ticket.** De 1989 à 1998, il augmente de 31 %, quand le ticket d'une section passe de 150 à 260 millimes, soit 73 % de plus (@tbl-compensation-transport-tarifs-reperes). En dinars de 2025, il recule de 76,0 D en 1990 à 66,5 D en 1999 (@fig-compensation-transport-abonnements-prix).
+- **D'autres abonnements scolaires, en 1998.** Zone urbaine 28,900 D ; ligne suburbaine de trois sections et plus 41,700 D ; réseau général 53,200 D ; métro, une ligne 19,400 D et le réseau 37,860 D ; TGM en deuxième classe 48,100 D.
+
+Aucun barème de l'abonnement scolaire postérieur à 1998 n'est identifié (@sec-compensation-transport-etat-du-droit). Deux indications subsistent, qui ne se mettent pas en série avec lui. L'INS relève à Tunis un « abonnement scolaire (bus) », dont il ne dit ni la durée ni le réseau : 23,7 D de novembre 2007 à juillet 2010, environ 24 à 25 D jusqu'en août 2024, puis 25,850 D à partir de septembre 2024 — soit, en dinars de 2025, 61,4 D en moyenne en 2008 et 25,9 D en 2025 [@ins-bms]. La presse rapporte en mars 2018 les abonnements scolaires annuels de la société des transports de Tunis : 36,500 D pour la zone urbaine d'autobus, 66,250 D pour le réseau général d'autobus, 60,050 D pour le TGM en deuxième classe [@presse-tuniscope-2018-03-06] — environ 25 % de plus qu'au barème de 1998, vingt ans plus tard.
+
+Le @fig-compensation-transport-abonnements-prix met en regard, sur une échelle logarithmique, l'abonnement ordinaire et l'abonnement scolaire des arrêtés, puis le relevé de l'INS.
+
+```{python}
+#| label: fig-compensation-transport-abonnements-prix
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.figure(
+    "abonnements_prix",
+    caption=("L'abonnement annuel ordinaire et l'abonnement scolaire, 1987-2026 : arrêtés "
+             "publiés au Journal officiel (1987-2000) et relevé de prix de l'INS (2007-2026), "
+             "en dinars courants et en dinars de 2025, échelle logarithmique"),
+    note_lecture=(
+        "Deux segments qui ne se raccordent pas, séparés par une plage grisée où aucun tarif "
+        "n'est établi. À gauche, en noir l'abonnement annuel ordinaire d'une ligne à une "
+        "section et en bleu l'abonnement scolaire d'une ligne urbaine, tels que les arrêtés "
+        "les fixent, en marches aux dates d'effet ; une marque creuse signale une date "
+        "d'effet non établie, posée à la date du fascicule. À droite, en orange, "
+        "l'« abonnement scolaire (bus) » du relevé de prix de l'INS à Tunis, dont l'INS ne dit "
+        "ni la durée ni le réseau : il ne prolonge pas la courbe bleue. Le trait orange "
+        "s'interrompt aux mois où les numéros du bulletin ne s'accordent pas — arrondi au "
+        "dinar, passage des dinars aux millimes en 2017.\n\n"
+        "Seconde vue : les mêmes grandeurs en dinars de 2025, par année — moyenne des "
+        "montants en vigueur au premier jour de chacun des douze mois, pour les seules "
+        "années entièrement établies. L'échelle logarithmique permet de lire ensemble "
+        "15 dinars et 167 dinars : l'écart vertical entre la courbe noire et la courbe bleue "
+        "est le rapport des deux prix."))
+```
+
+Le nombre d'abonnements scolaires est donné à la section de la longue période (@sec-compensation-transport-abonnements-nombre).
+
+:::: {.chronologie-repliable titre="Abonnement scolaire et universitaire de transport : bénéficiaires, validité et tarifs, texte par texte, 1989-1998"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| [31 août 1989]{.insecable} | point de départ | arrêté du 10 août 1989, réseaux urbains [@arrete-1989-08-10-tarifs-urbains, art. 8, p. 1282-1284] | abonnement scolaire d'une ligne urbaine 14,800 D, zone urbaine 22,200 D ; les principes de l'abonnement scolaire y figurent déjà |
+| []{#r-tr-s-1998}[1^er^ août 1998]{.insecable} | étape | arrêté du 29 juillet 1998 [@arrete-1998-07-29-abonnements-scolaires, art. 1 à 5 et 13, p. 1723-1725] | bénéficiaires et limites d'âge (25 ans ; 30, 33 et 35 ans selon le cycle universitaire) ; validité l'année scolaire hors dimanches, fériés et vacances ; majoration de 50 % pour ces jours ; abonnement d'été à 50 % ; exclusion en cas d'activité rémunérée ; une ligne urbaine 17,200 → 19,400 D, zone urbaine 25,700 → 28,900 D |
+
+: Les textes de l'abonnement scolaire, 1989-1998. Les tarifs de 1990 à 1993 sont dans les arrêtés tarifaires généraux (@tbl-compensation-transport-arretes). {#tbl-compensation-transport-scolaire-textes}
+
+::::
+
+<!-- TODO (documentaliste) : conditions de l'abonnement scolaire dans l'arrêté du 10 août 1989 (art. 8 : élèves de moins de 23 ans, d'après une lecture dégradée) à relire sur le fascicule ; abonnement scolaire de 1987 à relever ; barèmes postérieurs à 1998 (voir la fiche r-transport-tarifs-apres-2000). Le tarif 2018 du métro (47,450 D) n'a pas été vérifié sur la page de presse et n'est pas cité. -->
+
+## Les gratuités et les réductions : qui rembourse {#sec-compensation-transport-gratuites .domicile-unique}
+
+À côté de l'abonnement scolaire, des catégories d'usagers voyagent gratuitement ou à tarif réduit. Pour chacune, la question est celle de la loi de 2004 : l'autorité qui a accordé l'avantage en paie-t-elle le coût au transporteur (@sec-compensation-transport-2004) ?
+
+| Catégorie | Avantage | Texte | Le transporteur est-il remboursé ? |
+|---|---|---|---|
+| Enfants de moins de trois ans, accompagnés | gratuité | [arrêté du 27 avril 1998](#r-tr-g-1998) | le texte ne le dit pas |
+| Titulaires de la carte de handicapé, et accompagnant du titulaire d'une carte avec accompagnant | gratuité | [arrêté du 27 avril 1998](#r-tr-g-1998) | le texte ne le dit pas |
+| Agents de contrôle du ministère du Transport | gratuité | [arrêté du 27 avril 1998](#r-tr-g-1998) | non, selon la Cour des comptes |
+| Enfants de trois à sept ans ; militaires en uniforme, et officiers, sous-officiers et élèves en civil, sur carte ; journalistes, sur carte professionnelle ; invalides titulaires d'une carte | tarif réduit du ticket | [arrêté du 27 avril 1998](#r-tr-g-1998) | le texte ne le dit pas |
+| « Certaines catégories d'usagers », au choix de la société | réduction pouvant aller jusqu'à 90 % | [arrêté du 27 avril 1998](#r-tr-g-1998) | sans objet : la société en décide |
+| Agents des douanes en uniforme | gratuité sur les lignes intérieures des sociétés nationales et régionales | [arrêté du 25 juin 1998](#r-tr-g-douanes) | non établi |
+| Agents des forces de sûreté intérieure relevant du ministère de l'intérieur | gratuité sur les lignes de la société des transports de Tunis, de la SNCFT, des sociétés régionales et de la Société nationale de transport interurbain, sur carte professionnelle | [arrêté du 24 juin 2011](#r-tr-g-2011) | oui, en droit : les compensations dues aux sociétés sont imputées sur le budget de l'État |
+| Agents et cadres des corps actifs de l'intérieur, de la justice, de la défense, des douanes et de la protection civile | gratuité urbaine, régionale et interurbaine | [décret de 2017](#r-tr-2017) | oui, au forfait, par le budget de chaque ministère |
+| Blessés de la révolution et familles des martyrs | gratuité | [loi n° 2012-26](#r-tr-g-2012) | non en 2013, selon la Cour des comptes |
+
+: Les gratuités et les tarifs réduits du transport public de personnes, et leur remboursement au transporteur, d'après les textes publiés de 1998 à 2017. SNCFT : Société nationale des chemins de fer tunisiens. {#tbl-compensation-transport-gratuites}
+
+- **Les gratuités les plus anciennes n'ont pas de payeur désigné.** L'arrêté de 1998 accorde gratuités et tarifs réduits sans dire qui en supporte le coût ; il reprend, pour le tarif réduit, des catégories déjà inscrites dans l'arrêté du 10 août 1989.
+- **Depuis 2011, le texte qui accorde une gratuité aux forces de sécurité désigne le budget.** L'arrêté du 24 juin 2011, puis le décret de 2017, mettent la compensation à la charge du budget de l'État.
+- **Deux gratuités restent sans compensation, selon la Cour des comptes.** Celle des agents de contrôle du ministère du Transport, et celle des blessés de la révolution et des familles des martyrs (@sec-compensation-transport-cour).
+
+:::: {.chronologie-repliable titre="Gratuités et tarifs réduits du transport public : catégories d'usagers et prise en charge, texte par texte, 1989-2017"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| [31 août 1989]{.insecable} | point de départ | arrêté du 10 août 1989, réseaux urbains [@arrete-1989-08-10-tarifs-urbains, art. 11] | tarif réduit du ticket pour les enfants, les militaires, les journalistes et les invalides |
+| []{#r-tr-g-1998}[6 mai 1998]{.insecable} | étape | arrêté du 27 avril 1998 [@arrete-1998-04-27-tarifs-urbains, art. 10, 11 et 12] | gratuité : enfants de moins de trois ans, titulaires de la carte de handicapé et leur accompagnant, agents de contrôle du ministère du Transport (art. 10) ; tarif réduit : enfants de trois à sept ans, militaires, journalistes, invalides (art. 11) ; réduction jusqu'à 90 % pour certaines catégories, au choix de la société (art. 12) |
+| []{#r-tr-g-douanes}non établie | ajustement | arrêté des ministres du transport et des finances du 25 juin 1998, fascicule du 3 juillet 1998 [@arrete-1998-06-25-gratuite-douanes, art. 1 et 2, p. 1422] | gratuité des agents des douanes en uniforme sur les lignes intérieures des sociétés nationales et régionales, dans les zones que l'arrêté énumère |
+| []{#r-tr-g-2011}non établie | étape | arrêté conjoint du 24 juin 2011, fascicule du 28 juin 2011 [@arrete-2011-06-24-gratuite-surete, art. 1 à 4, p. 1100-1101] | gratuité des agents des forces de sûreté intérieure sur tous les réseaux publics (art. 1 à 3) ; « sont imputées sur le budget de l'État […] les compensations dues en raison des services rendus par les sociétés de transport » (art. 4) ; remplace un arrêté du 2 janvier 1999 |
+| []{#r-tr-g-2012}non établie | ajustement | loi n° 2012-26 du 24 décembre 2012, fascicule du 28 décembre 2012 [@loi2012-26] | gratuité du transport des blessés de la révolution et des familles des martyrs ; seul l'intitulé de la loi est connu ici, la règle étant rapportée par la Cour des comptes |
+
+: Les textes des gratuités et des tarifs réduits, 1989-2012. Le décret de 2017 sur les corps actifs est au registre des grandes réformes (@tbl-compensation-transport-textes). La date d'effet est dite « non établie » quand elle n'est pas relevée dans le texte ; la date du fascicule est alors donnée avec le texte. {#tbl-compensation-transport-gratuites-textes}
+
+::::
+
+<!-- TODO (documentaliste) : suite de l'arrêté du 25 juin 1998 (douanes) et prise en charge ; arrêtés des 23 avril 1982, 12 juillet 1989 et 6 mai 1993 sur l'accès des personnes handicapées (intitulés seuls) ; arrêté du 15 août 2011 sur les agents relevant du ministère de la justice, visé par le décret n° 2017-987 ; articles de la loi n° 2012-26 ; montants des forfaits du décret n° 2017-987. La citation de l'article 4 de l'arrêté du 24 juin 2011 vient du texte extrait du fascicule : à confirmer sur la page. -->
+
+## La longue période {#sec-compensation-transport-longue-periode}
+
+Cette section donne les séries budgétaires et statistiques : les tarifs en dinars de 2025 ; les transferts du budget par entreprise de 2016 à 2024 ; le nombre d'abonnements scolaires ; les comptes des deux grandes entreprises d'après le ministère des Finances. La série du poste lui-même, de 2003 à 2026, est au chapitre de la dépense (@sec-compensation-par-poste) ; la répartition des crédits par société de 2012 à 2017 ouvre ce chapitre (@sec-compensation-transport-vue).
+
+### Les tarifs en dinars courants et en dinars de 2025 {#sec-compensation-transport-tarifs-constants}
+
+Le @fig-compensation-transport-tarifs réunit les deux segments du prix du ticket — arrêtés de 1987 à 2000, relevé de l'Institut national de la statistique (INS) de 2007 à 2026 — sans les relier. Le détail du premier segment, abonnements compris, est à la section des tarifs (@fig-compensation-transport-tarifs-arretes).
+
+```{python}
+#| label: fig-compensation-transport-tarifs
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.figure(
+    "tarifs",
+    caption=("Le prix du ticket d'autobus, 1987-2026 : tarifs fixés par arrêté (1987-2000) et "
+             "relevé de prix de l'INS à Tunis (2007-2026), en millimes courants et en millimes "
+             "de 2025"),
+    note_lecture=(
+        "Deux segments qui ne se raccordent pas. À gauche, les tarifs que fixent les arrêtés "
+        "publiés au Journal officiel, en marches aux dates d'effet : en noir le ticket "
+        "ordinaire d'une section, en bleu celui de deux sections ; une marque creuse signale "
+        "une date d'effet non établie, posée à la date du fascicule (septembre 1993, février "
+        "2000). À droite, en orange, le billet d'autobus du relevé des prix de détail de l'INS "
+        "à Tunis, mois par mois ; l'INS ne dit pas le trajet, et la presse donne ce prix pour "
+        "le ticket de deux sections en 2021. La plage grisée, de février 2000 à novembre "
+        "2007, est celle où aucun tarif n'est établi.\n\n"
+        "Seconde vue : les mêmes prix en millimes de 2025, par année — moyenne des prix en "
+        "vigueur au premier jour de chacun des douze mois, déflatée par l'indice des prix à "
+        "la consommation. Seules les années entièrement établies sont tracées : 1987, 1993 "
+        "et 2000 manquent pour les arrêtés ; 2007 et 2026 pour le relevé."))
+```
+
+- **De 1988 à 1999, un prix réel stable.** En moyenne annuelle, le ticket d'une section vaut 826 millimes de 2025 en 1988, 954 en 1994 et 891 en 1999 ; celui de deux sections, 1 239, 1 452 et 1 337.
+- **De 2008 à 2025, un prix réel divisé par plus de deux.** Le billet relevé par l'INS vaut 1 165 millimes de 2025 en 2008, 1 098 en 2010, 651 en 2021 — l'année du relèvement — et 500 en 2025 : il a perdu 57 % de son pouvoir d'achat en dix-sept ans, pour deux relèvements de 20 et 30 millimes.
+- **Entre les deux, rien n'est établi.** Le ticket de deux sections vaut 390 millimes en février 2000 ; le billet de l'INS, 450 millimes en novembre 2007. Les dates et les montants des relèvements intermédiaires ne sont pas connus (@sec-compensation-transport-etat-du-droit).
+
+### Les transferts du budget par entreprise, 2016-2024 {#sec-compensation-transport-interventions}
+
+Après 2017, la répartition du poste par société n'est pas établie ici. Le ministère des Finances donne, dans un rapport annexé au projet de loi de finances, les transferts du budget à chaque entreprise publique, par nature ; la colonne des « interventions » du ministère du Transport est la plus proche du poste, sans s'y confondre.
+
+```{python}
+#| label: fig-compensation-transport-interventions
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.figure(
+    "interventions",
+    caption=("Les interventions du budget au profit des entreprises du ministère du "
+             "Transport, 2016-2024, en regard du poste « transport » de la dépense de "
+             "compensation : en millions de dinars courants et en part du PIB"),
+    note_lecture=(
+        "Chaque barre empile les « interventions » versées par le budget aux sociétés "
+        "régionales de transport, à la société des transports de Tunis, à la Société "
+        "nationale des chemins de fer tunisiens (SNCFT), à la société du réseau ferroviaire "
+        "rapide de Tunis et aux autres entités du ministère du Transport ; le nombre "
+        "au-dessus est le total. Réalisations de 2016 à 2023 ; la barre claire de 2024, "
+        "marquée d'un astérisque, est la loi de finances. Le rond noir est le poste "
+        "« transport » de la dépense de compensation : les interventions le dépassent chaque "
+        "année, parce qu'elles comptent aussi la société du réseau ferroviaire rapide, "
+        "l'entretien du réseau ferré et, en 2017, la prise en charge par l'État de dettes des "
+        "entreprises. Les deux grandeurs ne se raccordent pas, et cette figure ne prolonge "
+        "pas celle des crédits par société de 2012 à 2017.\n\n"
+        "Seconde vue : les mêmes grandeurs en part du PIB — celui de l'INS en [base "
+        "2015](../annexe-pib.html#pib-base-2015), valeurs d'origine, non rétropolées, sur "
+        "toute la période ; la base est dite au-dessus du cadre, et aucune rupture de série "
+        "n'y tombe (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Le "
+        "PIB de 2024 est rapporté à une loi de finances."))
+```
+
+- **Un périmètre plus large que le poste.** Les interventions valent 461,6 MD en 2016 pour un poste de 433,0 MD, 501,5 MD en 2019 pour 450 MD, 696,4 MD en 2023 pour 640,0 MD.
+- **Autour d'un demi-point de PIB.** Les interventions valent 0,48 % du PIB en 2016, 0,80 % en 2017, 0,41 % en 2019, 0,55 % en 2020 et 0,46 % en 2023 ; le poste « transport », 0,45 % en 2016, 0,37 % en 2019 et 0,43 % en 2023.
+- **L'écart est expliqué pour 2016 seulement.** Cette année-là, les interventions comptent 12,0 MD pour la société du réseau ferroviaire rapide, 1,1 MD pour l'Institut national de la météorologie et une subvention d'entretien du réseau ferré de la SNCFT, que le ministère des Finances situe « autour de 15 MD » [@minfin-entreprises-publiques-lf2020, p. 75] : ces montants ôtés, il reste 433,5 MD, pour un poste de 433,0 MD. Le même rapprochement n'est pas établi pour les années suivantes.
+- **2017 n'est pas une année ordinaire.** Les interventions passent de 461,6 à 820,4 MD, alors que le poste n'atteint que 448,2 MD : l'État prend en charge des dettes de la société des transports de Tunis envers la Société nationale de distribution des pétroles — 145,3 MD au 30 juin 2017 [@minfin-entreprises-publiques-lf2020, p. 72-73] —, et les versements à la SNCFT et à la Société nationale de transport interurbain sont eux aussi exceptionnels, 219,6 MD et 32,7 MD d'interventions pour 65,5 MD et 3,0 MD l'année précédente. C'est un apurement, hors du poste.
+- **Les sociétés régionales, de 242 à 393 MD.** Leurs interventions passent de 242,0 MD en 2016 à 255,0 MD en 2018 et 2019, 325,0 MD en 2020, 288,5 MD en 2021 et 393,0 MD en 2023 ; la loi de finances pour 2024 en prévoit 400,0 MD. Celles de la société des transports de Tunis vont de 126,5 MD en 2016 à 141,0 MD en 2023 ; celles de la société du réseau ferroviaire rapide, de 12,0 à 49,9 MD.
+
+Source : rapport sur les transferts et les garanties au profit des entreprises publiques [@minfin-transferts-garanties] ; pour le poste, @tbl-compensation-2012-2025.
+
+Deux recoupements portent sur les comptes des entreprises, d'après le rapport sur les entreprises publiques du même ministère. Pour la société des transports de Tunis, les subventions d'exploitation de l'État — 126 MD en 2016, 140,6 MD en 2017, dont 130 MD de subvention et 10,6 MD de dette prise en charge, 130 MD prévus pour 2018 — redonnent ses deux lignes du budget, 94 + 32 MD en 2016 et 96 + 34 MD en 2017 [@minfin-entreprises-publiques-lf2020, p. 72]. Pour la SNCFT, le recoupement échoue : l'« indemnité de transport attribuée par l'État » est de 44,6 MD en 2016 et de 42,5 MD en 2017 [@minfin-entreprises-publiques-lf2020, p. 75], quand le budget lui affecte 50,5 et 50,0 MD ; l'écart n'est pas expliqué par les sources.
+
+<!-- TODO (documentaliste) : rapprocher interventions et poste pour 2018-2024 (subvention d'entretien du réseau ferré de chaque année) ; éditions LF 2021 et LF 2023 du rapport sur les transferts à transcrire. La société du réseau ferroviaire rapide porte en 2018 la même valeur (27,762 MD) en interventions et au total : la note documentaire laissait la colonne indéterminée, la série tranche pour les interventions (identités de ligne et de bloc). -->
+
+### Le nombre d'abonnements scolaires, 2012-2017 {#sec-compensation-transport-abonnements-nombre}
+
+Le budget du ministère du Transport donne, à côté des crédits, le nombre d'abonnements scolaires par société. La série a deux segments, que la source ne relie pas.
+
+```{python}
+#| label: fig-compensation-transport-abonnements-nombre
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.figure(
+    "abonnements_nombre",
+    caption=("Le nombre d'abonnements scolaires par société de transport, 2012-2017, d'après "
+             "les budgets du ministère du Transport : deux segments"),
+    note_lecture=(
+        "Chaque barre empile les abonnements scolaires des sociétés régionales de transport, "
+        "de la société des transports de Tunis et de la Société nationale des chemins de fer "
+        "tunisiens (SNCFT) ; le nombre au-dessus est le total. À gauche du trait pointillé, "
+        "les éditions 2013 à 2016 du budget ; à droite, l'édition 2017. L'année 2016 figure "
+        "des deux côtés, avec deux valeurs : 565 649 dans l'édition 2016, 433 032 dans "
+        "l'édition 2017. La source n'explique pas ce changement de mesure ; les deux segments "
+        "ne se comparent pas. Sous chaque année, l'état du chiffre : loi de finances (LF), loi "
+        "de finances complémentaire (LFC) ou prévision. Une lecture par année et par segment, "
+        "celle de l'édition la plus récente ; les autres sont dans les données."))
+```
+
+- **Environ 450 000 à 570 000 abonnements dans le premier segment.** Le total passe de 453 512 en 2012 à 534 586 en 2013, 555 444 en 2014, 556 564 en 2015 et 565 649 prévus pour 2016 ; les sociétés régionales en portent 290 565 à 366 665, la société des transports de Tunis 148 947 à 209 347.
+- **Une rupture en 2016.** L'édition 2017 du budget donne 433 032 abonnements pour 2016 et 441 679 prévus pour 2017 ; la société des transports de Tunis y tombe à 94 865, puis 96 200. Le budget ne dit pas s'il s'agit d'un constat substitué à une prévision ou d'une autre définition.
+- **Des chiffres de documents budgétaires.** Ce sont des prévisions et des chiffres inscrits à l'appui des crédits, non un dénombrement ; la source ne dit pas l'unité comptée.
+
+Source : budgets du ministère du Transport [@minfin-budget-transport-2013 ; @minfin-budget-transport-2014 ; @minfin-budget-transport-2015 ; @minfin-budget-transport-2016 ; @minfin-budget-transport-2017].
+
+### Le trafic et les comptes des deux grandes entreprises, 2016-2019 {#sec-compensation-transport-comptes}
+
+Le rapport sur les entreprises publiques du ministère des Finances donne, pour la société des transports de Tunis et pour la Société nationale des chemins de fer tunisiens (SNCFT), le trafic, les charges et les produits d'exploitation. Les produits y comprennent les subventions de l'État.
+
+| Grandeur | 2016 | 2017 | 2018 | 2019<br>(prévision) |
+|---|---:|---:|---:|---:|
+| **Société des transports de Tunis** | | | | |
+| Voyageurs<br>(millions) | | 232,5 | 229,4 | 223,0 |
+| Charges d'exploitation<br>(MD) | | 353,7 | 367,2 | 375,7 |
+| Produits d'exploitation, subventions comprises<br>(MD) | | 214,6 | 203,9 | 205,5 |
+| Produits rapportés aux charges<br>(%) | | 60,7 | 55,5 | 54,7 |
+| **SNCFT** | | | | |
+| Voyageurs<br>(millions) | 40,95 | 40,99 | 39,98 | 37,5 |
+| Recettes voyageurs<br>(MD) | 51,0 | 49,2 | | |
+| Charges d'exploitation<br>(MD) | | 228,5 | 226,2 | |
+| Produits d'exploitation<br>(MD) | 165,8 | 164,1 | 157,8 | |
+
+: Le trafic et les comptes d'exploitation de la société des transports de Tunis et de la SNCFT, 2016-2019 (millions de voyageurs ; millions de dinars courants, MD). Une case vide est une grandeur que le rapport ne donne pas pour l'année. Le rapport des produits aux charges est calculé ici. Source : ministère des Finances, rapport sur les entreprises publiques [@minfin-entreprises-publiques-lf2020, p. 70-75 ; @minfin-entreprises-publiques-lf2021, p. 69-72]. {#tbl-compensation-transport-comptes}
+
+- **Subventions comprises, les produits de la société des transports de Tunis couvrent 61 % de ses charges en 2017 et 56 % en 2018.**
+- **Le trafic recule.** La société perd 4 % de ses voyageurs en 2017 et 1,3 % en 2018 ; le rapport précise que le nombre d'élèves et d'étudiants transportés baisse plus vite, de 9,7 % puis de 6,1 %. Pour 2019, il prévoit 223 millions de voyageurs, dont 122 millions de payants hors élèves et étudiants, 59 millions d'élèves et d'étudiants et 42 millions « au titre du transport collectif ».
+- **À la SNCFT, les recettes voyageurs baissent de 51,0 à 49,2 MD** entre 2016 et 2017 ; le rapport l'impute au « nombre élevé des groupes voyageant gratuitement » [@minfin-entreprises-publiques-lf2020, p. 74-75].
+
+Aucune série de voyageurs ni de recettes n'est établie ici pour les sociétés régionales, qui reçoivent plus de la moitié du poste.
+
+<!-- TODO (documentaliste) : sociétés régionales — rapports de la Cour des comptes sur les sociétés de Béja (2014), Gafsa (2012), Jendouba (2010), Kairouan et Sfax (2009), du Sahel (2006) à collecter, et éditions arabes du rapport sur les entreprises publiques (LF 2022 à LF 2025) à exploiter pour le transport ; SNCFT (voyageurs, 1995-2023) et métro léger et TGM (recettes, dépenses, voyageurs, 1995-2023) d'après l'Annuaire statistique de l'INS : à verser en série, sens des colonnes à vérifier édition par édition — docs/notes/compensation-transport-2026-10-11.md, § 1.4 et § 6. -->
+
+## Ce que relève la Cour des comptes {#sec-compensation-transport-cour}
+
+Deux rapports de la Cour des comptes portent sur la compensation du transport : l'un, mis en ligne en 2008, sur le contrôle de l'État sur le transport terrestre ; l'autre, mis en ligne en 2016, sur le ministère du Transport. Ce sont des constats de contrôle, donnés ici à part des séries budgétaires ; les montants qu'ils citent ne se substituent pas à celles-ci.
+
+| Rapport | Année visée | Ce que la Cour relève |
+|---|---|---|
+| 2008 | 2006 | l'État ne compense que partiellement le manque à gagner des entreprises publiques de transport terrestre ; déficit financier estimé à environ 228,4 MD, hors Société nationale de transport interurbain, en regard de 145 MD de subventions de compensation |
+| 2008 | 2006 | causes citées : le transport gratuit et le transport scolaire, les réductions aux élèves et aux étudiants atteignant 90 % du tarif normal |
+| 2008 | 2007 | sauf pour la Société nationale des chemins de fer tunisiens, les montants de la compensation ne reposent pas sur des critères clairs, et aucune règle ne les fixe ; le décret prévu par la loi de 2004 n'est pas pris |
+| 2016 | 2012-2013 | le ministère évalue à près de 400 MD par an le manque à gagner dû aux tarifs réduits des élèves et des étudiants ; les subventions versées à ce titre sont de 273 MD en 2012 et de 323 MD en 2013 |
+| 2016 | 2010-2013 | résultats négatifs cumulés des entreprises de transport terrestre : 1 200 MD ; tarifs non actualisés depuis 2010 |
+| 2016 | 2011 | prise en charge par le budget de 244 MD de dettes de la société des transports de Tunis envers la Société nationale de distribution des pétroles et la Caisse nationale de retraite et de prévoyance sociale |
+| 2016 | 2013 | gratuité des agents de contrôle du ministère du Transport — 512 agents — non compensée depuis 1991 ; gratuité des blessés de la révolution et des familles des martyrs : manque à gagner d'environ 3,3 MD, sans autorité payeuse désignée |
+| 2016 | 2016 | plus de dix ans après la loi de 2004, le décret sur la méthode de calcul du manque à gagner n'est pas pris |
+
+: Les constats de la Cour des comptes sur la compensation du transport public (MD : millions de dinars courants). Sources : rapport mis en ligne en 2008 [@cour-comptes-2008-transport-terrestre, p. 99] ; rapport mis en ligne en 2016 [@cour-comptes-2016-ministere-transport, p. 281-282]. Le poste « transport » de la dépense de compensation est de 146,0 MD en 2006, 277,5 MD en 2012 et 330,0 MD en 2013 (@tbl-compensation-2003-2011 et @tbl-compensation-2012-2025). {#tbl-compensation-transport-cour}
+
+Trois précisions de lecture.
+
+- **Le déficit de 2006 ne donne pas un taux de compensation.** Le rapport ne dit pas si les 228,4 MD s'entendent avant ou après subvention.
+- **L'estimation de 400 MD n'est pas datée.** Rapportées à elle, les subventions de 2012 et de 2013 en couvriraient 68 % et 81 % ; c'est un ordre de grandeur calculé ici, sur une estimation du ministère que la Cour rapporte sans en donner l'année ni la méthode.
+- **La réponse du ministère est imprimée dans le rapport de 2008.** Elle porte sur le mode de calcul, et elle est exposée avec l'état du droit (@sec-compensation-transport-etat-du-droit).
+
+Ces constats désignent un second étage, qui sort du champ de ce chapitre : la part du manque à gagner que la compensation ne couvre pas se retrouve dans les pertes des entreprises, puis dans les prises en charge de dettes par le budget — 244 MD en 2011 selon la Cour, et l'apurement de 2017 (@sec-compensation-transport-interventions).
+
+## Un rapport extérieur : le *Livre blanc* de la Banque mondiale (2016) {#sec-compensation-transport-livre-blanc}
+
+La Banque mondiale publie en mai 2016 un *Livre blanc relatif au secteur des transports et de la logistique*, diagnostic du secteur et de ses entreprises [@banque-mondiale-2016-livre-blanc-transports]. Sa méthode, pour les chiffres repris ici : elle reproduit en annexe des tableaux de la société des transports de Tunis et de la Société nationale des chemins de fer tunisiens (SNCFT), datés de 2014 et de 2015, sans dire la définition des catégories de voyageurs ni le mode de comptage — billets vendus, comptages ou estimation des trajets des abonnés. Ces chiffres ne sont pas de la famille budgétaire, et ne se raccordent pas à ceux du ministère des Finances pour 2016-2019 (@sec-compensation-transport-comptes) : les catégories n'y sont pas les mêmes.
+
+```{python}
+#| label: fig-compensation-transport-trafic-tunis
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.figure(
+    "trafic_tunis",
+    caption=("Le trafic de la société des transports de Tunis par catégorie de voyageurs, "
+             "2007-2014, selon le Livre blanc de la Banque mondiale : en millions de "
+             "voyageurs et en part du total"),
+    note_lecture=(
+        "Rapport extérieur : la Banque mondiale reproduit un tableau de la société des "
+        "transports de Tunis (autobus, métro et TGM), sans définir les catégories ni dire "
+        "comment les voyageurs sont comptés. Chaque barre empile les voyageurs payants non "
+        "scolaires, les voyageurs scolaires et les voyageurs gratuits ; le nombre au-dessus "
+        "est le total. Seconde vue : les mêmes catégories en part du total de l'année."))
+```
+
+- **Le trafic total recule de 42 % en sept ans**, de 444,5 millions de voyageurs en 2007 à 259,9 millions en 2014, avec une chute en 2011.
+- **Le scolaire en fait 43 % en 2007 et 35 % en 2014** : 191,9 millions de voyageurs, puis 89,8 millions.
+- **Les voyageurs gratuits ne baissent pas** : 45,6 millions en 2007, 49,8 millions en 2014, soit 10 % puis 19 % du total. En 2014, plus d'un voyageur sur deux — 54 % — ne paie pas le tarif ordinaire.
+
+Le même rapport reproduit les comptes d'exploitation de la société pour deux années.
+
+| Grandeur | 2013 | 2014 |
+|---|---:|---:|
+| Revenus du trafic<br>(MD) | 64,5 | 66,3 |
+| Autres revenus<br>(MD) | 11,0 | 5,7 |
+| « Compensation scolaire »<br>(MD) | 95,0 | 112,2 |
+| Total des produits d'exploitation<br>(MD) | 170,6 | 184,2 |
+| Charges d'exploitation<br>(MD) | 282,1 | 283,7 |
+| dont charges de personnel<br>(MD) | 174,5 | 186,1 |
+| Revenus du trafic rapportés aux charges<br>(%) | 22,9 | 23,4 |
+| Revenus du trafic et compensation scolaire rapportés aux charges<br>(%) | 56,5 | 62,9 |
+
+: Les comptes d'exploitation de la société des transports de Tunis en 2013 et 2014, selon le *Livre blanc* de la Banque mondiale, qui cite le rapport annuel de 2014 de la société (millions de dinars courants, MD). Les deux derniers rapports sont calculés ici. Source : [@banque-mondiale-2016-livre-blanc-transports, annexe, p. 73]. {#tbl-compensation-transport-comptes-bm}
+
+Les recettes du trafic couvrent moins du quart des charges d'exploitation ; avec la subvention, que la société inscrit dans ses comptes sous le nom de « compensation scolaire », un peu moins des deux tiers. Cette compensation scolaire recoupe le budget : 95,0 MD en 2013 pour 70,0 + 25,0 MD de crédits aux lignes d'autobus et de métro de la société, 112,2 MD en 2014 pour 83,0 + 29,2 MD (@tbl-compensation-transport-soutien).
+
+Pour la SNCFT, le rapport donne 38,8 millions de voyageurs en 2007 et 37,6 millions en 2014, dont 32,7 puis 33,3 millions sur les lignes de banlieue ; le trafic scolaire y est de 11,9 millions en 2007 et de 11,5 millions en 2014, soit 31 % puis 30 % du total [@banque-mondiale-2016-livre-blanc-transports, annexe, p. 78].
+
+De ce diagnostic, la Banque mondiale tire deux recommandations : « la compensation intégrale, pour les opérateurs, du manque-à-gagner induit par la gratuité ou certaines réductions », et l'étude d'« un régime de subvention bien ciblé » [@banque-mondiale-2016-livre-blanc-transports, p. 19 et 45]. Ce sont ses propositions ; le rapport ne mesure pas à qui profite la subvention.
+
+## L'incidence {#sec-compensation-transport-incidence}
+
+Aucune étude ne répartit la subvention du transport public entre les ménages selon leur niveau de vie. L'étude qui mesure l'effet de l'ensemble des prélèvements et des transferts la fond dans un agrégat de toutes les subventions — produits de base, énergie et transport —, où le transport compte pour 0,3 point de PIB sur 2,4 en 2010, la base du PIB n'étant pas précisée par la source [@jouini-lustig-moummi-shimeles-2017-ceq38, p. 12] ; elle est exposée au chapitre des études d'impact (@sec-compensation-incidence). Ce que les textes établissent, c'est le critère d'attribution : la subvention suit les élèves et les étudiants abonnés et les catégories admises à la gratuité, là où circulent les réseaux publics.
