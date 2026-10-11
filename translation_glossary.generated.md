@@ -165,6 +165,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds spéciaux du Trésor | الحسابات الخاصة في الخزينة |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
 | Frais professionnels | المصاريف المهنية |  |
+| Garantie de l'État | ضمان الدولة |  |
 | Gel du crédit de TVA (1998) | تجميد فائض الأداء على القيمة المضافة (1998) |  |
 | Gestion financière distincte | التصرّف المالي المستقلّ |  |
 | Grade | الرتبة |  |
@@ -213,6 +214,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Ouvrier de l'État | عامل الدولة |  |
 | Ouvriers de chantiers | عملة الحضائر |  |
 | Part aux recettes | المناب من محصول الأداءات |  |
+| Participation publique | مساهمة عمومية |  |
 | Patrimoine financier | الملك المالي |  |
 | Pension d'ancienneté | جراية التقاعد بالأقدمية |  |
 | Pension de réversion | جراية القرين الباقي على قيد الحياة |  |

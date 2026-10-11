@@ -2212,3 +2212,122 @@
   - lire à l'image les 44 fascicules arabes à couche texte illisible de 2020 à 2025
   - recenser les fascicules de 2018-2026 absents du corpus
   - chercher les délibérations tarifaires au Journal officiel des collectivités locales
+
+- id: r-loi89-9-modificatifs-apres-2006
+  objet: texte modifiant ou remplaçant la loi n° 89-9 du 1er février 1989 (participations, entreprises et établissements publics) postérieur à la loi n° 2006-36 du 12 juin 2006, ou loi nouvelle sur la gouvernance des participations et entreprises publiques (projet évoqué par le FMI en 2021)
+  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-etat-du-droit]
+  requetes:
+    titres_fts: [gouvernance AND (entreprises OR participations) AND publi*]
+    titres_like: ['%entreprises publiques%', '%participations publiques%', '%etablissements publics%', '%89-9 %']
+    iort_ar: [المنشآت العمومية, المنشات العمومية, المساهمات العمومية, المساهمات والمنشآت, حوكمة المنشآت, 9 لسنة 1989]
+    depuis: 2006-07-01
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026, titres seuls (LIKE français sans accents, LIKE arabe, FTS), lois et décrets-lois postérieurs au 1er juillet 2006 : aucune loi modifiant la loi n° 89-9 ; ne ressortent que des articles de lois de finances, la loi n° 2007-33 (audiovisuel), le décret-loi n° 2020-7 et les décrets d''application de l''article 22 ter (2006-1555, 2009-2965, 2013-4953, 2020-1061). Ni le corpus local en plein texte, ni iort, ni pist n''ont été parcourus ; les fascicules inconnus de la base (outillage-sources, § 1 f) non plus. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 5.4.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: ['rejouer en plein texte sur le corpus local depuis 2011 (« 89-9 », « 9 لسنة 1989 »)']
+
+- id: r-epna-liste-modificatifs-apres-2007
+  objet: décret modifiant ou remplaçant, après le décret n° 2007-2560 du 23 octobre 2007, la liste des établissements publics à caractère non administratif considérés comme entreprises publiques (décret n° 2004-2265 du 27 septembre 2004)
+  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-etat-du-droit]
+  requetes:
+    titres_like:
+    - '%liste des etablissements publics a caractere non administratif%'
+    - '%consideres comme entreprises publiques%'
+    - '%2004-2265%'
+    - '%97-564%'
+    iort_ar: [قائمة المؤسسات العمومية التي لا تكتسي صبغة إدارية, 2265 لسنة 2004]
+    depuis: 2007-10-24
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026, titres seuls : chaîne retrouvée — décrets n° 97-564, 98-752, 99-2378, 2002-2199, 2004-2265, 2006-2579, 2007-1865, 2007-2560 ; rien après 2007. Un seul terme arabe essayé, alors que 40 à 80 % des notices de 2015 à 2019 n''ont qu''un intitulé arabe : silence non concluant. Les décrets modificatifs de 1998 à 2007 ne sont connus que par leur intitulé. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 5.4.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - prendre l'intitulé arabe exact du décret n° 2004-2265 au miroir iort et le rejouer
+  - lire les décrets n° 97-564 et n° 2004-2265 et leurs modificatifs pour compter les établissements à chaque date
+
+- id: r-garantie-etat-plafond-2020-lfr
+  objet: article de la loi de finances rectificative pour 2020 fixant le plafond des garanties de l'État (7 000 ou 7 500 millions de dinars selon les éditions du rapport sur les transferts et les garanties)
+  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-garanties]
+  requetes:
+    titres_like: ['%garantie de l''Etat%']
+    iort_ar: [ضمان الدولة]
+    depuis: 2020-01-01
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, titres : 147 notices portent « garantie de l''Etat » ou « ضمان الدولة » toutes années confondues ; la suite annuelle des articles de loi de finances est indexée de 1961 à 1994, puis l''index cesse de détailler les articles. La loi de finances rectificative pour 2020 n''a pas été ouverte. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 1.2 et § 5.4.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - ouvrir la loi de finances rectificative pour 2020 dans le corpus local et lire l'article sur le plafond
+
+- id: r-ep-rapport-unite-suivi-2010-2014
+  objet: « Rapport annuel sur les résultats des établissements publics durant la période 2010-2014 » de l'Unité de suivi du système de productivité des établissements et entreprises publics (Présidence du gouvernement), source des chiffres du Livre blanc de mars 2018 ; éditions voisines signalées (2010-2012, 2010-2016)
+  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-lp-lacunes]
+  requetes:
+    titres_like: ['%unite de suivi%', '%productivite des etablissements%']
+    iort_ar: [إنتاجية المؤسسات, متابعة تنظيم المؤسسات]
+    depuis: 2011-01-01
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [web]
+    couverture: 'Hors Journal officiel (document administratif). Essayé : pm.gov.tn/pm/entreprise/listetablissement.php (redirige vers le nouveau portail, sans le rapport) ; index des archives du web pour pm.gov.tn/pm/entreprise* et pm.gov.tn/pm/upload/fck/File/* (aucun fichier de ce nom parmi les captures listées). Non essayé : pm.gov.tn/pm/upload/ sous d''autres préfixes, le dépôt de documents de la Banque mondiale, une recherche par titre arabe exact. Un billet de la Banque mondiale signale une édition 2010-2012 publiée sur le site du chef du gouvernement, et les résultats de recherche une édition 2010-2016. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 5.3.'
+    couvert_jusqu_au: 2026-10-11
+    resultat: aucun
+  - date: 2026-10-11
+    role: rédacteur
+    sources: [jort_cache]
+    couverture: 'jort_cache, titres (index au 2 octobre 2026), requêtes LIKE ci-dessus rejouées en SQL, français et arabe : seuls répondent les décrets n° 2008-2965 et n° 2013-4630 sur une unité de suivi des concessions, sans rapport avec l''objet. Le rapport est un document administratif : son absence du Journal officiel est attendue.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - essayer pm.gov.tn/pm/upload/ sous d'autres préfixes dans les archives du web
+  - chercher le rapport par son titre arabe exact et dans le dépôt de documents de la Banque mondiale
+
+- id: r-ep-series-budgetaires-avant-2016
+  objet: séries budgétaires des transferts de l'État aux entreprises publiques et de l'encours de la dette garantie antérieures à 2016, et série des recettes de cession des participations publiques postérieure à 2009
+  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-lp-lacunes]
+  requetes:
+    titres_like:
+    - '%garantie de l''Etat%'
+    - '%restructuration du capital des entreprises publiques%'
+    - '%participation de l''Etat au capital%'
+    iort_ar: [ضمان الدولة]
+    depuis: 1960-01-01
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache, web]
+    couverture: 'Rapports du ministère des Finances annexés aux projets de loi de finances pour 2020 à 2025 (entreprises publiques, transferts et garanties, dette publique des éditions LF 2022 et LF 2025) : aucune réalisation antérieure à 2016. Site de la Direction générale de la privatisation et ses captures aux archives du web : statistiques arrêtées au 31 janvier 2009, relevé annuel jusqu''à 2009. jort_cache, titres : articles de lois de finances repérés par leur seul intitulé — garantie de l''État dans chaque loi de finances de 1961 à 1994 ; lois n° 80-88, 83-113, 85-109, 89-115 (fonds de restructuration du capital des entreprises publiques), 91-98, 96-113, 98-111, 2002-101 — sans lecture des montants. Non ouverts : rapports annuels de la Banque centrale, lois de règlement, rapports de la Cour des comptes sur la clôture du budget et sur la dette publique extérieure (2018), plans de développement, rapports sur la dette publique des éditions LF 2021 et LF 2024. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 1.2, § 2 et § 5.2.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire les montants des articles « octroi de la garantie de l'État » des lois de finances de 1961 à 1994 (série légale du plafond)
+  - ouvrir les rapports annuels de la Banque centrale et les lois de règlement pour les transferts, les revenus de participations et les recettes de privatisation
+  - dépouiller le rapport de la Cour des comptes sur la dette publique extérieure (2018)
+
+- id: r-ep-annexes-plf-2026
+  objet: rapports du ministère des Finances annexés au projet de loi de finances pour 2026 — rapport sur les entreprises publiques (annexe n° 9) et rapport sur les transferts et les garanties (annexe n° 8)
+  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-lp-lacunes]
+  requetes:
+    titres_like: ['%rapport sur les entreprises publiques%']
+    iort_ar: [التقرير حول المنشآت العمومية]
+    depuis: 2025-10-01
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [web]
+    couverture: 'Hors Journal officiel (documents budgétaires) ; les requêtes de titres, rejouées en SQL sur jort_cache le même jour par le rédacteur, ne répondent rien, ce qui est attendu. Page « Loi de Finance et rapports annexes » de gbo.tn (587 fichiers listés) : le dernier dépôt d''annexes est de mars 2025, pour la loi de finances pour 2025 ; un dépôt de décembre 2025 ne porte qu''un rapport annuel de performance. Une recherche web sur l''intitulé arabe du rapport : rien. Non essayé : l''arborescence « documents » de finances.gov.tn, le site de l''Assemblée des représentants du peuple. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 5.1.'
+    couvert_jusqu_au: 2026-10-11
+    resultat: aucun
+  a_faire:
+  - parcourir l'arborescence « documents » de finances.gov.tn et le site de l'Assemblée des représentants du peuple

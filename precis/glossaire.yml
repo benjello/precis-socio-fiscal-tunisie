@@ -10103,3 +10103,45 @@ entries:
         ابتداء من غرة جانفي 2017، باستثناء فصليها 14 و36 ومع مراعاة أحكام
         انتقالية (القانون عدد 71 لسنة 2016، الفصول من 26 إلى 32).
       synonymes: []
+
+  - id: garantie-etat
+    acronyme: null
+    statut: provisoire  # AR : « ضمان الدولة », rapport sur la dette publique (annexe n° 7), édition arabe ; définition arabe à écrire par le terminologue
+    references: [minfin-dette-2025, loi-org-2019-15-lob]
+    source_definition: {ref: minfin-dette-2025, locator: "p. 61"}
+    source_traduction: {ref: minfin-dette-2025}
+    voir_aussi: [entreprises-publiques, epna]
+    fr:
+      terme: Garantie de l'État
+      definition: >
+        Engagement par lequel l'État se substitue à une entreprise ou à un
+        établissement public dans ses obligations envers un prêteur, si
+        l'emprunteur fait défaut. La loi de finances en fixe chaque année le
+        plafond (loi organique du budget n° 2019-15, article 45). On distingue
+        les garanties accordées dans l'année et l'encours de la dette garantie.
+      synonymes: []
+    ar:
+      terme: ضمان الدولة
+      definition: ""
+      synonymes: []
+
+  - id: participation-publique
+    acronyme: null
+    statut: provisoire  # AR : « المساهمات العمومية », intitulé du relevé arabe de la Direction générale de la privatisation ; édition arabe de la loi n° 89-9 à lire
+    references: [loi89-9]
+    source_definition: {ref: loi89-9, locator: "art. 8"}
+    source_traduction: {ref: dgpv-recettes-annuelles-1987-2009}
+    voir_aussi: [entreprises-publiques]
+    fr:
+      terme: Participation publique
+      definition: >
+        Participation au capital d'une société détenue par l'État, une
+        collectivité locale, un établissement public ou une société dont le
+        capital est entièrement détenu par l'État (loi n° 89-9, article 8).
+        Une société est une entreprise publique quand ces participations
+        dépassent, seules ou ensemble, 50 % de son capital.
+      synonymes: [Participations publiques]
+    ar:
+      terme: مساهمة عمومية
+      definition: ""
+      synonymes: [المساهمات العمومية]

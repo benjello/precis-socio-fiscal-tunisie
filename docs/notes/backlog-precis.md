@@ -108,6 +108,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
+| Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, français seul, hors page d'accueil ; séries budgétaires 2016-2024 et 1987-2009 ; rien de budgétaire entre 2010 et 2016 ni avant 1987 | Loi de finances rectificative pour 2020 (plafond des garanties : 7 000 ou 7 500 MD), à ouvrir dans le corpus local |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -1041,15 +1042,17 @@ liste qui suit le tableau, citations comprises. Restent :
     `compensation/figures/compensation.py` (branche `docs/compensation-documentation`) : à
     porter dans `figtools` une fois les deux branches fusionnées ;
   - **rapports extérieurs (documentaliste)** : les parts du FMI (17,6 % en 2020) et de la
-    Banque mondiale (14,7 % en 2017, 10,7 % en 2010 ; transferts aux entreprises publiques,
-    8,9 % en 2013 et 7,5 % en 2014) sont citées sans page ; la base du PIB de la Banque
+    Banque mondiale (14,7 % en 2017, 10,7 % en 2010) sont citées sans page — les 8,9 % et
+    7,5 % de 2013 et 2014 sont rendus au Livre blanc de 2018, p. 12, le 11 octobre 2026 — ;
+    la base du PIB de la Banque
     mondiale est à relever dans sa revue des dépenses publiques de 2020 (le texte dit « n'est
     pas précisée ici »). Le 14,1 % de 2019 de la série (« Min Fin/presse ») n'est ni tracé ni
     affiché, faute de source. La part de 1997 en base 1983 citée au texte (10,97 %) n'est
     dans aucune figure : elle se recalcule sur `pib-courant-recouvrements` (2 293,5 /
     20 898,0) ;
-  - **bibliographie** : la clé `imf-tunisia-art4-2020` désigne le rapport n° 21/44, dont le
-    titre imprimé est « 2021 Article IV Consultation » (relevé sur la branche de l'annexe) ;
+  - **bibliographie — fait le 11 octobre 2026** : le titre et le titre court de
+    `imf-tunisia-art4-2020` disent désormais « 2021 Article IV Consultation » dans les deux
+    langues (page de garde du rapport n° 21/44 ; clé inchangée, année déjà 2021) ;
   - **catalogue de l'entrepôt** : `ins-pib-base-2015-2010-2020` manque aux `sources` de
     `masse-salariale-ratios` (le module l'ajoute à l'affichage) ; ses `caveats` s'adressent
     à qui trace la série (noms de colonnes, journal des corrections) : le module les
@@ -1084,9 +1087,12 @@ liste qui suit le tableau, citations comprises. Restent :
     **à lire** pour les montants ;
   - **`index.qmd`** : la liste des corps du régime statutaire autonome (annonce des chapitres
     et tableau des sous-périmètres) omet les agents des douanes, que le chapitre couvre ;
-  - **Banque mondiale, transferts aux entreprises publiques (8,9 % et 7,5 % du PIB)** : ni page,
-    ni base du PIB, ni méthode de l'évaluation au chapitre ; revue des dépenses publiques de
-    2020 à relire ;
+  - **transferts aux entreprises publiques (8,9 % et 7,5 % du PIB) — attribution corrigée le
+    11 octobre 2026** : ces deux parts sont dans le Livre blanc de la Présidence du gouvernement
+    de mars 2018 (p. 12), non dans la revue des dépenses publiques de la Banque mondiale, dont
+    le texte ne les porte pas ; `_regime_conventionnel.qmd` les rend au Livre blanc
+    (`pm-livre-blanc-ep-2018`, versé FR et AR), dit qu'il n'expose ni calcul ni base du PIB, et
+    renvoie au volume « Les entreprises publiques » ;
   - **sociétés d'assurance — fait le 8 octobre 2026** (`#sec-marche-controle-assurances`, note
     `docs/notes/remunerations-convention-collective-assurances.md`) : champ, classification,
     bas et haut de la grille de 1975 à 2021 face au SMIG, chaîne des quinze avenants, dix-sept
@@ -2213,6 +2219,85 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
   - **Redevance de compensation, revenu des personnes physiques** : rédaction de 2013 (assiette,
     plafond de 2 000 D) à relire à l'image ; prorogation des volets bornés à 2014-2015 à établir.
 
+## Les entreprises publiques
+
+Volume X (`precis/fr/entreprises_publiques/`), **brouillon** du 11 octobre 2026 : un seul
+chapitre, `_relation_financiere.qmd` (`#sec-ep-relation`), écrit sur la note
+`docs/notes/entreprises-publiques-2026-10-11.md` et sur les onze séries versées dans
+`tunisia-data` (`sources/entreprises-publiques.md`) ; quand la note et une série divergent, la
+série fait foi. La forme — volume ou chapitre d'un autre volume — reste à trancher par la revue
+humaine. **Le livre n'existe qu'en français** : pas de dossier `precis/ar/entreprises_publiques/`,
+pas de lien depuis la page d'accueil ; il est inscrit dans `build.sh`, `build_glossary.py` et
+`verifier_livres.py`, qui sautent un livre arabe absent.
+
+Plan : vue d'ensemble (`#sec-ep-vue-ensemble`) ; mise en place 1969-1987 ; grandes réformes
+(1989, 1994-2001, cessions 1987-2009, rapport annuel de 2019, depuis 2011) et registre des
+textes ; état du droit ; transferts du budget ; garanties ; dettes et créances croisées ;
+dividendes et versements ; cessions ; longue période ; Livre blanc de 2018 et études
+extérieures. Six figures et vingt-cinq tableaux, tous engendrés depuis les séries sauf trois
+(les réformes ; le registre des textes ; les six éditions du rapport).
+
+Ce qui reste :
+
+- **2010-2016 : aucune série budgétaire.** Le rapport de l'Unité de suivi (Présidence du
+  gouvernement) que cite le Livre blanc donnerait 2010-2014, peut-être 2010-2016 ; non obtenu
+  (fiche `r-ep-rapport-unite-suivi-2010-2014`). À chercher dans les archives du web avant toute
+  demande à l'administration.
+- **Avant 1987, et avant 2016 pour les transferts et la dette garantie** : rien (fiche
+  `r-ep-series-budgetaires-avant-2016`). Pistes non ouvertes : rapports annuels de la Banque
+  centrale, lois de règlement, Cour des comptes (dette publique extérieure, 2018), plans de
+  développement. Le plafond des garanties est dans chaque loi de finances depuis 1961
+  (intitulés indexés jusqu'en 1994 ; fascicules **lisibles** dans le corpus, montants à lire) :
+  seul temps long à portée de main. Recettes de cession après 2009 : aucune série.
+- **Annexes du projet de loi de finances pour 2026** : non obtenues (fiche
+  `r-ep-annexes-plf-2026`).
+- **« Hors compensation, hors caisses » non calculé** : le total des transferts (annexe 8)
+  contient les caisses, la compensation et les établissements d'enseignement ; le retrait
+  demande les annexes par établissement du rapport (édition LF 2020 : p. 62-123 ; éditions
+  arabes : seconde moitié), non dépouillées. Le chapitre le dit au premier plan.
+- **Fiches par entreprise non relues, donc non publiées** : dette, effectifs, charges de
+  personnel, subvention d'exploitation, total des passifs (STEG, STIR, Tunisair, Transtu,
+  SNCFT, SONEDE, ETAP, Groupe chimique, CPG, Office des céréales, RNTA, Office du commerce).
+  Éditions arabes : tableaux tournés d'un quart de tour, à rendre à 170 dpi et à relire à
+  l'image, puis à verser dans `tunisia-data`. De même les classements par charges de
+  personnel et par produits d'exploitation, et l'effectif total (non publié par le rapport :
+  INS, emploi par secteur institutionnel, non cherché).
+- **Textes d'après 2011** : aucun modificatif de la loi n° 89-9 identifié après 2006 (fiche
+  `r-loi89-9-modificatifs-apres-2006`, plein texte du corpus non rejoué) ; liste des
+  établissements : rien après 2007 (fiche `r-epna-liste-modificatifs-apres-2007`, un seul terme
+  arabe essayé). Connus par leur seul intitulé : loi n° 93-124, décrets n° 2002-2197,
+  2006-1555, 2009-2965, 2013-4953, décrets gouvernementaux n° 2016-510, 2018-618 et 2020-1061.
+- **Dates d'effet non calculées** : lois n° 96-74, 99-38, 2001-33, 2006-36 (date de dépôt du
+  *Journal officiel* à relever) ; lois n° 69-50 et 85-72 données en fourchette (fascicules
+  datés de plusieurs jours).
+- **Pages arabes** : la loi n° 89-9 et ses modificatifs n'ont été lus qu'en français ; les
+  termes arabes du glossaire viennent des rapports du ministère et du relevé de la Direction
+  générale de la privatisation.
+- **Plafond des garanties de 2020** : 7 000 ou 7 500 MD selon l'édition (fiche
+  `r-garantie-etat-plafond-2020-lfr`) ; loi de finances rectificative pour 2020 **lisible**
+  dans le corpus, à ouvrir.
+- **Second passage de la note** (son § 8) : ventilation par nature de 2023 (écart imprimé de
+  23,0 MD) ; encours des prêts rétrocédés (rapport sur la dette publique, pages repérées) ;
+  rapports sur la dette publique des éditions LF 2021 et LF 2024 ; page « bilan global » de la
+  privatisation (opérations par mode) et grandes cessions opération par opération ; rapports
+  de la Cour des comptes par entreprise ; OCDE.
+- **Glossaire** : deux entrées neuves, provisoires, sans définition arabe —
+  `garantie-etat` (ضمان الدولة) et `participation-publique` (مساهمة عمومية). Non versées,
+  faute de terme arabe attesté par un texte lu ou de définition légale : entreprise-mère et
+  filiale (1985), action spécifique, commission d'assainissement et de restructuration,
+  privatisation (« تخصيص » chez la Direction générale ; la loi dit « restructuration » et
+  « cession »), contrat de performance, prêt rétrocédé, document d'orientation, dette
+  garantie. Les entrées `contrat-programme`, `controleur-d-etat` et `tutelle` sont définies
+  pour les caisses et les collectivités : à élargir aux entreprises publiques (lois n° 85-72
+  et n° 89-9).
+- **Bibliographie** : trente-six notices dans `entreprises_publiques/references.json`, dont
+  douze recopiées d'autres livres (`imf-tunisia-art4-2020`, `wb-tunisia-per-2020`,
+  `decret97-564`, `decret2004-2265`, `loi-org-2019-15-lob`, `bct-ra`, `ins-annuaire`…) : à
+  promouvoir au fonds commun et à verser dans Zotero (`docs/notes/biblio-a-rapatrier.md`).
+- **Intégration du volume** : livre arabe et `_quarto.yml` arabe, page d'accueil, comptes de
+  livres (`AGENTS.md`, README), collection Zotero dans `sync_biblio.py`, libellés arabes des
+  figures (`figures/entreprises_publiques.py`, table `LIB`).
+
 ## Citations répétées — suggestion, non engagée (4 octobre 2026)
 
 Une même référence revient parfois à chaque phrase : le code de l'IRPP et de l'IS (`code-irpp-is-1990`) 31 fois dans `fiscalite/_impot_revenu.qmd` ; dans le volume VII en préparation (branche locale), la loi n° 97-11 jusqu'à 28 fois par chapitre et Dafflon et Gilbert 56 fois dans le chapitre des notions. La parenthèse « (loi n° … du …, art. 3) » alourdit la lecture sans rien apporter que le numéro d'article. Suggestion, à décider par l'humain avant toute mise en œuvre :
@@ -2885,9 +2970,10 @@ généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_pa
   de `masse_salariale.py` : « base 2010 (×1,06) » — il n'existe pas de PIB nominal « base 2010 »,
   et le coefficient unique est appliqué à 1990-2025 alors qu'il n'est mesuré que sur 2015-2017.
   Citations du FMI (17,6 % en 2020 : PIB en base 1997, établi) et de la Banque mondiale (14,7 %
-  en 2017, 10,7 % en 2010 ; `_regime_conventionnel.qmd`, transferts aux entreprises publiques,
-  8,9 % en 2013 et 7,5 % en 2014) : dire la base, ou dire qu'elle n'est pas précisée par la
-  source (revue des dépenses publiques de 2020 à relire sur ce point).
+  en 2017, 10,7 % en 2010) : dire la base, ou dire qu'elle n'est pas précisée par la
+  source (revue des dépenses publiques de 2020 à relire sur ce point). Les 8,9 % et 7,5 % de
+  2013 et 2014 de `_regime_conventionnel.qmd` sont rendus au Livre blanc de 2018 le 11 octobre
+  2026 : base non précisée par la source, et le texte le dit.
 - **Figures de la CNSS, 1990-2004 — 6 figures partielles, même défaut** : le changement de
   1997 est tracé et dit ; celui de **2002** (valeurs du ministère non rattachées, 2002-2004) ne
   l'est pas.

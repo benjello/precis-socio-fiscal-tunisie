@@ -1,0 +1,339 @@
+entite,libelle,annee,statut,edition,echantillon,derniere_edition,divergence_entre_editions,valeur_md,imprime,tableau,fichier,page_pdf,lecture
+afi,Agence foncière industrielle,2018,réalisé,LF2022,50,True,False,3.4,"3,4",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+afi,Agence foncière industrielle,2019,réalisé,LF2022,50,False,False,4.0,4,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+afi,Agence foncière industrielle,2019,réalisé,LF2023,48,True,False,4.0,"4,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+afi,Agence foncière industrielle,2020,provisoire,LF2022,50,False,False,5.0,5,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+afi,Agence foncière industrielle,2020,réalisé,LF2023,48,False,False,5.0,"5,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+afi,Agence foncière industrielle,2020,réalisé,LF2024,48,True,False,5.0,"5,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+afi,Agence foncière industrielle,2021,provisoire,LF2023,48,False,False,6.0,"6,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+afi,Agence foncière industrielle,2021,réalisé,LF2024,48,True,False,6.0,"6,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+afi,Agence foncière industrielle,2022,provisoire,LF2024,48,True,False,5.0,"5,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+bfpme,Banque de financement des petites et moyennes entreprises,2020,réalisé,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+bfpme,Banque de financement des petites et moyennes entreprises,2021,réalisé,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+bfpme,Banque de financement des petites et moyennes entreprises,2022,provisoire,LF2024,48,True,False,22.7,"22,7",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+bh,Banque de l'habitat,2017,réalisé,LF2021,33,True,False,34.0,34,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+bh,Banque de l'habitat,2018,réalisé,LF2021,33,True,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+bh,Banque de l'habitat,2019,réalisé,LF2021,33,True,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+bh,Banque de l'habitat,2020,provisoire,LF2021,33,True,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+ciments_bizerte,Les Ciments de Bizerte,2018,réalisé,LF2022,50,True,False,0.068,"0,068",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+ciments_bizerte,Les Ciments de Bizerte,2019,réalisé,LF2022,50,False,False,0.073,"0,073",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+ciments_bizerte,Les Ciments de Bizerte,2019,réalisé,LF2023,48,True,False,0.1,"0,1",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+ciments_bizerte,Les Ciments de Bizerte,2020,provisoire,LF2022,50,False,False,0.073,"0,073",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+ciments_bizerte,Les Ciments de Bizerte,2020,réalisé,LF2023,48,False,False,0.1,"0,1",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+ciments_bizerte,Les Ciments de Bizerte,2020,réalisé,LF2024,48,True,False,0.1,"0,1",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+ciments_bizerte,Les Ciments de Bizerte,2021,provisoire,LF2023,48,False,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+ciments_bizerte,Les Ciments de Bizerte,2021,réalisé,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+ciments_bizerte,Les Ciments de Bizerte,2022,provisoire,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+cnam,Caisse nationale d'assurance maladie,2020,réalisé,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+cnam,Caisse nationale d'assurance maladie,2021,réalisé,LF2024,48,True,False,0.8,"0,8",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+cnam,Caisse nationale d'assurance maladie,2022,provisoire,LF2024,48,True,False,453.4,"453,4",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2017,réalisé,LF2021,33,True,False,500.0,500,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2018,réalisé,LF2021,33,False,False,200.0,200,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2018,réalisé,LF2022,50,True,False,200.0,200,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2019,réalisé,LF2021,33,False,False,450.0,450,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2019,réalisé,LF2022,50,False,False,450.0,450,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2019,réalisé,LF2023,48,True,False,450.0,"450,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2020,provisoire,LF2021,33,False,True,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2020,provisoire,LF2022,50,False,True,460.0,460,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2020,réalisé,LF2023,48,False,True,460.0,"460,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2020,réalisé,LF2024,48,True,True,970.6,"970,6",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2021,provisoire,LF2023,48,False,True,500.0,"500,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2021,réalisé,LF2024,48,True,True,762.3,"762,3",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+cnrps,Caisse nationale de retraite et de prévoyance sociale,2022,provisoire,LF2024,48,True,False,579.5,"579,5",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+cnss,Caisse nationale de sécurité sociale,2017,réalisé,LF2021,33,True,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cnss,Caisse nationale de sécurité sociale,2018,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cnss,Caisse nationale de sécurité sociale,2018,réalisé,LF2022,50,True,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+cnss,Caisse nationale de sécurité sociale,2019,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cnss,Caisse nationale de sécurité sociale,2019,réalisé,LF2022,50,True,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+cnss,Caisse nationale de sécurité sociale,2020,provisoire,LF2021,33,False,True,25.0,25,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cnss,Caisse nationale de sécurité sociale,2020,provisoire,LF2022,50,False,True,40.0,40,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+cnss,Caisse nationale de sécurité sociale,2020,réalisé,LF2024,48,True,True,1321.6,"1321,6",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+cnss,Caisse nationale de sécurité sociale,2021,réalisé,LF2024,48,True,False,842.0,"842,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+cnss,Caisse nationale de sécurité sociale,2022,provisoire,LF2024,48,True,False,943.5,"943,5",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+cpscl,Caisse des prêts et de soutien des collectivités locales,2017,réalisé,LF2021,33,True,False,59.2,"59,2",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cpscl,Caisse des prêts et de soutien des collectivités locales,2018,réalisé,LF2021,33,False,False,216.4,"216,4",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cpscl,Caisse des prêts et de soutien des collectivités locales,2018,réalisé,LF2022,50,True,False,216.4,"216,4",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+cpscl,Caisse des prêts et de soutien des collectivités locales,2019,réalisé,LF2021,33,False,False,179.8,"179,8",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cpscl,Caisse des prêts et de soutien des collectivités locales,2019,réalisé,LF2022,50,True,False,179.8,"179,8",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+cpscl,Caisse des prêts et de soutien des collectivités locales,2020,provisoire,LF2021,33,False,True,257.1,"257,1",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+cpscl,Caisse des prêts et de soutien des collectivités locales,2020,provisoire,LF2022,50,True,True,300.5,"300,5",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+ctn,Compagnie tunisienne de navigation,2017,réalisé,LF2021,33,True,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+ctn,Compagnie tunisienne de navigation,2018,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+ctn,Compagnie tunisienne de navigation,2018,réalisé,LF2022,50,True,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+ctn,Compagnie tunisienne de navigation,2019,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+ctn,Compagnie tunisienne de navigation,2019,réalisé,LF2022,50,False,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+ctn,Compagnie tunisienne de navigation,2019,réalisé,LF2023,48,True,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+ctn,Compagnie tunisienne de navigation,2020,provisoire,LF2021,33,False,False,22.0,22,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+ctn,Compagnie tunisienne de navigation,2020,provisoire,LF2022,50,False,False,22.0,22,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+ctn,Compagnie tunisienne de navigation,2020,réalisé,LF2023,48,False,False,22.0,"22,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+ctn,Compagnie tunisienne de navigation,2020,réalisé,LF2024,48,True,False,22.0,"22,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+ctn,Compagnie tunisienne de navigation,2021,provisoire,LF2023,48,False,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+ctn,Compagnie tunisienne de navigation,2021,réalisé,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+ctn,Compagnie tunisienne de navigation,2022,provisoire,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+el_fouladh,Société tunisienne de sidérurgie El Fouladh,2017,réalisé,LF2021,33,True,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+el_fouladh,Société tunisienne de sidérurgie El Fouladh,2018,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+el_fouladh,Société tunisienne de sidérurgie El Fouladh,2018,réalisé,LF2022,50,True,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+el_fouladh,Société tunisienne de sidérurgie El Fouladh,2019,réalisé,LF2021,33,False,False,10.0,10,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+el_fouladh,Société tunisienne de sidérurgie El Fouladh,2019,réalisé,LF2022,50,False,False,10.0,10,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+el_fouladh,Société tunisienne de sidérurgie El Fouladh,2019,réalisé,LF2023,48,True,False,10.0,"10,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+el_fouladh,Société tunisienne de sidérurgie El Fouladh,2020,provisoire,LF2021,33,False,True,150.0,150,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+el_fouladh,Société tunisienne de sidérurgie El Fouladh,2020,provisoire,LF2022,50,False,True,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+el_fouladh,Société tunisienne de sidérurgie El Fouladh,2020,réalisé,LF2023,48,True,True,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+el_fouladh,Société tunisienne de sidérurgie El Fouladh,2021,provisoire,LF2023,48,True,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+mtk,Manufacture des tabacs de Kairouan,2017,réalisé,LF2021,33,True,False,12.0,12,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+mtk,Manufacture des tabacs de Kairouan,2018,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+mtk,Manufacture des tabacs de Kairouan,2018,réalisé,LF2022,50,True,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+mtk,Manufacture des tabacs de Kairouan,2019,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+mtk,Manufacture des tabacs de Kairouan,2019,réalisé,LF2022,50,False,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+mtk,Manufacture des tabacs de Kairouan,2019,réalisé,LF2023,48,True,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+mtk,Manufacture des tabacs de Kairouan,2020,provisoire,LF2021,33,False,True,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+mtk,Manufacture des tabacs de Kairouan,2020,provisoire,LF2022,50,False,True,60.0,60,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+mtk,Manufacture des tabacs de Kairouan,2020,réalisé,LF2023,48,False,True,60.0,"60,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+mtk,Manufacture des tabacs de Kairouan,2020,réalisé,LF2024,48,True,True,60.0,"60,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+mtk,Manufacture des tabacs de Kairouan,2021,provisoire,LF2023,48,False,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+mtk,Manufacture des tabacs de Kairouan,2021,réalisé,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+mtk,Manufacture des tabacs de Kairouan,2022,provisoire,LF2024,48,True,False,92.7,"92,7",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+office_cereales,Office des céréales,2017,réalisé,LF2021,33,True,False,980.2,"980,2",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_cereales,Office des céréales,2018,réalisé,LF2021,33,False,True,1320.3,"1320,3",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_cereales,Office des céréales,2018,réalisé,LF2022,50,True,True,1403.5,"1403,5",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+office_cereales,Office des céréales,2019,réalisé,LF2021,33,False,True,1324.1,"1324,1",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_cereales,Office des céréales,2019,réalisé,LF2022,50,False,True,1800.2,"1800,2",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+office_cereales,Office des céréales,2019,réalisé,LF2023,48,True,True,1800.2,"1800,2",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+office_cereales,Office des céréales,2020,provisoire,LF2021,33,False,True,3.0,3,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_cereales,Office des céréales,2020,provisoire,LF2022,50,False,True,1745.0,1745,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+office_cereales,Office des céréales,2020,réalisé,LF2023,48,False,True,1745.0,"1745,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+office_cereales,Office des céréales,2020,réalisé,LF2024,48,True,True,1726.5,"1726,5",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+office_cereales,Office des céréales,2021,provisoire,LF2023,48,False,True,213.5,"213,5",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+office_cereales,Office des céréales,2021,réalisé,LF2024,48,True,True,1687.5,"1687,5",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+office_cereales,Office des céréales,2022,provisoire,LF2024,48,True,False,3237.4,"3237,4",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+office_commerce,Office du commerce de la Tunisie,2017,réalisé,LF2021,33,True,False,16.9,"16,9",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_commerce,Office du commerce de la Tunisie,2018,réalisé,LF2021,33,False,False,20.2,"20,2",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_commerce,Office du commerce de la Tunisie,2018,réalisé,LF2022,50,True,False,20.18,"20,18",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+office_commerce,Office du commerce de la Tunisie,2019,réalisé,LF2021,33,False,False,24.0,24,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_commerce,Office du commerce de la Tunisie,2019,réalisé,LF2022,50,False,False,24.029,"24,029",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+office_commerce,Office du commerce de la Tunisie,2019,réalisé,LF2023,48,True,False,24.0,"24,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+office_commerce,Office du commerce de la Tunisie,2020,provisoire,LF2021,33,False,True,5.0,5,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_commerce,Office du commerce de la Tunisie,2020,provisoire,LF2022,50,False,True,22.309,"22,309",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+office_commerce,Office du commerce de la Tunisie,2020,réalisé,LF2023,48,False,True,22.3,"22,3",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+office_commerce,Office du commerce de la Tunisie,2020,réalisé,LF2024,48,True,True,20.1,"20,1",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+office_commerce,Office du commerce de la Tunisie,2021,provisoire,LF2023,48,False,True,9.4,"9,4",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+office_commerce,Office du commerce de la Tunisie,2021,réalisé,LF2024,48,True,True,10.2,"10,2",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+office_commerce,Office du commerce de la Tunisie,2022,provisoire,LF2024,48,True,False,0.8,"0,8",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+office_huile,Office national de l'huile,2017,réalisé,LF2021,33,True,False,286.468,"286,468",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_huile,Office national de l'huile,2018,réalisé,LF2021,33,False,True,305.279,"305,279",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_huile,Office national de l'huile,2018,réalisé,LF2022,50,True,True,304.999,"304,999",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+office_huile,Office national de l'huile,2019,réalisé,LF2021,33,False,True,273.15,"273,15",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_huile,Office national de l'huile,2019,réalisé,LF2022,50,False,True,292.369,"292,369",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+office_huile,Office national de l'huile,2019,réalisé,LF2023,48,True,True,292.4,"292,4",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+office_huile,Office national de l'huile,2020,provisoire,LF2021,33,False,True,323.0,323,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+office_huile,Office national de l'huile,2020,provisoire,LF2022,50,False,True,315.137,"315,137",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+office_huile,Office national de l'huile,2020,réalisé,LF2023,48,False,True,310.1,"310,1",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+office_huile,Office national de l'huile,2020,réalisé,LF2024,48,True,True,310.1,"310,1",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+office_huile,Office national de l'huile,2021,provisoire,LF2023,48,False,False,322.9,"322,9",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+office_huile,Office national de l'huile,2021,réalisé,LF2024,48,True,False,322.9,"322,9",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+office_huile,Office national de l'huile,2022,provisoire,LF2024,48,True,False,345.3,"345,3",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+onas,Office national de l'assainissement,2017,réalisé,LF2021,33,True,False,58.0,58,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+onas,Office national de l'assainissement,2018,réalisé,LF2021,33,False,True,59.4,"59,4",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+onas,Office national de l'assainissement,2018,réalisé,LF2022,50,True,True,155.9,"155,9",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+onas,Office national de l'assainissement,2019,réalisé,LF2021,33,False,True,97.7,"97,7",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+onas,Office national de l'assainissement,2019,réalisé,LF2022,50,False,True,210.7,"210,7",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+onas,Office national de l'assainissement,2019,réalisé,LF2023,48,True,True,210.7,"210,7",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+onas,Office national de l'assainissement,2020,provisoire,LF2021,33,False,True,95.0,95,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+onas,Office national de l'assainissement,2020,provisoire,LF2022,50,False,True,218.3,"218,3",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+onas,Office national de l'assainissement,2020,réalisé,LF2023,48,False,True,201.3,"201,3",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+onas,Office national de l'assainissement,2020,réalisé,LF2024,48,True,True,201.3,"201,3",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+onas,Office national de l'assainissement,2021,provisoire,LF2023,48,False,True,230.1,"230,1",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+onas,Office national de l'assainissement,2021,réalisé,LF2024,48,True,True,222.5,"222,5",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+onas,Office national de l'assainissement,2022,provisoire,LF2024,48,True,False,185.5,"185,5",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+otd,Office des terres domaniales,2017,réalisé,LF2021,33,True,False,0.47,"0,47",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+otd,Office des terres domaniales,2018,réalisé,LF2021,33,False,False,1.27,"1,27",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+otd,Office des terres domaniales,2018,réalisé,LF2022,50,True,False,1.268,"1,268",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+otd,Office des terres domaniales,2019,réalisé,LF2021,33,False,False,0.42,"0,42",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+otd,Office des terres domaniales,2019,réalisé,LF2022,50,False,False,0.422,"0,422",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+otd,Office des terres domaniales,2019,réalisé,LF2023,48,True,False,0.4,"0,4",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+otd,Office des terres domaniales,2020,provisoire,LF2021,33,False,True,0.23,"0,23",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+otd,Office des terres domaniales,2020,provisoire,LF2022,50,False,True,0.225,"0,225",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+otd,Office des terres domaniales,2020,réalisé,LF2023,48,False,True,0.2,"0,2",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+otd,Office des terres domaniales,2020,réalisé,LF2024,48,True,True,8.0,"8,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+otd,Office des terres domaniales,2021,provisoire,LF2023,48,False,False,15.2,"15,2",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+otd,Office des terres domaniales,2021,réalisé,LF2024,48,True,False,15.2,"15,2",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+otd,Office des terres domaniales,2022,provisoire,LF2024,48,True,False,7.8,"7,8",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+pct,Pharmacie centrale de Tunisie,2017,réalisé,LF2021,33,True,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+pct,Pharmacie centrale de Tunisie,2018,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+pct,Pharmacie centrale de Tunisie,2018,réalisé,LF2022,50,True,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+pct,Pharmacie centrale de Tunisie,2019,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+pct,Pharmacie centrale de Tunisie,2019,réalisé,LF2022,50,False,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+pct,Pharmacie centrale de Tunisie,2019,réalisé,LF2023,48,True,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+pct,Pharmacie centrale de Tunisie,2020,provisoire,LF2021,33,False,False,5.0,5,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+pct,Pharmacie centrale de Tunisie,2020,provisoire,LF2022,50,False,False,5.0,5,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+pct,Pharmacie centrale de Tunisie,2020,réalisé,LF2023,48,False,False,5.0,"5,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+pct,Pharmacie centrale de Tunisie,2020,réalisé,LF2024,48,True,False,5.0,"5,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+pct,Pharmacie centrale de Tunisie,2021,provisoire,LF2023,48,False,True,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+pct,Pharmacie centrale de Tunisie,2021,réalisé,LF2024,48,True,True,199.0,"199,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+pct,Pharmacie centrale de Tunisie,2022,provisoire,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+poste,Office national des postes,2017,réalisé,LF2021,33,True,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+poste,Office national des postes,2018,réalisé,LF2021,33,False,False,20.0,20,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+poste,Office national des postes,2018,réalisé,LF2022,50,True,False,20.0,20,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+poste,Office national des postes,2019,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+poste,Office national des postes,2019,réalisé,LF2022,50,False,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+poste,Office national des postes,2019,réalisé,LF2023,48,True,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+poste,Office national des postes,2020,provisoire,LF2021,33,False,True,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+poste,Office national des postes,2020,provisoire,LF2022,50,False,True,21.0,21,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+poste,Office national des postes,2020,réalisé,LF2023,48,False,True,21.0,"21,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+poste,Office national des postes,2020,réalisé,LF2024,48,True,True,21.0,"21,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+poste,Office national des postes,2021,provisoire,LF2023,48,False,False,11.0,"11,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+poste,Office national des postes,2021,réalisé,LF2024,48,True,False,11.0,"11,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+poste,Office national des postes,2022,provisoire,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+regie_alcools,Régie des alcools,2019,réalisé,LF2023,48,True,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+regie_alcools,Régie des alcools,2020,réalisé,LF2023,48,False,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+regie_alcools,Régie des alcools,2020,réalisé,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+regie_alcools,Régie des alcools,2021,provisoire,LF2023,48,False,False,3.0,"3,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+regie_alcools,Régie des alcools,2021,réalisé,LF2024,48,True,False,3.0,"3,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+regie_alcools,Régie des alcools,2022,provisoire,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+rnta,Régie nationale des tabacs et des allumettes,2018,réalisé,LF2022,50,True,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+rnta,Régie nationale des tabacs et des allumettes,2019,réalisé,LF2022,50,False,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+rnta,Régie nationale des tabacs et des allumettes,2019,réalisé,LF2023,48,True,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+rnta,Régie nationale des tabacs et des allumettes,2020,provisoire,LF2022,50,False,False,90.0,90,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+rnta,Régie nationale des tabacs et des allumettes,2020,réalisé,LF2023,48,False,False,90.0,"90,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+rnta,Régie nationale des tabacs et des allumettes,2020,réalisé,LF2024,48,True,False,90.0,"90,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+rnta,Régie nationale des tabacs et des allumettes,2021,provisoire,LF2023,48,False,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+rnta,Régie nationale des tabacs et des allumettes,2021,réalisé,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+rnta,Régie nationale des tabacs et des allumettes,2022,provisoire,LF2024,48,True,False,127.9,"127,9",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sncft,Société nationale des chemins de fer tunisiens,2017,réalisé,LF2021,33,True,False,104.56,"104,56",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sncft,Société nationale des chemins de fer tunisiens,2018,réalisé,LF2021,33,False,True,96.16,"96,16",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sncft,Société nationale des chemins de fer tunisiens,2018,réalisé,LF2022,50,True,True,86.636,"86,636",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+sncft,Société nationale des chemins de fer tunisiens,2019,réalisé,LF2021,33,False,False,93.24,"93,24",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sncft,Société nationale des chemins de fer tunisiens,2019,réalisé,LF2022,50,False,False,93.247,"93,247",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+sncft,Société nationale des chemins de fer tunisiens,2019,réalisé,LF2023,48,True,False,93.2,"93,2",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+sncft,Société nationale des chemins de fer tunisiens,2020,provisoire,LF2021,33,False,True,141.2,"141,2",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sncft,Société nationale des chemins de fer tunisiens,2020,provisoire,LF2022,50,False,True,152.924,"152,924",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+sncft,Société nationale des chemins de fer tunisiens,2020,réalisé,LF2023,48,False,True,152.9,"152,9",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+sncft,Société nationale des chemins de fer tunisiens,2020,réalisé,LF2024,48,True,True,152.9,"152,9",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sncft,Société nationale des chemins de fer tunisiens,2021,provisoire,LF2023,48,False,True,139.4,"139,4",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+sncft,Société nationale des chemins de fer tunisiens,2021,réalisé,LF2024,48,True,True,135.4,"135,4",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sncft,Société nationale des chemins de fer tunisiens,2022,provisoire,LF2024,48,True,False,129.8,"129,8",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sncpa,Société nationale de cellulose et de papier alfa,2017,réalisé,LF2021,33,True,False,30.3,"30,3",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sncpa,Société nationale de cellulose et de papier alfa,2018,réalisé,LF2021,33,False,False,31.0,31,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sncpa,Société nationale de cellulose et de papier alfa,2018,réalisé,LF2022,50,True,False,31.0,31,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+sncpa,Société nationale de cellulose et de papier alfa,2019,réalisé,LF2021,33,False,False,35.0,35,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sncpa,Société nationale de cellulose et de papier alfa,2019,réalisé,LF2022,50,False,False,35.0,35,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+sncpa,Société nationale de cellulose et de papier alfa,2019,réalisé,LF2023,48,True,False,35.0,"35,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+sncpa,Société nationale de cellulose et de papier alfa,2020,provisoire,LF2021,33,False,True,7.2,"7,2",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sncpa,Société nationale de cellulose et de papier alfa,2020,provisoire,LF2022,50,False,True,9.2,"9,2",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+sncpa,Société nationale de cellulose et de papier alfa,2020,réalisé,LF2023,48,False,True,9.3,"9,3",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+sncpa,Société nationale de cellulose et de papier alfa,2020,réalisé,LF2024,48,True,True,9.3,"9,3",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sncpa,Société nationale de cellulose et de papier alfa,2021,provisoire,LF2023,48,False,False,24.0,"24,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+sncpa,Société nationale de cellulose et de papier alfa,2021,réalisé,LF2024,48,True,False,24.0,"24,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sncpa,Société nationale de cellulose et de papier alfa,2022,provisoire,LF2024,48,True,False,7.7,"7,7",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sogemt,Société générale d'entreprises de matériel et de travaux,2020,réalisé,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sogemt,Société générale d'entreprises de matériel et de travaux,2021,réalisé,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sogemt,Société générale d'entreprises de matériel et de travaux,2022,provisoire,LF2024,48,True,False,5.0,"5,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2017,réalisé,LF2021,33,True,False,180.7,"180,7",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2018,réalisé,LF2021,33,False,False,156.0,156,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2018,réalisé,LF2022,50,True,False,156.0,156,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2019,réalisé,LF2021,33,False,True,169.6,"169,6",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2019,réalisé,LF2022,50,False,True,169.6,"169,6",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2019,réalisé,LF2023,48,True,True,169.9,"169,9",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2020,provisoire,LF2021,33,False,True,189.3,"189,3",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2020,provisoire,LF2022,50,False,True,193.3,"193,3",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2020,réalisé,LF2023,48,False,True,348.2,"348,2",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2020,réalisé,LF2024,48,True,True,378.8,"378,8",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2021,provisoire,LF2023,48,False,True,244.8,"244,8",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2021,réalisé,LF2024,48,True,True,366.1,"366,1",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+sonede,Société nationale d'exploitation et de distribution des eaux,2022,provisoire,LF2024,48,True,False,369.1,"369,1",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+srt_bizerte,Société régionale de transport de Bizerte,2018,réalisé,LF2022,50,True,False,25.0,25,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+srt_bizerte,Société régionale de transport de Bizerte,2019,réalisé,LF2022,50,False,True,24.0,24,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+srt_bizerte,Société régionale de transport de Bizerte,2019,réalisé,LF2023,48,True,True,25.6,"25,6",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+srt_bizerte,Société régionale de transport de Bizerte,2020,provisoire,LF2022,50,False,True,30.0,30,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+srt_bizerte,Société régionale de transport de Bizerte,2020,réalisé,LF2023,48,False,True,31.8,"31,8",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+srt_bizerte,Société régionale de transport de Bizerte,2020,réalisé,LF2024,48,True,True,31.8,"31,8",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+srt_bizerte,Société régionale de transport de Bizerte,2021,provisoire,LF2023,48,False,False,27.8,"27,8",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+srt_bizerte,Société régionale de transport de Bizerte,2021,réalisé,LF2024,48,True,False,27.8,"27,8",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+srt_bizerte,Société régionale de transport de Bizerte,2022,provisoire,LF2024,48,True,False,31.9,"31,9",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+srt_sfax,Société régionale de transport de Sfax,2018,réalisé,LF2022,50,True,False,48.944,"48,944",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+srt_sfax,Société régionale de transport de Sfax,2019,réalisé,LF2022,50,False,False,48.0,48,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+srt_sfax,Société régionale de transport de Sfax,2019,réalisé,LF2023,48,True,False,48.0,"48,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+srt_sfax,Société régionale de transport de Sfax,2020,provisoire,LF2022,50,False,True,52.7,"52,7",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+srt_sfax,Société régionale de transport de Sfax,2020,réalisé,LF2023,48,False,True,60.2,"60,2",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+srt_sfax,Société régionale de transport de Sfax,2020,réalisé,LF2024,48,True,True,60.2,"60,2",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+srt_sfax,Société régionale de transport de Sfax,2021,provisoire,LF2023,48,False,False,55.7,"55,7",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+srt_sfax,Société régionale de transport de Sfax,2021,réalisé,LF2024,48,True,False,55.7,"55,7",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+srt_sfax,Société régionale de transport de Sfax,2022,provisoire,LF2024,48,True,False,70.1,"70,1",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+steg,Société tunisienne de l'électricité et du gaz,2017,réalisé,LF2021,33,True,False,914.6,"914,6",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+steg,Société tunisienne de l'électricité et du gaz,2018,réalisé,LF2021,33,False,False,1200.0,1200,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+steg,Société tunisienne de l'électricité et du gaz,2018,réalisé,LF2022,50,True,False,1200.0,1200,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+steg,Société tunisienne de l'électricité et du gaz,2019,réalisé,LF2021,33,False,False,1242.0,1242,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+steg,Société tunisienne de l'électricité et du gaz,2019,réalisé,LF2022,50,False,False,1242.0,1242,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+steg,Société tunisienne de l'électricité et du gaz,2019,réalisé,LF2023,48,True,False,1242.0,"1242,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+steg,Société tunisienne de l'électricité et du gaz,2020,provisoire,LF2021,33,False,True,340.0,340,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+steg,Société tunisienne de l'électricité et du gaz,2020,provisoire,LF2022,50,False,True,100.0,100,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+steg,Société tunisienne de l'électricité et du gaz,2020,réalisé,LF2023,48,False,True,100.0,"100,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+steg,Société tunisienne de l'électricité et du gaz,2020,réalisé,LF2024,48,True,True,100.0,"100,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+steg,Société tunisienne de l'électricité et du gaz,2021,provisoire,LF2023,48,False,False,1034.0,"1034,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+steg,Société tunisienne de l'électricité et du gaz,2021,réalisé,LF2024,48,True,False,1034.0,"1034,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+steg,Société tunisienne de l'électricité et du gaz,2022,provisoire,LF2024,48,True,False,3307.0,"3307,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+stir,Société tunisienne des industries de raffinage,2017,réalisé,LF2021,33,True,False,869.4,"869,4",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+stir,Société tunisienne des industries de raffinage,2018,réalisé,LF2021,33,False,True,1500.0,1500,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+stir,Société tunisienne des industries de raffinage,2018,réalisé,LF2022,50,True,True,1846.1,"1846,1",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+stir,Société tunisienne des industries de raffinage,2019,réalisé,LF2021,33,False,True,1296.0,1296,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+stir,Société tunisienne des industries de raffinage,2019,réalisé,LF2022,50,False,True,1296.0,1296,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+stir,Société tunisienne des industries de raffinage,2019,réalisé,LF2023,48,True,True,1905.3,"1905,3",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+stir,Société tunisienne des industries de raffinage,2020,provisoire,LF2021,33,False,True,940.0,940,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+stir,Société tunisienne des industries de raffinage,2020,provisoire,LF2022,50,False,True,594.0,594,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+stir,Société tunisienne des industries de raffinage,2020,réalisé,LF2023,48,False,True,594.0,"594,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+stir,Société tunisienne des industries de raffinage,2020,réalisé,LF2024,48,True,True,594.0,"594,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+stir,Société tunisienne des industries de raffinage,2021,provisoire,LF2023,48,False,True,2697.2,"2697,2",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+stir,Société tunisienne des industries de raffinage,2021,réalisé,LF2024,48,True,True,2293.0,"2293,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+stir,Société tunisienne des industries de raffinage,2022,provisoire,LF2024,48,True,False,4321.0,"4321,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+total,Total imprimé,2017,réalisé,LF2021,33,True,False,4201.2,"4201,2",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+total,Total imprimé,2018,réalisé,LF2021,33,False,True,5270.21,"5270,21",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+total,Total imprimé,2018,réalisé,LF2022,50,True,True,5863.6,"5863,6",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+total,Total imprimé,2019,réalisé,LF2021,33,False,True,5514.21,"5514,21",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+total,Total imprimé,2019,réalisé,LF2022,50,False,True,6198.0,"6198,0",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+total,Total imprimé,2019,réalisé,LF2023,48,True,True,6629.5,"6629,5",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+total,Total imprimé,2020,provisoire,LF2021,33,False,True,2854.23,"2854,23",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+total,Total imprimé,2020,provisoire,LF2022,50,False,True,4808.0,"4808,0",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+total,Total imprimé,2020,réalisé,LF2023,48,False,True,4609.7,"4609,7",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+total,Total imprimé,2020,réalisé,LF2024,48,True,True,6466.4,"6466,4",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+total,Total imprimé,2021,provisoire,LF2023,48,False,True,6085.1,"6085,1",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+total,Total imprimé,2021,réalisé,LF2024,48,True,True,8402.3,"8402,3",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+total,Total imprimé,2022,provisoire,LF2024,48,True,False,14560.6,"14560,6",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+transtu,Société des transports de Tunis,2017,réalisé,LF2021,33,True,False,154.4,"154,4",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+transtu,Société des transports de Tunis,2018,réalisé,LF2021,33,False,False,144.2,"144,2",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+transtu,Société des transports de Tunis,2018,réalisé,LF2022,50,True,False,144.2,"144,2",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+transtu,Société des transports de Tunis,2019,réalisé,LF2021,33,False,True,139.2,"139,2",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+transtu,Société des transports de Tunis,2019,réalisé,LF2022,50,False,True,138.6,"138,6",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+transtu,Société des transports de Tunis,2019,réalisé,LF2023,48,True,True,138.6,"138,6",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+transtu,Société des transports de Tunis,2020,provisoire,LF2021,33,False,True,172.4,"172,4",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+transtu,Société des transports de Tunis,2020,provisoire,LF2022,50,False,True,172.5,"172,5",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+transtu,Société des transports de Tunis,2020,réalisé,LF2023,48,False,True,172.5,"172,5",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+transtu,Société des transports de Tunis,2020,réalisé,LF2024,48,True,True,179.3,"179,3",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+transtu,Société des transports de Tunis,2021,provisoire,LF2023,48,False,True,159.9,"159,9",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+transtu,Société des transports de Tunis,2021,réalisé,LF2024,48,True,True,161.9,"161,9",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+transtu,Société des transports de Tunis,2022,provisoire,LF2024,48,True,False,147.5,"147,5",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+tunisair,Tunisair,2017,réalisé,LF2021,33,True,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+tunisair,Tunisair,2018,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+tunisair,Tunisair,2018,réalisé,LF2022,50,True,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+tunisair,Tunisair,2019,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+tunisair,Tunisair,2019,réalisé,LF2022,50,False,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+tunisair,Tunisair,2019,réalisé,LF2023,48,True,False,0.0,"0,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+tunisair,Tunisair,2020,provisoire,LF2021,33,False,True,8.8,"8,8",tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+tunisair,Tunisair,2020,provisoire,LF2022,50,False,True,35.4,"35,4",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+tunisair,Tunisair,2020,réalisé,LF2023,48,False,True,35.4,"35,4",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+tunisair,Tunisair,2020,réalisé,LF2024,48,True,True,35.4,"35,4",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+tunisair,Tunisair,2021,provisoire,LF2023,48,False,False,41.2,"41,2",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+tunisair,Tunisair,2021,réalisé,LF2024,48,True,False,41.2,"41,2",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+tunisair,Tunisair,2022,provisoire,LF2024,48,True,False,0.0,"0,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2017,réalisé,LF2021,33,True,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2018,réalisé,LF2021,33,False,False,0.0,0,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2018,réalisé,LF2022,50,True,False,0.0,0,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2019,réalisé,LF2021,33,False,False,180.0,180,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2019,réalisé,LF2022,50,False,False,180.0,180,tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2019,réalisé,LF2023,48,True,False,180.0,"180,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2020,provisoire,LF2021,33,False,True,170.0,170,tableau 31,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,149-150,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2020,provisoire,LF2022,50,False,True,163.4,"163,4",tableau 38,data/raw/caisses/minfin/annexe9_2022.pdf,104-105,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2020,réalisé,LF2023,48,False,True,163.4,"163,4",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2020,réalisé,LF2024,48,True,True,163.4,"163,4",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2021,provisoire,LF2023,48,False,True,350.0,"350,0",tableau 40,data/raw/caisses/minfin/rapport_ep_2023.pdf,201-202,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2021,réalisé,LF2024,48,True,True,180.9,"180,9",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
+tunisie_autoroutes,Société Tunisie Autoroutes,2022,provisoire,LF2024,48,True,False,170.0,"170,0",tableau 45,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,155-156,image
