@@ -288,7 +288,7 @@ def _figure_soutien():
     table = d.assign(tracee=["oui" if i in retenu else "non" for i in d.index])[
         ["annee", "etat", "edition", "libelle", "valeur_md", "tracee", "page_pdf"]]
     table.columns = ["Année", "État du chiffre", "Édition du budget", "Ligne",
-                     "Crédit (millions de dinars)", "Lecture tracée", "Page du PDF"]
+                     "Crédit (millions de dinars)", "Lecture tracée", "Page"]
     poste = _poste(range(2012, 2018))
     vues = [(_lab("vue_md"), fig_soutien("md")), (_lab("vue_part"), fig_soutien("part"))]
     return (vues, table.reset_index(drop=True),
@@ -366,7 +366,7 @@ def _figure_interventions():
     table["derniere_edition"] = table["derniere_edition"].astype(str).str.lower().map(
         {"true": "oui", "false": "non"})
     table.columns = ["Année", "État du chiffre", "Édition du rapport", "Lecture tracée",
-                     "Entité", "Interventions (millions de dinars)", "Page du PDF"]
+                     "Entité", "Interventions (millions de dinars)", "Page"]
     poste = _poste(range(2016, 2025))
     return ([(None, fig_interventions())], table.reset_index(drop=True),
             {TRANSFERTS: None, PARTS: [s for _, s in poste.values()]},
@@ -691,7 +691,7 @@ def _figure_trafic():
     table = d[["annee", "indicateur", "valeur", "source_declaree", "page_pdf"]].copy()
     table["indicateur"] = table["indicateur"].map(noms)
     table.columns = ["Année", "Catégorie de voyageurs", "Millions de voyageurs",
-                     "Source déclarée par la Banque mondiale", "Page du PDF"]
+                     "Source déclarée par la Banque mondiale", "Page"]
     vues = [(_lab("vue_millions"), fig_trafic("millions")),
             (_lab("vue_part"), fig_trafic("part"))]
     return vues, table.reset_index(drop=True), {LIVRE_BLANC: None}, \
@@ -769,7 +769,7 @@ def _figure_abonnements_nombre():
         lambda s: "édition 2017" if "2017" in str(s) and "2013" not in str(s)
         else "éditions 2013 à 2016")
     table.columns = ["Année", "État du chiffre", "Édition du budget", "Segment", "Ligne",
-                     "Abonnements scolaires", "Lecture tracée", "Page du PDF"]
+                     "Abonnements scolaires", "Lecture tracée", "Page"]
     return ([(None, fig_abonnements_nombre())], table.reset_index(drop=True),
             {ABONNEMENTS: None}, "fig_compensation_transport_abonnements_nombre")
 
