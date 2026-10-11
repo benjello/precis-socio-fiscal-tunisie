@@ -2251,14 +2251,16 @@ Plans : `finances-locales-impots-plan-architecte.md`,
 
 - **Frises de tête** : faites dans aucun chapitre ; un `TODO (rédacteur)` les attend aux
   chapitres 3, 6, 7 et 8, le tableau des réformes en tient lieu.
-- **Tableaux encore faits main**, faute de paramètres datés et sourcés en amont : pénalité de
-  retard et contribution au fonds de l'habitat au chapitre 6 ; forfaits qui comprennent la taxe
-  sur les établissements au chapitre 7 ; tarifs des taxes et redevances au chapitre 8 ; seuils
-  de l'approbation au chapitre 5 ; parts et critères du fonds et des subventions au chapitre 9.
-  Sont engendrés (11 octobre 2026) : les trois barèmes des taxes sur les immeubles, et, pour la
-  taxe sur les établissements, le minimum, le maximum et les taux par assiette. Le tableau de
-  la taxe hôtelière (deux lignes) reste fait main, ses valeurs étant versées : la forme commune
-  ne rend pas ses deux lignes de registre.
+- **Tableaux encore faits main** : contribution au fonds de l'habitat et dégrèvements au
+  chapitre 6, forfaits qui comprennent la taxe sur les établissements au chapitre 7 — la base
+  de paramètres n'en porte qu'une ligne chacun, leur `TODO (rédacteur)` dit laquelle — ;
+  tarifs des taxes et redevances diverses fixés par décret au chapitre 8, non transcrits ;
+  seuils de l'approbation au chapitre 5 ; parts et critères du fonds et des subventions au
+  chapitre 9. Sont engendrés (11 octobre 2026) : les trois barèmes des taxes sur les
+  immeubles et la pénalité de retard ; pour la taxe sur les établissements, le minimum, le
+  maximum et les taux par assiette ; les taux et tarifs des chapitres V à VII du code et les
+  deux barèmes des parkings. Le tableau de la taxe hôtelière (deux lignes) reste fait main,
+  ses valeurs étant versées : la forme commune ne rend pas ses deux lignes de registre.
 - **Figure des barèmes des taxes sur les immeubles**, en dinars courants et en dinars de 2025 :
   devenue faisable (séries complètes de 1997 à 2017), non faite.
 - **Approbation des délibérations communales, 1975-2018** (lecture du 10 octobre 2026,
@@ -2651,9 +2653,15 @@ taux selon les services (`tbl-fl-tib-taux`), le prix de référence du mètre ca
 (`tbl-fl-tib-prix-reference`) et le tarif des terrains non bâtis (`tbl-fl-tnb-tarif`) viennent
 de `scripts/generate_finances_locales_tables.py`, avec leur onglet « Base législative » ; les
 valeurs et les dates d'effet faites main concordaient toutes (37 valeurs). Les registres repliés
-des décrets restent écrits dans le chapitre. Restent faits main, faute de paramètres : la
-pénalité de retard (`tbl-fl-penalite-retard`) et la contribution au fonds de l'habitat
-(`tbl-fl-immeubles-fnah`). **Figures des deux barèmes faites le 10 octobre 2026** : `fig-fl-tib-prix-reference` (quatre
+des décrets restent écrits dans le chapitre. **Pénalité de retard engendrée le 11 octobre
+2026** : `tbl-fl-penalite-retard` (taux mensuel et plafond du total, cinq dates ; valeurs
+faites main identiques) et `fig-fl-penalite-retard` (le taux, en escalier, sans déflateur),
+série `fl-tib-penalite-retard` ; le changement de point de départ de 2007, que portait une
+colonne du tableau fait main, est passé dans un point de la section et au registre ; page de
+l'art. 59 § 7 de la loi de finances pour 2023 portée au registre (édition arabe, p. 4076).
+Restent faits main, avec leur motif en `TODO (rédacteur)` : la contribution au fonds de
+l'habitat (`tbl-fl-immeubles-fnah`, seul le 4 % de 2005 est versé) et les deux dégrèvements
+(`tbl-fl-immeubles-degrevement`, seul le dégrèvement partiel a un taux). **Figures des deux barèmes faites le 10 octobre 2026** : `fig-fl-tib-prix-reference` (quatre
 panneaux à axe partagé, un par catégorie) et `fig-fl-tnb-tarif` (un panneau, axe
 logarithmique), chacune en dinars courants et en dinars de 2025, placées après leur tableau ;
 séries `fl-tib-prix-reference` et `fl-tnb-tarif` émises au cache par le même générateur, module
@@ -2699,9 +2707,20 @@ prix homologués, redevables taxés sur leur impôt, maximum et sa suppression) 
 depuis 2013, et série du montant écrêté, **à obtenir** ; amnisties de 2012, 2019, 2024 et 2025
 (objet, années, conditions), loi n° 2006-25, décret-loi n° 2006-1, arrêté de calendrier de
 2026 ; pages françaises des art. 37 (LF 2016), 42 (LF 2019), 52 et 57 (LF 2023), 67 et 69
-(LF 2024) ; LF 1993, art. 39, non lu (rédaction initiale, nom du fonds et part de la taxe
-hôtelière avant 1997), et décrets des zones municipales touristiques ; art. 7 initial du
-décret-loi n° 2020-33. **Mis à jour le 11 octobre 2026** : les tableaux du minimum, du maximum
+(LF 2024) ; LF 1993, art. 38 et 39 : date d'effet non établie, édition arabe non relue
+(édition française lue à l'image, p. 1670, fascicule **dans le corpus** sans couche texte),
+et décrets des zones touristiques municipales (décret n° 94-822 et compléments), non lus ;
+décret-loi n° 2020-33 (auto-entrepreneur) : date d'effet et pages à relever, sans clé
+bibliographique ; LF 2023, art. 54 § 2 et 3, lus sur la couche texte de l'édition arabe
+(p. 4073), **à relire à l'image**. **Corrigé le 11 octobre 2026, d'après les textes lus** :
+la part de 50 % affectée au Fonds de protection des zones touristiques ne porte que sur la
+taxe hôtelière des hôtels des zones touristiques municipales, et le fonds est ouvert par la
+loi de finances pour 1993 (art. 38 et 39, ligne de registre `r-fl-act-hoteliere-fonds-1993`,
+clé `lf-1993` versée au livre dans les deux langues), celle de 1997 ne récrivant que le
+début du tiret ; l'auto-entrepreneur est dispensé de la taxe de 2020 à 2022, la loi de
+finances pour 2023 abrogeant cette dispense (art. 54 § 2) et la contribution unique de 2019
+(art. 54 § 3) — `tbl-fl-tcl-forfaits` donne désormais la période de chaque régime, et reste
+fait main (seule la part de 20 % est versée). **Mis à jour le 11 octobre 2026** : les tableaux du minimum, du maximum
 et des taux sont engendrés (48 + 4 + 6 valeurs comparées aux tableaux faits main, aucun
 écart), avec deux figures en escalier (`fig-fl-tcl-minimum`, `fig-fl-tcl-maximum`) ; l'unité
 du maximum est établie — le code dit « un maximum qui sera fixé par décret », le décret
@@ -2733,10 +2752,23 @@ lire à l'image). **Lacunes**, lisibles dans le corpus sauf mention :
   sur les seuls art. 8 à 10) ; décrets n° 76-826, n° 95-1121 et n° 58-234, connus par leur seul
   intitulé ; la case « Contrôle » de 2016 reprend l'exception des déchets non ménagers
   (art. 93 du code, sans modificatif au registre du chapitre) : **à confirmer** ;
-- loi n° 2002-76, art. 3 (réduction de moitié pour les cas sociaux après le 1er août 2002) ;
-  barème des parkings de la LF 2003, art. 79, à transcrire ; arrêtés du 4 mars 1997 et du
-  30 mai 2003 ; antécédents abrogés en 1997 (décrets de 1887 à 1956, **à obtenir** ; loi
-  n° 71-41) ;
+- arrêtés du 4 mars 1997 et du 30 mai 2003 (listes de communes des parkings) ; barème des
+  parkings de 2003 dans l'édition arabe (JORT n° 102 de 2002, p. 3510) : deux premiers cas
+  lus sur une océrisation, **à relire à l'image** ; antécédents abrogés en 1997 (décrets de
+  1887 à 1956, **à obtenir** ; loi n° 71-41) ;
+- **engendrés le 11 octobre 2026** : `tbl-fl-taxes-baremes` (chapitres V à VII, en long, chaque
+  grandeur avec sa période ; 10 valeurs identiques à celles du tableau fait main),
+  `tbl-fl-parkings-1997` et `tbl-fl-parkings-2003` (neuf montants, dont 565 D), et
+  `fig-fl-parkings` (communes de plus de 100 000 habitants, dinars courants et dinars de
+  2025 ; nombres du texte écrits à la main d'après `baremes.reperes_parkings()`, à relire si
+  l'indice de 2025 est révisé). **Corrigé** : la réduction de moitié de la contribution des
+  riverains cesse au 1er août 2002, remplacée par un dégrèvement total (tableau, section,
+  registres, `tbl-fl-qui-fixe`) ; libellés arabes de ces tableaux et des deux figures composés,
+  l'édition arabe des articles n'étant pas relue : **à confronter** ;
+- les notes de lecture de `fig-fl-parkings` et de `fig-fl-penalite-retard` (ch. 6) prolongent le
+  dernier palier jusqu'en 2026, « aucun texte postérieur n'étant identifié », sans fiche de
+  `docs/recherches.yml` : **à ouvrir** (modificatifs de l'art. 90 du code depuis 2003 ; de
+  l'art. 19 § I depuis 2023), comme pour les barèmes des taxes sur les immeubles ;
 - qui arrête un tarif communal depuis le décret-loi n° 2023-9 : non établi ; délibérations
   tarifaires de 2019 à 2023 au *Journal officiel des collectivités locales*, **hors corpus**.
 

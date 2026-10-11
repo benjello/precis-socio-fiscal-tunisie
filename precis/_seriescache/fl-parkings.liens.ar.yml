@@ -1,0 +1,47 @@
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 1997 — أكثر من 20 000 ساكن دون أن يتجاوز
+    50 000
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_1997/population_20000_a_50000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_1997.population_20000_a_50000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 1997 — أكثر من 50 000 ساكن دون أن يتجاوز
+    100 000
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_1997/population_50000_a_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_1997.population_50000_a_100000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 1997 — أكثر من 100 000 ساكن
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_1997/population_plus_de_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_1997.population_plus_de_100000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 2003 — نقص لا يتجاوز 25 %، لا يتجاوز
+    50 000 ساكن
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_jusqu_a_25/population_jusqu_a_50000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_jusqu_a_25.population_jusqu_a_50000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 2003 — نقص لا يتجاوز 25 %، أكثر من
+    50 000 ساكن دون أن يتجاوز 100 000
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_jusqu_a_25/population_50000_a_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_jusqu_a_25.population_50000_a_100000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 2003 — نقص لا يتجاوز 25 %، أكثر من
+    100 000 ساكن
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_jusqu_a_25/population_plus_de_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_jusqu_a_25.population_plus_de_100000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 2003 — نقص من 25 إلى 75 %، لا يتجاوز
+    50 000 ساكن
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_25_a_75/population_jusqu_a_50000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_25_a_75.population_jusqu_a_50000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 2003 — نقص من 25 إلى 75 %، أكثر من
+    50 000 ساكن دون أن يتجاوز 100 000
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_25_a_75/population_50000_a_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_25_a_75.population_50000_a_100000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 2003 — نقص من 25 إلى 75 %، أكثر من
+    100 000 ساكن
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_25_a_75/population_plus_de_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_25_a_75.population_plus_de_100000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 2003 — نقص يفوق 75 %، لا يتجاوز 50
+    000 ساكن
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_plus_de_75/population_jusqu_a_50000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_plus_de_75.population_jusqu_a_50000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 2003 — نقص يفوق 75 %، أكثر من 50 000
+    ساكن دون أن يتجاوز 100 000
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_plus_de_75/population_50000_a_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_plus_de_75.population_50000_a_100000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 2003 — نقص يفوق 75 %، أكثر من 100 000
+    ساكن
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_plus_de_75/population_plus_de_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_plus_de_75.population_plus_de_100000/table/

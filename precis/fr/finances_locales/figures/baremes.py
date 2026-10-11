@@ -1,14 +1,19 @@
-"""Figures des barèmes en dinars des impôts locaux — les deux taxes sur les immeubles
-(chapitre « Les impôts sur les immeubles ») et la taxe sur les établissements (chapitre « Les
-impôts sur l'activité ») —, chacune en deux vues : dinars courants, dinars constants.
+"""Figures des barèmes des impôts locaux — les deux taxes sur les immeubles (chapitre « Les
+impôts sur les immeubles »), la taxe sur les établissements (chapitre « Les impôts sur
+l'activité ») et la contribution aux parkings collectifs (chapitre « Taxes, redevances et
+autonomie fiscale ») —, chacune en deux vues : dinars courants, dinars constants ; et le taux
+de la pénalité de retard des taxes sur les immeubles, en une vue : un taux n'a pas de
+déflateur.
 
     from figures import baremes
     baremes.figure_prix_reference()   # fig-fl-tib-prix-reference
     baremes.figure_tarif()            # fig-fl-tnb-tarif
     baremes.figure_minimum_tcl()      # fig-fl-tcl-minimum
     baremes.figure_maximum_tcl()      # fig-fl-tcl-maximum
+    baremes.figure_penalite()         # fig-fl-penalite-retard
+    baremes.figure_parkings()         # fig-fl-parkings
 
-D'OÙ VIENNENT LES DONNÉES. Quatre séries longues de `precis/_seriescache/`, lues par
+D'OÙ VIENNENT LES DONNÉES. Six séries longues de `precis/_seriescache/`, lues par
 `figtools.series()` — une ligne par grandeur et par date d'effet, avec le texte et son lien
 au Journal officiel —, émises hors du build par `scripts/generate_finances_locales_tables.py` :
 
@@ -19,7 +24,12 @@ au Journal officiel —, émises hors du build par `scripts/generate_finances_lo
     établissements, seize grandeurs (quatre catégories d'immeuble, quatre taux de la taxe
     sur les immeubles bâtis) ;
   - `fl-tcl-maximum` : maximum de la taxe sur les établissements, close par une valeur vide
-    à la date de sa suppression.
+    à la date de sa suppression ;
+  - `fl-tib-penalite-retard` : taux mensuel de la pénalité de retard de la taxe sur les
+    immeubles bâtis ;
+  - `fl-parkings` : contribution aux parkings collectifs par place, douze grandeurs — les
+    trois tranches de population du barème de 1997, closes au 1er janvier 2003, et les neuf
+    cases du barème de 2003 (trois parts de places manquantes, trois tranches de population).
 
 L'indice des prix et l'année des dinars constants sont ceux du précis
 (`scripts/dinars_constants.py`).
@@ -49,6 +59,14 @@ mouvement : la figure n'en trace que quatre, les quatre catégories d'immeuble a
 chapitre. Le maximum n'a qu'une grandeur ; son dernier palier s'arrête à la date de sa
 suppression, marquée d'une croix, et n'est pas prolongé.
 
+La pénalité de retard et la contribution aux parkings sont tracées par le composant commun
+`figtools.figure_escalier`. La contribution a douze grandeurs : la figure n'en trace que
+quatre, celles des communes de plus de 100 000 habitants (`PARKINGS_TRACES`) — la tranche
+la plus élevée, dont les bornes sont les mêmes dans les deux barèmes —, soit le
+montant de 1997 et les trois montants de 2003. Les deux barèmes sont deux courbes distinctes :
+celle de 1997 s'arrête à son remplacement, aucune n'est raccordée à l'autre. Les huit autres
+montants sont aux tableaux du chapitre.
+
 LES PHRASES DE LECTURE (`lecture_prix`, `lecture_tarif`, `lecture_minimum_tcl`,
 `lecture_maximum_tcl`) sont calculées sur les points que
 les figures tracent ; `reperes()` rend les mêmes nombres pour qui veut les relire.
@@ -73,6 +91,14 @@ SERIE_PRIX = "fl-tib-prix-reference"
 SERIE_TARIF = "fl-tnb-tarif"
 SERIE_MINIMUM = "fl-tcl-minimum"
 SERIE_MAXIMUM = "fl-tcl-maximum"
+SERIE_PENALITE = "fl-tib-penalite-retard"
+SERIE_PARKINGS = "fl-parkings"
+# Les quatre grandeurs tracées de la contribution aux parkings : communes de plus de
+# 100 000 habitants, barème de 1997 puis les trois cas du barème de 2003.
+PARKINGS_TRACES = (("bareme_1997_population_plus_de_100000", "parkings_1997"),
+                   ("bareme_2003_manque_jusqu_a_25_population_plus_de_100000", "parkings_25"),
+                   ("bareme_2003_manque_25_a_75_population_plus_de_100000", "parkings_75"),
+                   ("bareme_2003_manque_plus_de_75_population_plus_de_100000", "parkings_100"))
 TAUX_TRACE = 8  # taux de la taxe sur les immeubles bâtis dont la figure du minimum trace les montants
 FIN = 2026  # dernière année tracée en dinars courants : les barèmes de 2017 valent encore
 BASE = dinars_constants.ANNEE_BASE
@@ -138,6 +164,67 @@ MOTS = {
         "reserve_maximum": ("aucun maximum n'est fixé du 1er janvier au 12 mars 1997 ; les "
                             "plafonds antérieurs à 1997, fixés en application de la loi de "
                             "1975, ne sont pas dans la série"),
+        "penalite_courbe": "Taux de la pénalité de retard",
+        "penalite_axe": "Taux de la pénalité de retard (% par mois ou fraction de mois)",
+        "titre_penalite": ("Taxe sur les immeubles bâtis : taux mensuel de la pénalité de "
+                           "retard, à chaque date d'effet, 1997-2023"),
+        "unite_penalite": "part de la taxe due, par mois ou fraction de mois de retard",
+        "perimetre_penalite": ("le code de la fiscalité locale, art. 19 § I, et les trois lois "
+                               "de finances qui en changent le taux, à leur date d'effet "
+                               "(1er janvier 1997, 2002, 2007 et 2023) ; la pénalité vaut aussi "
+                               "pour la taxe sur les terrains non bâtis"),
+        "reserve_penalite": ("le plafond du total des pénalités au principal, depuis le "
+                             "1er janvier 2022, n'est pas un taux et n'est pas dans la série ; "
+                             "la portée, pour une taxe recouvrée par voie de rôle, de la "
+                             "réserve dont le texte de 2023 assortit son relèvement n'est pas "
+                             "établie ; aucun texte postérieur n'étant identifié, le palier de "
+                             "2023 est prolongé jusqu'en {fin}"),
+        "lecture_penalite": (
+            "Chaque trait pointillé marque une date d'effet, toutes au 1^er^ janvier : 1997 "
+            "pour le code, 2002, 2007 et 2023 pour les trois lois de finances qui changent le "
+            "taux. Une valeur vaut de sa date d'effet à la veille de la suivante ; le palier "
+            "de 2023 est prolongé jusqu'en {fin}, aucun texte postérieur n'étant identifié. Le "
+            "taux s'applique, par mois ou fraction de mois de retard, à la taxe restée "
+            "impayée. La figure ne montre pas le plafond de 2022, qui limite le total des "
+            "pénalités au principal sans changer le taux."),
+        "parkings_1997": "Barème de 1997",
+        "parkings_25": "Barème de 2003 : manque d'au plus 25 % des places requises",
+        "parkings_75": "Barème de 2003 : manque de plus de 25 % et d'au plus 75 %",
+        "parkings_100": "Barème de 2003 : manque de plus de 75 % et de moins de 100 %",
+        "parkings_axe": "Contribution par place de stationnement (dinars)",
+        "parkings_axe_constant": "Contribution par place de stationnement (dinars de {base})",
+        "parkings_grandeur": "Contribution par place, commune de plus de 100 000 habitants",
+        "courant_place_long": "dinars courants par place", "constant_place": "dinars de {base} par place",
+        "remplace": "remplacé",
+        "titre_parkings": ("Contribution à la réalisation de parkings collectifs : montant par "
+                           "place de stationnement fixé par la loi, selon la population de la "
+                           "commune et, depuis 2003, la part des places manquantes, 1997-2003"),
+        "unite_parkings": "dinars courants par place de stationnement",
+        "perimetre_parkings": ("le code de la fiscalité locale, art. 90, dans sa rédaction de "
+                               "1997 (trois tranches de population, du 1er janvier 1997 au "
+                               "31 décembre 2002) et dans celle de la loi de finances pour 2003 "
+                               "(trois parts de places manquantes, trois tranches de "
+                               "population, depuis le 1er janvier 2003)"),
+        "reserve_parkings": ("le montant est doublé dans les cas que fixe l'article, qui ne sont "
+                             "pas dans la série ; aucune modification de l'article n'étant "
+                             "identifiée depuis 2003, le barème de 2003 est prolongé jusqu'en "
+                             "{fin} ; les deux barèmes n'ont pas la même première tranche de "
+                             "population (plus de 20 000 habitants en 1997, sans plancher en "
+                             "2003)"),
+        "lecture_parkings": (
+            "Les quatre courbes sont les montants dus par place, dans une commune de plus de "
+            "100 000 habitants, tranche dont les bornes sont les mêmes dans les deux barèmes : celui de "
+            "1997, qui ne dépend que de la population et s'arrête à son remplacement, le "
+            "1^er^ janvier 2003 (cercle creux) ; les trois montants du barème de 2003, selon la "
+            "part des places manquantes. Les montants des deux autres tranches de population "
+            "sont aux tableaux. En dinars courants, une valeur vaut de sa date d'effet à la "
+            "veille de la suivante, et le barème de 2003 est prolongé jusqu'en {fin}, aucun "
+            "texte postérieur n'étant identifié. En dinars de {base}, chaque point est la "
+            "moyenne des montants en vigueur au premier jour de chacun des douze mois de "
+            "l'année, multipliée par l'indice des prix à la consommation de {base} et divisée "
+            "par celui de l'année. En dinars de {base} par place, le montant de 1997 vaut "
+            "{a97} en 1997 et {a02} en 2002 ; le plus bas des montants de 2003 vaut {b03} en "
+            "2003 et {bfin} en {base}, le plus élevé {c03} en 2003 et {cfin} en {base}."),
     },
     "ar": {
         "cat_1": "الصنف 1: إلى 100 م²", "cat_2": "الصنف 2: من 100 إلى 200 م²",
@@ -190,6 +277,59 @@ MOTS = {
                               "الحد الأقصى ابتداء من 1 جانفي 2012"),
         "reserve_maximum": ("لم يُضبط أيّ حد أقصى من 1 جانفي إلى 12 مارس 1997؛ والحدود القصوى "
                             "السابقة لسنة 1997، المضبوطة تطبيقًا لقانون 1975، ليست في السلسلة"),
+        "penalite_courbe": "نسبة خطية التأخير",
+        "penalite_axe": "نسبة خطية التأخير (% عن كل شهر أو جزء من الشهر)",
+        "titre_penalite": ("المعلوم على العقارات المبنية: النسبة الشهرية لخطية التأخير، في "
+                           "كلّ تاريخ نفاذ، 1997-2023"),
+        "unite_penalite": "حصة من المعلوم المستوجب، عن كل شهر تأخير أو جزء منه",
+        "perimetre_penalite": ("مجلة الجباية المحلية، الفصل 19، الفقرة I، وقوانين المالية "
+                               "الثلاثة التي تغيّر النسبة، في تاريخ نفاذها (1 جانفي 1997 و2002 "
+                               "و2007 و2023)؛ وتنطبق الخطية أيضًا على المعلوم على الأراضي غير "
+                               "المبنية"),
+        "reserve_penalite": ("الحد الأقصى لمجموع الخطايا بأصل الدين، منذ 1 جانفي 2022، ليس "
+                             "نسبة وليس في السلسلة؛ ولم يُحدَّد مدى انطباق التحفّظ المقترن "
+                             "بترفيع 2023 على معلوم يُستخلص بجدول تحصيل؛ ولم يُحدَّد أيّ نصّ "
+                             "لاحق، فتُمدَّد درجة 2023 إلى سنة {fin}"),
+        "lecture_penalite": (
+            "كلّ خطّ منقّط يبيّن تاريخ نفاذ، وكلّها في غرّة جانفي: 1997 للمجلة، و2002 و2007 "
+            "و2023 لقوانين المالية الثلاثة التي تغيّر النسبة. تسري القيمة من تاريخ نفاذها إلى "
+            "اليوم السابق لتاريخ نفاذ القيمة الموالية؛ وتُمدَّد درجة 2023 إلى سنة {fin} لعدم "
+            "تحديد أيّ نصّ لاحق. تُطبَّق النسبة، عن كل شهر تأخير أو جزء منه، على المعلوم غير "
+            "المدفوع. ولا يبيّن الرسم الحد الأقصى لسنة 2022، الذي يحدّ مجموع الخطايا بأصل "
+            "الدين دون تغيير النسبة."),
+        "parkings_1997": "جدول 1997",
+        "parkings_25": "جدول 2003: نقص لا يتجاوز 25 % من الأماكن المطلوبة",
+        "parkings_75": "جدول 2003: نقص يفوق 25 % دون أن يتجاوز 75 %",
+        "parkings_100": "جدول 2003: نقص يفوق 75 % وأقل من 100 %",
+        "parkings_axe": "المساهمة عن كل مكان وقوف (دينار)",
+        "parkings_axe_constant": "المساهمة عن كل مكان وقوف (دينار سنة {base})",
+        "parkings_grandeur": "المساهمة عن كل مكان، بلدية يفوق عدد سكانها 100 000 ساكن",
+        "courant_place_long": "دينار جارٍ عن كل مكان", "constant_place": "دينار سنة {base} عن كل مكان",
+        "remplace": "عُوّض",
+        "titre_parkings": ("المساهمة في إنجاز مآوي جماعية لوسائل النقل: المبلغ عن كل مكان "
+                           "وقوف المضبوط بالقانون، حسب عدد سكان البلدية، ومنذ 2003 حسب نسبة "
+                           "الأماكن الناقصة، 1997-2003"),
+        "unite_parkings": "دينار جارٍ عن كل مكان وقوف",
+        "perimetre_parkings": ("مجلة الجباية المحلية، الفصل 90، في صيغته لسنة 1997 (ثلاث شرائح "
+                               "من عدد السكان، من 1 جانفي 1997 إلى 31 ديسمبر 2002) وفي صيغة "
+                               "قانون المالية لسنة 2003 (ثلاث نسب للأماكن الناقصة وثلاث شرائح "
+                               "من عدد السكان، منذ 1 جانفي 2003)"),
+        "reserve_parkings": ("يُضاعَف المبلغ في الحالات التي يضبطها الفصل، وهي ليست في "
+                             "السلسلة؛ ولم يُحدَّد أيّ تنقيح للفصل منذ 2003، فيُمدَّد جدول 2003 "
+                             "إلى سنة {fin}؛ والشريحة الأولى من عدد السكان تختلف بين الجدولين "
+                             "(أكثر من 20 000 ساكن سنة 1997، دون حدّ أدنى سنة 2003)"),
+        "lecture_parkings": (
+            "المنحنيات الأربعة هي المبالغ المستوجبة عن كل مكان، في بلدية يفوق عدد سكانها "
+            "100 000 ساكن، وهي شريحة حدودها واحدة في الجدولين: مبلغ جدول 1997، الذي لا "
+            "يتوقّف إلّا على عدد السكان وينتهي عند تعويضه في 1 جانفي 2003 (دائرة مفرغة)؛ "
+            "والمبالغ الثلاثة لجدول 2003 حسب نسبة الأماكن الناقصة. ومبالغ الشريحتين الأخريين "
+            "في الجداول. بالدينار الجاري، تسري القيمة من تاريخ نفاذها إلى اليوم السابق لتاريخ "
+            "نفاذ القيمة الموالية، ويُمدَّد جدول 2003 إلى سنة {fin} لعدم تحديد أيّ نصّ لاحق. "
+            "بدينار سنة {base}، كلّ نقطة هي معدّل المبالغ الجاري بها العمل في اليوم الأوّل من "
+            "كلّ شهر من أشهر السنة الاثني عشر، مضروبًا في الرقم القياسي لأسعار الاستهلاك لسنة "
+            "{base} ومقسومًا على رقم السنة. بدينار سنة {base} عن كل مكان، يبلغ مبلغ 1997 "
+            "{a97} سنة 1997 و{a02} سنة 2002؛ ويبلغ أدنى مبالغ 2003 {b03} سنة 2003 و{bfin} سنة "
+            "{base}، وأعلاها {c03} سنة 2003 و{cfin} سنة {base}."),
     },
 }
 
@@ -226,6 +366,19 @@ for _serie, _sources, _genre, _unite, _reserve in (
         caveats_ar=MOTS["ar"][_reserve].format(fin=FIN))
 
 
+for _serie, _sources, _genre in (
+        (SERIE_PENALITE, ["loi97-11", "loi2001-123-lf2002", "lf-2007", "lf-2023"], "penalite"),
+        (SERIE_PARKINGS, ["loi97-11", "lf-2003"], "parkings")):
+    figtools.register_provenance(
+        _serie, sources=_sources,
+        titre=MOTS["fr"][f"titre_{_genre}"], titre_ar=MOTS["ar"][f"titre_{_genre}"],
+        unite=MOTS["fr"][f"unite_{_genre}"], unite_ar=MOTS["ar"][f"unite_{_genre}"],
+        perimetre=MOTS["fr"][f"perimetre_{_genre}"],
+        perimetre_ar=MOTS["ar"][f"perimetre_{_genre}"],
+        caveats=MOTS["fr"][f"reserve_{_genre}"].format(fin=FIN),
+        caveats_ar=MOTS["ar"][f"reserve_{_genre}"].format(fin=FIN))
+
+
 # --- les grandeurs ---------------------------------------------------------------------
 
 def courbes_prix() -> dict:
@@ -247,6 +400,16 @@ def courbes_minimum() -> dict:
 
 def courbes_maximum() -> dict:
     return {"maximum": (_m("maximum_court"), BLEU)}
+
+
+def courbes_penalite() -> dict:
+    return {"taux_mensuel": (_m("penalite_courbe"), BLEU)}
+
+
+def courbes_parkings() -> dict:
+    """Les quatre grandeurs tracées, communes de plus de 100 000 habitants (`PARKINGS_TRACES`)."""
+    return {cle: (_m(mot), couleur)
+            for (cle, mot), couleur in zip(PARKINGS_TRACES, (GRIS, BLEU, VERT, ORANGE))}
 
 
 def _nombre(valeur: float, decimales: int) -> str:
@@ -713,3 +876,53 @@ def figure_maximum_tcl(caption: str) -> None:
     _figure(SERIE_MAXIMUM, courbes_maximum(), _vues_maximum(), "maximum_tcl",
             "fig_fl_tcl_maximum", caption, lecture_maximum_tcl(), 1,
             unites=("courant_an_long", "constant_an"))
+
+
+# --- la pénalité de retard et la contribution aux parkings ---------------------------------
+
+def figure_penalite(caption: str) -> None:
+    """`fig-fl-penalite-retard` : le taux mensuel, en escalier ; un taux n'a pas de déflateur.
+
+    Le tracé est celui du composant commun (`figtools.fig_escalier`) ; seules les
+    graduations de l'axe vertical sont reprises ici, pour la virgule décimale.
+    """
+    virgule = lambda v: f"{v:g}".replace(".", ",")  # noqa: E731
+    courbes = courbes_penalite()
+    fig = figtools.fig_escalier(
+        SERIE_PENALITE, courbes, fin=FIN, echelle=100, ylim=(0, 1.5),
+        ylabel=_m("penalite_axe"), format_valeur=lambda v: virgule(v) + " %")
+    fig.axes[0].yaxis.set_major_formatter(FuncFormatter(lambda y, _p: virgule(y)))
+    figtools.figure_tabs(
+        fig, figtools.table_escalier(SERIE_PENALITE, courbes, echelle=100), SERIE_PENALITE,
+        slug="fig_fl_penalite_retard", caption=caption,
+        note_lecture=_m("lecture_penalite", fin=FIN), nominal=False)
+
+
+def reperes_parkings() -> dict:
+    """{clé: {année: dinars de l'année de base par place}}, sur les quatre courbes tracées."""
+    return _constants(SERIE_PARKINGS, courbes_parkings())
+
+
+def lecture_parkings() -> str:
+    r = reperes_parkings()
+    (c97, _), (c25, _), _milieu, (c100, _) = PARKINGS_TRACES
+    n = lambda cle, annee: _nombre(r[cle][annee], 0)  # noqa: E731
+    return _m("lecture_parkings", base=BASE, fin=FIN, a97=n(c97, 1997), a02=n(c97, 2002),
+              b03=n(c25, 2003), bfin=n(c25, BASE), c03=n(c100, 2003), cfin=n(c100, BASE))
+
+
+def figure_parkings(caption: str) -> None:
+    """`fig-fl-parkings` : dinars courants en escalier, dinars constants par année."""
+    figtools.figure_escalier(
+        SERIE_PARKINGS, courbes_parkings(), slug="fig_fl_parkings", caption=caption, fin=FIN,
+        constants=True, base=BASE, ipc=dinars_constants.ipc(),
+        series_ipc=dinars_constants.SERIES_IPC, ylabel=_m("parkings_axe"),
+        ylabel_constants=_m("parkings_axe_constant", base=BASE), ncol=2,
+        format_valeur=lambda v: _nombre(v, 0), supprime=_m("remplace"),
+        libelles={"parametre": _m("grandeur"),
+                  "moyenne": _m("moyenne_an", grandeur=_m("parkings_grandeur"),
+                                unite=_m("courant_place_long")),
+                  "ipc": _m("ipc"),
+                  "reel": _m("reel", grandeur=_m("parkings_grandeur"),
+                             unite=_m("constant_place", base=BASE))},
+        decimales_constants=0, note_lecture=lecture_parkings())

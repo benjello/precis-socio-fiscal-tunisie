@@ -1,0 +1,36 @@
+- libelle: Contribution aux parkings collectifs, barème de 2003 — manque d'au plus
+    25 %, au plus 50 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_jusqu_a_25/population_jusqu_a_50000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_jusqu_a_25.population_jusqu_a_50000/table/
+- libelle: Contribution aux parkings collectifs, barème de 2003 — manque de 25 à 75
+    %, au plus 50 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_25_a_75/population_jusqu_a_50000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_25_a_75.population_jusqu_a_50000/table/
+- libelle: Contribution aux parkings collectifs, barème de 2003 — manque de plus de
+    75 %, au plus 50 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_plus_de_75/population_jusqu_a_50000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_plus_de_75.population_jusqu_a_50000/table/
+- libelle: Contribution aux parkings collectifs, barème de 2003 — manque d'au plus
+    25 %, plus de 50 000 et au plus 100 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_jusqu_a_25/population_50000_a_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_jusqu_a_25.population_50000_a_100000/table/
+- libelle: Contribution aux parkings collectifs, barème de 2003 — manque de 25 à 75
+    %, plus de 50 000 et au plus 100 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_25_a_75/population_50000_a_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_25_a_75.population_50000_a_100000/table/
+- libelle: Contribution aux parkings collectifs, barème de 2003 — manque de plus de
+    75 %, plus de 50 000 et au plus 100 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_plus_de_75/population_50000_a_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_plus_de_75.population_50000_a_100000/table/
+- libelle: Contribution aux parkings collectifs, barème de 2003 — manque d'au plus
+    25 %, plus de 100 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_jusqu_a_25/population_plus_de_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_jusqu_a_25.population_plus_de_100000/table/
+- libelle: Contribution aux parkings collectifs, barème de 2003 — manque de 25 à 75
+    %, plus de 100 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_25_a_75/population_plus_de_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_25_a_75.population_plus_de_100000/table/
+- libelle: Contribution aux parkings collectifs, barème de 2003 — manque de plus de
+    75 %, plus de 100 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_2003/manque_plus_de_75/population_plus_de_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_2003.manque_plus_de_75.population_plus_de_100000/table/

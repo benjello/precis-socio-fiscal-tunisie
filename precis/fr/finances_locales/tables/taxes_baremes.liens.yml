@@ -1,0 +1,30 @@
+- libelle: Taxe sur les spectacles — part des recettes prévisionnelles retenue
+  parametre: parameters/fiscalite_locale/taxe_spectacles/part_recettes_previsionnelles.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_spectacles.part_recettes_previsionnelles/table/
+- libelle: Taxe sur les spectacles — taux
+  parametre: parameters/fiscalite_locale/taxe_spectacles/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_spectacles.taux/table/
+- libelle: Taxe sur les spectacles — prix d'entrée exonéré
+  parametre: parameters/fiscalite_locale/taxe_spectacles/prix_entree_exonere_maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_spectacles.prix_entree_exonere_maximum/table/
+- libelle: Contribution des riverains — réduction maximale
+  parametre: parameters/fiscalite_locale/contribution_riverains/reduction_maximale.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_riverains.reduction_maximale/table/
+- libelle: Contribution des riverains — avance, taux minimal
+  parametre: parameters/fiscalite_locale/contribution_riverains/avance/minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_riverains.avance.minimum/table/
+- libelle: Contribution des riverains — avance, taux maximal
+  parametre: parameters/fiscalite_locale/contribution_riverains/avance/maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_riverains.avance.maximum/table/
+- libelle: Droit de licence — tarif annuel, catégorie 1
+  parametre: parameters/fiscalite_locale/droit_licence/tarif_annuel/categorie_1.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.droit_licence.tarif_annuel.categorie_1/table/
+- libelle: Droit de licence — tarif annuel, catégorie 2
+  parametre: parameters/fiscalite_locale/droit_licence/tarif_annuel/categorie_2.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.droit_licence.tarif_annuel.categorie_2/table/
+- libelle: Droit de licence — tarif annuel, catégorie 3
+  parametre: parameters/fiscalite_locale/droit_licence/tarif_annuel/categorie_3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.droit_licence.tarif_annuel.categorie_3/table/
+- libelle: Droit de licence — retenue au profit du budget de l'État
+  parametre: parameters/fiscalite_locale/droit_licence/retenue_budget_etat.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.droit_licence.retenue_budget_etat/table/

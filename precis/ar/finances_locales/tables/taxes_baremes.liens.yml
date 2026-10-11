@@ -1,0 +1,30 @@
+- libelle: المعلوم على العروض — الحصة المعتمدة من المداخيل التقديرية
+  parametre: parameters/fiscalite_locale/taxe_spectacles/part_recettes_previsionnelles.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_spectacles.part_recettes_previsionnelles/table/
+- libelle: المعلوم على العروض — النسبة
+  parametre: parameters/fiscalite_locale/taxe_spectacles/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_spectacles.taux/table/
+- libelle: المعلوم على العروض — سعر الدخول المعفى
+  parametre: parameters/fiscalite_locale/taxe_spectacles/prix_entree_exonere_maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_spectacles.prix_entree_exonere_maximum/table/
+- libelle: مساهمة المالكين الأجوار — التخفيض الأقصى
+  parametre: parameters/fiscalite_locale/contribution_riverains/reduction_maximale.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_riverains.reduction_maximale/table/
+- libelle: مساهمة المالكين الأجوار — التسبقة، النسبة الدنيا
+  parametre: parameters/fiscalite_locale/contribution_riverains/avance/minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_riverains.avance.minimum/table/
+- libelle: مساهمة المالكين الأجوار — التسبقة، النسبة القصوى
+  parametre: parameters/fiscalite_locale/contribution_riverains/avance/maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_riverains.avance.maximum/table/
+- libelle: معلوم الإجازة — التعريفة السنوية، الصنف 1
+  parametre: parameters/fiscalite_locale/droit_licence/tarif_annuel/categorie_1.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.droit_licence.tarif_annuel.categorie_1/table/
+- libelle: معلوم الإجازة — التعريفة السنوية، الصنف 2
+  parametre: parameters/fiscalite_locale/droit_licence/tarif_annuel/categorie_2.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.droit_licence.tarif_annuel.categorie_2/table/
+- libelle: معلوم الإجازة — التعريفة السنوية، الصنف 3
+  parametre: parameters/fiscalite_locale/droit_licence/tarif_annuel/categorie_3.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.droit_licence.tarif_annuel.categorie_3/table/
+- libelle: معلوم الإجازة — الخصم لفائدة ميزانية الدولة
+  parametre: parameters/fiscalite_locale/droit_licence/retenue_budget_etat.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.droit_licence.retenue_budget_etat/table/

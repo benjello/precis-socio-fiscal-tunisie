@@ -123,8 +123,15 @@ PAQUETS = {
         # fonds — et la taxe hôtelière, sous `fiscalite_locale/` (PR #491) : en deçà, les
         # tableaux et les deux séries du chapitre « Les impôts sur l'activité » du même
         # volume ne pourraient être engendrés. Les 0.130 à 0.132 sont des PR à formules
-        # (#454, #455 et #460). La borne passe à la 0.133, publiée le 11 octobre 2026.
-        "version_minimale": (0, 133),
+        # (#454, #455 et #460).
+        # La 0.134 verse le reste de la fiscalité locale — pénalité de retard et dégrèvement
+        # partiel de la taxe sur les immeubles bâtis, contribution au fonds de l'habitat,
+        # taxe sur les spectacles, contribution des riverains, droit de licence, les deux
+        # barèmes de la contribution aux parkings, part de l'impôt de l'auto-entrepreneur —
+        # (PR #492) : en deçà, les tableaux de la pénalité, des chapitres V à VII du code et
+        # des parkings du même volume ne pourraient être engendrés. La borne passe à la
+        # 0.134, publiée le 11 octobre 2026.
+        "version_minimale": (0, 134),
     },
 }
 

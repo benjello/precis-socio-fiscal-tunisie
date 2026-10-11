@@ -1,0 +1,82 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : fl-parkings, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @loi97-11, @lf-2003, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : le montant est doublé dans les cas que fixe l'article, qui ne sont pas dans la série ; aucune modification de l'article n'étant identifiée depuis 2003, le barème de 2003 est prolongé jusqu'en 2026 ; les deux barèmes n'ont pas la même première tranche de population (plus de 20 000 habitants en 1997, sans plancher en 2003), DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Contribution à la réalisation de parkings collectifs dans une commune de plus de 100 000 habitants, en dinars courants et en dinars de 2025 par place : barème de 1997 et les trois montants du barème de 2003, 1997-2026 (autres tranches de population aux @tbl-fl-parkings-1997 et @tbl-fl-parkings-2003)
+Grandeur,Année,"Contribution par place, commune de plus de 100 000 habitants, moyenne de l'année (dinars courants par place)",Indice des prix à la consommation (base 100 en 1970),"Contribution par place, commune de plus de 100 000 habitants (dinars de 2025 par place)"
+Barème de 1997,1997,500.0,576.5,1815.0
+Barème de 1997,1998,500.0,594.5,1760.0
+Barème de 1997,1999,500.0,610.5,1714.0
+Barème de 1997,2000,500.0,628.3,1665.0
+Barème de 1997,2001,500.0,640.5,1634.0
+Barème de 1997,2002,500.0,658.6,1589.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2003,1000.0,676.5,3093.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2004,1000.0,701.0,2985.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2005,1000.0,715.3,2926.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2006,1000.0,745.0,2809.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2007,1000.0,770.6,2716.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2008,1000.0,808.4,2589.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2009,1000.0,837.0,2500.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2010,1000.0,873.9,2395.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2011,1000.0,904.8,2313.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2012,1000.0,955.1,2191.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2013,1000.0,1013.5,2065.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2014,1000.0,1069.0,1958.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2015,1000.0,1119.5,1869.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2016,1000.0,1161.2,1802.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2017,1000.0,1223.0,1711.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2018,1000.0,1314.2,1592.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2019,1000.0,1403.5,1491.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2020,1000.0,1482.6,1412.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2021,1000.0,1567.2,1335.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2022,1000.0,1697.4,1233.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2023,1000.0,1855.7,1128.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2024,1000.0,1986.0,1054.0
+Barème de 2003 : manque d'au plus 25 % des places requises,2025,1000.0,2092.7,1000.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2003,1500.0,676.5,4640.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2004,1500.0,701.0,4478.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2005,1500.0,715.3,4388.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2006,1500.0,745.0,4214.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2007,1500.0,770.6,4074.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2008,1500.0,808.4,3883.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2009,1500.0,837.0,3750.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2010,1500.0,873.9,3592.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2011,1500.0,904.8,3469.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2012,1500.0,955.1,3287.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2013,1500.0,1013.5,3097.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2014,1500.0,1069.0,2936.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2015,1500.0,1119.5,2804.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2016,1500.0,1161.2,2703.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2017,1500.0,1223.0,2567.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2018,1500.0,1314.2,2389.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2019,1500.0,1403.5,2237.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2020,1500.0,1482.6,2117.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2021,1500.0,1567.2,2003.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2022,1500.0,1697.4,1849.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2023,1500.0,1855.7,1692.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2024,1500.0,1986.0,1581.0
+Barème de 2003 : manque de plus de 25 % et d'au plus 75 %,2025,1500.0,2092.7,1500.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2003,2250.0,676.5,6960.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2004,2250.0,701.0,6717.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2005,2250.0,715.3,6583.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2006,2250.0,745.0,6320.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2007,2250.0,770.6,6110.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2008,2250.0,808.4,5825.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2009,2250.0,837.0,5626.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2010,2250.0,873.9,5388.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2011,2250.0,904.8,5204.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2012,2250.0,955.1,4930.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2013,2250.0,1013.5,4646.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2014,2250.0,1069.0,4405.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2015,2250.0,1119.5,4206.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2016,2250.0,1161.2,4055.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2017,2250.0,1223.0,3850.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2018,2250.0,1314.2,3583.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2019,2250.0,1403.5,3355.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2020,2250.0,1482.6,3176.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2021,2250.0,1567.2,3004.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2022,2250.0,1697.4,2774.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2023,2250.0,1855.7,2537.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2024,2250.0,1986.0,2371.0
+Barème de 2003 : manque de plus de 75 % et de moins de 100 %,2025,2250.0,2092.7,2250.0

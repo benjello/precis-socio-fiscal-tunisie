@@ -36,6 +36,27 @@ CE QUI EST ENGENDRÉ, POUR LE CHAPITRE « LES IMPÔTS SUR L'ACTIVITÉ » — la 
   - deux séries longues au cache : `fl-tcl-minimum` (seize grandeurs) et `fl-tcl-maximum`
     (une grandeur, close par une valeur vide au 1er janvier 2012).
 
+CE QUI EST ENGENDRÉ, POUR LES DISPOSITIONS SECONDAIRES ET LE CHAPITRE « TAXES, REDEVANCES ET
+AUTONOMIE FISCALE » — pénalité de retard, taxe sur les spectacles, contribution des
+riverains, droit de licence, contribution aux parkings (versés en 0.134) :
+  - `penalite_retard.md` : le taux mensuel de la pénalité de retard des taxes sur les
+    immeubles et le plafond de son total, aux cinq dates où l'un des deux change. Les deux
+    grandeurs n'ont pas la même unité : chacune la porte dans son libellé de ligne, et
+    l'absence de plafond avant 2022 est dite en clair (`ParametreSupprimable`) ;
+  - `taxes_baremes.md` : les taux et les tarifs des chapitres V à VII du code — spectacles,
+    riverains, licence. Ces grandeurs n'ont pas de dates communes (trois dates de 1997, une
+    de 2002) : le tableau se lit en long, une grandeur par ligne, chaque ligne à ses dates
+    (`tableau_grandeurs_datees`). Une grandeur close — la réduction de la contribution des
+    riverains, remplacée au 1er août 2002 — donne sa période et dit en clair ce qui la
+    remplace ;
+  - `parkings_1997.md` : le barème de 1997 de la contribution aux parkings collectifs, une
+    ligne par tranche de population, et son remplacement de 2003 dit en clair ;
+  - `parkings_2003.md` : le barème de 2003, à deux entrées — une ligne par tranche de
+    population, une colonne par part des places manquantes, neuf montants ;
+  - deux séries longues au cache : `fl-tib-penalite-retard` (le taux mensuel) et
+    `fl-parkings` (douze grandeurs : les trois du barème de 1997, closes au 1er janvier
+    2003, et les neuf du barème de 2003).
+
 LA FORME DES DEUX BARÈMES. `ot.tableau_dates_reperes` met un paramètre par ligne ; ici une
 ligne réunit plusieurs paramètres — le minimum et le maximum d'une même catégorie —, et le
 barème se lit à ses dates d'effet, côte à côte. `tableau_cote_a_cote` le compose avec les
@@ -49,7 +70,9 @@ dans la deuxième, qui se replie.
 
 LES EN-TÊTES RENVOIENT AU REGISTRE DU CHAPITRE. Chaque colonne porte l'année de sa date
 d'effet, en lien vers la ligne du registre replié qui donne le décret, son article et sa
-page (`ANCRES_PRIX`, `ANCRES_TARIF`, `ANCRES_MINIMUM`, `ANCRES_MAXIMUM`, `ANCRES_TAUX_TCL`). Ces ancres sont déclarées ici, date par date : une
+page (`ANCRES_PRIX`, `ANCRES_TARIF`, `ANCRES_MINIMUM`, `ANCRES_MAXIMUM`, `ANCRES_TAUX_TCL`,
+`ANCRES_PENALITE`, `ANCRES_PARKINGS_1997`, `ANCRES_PARKINGS_2003` ; `ANCRES_TAXES`, par grandeur
+et par date, pour le tableau en long). Ces ancres sont déclarées ici, date par date : une
 date d'effet que le modèle porte et qui n'a pas sa ligne de registre arrête le générateur,
 plutôt que de publier une colonne sans référence.
 
@@ -60,8 +83,14 @@ le produit de la taxe sur les établissements va à un fonds (une valeur, depuis
 donné en prose lui aussi. La taxe hôtelière (`fiscalite_locale/taxe_hoteliere/`, deux
 valeurs de 1997) garde son tableau fait main : ses deux lignes ont chacune leur ligne de
 registre et leur base — le chiffre d'affaires, le produit de la taxe —, ce qu'une colonne
-de date à une seule ancre et une seule unité ne rend pas. Les droits et redevances ne sont
-pas dans l'arbre.
+de date à une seule ancre et une seule unité ne rend pas. Trois tableaux du volume gardent
+une forme faite main parce que l'arbre n'en porte qu'une ligne : le prélèvement au profit
+du Fonds national d'amélioration de l'habitat avant et depuis 2005 (seul le taux de 2005 est
+versé), les deux dégrèvements de la taxe sur les immeubles bâtis (seul le dégrèvement
+partiel, clos en 2003, a un taux) et les forfaits qui comprennent la taxe sur les
+établissements (seule la part de l'auto-entrepreneur est chiffrée). Les tarifs des taxes et
+redevances diverses fixés par décret (chapitre VIII du code, hors parkings) ne sont pas
+dans l'arbre.
 """
 
 from __future__ import annotations
@@ -77,6 +106,11 @@ FL = "parameters/fiscalite_locale"
 TIB = f"{FL}/taxe_immeubles_batis"
 TNB = f"{FL}/taxe_terrains_non_batis"
 TCL = f"{FL}/taxe_etablissements"
+PENALITE = f"{TIB}/penalite_retard"
+SPECTACLES = f"{FL}/taxe_spectacles"
+RIVERAINS = f"{FL}/contribution_riverains"
+LICENCE = f"{FL}/droit_licence"
+PARKINGS = f"{FL}/contribution_parkings"
 RACINE = Path(__file__).parent.parent / "precis"
 LIVRE = "finances_locales"
 LANGUES = ("fr", "ar")
@@ -85,6 +119,8 @@ SERIE_PRIX = "fl-tib-prix-reference"
 SERIE_TARIF = "fl-tnb-tarif"
 SERIE_MINIMUM = "fl-tcl-minimum"
 SERIE_MAXIMUM = "fl-tcl-maximum"
+SERIE_PENALITE = "fl-tib-penalite-retard"
+SERIE_PARKINGS = "fl-parkings"
 
 # Date d'effet -> ancre de la ligne du registre replié, dans `_impots_immeubles.qmd`.
 ANCRES_PRIX = {"1997-03-13": "r-fl-imm-prix-1997", "2008-01-01": "r-fl-imm-prix-2008",
@@ -102,6 +138,62 @@ ANCRES_MAXIMUM = {"1997-03-13": "r-fl-act-plafond-1997", "2003-06-26": "r-fl-act
                   "2007-01-01": "r-fl-act-plafond-2007", "2012-01-01": "r-fl-act-plafond-2012"}
 ANCRES_TAUX_TCL = {"1997-01-01": "r-fl-act-1997-assiette", "2013-01-01": "r-fl-act-taux-2013",
                    "2014-01-01": "r-fl-act-assiette-2014"}
+
+# La pénalité de retard : quatre dates pour le taux, une — 2022 — pour le plafond.
+ANCRES_PENALITE = {"1997-01-01": "r-fl-imm-penalite-1997", "2002-01-01": "r-fl-imm-penalite-2002",
+                   "2007-01-01": "r-fl-imm-penalite-2007", "2022-01-01": "r-fl-imm-penalite-2022",
+                   "2023-01-01": "r-fl-imm-penalite-2023"}
+
+# Date d'effet -> ancre de la ligne de registre, dans `_taxes_redevances.qmd`. Le barème de
+# 1997 des parkings est clos au 1er janvier 2003 : cette date est une colonne, qui renvoie
+# à la loi qui le remplace.
+ANCRES_PARKINGS_1997 = {"1997-01-01": "r-fl-tax-1997-parkings-bareme",
+                        "2003-01-01": "r-fl-tax-2003-parkings"}
+ANCRES_PARKINGS_2003 = {"2003-01-01": "r-fl-tax-2003-parkings"}
+
+# Tranches de population et parts des places manquantes des deux barèmes des parkings :
+# (clé du libellé, nom de la feuille ou du nœud).
+POPULATIONS_1997 = (("pop_20_50", "population_20000_a_50000"),
+                    ("pop_50_100", "population_50000_a_100000"),
+                    ("pop_100", "population_plus_de_100000"))
+POPULATIONS_2003 = (("pop_0_50", "population_jusqu_a_50000"),
+                    ("pop_50_100", "population_50000_a_100000"),
+                    ("pop_100", "population_plus_de_100000"))
+MANQUES = (("manque_25", "manque_jusqu_a_25"), ("manque_75", "manque_25_a_75"),
+           ("manque_100", "manque_plus_de_75"))
+
+# Le tableau en long des chapitres V à VII du code : (chapitre, clé du prélèvement, clé de la
+# grandeur, [feuilles], formateur, clé de ce qui remplace la grandeur à sa clôture).
+GRANDEURS_TAXES = (
+    ("V", "spectacles", "g_part_recettes", (f"{SPECTACLES}/part_recettes_previsionnelles",),
+     "pourcentage", None),
+    ("V", "spectacles", "g_taux_spectacles", (f"{SPECTACLES}/taux",), "pourcentage", None),
+    ("V", "spectacles", "g_prix_exonere", (f"{SPECTACLES}/prix_entree_exonere_maximum",),
+     "entier", None),
+    ("VI", "riverains", "g_reduction", (f"{RIVERAINS}/reduction_maximale",), "pourcentage",
+     "remplacee_degrevement"),
+    ("VI", "riverains", "g_avance", (f"{RIVERAINS}/avance/minimum", f"{RIVERAINS}/avance/maximum"),
+     "pourcentage", None),
+    ("VII", "licence", "g_tarif_1", (f"{LICENCE}/tarif_annuel/categorie_1",), "entier", None),
+    ("VII", "licence", "g_tarif_2", (f"{LICENCE}/tarif_annuel/categorie_2",), "entier", None),
+    ("VII", "licence", "g_tarif_3", (f"{LICENCE}/tarif_annuel/categorie_3",), "entier", None),
+    ("VII", "licence", "g_retenue", (f"{LICENCE}/retenue_budget_etat",), "pourcentage", None),
+)
+
+# (clé de la grandeur, date d'effet) -> ancre de la ligne de registre, dans
+# `_taxes_redevances.qmd`. Une date de clôture renvoie au texte qui clôt.
+ANCRES_TAXES = {
+    ("g_part_recettes", "1997-01-01"): "r-fl-tax-1997-spectacles-assiette",
+    ("g_taux_spectacles", "1997-01-01"): "r-fl-tax-1997-spectacles-taux",
+    ("g_prix_exonere", "1997-04-07"): "r-fl-tax-1997-spectacles-prix",
+    ("g_reduction", "1997-01-01"): "r-fl-tax-1997-riverains-calcul",
+    ("g_reduction", "2002-08-01"): "r-fl-tax-2002-riverains",
+    ("g_avance", "1997-01-01"): "r-fl-tax-1997-riverains-avance",
+    ("g_tarif_1", "1997-03-13"): "r-fl-tax-1997-licence-tarif",
+    ("g_tarif_2", "1997-03-13"): "r-fl-tax-1997-licence-tarif",
+    ("g_tarif_3", "1997-03-13"): "r-fl-tax-1997-licence-tarif",
+    ("g_retenue", "1997-01-01"): "r-fl-tax-1997-licence-declaration",
+}
 
 # Le code entre en vigueur le 1er janvier 1997 ; les quatre taux n'ont pas changé depuis.
 EFFET_TAUX = "1997-01-01"
@@ -124,6 +216,12 @@ ASSIETTES = (("chiffre_affaires_brut_local", "base_ca"), ("chiffre_affaires_brut
 # de cette taxe — chiffre d'affaires brut, produits à prix homologués, redevables taxés sur
 # leur impôt, maximum et sa suppression — ne sont pas relevés sur l'édition arabe des
 # textes : ils sont composés avec le vocabulaire du glossaire, et restent à confronter.
+# Pour la pénalité de retard, les chapitres V à VII et les parkings : les noms des trois
+# prélèvements des chapitres V à VII sont ceux du glossaire (entrée du code de la fiscalité
+# locale) ; tous les autres libellés arabes — pénalité, plafond, grandeurs des trois
+# prélèvements, tranches de population, parts des places manquantes, mentions de
+# remplacement — sont composés ici, l'édition arabe de ces articles n'étant pas relue : ils
+# restent à confronter au Journal officiel.
 MOTS = {
     "fr": {
         "services": "Services dont bénéficie l'immeuble",
@@ -188,6 +286,58 @@ MOTS = {
         "lien_produits_prix_homologues": "produits à prix homologués à marge d'au plus 6 %",
         "lien_impot_regime_1997": "impôt, redevables désignés en 1997",
         "lien_impot_regime_2013": "impôt, redevables désignés en 2013",
+        "penalite": "Pénalité de retard",
+        "penalite_taux": "taux (% par mois de retard)",
+        "penalite_plafond": "plafond du total (% du principal)",
+        "aucun_plafond": "aucun plafond",
+        "penalite_taux_lien": "Taux mensuel de la pénalité de retard de la taxe sur les immeubles bâtis",
+        "penalite_plafond_lien": ("Plafond du total des pénalités de retard de la taxe sur les "
+                                  "immeubles bâtis, en part du principal"),
+        "chapitre": "Chapitre du code", "prelevement": "Prélèvement", "grandeur": "Grandeur",
+        "valeur": "Valeur", "en_vigueur": "En vigueur",
+        "spectacles": "taxe sur les spectacles",
+        "riverains": "contribution des propriétaires riverains",
+        "licence": "droit de licence sur les débits de boissons",
+        "g_part_recettes": "part des recettes prévisionnelles retenue dans l'assiette (%)",
+        "g_taux_spectacles": "taux (% de l'assiette)",
+        "g_prix_exonere": "prix d'entrée maximal des spectacles exonérés (D)",
+        "g_reduction": "réduction maximale pour les cas sociaux (% de la contribution)",
+        "g_avance": "avance, minimum et maximum (% de la contribution)",
+        "g_tarif_1": "tarif annuel, établissement de la catégorie 1 (D)",
+        "g_tarif_2": "tarif annuel, établissement de la catégorie 2 (D)",
+        "g_tarif_3": "tarif annuel, établissement de la catégorie 3 (D)",
+        "g_retenue": "retenue au profit du budget de l'État (% du droit)",
+        "intervalle": "{a} à {b}",
+        "depuis": "depuis le [{debut}](#{ancre})",
+        "du_au": "du [{debut}](#{ancre}) au [{fin}](#{ancre_fin})",
+        "du_au_remplace": "du [{debut}](#{ancre}) au [{fin}](#{ancre_fin}) ; {suite}",
+        "remplacee_degrevement": "remplacée par un dégrèvement total",
+        "lien_part_recettes_previsionnelles":
+            "Taxe sur les spectacles — part des recettes prévisionnelles retenue",
+        "lien_taux": "Taxe sur les spectacles — taux",
+        "lien_prix_entree_exonere_maximum": "Taxe sur les spectacles — prix d'entrée exonéré",
+        "lien_reduction_maximale": "Contribution des riverains — réduction maximale",
+        "lien_minimum": "Contribution des riverains — avance, taux minimal",
+        "lien_maximum": "Contribution des riverains — avance, taux maximal",
+        "lien_categorie_1": "Droit de licence — tarif annuel, catégorie 1",
+        "lien_categorie_2": "Droit de licence — tarif annuel, catégorie 2",
+        "lien_categorie_3": "Droit de licence — tarif annuel, catégorie 3",
+        "lien_retenue_budget_etat": "Droit de licence — retenue au profit du budget de l'État",
+        "population": "Population de la commune",
+        "pop_20_50": "plus de 20 000 et au plus 50 000 habitants",
+        "pop_0_50": "au plus 50 000 habitants",
+        "pop_50_100": "plus de 50 000 et au plus 100 000 habitants",
+        "pop_100": "plus de 100 000 habitants",
+        "contribution": "Contribution", "unite_place": "(D par place)",
+        "bareme_remplace": "barème remplacé",
+        "manque_25": "Manque : au plus 25 % des places requises",
+        "manque_75": "Manque : plus de 25 % et au plus 75 %",
+        "manque_100": "Manque : plus de 75 % et moins de 100 %",
+        "parkings_1997_lien": "Contribution aux parkings collectifs, barème de 1997 — {population}",
+        "parkings_2003_lien": ("Contribution aux parkings collectifs, barème de 2003 — "
+                               "{manque}, {population}"),
+        "lien_manque_25": "manque d'au plus 25 %", "lien_manque_75": "manque de 25 à 75 %",
+        "lien_manque_100": "manque de plus de 75 %",
     },
     "ar": {
         "services": "الخدمات التي ينتفع بها العقار",
@@ -251,6 +401,57 @@ MOTS = {
         "lien_produits_prix_homologues": "منتجات خاضعة للمصادقة الإدارية للأسعار، هامش لا يتجاوز 6 %",
         "lien_impot_regime_1997": "الضريبة، المطالبون بالأداء المعيّنون سنة 1997",
         "lien_impot_regime_2013": "الضريبة، المطالبون بالأداء المعيّنون سنة 2013",
+        "penalite": "خطية التأخير",
+        "penalite_taux": "النسبة (% عن كل شهر تأخير)",
+        "penalite_plafond": "الحد الأقصى للمجموع (% من أصل الدين)",
+        "aucun_plafond": "لا حد أقصى",
+        "penalite_taux_lien": "النسبة الشهرية لخطية التأخير للمعلوم على العقارات المبنية",
+        "penalite_plafond_lien": ("الحد الأقصى لمجموع خطايا التأخير للمعلوم على العقارات "
+                                  "المبنية، نسبةً من أصل الدين"),
+        "chapitre": "الباب", "prelevement": "المعلوم", "grandeur": "المقدار",
+        "valeur": "القيمة", "en_vigueur": "السريان",
+        "spectacles": "المعلوم على العروض",
+        "riverains": "مساهمة المالكين الأجوار",
+        "licence": "معلوم الإجازة الموظف على محلات بيع المشروبات",
+        "g_part_recettes": "الحصة المعتمدة من المداخيل التقديرية في الوعاء (%)",
+        "g_taux_spectacles": "النسبة (% من الوعاء)",
+        "g_prix_exonere": "السعر الأقصى للدخول إلى العروض المعفاة (د)",
+        "g_reduction": "التخفيض الأقصى للحالات الاجتماعية (% من المساهمة)",
+        "g_avance": "التسبقة، الحد الأدنى والحد الأقصى (% من المساهمة)",
+        "g_tarif_1": "التعريفة السنوية، مؤسسة من الصنف 1 (د)",
+        "g_tarif_2": "التعريفة السنوية، مؤسسة من الصنف 2 (د)",
+        "g_tarif_3": "التعريفة السنوية، مؤسسة من الصنف 3 (د)",
+        "g_retenue": "الخصم لفائدة ميزانية الدولة (% من المعلوم)",
+        "intervalle": "من {a} إلى {b}",
+        "depuis": "منذ [{debut}](#{ancre})",
+        "du_au": "من [{debut}](#{ancre}) إلى [{fin}](#{ancre_fin})",
+        "du_au_remplace": "من [{debut}](#{ancre}) إلى [{fin}](#{ancre_fin})؛ {suite}",
+        "remplacee_degrevement": "عُوّض بطرح كلّي",
+        "lien_part_recettes_previsionnelles":
+            "المعلوم على العروض — الحصة المعتمدة من المداخيل التقديرية",
+        "lien_taux": "المعلوم على العروض — النسبة",
+        "lien_prix_entree_exonere_maximum": "المعلوم على العروض — سعر الدخول المعفى",
+        "lien_reduction_maximale": "مساهمة المالكين الأجوار — التخفيض الأقصى",
+        "lien_minimum": "مساهمة المالكين الأجوار — التسبقة، النسبة الدنيا",
+        "lien_maximum": "مساهمة المالكين الأجوار — التسبقة، النسبة القصوى",
+        "lien_categorie_1": "معلوم الإجازة — التعريفة السنوية، الصنف 1",
+        "lien_categorie_2": "معلوم الإجازة — التعريفة السنوية، الصنف 2",
+        "lien_categorie_3": "معلوم الإجازة — التعريفة السنوية، الصنف 3",
+        "lien_retenue_budget_etat": "معلوم الإجازة — الخصم لفائدة ميزانية الدولة",
+        "population": "عدد سكان البلدية",
+        "pop_20_50": "أكثر من 20 000 ساكن دون أن يتجاوز 50 000",
+        "pop_0_50": "لا يتجاوز 50 000 ساكن",
+        "pop_50_100": "أكثر من 50 000 ساكن دون أن يتجاوز 100 000",
+        "pop_100": "أكثر من 100 000 ساكن",
+        "contribution": "المساهمة", "unite_place": "(د عن كل مكان)",
+        "bareme_remplace": "عُوّض الجدول",
+        "manque_25": "النقص: لا يتجاوز 25 % من الأماكن المطلوبة",
+        "manque_75": "النقص: أكثر من 25 % دون أن يتجاوز 75 %",
+        "manque_100": "النقص: أكثر من 75 % وأقل من 100 %",
+        "parkings_1997_lien": "المساهمة في إنجاز مآوي جماعية، جدول 1997 — {population}",
+        "parkings_2003_lien": "المساهمة في إنجاز مآوي جماعية، جدول 2003 — {manque}، {population}",
+        "lien_manque_25": "نقص لا يتجاوز 25 %", "lien_manque_75": "نقص من 25 إلى 75 %",
+        "lien_manque_100": "نقص يفوق 75 %",
     },
 }
 
@@ -303,14 +504,21 @@ def parametre_tarif(zone: str):
 
 
 class ParametreSupprimable(ot.ParametreDate):
-    """Un paramètre que la loi supprime : la case le dit en clair, au lieu du « — » commun.
+    """Un paramètre dont l'absence se dit en clair, au lieu du « — » commun.
 
-    Ne vaut que dans un tableau dont la première colonne est la date de création du
-    paramètre : une valeur absente y est alors toujours une suppression.
+    `absent` : clé de `MOTS` de ce que dit la case — « aucun : maximum supprimé » par
+    défaut. L'appelant répond du sens : dans un tableau dont la première colonne est la date
+    de création du paramètre, une valeur absente est toujours une suppression ou un
+    remplacement ; pour un plafond que la loi institue en cours de période, c'est l'absence
+    de plafond avant sa création, et le paramètre ne doit alors jamais être clos.
     """
 
+    def __init__(self, *args, absent: str = "supprime", **kwargs):
+        super().__init__(*args, **kwargs)
+        self.absent = absent
+
     def rendre(self, valeur, langue):
-        return MOTS[langue]["supprime"] if valeur is None else super().rendre(valeur, langue)
+        return MOTS[langue][self.absent] if valeur is None else super().rendre(valeur, langue)
 
 
 def parametre_minimum(categorie: int, taux: int):
@@ -329,6 +537,40 @@ def parametre_taux_tcl(assiette: str):
     return ot.ParametreDate(assiette, f"{TCL}/taux/{assiette}.yaml", tous(assiette),
                             format=pourcentage_nu,
                             lien=tous("taux_tcl_lien", assiette=f"lien_{assiette}"))
+
+
+def parametre_penalite_taux():
+    return ot.ParametreDate("taux_mensuel", f"{PENALITE}/taux_mensuel.yaml",
+                            tous("penalite_taux"), format=pourcentage_nu,
+                            lien=tous("penalite_taux_lien"))
+
+
+def parametre_penalite_plafond():
+    return ParametreSupprimable("plafond_part_principal",
+                                f"{PENALITE}/plafond_part_principal.yaml",
+                                tous("penalite_plafond"), format=pourcentage_nu,
+                                lien=tous("penalite_plafond_lien"), absent="aucun_plafond")
+
+
+def parametre_taxe(chemin: str, formateur: str):
+    """Une feuille des chapitres V à VII ; le libellé de son lien porte le nom de la feuille."""
+    feuille = chemin.rsplit("/", 1)[-1]
+    return ot.ParametreDate(feuille, f"{chemin}.yaml", tous(f"lien_{feuille}"),
+                            format=pourcentage_nu if formateur == "pourcentage" else entier_nu)
+
+
+def parametre_parking_1997(population: str, feuille: str):
+    return ParametreSupprimable(
+        f"bareme_1997_{feuille}", f"{PARKINGS}/bareme_1997/{feuille}.yaml", tous(population),
+        format=entier_nu, lien=tous("parkings_1997_lien", population=population),
+        absent="bareme_remplace")
+
+
+def parametre_parking_2003(manque: str, noeud: str, population: str, feuille: str):
+    return ot.ParametreDate(
+        f"bareme_2003_{noeud}_{feuille}", f"{PARKINGS}/bareme_2003/{noeud}/{feuille}.yaml",
+        tous(population), format=entier_nu,
+        lien=tous("parkings_2003_lien", manque=f"lien_{manque}", population=population))
 
 
 def libelles_categories(dates: list[str], langue: str) -> list[str]:
@@ -447,6 +689,106 @@ def tableau_taux_tcl(langue: str):
                                dates_communes=False)
 
 
+def tableau_penalite(langue: str):
+    m = MOTS[langue]
+    lignes = [(p.libelle[langue], [p])
+              for p in (parametre_penalite_taux(), parametre_penalite_plafond())]
+    return tableau_cote_a_cote(lignes, [""], ANCRES_PENALITE, m["penalite"], "", langue,
+                               dates_communes=False)
+
+
+def tableau_parkings_1997(langue: str):
+    m = MOTS[langue]
+    lignes = [(m[population], [parametre_parking_1997(population, feuille)])
+              for population, feuille in POPULATIONS_1997]
+    return tableau_cote_a_cote(lignes, [m["contribution"]], ANCRES_PARKINGS_1997,
+                               m["population"], m["unite_place"], langue)
+
+
+def tableau_parkings_2003(langue: str):
+    m = MOTS[langue]
+    lignes = [(m[population], [parametre_parking_2003(manque, noeud, population, feuille)
+                               for manque, noeud in MANQUES])
+              for population, feuille in POPULATIONS_2003]
+    return tableau_cote_a_cote(lignes, [m[manque] for manque, _noeud in MANQUES],
+                               ANCRES_PARKINGS_2003, m["population"], m["unite_place"], langue)
+
+
+def veille(date: str) -> str:
+    """La veille d'une date d'effet (ISO) : le dernier jour où vaut l'état précédent."""
+    import datetime
+
+    return (datetime.date.fromisoformat(date) - datetime.timedelta(days=1)).isoformat()
+
+
+def tableau_grandeurs_datees(grandeurs: tuple, ancres: dict[tuple[str, str], str], langue: str):
+    """Des grandeurs sans dates communes, en long : une ligne par grandeur et par état.
+
+    `grandeurs` : (chapitre, clé du prélèvement, clé de la grandeur, feuilles, formateur, clé
+    de ce qui remplace la grandeur à sa clôture). Une grandeur à plusieurs feuilles — un
+    minimum et un maximum — les rend dans une même case (« 10 à 30 ») ; ses feuilles doivent
+    avoir les mêmes dates d'effet. `ancres` : (clé de la grandeur, date d'effet) -> ancre du
+    registre du chapitre ; une date d'effet sans ancre arrête le générateur, et une ancre
+    déclarée pour une date que le modèle ne porte pas aussi.
+
+    La dernière colonne dit la période de chaque état : « depuis le … » pour l'état en
+    vigueur ; « du … au … » pour un état que suit un autre, la date de fin étant la veille
+    de la date d'effet suivante, en lien vers le texte qui y met fin. Une clôture — valeur
+    vide — exige qu'on dise en clair ce qui remplace la grandeur.
+    """
+    import pandas as pd
+
+    m = MOTS[langue]
+    sortie, vues = [], set()
+    for chapitre, prelevement, cle, feuilles, formateur, suite in grandeurs:
+        parametres = [parametre_taxe(f, formateur) for f in feuilles]
+        series = [p.serie() for p in parametres]
+        if not all(series):
+            print(f"✗ paramètre introuvable ou vide : {[p.chemin for p in parametres]}")
+            return None
+        dates = [d for d, *_ in series[0]]
+        if any([d for d, *_ in s] != dates for s in series):
+            raise ValueError(f"{cle} : les feuilles n'ont pas les mêmes dates d'effet")
+        for p in parametres:
+            ot.releve_note(p.chemin, p.lien[langue])
+        for i, date in enumerate(dates):
+            if (cle, date) not in ancres:
+                raise ValueError(f"{cle} : date d'effet {date} sans ligne de registre")
+            vues.add((cle, date))
+            valeurs = [s[i][1] for s in series]
+            if all(v is None for v in valeurs):
+                if not i or not suite:
+                    raise ValueError(f"{cle} : clôture au {date} sans mention de ce qui remplace")
+                continue
+            if any(v is None for v in valeurs):
+                raise ValueError(f"{cle} : feuilles closes à des dates différentes ({date})")
+            rendues = [p.rendre(v, langue) for p, v in zip(parametres, valeurs)]
+            valeur = rendues[0] if len(rendues) == 1 else m["intervalle"].format(
+                a=rendues[0], b=rendues[1])
+            champs = dict(debut=ot.formate_date(date, langue), ancre=ancres[(cle, date)])
+            if i + 1 == len(dates):
+                periode = m["depuis"].format(**champs)
+            else:
+                suivante = dates[i + 1]
+                if (cle, suivante) not in ancres:
+                    raise ValueError(f"{cle} : date d'effet {suivante} sans ligne de registre")
+                champs.update(fin=ot.formate_date(veille(suivante), langue),
+                              ancre_fin=ancres[(cle, suivante)])
+                close = all(s[i + 1][1] is None for s in series)
+                periode = (m["du_au_remplace"].format(suite=m[suite], **champs) if close and suite
+                           else m["du_au"].format(**champs))
+            sortie.append({m["chapitre"]: chapitre, m["prelevement"]: m[prelevement],
+                           m["grandeur"]: m[cle], m["valeur"]: valeur,
+                           m["en_vigueur"]: periode})
+    if vues != set(ancres):
+        raise ValueError(f"ancres sans date d'effet : {sorted(set(ancres) - vues)}")
+    return pd.DataFrame(sortie)
+
+
+def tableau_taxes(langue: str):
+    return tableau_grandeurs_datees(GRANDEURS_TAXES, ANCRES_TAXES, langue)
+
+
 def entete_snapshot(dates: list[str], chemins: list[str]) -> str:
     return (f"<!-- Généré par scripts/{Path(__file__).name} — ne pas éditer à la main.\n"
             f"     État en vigueur aux dates d'effet : {', '.join(dates)}.\n"
@@ -497,10 +839,16 @@ def ecrire_series() -> int:
     prix = [parametre_prix(c, borne) for c in CATEGORIES for borne in ("minimum", "maximum")]
     tarif = [parametre_tarif(z) for z in ZONES]
     minimum = [parametre_minimum(c, t) for c in CATEGORIES for t in TAUX_TIB]
+    parkings = ([parametre_parking_1997(population, feuille)
+                 for population, feuille in POPULATIONS_1997]
+                + [parametre_parking_2003(manque, noeud, population, feuille)
+                   for manque, noeud in MANQUES for population, feuille in POPULATIONS_2003])
     return (ot.ecrire_serie_parametres(SERIE_PRIX, prix, CACHE)
             or ot.ecrire_serie_parametres(SERIE_TARIF, tarif, CACHE)
             or ot.ecrire_serie_parametres(SERIE_MINIMUM, minimum, CACHE)
-            or ot.ecrire_serie_parametres(SERIE_MAXIMUM, [parametre_maximum()], CACHE))
+            or ot.ecrire_serie_parametres(SERIE_MAXIMUM, [parametre_maximum()], CACHE)
+            or ot.ecrire_serie_parametres(SERIE_PENALITE, [parametre_penalite_taux()], CACHE)
+            or ot.ecrire_serie_parametres(SERIE_PARKINGS, parkings, CACHE))
 
 
 def main() -> int:
@@ -516,6 +864,13 @@ def main() -> int:
             or ecrire_cote_a_cote("tcl_minimum.md", tableau_minimum, ANCRES_MINIMUM)
             or ecrire_cote_a_cote("tcl_maximum.md", tableau_maximum, ANCRES_MAXIMUM)
             or ecrire_cote_a_cote("tcl_taux.md", tableau_taux_tcl, ANCRES_TAUX_TCL)
+            or ecrire_cote_a_cote("penalite_retard.md", tableau_penalite, ANCRES_PENALITE)
+            or ecrire_cote_a_cote("taxes_baremes.md", tableau_taxes,
+                                  {d: a for (_c, d), a in ANCRES_TAXES.items()})
+            or ecrire_cote_a_cote("parkings_1997.md", tableau_parkings_1997,
+                                  ANCRES_PARKINGS_1997)
+            or ecrire_cote_a_cote("parkings_2003.md", tableau_parkings_2003,
+                                  ANCRES_PARKINGS_2003)
             or ecrire_series())
 
 

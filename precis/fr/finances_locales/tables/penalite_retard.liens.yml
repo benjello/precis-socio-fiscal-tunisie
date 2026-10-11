@@ -1,0 +1,7 @@
+- libelle: Taux mensuel de la pénalité de retard de la taxe sur les immeubles bâtis
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/penalite_retard/taux_mensuel.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.penalite_retard.taux_mensuel/table/
+- libelle: Plafond du total des pénalités de retard de la taxe sur les immeubles bâtis,
+    en part du principal
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/penalite_retard/plafond_part_principal.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.taxe_immeubles_batis.penalite_retard.plafond_part_principal/table/
