@@ -2,7 +2,7 @@
 
 Ce chapitre donne, pour les [entreprises publiques](#g-entreprises-publiques) : ce que le budget de l'État leur verse, ce que l'État garantit de leur dette, ce que l'État et elles se doivent, ce qu'elles lui versent, et ce que l'État a tiré de leur cession. Les comptes des caisses de sécurité sociale sont dans le volume [« Les caisses de sécurité sociale »](../caisses/index.html), la dépense de [compensation](#g-compensation-des-prix) et la subvention du transport dans [« La compensation »](../compensation/index.html), les statuts et les salaires des agents dans [« Les rémunérations publiques »](../remunerations_publiques/index.html).
 
-Les montants sont en millions de dinars courants (MD) ou en milliards de dinars courants ; les tableaux donnent aussi les principaux en dinars de 2025, par l'indice des prix à la consommation. Trois rapports du ministère des Finances, annexés chaque année au projet de loi de finances, portent les séries : le rapport sur les entreprises publiques, le rapport sur les transferts et les garanties, le rapport sur la dette publique. Une « édition LF 2025 » est le rapport annexé au projet de loi de finances pour 2025.
+Les montants sont en millions de dinars courants (MD) ou en milliards de dinars courants. Chaque série est aussi donnée en part des dépenses du budget de l'État hors service de la dette, et en part du PIB ; le PIB employé dit sa base, et une série en part du PIB se lit par segment de base (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Trois rapports du ministère des Finances, annexés chaque année au projet de loi de finances, portent les séries : le rapport sur les entreprises publiques, le rapport sur les transferts et les garanties, le rapport sur la dette publique. Une « édition LF 2025 » est le rapport annexé au projet de loi de finances pour 2025.
 
 ## Vue d'ensemble {#sec-ep-vue-ensemble}
 
@@ -17,20 +17,14 @@ from figures import entreprises_publiques as ep
 ep.figure(
     "ensemble",
     caption=("Quatre grandeurs de la relation financière entre l'État et les entreprises "
-             "publiques, en dinars courants, 2016-2024"),
+             "publiques, en dinars courants, en % des dépenses de l'État hors service de la "
+             "dette et en % du PIB, 2016-2024"),
     note_lecture=(
-        "Les quatre cadres n'ont ni la même échelle ni le même périmètre, et ne s'additionnent "
-        "pas. En haut à gauche, les transferts du budget à toutes les entreprises publiques et à "
-        "tous les établissements publics non administratifs : ce total contient les versements "
-        "aux caisses de sécurité sociale, les subventions de compensation et les crédits des "
-        "établissements d'enseignement et de culture. Le carré creux de 2016 est dans un "
-        "périmètre que le ministère a révisé ensuite : il n'est pas relié à 2017. Le rond creux "
-        "de 2024 est un montant de loi de finances, non une réalisation. En haut à droite, "
-        "l'encours en fin d'année des prêts que l'État garantit ; le rond creux est une "
-        "estimation de fin juin 2024. En bas à gauche, ce que 42 entreprises déclarent devoir à "
-        "l'État et ce qu'elles déclarent qu'il leur doit, en fin d'année. En bas à droite, en "
-        "millions de dinars, la part de l'État dans les bénéfices et excédents de chaque "
-        "exercice ; le rond creux de 2023 est un montant partiel, arrêté à la date du rapport."),
+        "Les quatre cadres n'ont ni la même échelle ni le même périmètre, et ne s'additionnent pas. En haut à gauche, les transferts du budget à toutes les entreprises publiques et à tous les établissements publics non administratifs : ce total contient les versements aux caisses de sécurité sociale, les subventions de compensation et les crédits des établissements d'enseignement et de culture. Le carré creux de 2016 est dans un périmètre que le ministère a révisé ensuite : il n'est pas relié à 2017. Le rond creux de 2024 est un montant de loi de finances, non une réalisation. En haut à droite, l'encours en fin d'année des prêts que l'État garantit ; le rond creux est une estimation de fin juin 2024, donnée en dinars seulement. En bas à gauche, ce que 42 entreprises déclarent devoir à l'État et ce qu'elles déclarent qu'il leur doit, en fin d'année. En bas à droite, la part de l'État dans les bénéfices et excédents de chaque exercice, en millions de dinars dans la première vue ; le rond creux de 2023 est un montant partiel, arrêté à la date du rapport. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est rappelée sur la figure (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "Un encours rapporté aux dépenses ou au PIB de l'année rapporte un stock à un flux annuel : la part se lit comme un ordre de grandeur, non comme une fraction du budget. "
+        "La part de l'État dans les bénéfices est rapportée aux dépenses et au PIB de l'exercice au titre duquel elle est due."),
 )
 ```
 
@@ -47,10 +41,10 @@ Le périmètre tient à deux lois et à leurs seuils ; les séries, à une oblig
 
 : Le périmètre des entreprises publiques et l'information sur leurs comptes : mise en place et grandes réformes ; entre guillemets, les mots des lois {#tbl-ep-reformes}
 
-- **Ce que le budget verse.** De 6,9 milliards de dinars en 2017 à 17,1 milliards en 2022 et en 2023, à toutes les entreprises et tous les établissements publics non administratifs. Ce total contient les caisses de sécurité sociale, la compensation et les établissements d'enseignement ; la part des seules entreprises, hors compensation et hors caisses, n'est pas calculée (@sec-ep-transferts).
-- **Ce que l'État garantit.** L'encours de la dette garantie passe de 11,3 milliards de dinars fin 2016 à 21,4 milliards fin 2023 ; la part due à des prêteurs intérieurs passe de 2,0 à 8,8 milliards (@sec-ep-garanties).
-- **Ce que l'État doit, et ce qui lui est dû.** Fin 2023, 42 entreprises déclarent 12,0 milliards de dinars de créances sur l'État, dont 7,0 milliards de subventions non réglées, et 11,2 milliards de dettes envers lui, dont 6,6 milliards d'impôts et taxes (@sec-ep-croisees).
-- **Ce que l'État reçoit.** Sa part dans les bénéfices va de 98 à 333 millions de dinars par exercice de 2017 à 2022 (@sec-ep-dividendes). De 1987 à 2009, les cessions lui ont rapporté 6,0 milliards de dinars courants, dont 3,1 milliards en 2006 (@sec-ep-cessions).
+- **Ce que le budget verse.** De 6,9 milliards de dinars en 2017 à 17,1 milliards en 2022 et en 2023, à toutes les entreprises et tous les établissements publics non administratifs : 25,1 % des dépenses de l'État hors service de la dette en 2017, 35,2 % en 2023 ; 6,7 % puis 11,4 % du PIB. Ce total contient les caisses de sécurité sociale, la compensation et les établissements d'enseignement ; la part des seules entreprises, hors compensation et hors caisses, n'est pas calculée (@sec-ep-transferts).
+- **Ce que l'État garantit.** L'encours de la dette garantie passe de 11,3 milliards de dinars fin 2016 à 21,4 milliards fin 2023, soit de 11,8 % à 14,3 % du PIB de l'année ; la part due à des prêteurs intérieurs passe de 2,0 à 8,8 milliards (@sec-ep-garanties).
+- **Ce que l'État doit, et ce qui lui est dû.** Fin 2023, 42 entreprises déclarent 12,0 milliards de dinars de créances sur l'État, dont 7,0 milliards de subventions non réglées, et 11,2 milliards de dettes envers lui, dont 6,6 milliards d'impôts et taxes : 8,0 % et 7,5 % du PIB (@sec-ep-croisees).
+- **Ce que l'État reçoit.** Sa part dans les bénéfices va de 98 à 333 millions de dinars par exercice de 2017 à 2022, soit de 0,08 % à 0,29 % du PIB (@sec-ep-dividendes). De 1987 à 2009, les cessions lui ont rapporté 6,0 milliards de dinars courants, dont 3,1 milliards en 2006 (@sec-ep-cessions).
 
 ## La mise en place, 1969-1987 {#sec-ep-mise-en-place}
 
@@ -160,7 +154,7 @@ En 2024, le droit des entreprises publiques tient en trois catégories, un seuil
 
 ## Les transferts du budget {#sec-ep-transferts}
 
-Le budget de l'État verse 17,1 milliards de dinars en 2023 à l'ensemble des entreprises publiques et des établissements publics non administratifs, contre 6,9 milliards en 2017. **Ce total contient les versements aux caisses de sécurité sociale, les subventions de compensation et les crédits des établissements d'enseignement et de culture ; le montant « hors compensation, hors caisses » n'est pas calculé.** La dépense de compensation est exposée dans le volume [« La compensation »](../compensation/index.html), les versements aux caisses dans [« Les caisses de sécurité sociale »](../caisses/index.html).
+Le budget de l'État verse 17,1 milliards de dinars en 2023 à l'ensemble des entreprises publiques et des établissements publics non administratifs, contre 6,9 milliards en 2017 : 35,2 % de ses dépenses hors service de la dette, contre 25,1 %, et 11,4 % du PIB, contre 6,7 %. **Ce total contient les versements aux caisses de sécurité sociale, les subventions de compensation et les crédits des établissements d'enseignement et de culture ; le montant « hors compensation, hors caisses » n'est pas calculé.** La dépense de compensation est exposée dans le volume [« La compensation »](../compensation/index.html), les versements aux caisses dans [« Les caisses de sécurité sociale »](../caisses/index.html).
 
 ```{python}
 #| label: fig-ep-transferts
@@ -171,24 +165,19 @@ from figures import entreprises_publiques as ep
 ep.figure(
     "transferts",
     caption=("Transferts du budget de l'État aux entreprises publiques et aux établissements "
-             "publics non administratifs, par secteur et par nature de dépense, en milliards de "
-             "dinars courants, 2016-2024"),
+             "publics non administratifs, par secteur, en dinars courants, en % des dépenses de "
+             "l'État hors service de la dette et en % du PIB, 2016-2024"),
     note_lecture=(
-        "Chaque barre est le total des transferts d'une année, dans la dernière édition du "
-        "rapport qui la donne en réalisation. Les secteurs sont ceux du ministère qui porte le "
-        "crédit : le secteur économique contient la subvention des produits alimentaires, des "
-        "carburants, de l'électricité et du transport public, parce que les entreprises qui la "
-        "reçoivent relèvent de ministères classés économiques ; le secteur social contient les "
-        "caisses de sécurité sociale. La barre pointillée de 2016 est dans l'ancien périmètre, "
-        "que le ministère révise à l'édition suivante : le trait vertical marque la rupture, et "
-        "2016 ne se compare pas à 2017. La barre hachurée de 2024 est un montant de loi de "
-        "finances. La seconde vue donne les mêmes totaux par nature de dépense."),
+        "Chaque barre est le total des transferts d'une année, dans la dernière édition du rapport qui la donne en réalisation. Les secteurs sont ceux du ministère qui porte le crédit : le secteur économique contient la subvention des produits alimentaires, des carburants, de l'électricité et du transport public, parce que les entreprises qui la reçoivent relèvent de ministères classés économiques ; le secteur social contient les caisses de sécurité sociale. La barre pointillée de 2016 est dans l'ancien périmètre, que le ministère révise à l'édition suivante : le trait vertical marque la rupture, et 2016 ne se compare pas à 2017. La barre hachurée de 2024 est un montant de loi de finances. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        'Les transferts sont eux-mêmes une part de ces dépenses : la deuxième vue est une part au sens propre. '
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
 )
 ```
 
 - **Qui reçoit.** Le classement est celui du ministère qui porte le crédit. En 2023, le secteur économique reçoit 12,7 milliards de dinars, le secteur social 3,1 milliards, la souveraineté 0,7 milliard, le secteur éducatif et culturel 0,6 milliard (@tbl-ep-transferts). Le rapport avertit que « de nombreux transferts à caractère social » — subvention des produits alimentaires et du transport public — sont classés au secteur économique [@minfin-transferts-2021, p. 5 ; @minfin-transferts-2025, p. 8].
 - **Sous quelle forme.** Des interventions, pour 14,7 milliards de dinars sur 17,1 en 2023 ; la rémunération fait 1,2 milliard, l'investissement 0,7 milliard, le fonctionnement 0,4 milliard.
-- **Le saut de 2022.** De 10,8 milliards de dinars en 2021 à 17,1 milliards en 2022 : la hausse est tout entière dans les interventions du secteur économique, où se trouve la compensation.
+- **Le saut de 2022.** De 10,8 milliards de dinars en 2021 à 17,1 milliards en 2022, de 26,8 % à 37,0 % des dépenses de l'État et de 8,2 % à 12,2 % du PIB : la hausse est tout entière dans les interventions du secteur économique, où se trouve la compensation.
 - **Voté et exécuté.** L'exécution dépasse la loi de finances quatre années de suite : 9,9 milliards de dinars réalisés en 2020 pour 8,2 votés, 10,8 pour 7,7 en 2021, 17,1 pour 12,4 en 2022, 17,1 pour 14,5 en 2023 (@tbl-ep-transferts-editions).
 - **Qui paie.** Les ressources propres du budget, pour 15,7 milliards de dinars sur 17,1 en 2023 ; les comptes spéciaux du Trésor, pour 1,4 milliard ; le reste vient de crédits extérieurs affectés (@tbl-ep-transferts-sources).
 
@@ -204,8 +193,10 @@ ep.tableau_transferts(
              "Source : ministère des Finances, rapport sur les transferts et les garanties, "
              "éditions indiquées [@minfin-transferts-2020, p. 5-6 ; @minfin-transferts-2021, "
              "p. 3-4 ; @minfin-transferts-2022, p. 7-8 ; @minfin-transferts-2023, p. 7-8 ; "
-             "@minfin-transferts-2024, p. 7-8 ; @minfin-transferts-2025, p. 7-8]. Dinars de 2025 : "
-             "par l'indice des prix à la consommation"))
+             "@minfin-transferts-2024, p. 7-8 ; @minfin-transferts-2025, p. 7-8]. Parts "
+             "calculées ici : dépenses de l'État hors service de la dette "
+             "[@minfin-remunerations] ; PIB de l'INS en base 2015, non rétropolé pour ces "
+             "années [@ins-cnat-2015]"))
 ```
 
 <!-- TODO (documentaliste) : dépouiller les annexes par établissement du rapport sur les transferts et les garanties (édition LF 2020 : p. 62-123 ; éditions arabes : seconde moitié du rapport) pour isoler le total « hors compensation, hors caisses » ; le bloc du ministère du Transport est déjà versé (série transport-transferts-par-entreprise). Les parts imprimées par le rapport — 7,1 % du PIB en 2017, 7,9 % en 2018, 7,7 % en 2019 ; 25,1 %, 28,1 % et 26,0 % du budget — ne disent pas la base du PIB et ne sont pas reprises ici. -->
@@ -243,7 +234,7 @@ Par entreprise, les transferts ne sont connus que pour l'échantillon du rapport
 
 ## Les garanties de l'État et la dette garantie {#sec-ep-garanties}
 
-Par la [garantie de l'État](#g-garantie-etat), l'État s'engage à payer à la place d'une entreprise ou d'un établissement public qui n'honorerait pas un prêt. Trois grandeurs se distinguent : le plafond que la loi de finances fixe pour l'année ; les garanties accordées dans l'année ; l'encours de la dette garantie en fin d'année. Fin 2023, cet encours est de 21,4 milliards de dinars, contre 11,3 milliards fin 2016.
+Par la [garantie de l'État](#g-garantie-etat), l'État s'engage à payer à la place d'une entreprise ou d'un établissement public qui n'honorerait pas un prêt. Trois grandeurs se distinguent : le plafond que la loi de finances fixe pour l'année ; les garanties accordées dans l'année ; l'encours de la dette garantie en fin d'année. Fin 2023, cet encours est de 21,4 milliards de dinars, soit 14,3 % du PIB de l'année, contre 11,3 milliards et 11,8 % fin 2016.
 
 ```{python}
 #| label: fig-ep-garanties
@@ -254,23 +245,21 @@ from figures import entreprises_publiques as ep
 ep.figure(
     "garanties",
     caption=("Garanties de l'État aux entreprises et établissements publics : garanties "
-             "accordées dans l'année et plafond de la loi de finances ; encours de la dette "
-             "garantie en fin d'année, en milliards de dinars courants, 2016-2024"),
+             "accordées dans l'année et plafond de la loi de finances, en dinars courants, en % "
+             "des dépenses de l'État hors service de la dette et en % du PIB, 2016-2023"),
     note_lecture=(
-        "Première vue : les barres sont les garanties accordées dans l'année, selon que le "
-        "prêt garanti est extérieur ou intérieur ; le trait noir est le plafond fixé par la "
-        "loi de finances, après loi de finances rectificative en 2019 et en 2020 (7 milliards "
-        "de dinars en 2020). Le premier semestre de 2024 "
-        "n'est pas tracé : un semestre ne se compare pas à une année. Seconde vue : l'encours "
-        "de la dette garantie en fin d'année ; la barre hachurée est une estimation de fin "
-        "juin 2024."),
+        "Les barres sont les garanties accordées dans l'année, selon que le prêt garanti est extérieur ou intérieur ; le trait noir est le plafond fixé par la loi de finances, après loi de finances rectificative en 2019 et en 2020 (7 milliards de dinars en 2020). Le premier semestre de 2024 n'est pas tracé : un semestre ne se compare pas à une année. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        "Une garantie n'est pas une dépense : la part des dépenses de l'État donne une échelle, non une fraction du budget. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
 )
 ```
 
 - **Le plafond.** 3 000 MD de 2016 à 2018 ; 4 790 MD en 2019, après une loi de finances initiale à 4 500 MD ; 7 000 MD de 2020 à 2022 ; 8 000 MD en 2023 et en 2024. Pour 2020, la loi de finances initiale fixait 5 000 MD ; [la loi de finances rectificative du 14 décembre 2020](#r-ep-lfr-2020) porte le plafond à 7 000 MD. La traduction française d'une édition du rapport imprime 7 500 MD [@minfin-transferts-2021, p. 5] ; ses éditions arabes impriment 7 000 MD, comme la loi [@minfin-transferts-2022, p. 8].
-- **Les garanties accordées.** De 2,4 à 5,2 milliards de dinars par an de 2016 à 2023 (@tbl-ep-garanties).
+- **Les garanties accordées.** De 2,4 à 5,2 milliards de dinars par an de 2016 à 2023, soit de 1,8 % à 3,9 % du PIB (@tbl-ep-garanties).
 - **À quoi servent les garanties intérieures.** En 2023, sur 3 055,7 MD : 1 550,4 MD au titre de l'audit complet des banques publiques, 1 215,2 MD pour financer l'importation de produits de base — pétrole, gaz, céréales, engrais, sucre, café —, 141,0 MD de rééchelonnements, 124,0 MD d'autres opérations d'exploitation, 25,1 MD d'investissement [@minfin-dette-2025, p. 64]. Les importations de produits de base faisaient 188,2 MD en 2021 et 956,1 MD en 2022 (@tbl-ep-garanties-objet).
-- **Qui prête.** L'encours garanti dû à des prêteurs intérieurs passe de 2,0 milliards de dinars fin 2016 à 8,8 milliards fin 2023 ; l'encours extérieur, de 9,3 à 12,5 milliards.
+- **Qui prête.** L'encours garanti dû à des prêteurs intérieurs passe de 2,0 milliards de dinars fin 2016 à 8,8 milliards fin 2023 ; l'encours extérieur, de 9,3 à 12,5 milliards (@tbl-ep-encours).
+- **Deux parts du PIB.** Le rapport sur la dette publique imprime sa propre part : 13,5 % du PIB pour fin 2023, sur un PIB dont il ne dit pas la base (@tbl-ep-garanties-pib). Rapporté au PIB de l'INS en base 2015, le même encours fait 14,3 %. Les deux mesures coïncident de 2016 à 2020.
 
 ```{python}
 #| echo: false
@@ -278,15 +267,51 @@ ep.figure(
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import entreprises_publiques as ep
 ep.tableau_garanties(
-    caption=("Garanties de l'État : plafond de la loi de finances, garanties accordées dans "
-             "l'année et encours de la dette garantie en fin d'année, 2016-2024. Le plafond de "
-             "2019 et celui de 2020 sont ceux d'une loi de finances rectificative. La dernière "
-             "ligne porte les garanties du "
-             "premier semestre de 2024 et l'encours estimé à fin juin 2024. Source : ministère "
-             "des Finances, rapport sur la dette publique [@minfin-dette-2022, p. 56-58 ; "
-             "@minfin-dette-2025, p. 62-65] et rapport sur les transferts et les garanties "
-             "[@minfin-transferts-garanties]. Dinars de 2025 : par l'indice des prix à la "
-             "consommation"))
+    caption=("Garanties de l'État : plafond de la loi de finances et garanties accordées dans "
+             "l'année, 2016-2024. Le plafond de 2019 et celui de 2020 sont ceux d'une loi de "
+             "finances rectificative. Source : ministère des Finances, rapport sur la dette "
+             "publique [@minfin-dette-2022, p. 56 ; @minfin-dette-2025, p. 62] et rapport sur "
+             "les transferts et les garanties [@minfin-transferts-garanties]. Parts calculées "
+             "ici : dépenses de l'État hors service de la dette [@minfin-remunerations] ; PIB "
+             "de l'INS en base 2015, non rétropolé pour ces années [@ins-cnat-2015]"))
+```
+
+L'encours de la dette garantie augmente chaque année en dinars ; rapporté au PIB, il passe de 11,8 % fin 2016 à 14,8 % fin 2018, puis reste entre 13,6 % et 14,6 % (@fig-ep-encours).
+
+```{python}
+#| label: fig-ep-encours
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "encours",
+    caption=("Encours de la dette garantie par l'État en fin d'année, extérieure et "
+             "intérieure, en dinars courants, en % des dépenses de l'État hors service de la "
+             "dette et en % du PIB, 2016-2024"),
+    note_lecture=(
+        "Les barres sont l'encours en fin d'année des prêts garantis par l'État, selon que le prêteur est extérieur ou intérieur ; la barre hachurée est une estimation de fin juin 2024, donnée en dinars seulement. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        "Un encours rapporté aux dépenses ou au PIB de l'année rapporte un stock à un flux annuel : la part se lit comme un ordre de grandeur, non comme une fraction du budget. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "Dans la vue en % du PIB, les croix sont les parts que le rapport sur la dette publique imprime lui-même, dans deux éditions, sans dire la base de son PIB : elles sont posées à côté des barres, non mêlées à elles. Elles coïncident avec la part calculée de 2016 à 2020 et s'en écartent ensuite : 13,5 % imprimés pour fin 2023, 14,3 % calculés."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_encours(
+    caption=("Encours de la dette garantie par l'État en fin d'année, 2016-2024. La dernière "
+             "ligne est une estimation de fin juin 2024. Les parts rapportent un encours aux "
+             "dépenses et au PIB de l'année. Source : ministère des Finances, rapport sur la "
+             "dette publique [@minfin-dette-2022, p. 58 ; @minfin-dette-2025, p. 65]. Parts "
+             "calculées ici : dépenses de l'État hors service de la dette "
+             "[@minfin-remunerations] ; PIB de l'INS en base 2015, non rétropolé pour ces "
+             "années [@ins-cnat-2015] ; les parts du PIB imprimées par le rapport sont au "
+             "@tbl-ep-garanties-pib"))
 ```
 
 :::: {.chronologie-repliable titre="Garanties de l'État : encours garanti en % du PIB tel qu'imprimé, montants des garanties intérieures par objet 2021-2024 et des garanties liées à l'audit des banques publiques 2016-2021, plafond de 2020, cadre"}
@@ -328,7 +353,7 @@ ep.tableau_audit_banques(
 
 ## Les dettes et créances croisées {#sec-ep-croisees}
 
-Fin 2023, 42 entreprises publiques déclarent 11 960,7 MD de créances sur l'État et 11 246,3 MD de dettes envers lui : l'État leur doit 714,4 MD de plus qu'elles ne lui doivent. Ces montants sont ceux des entreprises : le ministère des Finances écrit que les données lui sont pour l'essentiel fournies par elles et qu'il n'en garantit pas la fiabilité [@minfin-ep-2025, p. 124]. Les banques publiques ne sont pas dans cet échantillon ; les caisses de sécurité sociale y sont.
+Fin 2023, 42 entreprises publiques déclarent 11 960,7 MD de créances sur l'État et 11 246,3 MD de dettes envers lui, soit 8,0 % et 7,5 % du PIB de l'année : l'État leur doit 714,4 MD de plus qu'elles ne lui doivent. Ces montants sont ceux des entreprises : le ministère des Finances écrit que les données lui sont pour l'essentiel fournies par elles et qu'il n'en garantit pas la fiabilité [@minfin-ep-2025, p. 124]. Les banques publiques ne sont pas dans cet échantillon ; les caisses de sécurité sociale y sont.
 
 ```{python}
 #| echo: false
@@ -339,8 +364,11 @@ ep.tableau_croisees(
     caption=("Dettes et créances croisées entre l'État et 42 entreprises publiques, hors "
              "banques, en fin d'année, 2021-2023, selon les déclarations des entreprises. Deux "
              "lignes des dettes portent, dans le rapport, un libellé français et un libellé "
-             "arabe qui se contredisent : elles sont données sous les deux. Source : ministère "
-             "des Finances [@minfin-ep-2025, p. 115-123]"))
+             "arabe qui se contredisent : elles sont données sous les deux. Les parts rapportent "
+             "un encours de fin d'année aux dépenses de l'État hors service de la dette et au "
+             "PIB de l'année. Source : ministère des Finances [@minfin-ep-2025, p. 115-123]. "
+             "Parts calculées ici : dépenses de l'État [@minfin-remunerations] ; PIB de l'INS "
+             "en base 2015, non rétropolé pour ces années [@ins-cnat-2015]"))
 ```
 
 - **Ce que l'État doit.** D'abord des subventions non réglées : 5 934,8 MD fin 2021, 7 680,5 MD fin 2022, 6 956,8 MD fin 2023, soit 58 % des créances des entreprises à cette date. Viennent ensuite les prestations rendues à l'État, 3 312,3 MD fin 2023.
@@ -372,7 +400,26 @@ L'État reçoit de ses entreprises deux choses que le rapport sur les entreprise
 
 ### La part de l'État dans les bénéfices {#sec-ep-dividendes-part}
 
-La part de l'État dans les bénéfices et excédents des entreprises où il participe directement est de 204,6 MD au titre de l'exercice 2022 ; elle va de 98,3 MD (exercice 2020) à 333,0 MD (exercice 2018) sur les six exercices arrêtés.
+La part de l'État dans les bénéfices et excédents des entreprises où il participe directement est de 204,6 MD au titre de l'exercice 2022 ; elle va de 98,3 MD (exercice 2020) à 333,0 MD (exercice 2018) sur les six exercices arrêtés, soit de 0,26 % à 1,12 % des dépenses de l'État hors service de la dette et de 0,08 % à 0,29 % du PIB.
+
+```{python}
+#| label: fig-ep-dividendes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "dividendes",
+    caption=("Part de l'État dans les bénéfices et excédents des entreprises publiques à "
+             "participation directe, par exercice, en dinars courants, en % des dépenses de "
+             "l'État hors service de la dette et en % du PIB, 2017-2023"),
+    note_lecture=(
+        "Chaque point plein est le montant arrêté d'un exercice, dans la dernière édition du rapport qui le donne. Le rond creux de 2023 est un montant partiel, arrêté à la date du rapport : il n'est pas relié aux exercices arrêtés. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        "Le montant est rapporté aux dépenses et au PIB de l'exercice au titre duquel il est dû, non de l'année où il est encaissé. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
+)
+```
 
 ```{python}
 #| echo: false
@@ -385,7 +432,9 @@ ep.tableau_dividendes(
              "« Partiel » : montant versé ou arrêté à la date du rapport, que l'édition "
              "suivante révise. Source : ministère des Finances [@minfin-ep, p. 150 ; "
              "@minfin-ep-2022 ; @minfin-ep-2023 ; @minfin-ep-2024 ; @minfin-ep-2025, "
-             "p. 125-126]. Dinars de 2025 : par l'indice des prix à la consommation"))
+             "p. 125-126]. Parts calculées ici, sur l'année de l'exercice : dépenses de "
+             "l'État hors service de la dette [@minfin-remunerations] ; PIB de l'INS en base "
+             "2015, non rétropolé pour ces années [@ins-cnat-2015]"))
 ```
 
 - **Peu d'entreprises distribuent.** De 7 à 14 par exercice, sur 71 à participation directe.
@@ -406,18 +455,13 @@ from figures import entreprises_publiques as ep
 ep.figure(
     "flux",
     caption=("Versements au budget de l'État et transferts reçus du budget, échantillon du "
-             "rapport sur les entreprises publiques, par édition, en milliards de dinars "
-             "courants, 2017-2022"),
+             "rapport sur les entreprises publiques, par édition, en dinars courants, en % des "
+             "dépenses de l'État hors service de la dette et en % du PIB, 2017-2022"),
     note_lecture=(
-        "Chaque édition du rapport est un segment : elle relie les années qu'elle donne, sur "
-        "son propre échantillon (33 entreprises pour l'édition LF 2021, 50 pour LF 2022, 48 "
-        "pour LF 2023 et LF 2024), et n'est reliée à aucune autre. Une même année a donc "
-        "plusieurs points. Les marques creuses sont des valeurs provisoires. Les transferts "
-        "de 2020 valent 4,6 milliards de dinars dans l'édition LF 2023 et 6,5 milliards dans "
-        "l'édition LF 2024, qui y ajoute les versements aux caisses de sécurité sociale. Pour "
-        "2022, l'édition LF 2024 imprime deux totaux de transferts, 14 506,6 et 14 560,6 MD ; "
-        "le point tracé est le second, que redonnent la somme des composantes et le total "
-        "par entreprise."),
+        "Chaque édition du rapport est un segment : elle relie les années qu'elle donne, sur son propre échantillon (33 entreprises pour l'édition LF 2021, 50 pour LF 2022, 48 pour LF 2023 et LF 2024), et n'est reliée à aucune autre. Une même année a donc plusieurs points. Les marques creuses sont des valeurs provisoires. Les transferts de 2020 valent 4,6 milliards de dinars dans l'édition LF 2023 et 6,5 milliards dans l'édition LF 2024, qui y ajoute les versements aux caisses de sécurité sociale. Pour 2022, l'édition LF 2024 imprime deux totaux de transferts, 14 506,6 et 14 560,6 MD ; le point tracé est le second, que redonnent la somme des composantes et le total par entreprise. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        "Les versements sont pour l'essentiel des recettes de l'État : les rapporter à ses dépenses donne une échelle commune aux deux flux, non une part. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
 )
 ```
 
@@ -495,7 +539,7 @@ Les agrégats de résultats excluent toujours les sept entreprises du secteur fi
 
 ### Les recettes de cession, 1987-2009 {#sec-ep-lp-cessions}
 
-En vingt-trois ans, les cessions rapportent 5 976,4 MD courants, soit 18,3 milliards de dinars de 2025. Quatre années font plus de 400 MD courants : 1998, 2000, 2002 et 2006.
+En vingt-trois ans, les cessions rapportent 5 976,4 MD courants. Quatre années font plus de 400 MD courants et plus de 1 % du PIB : 1998, 2000, 2002 et 2006 ; les dix-neuf autres restent sous 0,6 % du PIB.
 
 ```{python}
 #| label: fig-ep-cessions
@@ -506,22 +550,17 @@ from figures import entreprises_publiques as ep
 ep.figure(
     "cessions",
     caption=("Recettes des opérations de privatisation et de restructuration des entreprises à "
-             "participations publiques, par année, en millions de dinars courants et en "
-             "millions de dinars de 2025, 1987-2009"),
+             "participations publiques, par année, en dinars courants, en % des dépenses de "
+             "l'État hors service de la dette et en % du PIB, 1987-2009"),
     note_lecture=(
-        "L'échelle est logarithmique : une graduation vaut dix fois la précédente, ce qui "
-        "laisse lisibles les années à quelques dizaines de millions de dinars à côté de 2006 "
-        "(3,1 milliards). Les barres sont les recettes du relevé de 1987 à 2009. Les losanges "
-        "creux sont les valeurs du relevé précédent, arrêté à 2005, quand elles diffèrent : "
-        "1998 et 1999, et, de moins de 0,2 million de dinars, 2004 et 2005. La seconde vue "
-        "donne les mêmes recettes en dinars de 2025, par l'indice des prix à la consommation."),
+        "L'échelle est logarithmique dans les trois vues : une graduation vaut dix fois la précédente, ce qui laisse lisibles les années à quelques dizaines de millions de dinars à côté de 2006 (3,1 milliards). Les barres sont les recettes du relevé de 1987 à 2009. Dans la première vue, les losanges creux sont les valeurs du relevé précédent, arrêté à 2005, quand elles diffèrent : 1998 et 1999, et, de moins de 0,2 million de dinars, 2004 et 2005. Deuxième vue : les recettes sont rapportées aux dépenses de l'État hors service de la dette, pour donner une échelle — une recette de cession n'est pas une dépense ; ces dépenses ne sont pas disponibles de 1988 à 1990, et la vue s'interrompt sur la bande grise. Troisième vue : le dénominateur est le PIB aux prix courants du ministère des Finances, dont la base change. Chaque changement est marqué d'un trait et la base de chaque segment est écrite au-dessus du cadre : base 1983 jusqu'en 1996, présumée avant 1992 ; base 1997, rétropolée, de 1997 à 2001 ; valeur propre au ministère, rattachée à aucune base, de 2002 à 2004 ; base 1997 de 2005 à 2009. Les segments ne sont pas raccordés : chaque trait est une rupture du seul dénominateur (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures))."),
 )
 ```
 
-- **2006.** 3 110,5 MD, plus de la moitié du total : c'est l'année de l'ouverture du capital de Tunisie Télécom, que l'ITCEQ chiffre à « de l'ordre de 3052 millions de dinars » (@sec-ep-itceq).
+- **2006.** 3 110,5 MD, plus de la moitié du total, soit 6,8 % du PIB de l'année et l'équivalent de 31,2 % des dépenses de l'État hors service de la dette : c'est l'année de l'ouverture du capital de Tunisie Télécom, que l'ITCEQ chiffre à « de l'ordre de 3052 millions de dinars » (@sec-ep-itceq).
 - **Deux relevés, quatre années divergentes.** Le relevé arrêté à 2005 donne 481,4 MD pour 1998 et 68,9 MD pour 1999 ; celui arrêté à 2009, 456,6 MD et 43,5 MD. Le second est celui dont les sommes par plan redonnent la page officielle (@tbl-ep-cessions-plans) ; c'est lui que le tableau retient.
 
-:::: {.chronologie-repliable titre="Recettes de cession des participations publiques : montants année par année, en dinars courants et en dinars de 2025, 1987-2009"}
+:::: {.chronologie-repliable titre="Recettes de cession des participations publiques : montants année par année, en dinars courants, en % des dépenses de l'État et en % du PIB, 1987-2009"}
 
 ```{python}
 #| echo: false
@@ -533,15 +572,18 @@ ep.tableau_cessions(
              "participations publiques, par année, 1987-2009. Relevé de la Direction générale "
              "de la privatisation arrêté à 2009 ; la dernière colonne donne la valeur du relevé "
              "arrêté à 2005 quand elle diffère. Source : Direction générale de la privatisation "
-             "[@dgpv-recettes-annuelles-1987-2009 ; @dgpv-recettes-annuelles-1987-2005]. Dinars "
-             "de 2025 : par l'indice des prix à la consommation"))
+             "[@dgpv-recettes-annuelles-1987-2009 ; @dgpv-recettes-annuelles-1987-2005]. Parts "
+             "calculées ici : dépenses de l'État hors service de la dette, non disponibles de "
+             "1988 à 1990 [@minfin-remunerations] ; PIB aux prix courants du ministère des "
+             "Finances, dans la base dite à chaque ligne, sans raccord entre les bases "
+             "[@minfin-indicateurs-fp]"))
 ```
 
 ::::
 
 ### Les résultats agrégés, par édition, 2017-2022 {#sec-ep-lp-resultats}
 
-Le résultat net agrégé des entreprises publiques, hors banques et hors caisses de sécurité sociale, est négatif pour chacun des six exercices publiés et dans chaque édition : de −177,9 MD (exercice 2019, 81 entreprises) à −4 187,1 MD (exercice 2018, 78 entreprises).
+Le résultat net agrégé des entreprises publiques, hors banques et hors caisses de sécurité sociale, est négatif pour chacun des six exercices publiés et dans chaque édition : de −177,9 MD (exercice 2019, 81 entreprises) à −4 187,1 MD (exercice 2018, 78 entreprises), soit de −0,1 % à −3,7 % du PIB.
 
 ```{python}
 #| label: fig-ep-resultats
@@ -552,16 +594,13 @@ from figures import entreprises_publiques as ep
 ep.figure(
     "resultats",
     caption=("Résultat net agrégé des entreprises publiques, hors secteur financier et hors "
-             "caisses de sécurité sociale, par édition du rapport, en milliards de dinars "
-             "courants, exercices 2017-2022"),
+             "caisses de sécurité sociale, par édition du rapport, en dinars courants, en % des "
+             "dépenses de l'État hors service de la dette et en % du PIB, exercices 2017-2022"),
     note_lecture=(
-        "Chaque édition du rapport donne deux exercices, sur un même ensemble d'entreprises : "
-        "c'est un segment. La variation se lit à l'intérieur d'un segment, jamais d'un segment "
-        "à l'autre : un même exercice a deux valeurs, celles de deux ensembles différents — "
-        "le résultat de 2019 est de −0,7 milliard de dinars pour 77 entreprises et de "
-        "−0,2 milliard pour 81. La seconde vue sépare la somme des résultats nets positifs "
-        "(triangles vers le haut) de la somme des résultats négatifs (triangles vers le bas, "
-        "tirets)."),
+        "Chaque édition du rapport donne deux exercices, sur un même ensemble d'entreprises : c'est un segment. La variation se lit à l'intérieur d'un segment, jamais d'un segment à l'autre : un même exercice a deux valeurs, celles de deux ensembles différents — le résultat de 2019 est de −0,7 milliard de dinars pour 77 entreprises et de −0,2 milliard pour 81. Le trait plein est le résultat net agrégé ; les pointillés sont la somme des résultats nets positifs (triangles vers le haut) et la somme des résultats négatifs (triangles vers le bas). "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        "Le résultat des entreprises n'est ni une dépense ni une recette de l'État : la part des dépenses donne une échelle. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
 )
 ```
 

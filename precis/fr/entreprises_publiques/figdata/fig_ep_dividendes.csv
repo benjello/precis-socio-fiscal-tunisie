@@ -1,0 +1,21 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : entreprises-publiques-dividendes-etat, entreprises-publiques-denominateurs
+# sources (citation) : @minfin-ep, @minfin-ep-2022, @minfin-ep-2023, @minfin-ep-2024, @minfin-ep-2025, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : CHAQUE EXERCICE EST RÉVISÉ PAR L'ÉDITION SUIVANTE, À LA HAUSSE : 2019, 230 puis 263,8 ; 2020, 67,1 puis 98,3 ; 2021, 140,1 puis 145,4 — le fichier garde tout (`edition`, `divergence_entre_editions`). `etat` = « partiel » pour le dernier exercice de chaque édition, que le rapport dit non définitif (25 pour 2020, 37,2 pour 2021, 99,3 pour 2022, 195,6 pour 2023) : NE PAS LE TRACER COMME UN EXERCICE ARRÊTÉ. Chiffres de PROSE, pas de tableau. Le nombre d'entreprises distributrices de 2018 est 7 (LF 2021) puis 8 (LF 2022). Ce n'est pas le total des versements des entreprises au budget (voir entreprises-publiques-versements-transferts). LU À L'IMAGE, y compris 2019 et 2020., Mêmes dénominateurs que le volume « La compensation ». Les bases du PIB ne sont pas raccordées : la part du PIB se lit par segment, chaque changement de base est une rupture du seul dénominateur. Dépenses de l'État non disponibles de 1988 à 1990. Un encours rapporté aux dépenses ou au PIB de l'année rapporte un stock à un flux.
+# note : Part de l'État dans les bénéfices et excédents des entreprises publiques à participation directe, par exercice, en dinars courants, en % des dépenses de l'État hors service de la dette et en % du PIB, 2017-2023
+Exercice,Édition,État de la valeur,Part de l'État (MD courants),% des dépenses de l'État hors service de la dette,% du PIB,Base du PIB
+2017,LF2021,arrêté,163.0,0.597,0.16,base 2015
+2018,LF2021,arrêté,333.0,1.117,0.295,base 2015
+2018,LF2022,arrêté,333.0,1.117,0.295,base 2015
+2019,LF2022,arrêté,230.0,0.704,0.187,base 2015
+2019,LF2023,arrêté,263.8,0.807,0.215,base 2015
+2020,LF2022,partiel,25.0,0.066,0.021,base 2015
+2020,LF2023,arrêté,67.1,0.178,0.056,base 2015
+2020,LF2024,arrêté,98.3,0.261,0.082,base 2015
+2021,LF2023,partiel,37.2,0.092,0.028,base 2015
+2021,LF2024,arrêté,140.1,0.348,0.107,base 2015
+2021,LF2025,arrêté,145.4,0.361,0.111,base 2015
+2022,LF2024,partiel,99.3,0.215,0.071,base 2015
+2022,LF2025,arrêté,204.6,0.443,0.147,base 2015
+2023,LF2025,partiel,195.6,0.402,0.131,base 2015

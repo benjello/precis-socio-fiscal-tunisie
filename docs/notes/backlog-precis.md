@@ -2234,8 +2234,11 @@ Plan : vue d'ensemble (`#sec-ep-vue-ensemble`) ; mise en place 1969-1987 ; grand
 (1989, 1994-2001, cessions 1987-2009, rapport annuel de 2019, depuis 2011) et registre des
 textes ; état du droit ; transferts du budget ; garanties ; dettes et créances croisées ;
 dividendes et versements ; cessions ; longue période ; Livre blanc de 2018 et études
-extérieures. Six figures et vingt-six tableaux, tous engendrés depuis les séries sauf quatre
-(les réformes ; les deux registres de textes ; les six éditions du rapport).
+extérieures. Huit figures et vingt-sept tableaux, tous engendrés depuis les séries sauf quatre
+(les réformes ; les deux registres de textes ; les six éditions du rapport). Depuis le
+11 octobre 2026 (retouche), chaque figure a trois vues — dinars courants, % des dépenses de
+l'État hors service de la dette, % du PIB — et les tableaux de premier plan les mêmes colonnes ;
+les dinars constants sont retirés du volume.
 
 Ce qui reste :
 
@@ -2296,6 +2299,14 @@ Ce qui reste :
   douze recopiées d'autres livres (`imf-tunisia-art4-2020`, `wb-tunisia-per-2020`,
   `decret97-564`, `decret2004-2265`, `loi-org-2019-15-lob`, `bct-ra`, `ins-annuaire`…) : à
   promouvoir au fonds commun et à verser dans Zotero (`docs/notes/biblio-a-rapatrier.md`).
+- **Parts calculées dans le module de figures, non dans l'entrepôt** : les dénominateurs
+  (dépenses de l'État hors service de la dette, 1986-1987 et depuis 1991 ; PIB par segment de
+  base, depuis 1986) sont lus dans la série `compensation-parts`, qui les porte déjà, et les
+  parts sont calculées par `figures/entreprises_publiques.py`. À porter dans `tunisia-data`
+  (une série « à tracer » par grandeur, comme pour la compensation), puis à relire ici. Les
+  dépenses de l'État manquent de 1988 à 1990 : la vue des cessions s'y interrompt. La dépense
+  de 2024 employée pour la loi de finances 2024 est celle de la série, dont l'état (réalisé ou
+  voté) est à vérifier.
 - **Intégration du volume** : livre arabe et `_quarto.yml` arabe, page d'accueil, comptes de
   livres (`AGENTS.md`, README), collection Zotero dans `sync_biblio.py`, libellés arabes des
   figures (`figures/entreprises_publiques.py`, table `LIB`).
