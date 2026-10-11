@@ -490,7 +490,17 @@ et la SNCFT pour 2023 — n'ont pas de bilan dans le rapport.
 
 ### 1.7 Effectifs et masse salariale d'ensemble
 
-- **Aucun effectif total n'est publié dans les annexes.** Seule la masse existe : charges de
+- **Correction du 11 octobre 2026 (second passage, séries versées dans `tunisia-data`, PR n° 61
+  « Entreprises publiques : effectifs par entreprise (2016-2023) et effectif total publié »)** :
+  la phrase qui suit est fausse. Un effectif total **est** publié, dans le chapitre
+  d'introduction des éditions arabes de l'annexe 9, avec les charges de personnel : exercice
+  2018, 99 836 agents et 3 596,5 MD (84 entreprises pour les agents, 82 pour les charges ;
+  LF 2022) ; 2019, 99 523 agents et 3 939,53 MD (86 ; LF 2023) ; 2020, 96 305,5 agents et
+  4 113,1 MD (88 ; LF 2024) ; 2022, 97 208 agents et 4 279,3 MD (85 ; LF 2025). Hors secteur
+  financier et hors caisses ; quatre points, quatre périmètres, pas une série ; rien pour 2021
+  ni avant 2018 ; le total de 2020 ne recoupe pas la somme des fiches. Voir
+  `sources/entreprises-publiques.md`, section « Effectifs ».
+- ~~**Aucun effectif total n'est publié dans les annexes.**~~ Seule la masse existe : charges de
   personnel agrégées, 3,4 à 4,3 milliards de dinars de 2017 à 2022 (§ 1.3), hors banques et
   caisses ; 2 939,3 MD en 2016 pour 87 établissements, + 40 % sur 2011 (LF 2020, p. 14).
 - Dix premières par charges de personnel, 2022 (LF 2025, p. 19, image) : STEG 615,7 ; Tunisie

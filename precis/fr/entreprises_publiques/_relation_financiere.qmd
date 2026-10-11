@@ -1,6 +1,6 @@
 # La relation financière entre l'État et les entreprises publiques {#sec-ep-relation .domicile-unique}
 
-Ce chapitre donne, pour les [entreprises publiques](#g-entreprises-publiques) : ce que le budget de l'État leur verse, ce que l'État garantit de leur dette, ce que l'État et elles se doivent, ce qu'elles lui versent, et ce que l'État a tiré de leur cession. Les comptes des caisses de sécurité sociale sont dans le volume [« Les caisses de sécurité sociale »](../caisses/index.html), la dépense de [compensation](#g-compensation-des-prix) et la subvention du transport dans [« La compensation »](../compensation/index.html), les statuts et les salaires des agents dans [« Les rémunérations publiques »](../remunerations_publiques/index.html).
+Ce chapitre donne, pour les [entreprises publiques](#g-entreprises-publiques) : ce que le budget de l'État leur verse, ce que l'État garantit de leur dette, ce que l'État et elles se doivent, ce qu'elles lui versent, et ce que l'État a tiré de leur cession. Les comptes des caisses de sécurité sociale sont dans le volume [« Les caisses de sécurité sociale »](../caisses/index.html), la dépense de [compensation](#g-compensation-des-prix) dans [« La compensation »](../compensation/index.html) et la subvention du transport dans son chapitre [« Le transport public »](../compensation/_transport.html#sec-compensation-transport), les statuts et les salaires des agents dans [« Les rémunérations publiques »](../remunerations_publiques/index.html).
 
 Les montants sont en millions de dinars courants (MD) ou en milliards de dinars courants. Chaque série est aussi donnée en part des dépenses du budget de l'État hors service de la dette, et en part du PIB ; le PIB employé dit sa base, et une série en part du PIB se lit par segment de base (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Trois rapports du ministère des Finances, annexés chaque année au projet de loi de finances, portent les séries : le rapport sur les entreprises publiques, le rapport sur les transferts et les garanties, le rapport sur la dette publique. Une « édition LF 2025 » est le rapport annexé au projet de loi de finances pour 2025.
 
@@ -44,6 +44,7 @@ Le périmètre tient à deux lois et à leurs seuils ; les séries, à une oblig
 - **Ce que le budget verse.** De 6,9 milliards de dinars en 2017 à 17,1 milliards en 2022 et en 2023, à toutes les entreprises et tous les établissements publics non administratifs : 25,1 % des dépenses de l'État hors service de la dette en 2017, 35,2 % en 2023 ; 6,7 % puis 11,4 % du PIB. Ce total contient les caisses de sécurité sociale, la compensation et les établissements d'enseignement ; la part des seules entreprises, hors compensation et hors caisses, n'est pas calculée (@sec-ep-transferts).
 - **Ce que l'État garantit.** L'encours de la dette garantie passe de 11,3 milliards de dinars fin 2016 à 21,4 milliards fin 2023, soit de 11,8 % à 14,3 % du PIB de l'année ; la part due à des prêteurs intérieurs passe de 2,0 à 8,8 milliards (@sec-ep-garanties).
 - **Ce que l'État doit, et ce qui lui est dû.** Fin 2023, 42 entreprises déclarent 12,0 milliards de dinars de créances sur l'État, dont 7,0 milliards de subventions non réglées, et 11,2 milliards de dettes envers lui, dont 6,6 milliards d'impôts et taxes : 8,0 % et 7,5 % du PIB (@sec-ep-croisees).
+- **Qui y travaille.** De 96 000 à 100 000 agents de 2018 à 2022, hors secteur financier et hors caisses de sécurité sociale, sur 84 à 88 entreprises selon l'exercice ; leurs charges de personnel font 3,1 % à 3,4 % du PIB (@sec-ep-effectifs).
 - **Ce que l'État reçoit.** Sa part dans les bénéfices va de 98 à 333 millions de dinars par exercice de 2017 à 2022, soit de 0,08 % à 0,29 % du PIB (@sec-ep-dividendes). De 1987 à 2009, les cessions lui ont rapporté 6,0 milliards de dinars courants, dont 3,1 milliards en 2006 (@sec-ep-cessions).
 
 ## La mise en place, 1969-1987 {#sec-ep-mise-en-place}
@@ -514,6 +515,117 @@ ep.tableau_cessions_plans(
 
 <!-- TODO (documentaliste) : la page « bilan global » de la Direction générale de la privatisation donne les opérations par mode (114 privatisations totales, 29 partielles, 10 offres publiques de vente, 5 concessions, 41 liquidations, 18 autres) : à verser dans tunisia-data avec sa clé de bibliographie avant de la publier ; documenter les grandes cessions opération par opération (cimenteries, seconde licence de téléphonie, Tunisie Télécom). -->
 
+## Les effectifs et la masse salariale {#sec-ep-effectifs}
+
+Les entreprises publiques dont le ministère des Finances reçoit les comptes emploient de 96 000 à 100 000 agents de 2018 à 2022, hors secteur financier et hors caisses de sécurité sociale, pour des charges de personnel de 3,6 à 4,3 milliards de dinars. Les statuts, les grilles de salaires et les augmentations de ces agents sont dans le volume [« Les rémunérations publiques »](../remunerations_publiques/index.html) ; les agents de la fonction publique sont un autre ensemble, qui ne s'ajoute ni ne se compare à celui-ci.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_effectifs(
+    caption=("Effectif et charges de personnel des entreprises publiques, hors secteur "
+             "financier et hors caisses de sécurité sociale : les quatre exercices publiés, "
+             "2018-2022. Chaque ligne porte sur un nombre d'entreprises différent. « Les 40 » : "
+             "l'échantillon que le rapport analyse entreprise par entreprise. Charges par "
+             "agent : calcul fait ici, pour les seuls exercices où les deux grandeurs portent "
+             "sur les mêmes entreprises. Source : ministère des Finances [@minfin-ep-2022, "
+             "p. 37 ; @minfin-ep-2023, p. 55 ; @minfin-ep-2024, p. 49 ; @minfin-ep-2025, p. 25]. "
+             "Parts calculées ici : dépenses de l'État hors service de la dette "
+             "[@minfin-remunerations] ; PIB de l'INS en base 2015, non rétropolé pour ces "
+             "années [@ins-cnat-2015]"))
+```
+
+- **Quatre points, quatre périmètres.** 99 836 agents pour 84 entreprises en 2018, 99 523 pour 86 en 2019, 96 305,5 pour 88 en 2020, 97 208 pour 85 en 2022 : le nombre d'entreprises change à chaque édition, et les quatre points ne forment pas une série. Le rapport ne donne aucun total pour 2021, ni avant 2018 ; il ne dit pas ce qu'il compte comme agent — permanent, contractuel ou équivalent temps plein.
+- **Le total de 2020.** Il est imprimé avec une demi-unité, et la somme des fiches des 40 entreprises de la même édition fait 86 182 agents là où le rapport imprime 81 889,5. Pour 2018, la somme des fiches fait 83 324 pour 85 287 imprimés ; pour 2019 et 2022, elle redonne le total.
+- **Une concentration forte.** Les 40 entreprises de l'échantillon font 85 à 86 % des agents. En 2022, les dix premières en emploient 61 629, soit 63 % du total, et la [STEG](#g-steg) à elle seule 13 473 (@fig-ep-effectifs).
+- **La masse salariale.** Les charges de personnel passent de 3 596,5 MD en 2018 à 4 279,3 MD en 2022 ; rapportées au PIB, elles restent entre 3,1 % et 3,4 %, et leur part dans les dépenses de l'État recule de 12,1 % à 9,3 % (@fig-ep-masse). Par agent, le calcul donne 39 600 D en 2019, 42 700 D en 2020 et 44 000 D en 2022 ; celui de 2020 repose sur le total d'agents le moins sûr des quatre.
+
+```{python}
+#| label: fig-ep-effectifs
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "effectifs",
+    caption=("Nombre d'agents des dix plus gros employeurs parmi les entreprises publiques, "
+             "hors secteur financier et hors caisses de sécurité sociale, par exercice et par "
+             "édition du rapport, 2016-2023"),
+    note_lecture=(
+        "Un cadre par entreprise, chacun à son échelle ; les dix entreprises sont rangées "
+        "selon leur effectif de 2022. Chaque couleur est une édition du rapport : elle relie "
+        "les exercices qu'elle donne et n'est reliée à aucune autre, de sorte qu'un même "
+        "exercice peut porter plusieurs points. Un point plein est une valeur que le rapport "
+        "dit réalisée, ou qu'il donne sans réserve ; un point creux, une valeur provisoire, "
+        "estimée, probable, ou tirée de comptes non approuvés. Pour l'Office des terres "
+        "domaniales, les éditions se contredisent : 3 892 agents en 2019 selon l'édition "
+        "LF 2021, 4 892 selon l'édition LF 2022 ; 4 001 en 2020 selon l'édition LF 2022, "
+        "5 177 selon l'édition LF 2024. La Poste, qui emploie 8 836 agents en 2022, est "
+        "classée par le rapport dans le secteur financier : elle n'est pas dans le total, et "
+        "figure au tableau complet."),
+)
+```
+
+- **Des mouvements contrastés.** L'effectif de la STEG passe de 12 031 agents en 2018 à 13 854 en 2021, puis 13 473 en 2022 et 13 979 en 2023, valeur provisoire. Celui de la Compagnie des phosphates de Gafsa passe de 6 098 en 2018 à 7 421 en 2019, puis baisse chaque année, jusqu'à 6 677 en 2023, valeur estimée. Celui du Groupe chimique tunisien baisse à chaque exercice, de 6 227 en 2017 à 4 726 en 2022, valeur provisoire.
+- **Des valeurs souvent sans comptes arrêtés.** Pour la Société des transports de Tunis, de 7 555 agents en 2018 à 6 791 en 2023, et pour Tunisair, de 3 781 à 3 107, le rapport ne donne que des valeurs provisoires, probables ou estimées.
+
+```{python}
+#| label: fig-ep-masse
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "masse",
+    caption=("Charges de personnel des entreprises publiques, hors secteur financier et hors "
+             "caisses de sécurité sociale, par édition du rapport, en dinars courants, en % des "
+             "dépenses de l'État hors service de la dette et en % du PIB, exercices 2017-2022"),
+    note_lecture=(
+        "Les traits sont les charges de personnel du tableau des agrégats : chaque édition "
+        "donne deux exercices sur un même ensemble d'entreprises, et n'est reliée à aucune "
+        "autre. Les losanges sont les charges que le rapport publie avec l'effectif total, "
+        "pour 82 à 88 entreprises selon l'exercice ; ils coïncident avec le tableau des "
+        "agrégats de la même édition pour 2020 et 2022. Les deux autres vues rapportent "
+        "chaque montant aux dépenses du budget de l'État hors service de la dette, puis au "
+        "PIB de la même année. Les charges de personnel des entreprises ne sont pas une "
+        "dépense de l'État : la part des dépenses donne une échelle, non une fraction du "
+        "budget. Le PIB est celui de l'Institut national de la statistique en base 2015, dans "
+        "sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est "
+        "écrite au-dessus du cadre (voir l'[annexe sur le "
+        "PIB](../annexe-pib.html#sec-pib-ruptures))."),
+)
+```
+
+:::: {.chronologie-repliable titre="Effectifs et charges de personnel de cinquante entreprises publiques, banques et caisses comprises : nombre d'agents et montants par exercice et par édition du rapport, 2016-2023"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_effectifs_entreprises(
+    caption=("Nombre d'agents de cinquante entreprises publiques, exercices 2016-2023 : les 40 "
+             "entreprises de l'échantillon, puis la Poste et la Caisse des prêts et de soutien "
+             "des collectivités locales, cinq banques et trois caisses de sécurité sociale. "
+             "Quand deux éditions donnent deux valeurs, toutes sont données et l'édition est "
+             "nommée. Un astérisque marque une valeur provisoire, estimée, probable, prévue ou "
+             "tirée de comptes non approuvés. Source : ministère des Finances "
+             "[@minfin-ep-2020 ; @minfin-ep ; @minfin-ep-2022 ; @minfin-ep-2024 ; "
+             "@minfin-ep-2025]"))
+ep.tableau_effectifs_entreprises(
+    col="charges_personnel_md",
+    caption=("Charges de personnel des mêmes entreprises, en millions de dinars courants, par "
+             "exercice ; mêmes conventions et mêmes sources que le "
+             "@tbl-ep-effectifs-entreprises"),
+    tbl_id="tbl-ep-charges-entreprises")
+```
+
+::::
+
+<!-- TODO (documentaliste) : effectif total de 2021 et d'avant 2018 (l'édition LF 2020 ne donne qu'une part, l'édition LF 2021 n'a pas le tableau) ; fiches des sociétés régionales de transport autres que Sfax et Bizerte ; statistique publique de l'emploi des entreprises publiques non trouvée (enquêtes de l'INS, fiches sur la Banque centrale et la Cour des comptes) ; les numéros de page cités pour les éditions LF 2022 à LF 2024 sont les numéros imprimés de la série (page_imprimee), à contrôler. -->
+
 ## La longue période {#sec-ep-longue-periode}
 
 Les séries budgétaires couvrent deux périodes disjointes : 1987-2009 pour les recettes de cession, 2016-2024 pour tout le reste. Les transferts et les garanties de 2016 à 2024 sont à leurs sections (@sec-ep-transferts, @sec-ep-garanties) ; cette section donne les recettes de cession année par année, les résultats agrégés et les grandeurs par entreprise.
@@ -626,7 +738,7 @@ ep.tableau_resultats(
 
 ::::
 
-Les charges de personnel de ces entreprises vont de 3,4 milliards de dinars (exercice 2017, 78 entreprises) à 4,3 milliards (exercice 2022, 85 entreprises) ; aucun effectif total n'est publié par le rapport.
+Les charges de personnel de ces entreprises vont de 3,4 milliards de dinars (exercice 2017, 78 entreprises) à 4,3 milliards (exercice 2022, 85 entreprises) ; elles sont exposées avec les effectifs (@sec-ep-effectifs).
 
 ### La dizaine d'entreprises les plus lourdes {#sec-ep-lp-entreprises}
 
@@ -688,7 +800,7 @@ ep.tableau_transferts_revisions(
 
 ::::
 
-<!-- TODO (documentaliste) : les fiches par entreprise du rapport (dette, effectifs, charges de personnel, subvention d'exploitation, total des passifs ; éditions arabes : tableaux tournés d'un quart de tour) ne sont pas versées dans tunisia-data ; relire à l'image puis verser, pour STEG, STIR, Tunisair, Transtu, SNCFT, SONEDE, ETAP, Groupe chimique, CPG, Office des céréales, RNTA, Office du commerce. Les classements par charges de personnel et par produits d'exploitation restent aussi à verser. -->
+<!-- TODO (documentaliste) : des fiches par entreprise du rapport, seuls les effectifs et les charges de personnel sont versés (section des effectifs) ; restent la dette, la subvention d'exploitation et le total des passifs (éditions arabes : tableaux tournés d'un quart de tour) : relire à l'image puis verser, pour STEG, STIR, Tunisair, Transtu, SNCFT, SONEDE, ETAP, Groupe chimique, CPG, Office des céréales, RNTA, Office du commerce. Les classements par charges de personnel et par produits d'exploitation restent aussi à verser. -->
 
 ### Les années sans série budgétaire {#sec-ep-lp-lacunes}
 
@@ -704,11 +816,12 @@ ep.tableau_transferts_revisions(
 
 <!-- RECHERCHE r-ep-annexes-plf-2026 : rapports sur les entreprises publiques et sur les transferts et les garanties annexés au projet de loi de finances pour 2026 (voir docs/recherches.yml) -->
 
-- **Ni effectif total, ni valeur ajoutée.** Le rapport sur les entreprises publiques ne publie ni l'effectif total des entreprises publiques, ni leur valeur ajoutée, ni le total de leurs bilans.
+- **Effectifs : quatre exercices seulement.** L'effectif total n'est publié que pour 2018, 2019, 2020 et 2022 (@sec-ep-effectifs).
+- **Ni valeur ajoutée, ni total de bilan.** Le rapport sur les entreprises publiques ne publie ni la valeur ajoutée des entreprises publiques, ni le total de leurs bilans.
 
 ## Le Livre blanc de 2018 et les études extérieures {#sec-ep-etudes}
 
-Quatre documents donnent des chiffres d'ensemble que les rapports du ministère des Finances ne donnent pas, ou donnent autrement. Ils ne sont pas du même rang que les séries budgétaires : un rapport officiel de réforme, deux rapports d'institutions internationales, une étude d'un institut public. Chacun est présenté avec sa méthode ; aucun de ses chiffres n'est raccordé aux séries des sections précédentes. Toute part du PIB est donnée telle que le document l'imprime ; aucun ne précise la base des comptes nationaux qu'il emploie (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
+Cinq documents donnent des chiffres d'ensemble que les rapports du ministère des Finances ne donnent pas, ou donnent autrement. Ils ne sont pas du même rang que les séries budgétaires : un rapport officiel de réforme, trois rapports d'institutions internationales, une étude d'un institut public. Chacun est présenté avec sa méthode ; aucun de ses chiffres n'est raccordé aux séries des sections précédentes. Toute part du PIB est donnée telle que le document l'imprime ; aucun ne précise la base des comptes nationaux qu'il emploie (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
 
 ### Le Livre blanc de la Présidence du gouvernement, 2018 {#sec-ep-livre-blanc}
 
@@ -727,6 +840,24 @@ ep.tableau_etude(
 ```
 
 Le Livre blanc compte 102 entreprises publiques en 2018 et « environ 190 » au milieu des années 1980 [@pm-livre-blanc-ep-2018, p. 7]. Selon lui, les subventions de 2013 et de 2014 profitent « essentiellement à 9 entreprises », dont la STEG, la STIR, l'Office des céréales et les sociétés de transport.
+
+### La Banque mondiale, gouvernance des entreprises publiques, 2014 {#sec-ep-banque-mondiale-2014}
+
+**Qui, quoi.** La Banque mondiale publie en mars 2014 un rapport sur la gouvernance des entreprises publiques en Tunisie [@wb-tunisia-gouvernance-ep-2014]. **Données.** Son tableau 1 est repris de l'Unité de suivi de l'organisation des entreprises publiques, à la Présidence du gouvernement. **Périmètre.** 104 entreprises, banques et caisses de sécurité sociale comprises, réparties par ministère de tutelle. **Calcul.** Le tableau réunit trois dates — les entreprises sont comptées en 2013, les employés en 2010, le chiffre d'affaires en 2007 — ; la façon de compter les employés n'est pas dite.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_bm_2014(
+    caption=("Entreprises publiques et employés par ministère de tutelle, d'après l'Unité de "
+             "suivi : entreprises comptées en 2013, employés en 2010, banques et caisses de "
+             "sécurité sociale comprises. Source : Banque mondiale "
+             "[@wb-tunisia-gouvernance-ep-2014, p. 4]"))
+```
+
+Les 117 416 employés de 2010 ne se comparent pas aux quatre totaux du ministère des Finances (@tbl-ep-effectifs) : ceux-ci excluent les banques, la Poste et les caisses de sécurité sociale, et portent sur 84 à 88 entreprises. Le même rapport écrit que les entreprises publiques « rassemblent environ 5% de l'ensemble des salariés à l'échelle nationale », sans date [@wb-tunisia-gouvernance-ep-2014, p. 3].
 
 ### La Banque mondiale, revue des dépenses publiques, 2020 {#sec-ep-banque-mondiale}
 

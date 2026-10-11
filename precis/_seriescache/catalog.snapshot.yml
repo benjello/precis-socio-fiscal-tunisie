@@ -3917,12 +3917,13 @@
   fiche: sources/entreprises-publiques.md
 - id: entreprises-publiques-etudes-rapportees
   titre: 'Entreprises publiques : chiffres d''ensemble rapportés par le Livre blanc
-    de 2018, le FMI (2021), la Banque mondiale (2020) et l''ITCEQ (2010), avec la
-    citation et la méthode'
+    de 2018, le FMI (2021), la Banque mondiale (2014 et 2020) et l''ITCEQ (2010),
+    avec la citation et la méthode'
   sources:
   - pm-livre-blanc-ep-2018
   - imf-tunisia-art4-2020
   - wb-tunisia-per-2020
+  - wb-tunisia-gouvernance-ep-2014
   - itceq-privatisation-2010
   build: uv run python scripts/build_entreprises_publiques.py
   raw:
@@ -3930,12 +3931,15 @@
   output: data/processed/entreprises-publiques/etudes_rapportees.csv
   unite: 'selon la ligne (colonne unite) : % du PIB, milliards ou millions de dinars,
     nombre'
-  perimetre: 'trente-trois chiffres cités par quatre documents : Présidence du gouvernement,
+  perimetre: 'soixante-dix chiffres cités par cinq documents : Présidence du gouvernement,
     Livre blanc sur la réforme des entreprises publiques (mars 2018) ; FMI, Country
     Report No. 21/44 (février 2021) ; Banque mondiale, revue des dépenses publiques,
-    rapport de synthèse (2020) ; ITCEQ, rapport d''étape MEDPRO sur la privatisation
-    (décembre 2010) ; une ligne par (étude, grandeur, période, unité), avec la phrase
-    citée, la page et la méthode du document'
+    rapport de synthèse (2020) ; Banque mondiale, rapport 78675-TN « Pour une meilleure
+    gouvernance des entreprises publiques en Tunisie » (mars 2014 : tableau 1, entreprises
+    de 2013 et employés de 2010 par ministère de tutelle, 104 entreprises et 117 416
+    employés, d''après l''Unité de suivi) ; ITCEQ, rapport d''étape MEDPRO sur la
+    privatisation (décembre 2010) ; une ligne par (étude, grandeur, période, unité),
+    avec la phrase citée, la page et la méthode du document'
   caveats: 'RAPPORT DE RÉFORME, RAPPORTS EXTÉRIEURS ET ÉVALUATION : JAMAIS DANS LE
     MÊME TABLEAU NI SUR LE MÊME PLAN QUE LES SÉRIES BUDGÉTAIRES ; une superposition
     sur un graphique se commente, périmètres et ruptures dits. Chaque ligne porte
@@ -3948,16 +3952,121 @@
     désigne la consultation de 2021 au titre de l''article IV (Country Report No.
     21/44). NON REPRIS, faute de relecture à l''image : passifs éventuels de 14 %
     du PIB et prime salariale de 34 % (Banque mondiale, cette dernière de seconde
-    main), test de résistance du FMI. LU À L''IMAGE (huit pages), chaque citation
-    retrouvée dans la couche texte.'
+    main), test de résistance du FMI. EFFECTIFS : les 117 416 employés de 2010 (Banque
+    mondiale 2014, 104 entreprises, BANQUES ET CAISSES SOCIALES COMPRISES, tableau
+    qui mêle trois dates) et les 190 000 salariés de la Banque mondiale 2020 (date
+    et périmètre non dits) NE SE COMPARENT PAS aux totaux de l''annexe 9 (82 à 88
+    entreprises hors banques et caisses : voir entreprises-publiques-effectifs-ensemble)
+    ; aucun raccord. « 30 % des emplois du secteur formel » (milieu des années 1980)
+    est une phrase du Livre blanc, sans source. LU À L''IMAGE (onze pages), chaque
+    citation retrouvée dans la couche texte.'
   titre_ar: 'المنشآت العمومية: أرقام إجمالية واردة في الكتاب الأبيض (2018) وتقارير
     صندوق النقد الدولي (2021) والبنك الدولي (2020) والمعهد التونسي للقدرة التنافسية
     والدراسات الكمية (2010)، مع الاقتباس والمنهجية'
   unite_ar: 'حسب السطر: نسبة من الناتج المحلي الإجمالي، مليارات أو ملايين الدنانير،
     عدد'
-  perimetre_ar: ثلاثة وثلاثون رقماً من أربع وثائق، مع الجملة المقتبسة والصفحة ومنهجية
-    كلّ وثيقة
+  perimetre_ar: سبعون رقماً من خمس وثائق، مع الجملة المقتبسة والصفحة ومنهجية كلّ وثيقة
   caveats_ar: 'تقرير إصلاح وتقارير خارجية وتقييم: لا تُوضع أبداً في الجدول نفسه مع
     السلاسل الميزانية. لا يُذكر أساس الناتج المحلي الإجمالي في أيّ منها. قُرئت من
     الصورة.'
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-effectifs-ensemble
+  titre: 'Entreprises publiques : effectif total et charges de personnel d''ensemble,
+    exercices 2018, 2019, 2020 et 2022, par édition (hors banques et caisses sociales)'
+  sources:
+  - minfin-ep-2022
+  - minfin-ep-2023
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-effectifs-ensemble.csv
+  output: data/processed/entreprises-publiques/effectifs_ensemble_2018_2022.csv
+  unite: agents ; millions de dinars courants ; % (colonne unite)
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
+    9), tableau « indicateurs des 40 entreprises comparés à ceux de l''ensemble »
+    des éditions LF 2022 (exercice 2018 : 99 836 agents, 84 entreprises), LF 2023
+    (2019 : 99 523 agents, 86 entreprises), LF 2024 (2020 : 96 305,5 agents, 88 entreprises)
+    et LF 2025 (2022 : 97 208 agents, 85 entreprises) : nombre d''agents et charges
+    de personnel de l''échantillon de 40, de l''ensemble, et part de l''échantillon
+    ; HORS secteur financier (banques, Poste, Caisse des prêts) et HORS caisses sociales
+    ; une ligne par (édition, exercice, périmètre, indicateur)'
+  caveats: 'SEUL EFFECTIF TOTAL PUBLIÉ PAR LE MINISTÈRE, ET IL N''EST PAS CELUI DE
+    TOUTES LES ENTREPRISES PUBLIQUES : le rapport en recense 111 à 115, en écarte
+    celles sans états financiers, et laisse à part 7 établissements financiers et
+    3 caisses ; le nombre d''entreprises couvertes change à chaque édition (colonne
+    nombre_entreprises : 84, 86, 88, 85) — QUATRE POINTS, QUATRE PÉRIMÈTRES, AUCUNE
+    SÉRIE : ne pas relier 2018 à 2022 sans dire la rupture. AUCUN TOTAL POUR 2021
+    (l''édition LF 2024 porte sur 2020, l''édition LF 2025 sur 2022), ni avant 2018
+    : l''édition LF 2020 ne donne qu''une part (les 23 entreprises de son échantillon
+    emploient 75,3 % des agents de 87), non reprise. Édition LF 2022 : la ligne dit
+    « 82 entreprises », une note précise que le nombre d''agents en couvre 84. Édition
+    LF 2023 : le titre dit 79, la ligne 86. Édition LF 2024 : effectifs imprimés avec
+    une décimale (81 889,5 ; 96 305,5), et la somme des 40 fiches de la même édition
+    fait 86 182 (`ecart_somme_des_fiches`). CONTRÔLES : la part imprimée se retrouve
+    aux huit tableaux ; la somme des 40 fiches redonne le total des 40 pour 2019 et
+    2022 (agents et charges) ; les charges de l''ensemble recoupent le tableau des
+    agrégats pour 2020 et 2022 (`recoupe_agregats`). Pour un effectif total AVEC banques
+    et caisses, ajouter les lignes correspondantes de entreprises-publiques-effectifs-par-entreprise
+    est un calcul du lecteur, à présenter comme tel. LU À L''IMAGE.'
+  titre_ar: 'المنشآت العمومية: مجموع عدد الأعوان وأعباء الأعوان، سنوات 2018 و2019
+    و2020 و2022، حسب الطبعة (دون البنوك والصناديق الاجتماعية)'
+  unite_ar: عون؛ ملايين الدنانير الجارية؛ نسبة مئوية
+  perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جدول مؤشرات
+    الـ40 منشأة مقارنة بمؤشرات مجموع المنشآت، أربع طبعات
+  caveats_ar: 'المجموع الوحيد المنشور، ولا يشمل كلّ المنشآت العمومية: دون القطاع المالي
+    والصناديق الاجتماعية، وعدد المنشآت يتغيّر من طبعة إلى أخرى (84، 86، 88، 85). لا
+    مجموع لسنة 2021 ولا قبل 2018. قُرئت من الصورة.'
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-effectifs-par-entreprise
+  titre: 'Entreprises publiques : nombre d''agents et charges de personnel par entreprise,
+    exercices 2016-2023, par édition du rapport annexé à la loi de finances'
+  sources:
+  - minfin-ep-2020
+  - minfin-ep
+  - minfin-ep-2022
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-effectifs.csv
+  output: data/processed/entreprises-publiques/effectifs_par_entreprise_2016_2023.csv
+  unite: agents (colonne effectif) ; millions de dinars courants (colonne charges_personnel_md)
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
+    9), fiches par entreprise de cinq éditions : LF 2020 (français, exercices 2016-2018)
+    et LF 2021 (français, 2017-2019) — nombre d''agents seulement, tiré de la prose
+    des fiches ; LF 2022 (arabe, 2018-2020), LF 2024 (2020-2022) et LF 2025 (2021-2023)
+    — nombre d''agents et charges de personnel, tableaux des fiches ; 50 entités :
+    40 entreprises (l''échantillon du rapport), 5 banques, Poste et Caisse des prêts
+    aux collectivités locales, 3 caisses sociales (colonne categorie) ; une ligne
+    par (édition, entité, exercice), avec le statut du chiffre (réalisé, provisoire,
+    estimé, probable, prévu)'
+  caveats: 'AUCUN RACCORD : un exercice figure dans une à quatre éditions ; toutes
+    les valeurs sont gardées, `divergence_effectif_entre_editions` signale les 90
+    lignes qui diffèrent (Société générale d''entreprises de matériel et de travaux,
+    SOMATRA-GET, en 2020 : 212 puis 1 194 agents ; Tunisair en 2017 : 3 765 puis 3
+    565 ; RNTA en 2018 : 1 336 puis 1 130 ; CTN en 2018 : 1 195 puis 734). `statut`
+    : le dernier exercice de chaque édition est le plus souvent provisoire, estimé
+    ou probable — NE PAS le tracer comme une réalisation ; Tunisair n''a que des chiffres
+    provisoires pour 2021-2023, la Transtu des chiffres probables. LES BANQUES, LE
+    SECTEUR FINANCIER ET LES CAISSES SOCIALES NE SONT PAS DANS L''ÉCHANTILLON DES
+    40 : filtrer sur `categorie` avant toute somme. Le nombre d''agents n''est pas
+    défini par le rapport (permanents, contractuels, équivalents temps plein : non
+    dit) ; la hausse de la CPG en 2019 (6 098 puis 7 421) y est attribuée au programme
+    de recrutement. PREUVES DE LECTURE : 391 variations imprimées d''un exercice à
+    l''autre (éditions LF 2024 et LF 2025) redonnent la différence des niveaux, douze
+    écarts d''arrondi ou d''impression déclarés (dont Groupe chimique, LF 2024 : −278
+    imprimé pour −287) ; la somme des 40 fiches redonne exactement la ligne « total
+    des 40 » pour 2019 et 2022. ÉDITION LF 2023 NON DÉPOUILLÉE (exercices 2019-2021,
+    déjà couverts par deux autres éditions) ; charges de personnel des éditions françaises
+    non reprises ; édition arabe de la LF 2020 non relue. LU À L''IMAGE (pages rendues
+    à 150 dpi et tournées), valeurs recoupées avec la couche texte.'
+  titre_ar: 'المنشآت العمومية: عدد الأعوان وأعباء الأعوان حسب المنشأة، 2016-2023،
+    حسب طبعة التقرير المرفق بقانون المالية'
+  unite_ar: عون؛ ملايين الدنانير الجارية
+  perimetre_ar: 'وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جذاذات
+    المنشآت في خمس طبعات: 40 منشأة و5 بنوك والبريد وصندوق القروض و3 صناديق اجتماعية'
+  caveats_ar: 'لا ربط بين الطبعات: تُحفظ كلّ القيم ويُشار إلى الاختلافات. أرقام السنة
+    الأخيرة من كلّ طبعة وقتية أو تقديرية أو محتملة في الغالب. البنوك والصناديق الاجتماعية
+    خارج عيّنة الأربعين. تعريف عدد الأعوان غير مذكور. قُرئت من الصورة.'
   fiche: sources/entreprises-publiques.md

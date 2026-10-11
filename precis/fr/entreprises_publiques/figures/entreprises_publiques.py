@@ -1260,6 +1260,236 @@ def chiffres() -> None:
         print("cessions", r[0], _n(r[2]), r[3] and _n(r[3], 2), _n(r[4], 2), _base_courte(r[0]))
 
 
+# --- effectifs et masse salariale ---------------------------------------------------------------
+
+S_EFFECTIFS = "entreprises-publiques-effectifs-ensemble"
+S_EFFECTIFS_EP = "entreprises-publiques-effectifs-par-entreprise"
+COULEUR_EDITION["LF2020"] = BRUN = "#9a6700"
+# Les dix plus gros employeurs de l'exercice 2022 parmi les entreprises des agrégats (hors
+# secteur financier, hors caisses), dans l'ordre de leur effectif.
+GROS_EMPLOYEURS = ("steg", "transtu", "cpg", "sonede", "tunisie_telecom", "otd", "gct", "sncft",
+                   "oaca", "tunisair")
+STATUTS_FERMES = ("réalisé", "non dit")
+COURT.update({"otd": "Office des terres domaniales", "poste": "La Poste tunisienne"})
+MINISTERES = {
+    "transport": "Transport", "industrie": "Industrie", "finances": "Finances",
+    "equipement": "Équipement", "agriculture": "Agriculture", "commerce": "Commerce",
+    "tourisme": "Tourisme", "presidence_gouvernement": "Présidence du gouvernement",
+    "affaires_sociales": "Affaires sociales",
+    "technologies_telecommunications": "Technologies, information et télécommunications",
+    "sante": "Santé", "interieur": "Intérieur", "jeunesse_sports": "Jeunesse et sports",
+    "education": "Éducation", "environnement": "Environnement",
+    "presidence_republique": "Présidence de la République", "total": "**Total**",
+}
+
+
+def _effectifs_ensemble():
+    """Les quatre points publiés : une ligne par exercice."""
+    e = _s(S_EFFECTIFS)
+    lignes = []
+    for (edition, exercice), b in e.groupby(["edition", "exercice"]):
+        def v(perimetre, indicateur, col="valeur"):
+            x = b[(b["perimetre"] == perimetre) & (b["indicateur"] == indicateur)]
+            return None if x.empty else float(x.iloc[0][col])
+        lignes.append(dict(
+            edition=edition, exercice=int(exercice),
+            n_agents=int(v("ensemble", "effectif", "nombre_entreprises")),
+            n_charges=int(v("ensemble", "charges_personnel", "nombre_entreprises")),
+            agents=v("ensemble", "effectif"), charges=v("ensemble", "charges_personnel"),
+            agents_40=v("echantillon_40", "effectif"),
+            part_40=v("part_echantillon", "effectif"),
+            ecart_fiches=v("echantillon_40", "effectif", "ecart_somme_des_fiches")))
+    return sorted(lignes, key=lambda l: l["exercice"])
+
+
+def tableau_effectifs(caption: str, tbl_id: str = "tbl-ep-effectifs") -> None:
+    lignes = []
+    for l in _effectifs_ensemble():
+        n = str(l["n_agents"]) if l["n_agents"] == l["n_charges"] else (
+            f"{l['n_agents']} pour les agents, {l['n_charges']} pour les charges")
+        dec = 0 if l["agents"] == int(l["agents"]) else 1
+        cout = (_n(1e6 * l["charges"] / l["agents"], 0)
+                if l["n_agents"] == l["n_charges"] else "")
+        lignes.append([str(l["exercice"]), _ed(l["edition"]), n, _n(l["agents"], dec),
+                       _n(l["charges"]), _n(_part(l["charges"], l["exercice"], "dep")),
+                       _n(_part(l["charges"], l["exercice"], "pib"), 2), cout,
+                       _n(l["agents_40"], 0 if l["agents_40"] == int(l["agents_40"]) else 1),
+                       _n(l["part_40"])])
+    _md(["Exercice", "Édition", "Entreprises", "Agents", "Charges de personnel<br>(MD courants)",
+         "Charges de personnel<br>(% des dépenses de l'État)", "Charges de personnel<br>(% du PIB)",
+         "Charges par agent<br>(D par an, calcul)", "Agents des 40 entreprises",
+         "Part des 40<br>(% des agents)"], "ggg" + "d" * 7, lignes, caption, tbl_id)
+
+
+def _fig_masse(mesure: str):
+    figtools.apply_lang_font()
+    fig, ax = plt.subplots(figsize=(9.2, 5.2))
+    a = _agregats()
+    for edition, bloc in a.groupby("edition"):
+        ax.plot(*_xy(bloc["exercice"], bloc["charges_personnel"], mesure),
+                color=COULEUR_EDITION.get(edition, NOIR), marker="o", lw=1.6, ms=4.5)
+    pts = _effectifs_ensemble()
+    for l in pts:
+        y = _part(l["charges"], l["exercice"], mesure)
+        pt, = ax.plot([l["exercice"]], [y], color=NOIR, marker="D", ms=7, ls="", mfc="white",
+                      mew=1.6)
+        figtools.infobulle(pt, f"exercice {l['exercice']} : {_n(l['charges'])} MD, "
+                               f"{l['n_charges']} entreprises (édition {_ed(l['edition'])})")
+    ans = sorted(int(x) for x in a["exercice"].unique())
+    _style(ax)
+    _axe(ax, mesure)
+    ax.set_ylim(bottom=0, top=ax.get_ylim()[1] * 1.08)
+    ax.set_xticks(ans)
+    if mesure == "pib":
+        _marque_pib(ax, min(ans), max(ans))
+    poignees = [Line2D([], [], color=COULEUR_EDITION[e], marker="o",
+                       label=f"agrégats, édition {_ed(e)} : {int(b['echantillon'].iloc[0])} entreprises")
+                for e, b in a.groupby("edition")]
+    poignees.append(Line2D([], [], color=NOIR, marker="D", mfc="white", ls="", mew=1.6,
+                           label="total publié avec l'effectif (82 à 88 entreprises)"))
+    ax.legend(handles=poignees, fontsize=7.5, frameon=False, loc="lower right", ncol=2)
+    fig.tight_layout()
+    return fig
+
+
+def fig_masse():
+    return _trois_vues(_fig_masse)
+
+
+def table_masse():
+    import pandas as pd
+    a = _agregats()[["exercice", "edition", "echantillon", "charges_personnel"]].copy()
+    a["source"] = "tableau des agrégats"
+    p = pd.DataFrame([dict(exercice=l["exercice"], edition=l["edition"],
+                           echantillon=l["n_charges"], charges_personnel=l["charges"],
+                           source="tableau de l'effectif total") for l in _effectifs_ensemble()])
+    t = pd.concat([a, p]).sort_values(["exercice", "edition"]).rename(columns={
+        "exercice": "Exercice", "edition": "Édition", "echantillon": "Entreprises",
+        "charges_personnel": "Charges de personnel (MD courants)", "source": "Tableau du rapport"})
+    t = _ajoute_parts(t, "Exercice", "Charges de personnel (MD courants)")
+    t["Base du PIB"] = [_base_courte(x) for x in t["Exercice"]]
+    return t
+
+
+def _effectifs_ep():
+    p = _s(S_EFFECTIFS_EP)
+    return p[p["effectif"].notna()]
+
+
+def fig_effectifs():
+    figtools.apply_lang_font()
+    p = _effectifs_ep()
+    fig, axes = plt.subplots(2, 5, figsize=(11.5, 5.6))
+    for ax, ent in zip(axes.flat, GROS_EMPLOYEURS):
+        b = p[p["entite"] == ent]
+        for edition, bloc in b.groupby("edition"):
+            bloc = bloc.sort_values("exercice")
+            coul = COULEUR_EDITION.get(edition, NOIR)
+            ax.plot(bloc["exercice"], bloc["effectif"], color=coul, lw=1.4)
+            for r in bloc.itertuples():
+                pt, = ax.plot([r.exercice], [r.effectif], color=coul, marker="o", ms=4.5, ls="",
+                              mfc=coul if r.statut in STATUTS_FERMES else "white")
+                figtools.infobulle(pt, f"{COURT.get(ent, ent)}, {r.exercice} : "
+                                       f"{_n(r.effectif, 0)} agents — édition {_ed(edition)}, "
+                                       f"{r.statut}")
+        ax.set_title(COURT.get(ent, ent).split(" (")[0], fontsize=8, loc="left")
+        _style(ax)
+        ax.set_xlim(2015.5, 2023.5)
+        ax.set_xticks(range(2016, 2024, 2))
+        ax.tick_params(labelsize=7)
+        ax.set_ylim(bottom=0, top=max(b["effectif"]) * 1.25)
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _n(v, 0)))
+    editions = sorted(p["edition"].unique())
+    poignees = [Line2D([], [], color=COULEUR_EDITION[e], marker="o", label=f"édition {_ed(e)}")
+                for e in editions]
+    poignees.append(Line2D([], [], color=GRIS, marker="o", mfc="white", ls="",
+                           label="provisoire, estimé, probable ou comptes non approuvés"))
+    fig.legend(handles=poignees, fontsize=8, frameon=False, loc="lower center", ncol=6)
+    fig.supylabel("nombre d'agents", fontsize=8)
+    fig.tight_layout(rect=(0.01, 0.06, 1, 1))
+    return fig
+
+
+def table_effectifs_ep():
+    p = _effectifs_ep()
+    p = p[p["entite"].isin(GROS_EMPLOYEURS)]
+    t = p[["entite_nom", "exercice", "edition", "statut", "effectif",
+           "charges_personnel_md"]].sort_values(["entite_nom", "exercice", "edition"])
+    return t.rename(columns={"entite_nom": "Entreprise", "exercice": "Exercice",
+                             "edition": "Édition", "statut": "État de la valeur",
+                             "effectif": "Agents",
+                             "charges_personnel_md": "Charges de personnel (MD courants)"})
+
+
+def _cases_effectifs(bloc, col: str, dec: int) -> str:
+    """Toutes les valeurs imprimées d'un exercice ; l'édition est nommée quand elles diffèrent,
+    et un astérisque marque une valeur qui n'est dite ni réalisée ni sans réserve."""
+    b = bloc[bloc[col].notna()].sort_values("edition")
+    if b.empty:
+        return "—"
+    vals = [(r["edition"], float(r[col]), "" if r["statut"] in STATUTS_FERMES else "\\*")
+            for _, r in b.iterrows()]
+    if len({round(v, dec) for _, v, _ in vals}) == 1:
+        return _n(vals[-1][1], dec) + vals[-1][2]
+    vus, out = set(), []
+    for e, v, m in vals:
+        if round(v, dec) not in vus:
+            vus.add(round(v, dec))
+            out.append(f"{_n(v, dec)}{m} ({_ed(e)})")
+    return " ; ".join(out)
+
+
+def tableau_effectifs_entreprises(caption: str, col: str = "effectif",
+                                  tbl_id: str = "tbl-ep-effectifs-entreprises") -> None:
+    p = _s(S_EFFECTIFS_EP)
+    dec = 0 if col == "effectif" else 1
+    exercices = sorted(int(x) for x in p[p[col].notna()]["exercice"].unique())
+    ordre = {"entreprise": 0, "secteur financier": 1, "banque": 2, "caisse sociale": 3}
+    ref = p[p["effectif"].notna()].sort_values("exercice").groupby("entite")["effectif"].last()
+    entites = sorted(p["entite"].unique(),
+                     key=lambda e: (ordre.get(p[p["entite"] == e]["categorie"].iloc[0], 9),
+                                    -float(ref.get(e, 0))))
+    lignes = []
+    for ent in entites:
+        b = p[p["entite"] == ent]
+        cat = b["categorie"].iloc[0]
+        nom = b["entite_nom"].iloc[0] + ("" if cat == "entreprise" else f" ({cat})")
+        lignes.append([nom] + [_cases_effectifs(b[b["exercice"] == x], col, dec)
+                               for x in exercices])
+    unite = "agents" if col == "effectif" else "MD"
+    _md(["Entreprise"] + [f"{x}<br>({unite})" for x in exercices], "g" + "g" * len(exercices),
+        lignes, caption, tbl_id)
+
+
+def tableau_bm_2014(caption: str, tbl_id: str = "tbl-ep-banque-mondiale-2014") -> None:
+    e = _s(S_ETUDES)
+    e = e[e["etude"] == "wb-tunisia-gouvernance-ep-2014"]
+    lignes = []
+    for cle, nom in MINISTERES.items():
+        n = e[e["grandeur"] == f"nombre_entreprises_tutelle_{cle}"]
+        a = e[e["grandeur"] == f"effectif_tutelle_{cle}"]
+        if n.empty and a.empty:
+            continue
+        lignes.append([nom, "" if n.empty else _n(n.iloc[0]["valeur"], 0),
+                       "" if a.empty else _n(a.iloc[0]["valeur"], 0)])
+    _md(["Ministère de tutelle", "Entreprises publiques<br>(2013)", "Employés<br>(2010)"], "gdd",
+        lignes, caption, tbl_id)
+
+
+def chiffres_effectifs() -> None:
+    """Aide à la rédaction (non appelée au rendu)."""
+    for l in _effectifs_ensemble():
+        print(l, _n(_part(l["charges"], l["exercice"], "dep")),
+              _n(_part(l["charges"], l["exercice"], "pib"), 2),
+              _n(1e6 * l["charges"] / l["agents"], 0))
+    p = _effectifs_ep()
+    x = p[(p["exercice"] == 2022) & (p["edition"] == "LF2025") & p["entite"].isin(GROS_EMPLOYEURS)]
+    print("dix premières 2022", x["effectif"].sum(), x["charges_personnel_md"].sum())
+    for ent in GROS_EMPLOYEURS:
+        b = p[p["entite"] == ent].sort_values(["exercice", "edition"])
+        print(ent, [(r.exercice, r.edition[2:], int(r.effectif), r.statut[:4]) for r in b.itertuples()])
+
+
 # --- point d'entrée ------------------------------------------------------------------------------------
 
 FIGURES = {
@@ -1277,6 +1507,8 @@ FIGURES = {
     "resultats": (fig_resultats, table_resultats, (S_AGREGATS, DENOMINATEURS),
                   "fig_ep_resultats"),
     "cessions": (fig_cessions, table_cessions, (S_CESSIONS, DENOMINATEURS), "fig_ep_cessions"),
+    "masse": (fig_masse, table_masse, (S_EFFECTIFS, S_AGREGATS, DENOMINATEURS), "fig_ep_masse"),
+    "effectifs": (fig_effectifs, table_effectifs_ep, (S_EFFECTIFS_EP,), "fig_ep_effectifs"),
 }
 
 

@@ -1,0 +1,25 @@
+edition,exercice,perimetre,nombre_entreprises,indicateur,valeur,unite,imprime,ecart_somme_des_fiches,recoupe_agregats,remarque,tableau,fichier,page_pdf,page_imprimee,lecture
+LF2022,2018,echantillon_40,40,effectif,85287.0,agents,85287,-1963.0,False,,tableau 18,data/raw/caisses/minfin/annexe9_2022.pdf,36,37,image
+LF2022,2018,ensemble,84,effectif,99836.0,agents,99836,,False,ligne « total des 82 entreprises » ; note de bas de page : le nombre d'agents couvre 84 entreprises,tableau 18,data/raw/caisses/minfin/annexe9_2022.pdf,36,37,image
+LF2022,2018,part_echantillon,40,effectif,85.4,%,"85,4",,False,,tableau 18,data/raw/caisses/minfin/annexe9_2022.pdf,36,37,image
+LF2022,2018,echantillon_40,40,charges_personnel,3209.4,millions de dinars,"3209,4",26.95,False,,tableau 18,data/raw/caisses/minfin/annexe9_2022.pdf,36,37,image
+LF2022,2018,ensemble,82,charges_personnel,3596.5,millions de dinars,"3596,5",,False,,tableau 18,data/raw/caisses/minfin/annexe9_2022.pdf,36,37,image
+LF2022,2018,part_echantillon,40,charges_personnel,89.2,%,"89,2",,False,,tableau 18,data/raw/caisses/minfin/annexe9_2022.pdf,36,37,image
+LF2023,2019,echantillon_40,40,effectif,85337.0,agents,85337,0.0,False,,tableau 18,data/raw/caisses/minfin/rapport_ep_2023.pdf,56,55,image
+LF2023,2019,ensemble,86,effectif,99523.0,agents,99523,,False,ligne « total des 86 entreprises » ; le titre du tableau dit 79 ; états financiers de 2019 « ou document d'orientation »,tableau 18,data/raw/caisses/minfin/rapport_ep_2023.pdf,56,55,image
+LF2023,2019,part_echantillon,40,effectif,86.0,%,86,,False,,tableau 18,data/raw/caisses/minfin/rapport_ep_2023.pdf,56,55,image
+LF2023,2019,echantillon_40,40,charges_personnel,3474.35,millions de dinars,"3474,35",0.45,False,,tableau 18,data/raw/caisses/minfin/rapport_ep_2023.pdf,56,55,image
+LF2023,2019,ensemble,86,charges_personnel,3939.53,millions de dinars,"3939,53",,False,le titre du tableau dit 79,tableau 18,data/raw/caisses/minfin/rapport_ep_2023.pdf,56,55,image
+LF2023,2019,part_echantillon,40,charges_personnel,88.0,%,88,,False,,tableau 18,data/raw/caisses/minfin/rapport_ep_2023.pdf,56,55,image
+LF2024,2020,echantillon_40,40,effectif,81889.5,agents,"81889,5",4292.5,False,décimale imprimée,tableau 23,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,50,49,image
+LF2024,2020,ensemble,88,effectif,96305.5,agents,"96305,5",,False,décimale imprimée ; états financiers de 2020 « ou document d'orientation »,tableau 23,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,50,49,image
+LF2024,2020,part_echantillon,40,effectif,85.0,%,85,,False,,tableau 23,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,50,49,image
+LF2024,2020,echantillon_40,40,charges_personnel,3626.0,millions de dinars,3626,-0.24,False,,tableau 23,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,50,49,image
+LF2024,2020,ensemble,88,charges_personnel,4113.1,millions de dinars,4113.1,,True,,tableau 23,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,50,49,image
+LF2024,2020,part_echantillon,40,charges_personnel,88.0,%,88,,False,,tableau 23,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,50,49,image
+LF2025,2022,echantillon_40,40,effectif,83786.0,agents,83786,0.0,False,,tableau non numéroté,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,25,25,image
+LF2025,2022,ensemble,85,effectif,97208.0,agents,97208,,False,états financiers de 2022 « ou document d'orientation »,tableau non numéroté,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,25,25,image
+LF2025,2022,part_echantillon,40,effectif,86.2,%,"86,2",,False,la ligne imprime « 40 / 58 entreprises » pour 85,tableau non numéroté,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,25,25,image
+LF2025,2022,echantillon_40,40,charges_personnel,3819.3,millions de dinars,"3819,3",0.0,False,,tableau non numéroté,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,25,25,image
+LF2025,2022,ensemble,85,charges_personnel,4279.3,millions de dinars,"4279,3",,True,,tableau non numéroté,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,25,25,image
+LF2025,2022,part_echantillon,40,charges_personnel,89.3,%,"89,3",,False,,tableau non numéroté,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,25,25,image

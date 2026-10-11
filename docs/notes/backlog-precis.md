@@ -2236,7 +2236,8 @@ Plan : vue d'ensemble (`#sec-ep-vue-ensemble`) ; mise en place 1969-1987 ; grand
 (1989, 1994-2001, cessions 1987-2009, rapport annuel de 2019, depuis 2011) et registre des
 textes ; état du droit ; transferts du budget ; garanties ; dettes et créances croisées ;
 dividendes et versements ; cessions ; longue période ; Livre blanc de 2018 et études
-extérieures. Huit figures et vingt-sept tableaux, tous engendrés depuis les séries sauf quatre
+extérieures ; section « Les effectifs et la masse salariale » (`#sec-ep-effectifs`) ajoutée le
+11 octobre 2026, avant la longue période. Dix figures et trente et un tableaux, tous engendrés depuis les séries sauf quatre
 (les réformes ; les deux registres de textes ; les six éditions du rapport). Depuis le
 11 octobre 2026 (retouche), chaque figure a trois vues — dinars courants, % des dépenses de
 l'État hors service de la dette, % du PIB — et les tableaux de premier plan les mêmes colonnes ;
@@ -2297,10 +2298,21 @@ Ce qui reste :
   garantie. Les entrées `contrat-programme`, `controleur-d-etat` et `tutelle` sont définies
   pour les caisses et les collectivités : à élargir aux entreprises publiques (lois n° 85-72
   et n° 89-9).
-- **Bibliographie** : trente-sept notices dans `entreprises_publiques/references.json`, dont
+- **Bibliographie** : trente-huit notices (dont `wb-tunisia-gouvernance-ep-2014`, à verser dans Zotero) dans `entreprises_publiques/references.json`, dont
   douze recopiées d'autres livres (`imf-tunisia-art4-2020`, `wb-tunisia-per-2020`,
   `decret97-564`, `decret2004-2265`, `loi-org-2019-15-lob`, `bct-ra`, `ins-annuaire`…) : à
   promouvoir au fonds commun et à verser dans Zotero (`docs/notes/biblio-a-rapatrier.md`).
+- **Effectifs — ce qui reste** : aucun total pour 2021 ni avant 2018 (l'édition LF 2020 ne
+  donne qu'une part, l'édition LF 2021 n'a pas le tableau) ; quatre points sur quatre
+  périmètres (84, 86, 88, 85 entreprises), jamais une série ; total de 2020 imprimé avec une
+  demi-unité et non recoupé par les fiches ; définition de l'« agent » non dite ; sociétés
+  régionales de transport autres que Sfax et Bizerte hors des fiches ; statistique publique de
+  l'emploi des entreprises publiques non trouvée (enquêtes de l'INS sans ligne propre ; fiches
+  sur la Banque centrale et la Cour des comptes sans effectif — rapports eux-mêmes non
+  ouverts) ; rapport de l'Unité de suivi, source des 117 416 employés de 2010 que rapporte la
+  Banque mondiale (2014), toujours non obtenu. Numéros de page des éditions LF 2022 à LF 2024 :
+  ceux de la colonne `page_imprimee` de la série, à contrôler. Dette, subvention d'exploitation
+  et total des passifs par entreprise : toujours non versés.
 - **Parts calculées dans le module de figures, non dans l'entrepôt** : les dénominateurs
   (dépenses de l'État hors service de la dette, 1986-1987 et depuis 1991 ; PIB par segment de
   base, depuis 1986) sont lus dans la série `compensation-parts`, qui les porte déjà, et les
