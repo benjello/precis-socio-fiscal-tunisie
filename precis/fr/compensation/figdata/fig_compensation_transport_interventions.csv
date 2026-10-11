@@ -1,0 +1,140 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : transport-transferts-par-entreprise, compensation-parts
+# sources (citation) : @minfin-transferts-garanties, @minfin-note-execution-2018-12, @bct-ra-2020, @bct-ra-2021, @bct-ra-2022, @bct-ra-2023, @bct-ra-2024, @bct-ra-2025
+# fiches : sources/minfin-transferts-transport.md, docs/compensation-depense-par-poste.md
+# méthode/hypothèses : Les interventions dépassent chaque année le poste « transport » : elles comptent la société du réseau ferroviaire rapide, l'entretien du réseau ferré et, en 2017, des prises en charge de dettes. Le rapprochement avec le poste n'est établi que pour 2016. Réalisations de 2016 à 2023, loi de finances pour 2024., Colonnes annuelles des rapports du ministère des Finances, relayées par la Banque centrale à partir de 2019 ; 2024 est une colonne que la source ne qualifie pas.
+# note : Les interventions du budget au profit des entreprises du ministère du Transport, 2016-2024, en regard du poste « transport » de la dépense de compensation (millions de dinars courants)
+Année,État du chiffre,Édition du rapport,Lecture tracée,Entité,Interventions (millions de dinars),Page du PDF
+2016,réalisations,LF2020,oui,Institut national de la météorologie,1.089,76
+2016,réalisations,LF2020,oui,Société nouvelle de transport de Kerkennah,9.5,76
+2016,réalisations,LF2020,oui,Ministère du Transport (ligne du ministère),461.587,76
+2016,réalisations,LF2020,oui,Société du réseau ferroviaire rapide de Tunis,12.0,76
+2016,réalisations,LF2020,oui,Société nationale des chemins de fer tunisiens,65.5,76
+2016,réalisations,LF2020,oui,Société nationale de transport interurbain,3.0,76
+2016,réalisations,LF2020,oui,Sociétés régionales de transport,241.955,76
+2016,réalisations,LF2020,oui,Société des transports de Tunis,126.543,76
+2016,réalisations,LF2020,oui,Tunisair Express,2.0,76
+2017,réalisations,LF2020,oui,Institut national de la météorologie,0.336,92
+2017,réalisations,LF2020,oui,Société nouvelle de transport de Kerkennah,10.0,92
+2017,réalisations,LF2020,oui,Ministère du Transport (ligne du ministère),820.422,92
+2017,réalisations,LF2020,oui,Société du réseau ferroviaire rapide de Tunis,20.0,92
+2017,réalisations,LF2020,oui,Société nationale des chemins de fer tunisiens,219.624,92
+2017,réalisations,LF2020,oui,Société nationale de transport interurbain,32.7,92
+2017,réalisations,LF2020,oui,Sociétés régionales de transport,258.755,92
+2017,réalisations,LF2020,oui,Société des transports de Tunis,276.007,92
+2017,réalisations,LF2020,oui,Tunisair Express,3.0,92
+2018,réalisations,LF2020,non,Institut national de la météorologie,0.626,108
+2018,réalisations,LF2020,non,Société nouvelle de transport de Kerkennah,10.0,108
+2018,réalisations,LF2020,non,Ministère du Transport (ligne du ministère),550.395,108
+2018,réalisations,LF2020,non,Société du réseau ferroviaire rapide de Tunis,27.762,108
+2018,réalisations,LF2020,non,Société nationale des chemins de fer tunisiens,91.0,108
+2018,réalisations,LF2020,non,Société nationale de transport interurbain,1.0,108
+2018,réalisations,LF2020,non,Sociétés régionales de transport,255.0,108
+2018,réalisations,LF2020,non,Société des transports de Tunis,162.007,108
+2018,réalisations,LF2020,non,Tunisair Express,3.0,108
+2018,réalisations,LF2022,oui,Institut national de la météorologie,0.626,66
+2018,réalisations,LF2022,oui,Société nouvelle de transport de Kerkennah,10.0,66
+2018,réalisations,LF2022,oui,Ministère du Transport (ligne du ministère),550.395,66
+2018,réalisations,LF2022,oui,Société du réseau ferroviaire rapide de Tunis,27.762,66
+2018,réalisations,LF2022,oui,Société nationale des chemins de fer tunisiens,91.0,66
+2018,réalisations,LF2022,oui,Société nationale de transport interurbain,1.0,66
+2018,réalisations,LF2022,oui,Sociétés régionales de transport,255.0,66
+2018,réalisations,LF2022,oui,Société des transports de Tunis,162.007,66
+2018,réalisations,LF2022,oui,Tunisair Express,3.0,66
+2019,loi de finances,LF2020,non,Institut national de la météorologie,1.0,123
+2019,loi de finances,LF2020,non,Société nouvelle de transport de Kerkennah,10.0,123
+2019,loi de finances,LF2020,non,Ministère du Transport (ligne du ministère),493.6,123
+2019,loi de finances,LF2020,non,Société du réseau ferroviaire rapide de Tunis,20.0,123
+2019,loi de finances,LF2020,non,Société nationale des chemins de fer tunisiens,73.0,123
+2019,loi de finances,LF2020,non,Société nationale de transport interurbain,1.0,123
+2019,loi de finances,LF2020,non,Sociétés régionales de transport,255.0,123
+2019,loi de finances,LF2020,non,Société des transports de Tunis,130.6,123
+2019,loi de finances,LF2020,non,Tunisair Express,3.0,123
+2019,réalisations,LF2022,oui,Société nouvelle de transport de Kerkennah,10.0,75
+2019,réalisations,LF2022,oui,Ministère du Transport (ligne du ministère),501.472,75
+2019,réalisations,LF2022,oui,Société du réseau ferroviaire rapide de Tunis,29.0,75
+2019,réalisations,LF2022,oui,Société nationale des chemins de fer tunisiens,72.065,75
+2019,réalisations,LF2022,oui,Société nationale de transport interurbain,1.0,75
+2019,réalisations,LF2022,oui,Sociétés régionales de transport,255.0,75
+2019,réalisations,LF2022,oui,Société des transports de Tunis,131.407,75
+2019,réalisations,LF2022,oui,Tunisair Express,3.0,75
+2020,réalisations,LF2022,non,Société nouvelle de transport de Kerkennah,12.5,85
+2020,réalisations,LF2022,non,Ministère du Transport (ligne du ministère),659.058,85
+2020,réalisations,LF2022,non,Société du réseau ferroviaire rapide de Tunis,37.9,85
+2020,réalisations,LF2022,non,Société nationale des chemins de fer tunisiens,110.958,85
+2020,réalisations,LF2022,non,Société nationale de transport interurbain,7.5,85
+2020,réalisations,LF2022,non,Sociétés régionales de transport,325.0,85
+2020,réalisations,LF2022,non,Société des transports de Tunis,155.2,85
+2020,réalisations,LF2022,non,Tunisair Express,10.0,85
+2020,réalisations,LF2024,oui,Société nouvelle de transport de Kerkennah,12.5,71
+2020,réalisations,LF2024,oui,Ministère du Transport (ligne du ministère),659.058,71
+2020,réalisations,LF2024,oui,Société du réseau ferroviaire rapide de Tunis,37.9,71
+2020,réalisations,LF2024,oui,Société nationale des chemins de fer tunisiens,110.958,71
+2020,réalisations,LF2024,oui,Société nationale de transport interurbain,7.5,71
+2020,réalisations,LF2024,oui,Sociétés régionales de transport,325.0,71
+2020,réalisations,LF2024,oui,Société des transports de Tunis,155.2,71
+2020,réalisations,LF2024,oui,Tunisair Express,10.0,71
+2021,loi de finances,LF2022,non,Société nouvelle de transport de Kerkennah,14.0,95
+2021,loi de finances,LF2022,non,Ministère du Transport (ligne du ministère),556.0,94
+2021,loi de finances,LF2022,non,Société du réseau ferroviaire rapide de Tunis,37.0,95
+2021,loi de finances,LF2022,non,Société nationale des chemins de fer tunisiens,69.0,95
+2021,loi de finances,LF2022,non,Société nationale de transport interurbain,2.5,95
+2021,loi de finances,LF2022,non,Sociétés régionales de transport,288.5,94
+2021,loi de finances,LF2022,non,Société des transports de Tunis,135.0,95
+2021,loi de finances,LF2022,non,Tunisair Express,10.0,95
+2021,réalisations,LF2024,non,Société nouvelle de transport de Kerkennah,14.0,81
+2021,réalisations,LF2024,non,Ministère du Transport (ligne du ministère),560.801,81
+2021,réalisations,LF2024,non,Société du réseau ferroviaire rapide de Tunis,38.875,81
+2021,réalisations,LF2024,non,Société nationale des chemins de fer tunisiens,71.926,81
+2021,réalisations,LF2024,non,Société nationale de transport interurbain,2.5,81
+2021,réalisations,LF2024,non,Sociétés régionales de transport,288.5,81
+2021,réalisations,LF2024,non,Société des transports de Tunis,135.0,81
+2021,réalisations,LF2024,non,Tunisair Express,10.0,81
+2021,réalisations,LF2025,oui,Société nouvelle de transport de Kerkennah,14.0,76
+2021,réalisations,LF2025,oui,Ministère du Transport (ligne du ministère),560.801,76
+2021,réalisations,LF2025,oui,Société du réseau ferroviaire rapide de Tunis,38.875,76
+2021,réalisations,LF2025,oui,Société nationale des chemins de fer tunisiens,71.926,76
+2021,réalisations,LF2025,oui,Société nationale de transport interurbain,2.5,76
+2021,réalisations,LF2025,oui,Sociétés régionales de transport,288.5,76
+2021,réalisations,LF2025,oui,Société des transports de Tunis,135.0,76
+2021,réalisations,LF2025,oui,Tunisair Express,10.0,76
+2022,réalisations,LF2024,non,Société nouvelle de transport de Kerkennah,16.0,91
+2022,réalisations,LF2024,non,Ministère du Transport (ligne du ministère),661.396,91
+2022,réalisations,LF2024,non,Société du réseau ferroviaire rapide de Tunis,42.757,91
+2022,réalisations,LF2024,non,Société nationale des chemins de fer tunisiens,86.639,91
+2022,réalisations,LF2024,non,Société nationale de transport interurbain,5.0,91
+2022,réalisations,LF2024,non,Sociétés régionales de transport,361.0,91
+2022,réalisations,LF2024,non,Société des transports de Tunis,140.0,91
+2022,réalisations,LF2024,non,Tunisair Express,10.0,91
+2022,réalisations,LF2025,oui,Société nouvelle de transport de Kerkennah,16.0,86
+2022,réalisations,LF2025,oui,Ministère du Transport (ligne du ministère),661.396,86
+2022,réalisations,LF2025,oui,Société du réseau ferroviaire rapide de Tunis,42.757,86
+2022,réalisations,LF2025,oui,Société nationale des chemins de fer tunisiens,86.639,86
+2022,réalisations,LF2025,oui,Société nationale de transport interurbain,5.0,86
+2022,réalisations,LF2025,oui,Sociétés régionales de transport,361.0,86
+2022,réalisations,LF2025,oui,Société des transports de Tunis,140.0,86
+2022,réalisations,LF2025,oui,Tunisair Express,10.0,86
+2023,loi de finances,LF2024,non,Société nouvelle de transport de Kerkennah,17.0,101
+2023,loi de finances,LF2024,non,Ministère du Transport (ligne du ministère),694.0,101
+2023,loi de finances,LF2024,non,Société du réseau ferroviaire rapide de Tunis,47.0,101
+2023,loi de finances,LF2024,non,Société nationale des chemins de fer tunisiens,83.0,101
+2023,loi de finances,LF2024,non,Société nationale de transport interurbain,3.0,101
+2023,loi de finances,LF2024,non,Sociétés régionales de transport,393.0,101
+2023,loi de finances,LF2024,non,Société des transports de Tunis,141.0,101
+2023,loi de finances,LF2024,non,Tunisair Express,10.0,101
+2023,réalisations,LF2025,oui,Société nouvelle de transport de Kerkennah,17.0,98
+2023,réalisations,LF2025,oui,Ministère du Transport (ligne du ministère),696.407,97
+2023,réalisations,LF2025,oui,Société du réseau ferroviaire rapide de Tunis,49.913,98
+2023,réalisations,LF2025,oui,Société nationale des chemins de fer tunisiens,82.494,98
+2023,réalisations,LF2025,oui,Société nationale de transport interurbain,3.0,98
+2023,réalisations,LF2025,oui,Sociétés régionales de transport,393.0,97
+2023,réalisations,LF2025,oui,Société des transports de Tunis,141.0,98
+2023,réalisations,LF2025,oui,Tunisair Express,10.0,98
+2024,loi de finances,LF2025,oui,Société nouvelle de transport de Kerkennah,18.0,109
+2024,loi de finances,LF2025,oui,Ministère du Transport (ligne du ministère),727.0,109
+2024,loi de finances,LF2025,oui,Société du réseau ferroviaire rapide de Tunis,60.0,109
+2024,loi de finances,LF2025,oui,Société nationale des chemins de fer tunisiens,83.0,109
+2024,loi de finances,LF2025,oui,Société nationale de transport interurbain,3.0,109
+2024,loi de finances,LF2025,oui,Sociétés régionales de transport,400.0,109
+2024,loi de finances,LF2025,oui,Société des transports de Tunis,153.0,109
+2024,loi de finances,LF2025,oui,Tunisair Express,10.0,109
