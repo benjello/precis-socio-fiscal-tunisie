@@ -2234,8 +2234,8 @@ Plan : vue d'ensemble (`#sec-ep-vue-ensemble`) ; mise en place 1969-1987 ; grand
 (1989, 1994-2001, cessions 1987-2009, rapport annuel de 2019, depuis 2011) et registre des
 textes ; état du droit ; transferts du budget ; garanties ; dettes et créances croisées ;
 dividendes et versements ; cessions ; longue période ; Livre blanc de 2018 et études
-extérieures. Six figures et vingt-cinq tableaux, tous engendrés depuis les séries sauf trois
-(les réformes ; le registre des textes ; les six éditions du rapport).
+extérieures. Six figures et vingt-six tableaux, tous engendrés depuis les séries sauf quatre
+(les réformes ; les deux registres de textes ; les six éditions du rapport).
 
 Ce qui reste :
 
