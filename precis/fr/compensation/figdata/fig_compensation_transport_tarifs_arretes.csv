@@ -1,0 +1,81 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : jort-transport-tarifs-reperes, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @arrete-1987-02-14-tarifs-voyageurs, @arrete-1989-08-10-tarifs-urbains, @arrete-1990-07-30-tarifs-urbains, @arrete-1991-07-02-tarifs-urbains, @arrete-1992-08-24-tarifs-urbains, @arrete-1993-08-26-tarifs-urbains, @arrete-1998-04-27-tarifs-urbains, @arrete-2000-02-17-tarifs-urbains
+# fiches : sources/jort-transport-tarifs.md, sources/bct-archives.md
+# méthode/hypothèses : Tarif à sa date d'effet. La date d'effet des arrêtés du 26 août 1993 et du 17 février 2000 n'est pas établie. Un arrêté du 30 septembre 1989, qui modifie celui du 10 août 1989, n'est connu que par son intitulé. Aucun tarif postérieur à février 2000 n'est identifié au Journal officiel., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Les tarifs repères des réseaux urbains fixés par arrêté, 1987-2000 : ticket ordinaire et abonnement annuel ordinaire, en prix courants et en dinars de 2025
+Source,Grandeur,Unité,Date ou période,Valeur,"Moyenne de l'année, en millimes de 2025",Texte,"Moyenne de l'année, en dinars de 2025"
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1987-02-16,140.0,,"arrêté du 1987-02-14, JORT n° 13 du 1987-02-20, p. 261",
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1989-08-31,150.0,,"arrêté du 1989-08-10, JORT n° 58 du 1989-08-29, p. 1282-1284",
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1990-08-12,170.0,,"arrêté du 1990-07-30, JORT n° 52 du 1990-08-10, p. 1045-1048",
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1991-07-14,190.0,,"arrêté du 1991-07-02, JORT n° 50 du 1991-07-12, p. 1294-1297",
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1992-09-03,210.0,,"arrêté du 1992-08-24, JORT n° 57 du 1992-09-01, p. 1128-1133",
+Journal officiel,"Ticket ordinaire, 1 section",millimes,date d'effet non établie,230.0,,"arrêté du 1993-08-26, JORT n° 67 du 1993-09-07, p. 1430-1435",
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1998-05-06,260.0,,"arrêté du 1998-04-27, JORT n° 37 du 1998-05-08, p. 997-1001",
+Journal officiel,"Ticket ordinaire, 1 section",millimes,date d'effet non établie,260.0,,"arrêté du 2000-02-17, JORT n° 16 du 2000-02-25, p. 535-536",
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1988,,825.8,,
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1989,,784.8,,
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1990,,804.8,,
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1991,,850.1,,
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1992,,880.6,,
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1994,,954.1,,
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1995,,898.0,,
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1996,,865.8,,
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1997,,834.9,,
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1998,,871.2,,
+Journal officiel,"Ticket ordinaire, 1 section",millimes,1999,,891.2,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1987-02-16,210.0,,"arrêté du 1987-02-14, JORT n° 13 du 1987-02-20, p. 261",
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1989-08-31,240.0,,"arrêté du 1989-08-10, JORT n° 58 du 1989-08-29, p. 1282-1284",
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1990-08-12,260.0,,"arrêté du 1990-07-30, JORT n° 52 du 1990-08-10, p. 1045-1048",
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1991-07-14,290.0,,"arrêté du 1991-07-02, JORT n° 50 du 1991-07-12, p. 1294-1297",
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1992-09-03,320.0,,"arrêté du 1992-08-24, JORT n° 57 du 1992-09-01, p. 1128-1133",
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,date d'effet non établie,350.0,,"arrêté du 1993-08-26, JORT n° 67 du 1993-09-07, p. 1430-1435",
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1998-05-06,390.0,,"arrêté du 1998-04-27, JORT n° 37 du 1998-05-08, p. 997-1001",
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,date d'effet non établie,390.0,,"arrêté du 2000-02-17, JORT n° 16 du 2000-02-25, p. 535-536",
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1988,,1238.6,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1989,,1204.6,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1990,,1267.1,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1991,,1299.0,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1992,,1343.5,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1994,,1451.8,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1995,,1366.5,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1996,,1317.6,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1997,,1270.5,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1998,,1314.2,,
+Journal officiel,"Ticket ordinaire, 2 sections",millimes,1999,,1336.9,,
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1987-02-16,102.0,,"arrêté du 1987-02-14, JORT n° 13 du 1987-02-20, p. 261",
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1989-08-31,112.5,,"arrêté du 1989-08-10, JORT n° 58 du 1989-08-29, p. 1282-1284",
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1990-08-12,112.0,,"arrêté du 1990-07-30, JORT n° 52 du 1990-08-10, p. 1045-1048",
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1991-07-14,126.0,,"arrêté du 1991-07-02, JORT n° 50 du 1991-07-12, p. 1294-1297",
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1992-09-03,135.0,,"arrêté du 1992-08-24, JORT n° 57 du 1992-09-01, p. 1128-1133",
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,date d'effet non établie,142.0,,"arrêté du 1993-08-26, JORT n° 67 du 1993-09-07, p. 1430-1435",
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1998-05-06,167.0,,"arrêté du 1998-04-27, JORT n° 37 du 1998-05-08, p. 997-1001",
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1988,,,,601.6
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1989,,,,577.7
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1990,,,,577.0
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1991,,,,561.7
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1992,,,,579.2
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1994,,,,589.0
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1995,,,,554.4
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1996,,,,534.6
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1997,,,,515.5
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1998,,,,551.2
+Journal officiel,"Abonnement annuel ordinaire, ligne à une section",dinars,1999,,,,572.5
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1987-02-16,125.0,,"arrêté du 1987-02-14, JORT n° 13 du 1987-02-20, p. 261",
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1989-08-31,137.5,,"arrêté du 1989-08-10, JORT n° 58 du 1989-08-29, p. 1282-1284",
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1990-08-12,138.0,,"arrêté du 1990-07-30, JORT n° 52 du 1990-08-10, p. 1045-1048",
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1991-07-14,155.0,,"arrêté du 1991-07-02, JORT n° 50 du 1991-07-12, p. 1294-1297",
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1992-09-03,165.0,,"arrêté du 1992-08-24, JORT n° 57 du 1992-09-01, p. 1128-1133",
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,date d'effet non établie,174.0,,"arrêté du 1993-08-26, JORT n° 67 du 1993-09-07, p. 1430-1435",
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1998-05-06,205.0,,"arrêté du 1998-04-27, JORT n° 37 du 1998-05-08, p. 997-1001",
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1988,,,,737.3
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1989,,,,707.2
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1990,,,,707.2
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1991,,,,691.6
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1992,,,,711.3
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1994,,,,721.8
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1995,,,,679.4
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1996,,,,655.0
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1997,,,,631.6
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1998,,,,676.2
+Journal officiel,"Abonnement annuel ordinaire, ligne à deux sections",dinars,1999,,,,702.7

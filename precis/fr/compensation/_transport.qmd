@@ -17,8 +17,8 @@ from figures import transport as tr
 tr.figure(
     "soutien_par_societe",
     caption=("Le soutien du transport public par société bénéficiaire, 2012-2017 : crédits du "
-             "budget du ministère du Transport, en millions de dinars courants et en part du "
-             "total"),
+             "budget du ministère du Transport, en millions de dinars courants, en part des "
+             "crédits, en part de la dépense de compensation et en part du PIB"),
     note_lecture=(
         "Chaque barre empile les crédits inscrits au budget du ministère du Transport pour "
         "les sociétés régionales de transport, la société des transports de Tunis (autobus, "
@@ -30,25 +30,47 @@ tr.figure(
         "année, celle de l'édition la plus récente du budget, les autres étant dans les "
         "données. Le rond noir est le poste « transport » de la dépense de compensation : "
         "il se confond avec le total des crédits, sauf en 2014, 2015 et 2017, où le réalisé "
-        "est un peu inférieur."))
+        "est un peu inférieur. Deuxième vue : chaque bénéficiaire en part du total des "
+        "crédits de l'année.\n\n"
+        "Troisième vue : les mêmes crédits rapportés à la dépense de compensation de l'année, "
+        "les trois postes réunis — produits de base, carburants, transport. Le numérateur est "
+        "un crédit voté, le dénominateur la dépense réalisée du chapitre de la dépense : le "
+        "rapport dit un ordre de grandeur, non une part exacte. Il varie surtout avec le "
+        "dénominateur, que le poste des carburants fait passer de 5 514 MD en 2013 à "
+        "2 211 MD en 2016.\n\n"
+        "Quatrième vue : les crédits en part du PIB — celui de l'INS en [base "
+        "2015](../annexe-pib.html#pib-base-2015), rétropolée par l'INS pour 2012-2014, "
+        "valeurs d'origine ensuite ; la base est dite au-dessus du cadre. Toute la période "
+        "est dans la même base : aucune rupture de série n'y tombe (voir l'[annexe sur le "
+        "PIB](../annexe-pib.html#sec-pib-ruptures))."))
 ```
 
-| Bénéficiaire | 2012<br>(MD) | 2013<br>(MD) | 2014<br>(MD) | 2015<br>(MD) | 2016<br>(MD) | 2017<br>(MD) |
-|---|---:|---:|---:|---:|---:|---:|
-| Sociétés régionales de transport | 155,0 | 190,0 | 217,1 | 228,8 | 244,0 | 255,0 |
-| Société des transports de Tunis, autobus | 63,0 | 70,0 | 83,0 | 90,0 | 94,0 | 96,0 |
-| Société des transports de Tunis, métro | 23,0 | 25,0 | 29,2 | 30,0 | 32,0 | 34,0 |
-| SNCFT | 32,0 | 38,0 | 41,8 | 49,7 | 50,5 | 50,0 |
-| Autres bénéficiaires | 4,5 | 7,0 | 13,9 | 17,5 | 12,5 | 15,0 |
-| **Total des crédits** | **277,5** | **330,0** | **385,0** | **416,0** | **433,0** | **450,0** |
+::: {.callout-note collapse="true" title="Soutien du transport public par société, 2012-2017 : montants des crédits, en millions de dinars"}
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.tableau_soutien(
+    caption=("Le soutien du transport public par société, 2012-2017 : crédits du budget du "
+             "ministère du Transport (millions de dinars courants, MD). Sous chaque année, "
+             "l'état du chiffre : loi de finances (LF), loi de finances complémentaire (LFC) "
+             "ou prévision. Les autres bénéficiaires sont la société du bac de Kerkennah, "
+             "Tunisair Express, la Société nationale de transport interurbain et le transport "
+             "scolaire rural ; SNCFT : Société nationale des chemins de fer tunisiens. Source : "
+             "budgets du ministère du Transport [@minfin-budget-transport-2013 ; "
+             "@minfin-budget-transport-2014 ; @minfin-budget-transport-2015 ; "
+             "@minfin-budget-transport-2016 ; @minfin-budget-transport-2017]."),
+    tbl_id="tbl-compensation-transport-soutien")
+```
+:::
 
-: Le soutien du transport public par société, 2012-2017 : crédits du budget du ministère du Transport (millions de dinars courants). Loi de finances pour 2012, 2013 et 2016, loi de finances complémentaire pour 2014 et 2015, prévision pour 2017. Les autres bénéficiaires sont la société du bac de Kerkennah, Tunisair Express, la Société nationale de transport interurbain et le transport scolaire rural. Source : budgets du ministère du Transport [@minfin-budget-transport-2013 ; @minfin-budget-transport-2014 ; @minfin-budget-transport-2015 ; @minfin-budget-transport-2016 ; @minfin-budget-transport-2017]. {#tbl-compensation-transport-soutien}
-
-Quatre faits s'y lisent.
+Cinq faits se lisent sur le @fig-compensation-transport-soutien.
 
 - **Les sociétés régionales d'abord.** Elles reçoivent chaque année de 55,0 à 57,6 % des crédits ; la société des transports de Tunis, de 28,8 à 31,0 % ; la SNCFT, de 10,9 à 11,9 %.
 - **Un périmètre plus large que le transport terrestre.** Le bac de Kerkennah reçoit 4,0 MD en 2012 et 10,0 MD en 2017 ; la compagnie aérienne Tunisair Express entre dans la ligne avec la loi de finances complémentaire pour 2014 — 5,0 MD, pris sur les crédits de la SNCFT et des sociétés régionales — et reçoit 5,0 MD en 2015, 2,0 MD en 2016 et 3,0 MD en 2017.
 - **Des crédits, non des dépenses constatées.** Leur somme égale le poste « transport » voté. Le réalisé s'en écarte peu : 384,0 MD pour 385,0 en 2014, 415,9 MD pour 416,0 en 2015, 448,2 MD pour 450,0 en 2017 (@tbl-compensation-2012-2025).
+- **Moins d'un demi-point de PIB, et une part très variable de la compensation.** Les crédits valent 0,38 % du PIB en 2012, 0,46 % en 2015 et 0,44 % en 2017. Rapportés à la dépense de compensation réalisée, tous postes réunis, ils en font 7,7 % en 2012, 6,0 % en 2013, 14,4 % en 2015, 19,6 % en 2016 et 12,9 % en 2017 : c'est le poste des carburants qui fait varier ce rapport, non le transport (@sec-compensation-par-poste).
 - **Aucune décomposition par nature.** Le budget ne sépare pas le scolaire, les tarifs réduits et les gratuités ; la part de chacun dans le poste n'est donnée par aucune des sources budgétaires identifiées.
 
 Avant 2012 et après 2017, cette répartition par société n'est pas établie. Un rapport du ministère des Finances donne, de 2016 à 2024, les « interventions » du budget par entreprise, sur un périmètre plus large que le poste (@sec-compensation-transport-interventions).
@@ -221,25 +243,71 @@ La pratique n'est connue que par la réponse du ministère du Transport à la Co
 
 ## Les tarifs et les abonnements {#sec-compensation-transport-tarifs .domicile-unique}
 
-Le tarif ordinaire est la référence de toute la compensation : c'est par rapport à lui que se mesure ce que l'élève, l'abonné ou le voyageur gratuit ne paie pas. Sur les réseaux urbains, il se compte en sections — un ticket d'une section, de deux sections, et ainsi jusqu'à cinq ; sur les lignes interurbaines par route, en millimes par place et par kilomètre. Deux sources le donnent, qui ne se raccordent pas : les arrêtés du ministre du transport publiés au *Journal officiel* de 1987 à 2000, puis le relevé de prix de l'Institut national de la statistique (INS) à Tunis, de novembre 2007 à juillet 2026. Entre février 2000 et novembre 2007, aucun tarif n'est établi. La comparaison des deux segments en dinars de 2025 est à la section de la longue période (@sec-compensation-transport-tarifs-constants).
+Le tarif ordinaire est la référence de toute la compensation : c'est par rapport à lui que se mesure ce que l'élève, l'abonné ou le voyageur gratuit ne paie pas. Sur les réseaux urbains, il se compte en sections — un ticket d'une section, de deux sections, et ainsi jusqu'à cinq ; sur les lignes interurbaines par route, en millimes par place et par kilomètre. Deux sources le donnent, qui ne se raccordent pas : les arrêtés du ministre du transport publiés au *Journal officiel* de 1987 à 2000, puis le relevé de prix de l'Institut national de la statistique (INS) à Tunis, de novembre 2007 à juillet 2026. Entre février 2000 et novembre 2007, aucun tarif n'est établi. La comparaison des deux segments est à la section de la longue période (@sec-compensation-transport-tarifs-constants).
+
+Dans tout le chapitre, un montant en dinars ou en millimes de 2025 est, pour une année donnée, la moyenne des montants en vigueur au premier jour de chacun de ses douze mois, multipliée par le rapport de l'indice des prix à la consommation de 2025 à celui de l'année. Il n'est donné que pour les années entièrement établies : 1987, dont le tarif de janvier n'est pas connu, et 1993, dont l'arrêté n'a pas de date d'effet établie, n'en ont pas.
 
 ### 1987-2000 : les arrêtés publiés
 
-| Date d'effet | Ticket d'une section<br>(millimes) | Ticket d'une section<br>(millimes de 2025) | Ticket de deux sections<br>(millimes) | Ticket de deux sections<br>(millimes de 2025) | Abonnement annuel ordinaire, une section<br>(D) | Abonnement annuel ordinaire, une section<br>(D de 2025) |
-|---|---:|---:|---:|---:|---:|---:|
-| [[16 février 1987]{.insecable}](#r-tr-t-1987) | 140 | 885 | 210 | 1 328 | 102,000 | 645 |
-| [[31 août 1989]{.insecable}](#r-tr-t-1989) | 150 | 821 | 240 | 1 314 | 112,500 | 616 |
-| [[12 août 1990]{.insecable}](#r-tr-t-1990) | 170 | 873 | 260 | 1 336 | 112,000 | 575 |
-| [[14 juillet 1991]{.insecable}](#r-tr-t-1991) | 190 | 906 | 290 | 1 382 | 126,000 | 601 |
-| [[3 septembre 1992]{.insecable}](#r-tr-t-1992) | 210 | 948 | 320 | 1 445 | 135,000 | 610 |
-| [non établie (arrêté du 26 août 1993)](#r-tr-t-1993) | 230 | 997 | 350 | 1 517 | 142,000 | 615 |
-| [[6 mai 1998]{.insecable}](#r-tr-t-1998) | 260 | 915 | 390 | 1 373 | 167,000 | 588 |
+Le @fig-compensation-transport-tarifs-arretes donne les tarifs repères que ces arrêtés fixent pour les réseaux urbains : le ticket ordinaire d'une et de deux sections, l'abonnement annuel ordinaire d'une ligne à une et à deux sections.
 
-: Les tarifs repères des réseaux urbains fixés par arrêté, 1987-1998 : ticket ordinaire d'une et de deux sections, abonnement annuel ordinaire d'une ligne à une section. Réseaux urbains et suburbains des sociétés de transport routier, métro léger de Tunis et TGM, hors colonnes propres aux sociétés de Sfax et du Sahel. Les montants de 2025 sont obtenus en appliquant au tarif l'indice des prix à la consommation de l'année de sa date d'effet (1993 pour l'arrêté du 26 août 1993). Les textes sont au registre replié de la section. {#tbl-compensation-transport-tarifs-reperes}
+```{python}
+#| label: fig-compensation-transport-tarifs-arretes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.figure(
+    "tarifs_arretes",
+    caption=("Les tarifs repères des réseaux urbains fixés par arrêté, 1987-2000 : ticket "
+             "ordinaire et abonnement annuel ordinaire, en prix courants et en dinars de 2025"),
+    note_lecture=(
+        "En haut, le ticket ordinaire d'une section (noir) et de deux sections (bleu), en "
+        "millimes ; en bas, l'abonnement annuel ordinaire d'une ligne à une section (noir) et "
+        "à deux sections (bleu), en dinars. Réseaux urbains et suburbains des sociétés de "
+        "transport routier, métro léger de Tunis et TGM, hors colonnes propres aux sociétés "
+        "de Sfax et du Sahel. Première vue : les tarifs en marches, chaque marche posée à la "
+        "date d'effet de l'arrêté ; une marque creuse signale une date d'effet non établie, "
+        "posée à la date du fascicule (septembre 1993, février 2000). Le trait s'arrête au "
+        "dernier arrêté, de février 2000.\n\n"
+        "Seconde vue : les mêmes tarifs en millimes et en dinars de 2025, un point par année "
+        "— moyenne des tarifs en vigueur au premier jour de chacun des douze mois, déflatée "
+        "par l'indice des prix à la consommation. Les années 1987 et 1993, qui ne sont pas "
+        "entièrement établies, manquent, et le trait s'interrompt."))
+```
+
+::: {.callout-note collapse="true" title="Tarifs repères des réseaux urbains fixés par arrêté, 1987-1998 : montants à la date d'effet, et montants annuels en dinars de 2025"}
+| Date d'effet | Ticket d'une section<br>(millimes) | Ticket de deux sections<br>(millimes) | Abonnement annuel ordinaire, une section<br>(D) | Abonnement annuel ordinaire, deux sections<br>(D) |
+|---|---:|---:|---:|---:|
+| [[16 février 1987]{.insecable}](#r-tr-t-1987) | 140 | 210 | 102,000 | 125,000 |
+| [[31 août 1989]{.insecable}](#r-tr-t-1989) | 150 | 240 | 112,500 | 137,500 |
+| [[12 août 1990]{.insecable}](#r-tr-t-1990) | 170 | 260 | 112,000 | 138,000 |
+| [[14 juillet 1991]{.insecable}](#r-tr-t-1991) | 190 | 290 | 126,000 | 155,000 |
+| [[3 septembre 1992]{.insecable}](#r-tr-t-1992) | 210 | 320 | 135,000 | 165,000 |
+| [non établie (arrêté du 26 août 1993)](#r-tr-t-1993) | 230 | 350 | 142,000 | 174,000 |
+| [[6 mai 1998]{.insecable}](#r-tr-t-1998) | 260 | 390 | 167,000 | 205,000 |
+
+: Les tarifs repères des réseaux urbains fixés par arrêté, à leur date d'effet, 1987-1998 (prix courants). Réseaux urbains et suburbains des sociétés de transport routier, métro léger de Tunis et TGM, hors colonnes propres aux sociétés de Sfax et du Sahel. Les textes sont au registre replié de la section. {#tbl-compensation-transport-tarifs-reperes}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.tableau_annuel(
+    ("ticket_1_section", "ticket_2_sections", "abonnement_annuel_ordinaire_1_section",
+     "abonnement_annuel_ordinaire_2_sections", "interurbain_place_km_10_150_km"),
+    caption=("Les tarifs repères fixés par arrêté, en millimes et en dinars de 2025, par année, "
+             "1988-1999 : moyenne des tarifs en vigueur au premier jour de chacun des douze "
+             "mois, déflatée par l'indice des prix à la consommation. Les années 1987 et 1993 "
+             "ne sont pas entièrement établies."),
+    tbl_id="tbl-compensation-transport-tarifs-2025")
+```
+:::
 
 - **Une hausse presque chaque année de 1989 à 1993, puis une seule en 1998.** Le ticket d'une section passe de 140 millimes en février 1987 à 230 après l'arrêté d'août 1993, et à 260 en mai 1998.
-- **Un tarif à peu près stable en pouvoir d'achat.** En millimes de 2025, le ticket d'une section vaut 885 en 1987, 997 en 1993 et 915 en 1998 ; celui de deux sections, 1 328, 1 517 et 1 373.
-- **L'interurbain suit la même pente.** Le prix de la place par kilomètre, de plus de dix à cent cinquante kilomètres, passe de 20 millimes en 1987 à 33,2 après l'arrêté d'août 1993 et à 37,5 le 8 février 1999 — 127, 144 et 129 millimes de 2025.
+- **Un tarif à peu près stable en pouvoir d'achat.** En millimes de 2025, le ticket d'une section vaut 826 en 1988, 954 en 1994 et 891 en 1999 ; celui de deux sections, 1 239, 1 452 et 1 337. L'abonnement annuel ordinaire d'une section vaut 602 D de 2025 en 1988 et 572 D en 1999.
+- **L'interurbain suit la même pente.** Le prix de la place par kilomètre, de plus de dix à cent cinquante kilomètres, passe de 20 millimes en 1987 à 33,2 après l'arrêté d'août 1993 et à 37,5 le 8 février 1999 — 118 millimes de 2025 en 1988, 138 en 1994 et 126 en 1999.
 - **Le dernier barème publié est celui de 1998.** L'arrêté du 17 février 2000 n'en remplace que la première annexe : les tarifs de Tunis sont inchangés, et la société de Sfax reçoit une cinquième section à 790 millimes et une sixième à 1 000.
 
 ### 2007-2026 : le relevé de prix de l'INS
@@ -298,19 +366,19 @@ L'abonnement scolaire est le tarif préférentiel qui commande le poste : l'él�
 
 **À quel prix.** Une ligne urbaine d'une ou deux sections coûte 19,400 D par an à partir du 1^er^ août 1998 ; l'abonnement ordinaire correspondant, 167 D pour une section et 205 D pour deux, d'après [l'arrêté du 27 avril 1998](#r-tr-t-1998).
 
-| Date d'effet | Abonnement scolaire, une ligne urbaine<br>(D) | Abonnement scolaire, une ligne urbaine<br>(D de 2025) | Abonnement scolaire, zone urbaine<br>(D) | Abonnement ordinaire, une section<br>(D) | Prix scolaire rapporté au prix ordinaire<br>(%) |
-|---|---:|---:|---:|---:|---:|
-| [[31 août 1989]{.insecable}](#r-tr-t-1989) | 14,800 | 81,0 | 22,200 | 112,500 | 13,2 |
-| [[12 août 1990]{.insecable}](#r-tr-t-1990) | 14,800 | 76,0 | 22,150 | 112,000 | 13,2 |
-| [[14 juillet 1991]{.insecable}](#r-tr-t-1991) | 16,300 | 77,7 | 24,400 | 126,000 | 12,9 |
-| [[3 septembre 1992]{.insecable}](#r-tr-t-1992) | 16,300 | 73,6 | 24,400 | 135,000 | 12,1 |
-| [non établie (arrêté du 26 août 1993)](#r-tr-t-1993) | 17,200 | 74,5 | 25,700 | 142,000 | 12,1 |
-| [[1^er^ août 1998]{.insecable}](#r-tr-s-1998) | 19,400 | 68,3 | 28,900 | 167,000 | 11,6 |
+| Date d'effet | Abonnement scolaire, une ligne urbaine<br>(D) | Abonnement scolaire, zone urbaine<br>(D) | Abonnement ordinaire, une section<br>(D) | Prix scolaire rapporté au prix ordinaire<br>(%) |
+|---|---:|---:|---:|---:|
+| [[31 août 1989]{.insecable}](#r-tr-t-1989) | 14,800 | 22,200 | 112,500 | 13,2 |
+| [[12 août 1990]{.insecable}](#r-tr-t-1990) | 14,800 | 22,150 | 112,000 | 13,2 |
+| [[14 juillet 1991]{.insecable}](#r-tr-t-1991) | 16,300 | 24,400 | 126,000 | 12,9 |
+| [[3 septembre 1992]{.insecable}](#r-tr-t-1992) | 16,300 | 24,400 | 135,000 | 12,1 |
+| [non établie (arrêté du 26 août 1993)](#r-tr-t-1993) | 17,200 | 25,700 | 142,000 | 12,1 |
+| [[1^er^ août 1998]{.insecable}](#r-tr-s-1998) | 19,400 | 28,900 | 167,000 | 11,6 |
 
-: L'abonnement scolaire annuel fixé par arrêté, 1989-1998, en regard de l'abonnement annuel ordinaire d'une ligne à une section. La dernière colonne rapporte l'abonnement scolaire d'une ligne urbaine à l'abonnement ordinaire d'une section. Les montants de 2025 sont obtenus en appliquant l'indice des prix à la consommation de l'année de la date d'effet. L'abonnement ordinaire de 1998 est celui de l'arrêté du 27 avril 1998, en vigueur le 6 mai. Les textes sont aux registres repliés de cette section et de la précédente. {#tbl-compensation-transport-scolaire}
+: L'abonnement scolaire annuel fixé par arrêté, 1989-1998, en regard de l'abonnement annuel ordinaire d'une ligne à une section. La dernière colonne rapporte l'abonnement scolaire d'une ligne urbaine à l'abonnement ordinaire d'une section. L'abonnement ordinaire de 1998 est celui de l'arrêté du 27 avril 1998, en vigueur le 6 mai. Les textes sont aux registres repliés de cette section et de la précédente. {#tbl-compensation-transport-scolaire}
 
 - **L'élève paie environ un huitième du prix ordinaire, ou moins.** En 1998, 19,400 D pour un abonnement ordinaire de 167 D sur une section, soit 11,6 %, et de 205 D sur deux sections, soit 9,5 %. La Cour des comptes écrit de son côté que les réductions consenties aux élèves et aux étudiants atteignent 90 % du tarif normal [@cour-comptes-2008-transport-terrestre, p. 99].
-- **L'abonnement scolaire monte moins vite que le ticket.** De 1989 à 1998, il augmente de 31 %, quand le ticket d'une section passe de 150 à 260 millimes, soit 73 % de plus (@tbl-compensation-transport-tarifs-reperes). En dinars de 2025, il recule de 81,0 à 68,3 D.
+- **L'abonnement scolaire monte moins vite que le ticket.** De 1989 à 1998, il augmente de 31 %, quand le ticket d'une section passe de 150 à 260 millimes, soit 73 % de plus (@tbl-compensation-transport-tarifs-reperes). En dinars de 2025, il recule de 76,0 D en 1990 à 66,5 D en 1999 (@fig-compensation-transport-abonnements-prix).
 - **D'autres abonnements scolaires, en 1998.** Zone urbaine 28,900 D ; ligne suburbaine de trois sections et plus 41,700 D ; réseau général 53,200 D ; métro, une ligne 19,400 D et le réseau 37,860 D ; TGM en deuxième classe 48,100 D.
 
 Aucun barème de l'abonnement scolaire postérieur à 1998 n'est identifié (@sec-compensation-transport-etat-du-droit). Deux indications subsistent, qui ne se mettent pas en série avec lui. L'INS relève à Tunis un « abonnement scolaire (bus) », dont il ne dit ni la durée ni le réseau : 23,7 D de novembre 2007 à juillet 2010, environ 24 à 25 D jusqu'en août 2024, puis 25,850 D à partir de septembre 2024 — soit, en dinars de 2025, 61,4 D en moyenne en 2008 et 25,9 D en 2025 [@ins-bms]. La presse rapporte en mars 2018 les abonnements scolaires annuels de la société des transports de Tunis : 36,500 D pour la zone urbaine d'autobus, 66,250 D pour le réseau général d'autobus, 60,050 D pour le TGM en deuxième classe [@presse-tuniscope-2018-03-06] — environ 25 % de plus qu'au barème de 1998, vingt ans plus tard.
@@ -404,7 +472,7 @@ Cette section donne les séries budgétaires et statistiques : les tarifs en din
 
 ### Les tarifs en dinars courants et en dinars de 2025 {#sec-compensation-transport-tarifs-constants}
 
-Le @fig-compensation-transport-tarifs réunit les deux segments du prix du ticket — arrêtés de 1987 à 2000, relevé de l'Institut national de la statistique (INS) de 2007 à 2026 — sans les relier.
+Le @fig-compensation-transport-tarifs réunit les deux segments du prix du ticket — arrêtés de 1987 à 2000, relevé de l'Institut national de la statistique (INS) de 2007 à 2026 — sans les relier. Le détail du premier segment, abonnements compris, est à la section des tarifs (@fig-compensation-transport-tarifs-arretes).
 
 ```{python}
 #| label: fig-compensation-transport-tarifs
@@ -450,7 +518,7 @@ tr.figure(
     "interventions",
     caption=("Les interventions du budget au profit des entreprises du ministère du "
              "Transport, 2016-2024, en regard du poste « transport » de la dépense de "
-             "compensation (millions de dinars courants)"),
+             "compensation : en millions de dinars courants et en part du PIB"),
     note_lecture=(
         "Chaque barre empile les « interventions » versées par le budget aux sociétés "
         "régionales de transport, à la société des transports de Tunis, à la Société "
@@ -462,10 +530,16 @@ tr.figure(
         "année, parce qu'elles comptent aussi la société du réseau ferroviaire rapide, "
         "l'entretien du réseau ferré et, en 2017, la prise en charge par l'État de dettes des "
         "entreprises. Les deux grandeurs ne se raccordent pas, et cette figure ne prolonge "
-        "pas celle des crédits par société de 2012 à 2017."))
+        "pas celle des crédits par société de 2012 à 2017.\n\n"
+        "Seconde vue : les mêmes grandeurs en part du PIB — celui de l'INS en [base "
+        "2015](../annexe-pib.html#pib-base-2015), valeurs d'origine, non rétropolées, sur "
+        "toute la période ; la base est dite au-dessus du cadre, et aucune rupture de série "
+        "n'y tombe (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Le "
+        "PIB de 2024 est rapporté à une loi de finances."))
 ```
 
 - **Un périmètre plus large que le poste.** Les interventions valent 461,6 MD en 2016 pour un poste de 433,0 MD, 501,5 MD en 2019 pour 450 MD, 696,4 MD en 2023 pour 640,0 MD.
+- **Autour d'un demi-point de PIB.** Les interventions valent 0,48 % du PIB en 2016, 0,80 % en 2017, 0,41 % en 2019, 0,55 % en 2020 et 0,46 % en 2023 ; le poste « transport », 0,45 % en 2016, 0,37 % en 2019 et 0,43 % en 2023.
 - **L'écart est expliqué pour 2016 seulement.** Cette année-là, les interventions comptent 12,0 MD pour la société du réseau ferroviaire rapide, 1,1 MD pour l'Institut national de la météorologie et une subvention d'entretien du réseau ferré de la SNCFT, que le ministère des Finances situe « autour de 15 MD » [@minfin-entreprises-publiques-lf2020, p. 75] : ces montants ôtés, il reste 433,5 MD, pour un poste de 433,0 MD. Le même rapprochement n'est pas établi pour les années suivantes.
 - **2017 n'est pas une année ordinaire.** Les interventions passent de 461,6 à 820,4 MD, alors que le poste n'atteint que 448,2 MD : l'État prend en charge des dettes de la société des transports de Tunis envers la Société nationale de distribution des pétroles — 145,3 MD au 30 juin 2017 [@minfin-entreprises-publiques-lf2020, p. 72-73] —, et les versements à la SNCFT et à la Société nationale de transport interurbain sont eux aussi exceptionnels, 219,6 MD et 32,7 MD d'interventions pour 65,5 MD et 3,0 MD l'année précédente. C'est un apurement, hors du poste.
 - **Les sociétés régionales, de 242 à 393 MD.** Leurs interventions passent de 242,0 MD en 2016 à 255,0 MD en 2018 et 2019, 325,0 MD en 2020, 288,5 MD en 2021 et 393,0 MD en 2023 ; la loi de finances pour 2024 en prévoit 400,0 MD. Celles de la société des transports de Tunis vont de 126,5 MD en 2016 à 141,0 MD en 2023 ; celles de la société du réseau ferroviaire rapide, de 12,0 à 49,9 MD.

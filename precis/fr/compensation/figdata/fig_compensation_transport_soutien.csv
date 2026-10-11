@@ -3,87 +3,87 @@
 # sources (citation) : @minfin-budget-transport-2013, @minfin-budget-transport-2014, @minfin-budget-transport-2015, @minfin-budget-transport-2016, @minfin-budget-transport-2017, @minfin-resultats-provisoires-2017-01, @minfin-note-execution-2018-12
 # fiches : sources/minfin-budget-transport.md, docs/compensation-depense-par-poste.md
 # méthode/hypothèses : Crédits votés ou proposés, non dépenses constatées. Leur somme égale le poste « transport » voté et s'écarte du réalisé en 2014, 2015 et 2017. L'année 2014 a deux lectures : la loi de finances complémentaire crée la ligne de Tunisair Express. Rien avant 2012 ni après 2017., Colonnes annuelles des rapports du ministère des Finances, relayées par la Banque centrale à partir de 2019 ; 2024 est une colonne que la source ne qualifie pas.
-# note : Le soutien du transport public par société bénéficiaire, 2012-2017 : crédits du budget du ministère du Transport, en millions de dinars courants et en part du total
-Année,État du chiffre,Édition du budget,Ligne,Crédit (millions de dinars),Lecture tracée,Page
-2012,loi de finances,2013,Société nouvelle de transport de Kerkennah,4.0,oui,10
-2012,loi de finances,2013,Société nationale des chemins de fer tunisiens,32.0,oui,10
-2012,loi de finances,2013,Sociétés régionales de transport,155.0,oui,10
-2012,loi de finances,2013,Total,277.5,oui,10
-2012,loi de finances,2013,Transport scolaire rural,0.5,oui,10
-2012,loi de finances,2013,Société des transports de Tunis — autobus,63.0,oui,10
-2012,loi de finances,2013,Société des transports de Tunis — métro,23.0,oui,10
-2013,prévisions,2013,Société nouvelle de transport de Kerkennah,6.5,non,10
-2013,prévisions,2013,Société nationale des chemins de fer tunisiens,38.0,non,10
-2013,prévisions,2013,Sociétés régionales de transport,190.0,non,10
-2013,prévisions,2013,Total,330.0,non,10
-2013,prévisions,2013,Transport scolaire rural,0.5,non,10
-2013,prévisions,2013,Société des transports de Tunis — autobus,70.0,non,10
-2013,prévisions,2013,Société des transports de Tunis — métro,25.0,non,10
-2013,loi de finances,2014,Société nouvelle de transport de Kerkennah,6.5,oui,19
-2013,loi de finances,2014,Société nationale des chemins de fer tunisiens,38.0,oui,19
-2013,loi de finances,2014,Sociétés régionales de transport,190.0,oui,19
-2013,loi de finances,2014,Total,330.0,oui,19
-2013,loi de finances,2014,Transport scolaire rural,0.5,oui,19
-2013,loi de finances,2014,Société des transports de Tunis — autobus,70.0,oui,19
-2013,loi de finances,2014,Société des transports de Tunis — métro,25.0,oui,19
-2014,prévisions,2014,Société nouvelle de transport de Kerkennah,8.0,non,19
-2014,prévisions,2014,Société nationale des chemins de fer tunisiens,43.795,non,19
-2014,prévisions,2014,Sociétés régionales de transport,220.13,non,19
-2014,prévisions,2014,Total,385.0,non,19
-2014,prévisions,2014,Transport scolaire rural,0.9,non,19
-2014,prévisions,2014,Société des transports de Tunis — autobus,83.018,non,19
-2014,prévisions,2014,Société des transports de Tunis — métro,29.157,non,19
-2014,loi de finances complémentaire,2015,Société nouvelle de transport de Kerkennah,8.0,oui,18
-2014,loi de finances complémentaire,2015,Société nationale des chemins de fer tunisiens,41.795,oui,18
-2014,loi de finances complémentaire,2015,Société nationale de transport interurbain,0.0,oui,18
-2014,loi de finances complémentaire,2015,Sociétés régionales de transport,217.13,oui,18
-2014,loi de finances complémentaire,2015,Total,385.0,oui,18
-2014,loi de finances complémentaire,2015,Transport scolaire rural,0.9,oui,18
-2014,loi de finances complémentaire,2015,Société des transports de Tunis — autobus,83.018,oui,18
-2014,loi de finances complémentaire,2015,Société des transports de Tunis — métro,29.157,oui,18
-2014,loi de finances complémentaire,2015,Tunisair Express,5.0,oui,18
-2015,prévisions,2015,Société nouvelle de transport de Kerkennah,9.0,non,18
-2015,prévisions,2015,Société nationale des chemins de fer tunisiens,49.705,non,18
-2015,prévisions,2015,Société nationale de transport interurbain,2.0,non,18
-2015,prévisions,2015,Sociétés régionales de transport,228.795,non,18
-2015,prévisions,2015,Total,416.0,non,18
-2015,prévisions,2015,Transport scolaire rural,1.5,non,18
-2015,prévisions,2015,Société des transports de Tunis — autobus,90.0,non,18
-2015,prévisions,2015,Société des transports de Tunis — métro,30.0,non,18
-2015,prévisions,2015,Tunisair Express,5.0,non,18
-2015,loi de finances complémentaire,2016,Société nouvelle de transport de Kerkennah,9.0,oui,18
-2015,loi de finances complémentaire,2016,Société nationale des chemins de fer tunisiens,49.705,oui,18
-2015,loi de finances complémentaire,2016,Société nationale de transport interurbain,2.0,oui,18
-2015,loi de finances complémentaire,2016,Sociétés régionales de transport,228.795,oui,18
-2015,loi de finances complémentaire,2016,Total,416.0,oui,18
-2015,loi de finances complémentaire,2016,Transport scolaire rural,1.5,oui,18
-2015,loi de finances complémentaire,2016,Société des transports de Tunis — autobus,90.0,oui,18
-2015,loi de finances complémentaire,2016,Société des transports de Tunis — métro,30.0,oui,18
-2015,loi de finances complémentaire,2016,Tunisair Express,5.0,oui,18
-2016,prévisions,2016,Société nouvelle de transport de Kerkennah,9.5,non,18
-2016,prévisions,2016,Société nationale des chemins de fer tunisiens,50.5,non,18
-2016,prévisions,2016,Société nationale de transport interurbain,0.0,non,18
-2016,prévisions,2016,Sociétés régionales de transport,244.0,non,18
-2016,prévisions,2016,Total,433.0,non,18
-2016,prévisions,2016,Transport scolaire rural,1.0,non,18
-2016,prévisions,2016,Société des transports de Tunis — autobus,94.0,non,18
-2016,prévisions,2016,Société des transports de Tunis — métro,32.0,non,18
-2016,prévisions,2016,Tunisair Express,2.0,non,18
-2016,loi de finances,2017,Société nouvelle de transport de Kerkennah,9.5,oui,17
-2016,loi de finances,2017,Société nationale des chemins de fer tunisiens,50.5,oui,17
-2016,loi de finances,2017,Société nationale de transport interurbain,0.0,oui,17
-2016,loi de finances,2017,Sociétés régionales de transport,244.0,oui,17
-2016,loi de finances,2017,Total,433.0,oui,17
-2016,loi de finances,2017,Transport scolaire rural,1.0,oui,17
-2016,loi de finances,2017,Société des transports de Tunis — autobus,94.0,oui,17
-2016,loi de finances,2017,Société des transports de Tunis — métro,32.0,oui,17
-2016,loi de finances,2017,Tunisair Express,2.0,oui,17
-2017,prévisions,2017,Société nouvelle de transport de Kerkennah,10.0,oui,17
-2017,prévisions,2017,Société nationale des chemins de fer tunisiens,50.0,oui,17
-2017,prévisions,2017,Société nationale de transport interurbain,1.0,oui,17
-2017,prévisions,2017,Sociétés régionales de transport,255.0,oui,17
-2017,prévisions,2017,Total,450.0,oui,17
-2017,prévisions,2017,Transport scolaire rural,1.0,oui,17
-2017,prévisions,2017,Société des transports de Tunis — autobus,96.0,oui,17
-2017,prévisions,2017,Société des transports de Tunis — métro,34.0,oui,17
-2017,prévisions,2017,Tunisair Express,3.0,oui,17
+# note : Le soutien du transport public par société bénéficiaire, 2012-2017 : crédits du budget du ministère du Transport, en millions de dinars courants, en part des crédits, en part de la dépense de compensation et en part du PIB
+Année,État du chiffre,Édition du budget,Ligne,Crédit (millions de dinars),Lecture tracée,Page,En % de la dépense de compensation réalisée,En % du PIB,Dépense de compensation réalisée (millions de dinars),PIB (millions de dinars),Base du PIB
+2012,loi de finances,2013,Société nouvelle de transport de Kerkennah,4.0,oui,10,0.11,0.005,3624.1,73895.4,"base 2015, rétropolée"
+2012,loi de finances,2013,Société nationale des chemins de fer tunisiens,32.0,oui,10,0.88,0.043,3624.1,73895.4,"base 2015, rétropolée"
+2012,loi de finances,2013,Sociétés régionales de transport,155.0,oui,10,4.28,0.21,3624.1,73895.4,"base 2015, rétropolée"
+2012,loi de finances,2013,Total,277.5,oui,10,7.66,0.376,3624.1,73895.4,"base 2015, rétropolée"
+2012,loi de finances,2013,Transport scolaire rural,0.5,oui,10,0.01,0.001,3624.1,73895.4,"base 2015, rétropolée"
+2012,loi de finances,2013,Société des transports de Tunis — autobus,63.0,oui,10,1.74,0.085,3624.1,73895.4,"base 2015, rétropolée"
+2012,loi de finances,2013,Société des transports de Tunis — métro,23.0,oui,10,0.63,0.031,3624.1,73895.4,"base 2015, rétropolée"
+2013,prévisions,2013,Société nouvelle de transport de Kerkennah,6.5,non,10,0.12,0.008,5514.0,79096.6,"base 2015, rétropolée"
+2013,prévisions,2013,Société nationale des chemins de fer tunisiens,38.0,non,10,0.69,0.048,5514.0,79096.6,"base 2015, rétropolée"
+2013,prévisions,2013,Sociétés régionales de transport,190.0,non,10,3.45,0.24,5514.0,79096.6,"base 2015, rétropolée"
+2013,prévisions,2013,Total,330.0,non,10,5.98,0.417,5514.0,79096.6,"base 2015, rétropolée"
+2013,prévisions,2013,Transport scolaire rural,0.5,non,10,0.01,0.001,5514.0,79096.6,"base 2015, rétropolée"
+2013,prévisions,2013,Société des transports de Tunis — autobus,70.0,non,10,1.27,0.088,5514.0,79096.6,"base 2015, rétropolée"
+2013,prévisions,2013,Société des transports de Tunis — métro,25.0,non,10,0.45,0.032,5514.0,79096.6,"base 2015, rétropolée"
+2013,loi de finances,2014,Société nouvelle de transport de Kerkennah,6.5,oui,19,0.12,0.008,5514.0,79096.6,"base 2015, rétropolée"
+2013,loi de finances,2014,Société nationale des chemins de fer tunisiens,38.0,oui,19,0.69,0.048,5514.0,79096.6,"base 2015, rétropolée"
+2013,loi de finances,2014,Sociétés régionales de transport,190.0,oui,19,3.45,0.24,5514.0,79096.6,"base 2015, rétropolée"
+2013,loi de finances,2014,Total,330.0,oui,19,5.98,0.417,5514.0,79096.6,"base 2015, rétropolée"
+2013,loi de finances,2014,Transport scolaire rural,0.5,oui,19,0.01,0.001,5514.0,79096.6,"base 2015, rétropolée"
+2013,loi de finances,2014,Société des transports de Tunis — autobus,70.0,oui,19,1.27,0.088,5514.0,79096.6,"base 2015, rétropolée"
+2013,loi de finances,2014,Société des transports de Tunis — métro,25.0,oui,19,0.45,0.032,5514.0,79096.6,"base 2015, rétropolée"
+2014,prévisions,2014,Société nouvelle de transport de Kerkennah,8.0,non,19,0.19,0.009,4153.7,85345.7,"base 2015, rétropolée"
+2014,prévisions,2014,Société nationale des chemins de fer tunisiens,43.795,non,19,1.05,0.051,4153.7,85345.7,"base 2015, rétropolée"
+2014,prévisions,2014,Sociétés régionales de transport,220.13,non,19,5.3,0.258,4153.7,85345.7,"base 2015, rétropolée"
+2014,prévisions,2014,Total,385.0,non,19,9.27,0.451,4153.7,85345.7,"base 2015, rétropolée"
+2014,prévisions,2014,Transport scolaire rural,0.9,non,19,0.02,0.001,4153.7,85345.7,"base 2015, rétropolée"
+2014,prévisions,2014,Société des transports de Tunis — autobus,83.018,non,19,2.0,0.097,4153.7,85345.7,"base 2015, rétropolée"
+2014,prévisions,2014,Société des transports de Tunis — métro,29.157,non,19,0.7,0.034,4153.7,85345.7,"base 2015, rétropolée"
+2014,loi de finances complémentaire,2015,Société nouvelle de transport de Kerkennah,8.0,oui,18,0.19,0.009,4153.7,85345.7,"base 2015, rétropolée"
+2014,loi de finances complémentaire,2015,Société nationale des chemins de fer tunisiens,41.795,oui,18,1.01,0.049,4153.7,85345.7,"base 2015, rétropolée"
+2014,loi de finances complémentaire,2015,Société nationale de transport interurbain,0.0,oui,18,0.0,0.0,4153.7,85345.7,"base 2015, rétropolée"
+2014,loi de finances complémentaire,2015,Sociétés régionales de transport,217.13,oui,18,5.23,0.254,4153.7,85345.7,"base 2015, rétropolée"
+2014,loi de finances complémentaire,2015,Total,385.0,oui,18,9.27,0.451,4153.7,85345.7,"base 2015, rétropolée"
+2014,loi de finances complémentaire,2015,Transport scolaire rural,0.9,oui,18,0.02,0.001,4153.7,85345.7,"base 2015, rétropolée"
+2014,loi de finances complémentaire,2015,Société des transports de Tunis — autobus,83.018,oui,18,2.0,0.097,4153.7,85345.7,"base 2015, rétropolée"
+2014,loi de finances complémentaire,2015,Société des transports de Tunis — métro,29.157,oui,18,0.7,0.034,4153.7,85345.7,"base 2015, rétropolée"
+2014,loi de finances complémentaire,2015,Tunisair Express,5.0,oui,18,0.12,0.006,4153.7,85345.7,"base 2015, rétropolée"
+2015,prévisions,2015,Société nouvelle de transport de Kerkennah,9.0,non,18,0.31,0.01,2882.9,89802.2,base 2015
+2015,prévisions,2015,Société nationale des chemins de fer tunisiens,49.705,non,18,1.72,0.055,2882.9,89802.2,base 2015
+2015,prévisions,2015,Société nationale de transport interurbain,2.0,non,18,0.07,0.002,2882.9,89802.2,base 2015
+2015,prévisions,2015,Sociétés régionales de transport,228.795,non,18,7.94,0.255,2882.9,89802.2,base 2015
+2015,prévisions,2015,Total,416.0,non,18,14.43,0.463,2882.9,89802.2,base 2015
+2015,prévisions,2015,Transport scolaire rural,1.5,non,18,0.05,0.002,2882.9,89802.2,base 2015
+2015,prévisions,2015,Société des transports de Tunis — autobus,90.0,non,18,3.12,0.1,2882.9,89802.2,base 2015
+2015,prévisions,2015,Société des transports de Tunis — métro,30.0,non,18,1.04,0.033,2882.9,89802.2,base 2015
+2015,prévisions,2015,Tunisair Express,5.0,non,18,0.17,0.006,2882.9,89802.2,base 2015
+2015,loi de finances complémentaire,2016,Société nouvelle de transport de Kerkennah,9.0,oui,18,0.31,0.01,2882.9,89802.2,base 2015
+2015,loi de finances complémentaire,2016,Société nationale des chemins de fer tunisiens,49.705,oui,18,1.72,0.055,2882.9,89802.2,base 2015
+2015,loi de finances complémentaire,2016,Société nationale de transport interurbain,2.0,oui,18,0.07,0.002,2882.9,89802.2,base 2015
+2015,loi de finances complémentaire,2016,Sociétés régionales de transport,228.795,oui,18,7.94,0.255,2882.9,89802.2,base 2015
+2015,loi de finances complémentaire,2016,Total,416.0,oui,18,14.43,0.463,2882.9,89802.2,base 2015
+2015,loi de finances complémentaire,2016,Transport scolaire rural,1.5,oui,18,0.05,0.002,2882.9,89802.2,base 2015
+2015,loi de finances complémentaire,2016,Société des transports de Tunis — autobus,90.0,oui,18,3.12,0.1,2882.9,89802.2,base 2015
+2015,loi de finances complémentaire,2016,Société des transports de Tunis — métro,30.0,oui,18,1.04,0.033,2882.9,89802.2,base 2015
+2015,loi de finances complémentaire,2016,Tunisair Express,5.0,oui,18,0.17,0.006,2882.9,89802.2,base 2015
+2016,prévisions,2016,Société nouvelle de transport de Kerkennah,9.5,non,18,0.43,0.01,2210.7,95286.9,base 2015
+2016,prévisions,2016,Société nationale des chemins de fer tunisiens,50.5,non,18,2.28,0.053,2210.7,95286.9,base 2015
+2016,prévisions,2016,Société nationale de transport interurbain,0.0,non,18,0.0,0.0,2210.7,95286.9,base 2015
+2016,prévisions,2016,Sociétés régionales de transport,244.0,non,18,11.04,0.256,2210.7,95286.9,base 2015
+2016,prévisions,2016,Total,433.0,non,18,19.59,0.454,2210.7,95286.9,base 2015
+2016,prévisions,2016,Transport scolaire rural,1.0,non,18,0.05,0.001,2210.7,95286.9,base 2015
+2016,prévisions,2016,Société des transports de Tunis — autobus,94.0,non,18,4.25,0.099,2210.7,95286.9,base 2015
+2016,prévisions,2016,Société des transports de Tunis — métro,32.0,non,18,1.45,0.034,2210.7,95286.9,base 2015
+2016,prévisions,2016,Tunisair Express,2.0,non,18,0.09,0.002,2210.7,95286.9,base 2015
+2016,loi de finances,2017,Société nouvelle de transport de Kerkennah,9.5,oui,17,0.43,0.01,2210.7,95286.9,base 2015
+2016,loi de finances,2017,Société nationale des chemins de fer tunisiens,50.5,oui,17,2.28,0.053,2210.7,95286.9,base 2015
+2016,loi de finances,2017,Société nationale de transport interurbain,0.0,oui,17,0.0,0.0,2210.7,95286.9,base 2015
+2016,loi de finances,2017,Sociétés régionales de transport,244.0,oui,17,11.04,0.256,2210.7,95286.9,base 2015
+2016,loi de finances,2017,Total,433.0,oui,17,19.59,0.454,2210.7,95286.9,base 2015
+2016,loi de finances,2017,Transport scolaire rural,1.0,oui,17,0.05,0.001,2210.7,95286.9,base 2015
+2016,loi de finances,2017,Société des transports de Tunis — autobus,94.0,oui,17,4.25,0.099,2210.7,95286.9,base 2015
+2016,loi de finances,2017,Société des transports de Tunis — métro,32.0,oui,17,1.45,0.034,2210.7,95286.9,base 2015
+2016,loi de finances,2017,Tunisair Express,2.0,oui,17,0.09,0.002,2210.7,95286.9,base 2015
+2017,prévisions,2017,Société nouvelle de transport de Kerkennah,10.0,oui,17,0.29,0.01,3492.2,102011.5,base 2015
+2017,prévisions,2017,Société nationale des chemins de fer tunisiens,50.0,oui,17,1.43,0.049,3492.2,102011.5,base 2015
+2017,prévisions,2017,Société nationale de transport interurbain,1.0,oui,17,0.03,0.001,3492.2,102011.5,base 2015
+2017,prévisions,2017,Sociétés régionales de transport,255.0,oui,17,7.3,0.25,3492.2,102011.5,base 2015
+2017,prévisions,2017,Total,450.0,oui,17,12.89,0.441,3492.2,102011.5,base 2015
+2017,prévisions,2017,Transport scolaire rural,1.0,oui,17,0.03,0.001,3492.2,102011.5,base 2015
+2017,prévisions,2017,Société des transports de Tunis — autobus,96.0,oui,17,2.75,0.094,3492.2,102011.5,base 2015
+2017,prévisions,2017,Société des transports de Tunis — métro,34.0,oui,17,0.97,0.033,3492.2,102011.5,base 2015
+2017,prévisions,2017,Tunisair Express,3.0,oui,17,0.09,0.003,3492.2,102011.5,base 2015

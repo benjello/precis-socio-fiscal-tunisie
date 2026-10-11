@@ -2229,8 +2229,9 @@ une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
   `-abonnements-nombre`, `-comptes`) ; Cour des comptes (`-cour`) ; *Livre blanc* de la Banque
   mondiale (`-livre-blanc`) ; incidence (`-incidence`). Six sections `.domicile-unique`, cinq
   registres repliés.
-- **Figures** (`precis/fr/compensation/figures/transport.py`, `tr.figure(…)`), six :
-  `fig-compensation-transport-soutien`, `-abonnements-prix`, `-tarifs`, `-interventions`,
+- **Figures** (`precis/fr/compensation/figures/transport.py`, `tr.figure(…)`), sept :
+  `fig-compensation-transport-soutien` (quatre vues, dont part de la dépense de compensation et
+  part du PIB), `-tarifs-arretes`, `-abonnements-prix`, `-tarifs`, `-interventions` (deux vues),
   `-abonnements-nombre`, `-trafic-tunis`. Libellés des figures en français seulement : **libellés
   arabes à verser** dans `_L` avant de déclarer le chapitre au livre arabe.
 - **Snapshots** du 11 octobre 2026 : `transport-soutien-par-societe`,
@@ -2239,16 +2240,15 @@ une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
   `bm-livre-blanc-2016-transport-trafic-comptes`,
   `minfin-entreprises-publiques-transport-trafic-comptes` (ce dernier snapshoté, employé par le
   seul tableau `tbl-compensation-transport-comptes`, saisi à la main d'après lui).
-- **Dinars de 2025** : `scripts/dinars_constants.py`. Deux conventions, dites dans le texte :
-  dans les tableaux de tarifs, le tarif est déflaté par l'indice de l'année de sa date d'effet ;
-  dans les figures, par année, moyenne des douze premiers du mois, années entièrement établies
-  seulement. À unifier si la relecture le demande.
+- **Dinars de 2025** : `scripts/dinars_constants.py`, une seule convention, dite une fois à la
+  section des tarifs — par année, moyenne des montants en vigueur au premier jour de chacun des
+  douze mois, années entièrement établies seulement (celle de `figtools.constants_escalier`).
+  Les tableaux annuels en dinars de 2025 sont engendrés par `tr.tableau_annuel`.
 - **Deux fiches** dans `docs/recherches.yml` : `r-transport-tarifs-apres-2000` et
   `r-transport-decret-manque-a-gagner`, ancrées à l'état du droit.
 - **Arabe** : le chapitre n'est pas déclaré dans `precis/ar/compensation/_quarto.yml` (ligne en
-  commentaire) ; à déclarer quand sa traduction sera livrée. D'ici là, les renvois
-  `@sec-compensation-transport…` posés dans `index.qmd`, `_depense.qmd` et `_reformes.qmd` ne se
-  résoudront pas dans le livre arabe une fois ces trois chapitres retraduits.
+  commentaire) ; à déclarer quand sa traduction sera livrée. D'ici là, `index.qmd`, `_depense.qmd` et `_reformes.qmd`
+  nomment le chapitre en clair, sans ancre (`TODO (rédacteur)` : rétablir les renvois).
 - **Lacunes**, dans l'état que la note établit :
   - **1985-2002** : crédits et recettes de la caisse de compensation et de soutien des
     transports routiers, année de sa suppression, année où le budget général prend le relais de

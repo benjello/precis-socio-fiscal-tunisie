@@ -57,6 +57,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 import dinars_constants  # noqa: E402
 import figtools  # noqa: E402
 
+from . import compensation as cm  # noqa: E402  (bases du PIB : mêmes marques que la dépense)
+
 SOUTIEN = "transport-soutien-par-societe"
 TRANSFERTS = "transport-transferts-par-entreprise"
 ABONNEMENTS = "transport-abonnements-scolaires"
@@ -74,7 +76,20 @@ _L = {
     "md": {"fr": "Millions de dinars courants"},
     "pct": {"fr": "En % du total de l'année"},
     "vue_md": {"fr": "En millions de dinars"},
-    "vue_part": {"fr": "En part du total"},
+    "vue_part": {"fr": "En part des crédits"},
+    "vue_comp": {"fr": "En part de la dépense de compensation"},
+    "vue_pib": {"fr": "En % du PIB"},
+    "pct_comp": {"fr": "En % de la dépense de compensation réalisée\n(produits de base, carburants et transport)"},
+    "pct_pib": {"fr": "En % du PIB"},
+    "abo_d": {"fr": "Abonnement annuel ordinaire\n(dinars, prix courants)"},
+    "abo_d_c": {"fr": f"Abonnement annuel ordinaire\n(dinars de {BASE})"},
+    "ab1": {"fr": "abonnement annuel ordinaire, ligne à une section"},
+    "ab2": {"fr": "abonnement annuel ordinaire, ligne à deux sections"},
+    "tk1": {"fr": "ticket d'une section"},
+    "tk2": {"fr": "ticket de deux sections"},
+    "tickets": {"fr": "Ticket ordinaire\n(millimes, prix courants)"},
+    "tickets_c": {"fr": f"Ticket ordinaire\n(millimes de {BASE})"},
+    "vue_part_total": {"fr": "En part du total"},
     "vue_courants": {"fr": "Prix courants"},
     "vue_constants": {"fr": f"Dinars de {BASE}"},
     "vue_millions": {"fr": "En millions de voyageurs"},
@@ -188,7 +203,9 @@ PROVENANCE = {
                  "définition des catégories ni le mode de comptage (billets vendus, comptages, "
                  "estimation des abonnés).")),
     PARTS: dict(
-        perimetre="poste « transport » de la dépense budgétaire de compensation",
+        perimetre=("dépense budgétaire de compensation — total des trois postes et poste "
+                   "« transport » — et PIB de l'année : PIB de l'INS en base 2015, rétropolé "
+                   "par l'INS pour 2010-2014"),
         caveats=("Colonnes annuelles des rapports du ministère des Finances, relayées par la "
                  "Banque centrale à partir de 2019 ; 2024 est une colonne que la source ne "
                  "qualifie pas.")),
@@ -210,6 +227,13 @@ def _declarer(series_id: str, cles=None) -> None:
     figtools.register_provenance(series_id, **champs)
 
 
+def _parts_budget(annees):
+    """Dépense budgétaire de compensation (total et poste « transport ») et PIB des années."""
+    d = figtools.series(PARTS)
+    return d[(d["famille"] == "budget") & d["poste"].isin(["total", "transport"])
+             & d["annee"].isin(list(annees))]
+
+
 def _poste(annees) -> dict[int, tuple[float, str]]:
     """Poste « transport » de la dépense de compensation : {année: (MD, clé de la source)}."""
     d = figtools.series(PARTS)
@@ -227,6 +251,9 @@ GROUPES_SOUTIEN = (
     ("autres", ("kerkennah", "tunisair_express", "sntri", "transport_scolaire_rural"), GRIS,
      ".."),
 )
+# Mesure -> (libellé de l'axe, décimales de l'étiquette, unité de l'infobulle)
+MESURES = {"md": ("md", 1, " MD"), "part": ("pct", 0, " %"), "comp": ("pct_comp", 1, " %"),
+           "pib": ("pct_pib", 2, " % du PIB")}
 
 
 def _soutien_retenu():
@@ -236,47 +263,71 @@ def _soutien_retenu():
     return d[d["edition"] == edition]
 
 
+def _echelle(mesure: str, annee: int, total: float, parts) -> float:
+    """Facteur par lequel un montant en MD de l'année devient la grandeur de la vue."""
+    if mesure == "md":
+        return 1.0
+    if mesure == "part":
+        return 100 / total
+    ligne = parts[(parts["annee"] == annee) & (parts["poste"] == "total")].iloc[0]
+    return 100 / float(ligne["valeur_MDT"] if mesure == "comp" else ligne["pib_MDT"])
+
+
+def _habille_pib(ax, parts, annees, poignees):
+    """Base du PIB au-dessus du cadre et entrée de légende, comme les figures de la dépense."""
+    cm._marque_ruptures(ax, parts[parts["poste"] == "transport"], annees[0], annees[-1],
+                        pib=True)
+    poignees.append(cm._poignee_pib(parts))
+
+
 def fig_soutien(mesure: str = "md"):
     figtools.apply_lang_font()
     d = _soutien_retenu()
     annees = sorted(int(a) for a in d["annee"].unique())
+    parts = _parts_budget(annees)
     poste = _poste(annees)
+    ylabel, dec, unite = MESURES[mesure]
     fig, ax = plt.subplots(figsize=(9.5, 5.0))
     for a in annees:
         da = d[d["annee"] == a]
         etat = str(da["etat"].iloc[0])
         total = float(da[da["ligne"] == "total"]["valeur_md"].iloc[0])
+        k = _echelle(mesure, a, total, parts)
         bas = 0.0
         for cle, lignes, couleur, hachure in GROUPES_SOUTIEN:
             v = float(da[da["ligne"].isin(lignes)]["valeur_md"].sum())
-            h = v if mesure == "md" else 100 * v / total
+            h = v * k
             barre = ax.bar([a], [h], bottom=bas, width=0.7, color=couleur, hatch=hachure,
                            edgecolor="white", zorder=2)
-            figtools.infobulle(barre[0], f"{a} ({etat}) · {_lab(cle)} : {_nb(v)} MD, "
-                                         f"{_nb(100 * v / total)} % du total")
-            if mesure != "md" and h >= 6:
+            figtools.infobulle(barre[0], f"{a} ({etat}) · {_lab(cle)} : {_nb(v)} MD"
+                               + ("" if mesure == "md" else f", soit {_nb(h, max(dec, 1))}{unite}"))
+            if mesure == "part" and h >= 6:
                 ax.annotate(_nb(h, 0), xy=(a, bas + h / 2), ha="center", va="center",
                             fontsize=7, bbox=dict(facecolor="white", edgecolor="none",
                                                   alpha=0.75, pad=0.6))
             bas += h
-        if mesure == "md":
-            ax.annotate(_nb(total), xy=(a, bas), xytext=(0, 9), textcoords="offset points",
-                        ha="center", va="bottom", fontsize=7)
-            if a in poste:
-                point, = ax.plot([a], [poste[a][0]], marker="o", color=NOIR, ms=5, ls="",
-                                 zorder=4)
-                figtools.infobulle(point, f"{a} · {_lab('poste')} : {_nb(poste[a][0])} MD")
-    _cadre(ax, "md" if mesure == "md" else "pct")
+        if mesure != "part":
+            ax.annotate(_nb(bas, dec), xy=(a, bas), xytext=(0, 9 if mesure == "md" else 2),
+                        textcoords="offset points", ha="center", va="bottom", fontsize=7)
+        if mesure == "md" and a in poste:
+            point, = ax.plot([a], [poste[a][0]], marker="o", color=NOIR, ms=5, ls="", zorder=4)
+            figtools.infobulle(point, f"{a} · {_lab('poste')} : {_nb(poste[a][0])} MD")
+    _cadre(ax, ylabel)
     ax.set_xticks(annees)
-    if mesure == "md":
-        ax.set_ylim(top=ax.get_ylim()[1] * 1.12)
-    else:
+    ax.set_xlim(annees[0] - 0.8, annees[-1] + 0.8)
+    if mesure == "part":
         ax.set_ylim(0, 105)
+    else:
+        ax.set_ylim(top=ax.get_ylim()[1] * 1.12)
+        ax.yaxis.set_major_formatter(FuncFormatter(
+            lambda v, _: _nb(v, 0 if mesure == "md" else 1 if mesure == "comp" else 2)))
     poignees = [Patch(facecolor=c, hatch=h, edgecolor="white", label=figtools.fig_text(_lab(k)))
                 for k, _, c, h in GROUPES_SOUTIEN]
     if mesure == "md":
         poignees.append(Line2D([], [], marker="o", color=NOIR, ls="", ms=5,
                                label=figtools.fig_text(_lab("poste"))))
+    if mesure == "pib":
+        _habille_pib(ax, parts, annees, poignees)
     _legende(ax, poignees, ncol=2)
     fig.tight_layout()
     return fig
@@ -285,15 +336,48 @@ def fig_soutien(mesure: str = "md"):
 def _figure_soutien():
     d = figtools.series(SOUTIEN).sort_values(["annee", "edition", "ligne"])
     retenu = set(_soutien_retenu().index)
+    parts = _parts_budget(range(2012, 2018))
+    totaux = parts[parts["poste"] == "total"].set_index("annee")
     table = d.assign(tracee=["oui" if i in retenu else "non" for i in d.index])[
-        ["annee", "etat", "edition", "libelle", "valeur_md", "tracee", "page_pdf"]]
+        ["annee", "etat", "edition", "libelle", "valeur_md", "tracee", "page_pdf"]].copy()
+    table["comp"] = [round(100 * v / float(totaux.loc[a, "valeur_MDT"]), 2)
+                     for a, v in zip(table["annee"], table["valeur_md"])]
+    table["pib"] = [round(100 * v / float(totaux.loc[a, "pib_MDT"]), 3)
+                    for a, v in zip(table["annee"], table["valeur_md"])]
+    table["depense"] = [float(totaux.loc[a, "valeur_MDT"]) for a in table["annee"]]
+    table["pib_md"] = [float(totaux.loc[a, "pib_MDT"]) for a in table["annee"]]
+    table["base"] = [f"{totaux.loc[a, 'base_pib']}"
+                     + (", rétropolée" if totaux.loc[a, "pib_retropole"] == "oui" else "")
+                     for a in table["annee"]]
     table.columns = ["Année", "État du chiffre", "Édition du budget", "Ligne",
-                     "Crédit (millions de dinars)", "Lecture tracée", "Page"]
-    poste = _poste(range(2012, 2018))
-    vues = [(_lab("vue_md"), fig_soutien("md")), (_lab("vue_part"), fig_soutien("part"))]
+                     "Crédit (millions de dinars)", "Lecture tracée", "Page",
+                     "En % de la dépense de compensation réalisée", "En % du PIB",
+                     "Dépense de compensation réalisée (millions de dinars)",
+                     "PIB (millions de dinars)", "Base du PIB"]
+    vues = [(_lab("vue_md"), fig_soutien("md")), (_lab("vue_part"), fig_soutien("part")),
+            (_lab("vue_comp"), fig_soutien("comp")), (_lab("vue_pib"), fig_soutien("pib"))]
     return (vues, table.reset_index(drop=True),
-            {SOUTIEN: None, PARTS: [s for _, s in poste.values()]},
+            {SOUTIEN: None, PARTS: list(parts["source"])},
             "fig_compensation_transport_soutien")
+
+
+def tableau_soutien(caption: str, tbl_id: str) -> None:
+    """Tableau Markdown des crédits par société, lectures tracées (chunk `output: asis`)."""
+    d = _soutien_retenu()
+    annees = sorted(int(a) for a in d["annee"].unique())
+    etats = {"loi de finances": "LF", "loi de finances complémentaire": "LFC",
+             "prévisions": "prévision"}
+    lignes = ["| Bénéficiaire | " + " | ".join(
+        f"{a}<br>({etats[str(d[d['annee'] == a]['etat'].iloc[0])]}, MD)" for a in annees) + " |",
+        "|---|" + "---:|" * len(annees)]
+    for cle, codes, _c, _h in GROUPES_SOUTIEN:
+        lignes.append(f"| {_lab(cle)} | " + " | ".join(
+            _nb(float(d[(d["annee"] == a) & d["ligne"].isin(codes)]["valeur_md"].sum()))
+            for a in annees) + " |")
+    lignes.append("| **Total des crédits** | " + " | ".join(
+        "**" + _nb(float(d[(d["annee"] == a) & (d["ligne"] == "total")]["valeur_md"].iloc[0]))
+        + "**" for a in annees) + " |")
+    print("\n".join(lignes) + f"\n\n: {caption} {{#{tbl_id}}}\n")
 
 
 # --- 2. Les interventions du budget par entreprise, 2016-2024 ----------------------------
@@ -312,17 +396,20 @@ def _interventions():
     return d[d["nature"] == "interventions"]
 
 
-def fig_interventions():
+def fig_interventions(mesure: str = "md"):
     figtools.apply_lang_font()
     d = _interventions()
     d = d[d["derniere_edition"].astype(str).str.lower() == "true"]
     annees = sorted(int(a) for a in d["annee"].unique())
+    parts = _parts_budget(annees)
     poste = _poste(annees)
+    dec = 0 if mesure == "md" else 2
     fig, ax = plt.subplots(figsize=(9.5, 5.0))
     for a in annees:
         da = d[d["annee"] == a]
         etat = str(da["etat"].iloc[0])
         total = float(da[da["entite"] == "ministere"]["valeur_md"].iloc[0])
+        k = _echelle(mesure, a, total, parts)
         nommes = 0.0
         bas = 0.0
         for cle, entite, couleur, hachure in GROUPES_TRANSFERTS:
@@ -331,29 +418,37 @@ def fig_interventions():
             else:
                 v = float(da[da["entite"] == entite]["valeur_md"].sum())
                 nommes += v
-            barre = ax.bar([a], [v], bottom=bas, width=0.7, color=couleur, hatch=hachure,
+            barre = ax.bar([a], [v * k], bottom=bas, width=0.7, color=couleur, hatch=hachure,
                            edgecolor="white", zorder=2,
                            alpha=1.0 if etat == "réalisations" else 0.55)
-            figtools.infobulle(barre[0], f"{a} ({etat}) · {_lab(cle)} : {_nb(v)} MD")
-            bas += v
-        ax.annotate(_nb(total, 0) + ("" if etat == "réalisations" else "*"), xy=(a, bas),
+            figtools.infobulle(barre[0], f"{a} ({etat}) · {_lab(cle)} : {_nb(v)} MD"
+                               + ("" if mesure == "md" else f", soit {_nb(v * k, 2)} % du PIB"))
+            bas += v * k
+        ax.annotate(_nb(bas, dec) + ("" if etat == "réalisations" else "*"), xy=(a, bas),
                     xytext=(0, 2), textcoords="offset points", ha="center", va="bottom",
                     fontsize=7)
         if a in poste:
-            point, = ax.plot([a], [poste[a][0]], marker="o", color=NOIR, ms=5, ls="", zorder=4)
-            figtools.infobulle(point, f"{a} · {_lab('poste')} : {_nb(poste[a][0])} MD")
-    ax.annotate(_ft("apurement"), xy=(2017, 835), xytext=(2018.3, 800), fontsize=7.5,
-                color=ROUGE, ha="left", va="center",
+            point, = ax.plot([a], [poste[a][0] * k], marker="o", color=NOIR, ms=5, ls="",
+                             zorder=4)
+            figtools.infobulle(point, f"{a} · {_lab('poste')} : {_nb(poste[a][0])} MD"
+                               + ("" if mesure == "md" else f", soit {_nb(poste[a][0] * k, 2)} % du PIB"))
+    haut = ax.get_ylim()[1]
+    ax.annotate(_ft("apurement"), xy=(2017, haut * 0.955), xytext=(2018.3, haut * 0.93),
+                fontsize=7.5, color=ROUGE, ha="left", va="center",
                 arrowprops=dict(arrowstyle="-", color=ROUGE, lw=0.8))
-    _cadre(ax, "md")
+    _cadre(ax, "md" if mesure == "md" else "pct_pib")
     ax.set_xticks(annees)
-    ax.set_ylim(top=ax.get_ylim()[1] * 1.08)
+    ax.set_xlim(annees[0] - 0.8, annees[-1] + 0.8)
+    ax.set_ylim(top=haut * 1.08)
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0 if mesure == "md" else 2)))
     poignees = [Patch(facecolor=c, hatch=h, edgecolor="white", label=figtools.fig_text(_lab(k)))
                 for k, _, c, h in GROUPES_TRANSFERTS]
     poignees.append(Line2D([], [], marker="o", color=NOIR, ls="", ms=5,
                            label=figtools.fig_text(_lab("poste"))))
     poignees.append(Patch(facecolor=GRIS, alpha=0.55, edgecolor="white",
                           label=figtools.fig_text("barre claire, astérisque : loi de finances")))
+    if mesure == "pib":
+        _habille_pib(ax, parts, annees, poignees)
     _legende(ax, poignees, ncol=2)
     fig.tight_layout()
     return fig
@@ -361,15 +456,22 @@ def fig_interventions():
 
 def _figure_interventions():
     d = _interventions().sort_values(["annee", "edition", "entite"])
+    parts = _parts_budget(range(2016, 2025))
+    totaux = parts[parts["poste"] == "total"].set_index("annee")
     table = d[["annee", "etat", "edition", "derniere_edition", "libelle", "valeur_md",
                "page_pdf"]].copy()
     table["derniere_edition"] = table["derniere_edition"].astype(str).str.lower().map(
         {"true": "oui", "false": "non"})
+    table["pib"] = [round(100 * v / float(totaux.loc[a, "pib_MDT"]), 3)
+                    for a, v in zip(table["annee"], table["valeur_md"])]
+    table["pib_md"] = [float(totaux.loc[a, "pib_MDT"]) for a in table["annee"]]
+    table["base"] = [f"{totaux.loc[a, 'base_pib']}" for a in table["annee"]]
     table.columns = ["Année", "État du chiffre", "Édition du rapport", "Lecture tracée",
-                     "Entité", "Interventions (millions de dinars)", "Page"]
-    poste = _poste(range(2016, 2025))
-    return ([(None, fig_interventions())], table.reset_index(drop=True),
-            {TRANSFERTS: None, PARTS: [s for _, s in poste.values()]},
+                     "Entité", "Interventions (millions de dinars)", "Page", "En % du PIB",
+                     "PIB (millions de dinars)", "Base du PIB"]
+    vues = [(_lab("vue_md"), fig_interventions("md")), (_lab("vue_pib"), fig_interventions("pib"))]
+    return (vues, table.reset_index(drop=True),
+            {TRANSFERTS: None, PARTS: list(parts["source"])},
             "fig_compensation_transport_interventions")
 
 
@@ -589,6 +691,77 @@ def _figure_tarifs():
             "fig_compensation_transport_tarifs")
 
 
+# --- 3 bis. Les tarifs fixés par arrêté, 1987-2000 : tickets et abonnements ordinaires -----
+
+ARRETES = (("ticket_1_section", "tk1", NOIR, 0), ("ticket_2_sections", "tk2", BLEU, 0),
+           ("abonnement_annuel_ordinaire_1_section", "ab1", NOIR, 1),
+           ("abonnement_annuel_ordinaire_2_sections", "ab2", BLEU, 1))
+
+
+def fig_tarifs_arretes(vue: str = "courants"):
+    figtools.apply_lang_font()
+    fig, axes = plt.subplots(2, 1, figsize=(9.5, 6.6), sharex=True)
+    fin = _x(dt.date(2000, 2, 25))
+    for tarif, _cle, couleur, rang in ARRETES:
+        if vue == "courants":
+            _trace_marches(axes[rang], _marches_jort(tarif), fin, couleur)
+        else:
+            _trace_annuel(axes[rang], _constants(_annuel_jort(tarif, 1999)), couleur, "o")
+    for rang, (courant, constant) in enumerate((("tickets", "tickets_c"), ("abo_d", "abo_d_c"))):
+        ax = axes[rang]
+        ax.set_ylabel(_ft(courant if vue == "courants" else constant))
+        ax.grid(True, alpha=0.3)
+        ax.set_axisbelow(True)
+        ax.set_ylim(bottom=0)
+        ax.set_ylim(top=ax.get_ylim()[1] * 1.32)
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0)))
+        poignees = [Line2D([], [], color=c, lw=1.8, marker="o", ms=4,
+                           label=figtools.fig_text(_lab(k))) for _t, k, c, r in ARRETES if r == rang]
+        if vue == "courants" and rang == 1:
+            poignees.append(Line2D([], [], color=NOIR, ls="", marker="o", mfc="white", ms=4.5,
+                                   label=figtools.fig_text(_lab("creux"))))
+        ax.legend(handles=poignees, loc="upper left", fontsize=7.5, frameon=False, ncol=1)
+    axes[1].set_xlabel(figtools.fig_text(_lab("x")))
+    axes[1].set_xlim(1986.5, 2000.8)
+    axes[1].set_xticks(range(1987, 2001))
+    fig.tight_layout()
+    return fig
+
+
+def _figure_tarifs_arretes():
+    vues = [(_lab("vue_courants"), fig_tarifs_arretes("courants")),
+            (_lab("vue_constants"), fig_tarifs_arretes("constants"))]
+    table = _table_prix(tuple(t for t, *_ in ARRETES), (), "")
+    return (vues, table, {TARIFS: CLES_URBAINS,
+                          **{s: None for s in dinars_constants.SERIES_IPC}},
+            "fig_compensation_transport_tarifs_arretes")
+
+
+LIBELLES_TARIFS = {
+    "ticket_1_section": "Ticket d'une section<br>(millimes{c})",
+    "ticket_2_sections": "Ticket de deux sections<br>(millimes{c})",
+    "abonnement_annuel_ordinaire_1_section": "Abonnement annuel ordinaire, une section<br>(D{c})",
+    "abonnement_annuel_ordinaire_2_sections": "Abonnement annuel ordinaire, deux sections<br>(D{c})",
+    "abonnement_scolaire_ligne_urbaine": "Abonnement scolaire, une ligne urbaine<br>(D{c})",
+    "abonnement_scolaire_zone_urbaine": "Abonnement scolaire, zone urbaine<br>(D{c})",
+    "interurbain_place_km_10_150_km": "Interurbain, place-kilomètre de 10 à 150 km<br>(millimes{c})",
+}
+
+
+def tableau_annuel(tarifs, caption: str, tbl_id: str, decimales: int = 0) -> None:
+    """Tableau Markdown, par année : moyenne annuelle en dinars de l'année de base — la seule
+    convention de dinars constants du chapitre (chunk `output: asis`)."""
+    series = {t: _constants(_annuel_jort(t, 1999)) for t in tarifs}
+    annees = sorted({a for v in series.values() for a in v})
+    lignes = ["| Année | " + " | ".join(LIBELLES_TARIFS[t].format(c=f" de {BASE}") for t in tarifs)
+              + " |", "|---|" + "---:|" * len(tarifs)]
+    for a in annees:
+        lignes.append(f"| {a} | " + " | ".join(
+            _nb(series[t][a], decimales if series[t][a] >= 200 else 1) if a in series[t] else ""
+            for t in tarifs) + " |")
+    print("\n".join(lignes) + f"\n\n: {caption} {{#{tbl_id}}}\n")
+
+
 # --- 4. Les abonnements : ordinaire et scolaire ------------------------------------------
 
 def fig_abonnements_prix(vue: str = "courants"):
@@ -693,7 +866,7 @@ def _figure_trafic():
     table.columns = ["Année", "Catégorie de voyageurs", "Millions de voyageurs",
                      "Source déclarée par la Banque mondiale", "Page"]
     vues = [(_lab("vue_millions"), fig_trafic("millions")),
-            (_lab("vue_part"), fig_trafic("part"))]
+            (_lab("vue_part_total"), fig_trafic("part"))]
     return vues, table.reset_index(drop=True), {LIVRE_BLANC: None}, \
         "fig_compensation_transport_trafic_tunis"
 
@@ -780,6 +953,7 @@ FIGURES = {
     "soutien_par_societe": _figure_soutien,
     "interventions": _figure_interventions,
     "tarifs": _figure_tarifs,
+    "tarifs_arretes": _figure_tarifs_arretes,
     "abonnements_prix": _figure_abonnements_prix,
     "trafic_tunis": _figure_trafic,
     "abonnements_nombre": _figure_abonnements_nombre,
