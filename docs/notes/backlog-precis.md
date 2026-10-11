@@ -108,7 +108,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
-| Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, français seul, hors page d'accueil ; séries budgétaires 2016-2024 et 1987-2009 ; rien de budgétaire entre 2010 et 2016 ni avant 1987 | Loi de finances rectificative pour 2020 (plafond des garanties : 7 000 ou 7 500 MD), à ouvrir dans le corpus local |
+| Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, français seul, hors page d'accueil ; séries budgétaires 2016-2024 et 1987-2009 ; rien de budgétaire entre 2010 et 2016 ni avant 1987 | Articles « octroi de la garantie de l'État » des lois de finances de 1961 à 1994, fascicules locaux : série légale du plafond |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -2273,9 +2273,11 @@ Ce qui reste :
 - **Pages arabes** : la loi n° 89-9 et ses modificatifs n'ont été lus qu'en français ; les
   termes arabes du glossaire viennent des rapports du ministère et du relevé de la Direction
   générale de la privatisation.
-- **Plafond des garanties de 2020** : 7 000 ou 7 500 MD selon l'édition (fiche
-  `r-garantie-etat-plafond-2020-lfr`) ; loi de finances rectificative pour 2020 **lisible**
-  dans le corpus, à ouvrir.
+- **Plafond des garanties de 2020 — tranché le 11 octobre 2026** : 7 000 MD (loi n° 2020-45 du
+  14 décembre 2020, article 10 nouveau de la loi de finances pour 2020, JORT n° 123, p. 2932,
+  lue dans le corpus ; fiche `r-garantie-etat-plafond-2020-lfr` résolue). Les 7 500 MD de la
+  traduction française du rapport ne sont pas dans la loi. À reporter dans `tunisia-data`, dont
+  la série `garanties-etat` garde les deux valeurs et dit le point « non tranché ».
 - **Second passage de la note** (son § 8) : ventilation par nature de 2023 (écart imprimé de
   23,0 MD) ; encours des prêts rétrocédés (rapport sur la dette publique, pages repérées) ;
   rapports sur la dette publique des éditions LF 2021 et LF 2024 ; page « bilan global » de la
@@ -2290,7 +2292,7 @@ Ce qui reste :
   garantie. Les entrées `contrat-programme`, `controleur-d-etat` et `tutelle` sont définies
   pour les caisses et les collectivités : à élargir aux entreprises publiques (lois n° 85-72
   et n° 89-9).
-- **Bibliographie** : trente-six notices dans `entreprises_publiques/references.json`, dont
+- **Bibliographie** : trente-sept notices dans `entreprises_publiques/references.json`, dont
   douze recopiées d'autres livres (`imf-tunisia-art4-2020`, `wb-tunisia-per-2020`,
   `decret97-564`, `decret2004-2265`, `loi-org-2019-15-lob`, `bct-ra`, `ins-annuaire`…) : à
   promouvoir au fonds commun et à verser dans Zotero (`docs/notes/biblio-a-rapatrier.md`).

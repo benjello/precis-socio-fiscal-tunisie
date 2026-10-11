@@ -6,7 +6,7 @@ Les montants sont en millions de dinars courants (MD) ou en milliards de dinars 
 
 ## Vue d'ensemble {#sec-ep-vue-ensemble}
 
-En 2023, le budget de l'État verse 17,1 milliards de dinars à l'ensemble des entreprises et établissements publics non administratifs, l'État garantit 21,4 milliards de leur dette, leur doit 12,0 milliards selon leurs comptes et en attend 11,2 milliards, et reçoit de l'ordre de 0,2 milliard de dividendes (@fig-ep-ensemble).
+En 2023, le budget de l'État verse 17,1 milliards de dinars à l'ensemble des entreprises et établissements publics non administratifs, et l'État garantit 21,4 milliards de leur dette. À la fin de la même année, 42 entreprises déclarent que l'État leur doit 12,0 milliards et qu'elles lui doivent 11,2 milliards. Au titre de l'exercice 2022, dernier exercice arrêté, l'État reçoit 0,2 milliard de dinars de dividendes (@fig-ep-ensemble).
 
 ```{python}
 #| label: fig-ep-ensemble
@@ -38,8 +38,8 @@ Le périmètre tient à deux lois et à leurs seuils ; les séries, à une oblig
 
 | Réforme | Ce que la loi cherche | Avant → après | Effet |
 |---|---|---|---|
-| [**1969 — la tutelle étendue aux filiales**](#r-ep-1969) | « tutelle de l'État sur les entreprises publiques et leurs filiales » | contrôle financier des offices et sociétés nationales → étendu aux filiales détenues à 10 % au moins | fin juillet ou début août 1969 |
-| [**1985 — un seuil de 34 %**](#r-ep-1985) | « tutelle » et « obligations mises à la charge » des établissements et des sociétés à participation publique | → sociétés détenues à 34 % au moins par l'État ou une collectivité locale ; contrats-programmes | fin juillet ou début août 1985 |
+| [**1969 — la tutelle étendue aux filiales**](#r-ep-1969) | « tutelle de l'État sur les entreprises publiques et leurs filiales » | contrôle financier des offices et sociétés nationales → étendu aux filiales détenues à 10 % au moins | entre le [28 juillet]{.insecable} et le [3 août 1969]{.insecable} |
+| [**1985 — un seuil de 34 %**](#r-ep-1985) | « tutelle » et « obligations mises à la charge » des établissements et des sociétés à participation publique | → sociétés détenues à 34 % au moins par l'État ou une collectivité locale ; contrats-programmes | entre le [28 juillet]{.insecable} et le [1^er^ août 1985]{.insecable} |
 | [**1987 — la cession autorisée**](#r-ep-1987) | « restructuration des entreprises publiques » | → l'État « autorisé à céder tout ou partie de ses participations directes ou indirectes » | [16 août 1987]{.insecable} |
 | [**1989 — plus de 50 %**](#r-ep-1989) | « participations et entreprises publiques » | seuil de 34 % → plus de 50 % du capital ; lois de 1985 et de 1987 abrogées et refondues | [9 février 1989]{.insecable} |
 | [**1994-2001 — banques, assurances, établissements sur liste**](#r-ep-1994) | modifier et compléter la loi de 1989 | banques et assurances détenues à 34 % ou plus : dedans de 1995 à 2001 ; établissements non administratifs : sur liste depuis 1996 | [1^er^ janvier 1995]{.insecable} pour les banques et les assurances |
@@ -126,7 +126,7 @@ Des décrets pris depuis 2011 sur la tutelle et sur la liste des entreprises pla
 
 | Date d'effet | Texte, article et page | Ce que le texte change | Portée |
 |---|---|---|---|
-| []{#r-ep-1969}entre le [27 juillet]{.insecable} et le [3 août 1969]{.insecable} | loi n° 69-50 du 26 juillet 1969 [@loi69-50, art. 1 à 3, p. 911-912] | contrôle financier étendu aux filiales des offices, sociétés nationales et sociétés à participation de l'État ; filiale : participation d'au moins 10 % (art. 1^er^) ; même règle pour les collectivités publiques (art. 2) ; contrôleurs économiques et financiers nommés par arrêté (art. 3). Aucune clause d'effet : le *Journal officiel* est daté des 25-29 juillet et 1^er^ août 1969, et la loi est exécutoire un jour franc après sa parution | mise en place |
+| []{#r-ep-1969}entre le [28 juillet]{.insecable} et le [3 août 1969]{.insecable} | loi n° 69-50 du 26 juillet 1969 [@loi69-50, art. 1 à 3, p. 911-912] | contrôle financier étendu aux filiales des offices, sociétés nationales et sociétés à participation de l'État ; filiale : participation d'au moins 10 % (art. 1^er^) ; même règle pour les collectivités publiques (art. 2) ; contrôleurs économiques et financiers nommés par arrêté (art. 3). Aucune clause d'effet : la loi est signée le 26 juillet, le *Journal officiel* est daté des 25-29 juillet et 1^er^ août 1969, et la loi est exécutoire un jour franc après sa parution | mise en place |
 | []{#r-ep-1985}entre le [28 juillet]{.insecable} et le [1^er^ août 1985]{.insecable} | loi n° 85-72 du 20 juillet 1985 [@loi85-72, art. 1, 11, 14 et 15, p. 958-959] | « entreprises-mères » : établissements publics à caractère industriel et commercial et sociétés détenues à 34 % au moins ; filiales détenues à plus de 50 % (art. 1^er^) ; budgets et contrats-programmes (art. 11) ; contrôleurs financiers (art. 14 et 15). Aucune clause d'effet : *Journal officiel* daté des 26-30 juillet 1985 | mise en place |
 | []{#r-ep-1987}[16 août 1987]{.insecable} | loi n° 87-47 du 2 août 1987 [@loi87-47, art. 1 à 6 et 11 à 13, p. 958-959] | cession autorisée (art. 1^er^) ; liste par décret (art. 2) ; commission de restructuration (art. 4 à 6) ; avantages aux acquéreurs (art. 11) ; paiement à 50 % en bons d'équipement (art. 12) ; renonciation au privilège du Trésor, rééchelonnement ou abandon partiel de créances (art. 13). Aucune clause d'effet : publiée le 14 août 1987, exécutoire un jour franc après | mise en place |
 | []{#r-ep-1989}[9 février 1989]{.insecable} | loi n° 89-9 du 1^er^ février 1989 [@loi89-9, art. 7 à 10, 14 à 17, 23 à 32 et 34, p. 203-205] | contrôle général des organismes recevant un concours de l'État (art. 7) ; définition à plus de 50 % et participations publiques (art. 8) ; régime transitoire à 34 % jusqu'au 31 décembre 1991 (art. 9) ; contrats-programmes (art. 10) ; publication des comptes (art. 14) ; contrôleurs d'État (art. 15 à 17) ; cession (art. 23), commission (art. 24 à 26), décision du Premier ministre (art. 27), avantages (art. 29 et 30), paiement en titres (art. 31), créances de l'État (art. 32) ; abrogation des lois n° 85-72, n° 85-73 et n° 87-47 (art. 34). Aucune clause d'effet : publiée le 7 février 1989, exécutoire un jour franc après | rupture |
@@ -139,7 +139,7 @@ Des décrets pris depuis 2011 sur la tutelle et sur la liste des entreprises pla
 | []{#r-ep-2002}date non établie | décret n° 2002-2197 du 7 octobre 2002 [@decret2002-2197, p. 2364-2367] | modalités d'exercice de la tutelle, approbation des actes de gestion, représentation des participants publics ; modifié par un décret gouvernemental du 13 avril 2016 ; seul l'intitulé de ces textes est connu ici | ajustement |
 | []{#r-ep-2004}date non établie | décret n° 2004-2265 du 27 septembre 2004 [@decret2004-2265, p. 2805-2806] | nouvelle liste, qui abroge celle de 1997 ; elle comprend la CNRPS, la CNSS et la CNAM | étape de 1996 |
 | []{#r-ep-2006}date non établie | loi n° 2006-36 du 12 juin 2006 [@loi2006-36, art. 22 ter, p. 1533] | les entreprises publiques « qui opèrent dans un environnement compétitif ou qui ont fait l'objet d'un programme de restructuration » peuvent être dispensées d'une partie de la tutelle et du contrôle d'État ; liste par décret, fixée en 2006 et modifiée en 2009, 2013 et 2020 par des décrets dont seul l'intitulé est connu ici | ajustement |
-| []{#r-ep-2019}projet de loi de finances pour 2020 | loi organique n° 2019-15 du 13 février 2019 [@loi-org-2019-15-lob, art. 45 et 46, p. 400] | la loi de finances fixe le plafond des garanties de l'État et celui des prêts du Trésor (art. 45) ; rapports joints au projet de loi de finances, dont ceux sur la dette publique, sur les transferts et les garanties, et sur les entreprises publiques (art. 46) | rupture |
+| []{#r-ep-2019}projet de loi de finances pour 2020 | loi organique n° 2019-15 du 13 février 2019 [@loi-org-2019-15-lob, art. 45 et 46, p. 400-401] | la loi de finances fixe le plafond des garanties de l'État et celui des prêts du Trésor (art. 45) ; rapports joints au projet de loi de finances, dont ceux sur la dette publique, sur les transferts et les garanties, et sur les entreprises publiques (art. 46) | rupture |
 
 : Registre des textes du périmètre, de la tutelle et de la cession des entreprises publiques, 1969-2020 {#tbl-ep-registre}
 
@@ -147,7 +147,7 @@ Des décrets pris depuis 2011 sur la tutelle et sur la liste des entreprises pla
 
 ## L'état du droit {#sec-ep-etat-du-droit}
 
-En juin 2006, date de la dernière loi qui modifie celle de 1989, le droit des entreprises publiques tient en trois catégories, un seuil et une tutelle. Aucun texte postérieur qui modifierait la loi ou la liste des établissements n'est identifié ici.
+En 2024, le droit des entreprises publiques tient en trois catégories, un seuil, une tutelle et un plafond annuel de garanties. Les trois premiers viennent de la loi de 1989, dans sa rédaction de 1996 à 2006. Aucun texte qui modifierait cette loi après 2006, ou la liste des établissements après 2007, n'est identifié ici.
 
 <!-- RECHERCHE r-loi89-9-modificatifs-apres-2006 : texte modifiant ou remplaçant la loi n° 89-9 après la loi n° 2006-36 (voir docs/recherches.yml) -->
 <!-- RECHERCHE r-epna-liste-modificatifs-apres-2007 : décret modifiant la liste des établissements publics non administratifs considérés comme entreprises publiques après 2007 (voir docs/recherches.yml) -->
@@ -259,19 +259,15 @@ ep.figure(
     note_lecture=(
         "Première vue : les barres sont les garanties accordées dans l'année, selon que le "
         "prêt garanti est extérieur ou intérieur ; le trait noir est le plafond fixé par la "
-        "loi de finances, après loi de finances rectificative en 2019 et en 2020. Pour 2020, "
-        "le trait suit les éditions arabes du rapport (7 milliards de dinars) ; la traduction "
-        "française de l'édition LF 2021 donne 7,5 milliards. Le premier semestre de 2024 "
+        "loi de finances, après loi de finances rectificative en 2019 et en 2020 (7 milliards "
+        "de dinars en 2020). Le premier semestre de 2024 "
         "n'est pas tracé : un semestre ne se compare pas à une année. Seconde vue : l'encours "
         "de la dette garantie en fin d'année ; la barre hachurée est une estimation de fin "
         "juin 2024."),
 )
 ```
 
-- **Le plafond.** 3 000 MD de 2016 à 2018 ; 4 790 MD en 2019, après une loi de finances initiale à 4 500 MD ; 7 000 MD de 2020 à 2022, après une loi de finances initiale à 5 000 MD en 2020 ; 8 000 MD en 2023 et en 2024. Pour 2020, la traduction française du rapport donne 7 500 MD et ses éditions arabes 7 000 MD [@minfin-transferts-2021, p. 5 ; @minfin-transferts-2022, p. 8]. L'article de la loi de finances rectificative pour 2020 qui fixe ce plafond n'est pas identifié ici.
-
-<!-- RECHERCHE r-garantie-etat-plafond-2020-lfr : article de la loi de finances rectificative pour 2020 fixant le plafond des garanties de l'État (voir docs/recherches.yml) -->
-
+- **Le plafond.** 3 000 MD de 2016 à 2018 ; 4 790 MD en 2019, après une loi de finances initiale à 4 500 MD ; 7 000 MD de 2020 à 2022 ; 8 000 MD en 2023 et en 2024. Pour 2020, la loi de finances initiale fixait 5 000 MD ; [la loi de finances rectificative du 14 décembre 2020](#r-ep-lfr-2020) porte le plafond à 7 000 MD. La traduction française d'une édition du rapport imprime 7 500 MD [@minfin-transferts-2021, p. 5] ; ses éditions arabes impriment 7 000 MD, comme la loi [@minfin-transferts-2022, p. 8].
 - **Les garanties accordées.** De 2,4 à 5,2 milliards de dinars par an de 2016 à 2023 (@tbl-ep-garanties).
 - **À quoi servent les garanties intérieures.** En 2023, sur 3 055,7 MD : 1 550,4 MD au titre de l'audit complet des banques publiques, 1 215,2 MD pour financer l'importation de produits de base — pétrole, gaz, céréales, engrais, sucre, café —, 141,0 MD de rééchelonnements, 124,0 MD d'autres opérations d'exploitation, 25,1 MD d'investissement [@minfin-dette-2025, p. 64]. Les importations de produits de base faisaient 188,2 MD en 2021 et 956,1 MD en 2022 (@tbl-ep-garanties-objet).
 - **Qui prête.** L'encours garanti dû à des prêteurs intérieurs passe de 2,0 milliards de dinars fin 2016 à 8,8 milliards fin 2023 ; l'encours extérieur, de 9,3 à 12,5 milliards.
@@ -284,8 +280,8 @@ from figures import entreprises_publiques as ep
 ep.tableau_garanties(
     caption=("Garanties de l'État : plafond de la loi de finances, garanties accordées dans "
              "l'année et encours de la dette garantie en fin d'année, 2016-2024. Le plafond de "
-             "2019 et celui de 2020 sont ceux d'une loi de finances rectificative ; pour 2020, "
-             "une édition du rapport donne 7 500 MD. La dernière ligne porte les garanties du "
+             "2019 et celui de 2020 sont ceux d'une loi de finances rectificative. La dernière "
+             "ligne porte les garanties du "
              "premier semestre de 2024 et l'encours estimé à fin juin 2024. Source : ministère "
              "des Finances, rapport sur la dette publique [@minfin-dette-2022, p. 56-58 ; "
              "@minfin-dette-2025, p. 62-65] et rapport sur les transferts et les garanties "
@@ -293,7 +289,7 @@ ep.tableau_garanties(
              "consommation"))
 ```
 
-:::: {.chronologie-repliable titre="Garanties de l'État : encours garanti en % du PIB tel qu'imprimé, garanties intérieures par objet 2021-2024, garanties liées à l'audit des banques publiques 2016-2021, cadre"}
+:::: {.chronologie-repliable titre="Garanties de l'État : encours garanti en % du PIB tel qu'imprimé, montants des garanties intérieures par objet 2021-2024 et des garanties liées à l'audit des banques publiques 2016-2021, plafond de 2020, cadre"}
 
 ```{python}
 #| echo: false
@@ -317,6 +313,12 @@ ep.tableau_audit_banques(
              "total imprimé de 1 357,7 MD. Source : ministère des Finances "
              "[@minfin-dette-2022, p. 57]"))
 ```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-lfr-2020}gestion 2020 | loi n° 2020-45 du 14 décembre 2020, portant loi de finances rectificative pour l'année 2020 [@loi2020-45-lfr, art. 1^er^, p. 2932] | article 10 nouveau de la loi de finances pour 2020 : le montant dans la limite duquel le ministre chargé des finances peut accorder la garantie de l'État « est fixé à 7 000 000 000 Dinars pour l'année 2020 » ; article 9 nouveau : prêts du Trésor aux établissements publics, 550 000 000 D | ajustement |
+
+: Plafond des garanties de l'État pour 2020 : la loi de finances rectificative {#tbl-ep-garanties-lfr-2020}
 
 **Le cadre.** La loi de finances de l'année fixe le plafond par un article ; une commission de garantie, instituée par un arrêté du 3 avril 1993, instruit les demandes [@minfin-transferts-2020, p. 38]. Selon le rapport sur la dette publique, la garantie d'un prêt extérieur joue dès la défaillance de l'emprunteur, celle d'un prêt intérieur après épuisement des poursuites contre lui [@minfin-dette-2025, p. 61].
 
@@ -649,7 +651,7 @@ ep.tableau_transferts_revisions(
 
 <!-- TODO (documentaliste) : les fiches par entreprise du rapport (dette, effectifs, charges de personnel, subvention d'exploitation, total des passifs ; éditions arabes : tableaux tournés d'un quart de tour) ne sont pas versées dans tunisia-data ; relire à l'image puis verser, pour STEG, STIR, Tunisair, Transtu, SNCFT, SONEDE, ETAP, Groupe chimique, CPG, Office des céréales, RNTA, Office du commerce. Les classements par charges de personnel et par produits d'exploitation restent aussi à verser. -->
 
-### Ce que les séries ne couvrent pas {#sec-ep-lp-lacunes}
+### Les années sans série budgétaire {#sec-ep-lp-lacunes}
 
 - **Entre 2010 et 2016, aucune série budgétaire.** Les recettes de cession s'arrêtent en 2009 ; les transferts, les garanties et les résultats commencent en 2016 ou en 2017. Le Livre blanc de 2018 tire ses chiffres de 2010 à 2014 d'un rapport annuel de l'Unité de suivi du système de productivité des établissements et entreprises publics, à la Présidence du gouvernement (@sec-ep-livre-blanc). Ce rapport n'est pas identifié ici.
 

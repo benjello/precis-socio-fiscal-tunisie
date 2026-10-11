@@ -2266,8 +2266,15 @@
     couverture: 'jort_cache, titres : 147 notices portent « garantie de l''Etat » ou « ضمان الدولة » toutes années confondues ; la suite annuelle des articles de loi de finances est indexée de 1961 à 1994, puis l''index cesse de détailler les articles. La loi de finances rectificative pour 2020 n''a pas été ouverte. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 1.2 et § 5.4.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-11
+    role: rédacteur
+    sources: [corpus_local, pist]
+    couverture: 'loi n° 2020-45 du 14 décembre 2020, portant loi de finances rectificative pour l''année 2020, lue dans le fascicule français du corpus local (JORT n° 123 du 14 décembre 2020, p. 2931-2932 ; adresse pist.tn 2020F/Jo1232020.pdf, réponse 200) : article premier, article 10 nouveau de la loi de finances pour 2020 — le plafond des garanties de l''État « est fixé à 7 000 000 000 Dinars pour l''année 2020 ». Les 7 500 MD de la traduction française du rapport annexé au projet de loi de finances pour 2021 ne sont pas dans la loi. La notice de jort_cache ne porte que l''édition arabe.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: loi2020-45-lfr
   a_faire:
   - ouvrir la loi de finances rectificative pour 2020 dans le corpus local et lire l'article sur le plafond
+  resolu: loi2020-45-lfr
 
 - id: r-ep-rapport-unite-suivi-2010-2014
   objet: « Rapport annuel sur les résultats des établissements publics durant la période 2010-2014 » de l'Unité de suivi du système de productivité des établissements et entreprises publics (Présidence du gouvernement), source des chiffres du Livre blanc de mars 2018 ; éditions voisines signalées (2010-2012, 2010-2016)

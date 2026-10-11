@@ -16,7 +16,9 @@ Source : `docs/notes/entreprises-publiques-2026-10-11.md`, § 3. Notices neuves 
 `minfin-transferts-2020` à `-2025` ; `minfin-dette-2022`, `minfin-dette-2025` ;
 `dgpv-recettes-annuelles-1987-2005`, `dgpv-recettes-annuelles-1987-2009`,
 `dgpv-recettes-par-periode` ; `pm-livre-blanc-ep-2018` (aussi versée en FR et AR dans
-`remunerations_publiques`) ; `itceq-privatisation-2010`. Absentes de Zotero.
+`remunerations_publiques`) ; `itceq-privatisation-2010` ; `loi2020-45-lfr` (loi de finances
+rectificative pour 2020, édition française lue p. 2931-2932 ; dernière page à relever).
+Absentes de Zotero.
 
 - **Recopiées à l'identique d'un autre livre**, à promouvoir au fonds commun dans les deux
   langues : `imf-tunisia-art4-2020`, `wb-tunisia-per-2020` (de `remunerations_publiques`) ;
@@ -28,7 +30,7 @@ Source : `docs/notes/entreprises-publiques-2026-10-11.md`, § 3. Notices neuves 
   clé inchangée ; à corriger aussi dans Zotero.
 - `decret2002-2197` : intitulé abrégé (fin de l'intitulé officiel non reprise) ; texte connu
   par son seul intitulé. `loi93-124` : de même.
-- `minfin-transferts-2020` : page de garde à relire pour l'auteur et la date. Les vingt-quatre
+- `minfin-transferts-2020` : page de garde à relire pour l'auteur et la date. Les vingt-cinq
   adresses neuves (pist.tn, gbo.tn, finances.gov.tn, archives du web, privatisation.pm.gov.tn)
   répondent 200 le 11/10/2026.
 - `pm-livre-blanc-ep-2018` : copie d'un site de presse conservée par les archives du web ;
