@@ -1,0 +1,652 @@
+ligne,periode,valeur,unite,valeur_min,valeur_max,attestations,premier_numero,dernier_numero,relu_image,libelles,accord
+abonnement,2007-11,23.7,dinars,23.7,23.7,1,2008-11,2008-11,False,Abon scolaire (bus) (1),True
+abonnement,2007-12,23.7,dinars,23.7,23.7,2,2008-11,2008-12,False,Abon scolaire (bus) (1),True
+abonnement,2008-01,23.7,dinars,23.7,23.7,3,2008-11,2009-01,False,Abon scolaire (bus) (1),True
+abonnement,2008-02,23.7,dinars,23.7,23.7,4,2008-11,2009-02,False,Abon scolaire (bus) (1),True
+abonnement,2008-03,23.7,dinars,23.7,23.7,5,2008-11,2009-03,False,Abon scolaire (bus) (1),True
+abonnement,2008-04,23.7,dinars,23.7,23.7,6,2008-11,2009-04,False,Abon scolaire (bus) (1),True
+abonnement,2008-05,23.7,dinars,23.7,23.7,7,2008-11,2009-05,False,Abon scolaire (bus) (1),True
+abonnement,2008-06,23.7,dinars,23.7,23.7,8,2008-11,2009-06,False,Abon scolaire (bus) (1),True
+abonnement,2008-07,23.7,dinars,23.7,23.7,9,2008-11,2009-07,False,Abon scolaire (bus) (1),True
+abonnement,2008-08,23.7,dinars,23.7,23.7,10,2008-11,2009-08,False,Abon scolaire (bus) (1),True
+abonnement,2008-09,23.7,dinars,23.7,23.7,11,2008-11,2009-09,False,Abon scolaire (bus) (1),True
+abonnement,2008-10,23.7,dinars,23.7,23.7,12,2008-11,2009-10,False,Abon scolaire (bus) (1),True
+abonnement,2008-11,23.7,dinars,23.7,23.7,13,2008-11,2009-11,False,Abon scolaire (bus) (1),True
+abonnement,2008-12,23.7,dinars,23.7,23.7,13,2008-12,2009-12,False,Abon scolaire (bus) (1),True
+abonnement,2009-01,23.7,dinars,23.7,23.7,13,2009-01,2010-01,False,Abon scolaire (bus) (1),True
+abonnement,2009-02,23.7,dinars,23.7,23.7,13,2009-02,2010-02,False,Abon scolaire (bus) (1),True
+abonnement,2009-03,23.7,dinars,23.7,23.7,13,2009-03,2010-03,False,Abon scolaire (bus) (1),True
+abonnement,2009-04,23.7,dinars,23.7,23.7,13,2009-04,2010-04,False,Abon scolaire (bus) (1),True
+abonnement,2009-05,23.7,dinars,23.7,23.7,13,2009-05,2010-05,False,Abon scolaire (bus) (1),True
+abonnement,2009-06,23.7,dinars,23.7,23.7,13,2009-06,2010-06,False,Abon scolaire (bus) (1),True
+abonnement,2009-07,23.7,dinars,23.7,23.7,13,2009-07,2010-07,False,Abon scolaire (bus) (1),True
+abonnement,2009-08,23.7,dinars,23.7,23.7,13,2009-08,2010-08,False,Abon scolaire (bus) (1),True
+abonnement,2009-09,23.7,dinars,23.7,23.7,13,2009-09,2010-09,False,Abon scolaire (bus) (1),True
+abonnement,2009-10,23.7,dinars,23.7,23.7,13,2009-10,2010-10,False,Abon scolaire (bus) (1),True
+abonnement,2009-11,,dinars,23.7,24.0,13,2009-11,2010-11,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2009-12,,dinars,23.7,24.0,12,2009-12,2010-11,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-01,,dinars,23.7,24.0,13,2010-01,2011-01,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-02,,dinars,23.7,24.0,13,2010-02,2011-02,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-03,,dinars,23.7,24.0,13,2010-03,2011-03,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-04,,dinars,23.7,24.0,13,2010-04,2011-04,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-05,,dinars,23.7,24.0,13,2010-05,2011-05,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-06,,dinars,23.7,24.0,13,2010-06,2011-06,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-07,,dinars,23.7,24.0,13,2010-07,2011-07,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-08,,dinars,24.9,25.0,13,2010-08,2011-08,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-09,,dinars,24.9,25.0,13,2010-09,2011-09,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-10,,dinars,24.9,25.0,13,2010-10,2011-10,True,Abon scolaire (bus) (1) | Abonnement (1),False
+abonnement,2010-11,25.0,dinars,25.0,25.0,13,2010-11,2011-11,True,Abonnement (1),True
+abonnement,2010-12,25.0,dinars,25.0,25.0,13,2010-12,2011-12,True,Abonnement (1),True
+abonnement,2011-01,25.0,dinars,25.0,25.0,13,2011-01,2012-01,True,Abonnement (1),True
+abonnement,2011-02,25.0,dinars,25.0,25.0,13,2011-02,2012-02,True,Abonnement (1),True
+abonnement,2011-03,25.0,dinars,25.0,25.0,13,2011-03,2012-03,True,Abonnement (1),True
+abonnement,2011-04,25.0,dinars,25.0,25.0,13,2011-04,2012-04,True,Abonnement (1),True
+abonnement,2011-05,25.0,dinars,25.0,25.0,13,2011-05,2012-05,True,Abonnement (1),True
+abonnement,2011-06,25.0,dinars,25.0,25.0,13,2011-06,2012-06,True,Abonnement (1),True
+abonnement,2011-07,25.0,dinars,25.0,25.0,13,2011-07,2012-07,True,)Abonnement (1 | Abonnement (1),True
+abonnement,2011-08,25.0,dinars,25.0,25.0,13,2011-08,2012-08,True,)Abonnement (1 | Abonnement (1),True
+abonnement,2011-09,25.0,dinars,25.0,25.0,13,2011-09,2012-09,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2011-10,25.0,dinars,25.0,25.0,13,2011-10,2012-10,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2011-11,25.0,dinars,25.0,25.0,13,2011-11,2012-11,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2011-12,25.0,dinars,25.0,25.0,13,2011-12,2012-12,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2012-01,25.0,dinars,25.0,25.0,13,2012-01,2013-01,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2012-02,25.0,dinars,25.0,25.0,13,2012-02,2013-02,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2012-03,25.0,dinars,25.0,25.0,13,2012-03,2013-03,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2012-04,25.0,dinars,25.0,25.0,13,2012-04,2013-04,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2012-05,25.0,dinars,25.0,25.0,13,2012-05,2013-05,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2012-06,25.0,dinars,25.0,25.0,13,2012-06,2013-06,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2012-07,25.0,dinars,25.0,25.0,13,2012-07,2013-07,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2012-08,25.0,dinars,25.0,25.0,13,2012-08,2013-08,False,)Abonnement (1 | Abonnement (1),True
+abonnement,2012-09,25.0,dinars,25.0,25.0,13,2012-09,2013-09,False,Abonnement (1),True
+abonnement,2012-10,25.0,dinars,25.0,25.0,13,2012-10,2013-10,False,Abonnement (1),True
+abonnement,2012-11,25.0,dinars,25.0,25.0,13,2012-11,2013-11,False,Abonnement (1),True
+abonnement,2012-12,25.0,dinars,25.0,25.0,13,2012-12,2013-12,False,Abonnement (1),True
+abonnement,2013-01,25.0,dinars,25.0,25.0,13,2013-01,2014-01,False,Abonnement (1),True
+abonnement,2013-02,25.0,dinars,25.0,25.0,13,2013-02,2014-02,False,Abonnement (1),True
+abonnement,2013-03,25.0,dinars,25.0,25.0,13,2013-03,2014-03,False,Abonnement (1),True
+abonnement,2013-04,25.0,dinars,25.0,25.0,13,2013-04,2014-04,False,Abonnement (1),True
+abonnement,2013-05,25.0,dinars,25.0,25.0,13,2013-05,2014-05,False,Abonnement (1),True
+abonnement,2013-06,25.0,dinars,25.0,25.0,13,2013-06,2014-06,False,Abonnement (1),True
+abonnement,2013-07,25.0,dinars,25.0,25.0,13,2013-07,2014-07,False,Abonnement (1),True
+abonnement,2013-08,25.0,dinars,25.0,25.0,13,2013-08,2014-08,False,Abonnement (1),True
+abonnement,2013-09,25.0,dinars,25.0,25.0,13,2013-09,2014-09,False,Abonnement (1),True
+abonnement,2013-10,25.0,dinars,25.0,25.0,13,2013-10,2014-10,False,Abonnement (1),True
+abonnement,2013-11,25.0,dinars,25.0,25.0,13,2013-11,2014-11,False,Abonnement (1),True
+abonnement,2013-12,25.0,dinars,25.0,25.0,13,2013-12,2014-12,False,Abonnement (1),True
+abonnement,2014-01,25.0,dinars,25.0,25.0,13,2014-01,2015-01,False,Abonnement (1),True
+abonnement,2014-02,25.0,dinars,25.0,25.0,13,2014-02,2015-02,False,Abonnement (1),True
+abonnement,2014-03,25.0,dinars,25.0,25.0,13,2014-03,2015-03,False,Abonnement (1),True
+abonnement,2014-04,25.0,dinars,25.0,25.0,13,2014-04,2015-04,False,Abonnement (1),True
+abonnement,2014-05,25.0,dinars,25.0,25.0,13,2014-05,2015-05,False,Abonnement (1),True
+abonnement,2014-06,,dinars,24.0,25.0,13,2014-06,2015-06,False,Abonnement (1),False
+abonnement,2014-07,,dinars,24.0,25.0,13,2014-07,2015-07,False,Abonnement (1),False
+abonnement,2014-08,,dinars,24.0,25.0,13,2014-08,2015-08,False,Abonnement (1),False
+abonnement,2014-09,,dinars,24.0,25.0,13,2014-09,2015-09,False,Abonnement (1),False
+abonnement,2014-10,,dinars,24.0,25.0,13,2014-10,2015-10,False,Abonnement (1),False
+abonnement,2014-11,,dinars,24.0,25.0,13,2014-11,2015-11,False,Abonnement (1),False
+abonnement,2014-12,,dinars,24.0,25.0,13,2014-12,2015-12,False,Abonnement (1),False
+abonnement,2015-01,,dinars,24.0,25.0,13,2015-01,2016-01,False,Abonnement (1),False
+abonnement,2015-02,,dinars,24.0,25.0,13,2015-02,2016-02,False,Abonnement (1),False
+abonnement,2015-03,,dinars,24.0,25.0,13,2015-03,2016-03,False,Abonnement (1),False
+abonnement,2015-04,,dinars,24.0,25.0,13,2015-04,2016-04,False,Abonnement (1),False
+abonnement,2015-05,,dinars,24.0,25.0,13,2015-05,2016-05,False,Abonnement (1),False
+abonnement,2015-06,24.0,dinars,24.0,24.0,13,2015-06,2016-06,False,Abonnement (1),True
+abonnement,2015-07,24.0,dinars,24.0,24.0,13,2015-07,2016-07,False,Abonnement (1),True
+abonnement,2015-08,24.0,dinars,24.0,24.0,13,2015-08,2016-08,False,Abonnement (1),True
+abonnement,2015-09,24.0,dinars,24.0,24.0,13,2015-09,2016-09,False,Abonnement (1),True
+abonnement,2015-10,24.0,dinars,24.0,24.0,13,2015-10,2016-10,False,Abonnement (1),True
+abonnement,2015-11,24.0,dinars,24.0,24.0,13,2015-11,2016-11,False,Abonnement (1),True
+abonnement,2015-12,24.0,dinars,24.0,24.0,13,2015-12,2016-12,False,Abonnement (1),True
+abonnement,2016-01,24.0,dinars,24.0,24.0,13,2016-01,2017-01,False,Abonnement (1),True
+abonnement,2016-02,24.0,dinars,24.0,24.0,13,2016-02,2017-02,False,Abonnement (1),True
+abonnement,2016-03,24.0,dinars,24.0,24.0,13,2016-03,2017-03,False,Abonnement (1),True
+abonnement,2016-04,24.0,dinars,24.0,24.0,13,2016-04,2017-04,True,Abonnement (1),True
+abonnement,2016-05,,dinars et millimes,24.0,23700.0,13,2016-05,2017-05,True,Abonnement | Abonnement (1),False
+abonnement,2016-06,,dinars et millimes,24.0,23700.0,13,2016-06,2017-06,True,Abonnement | Abonnement (1),False
+abonnement,2016-07,,dinars et millimes,24.0,23700.0,13,2016-07,2017-07,True,Abonnement | Abonnement (1),False
+abonnement,2016-08,,dinars et millimes,24.0,23700.0,13,2016-08,2017-08,True,Abonnement | Abonnement (1),False
+abonnement,2016-09,,dinars et millimes,24.0,23700.0,13,2016-09,2017-09,True,Abonnement | Abonnement (1),False
+abonnement,2016-10,,dinars et millimes,24.0,23700.0,13,2016-10,2017-10,True,Abonnement | Abonnement (1),False
+abonnement,2016-11,,dinars et millimes,24.0,23700.0,13,2016-11,2017-11,True,Abonnement | Abonnement (1),False
+abonnement,2016-12,,dinars et millimes,24.0,23700.0,13,2016-12,2017-12,True,Abonnement | Abonnement (1),False
+abonnement,2017-01,,dinars et millimes,24.0,23700.0,13,2017-01,2018-01,True,Abonnement | Abonnement (1),False
+abonnement,2017-02,,dinars et millimes,24.0,23700.0,13,2017-02,2018-02,True,Abonnement | Abonnement (1),False
+abonnement,2017-03,,dinars et millimes,24.0,23700.0,13,2017-03,2018-03,True,Abonnement | Abonnement (1),False
+abonnement,2017-04,,dinars et millimes,24.0,23700.0,13,2017-04,2018-04,True,Abonnement | Abonnement (1),False
+abonnement,2017-05,23700.0,millimes,23700.0,23700.0,13,2017-05,2018-05,True,Abonnement,True
+abonnement,2017-06,23700.0,millimes,23700.0,23700.0,13,2017-06,2018-06,False,Abonnement,True
+abonnement,2017-07,23700.0,millimes,23700.0,23700.0,13,2017-07,2018-07,False,Abonnement,True
+abonnement,2017-08,23700.0,millimes,23700.0,23700.0,13,2017-08,2018-08,False,Abonnement,True
+abonnement,2017-09,23700.0,millimes,23700.0,23700.0,13,2017-09,2018-09,False,Abonnement,True
+abonnement,2017-10,23700.0,millimes,23700.0,23700.0,13,2017-10,2018-10,False,Abonnement,True
+abonnement,2017-11,23700.0,millimes,23700.0,23700.0,13,2017-11,2018-11,False,Abonnement,True
+abonnement,2017-12,23700.0,millimes,23700.0,23700.0,13,2017-12,2018-12,False,Abonnement,True
+abonnement,2018-01,23700.0,millimes,23700.0,23700.0,13,2018-01,2019-01,False,Abonnement,True
+abonnement,2018-02,23700.0,millimes,23700.0,23700.0,13,2018-02,2019-02,False,Abonnement,True
+abonnement,2018-03,23700.0,millimes,23700.0,23700.0,13,2018-03,2019-03,False,Abonnement,True
+abonnement,2018-04,23700.0,millimes,23700.0,23700.0,13,2018-04,2019-04,False,Abonnement,True
+abonnement,2018-05,23700.0,millimes,23700.0,23700.0,13,2018-05,2019-05,False,Abonnement,True
+abonnement,2018-06,23700.0,millimes,23700.0,23700.0,13,2018-06,2019-06,False,Abonnement,True
+abonnement,2018-07,23700.0,millimes,23700.0,23700.0,13,2018-07,2019-07,False,Abonnement,True
+abonnement,2018-08,23700.0,millimes,23700.0,23700.0,13,2018-08,2019-08,False,Abonnement,True
+abonnement,2018-09,23700.0,millimes,23700.0,23700.0,13,2018-09,2019-09,False,Abonnement,True
+abonnement,2018-10,23700.0,millimes,23700.0,23700.0,13,2018-10,2019-10,False,Abonnement,True
+abonnement,2018-11,23700.0,millimes,23700.0,23700.0,13,2018-11,2019-11,False,Abonnement,True
+abonnement,2018-12,23700.0,millimes,23700.0,23700.0,13,2018-12,2019-12,False,Abonnement,True
+abonnement,2019-01,23700.0,millimes,23700.0,23700.0,13,2019-01,2020-01,False,Abonnement,True
+abonnement,2019-02,23700.0,millimes,23700.0,23700.0,13,2019-02,2020-02,False,Abonnement,True
+abonnement,2019-03,23700.0,millimes,23700.0,23700.0,13,2019-03,2020-03,False,Abonnement,True
+abonnement,2019-04,23700.0,millimes,23700.0,23700.0,13,2019-04,2020-04,False,Abonnement,True
+abonnement,2019-05,23700.0,millimes,23700.0,23700.0,13,2019-05,2020-05,False,Abonnement,True
+abonnement,2019-06,23700.0,millimes,23700.0,23700.0,13,2019-06,2020-06,False,Abonnement,True
+abonnement,2019-07,23700.0,millimes,23700.0,23700.0,13,2019-07,2020-07,False,Abonnement,True
+abonnement,2019-08,23700.0,millimes,23700.0,23700.0,13,2019-08,2020-08,False,Abonnement,True
+abonnement,2019-09,23700.0,millimes,23700.0,23700.0,13,2019-09,2020-09,False,Abonnement,True
+abonnement,2019-10,23700.0,millimes,23700.0,23700.0,13,2019-10,2020-10,False,Abonnement,True
+abonnement,2019-11,23700.0,millimes,23700.0,23700.0,13,2019-11,2020-11,False,Abonnement,True
+abonnement,2019-12,23700.0,millimes,23700.0,23700.0,13,2019-12,2020-12,False,Abonnement,True
+abonnement,2020-01,23700.0,millimes,23700.0,23700.0,13,2020-01,2021-01,False,Abonnement,True
+abonnement,2020-02,23700.0,millimes,23700.0,23700.0,13,2020-02,2021-02,False,Abonnement,True
+abonnement,2020-03,23700.0,millimes,23700.0,23700.0,13,2020-03,2021-03,False,Abonnement,True
+abonnement,2020-04,23700.0,millimes,23700.0,23700.0,13,2020-04,2021-04,False,Abonnement,True
+abonnement,2020-05,23700.0,millimes,23700.0,23700.0,13,2020-05,2021-05,False,Abonnement,True
+abonnement,2020-06,23700.0,millimes,23700.0,23700.0,13,2020-06,2021-06,False,Abonnement,True
+abonnement,2020-07,23700.0,millimes,23700.0,23700.0,13,2020-07,2021-07,False,Abonnement,True
+abonnement,2020-08,23700.0,millimes,23700.0,23700.0,13,2020-08,2021-08,False,Abonnement,True
+abonnement,2020-09,23700.0,millimes,23700.0,23700.0,13,2020-09,2021-09,False,Abonnement,True
+abonnement,2020-10,23700.0,millimes,23700.0,23700.0,13,2020-10,2021-10,False,Abonnement,True
+abonnement,2020-11,23700.0,millimes,23700.0,23700.0,13,2020-11,2021-11,False,Abonnement,True
+abonnement,2020-12,23700.0,millimes,23700.0,23700.0,13,2020-12,2021-12,False,Abonnement,True
+abonnement,2021-01,23700.0,millimes,23700.0,23700.0,13,2021-01,2022-01,False,Abonnement,True
+abonnement,2021-02,23700.0,millimes,23700.0,23700.0,13,2021-02,2022-02,False,Abonnement,True
+abonnement,2021-03,23700.0,millimes,23700.0,23700.0,13,2021-03,2022-03,False,Abonnement,True
+abonnement,2021-04,23700.0,millimes,23700.0,23700.0,13,2021-04,2022-04,False,Abonnement,True
+abonnement,2021-05,23700.0,millimes,23700.0,23700.0,13,2021-05,2022-05,False,Abonnement,True
+abonnement,2021-06,23700.0,millimes,23700.0,23700.0,13,2021-06,2022-06,False,Abonnement,True
+abonnement,2021-07,23700.0,millimes,23700.0,23700.0,13,2021-07,2022-07,False,Abonnement,True
+abonnement,2021-08,23700.0,millimes,23700.0,23700.0,13,2021-08,2022-08,False,Abonnement,True
+abonnement,2021-09,23700.0,millimes,23700.0,23700.0,13,2021-09,2022-09,False,Abonnement,True
+abonnement,2021-10,23700.0,millimes,23700.0,23700.0,13,2021-10,2022-10,False,Abonnement,True
+abonnement,2021-11,23700.0,millimes,23700.0,23700.0,13,2021-11,2022-11,False,Abonnement,True
+abonnement,2021-12,23700.0,millimes,23700.0,23700.0,13,2021-12,2022-12,False,Abonnement,True
+abonnement,2022-01,23700.0,millimes,23700.0,23700.0,13,2022-01,2023-01,False,Abonnement,True
+abonnement,2022-02,23700.0,millimes,23700.0,23700.0,13,2022-02,2023-02,False,Abonnement,True
+abonnement,2022-03,23700.0,millimes,23700.0,23700.0,13,2022-03,2023-03,False,Abonnement,True
+abonnement,2022-04,23700.0,millimes,23700.0,23700.0,13,2022-04,2023-04,False,Abonnement,True
+abonnement,2022-05,23700.0,millimes,23700.0,23700.0,13,2022-05,2023-05,False,Abonnement,True
+abonnement,2022-06,23700.0,millimes,23700.0,23700.0,13,2022-06,2023-06,False,Abonnement,True
+abonnement,2022-07,23700.0,millimes,23700.0,23700.0,13,2022-07,2023-07,False,Abonnement,True
+abonnement,2022-08,23600.0,millimes,23600.0,23600.0,13,2022-08,2023-08,False,Abonnement,True
+abonnement,2022-09,23600.0,millimes,23600.0,23600.0,13,2022-09,2023-09,False,Abonnement,True
+abonnement,2022-10,23600.0,millimes,23600.0,23600.0,13,2022-10,2023-10,False,Abonnement,True
+abonnement,2022-11,23600.0,millimes,23600.0,23600.0,13,2022-11,2023-11,False,Abonnement,True
+abonnement,2022-12,23600.0,millimes,23600.0,23600.0,13,2022-12,2023-12,False,Abonnement,True
+abonnement,2023-01,23600.0,millimes,23600.0,23600.0,13,2023-01,2024-01,False,Abonnement,True
+abonnement,2023-02,23600.0,millimes,23600.0,23600.0,13,2023-02,2024-02,False,Abonnement,True
+abonnement,2023-03,23600.0,millimes,23600.0,23600.0,13,2023-03,2024-03,False,Abonnement,True
+abonnement,2023-04,23600.0,millimes,23600.0,23600.0,13,2023-04,2024-04,False,Abonnement,True
+abonnement,2023-05,23600.0,millimes,23600.0,23600.0,13,2023-05,2024-05,False,Abonnement,True
+abonnement,2023-06,23600.0,millimes,23600.0,23600.0,13,2023-06,2024-06,False,Abonnement,True
+abonnement,2023-07,23600.0,millimes,23600.0,23600.0,13,2023-07,2024-07,False,Abonnement,True
+abonnement,2023-08,,millimes,23600.0,23700.0,13,2023-08,2024-08,False,Abonnement,False
+abonnement,2023-09,,millimes,23600.0,23700.0,13,2023-09,2024-09,True,Abonnement,False
+abonnement,2023-10,,millimes,23600.0,23700.0,13,2023-10,2024-10,True,Abonnement,False
+abonnement,2023-11,,millimes,23600.0,23700.0,13,2023-11,2024-11,True,Abonnement,False
+abonnement,2023-12,,millimes,23600.0,23700.0,13,2023-12,2024-12,True,Abonnement,False
+abonnement,2024-01,,millimes,23600.0,23700.0,13,2024-01,2025-01,True,Abonnement,False
+abonnement,2024-02,,millimes,23600.0,23700.0,13,2024-02,2025-02,True,Abonnement,False
+abonnement,2024-03,,millimes,23600.0,23700.0,13,2024-03,2025-03,True,Abonnement,False
+abonnement,2024-04,,millimes,23600.0,23700.0,13,2024-04,2025-04,True,Abonnement,False
+abonnement,2024-05,,millimes,23600.0,23700.0,13,2024-05,2025-05,True,Abonnement,False
+abonnement,2024-06,,millimes,23600.0,23700.0,13,2024-06,2025-06,True,Abonnement,False
+abonnement,2024-07,,millimes,23600.0,23700.0,13,2024-07,2025-07,True,Abonnement,False
+abonnement,2024-08,23700.0,millimes,23700.0,23700.0,13,2024-08,2025-08,True,Abonnement,True
+abonnement,2024-09,25850.0,millimes,25850.0,25850.0,13,2024-09,2025-09,True,Abonnement,True
+abonnement,2024-10,25850.0,millimes,25850.0,25850.0,13,2024-10,2025-10,False,Abonnement,True
+abonnement,2024-11,25850.0,millimes,25850.0,25850.0,13,2024-11,2025-11,False,Abonnement,True
+abonnement,2024-12,25850.0,millimes,25850.0,25850.0,13,2024-12,2025-12,False,Abonnement,True
+abonnement,2025-01,25850.0,millimes,25850.0,25850.0,13,2025-01,2026-01,False,Abonnement,True
+abonnement,2025-02,25850.0,millimes,25850.0,25850.0,13,2025-02,2026-02,False,Abonnement,True
+abonnement,2025-03,25850.0,millimes,25850.0,25850.0,13,2025-03,2026-03,False,Abonnement,True
+abonnement,2025-04,25850.0,millimes,25850.0,25850.0,13,2025-04,2026-04,False,Abonnement,True
+abonnement,2025-05,25850.0,millimes,25850.0,25850.0,13,2025-05,2026-05,False,Abonnement,True
+abonnement,2025-06,25850.0,millimes,25850.0,25850.0,13,2025-06,2026-06,False,Abonnement,True
+abonnement,2025-07,25850.0,millimes,25850.0,25850.0,13,2025-07,2026-07,False,Abonnement,True
+abonnement,2025-08,25850.0,millimes,25850.0,25850.0,12,2025-08,2026-07,False,Abonnement,True
+abonnement,2025-09,25850.0,millimes,25850.0,25850.0,11,2025-09,2026-07,False,Abonnement,True
+abonnement,2025-10,25850.0,millimes,25850.0,25850.0,10,2025-10,2026-07,False,Abonnement,True
+abonnement,2025-11,25850.0,millimes,25850.0,25850.0,9,2025-11,2026-07,False,Abonnement,True
+abonnement,2025-12,25850.0,millimes,25850.0,25850.0,8,2025-12,2026-07,False,Abonnement,True
+abonnement,2026-01,25850.0,millimes,25850.0,25850.0,7,2026-01,2026-07,False,Abonnement,True
+abonnement,2026-02,25850.0,millimes,25850.0,25850.0,6,2026-02,2026-07,False,Abonnement,True
+abonnement,2026-03,25850.0,millimes,25850.0,25850.0,5,2026-03,2026-07,False,Abonnement,True
+abonnement,2026-04,25850.0,millimes,25850.0,25850.0,4,2026-04,2026-07,False,Abonnement,True
+abonnement,2026-05,25850.0,millimes,25850.0,25850.0,3,2026-05,2026-07,False,Abonnement,True
+abonnement,2026-06,25850.0,millimes,25850.0,25850.0,2,2026-06,2026-07,False,Abonnement,True
+abonnement,2026-07,25850.0,millimes,25850.0,25850.0,1,2026-07,2026-07,False,Abonnement,True
+billet_autobus,2007-11,450.0,millimes,450.0,450.0,1,2008-11,2008-11,True,Parcours autobus,True
+billet_autobus,2007-12,450.0,millimes,450.0,450.0,2,2008-11,2008-12,True,Parcours autobus,True
+billet_autobus,2008-01,450.0,millimes,450.0,450.0,3,2008-11,2009-01,True,Parcours autobus,True
+billet_autobus,2008-02,450.0,millimes,450.0,450.0,4,2008-11,2009-02,True,Parcours autobus,True
+billet_autobus,2008-03,450.0,millimes,450.0,450.0,5,2008-11,2009-03,True,Parcours autobus,True
+billet_autobus,2008-04,450.0,millimes,450.0,450.0,6,2008-11,2009-04,True,Parcours autobus,True
+billet_autobus,2008-05,450.0,millimes,450.0,450.0,7,2008-11,2009-05,True,Parcours autobus,True
+billet_autobus,2008-06,450.0,millimes,450.0,450.0,8,2008-11,2009-06,True,Parcours autobus,True
+billet_autobus,2008-07,450.0,millimes,450.0,450.0,9,2008-11,2009-07,True,Parcours autobus,True
+billet_autobus,2008-08,450.0,millimes,450.0,450.0,10,2008-11,2009-08,True,Parcours autobus,True
+billet_autobus,2008-09,450.0,millimes,450.0,450.0,11,2008-11,2009-09,True,Parcours autobus,True
+billet_autobus,2008-10,450.0,millimes,450.0,450.0,12,2008-11,2009-10,True,Parcours autobus,True
+billet_autobus,2008-11,450.0,millimes,450.0,450.0,13,2008-11,2009-11,True,Parcours autobus,True
+billet_autobus,2008-12,450.0,millimes,450.0,450.0,13,2008-12,2009-12,True,Parcours autobus,True
+billet_autobus,2009-01,450.0,millimes,450.0,450.0,13,2009-01,2010-01,True,Parcours autobus,True
+billet_autobus,2009-02,450.0,millimes,450.0,450.0,13,2009-02,2010-02,True,Parcours autobus,True
+billet_autobus,2009-03,450.0,millimes,450.0,450.0,13,2009-03,2010-03,True,Parcours autobus,True
+billet_autobus,2009-04,450.0,millimes,450.0,450.0,13,2009-04,2010-04,True,Parcours autobus,True
+billet_autobus,2009-05,450.0,millimes,450.0,450.0,13,2009-05,2010-05,True,Parcours autobus,True
+billet_autobus,2009-06,450.0,millimes,450.0,450.0,13,2009-06,2010-06,True,Parcours autobus,True
+billet_autobus,2009-07,450.0,millimes,450.0,450.0,13,2009-07,2010-07,True,Parcours autobus,True
+billet_autobus,2009-08,450.0,millimes,450.0,450.0,13,2009-08,2010-08,True,Parcours autobus,True
+billet_autobus,2009-09,450.0,millimes,450.0,450.0,13,2009-09,2010-09,True,Parcours autobus,True
+billet_autobus,2009-10,450.0,millimes,450.0,450.0,13,2009-10,2010-10,True,Parcours autobus,True
+billet_autobus,2009-11,450.0,millimes,450.0,450.0,13,2009-11,2010-11,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2009-12,450.0,millimes,450.0,450.0,12,2009-12,2010-11,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-01,450.0,millimes,450.0,450.0,13,2010-01,2011-01,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-02,450.0,millimes,450.0,450.0,13,2010-02,2011-02,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-03,450.0,millimes,450.0,450.0,13,2010-03,2011-03,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-04,450.0,millimes,450.0,450.0,13,2010-04,2011-04,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-05,450.0,millimes,450.0,450.0,13,2010-05,2011-05,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-06,450.0,millimes,450.0,450.0,13,2010-06,2011-06,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-07,450.0,millimes,450.0,450.0,13,2010-07,2011-07,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-08,470.0,millimes,470.0,470.0,13,2010-08,2011-08,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-09,470.0,millimes,470.0,470.0,13,2010-09,2011-09,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-10,470.0,millimes,470.0,470.0,13,2010-10,2011-10,True,Autobus / métro | Parcours autobus,True
+billet_autobus,2010-11,470.0,millimes,470.0,470.0,13,2010-11,2011-11,True,Autobus / métro,True
+billet_autobus,2010-12,470.0,millimes,470.0,470.0,13,2010-12,2011-12,True,Autobus / métro,True
+billet_autobus,2011-01,470.0,millimes,470.0,470.0,13,2011-01,2012-01,True,Autobus / métro,True
+billet_autobus,2011-02,470.0,millimes,470.0,470.0,13,2011-02,2012-02,True,Autobus / métro,True
+billet_autobus,2011-03,470.0,millimes,470.0,470.0,13,2011-03,2012-03,True,Autobus / métro,True
+billet_autobus,2011-04,470.0,millimes,470.0,470.0,13,2011-04,2012-04,True,Autobus / métro,True
+billet_autobus,2011-05,470.0,millimes,470.0,470.0,13,2011-05,2012-05,True,Autobus / métro,True
+billet_autobus,2011-06,470.0,millimes,470.0,470.0,13,2011-06,2012-06,True,Autobus / métro,True
+billet_autobus,2011-07,470.0,millimes,470.0,470.0,13,2011-07,2012-07,True,Autobus / métro,True
+billet_autobus,2011-08,470.0,millimes,470.0,470.0,13,2011-08,2012-08,True,Autobus / métro,True
+billet_autobus,2011-09,470.0,millimes,470.0,470.0,13,2011-09,2012-09,True,Autobus / métro,True
+billet_autobus,2011-10,470.0,millimes,470.0,470.0,13,2011-10,2012-10,True,Autobus / métro,True
+billet_autobus,2011-11,470.0,millimes,470.0,470.0,13,2011-11,2012-11,True,Autobus / métro,True
+billet_autobus,2011-12,470.0,millimes,470.0,470.0,13,2011-12,2012-12,True,Autobus / métro,True
+billet_autobus,2012-01,470.0,millimes,470.0,470.0,13,2012-01,2013-01,True,Autobus / métro,True
+billet_autobus,2012-02,470.0,millimes,470.0,470.0,13,2012-02,2013-02,True,Autobus / métro,True
+billet_autobus,2012-03,470.0,millimes,470.0,470.0,13,2012-03,2013-03,True,Autobus / métro,True
+billet_autobus,2012-04,470.0,millimes,470.0,470.0,13,2012-04,2013-04,True,Autobus / métro,True
+billet_autobus,2012-05,470.0,millimes,470.0,470.0,13,2012-05,2013-05,True,Autobus / métro,True
+billet_autobus,2012-06,470.0,millimes,470.0,470.0,13,2012-06,2013-06,True,Autobus / métro,True
+billet_autobus,2012-07,470.0,millimes,470.0,470.0,13,2012-07,2013-07,True,Autobus / métro,True
+billet_autobus,2012-08,470.0,millimes,470.0,470.0,13,2012-08,2013-08,True,Autobus / métro,True
+billet_autobus,2012-09,470.0,millimes,470.0,470.0,13,2012-09,2013-09,True,Autobus / métro,True
+billet_autobus,2012-10,470.0,millimes,470.0,470.0,13,2012-10,2013-10,True,Autobus / métro,True
+billet_autobus,2012-11,470.0,millimes,470.0,470.0,13,2012-11,2013-11,True,Autobus / métro,True
+billet_autobus,2012-12,470.0,millimes,470.0,470.0,13,2012-12,2013-12,True,Autobus / métro,True
+billet_autobus,2013-01,470.0,millimes,470.0,470.0,13,2013-01,2014-01,True,Autobus / métro,True
+billet_autobus,2013-02,470.0,millimes,470.0,470.0,13,2013-02,2014-02,True,Autobus / métro,True
+billet_autobus,2013-03,470.0,millimes,470.0,470.0,13,2013-03,2014-03,True,Autobus / métro,True
+billet_autobus,2013-04,470.0,millimes,470.0,470.0,13,2013-04,2014-04,True,Autobus / métro,True
+billet_autobus,2013-05,470.0,millimes,470.0,470.0,13,2013-05,2014-05,True,Autobus / métro,True
+billet_autobus,2013-06,470.0,millimes,470.0,470.0,13,2013-06,2014-06,True,Autobus / métro,True
+billet_autobus,2013-07,470.0,millimes,470.0,470.0,13,2013-07,2014-07,True,Autobus / métro,True
+billet_autobus,2013-08,470.0,millimes,470.0,470.0,13,2013-08,2014-08,True,Autobus / métro,True
+billet_autobus,2013-09,470.0,millimes,470.0,470.0,13,2013-09,2014-09,True,Autobus / métro,True
+billet_autobus,2013-10,470.0,millimes,470.0,470.0,13,2013-10,2014-10,True,Autobus / métro,True
+billet_autobus,2013-11,470.0,millimes,470.0,470.0,13,2013-11,2014-11,True,Autobus / métro,True
+billet_autobus,2013-12,470.0,millimes,470.0,470.0,13,2013-12,2014-12,True,Autobus / métro,True
+billet_autobus,2014-01,470.0,millimes,470.0,470.0,13,2014-01,2015-01,True,Autobus / métro,True
+billet_autobus,2014-02,470.0,millimes,470.0,470.0,13,2014-02,2015-02,True,Autobus / métro,True
+billet_autobus,2014-03,470.0,millimes,470.0,470.0,13,2014-03,2015-03,True,Autobus / métro,True
+billet_autobus,2014-04,470.0,millimes,470.0,470.0,13,2014-04,2015-04,True,Autobus / métro,True
+billet_autobus,2014-05,470.0,millimes,470.0,470.0,13,2014-05,2015-05,True,Autobus / métro,True
+billet_autobus,2014-06,470.0,millimes,470.0,470.0,13,2014-06,2015-06,True,Autobus / métro,True
+billet_autobus,2014-07,470.0,millimes,470.0,470.0,13,2014-07,2015-07,True,Autobus / métro,True
+billet_autobus,2014-08,470.0,millimes,470.0,470.0,13,2014-08,2015-08,True,Autobus / métro,True
+billet_autobus,2014-09,470.0,millimes,470.0,470.0,13,2014-09,2015-09,True,Autobus / métro,True
+billet_autobus,2014-10,470.0,millimes,470.0,470.0,13,2014-10,2015-10,True,Autobus / métro,True
+billet_autobus,2014-11,470.0,millimes,470.0,470.0,13,2014-11,2015-11,True,Autobus / métro,True
+billet_autobus,2014-12,470.0,millimes,470.0,470.0,13,2014-12,2015-12,True,Autobus / métro,True
+billet_autobus,2015-01,470.0,millimes,470.0,470.0,13,2015-01,2016-01,True,Autobus / métro,True
+billet_autobus,2015-02,470.0,millimes,470.0,470.0,13,2015-02,2016-02,True,Autobus / métro,True
+billet_autobus,2015-03,470.0,millimes,470.0,470.0,13,2015-03,2016-03,True,Autobus / métro,True
+billet_autobus,2015-04,470.0,millimes,470.0,470.0,13,2015-04,2016-04,True,Autobus / métro,True
+billet_autobus,2015-05,470.0,millimes,470.0,470.0,13,2015-05,2016-05,True,Autobus / métro,True
+billet_autobus,2015-06,470.0,millimes,470.0,470.0,13,2015-06,2016-06,True,Autobus / métro,True
+billet_autobus,2015-07,470.0,millimes,470.0,470.0,13,2015-07,2016-07,True,Autobus / métro,True
+billet_autobus,2015-08,470.0,millimes,470.0,470.0,13,2015-08,2016-08,True,Autobus / métro,True
+billet_autobus,2015-09,470.0,millimes,470.0,470.0,13,2015-09,2016-09,True,Autobus / métro,True
+billet_autobus,2015-10,470.0,millimes,470.0,470.0,13,2015-10,2016-10,True,Autobus / métro,True
+billet_autobus,2015-11,470.0,millimes,470.0,470.0,13,2015-11,2016-11,True,Autobus / métro,True
+billet_autobus,2015-12,470.0,millimes,470.0,470.0,13,2015-12,2016-12,True,Autobus / métro,True
+billet_autobus,2016-01,470.0,millimes,470.0,470.0,13,2016-01,2017-01,True,Autobus / métro,True
+billet_autobus,2016-02,470.0,millimes,470.0,470.0,13,2016-02,2017-02,True,Autobus / métro,True
+billet_autobus,2016-03,470.0,millimes,470.0,470.0,13,2016-03,2017-03,True,Autobus / métro,True
+billet_autobus,2016-04,470.0,millimes,470.0,470.0,13,2016-04,2017-04,True,Autobus / métro,True
+billet_autobus,2016-05,470.0,millimes,470.0,470.0,13,2016-05,2017-05,True,Autobus / métro,True
+billet_autobus,2016-06,470.0,millimes,470.0,470.0,13,2016-06,2017-06,True,Autobus / métro,True
+billet_autobus,2016-07,470.0,millimes,470.0,470.0,13,2016-07,2017-07,True,Autobus / métro,True
+billet_autobus,2016-08,470.0,millimes,470.0,470.0,13,2016-08,2017-08,True,Autobus / métro,True
+billet_autobus,2016-09,470.0,millimes,470.0,470.0,13,2016-09,2017-09,True,Autobus / métro,True
+billet_autobus,2016-10,470.0,millimes,470.0,470.0,13,2016-10,2017-10,True,Autobus / métro,True
+billet_autobus,2016-11,470.0,millimes,470.0,470.0,13,2016-11,2017-11,True,Autobus / métro,True
+billet_autobus,2016-12,470.0,millimes,470.0,470.0,13,2016-12,2017-12,True,Autobus / métro,True
+billet_autobus,2017-01,470.0,millimes,470.0,470.0,13,2017-01,2018-01,True,Autobus / métro,True
+billet_autobus,2017-02,470.0,millimes,470.0,470.0,13,2017-02,2018-02,True,Autobus / métro,True
+billet_autobus,2017-03,470.0,millimes,470.0,470.0,13,2017-03,2018-03,True,Autobus / métro,True
+billet_autobus,2017-04,470.0,millimes,470.0,470.0,13,2017-04,2018-04,True,Autobus / métro,True
+billet_autobus,2017-05,470.0,millimes,470.0,470.0,13,2017-05,2018-05,True,Autobus / métro,True
+billet_autobus,2017-06,470.0,millimes,470.0,470.0,13,2017-06,2018-06,True,Autobus / métro,True
+billet_autobus,2017-07,470.0,millimes,470.0,470.0,13,2017-07,2018-07,True,Autobus / métro,True
+billet_autobus,2017-08,470.0,millimes,470.0,470.0,13,2017-08,2018-08,True,Autobus / métro,True
+billet_autobus,2017-09,470.0,millimes,470.0,470.0,13,2017-09,2018-09,True,Autobus / métro,True
+billet_autobus,2017-10,470.0,millimes,470.0,470.0,13,2017-10,2018-10,True,Autobus / métro,True
+billet_autobus,2017-11,470.0,millimes,470.0,470.0,13,2017-11,2018-11,True,Autobus / métro,True
+billet_autobus,2017-12,470.0,millimes,470.0,470.0,13,2017-12,2018-12,True,Autobus / métro,True
+billet_autobus,2018-01,470.0,millimes,470.0,470.0,13,2018-01,2019-01,True,Autobus / métro,True
+billet_autobus,2018-02,470.0,millimes,470.0,470.0,13,2018-02,2019-02,True,Autobus / métro,True
+billet_autobus,2018-03,470.0,millimes,470.0,470.0,13,2018-03,2019-03,True,Autobus / métro,True
+billet_autobus,2018-04,470.0,millimes,470.0,470.0,13,2018-04,2019-04,True,Autobus / métro,True
+billet_autobus,2018-05,470.0,millimes,470.0,470.0,13,2018-05,2019-05,True,Autobus / métro,True
+billet_autobus,2018-06,470.0,millimes,470.0,470.0,13,2018-06,2019-06,True,Autobus / métro,True
+billet_autobus,2018-07,470.0,millimes,470.0,470.0,13,2018-07,2019-07,True,Autobus / métro,True
+billet_autobus,2018-08,470.0,millimes,470.0,470.0,13,2018-08,2019-08,True,Autobus / métro,True
+billet_autobus,2018-09,470.0,millimes,470.0,470.0,13,2018-09,2019-09,True,Autobus / métro,True
+billet_autobus,2018-10,470.0,millimes,470.0,470.0,13,2018-10,2019-10,True,Autobus / métro,True
+billet_autobus,2018-11,470.0,millimes,470.0,470.0,13,2018-11,2019-11,True,Autobus / métro,True
+billet_autobus,2018-12,470.0,millimes,470.0,470.0,13,2018-12,2019-12,True,Autobus / métro,True
+billet_autobus,2019-01,470.0,millimes,470.0,470.0,13,2019-01,2020-01,True,Autobus / métro,True
+billet_autobus,2019-02,470.0,millimes,470.0,470.0,13,2019-02,2020-02,True,Autobus / métro,True
+billet_autobus,2019-03,470.0,millimes,470.0,470.0,13,2019-03,2020-03,True,Autobus / métro,True
+billet_autobus,2019-04,470.0,millimes,470.0,470.0,13,2019-04,2020-04,True,Autobus / métro,True
+billet_autobus,2019-05,470.0,millimes,470.0,470.0,13,2019-05,2020-05,True,Autobus / métro,True
+billet_autobus,2019-06,470.0,millimes,470.0,470.0,13,2019-06,2020-06,True,Autobus / métro,True
+billet_autobus,2019-07,470.0,millimes,470.0,470.0,13,2019-07,2020-07,True,Autobus / métro,True
+billet_autobus,2019-08,470.0,millimes,470.0,470.0,13,2019-08,2020-08,True,Autobus / métro,True
+billet_autobus,2019-09,470.0,millimes,470.0,470.0,13,2019-09,2020-09,True,Autobus / métro,True
+billet_autobus,2019-10,470.0,millimes,470.0,470.0,13,2019-10,2020-10,True,Autobus / métro,True
+billet_autobus,2019-11,470.0,millimes,470.0,470.0,13,2019-11,2020-11,True,Autobus / métro,True
+billet_autobus,2019-12,470.0,millimes,470.0,470.0,13,2019-12,2020-12,True,Autobus / métro,True
+billet_autobus,2020-01,470.0,millimes,470.0,470.0,13,2020-01,2021-01,True,Autobus / métro,True
+billet_autobus,2020-02,470.0,millimes,470.0,470.0,13,2020-02,2021-02,True,Autobus / métro,True
+billet_autobus,2020-03,470.0,millimes,470.0,470.0,13,2020-03,2021-03,True,Autobus / métro,True
+billet_autobus,2020-04,470.0,millimes,470.0,470.0,13,2020-04,2021-04,True,Autobus / métro,True
+billet_autobus,2020-05,470.0,millimes,470.0,470.0,13,2020-05,2021-05,False,Autobus / métro,True
+billet_autobus,2020-06,470.0,millimes,470.0,470.0,13,2020-06,2021-06,True,Autobus / métro,True
+billet_autobus,2020-07,470.0,millimes,470.0,470.0,13,2020-07,2021-07,True,Autobus / métro,True
+billet_autobus,2020-08,470.0,millimes,470.0,470.0,13,2020-08,2021-08,True,Autobus / métro,True
+billet_autobus,2020-09,470.0,millimes,470.0,470.0,13,2020-09,2021-09,True,Autobus / métro,True
+billet_autobus,2020-10,470.0,millimes,470.0,470.0,13,2020-10,2021-10,True,Autobus / métro,True
+billet_autobus,2020-11,470.0,millimes,470.0,470.0,13,2020-11,2021-11,True,Autobus / métro,True
+billet_autobus,2020-12,470.0,millimes,470.0,470.0,13,2020-12,2021-12,True,Autobus / métro,True
+billet_autobus,2021-01,470.0,millimes,470.0,470.0,13,2021-01,2022-01,True,Autobus / métro,True
+billet_autobus,2021-02,470.0,millimes,470.0,470.0,13,2021-02,2022-02,True,Autobus / métro,True
+billet_autobus,2021-03,470.0,millimes,470.0,470.0,13,2021-03,2022-03,True,Autobus / métro,True
+billet_autobus,2021-04,470.0,millimes,470.0,470.0,13,2021-04,2022-04,True,Autobus / métro,True
+billet_autobus,2021-05,470.0,millimes,470.0,470.0,13,2021-05,2022-05,True,Autobus / métro,True
+billet_autobus,2021-06,500.0,millimes,500.0,500.0,13,2021-06,2022-06,True,Autobus / métro,True
+billet_autobus,2021-07,500.0,millimes,500.0,500.0,13,2021-07,2022-07,True,Autobus / métro,True
+billet_autobus,2021-08,500.0,millimes,500.0,500.0,13,2021-08,2022-08,True,Autobus / métro,True
+billet_autobus,2021-09,500.0,millimes,500.0,500.0,13,2021-09,2022-09,True,Autobus / métro,True
+billet_autobus,2021-10,500.0,millimes,500.0,500.0,13,2021-10,2022-10,True,Autobus / métro,True
+billet_autobus,2021-11,500.0,millimes,500.0,500.0,13,2021-11,2022-11,True,Autobus / métro,True
+billet_autobus,2021-12,500.0,millimes,500.0,500.0,13,2021-12,2022-12,True,Autobus / métro,True
+billet_autobus,2022-01,500.0,millimes,500.0,500.0,13,2022-01,2023-01,True,Autobus / métro,True
+billet_autobus,2022-02,500.0,millimes,500.0,500.0,13,2022-02,2023-02,True,Autobus / métro,True
+billet_autobus,2022-03,500.0,millimes,500.0,500.0,13,2022-03,2023-03,True,Autobus / métro,True
+billet_autobus,2022-04,500.0,millimes,500.0,500.0,13,2022-04,2023-04,True,Autobus / métro,True
+billet_autobus,2022-05,500.0,millimes,500.0,500.0,13,2022-05,2023-05,True,Autobus / métro,True
+billet_autobus,2022-06,500.0,millimes,500.0,500.0,13,2022-06,2023-06,True,Autobus / métro,True
+billet_autobus,2022-07,500.0,millimes,500.0,500.0,13,2022-07,2023-07,True,Autobus / métro,True
+billet_autobus,2022-08,500.0,millimes,500.0,500.0,13,2022-08,2023-08,True,Autobus / métro,True
+billet_autobus,2022-09,500.0,millimes,500.0,500.0,13,2022-09,2023-09,True,Autobus / métro,True
+billet_autobus,2022-10,500.0,millimes,500.0,500.0,13,2022-10,2023-10,True,Autobus / métro,True
+billet_autobus,2022-11,500.0,millimes,500.0,500.0,13,2022-11,2023-11,True,Autobus / métro,True
+billet_autobus,2022-12,500.0,millimes,500.0,500.0,13,2022-12,2023-12,True,Autobus / métro,True
+billet_autobus,2023-01,500.0,millimes,500.0,500.0,13,2023-01,2024-01,True,Autobus / métro,True
+billet_autobus,2023-02,500.0,millimes,500.0,500.0,13,2023-02,2024-02,True,Autobus / métro,True
+billet_autobus,2023-03,500.0,millimes,500.0,500.0,13,2023-03,2024-03,True,Autobus / métro,True
+billet_autobus,2023-04,500.0,millimes,500.0,500.0,13,2023-04,2024-04,True,Autobus / métro,True
+billet_autobus,2023-05,500.0,millimes,500.0,500.0,13,2023-05,2024-05,True,Autobus / métro,True
+billet_autobus,2023-06,500.0,millimes,500.0,500.0,13,2023-06,2024-06,True,Autobus / métro,True
+billet_autobus,2023-07,500.0,millimes,500.0,500.0,13,2023-07,2024-07,True,Autobus / métro,True
+billet_autobus,2023-08,500.0,millimes,500.0,500.0,13,2023-08,2024-08,True,Autobus / métro,True
+billet_autobus,2023-09,500.0,millimes,500.0,500.0,13,2023-09,2024-09,True,Autobus / métro,True
+billet_autobus,2023-10,500.0,millimes,500.0,500.0,13,2023-10,2024-10,True,Autobus / métro,True
+billet_autobus,2023-11,500.0,millimes,500.0,500.0,13,2023-11,2024-11,True,Autobus / métro,True
+billet_autobus,2023-12,500.0,millimes,500.0,500.0,13,2023-12,2024-12,True,Autobus / métro,True
+billet_autobus,2024-01,500.0,millimes,500.0,500.0,13,2024-01,2025-01,True,Autobus / métro,True
+billet_autobus,2024-02,500.0,millimes,500.0,500.0,13,2024-02,2025-02,True,Autobus / métro,True
+billet_autobus,2024-03,500.0,millimes,500.0,500.0,13,2024-03,2025-03,True,Autobus / métro,True
+billet_autobus,2024-04,500.0,millimes,500.0,500.0,13,2024-04,2025-04,True,Autobus / métro,True
+billet_autobus,2024-05,500.0,millimes,500.0,500.0,13,2024-05,2025-05,True,Autobus / métro,True
+billet_autobus,2024-06,500.0,millimes,500.0,500.0,13,2024-06,2025-06,True,Autobus / métro,True
+billet_autobus,2024-07,500.0,millimes,500.0,500.0,13,2024-07,2025-07,True,Autobus / métro,True
+billet_autobus,2024-08,500.0,millimes,500.0,500.0,13,2024-08,2025-08,True,Autobus / métro,True
+billet_autobus,2024-09,500.0,millimes,500.0,500.0,13,2024-09,2025-09,True,Autobus / métro,True
+billet_autobus,2024-10,500.0,millimes,500.0,500.0,13,2024-10,2025-10,True,Autobus / métro,True
+billet_autobus,2024-11,500.0,millimes,500.0,500.0,13,2024-11,2025-11,True,Autobus / métro,True
+billet_autobus,2024-12,500.0,millimes,500.0,500.0,13,2024-12,2025-12,True,Autobus / métro,True
+billet_autobus,2025-01,500.0,millimes,500.0,500.0,13,2025-01,2026-01,True,Autobus / métro,True
+billet_autobus,2025-02,500.0,millimes,500.0,500.0,13,2025-02,2026-02,True,Autobus / métro,True
+billet_autobus,2025-03,500.0,millimes,500.0,500.0,13,2025-03,2026-03,True,Autobus / métro,True
+billet_autobus,2025-04,500.0,millimes,500.0,500.0,13,2025-04,2026-04,True,Autobus / métro,True
+billet_autobus,2025-05,500.0,millimes,500.0,500.0,13,2025-05,2026-05,True,Autobus / métro,True
+billet_autobus,2025-06,500.0,millimes,500.0,500.0,13,2025-06,2026-06,True,Autobus / métro,True
+billet_autobus,2025-07,500.0,millimes,500.0,500.0,13,2025-07,2026-07,True,Autobus / métro,True
+billet_autobus,2025-08,500.0,millimes,500.0,500.0,12,2025-08,2026-07,True,Autobus / métro,True
+billet_autobus,2025-09,500.0,millimes,500.0,500.0,11,2025-09,2026-07,True,Autobus / métro,True
+billet_autobus,2025-10,500.0,millimes,500.0,500.0,10,2025-10,2026-07,True,Autobus / métro,True
+billet_autobus,2025-11,500.0,millimes,500.0,500.0,9,2025-11,2026-07,True,Autobus / métro,True
+billet_autobus,2025-12,500.0,millimes,500.0,500.0,8,2025-12,2026-07,True,Autobus / métro,True
+billet_autobus,2026-01,500.0,millimes,500.0,500.0,7,2026-01,2026-07,True,Autobus / métro,True
+billet_autobus,2026-02,500.0,millimes,500.0,500.0,6,2026-02,2026-07,True,Autobus / métro,True
+billet_autobus,2026-03,500.0,millimes,500.0,500.0,5,2026-03,2026-07,True,Autobus / métro,True
+billet_autobus,2026-04,500.0,millimes,500.0,500.0,4,2026-04,2026-07,True,Autobus / métro,True
+billet_autobus,2026-05,500.0,millimes,500.0,500.0,3,2026-05,2026-07,True,Autobus / métro,True
+billet_autobus,2026-06,500.0,millimes,500.0,500.0,2,2026-06,2026-07,True,Autobus / métro,True
+billet_autobus,2026-07,500.0,millimes,500.0,500.0,1,2026-07,2026-07,True,Autobus / métro,True
+billet_train_2e_classe,2009-11,7700.0,millimes,7700.0,7700.0,1,2010-11,2010-11,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2009-12,7700.0,millimes,7700.0,7700.0,1,2010-11,2010-11,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-01,7700.0,millimes,7700.0,7700.0,3,2010-11,2011-01,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-02,7700.0,millimes,7700.0,7700.0,4,2010-11,2011-02,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-03,7700.0,millimes,7700.0,7700.0,5,2010-11,2011-03,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-04,7700.0,millimes,7700.0,7700.0,6,2010-11,2011-04,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-05,7700.0,millimes,7700.0,7700.0,7,2010-11,2011-05,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-06,7700.0,millimes,7700.0,7700.0,8,2010-11,2011-06,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-07,7700.0,millimes,7700.0,7700.0,9,2010-11,2011-07,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-08,8000.0,millimes,8000.0,8000.0,10,2010-11,2011-08,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-09,8000.0,millimes,8000.0,8000.0,11,2010-11,2011-09,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-10,8000.0,millimes,8000.0,8000.0,12,2010-11,2011-10,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-11,8000.0,millimes,8000.0,8000.0,13,2010-11,2011-11,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2010-12,8000.0,millimes,8000.0,8000.0,13,2010-12,2011-12,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-01,8000.0,millimes,8000.0,8000.0,13,2011-01,2012-01,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-02,8000.0,millimes,8000.0,8000.0,13,2011-02,2012-02,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-03,8000.0,millimes,8000.0,8000.0,13,2011-03,2012-03,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-04,8000.0,millimes,8000.0,8000.0,13,2011-04,2012-04,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-05,8000.0,millimes,8000.0,8000.0,13,2011-05,2012-05,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-06,8000.0,millimes,8000.0,8000.0,13,2011-06,2012-06,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-07,8000.0,millimes,8000.0,8000.0,13,2011-07,2012-07,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-08,8000.0,millimes,8000.0,8000.0,13,2011-08,2012-08,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-09,8000.0,millimes,8000.0,8000.0,13,2011-09,2012-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-10,8000.0,millimes,8000.0,8000.0,13,2011-10,2012-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-11,8000.0,millimes,8000.0,8000.0,13,2011-11,2012-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2011-12,8000.0,millimes,8000.0,8000.0,13,2011-12,2012-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-01,8000.0,millimes,8000.0,8000.0,13,2012-01,2013-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-02,8000.0,millimes,8000.0,8000.0,13,2012-02,2013-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-03,8000.0,millimes,8000.0,8000.0,13,2012-03,2013-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-04,8000.0,millimes,8000.0,8000.0,13,2012-04,2013-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-05,8000.0,millimes,8000.0,8000.0,13,2012-05,2013-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-06,8000.0,millimes,8000.0,8000.0,13,2012-06,2013-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-07,8000.0,millimes,8000.0,8000.0,13,2012-07,2013-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-08,8000.0,millimes,8000.0,8000.0,13,2012-08,2013-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-09,8000.0,millimes,8000.0,8000.0,13,2012-09,2013-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-10,8000.0,millimes,8000.0,8000.0,13,2012-10,2013-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-11,8000.0,millimes,8000.0,8000.0,13,2012-11,2013-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2012-12,8000.0,millimes,8000.0,8000.0,13,2012-12,2013-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-01,8000.0,millimes,8000.0,8000.0,13,2013-01,2014-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-02,8000.0,millimes,8000.0,8000.0,13,2013-02,2014-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-03,8000.0,millimes,8000.0,8000.0,13,2013-03,2014-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-04,8000.0,millimes,8000.0,8000.0,13,2013-04,2014-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-05,8000.0,millimes,8000.0,8000.0,13,2013-05,2014-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-06,8000.0,millimes,8000.0,8000.0,13,2013-06,2014-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-07,8000.0,millimes,8000.0,8000.0,13,2013-07,2014-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-08,8000.0,millimes,8000.0,8000.0,13,2013-08,2014-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-09,8000.0,millimes,8000.0,8000.0,13,2013-09,2014-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-10,8000.0,millimes,8000.0,8000.0,13,2013-10,2014-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-11,8000.0,millimes,8000.0,8000.0,13,2013-11,2014-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2013-12,8000.0,millimes,8000.0,8000.0,13,2013-12,2014-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-01,8000.0,millimes,8000.0,8000.0,13,2014-01,2015-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-02,8000.0,millimes,8000.0,8000.0,13,2014-02,2015-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-03,8000.0,millimes,8000.0,8000.0,13,2014-03,2015-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-04,8000.0,millimes,8000.0,8000.0,13,2014-04,2015-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-05,8000.0,millimes,8000.0,8000.0,13,2014-05,2015-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-06,8000.0,millimes,8000.0,8000.0,13,2014-06,2015-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-07,8000.0,millimes,8000.0,8000.0,13,2014-07,2015-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-08,8000.0,millimes,8000.0,8000.0,13,2014-08,2015-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-09,8000.0,millimes,8000.0,8000.0,13,2014-09,2015-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-10,8000.0,millimes,8000.0,8000.0,13,2014-10,2015-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-11,8000.0,millimes,8000.0,8000.0,13,2014-11,2015-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2014-12,8000.0,millimes,8000.0,8000.0,13,2014-12,2015-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-01,8000.0,millimes,8000.0,8000.0,13,2015-01,2016-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-02,8000.0,millimes,8000.0,8000.0,13,2015-02,2016-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-03,8000.0,millimes,8000.0,8000.0,13,2015-03,2016-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-04,8000.0,millimes,8000.0,8000.0,13,2015-04,2016-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-05,8000.0,millimes,8000.0,8000.0,13,2015-05,2016-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-06,8000.0,millimes,8000.0,8000.0,13,2015-06,2016-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-07,8000.0,millimes,8000.0,8000.0,13,2015-07,2016-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-08,8000.0,millimes,8000.0,8000.0,13,2015-08,2016-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-09,8000.0,millimes,8000.0,8000.0,13,2015-09,2016-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-10,8000.0,millimes,8000.0,8000.0,13,2015-10,2016-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-11,8000.0,millimes,8000.0,8000.0,13,2015-11,2016-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2015-12,8000.0,millimes,8000.0,8000.0,13,2015-12,2016-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-01,8000.0,millimes,8000.0,8000.0,13,2016-01,2017-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-02,8000.0,millimes,8000.0,8000.0,13,2016-02,2017-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-03,8000.0,millimes,8000.0,8000.0,13,2016-03,2017-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-04,8000.0,millimes,8000.0,8000.0,13,2016-04,2017-04,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-05,8000.0,millimes,8000.0,8000.0,13,2016-05,2017-05,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-06,8000.0,millimes,8000.0,8000.0,13,2016-06,2017-06,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-07,8000.0,millimes,8000.0,8000.0,13,2016-07,2017-07,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-08,8000.0,millimes,8000.0,8000.0,13,2016-08,2017-08,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-09,8000.0,millimes,8000.0,8000.0,13,2016-09,2017-09,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-10,8000.0,millimes,8000.0,8000.0,13,2016-10,2017-10,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-11,8000.0,millimes,8000.0,8000.0,13,2016-11,2017-11,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2016-12,8000.0,millimes,8000.0,8000.0,13,2016-12,2017-12,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-01,8000.0,millimes,8000.0,8000.0,13,2017-01,2018-01,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-02,8000.0,millimes,8000.0,8000.0,13,2017-02,2018-02,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-03,8000.0,millimes,8000.0,8000.0,13,2017-03,2018-03,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-04,8000.0,millimes,8000.0,8000.0,13,2017-04,2018-04,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-05,8000.0,millimes,8000.0,8000.0,13,2017-05,2018-05,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-06,8000.0,millimes,8000.0,8000.0,13,2017-06,2018-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-07,8000.0,millimes,8000.0,8000.0,13,2017-07,2018-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-08,8000.0,millimes,8000.0,8000.0,13,2017-08,2018-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-09,8000.0,millimes,8000.0,8000.0,13,2017-09,2018-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-10,8000.0,millimes,8000.0,8000.0,13,2017-10,2018-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-11,8000.0,millimes,8000.0,8000.0,13,2017-11,2018-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2017-12,8000.0,millimes,8000.0,8000.0,13,2017-12,2018-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-01,8000.0,millimes,8000.0,8000.0,13,2018-01,2019-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-02,8000.0,millimes,8000.0,8000.0,13,2018-02,2019-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-03,8000.0,millimes,8000.0,8000.0,13,2018-03,2019-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-04,8000.0,millimes,8000.0,8000.0,13,2018-04,2019-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-05,8000.0,millimes,8000.0,8000.0,13,2018-05,2019-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-06,8000.0,millimes,8000.0,8000.0,13,2018-06,2019-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-07,8000.0,millimes,8000.0,8000.0,13,2018-07,2019-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-08,8000.0,millimes,8000.0,8000.0,13,2018-08,2019-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-09,8000.0,millimes,8000.0,8000.0,13,2018-09,2019-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-10,8000.0,millimes,8000.0,8000.0,13,2018-10,2019-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-11,8000.0,millimes,8000.0,8000.0,13,2018-11,2019-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2018-12,8000.0,millimes,8000.0,8000.0,13,2018-12,2019-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-01,8000.0,millimes,8000.0,8000.0,13,2019-01,2020-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-02,8000.0,millimes,8000.0,8000.0,13,2019-02,2020-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-03,8000.0,millimes,8000.0,8000.0,13,2019-03,2020-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-04,8000.0,millimes,8000.0,8000.0,13,2019-04,2020-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-05,8000.0,millimes,8000.0,8000.0,13,2019-05,2020-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-06,8000.0,millimes,8000.0,8000.0,13,2019-06,2020-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-07,8000.0,millimes,8000.0,8000.0,13,2019-07,2020-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-08,8000.0,millimes,8000.0,8000.0,13,2019-08,2020-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-09,8000.0,millimes,8000.0,8000.0,13,2019-09,2020-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-10,8000.0,millimes,8000.0,8000.0,13,2019-10,2020-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-11,8000.0,millimes,8000.0,8000.0,13,2019-11,2020-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2019-12,8000.0,millimes,8000.0,8000.0,13,2019-12,2020-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-01,8000.0,millimes,8000.0,8000.0,13,2020-01,2021-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-02,8000.0,millimes,8000.0,8000.0,13,2020-02,2021-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-03,8000.0,millimes,8000.0,8000.0,13,2020-03,2021-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-04,8000.0,millimes,8000.0,8000.0,13,2020-04,2021-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-05,8000.0,millimes,8000.0,8000.0,13,2020-05,2021-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-06,8000.0,millimes,8000.0,8000.0,13,2020-06,2021-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-07,8000.0,millimes,8000.0,8000.0,13,2020-07,2021-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-08,8000.0,millimes,8000.0,8000.0,13,2020-08,2021-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-09,8000.0,millimes,8000.0,8000.0,13,2020-09,2021-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-10,8000.0,millimes,8000.0,8000.0,13,2020-10,2021-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-11,8000.0,millimes,8000.0,8000.0,13,2020-11,2021-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2020-12,8000.0,millimes,8000.0,8000.0,13,2020-12,2021-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-01,8000.0,millimes,8000.0,8000.0,13,2021-01,2022-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-02,8000.0,millimes,8000.0,8000.0,13,2021-02,2022-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-03,8000.0,millimes,8000.0,8000.0,13,2021-03,2022-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-04,8000.0,millimes,8000.0,8000.0,13,2021-04,2022-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-05,8000.0,millimes,8000.0,8000.0,13,2021-05,2022-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-06,8000.0,millimes,8000.0,8000.0,13,2021-06,2022-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-07,8000.0,millimes,8000.0,8000.0,13,2021-07,2022-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-08,8000.0,millimes,8000.0,8000.0,13,2021-08,2022-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-09,8000.0,millimes,8000.0,8000.0,13,2021-09,2022-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-10,8000.0,millimes,8000.0,8000.0,13,2021-10,2022-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-11,8000.0,millimes,8000.0,8000.0,13,2021-11,2022-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2021-12,8000.0,millimes,8000.0,8000.0,13,2021-12,2022-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-01,8000.0,millimes,8000.0,8000.0,13,2022-01,2023-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-02,8000.0,millimes,8000.0,8000.0,13,2022-02,2023-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-03,8000.0,millimes,8000.0,8000.0,13,2022-03,2023-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-04,8000.0,millimes,8000.0,8000.0,13,2022-04,2023-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-05,8000.0,millimes,8000.0,8000.0,13,2022-05,2023-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-06,8000.0,millimes,8000.0,8000.0,13,2022-06,2023-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-07,8000.0,millimes,8000.0,8000.0,13,2022-07,2023-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-08,8000.0,millimes,8000.0,8000.0,13,2022-08,2023-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-09,8000.0,millimes,8000.0,8000.0,13,2022-09,2023-09,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-10,8000.0,millimes,8000.0,8000.0,13,2022-10,2023-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-11,8000.0,millimes,8000.0,8000.0,13,2022-11,2023-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2022-12,8000.0,millimes,8000.0,8000.0,13,2022-12,2023-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-01,8000.0,millimes,8000.0,8000.0,13,2023-01,2024-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-02,8000.0,millimes,8000.0,8000.0,13,2023-02,2024-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-03,8000.0,millimes,8000.0,8000.0,13,2023-03,2024-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-04,8000.0,millimes,8000.0,8000.0,13,2023-04,2024-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-05,8000.0,millimes,8000.0,8000.0,13,2023-05,2024-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-06,8000.0,millimes,8000.0,8000.0,13,2023-06,2024-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-07,8000.0,millimes,8000.0,8000.0,13,2023-07,2024-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-08,8000.0,millimes,8000.0,8000.0,13,2023-08,2024-08,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-09,8000.0,millimes,8000.0,8000.0,13,2023-09,2024-09,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-10,8000.0,millimes,8000.0,8000.0,13,2023-10,2024-10,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-11,8000.0,millimes,8000.0,8000.0,13,2023-11,2024-11,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2023-12,8000.0,millimes,8000.0,8000.0,13,2023-12,2024-12,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-01,8000.0,millimes,8000.0,8000.0,13,2024-01,2025-01,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-02,8000.0,millimes,8000.0,8000.0,13,2024-02,2025-02,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-03,8000.0,millimes,8000.0,8000.0,13,2024-03,2025-03,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-04,8000.0,millimes,8000.0,8000.0,13,2024-04,2025-04,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-05,8000.0,millimes,8000.0,8000.0,13,2024-05,2025-05,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-06,8000.0,millimes,8000.0,8000.0,13,2024-06,2025-06,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-07,8000.0,millimes,8000.0,8000.0,13,2024-07,2025-07,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-08,8000.0,millimes,8000.0,8000.0,13,2024-08,2025-08,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-09,8000.0,millimes,8000.0,8000.0,13,2024-09,2025-09,True,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-10,8000.0,millimes,8000.0,8000.0,13,2024-10,2025-10,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-11,8000.0,millimes,8000.0,8000.0,13,2024-11,2025-11,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2024-12,8000.0,millimes,8000.0,8000.0,13,2024-12,2025-12,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-01,8000.0,millimes,8000.0,8000.0,13,2025-01,2026-01,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-02,8000.0,millimes,8000.0,8000.0,13,2025-02,2026-02,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-03,8000.0,millimes,8000.0,8000.0,13,2025-03,2026-03,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-04,8000.0,millimes,8000.0,8000.0,13,2025-04,2026-04,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-05,8000.0,millimes,8000.0,8000.0,13,2025-05,2026-05,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-06,8000.0,millimes,8000.0,8000.0,13,2025-06,2026-06,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-07,8000.0,millimes,8000.0,8000.0,13,2025-07,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-08,8000.0,millimes,8000.0,8000.0,12,2025-08,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-09,8000.0,millimes,8000.0,8000.0,11,2025-09,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-10,8000.0,millimes,8000.0,8000.0,10,2025-10,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-11,8000.0,millimes,8000.0,8000.0,9,2025-11,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2025-12,8000.0,millimes,8000.0,8000.0,8,2025-12,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2026-01,8000.0,millimes,8000.0,8000.0,7,2026-01,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2026-02,8000.0,millimes,8000.0,8000.0,6,2026-02,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2026-03,8000.0,millimes,8000.0,8000.0,5,2026-03,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2026-04,8000.0,millimes,8000.0,8000.0,4,2026-04,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2026-05,8000.0,millimes,8000.0,8000.0,3,2026-05,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2026-06,8000.0,millimes,8000.0,8000.0,2,2026-06,2026-07,False,Billet de train 2ème classe,True
+billet_train_2e_classe,2026-07,8000.0,millimes,8000.0,8000.0,1,2026-07,2026-07,False,Billet de train 2ème classe,True

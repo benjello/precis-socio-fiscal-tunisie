@@ -9256,10 +9256,12 @@ entries:
   - id: compensation-transport
     acronyme: null
     statut: valide
-    references: [minfin-finances-publiques-2008, lf-1984]
+    references: [minfin-finances-publiques-2008, minfin-finances-publiques-2010, minfin-budget-transport-2013, lf-1984]
     source_definition: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
     # AR : « دعم النقل » dans le tableau, « دعم النقل العمومي » dans le texte de la
-    # même page.
+    # même page. Composantes (« النقل المدرسي و الجامعي », « النقل بتعريفات منخفضة »,
+    # « النقل المجاني لبعض الفئات الخصوصية ») : rapport sur les finances publiques 2010,
+    # p. 34 du PDF ; ligne par société : budget du ministère du Transport de 2013.
     source_traduction: {ref: minfin-finances-publiques-2008, locator: "p. 35"}
     voir_aussi: [compensation-des-prix, taxe-unique-compensation-transports-routiers]
     fr:
@@ -9267,12 +9269,18 @@ entries:
       definition: >
         Poste de la dépense de compensation que les rapports du ministère des Finances
         consacrent au transport public, à côté des produits de base et des carburants.
-      synonymes: [Subvention du transport public]
+        C'est une somme de subventions par société, inscrites au budget du ministère du
+        Transport sous le libellé « soutien du transport public », au titre du transport
+        scolaire et universitaire surtout, du transport à tarifs réduits et du transport
+        gratuit de certaines catégories.
+      synonymes: [Subvention du transport public, Soutien du transport public]
     ar:
       terme: دعم النقل
       definition: >
         باب من نفقات الدعم تخصّصه تقارير وزارة المالية للنقل العمومي، إلى جانب المواد
-        الأساسية والمحروقات.
+        الأساسية والمحروقات. وهو مجموع منح مرسّمة لكلّ شركة بميزانية وزارة النقل تحت
+        عنوان «دعم النقل العمومي»، بعنوان النقل المدرسي والجامعي أساساً، والنقل
+        بتعريفات منخفضة والنقل المجاني لبعض الفئات الخصوصية.
       synonymes: [دعم النقل العمومي]
 
   - id: fonds-special-tresor
@@ -9350,7 +9358,10 @@ entries:
         finances pour 1984. Elle s'applique aux véhicules de transport en commun de
         personnes de plus de neuf places, aux véhicules de transport routier de
         marchandises d'une charge utile supérieure à 300 kilogrammes, aux voitures de
-        louage et aux taxis. La loi de finances pour 2014 met à la charge des
+        louage et aux taxis. Elle est due chaque mois par véhicule, et 40 % de son
+        produit sont affectés à la caisse de compensation et de soutien des transports
+        routiers, fonds spécial du Trésor créé par la même loi (art. 101). La loi de
+        finances pour 2014 met à la charge des
         véhicules qui y sont soumis une redevance de compensation égale à 25 % de son
         montant (art. 76), au titre des années 2014 et 2015 (art. 78).
       synonymes: []
@@ -9360,7 +9371,9 @@ entries:
         معلوم أحدثه الفصل 38 من قانون المالية لسنة 1984 بداية من غرة جانفي 1984. يطبّق
         على عربات النقل المشترك للأشخاص التي تفوق مقاعدها التسعة، وعلى عربات نقل
         البضائع بالطرقات التي تفوق حمولتها النافعة 300 كيلوغرام، وعلى سيارات اللواج
-        وسيارات التاكسي. ووظّف قانون المالية لسنة 2014 على العربات الخاضعة له أتاوة
+        وسيارات التاكسي. يُستخلص شهرياً عن كلّ عربة، ويُخصَّص 40 % من محصوله لحساب خاص
+        في الخزينة أحدثه القانون نفسه لدعم مؤسسات النقل العمومي بالطرقات (الفصل 101).
+        ووظّف قانون المالية لسنة 2014 على العربات الخاضعة له أتاوة
         دعم تساوي 25 % من مبلغه (الفصل 76)، بعنوان سنتي 2014 و2015 (الفصل 78).
       synonymes: [المعلوم التعويضي على النقل]
 

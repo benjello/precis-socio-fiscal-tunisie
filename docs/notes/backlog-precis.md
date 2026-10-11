@@ -2056,6 +2056,8 @@ lacunes ci-dessous) :
 - `_exterieurs.qmd` (`#sec-compensation-sources-exterieures`), **nouveau** : figure de comparaison,
   Banque mondiale 1977 et 1985, FMI 1996 et 2000, FMI 2014 et 2016 (énergie « brute ») ;
 - `_incidence.qmd` (`#sec-compensation-incidence`) : l'étude INS-CRES-BAD de 2013, avec sa méthode.
+- `_transport.qmd` (`#sec-compensation-transport`), **nouveau le 11 octobre 2026**, premier jet à
+  relire : voir « Le transport public » ci-dessous.
 
 Retiré : la section « La compensation rapportée au PIB » et son tableau des parts publiées
 (`tbl-compensation-pib`) — les parts sont celles des figures, calculées dans l'entrepôt ; le
@@ -2111,8 +2113,8 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
   `minenergie-opendata-prix-vente-petroliers` (moyennes annuelles 1990-2016, fichier aux
   archives du web, **non versé à l'entrepôt**) ; `ins-bms` (présente dans « Retraites » seulement) ;
   dix articles de presse de la frise 2002-2018 ; loi de finances pour 1981 et pour 1987, loi
-  n° 91-98, arrêtés des 11 octobre 1990 et 7 juillet 1992, arrêté du 10 mai 2024 ; loi n° 63-13
-  (caisse des transports routiers). La collection Zotero « Compensation » reste à créer.
+  n° 91-98, arrêtés des 11 octobre 1990 et 7 juillet 1992, arrêté du 10 mai 2024 (la loi n° 63-13,
+  caisse des transports routiers, est versée le 11 octobre 2026 : clé `loi63-13`). La collection Zotero « Compensation » reste à créer.
 - **Glossaire — notions à créer** (terminologue) : subvention directe / subvention indirecte ;
   prix de cession (préférentiel) ; séparation des opérations de commercialisation des
   hydrocarbures ; revenus de commercialisation des carburants ; compte de la Caisse (charges,
@@ -2212,6 +2214,75 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     redevance de compensation, ciblage et transferts de substitution, événements de janvier 1984.
   - **Redevance de compensation, revenu des personnes physiques** : rédaction de 2013 (assiette,
     plafond de 2 000 D) à relire à l'image ; prorogation des volets bornés à 2014-2015 à établir.
+
+### Le transport public (`_transport.qmd`, 11 octobre 2026)
+
+Chapitre nouveau, écrit sur `docs/notes/compensation-transport-2026-10-11.md` et sur les sept
+séries versées dans `tunisia-data` (fiche `sources/compensation-transport.md`) ; **quand la note et
+une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
+
+- **Plan** : vue d'ensemble (`#sec-compensation-transport-vue`) ; mise en place 1948-1983
+  (`-mise-en-place`) ; grandes réformes 1984, 1985, 2001, 2004, 2017 (`-reformes`, une
+  sous-section par date) ; état du droit en octobre 2026 (`-etat-du-droit`) ; tarifs et
+  abonnements (`-tarifs`) ; abonnement scolaire (`-scolaire`) ; gratuités et réductions
+  (`-gratuites`) ; longue période (`-longue-periode` : `-tarifs-constants`, `-interventions`,
+  `-abonnements-nombre`, `-comptes`) ; Cour des comptes (`-cour`) ; *Livre blanc* de la Banque
+  mondiale (`-livre-blanc`) ; incidence (`-incidence`). Six sections `.domicile-unique`, cinq
+  registres repliés.
+- **Figures** (`precis/fr/compensation/figures/transport.py`, `tr.figure(…)`), sept :
+  `fig-compensation-transport-soutien` (quatre vues, dont part de la dépense de compensation et
+  part du PIB), `-tarifs-arretes`, `-abonnements-prix`, `-tarifs`, `-interventions` (deux vues),
+  `-abonnements-nombre`, `-trafic-tunis`. Libellés des figures en français seulement : **libellés
+  arabes à verser** dans `_L` avant de déclarer le chapitre au livre arabe.
+- **Snapshots** du 11 octobre 2026 : `transport-soutien-par-societe`,
+  `transport-abonnements-scolaires`, `transport-transferts-par-entreprise`,
+  `jort-transport-tarifs-reperes`, `ins-bms-prix-transport`,
+  `bm-livre-blanc-2016-transport-trafic-comptes`,
+  `minfin-entreprises-publiques-transport-trafic-comptes` (ce dernier snapshoté, employé par le
+  seul tableau `tbl-compensation-transport-comptes`, saisi à la main d'après lui).
+- **Dinars de 2025** : `scripts/dinars_constants.py`, une seule convention, dite une fois à la
+  section des tarifs — par année, moyenne des montants en vigueur au premier jour de chacun des
+  douze mois, années entièrement établies seulement (celle de `figtools.constants_escalier`).
+  Les tableaux annuels en dinars de 2025 sont engendrés par `tr.tableau_annuel`.
+- **Deux fiches** dans `docs/recherches.yml` : `r-transport-tarifs-apres-2000` et
+  `r-transport-decret-manque-a-gagner`, ancrées à l'état du droit.
+- **Arabe** : le chapitre n'est pas déclaré dans `precis/ar/compensation/_quarto.yml` (ligne en
+  commentaire) ; à déclarer quand sa traduction sera livrée. D'ici là, `index.qmd`, `_depense.qmd` et `_reformes.qmd`
+  nomment le chapitre en clair, sans ancre (`TODO (rédacteur)` : rétablir les renvois).
+- **Lacunes**, dans l'état que la note établit :
+  - **1985-2002** : crédits et recettes de la caisse de compensation et de soutien des
+    transports routiers, année de sa suppression, année où le budget général prend le relais de
+    la taxe affectée — tableaux des fonds spéciaux des lois de finances et rapports annuels de
+    la BCT, au corpus, **à lire** ; le poste n'est suivi qu'à partir de 2003.
+  - **Tarifs entre février 2000 et novembre 2007**, et actes des relèvements d'août 2010 et de
+    juin 2021 : aucun acte au *Journal officiel* (fiche `r-transport-tarifs-apres-2000` : plein
+    texte des fascicules de 2000-2010 et de 2021, communiqués des sociétés aux archives du web,
+    numéros du *Bulletin mensuel de la statistique* antérieurs à novembre 2008, **à obtenir**).
+  - **Subvention par société** : avant 2012, budgets du ministère du Transport antérieurs à
+    2013, à chercher aux archives du web ; après 2017 au sens strict du poste, budgets de 2018 à
+    2026, **à collecter** sur `finances.gov.tn` et `gbo.tn` — seule la colonne « interventions »,
+    plus large, est connue pour 2016-2024, et son rapprochement avec le poste n'est fait que
+    pour 2016. Éditions LF 2021 et LF 2023 du rapport sur les transferts : rangées ou à
+    transcrire.
+  - **Décomposition par nature** (scolaire, tarifs réduits, gratuités) : aucune source.
+  - **Sociétés régionales** : ni voyageurs, ni recettes, ni couverture des charges ; rapports de
+    la Cour des comptes sur six sociétés et éditions arabes du rapport sur les entreprises
+    publiques (LF 2022 à LF 2025), **à collecter ou à exploiter**.
+  - **SNCFT et métro léger, 1995-2023** (*Annuaire statistique* de l'INS, vingt-deux éditions) :
+    repérés, **non versés en série** — sens des colonnes à vérifier édition par édition.
+  - **Textes à relire sur les fascicules avant citation littérale** : loi n° 63-13, loi de
+    finances pour 1978 (art. 37-38), loi n° 85-77, loi n° 2004-33 (art. 6, 11, 12), décret
+    n° 2001-2621 ; clauses d'effet des arrêtés urbains de 1991 et 1992 ; arrêté du 30 septembre
+    1989 ; arrêtés tarifaires de 1977 à 1986 ; loi n° 2012-26 et loi n° 2003-33 (intitulés
+    seuls) ; arrêtés sur l'accès des personnes handicapées (1982, 1989, 1993).
+  - **Pages de l'édition arabe** : relevées pour le seul décret gouvernemental n° 2017-987, dont
+    l'édition française manque sur pist.tn (pagination française inconnue) ; toutes les autres
+    entrées arabes ont le champ `page` vide.
+  - **Décrets d'application de la loi n° 2004-33** (art. 11 et 12) : fiche
+    `r-transport-decret-manque-a-gagner` ; montants des forfaits du décret n° 2017-987.
+  - **Incidence** : aucune étude ne répartit la subvention du transport par niveau de vie.
+  - **Frontière** : apurements de dettes, résultats et endettement des entreprises de transport
+    (note, § 7) relèvent d'un texte à venir sur les entreprises publiques.
 
 ## Citations répétées — suggestion, non engagée (4 octobre 2026)
 

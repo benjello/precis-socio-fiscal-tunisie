@@ -3223,3 +3223,285 @@
     توزيع سنة 1956 غير متوفّر. لا ربط ولا استكمال. الفوارق بين النشريات مُشار إليها
     دون تصحيح.'
   fiche: sources/ins-recensements-population-milieu.md
+- id: transport-soutien-par-societe
+  titre: 'Soutien du transport public par société : crédits du budget du ministère
+    du Transport, 2012-2017'
+  sources:
+  - minfin-budget-transport-2013
+  - minfin-budget-transport-2014
+  - minfin-budget-transport-2015
+  - minfin-budget-transport-2016
+  - minfin-budget-transport-2017
+  build: uv run python scripts/build_minfin_budget_transport.py
+  raw:
+  - sources/transcriptions/minfin-budget-transport-indicateurs.csv
+  - data/processed/precis/compensation_depense_par_poste.csv
+  output: data/processed/minfinances/transport_soutien_par_societe_2012_2017.csv
+  unite: milliers de dinars courants, tels qu'imprimés ; valeur_md en millions de
+    dinars
+  perimetre: 'ministère des Finances, budget du ministère du Transport, éditions 2013
+    à 2017, tableau des principaux indicateurs, ligne « دعم النقل العمومي » : SNCFT,
+    sociétés régionales, société des transports de Tunis (autobus, métro), bac de
+    Kerkennah, Tunisair Express, SNTRI, transport scolaire rural ; une ligne par (édition,
+    année, état, ligne) — chaque édition N donne l''année N-1 (loi de finances ou
+    loi de finances complémentaire) et l''année N (prévisions)'
+  caveats: 'CRÉDITS VOTÉS OU PROPOSÉS, JAMAIS DES DÉPENSES CONSTATÉES. Le total égale
+    le poste « transport » VOTÉ de compensation-depense (2012, 2013, 2015, 2016, 2017)
+    mais s''écarte du réalisé : 385,0 contre 384,0 en 2014, 416,0 contre 415,9 en
+    2015, 450,0 contre 448,2 en 2017. AUCUNE ÉDITION PRÉFÉRÉE : 2013 à 2016 figurent
+    deux fois ; 2014 a deux lectures (la LFC crée la ligne Tunisair Express par redéploiement,
+    5 MD pris à la SNCFT et aux sociétés régionales). Le périmètre déborde le transport
+    terrestre (bac de Kerkennah, Tunisair Express). Somme des lignes = total imprimé
+    (contrôlé). LU À L''IMAGE (cinq tableaux). AUCUN RACCORD avec transport-transferts-par-entreprise
+    (colonne « interventions », périmètre plus large). Rien avant 2012 ni après 2017.'
+  titre_ar: 'دعم النقل العمومي حسب الشركة: اعتمادات ميزانية وزارة النقل، 2012-2017'
+  unite_ar: بحساب ألف دينار جارٍ كما هو مطبوع؛ وبملايين الدنانير في عمود valeur_md
+  perimetre_ar: وزارة المالية، ميزانية وزارة النقل، طبعات 2013 إلى 2017، جدول أبرز
+    مؤشرات نشاط الوزارة، سطر «دعم النقل العمومي» حسب الشركة
+  caveats_ar: اعتمادات مرسّمة أو مقترحة وليست نفقات منجزة. يساوي المجموع بند النقل
+    المصادق عليه ويختلف عن المنجز في 2014 و2015 و2017. لا تُفضَّل طبعة على أخرى، ولسنة
+    2014 قراءتان. قُرئت الجداول الخمسة من الصورة. لا ربط مع سلسلة التحويلات (عمود
+    التدخلات).
+  fiche: sources/minfin-budget-transport.md
+- id: transport-abonnements-scolaires
+  titre: Abonnements scolaires de transport par société, d'après les budgets du ministère
+    du Transport, 2012-2017 (deux segments)
+  sources:
+  - minfin-budget-transport-2013
+  - minfin-budget-transport-2014
+  - minfin-budget-transport-2015
+  - minfin-budget-transport-2016
+  - minfin-budget-transport-2017
+  build: uv run python scripts/build_minfin_budget_transport.py
+  raw:
+  - sources/transcriptions/minfin-budget-transport-indicateurs.csv
+  output: data/processed/minfinances/transport_abonnements_scolaires_2012_2017.csv
+  unite: nombre (unité non dite par la source ; ligne « تطور الإشتراكات المدرسية »)
+  perimetre: 'même tableau que transport-soutien-par-societe : SNCFT, sociétés régionales,
+    société des transports de Tunis ; une ligne par (édition, année, état, ligne)
+    ; colonne `segment`'
+  caveats: 'DEUX SEGMENTS, JAMAIS CHAÎNÉS : éditions 2013 à 2016, puis édition 2017.
+    L''année 2016 a deux valeurs — 565 649 (édition 2016, prévisions) et 433 032 (édition
+    2017, loi de finances), la société de Tunis passant de 209 347 à 94 865 — sans
+    explication de la source : changement de mesure. La colonne 2014 a aussi deux
+    lectures (528 946 en prévisions, 555 444 en loi de finances complémentaire). Prévisions
+    et crédits de documents budgétaires, pas un dénombrement constaté. Somme des lignes
+    = total imprimé (contrôlé). LU À L''IMAGE.'
+  titre_ar: الاشتراكات المدرسية في النقل حسب الشركة، حسب ميزانيات وزارة النقل، 2012-2017
+    (مقطعان)
+  unite_ar: عدد (الوحدة غير مذكورة في المصدر)
+  perimetre_ar: 'الجدول نفسه: الشركة الوطنية للسكك الحديدية، الشركات الجهوية للنقل،
+    شركة النقل بتونس'
+  caveats_ar: 'مقطعان لا يُربطان: طبعات 2013-2016 ثم طبعة 2017. لسنة 2016 قيمتان (565649
+    و433032) دون تفسير من المصدر. تقديرات واعتمادات لا إحصاء منجز. قُرئت من الصورة.'
+  fiche: sources/minfin-budget-transport.md
+- id: transport-transferts-par-entreprise
+  titre: Transferts du budget aux entreprises et établissements du ministère du Transport,
+    par nature (dont interventions), 2016-2024
+  sources:
+  - minfin-transferts-garanties
+  build: uv run python scripts/build_minfin_transferts_transport.py
+  raw:
+  - sources/transcriptions/minfin-transferts-transport.csv
+  output: data/processed/minfinances/transport_transferts_par_entreprise_2016_2024.csv
+  unite: milliers de dinars courants ; valeur_md en millions de dinars
+  perimetre: 'ministère des Finances, rapport sur les transferts et les garanties
+    (annexe 8 du projet de loi de finances), éditions LF 2020, LF 2022, LF 2024 et
+    LF 2025, tableaux annuels, bloc du ministère du Transport : total, investissements,
+    interventions, fonctionnement, rémunérations, pour la ligne du ministère et onze
+    ou douze entités ; une ligne par (édition, année, entité, nature) ; réalisations
+    2016-2023, loi de finances pour la dernière année de chaque édition (2019, 2021,
+    2023, 2024)'
+  caveats: '« INTERVENTIONS » N''EST PAS « COMPENSATION » : la colonne dépasse chaque
+    année le poste « transport » (réseau ferroviaire rapide, météorologie, entretien
+    du réseau ferré, apurements de dettes en 2017) ; rapprochement établi pour 2016
+    seulement, à 0,5 MD près. AUCUN RACCORD avec transport-soutien-par-societe. Toutes
+    les éditions gardées (`derniere_edition` ne préfère pas) ; loi de finances et
+    réalisations d''une même année diffèrent. Édition LF 2020 saisie à l''image :
+    groupes de chiffres imprimés à l''envers, restaurés et prouvés par les sommes
+    (`imprime`, `restauration`) ; en-têtes déplacés dans ses tableaux de 2018 et 2019
+    (`colonne_imprimee` ≠ `nature`). Éditions arabes : couche texte contrôlée par
+    les identités (ligne et bloc), deux pages relues à l''image. Écarts imprimés d''un
+    millier de dinars déclarés. Éditions LF 2021 et LF 2023 non transcrites.'
+  titre_ar: تحويلات الميزانية لفائدة المنشآت والمؤسسات الراجعة بالنظر لوزارة النقل
+    حسب الصنف (ومنها التدخلات)، 2016-2024
+  unite_ar: بحساب ألف دينار جارٍ؛ وبملايين الدنانير في عمود valeur_md
+  perimetre_ar: 'وزارة المالية، التقرير حول التحويلات والضمانات (الملحق عدد 8)، طبعات
+    قوانين المالية 2020 و2022 و2024 و2025، الجداول السنوية، قسم وزارة النقل: المجموع
+    والاستثمارات والتدخلات والتسيير والتأجير'
+  caveats_ar: '«التدخلات» ليست «دعم النقل»: العمود أوسع من بند النقل في نفقات الدعم.
+    لا ربط مع سلسلة دعم النقل العمومي حسب الشركة. تُحفظ كلّ الطبعات. طبعة 2020 قُرئت
+    من الصورة وبها أرقام مطبوعة معكوسة أُعيد ترتيبها. الطبعات العربية من الطبقة النصية
+    مع مراقبة المجاميع.'
+  fiche: sources/minfin-transferts-transport.md
+- id: jort-transport-tarifs-reperes
+  titre: 'Tarifs repères du transport public de personnes au Journal officiel : ticket
+    urbain par nombre de sections, abonnements ordinaire et scolaire, interurbain,
+    1987-2000'
+  sources:
+  - arrete-1987-02-14-tarifs-voyageurs
+  - arrete-1989-08-10-tarifs-urbains
+  - arrete-1989-08-10-tarifs-interurbains
+  - arrete-1990-07-30-tarifs-urbains
+  - arrete-1990-07-30-tarifs-interurbains
+  - arrete-1991-07-02-tarifs-urbains
+  - arrete-1991-07-02-tarifs-interurbains
+  - arrete-1992-08-24-tarifs-urbains
+  - arrete-1992-08-24-tarifs-interurbains
+  - arrete-1993-08-26-tarifs-urbains
+  - arrete-1993-08-26-tarifs-interurbains
+  - arrete-1998-04-27-tarifs-urbains
+  - arrete-1998-07-29-abonnements-scolaires
+  - arrete-1999-02-06-tarifs-interurbains
+  - arrete-2000-02-17-tarifs-urbains
+  build: uv run python scripts/build_jort_transport_tarifs.py
+  raw:
+  - sources/transcriptions/jort-transport-tarifs.csv
+  output: data/processed/jort/transport_tarifs_reperes_1987_2000.csv
+  unite: millimes (tickets, interurbain) ; dinars (abonnements) — colonne unite
+  perimetre: 'arrêtés du ministre du transport, JORT (édition française) : ticket
+    ordinaire de 1 à 5 sections et tarif réduit sur les réseaux des sociétés de transport
+    routier et du métro léger de Tunis (sociétés de Sfax et du Sahel exceptées) ;
+    abonnement annuel ordinaire d''une et de deux sections ; abonnement scolaire d''une
+    ligne urbaine et de la zone urbaine (réseau de la société nationale des transports)
+    ; interurbain par route (0-10 km, place-kilomètre de 10 à 150 km et au-delà) ;
+    une ligne par (tarif, texte), avec date d''effet et base de cette date'
+  caveats: 'TARIFS FIXÉS PAR ARRÊTÉ, non prix relevés. AUCUN RACCORD avec ins-bms-prix-transport
+    (relevé de l''INS depuis novembre 2007) : rien n''est établi entre février 2000
+    et novembre 2007, ni l''acte des relèvements de 2010 et 2021. DATES D''EFFET :
+    article du texte, sinon un jour franc après la publication (avant la loi n° 93-64)
+    ; VIDE pour les arrêtés du 26 août 1993 et du 17 février 2000 (cinq jours après
+    le dépôt du fascicule, date de dépôt non connue). Barèmes intermédiaires NON LUS
+    : arrêtés du 30 septembre 1989 et du 25 octobre 1990. Rien avant 1987. LU À L''IMAGE
+    (97 valeurs). Baisses imprimées en 1990 : abonnement annuel d''une section (112,500
+    → 112 D), abonnement scolaire de la zone urbaine (22,200 → 22,150 D).'
+  titre_ar: 'تعريفات مرجعية للنقل العمومي للأشخاص بالرائد الرسمي: التذكرة الحضرية
+    حسب عدد الأقسام، الاشتراك العادي والاشتراك المدرسي، النقل بين المدن، 1987-2000'
+  unite_ar: بالمليم (التذاكر والنقل بين المدن)؛ بالدينار (الاشتراكات)
+  perimetre_ar: 'قرارات وزير النقل المنشورة بالرائد الرسمي (الطبعة الفرنسية): التذكرة
+    العادية من قسم إلى خمسة أقسام والتعريفة المنخفضة، الاشتراك السنوي العادي، الاشتراك
+    المدرسي، تعريفة النقل بين المدن على الطرقات'
+  caveats_ar: تعريفات مضبوطة بقرار لا أسعار مرصودة. لا ربط مع سلسلة أسعار المعهد الوطني
+    للإحصاء. تاريخ النفاذ فارغ لقراري 26 أوت 1993 و17 فيفري 2000 لعدم معرفة تاريخ
+    إيداع العدد. قُرئت القيم كلّها من الصورة.
+  fiche: sources/jort-transport-tarifs.md
+- id: ins-bms-prix-transport
+  titre: 'Prix du transport public au relevé de l''INS à Tunis : billet d''autobus,
+    billet de train, abonnement, novembre 2007 – juillet 2026 (mensuel)'
+  sources:
+  - ins-bms
+  build: uv run python scripts/build_ins_bms_prix_transport.py
+  raw:
+  - sources/transcriptions/ins-bms-prix-transport.csv
+  output: data/processed/ins-bms/prix_transport_mensuel.csv
+  unite: millimes (billet d'autobus, billet de train) ; abonnement en dinars puis
+    en millimes, tel qu'imprimé
+  perimetre: 'INS, Bulletin mensuel de la statistique, tableau 9.1 « Prix moyen de
+    détail à Tunis », 213 numéros de novembre 2008 à juillet 2026 : lignes « Parcours
+    autobus » puis « Autobus / métro », « Billet de train 2ème classe » (à partir
+    du numéro de novembre 2010), « Abon scolaire (bus) » puis « Abonnement » ; une
+    ligne par (ligne, mois), valeur donnée quand tous les numéros qui attestent le
+    mois s''accordent ; toutes les attestations et les moyennes annuelles imprimées
+    dans prix_transport_attestations.csv'
+  caveats: 'L''INS NE DIT NI LE TRAJET DE SON BILLET D''AUTOBUS NI LA NATURE DE SON
+    ABONNEMENT. Le billet (450, puis 470 en août 2010, puis 500 en juin 2021) coïncide
+    avec le ticket de deux sections de la société de Tunis : C''EST UN RECOUPEMENT
+    (presse de 2021, Journal officiel de 1998-2000), NON UNE DÉFINITION PUBLIÉE. AUCUN
+    RACCORD avec jort-transport-tarifs-reperes : rien n''est établi entre février
+    2000 et novembre 2007. Billet d''autobus : 225 mois, tous les numéros d''accord,
+    moyennes annuelles imprimées cohérentes (458 en 2010, 488 en 2021) ; couche texte,
+    RELUE À L''IMAGE sur 18 numéros (au moins un mois par année, et juillet-août 2010,
+    mai-juin 2021). Novembre 2007 à octobre 2008 ne sont attestés que par les colonnes
+    rétrospectives des premiers numéros. Billet de train et abonnement : couche texte,
+    relue à l''image sur cinq numéros seulement. ABONNEMENT : UNITÉ PORTÉE LIGNE PAR
+    LIGNE (colonne `unite` : dinars jusqu''au numéro d''avril 2017, millimes ensuite,
+    « dinars et millimes » pour mai 2016 – avril 2017) — NE PAS TRACER `valeur` SANS
+    CONVERTIR ; LE FICHIER NE CHOISIT PAS — 48 mois où les numéros divergent (arrondi
+    au dinar, changement d''unité, révisions), `valeur` vide, `valeur_min` et `valeur_max`
+    renseignés ; ne se rapproche d''aucune ligne du barème de 1998.'
+  titre_ar: 'أسعار النقل العمومي حسب مسح الأسعار للمعهد الوطني للإحصاء بتونس العاصمة:
+    تذكرة الحافلة وتذكرة القطار والاشتراك، نوفمبر 2007 – جويلية 2026 (شهرياً)'
+  unite_ar: بالمليم (تذكرة الحافلة وتذكرة القطار)؛ الاشتراك بالدينار ثم بالمليم كما
+    هو مطبوع
+  perimetre_ar: المعهد الوطني للإحصاء، النشرة الشهرية للإحصاء، جدول معدل سعر التفصيل
+    بتونس العاصمة، 213 عدداً من نوفمبر 2008 إلى جويلية 2026
+  caveats_ar: 'لا يذكر المعهد المسافة التي توافق تذكرة الحافلة ولا طبيعة الاشتراك.
+    مطابقة التذكرة مع تعريفة القسمين مقاربة لا تعريف منشور. لا ربط مع تعريفات الرائد
+    الرسمي. تذكرة الحافلة: الأعداد كلّها متفقة، وقُرئت 18 عدداً من الصورة. الاشتراك:
+    لا يختار الملف عند اختلاف الأعداد.'
+  fiche: sources/ins-bms-prix-transport.md
+- id: bm-livre-blanc-2016-transport-trafic-comptes
+  titre: 'Société des transports de Tunis et SNCFT d''après le Livre blanc de la Banque
+    mondiale : voyageurs par catégorie 2007-2014, comptes d''exploitation de la société
+    de Tunis 2013-2014'
+  sources:
+  - banque-mondiale-2016-livre-blanc-transports
+  build: uv run python scripts/build_transport_trafic_comptes.py
+  raw:
+  - sources/transcriptions/transport-trafic-comptes.csv
+  output: data/processed/banque-mondiale/livre_blanc_2016_transport_trafic_comptes.csv
+  unite: millions de voyageurs (société de Tunis) ; milliers de voyageurs (SNCFT)
+    ; milliers de dinars courants (comptes) ; % — colonne unite
+  perimetre: 'Banque mondiale, Livre blanc relatif au secteur des transports et de
+    la logistique (rapport n° ACS18045, 18 mai 2016), annexe, p. PDF 72, 73 et 78
+    : société des transports de Tunis (autobus, métro, TGM) — voyageurs payants non
+    scolaires, scolaires, gratuits, total, part du scolaire, 2007-2014 ; produits
+    et charges d''exploitation, dont « compensation scolaire », 2013 et 2014 ; SNCFT
+    — voyageurs des grandes lignes et des banlieues, trafic scolaire, 2007-2014'
+  caveats: 'RAPPORT EXTÉRIEUR : la Banque reproduit des tableaux des sociétés (« TRANSTU
+    2015 », « Rapport Annuel TRANSTU 2014 », « SYSTRA 2012 & SNCFT 2015 ») SANS DIRE
+    la définition des catégories ni le mode de comptage ; ne pas mettre sur le même
+    plan que les séries budgétaires. AUCUN RACCORD avec minfin-entreprises-publiques-transport-trafic-comptes
+    (2016-2019) : 2015 et 2016 manquent, catégories différentes (« gratuit » contre
+    « au titre du transport collectif »). SNCFT : trafic scolaire de 2012 absent (tiret).
+    Identités contrôlées (catégories = total ; produits, charges, résultat ; grandes
+    lignes + banlieues = total). La compensation scolaire de 2013 et 2014 recoupe
+    les lignes de la société de Tunis au budget du ministère du Transport. LU À L''IMAGE.
+    Montants courants.'
+  titre_ar: 'شركة النقل بتونس والشركة الوطنية للسكك الحديدية حسب الكتاب الأبيض للبنك
+    الدولي: المسافرون حسب الصنف 2007-2014 وحسابات الاستغلال لشركة النقل بتونس 2013-2014'
+  unite_ar: بملايين المسافرين (شركة النقل بتونس)؛ بآلاف المسافرين (السكك الحديدية)؛
+    بألف دينار جارٍ (الحسابات)
+  perimetre_ar: 'البنك الدولي، الكتاب الأبيض لقطاع النقل واللوجستيك (2016)، الملحق:
+    مسافرو شركة النقل بتونس (بمقابل، مدرسي، مجاني) ومسافرو الشركة الوطنية للسكك الحديدية،
+    2007-2014'
+  caveats_ar: تقرير خارجي ينقل جداول الشركتين دون تعريف الأصناف ولا طريقة العدّ. لا
+    ربط مع سلسلة تقرير المنشآت العمومية (2016-2019). قُرئت القيم من الصورة.
+  fiche: sources/transport-trafic-comptes.md
+- id: minfin-entreprises-publiques-transport-trafic-comptes
+  titre: 'Société des transports de Tunis et SNCFT d''après le Rapport sur les entreprises
+    publiques : voyageurs, charges et produits d''exploitation, primes d''exploitation
+    de l''État, 2016-2019'
+  sources:
+  - minfin-entreprises-publiques-lf2020
+  - minfin-entreprises-publiques-lf2021
+  build: uv run python scripts/build_transport_trafic_comptes.py
+  raw:
+  - sources/transcriptions/transport-trafic-comptes.csv
+  output: data/processed/minfinances/transport_entreprises_publiques_trafic_comptes_2016_2019.csv
+  unite: millions de voyageurs ; millions de dinars courants — colonne unite
+  perimetre: 'ministère des Finances, Rapport sur les entreprises publiques (annexe
+    9 des projets de loi de finances 2020 et 2021), chiffres donnés dans le texte
+    : société des transports de Tunis — voyageurs 2017 et 2018, prévisions ventilées
+    2018 et 2019 (payants hors élèves et étudiants, élèves et étudiants, « au titre
+    du transport collectif »), charges et produits d''exploitation 2017-2019, primes
+    d''exploitation de l''État 2016-2018 ; SNCFT — voyageurs 2016-2019, charges et
+    produits d''exploitation, recettes voyageurs et indemnité de transport de l''État
+    2016-2017 ; une ligne par (édition, entité, indicateur, année, état), avec la
+    phrase citée'
+  caveats: 'CHIFFRES DU TEXTE, non d''un tableau ; « prévision » = conditionnel de
+    la source (dont 2019). Prévision et réalisé d''une même année gardés tous deux
+    (2018 : 244,3 prévus, 229,4 réalisés). Produits d''exploitation SUBVENTIONS COMPRISES.
+    AUCUN RACCORD avec bm-livre-blanc-2016-transport-trafic-comptes (2007-2014) :
+    années disjointes, catégories non définies et différentes. L''indemnité de transport
+    de la SNCFT (44,6 et 42,5 MD) ne redonne pas sa ligne au budget (50,5 et 50,0)
+    : écart non expliqué. Prime de maintenance du réseau (« autour de 15 MD ») non
+    versée. LU À L''IMAGE. Montants courants.'
+  titre_ar: 'شركة النقل بتونس والشركة الوطنية للسكك الحديدية حسب التقرير حول المنشآت
+    العمومية: المسافرون وأعباء وإيرادات الاستغلال ومنح الاستغلال من الدولة، 2016-2019'
+  unite_ar: بملايين المسافرين؛ بملايين الدنانير الجارية
+  perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9 لمشروعي
+    قانون المالية 2020 و2021)، أرقام واردة في النص
+  caveats_ar: أرقام من النص لا من جدول؛ «تقديرات» حين يستعمل المصدر صيغة الاحتمال.
+    لا ربط مع سلسلة الكتاب الأبيض (2007-2014). قُرئت القيم من الصورة.
+  fiche: sources/transport-trafic-comptes.md
