@@ -1,0 +1,17 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : zones-developpement-regional-delegations
+# sources (citation) : @decret-94-426-zones-developpement-regional, @decret-99-483-zones-developpement-regional, @decret-2008-387-zones-developpement-regional, @decret-gouv-2017-389-incitations-financieres, @decret-2024-182-incitations-financieres
+# fiches : 
+# méthode/hypothèses : Nombres comptés sur les listes des décrets, qui ne publient aucun décompte. Les listes de 1994 et de 1999 classent des gouvernorats entiers : elles ne se comptent pas en délégations, et leurs dates d'effet ne sont pas établies.
+# note : Les zones de développement régional : délégations classées par catégorie, listes de 1994, 1999, 2008, 2017 et 2024 (industrie, artisanat et services)
+Année,Date d'effet,Rang,Catégorie,Délégations,Gouvernorats,Liste dénombrable en délégations,Texte,Article
+1994,non établie,moins aidée,une seule catégorie : 12 gouvernorats entiers et 27 délégations de 6 autres,,,non,decret-94-426-zones-developpement-regional,annexe 1
+1999,non établie,moins aidée,« zones » : 13 délégations de 7 gouvernorats,13,7,non,decret-99-483-zones-developpement-regional,annexes 1 et 1 bis
+1999,non établie,plus aidée,« zones prioritaires » : 9 gouvernorats entiers et 43 délégations de 9 autres,,,non,decret-99-483-zones-developpement-regional,annexes 1 et 1 bis
+2008,2008-02-25,moins aidée,premier groupe,10,4,oui,decret-2008-387-zones-developpement-regional,annexe n° 1
+2008,2008-02-25,intermédiaire,deuxième groupe,40,10,oui,decret-2008-387-zones-developpement-regional,annexe n° 1
+2008,2008-02-25,plus aidée,zones prioritaires,88,16,oui,decret-2008-387-zones-developpement-regional,annexe n° 1
+2017,2017-01-01,moins aidée,premier groupe,13,4,oui,decret-gouv-2017-389-incitations-financieres,art. 29 et annexe n° 2
+2017,2017-01-01,plus aidée,deuxième groupe,134,17,oui,decret-gouv-2017-389-incitations-financieres,art. 29 et annexe n° 2
+2024,2024-04-10,moins aidée,premier groupe,13,,oui,decret-2024-182-incitations-financieres,art. 5
+2024,2024-04-10,plus aidée,deuxième groupe,135,,oui,decret-2024-182-incitations-financieres,art. 5

@@ -1,0 +1,31 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : regimes-incitation-frise, benefices-exportes-taux
+# sources (citation) : @loi-69-35-code-investissements, @loi-72-38-regime-exportation, @loi-74-74-industries-manufacturieres, @loi-93-120-code-incitations, @loi-2006-80-reduction-taux, @loi-2016-71-investissement, @loi-avantages-fiscaux-2017, @loi2018-56-lf2019, @loi-2019-47-climat-investissement, @decret-94-539-primes-developpement-regional, @loi-2007-70-lf-2008, @lf-2011, @dl-2011-56-lfc-2011, @lf-2013, @lf-2021, @lf-2025
+# fiches : 
+# méthode/hypothèses : Bornes en années, pour le tracé : les dates d'effet exactes sont au chapitre. Le texte qui met fin à la loi de 1972 et à celle de 1974 n'est pas identifié : leurs bandes s'arrêtent au code de 1993, et le tracé le signale., Seuls les taux qu'un texte fixe sont tracés. L'exonération de dix ans suivie d'un taux réduit (1972) et la déduction totale suivie d'une déduction de 50 % (1993) dépendent de l'âge de l'entreprise : elles sont écrites, non converties en taux.
+# note : Les régimes d'incitation à l'investissement, 1969-2026 : une bande par régime, et l'imposition des bénéfices tirés de l'exportation
+Régime,Règle,Début,Fin,État,Taux (%),Texte,Article
+Code des investissements de 1969,avantage gradué selon la taille : exonération de patente de trois à cinq ans,1969,1993,en vigueur,,loi-69-35-code-investissements,art. 8 et 10 à 14
+Exportation,loi de 1972 : exonération dix ans puis patente à 10 % dix ans,1972,1993,fin non établie,,loi-72-38-regime-exportation,art. 3
+Exportation,code de 1993 : déduction totale dix ans puis déduction de 50 %,1994,2013,en vigueur,,loi-93-120-code-incitations,art. 12
+Exportation,bénéfices imposés à 10 %,2014,2018,en vigueur,,loi-2006-80-reduction-taux,art. 5 et 6
+Exportation,régime abrogé et maintenu aux entreprises en activité,2019,2020,droits acquis,,loi2018-56-lf2019,art. 37 et 41
+Marché intérieur (industries manufacturières),loi de 1974 : exonération partielle de patente cinq ans selon l'emploi créé,1974,1993,fin non établie,,loi-74-74-industries-manufacturieres,art. 7 à 16
+Développement régional,code de 1993 : déduction totale dix ans puis déduction de 50 % dix ans,1994,2016,en vigueur,,loi-93-120-code-incitations,art. 23
+Développement régional,code de l'impôt : déduction totale cinq ou dix ans puis taux de 10 %,2017,2026,en vigueur,,loi-avantages-fiscaux-2017,art. 1 (art. 63 et 64 nouveaux du code)
+Agriculture et pêche,code de 1993 : déduction totale dix ans,1994,2016,en vigueur,,loi-93-120-code-incitations,art. 30
+Agriculture et pêche,code de l'impôt : déduction totale dix ans puis taux de 10 %,2017,2026,en vigueur,,loi-avantages-fiscaux-2017,art. 1 (art. 65 et 66 nouveaux du code)
+Entreprises nouvelles,"code de l'impôt : déduction de 100 %, 75 %, 50 % et 25 % sur quatre ans",2017,2026,en vigueur,,loi-avantages-fiscaux-2017,art. 1 (art. 71 nouveau du code)
+Primes versées par le budget,code de 1993 : prime de développement régional et prises en charge,1994,2016,en vigueur,,decret-94-539-primes-developpement-regional,art. 3 et 4
+Primes versées par le budget,loi de l'investissement : quatre primes,2017,2026,en vigueur,,loi-2016-71-investissement,art. 19
+Droits acquis du code de 1993,code abrogé ; droits acquis ouverts jusqu'à la fin de 2020,2017,2020,droits acquis,,loi-2019-47-climat-investissement,art. 38
+Imposition des bénéfices tirés de l'exportation,exonération de patente pendant dix ans puis patente au taux réduit de 10 % pendant dix ans (date d'effet de la loi non établie),1972-04-27,1993-12-31,règle sans taux unique,,loi-72-38-regime-exportation,art. 3
+Imposition des bénéfices tirés de l'exportation,déduction totale pendant dix ans puis déduction de 50 % des bénéfices,1994-01-01,2013-12-31,règle sans taux unique,,loi-93-120-code-incitations,art. 12
+Imposition des bénéfices tirés de l'exportation,impôt sur les sociétés à 10 % voté pour le 1er janvier 2008,2008-01-01,,voté puis reporté,10,loi-2006-80-reduction-taux,art. 5 et 6
+Imposition des bénéfices tirés de l'exportation,échéance reportée au 1er janvier 2011,2011-01-01,,voté puis reporté,10,loi-2007-70-lf-2008,art. 12
+Imposition des bénéfices tirés de l'exportation,échéance reportée au 1er janvier 2012,2012-01-01,,voté puis reporté,10,lf-2011,art. 24
+Imposition des bénéfices tirés de l'exportation,échéance reportée au 1er janvier 2013,2013-01-01,,voté puis reporté,10,dl-2011-56-lfc-2011,art. 11
+Imposition des bénéfices tirés de l'exportation,impôt sur les sociétés à 10 % sur les bénéfices de l'exportation ; régime abrogé au 1er janvier 2019 et maintenu jusqu'au 31 décembre 2020 aux entreprises en activité,2014-01-01,2020-12-31,appliqué,10,lf-2013,art. 20
+Imposition des bénéfices tirés de l'exportation,"palier de 13,5 % voté en 2018 pour 2021 et abrogé avant d'avoir régi un exercice",2021-01-01,,voté puis abrogé,"13,5",loi2018-56-lf2019,art. 14 et 18
+Imposition des bénéfices tirés de l'exportation,taux de droit commun de l'impôt sur les sociétés,2021-01-01,2023-12-31,droit commun,15,lf-2021,art. 14
+Imposition des bénéfices tirés de l'exportation,taux de droit commun de l'impôt sur les sociétés,2024-01-01,,droit commun,20,lf-2025,art. 37

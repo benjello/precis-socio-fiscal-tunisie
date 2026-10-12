@@ -1,0 +1,5 @@
+series: [depenses-fiscales-par-rapport]
+sources: [gbo-depenses-fiscales, minfin-depenses-fiscales-plf2022, minfin-depenses-fiscales-plf2023, minfin-recettes-fiscales, ins-cnat-2015]
+fiches: []
+caveats: [Une lecture par rapport, sans chaînage : les rapports se révisent et n'ont pas le même périmètre (médicaments et engrais exclus à partir du rapport pour 2024). Les rapports pour 2022 et 2023 ne sont connus que par leur total d'introduction. Les parts sont calculées ici ; celles qu'imprime chaque rapport, sans dire son dénominateur, sont données à côté.]
+generated: 2026-10-11

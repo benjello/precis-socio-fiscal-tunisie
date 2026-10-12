@@ -102,7 +102,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
@@ -356,9 +356,12 @@ liste qui suit le tableau, citations comprises. Restent :
   estimations antérieures), chacune avec sa méthode. Disponibilités ci-dessous contrôlées le
   6 octobre 2026 (présence du fichier, `pdftotext` sur le fascicule entier) ; la page de
   l'article n'a pas été ouverte. Restent :
-  - **AR** : déclarer `_depenses_fiscales.qmd` dans `precis/ar/fiscalite/_quarto.yml`
-    (ligne commentée en place, après `_droits_consommation.qmd`) dès que la traduction est
-    livrée ;
+  - **AR** : déclarer `_regimes_incitation.qmd` PUIS `_depenses_fiscales.qmd` dans
+    `precis/ar/fiscalite/_quarto.yml` (ligne commentée en place, après
+    `_droits_consommation.qmd`), les deux ensemble et seulement quand les deux traductions
+    sont livrées : `_depenses_fiscales.qmd` renvoie à des ancres parties dans
+    `_regimes_incitation.qmd` (`sec-df-sommes-versees`, `sec-df-etudes`, `tbl-df-bm-cout`,
+    `tbl-df-reports`…), qui ne se résolvent pas sans lui ;
   - **clés à verser (bibliographe)** : loi n° 69-35 (JORT n° 24 de 1969, p. 766-769) et loi
     n° 74-74 (JORT n° 51 de 1974, p. 1744-1746), citées en clair au chapitre faute de clé ;
     ébauches au § 10.1 e de la note ;
@@ -419,8 +422,13 @@ liste qui suit le tableau, citations comprises. Restent :
     2025 excluent les exonérations des médicaments et des engrais, que le rapport 2021
     compte (274,5 et 249,9 MD en 2019). Les deux CSV traités de `tunisia-data` cousent trois
     rapports sur cinq et portent cette rupture à la couture 2019/2020 ; le périmètre des
-    rapports 2022 et 2023 reste à lire. `figures/depenses_fiscales.py` n'est donc pas appelé
-    (docstring corrigé le 6 octobre 2026, code inchangé) et aucune figure n'est publiée.
+    rapports 2022 et 2023 reste à lire. `figures/depenses_fiscales.py` (les huit plus gros
+    dispositifs) n'est donc pas appelé. Depuis le 11 octobre 2026, `fig-df-total`
+    (`figures/depenses_fiscales_total.py`) publie le total par impôt **rapport par rapport,
+    sans chaînage**, en MD, en % des recettes fiscales et en % du PIB (INS, base 2015, non
+    rétropolé), les rapports 2022 et 2023 n'y figurant que par leur total d'introduction ;
+    les parts sont calculées, et ne coïncident pas toujours avec celles qu'impriment les
+    rapports (dénominateurs à établir : voir le TODO de `@sec-df-total`).
     La fiche `~/projets/tunisia-data/sources/gbo-depenses-fiscales.md` ne mentionne pas
     cette exclusion : à corriger dans ce dépôt-là ;
   - **écart sur l'exercice 2021** : 7 745 MD (rapport 2023) contre 5 871,5 et 5 872,3 MD
@@ -440,8 +448,27 @@ liste qui suit le tableau, citations comprises. Restent :
     relever sur l'image ;
   - **à croiser avec « Cotisations sociales »** : coût des prises en charge de cotisations
     patronales (code de 1993, art. 25 ; loi n° 99-59, connue par son intitulé).
-- **Primes, zones, sommes versées, commerce extérieur par régime (`_depenses_fiscales.qmd`,
-  11 octobre 2026)** sur la note `docs/notes/fiscalite-incitations-primes-zones-2026-10-11.md`
+- **Scission en deux chapitres, au format « ruptures au premier plan » (11 octobre 2026)** :
+  `_regimes_incitation.qmd` (nouveau : vue d'ensemble, mise en place 1969-1974, grandes
+  réformes, état du droit en 2026, sommes versées et FOPRODI, commerce extérieur, études
+  extérieures) et `_depenses_fiscales.qmd` (resserré : la mesure du ministère des Finances).
+  Toutes les ancres `sec-df-…`, `tbl-df-…` et `fig-df-…` gardent leur nom ; les sections
+  sont à domicile unique (registres `r-ri-…` et `r-df-…`). Quatre relevés versionnés dans
+  `precis/fr/fiscalite/incitations/` alimentent les figures du texte (`fig-ri-frise`,
+  `fig-ri-prime`, `fig-ri-zones`, `fig-ri-ghazouani`). Restent :
+  - **ce que la loi cherche** : rubrique de l'article 37 de la loi de finances pour 2019
+    (fin du régime de l'exportation) et des articles 5 et 6 de la loi n° 2006-80, à relever
+    au fascicule (JORT lisibles au corpus, non ouverts pour cela) ;
+  - **figures écartées** : sommes versées « un point par rapport » (un à trois points par
+    périmètre : le tableau une colonne par rapport suffit) ; carte des délégations de 2017
+    (demande un fond de carte des délégations) ; budgétaire et études sur un même graphique
+    (périmètres à dire sur la figure) ;
+  - **dinars constants** : plafonds des primes et sommes versées en dinars courants
+    seulement — le chapitre n'a pas d'année de référence (point à trancher) ;
+  - **tableaux faits main** des barèmes des primes (`tbl-df-primes-…`) : à engendrer quand
+    les paramètres seront datés en amont.
+- **Primes, zones, sommes versées, commerce extérieur par régime (`_regimes_incitation.qmd`
+  depuis la scission ; écrit dans `_depenses_fiscales.qmd` le 11 octobre 2026)** sur la note `docs/notes/fiscalite-incitations-primes-zones-2026-10-11.md`
   et les séries `gbo-avantages-financiers-par-rapport`, `bct-foprodi-fonapra` et
   `ins-commerce-exterieur-par-regime` de `tunisia-data` (qui font foi quand elles divergent
   de la note). Écrit : `@sec-df-loi-2019-47` (portée fiscale et financière de la loi
@@ -1557,7 +1584,7 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 
 6. Droits d'enregistrement et de timbre ; fiscalité des mutations immobilières.
 7. Droits de douane.
-8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — **chapitre créé le 6 octobre 2026** (`fiscalite/_depenses_fiscales.qmd`) ; lacunes dans la section « Fiscalité » ci-dessus.
+8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — **chapitre créé le 6 octobre 2026, scindé le 11 octobre 2026** (`fiscalite/_regimes_incitation.qmd` et `fiscalite/_depenses_fiscales.qmd`) ; lacunes dans la section « Fiscalité » ci-dessus.
 9. Fiscalité de l'épargne et du capital : retenues libératoires sur les revenus de capitaux mobiliers, plus-values mobilières, épargne exonérée.
 10. Taxes affectées et contributions exceptionnelles (contribution conjoncturelle, contribution au budget de l'État de 2014, FODEC, vignette).
 

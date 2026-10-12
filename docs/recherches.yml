@@ -2250,9 +2250,10 @@
   a_faire:
   - jouer le plein texte (« manque à gagner », « droit sur le transport collectif ») sur les fascicules de 2004 à 2026
   - lire l'arrêté du 15 août 2011 sur la gratuité des agents des forces de sûreté intérieure relevant du ministère de la justice, visé par le décret n° 2017-987
+
 - id: r-fisc-art63-decret-zones
   objet: décret gouvernemental fixant, pour l'article 63 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés (loi n° 2017-8, art. 1er), la liste des zones de développement régional et des activités exclues — soit un texte propre, soit la confirmation par un texte que l'annexe n° 2 du décret gouvernemental n° 2017-389 en tient lieu
-  ou: [precis/fr/fiscalite/_depenses_fiscales.qmd#sec-df-zones-carte]
+  ou: [precis/fr/fiscalite/_regimes_incitation.qmd#sec-df-zones-carte]
   requetes:
     titres_like: ['%zones de developpement regional%', '%2017-389%']
     iort_ar: [مناطق التنمية الجهوية, 389 لسنة 2017]
@@ -2271,7 +2272,7 @@
 
 - id: r-fisc-zones-modif-99-483
   objet: texte modifiant la délimitation des zones d'encouragement au développement régional (décret n° 99-483) entre le décret n° 2008-387 du 11 février 2008 et l'abrogation du code de 1993
-  ou: [precis/fr/fiscalite/_depenses_fiscales.qmd#sec-df-zones-carte]
+  ou: [precis/fr/fiscalite/_regimes_incitation.qmd#sec-df-zones-carte]
   requetes:
     titres_like: ['%developpement regional%zones%', '%developpement regional%prime%', '%99-483%']
     iort_ar: [483 لسنة 1999, 539 لسنة 1994, التنمية الجهوية]
@@ -2290,7 +2291,7 @@
 
 - id: r-fisc-modificatifs-2017-389
   objet: texte modifiant le décret gouvernemental n° 2017-389 du 9 mars 2017 (barème des primes, annexes, zones), autre que le décret n° 2024-182 du 4 avril 2024
-  ou: [precis/fr/fiscalite/_depenses_fiscales.qmd#sec-df-primes-bareme]
+  ou: [precis/fr/fiscalite/_regimes_incitation.qmd#sec-df-primes-bareme]
   requetes:
     titres_like: ['%2017-389%', '%incitations financi%']
     iort_ar: [389 لسنة 2017, الحوافز المالية]
