@@ -2222,7 +2222,7 @@ séries versées dans `tunisia-data` (fiche `sources/compensation-transport.md`)
 une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
 
 - **Plan** : vue d'ensemble (`#sec-compensation-transport-vue`) ; mise en place 1948-1983
-  (`-mise-en-place`) ; grandes réformes 1984, 1987-1995, 1985, 2001, 2004, 2017 (`-reformes`, une
+  (`-mise-en-place`) ; grandes réformes 1984, 1985, 1987-1995, 2001, 2004, 2017 (`-reformes`, une
   sous-section par date ; `-1987` ajoutée le 13 octobre 2026 sur
   `docs/notes/compensation-transport-second-passage-2026-10-12.md`) ; état du droit en octobre 2026 (`-etat-du-droit`) ; tarifs et
   abonnements (`-tarifs`) ; abonnement scolaire (`-scolaire`) ; gratuités et réductions
