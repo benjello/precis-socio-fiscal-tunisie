@@ -1,0 +1,12 @@
+- libelle: Contribution aux parkings collectifs, barème de 1997 — plus de 20 000 et
+    au plus 50 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_1997/population_20000_a_50000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_1997.population_20000_a_50000/table/
+- libelle: Contribution aux parkings collectifs, barème de 1997 — plus de 50 000 et
+    au plus 100 000 habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_1997/population_50000_a_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_1997.population_50000_a_100000/table/
+- libelle: Contribution aux parkings collectifs, barème de 1997 — plus de 100 000
+    habitants
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_1997/population_plus_de_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_locale.contribution_parkings.bareme_1997.population_plus_de_100000/table/

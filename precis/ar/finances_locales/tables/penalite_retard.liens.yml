@@ -1,0 +1,7 @@
+- libelle: النسبة الشهرية لخطية التأخير للمعلوم على العقارات المبنية
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/penalite_retard/taux_mensuel.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_immeubles_batis.penalite_retard.taux_mensuel/table/
+- libelle: الحد الأقصى لمجموع خطايا التأخير للمعلوم على العقارات المبنية، نسبةً من
+    أصل الدين
+  parametre: parameters/fiscalite_locale/taxe_immeubles_batis/penalite_retard/plafond_part_principal.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.taxe_immeubles_batis.penalite_retard.plafond_part_principal/table/

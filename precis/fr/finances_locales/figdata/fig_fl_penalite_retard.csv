@@ -1,0 +1,11 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : fl-tib-penalite-retard
+# sources (citation) : @loi97-11, @loi2001-123-lf2002, @lf-2007, @lf-2023
+# fiches : 
+# méthode/hypothèses : le plafond du total des pénalités au principal, depuis le 1er janvier 2022, n'est pas un taux et n'est pas dans la série ; la portée, pour une taxe recouvrée par voie de rôle, de la réserve dont le texte de 2023 assortit son relèvement n'est pas établie ; aucun texte postérieur n'étant identifié, le palier de 2023 est prolongé jusqu'en 2026
+# note : Taux de la pénalité de retard de la taxe sur les immeubles bâtis, en % par mois ou fraction de mois de retard, à ses dates d'effet, 1997-2026 (valeurs et plafond de 2022 au @tbl-fl-penalite-retard)
+Grandeur,Date d'effet,Valeur,Ce que fait le texte,Texte,Journal officiel
+Taux de la pénalité de retard,1997-01-01,1.25,fixe la valeur,"Code de la fiscalité locale, article 19, paragraphe I ; loi n° 97-11 du 3 février 1997, portant promulgation du code de la fiscalité locale, article 3",https://www.pist.tn/jort/1997/1997F/Jo01197.pdf
+Taux de la pénalité de retard,2002-01-01,1.0,change la valeur,"Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, articles 87 et 97",https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+Taux de la pénalité de retard,2007-01-01,0.75,change la valeur,"Loi n° 2006-85 du 25 décembre 2006, portant loi de finances pour l'année 2007, articles 54 et 88",https://www.pist.tn/jort/2006/2006F/Jo1032006.pdf
+Taux de la pénalité de retard,2023-01-01,1.25,change la valeur,"Décret-loi n° 2022-79 du 22 décembre 2022, portant loi de finances pour l'année 2023, article 59, paragraphes 7 et 10, et article 76",https://www.pist.tn/jort/2022/2022A/Ja1412022.pdf

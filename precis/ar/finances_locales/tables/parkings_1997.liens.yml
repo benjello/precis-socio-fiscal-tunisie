@@ -1,0 +1,11 @@
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 1997 — أكثر من 20 000 ساكن دون أن يتجاوز
+    50 000
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_1997/population_20000_a_50000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_1997.population_20000_a_50000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 1997 — أكثر من 50 000 ساكن دون أن يتجاوز
+    100 000
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_1997/population_50000_a_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_1997.population_50000_a_100000/table/
+- libelle: المساهمة في إنجاز مآوي جماعية، جدول 1997 — أكثر من 100 000 ساكن
+  parametre: parameters/fiscalite_locale/contribution_parkings/bareme_1997/population_plus_de_100000.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_locale.contribution_parkings.bareme_1997.population_plus_de_100000/table/

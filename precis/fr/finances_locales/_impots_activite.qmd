@@ -309,36 +309,37 @@ Cette partie réunit la taxe hôtelière, impôt distinct que le code construit 
 
 ### La taxe hôtelière {#sec-fl-taxe-hoteliere-1997}
 
-[]{#sec-fl-taxe-hoteliere-reformes}La taxe hôtelière est due par les exploitants des établissements touristiques, à la place de la taxe sur les établissements et de la taxe sur les immeubles bâtis : 2 % de leur chiffre d'affaires brut global, dont la moitié du produit va à un fonds du Trésor (@tbl-fl-taxe-hoteliere).
+[]{#sec-fl-taxe-hoteliere-reformes}La taxe hôtelière est due par les exploitants des établissements touristiques, à la place de la taxe sur les établissements et de la taxe sur les immeubles bâtis : 2 % de leur chiffre d'affaires brut global. La moitié de la taxe acquittée par les hôtels des zones touristiques municipales va à un fonds du Trésor (@tbl-fl-taxe-hoteliere).
 
 | Objet | Règle | Depuis le |
 |---|---|---|
 | Assiette et taux | 2 % du chiffre d'affaires brut global des établissements touristiques | [[1^er^ janvier 1997]{.insecable}](#r-fl-act-hoteliere-1997) |
-| Affectation du produit | la moitié au fonds spécial du Trésor pour la protection des zones touristiques | [[1^er^ janvier 1997]{.insecable}](#r-fl-act-hoteliere-fonds) |
+| Affectation du produit | la moitié de la taxe acquittée par les hôtels situés dans les zones touristiques municipales, au Fonds de protection des zones touristiques, fonds spécial du Trésor | [[1^er^ janvier 1997]{.insecable}](#r-fl-act-hoteliere-fonds) |
 
 : La taxe hôtelière : assiette, taux et affectation du produit {#tbl-fl-taxe-hoteliere}
 
-<!-- TODO (rédacteur) : tableau gardé fait main le 11 octobre 2026, alors que ses deux valeurs sont datées et sourcées dans la base de paramètres (openfisca-tunisia 0.133, `fiscalite_locale/taxe_hoteliere/taux` et `…/part_affectee_fonds`, comparées et identiques : 2 % et 50 % au 1er janvier 1997). La forme commune des tableaux engendrés a une ancre de registre et une unité par colonne de date ; les deux lignes ont chacune leur ligne de registre (`r-fl-act-hoteliere-1997`, `r-fl-act-hoteliere-fonds`) et leur base (le chiffre d'affaires, le produit de la taxe). À engendrer quand une date d'effet s'ajoutera à l'une des deux séries. -->
+<!-- TODO (rédacteur) : tableau gardé fait main le 11 octobre 2026, alors que ses deux valeurs sont datées et sourcées dans la base de paramètres (openfisca-tunisia 0.134, `fiscalite_locale/taxe_hoteliere/taux` et `…/part_affectee_fonds`, comparées et identiques : 2 % du chiffre d'affaires, et 50 % de la taxe acquittée par les hôtels des zones touristiques municipales, au 1er janvier 1997). La forme commune des tableaux engendrés a une ancre de registre et une unité par colonne de date ; les deux lignes ont chacune leur ligne de registre (`r-fl-act-hoteliere-1997`, `r-fl-act-hoteliere-fonds`) et leur base (le chiffre d'affaires, le produit de la taxe). À engendrer quand une date d'effet s'ajoutera à l'une des deux séries. -->
 
 - **Qui paie.** Les exploitants des établissements touristiques au sens de la législation en vigueur ; ils sont exonérés de la taxe sur les établissements et de la taxe sur les immeubles bâtis ([articles 36 et 1^er^](#r-fl-act-hoteliere-exonerations)). Le recouvrement, le contrôle et le contentieux suivent les règles de la taxe sur les établissements ([articles 44 et 45](#r-fl-act-hoteliere-regles)).
-- **La moitié du produit à un fonds du Trésor.** [La loi de finances pour 1997](#r-fl-act-hoteliere-fonds) l'affecte au fonds spécial du Trésor pour la protection des zones touristiques.
+- **La moitié de la taxe des hôtels des zones touristiques à un fonds du Trésor.** [La loi de finances pour 1993](#r-fl-act-hoteliere-fonds-1993) ouvre le « Fonds de Protection des zones touristiques », fonds spécial du Trésor, et lui affecte 50 % du produit de la taxe hôtelière « acquittée par les exploitants des hôtels situés dans les zones touristiques municipales », dont un décret fixe la liste. [La loi de finances pour 1997](#r-fl-act-hoteliere-fonds) n'en récrit que le début, pour viser la taxe hôtelière du code à la place de celle de 1975, et laisse « le reste sans changement » : la part ne porte pas sur tout le produit de la taxe, mais sur celle des hôtels de ces zones.
 - **Un taux doublé en 1997, inchangé depuis.** [La loi du 14 mai 1975](#r-fl-act-hoteliere-1975) fixait la taxe à 1 % des recettes brutes de l'hôtel, spectacles exceptés. Aucune modification des articles 41 à 45 du code n'est identifiée ici depuis 1997 : en l'état des textes identifiés, la taxe hôtelière garde son assiette et son taux de 1997. Son produit est lu avec celui de la taxe sur les établissements (@fig-fl-activite-rendement).
 
 <!-- RECHERCHE r-cfl-taxe-hoteliere-modificatifs : texte modifiant les art. 41 à 45 du code de la fiscalité locale (voir docs/recherches.yml) -->
 
-<!-- TODO (documentaliste) : lire l'art. 39 de la loi n° 92-122 (LF 1993) dans sa rédaction initiale, et les décrets fixant les zones municipales touristiques (décret n° 94-822 et ses compléments), pour dater la part affectée au fonds avant 1997 et le périmètre des zones. -->
+<!-- TODO (documentaliste) : les art. 38 et 39 de la loi n° 92-122 (LF 1993) sont lus dans leur rédaction initiale (édition française, JORT n° 88 du 31 décembre 1992, p. 1670, à l'image) : la part de 50 % existe dès cette loi. Restent à établir : la date d'effet de ces deux articles ; l'art. 40 de la même loi (emploi du fonds : aides aux communes où ces zones sont situées, pour la propreté et l'assainissement), à lire avant de le porter au texte ; l'édition arabe, non relue ; les décrets fixant les zones touristiques municipales (décret n° 94-822 et ses compléments), pour le périmètre des zones. -->
 
-:::: {.chronologie-repliable titre="Taxe hôtelière : loi de 1975, articles du code de 1997 et loi de finances pour 1997, articles et pages"}
+:::: {.chronologie-repliable titre="Taxe hôtelière : loi de 1975, loi de finances pour 1993, articles du code de 1997 et loi de finances pour 1997, articles et pages"}
 
 | Date d'effet | Portée | Texte et article | Ce que dit l'article |
 |---|---|---|---|
 | []{#r-fl-act-hoteliere-1975}— | point de départ | loi n° 75-34 du 14 mai 1975 [@loi75-34, art. 3 et 4, p. 1065] | recettes brutes de l'exploitation de l'hôtel et de ses activités annexes, spectacles exceptés ; 1 % |
+| []{#r-fl-act-hoteliere-fonds-1993}— | point de départ | loi de finances pour 1993 [@lf-1993, art. 38 et 39, p. 1670] | hors code, rubrique « Institution d'un fonds spécial du trésor pour la protection des zones touristiques » : ouverture du « Fonds de Protection des zones touristiques », fonds spécial du Trésor (art. 38) ; lui revient 50 % du produit de la taxe hôtelière de la loi n° 75-34 « acquittée par les exploitants des hôtels situés dans les zones touristiques municipales », dont la liste est fixée par décret (art. 39, premier tiret) |
 | []{#r-fl-act-hoteliere-1997}[1^er^ janvier 1997]{.insecable} | **rupture** — le taux doublé | code, art. 41 à 43 [@loi97-11, art. 41-43 ; @loi97-11, art. 42 et 43] | exploitants des établissements touristiques ; chiffre d'affaires brut global ; 2 % |
 | []{#r-fl-act-hoteliere-regles}[1^er^ janvier 1997]{.insecable} | point de départ | code, art. 44 et 45 [@loi97-11, art. 44-45] | recouvrement, contrôle, contentieux, sanctions et prescription : règles de la taxe sur les établissements |
 | []{#r-fl-act-hoteliere-exonerations}[1^er^ janvier 1997]{.insecable} | point de départ | code, art. 36 et 1^er^ [@loi97-11, art. 36 ; @loi97-11, art. 1] | établissements soumis à la taxe hôtelière exonérés de la taxe sur les établissements et de la taxe sur les immeubles bâtis |
-| []{#r-fl-act-hoteliere-fonds}[1^er^ janvier 1997]{.insecable} | point de départ | loi de finances pour 1997 [@lf-1997, art. 53, p. 2583] | hors code : moitié du produit de la taxe hôtelière affectée au fonds spécial du Trésor pour la protection des zones touristiques, par modification de l'art. 39 de la loi de finances pour 1993 ; la loi entre en vigueur en même temps que le code |
+| []{#r-fl-act-hoteliere-fonds}[1^er^ janvier 1997]{.insecable} | ajustement | loi de finances pour 1997 [@lf-1997, art. 53, p. 2583] | hors code : début du premier tiret de l'art. 39 de la loi de finances pour 1993 récrit — la taxe hôtelière « instituée au profit des collectivités locales en vertu de la législation en vigueur » à la place de celle de la loi n° 75-34 —, « le reste sans changement » : la part de 50 % reste celle de la taxe acquittée par les hôtels des zones touristiques municipales ; la loi entre en vigueur en même temps que le code |
 
-: La taxe hôtelière : textes de 1975 et de 1997 {#tbl-fl-taxe-hoteliere-textes}
+: La taxe hôtelière : textes de 1975, de 1992 et de 1997 {#tbl-fl-taxe-hoteliere-textes}
 
 ::::
 
@@ -346,20 +347,25 @@ Cette partie réunit la taxe hôtelière, impôt distinct que le code construit 
 
 Ces régimes relèvent de l'impôt sur le revenu, exposé dans le volume « La fiscalité » ([chapitre de l'impôt sur le revenu des personnes physiques](../fiscalite/_impot_revenu.html#sec-irpp)).
 
-Quatre catégories de petits contribuables ne calculent pas la taxe sur leur chiffre d'affaires : elle est une fraction de leur impôt, ou comprise dans un montant unique (@tbl-fl-tcl-forfaits).
+Depuis 1997, quatre régimes dispensent de petits contribuables de calculer la taxe sur leur chiffre d'affaires : elle est une fraction de leur impôt, ou comprise dans un montant unique ; celui de 2019 est abrogé au 1^er^ janvier 2023 (@tbl-fl-tcl-forfaits).
 
-| Depuis le | Contribuables | Ce que devient la taxe |
+| En vigueur | Contribuables | Ce que devient la taxe |
 |---|---|---|
-| [[1^er^ janvier 1997]{.insecable}](#r-fl-act-forfait-1997) | forfaitaires de l'article 44 § IV du code de l'impôt sur le revenu et de l'impôt sur les sociétés, puis de l'article 44 bis depuis 2013 | 25 % de l'impôt, payée avec lui |
-| [[1^er^ janvier 2011]{.insecable}](#r-fl-act-forfait-2011) | contribuables du régime forfaitaire de l'article 44 quater du même code | comprise dans l'impôt forfaitaire |
-| [[1^er^ janvier 2019]{.insecable}](#r-fl-act-forfait-2019) | petits exploitants à revenu irrégulier qui se déclarent spontanément | comprise dans leur contribution unique |
-| [[1^er^ janvier 2023]{.insecable}](#r-fl-act-forfait-2023) | auto-entrepreneurs | comprise dans leur contribution unique, à raison de 20 % de l'impôt sur le revenu, sans minimum |
+| depuis le [[1^er^ janvier 1997]{.insecable}](#r-fl-act-forfait-1997) | forfaitaires de l'article 44 § IV du code de l'impôt sur le revenu et de l'impôt sur les sociétés, puis de l'article 44 bis depuis 2013 | 25 % de l'impôt, payée avec lui |
+| depuis le [[1^er^ janvier 2011]{.insecable}](#r-fl-act-forfait-2011) | contribuables du régime forfaitaire de l'article 44 quater du même code | comprise dans l'impôt forfaitaire |
+| du [[1^er^ janvier 2019]{.insecable}](#r-fl-act-forfait-2019) au [[31 décembre 2022]{.insecable}](#r-fl-act-forfait-2023) | petits exploitants à revenu irrégulier qui se déclarent spontanément | comprise dans leur contribution unique |
+| depuis le [[1^er^ janvier 2023]{.insecable}](#r-fl-act-forfait-2023) | auto-entrepreneurs | comprise dans leur contribution unique, à raison de 20 % de l'impôt sur le revenu, sans minimum |
 
 : Les forfaits et contributions uniques qui comprennent la taxe sur les établissements, 1997-2023 {#tbl-fl-tcl-forfaits}
 
 Les trois régimes de 2011, 2019 et 2023 sont créés dans la législation de l'impôt sur le revenu ; chacun dit que son impôt ou sa contribution « comprend » la taxe.
 
-<!-- TODO (documentaliste) : lire l'art. 7 du décret-loi n° 2020-33 (auto-entrepreneur) dans sa rédaction initiale, pour savoir si la contribution unique comprenait déjà la TCL avant 2023. -->
+- **L'auto-entrepreneur, d'abord dispensé.** [Le décret-loi du 10 juin 2020](#r-fl-act-forfait-2023) qui crée son régime ne comprend pas la taxe dans la contribution unique et le dispense de la payer. [La loi de finances pour 2023](#r-fl-act-forfait-2023) supprime cette dispense : 20 % de l'impôt sur le revenu compris dans la contribution unique tiennent lieu de taxe, sans égard à son minimum.
+- **La contribution unique de 2019, abrogée.** La même loi abroge la contribution unique des petits exploitants [instituée en 2019](#r-fl-act-forfait-2019).
+
+<!-- TODO (rédacteur) : tableau gardé fait main le 11 octobre 2026. La base de paramètres ne chiffre qu'une de ses lignes (openfisca-tunisia 0.134, `fiscalite_locale/taxe_etablissements/part_impot_auto_entrepreneur` : 20 % au 1er janvier 2023, comparé et identique) ; la part de 25 % des forfaitaires et les deux régimes qui « comprennent » la taxe sans en chiffrer la part n'y sont pas. À remplacer par un tableau engendré si ces lignes y entrent. -->
+
+<!-- TODO (documentaliste) : relire à l'image l'art. 54 § 2 et 3 du décret-loi n° 2022-79 (édition arabe, p. 4073), lu sur la couche texte le 11 octobre 2026 ; relever la date d'effet et les pages du décret-loi n° 2020-33 du 10 juin 2020 (JORT n° 54, édition arabe, p. 1417-1420), qui n'a pas de clé bibliographique. -->
 
 :::: {.chronologie-repliable titre="Forfaits et contributions uniques qui comprennent la taxe sur les établissements : textes, date par date, 1997-2023"}
 
@@ -368,7 +374,7 @@ Les trois régimes de 2011, 2019 et 2023 sont créés dans la législation de l'
 | []{#r-fl-act-forfait-1997}[1^er^ janvier 1997]{.insecable} | point de départ | code, art. 37, 38 § I et 39 [@loi97-11, art. 37 et 38 § I ; @loi97-11, art. 39] | — → forfaitaires taxés à 25 % de leur impôt, payée avec lui |
 | []{#r-fl-act-forfait-2011}[1^er^ janvier 2011]{.insecable} | **rupture** — la taxe dans un forfait | loi de finances pour 2011 [@lf-2011, art. 32, p. 3470-3471] | hors code, rubrique « Révision du régime forfaitaire de l'impôt sur le revenu » : l'impôt forfaitaire de l'art. 44 quater « comprend la taxe sur les établissements » |
 | []{#r-fl-act-forfait-2019}[1^er^ janvier 2019]{.insecable} | étape — de 2011 | loi de finances pour 2019 [@loi2018-56-lf2019, art. 42] | hors code : contribution unique des petits exploitants, taxe comprise |
-| []{#r-fl-act-forfait-2023}[1^er^ janvier 2023]{.insecable} | étape — de 2011 | loi de finances pour 2023 [@lf-2023, art. 52] | hors code : contribution unique de l'auto-entrepreneur, taxe à 20 % de l'impôt, sans minimum |
+| []{#r-fl-act-forfait-2023}[1^er^ janvier 2023]{.insecable} | étape — de 2011 | loi de finances pour 2023 [@lf-2023, art. 52 § 3 et art. 54 § 2 et 3] | hors code : art. 7 du décret-loi n° 2020-33 du 10 juin 2020, relatif au régime de l'auto-entrepreneur, remplacé — dans sa rédaction initiale, la contribution unique ne comprend pas la taxe (art. 7) et l'auto-entrepreneur est dispensé de la payer (art. 9) → la contribution unique comprend la taxe, à raison de 20 % de l'impôt sur le revenu, nonobstant son minimum (art. 52 § 3 ; édition arabe, p. 4072) ; art. 9 du décret-loi abrogé (art. 54 § 2) ; contribution unique de l'art. 42 de la loi de finances pour 2019 abrogée (art. 54 § 3 ; édition arabe, p. 4073) |
 
 : Les forfaits et contributions uniques qui comprennent la taxe sur les établissements : textes, 1997-2023 {#tbl-fl-tcl-forfaits-textes}
 
