@@ -1,0 +1,1151 @@
+# Les régimes d'incitation à l'investissement {#sec-regimes-incitation .domicile-unique}
+
+Un régime d'incitation réunit les avantages que l'État attache à un investissement en raison de sa destination : l'exportation, les régions de l'intérieur, l'agriculture. De 1993 à 2016, ces régimes ont eu un code à eux, le [code d'incitations aux investissements](#g-code-incitations-investissements), que n'organise aucun impôt mais une liste d'objectifs. Depuis 2017, leur matière fiscale est répartie entre le code de l'[impôt sur le revenu des personnes physiques](#g-irpp) et de l'[impôt sur les sociétés](#g-impot-societes), le code de la taxe sur la valeur ajoutée, la loi sur le droit de consommation et le tarif des douanes ; chaque chapitre d'impôt n'en montre que sa part. Ce chapitre montre chaque régime entier, de 1969 à 2026, avec ce qu'il coûte au budget.
+
+## Vue d'ensemble {#sec-ri-vue-ensemble}
+
+Un régime d'incitation agit de deux façons. L'État **renonce à percevoir** : il déduit les bénéfices de l'assiette de l'impôt pendant une période, les impose ensuite à un taux réduit, suspend la taxe sur la valeur ajoutée et les droits de douane sur les équipements. Et il **verse** : une prime calculée sur le coût de l'investissement, ou la contribution patronale de sécurité sociale qu'il paie à la place de l'employeur. Le droit distingue les deux sous les noms d'[avantage fiscal](#g-avantage-fiscal) et d'[avantage financier](#g-avantage-financier).
+
+::: {.callout-note title="Dépense fiscale, avantage financier, prime : trois choses"}
+**Une [dépense fiscale](#g-depense-fiscale)** est un impôt que l'État ne perçoit pas : le ministère des Finances la mesure par un manque à gagner *estimé*, par rapport à un [système fiscal de référence](#g-systeme-fiscal-de-reference), pour cinq impôts et toutes les dérogations, non pour les seuls régimes d'incitation. Cette mesure a son chapitre (@sec-depenses-fiscales).
+
+**Un avantage financier** est une somme que l'État *verse* ou prend à sa charge : prime, prise en charge de cotisations, bonification d'intérêt, prêt. Les rapports du ministère en font un relevé, non un calcul (@sec-df-sommes-versees).
+
+**Une prime** est l'un de ces avantages financiers : une part du coût de l'investissement, payée par le budget dans la limite d'un plafond. La [prime d'investissement](#g-prime-investissement) de développement régional en est l'exemple suivi ici (@sec-df-primes-bareme).
+:::
+
+```{python}
+#| label: fig-ri-frise
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import regimes_incitation as fig_ri
+import figtools
+figtools.figure_tabs(
+    fig_ri.fig_frise(), fig_ri.table_frise(), fig_ri.FRISE, fig_ri.TAUX,
+    slug="fig_regimes_incitation_frise",
+    caption="Les régimes d'incitation à l'investissement, 1969-2026 : une bande par régime, et l'imposition des bénéfices tirés de l'exportation",
+    note_lecture=(
+        "En haut, chaque bande est un régime, avec la règle en vigueur sur la période ; "
+        "une bande hachurée est un régime abrogé dont des entreprises gardent le bénéfice. "
+        "Les bandes des lois de 1972 et de 1974 s'arrêtent au code de 1993, le texte qui y "
+        "met fin n'étant pas identifié. En bas, seuls les taux qu'un texte fixe sont tracés : "
+        "avant 2014, la règle — exonération de dix ans, ou déduction totale puis de 50 % — "
+        "dépend de l'âge de l'entreprise et n'est pas convertie en taux. Les cercles creux "
+        "sont les quatre échéances votées puis reportées. Les bornes sont des années ; les "
+        "dates d'effet sont dans le texte."
+    ),
+    nominal=False,
+    generated="{{< meta date >}}")
+```
+
+Cinq ruptures découpent cette histoire (@tbl-ri-ruptures).
+
+: Les ruptures des régimes d'incitation, 1972-2021 {#tbl-ri-ruptures}
+
+| Rupture | Ce que la loi cherche,<br>dans ses mots | Avant → après | Mise en œuvre |
+|---|---|---|---|
+| **1972**<br>un régime pour l'exportation | « fixer les conditions adéquates pour la constitution et l'exploitation d'entreprises produisant pour l'exportation » | un avantage gradué selon la taille de l'entreprise, de trois à cinq ans → dix ans d'exonération puis dix ans à taux réduit, pour qui produit exclusivement pour l'exportation | loi de 1974 pour le marché intérieur ; codes par secteur de 1987 à 1990 |
+| **1993**<br>un code organisé par objectif | réunir « les textes relatifs aux incitations aux investissements » | une dizaine de lois et de codes par secteur → un code unique, qui range sous chaque objectif impôt, douane, primes et cotisations | primes et zones fixées par décret en 1994, refaites en 1999, 2008 et 2011 |
+| **2006-2014**<br>l'exportation imposée | « réduction des taux de l'impôt » et « allègement de la pression fiscale sur les entreprises » (intitulé de la loi) | bénéfices de l'exportation déduits en totalité, puis de moitié → imposés à 10 % | votée pour 2008 ; reportée à 2011, 2012, 2013, puis 2014 |
+| **2016-2017**<br>le code abrogé | « la promotion de l'investissement » ; la « refonte du dispositif des avantages fiscaux » | un code de l'investissement → les avantages fiscaux dans le code de chaque impôt, quatre primes dans la loi de l'investissement | 1^er^ janvier 2017 pour les primes ; 1^er^ avril 2017 pour l'impôt ; droits acquis jusqu'à la fin de 2020 |
+| **2019-2021**<br>la fin du régime de l'exportation | — | bénéfices de l'exportation imposés à 10 % → droit commun de l'impôt sur les sociétés | abrogation au 1^er^ janvier 2019 ; maintien jusqu'au 31 décembre 2020 pour les entreprises en activité |
+
+Les textes de chaque rupture sont dans le registre replié de sa section.
+
+<!-- TODO (documentaliste) : relever la rubrique sous laquelle la loi de finances pour 2019 range son article 37 (abrogation des articles 67 à 69 du code de l'IRPP et de l'IS), pour la colonne « ce que la loi cherche » de la rupture 2019-2021 ; relever de même la rubrique des articles 5 et 6 de la loi n° 2006-80 (la colonne ne cite aujourd'hui que l'intitulé de la loi). -->
+
+Le chapitre donne, dans l'ordre : la mise en place, de 1969 à 1974 (@sec-df-avant-1993) ; les grandes réformes, chacune avec ce que la loi cherche et ce qui change (@sec-df-reformes) ; l'état du droit en 2026 — qui a droit à quoi (@sec-ri-etat-du-droit) ; les sommes que le budget verse au titre de ces régimes (@sec-ri-cout) ; la part du régime de l'exportation dans le commerce extérieur (@sec-df-commerce-exterieur) ; les études extérieures sur les incitations du code de 1993 (@sec-df-etudes). Le manque à gagner fiscal que mesure le ministère des Finances, tous impôts confondus, est au chapitre des dépenses fiscales (@sec-depenses-fiscales) ; les taux de l'impôt sur les sociétés, au chapitre de cet impôt (@sec-impot-societes).
+
+## La mise en place, 1969-1974 {#sec-df-avant-1993}
+
+Trois lois posent, en cinq ans, les deux logiques que les régimes d'incitation garderont : aider selon ce que l'entreprise pèse, ou selon le marché auquel elle vend.
+
+### Le code des investissements de 1969
+
+[La loi n° 69-35 du 26 juin 1969](#r-ri-1969), portant code des investissements, a pour objet de « créer les conditions favorables aux investissements réalisés en Tunisie », par des personnes physiques ou morales « quelle que soit leur nationalité ». Toute création, extension, reconversion ou déplacement d'une entreprise industrielle y est soumis à agrément.
+
+L'avantage se gradue selon la taille. Trois catégories sont distinguées par le capital apporté et l'emploi : A, jusqu'à 50 000 dinars ; B, de 50 000 à 250 000 dinars et au moins dix emplois permanents ; C, au-delà de 250 000 dinars et de cinquante emplois. La catégorie A n'ouvre droit qu'à une réduction d'impôt sur les bénéfices réinvestis ; les catégories B et C y ajoutent l'exonération de la patente, l'impôt qui frappe alors les bénéfices, pendant trois à cinq ans, dix ans au plus par renouvellement en catégorie C. L'exportation n'est que l'un des huit éléments d'appréciation de la demande. Par convention, le code permet d'aller plus loin : stabilité des impôts pendant vingt ans au plus, monopole d'exploitation, prohibition des importations concurrentes.
+
+<!-- TODO (bibliographe) : restent sans clé, connus par leur seul intitulé : lois n° 76-63, 81-56, 82-67, 92-81 et décret-loi n° 85-14. -->
+
+### La loi du 27 avril 1972 : un régime pour l'exportation {#sec-df-loi-1972}
+
+[La loi n° 72-38 du 27 avril 1972](#r-ri-1972) crée « un régime particulier pour les industries produisant pour l'exportation ». Son objet est de « fixer les conditions adéquates pour la constitution et l'exploitation d'entreprises produisant pour l'exportation ». Elle ne modifie pas le code de 1969 et ne le cite pas : elle crée, à côté de lui et pour les seules industries manufacturières, un régime distinct. Quatre déplacements l'en séparent.
+
+- **Le critère d'accès.** L'avantage ne dépend plus de ce que l'entreprise pèse, mais du marché auquel elle vend : l'établissement doit produire « exclusivement pour l'exportation ».
+- **La durée, fixée par la loi elle-même.** Les bénéfices sont exonérés de la patente pendant les dix premières années, puis imposés au taux réduit de 10 % pendant dix ans ; pendant vingt ans, les équipements et les matières premières entrent en franchise de droits de douane et de taxes sur le chiffre d'affaires.
+- **Le statut de non-résident.** L'entreprise dont 66 % du capital sont détenus par des non-résidents au moyen de devises est elle-même non résidente, et n'est pas tenue de rapatrier le produit de ses exportations.
+- **La séparation d'avec le marché local.** Le code de 1969 pouvait protéger le producteur sur le marché intérieur ; la loi de 1972 tient l'entreprise exportatrice hors de ce marché, en soumettant ses ventes en Tunisie aux formalités du commerce extérieur, sous surveillance douanière permanente.
+
+Un régime partiel s'ouvre à toute industrie manufacturière qui exporte au moins 20 % de sa production : taux réduit de 10 % sur les bénéfices de l'exportation. Les études postérieures nomment le régime de 1972 « offshore », mot absent des textes de loi ; l'Institut national de la statistique emploie « régime off shore » dans ses statistiques du commerce extérieur (@sec-df-commerce-exterieur). La loi ne comporte aucune clause d'entrée en vigueur. Le texte qui y a mis fin n'est pas établi ici, non plus que les motifs du changement ou le nombre d'entreprises agréées.
+
+<!-- TODO (documentaliste) : (1) date d'entrée en vigueur de la loi n° 72-38 — aucune clause ; règle d'avant 1993 (un jour franc après la publication), le jour de parution du JORT n° 17 des 21-25-28 avril 1972 n'étant pas porté sur les pages lues ; (2) texte qui a abrogé la loi n° 72-38 : elle n'est pas nommée à l'art. 5 de la loi de promulgation de 1993 ; chercher dans le décret-loi n° 85-14 et la loi n° 87-51 (note, § 10.1 et § 10.4). -->
+
+### La loi de 1974 et les lois par secteur
+
+[La loi n° 74-74 du 3 août 1974](#r-ri-1974), relative aux investissements dans les industries manufacturières, règle l'investissement tourné vers le marché intérieur. Elle classe les projets selon l'emploi créé, en cinq catégories, et exonère de la patente, pendant cinq ans, de 40 % à 90 % des bénéfices selon la catégorie ; elle n'accorde rien au-dessous de dix emplois. Elle rend le code de 1969 inapplicable aux industries manufacturières, sans toucher à la loi de 1972.
+
+À partir de 1974, deux lois couvrent donc l'industrie manufacturière : l'une pour le marché intérieur, graduée selon l'emploi, avec cinq ans d'exonération partielle ; l'autre pour l'exportation, avec dix ans d'exonération puis dix ans à taux réduit. Entre 1974 et 1993, d'autres textes se succèdent : une loi de 1981 sur les industries manufacturières et la décentralisation industrielle, un décret-loi de 1985 sur les industries exportatrices, puis [trois codes sectoriels](#r-ri-1987-1990) — industrie en 1987, agriculture et pêche en 1988, tourisme en 1990. Seul l'intitulé de ces textes est connu ici : ni les taux ni les durées de leurs avantages ne sont établis, et la chaîne qui mène de la loi de 1974 au code de 1993 pour le marché intérieur ne l'est pas davantage.
+
+<!-- TODO (documentaliste) : ouvrir les fascicules des textes de 1981 à 1990 pour établir taux, durées et dates d'effet (loi n° 81-56, décret-loi n° 85-14 ratifié par la loi n° 85-96, lois n° 87-51, 88-18, 90-21 ; aussi lois n° 76-63, 82-67, 92-81). Fascicules français au corpus local, sans couche texte : OCR à faire (note, § 1.1 et § 10.4). -->
+
+:::: {.chronologie-repliable titre="Régimes d'incitation avant 1993 : le code de 1969, le régime de la loi de 1972 article par article, la loi de 1974 — taux, durées, seuils et registre des textes, 1969-1990"}
+
+**Le code des investissements de 1969, article par article.**
+
+L'avantage se gradue selon la taille de l'entreprise. L'article 8 distingue trois catégories : A, pour un apport en capital de 50 000 dinars au plus ; B, pour au moins dix emplois permanents et un apport de 50 000 à 250 000 dinars ; C, pour plus de cinquante emplois et un apport supérieur à 250 000 dinars. La part des exportations dans le chiffre d'affaires n'est que l'un des huit éléments d'appréciation de la demande. La catégorie A n'ouvre droit qu'à une réduction d'impôt sur les revenus ou bénéfices réinvestis (art. 10). La catégorie B y ajoute l'exonération de l'impôt de la patente, qui frappe alors les bénéfices, pendant les trois premiers exercices, avec une extension possible sur cinq ans au plus (art. 11 à 13). La catégorie C reçoit les mêmes avantages pour cinq ans, renouvelables une fois pour cinq ans au plus (art. 14).
+
+Le code permet enfin d'aller plus loin par convention : un régime fiscal garantissant la stabilité des impôts pendant vingt ans au plus, un monopole d'exploitation et de commercialisation pour une période déterminée, la prohibition totale ou partielle des importations de produits concurrents (art. 15). Aux capitaux étrangers, il assure l'égalité devant la loi et la garantie de transfert du capital investi en devises et de ses revenus (art. 6 et 16 à 18).
+
+**La loi du 27 avril 1972.** Elle tient en quinze articles (@tbl-df-loi-1972).
+
+: Le régime de la loi n° 72-38 du 27 avril 1972 {#tbl-df-loi-1972}
+
+| Rubrique | Règle | Article |
+|---|---|---|
+| Champ | entreprises des industries manufacturières, hors activités bénéficiant d'une concession de l'État ; le régime s'applique aux entreprises nouvelles agréées ; les entreprises antérieures peuvent en obtenir tout ou partie par convention approuvée par décret | 1^er^ |
+| Condition | établissements « produisant exclusivement pour l'exportation », qui peuvent être créés « en tous points du territoire » | 2 |
+| Agrément | du ministre de l'Économie nationale, pour chaque établissement, sur avis d'une Agence de promotion des investissements que la loi crée | 2 |
+| Impôt sur les bénéfices (patente) | exonération pendant les dix premières années d'activité, puis taux réduit de 10 % pendant une nouvelle période de dix ans | 3 |
+| Autres impôts directs et enregistrement, pendant les vingt premières années | exonération de la taxe sur la valeur locative ; exonération de l'impôt sur le revenu des valeurs mobilières dû sur les emprunts d'investissement ; taux réduit de 6 % ou 8 % de cet impôt sur les bénéfices distribués ; droit fixe d'enregistrement sur la constitution et l'augmentation du capital ; droits réduits sur les cessions d'actif | 4, 1° à 5° |
+| Impôts indirects et douane, pendant les vingt premières années | exonération des droits de douane et des taxes sur le chiffre d'affaires à l'importation des équipements, pièces, matières premières et produits semi-finis ; exonération ou remboursement de ces taxes sur les achats locaux | 4, 6° à 8° |
+| Résidence et change | l'entreprise est non résidente quand son capital est détenu par des non-résidents au moyen d'une importation de devises convertibles égale à 66 % du capital ; elle n'est alors pas tenue de rapatrier le produit de ses exportations | 5 à 8 |
+| Régime commercial | importation libre des biens nécessaires à la production ; les ventes en Tunisie sont soumises aux formalités du commerce extérieur, sans que la loi fixe de part de vente locale | 9 à 11 |
+| Contreparties | contrôle administratif et « surveillance douanière permanente », aux frais de l'entreprise ; amende du triple du montant de l'infraction, et perte du régime en cas de récidive | 12 et 13 |
+| Exportateurs partiels | toute industrie manufacturière exportant au moins 20 % de sa production : patente au taux réduit de 10 % sur les bénéfices de l'exportation ; achats locaux en suspension des taxes sur le chiffre d'affaires pour la production exportée | 15 |
+
+Source : @loi-72-38-regime-exportation, art. 1 à 15.
+
+**En quoi la loi de 1972 rompt.** La rupture se lit en rapprochant les deux textes (@tbl-df-1969-1972).
+
+: Du code des investissements de 1969 à la loi de 1972 : ce qui change {#tbl-df-1969-1972}
+
+| | Code des investissements de 1969 | Loi du 27 avril 1972 |
+|---|---|---|
+| Critère d'accès | la taille : capital apporté et emplois permanents, en trois catégories ; l'exportation est un élément d'appréciation parmi huit (art. 8) | la destination de la production : exclusivement l'exportation (art. 2), ou au moins 20 % de la production pour le régime partiel (art. 15) |
+| Avantage sur les bénéfices | exonération de patente de trois à cinq ans, dix ans au plus par renouvellement en catégorie C (art. 11 à 14) | exonération de patente de dix ans, puis taux réduit de 10 % pendant dix ans, fixés par la loi elle-même (art. 3) |
+| Capitaux étrangers | égalité devant la loi ; garantie de transfert du capital investi en devises et de ses revenus (art. 6 et 16 à 18) | statut de non-résident de l'entreprise elle-même, au seuil de 66 % de capital en devises, qui la dispense de rapatrier ses recettes d'exportation (art. 5 à 8) |
+| Rapport au marché local | par convention, monopole d'exploitation et prohibition des importations de produits concurrents (art. 15) | ventes en Tunisie soumises aux formalités du commerce extérieur ; surveillance douanière permanente (art. 9 à 12) |
+
+Sources : @loi-69-35-code-investissements, art. 6, 8 et 11 à 18 ; @loi-72-38-regime-exportation, art. 2, 3, 5 à 12 et 15.
+
+Une précision évite un faux rapprochement : les vingt ans du code de 1969 sont la durée maximale d'une *stabilité* des impôts accordée par convention ; les vingt ans de la loi de 1972 sont la durée des exonérations et des taux réduits qu'elle fixe elle-même. Les deux textes ne disent rien des motifs de ce changement, ni du nombre d'entreprises agréées.
+
+**La loi de 1974.** La loi n° 74-74 du 3 août 1974, relative aux investissements dans les industries manufacturières, vient en second rang : elle règle l'investissement tourné vers le marché intérieur. Elle classe les projets selon l'emploi créé, en cinq catégories, de A (dix à vingt emplois permanents) à E (plus de cent cinquante), et n'accorde rien au-dessous de dix emplois ni de 30 % de fonds propres (art. 7 à 10). Son avantage principal est une exonération de la patente pendant les cinq premières années, à concurrence de 40 %, 60 %, 70 %, 80 % ou 90 % des bénéfices selon la catégorie (art. 12). Une année supplémentaire est accordée aux investissements réalisés dans des zones fixées par décret, ou à ceux qui exportent plus de 10 % de leur chiffre d'affaires (art. 15 et 16). Son article 26 rend inapplicable aux industries manufacturières le code de 1969 ; il ne touche pas à la loi de 1972.
+
+Source : @loi-74-74-industries-manufacturieres, art. 7 à 16 et 26.
+
+**Registre des textes.**
+
+| Date | Texte | Ce qu'il fait | Portée |
+|---|---|---|---|
+| []{#r-ri-1969}[26 juin 1969]{.insecable} | loi n° 69-35, portant code des investissements [@loi-69-35-code-investissements, art. 1^er^, 2, 6 à 18] | agrément ; avantage gradué selon la taille, en trois catégories ; conventions | mise en place |
+| []{#r-ri-1972}[27 avril 1972]{.insecable} | loi n° 72-38, portant création d'un régime particulier pour les industries produisant pour l'exportation [@loi-72-38-regime-exportation, art. 1 à 15] | exonération de patente de dix ans puis taux de 10 % dix ans ; statut de non-résident ; aucune clause d'entrée en vigueur | rupture |
+| []{#r-ri-1974}[3 août 1974]{.insecable} | loi n° 74-74, relative aux investissements dans les industries manufacturières [@loi-74-74-industries-manufacturieres, art. 7 à 16 et 26] | exonération partielle de patente de cinq ans, selon l'emploi créé ; code de 1969 inapplicable aux industries manufacturières | étape |
+| []{#r-ri-1987-1990}1987-1990 | code des investissements industriels, code des investissements agricoles et de pêche, code des investissements touristiques [@loi-87-51-code-investissements-industriels ; @loi-88-18-code-investissements-agricoles ; @loi-90-21-code-investissements-touristiques] | seul l'intitulé de ces textes est connu ici | — |
+
+::::
+
+## Les grandes réformes {#sec-df-reformes}
+
+Quatre réformes suivent la mise en place ; la loi de 2019 sur le climat de l'investissement, qui n'est pas une loi fiscale, a sa section à la suite. Chacune est présentée par ce que la loi cherche, dans ses mots, puis par ce qu'elle change ; le détail des articles est replié sous chaque section. Entre deux réformes, les lois de finances retouchent le code chaque année.
+
+### 1993 — un code organisé par objectif {#sec-df-code-1993}
+
+[La loi n° 93-120 du 27 décembre 1993](#r-ri-1993-promulgation) promulgue « les textes relatifs aux incitations aux investissements […] réunis sous le titre “Code d'incitations aux investissements” ». Elle abroge du même coup le code de 1969, les trois codes sectoriels de 1987, 1988 et 1990, une loi de 1989 sur les services, des lois propres au Sud et aux îles Kerkennah et des articles de cinq lois de finances : une dizaine de textes cèdent la place à un seul. La loi de 1972 ne figure pas dans cette liste.
+
+[Le code](#r-ri-1993-champ) « fixe le régime d'incitations aux investissements et à la création de projets réalisés en Tunisie par des promoteurs tunisiens ou étrangers, résidents ou non résidents », dans quatorze secteurs, « sous forme d'incitations communes et d'incitations spécifiques ».
+
+- **Un plan par objectif, non par impôt.** Après les incitations communes, les titres se suivent : exportation, développement régional, développement agricole, lutte contre la pollution, technologie et recherche-développement, nouveaux promoteurs et petites entreprises, investissements de soutien.
+- **Sous chaque objectif, des avantages de natures différentes.** Le titre du développement régional associe la déduction des bénéfices, des primes et la prise en charge par l'État de la contribution patronale de sécurité sociale ; celui de l'exportation règle, à côté de l'impôt, la résidence au sens du change et des règles de droit du travail. Le code traite ensemble l'impôt direct, l'impôt indirect, la douane, la subvention, la cotisation sociale et le change, ce qu'un code d'impôt ne fait pas.
+- **Trois régimes de même forme.** Pour l'exportation, le développement régional et l'agriculture, les revenus ou bénéfices sont déduits de l'assiette de l'impôt en totalité pendant dix ans ; la déduction est ensuite de 50 % pour l'exportation, sans terme écrit, et pour le développement régional, pendant dix ans (@tbl-df-1993-2017).
+- **Le régime de l'exportation prolonge celui de 1972.** L'[entreprise totalement exportatrice](#g-entreprise-totalement-exportatrice) est non résidente au même seuil de 66 % de capital en devises et reste sous contrôle douanier permanent ; la déduction de 50 % remplace le taux de 10 %. Le plafond de 20 % de ventes sur le marché local est, lui, propre [au code de 1993](#r-ri-1993-avantages). Les mots « offshore » et « onshore », par lesquels les études de la Banque mondiale et de l'OCDE opposent ce régime à celui des entreprises tournées vers le marché local, ne figurent pas dans le code.
+
+Ni la date à laquelle le code devient exécutoire, ni le terme de la déduction de 50 % du régime de l'exportation ne sont établis ici : la loi de promulgation fixe seulement au 1^er^ janvier 1994 l'application des déductions aux entreprises exportatrices créées avant le code.
+
+<!-- TODO (documentaliste) : (1) date d'effet du code de 1993 — pas de clause générale ; règle de la loi n° 93-64 (cinq jours après le dépôt du JORT au siège du gouvernorat de Tunis) : date du dépôt du n° 99 du 28 décembre 1993 à établir ; (2) intitulés des titres VII à X et nombre d'articles du code (67 ?) relevés sur une océrisation des p. 2179-2181 seulement : à contrôler sur la page ; (3) l'article 18 (droit du travail) et l'article 20 (contrôle douanier) sont cités d'après la note, § 10.1 c et § 10.2 b. -->
+
+<!-- TODO (documentaliste) : terme de la déduction de 50 % des exportateurs entre 1993 et 2006 (note, § 7, point 13). -->
+
+:::: {.chronologie-repliable titre="Code d'incitations aux investissements de 1993 : avantages par régime, durées et articles ; textes abrogés ; registre"}
+
+: Les principaux avantages du code d'incitations aux investissements, dans son texte de 1993 {#tbl-df-code-1993}
+
+| Régime | Avantage | Durée | Article |
+|---|---|---|---|
+| Incitations communes | dégrèvement des revenus ou bénéfices réinvestis dans la souscription au capital, dans la limite de 35 % des revenus ou bénéfices nets imposables | — | 7 § 1 |
+| Incitations communes, équipements | droits de douane réduits à 10 % ; suspension de la taxe sur la valeur ajoutée et du droit de consommation | — | 9 |
+| [Entreprises totalement exportatrices](#g-entreprise-totalement-exportatrice) | déduction totale des revenus et bénéfices tirés de l'exportation, puis déduction de 50 % | dix premières années à partir de la première opération d'exportation pour la déduction totale ; le texte ne fixe pas de terme à la déduction de 50 % | 12 § 6 et 7 |
+| Entreprises totalement exportatrices | ventes sur le marché local admises dans la limite de 20 % du chiffre d'affaires | — | 16 |
+| Entreprises partiellement exportatrices | suspension de la taxe sur la valeur ajoutée et du droit de consommation ; sur les seuls revenus tirés de l'exportation, déduction totale, puis de 50 % | dix ans pour la déduction totale | 22 § 1 à 3 |
+| Développement régional | déduction totale des revenus et bénéfices, puis déduction de 50 % | dix ans à partir de l'entrée en production, puis dix années suivantes | 23 § 2 |
+| Développement régional | prise en charge par l'État de la contribution patronale de sécurité sociale | cinq ans | 25 |
+| Développement agricole | déduction totale des revenus et bénéfices | dix premières années | 30 § 3 |
+
+Sources : @loi-93-120-code-incitations, art. 7, 9, 12, 16, 22, 23, 25 et 30.
+
+**Les textes abrogés.** La loi de promulgation abroge, entre autres, le code des investissements de 1969, le code des investissements industriels de 1987, le code des investissements agricoles et de pêche de 1988 et le code des investissements touristiques de 1990 — ces deux derniers à l'exception de quelques articles —, une loi de 1989 sur les activités de services, des lois propres au Sud tunisien et aux îles Kerkennah, et des articles de cinq lois de finances.
+
+**Les secteurs.** Les quatorze secteurs du code vont de l'agriculture et des industries manufacturières au tourisme, au transport, à la santé, à l'enseignement et à la promotion immobilière.
+
+**La date d'effet.** La loi de promulgation ne contient pas de clause générale d'entrée en vigueur. Les déductions du régime de l'exportation s'appliquent aux entreprises exportatrices créées avant le code « à partir du 1^er^ janvier 1994 comme si ces entreprises ont été créées à cette date ».
+
+**La seconde période du régime de l'exportation.** Le texte de 1993 ne borne pas la déduction de 50 %. La Banque mondiale décrit pourtant ce régime, en 2014, comme une déduction de 50 % « pendant dix autres années » [@banquemondiale2014-revolution-inachevee, ch. 4] ; le texte qui aurait introduit ce terme entre 1993 et 2006 n'est pas établi ici.
+
+| Objet | Texte | Ce qu'il fait | Portée |
+|---|---|---|---|
+| []{#r-ri-1993-promulgation}Promulgation | loi n° 93-120 du [27 décembre 1993]{.insecable} [@loi-93-120-code-incitations, loi de promulgation, art. 1, 2 et 5] | réunit les textes sous le titre de code ; abroge les textes remplacés ; applique les déductions aux exportateurs existants au 1^er^ janvier 1994 | rupture |
+| []{#r-ri-1993-champ}Champ et plan | code d'incitations aux investissements [@loi-93-120-code-incitations, art. 1, 4, 14, 18 et 23 à 25] | quatorze secteurs ; incitations communes et spécifiques ; titres par objectif | rupture |
+| []{#r-ri-1993-avantages}Avantages | code d'incitations aux investissements [@loi-93-120-code-incitations, art. 7, 9, 10, 12, 14, 16, 20, 22, 23, 25 et 30] ; pour la comparaison avec 1972 [@loi-72-38-regime-exportation, art. 3, 5 et 12] | déductions par régime ; non-résidence au seuil de 66 % ; contrôle douanier ; ventes locales plafonnées à 20 % | rupture |
+
+::::
+
+### 2006-2014 — l'exportation imposée, après quatre reports {#sec-ri-2006-2014}
+
+[La loi n° 2006-80 du 18 décembre 2006](#r-ri-2006-80), relative à la réduction des taux de l'impôt et à l'allègement de la pression fiscale sur les entreprises, met fin à la déduction des bénéfices tirés de l'exportation.
+
+- **Avant → après.** Déduction totale pendant dix ans, puis de 50 % → impôt sur les sociétés au taux de 10 % sur ces bénéfices ; les revenus de même origine ne sont plus déductibles de l'assiette de l'impôt sur le revenu qu'à hauteur des deux tiers.
+- **Une date votée, quatre reports.** La règle doit s'appliquer au 1^er^ janvier 2008. [La loi de finances pour 2008](#r-ri-lf-2008) la repousse au 1^er^ janvier 2011, [celle pour 2011](#r-ri-lf-2011) au 1^er^ janvier 2012, [la loi de finances complémentaire pour 2011](#r-ri-lfc-2011) au 1^er^ janvier 2013, et [la loi de finances pour 2013](#r-ri-lf-2013) au 1^er^ janvier 2014 (@fig-ri-frise).
+- **Appliquée en 2014.** [La loi de finances pour 2014](#r-ri-lf-2014) ne repousse pas l'échéance une cinquième fois. Le taux de 10 %, voté en 2006 pour 2008, régit donc les bénéfices de l'exportation à partir de 2014, six ans après la date d'abord prévue.
+
+<!-- TODO (documentaliste) : le constat « appliqué à partir de 2014 » suppose qu'aucun texte postérieur à la LF 2013 n'a touché à ce calendrier. Contrôlé le 6 octobre 2026 sur la couche texte des fascicules français : la LF 2014 (JORT n° 105 de 2013) ne renvoie ni à la loi n° 2006-80 ni à l'art. 20 de la LF 2013 ; l'art. 18 de la LF 2015 (loi n° 2014-59, JORT n° 105 de 2014, p. 3463) ne touche pas au calendrier — il autorise, pour la seule année 2015, des ventes sur le marché local jusqu'à 50 % du chiffre d'affaires à l'exportation de 2014. Les lois de finances complémentaires de 2014 et 2015 ne sont pas contrôlées. Non repris au chapitre, faute de texte : LF 2014, art. 49-50 (taxe sur les établissements étendue au chiffre d'affaires à l'exportation) et art. 54 (redevances) ; estimation de +137 MD du gain attendu (seconde main) ; LFC 2012, art. 7 (clé lfc-2012 : ventes locales portées à 40 % en 2012, mesure conjoncturelle). -->
+
+:::: {.chronologie-repliable titre="Imposition des bénéfices de l'exportation : la date votée en 2006 et ses quatre reports, texte et article, 2006-2014"}
+
+: L'imposition des bénéfices de l'exportation : la date votée et ses reports, 2006-2014 {#tbl-df-reports}
+
+| Texte | Article | Changement |
+|---|---|---|
+| []{#r-ri-2006-80}loi n° 2006-80 du 18 décembre 2006 [@loi-2006-80-reduction-taux, art. 5 et 6] | 5 et 6 | déduction totale puis de 50 % → impôt sur les sociétés à 10 % et déduction des deux tiers des revenus, à partir du 1^er^ janvier 2008 |
+| []{#r-ri-lf-2008}loi de finances pour 2008 (loi n° 2007-70 du 27 décembre 2007) [@loi-2007-70-lf-2008, art. 12] | 12 | 1^er^ janvier 2008 → 1^er^ janvier 2011 |
+| []{#r-ri-lf-2011}loi de finances pour 2011 (loi n° 2010-58 du 17 décembre 2010) [@lf-2011, art. 24] | 24 | 1^er^ janvier 2011 → 1^er^ janvier 2012 |
+| []{#r-ri-lfc-2011}loi de finances complémentaire pour 2011 (décret-loi n° 2011-56 du 25 juin 2011) [@dl-2011-56-lfc-2011, art. 11] | 11 | 1^er^ janvier 2012 → 1^er^ janvier 2013 |
+| []{#r-ri-lf-2013}loi de finances pour 2013 (loi n° 2012-27 du 29 décembre 2012) [@lf-2013, art. 20] | 20 | 1^er^ janvier 2013 → 1^er^ janvier 2014 |
+| []{#r-ri-lf-2014}loi de finances pour 2014 [@lf-2014] | — | l'échéance du 1^er^ janvier 2014 n'est pas repoussée : le taux de 10 % s'applique |
+
+Sources : @loi-2006-80-reduction-taux, art. 5 et 6 ; @loi-2007-70-lf-2008, art. 12 ; @lf-2011, art. 24 ; @dl-2011-56-lfc-2011, art. 11 ; @lf-2013, art. 20.
+
+::::
+
+### 2016-2017 — le code abrogé : avantages fiscaux dans le code de l'impôt, primes dans la loi de l'investissement {#sec-ri-2016-2017}
+
+La réforme se fait en deux lois : l'une abroge le code et organise les primes, l'autre loge les avantages fiscaux dans le code de chaque impôt.
+
+#### Les avantages fiscaux, du code de 1993 au code de l'impôt {#sec-ri-refonte-2017}
+
+[La loi de l'investissement du 30 septembre 2016](#r-ri-2016-71) « a pour objectif la promotion de l'investissement et l'encouragement de la création d'entreprises et de leur développement selon les priorités de l'économie nationale », et « fixe le régime juridique de l'investissement » dans toutes les activités économiques : son objet ne nomme pas l'impôt. Elle abroge le code de 1993, à l'exception de ses articles 14 et 36, maintient les droits acquis et entre en vigueur le 1^er^ janvier 2017. Hors les [projets d'intérêt national](#g-projet-interet-national), auxquels elle réserve une déduction des bénéfices dans la limite de dix ans et une prime plafonnée au tiers du coût du projet, elle ne porte plus d'avantage fiscal lié à l'exploitation.
+
+La matière fiscale est traitée par [la loi n° 2017-8 du 14 février 2017](#r-ri-2017-8), portant refonte du dispositif des avantages fiscaux, applicable à partir du 1^er^ avril 2017. Elle insère dans le code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés un chapitre IV nouveau, « avantages fiscaux », articles 63 à 77, qui garde pour plan le découpage par objectif du code de 1993. Elle fait le même mouvement pour la taxe sur la valeur ajoutée, le droit de consommation et le tarif des douanes ; les chapitres de ces impôts le signalent chacun pour sa part (@sec-tva, @sec-droits-consommation). Trois changements ressortent du rapprochement des deux textes (@tbl-df-1993-2017).
+
+- **La période de déduction totale disparaît pour l'exportation**, et tombe à cinq ans dans le premier groupe de zones de développement régional.
+- **Au-delà de cette période, une règle commune** aux trois régimes : deux tiers des revenus déductibles, bénéfices imposés au taux réduit de 10 %.
+- **Un régime nouveau, celui des entreprises nouvelles** : déduction dégressive sur quatre ans.
+
+: Les avantages sur les revenus et les bénéfices, du texte de 1993 à la refonte de 2017 {#tbl-df-1993-2017}
+
+| Régime | Code de 1993, texte d'origine | Code de l'impôt, à partir du 1^er^ avril 2017 | Articles du code de l'impôt |
+|---|---|---|---|
+| Exportation | déduction totale pendant dix ans, puis de 50 % | plus de période de déduction totale : deux tiers des revenus déductibles ; bénéfices au taux réduit de 10 % | 67 |
+| Développement régional | déduction totale pendant dix ans, puis de 50 % pendant dix ans | déduction totale pendant cinq ans (premier groupe de [zones de développement régional](#g-zone-developpement-regional)) ou dix ans (deuxième groupe) ; ensuite deux tiers des revenus déductibles, bénéfices au taux réduit de 10 % | 63 et 64 |
+| Agriculture et pêche | déduction totale pendant dix ans | déduction totale pendant dix ans, inchangée ; ensuite deux tiers des revenus déductibles, bénéfices au taux réduit de 10 % | 65 et 66 |
+| Entreprises nouvelles | — | déduction de 100 %, 75 %, 50 % et 25 % des revenus ou bénéfices au cours des quatre premières années ; en sont exclus la finance, l'énergie hors énergies renouvelables, les mines, la promotion immobilière, la consommation sur place, le commerce et les télécommunications | 71 |
+
+Sources : [code de 1993, art. 12, 23 et 30](#r-ri-1993-avantages) ; [loi du 14 février 2017, articles 63 à 67 et 71 nouveaux du code](#r-ri-2017-8).
+
+Pour l'exportation, la colonne de 1993 n'est plus le droit applicable à la veille de la refonte : depuis 2014, les bénéfices sont déjà imposés à 10 % (@sec-ri-2006-2014), et la loi de 2017 reprend cette règle dans le code. Le taux de 10 % auquel renvoient les articles 64, 66 et 67 est le taux réduit de l'impôt sur les sociétés, décrit à son chapitre (@sec-impot-societes). L'article 63 ne nomme pas les zones : il renvoie leur liste à un décret gouvernemental (@sec-df-zones-carte).
+
+La même loi crée l'instrument de mesure : son article 18 charge le ministère des Finances d'un rapport annuel sur les avantages fiscaux et financiers, ventilés par secteur, par gouvernorat et par délégation, avec les emplois créés et le chiffre d'affaires à l'exportation. L'OCDE avait recommandé en 2013 la publication d'un rapport annuel sur les dépenses fiscales [@ocde2013-incitations-fiscales-tunisie]. Ce rapport est l'objet du chapitre suivant (@sec-df-rapport).
+
+#### Les primes : le barème de 2017 {#sec-df-primes-bareme}
+
+À côté des avantages consentis sur l'impôt, l'État verse des primes : une part du coût de l'investissement, payée par le budget. La loi de l'investissement en organise quatre — augmentation de la valeur ajoutée et de la compétitivité, développement de la capacité d'employabilité, développement régional, développement durable. La prime de développement régional, réservée aux investissements réalisés dans des délégations qu'un décret énumère, existait sous le code de 1993 : fixée par [un décret de 1994](#r-ri-d-94-539), elle a été refaite en [1999](#r-ri-d-99-486), en [2008](#r-ri-d-2008-389) et en [2011](#r-ri-d-2011-528). [Un décret gouvernemental du 9 mars 2017](#r-ri-d-2017-389) en fixe le nouveau barème, avec effet au 1^er^ janvier 2017, date d'entrée en vigueur de la loi (@fig-ri-prime).
+
+```{python}
+#| label: fig-ri-prime
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import regimes_incitation as fig_ri
+import figtools
+figtools.figure_tabs(
+    fig_ri.vues_prime(), fig_ri.table_prime(), fig_ri.PRIME,
+    slug="fig_prime_developpement_regional",
+    caption="La prime de développement régional, 1994-2026 : taux et plafond selon la catégorie de zones (industries manufacturières et services éligibles)",
+    note_lecture=(
+        "Une marche par barème, posée à sa date d'effet : 25 février 2008, 19 mai 2011, "
+        "1er janvier 2017. Les barèmes de 1994 et de 1999, dont la date d'effet n'est pas "
+        "établie, sont des points isolés. En 2017, la catégorie intermédiaire est réunie à "
+        "la plus aidée dans le « deuxième groupe ». L'assiette de la prime change de nom "
+        "d'un barème à l'autre : les taux ne portent pas nécessairement sur la même base. "
+        "Plafonds en dinars courants ; aucun plafond n'est écrit en 1994 ni relevé pour 1999."
+    ),
+    generated="{{< meta date >}}")
+```
+
+La refonte de 2017 porte la prime de 8 %, 15 % ou 25 % du coût à 15 % ou 30 %, ses plafonds de 0,5, 1 ou 1,5 million de dinars à 1,5 ou 3 millions, et ramène de trois à deux le nombre de catégories de zones. Le changement se lit par le sort de chaque catégorie de délégations, du dernier barème du code — celui de 2011 — à celui de 2017 (@tbl-df-primes-avant-apres).
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré -->
+
+: La prime de développement régional et la participation aux dépenses d'infrastructure, du barème de 2011 à celui de 2017, selon le classement des délégations (industrie, artisanat et services) {#tbl-df-primes-avant-apres}
+
+| Classement de 2008 | Délégations | Classement de 2017 | Prime<br>(% du coût de l'investissement) | Plafond de la prime<br>(millions de dinars) | Participation aux infrastructures<br>(% des dépenses) |
+|---|---:|---|---|---|---|
+| premier groupe | 10 | premier groupe | 8 → 15 | 0,5 → 1,5 | 25 → 65 |
+| deuxième groupe | 37 | deuxième groupe | 15 → 30 | 1 → 3 | 75 → 85 |
+| deuxième groupe (Ez-Zeriba, Bir Ali Ben Khalifa, Menzel Chaker) | 3 | premier groupe | 15 → 15 | 1 → 1,5 | 75 → 65 |
+| zones prioritaires | 88 | deuxième groupe | 25 → 30 | 1,5 → 3 | 85 → 85 |
+| délégations absentes de la liste de 2008 | 9 | deuxième groupe | — → 30 | — → 3 | — → 85 |
+
+Sources : [décret de 2011, art. 1^er^ à 3](#r-ri-d-2011-528) ; [décret gouvernemental de 2017, art. 3 § 2 et annexe n° 2](#r-ri-d-2017-389) ; classement de 2008 : [décret de 2008, annexe n° 1](#r-ri-d-2008-387). Le nombre de délégations de chaque ligne est compté ici sur les listes.
+
+Trois précisions commandent la lecture de ce tableau.
+
+- **L'assiette n'a pas le même nom.** Le barème de 2011 porte sur le coût de l'investissement, fonds de roulement inclus dans la limite de 10 % de ce coût ; celui de 2017 sur le « coût d'investissement approuvé ». Les deux taux ne portent donc pas nécessairement sur la même base.
+- **La participation aux infrastructures est plafonnée depuis 2017.** Elle est limitée à 10 % du coût du projet et à 1 million de dinars ; le barème de 2011 ne fixait qu'un taux.
+- **Les nouveaux promoteurs avaient un barème propre en 2011** : 30 % du coût et un plafond de 2 millions de dinars dans les zones prioritaires, au lieu de 25 % et de 1,5 million.
+
+Le décret de 2017 fixe aussi les trois autres primes de la loi de l'investissement, données avec l'état du droit (@sec-df-primes-zones). Le seul texte modificatif identifié ici est [un décret du 4 avril 2024](#r-ri-d-2024-182), exécutoire le 10 avril 2024.
+
+<!-- RECHERCHE r-fisc-modificatifs-2017-389 : texte modifiant le décret gouvernemental n° 2017-389, autre que le décret n° 2024-182 (voir docs/recherches.yml) -->
+
+:::: {.chronologie-repliable titre="Réforme de 2016-2017 : registre des textes — loi de l'investissement, loi portant refonte des avantages fiscaux, article 63 du code de l'impôt"}
+
+| Date d'effet | Texte | Ce qu'il fait | Portée |
+|---|---|---|---|
+| []{#r-ri-2016-71}[1^er^ janvier 2017]{.insecable} | loi n° 2016-71 du [30 septembre 2016]{.insecable}, portant loi de l'investissement [@loi-2016-71-investissement, art. 1, 2, 16 à 20 et 26 à 29] | objet de la loi ; Fonds tunisien de l'investissement (art. 16 à 18) ; quatre primes (art. 19) ; projets d'intérêt national (art. 20) ; abrogation du code de 1993, sauf ses articles 14 et 36, et droits acquis (art. 26 à 29) | rupture |
+| []{#r-ri-2017-8}[1^er^ avril 2017]{.insecable} | loi n° 2017-8 du [14 février 2017]{.insecable}, portant refonte du dispositif des avantages fiscaux [@loi-avantages-fiscaux-2017, art. 1, 3 à 5, 18 et 23] | chapitre IV nouveau du code de l'impôt, articles 63 à 77 (art. 1) ; taxe sur la valeur ajoutée, droit de consommation, douane (art. 3 à 5) ; rapport annuel du ministère des Finances (art. 18) ; date d'application (art. 23) | rupture |
+| []{#r-ri-lf-2018}— | loi de finances pour 2018 [@lf-2018, art. 20] | parle des « zones de développement régional au sens de l'article 63 », sans nommer de décret | ajustement |
+
+Le chapitre IV nouveau compte deux sections : les avantages au titre de l'exploitation — développement régional, développement agricole, exportation, activités de soutien et lutte contre la pollution, entreprises nouvelles — et les avantages au titre du réinvestissement.
+
+::::
+
+:::: {.chronologie-repliable titre="Prime de développement régional et participation aux dépenses d'infrastructure : taux et plafonds des barèmes de 1994, 1999, 2008, 2011 et 2017 ; prime du tourisme de 2013"}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré -->
+
+: La prime d'investissement de développement régional, de 1994 à 2017 : taux en pourcentage du coût de l'investissement, et plafonds (industries manufacturières et services éligibles) {#tbl-df-primes-baremes}
+
+| Année | Texte | Zones les moins aidées | Zones intermédiaires | Zones les plus aidées | Assiette |
+|---|---|---|---|---|---|
+| 1994 | décret n° 94-539, art. 3 [@decret-94-539-primes-developpement-regional] | 8 %, sans plafond écrit (une seule catégorie de zones) | — | — | coût du projet, fonds de roulement exclu |
+| 1999 | décret n° 99-486, art. 1^er^ [@decret-99-486-primes-developpement-regional] | 15 % (« zones ») | — | 25 %, « à l'exclusion de toutes autres primes » (« zones prioritaires ») | inchangée |
+| 2008 | décret n° 2008-389, art. 1^er^ [@decret-2008-389-primes-developpement-regional] | 8 %, plafond de 320 000 dinars (premier groupe) | 15 %, plafond de 600 000 dinars (deuxième groupe) | 25 %, plafond de 1 million de dinars (zones prioritaires) | inchangée |
+| 2011 | décret n° 2011-528, art. 1^er^ [@decret-2011-528-primes-developpement-regional] | 8 %, plafond de 500 000 dinars | 15 %, plafond de 1 million de dinars | 25 %, plafond de 1,5 million de dinars ; 30 % et 2 millions de dinars pour les nouveaux promoteurs | fonds de roulement inclus, dans la limite de 10 % du coût |
+| 2017 | décret gouvernemental n° 2017-389, art. 3 § 2 [@decret-gouv-2017-389-incitations-financieres] | 15 %, plafond de 1,5 million de dinars (premier groupe) | — | 30 %, plafond de 3 millions de dinars (deuxième groupe) | « coût d'investissement approuvé » |
+
+En 2017, la catégorie intermédiaire ne disparaît pas : elle est réunie aux zones prioritaires dans le deuxième groupe.
+
+: La participation de l'État aux dépenses d'infrastructure, industrie, de 1994 à 2017 (en pourcentage des dépenses) {#tbl-df-infrastructures-baremes}
+
+| Année | Texte | Premier groupe | Deuxième groupe | Zones prioritaires |
+|---|---|---|---|---|
+| 1994 | décret n° 94-539, art. 4 | couverture « totale ou partielle », selon la localisation et l'importance du projet, sans taux | — | — |
+| 2008 | décret n° 2008-389, art. 1^er^ | 25 % | 50 % | 75 % |
+| 2011 | décret n° 2011-528, art. 2 et 3 | 25 % | 75 % | 85 % |
+| 2017 | décret gouvernemental n° 2017-389, art. 3 § 2 | 65 %, dans la limite de 10 % du coût du projet et de 1 million de dinars | 85 %, mêmes limites | — (réunies au deuxième groupe) |
+
+**Dispositions transitoires.** Le décret de 2008 maintient l'ancien barème aux projets déclarés avant l'entrée en vigueur de la loi n° 2007-69 et entrés en activité avant le 31 décembre 2009 ; celui de 2011 le fait pour les projets entrés en activité avant le 31 décembre 2011 [@decret-2008-389-primes-developpement-regional, art. 4 ; @decret-2011-528-primes-developpement-regional, art. 4]. Seul l'intitulé des décrets qui ont reporté ces échéances est connu ici (décrets n° 2009-3756 et n° 2014-2283).
+
+**Versement.** Sous le code de 1993, la prime est versée en trois tranches : 40 %, 40 % et 20 % en 1994 pour les projets d'au plus 1 million de dinars ; 30 %, 30 % et 40 % depuis 2008. Depuis 2017, elle l'est en deux : 40 % puis 60 %.
+
+**Tourisme.** Un décret de 2013 fixe, sous le code de 1993, une prime de 8 % du coût hors terrain, plafonnée à 2,8 millions de dinars, pour l'hébergement et l'animation dans les zones touristiques de développement régional, et une prime de 25 %, plafonnée à 2 millions de dinars, pour le thermalisme, les hôtels de charme, les gîtes ruraux et les chambres d'hôtes [@decret-2013-4144-primes-tourisme].
+
+::::
+
+:::: {.chronologie-repliable titre="Primes et zones de développement régional : registre des décrets, 1994-2024, avec leurs taux, leurs plafonds, leur portée et leur date d'effet"}
+
+| Année | Date d'effet | Texte | Changement | Portée |
+|---|---|---|---|---|
+| []{#r-ri-d-94-426}1994 | non établie ici | décret n° 94-426 du [14 février 1994]{.insecable} [@decret-94-426-zones-developpement-regional, annexe 1] | délimite les zones d'encouragement au développement régional du code de 1993 : une seule catégorie ; abroge les décrets n° 87-1287 (zones de décentralisation industrielle), n° 90-1509 (zones touristiques de décentralisation) et n° 91-87 (régions sahariennes) | rupture |
+| []{#r-ri-d-94-539}1994 | non établie ici | décret n° 94-539 du [10 mars 1994]{.insecable} [@decret-94-539-primes-developpement-regional, art. 3 et 4] | prime de 8 % du coût du projet ; participation aux infrastructures « totale ou partielle » | rupture |
+| []{#r-ri-d-99-483}1999 | non établie ici | décret n° 99-483 du [1^er^ mars 1999]{.insecable} [@decret-99-483-zones-developpement-regional, annexes 1 et 1 *bis*] | une catégorie → deux : « zones » et « zones prioritaires » | rupture |
+| []{#r-ri-d-99-486}1999 | non établie ici | décret n° 99-486 du [1^er^ mars 1999]{.insecable} [@decret-99-486-primes-developpement-regional, art. 1^er^] | prime : 8 % → 15 % dans les zones, 25 % dans les zones prioritaires | étape |
+| []{#r-ri-d-2008-387}2008 | [25 février 2008]{.insecable} | décret n° 2008-387 du [11 février 2008]{.insecable} [@decret-2008-387-zones-developpement-regional, annexe n° 1] | deux catégories → trois ; liste par délégations seulement : 138 délégations | rupture |
+| []{#r-ri-d-2008-389}2008 | [25 février 2008]{.insecable} | décret n° 2008-389 du [11 février 2008]{.insecable} [@decret-2008-389-primes-developpement-regional, art. 1^er^ et 4] | prime : 8 %, 15 % et 25 % selon la catégorie, avec des plafonds de 320 000 dinars, 600 000 dinars et 1 million de dinars ; infrastructures : 25 %, 50 % et 75 % | étape |
+| []{#r-ri-d-2011-528}2011 | [19 mai 2011]{.insecable} | décret n° 2011-528 du [9 mai 2011]{.insecable} [@decret-2011-528-primes-developpement-regional, art. 1^er^ à 4] | plafonds : 320 000 → 500 000 dinars, 600 000 dinars → 1 million, 1 → 1,5 million ; fonds de roulement compris dans l'assiette ; infrastructures : 50 % → 75 % et 75 % → 85 % | ajustement |
+| []{#r-ri-d-2013-4144}2013 | non établie ici | décret n° 2013-4144 du [19 septembre 2013]{.insecable} [@decret-2013-4144-primes-tourisme] | primes du tourisme : 8 % (plafond de 2,8 millions de dinars) et 25 % (plafond de 2 millions) | ajustement |
+| []{#r-ri-d-2017-389}2017 | [1^er^ janvier 2017]{.insecable} | décret gouvernemental n° 2017-389 du [9 mars 2017]{.insecable} [@decret-gouv-2017-389-incitations-financieres, art. 2, 3, 29 et annexe n° 2] | barème des quatre primes de la loi de l'investissement ; trois catégories → deux groupes, 147 délégations ; prime de 15 % et 30 % | rupture |
+| []{#r-ri-d-2017-389-regles}2017 | [1^er^ janvier 2017]{.insecable} | même décret [@decret-gouv-2017-389-incitations-financieres, art. 5, 7, 12 et 27] | règles communes aux primes : plafond de cumul, fonds propres, seuil d'emploi, versement en deux fois (art. 5, 7 et 12) ; imputation des dépenses sur les budgets existants (art. 27) | étape |
+| []{#r-ri-d-2024-182}2024 | [10 avril 2024]{.insecable} | décret n° 2024-182 du [4 avril 2024]{.insecable} [@decret-2024-182-incitations-financieres, art. 5] | El Hamma Ouest (Gabès) ajoutée au deuxième groupe ; fonds propres de 10 % pour les projets d'au plus 1 million de dinars ; conditions de la prime d'employabilité | ajustement |
+
+Les dates d'effet de 2008, 2011 et 2024 sont calculées : cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, les 20 février 2008, 14 mai 2011 et 5 avril 2024 [@loi93-64, art. 2]. Celle de 2017 est fixée par le décret lui-même, qui prend effet à l'entrée en vigueur de la loi de l'investissement, avant sa propre publication.
+
+Vingt décrets de retouche ne sont connus ici que par leur intitulé : les décrets n° 96-40, 96-1560, 97-629, 97-2107 et 98-1042, qui complètent la liste des zones de 1994 ; n° 2003-1080, 2004-2177 et 2005-1686, qui modifient ou complètent celle de 1999 ; et, pour les primes, les décrets n° 95-2430, 96-1765, 98-1264, 2001-2884, 2002-1363, 2003-1677, 2004-973, 2004-1471, 2005-381, 2007-895, 2009-1501 et 2009-2752. Un décret n° 2011-3197 du 18 octobre 2011 intègre la prime au schéma de financement des projets.
+
+<!-- TODO (documentaliste) : lire les vingt décrets de retouche (zones : 1996-1998 et 2003-2005 ; primes : 1995-2009) et le décret n° 2011-3197 pour compléter le registre ; les décrets n° 87-1287, 90-1509 et 91-87, abrogés en 1994, pour l'état antérieur au code. -->
+
+::::
+
+### 2019-2021 — la fin du régime de l'exportation {#sec-ri-2019-2021}
+
+[La loi de finances pour 2019](#r-ri-lf-2019) abroge les articles 67 à 69 du code de l'impôt, c'est-à-dire le régime de l'exportation tel que la loi de 2017 venait de l'y inscrire.
+
+- **Avant → après.** Bénéfices de l'exportation imposés à 10 % → taux de droit commun de l'impôt sur les sociétés.
+- **Un maintien de deux ans.** Les entreprises en activité au 31 décembre 2018 conservent le bénéfice du régime jusqu'au 31 décembre 2020.
+- **La suite relève des taux de l'impôt sur les sociétés** : le palier de 13,5 % voté en 2018 pour 2021 et qui n'a régi aucun exercice, le taux de 15 % applicable aux bénéfices de 2021, celui de 20 % à partir de 2024 (@fig-ri-frise). Elle est exposée au chapitre de cet impôt (@sec-impot-societes).
+
+### 2019 — la loi relative à l'amélioration du climat de l'investissement {#sec-df-loi-2019-47}
+
+[La loi n° 2019-47 du 29 mai 2019](#r-ri-2019-47) n'est pas une loi fiscale : son objet est de « promouvoir l'investissement et améliorer le climat des affaires par la simplification des procédures requises pour la création d'entreprises économiques, la facilitation de leurs modes de financement et le renforcement de la gouvernance et de la transparence des sociétés ». Elle est exécutoire le 18 juin 2019. Pour les régimes d'incitation, elle fait trois choses : elle élargit les primes qui échappent au plafond de cumul (@sec-df-primes-zones), elle ouvre aux projets d'intérêt national la prise en charge de la contribution patronale pendant dix ans au plus, et elle prolonge jusqu'à la fin de 2020 les droits acquis du code de 1993 (@sec-ri-droits-acquis).
+
+<!-- TODO (documentaliste) : lire l'art. 29 de la LF 2020 (« clarification du champ d'application de l'article 15 »), les art. 30 et 32 de la LF 2023 et l'art. 55 de la LF 2025 pour dater les reports ; relire l'objet des § 4 de l'art. 19 et § 3-4 de l'art. 20 de la loi n° 2017-8 (art. 35). Non repris au chapitre : solde du compte de bonification d'intérêt aux états financiers de la BCT (14,9 MD fin 2023, 10,8 MD fin 2024 — deux points, solde et non dépense ; note du 11 octobre 2026, § 1.7). -->
+
+:::: {.chronologie-repliable titre="Fin du régime de l'exportation et loi n° 2019-47 sur le climat de l'investissement : portée fiscale et financière article par article, et registre des textes, 2019-2025"}
+
+Sur trente-huit articles, huit touchent l'impôt ou le budget (@tbl-df-loi-2019-47). La loi ne comporte pas de clause générale d'effet ; elle est exécutoire le 18 juin 2019, cinq jours après le dépôt, le 13 juin, du *Journal officiel* au siège du gouvernorat de Tunis [@loi93-64, art. 2].
+
+: La portée fiscale et financière de la loi n° 2019-47 du 29 mai 2019 {#tbl-df-loi-2019-47}
+
+| Article | Changement | Nature |
+|---|---|---|
+| 12 et 13 | code de l'impôt, art. 56 : les organismes publics chargés de la constitution des entreprises peuvent délivrer la carte d'identification fiscale et recevoir la déclaration d'existence | procédure fiscale, sans effet sur l'impôt dû |
+| 15 | les souscriptions des sociétés d'investissement à capital risque et des fonds communs de placement à risque dans une entreprise transmise ou restructurée ouvrent droit à la déduction pour réinvestissement de l'article 77 du code de l'impôt, « jusqu'au 31 décembre 2022 » | avantage fiscal, temporaire |
+| 18 | loi de l'investissement, art. 19 : le cumul des primes reste plafonné au tiers du coût de l'investissement ; aux primes déjà hors plafond — infrastructures, employabilité — s'ajoutent la performance économique et le développement durable ; versement dans les six mois | avantage financier |
+| 19 | loi de l'investissement, art. 20 : les projets d'intérêt national peuvent recevoir la prise en charge de la contribution patronale pendant dix ans au plus, et des terres domaniales non agricoles en location de longue durée ou au dinar symbolique | avantage financier |
+| 21 | bonification d'intérêt : l'État prend en charge l'écart entre le taux des crédits d'investissement et le taux moyen du marché monétaire, dans la limite de trois points, pour les petites et moyennes entreprises — hors commerce, finance, immobilier, hydrocarbures et mines —, sur les crédits accordés du 1^er^ janvier 2019 à la fin de décembre 2020 | avantage financier, temporaire |
+| 35 | loi du 14 février 2017, art. 19 et 20 : l'échéance du 31 décembre 2019 de dispositions transitoires de la refonte des avantages fiscaux est portée au 31 décembre 2020 | disposition transitoire |
+| 38 | loi de l'investissement, art. 28 et 29 : les droits acquis du code de 1993 sont ouverts aux entreprises qui ont déposé leur déclaration d'investissement avant le 1^er^ janvier 2017 et obtenu la décision d'octroi et l'entrée en activité au plus tard le 31 décembre 2020 | disposition transitoire |
+
+Source : @loi-2019-47-climat-investissement, art. 12, 13, 15, 18, 19, 21, 35 et 38.
+
+La loi de finances pour 2020 a ensuite précisé le champ de l'article 15, et celles pour 2023 et 2025 ont reporté des échéances de ces dispositions temporaires ; seul l'intitulé de ces articles est connu ici.
+
+| Date d'effet | Texte | Ce qu'il fait | Portée |
+|---|---|---|---|
+| []{#r-ri-lf-2019}[1^er^ janvier 2019]{.insecable} | loi de finances pour 2019 [@loi2018-56-lf2019, art. 37 et 41] | abroge les articles 67 à 69 du code de l'impôt (art. 37) ; maintient le régime jusqu'au 31 décembre 2020 pour les entreprises en activité au 31 décembre 2018 (art. 41) | rupture |
+| []{#r-ri-2019-47}[18 juin 2019]{.insecable} | loi n° 2019-47 du [29 mai 2019]{.insecable} [@loi-2019-47-climat-investissement, art. 1, 12, 13, 15, 18, 19, 21, 35 et 38] ; date d'effet calculée [@loi93-64, art. 2] | primes hors plafond de cumul ; prise en charge patronale des projets d'intérêt national ; bonification d'intérêt ; droits acquis prolongés | étape |
+| []{#r-ri-2019-47-suites}— | lois de finances pour 2020, 2023 et 2025 [@lf-2020, art. 29 ; @lf-2023, art. 30 et 32 ; @lf-2025, art. 55] | champ de l'article 15 précisé ; échéances reportées ; seul l'intitulé de ces articles est connu ici | ajustement |
+
+::::
+
+## L'état du droit en 2026 : qui a droit à quoi {#sec-ri-etat-du-droit}
+
+Trois ensembles d'avantages sont en vigueur en 2026 : des avantages fiscaux, logés dans le code de l'impôt depuis le 1^er^ avril 2017 ; des primes et des prises en charge, versées au titre de la loi de l'investissement depuis le 1^er^ janvier 2017 ; et, pour qui investit dans les zones de développement régional, des taux et des durées majorés. Le dernier texte qui les modifie est le décret du 4 avril 2024 (@sec-df-primes-bareme).
+
+### Les avantages fiscaux, par régime {#sec-ri-avantages-en-vigueur}
+
+Quatre régimes d'exploitation ouvrent droit à une déduction des revenus ou des bénéfices (@tbl-df-1993-2017).
+
+- **Développement régional** : déduction totale pendant cinq ans dans le premier groupe de [zones de développement régional](#g-zone-developpement-regional), dix ans dans le deuxième ; ensuite, deux tiers des revenus déductibles et bénéfices imposés au taux réduit de 10 %.
+- **Agriculture et pêche** : déduction totale pendant dix ans, puis la même règle.
+- **Entreprises nouvelles** : déduction de 100 %, 75 %, 50 % et 25 % des revenus ou bénéfices au cours des quatre premières années, hors finance, énergie non renouvelable, mines, promotion immobilière, consommation sur place, commerce et télécommunications.
+- **Projets d'intérêt national** : déduction des bénéfices dans la limite de dix ans, au titre de la loi de l'investissement.
+
+Le régime de l'exportation n'en fait plus partie depuis le 1^er^ janvier 2019 (@sec-ri-2019-2021). Les avantages attachés à la taxe sur la valeur ajoutée, au droit de consommation et aux droits de douane sont décrits aux chapitres de ces impôts (@sec-tva, @sec-droits-consommation).
+
+### Les primes et leurs plafonds {#sec-df-primes-zones}
+
+La prime de développement régional est de 15 % du coût d'investissement approuvé, plafonnée à 1,5 million de dinars, dans le premier groupe de zones, et de 30 %, plafonnée à 3 millions, dans le deuxième ; l'État participe en outre aux dépenses d'infrastructure à hauteur de 65 % ou de 85 %, dans la limite de 10 % du coût du projet et de 1 million de dinars (@sec-df-primes-bareme). Les trois autres primes de la loi de l'investissement ont chacune leur taux et leur plafond (@tbl-df-primes-2017).
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré -->
+
+: Les primes de la loi de l'investissement autres que la prime de développement régional : taux et plafonds au 1^er^ janvier 2017, et ce que change le décret du 4 avril 2024 {#tbl-df-primes-2017}
+
+| Prime | Objet | Taux | Plafond | Changement au [10 avril 2024]{.insecable} |
+|---|---|---|---|---|
+| Augmentation de la valeur ajoutée et de la compétitivité | investissement direct dans les secteurs prioritaires | 15 % du coût approuvé ; 30 % pour l'agriculture, la pêche et l'aquaculture de catégorie « A » | 1 million de dinars | — |
+| idem | investissement direct dans les filières économiques | 15 % | 1 million de dinars | — |
+| idem, performance économique | investissements matériels de maîtrise des nouvelles technologies et d'amélioration de la productivité | 50 % ; 55 % en catégorie « A » ; 60 % pour les sociétés mutuelles de services agricoles et les groupements de développement | 500 000 dinars | taux de 60 % étendu aux sociétés communautaires |
+| idem | investissements immatériels | 50 % | 500 000 dinars, prime d'étude comprise (20 000 dinars) | — |
+| idem | recherche et développement | 50 % des dépenses approuvées | 300 000 dinars | — |
+| idem | formation certifiante des employés tunisiens | 70 % du coût | 20 000 dinars par an et par entreprise | — |
+| Développement de la capacité d'employabilité | prise en charge par l'État de la contribution patronale au régime légal de sécurité sociale, pour les salariés tunisiens | durée : 3 ans dans les secteurs prioritaires, 5 ans dans le premier groupe de zones, 10 ans dans le deuxième, à partir de l'entrée en activité effective | — | la condition d'un premier recrutement à titre permanent n'est plus exigée |
+| idem | prise en charge d'une partie des salaires des diplômés du supérieur, selon le taux d'encadrement | 50 % du salaire, pendant 1 an (encadrement de 10 à 15 %) ou 3 ans (plus de 15 %) | 250 dinars par mois | la condition d'un premier recrutement est ajoutée |
+| Développement durable | dépollution, technologies propres, équipements collectifs de dépollution | 50 % des composantes approuvées | 300 000 dinars | — |
+
+Sources : [loi de l'investissement, art. 19](#r-ri-2016-71) ; [décret gouvernemental de 2017, art. 2 et 3](#r-ri-d-2017-389) ; [décret du 4 avril 2024](#r-ri-d-2024-182). La catégorie « A » réunit les investissements agricoles d'au plus 200 000 dinars, de pêche d'au plus 300 000 dinars et d'aquaculture d'au plus 500 000 dinars, et tout investissement des sociétés mutuelles de services agricoles et des groupements de développement.
+
+Quatre règles s'appliquent à toutes ces primes, d'après [le décret de 2017](#r-ri-d-2017-389-regles).
+
+- **Un plafond de cumul.** L'ensemble des primes reçues, au titre de la loi de l'investissement comme d'autres textes, ne dépasse pas le tiers du coût de l'investissement, ni 5 millions de dinars. La participation aux infrastructures et la prime d'employabilité n'y entrent pas ; depuis 2019, les primes de performance économique et la prime de développement durable non plus (@sec-df-loi-2019-47).
+- **Un apport en fonds propres.** Il est d'au moins 30 % du coût, et de 10 % pour la catégorie « A » ; depuis le 10 avril 2024, de 10 % pour tout projet d'au plus 1 million de dinars.
+- **Un seuil d'emploi.** Les projets des filières et des secteurs prioritaires, hors agriculture, créent au moins dix emplois permanents.
+- **Un versement en deux fois.** 40 % de la prime quand 40 % du coût est réalisé, 60 % à l'entrée en activité effective ; le code de 1993 versait en trois tranches.
+
+Jusqu'à ce que le Fonds tunisien de l'investissement exerce ses missions, [le décret de 2017](#r-ri-d-2017-389-regles) impute ces dépenses sur les budgets qui les portaient déjà : le fonds spécial de développement de l'agriculture, le Fonds de promotion et de décentralisation industrielle (FOPRODI) pour l'industrie, l'artisanat et les services, et le titre II du ministère des Affaires sociales pour la prise en charge de la contribution patronale. Les comptes du FOPRODI sont donnés avec le coût (@sec-df-foprodi).
+
+### Les zones de développement régional {#sec-df-zones-carte}
+
+Les délégations qui ouvrent droit à ces avantages sont énumérées par décret. En 2026, la liste compte 148 délégations en deux groupes : 13 dans le premier, 135 dans le deuxième. Cinq listes se sont succédé depuis 1994 (@fig-ri-zones). Aucun des textes ne publie de décompte : les nombres sont comptés ici sur les listes.
+
+```{python}
+#| label: fig-ri-zones
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import regimes_incitation as fig_ri
+import figtools
+figtools.figure_tabs(
+    fig_ri.fig_zones(), fig_ri.table_zones(), fig_ri.ZONES,
+    slug="fig_zones_developpement_regional",
+    caption="Les zones de développement régional : délégations classées par catégorie, listes de 1994, 1999, 2008, 2017 et 2024 (industrie, artisanat et services)",
+    note_lecture=(
+        "Une barre par liste, découpée selon la catégorie de zones, de la moins aidée à la "
+        "plus aidée. Les listes de 1994 et de 1999 classent des gouvernorats entiers : elles "
+        "ne se comptent pas en délégations et n'ont pas de barre. Les nombres sont comptés "
+        "sur les listes des décrets, qui ne publient aucun décompte. Les zones touristiques, "
+        "tenues dans des annexes séparées de 1994 à 2016, ne sont pas comptées."
+    ),
+    nominal=False,
+    generated="{{< meta date >}}")
+```
+
+<!-- TODO (documentaliste) : dates d'effet des décrets n° 94-426 et 94-539 (mention de dépôt du JORT n° 21 du 18 mars 1994 à lire sur la dernière page du fascicule) et des décrets n° 99-483 et 99-486 (fascicule déposé le 9 mars 1999, soit le 14 mars 1999 par le calcul, sous réserve d'une clause d'effet aux articles 2 et suivants du décret n° 99-486, à lire). Listes de 1994 et de 1999 en nombre de délégations : il faut le découpage administratif de l'époque (note du 11 octobre 2026, § 1.5 et § 4.1, points 12 et 13). -->
+
+Trois constats ressortent de la comparaison des listes.
+
+- **De gouvernorats entiers à des délégations.** En 1994 et en 1999, l'intérieur et le Sud entrent par gouvernorats entiers — en 1994 : Béja, Jendouba, Siliana, Le Kef, Kairouan, Kasserine, Sidi Bouzid, Zaghouan, Tataouine, Gafsa, Kébili et Tozeur. Depuis 2008, la liste ne nomme plus que des délégations.
+- **Une hiérarchie créée en 1999, portée à trois niveaux en 2008, ramenée à deux en 2017.** Le décret de 1999 distingue des « zones » et des « zones prioritaires » ; celui de 2008 un premier groupe, un deuxième groupe et des zones prioritaires. En 2017, le deuxième groupe et les zones prioritaires de 2008 forment ensemble le « deuxième groupe ».
+- **Le périmètre de 2017 est à peu près celui de 2008.** La liste passe de 138 à 147 délégations, et le premier groupe de 10 à 13 : trois délégations du deuxième groupe de 2008 y sont classées, quand le reste passe à la prime de 30 %.
+
+Aucun texte modifiant la carte entre le décret de 2008 et l'abrogation du code de 1993 n'est identifié ici. Les durées de déduction attachées à chaque catégorie de zones entre 2008 et 2016 ne sont pas établies ici.
+
+<!-- RECHERCHE r-fisc-zones-modif-99-483 : texte modifiant la délimitation des zones du décret n° 99-483 entre le décret n° 2008-387 et l'abrogation du code de 1993 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : rédactions de l'article 23 (durées de déduction par catégorie de zones) et des articles 25 et 25 bis (prise en charge de la contribution patronale) du code de 1993 entre 2005 et 2016 : seuls les intitulés sont connus (lois de finances pour 2005, art. 19, et pour 2014, art. 22 ; loi n° 2007-69) ; note du 11 octobre 2026, § 4.1, point 11. -->
+
+**La liste de 2017 est celle d'un décret pris pour la loi de l'investissement, non pour le code de l'impôt.** L'article 63 du code de l'impôt renvoie la liste des zones de développement régional à « un décret gouvernemental » qu'il ne nomme pas. Que l'annexe n° 2 du [décret du 9 mars 2017](#r-ri-d-2017-389) vaille aussi pour la déduction de l'article 63 n'est établi ici par aucun texte.
+
+<!-- RECHERCHE r-fisc-art63-decret-zones : décret gouvernemental fixant, pour l'article 63 du code de l'impôt, la liste des zones de développement régional et des activités exclues (voir docs/recherches.yml) -->
+
+:::: {.chronologie-repliable titre="Zones de développement régional : nombre de délégations et de gouvernorats par catégorie, listes de 1994, 1999, 2008, 2017 et 2024, avec leurs dates d'effet"}
+
+: Les zones de développement régional en nombre de délégations, par catégorie, de 1994 à 2024 (industrie, artisanat et services) {#tbl-df-zones-nombre}
+
+| Année | Date d'effet | Catégorie la moins aidée | Catégorie intermédiaire | Catégorie la plus aidée | Total |
+|---|---|---|---|---|---|
+| 1994 | non établie ici | une seule catégorie : 12 gouvernorats entiers et 27 délégations de 6 autres | — | — | non dénombrable en délégations |
+| 1999 | non établie ici | « zones » : 13 délégations de 7 gouvernorats | — | « zones prioritaires » : 9 gouvernorats entiers et 43 délégations de 9 autres | non dénombrable en délégations |
+| 2008 | [25 février 2008]{.insecable} | premier groupe : 10 délégations, 4 gouvernorats | deuxième groupe : 40 délégations, 10 gouvernorats | zones prioritaires : 88 délégations, 16 gouvernorats | 138 délégations |
+| 2017 | [1^er^ janvier 2017]{.insecable} | premier groupe : 13 délégations, 4 gouvernorats | — | deuxième groupe : 134 délégations, 17 gouvernorats | 147 délégations, 18 gouvernorats |
+| 2024 | [10 avril 2024]{.insecable} | premier groupe : 13 délégations | — | deuxième groupe : 135 délégations | 148 délégations |
+
+Sources : @decret-94-426-zones-developpement-regional, annexe 1 ; @decret-99-483-zones-developpement-regional, annexes 1 et 1 *bis* ; @decret-2008-387-zones-developpement-regional, annexe n° 1 ; @decret-gouv-2017-389-incitations-financieres, art. 29 et annexe n° 2 ; @decret-2024-182-incitations-financieres, art. 5. Les décrets de 2008 et de 2024 ne fixent pas leur date d'effet : elle est calculée cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, les 20 février 2008 et 5 avril 2024 [@loi93-64, art. 2]. Les zones touristiques, tenues dans des annexes séparées de 1994 à 2016, ne sont pas comptées.
+
+::::
+
+:::: {.chronologie-repliable titre="Zones de développement régional : listes nominatives des délégations du décret de 2008 (trois catégories) et du décret gouvernemental de 2017 (deux groupes, avec l'ajout de 2024) ; délégations nouvelles et reclassées en 2017 ; la liste de 2017 et l'article 63 du code de l'impôt"}
+
+**De 2008 à 2017.**
+
+- **Le périmètre de 2017 est à peu près celui de 2008.** La liste passe de 138 à 147 délégations. Les neuf délégations nouvelles sont situées dans des gouvernorats déjà classés en entier ou presque : Touiref (Le Kef), Zanouch et Sidi Boubaker (Gafsa), Essaïda (Sidi Bouzid), Aïn Jloula et Menzel Mhiri (Kairouan), Hammet El Djérid (Tozeur), Réjim Maatoug (Kébili) et Dekhilet Toujane (Gabès). Il n'est pas établi ici qu'il s'agisse de délégations créées entre-temps par découpage.
+- **Le premier groupe de 2017 est celui de 2008, plus trois délégations.** Ez-Zeriba, Bir Ali Ben Khalifa et Menzel Chaker, classées au deuxième groupe en 2008, passent au premier groupe : elles relèvent en 2017 de la prime de 15 %, quand le reste du deuxième groupe de 2008 passe à la prime de 30 % — et, si cette liste vaut aussi pour l'article 63 du code de l'impôt, de la déduction de cinq ans quand les autres passent à celle de dix ans.
+
+**La liste de 2017 est celle d'un décret pris pour la loi de l'investissement, non pour le code de l'impôt.** L'article 63 du code de l'impôt, issu de [la loi du 14 février 2017](#r-ri-2017-8), renvoie à « un décret gouvernemental » la liste des zones de développement régional et celle des activités exclues de la déduction, sans le nommer. [Le décret du 9 mars 2017](#r-ri-d-2017-389) est le seul texte identifié ici qui porte une liste de zones de développement régional en deux groupes, et il est postérieur à la loi du 14 février 2017 ; mais ses visas ne citent ni cette loi ni l'article 63. [La loi de finances pour 2018](#r-ri-lf-2018) parle des « zones de développement régional au sens de l'article 63 » sans nommer de décret non plus. Que l'annexe n° 2 du décret de 2017 vaille aussi pour la déduction de l'article 63 n'est donc établi ici par aucun texte.
+
+**Décret gouvernemental n° 2017-389, annexe n° 2** [@decret-gouv-2017-389-incitations-financieres].
+
+*Premier groupe (13 délégations).* Béja : Medjez El Bab. Zaghouan : Zaghouan, Bir M'chergua, Ez-Zeriba. Sfax : Agareb, Djebeniana, El Amra, El Hancha, El Ghraiba, Skhira, Bir Ali Ben Khalifa, Menzel Chaker. Sousse : Sidi El Hani.
+
+*Deuxième groupe (134 délégations ; 135 depuis le 10 avril 2024).*
+
+- Jendouba (9) : Jendouba, Jendouba Nord, Bou Salem, Tabarka, Aïn Draham, Fernana, Ghardimaou, Oued Meliz, Balta Bou Aouane.
+- Kasserine (13) : Kasserine Nord, Kasserine Sud, Ezzouhour, Hassi El Frid, Sbeitla, Sbiba, Djedeliane, El Ayoun, Thala, Hidra, Foussana, Feriana, Mejel Bel Abbès.
+- Kairouan (13) : Kairouan Nord, Kairouan Sud, Echbika, Sbikha, Haffouz, Hajeb El Ayoun, Nasrallah, Echrarda, Bouhajla, El Oueslatia, El Alaâ, Aïn Jloula, Menzel Mhiri.
+- Siliana (11) : Bou Arada, Gaâfour, El Krib, El Aroussa, Siliana Nord, Siliana Sud, Bou Rouis, Bargou, Makthar, Er-Rouhia, Kesra.
+- Sidi Bouzid (13) : Sidi Bouzid Ouest, Sidi Bouzid Est, Mezzouna, Regueb, Ouled Haffouz, Bir El Hafey, Sidi Ali Ben Aoûn, Menzel Bouzaïenne, Jilma, Cebalet Ouled Asker, Meknassy, Souk Jedid, Essaïda.
+- Le Kef (12) : Kef Ouest, Kef Est, Nebeur, Sakiet Sidi Youssef, Tajerouine, Kalaât Sénan, Kalaât Khasba, Djérissa, El Ksour, Dahmani, Sers, Touiref.
+- Tataouine (7) : Tataouine Nord, Tataouine Sud, Bir Lahmar, Smar, Ghomrassen, Dhehiba, Remada.
+- Béja (8) : Béja Nord, Béja Sud, Teboursouk, Tibar, Testour, Goubellat, Nefza, Amdoun.
+- Gafsa (13) : Gafsa Nord, Gafsa Sud, Sidi Aïch, El Ksar, Oum El Araies, Redeyef, Metlaoui, Mdhila, El Guetar, Belkhir, Sned, Sidi Boubaker, Zanouch.
+- Médenine (5) : Médenine Sud, Médenine Nord, Ben Guerdane, Sidi Makhlouf, Béni Khedeche.
+- Mahdia (4) : Chorbane, Essouassi, Hébira, Ouled Chamekh.
+- Gabès (6, puis 7) : Mareth, El Hamma, Menzel El Habib, Nouvelle Matmata, Matmata, Dekhilet Toujane ; El Hamma Ouest depuis le 10 avril 2024 [@decret-2024-182-incitations-financieres, art. 5].
+- Kébili (7) : Kébili Sud, Kébili Nord, Souk El Ahad, Douz Nord, Douz Sud, El Faouar, Réjim Maatoug.
+- Zaghouan (3) : El Fahs, Saouaf, En-Nadhour.
+- Tozeur (6) : Tozeur, Dégach, Tamaghza, Nefta, Hazoua, Hammet El Djérid.
+- Bizerte (3) : Djoumine, Ghézala, Sedjnane.
+- Sfax (1) : Kerkennah.
+
+**Décret n° 2008-387, annexe n° 1** [@decret-2008-387-zones-developpement-regional].
+
+*Premier groupe (10 délégations).* Zaghouan : Zaghouan, Bir M'chergua. Béja : Medjez El Bab. Sousse : Sidi El Hani. Sfax : Agareb, Djebeniana, El Amra, El Hancha, El Ghraiba, Skhira.
+
+*Deuxième groupe (40 délégations).* Zaghouan (3) : Ez-Zeriba, El Fahs, Saouaf. Bizerte (2) : Djoumine, Ghézala. Béja (6) : Béja Nord, Béja Sud, Teboursouk, Tibar, Testour, Goubellat. Siliana (4) : Bou Arada, Gaâfour, El Krib, El Aroussa. Mahdia (4) : Chorbane, Essouassi, Hébira, Ouled Chamekh. Sfax (2) : Bir Ali Ben Khalifa, Menzel Chaker. Kairouan (9) : Kairouan Nord, Kairouan Sud, Echebika, Sbikha, Haffouz, Hajeb El Ayoun, Nasrallah, Echrarda, Bouhajla. Sidi Bouzid (5) : Sidi Bouzid Ouest, Sidi Bouzid Est, Mezzouna, Regueb, Ouled Haffouz. Gabès (1) : Mareth. Médenine (4) : Médenine Nord, Médenine Sud, Ben Guerdane, Sidi Makhlouf.
+
+*Zones prioritaires (88 délégations).* Zaghouan (1) : En-Nadhour. Bizerte (1) : Sedjnane. Béja (2) : Nefza, Amdoun. Siliana (7) : Siliana Nord, Siliana Sud, Bou Rouis, Bargou, Makthar, Er-Rouhia, Kesra. Jendouba (9) : les neuf délégations de la liste de 2017. Le Kef (11) : les douze de 2017, sauf Touiref. Sfax (1) : Kerkennah. Kairouan (2) : Oueslatia, El Alâa. Kasserine (13) : les treize de 2017. Sidi Bouzid (7) : Bir El Hafey, Sidi Ali Ben Aoûn, Menzel Bouzaïenne, Jilma, Cebalet Ouled Asker, Meknassy, Souk Jedid. Gabès (4) : El Hamma, Menzel El Habib, Nouvelle Matmata, Matmata. Médenine (1) : Béni Khedeche. Tataouine (7) : les sept de 2017. Gafsa (11) : les treize de 2017, sauf Sidi Boubaker et Zanouch. Tozeur (5) : les six de 2017, sauf Hammet El Djérid. Kébili (6) : les sept de 2017, sauf Réjim Maatoug.
+
+**Décrets de 1994 et de 1999.** La liste de 1994 classe en entier douze gouvernorats et vingt-sept délégations de six autres : Sousse (2), Sfax (8), Médenine (4), Gabès (5), Bizerte (3) et Mahdia (5). Celle de 1999 range parmi les « zones » treize délégations — Béja (3), Zaghouan (3), Sousse (1), Sfax (1), Gabès (1), Mahdia (2), Kairouan (2) — et parmi les « zones prioritaires » neuf gouvernorats entiers — Kébili, Tozeur, Sidi Bouzid, Kasserine, Le Kef, Gafsa, Jendouba, Siliana, Tataouine — et quarante-trois délégations de neuf autres [@decret-94-426-zones-developpement-regional ; @decret-99-483-zones-developpement-regional].
+
+::::
+
+### Les droits acquis du code de 1993 {#sec-ri-droits-acquis}
+
+Le code abrogé continue de s'appliquer à des entreprises. La loi de l'investissement maintient les droits acquis ; [la loi du 29 mai 2019](#r-ri-2019-47) les ouvre aux entreprises qui ont déposé leur déclaration d'investissement avant le 1^er^ janvier 2017 et obtenu la décision d'octroi et l'entrée en activité au plus tard le 31 décembre 2020. Les rapports du ministère des Finances en gardent la trace : en 2023, les prises en charge de la contribution patronale au titre du code de 1993 s'élèvent encore à 16,5 millions de dinars, contre 1,9 million au titre de la loi de l'investissement (@tbl-df-financiers-reperes).
+
+## Ce que ces régimes coûtent au budget {#sec-ri-cout}
+
+Le manque à gagner fiscal — l'impôt que l'État ne perçoit pas — est mesuré par le ministère des Finances pour toutes les dérogations à cinq impôts, et non régime par régime : il est au chapitre des dépenses fiscales, qui dit aussi la part qu'y tiennent les régimes d'incitation (@sec-df-part-incitations). Cette section donne ce que le budget *verse* : les avantages financiers relevés par les rapports du ministère, de 2018 à 2023, puis les crédits que les lois de finances ouvrent de 1995 à 2019 au fonds qui paie les primes de l'industrie et à la prise en charge de la contribution patronale, enfin les comptes de ce fonds à la Banque centrale. Les études extérieures sur le coût des incitations du code de 1993 sont à part (@sec-df-etudes).
+
+### Les sommes versées, 2018-2023 {#sec-df-sommes-versees}
+
+Le second chapitre du rapport annuel du ministère des Finances ne chiffre pas un manque à gagner : il relève des sommes, avantage par avantage, d'après ce que transmettent les organismes qui accordent et contrôlent les aides. Cinq rapports, annexés aux projets de loi de finances pour 2021 à 2025, couvrent les exercices 2018 à 2023 ; le total qu'ils publient va de 913 millions de dinars pour 2018 à 520,7 millions pour 2023 (@tbl-df-financiers). Ces cinq rapports ne forment pas une série : un même exercice y reçoit jusqu'à trois valeurs, et le périmètre du total change à partir du rapport annexé au projet de loi de finances pour 2023.
+
+: Total des avantages financiers par exercice, selon chacun des cinq rapports annexés aux projets de loi de finances pour 2021 à 2025 (millions de dinars courants) {#tbl-df-financiers}
+
+| Exercice | Rapport annexé au projet pour 2021 | pour 2022 | pour 2023 | pour 2024 | pour 2025 |
+|---|---:|---:|---:|---:|---:|
+| 2018 | 913,0 |  |  |  |  |
+| 2019 | 932,0 | 922,7 |  |  |  |
+| 2020 |  | 701,8 | 631,7 | 628,0 |  |
+| 2021 |  |  | 641,7 | 645,5 | 645,5 |
+| 2022 |  |  |  | 543,5 | 545,5 |
+| 2023 |  |  |  |  | 520,7 |
+
+Source : @gbo-depenses-fiscales, rapports annexés aux projets de loi de finances pour 2021 (tableau n° 5, p. 96), 2024 et 2025 (tableau n° 4) ; @minfin-depenses-fiscales-plf2022, tableau n° 4, p. 73 ; @minfin-depenses-fiscales-plf2023, tableau n° 4, p. 73. Les rapports pour 2021 et 2022 comptent dans le total les prêts, les dotations remboursables et les participations au capital ; les rapports pour 2023, 2024 et 2025 les en sortent.
+
+::: {.callout-note title="Cinq rapports ne font pas une série"}
+**Le total se lit en colonne, non en ligne.** Chaque colonne est un rapport, avec son périmètre ; aucune courbe n'est tracée d'un exercice à l'autre, elle raccorderait des périmètres différents.
+
+**À partir du rapport pour 2023, les prêts sortent du total.** Prêts, dotations remboursables et participations au capital n'y sont plus comptés : l'exercice 2020 vaut 701,8 millions de dinars dans le rapport pour 2022 et 631,7 millions dans le rapport pour 2023 [@minfin-depenses-fiscales-plf2023, p. 68].
+
+**L'exercice 2019 est révisé**, de 932 à 922,7 millions de dinars, par le rapport pour 2022 [@minfin-depenses-fiscales-plf2022, p. 69].
+
+**Les montants ne sont pas tous des paiements.** Pour les prises en charge de cotisations, ce sont les sommes que l'État reconnaît devoir aux caisses ; pour la formation et l'emploi, les montants engagés [@minfin-depenses-fiscales-plf2022, p. 69].
+:::
+
+**Par domaine.** La formation et l'emploi font le premier poste dans chacun des rapports, devant l'investissement — où se rangent les primes de la loi de l'investissement et les avantages du code de 1993 encore servis. Le rapport pour 2025 donne, pour 2021, 2022 et 2023, 285,7, 263,2 et 255,9 millions de dinars à la formation et à l'emploi, et 160,8, 91,9 et 108,4 millions à l'investissement (@tbl-df-financiers-domaines).
+
+**Les lignes des régimes d'incitation.** Chaque rapport détaille les avantages un par un, sous un code qui ne change pas d'un rapport à l'autre. Le tableau qui suit en retient les lignes du développement régional et l'ensemble des prises en charge de la contribution patronale de sécurité sociale, réparties selon leur fondement (@tbl-df-financiers-reperes).
+
+: Primes de développement régional et prises en charge de la contribution patronale, exercices 2018 à 2023 : une colonne par exercice et par rapport (millions de dinars courants) {#tbl-df-financiers-reperes}
+
+| Ligne | 2018<br>(rapport 2021) | 2019<br>(rapport 2021) | 2019<br>(rapport 2022) | 2020<br>(rapport 2022) | 2020<br>(rapport 2024) | 2021<br>(rapport 2025) | 2022<br>(rapport 2025) | 2023<br>(rapport 2025) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Prime d'investissement au titre du développement régional | 22,5 | 42,6 | 42,6 | 37,5 | 37,5 | 39,3 | 36,6 | 33,1 |
+| Participation de l'État aux dépenses d'infrastructure, développement régional | 0,3 | 0,2 | 0,2 | 0,1 | 0,1 | 1,6 | 2,2 | 3,1 |
+| Prime d'investissement des projets d'intérêt national | — | — | 0,0 | 8,1 | 8,1 | 0,0 | 0,0 | 0,0 |
+| Primes agricoles : secteurs prioritaires, et investissements matériels de productivité | 60,7 | 101,8 | 101,8 | 58,0 | 58,0 | 83,8 | 38,2 | 52,6 |
+| **Prises en charge de la contribution patronale, ensemble** | **181,9** | **54,0** | **55,1** | **62,4** | **62,4** | **65,9** | **39,0** | **43,3** |
+| dont code de 1993 | 145,2 | 22,6 | 22,6 | 43,0 | 43,0 | 29,9 | 13,5 | 16,5 |
+| — dont développement régional, « article 25 bis » | 131,0 | 21,0 | 21,0 | 42,2 | 42,2 | 29,4 | 13,4 | 16,0 |
+| dont loi de l'investissement de 2016 | 0,0 | 0,0 | 0,0 | 0,0 | 0,0 | 1,3 | 0,9 | 1,9 |
+| dont programmes d'emploi | 36,7 | 31,4 | 31,4 | 14,9 | 14,9 | 23,9 | 8,8 | 14,9 |
+| — dont salaire de l'agent recruté, dans la limite de 600 dinars par mois | 19,1 | 23,1 | 23,1 | 14,9 | 14,9 | 18,6 | 8,1 | 7,3 |
+| dont technologies de l'information et de la communication | 0,0 | 0,0 | 1,1 | 4,5 | 4,5 | 10,8 | 15,8 | 10,1 |
+
+Source : @gbo-depenses-fiscales, rapports annexés aux projets de loi de finances pour 2021, 2024 et 2025, tableaux détaillés par avantage ; @minfin-depenses-fiscales-plf2022, mêmes tableaux. Les sous-totaux par fondement sont calculés ici, par addition des lignes ; leur somme redonne, pour chaque colonne, la ligne d'ensemble que publie le rapport. Le code de 1993 réunit six lignes, la loi de l'investissement quatre, les programmes d'emploi neuf.
+
+Trois constats ressortent de ces lignes.
+
+- **La prime d'investissement de développement régional se tient entre 32 et 43 millions de dinars par an de 2019 à 2023**, après 22,5 millions en 2018 ; l'exercice 2022 vaut 32,1 millions dans le rapport pour 2024 et 36,6 millions dans le rapport pour 2025.
+- **La chute des prises en charge patronales entre 2018 et 2019 tient à une seule ligne.** L'ensemble passe de 181,9 à 54,0 millions de dinars ; la ligne du développement régional que les rapports rattachent à l'« article 25 bis » du code de 1993 passe, elle, de 131,0 à 21,0 millions. Le rapport n'en donne pas la cause.
+- **Le code abrogé pèse encore plus que la loi qui le remplace.** En 2023, sept ans après l'abrogation, les prises en charge au titre du code de 1993 s'élèvent à 16,5 millions de dinars, contre 1,9 million au titre de la loi de l'investissement, dont les premières lignes non nulles datent de 2021.
+
+Ces montants sont ceux que déclarent les organismes, non des crédits votés. Les crédits que les lois de finances ouvrent au Fonds de promotion et de décentralisation industrielle et à la prise en charge de la contribution patronale sont donnés pour 1995 à 2019 (@sec-df-foprodi et @sec-ri-credits-programmes). Ni les crédits des autres primes — budgets des ministères, comptes du Fonds tunisien de l'investissement, par lequel passent depuis 2017 [les primes de la loi de l'investissement](#r-ri-2016-71) —, ni le coût des prises en charge pour la sécurité sociale ne sont établis ici : les rapports comptent ce que l'État verse aux caisses ou reconnaît leur devoir, non ce qu'elles ont reçu. Aucune série de sommes versées n'est établie ici pour les exercices antérieurs à 2016. Aucun rapport annexé au projet de loi de finances pour 2026 n'est identifié ici.
+
+<!-- TODO (documentaliste) : (1) crédits budgétaires des primes et des prises en charge — le FOPRODI et la prise en charge patronale sont aux tableaux des crédits de programmes des lois de finances (« D » ; « ث » dans l'édition arabe), non au tableau « ب » des fonds spéciaux du Trésor : relevés pour 1995-2019 (#sec-df-foprodi, #sec-ri-credits-programmes), avec l'aide aux promoteurs touristiques et le FONAPRA ; restent les encouragements à l'agriculture des mêmes tableaux (trois séries qui ne s'enchaînent pas, note § 12), les lois de règlement (2010-2016), les budgets par ministère depuis 2013, comptes du Fonds tunisien de l'investissement et rapports de l'Instance tunisienne de l'investissement : rien n'est relevé (note du 11 octobre 2026, § 4.1, points 1 et 2) ; (2) coût côté CNSS des prises en charge : états financiers de la CNSS (créances sur l'État), rapports d'activité, rapports annuels de performance de la mission Affaires sociales (§ 1.8 et § 4.1, point 10) ; à croiser avec le volume « Cotisations sociales » ; (3) sommes versées avant 2016 : aucune série ; rapports de la Cour des comptes, archives du web de l'APII et de l'APIA non ouverts ; (4) rapport annexé au PLF 2026 : absent du portail gbo.tn et de la page « loi de finances » de finances.gov.tn le 11 octobre 2026, vues par année non parcourues (§ 1.1) ; (5) cause de la chute de la ligne 031106 entre 2018 et 2019, et de la sortie du « financement des petits projets » du total du rapport 2025 (imprimé p. 57, non compté) ; (6) mise à niveau industrielle, primes agricoles avant 2018 : non relevées. -->
+
+<!-- TODO (rédacteur) : aucune figure pour les avantages financiers (figure « un point par rapport » écartée le 11 octobre 2026) — chaque rapport ne donne que deux ou trois exercices, et les cinq rapports n'ont pas le même périmètre ; une figure par segments n'aurait que un à trois points par segment, et le tableau « une colonne par rapport » se lit sans elle. À reprendre si un rapport ultérieur republie une série longue à périmètre constant. Les montants sont en dinars courants seulement : le chapitre n'a pas d'année de référence pour des dinars constants (point à trancher). -->
+
+:::: {.chronologie-repliable titre="Avantages financiers, 2018-2023 : comment lire les montants (périmètre, révision de 2019, nature des sommes) ; montants par forme, par domaine et par programme d'investissement dans chacun des cinq rapports"}
+
+**Le total se lit en colonne, non en ligne.** Chaque colonne est un rapport, avec son périmètre. Aucune courbe n'est tracée ici d'un exercice à l'autre : elle raccorderait des périmètres différents.
+
+**À partir du rapport pour 2023, les prêts sortent du total.** Les prêts, les dotations remboursables et les participations au capital n'y sont plus comptés, le rapport les tenant pour le volume de l'intervention publique et non pour son coût [@minfin-depenses-fiscales-plf2023, p. 68]. L'exercice 2020 vaut ainsi 701,8 millions de dinars dans le rapport pour 2022 et 631,7 millions dans le rapport pour 2023. En 2019, prêts et participations pesaient 118,7 millions de dinars.
+
+**L'exercice 2019 est révisé.** Le rapport pour 2022 le ramène de 932 à 922,7 millions de dinars, en disant avoir intégré des données qui manquaient l'année précédente [@minfin-depenses-fiscales-plf2022, p. 69]. L'écart tient surtout au domaine de l'artisanat et des petits métiers, où une prime d'investissement de 10,9 millions de dinars est ramenée à zéro ; s'y ajoutent un recul de 0,4 million du domaine de l'investissement et, en sens inverse, 1,2 million au titre des technologies de l'information et 0,2 million au titre du tourisme.
+
+**Les montants ne sont pas tous des paiements.** Ce sont les sommes versées au bénéficiaire ou, pour la prise en charge de la contribution patronale ou de la cotisation des salariés, celles que l'État reconnaît devoir aux organismes concernés ; pour la formation et l'emploi, ce sont les montants engagés [@minfin-depenses-fiscales-plf2022, p. 69]. Une prise en charge de cotisations peut donc être une dette de l'État envers la caisse, non un versement.
+
+**Tous les avantages recensés ne donnent pas lieu à versement.** Les rapports pour 2021 et 2022 en recensent 232, le rapport pour 2023, 227, et le rapport pour 2024, 236 ; 58 ont donné lieu à un versement en 2020, 95 en 2021 et 95 en 2022 [@minfin-depenses-fiscales-plf2022, p. 69 ; @minfin-depenses-fiscales-plf2023 ; @gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2024].
+
+- **La première ligne de prise en charge patronale change selon l'exercice.** C'est celle de l'« article 25 bis » en 2018, 2020, 2021 et 2023 ; en 2019, celle du salaire de l'agent recruté, au titre de l'emploi (23,1 millions de dinars contre 21,0) ; en 2022, celle des technologies de l'information et de la communication (15,8 millions contre 13,4). Cette dernière ligne vaut 1,1 million de dinars en 2019, selon le rapport pour 2022, et 10,1 millions en 2023.
+
+: Avantages financiers par domaine, exercices 2018 à 2023 : une colonne par exercice et par rapport (millions de dinars courants) {#tbl-df-financiers-domaines}
+
+| Domaine | 2018<br>(rapport 2021) | 2019<br>(rapport 2021) | 2019<br>(rapport 2022) | 2020<br>(rapport 2022) | 2020<br>(rapport 2024) | 2021<br>(rapport 2025) | 2022<br>(rapport 2025) | 2023<br>(rapport 2025) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Formation et emploi | 344,0 | 379,1 | 379,1 | 332,8 | 332,8 | 285,7 | 263,2 | 255,9 |
+| Investissement | 242,9 | 186,5 | 186,1 | 158,9 | 150,1 | 160,8 | 91,9 | 108,4 |
+| Industrie et services | 177,0 | 146,3 | 146,3 | 34,5 | 30,4 | 45,8 | 36,8 | 37,3 |
+| Artisanat et petits métiers, puis financement des petits projets | 0,0 | 111,7 | 100,8 | 60,8 | — | — | — | — |
+| Commerce | 48,6 | 48,5 | 48,5 | 40,5 | 40,5 | 41,9 | 76,5 | 50,9 |
+| Agriculture et pêche | 59,1 | 39,4 | 39,4 | 51,4 | 51,4 | 42,7 | 35,9 | 33,5 |
+| Énergie et énergies renouvelables | 19,0 | 17,9 | 17,9 | 16,0 | 16,0 | 32,3 | 22,0 | 11,6 |
+| Technologies de l'information et de la communication | 0,3 | 0,9 | 2,1 | 6,5 | 6,5 | 13,2 | 18,9 | 13,0 |
+| Garantie des prêts, puis secteur financier | 20,0 | 0,0 | 0,0 | 0,0 | 0,0 | 23,0 | 0,0 | 10,0 |
+| Protection de l'environnement | 2,1 | 2,3 | 2,3 | 0,0 | 0,0 | 0,0 | 0,0 | 0,0 |
+| Tourisme | — | — | 0,2 | 0,3 | 0,3 | 0,0 | 0,2 | 0,0 |
+| **Total** | **913,0** | **932,0** | **922,7** | **701,8** | **628,0** | **645,5** | **545,5** | **520,7** |
+
+Source : @gbo-depenses-fiscales, rapports annexés aux projets de loi de finances pour 2021 (tableau n° 2, p. 93), 2024 et 2025 (tableau n° 2) ; @minfin-depenses-fiscales-plf2022, tableau n° 2, p. 71. Les quatre premières colonnes comptent les prêts et les participations, les quatre dernières non. Le tiret signale une ligne absente du tableau du rapport ; le domaine de l'artisanat et des petits métiers, fait surtout de prêts, disparaît du tableau à partir du rapport pour 2023.
+
+Une colonne par exercice et par rapport, dans l'ordre des rapports ; montants en millions de dinars courants, tels qu'imprimés. Le tiret signale une ligne absente du tableau du rapport.
+
+: Avantages financiers par forme, exercices 2018 à 2023, dans les cinq rapports {#tbl-df-financiers-formes}
+
+| Forme | 2018<br>(rapport 2021) | 2019<br>(rapport 2021) | 2019<br>(rapport 2022) | 2020<br>(rapport 2022) | 2020<br>(rapport 2023) | 2021<br>(rapport 2023) | 2020<br>(rapport 2024) | 2021<br>(rapport 2024) | 2022<br>(rapport 2024) | 2021<br>(rapport 2025) | 2022<br>(rapport 2025) | 2023<br>(rapport 2025) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Primes | 517,655 | 551,476 | 540,569 | 415,019 | 414,616 | 456,646 | 414,616 | 456,646 | 384,033 | 456,646 | 386,015 | 375,245 |
+| Prise en charge de dépenses par l'État, totale ou partielle | 169,018 | 195,564 | 195,565 | 146,158 | 146,158 | 96,152 | 142,402 | 99,908 | 115,975 | 99,908 | 115,941 | 87,964 |
+| Prise en charge de la contribution patronale de sécurité sociale | 181,905 | 54,011 | 55,137 | 62,438 | 62,438 | 65,902 | 62,438 | 65,902 | 38,966 | 65,902 | 38,966 | 43,341 |
+| Prise en charge de la cotisation des salariés | 11,725 | 12,783 | 12,783 | 8,514 | 8,513 | 0,000 | 8,513 | 0,000 | 4,540 | 0,000 | 4,540 | 4,134 |
+| Prêts et dotations remboursables | 9,702 | 114,652 | 114,652 | 69,324 | — | — | — | — | — | — | — | — |
+| Participations au capital | 2,927 | 3,999 | 3,999 | 0,342 | — | — | — | — | — | — | — | — |
+| Garanties de prêts | 20,000 | 0,000 | 0,000 | 0,000 | 0,000 | 23,000 | 0,000 | 23,000 | 0,000 | 23,000 | 0,000 | 10,000 |
+| **Total** | **913,000** | **932,000** | **922,705** | **701,795** | **631,726** | **641,700** | **627,969** | **645,456** | **543,500** | **645,456** | **545,462** | **520,684** |
+
+: Avantages financiers par domaine, exercices 2018 à 2023, dans les cinq rapports {#tbl-df-financiers-domaines-complet}
+
+| Domaine | 2018<br>(rapport 2021) | 2019<br>(rapport 2021) | 2019<br>(rapport 2022) | 2020<br>(rapport 2022) | 2020<br>(rapport 2023) | 2021<br>(rapport 2023) | 2020<br>(rapport 2024) | 2021<br>(rapport 2024) | 2022<br>(rapport 2024) | 2021<br>(rapport 2025) | 2022<br>(rapport 2025) | 2023<br>(rapport 2025) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Formation et emploi | 343,962 | 379,080 | 379,080 | 332,800 | 332,800 | 285,673 | 332,800 | 285,673 | 263,219 | 285,673 | 263,219 | 255,882 |
+| Investissement | 242,907 | 186,458 | 186,095 | 158,927 | 150,090 | 160,750 | 150,090 | 160,750 | 89,765 | 160,750 | 91,874 | 108,430 |
+| Industrie et services | 177,021 | 146,262 | 146,262 | 34,548 | 34,133 | 42,093 | 30,376 | 45,848 | 37,011 | 45,849 | 36,849 | 37,340 |
+| Artisanat et petits métiers, puis financement des petits projets | 0,000 | 111,714 | 100,848 | 60,816 | — | — | — | — | — | — | — | — |
+| Commerce | 48,608 | 48,475 | 48,475 | 40,458 | 40,458 | 41,943 | 40,458 | 41,943 | 76,458 | 41,943 | 76,458 | 50,916 |
+| Agriculture et pêche | 59,066 | 39,432 | 39,432 | 51,398 | 51,399 | 42,686 | 51,399 | 42,686 | 35,928 | 42,686 | 35,928 | 33,461 |
+| Énergie et énergies renouvelables | 18,968 | 17,878 | 17,878 | 16,032 | 16,033 | 32,319 | 16,032 | 32,319 | 21,970 | 32,319 | 21,970 | 11,622 |
+| Technologies de l'information et de la communication | 0,312 | 0,878 | 2,081 | 6,514 | 6,514 | 13,225 | 6,514 | 13,225 | 18,949 | 13,225 | 18,949 | 13,034 |
+| Garantie des prêts, puis secteur financier | 20,000 | 0,000 | 0,000 | 0,000 | 0,000 | 23,000 | 0,000 | 23,000 | 0,000 | 23,000 | 0,000 | 10,000 |
+| Protection de l'environnement | 2,088 | 2,307 | 2,307 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 |
+| Tourisme | — | — | 0,247 | 0,300 | 0,300 | 0,012 | 0,300 | 0,012 | 0,214 | 0,012 | 0,214 | 0,000 |
+| **Total** | **913,000** | **932,000** | **922,705** | **701,795** | **631,726** | **641,700** | **627,969** | **645,456** | **543,514** | **645,457** | **545,461** | **520,685** |
+
+Le rapport pour 2025 imprime encore, dans son tableau détaillé, un « financement des petits projets » de 34,585, 38,334 et 43,711 millions de dinars pour 2021, 2022 et 2023, sans le compter dans son total ; il n'en dit pas la raison.
+
+: Le domaine « investissement » par programme, exercices 2018 à 2023, dans les cinq rapports {#tbl-df-financiers-programmes}
+
+| Programme | 2018<br>(rapport 2021) | 2019<br>(rapport 2021) | 2019<br>(rapport 2022) | 2020<br>(rapport 2022) | 2020<br>(rapport 2023) | 2021<br>(rapport 2023) | 2020<br>(rapport 2024) | 2021<br>(rapport 2024) | 2022<br>(rapport 2024) | 2021<br>(rapport 2025) | 2022<br>(rapport 2025) | 2023<br>(rapport 2025) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Secteurs prioritaires | 15,522 | 32,549 | 32,186 | 19,870 | 19,871 | 29,398 | 19,871 | 29,398 | 15,387 | 29,398 | 12,936 | 17,310 |
+| Prime de performance économique | 46,246 | 69,696 | 69,696 | 40,806 | 40,806 | 58,798 | 40,806 | 58,798 | 25,542 | 58,798 | 25,542 | 36,009 |
+| Avantages de développement régional (rapport 2021 : « prime développement régional ») | 170,920 | 69,404 | 69,404 | 80,613 | 80,271 | 70,895 | 80,271 | 70,895 | 48,061 | 70,895 | 52,616 | 53,481 |
+| Prêt foncier agricole | 9,640 | 13,777 | 13,777 | 8,496 | — | — | — | — | — | — | — | — |
+| Prime d'encouragement des nouveaux promoteurs | 0,431 | 0,563 | 0,563 | 0,721 | 0,721 | 0,481 | 0,721 | 0,481 | 0,241 | 0,481 | 0,245 | 0,554 |
+| Prime au titre des services liés à l'agriculture, à la pêche et aux industries manufacturières | 0,000 | 0,469 | 0,469 | 0,362 | 0,362 | 0,251 | 0,362 | 0,251 | 0,000 | 0,251 | 0,000 | 0,506 |
+| Prime au titre de la promotion de l'employabilité | 0,148 | 0,000 | 0,000 | 0,000 | — | — | — | — | — | — | — | — |
+| Prime d'investissement des projets d'intérêt national | — | — | — | 8,058 | 8,058 | 0,000 | 8,058 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 |
+| Prise en charge de la contribution patronale au titre des projets d'intérêt national | — | — | — | — | 0,000 | 0,925 | 0,000 | 0,925 | 0,450 | 0,925 | 0,450 | 0,540 |
+| Prime de développement durable | — | — | — | — | — | — | 0,000 | 0,000 | 0,070 | 0,000 | 0,070 | 0,000 |
+| Autres avantages | — | — | — | — | — | — | 0,000 | 0,000 | 0,015 | 0,000 | 0,015 | 0,029 |
+| **Total du domaine, tel qu'imprimé** | **242,907** | **186,458** | **186,095** | **158,927** | **150,000** | **161,000** | **150,000** | **161,000** | **90,000** | **160,750** | **91,874** | **108,429** |
+
+Les rapports pour 2023 et 2024 impriment le total de ce domaine en millions entiers (150, 161 et 90). Le prêt foncier agricole entre dans ce total jusqu'au rapport pour 2022 ; il en sort ensuite.
+
+Sources : @gbo-depenses-fiscales, rapports annexés aux projets de loi de finances pour 2021 (p. 93, 96 et 98), 2024 (p. 68, 71 et 73) et 2025 (p. 52, 55 et 56) ; @minfin-depenses-fiscales-plf2022, p. 71, 73 et 75 ; @minfin-depenses-fiscales-plf2023, p. 70, 73 et 75.
+
+::::
+
+:::: {.chronologie-repliable titre="Prises en charge de la contribution patronale et primes de développement régional : montants des vingt-sept lignes par code, exercices 2018-2023, dans chacun des cinq rapports"}
+
+Une colonne par exercice et par rapport ; montants en millions de dinars courants. Les vingt lignes de prise en charge de la contribution patronale redonnent ensemble, dans chaque colonne, la ligne correspondante du tableau par forme. Les rapports emploient le code 041102 pour deux lignes distinctes. Le tiret signale une ligne absente du rapport ou sans valeur imprimée.
+
+: Avantages financiers : vingt-sept lignes par code, exercices 2018 à 2023, dans les cinq rapports {#tbl-df-financiers-codes}
+
+| Code | Avantage | 2018<br>(rapport 2021) | 2019<br>(rapport 2021) | 2019<br>(rapport 2022) | 2020<br>(rapport 2022) | 2020<br>(rapport 2023) | 2021<br>(rapport 2023) | 2020<br>(rapport 2024) | 2021<br>(rapport 2024) | 2022<br>(rapport 2024) | 2021<br>(rapport 2025) | 2022<br>(rapport 2025) | 2023<br>(rapport 2025) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 011109 | Prime au titre de l'augmentation de la valeur ajoutée et de la compétitivité : secteurs prioritaires (secteur agricole) | 14,532 | 32,126 | 32,126 | 17,634 | 17,630 | 25,630 | 17,634 | 25,630 | 12,888 | 25,630 | 12,888 | 16,836 |
+| 011111 | Prime au titre de la performance économique : investissements matériels pour l'amélioration de la productivité (secteur agricole) | 46,168 | 69,645 | 69,645 | 40,366 | 40,370 | 58,170 | 40,366 | 58,171 | 25,331 | 58,171 | 25,331 | 35,732 |
+| 041101 | Prise en charge de la contribution patronale, trois premières années, secteurs prioritaires (loi de 2016) | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,070 | 0,000 | 0,070 | 0,050 | 0,070 | 0,050 | 0,029 |
+| 031101 | Prise en charge de la contribution patronale, cinq premières années, premier groupe de zones de développement régional (loi de 2016) | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,121 | 0,000 | 0,121 | 0,154 | 0,121 | 0,154 | 0,135 |
+| 031102 | Prise en charge de la contribution patronale, dix premières années, deuxième groupe de zones de développement régional (loi de 2016) | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,180 | 0,000 | 0,180 | 0,222 | 0,180 | 0,222 | 1,187 |
+| 041102 | Prise en charge partielle par l'État au titre des salaires versés aux agents tunisiens recrutés pour la première fois à titre permanent | — | — | — | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 |
+| 011116 | Prime d'investissement au titre du développement régional | 22,542 | 42,612 | 42,612 | 37,546 | 37,550 | 39,310 | 37,546 | 39,314 | 32,129 | 39,314 | 36,639 | 33,077 |
+| 041103 | Participation de l'État aux dépenses d'infrastructure au titre du développement régional | 0,342 | 0,165 | 0,165 | 0,061 | 0,061 | 1,625 | 0,061 | 1,625 | 2,185 | 1,625 | 2,185 | 3,117 |
+| 041102 | Prêts fonciers agricoles | 9,640 | 13,777 | 13,777 | 8,496 | 8,496 | 9,490 | 8,496 | 9,490 | 7,956 | 9,490 | 7,956 | 7,917 |
+| 011117 | Prime d'investissement au titre des projets d'intérêt national | — | — | 0,000 | 8,058 | 8,058 | 0,000 | 8,058 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 |
+| 031103 | Prise en charge de la contribution patronale au titre des projets d'intérêt national | — | — | 0,000 | 0,000 | 0,000 | 0,925 | 0,000 | 0,925 | 0,450 | 0,925 | 0,450 | 0,540 |
+| 031108 | Prise en charge de la contribution patronale, encouragement à la création d'équipes de travail supplémentaires | 0,148 | 0,000 | 0,000 | 0,000 | 0,000 | 0,063 | 0,000 | 0,063 | 0,015 | 0,063 | 0,015 | 0,000 |
+| 031104 | Prise en charge de la contribution patronale au titre du développement régional (code des investissements ; « ancien régime » dans les rapports arabes) | 1,945 | 0,415 | 0,415 | 0,372 | 0,372 | 0,082 | 0,372 | 0,082 | 0,001 | 0,082 | 0,001 | 0,000 |
+| 031105 | Prise en charge de la contribution patronale au titre du développement régional (code des investissements, article 25) | 0,773 | 0,185 | 0,185 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 |
+| 031106 | Prise en charge de la contribution patronale au titre du développement régional (code des investissements, article 25 bis) | 130,965 | 21,041 | 21,041 | 42,239 | 42,240 | 29,440 | 42,239 | 29,436 | 13,366 | 29,436 | 13,366 | 15,965 |
+| 031107 | Prise en charge de la contribution patronale au titre du développement régional dans les zones prioritaires (code des investissements) | 9,825 | 0,722 | 0,722 | 0,052 | 0,052 | 0,004 | 0,052 | 0,004 | 0,004 | 0,004 | 0,004 | 0,000 |
+| 031109 | Prise en charge de la contribution patronale, encouragement des nouveaux promoteurs (code des investissements) | 1,565 | 0,210 | 0,210 | 0,330 | 0,330 | 0,303 | 0,330 | 0,303 | 0,146 | 0,303 | 0,146 | 0,494 |
+| 030601 | Prise en charge de la contribution patronale durant deux années depuis le recrutement (emploi) | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 7,577 |
+| 030602 | Prise en charge de la contribution patronale au titre du salaire de l'agent recruté, dans la limite de 600 dinars par mois (emploi) | 19,111 | 23,074 | 23,074 | 14,902 | 14,902 | 18,646 | 14,902 | 18,646 | 8,083 | 18,646 | 8,083 | 7,350 |
+| 030603 | Prise en charge de la contribution patronale durant trois années depuis le recrutement (emploi) | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,020 | 0,000 | 0,020 | 0,000 |
+| 030604 | Prise en charge de la contribution patronale au titre des ouvriers permanents d'entreprises industrielles ayant repris leur activité (emploi) | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 |
+| 030605 | Prise en charge dégressive de la contribution patronale, recrutement de diplômés du supérieur (emploi) | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 |
+| 030606 | Prise en charge de la contribution patronale, encouragement à l'emploi | 17,572 | 8,364 | 8,364 | 0,000 | 0,000 | 5,262 | 0,000 | 5,262 | 0,650 | 5,262 | 0,650 | 0,001 |
+| 030607 | Prise en charge de la contribution patronale, encouragement à l'insertion professionnelle | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 |
+| 030608 | Prise en charge de la contribution patronale, ouvriers concernés par la réduction des heures de travail | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 |
+| 030609 | Prise en charge de la contribution patronale, ouvriers mis en chômage technique | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 | 0,000 |
+| 030901 | Prise en charge de la contribution patronale (technologies de l'information et de la communication) | 0,000 | 0,000 | 1,127 | 4,543 | 4,543 | 10,810 | 4,543 | 10,810 | 15,807 | 10,810 | 15,807 | 10,062 |
+
+Sources : @gbo-depenses-fiscales, rapports annexés aux projets de loi de finances pour 2021, 2024 et 2025, tableaux détaillés par avantage ; @minfin-depenses-fiscales-plf2022 et @minfin-depenses-fiscales-plf2023, mêmes tableaux.
+
+::::
+
+### Le FOPRODI : crédits votés, 1999-2019, et comptes de la Banque centrale, 2016-2025 {#sec-df-foprodi}
+
+Le Fonds de promotion et de décentralisation industrielle (FOPRODI) est l'un des budgets sur lesquels sont imputées les primes de l'industrie, de l'artisanat et des services (@sec-df-primes-zones). Deux sources le suivent, sans se raccorder : la loi de finances, et le compte que la Banque centrale tient pour l'État (@fig-ri-foprodi). Les lois de finances lui ouvrent chaque année, de 1999 à 2019, un crédit au chapitre du ministère chargé de l'industrie ; la ligne est au tableau des crédits de programmes de l'État, distinct, dans la même loi, du tableau des crédits de paiement : c'est un crédit voté par la loi de finances initiale, non une somme versée. La Banque centrale de Tunisie tient le compte du fonds pour l'État et en publie chaque année, dans ses états financiers, les ressources et les emplois, de 2016 à 2025 : c'est un relevé comptable de ce qui entre dans le fonds et de ce qui en sort, non un recensement par avantage (@tbl-df-foprodi).
+
+```{python}
+#| label: fig-ri-foprodi
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import credits_incitations as fig_ci
+fig_ci.figure(
+    "foprodi",
+    caption=("Le Fonds de promotion et de décentralisation industrielle (FOPRODI) : crédit de "
+             "programmes voté par les lois de finances initiales, 1999-2019, dotation budgétaire "
+             "reçue et emplois selon la Banque centrale, 2016-2025 — en millions de dinars "
+             "courants, en part des dépenses de l'État et en part du PIB"),
+    note_lecture=(
+        "Trois grandeurs, qui ne se raccordent pas. En bleu, le crédit de programmes que la "
+        "loi de finances initiale ouvre au fonds : un crédit voté. En vert, la dotation "
+        "budgétaire que le fonds reçoit dans l'exercice, et en orange ses emplois, tous deux "
+        "d'après les états financiers de la Banque centrale. De 1995 à 1998, le chapitre de "
+        "l'industrie ne porte pas de ligne du fonds ; après 2019, la loi de finances ne le "
+        "nomme plus. La loi de finances de chaque année et la page de la ligne sont dans "
+        "l'onglet « Données ».\n\n"
+        "Deuxième vue : les mêmes grandeurs rapportées aux dépenses de l'État hors service de "
+        "la dette, réalisées. Pour le crédit, une somme votée est ainsi rapportée à une "
+        "dépense réalisée : la part est un ordre de grandeur.\n\n"
+        "Troisième vue : les mêmes grandeurs en part du PIB. Le trait s'interrompt à chaque "
+        "changement de source ou de base du PIB, et la base de chaque segment est écrite "
+        "au-dessus du cadre : base 1997 de 1999 à 2001, valeurs rétropolées ; valeur propre au ministère des Finances, rattachée à aucune base, de 2002 à 2004 et en 2025, sans que la source dise si elle est rétropolée ; base 1997 de 2005 à 2009, valeurs d'origine ; base 2015 de l'INS de 2010 à 2024, rétropolée pour 2010-2014, d'origine ensuite (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "Aucun segment n'est raccordé au suivant."))
+```
+
+- **Le crédit voté est multiplié par plus de six entre 1999 et 2003, puis culmine en 2013 et 2014.** Il passe de 6,0 millions de dinars pour [1999](#r-ri-cp-1999) à 13,0 millions pour [2000](#r-ri-cp-2000) et à 39,0 millions pour [2003](#r-ri-cp-2003), se tient entre 33 et 37 millions de 2004 à 2008, monte à 65,0 millions pour [2013](#r-ri-cp-2013) et [2014](#r-ri-cp-2014), revient à 49,0 millions pour [2017](#r-ri-cp-2017) et 50,0 millions pour [2018](#r-ri-cp-2018), puis tombe à 37,0 millions pour [2019](#r-ri-cp-2019).
+- **Au plus, un demi-point des dépenses de l'État.** Le crédit voté vaut 0,10 % des dépenses de l'État hors service de la dette en 1999, 0,49 % en 2003, autour de 0,3 % de 2008 à 2014 et 0,11 % en 2019. En part du PIB, il vaut 0,02 % en 1999, 0,11 % en 2003, 0,08 % en 2013 et 0,03 % en 2019, sur des segments de PIB qui ne se raccordent pas.
+- **Un crédit voté n'est pas une dotation versée.** Pour 2017, le crédit, 49,0 millions de dinars, est égal à la dotation budgétaire que le fonds reçoit selon la Banque centrale ; pour 2016, le crédit est de 55,0 millions et la dotation reçue de 47,0 millions ; pour 2018, de 50,0 et de 20,0 millions ; pour 2019, de 37,0 et de 60,0 millions.
+- **Le fonds vit de dotations budgétaires.** Elles vont de 10 à 60 millions de dinars par an et font, selon l'année, de 75 % à 94 % des ressources ; les recouvrements restent entre 2,8 et 5,6 millions.
+- **Les emplois reculent.** Ils passent de 52,6 millions de dinars en 2016 à 10,0 millions en 2025 — de 0,22 % à 0,02 % des dépenses de l'État —, et le solde de fin d'exercice tombe à moins de 2 millions de dinars en 2016, puis de 2022 à 2024.
+- **Les emplois sont tout ce que paie le fonds** : primes d'investissement et d'étude, prises en charge, mais aussi dotations remboursables et participations, dont les « recouvrements » sont les remboursements. Ils ne mesurent donc pas la seule prime de développement régional.
+- **Ces montants ne s'ajoutent pas à ceux des rapports du ministère des Finances**, qui recensent les mêmes paiements avantage par avantage.
+- **La ligne disparaît de la loi de finances en 2020.** [La loi de finances pour 2020](#r-ri-cp-2020) présente les dépenses par missions et programmes : aucune ligne n'y nomme plus le fonds.
+
+Les éditions 2015 et 2016 du rapport de la Banque centrale ne portent pas le tableau du compte : aucune série des emplois du fonds n'est établie ici avant 2016.
+
+<!-- TODO (documentaliste) : FOPRODI avant 2016 — crédits de programmes des lois de finances relevés pour 1999-2019 (#sec-ri-credits-programmes) ; pour les emplois, les éditions 2015 et 2016 du rapport annuel de la BCT ne portent pas le tableau des flux ; les éditions 1977 à 1986 portent des tableaux où figure le fonds (concours, dotations), à lire à l'image ; la série bct-programmes-emploi-dotations de tunisia-data donne des crédits (non des paiements) pour 1987-1991 ; rapport sur les finances publiques 2010 du ministère des Finances : soldes des fonds spéciaux à la clôture, 2005-2008, non repris (soldes reportés, une seule édition lue) ; note du 11 octobre 2026, § 1.2 et § 1.3. -->
+
+:::: {.chronologie-repliable titre="FOPRODI et FONAPRA aux états financiers de la Banque centrale : ressources, dotations budgétaires, emplois et soldes, montants des exercices 2016 à 2025"}
+
+: Le FOPRODI aux états financiers de la Banque centrale de Tunisie : ressources, emplois et soldes, exercices 2016 à 2025 {#tbl-df-foprodi}
+
+| Exercice | Solde initial<br>(MD) | Dotations budgétaires<br>(MD) | Recouvrements<br>(MD) | Emplois<br>(MD) | Solde final<br>(MD) |
+|---|---:|---:|---:|---:|---:|
+| 2016 | 4,166 | 47,000 | 3,237 | 52,594 | 1,808 |
+| 2017 | 1,808 | 49,000 | 4,267 | 39,659 | 15,417 |
+| 2018 | 15,417 | 20,000 | 2,845 | 27,136 | 11,125 |
+| 2019 | 11,125 | 60,000 | 3,803 | 40,889 | 34,040 |
+| 2020 | 34,040 | 28,000 | 5,565 | 45,675 | 21,931 |
+| 2021 | 21,931 | 24,000 | 4,575 | 42,391 | 8,114 |
+| 2022 | 8,114 | 18,000 | 4,883 | 30,914 | 0,083 |
+| 2023 | 0,083 | 10,000 | 3,338 | 11,767 | 1,654 |
+| 2024 | 1,654 | 22,371 | 3,353 | 26,792 | 0,586 |
+| 2025 | 0,586 | 15,000 | 3,523 | 10,022 | 9,087 |
+
+Source : @bct-ra, éditions 2017 à 2025, états financiers, note sur les comptes du Gouvernement, tableau des flux des ressources et des emplois des fonds FOPRODI et FONAPRA. Montants en millions de dinars courants (MD), arrondis au millier de dinars. Chaque exercice de 2017 à 2024 figure dans deux éditions successives, qui s'accordent.
+
+**Le Fonds national de promotion de l'artisanat et des petits métiers (FONAPRA).** Le même tableau des états financiers donne le compte du second fonds que la Banque centrale tient pour l'État.
+
+: Le FONAPRA aux états financiers de la Banque centrale de Tunisie, exercices 2016 à 2025 {#tbl-df-fonapra}
+
+| Exercice | Solde initial<br>(MD) | Dotations budgétaires<br>(MD) | Recouvrements<br>(MD) | Emplois<br>(MD) | Solde final<br>(MD) |
+|---|---:|---:|---:|---:|---:|
+| 2016 | 4,895 | 12,000 | 10,902 | 22,651 | 5,147 |
+| 2017 | 5,147 | 8,000 | 12,731 | 19,638 | 6,240 |
+| 2018 | 6,240 | 0,000 | 15,149 | 0,000 | 21,389 |
+| 2019 | 21,389 | 0,000 | 15,935 | 29,500 | 7,824 |
+| 2020 | 7,824 | 0,000 | 13,500 | 15,000 | 6,324 |
+| 2021 | 6,324 | 0,000 | 17,358 | 5,500 | 18,181 |
+| 2022 | 18,181 | 9,000 | 17,385 | 19,000 | 25,566 |
+| 2023 | 25,566 | 15,750 | 16,887 | 40,900 | 17,303 |
+| 2024 | 17,303 | 9,000 | 16,659 | 18,000 | 24,962 |
+| 2025 | 24,962 | 9,000 | 14,968 | 9,000 | 39,930 |
+
+Source : @bct-ra, éditions 2017 à 2025, même tableau. Montants en millions de dinars courants (MD). Le rapport n'imprime aucune dotation budgétaire de 2018 à 2021, ni aucun emploi en 2018.
+
+::::
+
+### La prise en charge de la contribution patronale et deux autres lignes : crédits votés, 1995-2019 {#sec-ri-credits-programmes}
+
+Le tableau des crédits de programmes des lois de finances porte trois autres lignes qui relèvent des régimes d'incitation (@fig-ri-credits-programmes) : la « prise en charge par l'État de la contribution patronale au régime légal de la sécurité sociale », au chapitre du ministère des Affaires sociales, de 1995 à 2019 ; une « aide de l'État pour les promoteurs des projets touristiques », parmi les lignes de l'Office national tunisien du tourisme, de 2010 à 2019 ; la ligne du Fonds national de promotion de l'artisanat et des petits métiers (FONAPRA), au chapitre de la formation professionnelle et de l'emploi, de 2012 à 2019. Ce sont des crédits votés par la loi de finances initiale, non des sommes versées.
+
+```{python}
+#| label: fig-ri-credits-programmes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import credits_incitations as fig_ci
+fig_ci.figure(
+    "autres",
+    caption=("Crédits de programmes ouverts par les lois de finances initiales à la prise en charge "
+             "de la contribution patronale (1995-2019), à l'aide aux promoteurs de projets "
+             "touristiques (2010-2019) et au FONAPRA (2012-2019) — en millions de dinars "
+             "courants, en part des dépenses de l'État et en part du PIB"),
+    note_lecture=(
+        "Un trait par ligne du tableau des crédits de programmes de la loi de finances "
+        "initiale. Sur la ligne de la prise en charge, une marque creuse signale l'année où "
+        "la ligne change de rubrique dans le tableau (1998, 2012, 2015). La ligne du FONAPRA "
+        "n'est pas relevée pour 2010 et 2011. Après 2019, la loi de finances ne nomme plus "
+        "ces lignes. La loi de finances de chaque année et la page de chaque ligne sont dans "
+        "l'onglet « Données » et au registre replié de la section.\n\n"
+        "Deuxième vue : les crédits votés rapportés aux dépenses de l'État hors service de la "
+        "dette, réalisées — un ordre de grandeur, une somme votée étant rapportée à une "
+        "dépense réalisée.\n\n"
+        "Troisième vue : les mêmes grandeurs en part du PIB. Le trait s'interrompt à chaque "
+        "changement de source ou de base du PIB, et la base de chaque segment est écrite "
+        "au-dessus du cadre : base 1983 en 1995 et 1996, sans que la source dise si la valeur est rétropolée ; base 1997 de 1997 à 2001, valeurs rétropolées ; valeur propre au ministère des Finances, rattachée à aucune base, de 2002 à 2004, sans que la source dise si elle est rétropolée ; base 1997 de 2005 à 2009, valeurs d'origine ; base 2015 de l'INS de 2010 à 2019, rétropolée pour 2010-2014, d'origine ensuite (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "Aucun segment n'est raccordé au suivant."))
+```
+
+- **Le crédit de la prise en charge patronale est multiplié par vingt en dix-huit ans.** De 3,0 millions de dinars pour [1995](#r-ri-cp-1995), il atteint 35,0 millions pour [2007](#r-ri-cp-2007) et 60,0 millions pour [2013](#r-ri-cp-2013), puis recule chaque année jusqu'à 32,0 millions pour [2019](#r-ri-cp-2019).
+- **De 0,07 % à 0,31 % des dépenses de l'État, puis 0,10 %.** Le crédit de la prise en charge vaut 0,07 % des dépenses de l'État hors service de la dette en 1995, 0,31 % en 2007, 0,27 % en 2013 et 0,10 % en 2019 ; en part du PIB, 0,02 % en 1995, 0,07 % en 2007, 0,08 % en 2013 et 0,03 % en 2019, sur des segments de PIB qui ne se raccordent pas.
+- **Cette ligne couvre toutes les prises en charge, non celles du seul code de 1993.** Son libellé ne dit pas au titre de quel régime la contribution est prise en charge : développement régional, nouveaux promoteurs ou dispositifs d'emploi y sont confondus.
+- **La ligne de la prise en charge change de place dans le tableau.** Rangée parmi les projets nouveaux à caractère national pour 1995, elle est sous la rubrique « Financement public » à partir de [1998](#r-ri-cp-1998) au plus tard ; de [2012](#r-ri-cp-2012) à 2019, elle est à l'intérieur d'un groupe de la Caisse nationale de sécurité sociale, qui porte aussi, jusqu'en 2018, une ligne de règlement de 4,0 millions de dinars. Son libellé ne change pas ; rien n'établit que les crédits ainsi rangés soient de même nature d'un bout à l'autre de la période.
+- **L'aide aux promoteurs touristiques se tient entre 7 et 12 millions de dinars de 2010 à 2017**, monte à 30,8 millions pour [2018](#r-ri-cp-2018) et retombe à 3,0 millions pour 2019.
+- **Le crédit du FONAPRA est divisé par deux en 2014.** De 22,0 et 20,0 millions de dinars pour 2012 et 2013, il passe à 10,0 millions pour [2014](#r-ri-cp-2014) ; la ligne, jusque-là un projet nouveau, devient cette année-là la réévaluation d'un programme en cours. Le tableau ne dit pas ce que le fonds verse — prime, dotation ou prêt. Le compte du FONAPRA à la Banque centrale est donné avec celui du FOPRODI (@tbl-df-fonapra).
+- **Le tableau disparaît en 2020.** [La loi de finances pour 2020](#r-ri-cp-2020) présente les dépenses par missions et programmes : aucune ligne n'y nomme plus la prise en charge, l'aide ni le fonds.
+
+:::: {.chronologie-repliable titre="Crédits de programmes du FOPRODI, de la prise en charge de la contribution patronale, de l'aide aux promoteurs touristiques et du FONAPRA : lois de finances, pages et montants, année par année, 1995-2020"}
+
+| Année | Portée | Texte et pages | Avant → après |
+|---|---|---|---|
+| []{#r-ri-cp-1995}1995 | ajustement | loi n° 94-127 du [26 décembre 1994]{.insecable}, loi de finances pour 1995 [@lf-1995, p. 2115] | prise en charge de la contribution patronale : première ligne relevée → 3,0 MD |
+| []{#r-ri-cp-1996}1996 | ajustement | loi n° 95-109 du [25 décembre 1995]{.insecable}, loi de finances pour 1996 [@lf-1996, p. 2423] | prise en charge de la contribution patronale : 3,0 MD → 3,0 MD |
+| []{#r-ri-cp-1997}1997 | ajustement | loi n° 96-113 du [30 décembre 1996]{.insecable}, loi de finances pour 1997 [@lf-1997, p. 2618] | prise en charge de la contribution patronale : 3,0 MD → 4,0 MD |
+| []{#r-ri-cp-1998}1998 | ajustement ; changement de rubrique | loi n° 97-88 du [29 décembre 1997]{.insecable}, loi de finances pour 1998 [@lf-1998, p. 2503 ; p. 2587 de l'édition arabe] | prise en charge de la contribution patronale : 4,0 MD → 3,5 MD ; la ligne, rangée pour 1995 parmi les « projets nouveaux », « projets à caractère national », est sous « II/ Financement public » ; le chapitre de l'industrie ne porte pas de ligne du FOPRODI (p. 2475) |
+| []{#r-ri-cp-1999}1999 | ajustement | loi n° 98-111 du [28 décembre 1998]{.insecable}, loi de finances pour 1999 [@lf-1999, p. 2544 et 2567 ; p. 2609 de l'édition arabe] | FOPRODI : première ligne relevée au chapitre de l'industrie, 6,0 MD ; prise en charge de la contribution patronale : 3,5 MD → 4,0 MD |
+| []{#r-ri-cp-2000}2000 | ajustement | loi n° 99-101 du [31 décembre 1999]{.insecable}, loi de finances pour 2000 [@lf-2000, p. 2775 et 2791] | FOPRODI : 6,0 MD → 13,0 MD ; prise en charge de la contribution patronale : 4,0 MD → 5,5 MD |
+| []{#r-ri-cp-2001}2001 | ajustement | loi n° 2000-98 du [25 décembre 2000]{.insecable}, loi de finances pour 2001 [@lf-2001, p. 3206 et 3219] | FOPRODI : 13,0 MD → 28,0 MD ; prise en charge de la contribution patronale : 5,5 MD → 5,5 MD |
+| []{#r-ri-cp-2002}2002 | ajustement | loi n° 2001-123 du [28 décembre 2001]{.insecable}, loi de finances pour 2002 [@lf-2002, p. 4286 et 4301] | FOPRODI : 28,0 MD → 33,0 MD ; prise en charge de la contribution patronale : 5,5 MD → 9,0 MD |
+| []{#r-ri-cp-2003}2003 | ajustement | loi n° 2002-101 du [17 décembre 2002]{.insecable}, loi de finances pour 2003 [@lf-2003, p. 2911 et 2926] | FOPRODI : 33,0 MD → 39,0 MD ; prise en charge de la contribution patronale : 9,0 MD → 10,0 MD |
+| []{#r-ri-cp-2004}2004 | ajustement | loi n° 2003-80 du [29 décembre 2003]{.insecable}, loi de finances pour 2004 [@lf-2004, p. 3757 et 3773] | FOPRODI : 39,0 MD → 33,0 MD ; prise en charge de la contribution patronale : 10,0 MD → 13,0 MD |
+| []{#r-ri-cp-2005}2005 | ajustement | loi n° 2004-90 du [31 décembre 2004]{.insecable}, loi de finances pour 2005 [@lf-2005, p. 3471 et 3488] | FOPRODI : 33,0 MD → 37,0 MD ; prise en charge de la contribution patronale : 13,0 MD → 18,0 MD |
+| []{#r-ri-cp-2006}2006 | ajustement | loi n° 2005-106 du [19 décembre 2005]{.insecable}, loi de finances pour 2006 [@lf-2006, p. 3627 et 3643] | FOPRODI : 37,0 MD → 35,0 MD ; prise en charge de la contribution patronale : 18,0 MD → 24,0 MD |
+| []{#r-ri-cp-2007}2007 | ajustement | loi n° 2006-85 du [25 décembre 2006]{.insecable}, loi de finances pour 2007 [@lf-2007, p. 4417 et 4437] | FOPRODI : 35,0 MD → 35,0 MD ; prise en charge de la contribution patronale : 24,0 MD → 35,0 MD |
+| []{#r-ri-cp-2008}2008 | ajustement | loi n° 2007-70 du [27 décembre 2007]{.insecable}, loi de finances pour 2008 [@loi-2007-70-lf-2008, p. 4392 et 4410] | FOPRODI : 35,0 MD → 35,0 MD ; prise en charge de la contribution patronale : 35,0 MD → 35,0 MD |
+| []{#r-ri-cp-2009}2009 | ajustement | loi n° 2008-77 du [22 décembre 2008]{.insecable}, loi de finances pour 2009 [@lf-2009, p. 4306 et 4325] | FOPRODI : 35,0 MD → 42,0 MD ; prise en charge de la contribution patronale : 35,0 MD → 35,0 MD |
+| []{#r-ri-cp-2010}2010 | ajustement | loi n° 2009-71 du [21 décembre 2009]{.insecable}, loi de finances pour 2010 [@lf-2010, p. 3957 et 3999] | FOPRODI : 42,0 MD → 42,0 MD ; prise en charge de la contribution patronale : 35,0 MD → 40,0 MD ; aide aux promoteurs de projets touristiques : 12,430 MD (p. 3976) |
+| []{#r-ri-cp-2011}2011 | ajustement | loi n° 2010-58 du [17 décembre 2010]{.insecable}, loi de finances pour 2011 [@lf-2011, p. 3526 et 3565] | FOPRODI : 42,0 MD → 48,0 MD ; prise en charge de la contribution patronale : 40,0 MD → 44,0 MD ; aide aux promoteurs de projets touristiques : 10,383 MD (p. 3537) |
+| []{#r-ri-cp-2012}2012 | ajustement ; changement de rubrique | loi n° 2011-7 du [31 décembre 2011]{.insecable}, loi de finances pour 2012 [@lf-2012, p. 39 et 59] | FOPRODI : 48,0 MD → 58,0 MD ; prise en charge de la contribution patronale : 44,0 MD → 55,0 MD ; la ligne passe sous un groupe « Caisse Nationale de la Sécurité Sociale », avec une ligne de règlement de 4,0 MD ; aide aux promoteurs de projets touristiques : 8,000 MD (p. 41) ; FONAPRA : 22,000 MD (p. 66) |
+| []{#r-ri-cp-2013}2013 | ajustement | loi n° 2012-27 du [29 décembre 2012]{.insecable}, loi de finances pour 2013 [@lf-2013, p. 55 et 78] | FOPRODI : 58,0 MD → 65,0 MD ; prise en charge de la contribution patronale : 55,0 MD → 60,0 MD ; aide aux promoteurs de projets touristiques : 8,000 MD (p. 57) ; FONAPRA : 20,000 MD (p. 90) |
+| []{#r-ri-cp-2014}2014 | ajustement | loi n° 2013-54 du [30 décembre 2013]{.insecable}, loi de finances pour 2014 [@lf-2014, p. 3732 et 3761] | FOPRODI : 65,0 MD → 65,0 MD ; prise en charge de la contribution patronale : 60,0 MD → 54,0 MD ; l'intitulé de groupe du fonds porte 66,592 MD, avec sept lignes d'énergie (1,592 MD) ; aide aux promoteurs de projets touristiques : 8,500 MD (p. 3736) ; FONAPRA : 10,000 MD (p. 3773), désormais réévaluation d'un programme en cours |
+| []{#r-ri-cp-2015}2015 | ajustement ; changement de rubrique | loi n° 2014-59 du [26 décembre 2014]{.insecable}, loi de finances pour 2015 [@lf-2015, p. 3507 et 3534] | FOPRODI : 65,0 MD → 55,0 MD ; prise en charge de la contribution patronale : 54,0 MD → 47,429 MD ; la ligne est désormais sous « 2-Projets et programmes nouveaux » ; aide aux promoteurs de projets touristiques : 6,990 MD (p. 3509) ; FONAPRA : 10,000 MD (p. 3545) |
+| []{#r-ri-cp-2016}2016 | ajustement | loi n° 2015-53 du [25 décembre 2015]{.insecable}, loi de finances pour 2016 [@lf-2016, p. 3660 et 3688 de l'édition arabe] | FOPRODI : 55,0 MD → 55,0 MD ; prise en charge de la contribution patronale : 47,429 MD → 41,788 MD ; le groupe de la caisse porte aussi 75,0 MD d'interventions exceptionnelles pour le secteur touristique ; aide aux promoteurs de projets touristiques : 8,500 MD (p. 3662) ; FONAPRA : 10,662 MD (p. 3700) |
+| []{#r-ri-cp-2017}2017 | ajustement | loi n° 2016-78 du [17 décembre 2016]{.insecable}, loi de finances pour 2017 [@lf-2017, p. 3889 et 3921] | FOPRODI : 55,0 MD → 49,0 MD ; prise en charge de la contribution patronale : 41,788 MD → 37,105 MD ; aide aux promoteurs de projets touristiques : 8,400 MD (p. 3892) ; FONAPRA : 8,000 MD (p. 3932) |
+| []{#r-ri-cp-2018}2018 | ajustement | loi n° 2017-66 du [18 décembre 2017]{.insecable}, loi de finances pour 2018 [@lf-2018, p. 4332, 4335, 4356 et 4367] | FOPRODI, sous le libellé « Fonds de développement et décentralisation industrielle » : 49,0 MD → 50,0 MD ; prise en charge de la contribution patronale : 37,105 MD → 37,0 MD, dans un groupe de la caisse de 41,0 MD ; aide aux promoteurs de projets touristiques : 30,776 MD ; FONAPRA : 7,0 MD |
+| []{#r-ri-cp-2019}2019 | ajustement | loi n° 2018-56 du [27 décembre 2018]{.insecable}, loi de finances pour 2019 [@lf-2019, p. 5511, 5514, 5546 et 5562 de l'édition arabe] | FOPRODI : 50,0 MD → 37,0 MD ; prise en charge de la contribution patronale : 37,0 MD → 32,0 MD, seule ligne du groupe de la caisse ; aide aux promoteurs de projets touristiques : 3,049 MD ; FONAPRA : 15,0 MD |
+| []{#r-ri-cp-2020}2020 | **rupture** | loi n° 2019-78 du [23 décembre 2019]{.insecable}, loi de finances pour 2020 [@lf-2020, p. 4723-4727 de l'édition arabe] | tableau des crédits de programmes par projets → dépenses par missions et programmes, sans ligne nommée pour le fonds ni pour la prise en charge |
+
+: Les lois de finances qui ouvrent les crédits de programmes du FOPRODI et de la prise en charge de la contribution patronale, 1995-2020. Les pages sont celles de la ligne du fonds, puis de la ligne de la prise en charge ; à partir de 2010, la colonne de droite donne aussi l'aide aux promoteurs de projets touristiques et le FONAPRA, avec leur page ; montants en millions de dinars courants (MD). {#tbl-ri-credits-programmes-textes}
+
+::::
+
+<!-- TODO (documentaliste) : docs/notes/fiscalite-incitations-second-passage-2026-10-13.md, § 10. Toutes les valeurs des figures sont lues à l'image. Restent : (1) lois de finances pour 1998 et 1999 : valeurs lues dans l'édition arabe le 13 octobre 2026 (prise en charge 1998 : 3 500 000 D, p. 2587, recoupée par le total de la rubrique, 3 580 000 D ; FOPRODI 1999 : 6 000 000 D, p. 2609, recoupé par le total de la rubrique, 8 312 000 D) ; pied de la p. 2503 française non relu à l'image ; (2) FOPRODI 1996 à 1998 : le chapitre 14 (industrie), lu en entier (p. 2403, 2603, 2475), ne porte pas de ligne du fonds — une dotation logée à un autre chapitre n'est pas exclue ; (3) FOPRODI 1995 : aucune ligne aux chapitres lus ; tableaux « I » et « I bis » de la loi de finances pour 1995 et loi de finances pour 1994 non ouverts ; (4) pieds de page lus par océrisation : JORT n° 105 de 1996 (p. 2618), n° 104 de 1998 (p. 2544) ; (5) lois de finances complémentaires non relevées, sauf celle de décembre 2008 (FOPRODI inchangé, 35,0 MD, couche texte) ; (6) exécution : les lois de règlement, lues le 13 octobre 2026 (gestions 1984, 1990 à 1995 et 2007), ne nomment ni le fonds ni la prise en charge — total des fonds spéciaux seul, et pour 2007 paiements par chapitre et par partie (industrie, financement public : 219 026 000 D ; affaires sociales, financement public : 50 036 000 D) : aucune réalisation propre aux deux lignes ; (6 bis) lois n° 2017-66, 2018-56 et 2019-78 : numéros et dates repris de l'index, à contrôler au fascicule ; éditions françaises des JORT n° 104 de 2018 et de 2019 absentes du corpus et de pist.tn ; FONAPRA 2010 et 2011 non repéré ; « Fonds de promotion des petites et moyennes entreprises », 100 000 000 D pour 2018 seulement, objet non établi ; décret de répartition de 2020 (p. 4851) non ouvert ; (7) en 2014, l'intitulé de groupe à 66 592 000 D réunit le fonds et sept lignes d'énergie : lecture probable, non établie, d'un intitulé manquant au tableau imprimé ; (8) loi de finances pour 2016 : édition française du JORT n° 104 de 2015 absente du corpus et de pist.tn, pages de l'édition arabe. (terminologue) : « crédits de programmes » (اعتمادات البرامج) à verser au glossaire, définition à asseoir sur la loi organique du budget, non lue. -->
+
+## Ce que le régime de l'exportation pèse dans le commerce extérieur {#sec-df-commerce-exterieur}
+
+L'Institut national de la statistique ventile chaque année les exportations et les importations de biens entre un « régime général » et un « régime off shore ». Cette section en tire, de 1998 à 2023, la part du régime off shore dans les deux flux : entre 53 % et 75 % des exportations selon l'année, et entre 28 % et 36 % des importations (@fig-df-commerce-regime). C'est une statistique publique ; elle est donnée à part des sommes versées (@sec-ri-cout) et des études extérieures (@sec-df-etudes), et aucun lien de cause n'est établi ici entre le régime fiscal de l'exportation et ces parts.
+
+::: {.callout-note title="Comment lire cette série"}
+**L'annuaire ne définit pas les deux régimes.** Son libellé arabe est « régime non résident » (نظام غير مقيم). Ce n'est pas la notion d'[entreprise totalement exportatrice](#g-entreprise-totalement-exportatrice) du code de 1993, qui distingue l'entreprise totalement exportatrice de l'entreprise non résidente (@sec-df-code-1993) : le « régime off shore » de la statistique ne se confond pas, sans autre source, avec le régime fiscal de l'exportation.
+
+**Une rupture entre 2003 et 2004.** Chaque année est imprimée dans une à trois éditions successives de l'annuaire ; la série retient la dernière. Les années 2004 et 2005 ont été révisées par les éditions suivantes sur le seul régime off shore — de 2 % à 4 % à la hausse —, sans que l'annuaire en dise la raison, et les années 2003 et antérieures ne figurent dans aucune édition postérieure à cette révision. Les deux courbes sont donc tracées en deux segments, 1998-2003 et 2004-2023, sans raccord.
+:::
+
+```{python}
+#| label: fig-df-commerce-regime
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import commerce_exterieur_regime as fig_cer
+import figtools
+figtools.figure_tabs(
+    fig_cer.fig_parts(), fig_cer.table(),
+    "ins-commerce-exterieur-par-regime",
+    slug="fig_commerce_exterieur_regime",
+    caption="La part du régime off shore dans les exportations et les importations de biens, 1998-2023",
+    note_lecture=(
+        "Chaque courbe est tracée en deux segments. Le trait vertical sépare les années "
+        "1998 à 2003, que l'annuaire n'imprime dans aucune édition postérieure à la "
+        "révision du régime off shore, des années 2004 à 2023. La part est calculée ici : "
+        "régime off shore rapporté à l'ensemble des produits, en valeur courante. L'onglet "
+        "« Données » donne, pour chaque année, les montants et l'édition de l'annuaire "
+        "dont ils viennent."
+    ),
+    nominal=False,
+    generated="{{< meta date >}}")
+```
+
+Trois constats, sans plus.
+
+- **Dans les exportations, la part du régime off shore est majoritaire sur toute la période.** Elle va de 53,1 % en 2008, son point le plus bas, à 74,7 % en 2017, son point le plus haut. Elle se tient entre 60 % et 70 % de 1998 à 2015, 2008 excepté, puis au-dessus de 70 % de 2016 à 2021 ; elle est de 68,0 % en 2022 et de 70,4 % en 2023.
+- **Dans les importations, elle varie peu.** Elle reste entre 28,1 % (2012) et 35,7 % (2003).
+- **Les montants sont en dinars courants.** À ces prix, les exportations du régime off shore passent de 4 402 millions de dinars en 1998 à 43 706 millions en 2023, et l'ensemble des exportations de 6 518 à 62 077 millions.
+
+Le nombre des entreprises totalement exportatrices et l'emploi qu'elles occupent ne sont pas établis ici. La ventilation de chaque régime par groupement sectoriel d'activité, que porte le même tableau de l'annuaire, n'est pas reprise.
+
+:::: {.chronologie-repliable titre="Part du régime off shore dans le commerce extérieur : formule de calcul, exportations de 2007, révision de la dernière année"}
+
+**La part est calculée ici.** L'annuaire publie, pour chaque flux, l'ensemble des produits et les deux régimes, en millions de dinars courants. La part est le rapport du régime off shore à l'ensemble, tels que les imprime la même édition :
+
+$$ p = 100 \times \frac{X_{o}}{X} $$
+
+où $X$ est la valeur de l'ensemble des produits exportés (ou importés) dans l'année, $X_{o}$ celle qui relève du régime off shore, et $p$ la part, en pour cent.
+
+**Les exportations de 2007.** L'édition 2003-2007 imprime pour cette année un total de 16 409,6 millions de dinars, que ses deux régimes démentent : ils somment à 19 409,6 millions, valeur que donnent les deux éditions suivantes. Ce total n'est pas retenu ; la valeur de 2007 est celle de l'édition 2005-2009.
+
+**La dernière année peut encore changer.** L'année 2023 n'est imprimée que dans l'édition 2019-2023, et la dernière année d'une édition est souvent révisée par la suivante.
+
+::::
+
+<!-- TODO (documentaliste) : (1) définition statistique des régimes « général » et « off shore » par l'INS (glossaire ou note méthodologique des statistiques du commerce extérieur), à lire ; (2) nombre et emploi des entreprises totalement exportatrices — répertoire national des entreprises de l'INS, tableaux de bord de l'APII, rapports de la FIPA, archives du web pour les éditions retirées : rien dans tunisia-data, non cherché en ligne ; (3) ventilation de chaque régime par groupement sectoriel (tableau 14.2), non transcrite ; (4) cause de la révision de 2004-2005 du régime off shore (note du 11 octobre 2026, § 1.4 et § 4.1, points 5 et 6 ; fiche tunisia-data sources/ins-commerce-exterieur-par-regime.md). -->
+
+
+## Les études extérieures sur les incitations du code de 1993 {#sec-df-etudes}
+
+Quatre ensembles de chiffres ne viennent ni du ministère des Finances ni de la statistique publique. Tous portent sur les incitations du code de 1993, non sur l'ensemble des dérogations, et sur des années antérieures à 2013. Ils sont donnés ici à part du budgétaire, chacun avec ce que son auteur dit de sa méthode (@tbl-ri-etudes) ; ce qui les sépare de la mesure du ministère est dit au chapitre des dépenses fiscales (@sec-df-comparaison).
+
+: Les études extérieures sur les incitations du code de 1993 : auteur, données, périmètre, calcul et résultat {#tbl-ri-etudes}
+
+| Étude | Données | Périmètre | Calcul | Résultat |
+|---|---|---|---|---|
+| Banque mondiale, rapport de 2014 | étude non publiée de la Société financière internationale et d'ECOPA (2012) ; enquête de 2012 auprès d'investisseurs ; source des données fiscales non dite | incitations du code, fiscales et financières ; 2009, et moyenne 2008-2011 | coût « direct » : recettes auxquelles l'État renonce et primes versées ; dit « net » sans préciser de quoi | 1 296 MD en 2009, soit 2,2 % du PIB ; 826,8 MD par an pour la déduction des entreprises totalement exportatrices |
+| Banque mondiale, diaporama de septembre 2014 | administrations des impôts et des douanes, caisse de sécurité sociale, agences de promotion ; aucune note de méthode | déductions d'impôts et de douane du code ; 2009 à 2011 | part « redondante » des déductions, moins les recettes attribuées aux investissements suscités | 1 115, 1 304 et 1 158 MD |
+| OCDE, 2013 | aucune donnée de recettes ; hypothèses non validées par les autorités | industrie du régime intérieur et industrie exportatrice | taux effectifs marginaux d'imposition, à valeur d'illustration | 35,78 % et 4,53 % ; aucun coût |
+| Ghazouani, 2011 | Institut national de la statistique et ministère des Finances, d'après l'auteur ; chiffrage non décrit | incitations du code, fiscales et financières ; 1994 à 2007 | total rapporté au PIB, aux recettes fiscales et aux dépenses de l'État ; base du PIB non précisée | 2,14 % du PIB en moyenne ; de 0,77 % à 2,59 % selon l'année |
+
+Sources : @banquemondiale2014-revolution-inachevee, ch. 4, p. 142-145 ; @loeprick2014-incitations-fiscales, p. 15-17 ; @ocde2013-incitations-fiscales-tunisie, p. 4, 7 et 21-23 ; @ghazouani2011-evaluation-incitations-cii, p. 5 et 7.
+
+### La Banque mondiale (2014) : coût et répartition des incitations du code {#sec-ri-etude-bm}
+
+**Méthode.** Le chapitre 4 du rapport *The Unfinished Revolution* s'appuie sur une étude préliminaire de la Société financière internationale et du bureau d'études ECOPA, de novembre 2012, non publiée. Il évalue le coût « direct » des incitations du code — recettes fiscales auxquelles l'État renonce et primes versées par les agences de promotion — pour 2009, et en moyenne pour 2008-2011. Il le dit « net » sans préciser de quoi, et ne dit pas d'où viennent ses données fiscales. La part des incitations jugée sans effet sur la décision d'investir vient d'une enquête menée en 2012 auprès d'investisseurs par le Groupe de la Banque mondiale avec le gouvernement ; la taille de son échantillon n'est pas donnée dans le chapitre [@banquemondiale2014-revolution-inachevee, ch. 4, p. 142-145 et note 9, p. 164].
+
+Pour 2009, l'étude chiffre le coût total, fiscal et financier, à 1 296 MD — 1 198 MD d'avantages fiscaux et 98 MD de primes versées par trois agences —, soit 2,2 % du PIB et 8,5 % des recettes. Selon elle, le régime de l'exportation est, de 2008 à 2011, le premier poste : la déduction des bénéfices des entreprises totalement exportatrices fait 826,8 MD par an, soit 67 % des déductions (@tbl-df-bm-cout). La même étude décrit la répartition des incitations : plus de 90 % des incitations fiscales et douanières iraient à environ 2 500 entreprises sur 24 000 bénéficiaires, et les incitations à l'exportation auraient profité presque entièrement aux régions côtières (@tbl-df-concentration). Selon l'enquête de 2012, 49 % des investisseurs interrogés répondent, à la question directe, qu'ils auraient investi sans incitation ; une question de contrôle porte cette part à 79 %, et c'est elle que le rapport retient pour son coût par emploi additionnel [@banquemondiale2014-revolution-inachevee, ch. 4, p. 142-145].
+
+<!-- TODO (documentaliste) : relever dans l'annexe 4.2 du volume d'annexes (p. 35) la taille de l'échantillon et le libellé exact des questions (réponse directe 49 %, question de contrôle 79 %) -->
+
+:::: {.chronologie-repliable titre="Banque mondiale (2014), coût et répartition des incitations du code : montants de 2009 et de 2008-2011, concentration, coût par emploi"}
+
+: Coût des incitations du code d'incitations aux investissements selon la Banque mondiale, 2009 et moyenne 2008-2011 (millions de dinars) {#tbl-df-bm-cout}
+
+| Grandeur | Période | Montant |
+|---|---|---:|
+| Avantages fiscaux | 2009 | 1 198 |
+| Primes versées par l'APII | 2009 | 33 |
+| Primes versées par l'APIA | 2009 | 54 |
+| Primes versées par l'ONTT | 2009 | 11 |
+| **Coût net total, fiscal et financier** (2,2 % du PIB ; 8,5 % des recettes) | 2009 | **1 296** |
+| Déduction des bénéfices des entreprises totalement exportatrices (67 % des déductions) | 2008-2011, par an | 826,8 |
+| Déductions au titre de l'exportation hors du code | 2008-2011, par an | 97,4 |
+| Déductions des exportateurs partiels | 2008-2011, par an | 87,2 |
+
+Source : @banquemondiale2014-revolution-inachevee, ch. 4, tableaux 4.2 et 4.3, p. 143-144. Les déductions de 2008-2011 sont des montants bruts.
+
+: La répartition des incitations du code d'investissement selon la Banque mondiale, 2008-2012 {#tbl-df-concentration}
+
+| Mesure | Valeur publiée par la Banque mondiale | Source |
+|---|---|---|
+| Concentration | plus de 90 % des incitations fiscales et douanières vont à environ 2 500 entreprises, sur environ 24 000 bénéficiaires | @banquemondiale2014-revolution-inachevee, ch. 4, p. 144 ; @loeprick2014-incitations-fiscales, p. 17 |
+| Par régime | la déduction des entreprises totalement exportatrices fait 67 % des déductions ; les quatre premiers types d'incitation, sur 68, en font près de 85 % | @banquemondiale2014-revolution-inachevee, ch. 4, tableau 4.3, p. 144 |
+| Par secteur | mines 21 % du total, puis énergie, services (banque) et industrie (textile) | @banquemondiale2014-revolution-inachevee, ch. 4, p. 144 |
+| Par région | les incitations à l'exportation ont profité presque entièrement aux régions côtières | @banquemondiale2014-revolution-inachevee, ch. 4, p. 140-141 |
+| Coût par emploi | 6 362 dinars par an et par emploi ; environ 30 000 dinars par an et par emploi additionnel | @banquemondiale2014-revolution-inachevee, ch. 4, p. 145 ; @loeprick2014-incitations-fiscales, p. 17 |
+
+**L'enquête de 2012.** L'enquête de 2012 donne deux résultats, qu'il ne faut pas confondre. À la question directe, 49 % des investisseurs interrogés répondent qu'ils auraient investi sans incitation, et 51 % qu'ils ne l'auraient pas fait. Une question de contrôle, qui leur demande les trois premiers motifs de leur investissement, ramène à 21 % la part de ceux qui n'auraient pas investi : c'est de là que le rapport tire que 79 % auraient investi de toute façon. Le coût par emploi additionnel du tableau applique cette seconde proportion au coût total [@banquemondiale2014-revolution-inachevee, ch. 4, p. 142-145].
+
+::::
+
+### Le diaporama de la Banque mondiale de septembre 2014 : un coût net de 2009 à 2011 {#sec-ri-etude-diaporama}
+
+**Méthode.** Ce diaporama, présenté à Tunis en septembre 2014, donne un autre état de la même étude et ne comporte aucune note de méthode. Sa décomposition ne se lit que sur l'intitulé de ses lignes : il ne compterait que les déductions dites « redondantes » — celles des entreprises qui auraient investi sans elles —, et en retrancherait les impôts et droits supplémentaires attribués aux investissements que les incitations auraient suscités. Les sources qu'il indique sont les administrations des impôts et des douanes, la caisse de sécurité sociale et les agences de promotion [@loeprick2014-incitations-fiscales, p. 15-17].
+
+Il donne un « coût fiscal net » de 1 115 MD en 2009, 1 304 MD en 2010 et 1 158 MD en 2011 (@tbl-df-cout-2009-2011). Lu ainsi, ce total n'est pas un manque à gagner brut, et il ne mesure vraisemblablement pas la même grandeur que les 1 198 MD d'avantages fiscaux que le rapport donne pour 2009 : les deux montants ne se rapprochent pas, et le diaporama ne dit pas comment passer de l'un à l'autre.
+
+Le diaporama donne aussi, pour la question de l'investissement sans incitation, des proportions qui ne sont celles d'aucun des deux résultats du rapport (@tbl-df-aubaine). Il n'en indique ni l'effectif ni la date. Selon lui, 61,2 % des entreprises auraient investi sans incitation : 56,5 % dans le régime de l'exportation et 65,7 % dans le régime intérieur.
+
+:::: {.chronologie-repliable titre="Diaporama de la Banque mondiale de septembre 2014 : déductions redondantes et recettes induites, montants 2009-2011 ; part des entreprises qui auraient investi sans incitation"}
+
+: Part redondante des déductions, nette des recettes induites, 2009-2011, d'après le diaporama de la Banque mondiale de septembre 2014 (millions de dinars) {#tbl-df-cout-2009-2011}
+
+| | 2009 | 2010 | 2011 |
+|---|---:|---:|---:|
+| Déductions d'impôts redondantes | 839 | 948 | 907 |
+| Déductions douanières redondantes | 405 | 504 | 394 |
+| Impôts additionnels | −22 | −23 | −23 |
+| Droits de porte additionnels | −107 | −125 | −120 |
+| **« Coût fiscal net »** | **1 115** | **1 304** | **1 158** |
+
+Source : @loeprick2014-incitations-fiscales, p. 16.
+
+: Entreprises déclarant qu'elles auraient investi sans incitation, d'après le diaporama de la Banque mondiale de septembre 2014 {#tbl-df-aubaine}
+
+| Entreprises | Auraient investi sans incitation | N'auraient pas investi |
+|---|---:|---:|
+| Ensemble | 61,2 % | 38,8 % |
+| Régime de l'exportation (« off-shore ») | 56,5 % | 43,5 % |
+| Régime intérieur (« on-shore ») | 65,7 % | 34,3 % |
+
+Source : @loeprick2014-incitations-fiscales, p. 15.
+
+::::
+
+### L'OCDE (2013) : des taux effectifs, pas un coût {#sec-ri-etude-ocde}
+
+**Méthode.** L'analyse de l'OCDE, établie à la demande du ministère tunisien des Finances après une mission de cinq jours en novembre 2012, n'exploite pas de données de recettes et ne propose aucune estimation du coût. Elle calcule des taux effectifs marginaux d'imposition, sur des hypothèses que les autorités n'ont pas validées, et précise elle-même, en annexe, que ces calculs n'ont qu'une valeur d'illustration [@ocde2013-incitations-fiscales-tunisie, p. 4 et 21-23].
+
+Sous ces hypothèses, le taux effectif marginal est de 35,78 % pour l'industrie du régime intérieur et de 4,53 % pour l'industrie exportatrice [@ocde2013-incitations-fiscales-tunisie, p. 7]. Le rapport recommande par ailleurs la publication d'un rapport annuel sur les dépenses fiscales.
+
+### Ghazouani (2011) : le coût des incitations du code, de 1994 à 2007 {#sec-df-ghazouani}
+
+**Méthode.** L'étude est celle de Kamel Ghazouani, maître de conférences à l'université de Carthage, présentée le 30 juin 2011 au Centre tunisien des études économiques. Elle porte sur le seul code de 1993 et additionne deux ensembles : les incitations fiscales — impôt sur les sociétés, impôt sur le revenu, droits de douane, taxe sur la valeur ajoutée — et les incitations financières — primes d'investissement, prise en charge de travaux d'infrastructure, bonifications d'intérêt, prise en charge de la contribution patronale de sécurité sociale. Elle rapporte leur total au PIB, aux recettes fiscales et aux dépenses de l'État, en donnant pour sources l'Institut national de la statistique et le ministère des Finances [@ghazouani2011-evaluation-incitations-cii, p. 5 et 7]. Elle ne dit ni comment le coût de chaque incitation est chiffré, ni la base du PIB employé.
+
+Sur la période 1994-2007, les incitations du code représentent en moyenne 2,14 % du PIB, 10,76 % des recettes fiscales et 9,05 % des dépenses de gestion et de développement de l'État (@fig-ri-ghazouani). L'OCDE reprend cette moyenne en la disant un coût des seules incitations fiscales [@ocde2013-incitations-fiscales-tunisie, p. 12] ; l'étude, elle, la calcule sur le total, fiscal et financier.
+
+```{python}
+#| label: fig-ri-ghazouani
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import regimes_incitation as fig_ri
+import figtools
+figtools.figure_tabs(
+    fig_ri.fig_ghazouani(), fig_ri.table_ghazouani(), fig_ri.GHAZOUANI,
+    slug="fig_ghazouani_cout_incitations",
+    caption="Étude extérieure — les incitations du code de 1993 rapportées au PIB, aux recettes fiscales et aux dépenses de l'État, 1994-2007, selon Ghazouani (2011)",
+    note_lecture=(
+        "Étude extérieure, tracée seule : elle ne se raccorde ni aux évaluations du "
+        "ministère des Finances ni aux chiffres de la Banque mondiale. Le total réunit "
+        "incitations fiscales et incitations financières. L'étude ne dit ni comment le coût "
+        "de chaque incitation est chiffré, ni la base du PIB employé ; elle ne commente pas "
+        "les années 2004 et 2005."
+    ),
+    nominal=False,
+    generated="{{< meta date >}}")
+```
+
+Selon la même étude, les incitations fiscales font 80 % du total, soit environ 500 MD par an en moyenne de 1994 à 2007, et les incitations financières 20 %. L'exonération de l'impôt sur les sociétés est le premier poste : 4 039 MD cumulés sur les treize premières années du code, soit 288 MD par an et 56 % des incitations fiscales ; les exonérations de droits de douane en font 37 %, soit 192 MD par an. Parmi les incitations financières, les primes d'investissement pèsent 82 MD par an et la prise en charge de la contribution patronale de sécurité sociale 13,59 MD par an [@ghazouani2011-evaluation-incitations-cii, p. 5].
+
+Deux réserves de lecture. Le tableau porte deux années très basses, 2004 et 2005, que l'étude ne commente pas. Et pour 2007, il donne 1,68 % du PIB, alors que le texte chiffre plus loin le coût total à environ 950 MD, « environ 2.5 % du PIB » [@ghazouani2011-evaluation-incitations-cii, p. 9] : les deux chiffres ne coïncident pas, et l'étude n'en dit rien.
+
+C'est la seule série annuelle disponible ici pour les années antérieures à 2008. Elle ne se raccorde à aucune des mesures qui précèdent : son périmètre — fiscal et financier — n'est ni celui du coût net de la Banque mondiale, ni celui des dépenses fiscales du ministère des Finances. La Banque mondiale écrit elle-même qu'aucune évaluation d'ensemble n'avait été menée avant 2012 [@banquemondiale2014-revolution-inachevee, ch. 4, note 10, p. 164].
+
+<!-- TODO (documentaliste) : l'étude de Ghazouani a été lue sur sa couche texte le 6 octobre 2026 (copie : tunisia-data, data/raw/banque-mondiale-rapports/iace_2011_ghazouani_evaluation_incitations_cii.pdf ; capture Wayback du 15 août 2011) : pp. 3-9 seulement. Restent à lire : la figure 2 (coût en MD par année, fiscal et financier), les annexes statistiques et économétriques, et la cause des creux de 2004-2005. Une estimation de « 2,9 % du PIB » que la note documentaire lui attribuait n'y figure pas. -->
+
+<!-- TODO (documentaliste) : retirés du chapitre le 6 octobre 2026 — (1) l'estimation « 557 MD en 2000, environ 2 % du PIB » que la Banque mondiale (ch. 4, note 10) attribue à l'OMC : elle ne figure pas dans la notification G/SCM/N/71/TUN du 1er juin 2001, à rapprocher de sa section IX (pp. 14-15) ; (2) « environ 0,75 % du PIB en 2005 », attribué à deux rapports d'assistance technique du FMI (2005 et 2012), non publiés : seconde main, sans méthode. Restent à relever : figures 4.1 (répartition régionale) et 4.4 (coût net en % du PIB et des recettes, 2009-2011) du rapport de la Banque mondiale ; annexes 4.3 à 4.6 (sources fiscales). Non repris : tableau 4.1 du rapport (36 % d'entreprises « marginales » dans le régime de l'exportation, p. 142), diapositive 5 du diaporama (ratio de redondance), documents de la réforme de 2013-2014 connus de seconde main (note, § 3.3). -->
+
+:::: {.chronologie-repliable titre="Ghazouani (2011) : incitations du code de 1993 en % du PIB, des recettes fiscales et des dépenses de l'État, valeurs annuelles 1994-2007"}
+
+: Les incitations du code de 1993 rapportées au PIB et au budget de l'État, 1994-2007, selon Ghazouani (2011) {#tbl-df-ghazouani}
+
+| Année | % du PIB | % des recettes fiscales | % des dépenses de gestion et de développement |
+|---|---:|---:|---:|
+| 1994 | 2,48 | 12,93 | 9,58 |
+| 1995 | 2,42 | 11,99 | 9,39 |
+| 1996 | 2,24 | 11,30 | 8,89 |
+| 1997 | 1,92 | 9,48 | 7,60 |
+| 1998 | 2,19 | 10,38 | 8,86 |
+| 1999 | 2,59 | 12,26 | 10,30 |
+| 2000 | 2,18 | 10,26 | 8,82 |
+| 2001 | 2,43 | 11,19 | 9,77 |
+| 2002 | 2,42 | 11,45 | 10,00 |
+| 2003 | 2,02 | 9,60 | 8,50 |
+| 2004 | 0,85 | 4,46 | 4,01 |
+| 2005 | 0,77 | 4,30 | 3,92 |
+| 2006 | 1,72 | 10,13 | 8,60 |
+| 2007 | 1,68 | 9,78 | 8,32 |
+| **Moyenne** | **2,14** | **10,76** | **9,05** |
+
+Source : @ghazouani2011-evaluation-incitations-cii, tableau 1, p. 7. La base du PIB n'est pas précisée par la source.
+
+::::

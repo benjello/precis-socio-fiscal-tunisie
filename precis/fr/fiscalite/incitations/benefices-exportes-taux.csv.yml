@@ -1,0 +1,38 @@
+# Manifeste du relevé « imposition des bénéfices tirés de l'exportation, 1972-2026 ».
+#
+# Fichier TENU À LA MAIN, lu par figures/regimes_incitation.py (bas de la frise des régimes).
+#
+# D'OÙ VIENNENT LES VALEURS. Du tableau des reports du chapitre « Les régimes d'incitation
+# à l'investissement » (loi n° 2006-80 et ses quatre reports), de la loi de finances pour
+# 2019 (abrogation du régime, maintien jusqu'à la fin de 2020) et du relevé des taux de
+# l'impôt sur les sociétés du même livre (tarifs/tarifs-releves-impot-societes.csv) pour
+# les taux de droit commun de 2021 et de 2024.
+#
+# CE QUI N'EST PAS UN TAUX N'EN REÇOIT PAS. Une exonération de dix ans suivie d'un taux
+# réduit, ou une déduction totale suivie d'une déduction de 50 %, dépend de l'âge de
+# l'entreprise : la colonne `taux_pct` reste vide et la figure écrit la règle en toutes
+# lettres. Aucun taux effectif n'est calculé.
+
+format: long
+cle_de_ligne: [date_effet, etat, taux_pct]
+
+colonnes:
+  date_effet: date à laquelle la règle s'applique, ou date pour laquelle elle a été votée
+  date_fin: dernier jour d'application ; vide pour une échéance votée ou la règle en vigueur
+  taux_pct: taux d'imposition des bénéfices fixé par le texte, en % ; vide si la règle n'en fixe pas un seul
+  etat: appliqué ; voté puis reporté ; voté puis abrogé ; droit commun ; règle sans taux unique
+  regle: la règle, en clair
+  texte: clé de citation
+  localisateur: article
+
+sources:
+  - loi-72-38-regime-exportation
+  - loi-93-120-code-incitations
+  - loi-2006-80-reduction-taux
+  - loi-2007-70-lf-2008
+  - lf-2011
+  - dl-2011-56-lfc-2011
+  - lf-2013
+  - loi2018-56-lf2019
+  - lf-2021
+  - lf-2025

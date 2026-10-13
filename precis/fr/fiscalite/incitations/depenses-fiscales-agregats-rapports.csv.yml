@@ -1,0 +1,31 @@
+# Manifeste du relevé « agrégats publiés en tête des rapports sur les dépenses fiscales ».
+#
+# Fichier TENU À LA MAIN, lu par figures/depenses_fiscales_total.py. Il reprend, sans rien
+# y ajouter, le tableau du chapitre « Les dépenses fiscales » (tbl-df-agregats) : chaque
+# rapport annexé à un projet de loi de finances donne, dans son introduction, les agrégats
+# de l'exercice le plus récent qu'il couvre.
+#
+# CINQ RAPPORTS, CINQ PÉRIMÈTRES. Les rapports pour 2024 et 2025 donnent leur montant sans
+# les dépenses fiscales liées à l'exonération des médicaments et des engrais ; le rapport
+# pour 2021 les compte ; le périmètre des rapports pour 2022 et 2023 n'est pas établi sur
+# ce point. Les ratios sont ceux que le rapport imprime, avec son propre dénominateur ; le
+# rapport pour 2021 imprime aussi 19,15 % (tableau n° 4, p. 25).
+
+format: large
+cle_de_ligne: [exercice, rapport]
+
+colonnes:
+  exercice: exercice mesuré
+  rapport: année du projet de loi de finances auquel le rapport est annexé
+  avantages_fiscaux_md: dépenses fiscales, en millions de dinars courants
+  pct_pib_publie: en % du PIB, tel qu'imprimé
+  pct_budget_publie: en % du budget de l'État, tel qu'imprimé
+  pct_ressources_fiscales_publie: en % des ressources fiscales, tel qu'imprimé
+  avantages_financiers_md: avantages financiers, en millions de dinars courants
+  texte: clé de citation
+  localisateur: page
+
+sources:
+  - gbo-depenses-fiscales
+  - minfin-depenses-fiscales-plf2022
+  - minfin-depenses-fiscales-plf2023

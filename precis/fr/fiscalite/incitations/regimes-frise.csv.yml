@@ -1,0 +1,41 @@
+# Manifeste du relevé « frise des régimes d'incitation, 1969-2026 ».
+#
+# Fichier TENU À LA MAIN. Il accompagne regimes-frise.csv et benefices-exportes-taux.csv,
+# que lit figures/regimes_incitation.py (figure « frise des régimes »).
+#
+# D'OÙ VIENNENT LES VALEURS. Des textes cités dans le chapitre « Les régimes d'incitation à
+# l'investissement » (_regimes_incitation.qmd), dont elles reprennent les tableaux : régime
+# de la loi de 1972, avantages du code de 1993, comparaison 1993-2017, reports 2006-2014.
+# Rien n'y est ajouté.
+#
+# CE QUE LES BORNES VALENT. `debut` et `fin` sont des ANNÉES, pour le tracé d'une bande : la
+# date d'effet exacte de chaque texte est dans le chapitre. `etat` dit ce que vaut la borne
+# de fin : « en vigueur » (bornes établies par un texte), « droits acquis » (régime abrogé,
+# maintenu à des entreprises), « fin non établie » (le texte qui y met fin n'est pas
+# identifié : la bande s'arrête au code de 1993 qui prend le relais, et le tracé le dit).
+# La dernière année, 2026, est celle de l'état du droit exposé au chapitre.
+
+format: long
+cle_de_ligne: [piste, debut]
+
+colonnes:
+  piste: régime suivi (une bande de la frise)
+  libelle: règle en vigueur sur la période, dans les mots du texte
+  etiquette: libellé court porté sur la bande
+  debut: première année de la période
+  fin: dernière année de la période
+  etat: en vigueur, droits acquis, ou fin non établie
+  texte: clé de citation (résout dans precis/fr/fiscalite/references.json)
+  localisateur: article du texte
+
+sources:
+  - loi-69-35-code-investissements
+  - loi-72-38-regime-exportation
+  - loi-74-74-industries-manufacturieres
+  - loi-93-120-code-incitations
+  - loi-2006-80-reduction-taux
+  - loi-2016-71-investissement
+  - loi-avantages-fiscaux-2017
+  - loi2018-56-lf2019
+  - loi-2019-47-climat-investissement
+  - decret-94-539-primes-developpement-regional
