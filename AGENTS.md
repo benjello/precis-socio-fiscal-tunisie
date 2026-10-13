@@ -8,7 +8,9 @@ versionné : c'est ici que les conventions vivent, pas dans la mémoire d'un ass
 
 Neuf volumes bilingues — des livres Quarto, `precis/fr/<livre>/` et `precis/ar/<livre>/` — :
 fiscalité, cotisations sociales, prestations sociales, retraites, caisses de sécurité sociale,
-rémunérations publiques, finances locales, marché du travail, compensation ; un glossaire bilingue
+rémunérations publiques, finances locales, marché du travail, compensation ; un dixième, les
+entreprises publiques, en français seulement tant que sa traduction n'est pas livrée (pas de
+dossier `precis/ar/entreprises_publiques/`) ; un glossaire bilingue
 engendré depuis `precis/glossaire.yml`, une bibliographie CSL-JSON, et des tableaux de paramètres
 engendrés depuis le dépôt `openfisca-tunisia`, qui porte aussi les retraites depuis sa version 0.93.
 
@@ -274,7 +276,7 @@ scripts/verifier.sh [livre…]                                # glossaire, contr
 uv run python scripts/build_glossary.py                    # verrou de synchro du glossaire
 cd precis/fr/<livre> && uv run quarto render --to html     # zéro citation [?] non résolue
 uv run python scripts/check_pas_de_modele.py               # le précis ne parle pas du modèle
-./build.sh                                                  # les neuf volumes, FR et AR
+./build.sh                                                  # tous les volumes, FR et AR
 ```
 
 **Rends TOUS les livres que la PR touche, pas seulement celui qui l'occupe.** Aucun job de CI ne

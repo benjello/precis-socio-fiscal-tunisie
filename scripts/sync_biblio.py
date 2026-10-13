@@ -14,6 +14,7 @@ The script maps Zotero collections to book directories:
     Collection "Rémunérations publiques" → precis/{lang}/remunerations_publiques/references.json
     Collection "Cotisations sociales" → precis/{lang}/cotisations_sociales/references.json
     Collection "Compensation"         → precis/{lang}/compensation/references.json
+    Collection "Entreprises publiques" → precis/{lang}/entreprises_publiques/references.json
 
 Items not in any collection (or in "Commun") go to:
     precis/{lang}/references.json     (shared across books)
@@ -49,6 +50,7 @@ COLLECTION_TO_BOOK = {
     "marché du travail": "marche_travail",
     "marche du travail": "marche_travail",
     "compensation": "compensation",
+    "entreprises publiques": "entreprises_publiques",
 }
 
 
@@ -624,6 +626,12 @@ def main():
         if not items:
             continue
         for lang in LANGUAGES:
+            # Un volume qui n'existe que dans une langue (les entreprises publiques, en
+            # français seulement tant que sa traduction n'est pas livrée) ne reçoit pas de
+            # bibliographie dans l'autre : `write_csl_json` créerait le dossier du livre.
+            if not os.path.isdir(os.path.join(precis_dir, lang, book)):
+                print(f"  {lang}/{book} : pas de livre dans cette langue, rien d'écrit")
+                continue
             out_path = os.path.join(precis_dir, lang, book, "references.json")
             # Chaque langue reçoit sa propre copie : `preserve_traductions` modifie les
             # items en place, et l'arabe ne doit pas contaminer le français.
