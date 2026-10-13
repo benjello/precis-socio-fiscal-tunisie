@@ -2220,6 +2220,7 @@
     titres_fts: [tarifs AND transport]
     titres_like: ['%transport scolaire%', '%abonnement%scolaire%', '%transport public collectif%', '%metro leger%']
     iort_ar: [تعريفات النقل, تعريفة النقل, الاشتراكات المدرسية, معاليم النقل, النقل العمومي]
+    plein_texte: [tarifs de transport, abonnements scolaires]
     depuis: 2000-02-25
   passes:
   - date: 2026-10-11
@@ -2228,10 +2229,42 @@
     couverture: 'Titres de jort_cache seulement, dernière publication indexée le 2 octobre 2026. Requêtes jouées en plus de celles du champ requetes, en SQL : titre like ''%tarif%'' avec ''%transport%'', ''%voyageurs%'', ''%metro%'', ''%chemins de fer%'', ''%louage%'' ou ''%taxi%'' depuis le 1er janvier 2000 ; titre like ''%abonnement%'' avec ''%scolaire%'' ou ''%transport%'' ; ''%eleves%'' ou ''%etudiants%'' avec ''%transport%'' ; ''%تعريف%'' avec ''%النقل%'' ou ''%نقل%'' ; ''%اشتراكات%'' ; arrêtés portant « transport » ou « النقل » au titre ou au ministère dans trois fenêtres de signature (mars 2000-novembre 2007 : 115 arrêtés ; juin-septembre 2010 : aucun ; avril-juin 2021 : 3), filtrés sur prix, tarif, سعر, أسعار, تعريف, voyageurs, personnes. Après le 17 février 2000, aucune réponse ne porte sur un tarif de transport collectif de personnes (ports, manutention, marchandises, amendes transactionnelles, autorisations). NON FAIT : plein texte des fascicules ; miroir iort ; fascicules inconnus de la base ; lecture des 115 arrêtés de 2000-2007 au-delà de leur intitulé. Voie latérale ouverte, hors Journal officiel : INS, Bulletin mensuel de la statistique, prix du billet d''autobus à Tunis (450 jusqu''en juillet 2010, 470 d''août 2010 à mai 2021, 500 depuis juin 2021).'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-12
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance depuis le 25 février 2000 : 33 candidats aux titres de jort_cache (dernière publication indexée le 2 octobre 2026), 57 au miroir iort, lus sur leur intitulé ; aucun ne fixe un tarif de transport collectif de personnes. Plein texte joué hors de l''outil, par script de séance, sur les 1 149 fascicules FRANÇAIS de 2000 à 2010 du corpus local, couche texte exploitable au niveau du fascicule après décodage du décalage de 29 (2000 à 2005), pages et annexes en image non contrôlées : motifs « tarif(s) de/des/du transport(s) », « abonnement(s) scolaire(s) », « tarifs sur/aux réseaux », « tarif » près de « voyageurs », « métro léger », « transport public collectif », « chemins de fer ». Aucune occurrence de « abonnement scolaire » ; aucun arrêté tarifaire après celui du 17 février 2000. Occurrences lues : décret n° 2001-2621, art. 10 (tarifs proposés par la SNCFT et communiqués au ministre) ; loi n° 2004-33, art. 6 et 19 ; texte du JORT n° 72 du 7 septembre 2007, art. 15 (tarif du transport non régulier fixé par décision conjointe ; intitulé du texte non relevé) ; résumés de contrôles de sociétés régionales de transport, JORT n° 69 de 2009, p. 2584, et n° 104 de 2010, p. 3853. NON FAIT : plein texte de l''édition arabe ; annexes publiées en image ; fascicules de 2011 à 2026, dont 2021 ; archives du web. La date de couverture retenue est celle du plein texte, la plus prudente (titres couverts jusqu''au 2 octobre 2026). Détail : docs/notes/compensation-transport-second-passage-2026-10-12.md, § 2.'
+    couvert_jusqu_au: 2010-12-31
+    resultat: aucun
   a_faire:
-  - jouer le plein texte (« tarifs de transport », « abonnements scolaires ») sur les fascicules de 2000 à 2010 et de 2021
+  - jouer le plein texte (« تعريفات النقل », « الاشتراكات المدرسية ») sur l'édition arabe des fascicules de 2000 à 2010, et le plein texte français et arabe sur 2021
+  - chercher le texte réglementaire auquel renvoie l'article 6 de la loi n° 2004-33 pour la fixation des tarifs (arrêté, décision ou homologation)
+  - identifier la société et l'auteur des résumés de contrôle des JORT n° 69 de 2009 (p. 2584) et n° 104 de 2010 (p. 3853)
   - chercher les communiqués de la société des transports de Tunis et de la SNCFT aux archives du web (2003, 2005, 2008, 2010, 2021)
   - relever dans le Bulletin mensuel de la statistique antérieur à novembre 2008, s'il est obtenu, le mois de chaque relèvement entre 2000 et 2007
+
+- id: r-transport-ligne-budgetaire-1995-2002
+  objet: ligne du budget général de l'État qui porte la subvention d'exploitation des sociétés publiques de transport routier de personnes après la suppression de la caisse de compensation et de soutien des transports routiers (loi n° 94-127 du 26 décembre 1994, art. 35), de 1995 à 2002
+  ou: [precis/fr/compensation/_transport.qmd#sec-compensation-transport-1987]
+  requetes:
+    titres_fts: [compensation AND transports]
+    titres_like:
+    - '%transports routiers%'
+    - '%soutien des transports%'
+    - '%taxe unique de compensation%'
+    - '%caisse de compensation et de soutien%'
+    - '%compensation de transport%'
+    - '%compensation des transport%'
+    depuis: 1994-12-30
+  passes:
+  - date: 2026-10-12
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Titres de jort_cache de 1983 à 2012 (LIKE sans accents, doublé du FTS) : aucun texte postérieur à la loi n° 94-127 ne porte sur la dépense ; seuls des modificatifs de la taxe (LF 1995, art. 67-68 ; LF 2005, art. 74 et 84 ; LF 2008, art. 56-57). Loi de finances pour 1995 : art. 35 lu à l''image (p. 2045), muet sur la dépense. Rapports annuels de la BCT (couche texte) : 1985, 1988, 1991, 1994, 1995 et 1996, aucune mention de la caisse ; 1997 à 2000, aucune ligne réunissant transport et compensation, subvention, intervention, caisse, tarif ou soutien ; 2001 à 2003 absents de l''entrepôt. NON FAIT : tableaux des dépenses par ministère des lois de finances de 1995 à 2002 ; lois de règlement ; budgets détaillés du ministère du Transport ; rapports annuels de la BCT de 2001 à 2003.'
+    couvert_jusqu_au: 2012-12-31
+    resultat: aucun
+  a_faire:
+  - lire à l'image le tableau des dépenses du titre I, ministère du transport, des lois de finances de 1995 à 2002 (JORT n° 103 de 1994, 104 de 1995, 105 de 1996, 104 de 1997, 104 de 1998, 105 de 1999, 104 de 2000, 104 de 2001, 102 de 2002)
+  - chercher aux archives du web de portail.finances.gov.tn les budgets du ministère du Transport antérieurs à 2013
 
 - id: r-transport-decret-manque-a-gagner
   objet: décret fixant la méthode de calcul du manque à gagner des transporteurs publics de personnes en cas de gratuité ou de tarifs réduits (loi n° 2004-33 du 19 avril 2004, art. 12), et décret fixant l'assiette et le recouvrement du droit sur le transport collectif public dû par les bénéficiaires (même loi, art. 11) — autres que le décret gouvernemental n° 2017-987 du 17 août 2017, limité aux corps actifs
