@@ -1,0 +1,50 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-13
+# séries (tunisia_data) : jort-lf-credits-programmes-incitations, denominateurs-depenses-etat-pib
+# sources (citation) : @lf-1995, @lf-1996, @lf-1997, @lf-1998, @lf-1999, @lf-2000, @lf-2001, @lf-2002, @lf-2003, @lf-2004, @lf-2005, @lf-2006, @lf-2007, @loi-2007-70-lf-2008, @lf-2009, @lf-2010, @lf-2011, @lf-2012, @lf-2013, @lf-2014, @lf-2015, @lf-2016, @lf-2017, @lf-2018, @lf-2019, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @wb-wdi
+# fiches : sources/jort-lois-de-finances-fonds-credits.md
+# méthode/hypothèses : Crédits de programmes votés, ni crédits de paiement ni sommes versées. Le chapitre de l'industrie ne porte pas de ligne du fonds de 1995 à 1998. La ligne de la prise en charge change de rubrique en 1998 au plus tard, en 2012 et en 2015. Le tableau disparaît de la loi de finances en 2020. Le crédit voté est rapporté à des dépenses réalisées et au PIB de l'année : les parts sont des ordres de grandeur., Le PIB n'est pas chaîné : base 1983 jusqu'en 1996, base 1997 de 1997 à 2001 et de 2005 à 2009, valeur propre au ministère des Finances, rattachée à aucune base, de 2002 à 2004 et en 2025, base 2015 de l'INS de 2010 à 2024, rétropolée pour 2010-2014.
+# note : Crédits de programmes ouverts par les lois de finances initiales à la prise en charge de la contribution patronale (1995-2019), à l'aide aux promoteurs de projets touristiques (2010-2019) et au FONAPRA (2012-2019) — en millions de dinars courants, en part des dépenses de l'État et en part du PIB
+Année,Grandeur,Source,Millions de dinars,"Dépenses de l'État hors service de la dette, réalisées (millions de dinars)",En % des dépenses de l'État,PIB (millions de dinars),En % du PIB,Base du PIB,PIB rétropolé,Page de la loi de finances,Note
+2012,Fonds national de promotion de l'artisanat et des petits métiers,loi de finances,22.0,19141.9,0.115,73895.4,0.03,base 2015,oui,66,
+2013,Fonds national de promotion de l'artisanat et des petits métiers,loi de finances,20.0,22011.6,0.091,79096.6,0.025,base 2015,oui,90,
+2014,Fonds national de promotion de l'artisanat et des petits métiers,loi de finances,10.0,22452.7,0.045,85345.7,0.012,base 2015,oui,3773,"la ligne, jusque-là projet nouveau, devient la réévaluation d'un programme en cours"
+2015,Fonds national de promotion de l'artisanat et des petits métiers,loi de finances,10.0,22248.5,0.045,89802.2,0.011,base 2015,non,3545,
+2016,Fonds national de promotion de l'artisanat et des petits métiers,loi de finances,10.662,24112.7,0.044,95286.9,0.011,base 2015,non,3700,
+2017,Fonds national de promotion de l'artisanat et des petits métiers,loi de finances,8.0,27286.7,0.029,102011.5,0.008,base 2015,non,3932,
+2018,Fonds national de promotion de l'artisanat et des petits métiers,loi de finances,7.0,29822.5,0.023,112985.5,0.006,base 2015,non,4367,
+2019,Fonds national de promotion de l'artisanat et des petits métiers,loi de finances,15.0,32672.9,0.046,122969.3,0.012,base 2015,non,5562,
+2010,aide de l'État aux promoteurs de projets touristiques,loi de finances,12.43,14267.4,0.087,66139.7,0.019,base 2015,oui,3976,
+2011,aide de l'État aux promoteurs de projets touristiques,loi de finances,10.383,17143.3,0.061,67747.3,0.015,base 2015,oui,3537,
+2012,aide de l'État aux promoteurs de projets touristiques,loi de finances,8.0,19141.9,0.042,73895.4,0.011,base 2015,oui,41,
+2013,aide de l'État aux promoteurs de projets touristiques,loi de finances,8.0,22011.6,0.036,79096.6,0.01,base 2015,oui,57,
+2014,aide de l'État aux promoteurs de projets touristiques,loi de finances,8.5,22452.7,0.038,85345.7,0.01,base 2015,oui,3736,
+2015,aide de l'État aux promoteurs de projets touristiques,loi de finances,6.99,22248.5,0.031,89802.2,0.008,base 2015,non,3509,
+2016,aide de l'État aux promoteurs de projets touristiques,loi de finances,8.5,24112.7,0.035,95286.9,0.009,base 2015,non,3662,
+2017,aide de l'État aux promoteurs de projets touristiques,loi de finances,8.4,27286.7,0.031,102011.5,0.008,base 2015,non,3892,
+2018,aide de l'État aux promoteurs de projets touristiques,loi de finances,30.776,29822.5,0.103,112985.5,0.027,base 2015,non,4335,
+2019,aide de l'État aux promoteurs de projets touristiques,loi de finances,3.049,32672.9,0.009,122969.3,0.002,base 2015,non,5514,
+1995,prise en charge de la contribution patronale de sécurité sociale,loi de finances,3.0,4584.2,0.065,17051.8,0.018,base 1983,non précisé par la source,2115,"projets nouveaux, projets à caractère national"
+1996,prise en charge de la contribution patronale de sécurité sociale,loi de finances,3.0,4858.3,0.062,19066.2,0.016,base 1983,non précisé par la source,2423,
+1997,prise en charge de la contribution patronale de sécurité sociale,loi de finances,4.0,5292.7,0.076,22943.9,0.017,base 1997,oui,2618,
+1998,prise en charge de la contribution patronale de sécurité sociale,loi de finances,3.5,5607.9,0.062,24827.6,0.014,base 1997,oui,2503,II/ Financement public (au plus tard depuis cette loi)
+1999,prise en charge de la contribution patronale de sécurité sociale,loi de finances,4.0,6165.3,0.065,27215.9,0.015,base 1997,oui,2567,
+2000,prise en charge de la contribution patronale de sécurité sociale,loi de finances,5.5,6638.0,0.083,29433.4,0.019,base 1997,oui,2791,
+2001,prise en charge de la contribution patronale de sécurité sociale,loi de finances,5.5,7205.2,0.076,31746.4,0.017,base 1997,oui,3219,
+2002,prise en charge de la contribution patronale de sécurité sociale,loi de finances,9.0,7515.8,0.12,32112.0,0.028,non rattachée (valeur propre au ministère),non précisé par la source,4301,
+2003,prise en charge de la contribution patronale de sécurité sociale,loi de finances,10.0,7931.5,0.126,34630.0,0.029,non rattachée (valeur propre au ministère),non précisé par la source,2926,
+2004,prise en charge de la contribution patronale de sécurité sociale,loi de finances,13.0,8527.8,0.152,37601.2,0.035,non rattachée (valeur propre au ministère),non précisé par la source,3773,
+2005,prise en charge de la contribution patronale de sécurité sociale,loi de finances,18.0,9191.4,0.196,41871.0,0.043,base 1997,non,3488,
+2006,prise en charge de la contribution patronale de sécurité sociale,loi de finances,24.0,9973.9,0.241,45756.2,0.052,base 1997,non,3643,
+2007,prise en charge de la contribution patronale de sécurité sociale,loi de finances,35.0,11166.1,0.313,49874.2,0.07,base 1997,non,4437,
+2008,prise en charge de la contribution patronale de sécurité sociale,loi de finances,35.0,12791.8,0.274,55296.6,0.063,base 1997,non,4410,
+2009,prise en charge de la contribution patronale de sécurité sociale,loi de finances,35.0,14174.5,0.247,58883.3,0.059,base 1997,non,4325,
+2010,prise en charge de la contribution patronale de sécurité sociale,loi de finances,40.0,14267.4,0.28,66139.7,0.06,base 2015,oui,3999,
+2011,prise en charge de la contribution patronale de sécurité sociale,loi de finances,44.0,17143.3,0.257,67747.3,0.065,base 2015,oui,3565,
+2012,prise en charge de la contribution patronale de sécurité sociale,loi de finances,55.0,19141.9,0.287,73895.4,0.074,base 2015,oui,59,groupe « Caisse Nationale de la Sécurité Sociale »
+2013,prise en charge de la contribution patronale de sécurité sociale,loi de finances,60.0,22011.6,0.273,79096.6,0.076,base 2015,oui,78,
+2014,prise en charge de la contribution patronale de sécurité sociale,loi de finances,54.0,22452.7,0.241,85345.7,0.063,base 2015,oui,3761,
+2015,prise en charge de la contribution patronale de sécurité sociale,loi de finances,47.429,22248.5,0.213,89802.2,0.053,base 2015,non,3534,2-Projets et programmes nouveaux
+2016,prise en charge de la contribution patronale de sécurité sociale,loi de finances,41.788,24112.7,0.173,95286.9,0.044,base 2015,non,3688,
+2017,prise en charge de la contribution patronale de sécurité sociale,loi de finances,37.105,27286.7,0.136,102011.5,0.036,base 2015,non,3921,
+2018,prise en charge de la contribution patronale de sécurité sociale,loi de finances,37.0,29822.5,0.124,112985.5,0.033,base 2015,non,4356,
+2019,prise en charge de la contribution patronale de sécurité sociale,loi de finances,32.0,32672.9,0.098,122969.3,0.026,base 2015,non,5546,
