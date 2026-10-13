@@ -2259,7 +2259,7 @@ une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
     compensation et de soutien des transports routiers aux tableaux des fonds spéciaux, retour de
     ses recettes affectées au budget général à la gestion 1987 (loi n° 86-106, art. 92),
     subvention du budget seule de 1988 à 1994, suppression à la gestion 1995 (loi n° 94-127,
-    art. 35) — `tbl-compensation-transport-caisse`. **Restent** : réalisations (lois de règlement lues le 13 octobre 2026 : total de tous les
+    art. 35) — `fig-compensation-transport-caisse` (figure à trois vues depuis le 13 octobre 2026 : millions de dinars, part des dépenses de l'État, part du PIB ; série `jort-lf-caisse-transports-routiers` de tunisia-data). **Restent** : réalisations (lois de règlement lues le 13 octobre 2026 : total de tous les
     fonds seulement, la caisse n'y est pas nommée ; lois de finances complémentaires, au corpus,
     **à lire**) ; composition des recettes de
     1985-1986 (art. 26 de la loi de finances pour 1985, **à lire**) ; pied de page de la loi de finances pour 1989 à confirmer à l'image.

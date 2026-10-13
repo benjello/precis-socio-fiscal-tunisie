@@ -153,31 +153,51 @@ Ce financement par des recettes affectées dure trois gestions : à partir de 19
 
 De 1987 à 1994, la caisse de compensation et de soutien des transports routiers n'est plus financée par des recettes affectées, mais par une subvention du budget général ; elle est supprimée à la gestion 1995.
 
-| Gestion | Subvention du budget | Recettes propres | Total des recettes |
-|---|---:|---:|---:|
-| [1984](#r-tr-1984-taxe) | non distinguée | non distinguée | 5,6 |
-| [1985](#r-tr-caisse-1985) | non distinguée | non distinguée | 6,0 |
-| [1986](#r-tr-caisse-1986) | non distinguée | non distinguée | 8,0 |
-| [1987](#r-tr-1987) | 8,0 | 4,0 | 12,0 |
-| [1988](#r-tr-caisse-1988) | 22,5 | — | 22,5 |
-| [1989](#r-tr-caisse-1989) | 32,5 | — | 32,5 |
-| [1990](#r-tr-caisse-1990) | 32,5 | — | 32,5 |
-| [1991](#r-tr-caisse-1991) | 33,0 | — | 33,0 |
-| [1992](#r-tr-caisse-1992) | 40,0 | — | 40,0 |
-| [1993](#r-tr-caisse-1993) | 42,5 | — | 42,5 |
-| [1994](#r-tr-caisse-1994) | 42,5 | — | 42,5 |
+Le @fig-compensation-transport-caisse donne les prévisions de la caisse année par année, en millions de dinars, en part des dépenses de l'État et en part du PIB.
 
-: La caisse de compensation et de soutien des transports routiers aux tableaux des fonds spéciaux du Trésor, gestions 1984 à 1994 : prévisions des lois de finances initiales, en millions de dinars courants. Les dépenses prévues sont égales au total des recettes. De 1984 à 1986, le tableau ne donne que le total des recettes ; à partir de 1987, il sépare la subvention du budget des recettes propres, et un tiret y marque l'absence de recettes propres. Chaque année renvoie à sa loi de finances, au registre replié à la fin de la section. {#tbl-compensation-transport-caisse}
+```{python}
+#| label: fig-compensation-transport-caisse
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import transport as tr
+tr.figure(
+    "caisse",
+    caption=("La caisse de compensation et de soutien des transports routiers aux lois de "
+             "finances initiales, gestions 1984 à 1994 : recettes prévues, en millions de "
+             "dinars courants, en part des dépenses de l'État et en part du PIB"),
+    note_lecture=(
+        "Chaque barre est la prévision de la caisse au tableau des fonds spéciaux du Trésor "
+        "de la loi de finances initiale ; le nombre au-dessus est le total des recettes "
+        "prévues, auquel les dépenses prévues sont égales. De 1984 à 1986, le tableau ne "
+        "donne que ce total (barre grise) ; à partir de 1987, il sépare la subvention du "
+        "budget général des recettes propres, et n'en prévoit plus aucune de 1988 à 1994. La "
+        "caisse est supprimée à la gestion 1995 : rien n'est tracé au-delà. La loi de "
+        "finances de chaque gestion et la page du tableau sont dans l'onglet « Données » et "
+        "au registre replié de la section.\n\n"
+        "Deuxième vue : le total rapporté aux dépenses de l'État hors service de la dette. "
+        "La prévision votée est rapportée à des dépenses réalisées, que le ministère des "
+        "Finances ne donne qu'à partir de 1986 : la part est un ordre de grandeur, et il n'y "
+        "en a pas pour 1984 et 1985. Jusqu'en 1986, la caisse est d'ailleurs un fonds hors du "
+        "budget général, financé par des recettes affectées.\n\n"
+        "Troisième vue : le total en part du PIB, en trois segments qui ne se raccordent "
+        "pas — PIB de la Banque mondiale pour 1984 et 1985 ; PIB du ministère des Finances de "
+        "1986 à 1991, dont la base, présumée de 1983, n'est pas dite par la source ; PIB du "
+        "ministère en base 1983 de 1992 à 1994. La source ne précise pas si ces valeurs sont "
+        "rétropolées. La base de chaque segment est écrite au-dessus du cadre (voir "
+        "l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures))."))
+```
 
 - **1987 : les recettes affectées reviennent au budget général.** [La loi de finances pour 1987](#r-tr-1987) range la caisse parmi douze fonds spéciaux du Trésor, dont la Caisse générale de compensation, auxquels elle retire leurs recettes fiscales et parafiscales : sous la rubrique « Intégration au budget de l'État des recettes fiscales et para-fiscales revenant aux fonds spéciaux du Trésor », les impôts, droits, taxes, redevances et contributions qui leur étaient affectés « en totalité ou en partie » reviennent au budget général de l'État. La caisse elle-même est maintenue ; la même loi supprime dix-huit autres fonds, dont le fonds spécial de la sécurité routière.
 - **1988-1994 : la subvention du budget, seule recette prévue.** Le tableau des fonds spéciaux prévoit encore 4,0 MD de recettes propres pour 1987 ; il n'en prévoit plus aucune de 1988 à 1994. La subvention du budget passe de 8,0 MD pour 1987 à 22,5 MD pour 1988, puis à 42,5 MD pour 1993 et 1994. Le tarif préférentiel est dès lors payé par le budget général, non plus par les véhicules de transport.
+- **Environ 1 % des dépenses de l'État de 1989 à 1994.** Les recettes prévues de la caisse passent de 5,6 MD pour 1984 à 12,0 MD pour 1987 et à 42,5 MD pour 1993 et 1994. Rapportées aux dépenses de l'État hors service de la dette, elles en valent 0,33 % en 1986, 0,52 % en 1987, 1,09 % en 1989, et entre 0,94 % et 1,09 % jusqu'en 1994 ; en part du PIB, 0,09 % en 1984, 0,34 % en 1989 et 0,27 % en 1994, sur trois segments de PIB qui ne se raccordent pas.
 - **1995 : la caisse est supprimée.** [La loi de finances pour 1995](#r-tr-1995), sous la rubrique « Fonds spéciaux du trésor », supprime sept fonds, dont « le fonds de compensation et de soutien des transports routiers créé par la loi n° 83-113 du 30 Décembre 1983 » ; leurs ressources « sont transférées au budget général de l'État ». L'article ne dit rien de la dépense. Pour la même gestion, le budget ordinaire inscrit 46,0 MD d'interventions publiques au chapitre du ministère du Transport ; le tableau s'arrête au chapitre et ne nomme ni la subvention ni les sociétés de transport.
 
-Ces montants sont des prévisions votées, non des paiements, et ils couvrent tous les emplois de la caisse, dont les subventions d'exploitation ne sont que le premier (@sec-compensation-transport-1984). Ils ne se raccordent pas au poste « transport » de la dépense de compensation, suivi année par année à partir de 2003 (@sec-compensation-par-poste). La ligne du budget qui porte la subvention aux sociétés de transport de 1995 à 2002 n'est pas identifiée ici ; en 2007, cette subvention figure au budget sous une ligne « ministère du Transport (compensation) » [@minfin-finances-publiques-2010].
+Ces montants sont des prévisions votées, non des paiements : chaque gestion renvoie à sa loi de finances — [1984](#r-tr-1984-taxe), [1985](#r-tr-caisse-1985), [1986](#r-tr-caisse-1986), [1987](#r-tr-1987), [1988](#r-tr-caisse-1988), [1989](#r-tr-caisse-1989), [1990](#r-tr-caisse-1990), [1991](#r-tr-caisse-1991), [1992](#r-tr-caisse-1992), [1993](#r-tr-caisse-1993) et [1994](#r-tr-caisse-1994). Ils couvrent tous les emplois de la caisse, dont les subventions d'exploitation ne sont que le premier (@sec-compensation-transport-1984). Ils ne se raccordent pas au poste « transport » de la dépense de compensation, suivi année par année à partir de 2003 (@sec-compensation-par-poste). La ligne du budget qui porte la subvention aux sociétés de transport de 1995 à 2002 n'est pas identifiée ici ; en 2007, cette subvention figure au budget sous une ligne « ministère du Transport (compensation) » [@minfin-finances-publiques-2010].
 
 <!-- RECHERCHE r-transport-ligne-budgetaire-1995-2002 : ligne du budget général qui porte la subvention d'exploitation des sociétés publiques de transport routier de personnes après la suppression de la caisse de compensation et de soutien des transports routiers, de 1995 à 2002 (voir docs/recherches.yml) -->
 
-<!-- TODO (documentaliste) : docs/notes/compensation-transport-second-passage-2026-10-12.md, § 3. (1) Le tableau ne porte que des prévisions de lois de finances initiales : lois de finances complémentaires (n° 86-83, 88-60, 89-88, 91-23, 94-115) non lues ; les lois de règlement des gestions 1984 et 1990 à 1995, lues à l'image le 13 octobre 2026, ne donnent que le total de tous les fonds spéciaux du Trésor (tableau n° 6), sans nommer la caisse, et règlent le budget par titre et section, sans chapitre : aucune réalisation propre à la caisse n'y figure ; resteraient les comptes du Trésor et la Cour des comptes. (2) Composition des recettes de 1985 et 1986 non lue : l'article 92 de la loi de finances pour 1987 ne nomme pas la taxe unique de compensation de transports routiers, et l'article 26 de la loi de finances pour 1985, qui la modifie, n'est pas lu — ne pas écrire quelle part de la taxe est affectée à la caisse après 1984, ni que la taxe est affectée au poste « transport ». (3) Prévision de 1984 relue à l'image le 13 octobre 2026 (tableau F, ligne 30, p. 3422 : 5 600 000 D en dépenses et en recettes). (4) Numéro de page et date du fascicule de la loi de finances pour 1989 (JORT n° 87 de 1988, p. 1870) lus par océrisation ; premier chiffre de la page 2294 du JORT n° 100 de 1993 rogné sur l'image. (5) Absence de la caisse au tableau « K » de la loi de finances pour 1995 (p. 2126) confirmée à l'image le 13 octobre 2026. (5 bis) Après 1995 : les lois de finances s'arrêtent au chapitre ; les décrets de répartition des crédits descendent à l'article sans nommer de bénéficiaire — ministère du Transport, article 62 « subventions aux établissements » 42 498 000 D pour 1996 (décret n° 95-2503, p. 2543-2544), article 71 « intervention indirecte dans le domaine social et culturel » 49 002 000 D pour 1997 (décret n° 96-2458, p. 2677-2678), article 03.302 « interventions dans le domaine social » 84 764 000 D pour 2001 (décret n° 2000-2932, p. 3281) ; ne pas en tirer une série de la subvention du transport (chemins de fer, métro léger et transport scolaire peuvent y être). (6) Arrêté du ministre du plan et des finances pris pour l'application de l'article 92 de la loi de finances pour 1987 : non cherché. (7) Répartition des 42 500 000 D de 1993-1994 entre sociétés et entre emplois de la caisse : non établie. Les articles 40 à 47 de la loi n° 83-113 (réductions, paiement, sanctions) ne sont pas repris ; la loi n° 84-2 du 21 mars 1984 et les lois de finances de 1985, de 1988 à 1993, de 1995, de 2005 et de 2008 modifient la taxe (intitulés seuls) : elles relèvent du volume « La fiscalité ». -->
+<!-- TODO (documentaliste) : docs/notes/compensation-transport-second-passage-2026-10-12.md, § 3. (1) La figure ne porte que des prévisions de lois de finances initiales : lois de finances complémentaires (n° 86-83, 88-60, 89-88, 91-23, 94-115) non lues ; les lois de règlement des gestions 1984 et 1990 à 1995, lues à l'image le 13 octobre 2026, ne donnent que le total de tous les fonds spéciaux du Trésor (tableau n° 6), sans nommer la caisse, et règlent le budget par titre et section, sans chapitre : aucune réalisation propre à la caisse n'y figure ; resteraient les comptes du Trésor et la Cour des comptes. (2) Composition des recettes de 1985 et 1986 non lue : l'article 92 de la loi de finances pour 1987 ne nomme pas la taxe unique de compensation de transports routiers, et l'article 26 de la loi de finances pour 1985, qui la modifie, n'est pas lu — ne pas écrire quelle part de la taxe est affectée à la caisse après 1984, ni que la taxe est affectée au poste « transport ». (3) Prévision de 1984 relue à l'image le 13 octobre 2026 (tableau F, ligne 30, p. 3422 : 5 600 000 D en dépenses et en recettes). (4) Numéro de page et date du fascicule de la loi de finances pour 1989 (JORT n° 87 de 1988, p. 1870) lus par océrisation ; premier chiffre de la page 2294 du JORT n° 100 de 1993 rogné sur l'image. (5) Absence de la caisse au tableau « K » de la loi de finances pour 1995 (p. 2126) confirmée à l'image le 13 octobre 2026. (5 bis) Après 1995 : les lois de finances s'arrêtent au chapitre ; les décrets de répartition des crédits descendent à l'article sans nommer de bénéficiaire — ministère du Transport, article 62 « subventions aux établissements » 42 498 000 D pour 1996 (décret n° 95-2503, p. 2543-2544), article 71 « intervention indirecte dans le domaine social et culturel » 49 002 000 D pour 1997 (décret n° 96-2458, p. 2677-2678), article 03.302 « interventions dans le domaine social » 84 764 000 D pour 2001 (décret n° 2000-2932, p. 3281) ; ne pas en tirer une série de la subvention du transport (chemins de fer, métro léger et transport scolaire peuvent y être). (6) Arrêté du ministre du plan et des finances pris pour l'application de l'article 92 de la loi de finances pour 1987 : non cherché. (7) Répartition des 42 500 000 D de 1993-1994 entre sociétés et entre emplois de la caisse : non établie. Les articles 40 à 47 de la loi n° 83-113 (réductions, paiement, sanctions) ne sont pas repris ; la loi n° 84-2 du 21 mars 1984 et les lois de finances de 1985, de 1988 à 1993, de 1995, de 2005 et de 2008 modifient la taxe (intitulés seuls) : elles relèvent du volume « La fiscalité ». -->
 
 ### 2001 : un droit écrit à compensation pour les chemins de fer {#sec-compensation-transport-2001}
 
