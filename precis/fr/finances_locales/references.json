@@ -349,25 +349,6 @@
       "URL": "https://www.pist.tn/jort/2007/2007F/Jo0642007.pdf"
     },
     {
-      "id": "lf-2009",
-      "type": "legislation",
-      "title": "Loi n° 2008-77 du 22 décembre 2008, portant loi de finances pour l'année 2009",
-      "title-short": "Loi n° 2008-77 du 22 décembre 2008",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "104",
-      "issued": {
-        "date-parts": [
-          [
-            2008,
-            12,
-            22
-          ]
-        ]
-      },
-      "note": "citation-key: lf-2009\nJORT n° 104 du 26 décembre 2008. Art. 33 en p. 4279 de l'édition française ; application à compter du 1er janvier 2009 (art. 39). Étendue des pages non relevée.",
-      "URL": "https://www.pist.tn/jort/2008/2008F/Jo1042008.pdf"
-    },
-    {
       "id": "lfc-2012",
       "type": "legislation",
       "title": "Loi n° 2012-1 du 16 mai 2012, portant loi de finances complémentaire pour l'année 2012",
@@ -811,26 +792,6 @@
       "URL": "https://www.pist.tn/jort/1985/1985F/Jo09185.pdf"
     },
     {
-      "id": "loi86-106-lf1987",
-      "type": "legislation",
-      "title": "Loi n° 86-106 du 31 décembre 1986, portant loi de finances pour la gestion 1987",
-      "title-short": "Loi n° 86-106 du 31 décembre 1986 (loi de finances pour 1987)",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "78",
-      "page": "1618-1623",
-      "issued": {
-        "date-parts": [
-          [
-            1986,
-            12,
-            31
-          ]
-        ]
-      },
-      "note": "citation-key: loi86-106-lf1987\nJORT n° 78 des 30-31 décembre 1986 ; art. 44 (p. 1618), 91, 92 et 94 (p. 1623), lus à l'image ; pages AR non relevées.",
-      "URL": "https://www.pist.tn/jort/1986/1986F/Jo07886.pdf"
-    },
-    {
       "id": "loi88-145-lf1989",
       "type": "legislation",
       "title": "Loi n° 88-145 du 29 décembre 1988, portant loi de finances pour la gestion 1989",
@@ -849,26 +810,6 @@
       },
       "note": "citation-key: loi88-145-lf1989\nJORT n° 87 des 30-31 décembre 1988 ; art. 100 à 103, FR p. 1803 ; page AR non relevée.",
       "URL": "https://www.pist.tn/jort/1988/1988F/Jo08788.pdf"
-    },
-    {
-      "id": "lf-1990",
-      "type": "legislation",
-      "title": "Loi n° 89-115 du 30 décembre 1989, portant loi de finances pour la gestion 1990",
-      "title-short": "Loi n° 89-115 du 30 décembre 1989 (loi de finances pour 1990)",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "88",
-      "page": "2152-2239",
-      "issued": {
-        "date-parts": [
-          [
-            1989,
-            12,
-            30
-          ]
-        ]
-      },
-      "note": "citation-key: lf-1990\nJORT n° 88 des 29-31 décembre 1989 ; art. 53 à 55 (FR p. 2152 ; le montant de l'art. 53 lu par océrisation seulement) et tableau « L » des fonds spéciaux du Trésor (FR p. 2239, lu à l'image) ; pages AR non relevées.",
-      "URL": "https://www.pist.tn/jort/1989/1989F/Jo08889.pdf"
     },
     {
       "id": "loi90-111-lf1991",
@@ -2320,41 +2261,6 @@
       "URL": "https://www.pist.tn/jort/2006/2006F/Jo0592006.pdf"
     },
     {
-      "id": "bct-ra",
-      "type": "dataset",
-      "note": "citation-key: bct-ra\nTitre relevé en couverture des fascicules (« Rapport Annuel 2024 ») et confirmé sur bct.gov.tn ; les métadonnées PDF portent un code de service interne, inutilisable. Publication annuelle depuis 1959. Le tableau « Principaux indicateurs de l'emploi » ne figure toutefois que dans 14 rapports sur 66, d'où une série d'emploi limitée à 2007-2024.",
-      "publisher": "Banque Centrale de Tunisie",
-      "title": "Rapport annuel",
-      "URL": "https://www.bct.gov.tn/bct/siteprod/page.jsp?id=77",
-      "author": [
-        {
-          "literal": "Banque centrale de Tunisie"
-        }
-      ],
-      "issued": {
-        "date-parts": [
-          [
-            2025
-          ]
-        ]
-      }
-    },
-    {
-      "id": "ins-annuaire",
-      "type": "report",
-      "title": "Annuaire statistique de la Tunisie (éditions 1995-2001, 1998-2002, 1999-2003 et 2019-2023)",
-      "title-short": "INS, Annuaire statistique de la Tunisie",
-      "author": [
-        {
-          "literal": "Institut national de la statistique"
-        }
-      ],
-      "publisher": "Institut National de la Statistique, Tunisie",
-      "publisher-place": "Tunis",
-      "URL": "https://www.ins.tn/publication/annuaire-statistique-de-la-tunisie-2019-2023",
-      "note": "citation-key: ins-annuaire\nEnsemble d'éditions d'une publication annuelle de l'INS, à édition glissante sur cinq ans ou plus. Éditions utilisées pour l'indice des prix à la consommation : 1995-2001, 1998-2002, 1999-2003 et 2019-2023."
-    },
-    {
       "id": "ins-rgph-2004-vol1",
       "type": "report",
       "title": "Recensement général de la population et de l'habitat de 2004 : premiers résultats, volume 1",
@@ -2467,27 +2373,6 @@
         ]
       },
       "note": "citation-key: ins-rgph-2024-flash-demographie\nDaté de septembre 2025. P. 3 : population urbaine et population rurale en 2024, selon la classification qui remplace la classification communal / non communal. Consulté le 10 octobre 2026."
-    },
-    {
-      "id": "lf-1993",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: lf-1993\nissue: 88\nJORT n° 88 du 31 décembre 1992, tome 135 ; la loi commence page 1668. Article 101 : « Unification et simplification du régime forfaitaire ». URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1992/1992A/Ja08892.pdf\nDROIT DE CONSOMMATION : la liste DGELF porte l'article 110 comme modifiant la liste annexée à la loi n° 88-62. ARTICLE NON VÉRIFIÉ SUR PIÈCE dans le cadre de la passe « droits de consommation » ; ni son contenu ni ses taux ne doivent être cités d'après cette mention.\nFonds de protection des zones touristiques : art. 38 (ouverture du fonds spécial du Trésor) et art. 39, premier tiret (50 % du produit de la taxe hôtelière de la loi n° 75-34 acquittée par les exploitants des hôtels situés dans les zones touristiques municipales), édition française p. 1670, lus à l'image (fascicule sans couche texte) ; édition arabe non relue pour ces articles.",
-      "page": "1668",
-      "title": "Loi n° 92-122 du 29 décembre 1992, portant loi de finances pour la gestion 1993",
-      "URL": "https://www.pist.tn/jort/1992/1992F/Jo08892.pdf",
-      "volume": "135",
-      "issued": {
-        "date-parts": [
-          [
-            1992,
-            12,
-            29
-          ]
-        ]
-      },
-      "issue": "88",
-      "title-short": "Loi n° 92-122 du 29 décembre 1992"
     }
   ]
 }
