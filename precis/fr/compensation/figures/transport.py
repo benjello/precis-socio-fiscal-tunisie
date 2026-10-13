@@ -3,7 +3,7 @@
     from figures import transport as tr
     tr.figure("soutien_par_societe", caption=…, note_lecture=…)
 
-D'OÙ VIENNENT LES DONNÉES. Sept séries de `tunisia-data`, lues par `figtools.series()` — donc
+D'OÙ VIENNENT LES DONNÉES. Huit séries de `tunisia-data`, lues par `figtools.series()` — donc
 depuis le snapshot `precis/_seriescache/` quand l'entrepôt est absent — et le poste
 « transport » de `compensation-parts`, déjà employé par le chapitre de la dépense :
 
@@ -14,6 +14,9 @@ depuis le snapshot `precis/_seriescache/` quand l'entrepôt est absent — et le
   - `transport-abonnements-scolaires` : nombre d'abonnements scolaires, mêmes budgets ;
   - `jort-transport-tarifs-reperes` : tarifs fixés par arrêté, 1987-2000 ;
   - `ins-bms-prix-transport` : relevé de prix de l'INS à Tunis, novembre 2007 – juillet 2026 ;
+  - `jort-lf-caisse-transports-routiers` : prévisions de la caisse de compensation et de
+    soutien des transports routiers aux lois de finances initiales, gestions 1984-1994, avec
+    la part des dépenses de l'État et la part du PIB calculées par l'entrepôt ;
   - `bm-livre-blanc-2016-transport-trafic-comptes` : trafic de la société des transports de
     Tunis par catégorie de voyageurs, 2007-2014 (rapport extérieur).
 
@@ -66,6 +69,7 @@ TARIFS = "jort-transport-tarifs-reperes"
 INS = "ins-bms-prix-transport"
 LIVRE_BLANC = "bm-livre-blanc-2016-transport-trafic-comptes"
 PARTS = "compensation-parts"
+CAISSE = "jort-lf-caisse-transports-routiers"
 
 BASE = dinars_constants.ANNEE_BASE
 BLEU, BLEU_CLAIR, ORANGE, VERT, VIOLET, ROUGE, GRIS, NOIR = (
@@ -123,6 +127,14 @@ _L = {
     "seg1": {"fr": "éditions 2013 à 2016 du budget"},
     "seg2": {"fr": "édition 2017"},
     "rupture_ab": {"fr": "changement de mesure,\nnon expliqué par la source"},
+    "vue_dep": {"fr": "En % des dépenses de l'État"},
+    "pct_dep": {"fr": "En % des dépenses de l'État\nhors service de la dette"},
+    "caisse_total": {"fr": "total des recettes prévues, subvention et recettes propres non distinguées"},
+    "caisse_subvention": {"fr": "subvention du budget général"},
+    "caisse_propres": {"fr": "recettes propres"},
+    "caisse_1987": {"fr": "1987 : recettes affectées\nreversées au budget général"},
+    "caisse_1995": {"fr": "1995 : caisse\nsupprimée"},
+    "caisse_sans_dep": {"fr": "1984-1985 : dépenses de\nl'État non établies"},
 }
 
 
@@ -202,6 +214,22 @@ PROVENANCE = {
         caveats=("Rapport extérieur. La Banque reproduit un tableau de la société sans dire la "
                  "définition des catégories ni le mode de comptage (billets vendus, comptages, "
                  "estimation des abonnés).")),
+    CAISSE: dict(
+        perimetre=("lois de finances initiales pour 1984 à 1994, tableau des fonds spéciaux du "
+                   "Trésor, ligne de la caisse de compensation et de soutien des transports "
+                   "routiers : total des recettes prévues, égal aux dépenses prévues ; subvention "
+                   "du budget et recettes propres à partir de 1987. Dénominateurs : dépenses de "
+                   "l'État hors service de la dette, réalisées, d'après le ministère des "
+                   "Finances (à partir de 1986) ; PIB de la Banque mondiale pour 1984-1985, PIB "
+                   "du ministère des Finances ensuite"),
+        caveats=("Prévisions votées, non paiements ; les lois de finances complémentaires ne "
+                 "sont pas prises en compte. Le montant couvre tous les emplois de la caisse. "
+                 "De 1984 à 1986, le tableau ne distingue pas la subvention des recettes "
+                 "propres. La prévision est rapportée à des dépenses réalisées : la part est "
+                 "un ordre de grandeur. Le PIB change de source en 1986 et sa base n'est "
+                 "connue qu'à partir de 1992 (base 1983) ; la source ne dit pas s'il est "
+                 "rétropolé. Aucun raccord avec le poste « transport » de la dépense de "
+                 "compensation, suivi depuis 2003.")),
     PARTS: dict(
         perimetre=("dépense budgétaire de compensation — total des trois postes et poste "
                    "« transport » — et PIB de l'année : PIB de l'INS en base 2015, rétropolé "
@@ -473,6 +501,97 @@ def _figure_interventions():
     return (vues, table.reset_index(drop=True),
             {TRANSFERTS: None, PARTS: list(parts["source"])},
             "fig_compensation_transport_interventions")
+
+
+# --- 2 bis. La caisse des transports routiers aux lois de finances, 1984-1994 --------------
+
+MESURES_CAISSE = {"md": ("md", 1, None), "dep": ("pct_dep", 2, "part_depenses_etat_pct"),
+                  "pib": ("pct_pib", 2, "part_pib_pct")}
+
+
+def _caisse():
+    d = figtools.series(CAISSE).sort_values("annee").reset_index(drop=True)
+    d["rupture"] = ["PIB : " + str(r) if isinstance(r, str) and r else None
+                    for r in d["rupture_pib"]]
+    return d
+
+
+def fig_caisse(mesure: str = "md"):
+    figtools.apply_lang_font()
+    d = _caisse()
+    ylabel, dec, colonne = MESURES_CAISSE[mesure]
+    unite = {"md": " MD", "dep": " % des dépenses de l'État", "pib": " % du PIB"}[mesure]
+    fig, ax = plt.subplots(figsize=(9.5, 4.8))
+    for r in d.itertuples():
+        a, total = int(r.annee), float(r.total_recettes_md)
+        if mesure == "md":
+            k = 1.0
+        else:
+            part = getattr(r, colonne)
+            if part != part:  # dénominateur non établi : pas de barre
+                continue
+            k = float(part) / total
+        if r.subvention_budget_md != r.subvention_budget_md:
+            morceaux = [("caisse_total", total, GRIS, "")]
+        else:
+            morceaux = [("caisse_subvention", float(r.subvention_budget_md), VERT, ""),
+                        ("caisse_propres", float(r.recettes_propres_md), ORANGE, "//")]
+        bas = 0.0
+        for cle, v, couleur, hachure in morceaux:
+            if v == 0:
+                continue
+            barre = ax.bar([a], [v * k], bottom=bas, width=0.7, color=couleur, hatch=hachure,
+                           edgecolor="white", zorder=2)
+            figtools.infobulle(barre[0], f"gestion {a} · {_lab(cle)} : {_nb(v)} MD"
+                               + ("" if mesure == "md" else f", soit {_nb(v * k, 2)}{unite}")
+                               + f" (loi de finances, p. {r.page})")
+            bas += v * k
+        ax.annotate(_nb(bas, dec), xy=(a, bas), xytext=(0, 2), textcoords="offset points",
+                    ha="center", va="bottom", fontsize=7)
+    haut = ax.get_ylim()[1] * 1.12
+    ax.set_ylim(0, haut)
+    for annee, cle in ((1987, "caisse_1987"), (1995, "caisse_1995")):
+        figtools.marque_rupture(ax, annee)
+        ax.annotate(_ft(cle), xy=(annee - 0.5, 0.97), xycoords=("data", "axes fraction"),
+                    xytext=(-4, 0), textcoords="offset points", ha="right", va="top",
+                    fontsize=7, color=ROUGE,
+                    bbox=dict(facecolor="white", edgecolor="none", alpha=0.85, pad=1))
+    if mesure == "dep":
+        ax.annotate(_ft("caisse_sans_dep"), xy=(1984.5, 0.06), xycoords=("data", "axes fraction"),
+                    ha="center", va="bottom", fontsize=7, color=GRIS)
+    _cadre(ax, ylabel)
+    ax.set_xticks(list(range(1984, 1996)))
+    ax.set_xlim(1983.2, 1995.8)
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0 if mesure == "md" else 2)))
+    poignees = [Patch(facecolor=GRIS, edgecolor="white", label=figtools.fig_text(_lab("caisse_total"))),
+                Patch(facecolor=VERT, edgecolor="white",
+                      label=figtools.fig_text(_lab("caisse_subvention"))),
+                Patch(facecolor=ORANGE, hatch="//", edgecolor="white",
+                      label=figtools.fig_text(_lab("caisse_propres")))]
+    if mesure == "pib":
+        cm._marque_ruptures(ax, d, 1984, 1994, pib=True)
+        poignees.append(cm._poignee_pib(d))
+    _legende(ax, poignees, ncol=1 if mesure == "pib" else 2, y=-0.14)
+    fig.tight_layout()
+    return fig
+
+
+def _figure_caisse():
+    d = _caisse()
+    table = d[["annee", "subvention_budget_md", "recettes_propres_md", "total_recettes_md",
+               "depenses_etat_hors_dette_MDT", "part_depenses_etat_pct", "pib_MDT",
+               "part_pib_pct", "source_pib", "base_pib", "pib_retropole", "tableau",
+               "page"]].copy()
+    table.columns = ["Gestion", "Subvention du budget (millions de dinars)",
+                     "Recettes propres (millions de dinars)",
+                     "Total des recettes prévues (millions de dinars)",
+                     "Dépenses de l'État hors service de la dette, réalisées (millions de dinars)",
+                     "Total en % des dépenses de l'État", "PIB (millions de dinars)",
+                     "Total en % du PIB", "Source du PIB", "Base du PIB", "PIB rétropolé",
+                     "Tableau de la loi de finances", "Page"]
+    vues = [(_lab("vue_md"), fig_caisse("md")), (_lab("vue_dep"), fig_caisse("dep")),
+            (_lab("vue_pib"), fig_caisse("pib"))]
+    return vues, table, {CAISSE: None}, "fig_compensation_transport_caisse"
 
 
 # --- 3. Les tarifs : Journal officiel 1987-2000, relevé de l'INS 2007-2026 ---------------
@@ -952,6 +1071,7 @@ def _figure_abonnements_nombre():
 FIGURES = {
     "soutien_par_societe": _figure_soutien,
     "interventions": _figure_interventions,
+    "caisse": _figure_caisse,
     "tarifs": _figure_tarifs,
     "tarifs_arretes": _figure_tarifs_arretes,
     "abonnements_prix": _figure_abonnements_prix,
