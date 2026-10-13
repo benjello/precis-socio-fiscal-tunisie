@@ -837,9 +837,13 @@
     couverture: 'Intitulés FR et AR depuis le 18 novembre 1996 : la loi, son rectificatif (n° 7 de 1997), la loi n° 2002-24 (lue). Lus : loi n° 96-101, loi n° 2002-24, décrets n° 97-1925 et n° 97-1926, décrets n° 2002-886, n° 2002-887 et n° 2006-1025 qui les modifient (trouvés par l''intitulé « interventions sociales en faveur des travailleurs » et par les numéros des décrets de 1997) : champ limité aux travailleurs des entreprises affiliées à la CNSS et régis par la loi n° 60-30. Lacune : les décrets d''application ne citent pas la loi dans leur intitulé — la requête par numéro ne les rend pas ; un texte d''extension pourrait être dans le même cas. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 4.2.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire:
-  - 'chercher par objet : « protection sociale des travailleurs », « الإحاطة الاجتماعية بالعمال »'
-  - chercher un modificatif des décrets n° 97-1925 et n° 97-1926 postérieur à 2006
+  - date: 2026-10-12
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Modificatif des décrets n° 97-1925 et n° 97-1926 : intitulés FR et AR depuis le 1er septembre 1997 portant « 97-1925 », « 97-1926 », « 1925 لسنة 1997 », « 1926 لسنة 1997 » ou « interventions sociales en faveur des travailleurs » ; ne sortent que les décrets n° 2002-886, n° 2002-887 et n° 2006-1025, relus à l''image (JORT n° 34 de 2002, p. 1029-1032 ; n° 31 de 2006, p. 879). Aucun modificatif postérieur à 2006.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: ['chercher par objet : « protection sociale des travailleurs », « الإحاطة الاجتماعية بالعمال »']
 
 - id: r-pf-taux-apres-1996
   objet: décret fixant les taux des indemnités à caractère familial ou des allocations familiales postérieur au décret n° 96-1906 du 16 octobre 1996

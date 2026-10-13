@@ -676,9 +676,10 @@ liste qui suit le tableau, citations comprises. Restent :
   - *Trouvé en écrivant, hors de la note* : les décrets de 1997 sont modifiés — n° 2002-886 et
     n° 2006-1025 pour le décret n° 97-1925 (aide plafonnée à trois, puis six, puis douze mensualités),
     n° 2002-887 pour le décret n° 97-1926 (articles 1 à 7 remplacés). Lus par le rédacteur sur la couche
-    texte du corpus (`2002/fr/Jo0342002.pdf`, police décalée, décodée ; `2006/fr/Jo0312006.pdf`) :
-    **à relire à l'image par le documentaliste**, dates d'effet à établir, modificatif postérieur à 2006 à
-    chercher.
+    texte du corpus (`2002/fr/Jo0342002.pdf`, police décalée, décodée ; `2006/fr/Jo0312006.pdf`), puis
+    **relus à l'image le 12 octobre 2026** : contenu confirmé, registre complété (articles 3 bis et 6 de
+    2002, inscription au bureau d'emploi), aucune clause d'effet, aucun modificatif postérieur à 2006 dans
+    les intitulés. *Reste* : la date de dépôt des deux fascicules, pour dater l'exécution.
   - *Reste, lisible au corpus* : relecture à l'image des textes repris de la couche texte (loi n° 2002-24,
     rectificatif de 1997, décrets de 1997, 2002 et 2006, loi n° 94-28 art. 42 à 53, décrets n° 2007-1367,
     n° 2008-756 et n° 2021-318, arrêté du 3 juin 2008, arrêtés des familles d'accueil, décret n° 2022-715
