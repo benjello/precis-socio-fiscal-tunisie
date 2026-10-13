@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-13
+# séries (tunisia_data) : jort-lf-caisse-transports-routiers
+# sources (citation) : @lf-1984, @lf-1985, @lf-1986, @lf-1987, @lf-1988, @lf-1989, @lf-1990, @lf-1991, @lf-1992, @lf-1993, @lf-1994, @minfin-remunerations, @minfin-indicateurs-fp, @wb-wdi
+# fiches : sources/jort-lois-de-finances-fonds-credits.md
+# méthode/hypothèses : Prévisions votées, non paiements ; les lois de finances complémentaires ne sont pas prises en compte. Le montant couvre tous les emplois de la caisse. De 1984 à 1986, le tableau ne distingue pas la subvention des recettes propres. La prévision est rapportée à des dépenses réalisées : la part est un ordre de grandeur. Le PIB change de source en 1986 et sa base n'est connue qu'à partir de 1992 (base 1983) ; la source ne dit pas s'il est rétropolé. Aucun raccord avec le poste « transport » de la dépense de compensation, suivi depuis 2003.
+# note : La caisse de compensation et de soutien des transports routiers aux lois de finances initiales, gestions 1984 à 1994 : recettes prévues, en millions de dinars courants, en part des dépenses de l'État et en part du PIB
+Gestion,Subvention du budget (millions de dinars),Recettes propres (millions de dinars),Total des recettes prévues (millions de dinars),"Dépenses de l'État hors service de la dette, réalisées (millions de dinars)",Total en % des dépenses de l'État,PIB (millions de dinars),Total en % du PIB,Source du PIB,Base du PIB,PIB rétropolé,Tableau de la loi de finances,Page
+1984,,,5.6,,,6412.4,0.087,wdi-tunisie (NY.GDP.MKTP.CN),"bases accolées par la Banque mondiale, non raccordées",non précisé par la source,"F, ligne 30",3422
+1985,,,6.0,,,7018.3,0.085,wdi-tunisie (NY.GDP.MKTP.CN),"bases accolées par la Banque mondiale, non raccordées",non précisé par la source,"F, ligne 34",3003
+1986,,,8.0,2395.0,0.334,7160.4,0.112,pib-minfin (déficit en dinars ÷ déficit en points de PIB),base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),non précisé par la source,"F, ligne 34",1771
+1987,8.0,4.0,12.0,2316.6,0.518,8035.3,0.149,pib-minfin (déficit en dinars ÷ déficit en points de PIB),base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),non précisé par la source,"L, ligne 21",1677
+1988,22.5,0.0,22.5,2603.3,0.864,8660.6,0.26,pib-minfin (déficit en dinars ÷ déficit en points de PIB),base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),non précisé par la source,L,1694
+1989,32.5,0.0,32.5,2969.8,1.094,9589.8,0.339,pib-minfin (déficit en dinars ÷ déficit en points de PIB),base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),non précisé par la source,L,1870
+1990,32.5,0.0,32.5,3181.8,1.021,10815.7,0.3,pib-minfin (déficit en dinars ÷ déficit en points de PIB),base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),non précisé par la source,L,2239
+1991,33.0,0.0,33.0,3514.0,0.939,12028.8,0.274,pib-minfin (déficit en dinars ÷ déficit en points de PIB),base 1983 présumée (aucune série de base connue avant 1992 dans l'entrepôt),non précisé par la source,K,2163
+1992,40.0,0.0,40.0,3656.4,1.094,13705.9,0.292,pib-minfin (déficit en dinars ÷ déficit en points de PIB),base 1983,non précisé par la source,K,2197
+1993,42.5,0.0,42.5,4014.2,1.059,14662.9,0.29,pib-minfin (déficit en dinars ÷ déficit en points de PIB),base 1983,non précisé par la source,K,1770
+1994,42.5,0.0,42.5,4276.6,0.994,15813.8,0.269,pib-minfin (déficit en dinars ÷ déficit en points de PIB),base 1983,non précisé par la source,K,2294
