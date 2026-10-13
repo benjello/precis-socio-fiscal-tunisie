@@ -193,6 +193,14 @@ et son empreinte dans le catalogue `sources/`). On ne cite pas de seconde main c
 obtenir : quand un rapport en rapporte un autre, on va chercher l'autre. Un document
 introuvable est dit tel dans `docs/notes/biblio-a-rapatrier.md`, avec les adresses essayées.
 
+**Une page se cite par son numéro, sans dire « du PDF ».** On écrit « p. 34 », ou l'on nomme
+la section du rapport (« chapitre 3, tableau 12 ») quand elle situe mieux le passage ; jamais
+« p. 34 du PDF », « du fichier PDF » ni « PDF p. 34 ». Dans un tableau de sources, la colonne
+s'appelle « Page » ; quand les données d'une figure gardent aussi le rang de la page dans le
+fichier, à côté de la page imprimée, sa colonne s'appelle « Page du fichier ». Que le numéro
+cité soit celui du fichier plutôt que celui imprimé se note, s'il le faut, dans un
+`<!-- TODO (documentaliste) : … -->`, pas dans le texte rendu.
+
 **Une série importante déjà portée par `openfisca-tunisia` ne disparaît pas faute de références.**
 Elle peut être publiée provisoirement pour rendre son évolution repérable, à trois conditions :
 la série entière est montrée plutôt qu'une valeur isolée ; la prose ne nomme pas le modèle et ne

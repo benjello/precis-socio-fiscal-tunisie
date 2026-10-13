@@ -3505,6 +3505,254 @@
   caveats_ar: أرقام من النص لا من جدول؛ «تقديرات» حين يستعمل المصدر صيغة الاحتمال.
     لا ربط مع سلسلة الكتاب الأبيض (2007-2014). قُرئت القيم من الصورة.
   fiche: sources/transport-trafic-comptes.md
+- id: denominateurs-depenses-etat-pib
+  titre: 'Dénominateurs : dépenses de l''État hors service de la dette (réalisations)
+    et PIB retenu, un par année, 1984-2025'
+  sources:
+  - minfin-remunerations
+  - minfin-indicateurs-fp
+  - ins-cnat-2015
+  - wb-wdi
+  build: uv run python scripts/build_jort_lf_fonds_credits.py
+  raw:
+  - data/raw/minfinances/repartition_depenses.xls
+  - data/processed/precis/irpp_ratios_1986_2025.csv
+  - data/processed/banque-mondiale/wdi_tunisie.csv
+  output: data/processed/precis/denominateurs_depenses_etat_pib_1984_2025.csv
+  unite: millions de dinars courants
+  perimetre: 'une ligne par année : dépenses de l''État hors service de la dette (réalisations
+    du classeur du ministère des Finances, 1986-2025 ; vide avant) ; PIB retenu avec
+    sa source, sa base, son segment, sa rétropolation et la rupture à signaler — les
+    mêmes dénominateurs que compensation-parts, repris de build_compensation.py'
+  caveats: 'LE PIB N''EST JAMAIS CHAÎNÉ : segment_pib change en 1986, 1992, 1997,
+    2002, 2005, 2010 et 2025 ; une part du PIB se trace par segments. 1984-1985 :
+    PIB de la Banque mondiale, bases accolées non raccordées ; 1986-1991 : PIB du
+    ministère des Finances, base 1983 PRÉSUMÉE ; 2002-2004 et 2025 : valeur propre
+    au ministère, rattachée à aucune base ; 2010-2014 : base 2015 rétropolée par l''INS.
+    Les dépenses de l''État sont des RÉALISATIONS : rapportée à elles, une prévision
+    de loi de finances donne un ordre de grandeur, non une exécution. AUCUNE DÉPENSE
+    DE L''ÉTAT AVANT 1986.'
+  titre_ar: 'المقامات: نفقات الدولة دون خدمة الدين (إنجازات) والناتج المحلي الإجمالي
+    المعتمد، سنة بسنة، 1984-2025'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'سطر لكلّ سنة: نفقات الدولة دون خدمة الدين (إنجازات جدول وزارة المالية،
+    1986-2025) والناتج المحلي الإجمالي المعتمد مع مصدره وسنة أساسه ومقطعه'
+  caveats_ar: 'لا يُربط الناتج المحلي الإجمالي بين الأسس: يتغيّر المقطع في 1986 و1992
+    و1997 و2002 و2005 و2010 و2025. نفقات الدولة إنجازات لا تقديرات. لا نفقات للدولة
+    قبل 1986.'
+  fiche: sources/jort-lois-de-finances-fonds-credits.md
+- id: jort-lf-caisse-transports-routiers
+  titre: 'Caisse de compensation et de soutien des transports routiers aux tableaux
+    des fonds spéciaux du Trésor : prévisions des lois de finances initiales, gestions
+    1984-1994'
+  sources:
+  - lf-1984
+  - lf-1985
+  - lf-1986
+  - lf-1987
+  - lf-1988
+  - lf-1989
+  - lf-1990
+  - lf-1991
+  - lf-1992
+  - lf-1993
+  - lf-1994
+  - minfin-remunerations
+  - minfin-indicateurs-fp
+  - wb-wdi
+  build: uv run python scripts/build_jort_lf_fonds_credits.py
+  raw:
+  - sources/transcriptions/jort-lf-caisse-transports-routiers.csv
+  - data/processed/precis/denominateurs_depenses_etat_pib_1984_2025.csv
+  output: data/processed/jort/lf_caisse_transports_routiers_1984_1994.csv
+  unite: millions de dinars courants ; parts en %
+  perimetre: 'lois de finances initiales, JORT (édition française), tableau des fonds
+    spéciaux du Trésor (« F » pour 1984-1986, « L » pour 1987-1990, « K » pour 1991-1994),
+    ligne de la caisse de compensation et de soutien des transports routiers : total
+    des recettes prévues, égal aux dépenses prévues ; subvention du budget et recettes
+    propres à partir de 1987 ; part des dépenses de l''État hors service de la dette
+    et part du PIB, calculées sur denominateurs-depenses-etat-pib'
+  caveats: 'PRÉVISIONS VOTÉES, JAMAIS DES PAIEMENTS : lois de finances complémentaires
+    non lues ; les lois de règlement ne nomment pas la caisse. TOUS LES EMPLOIS DE
+    LA CAISSE, dont les subventions d''exploitation ne sont que le premier. De 1984
+    à 1986 le tableau ne distingue pas subvention et recettes propres (colonnes vides).
+    La caisse est SUPPRIMÉE à la gestion 1995 (loi de finances pour 1995, art. 35)
+    : rien après 1994. AUCUN RACCORD avec le poste « transport » de compensation-parts
+    (depuis 2003). PARTS : numérateur prévu, dénominateur réalisé ; aucune dépense
+    de l''État avant 1986 ; de 1984 à 1986 la caisse est un fonds hors du budget général,
+    financé par des recettes affectées ; PIB en trois segments non chaînés (1984-1985
+    Banque mondiale ; 1986-1991 ministère, base 1983 présumée ; 1992-1994 base 1983).
+    LU À L''IMAGE les 12 et 13 octobre 2026.'
+  titre_ar: 'صندوق التعويض ودعم النقل البري في جداول الصناديق الخاصة للخزينة: تقديرات
+    قوانين المالية الأصلية، تصرّفات 1984-1994'
+  unite_ar: بملايين الدنانير الجارية؛ النسب بالمائة
+  perimetre_ar: 'قوانين المالية الأصلية بالرائد الرسمي، جدول الصناديق الخاصة للخزينة،
+    سطر الصندوق: مجموع الموارد المقدّرة ويساوي النفقات المقدّرة، ومنحة الميزانية والموارد
+    الذاتية منذ 1987، والنسبة من نفقات الدولة ومن الناتج المحلي الإجمالي'
+  caveats_ar: تقديرات مصادق عليها وليست مدفوعات. تشمل كلّ استعمالات الصندوق. حُذف
+    الصندوق في تصرّف 1995. لا ربط مع بند النقل في نفقات الدعم منذ 2003. البسط تقدير
+    والمقام إنجاز؛ لا نفقات للدولة قبل 1986؛ الناتج في ثلاثة مقاطع غير مربوطة. قُرئت
+    من الصورة.
+  fiche: sources/jort-lois-de-finances-fonds-credits.md
+- id: jort-lf-credits-programmes-incitations
+  titre: 'Crédits de programmes des lois de finances initiales : FOPRODI, prise en
+    charge de la contribution patronale, aide aux promoteurs de projets touristiques,
+    FONAPRA, 1995-2019'
+  sources:
+  - lf-1995
+  - lf-1996
+  - lf-1997
+  - lf-1998
+  - lf-1999
+  - lf-2000
+  - lf-2001
+  - lf-2002
+  - lf-2003
+  - lf-2004
+  - lf-2005
+  - lf-2006
+  - lf-2007
+  - loi-2007-70-lf-2008
+  - lf-2009
+  - lf-2010
+  - lf-2011
+  - lf-2012
+  - lf-2013
+  - lf-2014
+  - lf-2015
+  - lf-2016
+  - lf-2017
+  - lf-2018
+  - lf-2019
+  - minfin-remunerations
+  - minfin-indicateurs-fp
+  - ins-cnat-2015
+  build: uv run python scripts/build_jort_lf_fonds_credits.py
+  raw:
+  - sources/transcriptions/jort-lf-credits-programmes-incitations.csv
+  - data/processed/precis/denominateurs_depenses_etat_pib_1984_2025.csv
+  output: data/processed/jort/lf_credits_programmes_incitations_1995_2019.csv
+  unite: millions de dinars courants ; parts en %
+  perimetre: 'lois de finances initiales, JORT, tableau des crédits de programmes
+    de l''État (« F » en 1995, « D » de 2005 à 2019), quatre lignes : FOPRODI (chapitre
+    de l''industrie, 1999-2019), prise en charge par l''État de la contribution patronale
+    au régime légal de sécurité sociale (chapitre des affaires sociales, 1995-2019),
+    aide de l''État aux promoteurs de projets touristiques (2010-2019), FONAPRA (2012-2019)
+    ; une ligne par (année, ligne), avec la page ; part des dépenses de l''État hors
+    service de la dette et part du PIB, calculées sur denominateurs-depenses-etat-pib'
+  caveats: 'CRÉDITS DE PROGRAMMES VOTÉS par la loi de finances initiale, NI CRÉDITS
+    DE PAIEMENT NI SOMMES VERSÉES : aucun raccord avec bct-foprodi-fonapra (dotations
+    reçues : 49,0 MD pour un crédit de 49,0 en 2017, 47,0 pour 55,0 en 2016) ni avec
+    gbo-avantages-financiers. PAS DE LIGNE DU FOPRODI au chapitre de l''industrie
+    de 1995 à 1998 ; FONAPRA non relevé pour 2010-2011. LA LIGNE DE LA PRISE EN CHARGE
+    CHANGE DE RUBRIQUE (1998 au plus tard, 2012, 2015 — colonne note) et couvre toutes
+    les prises en charge, sans dire le régime. Le tableau DISPARAÎT en 2020 (missions
+    et programmes). Valeurs au millier de dinars là où le chapitre du précis les donne
+    ainsi, à la centaine de milliers sinon. Éditions arabes seules pour 2016 et 2019
+    ; 1998 et 1999 recoupées sur l''édition arabe. PARTS : numérateur voté, dénominateur
+    réalisé ; PIB par segments non chaînés (base 1983 jusqu''en 1996, base 1997, valeurs
+    non rattachées en 2002-2004, base 2015 depuis 2010, rétropolée pour 2010-2014).
+    LU À L''IMAGE le 13 octobre 2026 ; numéros et dates des lois pour 2018 et 2019
+    repris de l''index.'
+  titre_ar: 'اعتمادات البرامج في قوانين المالية الأصلية: صندوق التطوير واللامركزية
+    الصناعية، تكفّل الدولة بمساهمة الأعراف، مساعدة باعثي المشاريع السياحية، الصندوق
+    الوطني للنهوض بالصناعات التقليدية والمهن الصغرى، 1995-2019'
+  unite_ar: بملايين الدنانير الجارية؛ النسب بالمائة
+  perimetre_ar: قوانين المالية الأصلية بالرائد الرسمي، جدول اعتمادات برامج الدولة
+    (الجدول «ث» في الطبعة العربية)، أربعة أسطر مع الصفحة، والنسبة من نفقات الدولة
+    ومن الناتج المحلي الإجمالي
+  caveats_ar: اعتمادات برامج مصادق عليها وليست اعتمادات دفع ولا مبالغ مصروفة. لا ربط
+    مع حسابات البنك المركزي ولا مع جداول الامتيازات المالية. لا سطر للصندوق بين 1995
+    و1998. يتغيّر موضع سطر التكفّل في الجدول. يختفي الجدول في 2020. البسط اعتماد مصادق
+    عليه والمقام إنجاز؛ الناتج بمقاطع غير مربوطة. قُرئت من الصورة.
+  fiche: sources/jort-lois-de-finances-fonds-credits.md
+- id: bct-foprodi-fonapra
+  titre: 'FOPRODI et FONAPRA : ressources, emplois et soldes aux états financiers
+    de la BCT, exercices 2016-2025'
+  sources:
+  - bct-ra
+  build: uv run python scripts/build_bct_foprodi_fonapra.py
+  raw:
+  - sources/transcriptions/bct-foprodi-fonapra.csv
+  output: data/processed/bct-archives/foprodi_fonapra_2016_2025.csv
+  unite: dinars courants, tels qu'imprimés ; valeur_md en millions de dinars
+  perimetre: 'BCT, Rapport annuel, états financiers de la Banque, note sur les comptes
+    du Gouvernement, tableau des « flux des ressources et des emplois des Fonds FOPRODI
+    et FONAPRA constatés durant l''exercice », éditions 2017 à 2025 : solde initial,
+    ressources (dotations budgétaires, recouvrements), emplois, solde final ; une
+    ligne par (fonds, exercice, poste, édition) ; `derniere_edition` marque l''attestation
+    la plus récente'
+  caveats: 'COMPTABLE, non budgétaire : compte tenu par la BCT pour l''État. PÉRIMÈTRE
+    : tout ce que paie le fonds — primes, prises en charge, dotations remboursables
+    et participations (les recouvrements en sont les remboursements) ; ce n''est pas
+    la seule prime de développement régional, et la série NE S''ADDITIONNE PAS à gbo-avantages-financiers-par-rapport,
+    qui recense les mêmes paiements par avantage. Chaque exercice figure dans deux
+    éditions (sauf 2016 et 2025) qui s''accordent au dinar ; les deux sont gardées.
+    Identités contrôlées : dotations + recouvrements = ressources (un dinar d''écart
+    imprimé pour le FOPRODI en 2020) ; solde initial + ressources − emplois = solde
+    final ; solde final = solde initial suivant. Tiret ou case vide = 0 (colonne `imprime`).
+    RELU À L''IMAGE (neuf tableaux). Les éditions 2015 et 2016 ne portent pas ce tableau
+    : AUCUN RACCORD avec bct-programmes-emploi-dotations (FOPRODI 1987-1991, crédits)
+    ; 1992-2015 non établi. Montants courants.'
+  titre_ar: 'صندوق التطوير واللامركزية الصناعية والصندوق الوطني للنهوض بالصناعات التقليدية
+    والمهن الصغرى: الموارد والاستعمالات والأرصدة في القوائم المالية للبنك المركزي،
+    2016-2025'
+  unite_ar: بالدينار الجاري كما هو مطبوع؛ وبملايين الدنانير في عمود valeur_md
+  perimetre_ar: التقرير السنوي للبنك المركزي التونسي، القوائم المالية، إيضاح حسابات
+    الحكومة، جدول تدفقات موارد واستعمالات الصندوقين، طبعات 2017 إلى 2025
+  caveats_ar: 'سلسلة محاسبية لا ميزانية: حساب يمسكه البنك المركزي لفائدة الدولة. يشمل
+    كلّ ما يصرفه الصندوق (منح وتكفل واعتمادات واجبة الإرجاع ومساهمات) ولا يُجمع مع
+    جداول الامتيازات المالية. كلّ سنة مطبوعة في طبعتين متطابقتين. قُرئت الجداول التسعة
+    من الصورة. لا ربط مع سلسلة 1987-1991؛ الفترة 1992-2015 غير متوفرة.'
+  fiche: sources/bct-foprodi-fonapra.md
+- id: ins-commerce-exterieur-par-regime
+  titre: 'Commerce extérieur par régime (général / off shore) : exportations et importations
+    de biens, 1998-2023 (INS, Annuaire statistique, tableau 14.2)'
+  sources:
+  - ins-annuaire
+  build: uv run python scripts/build_ins_commerce_exterieur_par_regime.py
+  raw:
+  - sources/transcriptions/ins-commerce-exterieur-par-regime.csv
+  output: data/processed/ins-publications/commerce_exterieur_par_regime_1998_2023.csv
+  unite: millions de dinars courants ; part_off_shore_pct en % (calculée)
+  perimetre: INS, Annuaire statistique de la Tunisie, chapitre 14, tableau 14.2 «
+    Évolution des échanges par groupement sectoriel d'activité », lignes « Ensemble
+    des Produits », « régime général » et « régime off shore » ; échanges de biens,
+    valeur ; une ligne par année et par flux (exportations, importations), 1998-2023
+    ; valeur de la DERNIÈRE édition qui imprime l'année, édition nommée (colonne `edition`)
+  caveats: 'STATISTIQUE PUBLIQUE, non budgétaire. L''ANNUAIRE NE DÉFINIT PAS LES DEUX
+    RÉGIMES dans les pages lues ; le libellé arabe est « régime non résident » (نظام
+    غير مقيم), qui n''est pas la notion d''entreprise totalement exportatrice du code
+    de 1993 : ne pas assimiler sans source. PART NON PUBLIÉE : part_off_shore_pct
+    = 100 × régime off shore / ensemble, tels qu''imprimés, arrondie au dixième. ARBITRAGE
+    : chaque année est imprimée dans une à trois éditions ; la série retient la dernière
+    (même source, même tableau, millésimes successifs) ; nb_editions_differentes compte
+    les éditions antérieures aux chiffres différents — 2001, 2002, 2004 (exportations
+    12 054,9 puis 12 403,8), 2005, 2007, 2014, 2021 ; toutes les attestations sont
+    dans ins-commerce-exterieur-par-regime-editions. LA DERNIÈRE ANNÉE D''UNE ÉDITION
+    EST SOUVENT RÉVISÉE PAR LA SUIVANTE (dix des treize attestations révisées) : 2023,
+    imprimée dans la seule édition 2019-2023 (`nb_editions` = 1), peut l''être encore.
+    EN 2004 ET 2005 LA RÉVISION PORTE SUR LE SEUL RÉGIME OFF SHORE (+ 2 à + 4 %),
+    le régime général ne bougeant pas ; 2003 et les années antérieures ne sont imprimées
+    dans aucune édition postérieure à cette révision : la source ne dit pas s''il
+    s''agit de chiffres provisoires devenus définitifs ou d''un changement de méthode
+    — ne pas tracer la part d''un trait continu à travers 2003-2004 sans le dire.
+    Régime général + régime off shore = ensemble à 0,1 près (arrondis). RELU À L''IMAGE
+    : en-têtes et trois lignes de total des 22 éditions. Ventilation par groupement
+    sectoriel non transcrite. Montants courants ; aucun ratio au PIB. Série arrêtée
+    à 2023 (édition 2019-2023).'
+  titre_ar: 'التجارة الخارجية حسب النظام (عام / غير مقيم): صادرات وواردات السلع، 1998-2023
+    (المعهد الوطني للإحصاء، النشرية الإحصائية السنوية، الجدول 14.2)'
+  unite_ar: بملايين الدنانير بالأسعار الجارية؛ الحصة بالنسبة المائوية (محسوبة)
+  perimetre_ar: النشرية الإحصائية السنوية لتونس، الباب 14، الجدول 14.2، أسطر «مجموع
+    المواد» و«نظام عام» و«نظام غير مقيم»؛ سطر لكلّ سنة ولكلّ اتجاه؛ قيمة آخر طبعة
+    تنشر السنة
+  caveats_ar: 'إحصاء عمومي. النشرية لا تعرّف النظامين في الصفحات المقروءة. الحصة غير
+    منشورة: تُحسب بقسمة النظام غير المقيم على المجموع كما هما مطبوعان. كلّ سنة مطبوعة
+    في طبعة إلى ثلاث طبعات، وتُعتمد الأخيرة؛ المراجعات بين الطبعات مُحصاة لا مُصحَّحة.
+    قُرئت أسطر المجموع في الطبعات الاثنتين والعشرين من الصورة. التوزيع حسب القطاعات
+    غير منقول.'
+  fiche: sources/ins-commerce-exterieur-par-regime.md
 - id: garanties-etat
   titre: 'Garanties de l''État aux entreprises et établissements publics : plafond,
     garanties accordées, encours de dette garantie, 2016 – juin 2024'

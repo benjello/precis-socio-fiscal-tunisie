@@ -102,7 +102,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
@@ -357,9 +357,12 @@ liste qui suit le tableau, citations comprises. Restent :
   estimations antérieures), chacune avec sa méthode. Disponibilités ci-dessous contrôlées le
   6 octobre 2026 (présence du fichier, `pdftotext` sur le fascicule entier) ; la page de
   l'article n'a pas été ouverte. Restent :
-  - **AR** : déclarer `_depenses_fiscales.qmd` dans `precis/ar/fiscalite/_quarto.yml`
-    (ligne commentée en place, après `_droits_consommation.qmd`) dès que la traduction est
-    livrée ;
+  - **AR** : déclarer `_regimes_incitation.qmd` PUIS `_depenses_fiscales.qmd` dans
+    `precis/ar/fiscalite/_quarto.yml` (ligne commentée en place, après
+    `_droits_consommation.qmd`), les deux ensemble et seulement quand les deux traductions
+    sont livrées : `_depenses_fiscales.qmd` renvoie à des ancres parties dans
+    `_regimes_incitation.qmd` (`sec-df-sommes-versees`, `sec-df-etudes`, `tbl-df-bm-cout`,
+    `tbl-df-reports`…), qui ne se résolvent pas sans lui ;
   - **clés à verser (bibliographe)** : loi n° 69-35 (JORT n° 24 de 1969, p. 766-769) et loi
     n° 74-74 (JORT n° 51 de 1974, p. 1744-1746), citées en clair au chapitre faute de clé ;
     ébauches au § 10.1 e de la note ;
@@ -380,10 +383,24 @@ liste qui suit le tableau, citations comprises. Restent :
     de la déduction de 50 % des exportateurs entre 1993 et 2006 non établi ;
   - **méthode des rapports PLF 2022 à 2025** : non établie (introduction et table des
     matières seules) ; données employées par le ministère non décrites dans le rapport 2021 ;
-  - **crédits budgétaires** des primes et des prises en charge de cotisations : non relevés
-    (fonds spéciaux du Trésor, budgets par mission, lois de règlement, comptes du Fonds
-    tunisien de l'investissement — à obtenir) ; le chapitre ne publie que les paiements
-    déclarés du rapport PLF 2021 ;
+  - **crédits budgétaires** : crédits de programmes du FOPRODI (1999-2019) et de la prise en
+    charge de la contribution patronale (1995-2019), de l'aide aux promoteurs touristiques (2010-2019) et du FONAPRA (2012-2019) relevés le 13 octobre 2026 aux
+    tableaux des crédits de programmes des lois de finances initiales, lus à l'image
+    (`#sec-df-foprodi` et `#sec-ri-credits-programmes` : deux figures à trois vues depuis le 13 octobre 2026 — millions de dinars, part des dépenses de l'État, part du PIB —, séries `jort-lf-credits-programmes-incitations` et `bct-foprodi-fonapra` de tunisia-data ; `docs/notes/fiscalite-incitations-second-passage-2026-10-13.md`) —
+    le tableau « ب » des fonds spéciaux n'était pas le bon. **Restent** : FOPRODI de 1995 à 1998 (pas de ligne au chapitre de
+    l'industrie ; autres chapitres non lus) ; loi de finances pour 1994 ; encouragements
+    à l'agriculture aux mêmes tableaux (trois séries qui ne s'enchaînent pas) ; FONAPRA 2010-2011 ;
+    exécution : les lois de règlement ne nomment aucune de ces lignes (lues le 13 octobre 2026) ;
+    à partir de 2020, le tableau n'existe plus (missions et programmes) ; budgets par ministère depuis 2013,
+    comptes du Fonds tunisien de l'investissement — **à obtenir** ou à transcrire ;
+  - **restes du 13 octobre 2026** : entrée de glossaire « crédits de programmes » — aucune
+    définition sourcée (la loi organique du budget n° 2004-42, lue par océrisation, ne la donne
+    pas ; loi n° 67-53 à lire à l'image) ; numéros et dates des lois de finances pour 2018, 2019
+    et 2020 repris de l'index du *Journal officiel*, à relire au fascicule ; libellés arabes des
+    figures `fig-ri-foprodi` et `fig-ri-credits-programmes` à verser
+    (`precis/fr/fiscalite/figures/credits_incitations.py`) avant la traduction du chapitre ;
+    repli du détail de `#sec-ri-2016-2017` et de `#sec-df-sommes-versees` proposé dans une PR
+    brouillon à part, à juger ;
   - **mentions dans les chapitres d'impôt (6 octobre 2026)** : chaque avantage établi par un
     texte est signalé, avec renvoi à `@sec-depenses-fiscales`, dans `_impot_societes.qmd`
     (paramètres d'origine, « 2017 », « 2019 », rendement), `_impot_revenu.qmd` (BIC,
@@ -410,20 +427,22 @@ liste qui suit le tableau, citations comprises. Restent :
     soutien des entreprises totalement exportatrices », `2014/fr/Jo1052014.pdf` ; à ouvrir
     pour confirmer qu'aucun texte n'a touché à l'échéance du 1er janvier 2014. LF 2014,
     art. 49-50 et 54 (`2013/fr/`, JORT n° 105) : connus par leur intitulé, non repris ;
-  - **zones de développement régional — lisible** : décret gouvernemental n° 2017-389,
-    `2017/fr/Jo0252017.pdf` ; loi n° 2019-47, `2019/fr/Jo0472019.pdf` (portée fiscale non
-    établie) ;
-  - **rapports annexés aux PLF 2022 et 2023 — à obtenir** : non archivés dans
-    `tunisia-data` (`data/raw/gbo/` ne porte que les rapports 2021, 2024 et 2025) ; adresses
-    sur gbo.tn dans la note, § 2.2, relevées le 5 octobre 2026 et non recontrôlées. Seule
-    leur introduction (p. 7) est connue. Rapport annexé au PLF 2026 : non cherché.
-    Existence d'un rapport pour les PLF 2019 et 2020 : non établie ;
+  - **rapport annexé au PLF 2026 — non trouvé** : absent, le 11 octobre 2026, de la rubrique
+    du portail gbo.tn et de la page « loi de finances » de finances.gov.tn (vues par année
+    non parcourues) ; à rechercher. Existence d'un rapport pour les PLF 2019 et 2020 : non
+    établie. Les rapports 2022 et 2023 sont dans `tunisia-data` depuis le 6 octobre 2026 ;
+    leur partie « dépenses fiscales » (périmètre, exercices, méthode) reste à lire ;
   - **série du coût à reconstruire, avec sa rupture de périmètre** : les rapports 2024 et
     2025 excluent les exonérations des médicaments et des engrais, que le rapport 2021
     compte (274,5 et 249,9 MD en 2019). Les deux CSV traités de `tunisia-data` cousent trois
     rapports sur cinq et portent cette rupture à la couture 2019/2020 ; le périmètre des
-    rapports 2022 et 2023 reste à lire. `figures/depenses_fiscales.py` n'est donc pas appelé
-    (docstring corrigé le 6 octobre 2026, code inchangé) et aucune figure n'est publiée.
+    rapports 2022 et 2023 reste à lire. `figures/depenses_fiscales.py` (les huit plus gros
+    dispositifs) n'est donc pas appelé. Depuis le 11 octobre 2026, `fig-df-total`
+    (`figures/depenses_fiscales_total.py`) publie le total par impôt **rapport par rapport,
+    sans chaînage**, en MD, en % des recettes fiscales et en % du PIB (INS, base 2015, non
+    rétropolé), les rapports 2022 et 2023 n'y figurant que par leur total d'introduction ;
+    les parts sont calculées, et ne coïncident pas toujours avec celles qu'impriment les
+    rapports (dénominateurs à établir : voir le TODO de `@sec-df-total`).
     La fiche `~/projets/tunisia-data/sources/gbo-depenses-fiscales.md` ne mentionne pas
     cette exclusion : à corriger dans ce dépôt-là ;
   - **écart sur l'exercice 2021** : 7 745 MD (rapport 2023) contre 5 871,5 et 5 872,3 MD
@@ -443,6 +462,68 @@ liste qui suit le tableau, citations comprises. Restent :
     relever sur l'image ;
   - **à croiser avec « Cotisations sociales »** : coût des prises en charge de cotisations
     patronales (code de 1993, art. 25 ; loi n° 99-59, connue par son intitulé).
+- **Scission en deux chapitres, au format « ruptures au premier plan » (11 octobre 2026)** :
+  `_regimes_incitation.qmd` (nouveau : vue d'ensemble, mise en place 1969-1974, grandes
+  réformes, état du droit en 2026, sommes versées et FOPRODI, commerce extérieur, études
+  extérieures) et `_depenses_fiscales.qmd` (resserré : la mesure du ministère des Finances).
+  Toutes les ancres `sec-df-…`, `tbl-df-…` et `fig-df-…` gardent leur nom ; les sections
+  sont à domicile unique (registres `r-ri-…` et `r-df-…`). Quatre relevés versionnés dans
+  `precis/fr/fiscalite/incitations/` alimentent les figures du texte (`fig-ri-frise`,
+  `fig-ri-prime`, `fig-ri-zones`, `fig-ri-ghazouani`). Restent :
+  - **ce que la loi cherche** : rubrique de l'article 37 de la loi de finances pour 2019
+    (fin du régime de l'exportation) et des articles 5 et 6 de la loi n° 2006-80, à relever
+    au fascicule (JORT lisibles au corpus, non ouverts pour cela) ;
+  - **figures écartées** : sommes versées « un point par rapport » (un à trois points par
+    périmètre : le tableau une colonne par rapport suffit) ; carte des délégations de 2017
+    (demande un fond de carte des délégations) ; budgétaire et études sur un même graphique
+    (périmètres à dire sur la figure) ;
+  - **dinars constants** : plafonds des primes et sommes versées en dinars courants
+    seulement — le chapitre n'a pas d'année de référence (point à trancher) ;
+  - **tableaux faits main** des barèmes des primes (`tbl-df-primes-…`) : à engendrer quand
+    les paramètres seront datés en amont.
+- **Primes, zones, sommes versées, commerce extérieur par régime (`_regimes_incitation.qmd`
+  depuis la scission ; écrit dans `_depenses_fiscales.qmd` le 11 octobre 2026)** sur la note `docs/notes/fiscalite-incitations-primes-zones-2026-10-11.md`
+  et les séries `gbo-avantages-financiers-par-rapport`, `bct-foprodi-fonapra` et
+  `ins-commerce-exterieur-par-regime` de `tunisia-data` (qui font foi quand elles divergent
+  de la note). Écrit : `@sec-df-loi-2019-47` (portée fiscale et financière de la loi
+  n° 2019-47) ; `@sec-df-primes-zones` (barème de 2011 → 2017, primes de la loi de 2016,
+  carte des zones 1994-2024, barèmes successifs, registre des décrets et listes nominatives
+  repliés) ; `@sec-df-sommes-versees` (cinq rapports, une colonne par rapport, 2018-2023) ;
+  `@sec-df-foprodi` (crédits votés, 1999-2019, et comptes de la BCT, 2016-2025, sur une même figure) ; `@sec-df-commerce-exterieur` (part du
+  régime off shore, 1998-2023, figure). Clos : décret gouvernemental n° 2017-389 et loi
+  n° 2019-47, lus. Restent :
+  - **que l'annexe n° 2 du décret n° 2017-389 vaille pour l'article 63 du code de l'impôt** :
+    établi par aucun texte lu (fiche `r-fisc-art63-decret-zones`) ; chercher la note commune
+    de la direction générale des impôts sur les articles 63 et 64 — hors corpus, à obtenir ;
+  - **dates d'effet de 1994 et de 1999** : mention de dépôt du JORT n° 21 de 1994 à lire sur
+    la page (`1994/fr/Jo02194.pdf`, lisible) ; articles 2 et suivants du décret n° 99-486
+    (`1999/fr/Jo02099.pdf`, couche texte à police décalée : à lire à l'image) ;
+  - **vingt décrets de retouche des zones et des primes (1995-2009)** et décret n° 2011-3197 :
+    intitulés seuls ; **rédactions des articles 23, 25 et 25 bis du code de 1993** entre 2005
+    et 2016 (durées de déduction et de prise en charge par catégorie de zones) : non lues ;
+  - **sommes versées avant 2016** : aucune série (FOPRODI : rien entre 1992 et 2015 ;
+    éditions 1977-1986 du rapport de la BCT à lire à l'image ; Cour des comptes, archives du
+    web de l'APII et de l'APIA non ouvertes) ; mise à niveau et primes agricoles avant 2018 :
+    néant ;
+  - **coût côté CNSS des prises en charge de la contribution patronale** : non établi (les
+    rapports comptent des sommes versées ou portées en dette de l'État) ; états financiers et
+    rapports d'activité de la CNSS, rapports annuels de performance de la mission Affaires
+    sociales — à obtenir ; cause de la chute de la ligne 031106 entre 2018 et 2019 non dite ;
+  - **nombre et emploi des entreprises totalement exportatrices** : rien dans `tunisia-data`,
+    non cherché en ligne (répertoire national des entreprises de l'INS, APII, FIPA, archives
+    du web) ;
+  - **définition des régimes « général » et « off shore » par l'INS** : non lue ; ventilation
+    par groupement sectoriel du tableau 14.2 non transcrite ; cause de la révision 2004-2005
+    du régime off shore non dite par l'annuaire ;
+  - **tableaux de barème faits main** (quatre) : à engendrer quand le barème sera versé en
+    amont (`docs/notes/backlog-modele.md`) ; **dinars constants** : le chapitre n'a pas
+    d'année de référence, les montants sont en dinars courants seulement — à trancher ;
+  - **glossaire** : entrées candidates non créées, faute d'arbitrage du terminologue —
+    prime de développement régional, FOPRODI, Fonds tunisien de l'investissement (termes
+    arabes relevés dans la note, § 3) ; la définition de « zones de développement régional »
+    n'est pas retouchée (terme arabe des « zones d'encouragement » de 1994-2016 non relevé) ;
+  - **AR** : les onze clés nouvelles de `precis/ar/fiscalite/references.json` gardent leur
+    intitulé français (l'index ne porte l'intitulé arabe que pour la loi n° 2019-47).
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
   et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
@@ -596,9 +677,10 @@ liste qui suit le tableau, citations comprises. Restent :
   - *Trouvé en écrivant, hors de la note* : les décrets de 1997 sont modifiés — n° 2002-886 et
     n° 2006-1025 pour le décret n° 97-1925 (aide plafonnée à trois, puis six, puis douze mensualités),
     n° 2002-887 pour le décret n° 97-1926 (articles 1 à 7 remplacés). Lus par le rédacteur sur la couche
-    texte du corpus (`2002/fr/Jo0342002.pdf`, police décalée, décodée ; `2006/fr/Jo0312006.pdf`) :
-    **à relire à l'image par le documentaliste**, dates d'effet à établir, modificatif postérieur à 2006 à
-    chercher.
+    texte du corpus (`2002/fr/Jo0342002.pdf`, police décalée, décodée ; `2006/fr/Jo0312006.pdf`), puis
+    **relus à l'image le 12 octobre 2026** : contenu confirmé, registre complété (articles 3 bis et 6 de
+    2002, inscription au bureau d'emploi), aucune clause d'effet, aucun modificatif postérieur à 2006 dans
+    les intitulés. *Reste* : la date de dépôt des deux fascicules, pour dater l'exécution.
   - *Reste, lisible au corpus* : relecture à l'image des textes repris de la couche texte (loi n° 2002-24,
     rectificatif de 1997, décrets de 1997, 2002 et 2006, loi n° 94-28 art. 42 à 53, décrets n° 2007-1367,
     n° 2008-756 et n° 2021-318, arrêté du 3 juin 2008, arrêtés des familles d'accueil, décret n° 2022-715
@@ -1522,7 +1604,7 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 
 6. Droits d'enregistrement et de timbre ; fiscalité des mutations immobilières.
 7. Droits de douane.
-8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — **chapitre créé le 6 octobre 2026** (`fiscalite/_depenses_fiscales.qmd`) ; lacunes dans la section « Fiscalité » ci-dessus.
+8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — **chapitre créé le 6 octobre 2026, scindé le 11 octobre 2026** (`fiscalite/_regimes_incitation.qmd` et `fiscalite/_depenses_fiscales.qmd`) ; lacunes dans la section « Fiscalité » ci-dessus.
 9. Fiscalité de l'épargne et du capital : retenues libératoires sur les revenus de capitaux mobiliers, plus-values mobilières, épargne exonérée.
 10. Taxes affectées et contributions exceptionnelles (contribution conjoncturelle, contribution au budget de l'État de 2014, FODEC, vignette).
 
@@ -2333,17 +2415,20 @@ séries versées dans `tunisia-data` (fiche `sources/compensation-transport.md`)
 une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
 
 - **Plan** : vue d'ensemble (`#sec-compensation-transport-vue`) ; mise en place 1948-1983
-  (`-mise-en-place`) ; grandes réformes 1984, 1985, 2001, 2004, 2017 (`-reformes`, une
-  sous-section par date) ; état du droit en octobre 2026 (`-etat-du-droit`) ; tarifs et
+  (`-mise-en-place`) ; grandes réformes 1984, 1985, 1987-1995, 2001, 2004, 2017 (`-reformes`, une
+  sous-section par date ; `-1987` ajoutée le 13 octobre 2026 sur
+  `docs/notes/compensation-transport-second-passage-2026-10-12.md`) ; état du droit en octobre 2026 (`-etat-du-droit`) ; tarifs et
   abonnements (`-tarifs`) ; abonnement scolaire (`-scolaire`) ; gratuités et réductions
   (`-gratuites`) ; longue période (`-longue-periode` : `-tarifs-constants`, `-interventions`,
   `-abonnements-nombre`, `-comptes`) ; Cour des comptes (`-cour`) ; *Livre blanc* de la Banque
   mondiale (`-livre-blanc`) ; incidence (`-incidence`). Six sections `.domicile-unique`, cinq
   registres repliés.
-- **Figures** (`precis/fr/compensation/figures/transport.py`, `tr.figure(…)`), sept :
+- **Figures** (`precis/fr/compensation/figures/transport.py`, `tr.figure(…)`), huit :
   `fig-compensation-transport-soutien` (quatre vues, dont part de la dépense de compensation et
   part du PIB), `-tarifs-arretes`, `-abonnements-prix`, `-tarifs`, `-interventions` (deux vues),
-  `-abonnements-nombre`, `-trafic-tunis`. Libellés des figures en français seulement : **libellés
+  `-abonnements-nombre`, `-trafic-tunis`, `-caisse` (trois vues : millions de dinars, part des
+  dépenses de l'État, part du PIB ; **restent** : part des dépenses de l'État pour 1984-1985,
+  l'entrepôt n'ayant ces dépenses qu'à partir de 1986 ; base du PIB de 1986-1991, présumée). Libellés des figures en français seulement : **libellés
   arabes à verser** dans `_L` avant de déclarer le chapitre au livre arabe.
 - **Snapshots** du 11 octobre 2026 : `transport-soutien-par-societe`,
   `transport-abonnements-scolaires`, `transport-transferts-par-entreprise`,
@@ -2355,19 +2440,34 @@ une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
   section des tarifs — par année, moyenne des montants en vigueur au premier jour de chacun des
   douze mois, années entièrement établies seulement (celle de `figtools.constants_escalier`).
   Les tableaux annuels en dinars de 2025 sont engendrés par `tr.tableau_annuel`.
-- **Deux fiches** dans `docs/recherches.yml` : `r-transport-tarifs-apres-2000` et
-  `r-transport-decret-manque-a-gagner`, ancrées à l'état du droit.
+- **Trois fiches** dans `docs/recherches.yml` : `r-transport-tarifs-apres-2000` et
+  `r-transport-decret-manque-a-gagner`, ancrées à l'état du droit ;
+  `r-transport-ligne-budgetaire-1995-2002`, ancrée à `#sec-compensation-transport-1987`.
+- **Bibliographie** : clés `lf-1985` à `lf-1995` versées le 13 octobre 2026 aux deux
+  `references.json` du volume (adresses pist.tn de l'édition française contrôlées le 12 octobre ;
+  adresses arabes tirées de l'index, fichiers non ouverts).
 - **Arabe** : le chapitre n'est pas déclaré dans `precis/ar/compensation/_quarto.yml` (ligne en
   commentaire) ; à déclarer quand sa traduction sera livrée. D'ici là, `index.qmd`, `_depense.qmd` et `_reformes.qmd`
   nomment le chapitre en clair, sans ancre (`TODO (rédacteur)` : rétablir les renvois).
 - **Lacunes**, dans l'état que la note établit :
-  - **1985-2002** : crédits et recettes de la caisse de compensation et de soutien des
-    transports routiers, année de sa suppression, année où le budget général prend le relais de
-    la taxe affectée — tableaux des fonds spéciaux des lois de finances et rapports annuels de
-    la BCT, au corpus, **à lire** ; le poste n'est suivi qu'à partir de 2003.
+  - **1985-1994, établi le 12 octobre 2026** (lu à l'image) : prévisions de la caisse de
+    compensation et de soutien des transports routiers aux tableaux des fonds spéciaux, retour de
+    ses recettes affectées au budget général à la gestion 1987 (loi n° 86-106, art. 92),
+    subvention du budget seule de 1988 à 1994, suppression à la gestion 1995 (loi n° 94-127,
+    art. 35) — `fig-compensation-transport-caisse` (figure à trois vues depuis le 13 octobre 2026 : millions de dinars, part des dépenses de l'État, part du PIB ; série `jort-lf-caisse-transports-routiers` de tunisia-data). **Restent** : réalisations (lois de règlement lues le 13 octobre 2026 : total de tous les
+    fonds seulement, la caisse n'y est pas nommée ; lois de finances complémentaires, au corpus,
+    **à lire**) ; composition des recettes de
+    1985-1986 (art. 26 de la loi de finances pour 1985, **à lire**) ; pied de page de la loi de finances pour 1989 à confirmer à l'image.
+  - **1995-2002** : ligne du budget général qui porte la subvention après la suppression de la
+    caisse, non identifiée (fiche `r-transport-ligne-budgetaire-1995-2002` : lois de finances
+    et décrets de répartition lus le 13 octobre 2026 pour 1995, 1996, 1997 et 2001, aucun
+    libellé ne nomme le transport ; budgets du
+    ministère du Transport, **à obtenir** aux archives du web) ; le poste n'est suivi qu'à partir
+    de 2003.
   - **Tarifs entre février 2000 et novembre 2007**, et actes des relèvements d'août 2010 et de
     juin 2021 : aucun acte au *Journal officiel* (fiche `r-transport-tarifs-apres-2000` : plein
-    texte des fascicules de 2000-2010 et de 2021, communiqués des sociétés aux archives du web,
+    texte français des fascicules de 2000-2010 joué le 12 octobre 2026, sans résultat ; restent
+    l'édition arabe et les fascicules de 2021, communiqués des sociétés aux archives du web,
     numéros du *Bulletin mensuel de la statistique* antérieurs à novembre 2008, **à obtenir**).
   - **Subvention par société** : avant 2012, budgets du ministère du Transport antérieurs à
     2013, à chercher aux archives du web ; après 2017 au sens strict du poste, budgets de 2018 à
@@ -2433,14 +2533,16 @@ Plans : `finances-locales-impots-plan-architecte.md`,
 
 - **Frises de tête** : faites dans aucun chapitre ; un `TODO (rédacteur)` les attend aux
   chapitres 3, 6, 7 et 8, le tableau des réformes en tient lieu.
-- **Tableaux encore faits main**, faute de paramètres datés et sourcés en amont : pénalité de
-  retard et contribution au fonds de l'habitat au chapitre 6 ; forfaits qui comprennent la taxe
-  sur les établissements au chapitre 7 ; tarifs des taxes et redevances au chapitre 8 ; seuils
-  de l'approbation au chapitre 5 ; parts et critères du fonds et des subventions au chapitre 9.
-  Sont engendrés (11 octobre 2026) : les trois barèmes des taxes sur les immeubles, et, pour la
-  taxe sur les établissements, le minimum, le maximum et les taux par assiette. Le tableau de
-  la taxe hôtelière (deux lignes) reste fait main, ses valeurs étant versées : la forme commune
-  ne rend pas ses deux lignes de registre.
+- **Tableaux encore faits main** : contribution au fonds de l'habitat et dégrèvements au
+  chapitre 6, forfaits qui comprennent la taxe sur les établissements au chapitre 7 — la base
+  de paramètres n'en porte qu'une ligne chacun, leur `TODO (rédacteur)` dit laquelle — ;
+  tarifs des taxes et redevances diverses fixés par décret au chapitre 8, non transcrits ;
+  seuils de l'approbation au chapitre 5 ; parts et critères du fonds et des subventions au
+  chapitre 9. Sont engendrés (11 octobre 2026) : les trois barèmes des taxes sur les
+  immeubles et la pénalité de retard ; pour la taxe sur les établissements, le minimum, le
+  maximum et les taux par assiette ; les taux et tarifs des chapitres V à VII du code et les
+  deux barèmes des parkings. Le tableau de la taxe hôtelière (deux lignes) reste fait main,
+  ses valeurs étant versées : la forme commune ne rend pas ses deux lignes de registre.
 - **Figure des barèmes des taxes sur les immeubles**, en dinars courants et en dinars de 2025 :
   devenue faisable (séries complètes de 1997 à 2017), non faite.
 - **Approbation des délibérations communales, 1975-2018** (lecture du 10 octobre 2026,
@@ -2833,9 +2935,15 @@ taux selon les services (`tbl-fl-tib-taux`), le prix de référence du mètre ca
 (`tbl-fl-tib-prix-reference`) et le tarif des terrains non bâtis (`tbl-fl-tnb-tarif`) viennent
 de `scripts/generate_finances_locales_tables.py`, avec leur onglet « Base législative » ; les
 valeurs et les dates d'effet faites main concordaient toutes (37 valeurs). Les registres repliés
-des décrets restent écrits dans le chapitre. Restent faits main, faute de paramètres : la
-pénalité de retard (`tbl-fl-penalite-retard`) et la contribution au fonds de l'habitat
-(`tbl-fl-immeubles-fnah`). **Figures des deux barèmes faites le 10 octobre 2026** : `fig-fl-tib-prix-reference` (quatre
+des décrets restent écrits dans le chapitre. **Pénalité de retard engendrée le 11 octobre
+2026** : `tbl-fl-penalite-retard` (taux mensuel et plafond du total, cinq dates ; valeurs
+faites main identiques) et `fig-fl-penalite-retard` (le taux, en escalier, sans déflateur),
+série `fl-tib-penalite-retard` ; le changement de point de départ de 2007, que portait une
+colonne du tableau fait main, est passé dans un point de la section et au registre ; page de
+l'art. 59 § 7 de la loi de finances pour 2023 portée au registre (édition arabe, p. 4076).
+Restent faits main, avec leur motif en `TODO (rédacteur)` : la contribution au fonds de
+l'habitat (`tbl-fl-immeubles-fnah`, seul le 4 % de 2005 est versé) et les deux dégrèvements
+(`tbl-fl-immeubles-degrevement`, seul le dégrèvement partiel a un taux). **Figures des deux barèmes faites le 10 octobre 2026** : `fig-fl-tib-prix-reference` (quatre
 panneaux à axe partagé, un par catégorie) et `fig-fl-tnb-tarif` (un panneau, axe
 logarithmique), chacune en dinars courants et en dinars de 2025, placées après leur tableau ;
 séries `fl-tib-prix-reference` et `fl-tnb-tarif` émises au cache par le même générateur, module
@@ -2881,9 +2989,20 @@ prix homologués, redevables taxés sur leur impôt, maximum et sa suppression) 
 depuis 2013, et série du montant écrêté, **à obtenir** ; amnisties de 2012, 2019, 2024 et 2025
 (objet, années, conditions), loi n° 2006-25, décret-loi n° 2006-1, arrêté de calendrier de
 2026 ; pages françaises des art. 37 (LF 2016), 42 (LF 2019), 52 et 57 (LF 2023), 67 et 69
-(LF 2024) ; LF 1993, art. 39, non lu (rédaction initiale, nom du fonds et part de la taxe
-hôtelière avant 1997), et décrets des zones municipales touristiques ; art. 7 initial du
-décret-loi n° 2020-33. **Mis à jour le 11 octobre 2026** : les tableaux du minimum, du maximum
+(LF 2024) ; LF 1993, art. 38 et 39 : date d'effet non établie, édition arabe non relue
+(édition française lue à l'image, p. 1670, fascicule **dans le corpus** sans couche texte),
+et décrets des zones touristiques municipales (décret n° 94-822 et compléments), non lus ;
+décret-loi n° 2020-33 (auto-entrepreneur) : date d'effet et pages à relever, sans clé
+bibliographique ; LF 2023, art. 54 § 2 et 3, lus sur la couche texte de l'édition arabe
+(p. 4073), **à relire à l'image**. **Corrigé le 11 octobre 2026, d'après les textes lus** :
+la part de 50 % affectée au Fonds de protection des zones touristiques ne porte que sur la
+taxe hôtelière des hôtels des zones touristiques municipales, et le fonds est ouvert par la
+loi de finances pour 1993 (art. 38 et 39, ligne de registre `r-fl-act-hoteliere-fonds-1993`,
+clé `lf-1993` versée au livre dans les deux langues), celle de 1997 ne récrivant que le
+début du tiret ; l'auto-entrepreneur est dispensé de la taxe de 2020 à 2022, la loi de
+finances pour 2023 abrogeant cette dispense (art. 54 § 2) et la contribution unique de 2019
+(art. 54 § 3) — `tbl-fl-tcl-forfaits` donne désormais la période de chaque régime, et reste
+fait main (seule la part de 20 % est versée). **Mis à jour le 11 octobre 2026** : les tableaux du minimum, du maximum
 et des taux sont engendrés (48 + 4 + 6 valeurs comparées aux tableaux faits main, aucun
 écart), avec deux figures en escalier (`fig-fl-tcl-minimum`, `fig-fl-tcl-maximum`) ; l'unité
 du maximum est établie — le code dit « un maximum qui sera fixé par décret », le décret
@@ -2915,10 +3034,23 @@ lire à l'image). **Lacunes**, lisibles dans le corpus sauf mention :
   sur les seuls art. 8 à 10) ; décrets n° 76-826, n° 95-1121 et n° 58-234, connus par leur seul
   intitulé ; la case « Contrôle » de 2016 reprend l'exception des déchets non ménagers
   (art. 93 du code, sans modificatif au registre du chapitre) : **à confirmer** ;
-- loi n° 2002-76, art. 3 (réduction de moitié pour les cas sociaux après le 1er août 2002) ;
-  barème des parkings de la LF 2003, art. 79, à transcrire ; arrêtés du 4 mars 1997 et du
-  30 mai 2003 ; antécédents abrogés en 1997 (décrets de 1887 à 1956, **à obtenir** ; loi
-  n° 71-41) ;
+- arrêtés du 4 mars 1997 et du 30 mai 2003 (listes de communes des parkings) ; barème des
+  parkings de 2003 dans l'édition arabe (JORT n° 102 de 2002, p. 3510) : deux premiers cas
+  lus sur une océrisation, **à relire à l'image** ; antécédents abrogés en 1997 (décrets de
+  1887 à 1956, **à obtenir** ; loi n° 71-41) ;
+- **engendrés le 11 octobre 2026** : `tbl-fl-taxes-baremes` (chapitres V à VII, en long, chaque
+  grandeur avec sa période ; 10 valeurs identiques à celles du tableau fait main),
+  `tbl-fl-parkings-1997` et `tbl-fl-parkings-2003` (neuf montants, dont 565 D), et
+  `fig-fl-parkings` (communes de plus de 100 000 habitants, dinars courants et dinars de
+  2025 ; nombres du texte écrits à la main d'après `baremes.reperes_parkings()`, à relire si
+  l'indice de 2025 est révisé). **Corrigé** : la réduction de moitié de la contribution des
+  riverains cesse au 1er août 2002, remplacée par un dégrèvement total (tableau, section,
+  registres, `tbl-fl-qui-fixe`) ; libellés arabes de ces tableaux et des deux figures composés,
+  l'édition arabe des articles n'étant pas relue : **à confronter** ;
+- les notes de lecture de `fig-fl-parkings` et de `fig-fl-penalite-retard` (ch. 6) prolongent le
+  dernier palier jusqu'en 2026, « aucun texte postérieur n'étant identifié », sans fiche de
+  `docs/recherches.yml` : **à ouvrir** (modificatifs de l'art. 90 du code depuis 2003 ; de
+  l'art. 19 § I depuis 2023), comme pour les barèmes des taxes sur les immeubles ;
 - qui arrête un tarif communal depuis le décret-loi n° 2023-9 : non établi ; délibérations
   tarifaires de 2019 à 2023 au *Journal officiel des collectivités locales*, **hors corpus**.
 

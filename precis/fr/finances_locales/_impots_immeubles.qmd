@@ -412,6 +412,8 @@ Le dégrèvement est la remise, totale ou partielle, de la taxe sur les immeuble
 
 : Les deux dégrèvements de la taxe sur les immeubles bâtis {#tbl-fl-immeubles-degrevement}
 
+<!-- TODO (rédacteur) : tableau gardé fait main le 11 octobre 2026. La base de paramètres ne porte que le dégrèvement partiel (openfisca-tunisia 0.134, `fiscalite_locale/taxe_immeubles_batis/degrevement_partiel` : 25 % du 1er janvier 1997 au 31 décembre 2002, comparé et identique) ; le dégrèvement total n'a ni taux ni seuil énoncés par le code et n'y est pas. À remplacer par un tableau engendré si une forme propre à une seule ligne chiffrée se dégage. -->
+
 - **Deux dégrèvements en 1997.** [Le code](#r-fl-imm-degrevement-1997) en institue deux, et renvoie leurs modalités à un décret.
 - **Organisés en 1998.** [Le décret du 8 juin 1998](#r-fl-imm-degrevement-1998), exécutoire le 24 juin 1998, fixe les conditions de chacun : pour le dégrèvement partiel, des déclarations trimestrielles et une attestation de paiement ; pour le dégrèvement total, une aide permanente, la demande suspendant le recouvrement.
 - **Le dégrèvement partiel supprimé en 2003.** [La loi de finances pour 2003](#r-fl-imm-degrevement-2003) l'abroge à compter du 1^er^ janvier 2003 ; seul demeure le dégrèvement total.
@@ -443,6 +445,8 @@ La [contribution](#g-contribution-fnah) au Fonds national d'amélioration de l'h
 
 : Le prélèvement au profit du Fonds national d'amélioration de l'habitat, avant et depuis 2005 {#tbl-fl-immeubles-fnah}
 
+<!-- TODO (rédacteur) : tableau gardé fait main le 11 octobre 2026. La base de paramètres ne porte que la ligne de 2005 (openfisca-tunisia 0.134, `fiscalite_locale/contribution_fonds_amelioration_habitat/taux` : 4 % au 1er janvier 2005, comparé et identique) ; le taux de la taxe d'avant 2005 n'y est pas, le décret beylical du 23 août 1956 n'étant pas lu. L'engendrer ferait disparaître la ligne « avant 2005 », que le tableau compare à celle de 2005 : à remplacer par un tableau engendré quand ce taux sera établi et versé. -->
+
 <!-- TODO (documentaliste) : taux et régime de la taxe au profit du Fonds national d'amélioration de l'habitat avant 2005 (décret beylical du 23 août 1956, abrogé par la loi de finances pour 2005) ; produit de la contribution depuis 2005 : aucune série identifiée (plan de l'architecte, § 5.2). -->
 
 - **Avant 2005, une taxe au profit du fonds.** Elle existe avant le code : [la loi de 1997](#r-fl-imm-fnah-1997) se borne à remplacer, dans les textes du fonds, la « valeur locative » par l'« assiette de la taxe sur les immeubles bâtis ». [La loi de finances pour 1999](#r-fl-imm-fnah-1999) en exonère les bénéficiaires du dégrèvement total, avec effet au 1^er^ janvier 1997.
@@ -466,20 +470,33 @@ La [contribution](#g-contribution-fnah) au Fonds national d'amélioration de l'h
 
 La pénalité de retard est la majoration, comptée par mois, que supporte le contribuable qui ne paie pas la taxe à l'échéance ; elle vaut pour la taxe sur les immeubles bâtis et, par renvoi, pour la taxe sur les terrains non bâtis. De 1,25 % par mois en 1997, elle descend à 1 % en 2002 et à 0,75 % en 2007, puis revient à 1,25 % en 2023 (@tbl-fl-penalite-retard).
 
-| Date d'effet | Taux<br>(% par mois) | Ce qui change par ailleurs |
-|---|--:|---|
-| [[1^er^ janvier 1997]{.insecable}](#r-fl-imm-penalite-1997) | 1,25 | — |
-| [[1^er^ janvier 2002]{.insecable}](#r-fl-imm-penalite-2002) | 1 | — |
-| [[1^er^ janvier 2007]{.insecable}](#r-fl-imm-penalite-2007) | 0,75 | la pénalité court à compter du 1^er^ janvier de l'année suivant l'exigibilité |
-| [[1^er^ janvier 2022]{.insecable}](#r-fl-imm-penalite-2022) | 0,75 | la pénalité est plafonnée au principal |
-| [[1^er^ janvier 2023]{.insecable}](#r-fl-imm-penalite-2023) | 1,25 | sous la réserve du paragraphe 10 de l'article |
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "penalite_retard.md",
+                               "Pénalité de retard de la taxe sur les immeubles bâtis, applicable aussi à la taxe sur les terrains non bâtis : taux par mois de retard et plafond du total des pénalités, au 1^er^ janvier 1997, 2002, 2007, 2022 et 2023",
+                               "tbl-fl-penalite-retard"))
+```
 
-: Pénalité de retard de la taxe sur les immeubles bâtis, applicable aussi à la taxe sur les terrains non bâtis {#tbl-fl-penalite-retard}
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré quand la pénalité sera datée et sourcée dans la base de paramètres ; figure en escalier (figtools.fig_escalier) après versement (plan de l'architecte, § 5.2 et 6). -->
+```{python}
+#| label: fig-fl-penalite-retard
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import baremes
+baremes.figure_penalite(
+    caption=("Taux de la pénalité de retard de la taxe sur les immeubles bâtis, en % par mois ou "
+             "fraction de mois de retard, à ses dates d'effet, 1997-2026 (valeurs et plafond de 2022 "
+             "au @tbl-fl-penalite-retard)"))
+```
 
 - **Deux baisses, puis un retour au taux d'origine.** La pénalité est réduite [au 1^er^ janvier 2002](#r-fl-imm-penalite-2002), puis [au 1^er^ janvier 2007](#r-fl-imm-penalite-2007) ; [le décret-loi portant loi de finances pour 2023](#r-fl-imm-penalite-2023) la reporte de 0,75 % à 1,25 % par mois.
-- **Un plafond depuis 2022.** [À compter du 1^er^ janvier 2022](#r-fl-imm-penalite-2022), la pénalité ne peut dépasser le principal.
+- **Un point de départ déplacé en 2007.** Jusqu'au 31 décembre 2006, la pénalité court du premier jour du deuxième mois qui suit la notification d'un avis du receveur des finances, et n'est pas appliquée si la taxe est payée dans l'année de sa constatation ; [depuis le 1^er^ janvier 2007](#r-fl-imm-penalite-2007), elle court du 1^er^ janvier de l'année qui suit celle au titre de laquelle la taxe est exigible.
+- **Un plafond depuis 2022.** [À compter du 1^er^ janvier 2022](#r-fl-imm-penalite-2022), le total des pénalités ne peut dépasser le principal : 100 % de la taxe due (@tbl-fl-penalite-retard).
 - **Une réserve dont la portée n'est pas établie.** Le paragraphe 10 de l'article de 2023 écarte l'ensemble de l'article pour les sommes de déclarations déposées spontanément, de vérifications notifiées et de taxations d'office notifiées avant le 1^er^ avril 2023. La portée de cette réserve pour une taxe recouvrée par voie de rôle n'est pas établie ici.
 
 <!-- TODO (rédacteur) : trancher la portée du § 10 de l'art. 59 du décret-loi n° 2022-79 pour la TIB, recouvrée par voie de rôle (note documentaire, § 10.2, point 2). -->
@@ -490,9 +507,9 @@ La pénalité de retard est la majoration, comptée par mois, que supporte le co
 |---|---|---|---|
 | []{#r-fl-imm-penalite-1997}[1^er^ janvier 1997]{.insecable} | point de départ | code, art. 19 [@loi97-11, art. 19] | — → 1,25 % par mois |
 | []{#r-fl-imm-penalite-2002}[1^er^ janvier 2002]{.insecable} | ajustement | loi de finances pour 2002 [@loi2001-123-lf2002, art. 87, p. 4260] | art. 19 § I : pénalité de retard 1,25 % → 1 % par mois |
-| []{#r-fl-imm-penalite-2007}[1^er^ janvier 2007]{.insecable} | ajustement | loi de finances pour 2007 [@lf-2007, art. 54, p. 4389] | art. 19 § I : 1 % → 0,75 % par mois, à compter de l'année suivant l'exigibilité |
-| []{#r-fl-imm-penalite-2022}[1^er^ janvier 2022]{.insecable} | ajustement | décret-loi portant loi de finances pour 2022 [@lf-2022, art. 68, p. 3106] | art. 19 § I : pénalités plafonnées au principal |
-| []{#r-fl-imm-penalite-2023}[1^er^ janvier 2023]{.insecable} | ajustement | décret-loi portant loi de finances pour 2023 [@lf-2023, art. 59] | art. 19 § I : 0,75 % → 1,25 % par mois, sous la réserve du § 10 |
+| []{#r-fl-imm-penalite-2007}[1^er^ janvier 2007]{.insecable} | ajustement | loi de finances pour 2007 [@lf-2007, art. 54, p. 4389] | art. 19 § I : 1 % → 0,75 % par mois ; point de départ : premier jour du deuxième mois suivant la notification de l'avis du receveur des finances → 1^er^ janvier de l'année qui suit celle de l'exigibilité ; alinéa qui écartait la pénalité en cas de paiement dans l'année de la constatation, abrogé |
+| []{#r-fl-imm-penalite-2022}[1^er^ janvier 2022]{.insecable} | ajustement | décret-loi portant loi de finances pour 2022 [@lf-2022, art. 68 § 3, p. 3106] | art. 19 § I : — → total des pénalités plafonné au montant de la créance en principal ; ni restitution des pénalités déjà payées ni révision de leur inscription comptable, sauf jugement |
+| []{#r-fl-imm-penalite-2023}[1^er^ janvier 2023]{.insecable} | ajustement | décret-loi portant loi de finances pour 2023 [@lf-2023, art. 59 § 7 et 10] | art. 19 § I : 0,75 % → 1,25 % par mois, sous la réserve du § 10 (édition arabe, p. 4076) |
 
 : La pénalité de retard des taxes sur les immeubles : textes, 1997-2023 {#tbl-fl-penalite-retard-textes}
 

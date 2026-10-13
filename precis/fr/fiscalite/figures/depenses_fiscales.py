@@ -1,6 +1,6 @@
 """Figure « les plus gros dispositifs dérogatoires » du livre *Fiscalité*.
 
-PAS APPELÉE PAR LE CHAPITRE « Les dépenses fiscales et les régimes d'incitation »
+PAS APPELÉE PAR LE CHAPITRE « Les dépenses fiscales »
 (`_depenses_fiscales.qmd`), et à ne pas appeler en l'état : la série cousue ci-dessous
 porte une rupture de périmètre (voir « TROIS RAPPORTS COUSUS »). Le code est inchangé ;
 il est à reprendre quand la série aura été reconstruite périmètre par périmètre.

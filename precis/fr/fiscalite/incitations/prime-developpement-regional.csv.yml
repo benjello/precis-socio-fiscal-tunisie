@@ -1,0 +1,35 @@
+# Manifeste du relevé « prime de développement régional : taux et plafonds, 1994-2017 ».
+#
+# Fichier TENU À LA MAIN, lu par figures/regimes_incitation.py (figure en escalier de la
+# prime). Il reprend, sans rien y ajouter, le tableau des barèmes du chapitre « Les régimes
+# d'incitation à l'investissement » (tbl-df-primes-baremes) : industries manufacturières et
+# services éligibles.
+#
+# CE QUE LA FIGURE N'INVENTE PAS. Les dates d'effet des décrets de 1994 et de 1999 ne sont
+# pas établies : ces barèmes sont des points isolés, sans marche. Aucun plafond n'est écrit
+# en 1994 ni relevé pour 1999 : la colonne reste vide. En 2017, la catégorie intermédiaire
+# est réunie aux zones prioritaires dans le deuxième groupe. L'assiette change de nom d'un
+# barème à l'autre (coût du projet hors fonds de roulement ; fonds de roulement inclus dans
+# la limite de 10 % en 2011 ; « coût d'investissement approuvé » en 2017) : les taux ne
+# portent pas nécessairement sur la même base. Le barème propre aux nouveaux promoteurs de
+# 2011 (30 % et 2 millions de dinars) n'est pas dans le relevé. Plafonds en dinars courants.
+
+format: long
+cle_de_ligne: [annee, rang]
+
+colonnes:
+  annee: année du décret
+  date_effet: date d'effet ; vide si elle n'est pas établie
+  rang: place de la catégorie de zones dans la hiérarchie des aides
+  categorie: nom de la catégorie dans le décret
+  taux_pct: prime en % du coût de l'investissement
+  plafond_md: plafond de la prime, en millions de dinars courants ; vide s'il n'est pas écrit ou relevé
+  texte: clé de citation
+  localisateur: article
+
+sources:
+  - decret-94-539-primes-developpement-regional
+  - decret-99-486-primes-developpement-regional
+  - decret-2008-389-primes-developpement-regional
+  - decret-2011-528-primes-developpement-regional
+  - decret-gouv-2017-389-incitations-financieres

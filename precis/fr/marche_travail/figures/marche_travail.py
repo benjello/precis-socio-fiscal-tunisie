@@ -861,7 +861,7 @@ def _quatre_trimestres():
     """Le salaire moyen des salariés déclarés les quatre trimestres de 2013, mêmes grandeurs.
 
     Quotient de la masse par l'effectif de la ligne TOTAL de la colonne « 4 trimestres »
-    (annuaire 2013, page 35 du fichier PDF) : l'annuaire imprime les deux, non le quotient.
+    (annuaire 2013, page 35) : l'annuaire imprime les deux, non le quotient.
     """
     t = _trimestres_2013("dinars")
     l = t[(t["trimestres_declares"] == "4") & (t["classe"] == "TOTAL")].iloc[0]

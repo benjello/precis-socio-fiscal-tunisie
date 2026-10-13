@@ -837,9 +837,13 @@
     couverture: 'Intitulés FR et AR depuis le 18 novembre 1996 : la loi, son rectificatif (n° 7 de 1997), la loi n° 2002-24 (lue). Lus : loi n° 96-101, loi n° 2002-24, décrets n° 97-1925 et n° 97-1926, décrets n° 2002-886, n° 2002-887 et n° 2006-1025 qui les modifient (trouvés par l''intitulé « interventions sociales en faveur des travailleurs » et par les numéros des décrets de 1997) : champ limité aux travailleurs des entreprises affiliées à la CNSS et régis par la loi n° 60-30. Lacune : les décrets d''application ne citent pas la loi dans leur intitulé — la requête par numéro ne les rend pas ; un texte d''extension pourrait être dans le même cas. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 4.2.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire:
-  - 'chercher par objet : « protection sociale des travailleurs », « الإحاطة الاجتماعية بالعمال »'
-  - chercher un modificatif des décrets n° 97-1925 et n° 97-1926 postérieur à 2006
+  - date: 2026-10-12
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Modificatif des décrets n° 97-1925 et n° 97-1926 : intitulés FR et AR depuis le 1er septembre 1997 portant « 97-1925 », « 97-1926 », « 1925 لسنة 1997 », « 1926 لسنة 1997 » ou « interventions sociales en faveur des travailleurs » ; ne sortent que les décrets n° 2002-886, n° 2002-887 et n° 2006-1025, relus à l''image (JORT n° 34 de 2002, p. 1029-1032 ; n° 31 de 2006, p. 879). Aucun modificatif postérieur à 2006.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: ['chercher par objet : « protection sociale des travailleurs », « الإحاطة الاجتماعية بالعمال »']
 
 - id: r-pf-taux-apres-1996
   objet: décret fixant les taux des indemnités à caractère familial ou des allocations familiales postérieur au décret n° 96-1906 du 16 octobre 1996
@@ -2220,6 +2224,7 @@
     titres_fts: [tarifs AND transport]
     titres_like: ['%transport scolaire%', '%abonnement%scolaire%', '%transport public collectif%', '%metro leger%']
     iort_ar: [تعريفات النقل, تعريفة النقل, الاشتراكات المدرسية, معاليم النقل, النقل العمومي]
+    plein_texte: [tarifs de transport, abonnements scolaires]
     depuis: 2000-02-25
   passes:
   - date: 2026-10-11
@@ -2228,10 +2233,48 @@
     couverture: 'Titres de jort_cache seulement, dernière publication indexée le 2 octobre 2026. Requêtes jouées en plus de celles du champ requetes, en SQL : titre like ''%tarif%'' avec ''%transport%'', ''%voyageurs%'', ''%metro%'', ''%chemins de fer%'', ''%louage%'' ou ''%taxi%'' depuis le 1er janvier 2000 ; titre like ''%abonnement%'' avec ''%scolaire%'' ou ''%transport%'' ; ''%eleves%'' ou ''%etudiants%'' avec ''%transport%'' ; ''%تعريف%'' avec ''%النقل%'' ou ''%نقل%'' ; ''%اشتراكات%'' ; arrêtés portant « transport » ou « النقل » au titre ou au ministère dans trois fenêtres de signature (mars 2000-novembre 2007 : 115 arrêtés ; juin-septembre 2010 : aucun ; avril-juin 2021 : 3), filtrés sur prix, tarif, سعر, أسعار, تعريف, voyageurs, personnes. Après le 17 février 2000, aucune réponse ne porte sur un tarif de transport collectif de personnes (ports, manutention, marchandises, amendes transactionnelles, autorisations). NON FAIT : plein texte des fascicules ; miroir iort ; fascicules inconnus de la base ; lecture des 115 arrêtés de 2000-2007 au-delà de leur intitulé. Voie latérale ouverte, hors Journal officiel : INS, Bulletin mensuel de la statistique, prix du billet d''autobus à Tunis (450 jusqu''en juillet 2010, 470 d''août 2010 à mai 2021, 500 depuis juin 2021).'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-12
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance depuis le 25 février 2000 : 33 candidats aux titres de jort_cache (dernière publication indexée le 2 octobre 2026), 57 au miroir iort, lus sur leur intitulé ; aucun ne fixe un tarif de transport collectif de personnes. Plein texte joué hors de l''outil, par script de séance, sur les 1 149 fascicules FRANÇAIS de 2000 à 2010 du corpus local, couche texte exploitable au niveau du fascicule après décodage du décalage de 29 (2000 à 2005), pages et annexes en image non contrôlées : motifs « tarif(s) de/des/du transport(s) », « abonnement(s) scolaire(s) », « tarifs sur/aux réseaux », « tarif » près de « voyageurs », « métro léger », « transport public collectif », « chemins de fer ». Aucune occurrence de « abonnement scolaire » ; aucun arrêté tarifaire après celui du 17 février 2000. Occurrences lues : décret n° 2001-2621, art. 10 (tarifs proposés par la SNCFT et communiqués au ministre) ; loi n° 2004-33, art. 6 et 19 ; texte du JORT n° 72 du 7 septembre 2007, art. 15 (tarif du transport non régulier fixé par décision conjointe ; intitulé du texte non relevé) ; résumés de contrôles de sociétés régionales de transport, JORT n° 69 de 2009, p. 2584, et n° 104 de 2010, p. 3853. NON FAIT : plein texte de l''édition arabe ; annexes publiées en image ; fascicules de 2011 à 2026, dont 2021 ; archives du web. La date de couverture retenue est celle du plein texte, la plus prudente (titres couverts jusqu''au 2 octobre 2026). Détail : docs/notes/compensation-transport-second-passage-2026-10-12.md, § 2.'
+    couvert_jusqu_au: 2010-12-31
+    resultat: aucun
   a_faire:
-  - jouer le plein texte (« tarifs de transport », « abonnements scolaires ») sur les fascicules de 2000 à 2010 et de 2021
+  - jouer le plein texte (« تعريفات النقل », « الاشتراكات المدرسية ») sur l'édition arabe des fascicules de 2000 à 2010, et le plein texte français et arabe sur 2021
+  - chercher le texte réglementaire auquel renvoie l'article 6 de la loi n° 2004-33 pour la fixation des tarifs (arrêté, décision ou homologation)
+  - identifier la société et l'auteur des résumés de contrôle des JORT n° 69 de 2009 (p. 2584) et n° 104 de 2010 (p. 3853)
   - chercher les communiqués de la société des transports de Tunis et de la SNCFT aux archives du web (2003, 2005, 2008, 2010, 2021)
   - relever dans le Bulletin mensuel de la statistique antérieur à novembre 2008, s'il est obtenu, le mois de chaque relèvement entre 2000 et 2007
+
+- id: r-transport-ligne-budgetaire-1995-2002
+  objet: ligne du budget général de l'État qui porte la subvention d'exploitation des sociétés publiques de transport routier de personnes après la suppression de la caisse de compensation et de soutien des transports routiers (loi n° 94-127 du 26 décembre 1994, art. 35), de 1995 à 2002
+  ou: [precis/fr/compensation/_transport.qmd#sec-compensation-transport-1987]
+  requetes:
+    titres_fts: [compensation AND transports]
+    titres_like:
+    - '%transports routiers%'
+    - '%soutien des transports%'
+    - '%taxe unique de compensation%'
+    - '%caisse de compensation et de soutien%'
+    - '%compensation de transport%'
+    - '%compensation des transport%'
+    depuis: 1994-12-30
+  passes:
+  - date: 2026-10-12
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Titres de jort_cache de 1983 à 2012 (LIKE sans accents, doublé du FTS) : aucun texte postérieur à la loi n° 94-127 ne porte sur la dépense ; seuls des modificatifs de la taxe (LF 1995, art. 67-68 ; LF 2005, art. 74 et 84 ; LF 2008, art. 56-57). Loi de finances pour 1995 : art. 35 lu à l''image (p. 2045), muet sur la dépense. Rapports annuels de la BCT (couche texte) : 1985, 1988, 1991, 1994, 1995 et 1996, aucune mention de la caisse ; 1997 à 2000, aucune ligne réunissant transport et compensation, subvention, intervention, caisse, tarif ou soutien ; 2001 à 2003 absents de l''entrepôt. NON FAIT : tableaux des dépenses par ministère des lois de finances de 1995 à 2002 ; lois de règlement ; budgets détaillés du ministère du Transport ; rapports annuels de la BCT de 2001 à 2003.'
+    couvert_jusqu_au: 2012-12-31
+    resultat: aucun
+  - date: 2026-10-13
+    role: documentaliste
+    sources: [corpus_local, jort_cache]
+    couverture: 'Lu à l''image, édition française. Loi de finances pour 1995, tableau « C » (JORT n° 103 de 1994, p. 2057) : une ligne par chapitre et par partie ; ministère du Transport, 4e partie (interventions publiques) 45 989 000 D en services votés, sans libellé de bénéficiaire ; tableau « K » (p. 2126) : la caisse n''y est plus. Décrets de répartition des crédits, tableau A du titre I, chapitre du Transport : gestion 1996, décret n° 95-2503 (JORT n° 104 de 1995, p. 2543-2544), article 62 « Intervention indirecte de l''État dans le domaine économique (subventions aux établissements) » 42 498 000 D ; gestion 1997, décret n° 96-2458 (JORT n° 105 de 1996, p. 2677-2678), pas d''article 62, article 71 « Intervention indirecte de l''État dans le domaine social et culturel » 49 002 000 D ; gestion 2001, décret n° 2000-2932 (JORT n° 104 de 2000, p. 3281), article 03.302 « Interventions dans le domaine social » 84 764 000 D. Aucun libellé ne nomme le transport routier, la compensation ni une société : la ligne cherchée n''existe pas au Journal officiel à ce niveau de détail. NON FAIT : décret de répartition pour 1995 (non trouvé aux titres de l''index sur une seule requête) ; décrets n° 97-2506, 98-2535, 99-2817, 2001-2939, 2002-3156 ; tableau « F » de la loi de finances pour 1995, chapitre du Transport ; budgets détaillés du ministère.'
+    couvert_jusqu_au: 2012-12-31
+    resultat: aucun
+  a_faire:
+  - lire les décrets de répartition des crédits des gestions 1998 à 2000 et 2002 (n° 97-2506, 98-2535, 99-2817, 2001-2939) pour suivre l'article d'intervention du chapitre du Transport, et chercher celui de la gestion 1995
+  - chercher aux archives du web de portail.finances.gov.tn les budgets détaillés du ministère du Transport antérieurs à 2013, seuls à pouvoir nommer la subvention
 
 - id: r-transport-decret-manque-a-gagner
   objet: décret fixant la méthode de calcul du manque à gagner des transporteurs publics de personnes en cas de gratuité ou de tarifs réduits (loi n° 2004-33 du 19 avril 2004, art. 12), et décret fixant l'assiette et le recouvrement du droit sur le transport collectif public dû par les bénéficiaires (même loi, art. 11) — autres que le décret gouvernemental n° 2017-987 du 17 août 2017, limité aux corps actifs
@@ -2376,3 +2419,57 @@
     resultat: aucun
   a_faire:
   - parcourir l'arborescence « documents » de finances.gov.tn et le site de l'Assemblée des représentants du peuple
+
+- id: r-fisc-art63-decret-zones
+  objet: décret gouvernemental fixant, pour l'article 63 du code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés (loi n° 2017-8, art. 1er), la liste des zones de développement régional et des activités exclues — soit un texte propre, soit la confirmation par un texte que l'annexe n° 2 du décret gouvernemental n° 2017-389 en tient lieu
+  ou: [precis/fr/fiscalite/_regimes_incitation.qmd#sec-df-zones-carte]
+  requetes:
+    titres_like: ['%zones de developpement regional%', '%2017-389%']
+    iort_ar: [مناطق التنمية الجهوية, 389 لسنة 2017]
+    plein_texte: [2017-389]
+    depuis: 2017-02-14
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache, français et arabe, années 2015 et suivantes : trois réponses, toutes des articles de lois de finances (loi n° 2017-66, art. 20 ; loi n° 2018-56 ; loi n° 2019-78, art. 44), aucun décret (requêtes lancées en SQL sur la colonne titre ; ni la FTS ni le miroir iort n''ont été interrogés). Plein texte « 2017-389 » dans les fascicules français de 2017 à 2026 : trente fascicules — le décret, l''arrêté du JORT n° 38 de 2017 sur les commissions, le décret n° 2024-182, et vingt-sept visas ; aucun ne rattache l''annexe n° 2 à l''article 63. Loi n° 2017-66, art. 20, lu : il renvoie aux zones « au sens de l''article 63 » sans nommer de décret. Lacunes : le corpus français de 2018 ne compte que 70 fascicules ; aucun fascicule arabe parcouru au plein texte ; les notes communes de la direction générale des impôts, hors Journal officiel, non cherchées. Requêtes lancées à la main (SQL et pdftotext), non par recherches.py. Note : docs/notes/fiscalite-incitations-primes-zones-2026-10-11.md, § 1.6 et § 4.2.'
+    couvert_jusqu_au: 2026-07-24
+    resultat: aucun
+  a_faire:
+  - chercher la note commune de la direction générale des impôts commentant les articles 63 et 64
+  - rejouer par scripts/recherches.py (FTS, miroir iort, fascicules arabes)
+
+- id: r-fisc-zones-modif-99-483
+  objet: texte modifiant la délimitation des zones d'encouragement au développement régional (décret n° 99-483) entre le décret n° 2008-387 du 11 février 2008 et l'abrogation du code de 1993
+  ou: [precis/fr/fiscalite/_regimes_incitation.qmd#sec-df-zones-carte]
+  requetes:
+    titres_like: ['%developpement regional%zones%', '%developpement regional%prime%', '%99-483%']
+    iort_ar: [483 لسنة 1999, 539 لسنة 1994, التنمية الجهوية]
+    plein_texte: [décret n° 99-483]
+    depuis: 2008-02-11
+  periode:
+    jusqu_au: 2016-12-31
+    motif: le code de 1993 est abrogé au 1er janvier 2017 (loi n° 2016-71, art. 26 à 29)
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache (SQL sur la colonne titre ; le terme arabe « التنمية الجهوية » a été croisé avec « مناطق » ou « منح ») : le dernier texte visant le décret n° 99-483 est le décret n° 2008-387 ; une seule notice arabe répond, le décret n° 2011-3197, qui modifie le décret des primes et non celui des zones. Plein texte « décret n° 99-483 » dans les quatre cents premières lignes (sommaire) de chaque fascicule français de 2008 à 2016 : seul le JORT n° 15 de 2008 répond. Lacunes : sommaires de plus de quatre cents lignes non couverts ; fascicules sans couche texte non couverts ; édition arabe non parcourue (notices à intitulé arabe seul : 37 % en 2011, 40 à 70 % en 2015-2016). Requêtes lancées à la main, non par recherches.py.'
+    couvert_jusqu_au: 2016-12-31
+    resultat: aucun
+
+- id: r-fisc-modificatifs-2017-389
+  objet: texte modifiant le décret gouvernemental n° 2017-389 du 9 mars 2017 (barème des primes, annexes, zones), autre que le décret n° 2024-182 du 4 avril 2024
+  ou: [precis/fr/fiscalite/_regimes_incitation.qmd#sec-df-primes-bareme]
+  requetes:
+    titres_like: ['%2017-389%', '%incitations financi%']
+    iort_ar: [389 لسنة 2017, الحوافز المالية]
+    plein_texte: [2017-389]
+    depuis: 2017-03-28
+  passes:
+  - date: 2026-10-11
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache (SQL sur la colonne titre) : une seule notice, le décret n° 2024-182 (JORT n° 47 de 2024), déjà connu. Plein texte des fascicules français de 2017 à 2026 : les visas citent le décret sans modificatif jusqu''au JORT n° 23 de 2024, puis « tel que modifié et complété par le décret n° 2024-182 », et lui seul, jusqu''au JORT n° 75 de 2026 (décret n° 2026-148 du 23 juillet 2026). Lacunes : corpus français de 2018 incomplet (70 fascicules) ; actualisation des listes par la voie de l''article 4 du décret (approbation du conseil supérieur d''investissement) non cherchée hors Journal officiel. Requêtes lancées à la main, non par recherches.py.'
+    couvert_jusqu_au: 2026-07-24
+    resultat: aucun
