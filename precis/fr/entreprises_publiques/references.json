@@ -1381,6 +1381,26 @@
         ]
       },
       "note": "citation-key: minfin-entreprises-publiques-lf2021\nÉdition française ; page du PDF = page imprimée ; p. 69-70 (société des transports de Tunis) et 72 (SNCFT). Chiffres donnés dans le texte, non dans un tableau. Copie locale : tunisia-data/data/raw/caisses/minfin/ (hors git ; adresse et somme de contrôle dans sources/cnrps-tutelle-urls.csv). Date de parution non lue. Fiche : tunisia-data/sources/transport-trafic-comptes.md."
+    },
+    {
+      "id": "loi2003-33",
+      "type": "legislation",
+      "title": "Loi n° 2003-33 du 28 avril 2003, relative à la fusion de la société nationale des transports et de la société du métro léger de Tunis",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "1290",
+      "issued": {
+        "date-parts": [
+          [
+            2003,
+            4,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2003/2003F/Jo0342003.pdf",
+      "title-short": "Loi n° 2003-33 du 28 avril 2003",
+      "note": "citation-key: loi2003-33\nJORT n° 34 du 29 avril 2003, p. 1290. Seul l'intitulé est connu ici (index du Journal officiel, tronqué après « doté de » : la suite de l'intitulé n'est pas reprise). Rectificatif au JORT n° 37 de 2003, p. 1584. Source : docs/notes/compensation-transport-2026-10-11.md."
     }
   ]
 }

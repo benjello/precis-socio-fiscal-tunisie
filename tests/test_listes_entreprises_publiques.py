@@ -29,7 +29,8 @@ def test_totaux_de_la_liste_des_etablissements():
     totaux = {}
     for l in lignes:
         totaux[l["liste"]] = totaux.get(l["liste"], 0) + (l["present"] == "oui")
-    assert totaux == {"1997": 41, "1998": 42, "1999": 44, "2002": 44, "2004": 44, "2007": 46}
+    assert totaux == {"1997": 41, "1998": 42, "1999": 44, "2002": 44, "2004": 44, "2006": 43,
+                      "2007-07": 45, "2007": 46}
 
 
 def test_les_deux_listes_se_recoupent():
@@ -43,7 +44,7 @@ def test_les_deux_listes_se_recoupent():
 
 def test_une_ligne_par_entreprise_et_par_liste():
     for nom, n_listes in (("entreprises-publiques-listes", 5),
-                          ("etablissements-entreprises-publiques", 6)):
+                          ("etablissements-entreprises-publiques", 8)):
         lignes = _lire(nom)
         cles = [(l["rang"], l["liste"]) for l in lignes]
         assert len(cles) == len(set(cles))

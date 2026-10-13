@@ -6,7 +6,8 @@
 # n° 2004-2265, puis modifiée par les décrets n° 2006-2579, n° 2007-1865 et n° 2007-2560.
 # Source de la transcription : docs/notes/entreprises-publiques-liste-2026-10-13.md, § 2.
 #
-# LES NOMBRES SONT COMPTÉS SUR LES LISTES : 41, 42, 44, 44, 44 et 46.
+# LES NOMBRES SONT COMPTÉS SUR LES LISTES : 41, 42, 44, 44, 44, 43, 45 et 46. Les états de
+# 2006 et de juillet 2007 sont l'état de 2004 après chaque décret modificatif.
 # APRÈS OCTOBRE 2007 aucun décret ne modifie la liste : les établissements classés par leur
 # propre décret (2019, 2023, 2024) ne sont pas dans ce relevé.
 
@@ -16,7 +17,7 @@ cle_de_ligne: [rang, liste]
 colonnes:
   rang: ordre de première apparition dans les listes
   etablissement: nom imprimé dans la première liste où l'établissement figure
-  liste: état de la liste (1997, 1998, 1999, 2002, 2004 ; 2007 pour l'état d'octobre 2007)
+  liste: état de la liste (1997, 1998, 1999, 2002, 2004, 2006 ; 2007-07 pour juillet 2007 ; 2007 pour octobre 2007)
   present: oui si l'établissement figure sur la liste
   nom_dans_la_liste: nom imprimé quand il change
   texte: clé de citation du décret qui fixe cet état

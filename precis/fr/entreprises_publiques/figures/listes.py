@@ -43,7 +43,7 @@ BLEU, ORANGE, VERT, GRIS = "#0969da", "#bc4c00", "#1a7f37", "#57606a"
 # Année de la liste -> libellé de colonne
 LISTES = {"1998": "1998", "2002": "2002", "2005": "2005", "2010": "fin 2010", "2021": "2021"}
 ETATS = {"1997": "1997", "1998": "1998", "1999": "1999", "2002": "2002", "2004": "2004",
-         "2007": "octobre 2007"}
+         "2006": "2006", "2007-07": "juillet 2007", "2007": "octobre 2007"}
 
 
 def _lire(nom: str) -> pd.DataFrame:
@@ -75,7 +75,7 @@ figtools.register_provenance(
                           "comme entreprises publiques, 1997-2007",
     sources=_sources(ETABLISSEMENTS), unite="établissements",
     perimetre=("liste fixée par décret en 1997, refaite en 1999, 2002 et 2004, complétée en "
-               "1998 et modifiée en 2006 et 2007"),
+               "1998 et modifiée en 2006, en juillet et en octobre 2007"),
     caveats=("Après octobre 2007, aucun décret ne modifie la liste : un établissement y entre "
              "par une disposition de son propre décret, et ces entrées ne sont pas comptées "
              "ici."))
@@ -115,13 +115,13 @@ def fig_perimetre():
                           f"{c['ensemble']['2021']} entreprises publiques")
     # 3. Liste des établissements : marches, 1997-2007.
     etats = [(1997, "1997"), (1998, "1998"), (1999, "1999"), (2002, "2002"), (2004, "2004"),
-             (2007, "2007")]
+             (2006, "2006"), (2007, "2007-07"), (2007, "2007")]
     xs = [a for a, _ in etats]
     ys = [c["etablissements"][k] for _, k in etats]
     ax.step(xs, ys, where="post", color=VERT, lw=1.8, zorder=2)
-    for a, n in zip(xs, ys):
+    for (a, k), n in zip(etats, ys):
         p, = ax.plot([a], [n], "s", color=VERT, ms=5, zorder=3)
-        figtools.infobulle(p, f"{a} · liste des établissements publics considérés comme "
+        figtools.infobulle(p, f"{ETATS[k]} · liste des établissements publics considérés comme "
                               f"entreprises publiques : {n}")
     for a, n in decrets + [(2010, c["ensemble"]["2010"]), (2021, c["ensemble"]["2021"])]:
         ax.annotate(str(n), xy=(a, n), xytext=(0, 7), textcoords="offset points", ha="center",

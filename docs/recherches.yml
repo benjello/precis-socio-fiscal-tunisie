@@ -2313,7 +2313,9 @@
 
 - id: r-epna-liste-modificatifs-apres-2007
   objet: décret modifiant ou remplaçant, après le décret n° 2007-2560 du 23 octobre 2007, la liste des établissements publics à caractère non administratif considérés comme entreprises publiques (décret n° 2004-2265 du 27 septembre 2004)
-  ou: [precis/fr/entreprises_publiques/_annexe_liste.qmd#sec-ep-liste-etablissements]
+  ou:
+  - precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-etat-du-droit
+  - precis/fr/entreprises_publiques/_annexe_liste.qmd#sec-ep-liste-etablissements
   requetes:
     titres_like:
     - '%liste des etablissements publics a caractere non administratif%'
