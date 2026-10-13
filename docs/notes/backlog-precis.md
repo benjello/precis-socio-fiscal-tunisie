@@ -2237,7 +2237,9 @@ Plan : vue d'ensemble (`#sec-ep-vue-ensemble`) ; mise en place 1969-1987 ; grand
 textes ; état du droit ; transferts du budget ; garanties ; dettes et créances croisées ;
 dividendes et versements ; cessions ; longue période ; Livre blanc de 2018 et études
 extérieures ; section « Les effectifs et la masse salariale » (`#sec-ep-effectifs`) ajoutée le
-11 octobre 2026, avant la longue période. Dix figures et trente et un tableaux, tous engendrés depuis les séries sauf quatre
+11 octobre 2026, avant la longue période. Le tableau de l'encours de la dette garantie
+(`tbl-ep-encours`), double de l'onglet « Données » de `fig-ep-encours`, est retiré le 13 octobre
+2026. Dix figures et trente tableaux, tous engendrés depuis les séries sauf quatre
 (les réformes ; les deux registres de textes ; les six éditions du rapport). Depuis le
 11 octobre 2026 (retouche), chaque figure a trois vues — dinars courants, % des dépenses de
 l'État hors service de la dette, % du PIB — et les tableaux de premier plan les mêmes colonnes ;

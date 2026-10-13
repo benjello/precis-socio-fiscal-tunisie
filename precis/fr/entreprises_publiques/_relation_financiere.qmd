@@ -259,7 +259,7 @@ ep.figure(
 - **Le plafond.** 3 000 MD de 2016 à 2018 ; 4 790 MD en 2019, après une loi de finances initiale à 4 500 MD ; 7 000 MD de 2020 à 2022 ; 8 000 MD en 2023 et en 2024. Pour 2020, la loi de finances initiale fixait 5 000 MD ; [la loi de finances rectificative du 14 décembre 2020](#r-ep-lfr-2020) porte le plafond à 7 000 MD. La traduction française d'une édition du rapport imprime 7 500 MD [@minfin-transferts-2021, p. 5] ; ses éditions arabes impriment 7 000 MD, comme la loi [@minfin-transferts-2022, p. 8].
 - **Les garanties accordées.** De 2,4 à 5,2 milliards de dinars par an de 2016 à 2023, soit de 1,8 % à 3,9 % du PIB (@tbl-ep-garanties).
 - **À quoi servent les garanties intérieures.** En 2023, sur 3 055,7 MD : 1 550,4 MD au titre de l'audit complet des banques publiques, 1 215,2 MD pour financer l'importation de produits de base — pétrole, gaz, céréales, engrais, sucre, café —, 141,0 MD de rééchelonnements, 124,0 MD d'autres opérations d'exploitation, 25,1 MD d'investissement [@minfin-dette-2025, p. 64]. Les importations de produits de base faisaient 188,2 MD en 2021 et 956,1 MD en 2022 (@tbl-ep-garanties-objet).
-- **Qui prête.** L'encours garanti dû à des prêteurs intérieurs passe de 2,0 milliards de dinars fin 2016 à 8,8 milliards fin 2023 ; l'encours extérieur, de 9,3 à 12,5 milliards (@tbl-ep-encours).
+- **Qui prête.** L'encours garanti dû à des prêteurs intérieurs passe de 2,0 milliards de dinars fin 2016 à 8,8 milliards fin 2023 ; l'encours extérieur, de 9,3 à 12,5 milliards (@fig-ep-encours).
 - **Deux parts du PIB.** Le rapport sur la dette publique imprime sa propre part : 13,5 % du PIB pour fin 2023, sur un PIB dont il ne dit pas la base (@tbl-ep-garanties-pib). Rapporté au PIB de l'INS en base 2015, le même encours fait 14,3 %. Les deux mesures coïncident de 2016 à 2020.
 
 ```{python}
@@ -299,21 +299,7 @@ ep.figure(
 )
 ```
 
-```{python}
-#| echo: false
-#| output: asis
-import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import entreprises_publiques as ep
-ep.tableau_encours(
-    caption=("Encours de la dette garantie par l'État en fin d'année, 2016-2024. La dernière "
-             "ligne est une estimation de fin juin 2024. Les parts rapportent un encours aux "
-             "dépenses et au PIB de l'année. Source : ministère des Finances, rapport sur la "
-             "dette publique [@minfin-dette-2022, p. 58 ; @minfin-dette-2025, p. 65]. Parts "
-             "calculées ici : dépenses de l'État hors service de la dette "
-             "[@minfin-remunerations] ; PIB de l'INS en base 2015, non rétropolé pour ces "
-             "années [@ins-cnat-2015] ; les parts du PIB imprimées par le rapport sont au "
-             "@tbl-ep-garanties-pib"))
-```
+Source : ministère des Finances, rapport sur la dette publique [@minfin-dette-2022, p. 58 ; @minfin-dette-2025, p. 65] ; les parts du PIB que le rapport imprime lui-même sont au @tbl-ep-garanties-pib.
 
 :::: {.chronologie-repliable titre="Garanties de l'État : encours garanti en % du PIB tel qu'imprimé, montants des garanties intérieures par objet 2021-2024 et des garanties liées à l'audit des banques publiques 2016-2021, plafond de 2020, cadre"}
 

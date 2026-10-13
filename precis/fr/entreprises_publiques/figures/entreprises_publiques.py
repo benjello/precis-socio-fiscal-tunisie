@@ -1078,15 +1078,6 @@ def table_encours():
                  "dont intérieur (MD)"])
 
 
-def tableau_encours(caption: str, tbl_id: str = "tbl-ep-encours") -> None:
-    lignes = [[l[0], _n(l[1]), _n(l[2]), _n(l[3]), _n(l[4]), _n(l[5])]
-              for l in _lignes_encours()]
-    _md(["Fin d'année", "Encours garanti<br>(MD courants)",
-         "Encours garanti<br>(% des dépenses de l'État)", "Encours garanti<br>(% du PIB)",
-         "dont extérieur<br>(MD)", "dont intérieur<br>(MD)"], "g" + "d" * 5, lignes, caption,
-        tbl_id)
-
-
 def _fig_dividendes(mesure: str):
     figtools.apply_lang_font()
     fig, ax = plt.subplots(figsize=(9.2, 4.8))
