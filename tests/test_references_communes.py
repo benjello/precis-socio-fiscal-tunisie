@@ -1,18 +1,18 @@
-"""Les notices communes au marché du travail et aux rémunérations publiques sont identiques.
+"""Les notices citées par plusieurs volumes vivent au fonds commun, en un seul exemplaire.
 
 La convention collective des assurances est décrite dans deux volumes : sa chaîne d'avenants
 dans « Les rémunérations dans le secteur public », ses grilles dans l'annexe des conventions
-collectives du volume « Marché du travail ». Les clés `cc-assurances-*` sont donc tenues en
-double, à la main, dans les `references.json` des deux livres — en français et en arabe.
+collectives du volume « Marché du travail ». Ses clés `cc-assurances-*` ont longtemps été
+tenues en double, à la main, dans les `references.json` des deux livres ; le 13 octobre 2026,
+elles ont été versées au fonds commun (`precis/<langue>/references.json`) avec les autres
+références citées par plusieurs volumes.
 
-Rien ne signale qu'une des deux copies a été corrigée seule : les deux livres rendent, et la
-même clé donne alors deux notices différentes selon le volume. Ce test compare, pour chaque
-langue, toute clé présente dans les deux livres.
+Le premier test reste en garde : si une clé revient un jour dans les deux livres, ses deux
+copies doivent être identiques. Le deuxième vérifie que les clés des assurances sont bien au
+fonds commun et dans aucun des deux livres.
 
-Il ne porte que sur cette paire de livres. D'autres clés communes à d'autres volumes
-divergent déjà (relevé du 9 octobre 2026 : `loi86-106-lf1987`, `loi57-73`,
-`loi-2007-70-lf-2008`, `lfc-2012`, `ins-annuaire` ; en arabe, aussi `loi59-45` et
-`loi86-86`) : elles ne sont pas contrôlées ici.
+Restent en double hors de cette paire, relevé du 13 octobre 2026 : `lfc-2012` (fiscalité et
+finances locales), `decret80-75` et `lf-1996` (fonds commun et un livre).
 """
 
 import json
@@ -42,15 +42,17 @@ class NoticesCommunes(unittest.TestCase):
                         f"{cle} ({langue}) : la notice diffère entre {LIVRES[0]} et "
                         f"{LIVRES[1]} ; recopier à l'identique la copie corrigée")
 
-    def test_les_clés_des_assurances_sont_bien_dans_les_deux_livres(self):
-        # Sans clé commune, le test ci-dessus passerait à vide.
+    def test_les_clés_des_assurances_sont_au_fonds_commun(self):
         for langue in LANGUES:
-            ici, ailleurs = (notices(langue, livre) for livre in LIVRES)
-            communes = {cle for cle in set(ici) & set(ailleurs)
-                        if cle.startswith("cc-assurances-")}
+            with (PRECIS / langue / "references.json").open(encoding="utf-8") as f:
+                commun = {notice["id"] for notice in json.load(f)["items"]}
+            assurances = {cle for cle in commun if cle.startswith("cc-assurances-")}
             with self.subTest(langue=langue):
-                self.assertIn("cc-assurances-avenant11-grille-2015", communes)
-                self.assertGreaterEqual(len(communes), 18)
+                self.assertIn("cc-assurances-avenant11-grille-2015", assurances)
+                self.assertGreaterEqual(len(assurances), 18)
+                for livre in LIVRES:
+                    self.assertFalse(assurances & set(notices(langue, livre)),
+                                     f"{livre} ({langue}) garde une copie d'une clé du fonds commun")
 
     def test_les_deux_langues_tiennent_les_mêmes_clés_communes(self):
         communes = []
