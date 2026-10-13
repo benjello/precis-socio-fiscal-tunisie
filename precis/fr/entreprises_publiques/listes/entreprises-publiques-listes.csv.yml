@@ -1,0 +1,41 @@
+# Manifeste du relevé « entreprises publiques nommées par les décrets de tutelle et par le
+# rapport du ministère des Finances, 1998-2021 ».
+#
+# Fichier lu par figures/listes.py (figure du périmètre, tableau d'ensemble de l'annexe).
+# Il transcrit la colonne des entreprises publiques du tableau qui désigne le ministère de
+# tutelle (décrets n° 98-1172, n° 2002-2200, n° 2005-910 ; état de ce dernier après ses
+# modifications jusqu'au décret n° 2010-3170) et le tableau nominatif du rapport sur les
+# entreprises publiques annexé au projet de loi de finances pour 2021 (p. 9-12).
+# Source de la transcription : docs/notes/entreprises-publiques-liste-2026-10-13.md, § 3.
+#
+# LES NOMBRES SONT COMPTÉS SUR LES LISTES : 123, 105, 104, 105 et 110 (tests/test_listes_
+# entreprises_publiques.py). Les lignes « etablissement_public = oui » redonnent l'état de
+# la liste des établissements aux mêmes dates : 42, 44, 44 et 46.
+# L'ÉTAT DE 2010 tient pour inchangée toute ligne qu'aucun décret ne réécrit après 2005.
+# UNE LIGNE RÉUNIT PARFOIS DEUX NOMS que seul le rapprochement des noms relie (note, § 3) :
+# si l'identité tombe, les totaux ne changent pas, le raccord compte une sortie et une entrée
+# de plus.
+
+format: long
+cle_de_ligne: [rang, liste]
+
+colonnes:
+  rang: ordre de la ligne dans le tableau de l'annexe
+  entreprise: nom retenu pour la ligne
+  tutelle: groupe de ministères de tutelle sous lequel la ligne est rangée
+  liste: année de la liste (1998, 2002, 2005, 2010 pour l'état de fin 2010, 2021 pour le rapport)
+  presente: oui si l'entreprise figure sur la liste
+  etablissement_public: oui si elle est alors un établissement public inscrit sur la liste des établissements considérés comme entreprises publiques
+  nombre: nombre d'entreprises que la ligne réunit (douze sociétés régionales de transport, trois sociétés immobilières) ; 0 si absente
+  nom_dans_la_liste: nom imprimé quand il diffère du nom retenu
+  note: précision portée par la source
+  texte: clé de citation
+
+sources:
+  - decret98-1172
+  - decret2002-2200
+  - decret2005-910
+  - decret2007-2561
+  - decret2010-90
+  - decret2010-3170
+  - minfin-entreprises-publiques-lf2021

@@ -4318,3 +4318,39 @@
     الأخيرة من كلّ طبعة وقتية أو تقديرية أو محتملة في الغالب. البنوك والصناديق الاجتماعية
     خارج عيّنة الأربعين. تعريف عدد الأعوان غير مذكور. قُرئت من الصورة.'
   fiche: sources/entreprises-publiques.md
+- id: privatisation-recueil-operations
+  titre: 'Opérations de privatisation et de restructuration, une ligne par opération
+    du « Recueil des opérations depuis 1998 » : société, année de cession, mode, produit,
+    acquéreur, 1998-2008'
+  sources:
+  - dgpv-recueil-operations-depuis-1998
+  build: uv run python scripts/build_privatisation_recueil.py
+  raw:
+  - sources/transcriptions/privatisation-recueil-operations.csv
+  output: data/processed/entreprises-publiques/privatisation_recueil_operations_1998_2008.csv
+  unite: milliers de dinars courants (produit de l'opération)
+  perimetre: 'Présidence du gouvernement, Direction générale de la privatisation,
+    « Recueil des opérations depuis 1998 », quatorze pages par secteur consultées
+    le 13 octobre 2026 : 162 lignes pour 132 sociétés ; société, sigle, produit, année
+    de cession, mode de privatisation ou de restructuration, acquéreur ; une ligne
+    par ligne du recueil'
+  caveats: 'UNE OPÉRATION N''EST PAS UNE SORTIE DU SECTEUR PUBLIC : le recueil range
+    des cessions de blocs minoritaires, des ventes d''actifs par des entreprises restées
+    publiques (banques, offices), des concessions, des ventes de participations de
+    banques publiques. UNE LIGNE RÉUNIT PARFOIS PLUSIEURS OPÉRATIONS ET PLUSIEURS
+    ANNÉES (`annee_imprimee` garde « 1999 ; 2000 ; 2004 » ; `annee_debut` et `annee_fin`
+    en sont les bornes). Une ligne sans nom est la suite de la société du dessus (`suite`).
+    LE RECUEIL NE DIT PAS SA DATE D''ARRÊT : dernière année de cession 2008. Rien
+    avant 1998. Aucune capture aux archives du web : les pages enregistrées sont la
+    seule copie. Les acquéreurs sont repris tels qu''imprimés. La page « Autres services
+    » intitule sa troisième colonne « Nombre d''opérations » ; ses lignes portent
+    le produit puis l''année, comme les autres. LU PAR PROGRAMME.'
+  titre_ar: 'عمليات التخصيص وإعادة الهيكلة، سطر لكل عملية من «مجموعة العمليات منذ
+    1998»: المنشأة، سنة التفويت، الطريقة، المحصول، المقتني، 1998-2008'
+  unite_ar: بالألف دينار الجاري
+  perimetre_ar: 'رئاسة الحكومة، الإدارة العامة للتخصيص، مجموعة العمليات منذ 1998،
+    أربع عشرة صفحة حسب القطاع: 162 سطراً لـ132 منشأة'
+  caveats_ar: 'العملية ليست خروجاً من القطاع العمومي: تشمل المجموعة تفويتاً في حصص
+    أقلية وبيع أصول ولزمات. قد يجمع السطر عدة عمليات وعدة سنوات. لا تذكر المجموعة
+    تاريخ توقفها: آخر سنة 2008.'
+  fiche: sources/entreprises-publiques.md

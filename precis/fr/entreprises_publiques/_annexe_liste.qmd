@@ -1,0 +1,202 @@
+# La liste des entreprises publiques, 1997-2021 {#sec-ep-liste .domicile-unique}
+
+Cette annexe nomme les entreprises publiques et suit leurs entrées et leurs sorties, de 1997 à 2021. Elle donne le nombre d'entreprises à chaque liste, les noms qui entrent et qui sortent d'une liste à la suivante, puis, dans des blocs repliés, le tableau complet, entreprise par entreprise.
+
+Trois listes servent à ce suivi.
+
+- **La liste des établissements publics considérés comme entreprises publiques.** Un établissement public à caractère non administratif n'est une entreprise publique que s'il est inscrit sur une liste fixée par décret. Cette liste est fixée en [1997](#r-epl-1997), refaite en [1999](#r-epl-1999), en [2002](#r-epl-2002-liste) et en [2004](#r-epl-2004-liste), et modifiée jusqu'en [octobre 2007](#r-epl-2007-onfp).
+- **Le tableau de tutelle.** Un décret désigne, pour chaque entreprise publique, le ministère qui exerce la tutelle : il énumère donc toutes les entreprises publiques, sociétés comprises. Ce tableau est fixé en [1998](#r-epl-1998), refait en [2002](#r-epl-2002) et en [2005](#r-epl-2005), et modifié jusqu'en [décembre 2010](#r-epl-2010-b).
+- **Le recensement du ministère des Finances.** Le rapport sur les entreprises publiques annexé au projet de loi de finances pour 2021 imprime la liste des entreprises, par ministère de tutelle et par domaine d'activité [@minfin-entreprises-publiques-lf2021, p. 9-12]. C'est un recensement administratif, non une liste fixée par décret.
+
+## Le périmètre en nombre {#sec-ep-liste-nombre}
+
+Le nombre d'entreprises publiques passe de 123 en 1998 à 105 en 2002, puis reste entre 104 et 110 jusqu'en 2021 (@fig-ep-liste-perimetre).
+
+```{python}
+#| label: fig-ep-liste-perimetre
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import listes as ls
+ls.figure(
+    caption=("Le nombre d'entreprises publiques d'après les décrets de tutelle (1998-2010) et "
+             "le rapport du ministère des Finances (2021), et, parmi elles, le nombre "
+             "d'établissements publics inscrits sur la liste fixée par décret (1997-2007)"),
+    note_lecture=(
+        "En bleu, les entreprises publiques que nomme le tableau de tutelle, aux trois dates "
+        "où un décret le fixe en entier : 1998, 2002 et 2005. La marque creuse de 2010 est "
+        "le tableau de 2005 après ses modifications : les décrets qui le modifient ne "
+        "réécrivent que certaines lignes, et une ligne qu'aucun d'eux ne réécrit y est "
+        "tenue pour inchangée. En orange, le nombre d'entreprises que recense le rapport "
+        "du ministère des Finances pour 2021 : c'est une autre source, qui se compare aux "
+        "décrets sans s'y raccorder, et aucun trait ne les relie. En vert, les "
+        "établissements publics inscrits sur la liste des établissements considérés comme "
+        "entreprises publiques, de 1997 à octobre 2007 : ils sont comptés dans les "
+        "entreprises du tableau de tutelle. Les nombres sont comptés ici sur les listes, "
+        "qui ne publient aucun décompte."))
+```
+
+- **Dix-huit entreprises de moins entre 1998 et 2002.** Le tableau de tutelle en nomme 123 en 1998 et 105 en 2002 : 26 n'y sont plus, 8 y entrent. C'est le seul mouvement de cette ampleur sur la période.
+- **Un périmètre stable ensuite.** Le tableau en nomme 104 en 2005 et 105 fin 2010 ; le rapport du ministère en recense 110 pour 2021, dont 64 sociétés anonymes et 46 établissements publics, 71 à participation directe de l'État et 39 à participation indirecte [@minfin-entreprises-publiques-lf2021, p. 7-8].
+- **Les établissements publics passent de 41 à 46.** La liste en compte 41 en 1997, 44 de 1999 à 2004, 46 en octobre 2007. Le rapport pour 2021 compte lui aussi 46 établissements publics.
+- **Les listes ne donnent ni la date ni la cause d'une sortie.** Une entreprise qui figure sur une liste et plus sur la suivante est sortie du périmètre entre les deux dates ; les listes ne disent pas si elle a été cédée, dissoute, fusionnée, ou si la part publique de son capital est passée sous le seuil de la loi. Pour quinze sorties, le recueil des opérations de la Direction générale de la privatisation donne l'année et le mode d'une cession (@sec-ep-liste-sorties-recueil). Les recettes des cessions sont données au chapitre de la relation financière (@sec-ep-cessions).
+
+## Les entrées et les sorties, liste après liste {#sec-ep-liste-mouvements}
+
+Chaque période compare deux listes successives du tableau de tutelle, puis l'état de fin 2010 au rapport pour 2021.
+
+### De 1998 à 2002 : 26 sorties, 8 entrées
+
+Figurent au tableau de [1998](#r-epl-1998) et plus à celui de [2002](#r-epl-2002) :
+
+- **quatre banques** : la Banque de développement économique de Tunisie, la Banque nationale de développement touristique, l'Union internationale de banques, la Banque franco-tunisienne ;
+- **deux sociétés d'assurance** : la Société tunisienne de réassurance et la société « LLOYD » ;
+- **six entreprises des matériaux de construction et de l'équipement industriel** : les cimenteries de Gabès, d'Enfidha et de Jebel Ouest, la société des ciments artificiels tunisiens, la Société tunisienne des industries des matériaux de construction, la Société industrielle d'appareillage et de matériels électriques ;
+- **quatre entreprises du bâtiment et de l'immobilier** : Le bâtiment, la Société régionale des travaux publics, El Isken, la Société immobilière de Tunisie ;
+- **cinq entreprises du tourisme et des loisirs** : TRANSTOURS, Africanova-Korba, Montazah Gammarth, la Société de gestion des hôtels et restaurants d'application, la Foire nationale de Bizerte ;
+- **cinq autres** : la Société tunisienne d'entreprises de télécommunications, l'Office national des pêches, la Société nationale de motoculture, GRAFOUPAST, Publi-promotion.
+
+Y entrent : la Société des services nationaux et des résidences, l'Imprimerie officielle de la République tunisienne, l'Agence tunisienne de solidarité, Tunisie trade net, l'Office national des postes, l'Agence technique des transports terrestres, la société Tunisie-Autoroutes et la Société de loisirs touristiques.
+
+Deux offices en remplacent deux autres, hors de ce décompte : l'Office des ports aériens de Tunisie et l'Office des ports nationaux tunisiens figurent au tableau de [1998](#r-epl-1998) et plus à celui de [2002](#r-epl-2002), où paraissent l'Office de l'aviation civile et des aéroports et l'Office de la marine marchande et des ports. Les tableaux ne disent pas que les uns succèdent aux autres (@sec-ep-liste-etablissements). Le tableau complet compte donc 28 lignes qui sortent et 10 qui entrent.
+
+### De 2002 à 2005 : 3 sorties, une fusion, 3 entrées
+
+- **Sorties** : la Société tunisienne de construction et de réparations mécaniques et navales, la Société Soukra des loisirs, la Société hôtelière et touristique du Nord-Ouest.
+- **Fusion** : la Société nationale des transports et la Société du métro léger de Tunis, deux lignes en 2002, n'en font plus qu'une au tableau de [2005](#r-epl-2005). La liste des établissements de [2004](#r-epl-2004-liste) vise [la loi du 28 avril 2003](#r-epl-loi-2003) relative à leur fusion.
+- **Entrées** : la Banque de financement des petites et moyennes entreprises, la Caisse nationale d'assurance maladie, la Société Golf Carthage.
+
+### De 2005 à fin 2010 : 3 sorties, 4 entrées
+
+- **Sorties** : le Complexe sucrier de Tunisie, la Société tunisienne de chaux et la Société de commercialisation des produits de l'artisanat ne figurent plus dans les lignes que réécrit [le décret d'octobre 2007](#r-epl-2007).
+- **Entrées** : la Radio tunisienne, la Télévision tunisienne et l'Office national de la famille et de la population en [2007](#r-epl-2007) ; la Société du réseau ferroviaire rapide de Tunis en [janvier 2010](#r-epl-2010).
+
+Le tableau de tutelle n'est pas suivi au-delà de [décembre 2010](#r-epl-2010-b) : aucun décret qui le modifie ou le remplace après cette date n'est identifié ici.
+
+<!-- RECHERCHE r-ep-tutelle-modificatifs-apres-2010 : décret modifiant ou remplaçant, après le décret n° 2010-3170 du 13 décembre 2010, le tableau de désignation de l'autorité de tutelle sur les entreprises publiques (voir docs/recherches.yml) -->
+
+### De fin 2010 au rapport pour 2021 : 6 noms absents, 11 nouveaux
+
+Le rapport du ministère des Finances pour 2021 n'est pas un décret : la comparaison dit quels noms diffèrent, sans dater aucun mouvement.
+
+- **Six noms du tableau de fin 2010 n'y sont pas** : la Société tunisienne d'assurance et de réassurance, la Compagnie tunisienne pour l'assurance du commerce extérieur, l'Agence tunisienne d'Internet, Promogolf Hammamet, Promogolf Monastir et Golf Carthage.
+- **Onze noms y paraissent** : l'Office national des postes frontaliers terrestres, la Société du métro léger de Sfax, la Société des marchés de production du centre de légumes et fruits, la Société tunisienne du tourisme des jeunes, la Société tunisienne de développement de golf, et six entreprises que le rapport range sous le titre de « créations nouvelles » [@minfin-entreprises-publiques-lf2021, p. 12].
+
+Le texte qui range l'Office national des postes frontaliers terrestres parmi les entreprises publiques n'est pas identifié ici.
+
+<!-- RECHERCHE r-onpft-classement-entreprise-publique : texte créant l'Office national des postes frontaliers terrestres et le classant, ou non, parmi les entreprises publiques (voir docs/recherches.yml) -->
+
+### L'année et le mode de la cession, pour quinze sorties {#sec-ep-liste-sorties-recueil}
+
+Quinze des 32 entreprises sorties du tableau de tutelle entre 1998 et fin 2010 figurent au recueil des opérations de privatisation et de restructuration pour une cession dont l'année est comprise entre celles des deux listes (@tbl-ep-liste-sorties-recueil). Ce recueil, tenu par la Direction générale de la privatisation, donne pour 132 sociétés l'année de cession, le mode, le produit et l'acquéreur de chaque opération, de 1998 à 2008 [@dgpv-recueil-operations].
+
+```{python}
+#| echo: false
+#| output: asis
+ls.tableau_sorties(
+    caption=("Les entreprises sorties du tableau de tutelle entre 1998 et fin 2010 qui figurent "
+             "au recueil des opérations de la Direction générale de la privatisation : année "
+             "de cession, opération et produit, tels que le recueil les imprime. Produit en "
+             "millions de dinars courants, toutes lignes du recueil réunies pour une même "
+             "entreprise. Source : @dgpv-recueil-operations"))
+```
+
+- **Six cessions d'actions portent sur la majorité ou la totalité du capital.** Les quatre cimenteries sont vendues en 1998 et en 2000, pour 87,9 % à 100 % de leur capital ; la société « LLOYD » l'est en 2001 pour 99,17 %, l'Union internationale de banques en 2002 pour 52 %.
+- **Huit sorties sont des ventes d'actifs ou des concessions.** Pour l'Office national des pêches, la Société régionale des travaux publics, Le bâtiment et Publi-promotion, le recueil porte la mention « Liquidation en cours ».
+- **Une cession reste partielle.** Pour la Société industrielle d'appareillage et de matériels électriques, le recueil porte en 1999 la vente de 20 % du capital et une offre publique de vente.
+- **Quatre cessions portent l'année même d'un décret.** Les cimenteries d'Enfidha et de Jebel Ouest sont cédées en 1998, l'année du tableau du [25 mai 1998](#r-epl-1998) ; l'Union internationale de banques et Publi-promotion figurent au recueil en 2002, l'année du tableau du [7 octobre 2002](#r-epl-2002). Le recueil ne donne que l'année : il ne situe pas ces cessions avant ou après le décret.
+- **Une opération ne date pas la sortie.** Le recueil ne donne ni la part de l'État après l'opération, ni la date à laquelle l'entreprise cesse d'être publique. Le Complexe sucrier de Tunisie y figure en 2003 et la Société de commercialisation des produits de l'artisanat en 2004 : toutes deux sont encore au tableau de [2005](#r-epl-2005).
+
+Le recueil ne porte aucune opération sous le nom des quinze autres sorties : la Banque de développement économique de Tunisie, la Banque nationale de développement touristique, la Banque franco-tunisienne, la Société tunisienne de réassurance, la Société tunisienne d'entreprises de télécommunications, la Société tunisienne des industries des matériaux de construction, GRAFOUPAST, Montazah Gammarth, la Société de gestion des hôtels et restaurants d'application, Africanova-Korba, la Foire nationale de Bizerte, El Isken, la Société immobilière de Tunisie, la Société Soukra des loisirs et la Société hôtelière et touristique du Nord-Ouest. Sa dernière année de cession est 2008 : il ne dit rien des six noms absents du rapport pour 2021.
+
+<!-- TODO (documentaliste) : docs/notes/entreprises-publiques-liste-2026-10-13.md, § 3 à § 5. (1) Sorties sans opération au recueil de la Direction générale de la privatisation (quinze noms, section « L'année et le mode de la cession ») : chercher le texte de fusion, de dissolution ou de cession de chacune (lois de fusion des banques de développement, décrets de dissolution, avis de la Bourse). Rapprochements sur le seul nom dans le relevé listes/sorties-recueil-privatisation.csv : « Société Tunisienne de Motoculture » (SONAM) pour la Société nationale de motoculture, « Bâtiment » pour la Société le bâtiment. Non retenu : « Parc La Soukra », concession de 2003 à la « Société Montazah Carthage », que rien ne relie à la Société Soukra des loisirs. Noms voisins écartés, à trancher par un texte : « Société Immobilière et Touristique de Tunisie » (SITT, vente d'éléments d'actif, 1999) face à la Société immobilière de Tunisie ; « Société Immobilière de l'Union du Bâtiment » (SIUB, 2002) face à El Isken et à la Société le bâtiment ; « Star Immobilière » (2002) face à la Société tunisienne d'assurance et de réassurance. Quatre cessions portent l'année même d'un décret (1998, 2002) : le mois de la cession les situerait. Le recueil ne dit pas sa date d'arrêt (dernière cession : 2008) ; aucune capture aux archives du web. (2) Agence tunisienne d'Internet : un rapport de la Cour des comptes publié au JORT n° 93 de 2008 la dit sortie du périmètre après la cession d'une partie du capital de Tunisie Télécom, alors que la ligne du tableau de tutelle où elle figure n'est jamais réécrite après 2005 — contradiction non tranchée ; page du rapport à relever. (3) Listes nominatives des rapports du ministère pour 2022 à 2025 (111, 111, 114, 115 entreprises) : non dépouillées. (4) Identités retenues sur le seul rapprochement des noms, à établir par un texte : Société tunisienne de l'air / « Société Tunis air » ; Centre d'études et de recherches aéronautiques / « Centre des recherches et études aériennes » ; Société Promosport / « Société de promotion du sport » ; Société des courses / « Société des courses Tunis » ; Société nationale de distribution de pétrole / « des pétroles AGIL » ; Société de stockage d'hydrocarbure et de transport par pipe-line / « Société tunisienne de transport par pipes lines » (la plus fragile) ; Société Montazah Soukra (1998) / Société Soukra des loisirs (2002) ; « transport du grand Tunis » (liste de 2004) / « Société des Transports de Tunis » (tableau de 2005). (5) Forme (société anonyme ou établissement) et participation (directe ou indirecte) par entreprise : le rapport pour 2021 ne les donne qu'en nombres. (6) Lois n° 2004-30 et n° 2007-33 : références prises à l'index, textes à lire avant de leur attribuer quoi que ce soit. -->
+
+## Les établissements publics considérés comme entreprises publiques {#sec-ep-liste-etablissements}
+
+De 1997 à octobre 2007, sept décrets fixent ou modifient la liste après le premier.
+
+| Année | Entrent | Sortent | Établissements |
+|---|---|---|---:|
+| [1997](#r-epl-1997) | première liste | | 41 |
+| [1998](#r-epl-1998-liste) | Centre de promotion des exportations | | 42 |
+| [1999](#r-epl-1999) | Imprimerie officielle de la République tunisienne ; Agence technique du transport terrestre ; Office national des postes ; Office de l'aviation civile et des aéroports ; Office de la marine marchande et des ports | Société nationale de distribution du pétrole ; Office des ports aériens de Tunisie ; Office des ports nationaux tunisiens | 44 |
+| [2002](#r-epl-2002-liste) | Agence tunisienne de solidarité ; Société des courses | Société nationale de motoculture ; Office national des pêches | 44 |
+| [2004](#r-epl-2004-liste) | Caisse nationale d'assurance maladie ; « transport du grand Tunis » | Société nationale des transports ; Société du métro léger de Tunis | 44 |
+| [2006](#r-epl-2006) | | Société nationale des télécommunications (Tunisie Télécom) | 43 |
+| [juillet 2007](#r-epl-2007-radio) | Radio tunisienne ; Télévision tunisienne | | 45 |
+| [octobre 2007](#r-epl-2007-onfp) | Office national de la famille et de la population | | 46 |
+
+: Les entrées et les sorties de la liste des établissements publics à caractère non administratif considérés comme entreprises publiques, 1997-2007. Les décrets sont au registre replié à la fin de l'annexe. {#tbl-ep-liste-etablissements-mouvements}
+
+- **Sortir de la liste n'est pas sortir du périmètre.** La Société nationale de distribution du pétrole quitte la liste des établissements en 1999 et reste au tableau de tutelle parmi les entreprises publiques en 2002, en 2005 et dans le rapport pour 2021 : elle n'est plus inscrite parmi les établissements et reste une entreprise publique. Tunisie Télécom, retirée de la liste en 2006, reste de même au tableau de tutelle. En sens inverse, la Société des courses est au tableau de 1998 avant d'entrer dans la liste des établissements en 2002.
+- **En 1999, deux offices entrent quand deux autres sortent.** L'Office de l'aviation civile et des aéroports et l'Office de la marine marchande et des ports paraissent quand l'Office des ports aériens et l'Office des ports nationaux disparaissent ; la liste ne dit pas que les uns succèdent aux autres.
+- **De 2019 à 2024, au moins cinq établissements entrent par leur propre décret.** Aucun décret modifiant la liste après octobre 2007 n'est identifié ici. Cinq établissements sont classés entreprises publiques par une disposition de leur propre décret : l'Office national de la propriété foncière en [2019](#r-epl-2019), le Centre d'études et de recherches des télécommunications en [2023](#r-epl-2023), puis, en 2024, [l'Office national des fourrages](#r-epl-2024-fourrages), [l'Office de développement du sud et du Sahara](#r-epl-2024-sud) et [l'établissement de la cité médicale des Aghlabides à Kairouan](#r-epl-2024-kairouan). Le rapport du ministère pour 2021 compte 46 établissements, soit l'état de la liste en octobre 2007 : l'Office national de la propriété foncière n'y figure pas.
+
+<!-- RECHERCHE r-epna-liste-modificatifs-apres-2007 : décret modifiant la liste des établissements publics non administratifs considérés comme entreprises publiques après 2007 (voir docs/recherches.yml) -->
+
+## Une liste partielle, 1989-1990 {#sec-ep-liste-1989}
+
+En 1989 et en 1990, deux décrets fixent la liste d'une seule catégorie d'entreprises publiques : celles qui sont « considérées comme publiques compte tenu de la nature de leurs activités et de la structure de leur capital », que [la loi de 1989](#r-epl-loi-1989) fait désigner par décret. Les offices et les sociétés que la loi range d'elle-même parmi les entreprises publiques n'y sont pas.
+
+- **Vingt-deux entreprises en mars 1989.** [La liste](#r-epl-1989) nomme dix entreprises de la chimie et des mines, trois du transport, quatre banques, trois sociétés d'assurance, la Maison arabe du livre et la Société tunisienne du sucre ; l'Union internationale de banques y est ajoutée en [juillet 1989](#r-epl-1989-b).
+- **Quatorze en septembre 1990.** [La liste refaite](#r-epl-1990) garde les banques et les assureurs, ne garde que deux des dix entreprises de la chimie et des mines, et ajoute la société Ibn Khaldoun pour la production audio-visuelle.
+
+:::: {.chronologie-repliable titre="Entreprises publiques : tableau complet, entreprise par entreprise, aux listes de 1998, 2002, 2005, fin 2010 et 2021 ; établissements publics aux huit états de leur liste, 1997-2007 ; entreprises des listes de 1989 et 1990 ; registre des décrets"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import listes as ls
+ls.tableau_ensemble(
+    caption=("Les entreprises publiques au tableau de tutelle de 1998, de 2002 et de 2005, à "
+             "son état de fin 2010, et au rapport du ministère des Finances pour 2021, par "
+             "ministère de tutelle. « ✓ » : l'entreprise figure sur la liste ; « É » : elle y "
+             "figure et est alors un établissement public inscrit sur la liste des "
+             "établissements considérés comme entreprises publiques ; « — » : elle n'y figure "
+             "pas ; un nombre entre parenthèses compte les sociétés réunies sur une ligne. Le "
+             "rapport pour 2021 ne distingue pas les établissements. Sources : décrets au "
+             "registre ci-dessous ; rapport sur les entreprises publiques "
+             "[@minfin-entreprises-publiques-lf2021, p. 9-12]"))
+ls.tableau_etablissements(
+    caption=("Les établissements publics à caractère non administratif considérés comme "
+             "entreprises publiques, aux huit états de la liste, 1997-2007, sous le nom "
+             "imprimé dans la première liste où ils figurent. Sources : décrets au registre "
+             "ci-dessous"))
+```
+
+**Liste de mars 1989** (22 entreprises), avec le ministère de tutelle. Énergie et mines : Société industrielle d'acide phosphorique et d'engrais ; Société « les industries chimiques maghrébines » ; Société « engrais de Gabès » ; Compagnie minière du nord-ouest ; Industries chimiques de Gafsa ; Société de développement des industries chimiques du sud ; Industrie chimique du fluor ; Société minière de spath-fluor et de barytine ; Société tunisienne d'engrais chimiques ; Société « granuphos ». Transport : Société tunisienne d'acconage et de manutention ; Société « Gabès-chimie transport » ; Société tuniso-libyenne de transport. Affaires culturelles : Maison arabe du livre. Agriculture : Société tunisienne du sucre. Finances : Société tunisienne de banque ; Banque du sud ; Banque de développement économique de Tunisie ; Banque nationale de développement touristique ; Société tunisienne d'assurance et de réassurance ; Société tunisienne de réassurance ; Société tunisienne d'assurance Lloyd.
+
+**Liste de septembre 1990** (14 entreprises) : Compagnie minière du nord-ouest ; Société tunisienne d'engrais chimiques ; Société tunisienne d'acconage et de manutention ; Société « Gabès-chimie transport » ; Société tunisienne de banque ; Banque du sud ; Banque de développement économique de Tunisie ; Banque nationale de développement touristique ; Société tunisienne d'assurance et de réassurance ; Société tunisienne de réassurance ; Société tunisienne d'assurance Lloyd ; Union internationale de banques ; Maison arabe du livre ; Société Ibn Khaldoun pour la production audio-visuelle.
+
+| Année | Texte | Ce qu'il fixe | Nombre |
+|---|---|---|---:|
+| []{#r-epl-loi-1989}1989 | loi n° 89-9 du [1^er^ février 1989]{.insecable} [@loi89-9, art. 9, p. 203-205] | des entreprises peuvent être considérées comme publiques « compte tenu de la nature de leurs activités et de la structure de leur capital » ; un décret en fixe la liste | — |
+| []{#r-epl-1989}1989 | décret n° 89-376 du [11 mars 1989]{.insecable} [@decret89-376, p. 627] | liste des entreprises considérées comme publiques compte tenu de la nature de leurs activités et de la structure de leur capital, avec leur ministère de tutelle | 22 |
+| []{#r-epl-1989-b}1989 | décret n° 89-1046 du [26 juillet 1989]{.insecable} [@decret89-1046, p. 1218] | la même liste : + Union internationale de banques | 23 |
+| []{#r-epl-1990}1990 | décret n° 90-1404 du [5 septembre 1990]{.insecable} [@decret90-1404, p. 1332-1333] | nouvelle liste, qui abroge celle de 1989 | 14 |
+| []{#r-epl-1997}1997 | décret n° 97-564 du [31 mars 1997]{.insecable} [@decret97-564, p. 565] | liste des établissements publics à caractère non administratif considérés comme entreprises publiques | 41 |
+| []{#r-epl-1998-liste}1998 | décret n° 98-752 du [30 mars 1998]{.insecable} [@decret98-752, p. 692] | liste des établissements : + Centre de promotion des exportations | 42 |
+| []{#r-epl-1998}1998 | décret n° 98-1172 du [25 mai 1998]{.insecable} [@decret98-1172, p. 1218-1220] | tableau de tutelle des entreprises publiques, seize ministères ; tutelle du ministère du Développement économique sur toute entreprise dont la privatisation est décidée (art. 2) | 123 |
+| []{#r-epl-1999}1999 | décret n° 99-2378 du [27 octobre 1999]{.insecable} [@decret99-2378, p. 2265] | liste des établissements, refaite | 44 |
+| []{#r-epl-2002-liste}2002 | décret n° 2002-2199 du [7 octobre 2002]{.insecable} [@decret2002-2199, p. 2371] | liste des établissements, refaite | 44 |
+| []{#r-epl-2002}2002 | décret n° 2002-2200 du [7 octobre 2002]{.insecable} [@decret2002-2200, p. 2371-2377] | tableau de tutelle, refait en deux colonnes : entreprises publiques ; autres établissements publics à caractère non administratif | 105 |
+| []{#r-epl-loi-2003}2003 | loi n° 2003-33 du [28 avril 2003]{.insecable} [@loi2003-33] | fusion de la Société nationale des transports et de la Société du métro léger de Tunis ; la loi est connue ici par le visa du décret n° 2004-2265 | — |
+| []{#r-epl-2004-liste}2004 | décret n° 2004-2265 du [27 septembre 2004]{.insecable} [@decret2004-2265, p. 2805-2806] | nouvelle liste des établissements, qui abroge celle de 1997 | 44 |
+| []{#r-epl-2004}2004 | décret n° 2004-2266 du [27 septembre 2004]{.insecable} [@decret2004-2266, p. 2806-2807] | tableau de tutelle : trois lignes mises en accord avec la liste de 2004 | — |
+| []{#r-epl-2005}2005 | décret n° 2005-910 du [24 mars 2005]{.insecable} [@decret2005-910, p. 844-850] | tableau de tutelle, refait | 104 |
+| []{#r-epl-2006}2006 | décret n° 2006-2579 du [2 octobre 2006]{.insecable} [@decret2006-2579, p. 3492] | liste des établissements : − Société nationale des télécommunications (Tunisie Télécom) | 43 |
+| []{#r-epl-2007-radio}2007 | décret n° 2007-1865 du [23 juillet 2007]{.insecable} [@decret2007-1865, p. 2588] | liste des établissements : + Radio tunisienne, + Télévision tunisienne | 45 |
+| []{#r-epl-2007-onfp}2007 | décret n° 2007-2560 du [23 octobre 2007]{.insecable} [@decret2007-2560, p. 3580] | liste des établissements : + Office national de la famille et de la population | 46 |
+| []{#r-epl-2007}2007 | décret n° 2007-2561 du [23 octobre 2007]{.insecable} [@decret2007-2561, p. 3580-3583] | tableau de tutelle : lignes réécrites, avec la Radio, la Télévision et l'Office national de la famille et de la population, sans le Complexe sucrier de Tunisie, la Société tunisienne de chaux ni la Société de commercialisation des produits de l'artisanat | — |
+| []{#r-epl-2010}2010 | décret n° 2010-90 du [20 janvier 2010]{.insecable} [@decret2010-90, p. 236-237] | tableau de tutelle : + Société du réseau ferroviaire rapide de Tunis | — |
+| []{#r-epl-2010-b}2010 | décret n° 2010-3170 du [13 décembre 2010]{.insecable} [@decret2010-3170, p. 3414] | tableau de tutelle : la Société de promotion des logements sociaux passe des Affaires sociales à l'Équipement | 105 |
+| []{#r-epl-2019}2019 | décret gouvernemental n° 2019-758 du [19 août 2019]{.insecable} [@decret-gouv2019-758, art. 1^er^, p. 2690 de l'édition arabe] | l'Office national de la propriété foncière, établissement public à caractère non administratif, est considéré comme entreprise publique | — |
+| []{#r-epl-2023}2023 | décret n° 2023-452 du [5 juin 2023]{.insecable} [@decret2023-452, art. 1^er^, p. 1625] | le Centre d'études et de recherches des télécommunications est considéré comme entreprise publique | — |
+| []{#r-epl-2024-fourrages}2024 | décret n° 2024-5 du [10 janvier 2024]{.insecable} [@decret2024-5, art. 1^er^, p. 109] | l'Office national des fourrages, créé par le décret, est considéré comme entreprise publique | — |
+| []{#r-epl-2024-sud}2024 | décret n° 2024-184 du [5 avril 2024]{.insecable} [@decret2024-184, art. 1^er^, p. 1190] | l'Office de développement du sud et du Sahara, créé par le décret, est considéré comme entreprise publique | — |
+| []{#r-epl-2024-kairouan}2024 | décret n° 2024-500 du [24 octobre 2024]{.insecable} [@decret2024-500, art. 1^er^, p. 5306 de l'édition arabe] | l'établissement de la cité médicale des Aghlabides à Kairouan, créé par le décret, est considéré comme entreprise publique | — |
+
+: Les textes qui fixent les listes d'entreprises publiques, 1989-2024. La dernière colonne donne le nombre d'entreprises ou d'établissements de la liste après le décret, compté ici ; un tiret quand le décret ne refait pas la liste entière et que le compte n'est pas refait à sa date. {#tbl-ep-liste-registre}
+
+::::

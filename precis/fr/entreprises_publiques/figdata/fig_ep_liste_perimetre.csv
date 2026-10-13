@@ -1,0 +1,20 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-13
+# séries (tunisia_data) : entreprises-publiques-listes, etablissements-entreprises-publiques
+# sources (citation) : @decret98-1172, @decret2002-2200, @decret2005-910, @decret2007-2561, @decret2010-90, @decret2010-3170, @minfin-entreprises-publiques-lf2021, @decret97-564, @decret98-752, @decret99-2378, @decret2002-2199, @decret2004-2265, @decret2006-2579, @decret2007-1865, @decret2007-2560
+# fiches : 
+# méthode/hypothèses : Nombres comptés sur les listes, qui ne publient aucun décompte. L'état de fin 2010 tient pour inchangée toute ligne qu'aucun décret ne réécrit après 2005. Le rapport pour 2021 est un recensement du ministère, non une liste fixée par décret : il se compare aux décrets sans s'y raccorder. Une entreprise absente d'une liste et présente dans la précédente est sortie du périmètre entre les deux dates ; les listes ne donnent ni la date ni le mode de la sortie., Après octobre 2007, aucun décret ne modifie la liste : un établissement y entre par une disposition de son propre décret, et ces entrées ne sont pas comptées ici.
+# note : Le nombre d'entreprises publiques d'après les décrets de tutelle (1998-2010) et le rapport du ministère des Finances (2021), et, parmi elles, le nombre d'établissements publics inscrits sur la liste fixée par décret (1997-2007)
+Liste,Année,Nombre
+Tableau de tutelle,1998,123
+Tableau de tutelle,2002,105
+Tableau de tutelle,2005,104
+"Tableau de tutelle, après modifications",fin 2010,105
+Rapport du ministère des Finances,2021,110
+Établissements publics considérés comme entreprises publiques,1997,41
+Établissements publics considérés comme entreprises publiques,1998,42
+Établissements publics considérés comme entreprises publiques,1999,44
+Établissements publics considérés comme entreprises publiques,2002,44
+Établissements publics considérés comme entreprises publiques,2004,44
+Établissements publics considérés comme entreprises publiques,2006,43
+Établissements publics considérés comme entreprises publiques,juillet 2007,45
+Établissements publics considérés comme entreprises publiques,octobre 2007,46
