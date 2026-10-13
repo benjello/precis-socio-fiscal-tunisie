@@ -102,7 +102,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et un chapitre transversal sur les dépenses fiscales et les régimes d'incitation (6 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
@@ -356,9 +356,12 @@ liste qui suit le tableau, citations comprises. Restent :
   estimations antérieures), chacune avec sa méthode. Disponibilités ci-dessous contrôlées le
   6 octobre 2026 (présence du fichier, `pdftotext` sur le fascicule entier) ; la page de
   l'article n'a pas été ouverte. Restent :
-  - **AR** : déclarer `_depenses_fiscales.qmd` dans `precis/ar/fiscalite/_quarto.yml`
-    (ligne commentée en place, après `_droits_consommation.qmd`) dès que la traduction est
-    livrée ;
+  - **AR** : déclarer `_regimes_incitation.qmd` PUIS `_depenses_fiscales.qmd` dans
+    `precis/ar/fiscalite/_quarto.yml` (ligne commentée en place, après
+    `_droits_consommation.qmd`), les deux ensemble et seulement quand les deux traductions
+    sont livrées : `_depenses_fiscales.qmd` renvoie à des ancres parties dans
+    `_regimes_incitation.qmd` (`sec-df-sommes-versees`, `sec-df-etudes`, `tbl-df-bm-cout`,
+    `tbl-df-reports`…), qui ne se résolvent pas sans lui ;
   - **clés à verser (bibliographe)** : loi n° 69-35 (JORT n° 24 de 1969, p. 766-769) et loi
     n° 74-74 (JORT n° 51 de 1974, p. 1744-1746), citées en clair au chapitre faute de clé ;
     ébauches au § 10.1 e de la note ;
@@ -379,10 +382,24 @@ liste qui suit le tableau, citations comprises. Restent :
     de la déduction de 50 % des exportateurs entre 1993 et 2006 non établi ;
   - **méthode des rapports PLF 2022 à 2025** : non établie (introduction et table des
     matières seules) ; données employées par le ministère non décrites dans le rapport 2021 ;
-  - **crédits budgétaires** des primes et des prises en charge de cotisations : non relevés
-    (fonds spéciaux du Trésor, budgets par mission, lois de règlement, comptes du Fonds
-    tunisien de l'investissement — à obtenir) ; le chapitre ne publie que les paiements
-    déclarés du rapport PLF 2021 ;
+  - **crédits budgétaires** : crédits de programmes du FOPRODI (1999-2019) et de la prise en
+    charge de la contribution patronale (1995-2019), de l'aide aux promoteurs touristiques (2010-2019) et du FONAPRA (2012-2019) relevés le 13 octobre 2026 aux
+    tableaux des crédits de programmes des lois de finances initiales, lus à l'image
+    (`#sec-df-foprodi` et `#sec-ri-credits-programmes` : deux figures à trois vues depuis le 13 octobre 2026 — millions de dinars, part des dépenses de l'État, part du PIB —, séries `jort-lf-credits-programmes-incitations` et `bct-foprodi-fonapra` de tunisia-data ; `docs/notes/fiscalite-incitations-second-passage-2026-10-13.md`) —
+    le tableau « ب » des fonds spéciaux n'était pas le bon. **Restent** : FOPRODI de 1995 à 1998 (pas de ligne au chapitre de
+    l'industrie ; autres chapitres non lus) ; loi de finances pour 1994 ; encouragements
+    à l'agriculture aux mêmes tableaux (trois séries qui ne s'enchaînent pas) ; FONAPRA 2010-2011 ;
+    exécution : les lois de règlement ne nomment aucune de ces lignes (lues le 13 octobre 2026) ;
+    à partir de 2020, le tableau n'existe plus (missions et programmes) ; budgets par ministère depuis 2013,
+    comptes du Fonds tunisien de l'investissement — **à obtenir** ou à transcrire ;
+  - **restes du 13 octobre 2026** : entrée de glossaire « crédits de programmes » — aucune
+    définition sourcée (la loi organique du budget n° 2004-42, lue par océrisation, ne la donne
+    pas ; loi n° 67-53 à lire à l'image) ; numéros et dates des lois de finances pour 2018, 2019
+    et 2020 repris de l'index du *Journal officiel*, à relire au fascicule ; libellés arabes des
+    figures `fig-ri-foprodi` et `fig-ri-credits-programmes` à verser
+    (`precis/fr/fiscalite/figures/credits_incitations.py`) avant la traduction du chapitre ;
+    repli du détail de `#sec-ri-2016-2017` et de `#sec-df-sommes-versees` proposé dans une PR
+    brouillon à part, à juger ;
   - **mentions dans les chapitres d'impôt (6 octobre 2026)** : chaque avantage établi par un
     texte est signalé, avec renvoi à `@sec-depenses-fiscales`, dans `_impot_societes.qmd`
     (paramètres d'origine, « 2017 », « 2019 », rendement), `_impot_revenu.qmd` (BIC,
@@ -409,20 +426,22 @@ liste qui suit le tableau, citations comprises. Restent :
     soutien des entreprises totalement exportatrices », `2014/fr/Jo1052014.pdf` ; à ouvrir
     pour confirmer qu'aucun texte n'a touché à l'échéance du 1er janvier 2014. LF 2014,
     art. 49-50 et 54 (`2013/fr/`, JORT n° 105) : connus par leur intitulé, non repris ;
-  - **zones de développement régional — lisible** : décret gouvernemental n° 2017-389,
-    `2017/fr/Jo0252017.pdf` ; loi n° 2019-47, `2019/fr/Jo0472019.pdf` (portée fiscale non
-    établie) ;
-  - **rapports annexés aux PLF 2022 et 2023 — à obtenir** : non archivés dans
-    `tunisia-data` (`data/raw/gbo/` ne porte que les rapports 2021, 2024 et 2025) ; adresses
-    sur gbo.tn dans la note, § 2.2, relevées le 5 octobre 2026 et non recontrôlées. Seule
-    leur introduction (p. 7) est connue. Rapport annexé au PLF 2026 : non cherché.
-    Existence d'un rapport pour les PLF 2019 et 2020 : non établie ;
+  - **rapport annexé au PLF 2026 — non trouvé** : absent, le 11 octobre 2026, de la rubrique
+    du portail gbo.tn et de la page « loi de finances » de finances.gov.tn (vues par année
+    non parcourues) ; à rechercher. Existence d'un rapport pour les PLF 2019 et 2020 : non
+    établie. Les rapports 2022 et 2023 sont dans `tunisia-data` depuis le 6 octobre 2026 ;
+    leur partie « dépenses fiscales » (périmètre, exercices, méthode) reste à lire ;
   - **série du coût à reconstruire, avec sa rupture de périmètre** : les rapports 2024 et
     2025 excluent les exonérations des médicaments et des engrais, que le rapport 2021
     compte (274,5 et 249,9 MD en 2019). Les deux CSV traités de `tunisia-data` cousent trois
     rapports sur cinq et portent cette rupture à la couture 2019/2020 ; le périmètre des
-    rapports 2022 et 2023 reste à lire. `figures/depenses_fiscales.py` n'est donc pas appelé
-    (docstring corrigé le 6 octobre 2026, code inchangé) et aucune figure n'est publiée.
+    rapports 2022 et 2023 reste à lire. `figures/depenses_fiscales.py` (les huit plus gros
+    dispositifs) n'est donc pas appelé. Depuis le 11 octobre 2026, `fig-df-total`
+    (`figures/depenses_fiscales_total.py`) publie le total par impôt **rapport par rapport,
+    sans chaînage**, en MD, en % des recettes fiscales et en % du PIB (INS, base 2015, non
+    rétropolé), les rapports 2022 et 2023 n'y figurant que par leur total d'introduction ;
+    les parts sont calculées, et ne coïncident pas toujours avec celles qu'impriment les
+    rapports (dénominateurs à établir : voir le TODO de `@sec-df-total`).
     La fiche `~/projets/tunisia-data/sources/gbo-depenses-fiscales.md` ne mentionne pas
     cette exclusion : à corriger dans ce dépôt-là ;
   - **écart sur l'exercice 2021** : 7 745 MD (rapport 2023) contre 5 871,5 et 5 872,3 MD
@@ -442,6 +461,68 @@ liste qui suit le tableau, citations comprises. Restent :
     relever sur l'image ;
   - **à croiser avec « Cotisations sociales »** : coût des prises en charge de cotisations
     patronales (code de 1993, art. 25 ; loi n° 99-59, connue par son intitulé).
+- **Scission en deux chapitres, au format « ruptures au premier plan » (11 octobre 2026)** :
+  `_regimes_incitation.qmd` (nouveau : vue d'ensemble, mise en place 1969-1974, grandes
+  réformes, état du droit en 2026, sommes versées et FOPRODI, commerce extérieur, études
+  extérieures) et `_depenses_fiscales.qmd` (resserré : la mesure du ministère des Finances).
+  Toutes les ancres `sec-df-…`, `tbl-df-…` et `fig-df-…` gardent leur nom ; les sections
+  sont à domicile unique (registres `r-ri-…` et `r-df-…`). Quatre relevés versionnés dans
+  `precis/fr/fiscalite/incitations/` alimentent les figures du texte (`fig-ri-frise`,
+  `fig-ri-prime`, `fig-ri-zones`, `fig-ri-ghazouani`). Restent :
+  - **ce que la loi cherche** : rubrique de l'article 37 de la loi de finances pour 2019
+    (fin du régime de l'exportation) et des articles 5 et 6 de la loi n° 2006-80, à relever
+    au fascicule (JORT lisibles au corpus, non ouverts pour cela) ;
+  - **figures écartées** : sommes versées « un point par rapport » (un à trois points par
+    périmètre : le tableau une colonne par rapport suffit) ; carte des délégations de 2017
+    (demande un fond de carte des délégations) ; budgétaire et études sur un même graphique
+    (périmètres à dire sur la figure) ;
+  - **dinars constants** : plafonds des primes et sommes versées en dinars courants
+    seulement — le chapitre n'a pas d'année de référence (point à trancher) ;
+  - **tableaux faits main** des barèmes des primes (`tbl-df-primes-…`) : à engendrer quand
+    les paramètres seront datés en amont.
+- **Primes, zones, sommes versées, commerce extérieur par régime (`_regimes_incitation.qmd`
+  depuis la scission ; écrit dans `_depenses_fiscales.qmd` le 11 octobre 2026)** sur la note `docs/notes/fiscalite-incitations-primes-zones-2026-10-11.md`
+  et les séries `gbo-avantages-financiers-par-rapport`, `bct-foprodi-fonapra` et
+  `ins-commerce-exterieur-par-regime` de `tunisia-data` (qui font foi quand elles divergent
+  de la note). Écrit : `@sec-df-loi-2019-47` (portée fiscale et financière de la loi
+  n° 2019-47) ; `@sec-df-primes-zones` (barème de 2011 → 2017, primes de la loi de 2016,
+  carte des zones 1994-2024, barèmes successifs, registre des décrets et listes nominatives
+  repliés) ; `@sec-df-sommes-versees` (cinq rapports, une colonne par rapport, 2018-2023) ;
+  `@sec-df-foprodi` (crédits votés, 1999-2019, et comptes de la BCT, 2016-2025, sur une même figure) ; `@sec-df-commerce-exterieur` (part du
+  régime off shore, 1998-2023, figure). Clos : décret gouvernemental n° 2017-389 et loi
+  n° 2019-47, lus. Restent :
+  - **que l'annexe n° 2 du décret n° 2017-389 vaille pour l'article 63 du code de l'impôt** :
+    établi par aucun texte lu (fiche `r-fisc-art63-decret-zones`) ; chercher la note commune
+    de la direction générale des impôts sur les articles 63 et 64 — hors corpus, à obtenir ;
+  - **dates d'effet de 1994 et de 1999** : mention de dépôt du JORT n° 21 de 1994 à lire sur
+    la page (`1994/fr/Jo02194.pdf`, lisible) ; articles 2 et suivants du décret n° 99-486
+    (`1999/fr/Jo02099.pdf`, couche texte à police décalée : à lire à l'image) ;
+  - **vingt décrets de retouche des zones et des primes (1995-2009)** et décret n° 2011-3197 :
+    intitulés seuls ; **rédactions des articles 23, 25 et 25 bis du code de 1993** entre 2005
+    et 2016 (durées de déduction et de prise en charge par catégorie de zones) : non lues ;
+  - **sommes versées avant 2016** : aucune série (FOPRODI : rien entre 1992 et 2015 ;
+    éditions 1977-1986 du rapport de la BCT à lire à l'image ; Cour des comptes, archives du
+    web de l'APII et de l'APIA non ouvertes) ; mise à niveau et primes agricoles avant 2018 :
+    néant ;
+  - **coût côté CNSS des prises en charge de la contribution patronale** : non établi (les
+    rapports comptent des sommes versées ou portées en dette de l'État) ; états financiers et
+    rapports d'activité de la CNSS, rapports annuels de performance de la mission Affaires
+    sociales — à obtenir ; cause de la chute de la ligne 031106 entre 2018 et 2019 non dite ;
+  - **nombre et emploi des entreprises totalement exportatrices** : rien dans `tunisia-data`,
+    non cherché en ligne (répertoire national des entreprises de l'INS, APII, FIPA, archives
+    du web) ;
+  - **définition des régimes « général » et « off shore » par l'INS** : non lue ; ventilation
+    par groupement sectoriel du tableau 14.2 non transcrite ; cause de la révision 2004-2005
+    du régime off shore non dite par l'annuaire ;
+  - **tableaux de barème faits main** (quatre) : à engendrer quand le barème sera versé en
+    amont (`docs/notes/backlog-modele.md`) ; **dinars constants** : le chapitre n'a pas
+    d'année de référence, les montants sont en dinars courants seulement — à trancher ;
+  - **glossaire** : entrées candidates non créées, faute d'arbitrage du terminologue —
+    prime de développement régional, FOPRODI, Fonds tunisien de l'investissement (termes
+    arabes relevés dans la note, § 3) ; la définition de « zones de développement régional »
+    n'est pas retouchée (terme arabe des « zones d'encouragement » de 1994-2016 non relevé) ;
+  - **AR** : les onze clés nouvelles de `precis/ar/fiscalite/references.json` gardent leur
+    intitulé français (l'index ne porte l'intitulé arabe que pour la loi n° 2019-47).
 - **Forme de `_impot_revenu.qmd` : rien à reprendre.** Ses titres ont été remontés d'un cran
   et il a reçu sa section « La longue période ». La réorganisation par réforme, un temps
   envisagée, a été écartée après lecture — voir « Forme des chapitres » plus bas, qui en
@@ -1516,7 +1597,7 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 
 6. Droits d'enregistrement et de timbre ; fiscalité des mutations immobilières.
 7. Droits de douane.
-8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — **chapitre créé le 6 octobre 2026** (`fiscalite/_depenses_fiscales.qmd`) ; lacunes dans la section « Fiscalité » ci-dessus.
+8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — **chapitre créé le 6 octobre 2026, scindé le 11 octobre 2026** (`fiscalite/_regimes_incitation.qmd` et `fiscalite/_depenses_fiscales.qmd`) ; lacunes dans la section « Fiscalité » ci-dessus.
 9. Fiscalité de l'épargne et du capital : retenues libératoires sur les revenus de capitaux mobiliers, plus-values mobilières, épargne exonérée.
 10. Taxes affectées et contributions exceptionnelles (contribution conjoncturelle, contribution au budget de l'État de 2014, FODEC, vignette).
 

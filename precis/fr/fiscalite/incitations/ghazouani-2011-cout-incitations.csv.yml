@@ -1,0 +1,25 @@
+# Manifeste du relevé « coût des incitations du code de 1993 selon Ghazouani (2011) ».
+#
+# Fichier TENU À LA MAIN, lu par figures/regimes_incitation.py. ÉTUDE EXTÉRIEURE : ce
+# relevé ne se mêle à aucune donnée budgétaire.
+#
+# D'OÙ VIENNENT LES VALEURS. Du tableau 1, p. 7, de l'étude de Kamel Ghazouani présentée le
+# 30 juin 2011 au Centre tunisien des études économiques : incitations fiscales et
+# financières du code d'incitations aux investissements, rapportées au PIB, aux recettes
+# fiscales et aux dépenses de gestion et de développement de l'État, 1994-2007.
+#
+# RÉSERVES. L'étude ne dit ni comment le coût de chaque incitation est chiffré, ni la base
+# du PIB employé. Les années 2004 et 2005, très basses, n'y sont pas commentées. Pour 2007,
+# le tableau donne 1,68 % du PIB quand le texte de l'étude parle d'« environ 2.5 % ».
+
+format: large
+cle_de_ligne: [annee]
+
+colonnes:
+  annee: année
+  pct_pib: incitations du code en % du PIB (base non précisée par la source)
+  pct_recettes_fiscales: en % des recettes fiscales
+  pct_depenses_gestion_developpement: en % des dépenses de gestion et de développement de l'État
+
+sources:
+  - ghazouani2011-evaluation-incitations-cii

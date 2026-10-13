@@ -1,0 +1,48 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-13
+# séries (tunisia_data) : jort-lf-credits-programmes-incitations, bct-foprodi-fonapra, denominateurs-depenses-etat-pib
+# sources (citation) : @lf-1995, @lf-1996, @lf-1997, @lf-1998, @lf-1999, @lf-2000, @lf-2001, @lf-2002, @lf-2003, @lf-2004, @lf-2005, @lf-2006, @lf-2007, @loi-2007-70-lf-2008, @lf-2009, @lf-2010, @lf-2011, @lf-2012, @lf-2013, @lf-2014, @lf-2015, @lf-2016, @lf-2017, @lf-2018, @lf-2019, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @bct-ra, @wb-wdi
+# fiches : sources/jort-lois-de-finances-fonds-credits.md, sources/bct-foprodi-fonapra.md
+# méthode/hypothèses : Crédits de programmes votés, ni crédits de paiement ni sommes versées. Le chapitre de l'industrie ne porte pas de ligne du fonds de 1995 à 1998. La ligne de la prise en charge change de rubrique en 1998 au plus tard, en 2012 et en 2015. Le tableau disparaît de la loi de finances en 2020. Le crédit voté est rapporté à des dépenses réalisées et au PIB de l'année : les parts sont des ordres de grandeur., Relevé comptable du compte que la Banque tient pour l'État, non un recensement par avantage. Les emplois comptent tout ce que paie le fonds : primes, prises en charge, dotations remboursables et participations. Aucune série n'est établie avant 2016., Le PIB n'est pas chaîné : base 1983 jusqu'en 1996, base 1997 de 1997 à 2001 et de 2005 à 2009, valeur propre au ministère des Finances, rattachée à aucune base, de 2002 à 2004 et en 2025, base 2015 de l'INS de 2010 à 2024, rétropolée pour 2010-2014.
+# note : Le Fonds de promotion et de décentralisation industrielle (FOPRODI) : crédit de programmes voté par les lois de finances initiales, 1999-2019, dotation budgétaire reçue et emplois selon la Banque centrale, 2016-2025 — en millions de dinars courants, en part des dépenses de l'État et en part du PIB
+Année,Grandeur,Source,Millions de dinars,"Dépenses de l'État hors service de la dette, réalisées (millions de dinars)",En % des dépenses de l'État,PIB (millions de dinars),En % du PIB,Base du PIB,PIB rétropolé,Page de la loi de finances,Note
+1999,crédit de programmes voté,loi de finances,6.0,6165.3,0.097,27215.9,0.022,base 1997,oui,2544,
+2000,crédit de programmes voté,loi de finances,13.0,6638.0,0.196,29433.4,0.044,base 1997,oui,2775,
+2001,crédit de programmes voté,loi de finances,28.0,7205.2,0.389,31746.4,0.088,base 1997,oui,3206,
+2002,crédit de programmes voté,loi de finances,33.0,7515.8,0.439,32112.0,0.103,non rattachée (valeur propre au ministère),non précisé par la source,4286,
+2003,crédit de programmes voté,loi de finances,39.0,7931.5,0.492,34630.0,0.113,non rattachée (valeur propre au ministère),non précisé par la source,2911,
+2004,crédit de programmes voté,loi de finances,33.0,8527.8,0.387,37601.2,0.088,non rattachée (valeur propre au ministère),non précisé par la source,3757,
+2005,crédit de programmes voté,loi de finances,37.0,9191.4,0.403,41871.0,0.088,base 1997,non,3471,
+2006,crédit de programmes voté,loi de finances,35.0,9973.9,0.351,45756.2,0.076,base 1997,non,3627,
+2007,crédit de programmes voté,loi de finances,35.0,11166.1,0.313,49874.2,0.07,base 1997,non,4417,
+2008,crédit de programmes voté,loi de finances,35.0,12791.8,0.274,55296.6,0.063,base 1997,non,4392,
+2009,crédit de programmes voté,loi de finances,42.0,14174.5,0.296,58883.3,0.071,base 1997,non,4306,
+2010,crédit de programmes voté,loi de finances,42.0,14267.4,0.294,66139.7,0.064,base 2015,oui,3957,
+2011,crédit de programmes voté,loi de finances,48.0,17143.3,0.28,67747.3,0.071,base 2015,oui,3526,
+2012,crédit de programmes voté,loi de finances,58.0,19141.9,0.303,73895.4,0.078,base 2015,oui,39,
+2013,crédit de programmes voté,loi de finances,65.0,22011.6,0.295,79096.6,0.082,base 2015,oui,55,
+2014,crédit de programmes voté,loi de finances,65.0,22452.7,0.289,85345.7,0.076,base 2015,oui,3732,
+2015,crédit de programmes voté,loi de finances,55.0,22248.5,0.247,89802.2,0.061,base 2015,non,3507,
+2016,crédit de programmes voté,loi de finances,55.0,24112.7,0.228,95286.9,0.058,base 2015,non,3660,
+2017,crédit de programmes voté,loi de finances,49.0,27286.7,0.18,102011.5,0.048,base 2015,non,3889,
+2018,crédit de programmes voté,loi de finances,50.0,29822.5,0.168,112985.5,0.044,base 2015,non,4332,libellé « Fonds de développement et décentralisation industrielle »
+2019,crédit de programmes voté,loi de finances,37.0,32672.9,0.113,122969.3,0.03,base 2015,non,5511,
+2016,dotation budgétaire reçue par le fonds,Banque centrale,47.0,24112.7,0.195,95286.9,0.049,base 2015,non,,
+2017,dotation budgétaire reçue par le fonds,Banque centrale,49.0,27286.7,0.18,102011.5,0.048,base 2015,non,,
+2018,dotation budgétaire reçue par le fonds,Banque centrale,20.0,29822.5,0.067,112985.5,0.018,base 2015,non,,
+2019,dotation budgétaire reçue par le fonds,Banque centrale,60.0,32672.9,0.184,122969.3,0.049,base 2015,non,,
+2020,dotation budgétaire reçue par le fonds,Banque centrale,28.0,37702.9,0.074,119502.1,0.023,base 2015,non,,
+2021,dotation budgétaire reçue par le fonds,Banque centrale,24.0,40234.1,0.06,131544.6,0.018,base 2015,non,,
+2022,dotation budgétaire reçue par le fonds,Banque centrale,18.0,46219.2,0.039,139444.5,0.013,base 2015,non,,
+2023,dotation budgétaire reçue par le fonds,Banque centrale,10.0,48622.6,0.021,149793.6,0.007,base 2015,non,,
+2024,dotation budgétaire reçue par le fonds,Banque centrale,22.371,51180.6,0.044,159852.7,0.014,base 2015,non,,
+2025,dotation budgétaire reçue par le fonds,Banque centrale,15.0,52495.0,0.029,172614.0,0.009,non rattachée (valeur propre au ministère),non précisé par la source,,
+2016,emplois du fonds,Banque centrale,52.594,24112.7,0.218,95286.9,0.055,base 2015,non,,
+2017,emplois du fonds,Banque centrale,39.659,27286.7,0.145,102011.5,0.039,base 2015,non,,
+2018,emplois du fonds,Banque centrale,27.136,29822.5,0.091,112985.5,0.024,base 2015,non,,
+2019,emplois du fonds,Banque centrale,40.889,32672.9,0.125,122969.3,0.033,base 2015,non,,
+2020,emplois du fonds,Banque centrale,45.675,37702.9,0.121,119502.1,0.038,base 2015,non,,
+2021,emplois du fonds,Banque centrale,42.391,40234.1,0.105,131544.6,0.032,base 2015,non,,
+2022,emplois du fonds,Banque centrale,30.914,46219.2,0.067,139444.5,0.022,base 2015,non,,
+2023,emplois du fonds,Banque centrale,11.767,48622.6,0.024,149793.6,0.008,base 2015,non,,
+2024,emplois du fonds,Banque centrale,26.792,51180.6,0.052,159852.7,0.017,base 2015,non,,
+2025,emplois du fonds,Banque centrale,10.022,52495.0,0.019,172614.0,0.006,non rattachée (valeur propre au ministère),non précisé par la source,,
