@@ -460,7 +460,11 @@ liste qui suit le tableau, citations comprises. Restent :
   Toutes les ancres `sec-df-…`, `tbl-df-…` et `fig-df-…` gardent leur nom ; les sections
   sont à domicile unique (registres `r-ri-…` et `r-df-…`). Quatre relevés versionnés dans
   `precis/fr/fiscalite/incitations/` alimentent les figures du texte (`fig-ri-frise`,
-  `fig-ri-prime`, `fig-ri-zones`, `fig-ri-ghazouani`). Restent :
+  `fig-ri-prime`, `fig-ri-zones`, `fig-ri-ghazouani`). **Replié le 13 octobre 2026**, sans
+  texte supprimé, dans `#sec-ri-2016-2017` (précisions de lecture des deux tableaux),
+  `#sec-df-sommes-versees` (« par domaine », limites du relevé ; l'encadré de lecture reste visible) et
+  `#sec-ri-credits-programmes` (tableau année par année du FOPRODI et de la prise en charge, place de la ligne, crédit voté
+  et dotation reçue) : trois blocs repliés nouveaux. Restent :
   - **ce que la loi cherche** : rubrique de l'article 37 de la loi de finances pour 2019
     (fin du régime de l'exportation) et des articles 5 et 6 de la loi n° 2006-80, à relever
     au fascicule (JORT lisibles au corpus, non ouverts pour cela) ;

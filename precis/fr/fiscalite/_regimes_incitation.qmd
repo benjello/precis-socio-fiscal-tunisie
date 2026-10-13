@@ -253,7 +253,11 @@ La matière fiscale est traitée par [la loi n° 2017-8 du 14 février 2017](#r-
 
 Sources : [code de 1993, art. 12, 23 et 30](#r-ri-1993-avantages) ; [loi du 14 février 2017, articles 63 à 67 et 71 nouveaux du code](#r-ri-2017-8).
 
+:::: {.chronologie-repliable titre="Avantages fiscaux de 1993 et de 2017 : précisions de lecture du tableau des avantages sur les revenus et les bénéfices — exportation imposée à 10 % depuis 2014, taux réduit des articles 64, 66 et 67, zones de l'article 63"}
+
 Pour l'exportation, la colonne de 1993 n'est plus le droit applicable à la veille de la refonte : depuis 2014, les bénéfices sont déjà imposés à 10 % (@sec-ri-2006-2014), et la loi de 2017 reprend cette règle dans le code. Le taux de 10 % auquel renvoient les articles 64, 66 et 67 est le taux réduit de l'impôt sur les sociétés, décrit à son chapitre (@sec-impot-societes). L'article 63 ne nomme pas les zones : il renvoie leur liste à un décret gouvernemental (@sec-df-zones-carte).
+
+::::
 
 La même loi crée l'instrument de mesure : son article 18 charge le ministère des Finances d'un rapport annuel sur les avantages fiscaux et financiers, ventilés par secteur, par gouvernorat et par délégation, avec les emplois créés et le chiffre d'affaires à l'exportation. L'OCDE avait recommandé en 2013 la publication d'un rapport annuel sur les dépenses fiscales [@ocde2013-incitations-fiscales-tunisie]. Ce rapport est l'objet du chapitre suivant (@sec-df-rapport).
 
@@ -299,11 +303,15 @@ La refonte de 2017 porte la prime de 8 %, 15 % ou 25 % du coût à 15 % ou 30 %,
 
 Sources : [décret de 2011, art. 1^er^ à 3](#r-ri-d-2011-528) ; [décret gouvernemental de 2017, art. 3 § 2 et annexe n° 2](#r-ri-d-2017-389) ; classement de 2008 : [décret de 2008, annexe n° 1](#r-ri-d-2008-387). Le nombre de délégations de chaque ligne est compté ici sur les listes.
 
+:::: {.chronologie-repliable titre="Prime de développement régional, barèmes de 2011 et de 2017 : assiette de la prime, plafond de la participation aux infrastructures, barème des nouveaux promoteurs"}
+
 Trois précisions commandent la lecture de ce tableau.
 
 - **L'assiette n'a pas le même nom.** Le barème de 2011 porte sur le coût de l'investissement, fonds de roulement inclus dans la limite de 10 % de ce coût ; celui de 2017 sur le « coût d'investissement approuvé ». Les deux taux ne portent donc pas nécessairement sur la même base.
 - **La participation aux infrastructures est plafonnée depuis 2017.** Elle est limitée à 10 % du coût du projet et à 1 million de dinars ; le barème de 2011 ne fixait qu'un taux.
 - **Les nouveaux promoteurs avaient un barème propre en 2011** : 30 % du coût et un plafond de 2 millions de dinars dans les zones prioritaires, au lieu de 25 % et de 1,5 million.
+
+::::
 
 Le décret de 2017 fixe aussi les trois autres primes de la loi de l'investissement, données avec l'état du droit (@sec-df-primes-zones). Le seul texte modificatif identifié ici est [un décret du 4 avril 2024](#r-ri-d-2024-182), exécutoire le 10 avril 2024.
 
@@ -596,18 +604,6 @@ Le second chapitre du rapport annuel du ministère des Finances ne chiffre pas u
 
 Source : @gbo-depenses-fiscales, rapports annexés aux projets de loi de finances pour 2021 (tableau n° 5, p. 96), 2024 et 2025 (tableau n° 4) ; @minfin-depenses-fiscales-plf2022, tableau n° 4, p. 73 ; @minfin-depenses-fiscales-plf2023, tableau n° 4, p. 73. Les rapports pour 2021 et 2022 comptent dans le total les prêts, les dotations remboursables et les participations au capital ; les rapports pour 2023, 2024 et 2025 les en sortent.
 
-::: {.callout-note title="Cinq rapports ne font pas une série"}
-**Le total se lit en colonne, non en ligne.** Chaque colonne est un rapport, avec son périmètre ; aucune courbe n'est tracée d'un exercice à l'autre, elle raccorderait des périmètres différents.
-
-**À partir du rapport pour 2023, les prêts sortent du total.** Prêts, dotations remboursables et participations au capital n'y sont plus comptés : l'exercice 2020 vaut 701,8 millions de dinars dans le rapport pour 2022 et 631,7 millions dans le rapport pour 2023 [@minfin-depenses-fiscales-plf2023, p. 68].
-
-**L'exercice 2019 est révisé**, de 932 à 922,7 millions de dinars, par le rapport pour 2022 [@minfin-depenses-fiscales-plf2022, p. 69].
-
-**Les montants ne sont pas tous des paiements.** Pour les prises en charge de cotisations, ce sont les sommes que l'État reconnaît devoir aux caisses ; pour la formation et l'emploi, les montants engagés [@minfin-depenses-fiscales-plf2022, p. 69].
-:::
-
-**Par domaine.** La formation et l'emploi font le premier poste dans chacun des rapports, devant l'investissement — où se rangent les primes de la loi de l'investissement et les avantages du code de 1993 encore servis. Le rapport pour 2025 donne, pour 2021, 2022 et 2023, 285,7, 263,2 et 255,9 millions de dinars à la formation et à l'emploi, et 160,8, 91,9 et 108,4 millions à l'investissement (@tbl-df-financiers-domaines).
-
 **Les lignes des régimes d'incitation.** Chaque rapport détaille les avantages un par un, sous un code qui ne change pas d'un rapport à l'autre. Le tableau qui suit en retient les lignes du développement régional et l'ensemble des prises en charge de la contribution patronale de sécurité sociale, réparties selon leur fondement (@tbl-df-financiers-reperes).
 
 : Primes de développement régional et prises en charge de la contribution patronale, exercices 2018 à 2023 : une colonne par exercice et par rapport (millions de dinars courants) {#tbl-df-financiers-reperes}
@@ -634,11 +630,15 @@ Trois constats ressortent de ces lignes.
 - **La chute des prises en charge patronales entre 2018 et 2019 tient à une seule ligne.** L'ensemble passe de 181,9 à 54,0 millions de dinars ; la ligne du développement régional que les rapports rattachent à l'« article 25 bis » du code de 1993 passe, elle, de 131,0 à 21,0 millions. Le rapport n'en donne pas la cause.
 - **Le code abrogé pèse encore plus que la loi qui le remplace.** En 2023, sept ans après l'abrogation, les prises en charge au titre du code de 1993 s'élèvent à 16,5 millions de dinars, contre 1,9 million au titre de la loi de l'investissement, dont les premières lignes non nulles datent de 2021.
 
-Ces montants sont ceux que déclarent les organismes, non des crédits votés. Les crédits que les lois de finances ouvrent au Fonds de promotion et de décentralisation industrielle et à la prise en charge de la contribution patronale sont donnés pour 1995 à 2019 (@sec-ri-credits-programmes). Ni les crédits des autres primes — budgets des ministères, comptes du Fonds tunisien de l'investissement, par lequel passent depuis 2017 [les primes de la loi de l'investissement](#r-ri-2016-71) —, ni le coût des prises en charge pour la sécurité sociale ne sont établis ici : les rapports comptent ce que l'État verse aux caisses ou reconnaît leur devoir, non ce qu'elles ont reçu. Aucune série de sommes versées n'est établie ici pour les exercices antérieurs à 2016. Aucun rapport annexé au projet de loi de finances pour 2026 n'est identifié ici.
+::: {.callout-note title="Cinq rapports ne font pas une série"}
+**Le total se lit en colonne, non en ligne.** Chaque colonne est un rapport, avec son périmètre ; aucune courbe n'est tracée d'un exercice à l'autre, elle raccorderait des périmètres différents.
 
-<!-- TODO (documentaliste) : (1) crédits budgétaires des primes et des prises en charge — le FOPRODI et la prise en charge patronale sont aux tableaux des crédits de programmes des lois de finances (« D » ; « ث » dans l'édition arabe), non au tableau « ب » des fonds spéciaux du Trésor : relevés pour 1995-2019 (#sec-ri-credits-programmes), avec l'aide aux promoteurs touristiques et le FONAPRA ; restent les encouragements à l'agriculture des mêmes tableaux (trois séries qui ne s'enchaînent pas, note § 12), les lois de règlement (2010-2016), les budgets par ministère depuis 2013, comptes du Fonds tunisien de l'investissement et rapports de l'Instance tunisienne de l'investissement : rien n'est relevé (note du 11 octobre 2026, § 4.1, points 1 et 2) ; (2) coût côté CNSS des prises en charge : états financiers de la CNSS (créances sur l'État), rapports d'activité, rapports annuels de performance de la mission Affaires sociales (§ 1.8 et § 4.1, point 10) ; à croiser avec le volume « Cotisations sociales » ; (3) sommes versées avant 2016 : aucune série ; rapports de la Cour des comptes, archives du web de l'APII et de l'APIA non ouverts ; (4) rapport annexé au PLF 2026 : absent du portail gbo.tn et de la page « loi de finances » de finances.gov.tn le 11 octobre 2026, vues par année non parcourues (§ 1.1) ; (5) cause de la chute de la ligne 031106 entre 2018 et 2019, et de la sortie du « financement des petits projets » du total du rapport 2025 (imprimé p. 57, non compté) ; (6) mise à niveau industrielle, primes agricoles avant 2018 : non relevées. -->
+**À partir du rapport pour 2023, les prêts sortent du total.** Prêts, dotations remboursables et participations au capital n'y sont plus comptés : l'exercice 2020 vaut 701,8 millions de dinars dans le rapport pour 2022 et 631,7 millions dans le rapport pour 2023 [@minfin-depenses-fiscales-plf2023, p. 68].
 
-<!-- TODO (rédacteur) : aucune figure pour les avantages financiers (figure « un point par rapport » écartée le 11 octobre 2026) — chaque rapport ne donne que deux ou trois exercices, et les cinq rapports n'ont pas le même périmètre ; une figure par segments n'aurait que un à trois points par segment, et le tableau « une colonne par rapport » se lit sans elle. À reprendre si un rapport ultérieur republie une série longue à périmètre constant. Les montants sont en dinars courants seulement : le chapitre n'a pas d'année de référence pour des dinars constants (point à trancher). -->
+**L'exercice 2019 est révisé**, de 932 à 922,7 millions de dinars, par le rapport pour 2022 [@minfin-depenses-fiscales-plf2022, p. 69].
+
+**Les montants ne sont pas tous des paiements.** Pour les prises en charge de cotisations, ce sont les sommes que l'État reconnaît devoir aux caisses ; pour la formation et l'emploi, les montants engagés [@minfin-depenses-fiscales-plf2022, p. 69].
+:::
 
 :::: {.chronologie-repliable titre="Avantages financiers, 2018-2023 : comment lire les montants (périmètre, révision de 2019, nature des sommes) ; montants par forme, par domaine et par programme d'investissement dans chacun des cinq rapports"}
 
@@ -653,6 +653,8 @@ Ces montants sont ceux que déclarent les organismes, non des crédits votés. L
 **Tous les avantages recensés ne donnent pas lieu à versement.** Les rapports pour 2021 et 2022 en recensent 232, le rapport pour 2023, 227, et le rapport pour 2024, 236 ; 58 ont donné lieu à un versement en 2020, 95 en 2021 et 95 en 2022 [@minfin-depenses-fiscales-plf2022, p. 69 ; @minfin-depenses-fiscales-plf2023 ; @gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2024].
 
 - **La première ligne de prise en charge patronale change selon l'exercice.** C'est celle de l'« article 25 bis » en 2018, 2020, 2021 et 2023 ; en 2019, celle du salaire de l'agent recruté, au titre de l'emploi (23,1 millions de dinars contre 21,0) ; en 2022, celle des technologies de l'information et de la communication (15,8 millions contre 13,4). Cette dernière ligne vaut 1,1 million de dinars en 2019, selon le rapport pour 2022, et 10,1 millions en 2023.
+
+**Par domaine.** La formation et l'emploi font le premier poste dans chacun des rapports, devant l'investissement — où se rangent les primes de la loi de l'investissement et les avantages du code de 1993 encore servis. Le rapport pour 2025 donne, pour 2021, 2022 et 2023, 285,7, 263,2 et 255,9 millions de dinars à la formation et à l'emploi, et 160,8, 91,9 et 108,4 millions à l'investissement (@tbl-df-financiers-domaines).
 
 : Avantages financiers par domaine, exercices 2018 à 2023 : une colonne par exercice et par rapport (millions de dinars courants) {#tbl-df-financiers-domaines}
 
@@ -728,6 +730,12 @@ Les rapports pour 2023 et 2024 impriment le total de ce domaine en millions enti
 
 Sources : @gbo-depenses-fiscales, rapports annexés aux projets de loi de finances pour 2021 (p. 93, 96 et 98), 2024 (p. 68, 71 et 73) et 2025 (p. 52, 55 et 56) ; @minfin-depenses-fiscales-plf2022, p. 71, 73 et 75 ; @minfin-depenses-fiscales-plf2023, p. 70, 73 et 75.
 
+Ces montants sont ceux que déclarent les organismes, non des crédits votés. Les crédits que les lois de finances ouvrent au Fonds de promotion et de décentralisation industrielle et à la prise en charge de la contribution patronale sont donnés pour 1995 à 2019 (@sec-ri-credits-programmes). Ni les crédits des autres primes — budgets des ministères, comptes du Fonds tunisien de l'investissement, par lequel passent depuis 2017 [les primes de la loi de l'investissement](#r-ri-2016-71) —, ni le coût des prises en charge pour la sécurité sociale ne sont établis ici : les rapports comptent ce que l'État verse aux caisses ou reconnaît leur devoir, non ce qu'elles ont reçu. Aucune série de sommes versées n'est établie ici pour les exercices antérieurs à 2016. Aucun rapport annexé au projet de loi de finances pour 2026 n'est identifié ici.
+
+<!-- TODO (documentaliste) : (1) crédits budgétaires des primes et des prises en charge — le FOPRODI et la prise en charge patronale sont aux tableaux des crédits de programmes des lois de finances (« D » ; « ث » dans l'édition arabe), non au tableau « ب » des fonds spéciaux du Trésor : relevés pour 1995-2019 (#sec-ri-credits-programmes), avec l'aide aux promoteurs touristiques et le FONAPRA ; restent les encouragements à l'agriculture des mêmes tableaux (trois séries qui ne s'enchaînent pas, note § 12), les lois de règlement (2010-2016), les budgets par ministère depuis 2013, comptes du Fonds tunisien de l'investissement et rapports de l'Instance tunisienne de l'investissement : rien n'est relevé (note du 11 octobre 2026, § 4.1, points 1 et 2) ; (2) coût côté CNSS des prises en charge : états financiers de la CNSS (créances sur l'État), rapports d'activité, rapports annuels de performance de la mission Affaires sociales (§ 1.8 et § 4.1, point 10) ; à croiser avec le volume « Cotisations sociales » ; (3) sommes versées avant 2016 : aucune série ; rapports de la Cour des comptes, archives du web de l'APII et de l'APIA non ouverts ; (4) rapport annexé au PLF 2026 : absent du portail gbo.tn et de la page « loi de finances » de finances.gov.tn le 11 octobre 2026, vues par année non parcourues (§ 1.1) ; (5) cause de la chute de la ligne 031106 entre 2018 et 2019, et de la sortie du « financement des petits projets » du total du rapport 2025 (imprimé p. 57, non compté) ; (6) mise à niveau industrielle, primes agricoles avant 2018 : non relevées. -->
+
+<!-- TODO (rédacteur) : aucune figure pour les avantages financiers (figure « un point par rapport » écartée le 11 octobre 2026) — chaque rapport ne donne que deux ou trois exercices, et les cinq rapports n'ont pas le même périmètre ; une figure par segments n'aurait que un à trois points par segment, et le tableau « une colonne par rapport » se lit sans elle. À reprendre si un rapport ultérieur republie une série longue à périmètre constant. Les montants sont en dinars courants seulement : le chapitre n'a pas d'année de référence pour des dinars constants (point à trancher). -->
+
 ::::
 
 :::: {.chronologie-repliable titre="Prises en charge de la contribution patronale et primes de développement régional : montants des vingt-sept lignes par code, exercices 2018-2023, dans chacun des cinq rapports"}
@@ -774,6 +782,15 @@ Sources : @gbo-depenses-fiscales, rapports annexés aux projets de loi de financ
 
 Deux lignes des lois de finances portent des crédits votés pour les régimes d'incitation : celle du Fonds de promotion et de décentralisation industrielle (FOPRODI), au chapitre du ministère chargé de l'industrie, et celle de la « prise en charge par l'État de la contribution patronale au régime légal de la sécurité sociale », au chapitre du ministère des Affaires sociales. Les deux lignes sont au tableau des crédits de programmes de l'État, distinct, dans la même loi, du tableau des crédits de paiement. Ce sont des crédits votés par la loi de finances initiale, non des sommes versées.
 
+Les montants votés pour chaque année, de 1995 à 2019, sont au tableau des crédits (@tbl-ri-credits-programmes).
+
+- **Le crédit du FOPRODI est multiplié par plus de six entre 1999 et 2003, puis culmine en 2013 et 2014.** Il passe de 6,0 millions de dinars pour 1999 à 13,0 millions pour 2000 et à 39,0 millions pour 2003, se tient entre 33 et 37 millions de 2004 à 2008, monte à 65,0 millions pour 2013 et 2014, revient à 49,0 millions pour 2017 et 50,0 millions pour 2018, puis tombe à 37,0 millions pour 2019.
+- **Le crédit de la prise en charge patronale est multiplié par vingt en dix-huit ans.** De 3,0 millions de dinars pour 1995, il atteint 35,0 millions pour 2007 et 60,0 millions pour 2013, puis recule chaque année jusqu'à 32,0 millions pour 2019.
+- **Cette ligne couvre toutes les prises en charge, non celles du seul code de 1993.** Son libellé ne dit pas au titre de quel régime la contribution est prise en charge : développement régional, nouveaux promoteurs ou dispositifs d'emploi y sont confondus.
+- **Le tableau disparaît en 2020.** [La loi de finances pour 2020](#r-ri-lf-2020) présente les dépenses par missions et programmes : aucune ligne n'y nomme plus le fonds ni la prise en charge.
+
+:::: {.chronologie-repliable titre="Crédits de programmes du FOPRODI et de la prise en charge de la contribution patronale : montants année par année, lois de finances pour 1995 à 2019 ; place de la ligne dans le tableau, crédit voté et dotation reçue"}
+
 | Loi de finances pour | FOPRODI | Prise en charge de la contribution patronale |
 |---|---:|---:|
 | [1995](#r-ri-lf-1995) |  | 3,0 |
@@ -804,13 +821,10 @@ Deux lignes des lois de finances portent des crédits votés pour les régimes d
 
 : Crédits de programmes ouverts par les lois de finances initiales au FOPRODI et à la prise en charge de la contribution patronale, 1995-2019, en millions de dinars courants. De 1995 à 1998, le chapitre de l'industrie ne porte pas de ligne du fonds : les cases sont vides. Montants arrondis à la centaine de milliers de dinars ; le registre replié qui suit les donne au millier, avec la loi de finances de chaque année. {#tbl-ri-credits-programmes}
 
-- **Le crédit du FOPRODI est multiplié par plus de six entre 1999 et 2003, puis culmine en 2013 et 2014.** Il passe de 6,0 millions de dinars pour 1999 à 13,0 millions pour 2000 et à 39,0 millions pour 2003, se tient entre 33 et 37 millions de 2004 à 2008, monte à 65,0 millions pour 2013 et 2014, revient à 49,0 millions pour 2017 et 50,0 millions pour 2018, puis tombe à 37,0 millions pour 2019.
-- **Le crédit de la prise en charge patronale est multiplié par vingt en dix-huit ans.** De 3,0 millions de dinars pour 1995, il atteint 35,0 millions pour 2007 et 60,0 millions pour 2013, puis recule chaque année jusqu'à 32,0 millions pour 2019.
-- **Cette ligne couvre toutes les prises en charge, non celles du seul code de 1993.** Son libellé ne dit pas au titre de quel régime la contribution est prise en charge : développement régional, nouveaux promoteurs ou dispositifs d'emploi y sont confondus.
 - **La ligne de la prise en charge change de place dans le tableau.** Rangée parmi les projets nouveaux à caractère national pour 1995, elle est sous la rubrique « Financement public » à partir de 1998 au plus tard ; de 2012 à 2019, elle est à l'intérieur d'un groupe de la Caisse nationale de sécurité sociale, qui porte aussi, jusqu'en 2018, une ligne de règlement de 4,0 millions de dinars. Son libellé ne change pas ; rien n'établit que les crédits ainsi rangés soient de même nature d'un bout à l'autre de la période.
 - **Un crédit voté n'est pas une dotation versée.** Pour 2017, le crédit du FOPRODI, 49,0 millions de dinars, est égal à la dotation budgétaire que le fonds reçoit selon la Banque centrale ; pour 2016, le crédit est de 55,0 millions et la dotation reçue de 47,0 millions (@sec-df-foprodi). Les deux grandeurs se lisent donc chacune dans son tableau, sans raccord.
 
-- **Le tableau disparaît en 2020.** [La loi de finances pour 2020](#r-ri-lf-2020) présente les dépenses par missions et programmes : aucune ligne n'y nomme plus le fonds ni la prise en charge.
+::::
 
 **Deux autres lignes du même tableau.** Le tableau des crédits de programmes porte aussi, au chapitre du tourisme, une « aide de l'État pour les promoteurs des projets touristiques », parmi les lignes de l'Office national tunisien du tourisme, et, au chapitre de la formation professionnelle et de l'emploi, la ligne du Fonds national de promotion de l'artisanat et des petits métiers (FONAPRA).
 
