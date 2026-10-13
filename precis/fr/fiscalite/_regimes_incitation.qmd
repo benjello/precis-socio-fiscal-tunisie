@@ -780,7 +780,7 @@ Sources : @gbo-depenses-fiscales, rapports annexés aux projets de loi de financ
 
 ### Le FOPRODI : crédits votés, 1999-2019, et comptes de la Banque centrale, 2016-2025 {#sec-df-foprodi}
 
-Le Fonds de promotion et de décentralisation industrielle (FOPRODI) est l'un des budgets sur lesquels sont imputées les primes de l'industrie, de l'artisanat et des services (@sec-df-primes-zones). Deux sources budgétaires le suivent, sans se raccorder (@fig-ri-foprodi). Les lois de finances lui ouvrent chaque année, de 1999 à 2019, un crédit au chapitre du ministère chargé de l'industrie ; la ligne est au tableau des crédits de programmes de l'État, distinct, dans la même loi, du tableau des crédits de paiement : c'est un crédit voté par la loi de finances initiale, non une somme versée. La Banque centrale de Tunisie tient le compte du fonds pour l'État et en publie chaque année, dans ses états financiers, les ressources et les emplois, de 2016 à 2025 : c'est un relevé comptable de ce qui entre dans le fonds et de ce qui en sort, non un recensement par avantage (@tbl-df-foprodi).
+Le Fonds de promotion et de décentralisation industrielle (FOPRODI) est l'un des budgets sur lesquels sont imputées les primes de l'industrie, de l'artisanat et des services (@sec-df-primes-zones). Deux sources le suivent, sans se raccorder : la loi de finances, et le compte que la Banque centrale tient pour l'État (@fig-ri-foprodi). Les lois de finances lui ouvrent chaque année, de 1999 à 2019, un crédit au chapitre du ministère chargé de l'industrie ; la ligne est au tableau des crédits de programmes de l'État, distinct, dans la même loi, du tableau des crédits de paiement : c'est un crédit voté par la loi de finances initiale, non une somme versée. La Banque centrale de Tunisie tient le compte du fonds pour l'État et en publie chaque année, dans ses états financiers, les ressources et les emplois, de 2016 à 2025 : c'est un relevé comptable de ce qui entre dans le fonds et de ce qui en sort, non un recensement par avantage (@tbl-df-foprodi).
 
 ```{python}
 #| label: fig-ri-foprodi
@@ -807,7 +807,7 @@ fig_ci.figure(
         "dépense réalisée : la part est un ordre de grandeur.\n\n"
         "Troisième vue : les mêmes grandeurs en part du PIB. Le trait s'interrompt à chaque "
         "changement de source ou de base du PIB, et la base de chaque segment est écrite "
-        "au-dessus du cadre : base 1997, rétropolée, de 1999 à 2001 ; valeur propre au ministère des Finances, rattachée à aucune base, de 2002 à 2004 et en 2025 ; base 1997 de 2005 à 2009 ; base 2015 de l'INS de 2010 à 2024, rétropolée pour 2010-2014 (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "au-dessus du cadre : base 1997 de 1999 à 2001, valeurs rétropolées ; valeur propre au ministère des Finances, rattachée à aucune base, de 2002 à 2004 et en 2025, sans que la source dise si elle est rétropolée ; base 1997 de 2005 à 2009, valeurs d'origine ; base 2015 de l'INS de 2010 à 2024, rétropolée pour 2010-2014, d'origine ensuite (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
         "Aucun segment n'est raccordé au suivant."))
 ```
 
@@ -892,7 +892,7 @@ fig_ci.figure(
         "dépense réalisée.\n\n"
         "Troisième vue : les mêmes grandeurs en part du PIB. Le trait s'interrompt à chaque "
         "changement de source ou de base du PIB, et la base de chaque segment est écrite "
-        "au-dessus du cadre : base 1983 en 1995 et 1996 ; base 1997, rétropolée, de 1997 à 2001 ; valeur propre au ministère des Finances, rattachée à aucune base, de 2002 à 2004 ; base 1997 de 2005 à 2009 ; base 2015 de l'INS de 2010 à 2019, rétropolée pour 2010-2014 (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "au-dessus du cadre : base 1983 en 1995 et 1996, sans que la source dise si la valeur est rétropolée ; base 1997 de 1997 à 2001, valeurs rétropolées ; valeur propre au ministère des Finances, rattachée à aucune base, de 2002 à 2004, sans que la source dise si elle est rétropolée ; base 1997 de 2005 à 2009, valeurs d'origine ; base 2015 de l'INS de 2010 à 2019, rétropolée pour 2010-2014, d'origine ensuite (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
         "Aucun segment n'est raccordé au suivant."))
 ```
 
