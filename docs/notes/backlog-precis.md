@@ -2222,17 +2222,20 @@ séries versées dans `tunisia-data` (fiche `sources/compensation-transport.md`)
 une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
 
 - **Plan** : vue d'ensemble (`#sec-compensation-transport-vue`) ; mise en place 1948-1983
-  (`-mise-en-place`) ; grandes réformes 1984, 1985, 2001, 2004, 2017 (`-reformes`, une
-  sous-section par date) ; état du droit en octobre 2026 (`-etat-du-droit`) ; tarifs et
+  (`-mise-en-place`) ; grandes réformes 1984, 1985, 1987-1995, 2001, 2004, 2017 (`-reformes`, une
+  sous-section par date ; `-1987` ajoutée le 13 octobre 2026 sur
+  `docs/notes/compensation-transport-second-passage-2026-10-12.md`) ; état du droit en octobre 2026 (`-etat-du-droit`) ; tarifs et
   abonnements (`-tarifs`) ; abonnement scolaire (`-scolaire`) ; gratuités et réductions
   (`-gratuites`) ; longue période (`-longue-periode` : `-tarifs-constants`, `-interventions`,
   `-abonnements-nombre`, `-comptes`) ; Cour des comptes (`-cour`) ; *Livre blanc* de la Banque
   mondiale (`-livre-blanc`) ; incidence (`-incidence`). Six sections `.domicile-unique`, cinq
   registres repliés.
-- **Figures** (`precis/fr/compensation/figures/transport.py`, `tr.figure(…)`), sept :
+- **Figures** (`precis/fr/compensation/figures/transport.py`, `tr.figure(…)`), huit :
   `fig-compensation-transport-soutien` (quatre vues, dont part de la dépense de compensation et
   part du PIB), `-tarifs-arretes`, `-abonnements-prix`, `-tarifs`, `-interventions` (deux vues),
-  `-abonnements-nombre`, `-trafic-tunis`. Libellés des figures en français seulement : **libellés
+  `-abonnements-nombre`, `-trafic-tunis`, `-caisse` (trois vues : millions de dinars, part des
+  dépenses de l'État, part du PIB ; **restent** : part des dépenses de l'État pour 1984-1985,
+  l'entrepôt n'ayant ces dépenses qu'à partir de 1986 ; base du PIB de 1986-1991, présumée). Libellés des figures en français seulement : **libellés
   arabes à verser** dans `_L` avant de déclarer le chapitre au livre arabe.
 - **Snapshots** du 11 octobre 2026 : `transport-soutien-par-societe`,
   `transport-abonnements-scolaires`, `transport-transferts-par-entreprise`,
@@ -2244,19 +2247,34 @@ une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
   section des tarifs — par année, moyenne des montants en vigueur au premier jour de chacun des
   douze mois, années entièrement établies seulement (celle de `figtools.constants_escalier`).
   Les tableaux annuels en dinars de 2025 sont engendrés par `tr.tableau_annuel`.
-- **Deux fiches** dans `docs/recherches.yml` : `r-transport-tarifs-apres-2000` et
-  `r-transport-decret-manque-a-gagner`, ancrées à l'état du droit.
+- **Trois fiches** dans `docs/recherches.yml` : `r-transport-tarifs-apres-2000` et
+  `r-transport-decret-manque-a-gagner`, ancrées à l'état du droit ;
+  `r-transport-ligne-budgetaire-1995-2002`, ancrée à `#sec-compensation-transport-1987`.
+- **Bibliographie** : clés `lf-1985` à `lf-1995` versées le 13 octobre 2026 aux deux
+  `references.json` du volume (adresses pist.tn de l'édition française contrôlées le 12 octobre ;
+  adresses arabes tirées de l'index, fichiers non ouverts).
 - **Arabe** : le chapitre n'est pas déclaré dans `precis/ar/compensation/_quarto.yml` (ligne en
   commentaire) ; à déclarer quand sa traduction sera livrée. D'ici là, `index.qmd`, `_depense.qmd` et `_reformes.qmd`
   nomment le chapitre en clair, sans ancre (`TODO (rédacteur)` : rétablir les renvois).
 - **Lacunes**, dans l'état que la note établit :
-  - **1985-2002** : crédits et recettes de la caisse de compensation et de soutien des
-    transports routiers, année de sa suppression, année où le budget général prend le relais de
-    la taxe affectée — tableaux des fonds spéciaux des lois de finances et rapports annuels de
-    la BCT, au corpus, **à lire** ; le poste n'est suivi qu'à partir de 2003.
+  - **1985-1994, établi le 12 octobre 2026** (lu à l'image) : prévisions de la caisse de
+    compensation et de soutien des transports routiers aux tableaux des fonds spéciaux, retour de
+    ses recettes affectées au budget général à la gestion 1987 (loi n° 86-106, art. 92),
+    subvention du budget seule de 1988 à 1994, suppression à la gestion 1995 (loi n° 94-127,
+    art. 35) — `fig-compensation-transport-caisse` (figure à trois vues depuis le 13 octobre 2026 : millions de dinars, part des dépenses de l'État, part du PIB ; série `jort-lf-caisse-transports-routiers` de tunisia-data). **Restent** : réalisations (lois de règlement lues le 13 octobre 2026 : total de tous les
+    fonds seulement, la caisse n'y est pas nommée ; lois de finances complémentaires, au corpus,
+    **à lire**) ; composition des recettes de
+    1985-1986 (art. 26 de la loi de finances pour 1985, **à lire**) ; pied de page de la loi de finances pour 1989 à confirmer à l'image.
+  - **1995-2002** : ligne du budget général qui porte la subvention après la suppression de la
+    caisse, non identifiée (fiche `r-transport-ligne-budgetaire-1995-2002` : lois de finances
+    et décrets de répartition lus le 13 octobre 2026 pour 1995, 1996, 1997 et 2001, aucun
+    libellé ne nomme le transport ; budgets du
+    ministère du Transport, **à obtenir** aux archives du web) ; le poste n'est suivi qu'à partir
+    de 2003.
   - **Tarifs entre février 2000 et novembre 2007**, et actes des relèvements d'août 2010 et de
     juin 2021 : aucun acte au *Journal officiel* (fiche `r-transport-tarifs-apres-2000` : plein
-    texte des fascicules de 2000-2010 et de 2021, communiqués des sociétés aux archives du web,
+    texte français des fascicules de 2000-2010 joué le 12 octobre 2026, sans résultat ; restent
+    l'édition arabe et les fascicules de 2021, communiqués des sociétés aux archives du web,
     numéros du *Bulletin mensuel de la statistique* antérieurs à novembre 2008, **à obtenir**).
   - **Subvention par société** : avant 2012, budgets du ministère du Transport antérieurs à
     2013, à chercher aux archives du web ; après 2017 au sens strict du poste, budgets de 2018 à
