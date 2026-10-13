@@ -429,3 +429,9 @@ Scripts dans le même répertoire `scratchpad/lf/` : `p1.py` (bande par coordonn
 texte), `p5.py` (bande par ligne de l'OCR de repérage), `maj3.py` (mise à jour de cette note) ;
 images lues dans `p3/` ; relevé des adresses dans `pist.tsv`. OCR lancés au premier plan, sous
 `timeout`, tous achevés ; aucun processus en fin de passage.
+
+## 11. Quatrième passage, 13 octobre 2026 — cases vides (lu à l'image)
+
+- **Prise en charge patronale, loi de finances pour 1998** : 3 500 000 D, édition arabe du JORT n° 104 des 30-31 décembre 1997, p. 2587 ; 3 500 000 + 32 000 + 48 000 = 3 580 000 (Total II) ; total du chapitre 4 896 000.
+- **FOPRODI, loi de finances pour 1999** : 6 000 000 D, édition arabe du JORT n° 104 des 29-31 décembre 1998, p. 2609 (« صندوق التطوير واللامركزية الصناعية ») ; somme des onze lignes de la rubrique : 8 312 000 (Total II) ; Total I négatif (−46 000), total du chapitre 8 266 000.
+- **FOPRODI, lois de finances pour 1996, 1997 et 1998** : chapitre 14 (industrie) lu en entier (éd. française p. 2403 ; p. 2603 ; p. 2475 et éd. arabe p. 2559-2560), sommes vérifiées, pas de ligne du fonds. En 1998, la ligne de 2 000 000 D est un autre fonds (promotion et maîtrise de la technologie industrielle). Une dotation logée à un autre chapitre n'est pas exclue.

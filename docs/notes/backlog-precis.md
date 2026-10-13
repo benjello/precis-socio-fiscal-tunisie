@@ -382,12 +382,12 @@ liste qui suit le tableau, citations comprises. Restent :
     de la déduction de 50 % des exportateurs entre 1993 et 2006 non établi ;
   - **méthode des rapports PLF 2022 à 2025** : non établie (introduction et table des
     matières seules) ; données employées par le ministère non décrites dans le rapport 2021 ;
-  - **crédits budgétaires** : crédits de programmes du FOPRODI (2000-2017) et de la prise en
-    charge de la contribution patronale (1995-2017, sauf 1998) relevés le 13 octobre 2026 aux
+  - **crédits budgétaires** : crédits de programmes du FOPRODI (1999-2017) et de la prise en
+    charge de la contribution patronale (1995-2017) relevés le 13 octobre 2026 aux
     tableaux des crédits de programmes des lois de finances initiales, lus à l'image
     (`#sec-ri-credits-programmes`, `docs/notes/fiscalite-incitations-second-passage-2026-10-13.md`) —
-    le tableau « ب » des fonds spéciaux n'était pas le bon. **Restent** : 1998 (deux lignes) et
-    FOPRODI 1995-1999, au corpus, édition arabe **à lire** ; loi de finances pour 1994 ; lois de
+    le tableau « ب » des fonds spéciaux n'était pas le bon. **Restent** : FOPRODI de 1995 à 1998 (pas de ligne au chapitre de
+    l'industrie ; autres chapitres non lus) ; loi de finances pour 1994 ; lois de
     finances de 2018-2019 ; primes de l'agriculture, du tourisme et de l'artisanat aux mêmes
     tableaux ; lois de règlement 2010-2016 (exécution) ; budgets par ministère depuis 2013,
     comptes du Fonds tunisien de l'investissement — **à obtenir** ou à transcrire ;
