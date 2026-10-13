@@ -385,7 +385,7 @@ liste qui suit le tableau, citations comprises. Restent :
   - **crédits budgétaires** : crédits de programmes du FOPRODI (1999-2019) et de la prise en
     charge de la contribution patronale (1995-2019), de l'aide aux promoteurs touristiques (2010-2019) et du FONAPRA (2012-2019) relevés le 13 octobre 2026 aux
     tableaux des crédits de programmes des lois de finances initiales, lus à l'image
-    (`#sec-ri-credits-programmes`, `docs/notes/fiscalite-incitations-second-passage-2026-10-13.md`) —
+    (`#sec-df-foprodi` et `#sec-ri-credits-programmes` : deux figures à trois vues depuis le 13 octobre 2026 — millions de dinars, part des dépenses de l'État, part du PIB —, séries `jort-lf-credits-programmes-incitations` et `bct-foprodi-fonapra` de tunisia-data ; `docs/notes/fiscalite-incitations-second-passage-2026-10-13.md`) —
     le tableau « ب » des fonds spéciaux n'était pas le bon. **Restent** : FOPRODI de 1995 à 1998 (pas de ligne au chapitre de
     l'industrie ; autres chapitres non lus) ; loi de finances pour 1994 ; encouragements
     à l'agriculture aux mêmes tableaux (trois séries qui ne s'enchaînent pas) ; FONAPRA 2010-2011 ;
@@ -480,7 +480,7 @@ liste qui suit le tableau, citations comprises. Restent :
   n° 2019-47) ; `@sec-df-primes-zones` (barème de 2011 → 2017, primes de la loi de 2016,
   carte des zones 1994-2024, barèmes successifs, registre des décrets et listes nominatives
   repliés) ; `@sec-df-sommes-versees` (cinq rapports, une colonne par rapport, 2018-2023) ;
-  `@sec-df-foprodi` (comptes de la BCT, 2016-2025) ; `@sec-df-commerce-exterieur` (part du
+  `@sec-df-foprodi` (crédits votés, 1999-2019, et comptes de la BCT, 2016-2025, sur une même figure) ; `@sec-df-commerce-exterieur` (part du
   régime off shore, 1998-2023, figure). Clos : décret gouvernemental n° 2017-389 et loi
   n° 2019-47, lus. Restent :
   - **que l'annexe n° 2 du décret n° 2017-389 vaille pour l'article 63 du code de l'impôt** :
