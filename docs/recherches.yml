@@ -2313,7 +2313,7 @@
 
 - id: r-epna-liste-modificatifs-apres-2007
   objet: décret modifiant ou remplaçant, après le décret n° 2007-2560 du 23 octobre 2007, la liste des établissements publics à caractère non administratif considérés comme entreprises publiques (décret n° 2004-2265 du 27 septembre 2004)
-  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-etat-du-droit]
+  ou: [precis/fr/entreprises_publiques/_annexe_liste.qmd#sec-ep-liste-etablissements]
   requetes:
     titres_like:
     - '%liste des etablissements publics a caractere non administratif%'
@@ -2321,6 +2321,7 @@
     - '%2004-2265%'
     - '%97-564%'
     iort_ar: [قائمة المؤسسات العمومية التي لا تكتسي صبغة إدارية, 2265 لسنة 2004]
+    plein_texte: [considéré comme entreprise publique, منشأة عمومية]
     depuis: 2007-10-24
   passes:
   - date: 2026-10-11
@@ -2329,9 +2330,49 @@
     couverture: 'jort_cache jusqu''au 2 octobre 2026, titres seuls : chaîne retrouvée — décrets n° 97-564, 98-752, 99-2378, 2002-2199, 2004-2265, 2006-2579, 2007-1865, 2007-2560 ; rien après 2007. Un seul terme arabe essayé, alors que 40 à 80 % des notices de 2015 à 2019 n''ont qu''un intitulé arabe : silence non concluant. Les décrets modificatifs de 1998 à 2007 ne sont connus que par leur intitulé. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 5.4.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-13
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas]
+    couverture: 'jort_cache jusqu''au 10 avril 2026, titres (LIKE français et arabe, FTS) : aucun décret modifiant la liste après le n° 2007-2560. Plein texte français, 2 002 fascicules de 2008 à 2026 (17 sans couche texte), « 2004-2265 » et « considéré comme entreprise publique » : les visas ne citent comme modificatifs que les n° 2006-2579, 2007-1865, 2007-2560 et, une fois, le n° 2019-758. Plein texte arabe, 1 547 fascicules de 2014 à 2026 (51 sans couche exploitable), « يعتبر / تعتبر … منشأة عمومية ». Cinq décrets classent un établissement par leur propre article premier : n° 2019-758, 2023-452, 2024-5, 2024-184, 2024-500. Lacunes : fascicules arabes de 2008 à 2013 sans couche texte (période couverte par le français seul) ; autres formulations (« a le caractère d''entreprise publique », « est classé parmi ») non essayées ; aucune sortie n''est atteignable par cette voie.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
   a_faire:
-  - prendre l'intitulé arabe exact du décret n° 2004-2265 au miroir iort et le rejouer
-  - lire les décrets n° 97-564 et n° 2004-2265 et leurs modificatifs pour compter les établissements à chaque date
+  - rejouer les formulations « a le caractère d'entreprise publique » et « est classé parmi les entreprises publiques » en plein texte
+  - 'chercher les sorties : décrets de dissolution, de fusion ou de transformation d''un établissement de la liste après 2007'
+
+- id: r-ep-tutelle-modificatifs-apres-2010
+  objet: décret modifiant ou remplaçant, après le décret n° 2010-3170 du 13 décembre 2010, le tableau de désignation de l'autorité de tutelle sur les entreprises publiques et les établissements publics à caractère non administratif (décret n° 2005-910 du 24 mars 2005)
+  ou: [precis/fr/entreprises_publiques/_annexe_liste.qmd#sec-ep-liste-mouvements]
+  requetes:
+    titres_fts: ['"2005-910"', '"entreprises publiques" AND tutelle']
+    titres_like: ['%autorite de tutelle sur les entreprises%', '%2005-910%', '%2002-2200%']
+    iort_ar: [سلطة الإشراف على المنشآت, 910 لسنة 2005]
+    depuis: 2010-12-14
+  passes:
+  - date: 2026-10-13
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache jusqu''au 10 avril 2026, titres seuls (LIKE français et arabe, FTS) : rien après le n° 2010-3170 ; seconde voie : le décret gouvernemental n° 2019-758 vise le n° 2005-910 « et notamment le décret n° 3170 de 2010 » (JORT n° 68 du 23 août 2019, p. 2690, lu à l''image). Plein texte non joué.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  a_faire:
+  - rejouer « 2005-910 » et « 910 لسنة 2005 » en plein texte depuis 2011 et lire la forme la plus récente du visa
+
+- id: r-onpft-classement-entreprise-publique
+  objet: texte créant l'Office national des postes frontaliers terrestres et le classant, ou non, parmi les entreprises publiques
+  ou: [precis/fr/entreprises_publiques/_annexe_liste.qmd#sec-ep-liste-mouvements]
+  requetes:
+    titres_like: ['%postes frontaliers terrestres%']
+    iort_ar: [المعابر الحدودية البرية]
+    depuis: 2011-01-01
+  passes:
+  - date: 2026-10-13
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache jusqu''au 10 avril 2026, titres seuls : loi n° 2020-22 du 28 avril 2020 (transfert de biens) et décret n° 2024-366 du 11 juin 2024 (organigramme) ; aucun texte de création. Aucun des deux n''est lu ; leurs visas donneraient le texte de création.'
+    couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  a_faire: ['lire les visas de la loi n° 2020-22 (JORT n° 37 de 2020, p. 896-897)']
 
 - id: r-garantie-etat-plafond-2020-lfr
   objet: article de la loi de finances rectificative pour 2020 fixant le plafond des garanties de l'État (7 000 ou 7 500 millions de dinars selon les éditions du rapport sur les transferts et les garanties)

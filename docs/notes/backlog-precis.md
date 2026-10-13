@@ -2321,7 +2321,23 @@ dividendes et versements ; cessions ; longue période ; Livre blanc de 2018 et �
 extérieures ; section « Les effectifs et la masse salariale » (`#sec-ep-effectifs`) ajoutée le
 11 octobre 2026, avant la longue période. Le tableau de l'encours de la dette garantie
 (`tbl-ep-encours`), double de l'onglet « Données » de `fig-ep-encours`, est retiré le 13 octobre
-2026. Dix figures et trente tableaux, tous engendrés depuis les séries sauf quatre
+2026.
+
+**Annexe « La liste des entreprises publiques, 1997-2021 »** (`_annexe_liste.qmd`,
+`#sec-ep-liste`), écrite le 13 octobre 2026 sur `docs/notes/entreprises-publiques-liste-2026-10-13.md` :
+nombre d'entreprises à chaque liste (figure `fig-ep-liste-perimetre`), entrées et sorties liste
+après liste, établissements considérés comme entreprises publiques, liste partielle de 1989-1990 ;
+tableau complet et registre des décrets repliés. Deux relevés versionnés dans
+`precis/fr/entreprises_publiques/listes/` (totaux contrôlés par
+`tests/test_listes_entreprises_publiques.py`). **Restent** : dater les sorties et en donner le
+mode (« Recueil des opérations depuis 1998 » de la Direction générale de la privatisation, **à
+obtenir**) ; listes nominatives des rapports du ministère pour 2022 à 2025 (**lisibles dans le
+corpus de tunisia-data**, à feuilleter à l'image) ; identités retenues sur le seul nom (huit cas,
+TODO de l'annexe) ; contradiction sur l'Agence tunisienne d'Internet (Cour des comptes, 2008) ;
+forme et participation par entreprise ; périmètre d'ensemble avant 1998 (aucune liste publiée) ;
+tableau de tutelle après 2010 et classement de l'Office national des postes frontaliers
+terrestres (fiches `r-ep-tutelle-modificatifs-apres-2010`, `r-onpft-classement-entreprise-publique`) ;
+noms arabes des listes ; lois n° 2004-30 et n° 2007-33 à lire ; libellés arabes de la figure. Dix figures et trente tableaux, tous engendrés depuis les séries sauf quatre
 (les réformes ; les deux registres de textes ; les six éditions du rapport). Depuis le
 11 octobre 2026 (retouche), chaque figure a trois vues — dinars courants, % des dépenses de
 l'État hors service de la dette, % du PIB — et les tableaux de premier plan les mêmes colonnes ;
