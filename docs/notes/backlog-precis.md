@@ -392,6 +392,14 @@ liste qui suit le tableau, citations comprises. Restent :
     exécution : les lois de règlement ne nomment aucune de ces lignes (lues le 13 octobre 2026) ;
     à partir de 2020, le tableau n'existe plus (missions et programmes) ; budgets par ministère depuis 2013,
     comptes du Fonds tunisien de l'investissement — **à obtenir** ou à transcrire ;
+  - **restes du 13 octobre 2026** : entrée de glossaire « crédits de programmes » — aucune
+    définition sourcée (la loi organique du budget n° 2004-42, lue par océrisation, ne la donne
+    pas ; loi n° 67-53 à lire à l'image) ; numéros et dates des lois de finances pour 2018, 2019
+    et 2020 repris de l'index du *Journal officiel*, à relire au fascicule ; libellés arabes des
+    figures `fig-ri-foprodi` et `fig-ri-credits-programmes` à verser
+    (`precis/fr/fiscalite/figures/credits_incitations.py`) avant la traduction du chapitre ;
+    repli du détail de `#sec-ri-2016-2017` et de `#sec-df-sommes-versees` proposé dans une PR
+    brouillon à part, à juger ;
   - **mentions dans les chapitres d'impôt (6 octobre 2026)** : chaque avantage établi par un
     texte est signalé, avec renvoi à `@sec-depenses-fiscales`, dans `_impot_societes.qmd`
     (paramètres d'origine, « 2017 », « 2019 », rendement), `_impot_revenu.qmd` (BIC,
