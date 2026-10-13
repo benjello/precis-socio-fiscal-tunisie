@@ -1,0 +1,39 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : bm-livre-blanc-2016-transport-trafic-comptes
+# sources (citation) : @banque-mondiale-2016-livre-blanc-transports
+# fiches : sources/transport-trafic-comptes.md
+# méthode/hypothèses : Rapport extérieur. La Banque reproduit un tableau de la société sans dire la définition des catégories ni le mode de comptage (billets vendus, comptages, estimation des abonnés).
+# note : Le trafic de la société des transports de Tunis par catégorie de voyageurs, 2007-2014, selon le Livre blanc de la Banque mondiale : en millions de voyageurs et en part du total
+Année,Catégorie de voyageurs,Millions de voyageurs,Source déclarée par la Banque mondiale,Page
+2007,gratuits,45.6,TRANSTU 2015,72
+2007,payants non scolaires,207.0,TRANSTU 2015,72
+2007,scolaires,191.9,TRANSTU 2015,72
+2007,total,444.5,TRANSTU 2015,72
+2008,gratuits,46.2,TRANSTU 2015,72
+2008,payants non scolaires,201.6,TRANSTU 2015,72
+2008,scolaires,184.5,TRANSTU 2015,72
+2008,total,432.3,TRANSTU 2015,72
+2009,gratuits,46.9,TRANSTU 2015,72
+2009,payants non scolaires,188.1,TRANSTU 2015,72
+2009,scolaires,174.0,TRANSTU 2015,72
+2009,total,409.0,TRANSTU 2015,72
+2010,gratuits,52.0,TRANSTU 2015,72
+2010,payants non scolaires,167.9,TRANSTU 2015,72
+2010,scolaires,156.7,TRANSTU 2015,72
+2010,total,376.6,TRANSTU 2015,72
+2011,gratuits,50.1,TRANSTU 2015,72
+2011,payants non scolaires,117.6,TRANSTU 2015,72
+2011,scolaires,127.8,TRANSTU 2015,72
+2011,total,295.5,TRANSTU 2015,72
+2012,gratuits,48.6,TRANSTU 2015,72
+2012,payants non scolaires,115.7,TRANSTU 2015,72
+2012,scolaires,114.2,TRANSTU 2015,72
+2012,total,278.5,TRANSTU 2015,72
+2013,gratuits,49.2,TRANSTU 2015,72
+2013,payants non scolaires,113.1,TRANSTU 2015,72
+2013,scolaires,95.6,TRANSTU 2015,72
+2013,total,257.9,TRANSTU 2015,72
+2014,gratuits,49.8,TRANSTU 2015,72
+2014,payants non scolaires,120.3,TRANSTU 2015,72
+2014,scolaires,89.8,TRANSTU 2015,72
+2014,total,259.9,TRANSTU 2015,72

@@ -1,0 +1,34 @@
+# Manifeste du relevé « zones de développement régional en nombre de délégations, 1994-2024 ».
+#
+# Fichier TENU À LA MAIN, lu par figures/regimes_incitation.py (figure des délégations
+# classées par groupe). Il reprend, sans rien y ajouter, le tableau du chapitre « Les
+# régimes d'incitation à l'investissement » (tbl-df-zones-nombre).
+#
+# LES NOMBRES SONT COMPTÉS SUR LES LISTES. Aucun des décrets ne publie de décompte. Les
+# listes de 1994 et de 1999 classent des gouvernorats entiers : elles ne se dénombrent pas
+# en délégations sans le découpage administratif de l'époque (`denombrable` = non), et la
+# figure ne leur donne pas de barre. Leurs dates d'effet ne sont pas établies. Les dates de
+# 2008 et de 2024 sont calculées (cinq jours après le dépôt du Journal officiel au siège du
+# gouvernorat de Tunis, loi n° 93-64, art. 2) ; celle de 2017 est fixée par le décret.
+# Champ : industrie, artisanat et services ; les zones touristiques ne sont pas comptées.
+
+format: long
+cle_de_ligne: [annee, rang]
+
+colonnes:
+  annee: année du décret
+  date_effet: date d'effet ; vide si elle n'est pas établie
+  rang: place de la catégorie dans la hiérarchie des aides (moins aidée, intermédiaire, plus aidée)
+  categorie: nom de la catégorie dans le décret
+  delegations: nombre de délégations, compté sur la liste
+  gouvernorats: nombre de gouvernorats où elles se trouvent
+  denombrable: oui si la liste entière se compte en délégations
+  texte: clé de citation
+  localisateur: article ou annexe
+
+sources:
+  - decret-94-426-zones-developpement-regional
+  - decret-99-483-zones-developpement-regional
+  - decret-2008-387-zones-developpement-regional
+  - decret-gouv-2017-389-incitations-financieres
+  - decret-2024-182-incitations-financieres

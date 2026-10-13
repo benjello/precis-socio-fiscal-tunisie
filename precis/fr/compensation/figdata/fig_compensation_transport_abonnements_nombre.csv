@@ -1,0 +1,47 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : transport-abonnements-scolaires
+# sources (citation) : @minfin-budget-transport-2013, @minfin-budget-transport-2014, @minfin-budget-transport-2015, @minfin-budget-transport-2016, @minfin-budget-transport-2017
+# fiches : sources/minfin-budget-transport.md
+# méthode/hypothèses : Deux segments qui ne se raccordent pas : éditions 2013 à 2016, puis édition 2017. L'année 2016 a deux valeurs, 565 649 et 433 032, sans explication de la source. Prévisions et chiffres de documents budgétaires, non un dénombrement constaté ; la source ne dit pas l'unité.
+# note : Le nombre d'abonnements scolaires par société de transport, 2012-2017, d'après les budgets du ministère du Transport : deux segments
+Année,État du chiffre,Édition du budget,Segment,Ligne,Abonnements scolaires,Lecture tracée,Page
+2012,loi de finances,2013,éditions 2013 à 2016,Société nationale des chemins de fer tunisiens,14000,oui,10
+2012,loi de finances,2013,éditions 2013 à 2016,Sociétés régionales de transport,290565,oui,10
+2012,loi de finances,2013,éditions 2013 à 2016,Total,453512,oui,10
+2012,loi de finances,2013,éditions 2013 à 2016,Société des transports de Tunis,148947,oui,10
+2013,prévisions,2013,éditions 2013 à 2016,Société nationale des chemins de fer tunisiens,16000,non,10
+2013,prévisions,2013,éditions 2013 à 2016,Sociétés régionales de transport,366665,non,10
+2013,prévisions,2013,éditions 2013 à 2016,Total,534586,non,10
+2013,prévisions,2013,éditions 2013 à 2016,Société des transports de Tunis,151921,non,10
+2013,loi de finances,2014,éditions 2013 à 2016,Société nationale des chemins de fer tunisiens,16000,oui,19
+2013,loi de finances,2014,éditions 2013 à 2016,Sociétés régionales de transport,366665,oui,19
+2013,loi de finances,2014,éditions 2013 à 2016,Total,534586,oui,19
+2013,loi de finances,2014,éditions 2013 à 2016,Société des transports de Tunis,151921,oui,19
+2014,prévisions,2014,éditions 2013 à 2016,Société nationale des chemins de fer tunisiens,23500,non,19
+2014,prévisions,2014,éditions 2013 à 2016,Sociétés régionales de transport,348744,non,19
+2014,prévisions,2014,éditions 2013 à 2016,Total,528946,non,19
+2014,prévisions,2014,éditions 2013 à 2016,Société des transports de Tunis,156702,non,19
+2014,loi de finances complémentaire,2015,éditions 2013 à 2016,Société nationale des chemins de fer tunisiens,13000,oui,18
+2014,loi de finances complémentaire,2015,éditions 2013 à 2016,Sociétés régionales de transport,348744,oui,18
+2014,loi de finances complémentaire,2015,éditions 2013 à 2016,Total,555444,oui,18
+2014,loi de finances complémentaire,2015,éditions 2013 à 2016,Société des transports de Tunis,193700,oui,18
+2015,prévisions,2015,éditions 2013 à 2016,Société nationale des chemins de fer tunisiens,13000,non,18
+2015,prévisions,2015,éditions 2013 à 2016,Sociétés régionales de transport,338288,non,18
+2015,prévisions,2015,éditions 2013 à 2016,Total,556564,non,18
+2015,prévisions,2015,éditions 2013 à 2016,Société des transports de Tunis,205276,non,18
+2015,loi de finances complémentaire,2016,éditions 2013 à 2016,Société nationale des chemins de fer tunisiens,13000,oui,18
+2015,loi de finances complémentaire,2016,éditions 2013 à 2016,Sociétés régionales de transport,338288,oui,18
+2015,loi de finances complémentaire,2016,éditions 2013 à 2016,Total,556564,oui,18
+2015,loi de finances complémentaire,2016,éditions 2013 à 2016,Société des transports de Tunis,205276,oui,18
+2016,prévisions,2016,éditions 2013 à 2016,Société nationale des chemins de fer tunisiens,13390,oui,18
+2016,prévisions,2016,éditions 2013 à 2016,Sociétés régionales de transport,342912,oui,18
+2016,prévisions,2016,éditions 2013 à 2016,Total,565649,oui,18
+2016,prévisions,2016,éditions 2013 à 2016,Société des transports de Tunis,209347,oui,18
+2016,loi de finances,2017,édition 2017,Société nationale des chemins de fer tunisiens,11739,oui,17
+2016,loi de finances,2017,édition 2017,Sociétés régionales de transport,326428,oui,17
+2016,loi de finances,2017,édition 2017,Total,433032,oui,17
+2016,loi de finances,2017,édition 2017,Société des transports de Tunis,94865,oui,17
+2017,prévisions,2017,édition 2017,Société nationale des chemins de fer tunisiens,11978,oui,17
+2017,prévisions,2017,édition 2017,Sociétés régionales de transport,333501,oui,17
+2017,prévisions,2017,édition 2017,Total,441679,oui,17
+2017,prévisions,2017,édition 2017,Société des transports de Tunis,96200,oui,17

@@ -1,0 +1,33 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : ins-commerce-exterieur-par-regime
+# sources (citation) : @ins-annuaire
+# fiches : sources/ins-commerce-exterieur-par-regime.md
+# méthode/hypothèses : STATISTIQUE PUBLIQUE, non budgétaire. L'ANNUAIRE NE DÉFINIT PAS LES DEUX RÉGIMES dans les pages lues ; le libellé arabe est « régime non résident » (نظام غير مقيم), qui n'est pas la notion d'entreprise totalement exportatrice du code de 1993 : ne pas assimiler sans source. PART NON PUBLIÉE : part_off_shore_pct = 100 × régime off shore / ensemble, tels qu'imprimés, arrondie au dixième. ARBITRAGE : chaque année est imprimée dans une à trois éditions ; la série retient la dernière (même source, même tableau, millésimes successifs) ; nb_editions_differentes compte les éditions antérieures aux chiffres différents — 2001, 2002, 2004 (exportations 12 054,9 puis 12 403,8), 2005, 2007, 2014, 2021 ; toutes les attestations sont dans ins-commerce-exterieur-par-regime-editions. LA DERNIÈRE ANNÉE D'UNE ÉDITION EST SOUVENT RÉVISÉE PAR LA SUIVANTE (dix des treize attestations révisées) : 2023, imprimée dans la seule édition 2019-2023 (`nb_editions` = 1), peut l'être encore. EN 2004 ET 2005 LA RÉVISION PORTE SUR LE SEUL RÉGIME OFF SHORE (+ 2 à + 4 %), le régime général ne bougeant pas ; 2003 et les années antérieures ne sont imprimées dans aucune édition postérieure à cette révision : la source ne dit pas s'il s'agit de chiffres provisoires devenus définitifs ou d'un changement de méthode — ne pas tracer la part d'un trait continu à travers 2003-2004 sans le dire. Régime général + régime off shore = ensemble à 0,1 près (arrondis). RELU À L'IMAGE : en-têtes et trois lignes de total des 22 éditions. Ventilation par groupement sectoriel non transcrite. Montants courants ; aucun ratio au PIB. Série arrêtée à 2023 (édition 2019-2023).
+# note : La part du régime off shore dans les exportations et les importations de biens, 1998-2023
+Année,"Exportations, ensemble (MD)","Exportations, régime off shore (MD)",Part off shore des exportations (%),Édition de l'annuaire (exportations),"Importations, ensemble (MD)","Importations, régime off shore (MD)",Part off shore des importations (%),Édition de l'annuaire (importations)
+1998,6518.3,4402.4,67.5,1995-2001,9489.5,3224.3,34.0,1995-2001
+1999,6966.9,4607.0,66.1,1995-2001,10070.5,3212.2,31.9,1995-2001
+2000,8004.8,5092.4,63.6,1998-2002,11738.0,3487.5,29.7,1998-2002
+2001,9536.2,6433.1,67.5,1999-2003,13697.3,4441.7,32.4,1999-2003
+2002,9748.6,6752.7,69.3,2000-2004,13510.9,4539.3,33.6,2000-2004
+2003,10342.6,7162.9,69.3,2001-2005,14038.9,5008.0,35.7,2001-2005
+2004,12403.8,8220.6,66.3,2002-2006,16185.1,5516.0,34.1,2002-2006
+2005,13793.6,8783.9,63.7,2003-2007,17291.5,5844.3,33.8,2003-2007
+2006,15558.0,9658.5,62.1,2004-2008,20003.5,6651.5,33.3,2004-2008
+2007,19409.6,11694.9,60.3,2005-2009,24437.3,8106.9,33.2,2005-2009
+2008,23637.0,12545.6,53.1,2006-2010,30241.2,8559.3,28.3,2006-2010
+2009,19469.2,11872.7,61.0,2007-2011,25877.6,7745.6,29.9,2007-2011
+2010,23519.0,14361.1,61.1,2008-2012,31816.7,9846.9,30.9,2008-2012
+2011,25091.9,16410.0,65.4,2008-2012,33695.4,10943.5,32.5,2008-2012
+2012,26547.7,16347.4,61.6,2010-2014,38178.0,10744.4,28.1,2010-2014
+2013,27701.2,17389.6,62.8,2011-2015,39505.5,11334.5,28.7,2011-2015
+2014,28406.7,18819.9,66.3,2012-2016,42012.8,12013.6,28.6,2012-2016
+2015,27607.2,18834.1,68.2,2013-2017,39609.7,11815.4,29.8,2013-2017
+2016,29145.6,21456.5,73.6,2014-2018,41746.8,13421.3,32.1,2014-2018
+2017,34426.6,25711.2,74.7,2015-2019,50021.6,16113.0,32.2,2015-2019
+2018,40987.4,29850.4,72.8,2016-2020,60010.3,19701.9,32.8,2016-2020
+2019,43855.4,32669.0,74.5,2017-2021,63291.6,20856.0,33.0,2017-2021
+2020,38705.9,27993.7,72.3,2018-2022,51536.2,16990.6,33.0,2018-2022
+2021,46654.2,33445.1,71.7,2019-2023,62864.9,20595.8,32.8,2019-2023
+2022,57557.5,39120.8,68.0,2019-2023,82788.9,25603.8,30.9,2019-2023
+2023,62077.3,43705.7,70.4,2019-2023,79146.3,25739.0,32.5,2019-2023
