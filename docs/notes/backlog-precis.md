@@ -2329,9 +2329,11 @@ nombre d'entreprises à chaque liste (figure `fig-ep-liste-perimetre`), entrées
 après liste, établissements considérés comme entreprises publiques, liste partielle de 1989-1990 ;
 tableau complet et registre des décrets repliés. Deux relevés versionnés dans
 `precis/fr/entreprises_publiques/listes/` (totaux contrôlés par
-`tests/test_listes_entreprises_publiques.py`). **Restent** : dater les sorties et en donner le
-mode (« Recueil des opérations depuis 1998 » de la Direction générale de la privatisation, **à
-obtenir**) ; listes nominatives des rapports du ministère pour 2022 à 2025 (**lisibles dans le
+`tests/test_listes_entreprises_publiques.py`). Quinze sorties portent l'année et le mode d'une cession, lus au « Recueil des
+opérations depuis 1998 » de la Direction générale de la privatisation (série
+`privatisation-recueil-operations`, relevé `listes/sorties-recueil-privatisation.csv`).
+**Restent** : quinze sorties sans opération au recueil — texte de fusion, de dissolution ou de
+cession **à chercher au corpus du Journal officiel** ; listes nominatives des rapports du ministère pour 2022 à 2025 (**lisibles dans le
 corpus de tunisia-data**, à feuilleter à l'image) ; identités retenues sur le seul nom (huit cas,
 TODO de l'annexe) ; contradiction sur l'Agence tunisienne d'Internet (Cour des comptes, 2008) ;
 forme et participation par entreprise ; périmètre d'ensemble avant 1998 (aucune liste publiée) ;

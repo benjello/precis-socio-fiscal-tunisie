@@ -38,6 +38,8 @@ import figtools  # noqa: E402
 RELEVES = Path(__file__).resolve().parent.parent / "listes"
 ENSEMBLE = "entreprises-publiques-listes"
 ETABLISSEMENTS = "etablissements-entreprises-publiques"
+SORTIES = "sorties-recueil-privatisation"
+RECUEIL = "privatisation-recueil-operations"
 
 BLEU, ORANGE, VERT, GRIS = "#0969da", "#bc4c00", "#1a7f37", "#57606a"
 # Année de la liste -> libellé de colonne
@@ -69,7 +71,7 @@ figtools.register_provenance(
              "rapport pour 2021 est un recensement du ministère, non une liste fixée par "
              "décret : il se compare aux décrets sans s'y raccorder. Une entreprise absente "
              "d'une liste et présente dans la précédente est sortie du périmètre entre les "
-             "deux dates ; ni la date ni le mode de la sortie ne sont donnés."))
+             "deux dates ; les listes ne donnent ni la date ni le mode de la sortie."))
 figtools.register_provenance(
     ETABLISSEMENTS, titre="Établissements publics à caractère non administratif considérés "
                           "comme entreprises publiques, 1997-2007",
@@ -215,3 +217,55 @@ def tableau_etablissements(caption: str, tbl_id: str = "tbl-ep-liste-etablisseme
     c = comptes()["etablissements"]
     lignes.append(["**Total**"] + [f"**{c[k]}**" for k in ETATS])
     _md(["Établissement"] + list(ETATS.values()), lignes, caption, tbl_id)
+
+
+def operations_des_sorties() -> pd.DataFrame:
+    """Une ligne par entreprise sortie du tableau de tutelle et rangée au recueil de la
+    Direction générale de la privatisation : années de cession, modes et produit, tels que le
+    recueil les imprime (plusieurs lignes du recueil réunies, dans leur ordre)."""
+    recueil = figtools.series(RECUEIL)
+    lignes = []
+    for _, s in _lire(SORTIES).iterrows():
+        op = recueil[(recueil["secteur"] == s["secteur_recueil"])
+                     & (recueil["sigle"] == s["sigle_recueil"])].sort_values("ordre")
+        if op.empty:
+            raise ValueError(f"{s['entreprise']} : aucune ligne du recueil sous "
+                             f"{s['secteur_recueil']} / {s['sigle_recueil']}")
+        annees = []
+        for a in op["annee_imprimee"].astype(str):
+            if a not in annees:
+                annees.append(a)
+        lignes.append({"rang": int(s["rang"]), "entreprise": s["entreprise"],
+                       "liste_avant": s["liste_avant"], "liste_apres": s["liste_apres"],
+                       "position": s["position"], "rapprochement": s["rapprochement"],
+                       "annee_debut": int(op["annee_debut"].min()),
+                       "annee_fin": int(op["annee_fin"].max()),
+                       "annees": " ; ".join(annees),
+                       "modes": " ; ".join(dict.fromkeys(op["mode"].astype(str))),
+                       "produit_md": float(op["produit_milliers_dinars"].sum()) / 1000})
+    return pd.DataFrame(lignes)
+
+
+def tableau_sorties(caption: str, tbl_id: str = "tbl-ep-liste-sorties-recueil") -> None:
+    """Sorties du tableau de tutelle que le recueil range parmi ses opérations."""
+    d = operations_des_sorties()
+    ordre = {"entre les deux listes": 0, "avant la première liste": 1}
+    d = d.sort_values(["liste_avant", "annee_debut", "rang"],
+                      key=lambda c: c.map(ordre) if c.name == "position" else c)
+    lignes = []
+    for position, titre in (("entre les deux listes", "Opération entre les deux listes"),
+                            ("avant la première liste",
+                             "Opération antérieure, l'entreprise figurant encore sur la liste suivante")):
+        g = d[d["position"] == position]
+        lignes.append([f"**{titre}**", "", "", "", ""])
+        for _, r in g.iterrows():
+            produit = (f"{r['produit_md']:.1f}" if r["produit_md"] >= 1
+                       else f"{r['produit_md']:.2f}").replace(".", ",")
+            lignes.append([r["entreprise"],
+                           f"{r['liste_avant']} – {LISTES[r['liste_apres']]}",
+                           r["annees"].replace("-", ", ").replace(" ; ", ", "), r["modes"], produit])
+    out = ["| Entreprise | Quitte le tableau entre | Année de cession | "
+           "Opération portée au recueil | Produit (MD) |",
+           "|---|:-:|:-:|---|--:|"]
+    out += ["| " + " | ".join(l) + " |" for l in lignes]
+    print("\n".join(out) + f"\n\n: {caption} {{#{tbl_id}}}\n")

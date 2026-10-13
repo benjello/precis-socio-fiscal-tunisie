@@ -1,0 +1,36 @@
+# Manifeste du relevé « sorties du tableau de tutelle rapprochées du Recueil des opérations
+# depuis 1998 de la Direction générale de la privatisation ».
+#
+# Fichier lu par figures/listes.py (tableau des opérations de l'annexe). Il ne porte AUCUN
+# CHIFFRE : il dit, pour une entreprise qui figure sur une liste du tableau de tutelle et plus
+# sur la suivante, sous quel secteur et quel sigle le recueil la range. Années, modes et
+# produits sont lus dans la série `privatisation-recueil-operations` de tunisia-data.
+#
+# UNE OPÉRATION N'EST PAS UNE SORTIE : le recueil ne dit ni la part de l'État après
+# l'opération, ni la date à laquelle l'entreprise cesse d'être publique. `position` dit
+# seulement où tombe la première année de cession : entre les deux listes, ou avant la
+# première (l'entreprise figure encore sur la liste qui suit l'opération).
+# RAPPROCHEMENT « nom seul » : le recueil imprime « Société Tunisienne de Motoculture » (sigle
+# SONAM) pour la Société nationale de motoculture, et « Bâtiment » pour la Société le bâtiment.
+# NON RETENU : « Parc La Soukra », concession de 2003 à la « Société Montazah Carthage » —
+# rien ne le relie à la Société Soukra des loisirs, sortie entre 2002 et 2005.
+
+format: large
+cle_de_ligne: [rang]
+
+colonnes:
+  rang: rang de l'entreprise dans entreprises-publiques-listes.csv
+  entreprise: nom retenu dans ce relevé
+  liste_avant: dernière liste du tableau de tutelle où l'entreprise figure
+  liste_apres: première liste où elle ne figure plus (2010 pour l'état de fin 2010)
+  secteur_recueil: page du recueil (colonne secteur de la série)
+  sigle_recueil: sigle imprimé au recueil (colonne sigle de la série)
+  rapprochement: « nom et sigle » ou « nom seul »
+  position: « entre les deux listes » ou « avant la première liste »
+
+sources:
+  - dgpv-recueil-operations
+  - decret98-1172
+  - decret2002-2200
+  - decret2005-910
+  - decret2007-2561
