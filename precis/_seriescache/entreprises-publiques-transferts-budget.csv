@@ -1,0 +1,361 @@
+annee,etat,edition,perimetre,derniere_edition,divergence_entre_editions,ventilation,cle,valeur_milliers,valeur_md,imprime,restauration,ecart_somme_milliers,fichier,page_pdf,lecture
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,nature,remuneration,730389,730.389,389 730,True,-1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,nature,fonctionnement,120313,120.313,120 313,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,nature,interventions,2886733,2886.733,2 886 733,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,nature,investissement,414721,414.721,414 721,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,nature,total,4152157,4152.157,4 152 157,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,nature,remuneration,800439,800.439,800 439,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,nature,fonctionnement,113600,113.6,113 600,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,nature,interventions,4864675,4864.675,4 864 675,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,nature,investissement,383111,383.111,383 111,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,nature,total,6161825,6161.825,6 161 825,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,nature,remuneration,807021,807.021,807 021,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,nature,fonctionnement,115227,115.227,115 227,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,nature,interventions,5546377,5546.377,5 546 377,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,nature,investissement,383992,383.992,383 992,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,nature,total,6852617,6852.617,6 852 617,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,nature,remuneration,895451,895.451,451 895,True,1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,nature,fonctionnement,107347,107.347,107 347,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,nature,interventions,6295343,6295.343,6 295 343,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,nature,investissement,414126,414.126,414 126,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,nature,total,7712266,7712.266,7 712 266,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,False,nature,remuneration,896101,896.101,896 101,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,False,nature,fonctionnement,107674,107.674,107 674,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,nature,interventions,6972358,6972.358,6 972 358,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,nature,investissement,415928,415.928,415 928,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,nature,total,8392060,8392.06,8 392 060,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,False,nature,remuneration,896101,896.101,896 101,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,False,nature,fonctionnement,107674,107.674,107 674,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,True,nature,interventions,6971104,6971.104,6 971 104,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,True,nature,investissement,417428,417.428,417 428,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,True,nature,total,8392306,8392.306,8 392 306,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,nature,remuneration,948510,948.51,948 510,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,nature,fonctionnement,137361,137.361,361 137,True,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,nature,interventions,5265253,5265.253,5 265 253,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,nature,investissement,652107,652.107,107 652,True,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,nature,total,7003231,7003.231,7 003 231,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,nature,remuneration,1008929,1008.929,1008 929,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,nature,fonctionnement,163457,163.457,163 457,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,nature,interventions,6654396,6654.396,6 654 396,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,nature,investissement,662315,662.315,662 315,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,nature,total,8489097,8489.097,8 489 097,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,nature,remuneration,955343,955.343,955 343,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,nature,fonctionnement,167737,167.737,167 737,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,nature,interventions,6826369,6826.369,6 826 369,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,nature,investissement,663715,663.715,663 715,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,nature,total,8613164,8613.164,8 613 164,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,nature,remuneration,1007186,1007.186,1 007 186,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,nature,fonctionnement,171324,171.324,171 324,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,nature,interventions,6826723,6826.723,6 826 723,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,nature,investissement,663715,663.715,663 715,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,nature,total,8668948,8668.948,8 668 948,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,nature,remuneration,1053180,1053.18,1 053 180,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,nature,fonctionnement,229491,229.491,229 491,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,nature,interventions,6257192,6257.192,6 257 192,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,nature,investissement,615203,615.203,615 203,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,nature,total,8155066,8155.066,8 155 066,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,False,nature,remuneration,1182039,1182.039,1 182 039,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,nature,fonctionnement,210449,210.449,210 449,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,False,nature,interventions,7758574,7758.574,7 758 574,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,False,nature,investissement,746028,746.028,746 028,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,nature,total,9897090,9897.09,9 897 090,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,nature,remuneration,1182039,1182.039,1 182 039,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,nature,fonctionnement,209299,209.299,209 299,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,nature,interventions,7758574,7758.574,7 758 574,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,nature,investissement,746028,746.028,746 028,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,nature,total,9895940,9895.94,9 895 940,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,False,nature,remuneration,1182039,1182.039,1 182 039,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,True,nature,fonctionnement,209299,209.299,209 299,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,False,nature,interventions,7758574,7758.574,7 758 574,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,False,nature,investissement,746028,746.028,746 028,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,True,nature,total,9895940,9895.94,9 895 940,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,nature,remuneration,1137338,1137.338,1 137 338,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,nature,fonctionnement,224026,224.026,224 026,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,nature,interventions,5701802,5701.802,5 701 802,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,nature,investissement,666401,666.401,666 401,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,nature,total,7729567,7729.567,7 729 567,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,nature,remuneration,1144400,1144.4,1 144 400,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,nature,fonctionnement,362334,362.334,362 334,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,nature,interventions,8717303,8717.303,8 717 303,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,nature,investissement,548739,548.739,548 739,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,nature,total,10772777,10772.777,10 772 777,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,remuneration,1144400,1144.4,1 144 400,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,True,nature,fonctionnement,362335,362.335,362 335,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,True,nature,interventions,8717304,8717.304,8 717 304,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,investissement,548739,548.739,548 739,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,True,nature,total,10772778,10772.778,10 772 778,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,remuneration,1144400,1144.4,1 144 400,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,True,nature,fonctionnement,362335,362.335,362 335,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,True,nature,interventions,8717304,8717.304,8 717 304,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,investissement,548739,548.739,548 739,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,True,nature,total,10772778,10772.778,10 772 778,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,nature,remuneration,1210604,1210.604,1 210 604,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,nature,fonctionnement,236310,236.31,236 310,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,nature,interventions,10174959,10174.959,10 174 959,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,nature,investissement,814765,814.765,814 765,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,nature,total,12436637,12436.637,12 436 637,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,remuneration,1176376,1176.376,1 176 376,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,fonctionnement,204900,204.9,204 900,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,interventions,15054731,15054.731,15 054 731,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,investissement,642548,642.548,642 548,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,total,17078555,17078.555,17 078 555,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,remuneration,1176376,1176.376,1 176 376,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,fonctionnement,204900,204.9,204 900,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,interventions,15054731,15054.731,15 054 731,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,investissement,642548,642.548,642 548,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,total,17078555,17078.555,17 078 555,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,remuneration,1255198,1255.198,1 255 198,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,fonctionnement,426866,426.866,426 866,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,interventions,11977036,11977.036,11 977 036,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,investissement,855364,855.364,855 364,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,nature,total,14514464,14514.464,14 514 464,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,remuneration,1248271,1248.271,1 248 271,False,-22977,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,fonctionnement,428252,428.252,428 252,False,-22977,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,interventions,14710349,14710.349,14 710 349,False,-22977,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,investissement,694994,694.994,694 994,False,-22977,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,total,17104843,17104.843,17 104 843,False,-22977,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,remuneration,1312116,1312.116,1 312 116,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,fonctionnement,487181,487.181,487 181,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,interventions,14637227,14637.227,14 637 227,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,investissement,895722,895.722,895 722,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,nature,total,17332246,17332.246,17 332 246,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,secteur,secteur_social,719724,719.724,719 724,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,secteur,secteur_economique,2959897,2959.897,2 959 897,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,secteur,secteur_educatif_culturel,302767,302.767,302 767,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,secteur,secteur_souverainete,169768,169.768,169 768,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,secteur,total,4152157,4152.157,4 152 157,False,-1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_social,995791,995.791,995 791,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_economique,4618705,4618.705,4 618 705,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_educatif_culturel,317384,317.384,317 384,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_souverainete,229945,229.945,229 945,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,secteur,total,6161825,6161.825,6 161 825,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_social,1542154,1542.154,1 542 154,False,-1692,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_economique,4618705,4618.705,4 618 705,False,-1692,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_educatif_culturel,317384,317.384,317 384,False,-1692,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_souverainete,372682,372.682,372 682,False,-1692,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,secteur,total,6852617,6852.617,6 852 617,False,-1692,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_social,1216517,1216.517,1 216 517,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_economique,5853666,5853.666,5 853 666,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_educatif_culturel,380875,380.875,380 875,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_souverainete,261208,261.208,261 208,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,secteur,total,7712266,7712.266,7 712 266,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_social,1735532,1735.532,1 735 532,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_economique,5856445,5856.445,5 856445,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_educatif_culturel,380875,380.875,380 875,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_souverainete,419208,419.208,419 208,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,secteur,total,8392060,8392.06,8 392 060,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_social,1735532,1735.532,1 735 532,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_economique,5856445,5856.445,5 856 445,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,True,secteur,secteur_educatif_culturel,381121,381.121,381 121,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_souverainete,419208,419.208,419 208,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,True,secteur,total,8392306,8392.306,8 392 306,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_social,946138,946.138,946 138,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_economique,5333099,5333.099,5 333 099,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_educatif_culturel,420794,420.794,420 794,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,secteur,secteur_souverainete,303200,303.2,303 200,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,secteur,total,7003231,7003.231,7 003 231,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_social,2049770,2049.77,2 049 770,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_economique,5661711,5661.711,5 661 711,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_educatif_culturel,425813,425.813,425 813,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_souverainete,351803,351.803,351 803,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,secteur,total,8489097,8489.097,8 489 097,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_social,2049896,2049.896,2 049 896,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_economique,5773791,5773.791,5 773 791,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_educatif_culturel,426048,426.048,426 048,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_souverainete,363429,363.429,363 429,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,secteur,total,8613164,8613.164,8 613 164,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,secteur,secteur_social,2049896,2049.896,2 049 896,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,secteur,secteur_economique,5698075,5698.075,5 698 075,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,secteur,secteur_educatif_culturel,426048,426.048,426 048,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,secteur,secteur_souverainete,494929,494.929,494 929,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,secteur,total,8668948,8668.948,8 668 948,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_social,1861940,1861.94,1 861 940,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_economique,5437030,5437.03,5 437 030,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_educatif_culturel,451036,451.036,451 036,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_souverainete,405060,405.06,405 060,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,secteur,total,8155066,8155.066,8 155 066,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_social,2932391,2932.391,2 932 391,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_economique,5941581,5941.581,5 941 581,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_educatif_culturel,581507,581.507,581 507,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_souverainete,441611,441.611,441 611,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,secteur,total,9897090,9897.09,9 897 090,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_social,2930991,2930.991,2 930 991,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_economique,5738631,5738.631,5 738 631,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_educatif_culturel,581757,581.757,581 757,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_souverainete,644561,644.561,644 561,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,secteur,total,9895940,9895.94,9 895 940,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,True,secteur,secteur_social,2930991,2930.991,2 930 991,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,True,secteur,secteur_economique,5738631,5738.631,5 738 631,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,True,secteur,secteur_educatif_culturel,581757,581.757,581 757,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,True,secteur,secteur_souverainete,644561,644.561,644 561,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,True,secteur,total,9895940,9895.94,9 895 940,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_social,2148398,2148.398,2 148 398,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_economique,4585107,4585.107,4 585 107,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_educatif_culturel,534718,534.718,534 718,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_souverainete,461344,461.344,461 344,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,secteur,total,7729567,7729.567,7 729 567,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,7,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_social,2272953,2272.953,2 272 953,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_economique,7324565,7324.565,7 324 565,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_educatif_culturel,491999,491.999,491 999,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_souverainete,683260,683.26,683 260,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,secteur,total,10772777,10772.777,10 772 777,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_social,2272953,2272.953,2 272 953,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,True,secteur,secteur_economique,7324566,7324.566,7 324 566,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_educatif_culturel,491999,491.999,491 999,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_souverainete,683260,683.26,683 260,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,True,secteur,total,10772778,10772.778,10 772 778,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_social,2272953,2272.953,2 272 953,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,True,secteur,secteur_economique,7324566,7324.566,7 324 566,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_educatif_culturel,491999,491.999,491 999,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_souverainete,683260,683.26,683 260,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,True,secteur,total,10772778,10772.778,10 772 778,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_social,2430709,2430.709,2 430 709,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_economique,8787642,8787.642,8 787 642,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_educatif_culturel,548352,548.352,352 548,True,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_souverainete,669934,669.934,669 934,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,secteur,total,12436637,12436.637,12 436 637,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,8,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_social,2521643,2521.643,2 521 643,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_economique,13398164,13398.164,13 398 164,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_educatif_culturel,500325,500.325,500 325,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_souverainete,658423,658.423,658 423,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,total,17078555,17078.555,17 078 555,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_social,2521643,2521.643,2 521 643,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_economique,13398164,13398.164,13 398 164,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_educatif_culturel,500325,500.325,500 325,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_souverainete,658423,658.423,658 423,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,total,17078555,17078.555,17 078 555,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_social,2890269,2890.269,2 890 269,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_economique,10329529,10329.529,10 329 529,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_educatif_culturel,608935,608.935,608 935,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,secteur_souverainete,685731,685.731,685 731,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,secteur,total,14514464,14514.464,14 514 464,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,8,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_social,3079999,3079.999,3 079 999,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_economique,12734538,12734.538,12 734 538,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_educatif_culturel,593638,593.638,593 638,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_souverainete,696668,696.668,696 668,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,total,17104843,17104.843,17 104 843,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_social,3204262,3204.262,3 204 262,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_economique,12758547,12758.547,12 758 547,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_educatif_culturel,622919,622.919,622 919,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,secteur_souverainete,746518,746.518,746 518,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,secteur,total,17332246,17332.246,17 332 246,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,source,ressources_propres_budget,3779913,3779.913,3 779 913,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,source,credits_exterieurs_affectes,40005,40.005,40005,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,source,comptes_speciaux_tresor,326454,326.454,326 454,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,source,dons,5785,5.785,5 785,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2016,réalisations,LF2020,ancien (édition LF 2020),True,False,source,total,4152157,4152.157,4 152 157,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,source,ressources_propres_budget,5741317,5741.317,5 741 317,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,source,credits_exterieurs_affectes,52504,52.504,52 504,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,source,comptes_speciaux_tresor,349315,349.315,315 349,True,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,source,dons,18689,18.689,18 689,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2020,ancien (édition LF 2020),False,False,source,total,6161825,6161.825,6 161 825,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,source,ressources_propres_budget,6432109,6432.109,6 432 109,False,-99,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,source,credits_exterieurs_affectes,52405,52.405,52 405,False,-99,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,source,comptes_speciaux_tresor,349315,349.315,349 315,False,-99,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,source,dons,18689,18.689,18 689,False,-99,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2017,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),True,False,source,total,6852617,6852.617,6 852 617,False,-99,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,source,ressources_propres_budget,7244825,7244.825,7 244 825,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,source,credits_exterieurs_affectes,69150,69.15,69 150,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,source,comptes_speciaux_tresor,379566,379.566,379 566,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,source,dons,18726,18.726,18 726,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2020,ancien (édition LF 2020),False,False,source,total,7712266,7712.266,7 712 266,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,source,ressources_propres_budget,7924619,7924.619,7 924 619,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,False,source,credits_exterieurs_affectes,69150,69.15,69 150,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,False,source,comptes_speciaux_tresor,379566,379.566,379 566,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,False,source,dons,18726,18.726,18 726,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,source,total,8392060,8392.06,8 392 060,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,True,source,ressources_propres_budget,7924864,7924.864,7 924 864,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,False,source,credits_exterieurs_affectes,69150,69.15,69 150,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,False,source,comptes_speciaux_tresor,379566,379.566,379 566,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,False,source,dons,18726,18.726,18 726,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2018,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),True,True,source,total,8392306,8392.306,8 392 306,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,source,ressources_propres_budget,6328677,6328.677,6 328 677,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,source,credits_exterieurs_affectes,58015,58.015,58 015,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,source,comptes_speciaux_tresor,600761,600.761,600 761,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,source,dons,15778,15.778,15 778,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,loi de finances,LF2020,ancien (édition LF 2020),False,False,source,total,7003231,7003.231,7 003 231,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2020.pdf,7,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,source,ressources_propres_budget,7790314,7790.314,7 790 314,False,-91,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,source,credits_exterieurs_affectes,79552,79.552,79 552,False,-91,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,source,comptes_speciaux_tresor,603362,603.362,603 362,False,-91,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,source,dons,15778,15.778,15 778,False,-91,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2021,révisé (éditions LF 2021 et suivantes),False,True,source,total,8489097,8489.097,8 489 097,False,-91,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,source,ressources_propres_budget,7871551,7871.551,7 871 551,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,source,credits_exterieurs_affectes,79562,79.562,79 562,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,source,comptes_speciaux_tresor,646193,646.193,646 193,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,source,dons,15859,15.859,15 859,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2019,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,source,total,8613165,8613.165,8 613 165,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,source,ressources_propres_budget,7927335,7927.335,7 927 335,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,source,credits_exterieurs_affectes,79562,79.562,79 562,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,source,comptes_speciaux_tresor,646193,646.193,646 193,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,source,dons,15859,15.859,15 859,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2019,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),True,True,source,total,8668948,8668.948,8 668 948,False,1,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,source,ressources_propres_budget,7547046,7547.046,7 547 046,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,source,credits_exterieurs_affectes,84501,84.501,84 501,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,source,comptes_speciaux_tresor,521349,521.349,521 349,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,source,dons,2170,2.17,2 170,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,loi de finances,LF2021,révisé (éditions LF 2021 et suivantes),False,False,source,total,8155066,8155.066,8 155 066,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2021.pdf,4,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,source,ressources_propres_budget,9140267,9140.267,9 140 267,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,False,source,credits_exterieurs_affectes,24572,24.572,24 572,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,source,comptes_speciaux_tresor,730381,730.381,730 381,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,False,source,dons,1870,1.87,1 870,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2020,réalisations,LF2022,révisé (éditions LF 2021 et suivantes),False,True,source,total,9897090,9897.09,9 897 090,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,source,ressources_propres_budget,9140517,9140.517,9 140 517,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,source,credits_exterieurs_affectes,24572,24.572,24 572,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,source,comptes_speciaux_tresor,728981,728.981,728 981,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,source,dons,1870,1.87,1 870,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2020,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,source,total,9895940,9895.94,9 895 940,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,True,source,ressources_propres_budget,9140517,9140.517,9 140 517,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,False,source,credits_exterieurs_affectes,24572,24.572,24 572,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,True,source,comptes_speciaux_tresor,728981,728.981,728 981,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,False,source,dons,1870,1.87,1 870,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2020,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),True,True,source,total,9895940,9895.94,9 895 940,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,source,ressources_propres_budget,7058136,7058.136,7 058 136,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,source,credits_exterieurs_affectes,90645,90.645,90 645,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,source,comptes_speciaux_tresor,569786,569.786,569 786,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,source,dons,11000,11.0,11 000,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2021,loi de finances,LF2022,révisé (éditions LF 2021 et suivantes),False,False,source,total,7729567,7729.567,7 729 567,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2022.pdf,8,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,source,ressources_propres_budget,10230889,10230.889,10 230 889,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,source,credits_exterieurs_affectes,11667,11.667,11 667,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,source,comptes_speciaux_tresor,521221,521.221,521 221,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,False,source,dons,9000,9.0,9 000,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2021,réalisations,LF2023,révisé (éditions LF 2021 et suivantes),False,True,source,total,10772777,10772.777,10 772 777,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,ressources_propres_budget,10230889,10230.889,10 230 889,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,credits_exterieurs_affectes,11667,11.667,11 667,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,True,source,comptes_speciaux_tresor,521222,521.222,521 222,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,dons,9000,9.0,9 000,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,True,source,total,10772778,10772.778,10 772 778,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,ressources_propres_budget,10230889,10230.889,10 230 889,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,credits_exterieurs_affectes,11667,11.667,11 667,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,True,source,comptes_speciaux_tresor,521222,521.222,521 222,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,dons,9000,9.0,9 000,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2021,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,True,source,total,10772778,10772.778,10 772 778,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,source,ressources_propres_budget,11263940,11263.94,11 263 940,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,source,credits_exterieurs_affectes,265042,265.042,265 042,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,source,comptes_speciaux_tresor,907655,907.655,907 655,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,source,dons,0,0.0,-,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2022,loi de finances,LF2023,révisé (éditions LF 2021 et suivantes),False,False,source,total,12436637,12436.637,12 436 637,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2023.pdf,9,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,ressources_propres_budget,15601295,15601.295,15 601 295,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,credits_exterieurs_affectes,218991,218.991,218 991,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,comptes_speciaux_tresor,1258269,1258.269,1 258 269,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,dons,0,0.0,-,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2022,réalisations,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,total,17078555,17078.555,17 078 555,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,ressources_propres_budget,15601295,15601.295,15 601 295,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,credits_exterieurs_affectes,218991,218.991,218 991,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,comptes_speciaux_tresor,1258269,1258.269,1 258 269,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,dons,0,0.0,-,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2022,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,total,17078555,17078.555,17 078 555,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,ressources_propres_budget,12904323,12904.323,12 904 323,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,credits_exterieurs_affectes,215200,215.2,215 200,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,comptes_speciaux_tresor,1386041,1386.041,1 386 041,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,dons,8900,8.9,8 900,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2023,loi de finances,LF2024,révisé (éditions LF 2021 et suivantes),False,False,source,total,14514464,14514.464,14 514 464,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2024.pdf,9,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,ressources_propres_budget,15662683,15662.683,15 662 683,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,credits_exterieurs_affectes,47177,47.177,47 177,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,comptes_speciaux_tresor,1394983,1394.983,1 394 983,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,dons,0,0.0,-,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2023,réalisations,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,total,17104843,17104.843,17 104 843,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,ressources_propres_budget,15578567,15578.567,15 578 567,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,credits_exterieurs_affectes,297180,297.18,297 180,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,comptes_speciaux_tresor,1447499,1447.499,1 447 499,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,dons,9000,9.0,9 000,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image
+2024,loi de finances,LF2025,révisé (éditions LF 2021 et suivantes),True,False,source,total,17332246,17332.246,17 332 246,False,0,data/raw/caisses/minfin/annexe8_transferts_LF2025.pdf,8,image

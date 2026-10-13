@@ -6,6 +6,36 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Versement du 11/10/2026 (entreprises publiques, brouillon)
+
+Source : `docs/notes/entreprises-publiques-2026-10-11.md`, § 3. Notices neuves dans
+`precis/fr/entreprises_publiques/references.json` seulement (le livre n'a pas d'arabe) :
+`loi69-50`, `loi85-72`, `loi87-47`, `loi93-124`, `loi94-102`, `loi96-74`, `loi99-38`,
+`loi2001-33`, `loi2006-36`, `decret2002-2197` (URL pist.tn, édition française) ;
+`minfin-transferts-garanties` (clé collective du catalogue de `tunisia-data`) et
+`minfin-transferts-2020` à `-2025` ; `minfin-dette-2022`, `minfin-dette-2025` ;
+`dgpv-recettes-annuelles-1987-2005`, `dgpv-recettes-annuelles-1987-2009`,
+`dgpv-recettes-par-periode` ; `pm-livre-blanc-ep-2018` (aussi versée en FR et AR dans
+`remunerations_publiques`) ; `itceq-privatisation-2010` ; `loi2020-45-lfr` (loi de finances
+rectificative pour 2020, édition française lue p. 2931-2932 ; dernière page à relever).
+Absentes de Zotero.
+
+- **Recopiées à l'identique d'un autre livre**, à promouvoir au fonds commun dans les deux
+  langues : `imf-tunisia-art4-2020`, `wb-tunisia-per-2020` (de `remunerations_publiques`) ;
+  `decret97-564`, `decret2004-2265`, `decret2000-1902` (de `caisses`) ; `loi-org-2019-15-lob`
+  (de `fiscalite`) ; `loi70-26`, `minfin-finances-publiques-2008`, `-2011`,
+  `minfin-compensation-carburants-2014` (de `compensation`) ; `bct-ra`, `ins-annuaire` (de
+  `finances_locales`).
+- `imf-tunisia-art4-2020` : titre et titre court corrigés (« 2021 Article IV Consultation »),
+  clé inchangée ; à corriger aussi dans Zotero.
+- `decret2002-2197` : intitulé abrégé (fin de l'intitulé officiel non reprise) ; texte connu
+  par son seul intitulé. `loi93-124` : de même.
+- `minfin-transferts-2020` : page de garde à relire pour l'auteur et la date. Les vingt-cinq
+  adresses neuves (pist.tn, gbo.tn, finances.gov.tn, archives du web, privatisation.pm.gov.tn)
+  répondent 200 le 11/10/2026.
+- `pm-livre-blanc-ep-2018` : copie d'un site de presse conservée par les archives du web ;
+  aucune adresse officielle identifiée.
+
 ## Versement du 07/10/2026 (marché du travail, objets des réformes de la politique de l'emploi)
 
 Source : `docs/notes/marche-travail-politiques-emploi-objets-des-reformes.md`, § 9. **Neuf clés neuves** dans

@@ -1,0 +1,40 @@
+exercice,grandeur,valeur,unite,etat,edition,derniere_edition,divergence_entre_editions,imprime,fichier,page_pdf,page_imprimee,lecture,remarque
+2021-2023,cumul_part_etat,545.6,millions de dinars,,LF2025,True,False,"545,6",data/raw/caisses/minfin/rapport_ep_LF2025.pdf,126,126,image,somme de trois exercices imprimée par le rapport
+2021-2023,cumul_part_etat:bh,46.7,millions de dinars,,LF2025,True,False,"46,7",data/raw/caisses/minfin/rapport_ep_LF2025.pdf,126,126,image,
+2021-2023,cumul_part_etat:bna,57.2,millions de dinars,,LF2025,True,False,"57,2",data/raw/caisses/minfin/rapport_ep_LF2025.pdf,126,126,image,
+2021-2023,cumul_part_etat:cpg,50.0,millions de dinars,,LF2025,True,False,50,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,126,126,image,
+2021-2023,cumul_part_etat:cpscl,58.6,millions de dinars,,LF2025,True,False,"58,6",data/raw/caisses/minfin/rapport_ep_LF2025.pdf,126,126,image,
+2021-2023,cumul_part_etat:oaca,45.0,millions de dinars,,LF2025,True,False,45,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,126,126,image,
+2021-2023,cumul_part_etat:ommp,50.0,millions de dinars,,LF2025,True,False,50,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,126,126,image,
+2021-2023,cumul_part_etat:poste,100.0,millions de dinars,,LF2025,True,False,100,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,126,126,image,
+2021-2023,cumul_part_etat:sndp,45.0,millions de dinars,,LF2025,True,False,45,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,126,126,image,
+2021-2023,cumul_part_etat:tunisie_telecom,64.6,millions de dinars,,LF2025,True,False,"64,6",data/raw/caisses/minfin/rapport_ep_LF2025.pdf,126,126,image,
+2017,dont_etap,109.0,millions de dinars,,LF2021,True,False,109,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,150,150,image,
+2018,dont_etap,295.0,millions de dinars,,LF2021,False,False,295,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,150,150,image,
+2018,dont_etap,295.0,millions de dinars,,LF2022,True,False,295,data/raw/caisses/minfin/annexe9_2022.pdf,106,107,image,
+2019,dont_etap,146.5,millions de dinars,,LF2022,False,False,146.5,data/raw/caisses/minfin/annexe9_2022.pdf,106,107,image,
+2019,dont_etap,146.5,millions de dinars,,LF2023,True,False,146.5,data/raw/caisses/minfin/rapport_ep_2023.pdf,203,202,image,
+2017,entreprises_distributrices,9.0,entreprises,,LF2021,True,False,9,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,150,150,image,
+2018,entreprises_distributrices,7.0,entreprises,,LF2021,False,True,7,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,150,150,image,
+2018,entreprises_distributrices,8.0,entreprises,,LF2022,True,True,8,data/raw/caisses/minfin/annexe9_2022.pdf,106,107,image,
+2019,entreprises_distributrices,9.0,entreprises,,LF2022,False,True,9,data/raw/caisses/minfin/annexe9_2022.pdf,106,107,image,sur 71 à participation directe
+2019,entreprises_distributrices,12.0,entreprises,,LF2023,True,True,12,data/raw/caisses/minfin/rapport_ep_2023.pdf,203,202,image,
+2020,entreprises_distributrices,7.0,entreprises,,LF2023,False,True,7,data/raw/caisses/minfin/rapport_ep_2023.pdf,203,202,image,sur 71
+2020,entreprises_distributrices,9.0,entreprises,,LF2024,True,True,9,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,157,156,image,
+2021,entreprises_distributrices,12.0,entreprises,,LF2024,False,True,12,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,157,156,image,sur 71
+2021,entreprises_distributrices,14.0,entreprises,,LF2025,True,True,14,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,125,125,image,
+2022,entreprises_distributrices,12.0,entreprises,,LF2025,True,False,12,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,125,125,image,sur 71
+2017,part_etat_benefices_excedents,163.0,millions de dinars,arrêté,LF2021,True,False,163,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,150,150,image,
+2018,part_etat_benefices_excedents,333.0,millions de dinars,arrêté,LF2021,False,False,333,data/raw/caisses/minfin/Annexe_9_LF2021_Entreprises_Publiques.pdf,150,150,image,
+2018,part_etat_benefices_excedents,333.0,millions de dinars,arrêté,LF2022,True,False,333,data/raw/caisses/minfin/annexe9_2022.pdf,106,107,image,
+2019,part_etat_benefices_excedents,230.0,millions de dinars,arrêté,LF2022,False,True,230,data/raw/caisses/minfin/annexe9_2022.pdf,106,107,image,
+2019,part_etat_benefices_excedents,263.8,millions de dinars,arrêté,LF2023,True,True,263.8,data/raw/caisses/minfin/rapport_ep_2023.pdf,203,202,image,
+2020,part_etat_benefices_excedents,25.0,millions de dinars,partiel,LF2022,True,False,25,data/raw/caisses/minfin/annexe9_2022.pdf,106,107,image,versé à fin novembre 2021 ; non définitif selon le rapport
+2020,part_etat_benefices_excedents,67.1,millions de dinars,arrêté,LF2023,False,True,67.1,data/raw/caisses/minfin/rapport_ep_2023.pdf,203,202,image,
+2020,part_etat_benefices_excedents,98.3,millions de dinars,arrêté,LF2024,True,True,98.3,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,157,156,image,
+2021,part_etat_benefices_excedents,37.2,millions de dinars,partiel,LF2023,True,False,37.2,data/raw/caisses/minfin/rapport_ep_2023.pdf,203,202,image,versé à la date du rapport ; non définitif
+2021,part_etat_benefices_excedents,140.1,millions de dinars,arrêté,LF2024,False,True,140.1,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,157,156,image,
+2021,part_etat_benefices_excedents,145.4,millions de dinars,arrêté,LF2025,True,True,"145,4",data/raw/caisses/minfin/rapport_ep_LF2025.pdf,125,125,image,
+2022,part_etat_benefices_excedents,99.3,millions de dinars,partiel,LF2024,True,False,99.3,data/raw/caisses/minfin/rapport_ep_LF2024.pdf,157,156,image,arrêté à la date du rapport ; non définitif
+2022,part_etat_benefices_excedents,204.6,millions de dinars,arrêté,LF2025,True,False,"204,6",data/raw/caisses/minfin/rapport_ep_LF2025.pdf,125,125,image,
+2023,part_etat_benefices_excedents,195.6,millions de dinars,partiel,LF2025,True,False,"195,6",data/raw/caisses/minfin/rapport_ep_LF2025.pdf,125,125,image,arrêté à la date du rapport ; non définitif

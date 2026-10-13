@@ -1,0 +1,137 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : entreprises-publiques-effectifs-par-entreprise
+# sources (citation) : @minfin-ep-2020, @minfin-ep, @minfin-ep-2022, @minfin-ep-2024, @minfin-ep-2025
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : AUCUN RACCORD : un exercice figure dans une à quatre éditions ; toutes les valeurs sont gardées, `divergence_effectif_entre_editions` signale les 90 lignes qui diffèrent (Société générale d'entreprises de matériel et de travaux, SOMATRA-GET, en 2020 : 212 puis 1 194 agents ; Tunisair en 2017 : 3 765 puis 3 565 ; RNTA en 2018 : 1 336 puis 1 130 ; CTN en 2018 : 1 195 puis 734). `statut` : le dernier exercice de chaque édition est le plus souvent provisoire, estimé ou probable — NE PAS le tracer comme une réalisation ; Tunisair n'a que des chiffres provisoires pour 2021-2023, la Transtu des chiffres probables. LES BANQUES, LE SECTEUR FINANCIER ET LES CAISSES SOCIALES NE SONT PAS DANS L'ÉCHANTILLON DES 40 : filtrer sur `categorie` avant toute somme. Le nombre d'agents n'est pas défini par le rapport (permanents, contractuels, équivalents temps plein : non dit) ; la hausse de la CPG en 2019 (6 098 puis 7 421) y est attribuée au programme de recrutement. PREUVES DE LECTURE : 391 variations imprimées d'un exercice à l'autre (éditions LF 2024 et LF 2025) redonnent la différence des niveaux, douze écarts d'arrondi ou d'impression déclarés (dont Groupe chimique, LF 2024 : −278 imprimé pour −287) ; la somme des 40 fiches redonne exactement la ligne « total des 40 » pour 2019 et 2022. ÉDITION LF 2023 NON DÉPOUILLÉE (exercices 2019-2021, déjà couverts par deux autres éditions) ; charges de personnel des éditions françaises non reprises ; édition arabe de la LF 2020 non relue. LU À L'IMAGE (pages rendues à 150 dpi et tournées), valeurs recoupées avec la couche texte.
+# note : Nombre d'agents des dix plus gros employeurs parmi les entreprises publiques, hors secteur financier et hors caisses de sécurité sociale, par exercice et par édition du rapport, 2016-2023
+Entreprise,Exercice,Édition,État de la valeur,Agents,Charges de personnel (MD courants)
+Compagnie des phosphates de Gafsa,2017,LF2020,non dit,6320.0,
+Compagnie des phosphates de Gafsa,2018,LF2021,non dit,6098.0,
+Compagnie des phosphates de Gafsa,2018,LF2022,non dit,6098.0,240.5
+Compagnie des phosphates de Gafsa,2019,LF2021,probable,7421.0,
+Compagnie des phosphates de Gafsa,2019,LF2022,non dit,7421.0,299.8
+Compagnie des phosphates de Gafsa,2020,LF2022,provisoire,7208.0,316.3
+Compagnie des phosphates de Gafsa,2020,LF2024,réalisé,7208.0,316.3
+Compagnie des phosphates de Gafsa,2021,LF2024,réalisé,7038.0,318.0
+Compagnie des phosphates de Gafsa,2021,LF2025,réalisé,7038.0,318.0
+Compagnie des phosphates de Gafsa,2022,LF2024,provisoire,6884.0,331.0
+Compagnie des phosphates de Gafsa,2022,LF2025,réalisé,6884.0,331.0
+Compagnie des phosphates de Gafsa,2023,LF2025,estimé,6677.0,342.0
+Groupe chimique tunisien,2017,LF2020,non dit,6227.0,
+Groupe chimique tunisien,2018,LF2020,probable,5852.0,
+Groupe chimique tunisien,2018,LF2021,non dit,5852.0,
+Groupe chimique tunisien,2018,LF2022,non dit,5852.0,269.0
+Groupe chimique tunisien,2019,LF2021,probable,5558.0,
+Groupe chimique tunisien,2019,LF2022,non dit,5558.0,300.0
+Groupe chimique tunisien,2020,LF2022,non dit,5304.0,319.0
+Groupe chimique tunisien,2020,LF2024,réalisé,5304.0,333.4
+Groupe chimique tunisien,2021,LF2024,provisoire,5017.0,315.0
+Groupe chimique tunisien,2021,LF2025,réalisé,5017.0,327.5
+Groupe chimique tunisien,2022,LF2025,provisoire,4726.0,337.0
+Office de l'aviation civile et des aéroports,2016,LF2020,non dit,4033.0,
+Office de l'aviation civile et des aéroports,2017,LF2020,non dit,3971.0,
+Office de l'aviation civile et des aéroports,2017,LF2021,non dit,3971.0,
+Office de l'aviation civile et des aéroports,2018,LF2020,probable,3870.0,
+Office de l'aviation civile et des aéroports,2018,LF2021,non dit,3870.0,
+Office de l'aviation civile et des aéroports,2018,LF2022,non dit,3870.0,187.8
+Office de l'aviation civile et des aéroports,2019,LF2021,probable,3814.0,
+Office de l'aviation civile et des aéroports,2019,LF2022,non dit,3814.0,200.2
+Office de l'aviation civile et des aéroports,2020,LF2022,provisoire,3770.0,208.7
+Office de l'aviation civile et des aéroports,2020,LF2024,réalisé,3770.0,200.0
+Office de l'aviation civile et des aéroports,2021,LF2024,réalisé,3730.0,201.4
+Office de l'aviation civile et des aéroports,2021,LF2025,réalisé,3730.0,201.4
+Office de l'aviation civile et des aéroports,2022,LF2024,provisoire,3670.0,226.8
+Office de l'aviation civile et des aéroports,2022,LF2025,réalisé,3670.0,228.9
+Office de l'aviation civile et des aéroports,2023,LF2025,provisoire,3598.0,244.2
+Office des terres domaniales,2016,LF2020,non dit,4079.0,
+Office des terres domaniales,2017,LF2020,non dit,4139.0,
+Office des terres domaniales,2018,LF2020,probable,4074.0,
+Office des terres domaniales,2018,LF2021,non dit,4063.0,
+Office des terres domaniales,2018,LF2022,non dit,4139.0,95.1
+Office des terres domaniales,2019,LF2021,probable,3892.0,
+Office des terres domaniales,2019,LF2022,non dit,4892.0,93.8
+Office des terres domaniales,2020,LF2022,non dit,4001.0,
+Office des terres domaniales,2020,LF2024,réalisé,5177.0,97.96
+Office des terres domaniales,2021,LF2024,réalisé,5236.0,102.36
+Office des terres domaniales,2021,LF2025,réalisé,5236.0,102.4
+Office des terres domaniales,2022,LF2024,réalisé,5184.0,96.0
+Office des terres domaniales,2022,LF2025,provisoire,5184.0,96.0
+Société des transports de Tunis,2017,LF2020,non dit,7529.0,
+Société des transports de Tunis,2018,LF2020,probable,7555.0,
+Société des transports de Tunis,2018,LF2021,non dit,7555.0,
+Société des transports de Tunis,2018,LF2022,provisoire,7555.0,255.1
+Société des transports de Tunis,2019,LF2021,probable,7454.0,
+Société des transports de Tunis,2019,LF2022,probable,7454.0,268.7
+Société des transports de Tunis,2020,LF2022,probable,7381.0,281.7
+Société des transports de Tunis,2020,LF2024,probable,7381.0,281.7
+Société des transports de Tunis,2021,LF2024,probable,7350.0,290.3
+Société des transports de Tunis,2021,LF2025,provisoire,7350.0,287.0
+Société des transports de Tunis,2022,LF2024,probable,7089.0,296.6
+Société des transports de Tunis,2022,LF2025,probable,7089.0,293.1
+Société des transports de Tunis,2023,LF2025,probable,6791.0,301.7
+Société nationale d'exploitation et de distribution des eaux,2016,LF2020,non dit,6599.0,
+Société nationale d'exploitation et de distribution des eaux,2017,LF2020,non dit,6312.0,
+Société nationale d'exploitation et de distribution des eaux,2018,LF2021,non dit,6413.0,
+Société nationale d'exploitation et de distribution des eaux,2018,LF2022,non dit,6413.0,186.3
+Société nationale d'exploitation et de distribution des eaux,2019,LF2021,probable,6274.0,
+Société nationale d'exploitation et de distribution des eaux,2019,LF2022,comptes non approuvés,6274.0,189.4
+Société nationale d'exploitation et de distribution des eaux,2020,LF2022,non dit,6239.0,196.0
+Société nationale d'exploitation et de distribution des eaux,2020,LF2024,réalisé,6239.0,210.0
+Société nationale d'exploitation et de distribution des eaux,2021,LF2024,réalisé,6632.0,221.7
+Société nationale d'exploitation et de distribution des eaux,2021,LF2025,réalisé,6632.0,221.8
+Société nationale d'exploitation et de distribution des eaux,2022,LF2024,probable,6784.0,237.0
+Société nationale d'exploitation et de distribution des eaux,2022,LF2025,réalisé,6784.0,227.3
+Société nationale d'exploitation et de distribution des eaux,2023,LF2025,estimé,6488.0,244.7
+Société nationale des chemins de fer tunisiens,2017,LF2020,non dit,4518.0,
+Société nationale des chemins de fer tunisiens,2018,LF2020,probable,4612.0,
+Société nationale des chemins de fer tunisiens,2018,LF2021,non dit,4612.0,
+Société nationale des chemins de fer tunisiens,2018,LF2022,non dit,4612.0,118.9
+Société nationale des chemins de fer tunisiens,2019,LF2021,probable,4644.0,
+Société nationale des chemins de fer tunisiens,2019,LF2022,non dit,4644.0,145.4
+Société nationale des chemins de fer tunisiens,2020,LF2022,provisoire,4562.0,130.7
+Société nationale des chemins de fer tunisiens,2020,LF2024,réalisé,4562.0,132.2
+Société nationale des chemins de fer tunisiens,2021,LF2024,réalisé,4790.0,133.4
+Société nationale des chemins de fer tunisiens,2021,LF2025,réalisé,4790.0,133.0
+Société nationale des chemins de fer tunisiens,2022,LF2024,provisoire,4690.0,134.2
+Société nationale des chemins de fer tunisiens,2022,LF2025,réalisé,4690.0,135.5
+Société nationale des chemins de fer tunisiens,2023,LF2025,probable,4539.0,140.7
+Société tunisienne de l'électricité et du gaz,2017,LF2020,non dit,12388.0,
+Société tunisienne de l'électricité et du gaz,2018,LF2020,probable,12031.0,
+Société tunisienne de l'électricité et du gaz,2018,LF2021,non dit,12031.0,
+Société tunisienne de l'électricité et du gaz,2018,LF2022,non dit,12031.0,462.7
+Société tunisienne de l'électricité et du gaz,2019,LF2021,non dit,13063.0,
+Société tunisienne de l'électricité et du gaz,2019,LF2022,non dit,13063.0,493.3
+Société tunisienne de l'électricité et du gaz,2020,LF2022,non dit,13501.0,575.3
+Société tunisienne de l'électricité et du gaz,2020,LF2024,réalisé,13501.0,575.0
+Société tunisienne de l'électricité et du gaz,2021,LF2024,réalisé,13854.0,606.0
+Société tunisienne de l'électricité et du gaz,2021,LF2025,réalisé,13854.0,606.0
+Société tunisienne de l'électricité et du gaz,2022,LF2024,provisoire,13473.0,624.0
+Société tunisienne de l'électricité et du gaz,2022,LF2025,réalisé,13473.0,615.7
+Société tunisienne de l'électricité et du gaz,2023,LF2025,provisoire,13979.0,643.7
+Tunisair,2016,LF2020,non dit,3594.0,
+Tunisair,2017,LF2020,non dit,3765.0,
+Tunisair,2017,LF2021,non dit,3565.0,
+Tunisair,2018,LF2020,non dit,3781.0,
+Tunisair,2018,LF2021,non dit,3781.0,
+Tunisair,2018,LF2022,provisoire,3781.0,239.0
+Tunisair,2019,LF2021,probable,3708.0,
+Tunisair,2019,LF2022,provisoire,3708.0,269.7
+Tunisair,2020,LF2022,probable,3432.0,238.5
+Tunisair,2020,LF2024,estimé,3432.0,227.0
+Tunisair,2021,LF2024,estimé,3303.0,209.7
+Tunisair,2021,LF2025,provisoire,3303.0,209.7
+Tunisair,2022,LF2024,estimé,3193.0,228.1
+Tunisair,2022,LF2025,provisoire,3193.0,234.9
+Tunisair,2023,LF2025,provisoire,3107.0,259.7
+Tunisie Télécom,2017,LF2021,non dit,6244.0,
+Tunisie Télécom,2018,LF2021,non dit,6263.0,
+Tunisie Télécom,2018,LF2022,non dit,6263.0,324.1
+Tunisie Télécom,2019,LF2021,non dit,6205.0,
+Tunisie Télécom,2019,LF2022,non dit,6205.0,296.8
+Tunisie Télécom,2020,LF2022,non dit,6146.0,314.6
+Tunisie Télécom,2020,LF2024,réalisé,6146.0,314.6
+Tunisie Télécom,2021,LF2024,réalisé,6080.0,336.6
+Tunisie Télécom,2021,LF2025,réalisé,6080.0,336.6
+Tunisie Télécom,2022,LF2024,réalisé,5936.0,338.5
+Tunisie Télécom,2022,LF2025,réalisé,5936.0,338.5
+Tunisie Télécom,2023,LF2025,réalisé,5772.0,345.9

@@ -1,0 +1,66 @@
+fin_annee,cote,poste,entite,libelle,valeur_md,imprime,edition,echantillon,tableau,fichier,page_pdf,lecture,remarque
+2021,dettes_envers_etat,total,,,8391.8,"8391,8",LF2025,42,tableau de comparaison,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,115,image,
+2022,dettes_envers_etat,total,,,10899.3,"10899,3",LF2025,42,tableau de comparaison,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,115,image,
+2023,dettes_envers_etat,total,,,11246.3,"11246,3",LF2025,42,tableau de comparaison,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,115,image,
+2021,creances_sur_etat,total,,,9864.4,"9864,4",LF2025,42,tableau de comparaison,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,115,image,
+2022,creances_sur_etat,total,,,12184.3,"12184,3",LF2025,42,tableau de comparaison,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,115,image,
+2023,creances_sur_etat,total,,,11960.7,"11960,7",LF2025,42,tableau de comparaison,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,115,image,
+2021,ecart,dettes_moins_creances,,,-1472.55,"-1472,55",LF2025,42,tableau de comparaison,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,115,image,
+2022,ecart,dettes_moins_creances,,,-1284.98,"-1284,98",LF2025,42,tableau de comparaison,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,115,image,
+2023,ecart,dettes_moins_creances,,,-714.43,"-714,43",LF2025,42,tableau de comparaison,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,115,image,
+2021,dettes_envers_etat,impots_taxes,,,4358.0,"4358,0",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,
+2022,dettes_envers_etat,impots_taxes,,,6142.9,"6142,9",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,
+2023,dettes_envers_etat,impots_taxes,,,6561.5,"6561,5",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,
+2021,dettes_envers_etat,prets_avances_tresor,,,3031.5,"3031,5",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,
+2022,dettes_envers_etat,prets_avances_tresor,,,3658.4,"3658,4",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,
+2023,dettes_envers_etat,prets_avances_tresor,,,3456.7,"3456,7",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,
+2021,dettes_envers_etat,autres_dettes,,,793.9,"793,9",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,
+2022,dettes_envers_etat,autres_dettes,,,871.1,"871,1",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,
+2023,dettes_envers_etat,autres_dettes,,,757.6,"757,6",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,
+2021,dettes_envers_etat,ligne_fr_redevances_ar_dividendes,,,186.6,"186,6",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,"légende imprimée : « Redevances حصص أرباح » — le français dit redevances, l'arabe dit dividendes"
+2022,dettes_envers_etat,ligne_fr_redevances_ar_dividendes,,,166.6,"166,6",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,"légende imprimée : « Redevances حصص أرباح » — le français dit redevances, l'arabe dit dividendes"
+2023,dettes_envers_etat,ligne_fr_redevances_ar_dividendes,,,371.1,"371,1",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,"légende imprimée : « Redevances حصص أرباح » — le français dit redevances, l'arabe dit dividendes"
+2021,dettes_envers_etat,ligne_fr_dividendes_excedents_ar_redevances,,,21.7,"21,7",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,"légende imprimée : « Dividendes et excédents أتاوات » — le français dit dividendes, l'arabe dit redevances"
+2022,dettes_envers_etat,ligne_fr_dividendes_excedents_ar_redevances,,,60.2,"60,2",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,"légende imprimée : « Dividendes et excédents أتاوات » — le français dit dividendes, l'arabe dit redevances"
+2023,dettes_envers_etat,ligne_fr_dividendes_excedents_ar_redevances,,,99.3,"99,3",LF2025,42,graphique 2,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,117,image,"légende imprimée : « Dividendes et excédents أتاوات » — le français dit dividendes, l'arabe dit redevances"
+2021,creances_sur_etat,subventions_non_reglees,,,5934.8,"5934,8",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2022,creances_sur_etat,subventions_non_reglees,,,7680.5,"7680,5",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2023,creances_sur_etat,subventions_non_reglees,,,6956.8,"6956,8",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2021,creances_sur_etat,prestations_rendues,,,2924.1,"2924,1",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2022,creances_sur_etat,prestations_rendues,,,2969.2,"2969,2",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2023,creances_sur_etat,prestations_rendues,,,3312.3,"3312,3",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2021,creances_sur_etat,impots_taxes,,,800.5,"800,5",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2022,creances_sur_etat,impots_taxes,,,991.0,"991,0",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2023,creances_sur_etat,impots_taxes,,,1049.0,"1049,0",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2021,creances_sur_etat,autres_creances,,,175.8,"175,8",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2022,creances_sur_etat,autres_creances,,,331.6,"331,6",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2023,creances_sur_etat,autres_creances,,,361.2,"361,2",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2021,creances_sur_etat,gestion_de_fonds,,,29.2,"29,2",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,« تصرف في صندوق »
+2022,creances_sur_etat,gestion_de_fonds,,,212.0,"212,0",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,« تصرف في صندوق »
+2023,creances_sur_etat,gestion_de_fonds,,,281.4,"281,4",LF2025,42,graphique 5,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,« تصرف في صندوق »
+2022,creances_sur_etat,steg_complement_subvention_non_confirme,,,3423.1,"3423,1",LF2025,42,observations générales,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,124,image,"calculé par la société, ni confirmé ni convenu avec les services du ministère des Finances (p. 124)"
+2023,creances_sur_etat,steg_complement_subvention_non_confirme,,,3151.6,"3151,6",LF2025,42,observations générales,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,124,image,"calculé par la société, ni confirmé ni convenu avec les services du ministère des Finances (p. 124)"
+2023,creances_sur_etat,subventions_non_reglees:steg,steg,Société tunisienne de l'électricité et du gaz,3151.6,"3151,6",LF2025,42,prose,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2023,creances_sur_etat,subventions_non_reglees:office_cereales,office_cereales,Office des céréales,2185.3,"2185,3",LF2025,42,prose,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2023,creances_sur_etat,subventions_non_reglees:stir,stir,Société tunisienne des industries de raffinage,762.0,762,LF2025,42,prose,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2023,creances_sur_etat,subventions_non_reglees:office_huile,office_huile,Office national de l'huile,512.6,"512,6",LF2025,42,prose,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,121,image,
+2023,dettes_envers_etat,entreprise:cnrps,cnrps,Caisse nationale de retraite et de prévoyance sociale,2968.8,"2968,8",LF2025,42,graphique 3,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,118,image,dix premières du classement
+2023,dettes_envers_etat,entreprise:office_cereales,office_cereales,Office des céréales,1631.1,"1631,1",LF2025,42,graphique 3,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,118,image,dix premières du classement
+2023,dettes_envers_etat,entreprise:transtu,transtu,Société des transports de Tunis,1509.3,"1509,3",LF2025,42,graphique 3,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,118,image,dix premières du classement
+2023,dettes_envers_etat,entreprise:cnss,cnss,Caisse nationale de sécurité sociale,800.2,"800,2",LF2025,42,graphique 3,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,118,image,dix premières du classement
+2023,dettes_envers_etat,entreprise:etap,etap,Entreprise tunisienne d'activités pétrolières,486.4,"486,4",LF2025,42,graphique 3,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,118,image,dix premières du classement
+2023,dettes_envers_etat,entreprise:oaca,oaca,Office de l'aviation civile et des aéroports,473.6,"473,6",LF2025,42,graphique 3,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,118,image,dix premières du classement
+2023,dettes_envers_etat,entreprise:sncpa,sncpa,Société nationale de cellulose et de papier alfa,320.0,"320,0",LF2025,42,graphique 3,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,118,image,dix premières du classement
+2023,dettes_envers_etat,entreprise:cpg,cpg,Compagnie des phosphates de Gafsa,290.0,"290,0",LF2025,42,graphique 3,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,118,image,dix premières du classement
+2023,dettes_envers_etat,entreprise:onas,onas,Office national de l'assainissement,252.0,"252,0",LF2025,42,graphique 3,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,118,image,dix premières du classement
+2023,dettes_envers_etat,entreprise:tunisair,tunisair,Tunisair,232.4,"232,4",LF2025,42,graphique 3,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,118,image,dix premières du classement
+2023,creances_sur_etat,entreprise:steg,steg,Société tunisienne de l'électricité et du gaz,3974.1,"3974,1",LF2025,42,graphique 6,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,122,image,dix premières du classement
+2023,creances_sur_etat,entreprise:office_cereales,office_cereales,Office des céréales,2193.0,"2193,0",LF2025,42,graphique 6,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,122,image,dix premières du classement
+2023,creances_sur_etat,entreprise:sonede,sonede,Société nationale d'exploitation et de distribution des eaux,809.2,"809,2",LF2025,42,graphique 6,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,122,image,dix premières du classement
+2023,creances_sur_etat,entreprise:stir,stir,Société tunisienne des industries de raffinage,784.7,"784,7",LF2025,42,graphique 6,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,122,image,dix premières du classement
+2023,creances_sur_etat,entreprise:pct,pct,Pharmacie centrale de Tunisie,578.0,"578,0",LF2025,42,graphique 6,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,122,image,dix premières du classement
+2023,creances_sur_etat,entreprise:cpscl,cpscl,Caisse des prêts et de soutien des collectivités locales,532.9,"532,9",LF2025,42,graphique 6,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,122,image,dix premières du classement
+2023,creances_sur_etat,entreprise:office_huile,office_huile,Office national de l'huile,513.3,"513,3",LF2025,42,graphique 6,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,122,image,dix premières du classement
+2023,creances_sur_etat,entreprise:transtu,transtu,Société des transports de Tunis,365.2,"365,2",LF2025,42,graphique 6,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,122,image,dix premières du classement
+2023,creances_sur_etat,entreprise:cnss,cnss,Caisse nationale de sécurité sociale,345.8,"345,8",LF2025,42,graphique 6,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,122,image,dix premières du classement
+2023,creances_sur_etat,entreprise:sndp,sndp,Société nationale de distribution des pétroles,322.4,"322,4",LF2025,42,graphique 6,data/raw/caisses/minfin/rapport_ep_LF2025.pdf,122,image,dix premières du classement

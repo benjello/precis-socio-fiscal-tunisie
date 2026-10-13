@@ -1,0 +1,17 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : entreprises-publiques-resultats-agreges, entreprises-publiques-denominateurs
+# sources (citation) : @minfin-ep, @minfin-ep-2022, @minfin-ep-2023, @minfin-ep-2024, @minfin-ep-2025, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : CINQ ÉCHANTILLONS (colonne `echantillon`), JAMAIS UNE SÉRIE 2017-2022 D'UN TRAIT : la variation n'est à périmètre constant qu'entre les deux exercices d'une même édition. Les exercices 2018 à 2021 sont donnés deux fois et divergent — résultat net de 2019, − 711,5 (77 entreprises) puis − 177,9 (81). LES PRODUITS D'EXPLOITATION CONTIENNENT LES SUBVENTIONS D'EXPLOITATION : le résultat d'exploitation positif de 2021 et 2022 est un résultat après compensation. Comptes sous-jacents pour partie provisoires ou tirés de « documents d'orientation ». `signe_restitue` : les éditions LF 2023 et LF 2025 impriment les sommes de pertes sans signe. TABLEAU DE LA LF 2022 INCOHÉRENT, tel qu'imprimé : résultat d'exploitation de − 408,4 (2018) et − 1 255,4 (2019) alors que positifs + négatifs font − 608,4 et − 1 017,0, et produits − charges − 408,4 et − 1 035,2 ; ses résultats nets, eux, se somment. LF 2025 : 466 imprimé pour 465,4 (2021). Écarts déclarés dans le script. Ni valeur ajoutée, ni total de bilan, ni effectif total publiés. LU À L'IMAGE., Mêmes dénominateurs que le volume « La compensation ». Les bases du PIB ne sont pas raccordées : la part du PIB se lit par segment, chaque changement de base est une rupture du seul dénominateur. Dépenses de l'État non disponibles de 1988 à 1990. Un encours rapporté aux dépenses ou au PIB de l'année rapporte un stock à un flux.
+# note : Résultat net agrégé des entreprises publiques, hors secteur financier et hors caisses de sécurité sociale, par édition du rapport, en dinars courants, en % des dépenses de l'État hors service de la dette et en % du PIB, exercices 2017-2022
+Exercice,Édition,Entreprises,Charges d'exploitation,dont charges de personnel,Produits d'exploitation,Résultat d'exploitation,Résultat net agrégé,resultats_exploitation_negatifs,resultats_exploitation_positifs,Somme des résultats nets négatifs,Somme des résultats nets positifs,% des dépenses de l'État hors service de la dette — résultat net agrégé,% du PIB — résultat net agrégé
+2017,LF2021,78,25944.3,3372.9,25445.8,-498.5,-2723.1,-1234.8,736.3,-3031.9,308.7,-9.98,-2.669
+2018,LF2021,78,31565.5,3578.6,30745.2,-820.2,-4187.1,-2011.6,1191.4,-4733.6,546.5,-14.04,-3.706
+2018,LF2022,77,31259.0,3492.1,30850.6,-408.4,-3973.8,-1747.1,1138.7,-4489.7,515.9,-13.325,-3.517
+2019,LF2022,77,33227.4,3839.9,32192.2,-1255.4,-711.5,-2035.2,1018.2,-1811.5,1100.1,-2.178,-0.579
+2019,LF2023,81,33613.51,3770.31,32950.75,-662.75,-177.93,-1428.07,765.32,-1279.8,1101.87,-0.545,-0.145
+2020,LF2023,81,28176.11,3867.88,27015.41,-1160.7,-2455.26,-1690.84,530.13,-2643.27,188.01,-6.512,-2.055
+2020,LF2024,88,28470.0,4113.1,26906.4,-1563.6,-2981.7,-2111.2,547.6,-3156.3,174.6,-7.908,-2.495
+2021,LF2024,88,34022.6,4175.0,34535.0,512.4,-1129.3,-1211.1,1723.5,-1706.2,576.9,-2.807,-0.858
+2021,LF2025,85,34013.9,4144.1,34479.3,466.0,-1544.6,-1262.7,1728.6,-2146.8,602.2,-3.839,-1.174
+2022,LF2025,85,48371.4,4279.3,49118.1,746.5,-2539.7,-2706.6,3453.1,-4302.9,1763.2,-5.495,-1.821

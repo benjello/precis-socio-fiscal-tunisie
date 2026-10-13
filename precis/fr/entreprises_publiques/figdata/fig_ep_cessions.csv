@@ -1,0 +1,30 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
+# séries (tunisia_data) : privatisation-recettes-annuelles, entreprises-publiques-denominateurs
+# sources (citation) : @dgpv-recettes-annuelles-1987-2005, @dgpv-recettes-annuelles-1987-2009, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : DEUX ÉDITIONS, LE FICHIER NE CHOISIT PAS : 1998 vaut 481 394 puis 456 650, 1999 vaut 68 859 puis 43 495,2 ; écarts de moins de 150 en 2004 et 2005 (`divergence_entre_editions`). Seule l'édition de 2010 retrouve la page officielle par plan (voir privatisation-recettes-par-plan). UNE OPÉRATION FAIT LA MOITIÉ DU TOTAL : 2006, 3 110,5 MD. Recettes en dinars courants, toutes natures de cession confondues (actions, actifs, concessions, offres publiques) ; le classeur ne donne AUCUN DÉTAIL PAR OPÉRATION. Rien après 2009. NON TRANSCRIT : les feuilles par mode de cession (1994-2003) et par secteur (1994-1998), d'un millésime antérieur qui contredit la feuille principale (2002 : 817 123 contre 817 531 ; 2003 : 36 826 contre 35 469). LU PAR PROGRAMME, cellule par cellule., Mêmes dénominateurs que le volume « La compensation ». Les bases du PIB ne sont pas raccordées : la part du PIB se lit par segment, chaque changement de base est une rupture du seul dénominateur. Dépenses de l'État non disponibles de 1988 à 1990. Un encours rapporté aux dépenses ou au PIB de l'année rapporte un stock à un flux.
+# note : Recettes des opérations de privatisation et de restructuration des entreprises à participations publiques, par année, en dinars courants, en % des dépenses de l'État hors service de la dette et en % du PIB, 1987-2009
+Année,Édition 1987-2005 (MD courants),Édition 1987-2009 (MD courants),% des dépenses de l'État hors service de la dette,% du PIB,Base du PIB
+1987,6.772,6.772,0.292,0.084,base 1983 présumée
+1988,26.992,26.992,,0.312,base 1983 présumée
+1989,50.644,50.644,,0.528,base 1983 présumée
+1990,16.581,16.581,,0.153,base 1983 présumée
+1991,24.939,24.939,0.71,0.207,base 1983 présumée
+1992,18.414,18.414,0.504,0.134,base 1983
+1993,22.319,22.319,0.556,0.152,base 1983
+1994,23.609,23.609,0.552,0.149,base 1983
+1995,68.413,68.413,1.492,0.401,base 1983
+1996,57.185,57.185,1.177,0.3,base 1983
+1997,80.621,80.621,1.523,0.351,"base 1997, rétropolée"
+1998,481.394,456.65,8.143,1.839,"base 1997, rétropolée"
+1999,68.859,43.4952,0.705,0.16,"base 1997, rétropolée"
+2000,433.237,433.237,6.527,1.472,"base 1997, rétropolée"
+2001,125.084,125.084,1.736,0.394,"base 1997, rétropolée"
+2002,817.531,817.531,10.877,2.546,"valeur du ministère des Finances, sans base"
+2003,35.469,35.4685,0.447,0.102,"valeur du ministère des Finances, sans base"
+2004,27.356,27.2272,0.319,0.072,"valeur du ministère des Finances, sans base"
+2005,80.353,80.4414,0.875,0.192,base 1997
+2006,,3110.4801,31.186,6.798,base 1997
+2007,,135.5686,1.214,0.272,base 1997
+2008,,302.5622,2.365,0.547,base 1997
+2009,,12.142,0.086,0.021,base 1997

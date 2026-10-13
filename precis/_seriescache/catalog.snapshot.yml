@@ -3753,3 +3753,568 @@
     قُرئت أسطر المجموع في الطبعات الاثنتين والعشرين من الصورة. التوزيع حسب القطاعات
     غير منقول.'
   fiche: sources/ins-commerce-exterieur-par-regime.md
+- id: garanties-etat
+  titre: 'Garanties de l''État aux entreprises et établissements publics : plafond,
+    garanties accordées, encours de dette garantie, 2016 – juin 2024'
+  sources:
+  - minfin-dette-2022
+  - minfin-dette-2025
+  - minfin-transferts-garanties
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-garanties.csv
+  output: data/processed/entreprises-publiques/garanties_etat_2016_2024.csv
+  unite: millions de dinars courants ; nombre d'opérations ; % du PIB tel qu'imprimé,
+    base non dite (colonne unite)
+  perimetre: 'ministère des Finances, rapport sur la dette publique (annexe 7, éditions
+    LF 2022 et LF 2025) et résumé du rapport sur les transferts et les garanties (annexe
+    8, six éditions LF 2020 à LF 2025) : plafond de la loi de finances, garanties
+    accordées dans l''année ou au premier semestre (dont prêts extérieurs et intérieurs),
+    garanties intérieures par objet 2021 – juin 2024, encours garanti en fin d''année
+    ou fin juin (extérieur, intérieur, total), garanties liées à l''audit des banques
+    publiques 2016-2021 ; une ligne par (grandeur, période, document, édition)'
+  caveats: 'TROIS GRANDEURS À NE PAS CONFONDRE : plafond (paramètre légal), garanties
+    accordées (flux), encours garanti (stock). `periode` distingue l''année, le premier
+    semestre (« -S1 », flux) et la fin juin (« -06 », encours estimé) : NE PAS TRACER
+    UN SEMESTRE COMME UNE ANNÉE. AUCUNE ÉDITION PRÉFÉRÉE : 2019 et 2020 figurent dans
+    les deux annexes 7, d''accord sur l''encours ; trois divergences gardées (`divergence_entre_editions`)
+    — garanties de 2020, 4 603,4 (annexe 7 ; annexe 8 LF 2022 et LF 2023) et 4 603,7
+    (annexe 8 LF 2024) ; plafond de 2020 après loi de finances rectificative, 7 500
+    (traduction française de l''annexe 8 LF 2021) et 7 000 (éditions arabes) — NON
+    TRANCHÉ, le texte de la loi rectificative n''a pas été lu ; encours de 2020 en
+    % du PIB, 14,70 (LF 2022) puis 14,4 (LF 2025), PIB révisé sans que la base soit
+    dite. Plafond de 2019 : 4 500 en loi initiale, 4 790 après loi complémentaire.
+    Écarts imprimés déclarés : extérieur + intérieur dépasse le total de 0,1 au premier
+    semestre 2024 ; les trois banques font 1 357,3 pour un total imprimé de 1 357,7
+    en 2019. Les garanties de l''audit des banques sont données pour un an au titre
+    des engagements de l''année écoulée. LU À L''IMAGE. Rien avant 2016 ; plafonds
+    des lois de finances antérieures non dépouillés.'
+  titre_ar: 'ضمان الدولة لفائدة المنشآت والمؤسسات العمومية: المبلغ الأقصى، الضمانات
+    الممنوحة، حجم الدين المضمون، 2016 – جوان 2024'
+  unite_ar: بملايين الدنانير الجارية؛ عدد العمليات؛ النسبة من الناتج المحلي الإجمالي
+    كما هي مطبوعة
+  perimetre_ar: وزارة المالية، التقرير حول الدين العمومي (الملحق عدد 7، طبعتا 2022
+    و2025) وملخص التقرير حول التحويلات والضمانات (الملحق عدد 8، ستّ طبعات)
+  caveats_ar: 'ثلاثة مقادير لا تُخلط: المبلغ الأقصى، الضمانات الممنوحة (تدفق)، حجم
+    الدين المضمون (رصيد). لا تُرسم السداسية كسنة. لا تُفضَّل طبعة على أخرى، وتُحفظ
+    الاختلافات الثلاثة بين الطبعات. قُرئت الأرقام من الصورة.'
+  fiche: sources/entreprises-publiques.md
+- id: privatisation-recettes-annuelles
+  titre: Recettes des opérations de privatisation et de restructuration des entreprises
+    à participations publiques, par année, 1987-2009 (deux éditions du classeur)
+  sources:
+  - dgpv-recettes-annuelles-1987-2005
+  - dgpv-recettes-annuelles-1987-2009
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-privatisation.csv
+  output: data/processed/entreprises-publiques/privatisation_recettes_annuelles_1987_2009.csv
+  unite: milliers de dinars courants ; valeur_md en millions de dinars
+  perimetre: 'Premier ministère, Direction générale de la privatisation, classeur
+    « Recettes des opérations de privatisation et de restructuration des entreprises
+    à participations publiques par année », feuille principale : édition 1987-2005
+    (enregistrée le 2 février 2006) et édition arabe 1987-2009 (enregistrée le 17
+    février 2010), retrouvées aux archives du web ; une ligne par (année, édition)'
+  caveats: 'DEUX ÉDITIONS, LE FICHIER NE CHOISIT PAS : 1998 vaut 481 394 puis 456
+    650, 1999 vaut 68 859 puis 43 495,2 ; écarts de moins de 150 en 2004 et 2005 (`divergence_entre_editions`).
+    Seule l''édition de 2010 retrouve la page officielle par plan (voir privatisation-recettes-par-plan).
+    UNE OPÉRATION FAIT LA MOITIÉ DU TOTAL : 2006, 3 110,5 MD. Recettes en dinars courants,
+    toutes natures de cession confondues (actions, actifs, concessions, offres publiques)
+    ; le classeur ne donne AUCUN DÉTAIL PAR OPÉRATION. Rien après 2009. NON TRANSCRIT
+    : les feuilles par mode de cession (1994-2003) et par secteur (1994-1998), d''un
+    millésime antérieur qui contredit la feuille principale (2002 : 817 123 contre
+    817 531 ; 2003 : 36 826 contre 35 469). LU PAR PROGRAMME, cellule par cellule.'
+  titre_ar: إيرادات عمليات التخصيص وإعادة هيكلة المنشآت ذات المساهمات العمومية سنوياً،
+    1987-2009 (طبعتان)
+  unite_ar: بالألف دينار الجاري؛ وبملايين الدنانير في عمود valeur_md
+  perimetre_ar: 'الوزارة الأولى، الإدارة العامة للتخصيص، جدول الإيرادات السنوية: طبعة
+    1987-2005 وطبعة 1987-2009، من أرشيف الواب'
+  caveats_ar: 'طبعتان ولا يختار الملف بينهما: تختلفان في 1998 و1999 و2004 و2005. عملية
+    واحدة تمثل نصف المجموع (2006). لا تفصيل حسب العملية. لا شيء بعد 2009.'
+  fiche: sources/entreprises-publiques.md
+- id: privatisation-recettes-par-plan
+  titre: 'Recettes de privatisation par plan de développement (VIIe au XIe), entreprises
+    et opérations : page officielle recoupée avec le classeur annuel'
+  sources:
+  - dgpv-recettes-par-periode
+  - dgpv-recettes-annuelles-1987-2009
+  - dgpv-recettes-annuelles-1987-2005
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-privatisation.csv
+  output: data/processed/entreprises-publiques/privatisation_recettes_par_plan.csv
+  unite: millions de dinars courants ; nombre d'entreprises ; nombre d'opérations
+  perimetre: 'Présidence du gouvernement, Direction générale de la privatisation,
+    page « Répartition du produit (recettes) des privatisations et restructurations
+    par période » consultée le 11 octobre 2026 (résultats du 31/12/1987 au 31/01/2009)
+    : produit, entreprises concernées, opérations, par plan ; en regard, la somme
+    des années du classeur 1987-2009, avec et sans 2009, et celle du classeur 1987-2005'
+  caveats: 'RECOUPEMENT, PAS UNE SÉRIE. Les sommes par plan du classeur de 2010 retrouvent
+    la page à l''arrondi (126, 190, 1 139, 4 071) ; LE XIe PLAN NE FAIT 438 MD QUE
+    SANS L''ANNÉE 2009 (438,1 ; 450,3 avec) : la page s''arrête au 31 janvier 2009.
+    Total de la page 5 963 MD pour 5 964,2 hors 2009 au classeur (arrondis) et 5 976,4
+    avec 2009. Le classeur de 2006 donne 1 189,2 MD pour le IXe Plan : il ne retrouve
+    pas la page. Une entreprise dont les opérations s''étalent sur plusieurs plans
+    est comptée au plan de sa première opération (convention de la page).'
+  titre_ar: 'إيرادات التخصيص حسب مخطط التنمية (من السابع إلى الحادي عشر): الصفحة الرسمية
+    مقارنة بالجدول السنوي'
+  unite_ar: بملايين الدنانير الجارية؛ عدد المنشآت؛ عدد العمليات
+  perimetre_ar: رئاسة الحكومة، الإدارة العامة للتخصيص، صفحة توزيع الإيرادات حسب الفترة
+    (النتائج إلى 31 جانفي 2009)
+  caveats_ar: مقارنة لا سلسلة. المخطط الحادي عشر لا يبلغ 438 م د إلا دون سنة 2009.
+    تُحتسب المنشأة في مخطط أول عملية لها.
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-dividendes-etat
+  titre: Part de l'État dans les bénéfices et excédents des entreprises publiques
+    à participation directe, exercices 2017 à 2023, par édition du rapport
+  sources:
+  - minfin-ep
+  - minfin-ep-2022
+  - minfin-ep-2023
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-dividendes.csv
+  output: data/processed/entreprises-publiques/dividendes_etat_2017_2023.csv
+  unite: millions de dinars courants ; nombre d'entreprises distributrices
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
+    9, éditions LF 2021 à LF 2025), partie « revenus des participations de l''État
+    » : part de l''État dans les excédents et bénéfices au titre de l''exercice comptable,
+    entreprises à participation directe (71) ; dont ETAP (2017-2019) ; nombre d''entreprises
+    distributrices ; cumul 2021-2023 et ses neuf premières entreprises ; une ligne
+    par (exercice, grandeur, édition)'
+  caveats: 'CHAQUE EXERCICE EST RÉVISÉ PAR L''ÉDITION SUIVANTE, À LA HAUSSE : 2019,
+    230 puis 263,8 ; 2020, 67,1 puis 98,3 ; 2021, 140,1 puis 145,4 — le fichier garde
+    tout (`edition`, `divergence_entre_editions`). `etat` = « partiel » pour le dernier
+    exercice de chaque édition, que le rapport dit non définitif (25 pour 2020, 37,2
+    pour 2021, 99,3 pour 2022, 195,6 pour 2023) : NE PAS LE TRACER COMME UN EXERCICE
+    ARRÊTÉ. Chiffres de PROSE, pas de tableau. Le nombre d''entreprises distributrices
+    de 2018 est 7 (LF 2021) puis 8 (LF 2022). Ce n''est pas le total des versements
+    des entreprises au budget (voir entreprises-publiques-versements-transferts).
+    LU À L''IMAGE, y compris 2019 et 2020.'
+  titre_ar: حصة الدولة من فوائض وأرباح المنشآت العمومية ذات المساهمة المباشرة، السنوات
+    المحاسبية 2017-2023، حسب طبعة التقرير
+  unite_ar: بملايين الدنانير الجارية؛ عدد المنشآت الموزِّعة
+  perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9، طبعات 2021
+    إلى 2025)، باب عائدات مساهمات الدولة
+  caveats_ar: تُراجَع كلّ سنة محاسبية في الطبعة الموالية نحو الارتفاع، ويحتفظ الملف
+    بكلّ القيم. آخر سنة في كلّ طبعة جزئية وغير نهائية. أرقام من النص. قُرئت من الصورة.
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-versements-transferts
+  titre: Versements des entreprises publiques au budget et transferts reçus de l'État,
+    échantillon du rapport annuel, 2017-2022, par édition
+  sources:
+  - minfin-ep
+  - minfin-ep-2022
+  - minfin-ep-2023
+  - minfin-ep-2024
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-versements-transferts.csv
+  output: data/processed/entreprises-publiques/versements_transferts_echantillon_2017_2022.csv
+  unite: millions de dinars courants
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
+    9), éditions LF 2021 (33 entreprises), LF 2022 (50), LF 2023 (48) et LF 2024 (48),
+    BANQUES ET CAISSES SOCIALES COMPRISES : total des versements au budget et sa composition
+    (fiscaux et douaniers ; remboursement de crédits revenant à l''État ; bénéfices
+    transférés et commissions de garantie ; autres), total des transferts reçus et
+    sa composition (subventions d''exploitation et d''équilibre ; investissement et
+    capital ; prêts du Trésor et prêts rétrocédés), solde imprimé ; une ligne par
+    (édition, tableau, année, flux, poste)'
+  caveats: 'QUATRE ÉCHANTILLONS, AUCUN RACCORD : colonne `echantillon` (33, 50, 48,
+    48 — l''édition LF 2023 exclut la CNSS et le Groupe chimique, la LF 2024 l''Office
+    des terres domaniales et le Groupe chimique). Chaque année figure dans deux ou
+    trois éditions et les valeurs divergent : transferts de 2020, 4 609,7 (LF 2023)
+    puis 6 466,4 (LF 2024, la CNSS réintégrée et la CNRPS mise à jour) — le solde
+    de 2020 passe de + 1 512,6 à − 274. DEUX VALEURS IMPRIMÉES POUR LES TRANSFERTS
+    DE 2022 DANS LA MÊME ÉDITION, GARDÉES TOUTES DEUX : 14 506,6 (tableau 43 et prose)
+    et 14 560,6 (tableau de comparaison, somme de la composition, tableau par entreprise,
+    solde). RUPTURE DE DÉFINITION DES VERSEMENTS entre la LF 2021 et la LF 2022 (2018
+    : 6 321,6 puis 5 860,8). `statut` : provisoire ou prévisionnel pour la dernière
+    année de chaque édition. Les « versements » sont pour 64 à 84 % des paiements
+    fiscaux et douaniers : ce n''est pas un rendement du capital public. AUTRE PÉRIMÈTRE
+    que entreprises-publiques-transferts-budget (annexe 8, tous établissements) et
+    que entreprises-publiques-resultats-agreges (hors banques et caisses). Écarts
+    imprimés d''un ou deux dixièmes déclarés. LU À L''IMAGE. L''édition LF 2025 ne
+    donne plus ces flux.'
+  titre_ar: دفوعات المنشآت العمومية لميزانية الدولة وتحويلات الدولة لفائدتها، عيّنة
+    التقرير السنوي، 2017-2022، حسب الطبعة
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، طبعات
+    2021 (33 منشأة) و2022 (50) و2023 (48) و2024 (48)، بما فيها البنوك والصناديق الاجتماعية
+  caveats_ar: أربع عيّنات لا تُربط. تختلف القيم بين الطبعات. قيمتان مطبوعتان لتحويلات
+    2022 في الطبعة نفسها (14506,6 و14560,6) وتُحفظان معاً. تغيّر تعريف الدفوعات بين
+    طبعتي 2021 و2022. قُرئت من الصورة.
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-resultats-agreges
+  titre: 'Résultats agrégés des entreprises publiques hors banques et caisses, exercices
+    2017 à 2022 : chaque exercice par deux échantillons'
+  sources:
+  - minfin-ep
+  - minfin-ep-2022
+  - minfin-ep-2023
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-resultats-agreges.csv
+  output: data/processed/entreprises-publiques/resultats_agreges_2017_2022.csv
+  unite: millions de dinars courants
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
+    9), tableau des indicateurs financiers agrégés : LF 2021 (78 entreprises, 2017-2018),
+    LF 2022 (77, 2018-2019), LF 2023 (81, 2019-2020), LF 2024 (88, 2020-2021), LF
+    2025 (85, 2021-2022) ; neuf indicateurs — produits d''exploitation, charges de
+    personnel, charges d''exploitation, sommes des résultats d''exploitation positifs
+    et négatifs, résultat d''exploitation, sommes des résultats nets positifs et négatifs,
+    résultat net ; HORS secteur financier, caisses sociales, entreprises à l''arrêt
+    ou sans comptes transmis ; une ligne par (exercice, édition, indicateur)'
+  caveats: 'CINQ ÉCHANTILLONS (colonne `echantillon`), JAMAIS UNE SÉRIE 2017-2022
+    D''UN TRAIT : la variation n''est à périmètre constant qu''entre les deux exercices
+    d''une même édition. Les exercices 2018 à 2021 sont donnés deux fois et divergent
+    — résultat net de 2019, − 711,5 (77 entreprises) puis − 177,9 (81). LES PRODUITS
+    D''EXPLOITATION CONTIENNENT LES SUBVENTIONS D''EXPLOITATION : le résultat d''exploitation
+    positif de 2021 et 2022 est un résultat après compensation. Comptes sous-jacents
+    pour partie provisoires ou tirés de « documents d''orientation ». `signe_restitue`
+    : les éditions LF 2023 et LF 2025 impriment les sommes de pertes sans signe. TABLEAU
+    DE LA LF 2022 INCOHÉRENT, tel qu''imprimé : résultat d''exploitation de − 408,4
+    (2018) et − 1 255,4 (2019) alors que positifs + négatifs font − 608,4 et − 1 017,0,
+    et produits − charges − 408,4 et − 1 035,2 ; ses résultats nets, eux, se somment.
+    LF 2025 : 466 imprimé pour 465,4 (2021). Écarts déclarés dans le script. Ni valeur
+    ajoutée, ni total de bilan, ni effectif total publiés. LU À L''IMAGE.'
+  titre_ar: 'المؤشرات المالية المجمّعة للمنشآت العمومية دون البنوك والصناديق، السنوات
+    المحاسبية 2017-2022: كلّ سنة حسب عيّنتين'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جدول
+    المؤشرات المالية المجمّعة: 78 ثم 77 ثم 81 ثم 88 ثم 85 منشأة'
+  caveats_ar: خمس عيّنات ولا تُرسم سلسلة واحدة 2017-2022. إيرادات الاستغلال تتضمن
+    منح الاستغلال. جدول طبعة 2022 غير متّسق كما هو مطبوع. قُرئت من الصورة.
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-dettes-creances-croisees
+  titre: Dettes des entreprises publiques envers l'État et créances sur l'État, fins
+    2021, 2022 et 2023 (échantillon de 42 entreprises hors banques)
+  sources:
+  - minfin-ep-2025
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-dettes-creances-croisees.csv
+  output: data/processed/entreprises-publiques/dettes_creances_croisees_2021_2023.csv
+  unite: millions de dinars courants (encours de fin d'année)
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques annexé
+    au projet de loi de finances pour 2025, partie « relation financière entre l''État
+    et les entreprises publiques » : 42 entreprises, hors banques publiques, Ciments
+    d''Oum El Kélil, Office des terres domaniales et CNAM ; encours de dettes envers
+    l''État et de créances sur l''État, écart, composition de chaque côté (impôts
+    et taxes, prêts et avances du Trésor ; subventions non réglées, prestations rendues…),
+    subventions non réglées de quatre entreprises fin 2023, dix premières entreprises
+    de chaque côté fin 2023'
+  caveats: 'DONNÉES DÉCLARÉES PAR LES ENTREPRISES : le ministère dit n''assumer aucune
+    responsabilité quant à leur fiabilité. LA CRÉANCE DE LA STEG AU TITRE DU COMPLÉMENT
+    DE SUBVENTION (3 423,1 fin 2022, 3 151,6 fin 2023) EST CALCULÉE PAR LA SOCIÉTÉ
+    ET N''EST NI CONFIRMÉE NI CONVENUE AVEC LE MINISTÈRE (ligne `steg_complement_subvention_non_confirme`,
+    mention gardée en `remarque`) ; elle est comprise dans les totaux de 2022 et 2023.
+    Deux petites lignes des dettes ont une légende dont le français et l''arabe se
+    contredisent (redevances / dividendes) : identifiants neutres, à ne pas nommer.
+    Une seule édition : aucune révision observable ; les années 2021 et 2022 y sont
+    déjà mises à jour par rapport à l''édition LF 2024. Composition lue sur les tableaux
+    de données des graphiques ; la somme des cinq lignes de dettes est inférieure
+    de 0,1 au total. AUCUN RACCORD avec les arriérés croisés du FMI à juin 2020 (30
+    entreprises ; voir entreprises-publiques-etudes-rapportees). LU À L''IMAGE.'
+  titre_ar: مديونية المنشآت العمومية تجاه الدولة ومستحقاتها لدى الدولة، موفى 2021
+    و2022 و2023 (عيّنة من 42 منشأة دون البنوك)
+  unite_ar: بملايين الدنانير الجارية (رصيد موفى السنة)
+  perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية المرفق بمشروع قانون المالية
+    لسنة 2025، باب مديونية ومستحقات المنشآت العمومية تجاه الدولة
+  caveats_ar: معطيات قدّمتها المنشآت ولا تتحمل مصالح وزارة المالية مسؤولية موثوقيتها.
+    مستحقات الشركة التونسية للكهرباء والغاز بعنوان المنحة التكميلية احتسبتها الشركة
+    ولم يقع تأكيدها. قُرئت من الصورة.
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-transferts-budget
+  titre: 'Transferts du budget de l''État aux entreprises publiques et établissements
+    publics non administratifs : total par secteur, nature et source, 2016-2024, par
+    édition'
+  sources:
+  - minfin-transferts-garanties
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-transferts-budget.csv
+  output: data/processed/entreprises-publiques/transferts_budget_2016_2024.csv
+  unite: milliers de dinars courants ; valeur_md en millions de dinars
+  perimetre: 'ministère des Finances, rapport sur les transferts et les garanties
+    (annexe 8), tableaux du résumé des six éditions LF 2020 à LF 2025 : TOUS les établissements
+    publics non administratifs et entreprises publiques, caisses sociales comprises
+    ; total par secteur (social, économique, éducatif et culturel, souveraineté),
+    par nature (rémunération, fonctionnement, interventions, investissement), par
+    source de financement ; trois années de réalisations et une année de loi de finances
+    par édition ; une ligne par (édition, ventilation, clé, année)'
+  caveats: 'CE TOTAL N''EST PAS « LE COÛT DES ENTREPRISES PUBLIQUES » : il réunit
+    caisses sociales, établissements d''enseignement et de culture, et — dans le secteur
+    économique — LA COMPENSATION (produits de base, carburants, électricité, transport),
+    que le rapport y classe d''après le ministère de tutelle ; le « hors compensation
+    » demande les annexes par établissement, non transcrites. DEUX PÉRIMÈTRES (colonne
+    `perimetre`) : l''édition LF 2020 donne 2016-2018 dans un périmètre que la LF
+    2021 révise (2017 : 6 161,8 puis 6 852,6 MD) ; 2016 N''EXISTE QUE DANS L''ANCIEN
+    — ne pas le chaîner à 2017. `etat` sépare loi de finances et réalisations : l''exécution
+    dépasse la loi de 18 à 39 % de 2020 à 2023. Toutes les éditions gardées ; révisions
+    mineures de 2018 à 2021. RESTAURATIONS (six, `restauration`) : groupes de trois
+    chiffres imprimés dans l''ordre inverse — « 389 730 » pour 730 389 (rémunération
+    2016), « 451 895 », « 361 137 » et « 107 652 » (LF 2019), « 315 349 », et « 352
+    548 » pour 548 352 (LF 2023) —, chacune prouvée par la somme de sa colonne ; les
+    deux de la loi de finances 2019 le sont ensemble, par une seule somme. ÉCARTS
+    IMPRIMÉS NON RÉSOLUS (`ecart_somme_milliers`) : 2023 par nature, les quatre lignes
+    font 17 081,9 MD pour un total de 17 104,8 (22 977 milliers manquent, LF 2025)
+    ; LF 2021, secteurs de 2017 (1 692) et sources de 2017 et 2019 (99 et 91). LU
+    À L''IMAGE. Ratios au budget et au PIB du rapport non repris (base non dite).'
+  titre_ar: 'تحويلات ميزانية الدولة لفائدة المنشآت العمومية والمؤسسات العمومية غير
+    الإدارية: المجموع حسب القطاع وطبيعة النفقة ومصدر التمويل، 2016-2024، حسب الطبعة'
+  unite_ar: بحساب ألف دينار جارٍ؛ وبملايين الدنانير في عمود valeur_md
+  perimetre_ar: 'وزارة المالية، التقرير حول التحويلات والضمانات (الملحق عدد 8)، جداول
+    ملخص الطبعات الستّ: كلّ المنشآت والمؤسسات العمومية غير الإدارية بما فيها الصناديق
+    الاجتماعية'
+  caveats_ar: 'هذا المجموع ليس كلفة المنشآت العمومية: يضمّ الصناديق الاجتماعية ومؤسسات
+    التعليم والثقافة والدعم. محيطان لا يُربطان (طبعة 2020 ثم الطبعات الموالية). أرقام
+    مطبوعة معكوسة أُعيد ترتيبها وأُثبتت بالمجاميع. فارق مطبوع في توزيع 2023 حسب طبيعة
+    النفقة. قُرئت من الصورة.'
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-transferts-par-entreprise
+  titre: Transferts du budget reçus par chaque entreprise de l'échantillon du rapport
+    annuel, 2017-2022, par édition
+  sources:
+  - minfin-ep
+  - minfin-ep-2022
+  - minfin-ep-2023
+  - minfin-ep-2024
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-transferts-par-entreprise.csv
+  - sources/transcriptions/entreprises-publiques-versements-transferts.csv
+  output: data/processed/entreprises-publiques/transferts_par_entreprise_2017_2022.csv
+  unite: millions de dinars courants
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
+    9), tableau des montants transférés du budget aux entreprises de l''échantillon
+    : LF 2021 (tableau 31, 2017-2020), LF 2022 (tableau 38, 2018-2020), LF 2023 (tableau
+    40, 2019-2021), LF 2024 (tableau 45, 2020-2022) ; toutes les lignes qui portent
+    au moins une valeur non nulle dans l''édition (22 à 28 entreprises) et le total
+    imprimé ; une ligne par (entité, année, édition)'
+  caveats: 'LES ÉDITIONS SE CONTREDISENT ET LE FICHIER NE CHOISIT PAS : STIR 2019,
+    1 296 (LF 2021, LF 2022) puis 1 905,3 (LF 2023) ; STIR 2018, 1 500 puis 1 846,1
+    ; Office des céréales 2019, 1 324,1 puis 1 800,2 ; 2021, 213,5 (provisoire) puis
+    1 687,5 ; ONAS 2018, 59,4 puis 155,9. Les révisions vont presque toutes à la hausse
+    : la subvention d''une année est soldée les années suivantes. La CPSCL figure
+    en 2017-2020 (LF 2021, LF 2022) puis est ramenée à zéro (LF 2023 : financements
+    destinés aux collectivités, non une subvention de l''État). La CNSS, absente de
+    la LF 2023, entre en LF 2024 (1 321,6 en 2020). LIGNES NULLES NON TRANSCRITES
+    (banques, ETAP, etc.) : une entité absente d''une édition y est imprimée à zéro
+    ou n''est pas dans l''échantillon — consulter le rapport avant de conclure. `statut`
+    provisoire pour la dernière année de chaque édition. Contenu de la ligne non détaillé
+    : elle ne concorde ni avec la subvention d''exploitation des comptes, ni avec
+    les interventions de l''annexe 8 (transport-transferts-par-entreprise) — AUCUN
+    RACCORD. Somme des lignes = total imprimé (contrôlé, écarts d''un dixième déclarés)
+    ; le total de 2022 est 14 560,6, quand le tableau d''ensemble imprime 14 506,6.
+    Mêmes identifiants d''entité que la série du transport (transtu, sncft). LU À
+    L''IMAGE.'
+  titre_ar: المبالغ المحوّلة من ميزانية الدولة لكلّ منشأة من عيّنة التقرير السنوي،
+    2017-2022، حسب الطبعة
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جدول المبالغ
+    المحوّلة للمنشآت المكوّنة للعيّنة في أربع طبعات
+  caveats_ar: تتناقض الطبعات ولا يختار الملف. تُراجَع المبالغ غالباً نحو الارتفاع.
+    لم تُنقل الأسطر المنعدمة. لا ربط مع تحويلات الملحق عدد 8. قُرئت من الصورة.
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-resultats-nets-dix-premieres
+  titre: 'Résultat net des entreprises publiques : les dix premiers bénéfices et les
+    dix premières pertes, exercices 2017 à 2022, par édition'
+  sources:
+  - minfin-ep
+  - minfin-ep-2022
+  - minfin-ep-2023
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-resultats-nets-dix-premieres.csv
+  output: data/processed/entreprises-publiques/resultats_nets_dix_premieres_2017_2022.csv
+  unite: millions de dinars courants
+  perimetre: ministère des Finances, rapport sur les entreprises publiques (annexe
+    9), tableaux « dix premières entreprises classées suivant les résultats nets positifs
+    » et « négatifs » des éditions LF 2021 à LF 2025 (deux exercices par édition),
+    avec le total imprimé des dix ; échantillons de 78, 77, 81, 88 et 85 entreprises,
+    hors banques et caisses ; une ligne par (exercice, édition, sens, rang)
+  caveats: 'DES CLASSEMENTS, PAS DES SÉRIES : une entreprise absente du classement
+    d''une année n''a pas de valeur — ce n''est ni zéro ni un manque de la transcription.
+    Chaque exercice de 2018 à 2021 est donné par deux éditions, qui divergent parfois
+    beaucoup : STIR 2018, − 1 159,5 puis − 813,4 ; Tunisair 2018, − 96,8 puis − 192,6
+    ; Groupe chimique 2020, − 205,0 puis − 593,3 ; CPG 2019, 637,6 puis 640,58. Signe
+    porté par `sens` (les éditions LF 2023 et LF 2024 impriment les pertes sans signe).
+    D''après la note documentaire du précis (fiches par entreprise de l''édition LF
+    2025, non relues ici) : la valeur de la STEG est son résultat avant « modifications
+    comptables », et Tunisair comme la société des transports de Tunis n''ont pas
+    d''états financiers approuvés pour 2021-2023. `doublon_imprime` : l''édition LF
+    2022 imprime deux fois la même société aux rangs 8 et 9 des bénéfices de 2019.
+    Somme des dix = total imprimé (contrôlé ; quatre écarts de 0,1 à 0,3 déclarés).
+    NON TRANSCRITS : les classements par produits, charges, charges de personnel et
+    résultat d''exploitation ; les fiches par entreprise (dette, effectifs, subvention
+    d''exploitation). LU À L''IMAGE.'
+  titre_ar: 'النتائج الصافية للمنشآت العمومية: العشر الأولى إيجاباً والعشر الأولى
+    سلباً، السنوات المحاسبية 2017-2022، حسب الطبعة'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جدولا
+    العشر منشآت الأولى حسب النتائج الصافية الإيجابية والسلبية، طبعات 2021 إلى 2025
+  caveats_ar: 'ترتيبات لا سلاسل: المنشأة الغائبة عن ترتيب سنة لا قيمة لها. تختلف الطبعات
+    أحياناً كثيراً. الإشارة محمولة في عمود sens. قُرئت من الصورة.'
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-etudes-rapportees
+  titre: 'Entreprises publiques : chiffres d''ensemble rapportés par le Livre blanc
+    de 2018, le FMI (2021), la Banque mondiale (2014 et 2020) et l''ITCEQ (2010),
+    avec la citation et la méthode'
+  sources:
+  - pm-livre-blanc-ep-2018
+  - imf-tunisia-art4-2020
+  - wb-tunisia-per-2020
+  - wb-tunisia-gouvernance-ep-2014
+  - itceq-privatisation-2010
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-etudes-rapportees.csv
+  output: data/processed/entreprises-publiques/etudes_rapportees.csv
+  unite: 'selon la ligne (colonne unite) : % du PIB, milliards ou millions de dinars,
+    nombre'
+  perimetre: 'soixante-dix chiffres cités par cinq documents : Présidence du gouvernement,
+    Livre blanc sur la réforme des entreprises publiques (mars 2018) ; FMI, Country
+    Report No. 21/44 (février 2021) ; Banque mondiale, revue des dépenses publiques,
+    rapport de synthèse (2020) ; Banque mondiale, rapport 78675-TN « Pour une meilleure
+    gouvernance des entreprises publiques en Tunisie » (mars 2014 : tableau 1, entreprises
+    de 2013 et employés de 2010 par ministère de tutelle, 104 entreprises et 117 416
+    employés, d''après l''Unité de suivi) ; ITCEQ, rapport d''étape MEDPRO sur la
+    privatisation (décembre 2010) ; une ligne par (étude, grandeur, période, unité),
+    avec la phrase citée, la page et la méthode du document'
+  caveats: 'RAPPORT DE RÉFORME, RAPPORTS EXTÉRIEURS ET ÉVALUATION : JAMAIS DANS LE
+    MÊME TABLEAU NI SUR LE MÊME PLAN QUE LES SÉRIES BUDGÉTAIRES ; une superposition
+    sur un graphique se commente, périmètres et ruptures dits. Chaque ligne porte
+    `famille` et `methode`. AUCUN PIB N''EST DE BASE DITE par ces documents. Périmètres
+    : 30 entreprises (FMI), 20 plus grandes (Banque mondiale), source non retrouvée
+    pour le Livre blanc (rapport 2010-2014 de l''Unité de suivi). Les ratios du Livre
+    blanc sur les subventions (8,9 % du PIB en 2013, 7,5 % en 2014) sont les siens
+    : ils ne viennent pas de la Banque mondiale. « Entre 9 et 10 % du PIB » est une
+    estimation du gouvernement rapportée par la Banque mondiale. La clé imf-tunisia-art4-2020
+    désigne la consultation de 2021 au titre de l''article IV (Country Report No.
+    21/44). NON REPRIS, faute de relecture à l''image : passifs éventuels de 14 %
+    du PIB et prime salariale de 34 % (Banque mondiale, cette dernière de seconde
+    main), test de résistance du FMI. EFFECTIFS : les 117 416 employés de 2010 (Banque
+    mondiale 2014, 104 entreprises, BANQUES ET CAISSES SOCIALES COMPRISES, tableau
+    qui mêle trois dates) et les 190 000 salariés de la Banque mondiale 2020 (date
+    et périmètre non dits) NE SE COMPARENT PAS aux totaux de l''annexe 9 (82 à 88
+    entreprises hors banques et caisses : voir entreprises-publiques-effectifs-ensemble)
+    ; aucun raccord. « 30 % des emplois du secteur formel » (milieu des années 1980)
+    est une phrase du Livre blanc, sans source. LU À L''IMAGE (onze pages), chaque
+    citation retrouvée dans la couche texte.'
+  titre_ar: 'المنشآت العمومية: أرقام إجمالية واردة في الكتاب الأبيض (2018) وتقارير
+    صندوق النقد الدولي (2021) والبنك الدولي (2020) والمعهد التونسي للقدرة التنافسية
+    والدراسات الكمية (2010)، مع الاقتباس والمنهجية'
+  unite_ar: 'حسب السطر: نسبة من الناتج المحلي الإجمالي، مليارات أو ملايين الدنانير،
+    عدد'
+  perimetre_ar: سبعون رقماً من خمس وثائق، مع الجملة المقتبسة والصفحة ومنهجية كلّ وثيقة
+  caveats_ar: 'تقرير إصلاح وتقارير خارجية وتقييم: لا تُوضع أبداً في الجدول نفسه مع
+    السلاسل الميزانية. لا يُذكر أساس الناتج المحلي الإجمالي في أيّ منها. قُرئت من
+    الصورة.'
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-effectifs-ensemble
+  titre: 'Entreprises publiques : effectif total et charges de personnel d''ensemble,
+    exercices 2018, 2019, 2020 et 2022, par édition (hors banques et caisses sociales)'
+  sources:
+  - minfin-ep-2022
+  - minfin-ep-2023
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-effectifs-ensemble.csv
+  output: data/processed/entreprises-publiques/effectifs_ensemble_2018_2022.csv
+  unite: agents ; millions de dinars courants ; % (colonne unite)
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
+    9), tableau « indicateurs des 40 entreprises comparés à ceux de l''ensemble »
+    des éditions LF 2022 (exercice 2018 : 99 836 agents, 84 entreprises), LF 2023
+    (2019 : 99 523 agents, 86 entreprises), LF 2024 (2020 : 96 305,5 agents, 88 entreprises)
+    et LF 2025 (2022 : 97 208 agents, 85 entreprises) : nombre d''agents et charges
+    de personnel de l''échantillon de 40, de l''ensemble, et part de l''échantillon
+    ; HORS secteur financier (banques, Poste, Caisse des prêts) et HORS caisses sociales
+    ; une ligne par (édition, exercice, périmètre, indicateur)'
+  caveats: 'SEUL EFFECTIF TOTAL PUBLIÉ PAR LE MINISTÈRE, ET IL N''EST PAS CELUI DE
+    TOUTES LES ENTREPRISES PUBLIQUES : le rapport en recense 111 à 115, en écarte
+    celles sans états financiers, et laisse à part 7 établissements financiers et
+    3 caisses ; le nombre d''entreprises couvertes change à chaque édition (colonne
+    nombre_entreprises : 84, 86, 88, 85) — QUATRE POINTS, QUATRE PÉRIMÈTRES, AUCUNE
+    SÉRIE : ne pas relier 2018 à 2022 sans dire la rupture. AUCUN TOTAL POUR 2021
+    (l''édition LF 2024 porte sur 2020, l''édition LF 2025 sur 2022), ni avant 2018
+    : l''édition LF 2020 ne donne qu''une part (les 23 entreprises de son échantillon
+    emploient 75,3 % des agents de 87), non reprise. Édition LF 2022 : la ligne dit
+    « 82 entreprises », une note précise que le nombre d''agents en couvre 84. Édition
+    LF 2023 : le titre dit 79, la ligne 86. Édition LF 2024 : effectifs imprimés avec
+    une décimale (81 889,5 ; 96 305,5), et la somme des 40 fiches de la même édition
+    fait 86 182 (`ecart_somme_des_fiches`). CONTRÔLES : la part imprimée se retrouve
+    aux huit tableaux ; la somme des 40 fiches redonne le total des 40 pour 2019 et
+    2022 (agents et charges) ; les charges de l''ensemble recoupent le tableau des
+    agrégats pour 2020 et 2022 (`recoupe_agregats`). Pour un effectif total AVEC banques
+    et caisses, ajouter les lignes correspondantes de entreprises-publiques-effectifs-par-entreprise
+    est un calcul du lecteur, à présenter comme tel. LU À L''IMAGE.'
+  titre_ar: 'المنشآت العمومية: مجموع عدد الأعوان وأعباء الأعوان، سنوات 2018 و2019
+    و2020 و2022، حسب الطبعة (دون البنوك والصناديق الاجتماعية)'
+  unite_ar: عون؛ ملايين الدنانير الجارية؛ نسبة مئوية
+  perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جدول مؤشرات
+    الـ40 منشأة مقارنة بمؤشرات مجموع المنشآت، أربع طبعات
+  caveats_ar: 'المجموع الوحيد المنشور، ولا يشمل كلّ المنشآت العمومية: دون القطاع المالي
+    والصناديق الاجتماعية، وعدد المنشآت يتغيّر من طبعة إلى أخرى (84، 86، 88، 85). لا
+    مجموع لسنة 2021 ولا قبل 2018. قُرئت من الصورة.'
+  fiche: sources/entreprises-publiques.md
+- id: entreprises-publiques-effectifs-par-entreprise
+  titre: 'Entreprises publiques : nombre d''agents et charges de personnel par entreprise,
+    exercices 2016-2023, par édition du rapport annexé à la loi de finances'
+  sources:
+  - minfin-ep-2020
+  - minfin-ep
+  - minfin-ep-2022
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: uv run python scripts/build_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-effectifs.csv
+  output: data/processed/entreprises-publiques/effectifs_par_entreprise_2016_2023.csv
+  unite: agents (colonne effectif) ; millions de dinars courants (colonne charges_personnel_md)
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
+    9), fiches par entreprise de cinq éditions : LF 2020 (français, exercices 2016-2018)
+    et LF 2021 (français, 2017-2019) — nombre d''agents seulement, tiré de la prose
+    des fiches ; LF 2022 (arabe, 2018-2020), LF 2024 (2020-2022) et LF 2025 (2021-2023)
+    — nombre d''agents et charges de personnel, tableaux des fiches ; 50 entités :
+    40 entreprises (l''échantillon du rapport), 5 banques, Poste et Caisse des prêts
+    aux collectivités locales, 3 caisses sociales (colonne categorie) ; une ligne
+    par (édition, entité, exercice), avec le statut du chiffre (réalisé, provisoire,
+    estimé, probable, prévu)'
+  caveats: 'AUCUN RACCORD : un exercice figure dans une à quatre éditions ; toutes
+    les valeurs sont gardées, `divergence_effectif_entre_editions` signale les 90
+    lignes qui diffèrent (Société générale d''entreprises de matériel et de travaux,
+    SOMATRA-GET, en 2020 : 212 puis 1 194 agents ; Tunisair en 2017 : 3 765 puis 3
+    565 ; RNTA en 2018 : 1 336 puis 1 130 ; CTN en 2018 : 1 195 puis 734). `statut`
+    : le dernier exercice de chaque édition est le plus souvent provisoire, estimé
+    ou probable — NE PAS le tracer comme une réalisation ; Tunisair n''a que des chiffres
+    provisoires pour 2021-2023, la Transtu des chiffres probables. LES BANQUES, LE
+    SECTEUR FINANCIER ET LES CAISSES SOCIALES NE SONT PAS DANS L''ÉCHANTILLON DES
+    40 : filtrer sur `categorie` avant toute somme. Le nombre d''agents n''est pas
+    défini par le rapport (permanents, contractuels, équivalents temps plein : non
+    dit) ; la hausse de la CPG en 2019 (6 098 puis 7 421) y est attribuée au programme
+    de recrutement. PREUVES DE LECTURE : 391 variations imprimées d''un exercice à
+    l''autre (éditions LF 2024 et LF 2025) redonnent la différence des niveaux, douze
+    écarts d''arrondi ou d''impression déclarés (dont Groupe chimique, LF 2024 : −278
+    imprimé pour −287) ; la somme des 40 fiches redonne exactement la ligne « total
+    des 40 » pour 2019 et 2022. ÉDITION LF 2023 NON DÉPOUILLÉE (exercices 2019-2021,
+    déjà couverts par deux autres éditions) ; charges de personnel des éditions françaises
+    non reprises ; édition arabe de la LF 2020 non relue. LU À L''IMAGE (pages rendues
+    à 150 dpi et tournées), valeurs recoupées avec la couche texte.'
+  titre_ar: 'المنشآت العمومية: عدد الأعوان وأعباء الأعوان حسب المنشأة، 2016-2023،
+    حسب طبعة التقرير المرفق بقانون المالية'
+  unite_ar: عون؛ ملايين الدنانير الجارية
+  perimetre_ar: 'وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جذاذات
+    المنشآت في خمس طبعات: 40 منشأة و5 بنوك والبريد وصندوق القروض و3 صناديق اجتماعية'
+  caveats_ar: 'لا ربط بين الطبعات: تُحفظ كلّ القيم ويُشار إلى الاختلافات. أرقام السنة
+    الأخيرة من كلّ طبعة وقتية أو تقديرية أو محتملة في الغالب. البنوك والصناديق الاجتماعية
+    خارج عيّنة الأربعين. تعريف عدد الأعوان غير مذكور. قُرئت من الصورة.'
+  fiche: sources/entreprises-publiques.md
