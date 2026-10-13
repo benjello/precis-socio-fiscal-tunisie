@@ -348,3 +348,9 @@ plutôt qu'à doubler. Aucun rapport ni étude nouveau n'est cité : rien à ran
 `scratchpad/t2img/m1.png` à `m5.png` (planches lues), `lf87-15.png`, `lf87-16.png`, `lf95-005.png`
 (pages entières) ; `scratchpad/plein_texte_q2.py` et `plein-q2.txt` (plein texte 2000-2010) ;
 `scratchpad/relance-q2.txt` (sortie de la relance). Aucun processus d'OCR ne reste en cours.
+
+## 8. Compléments du 13 octobre 2026 (lus à l'image)
+
+- **1984** : tableau « F », ligne n° 30, JORT n° 86 du 30 décembre 1983, p. 3422 — « Prévisions », colonnes « Dépenses » puis « Recettes » : 5 600 000 D dans chacune.
+- **Tableau « K » de 1995** (p. 2126) : dix-neuf comptes, la caisse n'y figure pas.
+- **Après 1995** : la loi de finances s'arrête au chapitre croisé avec la partie (1995, tableau « C », p. 2057 : ministère du Transport, interventions publiques 45 989 000 D, services votés ; total du chapitre 56 747 000 D). Les décrets de répartition descendent à l'article sans nommer de bénéficiaire : 1996, décret n° 95-2503, article 62, 42 498 000 D (p. 2543-2544) ; 1997, décret n° 96-2458, article 71, 49 002 000 D (p. 2677-2678) ; 2001, décret n° 2000-2932, article 03.302, 84 764 000 D (p. 3281). Aucun libellé ne nomme le transport routier : pas de série à en tirer. Détail à la fiche `r-transport-ligne-budgetaire-1995-2002`.

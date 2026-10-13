@@ -2261,11 +2261,11 @@ une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
     subvention du budget seule de 1988 à 1994, suppression à la gestion 1995 (loi n° 94-127,
     art. 35) — `tbl-compensation-transport-caisse`. **Restent** : réalisations (lois de finances
     complémentaires et lois de règlement, au corpus, **à lire**) ; composition des recettes de
-    1985-1986 (art. 26 de la loi de finances pour 1985, **à lire**) ; prévision de 1984 à relire
-    à l'image ; pied de page de la loi de finances pour 1989 à confirmer à l'image.
+    1985-1986 (art. 26 de la loi de finances pour 1985, **à lire**) ; pied de page de la loi de finances pour 1989 à confirmer à l'image.
   - **1995-2002** : ligne du budget général qui porte la subvention après la suppression de la
-    caisse, non identifiée (fiche `r-transport-ligne-budgetaire-1995-2002` : tableaux des
-    dépenses par ministère des lois de finances, au corpus, en image, **à lire** ; budgets du
+    caisse, non identifiée (fiche `r-transport-ligne-budgetaire-1995-2002` : lois de finances
+    et décrets de répartition lus le 13 octobre 2026 pour 1995, 1996, 1997 et 2001, aucun
+    libellé ne nomme le transport ; budgets du
     ministère du Transport, **à obtenir** aux archives du web) ; le poste n'est suivi qu'à partir
     de 2003.
   - **Tarifs entre février 2000 et novembre 2007**, et actes des relèvements d'août 2010 et de
