@@ -2230,10 +2230,12 @@ une série divergent, la série fait foi**. Premier jet, non relu par l'humain.
   `-abonnements-nombre`, `-comptes`) ; Cour des comptes (`-cour`) ; *Livre blanc* de la Banque
   mondiale (`-livre-blanc`) ; incidence (`-incidence`). Six sections `.domicile-unique`, cinq
   registres repliés.
-- **Figures** (`precis/fr/compensation/figures/transport.py`, `tr.figure(…)`), sept :
+- **Figures** (`precis/fr/compensation/figures/transport.py`, `tr.figure(…)`), huit :
   `fig-compensation-transport-soutien` (quatre vues, dont part de la dépense de compensation et
   part du PIB), `-tarifs-arretes`, `-abonnements-prix`, `-tarifs`, `-interventions` (deux vues),
-  `-abonnements-nombre`, `-trafic-tunis`. Libellés des figures en français seulement : **libellés
+  `-abonnements-nombre`, `-trafic-tunis`, `-caisse` (trois vues : millions de dinars, part des
+  dépenses de l'État, part du PIB ; **restent** : part des dépenses de l'État pour 1984-1985,
+  l'entrepôt n'ayant ces dépenses qu'à partir de 1986 ; base du PIB de 1986-1991, présumée). Libellés des figures en français seulement : **libellés
   arabes à verser** dans `_L` avant de déclarer le chapitre au livre arabe.
 - **Snapshots** du 11 octobre 2026 : `transport-soutien-par-societe`,
   `transport-abonnements-scolaires`, `transport-transferts-par-entreprise`,
