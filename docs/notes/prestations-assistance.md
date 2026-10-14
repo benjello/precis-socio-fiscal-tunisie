@@ -289,7 +289,7 @@ Contenu (4 articles) :
 
 Abrogations expresses (art. 4) : art. 27 et 28 (§ 1er, 2e al.) de la loi n° 69-2 du 20 janvier 1969
 relative à l'organisation sanitaire, modifiés par la loi n° 81-12 du 2 mars 1981 ; art. 105 de la
-loi n° 82-91 du 30 décembre 1982 (LF 1983) modifié par l'art. 56 de la loi n° 85-109 (LF 1986).
+loi n° 82-91 du 31 décembre 1982 (LF 1983) modifié par l'art. 56 de la loi n° 85-109 (LF 1986).
 
 **Correction majeure à porter au plan et au rédacteur** : **la dualité AMG1 / AMG2 date de 1987,
 pas de 1998.** L'article 1er institue déjà « deux catégories de livrets », différenciées par le

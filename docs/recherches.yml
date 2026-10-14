@@ -2516,3 +2516,71 @@
     couverture: 'titres de jort_cache (SQL sur la colonne titre) : une seule notice, le décret n° 2024-182 (JORT n° 47 de 2024), déjà connu. Plein texte des fascicules français de 2017 à 2026 : les visas citent le décret sans modificatif jusqu''au JORT n° 23 de 2024, puis « tel que modifié et complété par le décret n° 2024-182 », et lui seul, jusqu''au JORT n° 75 de 2026 (décret n° 2026-148 du 23 juillet 2026). Lacunes : corpus français de 2018 incomplet (70 fascicules) ; actualisation des listes par la voie de l''article 4 du décret (approbation du conseil supérieur d''investissement) non cherchée hors Journal officiel. Requêtes lancées à la main, non par recherches.py.'
     couvert_jusqu_au: 2026-07-24
     resultat: aucun
+
+- id: r-sante-prevoyance-1951-texte
+  objet: texte du décret du 12 avril 1951 instituant un régime de prévoyance en faveur des personnels de l'État et des collectivités publiques, et de ses arrêtés d'application (17 juillet 1951, 23 juillet 1952, 10 octobre 1952) ; existence d'un régime de prévoyance antérieur, de 1948
+  ou: [precis/fr/sante/_couverture.qmd#sec-soins-histoire]
+  requetes:
+    titres_like: ['%prevoyance%']
+    depuis: 1956-01-01
+  periode:
+    jusqu_au: 1974-12-31
+    motif: les textes cherchés sont antérieurs à 1956 ; on ne les atteint que par les visas des textes de 1956-1974 (loi n° 72-2, décret n° 73-91, arrêtés du 12 mars 1973, décret n° 74-899)
+  passes:
+  - date: 2026-10-14
+    role: documentaliste
+    sources: [corpus_local, visas, web]
+    couverture: 'Le Journal officiel tunisien antérieur à 1956 n''est ni dans jort_cache ni dans le corpus local (voir r-caisses-protectorat-fondation). Visas lus à l''image : loi n° 72-2 (JORT n° 7 de 1972, p. 189), décrets n° 73-90 et 73-91 (JORT n° 10 de 1973, pp. 355-356), arrêtés du 12 mars 1973 (pp. 357-358), décret n° 74-899 (JORT n° 61 de 1974, p. 2212). Ils citent le décret du 12 avril 1951 et les arrêtés des 17 juillet 1951, 10 octobre 1952 et 23 juillet 1952 ; aucun ne cite de texte de 1948. Web : page BnF des publications officielles des colonies (rubrique Tunisie vide, « en construction ») ; notice HathiTrust 102166899 (403). Note : docs/notes/sante-couverture-avant-2004-2026-10-14.md, § 1-2.'
+    couvert_jusqu_au: 1974-12-31
+    resultat: aucun
+  - date: 2026-10-14
+    role: rédacteur
+    sources: [presse, web]
+    couverture: 'Bulletin économique et social de la Tunisie, numérisé sur cinumedpub.mmsh.fr, copies dans tunisia-data (data/raw/caisses/best/) : rubrique « Législation » du n° 52 de 1951 (p. 106), qui date la publication du décret au J.O.T. du 17 avril 1951 et signale un second décret du même jour modifiant les statuts de la Société de prévoyance des fonctionnaires et employés tunisiens ; article de Lucien Bertrand, n° 71 de décembre 1952 (pp. 50-57) et n° 72 (pp. 70-80), qui expose le régime en vigueur depuis le 1er avril 1951 (risques couverts, tarif de responsabilité, quotités, cotisations, gestion) sans en reproduire le texte. Le texte du décret reste à lire. Gallica ne donne le J.O.T. que pour 1883-1887 ; la Série législative du BIT de 1948 à 1952 ne recense pas le décret. Aucun texte de 1948 n''est attesté.'
+    couvert_jusqu_au: 1974-12-31
+    resultat: aucun
+  a_faire:
+  - consulter le Journal officiel tunisien du 17 avril 1951 et de 1952 (BnF, bibliothèques de Tunis, archives diplomatiques de Nantes, fonds 1TU)
+
+- id: r-sante-admission-1939
+  objet: décret du 23 décembre 1939 fixant les conditions d'admission des malades dans les établissements hospitaliers publics (preuve de l'indigence avant la carte de soins de 1958)
+  ou: [precis/fr/sante/_couverture.qmd#sec-soins-histoire]
+  requetes:
+    titres_like: ['%indigen%', '%gratuit%des soins%', '%soins gratuits%', '%admission dans les etablissements hospitaliers%']
+    iort_ar: [شهادة الفقر]
+    depuis: 1956-01-01
+  periode:
+    jusqu_au: 1960-12-31
+    motif: le décret est abrogé par la loi n° 60-13 (art. 6) ; il n'est connu que par les visas de 1958 et 1960
+  passes:
+  - date: 2026-10-14
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas, web]
+    couverture: 'jort_cache, intitulés FR (LIKE indigen, gratuit…des soins, soins gratuits, carte…de soins, livret…de soins, contribution aux frais, admission dans les etablissements hospitaliers, tarifs reduits) avant 1999 : décret n° 57-39 (soins gratuits du personnel hospitalier), loi n° 60-13, décrets n° 62-350 et 69-399, loi n° 87-29 et textes de l''AMG ; aucun texte ne nomme un certificat d''indigence. Visas lus à l''image : loi n° 58-67 (JORT n° 51 de 1958, p. 686 : décrets des 8 décembre 1937 et 23 décembre 1939) ; loi n° 60-13 (JORT n° 36 de 1960, p. 1006, art. 6 : abroge le décret du 23 décembre 1939 « fixant les conditions d''admission »). Miroir iort, 1996-2004 : « شهادة الفقر » sans résultat (terme à reprendre sur 1956-1960). Web : recherche « certificat d''indigence » Tunisie hôpital 1956-1957, sources secondaires générales seulement. Note : docs/notes/sante-couverture-avant-2004-2026-10-14.md, § 3.2 et 3.7.'
+    couvert_jusqu_au: 1960-12-31
+    resultat: aucun
+  a_faire:
+  - lire le décret du 23 décembre 1939 dans le Journal officiel tunisien de 1939 (mêmes fonds que r-sante-prevoyance-1951-texte)
+  - lire les décrets n° 57-39 et 62-350, repérés à l'index
+
+- id: r-sante-am-preparation-1996-2004
+  objet: textes et décisions de préparation de l'assurance maladie entre 1996 et 2004, dont la décision du conseil des ministres du 16 février 1996 et la place de l'assurance maladie dans le IXe Plan (1997-2001)
+  ou: [precis/fr/sante/_couverture.qmd#sec-soins-base]
+  requetes:
+    titres_like: ['%assurance maladie%', '%assurance-maladie%', '%prestations de soins%', '%couverture sociale%']
+    iort_ar: [التأمين على المرض, تأمين على المرض, اللجنة الوطنية للتأمين على المرض]
+    depuis: 1996-01-01
+  periode:
+    jusqu_au: 2004-08-02
+    motif: de l'institution de la commission nationale de l'assurance maladie (décret n° 96-1018) à la loi n° 2004-71
+  passes:
+  - date: 2026-10-14
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local, web]
+    couverture: 'jort_cache, intitulés FR : LIKE %assurance maladie% OU %assurance-maladie% (1990-2004) → décret n° 96-1018, loi n° 2004-71 ; LIKE %maladie% OU %prestations de soins% OU %caisse nationale d''assurance% OU %regime%soins% OU %couverture sociale% (1996-01-01 à 2004-08-01, sauf %professionnelle%) → n° 96-1018, 96-1755, 98-1387 et hors sujet. jort_cache, intitulés AR : LIKE %التأمين على المرض% OU %العلاج% (1996-2004) sans résultat. Miroir iort (1996-2004) : « التأمين على المرض » → loi n° 2004-71 ; « تأمين على المرض » → décret n° 96-1018, loi n° 2004-71 ; « اللجنة الوطنية للتأمين على المرض » sans résultat. Décret n° 96-1018 lu (JORT n° 45 de 1996, pp. 1111-1112) : un seul visa (décret n° 75-775), aucun considérant. Loi n° 97-49 portant approbation du IXe Plan (JORT n° 59 de 1997, p. 1299) : le plan « annexé » n''est pas imprimé au JORT. Web : « 16 février 1996 » assurance maladie Tunisie conseil des ministres, et « IXe Plan 1997-2001 Tunisie assurance maladie », sans résultat utilisable. Note : docs/notes/sante-couverture-avant-2004-2026-10-14.md, § 6.'
+    couvert_jusqu_au: 2004-08-02
+    resultat: aucun
+  a_faire:
+  - presse de février 1996 (La Presse, Le Renouveau), rapports annuels du ministère des Affaires sociales 1996-2003
+  - document du IXe Plan (1997-2001), hors JORT
+  - exposé des motifs et débats de la loi n° 2004-71 (Chambre des députés)

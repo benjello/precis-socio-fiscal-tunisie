@@ -1814,6 +1814,43 @@ mesure ni les soins réalisés ni les revenus des médecins.
   le 13 octobre 2026). Le numéro 15 est bien le 15. **À obtenir** : le vrai n° 14,
   puis lecture des valeurs et de leur date d'effet ; ne pas traiter les métadonnées
   comme le texte de l'arrêté.
+- **Couverture avant 2004, écrite le 14 octobre 2026** (`#sec-soins-histoire`,
+  `#sec-soins-base`, `#sec-soins-assistance` ; note `sante-couverture-avant-2004-2026-10-14.md`).
+  Fait : régime de prévoyance de 1951 d'après le *Bulletin économique et social de la Tunisie*
+  (Bertrand, n° 71 et 72 ; rubrique « Législation » du n° 52 de 1951) ; réforme de 1972-1973
+  (loi n° 72-2, décret n° 73-91, arrêtés du 12 mars 1973, décret n° 74-899) ; assistance
+  médicale de 1958 à 1986 (lois n° 58-67, 60-13, 69-2, 81-12, décret n° 69-399, LF 1983
+  art. 105, LF 1986 art. 56) ; extensions de la sécurité sociale du secteur privé 1965-2002 ;
+  loi n° 91-63 (art. 35-36, 63) et décrets de 1998 ; commission de 1996 (décret n° 96-1018).
+  Lus à l'image au corpus (OCR des pages utiles) ; trois fiches nouvelles dans
+  `docs/recherches.yml` (`r-sante-prevoyance-1951-texte`, `r-sante-admission-1939`,
+  `r-sante-am-preparation-1996-2004`).
+  - **À obtenir, hors corpus** : texte du décret du 12 avril 1951 et de ses arrêtés
+    (17 juillet 1951, 23 juillet 1952, 10 octobre 1952) ; décret du 23 décembre 1939 sur
+    l'admission des malades ; document du IXe Plan (1997-2001) ; décision gouvernementale de
+    1996 sur l'assurance maladie, si elle existe.
+  - **Lisible au corpus, à lire** : arrêtés d'application de la loi n° 81-12 (livrets, liste
+    des longues maladies) ; décrets n° 57-39, 62-350 (contribution de 1962), 93-529 et
+    94-1738 ; texte de la convention de 1973 (forfait annuel, décret n° 74-899) ; branche
+    soins du décret n° 95-1166. Les dates d'effet des lois n° 81-6 et du décret n° 82-1360
+    sont reprises des notes de leurs clés, non relues ; le tableau des extensions ne date
+    donc que par année.
+  - **Pages arabes à relever** : art. 105 de la LF 1983 ; titres arabes des lois n° 60-13,
+    85-109 et des décrets n° 69-399, 74-899, au fascicule.
+  - **Dinars constants** : les plafonds et contributions de 1951-1986 (`#tbl-soins-prevoyance`,
+    `#tbl-soins-contributions`) attendent un indice des prix sourcé sur la période.
+  - **Contradiction à lever au volume des prestations** : la puce « La dualité entre soins
+    gratuits et soins à tarif réduit date de 1987 » (`_non_contributives.qmd`,
+    `#sec-nc-aide-medicale`) est contredite par la loi n° 58-67 (gratuité ou 50 F selon le
+    revenu) et par la loi n° 81-12 (trois catégories). Non modifiée ici, à reprendre.
+  - **Signalé au volume des cotisations, sans y toucher** : `#sec-cot-pensionnes`
+    (`_regimes.qmd`) écrit qu'avant 2007 « la case est vide » et rattache par hypothèse au
+    facultatif le 2 % sur pension du décret n° 73-91. Or la loi n° 72-2 range les retraités
+    et les veuves pensionnées parmi les bénéficiaires (art. 1er, 6°) et fait précompter leur
+    cotisation sur la pension (art. 7, al. 2) ; et le régime de 1951 prélevait déjà 0,50 % de
+    la pension sous plafond (Bertrand, *Bulletin économique et social de la Tunisie*, n° 72,
+    pp. 70-71). Réserve à rouvrir par le rédacteur du volume, et par le modéliste pour la
+    série.
 - **Intégration bilingue** : `_quarto.yml` et `references.json` tenus dans les deux langues ;
   les références arabes de 1987 à 2021 demandent page et, pour celles dont elle manque,
   URL vérifiée ; les URL arabes des fascicules de 1989, 1991 et de la convention de 2007
