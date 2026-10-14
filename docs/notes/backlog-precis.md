@@ -1870,10 +1870,10 @@ mesure ni les soins réalisés ni les revenus des médecins.
     85-109 et des décrets n° 69-399, 74-899, au fascicule.
   - **Dinars constants** : les plafonds et contributions de 1951-1986 (`#tbl-soins-prevoyance`,
     `#tbl-soins-contributions`) attendent un indice des prix sourcé sur la période.
-  - **Contradiction à lever au volume des prestations** : la puce « La dualité entre soins
-    gratuits et soins à tarif réduit date de 1987 » (`_non_contributives.qmd`,
-    `#sec-nc-aide-medicale`) est contredite par la loi n° 58-67 (gratuité ou 50 F selon le
-    revenu) et par la loi n° 81-12 (trois catégories). Non modifiée ici, à reprendre.
+  - **Fait le 14 octobre 2026, volumes des prestations et des caisses** : la puce « dualité de
+    1987 » de `#sec-nc-aide-medicale` est corrigée (1958, 1981, 1987), avec un renvoi à l'histoire
+    du volume santé ; `#sec-caisses-cnr-cps` dit le rôle de la Caisse de prévoyance sociale dans
+    l'option de 1972-1973 (carnet de soins, convention à forfait annuel).
   - **Signalé au volume des cotisations, sans y toucher** : `#sec-cot-pensionnes`
     (`_regimes.qmd`) écrit qu'avant 2007 « la case est vide » et rattache par hypothèse au
     facultatif le 2 % sur pension du décret n° 73-91. Or la loi n° 72-2 range les retraités
