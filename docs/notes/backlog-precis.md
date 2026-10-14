@@ -1845,8 +1845,8 @@ mesure ni les soins réalisés ni les revenus des médecins.
   le 13 octobre 2026). Le numéro 15 est bien le 15. **À obtenir** : le vrai n° 14,
   puis lecture des valeurs et de leur date d'effet ; ne pas traiter les métadonnées
   comme le texte de l'arrêté.
-- **Couverture avant 2004, écrite le 14 octobre 2026** (`#sec-soins-histoire`,
-  `#sec-soins-base`, `#sec-soins-assistance` ; note `sante-couverture-avant-2004-2026-10-14.md`).
+- **Couverture avant 2004, écrite le 14 octobre 2026** (chapitre `_histoire.qmd`, `#sec-soins-histoire`,
+  placé en tête du livre et ordonné par périodes le même jour ; `_couverture.qmd`, `#sec-soins-base`, `#sec-soins-assistance` ; note `sante-couverture-avant-2004-2026-10-14.md`).
   Fait : régime de prévoyance de 1951 d'après le *Bulletin économique et social de la Tunisie*
   (Bertrand, n° 71 et 72 ; rubrique « Législation » du n° 52 de 1951) ; réforme de 1972-1973
   (loi n° 72-2, décret n° 73-91, arrêtés du 12 mars 1973, décret n° 74-899) ; assistance

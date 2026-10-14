@@ -2527,7 +2527,7 @@
 
 - id: r-sante-prevoyance-1951-texte
   objet: texte du décret du 12 avril 1951 instituant un régime de prévoyance en faveur des personnels de l'État et des collectivités publiques, et de ses arrêtés d'application (17 juillet 1951, 23 juillet 1952, 10 octobre 1952) ; existence d'un régime de prévoyance antérieur, de 1948
-  ou: [precis/fr/sante/_couverture.qmd#sec-soins-histoire]
+  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire]
   requetes:
     titres_like: ['%prevoyance%']
     depuis: 1956-01-01
@@ -2552,7 +2552,7 @@
 
 - id: r-sante-admission-1939
   objet: décret du 23 décembre 1939 fixant les conditions d'admission des malades dans les établissements hospitaliers publics (preuve de l'indigence avant la carte de soins de 1958)
-  ou: [precis/fr/sante/_couverture.qmd#sec-soins-histoire]
+  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire]
   requetes:
     titres_like: ['%indigen%', '%gratuit%des soins%', '%soins gratuits%', '%admission dans les etablissements hospitaliers%']
     iort_ar: [شهادة الفقر]
@@ -2573,7 +2573,7 @@
 
 - id: r-sante-am-preparation-1996-2004
   objet: textes et décisions de préparation de l'assurance maladie entre 1996 et 2004, dont la décision du conseil des ministres du 16 février 1996 et la place de l'assurance maladie dans le IXe Plan (1997-2001)
-  ou: [precis/fr/sante/_couverture.qmd#sec-soins-base]
+  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-1987]
   requetes:
     titres_like: ['%assurance maladie%', '%assurance-maladie%', '%prestations de soins%', '%couverture sociale%']
     iort_ar: [التأمين على المرض, تأمين على المرض, اللجنة الوطنية للتأمين على المرض]
