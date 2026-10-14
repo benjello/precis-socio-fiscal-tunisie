@@ -1,0 +1,13 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-13
+# séries (tunisia_data) : cnam-comptes-2016-2021
+# sources (citation) : @cnam-etats-financiers-2016-2018, @cnam-etats-financiers-2018-2019, @cnam-etats-financiers-2020-2021
+# fiches : sources/sante-series-depenses.md
+# méthode/hypothèses : Ne pas additionner charges et décaissements : deux comptabilités. Les charges techniques ne ventilent pas maladie, assurances sociales et AT/MP. L'année 2018 est identique dans les deux éditions qui la couvrent.
+# note : CNAM : charges techniques et administratives, puis prestations décaissées, tous régimes, 2016-2021
+Année,Charges techniques (milliers D),Charges administratives (milliers D),Prestations décaissées (milliers D),Édition des comptes
+2016,2074070,140772,1486719,2016-2018
+2017,2191280,146713,1437156,2016-2018
+2018,2236255,219538,2156471,2019-2018
+2019,2367411,171464,2013924,2019-2018
+2020,2369875,177416,2094310,2020-2021
+2021,2452805,193518,1906781,2020-2021

@@ -51,6 +51,8 @@ COLLECTION_TO_BOOK = {
     "marche du travail": "marche_travail",
     "compensation": "compensation",
     "entreprises publiques": "entreprises_publiques",
+    "santé": "sante",
+    "sante": "sante",
 }
 
 

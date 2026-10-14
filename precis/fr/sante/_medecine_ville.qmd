@@ -1,0 +1,88 @@
+# La médecine de ville : consultations et honoraires {#sec-sante-ville .domicile-unique}
+
+En dehors de l'hôpital, le malade peut consulter un médecin exerçant à titre libéral. **L'honoraire que reçoit le médecin, le montant remboursé par la caisse et ce que paie finalement le malade sont trois grandeurs différentes.** La prise en charge dépend du droit de l'assuré, du conventionnement du praticien, de la nature du soin et de la modalité choisie. Le [chapitre de la couverture](./_couverture.html#sec-soins-modalites) explique les filières ; le présent chapitre suit les professionnels et le paiement d'une consultation.
+
+## Vue d'ensemble : qui consulte, qui paie ? {#sec-ville-vue}
+
+[La loi d'organisation sanitaire de 1991](#r-ville-tarifs) distingue l'exercice en cabinet médical, les établissements privés, la nomenclature des actes et les honoraires. [La convention des médecins de libre pratique approuvée en 2007](#r-ville-convention) organise ensuite la relation des médecins qui y adhèrent avec la Caisse nationale d'assurance maladie (CNAM). Elle vise les généralistes comme les spécialistes. Le médecin libéral perçoit des honoraires ; il ne reçoit pas le traitement du corps des [médecins des hôpitaux publics](./_hopital.html#sec-hopital-remuneration).
+
+| Question | Règle de la convention de 2007 | Conséquence pour le paiement |
+|---|---|---|
+| Quel médecin ? | généraliste ou spécialiste de libre pratique ayant adhéré personnellement à la convention | le conventionnement de la caisse porte sur le praticien, même en cabinet de groupe |
+| Quel tarif sert de référence ? | nomenclature des actes et honoraires conventionnels | base du remboursement ou du paiement au médecin, selon l'acte |
+| Si le malade paie l'honoraire ? | le médecin atteste l'acte et le paiement | le bénéficiaire demande ensuite sa prise en charge à la caisse |
+| Si le tiers payant s'applique ? | le patient règle sa part ; la caisse règle au médecin la part qu'elle prend en charge | l'honoraire est partagé entre patient et caisse selon le soin |
+| Si la consultation s'inscrit dans le parcours coordonné prévu par la convention ? | un médecin de famille généraliste peut orienter vers un spécialiste, avec les exceptions prévues | accès et prise en charge obéissent aux règles du parcours si celui-ci est applicable |
+
+: Consulter un médecin de libre pratique : conventionnement, honoraire et prise en charge dans la convention approuvée en 2007 {#tbl-ville-parcours-paiement}
+
+- **Le médecin reçoit un honoraire, pas le « remboursement ».** La convention fixe les honoraires opposables ; ceux-ci servent à calculer ce que la caisse rembourse au malade ou verse au praticien.
+- **Le patient peut avancer les frais ou n'en payer qu'une part.** Dans le premier cas, la caisse rembourse selon les règles de prise en charge ; dans le second, elle verse directement sa part au médecin (@sec-ville-paiement).
+- **Le choix de la filière reste distinct du choix du médecin.** La convention du médecin ne crée pas, à elle seule, le droit de l'assuré à la filière privée ni une prise en charge de tous les actes (@sec-soins-modalites).
+
+## Combien de médecins sont conventionnés ? {#sec-ville-medecins-conventionnes}
+
+La CNAM compte les **médecins généralistes et spécialistes conventionnés** avec elle, séparément des autres prestataires. Les généralistes passent de **1 782 en 2007 à 3 905 en 2021**, les spécialistes de **823 à 5 460** (@fig-ville-medecins-conventionnes). Ce sont des médecins liés à la caisse par une convention, non l'ensemble des médecins exerçant en Tunisie ; ces effectifs ne disent ni le nombre de consultations ni celui des médecins disponibles dans chaque région.
+
+```{python}
+#| label: fig-ville-medecins-conventionnes
+#| fig-cap: "Généralistes et spécialistes conventionnés avec la CNAM, 2007-2021."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import medecins_conventionnes as mc
+import figtools
+figtools.figure_tabs(
+    mc.fig_effectifs(), mc.table(), mc.SERIE,
+    slug="fig_medecins_conventionnes",
+    caption="Généralistes et spécialistes conventionnés avec la CNAM, 2007-2021",
+    note_lecture=(
+        "Survolez chaque point pour voir le **nombre exact** de praticiens de l'année. "
+        "Les deux courbes suivent les seuls médecins généralistes et spécialistes "
+        "conventionnés : la CNAM classe séparément l'activité privée complémentaire "
+        "et exclut les cliniques privées de son total de prestataires "
+        "[@cnam-indicateurs-globaux-2021, p. 5]. Ni la fréquentation des cabinets "
+        "ni la répartition régionale ne se déduisent de ces effectifs."
+    ),
+    nominal=False,
+)
+```
+
+## La mise en place des rapports avec l'assurance maladie {#sec-ville-histoire}
+
+[La loi de 1991](#r-ville-tarifs) soumet les cabinets médicaux à leurs textes propres : elle fait fixer la nomenclature générale des actes par le ministre de la Santé, et les tarifs et honoraires par arrêté conjoint des ministres compétents. Elle précise que ces honoraires servent de base à la fixation des frais médicaux remboursés par les organismes de protection sociale. Le médecin peut exercer en ville avant la CNAM ; la [réforme de l'assurance maladie](./_couverture.html#sec-soins-base) change la manière dont les soins de ses assurés sont financés.
+
+La [convention approuvée en 2007](#r-ville-convention) fixe les droits et obligations des médecins libéraux qui y adhèrent personnellement. Elle exclut de son champ propre la médecine du travail exercée au titre de conventions entre médecins et entreprises. Pour les soins donnés dans une clinique privée, elle subordonne l'application de ses règles à l'adhésion de l'établissement à la convention qui lui est propre : la convention du médecin ne suffit pas à régler le prix total d'une hospitalisation privée.
+
+## Le médecin de famille et l'orientation des soins {#sec-ville-medecin-famille}
+
+[La convention de 2007](#r-ville-coordination) propose un parcours coordonné fondé sur le choix d'un généraliste appelé « médecin de famille ». Pour les bénéficiaires qui adhèrent à ce parcours, il est le premier recours, oriente vers les soins spécialisés et coordonne les interventions. La convention prévoit des consultations directes, notamment en pédiatrie, gynécologie et ophtalmologie, et distingue les affections prises en charge intégralement. Elle **renvoie à un avenant les modalités pratiques du parcours** : la seule lecture de la convention de 2007 ne suffit donc pas à dater son application effective.
+
+Le médecin de famille est le médecin du patient dans cette organisation conventionnelle, **pas le médecin traitant d'un hôpital**. Le spécialiste reçoit une orientation quand le parcours l'exige ; le patient garde les droits que son régime lui ouvre, mais leur prise en charge dépend des conditions de consultation. Les actes et prescriptions d'un praticien non conventionné ne sont pas couverts par cette convention ; les règles qui leur sont applicables doivent être lues dans les textes propres au régime de base.
+
+<!-- TODO (documentaliste) : lire les avenants n° 1 à 7 de la convention des médecins de libre pratique (2007-2012) et les modificatifs suivants, en particulier la mise en application du parcours coordonné et les règles d'accès direct aux spécialistes ; ne pas assimiler la stipulation initiale à son déploiement effectif. -->
+
+## Les honoraires, la caisse et la part du malade {#sec-ville-paiement}
+
+Le tarif de référence est lié à l'acte pratiqué. [La convention](#r-ville-honoraires) fait calculer les honoraires ambulatoires selon la nomenclature et les honoraires conventionnels. Dans le cas de **paiement direct par le malade**, le praticien porte les honoraires perçus sur la feuille de soins ; dans le cas de **tiers payant**, il distingue la part due par la caisse et le ticket modérateur payé par le malade. La convention ne confond pas non plus l'honoraire d'un acte ambulatoire avec la rémunération globale d'une hospitalisation.
+
+Le [régime de base](./_couverture.html#sec-soins-cout) fixe la fraction de certains frais que la CNAM prend en charge, selon la catégorie de soin et les plafonds applicables. Cette fraction ne donne pas automatiquement le revenu du médecin : le nombre de consultations, les actes et les honoraires effectivement réglés ne sont pas établis ici. Pour une visite à domicile, [la convention](#r-ville-honoraires) met les frais supplémentaires de déplacement à la charge du bénéficiaire. Aucun tarif actuel n'est donné sans une série vérifiée des conventions et de leurs avenants.
+
+:::: {.chronologie-repliable titre="Médecine de ville : nomenclature, médecin de famille, honoraires et deux circuits de paiement, textes de 1991 et 2007"}
+
+| Texte ou date | Portée | Référence et localisation | Changement concret |
+|---|---|---|---|
+| []{#r-ville-tarifs}29 juillet 1991 | organisation de l'exercice privé | loi n° 91-63 [@loi91-63, art. 6, p. 1390] | cabinets médicaux et autres activités libérales régis par textes propres ; nomenclature des actes et honoraires, base des remboursements |
+| []{#r-ville-convention}Arrêté du 6 février 2007 | conventionnement des médecins de libre pratique | arrêté du 6 février 2007 [@arrete-2007-02-06-medecins-liberaux, p. 385 ; convention, art. 1-5, p. 394] | approuve la convention CNAM–médecins libéraux, conclue en décembre 2006 ; adhésion personnelle des généralistes et spécialistes ; médecine du travail hors de son champ |
+| []{#r-ville-coordination}Convention approuvée en 2007 | parcours proposé ; modalités à compléter | même arrêté [@arrete-2007-02-06-medecins-liberaux, convention, art. 14-20 et 59-61, p. 396 et 403] | médecin de famille choisi, orientation et coordination ; renvoi à un avenant pour les modalités pratiques |
+| []{#r-ville-honoraires}Convention approuvée en 2007 | honoraire et paiement | même arrêté [@arrete-2007-02-06-medecins-liberaux, convention, titre I, p. 389-393 ; art. 53-57 et 81, p. 402 et 406] | honoraire conventionnel comme base, paiement direct ou tiers payant, part du malade identifiée |
+
+: Médecine de ville : textes et articles sur les honoraires et la prise en charge {#tbl-ville-textes}
+
+::::
+
+## La longue période : consultations et financement {#sec-ville-longue-periode}
+
+La dépense de médecine de ville doit distinguer les honoraires reçus par les praticiens, la part prise en charge par la caisse et la part payée par les ménages. Ni les taux de prise en charge ni le tarif affiché ne suffisent à déduire le nombre de consultations ou la dépense effectivement supportée. Pour situer l'évolution du service non monétaire, il faudra réunir les comptes de la CNAM par type de prestataire, les consultations et actes réalisés, et les enquêtes sur les dépenses des ménages, en distinguant les dates et les périmètres de chacune de ces séries.
+
+<!-- TODO (documentaliste) : relever les honoraires des annexes de la convention et de tous ses avenants, leurs dates d'effet, le nombre de médecins conventionnés, la répartition régionale, les comptes de la CNAM par profession et les dépenses déclarées par les ménages ; construire une série historique homogène avant une figure de longue période. -->

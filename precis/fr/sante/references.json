@@ -1,0 +1,344 @@
+{
+  "items": [
+    {
+      "id": "belloussaief2023-atmp",
+      "type": "article-journal",
+      "title": "Régime de réparation des accidents du travail et des maladies professionnelles : quel bilan et quelles perspectives ?",
+      "title-short": "Belloussaief, Lettre du CRES n° 8, 2023",
+      "author": [{"family": "Belloussaief", "given": "Abir"}],
+      "container-title": "La Lettre du CRES",
+      "issue": "8",
+      "publisher": "Centre de recherches et d'études sociales",
+      "issued": {"date-parts": [[2023, 1]]},
+      "URL": "http://www.cres.tn/uploads/tx_wdbiblio/Lettre_8_janvier_2023_VF_01.pdf",
+      "note": "citation-key: belloussaief2023-atmp\nP. 1, figure 1 : répartition des dépenses de la CNAM entre assurance maladie, assurances sociales et AT/MP, 2009-2019, source CNAM avec calcul de l'auteure ; méthode détaillée non fournie. Copie archivée et cataloguée dans tunisia-data."
+    },
+    {
+      "id": "cnam-etats-financiers-2016-2018",
+      "type": "report",
+      "title": "États financiers de la Caisse nationale d'assurance maladie, exercices 2016 à 2018",
+      "author": [{"literal": "Caisse nationale d'assurance maladie"}],
+      "URL": "http://www.cnam.nat.tn/doc/upload/BILAN2016_2018.pdf",
+      "note": "citation-key: cnam-etats-financiers-2016-2018\nCompte de résultat p. 3 et flux de trésorerie p. 4, en milliers de dinars, exercices 2016-2018. Document récupéré et catalogué dans tunisia-data."
+    },
+    {
+      "id": "cnam-etats-financiers-2018-2019",
+      "type": "report",
+      "title": "États financiers de la Caisse nationale d'assurance maladie, exercices 2018 et 2019",
+      "author": [{"literal": "Caisse nationale d'assurance maladie"}],
+      "URL": "http://www.cnam.nat.tn/doc/upload/BILAN2019_2018.pdf",
+      "note": "citation-key: cnam-etats-financiers-2018-2019\nCompte de résultat p. 3 et flux de trésorerie p. 4, en milliers de dinars. Les valeurs 2018 recoupent le document 2016-2018."
+    },
+    {
+      "id": "cnam-etats-financiers-2020-2021",
+      "type": "report",
+      "title": "États financiers de la Caisse nationale d'assurance maladie, exercices 2020 et 2021",
+      "author": [{"literal": "Caisse nationale d'assurance maladie"}],
+      "URL": "http://www.cnam.nat.tn/doc/upload/BILAN_2020-2021.pdf",
+      "note": "citation-key: cnam-etats-financiers-2020-2021\nCompte de résultat p. 3 et flux de trésorerie p. 4, en milliers de dinars, exercices 2020-2021."
+    },
+    {
+      "id": "cnam-prestations-sanitaires-2021",
+      "type": "report",
+      "title": "Données sur les prestations sanitaires dans le cadre du régime de base de l'assurance maladie, 2007-2021",
+      "author": [{"literal": "Caisse nationale d'assurance maladie"}],
+      "URL": "http://www.cnam.nat.tn/doc/upload/assurance_maladie_fr_2021.pdf",
+      "note": "citation-key: cnam-prestations-sanitaires-2021\nP. 2 : hospitalisations en clinique privée, opérations chirurgicales et accouchements ; p. 3 : facturation des hospitalisations et consultations externes dans les établissements publics de santé et hôpitaux régionaux, montants en millions de dinars, 2007-2021. Copie cataloguée dans tunisia-data."
+    },
+    {
+      "id": "cnam-prestations-sanitaires-2018",
+      "type": "report",
+      "title": "Données sur les prestations sanitaires dans le cadre du régime de base de l'assurance maladie, 2007-2018",
+      "author": [{"literal": "Caisse nationale d'assurance maladie"}],
+      "URL": "http://www.cnam.nat.tn/doc/upload/AssuranceMaladie2018.pdf",
+      "note": "citation-key: cnam-prestations-sanitaires-2018\nP. 2-3 : mêmes rubriques que l'édition 2021, avec des révisions des montants des cliniques privées de 2018 ; copie cataloguée dans tunisia-data."
+    },
+    {
+      "id": "oms-couverture-services-essentiels-tunisie",
+      "type": "dataset",
+      "title": "Indice de couverture des services de santé essentiels (ODD 3.8.1), Tunisie",
+      "author": [{"literal": "Organisation mondiale de la santé"}],
+      "URL": "https://ghoapi.azureedge.net/api/UHC_INDEX_REPORTED?$filter=SpatialDim%20eq%20'TUN'&$select=TimeDim,Value&$orderby=TimeDim",
+      "accessed": {"date-parts": [[2026, 10, 12]]},
+      "note": "citation-key: oms-couverture-services-essentiels-tunisie\nIndice composite de 14 indicateurs traceurs, moyenne géométrique pondérée, échelle 0-100 ; série 2000-2023, API OMS. Méthode : https://www.who.int/data/gho/data/themes/topics/service-coverage."
+    },
+    {
+      "id": "oms-difficultes-financieres-soins-tunisie",
+      "type": "dataset",
+      "title": "Difficulté financière liée aux dépenses directes de santé (ODD 3.8.2, définition de 2025), Tunisie",
+      "author": [{"literal": "Organisation mondiale de la santé"}],
+      "URL": "https://ghoapi.azureedge.net/api/FINANCIALHARDSHIP_PROPORTIONOFPOP?$filter=SpatialDim%20eq%20'TUN'%20and%20Dim1%20eq%20'RESIDENCEAREATYPE_TOTL'&$select=TimeDim,Value,Dim1&$orderby=TimeDim",
+      "accessed": {"date-parts": [[2026, 10, 12]]},
+      "note": "citation-key: oms-difficultes-financieres-soins-tunisie\nSix enquêtes 1995-2021, population totale. Définition révisée en 2025 : dépense directe positive supérieure à 40 % du budget discrétionnaire du ménage. https://www.who.int/data/gho/data/themes/topics/financial-protection. À ne pas confondre avec l'ancien seuil de 10 % du budget total."
+    },
+    {
+      "id": "cnam-indicateurs-globaux-2021",
+      "type": "report",
+      "title": "Données relatives à l'activité de la CNAM : les indicateurs globaux, 2007-2021",
+      "author": [{"literal": "Caisse nationale d'assurance maladie"}],
+      "URL": "http://www.cnam.nat.tn/doc/upload/indicateurs_globaux_2021_fr.pdf",
+      "note": "citation-key: cnam-indicateurs-globaux-2021\nP. 4 : assurés sociaux par filière, 2008-2021 (définition modifiée en 2019 ; étudiants décomptés autrement à partir de 2010). P. 5 : prestataires conventionnés, 2007-2021. Copie et vérification de l'adresse documentées dans tunisia-data, sources/cnam-statistiques.md."
+    },
+    {
+      "id": "ins-annuaire-2017-2021-sante",
+      "type": "report",
+      "title": "Annuaire statistique de la Tunisie, 2017-2021",
+      "author": [{"literal": "Institut national de la statistique"}],
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/annuaire-2021avec%20lien_3.pdf",
+      "note": "citation-key: ins-annuaire-2017-2021-sante\nChapitre 16, tableaux 16.8 et 16.10, pp. 267 et 269 : dépenses du département Santé publique, 2018-2020, en milliers de dinars ; source des chiffres : ministère des Finances."
+    },
+    {
+      "id": "ins-annuaire-2019-2023-sante",
+      "type": "report",
+      "title": "Annuaire statistique de la Tunisie, 2019-2023",
+      "author": [{"literal": "Institut national de la statistique"}],
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/annuaire-2023avec%20lien.pdf",
+      "note": "citation-key: ins-annuaire-2019-2023-sante\nChapitre 16, tableaux 16.8 et 16.10, pp. 269 et 271 : dépenses du département Santé publique, 2021-2023, en milliers de dinars ; source des chiffres : ministère des Finances."
+    },
+    {
+      "id": "oms-ghed-paiements-directs-tunisie",
+      "type": "dataset",
+      "title": "Global Health Expenditure Database : paiements directs des ménages, Tunisie",
+      "author": [{"literal": "Organisation mondiale de la santé"}],
+      "URL": "https://ghoapi.azureedge.net/api/GHED_OOPSCHE_SHA2011?$filter=SpatialDim%20eq%20'TUN'%20and%20TimeDim%20ge%202018&$select=TimeDim,NumericValue,Value,SpatialDim&$orderby=TimeDim",
+      "accessed": {"date-parts": [[2026, 10, 12]]},
+      "note": "citation-key: oms-ghed-paiements-directs-tunisie\nSéries GHED_OOPSCHE_SHA2011 (part des dépenses courantes de santé) et GHED_OOP_pc_US_SHA2011 (dollars courants par habitant) ; données 2018-2023 consultées le 12 octobre 2026."
+    },
+    {
+      "id": "oms-ghed-comptes-sante-tunisie",
+      "type": "dataset",
+      "title": "Global Health Expenditure Database : dépense courante et financement de la santé, Tunisie",
+      "author": [{"literal": "Organisation mondiale de la santé"}],
+      "URL": "https://ghoapi.azureedge.net/api/GHED_CHEGDP_SHA2011?$filter=SpatialDim%20eq%20'TUN'%20and%20TimeDim%20ge%202018&$select=TimeDim,Value&$orderby=TimeDim",
+      "accessed": {"date-parts": [[2026, 10, 12]]},
+      "note": "citation-key: oms-ghed-comptes-sante-tunisie\nIndicateurs GHED_CHEGDP_SHA2011, GHED_GGHE-DCHE_SHA2011, GHED_GGHE-DGDP_SHA2011, GHED_GGHE-DGGE_SHA2011, GHED_PVT-DCHE_SHA2011, GHED_EXTCHE_SHA2011, GHED_CHE_pc_US_SHA2011 ; données 2018-2023 consultées par API GHO le 12 octobre 2026."
+    },
+    {
+      "id": "bm-taux-change-officiel-tunisie",
+      "type": "dataset",
+      "title": "Tunisie : taux de change officiel moyen annuel (dinars par dollar des États-Unis)",
+      "author": [{"literal": "Banque mondiale"}],
+      "URL": "https://api.worldbank.org/v2/country/TUN/indicator/PA.NUS.FCRF?format=json&date=2018:2023",
+      "accessed": {"date-parts": [[2026, 10, 12]]},
+      "note": "citation-key: bm-taux-change-officiel-tunisie\nIndicateur PA.NUS.FCRF, taux officiel moyen annuel en unités monétaires locales par dollar ; source de la Banque mondiale : FMI, International Financial Statistics. Employé uniquement pour la conversion indicative de la dépense directe OMS par habitant, 2018-2023."
+    },
+    {
+      "id": "bct-ra-ipc-sante",
+      "type": "dataset",
+      "title": "Rapports annuels, indices des prix à la consommation, base 100 en 2015, éditions 2018 à 2025",
+      "author": [{"literal": "Banque centrale de Tunisie"}],
+      "URL": "https://www.bct.gov.tn/bct/siteprod/page.jsp?id=77",
+      "note": "citation-key: bct-ra-ipc-sante\nSérie bct-ipc-base2015 du catalogue tunisia-data, tirée des tableaux des rapports annuels 2018-2025 ; valeurs 2018-2023 et indice moyen 2025 de 186,3 (rapport annuel 2025, tableau 2-1, p. 57)."
+    },
+    {
+      "id": "minfin-ep-plf2020-cnam",
+      "type": "report",
+      "title": "Rapport sur les entreprises publiques, annexé au projet de loi de finances pour 2020",
+      "author": [{"literal": "Ministère des Finances de la Tunisie"}],
+      "URL": "http://www.gbo.tn/sites/default/files/2021-02/Annexe_9_LF2020-Entreprises_publiques.pdf",
+      "note": "citation-key: minfin-ep-plf2020-cnam\nP. 45-46 : charges techniques de la CNAM, 2016 et 2017 constatées, 2018 prévue. PDF récupéré et catalogué dans tunisia-data."
+    },
+    {
+      "id": "minfin-ep-plf2021-cnam",
+      "type": "report",
+      "title": "Rapport sur les entreprises publiques, annexé au projet de loi de finances pour 2021",
+      "author": [{"literal": "Ministère des Finances de la Tunisie"}],
+      "URL": "http://www.gbo.tn/sites/default/files/2021-04/Annexe%209%20LF2021%20Entreprises%20Publiques.pdf",
+      "note": "citation-key: minfin-ep-plf2021-cnam\nP. 52 : charges techniques de la CNAM en 2017 et 2018, chiffres rétrospectifs. PDF récupéré et catalogué dans tunisia-data."
+    },
+    {
+      "id": "decret2000-1690",
+      "type": "legislation",
+      "title": "Décret n° 2000-1690 du 17 juillet 2000, fixant le statut particulier du corps des infirmiers de la santé publique",
+      "title-short": "Décret n° 2000-1690 du 17 juillet 2000",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "59",
+      "page": "1778-1781",
+      "issued": {"date-parts": [[2000, 7, 17]]},
+      "URL": "https://www.pist.tn/jort/2000/2000F/Jo0592000.pdf",
+      "note": "citation-key: decret2000-1690\nJORT n° 59 du 25 juillet 2000, pp. 1778-1781. Art. 1-4, 8 et 11 lus à l'image le 12 octobre 2026 ; modificatifs postérieurs à lire."
+    },
+    {
+      "id": "loi91-63",
+      "type": "legislation",
+      "title": "Loi n° 91-63 du 29 juillet 1991, relative à l'organisation sanitaire",
+      "title-short": "Loi n° 91-63 du 29 juillet 1991",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "55",
+      "page": "1390-1393",
+      "issued": {"date-parts": [[1991, 7, 29]]},
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo05591.pdf",
+      "note": "citation-key: loi91-63\nJORT n° 55 du 6 août 1991, pp. 1390-1393. Articles 1-6, 10-29, 32-40 et 63 lus à l'image le 12 octobre 2026 ; dossier : docs/notes/sante-hopital-ville-lectures-2026-10-12.md."
+    },
+    {
+      "id": "decret91-1844",
+      "type": "legislation",
+      "title": "Décret n° 91-1844 du 2 décembre 1991, fixant l'organisation administrative et financière ainsi que les modalités de fonctionnement des établissements publics de santé",
+      "title-short": "Décret n° 91-1844 du 2 décembre 1991",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "86",
+      "page": "2009-2011",
+      "issued": {"date-parts": [[1991, 12, 2]]},
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo08691.pdf",
+      "note": "citation-key: decret91-1844\nJORT n° 86 du 17 décembre 1991, pp. 2009-2011. Articles 2-3, 7, 9-21 lus à l'image le 12 octobre 2026 ; dossier : docs/notes/sante-hopital-ville-lectures-2026-10-12.md."
+    },
+    {
+      "id": "decret89-296",
+      "type": "legislation",
+      "title": "Décret n° 89-296 du 15 février 1989, fixant le statut du corps médical des hôpitaux",
+      "title-short": "Décret n° 89-296 du 15 février 1989",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "17",
+      "page": "382-383",
+      "issued": {"date-parts": [[1989, 2, 15]]},
+      "URL": "https://www.pist.tn/jort/1989/1989F/Jo01789.pdf",
+      "note": "citation-key: decret89-296\nJORT n° 17 du 7 mars 1989, pp. 382-383. Articles 1-7 lus à l'image le 12 octobre 2026 ; texte modifié depuis 1989, état actuel à établir."
+    },
+    {
+      "id": "decret89-298",
+      "type": "legislation",
+      "title": "Décret n° 89-298 du 15 février 1989, instituant une prime de rendement et de recherche pour le corps médical des hôpitaux",
+      "title-short": "Décret n° 89-298 du 15 février 1989",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "17",
+      "page": "384",
+      "issued": {"date-parts": [[1989, 2, 15]]},
+      "URL": "https://www.pist.tn/jort/1989/1989F/Jo01789.pdf",
+      "note": "citation-key: decret89-298\nJORT n° 17 du 7 mars 1989, p. 384. Articles 1-2 lus à l'image le 12 octobre 2026 ; valeurs historiques non reprises isolément."
+    },
+    {
+      "id": "decret89-299",
+      "type": "legislation",
+      "title": "Décret n° 89-299 du 15 février 1989, relatif aux indemnités particulières du corps médical des hôpitaux",
+      "title-short": "Décret n° 89-299 du 15 février 1989",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "17",
+      "page": "384",
+      "issued": {"date-parts": [[1989, 2, 15]]},
+      "URL": "https://www.pist.tn/jort/1989/1989F/Jo01789.pdf",
+      "note": "citation-key: decret89-299\nJORT n° 17 du 7 mars 1989, p. 384. Article premier lu à l'image le 12 octobre 2026 ; montants postérieurs à dépouiller."
+    },
+    {
+      "id": "arrete-2007-02-06-medecins-liberaux",
+      "type": "legislation",
+      "title": "Arrêté du ministre des affaires sociales, de la solidarité et des Tunisiens à l'étranger du 6 février 2007, portant approbation de la convention sectorielle des médecins de libre pratique conclue entre la caisse nationale d'assurance maladie et le syndicat tunisien des médecins libéraux",
+      "title-short": "Arrêté du 6 février 2007 (médecins de libre pratique)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "13",
+      "page": "385-423",
+      "issued": {"date-parts": [[2007, 2, 6]]},
+      "URL": "https://www.pist.tn/jort/2007/2007F/Jo0132007.pdf",
+      "note": "citation-key: arrete-2007-02-06-medecins-liberaux\nJORT n° 13 du 13 février 2007, pp. 385-423 ; arrêté p. 385, convention pp. 387, 389-397, 400-404 et 406 lus à l'image le 12 octobre 2026. Avenants postérieurs à lire ; dossier : docs/notes/sante-hopital-ville-lectures-2026-10-12.md."
+    },
+    {
+      "id": "bertrand-1953-securite-sociale-1",
+      "type": "article-journal",
+      "title": "La sécurité sociale en Tunisie",
+      "title-short": "Bertrand, La sécurité sociale en Tunisie (1953, I)",
+      "container-title": "Bulletin économique et social de la Tunisie",
+      "issue": "73",
+      "page": "59-70",
+      "author": [{"family": "Bertrand", "given": "Lucien"}],
+      "issued": {"date-parts": [[1953, 2]]},
+      "URL": "https://cinumedpub.mmsh.fr/Best/Pdf/1953-073-1563.pdf",
+      "note": "citation-key: bertrand-1953-securite-sociale-1\nArticle téléchargé et lu le 4 octobre 2026, pp. 65-70 : prévoyance d'entreprise, assurance de groupe et mutualité ; notice détaillée dans le livre Caisses de sécurité sociale."
+    },
+    {
+      "id": "bertrand-1953-securite-sociale-2",
+      "type": "article-journal",
+      "title": "La sécurité sociale en Tunisie (fin)",
+      "title-short": "Bertrand, La sécurité sociale en Tunisie (1953, II)",
+      "container-title": "Bulletin économique et social de la Tunisie",
+      "issue": "74",
+      "page": "70-82",
+      "author": [{"family": "Bertrand", "given": "Lucien"}],
+      "issued": {"date-parts": [[1953]]},
+      "URL": "https://cinumedpub.mmsh.fr/Best/Pdf/1953-074-1584.pdf",
+      "note": "citation-key: bertrand-1953-securite-sociale-2\nArticle téléchargé et lu le 4 octobre 2026, pp. 73-74 : prévoyance des agents publics ; mois de publication à relever."
+    },
+    {
+      "id": "loi59-45",
+      "type": "legislation",
+      "title": "Loi n° 59-45 du 15 avril 1959, relative à la Caisse de prévoyance sociale",
+      "title-short": "Loi n° 59-45 du 15 avril 1959",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "22",
+      "page": "368",
+      "issued": {"date-parts": [[1959, 4, 15]]},
+      "URL": "https://www.pist.tn/jort/1959/1959F/Jo02259.pdf",
+      "note": "citation-key: loi59-45\nArticle 1 et pagination lus à l'image le 4 octobre 2026 ; notice détaillée dans le livre Caisses de sécurité sociale."
+    },
+    {
+      "id": "arrete-1961-05-26-statuts-mutualistes",
+      "type": "legislation",
+      "title": "Arrêté des secrétaires d'État au plan et aux finances et à la santé publique et aux affaires sociales du 26 mai 1961, portant établissement des statuts-type des sociétés mutualistes",
+      "title-short": "Arrêté du 26 mai 1961 (statuts types des sociétés mutualistes)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "21",
+      "page": "723-727",
+      "issued": {"date-parts": [[1961, 5, 26]]},
+      "URL": "https://www.pist.tn/jort/1961/1961F/Jo02161.pdf",
+      "note": "citation-key: arrete-1961-05-26-statuts-mutualistes\nVisa du décret du 18 février 1954 lu à l'image le 4 octobre 2026 ; garanties des mutuelles non relevées."
+    },
+    {
+      "id": "loi-87-29-amg",
+      "type": "legislation",
+      "title": "Loi n° 87-29 du 12 juin 1987, relative au régime de l'assistance médicale gratuite",
+      "title-short": "Loi n° 87-29 du 12 juin 1987",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "43",
+      "page": "767",
+      "issued": {"date-parts": [[1987, 6, 12]]},
+      "URL": "https://www.pist.tn/jort/1987/1987F/Jo04387.pdf",
+      "note": "citation-key: loi-87-29-amg\nArticles 1 à 4 lus pour le livre Prestations sociales ; JORT français et pagination vérifiés."
+    },
+    {
+      "id": "decret2007-1366",
+      "type": "legislation",
+      "title": "Décret n° 2007-1366 du 11 juin 2007, portant détermination des étapes d'application de la loi n° 2004-71 aux différentes catégories d'assurés sociaux",
+      "title-short": "Décret n° 2007-1366 du 11 juin 2007",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "47",
+      "page": "1982-1983",
+      "issued": {"date-parts": [[2007, 6, 11]]},
+      "URL": "https://www.pist.tn/jort/2007/2007F/Jo0472007.pdf",
+      "note": "citation-key: decret2007-1366\nArticles 1 et 2 lus ; application au 1er juillet 2007 pour les régimes énumérés."
+    },
+    {
+      "id": "decret2007-1367",
+      "type": "legislation",
+      "title": "Décret n° 2007-1367 du 11 juin 2007, portant détermination des modalités de prise en charge, procédures et taux des prestations de soins au titre du régime de base d'assurance maladie",
+      "title-short": "Décret n° 2007-1367 du 11 juin 2007",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "47",
+      "page": "1983-1988",
+      "issued": {"date-parts": [[2007, 6, 11]]},
+      "URL": "https://www.pist.tn/jort/2007/2007F/Jo0472007.pdf",
+      "note": "citation-key: decret2007-1367\nArticles 1 à 20 lus dans la couche texte du fascicule français ; à relire à l'image."
+    },
+    {
+      "id": "arrete-2008-06-03-plafond-soins-ambulatoires",
+      "type": "legislation",
+      "title": "Arrêté du ministre des affaires sociales, de la solidarité et des Tunisiens à l'étranger du 3 juin 2008, portant fixation du plafond annuel des prestations de soins ambulatoires prises en charge par la CNAM",
+      "title-short": "Arrêté du 3 juin 2008 (plafond des soins ambulatoires)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "45",
+      "page": "1717-1719",
+      "issued": {"date-parts": [[2008, 6, 3]]},
+      "URL": "https://www.pist.tn/jort/2008/2008F/Jo0452008.pdf",
+      "note": "citation-key: arrete-2008-06-03-plafond-soins-ambulatoires\nArticles 2 à 7 lus dans la couche texte ; à relire à l'image. Révisions postérieures du plafond non établies."
+    },
+    {
+      "id": "decret2021-318",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2021-318 du 4 mai 2021, modifiant le décret n° 2007-1367 du 11 juin 2007",
+      "title-short": "Décret gouvernemental n° 2021-318 du 4 mai 2021",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "41",
+      "page": "1132",
+      "issued": {"date-parts": [[2021, 5, 4]]},
+      "URL": "https://www.pist.tn/jort/2021/2021F/Jo0412021.pdf",
+      "note": "citation-key: decret2021-318\nArticle 1 lu dans la couche texte ; date calculée depuis le dépôt du JORT, clause finale à relire."
+    }
+  ]
+}

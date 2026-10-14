@@ -1,0 +1,74 @@
+/* Cartes de périmètre du volume Santé : deux lectures, sans échelle monétaire commune. */
+.sante-carte {
+  margin: 1.2rem 0;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background: #fafbfd;
+}
+
+.sante-carte-titre {
+  margin: 0 0 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.sante-carte-grille {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.sante-carte-grille.deux {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sante-carte-noeud {
+  padding: 0.7rem;
+  border: 1.5px solid #52739a;
+  border-radius: 0.5rem;
+  background: #e9f2fc;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.sante-carte-noeud.budget { background: #e9f5ea; border-color: #35764d; }
+.sante-carte-noeud.caisse { background: #fff2d8; border-color: #a46b12; }
+.sante-carte-noeud.prestataire { background: #f3eafb; border-color: #775098; }
+.sante-carte-noeud.espace { margin-top: 0.55rem; }
+.sante-carte-noeud a { font-weight: 700; }
+.sante-carte-noeud small { display: block; margin-top: 0.25rem; }
+
+.sante-carte-flux {
+  margin: 0.4rem 0 0.55rem;
+  text-align: center;
+  font-weight: 600;
+  color: #44546b;
+}
+
+.sante-carte-sous-noeud {
+  margin-top: 0.7rem;
+  padding: 0.5rem;
+  border: 1px dashed #52739a;
+  border-radius: 0.4rem;
+  background: #fff;
+}
+
+.sante-carte-note {
+  margin-top: 0.8rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #44546b;
+}
+
+.sante-carte-separation {
+  margin: 0.85rem 0 0.55rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #9aa8ba;
+  text-align: center;
+  color: #44546b;
+}
+
+@media (max-width: 700px) {
+  .sante-carte-grille, .sante-carte-grille.deux { grid-template-columns: 1fr; }
+}

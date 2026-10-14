@@ -49,6 +49,7 @@ BOOKS = [
     "marche_travail",
     "compensation",
     "entreprises_publiques",
+    "sante",
 ]
 
 LANGS = ("fr", "ar")
