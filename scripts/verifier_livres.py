@@ -12,8 +12,8 @@ import re
 import sys
 
 LIVRES = ("caisses", "compensation", "cotisations_sociales", "entreprises_publiques",
-          "finances_locales", "fiscalite",
-          "marche_travail", "prestations_sociales", "remunerations_publiques", "retraites")
+          "finances_locales", "fiscalite", "marche_travail", "prestations_sociales",
+          "remunerations_publiques", "retraites", "sante")
 
 # Un fichier sous ces préfixes touche potentiellement TOUS les livres : les
 # modules Python que les figures importent (`from figures import …` mis à part —

@@ -20,6 +20,8 @@ télécharge aussi en PDF.
 | VII. Finances locales | fiscalité locale, transferts de l'État et budgets des collectivités locales |
 | VIII. Marché du travail | salaire minimum, conventions collectives et négociations salariales du secteur privé |
 | IX. Compensation | la Caisse générale de compensation et les subventions aux prix : produits de base, carburants, transport |
+| X. Entreprises publiques | transferts, garanties, dettes croisées, dividendes et cessions |
+| XI. Santé | couverture des soins, hôpital public, médecine de ville, rémunération des soignants et transferts non monétaires |
 
 Chaque dispositif y est présenté dans son histoire, réforme par réforme, avec des tableaux datés
 et des liens vers les textes. C'est un travail en cours : certains chapitres sont complets,

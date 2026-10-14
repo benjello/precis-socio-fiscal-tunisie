@@ -382,6 +382,7 @@ COLLECTIONS = {
     "marche_travail": "Marché du travail",
     "compensation": "Compensation",
     "entreprises_publiques": "Entreprises publiques",
+    "sante": "Santé",
 }
 
 

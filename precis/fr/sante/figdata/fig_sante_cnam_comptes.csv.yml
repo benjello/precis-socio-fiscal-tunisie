@@ -1,0 +1,5 @@
+series: [cnam-comptes-2016-2021]
+sources: [cnam-etats-financiers-2016-2018, cnam-etats-financiers-2018-2019, cnam-etats-financiers-2020-2021]
+fiches: [sources/sante-series-depenses.md]
+caveats: [Ne pas additionner charges et décaissements : deux comptabilités. Les charges techniques ne ventilent pas maladie, assurances sociales et AT/MP. L'année 2018 est identique dans les deux éditions qui la couvrent.]
+generated: 2026-10-13

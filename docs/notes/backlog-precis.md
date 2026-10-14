@@ -1615,13 +1615,213 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 **Social et secteur public**
 
 11. Régimes spéciaux du secteur public (militaires, forces de sécurité, magistrats, membres du gouvernement), recrutement, départs anticipés et plans de départ volontaire.
-12. Couverture santé au-delà de la CNAM : filières, ticket modérateur, mutuelles et assurance complémentaire de groupe.
+12. Couverture santé au-delà de la CNAM : filières, ticket modérateur, mutuelles et assurance complémentaire de groupe — **volume X « La santé » commencé le 12 octobre 2026**, voir le chantier ci-dessous.
 13. Logement social (FOPROLOS, programmes, prêts aidés), en lien avec le foncier.
 14. Transferts en nature et aides à l'éducation (bourses, cantines, allocation de rentrée scolaire, handicap).
 
 **Transversal**
 
 15. Synthèse de la redistribution par décile (impôts, cotisations, prestations, subventions), dans l'esprit des études d'incidence de type CEQ (dépôt `ceq-tunisie`).
+
+## La santé — volume X, première rédaction le 12 octobre 2026
+
+`precis/fr/sante/` est un livre nouveau, distinct des « Prestations sociales ». Sa présentation
+pose la question des **transferts non monétaires de santé** (publics couverts, prestations
+effectivement financées, financeurs, dépense des ménages) ; son premier chapitre
+`_couverture.qmd` suit les protections antérieures à 1960, les assurances sociales,
+l'assistance médicale, l'assurance maladie de base, les trois modalités de soins et leur
+participation financière, puis délimite les couvertures complémentaires. Deux chapitres
+nouveaux du 12 octobre, `_hopital.qmd` et `_medecine_ville.qmd`, exposent respectivement
+l'échelle des structures publiques, le fonctionnement et les ressources des établissements
+publics de santé, les composantes de la rémunération du corps médical des hôpitaux dans
+les textes de 1989, puis le conventionnement et le paiement des médecins libéraux. La
+fiche de lecture commune est `sante-hopital-ville-lectures-2026-10-12.md`. Les prestations
+en espèces de maladie et de maternité restent dans leur volume d'origine ; ses registres
+et tableaux des taux et plafonds restent accessibles par renvoi, sans déplacement à ce stade.
+
+**Premières séries de dépense intégrées le 12 octobre** : dépenses du département
+« Santé publique » en 2018-2023, gestion et développement, d'après les tableaux
+16.8 et 16.10 de deux annuaires INS (source ministère des Finances, PDF locaux
+lisibles en couche texte), aussi rapportées aux dépenses de gestion et de
+développement de l'État et au PIB nominal INS en base 2015 (2018-2023, non
+rétropolé) ; charges techniques et administratives de la CNAM et prestations
+décaissées en 2016-2021, d'après ses états financiers, avec distinction entre
+charges du compte de résultat et sorties de trésorerie ; les rapports annexés
+aux PLF 2020 et 2021 servent de recoupement, prévisions écartées. Comptes de la santé OMS
+2018-2023 (dépense courante, financeurs public, privé et extérieur, parts de
+la dépense publique et du PIB citées telles que publiées par l'OMS), et
+paiements directs des ménages en part des dépenses courantes de santé et en
+montant moyen par habitant en dollars courants et en dinars courants (conversion
+indicative au taux de change officiel annuel Banque mondiale/FMI), puis en
+**dinars de 2025** (IPC annuel de la BCT, base 2015, indice 2025 de 186,3).
+Les onglets « Données » des figures budgétaires et des tableaux OMS affichent
+les dénominateurs budgétaires et le PIB, ainsi que les taux de change et les
+indices employés dans les calculs ; aucune
+observation OMS des paiements directs de l'année 2025 n'est disponible. Les familles figurent dans des sections
+distinctes, avec leurs unités, financeurs et limites. Calculs,
+localisations et réponses des API : `sante-depenses-sources-2026-10-12.md`.
+La part dite « ressources extérieures » suit l'**origine étrangère des
+transferts à la santé**, qu'ils passent par l'État ou par d'autres circuits ;
+la fiche d'indicateur OMS relayée par la Banque mondiale en donne la définition.
+Leur ventilation par bailleur, programme et forme de financement reste à
+obtenir avant d'expliquer le point haut de 2022.
+Les PDF des annuaires étaient déjà catalogués dans `tunisia-data` ; l'API OMS
+est accessible en texte. Aucun montant n'est présenté comme un reste à charge
+en dinars pour un ménage donné.
+
+**Carte de lecture des chiffres ajoutée à la présentation** : trois plans
+explicités avant les séries — dépense courante de santé par financeur (OMS),
+comptes du département Santé et de la CNAM, postes partiels de soins suivis
+par la caisse —, en **deux schémas distincts et lisibles à la largeur de la page**
+(financeurs OMS ; circuits et écritures tunisiens), réalisés en HTML/CSS avec
+équivalent textuel dans le livre PDF, puis distinction des charges comptabilisées et des prestations
+décaissées. Les paiements directs sont inclus dans le financement privé OMS ;
+le budget ministériel inclut le développement hors dépense courante ; la
+facturation à la caisse peut être une recette hospitalière, jamais une somme à
+ajouter à la charge de la caisse. Des renvois partent de cette carte vers les
+figures et tableaux et reviennent des chapitres Couverture et Hôpital. **L'année commune
+2021** illustre les quatre niveaux (ministère, CNAM, facturation publique,
+paiements directs), sans en additionner les montants ni traiter la part OMS
+comme la part d'un compte national tunisien. La ventilation
+comptable exhaustive des charges CNAM et la consolidation budgétaire restent
+à établir ; les chiffres publiés ne sont pas additionnés en un total inventé.
+
+**Postes de soins de la CNAM identifiés dans sa statistique 2007-2021** :
+facturation des hospitalisations et consultations externes dans les EPS et
+hôpitaux régionaux, et deux rubriques des cliniques privées (chirurgie,
+accouchements). Tableaux en onglets au chapitre Hôpital, sans assimilation au
+budget complet des EPS ni à l'ensemble des charges techniques de la caisse.
+La fiche `sante-cnam-comptes-2026-10-12.md` donne les montants en milliers et
+millions de dinars et le recoupement entre éditions. Les états financiers et
+statistiques de prestations sont lisibles en couche texte dans le corpus,
+sans OCR ; les comptes 2011-2015 océrisés ne sont pas validés pour des montants.
+**À lire ou obtenir** pour ventiler la dépense totale : soins ambulatoires,
+médicaments, soins dentaires, accidents du travail, indemnités en espèces,
+part versée par la caisse aux prestataires et restes à payer, à périmètre
+comptable constant.
+
+**Ventilation par régime, lue sans image dans une étude** : *La Lettre du
+CRES* n° 8 (Belloussaief, 2023), figure 1 p. 1, donne les parts annuelles de
+l'assurance maladie, des assurances sociales et des AT/MP dans les dépenses
+CNAM de 2009 à 2019, d'après la CNAM avec calcul de l'auteure. L'étude est
+archivée dans `tunisia-data` ; sa méthode n'est pas détaillée. En 2019, le
+montant AT/MP de l'étude rapporté aux charges techniques des comptes CNAM
+redonne sa part publiée à l'arrondi ; cela ne valide ni les autres années ni
+une ventilation exacte en dinars. Présentation **dans une section d'étude
+distincte** des montants comptables et du budget, en figure longitudinale
+avec valeurs au survol et séries complètes dans les onglets, note
+`sante-cnam-comptes-2026-10-12.md`. Les états primaires
+ventilés par régime et par prestation restent à obtenir pour reconstituer
+les montants exacts ; les chiffres en pourcentage ne sont pas convertis en
+montants prétendument observés.
+
+**Trois figures longitudinales dans la présentation** : budget Santé
+2018-2023 (vues en MD et en parts du budget et du PIB), comptes CNAM 2016-2021
+(compte de résultat puis trésorerie séparés) et parts des trois régimes du
+CRES 2009-2019 (étude distincte). Les tableaux de synthèse ont été remplacés
+par des courbes à valeurs au survol, sans perdre les données détaillées ou
+les sources. Extraction rejouable dans `tunisia-data`,
+`scripts/extract_sante_depenses.py` ; trois séries au catalogue et snapshots
+`precis/_seriescache/` pour le rendu autonome. L'extracteur rattache les
+cinq années de PIB imprimées à leurs années, distinctes des trois années
+budgétaires de chaque édition, et retient la révision du PIB 2020 de
+l'annuaire le plus récent ; sans ce contrôle l'extraction aurait produit une
+part du PIB erronée.
+
+**Résultats du système de santé, 12 octobre** : l'indice OMS des services
+essentiels (ODD 3.8.1, série annuelle 2000-2023, échelle 0-100 et quatorze
+traceurs) et la difficulté financière due aux paiements directs (ODD 3.8.2,
+définition révisée en 2025, six enquêtes 1995-2021) ont chacun leur section,
+leur série datée, leur méthode et leurs réserves dans `_couverture.qmd`.
+L'indice des services essentiels est montré en figure à survol, avec données
+annuelles et provenance en onglets : extraction de la réponse OMS conservée
+dans `tunisia-data`, série `oms-couverture-services-tunisie-2000-2023`, puis
+snapshot pour le site autonome.
+L'ancienne série au seuil de 10 % du budget total du ménage ne se raccorde
+pas au seuil de 40 % du budget discrétionnaire. Les valeurs et les fiches OMS
+sont lisibles en texte ; aucun OCR demandé. Les documents récurrents à suivre
+et les années effectivement disponibles sont inventoriés dans
+`sante-indicateurs-sources-2026-10-12.md`. **À lire** : composantes de l'indice
+de couverture, tableaux régionaux INS sur les structures et professionnels,
+RAP/PAP Santé, rapports de contrôle de la Cour et enquêtes INS 2015/2021 sur
+la dépense médicale et les remboursements, avant d'attribuer un changement
+observé à une réforme précise ou de le décliner par région.
+
+**Autres angles documentés sur une source CNAM en texte** : répartition des
+personnes comptées dans les trois modalités de soins (2008-2021, changement de
+définition des affiliés en 2019 ; étudiants et salariés à faibles revenus à part)
+et nombre de généralistes et spécialistes conventionnés (2007-2021). Le
+chapitre Couverture sépare vue courte, données annuelles et sources ; celui de
+la Médecine de ville montre les deux séries sur une figure à **30 infobulles**,
+avec les années et les pages dans l'onglet Données, et la provenance dans
+l'onglet Sources. La série est extraite dans `tunisia-data` et snapshotée pour
+le rendu autonome du précis. Le document local, déjà catalogué dans `tunisia-data`,
+est détaillé dans `sante-cnam-filiere-medecins-2026-10-12.md`. **À obtenir** :
+consultations réalisées par filière, répartition territoriale des praticiens,
+nombre de bénéficiaires (et non seulement affiliés), remboursements par type
+de soin et leurs séries postérieures à 2021. Le nombre de conventionnés ne
+mesure ni les soins réalisés ni les revenus des médecins.
+
+- **Lisible au corpus** : loi n° 59-45, art. 1 (JORT n° 22 de 1959, p. 368), loi n° 60-30,
+  loi n° 87-29, loi n° 2004-71, décrets n° 2007-1366 et 2007-1367, arrêté du 3 juin 2008,
+  décret n° 2021-318. Les protections d'entreprise et la prévoyance publique avant 1956
+  sont connues par Lucien Bertrand (1953, deux articles lus et récupérés) ; la loi de 1959
+  confirme la continuité du régime public de 1951. L'arrêté mutualiste de 1961 a son visa
+  lu à l'image, non ses garanties ; le décret de 1954 est connu par ce visa seulement.
+- **Relecture à l'image** : décrets n° 2007-1367 et 2021-318 et arrêté du 3 juin 2008,
+  repris de leur couche texte ; clause finale de 2021 à confirmer ; révisions postérieures
+  des plafonds à chercher. L'arrêté du 25 juin 2007 sur les affections lourdes reste à lire.
+- **Hôpital et ville, lus à l'image** : loi n° 91-63 (JORT n° 55 de 1991, pp. 1390-1393),
+  décret n° 91-1844 (n° 86 de 1991, pp. 2009-2011), décrets n° 89-296, 89-298 et 89-299
+  (n° 17 de 1989, pp. 382-384), arrêté du 6 février 2007 et convention des médecins de
+  libre pratique (n° 13 de 2007, pp. 385, 387, 389-397, 400-404, 406). Fascicules
+  français présents localement mais **sans couche texte** pour 1989 et 1991 ; les pages
+  utiles ont été lues sur les images. La convention de 2007 a une couche texte absente
+  pour les pages utiles ; les articles cités ont été lus à l'image. URL FR et AR des
+  quatre fascicules vérifiées (`206 application/pdf` le 12 octobre). La lecture décrit
+  ces états datés, **pas un état actuel reconstitué** des statuts, primes ou honoraires.
+- **Infirmiers, lu à l'image** : décret n° 2000-1690, JORT français n° 59 du 25 juillet
+  2000, pp. 1778-1779 pour les art. 1-4, 8 et 11 ; fascicule local lisible à l'image,
+  grades et niveaux de rémunération décrits sans valeur isolée. L'URL du JORT arabe
+  est `Ja05900.pdf` (vérifiée) et non `Ja0592000.pdf` (404) ; pagination arabe à relever.
+- **À lire pour les personnels** : statut hospitalo-universitaire (décret n° 77-732),
+  hospitalo-sanitaire (n° 2008-3449) et statuts propres des sages-femmes,
+  pharmaciens et personnels techniques ; chaîne des majorations de traitement,
+  de la prime de rendement, de non-clientèle et des gardes ; modificatifs du statut
+  des infirmiers (2011, 2015, 2024). Les fascicules de 1977 et 2008 sont à vérifier
+  au corpus avant reprise ; aucun montant actuel n'est imprimé.
+- **À lire pour la ville** : avenants n° 1 à 7 (2007-2012) et suites de la convention
+  des médecins, leurs annexes d'honoraires et dates d'effet ; le texte de 2007 renvoie
+  les modalités pratiques du parcours de médecin de famille à un avenant, sans en établir
+  la mise en œuvre effective. Les fascicules JORT sont repérés par titre dans
+  `jort_cache.db` ; leur présence au corpus et leur lisibilité restent à vérifier.
+- **À obtenir ou documenter** : textes et statuts déterminant les garanties des mutuelles,
+  contrats d'assurance complémentaire de groupe, effectifs et dépenses propres ; comptes
+  CNAM, budgets et exécutions hospitaliers, série de l'assistance. Pour le budget
+  ministériel, confronter les annuaires INS aux rapports de clôture de la Cour des
+  comptes et aux PAP/RAP afin d'établir le stade comptable et les transferts.
+  Pour les ménages, lire la méthode des enquêtes INS 2015 et 2021, notamment le
+  traitement des remboursements, avant de rapprocher leurs dépenses médicales
+  en dinars des paiements directs de l'OMS. Ces deux PDF d'enquête ont une couche
+  texte lisible et ont été récupérés temporairement, sans valeurs reprises au
+  volume. Aucun état actuel des plafonds ni incidence distributive chiffrée
+  n'est publié faute de série établie.
+  **Plafond ambulatoire :** le RAP 2021 des Affaires sociales mentionne un
+  arrêté du 8 février 2021 modifiant celui du 3 juin 2008 ; `jort_cache.db`
+  le localise au JORT n° 14 du 9 février 2021, p. 412. Le fichier local et les
+  deux éditions servies sur `pist.tn` sous le numéro 14 contiennent en réalité
+  le **numéro 13 du 5 février 2021** (vérifié sur la première page, en texte,
+  le 13 octobre 2026). Le numéro 15 est bien le 15. **À obtenir** : le vrai n° 14,
+  puis lecture des valeurs et de leur date d'effet ; ne pas traiter les métadonnées
+  comme le texte de l'arrêté.
+- **Intégration bilingue** : `_quarto.yml` et `references.json` tenus dans les deux langues ;
+  les références arabes de 1987 à 2021 demandent page et, pour celles dont elle manque,
+  URL vérifiée ; les URL arabes des fascicules de 1989, 1991 et de la convention de 2007
+  ont été vérifiées, mais leurs pages restent à relever. Aucun `.qmd`
+  arabe n'est écrit avant la livraison de la traduction ; ajouter alors `index.qmd` et
+  les trois chapitres au `_quarto.yml` arabe. Le sommaire général arabe reste à actualiser
+  lors de cette livraison. Le futur travail sur l'éducation suivra la même question des
+  services et transferts non monétaires ; son livre et ses textes restent à documenter.
 
 ## Allègement du juridique et de l'administratif — chantier, non urgent (5 octobre 2026)
 

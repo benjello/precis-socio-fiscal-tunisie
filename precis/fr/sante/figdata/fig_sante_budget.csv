@@ -1,0 +1,13 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-13
+# séries (tunisia_data) : ins-budget-sante-2018-2023
+# sources (citation) : @ins-annuaire-2017-2021-sante, @ins-annuaire-2019-2023-sante
+# fiches : sources/sante-series-depenses.md
+# méthode/hypothèses : INS source ministère des Finances ; stade comptable des dépenses non précisé par les tableaux. Dépense ministérielle, non dépense totale de santé. Années 2018-2020 : édition 2017-2021 ; 2021-2023 : édition 2019-2023. PIB des années communes pris dans la dernière édition, y compris 2020 révisé (119 502,1 MD).
+# note : Dépenses du département Santé, 2018-2023 : gestion et développement en millions de dinars courants, puis en parts du budget et du PIB
+Année,Gestion Santé (milliers D),Développement Santé (milliers D),Gestion État (milliers D),Développement État (milliers D),PIB base 2015 (MD),Total Santé (MD),Budget comparable (MD),Santé / budget (%),Santé / PIB (%),Édition dépenses
+2018,1741511,207421,23400099,5212406,112985.5,1948.932,28612.505,6.8115,1.7249,2017-2021
+2019,1948111,287734,26140373,5229831,122969.3,2235.845,31370.204,7.1273,1.8182,2017-2021
+2020,2539822,283951,29573799,6117764,119502.1,2823.773,35691.563,7.9116,2.3629,2017-2021
+2021,2736483,476702,30663595,7003911,131544.6,3213.185,37667.506,8.5304,2.4427,2019-2023
+2022,2743200,265934,37285836,6202714,139503.0,3009.134,43488.55,6.9194,2.157,2019-2023
+2023,3056017,351479,37682542,7126540,149705.7,3407.496,44809.082,7.6045,2.2761,2019-2023

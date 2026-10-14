@@ -1,0 +1,213 @@
+# Présentation {#sec-sante-presentation}
+
+Ce livre suit **la couverture des soins** : les personnes auxquelles un droit est ouvert, les soins pris en charge, les organismes qui les financent et la dépense laissée aux ménages. Les soins sont une prestation non monétaire : le bénéficiaire reçoit une consultation, un traitement ou un accès à l'hôpital, plutôt qu'une somme d'argent. La prise en charge peut relever de l'assurance sociale, de l'assistance ou d'une couverture complémentaire. Elle varie selon le public et la période.
+
+Les [prestations en espèces pendant la maladie et la maternité](../prestations_sociales/_autres_risques.html#sec-ar-maladie-maternite) sont exposées dans le livre « Prestations sociales », avec les prestations familiales et les autres risques. La [matrice des régimes](../prestations_sociales/_matrice.html#sec-matrice-regimes) précise qui a droit aux soins et qui entre dans l'assurance maladie. Les [cotisations de maladie](../cotisations_sociales/_maladie.html#sec-cot-maladie) et les [comptes des caisses](../caisses/_comptes_longue_periode.html) sont détaillés dans leurs livres respectifs.
+
+## Vue d'ensemble {#sec-sante-vue-ensemble}
+
+Deux grandes voies de droit donnent accès aux soins : la couverture fondée sur l'affiliation à un régime de sécurité sociale et l'assistance fondée sur les conditions propres aux ménages aidés. Une protection facultative peut s'ajouter à une couverture de base. Ces voies ne désignent pas le même financeur, et avoir droit aux soins ne signifie pas que tous leurs frais sont payés.
+
+| Voie | Droit ouvert par | Qui prend en charge | Où se situe la dépense du ménage |
+|---|---|---|---|
+| Assurance maladie de base | affiliation à un régime entré dans la loi et droits des ayants droit | [CNAM](#g-cnam) | selon la filière, le soin, le taux et les plafonds applicables |
+| Soins d'un régime distinct | texte propre à ce régime | organisme désigné par ce texte | selon les règles propres au régime |
+| Assistance médicale et Amen social | conditions d'admission à l'aide | financement public | gratuité ou tarifs réduits dans les structures publiques |
+| Couverture complémentaire | droit facultatif, mutualiste ou collectif | organisme complémentaire | garanties propres à la couverture, à établir |
+
+: Les voies d'accès aux soins et les différences de prise en charge {#tbl-sante-voies}
+
+Le [chapitre « La couverture des soins »](./_couverture.html#sec-sante-couverture) commence avant 1960 : prévoyance des personnels publics, protections d'entreprise et mutualité ; il suit ensuite la naissance des assurances sociales, celle de l'assistance médicale et l'institution de l'assurance maladie de base. Il expose les filières, le ticket modérateur et les limites de prise en charge, puis distingue les couvertures complémentaires des droits légaux. [« L'hôpital public »](./_hopital.html#sec-sante-hopital) distingue ses niveaux de soins, ses recettes et les traitements des médecins et des autres agents. [« La médecine de ville »](./_medecine_ville.html#sec-sante-ville) suit la consultation, le médecin de famille, l'honoraire et son partage entre caisse et patient.
+
+## Carte des chiffres : de quelle dépense parle-t-on ? {#sec-sante-perimetres}
+
+Une même consultation peut être vue **du côté du soin reçu**, **du financeur** ou **de l'établissement qui facture**. Les chiffres de ces trois points de vue ne forment pas des morceaux d'un total que l'on pourrait additionner. Pour lire un montant, il faut d'abord demander : *qui tient le compte, pour quels soins ou prestations, et à quelle date la dépense est-elle inscrite ?*
+
+::: {#fig-sante-perimetres}
+
+::: {.content-visible when-format="html"}
+
+```{=html}
+<div class="sante-carte" role="group" aria-label="Dépense courante de santé et ses trois sources de financement selon l'OMS">
+  <p class="sante-carte-titre">1 · Dépense courante de santé — comptes OMS</p>
+  <div class="sante-carte-noeud">Soins et biens consommés dans l'année<small>Hors bâtiments et équipements</small></div>
+  <div class="sante-carte-flux">↓ Se répartit selon le financeur ↓</div>
+  <div class="sante-carte-grille">
+    <div class="sante-carte-noeud"><a href="./_couverture.html#tbl-soins-comptes-publics">Public intérieur</a><small>Dont assurance maladie obligatoire</small></div>
+    <div class="sante-carte-noeud"><a href="./_couverture.html#tbl-soins-comptes-prives">Privé intérieur</a><div class="sante-carte-sous-noeud">↓ Dont <a href="./_couverture.html#tbl-soins-paiements-directs">paiements directs des ménages</a></div></div>
+    <div class="sante-carte-noeud"><a href="./_couverture.html#tbl-soins-comptes-prives">Ressources extérieures</a><small>Transferts venus de l'étranger</small></div>
+  </div>
+</div>
+```
+
+:::
+
+::: {.content-hidden when-format="html"}
+
+La **dépense courante de santé** est répartie entre financement public intérieur, financement privé intérieur et ressources extérieures. Les paiements directs des ménages sont **inclus** dans le financement privé intérieur. Les bâtiments et équipements ne font pas partie de la dépense courante.
+
+:::
+
+Financement de la dépense courante de santé selon l'OMS : les paiements directs font partie du financement privé intérieur.
+
+:::
+
+::: {#fig-sante-comptes-institutions}
+
+::: {.content-visible when-format="html"}
+
+```{=html}
+<div class="sante-carte" role="group" aria-label="Budget du département Santé, charges et trésorerie de la CNAM, postes partiels de soins facturés">
+  <p class="sante-carte-titre">2 · Comptes tunisiens — champs distincts</p>
+  <div class="sante-carte-grille deux">
+    <div>
+      <div class="sante-carte-noeud budget"><a href="#fig-sante-budget">Budget Santé</a><small>Gestion et développement, investissements compris</small></div>
+      <div class="sante-carte-flux">↓ Subventionne notamment ↓</div>
+      <div class="sante-carte-noeud prestataire">Hôpital public<small>Une de ses ressources, pas son budget entier</small></div>
+    </div>
+    <div>
+      <div class="sante-carte-noeud caisse"><a href="#fig-sante-cnam-comptes">CNAM : charges techniques</a><small>Maladie, prestations en espèces et accidents du travail</small></div>
+      <div class="sante-carte-flux">⇢ Quelques postes de soins publiés ⇢</div>
+      <div class="sante-carte-noeud prestataire"><a href="./_hopital.html#tbl-hopital-facturation-cnam">Hôpital public : facturation CNAM</a><small>Hospitalisations et consultations externes</small></div>
+      <div class="sante-carte-noeud prestataire espace"><a href="./_hopital.html#tbl-hopital-facturation-cnam">Cliniques privées</a><small>Chirurgie et accouchements seulement</small></div>
+    </div>
+  </div>
+  <div class="sante-carte-note">Même type d'hôpital vu depuis deux financeurs : une charge pour l'un peut être une recette pour l'établissement.</div>
+  <div class="sante-carte-separation">↔ Autre mesure du même organisme, non additionnable aux charges techniques</div>
+  <div class="sante-carte-noeud caisse"><a href="#fig-sante-cnam-comptes">CNAM : prestations décaissées</a><small>Sorties de trésorerie, pas charges du compte de résultat</small></div>
+</div>
+```
+
+:::
+
+::: {.content-hidden when-format="html"}
+
+Le **département Santé** finance notamment les hôpitaux publics. La **CNAM** enregistre les charges techniques de trois régimes et publie séparément quelques postes de soins facturés dans les hôpitaux publics et les cliniques privées. Les **prestations décaissées** sont une mesure de trésorerie, distincte des charges du compte de résultat. Ces périmètres ne s'additionnent pas.
+
+:::
+
+Budget du ministère, comptes de la CNAM et postes partiels de soins facturés : des périmètres qui se recoupent sans se sommer.
+
+:::
+
+**Deux regards, pas deux moitiés d'un total.** Le premier suit les **financeurs** de la dépense courante du pays ; le second, les **écritures et les postes publiés** par des institutions tunisiennes. Ils se recoupent sans être égaux : le budget du département inclut des investissements que la dépense *courante* de l'OMS exclut ; les charges techniques de la CNAM comprennent assurance maladie, indemnités en espèces et accidents du travail. Ses charges administratives forment une autre ligne du compte de résultat (@fig-sante-cnam-comptes). Les flèches du second schéma désignent des circuits et **postes partiels**, pas une décomposition exhaustive de la CNAM. Voir les [comptes OMS](./_couverture.html#tbl-soins-comptes-publics), le [budget du ministère](#fig-sante-budget), les [états financiers de la CNAM](#fig-sante-cnam-comptes) et les [soins facturés](./_hopital.html#tbl-hopital-facturation-cnam).
+
+::: {.callout-note appearance="simple" collapse="true" title="Détail : les trois niveaux de lecture"}
+
+1. **Le système de santé entier — comptes OMS.** La **dépense courante de santé** porte sur les biens et soins consommés dans le pays, hors bâtiments et équipements. Elle se répartit entre **financement public intérieur**, **financement privé intérieur** et **ressources extérieures** (@tbl-soins-comptes-publics, @tbl-soins-comptes-prives). Les [paiements directs des ménages](./_couverture.html#tbl-soins-paiements-directs) sont **compris dans le privé intérieur** : ils ne sont pas un quatrième financeur à ajouter. Le public intérieur comprend notamment le financement obligatoire de l'assurance maladie, pas seulement le ministère de la Santé.
+2. **Deux comptes tunisiens, de portée différente.** Le [département de la Santé](#fig-sante-budget) retrace la gestion **et** le développement du ministère, y compris des dépenses en capital que la dépense *courante* de l'OMS exclut. Les [états financiers de la CNAM](#fig-sante-cnam-comptes) portent sur trois régimes : assurance maladie, assurances sociales en espèces et accidents du travail et maladies professionnelles. Ses **charges techniques** ne sont donc pas la seule dépense de soins ; ses **charges administratives** sont une autre ligne du compte de résultat.
+3. **Des soins repérés à l'intérieur des circuits, sans total exhaustif.** La [facturation des hospitalisations et consultations externes des structures publiques, ainsi que deux postes des cliniques privées](./_hopital.html#tbl-hopital-facturation-cnam), décrit certaines prestations suivies par la CNAM. Ce n'est ni le budget entier des hôpitaux ni une ventilation complète des charges techniques de la caisse. Lorsque la CNAM règle un soin à un hôpital, le même flux est une **dépense pour la caisse et une recette pour l'établissement** : additionner ces deux écritures comme deux dépenses compterait ce flux deux fois (@tbl-hopital-circuits).
+
+:::
+
+**Exemple, en 2021.** Le [département de la Santé](#fig-sante-budget) porte **3 213,2 MD** de gestion et de développement ; la [CNAM](#fig-sante-cnam-comptes) inscrit **2 452,8 MD** de charges techniques pour ses trois régimes ; elle publie **640,6 MD** de [dépenses correspondant à la facturation des soins publics](./_hopital.html#tbl-hopital-facturation-cnam). Les comptes de l'OMS donnent **37,22 %** de [paiements directs des ménages](./_couverture.html#tbl-soins-paiements-directs) *dans la dépense courante de santé du pays*. Ces quatre nombres ne forment ni une somme ni les parts d'un même total : leurs séries complètes et leurs définitions se trouvent dans les figures et tableaux liés.
+
+**Pour retrouver les comptes tunisiens** : les dépenses du [département de la Santé](#fig-sante-budget), les [charges et décaissements de la CNAM](#fig-sante-cnam-comptes), puis la [facturation de certains soins publics et privés](./_hopital.html#tbl-hopital-facturation-cnam). On va du budget d'un ministère au compte d'une caisse, puis à des postes de prestation : aucune de ces séries ne donne à elle seule la dépense totale de santé.
+
+**Pour une ventilation par régime rapportée par une étude** : le [CRES](#fig-sante-cnam-parts-regimes) distingue maladie, assurances sociales et AT/MP en pourcentage de la dépense CNAM de 2009 à 2019. La provenance est donnée dans l'onglet « Sources ».
+
+**Pour retrouver les comptes internationaux** : la [dépense courante de santé et ses financeurs selon l'OMS](./_couverture.html#tbl-soins-comptes-publics), puis la [part et le montant moyen des paiements directs des ménages](./_couverture.html#tbl-soins-paiements-directs). Le montant moyen par habitant ne décrit pas la facture d'un ménage particulier ou son seul ticket modérateur.
+
+**Une dernière distinction tient au temps du paiement.** Dans les comptes de la CNAM, les [prestations décaissées](#fig-sante-cnam-comptes) sont des **sorties de trésorerie** ; les charges techniques sont inscrites au **compte de résultat**. Les deux courbes ne s'ajoutent pas et leur différence ne chiffre pas un « reste à charge » des ménages. Ce dernier relève des [paiements directs](./_couverture.html#tbl-soins-paiements-directs), avec une autre définition et une autre source.
+
+## De la couverture à la dépense {#sec-sante-transferts}
+
+Pour retracer les transferts non monétaires de santé, il faut suivre **ensemble** l'évolution des publics couverts, des soins effectivement financés, de la dépense des organismes et de la part payée par les ménages. La [carte des périmètres](#sec-sante-perimetres) permet de situer chaque série qui suit.
+
+### Les dépenses du département de la Santé {#sec-sante-budget}
+
+Le ministère des Finances publie, dans les annuaires de l'Institut national de la statistique (INS), les dépenses du département « Santé publique » par titre : gestion et développement. En millions de dinars courants (MD), leur somme passe de **1 948,9 MD en 2018 à 3 407,5 MD en 2023**, soit de **6,81 % à 7,60 %** des dépenses de gestion et de développement de l'État. Rapportée au PIB nominal **en base 2015**, elle passe de **1,73 % à 2,28 %**. Le développement varie davantage que la gestion : il ne faut pas prolonger une seule année comme si elle représentait une tendance de chaque poste.
+
+```{python}
+#| label: fig-sante-budget
+#| fig-cap: "Dépenses du département Santé : gestion et développement, en millions de dinars courants et en parts du budget et du PIB, 2018-2023."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import depenses_sante as ds
+import figtools
+figtools.figure_tabs(
+    ds.vues_budget(), ds.table_budget(), ds.BUDGET,
+    slug="fig_sante_budget",
+    caption="Dépenses du département Santé, 2018-2023 : gestion et développement en millions de dinars courants, puis en parts du budget et du PIB",
+    note_lecture=(
+        "La première vue suit les **montants** ; la seconde, la part dans les "
+        "dépenses comparables de l'État et dans le PIB nominal en **base 2015**, "
+        "sans rétropolation pour ces années. Les années et montants précis "
+        "apparaissent au survol ; les dénominateurs et ratios se trouvent dans "
+        "l'onglet « Données ». La ligne du ministère ne représente pas la "
+        "dépense totale de santé : elle inclut le développement et ne "
+        "comprend pas les comptes de la CNAM. Les tableaux de l'INS ne "
+        "précisent pas à ces pages le stade comptable de la dépense."
+    ),
+    nominal=False,
+)
+```
+
+Cette ligne **n'est pas la dépense totale de santé** : elle ne comprend ni toutes les dépenses de la CNAM, ni celles des ménages. Les tableaux cités ne précisent pas, à ces pages, si « dépenses » désigne des crédits ouverts ou des paiements exécutés ; la [lecture des rapports de clôture](#sec-sante-transferts) doit encore qualifier ce stade comptable. Les ressources et charges d'un [établissement public de santé](./_hopital.html#sec-hopital-financement) ont elles aussi un périmètre propre.
+
+### Ce que disent les comptes de la CNAM {#sec-sante-cnam-comptes}
+
+Les états financiers de la Caisse nationale d'assurance maladie (CNAM) séparent les **charges techniques** de ses trois régimes, les **charges administratives** et, dans l'état des flux de trésorerie, les **prestations effectivement décaissées**. Les charges techniques passent de **2 074,1 millions de dinars (MD) en 2016 à 2 452,8 MD en 2021**. Ce total couvre l'assurance maladie, les assurances sociales en espèces et les accidents du travail et maladies professionnelles : ce n'est ni la seule dépense de soins ni une ligne du budget du ministère de la Santé.
+
+```{python}
+#| label: fig-sante-cnam-comptes
+#| fig-cap: "CNAM : charges techniques et administratives du compte de résultat, puis prestations décaissées de la trésorerie, 2016-2021."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import depenses_sante as ds
+import figtools
+figtools.figure_tabs(
+    ds.vues_cnam(), ds.table_cnam(), ds.CNAM,
+    slug="fig_sante_cnam_comptes",
+    caption="CNAM : charges techniques et administratives, puis prestations décaissées, tous régimes, 2016-2021",
+    note_lecture=(
+        "La vue « Compte de résultat » montre les **charges techniques** des "
+        "trois régimes et les **charges administratives** sur deux axes séparés. "
+        "La vue « Trésorerie » montre les **prestations décaissées** : ce sont "
+        "des sorties de caisse et non un poste à additionner aux charges. "
+        "Chaque point porte sa valeur au survol ; les états financiers et "
+        "les montants en milliers de dinars sont dans les autres onglets. "
+        "Ces séries ne ventilent pas les soins par prestataire ou nature."
+    ),
+)
+```
+
+Ces charges incluent d'autres régimes que les seuls soins ; elles ne doivent pas être additionnées au budget ministériel pour produire une « dépense publique de santé ». Pour comprendre **ce que recouvrent certains postes de soins**, la CNAM publie séparément la [facturation des soins publics et deux postes des cliniques privées](./_hopital.html#sec-hopital-facturation-cnam). La part de la dépense publique dans **l'ensemble des comptes de la santé**, avec un périmètre plus large, est donnée au [chapitre de la couverture](./_couverture.html#sec-soins-paiements-directs).
+
+### Ce que rapporte une étude du CRES sur les trois régimes {#sec-sante-cnam-etude}
+
+Le Centre de recherches et d'études sociales (CRES) répartit les **dépenses de la CNAM** entre assurance maladie, assurances sociales et accidents du travail et maladies professionnelles (AT/MP), de **2009 à 2019** [@belloussaief2023-atmp, p. 1, fig. 1]. **L'assurance maladie reste proche de neuf dixièmes du total** ; les assurances sociales, qui servent notamment des indemnités en espèces, pèsent peu ; la part des AT/MP augmente en fin de période. C'est la composition **par risque couvert**, pas la destination des soins : on ne peut pas en déduire la dépense de médicaments, de consultations ou d'hospitalisation.
+
+```{python}
+#| label: fig-sante-cnam-parts-regimes
+#| fig-cap: "Part des trois régimes dans les dépenses de la CNAM selon l'étude du CRES, 2009-2019."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import depenses_sante as ds
+import figtools
+figtools.figure_tabs(
+    ds.fig_cres(), ds.table_cres(), ds.CRES,
+    slug="fig_sante_cnam_parts_regimes",
+    caption="Part des trois régimes dans les dépenses de la CNAM selon l'étude du CRES, 2009-2019",
+    note_lecture=(
+        "La courbe du haut porte la part de **l'assurance maladie** ; celles "
+        "du bas, les **assurances sociales** et les **AT/MP**. L'axe du haut "
+        "est resserré de 85 à 95 %, celui du bas va de 0 à 12 %. Les points donnent les pourcentages publiés au "
+        "survol. Il s'agit d'une étude à partir de données de la CNAM, non "
+        "de montants ventilés dans les états financiers. Les trois risques "
+        "ne distinguent pas médicaments, médecins et hospitalisations."
+    ),
+    nominal=False,
+)
+```
+
+### Les paiements des ménages dans les comptes de santé {#sec-sante-menages}
+
+La [série des paiements directs](./_couverture.html#sec-soins-paiements-directs) donne une autre vue de la dépense : la part de la dépense courante de santé réglée directement par les ménages, ainsi qu'un montant moyen par habitant. Elle ne s'ajoute pas au tableau budgétaire ci-dessus : les deux sources ne couvrent ni les mêmes financeurs ni les mêmes opérations. Pour rapprocher les budgets, les comptes de la CNAM et les paiements des ménages, chaque série doit garder sa définition et ses changements de méthode.
+
+<!-- TODO (documentaliste) : confronter les dépenses du département Santé aux lois de règlement et aux rapports de clôture de la Cour des comptes pour établir leur stade comptable ; lire les PAP/RAP Santé, obtenir la ventilation détaillée des charges techniques de la CNAM (soins par prestataire, médicaments, espèces, AT/MP) et les dépenses exécutées des établissements, puis les comptes CNSS, assistance médicale, mutualité et enquêtes d'accès aux soins. Identifier les financeurs, bénéficiaires, années, méthodes et ruptures. Voir docs/notes/sante-depenses-sources-2026-10-12.md et sante-cnam-comptes-2026-10-12.md. Pas encore de graphique d'incidence par niveau de vie. -->
+
+Le livre suit le droit aux soins et leur production à l'hôpital comme en cabinet. Son développement économique reposera sur les comptes et études recueillis, en distinguant les dépenses publiques et des caisses des estimations d'incidence. La même question — qui bénéficie d'un service financé par la collectivité — guidera ensuite le travail sur l'éducation.

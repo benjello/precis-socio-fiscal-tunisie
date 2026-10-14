@@ -1,0 +1,5 @@
+series: [ins-budget-sante-2018-2023]
+sources: [ins-annuaire-2017-2021-sante, ins-annuaire-2019-2023-sante]
+fiches: [sources/sante-series-depenses.md]
+caveats: [INS source ministère des Finances ; stade comptable des dépenses non précisé par les tableaux. Dépense ministérielle, non dépense totale de santé. Années 2018-2020 : édition 2017-2021 ; 2021-2023 : édition 2019-2023. PIB des années communes pris dans la dernière édition, y compris 2020 révisé (119 502,1 MD).]
+generated: 2026-10-13

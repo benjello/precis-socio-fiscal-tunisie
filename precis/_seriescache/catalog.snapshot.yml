@@ -4354,3 +4354,123 @@
     أقلية وبيع أصول ولزمات. قد يجمع السطر عدة عمليات وعدة سنوات. لا تذكر المجموعة
     تاريخ توقفها: آخر سنة 2008.'
   fiche: sources/entreprises-publiques.md
+- id: cnam-medecins-conventionnes-2007-2021
+  titre: 'CNAM : médecins généralistes et spécialistes conventionnés, 2007-2021'
+  sources:
+  - cnam-indicateurs-globaux-2021
+  build: scripts/extract_cnam_medecins_conventionnes.py:main
+  raw:
+  - data/raw/caisses/cnam/indicateurs_globaux_2021_fr.pdf
+  output: data/processed/caisses/cnam_medecins_conventionnes_2007_2021.csv
+  unite: médecins conventionnés
+  perimetre: lignes généralistes et spécialistes du tableau CNAM des prestataires
+    conventionnés, p. 5 du document, 2007-2021 ; activité privée complémentaire non
+    ajoutée
+  caveats: Nombre de médecins conventionnés, non effectif de tous les médecins en
+    exercice, ni nombre de consultations. Les cliniques privées sont exclues du total
+    publié par la CNAM.
+  titre_ar: 'الصندوق الوطني للتأمين على المرض: الأطباء العامون والمختصون المتعاقدون،
+    2007-2021'
+  unite_ar: أطباء متعاقدون
+  perimetre_ar: سطرَا الأطباء العامين والمختصين في جدول مقدّمي الخدمات المتعاقدين،
+    الصفحة 5، 2007-2021
+  caveats_ar: عدد الأطباء المتعاقدين، لا مجموع الأطباء الممارسين ولا عدد الاستشارات؛
+    أطباء النشاط الخاص التكميلي في سطر منفصل.
+  fiche: sources/cnam-statistiques.md
+- id: oms-couverture-services-tunisie-2000-2023
+  titre: 'OMS : indice de couverture des services essentiels en Tunisie, 2000-2023'
+  sources:
+  - oms-couverture-services-essentiels-tunisie
+  build: scripts/extract_oms_couverture_services.py:main
+  raw:
+  - data/raw/oms/uhc_services_tunisie_2000_2023.json
+  output: data/processed/sante/oms_couverture_services_2000_2023.csv
+  unite: indice sans unité (0 à 100)
+  perimetre: Tunisie ; indicateur OMS ODD 3.8.1, moyenne géométrique pondérée de quatorze
+    traceurs de services essentiels, 2000-2023
+  caveats: Indice composite, pas pourcentage des assurés, ni mesure directe de la
+    qualité clinique. La série ne démontre pas la contribution propre d'une réforme.
+    API consultée le 12 octobre 2026.
+  titre_ar: 'منظمة الصحة العالمية: مؤشر تغطية الخدمات الصحية الأساسية في تونس، 2000-2023'
+  unite_ar: مؤشر بلا وحدة (من 0 إلى 100)
+  perimetre_ar: تونس، مؤشر الهدف 3.8.1، متوسط هندسي مرجح لأربعة عشر مؤشرا فرعيا، 2000-2023
+  caveats_ar: مؤشر مركب لا يمثل نسبة المنخرطين أو قياسا مباشرا لجودة العلاج؛ لا يحدد
+    أثر إصلاح بعينه.
+  fiche: sources/oms-sante-indicateurs.md
+- id: ins-budget-sante-2018-2023
+  titre: 'INS/ministère des Finances : dépenses du département Santé et dénominateurs
+    budgétaires et PIB, 2018-2023'
+  sources:
+  - ins-annuaire-2017-2021-sante
+  - ins-annuaire-2019-2023-sante
+  build: scripts/extract_sante_depenses.py:budget
+  raw:
+  - data/raw/ins-publications/annuaire-statistique/2017-2021.pdf
+  - data/raw/ins-publications/annuaire-statistique/2019-2023.pdf
+  output: data/processed/sante/ins_budget_sante_2018_2023.csv
+  unite: milliers de dinars courants, millions de dinars courants, pourcentages
+  perimetre: département Santé publique, gestion et développement ; comparaison à
+    la somme de ces postes pour tous les départements et au PIB nominal en base 2015
+    non rétropolé
+  base_pib: 2015
+  caveats: 'INS source ministère des Finances ; stade comptable des dépenses non précisé
+    par les tableaux. Dépense ministérielle, non dépense totale de santé. Années 2018-2020
+    : édition 2017-2021 ; 2021-2023 : édition 2019-2023. PIB des années communes pris
+    dans la dernière édition, y compris 2020 révisé (119 502,1 MD).'
+  titre_ar: نفقات وزارة الصحة ومقامات نسبها إلى الميزانية والناتج المحلي الإجمالي،
+    2018-2023
+  unite_ar: بآلاف وملايين الدنانير الجارية وبالنسبة المئوية
+  perimetre_ar: نفقات التصرف والتنمية لوزارة الصحة، مقارنة بنفقات جميع الوزارات وبالناتج
+    المحلي الإجمالي بأساس 2015
+  caveats_ar: مرحلة الإنفاق المحاسبية غير محددة في الجدول؛ الوزارة ليست جملة الإنفاق
+    الصحي؛ استُعمل أحدث ناتج محلي إجمالي لكل سنة.
+  fiche: sources/sante-series-depenses.md
+- id: cnam-comptes-2016-2021
+  titre: 'CNAM : charges techniques, charges administratives et prestations décaissées,
+    2016-2021'
+  sources:
+  - cnam-etats-financiers-2016-2018
+  - cnam-etats-financiers-2018-2019
+  - cnam-etats-financiers-2020-2021
+  build: scripts/extract_sante_depenses.py:cnam
+  raw:
+  - data/raw/caisses/cnam/BILAN2016_2018.pdf
+  - data/raw/caisses/cnam/BILAN2019_2018.pdf
+  - data/raw/caisses/cnam/BILAN_2020-2021.pdf
+  output: data/processed/sante/cnam_comptes_2016_2021.csv
+  unite: milliers de dinars courants
+  perimetre: tous régimes de la CNAM ; charges techniques et administratives du compte
+    de résultat, décaissements de prestations de l'état des flux
+  caveats: 'Ne pas additionner charges et décaissements : deux comptabilités. Les
+    charges techniques ne ventilent pas maladie, assurances sociales et AT/MP. L''année
+    2018 est identique dans les deux éditions qui la couvrent.'
+  titre_ar: نفقات الكنام الفنية والإدارية والمنافع المدفوعة نقدا، 2016-2021
+  unite_ar: آلاف الدنانير الجارية
+  perimetre_ar: جميع أنظمة الكنام؛ الأعباء الفنية والإدارية من قائمة النتائج، والمدفوعات
+    من قائمة التدفقات النقدية
+  caveats_ar: لا تُجمع الأعباء والمدفوعات النقدية، ولا توزع الأعباء الفنية بحسب النظام
+    في هذه القوائم الموجزة.
+  fiche: sources/sante-series-depenses.md
+- id: cnam-parts-regimes-cres-2009-2019
+  titre: 'CRES : part des trois régimes dans les dépenses de la CNAM, 2009-2019'
+  sources:
+  - belloussaief2023-atmp
+  build: scripts/extract_sante_depenses.py:cres
+  raw:
+  - data/raw/caisses/cres/cres_lettre_n8_2023_atmp.pdf
+  - sources/transcriptions/cnam-parts-regimes-cres-2023.csv
+  output: data/processed/sante/cnam_parts_regimes_cres_2009_2019.csv
+  unite: pourcentage des dépenses de la CNAM, valeurs publiées
+  perimetre: répartition maladie, assurances sociales et AT/MP rapportée par une étude
+    CRES d'après des données CNAM, 2009-2019
+  caveats: Étude, non états financiers primaires ; la méthode détaillée n'est pas
+    publiée. Somme des trois parts de 99,9 % en 2010 et 2012 par arrondi. Aucun montant
+    exact par branche ne peut être déduit des pourcentages arrondis.
+  titre_ar: حصة الأنظمة الثلاثة من نفقات الكنام في دراسة لمركز البحوث والدراسات الاجتماعية،
+    2009-2019
+  unite_ar: نسب مئوية منشورة
+  perimetre_ar: توزيع نفقات الكنام بحسب التأمين على المرض والتأمينات الاجتماعية وحوادث
+    الشغل، 2009-2019
+  caveats_ar: دراسة لا قوائم مالية أصلية، ولا تتيح النسب المقربة إعادة بناء مبالغ
+    الفروع بدقة.
+  fiche: sources/sante-series-depenses.md

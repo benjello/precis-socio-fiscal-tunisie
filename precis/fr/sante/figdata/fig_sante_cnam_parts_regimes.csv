@@ -1,0 +1,18 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-13
+# séries (tunisia_data) : cnam-parts-regimes-cres-2009-2019
+# sources (citation) : @belloussaief2023-atmp
+# fiches : sources/sante-series-depenses.md
+# méthode/hypothèses : Étude, non états financiers primaires ; la méthode détaillée n'est pas publiée. Somme des trois parts de 99,9 % en 2010 et 2012 par arrondi. Aucun montant exact par branche ne peut être déduit des pourcentages arrondis.
+# note : Part des trois régimes dans les dépenses de la CNAM selon l'étude du CRES, 2009-2019
+Année,Assurance maladie (%),Assurances sociales (%),Accidents du travail et maladies professionnelles (%),Page
+2009,89.2,4.1,6.7,1
+2010,89.7,3.7,6.5,1
+2011,90.3,3.6,6.1,1
+2012,89.0,3.6,7.3,1
+2013,90.0,3.6,6.4,1
+2014,91.3,3.2,5.5,1
+2015,91.4,3.0,5.6,1
+2016,90.9,2.6,6.5,1
+2017,90.8,2.6,6.6,1
+2018,90.1,2.7,7.2,1
+2019,88.0,2.8,9.2,1
