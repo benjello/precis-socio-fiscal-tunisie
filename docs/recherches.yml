@@ -680,9 +680,11 @@
 
 - id: r-amg-cartes-quotas
   objet: arrêtés conjoints des ministres des affaires sociales et de la santé publique fixant le nombre global des cartes de soins gratuits (décret n° 98-1812, art. 2) et à tarifs réduits, et les quotas régionaux
-  ou: [precis/fr/prestations_sociales/_non_contributives.qmd]
+  ou:
+  - precis/fr/prestations_sociales/_non_contributives.qmd
+  - precis/fr/prestations_sociales/_non_contributives.qmd#sec-nc-aide-2020
   requetes:
-    titres_like: ['%carte%soins gratuits%', '%quota%']
+    titres_like: ['%carte%soins gratuits%', '%quota%', '%soins gratuits%', '%tarifs reduits%']
     depuis: 1998-09-29
   passes:
   - date: 2026-09-08
@@ -690,6 +692,12 @@
     sources: [jort_cache]
     couverture: 'aucun arrêté conjoint fixant le nombre global de cartes et les quotas régionaux trouvé dans jort_cache, pour la carte de soins gratuits (AMG1). Requêtes non consignées par la note ; celles-ci sont reconstruites depuis l''objet. Note : docs/notes/prestations-assistance.md, § 2.3.'
     couvert_jusqu_au: 2026-04-10
+    resultat: aucun
+  - date: 2026-10-14
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres 2020-mi-2021 « %soins gratuits% », « %tarifs reduits% » et plein texte des fascicules 2020 : seuls les décrets gouvernementaux n° 2020-475 et 2020-476 (JORT n° 74 : prorogation au 31 décembre 2020 des cartes délivrées de 2011 à 2015) et, par l''index, n° 2021-66 et 2021-67 (JORT n° 9 de 2021 : cartes de 2011 à 2016 prorogées au 31 décembre 2021). Aucun arrêté de nombre global ou de quotas pour 2020-2021. Effectifs de titulaires : points 2020-2021 seulement, dans des rapports extérieurs (Banque mondiale). Note : docs/notes/prestations-aides-exceptionnelles-covid-2020-2026-10-14.md, § 5 et 7.'
+    couvert_jusqu_au: 2021-06-30
     resultat: aucun
   a_faire:
   - 'requêtes de la passe d''origine non consignées : rejouer celles-ci et l''élargir'
@@ -2516,3 +2524,49 @@
     couverture: 'titres de jort_cache (SQL sur la colonne titre) : une seule notice, le décret n° 2024-182 (JORT n° 47 de 2024), déjà connu. Plein texte des fascicules français de 2017 à 2026 : les visas citent le décret sans modificatif jusqu''au JORT n° 23 de 2024, puis « tel que modifié et complété par le décret n° 2024-182 », et lui seul, jusqu''au JORT n° 75 de 2026 (décret n° 2026-148 du 23 juillet 2026). Lacunes : corpus français de 2018 incomplet (70 fascicules) ; actualisation des listes par la voie de l''article 4 du décret (approbation du conseil supérieur d''investissement) non cherchée hors Journal officiel. Requêtes lancées à la main, non par recherches.py.'
     couvert_jusqu_au: 2026-07-24
     resultat: aucun
+
+- id: r-covid-2020-ligne-aides-exceptionnelles
+  objet: texte créant ou abondant, au budget 2020 du ministère des affaires sociales, la ligne « aides exceptionnelles au profit des catégories vulnérables » (code 31.300/1204/007 selon la Banque mondiale, RES41005, tableau 2), sur laquelle les arrêtés conjoints des 10 juillet et 31 août 2020 imputent les aides (décret de transfert de crédits, arrêté de répartition ou de virement)
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#sec-nc-aide-2020]
+  requetes:
+    titres_like: ['%transfert%credit%', '%aide%', '%vulnerable%', '%faible revenu%', '%repartition%']
+    iort_ar: [تحويل اعتمادات, توزيع الاعتمادات, مساعدات استثنائية وظرفية, الفئات الهشة]
+    depuis: 2020-03-01
+  passes:
+  - date: 2026-10-14
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist]
+    couverture: 'titres de jort_cache 2020-mi-2021 ; lus : décrets gouvernementaux n° 2020-349 (JORT n° 50 : mission des affaires locales) et n° 2020-414 (JORT n° 63 : budget 2019) ; loi n° 2020-45 (LFR 2020, JORT n° 123, tableau C) ; arrêté du 17 décembre 2020 modifiant la répartition des crédits 2020 (JORT n° 126, p. 2976 ; annexe en image, page de la mission 25 océrisée, p. 3035 : crédits par programme et par partie, sans ligne) ; arrêté du 4 mai 2021 portant répartition des crédits 2020 (JORT n° 40 de 2021, p. 1014 et 1042 ; annexes en image, non océrisées). Plein texte des fascicules 2020 (lacunes : FR n° 2, 4, 13, 15, 16, 22, 23, 30, 31, 33, 39, 54, 59, 87 ; AR n° 4, 30, 39). Le rapport annuel de performance 2020 du ministère mentionne un « virement » créant la ligne, sans référence de texte. Miroir iort non interrogé. Note : docs/notes/prestations-aides-exceptionnelles-covid-2020-2026-10-14.md, § 1 et 7.'
+    couvert_jusqu_au: 2021-06-30
+    resultat: aucun
+  a_faire:
+  - océriser la page de la mission 25 dans les annexes de l'arrêté du 4 mai 2021 (JORT n° 40 de 2021) ; la répartition y reste par programme et par partie, la ligne elle-même relevant sans doute d'une décision de virement non publiée
+  - jouer les termes arabes sur le miroir iort
+
+- id: r-covid-2020-decision-avril
+  objet: décision (conseil des ministres, circulaire, décision ministérielle) ayant fixé les montants des aides d'avril et mai 2020 aux familles du programme national d'aide aux familles nécessiteuses, aux titulaires de la carte de soins à tarifs réduits, aux familles d'accueil et aux ménages inscrits sur formulaire, et de la prime de 100 D aux petites pensions, avant les arrêtés de régularisation du 10 juillet et du 31 août 2020 ; et communiqué de la Présidence du gouvernement du 21 mars 2020
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#sec-nc-aide-2020]
+  requetes:
+    titres_like:
+    - '%aide%'
+    - '%necessit%'
+    - '%vulnerable%'
+    - '%faible revenu%'
+    - '%soins gratuits%'
+    - '%tarifs reduits%'
+    - '%AMEN%'
+    - '%paiement%'
+    - '%solidarit%'
+    - '%1818%'
+    iort_ar: [مساعدات, المعوزة, الفئات الهشة, محدودة الدخل, ظرفية, التعريفة المنخفضة, العلاج المجاني]
+    depuis: 2020-03-01
+  passes:
+  - date: 2026-10-14
+    role: documentaliste
+    sources: [jort_cache, corpus_local, pist, presse]
+    couverture: 'titres FR et AR de jort_cache 2020-mi-2021 (requête LIKE sur les termes ci-dessus) et plein texte des fascicules 2020 FR/AR (lacunes : FR n° 2, 4, 13, 15, 16, 22, 23, 30, 31, 33, 39, 54, 59, 87 ; AR n° 4, 30, 39) : seuls textes trouvés, les arrêtés du 10 juillet (JORT n° 67) et du 31 août 2020 (JORT n° 92), et la mention du décret gouvernemental n° 2020-184, art. 5 (JORT n° 36, p. 886). Presse lue : Gnet 22/03/2020, Webmanagercenter 06/04/2020 et 23/04/2020 (ar), African Manager 06/05/2020, THD 07/05/2020, Babnet 20/05/2021. pm.gov.tn, social.gov.tn et les pages Facebook non consultés ; miroir iort non interrogé. Note : docs/notes/prestations-aides-exceptionnelles-covid-2020-2026-10-14.md, § 1 et 7.'
+    couvert_jusqu_au: 2021-06-30
+    resultat: aucun
+  a_faire:
+  - captures des archives du web de pm.gov.tn (21-22 mars 2020) et de social.gov.tn (avril-mai 2020)
+  - jouer les termes arabes sur le miroir iort

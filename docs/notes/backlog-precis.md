@@ -661,6 +661,37 @@ liste qui suit le tableau, citations comprises. Restent :
 
 ## Prestations sociales
 
+- **Aides exceptionnelles de 2020 et aide de 2021 — 14 octobre 2026** (`_non_contributives.qmd`,
+  `#sec-nc-aide-2020` nouvelle, `#sec-nc-aide-2021` corrigée ; note
+  `docs/notes/prestations-aides-exceptionnelles-covid-2020-2026-10-14.md`) :
+  - **fait** : section 2020 (arrêtés conjoints du 10 juillet et du 31 août 2020 lus au fascicule
+    français, pages établies page par page : 1515-1517 et 2010-2012 ; tableau du droit par tranche ;
+    tableau des versements du rapport annuel de performance 2020 ; rapports de la Banque mondiale à
+    part, « deux mois » et « one-time » en regard) ; section 2021 corrigée à l'image du tableau de
+    l'art. 2 (JORT n° 75, p. 2071) : six catégories, la première sans condition, cinq conditions pour
+    les catégories 2 à 5, une condition de salaire en plus pour la sixième ; procédure des art. 3 à 7 ;
+    clés `decret-gouv-2020-475` et `-476` portées dans `@tbl-nc-cartes-prorogations` ; renvoi depuis
+    `sante/_couverture.qmd#sec-soins-frontiere` ; fiches `r-covid-2020-decision-avril` et
+    `r-covid-2020-ligne-aides-exceptionnelles` créées, passe du 14 octobre 2026 sur `r-amg-cartes-quotas`.
+  - **reste, pour le bibliographe** : clés des décrets-lois n° 2020-3 et n° 2020-4 (JORT n° 32,
+    p. 767 et 769) et du décret gouvernemental n° 2020-184 (JORT n° 36, p. 884-887 ; l'exclusion des
+    bénéficiaires des aides aux familles est à l'**art. 5, p. 886**, lu à l'image, et non à l'art. 4,
+    p. 885, comme le dit la note) ; clé de la loi n° 2020-45 (LFR 2020) ; clé du rapport annuel de
+    performance 2021 du ministère (crédits de l'aide de 2021).
+  - **reste, pour le documentaliste** (questions ouvertes de la note, § 10 c) : texte qui a fixé
+    les montants avant les arrêtés de juillet et d'août 2020 (`r-covid-2020-decision-avril`, à
+    obtenir : archives du web de pm.gov.tn et social.gov.tn) ; aide de 60 D de Ramadan annoncée pour
+    le 4 mai 2020, avant l'effet de l'arrêté du 19 mai 2020 (25 mai), et régime antérieur à 40 D ;
+    date du versement sur formulaire (mai ou juin 2020) et du premier paiement (mars ou avril 2020) ;
+    unité du « virement (326,805 DT) » du rapport 2020 et texte de la ligne budgétaire
+    (`r-covid-2020-ligne-aides-exceptionnelles`, annexes de l'arrêté du 4 mai 2021 à océriser) ;
+    nombre de cartes de soins à tarifs réduits en 2020, connu seulement par la Banque mondiale
+    (`r-amg-cartes-quotas`) ; édition arabe de l'arrêté du 31 août 2020 à relire à l'image (début
+    p. 2249 ou 2250) ; le sigle « P2P » (fiche `r-covid-2020-p2p` proposée par la note, non créée :
+    le chapitre n'en a pas besoin).
+  - **reste, pour la relecture** : le décret-loi n° 2020-30 du 10 juin 2020 (complément portant les
+    pensions à 180 D) est à signaler au volume « Retraites ».
+
 - **Lectures du 10 octobre 2026 portées dans le volume** (`docs/notes/prestations-sociales-lectures-2026-10-10.md` ;
   quatre chapitres, corrections ciblées, aucun plan changé).
   - *Levé* : les dates d'effet des lois n° 95-101 (10 décembre 1995), du 22 juillet 1996 (4 août 1996),
