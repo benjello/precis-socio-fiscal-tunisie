@@ -2728,3 +2728,54 @@
   a_faire:
   - Ladhari 1990, Essoussi 1994 ; rapports de la Fédération tunisienne des sociétés d'assurances (années 1990) ; sources de travail du tableau 13.10 du chapitre de 2008
   - JO tunisien de 1954 (mêmes fonds que r-sante-prevoyance-1951-texte)
+
+- id: r-sante-conseil-national-am-rapports
+  objet: rapports annuels du Conseil national de l'assurance maladie (loi n° 2004-71, art. 21), dont celui de mai 2014 sur l'exercice 2013 cité par la Lettre du CRES n° 5
+  ou: [precis/fr/sante/_couverture.qmd#sec-soins-beneficiaires-cnam]
+  requetes:
+    titres_like: ['%conseil national de l%assurance maladie%']
+    iort_ar: [المجلس الوطني للتأمين على المرض]
+    depuis: 2004-08-02
+  passes:
+  - date: 2026-10-15
+    role: documentaliste
+    sources: [web]
+    couverture: 'Recherche web « Conseil national de l''assurance maladie » Tunisie rapport 2013 OR 2014 CNAM : seuls des relais (Lettre du CRES n° 5, rapport ATDDS/FTDES 2016, assistance technique Banque mondiale 2016). Site de la CNAM : https://www.cnam.nat.tn/stat.jsp (statistiques, états financiers, bilans AT/MP) et https://www.cnam.nat.tn/open_gov.jsp (rapports sur l''accès à l''information 2013-2022) : aucun rapport du Conseil. Lacunes : site du ministère des Affaires sociales et archives du web non parcourus ; Journal officiel non interrogé (un arrêté de composition du Conseil pourrait exister). Note : docs/notes/sante-series-etudes-2026-10-15.md, § 9.'
+    couvert_jusqu_au: 2026-10-15
+    resultat: aucun
+  - date: 2026-10-15
+    role: redacteur
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache 2004-08-02 au 2026-10-02 : LIKE %conseil national de l%assurance maladie% sans candidat. Miroir iort (texte arabe) : décret n° 2005-2192 du 9 août 2005 portant organisation du Conseil national d''assurance maladie, décret n° 2007-1367 et loi n° 2004-71 — textes d''organisation, aucun rapport du Conseil. Décret n° 2005-2192, art. 7 (lu au miroir iort) : le Conseil élabore un rapport annuel de suivi et d''évaluation du régime, transmis au Premier ministre avant la fin de juin ; aucune publication prévue.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-sante-cnam-rapports-activite
+  objet: rapports d'activité et annuaires statistiques de la CNAM (2007-2014), source des dépenses par secteur public, privé et étranger relayées par la Lettre du CRES n° 5 et la thèse Ismail
+  ou: [precis/fr/sante/_couverture.qmd#sec-sante-cnam-etude]
+  requetes:
+    titres_like: ['%caisse nationale d%assurance maladie%rapport%']
+    iort_ar: [الصندوق الوطني للتأمين على المرض]
+    depuis: 2007-07-01
+  passes:
+  - date: 2026-10-15
+    role: documentaliste
+    sources: [web]
+    couverture: 'https://www.cnam.nat.tn/stat.jsp : seulement indicateurs globaux 2018 et 2021, prestations sanitaires 2018 et 2021, états financiers 2011-2021, bilans AT/MP ; https://www.cnam.nat.tn/open_gov.jsp : « rapport2013.pdf » à « rapport_annuel_2022.pdf » = rapports sur l''accès à l''information (vérifiés 2013, 2018, 2022). Recherche web « rapport annuel » OR « rapport d''activité » CNAM : rien. Lacunes : archives du web de cnam.nat.tn non parcourues ; présentation COOPAMI de 2012 (M. Chiha) non cherchée. Note : docs/notes/sante-series-etudes-2026-10-15.md, § 6.4 et § 9.'
+    couvert_jusqu_au: 2026-10-15
+    resultat: aucun
+
+- id: r-sante-comptes-sante-2012-2014
+  objet: rapports des comptes de la santé de la Tunisie pour 2012, 2013 et 2014 (ministère de la Santé, pôle d'économie de la santé, méthode OMS/SHA)
+  ou: [precis/fr/sante/_couverture.qmd#sec-soins-comptes-nationaux]
+  requetes:
+    titres_like: ['%comptes de la sante%']
+    iort_ar: [الحسابات الوطنية للصحة]
+    depuis: 2012-01-01
+  passes:
+  - date: 2026-10-15
+    role: documentaliste
+    sources: [web]
+    couverture: 'Recherche web « comptes de la santé » Tunisie 2012 2013 2014 : article de synthèse Ben Abdelaziz et al. 2018 (récupéré) ; page http://www.santetunisie.rns.tn/fr/index.php/actualites/460-le-financement-de-la-sante-en-tunisie-resultats-des-comptes-de-la-sante-pour-les-annees-2012-et-2013 : aucune réponse du serveur ; capture des archives du web du 7 mars 2024 : l''identifiant 460 affiche une autre actualité, aucun PDF des comptes. Lacunes : index des captures de santetunisie.rns.tn/images/ non filtré utilement ; portail de l''OMS (rapports nationaux des comptes de la santé) non parcouru. Note : docs/notes/sante-series-etudes-2026-10-15.md, § 9.'
+    couvert_jusqu_au: 2026-10-15
+    resultat: aucun

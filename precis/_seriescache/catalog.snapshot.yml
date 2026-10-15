@@ -4474,3 +4474,50 @@
   caveats_ar: دراسة لا قوائم مالية أصلية، ولا تتيح النسب المقربة إعادة بناء مبالغ
     الفروع بدقة.
   fiche: sources/sante-series-depenses.md
+- id: cnam-comptes-2011-2021
+  titre: 'CNAM : charges techniques, charges administratives et prestations décaissées,
+    2011-2021'
+  sources:
+  - cnam-etats-financiers-2011-2015
+  - cnam-etats-financiers-2016-2018
+  - cnam-etats-financiers-2018-2019
+  - cnam-etats-financiers-2020-2021
+  build: scripts/extract_sante_depenses.py:cnam
+  raw:
+  - data/raw/caisses/cnam/fr_etat_fin_11_15.pdf
+  - data/raw/caisses/cnam/fr_etat_fin_11_15_ocr.pdf
+  - sources/transcriptions/cnam-etats-financiers-2011-2015.csv
+  - data/raw/caisses/cnam/BILAN2016_2018.pdf
+  - data/raw/caisses/cnam/BILAN2019_2018.pdf
+  - data/raw/caisses/cnam/BILAN_2020-2021.pdf
+  output: data/processed/sante/cnam_comptes_2011_2021.csv
+  unite: milliers de dinars courants
+  perimetre: 'tous régimes de la CNAM ; charges techniques et administratives du compte
+    de résultat, décaissements de prestations de l''état des flux de trésorerie ;
+    2011-2015 : édition des états financiers 2011-2015 ; 2016-2021 : série cnam-comptes-2016-2021,
+    inchangée'
+  caveats: 'CHANGEMENT D''ÉDITION EN 2015-2016, SANS ANNÉE COMMUNE : 2011-2015 viennent
+    de l''édition 2011-2015 (même publication, même présentation que les suivantes),
+    2016-2021 des trois éditions suivantes ; l''édition 2016-2018 imprime « 2015 »
+    en tête de son état des flux sans aucune valeur, si bien que 2015 ne peut pas
+    être recoupée entre deux éditions (2018 l''est, identique). 2011-2015 LUS À L''IMAGE
+    (document scanné, pp. 3 et 4) : produits − charges techniques = marge brute, marge
+    − provisions = résultat technique net et huit lignes d''exploitation = flux net
+    imprimé pour les cinq années ; résultat technique net + produits financiers −
+    charges administratives = résultat d''exploitation à 1 millier près en 2011 (arrondi
+    imprimé), exactement ensuite. L''océrisation publiée par la CNAM décale les colonnes
+    et lit mal certains chiffres : elle ne sert qu''à recouper cinq valeurs. Les décaissements
+    baissent de 1 766,5 MD (2015) à 1 486,7 MD (2016) sans explication dans les états
+    : ne pas l''interpréter sans les notes aux états financiers. Ne pas additionner
+    charges et décaissements : deux comptabilités. Les charges techniques ne ventilent
+    pas maladie, assurances sociales et AT/MP.'
+  titre_ar: نفقات الكنام الفنية والإدارية والمنافع المدفوعة نقدا، 2011-2021
+  unite_ar: آلاف الدنانير الجارية
+  perimetre_ar: جميع أنظمة الكنام؛ الأعباء الفنية والإدارية من قائمة النتائج، والمدفوعات
+    من قائمة التدفقات النقدية؛ 2011-2015 من نسخة القوائم المالية 2011-2015، و2016-2021
+    من النسخ اللاحقة
+  caveats_ar: تغيّر النسخة بين 2015 و2016 دون سنة مشتركة، فلا يمكن مقارنة 2015 بين
+    نسختين. قُرئت أرقام 2011-2015 من الصورة لأن الوثيقة ممسوحة ضوئيا، وتحققت المتطابقات
+    المطبوعة في السنوات الخمس (بفارق ألف دينار واحد سنة 2011 بسبب التقريب). لا تُجمع
+    الأعباء والمدفوعات النقدية، ولا توزع الأعباء الفنية بحسب النظام.
+  fiche: sources/sante-series-depenses.md

@@ -1725,7 +1725,14 @@ budget complet des EPS ni à l'ensemble des charges techniques de la caisse.
 La fiche `sante-cnam-comptes-2026-10-12.md` donne les montants en milliers et
 millions de dinars et le recoupement entre éditions. Les états financiers et
 statistiques de prestations sont lisibles en couche texte dans le corpus,
-sans OCR ; les comptes 2011-2015 océrisés ne sont pas validés pour des montants.
+sans OCR. Les comptes 2011-2015, document scanné, ont été **lus à l'image le 15 octobre
+2026** (pp. 3 et 4, identités imprimées vérifiées pour les cinq années) et versés dans
+`tunisia-data` (série `cnam-comptes-2011-2021`, transcription
+`sources/transcriptions/cnam-etats-financiers-2011-2015.csv`) ; la figure
+`#fig-sante-cnam-comptes` couvre désormais 2011-2021. Aucune année commune entre
+l'édition 2011-2015 et la suivante : la jonction 2015-2016 n'est pas recoupée, et la
+baisse des décaissements de 2015 à 2016 reste à expliquer par les notes aux états
+financiers, **à obtenir**.
 **À lire ou obtenir** pour ventiler la dépense totale : soins ambulatoires,
 médicaments, soins dentaires, accidents du travail, indemnités en espèces,
 part versée par la caisse aux prestataires et restes à payer, à périmètre
@@ -1747,7 +1754,7 @@ les montants exacts ; les chiffres en pourcentage ne sont pas convertis en
 montants prétendument observés.
 
 **Trois figures longitudinales dans la présentation** : budget Santé
-2018-2023 (vues en MD et en parts du budget et du PIB), comptes CNAM 2016-2021
+2018-2023 (vues en MD et en parts du budget et du PIB), comptes CNAM 2011-2021
 (compte de résultat puis trésorerie séparés) et parts des trois régimes du
 CRES 2009-2019 (étude distincte). Les tableaux de synthèse ont été remplacés
 par des courbes à valeurs au survol, sans perdre les données détaillées ou
@@ -1789,7 +1796,8 @@ l'onglet Sources. La série est extraite dans `tunisia-data` et snapshotée pour
 le rendu autonome du précis. Le document local, déjà catalogué dans `tunisia-data`,
 est détaillé dans `sante-cnam-filiere-medecins-2026-10-12.md`. **À obtenir** :
 consultations réalisées par filière, répartition territoriale des praticiens,
-nombre de bénéficiaires (et non seulement affiliés), remboursements par type
+nombre de bénéficiaires après 2013 (2008-2013 publiés par la *Lettre du CRES* n° 5,
+`#tbl-soins-beneficiaires-cnam`), remboursements par type
 de soin et leurs séries postérieures à 2021. Le nombre de conventionnés ne
 mesure ni les soins réalisés ni les revenus des médecins.
 
@@ -1919,6 +1927,36 @@ mesure ni les soins réalisés ni les revenus des médecins.
   - **Questions ouvertes à trancher** : ascendants après la loi n° 97-60 (exposé tel quel, sans
     conclusion) ; report de l'ancre `r-cnrps-cotisation-retraites-1973-2007` dans
     `cotisations_sociales/_regimes.qmd` (`#sec-cot-pensionnes`).
+- **Séries et études sur l'assurance maladie, écrit le 15 octobre 2026** (branche
+  `chantier/sante-series-etudes`, non commité ; note `sante-series-etudes-2026-10-15.md`).
+  Toutes les sources sont des PDF à couche texte, lus dans `tunisia-data` (`cres/`,
+  `sante-etudes/`, `sante-avant-2004/`) ; aucun OCR demandé.
+  - Fait, `_couverture.qmd` : `#sec-sante-cnam-etude` complétée (dépenses CNAM par secteur
+    2007 et 2012, *Lettre du CRES* n° 5, recoupement de 2012 avec les états financiers et
+    la part maladie du CRES n° 8) ; sous-section `#sec-soins-beneficiaires-cnam`
+    (`#tbl-soins-beneficiaires-cnam`, bénéficiaires 2008-2013, et écart des filières de 2013 :
+    66,4 % selon la Lettre contre 62,1 % calculé sur la CNAM, sans arbitrage) ; section
+    `#sec-soins-comptes-nationaux` (financement de 2004 d'après la RTBC n° 19 ; comptes de la
+    santé 2012-2014, `#tbl-soins-comptes-nationaux`, en MD courants et de 2025 ; ratios au PIB
+    seulement cités ; tableau 4 de Ben Abdelaziz cité avec son écart de 140 à 350 MD) ;
+    section d'études `#sec-soins-etudes-reforme` (thèse de 2015, coefficients en bloc replié ;
+    article EMHJ 2022).
+  - Trois fiches nouvelles dans `docs/recherches.yml` : `r-sante-conseil-national-am-rapports`
+    (passe JORT du 15 octobre : le décret n° 2005-2192, art. 7, prévoit un rapport annuel
+    transmis au Premier ministre, sans publication), `r-sante-cnam-rapports-activite`,
+    `r-sante-comptes-sante-2012-2014`.
+  - **À faire (rédacteur)** : figure à deux panneaux, bénéficiaires 2008-2013 et affiliés
+    2008-2021, après versement de la série des bénéficiaires dans `tunisia-data`
+    (TODO dans `#sec-soins-beneficiaires-cnam`).
+  - **À obtenir (documentaliste)** : rapports du Conseil national de l'assurance maladie
+    (2008-2014), rapports d'activité de la CNAM 2007-2014, rapports des comptes de la santé
+    2012-2014 ; comptes nationaux de la santé 2004-2005 de l'INSP (Arfa, Souiden, Achour,
+    2007) pour confronter les parts de 2004 ; parts 2000-2017 tirées directement de la base
+    de l'OMS pour relier 2004, 2012-2014 et 2018-2023 dans une seule méthode (TODO dans
+    `#sec-soins-comptes-nationaux`).
+  - **Non repris, à juger** : couverture de la population en 2016 (note CRES/UNICEF 2019,
+    p. 14 : clé versée, non citée ; les parts publiées ne somment pas à 100 %) ; dépenses CNAM
+    par secteur 2007-2010 de la thèse (relais aux totaux incohérents) ; actes ATDSRP 2017.
 - **Intégration bilingue** : `_quarto.yml` et `references.json` tenus dans les deux langues ;
   les références arabes de 1987 à 2021 demandent page et, pour celles dont elle manque,
   URL vérifiée ; les URL arabes des fascicules de 1989, 1991 et de la convention de 2007

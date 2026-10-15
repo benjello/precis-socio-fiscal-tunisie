@@ -1,10 +1,15 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-13
-# séries (tunisia_data) : cnam-comptes-2016-2021
-# sources (citation) : @cnam-etats-financiers-2016-2018, @cnam-etats-financiers-2018-2019, @cnam-etats-financiers-2020-2021
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-15
+# séries (tunisia_data) : cnam-comptes-2011-2021
+# sources (citation) : @cnam-etats-financiers-2011-2015, @cnam-etats-financiers-2016-2018, @cnam-etats-financiers-2018-2019, @cnam-etats-financiers-2020-2021
 # fiches : sources/sante-series-depenses.md
-# méthode/hypothèses : Ne pas additionner charges et décaissements : deux comptabilités. Les charges techniques ne ventilent pas maladie, assurances sociales et AT/MP. L'année 2018 est identique dans les deux éditions qui la couvrent.
-# note : CNAM : charges techniques et administratives, puis prestations décaissées, tous régimes, 2016-2021
+# méthode/hypothèses : CHANGEMENT D'ÉDITION EN 2015-2016, SANS ANNÉE COMMUNE : 2011-2015 viennent de l'édition 2011-2015 (même publication, même présentation que les suivantes), 2016-2021 des trois éditions suivantes ; l'édition 2016-2018 imprime « 2015 » en tête de son état des flux sans aucune valeur, si bien que 2015 ne peut pas être recoupée entre deux éditions (2018 l'est, identique). 2011-2015 LUS À L'IMAGE (document scanné, pp. 3 et 4) : produits − charges techniques = marge brute, marge − provisions = résultat technique net et huit lignes d'exploitation = flux net imprimé pour les cinq années ; résultat technique net + produits financiers − charges administratives = résultat d'exploitation à 1 millier près en 2011 (arrondi imprimé), exactement ensuite. L'océrisation publiée par la CNAM décale les colonnes et lit mal certains chiffres : elle ne sert qu'à recouper cinq valeurs. Les décaissements baissent de 1 766,5 MD (2015) à 1 486,7 MD (2016) sans explication dans les états : ne pas l'interpréter sans les notes aux états financiers. Ne pas additionner charges et décaissements : deux comptabilités. Les charges techniques ne ventilent pas maladie, assurances sociales et AT/MP.
+# note : CNAM : charges techniques et administratives, puis prestations décaissées, tous régimes, 2011-2021
 Année,Charges techniques (milliers D),Charges administratives (milliers D),Prestations décaissées (milliers D),Édition des comptes
+2011,1510622,71893,1291089,2011-2015
+2012,1738751,83844,1594648,2011-2015
+2013,1802790,103094,1748750,2011-2015
+2014,1900913,107667,1766517,2011-2015
+2015,2013350,126739,1766499,2011-2015
 2016,2074070,140772,1486719,2016-2018
 2017,2191280,146713,1437156,2016-2018
 2018,2236255,219538,2156471,2019-2018
