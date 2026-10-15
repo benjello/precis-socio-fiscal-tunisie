@@ -2676,7 +2676,7 @@ entries:
     statut: valide
     references: [loi-87-29-amg, decret-98-1812-amg1]
     source_definition: {ref: decret-98-1812-amg1, locator: "art. 2"}
-    voir_aussi: [amg2, pnafn, quota-regional]
+    voir_aussi: [amg2, pnafn, quota-regional, livret-de-soins, carte-de-soins]
     fr:
       terme: Carte de soins gratuits
       definition: >
@@ -2697,7 +2697,7 @@ entries:
     statut: valide
     references: [decret-98-409-amg2]
     source_definition: {ref: decret-98-409-amg2, locator: "art. 2 et 10"}
-    voir_aussi: [amg1, condition-de-ressources, categories-revenu-limite, smig]
+    voir_aussi: [amg1, condition-de-ressources, categories-revenu-limite, smig, livret-de-soins]
     fr:
       terme: Carte de soins à tarifs réduits
       definition: >
@@ -2710,6 +2710,241 @@ entries:
       definition: >
         سند يخوّل النفاذ إلى العلاج العمومي بتعريفة منخفضة مقابل معلوم انخراط سنوي، وذلك
         ضمن شرط موارد يُعبَّر عنه بمضاعفات الأجر الأدنى ويتغيّر بحسب حجم العائلة.
+      synonymes: []
+
+  - id: carte-de-soins
+    acronyme: null
+    statut: valide
+    references: [loi58-67, loi60-13, loi69-2, loi81-12]
+    source_definition: {ref: loi58-67, locator: "art. 3"}
+    source_traduction: {ref: loi58-67, locator: "art. 3"}
+    voir_aussi: [livret-de-soins, amg1, amg2, contribution-personnelle-etat]
+    fr:
+      terme: Carte de soins
+      definition: >
+        Titre délivré au chef de famille, de 1958 à 1981, qui ouvre aux malades
+        indigents et aux personnes à sa charge les soins des établissements
+        publics, gratuitement ou contre une contribution. Carte annuelle accordée
+        selon le revenu en 1958 (loi n° 58-67, art. 3), elle donne aussi accès à
+        l'hospitalisation gratuite en 1960 ; en 1969, elle devient une carte
+        familiale valable deux ans, réservée aux Tunisiens non imposables à la
+        contribution personnelle d'État (loi n° 69-2, art. 27). La loi n° 81-12 la
+        remplace par le livret de soins. Les cartes de soins gratuits et à tarifs
+        réduits de 1998 sont des titres distincts.
+      synonymes: [Carte de soins familiale]
+    ar:
+      terme: بطاقة العلاج
+      definition: >
+        سند يُسلَّم إلى رئيس العائلة من 1958 إلى 1981، يخوّل المرضى الفقراء
+        والأشخاص الذين في كفالته العلاج بالمؤسسات العمومية مجانًا أو بمقابل.
+        وهي بطاقة علاج سنوية تُسند حسب الدخل سنة 1958 (القانون عدد 67 لسنة 1958،
+        الفصل 3)، امتدّت إلى الإقامة المجانية بالمستشفى سنة 1960؛ ثم أصبحت سنة
+        1969 بطاقة علاج عائلية صالحة لمدة عامين، تُسند إلى التونسيين غير الخاضعين
+        للضريبة الشخصية للدولة (القانون عدد 2 لسنة 1969، الفصل 27). وعوّضها القانون
+        عدد 12 لسنة 1981 بدفاتر العلاج. وبطاقتا العلاج المجاني والعلاج بالتعريفة
+        المنخفضة لسنة 1998 سندان متميّزان عنها.
+      synonymes: [بطاقة علاج عائلية]
+
+  - id: livret-de-soins
+    acronyme: null
+    statut: valide
+    references: [loi81-12, loi-87-29-amg]
+    source_definition: {ref: loi81-12, locator: "art. unique (art. 27 nouveau de la loi n° 69-2)"}
+    source_traduction: {ref: loi81-12, locator: "art. unique (art. 27 nouveau de la loi n° 69-2)"}
+    voir_aussi: [carte-de-soins, amg1, amg2]
+    fr:
+      terme: Livret de soins
+      definition: >
+        Titre délivré par les services du ministère de la Santé publique, de 1981
+        à 1998, qui remplace la carte de soins et ouvre la gratuité, totale ou
+        partielle, des consultations externes et des soins dans les établissements
+        sanitaires de l'État. La loi n° 81-12 en crée trois catégories, selon le
+        revenu de la famille et le nombre de personnes à sa charge ; la loi
+        n° 87-29 n'en retient que deux à partir du 1^er^ janvier 1988. Les décrets
+        de 1998 le remplacent par les cartes de soins gratuits et à tarifs réduits.
+      synonymes: []
+    ar:
+      terme: دفتر العلاج
+      definition: >
+        سند تسلّمه مصالح وزارة الصحة العمومية من 1981 إلى 1998، عوّض بطاقة العلاج،
+        ويخوّل التمتّع بالمجانية الكاملة أو الجزئية للعيادات الخارجية والعلاج
+        بالمنشآت الصحية التابعة للدولة. أحدث القانون عدد 12 لسنة 1981 ثلاثة أصناف
+        منه حسب مدخول العائلة وعدد الأشخاص الذين في كفالتها، ولم يُبقِ القانون عدد 29
+        لسنة 1987 إلا على صنفين ابتداء من غرة جانفي 1988. وعوّضته أوامر 1998
+        ببطاقتَي العلاج المجاني والعلاج بالتعريفة المنخفضة.
+      synonymes: [دفاتر العلاج]
+
+  - id: carnet-de-soins-familial
+    acronyme: null
+    statut: valide
+    references: [decret61-354, loi65-17, decret73-91]
+    source_definition: {ref: decret73-91, locator: "art. 3"}
+    source_traduction: {ref: decret73-91, locator: "art. 3"}
+    voir_aussi: [regime-prestations-en-nature, cnss, cnrps]
+    fr:
+      terme: Carnet de soins familial
+      definition: >
+        Carnet délivré par l'organisme de sécurité sociale à l'affilié, qui ouvre
+        à lui et à sa famille les consultations externes et l'hospitalisation
+        gratuites dans les formations du ministère de la Santé publique : aux
+        assurés de la CNSS depuis la convention de 1961, aux étudiants depuis 1965
+        (carnet « étudiant »), et aux agents publics qui ont choisi en 1973 le
+        régime des prestations en nature. À ces derniers, la Caisse de prévoyance
+        sociale le délivre après trois mois de fonctions au moins (décret
+        n° 73-91, art. 3).
+      synonymes: []
+    ar:
+      terme: دفتر عائلي للمعالجة
+      definition: >
+        دفتر يسلّمه هيكل الضمان الاجتماعي إلى المنخرط، ويخوّله ولأفراد عائلته قبول
+        الفحوص الطبية الخارجية والإيواء بالمستشفيات مجانًا بالمؤسسات التابعة لوزارة
+        الصحة العمومية: لمضموني الصندوق القومي للضمان الاجتماعي منذ اتفاقية 1961،
+        وللطلبة منذ 1965 (كنش عائلي للعلاج «طالب»)، ولأعوان الدولة الذين اختاروا
+        سنة 1973 نظام التعويضات العينية. ويسلّمه صندوق الحيطة الاجتماعية إلى هؤلاء
+        بعد ثلاثة أشهر على الأقل من مباشرتهم لخطتهم (الأمر عدد 91 لسنة 1973، الفصل 3).
+      synonymes: [دفتر معالجة عائلي, كنش عائلي للعلاج]
+
+  - id: regime-prestations-en-nature
+    acronyme: null
+    statut: valide
+    references: [loi72-2, decret73-91, decret74-899]
+    source_definition: {ref: loi72-2, locator: "art. 3"}
+    source_traduction: {ref: loi72-2, locator: "art. 3"}
+    voir_aussi: [regime-de-prevoyance, carnet-de-soins-familial, cnrps]
+    fr:
+      terme: Régime des prestations en nature
+      definition: >
+        Régime que peuvent choisir, depuis la loi n° 72-2, les affiliés à la
+        prévoyance des agents publics : consultations et hospitalisation gratuites
+        dans les formations sanitaires et hospitalières du ministère de la Santé
+        publique, sur présentation d'un carnet de soins familial, à partir du
+        1^er^ avril 1973. L'autre branche de l'option est le maintien du régime de
+        prévoyance de 1951, qui reste la règle à défaut de choix. En contrepartie,
+        la caisse verse au ministère un forfait annuel fixé par convention.
+      synonymes: []
+    ar:
+      terme: نظام التعويضات العينية
+      definition: >
+        نظام يمكن أن يختاره، منذ القانون عدد 2 لسنة 1972، المنخرطون في نظام الحيطة
+        لأعوان الدولة: فحوص طبية وإيواء بالمستشفيات مجانًا بالمؤسسات الصحية
+        والاستشفائية التابعة لوزارة الصحة العمومية، بتقديم دفتر عائلي للمعالجة،
+        ابتداء من غرة أفريل 1973. والفرع الآخر من الاختيار هو البقاء في نظام الحيطة
+        لسنة 1951، وهو القاعدة عند عدم الاختيار. ويدفع الصندوق مقابل ذلك إلى الوزارة
+        مبلغًا جزافيًا سنويًا تضبطه اتفاقية.
+      synonymes: [التعويضات العينية]
+
+  - id: tarif-de-responsabilite
+    acronyme: null
+    statut: valide
+    references: [best-1952-regime-prevoyance-1, arrete-1973-03-12-prevoyance-1952]
+    source_definition: {ref: best-1952-regime-prevoyance-1, locator: "p. 51-52"}
+    source_traduction: {ref: arrete-1973-03-12-prevoyance-1952, locator: "art. 24 nouveau"}
+    voir_aussi: [regime-de-prevoyance]
+    fr:
+      terme: Tarif de responsabilité
+      definition: >
+        Montant de référence dans la limite duquel le régime de prévoyance des
+        agents publics de 1951 rembourse les frais de soins, à une quotité propre
+        à chaque risque ; ce qui le dépasse reste à la charge de l'affilié. À
+        partir de 1973, pour les frais de séjour, il est égal, à l'hôpital public,
+        au tarif fixé pour les malades payants de la catégorie du malade et, en
+        clinique privée, aux deux tiers du tarif réglementaire (arrêté du 12 mars
+        1973, art. 24 nouveau).
+      synonymes: []
+    ar:
+      terme: تعريفة الكفالة
+      definition: >
+        مبلغ مرجعي يُرجِّع في حدوده نظامُ الحيطة لأعوان الدولة لسنة 1951 مصاريفَ
+        العلاج، بنسبة خاصة بكل خطر، ويبقى ما زاد عليه على كاهل المنخرط. وابتداء
+        من سنة 1973، تساوي تعريفة الكفالة لمصاريف الإقامة، بالمستشفى العمومي،
+        التعريفة المقرّرة للمرضى غير المجانيين من الصنف المرتّب فيه المريض،
+        وبالمصحة الخاصة، ثلثي التعريفة المقرّرة بالتراتيب (قرار 12 مارس 1973،
+        الفصل 24 جديد).
+      synonymes: []
+
+  - id: contribution-frais-soins
+    acronyme: null
+    statut: valide
+    references: [lf-1983, lf-1986]
+    source_definition: {ref: lf-1983, locator: "art. 105"}
+    source_traduction: {ref: lf-1983, locator: "art. 105"}
+    voir_aussi: [livret-de-soins]
+    fr:
+      terme: Contribution aux frais de soins et d'hospitalisation
+      definition: >
+        Somme due, depuis la loi de finances pour 1983, par les patients des
+        établissements hospitaliers et sanitaires publics pour les consultations
+        externes et l'hospitalisation, sauf par les malades qui paient
+        eux-mêmes leurs soins et par les bénéficiaires des actions de prévention.
+        La loi de finances en fixe le montant selon le type d'établissement ; celle
+        de 1986 le module selon l'établissement et le service.
+      synonymes: [Contribution aux frais de soins]
+    ar:
+      terme: المساهمة في تغطية مصاريف العلاج والإقامة
+      definition: >
+        مبلغ يدفعه، منذ قانون المالية لسنة 1983، المنتفعون بخدمات العلاج والإقامة
+        بالمؤسسات الاستشفائية والصحية العمومية بعنوان العيادات الخارجية والإقامة، باستثناء
+        المرضى الذين يسدّدون معاليم علاجهم بصفة شخصية والمنتفعين بأعمال الوقاية
+        الصحية. ويضبط قانون المالية مبلغها حسب صنف المؤسسة، ونوّعه قانون المالية
+        لسنة 1986 حسب المؤسسة والقسم.
+      synonymes: [المساهمة في تغطية مصاريف العلاج]
+
+  - id: regime-conventionnel-soins
+    acronyme: null
+    statut: valide
+    references: [loi97-4, decret97-1645]
+    source_definition: {ref: decret97-1645, locator: "art. 1-3"}
+    source_traduction: {ref: decret97-1645, locator: "art. 1-3"}
+    voir_aussi: [cnss, ayant-droit]
+    fr:
+      terme: Régime conventionnel d'entreprise
+      definition: >
+        Couverture de la maladie ordinaire et de l'accouchement que l'employeur
+        assure à ses salariés et à leurs ayants droit par un contrat d'assurance
+        de groupe ou une mutuelle approuvée, et qui lui vaut, depuis le
+        1^er^ octobre 1996, une réduction de deux points du taux global de
+        cotisation à la CNSS. La caisse ne prend plus alors en charge que les
+        interventions chirurgicales de plus de 50 points et les maladies de longue
+        durée. L'employeur finance le régime pour moitié au moins, et la
+        participation du salarié est limitée à 20 % des frais calculés sur les
+        tarifs officiels.
+      synonymes: [Régime conventionnel de soins]
+    ar:
+      terme: النظام التعاقدي (التغطية الصحية)
+      definition: >
+        تغطية يكفلها المؤجر لعماله وأولي الحق منهم في مجال التأمين على المرض العادي
+        والولادة، في إطار عقد تأمين جماعي أو تعاونية مصادق عليها، تخوّله منذ غرة
+        أكتوبر 1996 تخفيضًا بنقطتين في النسبة الجملية لاشتراك الضمان الاجتماعي. ولا
+        يتكفّل الصندوق القومي للضمان الاجتماعي حينئذ إلا بالعمليات الجراحية التي
+        يتجاوز رقمها المرجعي 50 نقطة وبالأمراض الطويلة. ويساهم المؤجر في تمويل
+        النظام بنسبة النصف على الأقل، ولا تتجاوز مساهمة العامل 20 % من المصاريف
+        المحتسبة حسب التعريفات الرسمية.
+      synonymes: []
+
+  - id: ticket-moderateur
+    acronyme: null
+    statut: valide
+    references: [loi2004-71, decret2007-1367]
+    source_definition: {ref: decret2007-1367, locator: "art. 2"}
+    source_traduction: {ref: decret2007-1367, locator: "art. 2"}
+    voir_aussi: [cnam, assure-social]
+    fr:
+      terme: Ticket modérateur
+      definition: >
+        Part des frais de soins qui reste à la charge du bénéficiaire dans le
+        régime de base d'assurance maladie : l'écart entre le montant dû pour les
+        soins, calculé sur les tarifs conventionnels, et le montant que la CNAM
+        prend en charge (décret n° 2007-1367, art. 2). Dans la filière publique, il
+        est plafonné chaque année.
+      synonymes: []
+    ar:
+      terme: المعلوم التعديلي
+      definition: >
+        جزء المصاريف المحمول على كاهل المنتفع بالخدمات الصحية في النظام القاعدي
+        للتأمين على المرض، ويمثّل الفارق بين المبالغ المستوجبة بعنوان الخدمات الصحية
+        المسداة حسب التعريفات التعاقدية والمبالغ التي يتكفّل بها الصندوق الوطني
+        للتأمين على المرض (الأمر عدد 1367 لسنة 2007، الفصل 2). ويخضع في المنظومة
+        العلاجية العمومية لسقف سنوي.
       synonymes: []
 
   - id: appui-financier-occasionnel
