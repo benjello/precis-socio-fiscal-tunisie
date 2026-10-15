@@ -485,7 +485,7 @@ Financement privé intérieur et ressources extérieures dans la dépense couran
 
 :::
 
-Les **paiements directs** sont les dépenses de santé réglées directement par les ménages. Ils représentent une part de la dépense courante de santé, et non un taux légal de ticket modérateur ou la somme due pour une consultation particulière. Cette part passe de 41,92 % en 2018 à 37,94 % en 2023 ; le montant moyen par habitant passe de 239,0 à 374,4 D courants, mais de **380,2 à 422,2 D de 2025** une fois l'évolution des prix prise en compte.
+Les **paiements directs** sont les dépenses de santé réglées directement par les ménages. Ils représentent une part de la dépense courante de santé, et non un taux légal de ticket modérateur ou la somme due pour une consultation particulière. Cette part passe de 41,92 % en 2018 à 37,94 % en 2023 ; le montant moyen par habitant passe de 239,0 à 374,4 D courants, mais de **380,6 à 422,2 D de 2025** une fois l'évolution des prix prise en compte.
 
 ::: {#tbl-soins-paiements-directs}
 
@@ -495,15 +495,15 @@ Les **paiements directs** sont les dépenses de santé réglées directement par
 
 | Année | Paiements directs / dépense courante de santé (%) | D courants / habitant | D de 2025 / habitant |
 |---|---:|---:|---:|
-| 2018 | 41,92 | 239,0 | 380,2 |
-| 2019 | 35,58 | 222,0 | 330,8 |
+| 2018 | 41,92 | 239,0 | 380,6 |
+| 2019 | 35,58 | 222,0 | 331,0 |
 | 2020 | 33,44 | 235,5 | 332,4 |
-| 2021 | 37,22 | 296,7 | 395,9 |
+| 2021 | 37,22 | 296,7 | 396,1 |
 | 2022 | 36,29 | 311,4 | 383,9 |
 | 2023 | 37,94 | 374,4 | 422,2 |
 
 ::: {.figure-source}
-Source : comptes de santé de l'OMS [@oms-ghed-paiements-directs-tunisie], taux de change Banque mondiale/FMI [@bm-taux-change-officiel-tunisie] et IPC de la BCT [@bct-ra-ipc-sante] ; montants en dinars calculés ici.
+Source : comptes de santé de l'OMS [@oms-ghed-paiements-directs-tunisie], taux de change Banque mondiale/FMI [@bm-taux-change-officiel-tunisie] et indice des prix commun du précis (INS, prolongé par la BCT [@bct-ra-ipc-sante]) ; montants en dinars calculés ici.
 :::
 
 ::: {.callout-note appearance="simple" title="Comment lire ce tableau"}
@@ -512,23 +512,23 @@ Ce sont des **moyennes par habitant**, pas les factures d'un ménage. Les dinars
 
 ### Données
 
-| Année | Part des paiements directs (%) | Dollars courants / habitant | Taux de change moyen (D/USD) | IPC annuel (2015 = 100) | D courants / habitant | D de 2025 / habitant |
+| Année | Part des paiements directs (%) | Dollars courants / habitant | Taux de change moyen (D/USD) | Indice des prix (1970 = 100) | D courants / habitant | D de 2025 / habitant |
 |---|---:|---:|---:|---:|---:|---:|
-| 2018 | 41,92 | 90,29 | 2,6469 | 117,1 | 239,0 | 380,2 |
-| 2019 | 35,58 | 75,64 | 2,9344 | 125,0 | 222,0 | 330,8 |
-| 2020 | 33,44 | 83,74 | 2,8124 | 132,0 | 235,5 | 332,4 |
-| 2021 | 37,22 | 106,16 | 2,7945 | 139,6 | 296,7 | 395,9 |
-| 2022 | 36,29 | 100,33 | 3,1036 | 151,1 | 311,4 | 383,9 |
-| 2023 | 37,94 | 120,54 | 3,1062 | 165,2 | 374,4 | 422,2 |
+| 2018 | 41,92 | 90,29 | 2,6469 | 1 314,2 | 239,0 | 380,6 |
+| 2019 | 35,58 | 75,64 | 2,9344 | 1 403,5 | 222,0 | 331,0 |
+| 2020 | 33,44 | 83,74 | 2,8124 | 1 482,6 | 235,5 | 332,4 |
+| 2021 | 37,22 | 106,16 | 2,7945 | 1 567,2 | 296,7 | 396,1 |
+| 2022 | 36,29 | 100,33 | 3,1036 | 1 697,4 | 311,4 | 383,9 |
+| 2023 | 37,94 | 120,54 | 3,1062 | 1 855,7 | 374,4 | 422,2 |
 
-Calcul sur les valeurs **non arrondies** des séries : `D courants = USD × D/USD` ; `D de 2025 = D courants × 186,3 / IPC annuel`.
+Calcul sur les valeurs **non arrondies** des séries : `D courants = USD × D/USD` ; `D de 2025 = D courants × 2 092,7 / indice de l'année`. L'indice est celui de tous les dinars constants du précis : l'indice général des prix à la consommation familiale de l'INS, base 100 en 1970, prolongé en 2024 et 2025 par la variation de l'indice de base 2015 que relaie la Banque centrale.
 
 ### Sources
 
 ::: {.figure-sources-detail}
 - OMS, *Global Health Expenditure Database*, indicateurs GHED_OOPSCHE_SHA2011 et GHED_OOP_pc_US_SHA2011 [@oms-ghed-paiements-directs-tunisie] : paiements directs en part de la dépense courante de santé et en dollars courants par habitant, 2018-2023.
 - Banque mondiale, série PA.NUS.FCRF, issue des *International Financial Statistics* du FMI [@bm-taux-change-officiel-tunisie] : moyenne annuelle du taux officiel en dinars par dollar.
-- BCT, rapports annuels 2018-2025 [@bct-ra-ipc-sante, rapport 2025, tabl. 2-1, p. 57] : IPC annuel, base 100 en 2015 ; indice de **186,3 en 2025**.
+- Indice des prix commun aux dinars constants du précis : INS, indice général des prix à la consommation familiale, base 100 en 1970, jusqu'en 2023 ; prolongé par la variation de l'indice de base 2015 relayé par la BCT [@bct-ra-ipc-sante, rapport 2025, tabl. 2-1, p. 57] ; **2 092,7 en 2025**.
 :::
 
 :::
