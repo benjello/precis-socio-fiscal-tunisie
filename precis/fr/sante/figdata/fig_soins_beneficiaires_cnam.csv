@@ -1,0 +1,21 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-15
+# séries (tunisia_data) : cnam-beneficiaires-cres-2008-2013, cnam-affilies-filieres-2008-2021
+# sources (citation) : @blel-chahed2014-depenses-cnam, @cnam-indicateurs-globaux-2021
+# fiches : sources/sante-series-depenses.md
+# méthode/hypothèses : Note du CRES qui reprend le rapport du Conseil national de l'assurance maladie sans décrire de méthode. Valeurs du graphe en millions, arrondies à trois décimales ; le texte de la même page donne 6 940 135 bénéficiaires en 2013, « soit 64 % de la population totale ». Lu à l'image (rendu à 150 ppp) et recoupé sur la couche texte. Unité différente de celle des affiliés de la CNAM (cnam-affilies-filieres-2008-2021), qui ne comptent pas les ayants droit : les deux séries ne s'additionnent ni ne se superposent., DEUX RUPTURES DE DÉFINITION. En 2019, la CNAM compte les affiliés ouvrant droit aux soins durant l'année en cours (note * du tableau) : la hausse de la filière publique entre 2018 et 2019 vient de ce changement. En 2010, les étudiants ne sont plus les porteurs de cartes de soins valides mais les inscrits dans l'enseignement supérieur (note **) : de 30 620 à 351 280, ce qui fait l'essentiel de la hausse du total entre 2009 et 2010. Affiliés seulement, sans les ayants droit : à ne pas comparer aux bénéficiaires (cnam-beneficiaires-cres-2008-2013). Droits ouverts et choix de filière, non consultations réalisées. Sous-totaux et total imprimés contrôlés à l'extraction.
+# note : Bénéficiaires de l'assurance maladie selon une note du CRES, 2008-2013, et affiliés de la CNAM, 2008-2021
+Année,"Bénéficiaires, CRES (millions)","Affiliés CNAM, total général",Affiliés des trois filières,Filière publique,Filière privée,Système de remboursement,Salariés à faibles revenus,Étudiants
+2008,6.232,2846362,2676352,2037506,273770,365076,159321,10689
+2009,6.834,2949050,2736505,2060998,280807,394700,181925,30620
+2010,7.006,3340929,2808350,2014052,330345,463953,181299,351280
+2011,7.021,3409254,2874932,1980129,373579,521224,172392,361930
+2012,6.927,3413718,2896723,1906784,419211,570728,159603,357392
+2013,6.94,3447611,2940020,1826160,498513,615347,170198,337393
+2014,,3456681,2981058,1754764,579572,646722,143821,331802
+2015,,3492406,3020512,1738403,598426,683683,149269,322625
+2016,,3555600,3111076,1785451,608463,717162,150038,294486
+2017,,3576901,3139034,1779270,617075,742689,152080,285787
+2018,,3680794,3241757,1818443,629250,794064,163715,275322
+2019,,3990214,3554434,2107719,632902,813813,180546,255234
+2020,,3962839,3525372,2076518,619112,829742,168043,269424
+2021,,4031707,3599265,2102200,623607,873458,162012,270430

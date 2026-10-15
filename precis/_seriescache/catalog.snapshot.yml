@@ -4521,3 +4521,69 @@
     المطبوعة في السنوات الخمس (بفارق ألف دينار واحد سنة 2011 بسبب التقريب). لا تُجمع
     الأعباء والمدفوعات النقدية، ولا توزع الأعباء الفنية بحسب النظام.
   fiche: sources/sante-series-depenses.md
+- id: cnam-beneficiaires-cres-2008-2013
+  titre: 'CRES : bénéficiaires de l''assurance maladie, affiliés et ayants droit,
+    2008-2013'
+  sources:
+  - blel-chahed2014-depenses-cnam
+  build: scripts/extract_sante_depenses.py:beneficiaires_cres
+  raw:
+  - data/raw/caisses/cres/cres_lettre_n5_2014_depenses_cnam.pdf
+  - sources/transcriptions/cnam-beneficiaires-cres-2014.csv
+  output: data/processed/sante/cnam_beneficiaires_cres_2008_2013.csv
+  unite: millions de personnes, valeurs imprimées à trois décimales
+  perimetre: bénéficiaires de l'assurance maladie, c'est-à-dire affiliés et ayants
+    droit, dans les trois filières, le régime des salariés à faibles revenus et celui
+    des étudiants (note 6 de la Lettre) ; graphe 4, p. 3, de La Lettre du CRES n°
+    5, décembre 2014, d'après le rapport du Conseil national de l'assurance maladie
+    de mai 2014
+  caveats: 'Note du CRES qui reprend le rapport du Conseil national de l''assurance
+    maladie sans décrire de méthode. Valeurs du graphe en millions, arrondies à trois
+    décimales ; le texte de la même page donne 6 940 135 bénéficiaires en 2013, «
+    soit 64 % de la population totale ». Lu à l''image (rendu à 150 ppp) et recoupé
+    sur la couche texte. Unité différente de celle des affiliés de la CNAM (cnam-affilies-filieres-2008-2021),
+    qui ne comptent pas les ayants droit : les deux séries ne s''additionnent ni ne
+    se superposent.'
+  titre_ar: 'مركز البحوث والدراسات الاجتماعية: المنتفعون بالتأمين على المرض، المضمونون
+    الاجتماعيون وأولو الحق، 2008-2013'
+  unite_ar: ملايين الأشخاص، قيم منشورة بثلاثة أرقام عشرية
+  perimetre_ar: المنتفعون بالتأمين على المرض، أي المضمونون الاجتماعيون وأولو الحق،
+    في المنظومات الثلاث ونظام الأجراء ذوي الدخل الضعيف ونظام الطلبة؛ الرسم 4، الصفحة
+    3، من رسالة المركز عدد 5، ديسمبر 2014، نقلا عن تقرير المجلس الوطني للتأمين على
+    المرض لماي 2014
+  caveats_ar: مذكرة تنقل تقرير المجلس الوطني للتأمين على المرض دون بيان المنهجية.
+    القيم بالملايين مقربة إلى ثلاثة أرقام عشرية؛ ويذكر النص 6 940 135 منتفعا سنة 2013.
+    وحدة مختلفة عن عدد المضمونين الاجتماعيين الذي لا يشمل أولي الحق، فلا تُجمع السلسلتان.
+  fiche: sources/sante-series-depenses.md
+- id: cnam-affilies-filieres-2008-2021
+  titre: 'CNAM : assurés sociaux par filière de soins, 2008-2021'
+  sources:
+  - cnam-indicateurs-globaux-2021
+  build: scripts/extract_sante_depenses.py:affilies_filieres
+  raw:
+  - data/raw/caisses/cnam/indicateurs_globaux_2021_fr.pdf
+  output: data/processed/sante/cnam_affilies_filieres_2008_2021.csv
+  unite: personnes (affiliés, sans les ayants droit)
+  perimetre: 'tableau « Évolution du nombre d''assurés sociaux par filière de soins
+    : 2008-2021 », p. 4 des indicateurs globaux de la CNAM : filière publique, filière
+    privée, système de remboursement, sous-total des trois modalités, régime des salariés
+    à faibles revenus, étudiants et total général'
+  caveats: 'DEUX RUPTURES DE DÉFINITION. En 2019, la CNAM compte les affiliés ouvrant
+    droit aux soins durant l''année en cours (note * du tableau) : la hausse de la
+    filière publique entre 2018 et 2019 vient de ce changement. En 2010, les étudiants
+    ne sont plus les porteurs de cartes de soins valides mais les inscrits dans l''enseignement
+    supérieur (note **) : de 30 620 à 351 280, ce qui fait l''essentiel de la hausse
+    du total entre 2009 et 2010. Affiliés seulement, sans les ayants droit : à ne
+    pas comparer aux bénéficiaires (cnam-beneficiaires-cres-2008-2013). Droits ouverts
+    et choix de filière, non consultations réalisées. Sous-totaux et total imprimés
+    contrôlés à l''extraction.'
+  titre_ar: 'الصندوق الوطني للتأمين على المرض: المضمونون الاجتماعيون بحسب منظومة العلاج،
+    2008-2021'
+  unite_ar: أشخاص (المضمونون الاجتماعيون دون أولي الحق)
+  perimetre_ar: 'جدول تطور عدد المضمونين الاجتماعيين بحسب منظومة العلاج 2008-2021،
+    الصفحة 4 من المؤشرات العامة للكنام: المنظومة العمومية والمنظومة الخاصة ونظام استرجاع
+    المصاريف، ونظام الأجراء ذوي الدخل الضعيف والطلبة والمجموع العام'
+  caveats_ar: 'قطيعتان في التعريف: منذ 2019 يُحتسب المضمونون المنتفعون بحق العلاج
+    خلال السنة الجارية؛ ومنذ 2010 يُحتسب الطلبة المرسمون في التعليم العالي بدل حاملي
+    بطاقات العلاج السارية. لا يشمل العدد أولي الحق، فلا يُقارن بعدد المنتفعين.'
+  fiche: sources/sante-series-depenses.md

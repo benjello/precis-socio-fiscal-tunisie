@@ -337,45 +337,39 @@ Les comptes de la CNSS de 1990 à 2004 distinguent les soins dans ses polycliniq
 
 ### Les personnes protégées par l'assurance maladie selon une note du CRES, 2008-2013 {#sec-soins-beneficiaires-cnam}
 
-La CNAM compte deux grandeurs différentes : les **affiliés**, assurés sociaux qui ouvrent le droit aux soins, et les **bénéficiaires**, c'est-à-dire les affiliés et leurs [ayants droit](#g-ayant-droit). Le nombre de bénéficiaires de 2008 à 2013 est publié par une note du Centre de recherches et d'études sociales (CRES) de décembre 2014, d'après le rapport du Conseil national de l'assurance maladie de mai 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4]. Il passe de **6,23 millions en 2008 à 7,02 millions en 2011**, puis revient à **6,94 millions en 2013** : 6 940 135 personnes, « soit 64 % de la population », selon la note. Les affiliés que dénombre la CNAM, salariés à faibles revenus et étudiants compris, passent, eux, de 2,85 à 3,45 millions sur la même période (@tbl-soins-effectifs-filieres, onglet « Données ») : ce n'est pas la même unité, et les deux séries ne s'additionnent ni ne se superposent.
+La CNAM compte deux grandeurs différentes : les **affiliés**, assurés sociaux qui ouvrent le droit aux soins, et les **bénéficiaires**, c'est-à-dire les affiliés et leurs [ayants droit](#g-ayant-droit). Le nombre de bénéficiaires de 2008 à 2013 est publié par une note du Centre de recherches et d'études sociales (CRES) de décembre 2014, d'après le rapport du Conseil national de l'assurance maladie de mai 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4]. Il passe de **6,23 millions en 2008 à 7,02 millions en 2011**, puis revient à **6,94 millions en 2013** : 6 940 135 personnes, « soit 64 % de la population », selon la note. Les affiliés que dénombre la CNAM, salariés à faibles revenus et étudiants compris, passent, eux, de 2,85 à 3,45 millions sur la même période (@tbl-soins-effectifs-filieres, onglet « Données ») ; plus de la moitié de cette hausse vient du changement de décompte des étudiants en 2010, qui en ajoute environ 320 000. Ce n'est pas la même unité, et les deux séries ne s'additionnent ni ne se superposent : la @fig-soins-beneficiaires-cnam les montre sur deux panneaux, chacun avec son axe.
 
-::: {#tbl-soins-beneficiaires-cnam}
-
-::: {.panel-tabset}
-
-### Tableau
-
-| Année | Bénéficiaires<br>(millions) |
-|---|---:|
-| 2008 | 6,232 |
-| 2009 | 6,834 |
-| 2010 | 7,006 |
-| 2011 | 7,021 |
-| 2012 | 6,927 |
-| 2013 | 6,940 |
-
-::: {.figure-source}
-Source : CRES, *La Lettre du CRES* n° 5, d'après le rapport du Conseil national de l'assurance maladie de mai 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4].
-:::
-
-::: {.callout-note appearance="simple" title="Comment lire ce tableau"}
-Un **bénéficiaire** est un affilié ou l'un de ses ayants droit, dans les trois filières, parmi les salariés à faibles revenus et parmi les étudiants. Ce n'est pas le nombre d'**affiliés** du [tableau des filières](#tbl-soins-effectifs-filieres), qui ne compte pas les ayants droit.
-:::
-
-### Sources
-
-::: {.figure-sources-detail}
-- Imen Blel et Houda Chahed, « L'évolution des dépenses de la CNAM en assurance maladie », *La Lettre du CRES*, n° 5, décembre 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4 et note 6]. Le graphe imprime la valeur de chaque année, en millions ; le texte donne 6 940 135 bénéficiaires en 2013.
-- La note ne décrit pas sa méthode : elle reprend le rapport du Conseil national de l'assurance maladie de mai 2014, qui porte sur l'exercice 2013.
-:::
-
-:::
-
-Bénéficiaires de l'assurance maladie, affiliés et ayants droit, 2008-2013, selon une note du CRES.
-
-:::
-
-<!-- TODO (rédacteur) : figure à deux panneaux, bénéficiaires 2008-2013 (note du CRES) et affiliés 2008-2021 (CNAM), sans axe commun, une fois la série des bénéficiaires versée dans tunisia-data. -->
+```{python}
+#| label: fig-soins-beneficiaires-cnam
+#| fig-cap: "Bénéficiaires de l'assurance maladie selon une note du CRES, 2008-2013, et affiliés de la CNAM, 2008-2021."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import depenses_sante as ds
+import figtools
+figtools.figure_tabs(
+    ds.fig_effectifs(), ds.table_effectifs(), ds.BENEFICIAIRES, ds.AFFILIES,
+    slug="fig_soins_beneficiaires_cnam",
+    caption="Bénéficiaires de l'assurance maladie selon une note du CRES, 2008-2013, et affiliés de la CNAM, 2008-2021",
+    note_lecture=(
+        "Les deux panneaux ne comptent pas les mêmes personnes. Un **bénéficiaire**, "
+        "en haut, est un affilié ou l'un de ses ayants droit, dans les trois filières, "
+        "parmi les salariés à faibles revenus et parmi les étudiants. Un **affilié**, "
+        "en bas, est l'assuré social qui ouvre le droit aux soins, sans ses ayants "
+        "droit. Chaque panneau a son propre axe, partant de zéro : on lit l'évolution "
+        "de chaque série, pas l'écart entre elles. Les pointillés du bas marquent deux "
+        "changements de décompte de la CNAM : les étudiants inscrits dans "
+        "l'enseignement supérieur à partir de 2010, au lieu des porteurs d'une carte "
+        "de soins valide ; les affiliés ouvrant droit aux soins pendant l'année à "
+        "partir de 2019. Les bénéficiaires viennent du graphe 4 de la note du CRES, "
+        "qui imprime chaque année en millions ; son texte donne 6 940 135 "
+        "bénéficiaires en 2013. La note ne décrit pas sa méthode : elle reprend le "
+        "rapport du Conseil national de l'assurance maladie de mai 2014, qui porte "
+        "sur l'exercice 2013. Chaque point porte sa valeur au survol."
+    ),
+    nominal=False,
+)
+```
 
 **Deux répartitions des filières pour 2013.** La même note répartit les assurés entre filière publique, filière privée et système de remboursement : **75,7 %, 10,41 % et 13,89 % en 2008**, puis **66,4 %, 14,31 % et 19,34 % en 2013**, d'après le rapport du Conseil national [@blel-chahed2014-depenses-cnam, p. 2]. Calculées ici sur les effectifs que publie la CNAM [@cnam-indicateurs-globaux-2021, p. 4], les mêmes parts sont de **76,1 %, 10,2 % et 13,6 % en 2008**, puis de **62,1 %, 17,0 % et 20,9 % en 2013**. Les deux sources concordent en 2008 à quelques dixièmes près ; en 2013, elles s'écartent de plus de quatre points pour la filière publique. Ni l'une ni l'autre n'explique cet écart.
 
