@@ -2638,3 +2638,91 @@
   a_faire:
   - captures des archives du web de pm.gov.tn (21-22 mars 2020) et de social.gov.tn (avril-mai 2020)
   - jouer les termes arabes sur le miroir iort
+
+- id: r-cnrps-cotisation-retraites-1973-2007
+  objet: texte fixant la cotisation des retraités et des veuves de la CNRPS au régime obligatoire de prévoyance (les rapports de la Banque mondiale de 1993 et 2006 donnent 1 % de la pension), entre la loi n° 72-2 (art. 7, al. 2) et le décret n° 2007-1406 ; le décret n° 73-91 ne fixe que 2 % dans son article sur le facultatif (art. 15, al. 5)
+  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses]
+  requetes:
+    titres_fts: ['"73-91"', '"88-186"', '"regime de prevoyance sociale"', '"prestations de prevoyance"']
+    titres_like: ['%prevoyance%']
+    depuis: 1973-03-09
+  periode:
+    jusqu_au: 2007-07-01
+    motif: du décret n° 73-91 à l'entrée en vigueur du régime de base
+  passes:
+  - date: 2026-10-14
+    role: documentaliste
+    sources: [jort_cache, corpus_local, web]
+    couverture: 'jort_cache : FTS « 73-91 » et « 88-186 » → décret n° 73-91, arrêté du 12 mars 1973, décret n° 88-186, arrêtés des 14 mars 1988 et 1er juillet 1989 ; LIKE %prevoyance% 1973-2007 (hors affiliations) → n° 79-509, 84-779, 91-1346, 92-575, 93-1934, 97-60, 98-37, 98-1981, 2002-1601, 2002-2708. Lus à l''image : décret n° 73-91, art. 15 (JORT n° 10 de 1973, p. 356 : cinq alinéas, al. 5 = 2 % retraités) ; décret n° 88-186 (JORT n° 14 de 1988, pp. 284-285 : abroge l''art. 15 al. 3 et 4, contributions par personne à charge, pas l''al. 5). Rapports de la Banque mondiale : 1993 (par. 2.08, « 1% on the pensions ») ; 2006 (p. 27 et tableau 6.1, p. 63). Non lus : décret n° 76-3 et décret n° 89-1890 (organisation de la CNRPS). Miroir iort : non interrogé (corps arabes absents pour 88-186). Note : docs/notes/sante-regimes-avant-2004-2026-10-14.md, § 1.4.'
+    couvert_jusqu_au: 2007-07-01
+    resultat: aucun
+  a_faire:
+  - lire les décrets n° 76-3 et 89-1890 et les lois de finances 1976-2006 (dispositions diverses CNRPS)
+  - rapports annuels de la CNRPS antérieurs à 2007
+  - reporter l'ancre dans precis/fr/cotisations_sociales/_regimes.qmd, qui porte la même réserve
+
+- id: r-cnss-polycliniques-fondation
+  objet: texte créant les polycliniques de la CNSS ou en autorisant la création (avant 1993, six polycliniques « expanded during the 1980s » selon la Banque mondiale), et texte fixant leurs tarifs ou tickets modérateurs avant 2007
+  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses]
+  requetes:
+    titres_fts: [polyclinique, polycliniques, '"action sanitaire"', '"caisse nationale de securite sociale"']
+    titres_like: ['%polycli%']
+    iort_ar: [مصحات الصندوق, المصحات المتعددة, مصحة متعددة, المصحات التابعة للصندوق]
+    depuis: 1960-12-14
+  periode:
+    jusqu_au: 2007-07-01
+    motif: entrée en vigueur du régime de base d'assurance maladie (décret n° 2007-1366), qui change le cadre des soins servis par la CNSS
+  passes:
+  - date: 2026-10-14
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local, web]
+    couverture: 'jort_cache 1956-2006 : FTS « polyclinique(s) » → seul le décret n° 92-2250 (polycliniques de la garde nationale et de la sûreté) ; FTS « caisse nationale de securite sociale » 1960-2004 lu en liste (règlement intérieur de 1965, conventions, prêts, organisation de 2000) ; miroir iort 1960-2004 : termes arabes ci-dessus sans résultat (corps arabes rares avant 2000). Lus : loi n° 60-30, art. 5 (OCR, « action sanitaire et sociale ») et art. 68, 91-95 (image) ; règlement intérieur du 4 octobre 1965 (JORT n° 52, pp. 1286-1304, OCR, art. 4 à l''image) : prestations supplémentaires, pas de polycliniques ; décret n° 2000-1902 (couche texte décodée) : « dépenses d''action sanitaire et sociale » seulement. Non lus : décret n° 2000-1475 (organigramme, annexe hors couche texte), décret n° 61-322 (subventions aux œuvres sociales), décret n° 73-194 (statut du personnel de la CNSS). Rapports de la Banque mondiale : 1993 (pp. 9-10), 2006 (pp. 27, 63), 2008 (pp. 405-407).'
+    couvert_jusqu_au: 2007-07-01
+    resultat: aucun
+  a_faire:
+  - délibérations du conseil d'administration de la CNSS (non publiées au JORT) ; rapports d'activité de la CNSS des années 1980
+  - lire le décret n° 73-194 et l'annexe du décret n° 2000-1475
+
+- id: r-caisses-soins-lourds-etranger
+  objet: textes (conventions, décisions, circulaires) organisant avant 2007 la prise en charge par la CNSS et la CNRPS des soins lourds chez des prestataires conventionnés et des soins à l'étranger, et texte fondant des prestations supplémentaires de la CNRPS
+  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses]
+  requetes:
+    titres_fts: ['"soins etranger"', '"prise en charge"', '"prestations complementaires"']
+    titres_like: ['%prestations supplementaires%', '%soins%etranger%', '%a l''etranger%soins%']
+    iort_ar: [المنافع الإضافية, منافع إضافية, العلاج بالخارج, التداوي بالخارج]
+    depuis: 1960-12-14
+  periode:
+    jusqu_au: 2007-07-01
+    motif: entrée en vigueur du régime de base d'assurance maladie (décret n° 2007-1366), qui reprend les soins des deux caisses
+  passes:
+  - date: 2026-10-14
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local, web]
+    couverture: 'jort_cache 1956-2007 : FTS « soins etranger » → circulaire BCT n° 93-18 et modificatifs 2004-06 et 2006-17 (change, hors sujet) ; FTS « prise en charge » 1973-1993 lu en liste → arrêtés du 1er avril 1982 (soins thermaux) et du 30 mars 1991 (lus), arrêté du 2 avril 1979 (longue maladie, non lu) ; LIKE %prestations supplementaires% sans résultat ; FTS « prestations supplementaires » et « action sanitaire » sans résultat sur la CNRPS. Miroir iort 1960-2004 : termes arabes sans résultat. Lus : règlement intérieur CNSS de 1965, art. 4 et 108-109 (base des prestations supplémentaires, sans liste) ; décret n° 73-91, art. 7 (soins à l''étranger des seuls affiliés en poste hors de Tunisie). Rapports de la Banque mondiale : 1993 (pp. 7, 9), 2006 (p. 28), 2008 (p. 397) ; thèse de 2015 (p. 35 : décision du ministère des affaires sociales). Non lus : décrets n° 76-3 et 89-1890 (organisation de la CNRPS).'
+    couvert_jusqu_au: 2007-07-01
+    resultat: aucun
+  a_faire:
+  - décisions du conseil d'administration de la CNSS et de la CNRPS ; rapports annuels des caisses
+  - lire les décrets n° 76-3 et 89-1890
+  - Ladhari 1990 et Essoussi 1994 (bibliothèques)
+
+- id: r-assurance-groupe-mutuelles-taux
+  objet: 'source primaire ou statistique des taux de cotisation des contrats d''assurance groupe (sources lues : 4 à 7 %) et des mutuelles (« 1 à 7 % »), avant 2004 ; texte du décret du 18 février 1954 sur les sociétés mutualistes'
+  ou: [precis/fr/sante/_couverture.qmd#sec-soins-complementaires]
+  requetes:
+    titres_fts: [mutualiste, mutualistes, mutualite, '"regime complementaire"']
+    titres_like: ['%mutuel%', '%mutual%', '%assurance%groupe%']
+    depuis: 1956-01-01
+  periode:
+    jusqu_au: 2004-08-02
+    motif: jusqu'à la loi n° 2004-71, qui institue les régimes complémentaires facultatifs
+  passes:
+  - date: 2026-10-14
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas, web]
+    couverture: 'jort_cache 1956-2007 : FTS et LIKE ci-dessus → statuts approuvés (1962-1985), arrêté du 17 septembre 1984 (lu, OCR : visa du décret du 18 février 1954 « sur les Sociétés Mutualistes », art. 5 et 9 ; pas de taux), Union nationale des sociétés mutualistes (1993, non lu), mutuelles créées par la loi (77-80, 82-68, 82-69, 89-53, 96-30) ; décret n° 85-847 lu (OCR) : cotisations proposées par le conseil d''administration, pas de taux. Code des assurances (loi n° 92-24, art. 31-32, OCR) : pas de taux. Décret n° 97-1645 : employeur ≥ 50 %, salarié ≤ 20 % des frais. Rapports de la Banque mondiale 2006, versions anglaise (p. 29) et française (p. 39) : 4-7 %, 1996 ; pas de taux pour les mutuelles ; 2008 (tableau 13.10 : 4-7 % et 1-7 %, « adapted from World Bank 2006b », c''est-à-dire la version française de 2006, qui n''a pas le 1-7 %) ; thèse de 2015 (p. 37 : 4-7 % et 1-7 %, d''après l''Ordre des médecins). Web : Ladhari 1990 et Essoussi 1994, aucune version numérique. Le JO tunisien de 1954 n''est pas dans le corpus.'
+    couvert_jusqu_au: 2004-08-02
+    resultat: aucun
+  a_faire:
+  - Ladhari 1990, Essoussi 1994 ; rapports de la Fédération tunisienne des sociétés d'assurances (années 1990) ; sources de travail du tableau 13.10 du chapitre de 2008
+  - JO tunisien de 1954 (mêmes fonds que r-sante-prevoyance-1951-texte)

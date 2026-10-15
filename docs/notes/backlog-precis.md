@@ -1861,8 +1861,8 @@ mesure ni les soins réalisés ni les revenus des médecins.
     l'admission des malades ; document du IXe Plan (1997-2001) ; décision gouvernementale de
     1996 sur l'assurance maladie, si elle existe.
   - **Lisible au corpus, à lire** : arrêtés d'application de la loi n° 81-12 (livrets, liste
-    des longues maladies) ; décrets n° 57-39, 62-350 (contribution de 1962), 93-529 et
-    94-1738 ; texte de la convention de 1973 (forfait annuel, décret n° 74-899) ; branche
+    des longues maladies) ; décrets n° 57-39 et 62-350 (contribution de 1962) — les décrets
+    n° 93-529 et 94-1738 sont repris le 15 octobre 2026 (voir ci-dessous) ; texte de la convention de 1973 (forfait annuel, décret n° 74-899) ; branche
     soins du décret n° 95-1166. Les dates d'effet des lois n° 81-6 et du décret n° 82-1360
     sont reprises des notes de leurs clés, non relues ; le tableau des extensions ne date
     donc que par année.
@@ -1882,6 +1882,45 @@ mesure ni les soins réalisés ni les revenus des médecins.
     la pension sous plafond (Bertrand, *Bulletin économique et social de la Tunisie*, n° 72,
     pp. 70-71). Réserve à rouvrir par le rédacteur du volume, et par le modéliste pour la
     série.
+- **Régimes des caisses avant 2004, écrit le 15 octobre 2026** (branche
+  `chantier/sante-regimes-avant-2004`, non commité ; note `sante-regimes-avant-2004-2026-10-14.md`).
+  - Fait, `_histoire.qmd` : convention CNSS - Santé publique de 1961 et règlement intérieur
+    de 1965 (période 1958-1969) ; loi n° 70-34 et décret n° 74-796, CNRPS de 1976, ascendants
+    de 1979, soins thermaux et tarifs des actes de 1982 (période retitrée « 1970-1986 »,
+    ancre inchangée) ; facultatif de 1988 (colonne ajoutée à `#tbl-soins-prevoyance`, barème
+    `#tbl-soins-facultatif-1988`), tarifs de 1993 et contributions de 1994
+    (`#tbl-soins-assures-hopital`), régime conventionnel de 1996-1997, enfants à charge de
+    1997 ; section nouvelle `#sec-soins-histoire-caisses` (état de 2004, `#tbl-soins-caisses-2004`)
+    et sous-section des rapports de la Banque mondiale `#sec-soins-histoire-bm` ; six lignes
+    ajoutées à `#tbl-soins-histoire`.
+  - Fait, `_couverture.qmd` : `#sec-soins-complementaires` rédigée (contrat de groupe, statuts
+    mutualistes de 1961 et 1984, régime conventionnel, médecine du travail), registre
+    `r-soins-…`, sous-section `#sec-soins-complementaires-etudes` (Banque mondiale 2006 et 2008,
+    thèse de 2015 ; le « 6 à 15 % » n'est repris nulle part).
+  - Quatre fiches nouvelles dans `docs/recherches.yml` : `r-cnrps-cotisation-retraites-1973-2007`,
+    `r-cnss-polycliniques-fondation`, `r-caisses-soins-lourds-etranger`,
+    `r-assurance-groupe-mutuelles-taux`. La passe proposée par la note pour
+    `r-sante-am-preparation-1996-2004` (Banque mondiale 2006, p. 62, note 45) reste à verser.
+  - **À verser (bibliographe)** : arrêté du 30 mars 1991 (soins thermaux, cité dans la ligne de
+    1982 faute de clé) ; lois des mutuelles de corps (n° 77-80, 82-68, 82-69, 89-53, 96-30),
+    décret n° 85-847, arrêté du 7 septembre 1993 (Union nationale des sociétés mutualistes) ;
+    rectificatif de 1965 au règlement intérieur de la CNSS.
+  - **Lisible au corpus, à lire ou à confirmer à l'image** : décret n° 98-409, barème des
+    tarifs réduits payés par les affiliés à partir de 1998 (troisième colonne de
+    `#tbl-soins-assures-hopital`) ; loi n° 60-30, art. 5 ; règlement intérieur, art. 102-109 ; arrêtés du 30 mars 1991 et du
+    17 septembre 1984 ; code des assurances, art. 31-32 ; décrets n° 76-3 et 89-1890
+    (organisation de la CNRPS, OCR inexploitable) ; arrêté du 2 avril 1979 (longue maladie) ;
+    décret n° 91-487.
+  - **À établir** : contenu des statuts types de 1961 et des statuts approuvés (garanties,
+    cotisations), séries d'adhérents et de dépenses des mutuelles et des contrats de groupe ;
+    taux et plafonds du facultatif après 1988 (le tableau de 2004 renvoie au barème de 1988) ;
+    sort du régime conventionnel de 1996-1997 après 2004 ; série du forfait
+    annuel des caisses au ministère de la Santé (lois de finances) ; dinars constants des
+    plafonds de 1988 et des tarifs de 1993-1994.
+  - **À obtenir, hors corpus** : Ladhari (1990), Essoussi (1994) ; décret du 18 février 1954.
+  - **Questions ouvertes à trancher** : ascendants après la loi n° 97-60 (exposé tel quel, sans
+    conclusion) ; report de l'ancre `r-cnrps-cotisation-retraites-1973-2007` dans
+    `cotisations_sociales/_regimes.qmd` (`#sec-cot-pensionnes`).
 - **Intégration bilingue** : `_quarto.yml` et `references.json` tenus dans les deux langues ;
   les références arabes de 1987 à 2021 demandent page et, pour celles dont elle manque,
   URL vérifiée ; les URL arabes des fascicules de 1989, 1991 et de la convention de 2007
