@@ -1874,14 +1874,12 @@ mesure ni les soins réalisés ni les revenus des médecins.
     1987 » de `#sec-nc-aide-medicale` est corrigée (1958, 1981, 1987), avec un renvoi à l'histoire
     du volume santé ; `#sec-caisses-cnr-cps` dit le rôle de la Caisse de prévoyance sociale dans
     l'option de 1972-1973 (carnet de soins, convention à forfait annuel).
-  - **Signalé au volume des cotisations, sans y toucher** : `#sec-cot-pensionnes`
-    (`_regimes.qmd`) écrit qu'avant 2007 « la case est vide » et rattache par hypothèse au
-    facultatif le 2 % sur pension du décret n° 73-91. Or la loi n° 72-2 range les retraités
-    et les veuves pensionnées parmi les bénéficiaires (art. 1er, 6°) et fait précompter leur
-    cotisation sur la pension (art. 7, al. 2) ; et le régime de 1951 prélevait déjà 0,50 % de
-    la pension sous plafond (Bertrand, *Bulletin économique et social de la Tunisie*, n° 72,
-    pp. 70-71). Réserve à rouvrir par le rédacteur du volume, et par le modéliste pour la
-    série.
+  - **Fait le 15 octobre 2026, volume des cotisations** : `#sec-cot-pensionnes` donne les valeurs
+    des textes avant 2007 — 0,50 % de la pension sous le régime de 1951, 2 % au 1er avril 1973
+    (décret n° 73-91, art. 15), retenus par décision de l'auteur ; la série du modèle reste à
+    étendre (backlog-modele.md). **À demander** à la relectrice spécialiste : ce qui s'est
+    appliqué en pratique de 1973 à 2007 (les rapports de la Banque mondiale de 1993 et 2006
+    donnent 1 %, sans texte).
 - **Régimes des caisses avant 2004, écrit le 15 octobre 2026** (branche
   `chantier/sante-regimes-avant-2004`, non commité ; note `sante-regimes-avant-2004-2026-10-14.md`).
   - Fait, `_histoire.qmd` : convention CNSS - Santé publique de 1961 et règlement intérieur

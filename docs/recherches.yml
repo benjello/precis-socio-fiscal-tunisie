@@ -2641,7 +2641,9 @@
 
 - id: r-cnrps-cotisation-retraites-1973-2007
   objet: texte fixant la cotisation des retraités et des veuves de la CNRPS au régime obligatoire de prévoyance (les rapports de la Banque mondiale de 1993 et 2006 donnent 1 % de la pension), entre la loi n° 72-2 (art. 7, al. 2) et le décret n° 2007-1406 ; le décret n° 73-91 ne fixe que 2 % dans son article sur le facultatif (art. 15, al. 5)
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses]
+  ou:
+  - precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses
+  - precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-pensionnes
   requetes:
     titres_fts: ['"73-91"', '"88-186"', '"regime de prevoyance sociale"', '"prestations de prevoyance"']
     titres_like: ['%prevoyance%']
