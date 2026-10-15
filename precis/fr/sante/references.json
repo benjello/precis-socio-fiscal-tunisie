@@ -844,6 +844,47 @@
       "issued": {"date-parts": [[2019, 8]]},
       "URL": "http://www.cres.tn/uploads/tx_wdbiblio/note-dorientation-les-garanties-du-socle-national-de-la-protection-sociale-2019.pdf",
       "note": "citation-key: cres-unicef2019-socle-garanties\nP. 14, tableau 1 : population couverte et non couverte par l'assurance maladie et l'AMG en 2016, d'après l'étude de faisabilité du CRES (avril 2019). Copie archivée dans tunisia-data (data/raw/caisses/cres/, SHA-256 34c090c4…)."
+    },
+    {
+      "id": "ladhari1990-traite-securite-sociale",
+      "type": "book",
+      "title": "Traité de sécurité sociale",
+      "author": [
+        {
+          "family": "Ladhari",
+          "given": "N."
+        }
+      ],
+      "publisher": "Beït al-Hikma",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            1990
+          ]
+        ]
+      },
+      "note": "citation-key: ladhari1990-traite-securite-sociale\nRéférence incomplète, signalée par une relecture (14/10/2026) : prénom de l'auteur (« Noë » dans la relecture), éditeur et date à vérifier ; aucun exemplaire en ligne identifié."
+    },
+    {
+      "id": "essoussi1994-securite-sociale-public",
+      "type": "book",
+      "title": "La sécurité sociale dans le secteur public tunisien",
+      "author": [
+        {
+          "family": "Essoussi",
+          "given": "Kamel"
+        }
+      ],
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            1994
+          ]
+        ]
+      },
+      "note": "citation-key: essoussi1994-securite-sociale-public\nRéférence incomplète, signalée par une relecture (14/10/2026) : éditeur et date à vérifier ; aucun exemplaire en ligne identifié."
     }
   ]
 }
