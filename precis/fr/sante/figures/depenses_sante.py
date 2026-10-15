@@ -251,3 +251,24 @@ def table_effectifs():
         "faibles_revenus": "Salariés à faibles revenus",
         "etudiants": "Étudiants",
     })
+
+
+def tableau_filieres(annees: tuple[int, ...] | None = None, detail: bool = False) -> str:
+    """Tableau Markdown des affiliés par filière, tiré de la série de la CNAM."""
+    a = _serie(AFFILIES, 2008, 2021)
+    if annees is not None:
+        a = a[a.annee.isin(annees)]
+    colonnes = [("filiere_publique", "Filière publique"), ("filiere_privee", "Filière privée"),
+                ("systeme_remboursement", "Remboursement")]
+    if detail:
+        colonnes += [("total_trois_filieres", "Total trois modalités"),
+                     ("faibles_revenus", "Salariés à faibles revenus"),
+                     ("etudiants", "Étudiants"), ("total_general", "Total général CNAM")]
+    else:
+        colonnes.append(("total_trois_filieres", "Ensemble des trois modalités"))
+    lignes = ["| Année | " + " | ".join(t for _, t in colonnes) + " |",
+              "|---|" + "---:|" * len(colonnes)]
+    for _, r in a.iterrows():
+        lignes.append(f"| {int(r.annee)} | "
+                      + " | ".join(_nb(float(r[c]), 0) for c, _ in colonnes) + " |")
+    return "\n".join(lignes) + "\n"

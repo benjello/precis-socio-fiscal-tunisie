@@ -2947,6 +2947,84 @@ entries:
         العلاجية العمومية لسقف سنوي.
       synonymes: []
 
+  - id: filiere-publique
+    acronyme: null
+    statut: valide
+    references: [loi2004-71, decret2007-1367]
+    source_definition: {ref: decret2007-1367, locator: "art. 2"}
+    source_traduction: {ref: decret2007-1367, locator: "art. 2"}
+    voir_aussi: [filiere-privee, systeme-de-remboursement, ticket-moderateur, cnam]
+    fr:
+      terme: Filière publique
+      definition: >
+        Modalité de prise en charge des soins du régime de base d'assurance maladie,
+        fondée sur la coordination des étapes des soins délivrés dans les structures
+        sanitaires publiques du ministère de la Santé, les polycliniques de la
+        sécurité sociale et les autres structures publiques conventionnées avec la
+        CNAM (décret n° 2007-1367, art. 2). L'assuré qui ne choisit pas de modalité y
+        est inscrit d'office avec ses ayants droit (art. 5) ; il y paie un ticket
+        modérateur plafonné chaque année.
+      synonymes: [Filière publique de soins]
+    ar:
+      terme: المنظومة العلاجية العمومية
+      definition: >
+        صيغة تكفل بالخدمات الصحية في النظام القاعدي للتأمين على المرض، تقوم على أساس
+        تنسيق مختلف مراحل العلاج والخدمات المسداة بالهياكل الصحية العمومية الراجعة
+        بالنظر لوزارة الصحة العمومية ومصحات الضمان الاجتماعي والهياكل الصحية العمومية
+        الأخرى المتعاقدة مع الصندوق (الأمر عدد 1367 لسنة 2007، الفصل 2). ويرسم فيها
+        وجوبا المضمون الاجتماعي الذي لم يمارس حق الاختيار وأولو الحق منه (الفصل 5).
+      synonymes: []
+
+  - id: filiere-privee
+    acronyme: null
+    statut: valide
+    references: [loi2004-71, decret2007-1367]
+    source_definition: {ref: decret2007-1367, locator: "art. 2"}
+    source_traduction: {ref: decret2007-1367, locator: "art. 2"}
+    voir_aussi: [filiere-publique, systeme-de-remboursement, ticket-moderateur, cnam]
+    fr:
+      terme: Filière privée
+      definition: >
+        Modalité de prise en charge des soins du régime de base d'assurance maladie,
+        fondée sur la coordination des étapes des soins par un médecin conventionné
+        que l'assuré choisit, le « médecin de famille » (décret n° 2007-1367, art. 2).
+        L'assuré consulte d'abord ce médecin, qui l'oriente au besoin (art. 11) ; la
+        CNAM paie directement les prestataires conventionnés, sauf en médecine
+        dentaire (art. 12).
+      synonymes: [Filière privée de soins]
+    ar:
+      terme: المنظومة العلاجية الخاصة
+      definition: >
+        صيغة تكفل بالخدمات الصحية في النظام القاعدي للتأمين على المرض، تقوم على أساس
+        تنسيق مختلف مراحل العلاج والخدمات الصحية عن طريق طبيب متعاقد يختاره المضمون
+        الاجتماعي ويطلق عليه «طبيب العائلة» (الأمر عدد 1367 لسنة 2007، الفصل 2).
+      synonymes: []
+
+  - id: systeme-de-remboursement
+    acronyme: null
+    statut: valide
+    references: [loi2004-71, decret2007-1367]
+    source_definition: {ref: decret2007-1367, locator: "art. 2"}
+    source_traduction: {ref: decret2007-1367, locator: "art. 2"}
+    voir_aussi: [filiere-publique, filiere-privee, cnam]
+    fr:
+      terme: Système de remboursement
+      definition: >
+        Modalité de prise en charge des soins du régime de base d'assurance maladie :
+        l'assuré se soigne auprès des prestataires conventionnés des secteurs public
+        et privé, paie les frais, puis en obtient le remboursement par la CNAM dans la
+        limite des taux de prise en charge applicables (décret n° 2007-1367, art. 2).
+      synonymes: [Système de remboursement des frais]
+    ar:
+      terme: نظام استرجاع المصاريف
+      definition: >
+        صيغة تكفل بالخدمات الصحية تقوم على تلقي العلاج لدى مختلف مقدمي الخدمات الصحية
+        في القطاعين العمومي والخاص المتعاقدين وتسديد المصاريف المنجرة عنها من قبل
+        المضمون الاجتماعي واسترجاعها لاحقا من الصندوق في حدود نسب التكفل المتعلقة
+        بالخدمات الصحية المسداة بعنوان النظام القاعدي (الأمر عدد 1367 لسنة 2007، الفصل
+        2).
+      synonymes: []
+
   - id: appui-financier-occasionnel
     acronyme: null
     statut: valide

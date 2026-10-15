@@ -1951,7 +1951,9 @@ mesure ni les soins réalisés ni les revenus des médecins.
     `#tbl-soins-beneficiaires-cnam` ; séries `cnam-beneficiaires-cres-2008-2013` et
     `cnam-affilies-filieres-2008-2021` versées dans `tunisia-data` (PR #68), lues dans les PDF
     à couche texte, la première contrôlée à l'image. Le tableau `#tbl-soins-effectifs-filieres`
-    reste fait main sur les mêmes chiffres que la seconde série.
+    est engendré depuis la seconde série (`depenses_sante.tableau_filieres`), avec des
+    chiffres identiques à ceux de l'ancien tableau fait main. Les trois filières du décret
+    n° 2007-1367 (art. 2) sont au glossaire, termes arabes lus dans l'édition arabe.
   - **À obtenir (documentaliste)** : rapports du Conseil national de l'assurance maladie
     (2008-2014), rapports d'activité de la CNAM 2007-2014, rapports des comptes de la santé
     2012-2014 ; comptes nationaux de la santé 2004-2005 de l'INSP (Arfa, Souiden, Achour,

@@ -37,7 +37,7 @@ La [loi](#r-soins-base) ouvre la prise en charge des soins des secteurs public e
 
 ## Trois modalités de prise en charge {#sec-soins-modalites}
 
-Le choix entre filière publique, filière privée et système de remboursement détermine le circuit de soins et de paiement. À défaut de choix, [le décret de 2007](#r-soins-modalites) inscrit l'assuré à la filière publique ; il organise aussi le changement de modalité.
+Le choix entre [filière publique](#g-filiere-publique), [filière privée](#g-filiere-privee) et [système de remboursement](#g-systeme-de-remboursement) détermine le circuit de soins et de paiement. À défaut de choix, [le décret de 2007](#r-soins-modalites) inscrit l'assuré à la filière publique ; il organise aussi le changement de modalité.
 
 | Modalité | Où et comment la dépense est prise en charge | Participation de l'assuré |
 |---|---|---|
@@ -604,13 +604,13 @@ La CNAM dénombre séparément les personnes relevant de la filière publique, d
 
 ### Tableau
 
-| Année | Filière publique | Filière privée | Remboursement | Ensemble des trois modalités |
-|---|---:|---:|---:|---:|
-| 2008 | 2 037 506 | 273 770 | 365 076 | 2 676 352 |
-| 2012 | 1 906 784 | 419 211 | 570 728 | 2 896 723 |
-| 2018 | 1 818 443 | 629 250 | 794 064 | 3 241 757 |
-| 2019 | 2 107 719 | 632 902 | 813 813 | 3 554 434 |
-| 2021 | 2 102 200 | 623 607 | 873 458 | 3 599 265 |
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import depenses_sante as ds
+print(ds.tableau_filieres(annees=(2008, 2012, 2018, 2019, 2021)))
+```
 
 ::: {.figure-source}
 Source : CNAM, indicateurs globaux d'activité [@cnam-indicateurs-globaux-2021, p. 4].
@@ -622,22 +622,11 @@ Source : CNAM, indicateurs globaux d'activité [@cnam-indicateurs-globaux-2021, 
 
 ### Données
 
-| Année | Filière publique | Filière privée | Remboursement | Total trois modalités | Salariés à faibles revenus | Étudiants | Total général CNAM |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 2008 | 2 037 506 | 273 770 | 365 076 | 2 676 352 | 159 321 | 10 689 | 2 846 362 |
-| 2009 | 2 060 998 | 280 807 | 394 700 | 2 736 505 | 181 925 | 30 620 | 2 949 050 |
-| 2010 | 2 014 052 | 330 345 | 463 953 | 2 808 350 | 181 299 | 351 280 | 3 340 929 |
-| 2011 | 1 980 129 | 373 579 | 521 224 | 2 874 932 | 172 392 | 361 930 | 3 409 254 |
-| 2012 | 1 906 784 | 419 211 | 570 728 | 2 896 723 | 159 603 | 357 392 | 3 413 718 |
-| 2013 | 1 826 160 | 498 513 | 615 347 | 2 940 020 | 170 198 | 337 393 | 3 447 611 |
-| 2014 | 1 754 764 | 579 572 | 646 722 | 2 981 058 | 143 821 | 331 802 | 3 456 681 |
-| 2015 | 1 738 403 | 598 426 | 683 683 | 3 020 512 | 149 269 | 322 625 | 3 492 406 |
-| 2016 | 1 785 451 | 608 463 | 717 162 | 3 111 076 | 150 038 | 294 486 | 3 555 600 |
-| 2017 | 1 779 270 | 617 075 | 742 689 | 3 139 034 | 152 080 | 285 787 | 3 576 901 |
-| 2018 | 1 818 443 | 629 250 | 794 064 | 3 241 757 | 163 715 | 275 322 | 3 680 794 |
-| 2019 | 2 107 719 | 632 902 | 813 813 | 3 554 434 | 180 546 | 255 234 | 3 990 214 |
-| 2020 | 2 076 518 | 619 112 | 829 742 | 3 525 372 | 168 043 | 269 424 | 3 962 839 |
-| 2021 | 2 102 200 | 623 607 | 873 458 | 3 599 265 | 162 012 | 270 430 | 4 031 707 |
+```{python}
+#| echo: false
+#| output: asis
+print(ds.tableau_filieres(detail=True))
+```
 
 ### Sources
 

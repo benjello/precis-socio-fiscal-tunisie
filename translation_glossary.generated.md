@@ -156,6 +156,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fait générateur de la TVA | الحدث المنشئ للأداء |  |
 | Fait générateur du droit de consommation | الحدث المتولد عنه المعلوم على الاستهلاك |  |
 | Faute de gestion | خطأ التصرّف |  |
+| Filière privée | المنظومة العلاجية الخاصة |  |
+| Filière publique | المنظومة العلاجية العمومية |  |
 | Flexibilité fiscale | المرونة الجبائية |  |
 | Fonction publique | الوظيفة العمومية |  |
 | Fonctions astreignantes | الوظائف المرهقة |  |
@@ -342,6 +344,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Subvention spécifique | المنحة الخصوصية |  |
 | Surcompensation | الزيادة في تعويض المنح العائلية |  |
 | Suspension du droit de consommation | توقيف العمل بالمعلوم على الاستهلاك |  |
+| Système de remboursement | نظام استرجاع المصاريف |  |
 | Système fiscal de référence | النظام الجبائي المرجعي |  |
 | Tableau A du code de la TVA | الجدول « أ » |  |
 | Tableau annexé à la loi n° 88-62 | الجدول المدرج بملحق القانون عدد 62 لسنة 1988 |  |
