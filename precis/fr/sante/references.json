@@ -730,6 +730,7 @@
         }
       ],
       "genre": "Thèse de doctorat en sciences économiques",
+      "publisher": "Université Paris-Dauphine",
       "issued": {
         "date-parts": [
           [
@@ -740,7 +741,7 @@
         ]
       },
       "URL": "https://theses.hal.science/tel-01300569",
-      "note": "citation-key: ismail-2015-these\nÉtude (thèse, HAL tel-01300569 ; type « report » avec genre « thèse », le convertisseur Zotero ne prenant pas en charge « thesis »). Utilisé : pp. 32-37 (système d'avant 2007 : régimes CNSS et CNRPS, prestations communes dont soins à l'étranger, AMG, assurance groupe 4-7 %, 45 mutuelles, cotisations de 1 à 7 %). Sources déclarées de ces pages : www.Maghrebmed.tn (note 24), Ordre national des médecins (note 30) ; elles sont de seconde main. Établissement de soutenance à relever sur la page de titre. PDF : tunisia-data, data/raw/caisses/sante-avant-2004/ (SHA-256 8fe95b4f…)."
+      "note": "citation-key: ismail-2015-these\nÉtude (thèse, HAL tel-01300569 ; type « report » avec genre « thèse », le convertisseur Zotero ne prenant pas en charge « thesis »). Utilisé : pp. 32-37 (système d'avant 2007 : régimes CNSS et CNRPS, prestations communes dont soins à l'étranger, AMG, assurance groupe 4-7 %, 45 mutuelles, cotisations de 1 à 7 %). Sources déclarées de ces pages : www.Maghrebmed.tn (note 24), Ordre national des médecins (note 30) ; elles sont de seconde main. Thèse soutenue à l'Université Paris-Dauphine. PDF : tunisia-data, data/raw/caisses/sante-avant-2004/ (SHA-256 8fe95b4f…)."
     },
     {
       "id": "loi97-60",
@@ -761,6 +762,88 @@
       },
       "URL": "https://www.pist.tn/jort/1997/1997F/Jo06197.pdf",
       "note": "citation-key: loi97-60\nJORT n° 61 du 1er août 1997, pp. 1359-1360. Art. 1er : remplace l'alinéa c de l'art. 2 de la loi n° 72-2 (enfants mineurs à charge et non assurés ; droit ouvert au-delà de 20 ans pour les enfants infirmes ou atteints de maladie incurable, et pour la fille sans ressources). Art. 2 : effet au 1er mai 1997. Mesure jumelle de la loi n° 97-58 (CNSS). Lu à l'image le 14 octobre 2026."
+    },
+    {
+      "id": "cnam-etats-financiers-2011-2015",
+      "type": "report",
+      "title": "États financiers de la Caisse nationale d'assurance maladie, exercices 2011 à 2015",
+      "author": [{"literal": "Caisse nationale d'assurance maladie"}],
+      "URL": "http://www.cnam.nat.tn/doc/upload/fr_etat_fin_11_15.pdf",
+      "note": "citation-key: cnam-etats-financiers-2011-2015\nDocument scanné, lu à l'image le 15 octobre 2026 : état du résultat p. 3 et flux de trésorerie p. 4, en milliers de dinars, exercices 2011-2015. Produits − charges techniques = marge brute imprimée pour les cinq années. Copie archivée dans tunisia-data (data/raw/caisses/cnam/, SHA-256 2db9a7ee…)."
+    },
+    {
+      "id": "blel-chahed2014-depenses-cnam",
+      "type": "article-journal",
+      "title": "L'évolution des dépenses de la CNAM en assurance maladie",
+      "title-short": "Blel et Chahed, Lettre du CRES n° 5, 2014",
+      "author": [{"family": "Blel", "given": "Imen"}, {"family": "Chahed", "given": "Houda"}],
+      "container-title": "La Lettre du CRES",
+      "issue": "5",
+      "publisher": "Centre de recherches et d'études sociales",
+      "issued": {"date-parts": [[2014, 12]]},
+      "URL": "http://www.cres.tn/uploads/tx_wdbiblio/Lettre__5.pdf",
+      "note": "citation-key: blel-chahed2014-depenses-cnam\nNote d'étude, 4 p., sans méthode déclarée ; relaie les comptes nationaux de santé (2002, 2007), le rapport OASIS 2013, l'OMS (2013), les rapports d'activité de la CNAM et le rapport du Conseil national de l'assurance maladie de mai 2014. P. 3, graphe 4 : bénéficiaires 2008-2013 ; p. 4 : dépenses CNAM par secteur 2007 et 2012. Graphes 1, 2, 5, 6, 7 sans valeurs. Copie archivée dans tunisia-data (data/raw/caisses/cres/, SHA-256 9c3a145c…)."
+    },
+    {
+      "id": "benabdelaziz2018-financement",
+      "type": "article-journal",
+      "title": "Le financement des soins de santé en Tunisie. État actuel des dépenses de soins et perspectives de socialisation, sur le chemin de la couverture santé universelle",
+      "author": [{"family": "Ben Abdelaziz", "given": "Ahmed"}, {"family": "Haj Amor", "given": "Sina"}, {"family": "Ayadi", "given": "Ines"}, {"family": "Khelil", "given": "Mohamed"}, {"family": "Zoghlami", "given": "Chokri"}, {"family": "Ben Abdelfattah", "given": "Sami"}],
+      "container-title": "La Tunisie médicale",
+      "volume": "96",
+      "issue": "10",
+      "page": "789-807",
+      "issued": {"date-parts": [[2018]]},
+      "URL": "https://latunisiemedicale.com/pdf/Vol%2096-10-N27.pdf",
+      "note": "citation-key: benabdelaziz2018-financement\nSynthèse des comptes de la santé 2012-2014 (méthode OMS/SHA, groupe multisectoriel du ministère de la Santé). Tableaux 1-2 p. 794 (DTS, sources de financement), tableau 4 p. 795 (dépenses de la CNAM par secteur et fonction), tableau 8 p. 797 (indicateurs comparés à des seuils fixés par les auteurs). DTS investissement compris. Copie archivée dans tunisia-data (data/raw/caisses/sante-etudes/, SHA-256 23a22da3…)."
+    },
+    {
+      "id": "ismail-zaouali2022-reforme",
+      "type": "article-journal",
+      "title": "Santé et assurance maladie en Tunisie : les enjeux de la réforme de 2004",
+      "author": [{"family": "Ismaïl", "given": "Safa"}, {"family": "Zaouali", "given": "Nejia"}],
+      "container-title": "Eastern Mediterranean Health Journal",
+      "volume": "28",
+      "issue": "6",
+      "page": "444-453",
+      "issued": {"date-parts": [[2022]]},
+      "DOI": "10.26719/emhj.22.040",
+      "URL": "https://applications.emro.who.int/EMHJ/V28/06/1020-3397-2022-2806-444-453-fre.pdf",
+      "note": "citation-key: ismail-zaouali2022-reforme\nÉvaluation qualitative, sans données propres ; chiffres relayés (Banque mondiale, INS 2015, CRES). Copie archivée dans tunisia-data (data/raw/caisses/sante-etudes/, SHA-256 73abe859…)."
+    },
+    {
+      "id": "bencheikh-achour2006-indicateurs",
+      "type": "article-journal",
+      "title": "Les indicateurs de la santé en Tunisie",
+      "author": [{"family": "Ben Cheikh", "given": "S."}, {"family": "Achour", "given": "N."}],
+      "container-title": "Revue tunisienne de biologie clinique",
+      "issue": "19",
+      "page": "6-12",
+      "issued": {"date-parts": [[2006, 10]]},
+      "URL": "https://rtbc.org.tn/ojs/index.php/rtbc/article/download/228/204/482",
+      "note": "citation-key: bencheikh-achour2006-indicateurs\nDossier spécial ; auteurs : ministère de la Santé publique, direction des études et de la planification. Pp. 11-12 : couverture du risque maladie (CNSS, CNRPS, AMG 2005) et financement de la santé en 2004. Copie archivée dans tunisia-data (data/raw/caisses/sante-etudes/, SHA-256 49e4025c…)."
+    },
+    {
+      "id": "cres2015-lettre7-socles",
+      "type": "article-journal",
+      "title": "Les socles nationaux de protection sociale : émergence du concept, meilleures pratiques internationales et pertinence pour la Tunisie",
+      "author": [{"family": "Belhaj Hammada", "given": "Mohamed"}, {"family": "Ben Sassi", "given": "Haythem"}, {"family": "Derouiche", "given": "Amen Allah"}],
+      "container-title": "La Lettre du CRES",
+      "issue": "7",
+      "publisher": "Centre de recherches et d'études sociales",
+      "issued": {"date-parts": [[2015, 12, 31]]},
+      "URL": "http://www.cres.tn/uploads/tx_wdbiblio/lettre_7_du_31_d%C3%A9cembre_2015_01.pdf",
+      "note": "citation-key: cres2015-lettre7-socles\nP. 3 : couverture santé tunisienne (AMG I, AMG II, sécurité sociale), dépense publique de santé 2013, part des ménages 2013 ; chiffres relayés. Titre repris du descriptif de la page « Lettre du CRES » du site. Copie archivée dans tunisia-data (data/raw/caisses/cres/, SHA-256 1c1834b1…)."
+    },
+    {
+      "id": "cres-unicef2019-socle-garanties",
+      "type": "report",
+      "title": "Les garanties du socle national de la protection sociale : faisabilité, coût et financement. Note d'orientation",
+      "author": [{"literal": "Centre de recherches et d'études sociales"}],
+      "publisher": "CRES ; UNICEF",
+      "issued": {"date-parts": [[2019, 8]]},
+      "URL": "http://www.cres.tn/uploads/tx_wdbiblio/note-dorientation-les-garanties-du-socle-national-de-la-protection-sociale-2019.pdf",
+      "note": "citation-key: cres-unicef2019-socle-garanties\nP. 14, tableau 1 : population couverte et non couverte par l'assurance maladie et l'AMG en 2016, d'après l'étude de faisabilité du CRES (avril 2019). Copie archivée dans tunisia-data (data/raw/caisses/cres/, SHA-256 34c090c4…)."
     }
   ]
 }

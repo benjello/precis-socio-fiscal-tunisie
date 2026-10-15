@@ -6,6 +6,7 @@ séparées ; les charges et les décaissements de la CNAM ont des vues distincte
 """
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -18,7 +19,7 @@ import figtools  # noqa: E402
 
 
 BUDGET = "ins-budget-sante-2018-2023"
-CNAM = "cnam-comptes-2016-2021"
+CNAM = "cnam-comptes-2011-2021"
 CRES = "cnam-parts-regimes-cres-2009-2019"
 BLEU, VERT, ORANGE, GRIS = "#08519c", "#1a7f37", "#b45100", "#657487"
 
@@ -119,7 +120,7 @@ def table_budget():
 
 def vues_cnam():
     figtools.apply_lang_font()
-    d = _serie(CNAM, 2016, 2021)
+    d = _serie(CNAM, 2011, 2021)
     annees = d.annee.tolist()
     fig1, (haut, bas) = plt.subplots(2, 1, figsize=(9.3, 6), sharex=True)
     _courbe(haut, annees, d.charges_techniques_milliers / 1000,
@@ -141,9 +142,19 @@ def vues_cnam():
     return [(_lab("vue_cnam_resultat"), fig1), (_lab("vue_cnam_tresorerie"), fig2)]
 
 
+def _edition_cnam(fichier: str) -> str:
+    """Exercices couverts par l'édition, d'après le nom du fichier source."""
+    m = re.search(r"(\d{4})[-_](\d{4})", fichier)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}"
+    m = re.search(r"_(\d{2})_(\d{2})", fichier)
+    assert m, fichier
+    return f"20{m.group(1)}-20{m.group(2)}"
+
+
 def table_cnam():
-    d = _serie(CNAM, 2016, 2021).copy()
-    d["edition"] = d["edition"].str.extract(r"(\d{4}[-_]\d{4})")[0].str.replace("_", "-")
+    d = _serie(CNAM, 2011, 2021).copy()
+    d["edition"] = d["edition"].map(_edition_cnam)
     return d.rename(columns={
         "annee": _lab("annee"),
         "charges_techniques_milliers": "Charges techniques (milliers D)",

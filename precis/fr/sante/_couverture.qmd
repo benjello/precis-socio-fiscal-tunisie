@@ -259,11 +259,11 @@ Cette ligne **n'est pas la dépense totale de santé** : elle ne comprend ni tou
 
 ### Ce que disent les comptes de la CNAM {#sec-sante-cnam-comptes}
 
-Les états financiers de la Caisse nationale d'assurance maladie (CNAM) séparent les **charges techniques** de ses trois régimes, les **charges administratives** et, dans l'état des flux de trésorerie, les **prestations effectivement décaissées**. Les charges techniques passent de **2 074,1 millions de dinars (MD) en 2016 à 2 452,8 MD en 2021**. Ce total couvre l'assurance maladie, les assurances sociales en espèces et les accidents du travail et maladies professionnelles : ce n'est ni la seule dépense de soins ni une ligne du budget du ministère de la Santé.
+Les états financiers de la Caisse nationale d'assurance maladie (CNAM) séparent les **charges techniques** de ses trois régimes, les **charges administratives** et, dans l'état des flux de trésorerie, les **prestations effectivement décaissées**. Les charges techniques passent de **1 510,6 millions de dinars (MD) en 2011 à 2 452,8 MD en 2021**. Ce total couvre l'assurance maladie, les assurances sociales en espèces et les accidents du travail et maladies professionnelles : ce n'est ni la seule dépense de soins ni une ligne du budget du ministère de la Santé.
 
 ```{python}
 #| label: fig-sante-cnam-comptes
-#| fig-cap: "CNAM : charges techniques et administratives du compte de résultat, puis prestations décaissées de la trésorerie, 2016-2021."
+#| fig-cap: "CNAM : charges techniques et administratives du compte de résultat, puis prestations décaissées de la trésorerie, 2011-2021."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -272,7 +272,7 @@ import figtools
 figtools.figure_tabs(
     ds.vues_cnam(), ds.table_cnam(), ds.CNAM,
     slug="fig_sante_cnam_comptes",
-    caption="CNAM : charges techniques et administratives, puis prestations décaissées, tous régimes, 2016-2021",
+    caption="CNAM : charges techniques et administratives, puis prestations décaissées, tous régimes, 2011-2021",
     note_lecture=(
         "La vue « Compte de résultat » montre les **charges techniques** des "
         "trois régimes et les **charges administratives** sur deux axes séparés. "
@@ -280,7 +280,9 @@ figtools.figure_tabs(
         "des sorties de caisse et non un poste à additionner aux charges. "
         "Chaque point porte sa valeur au survol ; les états financiers et "
         "les montants en milliers de dinars sont dans les autres onglets. "
-        "Ces séries ne ventilent pas les soins par prestataire ou nature."
+        "Ces séries ne ventilent pas les soins par prestataire ou nature. "
+        "Les exercices 2011 à 2015 viennent d'une édition antérieure des "
+        "états financiers, sans année commune avec les suivantes."
     ),
 )
 ```
@@ -315,6 +317,14 @@ figtools.figure_tabs(
 )
 ```
 
+**Une autre note du CRES, de décembre 2014, sépare les soins payés par la caisse aux structures publiques et privées.** Rédigée par deux économistes du centre, elle reprend, sans méthode déclarée, les rapports d'activité de la CNAM et le rapport du Conseil national de l'assurance maladie [@blel-chahed2014-depenses-cnam, p. 1]. Les dépenses de la CNAM auprès des structures publiques passent de **452 MD en 2007 à 826 MD en 2012** ; auprès des structures privées, de **175 MD à 708 MD**. La part du privé qu'elle imprime passe de 27,6 % à 45,76 % [@blel-chahed2014-depenses-cnam, p. 4]. La note n'imprime pas les montants des années intermédiaires.
+
+Les montants de 2012 s'accordent avec les comptes de la caisse. Avec une part privée de 45,76 %, les 708 MD du privé impliquent une dépense totale d'environ 1 547 MD, soins à l'étranger compris. La même année, l'étude du CRES de 2023 attribue 89,0 % des dépenses de la CNAM à l'assurance maladie (@fig-sante-cnam-parts-regimes) ; appliqués aux 1 738,8 MD de charges techniques des états financiers de 2012 [@cnam-etats-financiers-2011-2015, p. 3], ils donnent aussi environ 1 547 MD. Ce recoupement, sur une seule année, rend plausible que l'étude de 2023, qui ne publie pas sa méthode, rapporte ses parts aux charges techniques de la caisse ; il ne donne la ventilation par secteur d'aucune autre année.
+
+Les rapports d'activité de la CNAM de 2007 à 2014, d'où viennent ces montants par secteur, ne sont pas identifiés ici : la série par secteur se limite donc à ces deux années.
+
+<!-- RECHERCHE r-sante-cnam-rapports-activite : rapports d'activité et annuaires statistiques de la CNAM, 2007-2014 (voir docs/recherches.yml) -->
+
 ### Les paiements des ménages dans les comptes de santé {#sec-sante-menages}
 
 La [série des paiements directs](#sec-soins-paiements-directs) donne une autre vue de la dépense : la part de la dépense courante de santé réglée directement par les ménages, ainsi qu'un montant moyen par habitant. Elle ne s'ajoute pas au tableau budgétaire ci-dessus : les deux sources ne couvrent ni les mêmes financeurs ni les mêmes opérations. Pour rapprocher les budgets, les comptes de la CNAM et les paiements des ménages, chaque série doit garder sa définition et ses changements de méthode.
@@ -324,6 +334,54 @@ La [série des paiements directs](#sec-soins-paiements-directs) donne une autre 
 ## La longue période : bénéficiaires et dépense de soins {#sec-soins-longue-periode}
 
 Les comptes de la CNSS de 1990 à 2004 distinguent les soins dans ses polycliniques, des versements aux hôpitaux publics et les indemnités en espèces. La [figure des assurances sociales](../caisses/_comptes_longue_periode.html#fig-cnss-assurances-sociales) suit les emplois de cette branche avant la mise en œuvre du régime de base en 2007 ; elle ne mesure pas la dépense totale de soins des ménages ni celle de la CNAM. Pour comparer les voies de prise en charge dans le temps, il faut des séries de personnes couvertes, de soins pris en charge et de dépenses laissées aux ménages dont le périmètre soit explicité, en distinguant les comptes des organismes des études d'incidence. <!-- TODO (documentaliste) : réunir des séries comparables de la CNAM, de l'assistance médicale, des mutuelles et des dépenses des ménages ; documenter leurs périmètres et les méthodes des études avant toute figure commune. -->
+
+### Les personnes protégées par l'assurance maladie selon une note du CRES, 2008-2013 {#sec-soins-beneficiaires-cnam}
+
+La CNAM compte deux grandeurs différentes : les **affiliés**, assurés sociaux qui ouvrent le droit aux soins, et les **bénéficiaires**, c'est-à-dire les affiliés et leurs [ayants droit](#g-ayant-droit). Le nombre de bénéficiaires de 2008 à 2013 est publié par une note du Centre de recherches et d'études sociales (CRES) de décembre 2014, d'après le rapport du Conseil national de l'assurance maladie de mai 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4]. Il passe de **6,23 millions en 2008 à 7,02 millions en 2011**, puis revient à **6,94 millions en 2013** : 6 940 135 personnes, « soit 64 % de la population », selon la note. Les affiliés que dénombre la CNAM, salariés à faibles revenus et étudiants compris, passent, eux, de 2,85 à 3,45 millions sur la même période (@tbl-soins-effectifs-filieres, onglet « Données ») : ce n'est pas la même unité, et les deux séries ne s'additionnent ni ne se superposent.
+
+::: {#tbl-soins-beneficiaires-cnam}
+
+::: {.panel-tabset}
+
+### Tableau
+
+| Année | Bénéficiaires<br>(millions) |
+|---|---:|
+| 2008 | 6,232 |
+| 2009 | 6,834 |
+| 2010 | 7,006 |
+| 2011 | 7,021 |
+| 2012 | 6,927 |
+| 2013 | 6,940 |
+
+::: {.figure-source}
+Source : CRES, *La Lettre du CRES* n° 5, d'après le rapport du Conseil national de l'assurance maladie de mai 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4].
+:::
+
+::: {.callout-note appearance="simple" title="Comment lire ce tableau"}
+Un **bénéficiaire** est un affilié ou l'un de ses ayants droit, dans les trois filières, parmi les salariés à faibles revenus et parmi les étudiants. Ce n'est pas le nombre d'**affiliés** du [tableau des filières](#tbl-soins-effectifs-filieres), qui ne compte pas les ayants droit.
+:::
+
+### Sources
+
+::: {.figure-sources-detail}
+- Imen Blel et Houda Chahed, « L'évolution des dépenses de la CNAM en assurance maladie », *La Lettre du CRES*, n° 5, décembre 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4 et note 6]. Le graphe imprime la valeur de chaque année, en millions ; le texte donne 6 940 135 bénéficiaires en 2013.
+- La note ne décrit pas sa méthode : elle reprend le rapport du Conseil national de l'assurance maladie de mai 2014, qui porte sur l'exercice 2013.
+:::
+
+:::
+
+Bénéficiaires de l'assurance maladie, affiliés et ayants droit, 2008-2013, selon une note du CRES.
+
+:::
+
+<!-- TODO (rédacteur) : figure à deux panneaux, bénéficiaires 2008-2013 (note du CRES) et affiliés 2008-2021 (CNAM), sans axe commun, une fois la série des bénéficiaires versée dans tunisia-data. -->
+
+**Deux répartitions des filières pour 2013.** La même note répartit les assurés entre filière publique, filière privée et système de remboursement : **75,7 %, 10,41 % et 13,89 % en 2008**, puis **66,4 %, 14,31 % et 19,34 % en 2013**, d'après le rapport du Conseil national [@blel-chahed2014-depenses-cnam, p. 2]. Calculées ici sur les effectifs que publie la CNAM [@cnam-indicateurs-globaux-2021, p. 4], les mêmes parts sont de **76,1 %, 10,2 % et 13,6 % en 2008**, puis de **62,1 %, 17,0 % et 20,9 % en 2013**. Les deux sources concordent en 2008 à quelques dixièmes près ; en 2013, elles s'écartent de plus de quatre points pour la filière publique. Ni l'une ni l'autre n'explique cet écart.
+
+Le rapport du Conseil national de l'assurance maladie de mai 2014, et ceux des autres années, ne sont pas identifiés ici : la série des bénéficiaires s'arrête donc en 2013, et l'écart sur les filières ne peut être confronté à sa source.
+
+<!-- RECHERCHE r-sante-conseil-national-am-rapports : rapports annuels du Conseil national de l'assurance maladie, dont celui de mai 2014 (voir docs/recherches.yml) -->
 
 ## Les comptes de la santé et les paiements directs {#sec-soins-paiements-directs}
 
@@ -481,6 +539,67 @@ Paiements directs des ménages par habitant, en dinars courants et en dinars de 
 
 Le montant par habitant est une **moyenne**, non la facture d'un assuré ou d'un ménage. La conversion en dinars est un calcul, pas un relevé direct ; la colonne en dinars de 2025 mesure le pouvoir d'achat par l'IPC moyen annuel, et non les soins réellement obtenus. La série n'établit pas comment la dépense se répartit entre ménages modestes et aisés. Elle ne se confond pas avec les [dépenses du département de la Santé](#sec-sante-budget), qui ne couvrent que le périmètre du ministère. <!-- TODO (documentaliste) : lire les méthodes de calcul des comptes OMS, les enquêtes INS sur les dépenses médicales et leur traitement des remboursements ; ne pas assimiler sans vérification leur agrégat de dépenses médicales au paiement direct net de l'OMS. -->
 
+## Les comptes de la santé du ministère : 2004 et 2012-2014 {#sec-soins-comptes-nationaux}
+
+Les tableaux de l'OMS de ce chapitre commencent en 2018. Pour les années antérieures, la répartition du financement de la santé entre l'État, l'assurance maladie et les ménages se lit aussi dans les comptes de la santé qu'établit le ministère de la Santé. Ces comptes portent sur les **dépenses totales de santé** (DTS) : la dépense courante **plus** l'investissement en bâtiments et équipements. La [série de l'OMS](#sec-soins-paiements-directs), elle, ne retient que la dépense courante. Les deux ne se raccordent donc pas : un écart entre 2014 et 2018 peut tenir au dénominateur autant qu'au financement.
+
+**En 2012-2014**, les comptes de la santé sont calculés par un groupe multisectoriel du pôle d'économie de la santé du ministère, selon la méthode des comptes de la santé de l'OMS, à partir des données des ministères, de la CNAM, des assurances et mutuelles et des enquêtes de l'INS auprès des ménages. Six auteurs, dont deux membres du comité des comptes de la santé et de la CNAM, en publient la synthèse en 2018 [@benabdelaziz2018-financement, p. 789-792]. Les DTS passent de **4 985,2 MD en 2012 à 5 715,5 MD en 2014**, soit de 10 923 à 11 189 MD de 2025. Dans les dépenses courantes, la part financée par les ménages passe de **41,0 % à 38,0 %** ; celle de la CNAM est de 33,9 % en 2012, 36,4 % en 2013 et 33,4 % en 2014 ; celle du ministère de la Santé, de 23,9 % à 25,2 % [@benabdelaziz2018-financement, p. 794, tabl. 2]. Rapportés cette fois aux DTS, les paiements directs des ménages passent de 38,2 % à 36,6 % (@tbl-soins-comptes-nationaux). Selon les auteurs, les DTS représentent « 7,1 % » du PIB chacune des trois années, et les dépenses publiques de santé « 3,87 % », « 4,13 % » et « 4,04 % » [@benabdelaziz2018-financement, p. 794, tabl. 1]. Une note du CRES de décembre 2015 donne pour 2013 la même part des ménages que les paiements directs de ce tableau, 37,5 % [@cres2015-lettre7-socles, p. 3].
+
+::: {#tbl-soins-comptes-nationaux}
+
+::: {.panel-tabset}
+
+### Tableau
+
+| Année | DTS<br>(MD courants) | DTS<br>(MD de 2025) | DTS par habitant<br>(D courants) | DTS par habitant<br>(D de 2025) | Dépenses publiques<br>(% des DTS) | Paiements directs<br>(% des DTS) |
+|---|---:|---:|---:|---:|---:|---:|
+| 2012 | 4 985,2 | 10 923 | 463 | 1 015 | 54,6 | 38,2 |
+| 2013 | 5 362,7 | 11 073 | 493 | 1 018 | 58,2 | 37,5 |
+| 2014 | 5 715,5 | 11 189 | 519 | 1 016 | 57,0 | 36,6 |
+
+::: {.figure-source}
+Source : comptes de la santé 2012-2014 du ministère de la Santé, selon la synthèse de Ben Abdelaziz et al. [@benabdelaziz2018-financement, p. 794, tabl. 1] ; dinars de 2025 calculés ici avec l'indice des prix à la consommation [@ins-annuaire ; @bct-ra-ipc-sante].
+:::
+
+::: {.callout-note appearance="simple" title="Comment lire ce tableau"}
+Les **DTS** comprennent l'investissement : elles ne se comparent pas à la dépense **courante** du [tableau de l'OMS](#tbl-soins-comptes-publics). Les deux dernières colonnes sont des parts des DTS ; la répartition par financeur de l'onglet « Données » porte, elle, sur les dépenses courantes.
+:::
+
+### Données
+
+| Année | Ménages<br>(% des dépenses courantes) | CNAM<br>(% des dépenses courantes) | Ministère de la Santé<br>(% des dépenses courantes) | Autres ministères et assurances privées<br>(% des dépenses courantes) | Sécurité sociale<br>(% des dépenses publiques de santé) | Formation de capital<br>(% des DTS) |
+|---|---:|---:|---:|---:|---:|---:|
+| 2012 | 41,0 | 33,9 | 23,9 | 1,2 | 57,8 | 6 |
+| 2013 | 39,1 | 36,4 | 23,3 | 1,2 | 60,1 | 4 |
+| 2014 | 38,0 | 33,4 | 25,2 | 1,4 | 56,9 | 3,7 |
+
+Dinars de 2025 : montant × IPC(2025) / IPC(année), avec l'indice général des prix à la consommation familiale de l'INS en base 100 en 1970 (955,1 en 2012, 1 013,5 en 2013, 1 069,0 en 2014), prolongé en 2024 et 2025 par la variation de l'indice de base 2015 que relaie la Banque centrale (2 092,7 en 2025).
+
+### Sources
+
+::: {.figure-sources-detail}
+- Ahmed Ben Abdelaziz et al., « Le financement des soins de santé en Tunisie », *La Tunisie médicale*, 2018 [@benabdelaziz2018-financement] : tableau 1 (indicateurs globaux) et tableau 2 (sources de financement des dépenses courantes), p. 794 ; méthode et définitions, p. 791-792. Les auteurs synthétisent les comptes de la santé de 2012 à 2014 calculés par le ministère selon la méthode de l'OMS et validés par sa commission de pilotage.
+- Les deux ratios au PIB du tableau 1 sont cités dans le texte, entre guillemets, et ne sont pas repris dans ce tableau.
+- Le tableau 3 du même article (dépenses courantes par secteur et par fonction, p. 794) ne boucle pas avec le tableau 1 en 2014 : la somme de ses secteurs, rapportée aux DTS, implique une part d'investissement de 0,2 %, contre 3,7 % imprimés.
+- Indice des prix : INS, *Annuaire statistique de la Tunisie* [@ins-annuaire] ; Banque centrale de Tunisie, rapport annuel 2025 [@bct-ra-ipc-sante, rapport 2025, tabl. 2-1, p. 57].
+:::
+
+:::
+
+Dépenses totales de santé et leur financement selon les comptes de la santé du ministère, 2012-2014.
+
+:::
+
+Le même article ventile les dépenses de la CNAM par secteur de soins et par fonction [@benabdelaziz2018-financement, p. 795, tabl. 4]. Les deux moitiés de ce tableau ne donnent pas le même total : 1 736,1 MD par secteur et 1 875,6 MD par fonction en 2012, 1 957,0 et 2 256,4 MD en 2013, 1 835,9 et 2 185,8 MD en 2014, soit un écart de 140 à 350 MD. Ses montants ne sont donc pas repris ici. La part du secteur privé qu'il imprime — 45,95 %, 45,45 % et 46,90 % — se rapporte à la moitié par secteur ; elle ne prolonge pas la série de 2007-2012 de la [note du CRES](#sec-sante-cnam-etude), dont le classement des structures est différent.
+
+Les rapports des comptes de la santé de 2012, 2013 et 2014 ne sont pas identifiés ici : leurs résultats sont ceux que publie la synthèse de 2018.
+
+<!-- RECHERCHE r-sante-comptes-sante-2012-2014 : rapports des comptes de la santé de la Tunisie pour 2012, 2013 et 2014 (voir docs/recherches.yml) -->
+
+**En 2004**, deux agents de la direction des études et de la planification du ministère de la Santé publique décrivent le financement de la santé dans un article de 2006, sans en exposer la méthode, d'après des publications du ministère [@bencheikh-achour2006-indicateurs, p. 12]. Selon eux, le budget de l'État couvre 21,8 % des dépenses de santé en 2004, l'assurance maladie environ 23,3 %, la médecine d'entreprise et du travail environ 1,3 %, et les ménages près de 53,6 % — « sur ces 53.6 %, près de 9 % sont pris en charge par des assurances groupe et des mutuelles ». La part des ménages comprend donc, en 2004, ce que règlent pour eux les assurances de groupe et les mutuelles : elle n'a pas la définition des 41,0 % de 2012 et ne permet pas de mesurer une baisse entre les deux dates. Les auteurs donnent aussi la part de la santé dans le PIB, « 4.2 % en 1985 » et « 5.6 % en 2003 », et une dépense de santé par habitant de 39 D en 1985 et de 197,7 D en 2004, soit environ 283 et 590 D de 2025.
+
+<!-- TODO (documentaliste) : confronter les parts de 2004 aux comptes nationaux de la santé 2004-2005 de l'INSP (Arfa, Souiden, Achour, 2007) et à l'étude de la Banque mondiale de 2006 ; tirer directement de la base de l'OMS les parts 2000-2017 (paiements directs, sécurité sociale) pour relier 2004, 2012-2014 et 2018-2023 dans une seule méthode. Voir docs/notes/sante-series-etudes-2026-10-15.md, § 6.1 et § 9. -->
+
 ## Les personnes inscrites dans chaque filière {#sec-soins-effectifs-filieres}
 
 La CNAM dénombre séparément les personnes relevant de la filière publique, de la filière privée et du système de remboursement. Avant le changement de définition du décompte en 2019, la filière publique passe de **2,04 millions en 2008 à 1,82 million en 2018**, tandis que les deux autres modalités progressent. Cette répartition porte sur les droits ouverts et le choix de filière, **pas sur les consultations effectivement réalisées**.
@@ -618,5 +737,48 @@ Le **budget discrétionnaire** est le budget du ménage après besoins essentiel
 :::
 
 Population exposée à une difficulté financière liée aux dépenses directes de santé, enquêtes 1995-2021, définition OMS de 2025.
+
+:::
+
+## Ce que disent les études sur les effets de la réforme de 2004 {#sec-soins-etudes-reforme}
+
+Deux travaux de la même économiste évaluent la réforme de l'assurance maladie instituée par la [loi du 2 août 2004](#r-soins-base) et mise en œuvre à partir de 2007 : une thèse qui mesure ses effets sur l'accès aux soins et sur le reste à charge des ménages, puis un article qui en fait le bilan qualitatif. Ce sont des études ; leurs chiffres ne se mêlent pas aux comptes et aux effectifs des sections précédentes.
+
+**La thèse de Safa Ismail (université Paris-Dauphine, 2015)** mesure l'effet de la réforme sur l'accès aux soins et sur le **reste à charge**, c'est-à-dire la dépense de santé que le ménage paie lui-même. Elle compare 2005, avant la réforme, et 2010, après, en rapprochant deux enquêtes aux questions différentes : l'enquête nationale de santé de 2005 de l'Institut national de santé publique et l'enquête de l'INS sur le budget, la consommation et le niveau de vie des ménages de 2010 [@ismail-2015-these, p. 113-120]. Le champ est celui des hommes chefs de ménage de 35 à 70 ans affiliés à la CNSS ou à la CNRPS en 2005, à la CNAM en 2010, ou non assurés : 6 214 observations, dont 1 169 malades chroniques ; les bénéficiaires de l'assistance médicale gratuite sont exclus [@ismail-2015-these, p. 116-117, tabl. 3.1]. L'estimation est en **différences de différences** : elle compare l'évolution des assurés entre 2005 et 2010 à celle des non-assurés, à âge, maladie chronique, taille du ménage, milieu, région et dépenses totales donnés ; la filière de 2005, antérieure à la réforme, est imputée d'après celle de 2010 [@ismail-2015-these, p. 118-122].
+
+Pour l'ensemble des assurés, l'effet sur la probabilité d'engager une dépense de santé n'est plus significatif une fois ces caractéristiques prises en compte [@ismail-2015-these, p. 137-142]. Il l'est pour les affiliés de la CNSS : cette probabilité, que l'auteure retient comme mesure de l'accès, augmente de **6,8 points** [@ismail-2015-these, p. 146, tabl. 3.9]. Pour les malades chroniques affiliés à l'une ou l'autre caisse, le reste à charge de ceux qui en ont un baisse d'environ **47 %** (écart de −0,644 sur son logarithme), et la probabilité d'une dépense **catastrophique** — supérieure à 10 % des dépenses totales du ménage — de **23,9 points**, au seuil de significativité de 10 % [@ismail-2015-these, p. 147, tabl. 3.10]. L'auteure appelle à confirmer ces résultats en tenant compte des changements de composition du groupe des non-assurés, qui sert de comparaison, par un appariement ; elle relève aussi que son analyse du choix de filière ne corrige pas les biais tenant à ce que ce choix n'est pas indépendant des caractéristiques du ménage [@ismail-2015-these, p. 151-152].
+
+**Un article de 2022**, de la même auteure et de Nejia Zaouali, propose une « évaluation qualitative » de la réforme, sans données propres : il confronte les objectifs de la réforme aux mesures prises, à partir de chiffres de la CNAM, de l'INS et de la Banque mondiale [@ismail-zaouali2022-reforme, p. 444]. Les auteures relèvent que 17 % de la population reste sans couverture en 2015, et que les paiements directs représentent 39,8 % de la dépense courante de santé en 2015, contre 42,9 % en 2005, selon l'indicateur de la Banque mondiale qu'elles citent [@ismail-zaouali2022-reforme, p. 444 et p. 448, tabl. 1]. Elles concluent que « les mesures prises par la réforme de l'assurance maladie ne semblent pas être efficaces pour atteindre ses objectifs » [@ismail-zaouali2022-reforme, p. 444].
+
+::: {.callout-note appearance="simple" collapse="true" title="Effets estimés de la réforme de 2004 sur l'accès aux soins et le reste à charge : coefficients significatifs de la thèse de 2015, par caisse et par filière, 2005-2010"}
+
+Coefficient du terme croisé « assuré × 2010 », estimation avec variables de contrôle ; groupe de comparaison : les non-assurés. Seuls les coefficients significatifs sont repris ; * : au seuil de 10 %, ** : au seuil de 5 % [@ismail-2015-these, p. 146, tabl. 3.9, et p. 147, tabl. 3.10].
+
+| Population<br>(hommes chefs de ménage) | Grandeur estimée | Coefficient | Lecture |
+|---|---|---:|---|
+| Affiliés de la CNSS | probabilité d'une dépense de santé | +0,068** | +6,8 points |
+| Affiliés de la CNSS | logarithme du reste à charge, dépense nulle comprise | +0,294* | hausse |
+| Filière publique, CNSS et CNRPS | probabilité d'une dépense de santé | +0,058* | +5,8 points |
+| Filière publique, CNSS | probabilité d'une dépense de santé | +0,066* | +6,6 points |
+| Filière publique, CNRPS | reste à charge rapporté aux dépenses non alimentaires | −0,054** | baisse de la part |
+| Filière privée et remboursement, CNSS | logarithme du reste à charge, dépense nulle comprise | +0,393* | hausse |
+| Malades chroniques, CNSS et CNRPS | logarithme du reste à charge, dépense nulle comprise | −0,670* | baisse |
+| Malades chroniques, CNSS et CNRPS | logarithme du reste à charge, dépense positive | −0,644** | baisse d'environ 47 % |
+| Malades chroniques, CNSS et CNRPS | reste à charge rapporté aux dépenses hors santé | −0,088* | baisse de la part |
+| Malades chroniques, CNSS et CNRPS | reste à charge rapporté aux dépenses totales | −0,056** | baisse de la part |
+| Malades chroniques, CNSS et CNRPS | probabilité d'une dépense catastrophique (plus de 10 % des dépenses totales) | −0,239* | −23,9 points |
+| Malades chroniques, CNSS | logarithme du reste à charge, dépense positive | −0,621** | baisse d'environ 46 % |
+| Malades chroniques, CNSS | reste à charge rapporté aux dépenses hors santé | −0,096* | baisse de la part |
+| Malades chroniques, CNSS | reste à charge rapporté aux dépenses totales | −0,059** | baisse de la part |
+| Malades chroniques, CNSS | probabilité d'une dépense catastrophique (plus de 10 % des dépenses totales) | −0,296** | −29,6 points |
+| Malades chroniques, CNRPS | logarithme du reste à charge, dépense nulle comprise | −0,904** | baisse |
+| Malades chroniques, CNRPS | logarithme du reste à charge, dépense positive | −0,731** | baisse d'environ 52 % |
+| Malades chroniques, CNRPS | reste à charge rapporté aux dépenses totales | −0,053* | baisse de la part |
+
+**Lecture.** Une probabilité se lit en points : +0,068 est une hausse de 6,8 points. Pour le reste à charge des seuls ménages qui en ont un, un écart de logarithme *c* correspond à une variation de exp(*c*) − 1 : −0,644 est une baisse d'environ 47 %. Quand les dépenses nulles sont comprises, cette conversion en pourcentage ne vaut pas : seul le sens est donné. L'auteure ne précise pas si les parts du reste à charge sont exprimées en fraction ou en pourcentage ; seul leur sens est donc donné. Le reste à charge est mesuré en dinars constants de 2010.
+
+**Champ et données.** Enquête nationale de santé de 2005 (Institut national de santé publique, 6 491 adultes de 35 à 70 ans) et enquête de l'INS sur le budget, la consommation et le niveau de vie des ménages de 2010 (11 281 ménages) ; 2 590 hommes chefs de ménage en 2005 et 3 624 en 2010 [@ismail-2015-these, p. 113-117]. Pour les malades chroniques, l'auteure ne distingue pas les filières, faute d'effectifs suffisants [@ismail-2015-these, p. 145].
+
+**Autres résultats de l'auteure.** Le choix de la filière privée ou du système de remboursement est plus fréquent chez les ménages plus aisés, plus instruits et urbains ; à caractéristiques données, ce sont les ménages les plus aisés qui supportent le plus de dépenses catastrophiques, à l'inverse d'une étude antérieure qu'elle cite [@ismail-2015-these, p. 148-150].
 
 :::
