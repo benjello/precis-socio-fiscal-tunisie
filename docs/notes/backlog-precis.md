@@ -1797,7 +1797,7 @@ le rendu autonome du précis. Le document local, déjà catalogué dans `tunisia
 est détaillé dans `sante-cnam-filiere-medecins-2026-10-12.md`. **À obtenir** :
 consultations réalisées par filière, répartition territoriale des praticiens,
 nombre de bénéficiaires après 2013 (2008-2013 publiés par la *Lettre du CRES* n° 5,
-`#tbl-soins-beneficiaires-cnam`), remboursements par type
+`#fig-soins-beneficiaires-cnam`), remboursements par type
 de soin et leurs séries postérieures à 2021. Le nombre de conventionnés ne
 mesure ni les soins réalisés ni les revenus des médecins.
 
@@ -1945,9 +1945,15 @@ mesure ni les soins réalisés ni les revenus des médecins.
     (passe JORT du 15 octobre : le décret n° 2005-2192, art. 7, prévoit un rapport annuel
     transmis au Premier ministre, sans publication), `r-sante-cnam-rapports-activite`,
     `r-sante-comptes-sante-2012-2014`.
-  - **À faire (rédacteur)** : figure à deux panneaux, bénéficiaires 2008-2013 et affiliés
-    2008-2021, après versement de la série des bénéficiaires dans `tunisia-data`
-    (TODO dans `#sec-soins-beneficiaires-cnam`).
+  - Fait le 15 octobre 2026 : `#fig-soins-beneficiaires-cnam`, figure à deux panneaux
+    (bénéficiaires 2008-2013 selon le CRES, affiliés 2008-2021 selon la CNAM, chacun avec son
+    axe, ruptures de 2010 et 2019 marquées), qui remplace le tableau fait main
+    `#tbl-soins-beneficiaires-cnam` ; séries `cnam-beneficiaires-cres-2008-2013` et
+    `cnam-affilies-filieres-2008-2021` versées dans `tunisia-data` (PR #68), lues dans les PDF
+    à couche texte, la première contrôlée à l'image. Le tableau `#tbl-soins-effectifs-filieres`
+    est engendré depuis la seconde série (`depenses_sante.tableau_filieres`), avec des
+    chiffres identiques à ceux de l'ancien tableau fait main. Les trois filières du décret
+    n° 2007-1367 (art. 2) sont au glossaire, termes arabes lus dans l'édition arabe.
   - **À obtenir (documentaliste)** : rapports du Conseil national de l'assurance maladie
     (2008-2014), rapports d'activité de la CNAM 2007-2014, rapports des comptes de la santé
     2012-2014 ; comptes nationaux de la santé 2004-2005 de l'INSP (Arfa, Souiden, Achour,

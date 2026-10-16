@@ -56,6 +56,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Calendrier d'application de la TVA | روزنامة تطبيق الأداء على القيمة المضافة |  |
 | Capacité d'emprunt | طاقة التداين |  |
 | Capital-décès | رأس مال الوفاة |  |
+| Carnet de soins familial | دفتر عائلي للمعالجة |  |
+| Carte de soins | بطاقة العلاج |  |
 | Carte de soins à tarifs réduits | بطاقة العلاج بالتعريفة المنخفضة | AMG2 |
 | Carte de soins gratuits | بطاقة العلاج المجاني | AMG1 |
 | Catégorie de grade | صنف الرتبة |  |
@@ -97,6 +99,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Contribution au fonds de promotion du logement pour les salariés | المساهمة الراجعة لصندوق النهوض بالمسكن لفائدة الأجراء | FOPROLOS |
 | Contribution au profit du Fonds national d'amélioration de l'habitat | المساهمة لفائدة الصندوق الوطني لتحسين السكن |  |
 | Contribution aux frais de crèche | المساهمة في مصاريف رياض الأطفال |  |
+| Contribution aux frais de soins et d'hospitalisation | المساهمة في تغطية مصاريف العلاج والإقامة |  |
 | Contribution personnelle d'État | الضريبة الشخصية للدولة | CPE |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
 | Contrôleur d'État | مراقب الدولة |  |
@@ -153,6 +156,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fait générateur de la TVA | الحدث المنشئ للأداء |  |
 | Fait générateur du droit de consommation | الحدث المتولد عنه المعلوم على الاستهلاك |  |
 | Faute de gestion | خطأ التصرّف |  |
+| Filière privée | المنظومة العلاجية الخاصة |  |
+| Filière publique | المنظومة العلاجية العمومية |  |
 | Flexibilité fiscale | المرونة الجبائية |  |
 | Fonction publique | الوظيفة العمومية |  |
 | Fonctions astreignantes | الوظائف المرهقة |  |
@@ -199,6 +204,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Libre administration | التدبير الحر |  |
 | Limite de calcul des prestations | الحدّ الأقصى لاحتساب المنافع |  |
 | Livraison à soi-même | التسليم للنفس |  |
+| Livret de soins | دفتر العلاج |  |
 | Louage | اللواج |  |
 | Magistrat | القاضي |  |
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |
@@ -260,12 +266,14 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Redevance de compensation | أتاوة الدعم |  |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
 | Régime complémentaire | النظام التكميلي |  |
+| Régime conventionnel d'entreprise | النظام التعاقدي (التغطية الصحية) |  |
 | Régime conventionnel de retraite | النظام التعاقدي |  |
 | Régime conventionnel public | النظام الاتفاقي العمومي |  |
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |
 | Régime de prévoyance | نظام الحيطة |  |
 | Régime de sécurité sociale des travailleuses agricoles | نظام الضمان الاجتماعي للعاملات الفلاحيات |  |
 | Régime des artistes, créateurs et intellectuels | نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين |  |
+| Régime des prestations en nature | نظام التعويضات العينية |  |
 | Régime des salariés agricoles | نظام الأجراء الفلاحيين | RSA |
 | Régime des salariés non agricoles | نظام الأجراء غير الفلاحيين | RSNA |
 | Régime des travailleurs à faibles revenus | نظام العملة ذوي الدخل المحدود |  |
@@ -336,12 +344,14 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Subvention spécifique | المنحة الخصوصية |  |
 | Surcompensation | الزيادة في تعويض المنح العائلية |  |
 | Suspension du droit de consommation | توقيف العمل بالمعلوم على الاستهلاك |  |
+| Système de remboursement | نظام استرجاع المصاريف |  |
 | Système fiscal de référence | النظام الجبائي المرجعي |  |
 | Tableau A du code de la TVA | الجدول « أ » |  |
 | Tableau annexé à la loi n° 88-62 | الجدول المدرج بملحق القانون عدد 62 لسنة 1988 |  |
 | Tableau B bis du code de la TVA | الجدول « ب مكرر » |  |
 | Tableau B du code de la TVA | الجدول « ب » |  |
 | Tableau C du code de la TVA | الجدول « ج » |  |
+| Tarif de responsabilité | تعريفة الكفالة |  |
 | Taux ad valorem | نسبة من القيمة |  |
 | Taux d'autonomie financière | نسبة الاستقلالية المالية |  |
 | Taux de couverture de la négociation collective | نسبة تغطية المفاوضة الجماعية |  |
@@ -370,6 +380,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taxe unique de compensation de transports routiers | المعلوم الوحيد التعويضي على النقل بالطرقات |  |
 | Taxe unique de compensation sur les produits pétroliers | المعلوم الوحيد التعويضي على منتوجات النفط |  |
 | Territorialité de la TVA | مبدأ الإقليمية |  |
+| Ticket modérateur | المعلوم التعديلي |  |
 | Traitement de base | المرتب الأساسي |  |
 | Tranche | شريحة |  |
 | Transfert financier | التحويلات المالية |  |

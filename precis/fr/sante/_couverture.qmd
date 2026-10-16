@@ -17,7 +17,7 @@ L'affiliation et l'assistance ouvrent des droits distincts. Une dépense de soin
 
 - **Une affiliation ne dit pas tout.** La [matrice des régimes](../prestations_sociales/_matrice.html#tbl-matrice-regimes) distingue le droit aux soins de l'entrée dans le régime de base de la CNAM. L'assuré et ses ayants droit ne sont couverts que selon le texte applicable à leur régime.
 - **La filière change la manière de payer.** La filière publique, la filière privée et le système de remboursement sont les trois modalités de prise en charge prévues par le décret de 2007 ; elles n'ouvrent pas trois assurances différentes (@sec-soins-modalites).
-- **Le coût pour le ménage dépend du soin.** Le ticket modérateur de la filière publique, le taux pris en charge pour un soin ambulatoire et le plafond annuel ne sont pas une même règle (@sec-soins-cout).
+- **Le coût pour le ménage dépend du soin.** Le [ticket modérateur](#g-ticket-moderateur) de la filière publique, le taux pris en charge pour un soin ambulatoire et le plafond annuel ne sont pas une même règle (@sec-soins-cout).
 
 ## L'assurance maladie de base : de la loi de 2004 à sa mise en œuvre {#sec-soins-base}
 
@@ -37,12 +37,12 @@ La [loi](#r-soins-base) ouvre la prise en charge des soins des secteurs public e
 
 ## Trois modalités de prise en charge {#sec-soins-modalites}
 
-Le choix entre filière publique, filière privée et système de remboursement détermine le circuit de soins et de paiement. À défaut de choix, [le décret de 2007](#r-soins-modalites) inscrit l'assuré à la filière publique ; il organise aussi le changement de modalité.
+Le choix entre [filière publique](#g-filiere-publique), [filière privée](#g-filiere-privee) et [système de remboursement](#g-systeme-de-remboursement) détermine le circuit de soins et de paiement. À défaut de choix, [le décret de 2007](#r-soins-modalites) inscrit l'assuré à la filière publique ; il organise aussi le changement de modalité.
 
 | Modalité | Où et comment la dépense est prise en charge | Participation de l'assuré |
 |---|---|---|
 | Filière publique | soins dans les structures publiques | ticket modérateur fondé sur les tarifs réduits des soins, soumis à un plafond annuel |
-| Filière privée | soins selon le circuit du tiers payant | part non prise en charge selon la nature du soin |
+| Filière privée | recours préalable au médecin de famille choisi, qui oriente au besoin vers les autres prestataires ; la caisse paie directement les prestataires conventionnés (tiers payant), sauf en médecine dentaire | part non prise en charge selon la nature du soin |
 | Système de remboursement | l'assuré paie, puis demande la prise en charge | mêmes taux de prise en charge des soins ambulatoires que dans la filière privée |
 
 : Les trois modalités du régime de base instituées par le décret n° 2007-1367 {#tbl-soins-modalites}
@@ -55,7 +55,7 @@ Dans les structures publiques, le patient acquitte un ticket modérateur calcul�
 
 ### La filière privée et le système de remboursement {#sec-soins-filiere-privee}
 
-La filière privée fonctionne par tiers payant ; le système de remboursement suppose que l'assuré avance les frais avant d'en demander la prise en charge. [Les taux de prise en charge des soins ambulatoires](#r-soins-modalites) sont communs à ces deux modalités. Les taux datés figurent au [tableau des soins ambulatoires](../prestations_sociales/_autres_risques.html#tbl-ar-am-taux) : [les actes de médecine dentaire](#r-soins-dentaire) changent de taux en 2021, les autres catégories du tableau conservent alors les taux de 2007. <!-- TODO (documentaliste) : relire à l'image les décrets n° 2007-1367 et 2021-318, et rechercher les changements postérieurs avant de présenter les taux de 2021 comme l'état du droit actuel. -->
+Dans la filière privée, l'assuré s'engage à consulter d'abord le médecin de famille qu'il a choisi, qui l'oriente au besoin vers d'autres prestataires, dont il garde le libre choix ; [la caisse](#r-soins-modalites) paie directement les prestataires conventionnés, et l'assuré ne leur règle que le ticket modérateur — sauf en médecine dentaire, où il avance les frais et se fait rembourser. Les affections lourdes ou chroniques ne sont prises en charge directement qu'une fois la caisse informée du médecin traitant choisi. Le système de remboursement, lui, suppose que l'assuré avance les frais avant d'en demander la prise en charge. [Les taux de prise en charge des soins ambulatoires](#r-soins-modalites) sont communs à ces deux modalités. Les taux datés figurent au [tableau des soins ambulatoires](../prestations_sociales/_autres_risques.html#tbl-ar-am-taux) : [les actes de médecine dentaire](#r-soins-dentaire) changent de taux en 2021, les autres catégories du tableau conservent alors les taux de 2007. <!-- TODO (documentaliste) : relire à l'image les décrets n° 2007-1367 et 2021-318, et rechercher les changements postérieurs avant de présenter les taux de 2021 comme l'état du droit actuel. -->
 
 ## Le coût restant à la charge de l'assuré {#sec-soins-cout}
 
@@ -65,7 +65,7 @@ Trois limites différentes déterminent la dépense du ménage : dans la filièr
 
 | Date | Texte et article | Changement concret | Portée |
 |---|---|---|---|
-| []{#r-soins-modalites}1^er^ juillet 2007 | décret n° 2007-1367 [@decret2007-1367, art. 4-20, p. 1983-1988] | choix entre filière publique, filière privée et remboursement ; inscription dans la filière publique à défaut de choix ; ticket modérateur plafonné pour celle-ci ; tiers payant et taux de prise en charge pour les autres | mise en œuvre du régime de base de 2004 |
+| []{#r-soins-modalites}1^er^ juillet 2007 | décret n° 2007-1367 [@decret2007-1367, art. 4-20, p. 1983-1988] | choix entre filière publique, filière privée et remboursement ; inscription dans la filière publique à défaut de choix ; ticket modérateur plafonné pour celle-ci ; filière privée : recours préalable au médecin de famille (art. 11) et paiement direct des prestataires conventionnés, hors médecine dentaire (art. 12) ; taux de prise en charge des soins ambulatoires pour la filière privée et le remboursement | mise en œuvre du régime de base de 2004 |
 | []{#r-soins-plafond}1^er^ juillet 2008 | arrêté du 3 juin 2008 [@arrete-2008-06-03-plafond-soins-ambulatoires, art. 2-7] | fixe le plafond annuel des montants pris en charge selon les personnes à charge et les dépenses hors plafond | étape propre aux soins ambulatoires |
 | []{#r-soins-dentaire}16 mai 2021 | décret gouvernemental n° 2021-318 [@decret2021-318, art. 1] | modifie les taux de prise en charge des actes de médecine dentaire dans la filière privée et le système de remboursement | ajustement |
 
@@ -75,7 +75,7 @@ Trois limites différentes déterminent la dépense du ménage : dans la filièr
 
 Le droit aux soins d'une personne affiliée ne prouve pas, à lui seul, son entrée dans le régime de base de la CNAM. [La loi de 2002](#r-soins-bas-revenus) ouvre des prestations de soins aux travailleurs de certaines catégories à faibles revenus, servies par la CNSS ; cette catégorie n'est pas dans la liste du décret d'entrée de 2007. La [matrice des régimes](../prestations_sociales/_matrice.html#sec-matrice-regimes) conserve cette distinction et la fiche de recherche sur son éventuelle extension.
 
-La carte de soins à tarifs réduits, réservée aux personnes qui ne sont pas affiliées à un régime de sécurité sociale, a servi à désigner une partie des bénéficiaires des [aides exceptionnelles de 2020](../prestations_sociales/_non_contributives.html#sec-nc-aide-2020) et de [2021](../prestations_sociales/_non_contributives.html#sec-nc-aide-2021) ; en 2021, les salariés et les travailleurs indépendants affiliés dont le salaire déclaré ne dépasse pas 300 dinars par mois forment une catégorie distincte de ces aides.
+La [carte de soins à tarifs réduits](#g-amg2), réservée aux personnes qui ne sont pas affiliées à un régime de sécurité sociale, a servi à désigner une partie des bénéficiaires des [aides exceptionnelles de 2020](../prestations_sociales/_non_contributives.html#sec-nc-aide-2020) et de [2021](../prestations_sociales/_non_contributives.html#sec-nc-aide-2021) ; en 2021, les salariés et les travailleurs indépendants affiliés dont le salaire déclaré ne dépasse pas 300 dinars par mois forment une catégorie distincte de ces aides.
 
 :::: {.chronologie-repliable titre="Travailleurs à faibles revenus : droit aux soins de 2002 et catégories entrées dans l'assurance maladie en 2007"}
 
@@ -88,7 +88,7 @@ La carte de soins à tarifs réduits, réservée aux personnes qui ne sont pas a
 
 ## Les soins ouverts par l'assistance {#sec-soins-assistance}
 
-Les familles admises à l'assistance accèdent aux soins publics par un titre distinct de l'assurance maladie : livrets à partir de 1988, cartes de soins gratuits ou à tarifs réduits depuis 1998, puis support électronique associé à l'Amen social depuis 2022. Les deux cartes de 1998 appliquent [la loi sanitaire de 1991](#r-soins-1991) : la carte de soins gratuits, son article 35, qui accorde la gratuité des soins et de l'hospitalisation à « tout tunisien indigent », à son conjoint et à ses enfants à charge ; la carte de soins à tarifs réduits, son article 36, qui renvoie à un décret les catégories admises aux tarifs réduits et ces tarifs ([décrets de 1998](#r-soins-1998)). L'histoire des conditions de ressources, des catégories et des tarifs est au [chapitre de l'assistance](../prestations_sociales/_non_contributives.html#sec-nc-aide-medicale). La [frontière entre affiliation et assistance](../prestations_sociales/_matrice.html#sec-matrice-frontiere) dépend de la prestation : on ne peut déduire du seul fait d'être affilié une exclusion générale de toutes les aides médicales.
+Les familles admises à l'assistance accèdent aux soins publics par un titre distinct de l'assurance maladie : livrets à partir de 1988, cartes de soins gratuits ou à tarifs réduits depuis 1998, puis support électronique associé à l'Amen social depuis 2022. Les deux cartes de 1998 appliquent [la loi sanitaire de 1991](#r-soins-1991) : la [carte de soins gratuits](#g-amg1), son article 35, qui accorde la gratuité des soins et de l'hospitalisation à « tout tunisien indigent », à son conjoint et à ses enfants à charge ; la carte de soins à tarifs réduits, son article 36, qui renvoie à un décret les catégories admises aux tarifs réduits et ces tarifs ([décrets de 1998](#r-soins-1998)). L'histoire des conditions de ressources, des catégories et des tarifs est au [chapitre de l'assistance](../prestations_sociales/_non_contributives.html#sec-nc-aide-medicale). La [frontière entre affiliation et assistance](../prestations_sociales/_matrice.html#sec-matrice-frontiere) dépend de la prestation : on ne peut déduire du seul fait d'être affilié une exclusion générale de toutes les aides médicales.
 
 :::: {.chronologie-repliable titre="Cartes de soins de l'assistance : loi sanitaire de 1991 et décrets de 1998"}
 
@@ -105,7 +105,7 @@ Une couverture complémentaire prend en charge tout ou partie de ce que le régi
 
 - **Le contrat d'assurance de groupe.** Pratiqué dès avant l'indépendance [@bertrand-1953-securite-sociale-1, p. 65-70], il est défini par [le code des assurances de 1992](#r-soins-assurance-groupe) : c'est le contrat qu'une personne morale ou un chef d'entreprise souscrit pour un ensemble de personnes liées à lui de la même manière — ses salariés, par exemple — contre les risques de maladie, de maternité et d'atteinte à l'intégrité physique. L'adhérent ne peut en être exclu que s'il rompt ce lien ou ne paie pas sa prime, et il reçoit une notice des garanties. Les articles du code consacrés à ce contrat ne fixent pas de taux de prime.
 - **Les sociétés mutualistes.** Leurs statuts suivent des statuts types fixés [en 1961](#r-soins-mutualite) et modifiés [en 1984](#r-soins-mutualite-1984), qui imposent une assemblée générale de délégués élus aux mutuelles de plus de 500 adhérents et à celles dont une partie des membres réside hors du gouvernorat du siège. Ces statuts visent un décret du 18 février 1954 sur les sociétés mutualistes, connu ici par son seul intitulé. Aucun taux de cotisation commun aux mutuelles n'est fixé par un texte identifié ici. <!-- RECHERCHE r-assurance-groupe-mutuelles-taux : source des taux de cotisation des contrats de groupe et des mutuelles avant 2004, et texte du décret du 18 février 1954 (voir docs/recherches.yml) --> <!-- TODO (documentaliste) : relever le contenu des statuts types du 26 mai 1961 (garanties, cotisations) et des statuts approuvés, puis constituer les séries d'adhérents et de dépenses des mutuelles et des contrats de groupe avant d'en décrire les garanties. -->
-- **Le régime conventionnel d'entreprise (depuis 1996).** Un contrat de groupe ou une mutuelle approuvée peut [se substituer en partie à la CNSS](#r-soins-conventionnel) : l'employeur qui couvre ainsi la maladie ordinaire et l'accouchement de ses salariés et de leurs ayants droit cotise deux points de moins, et la caisse ne garde que les interventions chirurgicales de plus de 50 points et les maladies de longue durée. L'employeur finance au moins la moitié du régime, et le salarié n'y supporte pas plus de 20 % des frais calculés sur les tarifs officiels. Avant 2004, c'est la seule règle chiffrée imposée à ces couvertures qui soit identifiée ici. <!-- TODO (documentaliste) : établir le sort du régime conventionnel de 1996-1997 après la loi de 2004 et l'entrée de la CNSS dans le régime de base en 2007 (abrogation, maintien, conversion en régime complémentaire). -->
+- **Le [régime conventionnel d'entreprise](#g-regime-conventionnel-soins) (depuis 1996).** Un contrat de groupe ou une mutuelle approuvée peut [se substituer en partie à la CNSS](#r-soins-conventionnel) : l'employeur qui couvre ainsi la maladie ordinaire et l'accouchement de ses salariés et de leurs ayants droit cotise deux points de moins, et la caisse ne garde que les interventions chirurgicales de plus de 50 points et les maladies de longue durée. L'employeur finance au moins la moitié du régime, et le salarié n'y supporte pas plus de 20 % des frais calculés sur les tarifs officiels. Avant 2004, c'est la seule règle chiffrée imposée à ces couvertures qui soit identifiée ici. <!-- TODO (documentaliste) : établir le sort du régime conventionnel de 1996-1997 après la loi de 2004 et l'entrée de la CNSS dans le régime de base en 2007 (abrogation, maintien, conversion en régime complémentaire). -->
 - **La médecine du travail ne couvre pas les soins.** Les services de médecine du travail, [organisés en 2000](#r-soins-medecine-travail), ont un rôle essentiellement préventif — examens d'embauche, périodiques et de reprise ; le médecin du travail n'exerce la médecine curative qu'en cas d'urgence.
 
 <!-- TODO (bibliographe) : verser les lois créant les mutuelles de corps (armée, loi n° 77-80 ; police, n° 82-68 ; garde nationale et protection civile, n° 82-69 ; douanes, n° 89-53 ; magistrats, n° 96-30), le décret n° 85-847 (mutuelle de la police, art. 11, 13 et 14 : cotisations proposées par le conseil d'administration, adhésion obligatoire ou volontaire, remboursement de la part des frais non couverte par le régime obligatoire ou la gratuité) et l'arrêté du 7 septembre 1993 approuvant les statuts de l'Union nationale des sociétés mutualistes, avant d'en faire état dans le texte. -->
@@ -337,45 +337,39 @@ Les comptes de la CNSS de 1990 à 2004 distinguent les soins dans ses polycliniq
 
 ### Les personnes protégées par l'assurance maladie selon une note du CRES, 2008-2013 {#sec-soins-beneficiaires-cnam}
 
-La CNAM compte deux grandeurs différentes : les **affiliés**, assurés sociaux qui ouvrent le droit aux soins, et les **bénéficiaires**, c'est-à-dire les affiliés et leurs [ayants droit](#g-ayant-droit). Le nombre de bénéficiaires de 2008 à 2013 est publié par une note du Centre de recherches et d'études sociales (CRES) de décembre 2014, d'après le rapport du Conseil national de l'assurance maladie de mai 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4]. Il passe de **6,23 millions en 2008 à 7,02 millions en 2011**, puis revient à **6,94 millions en 2013** : 6 940 135 personnes, « soit 64 % de la population », selon la note. Les affiliés que dénombre la CNAM, salariés à faibles revenus et étudiants compris, passent, eux, de 2,85 à 3,45 millions sur la même période (@tbl-soins-effectifs-filieres, onglet « Données ») : ce n'est pas la même unité, et les deux séries ne s'additionnent ni ne se superposent.
+La CNAM compte deux grandeurs différentes : les **affiliés**, assurés sociaux qui ouvrent le droit aux soins, et les **bénéficiaires**, c'est-à-dire les affiliés et leurs [ayants droit](#g-ayant-droit). Le nombre de bénéficiaires de 2008 à 2013 est publié par une note du Centre de recherches et d'études sociales (CRES) de décembre 2014, d'après le rapport du Conseil national de l'assurance maladie de mai 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4]. Il passe de **6,23 millions en 2008 à 7,02 millions en 2011**, puis revient à **6,94 millions en 2013** : 6 940 135 personnes, « soit 64 % de la population », selon la note. Les affiliés que dénombre la CNAM, salariés à faibles revenus et étudiants compris, passent, eux, de 2,85 à 3,45 millions sur la même période (@tbl-soins-effectifs-filieres, onglet « Données ») ; le changement de décompte des étudiants en 2010 en ajoute à lui seul environ 320 000, soit plus de la moitié de cette hausse. Ce n'est pas la même unité, et les deux séries ne s'additionnent ni ne se superposent : la @fig-soins-beneficiaires-cnam les montre sur deux panneaux, chacun avec son axe.
 
-::: {#tbl-soins-beneficiaires-cnam}
-
-::: {.panel-tabset}
-
-### Tableau
-
-| Année | Bénéficiaires<br>(millions) |
-|---|---:|
-| 2008 | 6,232 |
-| 2009 | 6,834 |
-| 2010 | 7,006 |
-| 2011 | 7,021 |
-| 2012 | 6,927 |
-| 2013 | 6,940 |
-
-::: {.figure-source}
-Source : CRES, *La Lettre du CRES* n° 5, d'après le rapport du Conseil national de l'assurance maladie de mai 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4].
-:::
-
-::: {.callout-note appearance="simple" title="Comment lire ce tableau"}
-Un **bénéficiaire** est un affilié ou l'un de ses ayants droit, dans les trois filières, parmi les salariés à faibles revenus et parmi les étudiants. Ce n'est pas le nombre d'**affiliés** du [tableau des filières](#tbl-soins-effectifs-filieres), qui ne compte pas les ayants droit.
-:::
-
-### Sources
-
-::: {.figure-sources-detail}
-- Imen Blel et Houda Chahed, « L'évolution des dépenses de la CNAM en assurance maladie », *La Lettre du CRES*, n° 5, décembre 2014 [@blel-chahed2014-depenses-cnam, p. 3, graphe 4 et note 6]. Le graphe imprime la valeur de chaque année, en millions ; le texte donne 6 940 135 bénéficiaires en 2013.
-- La note ne décrit pas sa méthode : elle reprend le rapport du Conseil national de l'assurance maladie de mai 2014, qui porte sur l'exercice 2013.
-:::
-
-:::
-
-Bénéficiaires de l'assurance maladie, affiliés et ayants droit, 2008-2013, selon une note du CRES.
-
-:::
-
-<!-- TODO (rédacteur) : figure à deux panneaux, bénéficiaires 2008-2013 (note du CRES) et affiliés 2008-2021 (CNAM), sans axe commun, une fois la série des bénéficiaires versée dans tunisia-data. -->
+```{python}
+#| label: fig-soins-beneficiaires-cnam
+#| fig-cap: "Bénéficiaires de l'assurance maladie selon une note du CRES, 2008-2013, et affiliés de la CNAM, 2008-2021."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import depenses_sante as ds
+import figtools
+figtools.figure_tabs(
+    ds.fig_effectifs(), ds.table_effectifs(), ds.BENEFICIAIRES, ds.AFFILIES,
+    slug="fig_soins_beneficiaires_cnam",
+    caption="Bénéficiaires de l'assurance maladie selon une note du CRES, 2008-2013, et affiliés de la CNAM, 2008-2021",
+    note_lecture=(
+        "Les deux panneaux ne comptent pas les mêmes personnes. Un **bénéficiaire**, "
+        "en haut, est un affilié ou l'un de ses ayants droit, dans les trois filières, "
+        "parmi les salariés à faibles revenus et parmi les étudiants. Un **affilié**, "
+        "en bas, est l'assuré social qui ouvre le droit aux soins, sans ses ayants "
+        "droit. Chaque panneau a son propre axe, partant de zéro : on lit l'évolution "
+        "de chaque série, pas l'écart entre elles. Les pointillés du bas marquent deux "
+        "changements de décompte de la CNAM : les étudiants inscrits dans "
+        "l'enseignement supérieur à partir de 2010, au lieu des porteurs d'une carte "
+        "de soins valide ; les affiliés ouvrant droit aux soins pendant l'année à "
+        "partir de 2019. Les bénéficiaires viennent du graphe 4 de la note du CRES, "
+        "qui imprime chaque année en millions ; son texte donne 6 940 135 "
+        "bénéficiaires en 2013. La note ne décrit pas sa méthode : elle reprend le "
+        "rapport du Conseil national de l'assurance maladie de mai 2014, qui porte "
+        "sur l'exercice 2013. Chaque point porte sa valeur au survol."
+    ),
+    nominal=False,
+)
+```
 
 **Deux répartitions des filières pour 2013.** La même note répartit les assurés entre filière publique, filière privée et système de remboursement : **75,7 %, 10,41 % et 13,89 % en 2008**, puis **66,4 %, 14,31 % et 19,34 % en 2013**, d'après le rapport du Conseil national [@blel-chahed2014-depenses-cnam, p. 2]. Calculées ici sur les effectifs que publie la CNAM [@cnam-indicateurs-globaux-2021, p. 4], les mêmes parts sont de **76,1 %, 10,2 % et 13,6 % en 2008**, puis de **62,1 %, 17,0 % et 20,9 % en 2013**. Les deux sources concordent en 2008 à quelques dixièmes près ; en 2013, elles s'écartent de plus de quatre points pour la filière publique. Ni l'une ni l'autre n'explique cet écart.
 
@@ -610,13 +604,13 @@ La CNAM dénombre séparément les personnes relevant de la filière publique, d
 
 ### Tableau
 
-| Année | Filière publique | Filière privée | Remboursement | Ensemble des trois modalités |
-|---|---:|---:|---:|---:|
-| 2008 | 2 037 506 | 273 770 | 365 076 | 2 676 352 |
-| 2012 | 1 906 784 | 419 211 | 570 728 | 2 896 723 |
-| 2018 | 1 818 443 | 629 250 | 794 064 | 3 241 757 |
-| 2019 | 2 107 719 | 632 902 | 813 813 | 3 554 434 |
-| 2021 | 2 102 200 | 623 607 | 873 458 | 3 599 265 |
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import depenses_sante as ds
+print(ds.tableau_filieres(annees=(2008, 2012, 2018, 2019, 2021)))
+```
 
 ::: {.figure-source}
 Source : CNAM, indicateurs globaux d'activité [@cnam-indicateurs-globaux-2021, p. 4].
@@ -628,22 +622,11 @@ Source : CNAM, indicateurs globaux d'activité [@cnam-indicateurs-globaux-2021, 
 
 ### Données
 
-| Année | Filière publique | Filière privée | Remboursement | Total trois modalités | Salariés à faibles revenus | Étudiants | Total général CNAM |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 2008 | 2 037 506 | 273 770 | 365 076 | 2 676 352 | 159 321 | 10 689 | 2 846 362 |
-| 2009 | 2 060 998 | 280 807 | 394 700 | 2 736 505 | 181 925 | 30 620 | 2 949 050 |
-| 2010 | 2 014 052 | 330 345 | 463 953 | 2 808 350 | 181 299 | 351 280 | 3 340 929 |
-| 2011 | 1 980 129 | 373 579 | 521 224 | 2 874 932 | 172 392 | 361 930 | 3 409 254 |
-| 2012 | 1 906 784 | 419 211 | 570 728 | 2 896 723 | 159 603 | 357 392 | 3 413 718 |
-| 2013 | 1 826 160 | 498 513 | 615 347 | 2 940 020 | 170 198 | 337 393 | 3 447 611 |
-| 2014 | 1 754 764 | 579 572 | 646 722 | 2 981 058 | 143 821 | 331 802 | 3 456 681 |
-| 2015 | 1 738 403 | 598 426 | 683 683 | 3 020 512 | 149 269 | 322 625 | 3 492 406 |
-| 2016 | 1 785 451 | 608 463 | 717 162 | 3 111 076 | 150 038 | 294 486 | 3 555 600 |
-| 2017 | 1 779 270 | 617 075 | 742 689 | 3 139 034 | 152 080 | 285 787 | 3 576 901 |
-| 2018 | 1 818 443 | 629 250 | 794 064 | 3 241 757 | 163 715 | 275 322 | 3 680 794 |
-| 2019 | 2 107 719 | 632 902 | 813 813 | 3 554 434 | 180 546 | 255 234 | 3 990 214 |
-| 2020 | 2 076 518 | 619 112 | 829 742 | 3 525 372 | 168 043 | 269 424 | 3 962 839 |
-| 2021 | 2 102 200 | 623 607 | 873 458 | 3 599 265 | 162 012 | 270 430 | 4 031 707 |
+```{python}
+#| echo: false
+#| output: asis
+print(ds.tableau_filieres(detail=True))
+```
 
 ### Sources
 

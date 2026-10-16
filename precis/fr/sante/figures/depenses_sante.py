@@ -21,6 +21,8 @@ import figtools  # noqa: E402
 BUDGET = "ins-budget-sante-2018-2023"
 CNAM = "cnam-comptes-2011-2021"
 CRES = "cnam-parts-regimes-cres-2009-2019"
+BENEFICIAIRES = "cnam-beneficiaires-cres-2008-2013"
+AFFILIES = "cnam-affilies-filieres-2008-2021"
 BLEU, VERT, ORANGE, GRIS = "#08519c", "#1a7f37", "#b45100", "#657487"
 
 _L = {
@@ -43,6 +45,16 @@ _L = {
     "vue_budget_parts": {"fr": "Parts du budget et du PIB", "ar": "الحصص من الميزانية والناتج"},
     "vue_cnam_resultat": {"fr": "Compte de résultat", "ar": "قائمة النتائج"},
     "vue_cnam_tresorerie": {"fr": "Trésorerie", "ar": "الخزينة"},
+    "millions": {"fr": "millions", "ar": "مليون"},
+    "millions_pers": {"fr": "Millions de personnes", "ar": "ملايين الأشخاص"},
+    "beneficiaires": {"fr": "Bénéficiaires : affiliés et ayants droit (note du CRES)",
+                      "ar": "المنتفعون: المضمونون وأولو الحق (مذكرة مركز البحوث والدراسات الاجتماعية)"},
+    "affilies_total": {"fr": "Affiliés de la CNAM, total général",
+                       "ar": "المضمونون لدى الكنام، المجموع العام"},
+    "affilies_trois": {"fr": "Affiliés des trois filières de soins",
+                       "ar": "المضمونون في منظومات العلاج الثلاث"},
+    "rupture_2010": {"fr": "2010 : étudiants inscrits", "ar": "2010: الطلبة المرسمون"},
+    "rupture_2019": {"fr": "2019 : affiliés ouvrant droit", "ar": "2019: المضمونون المنتفعون بالحق"},
 }
 
 
@@ -188,3 +200,75 @@ def table_cres():
         "assurances_sociales_pct": f"{_lab('sociales')} (%)",
         "atmp_pct": f"{_lab('atmp')} (%)", "page": _lab("page"),
     })
+
+
+def fig_effectifs():
+    """Deux panneaux sans axe vertical commun : bénéficiaires (CRES), puis affiliés (CNAM)."""
+    figtools.apply_lang_font()
+    b = _serie(BENEFICIAIRES, 2008, 2013)
+    a = _serie(AFFILIES, 2008, 2021)
+    annees = a.annee.tolist()
+    fig, (haut, bas) = plt.subplots(2, 1, figsize=(9.3, 6.4), sharex=True)
+    _courbe(haut, b.annee.tolist(), b.beneficiaires_millions, BLEU, "beneficiaires",
+            _lab("millions"), dec=3)
+    _courbe(bas, annees, a.total_general / 1e6, ORANGE, "affilies_total", _lab("millions"), dec=3)
+    _courbe(bas, annees, a.total_trois_filieres / 1e6, VERT, "affilies_trois", _lab("millions"),
+            "s", dec=3)
+    # Axes partant de zéro, d'échelles distinctes : deux unités, aucune comparaison de niveau.
+    _habille(haut, annees, _lab("millions_pers"))
+    _habille(bas, annees, _lab("millions_pers"))
+    haut.set_ylim(0, 8)
+    bas.set_ylim(0, 4.5)
+    for annee, cle in ((2010, "rupture_2010"), (2019, "rupture_2019")):
+        bas.axvline(annee - 0.5, color=GRIS, ls=(0, (2, 2)), lw=1, zorder=1)
+        bas.text(annee - 0.4, 0.15, figtools.fig_text(_lab(cle)), fontsize=8,
+                 color=GRIS, va="bottom")
+    haut.legend(frameon=False, fontsize=9, loc="lower right")
+    bas.legend(frameon=False, fontsize=9, loc="upper left")
+    bas.tick_params(axis="x", labelsize=8)
+    fig.tight_layout()
+    return fig
+
+
+def table_effectifs():
+    b = _serie(BENEFICIAIRES, 2008, 2013)[["annee", "beneficiaires_millions"]]
+    a = _serie(AFFILIES, 2008, 2021).drop(columns="page")
+    d = a.merge(b, on="annee", how="left")
+    d = d[["annee", "beneficiaires_millions", "total_general", "total_trois_filieres",
+           "filiere_publique", "filiere_privee", "systeme_remboursement",
+           "faibles_revenus", "etudiants"]]
+    # Années sans bénéficiaires publiés : case vide, et non « NaN », dans l'onglet Données.
+    d["beneficiaires_millions"] = d["beneficiaires_millions"].astype(object).where(
+        d["beneficiaires_millions"].notna(), "")
+    return d.rename(columns={
+        "annee": _lab("annee"),
+        "beneficiaires_millions": "Bénéficiaires, CRES (millions)",
+        "total_general": "Affiliés CNAM, total général",
+        "total_trois_filieres": "Affiliés des trois filières",
+        "filiere_publique": "Filière publique",
+        "filiere_privee": "Filière privée",
+        "systeme_remboursement": "Système de remboursement",
+        "faibles_revenus": "Salariés à faibles revenus",
+        "etudiants": "Étudiants",
+    })
+
+
+def tableau_filieres(annees: tuple[int, ...] | None = None, detail: bool = False) -> str:
+    """Tableau Markdown des affiliés par filière, tiré de la série de la CNAM."""
+    a = _serie(AFFILIES, 2008, 2021)
+    if annees is not None:
+        a = a[a.annee.isin(annees)]
+    colonnes = [("filiere_publique", "Filière publique"), ("filiere_privee", "Filière privée"),
+                ("systeme_remboursement", "Remboursement")]
+    if detail:
+        colonnes += [("total_trois_filieres", "Total trois modalités"),
+                     ("faibles_revenus", "Salariés à faibles revenus"),
+                     ("etudiants", "Étudiants"), ("total_general", "Total général CNAM")]
+    else:
+        colonnes.append(("total_trois_filieres", "Ensemble des trois modalités"))
+    lignes = ["| Année | " + " | ".join(t for _, t in colonnes) + " |",
+              "|---|" + "---:|" * len(colonnes)]
+    for _, r in a.iterrows():
+        lignes.append(f"| {int(r.annee)} | "
+                      + " | ".join(_nb(float(r[c]), 0) for c, _ in colonnes) + " |")
+    return "\n".join(lignes) + "\n"
