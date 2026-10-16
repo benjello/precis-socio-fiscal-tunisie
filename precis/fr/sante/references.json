@@ -846,25 +846,23 @@
       "note": "citation-key: cres-unicef2019-socle-garanties\nP. 14, tableau 1 : population couverte et non couverte par l'assurance maladie et l'AMG en 2016, d'après l'étude de faisabilité du CRES (avril 2019). Copie archivée dans tunisia-data (data/raw/caisses/cres/, SHA-256 34c090c4…)."
     },
     {
-      "id": "ladhari1990-traite-securite-sociale",
+      "id": "ladhari1996-recueil-securite-sociale",
       "type": "book",
-      "title": "Traité de sécurité sociale",
+      "title": "Recueil de sécurité sociale",
       "author": [
         {
           "family": "Ladhari",
-          "given": "N."
+          "given": "Noë"
         }
       ],
-      "publisher": "Beït al-Hikma",
-      "publisher-place": "Tunis",
       "issued": {
         "date-parts": [
           [
-            1990
+            1996
           ]
         ]
       },
-      "note": "citation-key: ladhari1990-traite-securite-sociale\nRéférence incomplète, signalée par une relecture (14/10/2026) : prénom de l'auteur (« Noë » dans la relecture), éditeur et date à vérifier ; aucun exemplaire en ligne identifié."
+      "note": "citation-key: ladhari1996-recueil-securite-sociale\nNotice établie d'après la couverture de l'ouvrage (photographie transmise par une relecture, 16/10/2026) ; l'éditeur et le lieu d'édition n'y figurent pas. Aucun exemplaire en ligne identifié."
     },
     {
       "id": "essoussi1994-securite-sociale-public",
@@ -876,6 +874,7 @@
           "given": "Kamel"
         }
       ],
+      "publisher": "École nationale d'administration, Centre d'études et de recherches administratives",
       "publisher-place": "Tunis",
       "issued": {
         "date-parts": [
@@ -884,7 +883,7 @@
           ]
         ]
       },
-      "note": "citation-key: essoussi1994-securite-sociale-public\nRéférence incomplète, signalée par une relecture (14/10/2026) : éditeur et date à vérifier ; aucun exemplaire en ligne identifié."
+      "note": "citation-key: essoussi1994-securite-sociale-public\nNotice établie d'après la couverture de l'ouvrage (photographie transmise par une relecture, 16/10/2026). Aucun exemplaire en ligne identifié."
     }
   ]
 }
