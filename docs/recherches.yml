@@ -2547,8 +2547,33 @@
     couverture: 'Bulletin économique et social de la Tunisie, numérisé sur cinumedpub.mmsh.fr, copies dans tunisia-data (data/raw/caisses/best/) : rubrique « Législation » du n° 52 de 1951 (p. 106), qui date la publication du décret au J.O.T. du 17 avril 1951 et signale un second décret du même jour modifiant les statuts de la Société de prévoyance des fonctionnaires et employés tunisiens ; article de Lucien Bertrand, n° 71 de décembre 1952 (pp. 50-57) et n° 72 (pp. 70-80), qui expose le régime en vigueur depuis le 1er avril 1951 (risques couverts, tarif de responsabilité, quotités, cotisations, gestion) sans en reproduire le texte. Le texte du décret reste à lire. Gallica ne donne le J.O.T. que pour 1883-1887 ; la Série législative du BIT de 1948 à 1952 ne recense pas le décret. Aucun texte de 1948 n''est attesté.'
     couvert_jusqu_au: 1974-12-31
     resultat: aucun
+  - date: 2026-10-16
+    role: documentaliste
+    sources: [corpus_local, visas, presse, web]
+    couverture: 'Plein texte des fascicules français de 1956 à 1999 du corpus local (3 434 fichiers), chaîne « 26 août 1948 » : 16 occurrences, de 1994 à 1998 seulement. Elles visent le « décret du 26 août 1948, accordant la garantie du gouvernement tunisien à la caisse des retraites du personnel des entreprises concessionnaires de production, transport et distribution de gaz et d''électricité » (arrêté de 1995, JORT n° 32) et le règlement des retraites qui lui est annexé ; la loi n° 98-37 (JORT n° 43 de 1998, p. 1169, art. 1) distingue les régimes de pensions de retraite et de capital-décès de ce personnel, institués par le décret de 1948, et son régime de prévoyance sociale, prévu par un décret du 13 décembre 1951. Le texte de 1948 est un régime de retraite, pas un régime de prévoyance des agents publics. Bulletin économique et social de la Tunisie, n° 19 à 23 de 1948 et n° 24 à 29 de 1949 (cinumedpub.mmsh.fr, 236 fichiers) : rubriques « Législation » des J.O.T. de juillet à décembre 1948, sans mention du décret. Web : aucune copie du décret.'
+    couvert_jusqu_au: 1999-12-31
+    resultat: partiel
   a_faire:
   - consulter le Journal officiel tunisien du 17 avril 1951 et de 1952 (BnF, bibliothèques de Tunis, archives diplomatiques de Nantes, fonds 1TU)
+
+- id: r-sante-prevoyance-egt-1951
+  objet: texte du décret du 13 décembre 1951 instituant un régime de prévoyance sociale en faveur des agents des services publics de l'électricité, du gaz et des transports (risques couverts, frais de soins) ; texte du décret du 26 août 1948 sur leurs retraites
+  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-1951]
+  requetes:
+    titres_like: ['%electricite%gaz%transport%']
+    depuis: 1956-01-01
+  periode:
+    jusqu_au: 1999-12-31
+    motif: les décrets sont antérieurs à 1956 ; on ne les atteint que par les visas et par la loi n° 98-37 qui transfère ces régimes à la CNRPS
+  passes:
+  - date: 2026-10-16
+    role: documentaliste
+    sources: [corpus_local, visas, presse, web]
+    couverture: 'Loi n° 98-37 (JORT n° 43 de 1998, p. 1169, art. 1) et décret n° 98-1981 (JORT n° 83 de 1998), lus dans la couche texte : ils nomment les deux décrets sans en donner le contenu. Bulletin économique et social de la Tunisie de 1948-1949 parcouru (voir r-sante-prevoyance-1951-texte) ; Bulletin, n° 59 à 63 (décembre 1951 à mars 1952) : la rubrique « Législation » du n° 60 (p. 119) date la publication du décret et de l''arrêté du 14 décembre 1951 approuvant la convention au J.O.T. du 18 décembre 1951 ; la chronique du même numéro (p. 9) en donne les risques couverts (intervention chirurgicale, longue maladie, décès) et l''origine conventionnelle. Copies dans tunisia-data (data/raw/caisses/best/). Le texte de la convention (cotisations, quotités, tarif) n''est pas lu. Web : aucune copie.'
+    couvert_jusqu_au: 1999-12-31
+    resultat: partiel
+  a_faire:
+  - consulter le Journal officiel tunisien de décembre 1951 (BnF, bibliothèques de Tunis, archives diplomatiques de Nantes, fonds 1TU)
 
 - id: r-sante-admission-1939
   objet: décret du 23 décembre 1939 fixant les conditions d'admission des malades dans les établissements hospitaliers publics (preuve de l'indigence avant la carte de soins de 1958)
