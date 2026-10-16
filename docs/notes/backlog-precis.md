@@ -1923,7 +1923,9 @@ mesure ni les soins réalisés ni les revenus des médecins.
     sort du régime conventionnel de 1996-1997 après 2004 ; série du forfait
     annuel des caisses au ministère de la Santé (lois de finances) ; dinars constants des
     plafonds de 1988 et des tarifs de 1993-1994.
-  - **À obtenir, hors corpus** : Ladhari (1990), Essoussi (1994) ; décret du 18 février 1954.
+  - **À obtenir, hors corpus** : Ladhari (1996, *Recueil de sécurité sociale*) et Essoussi
+    (1994, ENA-CERA), notices corrigées le 16 octobre 2026 d'après leurs couvertures, ouvrages
+    non consultés (bibliothèque du CRES) ; décret du 18 février 1954.
   - Fait le 16 octobre 2026 (`_histoire.qmd`, `#sec-soins-histoire-1951`) : régimes du personnel
     de l'électricité, du gaz et des transports — retraite et capital-décès (décret du 26 août 1948,
     connu par la loi n° 98-37, art. 1), prévoyance obligatoire (décret du 13 décembre 1951 :
