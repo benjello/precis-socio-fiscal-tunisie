@@ -1924,6 +1924,14 @@ mesure ni les soins réalisés ni les revenus des médecins.
     annuel des caisses au ministère de la Santé (lois de finances) ; dinars constants des
     plafonds de 1988 et des tarifs de 1993-1994.
   - **À obtenir, hors corpus** : Ladhari (1990), Essoussi (1994) ; décret du 18 février 1954.
+  - Fait le 16 octobre 2026 (`_histoire.qmd`, `#sec-soins-histoire-1951`) : régimes du personnel
+    de l'électricité, du gaz et des transports — retraite et capital-décès (décret du 26 août 1948,
+    connu par la loi n° 98-37, art. 1), prévoyance obligatoire (décret du 13 décembre 1951 :
+    chirurgie, longue maladie, décès, d'après le *Bulletin économique et social de la Tunisie*
+    n° 60, p. 9 et 119), transfert à la CNRPS en 1998. Le « régime de prévoyance de 1948 »
+    signalé en relecture est le régime de retraite de 1948. **À obtenir** : texte de la convention
+    approuvée le 14 décembre 1951 (J.O.T. du 18 décembre 1951), hors corpus ; fiche
+    `r-sante-prevoyance-egt-1951`.
   - **Questions ouvertes à trancher** : ascendants après la loi n° 97-60 (exposé tel quel, sans
     conclusion) ; report de l'ancre `r-cnrps-cotisation-retraites-1973-2007` dans
     `cotisations_sociales/_regimes.qmd` (`#sec-cot-pensionnes`).
