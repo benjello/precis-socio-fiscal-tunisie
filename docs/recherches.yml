@@ -2872,3 +2872,24 @@
   a_faire:
   - parcourir le plein texte et le miroir iort avec les termes arabes de iort_ar
   - lire les conventions de concession (Miskar, Franig, Baguel) si elles sont publiées
+
+- id: r-pv-immobiliere-modificatifs-2023
+  objet: texte modifiant le code de l'IRPP, art. 27 § 2 ou art. 44 § III-1 (plus-value immobilière), postérieur au décret-loi n° 2022-79, art. 43 (loi de finances pour 2023)
+  ou: [precis/fr/fiscalite/_impot_revenu.qmd]
+  requetes:
+    titres_fts: ['"plus-value immobiliere" OR "plus-values immobilieres" OR "plus value immobiliere"']
+    iort_ar: [القيمة الزائدة العقارية]
+    plein_texte: [plus-value immobilière, القيمة الزائدة العقارية]
+    depuis: 2023-01-01
+  periode:
+    jusqu_au: 2025-12-12
+    motif: dernière loi de finances lue (loi n° 2025-17, JORT du 12 décembre 2025)
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, FTS sur plus-value immobilière : seule la loi de finances pour 2014 ; LIKE arabe : lois de finances 2013 et 2023 seulement (index arrêté au 2 octobre 2026) ; plein texte des lois de finances 2024 (fr), 2025 (fr, lue en entier) et 2026 (ar) : aucun modificatif des taux ni du champ ; code consolidé de la direction générale des impôts au 1er janvier 2025, utilisé comme index et non comme source. Lacunes : textes hors loi de finances non lus ; loi de finances pour 2026 lue en arabe seulement.'
+    couvert_jusqu_au: 2025-12-12
+    resultat: aucun
+  a_faire:
+  - lire les décrets et lois hors loi de finances publiés depuis 2023 qui toucheraient le code de l'IRPP, art. 27 et 44
