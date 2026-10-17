@@ -136,6 +136,14 @@ de modèle est indiqué pour chaque étape (voir la dernière section).
 
 ### Phase 1 — Les parties sur la page d'accueil (une PR, petite)
 
+0. **Le titre devient « Précis des politiques publiques de la Tunisie »** (décidé le 17 octobre
+   2026), sous-titre « la législation, le budget et ce qu'en dit l'économie, texte par texte ».
+   À changer : `precis/fr/index.qmd`, `precis/fr/a-propos.qmd` (l'arabe suit par la traduction ;
+   `precis/ar/a-propos.qmd` et le titre arabe des `_quarto.yml` à la main), `README.md`,
+   `AGENTS.md`, `docs/agents/*.md` (puis `sync_agents.py`), les couvertures PDF, les modèles de
+   `precis-diffusion`. L'adresse du site et le nom du dépôt ne changent pas : les liens déjà
+   envoyés restent valables. — *standard*
+
 1. `precis/fr/index.qmd` : les cartes des livres rangées en six parties, la règle de domicile
    en un paragraphe ; la liste numérotée actuelle des onze livres disparaît. — *standard*
 2. L'arabe suit par la traduction ; ne pas écrire `precis/ar/index.qmd`. — *rien à faire*
