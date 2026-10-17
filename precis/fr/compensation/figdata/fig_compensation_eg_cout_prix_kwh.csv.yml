@@ -1,0 +1,5 @@
+series: [steg-cout-prix-kwh]
+sources: [aner-2000-impact-prix-energie, bad-2006-rap-electricite-vi, bad-2012-pcr-electricite-vii, minfin-compensation-carburants-2014, esmap-2005-307-electrification-rurale, one-chiffres-cles-energie, steg-ef-2014, one-memento-2014, one-memento-2016-ar, steg-ef-2016]
+fiches: [docs/steg-gaz-electricite.md]
+caveats: [Les sources ne se raccordent pas. Rupture de 2007 : jusqu'en 2006 le gaz est au prix administré, ensuite à sa valeur économique. Aucun coût de revient pour 1999, 2005-2007 et 2019-2021, aucune valeur reconstituée. Les valeurs de l'ANER sont lues sur un graphique, à un millime près. De 2013 à 2018 les états financiers de la STEG et l'Observatoire ont la même origine. Les données de 2022 à 2025 sont dites provisoires avant audit. Millimes courants.]
+generated: 2026-10-17

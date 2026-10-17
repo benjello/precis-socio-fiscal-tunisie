@@ -1,0 +1,47 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-17
+# séries (tunisia_data) : steg-prix-achat-gaz
+# sources (citation) : @steg-ef-2014, @steg-ef-2016, @steg-ef-2018, @steg-ef-2019, @steg-ef-2021, @steg-ef-2022, @steg-ef-2023, @minfin-compensation-carburants-2014, @aner-2000-impact-prix-energie, @one-memento-2014
+# fiches : docs/steg-gaz-electricite.md
+# méthode/hypothèses : Trois séries qui ne se raccordent pas. Le prix de cession est un prix administré, constant, non un prix d'achat. Le prix moyen de la STEG porte sur toutes les sources de gaz et son numérateur comprend le fuel et le gazole. Ruptures : 2007 (la STEG comptabilise le gaz à sa valeur économique) et 2015 (fin du prix de cession). Aucune valeur avant 1993 ni après 2023. Dinars courants.
+# note : Le prix d'achat de la tonne équivalent pétrole de gaz par la STEG, 1993-2023 : prix de cession administré, prix moyen d'achat du rapport de contrôle de 2014 et des états financiers de la STEG (dinars courants par tep)
+Famille,Année,Dinars courants par tep,État,Source,Page,Lecture,Rupture
+"prix moyen d'achat, états financiers de la STEG",2013,804.4,publié,états financiers 2014,p. 7,texte,
+"prix moyen d'achat, états financiers de la STEG",2014,821.2,publié,états financiers 2014,p. 7,texte,
+"prix moyen d'achat, états financiers de la STEG",2015,583.6,publié,états financiers 2016,p. 7,texte,2015 : fin du prix de cession ; la STEG achète son gaz au prix mondial et la subvention devient budgétaire (loi de finances complémentaire pour 2015)
+"prix moyen d'achat, états financiers de la STEG",2016,391.7,publié,états financiers 2016,p. 7,texte,
+"prix moyen d'achat, états financiers de la STEG",2017,569.9,publié,états financiers 2018,p. 8,texte,
+"prix moyen d'achat, états financiers de la STEG",2018,805.5,publié,états financiers 2018,p. 8,texte,
+"prix moyen d'achat, états financiers de la STEG",2019,933.2,publié,états financiers 2019,p. 5,texte,
+"prix moyen d'achat, états financiers de la STEG",2020,622.7,publié,états financiers 2021,p. 7,texte,
+"prix moyen d'achat, états financiers de la STEG",2021,719.5,publié,états financiers 2021,p. 7,texte,
+"prix moyen d'achat, états financiers de la STEG",2022,1471.6,publié,états financiers 2022,p. 3,texte,
+"prix moyen d'achat, états financiers de la STEG",2023,1423.9,publié,états financiers 2023,p. 3,texte,
+prix de cession administré,1993,90.8,fixé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,1994,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,1995,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,1996,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,1997,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,1998,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,1999,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2000,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2001,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2002,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2003,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2004,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2005,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2006,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2007,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2008,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2009,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2010,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2011,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2012,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2013,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+prix de cession administré,2014,90.8,inchangé,rapport de contrôle de 2014,"p. 7, 22 et 178",texte,
+"prix moyen d'achat, rapport de contrôle de 2014",2007,339.0,calculé par le rapport,rapport de contrôle de 2014,p. 72,texte,"À partir de 2007, la STEG comptabilise en subvention d'exploitation l'écart entre la valeur économique du gaz et le prix fixe de 90,800 DT (états financiers 2014, note 11, p. 23)"
+"prix moyen d'achat, rapport de contrôle de 2014",2008,517.7,calculé par le rapport,rapport de contrôle de 2014,p. 72,texte,
+"prix moyen d'achat, rapport de contrôle de 2014",2009,383.813,calculé par le rapport,rapport de contrôle de 2014,p. 72,texte,
+"prix moyen d'achat, rapport de contrôle de 2014",2010,496.415,calculé par le rapport,rapport de contrôle de 2014,p. 72,texte,
+"prix moyen d'achat, rapport de contrôle de 2014",2011,622.7,calculé par le rapport,rapport de contrôle de 2014,p. 72,texte,
+"prix moyen d'achat, rapport de contrôle de 2014",2012,799.534,calculé par le rapport,rapport de contrôle de 2014,p. 72,texte,
+"prix moyen d'achat, rapport de contrôle de 2014",2013,808.0,calculé par le rapport,rapport de contrôle de 2014,p. 72,texte,

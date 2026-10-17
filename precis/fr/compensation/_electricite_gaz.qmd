@@ -428,7 +428,72 @@ De juin 2010 à mai 2022, le prix du gaz en moyenne pression passe de 25,30 à 7
 
 ## La longue période : subvention, coût et prix de vente {#sec-compensation-eg-longue-periode}
 
-Deux grandeurs suivent sur la longue période l'écart entre le tarif et le coût : la subvention que reçoit la STEG, d'après le budget et les comptes de l'entreprise ; le coût et le prix de vente du kilowattheure, d'après le rapport de contrôle de 2014, l'Observatoire national de l'énergie et des mines et, à part, un rapport extérieur.
+Trois ensembles de séries suivent sur la longue période l'écart entre le tarif et le coût : le prix auquel la STEG achète son gaz et les quantités qu'elle en prélève, par source ; la subvention qu'elle reçoit, d'après le budget et les comptes de l'entreprise ; le coût et le prix de vente du kilowattheure, d'après des rapports extérieurs, le rapport de contrôle de 2014, les comptes de la STEG et l'Observatoire national de l'énergie et des mines. Les sources ne couvrent pas les mêmes années et ne se raccordent pas : chaque figure garde ses sources séparées, en dinars ou en millimes courants, sans rapport au PIB.
+
+### Le gaz acheté par la STEG : prix et quantités {#sec-compensation-eg-gaz-achat}
+
+La STEG prélève son gaz de deux origines : le gaz algérien — la redevance en nature que l'État perçoit sur le gaz qui transite par la Tunisie et qui est consommée en Tunisie, et les achats, contractuels puis additionnels — et le gaz des champs nationaux, dont celui de Miskar. Deux séries décrivent cet approvisionnement : le prix auquel la tonne équivalent pétrole (tep) est comptée, et les quantités prélevées, par source.
+
+Le prix d'achat n'a pas une seule définition. Jusqu'en 2014, la STEG reçoit le gaz algérien et la redevance à un [prix de cession préférentiel](#g-prix-de-cession-preferentiel) de 90,8 dinars la tep, que le rapport de contrôle de 2014 rattache à une décision du ministre de l'économie nationale du 8 octobre 1993 [@minfin-compensation-carburants-2014, p. 7, 22 et 178] ; l'étude de l'Agence nationale des énergies renouvelables de 2000 donne la même valeur [@aner-2000-impact-prix-energie, p. 29]. Le rapport de contrôle calcule en outre un « prix moyen d'achat de la tep » de 2007 à 2013 [@minfin-compensation-carburants-2014, p. 72], et les états financiers de la STEG publient le leur de 2013 à 2023 : les achats de combustibles divisés par le total des achats de gaz, toutes sources confondues.
+
+Deux ruptures coupent ces séries. À partir de 2007, la STEG enregistre encore ses achats de gaz de la SOTUGAT et de l'ETAP au prix fixe de 90,800 dinars, qui « ne reflète pas la valeur économique du produit », et comptabilise en subvention d'exploitation la subvention que l'État lui accorde sous forme de prix bonifié [@steg-ef-2014, p. 23]. En 2015, le prix de cession prend fin et la STEG achète son gaz au prix mondial (@sec-compensation-eg-2015). Le @fig-compensation-eg-prix-achat-gaz trace les trois séries, sans les raccorder.
+
+```{python}
+#| label: fig-compensation-eg-prix-achat-gaz
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "prix_achat_gaz",
+    caption=(
+        "Le prix d'achat de la tonne équivalent pétrole de gaz par la STEG, 1993-2023 : prix de "
+        "cession administré, prix moyen d'achat du rapport de contrôle de 2014 et des états "
+        "financiers de la STEG (dinars courants par tep)"),
+    note_lecture=(
+        "Trois séries, qui ne se raccordent pas. Le trait bleu est le prix de cession : le prix "
+        "administré auquel la STEG reçoit le gaz algérien et la redevance, 90,8 dinars la tonne "
+        "équivalent pétrole (tep), de 1993 à 2014. Le trait orange est le « prix moyen d'achat de la "
+        "tep » du rapport de contrôle du 21 juillet 2014, de 2007 à 2013. Le trait vert est le « prix "
+        "moyen annuel d'achat de la tep de gaz » des états financiers de la STEG, de 2013 à 2023 : "
+        "les achats de combustibles divisés par le total des achats de gaz, toutes sources confondues "
+        "(gaz algérien acheté, redevance, gaz national, condensats) ; son numérateur comprend le fuel "
+        "et le gazole. Les deux dernières séries se recouvrent en 2013, à 808 et 804,4, sans se "
+        "raccorder."
+        "\n\n"
+        "Deux repères triangulaires marquent les ruptures, dont l'infobulle porte le texte. En 2007, "
+        "la STEG comptabilise le gaz à sa valeur économique et la différence avec le prix de 90,8 en "
+        "subvention d'exploitation (note 11 des états financiers de 2014, p. 23). En 2015, le prix de "
+        "cession prend fin et la subvention devient budgétaire. Montants en dinars courants, sans "
+        "rapport au PIB."))
+```
+
+Les quantités prélevées passent de 3 180 milliers de tonnes équivalent pétrole (ktep) en 2001 à 5 680 en 2019, puis à 4 999 en 2024. Le gaz algérien passe de 927 ktep en 2001 à 3 652 en 2024, et le gaz du champ de Miskar de 1 734 ktep à 353. Le @fig-compensation-eg-gaz-sources donne, année par année, les parties dont le total est la somme.
+
+```{python}
+#| label: fig-compensation-eg-gaz-sources
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "gaz_sources",
+    caption=(
+        "Le gaz prélevé par la STEG par source, 2001-2024 (milliers de tonnes équivalent pétrole, "
+        "pouvoir calorifique supérieur)"),
+    note_lecture=(
+        "Chaque barre est le total des prélèvements de gaz de l'année, somme de ses parties : la "
+        "redevance consommée sur le gaz algérien en transit, les achats contractuels et additionnels "
+        "de gaz algérien, le gaz du champ de Miskar et les autres champs nationaux (gaz commercial du "
+        "Sud, Hasdrubal, Chergui, Nawara et d'autres, selon les années). Le nombre au-dessus de la "
+        "barre est le total imprimé dans le tableau de la STEG ; il égale la somme des parties chaque "
+        "année. De 2001 à 2006, les tableaux ne séparent pas la redevance des achats : le gaz "
+        "algérien est alors une seule part, hachurée."
+        "\n\n"
+        "Le « total des achats de gaz », publié de 2019 à 2024, vient d'un autre tableau des mêmes "
+        "rapports ; il compte aussi des condensats et des gaz gratuits et n'est pas empilé ici : 5 "
+        "804 ktep en 2019 contre 5 680 prélevés. Ce sont des quantités, sans prix."))
+```
 
 ### La subvention à la STEG {#sec-compensation-eg-lien}
 
@@ -443,18 +508,78 @@ Les comptes de la STEG permettent un rapprochement, que le tableau suivant pose 
 | 2012 | 940 | 1 793,7 | 2 733,7 | 850 | 2 733,7 |
 | 2015 | | | | 858 | 858,0 |
 
-: La subvention à la STEG selon trois pièces, 2010-2012 et 2015 (millions de dinars courants). Sources : rapport de contrôle du 21 juillet 2014, tableau par entreprise [@minfin-compensation-carburants-2014, p. 9 et 72] ; pour la ligne budgétaire, @tbl-compensation-carburants-beneficiaires ; pour la subvention d'exploitation, états de résultat des rapports annuels de la STEG [@steg-ra-2010 ; @steg-ra-2011 ; @steg-ra-2012 ; @steg-ra-2015]. Les montants du rapport de contrôle sont établis sur ses tableaux ; ceux des rapports annuels de la STEG sont repris de leur texte et restent à confronter aux pages des documents. Le rapport de contrôle ne couvre pas 2015. La subvention directe qu'il attribue à la STEG n'est pas la ligne budgétaire versée à l'entreprise : l'écart entre les deux colonnes n'est pas expliqué par les pièces citées. {#tbl-compensation-eg-rapprochement}
+: La subvention à la STEG selon trois pièces, 2010-2012 et 2015 (millions de dinars courants). Sources : rapport de contrôle du 21 juillet 2014, tableau par entreprise [@minfin-compensation-carburants-2014, p. 9 et 72] ; pour la ligne budgétaire, @tbl-compensation-carburants-beneficiaires ; pour la subvention d'exploitation, états de résultat des rapports annuels de la STEG [@steg-ra-2010 ; @steg-ra-2011 ; @steg-ra-2012 ; @steg-ra-2015]. Les montants du rapport de contrôle sont établis sur ses tableaux ; ceux des rapports annuels de la STEG sont relevés aux pages de leur état de résultat [@steg-ra-2010, p. 61 ; @steg-ra-2011, p. 62 ; @steg-ra-2013, p. 70 ; @steg-ra-2016, p. 96]. Le rapport de contrôle ne couvre pas 2015. La subvention directe qu'il attribue à la STEG n'est pas la ligne budgétaire versée à l'entreprise : l'écart entre les deux colonnes n'est pas expliqué par les pièces citées. {#tbl-compensation-eg-rapprochement}
 
 De 2010 à 2012, la « subvention d'exploitation » que portent les comptes de la STEG est égale, à un dixième de million près, à la subvention totale — directe et indirecte — que calcule le rapport de contrôle : 2 733,7 MD dans les deux pièces en 2012. Elle dépasse de loin la ligne budgétaire versée à l'entreprise, 850 MD cette année-là. En 2015, première année où la STEG achète son gaz au prix mondial (@sec-compensation-rupture-2015), la subvention d'exploitation de ses comptes coïncide au contraire avec la ligne budgétaire : 858 MD.
 
-Avant 2015, les comptes de la STEG retracent donc un montant égal à la subvention totale, et non la seule subvention versée par le budget ; en 2015, les deux se confondent. Le traitement comptable qui produit cette égalité n'est pas établi ici : les notes aux états financiers de la STEG ne sont pas exploitées, et la série de la subvention d'exploitation n'est pas reprise au-delà de ces quatre années.
+Avant 2015, les comptes de la STEG retracent donc un montant égal à la subvention totale, et non la seule subvention versée par le budget ; en 2015, les deux se confondent. Le traitement comptable est celui de la note 11 des états financiers de 2014 : à partir de 2007, la STEG comptabilise en subvention d'exploitation l'écart entre la valeur économique du gaz et le prix fixe de 90,800 dinars auquel elle l'enregistre [@steg-ef-2014, p. 23]. La note sur les subventions d'exploitation distingue la subvention directe, « subvention d'équilibre accordée par l'État », et la subvention indirecte, différence entre le prix international du gaz algérien et son prix de cession : 1 918,8 MD de subvention indirecte et 850 MD de subvention directe en 2013, 2 270,1 MD et 53 MD en 2014 [@steg-ef-2014, p. 35].
 
-<!-- TODO (documentaliste) : confronter aux pages des rapports annuels de la STEG (2007-2021) la « subvention d'exploitation » de leurs états de résultat, lire les notes aux états financiers qui la définissent, puis décider de publier la série entière (docs/notes/compensation-tarifs-electricite-gaz.md, § (ii) et (viii)) ; répartition de la ligne « carburants » entre STIR et STEG de 2022 à 2025 d'après les rapports sur le budget de l'État, à verser avant citation (docs/notes/compensation-archives-energie.md, § 1.1 a). -->
+Le @fig-compensation-eg-subvention donne la subvention d'exploitation des comptes de 2006 à 2016, et le soutien direct et indirect du rapport de contrôle de 2007 à 2013.
+
+```{python}
+#| label: fig-compensation-eg-subvention
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "subvention",
+    caption=(
+        "La subvention d'exploitation de la STEG, 2006-2016 : montant des comptes, soutien direct et "
+        "indirect du rapport de contrôle de 2014 (millions de dinars courants)"),
+    note_lecture=(
+        "Les barres empilent, de 2007 à 2013, le soutien direct — la subvention que verse le budget — "
+        "et le soutien indirect — le gaz acheté au prix de cession préférentiel — que calcule le "
+        "rapport de contrôle du 21 juillet 2014 ; leur hauteur est le soutien total. Les ronds noirs "
+        "sont la « subvention d'exploitation » de l'état de résultat de la STEG, de 2006 à 2016 : "
+        "elle égale le soutien total du rapport, à l'arrondi imprimé près, de 2007 à 2013 ; le "
+        "chiffre de 2006 est celui que le rapport annuel de 2007 retraite."
+        "\n\n"
+        "Le repère triangulaire de 2015 marque la rupture : le prix de cession a pris fin, la "
+        "subvention d'exploitation égale la ligne budgétaire, 858 millions de dinars, et elle est "
+        "nulle en 2016 (rond à zéro). Pour 2013 et 2014, les états financiers de 2014 ventilent la "
+        "subvention entre directe et indirecte ; leurs valeurs sont dans l'onglet « Données ». "
+        "Montants en dinars courants, sans rapport au PIB."))
+```
+
+
+
+<!-- TODO (documentaliste) : subvention d'exploitation de 2017 à 2021 aux états de résultat des rapports annuels de la STEG, à relire et à verser (docs/notes/compensation-electricite-gaz-series-steg.md, § 1 et 2) ; répartition de la ligne « carburants » entre STIR et STEG de 2022 à 2025 d'après les rapports sur le budget de l'État, à verser avant citation (docs/notes/compensation-archives-energie.md, § 1.1 a). -->
 <!-- RECHERCHE r-prix-gaz-commercial-concessions-apres-2000 : texte modifiant le décret n° 2000-1027 sur le prix du gaz commercial des concessions, et conventions de prix de Miskar, Franig et Baguel (voir docs/recherches.yml) ; les séries d'achat du gaz et de coût de l'électricité de la STEG sont dans docs/notes/compensation-electricite-gaz-series-steg.md -->
 
 ### Coût et prix de vente du kilowattheure {#sec-compensation-eg-cout}
 
-Deux sources officielles mettent en regard ce que l'électricité coûte et ce qu'elle est vendue ; un calcul fait ici sur les rapports annuels de la STEG donne la recette moyenne par niveau de tension ; un rapport extérieur, donné à part, couvre des années antérieures. Les sources ne couvrent pas les mêmes années et ne se raccordent pas.
+Deux sources officielles mettent en regard ce que l'électricité coûte et ce qu'elle est vendue ; un calcul fait ici sur les rapports annuels de la STEG donne la recette moyenne par niveau de tension ; un rapport extérieur, donné à part, couvre des années antérieures. Les sources ne couvrent pas les mêmes années et ne se raccordent pas. Le @fig-compensation-eg-cout-prix-kwh les met en regard de 1994 à 2025, chacune dans sa couleur ; les tableaux qui suivent donnent les valeurs de trois d'entre elles.
+
+```{python}
+#| label: fig-compensation-eg-cout-prix-kwh
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "cout_prix_kwh",
+    caption=(
+        "Le coût de revient et le prix de vente moyen hors taxes du kilowattheure de la STEG, "
+        "1994-2025, par famille de source (millimes courants par kWh)"),
+    note_lecture=(
+        "Deux cadres de même échelle : en haut le coût de revient, en bas le prix de vente moyen hors "
+        "taxes, toutes tensions confondues. Chaque couleur est une source, et aucune ne se raccorde à "
+        "la suivante : ESMAP (prix, 1994-1999) ; ANER (coût, 1996-1998, lu sur un graphique à un "
+        "millime près) ; Banque africaine de développement (2000-2004 ; prix seul de 2005 à 2007, "
+        "tiré d'un rapport sur un autre projet) ; rapport de contrôle de 2014 (2008-2012) ; états "
+        "financiers de la STEG puis Observatoire (2013-2018, une seule origine) ; Observatoire "
+        "(2019-2021, prix seul ; 2022-2025, données provisoires avant audit)."
+        "\n\n"
+        "Les bandes grisées sont les années sans coût de revient publié, 1999, 2005-2007 et 2019-2021 "
+        ": aucune valeur n'y est reconstituée. Le repère triangulaire de 2007 marque une rupture de "
+        "valorisation du gaz : jusqu'en 2006 il est au prix administré de 90,8 dinars la tep, et à "
+        "partir de 2007 la STEG le comptabilise à sa valeur économique (note 11 des états financiers "
+        "de 2014, p. 23) ; les coûts d'avant et d'après ne se comparent donc pas. La décomposition du "
+        "coût de 2008 à 2012 — combustibles, personnel, charges financières et assurances, "
+        "amortissements, divers — est dans l'onglet « Données ». Montants en millimes courants, sans "
+        "rapport au PIB."))
+```
 
 #### 2008-2012, selon le rapport de contrôle de 2014
 
@@ -479,8 +604,8 @@ L'Observatoire national de l'énergie et des mines publie chaque année, dans se
 
 | Année | Électricité : prix de vente (millimes par kWh) | Électricité : coût de revient | Gaz : prix de vente (dinars par tonne équivalent pétrole) | Gaz : coût de revient |
 |---|---:|---:|---:|---:|
-| 2017 | | | 460,4 | 638,1 |
-| 2018 | | | 508,0 | 864,3 |
+| 2017 | 189,6 | 235,5 | 460,4 | 638,1 |
+| 2018 | 206,3 | 285,9 | 508,0 | 864,3 |
 | 2019 | 244,0 | | 600,2 | |
 | 2020 | 248,6 | | 616,0 | |
 | 2021 | 244,8 | | 609,1 | |

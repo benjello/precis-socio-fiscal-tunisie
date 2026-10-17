@@ -1,0 +1,5 @@
+series: [steg-prix-achat-gaz]
+sources: [steg-ef-2014, steg-ef-2016, steg-ef-2018, steg-ef-2019, steg-ef-2021, steg-ef-2022, steg-ef-2023, minfin-compensation-carburants-2014, aner-2000-impact-prix-energie, one-memento-2014]
+fiches: [docs/steg-gaz-electricite.md]
+caveats: [Trois séries qui ne se raccordent pas. Le prix de cession est un prix administré, constant, non un prix d'achat. Le prix moyen de la STEG porte sur toutes les sources de gaz et son numérateur comprend le fuel et le gazole. Ruptures : 2007 (la STEG comptabilise le gaz à sa valeur économique) et 2015 (fin du prix de cession). Aucune valeur avant 1993 ni après 2023. Dinars courants.]
+generated: 2026-10-17

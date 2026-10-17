@@ -1,0 +1,5 @@
+series: [steg-prelevements-gaz]
+sources: [steg-ra-2005, steg-ra-2007, steg-ra-2008, steg-ra-2009, steg-ra-2010, steg-ra-2011, steg-ra-2012, steg-ra-2013, steg-ra-2014, steg-ra-2015, steg-ra-2016, steg-ra-2017, steg-ra-2018, steg-ra-2019, steg-ra-2020, steg-ra-2021, steg-ra-2023, steg-ra-2024]
+fiches: [docs/steg-gaz-electricite.md]
+caveats: [Le total égale la somme des parties chaque année. De 2001 à 2006 les tableaux ne séparent pas la redevance des achats de gaz algérien. Le « total des achats gaz » de 2019-2024 vient d'un autre tableau et n'est pas le total des prélèvements. Quantités en ktep, pouvoir calorifique supérieur.]
+generated: 2026-10-17
