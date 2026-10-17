@@ -588,10 +588,10 @@ liste qui suit le tableau, citations comprises. Restent :
   n° 98-73, 15 et 10 % depuis 2013, aucun changement de taux depuis). **Le rapport de 2014 sur
   l'accès au foncier est corrigé sur douze points** (note, § 2) : ses taux sont périmés, il date le
   barème progressif de 1993 au lieu de 1984, confond la plus-value et une « taxe », et se trompe
-  de rang pour « Paying taxes » (60e, non 106e). **À corriger dans `_impot_revenu.qmd`** : la
-  majoration de 10 % par année de détention existe dès 1977, non 1990 ; la condition de première
-  cession date de la loi de finances pour 2005, non de 2023 ; la condition de durée disparaît en
-  1993 ; la loi de finances pour 2023 supprime aussi l'exclusion des terres agricoles. **À obtenir
+  de rang pour « Paying taxes » (60e, non 106e). **Corrigé le 17 octobre 2026 dans `_impot_revenu.qmd`** : la
+  majoration de 10 % par année de détention existe dès 1977 (clé `lf-1977` créée), la condition de
+  première cession date de la loi de finances pour 2005, la condition de durée disparaît en 1993 et
+  la loi de finances pour 2023 supprime aussi l'exclusion des terres agricoles. **À obtenir
   ou à lire** : loi foncière de 1885 et décret de 1886, droit de l'enregistrement d'avant 1956
   (décret du 19 avril 1912, décret n° 68-104), décret du 18 juillet 1957 sur les habous privés
   (fascicule absent du corpus), dates d'effet de quatorze lois de finances, réalisations
@@ -2618,8 +2618,8 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
   - **Décret d'application de l'article 3 de la loi n° 70-26** : non identifié (fiche).
   - **Rupture de 2015** : effet constaté de la séparation de 2015 à 2018, subvention indirecte de
     2013 et 2014, bénéficiaires de la ligne en 2013 et après 2016, recettes de commercialisation
-    encaissées de 2019 à 2025, acte formalisant la séparation (fiche), arrêté du 8 octobre 1993
-    sur le prix du gaz, régularisation des impayés de 2016 : non établis. Rapport de 2014 :
+    encaissées de 2019 à 2025, acte formalisant la séparation (fiche), décision du 8 octobre 1993
+    sur le prix du gaz (nature de l'acte non établie ; « arrêté » corrigé le 17 octobre 2026 dans `_carburants.qmd`), régularisation des impayés de 2016 : non établis. Rapport de 2014 :
     pages 1-10 et 158-159 seules exploitées. Lois de finances pour 2016 et 2019 : éditions
     françaises absentes du corpus local.
   - **Prix à la pompe** : arrêté du 31 décembre 1980 (fiche) ; **1997-2001 : dates et niveaux des
