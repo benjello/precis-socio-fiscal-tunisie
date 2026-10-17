@@ -8,9 +8,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Français | Arabe (Tunisie) | Acronyme |
 | :--- | :--- | :--- |
 | Abattement forfaitaire | الطرح الجزافي |  |
+| Abattement successoral | الطرح من التركة |  |
 | Abattement sur les pensions et rentes viagères | الطرح بعنوان الجرايات والإيرادات العمرية |  |
 | Accident du travail | حادث شغل |  |
+| Acte de notoriété | الوثيقة |  |
 | Administrations publiques | الإدارات العمومية |  |
+| Adoul | عدل إشهاد |  |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
 | Agent temporaire | العون الوقتي |  |
 | Agrément d'une convention collective | المصادقة على الاتفاقية المشتركة |  |
@@ -71,6 +74,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Code d'incitations aux investissements | مجلة تشجيع الاستثمارات |  |
 | Code de la fiscalité locale | مجلة الجباية المحلية |  |
 | Code des droits et procédures fiscaux | مجلة الحقوق والإجراءات الجبائية | CDPF |
+| Code des droits réels | مجلة الحقوق العينية |  |
 | Collectivité locale | الجماعة المحلية |  |
 | Commerçant détaillant assujetti à la taxe sur la valeur ajoutée | تاجر التفصيل الخاضع للأداء على القيمة المضافة |  |
 | Commerçant grossiste | تاجر جملة |  |
@@ -88,6 +92,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Condition de ressources | شرط الموارد |  |
 | Conseil local | المجلس المحلي |  |
 | Conseil supérieur des collectivités locales | المجلس الأعلى للجماعات المحلية |  |
+| Conservation de la propriété foncière | إدارة الملكية العقارية |  |
 | Contrat d'adaptation et d'insertion professionnelle | عقد التأهيل والإدماج المهني | CAIP |
 | Contrat d'initiation à la vie professionnelle | عقد الإعداد للحياة المهنية | CIVP |
 | Contrat d'insertion des diplômés de l'enseignement supérieur | عقد إدماج حاملي شهادات التعليم العالي | CIDES |
@@ -117,6 +122,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Déconcentration | اللامحورية |  |
 | Décote | التخفيض في الجراية |  |
 | Déductions communes | الطروحات المشتركة |  |
+| Défaut de mention de l'origine de propriété | معلوم عدم بيان أصل الملكية |  |
 | Délai de carence | فترة الانتظار |  |
 | Délégation de compétences | تفويض الصلاحيات |  |
 | Délégation spéciale | النيابة الخصوصية |  |
@@ -126,9 +132,17 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Dévolution de compétences | إسناد الصلاحيات الذاتية |  |
 | Discipline budgétaire | الانضباط في الميزانية |  |
 | District | الإقليم |  |
+| Djemaïa des habous | جمعية الأحباس |  |
 | Droit à déduction | حق الطرح |  |
+| Droit complémentaire | معلوم التسجيل التكميلي |  |
+| Droit d'inscription foncière | معلوم الترسيم العقاري |  |
 | Droit de consommation | المعلوم على الاستهلاك |  |
+| Droit de mutation | معلوم نقل الملكية |  |
+| Droit fixe | المعلوم القار |  |
 | Droit forfaitaire simplifié | الأداء التقديري المبسط |  |
+| Droit progressif (terrains d'habitat) | المعلوم التصاعدي |  |
+| Droit proportionnel | المعلوم النسبي |  |
+| Droits d'enregistrement | معاليم التسجيل |  |
 | Durée de constatation du crédit de TVA | مدة تسجيل فائض الأداء على القيمة المضافة بالتصاريح |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
@@ -146,6 +160,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Entreprise tunisienne d'activités pétrolières | المؤسسة التونسية للأنشطة البترولية | ETAP |
 | Entreprises publiques | المنشآت العمومية |  |
 | Entreprises totalement exportatrices | المؤسسات المصدرة كليا |  |
+| Enzel | الإنزال |  |
 | Épargne nette | الادّخار الصافي |  |
 | Équilibre réel | التوازن الحقيقي للميزانية |  |
 | Établissement public à caractère administratif | المؤسسة العمومية ذات الصبغة الإدارية | EPA |
@@ -177,7 +192,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Grille de salaires conventionnelle | جدول الأجور |  |
 | Grille des salaires | شبكة الأجور |  |
 | Habitation principale | المسكن الرئيسي |  |
+| Habous | الأحباس |  |
 | Haute instance des finances locales | الهيئة العليا للمالية المحلية |  |
+| Immatriculation foncière | التسجيل العقاري |  |
+| Immeubles non immatriculés | العقارات غير المرسمة |  |
 | Impôt exclusif | الأداء الحصري |  |
 | Impôt foncier (2014) | الضريبة العقارية (2014) |  |
 | Impôt local | الأداء المحلي |  |
@@ -204,6 +222,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Libre administration | التدبير الحر |  |
 | Limite de calcul des prestations | الحدّ الأقصى لاحتساب المنافع |  |
 | Livraison à soi-même | التسليم للنفس |  |
+| Livre foncier | السجل العقاري |  |
 | Livret de soins | دفتر العلاج |  |
 | Louage | اللواج |  |
 | Magistrat | القاضي |  |
@@ -211,9 +230,11 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Maladie professionnelle | مرض مهني |  |
 | Masse salariale | كتلة الأجور |  |
 | Mécanisme d'ajustement automatique des prix des carburants | آلية التعديل الأوتوماتيكي لأسعار المحروقات |  |
+| Melk | الملك |  |
 | Micro-entreprise | مؤسسة صغرى |  |
 | Minimum d'impôt | الضريبة الدنيا |  |
 | Minimum d'impôt sur le chiffre d'affaires | الضريبة الدنيا |  |
+| Minimum de perception | الحد الأدنى للاستخلاص |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ordonnateur | آمر قبض وصرف |  |
@@ -234,6 +255,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation des prix | تعديل الأسعار |  |
 | Péréquation des ressources | تعديل الموارد |  |
 | Péréquation financière | التعديل المالي |  |
+| Plus-value immobilière | القيمة الزائدة العقارية |  |
 | Politique active de l'emploi | السياسة النشيطة للتشغيل |  |
 | Position tarifaire | البند التعريفي |  |
 | Potentiel fiscal | الطاقة الجبائية |  |
@@ -379,13 +401,17 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taxe sur les terrains non bâtis | المعلوم على الأراضي غير المبنية | TNB |
 | Taxe unique de compensation de transports routiers | المعلوم الوحيد التعويضي على النقل بالطرقات |  |
 | Taxe unique de compensation sur les produits pétroliers | المعلوم الوحيد التعويضي على منتوجات النفط |  |
+| Terres collectives | الأراضي الاشتراكية |  |
 | Territorialité de la TVA | مبدأ الإقليمية |  |
 | Ticket modérateur | المعلوم التعديلي |  |
+| Titre foncier | الرسم العقاري |  |
+| Titre gelé | الرسم العقاري المجمد |  |
 | Traitement de base | المرتب الأساسي |  |
 | Tranche | شريحة |  |
 | Transfert financier | التحويلات المالية |  |
 | Transfert monétaire direct | التحويل النقدي المباشر |  |
 | Travaux pénibles et insalubres | الأشغال الشاقّة وغير الصحّية |  |
+| Tribunal immobilier | المحكمة العقارية |  |
 | Tutelle | سلطة الإشراف |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
