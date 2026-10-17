@@ -2875,7 +2875,9 @@
 
 - id: r-pv-immobiliere-modificatifs-2023
   objet: texte modifiant le code de l'IRPP, art. 27 § 2 ou art. 44 § III-1 (plus-value immobilière), postérieur au décret-loi n° 2022-79, art. 43 (loi de finances pour 2023)
-  ou: [precis/fr/fiscalite/_impot_revenu.qmd]
+  ou:
+  - precis/fr/fiscalite/_patrimoine_immobilier.qmd#sec-pi-etat-pv
+  - precis/fr/fiscalite/_impot_revenu.qmd#sec-irpp-foncier
   requetes:
     titres_fts: ['"plus-value immobiliere" OR "plus-values immobilieres" OR "plus value immobiliere"']
     iort_ar: [القيمة الزائدة العقارية]
@@ -2893,3 +2895,94 @@
     resultat: aucun
   a_faire:
   - lire les décrets et lois hors loi de finances publiés depuis 2023 qui toucheraient le code de l'IRPP, art. 27 et 44
+
+- id: r-loi-fonciere-1885-1886
+  objet: texte du décret du 28 juin 1886 (26 ramadan 1303) sur la mise à exécution de la loi sur la propriété foncière sur toute l'étendue de la Régence, et de la loi du 16 mai 1886 (12 chaban 1303) modifiant la loi foncière (Journal officiel tunisien, 1886)
+  ou: [precis/fr/fiscalite/_patrimoine_immobilier.qmd#sec-pi-antecedents]
+  requetes:
+    titres_fts: ['"loi fonciere"']
+    plein_texte: [28 juin 1886, 16 mai 1886]
+    depuis: 1885-07-01
+  periode:
+    jusqu_au: 1886-12-31
+    motif: 'textes de 1886 : décret du 28 juin 1886 et loi du 16 mai 1886, abrogés par la loi n° 65-5 du 12 février 1965'
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [web, visas, jort_cache]
+    couverture: 'web : « loi foncière » Tunisie « 1er juillet 1885 » immatriculation Torrens tribunal mixte ; « 28 juin 1886 » « loi foncière » Tunisie. justice.gov.tn, page du Tribunal immobilier : fac-similé de la loi du 1er juillet 1885 (JOT n° 134 du 12 juillet 1885, art. 1 à 75), aucun texte de 1886. Recueil Loi foncière et règlements annexes (Tunis, 1909, Odyssée) : table des matières, pas de décret du 28 juin 1886. Visas : DL 64-3 et 64-4 (1964), loi n° 65-5, art. 2. jort_cache sans objet avant 1956. Lacunes : Journal officiel tunisien de 1886 sur Gallica non consulté (blocage anti-robot) ; recueils Bompard et Zeys non cherchés ; aucun fascicule de 1886 parcouru.'
+    couvert_jusqu_au: 1885-07-12
+    resultat: aucun
+  a_faire:
+  - Journal officiel tunisien de 1886 sur Gallica, à ouvrir dans un navigateur
+  - 'recueils de législation tunisienne : Bompard, Législation de la Tunisie (1888) ; Zeys'
+
+- id: r-enregistrement-protectorat-1912-1954
+  objet: tarif du décret organique sur l'enregistrement du 19 avril 1912 ; décret du 27 juin 1954, art. 52 (terrains destinés à l'habitation) ; décret n° 68-104 du 20 avril 1968, dont la loi de finances pour 1969 modifie le tarif ; textes d'exonération de la première mutation des immeubles d'habitation (décret du 28 octobre 1948, art. 75 ; décret du 29 septembre 1952, art. 27 à 29 ; loi n° 61-18, art. 3 ; loi n° 65-16 du 28 juin 1965)
+  ou: [precis/fr/fiscalite/_patrimoine_immobilier.qmd#sec-pi-enregistrement-avant-1969]
+  requetes:
+    titres_fts: ['"68-104"', '"enregistrement" OR "habous" OR "immatriculation" OR "loi fonciere"']
+    titres_like: [decret du 19 avril 1912, 27 juin 1954, 65-16]
+    depuis: 1912-04-19
+  periode:
+    jusqu_au: 1968-12-31
+    motif: textes antérieurs à la loi de finances pour 1969 (loi n° 68-41 du 31 décembre 1968), qui modifie le tarif du décret n° 68-104
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas]
+    couverture: 'FTS et LIKE sur jort_cache de 1956 à 1993 : seuls des modificatifs (lois de finances 1958-1989) ; décret n° 68-104 connu par la loi de finances pour 1969, art. 14 ; décret de 1954, art. 52, connu par sa réécriture (loi de finances pour 1970, art. 9). Lacunes : fascicules antérieurs à 1956 non parcourus.'
+    couvert_jusqu_au: 1968-12-31
+    resultat: aucun
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'FTS sur enregistrement, habous, immatriculation, loi foncière, signature antérieure au 1er janvier 1966 : décrets du 4 octobre 1956 (JOT n° 81, p. 1360) et du 15 novembre 1956 (JOT n° 93, p. 1528) modifiant le décret de 1912, lus : ni tarif ni taux de mutation ; décret du 28 février 1957 (JOT n° 19, p. 257) et loi n° 57-41 du 27 septembre 1957 connus par l''index seul, fascicule de l''ancienne série absent du corpus local. Textes de 1948-1965 sur la première mutation connus par la loi de finances pour 1970, art. 7, et par l''abrogation de la loi de finances pour 1982, art. 20, non lus.'
+    couvert_jusqu_au: 1957-02-28
+    resultat: aucun
+  a_faire:
+  - 'Journal officiel tunisien de 1912 (Gallica) : tarif du décret du 19 avril 1912'
+  - décret du 27 juin 1954, art. 52 ; décret du 28 octobre 1948, art. 75 ; décret du 29 septembre 1952, art. 27 à 29 ; loi n° 61-18, art. 3 ; loi n° 65-16
+  - décret n° 68-104 du 20 avril 1968 (JORT de 1968, corpus local)
+
+- id: r-habous-prives-1957-fascicule
+  objet: fac-similé du Journal officiel tunisien n° 58 du 19 juillet 1957 (décret du 18 juillet 1957 portant abolition du régime des habous privés et mixtes) et du n° 16 de février 1957 (décret du 19 février 1957 portant réorganisation du tribunal mixte immobilier)
+  ou: [precis/fr/fiscalite/_patrimoine_immobilier.qmd#sec-pi-antecedents]
+  requetes:
+    titres_fts: ['"habous"', '"tribunal mixte immobilier"']
+    plein_texte: [habous privés, 18 juillet 1957]
+    depuis: 1957-02-01
+  periode:
+    jusqu_au: 1957-07-31
+    motif: 'fascicules de l''ancienne série de 1957 : n° 16 de février et n° 58 du 19 juillet 1957'
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [corpus_local, pist, web, jort_cache]
+    couverture: 'corpus local de 1957 (fr et ar) : nouvelle série seulement, à partir du n° 1 du 26 juillet 1957 ; les numéros de l''ancienne série manquent tous, dont le n° 16 et le n° 58. pist.tn, Jo05857.pdf : 404, revérifié. Copies lues : FAOLEX tun23979.pdf (décret du 18 juillet 1957, consolidé jusqu''en 1992) ; justice.gov.tn (décret du 19 février 1957). jort_cache : quatorze notices « décret du 18 juillet 1957 portant abolition du régime des habous » aux n° 23 à 37 de 1957, dont les pages ne correspondent pas au n° 23 local.'
+    couvert_jusqu_au: 1957-07-19
+    resultat: aucun
+  a_faire:
+  - convention de nommage de pist.tn pour l'ancienne série de 1957
+  - édition arabe (الرائد الرسمي التونسي) de février et juillet 1957
+  - vérifier sur pist.tn les notices de jort_cache n° 23 à 37 de 1957
+
+- id: r-reduction-droits-mutation-1892
+  objet: texte qui fixe à 7,25 % l'impôt de mutation des immeubles cité en 1892, et texte qui réaliserait, après mai 1892, le vœu de réduire « de 7,25 à 4 % » les droits de timbre et de mutation (rapport Massicault, p. XXXVI)
+  ou: [precis/fr/fiscalite/_patrimoine_immobilier.qmd#sec-pi-antecedents]
+  requetes:
+    plein_texte: ['7,25', droits de mutation]
+    depuis: 1885-07-01
+  periode:
+    jusqu_au: 1912-04-19
+    motif: antérieur au décret organique sur l'enregistrement du 19 avril 1912
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [web]
+    couverture: 'rapport du résident général Massicault de mai 1892 (recueil Loi foncière et règlements annexes, Tunis, 1909, pp. XXXI-XXXIX) : taux de 7,25 % cité p. XXXII ; vœu de la Commission p. XXXVI ; droits de mutation non encore réduits en mai 1892 (p. XXXVIII). Aucune requête lancée sur le Journal officiel tunisien ni sur les recueils de législation de 1885 à 1912.'
+    couvert_jusqu_au: 1892-05-31
+    resultat: aucun
+  a_faire:
+  - 'Journal officiel tunisien de 1892 à 1912 (Gallica) : droits de mutation et de timbre sur les immeubles'
+  - recueils de législation tunisienne (Bompard, Zeys)
