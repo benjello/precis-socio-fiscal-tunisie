@@ -82,6 +82,41 @@ trois à six grandes réformes d'un même dispositif — et ses fiches. Au-delà
 25 000 mots de fichier, ou quand un fichier porte plusieurs épines, il se scinde, avant toute
 conversion au format « ruptures au premier plan ».
 
+## « Ce qu'en dit l'économie » : une section par dispositif (décidé le 17 octobre 2026)
+
+**Ce qu'elle est.** Un état des connaissances sur le *type* de dispositif, pour le praticien : la
+question que les économistes lui posent, ce que dit la théorie, ce que mesure l'empirique, ce
+qu'il faut avoir en tête avant d'y toucher. Ce n'est ni une évaluation du dispositif tunisien
+(les études sur la Tunisie restent dans le chapitre « rapports et études », avec leur méthode),
+ni une recommandation. Le ton est documentaire ; les désaccords sont écrits.
+
+**Le gabarit**, fixe, en fin de chapitre de dispositif après la longue période, titré toujours
+« Ce qu'en dit l'économie », une page au plus :
+1. la question ; 2. ce que dit la théorie (deux ou trois résultats, avec leurs hypothèses) ;
+3. ce que mesure l'empirique (synthèses internationales avec plages, puis Tunisie) ; 4. ce que
+le praticien retient (points de vigilance, ordres de grandeur, ce qui est établi, ce qui est
+débattu, ce que les données tunisiennes ne tranchent pas). Dernière ligne : « Littérature
+arrêtée au <mois année> ». Revue annuelle des sections, consignée au backlog.
+
+**Les garde-fous** : pas de « on sait que » sans référence ; aucun chiffre sans sa plage, son
+pays et sa période ; la section ne se mêle ni au budgétaire ni au droit, et aucun de ses chiffres
+n'entre dans un tableau de paramètres, une figure de série ou le modèle ; pas de recommandation,
+même implicite. Les PDF cités vont dans `tunisia-data`, les clés dans `references.json`.
+
+**Ce qui se partage** : une annexe du site « Les notions de l'économie publique » (sur le modèle
+de l'annexe sur le PIB) définit une fois incidence, élasticité, effet de revenu et de
+substitution, taux marginal effectif, perte sèche, ciblage, économie politique des réformes ;
+chaque section y renvoie, et le glossaire bilingue reçoit les termes. Le livre de la
+redistribution (partie VI) est le lieu où ces sections se composent.
+
+**Qui l'écrit** : le rôle « économiste » (`docs/agents/economiste.md`, niveau raisonnement),
+qui rend une fiche datée `docs/notes/eco-<dispositif>.md` ; le rédacteur en tire la section.
+La fiche est la source, la section le résumé.
+
+**Pilotes** : la compensation de l'énergie (incidence des subventions ; le chapitre d'incidence
+existe) et le salaire minimum (littérature abondante, débat connu). On juge le gabarit sur ces
+deux-là avant d'étendre.
+
 ## Les phases
 
 Chaque phase : une branche, un worktree, `scripts/verifier.sh` sur tous les livres touchés,
@@ -89,6 +124,9 @@ rendu FR et AR, aperçu ouvert dans Firefox, PR, fusion sur accord du propriéta
 de modèle est indiqué pour chaque étape (voir la dernière section).
 
 ### Phase 0 — Écrire la doctrine (une PR, petite)
+
+0. Le rôle « économiste » est créé dans cette note (`docs/agents/economiste.md`, `roles.yml`,
+   `.claude/agents/` régénéré). — *fait le 17 octobre 2026*
 
 1. Verser la doctrine ci-dessus dans `docs/conventions-redaction.md` (section nouvelle « Le
    découpage des livres ») et une ligne de renvoi dans `AGENTS.md`. — *raisonnement*
