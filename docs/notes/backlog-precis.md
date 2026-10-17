@@ -2610,8 +2610,7 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     `compensation-tarifs-mt-ht-gaz.md`, la fiche de plan
     `compensation-electricite-gaz-plan-architecte.md` et la note
     `compensation-electricite-gaz-objets-des-reformes.md` — **converti le 17 octobre 2026 au
-    format « ruptures au premier plan, détail replié »** (branche
-    `chantier/compensation-electricite-gaz-ruptures`, non fusionnée) : vue d'ensemble (tarif des
+    format « ruptures au premier plan, détail replié »** (fusionné le 17 octobre 2026, #453) : vue d'ensemble (tarif des
     ménages en cinq dates) ; mise en place jusqu'en 1982 ; quatre réformes (1984, 1991-1992,
     2014, 2015) et les grilles des ménages en trois blocs repliés ; état du droit au 1er janvier
     2024 (grille de 2022, taxe du Fonds de transition énergétique, homologation des prix) ; gaz
@@ -2663,6 +2662,23 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     du § 9 de la note `compensation-electricite-gaz-objets-des-reformes.md` (tranche
     économique, tranche normale, Fonds de transition énergétique, homologation des prix,
     décision ministérielle).
+  - **Séries d'achat du gaz et de coût de l'électricité de la STEG** (17 octobre 2026,
+    `compensation-electricite-gaz-series-steg.md`, 23 séries de travail hors dépôt) : le prix
+    moyen d'achat de la tep gaz est publié par la STEG dans ses états financiers avec notes
+    (2013-2023 ; 2007-2013 par le rapport de contrôle de 2014 ; 90,8 DT/tep administré de 1993
+    à 2006) ; la valeur FOB du gaz algérien par l'ETAP (2005, 2008-2014), puis le prix
+    d'importation de l'Observatoire (2013-2025) ; le coût de revient du kWh pour 1996-1998,
+    2000-2004, 2008-2018 et 2022-2025 ; les prélèvements de gaz par source de 2001 à 2024.
+    **Rupture** : note 11 des états financiers 2014, p. 23 — depuis 2007 le gaz est enregistré
+    à sa valeur économique et la différence figure en subvention d'exploitation, égale au
+    « soutien total » du rapport de contrôle de 2014 pour 2007-2013 ; les coûts d'avant et
+    d'après 2007 ne se chaînent pas. **À faire** : deux figures de longue période (prix d'achat du
+    gaz 2007-2023, coût de revient du kWh en trois segments) en familles séparées, avec les ruptures de
+    2007 et de 2015 marquées ; verser les références (états financiers, rapports de l'ETAP,
+    rapport de contrôle de 2014) quand elles seront citées ; coût par filière et achats
+    d'électricité par fournisseur : aucune série publiée, à demander à la STEG ; fiche
+    `r-prix-gaz-commercial-concessions-apres-2000` (décret n° 2000-1027 et ses suites) ;
+    états financiers 2024 introuvables ; rapports de l'ETAP de 2006 et 2007 à océriser ou réparer.
   - **Structure des prix des carburants** (`_carburants.qmd`, `#sec-compensation-structure-prix`),
     sur `compensation-archives-energie.md` et `compensation-structure-prix-relue.md` — écrit :
     lecture du tableau de la *Conjoncture énergétique*, 24 structures datées de 2014 à 2022
