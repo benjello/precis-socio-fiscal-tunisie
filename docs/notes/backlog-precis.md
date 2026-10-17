@@ -596,7 +596,9 @@ liste qui suit le tableau, citations comprises. Restent :
   (décret du 19 avril 1912, décret n° 68-104), décret du 18 juillet 1957 sur les habous privés
   (fascicule absent du corpus), dates d'effet de quatorze lois de finances, réalisations
   budgétaires par article (seules les prévisions du tableau A sont lues ; rupture de
-  nomenclature en 2020), études empiriques tunisiennes sur l'effet des droits de mutation. Fiche
+  nomenclature en 2020), études empiriques tunisiennes sur l'effet des droits de mutation. Plan de l'architecte : `fiscalite-patrimoine-immobilier-plan-architecte.md` (décisions du propriétaire du
+  17 octobre 2026 : cinq réformes, histoire de la plus-value déplacée de l'IRPP, antécédents du droit musulman et de la réforme
+  de 1885, prévisions du tableau A en figure). Fiche
   `r-pv-immobiliere-modificatifs-2023`. Les fiches sur la loi foncière de 1885, l'enregistrement du
   protectorat et le décret de 1957 seront versées avec le chapitre qui leur donne un domicile.
 
