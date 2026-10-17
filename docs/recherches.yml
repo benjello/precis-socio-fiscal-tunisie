@@ -1853,7 +1853,7 @@
   - 'Xe et XIIe Plans, plan 2023-2025 : aucune adresse trouvée'
 
 - id: r-separation-hydrocarbures-2014-texte
-  objet: acte formalisant la séparation des opérations de commercialisation des hydrocarbures (procès-verbaux des séances de travail ministérielles des 21 mai et 30 décembre 2014 ; décret, arrêté ou circulaire fixant les nouveaux prix de cession du brut à la STIR et du gaz à la STEG, ou abrogeant l'arrêté du 8 octobre 1993)
+  objet: acte formalisant la séparation des opérations de commercialisation des hydrocarbures (procès-verbaux des séances de travail ministérielles des 21 mai et 30 décembre 2014 ; décret, arrêté ou circulaire fixant les nouveaux prix de cession du brut à la STIR et du gaz à la STEG, ou abrogeant la décision (قرار) du ministre de l'économie nationale du 8 octobre 1993)
   ou: [precis/fr/compensation/_carburants.qmd#sec-compensation-rupture-2015]
   requetes:
     titres_fts: [(petrole OR gaz OR hydrocarbures OR raffinage) AND (prix OR cession OR commercialisation)]
@@ -1872,7 +1872,7 @@
   a_faire:
   - 'intitulés arabes de jort_cache et miroir iort : فصل عمليات تسويق المحروقات'
   - rapport d'audit du secteur de l'énergie annoncé pour décembre 2014 ; rapports de la Cour des comptes sur le règlement des budgets 2015 et 2016
-  - 'arrêté du 8 octobre 1993 fixant le prix de cession du gaz à la STEG : fascicules de l''automne 1993'
+  - 'décision (قرار) du 8 octobre 1993 fixant le prix de cession du gaz à la STEG : voir la fiche r-decision-1993-10-08-prix-cession-gaz'
 
 - id: r-arrete-prix-petroliers-1980-12-31
   objet: arrêté du 31 décembre 1980 fixant les prix des produits pétroliers, abrogé par l'arrêté du ministre de l'économie nationale du 23 juin 1981 (art. 13) et visé par lui (forfait de transport uniforme, art. 7)
@@ -1941,10 +1941,16 @@
     couverture: 'Seconde passe du 6 octobre 2026 : un acte est nommé sans être lu — la « Décision du Ministre de l''Industrie du 10/08/2000 », que l''Agence de promotion de l''industrie cite comme source de la grille électricité et gaz du 15 août 2000 (pages archivées de 2003). Elle n''est pas dans le plein texte de l''édition française du Journal officiel de 1994 à 2006 (1 356 fascicules décodés ; semaines des ajustements de 1994, 2000, 2001, 2003 et 2004 vérifiées une à une), non plus que les actes d''octobre 1993, juin 1994, août 2001, avril 2003 et mai 2004. Lacunes : édition arabe ; 2007-2026 au plein texte décodé ; fascicules à couche faible.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local, web]
+    couverture: 'Décret n° 2015-307 lu (JORT n° 46 du 9 juin 2015, p. 1134, édition française) : il ne modifie que le dernier paragraphe de l''art. 5 du décret n° 91-1996 et ne touche pas au tableau A, dont la version en vigueur est celle du décret n° 95-1142 (n° 9, « Electricité eau et gaz »), lu à l''image. Loi n° 2015-36, art. 78 : les textes d''application de la loi n° 91-64 restent en vigueur. Aucun texte signé le 5 mars 2013 (décision citée par la grille du tarif interruptible de la STEG) ni le 10 août 2000 dans jort_cache. Documents de la STEG du 1er mai 2014 (basse tension à 90 ppp, les autres à 60 ppp, copies dans tunisia-data) : aucune référence d''acte lisible. Lacunes : avis et communications de 1993 non lus à l''image ; plein texte 2013-2026 non balayé ; édition arabe non parcourue au plein texte ; documents de 2014 à relire à plus haute résolution.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
   - lire à l'image les « avis et communications » des JORT n° 75 à 86 de 1993 (5 octobre-12 novembre)
-  - lire le décret n° 2015-307 du 1er juin 2015, qui modifie le décret n° 91-1996
   - demander à la STEG la nature et la référence de l'acte qui homologue chaque grille depuis 1992
+  - relire à plus haute résolution les documents tarifaires de la STEG du 1er mai 2014 (moyenne tension, haute, moyenne et basse pression) pour exclure une mention d'acte
 
 - id: r-tarifs-electricite-grilles-1993-2003
   objet: grilles tarifaires de l'électricité et du gaz entre août 1992 et mai 2004 — reste, après la passe du 6 octobre 2026, le jour d'effet et la grille complète d'octobre 1993 et de juin 1994, et les grilles du gaz de 2001 à 2003
@@ -1973,6 +1979,43 @@
   - lire l'étude de l'ANER de 2000 sur l'impact des prix de l'énergie
   - demander à la STEG l'historique des grilles de 1993 à 2003, avec leurs dates d'effet
   - annuaires statistiques de l'INS, prix de l'électricité
+
+- id: r-decision-1993-10-08-prix-cession-gaz
+  objet: acte du ministre de l'économie nationale du 8 octobre 1993 (« قرار » selon le rapport de contrôle de 2014, p. 7 et 22, annexe 10), nature non établie, fixant à 90,800 D/tep le prix de cession à la STEG du gaz algérien et du gaz de la redevance
+  ou: [precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-2015]
+  requetes:
+    titres_fts: [(gaz OR STEG OR energie) AND (prix OR cession OR tarif)]
+    titres_like: ['%gaz%', '%STEG%', '%S.T.E.G%', '%غاز%', '%hydrocarbure%', '%energie%']
+    iort_ar: [غاز, سعر الإحالة, الشركة التونسية للكهرباء والغاز]
+    depuis: 1993-10-08
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local, web]
+    couverture: 'Intitulés de jort_cache 1993-1994 (LIKE et FTS ci-dessus) : aucun texte sur le prix de cession ; seule la loi n° 93-102 (garantie de l''État, British Gas). La note 1 de la p. 7 du rapport de contrôle de 2014 (copie dans tunisia-data) rattache les prix de cession du brut à une lettre ministérielle de 1974 et à des lettres de la direction générale de l''énergie. Reprise de la passe du 6 octobre 2026 (docs/notes/compensation-tarifs-1993-2004.md, § (a)) : OCR intégral des n° 66 à 100 de 1993, édition française, sans résultat. Lacunes : avis et communications des n° 75-86 de 1993 non lus à l''image ; édition arabe non ouverte ; l''annexe 10 du rapport n''est pas reproduite.'
+    couvert_jusqu_au: 1994-12-31
+    resultat: aucun
+  a_faire:
+  - lire à l'image les « avis et communications » des JORT n° 75 à 86 de 1993
+  - édition arabe des fascicules d'octobre-novembre 1993
+  - annexe 10 du rapport de contrôle de 2014
+
+- id: r-decret-91-1996-liste-apres-2015
+  objet: décret gouvernemental remplaçant le décret n° 91-1996 ou modifiant son tableau A (produits soumis à l'homologation des prix) après la loi n° 2015-36 (art. 3 et 78)
+  ou: [precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-autorite]
+  requetes:
+    titres_fts: [(concurrence AND prix) OR (liberte AND prix)]
+    titres_like: ['%المستثناة%', '%تأطيرها%', '%حرية الأسعار%']
+    iort_ar: [المستثناة من نظام حرية الأسعار, تأطيرها]
+    depuis: 2015-09-30
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Intitulés de jort_cache : FTS (concurrence AND prix) OR (liberte AND prix) depuis 2014 ; LIKE arabes sur 2011-2026, 0 résultat. Tous les résultats sont des arrêtés d''exemption de l''article 5 ou des décrets-lois de 2020 sur la répression des infractions. Lacunes : plein texte et miroir iort non parcourus.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte des fascicules depuis 2015, 'miroir iort : intitulés arabes']
 
 - id: r-fiap-texte-fondateur
   objet: texte instituant le fonds d'insertion et d'adaptation professionnelle (FIAP), vers 1990-1991

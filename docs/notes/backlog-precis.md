@@ -2606,29 +2606,63 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     l'image) ; aucun « arrêté interne » de notification n'a été vu. Tarifs de la taxe unique
     après 1981 : non établis.
   - **Électricité et gaz** (`_electricite_gaz.qmd`, `#sec-compensation-electricite-gaz`), sur
-    `compensation-tarifs-electricite-gaz.md`, `compensation-tarifs-1993-2004.md` et
-    `compensation-tarifs-mt-ht-gaz.md` — écrit : autorité tarifaire (arrêtés 1970-1990, décision
-    du 11 août 1992, décision du 10 août 2000 citée par l'API) ; grilles des ménages 1970-1992
-    (Journal officiel), cinq grilles de 1993 à 2003 en deux tableaux (relais officiels ; rapport
-    extérieur seul), 2004-2022 (STEG, établies sur ses documents de 2008 à 2022) ; frise
-    1992-2006 avec la famille de chaque source ; moyenne et haute tension, gaz en moyenne et
-    haute pression, tarifs à postes horaires expliqués ; recette moyenne par kWh donnée comme un
-    calcul ; coût et prix de vente (rapport de contrôle 2008-2012 ; Observatoire 2017-2025 ;
-    BAD 2000-2004, rapport extérieur) ; rapprochement avec la subvention d'exploitation de la
-    STEG. **Restent** : jour d'effet des grilles d'octobre 1993 et de juin 1994 (fiche
-    `r-tarifs-electricite-grilles-1993-2003`, passe consignée) ; moyenne et haute tension et gaz
-    de 1994 à 2003, établis par les notes et non publiés ; grilles du gaz de 2001 à 2003 ;
-    **acte du 10 août 2000 non lu**, actes de 1993, 1994, 2001, 2003 et 2004 non identifiés
-    (fiche `r-tarifs-electricite-gaz-apres-1992`, passe consignée) ; contradiction de 2003 (90
-    ou 94) et écart de 2005 avec l'INS ; **tarifs du Journal officiel de 1975 à 1990 à relire**
-    (moyenne et haute tension, unité de la prime) ; haute tension de septembre 2012, moyenne
-    pression de 2012-2013 ; heures des postes avant 2014 ; ventes en haute tension de 2020 ;
-    grille basse tension du 1er janvier 2014 (source seconde, non publiée) ; arrêtés de 1961,
-    1963, 1976-1981 connus par leur intitulé ; **figure de la facture type**
+    `compensation-tarifs-electricite-gaz.md`, `compensation-tarifs-1993-2004.md`,
+    `compensation-tarifs-mt-ht-gaz.md`, la fiche de plan
+    `compensation-electricite-gaz-plan-architecte.md` et la note
+    `compensation-electricite-gaz-objets-des-reformes.md` — **converti le 17 octobre 2026 au
+    format « ruptures au premier plan, détail replié »** (branche
+    `chantier/compensation-electricite-gaz-ruptures`, non fusionnée) : vue d'ensemble (tarif des
+    ménages en cinq dates) ; mise en place jusqu'en 1982 ; quatre réformes (1984, 1991-1992,
+    2014, 2015) et les grilles des ménages en trois blocs repliés ; état du droit au 1er janvier
+    2024 (grille de 2022, taxe du Fonds de transition énergétique, homologation des prix) ; gaz
+    des ménages ; tarifs des entreprises ; longue période (subvention à la STEG, coût et prix de
+    vente). Sections de dispositifs en domicile unique, registres ancrés `r-eg-…`. Tous les
+    identifiants, clés et couples de citation du départ sont conservés. **Corrigé** :
+    tranche économique de 1984 à **61** millimes (prix unique de 1982 maintenu), non 51 ; la
+    réserve sur la première apparition de la tranche est levée (arrêtés de 1980 et de janvier
+    1981 lus, sans tranche) ; rupture de 1991-1992 datée du 1er janvier 1992 (loi n° 91-64,
+    art. 62) ; tableau A en vigueur celui du décret n° 95-1142 (n° 9) ; décret n° 2015-307 sans
+    effet sur la liste ; taxe du Fonds de transition énergétique instituée sur l'électricité par
+    la loi de finances pour 2019 (art. 68), portée à 5 millimes par celle pour 2024 (art. 51) ;
+    2014 : phrase d'objet du rapport de contrôle (p. 75) et dates divergentes (1er janvier et
+    1er juin selon le rapport, 1er mai selon la grille) exposées sans trancher ; prime de la
+    moyenne tension en dinars par kW et par mois en 1984. Huit références créées (arrêtés de
+    1980 et 1981, loi n° 91-64, décrets n° 95-1142 et 2015-307, loi n° 2015-36, tarif
+    interruptible de 2013). **Restent** (lisibles dans le corpus, sauf mention) :
+    avis et communications des JORT n° 75 à 86 de 1993, à lire à l'image (fiches
+    `r-decision-1993-10-08-prix-cession-gaz` et `r-tarifs-electricite-gaz-apres-1992`) ; actes
+    tarifaires depuis 1992 — 10 août 2000, 5 mars 2013, et ceux d'octobre 1993, juin 1994, août
+    2001, avril 2003, mai 2004 et 2014 — non identifiés au JORT (à demander à la STEG si les
+    archives restent muettes) ; date d'effet des hausses de 2014 (1er janvier et 1er juin, ou
+    1er mai) ; grille basse tension du 1er janvier 2014 et grille résidentielle de mars 2013, à
+    obtenir ; éclairage public de 1984 au-delà de 60 kWh (31 dans l'édition française, 51 dans
+    l'arabe), non repris ; arrêtés du 16 juin 1977 et du 27 février 1978, décret n° 61-47 et
+    arrêtés de 1963 et 1976, connus par leur intitulé (fascicules au corpus) ; décret n° 93-59 et
+    rétablissements des annexes du décret n° 91-1996 (JORT 1992, n° 11 et 30), à lire pour la
+    version du tableau A de 1991 à 1995 ; date de première facturation de la taxe du Fonds de
+    transition énergétique, et aucun décret de taux identifié de 2014 à 2018 ; décret
+    gouvernemental remplaçant la liste après la loi n° 2015-36 (fiche
+    `r-decret-91-1996-liste-apres-2015`) ; jour d'effet des grilles d'octobre 1993 et de juin
+    1994 (fiche `r-tarifs-electricite-grilles-1993-2003`) ; moyenne et haute tension et gaz de
+    1994 à 2003, établis par les notes et non publiés ; grilles du gaz de 2001 à 2003 ;
+    contradiction de 2003 (90 ou 94) et écart de 2005 avec l'INS ; tarifs du Journal officiel
+    de 1975 à 1990 à relire (moyenne et haute tension, unité de la prime de 1975 à 1982) ; haute
+    tension de septembre 2012, moyenne pression de 2012-2013 ; heures des postes avant 2014 ;
+    ventes en haute tension de 2020 ; **figure de la facture type**
     (`fig-compensation-facture-electricite`, TODO figures : TVA et surtaxe municipale à
     reconstituer) ; série de la subvention d'exploitation de la STEG non publiée (notes aux
     états financiers à lire) ; décodage des couches texte du JORT des années 2000 à verser à
-    `docs/notes/outillage-sources.md`.
+    `docs/notes/outillage-sources.md`. **Faits des notes non repris**, par décision du
+    propriétaire (17 octobre 2026), à reprendre éventuellement : partage entre ménages et autres
+    abonnés de l'électricité en 2014 (`compensation-tarifs-electricite-gaz.md`, (ii)) ; tarif du
+    gaz de 1982 (146 millimes le m³) ; tarif propre des cimentiers en 2016. **À corriger hors du
+    chapitre** : `_carburants.qmd` (l. 29, légende de `tbl-compensation-prix-cession`) écrit
+    encore « arrêté du ministre de l'Économie nationale du 8 octobre 1993 » ; la nature de
+    l'acte n'est pas établie (« قرار » selon le rapport de contrôle). Bibliographe : doublon
+    `lf-2019` (Fiscalité) / `loi2018-56-lf2019` (fonds commun) à résoudre. Terminologue : notions
+    du § 9 de la note `compensation-electricite-gaz-objets-des-reformes.md` (tranche
+    économique, tranche normale, Fonds de transition énergétique, homologation des prix,
+    décision ministérielle).
   - **Structure des prix des carburants** (`_carburants.qmd`, `#sec-compensation-structure-prix`),
     sur `compensation-archives-energie.md` et `compensation-structure-prix-relue.md` — écrit :
     lecture du tableau de la *Conjoncture énergétique*, 24 structures datées de 2014 à 2022
