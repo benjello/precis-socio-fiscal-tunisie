@@ -69,8 +69,7 @@ de modèle est indiqué pour chaque étape (voir la dernière section).
 ### Phase 1 — Les parties sur la page d'accueil (une PR, petite)
 
 1. `precis/fr/index.qmd` : les cartes des livres rangées en cinq parties, la règle de domicile
-   en un paragraphe ; les entreprises publiques et la santé y entrent (elles sont aujourd'hui
-   hors page d'accueil ou à part). — *standard*
+   en un paragraphe ; la liste numérotée actuelle des onze livres disparaît. — *standard*
 2. L'arabe suit par la traduction ; ne pas écrire `precis/ar/index.qmd`. — *rien à faire*
 
 ### Phase 2 — La fusion « Le financement et les caisses de la sécurité sociale » (la plus lourde)
@@ -88,8 +87,8 @@ de modèle est indiqué pour chaque étape (voir la dernière section).
 Étapes :
 
 1. **Inventaire de départ** (copie hors dépôt) : identifiants `sec-`/`tbl-`/`fig-` des deux
-   livres, collisions éventuelles, liens entrants (`../caisses/…` : environ 60 dans 20 fichiers
-   français), clés de `references.json` des deux livres. — *standard*
+   livres, collisions éventuelles, liens entrants (`../caisses/…` : 33 dans 23 fichiers français hors
+   du livre, au 17 octobre 2026), clés de `references.json` des deux livres. — *standard*
 2. **Déplacement** : les chapitres de `caisses/` dans le dossier retenu, avec un nouveau nom
    pour `caisses/index.qmd` (son contenu devient un chapitre « Les caisses » ou se fond dans la
    présentation commune) ; `figures/`, `figdata/`, `_fig/` réunis ; `references.json` fusionnés
