@@ -6,19 +6,22 @@ cesse de couper deux fois. Plan à lancer plus tard, phase par phase, une PR par
 
 ## La doctrine, en une page
 
-**Le site en cinq parties**, sur la page d'accueil :
+**Le site en six parties**, sur la page d'accueil (révisé le 17 octobre 2026, après-midi) :
 
-| Partie | Livres |
-|---|---|
-| I. Les revenus du travail | Le marché du travail ; Les rémunérations publiques |
-| II. Les prélèvements | La fiscalité ; Les finances locales ; Le financement et les caisses de la sécurité sociale |
-| III. Les transferts | Les retraites ; Les prestations sociales ; La santé ; La compensation |
-| IV. Les institutions | Les entreprises publiques |
-| V. La synthèse | La redistribution (à écrire quand `ceq-tunisie` donnera des séries sourcées) |
+| Partie | Livres | Principe |
+|---|---|---|
+| I. Les revenus primaires | Le marché du travail ; Les rémunérations publiques | flux |
+| II. Les prélèvements | La fiscalité ; Les finances locales ; Le financement et les caisses de la sécurité sociale | flux |
+| III. Les transferts en espèces | Les retraites ; Les prestations sociales | flux |
+| IV. Les politiques sectorielles | La santé ; La compensation (énergie et prix) ; plus tard : le transport, l'éducation, le logement, l'environnement | secteur |
+| V. Les institutions | Les entreprises publiques | institution |
+| VI. La synthèse | Le cadre des finances publiques ; La redistribution | ensemble |
 
 Le livre « Le financement et les caisses » est rangé en II parce que son objet premier est ce
 qui est prélevé ; il porte aussi les caisses comme institutions. Les finances locales restent
-en II, avec leurs chapitres sur les collectivités.
+en II, avec leurs chapitres sur les collectivités. La santé et la compensation sont des livres
+de politique sectorielle : ils tiennent ce qui n'existe que pour leur secteur et renvoient aux
+livres de flux pour les instruments généraux.
 
 **La règle de domicile au niveau du livre**, écrite une seule fois, sur la page d'accueil et
 dans `docs/conventions-redaction.md` :
@@ -30,11 +33,38 @@ dans `docs/conventions-redaction.md` :
 - ce qui est servi en nature (les soins) → **La santé** ;
 - un prix ou un tarif administré → **La compensation** ;
 - une règle de salaire → **Les revenus du travail** ;
-- le statut et les comptes d'une entreprise publique → **Les entreprises publiques**.
+- le statut et les comptes d'une entreprise publique → **Les entreprises publiques** ;
+- **un dispositif vit dans le livre sectoriel quand il n'existe que pour ce secteur** (bourses,
+  cantines, tarif du transport public) ; il vit dans le livre de flux quand il est un cas d'un
+  instrument général (déduction fiscale pour frais de scolarité → fiscalité ; salaire des
+  enseignants → rémunérations publiques). Le livre sectoriel reçoit une ligne et un lien ;
+- **le précis documente la loi là où elle fixe un revenu ou un droit ; là où elle ne fait que
+  prélever, le livre de l'instrument suffit**, et la synthèse montre la composition des revenus.
+  C'est pourquoi la partie I n'a pas de livre du capital : ses règles sont fiscales ;
+- **l'état du droit de chaque dispositif dit la population couverte et son complément**, avec
+  sa série. L'informel n'est pas un livre : une colonne dans chaque état du droit, un chapitre
+  de formalisation dans le marché du travail, un chapitre de couverture dans la synthèse.
 
 L'autre livre reçoit une phrase et un lien en tête de section ; ou, quand la lecture ne peut
 pas avancer sans, une figure ou un tableau court tiré des mêmes données, jamais la prose
 recopiée.
+
+**Les livres sectoriels** suivent le plan type, mais leur épine est budgétaire plus que
+législative (programmes, plans, lois d'orientation) : institution, dépense sur la longue
+période, dispositifs à flux monétaire, études. Ils s'appuient sur `tunisia-data`, pas sur le
+modèle. La réglementation sans effet budgétaire ni distributif n'y entre pas.
+
+**Le cadre des finances publiques** (partie VI, livre court à écrire avant toute politique
+sectorielle nouvelle) : le périmètre des administrations publiques et les nomenclatures ; les
+recettes par nature et la dépense par fonction (nomenclature fonctionnelle des lois de finances
+depuis la loi organique de 2019, COFOG), sur la longue période ; les comptes de la sécurité
+sociale et des collectivités dans l'ensemble ; les comptes des ménages (composition du revenu
+par source) ; la couverture (population active, salariés déclarés, affiliés, contribuables,
+bénéficiaires de l'assistance). Il absorbe l'annexe sur le PIB. Chaque chapitre de longue
+période des autres livres rapporte ses séries à ce cadre, qui sert de contrôle de cohérence
+et de carte des manques. Sources à cataloguer dans `tunisia-data` : comptes nationaux de
+l'INS (publications déjà cataloguées), TOFE, dépense par fonction, comptes des ménages,
+enquête emploi, contribuables par régime.
 
 **Les types de chapitres**, reconnaissables à leur titre : dispositif (plan type à épine
 chronologique) ; institution (naissance, statut, ce qu'elle sert, comptes, longue période) ;
@@ -68,7 +98,7 @@ de modèle est indiqué pour chaque étape (voir la dernière section).
 
 ### Phase 1 — Les parties sur la page d'accueil (une PR, petite)
 
-1. `precis/fr/index.qmd` : les cartes des livres rangées en cinq parties, la règle de domicile
+1. `precis/fr/index.qmd` : les cartes des livres rangées en six parties, la règle de domicile
    en un paragraphe ; la liste numérotée actuelle des onze livres disparaît. — *standard*
 2. L'arabe suit par la traduction ; ne pas écrire `precis/ar/index.qmd`. — *rien à faire*
 
@@ -155,6 +185,14 @@ présentations), et la carte là où elle manque. — *standard*, relu par le pr
 
 ### Plus tard
 
+- Chapitres à écrire, issus de la réflexion du 17 octobre : le travail indépendant et informel,
+  statuts et formalisation (marché du travail) ; l'épargne et le capital (fiscalité) ; les
+  conventions bilatérales de sécurité sociale (retraites) ; les produits de base, prix à la
+  consommation et à la production (compensation) ; la rémunération réglementée de l'épargne
+  (fiscalité, ou livre « L'épargne et le patrimoine » en partie I s'il grossit).
+- Ordre des politiques sectorielles : le cadre des finances publiques d'abord ; puis
+  l'éducation ; le transport (qui réorganise plus qu'il n'ajoute) ; l'environnement en dernier.
+
 - Le livre de synthèse sur la redistribution (partie V), quand `ceq-tunisie` donnera des
   séries sourcées.
 - Le titre du marché du travail : inchangé ; le droit du travail qui détermine les revenus y
@@ -184,3 +222,73 @@ Autres économies :
   niveau indiqué, une phase à la fois.
 - Donner aux sous-agents les plages de lignes plutôt que des fichiers de 37 000 mots entiers.
 - Les inventaires et la réécriture des liens se font par script, pas par lecture.
+
+## L'arborescence cible à trois niveaux (17 octobre 2026)
+
+État de chaque ligne : inchangé, nouveau, fusion, scindé, déplacé, annexe, à écrire. Les quatre
+chapitres au-dessus du seuil de 25 000 mots sans décision prise (politiques de l'emploi, régimes
+d'incitation, assistance sociale, régime de la CNRPS) sont à faire juger par l'architecte au
+moment de leur conversion, pas avant.
+
+**I. Les revenus primaires**
+- Le marché du travail : présentation ; notions (cadre) ; institutions du travail (cadre) ;
+  salaire minimum ; conventions collectives ; négociations salariales, le volet public passe
+  aux rémunérations publiques ; politiques de l'emploi (29 800 mots, scission possible) ;
+  le travail indépendant et informel (à écrire) ; le droit du travail et les revenus (à
+  écrire) ; annexes : conventions branche par branche, glossaire.
+- Les rémunérations publiques : présentation (à ramener au modèle) ; les quatre régimes
+  (inchangés) ; les accords salariaux du secteur public (nouveau, reçu du marché du travail) ;
+  annexes : références, glossaire.
+
+**II. Les prélèvements**
+- La fiscalité : présentation ; IRPP ; IS ; TVA ; droits de consommation ; impôt sur la
+  fortune ; régimes d'incitation (26 300 mots, scission possible) ; dépenses fiscales (longue
+  période) ; à écrire : enregistrement et timbre, douane, épargne et capital, taxes affectées ;
+  annexes : tableaux de la TVA, glossaire.
+- Les finances locales : inchangé.
+- Le financement et les caisses de la sécurité sociale (fusion) : présentation commune
+  (nouveau) ; partie « Les caisses » : histoire, statut, l'État et les caisses (déplacés) ;
+  partie « Les cotisations » : assiette, taux global, pensions, maladie, AT/MP, autres
+  branches, autres prélèvements sur salaires, ce qui distingue les régimes — domicile de la
+  carte des régimes (inchangés) ; partie « Les comptes » : comptabilité par régime avec la
+  ventilation du taux global à un seul endroit (fusion), recouvrement et rendement, longue
+  période (déplacé) ; annexes : les textes dans l'ordre, notations, textes modificatifs,
+  glossaire.
+
+**III. Les transferts en espèces**
+- Les retraites : présentation élargie (synthèse historique, vue des deux secteurs) ; partie
+  « Le secteur privé » (scission) : salariés non agricoles, régimes agricoles, régime
+  complémentaire, non-salariés et régimes particuliers ; partie « Le secteur public » :
+  régime de la CNRPS (inchangé), régimes spéciaux et militaires (scission possible) ; les
+  conventions bilatérales de sécurité sociale (à écrire) ; annexes : notations, textes
+  modificatifs du décret n° 74-499 et de la loi n° 85-12, glossaire.
+- Les prestations sociales : présentation ; qui est couvert — vue tirée des données du livre
+  du financement (allégé) ; prestations familiales ; les prestations en espèces des autres
+  risques, section « assurance maladie » réduite à un renvoi (allégé, titre raccourci) ;
+  assistance sociale (26 400 mots, scission possible) ; glossaire.
+
+**IV. Les politiques sectorielles**
+- La santé : inchangé.
+- La compensation : présentation ; la Caisse (institution), dont le registre absorbe « Les
+  réformes, texte par texte » (fusion) ; carburants ; électricité et gaz ; transport public ;
+  les produits de base, prix à la consommation et à la production (à écrire) ; la dépense
+  budgétaire (longue période) ; rapports et études : incidence et rapports extérieurs réunis
+  (fusion) ; glossaire.
+- Plus tard : le transport ; l'éducation ; le logement ; l'environnement.
+
+**V. Les institutions**
+- Les entreprises publiques : présentation ; la relation financière (13 600 mots, à découper
+  par dispositif quand le brouillon sera relu) ; rapports et études : le Livre blanc de 2018
+  (à extraire) ; annexes : liste 1997-2021, glossaire.
+
+**VI. La synthèse**
+- Le cadre des finances publiques (à écrire) : périmètre et nomenclatures ; recettes et
+  dépense par fonction ; sécurité sociale et collectivités dans l'ensemble ; comptes des
+  ménages ; la couverture : qui est dans le système ; annexe : le PIB et ses bases.
+- La redistribution (à écrire) : méthode ; prélèvements et transferts par décile ; coin
+  socio-fiscal ; subventions et leur incidence.
+
+Hors livres : page d'accueil (six parties, règle de domicile), « À propos », glossaire bilingue.
+
+Décisions prises avec l'arborescence : la carte des régimes vit dans le livre du financement ;
+les accords salariaux du public passent aux rémunérations publiques.
