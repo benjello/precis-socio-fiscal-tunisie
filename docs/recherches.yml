@@ -2848,3 +2848,27 @@
     couverture: 'Recherche web « comptes de la santé » Tunisie 2012 2013 2014 : article de synthèse Ben Abdelaziz et al. 2018 (récupéré) ; page http://www.santetunisie.rns.tn/fr/index.php/actualites/460-le-financement-de-la-sante-en-tunisie-resultats-des-comptes-de-la-sante-pour-les-annees-2012-et-2013 : aucune réponse du serveur ; capture des archives du web du 7 mars 2024 : l''identifiant 460 affiche une autre actualité, aucun PDF des comptes. Lacunes : index des captures de santetunisie.rns.tn/images/ non filtré utilement ; portail de l''OMS (rapports nationaux des comptes de la santé) non parcouru. Note : docs/notes/sante-series-etudes-2026-10-15.md, § 9.'
     couvert_jusqu_au: 2026-10-15
     resultat: aucun
+
+- id: r-prix-gaz-commercial-concessions-apres-2000
+  objet: texte modifiant ou remplaçant le décret n° 2000-1027 du 15 mai 2000 (prix du gaz commercial écoulé sur le marché local par les titulaires de concessions d'exploitation d'hydrocarbures), et conventions particulières de prix, dont celle du champ de Miskar (0,85 fois le fuel à haute teneur en soufre selon l'ANER, p. 29, contre 0,80 pour Franig et Baguel et 80 % de ce prix dans le décret)
+  ou: [precis/fr/compensation/_electricite_gaz.qmd#sec-compensation-eg-longue-periode]
+  requetes:
+    titres_fts:
+    - '"gaz commercial"'
+    - prix AND gaz AND concessions
+    - gaz AND algerienne AND (redevance OR prelevement OR transport)
+    iort_ar: [سعر الغاز التجاري, لزمات استغلال المحروقات, المنتج انطلاقا من لزمات]
+    depuis: 2000-05-15
+  periode:
+    jusqu_au: 2026-10-02
+    motif: dernier fascicule de jort_cache à la date de la passe
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, intitulés seulement : FTS sur « gaz commercial », sur prix et gaz et concessions, et sur gaz et algérien et (redevance ou prélèvement ou transport), toutes années → seul le décret n° 2000-1027 (JORT n° 40 de 2000, p. 1107, lu à l''image : P = 80 % du fuel à 1 % de soufre FOB Méditerranée-Italie, moyenne des neuf mois précédents), plus les textes de transit (loi n° 2005-102, décrets n° 2006-458, 2006-1823 et 1824, 2006-3265, 2007-2194, 2007-2378 et 2379) ; LIKE arabe %غاز% croisé avec %سعر%, %أسعار%, %أتاوة% et %إتاوة% → loi n° 2019-71 et décret gouvernemental n° 2019-824 (redevance de transit), aucun texte de prix. Lacunes : plein texte non parcouru ; miroir iort non interrogé ; aucun modificatif du décret n° 2000-1027 identifié, la recherche étant insuffisante depuis 2011.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte et le miroir iort avec les termes arabes de iort_ar
+  - lire les conventions de concession (Miskar, Franig, Baguel) si elles sont publiées
