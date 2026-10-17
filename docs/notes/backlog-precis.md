@@ -578,6 +578,28 @@ liste qui suit le tableau, citations comprises. Restent :
   pétroliers (terminologue), que l'instantané arabe laisse en français, comme le faisait
   déjà le livre arabe.
 
+- **Le patrimoine immobilier : mutations, plus-values, antécédents fonciers** (17 octobre 2026,
+  `fiscalite-patrimoine-immobilier-mutations-plus-values.md`, chapitre à écrire dans le livre de la
+  fiscalité ; manque n° 6 de la revue du 5 octobre). Lu au *Journal officiel* : droits
+  d'enregistrement sur les mutations d'immeubles de 1969 à 2026 (barème de 1984 pour les terrains
+  d'habitat individuel, taux de 5 % depuis la loi n° 87-73, code de 1993, droits complémentaires de
+  2017, barème progressif limité à la première acquisition depuis 2024) ; plus-values immobilières
+  de la loi de finances pour 1977 à 2023 (30 à 15 % en 1977, 15 % en 1990, 10 et 5 % depuis la loi
+  n° 98-73, 15 et 10 % depuis 2013, aucun changement de taux depuis). **Le rapport de 2014 sur
+  l'accès au foncier est corrigé sur douze points** (note, § 2) : ses taux sont périmés, il date le
+  barème progressif de 1993 au lieu de 1984, confond la plus-value et une « taxe », et se trompe
+  de rang pour « Paying taxes » (60e, non 106e). **À corriger dans `_impot_revenu.qmd`** : la
+  majoration de 10 % par année de détention existe dès 1977, non 1990 ; la condition de première
+  cession date de la loi de finances pour 2005, non de 2023 ; la condition de durée disparaît en
+  1993 ; la loi de finances pour 2023 supprime aussi l'exclusion des terres agricoles. **À obtenir
+  ou à lire** : loi foncière de 1885 et décret de 1886, droit de l'enregistrement d'avant 1956
+  (décret du 19 avril 1912, décret n° 68-104), décret du 18 juillet 1957 sur les habous privés
+  (fascicule absent du corpus), dates d'effet de quatorze lois de finances, réalisations
+  budgétaires par article (seules les prévisions du tableau A sont lues ; rupture de
+  nomenclature en 2020), études empiriques tunisiennes sur l'effet des droits de mutation. Fiche
+  `r-pv-immobiliere-modificatifs-2023`. Les fiches sur la loi foncière de 1885, l'enregistrement du
+  protectorat et le décret de 1957 seront versées avec le chapitre qui leur donne un domicile.
+
 ## Retraites
 
 - **Taux d'équilibre et figures du RSNA prolongés à 2018 (5 octobre 2026).**
