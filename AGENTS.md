@@ -1,7 +1,7 @@
 # Consignes pour les agents
 
-Ce fichier s'adresse à tout agent — quel que soit l'outil — qui travaille sur le « Précis de la
-législation socio-fiscale de la Tunisie », ou sur les dépôts de modèle qui l'alimentent. Il est
+Ce fichier s'adresse à tout agent — quel que soit l'outil — qui travaille sur le « Précis des
+politiques publiques de la Tunisie », ou sur les dépôts de modèle qui l'alimentent. Il est
 versionné : c'est ici que les conventions vivent, pas dans la mémoire d'un assistant.
 
 ## Le dépôt en deux phrases
@@ -67,6 +67,11 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 ## Écrire dans le précis
 
 `docs/conventions-redaction.md` fait foi. Les règles qu'on oublie le plus :
+
+- **Le découpage des livres** (six parties, domicile d'un dispositif entre livres, types de
+  chapitres, critère de scission, antécédent et contexte, section « Ce qu'en dit l'économie ») est
+  énoncé dans `docs/conventions-redaction.md`, § 4 ; le chantier, dans
+  `docs/notes/chantier-decoupage-livres.md`.
 
 - **Tiens `docs/notes/backlog-precis.md` à jour quand tu modifies un chapitre.** Dans le même
   changement, retire les tâches closes, inscris les lacunes nouvelles et indique si le texte

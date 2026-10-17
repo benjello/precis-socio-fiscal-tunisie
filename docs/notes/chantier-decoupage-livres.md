@@ -13,7 +13,7 @@ cesse de couper deux fois. Plan à lancer plus tard, phase par phase, une PR par
 | I. Les revenus primaires | Le marché du travail ; Les rémunérations publiques | flux |
 | II. Les prélèvements | La fiscalité ; Les finances locales ; Le financement et les caisses de la sécurité sociale | flux |
 | III. Les transferts en espèces | Les retraites ; Les prestations sociales | flux |
-| IV. Les politiques sectorielles | La santé ; La compensation (énergie et prix) ; plus tard : le transport, l'éducation, le logement, l'environnement | secteur |
+| IV. Les politiques sectorielles | La santé ; La compensation (énergie et prix) ; L'éducation ; plus tard : le transport, le logement, l'environnement | secteur |
 | V. Les institutions | Les entreprises publiques | institution |
 | VI. La synthèse | Le cadre des finances publiques ; La redistribution | ensemble |
 
@@ -157,8 +157,8 @@ de modèle est indiqué pour chaque étape (voir la dernière section).
 
 ### Phase 1 — Les parties sur la page d'accueil (une PR, petite)
 
-0. **Le titre devient « Précis des politiques publiques de la Tunisie »** (décidé le 17 octobre
-   2026), sous-titre « la législation, le budget et ce qu'en dit l'économie, texte par texte ».
+0. **Le titre devient « Les politiques publiques de la Tunisie », sous-titre « Précis historique, juridique et économique »** (décidé le 20 octobre
+   2026 ; le 17 octobre, « Précis des politiques publiques de la Tunisie », et le sous-titre « la législation, le budget et ce qu'en dit l'économie, texte par texte », jugé trop pompeux).
    À changer : `precis/fr/index.qmd`, `precis/fr/a-propos.qmd` (l'arabe suit par la traduction ;
    `precis/ar/a-propos.qmd` et le titre arabe des `_quarto.yml` à la main), `README.md`,
    `AGENTS.md`, `docs/agents/*.md` (puis `sync_agents.py`), les couvertures PDF, les modèles de

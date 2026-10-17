@@ -216,3 +216,89 @@ symboles, ni valeur ni mot (pas de `\text{}` : seule la prose se traduit), et é
 daté. Notation unique par chapitre (un symbole, une grandeur) : chaque symbole est défini à sa
 première formule, ou juste après sa mention, jamais avant ; la liste complète va en annexe de
 chapitre, non à la première formule.
+
+## 4. Le découpage des livres
+
+Décidé le 17 octobre 2026. Le détail, les phases et l'arborescence cible à trois niveaux vivent
+dans `docs/notes/chantier-decoupage-livres.md` ; cette section en donne les règles, que chaque
+rôle applique.
+
+**Six parties.** Les livres se rangent par ce que le texte documente, non par l'ordre où ils ont
+été écrits.
+
+| Partie | Livres | Principe |
+|---|---|---|
+| I. Les revenus primaires | Le marché du travail ; les rémunérations publiques | flux |
+| II. Les prélèvements | La fiscalité ; les finances locales ; le financement et les caisses de la sécurité sociale | flux |
+| III. Les transferts en espèces | Les retraites ; les prestations sociales | flux |
+| IV. Les politiques sectorielles | La santé ; la compensation ; l'éducation ; plus tard le transport, le logement, l'environnement | secteur |
+| V. Les institutions | Les entreprises publiques | institution |
+| VI. La synthèse | Le cadre des finances publiques ; la redistribution | ensemble |
+
+**La règle de domicile entre livres.** Un dispositif vit dans un seul livre ; l'autre en reçoit
+une phrase et un lien en tête de section, ou, quand la lecture ne peut pas avancer sans, une figure
+ou un tableau court tiré des mêmes données, jamais la prose recopiée.
+
+- Ce qui est prélevé (taux, assiette, ventilation entre branches), l'organisme qui le gère et ses
+  comptes : le livre du financement et des caisses de la sécurité sociale.
+- Ce qui est servi en espèces (pension, allocation, indemnité) : les retraites ou les prestations
+  sociales.
+- Ce qui est servi en nature (les soins) : la santé.
+- Un prix ou un tarif administré : la compensation.
+- Une règle de salaire : les revenus du travail (marché du travail, rémunérations publiques).
+- Le statut et les comptes d'une entreprise publique : les entreprises publiques.
+
+**Les livres sectoriels.** Un dispositif vit dans le livre sectoriel quand il n'existe que pour ce
+secteur (bourses, cantines, tarif du transport public) ; il vit dans le livre de flux quand il est
+un cas d'un instrument général (déduction fiscale pour frais de scolarité : fiscalité ; salaire des
+enseignants : rémunérations publiques). Leur épine est budgétaire plus que législative :
+institution, dépense sur la longue période, dispositifs à flux monétaire, études. La
+réglementation sans effet budgétaire ni distributif n'y entre pas.
+
+**La loi là où elle fixe un revenu ou un droit.** Là où elle ne fait que prélever, le livre de
+l'instrument suffit, et la synthèse montre la composition des revenus.
+
+**La population couverte.** L'état du droit de chaque dispositif a une colonne « population
+couverte », avec son complément et sa série. L'informel n'est pas un livre : c'est cette colonne,
+un chapitre de formalisation dans le marché du travail, un chapitre de couverture dans la
+synthèse.
+
+**Les types de chapitres**, reconnaissables à leur titre : dispositif (plan type à épine
+chronologique) ; institution (naissance, statut, ce qu'elle sert, comptes, longue période) ;
+cadre (notions, un seul par livre, en tête) ; longue période du livre (budgétaire seul) ; rapports
+et études (chacun avec sa méthode). Les notations, listes, textes modificatifs et tableaux annexés
+sont des annexes, déclarées comme telles dans `_quarto.yml`.
+
+**Le critère de scission.** Un chapitre suit une seule épine chronologique — trois à six grandes
+réformes d'un même dispositif — et ses fiches. Au-delà d'environ 25 000 mots de fichier, ou quand
+un fichier porte plusieurs épines, il se scinde, avant toute conversion au format « ruptures au
+premier plan ».
+
+**La présentation d'un livre** comporte : l'objet en une phrase ; la carte des dispositifs ou
+institutions (texte fondateur, date d'application, où lire) ; une figure de ce que pèse
+l'ensemble ; le plan ; les conventions de lecture ; un tableau de voisinage (sujet limitrophe,
+livre où il vit), qui remplace les sections « ce que ce livre ne traite pas ».
+
+**Rien ne naît ex nihilo.** Trois niveaux.
+- *Le chapitre* : la mise en place commence par l'antécédent — le régime, l'impôt ou le prix que le
+  texte fondateur remplace, transforme ou étend, Protectorat compris — et dit ce que le texte
+  reprend et ce qu'il écarte. Chaque grande réforme donne son contexte (déficit, plan de
+  développement, ajustement, accord international, événement politique, modèle étranger) avec les
+  mots des sources de l'époque, jamais en interprétation. « Ce que la loi cherche » (ses mots) et
+  « le contexte » (ce qu'en disent les sources) restent distincts.
+- *Le livre* : la présentation porte une frise des dates clés de tous ses dispositifs sur un seul
+  axe, avec la filiation des régimes et des institutions.
+- *Le site* : le cadre des finances publiques ouvre sur une périodisation commune (Protectorat ;
+  indépendance et État bâtisseur ; expérience collectiviste et son abandon ; années 1970 ;
+  ajustement structurel de 1986 ; années 1990-2000 ; 2011 et après), que toute épine se lit contre.
+
+**« Ce qu'en dit l'économie ».** Dernière section d'un chapitre de dispositif, après la longue
+période, une page au plus : un état des connaissances sur le *type* de dispositif, pour le
+praticien. Gabarit fixe : la question ; ce que dit la théorie (deux ou trois résultats, avec leurs
+hypothèses) ; ce que mesure l'empirique (synthèses internationales avec plages, puis Tunisie) ; ce
+que le praticien retient (établi, débattu, ce que les données tunisiennes ne tranchent pas).
+Dernière ligne : « Littérature arrêtée au <mois année> ». Garde-fous : aucun « on sait que » sans
+référence ; aucun chiffre sans sa plage, son pays et sa période ; la section ne se mêle ni au
+budgétaire ni au droit, et aucun de ses chiffres n'entre dans un tableau de paramètres ou une
+figure de série ; aucune recommandation, même implicite. Elle est tirée d'une fiche datée
+`docs/notes/eco-<dispositif>.md` du rôle « économiste » ; les PDF cités vont dans `tunisia-data`.

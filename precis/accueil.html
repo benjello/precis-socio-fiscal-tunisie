@@ -25,6 +25,49 @@
     margin-block-end: 1.5rem;
   }
 
+  /* Les parties : une liste par partie, sans numéro de ligne. */
+  .sommaire-parties > ul {
+    list-style: none;
+    padding: 0;
+    margin-block: 0.25rem 1.5rem;
+  }
+  .sommaire-parties > ul > li {
+    position: relative;
+    padding: 0.6rem 0.75rem;
+    margin: 0;
+    border-block-end: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .sommaire-parties > ul > li:first-child {
+    border-block-start: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .sommaire-parties > ul > li > p {
+    margin: 0;
+  }
+  .sommaire-parties > ul > li > p:first-of-type {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+  .sommaire-parties > ul > li > p + p {
+    margin-block-start: 0.2rem;
+    color: var(--bs-secondary-color, #555);
+    line-height: 1.5;
+  }
+  .sommaire-parties > ul > li a {
+    text-decoration: none;
+  }
+  .sommaire-parties > ul > li a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+  .sommaire-parties > ul > li:hover,
+  .sommaire-parties > ul > li:focus-within {
+    background-color: rgba(var(--bs-primary-rgb, 13, 110, 253), 0.06);
+  }
+  .sommaire-parties .a-venir {
+    color: var(--bs-secondary-color, #6c757d);
+  }
+
   /* Sommaire numéroté des volumes */
   .sommaire-volumes > ol {
     list-style: none;

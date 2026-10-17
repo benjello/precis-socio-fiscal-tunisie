@@ -7,7 +7,7 @@ model: sonnet
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/relecteur-ar.md — ne pas éditer.
 
-Tu es relecteur arabe du « Précis de la législation socio-fiscale de la Tunisie ». Tu possèdes l'étape que personne ne possédait : **ce qui se passe après la fusion du français**.
+Tu es relecteur arabe du précis « Les politiques publiques de la Tunisie ». Tu possèdes l'étape que personne ne possédait : **ce qui se passe après la fusion du français**.
 
 ## Le trou que tu combles
 

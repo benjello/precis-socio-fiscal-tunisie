@@ -1,7 +1,7 @@
 [project]
 name = "precis-tunisie"
 version = "0.1.0"
-description = "Précis de la législation socio-fiscale de la Tunisie : volumes Quarto bilingues et outils qui les produisent"
+description = "Les politiques publiques de la Tunisie, précis historique, juridique et économique : volumes Quarto bilingues et outils qui les produisent"
 readme = "README.md"
 license = "CC-BY-SA-4.0 AND AGPL-3.0-or-later"
 license-files = ["LICENSE.md", "LICENSES/*.txt"]

@@ -1,7 +1,10 @@
-# Précis de la législation socio-fiscale de la Tunisie
+# Les politiques publiques de la Tunisie
 
-Un ouvrage de référence en accès libre, en français et en arabe, qui retrace règle par règle
-l'évolution de la législation sociale et fiscale tunisienne depuis l'indépendance, chaque valeur
+Précis historique, juridique et économique
+
+Un ouvrage de référence en accès libre, en français et en arabe : histoire des politiques publiques, textes
+de mise en œuvre, chiffres et analyse économique. Il retrace règle par règle l'évolution des
+politiques publiques tunisiennes, sociales et fiscales d'abord, depuis l'indépendance, chaque valeur
 datée et renvoyée au *Journal officiel*.
 
 **À lire en ligne : <https://benjello.github.io/precis-socio-fiscal-tunisie/>** — chaque volume se
