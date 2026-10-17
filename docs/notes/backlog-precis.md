@@ -2725,6 +2725,19 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     d'électricité par fournisseur : aucune série publiée, à demander à la STEG ; fiche
     `r-prix-gaz-commercial-concessions-apres-2000` (décret n° 2000-1027 et ses suites) ;
     états financiers 2024 introuvables ; rapports de l'ETAP de 2006 et 2007 à océriser ou réparer.
+  - **Prix du gaz par source de la STEG** (17 octobre 2026, `compensation-electricite-gaz-prix-par-source.md`) :
+    le prix publié est un prix moyen FOB des achats algériens contractuels et additionnels réunis (ETAP 2005, 2006,
+    2008-2014 et premier semestre 2015 ; rapport de contrôle 2008-2013 ; Observatoire 2013-2025) ; le prix de chaque
+    part existe (deux factures mensuelles de la SONATRACH, rapport de 2014, p. 42) mais n'est publié nulle part. Miskar :
+    un prix depuis le 8 juin 2022 seulement (466 puis 384 et 387 $/tep, ETAP), le gaz étant vendu par BG/Shell avant. Gaz
+    national : prix par champ de l'ETAP 2016-2019 et 2021-2024, **part de l'ETAP** (environ la moitié du prélèvement de la STEG
+    sur chaque champ), non le prix du bloc de la figure. Redevance : 90,8 DT/tep jusqu'en 2014, aucun prix ensuite
+    (valorisation « au prix international », dû de 115 MDT en 2015, non un prix). **Formule du prix du gaz national** :
+    décret-loi n° 85-9, art. 33 (85 % du fuel à haute teneur en soufre) avant mai 2000, décret n° 2000-1027 (80 %) ensuite, et un
+    avenant de Miskar du 13 mai 2000 qui applique le prix du code avec effet de mars 2000, jugé irrégulier par le rapport de
+    contrôle (105 MD de surcoût de 2000 à 2013). **Restent** : prix de Miskar de 1996 à 2022, prix contractuel et additionnel de la
+    SONATRACH, valorisation de la redevance après 2014, rapport de l'ETAP de 2020, états financiers 2024, annexes 11, 19, 20, 38,
+    39, 45 et 46 du rapport de 2014 ; demandes à l'ETAP et à la STEG listées dans la note. Aucune figure n'en est tirée pour l'instant.
   - **Structure des prix des carburants** (`_carburants.qmd`, `#sec-compensation-structure-prix`),
     sur `compensation-archives-energie.md` et `compensation-structure-prix-relue.md` — écrit :
     lecture du tableau de la *Conjoncture énergétique*, 24 structures datées de 2014 à 2022
