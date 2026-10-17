@@ -66,6 +66,27 @@ et de carte des manques. Sources à cataloguer dans `tunisia-data` : comptes nat
 l'INS (publications déjà cataloguées), TOFE, dépense par fonction, comptes des ménages,
 enquête emploi, contribuables par régime.
 
+**L'histoire : rien ne naît ex nihilo** (décidé le 17 octobre 2026). Trois règles, à trois
+niveaux :
+- *le chapitre* : la section « mise en place » commence par l'antécédent — le régime, l'impôt ou le
+  prix que le texte fondateur remplace, transforme ou étend, Protectorat compris — et dit ce que le
+  texte reprend et ce qu'il écarte ; chaque grande réforme donne son contexte (déficit, plan de
+  développement, ajustement structurel, accord international, événement politique, modèle
+  étranger) **avec les mots des sources de l'époque** (exposé des motifs, rapport du plan,
+  rapports contemporains), jamais en interprétation ; « ce que la loi cherche » (ses mots) et « le
+  contexte » (ce qu'en disent les sources) restent distincts ;
+- *le livre* : la présentation porte une synthèse historique — une frise des dates clés de tous
+  ses dispositifs sur un seul axe, avec la filiation des régimes et des institutions (modèle :
+  la présentation des retraites) ;
+- *le site* : le cadre des finances publiques (partie VI) ouvre sur une périodisation commune
+  (Protectorat ; indépendance et État bâtisseur ; expérience collectiviste et son abandon ;
+  années 1970 ; ajustement structurel de 1986 ; années 1990-2000 ; 2011 et après), caractérisée
+  par ses sources propres, les plans de développement d'abord ; toute épine chronologique se lit
+  contre cet axe, et les ruptures de livres différents tombées à la même date se voient ensemble.
+Conséquences : le documentaliste relève l'antécédent et le contexte dès la première passe (sources
+d'avant 1956 : *Bulletin économique et social de la Tunisie*, *Journal officiel tunisien*) ; le
+livre du cadre est le premier à écrire, sa périodisation servant tous les autres.
+
 **Les types de chapitres**, reconnaissables à leur titre : dispositif (plan type à épine
 chronologique) ; institution (naissance, statut, ce qu'elle sert, comptes, longue période) ;
 cadre (notions, un seul par livre, en tête) ; longue période du livre (budgétaire seul) ;
