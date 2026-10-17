@@ -2671,8 +2671,8 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     tension de septembre 2012, moyenne pression de 2012-2013 ; heures des postes avant 2014 ;
     ventes en haute tension de 2020 ; **figure de la facture type**
     (`fig-compensation-facture-electricite`, TODO figures : TVA et surtaxe municipale à
-    reconstituer) ; série de la subvention d'exploitation de la STEG non publiée (notes aux
-    états financiers à lire) ; décodage des couches texte du JORT des années 2000 à verser à
+    reconstituer) ; subvention d'exploitation de la STEG de 2017 à 2021 (états de résultat des
+    rapports annuels, à relire et à verser ; 2006-2016 versée le 17 octobre 2026) ; décodage des couches texte du JORT des années 2000 à verser à
     `docs/notes/outillage-sources.md`. **Faits des notes non repris**, par décision du
     propriétaire (17 octobre 2026), à reprendre éventuellement : partage entre ménages et autres
     abonnés de l'électricité en 2014 (`compensation-tarifs-electricite-gaz.md`, (ii)) ; tarif du
@@ -2694,10 +2694,32 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     **Rupture** : note 11 des états financiers 2014, p. 23 — depuis 2007 le gaz est enregistré
     à sa valeur économique et la différence figure en subvention d'exploitation, égale au
     « soutien total » du rapport de contrôle de 2014 pour 2007-2013 ; les coûts d'avant et
-    d'après 2007 ne se chaînent pas. **À faire** : deux figures de longue période (prix d'achat du
-    gaz 2007-2023, coût de revient du kWh en trois segments) en familles séparées, avec les ruptures de
-    2007 et de 2015 marquées ; verser les références (états financiers, rapports de l'ETAP,
-    rapport de contrôle de 2014) quand elles seront citées ; coût par filière et achats
+    d'après 2007 ne se chaînent pas. **Fait le 17 octobre 2026** : quatre séries versées à
+    l'entrepôt (`steg-prix-achat-gaz`, `steg-cout-prix-kwh`, `steg-subvention-exploitation`,
+    `steg-prelevements-gaz`, fiche `docs/steg-gaz-electricite.md`, transcription relue sur les
+    PDF) et quatre figures de longue période dans `#sec-compensation-eg-longue-periode`
+    (`fig-compensation-eg-prix-achat-gaz`, `-cout-prix-kwh`, `-subvention`, `-gaz-sources`),
+    familles séparées, ruptures de 2007 et de 2015 marquées ; quatorze références versées
+    (états financiers 2014-2023, rapports annuels 2005, 2023 et 2024, Mémentos de l'Observatoire
+    de 2014 et 2016, étude de l'ANER, rapport d'achèvement de la BAD sur Électricité VII). Les
+    tableaux de coût et de prix restent visibles. **Fait aussi le 17 octobre 2026** : la
+    facture des combustibles de la STEG (2013-2023, états financiers, onze valeurs relues sur les
+    PDF, écart de 2017 consigné) versée à l'entrepôt (`steg-facture-combustibles`) et la figure
+    `fig-compensation-eg-gaz-pib` (`#sec-compensation-eg-gaz-achat`) : pont de cette facture en
+    points de PIB nominal (base 2015, 2013-2014 rétropolés par l'INS), en trois effets — prix,
+    quantité déduite, PIB — sur 2013-2016, 2016-2022, 2022-2023 et 2013-2023 ; décomposition
+    logarithmique calculée dans le module de figure, testée. **Reste à faire** pour cette figure :
+    la facture comprend le fuel et le gazole, la quantité déduite est le « total des achats de
+    gaz » et non du gaz seul (aucune facture du seul gaz n'est publiée) ; les valeurs de 2005,
+    2007 et 2008 des rapports annuels (« achats de combustibles », « facture combustible ») ne sont
+    pas versées, leurs pages restent à relire ; 2022 et 2023 s'écartent de 0,6 et 1,7 ktep du
+    total publié des achats de gaz (cause non dite par les états financiers) ; version arabe de
+    la note de lecture et des libellés, à terme. **Reste à faire** : prix d'importation du
+    gaz algérien de l'Observatoire (2013-2025, versé, non tracé : figure ultérieure) et valeur FOB
+    de l'ETAP (2005, 2008-2014, non versée) ; coût de revient de 2015 par les états financiers
+    2015 (lu par reconnaissance de caractères, non relu) ; subvention d'exploitation de 2017 à
+    2021 ; coût du combustible au kWh de 2013 à 2023 (calcul à construire et à valider contre
+    2008-2012) ; ventilation du gaz algérien entre redevance et achats de 2001 à 2006 ; coût par filière et achats
     d'électricité par fournisseur : aucune série publiée, à demander à la STEG ; fiche
     `r-prix-gaz-commercial-concessions-apres-2000` (décret n° 2000-1027 et ses suites) ;
     états financiers 2024 introuvables ; rapports de l'ETAP de 2006 et 2007 à océriser ou réparer.

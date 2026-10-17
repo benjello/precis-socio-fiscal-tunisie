@@ -5342,6 +5342,331 @@
       },
       "title-short": "STEG, tarif interruptible (2013)",
       "note": "citation-key: steg-tarif-interruptible-2013\nGrille de la STEG, « TARIF INTERRUPTIBLE(1) A compter du 1er Juin 2013 » ; note (1) : « Décision de monsieur le Ministre de l'Industrie du 5 mars 2013 ». Copie locale tunisia-data/data/raw/minenergie/steg/tarifs/steg_tarifs_interr_2013.pdf ; adresse d'origine et SHA-256 à reprendre au catalogue de tunisia-data. Preuve : document lu à l'image par le documentaliste (compensation-electricite-gaz-objets-des-reformes.md, § 5.1)."
+    },
+    {
+      "id": "steg-ef-2014",
+      "type": "report",
+      "title": "États financiers de l'exercice 2014",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2014",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2014.pdf",
+      "note": "citation-key: steg-ef-2014\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2014.pdf (3 529 695 octets, 56 pages, SHA-256 fc038d1305f1b433edb64175d91cc5af4e2c6dbaa7473d7a44640ae55e5e7bcd), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : note 11 (p. 23), faits marquants (p. 7), note II-2 sur les subventions d'exploitation (p. 35). Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2016",
+      "type": "report",
+      "title": "États financiers de l'exercice 2016",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2016",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2016.pdf",
+      "note": "citation-key: steg-ef-2016\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2016.pdf (21 079 066 octets, 56 pages, SHA-256 9eb8bae1e7981edc5de3142038f63c3f1425ab400e2604e0b9a7098c814ac219), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 7), prix moyen d'achat de la tep de gaz, coût de revient et résultat par kWh de 2015 et 2016. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2018",
+      "type": "report",
+      "title": "États financiers de l'exercice 2018",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2018",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2018.pdf",
+      "note": "citation-key: steg-ef-2018\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2018.pdf (3 626 398 octets, 64 pages, SHA-256 a6f3aa2a26fc6548017a02e18fca3ded0b586f6e8921355fabd3cd4025eec4aa), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 8), prix moyen d'achat de la tep de gaz de 2017 et 2018. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2019",
+      "type": "report",
+      "title": "États financiers de l'exercice 2019",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2019",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2019.pdf",
+      "note": "citation-key: steg-ef-2019\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2019.pdf (3 628 617 octets, 56 pages, SHA-256 7559f7a1c4203364b82701074b622a2480593110223c815ccfd56e29bf7a8580), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 5), prix moyen d'achat de la tep de gaz de 2019. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2021",
+      "type": "report",
+      "title": "États financiers de l'exercice 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2021",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2021.pdf",
+      "note": "citation-key: steg-ef-2021\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2021.pdf (3 524 391 octets, 62 pages, SHA-256 b3561eba66053ee33376ab004237214140ab07e0f4bf10ca9b2328f4f025885e), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 7), prix moyen d'achat de la tep de gaz de 2020 et 2021. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2022",
+      "type": "report",
+      "title": "États financiers de l'exercice 2022",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2022",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2022.pdf",
+      "note": "citation-key: steg-ef-2022\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2022.pdf (1 496 309 octets, 48 pages, SHA-256 4b22509f8de495e601a451b209e13df7e568026900b4a73c4c9c69aaf3c6df41), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 3), prix moyen d'achat de la tep de gaz de 2022. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2023",
+      "type": "report",
+      "title": "États financiers de l'exercice 2023",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2023",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2023.pdf",
+      "note": "citation-key: steg-ef-2023\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2023.pdf (1 548 884 octets, 47 pages, SHA-256 c4da7e9734676cec50f04a5f34410893eb6e6d954d738ace8d295bd00aa46c9b), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 3), prix moyen d'achat de la tep de gaz de 2023. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2005",
+      "type": "report",
+      "title": "Rapport annuel 2005",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport annuel 2005",
+      "URL": "https://www.steg.com.tn/system/files/pdf/Rap_STEG_2005.pdf",
+      "note": "citation-key: steg-ra-2005\nCopie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2005_fr.pdf (4 744 146 octets, 63 pages, SHA-256 e388c1783a099fd596df395633c9753ee39ec8c763901b68803ce3f33c9bbb36), ignorée par git. Cité pour : prélèvements de gaz par source de 2001 à 2005 (p. 26) et bilan national du gaz (p. 48). Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2023",
+      "type": "report",
+      "title": "Rapport d'activité 2023",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport d'activité 2023",
+      "note": "citation-key: steg-ra-2023\nAdresse d'origine non relevée. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2023_fr.pdf (8 991 360 octets, 74 pages, SHA-256 688752a3c70f5f33975373a21b7ae175ab0cb72d28b448f342be91853eb8783c), ignorée par git. Cité pour : prélèvements de gaz de 2022 et 2023 (p. 32 imprimée, PDF 35) et achats de gaz (p. 33, PDF 36). Preuve : pages rendues et lues à l'image le 17 octobre 2026 ; pas de couche texte. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ra-2024",
+      "type": "report",
+      "title": "Rapport d'activité 2024",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, Rapport d'activité 2024",
+      "note": "citation-key: steg-ra-2024\nAdresse d'origine non relevée. Copie locale : tunisia-data/data/raw/minenergie/steg/rapports-annuels/steg_ra_2024_fr.pdf (18 611 156 octets, 74 pages, SHA-256 a144d19685c8877c1518260413e71d5d1e9840c10fbc1c52146f5ecca824a895), ignorée par git. Cité pour : prélèvements de gaz de 2023 et 2024 (p. 32 imprimée, PDF 34) et achats de gaz (p. 33, PDF 35). Preuve : pages rendues et lues à l'image le 17 octobre 2026 ; pas de couche texte. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "one-memento-2014",
+      "type": "report",
+      "title": "Mémento du secteur de l'énergie : chiffres clés de l'année 2014",
+      "author": [
+        {
+          "literal": "Observatoire national de l'énergie"
+        }
+      ],
+      "publisher": "Ministère de l'Industrie, de l'Énergie et des Mines",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "title-short": "ONE, Mémento 2014",
+      "note": "citation-key: one-memento-2014\nTitre et mention d'édition lus sur la couverture (« Élaboré par l'Observatoire National de l'Énergie (Direction Générale de l'Énergie). Edité en 2015 par la Revue de l'Énergie »). Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/one_memento_energie_2014_fr.pdf, ignorée par git ; adresse d'origine et empreinte non relevées au catalogue. Cité pour : p. 35 (prix de cession du gaz à la STEG, prix d'importation du gaz algérien, prix de vente moyens 2013 et 2014), lu à l'image le 17 octobre 2026."
+    },
+    {
+      "id": "one-memento-2016-ar",
+      "type": "report",
+      "title": "Mémento de l'énergie 2016 (édition arabe)",
+      "author": [
+        {
+          "literal": "Observatoire national de l'énergie"
+        }
+      ],
+      "publisher": "Ministère de l'Industrie, de l'Énergie et des Mines",
+      "publisher-place": "Tunis",
+      "title-short": "ONE, Mémento arabe 2016",
+      "note": "citation-key: one-memento-2016-ar\nÉdition arabe ; titre de couverture non relevé (la première page du PDF est l'introduction), date d'édition non établie. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/one_memento_energie_ar_2016.pdf, ignorée par git ; adresse d'origine et empreinte non relevées au catalogue. Cité pour : p. 38 (prix d'importation du gaz algérien, prix de vente moyens, coût de revient de l'électricité en 2015 et 2016), lu à l'image le 17 octobre 2026."
+    },
+    {
+      "id": "aner-2000-impact-prix-energie",
+      "type": "report",
+      "title": "Étude d'impact des prix de l'énergie sur la demande",
+      "author": [
+        {
+          "literal": "Agence nationale des énergies renouvelables"
+        }
+      ],
+      "publisher": "Ministère de l'Industrie",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2000
+          ]
+        ]
+      },
+      "title-short": "ANER, impact des prix de l'énergie (2000)",
+      "note": "citation-key: aner-2000-impact-prix-energie\nÉtude réalisée par le bureau d'études Ideaconsult (Groupe Studi) pour l'ANER, programme 1996-2006. Titre lu sur la couverture, qui porte « Octobre 2000 » ; le pied de la p. 36 porte « Avril 2000 » : la date est donnée à l'année. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/aner_2000_etude_impact_prix_energie_demande.pdf, ignorée par git ; adresse d'origine non relevée. Cité pour : p. 29 du document (PDF 30 ; prix d'achat du gaz par la STEG, 90,8 DT la tep) et p. 36 (PDF 37 ; graphique du prix de revient et du prix de vente moyens du kWh de 1996 à 1998, lu sur le graphique à ±1 millime près)."
+    },
+    {
+      "id": "bad-2012-pcr-electricite-vii",
+      "type": "report",
+      "title": "Republic of Tunisia. Electricity Distribution Network Rehabilitation Project (Electricity VII). Completion Report",
+      "author": [
+        {
+          "literal": "Banque africaine de développement"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            3
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "BAD, rapport d'achèvement Électricité VII",
+      "URL": "https://web.archive.org/web/20230817001921/https://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/Tunisia-(P-TN-FAC-002)-PCR_-_Electricity_Distribution_Network_Rehabilitation_Project__(Electricity_VII.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "note": "citation-key: bad-2012-pcr-electricite-vii\nRapport extérieur. L'adresse d'origine sur afdb.org répond 403 le 17 octobre 2026 ; consulté dans la capture 20230817001921. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/afdb_2012_electricity_vii_pcr_en.pdf (SHA-256 580028b5157eee7f000410dd84c012010e9fa07af7ceda94c47ffaf2f42f0ed6), ignorée par git ; catalogue sources/banque-mondiale-rapports-urls.csv. Cité pour : annexe 3, tableau II (PDF p. 24) : prix de vente moyen du kWh hors TVA, 2005-2010 ; le rapport ne calcule pas de coût de revient. Document en anglais."
     }
   ]
 }

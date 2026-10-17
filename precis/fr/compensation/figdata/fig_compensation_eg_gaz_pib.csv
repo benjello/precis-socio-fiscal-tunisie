@@ -1,0 +1,22 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-17
+# séries (tunisia_data) : steg-facture-combustibles, steg-prix-achat-gaz, pib-courant-par-base
+# sources (citation) : @steg-ef-2014, @steg-ef-2016, @steg-ef-2018, @steg-ef-2019, @steg-ef-2021, @steg-ef-2022, @steg-ef-2023, @ins-cnat-2015, @ins-pib-base-2015-2010-2020
+# fiches : docs/steg-gaz-electricite.md, docs/pib-courant-par-base.md
+# méthode/hypothèses : La facture comprend le fuel et le gazole, elle n'est pas la facture du seul gaz. 2016 est imprimé à l'unité. Pour 2017 les états financiers donnent trois valeurs voisines (3 159,7 ; 3 160,6 ; 3 160,7) : le tableau en dinars exacts est retenu. Rupture de 2015. Dinars courants., Le numérateur comprend le fuel et le gazole ; la quantité déduite de la facture et du prix est donc le total des achats de gaz de la STEG, non une quantité de gaz seul. Rupture de 2015 : fin du prix de cession. Dinars courants., Une seule base sur toute la période, sans raccord. 2013 et 2014 sont des valeurs rétropolées par l'INS ; voir l'annexe du site sur le PIB. Millions de dinars courants.
+# note : La facture des combustibles de la STEG en points de PIB, 2013-2023 : effets du prix moyen d'achat, de la quantité et du PIB sur quatre périodes (points de PIB)
+Période,Facture des combustibles (millions de dinars),Prix moyen d'achat (dinars par tep),Quantité déduite (ktep),"PIB nominal, base 2015 (millions de dinars)",PIB rétropolé par l'INS,Facture au départ (% du PIB),Facture en % du PIB,Effet prix (points de PIB),Effet quantité (points de PIB),Effet PIB (points de PIB),Source facture,Source prix,Source PIB,Rupture
+2013,4426.3,804.4,5502.6,79096.6,oui,,5.5961,,,,"états financiers 2014, p. 36","états financiers 2014, p. 7","INS, classeur « Données annuelles » joint au communiqué « Les Comptes Nationaux changent de base », 15 août 2021",
+2014,4600.8,821.2,5602.5,85345.7,oui,,5.3908,0.1135,0.0988,-0.4177,"états financiers 2014, p. 36","états financiers 2014, p. 7","INS, classeur « Données annuelles » joint au communiqué « Les Comptes Nationaux changent de base », 15 août 2021",
+2015,3255.4,583.6,5578.1,89802.2,non,,3.6251,-1.5198,-0.0194,-0.2265,"états financiers 2016, p. 35","états financiers 2016, p. 7","Les Comptes de la nation, édition 2015-2020 (base 2015)",2015 : fin du prix de cession ; la STEG achète son gaz au prix mondial et la subvention devient budgétaire (loi de finances complémentaire pour 2015)
+2016,2093.0,391.7,5343.4,95286.9,non,,2.1965,-1.1369,-0.1226,-0.169,"états financiers 2016, p. 35","états financiers 2016, p. 7","Les Comptes de la nation, édition 2015-2020 (base 2015)",
+2017,3160.7,569.9,5546.1,102011.5,non,,3.0984,0.983,0.0976,-0.1788,"états financiers 2018, p. 43","états financiers 2018, p. 8","Les Comptes de la nation, édition 2017-2021 (base 2015)",
+2018,4567.8,805.5,5670.8,112985.5,non,,4.0428,1.2282,0.0789,-0.3627,"états financiers 2018, p. 43","états financiers 2018, p. 8","Les Comptes de la nation, édition 2018-2022 (base 2015)",
+2019,5416.3,933.2,5804.0,122969.3,non,,4.4046,0.6212,0.098,-0.3574,"états financiers 2019, p. 35","états financiers 2019, p. 5","Les Comptes de la nation, édition 2019-2023 (base 2015)",
+2020,3411.1,622.7,5477.9,119502.1,non,,2.8544,-1.4457,-0.2066,0.1022,"états financiers 2021, p. 37","états financiers 2021, p. 7","Les Comptes de la nation, édition 2020-2024 (base 2015)",
+2021,4147.9,719.5,5765.0,131544.6,non,,3.1532,0.4337,0.1533,-0.2882,"états financiers 2021, p. 37","états financiers 2021, p. 7","Les Comptes de la nation, édition 2021-2025 (base 2015)",
+2022,8065.3,1471.6,5480.6,139444.5,non,,5.7839,3.1029,-0.2193,-0.2529,"états financiers 2022, p. 35","états financiers 2022, p. 3","Les Comptes de la nation, édition 2021-2025 (base 2015)",
+2023,7565.6,1423.9,5313.3,149793.6,non,,5.0507,-0.1782,-0.1677,-0.3872,"états financiers 2023, p. 35","états financiers 2023, p. 3","Les Comptes de la nation, édition 2021-2025 (base 2015)",
+2013 → 2016 (pont),,,,,,5.5961,2.1965,-2.5432,-0.0432,-0.8132,,,,
+2016 → 2022 (pont),,,,,,2.1965,5.7839,4.9232,0.0019,-1.3377,,,,
+2022 → 2023 (pont),,,,,,5.7839,5.0507,-0.1782,-0.1677,-0.3872,,,,
+2013 → 2023 (pont),,,,,,5.5961,5.0507,2.2018,-0.209,-2.5382,,,,

@@ -1,0 +1,145 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-17
+# séries (tunisia_data) : steg-prelevements-gaz
+# sources (citation) : @steg-ra-2005, @steg-ra-2007, @steg-ra-2008, @steg-ra-2009, @steg-ra-2010, @steg-ra-2011, @steg-ra-2012, @steg-ra-2013, @steg-ra-2014, @steg-ra-2015, @steg-ra-2016, @steg-ra-2017, @steg-ra-2018, @steg-ra-2019, @steg-ra-2020, @steg-ra-2021, @steg-ra-2023, @steg-ra-2024
+# fiches : docs/steg-gaz-electricite.md
+# méthode/hypothèses : Le total égale la somme des parties chaque année. De 2001 à 2006 les tableaux ne séparent pas la redevance des achats de gaz algérien. Le « total des achats gaz » de 2019-2024 vient d'un autre tableau et n'est pas le total des prélèvements. Quantités en ktep, pouvoir calorifique supérieur.
+# note : Le gaz prélevé par la STEG par source, 2001-2024 (milliers de tonnes équivalent pétrole, pouvoir calorifique supérieur)
+Année,Source du gaz,ktep (PCS),État,Lignes réunies,Source,Page,Lecture,Remarque
+2001,"Gaz algérien, redevance et achats non distingués (2001-2006)",927,publié,,rapport annuel 2005,p. 26,texte,gaz algérien : redevance consommée et achats non distingués dans ces tableaux
+2001,Gaz du champ de Miskar,1734,publié,,rapport annuel 2005,p. 26,texte,
+2001,Autres champs nationaux,519,calculé,gaz commercial sud 514 + Zinnia 2 + Jebel Abderrahman 3,rapport annuel 2005,p. 26,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2001,total des prélèvements (égal à la somme des parties),3180,publié,,rapport annuel 2005,p. 26,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2002,"Gaz algérien, redevance et achats non distingués (2001-2006)",1039,publié,,rapport annuel 2005,p. 26,texte,gaz algérien : redevance consommée et achats non distingués dans ces tableaux
+2002,Gaz du champ de Miskar,1671,publié,,rapport annuel 2005,p. 26,texte,
+2002,Autres champs nationaux,472,calculé,gaz commercial sud 467 + Zinnia 3 + Jebel Abderrahman 2,rapport annuel 2005,p. 26,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2002,total des prélèvements (égal à la somme des parties),3182,publié,,rapport annuel 2005,p. 26,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2003,"Gaz algérien, redevance et achats non distingués (2001-2006)",1181,publié,,rapport annuel 2005,p. 26,texte,gaz algérien : redevance consommée et achats non distingués dans ces tableaux
+2003,Gaz du champ de Miskar,1694,publié,,rapport annuel 2005,p. 26,texte,
+2003,Autres champs nationaux,492,calculé,gaz commercial sud 485 + Zinnia 5 + Jebel Abderrahman 2,rapport annuel 2005,p. 26,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2003,total des prélèvements (égal à la somme des parties),3367,publié,,rapport annuel 2005,p. 26,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2004,"Gaz algérien, redevance et achats non distingués (2001-2006)",1207,publié,,rapport annuel 2005,p. 26,texte,gaz algérien : redevance consommée et achats non distingués dans ces tableaux
+2004,Gaz du champ de Miskar,1786,publié,,rapport annuel 2005,p. 26,texte,
+2004,Autres champs nationaux,518,calculé,gaz commercial sud 514 + Zinnia 3 + Jebel Abderrahman 1,rapport annuel 2005,p. 26,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2004,total des prélèvements (égal à la somme des parties),3511,publié,,rapport annuel 2005,p. 26,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2005,"Gaz algérien, redevance et achats non distingués (2001-2006)",1285,publié,,rapport annuel 2005,p. 26,texte,gaz algérien : redevance consommée et achats non distingués dans ces tableaux
+2005,Gaz du champ de Miskar,1828,publié,,rapport annuel 2005,p. 26,texte,
+2005,Autres champs nationaux,504,calculé,gaz commercial sud 501 + Zinnia 2 + Jebel Abderrahman 1,rapport annuel 2005,p. 26,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2005,total des prélèvements (égal à la somme des parties),3617,publié,,rapport annuel 2005,p. 26,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2006,"Gaz algérien, redevance et achats non distingués (2001-2006)",1493,publié,,rapport annuel 2007,p. 29,texte,gaz algérien : redevance consommée et achats non distingués dans ces tableaux
+2006,Gaz du champ de Miskar,1660,publié,,rapport annuel 2007,p. 29,texte,
+2006,Autres champs nationaux,481,calculé,gaz commercial sud 479 + Zinnia 2 + Jebel Abderrahman 0,rapport annuel 2007,p. 29,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2006,total des prélèvements (égal à la somme des parties),3634,publié,,rapport annuel 2007,p. 29,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2007,Redevance consommée sur le gaz algérien en transit,940,publié,,rapport annuel 2007,p. 9 et 29,texte,
+2007,Achats contractuels de gaz algérien,394,publié,,rapport annuel 2007,p. 9 et 29,texte,
+2007,Achats additionnels de gaz algérien,480,publié,,rapport annuel 2007,p. 9 et 29,texte,
+2007,Gaz du champ de Miskar,1577,publié,,rapport annuel 2007,p. 9 et 29,texte,
+2007,Autres champs nationaux,457,calculé,gaz commercial sud 456 + Zinnia 1 + Jebel Abderrahman 0,rapport annuel 2007,p. 9 et 29,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2007,total des prélèvements (égal à la somme des parties),3848,publié,,rapport annuel 2007,p. 9 et 29,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2008,Redevance consommée sur le gaz algérien en transit,1000,publié,,rapport annuel 2008,p. 11 et 33,texte,
+2008,Achats contractuels de gaz algérien,394,publié,,rapport annuel 2008,p. 11 et 33,texte,
+2008,Achats additionnels de gaz algérien,813,publié,,rapport annuel 2008,p. 11 et 33,texte,
+2008,Gaz du champ de Miskar,1470,publié,,rapport annuel 2008,p. 11 et 33,texte,
+2008,Autres champs nationaux,570,calculé,gaz commercial sud 501 + Chergui 69,rapport annuel 2008,p. 11 et 33,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2008,total des prélèvements (égal à la somme des parties),4247,publié,,rapport annuel 2008,p. 11 et 33,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2009,Redevance consommée sur le gaz algérien en transit,835,publié,,rapport annuel 2009,p. 10 et 30,texte,
+2009,Achats contractuels de gaz algérien,393,publié,,rapport annuel 2009,p. 10 et 30,texte,
+2009,Achats additionnels de gaz algérien,724,publié,,rapport annuel 2009,p. 10 et 30,texte,
+2009,Gaz du champ de Miskar,1567,publié,,rapport annuel 2009,p. 10 et 30,texte,
+2009,Autres champs nationaux,940,calculé,gaz commercial sud 672 + Chergui 261 + Hasdrubal 7,rapport annuel 2009,p. 10 et 30,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2009,total des prélèvements (égal à la somme des parties),4459,publié,,rapport annuel 2009,p. 10 et 30,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2010,Redevance consommée sur le gaz algérien en transit,773,publié,,rapport annuel 2010 ; contractuel : rapport annuel 2011,p. 12 et 32 ; p. 12,texte,"achats contractuels : 375 dans le rapport annuel 2011 (colonne 2010) ; le rapport annuel 2010 imprime 376, ce qui porte la somme des deux achats à 1 053 pour 1 052 imprimé"
+2010,Achats contractuels de gaz algérien,375,publié,,rapport annuel 2010 ; contractuel : rapport annuel 2011,p. 12 et 32 ; p. 12,texte,"achats contractuels : 375 dans le rapport annuel 2011 (colonne 2010) ; le rapport annuel 2010 imprime 376, ce qui porte la somme des deux achats à 1 053 pour 1 052 imprimé"
+2010,Achats additionnels de gaz algérien,677,publié,,rapport annuel 2010 ; contractuel : rapport annuel 2011,p. 12 et 32 ; p. 12,texte,"achats contractuels : 375 dans le rapport annuel 2011 (colonne 2010) ; le rapport annuel 2010 imprime 376, ce qui porte la somme des deux achats à 1 053 pour 1 052 imprimé"
+2010,Gaz du champ de Miskar,1509,publié,,rapport annuel 2010 ; contractuel : rapport annuel 2011,p. 12 et 32 ; p. 12,texte,"achats contractuels : 375 dans le rapport annuel 2011 (colonne 2010) ; le rapport annuel 2010 imprime 376, ce qui porte la somme des deux achats à 1 053 pour 1 052 imprimé"
+2010,Autres champs nationaux,1521,calculé,gaz commercial sud 740 + Chergui 273 + Hasdrubal 460 + Maâmoura 48,rapport annuel 2010 ; contractuel : rapport annuel 2011,p. 12 et 32 ; p. 12,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2010,total des prélèvements (égal à la somme des parties),4855,publié,,rapport annuel 2010 ; contractuel : rapport annuel 2011,p. 12 et 32 ; p. 12,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2011,Redevance consommée sur le gaz algérien en transit,731,publié,,rapport annuel 2011,p. 12 et 33,texte,
+2011,Achats contractuels de gaz algérien,375,publié,,rapport annuel 2011,p. 12 et 33,texte,
+2011,Achats additionnels de gaz algérien,790,publié,,rapport annuel 2011,p. 12 et 33,texte,
+2011,Gaz du champ de Miskar,1324,publié,,rapport annuel 2011,p. 12 et 33,texte,
+2011,Autres champs nationaux,1559,calculé,gaz commercial sud 608 + Chergui 278 + Hasdrubal 560 + Maâmoura 113,rapport annuel 2011,p. 12 et 33,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2011,total des prélèvements (égal à la somme des parties),4779,publié,,rapport annuel 2011,p. 12 et 33,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2012,Redevance consommée sur le gaz algérien en transit,798,publié,,rapport annuel 2012 ; redevance : rapport annuel 2013,p. 11 et 35 ; p. 13,texte,redevance 798 : colonne 2012 du rapport annuel 2013 (= gaz algérien 2 442 moins achats 1 644)
+2012,Achats contractuels de gaz algérien,375,publié,,rapport annuel 2012 ; redevance : rapport annuel 2013,p. 11 et 35 ; p. 13,texte,redevance 798 : colonne 2012 du rapport annuel 2013 (= gaz algérien 2 442 moins achats 1 644)
+2012,Achats additionnels de gaz algérien,1269,publié,,rapport annuel 2012 ; redevance : rapport annuel 2013,p. 11 et 35 ; p. 13,texte,redevance 798 : colonne 2012 du rapport annuel 2013 (= gaz algérien 2 442 moins achats 1 644)
+2012,Gaz du champ de Miskar,1017,publié,,rapport annuel 2012 ; redevance : rapport annuel 2013,p. 11 et 35 ; p. 13,texte,redevance 798 : colonne 2012 du rapport annuel 2013 (= gaz algérien 2 442 moins achats 1 644)
+2012,Autres champs nationaux,1776,calculé,gaz commercial sud 594 + Chergui 259 + Hasdrubal 846 + Maâmoura 77,rapport annuel 2012 ; redevance : rapport annuel 2013,p. 11 et 35 ; p. 13,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2012,total des prélèvements (égal à la somme des parties),5235,publié,,rapport annuel 2012 ; redevance : rapport annuel 2013,p. 11 et 35 ; p. 13,texte,"« total » : tient compte de l'autoconsommation, des variations de stock dans les gazoducs, des erreurs de comptage et des pertes"
+2013,Redevance consommée sur le gaz algérien en transit,511,publié,,rapport annuel 2013,p. 13 et 37,texte,
+2013,Achats contractuels de gaz algérien,398,publié,,rapport annuel 2013,p. 13 et 37,texte,
+2013,Achats additionnels de gaz algérien,1646,publié,,rapport annuel 2013,p. 13 et 37,texte,
+2013,Gaz du champ de Miskar,939,publié,,rapport annuel 2013,p. 13 et 37,texte,
+2013,Autres champs nationaux,1850,calculé,gaz commercial sud 552 + Chergui 247 + Hasdrubal 1001 + Maâmoura et Baraka 50,rapport annuel 2013,p. 13 et 37,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2013,total des prélèvements (égal à la somme des parties),5344,publié,,rapport annuel 2013,p. 13 et 37,texte,
+2014,Redevance consommée sur le gaz algérien en transit,250,publié,,rapport annuel 2014,p. 13 et 37,texte,"« redevance totale » dans le tableau de 2014, « redevance consommée » dans celui de 2015 pour la même valeur"
+2014,Achats contractuels de gaz algérien,389,publié,,rapport annuel 2014,p. 13 et 37,texte,"« redevance totale » dans le tableau de 2014, « redevance consommée » dans celui de 2015 pour la même valeur"
+2014,Achats additionnels de gaz algérien,2244,publié,,rapport annuel 2014,p. 13 et 37,texte,"« redevance totale » dans le tableau de 2014, « redevance consommée » dans celui de 2015 pour la même valeur"
+2014,Gaz du champ de Miskar,795,publié,,rapport annuel 2014,p. 13 et 37,texte,"« redevance totale » dans le tableau de 2014, « redevance consommée » dans celui de 2015 pour la même valeur"
+2014,Autres champs nationaux,1763,calculé,gaz commercial sud 385 + Chergui 248 + Hasdrubal 875 + Franig-Sabria-Baguel 164 + Maâmoura et Baraka 91,rapport annuel 2014,p. 13 et 37,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2014,total des prélèvements (égal à la somme des parties),5441,publié,,rapport annuel 2014,p. 13 et 37,texte,
+2015,Redevance consommée sur le gaz algérien en transit,268,publié,,rapport annuel 2015,p. 12 et 36,texte,
+2015,Achats contractuels de gaz algérien,2246,publié,,rapport annuel 2015,p. 12 et 36,texte,
+2015,Achats additionnels de gaz algérien,212,publié,,rapport annuel 2015,p. 12 et 36,texte,
+2015,Gaz du champ de Miskar,792,publié,,rapport annuel 2015,p. 12 et 36,texte,
+2015,Autres champs nationaux,1688,calculé,gaz commercial sud 358 + Chergui 267 + Hasdrubal 781 + Franig-Sabria-Baguel 168 + Maâmoura et Baraka 114,rapport annuel 2015,p. 12 et 36,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2015,total des prélèvements (égal à la somme des parties),5206,publié,,rapport annuel 2015,p. 12 et 36,texte,
+2016,Redevance consommée sur le gaz algérien en transit,520,publié,,rapport annuel 2016,p. 25 et 53,texte,
+2016,Achats contractuels de gaz algérien,2308,publié,,rapport annuel 2016,p. 25 et 53,texte,
+2016,Achats additionnels de gaz algérien,191,publié,,rapport annuel 2016,p. 25 et 53,texte,
+2016,Gaz du champ de Miskar,710,publié,,rapport annuel 2016,p. 25 et 53,texte,
+2016,Autres champs nationaux,1479,calculé,gaz commercial sud 371 + Chergui 83 + Hasdrubal 773 + Franig-Sabria-Baguel 183 + Maâmoura et Baraka 69,rapport annuel 2016,p. 25 et 53,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2016,total des prélèvements (égal à la somme des parties),5208,publié,,rapport annuel 2016,p. 25 et 53,texte,
+2017,Redevance consommée sur le gaz algérien en transit,726,publié,,rapport annuel 2017,p. 24 et 56,texte,
+2017,Achats contractuels de gaz algérien,2437,publié,,rapport annuel 2017,p. 24 et 56,texte,
+2017,Achats additionnels de gaz algérien,250,publié,,rapport annuel 2017,p. 24 et 56,texte,
+2017,Gaz du champ de Miskar,669,publié,,rapport annuel 2017,p. 24 et 56,texte,
+2017,Autres champs nationaux,1386,calculé,gaz commercial sud 310 + Chergui 160 + Hasdrubal 718 + Franig-Sabria-Baguel et Ghrib 113 + Maâmoura et Baraka 85,rapport annuel 2017,p. 24 et 56,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2017,total des prélèvements (égal à la somme des parties),5468,publié,,rapport annuel 2017,p. 24 et 56,texte,
+2018,Redevance consommée sur le gaz algérien en transit,702,publié,,rapport annuel 2018,p. 18 et 44,texte,
+2018,Achats contractuels de gaz algérien,2592,publié,,rapport annuel 2018,p. 18 et 44,texte,
+2018,Achats additionnels de gaz algérien,330,publié,,rapport annuel 2018,p. 18 et 44,texte,
+2018,Gaz du champ de Miskar,584,publié,,rapport annuel 2018,p. 18 et 44,texte,
+2018,Autres champs nationaux,1361,calculé,gaz commercial sud 355 + Chergui 230 + Hasdrubal 583 + Franig-Sabria-Baguel et Ghrib 140 + Maâmoura et Baraka 53,rapport annuel 2018,p. 18 et 44,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2018,total des prélèvements (égal à la somme des parties),5569,publié,,rapport annuel 2018,p. 18 et 44,texte,
+2019,Redevance consommée sur le gaz algérien en transit,450,publié,,rapport annuel 2019,p. 16 et 42,texte,
+2019,Achats contractuels de gaz algérien,2770,publié,,rapport annuel 2019,p. 16 et 42,texte,
+2019,Achats additionnels de gaz algérien,698,publié,,rapport annuel 2019,p. 16 et 42,texte,
+2019,Gaz du champ de Miskar,635,publié,,rapport annuel 2019,p. 16 et 42,texte,
+2019,Autres champs nationaux,1127,calculé,gaz commercial sud 362 + Chergui 196 + Hasdrubal 445 + Franig-Sabria-Baguel et Ghrib 113 + Maâmoura et Baraka 11,rapport annuel 2019,p. 16 et 42,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2019,total des prélèvements (égal à la somme des parties),5680,publié,,rapport annuel 2019,p. 16 et 42,texte,
+2019,"total des achats de gaz (autre tableau, hors somme)",5804,publié,,rapport annuel 2020,p. 38,texte,"autre tableau que celui des prélèvements : achats de gaz, condensats et gaz gratuits compris ; ne fait pas partie de la somme des parties"
+2020,Redevance consommée sur le gaz algérien en transit,466,publié,,rapport annuel 2020,p. 37,texte,
+2020,Achats contractuels de gaz algérien,2572,publié,,rapport annuel 2020,p. 37,texte,
+2020,Achats additionnels de gaz algérien,526,publié,,rapport annuel 2020,p. 37,texte,
+2020,Gaz du champ de Miskar,580,publié,,rapport annuel 2020,p. 37,texte,
+2020,Autres champs nationaux,1249,calculé,gaz commercial sud 278 + Chergui 183 + Hasdrubal 392 + Franig-Sabria-Baguel-Tarfa et Ghrib 134 + Maâmoura et Baraka 56 + Nawara 206,rapport annuel 2020,p. 37,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2020,total des prélèvements (égal à la somme des parties),5393,publié,,rapport annuel 2020,p. 37,texte,
+2020,"total des achats de gaz (autre tableau, hors somme)",5478,publié,,rapport annuel 2020,p. 38,texte,"autre tableau que celui des prélèvements : achats de gaz, condensats et gaz gratuits compris ; ne fait pas partie de la somme des parties"
+2021,Redevance consommée sur le gaz algérien en transit,954,publié,,rapport annuel 2021,p. 36,texte,
+2021,Achats contractuels de gaz algérien,2544,publié,,rapport annuel 2021,p. 36,texte,
+2021,Achats additionnels de gaz algérien,7,publié,,rapport annuel 2021,p. 36,texte,
+2021,Gaz du champ de Miskar,527,publié,,rapport annuel 2021,p. 36,texte,
+2021,Autres champs nationaux,1635,calculé,gaz commercial sud 317 + Chergui 178 + Hasdrubal 269 + Franig-Sabria-Baguel 120 + Ghrib 16 + Maâmoura et Baraka 68 + Nawara 659 + Sidi Marzoug 8,rapport annuel 2021,p. 36,texte,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2021,total des prélèvements (égal à la somme des parties),5667,publié,,rapport annuel 2021,p. 36,texte,
+2021,"total des achats de gaz (autre tableau, hors somme)",5765,publié,,rapport annuel 2021,p. 37,texte,"autre tableau que celui des prélèvements : achats de gaz, condensats et gaz gratuits compris ; ne fait pas partie de la somme des parties"
+2022,Redevance consommée sur le gaz algérien en transit,795,publié,,rapport annuel 2023,p. 32 imprimée (PDF 35),image,
+2022,Achats contractuels de gaz algérien,2624,publié,,rapport annuel 2023,p. 32 imprimée (PDF 35),image,
+2022,Achats additionnels de gaz algérien,0,publié,,rapport annuel 2023,p. 32 imprimée (PDF 35),image,
+2022,Gaz du champ de Miskar,500,publié,,rapport annuel 2023,p. 32 imprimée (PDF 35),image,
+2022,Autres champs nationaux,1517,calculé,gaz commercial sud 298 + Chergui 144 + Hasdrubal 221 + Franig-Sabria-Baguel 163 + Ghrib 26 + Maâmoura et Baraka 33 + Nawara 590 + Sidi Marzoug 42,rapport annuel 2023,p. 32 imprimée (PDF 35),image,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2022,total des prélèvements (égal à la somme des parties),5436,publié,,rapport annuel 2023,p. 32 imprimée (PDF 35),image,
+2022,"total des achats de gaz (autre tableau, hors somme)",5480,publié,,rapport annuel 2023,p. 33 imprimée (PDF 36),image,"autre tableau que celui des prélèvements : achats de gaz, condensats et gaz gratuits compris ; ne fait pas partie de la somme des parties"
+2023,Redevance consommée sur le gaz algérien en transit,770,publié,,rapport annuel 2023 ; rapport annuel 2024,p. 32 imprimée (PDF 35) ; p. 32 (PDF 34),image,
+2023,Achats contractuels de gaz algérien,2570,publié,,rapport annuel 2023 ; rapport annuel 2024,p. 32 imprimée (PDF 35) ; p. 32 (PDF 34),image,
+2023,Achats additionnels de gaz algérien,91,publié,,rapport annuel 2023 ; rapport annuel 2024,p. 32 imprimée (PDF 35) ; p. 32 (PDF 34),image,
+2023,Gaz du champ de Miskar,437,publié,,rapport annuel 2023 ; rapport annuel 2024,p. 32 imprimée (PDF 35) ; p. 32 (PDF 34),image,
+2023,Autres champs nationaux,1349,calculé,gaz commercial sud 177 + Chergui 126 + Hasdrubal 200 + Franig-Sabria-Baguel 118 + Ghrib 38 + Maâmoura et Baraka 60 + Nawara 576 + Sidi Marzoug 54,rapport annuel 2023 ; rapport annuel 2024,p. 32 imprimée (PDF 35) ; p. 32 (PDF 34),image,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2023,total des prélèvements (égal à la somme des parties),5217,publié,,rapport annuel 2023 ; rapport annuel 2024,p. 32 imprimée (PDF 35) ; p. 32 (PDF 34),image,
+2023,"total des achats de gaz (autre tableau, hors somme)",5315,publié,,rapport annuel 2023,p. 33 imprimée (PDF 36),image,"autre tableau que celui des prélèvements : achats de gaz, condensats et gaz gratuits compris ; ne fait pas partie de la somme des parties"
+2024,Redevance consommée sur le gaz algérien en transit,1108,publié,,rapport annuel 2024,p. 32 imprimée (PDF 34),image,
+2024,Achats contractuels de gaz algérien,2543,publié,,rapport annuel 2024,p. 32 imprimée (PDF 34),image,
+2024,Achats additionnels de gaz algérien,1,publié,,rapport annuel 2024,p. 32 imprimée (PDF 34),image,
+2024,Gaz du champ de Miskar,353,publié,,rapport annuel 2024,p. 32 imprimée (PDF 34),image,
+2024,Autres champs nationaux,994,calculé,gaz commercial sud 201 + Chergui 109 + Hasdrubal 176 + Franig-Sabria-Baguel et Tarfa 70 + Ghrib 24 + Maâmoura et Baraka 22 + Nawara-Shelbia 341 + Sidi Marzoug 51,rapport annuel 2024,p. 32 imprimée (PDF 34),image,somme des lignes imprimées du gaz national hors Miskar (calcul)
+2024,total des prélèvements (égal à la somme des parties),4999,publié,,rapport annuel 2024,p. 32 imprimée (PDF 34),image,
+2024,"total des achats de gaz (autre tableau, hors somme)",5123,publié,,rapport annuel 2024,p. 33 imprimée (PDF 35),image,"autre tableau que celui des prélèvements : achats de gaz, condensats et gaz gratuits compris ; ne fait pas partie de la somme des parties"
