@@ -5,8 +5,10 @@
     el.figure("cout_prix_kwh", caption=…, note_lecture=…)
     el.figure("subvention", caption=…, note_lecture=…)
     el.figure("gaz_sources", caption=…, note_lecture=…)
+    el.figure("gaz_pib", caption=…, note_lecture=…)
 
-D'OÙ VIENNENT LES DONNÉES. Quatre séries de `tunisia-data`, lues par `figtools.series()` — donc
+D'OÙ VIENNENT LES DONNÉES. Cinq séries de `tunisia-data` (la cinquième, la facture des combustibles,
+ne sert qu'à la figure en points de PIB), lues par `figtools.series()` — donc
 depuis le snapshot `precis/_seriescache/` quand l'entrepôt est absent :
 
   - `steg-prix-achat-gaz` : prix d'achat de la tonne équivalent pétrole de gaz, en dinars
@@ -17,7 +19,12 @@ depuis le snapshot `precis/_seriescache/` quand l'entrepôt est absent :
     en millimes courants, par famille de source ;
   - `steg-subvention-exploitation` : subvention d'exploitation de la STEG, 2006-2016, soutien
     direct et indirect du rapport de contrôle de 2014 ;
-  - `steg-prelevements-gaz` : gaz prélevé par la STEG, par source, 2001-2024, en ktep.
+  - `steg-prelevements-gaz` : gaz prélevé par la STEG, par source, 2001-2024, en ktep ;
+  - `steg-facture-combustibles` : « achats de combustibles » des états financiers de la STEG,
+    2013-2023, en millions de dinars courants — le numérateur du prix moyen d'achat publié ;
+  - `pib-courant-par-base` : PIB aux prix courants, ligne « base 2015 » seule (2013-2014
+    rétropolés par l'INS, 2015-2023 publiés dans les Comptes de la nation) ; une seule base
+    sur toute la période, donc rien à chaîner. Voir l'annexe du site sur le PIB.
 
 RÈGLES (les mêmes que `compensation.py` et `transport.py`).
 
@@ -27,13 +34,15 @@ RÈGLES (les mêmes que `compensation.py` et `transport.py`).
     vertical et un repère triangulaire dont l'infobulle porte le texte complet.
   - **Une valeur par ligne retenue** : la ligne `retenu = non` (coût de 2016 calculé) n'est pas
     tracée ; elle reste dans l'onglet « Données ».
-  - **Dinars et millimes courants, aucun PIB.**
+  - **Dinars et millimes courants, aucun PIB** — sauf la figure `gaz_pib`, qui divise par le PIB
+    nominal de la base 2015, seule base employée (voir sa note de lecture).
   - **La ligne « Source » ne cite que les clés des lignes tracées.**
 
 Les libellés sont en français ; les libellés arabes restent à verser.
 """
 from __future__ import annotations
 
+import math
 import sys
 from pathlib import Path
 
@@ -44,6 +53,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import Patch  # noqa: E402
 from matplotlib.ticker import FuncFormatter  # noqa: E402
+import pandas as pd  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 import figtools  # noqa: E402
@@ -52,6 +62,8 @@ PRIX = "steg-prix-achat-gaz"
 KWH = "steg-cout-prix-kwh"
 SUBV = "steg-subvention-exploitation"
 GAZ = "steg-prelevements-gaz"
+FACTURE = "steg-facture-combustibles"
+PIB = "pib-courant-par-base"
 
 BLEU, BLEU_CLAIR, ORANGE, VERT, VIOLET, ROUGE, GRIS, BRUN, NOIR, ROSE, TEAL = (
     "#0969da", "#80b3f0", "#d1600f", "#1a7f37", "#8250df", "#cf222e", "#8c959f", "#9a6700",
@@ -176,7 +188,7 @@ PROVENANCE = {
 _ORIGINE: dict[str, dict] = {}
 
 
-def _declarer(series_id: str, cles=None) -> None:
+def _declarer(series_id: str, cles=None, surcharge: dict | None = None) -> None:
     """Provenance montrée au lecteur : clés restreintes à celles que la figure emploie et
     présentes dans la bibliographie du livre ; périmètre et réserves réécrits pour lui."""
     if series_id not in _ORIGINE:
@@ -187,6 +199,7 @@ def _declarer(series_id: str, cles=None) -> None:
     champs = {k: v for k, v in origine.items() if k != "id" and not k.endswith("_ar")}
     champs["sources"] = [k for k in cles if k in connues]
     champs.update(PROVENANCE.get(series_id, {}))
+    champs.update(surcharge or {})
     figtools.register_provenance(series_id, **champs)
 
 
@@ -471,6 +484,210 @@ def _figure_gaz_sources():
             {GAZ: _cles(d)}, "fig_compensation_eg_gaz_sources")
 
 
+# --- 5. La facture des combustibles de la STEG en points de PIB : le pont -------------------
+
+FAMILLE_EF = "etats_financiers_steg"
+BASE_PIB = "base 2015"
+ANNEES_PIB = tuple(range(2013, 2024))
+PONTS = ((2013, 2016), (2016, 2022), (2022, 2023), (2013, 2023))
+COUL_EFFET = {"prix": VERT, "quantite": BLEU, "pib": VIOLET}
+HACHURE_EFFET = {"prix": "", "quantite": "//", "pib": "xx"}
+GRIS_CLAIR = "#d0d7de"
+
+SURCHARGES = {"gaz_pib": {
+    PRIX: dict(
+        perimetre=("« prix moyen annuel d'achat de la TEP gaz » des états financiers de la STEG, "
+                   "exercices 2013 à 2023 : les achats de combustibles divisés par le total des "
+                   "achats de gaz, toutes sources confondues"),
+        caveats=("Le numérateur comprend le fuel et le gazole ; la quantité déduite de la facture "
+                 "et du prix est donc le total des achats de gaz de la STEG, non une quantité de "
+                 "gaz seul. Rupture de 2015 : fin du prix de cession. Dinars courants.")),
+    FACTURE: dict(
+        caveats=("La facture comprend le fuel et le gazole, elle n'est pas la facture du seul "
+                 "gaz. 2016 est imprimé à l'unité. Pour 2017 les états financiers donnent trois "
+                 "valeurs voisines (3 159,7 ; 3 160,6 ; 3 160,7) : le tableau en dinars exacts "
+                 "est retenu. Rupture de 2015. Dinars courants.")),
+    PIB: dict(
+        base_pib="2015",
+        perimetre=("PIB aux prix courants, base 2015, 2013-2023 : 2013 et 2014 rétropolés par "
+                   "l'INS (classeur du 15 août 2021), 2015 à 2023 publiés dans les Comptes de la "
+                   "nation"),
+        caveats=("Une seule base sur toute la période, sans raccord. 2013 et 2014 sont des "
+                 "valeurs rétropolées par l'INS ; voir l'annexe du site sur le PIB. Millions de "
+                 "dinars courants.")),
+}}
+
+
+def _moyenne_log(a: float, b: float) -> float:
+    """Moyenne logarithmique L(a, b) = (a − b) / (ln a − ln b), égale à a quand a = b."""
+    return a if abs(a - b) < 1e-12 else (a - b) / (math.log(a) - math.log(b))
+
+
+def donnees_pont() -> pd.DataFrame:
+    """Entrées du calcul, une ligne par année 2013-2023, lues dans les séries — jamais recopiées.
+
+    facture : millions de dinars courants ; prix : dinars par tep ; pib : millions de dinars
+    courants (base 2015) ; quantite : ktep, déduite de la facture et du prix (le « total des
+    achats de gaz » de la STEG, puisque le prix publié est la facture divisée par ce total) ;
+    ratio : facture en points de PIB.
+    """
+    f = figtools.series(FACTURE)
+    f = f[f["famille"] == FAMILLE_EF].set_index("annee")
+    p = figtools.series(PRIX)
+    p = p[p["famille"] == FAMILLE_EF].set_index("annee")
+    y = figtools.series(PIB)
+    y = y[y["base"] == BASE_PIB].set_index("annee")
+    d = pd.DataFrame({"facture": f["valeur"], "prix": p["valeur"], "pib": y["pib_MD"]})
+    d = d.loc[list(ANNEES_PIB)]
+    if d.isna().any().any():
+        raise ValueError(f"pont en points de PIB : valeur manquante\n{d[d.isna().any(axis=1)]}")
+    d["quantite"] = d["facture"] / d["prix"] * 1000
+    d["ratio"] = 100 * d["facture"] / d["pib"]
+    return d
+
+
+def effets_annuels(d: pd.DataFrame) -> pd.DataFrame:
+    """Décomposition logarithmique (LMDI) de la variation annuelle du ratio facture / PIB.
+
+    facture / PIB = prix × quantité / PIB. Pour chaque année t, avec L la moyenne logarithmique
+    des ratios de t − 1 et de t : effet prix = L · ln(prix_t / prix_t−1), effet quantité =
+    L · ln(quantité_t / quantité_t−1), effet PIB = − L · ln(PIB_t / PIB_t−1). La somme des
+    trois égale exactement la variation du ratio, sans résidu."""
+    lignes = {}
+    annees = list(d.index)
+    for a0, a1 in zip(annees[:-1], annees[1:]):
+        L = _moyenne_log(d.at[a1, "ratio"], d.at[a0, "ratio"])
+        lignes[a1] = {
+            "prix": L * math.log(d.at[a1, "prix"] / d.at[a0, "prix"]),
+            "quantite": L * math.log(d.at[a1, "quantite"] / d.at[a0, "quantite"]),
+            "pib": -L * math.log(d.at[a1, "pib"] / d.at[a0, "pib"])}
+    return pd.DataFrame.from_dict(lignes, orient="index")
+
+
+def pont(d: pd.DataFrame, a: int, b: int) -> dict:
+    """Pont de a à b : ratio de départ, effets (somme des effets annuels de a + 1 à b), ratio
+    d'arrivée. Départ + effets = arrivée, à 1e-9 près."""
+    e = effets_annuels(d).loc[a + 1:b].sum()
+    return {"depart": float(d.at[a, "ratio"]), "prix": float(e["prix"]),
+            "quantite": float(e["quantite"]), "pib": float(e["pib"]),
+            "arrivee": float(d.at[b, "ratio"])}
+
+
+def _signe(v: float) -> str:
+    if abs(v) < 0.005:
+        return _nb(0, 2)
+    return ("+" if v > 0 else "−") + _nb(abs(v), 2)
+
+
+def fig_gaz_pib():
+    figtools.apply_lang_font()
+    d = donnees_pont()
+    rupt = figtools.series(FACTURE)
+    rupt = rupt[(rupt["famille"] == FAMILLE_EF) & (rupt["rupture"].fillna("") != "")]
+    fig, axs = plt.subplots(2, 2, figsize=(9.5, 7.6), sharey=True)
+    noms = (("prix", "Effet\nprix", "effet prix"), ("quantite", "Effet\nquantité", "effet quantité"),
+            ("pib", "Effet\nPIB", "effet PIB (dénominateur)"))
+    for ax, (a, b) in zip(axs.flat, PONTS):
+        c = pont(d, a, b)
+        niveau = c["depart"]
+        barre = ax.bar([0], [c["depart"]], width=0.62, color=GRIS_CLAIR, edgecolor=GRIS_FONCE,
+                       lw=0.8, zorder=2)
+        figtools.infobulle(barre[0], f"{a} · facture des combustibles : {_nb(c['depart'], 2)} points "
+                                     f"de PIB ({_nb(d.at[a, 'facture'])} millions de dinars pour "
+                                     f"{_nb(d.at[a, 'pib'])} de PIB)")
+        ax.annotate(_nb(c["depart"], 2), xy=(0, c["depart"]), xytext=(0, 3),
+                    textcoords="offset points", ha="center", fontsize=8)
+        for i, (cle, _, etiquette) in enumerate(noms, start=1):
+            e = c[cle]
+            barre = ax.bar([i], [e], bottom=[niveau], width=0.62, color=COUL_EFFET[cle],
+                           hatch=HACHURE_EFFET[cle], edgecolor="white", zorder=2)
+            figtools.infobulle(barre[0], f"{a} → {b} · {etiquette} : {_signe(e)} point de PIB")
+            ax.plot([i - 1 + 0.31, i - 0.31], [niveau, niveau], color=GRIS_FONCE, lw=0.6, zorder=1)
+            ax.annotate(_signe(e), xy=(i, max(niveau, niveau + e)), xytext=(0, 3),
+                        textcoords="offset points", ha="center", fontsize=8)
+            niveau += e
+        ax.plot([3 + 0.31, 4 - 0.31], [niveau, niveau], color=GRIS_FONCE, lw=0.6, zorder=1)
+        if abs(niveau - c["arrivee"]) > 1e-9:
+            raise ValueError(f"pont {a}-{b} : départ + effets {niveau} ≠ arrivée {c['arrivee']}")
+        barre = ax.bar([4], [c["arrivee"]], width=0.62, color=GRIS_CLAIR, edgecolor=GRIS_FONCE,
+                       lw=0.8, zorder=2)
+        figtools.infobulle(barre[0], f"{b} · facture des combustibles : {_nb(c['arrivee'], 2)} points "
+                                     f"de PIB ({_nb(d.at[b, 'facture'])} millions de dinars pour "
+                                     f"{_nb(d.at[b, 'pib'])} de PIB)")
+        ax.annotate(_nb(c["arrivee"], 2), xy=(4, c["arrivee"]), xytext=(0, 3),
+                    textcoords="offset points", ha="center", fontsize=8)
+        ax.set_xticks(range(5))
+        ax.set_xticklabels([f"Facture\n{a}"] + [n for _, n, _ in noms] + [f"Facture\n{b}"],
+                           fontsize=7.5)
+        ax.set_title(f"{a} → {b}", fontsize=9.5, loc="left")
+        ax.set_xlim(-0.6, 4.6)
+        ax.set_ylim(0, 8.2)
+        ax.grid(True, axis="y", alpha=0.3)
+        ax.set_axisbelow(True)
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0)))
+        for r in rupt.itertuples(index=False):
+            if a < int(r.rupture_annee) <= b:
+                m, = ax.plot([0.985], [1.03], marker=7, ms=6, color=GRIS_FONCE, clip_on=False,
+                             zorder=4, transform=ax.transAxes, ls="none")
+                figtools.infobulle(m, f"{int(r.rupture_annee)} · {r.rupture}")
+    for ax in axs[:, 0]:
+        ax.set_ylabel("Points de PIB")
+    poignees = [Patch(facecolor=GRIS_CLAIR, edgecolor=GRIS_FONCE, label="facture des combustibles "
+                                                                         "de la STEG, en % du PIB")]
+    poignees += [Patch(facecolor=COUL_EFFET[k], hatch=HACHURE_EFFET[k], edgecolor="white",
+                       label=figtools.fig_text(lab)) for k, lab in
+                 (("prix", "effet prix (prix moyen d'achat)"),
+                  ("quantite", "effet quantité (déduite de la facture et du prix)"),
+                  ("pib", "effet PIB (croissance nominale, au dénominateur)"))]
+    poignees.append(Line2D([0], [0], marker=7, color=GRIS_FONCE, ls="none", ms=6,
+                           label="période qui contient la rupture de 2015 (infobulle)"))
+    fig.tight_layout(rect=(0, 0.1, 1, 1))
+    fig.legend(handles=poignees, loc="lower center", ncol=2, fontsize=7.5, frameon=False)
+    return fig
+
+
+def _figure_gaz_pib():
+    d = donnees_pont()
+    e = effets_annuels(d)
+    f = figtools.series(FACTURE)
+    f = f[f["famille"] == FAMILLE_EF].set_index("annee")
+    p = figtools.series(PRIX)
+    p = p[p["famille"] == FAMILLE_EF].set_index("annee")
+    y = figtools.series(PIB)
+    y = y[y["base"] == BASE_PIB].set_index("annee")
+    lignes = []
+    for a in d.index:
+        lignes.append({
+            "Période": str(a),
+            "Facture des combustibles (millions de dinars)": d.at[a, "facture"],
+            "Prix moyen d'achat (dinars par tep)": d.at[a, "prix"],
+            "Quantité déduite (ktep)": round(d.at[a, "quantite"], 1),
+            "PIB nominal, base 2015 (millions de dinars)": d.at[a, "pib"],
+            "PIB rétropolé par l'INS": y.at[a, "retropole"],
+            "Facture au départ (% du PIB)": None,
+            "Facture en % du PIB": round(d.at[a, "ratio"], 4),
+            "Effet prix (points de PIB)": round(e.at[a, "prix"], 4) if a in e.index else None,
+            "Effet quantité (points de PIB)": round(e.at[a, "quantite"], 4) if a in e.index else None,
+            "Effet PIB (points de PIB)": round(e.at[a, "pib"], 4) if a in e.index else None,
+            "Source facture": f"{f.at[a, 'source']}, {f.at[a, 'page']}",
+            "Source prix": f"{p.at[a, 'source']}, {p.at[a, 'page']}",
+            "Source PIB": y.at[a, "publication"],
+            "Rupture": f.at[a, "rupture"] or p.at[a, "rupture"] or ""})
+    for a, b in PONTS:
+        c = pont(d, a, b)
+        lignes.append({
+            "Période": f"{a} → {b} (pont)",
+            "Facture au départ (% du PIB)": round(c["depart"], 4),
+            "Facture en % du PIB": round(c["arrivee"], 4),
+            "Effet prix (points de PIB)": round(c["prix"], 4),
+            "Effet quantité (points de PIB)": round(c["quantite"], 4),
+            "Effet PIB (points de PIB)": round(c["pib"], 4)})
+    table = pd.DataFrame(lignes).fillna("")
+    cles = {FACTURE: _cles(f.reset_index()), PRIX: _cles(p.reset_index()),
+            PIB: ["ins-cnat-2015", "ins-pib-base-2015-2010-2020"]}
+    return ([(None, fig_gaz_pib())], table, cles, "fig_compensation_eg_gaz_pib")
+
+
 # --- registre ---------------------------------------------------------------------------------
 
 FIGURES = {
@@ -478,6 +695,7 @@ FIGURES = {
     "cout_prix_kwh": _figure_cout_prix_kwh,
     "subvention": _figure_subvention,
     "gaz_sources": _figure_gaz_sources,
+    "gaz_pib": _figure_gaz_pib,
 }
 NON_MONETAIRES = {"gaz_sources"}
 
@@ -488,7 +706,7 @@ def figure(nom: str, caption: str, note_lecture: str | None = None) -> None:
     À appeler dans un chunk Quarto étiqueté `#| label: fig-…`, `#| output: asis`."""
     vues, table, cles, slug = FIGURES[nom]()
     for sid, liste in cles.items():
-        _declarer(sid, liste)
+        _declarer(sid, liste, SURCHARGES.get(nom, {}).get(sid))
     figtools.figure_tabs(vues, table, *cles, slug=slug, caption=caption,
                          note_lecture=note_lecture, nominal=nom not in NON_MONETAIRES)
     plt.close("all")

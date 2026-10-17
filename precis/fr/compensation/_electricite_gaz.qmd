@@ -468,6 +468,42 @@ el.figure(
         "rapport au PIB."))
 ```
 
+La facture des combustibles de la STEG, rapportée au PIB nominal, passe de 5,60 points de PIB en 2013 à 2,20 en 2016, puis à 5,78 en 2022 et à 5,05 en 2023. Le @fig-compensation-eg-gaz-pib décompose chacune de ces variations, ainsi que celle de 2013 à 2023, en trois effets : celui du prix moyen d'achat, celui de la quantité achetée et celui de la croissance du PIB nominal.
+
+```{python}
+#| label: fig-compensation-eg-gaz-pib
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "gaz_pib",
+    caption=(
+        "La facture des combustibles de la STEG en points de PIB, 2013-2023 : effets du prix "
+        "moyen d'achat, de la quantité et du PIB sur quatre périodes (points de PIB)"),
+    note_lecture=(
+        "Chaque panneau va de la facture des combustibles de l'année de départ (barre grise, en "
+        "points de PIB) à celle de l'année d'arrivée, par trois effets qui s'ajoutent : le prix "
+        "moyen d'achat (vert), la quantité (bleu, hachuré) et le PIB (violet, croisé). La facture "
+        "est la ligne « achats de combustibles » des états financiers de la STEG, en dinars "
+        "courants ; elle comprend le fuel et le gazole. Le prix est le « prix moyen annuel d'achat "
+        "de la tep de gaz » publié par la STEG, qui est cette facture divisée par le total de ses "
+        "achats de gaz : la quantité est déduite de la facture et du prix, et c'est ce total, en "
+        "ktep."
+        "\n\n"
+        "Le calcul est une décomposition logarithmique, faite année par année puis sommée sur la "
+        "période, sans résidu : la facture au départ plus les trois effets égale la facture à "
+        "l'arrivée. L'effet du PIB est celui du dénominateur : le PIB nominal croît chaque année "
+        "de la période sauf en 2020, et un PIB plus élevé réduit le poids de la même facture. "
+        "Le PIB est le PIB nominal de la base 2015, seule base employée sur toute la période, "
+        "sans raccord entre bases ; les valeurs de 2013 et 2014 sont rétropolées par l'INS (voir "
+        "l'[annexe sur le PIB](../annexe-pib.html#pib-base-2015) et la "
+        "[rétropolation](../annexe-pib.html#sec-pib-retropolation)). Le repère triangulaire "
+        "signale les périodes qui contiennent la rupture de 2015 : fin du prix de cession et "
+        "achat du gaz au prix mondial. L'onglet « Données » donne, année par année, la facture, "
+        "le prix, la quantité déduite, le PIB, le ratio et les effets annuels."))
+```
+
 Les quantités prélevées passent de 3 180 milliers de tonnes équivalent pétrole (ktep) en 2001 à 5 680 en 2019, puis à 4 999 en 2024. Le gaz algérien passe de 927 ktep en 2001 à 3 652 en 2024, et le gaz du champ de Miskar de 1 734 ktep à 353. Le @fig-compensation-eg-gaz-sources donne, année par année, les parties dont le total est la somme.
 
 ```{python}

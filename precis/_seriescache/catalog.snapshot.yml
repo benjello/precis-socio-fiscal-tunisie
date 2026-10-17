@@ -4813,3 +4813,92 @@
     لا يُضاف إلى المجموع. الغاز الجزائري غير مفصّل بين الأتاوة والمشتريات للسنوات
     2001-2006. القيم مقروءة على الصورة للسنوات 2022-2024.
   fiche: docs/steg-gaz-electricite.md
+- id: steg-facture-combustibles
+  titre: Facture des combustibles de la STEG (« achats de combustibles » des états
+    financiers), 2013-2023
+  sources:
+  - steg-ef-2014
+  - steg-ef-2016
+  - steg-ef-2018
+  - steg-ef-2019
+  - steg-ef-2021
+  - steg-ef-2022
+  - steg-ef-2023
+  build: uv run python scripts/build_steg_facture_combustibles.py
+  raw:
+  - data/raw/minenergie/steg/etats-financiers
+  output: data/processed/precis/steg_facture_combustibles.csv
+  unite: millions de dinars courants (MDT)
+  perimetre: 'une famille, `etats_financiers_steg`, une ligne par année 2013-2023
+    : « achats de combustibles » de la note « coût des ventes » des états financiers
+    de la STEG (exercices 2013 à 2023), avec la source, la page du PDF, le mode de
+    lecture (couche texte du PDF ; la remarque dit si la valeur vient du tableau en
+    dinars exacts, ramené au million, ou de la note de bas de tableau en MDT) et les
+    recoupements. C''est le numérateur du « prix moyen annuel d''achat de la TEP gaz
+    » de la série steg-prix-achat-gaz (famille `etats_financiers_steg`)'
+  caveats: 'LA FACTURE COMPREND LE FUEL ET LE GAZOLE, elle n''est pas la facture du
+    seul gaz ; la quantité déduite (facture ÷ prix moyen d''achat publié) est le «
+    total des achats gaz » des rapports annuels (5 804 ; 5 478 ; 5 765 ; 5 480 ; 5
+    315 ktep en 2019-2023), à l''arrondi du prix près pour 2019-2021 (écart inférieur
+    à 0,1 ktep) et à 0,6 et 1,7 ktep pour 2022 et 2023. 2016 est imprimé à l''unité
+    (2093 MDT). ÉCART DE 2017 : 3 160,7 d''après le tableau en dinars exacts des états
+    financiers 2018 (3 160 678 969) ; les états financiers 2017 impriment 3 159,7
+    (p. 7) et 3 160,6 (p. 38) ; 3 160,7 retenu. 2018 : le tableau donne 4 567 760
+    877, la note imprime 4 567,7. RUPTURE de 2015 (colonne `rupture`) : fin du prix
+    de cession, achat du gaz au prix mondial. Les valeurs de 2005, 2007 et 2008 des
+    rapports annuels (termes différents : « achats de combustibles » d''un coût des
+    ventes, « facture combustible ») ne sont pas versées. Dinars courants, aucun PIB.
+    Voir docs/steg-gaz-electricite.md.'
+  titre_ar: فاتورة المحروقات للشركة التونسية للكهرباء والغاز («مشتريات المحروقات»
+    في القوائم المالية)، 2013-2023
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'عائلة واحدة، سطر لكل سنة من 2013 إلى 2023: «مشتريات المحروقات» في
+    إيضاح «كلفة المبيعات» من القوائم المالية للشركة، مع المصدر والصفحة وطريقة القراءة
+    والمقارنات. وهي بسط «متوسط السعر السنوي لاقتناء الطن المعادل للنفط من الغاز» في
+    سلسلة سعر اقتناء الغاز.'
+  caveats_ar: 'الفاتورة تشمل الفيول والغازوال وليست فاتورة الغاز وحده. الكمية المستنتجة
+    (الفاتورة مقسومة على متوسط السعر المنشور) هي «مجموع مشتريات الغاز» في التقارير
+    السنوية. 2016 مطبوعة بالوحدة (2093). فارق 2017: 3160,7 حسب جدول القوائم المالية
+    2018 بالدينارات الدقيقة، بينما تطبع القوائم المالية 2017 الرقمين 3159,7 و3160,6.
+    قطيعة 2015: نهاية سعر الإحالة. بالدينار الجاري ودون ناتج داخلي خام.'
+  fiche: docs/steg-gaz-electricite.md
+- id: pib-courant-par-base
+  titre: PIB aux prix courants, base par base (1983, 1997, 2015), 1986-2025
+  sources:
+  - ins-cnat-2015
+  - ins-pib-base-2015-2010-2020
+  - undata-sna
+  - minfin-indicateurs-fp
+  build: tunisia_data.build.pib:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation/INS_2021-08-15_donnees_annuelles_base_2015_2010-2020.xlsx
+  - data/raw/minfinances/indicateurs_fp_2025.xls
+  - data/processed/ins-comptes-nationaux/pib_nominal_editions.csv
+  - data/processed/ins-comptes-nationaux/pib_undata.csv
+  output: data/processed/ins-comptes-nationaux/pib_courant_par_base.csv
+  unite: millions de dinars courants
+  perimetre: 'une ligne par (année, base) : base 2015 de 2010 à 2025 (2010-2014 rétropolées
+    par l''INS, classeur du 15 août 2021 ; ensuite l''édition la plus récente des
+    Comptes de la nation), base 1997 de 1997 à 2017 (1997-2004 rétropolées, connues
+    par UNdata ; ensuite les éditions), base 1983 de 1992 à 2009 (UNdata et éditions)
+    ; plus les valeurs du PIB du ministère des Finances qui ne se rattachent à aucune
+    base (1986-1991 : base 1983 présumée ; 2002-2004 et 2025 : non rattachées). Colonnes
+    `source`, `publication`, `retropole`, `provenance`, `repris_par_minfin`'
+  base_pib: 1983 / 1997 / 2015 (colonne base)
+  caveats: 'TROIS BASES, JAMAIS RACCORDÉES : filtrer `base`, ne jamais tracer d''un
+    trait d''une base à l''autre. L''écart entre bases n''est pas constant (voir `pib-courant-recouvrements`).
+    `retropole` : oui pour la base 2015 en 2010-2014 et la base 1997 en 1997-2004,
+    non pour une année publiée dans une édition de sa base, « non précisé par la source
+    » pour la base 1983 et le ministère. Aucune base dite avant 1992 ; rien en base
+    1997 après 2017 ni en base 2015 avant 2010. Le classeur de l''INS est hors git.
+    Voir docs/pib-courant-par-base.md.'
+  titre_ar: الناتج المحلي الإجمالي بالأسعار الجارية حسب الأساس (1983، 1997، 2015)،
+    1986-2025
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'سطر لكل سنة وأساس: أساس 2015 من 2010 إلى 2025 (2010-2014 معاد احتسابها
+    من المعهد الوطني للإحصاء)، أساس 1997 من 1997 إلى 2017، أساس 1983 من 1992 إلى 2009،
+    وقيم ناتج وزارة المالية غير المرتبطة بأي أساس'
+  caveats_ar: 'ثلاثة أسس غير موصولة: تُفرز السلسلة حسب العمود base ولا يُرسم خط متصل
+    من أساس إلى آخر. الفارق بين الأسس غير ثابت. لا يوجد أساس مذكور قبل 1992، ولا شيء
+    على أساس 1997 بعد 2017 ولا على أساس 2015 قبل 2010.'
+  fiche: docs/pib-courant-par-base.md

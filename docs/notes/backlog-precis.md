@@ -2680,7 +2680,19 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     familles séparées, ruptures de 2007 et de 2015 marquées ; quatorze références versées
     (états financiers 2014-2023, rapports annuels 2005, 2023 et 2024, Mémentos de l'Observatoire
     de 2014 et 2016, étude de l'ANER, rapport d'achèvement de la BAD sur Électricité VII). Les
-    tableaux de coût et de prix restent visibles. **Reste à faire** : prix d'importation du
+    tableaux de coût et de prix restent visibles. **Fait aussi le 17 octobre 2026** : la
+    facture des combustibles de la STEG (2013-2023, états financiers, onze valeurs relues sur les
+    PDF, écart de 2017 consigné) versée à l'entrepôt (`steg-facture-combustibles`) et la figure
+    `fig-compensation-eg-gaz-pib` (`#sec-compensation-eg-gaz-achat`) : pont de cette facture en
+    points de PIB nominal (base 2015, 2013-2014 rétropolés par l'INS), en trois effets — prix,
+    quantité déduite, PIB — sur 2013-2016, 2016-2022, 2022-2023 et 2013-2023 ; décomposition
+    logarithmique calculée dans le module de figure, testée. **Reste à faire** pour cette figure :
+    la facture comprend le fuel et le gazole, la quantité déduite est le « total des achats de
+    gaz » et non du gaz seul (aucune facture du seul gaz n'est publiée) ; les valeurs de 2005,
+    2007 et 2008 des rapports annuels (« achats de combustibles », « facture combustible ») ne sont
+    pas versées, leurs pages restent à relire ; 2022 et 2023 s'écartent de 0,6 et 1,7 ktep du
+    total publié des achats de gaz (cause non dite par les états financiers) ; version arabe de
+    la note de lecture et des libellés, à terme. **Reste à faire** : prix d'importation du
     gaz algérien de l'Observatoire (2013-2025, versé, non tracé : figure ultérieure) et valeur FOB
     de l'ETAP (2005, 2008-2014, non versée) ; coût de revient de 2015 par les états financiers
     2015 (lu par reconnaissance de caractères, non relu) ; subvention d'exploitation de 2017 à

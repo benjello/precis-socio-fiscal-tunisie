@@ -1,0 +1,5 @@
+series: [steg-facture-combustibles, steg-prix-achat-gaz, pib-courant-par-base]
+sources: [steg-ef-2014, steg-ef-2016, steg-ef-2018, steg-ef-2019, steg-ef-2021, steg-ef-2022, steg-ef-2023, ins-cnat-2015, ins-pib-base-2015-2010-2020]
+fiches: [docs/steg-gaz-electricite.md, docs/pib-courant-par-base.md]
+caveats: [La facture comprend le fuel et le gazole, elle n'est pas la facture du seul gaz. 2016 est imprimé à l'unité. Pour 2017 les états financiers donnent trois valeurs voisines (3 159,7 ; 3 160,6 ; 3 160,7) : le tableau en dinars exacts est retenu. Rupture de 2015. Dinars courants., Le numérateur comprend le fuel et le gazole ; la quantité déduite de la facture et du prix est donc le total des achats de gaz de la STEG, non une quantité de gaz seul. Rupture de 2015 : fin du prix de cession. Dinars courants., Une seule base sur toute la période, sans raccord. 2013 et 2014 sont des valeurs rétropolées par l'INS ; voir l'annexe du site sur le PIB. Millions de dinars courants.]
+generated: 2026-10-17
