@@ -33,6 +33,11 @@ roles:
     tools: [Read, Grep, Glob, WebSearch, WebFetch, Bash]
     niveau: raisonnement
 
+  economiste:
+    description: "Établit, pour un dispositif du précis socio-fiscal, l'état des connaissances économiques : la question que les économistes lui posent, ce que dit la théorie, ce que mesure l'empirique (synthèses internationales, puis Tunisie), ce qui est établi et ce qui est débattu, ce que le praticien retient. Rend une fiche datée docs/notes/eco-<dispositif>.md, source de la section « Ce qu'en dit l'économie » que le rédacteur écrit en fin de chapitre. Ton documentaire, aucune recommandation, aucun chiffre sans plage ni référence. N'écrit aucun .qmd."
+    tools: [Read, Grep, Glob, WebSearch, WebFetch, Bash]
+    niveau: raisonnement
+
   modeliste:
     description: "Prépare les corrections du dépôt de modèle openfisca-tunisia, qui porte le système fiscal et celui des pensions — paramètres datés et sourcés sur le Journal officiel, formules, tests YAML, PR ciblées. À utiliser dès qu'un dépouillement du précis appelle une correction du modèle."
     tools: [Read, Write, Edit, Grep, Glob, Bash]
