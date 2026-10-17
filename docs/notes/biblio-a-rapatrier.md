@@ -6,6 +6,31 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Versement du 17/10/2026 (fiscalité, chapitre « Le patrimoine immobilier »)
+
+Sources : plan de l'architecte (§ M7), `docs/notes/fiscalite-patrimoine-immobilier-dates-textes-series.md` (§ 6) et
+`docs/notes/fiscalite-patrimoine-immobilier-mutations-plus-values.md` (§ 5). Vingt notices neuves au fonds commun, FR et AR
+(`precis/{fr,ar}/references.json`), absentes de Zotero.
+
+- **Lois** (URL pist.tn lues dans `pdf_fr` / `pdf_ar` de `jort_cache.db`, HTTP 200 le 17/10/2026 ; `issue` = numéro du JORT) :
+  `lf-1969`, `lf-1973`, `lf-1981`, `loi-87-71`, `loi-87-73`, `loi-93-53-cdet`, `loi-93-64`, `loi-2006-69`. Pages reprises des
+  notes documentaires, non relues au fascicule. `loi-89-114` n'est pas créée : c'est `loi-irpp-is-1989`.
+- **Notes communes de la DGI** : `dgi-nc-23-2007`, `dgi-nc-14-2012`, `dgi-nc-18-2015` (PDF de jibaya.tn, contenu contrôlé contre
+  la copie locale). Le numéro de la note commune n'est pas un champ aller-retour pour le type `report` : il est dans le titre.
+  `dgi-nc-23-2014` et `dgi-nc-28-2002` ne sont pas versées (non citées par la tâche, textes non lus ici).
+- **Autres** : `minfin-cdet-2025` (compilation non officielle, jibaya.tn), `bm-doing-business-2014-tunisie` (rapport 82992 dans
+  la note), `zaafrane-2014-habitat`, `belaid-2014-habitat` (mehat.gov.tn).
+- **Promues au fonds commun** (déplacées, FR et AR, sans copie restante) : `lf-1970`, `lf-1984`, `lf-1985` (de `compensation`) ;
+  `loi81-100-lf1982`, `lfc-2012` (de `finances_locales`). Dans Zotero : à **déclasser** de ces collections.
+- **Doublon** : `lf-2019` (local à `fiscalite`, 3 citations) et `loi2018-56-lf2019` (fonds commun, 26 citations, note plus
+  complète) désignent la même loi. Les deux sont conservées ; `lf-2019` est à fondre dans `loi2018-56-lf2019` au prochain passage
+  sur les `.qmd` de `fiscalite`.
+- **Sans URL française** : `lf-2016`, `lf-2019`, `lf-2020` (`pdf_fr` vide dans `jort_cache.db`, `Jo1042015`, `Jo1042018`,
+  `Jo1042019` : 404). Entrées arabes avec `pdf_ar` (HTTP 200). Rien à ajouter.
+- **Restent** : `bm-2014-unfinished-revolution` est `banquemondiale2014-revolution-inachevee` (existante, `fiscalite`) ;
+  `minfin-2014-projet-reforme-fiscale` n'a pas de notice sous un autre nom : à créer après lecture de
+  `2014-11_anf_projet_reforme_fiscale_FR.pdf`. Rien en dehors de ceci n'est écrit dans Zotero.
+
 ## Versement du 11/10/2026 (entreprises publiques, brouillon)
 
 Source : `docs/notes/entreprises-publiques-2026-10-11.md`, § 3. Notices neuves dans
