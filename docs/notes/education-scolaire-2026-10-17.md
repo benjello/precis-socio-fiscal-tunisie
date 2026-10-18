@@ -1026,3 +1026,27 @@ domaine d'étude, mandat de trois ans. Date : au plus tôt le 25 juillet 2012. *
 vingt-quatre membres, mandats de un et deux ans) : la ligne de 2004 du chapitre décrit l'état d'origine, la ligne de 2012 l'état modifié.
 **Arrêté du 30 avril 2014** (JORT n° 38 du 13 mai 2014, p. 1166) : remplace l'art. 6 de l'arrêté du 9 mai 2008 : le procès-verbal est
 présenté au ministre de l'éducation (et non plus au gouverneur) qui prend la décision. Date : au plus tôt le 18 mai 2014.
+
+**Cahiers des charges des jardins d'enfants, 2001 et 2003 — lecture du 18 octobre 2026.** Arrêté du ministre de la jeunesse, de l'enfance et des
+sports du 8 septembre 2001 (JORT n° 75 du 18 septembre 2001, p. 3021-3022) : approuve le cahier des charges d'ouverture des jardins d'enfants (art. 1er) ;
+les services et commissariats régionaux le mettent à la disposition des promoteurs (art. 2) ; pris sur le décret n° 2001-1908. Même fascicule : arrêtés
+du même jour pour les clubs d'enfants et d'informatique, les crèches et les salles privées d'éducation physique. Date : au plus tôt le 23 septembre 2001.
+Arrêté de la ministre des affaires de la femme, de la famille et de l'enfance du 28 mars 2003 (JORT n° 28 du 8 avril 2003, p. 873) : approuve un
+nouveau cahier des charges d'ouverture des jardins d'enfants (art. 1er), mis à disposition par les services régionaux à l'enfance (art. 2), abroge et remplace
+l'arrêté du 8 septembre 2001 (art. 3). Vise le décret n° 2002-2103 du 23 septembre 2002 (rattachement des structures de l'ex-ministère de la jeunesse, de
+l'enfance et des sports au ministère des affaires de la femme, de la famille et de l'enfance : texte non lu) et la loi n° 2002-80. Date : au plus tôt le 13 avril 2003.
+Les deux cahiers des charges sont publiés en arabe seulement (note de l'arrêté), pages sans couche de texte : non lus. Les deux fascicules ont une police décalée.
+
+**Arrêté de la ministre de la famille, de la femme, de l'enfance et des personnes âgées du 24 janvier 2022** (JORT n° 11 du 28 janvier 2022, p. 304-305) — texte de
+l'arrêté lu ; cahier des charges annexé publié en arabe seulement. Art. 1er : approbation ; art. 2 : abroge et remplace l'arrêté du 28 mars 2003 ; art. 3 : régularisation
+dans un an des jardins exerçant avec un récépissé de dépôt ; art. 4 : dispense du tiret 7 de l'art. 17 (espaces extérieurs) pour les promoteurs déjà en exercice ; art. 5 :
+sessions de formation dans les cinq ans pour les cadres sans les certificats de l'art. 40 ; art. 6 : publication. Vise notamment le décret n° 2003-2020 du 22 septembre 2003
+(attributions du ministère des affaires de la femme, de la famille et de l'enfance), le décret n° 2004-1876 (conformité des locaux, attestation de prévention), le décret
+n° 2008-486 (établissements éducatifs privés) et l'arrêté du 25 novembre 2002 (convention collective sectorielle des jardins d'enfants et pépinières). Date : au plus tôt le 2 février 2022.
+
+**Arrêté du ministre de la jeunesse et des sports du 28 janvier 1974, jardins d'enfants** — lu à l'image (JORT n° 7 du 29 janvier 1974, p. 211 ; 18 articles). Vise le décret du
+15 mars 1934 (crèches et jardins d'enfants) et le décret n° 69-6 du 4 janvier 1969. Art. 1 : autorisation préalable, un an, tacite reconduction ; art. 2 : fermeture ; art. 3 :
+budget ; art. 4 : sécurité, assurance ; art. 5 : locaux ; art. 6 : constructions ; art. 8-11 : personnel, directrice, contrôle pédagogique et médical ; art. 12 : ressources
+(subventions des collectivités, cotisations des enfants approuvées par le ministère, dons) ; art. 13 : activités ; art. 14 : 25 enfants au plus par groupe et par séance ; art. 15 :
+enfants de 3 à 6 ans (acte de naissance, certificat médical, vaccinations) ; art. 17 : un an pour se conformer ; art. 18 : abrogation des dispositions contraires. Date : au plus tôt le
+3 février 1974. Même page : arrêté du même jour sur les clubs d'enfants (art. 16-17 en haut de page). Le sort de cet arrêté après le décret n° 2001-1908 n'est pas établi.

@@ -628,3 +628,11 @@ Chaque passe consigne ce qui a été fait : requêtes SQL (FTS et LIKE) et LIKE 
 titres et objets de `jort_cache`, `grep` sur le miroir iort. **Le plein texte des fascicules n'a pas
 été parcouru** : `scripts/recherches.py relancer`, lancé sur une copie de travail, n'a pas abouti
 dans le temps imparti. Ce parcours est inscrit dans le champ `a_faire` de chaque fiche.
+
+## Tarifs de pension et de demi-pension, 1966-2022 : lectures du 18 octobre 2026
+
+Huit arrêtés lus à l'image (sauf 2022 : texte) : 24 juillet 1967 (effet 1er octobre 1966), 8 mars 1973, 12 janvier 1977, 14 février 1979, 27 décembre 1982 (effet 1er janvier 1983), 2 septembre 1987
+(effet 14 septembre 1987), 28 mars 1988 (effet 14 septembre 1988), 10 février 2022. Le tableau du chapitre donne la demi-pension et la pension du 2e cycle et des internats primaires, au premier
+trimestre. Valeurs non reprises au chapitre : tarifs des deuxième et quatrième trimestres (de 1977 à 1988), du 1er cycle, des classes primaires annexées et des collèges (1966-1983), des lycées pilotes (1988),
+tarifs des commensaux par catégorie (surveillants, personnel ouvrier, élèves-maîtres) et tarifs d'hébergement du personnel de passage et des élèves (art. 6). Pages de l'index `jort_cache.db` exactes pour ces huit textes.
+Dates : l'arrêté de 1982 est signé le 27 décembre 1982 et prend effet le 1er janvier 1983 ; celui de 1967 prend effet le 1er octobre 1966, soit près d'un an avant sa signature.
