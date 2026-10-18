@@ -1054,3 +1054,5 @@ enfants de 3 à 6 ans (acte de naissance, certificat médical, vaccinations) ; a
 **Décret-loi n° 2021-21 du 28 décembre 2021 (loi de finances pour 2022), art. 60 — lecture du 18 octobre 2026.** Édition française (JORT n° 119, p. 3101 ; l'index donne p. 3277, pagination de l'édition
 arabe) : paragraphe VI ajouté à l'art. 11 du code de l'IRPP et de l'IS ; la prime accordée par l'État aux jardins d'enfants adhérents au programme de « développement de la petite enfance » n'est pas prise en
 considération pour le résultat imposable. Art. 73 (p. 3107) : application à compter du 1er janvier 2022, sauf disposition contraire. Le texte de la prime et du programme n'est pas identifié.
+
+**Décret n° 2002-2103 du 23 septembre 2002 — lecture du 18 octobre 2026.** JORT n° 80 du 1er octobre 2002, p. 2308 (couche texte décodée). Article 1 : la direction générale de l'enfance, prévue par le décret n° 2000-135 du 18 janvier 2000 modifié par le décret n° 2002-1159, est rattachée au ministère des affaires de la femme, de la famille et de l'enfance. Les jardins d'enfants ne sont pas nommés : le texte qui les place sous ce ministère reste à trouver.

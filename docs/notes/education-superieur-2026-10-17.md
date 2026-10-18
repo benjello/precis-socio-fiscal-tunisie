@@ -457,3 +457,8 @@ Déjà proposées par la note d'histoire : `loi89-70`, `loi2008-19`, `decret2008
   qualité de l'université (art. 18 et 19) ; bibliothèque et organismes communs (art. 20 et 21). Chap. III : contrats de
   formation et de recherche de quatre ans, modèles par arrêté, évaluation périodique (art. 22 et 23). Date : au plus tôt
   le 13 août 2008.
+
+**Lectures du 18 octobre 2026.**
+- Décret n° 2008-2716, art. 24 à 65 (p. 2454-2458, couche texte) : crédits en partie fixe et partie variable (art. 24) ; doyens et directeurs (art. 26 à 32) ; conseil scientifique (art. 33 à 40) ; comité pour la qualité de l'établissement (art. 41) ; départements (art. 42 à 49) ; conseil de discipline et sanctions (art. 50 à 61) ; dispositions transitoires (art. 62 et 63) ; abrogation du décret n° 89-1939 (art. 64). Date : au plus tôt le 13 août 2008.
+- Décret n° 2011-683 du 9 juin 2011 (JORT n° 42 du 10 juin 2011, p. 904-907), texte intégral : abroge les art. 26 et 27 et remplace les art. 4, 6, 9, 11, 15 (al. 2), 28, 33, 34, 35 (al. 2), 38 (al. 2) et 45 (al. 1) ; ajoute un alinéa 2 à l'art. 42 ; proroge les mandats jusqu'aux élections (art. 4). Date : au plus tôt le 15 juin 2011. Reste à comparer avec le décret-loi n° 2011-31 (art. 15, 19 et 25 nouveaux) pour les doyens.
+- Décret n° 2006-1936 du 10 juillet 2006 (JORT n° 57 du 18 juillet 2006, p. 1898-1901), texte intégral : université virtuelle de Tunis. Date : au plus tôt le 23 juillet 2006. Non lu : les frais fixés par arrêté pour chaque module (art. 12).
