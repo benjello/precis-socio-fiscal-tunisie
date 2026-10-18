@@ -769,6 +769,9 @@ def main() -> int:
     p.add_argument("--pousser", action="store_true", help="envoie réellement")
     p.add_argument("--limite", type=int, default=0, help="n'envoyer que N entrées")
     p.add_argument("--groupe", default=os.environ.get("ZOTERO_GROUP_ID", DEFAULT_GROUP_ID))
+    p.add_argument("--cles", default="", help="n'envoyer que ces références (clés séparées "
+                                              "par des virgules) ; échoue si l'une est "
+                                              "absente des fichiers locaux")
     p.add_argument("--rapport", default="", help="fichier où consigner les clés créées")
     p.add_argument("--comparer", default="", help="relit une référence depuis Zotero et la "
                                                   "compare à l'entrée locale")
@@ -932,6 +935,16 @@ def main() -> int:
               f"dont {len(existantes)} portant une clé de citation.")
 
     a_pousser = [(c, e) for c, (e, _livres) in sorted(locales.items()) if c not in existantes]
+    if args.cles:
+        demandees = [c.strip() for c in args.cles.split(",") if c.strip()]
+        absentes = [c for c in demandees if c not in locales]
+        if absentes:
+            print(f"✗ absente(s) des fichiers locaux : {', '.join(absentes)}", file=sys.stderr)
+            return 1
+        deja = [c for c in demandees if c in existantes]
+        if deja:
+            print(f"déjà dans Zotero, ignorée(s) : {', '.join(deja)}")
+        a_pousser = [(c, e) for c, e in a_pousser if c in demandees]
     if args.limite:
         a_pousser = a_pousser[: args.limite]
     print(f"{len(locales)} référence(s) locales, {len(a_pousser)} à créer.")

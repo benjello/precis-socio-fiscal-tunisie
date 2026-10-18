@@ -23,6 +23,7 @@ on:
           - pousser-un       # une seule référence, pour éprouver le mapping en vrai
           - comparer         # relit dans Zotero la référence poussée et la compare
           - pousser-tout     # le reste
+          - pousser-cles     # seulement les clés listées dans « reference », séparées par des virgules
           - ranger           # classe les articles créés dans la collection de leur livre
           - controle-rangement  # compare l'usage réel au rangement Zotero (lecture seule)
           - appliquer-rangement-blanc  # ce que le reclassement ferait, sans rien envoyer
@@ -31,7 +32,7 @@ on:
           - verifier-urls    # recense les fascicules du JORT sans édition homologue
           - descendre        # relance sync_biblio.py et montre le diff, sans rien commiter
       reference:
-        description: "Clé de citation à comparer (action « comparer »)"
+        description: "Clé de citation (« comparer »), ou clés séparées par des virgules (« corriger », « pousser-cles »)"
         required: false
         default: "arrete-1987-01-06-financement-pnafn"
 
@@ -68,6 +69,8 @@ jobs:
                             --corriger "${{ inputs.reference }}" ;;
             verifier-urls) uv run python scripts/verifier_urls_jort.py ;;
             descendre)    uv run python scripts/sync_biblio.py --no-check ;;
+            pousser-cles) uv run python scripts/push_biblio.py --pousser \
+                            --cles "${{ inputs.reference }}" --rapport cles-creees.json ;;
             pousser-tout) uv run python scripts/push_biblio.py --pousser \
                             --rapport cles-creees.json ;;
           esac
