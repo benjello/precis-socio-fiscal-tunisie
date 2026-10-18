@@ -2986,3 +2986,23 @@
   a_faire:
   - 'Journal officiel tunisien de 1892 à 1912 (Gallica) : droits de mutation et de timbre sur les immeubles'
   - recueils de législation tunisienne (Bompard, Zeys)
+
+- id: r-bareme-successions-1985-1993
+  objet: texte modifiant, entre la loi de finances pour 1984 (loi n° 83-113, art. 12) et le code des droits d'enregistrement et de timbre de 1993 (loi n° 93-53), le tarif des droits de mutation par décès ou les abattements successoraux
+  ou: [precis/fr/fiscalite/_patrimoine_immobilier.qmd#sec-pi-donations-successions]
+  requetes:
+    titres_fts:
+    - succession OR successions OR deces OR heritage OR heritiers OR donation OR donations OR "mutation par deces"
+    plein_texte: [décès, succession, héritier, donation, abattement]
+    depuis: 1984-01-01
+  periode:
+    jusqu_au: 1993-05-17
+    motif: du barème de la loi de finances pour 1984 au code des droits d'enregistrement et de timbre (loi n° 93-53 du 17 mai 1993)
+  passes:
+  - date: 2026-10-18
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'FTS sur les intitulés des lois de 1984 à 1993 : seul le code de 1993 en sort. Lus à l''image : LFC 1988 (n° 39/1988, pp. 822-825), loi n° 88-63 (p. 856), LF 1989 (n° 87/1988, pp. 1793, 1798, 1800-1805). Océrisés en local et cherchés par mots, non lus à l''image : LF 1989 (pp. 1793-1805), LFC 1989 (n° 73/1989), LFC 1991 (n° 23/1991), LF 1992 (n° 90/1991, fin de la loi non retrouvée dans l''OCR), LF 1993 (n° 88/1992). Lacunes : LF 1985 à LF 1988 et LF 1990-1991 non relues dans cette passe ; lois autres que de finances parcourues par leurs seuls intitulés.'
+    couvert_jusqu_au: 1993-05-25
+    resultat: aucun
+  a_faire: ['LF 1992 (loi n° 91-98) et LF 1993 (loi n° 92-122) à lire à l''image, dispositions fiscales']

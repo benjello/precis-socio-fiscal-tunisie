@@ -595,26 +595,41 @@ liste qui suit le tableau, citations comprises. Restent :
   2005, art. 60) ; renvoi vers le nouveau chapitre. **À trancher par le propriétaire** : les dix
   points du § M6 du plan, appliqués comme proposés et signalés par des commentaires
   `À CONFIRMER (propriétaire)` ; la coupe de l'histoire de la plus-value dans `_impot_revenu.qmd`
-  (décision 2, non faite). **À lire** (lisible dans le corpus local) : dates d'effet de la LF 1975
-  (fin de la loi), de la LF 1989, de la LF 1973 ; taux du défaut d'origine dans le tableau de la LF
-  1969 ; sort des terrains pour les actes de 1982-1983 ; LFC 1988 et lois de 1988 à 1993 pour le
-  barème successoral ; numéro de l'article d'abrogation de la loi n° 93-53 ; décret n° 68-104 ;
-  assiette du droit complémentaire de 2017 (valeur entière ou part au-delà des seuils) ; contexte
-  des réformes (exposés des motifs et débats de 1977, 1987, 1993, 2017 ; documents de la réforme
-  fiscale 2013-2014). **À obtenir** : décret du 28 juin 1886 et loi du 16 mai 1886
-  (`r-loi-fonciere-1885-1886`, Gallica) ; tarif du décret du 19 avril 1912 et textes de 1948-1965
-  (`r-enregistrement-protectorat-1912-1954`) ; fascicules de 1957 de l'ancienne série
+  (décision 2, non faite). **Intégré le 18 octobre 2026** (note
+  `fiscalite-patrimoine-immobilier-lectures-2026-10-18.md`) : dates d'effet de la LF 1973
+  (31 déc. 1972), de la LF 1975 (2 janv. 1975), de la LF 1989 (loi du 31 décembre 1988, 2 janv.
+  1989), de la loi n° 98-73 (dépôt 12 août, 17 août 1998, et art. 12 sur les opérations
+  antérieures), de la LFC 2014 (27 août 2014) et de la LFC 2015 (29 août 2015) ; défaut d'origine
+  1,25 → 1,40 % en 1969 ; art. 8, § II, de la loi n° 93-53 ; LF 1977, art. 27 (« moins de 5 ans »
+  = première tranche, pas de trou à cinq ans) ; assiette du droit complémentaire (valeur globale,
+  art. 20 *bis*) ; terrains en 1982-1983 par la LF 1980 (loi n° 79-66, art. 14 et 15, borne au
+  1er janvier 1986), ligne ajoutée au registre. **Reste à lire** (lisible dans le corpus local) :
+  LF 1992 et LF 1993 à l'image pour le barème successoral 1985-1993
+  (`r-bareme-successions-1985-1993`) ; décret n° 68-104 ; contexte des réformes (exposés des
+  motifs et débats de 1969, 1977, 1987, 1993, 2017 ; documents de la réforme fiscale 2013-2014).
+  **À obtenir** (autre source) : interprétation administrative de la cession après la dixième
+  année (LF 1977 et 1981) ; date d'application du § 2 de l'art. 26 de la LFC 2015 (portée de
+  « présent article ») ; seconde source pour la publication de la LF 1973 au 29 décembre 1972,
+  déduite de l'en-tête et d'un décret du même fascicule. **Différé** (décision du propriétaire
+  du 18 octobre 2026 : textes de 1885-1957 cités indirectement) : décret du 28 juin 1886 et loi
+  du 16 mai 1886 (`r-loi-fonciere-1885-1886`) ; tarif du décret du 19 avril 1912 et textes de
+  1948-1965 (`r-enregistrement-protectorat-1912-1954`) ; fascicules de 1957 de l'ancienne série
   (`r-habous-prives-1957-fascicule`) ; texte du taux de 7,25 % et de la réduction voulue en 1892
-  (`r-reduction-droits-mutation-1892`) ; dates de dépôt des JORT n° 64/1998 (loi n° 98-73) et
-  n° 67/2015 (LFC 2015). **Données** : prévisions du tableau A antérieures à 2020 à lire à l'image
+  (`r-reduction-droits-mutation-1892`) ; décret du 19 mars 1874. **À reprendre (règle du
+  propriétaire du 18 octobre 2026, pas de fait inconnu dans le texte)** : la colonne « Ce qui en
+  est connu ici » et les cellules « intitulé seul » du tableau des textes fonciers
+  (`tbl-pi-textes-fonciers`). **Données** : prévisions du tableau A antérieures à 2020 à lire à l'image
   (OCR non vérifiée) et à verser dans `tunisia-data` avant la figure `fig-pi-previsions` ;
   tableaux A de 2000-2010 et 2023-2026 ; réalisations par article ; nombre d'actes et de cessions.
   **Section réservée** : « Ce qu'en dit l'économie », en attente d'une fiche de l'économiste.
   **Bibliographe** : clés à créer pour la loi n° 79-27, la loi n° 70-66 (LF 1971), les lois n° 59-131,
   64-28, 74-53 et le DL 61-15, la loi n° 90-17, la loi n° 70-25, les avis du Conseil constitutionnel
   n° 31-2006 et 53-2006 ; notes communes 23/2014 et 28/2002 ; URL pist.tn de `lf-2016`, `lf-2019`,
-  `lf-2020`. **Traduction arabe** différée : ajouter le chapitre au `_quarto.yml` arabe à la
-  livraison. Fiches de recherche : les quatre ci-dessus et `r-pv-immobiliere-modificatifs-2023`.
+  `lf-2020` ; compléter les notes de `loi79-66-lf1980` (art. 14 et 15, pp. 3542-3543),
+  `loi-93-53-cdet` (art. 3, p. 715 ; art. 8 § II, p. 716), `loi-98-73` (dépôt du 12 août 1998,
+  art. 12), `lfc-2014` et `lfc-2015` (dépôts) ; doublons `lf-1990`/`loi-89-115-lf-1990` et
+  `lf-1992`/`loi91-98-lf1992`. **Traduction arabe** différée : ajouter le chapitre au `_quarto.yml` arabe à la
+  livraison. Fiches de recherche : les quatre ci-dessus, `r-pv-immobiliere-modificatifs-2023` et `r-bareme-successions-1985-1993`.
 
 ## Retraites
 
