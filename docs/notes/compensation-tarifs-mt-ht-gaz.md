@@ -50,7 +50,7 @@ Le même document donne un « régime à trois postes sur toute l'année » (oct
 | 01/01/1991 | 40 | 80 | 29 | 2 000 | 52 | arrêté du 19 déc. 1990, JORT n° 86, p. 2252-2253 | A |
 | 01/08/1992 | 40 | 84 | 29 | 2 500 (« 2,500 dinars par KW et par mois ») | 56 (300 mill/kVA-mois) | décision du 11 août 1992, JORT n° 56, p. 1101 | **I** |
 
-Bases fiscales : taxes comprises jusqu'en 1987, hors TVA à partir de 1991. La prime de 1975 à 1987 est donnée par la note précédente en millimes par kW et par mois ; l'unité des arrêtés de 1975 à 1984 est à contrôler à la page avant publication (la haute tension de la même époque est tarifée par kW et **par an**).
+Bases fiscales : taxes comprises jusqu'en 1987, hors TVA à partir de 1991. La prime de 1975 à 1987 est donnée par la note précédente en millimes par kW et par mois ; l'unité est le dinar par kW **et par mois** en 1980, 1981 et 1984, d'après les images (17/10/2026) ; celle de 1975 à 1978 reste à contrôler à la page (la haute tension de la même époque est tarifée par kW et **par an**).
 
 ### 2004-2022 (STEG ; quatre postes)
 
@@ -219,7 +219,7 @@ Déjà créées par la passe précédente : `arrete-1975-04-15-…` à `decision
 - Haute tension du 1er septembre 2012 ; gaz moyenne pression de septembre 2012 et mars 2013 ; moyenne tension entre mai et octobre 2022 (aucune grille datée de mai) : non capturées.
 - Heures des postes avant 2014 : non établies. L'image `regime_horaire.jpg` de 2012 n'est pas archivée (la capture renvoie une page d'erreur).
 - 1993-avril 2004 : toujours aucune grille (fiche `r-tarifs-electricite-grilles-1993-2003`, inchangée — aucune requête nouvelle dans cette passe).
-- Journal officiel 1975-1990 (moyenne et haute tension, gaz) : valeurs de la passe précédente, non relues ici ; seule la décision de 1992 l'a été, en entier, et elle est conforme. Arrêtés de 1976, 1977, 1980, janvier 1981 : toujours non lus.
+- Journal officiel 1975-1990 (moyenne et haute tension, gaz) : valeurs de la passe précédente, non relues ici ; seule la décision de 1992 l'a été, en entier, et elle est conforme. Arrêtés de 1976 et 1977 : toujours non lus ; ceux de 1980 et de janvier 1981 sont lus à l'image le 17/10/2026 (compensation-electricite-gaz-objets-des-reformes.md, § 1.2).
 - Sept PDF du gaz basse pression (2008-2019), `bt_20180102`, `bt_sys_2025` : non relus à l'image.
 - Profil type : aucune source (§ 6).
 - Recherches infructueuses : aucune fiche nouvelle ; aucune passe à consigner (rien n'a été cherché au Journal officiel).

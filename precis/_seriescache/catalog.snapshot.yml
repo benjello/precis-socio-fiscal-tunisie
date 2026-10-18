@@ -4587,3 +4587,318 @@
     خلال السنة الجارية؛ ومنذ 2010 يُحتسب الطلبة المرسمون في التعليم العالي بدل حاملي
     بطاقات العلاج السارية. لا يشمل العدد أولي الحق، فلا يُقارن بعدد المنتفعين.'
   fiche: sources/sante-series-depenses.md
+- id: steg-prix-achat-gaz
+  titre: 'Prix d''achat de la tonne équivalent pétrole de gaz par la STEG : prix de
+    cession administré (1993-2014), prix moyen d''achat selon le rapport de contrôle
+    de 2014 (2007-2013) et selon les états financiers de la STEG (2013-2023), prix
+    d''importation du gaz algérien de l''Observatoire (2013-2025)'
+  sources:
+  - minfin-compensation-carburants-2014
+  - steg-ef-2014
+  - steg-ef-2016
+  - steg-ef-2018
+  - steg-ef-2019
+  - steg-ef-2021
+  - steg-ef-2022
+  - steg-ef-2023
+  - one-memento-2014
+  - one-memento-2016-ar
+  - one-chiffres-cles-energie
+  - aner-2000-impact-prix-energie
+  build: uv run python scripts/build_steg_gaz_electricite.py
+  raw:
+  - data/raw/minenergie/steg/etats-financiers
+  - data/raw/minfinances/portail_ancien/compensation/2014-07_rapport_compensation_carburants.pdf
+  - data/raw/banque-mondiale-rapports
+  output: data/processed/precis/steg_prix_achat_gaz.csv
+  unite: dinars courants par tonne équivalent pétrole (DT/tep), pouvoir calorifique
+    supérieur (PCS) sauf pour le rapport de contrôle, qui ne le dit pas
+  perimetre: 'quatre familles, une ligne par (famille, année) : `prix_de_cession`
+    — prix administré auquel la STEG reçoit le gaz de la SOTUGAT et de l''ETAP, 90,8
+    DT/tep fixé le 8 octobre 1993, 1993-2014 ; `rapport_de_controle_2014` — « prix
+    moyen d''achat de la tep », rapport du Contrôle général des finances du 21 juillet
+    2014, p. 72, 2007-2013 ; `etats_financiers_steg` — « prix moyen annuel d''achat
+    de la TEP gaz », états financiers 2014 à 2023 (exercices 2013-2023) ; `observatoire_import_gaz_algerien`
+    — « prix d''importation du gaz algérien », Observatoire national de l''énergie,
+    2013-2025'
+  caveats: 'FAMILLES JAMAIS CHAÎNÉES : filtrer `famille`. LE PRIX DE CESSION EST UN
+    PRIX ADMINISTRÉ, non un prix d''achat : 90,8 constant 1993-2014, acte du 8 octobre
+    1993 non identifié ; il disparaît en 2015 (colonne `rupture`). LE PRIX MOYEN DE
+    LA STEG PORTE SUR TOUTES LES SOURCES (gaz algérien acheté, redevance, gaz national,
+    condensats) et son numérateur comprend le fuel et le gazole ; celui de l''Observatoire
+    ne porte que sur l''importation du gaz algérien (redevance exclue) : NE PAS LES
+    SUPERPOSER COMME UNE MÊME GRANDEUR. Proches de 2018 à 2020 (805,5 contre 863,5
+    ; 933,2 contre 977 ; 622,7 contre 626), ils se croisent à partir de 2021 (719,5
+    contre 697 ; 1 471,6 contre 1 335 ; 1 423,9 contre 1 321) sans que les notes l''expliquent.
+    RUPTURES (colonne `rupture`) : 2007, la STEG comptabilise le gaz à sa valeur économique
+    et la subvention indirecte en produit (états financiers 2014, note 11, p. 23)
+    ; 2015, fin du prix de cession, subvention budgétaire. Le rapport de contrôle
+    (2007-2013) et les états financiers (2013-2023) se recouvrent en 2013 (808 et
+    804,4) : deux sources, pas de raccord. Rien avant 1993 ni pour 2024-2025 dans
+    les états financiers (non publiés). Dinars courants, aucun PIB. Voir docs/steg-gaz-electricite.md.'
+  titre_ar: 'سعر اقتناء الطن المعادل للنفط من الغاز من قبل الشركة التونسية للكهرباء
+    والغاز: سعر الإحالة المضبوط (1993-2014) ومتوسط سعر الاقتناء حسب تقرير الرقابة
+    لسنة 2014 (2007-2013) وحسب القوائم المالية للشركة (2013-2023) وسعر توريد الغاز
+    الجزائري حسب المرصد الوطني للطاقة (2013-2025)'
+  unite_ar: بالدينار الجاري للطن المعادل للنفط (د/ط.م.ن)، حسب القدرة الحرارية العليا
+  perimetre_ar: 'أربع عائلات لا تُربط: سعر الإحالة (90,8 د/ط.م.ن منذ 8 أكتوبر 1993)،
+    متوسط سعر الاقتناء حسب تقرير هيئة الرقابة العامة للمالية (2007-2013) وحسب القوائم
+    المالية للشركة (2013-2023)، وسعر توريد الغاز الجزائري حسب المرصد الوطني للطاقة
+    (2013-2025)'
+  caveats_ar: 'العائلات لا تُربط. سعر الإحالة سعر مضبوط لا سعر اقتناء. متوسط سعر الشركة
+    يشمل كل المصادر ولا يوضع على نفس مستوى سعر التوريد الذي يخص الغاز الجزائري المُورَّد.
+    قطيعتان: 2007 (احتساب الغاز بقيمته الاقتصادية) و2015 (نهاية سعر الإحالة). بالدينار
+    الجاري، دون ناتج محلي إجمالي.'
+  fiche: docs/steg-gaz-electricite.md
+- id: steg-cout-prix-kwh
+  titre: 'Coût de revient et prix de vente moyen hors taxes du kilowattheure de la
+    STEG, par famille de source : ESMAP (prix 1994-1999), ANER (coût 1996-1998, lu
+    sur graphique), BAD (2000-2010), rapport de contrôle de 2014 (2008-2012, avec
+    décomposition du coût), STEG puis Observatoire (2013-2018), Observatoire (2022-2025)'
+  sources:
+  - esmap-2005-307-electrification-rurale
+  - aner-2000-impact-prix-energie
+  - bad-2006-rap-electricite-vi
+  - bad-2012-pcr-electricite-vii
+  - minfin-compensation-carburants-2014
+  - steg-ef-2014
+  - steg-ef-2016
+  - one-memento-2014
+  - one-memento-2016-ar
+  - one-chiffres-cles-energie
+  build: uv run python scripts/build_steg_gaz_electricite.py
+  raw:
+  - data/raw/minenergie/steg/etats-financiers
+  - data/raw/minfinances/portail_ancien/compensation/2014-07_rapport_compensation_carburants.pdf
+  - data/raw/banque-mondiale-rapports
+  output: data/processed/precis/steg_cout_prix_kwh.csv
+  unite: millimes courants par kilowattheure (1 000 millimes = 1 dinar), hors taxes
+  perimetre: 'une ligne par (famille, année, grandeur) : `cout_de_revient` et `prix_de_vente_moyen`,
+    toutes tensions confondues ; familles `esmap` (prix 1994-1999), `aner` (coût 1996-1998),
+    `bad_electricite_vi` (2000-2004), `bad_electricite_vii` (prix 2005-2010), `cgf_2014`
+    (2008-2012, avec les composantes `cout_combustibles`, `cout_personnel`, `cout_charges_financieres_assurances`,
+    `cout_amortissements`, `cout_divers`, dont la somme égale le coût), `steg_observatoire_2013_2018`
+    (états financiers de la STEG puis Observatoire), `observatoire_2019_2021` (prix
+    seul), `observatoire_2022_2025` ; colonnes `cle` (clés de citation de la ligne),
+    `rupture` et `rupture_annee` (2007, sur la première ligne de coût après la rupture)'
+  caveats: 'FAMILLES JAMAIS CHAÎNÉES : filtrer `famille` ; tracer par segments. RUPTURE
+    DE 2007 : avant, le gaz est valorisé au prix administré de 90,8 DT/tep (ANER,
+    BAD) ; à partir de 2008, au prix d''acquisition, soutien indirect compris (rapport
+    de contrôle) puis au prix international — aucun chaînage de part et d''autre (états
+    financiers 2014, note 11, p. 23). AUCUN COÛT DE REVIENT pour 1999, 2005-2007 et
+    2019-2021 : aucune valeur n''est interpolée ; le prix de vente existe en 1999
+    (ESMAP), en 2005-2007 (BAD) et en 2019-2021 (Observatoire : 244,0 ; 248,6 ; 244,8,
+    famille `observatoire_2019_2021`, prix seul). ANER : LU SUR GRAPHIQUE, à ±1 millime
+    ; la source dit le prix de vente inférieur au prix de revient en 1996 et 1997,
+    ce que la lecture ne départage pas pour 1997. 2013-2018 : les états financiers
+    de la STEG et l''Observatoire ont la même origine (prix de vente identique 2013-2016)
+    — une seule source, non deux qui se confirment ; 2016 a deux valeurs du coût (175,7
+    imprimé par l''Observatoire, 177,4 calculé d''après les états financiers), la
+    seconde marquée `retenu = non`. 2022-2025 : « données provisoires avant audit
+    », révisées d''une décimale d''une édition à l''autre. Le « résultat unitaire
+    » de l''Observatoire (écart prix de vente moins coût de revient) n''est pas la
+    subvention budgétaire. Dinars courants, aucun PIB. Voir docs/steg-gaz-electricite.md.'
+  titre_ar: كلفة إنتاج الكيلوواط ساعة ومتوسط سعر بيعه دون احتساب الأداءات لدى الشركة
+    التونسية للكهرباء والغاز، حسب عائلة المصدر (1994-2025)
+  unite_ar: بالمليم الجاري للكيلوواط ساعة، دون احتساب الأداءات
+  perimetre_ar: 'كلفة الإنتاج ومتوسط سعر البيع لكل الجهود، حسب عائلات مصادر لا تُربط:
+    ESMAP (الأسعار 1994-1999)، الوكالة الوطنية للطاقات المتجددة (الكلفة 1996-1998،
+    مقروءة على رسم بياني)، بنك التنمية الإفريقي (2000-2010)، تقرير هيئة الرقابة العامة
+    للمالية (2008-2012)، الشركة ثم المرصد الوطني للطاقة (2013-2018)، المرصد (2022-2025)'
+  caveats_ar: العائلات لا تُربط، والقطيعة سنة 2007 (تثمين الغاز بالسعر المضبوط ثم
+    بسعر الاقتناء). لا كلفة للسنوات 1999 و2005-2007 و2019-2021 ولا استكمال لها. قيم
+    الوكالة مقروءة على رسم بياني بهامش ±1 مليم. معطيات 2022-2025 أولية قبل التدقيق.
+    بالدينار الجاري.
+  fiche: docs/steg-gaz-electricite.md
+- id: steg-subvention-exploitation
+  titre: Subvention d'exploitation de la STEG, 2006-2016, avec le soutien total, direct
+    et indirect du rapport de contrôle de 2014 (2007-2013) et la ventilation des états
+    financiers 2014 (2013-2014)
+  sources:
+  - steg-ra-2007
+  - steg-ra-2008
+  - steg-ra-2009
+  - steg-ra-2010
+  - steg-ra-2011
+  - steg-ra-2013
+  - steg-ra-2014
+  - steg-ra-2016
+  - steg-ef-2014
+  - minfin-compensation-carburants-2014
+  build: uv run python scripts/build_steg_gaz_electricite.py
+  raw:
+  - data/raw/minenergie/steg/rapports-annuels
+  - data/raw/minenergie/steg/etats-financiers/steg_ef_2014.pdf
+  - data/raw/minfinances/portail_ancien/compensation/2014-07_rapport_compensation_carburants.pdf
+  output: data/processed/precis/steg_subvention_exploitation.csv
+  unite: millions de dinars courants
+  perimetre: 'trois familles : `comptes_steg` — « subvention d''exploitation » de
+    l''état de résultat, 2006-2016, en dinars exacts ramenés au million (trois décimales)
+    ; `rapport_de_controle_2014` — soutien direct, indirect et total à la STEG, 2007-2013
+    (p. 72) ; `etats_financiers_2014` — subvention directe reçue et subvention indirecte
+    sur l''achat du gaz algérien, 2013-2014 (note II-2, p. 35)'
+  caveats: 'LA « SUBVENTION D''EXPLOITATION » DES COMPTES DE LA STEG N''EST PAS LA
+    LIGNE BUDGÉTAIRE : de 2007 à 2014 elle comprend la subvention indirecte (le gaz
+    valorisé à sa valeur économique, comptabilisé en produit — note 11, p. 23) ; elle
+    est égale au soutien total du rapport de contrôle à l''arrondi imprimé (2 769
+    imprimé pour 2 768,8 en 2013). Elle ne se confond avec la ligne budgétaire versée
+    à la STEG qu''en 2015 (858) ; 2016 : aucune. RUPTURE DE 2015 : fin du prix de
+    cession, subvention entièrement budgétaire. 2006 est retraité dans le rapport
+    annuel 2007 (589,7). Aucune série n''est établie ici pour 2017 et après. Colonne
+    `rupture` / `rupture_annee` : 2015. Dinars courants, aucun PIB. Voir docs/steg-gaz-electricite.md.'
+  titre_ar: دعم الاستغلال للشركة التونسية للكهرباء والغاز 2006-2016، مع الدعم الجملي
+    والمباشر وغير المباشر حسب تقرير الرقابة لسنة 2014 (2007-2013)
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: دعم الاستغلال الوارد بحسابات الشركة (2006-2016)، والدعم المباشر وغير
+    المباشر والجملي حسب تقرير هيئة الرقابة العامة للمالية (2007-2013)، وتفصيل القوائم
+    المالية لسنة 2014 (2013-2014)
+  caveats_ar: 'دعم الاستغلال بحسابات الشركة يساوي الدعم الجملي لتقرير الرقابة إلى
+    حدّ التقريب، ولا يساوي الاعتماد المرصود بالميزانية قبل 2015. قطيعة 2015: نهاية
+    سعر الإحالة. بالدينار الجاري.'
+  fiche: docs/steg-gaz-electricite.md
+- id: steg-prelevements-gaz
+  titre: 'Gaz prélevé par la STEG, par source : redevance consommée, achats contractuels
+    et additionnels de gaz algérien, champ de Miskar, autres champs nationaux, total,
+    2001-2024'
+  sources:
+  - steg-ra-2005
+  - steg-ra-2007
+  - steg-ra-2008
+  - steg-ra-2009
+  - steg-ra-2010
+  - steg-ra-2011
+  - steg-ra-2012
+  - steg-ra-2013
+  - steg-ra-2014
+  - steg-ra-2015
+  - steg-ra-2016
+  - steg-ra-2017
+  - steg-ra-2018
+  - steg-ra-2019
+  - steg-ra-2020
+  - steg-ra-2021
+  - steg-ra-2023
+  - steg-ra-2024
+  build: uv run python scripts/build_steg_gaz_electricite.py
+  raw:
+  - data/raw/minenergie/steg/rapports-annuels
+  output: data/processed/precis/steg_prelevements_gaz.csv
+  unite: milliers de tonnes équivalent pétrole (ktep), pouvoir calorifique supérieur
+    (PCS)
+  perimetre: 'tableau « prélèvements de gaz » de chaque rapport annuel de la STEG
+    (édition de l''année, sauf mention), une ligne par (année, source_gaz) : `redevance_consommee`,
+    `achats_contractuels`, `achats_additionnels` (gaz algérien ; 2001-2006 : `gaz_algerien_non_ventile`),
+    `miskar`, `autres_gaz_national` (somme des lignes imprimées du gaz national hors
+    Miskar, énumérées dans `detail`), `total_preleve` ; et, 2019-2024, `total_des_achats_gaz`
+    d''un autre tableau'
+  caveats: 'LE TOTAL ÉGALE LA SOMME DES PARTIES, année par année (contrôlé par le
+    script) ; `autres_gaz_national` est un calcul (somme de lignes imprimées). 2001-2006
+    : le gaz algérien n''est pas ventilé entre redevance et achats dans les tableaux
+    lus. `total_des_achats_gaz` N''EST PAS LE TOTAL DES PRÉLÈVEMENTS : autre tableau,
+    qui compte condensats et gaz gratuits (2019 : 5 804 contre 5 680 ; 2020 : 5 478
+    contre 5 393 ; 2021 : 5 765 contre 5 667 ; 2022 : 5 480 contre 5 436 ; 2023 :
+    5 315 contre 5 217 ; 2024 : 5 123 contre 4 999) ; ne pas l''ajouter. La redevance
+    est la seule part « consommée » du gaz algérien en transit : « redevance totale
+    » en 2014, « consommée » ensuite pour la même valeur. 2010 : 375 achats contractuels
+    (rapport annuel 2011) pour 376 imprimé en 2010. 2022 n''a pas de rapport annuel
+    : colonne 2022 du rapport 2023. LU À L''IMAGE : 2022-2024. Des révisions de ±1
+    existent d''une édition à l''autre. Aucun prix. Voir docs/steg-gaz-electricite.md.'
+  titre_ar: 'الغاز المسحوب من قبل الشركة التونسية للكهرباء والغاز حسب المصدر: الأتاوة
+    والمشتريات التعاقدية والإضافية وحقل ميسكار وبقية الحقول الوطنية والمجموع، 2001-2024'
+  unite_ar: بآلاف الأطنان المعادلة للنفط (ك.ط.م.ن)، حسب القدرة الحرارية العليا
+  perimetre_ar: 'جدول «السحوبات من الغاز» بالتقرير السنوي للشركة، لكل سنة ولكل مصدر:
+    الأتاوة المستهلكة والمشتريات التعاقدية والإضافية من الغاز الجزائري وحقل ميسكار
+    وبقية الغاز الوطني والمجموع'
+  caveats_ar: المجموع يساوي مجموع الأجزاء في كل سنة. «مجموع مشتريات الغاز» جدول آخر
+    لا يُضاف إلى المجموع. الغاز الجزائري غير مفصّل بين الأتاوة والمشتريات للسنوات
+    2001-2006. القيم مقروءة على الصورة للسنوات 2022-2024.
+  fiche: docs/steg-gaz-electricite.md
+- id: steg-facture-combustibles
+  titre: Facture des combustibles de la STEG (« achats de combustibles » des états
+    financiers), 2013-2023
+  sources:
+  - steg-ef-2014
+  - steg-ef-2016
+  - steg-ef-2018
+  - steg-ef-2019
+  - steg-ef-2021
+  - steg-ef-2022
+  - steg-ef-2023
+  build: uv run python scripts/build_steg_facture_combustibles.py
+  raw:
+  - data/raw/minenergie/steg/etats-financiers
+  output: data/processed/precis/steg_facture_combustibles.csv
+  unite: millions de dinars courants (MDT)
+  perimetre: 'une famille, `etats_financiers_steg`, une ligne par année 2013-2023
+    : « achats de combustibles » de la note « coût des ventes » des états financiers
+    de la STEG (exercices 2013 à 2023), avec la source, la page du PDF, le mode de
+    lecture (couche texte du PDF ; la remarque dit si la valeur vient du tableau en
+    dinars exacts, ramené au million, ou de la note de bas de tableau en MDT) et les
+    recoupements. C''est le numérateur du « prix moyen annuel d''achat de la TEP gaz
+    » de la série steg-prix-achat-gaz (famille `etats_financiers_steg`)'
+  caveats: 'LA FACTURE COMPREND LE FUEL ET LE GAZOLE, elle n''est pas la facture du
+    seul gaz ; la quantité déduite (facture ÷ prix moyen d''achat publié) est le «
+    total des achats gaz » des rapports annuels (5 804 ; 5 478 ; 5 765 ; 5 480 ; 5
+    315 ktep en 2019-2023), à l''arrondi du prix près pour 2019-2021 (écart inférieur
+    à 0,1 ktep) et à 0,6 et 1,7 ktep pour 2022 et 2023. 2016 est imprimé à l''unité
+    (2093 MDT). ÉCART DE 2017 : 3 160,7 d''après le tableau en dinars exacts des états
+    financiers 2018 (3 160 678 969) ; les états financiers 2017 impriment 3 159,7
+    (p. 7) et 3 160,6 (p. 38) ; 3 160,7 retenu. 2018 : le tableau donne 4 567 760
+    877, la note imprime 4 567,7. RUPTURE de 2015 (colonne `rupture`) : fin du prix
+    de cession, achat du gaz au prix mondial. Les valeurs de 2005, 2007 et 2008 des
+    rapports annuels (termes différents : « achats de combustibles » d''un coût des
+    ventes, « facture combustible ») ne sont pas versées. Dinars courants, aucun PIB.
+    Voir docs/steg-gaz-electricite.md.'
+  titre_ar: فاتورة المحروقات للشركة التونسية للكهرباء والغاز («مشتريات المحروقات»
+    في القوائم المالية)، 2013-2023
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'عائلة واحدة، سطر لكل سنة من 2013 إلى 2023: «مشتريات المحروقات» في
+    إيضاح «كلفة المبيعات» من القوائم المالية للشركة، مع المصدر والصفحة وطريقة القراءة
+    والمقارنات. وهي بسط «متوسط السعر السنوي لاقتناء الطن المعادل للنفط من الغاز» في
+    سلسلة سعر اقتناء الغاز.'
+  caveats_ar: 'الفاتورة تشمل الفيول والغازوال وليست فاتورة الغاز وحده. الكمية المستنتجة
+    (الفاتورة مقسومة على متوسط السعر المنشور) هي «مجموع مشتريات الغاز» في التقارير
+    السنوية. 2016 مطبوعة بالوحدة (2093). فارق 2017: 3160,7 حسب جدول القوائم المالية
+    2018 بالدينارات الدقيقة، بينما تطبع القوائم المالية 2017 الرقمين 3159,7 و3160,6.
+    قطيعة 2015: نهاية سعر الإحالة. بالدينار الجاري ودون ناتج داخلي خام.'
+  fiche: docs/steg-gaz-electricite.md
+- id: pib-courant-par-base
+  titre: PIB aux prix courants, base par base (1983, 1997, 2015), 1986-2025
+  sources:
+  - ins-cnat-2015
+  - ins-pib-base-2015-2010-2020
+  - undata-sna
+  - minfin-indicateurs-fp
+  build: tunisia_data.build.pib:main
+  raw:
+  - data/raw/ins-publications/comptes-de-la-nation/INS_2021-08-15_donnees_annuelles_base_2015_2010-2020.xlsx
+  - data/raw/minfinances/indicateurs_fp_2025.xls
+  - data/processed/ins-comptes-nationaux/pib_nominal_editions.csv
+  - data/processed/ins-comptes-nationaux/pib_undata.csv
+  output: data/processed/ins-comptes-nationaux/pib_courant_par_base.csv
+  unite: millions de dinars courants
+  perimetre: 'une ligne par (année, base) : base 2015 de 2010 à 2025 (2010-2014 rétropolées
+    par l''INS, classeur du 15 août 2021 ; ensuite l''édition la plus récente des
+    Comptes de la nation), base 1997 de 1997 à 2017 (1997-2004 rétropolées, connues
+    par UNdata ; ensuite les éditions), base 1983 de 1992 à 2009 (UNdata et éditions)
+    ; plus les valeurs du PIB du ministère des Finances qui ne se rattachent à aucune
+    base (1986-1991 : base 1983 présumée ; 2002-2004 et 2025 : non rattachées). Colonnes
+    `source`, `publication`, `retropole`, `provenance`, `repris_par_minfin`'
+  base_pib: 1983 / 1997 / 2015 (colonne base)
+  caveats: 'TROIS BASES, JAMAIS RACCORDÉES : filtrer `base`, ne jamais tracer d''un
+    trait d''une base à l''autre. L''écart entre bases n''est pas constant (voir `pib-courant-recouvrements`).
+    `retropole` : oui pour la base 2015 en 2010-2014 et la base 1997 en 1997-2004,
+    non pour une année publiée dans une édition de sa base, « non précisé par la source
+    » pour la base 1983 et le ministère. Aucune base dite avant 1992 ; rien en base
+    1997 après 2017 ni en base 2015 avant 2010. Le classeur de l''INS est hors git.
+    Voir docs/pib-courant-par-base.md.'
+  titre_ar: الناتج المحلي الإجمالي بالأسعار الجارية حسب الأساس (1983، 1997، 2015)،
+    1986-2025
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'سطر لكل سنة وأساس: أساس 2015 من 2010 إلى 2025 (2010-2014 معاد احتسابها
+    من المعهد الوطني للإحصاء)، أساس 1997 من 1997 إلى 2017، أساس 1983 من 1992 إلى 2009،
+    وقيم ناتج وزارة المالية غير المرتبطة بأي أساس'
+  caveats_ar: 'ثلاثة أسس غير موصولة: تُفرز السلسلة حسب العمود base ولا يُرسم خط متصل
+    من أساس إلى آخر. الفارق بين الأسس غير ثابت. لا يوجد أساس مذكور قبل 1992، ولا شيء
+    على أساس 1997 بعد 2017 ولا على أساس 2015 قبل 2010.'
+  fiche: docs/pib-courant-par-base.md

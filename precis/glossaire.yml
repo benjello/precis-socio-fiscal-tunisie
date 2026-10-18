@@ -12551,4 +12551,482 @@ entries:
       definition: >
         مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1993 تحت إشراف الوزارة
         المكلفة بالتكوين المهني والتشغيل، تتولّى التكوين المهني الأساسي للشبان والكهول.
+  # ------------------------------------------------------------ patrimoine immobilier
+  # Notions du chapitre « Le patrimoine immobilier » (livre « La fiscalité »), d'après
+  # le plan de l'architecte (docs/notes/fiscalite-patrimoine-immobilier-plan-architecte.md,
+  # § M7) et la note docs/notes/fiscalite-patrimoine-immobilier-antecedents-fonciers.md (§ 6).
+  # Passe 1 du 17/10/2026 : termes seuls, définitions à la passe 2. Toutes les entrées
+  # restent `provisoire`. Formes arabes relevées dans l'édition arabe du JORT (couche
+  # texte des fascicules du corpus local), non relues par un arabophone. Une forme sans
+  # attestation est signalée « AR non attesté » et doit être vérifiée avant la passe 2.
+
+  # --- Impôt
+
+  # AR : « معاليم التسجيل » (LF 2017, art. 29 ; intitulé arabe du CDET, « مجلة معاليم
+  # التسجيل والطابع الجبائي ») en regard de « droits d'enregistrement » (éd. fr.).
+  # Pas de clé pour la loi n° 93-53 (CDET) : source_definition vide.
+  - id: droits-enregistrement
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_traduction: {ref: lf-2017, locator: "art. 29"}
+    voir_aussi: [droit-mutation, droit-fixe-enregistrement, droit-proportionnel-enregistrement, droit-progressif-terrains]
+    fr:
+      terme: Droits d'enregistrement
+      definition: ""
+      synonymes: []
+    ar:
+      terme: معاليم التسجيل
+      definition: ""
+      synonymes: []
+
+  # AR non attesté comme terme. Le JORT arabe dit « معلوم على نقل ومقاسمة العقارات غير
+  # المرسمة » pour « droit de mutation et de partage des immeubles non immatriculés »
+  # (LF 2014, art. 27, citant l'intitulé de la LF 2003, art. 61) et « نقل بمقابل لملكية »
+  # pour « mutation à titre onéreux de propriété » (LF 2017, art. 29, n° 10 bis).
+  # « معلوم نقل الملكية » est composé de ces deux formes : à vérifier.
+  - id: droit-mutation
+    acronyme: null
+    statut: provisoire  # AR non attesté tel quel
+    references: []
+    voir_aussi: [droits-enregistrement, immeubles-non-immatricules]
+    fr:
+      terme: Droit de mutation
+      definition: ""
+      synonymes: [Droits de mutation]
+    ar:
+      terme: معلوم نقل الملكية
+      definition: ""
+      synonymes: []
+
+  # AR : « المعلوم القار » (LF 2014, art. 53, § 1 : « بالمعلوم القار » en regard de « au
+  # droit fixe »). Le tarif de l'art. 23 du CDET est « تعريفة معاليم التسجيل القارة »
+  # (LF 2018, art. 34). À noter : la LF 2014, art. 26-27, rend « droit fixe de cent
+  # dinars » par « معلوم محدد بمائة دينار » ; la forme du code est « القار ».
+  - id: droit-fixe-enregistrement
+    acronyme: null
+    statut: provisoire
+    references: [lf-2014, lf-2018]
+    source_traduction: {ref: lf-2014, locator: "art. 53"}
+    voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
+    fr:
+      terme: Droit fixe
+      definition: ""
+      synonymes: [Droit fixe d'enregistrement]
+    ar:
+      terme: المعلوم القار
+      definition: ""
+      synonymes: []
+
+  # AR : « المعلوم النسبي » (LF 2014, art. 53, § 1 : « بالمعلوم النسبي المحدد بـ 3% » en
+  # regard de « au droit proportionnel de 3 % »).
+  - id: droit-proportionnel-enregistrement
+    acronyme: null
+    statut: provisoire
+    references: [lf-2014]
+    source_traduction: {ref: lf-2014, locator: "art. 53"}
+    voir_aussi: [droits-enregistrement, droit-fixe-enregistrement, droit-progressif-terrains]
+    fr:
+      terme: Droit proportionnel
+      definition: ""
+      synonymes: [Droit proportionnel d'enregistrement]
+    ar:
+      terme: المعلوم النسبي
+      definition: ""
+      synonymes: []
+
+  # AR : l'adjectif est attesté, « معاليم التسجيل النسبية والتصاعدية » (LF 2017, art. 29)
+  # et « معلوم تسجيل نسبي أو تصاعدي » (LF 2017, art. 69, § 3, nouvel art. 22 du CDET), en
+  # regard de « droit d'enregistrement proportionnel ou progressif ». Le nom « المعلوم
+  # التصاعدي » est une nominalisation sur le modèle de « المعلوم النسبي ». Barème
+  # progressif des terrains d'habitat : LF 1984, art. 13, dont la clé n'est pas visible
+  # dans le livre de la fiscalité ; source_definition vide.
+  - id: droit-progressif-terrains
+    acronyme: null
+    statut: provisoire
+    references: [lf-2017]
+    source_traduction: {ref: lf-2017, locator: "art. 69"}
+    voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
+    fr:
+      terme: Droit progressif (terrains d'habitat)
+      definition: ""
+      synonymes: [Barème progressif des terrains d'habitat individuel]
+    ar:
+      terme: المعلوم التصاعدي
+      definition: ""
+      synonymes: []
+
+  # AR : la rubrique de la LF 2017, art. 29, dit « إحداث معلوم تسجيل تكميلي على البيوعات
+  # والهبات المتعلقة بالعقارات… » ; le corps de l'article (art. 20 bis du CDET) dit
+  # « المعلوم الإضافي » là où l'éd. fr. dit « droit complémentaire ». Terme retenu :
+  # celui de la rubrique ; l'autre en synonyme. À trancher.
+  - id: droit-complementaire-immeubles
+    acronyme: null
+    statut: provisoire
+    references: [lf-2017]
+    source_definition: {ref: lf-2017, locator: "art. 29"}
+    source_traduction: {ref: lf-2017, locator: "art. 29"}
+    voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
+    fr:
+      terme: Droit complémentaire
+      definition: ""
+      synonymes: [Droit d'enregistrement complémentaire]
+    ar:
+      terme: معلوم التسجيل التكميلي
+      definition: ""
+      synonymes: [المعلوم الإضافي]
+
+  # AR non attesté. Aucune édition arabe à couche texte lue ne porte la notion (CDET,
+  # art. 20, n° 10 ; LF 1990, art. 38, éd. ar. à l'image). À relever dans l'édition
+  # arabe du CDET. Pas de clé pour la loi n° 93-53 : source_definition vide.
+  - id: defaut-origine-propriete
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    voir_aussi: [droits-enregistrement, immeubles-non-immatricules]
+    fr:
+      terme: Défaut de mention de l'origine de propriété
+      definition: ""
+      synonymes: [Défaut d'origine, Droit d'origine]
+    ar:
+      terme: معلوم عدم بيان أصل الملكية
+      definition: ""
+      synonymes: []
+
+  # AR : « معلوم الترسيم العقاري » (LF 2026, art. 20, § 1, JORT éd. ar. n° 148 du
+  # 12 décembre 2025, à propos du droit de l'art. 26 de la LF 1981 sur les donations
+  # familiales). L'édition française n'a pas été mise en regard : le fichier « fr » du
+  # corpus pour ce numéro est l'édition arabe. Pas de clé pour la LF 1981.
+  - id: droit-inscription-fonciere
+    acronyme: null
+    statut: provisoire
+    references: [lf-2026]
+    source_traduction: {ref: lf-2026, locator: "art. 20"}
+    voir_aussi: [conservation-propriete-fonciere, immatriculation-fonciere, droits-enregistrement]
+    fr:
+      terme: Droit d'inscription foncière
+      definition: ""
+      synonymes: [Droit de la Conservation de la propriété foncière]
+    ar:
+      terme: معلوم الترسيم العقاري
+      definition: ""
+      synonymes: []
+
+  # AR : « العقارات غير المرسمة » (LF 2014, art. 27, qui cite l'intitulé de la LF 2003,
+  # art. 61, en regard de « immeubles non immatriculés »). Les arrêtés d'immatriculation
+  # obligatoire écrivent « العقارات غير المسجلة » (JORT n° 105 de 2016, éd. ar.) : en
+  # synonyme. À trancher.
+  - id: immeubles-non-immatricules
+    acronyme: null
+    statut: provisoire
+    references: [lf-2014]
+    source_traduction: {ref: lf-2014, locator: "art. 27"}
+    voir_aussi: [immatriculation-fonciere, droit-mutation, titre-foncier]
+    fr:
+      terme: Immeubles non immatriculés
+      definition: ""
+      synonymes: []
+    ar:
+      terme: العقارات غير المرسمة
+      definition: ""
+      synonymes: [العقارات غير المسجلة]
+
+  # AR : « القيمة الزائدة العقارية » (LF 2014, art. 47, rubrique : « Elargissement du
+  # champ d'application de l'impôt sur le revenu au titre de la plus-value immobilière »).
+  - id: plus-value-immobiliere
+    acronyme: null
+    statut: provisoire
+    references: [code-irpp-is-1990, lf-2014]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 27"}
+    source_traduction: {ref: lf-2014, locator: "art. 47"}
+    voir_aussi: [habitation-principale, revenus-fonciers]
+    fr:
+      terme: Plus-value immobilière
+      definition: ""
+      synonymes: []
+    ar:
+      terme: القيمة الزائدة العقارية
+      definition: ""
+      synonymes: []
+
+  # AR non attesté. « الطرح » rend « abattement » dans le code de l'IRPP ; la forme
+  # propre aux successions (CDET, art. 51) est à relever dans l'édition arabe du CDET.
+  - id: abattement-successoral
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    voir_aussi: [droits-enregistrement, habitation-principale]
+    fr:
+      terme: Abattement successoral
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الطرح من التركة
+      definition: ""
+      synonymes: []
+
+  # AR non attesté comme nom. Le nouvel art. 22 du CDET (LF 2017, art. 69, § 3) dit
+  # « لا يمكن استخلاص أقل من 40 دينارا » en regard de « Il ne peut être perçu moins de
+  # 40 dinars ». Distinct de `minimum-impot` (IRPP).
+  - id: minimum-perception-enregistrement
+    acronyme: null
+    statut: provisoire  # AR non attesté tel quel
+    references: [lf-2017]
+    source_definition: {ref: lf-2017, locator: "art. 69"}
+    voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
+    fr:
+      terme: Minimum de perception
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الحد الأدنى للاستخلاص
+      definition: ""
+      synonymes: []
+
+  # --- Foncier
+
+  # AR : « التسجيل العقاري » (budget annexé à la LF 2017, JORT n° 105 de 2016 : ligne
+  # « Immatriculation foncière » en regard de « التسجيل العقاري » ; arrêtés
+  # d'immatriculation foncière obligatoire ; menu de justice.gov.tn).
+  - id: immatriculation-fonciere
+    acronyme: null
+    statut: provisoire
+    references: [loi-fonciere-1885, dl-64-3]
+    source_definition: {ref: loi-fonciere-1885, locator: "art. 18-22"}
+    voir_aussi: [titre-foncier, livre-foncier, conservation-propriete-fonciere, immeubles-non-immatricules]
+    fr:
+      terme: Immatriculation foncière
+      definition: ""
+      synonymes: [Immatriculation]
+    ar:
+      terme: التسجيل العقاري
+      definition: ""
+      synonymes: []
+
+  # AR : « الرسم العقاري » (LF 2017, art. 32 : « عدد الرسم العقاري » en regard de « le
+  # numéro du titre foncier »).
+  - id: titre-foncier
+    acronyme: null
+    statut: provisoire
+    references: [loi-fonciere-1885, lf-2017]
+    source_definition: {ref: loi-fonciere-1885, locator: "art. 19"}
+    source_traduction: {ref: lf-2017, locator: "art. 32"}
+    voir_aussi: [immatriculation-fonciere, livre-foncier, titre-gele]
+    fr:
+      terme: Titre foncier
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الرسم العقاري
+      definition: ""
+      synonymes: []
+
+  # AR non attesté en regard du français. « قاضي السجل العقاري » figure dans des décrets
+  # de nomination de magistrats (JORT n° 104 de 2019, éd. ar.), sans mise en regard.
+  - id: livre-foncier
+    acronyme: null
+    statut: provisoire  # AR non attesté en regard du français
+    references: [loi-fonciere-1885]
+    source_definition: {ref: loi-fonciere-1885, locator: "art. 21"}
+    voir_aussi: [titre-foncier, conservation-propriete-fonciere]
+    fr:
+      terme: Livre foncier
+      definition: ""
+      synonymes: [Registre foncier]
+    ar:
+      terme: السجل العقاري
+      definition: ""
+      synonymes: []
+
+  # AR : « إدارة الملكية العقارية » (budget annexé à la LF 2017, JORT n° 105 de 2016 :
+  # même ligne que « Conservation de la Propriété Foncière »). C'est le nom de
+  # l'institution moderne ; l'appliquer à la Conservation de 1885 est à confirmer.
+  # L'institution s'appelle depuis « الديوان الوطني للملكية العقارية » (décret
+  # n° 2024-209, intitulé).
+  - id: conservation-propriete-fonciere
+    acronyme: null
+    statut: provisoire
+    references: [loi-fonciere-1885, dl-64-4]
+    source_definition: {ref: loi-fonciere-1885, locator: "art. 21"}
+    voir_aussi: [immatriculation-fonciere, livre-foncier, droit-inscription-fonciere]
+    fr:
+      terme: Conservation de la propriété foncière
+      definition: ""
+      synonymes: []
+    ar:
+      terme: إدارة الملكية العقارية
+      definition: ""
+      synonymes: []
+
+  # AR : « المحكمة العقارية » (décret n° 2015-42, JORT n° 8 de 2015, éd. ar. ; menu de
+  # justice.gov.tn). Le Tribunal mixte immobilier de 1885 n'a pas de forme arabe
+  # attestée : il figure en synonyme français seulement.
+  - id: tribunal-immobilier
+    acronyme: null
+    statut: provisoire
+    references: [loi-fonciere-1885, decret-1957-02-19-tribunal-immobilier, dl-64-4]
+    source_definition: {ref: decret-1957-02-19-tribunal-immobilier, locator: "art. 1"}
+    voir_aussi: [immatriculation-fonciere, titre-foncier]
+    fr:
+      terme: Tribunal immobilier
+      definition: ""
+      synonymes: [Tribunal mixte immobilier]
+    ar:
+      terme: المحكمة العقارية
+      definition: ""
+      synonymes: []
+
+  # AR : « مجلة الحقوق العينية » (visa de la LF 2018, JORT n° 101 de 2017, éd. ar. :
+  # « مجلة الحقوق العينية الصادرة بمقتضى القانون عدد 5 لسنة 1965 » ; justice.gov.tn).
+  - id: code-droits-reels
+    acronyme: null
+    statut: provisoire
+    references: [loi-65-5-cdr]
+    source_definition: {ref: loi-65-5-cdr}
+    source_traduction: {ref: lf-2018}
+    voir_aussi: [immatriculation-fonciere, titre-foncier]
+    fr:
+      terme: Code des droits réels
+      definition: ""
+      synonymes: []
+    ar:
+      terme: مجلة الحقوق العينية
+      definition: ""
+      synonymes: []
+
+  # Notion d'une source seconde (Ben Othman Bacha 2014, rapport provisoire, p. 24).
+  # AR non attesté : composé sur « الرسم العقاري ».
+  - id: titre-gele
+    acronyme: null
+    statut: provisoire  # AR non attesté ; notion d'une source seconde
+    references: [ben-othman-bacha-2014-foncier]
+    source_definition: {ref: ben-othman-bacha-2014-foncier, locator: "p. 24"}
+    voir_aussi: [titre-foncier, livre-foncier]
+    fr:
+      terme: Titre gelé
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الرسم العقاري المجمد
+      definition: ""
+      synonymes: []
+
+  # --- Droit musulman des biens et tenures
+  # Aucune forme arabe de cette famille n'est lue ici dans un texte officiel, sauf
+  # « الأراضي الاشتراكية » et « عدل إشهاد ». Éditions à lire : décret du 31 mai 1956 et
+  # décret du 18 juillet 1957 (habous), loi n° 57-16 (Ja02457), code des droits réels.
+
+  - id: habous
+    acronyme: null
+    statut: provisoire  # AR non attesté ; à relever dans l'éd. ar. du décret du 18 juillet 1957
+    references: [decret-1956-05-31-habous, decret-1957-07-18-habous]
+    source_definition: {ref: decret-1957-07-18-habous, locator: "art. 4"}
+    voir_aussi: [djemaia-habous, melk, terres-collectives]
+    fr:
+      terme: Habous
+      definition: ""
+      synonymes: [Habous publics, Habous privés, Habous mixtes]
+    ar:
+      terme: الأحباس
+      definition: ""
+      synonymes: []
+
+  - id: djemaia-habous
+    acronyme: null
+    statut: provisoire  # AR non attesté ; à relever dans l'éd. ar. du décret du 31 mai 1956
+    references: [decret-1956-05-31-habous]
+    source_definition: {ref: decret-1956-05-31-habous}
+    voir_aussi: [habous]
+    fr:
+      terme: Djemaïa des habous
+      definition: ""
+      synonymes: []
+    ar:
+      terme: جمعية الأحباس
+      definition: ""
+      synonymes: []
+
+  # Aucune définition légale lue ; source seconde (Ben Othman Bacha 2014, p. 6).
+  - id: melk
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: [ben-othman-bacha-2014-foncier]
+    source_definition: {ref: ben-othman-bacha-2014-foncier, locator: "p. 6"}
+    voir_aussi: [habous, terres-collectives, adoul]
+    fr:
+      terme: Melk
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الملك
+      definition: ""
+      synonymes: []
+
+  # AR : « الأراضي الاشتراكية » (intitulé arabe de la loi n° 2016-69 du 10 août 2016,
+  # « …المتعلق بضبط النظام الأساسي للأراضي الاشتراكية », jort_cache.db). Pas de clé
+  # pour cette loi : pas de source_traduction. « Arch » reste un synonyme français ;
+  # sa forme arabe n'est pas attestée.
+  - id: terres-collectives
+    acronyme: null
+    statut: provisoire
+    references: [loi-57-16]
+    source_definition: {ref: loi-57-16, locator: "art. 1"}
+    voir_aussi: [habous, melk]
+    fr:
+      terme: Terres collectives
+      definition: ""
+      synonymes: [Terres arch]
+    ar:
+      terme: الأراضي الاشتراكية
+      definition: ""
+      synonymes: []
+
+  # AR : « عدل إشهاد » (mot-clé arabe de jort_cache.db ; « عدول الإشهاد », menu de
+  # justice.gov.tn). C'est le nom de la profession actuelle ; son emploi pour les adouls
+  # d'avant le protectorat est à confirmer. Pas de définition légale lue.
+  - id: adoul
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: [acte-notoriete, melk]
+    fr:
+      terme: Adoul
+      definition: ""
+      synonymes: [Notaire musulman]
+    ar:
+      terme: عدل إشهاد
+      definition: ""
+      synonymes: [عدول الإشهاد]
+
+  # AR non attesté. Notion connue ici par le rapport Cambon (point de vue de
+  # l'administration du protectorat) : pas de source_definition.
+  - id: acte-notoriete
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    voir_aussi: [adoul, melk]
+    fr:
+      terme: Acte de notoriété
+      definition: ""
+      synonymes: [Outika]
+    ar:
+      terme: الوثيقة
+      definition: ""
+      synonymes: []
+
+  # AR non attesté. Code des obligations et des contrats, art. 980-981 (cité par FAO
+  # 2019, p. 10) : pas de clé. Rapport Cambon : point de vue de l'administration du
+  # protectorat, pas une source de définition.
+  - id: enzel
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    voir_aussi: [habous]
+    fr:
+      terme: Enzel
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الإنزال
+      definition: ""
       synonymes: []
