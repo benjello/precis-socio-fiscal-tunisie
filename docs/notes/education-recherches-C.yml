@@ -1,0 +1,81 @@
+- id: r-loi58-118-art2-obligation
+  objet: texte fixant la date à partir de laquelle l'obligation d'assurer aux enfants l'instruction de six à douze ans est imposée à tous les parents (loi n° 58-118 du 4 novembre 1958, art. 2, al. 2)
+  ou: [precis/fr/education/_histoire.qmd]
+  requetes:
+    titres_fts: ['"obligation scolaire"', '"scolarite obligatoire"', '"enseignement obligatoire"']
+    titres_like: ['%obligation scolaire%', '%scolarite obligatoire%', '%enseignement obligatoire%', '%obligatoire%enseignement%']
+    depuis: 1958-11-07
+  periode:
+    jusqu_au: 1991-08-08
+    motif: la loi n° 91-65 du 29 juillet 1991 (JORT n° 55 du 6 août 1991) institue l'obligation de six à seize ans (art. 7) et met fin progressivement à l'application de la loi n° 58-118 (art. 36)
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : LIKE non accentués et FTS sur les titres, publications du 7 novembre 1958 au 8 août 1991, sans résultat. Titres seuls : ni plein texte (fascicules de 1958 à 1990 largement sans couche texte), ni miroir iort, ni relance par scripts/recherches.py. Requête voisine sur 1959-1990 (lois et décrets dont le titre porte « enseignement primaire », « enseignement de base », « organisation de l''enseignement ») : décret n° 61-14 du 3 janvier 1961 relatif à l''enseignement primaire (JORT 1961/001, p. 22-24), non lu, qui pourrait régler la question. Note : docs/notes/education-histoire-2026-10-17.md, § 1.1.'
+    couvert_jusqu_au: 1991-08-08
+    resultat: aucun
+  a_faire: [lire le décret n° 61-14 du 3 janvier 1961 relatif à l'enseignement primaire et ses modificatifs (décret n° 63-342), rejouer la fiche en plein texte]
+
+- id: r-loi2002-80-art17-annee-preparatoire
+  objet: texte généralisant l'année préparatoire (5-6 ans) ou fixant son calendrier de généralisation (loi d'orientation n° 2002-80, art. 17)
+  ou: [precis/fr/education/_histoire.qmd]
+  requetes:
+    titres_fts: ['"annee preparatoire"', prescolaire]
+    titres_like: ['%annee preparatoire%', '%prescolaire%']
+    iort_ar: [السنة التحضيرية, التحضيري]
+    depuis: 2002-07-30
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : LIKE sur les titres (français non accentués et arabes) et FTS, publications du 30 juillet 2002 au 2 octobre 2026. Réponses sans rapport (primes des professeurs agrégés des classes préparatoires, concours de recrutement). Titres seuls : ni plein texte, ni miroir iort, ni relance par scripts/recherches.py. Note : docs/notes/education-histoire-2026-10-17.md, § 1.5.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-loi2008-19-art56-delais-lmd
+  objet: décret fixant les délais de réalisation du passage au régime licence-mastère-doctorat (loi n° 2008-19 du 25 février 2008, art. 56, al. 1er)
+  ou: [precis/fr/education/_histoire.qmd]
+  requetes:
+    titres_like: ['%LMD%', '%2008-19%', '%licence%mastere%doctorat%', '%systeme licence%']
+    iort_ar: [19 لسنة 2008, نظام إمد, أمد, الإجازة والماجستير والدكتوراه]
+    depuis: 2008-03-04
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache : LIKE sur les titres (le motif « 2008-19 » sur titre et objet, en écartant les numéros 2008-19xx), publications du 4 mars 2008 au 2 octobre 2026, 73 réponses lues en entier : arrêtés de régime des études de licences (2009-2011, 2019), décrets n° 2012-1227 (mastère LMD), n° 2013-47 (doctorat LMD), n° 2012-1232 et n° 2013-1469 (complétant le décret n° 2008-3123), décret gouvernemental n° 2017-1196 (commissions sectorielles du système LMD), arrêtés de 2023 ; aucun ne porte, dans son intitulé, les délais de passage au régime. Seconde voie : le décret n° 2008-3123 (JORT n° 79 du 30 septembre 2008) fixe lui-même l''entrée en vigueur de la licence à l''année universitaire 2006-2007 (art. 43) et la fin de l''ancien régime à 2011-2012 (art. 41), sans viser un décret de délais. Pas de FTS, ni plein texte, ni miroir iort, ni relance par scripts/recherches.py. Note : docs/notes/education-histoire-2026-10-17.md, § 1.8 et 1.9.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [rejouer en FTS et en plein texte avec « licence » et « mastère », relire les visas des décrets mastère et doctorat postérieurs à 2008]
+
+- id: r-loi2017-13-art4-arrete
+  objet: arrêté conjoint des ministres chargés de l'éducation, de la formation professionnelle, des affaires sociales et de l'enfance fixant les procédures et modalités d'application de la loi n° 2017-13 du 13 mars 2017 (art. 4)
+  ou: [precis/fr/education/_histoire.qmd]
+  requetes:
+    titres_like: ['%2017-13%', '%formation professionnelle initiale%']
+    iort_ar: [13 لسنة 2017, التكوين المهني الأساسي, إجبارية الالت, اجبارية الالت]
+    depuis: 2017-03-17
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : LIKE sur les titres (le motif « 2017-13 » sur titre et objet, en écartant les numéros 2017-13x), publications du 17 mars 2017 au 2 octobre 2026, cinq réponses lues en entier : la loi elle-même, une décision électorale, un décret gouvernemental de 2020 sur des indemnités de formation, l''arrêté du 23 novembre 2020 sur la formation professionnelle initiale à distance (qui relève de la loi n° 2008-10, art. 14) et un décret de 2024 sur une unité de gestion ; aucun arrêté conjoint d''application. Les arrêtés ont souvent un numero NULL et, de 2017 à 2019, un intitulé arabe seul (outillage-sources.md, § 1 a et g) ; pas de FTS, ni plein texte, ni miroir iort, ni relance par scripts/recherches.py. Note : docs/notes/education-histoire-2026-10-17.md, § 1.11.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-education-consultation-reforme
+  objet: texte publié au Journal officiel instituant ou organisant une consultation ou un dialogue national sur la réforme du système éducatif, 2011-2026
+  ou: [precis/fr/education/_histoire.qmd]
+  requetes:
+    titres_like: ['%systeme educatif%', '%reforme educative%', '%reforme du systeme%', '%consultation nationale%', '%conseil superieur de l''education%']
+    iort_ar: [المنظومة التربوية, الإصلاح التربوي, إصلاح التعليم, إصلاح المنظومة, الاستشارة الوطنية, الاستشارة, المجلس الأعلى للتربية]
+    depuis: 2011-01-14
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : LIKE sur les titres (français non accentués et arabes), publications de 2011 au 2 octobre 2026. Réponses : textes de vie scolaire, unité de gestion du projet de réforme de l''enseignement supérieur (décret gouvernemental n° 2016-1100), lycées pilotes ; aucun texte de consultation. Le décret-loi n° 2024-2, absent de jort_cache, a été trouvé par lecture du JORT arabe n° 113 de 2024 : l''index ne couvre donc pas tout. Pas de FTS, ni plein texte, ni miroir iort, ni relance par scripts/recherches.py ; les consultations ont pu être organisées hors JORT. Note : docs/notes/education-histoire-2026-10-17.md, § 1.11.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [rejouer en plein texte sur les fascicules arabes 2015-2026, chercher hors JORT les rapports des consultations]

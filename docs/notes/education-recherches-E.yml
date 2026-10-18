@@ -1,0 +1,51 @@
+- id: r-educ-passage-septieme
+  objet: texte organisant l'examen, l'évaluation ou le concours de passage de la sixième année (fin du primaire) à la septième année de l'enseignement de base, après la loi n° 91-65
+  ou: [precis/fr/education/_scolaire.qmd#sec-educ-scolaire-fin-de-base]
+  requetes:
+    titres_fts: ['sixieme AND (examen OR concours OR evaluation)']
+    titres_like: ['%sixieme annee%', '%fin d_etudes primaires%', '%evaluation nationale%', '%7eme annee de l_enseignement de base%']
+    iort_ar: [السنة السادسة, ختم التعليم الابتدائي]
+    plein_texte: []
+    depuis: 1991-08-06
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "FTS et LIKE (français et arabe) sur titre et objet depuis août 1991 : aucune notice. Avant 1991 : décret de 1956 et arrêtés de 1959 et 1963 (certificat de fin d'études primaires), décret n° 81-348 (concours d'entrée en première année du secondaire), index. Plein texte et miroir iort non parcourus ; « مناظرة » non joué. Note : docs/notes/education-scolaire-2026-10-17.md, § 10."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-educ-frais-jardins-publics-avant-2022
+  objet: texte fixant les frais d'inscription ou de garde des enfants dans les jardins d'enfants publics avant l'arrêté conjoint du 12 octobre 2022
+  ou: [precis/fr/education/_scolaire.qmd#sec-educ-scolaire-prescolaire]
+  requetes:
+    titres_fts: ['"jardins d enfants"', '"رياض الأطفال"']
+    titres_like: ['%jardins d''enfants%', '%رياض الأطفال%']
+    iort_ar: [رياض الأطفال, معاليم]
+    plein_texte: []
+    depuis: 1969-01-01
+  periode: {jusqu_au: 2022-10-18, motif: "antérieur à l'arrêté conjoint du 12 octobre 2022"}
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "FTS sur titre et objet, toutes années : statuts et indemnités des animateurs (1978-2012), cahiers des charges (2001, 2003, 2022, 2023), décret n° 2001-1908, loi de finances pour 2022 art. 60 ; LIKE « jardins d_enfants » ou « رياض الأطفال » (59 notices) croisé avec frais, معاليم, tarif, contribution : seul l'arrêté du 12 octobre 2022. Aucun barème avant 2022. Plein texte non parcouru. Note : docs/notes/education-scolaire-2026-10-17.md, § 10."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-educ-kouttabs-tutelle-affaires-religieuses
+  objet: texte transférant la tutelle des kouttabs coraniques au ministère des affaires religieuses, ou réorganisant les kouttabs après l'arrêté du 22 décembre 1990
+  ou: [precis/fr/education/_scolaire.qmd#sec-educ-scolaire-prescolaire]
+  requetes:
+    titres_fts: [kouttab, kouttabs, الكتاتيب]
+    titres_like: ['%koutt%', '%kouteb%', '%كتاتيب%']
+    iort_ar: [الكتاتيب, الكتاب القرآني]
+    plein_texte: []
+    depuis: 1991-01-01
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "FTS et LIKE sur titre et objet : arrêtés de 1980 et 1990 (lus), décret n° 94-534 (prophylaxie), arrêté du 18 mars 1997 du ministre des affaires religieuses (manuel de procédures, intitulé tronqué à l'index, non lu). Miroir iort et plein texte non parcourus. Note : docs/notes/education-scolaire-2026-10-17.md, § 10."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
