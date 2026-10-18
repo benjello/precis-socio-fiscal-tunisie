@@ -606,13 +606,22 @@ liste qui suit le tableau, citations comprises. Restent :
   1,25 → 1,40 % en 1969 ; art. 8, § II, de la loi n° 93-53 ; LF 1977, art. 27 (« moins de 5 ans »
   = première tranche, pas de trou à cinq ans) ; assiette du droit complémentaire (valeur globale,
   art. 20 *bis*) ; terrains en 1982-1983 par la LF 1980 (loi n° 79-66, art. 14 et 15, borne au
-  1er janvier 1986), ligne ajoutée au registre. **Reste à lire** (lisible dans le corpus local) :
-  LF 1992 et LF 1993 à l'image pour le barème successoral 1985-1993
-  (`r-bareme-successions-1985-1993`) ; décret n° 68-104 ; contexte des réformes (exposés des
+  1er janvier 1986), ligne ajoutée au registre. **Intégré le 18 octobre 2026** (note
+  `successions-bareme-1985-1993.md`) : barème de 1984 complet (mutations par décès seulement),
+  abattement de 1975 et sa reprise par le code (art. 51, I), 4 000 D par héritier handicapé
+  (art. 51, II), habitation principale limitée à 1 000 m² (art. 53), tableau des abattements
+  1975-1998 (`tbl-pi-abattements-successions`) ; constat « aucune modification » étendu aux LF 1992
+  et 1993, LFC 1989 et 1991, lois n° 87-71 et 87-73 ; affirmation retirée selon laquelle le code
+  remplace pour les donations le barème de 1984 ; art. 26 de la LFC 2015 : la date du 1er janvier
+  2016 rattachée à la seule déduction des intérêts (note commune n° 18/2015, p. 1 et 5) ; plus-value :
+  majoration de 10 % par année vérifiée dans la LF 1977 (art. 27) et le code de 1990 (art. 28, § IV,
+  p. 7). **Reste à lire** (lisible dans le corpus local) : LF 1987, LF 1988 hors art. 32 et LF 1989
+  hors pages lues, pour le barème successoral 1984-1993 (`r-bareme-successions-1985-1993`) ; tarif
+  des donations de 1975 à 1993 (loi n° 74-101, art. 29 et 31) ; art. 30 de la LF 1975 sur l'édition
+  arabe (p. 3221) ; décret n° 68-104 ; contexte des réformes (exposés des
   motifs et débats de 1969, 1977, 1987, 1993, 2017 ; documents de la réforme fiscale 2013-2014).
   **À obtenir** (autre source) : interprétation administrative de la cession après la dixième
-  année (LF 1977 et 1981) ; date d'application du § 2 de l'art. 26 de la LFC 2015 (portée de
-  « présent article ») ; seconde source pour la publication de la LF 1973 au 29 décembre 1972,
+  année (LF 1977 et 1981) ; seconde source pour la publication de la LF 1973 au 29 décembre 1972,
   déduite de l'en-tête et d'un décret du même fascicule. **Différé** (décision du propriétaire
   du 18 octobre 2026 : textes de 1885-1957 cités indirectement) : décret du 28 juin 1886 et loi
   du 16 mai 1886 (`r-loi-fonciere-1885-1886`) ; tarif du décret du 19 avril 1912 et textes de
@@ -644,7 +653,9 @@ liste qui suit le tableau, citations comprises. Restent :
   `lf-2020` ; compléter les notes de `loi79-66-lf1980` (art. 14 et 15, pp. 3542-3543),
   `loi-93-53-cdet` (art. 3, p. 715 ; art. 8 § II, p. 716), `loi-98-73` (dépôt du 12 août 1998,
   art. 12), `lfc-2014` et `lfc-2015` (dépôts) ; doublons `lf-1990`/`loi-89-115-lf-1990` et
-  `lf-1992`/`loi91-98-lf1992`. **Traduction arabe** différée : ajouter le chapitre au `_quarto.yml` arabe à la
+  `lf-1992`/`loi91-98-lf1992` ; `lfc-1989` (à reprendre de `compensation/references.json`),
+  `lfc-1991`, `dgi-nc-15-2016`, `dgi-nc-17-2016` (notices proposées dans
+  `successions-bareme-1985-1993.md`, § 9). **Traduction arabe** différée : ajouter le chapitre au `_quarto.yml` arabe à la
   livraison. Fiches de recherche : les quatre ci-dessus, `r-pv-immobiliere-modificatifs-2023` et `r-bareme-successions-1985-1993`.
 
 ## Retraites
