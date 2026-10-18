@@ -1050,3 +1050,7 @@ budget ; art. 4 : sécurité, assurance ; art. 5 : locaux ; art. 6 : constructio
 (subventions des collectivités, cotisations des enfants approuvées par le ministère, dons) ; art. 13 : activités ; art. 14 : 25 enfants au plus par groupe et par séance ; art. 15 :
 enfants de 3 à 6 ans (acte de naissance, certificat médical, vaccinations) ; art. 17 : un an pour se conformer ; art. 18 : abrogation des dispositions contraires. Date : au plus tôt le
 3 février 1974. Même page : arrêté du même jour sur les clubs d'enfants (art. 16-17 en haut de page). Le sort de cet arrêté après le décret n° 2001-1908 n'est pas établi.
+
+**Décret-loi n° 2021-21 du 28 décembre 2021 (loi de finances pour 2022), art. 60 — lecture du 18 octobre 2026.** Édition française (JORT n° 119, p. 3101 ; l'index donne p. 3277, pagination de l'édition
+arabe) : paragraphe VI ajouté à l'art. 11 du code de l'IRPP et de l'IS ; la prime accordée par l'État aux jardins d'enfants adhérents au programme de « développement de la petite enfance » n'est pas prise en
+considération pour le résultat imposable. Art. 73 (p. 3107) : application à compter du 1er janvier 2022, sauf disposition contraire. Le texte de la prime et du programme n'est pas identifié.
