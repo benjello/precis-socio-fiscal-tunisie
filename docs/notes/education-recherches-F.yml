@@ -1,0 +1,20 @@
+- id: r-educ-lmd-organisation-rentree-2006
+  objet: texte (décret, arrêté, décision) organisant la première rentrée en licence du système LMD en 2006-2007, antérieur au décret n° 2008-3123 qui s'applique à compter de cette année (art. 43)
+  ou: [precis/fr/education/_superieur.qmd#sec-educ-superieur-lois]
+  requetes:
+    titres_fts: [LMD, '"licence mastere"', '"licence fondamentale"', '"licence appliquee"']
+    titres_like: ['%LMD%', '%licence fondamentale%']
+    iort_ar: [إمد, الإجازة الأساسية, الإجازة التطبيقية]
+    plein_texte: [LMD, licence fondamentale, mastère et doctorat]
+    depuis: 2004-12-28
+  periode:
+    jusqu_au: 2008-09-30
+    motif: antérieur au décret n° 2008-3123 (JORT n° 79 du 30 septembre 2008)
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: "FTS sur titre et objet jusqu'au 30 septembre 2008 : décret n° 2004-2721 (licence appliquée, lu) et trente arrêtés d'établissement sur la licence appliquée (2006-2008 ; celui du 8 juin 2006, faculté de droit de Sfax, lu) ; LIKE arabe sur les titres : aucune notice ; plein texte des fascicules français 2005 à n° 79 de 2008 : premières mentions de « LMD » en mars et août 2008, aucune décision d'organisation de la rentrée 2006-2007. Miroir iort et édition arabe non parcourus. Note : docs/notes/education-superieur-2026-10-17.md, § 0 et § 12."
+    couvert_jusqu_au: 2008-09-30
+    resultat: aucun
+  a_faire: [parcourir le miroir iort et l'édition arabe de 2006 à septembre 2008, obtenir la décision ou circulaire ministérielle de la rentrée 2006-2007 (hors JORT)]

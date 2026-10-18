@@ -7,21 +7,28 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 
 | Français | Arabe (Tunisie) | Acronyme |
 | :--- | :--- | :--- |
+| Abandon scolaire | الانقطاع المدرسي |  |
 | Abattement forfaitaire | الطرح الجزافي |  |
 | Abattement successoral | الطرح من التركة |  |
 | Abattement sur les pensions et rentes viagères | الطرح بعنوان الجرايات والإيرادات العمرية |  |
 | Accident du travail | حادث شغل |  |
+| Accréditation | الاعتماد |  |
 | Acte de notoriété | الوثيقة |  |
 | Administrations publiques | الإدارات العمومية |  |
 | Adoul | عدل إشهاد |  |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
+| Agence tunisienne de la formation professionnelle | الوكالة التونسية للتكوين المهني | ATFP |
 | Agent temporaire | العون الوقتي |  |
 | Agrément d'une convention collective | المصادقة على الاتفاقية المشتركة |  |
 | Allocation de vieillesse | منحة الشيخوخة |  |
 | Allocation familiale | المنحة العائلية |  |
 | Allocation familiale non contributive | المنحة العائلية غير المساهماتية |  |
+| Allocation supplémentaire | منحة التكلفة الإضافية |  |
 | Amen social | برنامج الأمان الاجتماعي |  |
+| Animateur des jardins d'enfants | منشط رياض الأطفال |  |
+| Année préparatoire | السنة التحضيرية |  |
 | Annuité liquidable | السنة القابلة للتصفية |  |
+| Apprentissage | التدريب المهني |  |
 | Appui financier occasionnel | الدعم المادي الظرفي |  |
 | Arrêté interne | قرار داخلي |  |
 | Assiette des cotisations | قاعدة الاشتراك |  |
@@ -29,6 +36,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Assiette fiscale | الوعاء الضريبي |  |
 | Assujetti | الخاضع للأداء |  |
 | Assujetti partiel | الخاضع جزئيا للأداء على القيمة المضافة |  |
+| Assurance qualité | ضمان الجودة |  |
 | Assuré social | المضمون الاجتماعي |  |
 | Augmentation générale des salaires | الزيادة العامة في الأجور |  |
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
@@ -42,11 +50,22 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Avantages fiscaux | الامتيازات الجبائية |  |
 | Avenant à une convention collective | الملحق التعديلي |  |
 | Ayant droit | ذو الحقّ |  |
+| Baccalauréat | البكالوريا |  |
+| Baccalauréat professionnel | البكالوريا المهنية |  |
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
 | Bénéfice imposable | الربح الخاضع للضريبة |  |
 | Bénéfices des professions non commerciales | الأرباح غير التجارية | BNC |
 | Bénéfices industriels et commerciaux | الأرباح الصناعية والتجارية | BIC |
 | Bonification | الترفيع في مدّة الخدمات |  |
+| Bourse d'alternance | منحة التداول |  |
+| Bourse d'hébergement | منحة السكن |  |
+| Bourse d'intégration universitaire | منحة الإدماج الجامعي |  |
+| Bourse nationale d'études universitaires | المنحة الوطنية للدراسات الجامعية |  |
+| Bourse scolaire | المنحة المدرسية |  |
+| Bourse spécifique | المنحة الخصوصية |  |
+| Brevet de technicien professionnel | شهادة مؤهل التقني المهني | BTP |
+| Brevet de technicien supérieur | شهادة مؤهل التقني السامي | BTS |
+| Cadre général de référence des diplômes | الإطار المرجعي العام |  |
 | Cadres actifs | الأسلاك النشيطة |  |
 | Caisse centrale des prestations sociales | الصندوق المركزي للمنح الاجتماعية |  |
 | Caisse d'assurance vieillesse, invalidité et survivants | صندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع بجراية | CAVIS |
@@ -57,6 +76,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Caisse nationale de retraite et de prévoyance sociale | الصندوق الوطني للتقاعد والحيطة الاجتماعية | CNRPS |
 | Caisse nationale de sécurité sociale | الصندوق الوطني للضمان الاجتماعي | CNSS |
 | Calendrier d'application de la TVA | روزنامة تطبيق الأداء على القيمة المضافة |  |
+| Cantine scolaire | المطعم المدرسي |  |
 | Capacité d'emprunt | طاقة التداين |  |
 | Capital-décès | رأس مال الوفاة |  |
 | Capitalisation d'un impôt | رسملة الأداء |  |
@@ -68,18 +88,25 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Catégories à revenu limité | الفئات محدودة الدخل |  |
 | Catégories pauvres | الفئات الفقيرة |  |
 | Centimes additionnels | صانتيمات إضافية |  |
+| Certificat d'aptitude professionnelle | شهادة الكفاءة المهنية | CAP |
+| Certificat de compétence | شهادة مهارة |  |
+| Chèque-formation | صك التكوين |  |
 | Chiffre d'affaires imposable | رقم المعاملات الخاضع |  |
 | Chiffre indiciaire | الرقم القياسي |  |
 | Ciblage | الاستهداف |  |
 | Classe de revenus | شريحة الدخل |  |
+| Classification nationale des qualifications | السلم الوطني للمهارات |  |
 | Code d'incitations aux investissements | مجلة تشجيع الاستثمارات |  |
 | Code de la fiscalité locale | مجلة الجباية المحلية |  |
 | Code des droits et procédures fiscaux | مجلة الحقوق والإجراءات الجبائية | CDPF |
 | Code des droits réels | مجلة الحقوق العينية |  |
+| Coefficient budgétaire | المعامل الميزانياتي |  |
 | Collectivité locale | الجماعة المحلية |  |
+| Collège pilote | المدرسة الإعدادية النموذجية |  |
 | Commerçant détaillant assujetti à la taxe sur la valeur ajoutée | تاجر التفصيل الخاضع للأداء على القيمة المضافة |  |
 | Commerçant grossiste | تاجر جملة |  |
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
+| Commission régionale des bourses scolaires | اللجنة الجهوية للمنح المدرسية |  |
 | Compensation des carburants | دعم المحروقات |  |
 | Compensation des prix | الدعم |  |
 | Compensation du transport | دعم النقل |  |
@@ -92,9 +119,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Compte financier | الحساب المالي |  |
 | Condition de ressources | شرط الموارد |  |
 | Conseil local | المجلس المحلي |  |
+| Conseil supérieur de l'éducation | المجلس الأعلى للتربية |  |
+| Conseil supérieur de l'éducation et de l'enseignement | المجلس الأعلى للتربية والتعليم |  |
 | Conseil supérieur des collectivités locales | المجلس الأعلى للجماعات المحلية |  |
 | Conservation de la propriété foncière | إدارة الملكية العقارية |  |
 | Contrat d'adaptation et d'insertion professionnelle | عقد التأهيل والإدماج المهني | CAIP |
+| Contrat d'apprentissage | عقد التدريب |  |
 | Contrat d'initiation à la vie professionnelle | عقد الإعداد للحياة المهنية | CIVP |
 | Contrat d'insertion des diplômés de l'enseignement supérieur | عقد إدماج حاملي شهادات التعليم العالي | CIDES |
 | Contrat de réinsertion dans la vie active | عقد إعادة الإدماج في الحياة النشيطة | CRVA |
@@ -106,6 +136,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Contribution au profit du Fonds national d'amélioration de l'habitat | المساهمة لفائدة الصندوق الوطني لتحسين السكن |  |
 | Contribution aux frais de crèche | المساهمة في مصاريف رياض الأطفال |  |
 | Contribution aux frais de soins et d'hospitalisation | المساهمة في تغطية مصاريف العلاج والإقامة |  |
+| Contribution financière des étudiants à la vie universitaire | مساهمة الطلبة المالية في الحياة الجامعية |  |
 | Contribution personnelle d'État | الضريبة الشخصية للدولة | CPE |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
 | Contrôleur d'État | مراقب الدولة |  |
@@ -117,9 +148,16 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Cotisation de l'assuré | اشتراك المضمون |  |
 | Cotisation supplémentaire | الاشتراك الإضافي |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
+| Cours particuliers | الدروس الخصوصية |  |
 | Coût du travail | كلفة العمل |  |
 | Coût marginal des fonds publics | الكلفة الحدية للأموال العمومية |  |
+| Coût unitaire | كلفة التلميذ |  |
+| Crédit (enseignement supérieur) | الرصيد |  |
 | Crédit de taxe sur la valeur ajoutée | فائض الأداء على القيمة المضافة |  |
+| Crédits d'engagement | اعتمادات التعهد |  |
+| Crédits de paiement | اعتمادات الدفع |  |
+| Cycle préparatoire | المرحلة الإعدادية |  |
+| Cycle primaire | المرحلة الابتدائية |  |
 | Décentralisation | اللامركزية |  |
 | Déconcentration | اللامحورية |  |
 | Décote | التخفيض في الجراية |  |
@@ -128,13 +166,17 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Délai de carence | فترة الانتظار |  |
 | Délégation de compétences | تفويض الصلاحيات |  |
 | Délégation spéciale | النيابة الخصوصية |  |
+| Dépenses de développement | نفقات التنمية |  |
+| Dépenses de gestion | نفقات التصرف |  |
 | Dépenses fiscales | النفقات الجبائية |  |
 | Dépenses obligatoires | النفقات الإجبارية |  |
 | Déséquilibre vertical | الاختلال العمودي |  |
 | Dévolution de compétences | إسناد الصلاحيات الذاتية |  |
+| Diplôme de fin de l'enseignement de base | شهادة ختم التعليم الأساسي |  |
 | Discipline budgétaire | الانضباط في الميزانية |  |
 | District | الإقليم |  |
 | Djemaïa des habous | جمعية الأحباس |  |
+| Doctorat | الدكتوراه |  |
 | Droit à déduction | حق الطرح |  |
 | Droit complémentaire | معلوم التسجيل التكميلي |  |
 | Droit d'inscription foncière | معلوم الترسيم العقاري |  |
@@ -145,9 +187,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Droit progressif (terrains d'habitat) | المعلوم التصاعدي |  |
 | Droit proportionnel | المعلوم النسبي |  |
 | Droits d'enregistrement | معاليم التسجيل |  |
+| Droits d'inscription | رسوم التسجيل |  |
 | Durée de constatation du crédit de TVA | مدة تسجيل فائض الأداء على القيمة المضافة بالتصاريح |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
+| École préparatoire | المدرسة الإعدادية |  |
+| Éducation préscolaire | التربية قبل المدرسية |  |
 | Effet de verrouillage | أثر التجميد |  |
 | Effort fiscal | المجهود الجبائي |  |
 | Éléments permanents de la rémunération | العناصر القارة للمرتب |  |
@@ -159,6 +204,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Employés de maison | عمال المنازل |  |
 | Emprunt | الاقتراض |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
+| Enseignement de base | التعليم الأساسي |  |
+| Enseignement moyen | التعليم المتوسط |  |
+| Enseignement secondaire | التعليم الثانوي |  |
 | Entrepositaire | أرباب المخازن |  |
 | Entreprise tunisienne d'activités pétrolières | المؤسسة التونسية للأنشطة البترولية | ETAP |
 | Entreprises publiques | المنشآت العمومية |  |
@@ -166,9 +214,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Enzel | الإنزال |  |
 | Épargne nette | الادّخار الصافي |  |
 | Équilibre réel | التوازن الحقيقي للميزانية |  |
+| Établissement d'enseignement supérieur privé | المؤسسة الخاصة للتعليم العالي |  |
+| Établissement éducatif privé | المؤسسة التربوية الخاصة |  |
 | Établissement public à caractère administratif | المؤسسة العمومية ذات الصبغة الإدارية | EPA |
 | Établissement public à caractère industriel et commercial | المؤسسة العمومية ذات الصبغة الصناعية والتجارية | EPIC |
 | Établissement public à caractère non administratif | المؤسسة العمومية التي لا تكتسي صبغة إدارية | EPNA |
+| Établissement public à caractère scientifique et technologique | المؤسسة العمومية ذات الصبغة العلمية والتكنولوجية | EPST |
 | Exonération de TVA | الإعفاء |  |
 | Facturation à l'identique | الفوترة بنفس المبلغ |  |
 | Fait générateur de la TVA | الحدث المنشئ للأداء |  |
@@ -185,18 +236,25 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds de réserve | صندوق الاحتياط |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
 | Fonds national de l'emploi | الصندوق الوطني للتشغيل | FNE |
+| Fonds national de la réforme éducative | الصندوق الوطني للإصلاح التربوي |  |
 | Fonds spéciaux du Trésor | الحسابات الخاصة في الخزينة |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
+| Formation en alternance | التكوين بالتداول |  |
+| Formation professionnelle initiale | التكوين المهني الأساسي |  |
+| Foyer scolaire | المبيت المدرسي |  |
+| Fraction de bourse | جزء المنحة |  |
 | Frais professionnels | المصاريف المهنية |  |
 | Garantie de l'État | ضمان الدولة |  |
 | Gel du crédit de TVA (1998) | تجميد فائض الأداء على القيمة المضافة (1998) |  |
 | Gestion financière distincte | التصرّف المالي المستقلّ |  |
 | Grade | الرتبة |  |
+| Gratuité de l'enseignement | مجانية التعليم |  |
 | Grille de salaires conventionnelle | جدول الأجور |  |
 | Grille des salaires | شبكة الأجور |  |
 | Habitation principale | المسكن الرئيسي |  |
 | Habous | الأحباس |  |
 | Haute instance des finances locales | الهيئة العليا للمالية المحلية |  |
+| Hébergement universitaire | السكن الجامعي |  |
 | Immatriculation foncière | التسجيل العقاري |  |
 | Immeubles non immatriculés | العقارات غير المرسمة |  |
 | Impôt exclusif | الأداء الحصري |  |
@@ -216,6 +274,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
 | Indemnité complémentaire provisoire | المنحة الإضافية المؤقتة | ICP |
+| Indemnité d'apprentissage | منحة التدريب |  |
 | Indemnité de cherté de vie | منحة لغلو المعاش |  |
 | Indemnité de décès | منحة الوفاة |  |
 | Indemnité de gestion et d'exécution | منحة التصرف والتنفيذ |  |
@@ -223,17 +282,33 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité de stage | منحة التربص |  |
 | Indemnité journalière | التعويض اليومي |  |
 | Indemnité spécifique | المنحة الخصوصية |  |
+| Instance nationale de l'évaluation, de l'assurance-qualité et de l'accréditation | الهيئة الوطنية للتقييم وضمان الجودة والاعتماد |  |
+| Institut supérieur des études technologiques | المعهد العالي للدراسات التكنولوجية | ISET |
+| Interventions publiques | التدخل العمومي |  |
+| Jardin d'enfants | روضة الأطفال |  |
 | Jouissance différée | الانتفاع المؤجَّل بالجراية |  |
+| Kouttab coranique | الكتّاب القرآني |  |
+| Leçons de soutien | دروس الدعم |  |
 | Libre administration | التدبير الحر |  |
+| Licence (enseignement supérieur) | الإجازة |  |
+| Licence appliquée | الإجازة التطبيقية |  |
+| Licence fondamentale | الإجازة الأساسية |  |
+| Licence, mastère, doctorat | الإجازة والماجستير والدكتوراه | LMD |
 | Limite de calcul des prestations | الحدّ الأقصى لاحتساب المنافع |  |
 | Livraison à soi-même | التسليم للنفس |  |
 | Livre foncier | السجل العقاري |  |
 | Livret de soins | دفتر العلاج |  |
+| Loi de règlement du budget | قانون غلق ميزانية الدولة |  |
 | Louage | اللواج |  |
+| Lycée pilote | المعهد النموذجي |  |
 | Magistrat | القاضي |  |
+| Maîtrise | الأستاذية |  |
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |
 | Maladie professionnelle | مرض مهني |  |
 | Masse salariale | كتلة الأجور |  |
+| Mastère | الماجستير |  |
+| Mastère de recherche | ماجستير البحث |  |
+| Mastère professionnel | الماجستير المهني |  |
 | Mécanisme d'ajustement automatique des prix des carburants | آلية التعديل الأوتوماتيكي لأسعار المحروقات |  |
 | Melk | الملك |  |
 | Micro-entreprise | مؤسسة صغرى |  |
@@ -241,8 +316,16 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Minimum d'impôt sur le chiffre d'affaires | الضريبة الدنيا |  |
 | Minimum de perception | الحد الأدنى للاستخلاص |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
+| Mission budgétaire | المهمة |  |
+| Moueddeb | المؤدب |  |
+| Moyenne annuelle | المعدل السنوي |  |
+| Moyens des services | وسائل المصالح |  |
+| Obligation scolaire | إجبارية التعليم الأساسي |  |
+| Office des services scolaires | ديوان الخدمات المدرسية |  |
+| Office des œuvres universitaires | ديوان الخدمات الجامعية |  |
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ordonnateur | آمر قبض وصرف |  |
+| Orientation d'office | التوجيه الآلي |  |
 | Ouvrier de l'État | عامل الدولة |  |
 | Ouvriers de chantiers | عملة الحضائر |  |
 | Part aux recettes | المناب من محصول الأداءات |  |
@@ -250,6 +333,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Patrimoine financier | الملك المالي |  |
 | Pension d'ancienneté | جراية التقاعد بالأقدمية |  |
 | Pension de réversion | جراية القرين الباقي على قيد الحياة |  |
+| Pension et demi-pension | الإقامة ونصف الإقامة |  |
 | Pension minimale garantie | الجراية الدنيا المضمونة |  |
 | Pension proportionnelle | الجراية النسبية |  |
 | Pension proportionnelle (loi n° 59-18) | جراية التقاعد النسبي |  |
@@ -269,9 +353,11 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Pourcentage de déduction | النسبة المائوية للطرح |  |
 | Pouvoir réglementaire local | السلطة الترتيبية |  |
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
+| Présalaire | المرتب القبلي |  |
 | Prestation monétaire | المنفعة النقدية |  |
 | Prestation non monétaire | المنفعة غير النقدية |  |
 | Prestations familiales | المنح العائلية |  |
+| Prêt universitaire | القرض الجامعي |  |
 | Prime d'investissement | منحة الاستثمار |  |
 | Prime de rendement | منحة المردودية |  |
 | Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale | تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي |  |
@@ -279,20 +365,25 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Produits de base | المواد الأساسية |  |
+| Programme budgétaire | البرنامج |  |
 | Programme d'accompagnement des promoteurs des petites entreprises | برنامج مرافقة باعثي المؤسسات الصغرى | PAPPE |
 | Programme de recherche active d'emploi | برنامج البحث النشيط عن شغل |  |
 | Programme du service civil volontaire | برنامج الخدمة المدنية التطوعية |  |
 | Programme national d'aide aux familles nécessiteuses | البرنامج الوطني لمساعدة العائلات المعوزة | PNAFN |
 | Programme « FORSATI » | برنامج "فرصتي" |  |
+| Projet annuel de performance | المشروع السنوي للأداء | PAP |
 | Projets d'intérêt national | المشاريع ذات الأهمية الوطنية |  |
 | Promoteur immobilier | الباعث العقاري |  |
 | Promotion | الترقية |  |
 | Protection contre la perte d'emploi | الحماية الاجتماعية للعمال الذين يفقدون شغلهم لأسباب اقتصادية أو فنية |  |
 | Quintile de niveau de vie | الشريحة الخُمسية لمستوى العيش |  |
 | Quota régional | الحصّة الجهوية |  |
+| Rachat (examen) | الإسعاف |  |
+| Rapport annuel de performance | التقرير السنوي للأداء | RAP |
 | Recettes fiscales | المداخيل الجبائية |  |
 | Redevance d'utilisation | معلوم الاستعمال |  |
 | Redevance de compensation | أتاوة الدعم |  |
+| Redoublement | الرسوب |  |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
 | Régime complémentaire | النظام التكميلي |  |
 | Régime conventionnel d'entreprise | النظام التعاقدي (التغطية الصحية) |  |
@@ -318,12 +409,15 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régularisation des déductions | تعديل الطرح |  |
 | Rémunération à la part | الخلاص بالحصة |  |
 | Rémunération des dirigeants d'entreprises publiques | تأجير رؤساء المؤسسات والمنشآت العمومية |  |
+| Rémunérations publiques | التأجير العمومي |  |
 | Rente compensatrice | الإيراد التعويضي |  |
 | Rente d'accident du travail | إيراد حادث الشغل |  |
 | Rente viagère d'invalidité | الإيراد العمري للعجز |  |
+| Répartition des crédits | توزيع الاعتمادات |  |
 | Réserve du fonds commun | مدّخر المال المشترك |  |
 | Réserve technique | الاحتياطي الفنّي |  |
 | Ressources propres | الموارد الذاتية |  |
+| Restauration universitaire | الإطعام الجامعي |  |
 | Restitution du crédit de taxe sur la valeur ajoutée | إرجاع فائض الأداء على القيمة المضافة |  |
 | Retenue à la source | الخصم من المورد |  |
 | Retraite anticipée volontaire | التقاعد المبكّر الاختياري |  |
@@ -353,6 +447,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
 | Séparation des opérations de commercialisation des hydrocarbures | فصل عمليات تسويق المحروقات |  |
 | Service fait | قاعدة الخدمة المنجزة |  |
+| Session de contrôle | دورة المراقبة |  |
+| Session principale | الدورة الرئيسية |  |
 | Seuil à changement de taux | عتبة تغيّر النسبة |  |
 | Seuil à saut | العتبة ذات القفزة |  |
 | SMIG de référence de la CNSS | الأجر الأدنى المرجعي المعتمد لدى الصندوق الوطني للضمان الاجتماعي |  |
@@ -424,8 +520,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Travaux pénibles et insalubres | الأشغال الشاقّة وغير الصحّية |  |
 | Tribunal immobilier | المحكمة العقارية |  |
 | Tutelle | سلطة الإشراف |  |
+| Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
 | Valeur en douane | القيمة المصرح بها لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |
 | Zones de développement régional | مناطق التنمية الجهوية |  |
+| Œuvres universitaires | الخدمات الجامعية |  |

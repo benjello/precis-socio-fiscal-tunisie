@@ -1,0 +1,477 @@
+# La dépense d'éducation {#sec-educ-depense}
+
+Ce chapitre suit ce que l'État dépense pour l'éducation, du plus général au plus particulier : la part de l'Éducation et de l'Enseignement supérieur dans les dépenses de l'État et dans le [PIB](#g-pib) ; la dépense de chaque ministère, par titre, par nature et par niveau ; les enseignants et la masse salariale ; puis la dépense des ménages. Viennent ensuite, à part et titrés comme tels, deux familles de chiffres qui ne sont pas budgétaires : les rapports d'institutions internationales et une étude d'incidence, chacun avec sa méthode.
+
+Les effectifs d'élèves et d'étudiants sont au [chapitre des lois du système éducatif](./_histoire.html#sec-educ-eleves) ; les bourses, les prêts et les œuvres universitaires, au [chapitre des aides](./_aides.html#sec-educ-aides) ; la rémunération des enseignants, au volume [« Rémunérations publiques »](../remunerations_publiques/_regime_indiciaire.html#sec-regime-indiciaire).
+
+## Vue d'ensemble {#sec-educ-depense-vue}
+
+Les chiffres de l'UNESCO-UIS, d'un autre périmètre, sont présentés à part (@sec-educ-depense-rapports).
+
+L'Éducation et l'Enseignement supérieur pèsent **28,8 % des [dépenses de gestion](#g-depenses-de-gestion) et de [développement](#g-depenses-de-developpement) de l'État, hors dette, en 2009, et 20,3 % en 2023**, chiffre provisoire. Rapportée au PIB nominal de l'INS **en base 2015** — les années 2010 à 2014 sont des valeurs rétropolées par l'INS dans cette base —, leur dépense passe de **5,8 % en 2010 à 6,1 % en 2023** (provisoire), avec un maximum de 6,8 % en 2020 (@fig-educ-depense-parts). Le périmètre est celui des ministères de l'Éducation et de l'Enseignement supérieur, hors recherche scientifique ; la formation professionnelle n'y entre pas, faute de série cohérente sur la période (@sec-educ-depense-perimetre). **Réserve de périmètre** : depuis 2019, la gestion de la recherche n'a plus de ligne propre et se trouve comprise dans celle de l'Enseignement supérieur, sans que la source permette de l'en retirer ; les parts de 2019 à 2023 la comprennent donc, et ne se raccordent pas à celles de 2009 à 2018.
+
+```{python}
+#| label: fig-educ-depense-parts
+#| fig-cap: "Part de l'Éducation et de l'Enseignement supérieur, hors recherche, dans les dépenses de l'État (2009-2023) et dans le PIB en base 2015 (2010-2023)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import fig_educ_depense as fd
+fd.onglets(
+    fd.vues_parts(), "fig_educ_depense_parts",
+    caption=("Part de l'Éducation et de l'Enseignement supérieur, hors recherche, dans les dépenses "
+             "de gestion et de développement de l'État hors dette (2009-2023) et dans le PIB en "
+             "base 2015 (2010-2023)"),
+    source=("Source : [@ins-annuaire-statistique], tableaux 16.8 et 16.10 (montants et dépenses de "
+            "l'État) ; PIB nominal de l'INS [@ins-cnat-2015; @minfin-indicateurs-fp], base 2015, "
+            "2010-2014 rétropolés par l'INS — calcul du précis"),
+    note_lecture=(
+        "Le numérateur est la somme des dépenses de gestion et de développement des ministères de "
+        "l'Éducation et de l'Enseignement supérieur, **hors recherche scientifique** ; le "
+        "dénominateur, la somme des dépenses de gestion hors intérêts et de développement hors "
+        "principal de la dette de l'État, lues aux mêmes pages. **Réserve de périmètre** : de 2009 "
+        "à 2018, la recherche a ses lignes propres et n'est pas comptée ; depuis 2019, sa gestion "
+        "n'a plus de ligne et se trouve comprise dans celle de l'Enseignement supérieur, dont la "
+        "source ne permet pas de la retirer ; elle n'en est pas déduite par estimation. Les deux "
+        "segments, 2009-2018 et 2019-2023, ne sont donc pas reliés. Les lignes de la recherche "
+        "identifiables figurent dans l'onglet « Données », **hors total**. La part du PIB est en "
+        "**base 2015** ; le trait pointillé marque les années 2010 à 2014, **rétropolées par "
+        "l'INS** ; aucune valeur d'une autre base n'y est chaînée ([les bases du "
+        "PIB](../annexe-pib.html#sec-pib-ruptures)). Les marqueurs creux sont des chiffres "
+        "provisoires : celui de 2017 est au-dessus du réalisé de 2018, d'où la baisse apparente "
+        "entre les deux années. Les montants et les pages sont dans l'onglet « Données »."
+    ),
+)
+```
+
+- **La part dans les dépenses de l'État baisse, celle du PIB se maintient.** De 2009 à 2018, à périmètre constant, la part de l'État passe de 28,8 % à 22,1 % ; de 2019 à 2023, recherche de gestion comprise, de 24,2 % à 20,3 %. La part du PIB reste entre 5,6 % et 6,8 % de 2010 à 2023 : le budget de l'État croît plus vite que la dépense d'éducation, et la dépense d'éducation à peu près comme le PIB.
+- **La baisse de 2017 à 2018 tient au stade des chiffres, non à la dépense.** Le chiffre de 2017 est le chiffre provisoire de la dernière année d'une édition de l'*Annuaire statistique*, que les éditions suivantes reprennent sans le réviser ; celui de 2018 est un réalisé. La part du PIB passe ainsi de 6,4 % à 5,6 %, et la dépense de gestion de l'Éducation de 4 960 à 4 733 millions de dinars, sans que l'on puisse en conclure à une baisse de la dépense exécutée. La loi de règlement du budget de 2017 ne ventile pas ses paiements par ministère dans les articles de la loi (@sec-educ-depense-perimetre). <!-- TODO (bibliographe) : citer ici la loi de règlement de la gestion 2017 quand la clé loi2024-18 sera au fonds commun. -->
+- **Le budgétaire et l'UNESCO-UIS donnent des niveaux voisins.** En 2022, la part budgétaire calculée ici est de 19,9 % des dépenses de l'État ; celle de l'UIS, de 20,0 % des dépenses des administrations publiques, sur un périmètre plus large (@sec-educ-depense-rapports).
+
+<!-- TODO (rédacteur) : la part du PIB pour 2005-2009 en base 1997 (second segment, non chaîné) reste à calculer depuis denominateurs-depenses-etat-pib ; la note documentaire ne la fournit pas. Le numérateur de ces années comprend la formation professionnelle (2002-2008) et le développement d'avant la rupture de 2009, et doit exclure la ligne de la recherche (en ligne propre de 2005 à 2008) : segment à tracer à part, avec renvoi à annexe-pib.html#sec-pib-ruptures. -->
+
+## Le périmètre et le stade des chiffres {#sec-educ-depense-perimetre}
+
+La série de ce chapitre est celle de l'*Annuaire statistique de la Tunisie* de l'INS, qui relaie le ministère des Finances (« Source : Ministère des Finances » sous chaque tableau) : tableau 16.8 pour les dépenses de gestion hors intérêts, tableau 16.10 pour les dépenses de développement hors principal de la dette, tableau 16.9 pour la gestion par nature [@ins-annuaire-statistique]. Ses lignes changent de périmètre cinq fois en vingt-sept ans, et ses années ne sont ni les crédits votés par la loi de finances ni les paiements de la [loi de règlement](#g-loi-de-reglement) (@tbl-educ-perimetre). La recherche scientifique n'entre dans aucun total ni aucune part du chapitre.
+
+| Période | Éducation | Formation professionnelle | Enseignement supérieur ; recherche<br>(hors total) | Développement |
+|---|---|---|---|---|
+| 1997-2001 | « Education Nationale » | avec l'emploi (« Formation Professionnelle et Emploi ») | « Enseignement Supérieur » ; pas de ligne de la recherche | premier segment |
+| 2002-2004 | « Education et Formation Professionnelle » | comprise dans l'Éducation | recherche comprise, non isolable (« Enseig. Sup. et recherche scientifique ») | premier segment |
+| 2005-2008 | idem | comprise dans l'Éducation | recherche en ligne propre | premier segment |
+| 2009-2013 | « Education » | ligne propre | recherche en ligne propre | second segment, à partir de 2009 |
+| 2014-2018 | « Education » | « - » en gestion : comptée dans « Emploi » ; petite ligne propre en développement | recherche en ligne propre | second segment |
+| 2019 | « Education » | idem | recherche comprise dans le supérieur en gestion, non isolable ; ligne propre en développement | second segment |
+| 2020-2023 | « Education » | ligne propre | idem | second segment |
+
+: Libellés et périmètres des lignes de l'*Annuaire statistique*, tableaux 16.8 et 16.10, 1997-2023 {#tbl-educ-perimetre}
+
+Une ligne propre de la recherche (2005-2018 en gestion, 2005-2023 en développement) est donnée hors total ; une recherche comprise dans l'Enseignement supérieur (2002-2004 ; gestion depuis 2019) n'en est pas déduite.
+
+- **Le stade des chiffres.** L'*Annuaire* ne le dit pas. Chaque édition donne trois années (cinq pour celle de 1995-2001), et les valeurs d'une même année changent d'une édition à l'autre. L'année la plus récente d'une édition est un chiffre provisoire, arrondi à la centaine de milliers de dinars jusqu'en 2009 ; la troisième année, ou une année plus ancienne, est un réalisé. C'est vérifié pour 2012 : la gestion de l'Éducation de l'*Annuaire* (3 007 491 milliers de dinars) est exactement la réalisation de 2012 du [projet annuel de performance](#g-projet-annuel-performance) du ministère pour 2014 [@mineducation-pap-2014, tableau 1, p. 6]. Chaque année du chapitre est prise dans l'édition la plus récente qui la contient, donc le plus souvent à son stade de réalisé ; quatre exceptions : 1999-2001 (premières années de l'édition 1995-2001), 2002-2003 (valeurs arrondies), 2015-2017 (colonnes reprises de l'édition 2013-2017, dont 2017 provisoire) et 2022-2023 (deux années les plus récentes de l'édition 2019-2023).
+- **Le développement se trace en deux segments, 1997-2008 et 2009-2023.** Pour 2009, l'édition 2006-2010 donne 2 594 millions de dinars de dépenses de développement de l'État, l'édition 2007-2011 en donne 3 274 : l'ampleur de l'écart indique un changement de périmètre, non une révision. Une hypothèse, que la source ne confirme pas : les éditions antérieures excluraient les dépenses de développement sur ressources extérieures affectées, que la section III de la loi de règlement comprend. Les deux segments ne sont jamais chaînés, et la part dans les dépenses de l'État commence en 2009.
+- **Les lois de règlement** donnent, dans leurs articles, les paiements par partie, non par ministère. Les tableaux par chapitre annexés aux lois de règlement ne sont pas identifiés ici. <!-- RECHERCHE r-educ-lois-reglement-tableaux-par-chapitre : tableaux n° 2, 2-1 et 2-2 annexés aux lois de règlement, ventilant les paiements par chapitre (voir docs/recherches.yml) --> Aucune loi de règlement n'est identifiée pour 2021 et après. <!-- RECHERCHE r-educ-lois-reglement-2021-et-apres : lois de règlement du budget des gestions 2021 et suivantes (voir docs/recherches.yml) -->
+- **Les collectivités locales.** Depuis 1958, des dépenses obligatoires leur incombent pour l'enseignement — construction, logement du personnel, entretien, mobilier, éclairage et chauffage [@loi58-118, art. 30] ([la loi de 1958](./_histoire.html#sec-educ-1958)). Depuis le code de 2018, l'entretien des écoles de base est une [compétence partagée](../finances_locales/_competences.html#sec-fl-comp-commune) de la commune et de l'autorité centrale [@loi-org-2018-29-ccl, art. 243]. La dépense des collectivités pour les écoles n'est pas isolée ici ; ce que la commune en a la charge est au [tableau des compétences de la commune](../finances_locales/_competences.html#tbl-fl-comp-commune) du livre « Les finances locales ». <!-- RECHERCHE r-educ-collectivites-depense-education : budgets des communes et des conseils régionaux, dépense d'éducation isolable ? (voir docs/recherches.yml) -->
+
+:::: {.chronologie-repliable titre="Stade comptable de la série de l'Annuaire : comparaisons de 2010, 2012 et 2017 avec les crédits votés, le projet annuel de performance et la loi de règlement"}
+
+Trois comparaisons situent les années de l'*Annuaire* entre les crédits votés et les paiements.
+
+- **2010 : proche des crédits votés.** La dernière année de l'édition 2006-2010 donne, pour l'Éducation et la Formation, une gestion très proche du total du chapitre 27 de la [répartition des crédits](#g-repartition-des-credits) de la loi de finances, sans lui être égale [@decret-2009-3750, tableau A, p. 4126; @lf-2010] (@tbl-educ-credits-2010).
+- **2012 : un réalisé.** La troisième année de l'édition 2010-2014 donne pour l'Éducation 3 007 491 milliers de dinars en gestion et 276 267 en développement, exactement les réalisations de 2012 du projet annuel de performance du ministère pour 2014 [@mineducation-pap-2014, tableau 1, p. 6]. La Formation professionnelle (163 603) et l'Emploi (49 429) y font ensemble 213 032 milliers de dinars, les réalisations de gestion de 2012 de la mission « Formation professionnelle et emploi » [@mfpe-pap-2014, p. 6].
+- **2017 : ni le réalisé, ni le total payé.** Le total de la gestion de l'État que donne l'*Annuaire* pour 2017 diffère des paiements de la section I de la loi de règlement de la gestion 2017. <!-- TODO (bibliographe) : promouvoir au fonds commun la clé loi2024-18 (loi de règlement de la gestion 2017, JORT n° 35 de 2024, p. 800), qui vit dans marche_travail/references.json, puis la citer ici avec les deux montants (note D § 2.1). -->
+
+Les crédits initiaux de 2010, ventilés par la [répartition des crédits](#g-repartition-des-credits) annexée au décret du 21 décembre 2009, sont les suivants, en dinars [@decret-2009-3750, p. 4126-4127] :
+
+| Chapitre du budget | Ligne | Crédits initiaux de gestion<br>(dinars courants) |
+|---|---|---:|
+| 27, « Ministère de l'Éducation et de la Formation » | 1- Éducation | 2 686 605 000 |
+| 27 | 2- Formation | 105 967 000 |
+| 28, « Ministère de l'Enseignement supérieur, de la Recherche scientifique et de la Technologie » | 1- L'enseignement supérieur | 818 596 000 |
+| 28 | 3- La recherche scientifique et la technologie<br>(hors total) | 30 513 000 |
+
+: Crédits initiaux de gestion de l'Éducation, de la Formation et de l'Enseignement supérieur dans la loi de finances pour 2010, avec la ligne de la recherche, hors total {#tbl-educ-credits-2010}
+
+Écarts que la source n'explique pas [@ins-annuaire-statistique] :
+
+- en 2012, l'Enseignement supérieur et la Recherche de l'*Annuaire* (982 727 + 34 848 = 1 017 575 milliers de dinars) diffèrent de 637 milliers de dinars des réalisations de gestion de la mission (1 018 212) [@mesrs-pap-2014, tableau 1, p. 13] ;
+- la ligne « Emploi » vaut 91 100 milliers de dinars en 2002, puis 24 200 en 2003 ;
+- en 2009, la gestion de l'Éducation et de la Formation de l'édition 2006-2010 (2 631 926) égale la somme de l'Éducation et de la Formation professionnelle de l'édition 2007-2011 ; leur développement, en revanche, passe de 155 084 à 195 576 + 14 149 milliers de dinars ;
+- au tableau 16.9 de 2022 et de 2023, la formation professionnelle est de nouveau fondue dans « Emploi » (424 596 = 339 931 + 84 665 en 2022).
+
+L'édition 1998-2002 de l'*Annuaire* porte, au tableau 16.8, des libellés décalés d'une ligne, et au tableau 16.9 des montants tronqués (« 1 424 00 ») : aucune valeur n'en est prise.
+
+::::
+
+## La dépense par ministère, 1997-2023 {#sec-educ-depense-ministeres}
+
+La dépense de gestion du ministère de l'Éducation passe de **956 millions de dinars courants en 1997 à 6 526 millions en 2023** (chiffre provisoire), soit de 3 078 à 6 526 millions de dinars de 2023 ; celle de l'Enseignement supérieur, de 204 à 1 857 millions de dinars courants (657 à 1 857 millions de dinars de 2023) (@fig-educ-depense-ministeres). Les lignes sont celles de l'*Annuaire statistique*, dont les périmètres changent (@tbl-educ-perimetre) ; la ligne de la recherche scientifique, hors total, n'est pas tracée.
+
+```{python}
+#| label: fig-educ-depense-ministeres
+#| fig-cap: "Dépense de l'État par ministère : gestion et développement, en dinars courants et en dinars de 2023, 1997-2023."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import fig_educ_depense as fd
+fd.onglets(
+    fd.vues_ministeres(), "fig_educ_depense_ministeres",
+    caption=("Dépense de l'État par ministère, 1997-2023 : gestion et développement, en millions de "
+             "dinars courants et de 2023"),
+    source=("Source : [@ins-annuaire-statistique], tableaux 16.8 (gestion) et 16.10 (développement), "
+            "édition et page de chaque année dans l'onglet « Données » ; dinars de 2023 : indice des "
+            "prix à la consommation [@bct-ra; @ins-annuaire]"),
+    note_lecture=(
+        "Chaque ligne est celle d'un ministère dans l'*Annuaire statistique*. Les traits verticaux "
+        "marquent les changements de périmètre : la formation professionnelle est dans l'Éducation "
+        "de 2002 à 2008 et dans « Emploi », pour la gestion, de 2014 à 2019 ; ses points ne sont "
+        "tracés que là où elle a une ligne propre (en 1997-2001, avec l'emploi). **Réserve de "
+        "périmètre** : la recherche scientifique n'est pas tracée ; ses lignes propres (gestion "
+        "2005-2018, développement 2005-2023) sont dans l'onglet « Données », **hors total**. Elle est "
+        "comprise dans l'Enseignement supérieur en 2002-2004 et, pour la gestion, depuis 2019, sans "
+        "que la source permette de l'en retirer ; de 1997 à 2001, elle n'a pas de ligne propre. Le "
+        "développement change de périmètre entre 2008 et 2009 : ses deux segments ne sont pas "
+        "reliés. Les marqueurs creux sont des chiffres provisoires (dernière année d'une édition)."
+    ),
+)
+```
+
+- **La gestion fait l'essentiel.** En 2023, la gestion de l'Éducation (6 526 millions de dinars) vaut treize fois son développement (498 millions) ; de 1997 à 2023, ce rapport va de onze (2012) à vingt-quatre (2017).
+- **Le développement de l'Éducation passe de 271 millions de dinars en 2022 à 498 millions en 2023.** Les deux années sont les deux plus récentes de l'édition 2019-2023 : ce sont des chiffres non définitifs. Celui de l'Enseignement supérieur passe de 92 à 195 millions de dinars.
+- **La baisse de la gestion de l'Éducation de 2017 à 2018** — de 4 960 à 4 733 millions de dinars courants — tient au stade du chiffre de 2017, provisoire et repris tel quel par les éditions suivantes, quand celui de 2018 est un réalisé (@sec-educ-depense-vue).
+- **La formation professionnelle n'a de série propre que par segments** : 1997-2001 (avec l'emploi), 2009-2013 et 2020-2023. De 2014 à 2019, sa gestion est comptée dans « Emploi », qui passe de 53 millions de dinars en 2013 à 246 millions en 2014. Aucune somme n'enjambe ces ruptures.
+
+:::: {.chronologie-repliable titre="Dépense de l'État par ministère, gestion et développement : montants annuels, 1997-2023, avec édition, pages et stade"}
+
+| Année | Éducation<br>G | Éducation<br>D | Ens. sup.<br>G | Ens. sup.<br>D | Recherche<br>G, hors total | Recherche<br>D, hors total | Form. prof.<br>G | Form. prof.<br>D | Emploi<br>G | Emploi<br>D | Stade | Édition<br>(p. G / p. D) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
+| 1997 | 956 273 | 72 953 | 204 053 | 44 751 |  |  | 48 529 | 24 436 |  |  | réalisation présumée | 1995-2001 (243 / 245) |
+| 1998 | 1 033 264 | 60 094 | 224 206 | 43 086 |  |  | 54 869 | 28 917 |  |  | réalisation présumée | 1995-2001 (243 / 245) |
+| 1999 | 1 123 153 | 78 547 | 249 828 | 47 274 |  |  | 67 874 | 30 300 |  |  | réalisation présumée | 1995-2001 (243 / 245) |
+| 2000 | 1 192 348 | 75 900 | 288 777 | 59 600 |  |  | 75 485 | 5 300 |  |  | avant-dernière année de l'édition | 1995-2001 (243 / 245) |
+| 2001 | 1 306 747 | 83 900 | 331 106 | 77 000 |  |  | 84 625 | 6 900 |  |  | provisoire (dernière année de l'édition) | 1995-2001 (243 / 245) |
+| 2002 | 1 424 200 | 94 100 | 387 400 | 91 300 |  |  |  |  | 91 100 | 10 400 | réalisation présumée | 2000-2004 (260 / 262) |
+| 2003 | 1 586 800 | 112 300 | 443 600 | 118 200 |  |  |  |  | 24 200 | 24 000 | réalisation présumée | 2001-2005 (262 / 264) |
+| 2004 | 1 720 326 | 105 061 | 504 596 | 139 612 |  |  |  |  | 22 557 | 24 487 | réalisation présumée | 2002-2006 (263 / 265) |
+| 2005 | 1 901 526 | 99 264 | 527 108 | 90 972 | 22 496 | 32 706 |  |  | 23 944 | 27 481 | réalisation présumée | 2003-2007 (271 / 273) |
+| 2006 | 2 043 935 | 99 600 | 581 812 | 115 100 | 25 445 | 37 900 |  |  | 25 486 | 45 900 | réalisation présumée | 2004-2008 (271 / 273) |
+| 2007 | 2 241 400 | 119 800 | 628 400 | 117 500 | 28 100 | 31 100 |  |  | 27 200 | 61 800 | réalisation présumée | 2005-2009 (275 / 277) |
+| 2008 | 2 433 162 | 132 377 | 682 093 | 123 316 | 30 586 | 43 907 |  |  | 28 688 | 80 579 | réalisation présumée | 2006-2010 (277 / 279) |
+| 2009 | 2 541 221 | 195 576 | 720 730 | 137 787 | 24 014 | 38 022 | 90 705 | 14 149 | 35 502 | 114 933 | réalisation présumée | 2007-2011 (279 / 281) |
+| 2010 | 2 664 054 | 195 506 | 796 539 | 189 128 | 27 443 | 37 670 | 105 933 | 607 | 39 068 | 29 208 | réalisation présumée | 2008-2012 (277 / 279) |
+| 2011 | 2 824 708 | 239 310 | 860 814 | 152 338 | 32 458 | 53 174 | 123 702 | 3 196 | 43 832 | 23 489 | avant-dernière année de l'édition | 2008-2012 (277 / 279) |
+| 2012 | 3 007 491 | 276 267 | 982 727 | 116 252 | 34 848 | 46 900 | 163 603 | 455 | 49 429 | 24 632 | réalisation présumée | 2010-2014 (265 / 267) |
+| 2013 | 3 236 103 | 193 360 | 1 054 149 | 94 640 | 37 824 | 32 673 | 174 947 | 382 | 52 649 | 12 677 | réalisation présumée | 2011-2015 (263 / 265) |
+| 2014 | 3 544 934 | 168 701 | 1 070 265 | 84 677 | 39 390 | 50 270 | « - » | 504 | 245 750 | 13 044 | réalisation présumée | 2012-2016 (263 / 265) |
+| 2015 | 3 856 676 | 175 483 | 1 176 001 | 94 067 | 42 834 | 47 631 | « - » | 597 | 268 010 | 11 911 | réalisation présumée ; colonne reprise de l'édition 2013-2017 | 2015-2019 (267 / 269) |
+| 2016 | 4 481 632 | 202 247 | 1 223 175 | 96 761 | 45 543 | 53 670 | « - » | 602 | 279 315 | 10 950 | avant-dernière année de l'édition ; colonne reprise de l'édition 2013-2017 | 2015-2019 (267 / 269) |
+| 2017 | 4 959 579 | 202 569 | 1 261 038 | 78 580 | 41 559 | 44 727 | « - » | 692 | 305 462 | 12 737 | provisoire (dernière année de l'édition) ; colonne reprise de l'édition 2013-2017 | 2015-2019 (267 / 269) |
+| 2018 | 4 732 500 | 214 044 | 1 300 184 | 82 524 | 44 321 | 59 891 | « - » | 741 | 330 722 | 3 252 | réalisation présumée | 2017-2021 (267 / 269) |
+| 2019 | 5 698 966 | 314 176 | 1 487 557 | 92 470 | « - » | 64 597 | « - » | 1 914 | 385 936 | 1 645 | avant-dernière année de l'édition | 2017-2021 (267 / 269) |
+| 2020 | 6 181 511 | 270 481 | 1 564 023 | 146 450 | « - » | 79 136 | 413 517 | 1 467 | 94 623 | 13 960 | réalisation présumée | 2018-2022 (267 / 269) |
+| 2021 | 6 449 652 | 265 697 | 1 726 567 | 78 156 | « - » | 62 900 | 337 007 | 1 272 | 84 526 | 11 973 | réalisation présumée | 2019-2023 (269 / 271) |
+| 2022 | 6 562 366 | 271 430 | 1 738 859 | 92 336 | « - » | 79 570 | 339 931 | 405 | 84 665 | 8 782 | avant-dernière année de l'édition | 2019-2023 (269 / 271) |
+| 2023 | 6 525 584 | 497 932 | 1 857 135 | 194 533 | « - » | 10 887 | 376 030 | 1 917 | 94 851 | 12 674 | provisoire (dernière année de l'édition) | 2019-2023 (269 / 271) |
+
+: Dépense de l'État par ministère, gestion (G, tableau 16.8) et développement (D, tableau 16.10), en milliers de dinars courants, 1997-2023 ; recherche hors total {#tbl-educ-ministeres}
+
+Source : [@ins-annuaire-statistique]. « - » : tiret imprimé dans la source ; case vide : la ligne n'existe pas dans l'édition retenue. Les colonnes de la recherche sont hors total : elles n'entrent dans aucune somme ni aucune part du chapitre. Libellés et périmètres au @tbl-educ-perimetre. Les montants en dinars de 2023 sont dans l'onglet « Données » de la @fig-educ-depense-ministeres.
+
+::::
+
+## La dépense par nature {#sec-educ-depense-nature}
+
+La gestion d'un ministère se décompose en trois natures : les [rémunérations publiques](#g-remunerations-publiques), les [moyens des services](#g-moyens-des-services) — « biens et services » dans l'*Annuaire* — et les [interventions publiques](#g-interventions-publiques) — « autres dépenses » ; les projets annuels de performance de 2014 donnent cette correspondance [@mineducation-pap-2014]. **Les rémunérations font l'essentiel** : entre 91 % et 97 % de la gestion de l'Éducation de 2003 à 2023, et de 70 % à 81 % de celle de l'Enseignement supérieur, où les interventions pèsent davantage (@fig-educ-depense-nature).
+
+```{python}
+#| label: fig-educ-depense-nature
+#| fig-cap: "Rémunérations, moyens des services et interventions publiques, en parts de la gestion de l'Éducation et de l'Enseignement supérieur, 2003-2023."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import fig_educ_depense as fd
+fd.onglets(
+    fd.vues_nature(), "fig_educ_depense_nature",
+    caption=("Dépense de gestion par nature : parts des rémunérations, des moyens des services et des "
+             "interventions publiques, Éducation et Enseignement supérieur, 2003-2023"),
+    source=("Source : [@ins-annuaire-statistique], tableau 16.9, année la plus récente de chaque "
+            "édition ; correspondance des natures : [@mineducation-pap-2014]"),
+    note_lecture=(
+        "Chaque part est rapportée à la somme des trois natures de la même ligne du tableau 16.9. "
+        "Ce tableau ne donne que l'année la plus récente de chaque édition : ce sont des chiffres "
+        "provisoires. Les années sans point (2013, 2018, 2019, 2021) manquent à la source ; les "
+        "points ne sont pas reliés à travers elles. L'Éducation comprend la formation "
+        "professionnelle jusqu'en 2010. **Réserve de périmètre** : l'Enseignement supérieur comprend "
+        "la recherche en 2003 et 2004, que son libellé nomme ; en 2006, 2009, 2020, 2022 et 2023, la "
+        "part de la recherche dans l'Enseignement supérieur n'est pas établie ; elle n'en est pas "
+        "déduite. La ligne de la recherche, quand elle "
+        "existe, est dans l'onglet « Données », **hors total**, et n'est pas tracée. Le trait de "
+        "2017 signale des sauts que la source ne commente pas."
+    ),
+)
+```
+
+- **Une nomenclature en quatre colonnes jusqu'en 2001, en trois depuis 2003.** En 2001, le tableau sépare rémunérations, biens et services, subventions et autres dépenses ; depuis 2003, il n'a plus que trois colonnes. Aucune part n'est calculée pour 2001.
+- **Deux sauts sans commentaire de la source.** Les « autres dépenses » de l'Éducation passent de 45 millions de dinars en 2016 à 339 millions en 2017, puis 17 millions en 2020 ; ses « biens et services », de 100 millions en 2017 à 374 millions en 2020.
+- **Des années manquent** : 2002, dont les montants sont tronqués à l'impression, puis 2013, 2018, 2019 et 2021. <!-- TODO (documentaliste) : 2013 est dans l'édition 2009-2013 de l'Annuaire, à obtenir ; 2018, 2019 et 2021 sont à prendre dans les budgets détaillés ou les lois de règlement. -->
+
+:::: {.chronologie-repliable titre="Dépense de gestion par nature et par ministère : montants annuels, 2001-2023"}
+
+| Année | Libellé imprimé | Rémunérations<br>publiques | Biens et services<br>(moyens des services) | Autres dépenses<br>(interventions) | Édition (p.) |
+|---|---|---:|---:|---:|---|
+| 2001 | « Education Nationale » | 1 250 013 | 14 250 |  | 1995-2001 (244) |
+| 2003 | « Education Nation. et Formation » | 1 522 700 | 47 700 | 16 400 | 1999-2003 (259) |
+| 2004 | « Education Nation. et Formation » | 1 650 200 | 51 700 | 18 400 | 2000-2004 (261) |
+| 2005 | « Education . et Formation » | 1 827 000 | 54 800 | 19 000 | 2001-2005 (263) |
+| 2006 | « Education . et Formation » | 1 966 300 | 57 900 | 19 700 | 2002-2006 (264) |
+| 2007 | « Education . et Formation » | 2 151 000 | 63 700 | 26 700 | 2003-2007 (272) |
+| 2008 | « Education . et Formation » | 2 339 000 | 66 800 | 27 400 | 2004-2008 (272) |
+| 2009 | « Education . et Formation » | 2 530 900 | 71 600 | 29 400 | 2005-2009 (276) |
+| 2010 | « Education . et Formation » | 2 688 103 | 74 489 | 30 195 | 2006-2010 (278) |
+| 2011 | « Education » | 2 720 001 | 73 650 | 31 041 | 2007-2011 (280) |
+| 2012 | « Education » | 2 898 046 | 79 849 | 29 586 | 2008-2012 (278) |
+| 2014 | « Education » | 3 403 435 | 99 004 | 42 796 | 2010-2014 (266) |
+| 2015 | « Education » | 3 718 760 | 94 127 | 43 789 | 2011-2015 (264) |
+| 2016 | « Education » | 4 348 250 | 88 712 | 44 670 | 2012-2016 (264) |
+| 2017 | « Education » | 4 520 965 | 100 044 | 338 570 | 2015-2019 (268) |
+| 2020 | « Education » | 5 791 417 | 373 586 | 16 509 | 2016-2020 (268) |
+| 2022 | « Education » | 6 118 380 | 347 711 | 96 275 | 2018-2022 (268) |
+| 2023 | « Education » | 6 093 395 | 360 448 | 71 741 | 2019-2023 (270) |
+
+: Éducation : dépense de gestion par nature, en milliers de dinars courants {#tbl-educ-nature-educ}
+
+| Année | Libellé imprimé | Rémunérations<br>publiques | Biens et services<br>(moyens des services) | Autres dépenses<br>(interventions) | Édition (p.) |
+|---|---|---:|---:|---:|---|
+| 2001 | « Enseignement Supérieur » | 229 781 | 3 586 |  | 1995-2001 (244) |
+| 2003 | « et recherche scientifique » | 308 300 | 56 400 | 78 900 | 1999-2003 (259) |
+| 2004 | « et recherche scientifique » | 354 600 | 60 700 | 89 500 | 2000-2004 (261) |
+| 2005 | « Enseignement Sup. » | 371 800 | 60 200 | 95 000 | 2001-2005 (263) |
+| 2006 | « Enseignement Supérieur » | 415 400 | 64 600 | 101 800 | 2002-2006 (264) |
+| 2007 | « Enseignement Supérieur » | 455 600 | 70 000 | 102 800 | 2003-2007 (272) |
+| 2008 | « Enseignement Supérieur » | 499 000 | 73 200 | 109 400 | 2004-2008 (272) |
+| 2009 | « Enseignement Supérieur » | 565 200 | 71 100 | 108 400 | 2005-2009 (276) |
+| 2010 | « Enseignement Supérieur » | 617 681 | 70 751 | 115 547 | 2006-2010 (278) |
+| 2011 | « Enseignement supérieur » | 662 390 | 79 207 | 119 217 | 2007-2011 (280) |
+| 2012 | « Enseignement supérieur » | 760 750 | 77 396 | 144 580 | 2008-2012 (278) |
+| 2014 | « Enseignement supérieur » | 863 133 | 72 283 | 134 850 | 2010-2014 (266) |
+| 2015 | « Enseignement supérieur » | 928 060 | 83 210 | 164 731 | 2011-2015 (264) |
+| 2016 | « Enseignement supérieur » | 980 782 | 82 417 | 159 976 | 2012-2016 (264) |
+| 2017 | « Enseignement supérieur » | 918 356 | 84 163 | 258 519 | 2015-2019 (268) |
+| 2020 | « Enseignement supérieur » | 1 257 340 | 96 600 | 210 084 | 2016-2020 (268) |
+| 2022 | « Enseignement supérieur » | 1 411 034 | 88 034 | 239 791 | 2018-2022 (268) |
+| 2023 | « Enseignement supérieur » | 1 484 608 | 131 059 | 241 469 | 2019-2023 (270) |
+
+: Enseignement supérieur : dépense de gestion par nature, en milliers de dinars courants {#tbl-educ-nature-sup}
+
+| Année | Libellé imprimé | Rémunérations<br>publiques | Biens et services<br>(moyens des services) | Autres dépenses<br>(interventions) | Édition (p.) |
+|---|---|---:|---:|---:|---|
+| 2011 | « Formation Professionnelle » | 122 419 | 803 | 480 | 2007-2011 (280) |
+| 2012 | « Formation Professionnelle » | 152 254 | 10 817 | 531 | 2008-2012 (278) |
+| 2020 | « Formation Professionnelle » | 391 531 | 21 028 | 958 | 2016-2020 (268) |
+
+: Formation professionnelle : dépense de gestion par nature, en milliers de dinars courants {#tbl-educ-nature-fp}
+
+Source : [@ins-annuaire-statistique], tableau 16.9 « Dépenses du titre I par catégorie et département ». Chaque année est la plus récente de son édition. Les parts calculées, et la ligne de la recherche scientifique (2005-2017), hors total, sont dans l'onglet « Données » de la @fig-educ-depense-nature.
+
+::::
+
+## La dépense par niveau : le budget par programmes {#sec-educ-depense-programmes}
+
+Les services universitaires — restauration, hébergement, bourses — sont décrits au [chapitre des aides](./_aides.html#sec-educ-oeuvres-universitaires).
+
+Dans le budget par [programmes](#g-programme-budgetaire), le ministère de l'Éducation sépare le primaire du « préparatoire et secondaire ». **En 2012, le second coûte près du double du premier** : 2 050 millions de dinars contre 1 079 millions, en [crédits de paiement](#g-credits-de-paiement) réalisés (@tbl-educ-programmes). Les trois colonnes du tableau ne sont pas du même stade : réalisations de 2012, loi de finances pour 2013, propositions pour 2014, telles que les donnent les projets annuels de performance de 2014.
+
+| Programme | 2012<br>réalisations | 2012<br>(dinars de 2023) | 2013<br>loi de finances | 2013<br>(dinars de 2023) | 2014<br>propositions | 2014<br>(dinars de 2023) |
+|---|---:|---:|---:|---:|---:|---:|
+| Éducation, P1 : primaire | 1 079 074 | 2 096 574 | 1 167 454 | 2 137 587 | 1 212 059 | 2 104 039 |
+| Éducation, P2 : préparatoire et secondaire | 2 049 506 | 3 982 063 | 2 151 340 | 3 939 064 | 2 257 288 | 3 918 475 |
+| Éducation, P3 : pilotage et appui | 155 178 | 301 501 | 188 541 | 345 215 | 189 366 | 328 724 |
+| Ens. sup., P1 : enseignement supérieur | 808 057 | 1 570 005 | 894 469 | 1 637 756 | 974 090 | 1 690 944 |
+| Ens. sup., P2 : recherche scientifique<br>(hors total) | 81 011 | 157 399 | 105 530 | 193 224 | 97 932 | 170 002 |
+| Ens. sup., P3 : services universitaires | 247 991 | 481 831 | 278 747 | 510 381 | 275 927 | 478 988 |
+| Ens. sup., P4 : pilotage et appui | 44 305 | 86 082 | 60 328 | 110 459 | 57 331 | 99 522 |
+| Formation professionnelle et emploi : formation | 228 275 | 443 524 | 263 043 | 481 627 | 254 639 | 442 033 |
+
+: Dépense des ministères de l'Éducation, de l'Enseignement supérieur et de la Formation professionnelle par programme, crédits de paiement, en milliers de dinars courants et de 2023, 2012-2014 {#tbl-educ-programmes}
+
+Sources : [@mineducation-pap-2014, tableau 2, p. 6; @mesrs-pap-2014, tableau 2, p. 14; @mfpe-pap-2014, p. 7] ; dinars de 2023 : indice des prix à la consommation [@bct-ra; @ins-annuaire]. Le programme de la recherche scientifique est donné hors total : il n'entre dans aucune somme ni aucune part du chapitre. Les crédits de l'Éducation et de l'Enseignement supérieur sont hors ressources propres ; ceux du programme de la formation professionnelle comprennent le Fonds national de l'emploi et les ressources propres des établissements (note du tableau de la mission).
+
+- **Un découpage par cycle.** Le ministère de l'Éducation a choisi de découper ses programmes par cycle plutôt que par fonction [@mineducation-pap-2014, p. 5] : le primaire et le « préparatoire et secondaire » sont donc des niveaux d'enseignement. Le préscolaire public n'a pas de programme propre.
+- **Les services universitaires forment un programme distinct** de celui de l'enseignement supérieur : 248 millions de dinars en 2012, pour 808 millions au programme de l'enseignement supérieur.
+- **La mise en place du budget par programmes.** Les projets annuels de performance de 2014 sont les plus anciens présentés ici ; celui de la Formation professionnelle et de l'Emploi décrit un passage « progressif » à la gestion budgétaire par objectifs [@mfpe-pap-2014, p. 4-5]. La loi organique du budget de 2019 donne depuis au budget sa présentation par [missions](#g-mission-budgetaire) et programmes [@loi-org-2019-15-lob]. <!-- TODO (documentaliste) : lire la loi organique n° 2019-15 et dater le premier budget voté par programmes ; prolonger la série par programme avec les budgets 2015-2017 (arabe) et les projets et rapports annuels de performance 2018-2026. -->
+
+Aucune publication des ministères donnant un [coût](#g-cout-unitaire) public par élève ou par étudiant n'est identifiée ici. <!-- RECHERCHE r-educ-cout-unitaire-ministere-2021 : publication des ministères de l'Éducation et de l'Enseignement supérieur donnant un coût public par élève ou par étudiant (voir docs/recherches.yml) --> Un tel coût dépend de choix de méthode que les sources ne font pas : répartir ou non le pilotage, inclure ou non le développement et les services universitaires, rapporter l'exercice budgétaire à l'une ou l'autre des deux années scolaires qu'il chevauche.
+
+<!-- TODO (rédacteur) : le calcul indicatif du coût par élève (note D § 5.2) n'est pas publié, faute de décision du propriétaire sur sa méthode (question Q9 de la fiche de plan, § 7.4, point 6). -->
+
+## Les enseignants et la masse salariale {#sec-educ-depense-personnels}
+
+La rémunération des enseignants — grilles, indemnités, statuts — relève du volume [« Rémunérations publiques »](../remunerations_publiques/_regime_indiciaire.html#sec-regime-indiciaire) ; les effectifs d'élèves, du [chapitre des lois du système éducatif](./_histoire.html#sec-educ-eleves).
+
+L'enseignement public compte, en 2023-2024, **72 213 enseignants au premier cycle de l'[enseignement de base](#g-enseignement-de-base), 70 695 au second cycle de la base et au [secondaire](#g-enseignement-secondaire), et 23 545 dans le supérieur**, contre 59 432, 30 170 et 6 481 en 1995-1996 [@ins-annuaire-statistique]. Les rémunérations du ministère de l'Éducation atteignent 6 093 millions de dinars en 2023, chiffre provisoire, contre 1 250 millions en 2001 (3 622 millions de dinars de 2023) (@fig-educ-enseignants).
+
+```{python}
+#| label: fig-educ-enseignants
+#| fig-cap: "Enseignants du public par cycle, 1995-1996 à 2023-2024 ; rémunérations des ministères de l'Éducation et de l'Enseignement supérieur, 2001-2023, et rémunération par agent du ministère, 2010-2023."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import fig_educ_depense as fd
+fd.onglets(
+    fd.vues_enseignants(), "fig_educ_depense_enseignants",
+    caption=("Enseignants du public par cycle (1995-1996 à 2023-2024) ; rémunérations des ministères "
+             "de l'Éducation et de l'Enseignement supérieur (2001-2023) et rémunération par agent du "
+             "ministère (2010-2023), en dinars courants et de 2023"),
+    source=("Source : [@ins-annuaire-statistique], chapitre « Enseignement et culture », tableau des "
+            "données générales (effectifs) et tableau 16.9 (rémunérations) ; agents des ministères, "
+            "base INSAF : annexes annuelles 2010-2017, tableau 1 [@ins-fonction-publique-2021], puis "
+            "2018-2023 [@ins-fonction-publique-2025, tableau 8, p. 11] ; dinars de 2023 : indice "
+            "des prix à la consommation [@bct-ra; @ins-annuaire]"),
+    note_lecture=(
+        "Les effectifs sont ceux des enseignants du **public**, par année scolaire (l'abscisse est "
+        "l'année où elle commence). Les rémunérations sont la colonne « Rémunération » du tableau "
+        "16.9 : la masse salariale de **tout le ministère**, non des seuls enseignants ; chaque "
+        "point est l'année la plus récente d'une édition, donc un chiffre provisoire (marqueur "
+        "creux). L'Éducation comprend la formation professionnelle de 2003 à 2010. "
+        "Les vues « Par agent du ministère » divisent cette masse salariale par le nombre d'agents "
+        "de la fonction publique du ministère (base INSAF ; effectif de décembre depuis 2018) : ce n'est ni la "
+        "rémunération d'un enseignant ni une rémunération par équivalent temps plein. Elles "
+        "commencent en 2011 pour l'Éducation, dont le tableau 16.9 de 2010 comprend la formation "
+        "professionnelle, que l'effectif ne compte pas. **Contrôle** : en 2020, le salaire moyen "
+        "brut, contributions comprises, de l'INS, multiplié par 12 et par le nombre d'agents, "
+        "représente 96,6 % de la masse du tableau 16.9 à l'Éducation et 94,0 % à l'Enseignement "
+        "supérieur [@ins-fonction-publique-2021, tableau 25]. **Réserve de "
+        "périmètre** : les rémunérations de l'Enseignement supérieur comprennent celles de la "
+        "recherche en 2003 et 2004 ; en 2006, 2009, 2020, 2022 et 2023, la part de la recherche "
+        "dans ces rémunérations n'est pas établie ; elle n'en est pas déduite. Les années absentes "
+        "du tableau 16.9 (2013, 2018, 2019, 2021) ne sont pas reliées."
+    ),
+)
+```
+
+- **La rémunération par agent du ministère.** Rapportée aux agents de la fonction publique du ministère, la masse salariale de l'Éducation représente 32,3 milliers de dinars de 2023 par agent en 2015, 37,1 milliers en 2020 et 31,1 milliers en 2023 ; celle de l'Enseignement supérieur, 42,8, 46,5 et 44,2 milliers, la part de la recherche n'y étant pas établie en 2020 et 2023. Ce sont des chiffres provisoires [@ins-annuaire-statistique; @ins-fonction-publique-2021; @ins-fonction-publique-2025]. Les enseignants forment de 75,5 % à 77,3 % des agents en fonction au ministère de l'Éducation à la fin des années 2012 à 2015 [@budget-men-2013, p. 12; @budget-men-2014, p. 23; @budget-men-2015, p. 22; @budget-men-2016, p. 22] ; cette répartition n'est pas établie ici pour les années suivantes. <!-- RECHERCHE r-budget-missions-education-effectifs-2018-2026 : fascicules budgétaires par mission 2018-2026, moyens humains par programme (voir docs/recherches.yml) -->
+- **Enseignants et rémunération moyenne.** Le nombre d'enseignants en équivalent temps plein, l'effectif des vacataires du supérieur et la rémunération versée aux seuls enseignants ne sont pas publiés dans les sources citées ici ; la rémunération moyenne d'un enseignant ne s'en déduit donc pas. <!-- RECHERCHE r-superieur-vacataires-etp : effectif des vacataires du supérieur public et enseignants en équivalent temps plein (voir docs/recherches.yml) -->
+- **Les séries sont révisées d'une édition à l'autre.** Les enseignants du second cycle en 2009-2010 valent 75 104 dans l'édition 2005-2009, 72 194 dans l'édition 2006-2010 ; pour le supérieur, l'édition 2016-2020 paraît décalée d'une année par rapport aux suivantes. La dernière édition est retenue.
+- **Le premier cycle et le supérieur augmentent, le second cycle recule depuis 2015-2016** : de 75 056 enseignants à 70 695 en 2023-2024, quand le premier cycle passe de 64 944 à 72 213.
+- **Les suppléants.** La loi de finances pour 2026 prévoit la régularisation de la situation des instituteurs et professeurs suppléants en fonction dans les établissements éducatifs avant 2008 et 2006, et leur intégration au ministère de l'Éducation (édition arabe) [@lf-2026, art. 107, p. 4258]. <!-- TODO (documentaliste) : relire l'article d'effet de la loi n° 2025-17 pour dater l'art. 107. -->
+
+:::: {.chronologie-repliable titre="Enseignants du public par cycle : effectifs annuels, 1995-1996 à 2023-2024"}
+
+| Année scolaire | Premier cycle<br>de la base | Second cycle<br>et secondaire | Supérieur | Édition (p.) |
+|---|---:|---:|---:|---|
+| 1995-1996 | 59 432 | 30 170 | 6 481 | 1995-2001 (53) |
+| 1996-1997 | 59 623 | 33 591 | 6 641 | 1995-2001 (53) |
+| 1997-1998 | 59 708 | 36 528 | 7 263 | 1995-2001 (53) |
+| 1998-1999 | 59 877 | 39 148 | 8 261 | 1995-2001 (53) |
+| 1999-2000 | 60 333 | 42 377 | 9 370 | 1999-2003 (57) |
+| 2000-2001 | 60 072 | 45 803 | 10 293 | 2000-2004 (57) |
+| 2001-2002 | 59 884 | 49 331 | 11 412 | 2001-2005 (57) |
+| 2002-2003 | 59 245 | 51 738 | 12 937 | 2002-2006 (57) |
+| 2003-2004 | 58 761 | 55 717 | 14 700 | 2003-2007 (55) |
+| 2004-2005 | 58 342 | 59 132 | 16 671 | 2004-2008 (55) |
+| 2005-2006 | 58 281 | 62 528 | 16 919 | 2005-2009 (47) |
+| 2006-2007 | 57 739 | 68 147 | 18 117 | 2006-2010 (47) |
+| 2007-2008 | 58 716 | 71 386 | 18 608 | 2007-2011 (49) |
+| 2008-2009 | 59 011 | 71 880 | 20 049 | 2008-2012 (49) |
+| 2009-2010 | 58 567 | 72 194 | 18 993 | 2008-2012 (49) |
+| 2010-2011 | 57 349 | 72 454 | 21 552 | 2010-2014 (43) |
+| 2011-2012 | 58 833 | 72 895 | 22 411 | 2011-2015 (43) |
+| 2012-2013 | 59 786 | 73 490 | 22 878 | 2012-2016 (43) |
+| 2013-2014 | 62 484 | 74 193 | 22 830 | 2013-2017 (43) |
+| 2014-2015 | 63 303 | 74 283 | 22 561 | 2014-2018 (43) |
+| 2015-2016 | 64 944 | 75 056 | 22 648 | 2015-2019 (43) |
+| 2016-2017 | 64 000 | 74 249 | 22 846 | 2016-2020 (43) |
+| 2017-2018 | 63 642 | 73 665 | 22 343 | 2017-2021 (43) |
+| 2018-2019 | 63 228 | 72 887 | 21 880 | 2018-2022 (43) |
+| 2019-2020 | 65 981 | 73 979 | 22 086 | 2019-2023 (43) |
+| 2020-2021 | 68 871 | 73 474 | 23 016 | 2019-2023 (43) |
+| 2021-2022 | 71 161 | 73 795 | 23 489 | 2019-2023 (43) |
+| 2022-2023 | 73 672 | 73 567 | 23 526 | 2019-2023 (43) |
+| 2023-2024 | 72 213 | 70 695 | 23 545 | 2019-2023 (43) |
+
+: Enseignants de l'enseignement public par cycle, 1995-1996 à 2023-2024 {#tbl-educ-enseignants}
+
+Source : [@ins-annuaire-statistique], chapitre « Enseignement et culture » (chapitre 3 avant 2005), tableau des données générales de l'enseignement ; sources citées : ministère de l'Éducation, ministère de l'Enseignement supérieur et de la Recherche scientifique. Chaque année scolaire est prise dans l'édition la plus récente qui la contient. Le préscolaire et la formation professionnelle ne sont pas dans ce tableau.
+
+::::
+
+## La dépense des ménages {#sec-educ-depense-menages}
+
+Selon l'enquête nationale de l'INS sur le budget, la consommation et le niveau de vie des ménages, un Tunisien dépense pour l'enseignement **84 dinars par an en 2015 et 81 dinars en 2021**, soit 139 puis 96 dinars de 2023 ; c'est **2,2 % puis 1,5 % de sa dépense**, le [coefficient budgétaire](#g-coefficient-budgetaire) de l'enseignement (@tbl-educ-menages).
+
+| Année | Dépense par personne et par an<br>(dinars courants) | Dépense par personne et par an<br>(dinars de 2023) | Coefficient budgétaire<br>(% de la dépense) |
+|---|---:|---:|---:|
+| 2015 | 84 | 139 | 2,2 % |
+| 2021 | 81 | 96 | 1,5 % |
+
+: Dépense des ménages pour l'enseignement, par personne et par an, 2015 et 2021 {#tbl-educ-menages}
+
+Source : [@ins-ebcnv-2021-communique], tableau « Structure de la dépense moyenne par personne et par an 2015-2021 », ligne « Education, enseignement » ; dinars de 2023 : indice des prix à la consommation [@bct-ra; @ins-annuaire].
+
+La ventilation de cette dépense par poste — frais de scolarité du privé, cours particuliers, fournitures — et par décile n'est pas publiée dans le communiqué de l'enquête ; le volume détaillé qui la donnerait n'est pas identifié ici. <!-- RECHERCHE r-educ-ebcnv-volume-depenses : volume détaillé des enquêtes 2015 et 2021 sur le budget des ménages, dépense d'éducation par poste et par décile (voir docs/recherches.yml) -->
+
+## Ce que rapportent l'UNESCO-UIS et la Banque mondiale {#sec-educ-depense-rapports}
+
+Cette section présente des **rapports extérieurs** : leurs chiffres ne sont pas budgétaires et ne se lisent pas sur le même plan que ceux des sections précédentes. Chacun est donné avec sa méthode.
+
+### L'UNESCO-UIS, par la Banque mondiale {#sec-educ-depense-rapports-uis}
+
+**Méthode.** L'Institut de statistique de l'UNESCO (UIS) mesure la dépense des administrations publiques — centrales, régionales et locales — pour l'éducation, courante, en capital et en transferts, y compris les dépenses financées par des transferts reçus de l'étranger. Son périmètre est donc plus large que celui des deux ministères de @sec-educ-depense-vue : il comprend les collectivités et les transferts, dont les bourses. Les séries sont celles que diffusent les *World Development Indicators* de la Banque mondiale, dans leur version du 8 octobre 2026 [@wb-wdi, SE.XPD.TOTL.GD.ZS, SE.XPD.TOTL.GB.ZS].
+
+Selon l'UIS, la dépense publique d'éducation représente entre 4,9 % et 7,3 % du PIB de 1980 à 2023 — 6,73 % en 2023 —, et entre 17,3 % et 27,8 % des dépenses des administrations publiques de 1992 à 2025 — 27,83 % en 2004, 17,28 % en 2025 (@fig-educ-uis).
+
+```{python}
+#| label: fig-educ-uis
+#| fig-cap: "Dépense publique d'éducation selon l'UNESCO-UIS, en part du PIB (1980-2023) et des dépenses publiques (1992-2025), avec la part budgétaire de ce chapitre ; dépense par élève en part du PIB par habitant (1997-2015)."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import fig_educ_depense as fd
+fd.onglets(
+    fd.vues_uis(), "fig_educ_depense_uis",
+    caption=("Dépense publique d'éducation selon l'UNESCO-UIS (rapport extérieur), en part du PIB et "
+             "des dépenses publiques, avec la part budgétaire des ministères superposée, et dépense "
+             "par élève en part du PIB par habitant"),
+    source=("Sources : UNESCO-UIS par [@wb-wdi], indicateurs SE.XPD.TOTL.GD.ZS, SE.XPD.TOTL.GB.ZS, "
+            "SE.XPD.PRIM.PC.ZS, SE.XPD.SECO.PC.ZS, SE.XPD.TERT.PC.ZS ; part budgétaire : "
+            "[@ins-annuaire-statistique], PIB en base 2015 (2010-2014 rétropolés par l'INS)"),
+    note_lecture=(
+        "Deux familles de chiffres, distinguées par la couleur et le marqueur : en gris, le "
+        "**rapport extérieur** de l'UIS (administrations publiques, transferts compris) ; en bleu, la "
+        "**part budgétaire** de ce chapitre (ministères de l'Éducation et de l'Enseignement "
+        "supérieur, hors recherche ; recherche de gestion comprise dans le supérieur depuis 2019, "
+        "non isolable, d'où la coupure entre 2018 et 2019), dont le PIB est en base 2015, 2010-2014 "
+        "rétropolés par l'INS. Les "
+        "périmètres diffèrent : l'écart entre les deux courbes n'est pas une erreur de l'une ou de "
+        "l'autre. Les années sans point manquent à la source ; les zéros que la source porte pour "
+        "1981-1986, 1990 et 1991 en part des dépenses publiques, qui notent une absence de donnée, "
+        "sont écartés. La troisième vue donne la dépense par élève en part du PIB par habitant."
+    ),
+)
+```
+
+- **Des niveaux voisins, des périmètres différents.** En 2022, l'UIS donne 19,97 % des dépenses publiques, la part budgétaire de ce chapitre 19,92 % des dépenses de l'État ; en part du PIB, 6,80 % contre 6,21 %. Les deux séries ne se somment ni ne se substituent.
+- **Des années manquantes.** La part du PIB manque pour 1987-1989, 1998, 2011, 2013-2014 et 2016-2018 ; la part des dépenses publiques, pour 1998, 2011, 2013-2014 et 2016-2018.
+- **La dépense par élève**, rapportée au PIB par habitant, n'est donnée que de 1997 à 2015, avec des trous : selon l'UIS, elle passe de 14,9 % à 17,4 % au primaire (1997-2008), de 30,8 % à 52,4 % au secondaire (1997-2015), et de 94,2 % à 54,7 % au supérieur (1997-2015) [@wb-wdi, SE.XPD.PRIM.PC.ZS, SE.XPD.SECO.PC.ZS, SE.XPD.TERT.PC.ZS].
+
+### La Banque mondiale, 1995 : la répartition de la dépense d'éducation en 1990 {#sec-educ-depense-rapports-bm1995}
+
+**Méthode.** Dans les annexes de son rapport de 1995 sur la pauvreté, la Banque mondiale répartit la dépense publique d'éducation de 1990 entre les ménages. Les élèves et étudiants du public sont identifiés par les inscriptions relevées par l'enquête de l'INS de 1990 sur le budget et la consommation des ménages ; ces inscriptions sont multipliées par « la charge courante moyenne par programme, nette d'amortissement » ; les ménages sont classés par décile de dépense de consommation par habitant. C'est un coût moyen par programme, et l'enseignement privé est hors champ [@bm-1995-pauvrete-annexes, annexe D.1, p. 1].
+
+Selon ce rapport, la subvention d'éducation est en moyenne de « 71 DT » par habitant et par an, tous programmes confondus ; elle est d'« environ 50 DT » pour les 10 % les plus pauvres et va « jusqu'à environ 100 DT » pour les 10 % les plus riches. Au primaire, elle s'élève « en moyenne à 40 DT par habitant parmi les 3 % les plus pauvres », et à « moins de 20 DT » pour le décile supérieur ; au secondaire et au supérieur, les 10 % les plus riches perçoivent des subventions « trois et vingt fois plus importantes » que les 10 % les plus pauvres [@bm-1995-pauvrete-annexes, annexe D.1, p. 1-2]. Ces chiffres valent pour 1990, en dinars de 1990 ; ils ne se comparent pas aux montants budgétaires des sections précédentes.
+
+## Ce qu'établit une étude d'incidence : l'enquête de 2010 {#sec-educ-depense-evaluations}
+
+La série des boursiers selon le budget du ministère est au [chapitre des aides](./_aides.html#sec-educ-aides-donnees).
+
+Cette section présente une **évaluation économique** : une étude d'incidence, qui impute des dépenses publiques aux ménages d'une enquête. Ses chiffres ne sont pas budgétaires.
+
+**Méthode.** Jouini, Lustig, Moummi et Shimeles appliquent à la Tunisie la méthode de l'initiative *Commitment to Equity* (CEQ) [@jouini-lustig-moummi-shimeles-2017-ceq38]. Ils partent de l'enquête de l'INS de 2010 sur le budget et la consommation des ménages, qui identifie les boursiers mais ne donne pas le montant de leur bourse. Le montant par bénéficiaire est le total administratif des bourses divisé par le nombre de bénéficiaires de l'enquête, puis mis à l'échelle du revenu disponible des comptes nationaux ; l'enseignement supérieur est imputé au coût moyen par étudiant tiré du budget du ministère [@jouini-lustig-moummi-shimeles-2017-ceq38, p. 16].
+
+Selon l'étude, les boursiers sont 98 533 en 2010, d'après un rapport de 2010 du ministère de l'Enseignement supérieur qu'elle cite, pour un total de bourses équivalent à 56 millions de dinars [@jouini-lustig-moummi-shimeles-2017-ceq38, p. 12]. Elle conclut que la dépense de l'enseignement supérieur est « progressive in relative terms only » [@jouini-lustig-moummi-shimeles-2017-ceq38, p. 22].
+
+Le budget du ministère de l'Enseignement supérieur compte, lui, 113 678 boursiers en 2009-2010 et 113 379 en 2010-2011 [@budget-mesrs-2017, p. 33]. L'écart avec les 98 533 boursiers de l'étude n'est pas expliqué par les deux sources.
+
+<!-- TODO (documentaliste) : confirmer sur un réalisé le doublement de la dépense de l'Éducation entre 2022 et 2023 (édition 2019-2023, chiffres non définitifs) ; vérifier sur les budgets détaillés des ministères si les variations des dépenses de personnel et de « biens et services » de 2016 à 2020 sont des reclassements entre natures. -->
+
+<!-- TODO (documentaliste) : date du premier budget voté par programmes : établir. -->

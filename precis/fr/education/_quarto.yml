@@ -1,0 +1,58 @@
+project:
+  type: book
+  output-dir: public
+
+lang: fr
+
+book:
+  title: "L'éducation et la formation"
+  author: "Mahdi Ben Jelloul"
+  repo-url: https://github.com/benjello/precis-socio-fiscal-tunisie/
+  repo-subdir: precis/fr/education
+  repo-branch: master
+  repo-actions: [edit, issue]
+  downloads: [pdf]
+  page-footer:
+    center: "[Accueil](../index.html) · [À propos et contribuer](../a-propos.html) · [Le PIB et ses changements de base](../annexe-pib.html) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
+  chapters:
+    - index.qmd
+    - _histoire.qmd
+    - _scolaire.qmd
+    - _formation_professionnelle.qmd
+    - _superieur.qmd
+    - _aides.qmd
+    - _depense.qmd
+  appendices:
+    - _glossaire.qmd
+
+bibliography:
+  - references.json
+  - ../references.json
+  - ../references.bib
+csl: ../precis.csl
+
+format:
+  html:
+    theme: [cosmo, ../../legendes.scss]
+    css: schema-education.css
+    include-after-body:
+      - _glossaire.infobulles.html
+      - ../../legendes.html
+    fig-cap-location: top
+    tbl-cap-location: top
+    number-depth: 4
+    toc: true
+    toc-depth: 4
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    number-depth: 4
+
+crossref:
+  tbl-title: "Tableau"
+  fig-title: "Figure"
+  tbl-prefix: "tableau"
+  fig-prefix: "figure"
+  title-delim: "\u00a0—"

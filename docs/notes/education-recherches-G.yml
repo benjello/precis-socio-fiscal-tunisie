@@ -1,0 +1,50 @@
+- id: r-educ-fp-bac-pro-regime
+  objet: arrêté du ministre de l'éducation fixant le régime de l'examen du baccalauréat professionnel (loi n° 2008-10, art. 60)
+  ou: [precis/fr/education/_formation_professionnelle.qmd#sec-educ-fp-lois]
+  requetes:
+    titres_fts: ['"baccalaureat professionnel"', '"البكالوريا المهنية"']
+    titres_like: [baccalaureat professionnel]
+    iort_ar: [البكالوريا المهنية]
+    plein_texte: []
+    depuis: 2008-02-15
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "FTS et LIKE (français) sur titre et objet, LIKE arabe « البكالوريا المهنية », au 2 octobre 2026 : aucune notice ; plein texte non parcouru."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-educ-fp-cahier-charges-prive-2008
+  objet: arrêté approuvant le cahier des charges des établissements privés de formation professionnelle pris pour l'art. 39 de la loi n° 2008-10 (remplaçant le cahier du 12 septembre 2001)
+  ou: [precis/fr/education/_formation_professionnelle.qmd#sec-educ-fp-prive]
+  requetes:
+    titres_fts: ['"etablissements prives de formation professionnelle"', '"cahier des charges" AND formation']
+    titres_like: [cahier des charges%formation professionnelle]
+    iort_ar: [مؤسسات التكوين المهني الخاصة, كراس الشروط]
+    plein_texte: []
+    depuis: 2008-02-15
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "LIKE et FTS (français) au 2 octobre 2026 : seul le décret gouvernemental n° 2016-620 et les arrêtés « chèque formation » ; LIKE arabe « مؤسسات التكوين المهني الخاصة », « كراس الشروط » avec « التكوين المهني » : aucune notice. Plein texte non parcouru."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-educ-fp-frais-inscription-public
+  objet: texte fixant les frais d'inscription et d'assurance des apprenants des établissements publics de formation professionnelle (loi n° 2008-10)
+  ou: [precis/fr/education/_formation_professionnelle.qmd#sec-educ-fp-lois]
+  requetes:
+    titres_fts: ['"frais d inscription" AND formation']
+    titres_like: [frais d'inscription%formation professionnelle]
+    iort_ar: [معاليم التسجيل, التكوين المهني]
+    plein_texte: []
+    depuis: 1993-02-19
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "FTS « frais d inscription » AND formation : seuls des frais de concours internes de la fonction publique (2015, 2019, 2023, 2025) ; LIKE arabe « معاليم التسجيل » avec « التكوين » : un arrêté du 17 juin 2019 (jeunesse et sport et finances, cycles de formation et recyclage, intitulé arabe tronqué, non lu, probablement hors objet). Plein texte non parcouru."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun

@@ -1,0 +1,34 @@
+- id: r-superieur-vacataires-etp
+  objet: effectif des enseignants vacataires de l'enseignement supérieur public, enseignants en équivalent temps plein (supérieur et scolaire) et rémunération versée aux seuls enseignants
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-personnels]
+  requetes:
+    plein_texte: [vacataire, contractuel, plein temps, équivalent temps plein, العرضيون, الأعوان المتعاقدون والعاملون بالحصة]
+    depuis: 2004-09-01
+  periode:
+    jusqu_au: 2026-10-17
+    motif: le temps plein est connu depuis 2004-2005 (Annuaire statistique de l'INS) ; l'objet est le temps partiel, l'équivalent temps plein et la masse salariale par corps sur la même période
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [web, corpus_local]
+    couverture: "Annuaire statistique de l'INS, 22 éditions (« vacataire », « contractuel », « plein temps ») : seul le temps plein (statutaires, contractuels) est publié ; budgets MESRS 2013-2017 : paragraphe 031 « الأعوان المتعاقدون والعاملون بالحصة » en dinars, sans effectif, non sommé, et aucune ventilation de la rémunération par corps ; web : « Tunisie enseignement supérieur en chiffres enseignants permanents contractuels vacataires 2022-2023 mes.tn », « \"المدرسون الجامعيون\" القارون المتعاقدون العرضيون إحصائيات التعليم العالي تونس 2023-2024 », « Tunisia teachers full-time equivalent UIS data primary secondary tertiary » : aucune publication tunisienne atteinte ; navigateur de données UIS non interrogé. Note : docs/notes/education-effectifs-personnels-2026-10-17.md, § 2.4 et § 3.3"
+    couvert_jusqu_au: 2026-10-17
+    resultat: aucun
+  a_faire: [obtenir « L'enseignement supérieur et la recherche scientifique en chiffres » (mes.tn, éditions annuelles), interroger le navigateur de données UIS (enseignants, ETP, Tunisie), sommer le paragraphe 031 des budgets MESRS 2013-2017 par sous-programme]
+- id: r-budget-missions-education-effectifs-2018-2026
+  objet: fascicules budgétaires par mission (Éducation, Enseignement supérieur et recherche scientifique, Formation professionnelle et emploi) des lois de finances 2018 à 2026, avec la rubrique des moyens humains (« الوسائل البشرية » ou « الموارد البشرية ») par programme et par corps
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-personnels]
+  requetes:
+    plein_texte: [الوسائل البشرية, الموارد البشرية, إطار التدريس, عدد الأعوان حسب البرامج]
+    depuis: 2017-12-01
+  periode:
+    jusqu_au: 2026-10-17
+    motif: l'entrepôt local s'arrête aux budgets 2017
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [web, corpus_local]
+    couverture: "corpus local : budgets par ministère 2013-2017 seulement (ancien portail du ministère des Finances) ; web : « مشروع ميزانية مهمة التربية 2024 عدد الأعوان حسب البرامج إطار التدريس finances.gov.tn » et « \"مشروع القدرة على الأداء\" مهمة التربية 2023 pdf \"الموارد البشرية\" » : presse et procès-verbal de la commission des finances de l'ARP du 8 janvier 2024, sans effectifs ; https://www.finances.gov.tn/ar/budget-de-letat : 404 ; captures Wayback du nouveau portail non essayées ; site de l'ARP (rapports des commissions sur les missions) non parcouru. Note : docs/notes/education-effectifs-personnels-2026-10-17.md, § 6"
+    couvert_jusqu_au: 2026-10-17
+    resultat: aucun
+  a_faire: [parcourir la page « Loi de Finance et rapports annexes » de gbo.tn et finances.gov.tn (rubrique budget, projets et rapports annuels de performance) et leurs captures Wayback, mutualiser avec r-educ-cout-unitaire-ministere-2021, chercher sur arp.tn les rapports de la commission des finances sur les missions Éducation et Enseignement supérieur, lire les budgets MESRS 2014 (jd648) et 2015 (jd853) à l'image pour la page des moyens humains]

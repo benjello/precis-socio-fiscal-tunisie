@@ -1,0 +1,90 @@
+- id: r-bourse-montants-1982
+  objet: arrêté du 20 août 1982 fixant les montants mensuels de la bourse nationale d'études supérieures des premier et deuxième cycles et de la bourse nationale de spécialisation, connu par le visa de l'arrêté du 23 août 1990 (bourse en République fédérale d'Allemagne, JORT n° 55 de 1990, p. 1148)
+  ou: [precis/fr/education/_aides.qmd#sec-aides-bourses-universitaires]
+  requetes:
+    titres_fts: [bourse OR bourses]
+    titres_like: ['%bourse%']
+    plein_texte: [bourse, montants mensuels de la bourse, bourse nationale]
+    depuis: 1982-08-20
+  periode:
+    jusqu_au: 1990-08-28
+    motif: texte antérieur à l'arrêté du 23 août 1990 qui le vise (JORT n° 55 du 28-31 août 1990)
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas]
+    couverture: "jort_cache : FTS « bourse OR bourses » sur les notices publiées de 1976 à 1987 dont l'intitulé porte « superieur » ou « nationale », et LIKE « %bourse% » sur 1982 : de 1979 à juillet 1986, aucune notice sur la bourse nationale hors celles du ministère de l'Agriculture ; corpus local : fascicules français n° 55, 56, 57 et 58 de 1982 océrisés et parcourus (« bourse ») : rien ; n° 59 à la fin de 1982 non lus"
+    couvert_jusqu_au: 1990-08-28
+    resultat: aucun
+  a_faire: [océriser et lire les fascicules français de 1982 à partir du n° 59, lire les fascicules arabes correspondants si l'édition française manque]
+- id: r-bourse-seuils-revenu-1986-2005
+  objet: décisions ou arrêtés annuels fixant le seuil de revenu des parents pour la bourse nationale et le prêt universitaire en Tunisie (décret n° 86-688, art. 4 ; arrêté du 28 juillet 1986, art. 3), pour les années universitaires 1986-1987 à 1989-1990 et 1991-1992 à 2004-2005
+  ou: [precis/fr/education/_aides.qmd#sec-aides-bourses-universitaires]
+  requetes:
+    titres_fts: [seuil AND (bourse OR pret), bourse OR bourses]
+    titres_like: ['%revenus annuels%']
+    depuis: 1986-07-18
+  periode:
+    jusqu_au: 2006-01-17
+    motif: à partir de l'année universitaire 2005-2006 le plafond est publié chaque année (arrêté du 6 janvier 2006, JORT n° 5 du 17 janvier 2006) ; le régime du décret n° 86-688 cesse en 2011-2012
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "jort_cache seulement : FTS « bourse OR bourses » sur toutes les notices de l'enseignement supérieur de 1956 à 2026 ; LIKE « %revenus annuels% » et FTS « seuil AND (bourse OR pret) » sur les notices publiées de 1991 à 2006. Trouvés : seuil 1990-1991 (arrêté du 21 août 1990), revenus pour le prêt à l'étranger 1991-1992 (arrêté du 7 avril 1992, non lu), puis les arrêtés de 2006 à 2009. L'arrêté de 1986 confie le seuil à une « décision » du ministre, qui peut ne pas paraître au Journal officiel ; aucun plein texte"
+    couvert_jusqu_au: 2006-01-17
+    resultat: aucun
+  a_faire: [lire l'arrêté du 7 avril 1992 (JORT n° 23 de 1992, p. 464) sur le prêt à l'étranger, chercher les décisions annuelles dans les rapports et guides du ministère de l'Enseignement supérieur et des offices des œuvres universitaires, hors Journal officiel]
+- id: r-oeuvres-prix-repas-lit-avant-2016
+  objet: texte fixant la contribution des étudiants au repas et au lit universitaires avant les deux arrêtés du 18 janvier 2016 (200 millimes le repas, 10 dinars par mois le lit)
+  ou: [precis/fr/education/_aides.qmd#sec-aides-restauration-logement]
+  requetes:
+    titres_like: ['%oeuvres universitaires%', '%œuvres universitaires%', '%restaurant%universitaire%', '%restauration universitaire%', '%hebergement universitaire%', '%foyers universitaires%', '%cites universitaires%', '%prix du repas%', '%prix des repas%', '%ticket%', '%logement des etudiants%', '%redevance%heberg%', '%contribution financiere%restauration%', '%tarif%heberg%']
+    iort_ar: [الإطعام الجامعي, الاطعام الجامعي, السكن الجامعي, المبيتات الجامعية, الأكلة, معلوم الإيواء]
+    depuis: 1970-03-10
+  periode:
+    jusqu_au: 2016-01-26
+    motif: les arrêtés du 18 janvier 2016 (JORT n° 8 du 26 janvier 2016) fixent la contribution ; l'objet est le texte qui les précède
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: "jort_cache : motifs LIKE et termes arabes sur les intitulés de 1956 à 2026, sans plein texte ; corpus local : lus, sans montant de contribution, le règlement intérieur des centres d'hébergement et de restauration universitaires du 20 juin 1974 (JORT n° 44 de 1974, p. 1447-1448 ; p. 1449 non lue), le règlement intérieur des établissements des œuvres universitaires du 5 octobre 2009 (son art. 6 renvoie le loyer « aux réglementations en vigueur ») et le décret n° 2014-4200 (art. 18 : « contributions des étudiants » en recette des offices, sans montant). Non lus : décrets d'organisation n° 80-1001, 90-1122, 95-1953, 95-1954, 95-2281"
+    couvert_jusqu_au: 2016-01-26
+    resultat: aucun
+  a_faire: [lire la p. 1449 du JORT n° 44 de 1974, lire les décrets n° 80-1001 (JORT n° 47 de 1980) et n° 95-2281 et leurs modificatifs, chercher les décisions des offices et les documents budgétaires qui citent un prix du repas ou du lit]
+- id: r-bourse-hebergement-30d-avant-2016
+  objet: texte portant de 20 à 30 dinars par mois la bourse versée aux boursiers qui remplissent les critères d'hébergement sans être hébergés, entre l'arrêté du 20 août 1992 (20 dinars) et l'arrêté du 18 janvier 2016 (30 dinars) ; le budget 2013 du ministère de l'Enseignement supérieur annonce les 30 dinars « à partir de 2013 »
+  ou: [precis/fr/education/_aides.qmd#sec-aides-restauration-logement]
+  requetes:
+    titres_fts: ['"bourse supplementaire" OR "bourse d hebergement"']
+    titres_like: ['%bourse supplementaire%', '%bourse d''hebergement%']
+    iort_ar: [منحة السكن]
+    depuis: 1992-09-01
+  periode:
+    jusqu_au: 2016-01-26
+    motif: l'arrêté du 18 janvier 2016 (JORT n° 8 du 26 janvier 2016) fixe la bourse d'hébergement à 30 dinars ; l'objet est le texte qui le précède
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "jort_cache : intitulés publiés de 1992 au 2 octobre 2026 ; trouvés seulement l'arrêté du 20 août 1992 et son pendant pour l'école supérieure des postes et des télécommunications (3 décembre 1992) ; aucun plein texte, ni des fascicules de 2012-2013 ni des lois de finances"
+    couvert_jusqu_au: 2016-01-26
+    resultat: aucun
+  a_faire: [chercher en plein texte « bourse d'hébergement » et « منحة السكن » dans les fascicules de 2012 et 2013, lire l'arrêté du 3 décembre 1992 (JORT n° 83 de 1992, p. 1582-1583)]
+- id: r-bourse-montants-apres-2017
+  objet: arrêté fixant les montants mensuels de la bourse nationale d'études universitaires en Tunisie au-delà de l'année universitaire 2017-2018, dernière colonne de l'arrêté du 4 décembre 2015
+  ou: [precis/fr/education/_aides.qmd#sec-aides-bourses-universitaires]
+  requetes:
+    titres_fts: ['"bourse nationale" OR "bourses nationales"']
+    titres_like: ['%montants de la bourse nationale%', '%montants des bourses nationales%', '%مقادير المنحة%', '%مقدار المنحة الوطنية%']
+    iort_ar: [مقادير المنحة, مقدار المنحة الوطنية]
+    depuis: 2015-12-08
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "jort_cache : intitulés publiés de 2016 au 2 octobre 2026 ; deux réponses, hors sujet (décrets gouvernementaux n° 2019-216 et 2019-345, primes d'enseignants) ; aucun plein texte ; fascicules inconnus de la base (outillage-sources § 1 f) non parcourus"
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte des fascicules de 2016 à 2026 sur « montant mensuel de la bourse nationale » et « مقدار المنحة الوطنية », relancer avec --sonder-pist]
