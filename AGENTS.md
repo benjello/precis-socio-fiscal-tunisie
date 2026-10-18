@@ -50,7 +50,7 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   paramètres :
   1. le paramètre commence à sa première date **sourcée** — jamais une valeur antérieure sans
      référence ;
-  2. sa `note` dit, en une phrase : « Série incomplète : états antérieurs à AAAA non versés. » ;
+  2. ses `metadata.notes` disent, en une phrase : « Série incomplète : états antérieurs à AAAA non versés. » ;
   3. une ligne de `docs/notes/backlog-modele.md` énumère les états manquants, leurs textes et leur
      localisation (corpus, OCR, à obtenir) ;
   4. le volume garde, dans ses registres écrits à la main, l'histoire antérieure déjà sourcée ; le
