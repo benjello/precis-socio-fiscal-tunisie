@@ -50,6 +50,7 @@ BOOKS = [
     "compensation",
     "entreprises_publiques",
     "sante",
+    "education",
 ]
 
 LANGS = ("fr", "ar")

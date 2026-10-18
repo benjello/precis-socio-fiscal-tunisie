@@ -2006,6 +2006,68 @@ mesure ni les soins réalisés ni les revenus des médecins.
   lors de cette livraison. Le futur travail sur l'éducation suivra la même question des
   services et transferts non monétaires ; son livre et ses textes restent à documenter.
 
+## L'éducation et la formation — volume XII, première rédaction le 17 octobre 2026
+
+Première version en français seulement : présentation, histoire, enseignement scolaire, formation professionnelle
+initiale, enseignement supérieur, aides aux élèves et aux étudiants, dépense (`precis/fr/education/`). Plan et décisions : `education-plan-2026-10-17.md` (Q1 à Q11, une seule ouverte).
+Notes documentaires : `education-histoire`, `education-aides-scolaires`, `education-aides-universitaires`,
+`education-depense` (2026-10-17) et leurs fiches `education-recherches-{A,B,C,D}.yml` (fusionnées dans
+`recherches.yml`).
+
+- [ ] **Textes lus le 18 octobre 2026 (chapitres 2 et 4), à relire à la revue** : décret n° 96-682 (1996), arrêtés du
+  3 avril 2013, du 29 juillet 2019 (deux, édition arabe seule), du 28 avril 2021 et du 30 avril 1994 (trois), arrêtés
+  conjoints de 2004 et 2008 sur la contribution aux frais d'examen, arrêté du 9 mai 2008 (commissions des établissements
+  privés), décret n° 2008-29 ; loi n° 2008-19 lue en entier ; décrets n° 2012-1232, 2013-1469, 2017-1196 et
+  n° 2008-2716 (art. 1 à 23). Lectures du second passage : décret n° 2004-2437 (vie scolaire, à l'image), décret n° 2009-2139 (classification des qualifications), décrets n° 94-1600, 2007-4147 et clause d'abrogation du décret gouvernemental n° 2016-620 (formation professionnelle). Lectures versées dans `education-scolaire`, `education-superieur` et `education-formation-professionnelle`. Les pages des
+  arrêtés de 1994, 2004, 2013 et 2021 de l'index `jort_cache.db` sont décalées d'une page ; le fascicule n° 68 de 2004
+  et le n° 86 de 2004 ont une couche de texte décalée (police), le second sans texte après la p. 2955.
+- [ ] **Règle de rédaction (18 octobre 2026)** : le texte rendu ne dit plus les incertitudes (« traduction de travail »,
+  « seul l'intitulé est connu ici ») ; elles sont des TODO. Les lignes de tableau sans contenu établi ont été retirées
+  des chapitres 2, 3, 4, 5 et de l'histoire ; leur liste est dans un TODO de fin de chapitre, à relire pour les
+  rétablir. À aligner avec `AGENTS.md`, qui cite encore la formule « seul l'intitulé de ce texte est connu ici ».
+- [ ] **Arabophone** : faire relire les traductions de l'arabe (Constitution de 2022, décret-loi n° 2024-2, lois de
+  finances 2024 et 2026, arrêtés du 29 juillet 2019, décret gouvernemental n° 2019-656).
+- [ ] **Chapitres non commencés** : résultats (scolarisation, examens, abandon) et rapports et études (chap. 7 et 8
+  du plan) ; ils attendent les séries du ministère de l'Éducation (taux de scolarisation par âge, abandon) et les
+  rapports à obtenir ; « Ce qu'en dit l'économie » par dispositif ; version arabe.
+- [ ] **Q8, collectivités : à instruire par la lecture.** Les budgets des communes et des conseils régionaux (livre
+  des finances locales, « Budgets et comptes ») permettent-ils d'isoler une dépense d'éducation ? Fiche
+  `r-educ-collectivites-depense-education` ; décrets gouvernementaux n° 2020-52 et n° 2020-439
+  (nomenclature budgétaire des communes), repérés et non lus. Le chapitre de la dépense n'a aucune ligne
+  « collectivités » dans ses totaux et renvoie au livre des finances locales (art. 243 et 244 du code).
+- [ ] **Textes à lire à l'image** : liste au § 9 du plan (arrêtés de montants de bourses 1958-1978, textes de 1990 et
+  1992, décret n° 80-1001, arrêté de 1982, fascicules d'avant 1990, décrets de répartition des crédits,
+  budgets citoyens 2014-2018). Ticket proposé au § 9, à ouvrir par l'humain.
+- [ ] **Classement des réformes** (rupture, étape) : classement provisoire, avec l'autre lecture écrite
+  (2002, 2017, 2008 en formation initiale). LMD = rupture ; 1989 = étape (décision du 17 octobre 2026) ; à
+  confirmer à la revue.
+- [ ] **Références** : une quinzaine de textes connus par leur seul intitulé n'ont pas de clé
+  (`docs/notes/biblio-a-rapatrier.md`, « Clôture du 17/10/2026 ») ; `budget-mesrs-2013-gbo` désigne le fichier
+  non-GBO (à renommer) ; `loi-2009-32-restauration-formation` à promouvoir au fonds commun ; double clé de la
+  loi de finances pour 2019.
+- [ ] **Séries** : verser les 57 séries de `education-depense-series/` au catalogue de `tunisia-data`, puis repasser
+  les figures de la dépense à `figtools.series()` ; copier les données de la Banque mondiale (UIS) et le
+  communiqué de l'INS de `/tmp/education-ocr-D/` vers `tunisia-data` ; figures des boursiers et des
+  effectifs (F2, F3) à produire quand les séries existent.
+- [ ] **Recherche exclue de la dépense** (décision du 17 octobre 2026) : fondue dans l'enseignement supérieur en
+  gestion en 2002-2004 et depuis 2019 ; réserve de périmètre dite dans le texte, pas d'estimation ; la
+  fiche de plan § 4 et la note `education-depense` § 2.4 comptent encore la recherche dans le périmètre et
+  sont à mettre à jour.
+- [ ] **Coût par élève** : aucun publié (Q9) ; établir la source documentaire des trois coûts moyens de l'exercice
+  d'incidence de 2021 avant toute valeur.
+- [ ] **Renvois des livres voisins** : « Rémunérations publiques » ne traite aucun corps enseignant, ni la prime de
+  rentrée universitaire ; « Caisses » ne dit rien du prêt universitaire des caisses ; « Prestations sociales » :
+  figure des boursiers (Q4) et histoire de l'aide de rentrée avant 2020 ; « Entreprises publiques » : une ligne
+  de renvoi vers les offices ; « Fiscalité » : exonérations de l'enseignement privé (Q6).
+  « Le marché du travail » : la section `sec-mt-pe-fonds-formation` ne traite pas la formation continue des
+  salariés, que le chapitre de la formation professionnelle initiale de l'éducation lui renvoie (décision Q1) :
+  lacune à combler dans `marche_travail/_politiques_emploi.qmd`.
+- [ ] **Infobulles** : une vingtaine de liens du chapitre d'histoire vers les registres du chapitre scolaire
+  (`./_scolaire.html#r-educ-h-…`) n'affichent pas l'infobulle de la ligne (elle ne marche que dans la même
+  page) ; le lien ouvre bien la ligne. Limite connue du domicile unique entre fichiers.
+- [ ] **Chapitres suivants** : scolaire, formation professionnelle initiale, supérieur, résultats (scolarisation,
+  examens, abandon), rapports et études ; « Ce qu'en dit l'économie » par dispositif ; version arabe.
+
 ## Allègement du juridique et de l'administratif — chantier, non urgent (5 octobre 2026)
 
 Ligne éditoriale rappelée par l'humain : le précis vise l'**impact économique, distributif et budgétaire**, l'**évolution sur le temps long** et les **ruptures de réforme** ; on retient d'un texte sa **date, sa valeur et sa source**, sans les détails administratifs sans impact (modalités de déclaration, de recouvrement, procédures). Les chapitres déjà écrits en contiennent beaucoup (par exemple le recouvrement des impôts locaux dans le volume VII). Chantier à mener plus tard, **sans forcément réécrire le texte** : réduire la visibilité de ces sections (encadrés repliés, niveau de titre plus bas) ou les **repousser en annexe** du volume. Une passe par volume, à décider avec l'humain. Les nouveaux chapitres appliquent la règle dès leur rédaction.

@@ -1,0 +1,72 @@
+- id: r-educ-lois-reglement-tableaux-par-chapitre
+  objet: tableaux annexés aux lois portant règlement du budget de l'État (tableau n° 2, dépenses payées par chapitre), qui donneraient les dépenses exécutées des ministères de l'Éducation, de l'Enseignement supérieur et de la Formation professionnelle
+  ou: [precis/fr/education/_depense.qmd]
+  requetes:
+    titres_fts: ['"reglement du budget"']
+    titres_like: ['%reglement du budget%']
+    iort_ar: [غلق ميزانية الدولة, ختم ميزانية الدولة]
+    depuis: 1966-01-01
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache (FTS « reglement du budget » : 62 notices, lois de règlement des gestions 1954-55 à 2009 et 2017-2020 ; LIKE arabe « غلق ميزانية الدولة » : lois n° 2016-23 à 2016-25 pour 2010-2012, n° 2018-39 à 2018-41 et 2018-49 pour 2013-2016) jusqu''au 2 octobre 2026, dernière publication indexée. Texte lu au fascicule français du corpus local : JORT n° 97 de 2010 (loi n° 2010-56, gestion 2008) et n° 35 de 2024 (lois n° 2024-18 à 2024-21, gestions 2017 à 2020) ; les articles renvoient aux « tableaux n° 1 et 2 annexés », qui ne figurent pas dans le texte extrait du fascicule. Les fascicules des autres lois de règlement n''ont pas été ouverts. Aucun texte de règlement des gestions 2021 et suivantes à l''index.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - 'lire à l''image les pages des JORT n° 97 de 2010 et n° 35 de 2024 qui suivent les lois, pour confirmer que les tableaux annexés ne sont pas publiés'
+  - 'chercher les tableaux annexés hors JORT : projets de loi de règlement déposés à l''Assemblée, rapports de la Cour des comptes sur le règlement du budget'
+
+- id: r-educ-lois-reglement-2021-et-apres
+  objet: loi portant règlement du budget de l'État pour les gestions 2021 et suivantes
+  ou: [precis/fr/education/_depense.qmd]
+  requetes:
+    titres_fts: ['"reglement du budget"']
+    titres_like: ['%reglement du budget%', '%règlement du budget%']
+    iort_ar: [غلق ميزانية الدولة]
+    depuis: 2022-01-01
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, intitulés français (FTS) et arabes (LIKE « غلق ميزانية الدولة ») publiés après le 8 mars 2024 : aucune notice ; dernière loi de règlement indexée : n° 2024-21 (gestion 2020), JORT n° 35 du 7 mars 2024. Plein texte du corpus local non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - 'parcourir le plein texte des fascicules 2024-2026 du corpus local (terme « غلق ميزانية »)'
+
+- id: r-educ-cout-unitaire-ministere-2021
+  objet: publication du ministère de l'Éducation ou du ministère de l'Enseignement supérieur donnant le coût public par élève (primaire, secondaire) et par étudiant pour 2021, source déclarée des coûts unitaires de l'exercice d'incidence CEQ 2021
+  ou: [precis/fr/education/_depense.qmd]
+  requetes:
+    titres_fts: ['"cout de l eleve" OR "cout par eleve" OR "cout unitaire"']
+    iort_ar: [كلفة التلميذ, تكلفة التلميذ]
+    depuis: 2021-01-01
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, web]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : 0 notice pour la requête FTS et 0 pour les intitulés arabes (LIKE), toutes années confondues. Une recherche web (« Tunisie coût moyen d''un élève ministère de l''éducation 2021 dinars primaire secondaire كلفة التلميذ ») : ne rend que des estimations du coût de la scolarité pour les familles (FTDES 2021 rapporté par webdo.tn ; OTIC ; ODC), aucune publication ministérielle. Le classeur CEQ et son programme 09_Education.do ne citent ni document ni date. Sites des ministères non parcourus ; projets annuels de performance 2019-2023 non téléchargés.'
+    couvert_jusqu_au: 2026-10-17
+    resultat: aucun
+  a_faire:
+  - 'télécharger les projets et rapports annuels de performance (PAP, RAP) 2019-2023 des missions Éducation et Enseignement supérieur sur finances.gov.tn et y chercher un indicateur de coût par élève'
+  - 'demander aux auteurs de l''exercice CEQ 2021 la pièce d''où viennent 1 931, 3 612,9 et 8 057 dinars'
+
+- id: r-educ-ebcnv-volume-depenses
+  objet: volume détaillé de l'enquête nationale sur le budget, la consommation et le niveau de vie des ménages 2021 (et 2015) donnant la dépense d'enseignement par poste (frais de scolarité, cours particuliers, fournitures) et par décile
+  ou: [precis/fr/education/_depense.qmd]
+  requetes:
+    titres_fts: ['"budget et la consommation" OR "consommation des menages"']
+    iort_ar: [استهلاك الأسر, ميزانية واستهلاك]
+    depuis: 2021-03-13
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, web]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : 0 notice (FTS et intitulés arabes, toutes années ; la publication attendue n''est pas un texte du JORT). Une recherche web (« INS Tunisie enquête nationale budget consommation niveau de vie ménages 2021 dépenses enseignement volume PDF ») : seuls le communiqué (lu, 3 p.) et la note de synthèse sont repérés ; le communiqué ne donne que le poste agrégé « Education, enseignement » (84 DT en 2015, 81 DT en 2021). Site ins.tn non parcouru au-delà.'
+    couvert_jusqu_au: 2026-10-17
+    resultat: aucun
+  a_faire:
+  - 'parcourir ins.tn (rubrique enquêtes ménages) pour le volume « Dépenses et consommation » 2021 et son équivalent 2015'
+  - 'lire la note de synthèse EBCNV 2021'

@@ -53,6 +53,8 @@ COLLECTION_TO_BOOK = {
     "entreprises publiques": "entreprises_publiques",
     "santé": "sante",
     "sante": "sante",
+    "éducation": "education",
+    "education": "education",
 }
 
 

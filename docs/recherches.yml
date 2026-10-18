@@ -2893,3 +2893,656 @@
     resultat: aucun
   a_faire:
   - lire les décrets et lois hors loi de finances publiés depuis 2023 qui toucheraient le code de l'IRPP, art. 27 et 44
+
+- id: r-bourse-montants-1982
+  objet: arrêté du 20 août 1982 fixant les montants mensuels de la bourse nationale d'études supérieures des premier et deuxième cycles et de la bourse nationale de spécialisation, connu par le visa de l'arrêté du 23 août 1990 (bourse en République fédérale d'Allemagne, JORT n° 55 de 1990, p. 1148)
+  ou: [precis/fr/education/_aides.qmd#sec-educ-bourse-nationale]
+  requetes:
+    titres_fts: [bourse OR bourses]
+    titres_like: ['%bourse%']
+    plein_texte: [bourse, montants mensuels de la bourse, bourse nationale]
+    depuis: 1982-08-20
+  periode:
+    jusqu_au: 1990-08-28
+    motif: texte antérieur à l'arrêté du 23 août 1990 qui le vise (JORT n° 55 du 28-31 août 1990)
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas]
+    couverture: 'jort_cache : FTS « bourse OR bourses » sur les notices publiées de 1976 à 1987 dont l''intitulé porte « superieur » ou « nationale », et LIKE « %bourse% » sur 1982 : de 1979 à juillet 1986, aucune notice sur la bourse nationale hors celles du ministère de l''Agriculture ; corpus local : fascicules français n° 55, 56, 57 et 58 de 1982 océrisés et parcourus (« bourse ») : rien ; n° 59 à la fin de 1982 non lus'
+    couvert_jusqu_au: 1990-08-28
+    resultat: aucun
+  a_faire:
+  - océriser et lire les fascicules français de 1982 à partir du n° 59
+  - lire les fascicules arabes correspondants si l'édition française manque
+
+- id: r-bourse-seuils-revenu-1986-2005
+  objet: décisions ou arrêtés annuels fixant le seuil de revenu des parents pour la bourse nationale et le prêt universitaire en Tunisie (décret n° 86-688, art. 4 ; arrêté du 28 juillet 1986, art. 3), pour les années universitaires 1986-1987 à 1989-1990 et 1991-1992 à 2004-2005
+  ou: [precis/fr/education/_aides.qmd#sec-educ-bourse-nationale]
+  requetes:
+    titres_fts: [seuil AND (bourse OR pret), bourse OR bourses]
+    titres_like: ['%revenus annuels%']
+    depuis: 1986-07-18
+  periode:
+    jusqu_au: 2006-01-17
+    motif: à partir de l'année universitaire 2005-2006 le plafond est publié chaque année (arrêté du 6 janvier 2006, JORT n° 5 du 17 janvier 2006) ; le régime du décret n° 86-688 cesse en 2011-2012
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache seulement : FTS « bourse OR bourses » sur toutes les notices de l''enseignement supérieur de 1956 à 2026 ; LIKE « %revenus annuels% » et FTS « seuil AND (bourse OR pret) » sur les notices publiées de 1991 à 2006. Trouvés : seuil 1990-1991 (arrêté du 21 août 1990), revenus pour le prêt à l''étranger 1991-1992 (arrêté du 7 avril 1992, non lu), puis les arrêtés de 2006 à 2009. L''arrêté de 1986 confie le seuil à une « décision » du ministre, qui peut ne pas paraître au Journal officiel ; aucun plein texte'
+    couvert_jusqu_au: 2006-01-17
+    resultat: aucun
+  a_faire:
+  - lire l'arrêté du 7 avril 1992 (JORT n° 23 de 1992
+  - p. 464) sur le prêt à l'étranger
+  - chercher les décisions annuelles dans les rapports et guides du ministère de l'Enseignement supérieur et des offices des œuvres universitaires
+  - hors Journal officiel
+
+- id: r-oeuvres-prix-repas-lit-avant-2016
+  objet: texte fixant la contribution des étudiants au repas et au lit universitaires avant les deux arrêtés du 18 janvier 2016 (200 millimes le repas, 10 dinars par mois le lit)
+  ou: [precis/fr/education/_aides.qmd#sec-educ-oeuvres-universitaires]
+  requetes:
+    titres_like:
+    - '%oeuvres universitaires%'
+    - '%œuvres universitaires%'
+    - '%restaurant%universitaire%'
+    - '%restauration universitaire%'
+    - '%hebergement universitaire%'
+    - '%foyers universitaires%'
+    - '%cites universitaires%'
+    - '%prix du repas%'
+    - '%prix des repas%'
+    - '%ticket%'
+    - '%logement des etudiants%'
+    - '%redevance%heberg%'
+    - '%contribution financiere%restauration%'
+    - '%tarif%heberg%'
+    iort_ar: [الإطعام الجامعي, الاطعام الجامعي, السكن الجامعي, المبيتات الجامعية, الأكلة, معلوم الإيواء]
+    depuis: 1970-03-10
+  periode:
+    jusqu_au: 2016-01-26
+    motif: les arrêtés du 18 janvier 2016 (JORT n° 8 du 26 janvier 2016) fixent la contribution ; l'objet est le texte qui les précède
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache : motifs LIKE et termes arabes sur les intitulés de 1956 à 2026, sans plein texte ; corpus local : lus, sans montant de contribution, le règlement intérieur des centres d''hébergement et de restauration universitaires du 20 juin 1974 (JORT n° 44 de 1974, p. 1447-1448 ; p. 1449 non lue), le règlement intérieur des établissements des œuvres universitaires du 5 octobre 2009 (son art. 6 renvoie le loyer « aux réglementations en vigueur ») et le décret n° 2014-4200 (art. 18 : « contributions des étudiants » en recette des offices, sans montant). Non lus : décrets d''organisation n° 80-1001, 90-1122, 95-1953, 95-1954, 95-2281'
+    couvert_jusqu_au: 2016-01-26
+    resultat: aucun
+  a_faire:
+  - lire la p. 1449 du JORT n° 44 de 1974
+  - lire les décrets n° 80-1001 (JORT n° 47 de 1980) et n° 95-2281 et leurs modificatifs
+  - chercher les décisions des offices et les documents budgétaires qui citent un prix du repas ou du lit
+
+- id: r-bourse-hebergement-30d-avant-2016
+  objet: texte portant de 20 à 30 dinars par mois la bourse versée aux boursiers qui remplissent les critères d'hébergement sans être hébergés, entre l'arrêté du 20 août 1992 (20 dinars) et l'arrêté du 18 janvier 2016 (30 dinars) ; le budget 2013 du ministère de l'Enseignement supérieur annonce les 30 dinars « à partir de 2013 »
+  ou: [precis/fr/education/_aides.qmd#sec-educ-oeuvres-universitaires]
+  requetes:
+    titres_fts: ['"bourse supplementaire" OR "bourse d hebergement"']
+    titres_like: ['%bourse supplementaire%', '%bourse d''hebergement%']
+    iort_ar: [منحة السكن]
+    depuis: 1992-09-01
+  periode:
+    jusqu_au: 2016-01-26
+    motif: l'arrêté du 18 janvier 2016 (JORT n° 8 du 26 janvier 2016) fixe la bourse d'hébergement à 30 dinars ; l'objet est le texte qui le précède
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : intitulés publiés de 1992 au 2 octobre 2026 ; trouvés seulement l''arrêté du 20 août 1992 et son pendant pour l''école supérieure des postes et des télécommunications (3 décembre 1992) ; aucun plein texte, ni des fascicules de 2012-2013 ni des lois de finances'
+    couvert_jusqu_au: 2016-01-26
+    resultat: aucun
+  a_faire:
+  - chercher en plein texte « bourse d'hébergement » et « منحة السكن » dans les fascicules de 2012 et 2013
+  - lire l'arrêté du 3 décembre 1992 (JORT n° 83 de 1992
+  - p. 1582-1583)
+
+- id: r-bourse-montants-apres-2017
+  objet: arrêté fixant les montants mensuels de la bourse nationale d'études universitaires en Tunisie au-delà de l'année universitaire 2017-2018, dernière colonne de l'arrêté du 4 décembre 2015
+  ou: [precis/fr/education/_aides.qmd#sec-educ-bourse-nationale]
+  requetes:
+    titres_fts: ['"bourse nationale" OR "bourses nationales"']
+    titres_like:
+    - '%montants de la bourse nationale%'
+    - '%montants des bourses nationales%'
+    - '%مقادير المنحة%'
+    - '%مقدار المنحة الوطنية%'
+    iort_ar: [مقادير المنحة, مقدار المنحة الوطنية]
+    depuis: 2015-12-08
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : intitulés publiés de 2016 au 2 octobre 2026 ; deux réponses, hors sujet (décrets gouvernementaux n° 2019-216 et 2019-345, primes d''enseignants) ; aucun plein texte ; fascicules inconnus de la base (outillage-sources § 1 f) non parcourus'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - plein texte des fascicules de 2016 à 2026 sur « montant mensuel de la bourse nationale » et « مقدار المنحة الوطنية »
+  - relancer avec --sonder-pist
+
+- id: r-bourses-scolaires-apres-1974
+  objet: texte fixant, après l'arrêté du 12 août 1974, les critères d'attribution ou les montants des bourses scolaires des élèves de l'enseignement secondaire (ou de base), ou les supprimant
+  ou: [precis/fr/education/_aides.qmd#sec-educ-bourses-scolaires]
+  requetes:
+    titres_fts: [bourses AND scolaires]
+    titres_like:
+    - bourse%scolaire
+    - bourses d'etudes
+    - bourse%eleve
+    - bourse%secondaire
+    - bourse%lycee
+    - bourse%college
+    - bourse%primaire
+    - bourse%enseignement de base
+    iort_ar: [المنح المدرسية, منحة مدرسية, المنحة المدرسية, منح مدرسية]
+    depuis: 1974-08-14
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : FTS et LIKE sur titre et objet (termes français) ; LIKE sur titre et objet pour les quatre termes arabes, aucune notice ; grep des termes arabes sur le miroir iort, qui ne renvoie qu''aux décrets n° 71-356, 74-783 et 2016-664. Candidats lus au fascicule : arrêté du 12 août 1974 (JORT 1974/52), loi n° 76-115, art. 15 (restitution, non un critère), décret gouvernemental n° 2016-664, art. 2 (renvoie à une décision du ministre). Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules (« bourses scolaires », « المنح المدرسية ») de 1974 à 2026, par recherches.py relancer
+  - lire les lois de finances et budgets du ministère de l'Éducation antérieurs à 2013 (ligne des bourses scolaires)
+
+- id: r-bourses-scolaires-decision-ministre
+  objet: décision du ministre de l'éducation fixant les critères d'attribution des bourses scolaires par l'office des services scolaires (décret gouvernemental n° 2016-664, art. 2)
+  ou: [precis/fr/education/_aides.qmd#sec-educ-bourses-scolaires]
+  requetes:
+    titres_fts: [bourses AND scolaires, '"services scolaires"']
+    titres_like: [bourse%scolaire, services scolaires, oeuvres scolaires]
+    iort_ar: [المنح المدرسية, منحة مدرسية, الخدمات المدرسية]
+    depuis: 2016-06-10
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : FTS et LIKE (français), LIKE arabe sur titre et objet ; grep du miroir iort (« الخدمات المدرسية » : décret n° 2016-664, lois de finances pour 2017 à 2020, décisions de nomination de 2021 et 2023). Une décision ministérielle n''est peut-être pas publiée au Journal officiel. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules depuis juin 2016
+  - demander la décision au ministère de l'Éducation ou à l'office des services scolaires (document hors JORT)
+
+- id: r-cantines-scolaires-avant-2016
+  objet: texte organisant les cantines scolaires des écoles primaires et les internats (foyers) des collèges et lycées, ou fixant la contribution des familles au repas et à la pension, avant le décret gouvernemental n° 2016-664
+  ou: [precis/fr/education/_aides.qmd#sec-educ-restauration-scolaire]
+  requetes:
+    titres_fts: [cantine*, restauration AND (eleves OR scolaire OR apprenants)]
+    titres_like:
+    - cantine
+    - internat
+    - internats
+    - pensionnaire
+    - demi-pension
+    - demi pension
+    - restaurant scolaire
+    - restaurants scolaires
+    - nutrition scolaire
+    - alimentation scolaire
+    - foyer scolaire
+    - foyers scolaires
+    - pension%eleve
+    - pension%lycee
+    - pension%scolaire
+    - remises de principe
+    iort_ar: [المطاعم المدرسية, المطعم المدرسي, المبيتات, المبيت المدرسي, المبيتات المدرسية]
+    depuis: 1957-01-15
+  periode:
+    jusqu_au: 2016-06-10
+    motif: antérieur au décret gouvernemental n° 2016-664 du 25 mai 2016 (JORT n° 47 du 10 juin 2016)
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : FTS et LIKE (français) sur titre et objet ; LIKE arabe sur titre et objet, aucune notice ; grep du miroir iort (« المطاعم المدرسية », « المبيتات المدرسية » : décret n° 2016-664 seulement pour l''objet cherché). Trouvés à l''index seulement : arrêté du 15 janvier 1957 et loi n° 58-45, art. 38-40 (prix de pension), décret n° 60-260 (remises de principe), lois de finances créant ou supprimant des internats. Aucun texte d''organisation des cantines. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2016-06-10
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules de 1957 à 2016 (« cantines scolaires », « المطاعم المدرسية »)
+  - lire l'arrêté du 15 janvier 1957 et la loi n° 58-45, art. 38 à 40 (OCR nécessaire)
+
+- id: r-oss-contributions-eleves
+  objet: arrêté ou décision fixant la contribution des élèves aux services de restauration et d'hébergement de l'office des services scolaires (décret gouvernemental n° 2016-664, art. 18)
+  ou: [precis/fr/education/_aides.qmd#sec-educ-restauration-scolaire]
+  requetes:
+    titres_fts: ['"services scolaires"']
+    titres_like: [services scolaires, oeuvres scolaires, œuvres scolaires]
+    iort_ar: [ديوان الخدمات المدرسية, الخدمات المدرسية]
+    depuis: 2016-06-10
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : FTS et LIKE (français), LIKE arabe sur titre et objet ; seuls le décret n° 2016-664 et l''arrêté conjoint du 10 février 2022 (complexes sportifs, culturels et de loisirs) en relèvent. Miroir iort : lois de finances pour 2017 à 2020 (annexe des établissements publics, lue au fascicule arabe), décisions de nomination. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules depuis juin 2016
+  - lire l'annexe des établissements publics des lois de finances pour 2021 à 2026 (ligne de l'office)
+
+- id: r-assurance-scolaire-regime
+  objet: texte organisant l'assurance scolaire des élèves du public (garanties, organisme assureur, emploi des droits d'assurance perçus à l'inscription, décret n° 92-1185 puis décret n° 2010-1928)
+  ou: [precis/fr/education/_aides.qmd#sec-educ-frais-familles]
+  requetes:
+    titres_like: [assurance scolaire, mutuelle scolaire, droits d'inscription, frais d'inscription]
+    iort_ar: [التأمين المدرسي, التسجيل والتأمين والمكتبة]
+    depuis: 1958-11-04
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : LIKE sur titre et objet ; aucune notice « assurance scolaire ». Miroir iort : « التسجيل والتأمين والمكتبة » renvoie aux décrets n° 92-1185, 97-1355, 2010-1928 et 2019-898, tous lus au fascicule ; aucun ne règle l''assurance elle-même. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules (« assurance scolaire », « accidents scolaires », « التأمين المدرسي »)
+
+- id: r-droits-inscription-repartition
+  objet: arrêté conjoint des ministres de l'éducation et des finances fixant la répartition des droits d'inscription, d'assurance et de bibliothèque des collèges et lycées (décret gouvernemental n° 2019-898, art. 1, 2e alinéa)
+  ou: [precis/fr/education/_aides.qmd#sec-educ-frais-familles]
+  requetes:
+    titres_like: [droits d'inscription, frais d'inscription]
+    iort_ar: [رسوم التسجيل, معاليم التسجيل والتأمين, التسجيل والتأمين والمكتبة]
+    depuis: 2019-10-22
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : LIKE sur titre et objet, depuis 2010 ; seuls les décrets n° 2010-1928 et 2019-898. Miroir iort : « التسجيل والتأمين والمكتبة » sans arrêté conjoint. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [parcourir le plein texte des fascicules depuis octobre 2019 (« توزيع معاليم التسجيل »)]
+
+- id: r-cahier-charges-restauration-eleves
+  objet: cahier des charges établi par le ministère de tutelle pour les prestations de restauration au profit des élèves et des apprenants (n° 30 bis du tableau A du code de la TVA, loi n° 2009-32, art. 3)
+  ou: [precis/fr/education/_aides.qmd#sec-educ-restauration-scolaire]
+  requetes:
+    titres_fts: [restauration AND (eleves OR scolaire OR apprenants)]
+    titres_like: [cahier des charges%restauration, restauration%eleves]
+    iort_ar: [المطاعم المدرسية]
+    depuis: 2009-06-26
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : FTS et LIKE sur titre et objet ; seule la loi n° 2009-32 (numérotée à tort 2009-39 à l''index) et l''arrêté du 18 janvier 2016 sur la restauration universitaire. Miroir iort : « المطاعم المدرسية » sans cahier des charges. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules depuis juin 2009 (« cahier des charges », « كراس شروط » avec « مطاعم »)
+
+- id: r-loi58-118-art2-obligation
+  objet: texte fixant la date à partir de laquelle l'obligation d'assurer aux enfants l'instruction de six à douze ans est imposée à tous les parents (loi n° 58-118 du 4 novembre 1958, art. 2, al. 2)
+  ou: [precis/fr/education/_histoire.qmd#sec-educ-1958]
+  requetes:
+    titres_fts: ['"obligation scolaire"', '"scolarite obligatoire"', '"enseignement obligatoire"']
+    titres_like: ['%obligation scolaire%', '%scolarite obligatoire%', '%enseignement obligatoire%', '%obligatoire%enseignement%']
+    depuis: 1958-11-07
+  periode:
+    jusqu_au: 1991-08-08
+    motif: la loi n° 91-65 du 29 juillet 1991 (JORT n° 55 du 6 août 1991) institue l'obligation de six à seize ans (art. 7) et met fin progressivement à l'application de la loi n° 58-118 (art. 36)
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : LIKE non accentués et FTS sur les titres, publications du 7 novembre 1958 au 8 août 1991, sans résultat. Titres seuls : ni plein texte (fascicules de 1958 à 1990 largement sans couche texte), ni miroir iort, ni relance par scripts/recherches.py. Requête voisine sur 1959-1990 (lois et décrets dont le titre porte « enseignement primaire », « enseignement de base », « organisation de l''enseignement ») : décret n° 61-14 du 3 janvier 1961 relatif à l''enseignement primaire (JORT 1961/001, p. 22-24), non lu, qui pourrait régler la question. Note : docs/notes/education-histoire-2026-10-17.md, § 1.1.'
+    couvert_jusqu_au: 1991-08-08
+    resultat: aucun
+  a_faire:
+  - lire le décret n° 61-14 du 3 janvier 1961 relatif à l'enseignement primaire et ses modificatifs (décret n° 63-342)
+  - rejouer la fiche en plein texte
+
+- id: r-loi2002-80-art17-annee-preparatoire
+  objet: texte généralisant l'année préparatoire (5-6 ans) ou fixant son calendrier de généralisation (loi d'orientation n° 2002-80, art. 17)
+  ou: [precis/fr/education/_scolaire.qmd#sec-educ-etat-droit]
+  requetes:
+    titres_fts: ['"annee preparatoire"', prescolaire]
+    titres_like: ['%annee preparatoire%', '%prescolaire%']
+    iort_ar: [السنة التحضيرية, التحضيري]
+    depuis: 2002-07-30
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : LIKE sur les titres (français non accentués et arabes) et FTS, publications du 30 juillet 2002 au 2 octobre 2026. Réponses sans rapport (primes des professeurs agrégés des classes préparatoires, concours de recrutement). Titres seuls : ni plein texte, ni miroir iort, ni relance par scripts/recherches.py. Note : docs/notes/education-histoire-2026-10-17.md, § 1.5.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-loi2008-19-art56-delais-lmd
+  objet: décret fixant les délais de réalisation du passage au régime licence-mastère-doctorat (loi n° 2008-19 du 25 février 2008, art. 56, al. 1er)
+  ou: [precis/fr/education/_superieur.qmd#sec-educ-superieur-lois]
+  requetes:
+    titres_like: ['%LMD%', '%2008-19%', '%licence%mastere%doctorat%', '%systeme licence%']
+    iort_ar: [19 لسنة 2008, نظام إمد, أمد, الإجازة والماجستير والدكتوراه]
+    depuis: 2008-03-04
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache : LIKE sur les titres (le motif « 2008-19 » sur titre et objet, en écartant les numéros 2008-19xx), publications du 4 mars 2008 au 2 octobre 2026, 73 réponses lues en entier : arrêtés de régime des études de licences (2009-2011, 2019), décrets n° 2012-1227 (mastère LMD), n° 2013-47 (doctorat LMD), n° 2012-1232 et n° 2013-1469 (complétant le décret n° 2008-3123), décret gouvernemental n° 2017-1196 (commissions sectorielles du système LMD), arrêtés de 2023 ; aucun ne porte, dans son intitulé, les délais de passage au régime. Seconde voie : le décret n° 2008-3123 (JORT n° 79 du 30 septembre 2008) fixe lui-même l''entrée en vigueur de la licence à l''année universitaire 2006-2007 (art. 43) et la fin de l''ancien régime à 2011-2012 (art. 41), sans viser un décret de délais. Pas de FTS, ni plein texte, ni miroir iort, ni relance par scripts/recherches.py. Note : docs/notes/education-histoire-2026-10-17.md, § 1.8 et 1.9.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - rejouer en FTS et en plein texte avec « licence » et « mastère »
+  - relire les visas des décrets mastère et doctorat postérieurs à 2008
+
+- id: r-loi2017-13-art4-arrete
+  objet: arrêté conjoint des ministres chargés de l'éducation, de la formation professionnelle, des affaires sociales et de l'enfance fixant les procédures et modalités d'application de la loi n° 2017-13 du 13 mars 2017 (art. 4)
+  ou: [precis/fr/education/_formation_professionnelle.qmd#sec-educ-fp-lois]
+  requetes:
+    titres_like: ['%2017-13%', '%formation professionnelle initiale%']
+    iort_ar: [13 لسنة 2017, التكوين المهني الأساسي, إجبارية الالت, اجبارية الالت]
+    depuis: 2017-03-17
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : LIKE sur les titres (le motif « 2017-13 » sur titre et objet, en écartant les numéros 2017-13x), publications du 17 mars 2017 au 2 octobre 2026, cinq réponses lues en entier : la loi elle-même, une décision électorale, un décret gouvernemental de 2020 sur des indemnités de formation, l''arrêté du 23 novembre 2020 sur la formation professionnelle initiale à distance (qui relève de la loi n° 2008-10, art. 14) et un décret de 2024 sur une unité de gestion ; aucun arrêté conjoint d''application. Les arrêtés ont souvent un numero NULL et, de 2017 à 2019, un intitulé arabe seul (outillage-sources.md, § 1 a et g) ; pas de FTS, ni plein texte, ni miroir iort, ni relance par scripts/recherches.py. Note : docs/notes/education-histoire-2026-10-17.md, § 1.11.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-education-consultation-reforme
+  objet: texte publié au Journal officiel instituant ou organisant une consultation ou un dialogue national sur la réforme du système éducatif, 2011-2026
+  ou: [precis/fr/education/_histoire.qmd#sec-educ-conseil]
+  requetes:
+    titres_like:
+    - '%systeme educatif%'
+    - '%reforme educative%'
+    - '%reforme du systeme%'
+    - '%consultation nationale%'
+    - '%conseil superieur de l''education%'
+    iort_ar:
+    - المنظومة التربوية
+    - الإصلاح التربوي
+    - إصلاح التعليم
+    - إصلاح المنظومة
+    - الاستشارة الوطنية
+    - الاستشارة
+    - المجلس الأعلى للتربية
+    depuis: 2011-01-14
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache : LIKE sur les titres (français non accentués et arabes), publications de 2011 au 2 octobre 2026. Réponses : textes de vie scolaire, unité de gestion du projet de réforme de l''enseignement supérieur (décret gouvernemental n° 2016-1100), lycées pilotes ; aucun texte de consultation. Le décret-loi n° 2024-2, absent de jort_cache, a été trouvé par lecture du JORT arabe n° 113 de 2024 : l''index ne couvre donc pas tout. Pas de FTS, ni plein texte, ni miroir iort, ni relance par scripts/recherches.py ; les consultations ont pu être organisées hors JORT. Note : docs/notes/education-histoire-2026-10-17.md, § 1.11.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - rejouer en plein texte sur les fascicules arabes 2015-2026
+  - chercher hors JORT les rapports des consultations
+
+- id: r-educ-lois-reglement-tableaux-par-chapitre
+  objet: tableaux annexés aux lois portant règlement du budget de l'État (tableau n° 2, dépenses payées par chapitre), qui donneraient les dépenses exécutées des ministères de l'Éducation, de l'Enseignement supérieur et de la Formation professionnelle
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  requetes:
+    titres_fts: ['"reglement du budget"']
+    titres_like: ['%reglement du budget%']
+    iort_ar: [غلق ميزانية الدولة, ختم ميزانية الدولة]
+    depuis: 1966-01-01
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache (FTS « reglement du budget » : 62 notices, lois de règlement des gestions 1954-55 à 2009 et 2017-2020 ; LIKE arabe « غلق ميزانية الدولة » : lois n° 2016-23 à 2016-25 pour 2010-2012, n° 2018-39 à 2018-41 et 2018-49 pour 2013-2016) jusqu''au 2 octobre 2026, dernière publication indexée. Texte lu au fascicule français du corpus local : JORT n° 97 de 2010 (loi n° 2010-56, gestion 2008) et n° 35 de 2024 (lois n° 2024-18 à 2024-21, gestions 2017 à 2020) ; les articles renvoient aux « tableaux n° 1 et 2 annexés », qui ne figurent pas dans le texte extrait du fascicule. Les fascicules des autres lois de règlement n''ont pas été ouverts. Aucun texte de règlement des gestions 2021 et suivantes à l''index.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire à l'image les pages des JORT n° 97 de 2010 et n° 35 de 2024 qui suivent les lois, pour confirmer que les tableaux annexés ne sont pas publiés
+  - 'chercher les tableaux annexés hors JORT : projets de loi de règlement déposés à l''Assemblée, rapports de la Cour des comptes sur le règlement du budget'
+
+- id: r-educ-lois-reglement-2021-et-apres
+  objet: loi portant règlement du budget de l'État pour les gestions 2021 et suivantes
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  requetes:
+    titres_fts: ['"reglement du budget"']
+    titres_like: ['%reglement du budget%', '%règlement du budget%']
+    iort_ar: [غلق ميزانية الدولة]
+    depuis: 2022-01-01
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, intitulés français (FTS) et arabes (LIKE « غلق ميزانية الدولة ») publiés après le 8 mars 2024 : aucune notice ; dernière loi de règlement indexée : n° 2024-21 (gestion 2020), JORT n° 35 du 7 mars 2024. Plein texte du corpus local non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [parcourir le plein texte des fascicules 2024-2026 du corpus local (terme « غلق ميزانية »)]
+
+- id: r-educ-cout-unitaire-ministere-2021
+  objet: publication du ministère de l'Éducation ou du ministère de l'Enseignement supérieur donnant le coût public par élève (primaire, secondaire) et par étudiant pour 2021, source déclarée des coûts unitaires de l'exercice d'incidence CEQ 2021
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-programmes]
+  requetes:
+    titres_fts: ['"cout de l eleve" OR "cout par eleve" OR "cout unitaire"']
+    iort_ar: [كلفة التلميذ, تكلفة التلميذ]
+    depuis: 2021-01-01
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, web]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : 0 notice pour la requête FTS et 0 pour les intitulés arabes (LIKE), toutes années confondues. Une recherche web (« Tunisie coût moyen d''un élève ministère de l''éducation 2021 dinars primaire secondaire كلفة التلميذ ») : ne rend que des estimations du coût de la scolarité pour les familles (FTDES 2021 rapporté par webdo.tn ; OTIC ; ODC), aucune publication ministérielle. Le classeur CEQ et son programme 09_Education.do ne citent ni document ni date. Sites des ministères non parcourus ; projets annuels de performance 2019-2023 non téléchargés.'
+    couvert_jusqu_au: 2026-10-17
+    resultat: aucun
+  a_faire:
+  - télécharger les projets et rapports annuels de performance (PAP, RAP) 2019-2023 des missions Éducation et Enseignement supérieur sur finances.gov.tn et y chercher un indicateur de coût par élève
+  - demander aux auteurs de l'exercice CEQ 2021 la pièce d'où viennent 1 931, 3 612,9 et 8 057 dinars
+
+- id: r-educ-ebcnv-volume-depenses
+  objet: volume détaillé de l'enquête nationale sur le budget, la consommation et le niveau de vie des ménages 2021 (et 2015) donnant la dépense d'enseignement par poste (frais de scolarité, cours particuliers, fournitures) et par décile
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-menages]
+  requetes:
+    titres_fts: ['"budget et la consommation" OR "consommation des menages"']
+    iort_ar: [استهلاك الأسر, ميزانية واستهلاك]
+    depuis: 2021-03-13
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, web]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : 0 notice (FTS et intitulés arabes, toutes années ; la publication attendue n''est pas un texte du JORT). Une recherche web (« INS Tunisie enquête nationale budget consommation niveau de vie ménages 2021 dépenses enseignement volume PDF ») : seuls le communiqué (lu, 3 p.) et la note de synthèse sont repérés ; le communiqué ne donne que le poste agrégé « Education, enseignement » (84 DT en 2015, 81 DT en 2021). Site ins.tn non parcouru au-delà.'
+    couvert_jusqu_au: 2026-10-17
+    resultat: aucun
+  a_faire:
+  - parcourir ins.tn (rubrique enquêtes ménages) pour le volume « Dépenses et consommation » 2021 et son équivalent 2015
+  - lire la note de synthèse EBCNV 2021
+
+- id: r-educ-collectivites-depense-education
+  objet: 'dépense d''éducation des communes et des conseils régionaux (construction, entretien et équipement des écoles) : établir si leurs budgets et leurs comptes, exposés au chapitre « Budgets et comptes » du livre des finances locales (precis/fr/finances_locales/_budgets.qmd), permettent de l''isoler, et sur quelles années'
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  requetes:
+    titres_fts: [nomenclature AND budget AND collectivites, budget AND communes AND ecoles]
+    titres_like:
+    - '%nomenclature budgétaire des communes%'
+    - '%nomenclature du budget des collectivités%'
+    - '%entretien des écoles%'
+    iort_ar: [تبويب ميزانية البلديات, صيانة المدارس]
+    plein_texte: [entretien des écoles, établissements éducatifs, صيانة المدارس]
+    depuis: 1958-01-01
+  passes:
+  - date: 2026-10-17
+    role: rédacteur
+    sources: [jort_cache, iort]
+    couverture: 'intitulés seuls (jort_cache, FTS et LIKE ; miroir iort, termes arabes), du 1958-01-01 au 2026-10-02, par recherches.py relancer --sans-plein-texte : répondent le décret gouvernemental n° 2020-52 du 23 janvier 2020 (modèle de la nomenclature budgétaire des communes) et sa modification, le décret gouvernemental n° 2020-439 du 14 juillet 2020, ainsi que des lois de finances de 2009 à 2019 (terme « صيانة المدارس ») ; aucun de ces textes n''est lu. Ni la nomenclature des conseils régionaux, ni les comptes des communes, ni le chapitre « Budgets et comptes » du livre des finances locales ne sont examinés ; plein texte du corpus local non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - 'lire le décret gouvernemental n° 2020-52 (et le n° 2020-439) : la nomenclature budgétaire des communes a-t-elle une rubrique propre à l''enseignement ou aux écoles ?'
+  - 'lire precis/fr/finances_locales/_budgets.qmd et ses séries : une dépense d''éducation des communes ou des conseils régionaux y est-elle isolable, et sur quelles années ?'
+  - nomenclature budgétaire des conseils régionaux, et nomenclature des communes antérieure à 2020
+  - plein texte du corpus local (relancer sans --sans-plein-texte)
+
+- id: r-educ-passage-septieme
+  objet: texte organisant l'examen, l'évaluation ou le concours de passage de la sixième année (fin du primaire) à la septième année de l'enseignement de base, après la loi n° 91-65
+  ou: [precis/fr/education/_scolaire.qmd#sec-educ-scolaire-fin-de-base]
+  requetes:
+    titres_fts: [sixieme AND (examen OR concours OR evaluation)]
+    titres_like: ['%sixieme annee%', '%fin d_etudes primaires%', '%evaluation nationale%', '%7eme annee de l_enseignement de base%']
+    iort_ar: [السنة السادسة, ختم التعليم الابتدائي]
+    plein_texte: []
+    depuis: 1991-08-06
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'FTS et LIKE (français et arabe) sur titre et objet depuis août 1991 : aucune notice. Avant 1991 : décret de 1956 et arrêtés de 1959 et 1963 (certificat de fin d''études primaires), décret n° 81-348 (concours d''entrée en première année du secondaire), index. Plein texte et miroir iort non parcourus ; « مناظرة » non joué. Note : docs/notes/education-scolaire-2026-10-17.md, § 10.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-educ-frais-jardins-publics-avant-2022
+  objet: texte fixant les frais d'inscription ou de garde des enfants dans les jardins d'enfants publics avant l'arrêté conjoint du 12 octobre 2022
+  ou: [precis/fr/education/_scolaire.qmd#sec-educ-scolaire-prescolaire]
+  requetes:
+    titres_fts: ['"jardins d enfants"', '"رياض الأطفال"']
+    titres_like: ['%jardins d''enfants%', '%رياض الأطفال%']
+    iort_ar: [رياض الأطفال, معاليم]
+    plein_texte: []
+    depuis: 1969-01-01
+  periode:
+    jusqu_au: 2022-10-18
+    motif: antérieur à l'arrêté conjoint du 12 octobre 2022
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'FTS sur titre et objet, toutes années : statuts et indemnités des animateurs (1978-2012), cahiers des charges (2001, 2003, 2022, 2023), décret n° 2001-1908, loi de finances pour 2022 art. 60 ; LIKE « jardins d_enfants » ou « رياض الأطفال » (59 notices) croisé avec frais, معاليم, tarif, contribution : seul l''arrêté du 12 octobre 2022. Aucun barème avant 2022. Plein texte non parcouru. Note : docs/notes/education-scolaire-2026-10-17.md, § 10.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-educ-kouttabs-tutelle-affaires-religieuses
+  objet: texte transférant la tutelle des kouttabs coraniques au ministère des affaires religieuses, ou réorganisant les kouttabs après l'arrêté du 22 décembre 1990
+  ou: [precis/fr/education/_scolaire.qmd#sec-educ-scolaire-prescolaire]
+  requetes:
+    titres_fts: [kouttab, kouttabs, الكتاتيب]
+    titres_like: ['%koutt%', '%kouteb%', '%كتاتيب%']
+    iort_ar: [الكتاتيب, الكتاب القرآني]
+    plein_texte: []
+    depuis: 1991-01-01
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'FTS et LIKE sur titre et objet : arrêtés de 1980 et 1990 (lus), décret n° 94-534 (prophylaxie), arrêté du 18 mars 1997 du ministre des affaires religieuses (manuel de procédures, intitulé tronqué à l''index, non lu). Miroir iort et plein texte non parcourus. Note : docs/notes/education-scolaire-2026-10-17.md, § 10.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-educ-lmd-organisation-rentree-2006
+  objet: texte (décret, arrêté, décision) organisant la première rentrée en licence du système LMD en 2006-2007, antérieur au décret n° 2008-3123 qui s'applique à compter de cette année (art. 43)
+  ou: [precis/fr/education/_superieur.qmd#sec-educ-superieur-lois]
+  requetes:
+    titres_fts: [LMD, '"licence mastere"', '"licence fondamentale"', '"licence appliquee"']
+    titres_like: ['%LMD%', '%licence fondamentale%']
+    iort_ar: [إمد, الإجازة الأساسية, الإجازة التطبيقية]
+    plein_texte: [LMD, licence fondamentale, mastère et doctorat]
+    depuis: 2004-12-28
+  periode:
+    jusqu_au: 2008-09-30
+    motif: antérieur au décret n° 2008-3123 (JORT n° 79 du 30 septembre 2008)
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'FTS sur titre et objet jusqu''au 30 septembre 2008 : décret n° 2004-2721 (licence appliquée, lu) et trente arrêtés d''établissement sur la licence appliquée (2006-2008 ; celui du 8 juin 2006, faculté de droit de Sfax, lu) ; LIKE arabe sur les titres : aucune notice ; plein texte des fascicules français 2005 à n° 79 de 2008 : premières mentions de « LMD » en mars et août 2008, aucune décision d''organisation de la rentrée 2006-2007. Miroir iort et édition arabe non parcourus. Note : docs/notes/education-superieur-2026-10-17.md, § 0 et § 12.'
+    couvert_jusqu_au: 2008-09-30
+    resultat: aucun
+  a_faire:
+  - parcourir le miroir iort et l'édition arabe de 2006 à septembre 2008
+  - obtenir la décision ou circulaire ministérielle de la rentrée 2006-2007 (hors JORT)
+
+- id: r-educ-fp-bac-pro-regime
+  objet: arrêté du ministre de l'éducation fixant le régime de l'examen du baccalauréat professionnel (loi n° 2008-10, art. 60)
+  ou: [precis/fr/education/_formation_professionnelle.qmd#sec-educ-fp-lois]
+  requetes:
+    titres_fts: ['"baccalaureat professionnel"', '"البكالوريا المهنية"']
+    titres_like: [baccalaureat professionnel]
+    iort_ar: [البكالوريا المهنية]
+    plein_texte: []
+    depuis: 2008-02-15
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'FTS et LIKE (français) sur titre et objet, LIKE arabe « البكالوريا المهنية », au 2 octobre 2026 : aucune notice ; plein texte non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-educ-fp-cahier-charges-prive-2008
+  objet: arrêté approuvant le cahier des charges des établissements privés de formation professionnelle pris pour l'art. 39 de la loi n° 2008-10 (remplaçant le cahier du 12 septembre 2001)
+  ou: [precis/fr/education/_formation_professionnelle.qmd#sec-educ-fp-prive]
+  requetes:
+    titres_fts: ['"etablissements prives de formation professionnelle"', '"cahier des charges" AND formation']
+    titres_like: [cahier des charges%formation professionnelle]
+    iort_ar: [مؤسسات التكوين المهني الخاصة, كراس الشروط]
+    plein_texte: []
+    depuis: 2008-02-15
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'LIKE et FTS (français) au 2 octobre 2026 : seul le décret gouvernemental n° 2016-620 et les arrêtés « chèque formation » ; LIKE arabe « مؤسسات التكوين المهني الخاصة », « كراس الشروط » avec « التكوين المهني » : aucune notice. Plein texte non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-educ-fp-frais-inscription-public
+  objet: texte fixant les frais d'inscription et d'assurance des apprenants des établissements publics de formation professionnelle (loi n° 2008-10)
+  ou: [precis/fr/education/_formation_professionnelle.qmd#sec-educ-fp-lois]
+  requetes:
+    titres_fts: ['"frais d inscription" AND formation']
+    titres_like: [frais d'inscription%formation professionnelle]
+    iort_ar: [معاليم التسجيل, التكوين المهني]
+    plein_texte: []
+    depuis: 1993-02-19
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'FTS « frais d inscription » AND formation : seuls des frais de concours internes de la fonction publique (2015, 2019, 2023, 2025) ; LIKE arabe « معاليم التسجيل » avec « التكوين » : un arrêté du 17 juin 2019 (jeunesse et sport et finances, cycles de formation et recyclage, intitulé arabe tronqué, non lu, probablement hors objet). Plein texte non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-superieur-vacataires-etp
+  objet: effectif des enseignants vacataires de l'enseignement supérieur public, enseignants en équivalent temps plein (supérieur et scolaire) et rémunération versée aux seuls enseignants
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-personnels]
+  requetes:
+    plein_texte: [vacataire, contractuel, plein temps, équivalent temps plein, العرضيون, الأعوان المتعاقدون والعاملون بالحصة]
+    depuis: 2004-09-01
+  periode:
+    jusqu_au: 2026-10-17
+    motif: le temps plein est connu depuis 2004-2005 (Annuaire statistique de l'INS) ; l'objet est le temps partiel, l'équivalent temps plein et la masse salariale par corps sur la même période
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [web, corpus_local]
+    couverture: 'Annuaire statistique de l''INS, 22 éditions (« vacataire », « contractuel », « plein temps ») : seul le temps plein (statutaires, contractuels) est publié ; budgets MESRS 2013-2017 : paragraphe 031 « الأعوان المتعاقدون والعاملون بالحصة » en dinars, sans effectif, non sommé, et aucune ventilation de la rémunération par corps ; web : « Tunisie enseignement supérieur en chiffres enseignants permanents contractuels vacataires 2022-2023 mes.tn », « "المدرسون الجامعيون" القارون المتعاقدون العرضيون إحصائيات التعليم العالي تونس 2023-2024 », « Tunisia teachers full-time equivalent UIS data primary secondary tertiary » : aucune publication tunisienne atteinte ; navigateur de données UIS non interrogé. Note : docs/notes/education-effectifs-personnels-2026-10-17.md, § 2.4 et § 3.3'
+    couvert_jusqu_au: 2026-10-17
+    resultat: aucun
+  a_faire:
+  - obtenir « L'enseignement supérieur et la recherche scientifique en chiffres » (mes.tn
+  - éditions annuelles)
+  - interroger le navigateur de données UIS (enseignants
+  - ETP
+  - Tunisie)
+  - sommer le paragraphe 031 des budgets MESRS 2013-2017 par sous-programme
+
+- id: r-budget-missions-education-effectifs-2018-2026
+  objet: fascicules budgétaires par mission (Éducation, Enseignement supérieur et recherche scientifique, Formation professionnelle et emploi) des lois de finances 2018 à 2026, avec la rubrique des moyens humains (« الوسائل البشرية » ou « الموارد البشرية ») par programme et par corps
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-personnels]
+  requetes:
+    plein_texte: [الوسائل البشرية, الموارد البشرية, إطار التدريس, عدد الأعوان حسب البرامج]
+    depuis: 2017-12-01
+  periode:
+    jusqu_au: 2026-10-17
+    motif: l'entrepôt local s'arrête aux budgets 2017
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [web, corpus_local]
+    couverture: 'corpus local : budgets par ministère 2013-2017 seulement (ancien portail du ministère des Finances) ; web : « مشروع ميزانية مهمة التربية 2024 عدد الأعوان حسب البرامج إطار التدريس finances.gov.tn » et « "مشروع القدرة على الأداء" مهمة التربية 2023 pdf "الموارد البشرية" » : presse et procès-verbal de la commission des finances de l''ARP du 8 janvier 2024, sans effectifs ; https://www.finances.gov.tn/ar/budget-de-letat : 404 ; captures Wayback du nouveau portail non essayées ; site de l''ARP (rapports des commissions sur les missions) non parcouru. Note : docs/notes/education-effectifs-personnels-2026-10-17.md, § 6'
+    couvert_jusqu_au: 2026-10-17
+    resultat: aucun
+  a_faire:
+  - parcourir la page « Loi de Finance et rapports annexes » de gbo.tn et finances.gov.tn (rubrique budget
+  - projets et rapports annuels de performance) et leurs captures Wayback
+  - mutualiser avec r-educ-cout-unitaire-ministere-2021
+  - chercher sur arp.tn les rapports de la commission des finances sur les missions Éducation et Enseignement supérieur
+  - lire les budgets MESRS 2014 (jd648) et 2015 (jd853) à l'image pour la page des moyens humains

@@ -1,0 +1,144 @@
+- id: r-bourses-scolaires-apres-1974
+  objet: texte fixant, après l'arrêté du 12 août 1974, les critères d'attribution ou les montants des bourses scolaires des élèves de l'enseignement secondaire (ou de base), ou les supprimant
+  ou: [precis/fr/education/_aides.qmd#sec-aides-bourses-scolaires]
+  requetes:
+    titres_fts: ['bourses AND scolaires']
+    titres_like: [bourse%scolaire, bourses d'etudes, bourse%eleve, bourse%secondaire, bourse%lycee, bourse%college, bourse%primaire, bourse%enseignement de base]
+    iort_ar: [المنح المدرسية, منحة مدرسية, المنحة المدرسية, منح مدرسية]
+    depuis: 1974-08-14
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : FTS et LIKE sur titre et objet (termes français) ; LIKE sur titre et objet pour les quatre termes arabes, aucune notice ; grep des termes arabes sur le miroir iort, qui ne renvoie qu''aux décrets n° 71-356, 74-783 et 2016-664. Candidats lus au fascicule : arrêté du 12 août 1974 (JORT 1974/52), loi n° 76-115, art. 15 (restitution, non un critère), décret gouvernemental n° 2016-664, art. 2 (renvoie à une décision du ministre). Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules (« bourses scolaires », « المنح المدرسية ») de 1974 à 2026, par recherches.py relancer
+  - lire les lois de finances et budgets du ministère de l'Éducation antérieurs à 2013 (ligne des bourses scolaires)
+- id: r-bourses-scolaires-decision-ministre
+  objet: décision du ministre de l'éducation fixant les critères d'attribution des bourses scolaires par l'office des services scolaires (décret gouvernemental n° 2016-664, art. 2)
+  ou: [precis/fr/education/_aides.qmd#sec-aides-bourses-scolaires]
+  requetes:
+    titres_fts: ['bourses AND scolaires', '"services scolaires"']
+    titres_like: [bourse%scolaire, services scolaires, oeuvres scolaires]
+    iort_ar: [المنح المدرسية, منحة مدرسية, الخدمات المدرسية]
+    depuis: 2016-06-10
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : FTS et LIKE (français), LIKE arabe sur titre et objet ; grep du miroir iort (« الخدمات المدرسية » : décret n° 2016-664, lois de finances pour 2017 à 2020, décisions de nomination de 2021 et 2023). Une décision ministérielle n''est peut-être pas publiée au Journal officiel. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules depuis juin 2016
+  - demander la décision au ministère de l'Éducation ou à l'office des services scolaires (document hors JORT)
+- id: r-cantines-scolaires-avant-2016
+  objet: texte organisant les cantines scolaires des écoles primaires et les internats (foyers) des collèges et lycées, ou fixant la contribution des familles au repas et à la pension, avant le décret gouvernemental n° 2016-664
+  ou: [precis/fr/education/_aides.qmd#sec-aides-restauration-scolaire]
+  requetes:
+    titres_fts: ['cantine*', 'restauration AND (eleves OR scolaire OR apprenants)']
+    titres_like: [cantine, internat , internats, pensionnaire, demi-pension, demi pension, restaurant scolaire, restaurants scolaires, nutrition scolaire, alimentation scolaire, foyer scolaire, foyers scolaires, pension%eleve, pension%lycee, pension%scolaire, remises de principe]
+    iort_ar: [المطاعم المدرسية, المطعم المدرسي, المبيتات, المبيت المدرسي, المبيتات المدرسية]
+    depuis: 1957-01-15
+  periode:
+    jusqu_au: 2016-06-10
+    motif: antérieur au décret gouvernemental n° 2016-664 du 25 mai 2016 (JORT n° 47 du 10 juin 2016)
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : FTS et LIKE (français) sur titre et objet ; LIKE arabe sur titre et objet, aucune notice ; grep du miroir iort (« المطاعم المدرسية », « المبيتات المدرسية » : décret n° 2016-664 seulement pour l''objet cherché). Trouvés à l''index seulement : arrêté du 15 janvier 1957 et loi n° 58-45, art. 38-40 (prix de pension), décret n° 60-260 (remises de principe), lois de finances créant ou supprimant des internats. Aucun texte d''organisation des cantines. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2016-06-10
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules de 1957 à 2016 (« cantines scolaires », « المطاعم المدرسية »)
+  - lire l'arrêté du 15 janvier 1957 et la loi n° 58-45, art. 38 à 40 (OCR nécessaire)
+- id: r-oss-contributions-eleves
+  objet: arrêté ou décision fixant la contribution des élèves aux services de restauration et d'hébergement de l'office des services scolaires (décret gouvernemental n° 2016-664, art. 18)
+  ou: [precis/fr/education/_aides.qmd#sec-aides-restauration-scolaire]
+  requetes:
+    titres_fts: ['"services scolaires"']
+    titres_like: [services scolaires, oeuvres scolaires, œuvres scolaires]
+    iort_ar: [ديوان الخدمات المدرسية, الخدمات المدرسية]
+    depuis: 2016-06-10
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : FTS et LIKE (français), LIKE arabe sur titre et objet ; seuls le décret n° 2016-664 et l''arrêté conjoint du 10 février 2022 (complexes sportifs, culturels et de loisirs) en relèvent. Miroir iort : lois de finances pour 2017 à 2020 (annexe des établissements publics, lue au fascicule arabe), décisions de nomination. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules depuis juin 2016
+  - lire l'annexe des établissements publics des lois de finances pour 2021 à 2026 (ligne de l'office)
+- id: r-aide-rentree-avant-2020
+  objet: texte instituant ou fixant une aide de rentrée scolaire aux familles nécessiteuses (programme national d'aide aux familles nécessiteuses, ministère de l'éducation, ministère des affaires sociales) avant l'arrêté conjoint du 19 mai 2020
+  ou: [precis/fr/education/_aides.qmd#sec-aides-rentree]
+  requetes:
+    titres_like: [rentree scolaire, fournitures scolaires, familles necessiteuses]
+    iort_ar: [العودة المدرسية, العائلات المعوزة]
+    depuis: 1986-01-01
+  periode:
+    jusqu_au: 2020-05-20
+    motif: antérieur à l'arrêté conjoint du 19 mai 2020 (JORT n° 45 du 20 mai 2020)
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : LIKE sur titre et objet ; « rentree scolaire » sans notice ; « fournitures scolaires » ne donne que l''indemnité des enseignants (décrets n° 2007-2308 et suivants) ; « العائلات المعوزة » donne le décret gouvernemental n° 2018-626 (base de données, ministère des Affaires sociales) et la loi n° 2025-17, art. 96. Miroir iort : « العودة المدرسية » dans les seuls décrets n° 2008-3171 et 2013-3749 (organisation). Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2020-05-20
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules de 1986 à mai 2020 (« rentrée scolaire », « العودة المدرسية »)
+  - chercher hors JORT les documents du programme national d'aide aux familles nécessiteuses et du ministère de l'Éducation (ligne budgétaire « إعانات مدرسية »)
+- id: r-assurance-scolaire-regime
+  objet: texte organisant l'assurance scolaire des élèves du public (garanties, organisme assureur, emploi des droits d'assurance perçus à l'inscription, décret n° 92-1185 puis décret n° 2010-1928)
+  ou: [precis/fr/education/_aides.qmd#sec-aides-frais-familles]
+  requetes:
+    titres_like: [assurance scolaire, mutuelle scolaire, droits d'inscription, frais d'inscription]
+    iort_ar: [التأمين المدرسي, التسجيل والتأمين والمكتبة]
+    depuis: 1958-11-04
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : LIKE sur titre et objet ; aucune notice « assurance scolaire ». Miroir iort : « التسجيل والتأمين والمكتبة » renvoie aux décrets n° 92-1185, 97-1355, 2010-1928 et 2019-898, tous lus au fascicule ; aucun ne règle l''assurance elle-même. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules (« assurance scolaire », « accidents scolaires », « التأمين المدرسي »)
+- id: r-droits-inscription-repartition
+  objet: arrêté conjoint des ministres de l'éducation et des finances fixant la répartition des droits d'inscription, d'assurance et de bibliothèque des collèges et lycées (décret gouvernemental n° 2019-898, art. 1, 2e alinéa)
+  ou: [precis/fr/education/_aides.qmd#sec-aides-frais-familles]
+  requetes:
+    titres_like: [droits d'inscription, frais d'inscription]
+    iort_ar: [رسوم التسجيل, معاليم التسجيل والتأمين, التسجيل والتأمين والمكتبة]
+    depuis: 2019-10-22
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : LIKE sur titre et objet, depuis 2010 ; seuls les décrets n° 2010-1928 et 2019-898. Miroir iort : « التسجيل والتأمين والمكتبة » sans arrêté conjoint. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules depuis octobre 2019 (« توزيع معاليم التسجيل »)
+- id: r-cahier-charges-restauration-eleves
+  objet: cahier des charges établi par le ministère de tutelle pour les prestations de restauration au profit des élèves et des apprenants (n° 30 bis du tableau A du code de la TVA, loi n° 2009-32, art. 3)
+  ou: [precis/fr/education/_aides.qmd#sec-aides-restauration-scolaire]
+  requetes:
+    titres_fts: ['restauration AND (eleves OR scolaire OR apprenants)']
+    titres_like: [cahier des charges%restauration, restauration%eleves]
+    iort_ar: [المطاعم المدرسية]
+    depuis: 2009-06-26
+  passes:
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026 : FTS et LIKE sur titre et objet ; seule la loi n° 2009-32 (numérotée à tort 2009-39 à l''index) et l''arrêté du 18 janvier 2016 sur la restauration universitaire. Miroir iort : « المطاعم المدرسية » sans cahier des charges. Plein texte des fascicules non parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules depuis juin 2009 (« cahier des charges », « كراس شروط » avec « مطاعم »)

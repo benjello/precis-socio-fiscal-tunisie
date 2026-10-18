@@ -1,0 +1,38 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-17
+# séries (tunisia_data) : educ-histoire-frise
+# sources (citation) : @loi58-118, @loi91-65, @loi2002-80, @loi2008-9, @loi2017-13, @constitution2022, @loi89-70, @decret2008-3123, @loi2008-19, @loi2008-10, @decret2000-2260, @decret-loi2024-2, @lf-2024, @decret57-78-bourse-nationale, @arrete-1966-10-03-bourses-scolaires, @loi70-9-onou, @decret86-688-bourses-prets, @loi88-135-oou-nord, @decret99-1544-prets-caisses, @decret-gouv-2016-664-office-services-scolaires, @arrete-2018-12-04-bourse-integration
+# fiches : 
+# méthode/hypothèses : Bornes en années, pour le tracé : les dates d'effet exactes sont au chapitre. Les bandes « par anticipation » marquent une règle appliquée avant la loi qui la fonde. Les textes connus par leur seul intitulé n'y figurent pas.
+# note : Les lois du système éducatif, 1956-2026 : une bande par ordre d'enseignement ou par règle, et la naissance des organes et des aides
+Domaine,Nature,Début,Fin,Règle ou dispositif,Texte,Article
+Enseignement scolaire,période,1958,1988,"loi de 1958 : accès dès six ans, gratuité à tous les degrés ; primaire 6 ans, moyen 3 ans, secondaire 6 ans",loi58-118,"art. 2 à 4, 8, 11, 15, 60"
+Enseignement scolaire,application anticipée,1989,1990,"école de base appliquée année par année à compter de l'année scolaire 1989-1990, avant la loi de 1991",loi91-65,art. 34
+Enseignement scolaire,période,1991,2001,"loi de 1991 : école de base de neuf ans (6 + 3), secondaire de 4 ans (2 + 2), matières de la base enseignées en arabe",loi91-65,"art. 8, 9, 11"
+Enseignement scolaire,période,2002,2026,loi d'orientation de 2002 : année préparatoire rattachée à la base ; secondaire en 1 + 3 à la rentrée 2003-2004 ; deux langues étrangères,loi2002-80,"art. 1er, 9, 16 à 18, 26, 69"
+Enseignement scolaire,naissance ou étape,2003,,"secondaire de quatre ans en 1 + 3, à la rentrée 2003-2004",loi2002-80,"art. 26, 69"
+Enseignement scolaire,naissance ou étape,2008,,langues étrangères permises dans tous les cycles ; collèges pilotes ; diplôme de fin de base général ou technique,loi2008-9,"art. 24, 29, 60 bis, 61"
+Obligation,période,1958,1990,"obligation de six à douze ans annoncée, non imposée : sa date est renvoyée à des dispositions ultérieures",loi58-118,art. 2
+Obligation,période,1991,2016,"obligation de six à seize ans, amende du tuteur",loi91-65,"art. 7, 32"
+Obligation,période,2017,2026,obligation de six à seize ans à l'école ; formation professionnelle initiale obligatoire jusqu'à dix-huit ans hors scolarité et hors emploi,loi2017-13,art. 1er à 3
+Obligation,naissance ou étape,2022,,obligation jusqu'à seize ans et gratuité de l'enseignement public inscrites dans la Constitution,constitution2022,art. 44
+Enseignement supérieur,période,1958,1988,enseignement supérieur prévu par la loi de 1958 (chapitre III),loi58-118,ch. III
+Enseignement supérieur,période,1989,2005,loi de 1989 : universités établissements publics administratifs ; aide de l'État ; frais d'inscription des étudiants disposant de ressources,loi89-70,"art. 1er, 5, 28, 30"
+Enseignement supérieur,application anticipée,2006,2007,licence du système LMD applicable à partir de l'année universitaire 2006-2007,decret2008-3123,art. 43
+Enseignement supérieur,période,2008,2026,"loi de 2008 : licence, mastère, doctorat ; supérieur public gratuit, droits d'inscription par décret",loi2008-19,"art. 3, 7"
+Enseignement supérieur,naissance ou étape,2012,,ancien régime des études éteint à la fin de l'année universitaire 2011-2012,loi2008-19,art. 56
+Formation professionnelle initiale,période,2008,2016,"loi de 2008 : trois cycles, du CAP au BTS ; baccalauréat professionnel ; apprentissage de 15 à 20 ans",loi2008-10,"art. 9, 13, 15, 18"
+Formation professionnelle initiale,période,2017,2026,formation obligatoire et gratuite jusqu'à dix-huit ans pour qui n'est ni scolarisé ni inséré,loi2017-13,"art. 1er, 2"
+Conseil supérieur et fonds,naissance ou étape,1958,,Conseil supérieur de l'éducation nationale,loi58-118,art. 38
+Conseil supérieur et fonds,naissance ou étape,2000,,Conseil supérieur de l'éducation (décret de 2000),decret2000-2260,"art. 2, 3"
+Conseil supérieur et fonds,naissance ou étape,2022,,"Conseil supérieur de l'éducation et de l'enseignement, inscrit dans la Constitution",constitution2022,art. 135
+Conseil supérieur et fonds,naissance ou étape,2024,,Conseil organisé en instance constitutionnelle,decret-loi2024-2,art. 2
+Conseil supérieur et fonds,naissance ou étape,2024,,fonds national de la réforme éducative (loi de finances pour 2024),lf-2024,art. 15
+Aides aux élèves et aux étudiants,naissance ou étape,1957,,bourse nationale des étudiants,decret57-78-bourse-nationale,
+Aides aux élèves et aux étudiants,naissance ou étape,1966,,bourses scolaires,arrete-1966-10-03-bourses-scolaires,
+Aides aux élèves et aux étudiants,naissance ou étape,1970,,Office national des œuvres universitaires,loi70-9-onou,
+Aides aux élèves et aux étudiants,naissance ou étape,1986,,prêt universitaire,decret86-688-bourses-prets,
+Aides aux élèves et aux étudiants,naissance ou étape,1988,,trois offices des œuvres universitaires,loi88-135-oou-nord,
+Aides aux élèves et aux étudiants,naissance ou étape,1991,,droits d'inscription pour les élèves dont les parents peuvent les payer (montants fixés en 1992),loi91-65,art. 24
+Aides aux élèves et aux étudiants,naissance ou étape,1999,,prêt universitaire des caisses de sécurité sociale,decret99-1544-prets-caisses,
+Aides aux élèves et aux étudiants,naissance ou étape,2016,,office des services scolaires,decret-gouv-2016-664-office-services-scolaires,
+Aides aux élèves et aux étudiants,naissance ou étape,2018,,bourse d'intégration universitaire,arrete-2018-12-04-bourse-integration,

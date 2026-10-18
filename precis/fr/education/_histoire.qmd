@@ -1,0 +1,218 @@
+# De la loi de 1958 au Conseil supérieur de l'éducation et de l'enseignement {#sec-educ-histoire .domicile-unique}
+
+Ce chapitre dit, dans l'ordre des dates, qui l'État scolarise, pendant combien d'années, à quel prix pour la famille et sous quelle obligation, de la loi de 1958 à la Constitution de 2022. Il suit ensuite le Conseil supérieur de l'éducation et le fonds de la réforme éducative, et finit par les effectifs d'élèves et d'étudiants de 1995-1996 à 2023-2024.
+
+L'état du droit scolaire et les textes de l'enseignement scolaire, date par date, ont leur chapitre, [l'enseignement scolaire](./_scolaire.html#sec-educ-scolaire) ; la [formation professionnelle initiale](./_formation_professionnelle.html#sec-educ-formation-professionnelle) et l'[enseignement supérieur](./_superieur.html#sec-educ-superieur) ont chacun le leur. Les bourses, les prêts, les cantines, les foyers et le montant des droits d'inscription ont leur chapitre, [les aides aux élèves et aux étudiants](./_aides.html#sec-educ-aides) ; la dépense publique d'éducation et ses personnels, le leur, [la dépense](./_depense.html#sec-educ-depense).
+
+## Vue d'ensemble {#sec-educ-histoire-vue}
+
+En 1958, l'État ouvre l'école gratuite à tous les enfants dès six ans. En 1991, il l'impose de six à seize ans. En 2002, il fait de l'éducation une « priorité nationale absolue » et y rattache une [année préparatoire](#g-annee-preparatoire). En 2017, il étend l'obligation à la formation professionnelle, jusqu'à dix-huit ans, pour le jeune qui a quitté l'école sans emploi.
+
+| Réforme | Ce que la loi cherche, dans ses mots | Avant → après |
+|---|---|---|
+| [1958 : la mise en place](./_scolaire.html#r-educ-h-1958) | « permettre à tous les enfants des deux sexes, sans distinction d'ordre racial, religieux ou social, le développement de leur personnalité » ; « former les cadres nécessaires » | régimes des décrets de 1888 et de 1920 → système unifié : accès dès six ans, gratuité « à tous les degrés », primaire de 6 ans, moyen de 3 ans, secondaire de 6 ans ; obligation de six à douze ans annoncée, non imposée |
+| [1991 : l'école de base et l'obligation](./_scolaire.html#r-educ-h-1991) | des finalités fixées « dans le cadre de l'identité nationale tunisienne et de l'appartenance à la civilisation arabo-musulmane » | obligation annoncée → imposée de six à seize ans, avec amende du tuteur ; primaire et moyen → école de base de 9 ans (6 + 3) ; secondaire de 6 ans → 4 ans (2 + 2) ; matières de la base enseignées en arabe ; gratuité garantie, mais droits d'inscription possibles pour qui peut payer |
+| [2002 : la loi d'orientation](./_scolaire.html#r-educ-h-2002) | « L'éducation est une priorité nationale absolue » ; « L'élève est au centre de l'action éducative » | obligation de six à seize ans confirmée ; année préparatoire de 5 à 6 ans rattachée à la base, hors gratuité et hors obligation ; secondaire en 1 + 3 ; deux langues étrangères ; amende relevée |
+| [2017 : l'obligation étendue à la formation](./_scolaire.html#r-educ-h-2017-obligation) | la « consécration de l'obligation d'accès à la formation professionnelle initiale » | obligation scolaire jusqu'à 16 ans → formation obligatoire et gratuite jusqu'à 18 ans pour qui n'est ni scolarisé ni inséré |
+
+: Les quatre grandes réformes de l'enseignement scolaire, 1958-2017 {#tbl-educ-reformes}
+
+```{python}
+#| label: fig-educ-frise
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import fig_educ_histoire as fig_eh
+import figtools
+figtools.figure_tabs(
+    fig_eh.fig_frise(), fig_eh.table_frise(), fig_eh.FRISE,
+    slug="fig_educ_histoire_frise",
+    caption="Les lois du système éducatif, 1956-2026 : une bande par ordre d'enseignement ou par règle, et la naissance des organes et des aides",
+    note_lecture=(
+        "Chaque bande est une règle en vigueur sur la période ; sa teinte change avec le "
+        "texte qui la porte. Une bande hachurée est une règle appliquée avant la loi qui la "
+        "fonde : l'école de base dès l'année scolaire 1989-1990, la licence du système "
+        "licence-mastère-doctorat dès 2006-2007. Les cercles blancs sont des étapes d'une "
+        "règle ; les cercles pleins, la naissance d'un organe, d'un fonds ou d'une aide. Les "
+        "traits verticaux marquent les quatre grandes réformes de l'enseignement scolaire. "
+        "Les bornes sont des années ; les dates d'effet sont dans le texte."
+    ),
+    nominal=False,
+    generated="{{< meta date >}}")
+```
+
+- **L'obligation, annoncée en 1958, n'est imposée qu'en 1991.** La loi de 1958 renvoie la date de l'obligation à un texte ultérieur ; la loi de 1991 l'impose de six à seize ans et punit d'une amende le [tuteur](#g-tuteur) qui n'inscrit pas son enfant.
+- **La [gratuité](#g-gratuite-enseignement) est de principe depuis 1958, mais des [droits d'inscription](#g-droits-inscription) existent depuis 1991**, à la charge des familles qui peuvent les payer. Leurs montants sont exposés au chapitre des aides ([les frais des familles](./_aides.html#sec-educ-frais-familles)).
+- **Le secondaire passe de six ans à quatre ans** : six ans en 1958, à côté d'un enseignement moyen de trois ans ; quatre ans en deux cycles de deux ans en 1991 ; quatre ans en un an de tronc commun et trois ans de filières à la rentrée 2003-2004.
+- **Deux ordres ont leur propre chapitre** : la formation professionnelle initiale (@sec-educ-formation-professionnelle) et l'enseignement supérieur (@sec-educ-superieur). Le Conseil supérieur de l'éducation a sa section dans ce chapitre (@sec-educ-conseil).
+
+## La mise en place : la loi de 1958 {#sec-educ-1958}
+
+En 1958, l'État ouvre l'école à tous les enfants dès six ans, la rend gratuite à tous les degrés, et renvoie l'obligation à un texte ultérieur. Les visas de la loi nomment deux décrets antérieurs : un [décret du 15 septembre 1888](./_scolaire.html#r-educ-h-1958) relatif à l'enseignement et un décret du 21 janvier 1920 relatif aux écoles privées. Le nouveau régime prend effet au [1^er^ octobre 1958](./_scolaire.html#r-educ-h-1958), avant la signature de la loi, le 4 novembre, et sa publication, le 7 novembre.
+
+| Ordre | Durée | Organisation |
+|---|---|---|
+| Primaire (premier degré) | 6 ans | un cycle unique, que peut précéder un court cycle d'éducation enfantine |
+| [Enseignement moyen](#g-enseignement-moyen) (second degré) | 3 ans | collèges moyens, en trois sections : générale, commerciale, industrielle ; brevet d'enseignement moyen, ouvert dès quatorze ans |
+| [Enseignement secondaire](#g-enseignement-secondaire) (second degré) | 6 ans | deux cycles de trois ans ; trois options, générale, économique et technique ; baccalauréat en deux parties |
+| Enseignement supérieur | — | un chapitre de la loi ; voir le [chapitre de l'enseignement supérieur](./_superieur.html#sec-educ-superieur) |
+
+: Les ordres d'enseignement de la [loi de 1958](./_scolaire.html#r-educ-h-1958) {#tbl-educ-1958-ordres}
+
+- **Ce que la loi cherche.** Selon son [article premier](./_scolaire.html#r-educ-h-1958), l'éducation et l'instruction ont pour buts « de permettre à tous les enfants des deux sexes, sans distinction d'ordre racial, religieux ou social, le développement de leur personnalité et de leurs aptitudes naturelles », de faire profiter tous des progrès de la science, de favoriser « le développement et l'épanouissement de la culture nationale », et de « former les cadres nécessaires aux développements de l'activité nationale ».
+- **La gratuité, et l'aide aux élèves doués.** « L'enseignement sera dispensé gratuitement à tous les degrés » ; l'État accorde en outre « toute l'aide possible » aux élèves et aux étudiants doués dont les familles n'ont pas de ressources suffisantes ([art. 3](./_scolaire.html#r-educ-h-1958-gratuite)). Cet article est le fondement légal des bourses : le décret de 1971 sur les bourses scolaires le vise expressément ([les bourses scolaires](./_aides.html#sec-educ-bourses-scolaires)).
+- **L'obligation, annoncée seulement.** L'accès à l'école est « ouvert à tous les enfants à partir de l'âge de six ans ». Mais « des dispositions ultérieures fixeront la date à partir de laquelle l'obligation d'assurer aux enfants l'instruction de six à douze ans, sera imposée à tous les parents » ([art. 2](./_scolaire.html#r-educ-h-1958-obligation)) : la loi n'impose donc aucune obligation. Le texte qui devait fixer la date de cette obligation n'est pas identifié ici ; l'obligation n'est imposée qu'en 1991 (@sec-educ-1991). <!-- RECHERCHE r-loi58-118-art2-obligation : texte fixant la date de l'obligation de six à douze ans annoncée par la loi n° 58-118, art. 2, al. 2 (voir docs/recherches.yml) -->
+- **Les institutions.** La loi crée un [Conseil supérieur de l'éducation nationale](#r-educ-h-1958-conseil), appelé à donner son avis sur les questions relatives à l'enseignement : c'est le premier des conseils dont @sec-educ-conseil suit la filiation. Elle met à la charge des collectivités des [dépenses obligatoires](./_scolaire.html#r-educ-h-1958-collectivites) — construction, logement du personnel, entretien, mobilier, éclairage et chauffage — et soumet l'[enseignement privé](./_scolaire.html#r-educ-h-1958-collectivites) à déclaration et à autorisation, avec des conditions de nationalité, d'âge et de titres.
+
+La loi ne fixe pas de langue d'enseignement générale : elle ne nomme la langue arabe qu'à propos de deux sections du baccalauréat et des matières que le privé doit enseigner. Aucun de ses articles ne nomme l'enseignement zitounien.
+
+## Les grandes réformes, 1991-2017 {#sec-educ-reformes}
+
+Trois réformes changent les règles de base de l'enseignement scolaire après 1958 : l'école de base et l'obligation en 1991, la loi d'orientation en 2002, l'obligation de formation en 2017. Les textes de ces règles, date par date, sont réunis au chapitre de l'enseignement scolaire, dans sept registres repliés, de 1958 à 2025 : obligation, gratuité, cycles et langues, examens nationaux et établissements pilotes, préscolaire, collectivités et privé, cours particuliers (@sec-educ-scolaire-textes).
+
+### 1991 : l'école de base et l'obligation de six à seize ans {#sec-educ-1991}
+
+En 1991, l'État impose l'école de six à seize ans, regroupe le primaire et le moyen en une [école de base](#g-enseignement-de-base) de neuf ans, et fait enseigner en arabe les matières de cette école. La loi fixe ses finalités « dans le cadre de l'identité nationale tunisienne et de l'appartenance à la civilisation arabo-musulmane », dont la maîtrise de l'arabe « en tant que langue nationale » et d'« une langue étrangère au moins » ([art. 1^er^](./_scolaire.html#r-educ-h-1991)).
+
+- **L'obligation et l'amende.** « L'enseignement de base est obligatoire à partir de l'âge de 6 ans jusqu'à l'âge de 16 ans, pour tout élève à même de poursuivre régulièrement ses études » ([art. 7](./_scolaire.html#r-educ-h-1991-obligation)). Le tuteur qui n'inscrit pas son enfant, ou le retire avant seize ans, encourt une amende de 10 à 100 dinars, portée à 200 dinars en cas de récidive. Il en est exempté s'il réside loin de l'établissement le plus proche : [à plus de 2 km](./_scolaire.html#r-educ-h-1992-distances) d'une école primaire, 3 km d'une école préparatoire sans internat, 20 km d'une école pourvue d'un internat.
+- **Neuf ans d'école de base, puis quatre ans de secondaire.** L'école de base compte un premier degré de six ans à l'école primaire et un second degré de trois ans dans les [écoles préparatoires](#g-ecole-preparatoire). Un examen national la clôt, dont les admis reçoivent le [diplôme de fin d'études de l'enseignement de base](#g-diplome-fin-enseignement-base), qui ouvre le secondaire : deux cycles de deux ans, sanctionnés par le baccalauréat ([art. 8 à 11 et 14](./_scolaire.html#r-educ-h-1991)).
+- **L'arabe dans la base.** « Dans les deux degrés de l'enseignement de base, toutes les matières concernant les humanités, les sciences et les techniques sont enseignées en arabe » ([art. 9](./_scolaire.html#r-educ-h-1991)).
+- **La gratuité, et des droits pour qui peut payer.** L'État garantit « gratuitement, à tous ceux qui sont en âge d'être scolarisés, le droit à la formation scolaire », avec une aide aux élèves de familles « économiquement modestes » ; mais les ressources des établissements comprennent des « droits d'inscription pouvant être mis à la charge des élèves dont les revenus des parents le leur rendent à même de les payer », et des droits d'assurance et de bibliothèque ([art. 4 et 24](./_scolaire.html#r-educ-h-1991-gratuite)). Les droits d'inscription naissent ici ; leurs montants, fixés à partir de 1992, et leur exonération sont exposés au chapitre des aides ([les frais des familles](./_aides.html#sec-educ-frais-familles)). L'aide aux élèves modestes reprend, elle, la promesse de 1958.
+
+La loi devient exécutoire le [8 août 1991](./_scolaire.html#r-educ-h-1991), mais l'école de base s'applique « année par année, à compter de l'année scolaire 1989-1990 », donc avant la loi ; la loi de 1958 cesse progressivement de s'appliquer, jusqu'à ce que l'école de base atteigne sa neuvième année. En janvier 2002, l'examen de fin de base [devient facultatif](./_scolaire.html#r-educ-h-2002-5) : « tout élève qui le désire » peut le passer.
+
+### 2002 : la loi d'orientation et l'année préparatoire {#sec-educ-2002}
+
+En 2002, l'État fait de l'éducation une « priorité nationale absolue », confirme l'obligation de six à seize ans, et rattache à l'école de base une année préparatoire qui n'est ni obligatoire ni gratuite. Le [premier article de la loi d'orientation](./_scolaire.html#r-educ-h-2002) le dit : « L'éducation est une priorité nationale absolue et l'enseignement est obligatoire de six à seize ans. L'enseignement est un droit fondamental garanti à tous les Tunisiens sans discrimination fondée sur le sexe, l'origine sociale, la couleur ou la religion » ; le deuxième ajoute : « L'élève est au centre de l'action éducative. »
+
+Ce chapitre range 2002 parmi les ruptures, parce que la loi vise un public nouveau, les enfants de cinq à six ans, et se donne un objectif qu'elle énonce elle-même.
+
+- **L'[éducation préscolaire](#g-education-prescolaire) et l'année préparatoire.** L'éducation préscolaire s'adresse aux enfants de trois à six ans ; « la dernière année, qui concerne la tranche d'âge de 5 à 6 ans, constitue une année préparatoire au cycle primaire », que l'État « veille à généraliser » avec les collectivités locales, les associations et le secteur privé. La loi la range dans la base, mais en écarte la gratuité et l'obligation : « L'année préparatoire fait partie de l'enseignement de base. Les dispositions du paragraphe 1 de l'article 4 et celles du paragraphe 1 de l'article 20 de la présente loi ne s'appliquent pas à l'année préparatoire » ([art. 16 à 18](./_scolaire.html#r-educ-h-2002)).
+- **Les cycles.** La base compte un [cycle primaire](#g-cycle-primaire) de six ans et un [cycle préparatoire](#g-cycle-preparatoire) de trois ans, dans les collèges. Le secondaire dure quatre ans : un an de tronc commun, puis trois ans en filières, à la rentrée [2003-2004](./_scolaire.html#r-educ-h-2002). L'examen de fin de base reste facultatif.
+- **Les langues.** Les disciplines « sociales, scientifiques, techniques et artistiques » sont enseignées en arabe dans la base ; l'école donne la maîtrise de l'arabe et de « deux langues étrangères au moins », enseignées dès le premier cycle ([art. 9, 24 et 51](./_scolaire.html#r-educ-h-2002)).
+- **L'amende relevée.** L'amende du tuteur passe à [20 à 200 dinars](./_scolaire.html#r-educ-h-2002-obligation), 400 dinars en cas de récidive.
+
+Entre 2002 et 2017, la loi de 2008 [ajuste ces règles](./_scolaire.html#r-educ-h-2008-9) sans en changer l'objet : langues étrangères permises dans tous les cycles, collèges pilotes à côté des lycées pilotes, diplôme de fin de base « général » ou « technique », organisation du secondaire renvoyée au décret. Les règles qui en résultent sont celles de l'[état du droit scolaire](./_scolaire.html#sec-educ-etat-droit).
+
+### 2017 : l'obligation étendue à la formation jusqu'à dix-huit ans {#sec-educ-2017}
+
+En 2017, l'État oblige à se former, jusqu'à dix-huit ans, le jeune qui n'est plus scolarisé et n'a pas d'emploi, et lui garantit une formation gratuite. La loi a pour objet, selon son intitulé, la « consécration de l'obligation d'accès à la formation professionnelle initiale ».
+
+- **Le public.** Sous réserve de l'obligation scolaire de six à seize ans, la [formation professionnelle initiale](#g-formation-professionnelle-initiale) est obligatoire jusqu'à dix-huit ans pour toute personne qui ne s'est pas insérée dans la vie professionnelle, sauf si elle poursuit sa scolarité ([art. 1^er^](./_scolaire.html#r-educ-h-2017-obligation)).
+- **La gratuité et l'amende.** L'État garantit la [gratuité de cette formation](./_scolaire.html#r-educ-h-2017-gratuite). Le tuteur dûment informé qui n'inscrit pas son pupille encourt l'amende de la loi de 2002 : 20 à 200 dinars, 400 en cas de récidive.
+
+Ce chapitre range 2017 parmi les ruptures, parce que la loi vise un public nouveau — les jeunes de seize à dix-huit ans hors de l'école et hors de l'emploi — et touche l'obligation, qui est une règle de base de l'enseignement scolaire. Les cycles ouverts à ce public et le texte d'application sont exposés au [chapitre de la formation professionnelle initiale](./_formation_professionnelle.html#sec-educ-formation-professionnelle). Après 2017, la Constitution de 2022 inscrit l'obligation jusqu'à seize ans et la gratuité dans son article 44 ([l'état du droit scolaire](./_scolaire.html#sec-educ-etat-droit)).
+
+
+## Le Conseil supérieur et le fonds de la réforme éducative {#sec-educ-conseil}
+
+Un conseil consultatif de l'éducation existe depuis 1958. La Constitution de 2022 en fait une instance constitutionnelle, le [Conseil supérieur de l'éducation et de l'enseignement](#g-conseil-superieur-education-enseignement), organisé en 2024. Depuis 2024, un [fonds national de la réforme éducative](#g-fonds-national-reforme-educative), dont le président du Conseil est l'ordonnateur, finance la réforme sur des ressources propres.
+
+| Date | Organe | Mission et statut |
+|---|---|---|
+| [1958](#r-educ-h-1958-conseil) | Conseil supérieur de l'éducation nationale | auprès du secrétariat d'État à l'Éducation nationale, sous sa présidence ; avis sur les questions relatives à l'enseignement |
+| [1991](#r-educ-h-1991-conseil) | [Conseil supérieur de l'éducation](#g-conseil-superieur-education) | consulté sur les questions d'intérêt national relatives à l'éducation et à l'enseignement ; composition et mission renvoyées au décret |
+| [2000](#r-educ-h-2000-conseil) | Conseil supérieur de l'éducation | présidé par le Premier ministre ; avis sur la politique nationale d'éducation et sur « les actions de réformes à entreprendre à tous les niveaux » ; réunion au moins annuelle |
+| [2022](#r-educ-h-2022-conseil) | Conseil supérieur de l'éducation et de l'enseignement | inscrit dans la Constitution ; avis sur les grands plans nationaux d'éducation, d'enseignement, de recherche, de formation professionnelle et d'emploi |
+| [2024](#r-educ-h-2024-conseil) | Conseil supérieur de l'éducation et de l'enseignement | instance constitutionnelle dotée de la personnalité juridique et de l'autonomie financière ; avis obligatoire ; rapport annuel publié ; [fonds de la réforme](#r-educ-h-2024-fonds) |
+| [2025](#r-educ-h-2025-conseil) | Conseil supérieur de l'éducation et de l'enseignement | organisation administrative et financière : secrétaire général, président ordonnateur, crédits de l'État |
+
+: Les conseils supérieurs de l'éducation, 1958-2025 {#tbl-educ-conseil-filiation}
+
+- **Trois organes, trois noms.** Le Conseil supérieur de l'éducation nationale de 1958, le Conseil supérieur de l'éducation de 1991 et de 2000, et le Conseil supérieur de l'éducation et de l'enseignement de 2022-2024 sont trois organes distincts. Un décret de 1989 en a institué un quatrième, le Conseil supérieur de l'éducation et de l'enseignement supérieur, que le décret de 2000 abroge. La loi d'orientation de 2002 ne reprend aucun article sur un conseil supérieur.
+- **2022-2024 : un organe consultatif devient une instance constitutionnelle.** L'[article 135 de la Constitution](#r-educ-h-2022-conseil) dispose : « يتولى المجلس الأعلى للتربية والتعليم إبداء الرأي في الخطط الوطنية الكبرى في مجال التربية والتعليم والبحث العلمي والتكوين المهني وآفاق التشغيل » — le Conseil donne son avis sur les grands plans nationaux en matière d'éducation, d'enseignement, de recherche scientifique, de formation professionnelle et de perspectives d'emploi ; la loi fixe sa composition, ses attributions et son fonctionnement. La Constitution porte la date du référendum, le 25 juillet 2022, et entre en vigueur à compter de la proclamation, par l'Instance supérieure indépendante pour les élections, des résultats définitifs du référendum (art. 141 et 142). Le [décret-loi de 2024](#r-educ-h-2024-conseil) fait du Conseil une « هيئة دستورية تتمتع بالشخصية القانونية والاستقلالية المالية », une instance constitutionnelle dotée de la personnalité juridique et de l'autonomie financière. Son avis est obligatoire sur toutes les questions de l'article 135 ; il le rend dans les soixante jours, trente en cas d'urgence ; il remet chaque année au Président de la République un rapport publié au *Journal officiel*. Le [décret de 2025](#r-educ-h-2025-conseil) en fixe l'organisation administrative et financière.
+- **Une présidence tournante.** Le ministre le plus âgé préside la séance inaugurale ; les ministres de sept secteurs — éducation ; enseignement supérieur et recherche ; emploi et formation professionnelle ; famille, femme, enfance et personnes âgées ; jeunesse et sports ; affaires religieuses ; affaires culturelles — se relaient ensuite tous les six mois à la présidence. Le Conseil compte une instance supérieure (les ministres, sept experts nommés pour trois ans, les présidents des deux autres instances et un représentant syndical), une instance d'experts de quatorze membres, dont quatre inspecteurs pédagogiques retraités, qui prépare études et propositions de réforme, et une instance d'évaluation de neuf membres, qui évalue plans, politiques et programmes.
+- **2024 : un fonds sur ressources propres.** La [loi de finances pour 2024](#r-educ-h-2024-fonds) crée un fonds national de la réforme éducative (« صندوق وطني للإصلاح التربوي »). Ses ressources sont les dons des Tunisiens, 0,5 % des bénéfices des établissements éducatifs privés — écoles, instituts, facultés, centres de formation — et 0,25 % des bénéfices des sociétés pétrolières, des assurances, des banques, des grandes surfaces et des pharmacies. Il finance le diagnostic du système éducatif, l'ingénierie de programmes alternatifs et la préparation des espaces éducatifs. Le président du Conseil en est l'ordonnateur ; jusqu'à sa nomination, le ministre de l'Éducation l'est à titre provisoire. Ce chapitre range ce fonds parmi les ruptures : il apporte à la réforme un financeur nouveau, hors des crédits de l'État.
+
+Après 2011, aucun texte du *Journal officiel* organisant une consultation nationale sur la réforme du système éducatif n'est identifié ici. <!-- RECHERCHE r-education-consultation-reforme : texte publié au JORT organisant une consultation ou un dialogue national sur la réforme du système éducatif, 2011-2026 (voir docs/recherches.yml) -->
+
+:::: {.chronologie-repliable titre="Conseil supérieur de l'éducation et fonds de la réforme éducative : textes, date par date, 1958-2025"}
+
+| Date | Texte et article | Changement concret | Portée |
+|---|---|---|---|
+| []{#r-educ-h-1958-conseil}[1^er^ octobre 1958]{.insecable} | loi n° 58-118 du 4 novembre 1958 [@loi58-118, art. 38, p. 1059] | néant → Conseil supérieur de l'éducation nationale, auprès du secrétariat d'État à l'Éducation nationale et sous la présidence du secrétaire d'État, « appelé à donner son avis sur les questions relatives à l'enseignement » | mise en place |
+| []{#r-educ-h-1991-conseil}[8 août 1991]{.insecable} | loi n° 91-65 du 29 juillet 1991 [@loi91-65, art. 2] | néant → Conseil supérieur de l'éducation, « consulté sur les questions d'intérêt national relatives à l'éducation et à l'enseignement » ; composition et mission par décret | étape |
+| []{#r-educ-h-2000-conseil}au plus tôt le [18 octobre 2000]{.insecable} | décret n° 2000-2260 du 10 octobre 2000 [@decret2000-2260, art. 2 à 6, p. 2463-2464] | décret n° 89-1295 → Conseil supérieur de l'éducation présidé par le Premier ministre : une trentaine de membres du gouvernement, des représentants d'organisations et d'ordres nationaux, huit membres choisis par le Premier ministre ; avis sur la politique nationale d'éducation et les réformes ; réunion au moins une fois par an ; secrétariat par le ministre de l'éducation ou celui de l'enseignement supérieur | étape de 1991 |
+| 2022 | projets de Constitution publiés par les décrets présidentiels n° 2022-578 (*Journal officiel* n° 74 du 30 juin 2022, p. 2359) et n° 2022-607 (*Journal officiel* n° 77 du 8 juillet 2022, p. 2425) | même rédaction de l'article sur le Conseil que dans la Constitution adoptée | — |
+| []{#r-educ-h-2022-conseil}à la proclamation des résultats définitifs du référendum (art. 142) | Constitution du 25 juillet 2022 [@constitution2022, art. 135, 141 et 142, p. 45 et 47-48] ; promulgation [@decret-pres2022-691] | conseil prévu par la loi → Conseil supérieur de l'éducation et de l'enseignement, au titre IX de la Constitution ; avis sur les grands plans nationaux d'éducation, d'enseignement, de recherche scientifique, de formation professionnelle et de perspectives d'emploi ; composition, attributions et fonctionnement fixés par la loi | rupture (2022-2024) |
+| []{#r-educ-h-2024-fonds}exercice 2024 | loi n° 2023-13 du 11 décembre 2023, portant loi de finances pour l'année 2024 [@lf-2024, art. 15, p. 6439] | néant → fonds national de la réforme éducative : dons ; 0,5 % des bénéfices des établissements éducatifs privés ; 0,25 % de ceux des sociétés pétrolières, des assurances, des banques, des grandes surfaces et des pharmacies ; emplois : diagnostic, programmes alternatifs, espaces éducatifs ; ordonnateur : le président du Conseil, à titre provisoire le ministre de l'Éducation | rupture : un financeur nouveau |
+| []{#r-educ-h-2024-conseil}au plus tôt le [22 septembre 2024]{.insecable} | décret-loi n° 2024-2 du 16 septembre 2024 [@decret-loi2024-2, art. 2 à 4 et 8 à 14, p. 4851-4852] | néant → instance constitutionnelle dotée de la personnalité juridique et de l'autonomie financière, siège à Tunis ; présidence tournante de six mois entre sept ministres ; instance supérieure, instance d'experts (14 membres), instance d'évaluation (9 membres) ; avis obligatoire, dans les 60 jours (30 en urgence) ; rapport annuel au Président de la République, publié | rupture (2022-2024) |
+| []{#r-educ-h-2025-conseil}au plus tôt le [14 mai 2025]{.insecable} | décret n° 2025-246 du 8 mai 2025 [@decret2025-246, art. 1^er^ à 7, p. 1222] | néant → secrétaire général ; président ordonnateur ; ressources sur crédits de l'État ; comptable public | étape de 2024 |
+
+::::
+
+<!-- TODO (documentaliste) : relire l'article d'effet de la loi de finances pour 2024 pour dater la ligne r-educ-h-2024-fonds (date d'effet de l'art. 15) ; lire le décret n° 62-403 pour la filiation (fiche de plan § 7.1, Q12). -->
+
+## Les élèves et les étudiants, 1995-2024 {#sec-educ-eleves}
+
+Les enseignants et les personnels de l'éducation sont exposés au chapitre de la dépense ([les personnels](./_depense.html#sec-educ-depense-personnels)).
+
+Le nombre d'élèves du premier cycle de l'école de base baisse jusqu'en 2008-2009, puis remonte. Celui du second cycle de la base et du secondaire croît jusqu'en 2006-2007, baisse jusqu'au milieu des années 2010, puis remonte. Le nombre d'étudiants triple de 1995-1996 à 2008-2009, puis recule jusqu'en 2020-2021. Les chiffres sont ceux de l'*Annuaire statistique de la Tunisie* de l'Institut national de la statistique (INS), qui cite le ministère de l'Éducation et celui de l'Enseignement supérieur [@ins-annuaire-statistique].
+
+| Année scolaire | Premier cycle de la base<br>(élèves) | dont privé<br>(élèves) | Second cycle de la base et secondaire<br>(élèves) | dont privé<br>(élèves) | Étudiants<br>(effectif) |
+|---|---:|---:|---:|---:|---:|
+| 1995-1996 | 1 468 998 | 8 897 | 794 394 | 68 468 | 112 634 |
+| 2000-2001 | 1 373 904 | 10 511 | 1 015 996 | 53 011 | 207 388 |
+| 2003-2004 | 1 228 347 | 12 459 | 1 123 415 | 47 177 | 291 842 |
+| 2005-2006 | 1 134 414 | 13 990 | 1 134 177 | 58 660 | 321 838 |
+| 2006-2007 | 1 068 822 | 15 406 | 1 147 889 | 59 073 | 326 185 |
+| 2008-2009 | 1 025 044 | 18 556 | 1 058 911 | 52 768 | 349 142 |
+| 2010-2011 | 1 027 970 | 24 953 | 991 316 | 54 918 | 336 017 |
+| 2011-2012 | 1 043 711 | 28 875 | 979 944 | 57 486 | 330 541 |
+| 2015-2016 | 1 139 314 | 60 313 | 952 054 | 58 706 | 255 783 |
+| 2020-2021 | 1 303 758 | 101 091 | 1 062 643 | 82 180 | 232 614 |
+| 2023-2024 | 1 334 153 | 128 513 | 1 143 106 | 108 591 | 266 837 |
+
+: Élèves et étudiants, public et privé, 1995-1996 à 2023-2024 : une année sur cinq, les années de réforme et la dernière année {#tbl-educ-eleves-court}
+
+<!-- TODO (rédacteur) : remplacer par la figure engendrée fig-educ-eleves (fiche de plan § 2.5, F2), après versement des cinq CSV d'effectifs (docs/notes/education-depense-series/) à tunisia-data et au catalogue ; marques : 2003-2004, 2006-2007, 2011-2012. -->
+
+- **Le privé au premier cycle.** Les élèves du privé passent de 8 897 en 1995-1996 à 128 513 en 2023-2024 ; leur part dans le premier cycle passe de moins de 1 % à près de 10 %.
+- **Les réformes dans les effectifs.** Le secondaire passe en 1 + 3 à la rentrée 2003-2004 (@sec-educ-2002) ; la licence du système [LMD](#g-lmd) s'applique dès 2006-2007, et l'ancien régime des études s'éteint à la fin de 2011-2012 (@sec-educ-superieur). Les années de ces réformes figurent au tableau.
+- **Deux ruptures de définition.** À partir de 2006-2007, l'annuaire compte les « étudiants réguliers », contre les « étudiants » auparavant, sans année commune aux deux définitions : la série du supérieur n'est pas homogène de part et d'autre. La ligne du second cycle et du secondaire est la somme du public et du privé ; elle ne comprend pas les écoles de qualification technique, que le total de l'annuaire compte. Pour 1999-2000, l'annuaire imprime au premier cycle un total de 1 440 795, qui n'est pas la somme de ses propres lignes public et privé ; le tableau retient cette somme, 1 413 795.
+
+<!-- TODO (documentaliste) : toutes les lignes du CSV etudiants-total.csv portent le libellé « Effectif des étudiants (réguliers) », y compris avant 2006-2007 ; la note education-histoire § 3.1 (b) situe pourtant le changement de libellé à l'édition 2006-2010. Vérifier le libellé des éditions 1995-2001 à 2005-2009 avant de publier la figure. -->
+
+:::: {.chronologie-repliable titre="Élèves et étudiants par cycle et par secteur : effectifs annuels, 1995-1996 à 2023-2024"}
+
+| Année scolaire | Premier cycle, public<br>(élèves) | Premier cycle, privé<br>(élèves) | Premier cycle, total<br>(élèves) | Second cycle et secondaire, public<br>(élèves) | Second cycle et secondaire, privé<br>(élèves) | Second cycle et secondaire, total<br>(élèves) | Étudiants<br>(effectif) | Édition de l'annuaire | Page |
+|---|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| 1995-1996 | 1 460 101 | 8 897 | 1 468 998 | 725 926 | 68 468 | 794 394 | 112 634 | 1995-2001 | 53 |
+| 1996-1997 | 1 441 143 | 9 773 | 1 450 916 | 789 620 | 75 379 | 864 999 | 121 787 | 1995-2001 | 53 |
+| 1997-1998 | 1 440 479 | 9 685 | 1 450 164 | 833 372 | 70 239 | 903 611 | 137 024 | 1995-2001 | 53 |
+| 1998-1999 | 1 432 896 | 10 008 | 1 442 904 | 874 814 | 63 912 | 938 726 | 155 120 | 1995-2001 | 53 |
+| 1999-2000 | 1 403 729 | 10 066 | 1 413 795 | 908 248 | 57 359 | 965 607 | 180 044 | 1999-2003 | 57 |
+| 2000-2001 | 1 363 393 | 10 511 | 1 373 904 | 962 985 | 53 011 | 1 015 996 | 207 388 | 2000-2004 | 57 |
+| 2001-2002 | 1 314 836 | 10 871 | 1 325 707 | 1 027 812 | 46 579 | 1 074 391 | 226 102 | 2001-2005 | 57 |
+| 2002-2003 | 1 265 462 | 11 662 | 1 277 124 | 1 057 233 | 45 321 | 1 102 554 | 262 502 | 2002-2006 | 57 |
+| 2003-2004 | 1 215 888 | 12 459 | 1 228 347 | 1 076 238 | 47 177 | 1 123 415 | 291 842 | 2003-2007 | 55 |
+| 2004-2005 | 1 171 019 | 13 282 | 1 184 301 | 1 084 878 | 51 779 | 1 136 657 | 311 569 | 2004-2008 | 55 |
+| 2005-2006 | 1 120 424 | 13 990 | 1 134 414 | 1 075 517 | 58 660 | 1 134 177 | 321 838 | 2005-2009 | 47 |
+| 2006-2007 | 1 053 416 | 15 406 | 1 068 822 | 1 088 816 | 59 073 | 1 147 889 | 326 185 | 2006-2010 | 47 |
+| 2007-2008 | 1 019 421 | 17 024 | 1 036 445 | 1 069 585 | 57 179 | 1 126 764 | 335 649 | 2007-2011 | 49 |
+| 2008-2009 | 1 006 488 | 18 556 | 1 025 044 | 1 006 143 | 52 768 | 1 058 911 | 349 142 | 2008-2012 | 49 |
+| 2009-2010 | 1 008 600 | 21 509 | 1 030 109 | 967 708 | 56 285 | 1 023 993 | 346 079 | 2008-2012 | 49 |
+| 2010-2011 | 1 003 017 | 24 953 | 1 027 970 | 936 398 | 54 918 | 991 316 | 336 017 | 2010-2014 | 43 |
+| 2011-2012 | 1 014 836 | 28 875 | 1 043 711 | 922 458 | 57 486 | 979 944 | 330 541 | 2011-2015 | 43 |
+| 2012-2013 | 1 029 559 | 33 732 | 1 063 291 | 908 600 | 63 784 | 972 384 | 304 365 | 2012-2016 | 43 |
+| 2013-2014 | 1 049 177 | 40 043 | 1 089 220 | 887 445 | 70 242 | 957 687 | 293 982 | 2013-2017 | 43 |
+| 2014-2015 | 1 066 493 | 48 390 | 1 114 883 | 876 711 | 69 235 | 945 946 | 282 819 | 2014-2018 | 43 |
+| 2015-2016 | 1 079 001 | 60 313 | 1 139 314 | 893 348 | 58 706 | 952 054 | 255 783 | 2015-2019 | 43 |
+| 2016-2017 | 1 100 790 | 69 680 | 1 170 470 | 884 347 | 68 325 | 952 672 | 243 292 | 2016-2020 | 43 |
+| 2017-2018 | 1 122 693 | 79 043 | 1 201 736 | 887 615 | 74 565 | 962 180 | 235 102 | 2017-2021 | 43 |
+| 2018-2019 | 1 149 245 | 90 294 | 1 239 539 | 899 696 | 80 737 | 980 433 | 233 534 | 2018-2022 | 43 |
+| 2019-2020 | 1 171 569 | 97 843 | 1 269 412 | 926 832 | 87 936 | 1 014 768 | 232 989 | 2019-2023 | 43 |
+| 2020-2021 | 1 202 667 | 101 091 | 1 303 758 | 980 463 | 82 180 | 1 062 643 | 232 614 | 2019-2023 | 43 |
+| 2021-2022 | 1 209 453 | 111 710 | 1 321 163 | 987 216 | 94 373 | 1 081 589 | 256 564 | 2019-2023 | 43 |
+| 2022-2023 | 1 215 948 | 121 579 | 1 337 527 | 1 011 474 | 102 574 | 1 114 048 | 260 647 | 2019-2023 | 43 |
+| 2023-2024 | 1 205 640 | 128 513 | 1 334 153 | 1 034 515 | 108 591 | 1 143 106 | 266 837 | 2019-2023 | 43 |
+
+: Élèves par cycle et par secteur, et étudiants, 1995-1996 à 2023-2024 {#tbl-educ-eleves-annuel}
+
+Source : INS, *Annuaire statistique de la Tunisie*, chapitre « Enseignement et culture », tableau des données générales de l'enseignement, édition et page indiquées pour chaque année [@ins-annuaire-statistique]. Totaux calculés comme somme du public et du privé.
+
+::::
+
+<!-- TODO (documentaliste) : lire ces textes, dont la ligne du tableau a été retirée faute de contenu établi, puis rétablir la ligne avec le changement concret (article, avant → après) : 1962 : décret n° 62-403 du 21 décembre 1962, relatif au conseil supérieur de l'éducation nationale (*Journal officiel* n° 63 de 1962, p. 1613-1616 ; rectificatif p. 372) ; 1989 : décret n° 89-1295 du 31 août 1989 (*Journal officiel* n° 62 de 1989, p. 1428-1429), Conseil supérieur de l'éducation et de l'enseignement supérieur, connu par les visas du décret de 2000, qui l'abroge [@decret2000-2260, visas et art. 6] ; 2011 : décret-loi n° 2011-46 du 25 mai 2011, portant création du centre national des technologies en éducation (*Journal officiel* n° 39 de 2011, p. 808-809) ; 2021 : décret gouvernemental n° 2021-57 du 13 janvier 2021, portant création de l'établissement public « École de la deuxième chance », complété par le décret n° 2022-932 (*Journal officiel* n° 7 de 2021, p. 137-141). -->
+
+<!-- TODO (documentaliste) : lire le décret n° 89-1295 du 31 août 1989 (JORT n° 62 de 1989, p. 1428-1429) qui institue le Conseil supérieur de l'éducation et de l'enseignement supérieur, et sourcer par lui la phrase sur ce conseil, puis rétablir un renvoi vers sa ligne du tableau. -->
