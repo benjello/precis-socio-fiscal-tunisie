@@ -10474,3 +10474,2081 @@ entries:
       terme: مساهمة عمومية
       definition: ""
       synonymes: [المساهمات العمومية]
+
+  # ── Éducation (passe 1 du terminologue, 17 octobre 2026) ─────────────────────
+  # Notions des notes docs/notes/education-*-2026-10-17.md. Passe 2 (même jour) :
+  # `valide` les notions ancrées dont l'arabe est lu au JORT, avec définition arabe ;
+  # restent `provisoire`, sans définition arabe, les formes « AR à confirmer », celles
+  # des budgets et PAP (non JORT) et les notions analytiques. « AR lu » : forme relevée à l'image
+  # ou dans la couche texte de l'édition arabe du texte cité ; « AR à confirmer » :
+  # forme du terminologue ou d'un document non officiel, sans `source_traduction`.
+
+  # Le système scolaire
+
+  - id: enseignement-de-base
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2002-80 (AR), art. 19-22
+    references: [loi91-65, loi2002-80]
+    source_definition: {ref: loi2002-80, locator: "art. 19-22"}
+    source_traduction: {ref: loi2002-80, locator: "art. 19"}
+    voir_aussi: [cycle-primaire, cycle-preparatoire, obligation-scolaire, diplome-fin-enseignement-base]
+    fr:
+      terme: Enseignement de base
+      definition: >
+        Enseignement de neuf ans, obligatoire, institué par la loi n° 91-65 sous le nom
+        d'école de base, qui comprend un cycle primaire de six ans et un cycle
+        préparatoire de trois ans (loi d'orientation n° 2002-80, art. 22). L'année
+        préparatoire s'y rattache depuis 2002, hors gratuité et hors obligation.
+      synonymes: [École de base]
+    ar:
+      terme: التعليم الأساسي
+      definition: >
+        تعليم إجباري مدّته تسع سنوات، أُحدث بالقانون عدد 91-65، ويشمل المرحلة الابتدائية
+        ومدّتها ست سنوات والمرحلة الإعدادية ومدّتها ثلاث سنوات (القانون عدد 2002-80،
+        الفصل 22). وتُلحق به السنة التحضيرية منذ سنة 2002، دون أن يكون التعليم فيها
+        إجباريا ولا مجانيا.
+      synonymes: []
+
+  - id: cycle-primaire
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2002-80 (AR), art. 16, 22 et 30
+    references: [loi2002-80]
+    source_definition: {ref: loi2002-80, locator: "art. 22"}
+    source_traduction: {ref: loi2002-80, locator: "art. 22"}
+    voir_aussi: [enseignement-de-base, cycle-preparatoire]
+    fr:
+      terme: Cycle primaire
+      definition: >
+        Premier cycle de l'enseignement de base, d'une durée de six ans, dispensé dans
+        les écoles primaires.
+      synonymes: [Premier cycle de l'enseignement de base]
+    ar:
+      terme: المرحلة الابتدائية
+      definition: >
+        المرحلة الأولى من التعليم الأساسي، ومدّتها ست سنوات، وتُؤمَّن بالمدارس
+        الابتدائية.
+      synonymes: [المرحلة الأولى من التعليم الأساسي]
+
+  - id: cycle-preparatoire
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2002-80 (AR), art. 22 et 30
+    references: [loi2002-80]
+    source_definition: {ref: loi2002-80, locator: "art. 22"}
+    source_traduction: {ref: loi2002-80, locator: "art. 22"}
+    voir_aussi: [enseignement-de-base, cycle-primaire, ecole-preparatoire, annee-preparatoire]
+    fr:
+      terme: Cycle préparatoire
+      definition: >
+        Second cycle de l'enseignement de base, d'une durée de trois ans, dispensé dans
+        les écoles préparatoires, ou collèges. À distinguer de l'année préparatoire, qui
+        précède le cycle primaire.
+      synonymes: [Second cycle de l'enseignement de base]
+    ar:
+      terme: المرحلة الإعدادية
+      definition: >
+        المرحلة الثانية من التعليم الأساسي، ومدّتها ثلاث سنوات، وتُؤمَّن بالمدارس
+        الإعدادية. ولا تُخلط بالسنة التحضيرية التي تسبق المرحلة الابتدائية.
+      synonymes: [المرحلة الثانية من التعليم الأساسي]
+
+  - id: annee-preparatoire
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2002-80 (AR), art. 16-18
+    references: [loi2002-80]
+    source_definition: {ref: loi2002-80, locator: "art. 16-18"}
+    source_traduction: {ref: loi2002-80, locator: "art. 16"}
+    voir_aussi: [education-prescolaire, cycle-primaire, cycle-preparatoire]
+    fr:
+      terme: Année préparatoire
+      definition: >
+        Dernière année de l'éducation préscolaire, pour les enfants de cinq à six ans,
+        qui prépare au cycle primaire ; la loi d'orientation n° 2002-80 la rattache à
+        l'enseignement de base sans lui appliquer ni la gratuité ni l'obligation
+        scolaire (art. 18).
+      synonymes: []
+    ar:
+      terme: السنة التحضيرية
+      definition: >
+        السنة الأخيرة من التربية قبل المدرسية، وتهمّ الأطفال من خمس إلى ست سنوات،
+        وتُعِدّ للمرحلة الابتدائية. ويُلحقها القانون عدد 2002-80 بالتعليم الأساسي، دون
+        أن يكون التعليم فيها إجباريا ولا مجانيا (الفصل 18).
+      synonymes: []
+
+  - id: education-prescolaire
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2002-80 (AR), art. 16
+    references: [loi2002-80]
+    source_definition: {ref: loi2002-80, locator: "art. 16"}
+    source_traduction: {ref: loi2002-80, locator: "art. 16"}
+    voir_aussi: [annee-preparatoire]
+    fr:
+      terme: Éducation préscolaire
+      definition: >
+        Éducation dispensée aux enfants de trois à six ans dans des établissements et
+        espaces spécialisés, avant leur entrée à l'école primaire ; sa dernière année
+        est l'année préparatoire.
+      synonymes: []
+    ar:
+      terme: التربية قبل المدرسية
+      definition: >
+        تربية تُقدَّم للأطفال من ثلاث إلى ست سنوات في مؤسسات وفضاءات مختصة، قبل التحاقهم
+        بالمدرسة الابتدائية؛ وسنتها الأخيرة هي السنة التحضيرية.
+      synonymes: []
+
+  - id: ecole-preparatoire
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2002-80 (AR), art. 29-30 (« المدارس الإعدادية »)
+    references: [loi91-65, loi2002-80]
+    source_definition: {ref: loi2002-80, locator: "art. 30"}
+    source_traduction: {ref: loi2002-80, locator: "art. 30"}
+    voir_aussi: [cycle-preparatoire, college-pilote]
+    fr:
+      terme: École préparatoire
+      definition: >
+        Établissement public où est dispensé le cycle préparatoire, second cycle de
+        l'enseignement de base.
+      synonymes: [Collège]
+    ar:
+      terme: المدرسة الإعدادية
+      definition: >
+        مؤسسة تربوية عمومية تُؤمَّن بها المرحلة الإعدادية، وهي المرحلة الثانية من
+        التعليم الأساسي.
+      synonymes: []
+
+  - id: college-pilote
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-9 (AR), art. 2 (art. 60 bis) et 3 (« المدارس الإعدادية النموذجية »)
+    references: [loi2008-9]
+    source_definition: {ref: loi2008-9, locator: "art. 2-3"}
+    source_traduction: {ref: loi2008-9, locator: "art. 2"}
+    voir_aussi: [ecole-preparatoire, lycee-pilote]
+    fr:
+      terme: Collège pilote
+      definition: >
+        École préparatoire à laquelle on accède par un concours ouvert à la fin du cycle
+        primaire, ajoutée aux établissements éducatifs publics par la loi n° 2008-9.
+      synonymes: [École préparatoire pilote]
+    ar:
+      terme: المدرسة الإعدادية النموذجية
+      definition: >
+        مدرسة إعدادية يُلتحق بها بمناظرة تُفتح في نهاية المرحلة الابتدائية، أضافها
+        القانون عدد 2008-9 إلى المؤسسات التربوية العمومية.
+      synonymes: []
+
+  - id: lycee-pilote
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2002-80 (AR), art. 29-30 (« المعاهد النموذجية »)
+    references: [loi2002-80, loi2008-9]
+    source_definition: {ref: loi2002-80, locator: "art. 30"}
+    source_traduction: {ref: loi2002-80, locator: "art. 30"}
+    voir_aussi: [enseignement-secondaire, college-pilote]
+    fr:
+      terme: Lycée pilote
+      definition: >
+        Établissement public d'enseignement secondaire dont le régime d'études est fixé
+        par arrêté du ministre chargé de l'éducation. Les collèges pilotes s'y ajoutent
+        en 2008.
+      synonymes: []
+    ar:
+      terme: المعهد النموذجي
+      definition: >
+        مؤسسة تربوية عمومية للتعليم الثانوي يُضبط نظام الدراسة بها بقرار من الوزير
+        المكلف بالتربية. وتُضاف إليها المدارس الإعدادية النموذجية سنة 2008.
+      synonymes: []
+
+  - id: enseignement-secondaire
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2002-80 (AR), art. 25-28
+    references: [loi2002-80]
+    source_definition: {ref: loi2002-80, locator: "art. 25-28"}
+    source_traduction: {ref: loi2002-80, locator: "art. 25"}
+    voir_aussi: [enseignement-de-base, lycee-pilote]
+    fr:
+      terme: Enseignement secondaire
+      definition: >
+        Enseignement du second degré, sanctionné par le baccalauréat : six ans sous la
+        loi de 1958, quatre ans depuis 1991. Depuis la loi d'orientation n° 2002-80, il
+        est ouvert aux élèves qui ont achevé l'enseignement de base et comprend un an de
+        tronc commun puis trois ans dans une filière.
+      synonymes: []
+    ar:
+      terme: التعليم الثانوي
+      definition: >
+        تعليم يُتوَّج بالبكالوريا، مدّته ست سنوات بمقتضى قانون سنة 1958 وأربع سنوات منذ
+        سنة 1991. ومنذ القانون عدد 2002-80، يُفتح للتلاميذ الذين أتمّوا التعليم الأساسي.
+      synonymes: []
+
+  - id: enseignement-moyen
+    acronyme: null
+    statut: provisoire  # AR à confirmer : édition arabe de la loi n° 58-118 non lue ; forme du terminologue
+    references: [loi58-118]
+    source_definition: {ref: loi58-118, locator: "art. 10-13"}
+    voir_aussi: [enseignement-secondaire]
+    fr:
+      terme: Enseignement moyen
+      definition: >
+        Enseignement de trois ans créé par la loi n° 58-118, dispensé dans les collèges
+        moyens en sections générale, commerciale et industrielle, et sanctionné par le
+        brevet d'enseignement moyen.
+      synonymes: []
+    ar:
+      terme: التعليم المتوسط
+      definition: ""
+      synonymes: []
+
+  - id: diplome-fin-enseignement-base
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-9 (AR), art. 1er (art. 61 nouveau) ; loi n° 2002-80 (AR), art. 25
+    references: [loi91-65, loi2002-5, loi2008-9]
+    source_definition: {ref: loi2008-9, locator: "art. 1er"}
+    source_traduction: {ref: loi2008-9, locator: "art. 1er"}
+    voir_aussi: [enseignement-de-base, cycle-preparatoire]
+    fr:
+      terme: Diplôme de fin de l'enseignement de base
+      definition: >
+        Diplôme que l'élève peut obtenir, à la fin du cycle préparatoire, par un examen
+        national, obligatoire en 1991 et facultatif depuis 2002 ; depuis la loi n°
+        2008-9, il est général ou technique.
+      synonymes: [Diplôme de fin d'études de l'enseignement de base]
+    ar:
+      terme: شهادة ختم التعليم الأساسي
+      definition: >
+        شهادة يمكن للتلميذ الحصول عليها في نهاية المرحلة الإعدادية بامتحان وطني، كان
+        إجباريا سنة 1991 وأصبح اختياريا منذ سنة 2002؛ وهي عامة أو تقنية منذ القانون عدد
+        2008-9.
+      synonymes: [شهادة ختم التعليم الأساسي العام, شهادة ختم التعليم الأساسي التقني]
+
+  - id: obligation-scolaire
+    acronyme: null
+    # AR lu : loi n° 2017-13 (AR, couche texte), art. 1er, JORT AR n° 22 de 2017
+    # (« الأحكام المتعلقة بإجبارية التعليم الأساسي الواردة بالقانون التوجيهي عدد 80 لسنة
+    # 2002 ») ; la loi n° 2002-80 (AR), art. 1er et 20, écrit « التعليم إجباري ». Corrige
+    # « إجبارية التعليم » de la passe 1 (passe 2, 17 octobre 2026).
+    statut: valide
+    references: [loi91-65, loi2002-80, loi2017-13]
+    source_definition: {ref: loi2002-80, locator: "art. 1er et 20"}
+    source_traduction: {ref: loi2017-13, locator: "art. 1er"}
+    voir_aussi: [enseignement-de-base, tuteur, gratuite-enseignement]
+    fr:
+      terme: Obligation scolaire
+      definition: >
+        Obligation d'enseignement de six à seize ans, imposée par la loi n° 91-65 et
+        reprise par la loi d'orientation n° 2002-80, pour tout élève capable de
+        poursuivre normalement ses études ; le tuteur qui s'y soustrait est puni d'une
+        amende. La Constitution de 2022 lui donne un rang constitutionnel.
+      synonymes: []
+    ar:
+      terme: إجبارية التعليم الأساسي
+      definition: >
+        إلزام بالتعليم من ست سنوات إلى ست عشرة سنة، فرضه القانون عدد 65 لسنة 1991
+        وأعاده القانون التوجيهي عدد 80 لسنة 2002، لكل تلميذ قادر على مواصلة دراسته
+        بصفة عادية؛ ويُعاقَب الولي الذي يخالفه بخطية. ويمنحه دستور 2022 مرتبة دستورية.
+      synonymes: []
+
+  - id: gratuite-enseignement
+    acronyme: null
+    # AR à confirmer : le texte arabe écrit « حق التعليم مجانا » (loi n° 2002-80, art. 4) et
+    # « التعليم العالي العمومي مجاني » (loi n° 2008-19, art. 7) ; la forme nominale est du
+    # terminologue.
+    statut: provisoire
+    references: [loi2002-80, loi2008-19]
+    source_definition: {ref: loi2002-80, locator: "art. 4"}
+    voir_aussi: [obligation-scolaire, droits-inscription]
+    fr:
+      terme: Gratuité de l'enseignement
+      definition: >
+        Garantie par l'État du droit à l'enseignement sans frais dans les établissements
+        éducatifs publics, de principe depuis 1958 ; l'enseignement supérieur public est
+        gratuit, sous réserve des droits d'inscription (loi n° 2008-19, art. 7), et la
+        Constitution de 2022 garantit l'enseignement public gratuit à toutes ses étapes.
+      synonymes: []
+    ar:
+      terme: مجانية التعليم
+      definition: ""
+      synonymes: []
+
+  - id: tuteur
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2002-80 (AR), art. 21
+    references: [loi91-65, loi2002-80]
+    source_definition: {ref: loi2002-80, locator: "art. 21"}
+    source_traduction: {ref: loi2002-80, locator: "art. 21"}
+    voir_aussi: [obligation-scolaire]
+    fr:
+      terme: Tuteur
+      definition: >
+        Personne responsable de l'élève, passible d'une amende lorsqu'elle s'abstient de
+        l'inscrire ou le retire de l'école avant seize ans.
+      synonymes: []
+    ar:
+      terme: الولي
+      definition: >
+        الشخص المسؤول عن التلميذ، ويُعاقَب بخطية إذا امتنع عن ترسيمه أو سحبه من المدرسة
+        قبل بلوغه ست عشرة سنة.
+      synonymes: []
+
+  - id: conseil-superieur-education-enseignement
+    acronyme: null
+    statut: valide  # AR lu : décret-loi n° 2024-2, édition arabe (seule publiée)
+    references: [decret-loi2024-2, decret2025-246]
+    source_definition: {ref: decret-loi2024-2}
+    source_traduction: {ref: decret-loi2024-2}
+    voir_aussi: [conseil-superieur-education, fonds-national-reforme-educative]
+    fr:
+      terme: Conseil supérieur de l'éducation et de l'enseignement
+      definition: >
+        Instance constitutionnelle prévue par la Constitution de 2022 (art. 135), qui
+        donne son avis sur les grands plans nationaux d'éducation, d'enseignement, de
+        recherche scientifique, de formation professionnelle et d'emploi ; le décret-loi
+        n° 2024-2 l'organise et la dote de la personnalité juridique et de l'autonomie
+        financière. À distinguer du Conseil supérieur de l'éducation de 1991 et de 2000.
+      synonymes: []
+    ar:
+      terme: المجلس الأعلى للتربية والتعليم
+      definition: >
+        هيئة دستورية نصّ عليها دستور سنة 2022 (الفصل 135)، تتولى إبداء الرأي في الخطط
+        الوطنية الكبرى في مجال التربية والتعليم والبحث العلمي والتكوين المهني وآفاق
+        التشغيل؛ ويضبط المرسوم عدد 2024-2 تنظيمها، وهي تتمتع بالشخصية القانونية
+        والاستقلالية المالية.
+      synonymes: []
+
+  - id: conseil-superieur-education
+    acronyme: null
+    statut: provisoire  # AR à confirmer : édition arabe du décret n° 2000-2260 non lue ; forme du terminologue
+    references: [loi91-65, decret2000-2260]
+    source_definition: {ref: decret2000-2260}
+    voir_aussi: [conseil-superieur-education-enseignement]
+    fr:
+      terme: Conseil supérieur de l'éducation
+      definition: >
+        Organe consulté sur les questions d'intérêt national relatives à l'éducation
+        (loi n° 91-65, art. 2), dont le décret n° 2000-2260 fixe les attributions, la
+        composition et le fonctionnement, sous la présidence du Premier ministre. À
+        distinguer du Conseil supérieur de l'éducation nationale de 1958 et du Conseil
+        supérieur de l'éducation et de l'enseignement de 2022-2024.
+      synonymes: []
+    ar:
+      terme: المجلس الأعلى للتربية
+      definition: ""
+      synonymes: []
+
+  - id: fonds-national-reforme-educative
+    acronyme: null
+    statut: valide  # AR lu : loi de finances pour 2024 (AR), art. 15 (« صندوق وطني للإصلاح التربوي »)
+    references: [lf-2024]
+    source_definition: {ref: lf-2024, locator: "art. 15"}
+    source_traduction: {ref: lf-2024, locator: "art. 15"}
+    voir_aussi: [conseil-superieur-education-enseignement]
+    fr:
+      terme: Fonds national de la réforme éducative
+      definition: >
+        Fonds créé par la loi de finances pour 2024, alimenté par des dons et par une
+        part des bénéfices d'établissements éducatifs privés et de certaines sociétés,
+        qui finance la réforme du système éducatif ; l'ordonnateur en est le président
+        du Conseil supérieur de l'éducation et de l'enseignement (« président du
+        Conseil supérieur de l'éducation », dans les termes de la loi), et, jusqu'à sa
+        nomination, le ministre de l'Éducation à titre provisoire. Le terme français est
+        une traduction : la loi n'a pas d'édition française.
+      synonymes: []
+    ar:
+      terme: الصندوق الوطني للإصلاح التربوي
+      definition: >
+        صندوق أُحدث بقانون المالية لسنة 2024، تتمثل موارده في الهبات وفي نسبة من أرباح
+        المؤسسات التربوية الخاصة وبعض الشركات، ويموّل إصلاح المنظومة التربوية؛ ويكون
+        رئيس المجلس الأعلى للتربية والتعليم آمرا بالصرف له (ويسمّيه القانون «رئيس
+        المجلس الأعلى للتربية»)، ويتولى وزير التربية ذلك بصفة وقتية إلى حين تعيينه.
+      synonymes: []
+
+  # Enseignement supérieur et formation professionnelle
+
+  - id: lmd
+    acronyme: LMD
+    statut: valide  # AR lu : loi n° 2008-19 (AR), art. 3 ; « أمد » au décret n° 2009-3040 (AR), art. 4
+    references: [loi2008-19, decret2008-3123]
+    source_definition: {ref: loi2008-19, locator: "art. 3"}
+    source_traduction: {ref: loi2008-19, locator: "art. 3"}
+    voir_aussi: []
+    fr:
+      terme: Licence, mastère, doctorat
+      definition: >
+        Organisation des études supérieures en trois cycles sanctionnés chacun par un
+        diplôme : licence en trois ans après le baccalauréat, mastère en deux ans après
+        la licence, doctorat en trois ans après le mastère.
+      synonymes: [Système LMD]
+    ar:
+      terme: الإجازة والماجستير والدكتوراه
+      definition: >
+        تنظيم للدراسات الجامعية في ثلاث مراحل تُتوَّج كل منها بشهادة: الإجازة في ثلاث
+        سنوات بعد البكالوريا، والماجستير في سنتين بعد الإجازة، والدكتوراه في ثلاث سنوات
+        بعد الماجستير.
+      synonymes: [أمد]
+
+  - id: certificat-aptitude-professionnelle
+    acronyme: CAP
+    statut: valide  # AR lu : loi n° 2008-10 (AR), art. 9
+    references: [loi2008-10]
+    source_definition: {ref: loi2008-10, locator: "art. 9"}
+    source_traduction: {ref: loi2008-10, locator: "art. 9"}
+    voir_aussi: [formation-professionnelle-initiale, brevet-technicien-professionnel, certificat-de-competence]
+    fr:
+      terme: Certificat d'aptitude professionnelle
+      definition: >
+        Diplôme qui sanctionne le premier niveau de la formation professionnelle
+        initiale, ouvert à ceux qui ont achevé la neuvième année de l'enseignement de
+        base.
+      synonymes: []
+    ar:
+      terme: شهادة الكفاءة المهنية
+      definition: >
+        شهادة تُتوِّج المستوى الأول من التكوين المهني الأساسي، ويُفتح التكوين المؤدي
+        إليها لمن أتمّ السنة التاسعة من التعليم الأساسي.
+      synonymes: []
+
+  - id: brevet-technicien-professionnel
+    acronyme: BTP
+    statut: valide  # AR lu : loi n° 2008-10 (AR), art. 9
+    references: [loi2008-10]
+    source_definition: {ref: loi2008-10, locator: "art. 9"}
+    source_traduction: {ref: loi2008-10, locator: "art. 9"}
+    voir_aussi: [certificat-aptitude-professionnelle, baccalaureat-professionnel, brevet-technicien-superieur]
+    fr:
+      terme: Brevet de technicien professionnel
+      definition: >
+        Diplôme qui sanctionne l'une des deux filières du deuxième niveau de la
+        formation professionnelle initiale ; l'autre est sanctionnée par le baccalauréat
+        professionnel.
+      synonymes: []
+    ar:
+      terme: شهادة مؤهل التقني المهني
+      definition: >
+        شهادة تُتوِّج أحد صنفي التكوين في المستوى الثاني من التكوين المهني الأساسي،
+        ويُتوَّج الصنف الآخر بالبكالوريا المهنية.
+      synonymes: []
+
+  - id: baccalaureat-professionnel
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-10 (AR), art. 9 et 12
+    references: [loi2008-10]
+    source_definition: {ref: loi2008-10, locator: "art. 9 et 12"}
+    source_traduction: {ref: loi2008-10, locator: "art. 9"}
+    voir_aussi: [brevet-technicien-professionnel, brevet-technicien-superieur]
+    fr:
+      terme: Baccalauréat professionnel
+      definition: >
+        Diplôme qui sanctionne l'autre filière du deuxième niveau de la formation
+        professionnelle initiale, créé par la loi n° 2008-10 ; il ouvre l'accès au
+        marché du travail et à l'enseignement supérieur dans les spécialités
+        compatibles.
+      synonymes: []
+    ar:
+      terme: البكالوريا المهنية
+      definition: >
+        شهادة تُتوِّج الصنف الآخر من التكوين في المستوى الثاني من التكوين المهني
+        الأساسي، أحدثها القانون عدد 2008-10، وتفتح باب سوق الشغل والتعليم العالي في
+        الاختصاصات الملائمة.
+      synonymes: []
+
+  - id: brevet-technicien-superieur
+    acronyme: BTS
+    statut: valide  # AR lu : loi n° 2008-10 (AR), art. 9
+    references: [loi2008-10]
+    source_definition: {ref: loi2008-10, locator: "art. 9"}
+    source_traduction: {ref: loi2008-10, locator: "art. 9"}
+    voir_aussi: [baccalaureat-professionnel, brevet-technicien-professionnel]
+    fr:
+      terme: Brevet de technicien supérieur
+      definition: >
+        Diplôme qui sanctionne le troisième niveau de la formation professionnelle
+        initiale, ouvert aux titulaires du baccalauréat professionnel ou du
+        baccalauréat de l'enseignement secondaire.
+      synonymes: []
+    ar:
+      terme: شهادة مؤهل التقني السامي
+      definition: >
+        شهادة تُتوِّج المستوى الثالث من التكوين المهني الأساسي، ويُفتح التكوين المؤدي
+        إليها لحاملي البكالوريا المهنية أو بكالوريا التعليم الثانوي.
+      synonymes: []
+
+  - id: certificat-de-competence
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-10 (AR), art. 13 (« شهادة مهارة »)
+    references: [loi2008-10]
+    source_definition: {ref: loi2008-10, locator: "art. 13"}
+    source_traduction: {ref: loi2008-10, locator: "art. 13"}
+    voir_aussi: [certificat-aptitude-professionnelle]
+    fr:
+      terme: Certificat de compétence
+      definition: >
+        Certificat qui sanctionne une formation organisée pour ceux qui n'ont pas le
+        niveau scolaire requis pour accéder au premier niveau de la formation
+        professionnelle.
+      synonymes: []
+    ar:
+      terme: شهادة مهارة
+      definition: >
+        شهادة تُتوِّج تكوينا يُنظَّم لفائدة من لا يتوفر فيهم المستوى الدراسي المطلوب
+        للالتحاق بالمستوى الأول من التكوين المهني.
+      synonymes: []
+
+  - id: formation-professionnelle-initiale
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2017-13 (AR, couche texte et intitulé) ; loi n° 2008-10 (AR), art. 7-8 (« التكوين الأساسي »)
+    references: [loi2008-10, loi2017-13]
+    source_definition: {ref: loi2008-10, locator: "art. 7-9"}
+    source_traduction: {ref: loi2017-13}
+    voir_aussi: [formation-en-alternance, apprentissage, certificat-aptitude-professionnelle, tfp, fonds-formation-apprentissage]
+    fr:
+      terme: Formation professionnelle initiale
+      definition: >
+        Formation qui fait acquérir les connaissances et compétences nécessaires à
+        l'exercice d'un métier, organisée en trois niveaux sanctionnés par des diplômes.
+        Depuis la loi n° 2017-13, elle est obligatoire jusqu'à dix-huit ans pour qui ne
+        s'est pas inséré dans la vie professionnelle, sauf s'il poursuit sa scolarité.
+      synonymes: [Formation initiale]
+    ar:
+      terme: التكوين المهني الأساسي
+      definition: >
+        تكوين يُكسب المعارف والكفايات اللازمة لممارسة مهنة، ويُنظَّم في ثلاثة مستويات
+        تُتوَّج بشهادات. ومنذ القانون عدد 2017-13، يكون إجباريا إلى سن الثامنة عشرة لكل
+        من لم يندمج في الحياة المهنية، ما لم يواصل دراسته.
+      synonymes: [التكوين الأساسي]
+
+  - id: formation-en-alternance
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-10 (AR), art. 15
+    references: [loi2008-10]
+    source_definition: {ref: loi2008-10, locator: "art. 15"}
+    source_traduction: {ref: loi2008-10, locator: "art. 15"}
+    voir_aussi: [apprentissage, formation-professionnelle-initiale]
+    fr:
+      terme: Formation en alternance
+      definition: >
+        Formation organisée dans un cadre contractuel entre les structures de formation
+        professionnelle et les entreprises, par périodes alternées ; elle est ouverte
+        dès quinze ans.
+      synonymes: []
+    ar:
+      terme: التكوين بالتداول
+      definition: >
+        تكوين يُنظَّم في إطار تعاقدي بين هياكل التكوين المهني والمؤسسات، على فترات
+        متداولة، ويُفتح ابتداء من سن الخامسة عشرة.
+      synonymes: []
+
+  - id: apprentissage
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-10 (AR), art. 15 ; même terme dans l'intitulé arabe du fonds (LF 2000, art. 17)
+    references: [loi2008-10]
+    source_definition: {ref: loi2008-10, locator: "art. 15"}
+    source_traduction: {ref: loi2008-10, locator: "art. 15"}
+    voir_aussi: [formation-en-alternance, fonds-formation-apprentissage, tfp]
+    fr:
+      terme: Apprentissage
+      definition: >
+        Formation organisée dans un cadre contractuel entre l'apprenti et l'entreprise,
+        principalement en entreprise, complétée par une formation théorique ; elle est
+        ouverte de quinze à vingt ans, sous un contrat écrit visé par l'administration.
+      synonymes: []
+    ar:
+      terme: التدريب المهني
+      definition: >
+        تكوين يُنظَّم في إطار تعاقدي بين المتدرّب والمؤسسة، ويتمّ أساسا داخل المؤسسة
+        ويُستكمل بتكوين نظري، ويُفتح من سن الخامسة عشرة إلى سن العشرين بمقتضى عقد كتابي
+        تؤشّر عليه الإدارة.
+      synonymes: []
+
+  # Aides scolaires
+
+  - id: bourse-scolaire
+    acronyme: null
+    statut: valide  # AR lu : décret gouvernemental n° 2016-664 (AR, couche texte), « المنح المدرسية »
+    references: [arrete-1966-10-03-bourses-scolaires, decret-71-356-bourses-scolaires, decret-gouv-2016-664-office-services-scolaires]
+    source_definition: {ref: decret-71-356-bourses-scolaires, locator: "art. 3"}
+    source_traduction: {ref: decret-gouv-2016-664-office-services-scolaires}
+    voir_aussi: [fraction-de-bourse, pension-demi-pension, commission-regionale-bourses-scolaires]
+    fr:
+      terme: Bourse scolaire
+      definition: >
+        Aide accordée à l'élève de l'enseignement secondaire public dont la famille est
+        nécessiteuse, qui couvre une fraction de ses frais de pension ou de
+        demi-pension, jamais ses fournitures ; elle n'a pas de montant en dinars. Depuis
+        2016, l'office des services scolaires l'attribue.
+      synonymes: []
+    ar:
+      terme: المنحة المدرسية
+      definition: >
+        منحة تُسند إلى تلميذ التعليم الثانوي العمومي المنتمي إلى عائلة معوزة، وتغطي جزءا
+        من المصاريف التي يدفعها بصفته مقيما بالمبيت المدرسي أو منتفعا بالمطعم المدرسي،
+        ولا تشمل أبدا مصاريف اللوازم الدراسية؛ وليس لها مقدار بالدينار. ويتولى ديوان
+        الخدمات المدرسية إسنادها منذ سنة 2016.
+      synonymes: [المنح المدرسية]
+
+  - id: fraction-de-bourse
+    acronyme: null
+    statut: provisoire  # AR à confirmer : éditions arabes de 1971 et 1974 non lues ; forme du terminologue
+    references: [decret-71-356-bourses-scolaires, arrete-1974-08-12-criteres-bourses]
+    source_definition: {ref: decret-71-356-bourses-scolaires, locator: "annexe"}
+    voir_aussi: [bourse-scolaire]
+    fr:
+      terme: Fraction de bourse
+      definition: >
+        Part des frais couverte par la bourse scolaire — quart, demi, trois quarts ou
+        bourse complète —, déterminée par le total de points obtenu au barème ; le
+        quart de bourse disparaît en 1972.
+      synonymes: []
+    ar:
+      terme: جزء المنحة
+      definition: ""
+      synonymes: []
+
+  - id: pension-demi-pension
+    acronyme: null
+    statut: provisoire  # AR à confirmer : « نصف الإقامة » est pressenti par la note, non lu
+    references: [arrete-1966-10-03-bourses-scolaires, decret-71-356-bourses-scolaires]
+    source_definition: {ref: arrete-1966-10-03-bourses-scolaires, locator: "art. 3"}
+    voir_aussi: [bourse-scolaire, foyer-scolaire, cantine-scolaire]
+    fr:
+      terme: Pension et demi-pension
+      definition: >
+        Régimes de l'élève interne et de l'élève demi-pensionnaire, dont les frais
+        forment l'assiette de la bourse scolaire.
+      synonymes: []
+    ar:
+      terme: الإقامة ونصف الإقامة
+      definition: ""
+      synonymes: []
+
+  - id: cantine-scolaire
+    acronyme: null
+    statut: valide  # AR lu : décret gouvernemental n° 2016-664 (AR, couche texte), « المطاعم المدرسية »
+    references: [decret-gouv-2016-664-office-services-scolaires, mineducation-pap-2014]
+    source_definition: {ref: decret-gouv-2016-664-office-services-scolaires, locator: "art. 2 et 8"}
+    source_traduction: {ref: decret-gouv-2016-664-office-services-scolaires, locator: "art. 2"}
+    voir_aussi: [office-oeuvres-scolaires, foyer-scolaire]
+    fr:
+      terme: Cantine scolaire
+      definition: >
+        Service de restauration des établissements éducatifs publics, géré depuis le 31
+        décembre 2016 par l'office des services scolaires.
+      synonymes: []
+    ar:
+      terme: المطعم المدرسي
+      definition: >
+        مرفق الإطعام بالمؤسسات التربوية العمومية، ويتولى ديوان الخدمات المدرسية التصرف
+        فيه منذ 31 ديسمبر 2016.
+      synonymes: [المطاعم المدرسية]
+
+  - id: foyer-scolaire
+    acronyme: null
+    statut: valide  # AR lu : décret gouvernemental n° 2016-664 (AR, couche texte), « المبيتات المدرسية »
+    references: [decret-gouv-2016-664-office-services-scolaires]
+    source_definition: {ref: decret-gouv-2016-664-office-services-scolaires, locator: "art. 2"}
+    source_traduction: {ref: decret-gouv-2016-664-office-services-scolaires, locator: "art. 2"}
+    voir_aussi: [office-oeuvres-scolaires, cantine-scolaire, pension-demi-pension]
+    fr:
+      terme: Foyer scolaire
+      definition: >
+        Hébergement des élèves internes des établissements éducatifs publics, géré
+        depuis le 31 décembre 2016 par l'office des services scolaires.
+      synonymes: [Internat]
+    ar:
+      terme: المبيت المدرسي
+      definition: >
+        إيواء التلاميذ المقيمين بالمؤسسات التربوية العمومية، ويتولى ديوان الخدمات
+        المدرسية التصرف فيه منذ 31 ديسمبر 2016.
+      synonymes: [المبيتات المدرسية]
+
+  - id: office-oeuvres-scolaires
+    acronyme: null
+    # AR lu : décret gouvernemental n° 2016-664 (AR, couche texte et intitulé). Passe 2 :
+    # le terme français suit l'arabe, qui fait foi (« office des services scolaires ») ;
+    # l'édition française du JORT (« office des œuvres scolaires ») passe en synonyme.
+    # L'id reste stable : la prose ancre #g-office-oeuvres-scolaires.
+    statut: valide
+    references: [decret-gouv-2016-664-office-services-scolaires]
+    source_definition: {ref: decret-gouv-2016-664-office-services-scolaires, locator: "art. 1er-2"}
+    source_traduction: {ref: decret-gouv-2016-664-office-services-scolaires, locator: "art. 1er"}
+    voir_aussi: [cantine-scolaire, foyer-scolaire, bourse-scolaire, office-oeuvres-universitaires]
+    fr:
+      terme: Office des services scolaires
+      definition: >
+        Établissement public à caractère administratif créé en 2016, sous la tutelle du
+        ministère de l'Éducation, qui gère depuis le 31 décembre 2016 les cantines et
+        les foyers des établissements éducatifs publics et attribue les bourses
+        scolaires. L'édition française du décret de 2016 le nomme « office des œuvres
+        scolaires » ; l'édition arabe, qui fait foi, dit « services ».
+      synonymes: [Office des œuvres scolaires]
+    ar:
+      terme: ديوان الخدمات المدرسية
+      definition: >
+        مؤسسة عمومية ذات صبغة إدارية أُحدثت سنة 2016 تحت إشراف وزارة التربية، وتتولى منذ
+        31 ديسمبر 2016 التصرف في المطاعم المدرسية والمبيتات المدرسية بالمؤسسات التربوية
+        العمومية، وإسناد المنح المدرسية.
+      synonymes: []
+
+  - id: droits-inscription
+    acronyme: null
+    # AR lu : loi n° 2002-80 (AR), art. 36 (« رسوم التسجيل … رسوم التأمين والمكتبة ») ;
+    # loi n° 2008-19 (AR), art. 7. À ne pas confondre avec les « معاليم التسجيل »,
+    # droits d'enregistrement de la fiscalité.
+    statut: valide
+    references: [decret-92-1185-droits-inscription, decret-2010-1928-droits-inscription, decret-gouv-2019-898-droits-inscription]
+    source_definition: {ref: decret-92-1185-droits-inscription, locator: "art. 1"}
+    source_traduction: {ref: loi2002-80, locator: "art. 36"}
+    voir_aussi: [gratuite-enseignement]
+    fr:
+      terme: Droits d'inscription
+      definition: >
+        Droits perçus, à l'inscription, des élèves des établissements d'enseignement
+        publics, avec les droits d'assurance et de bibliothèque ; prévus par la loi n°
+        91-65, fixés pour les écoles préparatoires et les lycées en 1992, étendus aux
+        écoles primaires en 2010.
+      synonymes: [Droits d'inscription, d'assurance et de bibliothèque]
+    ar:
+      terme: رسوم التسجيل
+      definition: >
+        رسوم تُستخلص من تلاميذ المؤسسات التربوية العمومية عند الترسيم، مع رسوم التأمين
+        والمكتبة؛ نصّ عليها القانون عدد 91-65، وضُبطت بالنسبة إلى المدارس الإعدادية
+        والمعاهد سنة 1992، ثم شملت المدارس الابتدائية سنة 2010.
+      synonymes: [رسوم التسجيل والتأمين والمكتبة]
+
+  - id: orientation-d-office
+    acronyme: null
+    statut: provisoire  # AR à confirmer : édition arabe du décret n° 72-229 non lue ; forme du terminologue
+    references: [decret-72-229-bourses-scolaires]
+    source_definition: {ref: decret-72-229-bourses-scolaires, locator: "annexe"}
+    voir_aussi: [bourse-scolaire]
+    fr:
+      terme: Orientation d'office
+      definition: >
+        Affectation de l'élève, par l'administration, dans un établissement situé hors
+        de sa délégation de résidence ; elle lui vaut des points au barème de la bourse
+        scolaire depuis 1972.
+      synonymes: []
+    ar:
+      terme: التوجيه الآلي
+      definition: ""
+      synonymes: []
+
+  - id: commission-regionale-bourses-scolaires
+    acronyme: null
+    statut: provisoire  # AR à confirmer : édition arabe du décret n° 71-356 non lue ; forme du terminologue
+    references: [decret-71-356-bourses-scolaires]
+    source_definition: {ref: decret-71-356-bourses-scolaires, locator: "art. 9-11"}
+    voir_aussi: [bourse-scolaire]
+    fr:
+      terme: Commission régionale des bourses scolaires
+      definition: >
+        Commission instituée dans chaque gouvernorat, sur la proposition de laquelle le
+        ministre accorde les bourses scolaires, dans la limite des crédits.
+      synonymes: []
+    ar:
+      terme: اللجنة الجهوية للمنح المدرسية
+      definition: ""
+      synonymes: []
+
+  # Aides universitaires
+
+  - id: bourse-nationale
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2009-3040 (AR), art. 3-5
+    references: [decret57-78-bourse-nationale, decret71-361-bourses, decret86-688-bourses-prets, decret2009-3040-bourses-prets, arrete-2015-12-04-bourses-montants]
+    source_definition: {ref: decret2009-3040-bourses-prets, locator: "art. 3-4"}
+    source_traduction: {ref: decret2009-3040-bourses-prets, locator: "art. 3"}
+    voir_aussi: [pret-universitaire, allocation-supplementaire, bourse-specifique, condition-de-ressources, smig]
+    fr:
+      terme: Bourse nationale d'études universitaires
+      definition: >
+        Bourse mensuelle accordée par l'État, dans la limite des crédits ouverts chaque
+        année, aux étudiants et élèves de l'enseignement supérieur, en Tunisie ou à
+        l'étranger, sous condition de ressources des parents ; en Tunisie, elle est
+        servie dix mois et exclut les bénéficiaires d'un présalaire.
+      synonymes: [Bourse nationale, Bourse nationale d'études supérieures]
+    ar:
+      terme: المنحة الوطنية للدراسات الجامعية
+      definition: >
+        منحة شهرية تسندها الدولة، في حدود الاعتمادات المرصودة سنويا، لطلبة وتلاميذ
+        التعليم العالي بالبلاد التونسية أو بالخارج، بشرط ألا يتجاوز دخل أوليائهم سقفا
+        محددا؛ وتُصرف بالبلاد التونسية على عشرة أشهر، ولا ينتفع بها الذين يتقاضون مرتبا
+        قبليا.
+      synonymes: [المنح الوطنية]
+
+  - id: pret-universitaire
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2009-3040 (AR), art. 1er et 7-8
+    references: [decret86-688-bourses-prets, decret2009-3040-bourses-prets, decret99-1544-prets-caisses]
+    source_definition: {ref: decret86-688-bourses-prets, locator: "art. 1er et 8"}
+    source_traduction: {ref: decret2009-3040-bourses-prets, locator: "art. 7"}
+    voir_aussi: [bourse-nationale]
+    fr:
+      terme: Prêt universitaire
+      definition: >
+        Aide servie sous forme de prêt, dans la limite des crédits, à l'étudiant qui ne
+        bénéficie pas de la bourse nationale ; elle est remboursable sur dix ans.
+      synonymes: []
+    ar:
+      terme: القرض الجامعي
+      definition: >
+        إعانة تُسند في شكل قرض، في حدود الاعتمادات المرصودة، للطالب الذي لا ينتفع
+        بالمنحة الوطنية، وتُسدَّد على عشر سنوات.
+      synonymes: [القروض الجامعية]
+
+  - id: office-oeuvres-universitaires
+    acronyme: null
+    # AR lu par le documentaliste aux visas des décrets n° 2018-927 et 2019-806 (note
+    # aides universitaires, § 7) et à l'image (décret n° 2009-3040, JORT AR n° 84 de 2009,
+    # p. 3816). Le français garde « œuvres universitaires », terme des lois de 1988 et du
+    # texte rendu, alors que l'office scolaire suit l'arabe : asymétrie à trancher.
+    statut: valide
+    references: [loi70-9-onou, loi88-135-oou-nord, loi88-136-oou-centre, loi88-137-oou-sud, decret2014-4200-oou]
+    source_definition: {ref: loi88-135-oou-nord, locator: "art. 1er-2"}
+    source_traduction: {ref: decret2018-927}
+    voir_aussi: [epa, oeuvres-universitaires, hebergement-universitaire, restauration-universitaire, office-oeuvres-scolaires]
+    fr:
+      terme: Office des œuvres universitaires
+      definition: >
+        Établissement public qui loge et nourrit les étudiants de l'enseignement public
+        ; trois offices, pour le Nord, le Centre et le Sud, remplacent en 1988 l'office
+        national créé en 1970.
+      synonymes: []
+    ar:
+      terme: ديوان الخدمات الجامعية
+      definition: >
+        مؤسسة عمومية تتولى إيواء طلبة التعليم العالي العمومي وإطعامهم؛ وقد أُحدثت سنة
+        1988 ثلاثة دواوين: ديوان الخدمات الجامعية للشمال، وديوان الخدمات الجامعية للوسط،
+        وديوان الخدمات الجامعية للجنوب، خلفا لديوان وطني أُحدث سنة 1970.
+      synonymes: []
+
+  - id: oeuvres-universitaires
+    acronyme: null
+    statut: provisoire  # AR : intitulé du programme 3 du PAP 2014 de l'enseignement supérieur (texte arabe, non JORT)
+    references: [mesrs-pap-2014]
+    source_definition: {ref: mesrs-pap-2014}
+    voir_aussi: [office-oeuvres-universitaires, hebergement-universitaire, restauration-universitaire, bourse-nationale]
+    fr:
+      terme: Œuvres universitaires
+      definition: >
+        Services rendus aux étudiants — hébergement, restauration, bourses —, qui
+        forment un programme du budget du ministère de l'enseignement supérieur.
+      synonymes: [Services universitaires]
+    ar:
+      terme: الخدمات الجامعية
+      definition: ""
+      synonymes: []
+
+  - id: bourse-integration-universitaire
+    acronyme: null
+    statut: valide  # AR lu par le documentaliste au décret n° 2018-927 ; intitulé arabe de l'arrêté du 4 décembre 2018
+    references: [decret2018-927, arrete-2018-12-04-bourse-integration]
+    source_definition: {ref: arrete-2018-12-04-bourse-integration}
+    source_traduction: {ref: decret2018-927}
+    voir_aussi: [bourse-nationale]
+    fr:
+      terme: Bourse d'intégration universitaire
+      definition: >
+        Bourse versée en une seule tranche au nouveau bachelier inscrit dans
+        l'enseignement supérieur public, sous le plafond de revenu de la bourse
+        nationale ; créée par le décret n° 2018-927, l'arrêté du 4 décembre 2018 en fixe
+        les conditions d'attribution et le montant.
+      synonymes: []
+    ar:
+      terme: منحة الإدماج الجامعي
+      definition: >
+        منحة تُصرف دفعة واحدة للناجح الجديد في البكالوريا المرسَّم بمؤسسة عمومية للتعليم
+        العالي، في حدود سقف الدخل المعتمد للمنحة الوطنية؛ أحدثها الأمر عدد 2018-927،
+        ويضبط قرار 4 ديسمبر 2018 شروط إسنادها ومقدارها.
+      synonymes: []
+
+  - id: bourse-specifique
+    acronyme: null
+    # AR lu : décret n° 2009-3040 (AR), art. 3 (« منحة خصوصية », relu à l'image, JORT AR
+    # n° 84 de 2009, p. 3817) ; arrêté du 5 mars 2019. Forme partagée avec
+    # `indemnite-specifique` (attestée) et `subvention-specifique` (non attestée) : gardée,
+    # car lue deux fois ; la définition arabe lève l'homonymie.
+    statut: valide
+    references: [decret2001-2438, decret2009-3040-bourses-prets, arrete-2009-10-26-bourses-prets, arrete-2019-03-05-bourses-etranger]
+    source_definition: {ref: decret2009-3040-bourses-prets, locator: "art. 3"}
+    source_traduction: {ref: decret2009-3040-bourses-prets, locator: "art. 3"}
+    voir_aussi: [bourse-nationale, bourse-alternance]
+    fr:
+      terme: Bourse spécifique
+      definition: >
+        Bourse nationale d'études à l'étranger composée de deux éléments, un élément
+        fixe et un élément complémentaire servi sous forme de prêt ; elle va aux
+        domaines de formation prioritaires et oblige, depuis 2001, à exercer trois ans
+        au moins en Tunisie.
+      synonymes: []
+    ar:
+      terme: المنحة الخصوصية
+      definition: >
+        منحة وطنية للدراسات الجامعية بالخارج تتكوّن من عنصرين متكاملين: عنصر قار وعنصر
+        تكميلي في شكل قرض، وتُسند في مجالات التكوين ذات الأولوية، ويلتزم المنتفع بها منذ
+        سنة 2001 بالعمل ثلاث سنوات على الأقل بالبلاد التونسية. ولا تُخلط بالمنحة
+        الخصوصية التي تُضاف إلى المرتب الأساسي في الوظيفة العمومية.
+      synonymes: []
+
+  - id: bourse-alternance
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2009-3040 (AR), art. 3 (« منحة تداول ») ; relu à l'image, JORT AR n° 84 de 2009, p. 3817
+    references: [decret2001-2438, arrete-2009-10-26-bourses-prets, arrete-2019-03-05-bourses-etranger]
+    source_definition: {ref: arrete-2009-10-26-bourses-prets, locator: "art. 26"}
+    source_traduction: {ref: decret2009-3040-bourses-prets, locator: "art. 3"}
+    voir_aussi: [bourse-specifique]
+    fr:
+      terme: Bourse d'alternance
+      definition: >
+        Bourse nationale d'études à l'étranger servie pour un séjour de six mois au plus
+        par an.
+      synonymes: []
+    ar:
+      terme: منحة التداول
+      definition: >
+        منحة وطنية للدراسات الجامعية بالخارج تُصرف لإقامة لا تتجاوز ستة أشهر في السنة.
+      synonymes: []
+
+  - id: allocation-supplementaire
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2009-3040 (AR), art. 3 (« منحة التكلفة الإضافية ») ; relu à l'image, JORT AR n° 84 de 2009, p. 3817
+    references: [arrete-1986-07-28-bourses-prets, arrete-1997-08-18-bourses-montants, decret2009-3040-bourses-prets]
+    source_definition: {ref: decret2009-3040-bourses-prets, locator: "art. 3"}
+    source_traduction: {ref: decret2009-3040-bourses-prets, locator: "art. 3"}
+    voir_aussi: [bourse-nationale]
+    fr:
+      terme: Allocation supplémentaire
+      definition: >
+        Complément ajouté à la bourse nationale en Tunisie pour couvrir les frais de
+        fournitures scolaires, égal à une mensualité de la bourse.
+      synonymes: []
+    ar:
+      terme: منحة التكلفة الإضافية
+      definition: >
+        منحة تُضاف إلى المنحة الوطنية للدراسات الجامعية بالبلاد التونسية، مخصّصة لتغطية
+        نفقات اللوازم الدراسية، ومقدارها منحة شهر واحد.
+      synonymes: []
+
+  - id: bourse-hebergement
+    acronyme: null
+    statut: provisoire  # AR à confirmer : édition arabe de l'arrêté du 18 janvier 2016 non lue ; forme du terminologue
+    references: [arrete-2016-01-18-hebergement]
+    source_definition: {ref: arrete-2016-01-18-hebergement, locator: "art. 6"}
+    voir_aussi: [hebergement-universitaire]
+    fr:
+      terme: Bourse d'hébergement
+      definition: >
+        Somme mensuelle versée à l'étudiant qui remplit les conditions de
+        l'hébergement universitaire mais n'est pas hébergé faute de place ; elle cesse
+        si une place se libère.
+      synonymes: []
+    ar:
+      terme: منحة السكن
+      definition: ""
+      synonymes: []
+
+  - id: hebergement-universitaire
+    acronyme: null
+    statut: provisoire  # AR : forme des budgets du ministère de l'enseignement supérieur (note aides universitaires, § 7), non JORT
+    references: [arrete-2016-01-18-hebergement, arrete-1974-06-20-reglement-centres-universitaires]
+    source_definition: {ref: arrete-2016-01-18-hebergement}
+    voir_aussi: [oeuvres-universitaires, bourse-hebergement, restauration-universitaire]
+    fr:
+      terme: Hébergement universitaire
+      definition: >
+        Logement des étudiants de l'enseignement public dans les foyers universitaires,
+        réservé aux boursiers depuis 1992 et accordé depuis 2016 selon la distance du
+        domicile et l'âge de l'étudiant, contre une contribution mensuelle.
+      synonymes: []
+    ar:
+      terme: السكن الجامعي
+      definition: ""
+      synonymes: []
+
+  - id: restauration-universitaire
+    acronyme: null
+    statut: provisoire  # AR : forme du budget 2017 du ministère de l'enseignement supérieur (note aides universitaires, § 7), non JORT
+    references: [arrete-2016-01-18-restauration, arrete-1974-06-20-reglement-centres-universitaires]
+    source_definition: {ref: arrete-2016-01-18-restauration}
+    voir_aussi: [oeuvres-universitaires, hebergement-universitaire]
+    fr:
+      terme: Restauration universitaire
+      definition: >
+        Service de repas à prix réduit des restaurants universitaires, ouvert aux
+        étudiants de l'enseignement public et organisé par l'arrêté du 18 janvier 2016.
+      synonymes: []
+    ar:
+      terme: الإطعام الجامعي
+      definition: ""
+      synonymes: []
+
+  - id: presalaire
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2009-3040 (AR), art. 4 (« الذين يتقاضون مرتبا قبليا ») ; relu à l'image, JORT AR n° 84 de 2009, p. 3817
+    references: [decret86-688-bourses-prets, decret2009-3040-bourses-prets]
+    source_definition: {ref: decret2009-3040-bourses-prets, locator: "art. 4"}
+    source_traduction: {ref: decret2009-3040-bourses-prets, locator: "art. 4"}
+    voir_aussi: [bourse-nationale]
+    fr:
+      terme: Présalaire
+      definition: >
+        Rémunération perçue pendant leurs études par certains étudiants, qui les exclut
+        de la bourse nationale.
+      synonymes: []
+    ar:
+      terme: المرتب القبلي
+      definition: >
+        مرتب يتقاضاه بعض الطلبة أثناء دراستهم، ويُستثنى المنتفعون به من المنحة الوطنية.
+      synonymes: []
+
+  # La dépense d'éducation dans le budget de l'État
+
+  - id: depenses-de-gestion
+    acronyme: null
+    statut: provisoire  # AR : forme des PAP 2014 et de l'Annuaire statistique (note dépense, § 11), non lue au JORT
+    references: [decret-2009-3750, ins-annuaire-statistique, mineducation-pap-2014]
+    source_definition: {ref: decret-2009-3750}
+    voir_aussi: [depenses-de-developpement, remunerations-publiques, moyens-des-services, interventions-publiques]
+    fr:
+      terme: Dépenses de gestion
+      definition: >
+        Titre I du budget de l'État sous la loi organique n° 67-53, qui regroupe les
+        rémunérations publiques, les moyens des services et les interventions
+        publiques.
+      synonymes: []
+    ar:
+      terme: نفقات التصرف
+      definition: ""
+      synonymes: []
+
+  - id: depenses-de-developpement
+    acronyme: null
+    statut: provisoire  # AR : forme des PAP 2014 et de l'Annuaire statistique (note dépense, § 11), non lue au JORT
+    references: [decret-2009-3750, ins-annuaire-statistique]
+    source_definition: {ref: decret-2009-3750}
+    voir_aussi: [depenses-de-gestion]
+    fr:
+      terme: Dépenses de développement
+      definition: >
+        Dépenses du titre II du budget de l'État sous la loi organique n° 67-53
+        (section 3 du tableau de l'Annuaire statistique), distinctes des dépenses de
+        gestion du titre I.
+      synonymes: []
+    ar:
+      terme: نفقات التنمية
+      definition: ""
+      synonymes: []
+
+  - id: remunerations-publiques
+    acronyme: null
+    statut: provisoire  # AR : forme des PAP 2014 (note dépense, § 11), non lue au JORT
+    references: [decret-2009-3750, mineducation-pap-2014, minfin-remunerations]
+    source_definition: {ref: decret-2009-3750}
+    voir_aussi: [depenses-de-gestion, masse-salariale]
+    fr:
+      terme: Rémunérations publiques
+      definition: >
+        Partie des dépenses de gestion, dans la nomenclature antérieure à la loi
+        organique du budget de 2019, consacrée à la rémunération des agents de l'État.
+      synonymes: []
+    ar:
+      terme: التأجير العمومي
+      definition: ""
+      synonymes: []
+
+  - id: moyens-des-services
+    acronyme: null
+    statut: provisoire  # AR : forme des PAP 2014 (note dépense, § 11), non lue au JORT
+    references: [decret-2009-3750, mineducation-pap-2014]
+    source_definition: {ref: decret-2009-3750}
+    voir_aussi: [depenses-de-gestion]
+    fr:
+      terme: Moyens des services
+      definition: >
+        Partie des dépenses de gestion que l'Annuaire statistique range sous
+        « biens et services ».
+      synonymes: []
+    ar:
+      terme: وسائل المصالح
+      definition: ""
+      synonymes: []
+
+  - id: interventions-publiques
+    acronyme: null
+    statut: provisoire  # AR : forme des PAP 2014 (note dépense, § 11), non lue au JORT
+    references: [decret-2009-3750, mineducation-pap-2014]
+    source_definition: {ref: decret-2009-3750}
+    voir_aussi: [depenses-de-gestion]
+    fr:
+      terme: Interventions publiques
+      definition: >
+        Partie des dépenses de gestion que l'Annuaire statistique range sous
+        « autres dépenses ».
+      synonymes: []
+    ar:
+      terme: التدخل العمومي
+      definition: ""
+      synonymes: []
+
+  - id: credits-d-engagement
+    acronyme: null
+    statut: provisoire  # AR lu : loi organique n° 2019-15 (AR, couche texte), art. 22
+    references: [loi-org-2019-15-lob]
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 22"}
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 22"}
+    voir_aussi: [credits-de-paiement]
+    fr:
+      terme: Crédits d'engagement
+      definition: >
+        Crédits mis à la disposition de l'ordonnateur, qui fixent la limite des
+        dépenses qu'il peut engager.
+      synonymes: []
+    ar:
+      terme: اعتمادات التعهد
+      definition: ""
+      synonymes: []
+
+  - id: credits-de-paiement
+    acronyme: null
+    statut: valide  # AR lu : loi organique n° 2019-15 (AR, couche texte), art. 22
+    references: [loi-org-2019-15-lob]
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 22"}
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 22"}
+    voir_aussi: [credits-d-engagement]
+    fr:
+      terme: Crédits de paiement
+      definition: >
+        Crédits qui permettent d'ordonnancer les dépenses dans l'année ; ceux qui ne
+        sont pas employés à la fin de l'année sont annulés.
+      synonymes: []
+    ar:
+      terme: اعتمادات الدفع
+      definition: >
+        اعتمادات تمكّن من الأمر بصرف النفقات خلال السنة، وتُلغى الاعتمادات غير المستعملة
+        في نهاية السنة.
+      synonymes: []
+
+  - id: mission-budgetaire
+    acronyme: null
+    statut: valide  # AR lu : loi organique n° 2019-15 (AR, couche texte), art. 1er
+    references: [loi-org-2019-15-lob, mineducation-pap-2014]
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 1er"}
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 1er"}
+    voir_aussi: [programme-budgetaire, projet-annuel-performance]
+    fr:
+      terme: Mission budgétaire
+      definition: >
+        Ensemble de programmes qui concourent à des politiques publiques déterminées,
+        et des crédits mis à la disposition de chaque chef de mission.
+      synonymes: [Mission]
+    ar:
+      terme: المهمة
+      definition: >
+        مجموعة من البرامج تساهم في تنفيذ سياسات عمومية محددة، والاعتمادات الموضوعة على
+        ذمّة كل رئيس مهمة.
+      synonymes: []
+
+  - id: programme-budgetaire
+    acronyme: null
+    statut: valide  # AR lu : loi organique n° 2019-15 (AR, couche texte), art. 1er
+    references: [loi-org-2019-15-lob, mineducation-pap-2014]
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 1er"}
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 1er"}
+    voir_aussi: [mission-budgetaire, projet-annuel-performance]
+    fr:
+      terme: Programme budgétaire
+      definition: >
+        Politique publique déterminée relevant d'une mission, qui regroupe un ensemble
+        homogène de sous-programmes et d'activités sous la conduite d'un chef de
+        programme.
+      synonymes: [Programme]
+    ar:
+      terme: البرنامج
+      definition: >
+        سياسة عمومية محددة تندرج ضمن مهمة، وتجمع مجموعة متجانسة من البرامج الفرعية
+        والأنشطة تحت إشراف رئيس برنامج.
+      synonymes: []
+
+  - id: projet-annuel-performance
+    acronyme: PAP
+    statut: valide  # AR lu : loi organique n° 2019-15 (AR, couche texte), art. 1er ; les PAP 2014 portent « المشروع السنوي للقدرة على الأداء »
+    references: [loi-org-2019-15-lob, mineducation-pap-2014, mesrs-pap-2014, mfpe-pap-2014]
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 1er"}
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 1er"}
+    voir_aussi: [mission-budgetaire, programme-budgetaire, rapport-annuel-performance]
+    fr:
+      terme: Projet annuel de performance
+      definition: >
+        Document qui présente, pour chaque mission, son découpage en programmes, ses
+        orientations stratégiques, et les objectifs et indicateurs de chaque programme.
+      synonymes: []
+    ar:
+      terme: المشروع السنوي للأداء
+      definition: >
+        وثيقة تعرض، بالنسبة إلى كل مهمة، تقسيمها إلى برامج وتوجهاتها الاستراتيجية،
+        وأهداف كل برنامج ومؤشراته.
+      synonymes: [المشروع السنوي للقدرة على الأداء]
+
+  - id: rapport-annuel-performance
+    acronyme: RAP
+    statut: provisoire  # AR lu : loi organique n° 2019-15 (AR, couche texte), art. 1er
+    references: [loi-org-2019-15-lob]
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 1er"}
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 1er"}
+    voir_aussi: [projet-annuel-performance]
+    fr:
+      terme: Rapport annuel de performance
+      definition: >
+        Document qui fait ressortir la performance réalisée au regard des objectifs et
+        des indicateurs du projet annuel de performance de la même année.
+      synonymes: []
+    ar:
+      terme: التقرير السنوي للأداء
+      definition: ""
+      synonymes: []
+
+  - id: loi-de-reglement
+    acronyme: null
+    statut: valide  # AR lu : loi organique n° 2019-15 (AR, couche texte), art. 3 et 65-67
+    references: [loi-org-2019-15-lob]
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 3 et 65-67"}
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 65"}
+    voir_aussi: [credits-de-paiement]
+    fr:
+      terme: Loi de règlement du budget
+      definition: >
+        Loi de finances qui arrête le montant définitif des recettes et des dépenses
+        du budget de l'État d'une année.
+      synonymes: [Loi de règlement]
+    ar:
+      terme: قانون غلق ميزانية الدولة
+      definition: >
+        قانون مالية يضبط المبلغ النهائي لمقابيض ونفقات ميزانية الدولة لسنة معيّنة.
+      synonymes: [قانون غلق الميزانية]
+
+  - id: repartition-des-credits
+    acronyme: null
+    statut: provisoire  # AR : forme de la note dépense (§ 11), non lue au JORT
+    references: [decret-2009-3750]
+    source_definition: {ref: decret-2009-3750}
+    voir_aussi: [credits-de-paiement, depenses-de-gestion]
+    fr:
+      terme: Répartition des crédits
+      definition: >
+        Ventilation, par décret, des crédits du budget de l'État ouverts par la loi de
+        finances, présentée en tableaux.
+      synonymes: []
+    ar:
+      terme: توزيع الاعتمادات
+      definition: ""
+      synonymes: []
+
+  # Notions analytiques : pas de terme arabe officiel ; à faire confirmer.
+
+  - id: cout-unitaire
+    acronyme: null
+    # AR à confirmer : forme de la note dépense (§ 11). Pas de `source_definition` : la
+    # méthode est à arrêter par le chapitre (question Q9 du plan).
+    statut: provisoire
+    references: []
+    voir_aussi: [depenses-de-gestion]
+    fr:
+      terme: Coût unitaire
+      definition: >
+        Dépense publique d'éducation d'un niveau d'enseignement rapportée au nombre de
+        ses élèves ou étudiants.
+      synonymes: [Coût public par élève]
+    ar:
+      terme: كلفة التلميذ
+      definition: ""
+      synonymes: []
+
+  - id: coefficient-budgetaire
+    acronyme: null
+    statut: provisoire  # AR à confirmer : aucune forme lue ; traduction du terminologue
+    references: [ins-ebcnv-2021-communique]
+    source_definition: {ref: ins-ebcnv-2021-communique}
+    voir_aussi: []
+    fr:
+      terme: Coefficient budgétaire
+      definition: >
+        Part d'un poste de dépense dans la dépense totale de consommation des ménages.
+      synonymes: []
+    ar:
+      terme: المعامل الميزانياتي
+      definition: ""
+      synonymes: []
+
+  # ── Éducation (chapitres 2, 3 et 4 — terminologue, passes 1 et 2, 17 octobre 2026) ──
+  # Notions des notes docs/notes/education-{scolaire,superieur,formation-professionnelle}-2026-10-17.md
+  # (§ 12, § 14, § 8). Passe 2 : chaque forme arabe a été relue à l'image dans l'édition
+  # arabe du JORT (ou dans sa couche texte, normalisée, pour 2015, 2016 et 2025) ; la
+  # page arabe est citée en commentaire, avec sa pagination propre, distincte de la
+  # pagination française. Quand le texte contredit la forme de la passe 1, le texte
+  # l'emporte et le terme est corrigé. Restent `provisoire`, sans définition arabe, les
+  # notions sans texte arabe lu (redoublement, abandon scolaire, maîtrise).
+
+  # L'enseignement scolaire : examens
+
+  - id: baccalaureat
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-19 (AR), art. 3 et 6, JORT AR n° 19 de 2008, p. 868 (« البكالوريا ») ; l'arrêté du 24 juin 1992 (AR, intitulé et art. 13) écrit « الباكالوريا »
+    references: [arrete1992-06-24-bac, arrete2008-04-24-bac, decret92-1182, loi2008-19]
+    source_definition: {ref: arrete1992-06-24-bac, locator: "art. 1er-2"}
+    source_traduction: {ref: loi2008-19, locator: "art. 6"}
+    voir_aussi: [enseignement-secondaire, session-principale, session-de-controle, moyenne-annuelle, rachat-examen, baccalaureat-professionnel]
+    fr:
+      terme: Baccalauréat
+      definition: >
+        Diplôme qui sanctionne l'enseignement secondaire, attribué à l'issue d'un
+        examen national organisé en deux sessions, principale et de contrôle, et qui
+        ouvre l'accès à l'enseignement supérieur.
+      synonymes: []
+    ar:
+      terme: البكالوريا
+      definition: >
+        شهادة تُتوِّج التعليم الثانوي، تُسند إثر امتحان وطني يُنظَّم في دورتين،
+        رئيسية وللمراقبة، وتفتح باب الالتحاق بالتعليم العالي.
+      synonymes: [الباكالوريا]
+
+  - id: session-principale
+    acronyme: null
+    statut: valide  # AR lu : arrêté du 24 juin 1992 (AR), art. 17-18, JORT AR n° 41 de 1992, p. 804
+    references: [arrete1992-06-24-bac]
+    source_definition: {ref: arrete1992-06-24-bac, locator: "art. 1er-2 et 14"}
+    source_traduction: {ref: arrete1992-06-24-bac, locator: "art. 17-18"}
+    voir_aussi: [baccalaureat, session-de-controle]
+    fr:
+      terme: Session principale
+      definition: >
+        Première session de l'examen national du baccalauréat, à l'issue de laquelle
+        est admis le candidat dont la moyenne atteint 10 sur 20.
+      synonymes: []
+    ar:
+      terme: الدورة الرئيسية
+      definition: >
+        الدورة الأولى من الامتحان الوطني للبكالوريا، يُصرَّح إثرها بقبول المترشح الذي
+        يبلغ معدّله 10 من 20.
+      synonymes: []
+
+  - id: session-de-controle
+    acronyme: null
+    statut: valide  # AR lu : arrêté du 24 juin 1992 (AR), art. 15-16, JORT AR n° 41 de 1992, p. 804
+    references: [arrete1992-06-24-bac, arrete2001-11-02-bac, arrete2008-04-24-bac]
+    source_definition: {ref: arrete1992-06-24-bac, locator: "art. 15"}
+    source_traduction: {ref: arrete1992-06-24-bac, locator: "art. 15"}
+    voir_aussi: [baccalaureat, session-principale, rachat-examen]
+    fr:
+      terme: Session de contrôle
+      definition: >
+        Seconde session de l'examen du baccalauréat, ouverte au candidat non admis à la
+        session principale dont la moyenne atteint 8 sur 20 en 1992 (7 sous condition
+        de moyenne annuelle), puis 7 sur 20 depuis l'arrêté du 2 novembre 2001.
+      synonymes: []
+    ar:
+      terme: دورة المراقبة
+      definition: >
+        الدورة الثانية من امتحان البكالوريا، يُرخَّص في اجتيازها للمترشح غير المقبول
+        في الدورة الرئيسية إذا بلغ معدّله 8 من 20 سنة 1992 (أو 7 بشرط المعدّل
+        السنوي)، ثم 7 من 20 منذ قرار 2 نوفمبر 2001.
+      synonymes: []
+
+  - id: moyenne-annuelle
+    acronyme: null
+    statut: valide  # AR lu : arrêté du 24 juin 1992 (AR), art. 8, 15 et 17, JORT AR n° 41 de 1992, p. 804 (« المعدل السنوي », « المعدل السنوي العام »)
+    references: [arrete2001-11-02-bac, arrete2002-01-02-bac, arrete2014-12-05-bac, arrete2016-08-12-bac, arrete1992-06-24-bac]
+    source_definition: {ref: arrete2001-11-02-bac, locator: "art. 14 nouveau"}
+    source_traduction: {ref: arrete1992-06-24-bac, locator: "art. 15 et 17"}
+    voir_aussi: [baccalaureat, rachat-examen]
+    fr:
+      terme: Moyenne annuelle
+      definition: >
+        Moyenne générale de l'élève sur l'année de terminale, qui entre dans la
+        moyenne finale du baccalauréat à compter de l'arrêté du 2 novembre 2001 et en
+        sort avec l'arrêté du 12 août 2016.
+      synonymes: [Moyenne annuelle générale]
+    ar:
+      terme: المعدل السنوي
+      definition: >
+        المعدّل العام للتلميذ في سنة البكالوريا، يدخل في المعدّل النهائي للبكالوريا
+        بداية من قرار 2 نوفمبر 2001 ويخرج منه بقرار 12 أوت 2016.
+      synonymes: [المعدل السنوي العام]
+
+  - id: rachat-examen
+    acronyme: null
+    statut: valide  # AR lu : arrêté du 24 juin 1992 (AR), art. 17, JORT AR n° 41 de 1992, p. 804 (« الإسعاف في الدورة الرئيسية »)
+    # Terme FR qualifié « (examen) » : ne pas confondre avec le rachat de services des retraites.
+    references: [arrete1992-06-24-bac, arrete2001-11-02-bac, decret98-2551]
+    source_definition: {ref: arrete1992-06-24-bac, locator: "art. 17"}
+    source_traduction: {ref: arrete1992-06-24-bac, locator: "art. 17"}
+    voir_aussi: [baccalaureat, session-de-controle, moyenne-annuelle, diplome-fin-enseignement-base]
+    fr:
+      terme: Rachat (examen)
+      definition: >
+        Admission du candidat au baccalauréat, ou au diplôme de fin d'études de
+        l'enseignement de base, dont la moyenne, inférieure à 10 sur 20, atteint au
+        moins 9, sous des conditions de moyenne annuelle, de notes et de conduite.
+      synonymes: [Rachat]
+    ar:
+      terme: الإسعاف
+      definition: >
+        قبول المترشح للبكالوريا، أو لشهادة ختم التعليم الأساسي، الذي يقلّ معدّله عن
+        10 من 20 ويبلغ 9 على الأقل، بشروط تتعلّق بالمعدّل السنوي والأعداد والسيرة.
+      synonymes: []
+
+  # L'enseignement scolaire : cours particuliers et soutien
+
+  - id: cours-particuliers
+    acronyme: null
+    statut: valide  # AR lu : décret gouvernemental n° 2015-1619 (AR, couche texte), art. 6, 8 et 11, JORT AR n° 88 de 2015
+    references: [decret88-679, decret-gouv2015-1619, arrete2015-12-31-cours-particuliers, arrete2023-11-13-cours-particuliers]
+    source_definition: {ref: decret-gouv2015-1619, locator: "art. 6-7 et 10"}
+    source_traduction: {ref: decret-gouv2015-1619, locator: "art. 6"}
+    voir_aussi: [lecons-de-soutien]
+    fr:
+      terme: Cours particuliers
+      definition: >
+        Cours payants donnés par des enseignants du public hors de leur emploi du
+        temps, permis depuis 2015 dans la seule enceinte des établissements éducatifs
+        publics, à des montants fixés par arrêté conjoint.
+      synonymes: []
+    ar:
+      terme: الدروس الخصوصية
+      definition: >
+        دروس بمقابل يقدّمها مدرّسو التعليم العمومي خارج جداول أوقاتهم، مسموح بها منذ
+        2015 داخل فضاء المؤسسات التربوية العمومية دون سواه، بمبالغ يضبطها قرار مشترك.
+      synonymes: []
+
+  - id: lecons-de-soutien
+    acronyme: null
+    statut: valide  # AR lu : décret gouvernemental n° 2015-1619 (AR, couche texte), art. 4-5, JORT AR n° 88 de 2015
+    references: [decret88-679, decret-gouv2015-1619]
+    source_definition: {ref: decret-gouv2015-1619, locator: "art. 1er et 4"}
+    source_traduction: {ref: decret-gouv2015-1619, locator: "art. 4"}
+    voir_aussi: [cours-particuliers]
+    fr:
+      terme: Leçons de soutien
+      definition: >
+        Leçons gratuites organisées dans l'établissement éducatif public pour aider
+        l'élève à renforcer ses capacités et à consolider ses acquis.
+      synonymes: [Leçons de rattrapage ou de soutien]
+    ar:
+      terme: دروس الدعم
+      definition: >
+        دروس مجانية تُنظَّم داخل المؤسسة التربوية العمومية لمساعدة التلميذ على تعزيز
+        قدراته المعرفية وتدعيم مكتسباته.
+      synonymes: []
+
+  # Le préscolaire
+
+  - id: jardin-d-enfants
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2008-486 (AR), art. 4, JORT AR n° 17 de 2008, p. 830 (« روضة أطفال ») ; pluriel « رياض الأطفال » au décret n° 2024-721 (AR, couche texte), art. 1er et 8
+    # « رياض الأطفال » entre aussi dans « المساهمة في مصاريف رياض الأطفال » (contribution-frais-creche) : même objet, pas de collision.
+    references: [decret2001-1908, arrete2022-10-12-jardins-publics, decret2008-486]
+    source_definition: {ref: decret2001-1908, locator: "art. 1er-2"}
+    source_traduction: {ref: decret2008-486, locator: "art. 4"}
+    voir_aussi: [education-prescolaire, annee-preparatoire, animateur-jardins-enfants, kouttab]
+    fr:
+      terme: Jardin d'enfants
+      definition: >
+        Établissement d'éducation préscolaire, public ou privé, dont l'ouverture est
+        soumise à un cahier des charges approuvé par arrêté ministériel.
+      synonymes: []
+    ar:
+      terme: روضة الأطفال
+      definition: >
+        مؤسسة للتربية قبل المدرسية، عمومية أو خاصة، يخضع فتحها لكرّاس شروط يُصادَق
+        عليه بقرار وزاري.
+      synonymes: [رياض الأطفال]
+
+  - id: animateur-jardins-enfants
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2024-721 (AR, couche texte), intitulé et art. 2, JORT AR n° 1 de 2025, p. 15 (« منشط رياض الأطفال », grade de base)
+    references: [decret2024-721]
+    source_definition: {ref: decret2024-721}
+    source_traduction: {ref: decret2024-721, locator: "art. 2"}
+    voir_aussi: [jardin-d-enfants, statut-particulier]
+    fr:
+      terme: Animateur des jardins d'enfants
+      definition: >
+        Agent d'un corps de la fonction publique affecté aux jardins d'enfants
+        publics ; celui du ministère de la famille, de la femme, de l'enfance et des
+        personnes âgées est régi par le statut particulier du décret n° 2024-721.
+      synonymes: []
+    ar:
+      terme: منشط رياض الأطفال
+      definition: >
+        عون من سلك بالوظيفة العمومية يعمل برياض الأطفال العمومية؛ ويخضع سلك الوزارة
+        المكلفة بالمرأة والأسرة والطفولة وكبار السن إلى النظام الأساسي الخاص الصادر
+        بالأمر عدد 721 لسنة 2024.
+      synonymes: []
+
+  - id: kouttab
+    acronyme: null
+    statut: valide  # AR lu : arrêté du 6 septembre 1980 (AR), intitulé et art. 1er-12, JORT AR n° 51 de 1980, p. 2330-2331 (« الكتاتيب القرآنية » ; singulier « الكتاب », art. 4, 6, 10 et 17)
+    references: [arrete1980-09-06-kouttabs, arrete1990-12-22-kouttabs]
+    source_definition: {ref: arrete1980-09-06-kouttabs, locator: "art. 1er, 6 et 8"}
+    source_traduction: {ref: arrete1980-09-06-kouttabs, locator: "intitulé, art. 6-7"}
+    voir_aussi: [moueddeb, jardin-d-enfants, education-prescolaire]
+    fr:
+      terme: Kouttab coranique
+      definition: >
+        Établissement ouvert sur autorisation administrative, qui accueille des
+        enfants d'au moins quatre ans pour leur faire apprendre le Coran, les
+        préceptes islamiques et les règles préliminaires de la langue arabe.
+      synonymes: [Kouttab]
+    ar:
+      terme: الكتّاب القرآني
+      definition: >
+        مؤسسة تُفتح بترخيص إداري، تقبل أطفالا لا يقلّ سنّهم عن أربع سنوات لتحفيظهم
+        القرآن الكريم وتعليمهم مبادئ الدين واللغة العربية.
+      synonymes: [الكتاتيب القرآنية]
+
+  - id: moueddeb
+    acronyme: null
+    statut: valide  # AR lu : arrêté du 6 septembre 1980 (AR), art. 7, 13-14 et 16, JORT AR n° 51 de 1980, p. 2331
+    references: [arrete1980-09-06-kouttabs]
+    source_definition: {ref: arrete1980-09-06-kouttabs, locator: "art. 16"}
+    source_traduction: {ref: arrete1980-09-06-kouttabs, locator: "art. 16"}
+    voir_aussi: [kouttab]
+    fr:
+      terme: Moueddeb
+      definition: >
+        Maître d'un kouttab coranique, qui perçoit, lorsqu'il est reconnu, une
+        indemnité mensuelle servie par la direction du culte.
+      synonymes: []
+    ar:
+      terme: المؤدب
+      definition: >
+        معلّم الكتّاب القرآني، يتقاضى، إذا كان معترفا به، منحة شهرية تحدّد مقدارها
+        إدارة الشؤون الدينية.
+      synonymes: []
+
+  # L'enseignement privé
+
+  - id: etablissement-educatif-prive
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2008-486 (AR), intitulé et art. 1er et 6, JORT AR n° 17 de 2008, p. 830
+    references: [decret92-1187, decret2008-486]
+    source_definition: {ref: decret2008-486, locator: "art. 1er et 4"}
+    source_traduction: {ref: decret2008-486, locator: "art. 1er et 6"}
+    voir_aussi: [education-prescolaire, enseignement-de-base, enseignement-secondaire]
+    fr:
+      terme: Établissement éducatif privé
+      definition: >
+        Établissement préscolaire, primaire, préparatoire, secondaire ou
+        d'enseignement à distance créé par une personne privée sur autorisation
+        préalable du ministre chargé de l'éducation.
+      synonymes: []
+    ar:
+      terme: المؤسسة التربوية الخاصة
+      definition: >
+        مؤسسة للتربية قبل المدرسية أو مدرسة ابتدائية أو إعدادية أو معهد أو مؤسسة
+        للتربية والتكوين عن بعد، يحدثها شخص خاص بترخيص مسبق من الوزير المكلف
+        بالتربية.
+      synonymes: [المؤسسات التربوية الخاصة]
+
+  # L'enseignement supérieur
+
+  - id: licence
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-19 (AR), art. 3, JORT AR n° 19 de 2008, p. 868
+    # Terme FR qualifié : « licence » et « الإجازة » désignent aussi, en finances locales, le
+    # droit de licence sur les débits de boissons (« معلوم الإجازة », code de la fiscalité locale).
+    references: [loi2008-19, decret2008-3123]
+    source_definition: {ref: loi2008-19, locator: "art. 3"}
+    source_traduction: {ref: loi2008-19, locator: "art. 3"}
+    voir_aussi: [lmd, licence-appliquee, licence-fondamentale, mastere, credit-enseignement-superieur]
+    fr:
+      terme: Licence (enseignement supérieur)
+      definition: >
+        Diplôme national qui sanctionne le premier cycle du système LMD, trois ans
+        d'études et 180 crédits après le baccalauréat ; elle est appliquée ou
+        fondamentale.
+      synonymes: [Licence]
+    ar:
+      terme: الإجازة
+      definition: >
+        شهادة وطنية تُتوِّج المرحلة الأولى من نظام أمد، بعد ثلاث سنوات من الدراسة
+        و180 رصيدا بعد البكالوريا؛ وهي تطبيقية أو أساسية.
+      synonymes: []
+
+  - id: licence-appliquee
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2008-3123 (AR), art. 4, 6-8, JORT AR n° 79 de 2008, p. 3630
+    references: [decret2004-2721, decret2008-3123]
+    source_definition: {ref: decret2008-3123, locator: "art. 4-5 et 11"}
+    source_traduction: {ref: decret2008-3123, locator: "art. 6"}
+    voir_aussi: [lmd, licence, licence-fondamentale, credit-enseignement-superieur, mastere-professionnel, iset]
+    fr:
+      terme: Licence appliquée
+      definition: >
+        Licence de trois ans et 180 crédits, tournée vers le marché de l'emploi et
+        comprenant des stages, vers laquelle le décret n° 2008-3123 oriente les deux
+        tiers au moins des étudiants.
+      synonymes: []
+    ar:
+      terme: الإجازة التطبيقية
+      definition: >
+        إجازة مدّتها ثلاث سنوات و180 رصيدا، موجّهة نحو سوق الشغل وتشمل تربّصات،
+        يوجّه إليها الأمر عدد 3123 لسنة 2008 ثلثي الطلبة على الأقل.
+      synonymes: []
+
+  - id: licence-fondamentale
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2008-3123 (AR), art. 4, 9-10, JORT AR n° 79 de 2008, p. 3630
+    references: [decret2008-3123]
+    source_definition: {ref: decret2008-3123, locator: "art. 4-5 et 11"}
+    source_traduction: {ref: decret2008-3123, locator: "art. 9"}
+    voir_aussi: [lmd, licence, licence-appliquee, credit-enseignement-superieur, mastere-de-recherche]
+    fr:
+      terme: Licence fondamentale
+      definition: >
+        Licence de trois ans et 180 crédits qui prépare à la poursuite d'études en
+        mastère de recherche ou professionnel.
+      synonymes: []
+    ar:
+      terme: الإجازة الأساسية
+      definition: >
+        إجازة مدّتها ثلاث سنوات و180 رصيدا، تُعِدّ لمواصلة الدراسة في ماجستير البحث
+        أو في الماجستير المهني.
+      synonymes: []
+
+  - id: mastere
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-19 (AR), art. 3, JORT AR n° 19 de 2008, p. 868
+    references: [loi2008-19, decret2012-1227]
+    source_definition: {ref: loi2008-19, locator: "art. 3"}
+    source_traduction: {ref: loi2008-19, locator: "art. 3"}
+    voir_aussi: [lmd, licence, doctorat, mastere-professionnel, mastere-de-recherche]
+    fr:
+      terme: Mastère
+      definition: >
+        Diplôme national qui sanctionne le deuxième cycle du système LMD, deux ans
+        d'études et 120 crédits après la licence ; il est professionnel ou de
+        recherche.
+      synonymes: []
+    ar:
+      terme: الماجستير
+      definition: >
+        شهادة وطنية تُتوِّج المرحلة الثانية من نظام أمد، بعد سنتين من الدراسة و120
+        رصيدا بعد الإجازة؛ وهو مهني أو للبحث.
+      synonymes: []
+
+  - id: mastere-professionnel
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2008-3123 (AR), art. 6, JORT AR n° 79 de 2008, p. 3630 (« شهادة الماجستير المهني »)
+    references: [decret2012-1227, decret2008-3123]
+    source_definition: {ref: decret2012-1227, locator: "art. 2, 5 et 11"}
+    source_traduction: {ref: decret2008-3123, locator: "art. 6"}
+    voir_aussi: [lmd, mastere, mastere-de-recherche, licence-appliquee]
+    fr:
+      terme: Mastère professionnel
+      definition: >
+        Diplôme national de deux ans et 120 crédits, ouvert aux meilleurs titulaires
+        d'une licence appliquée ou fondamentale.
+      synonymes: []
+    ar:
+      terme: الماجستير المهني
+      definition: >
+        شهادة وطنية مدّتها سنتان و120 رصيدا، مفتوحة للمتميّزين من حاملي الإجازة
+        التطبيقية أو الأساسية.
+      synonymes: []
+
+  - id: mastere-de-recherche
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2008-3123 (AR), art. 9, JORT AR n° 79 de 2008, p. 3630 (« شهادة ماجستير البحث »)
+    references: [decret2012-1227, decret2013-47, decret2008-3123]
+    source_definition: {ref: decret2012-1227, locator: "art. 2, 5 et 24"}
+    source_traduction: {ref: decret2008-3123, locator: "art. 9"}
+    voir_aussi: [lmd, mastere, mastere-professionnel, licence-fondamentale, doctorat]
+    fr:
+      terme: Mastère de recherche
+      definition: >
+        Diplôme national de deux ans et 120 crédits, ouvert aux meilleurs titulaires
+        d'une licence fondamentale, qui donne accès au doctorat.
+      synonymes: []
+    ar:
+      terme: ماجستير البحث
+      definition: >
+        شهادة وطنية مدّتها سنتان و120 رصيدا، مفتوحة للمتميّزين من حاملي الإجازة
+        الأساسية، وتفتح باب الدكتوراه.
+      synonymes: []
+
+  - id: doctorat
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-19 (AR), art. 3, JORT AR n° 19 de 2008, p. 868
+    references: [loi2008-19, decret2013-47]
+    source_definition: {ref: loi2008-19, locator: "art. 3"}
+    source_traduction: {ref: loi2008-19, locator: "art. 3"}
+    voir_aussi: [lmd, mastere, mastere-de-recherche]
+    fr:
+      terme: Doctorat
+      definition: >
+        Diplôme national qui sanctionne le troisième cycle du système LMD, cycle de
+        formation et de recherche de trois ans après le mastère.
+      synonymes: []
+    ar:
+      terme: الدكتوراه
+      definition: >
+        شهادة وطنية تُتوِّج المرحلة الثالثة من نظام أمد، وهي مرحلة تكوين وبحث تدوم
+        ثلاث سنوات بعد الماجستير.
+      synonymes: []
+
+  - id: maitrise
+    acronyme: null
+    statut: provisoire  # AR à confirmer : forme du terminologue (« الأستاذية »), non lue à l'édition arabe du décret n° 93-2333
+    # « Maîtrise » s'entend ici du diplôme, non de la maîtrise d'un savoir ou d'un ouvrage.
+    references: [decret93-2333, decret2008-3123]
+    source_definition: {ref: decret93-2333, locator: "art. 2, 13 et 14"}
+    voir_aussi: [licence, lmd]
+    fr:
+      terme: Maîtrise
+      definition: >
+        Diplôme du régime antérieur au système LMD, obtenu en quatre ans d'études
+        organisés en deux cycles de deux ans ; la licence du système LMD le remplace à
+        partir de 2006-2007.
+      synonymes: []
+    ar:
+      terme: الأستاذية
+      definition: ""
+      synonymes: []
+
+  - id: credit-enseignement-superieur
+    acronyme: null
+    statut: valide  # AR lu : décret n° 2008-3123 (AR), art. 5 et 8, JORT AR n° 79 de 2008, p. 3630 (« 180 رصيدا », « 30 رصيدا »)
+    # Terme FR qualifié : ne pas confondre avec le crédit de TVA ni les crédits budgétaires
+    # (« اعتمادات »). En arabe, « الرصيد » désigne aussi le solde d'un compte : le terme ne
+    # s'emploie ici qu'avec un nombre de crédits.
+    references: [decret2008-3123]
+    source_definition: {ref: decret2008-3123, locator: "art. 5 et 21-22"}
+    source_traduction: {ref: decret2008-3123, locator: "art. 5"}
+    voir_aussi: [lmd, licence, licence-appliquee, licence-fondamentale]
+    fr:
+      terme: Crédit (enseignement supérieur)
+      definition: >
+        Unité capitalisable attachée à chaque unité d'enseignement, à raison de quatre
+        à sept, dont la licence compte 180 et chaque semestre 30.
+      synonymes: [Crédit]
+    ar:
+      terme: الرصيد
+      definition: >
+        وحدة قابلة للتراكم تُسند لكل وحدة تعليمية، بحساب أربعة إلى سبعة أرصدة، تعدّ
+        منها الإجازة 180 ويعدّ منها كل سداسي 30.
+      synonymes: []
+
+  - id: contribution-vie-universitaire
+    acronyme: null
+    statut: valide  # AR lu : décret n° 95-1419 (AR), intitulé et art. 1er-2, JORT AR n° 64 de 1995, p. 1760 ; loi n° 2008-19 (AR), art. 35 (« مساهمة الطلبة في الحياة الجامعية »)
+    references: [decret95-1419, decret97-1359, decret-gouv2016-1314, loi2008-19]
+    source_definition: {ref: decret95-1419, locator: "art. 2-4"}
+    source_traduction: {ref: decret95-1419, locator: "art. 1er"}
+    voir_aussi: [droits-inscription, bourse-nationale, pret-universitaire]
+    fr:
+      terme: Contribution financière des étudiants à la vie universitaire
+      definition: >
+        Somme annuelle due par l'étudiant de l'enseignement supérieur public au titre
+        de l'inscription, de la bibliothèque, des examens, du contrôle médical et des
+        activités, fixée par décret selon le cycle puis, depuis 1997, selon le groupe
+        de disciplines.
+      synonymes: []
+    ar:
+      terme: مساهمة الطلبة المالية في الحياة الجامعية
+      definition: >
+        مبلغ سنوي يدفعه طالب التعليم العالي العمومي بعنوان رسوم التسجيل والمكتبة
+        والامتحان والفحص الطبي والأنشطة، يُضبط بأمر حسب مرحلة الدراسة ثم، منذ 1997،
+        حسب مجموعة الاختصاصات.
+      synonymes: [مساهمة الطلبة في الحياة الجامعية]
+
+  - id: iset
+    acronyme: ISET
+    statut: valide  # AR lu : loi n° 2008-19 (AR), art. 4, JORT AR n° 19 de 2008, p. 868 (« المعاهد العليا للدراسات التكنولوجية »)
+    references: [loi92-50, loi92-51, decret2008-3123, loi2008-19]
+    source_definition: {ref: loi92-50, locator: "art. 1er-2"}
+    source_traduction: {ref: loi2008-19, locator: "art. 4"}
+    voir_aussi: [licence-appliquee, epst]
+    fr:
+      terme: Institut supérieur des études technologiques
+      definition: >
+        Établissement public à caractère scientifique et technologique qui dispense un
+        enseignement supérieur préparant aux fonctions d'encadrement technique dans la
+        production, les services et la recherche appliquée.
+      synonymes: []
+    ar:
+      terme: المعهد العالي للدراسات التكنولوجية
+      definition: >
+        مؤسسة عمومية ذات صبغة علمية وتكنولوجية تؤمّن تعليما عاليا يُعِدّ لمهامّ
+        التأطير التقني في الإنتاج والخدمات والبحث التطبيقي.
+      synonymes: [المعاهد العليا للدراسات التكنولوجية]
+
+  - id: epst
+    acronyme: EPST
+    statut: valide  # AR lu : loi n° 2008-19 (AR), art. 10, JORT AR n° 19 de 2008, p. 869 (« مؤسسات عمومية ذات صبغة علمية وتكنولوجية »)
+    references: [loi2008-19, loi92-50]
+    source_definition: {ref: loi2008-19, locator: "art. 10"}
+    source_traduction: {ref: loi2008-19, locator: "art. 10"}
+    voir_aussi: [epa, iset]
+    fr:
+      terme: Établissement public à caractère scientifique et technologique
+      definition: >
+        Catégorie d'établissement public distincte de l'établissement public à
+        caractère administratif. La loi n° 2008-19 permet d'y ériger une université
+        qui remplit des conditions fixées par décret ; l'université ainsi érigée est
+        soumise à la législation commerciale, sauf contrariété avec cette loi, et ses
+        agents restent régis par le statut général de la fonction publique.
+      synonymes: []
+    ar:
+      terme: المؤسسة العمومية ذات الصبغة العلمية والتكنولوجية
+      definition: >
+        صنف من المؤسسات العمومية متميّز عن المؤسسة العمومية ذات الصبغة الإدارية. يجيز
+        القانون عدد 19 لسنة 2008 تحويل الجامعة إلى هذه الصبغة إذا توفّرت فيها شروط
+        تُضبط بأمر؛ وتخضع الجامعة المحوَّلة إلى التشريع التجاري ما لم تتعارض أحكامه
+        مع هذا القانون، ويخضع أعوانها إلى النظام الأساسي العام للوظيفة العمومية.
+      synonymes: []
+
+  - id: assurance-qualite
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-19 (AR), intitulé du titre V et art. 41-43, JORT AR n° 19 de 2008, p. 871
+    references: [loi2008-19, loi2008-10]
+    source_definition: {ref: loi2008-19, locator: "art. 5 et 41-55"}
+    source_traduction: {ref: loi2008-19, locator: "art. 41"}
+    voir_aussi: [accreditation, instance-evaluation-qualite-accreditation]
+    fr:
+      terme: Assurance qualité
+      definition: >
+        Ensemble des procédures d'évaluation de la qualité des établissements et des
+        formations, que la loi n° 2008-19 tient pour un élément fondamental de
+        l'enseignement supérieur.
+      synonymes: [Assurance-qualité]
+    ar:
+      terme: ضمان الجودة
+      definition: >
+        مجموعة إجراءات لتقييم جودة المؤسسات والتكوين، يعدّها القانون عدد 19 لسنة 2008
+        عنصرا أساسيا في منظومة التعليم العالي.
+      synonymes: []
+
+  - id: accreditation
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-19 (AR), intitulé du titre V et art. 41, JORT AR n° 19 de 2008, p. 871
+    # « الاعتماد » (singulier) : ne pas confondre avec « اعتمادات » (crédits budgétaires,
+    # credits-d-engagement, credits-de-paiement), que la même loi emploie aux art. 36-39.
+    references: [loi2008-19]
+    source_definition: {ref: loi2008-19, locator: "art. 41-55"}
+    source_traduction: {ref: loi2008-19, locator: "art. 41"}
+    voir_aussi: [assurance-qualite, instance-evaluation-qualite-accreditation]
+    fr:
+      terme: Accréditation
+      definition: >
+        Reconnaissance accordée à l'issue de l'évaluation prévue par la loi n° 2008-19,
+        qui ouvre droit à des crédits budgétaires supplémentaires.
+      synonymes: []
+    ar:
+      terme: الاعتماد
+      definition: >
+        اعتراف يُمنح إثر التقييم الذي ينصّ عليه القانون عدد 19 لسنة 2008، ويخوّل
+        الحصول على اعتمادات مالية إضافية.
+      synonymes: []
+
+  - id: instance-evaluation-qualite-accreditation
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-19 (AR), art. 42-43, JORT AR n° 19 de 2008, p. 871
+    references: [loi2008-19]
+    source_definition: {ref: loi2008-19, locator: "art. 42"}
+    source_traduction: {ref: loi2008-19, locator: "art. 42"}
+    voir_aussi: [assurance-qualite, accreditation]
+    fr:
+      terme: Instance nationale de l'évaluation, de l'assurance-qualité et de l'accréditation
+      definition: >
+        Établissement public institué par la loi n° 2008-19 pour l'évaluation,
+        l'assurance qualité et l'accréditation dans l'enseignement supérieur.
+      synonymes: []
+    ar:
+      terme: الهيئة الوطنية للتقييم وضمان الجودة والاعتماد
+      definition: >
+        مؤسسة عمومية أحدثها القانون عدد 19 لسنة 2008، تتمتّع بالشخصية القانونية
+        والاستقلال المالي، وتتولّى التقييم وضمان الجودة والاعتماد في التعليم العالي.
+      synonymes: []
+
+  - id: etablissement-enseignement-superieur-prive
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2000-73 (AR), intitulé et art. 1er-4, JORT AR n° 60 de 2000, p. 1983 (« مؤسسة خاصة للتعليم العالي ») ; corrige la forme de la passe 1 (« مؤسسة التعليم العالي الخاصة »)
+    references: [loi2000-73, loi2006-50, loi2008-59]
+    source_definition: {ref: loi2000-73, locator: "art. 1er et 4"}
+    source_traduction: {ref: loi2000-73, locator: "art. 1er"}
+    voir_aussi: [etablissement-educatif-prive]
+    fr:
+      terme: Établissement d'enseignement supérieur privé
+      definition: >
+        Établissement assurant des formations postsecondaires, constitué en société
+        anonyme sur autorisation du ministre, au capital minimal de 150 000 dinars en
+        2000, porté à 2 000 000 dinars en 2008.
+      synonymes: []
+    ar:
+      terme: المؤسسة الخاصة للتعليم العالي
+      definition: >
+        مؤسسة تؤمّن تكوينا يلي التعليم الثانوي، تُحدث في شكل شركة خفية الاسم بترخيص
+        من الوزير، برأس مال أدنى قدره مائة وخمسون ألف دينار سنة 2000، رُفع إلى
+        مليوني دينار سنة 2008.
+      synonymes: []
+
+  # L'enseignement scolaire : flux
+
+  - id: redoublement
+    acronyme: null
+    statut: provisoire  # AR à confirmer : forme du terminologue ; aucun texte arabe lu (l'annuaire de l'INS n'a pas été relu en arabe)
+    references: [ins-annuaire-statistique]
+    source_definition: {ref: ins-annuaire-statistique}
+    voir_aussi: [abandon-scolaire, cycle-primaire]
+    fr:
+      terme: Redoublement
+      definition: >
+        Maintien d'un élève dans la même année d'études à la rentrée suivante ; l'INS
+        publie chaque année le nombre de redoublants du premier cycle de
+        l'enseignement de base public.
+      synonymes: [Redoublant]
+    ar:
+      terme: الرسوب
+      definition: ""
+      synonymes: []
+
+  - id: abandon-scolaire
+    acronyme: null
+    statut: provisoire  # AR à confirmer : forme du terminologue ; aucun texte arabe lu
+    references: [ins-annuaire-statistique]
+    source_definition: {ref: ins-annuaire-statistique}
+    voir_aussi: [redoublement, obligation-scolaire, cycle-primaire]
+    fr:
+      terme: Abandon scolaire
+      definition: >
+        Sortie d'un élève de l'école en cours d'année ou à son terme, sans passage ni
+        redoublement ; l'INS publie chaque année le nombre d'abandons au premier cycle
+        de l'enseignement de base public.
+      synonymes: []
+    ar:
+      terme: الانقطاع المدرسي
+      definition: ""
+      synonymes: []
+
+  # La formation professionnelle
+
+  - id: contrat-apprentissage
+    acronyme: null
+    statut: valide  # AR lu : loi n° 93-10 (AR), art. 22-25, JORT AR n° 14 de 1993, p. 253 (« عقد التدريب ») ; corrige « عقد التدريب المهني » de la passe 1 et « عقد التمهين » de la note
+    references: [loi93-10]
+    source_definition: {ref: loi93-10, locator: "art. 21-22 et 26"}
+    source_traduction: {ref: loi93-10, locator: "art. 23"}
+    voir_aussi: [apprentissage, indemnite-apprentissage, formation-en-alternance]
+    fr:
+      terme: Contrat d'apprentissage
+      definition: >
+        Contrat écrit, conforme à un modèle et visé par le ministère de la formation
+        professionnelle, par lequel une entreprise forme un apprenti âgé de quinze à
+        vingt ans.
+      synonymes: []
+    ar:
+      terme: عقد التدريب
+      definition: >
+        عقد كتابي مطابق لأنموذج تؤشّر عليه مصالح الوزارة المكلفة بالتكوين المهني،
+        تتولّى بمقتضاه منشأة تكوين متدرّب يتراوح سنّه بين 15 و20 سنة.
+      synonymes: []
+
+  - id: indemnite-apprentissage
+    acronyme: null
+    statut: valide  # AR lu : loi n° 93-10 (AR), art. 24, JORT AR n° 14 de 1993, p. 253 (« منحة التدريب ») ; corrige « منحة التدريب المهني » de la passe 1
+    # « منحة » rend aussi « bourse » (المنح المدرسية) : le complément « التدريب » lève l'ambiguïté.
+    references: [loi93-10]
+    source_definition: {ref: loi93-10, locator: "art. 24"}
+    source_traduction: {ref: loi93-10, locator: "art. 24"}
+    voir_aussi: [apprentissage, contrat-apprentissage, indemnite-de-stage]
+    fr:
+      terme: Indemnité d'apprentissage
+      definition: >
+        Indemnité servie par l'entreprise à l'apprenti, non soumise aux cotisations de
+        sécurité sociale, dont les montants minima sont fixés par décret.
+      synonymes: []
+    ar:
+      terme: منحة التدريب
+      definition: >
+        منحة تدفعها المنشأة للمتدرّب مدّة العقد، لا تخضع للاشتراكات بعنوان الضمان
+        الاجتماعي، وتُضبط مبالغها الدنيا بأمر.
+      synonymes: []
+
+  - id: cadre-general-reference
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-10 (AR), art. 52-53, JORT AR n° 14 de 2008, p. 734 (« إطار مرجعي عام », « الإطار المرجعي العام ») ; corrige « الإطار المرجعي العام للشهادات » de la passe 1
+    references: [loi2008-10, arrete2010-08-02-cadre-reference]
+    source_definition: {ref: loi2008-10, locator: "art. 52"}
+    source_traduction: {ref: loi2008-10, locator: "art. 52-53"}
+    voir_aussi: [classification-nationale-qualifications, certificat-de-competence, certificat-aptitude-professionnelle, brevet-technicien-professionnel, brevet-technicien-superieur]
+    fr:
+      terme: Cadre général de référence des diplômes
+      definition: >
+        Cadre fixé par arrêté qui détermine, pour chaque diplôme de la formation
+        professionnelle, le profil de sortie, la durée minimale de formation et la
+        formation générale.
+      synonymes: [Cadre général de référence]
+    ar:
+      terme: الإطار المرجعي العام
+      definition: >
+        إطار يُضبط بقرار من الوزير المكلف بالتكوين المهني، يحدّد لكل شهادة من شهادات
+        التكوين المهني مؤهلات المتخرّج ومدّة التكوين الأساسي الدنيا ومواد التكوين العام.
+      synonymes: []
+
+  - id: classification-nationale-qualifications
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2008-10 (AR), art. 52, JORT AR n° 14 de 2008, p. 734, et intitulé du décret n° 2009-2139 (sommaire du JORT AR n° 57 de 2009) : « السلم الوطني للمهارات » ; corrige « التصنيف الوطني للمؤهلات » de la passe 1. Le décret n° 2009-2139 n'a pas de clé bibliographique.
+    # « مهارة » rend aussi « compétence » (certificat-de-competence, « شهادة مهارة ») : rapprochement à garder en vue.
+    references: [loi2008-10]
+    source_definition: {ref: loi2008-10, locator: "art. 52"}
+    source_traduction: {ref: loi2008-10, locator: "art. 52"}
+    voir_aussi: [cadre-general-reference]
+    fr:
+      terme: Classification nationale des qualifications
+      definition: >
+        Classification des qualifications professionnelles fixée par décret en
+        application de l'article 52 de la loi n° 2008-10.
+      synonymes: []
+    ar:
+      terme: السلم الوطني للمهارات
+      definition: >
+        سلّم تُدرج ضمنه شهادات التكوين المهني، نصّ عليه الفصل 52 من القانون عدد 10
+        لسنة 2008 ويُضبط بأمر.
+      synonymes: []
+
+  - id: cheque-formation
+    acronyme: null
+    statut: valide  # AR lu : décret gouvernemental n° 2016-620 (AR, couche texte), art. 6-7, JORT AR n° 44 de 2016
+    references: [decret-gouv2016-620, arrete2008-04-08-cheque-formation]
+    source_definition: {ref: decret-gouv2016-620}
+    source_traduction: {ref: decret-gouv2016-620, locator: "art. 6"}
+    voir_aussi: [formation-professionnelle-initiale]
+    fr:
+      terme: Chèque-formation
+      definition: >
+        Titre émis dans le cadre d'un programme annuel par lequel l'État prend en
+        charge des dépenses de formation professionnelle initiale dans un
+        établissement privé.
+      synonymes: [Chèque formation initiale]
+    ar:
+      terme: صك التكوين
+      definition: >
+        صكّ يُسند في إطار برنامج سنوي تتكفّل بمقتضاه الدولة بمصاريف تكوين مهني
+        أساسي بمؤسسة تكوين خاصة.
+      synonymes: [صكوك التكوين]
+
+  - id: atfp
+    acronyme: ATFP
+    statut: valide  # AR lu : loi n° 93-11 (AR), art. 1er et 3, JORT AR n° 14 de 1993, p. 255
+    references: [loi93-11]
+    source_definition: {ref: loi93-11, locator: "art. 1er et 3"}
+    source_traduction: {ref: loi93-11, locator: "art. 1er"}
+    voir_aussi: [aneti, epic, formation-professionnelle-initiale]
+    fr:
+      terme: Agence tunisienne de la formation professionnelle
+      definition: >
+        Établissement public à caractère industriel et commercial, créé en 1993 sous
+        la tutelle du ministère de la formation professionnelle et de l'emploi, qui
+        assure la formation initiale des jeunes et des adultes.
+      synonymes: []
+    ar:
+      terme: الوكالة التونسية للتكوين المهني
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1993 تحت إشراف الوزارة
+        المكلفة بالتكوين المهني والتشغيل، تتولّى التكوين المهني الأساسي للشبان والكهول.
+      synonymes: []

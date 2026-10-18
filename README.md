@@ -22,6 +22,7 @@ télécharge aussi en PDF.
 | IX. Compensation | la Caisse générale de compensation et les subventions aux prix : produits de base, carburants, transport |
 | X. Entreprises publiques | transferts, garanties, dettes croisées, dividendes et cessions |
 | XI. Santé | couverture des soins, hôpital public, médecine de ville, rémunération des soignants et transferts non monétaires |
+| XII. L'éducation et la formation | histoire des lois du système éducatif, aides aux élèves et aux étudiants, dépense publique d'éducation |
 
 Chaque dispositif y est présenté dans son histoire, réforme par réforme, avec des tableaux datés
 et des liens vers les textes. C'est un travail en cours : certains chapitres sont complets,

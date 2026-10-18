@@ -8,8 +8,8 @@ versionné : c'est ici que les conventions vivent, pas dans la mémoire d'un ass
 
 Neuf volumes bilingues — des livres Quarto, `precis/fr/<livre>/` et `precis/ar/<livre>/` — :
 fiscalité, cotisations sociales, prestations sociales, retraites, caisses de sécurité sociale,
-rémunérations publiques, finances locales, marché du travail, compensation ; deux volumes
-supplémentaires, les entreprises publiques et la santé, en français seulement tant que leurs
+rémunérations publiques, finances locales, marché du travail, compensation ; trois volumes
+supplémentaires, les entreprises publiques, la santé et l'éducation, en français seulement tant que leurs
 traductions ne sont pas livrées ; un glossaire bilingue
 engendré depuis `precis/glossaire.yml`, une bibliographie CSL-JSON, et des tableaux de paramètres
 engendrés depuis le dépôt `openfisca-tunisia`, qui porte aussi les retraites depuis sa version 0.93.

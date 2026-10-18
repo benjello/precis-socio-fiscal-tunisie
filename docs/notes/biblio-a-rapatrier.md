@@ -6,6 +6,103 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Clôture du 17/10/2026 (éducation, bibliographe, temps 3)
+
+Neuf notices ajoutées à `precis/fr/education/references.json` (livre sans arabe ; rien sous `precis/ar/`), toutes lues dans `jort_cache.db` (recid), les notes `education-scolaire` et `education-superieur`, et le sommaire du fascicule JORT n° 44 de 2021 :
+`arrete1995-02-14-bac`, `arrete2011-04-20-bac`, `arrete2011-12-08-bac`, `arrete2014-03-14-bac`, `arrete2015-05-06-bac`, `arrete2016-02-15-bac`, `arrete2021-05-07-bac`, `arrete2008-03-12-ens-concours`, `decret2008-2876`.
+- **TODO (bibliographe) levés dans les .qmd** : `_scolaire.qmd` (sept arrêtés du baccalauréat, cités dans les lignes du registre ; reste dans le TODO la liste des textes connus par leur seul intitulé) ; `_superieur.qmd` (`arrete2008-03-12-ens-concours` cité ; `decret2008-2876` prête, non citée, la prose ne mentionne pas le JORT n° 67) ; `_aides.qmd` l. 231 (clé `decret92-1186` existante, déjà citée dans `_scolaire.qmd`) ; `_histoire.qmd` : sept registres, 1958-2025.
+- **Sans URL française** : `arrete2011-12-08-bac` (`pdf_fr` vide ; édition arabe dans la note). `arrete2015-05-06-bac` : le `pdf_fr` du JORT n° 38 de 2015 est l'édition arabe (URL portée telle quelle, dite en note). `arrete2021-05-07-bac` : absent de l'index ; URL du fascicule lue sur les notices voisines du n° 44.
+- **Non faits, faute de TODO (bibliographe) ou de lecture** : décrets n° 2009-2139 et 94-1600 (`_formation_professionnelle.qmd`, connus par leur intitulé, TODO du documentaliste), décret gouv. n° 2016-824 (`_scolaire.qmd` l. 284), décret n° 2003-2020 (non lu) ; aucun texte n° 2011-2291, 2018-929 ni 2017-856 dans les .qmd ni dans les notes (2018-929 : intitulé arabe seulement). Les autres TODO (bibliographe) de `_aides.qmd` et `_depense.qmd` demeurent.
+- **Hors périmètre, à voir par le rédacteur** : titres de replis de `_scolaire.qmd` l. 179 et 192 (« 1958-2022 »).
+- **Zotero** : `dry-run` et `controle-rangement` du workflow `biblio-zotero` non lancés (passent par Zotero) ; à lancer par l'appelant. Rien poussé.
+
+## Versement du 17/10/2026, chapitres 2, 3 et 4 (éducation, bibliographe, temps 1)
+
+Sources : les sections « Références candidates » de `docs/notes/education-{scolaire,superieur,formation-professionnelle}-2026-10-17.md`.
+54 notices ajoutées à `precis/fr/education/references.json` (livre sans arabe), toutes de type `legislation`, clés **celles des notes**
+(`loiAAAA-N`, `decretAAAA-N`, `arreteAAAA-MM-JJ-sujet`, `decret-gouvAAAA-N`), titres de la forme du *Journal officiel* avec accents
+rétablis (la base les stocke sans accents), numéro de fascicule, pagination, URL pist.tn française lue dans `pdf_fr` de `jort_cache.db`
+(recid cité dans la `note`).
+Contrôles : JSON valide, 0 clé dupliquée dans le livre, aucune clé neuve dans les `.bib`, `push_biblio.py --verifier` : 0 perte.
+
+- **Deux textes sans URL française** (`decret-gouv2019-338`, `decret-gouv2019-656`) : `pdf_fr` est vide dans `jort_cache.db` (pour tout le fascicule n° 28 de 2019
+  s'agissant du premier) ; l'adresse de l'édition arabe est dans la `note`, comme pour `decret-gouv-2019-898-droits-inscription`. La note scolaire indique,
+  pour le n° 2019-338, une URL française `Jo0282019.pdf` répondant 200 ; on ne la retient pas faute d'enregistrement dans la base (à trancher). Intitulés
+  français : traduction de travail de l'arabe, dite dans la `note`.
+- **Copie identique** : `loi93-11` (loi du 17 février 1993 créant l'ATE et l'ATFP), recopiée de `marche_travail` ; à promouvoir au fonds commun.
+- **Pagination** : pour `arrete1992-06-24-bac` (818-821), `arrete1993-09-commissions-prive` (1616-1617), `arrete2021-03-12-repartition-droits` (631-632),
+  la pagination est celle de la note (texte lu) et non celle de l'index (819-822, 1617, 631). Le rectificatif du décret n° 60-98 (JORT n° 24, p. 693) est
+  dans la `note` de `decret60-98`, sans clé propre.
+- **Dates** : `arrete2023-11-13-cours-particuliers` (l'index porte le 7 novembre en date de signature, l'intitulé le 13) ;
+  `arrete1993-09-commissions-prive` (signé « le 15 septembre 1993 » au pied, 5 septembre dans l'intitulé).
+- **Clés « arrêté conjoint »** : les notes les disent conjoints ; les titres reprennent l'index (`arrete2015-12-31-cours-particuliers` et
+  `arrete2008-04-08-cheque-formation` n'y nomment qu'un ministre, signalé dans la `note`).
+- **`TODO (bibliographe)` des .qmd que ce versement lève** (clés prêtes, les .qmd n'ont pas été touchés) : `_scolaire.qmd` l. 83 pour
+  `decret92-1187`, `arrete1992-06-08-prive`, `arrete1993-09-commissions-prive`, `decret-gouv2019-656` ; `_scolaire.qmd` l. 40 et `_aides.qmd` l. 231
+  pour `decret92-1186` (clé versée à la clôture précédente). Les anciens `TODO (documentaliste)` sur la loi n° 93-10 (`_formation_professionnelle.qmd` l. 50)
+  et sur les lois n° 92-50, 92-51, 2000-73 (`_superieur.qmd` l. 28) peuvent aussi être repris par le rédacteur : clés `loi93-10`, `loi92-50`, `loi92-51`, `loi2000-73`,
+  `decret2012-1227`, `decret2013-47`.
+- **Restent sans clé** (seul l'intitulé est connu, ou texte non lu) : décrets n° 60-220, 61-14, 2004-2437, 2012-827 ; arrêtés du 29 juillet 2019 et du 28 avril 2021
+  (collèges pilotes) ; décret gouv. n° 2019-1085 ; décrets n° 2008-2716, 2012-1232, 2013-1469, 2017-1196 ; décret n° 2009-2139 ; arrêtés des 27 septembre 2010,
+  24 novembre 2010, 23 novembre 2020 (formation) ; arrêtés d'établissement de 2006-2008 autres que celui de Sfax ; décret n° 94-1397 ; décret n° 2007-4147.
+  Les autres `TODO (bibliographe)` de `_aides.qmd` et `_depense.qmd` ne relèvent pas de ces trois notes.
+- **Aucun conflit** de clés : aucune de ces références n'existait sous une autre clé dans les bibliographies du précis ; les « déjà proposées »
+  (`loi89-70`, `loi2008-9`, `loi2008-10`, `loi2008-19`, `decret2008-3123`, `decret-loi2011-31`, `loi2017-13`, `loi2017-38`) sont déjà dans le livre.
+
+## Versement du 17/10/2026 (éducation, brouillon)
+
+Source : les quatre notes `docs/notes/education-{histoire,aides-scolaires,aides-universitaires,depense}-2026-10-17.md`.
+97 notices neuves dans `precis/fr/education/references.json` seulement (le livre n'a pas d'arabe ; rien sous
+`precis/ar/`). Absentes de Zotero ; collection « éducation » déjà dans `COLLECTION_TO_BOOK`.
+
+- **Textes de droit** (81, type `legislation`, URL pist.tn française lue dans `pdf_fr` de `jort_cache.db`, notice
+  citée par son `recid`). Les fascicules français de 2000 à 2026 ont été ouverts : tous servent du français.
+  Avant 2000, fascicules scannés, non revérifiés ici.
+- **TODO, textes sans édition française en ligne** : cinq notices sans URL, l'adresse de l'édition arabe étant
+  dans la `note` : `decret-gouv-2019-898-droits-inscription`, `decret2018-927`, `decret2019-806`,
+  `arrete-2019-03-05-bourses-etranger`, `decret-loi2024-2` (ce dernier, de plus, absent de `jort_cache.db`).
+  Leur homologue arabe reste à écrire quand le livre aura une version arabe.
+- **Archives du web** (13 notices, clés `budget-men-2013` à `-2017`, `budget-mesrs-2013-gbo` à `-2017`,
+  `mineducation-pap-2014`, `mesrs-pap-2014`, `mfpe-pap-2014`) : titres arabes relus en couverture dans les copies de
+  `tunisia-data`, horodatages lus dans le CDX le 17/10/2026. `mesrs-pap-2014` et `mfpe-pap-2014` : pas de date
+  d'édition retenue (couverture contradictoire ou muette). Clés `budget-mesrs-2013-gbo` et `-2014-gbo` conservées
+  telles que la note les propose ; le portail range la version GBO de 2013 sous `jd42`, non `jd43` : le fichier cité est `jd43` (voir la clôture ci-dessous).
+- **Clôture du 17/10/2026 (bibliographe, temps 2).** 124 clés `[@…]` des quatre .qmd : toutes résolues. Quatre notices
+  ajoutées à `precis/fr/education/references.json`, à citer par le rédacteur lors d'un passage ultérieur (les .qmd
+  n'ont pas été touchés) : `decret92-1186` (histoire, ligne `r-educ-h-1992-distances` ; fascicule n° 41 publié le
+  26/06/1992 selon `jort_cache.db`, d'où un jour franc après la publication pour l'entrée en vigueur) ;
+  `decret-gouv-2018-904-prime-rentree-universitaire` (JORT n° 90, édition arabe, sans page ni URL française) ;
+  `loi2024-18` (recopiée de `marche_travail`, à promouvoir au fonds commun) ; `ins-fonction-publique-2025` (recopiée de
+  `remunerations_publiques`, éditeur mis à la graphie « Institut national de la statistique », à promouvoir).
+  `budget-mesrs-2013-gbo` : clé **conservée** (citée dans `_aides.qmd` et dans la figure `fig_educ_aides_dinars_constants`,
+  hors périmètre) ; le fichier cité est `jd43`, version non-GBO — la note de la notice le dit. Renommage souhaitable
+  (`budget-mesrs-2013`) lors d'un passage du rédacteur et du figuriste. `lf-2019` / `loi2018-56-lf2019` : **non
+  fusionnées**, les deux clés sont citées par d'autres livres (fiscalité, finances locales, marche_travail, etc.).
+  Restent sans clé, faute de texte lu (seul l'intitulé est connu) : décrets n° 60-220, 61-14, 2004-2437, 2012-827,
+  92-1187 ; arrêtés du 8 juin 1992 et du 5 septembre 1993 ; décrets gouv. n° 2019-656, 2019-1085, 2019-1129 ; arrêtés
+  du 29 juillet 2019 ; arrêté du 15 janvier 1957, loi n° 58-45, décret n° 60-260, loi n° 73-82, loi organique
+  n° 2020-9, décret présidentiel n° 2020-18, arrêté conjoint du 10 février 2022 ; textes de la chaîne 1958-2019, lois
+  de finances 1999 et 2000, arrêté du 29 mars 2013 ; loi n° 69-64, décrets n° 80-1001, 85-173, 90-1122, 95-1953,
+  95-1954, 95-2281, 2009-518, loi n° 97-88, cahiers des charges des foyers privés ; décrets n° 2007-2308, 2007-2309 ;
+  décrets de l'École internationale de Tunis.
+- **Autres** : `ins-annuaire-statistique` (ensemble d'éditions, sur le modèle de `ins-cnat-2015`),
+  `ins-ebcnv-2021-communique` (daté du 10/02/2023), `akkari2005-reforme-educative` (Crossref).
+- **Clés existantes à réutiliser, non dupliquées** : `loi91-65` (et non `loi-91-65-systeme-educatif`),
+  `lf-2024` (non `loi2023-13-lf2024`), `lf-2026` (non `loi2025-17-lf2026`), `lf-2010`, `lf-2017` à `lf-2020`,
+  `loi-org-2019-15-lob`, `loi-2009-32-restauration-formation`, `loi86-106-lf1987`, `loi93-64`, `loi2024-18`,
+  `loi2024-19`, `constitution2022`, `decret-pres2022-691`, `decret-2017-668-smig`, `wb-wdi`,
+  `bm-1995-pauvrete-annexes`, `wb-tunisia-per-2020`, `ins-cnat-2015`, `minfin-indicateurs-fp`,
+  `jouini-lustig-moummi-shimeles-2017-ceq38`. La loi de finances pour 2019 porte déjà deux clés
+  (`loi2018-56-lf2019`, `lf-2019`) : à fusionner, non traité ici.
+- **Compléments à porter dans des notices partagées** (fichiers hors périmètre de ce versement) :
+  `constitution2022` : art. 44, 135 et 142 lus au numéro spécial ; `loi86-106-lf1987` : art. 87 (suppression de
+  l'ONOU, p. 1622) ; `lf-2024` : art. 15 (fonds national de la réforme éducative, p. 6439 de l'édition arabe) ;
+  `lf-2026` : art. 107 (p. 4258 de l'édition arabe) ; `wb-wdi` : codes d'indicateurs SE.XPD.TOTL.GD.ZS,
+  SE.XPD.TOTL.GB.ZS, SE.XPD.PRIM.PC.ZS, SE.XPD.SECO.PC.ZS, SE.XPD.TERT.PC.ZS (source UNESCO-UIS).
+- **Non versées (à vérifier)** : voir le rapport de versement ; Sraïeb (1974, 1995 et chapitre IREMAM),
+  Siino (2004), UNESCO-BIE « Données mondiales de l'éducation : Tunisie », Planipolis « Nouvelle réforme du système
+  éducatif tunisien », `unesco-uis-depense-education` (à citer par `wb-wdi`).
+
 ## Versement du 11/10/2026 (entreprises publiques, brouillon)
 
 Source : `docs/notes/entreprises-publiques-2026-10-11.md`, § 3. Notices neuves dans
