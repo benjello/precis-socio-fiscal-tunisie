@@ -3691,3 +3691,12 @@ celles que la note suggérait :
   1989, arrêtés des 23 avril 1982, 12 juillet 1989 et 6 mai 1993 (personnes handicapées), loi
   n° 2006-55, arrêté du 15 août 2011.
 - [ ] Rapport de la Cour des comptes sur la SNTRI (2017), rangé dans `tunisia-data`, non exploité.
+
+## Versement du 18/10/2026 (fiscalité, figure de l'indice des prix de l'immobilier, `fig-pi-ipim`) — À REPORTER DANS ZOTERO
+
+- [ ] `ins-ipim` (dataset, fonds commun FR et AR) : *Indices des prix de l'immobilier par type de
+  bien*, INS, page https://www.ins.tn/statistiques/91 (mise à jour du 11-08-2026, consultée le
+  18/10/2026) ; note : classeurs joints aux communiqués trimestriels, dont celui du T4 2025.
+  Citée par `catalog.yml` de `tunisia-data` (`ins-ipim-trimestriel`,
+  `ins-ipim-trimestriel-methode-anterieure`). `push_biblio.py --verifier` : 0 perte. `dry-run`
+  Zotero non lancé.

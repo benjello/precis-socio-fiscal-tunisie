@@ -10050,7 +10050,7 @@ entries:
     statut: provisoire
     references: [ins-cres-bad-2013-subventions]
     source_definition: {ref: ins-cres-bad-2013-subventions}
-    voir_aussi: [quintile-niveau-de-vie, ciblage, compensation-des-prix]
+    voir_aussi: [quintile-niveau-de-vie, ciblage, compensation-des-prix, incidence-fiscale]
     fr:
       terme: Incidence des subventions
       definition: >
@@ -13029,4 +13029,292 @@ entries:
     ar:
       terme: الإنزال
       definition: ""
+      synonymes: []
+
+  # Notions de l'économie des droits de mutation et de la plus-value immobilière
+  # (fiscalité, « Ce qu'en dit l'économie »). Notions analytiques : aucun terme arabe
+  # lu sur un texte officiel. Traduction du terminologue, à faire confirmer par un
+  # arabophone ou par une publication arabe de référence ; pas de `source_traduction`.
+  # Les pages de Kleven 2016 sont celles de la version de travail récupérée (note CSL).
+  # « Seuil à saut » et « seuil à changement de taux » rendent *notch* et *kink* ;
+  # aucune source française de référence lue ne fixe ces équivalents : à confirmer.
+  - id: seuil-a-saut
+    acronyme: null
+    statut: provisoire
+    references: [kleven-2016-bunching, kopczuk-munroe-2015-mansion-tax, best-kleven-2018-housing-transaction-taxes]
+    source_definition: {ref: kleven-2016-bunching, locator: "p. 436 et 441-442"}
+    voir_aussi: [seuil-a-changement-de-taux, regroupement-seuil, droit-complementaire-immeubles]
+    fr:
+      terme: Seuil à saut
+      definition: >
+        Valeur de l'assiette à laquelle le montant de l'impôt augmente d'un coup,
+        par un changement de son taux moyen : franchir le seuil, même de peu,
+        suffit à accroître l'impôt dû de ce saut. Kleven (2016) distingue ce seuil (*notch*)
+        du seuil à changement de taux (*kink*). Dans son modèle, en l'absence de
+        frictions, un seuil à saut laisse juste au-dessus du seuil une zone vide,
+        où aucun contribuable ne choisit de se placer.
+      synonymes: [Notch]
+    ar:
+      terme: العتبة ذات القفزة
+      definition: >
+        قيمة للوعاء يرتفع عندها مبلغ الأداء دفعة واحدة، بتغيّر نسبته المتوسطة:
+        فتجاوز العتبة، ولو بقليل، يكفي لزيادة الأداء المستوجب بمقدار هذه القفزة. ويميّز كليفن
+        (2016) هذه العتبة (notch) من عتبة تغيّر النسبة (kink). وفي نموذجه، في
+        غياب الاحتكاكات، تترك العتبة ذات القفزة فوقها مباشرة منطقة خالية لا يختار
+        أيّ مطالب بالأداء أن يتموقع فيها.
+      synonymes: []
+
+  - id: seuil-a-changement-de-taux
+    acronyme: null
+    statut: provisoire
+    references: [kleven-2016-bunching]
+    source_definition: {ref: kleven-2016-bunching, locator: "p. 436"}
+    voir_aussi: [seuil-a-saut, taux-marginal, regroupement-seuil]
+    fr:
+      terme: Seuil à changement de taux
+      definition: >
+        Valeur de l'assiette à laquelle le taux marginal de l'impôt change, sans
+        que le montant dû change au seuil même : seule la part de l'assiette qui
+        dépasse le seuil est imposée au nouveau taux. Les limites des tranches d'un
+        barème progressif sont des seuils de ce type. Kleven (2016) le nomme
+        *kink*.
+      synonymes: [Kink]
+    ar:
+      terme: عتبة تغيّر النسبة
+      definition: >
+        قيمة للوعاء تتغيّر عندها النسبة الحدية للأداء دون أن يتغيّر المبلغ
+        المستوجب عند العتبة نفسها: لا يخضع للنسبة الجديدة إلّا جزء الوعاء الذي
+        يتجاوز العتبة. وحدود الشرائح في جدول تصاعدي عتبات من هذا النوع. ويسمّيها
+        كليفن (2016) (kink).
+      synonymes: []
+
+  - id: regroupement-seuil
+    acronyme: null
+    statut: provisoire
+    references: [kleven-2016-bunching, best-kleven-2018-housing-transaction-taxes]
+    source_definition: {ref: kleven-2016-bunching, locator: "p. 436"}
+    voir_aussi: [seuil-a-saut, seuil-a-changement-de-taux, sous-declaration]
+    fr:
+      terme: Regroupement
+      definition: >
+        Accumulation des observations — revenus, prix déclarés — à un seuil de
+        l'impôt ou juste au-dessous. Kleven (2016) décrit une méthode qui mesure
+        par ce regroupement la réponse au seuil. Selon Best et Kleven (2018), le
+        regroupement des prix de vente sous un seuil mêle une réponse réelle, sur
+        le prix convenu, et une éventuelle sous-déclaration.
+      synonymes: [Bunching]
+    ar:
+      terme: التجمّع عند العتبة
+      definition: >
+        تراكم المشاهدات — المداخيل أو الأثمان المصرّح بها — عند عتبة من عتبات
+        الأداء أو دونها مباشرة. ويصف كليفن (2016) طريقة تقيس بهذا التجمّع
+        الاستجابة للعتبة. وحسب بيست وكليفن (2018)، يجمع تجمّع أثمان البيع دون
+        العتبة بين استجابة حقيقية، في الثمن المتّفق عليه، وتصريح محتمل بأقلّ من
+        الثمن الحقيقي.
+      synonymes: []
+
+  - id: sous-declaration
+    acronyme: null
+    statut: provisoire
+    references: [norregaard-2013-taxing-immovable-property, agarwal-et-al-2020-tax-evasion-capital-gains]
+    source_definition: {ref: norregaard-2013-taxing-immovable-property, locator: "p. 29"}
+    voir_aussi: [droit-mutation, regroupement-seuil]
+    fr:
+      terme: Sous-déclaration
+      definition: >
+        Déclaration à l'administration fiscale d'une valeur inférieure à la valeur
+        réelle ; pour une vente d'immeuble, d'un prix inférieur au prix convenu
+        entre les parties. Selon Norregaard (2013, FMI), un droit de mutation
+        élevé incite l'acheteur et le vendeur à s'entendre pour minorer le prix,
+        et la sous-déclaration prive l'administration des ventes comme source
+        d'information à jour sur les valeurs de marché.
+      synonymes: []
+    ar:
+      terme: التصريح بأقلّ من القيمة الحقيقية
+      definition: >
+        التصريح لدى الإدارة الجبائية بقيمة دون القيمة الحقيقية؛ وفي بيع عقار،
+        التصريح بثمن دون الثمن المتّفق عليه بين الطرفين. وحسب نورغارد (2013،
+        صندوق النقد الدولي)، يحفز معلوم نقل الملكية المرتفع المشتري والبائع على
+        الاتّفاق على التقليل من الثمن، ويحرم التصريح بأقلّ من القيمة الحقيقية
+        الإدارةَ من البيوعات مصدرًا محيَّنًا للمعلومات عن قيم السوق.
+      synonymes: []
+
+  - id: effet-de-verrouillage
+    acronyme: null
+    statut: provisoire
+    references: [mirrlees-et-al-2011-tax-by-design]
+    source_definition: {ref: mirrlees-et-al-2011-tax-by-design, locator: "p. 296"}
+    voir_aussi: [plus-value-immobiliere]
+    fr:
+      terme: Effet de verrouillage
+      definition: >
+        Incitation à conserver un bien dont la valeur a augmenté, pour différer
+        l'impôt sur la plus-value, dû seulement à la cession. Selon la *Mirrlees
+        Review* (2011), cet effet naît de l'imposition de la plus-value à sa
+        réalisation, sans ajustement qui la rende équivalente à une imposition à
+        mesure que la plus-value se forme.
+      synonymes: [Verrouillage, Lock-in]
+    ar:
+      terme: أثر التجميد
+      definition: >
+        الحافز على الاحتفاظ بأصل ارتفعت قيمته لتأجيل الأداء على القيمة الزائدة،
+        الذي لا يُستوجب إلّا عند التفويت. وحسب مراجعة ميرليس (Mirrlees Review،
+        2011)، ينشأ هذا الأثر عن توظيف الأداء على القيمة الزائدة عند تحقيقها، دون
+        تعديل يجعله معادلًا لتوظيفه كلّما تكوّنت.
+      synonymes: []
+
+  - id: capitalisation-impot
+    acronyme: null
+    statut: provisoire
+    references: [mirrlees-et-al-2011-tax-by-design]
+    source_definition: {ref: mirrlees-et-al-2011-tax-by-design, locator: "p. 33 et 404"}
+    voir_aussi: [droit-mutation, incidence-fiscale]
+    fr:
+      terme: Capitalisation d'un impôt
+      definition: >
+        Répercussion, dans la valeur d'un bien, de l'impôt que l'on s'attend à voir
+        peser sur lui. Selon la *Mirrlees Review* (2011), le droit de mutation
+        britannique (*stamp duty*) s'est en grande partie capitalisé dans la valeur
+        des immeubles : sa simple suppression procurerait un gain aux propriétaires
+        en place.
+      synonymes: [Capitalisation]
+    ar:
+      terme: رسملة الأداء
+      definition: >
+        انعكاس الأداء المتوقَّع على مال في قيمة هذا المال. وحسب مراجعة ميرليس
+        (Mirrlees Review، 2011)، انعكس معلوم نقل الملكية البريطاني (stamp duty)
+        إلى حدّ كبير في قيمة العقارات، فيمنح مجرّد إلغائه المالكين الحاليين ربحًا.
+      synonymes: [الرسملة]
+
+  - id: perte-seche
+    acronyme: null
+    statut: provisoire
+    references: [mirrlees-et-al-2011-tax-by-design, dachis-duranton-turner-2012-land-transfer-taxes, maattanen-tervio-2022-welfare-transaction-taxes]
+    source_definition: {ref: mirrlees-et-al-2011-tax-by-design, locator: "p. 29"}
+    voir_aussi: [incidence-fiscale]
+    fr:
+      terme: Perte sèche
+      definition: >
+        Part du coût d'un impôt, pour les consommateurs et les producteurs, qui
+        excède la recette qu'il procure. Selon la *Mirrlees Review* (2011), en
+        élevant les prix et en réduisant les quantités échangées, l'impôt impose
+        des pertes dont la somme dépasse presque toujours la recette ; l'écart
+        croît avec la sensibilité de l'offre et de la demande au prix.
+      synonymes: [Perte de bien-être, Charge excédentaire]
+    ar:
+      terme: الخسارة الصافية في الرفاه
+      definition: >
+        جزء كلفة الأداء على المستهلكين والمنتجين الذي يتجاوز المداخيل التي
+        يوفّرها. وحسب مراجعة ميرليس (Mirrlees Review، 2011)، يُلحق الأداء، برفعه
+        الأسعار وتقليصه الكمّيات المتبادلة، خسائر يتجاوز مجموعها في أغلب الحالات
+        المداخيل المحصّلة؛ ويزداد الفارق بقدر استجابة العرض والطلب للسعر.
+      synonymes: [العبء الزائد]
+
+  - id: incidence-fiscale
+    acronyme: null
+    statut: provisoire
+    references: [mirrlees-et-al-2011-tax-by-design, alm-annez-modi-2004-stamp-duties-india]
+    source_definition: {ref: mirrlees-et-al-2011-tax-by-design, locator: "p. 27-28"}
+    voir_aussi: [incidence-des-subventions, capitalisation-impot, perte-seche]
+    fr:
+      terme: Incidence fiscale
+      definition: >
+        Répartition de la charge réelle d'un impôt entre les agents — acheteurs et
+        vendeurs, employeurs et salariés —, distincte de la désignation de la
+        personne légalement redevable. Selon la *Mirrlees Review* (2011), supporte
+        l'impôt celui dont il réduit le bien-être, qui n'est pas nécessairement
+        celui qui le verse ; selon Alm, Annez et Modi (2004), la répartition d'un
+        droit de mutation entre acheteur et vendeur dépend des élasticités de la
+        demande et de l'offre.
+      synonymes: [Incidence économique]
+    ar:
+      terme: توزيع العبء الجبائي
+      definition: >
+        توزيع العبء الفعلي للأداء بين الأعوان الاقتصاديين — المشترين والبائعين،
+        والمؤجّرين والأجراء —، وهو غير تعيين الشخص المطالب قانونًا بالأداء. وحسب
+        مراجعة ميرليس (Mirrlees Review، 2011)، يتحمّل الأداءَ من يُنقص من رفاهه،
+        وليس بالضرورة من يدفعه؛ وحسب ألم وأنيز ومودي (2004)، يتوقّف توزيع معلوم
+        نقل الملكية بين المشتري والبائع على مرونة الطلب والعرض.
+      synonymes: []
+
+  - id: impot-transactions
+    acronyme: null
+    statut: provisoire
+    references: [mirrlees-et-al-2011-tax-by-design]
+    source_definition: {ref: mirrlees-et-al-2011-tax-by-design, locator: "p. 151-152 et 403"}
+    voir_aussi: [droit-mutation, perte-seche, capitalisation-impot]
+    fr:
+      terme: Impôt sur les transactions
+      definition: >
+        Impôt assis sur l'échange d'un bien — action, immeuble, terrain — plutôt
+        que sur sa détention ou sur le revenu qu'il procure (*transactions tax*).
+        Selon la *Mirrlees Review* (2011), un tel impôt réduit le nombre des
+        échanges profitables aux deux parties, de sorte que les biens ne sont plus
+        nécessairement détenus par ceux qui leur accordent le plus de valeur ; il
+        pèse d'autant plus sur un bien que celui-ci change souvent de mains. Le
+        droit de mutation sur les immeubles en est un exemple.
+      synonymes: []
+    ar:
+      terme: الأداء على المعاملات
+      definition: >
+        أداء يُوظَّف على تبادل مال — سهم أو عقار أو أرض — لا على حيازته ولا على
+        الدخل الذي يدرّه (transactions tax). وحسب مراجعة ميرليس (Mirrlees
+        Review، 2011)، يقلّص هذا الأداء عدد المبادلات المفيدة للطرفين، فلا تبقى
+        الأموال بالضرورة بيد من يمنحها أكبر قيمة؛ ويثقل على المال بقدر تكرّر
+        انتقاله من يد إلى أخرى. ومعلوم نقل ملكية العقارات مثال على ذلك.
+      synonymes: []
+
+  # Määttänen et Terviö : pages de la version de travail récupérée (note CSL).
+  - id: cout-marginal-fonds-publics
+    acronyme: null
+    statut: provisoire
+    references: [maattanen-tervio-2022-welfare-transaction-taxes]
+    source_definition: {ref: maattanen-tervio-2022-welfare-transaction-taxes, locator: "p. 2-3 et 20"}
+    voir_aussi: [perte-seche, impot-transactions]
+    fr:
+      terme: Coût marginal des fonds publics
+      definition: >
+        Coût en bien-être, pour les contribuables, d'un dinar de recette
+        supplémentaire procuré par une hausse de l'impôt (*marginal cost of public
+        funds*, MCPF). Il vaut un pour un impôt qui ne modifie aucun comportement ;
+        l'excédent sur un mesure la perte sèche de la dernière unité de recette.
+        Selon Määttänen et Terviö (2022), il est d'environ 1,3 pour un droit de
+        mutation de 2 %, dans un modèle du marché du logement d'Helsinki, et dépasse
+        3 à un taux de 7 %.
+      synonymes: []
+    ar:
+      terme: الكلفة الحدية للأموال العمومية
+      definition: >
+        الكلفة في الرفاه، على المطالبين بالأداء، لكلّ دينار إضافي من المداخيل
+        يوفّره الترفيع في الأداء (marginal cost of public funds، MCPF). وتساوي
+        واحدًا لأداء لا يغيّر أيّ سلوك؛ ويقيس ما يزيد على الواحد الخسارة الصافية
+        في الرفاه لآخر وحدة من المداخيل. وحسب ماتانن وتيرفيو (2022)، تبلغ نحو 1,3
+        لمعلوم نقل ملكية بنسبة 2 %، في نموذج لسوق السكن في هلسنكي، وتتجاوز 3
+        عند نسبة 7 %.
+      synonymes: []
+
+  - id: plus-value-nominale
+    acronyme: null
+    statut: provisoire
+    references: [mirrlees-et-al-2011-tax-by-design]
+    source_definition: {ref: mirrlees-et-al-2011-tax-by-design, locator: "p. 325 et 489"}
+    voir_aussi: [plus-value-immobiliere, effet-de-verrouillage]
+    fr:
+      terme: Plus-value nominale
+      definition: >
+        Écart entre le prix de cession d'un bien et son prix d'acquisition, l'un et
+        l'autre en dinars courants (*nominal gain*). La plus-value réelle
+        (*real gain*) est cet écart corrigé de la hausse générale des prix pendant
+        la détention. Selon la *Mirrlees Review* (2011), un impôt qui frappe la
+        plus-value nominale, sans correction de l'inflation, a un taux effectif
+        très sensible à l'inflation.
+      synonymes: [Gain nominal]
+    ar:
+      terme: القيمة الزائدة الاسمية
+      definition: >
+        الفارق بين ثمن تفويت مال وثمن اقتنائه، كلاهما بالدينار الجاري (nominal
+        gain). والقيمة الزائدة الحقيقية (real gain) هي هذا الفارق بعد طرح أثر
+        الارتفاع العامّ للأسعار طيلة مدّة الحيازة. وحسب مراجعة ميرليس (Mirrlees
+        Review، 2011)، تكون النسبة الفعلية لأداء يُوظَّف على القيمة الزائدة الاسمية،
+        دون تعديل بحسب التضخّم، شديدة التأثّر بالتضخّم.
       synonymes: []

@@ -578,29 +578,71 @@ liste qui suit le tableau, citations comprises. Restent :
   pétroliers (terminologue), que l'instantané arabe laisse en français, comme le faisait
   déjà le livre arabe.
 
-- **Le patrimoine immobilier : mutations, plus-values, antécédents fonciers** (17 octobre 2026,
-  `fiscalite-patrimoine-immobilier-mutations-plus-values.md`, chapitre à écrire dans le livre de la
-  fiscalité ; manque n° 6 de la revue du 5 octobre). Lu au *Journal officiel* : droits
-  d'enregistrement sur les mutations d'immeubles de 1969 à 2026 (barème de 1984 pour les terrains
-  d'habitat individuel, taux de 5 % depuis la loi n° 87-73, code de 1993, droits complémentaires de
-  2017, barème progressif limité à la première acquisition depuis 2024) ; plus-values immobilières
-  de la loi de finances pour 1977 à 2023 (30 à 15 % en 1977, 15 % en 1990, 10 et 5 % depuis la loi
-  n° 98-73, 15 et 10 % depuis 2013, aucun changement de taux depuis). **Le rapport de 2014 sur
-  l'accès au foncier est corrigé sur douze points** (note, § 2) : ses taux sont périmés, il date le
-  barème progressif de 1993 au lieu de 1984, confond la plus-value et une « taxe », et se trompe
-  de rang pour « Paying taxes » (60e, non 106e). **Corrigé le 17 octobre 2026 dans `_impot_revenu.qmd`** : la
-  majoration de 10 % par année de détention existe dès 1977 (clé `lf-1977` créée), la condition de
-  première cession date de la loi de finances pour 2005, la condition de durée disparaît en 1993 et
-  la loi de finances pour 2023 supprime aussi l'exclusion des terres agricoles. **À obtenir
-  ou à lire** : loi foncière de 1885 et décret de 1886, droit de l'enregistrement d'avant 1956
-  (décret du 19 avril 1912, décret n° 68-104), décret du 18 juillet 1957 sur les habous privés
-  (fascicule absent du corpus), dates d'effet de quatorze lois de finances, réalisations
-  budgétaires par article (seules les prévisions du tableau A sont lues ; rupture de
-  nomenclature en 2020), études empiriques tunisiennes sur l'effet des droits de mutation. Plan de l'architecte : `fiscalite-patrimoine-immobilier-plan-architecte.md` (décisions du propriétaire du
-  17 octobre 2026 : cinq réformes, histoire de la plus-value déplacée de l'IRPP, antécédents du droit musulman et de la réforme
-  de 1885, prévisions du tableau A en figure). Fiche
-  `r-pv-immobiliere-modificatifs-2023`. Les fiches sur la loi foncière de 1885, l'enregistrement du
-  protectorat et le décret de 1957 seront versées avec le chapitre qui leur donne un domicile.
+- **Le patrimoine immobilier : mutations, plus-values, antécédents fonciers** (17 octobre 2026 ;
+  chapitre `precis/fr/fiscalite/_patrimoine_immobilier.qmd`, **rédigé le 17 octobre 2026**, en
+  français seulement ; manque n° 6 de la revue du 5 octobre). Notes :
+  `fiscalite-patrimoine-immobilier-mutations-plus-values.md`, `…-antecedents-fonciers.md`,
+  `…-dates-textes-series.md` ; plan : `fiscalite-patrimoine-immobilier-plan-architecte.md`
+  (décisions du propriétaire du 17 octobre 2026 : cinq réformes, 1977, 1990, 1993 avec la loi
+  n° 87-73, 2014, 2017 ; antécédents du droit musulman et de la loi foncière). **Écrit** : vue
+  d'ensemble ; antécédents (droit musulman et habous d'après les sources secondes, **loi foncière
+  du 1er juillet 1885**, JOT n° 134 du 12 juillet 1885, mise à exécution par le décret du 28 juin
+  1886, lien avec l'impôt de 1886 à 1892 d'après le rapport Massicault, textes de 1956 à 1965) ;
+  tarif de 1969 ; cinq réformes et leurs registres repliés ; état du droit au 1er janvier 2026 ;
+  donations et successions, terrains, promoteurs, droit complémentaire ; longue période (sans
+  figure) ; rapports et études. **Corrigé dans `_impot_revenu.qmd`** : la ligne de la loi de
+  finances pour 2023 du registre (la condition de première cession vient de la loi de finances pour
+  2005, art. 60) ; renvoi vers le nouveau chapitre. **À trancher par le propriétaire** : les dix
+  points du § M6 du plan, appliqués comme proposés et signalés par des commentaires
+  `À CONFIRMER (propriétaire)` ; la coupe de l'histoire de la plus-value dans `_impot_revenu.qmd`
+  (décision 2, non faite). **Intégré le 18 octobre 2026** (note
+  `fiscalite-patrimoine-immobilier-lectures-2026-10-18.md`) : dates d'effet de la LF 1973
+  (31 déc. 1972), de la LF 1975 (2 janv. 1975), de la LF 1989 (loi du 31 décembre 1988, 2 janv.
+  1989), de la loi n° 98-73 (dépôt 12 août, 17 août 1998, et art. 12 sur les opérations
+  antérieures), de la LFC 2014 (27 août 2014) et de la LFC 2015 (29 août 2015) ; défaut d'origine
+  1,25 → 1,40 % en 1969 ; art. 8, § II, de la loi n° 93-53 ; LF 1977, art. 27 (« moins de 5 ans »
+  = première tranche, pas de trou à cinq ans) ; assiette du droit complémentaire (valeur globale,
+  art. 20 *bis*) ; terrains en 1982-1983 par la LF 1980 (loi n° 79-66, art. 14 et 15, borne au
+  1er janvier 1986), ligne ajoutée au registre. **Reste à lire** (lisible dans le corpus local) :
+  LF 1992 et LF 1993 à l'image pour le barème successoral 1985-1993
+  (`r-bareme-successions-1985-1993`) ; décret n° 68-104 ; contexte des réformes (exposés des
+  motifs et débats de 1969, 1977, 1987, 1993, 2017 ; documents de la réforme fiscale 2013-2014).
+  **À obtenir** (autre source) : interprétation administrative de la cession après la dixième
+  année (LF 1977 et 1981) ; date d'application du § 2 de l'art. 26 de la LFC 2015 (portée de
+  « présent article ») ; seconde source pour la publication de la LF 1973 au 29 décembre 1972,
+  déduite de l'en-tête et d'un décret du même fascicule. **Différé** (décision du propriétaire
+  du 18 octobre 2026 : textes de 1885-1957 cités indirectement) : décret du 28 juin 1886 et loi
+  du 16 mai 1886 (`r-loi-fonciere-1885-1886`) ; tarif du décret du 19 avril 1912 et textes de
+  1948-1965 (`r-enregistrement-protectorat-1912-1954`) ; fascicules de 1957 de l'ancienne série
+  (`r-habous-prives-1957-fascicule`) ; texte du taux de 7,25 % et de la réduction voulue en 1892
+  (`r-reduction-droits-mutation-1892`) ; décret du 19 mars 1874. **À reprendre (règle du
+  propriétaire du 18 octobre 2026, pas de fait inconnu dans le texte)** : la colonne « Ce qui en
+  est connu ici » et les cellules « intitulé seul » du tableau des textes fonciers
+  (`tbl-pi-textes-fonciers`). **Données** : prévisions du tableau A antérieures à 2020 à lire à l'image
+  (OCR non vérifiée) et à verser dans `tunisia-data` avant la figure `fig-pi-previsions` ;
+  tableaux A de 2000-2010 et 2023-2026 ; réalisations par article ; nombre d'actes et de cessions.
+  **Section « Ce qu'en dit l'économie »** : figure `fig-pi-ipim` ajoutée le 18 octobre 2026
+  (indice des prix déclarés de l'immobilier de l'INS, 2015 = 100, terrains, appartements,
+  maisons ; méthode révisée T1 2000 - T4 2025 et ancienne méthode T1 2000 - T4 2021 tracées
+  séparément ; séries `ins-ipim-trimestriel` et `ins-ipim-trimestriel-methode-anterieure`
+  snapshotées le 18 octobre 2026 ; clé `ins-ipim` versée ; module
+  `figures/patrimoine_immobilier.py`). Restent : révisions des derniers trimestres et écarts
+  entre classeurs (TODO économiste) ; vue déflatée à proposer ; dans `tunisia-data`, réécrire
+  les `caveats` du catalogue (« non extraites », « seule l'édition… est retenue »), affichés tels
+  quels dans l'onglet « Sources ».
+  Glossaire de la section (18 octobre 2026) : huit notions ancrées et définies, au statut
+  `provisoire` — seuil à saut, seuil à changement de taux, regroupement, sous-déclaration, effet
+  de verrouillage, capitalisation d'un impôt, perte sèche, incidence fiscale. Restent : termes
+  arabes à faire confirmer ; équivalents français de *notch* et *kink* à fixer sur une source
+  française de référence.
+  **Bibliographe** : clés à créer pour la loi n° 79-27, la loi n° 70-66 (LF 1971), les lois n° 59-131,
+  64-28, 74-53 et le DL 61-15, la loi n° 90-17, la loi n° 70-25, les avis du Conseil constitutionnel
+  n° 31-2006 et 53-2006 ; notes communes 23/2014 et 28/2002 ; URL pist.tn de `lf-2016`, `lf-2019`,
+  `lf-2020` ; compléter les notes de `loi79-66-lf1980` (art. 14 et 15, pp. 3542-3543),
+  `loi-93-53-cdet` (art. 3, p. 715 ; art. 8 § II, p. 716), `loi-98-73` (dépôt du 12 août 1998,
+  art. 12), `lfc-2014` et `lfc-2015` (dépôts) ; doublons `lf-1990`/`loi-89-115-lf-1990` et
+  `lf-1992`/`loi91-98-lf1992`. **Traduction arabe** différée : ajouter le chapitre au `_quarto.yml` arabe à la
+  livraison. Fiches de recherche : les quatre ci-dessus, `r-pv-immobiliere-modificatifs-2023` et `r-bareme-successions-1985-1993`.
 
 ## Retraites
 
