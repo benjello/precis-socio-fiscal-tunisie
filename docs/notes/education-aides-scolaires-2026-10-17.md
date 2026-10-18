@@ -636,3 +636,10 @@ Huit arrêtés lus à l'image (sauf 2022 : texte) : 24 juillet 1967 (effet 1er o
 trimestre. Valeurs non reprises au chapitre : tarifs des deuxième et quatrième trimestres (de 1977 à 1988), du 1er cycle, des classes primaires annexées et des collèges (1966-1983), des lycées pilotes (1988),
 tarifs des commensaux par catégorie (surveillants, personnel ouvrier, élèves-maîtres) et tarifs d'hébergement du personnel de passage et des élèves (art. 6). Pages de l'index `jort_cache.db` exactes pour ces huit textes.
 Dates : l'arrêté de 1982 est signé le 27 décembre 1982 et prend effet le 1er janvier 1983 ; celui de 1967 prend effet le 1er octobre 1966, soit près d'un an avant sa signature.
+
+**Arrêté du 15 janvier 1957 — lecture du 18 octobre 2026.** Fascicule JORT n° 7 du 22 janvier 1957 absent du corpus local (le fichier `Jo10757.pdf` de l'index n'existe pas) :
+récupéré sur pist.tn (`https://www.pist.tn/jort/1957/1957F/Jo10757.pdf`, 3,1 Mo) et lu à l'image, p. 87-88. Montants en francs. Les nombres du 2e cycle (13 050 ; 25 380) et des commensaux
+(7 260 ; 4 020 ; 160 ; blanchissage 840) sont les mêmes que dans l'arrêté du 24 juillet 1967 en dinars (13,050 ; 25,380 ; 7,260 ; 4,020 ; 0,160 ; 0,840). Les internats primaires
+passent de 7 560 / 16 380 à 8,280 / 18,000. Effet : 1er octobre 1956 (art. 9). L'arrêté abroge celui du 20 décembre 1952, modifié le 2 septembre 1953 et complété le 24 janvier 1956.
+
+**Arrêté du 24 janvier 1956 — lecture du 18 octobre 2026.** JORT n° 8 du 27 janvier 1956, p. 116 (`Jo00856.pdf`, texte à l'image). Il complète l'arrêté du 20 décembre 1952, modifié le 2 septembre 1953, par un article 1 bis : les élèves nourris dans les mêmes conditions que les internes mais non logés faute de place sont inscrits comme internes, avec une remise de plein droit de 20 % sur le tarif d'internat (catégorie des « internes-externés ») ; effet au 1er octobre 1955. Les arrêtés du 20 décembre 1952 et du 2 septembre 1953 ne sont pas dans le corpus local ; l'index ne les contient pas.

@@ -84,8 +84,8 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   grandeur à sa page sur `parameters.tn.tax-benefit.org`. Ses liens sont engendrés avec le
   tableau (`tables/<nom>.liens.yml`), jamais écrits à la main.
 - **Pas de jargon de dépouillement dans le texte visible** : ni « objet seul », ni « non lu », ni
-  « métadonnées seules », ni `[T]`/`[M]`/`[D]`. On dit en clair ce qui est connu — « seul l'intitulé
-  de ce texte est connu ici » —, ou on lit le texte.
+  « métadonnées seules », ni `[T]`/`[M]`/`[D]`. Ce qui n'est pas lu ou pas établi ne s'écrit pas
+  dans le texte rendu : on lit le texte, ou on laisse un commentaire `<!-- TODO (rôle) : … -->`.
 - **Une recherche infructueuse ne se raconte pas** : ni « n'a pas été retrouvé », ni « au
   *Journal officiel* jusqu'au numéro du… ». Le texte dit le constat (« ce décret n'est pas
   identifié ici ») et porte une ancre `<!-- RECHERCHE r-… : … -->` vers une fiche rejouable de
