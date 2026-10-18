@@ -1,0 +1,31 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-17
+# séries (tunisia_data) : aucune (série hors catalogue)
+# sources (citation) : @ins-annuaire-statistique
+# fiches : docs/notes/education-scolaire-2026-10-17.md
+# méthode/hypothèses : SÉRIE HORS CATALOGUE : valeurs copiées de la note documentaire (§ 7.3), non encore versées à tunisia-data ; une édition de l'annuaire par session. INS, Annuaire statistique de la Tunisie, chapitre de l'enseignement, tableau des examens nationaux (source déclarée : ministère de l'Éducation). Définition du taux non précisée par la source : sessions principale et de contrôle cumulées ou non, public et privé (précisé « public et privé » pour 2002 et 2003 seulement), candidats individuels. Colonne « Page du fichier » : rang de la page dans le fichier de l'édition, non la page imprimée. Taux = admis / présentés, tel qu'imprimé
+# note : Baccalauréat, session de juin : présentés, admis et taux de réussite, 2000-2023
+Session de juin,Présentés,Admis,Taux de réussite (%),Édition,Tableau,Page du fichier,Remarque
+2000,104256,54570,52.3,1995-2001,tableau 3.17,59,public et privé non précisé
+2001,111118,53217,47.9,1995-2001,tableau 3.17,59,"l'édition 1998-2002 imprime 82,2 % pour le même effectif (53 217 / 111 118 = 47,9 %) : coquille de cette édition, valeur de l'édition 1995-2001 retenue"
+2002,113110,72319,63.9,1998-2002,,67,public et privé
+2003,106125,70234,66.2,1999-2003,,67,public et privé
+2004,113255,68967,60.9,2000-2004,,67,
+2005,125214,73860,59.0,2001-2005,,67,
+2006,133183,73690,55.3,2002-2006,,67,
+2007,138245,75244,54.4,2003-2007,,71,
+2008,150792,90917,60.3,2004-2008,,71,
+2009,134928,74867,55.5,2005-2009,,63,
+2010,134511,83215,61.9,2006-2010,,63,
+2011,124299,79425,63.9,2007-2011,,65,
+2012,125626,62493,49.7,2008-2012,,65,
+2013,136530,71456,52.3,2010-2014,,58,
+2014,137138,67293,49.1,2010-2014,,58,
+2015,126330,45601,36.1,2011-2015,,58,
+2016,128583,57714,44.9,2012-2016,,58,
+2017,130422,51754,39.7,2013-2017,,58,
+2018,126060,52596,41.7,2014-2018,,58,
+2019,125120,56683,45.3,2015-2019,,58,
+2020,125466,53509,42.6,2016-2020,,58,
+2021,136282,78396,57.5,2017-2021,,58,
+2022,126873,67586,53.3,2019-2023,tableau 2.1.16,58,
+2023,131080,66739,50.9,2019-2023,tableau 2.1.16,58,
