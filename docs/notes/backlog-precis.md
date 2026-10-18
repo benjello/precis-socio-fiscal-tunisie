@@ -592,9 +592,12 @@ liste qui suit le tableau, citations comprises. Restent :
   donations et successions, terrains, promoteurs, droit complémentaire ; longue période (sans
   figure) ; rapports et études. **Corrigé dans `_impot_revenu.qmd`** : la ligne de la loi de
   finances pour 2023 du registre (la condition de première cession vient de la loi de finances pour
-  2005, art. 60) ; renvoi vers le nouveau chapitre. **À trancher par le propriétaire** : les dix
-  points du § M6 du plan, appliqués comme proposés et signalés par des commentaires
-  `À CONFIRMER (propriétaire)` ; la coupe de l'histoire de la plus-value dans `_impot_revenu.qmd`
+  2005, art. 60) ; renvoi vers le nouveau chapitre. **Tranché par le propriétaire le 18 octobre 2026** : les
+  dix points du § M6 du plan, validés tels qu'appliqués (commentaires `À CONFIRMER` retirés) ;
+  la figure des prévisions reste limitée à 2011-2020, l'extension à 1970-1993 et 2021-2022 restant
+  à faire si les données se trouvent (TODO de `fig-pi-previsions`) ; section « Ce qu'en dit
+  l'économie » resserrée, le détail par étude replié dans « Détail des études citées ». **À
+  trancher par le propriétaire** : la coupe de l'histoire de la plus-value dans `_impot_revenu.qmd`
   (décision 2, non faite). **Intégré le 18 octobre 2026** (note
   `fiscalite-patrimoine-immobilier-lectures-2026-10-18.md`) : dates d'effet de la LF 1973
   (31 déc. 1972), de la LF 1975 (2 janv. 1975), de la LF 1989 (loi du 31 décembre 1988, 2 janv.
