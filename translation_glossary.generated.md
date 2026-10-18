@@ -59,6 +59,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Calendrier d'application de la TVA | روزنامة تطبيق الأداء على القيمة المضافة |  |
 | Capacité d'emprunt | طاقة التداين |  |
 | Capital-décès | رأس مال الوفاة |  |
+| Capitalisation d'un impôt | رسملة الأداء |  |
 | Carnet de soins familial | دفتر عائلي للمعالجة |  |
 | Carte de soins | بطاقة العلاج |  |
 | Carte de soins à tarifs réduits | بطاقة العلاج بالتعريفة المنخفضة | AMG2 |
@@ -146,6 +147,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Durée de constatation du crédit de TVA | مدة تسجيل فائض الأداء على القيمة المضافة بالتصاريح |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
+| Effet de verrouillage | أثر التجميد |  |
 | Effort fiscal | المجهود الجبائي |  |
 | Éléments permanents de la rémunération | العناصر القارة للمرتب |  |
 | Émoluments de base | المرتبات الأساسية |  |
@@ -208,6 +210,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Impôts indirects | الأداءات والمعاليم غير المباشرة |  |
 | Imputation du droit de consommation | خصم المعلوم على الاستهلاك |  |
 | Incidence des subventions | توزيع منافع الدعم |  |
+| Incidence fiscale | توزيع العبء الجبائي |  |
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
 | Indemnité complémentaire provisoire | المنحة الإضافية المؤقتة | ICP |
@@ -255,6 +258,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation des prix | تعديل الأسعار |  |
 | Péréquation des ressources | تعديل الموارد |  |
 | Péréquation financière | التعديل المالي |  |
+| Perte sèche | الخسارة الصافية في الرفاه |  |
 | Plus-value immobilière | القيمة الزائدة العقارية |  |
 | Politique active de l'emploi | السياسة النشيطة للتشغيل |  |
 | Position tarifaire | البند التعريفي |  |
@@ -307,6 +311,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
 | Régime suspensif de la taxe sur la valeur ajoutée | نظام توقيف العمل بالأداء على القيمة المضافة |  |
 | Règle d'or | القاعدة الذهبية |  |
+| Regroupement | التجمّع عند العتبة |  |
 | Régularisation des déductions | تعديل الطرح |  |
 | Rémunération à la part | الخلاص بالحصة |  |
 | Rémunération des dirigeants d'entreprises publiques | تأجير رؤساء المؤسسات والمنشآت العمومية |  |
@@ -345,12 +350,15 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
 | Séparation des opérations de commercialisation des hydrocarbures | فصل عمليات تسويق المحروقات |  |
 | Service fait | قاعدة الخدمة المنجزة |  |
+| Seuil à changement de taux | عتبة تغيّر النسبة |  |
+| Seuil à saut | العتبة ذات القفزة |  |
 | SMIG de référence de la CNSS | الأجر الأدنى المرجعي المعتمد لدى الصندوق الوطني للضمان الاجتماعي |  |
 | Société de prévoyance des fonctionnaires et employés tunisiens | الجمعية الاحتياطية للموظفين والمستخدمين التونسيين |  |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
 | Solde (militaire) | المرتّب العسكري |  |
 | Solde de réforme | منحة الإصلاح |  |
+| Sous-déclaration | التصريح بأقلّ من القيمة الحقيقية |  |
 | Souveraineté fiscale | السيادة الجبائية |  |
 | Stage d'initiation à la vie professionnelle | تربص الإعداد للحياة المهنية | SIVP |
 | Stage de cotisation | مدة الانخراط الدنيا |  |

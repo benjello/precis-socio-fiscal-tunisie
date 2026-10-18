@@ -630,6 +630,11 @@ liste qui suit le tableau, citations comprises. Restent :
   entre classeurs (TODO économiste) ; vue déflatée à proposer ; dans `tunisia-data`, réécrire
   les `caveats` du catalogue (« non extraites », « seule l'édition… est retenue »), affichés tels
   quels dans l'onglet « Sources ».
+  Glossaire de la section (18 octobre 2026) : huit notions ancrées et définies, au statut
+  `provisoire` — seuil à saut, seuil à changement de taux, regroupement, sous-déclaration, effet
+  de verrouillage, capitalisation d'un impôt, perte sèche, incidence fiscale. Restent : termes
+  arabes à faire confirmer ; équivalents français de *notch* et *kink* à fixer sur une source
+  française de référence.
   **Bibliographe** : clés à créer pour la loi n° 79-27, la loi n° 70-66 (LF 1971), les lois n° 59-131,
   64-28, 74-53 et le DL 61-15, la loi n° 90-17, la loi n° 70-25, les avis du Conseil constitutionnel
   n° 31-2006 et 53-2006 ; notes communes 23/2014 et 28/2002 ; URL pist.tn de `lf-2016`, `lf-2019`,
