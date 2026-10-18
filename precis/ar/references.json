@@ -10267,6 +10267,39 @@
       "DOI": "10.1257/aeri.20200535"
     },
     {
+      "id": "ins-ipim",
+      "type": "dataset",
+      "title": "Indices des prix de l'immobilier par type de bien (base 2015 = 100)",
+      "title-short": "المعهد الوطني للإحصاء، مؤشر أسعار العقارات حسب نوع العقار",
+      "author": [
+        {
+          "literal": "المعهد الوطني للإحصاء"
+        }
+      ],
+      "publisher": "المعهد الوطني للإحصاء",
+      "publisher-place": "تونس",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/statistiques/91",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            18
+          ]
+        ]
+      },
+      "note": "citation-key: ins-ipim\nسلسلة ثلاثية حسب نوع العقار؛ تاريخ تحيين الصفحة. السلاسل الطويلة (2000-2025) في جداول البيانات المرفقة بالبلاغات الثلاثية، ومنها بلاغ الثلاثي الرابع 2025: https://www.ins.tn/publication/indice-des-prix-de-limmobilier-quatrieme-trimestre-2025."
+    },
+    {
       "id": "ins-ipim-fiche-technique-2024",
       "type": "report",
       "title": "Fiche technique de l'indice des prix de l'immobilier",

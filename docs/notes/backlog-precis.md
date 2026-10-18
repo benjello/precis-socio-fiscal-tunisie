@@ -621,7 +621,15 @@ liste qui suit le tableau, citations comprises. Restent :
   (`tbl-pi-textes-fonciers`). **Données** : prévisions du tableau A antérieures à 2020 à lire à l'image
   (OCR non vérifiée) et à verser dans `tunisia-data` avant la figure `fig-pi-previsions` ;
   tableaux A de 2000-2010 et 2023-2026 ; réalisations par article ; nombre d'actes et de cessions.
-  **Section réservée** : « Ce qu'en dit l'économie », en attente d'une fiche de l'économiste.
+  **Section « Ce qu'en dit l'économie »** : figure `fig-pi-ipim` ajoutée le 18 octobre 2026
+  (indice des prix déclarés de l'immobilier de l'INS, 2015 = 100, terrains, appartements,
+  maisons ; méthode révisée T1 2000 - T4 2025 et ancienne méthode T1 2000 - T4 2021 tracées
+  séparément ; séries `ins-ipim-trimestriel` et `ins-ipim-trimestriel-methode-anterieure`
+  snapshotées le 18 octobre 2026 ; clé `ins-ipim` versée ; module
+  `figures/patrimoine_immobilier.py`). Restent : révisions des derniers trimestres et écarts
+  entre classeurs (TODO économiste) ; vue déflatée à proposer ; dans `tunisia-data`, réécrire
+  les `caveats` du catalogue (« non extraites », « seule l'édition… est retenue »), affichés tels
+  quels dans l'onglet « Sources ».
   **Bibliographe** : clés à créer pour la loi n° 79-27, la loi n° 70-66 (LF 1971), les lois n° 59-131,
   64-28, 74-53 et le DL 61-15, la loi n° 90-17, la loi n° 70-25, les avis du Conseil constitutionnel
   n° 31-2006 et 53-2006 ; notes communes 23/2014 et 28/2002 ; URL pist.tn de `lf-2016`, `lf-2019`,

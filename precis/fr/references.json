@@ -10307,6 +10307,39 @@
       "DOI": "10.1257/aeri.20200535"
     },
     {
+      "id": "ins-ipim",
+      "type": "dataset",
+      "title": "Indices des prix de l'immobilier par type de bien (base 2015 = 100)",
+      "title-short": "INS, Indices des prix de l'immobilier",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/statistiques/91",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            18
+          ]
+        ]
+      },
+      "note": "citation-key: ins-ipim\nSérie trimestrielle par type de bien (terrains, appartements, maisons, bâti), T1 2024 - T4 2025 sur la page ; date de mise à jour de la page. Séries longues (T1 2000 - T4 2025, méthode révisée ; T1 2000 - T4 2021, ancienne méthode) dans les classeurs joints aux communiqués trimestriels, notamment celui du quatrième trimestre 2025 : https://www.ins.tn/publication/indice-des-prix-de-limmobilier-quatrieme-trimestre-2025."
+    },
+    {
       "id": "ins-ipim-fiche-technique-2024",
       "type": "report",
       "title": "Fiche technique de l'indice des prix de l'immobilier",

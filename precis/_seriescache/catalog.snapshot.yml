@@ -4902,3 +4902,46 @@
     من أساس إلى آخر. الفارق بين الأسس غير ثابت. لا يوجد أساس مذكور قبل 1992، ولا شيء
     على أساس 1997 بعد 2017 ولا على أساس 2015 قبل 2010.'
   fiche: docs/pib-courant-par-base.md
+- id: ins-ipim-trimestriel
+  titre: Indice des prix de l'immobilier (INS), base 2015 = 100, par type de bien,
+    T1 2000 - T4 2025 (méthodologie révisée)
+  sources:
+  - ins-ipim
+  build: scripts/build_ins_ipim.py:main
+  raw:
+  - data/raw/ins-publications/ipim/series
+  output: data/processed/ins-ipim/ipim_trimestriel.csv
+  unite: indice 2015 = 100 ; glissements en %
+  perimetre: terrains à usage d'habitation, appartements, maisons, ensemble du bâti
+    ; prix de transaction enregistrés, national ; édition du T4 2025
+  caveats: 'Indices de prix de transaction (ventes enregistrées), par type de bien
+    ; pas d''indice général dans cette série. Rupture de méthode : la publication
+    a été interrompue en 2022-2023 pour révision, puis reprise au T1 2024 avec toute
+    la série recalculée selon la nouvelle méthodologie ; elle ne se raccorde pas à
+    la série de l''ancienne méthodologie (au T4 2021, terrains 152,75 contre 147,18,
+    appartements 148,48 contre 149,84, maisons 135,81 contre 136,71). Les prix sont
+    déclarés et leurs valeurs sont révisables : un même trimestre diffère légèrement
+    d''une édition du classeur à l''autre (T1 2000, terrains : 39,909 dans l''édition
+    du T4 2025, 39,891 dans celle du T1 2024). Les valeurs données sont celles de
+    l''édition du T4 2025.'
+  fiche: data/processed/ins-ipim/ipim_trimestriel.csv.yml
+- id: ins-ipim-trimestriel-methode-anterieure
+  titre: Indice des prix de l'immobilier (INS), base 2015 = 100, par type de bien,
+    T1 2000 - T4 2021 (ancienne méthodologie)
+  sources:
+  - ins-ipim
+  build: scripts/build_ins_ipim.py:main
+  raw:
+  - data/raw/ins-publications/ipim/series
+  output: data/processed/ins-ipim/ipim_trimestriel_methode_anterieure.csv
+  unite: indice 2015 = 100 ; glissements en %
+  perimetre: terrains à usage d'habitation, appartements, maisons, indice général
+    ; prix de transaction enregistrés, national ; édition du T4 2021
+  caveats: 'Indices de prix de transaction (ventes enregistrées), par type de bien,
+    avec un indice général que la série révisée ne publie pas. Ancienne méthodologie
+    : la série s''arrête au T4 2021, la publication ayant été interrompue ensuite
+    pour révision. Elle ne se raccorde pas à la série révisée (au T4 2021, terrains
+    147,18 contre 152,75, appartements 149,84 contre 148,48, maisons 136,71 contre
+    135,81). Les prix sont déclarés et les valeurs révisables. Les valeurs données
+    sont celles de l''édition du T4 2021, la dernière avant l''interruption.'
+  fiche: data/processed/ins-ipim/ipim_trimestriel_methode_anterieure.csv.yml
