@@ -43,6 +43,21 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   adjacent renvoie à une issue ouverte sur `openfisca-tunisia` qui énumère les valeurs et dates à
   sourcer, et le constat figure aussi dans `docs/notes/backlog-modele.md`. URL du JORT sur `pist.tn`
   uniquement, dans l'édition de la langue du fichier.
+- **Série à fenêtre : on verse ce qui remonte à une trentaine d'années, et l'on dit que la série
+  est incomplète.** Un paramètre dont les textes sont lus et datés sur une fenêtre d'environ trente
+  ans (pour un état au 1er janvier 2026 : depuis 1996 environ) peut être versé dans le modèle sans
+  remonter plus loin, même si des états antérieurs existent. Une seule pratique, pour tous les
+  paramètres :
+  1. le paramètre commence à sa première date **sourcée** — jamais une valeur antérieure sans
+     référence ;
+  2. sa `note` dit, en une phrase : « Série incomplète : états antérieurs à AAAA non versés. » ;
+  3. une ligne de `docs/notes/backlog-modele.md` énumère les états manquants, leurs textes et leur
+     localisation (corpus, OCR, à obtenir) ;
+  4. le volume garde, dans ses registres écrits à la main, l'histoire antérieure déjà sourcée ; le
+     tableau engendré ne porte **aucun** `TODO` d'incomplétude et ne mentionne pas le modèle.
+  Une série plus courte que la fenêtre, sans texte lisible avant sa première date, suit la même
+  pratique. Le décalage entre la fenêtre et l'histoire écrite du volume se lit dans le backlog,
+  pas dans le rendu.
 - **Ne committe pas** sans que l'humain ait relu, sauf consigne explicite. N'ouvre ni PR ni issue de
   ta propre initiative.
 - **OCR** : lance les océrisations au premier plan ou attends-les, et ne laisse aucun processus
