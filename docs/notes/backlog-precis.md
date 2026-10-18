@@ -642,6 +642,15 @@ liste qui suit le tableau, citations comprises. Restent :
   entre classeurs (TODO économiste) ; vue déflatée à proposer ; dans `tunisia-data`, réécrire
   les `caveats` du catalogue (« non extraites », « seule l'édition… est retenue »), affichés tels
   quels dans l'onglet « Sources ».
+  **Section « Les donations et les successions »** (18 octobre 2026) : figures
+  `fig-pi-tarif-successions` (taux fixé pour chaque tranche de part nette, quatre parentés,
+  états du 1er janvier 1984, du 17 mai 1993 et du 17 août 1998) et
+  `fig-pi-abattements-successions` (trois abattements, dinars courants et dinars de 2025, un
+  segment par texte en vigueur) ; `tbl-pi-abattements-successions` désormais engendré, avec ses
+  colonnes en dinars de 2025 (TODO rédacteur levé). Séries `successions-tarif` et
+  `successions-abattements` émises par `scripts/generate_bareme_tables.py` (openfisca-tunisia
+  ≥ 0.136). Reste : le mode de liquidation du barème de 1984 (TODO documentaliste à côté de la
+  figure) ; une fois établi, ajouter à la figure le taux moyen par part nette.
   Glossaire de la section (18 octobre 2026) : huit notions ancrées et définies, au statut
   `provisoire` — seuil à saut, seuil à changement de taux, regroupement, sous-déclaration, effet
   de verrouillage, capitalisation d'un impôt, perte sèche, incidence fiscale. Restent : termes

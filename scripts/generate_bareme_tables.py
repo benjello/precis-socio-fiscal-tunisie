@@ -523,11 +523,63 @@ def parametres_famille() -> list:
         for nom, mot in FAMILLE]
 
 
+# ------------------------------- droit d'enregistrement sur les successions : deux séries
+#
+# Le TARIF, par degré de parenté : six tranches de part nette au 1er janvier 1984, un taux
+# unique au 17 mai 1993 (code des droits d'enregistrement et de timbre, art. 20, n° 16), la
+# ligne directe à 2,5 % au 17 août 1998. Barème à plusieurs tranches : la série est écrite
+# tranche par tranche (`ot.ecrire_serie_tranches`), chaque date avec son texte.
+# Les ABATTEMENTS sur les parts recueillies en ligne directe ou entre époux (code, art. 51) :
+# trois montants en dinars, de 1975, 1993 et 1998 ; la ligne de 1993 reprend ceux de 1975.
+SUCCESSIONS = "parameters/fiscalite_indirecte/droits_enregistrement/successions"
+SERIE_SUCC_TARIF = "successions-tarif"
+SERIE_SUCC_ABATTEMENTS = "successions-abattements"
+_SUCC_TARIF_LIEN = {
+    "ligne_directe_epoux": {"fr": "Droit sur les successions — tarif, ligne directe et époux",
+                            "ar": "معلوم التسجيل على التركات — التعريفة، الخط المباشر والزوجان"},
+    "freres_soeurs": {"fr": "Droit sur les successions — tarif, frères et sœurs",
+                      "ar": "معلوم التسجيل على التركات — التعريفة، الإخوة والأخوات"},
+    "oncles_neveux_cousins": {
+        "fr": "Droit sur les successions — tarif, oncles, neveux et cousins",
+        "ar": "معلوم التسجيل على التركات — التعريفة، الأعمام والأخوال وأبناء الإخوة وأبناء العمومة"},
+    "au_dela_quatrieme_degre": {
+        "fr": "Droit sur les successions — tarif, au-delà du quatrième degré et non-parents",
+        "ar": "معلوم التسجيل على التركات — التعريفة، ما بعد الدرجة الرابعة وغير الأقارب"},
+}
+_SUCC_ABATTEMENTS = {
+    "par_enfant_ascendant_conjoint": {
+        "fr": "Abattement par enfant, ascendant à charge ou conjoint survivant",
+        "ar": "الطرح عن كلّ ابن أو أصل في الكفالة أو قرين باقٍ على قيد الحياة"},
+    "plafond": {"fr": "Plafond de l'abattement total", "ar": "سقف الطرح الجملي"},
+    "supplement_heritier_handicape": {
+        "fr": "Abattement supplémentaire par héritier handicapé",
+        "ar": "الطرح الإضافي عن كلّ وارث ذي إعاقة"},
+}
+_SUCC_PREFIXE = {"fr": "Droit sur les successions — ", "ar": "معلوم التسجيل على التركات — "}
+
+
+def baremes_successions() -> list[tuple[str, str, dict[str, str]]]:
+    return [(cle, f"{SUCCESSIONS}/tarif/{cle}.yaml", liens)
+            for cle, liens in _SUCC_TARIF_LIEN.items()]
+
+
+def parametres_abattements_successions() -> list:
+    return [ot.ParametreDate(
+        cle, f"{SUCCESSIONS}/abattement/{cle}.yaml", libelles, unite="dinars",
+        lien={l: _SUCC_PREFIXE[l] + libelles[l] for l in LANGUES})
+        for cle, libelles in _SUCC_ABATTEMENTS.items()]
+
+
 def parametres_dans_le_temps() -> int:
     """Les séries longues et les tableaux aux dates repères. Rend 0, ou 1 au premier échec."""
     generateur = Path(__file__).name
     annees = {l: {d: d[:4] for d in REPERES_FAMILLE} for l in LANGUES}
     return (
+        ot.ecrire_serie_tranches(SERIE_SUCC_TARIF, baremes_successions(), CACHE,
+                                 colonne="parente")
+        or ot.ecrire_serie_parametres(SERIE_SUCC_ABATTEMENTS,
+                                      parametres_abattements_successions(), CACHE)
+        or
         ot.ecrire_serie_parametres(SERIE_TVA, parametres_tva(), CACHE, colonne="taux")
         or ot.ecrire_dates_reperes(
             RACINE, "fiscalite", "tva_taux", parametres_tva(), REPERES_TVA,

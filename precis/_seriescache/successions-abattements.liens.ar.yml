@@ -1,0 +1,10 @@
+- libelle: معلوم التسجيل على التركات — الطرح عن كلّ ابن أو أصل في الكفالة أو قرين
+    باقٍ على قيد الحياة
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/abattement/par_enfant_ascendant_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.droits_enregistrement.successions.abattement.par_enfant_ascendant_conjoint/table/
+- libelle: معلوم التسجيل على التركات — سقف الطرح الجملي
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/abattement/plafond.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.droits_enregistrement.successions.abattement.plafond/table/
+- libelle: معلوم التسجيل على التركات — الطرح الإضافي عن كلّ وارث ذي إعاقة
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/abattement/supplement_heritier_handicape.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.droits_enregistrement.successions.abattement.supplement_heritier_handicape/table/

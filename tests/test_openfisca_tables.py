@@ -192,5 +192,45 @@ class BlocEngendreTest(unittest.TestCase):
         self.assertIn("### 1990\n\n::: {.tableau-engendre}\n\n" + self.CORPS + "\n\n:::\n\nNote.", rendu)
 
 
+class LignesTranchesTest(unittest.TestCase):
+    """Un barème qui passe de deux tranches à un taux unique, puis reprend ce taux."""
+
+    PIST = "https://www.pist.tn/jort/x.pdf"
+    BAREME = {
+        "brackets": [
+            {"threshold": {datetime.date(1984, 1, 1): {"value": 0}},
+             "rate": {datetime.date(1984, 1, 1): {"value": 0.2},
+                      datetime.date(1993, 5, 17): {"value": 0.05},
+                      datetime.date(1998, 8, 17): {"value": 0.05}}},
+            {"threshold": {datetime.date(1984, 1, 1): {"value": 5000},
+                           datetime.date(1993, 5, 17): {"value": None}},
+             "rate": {datetime.date(1984, 1, 1): {"value": 0.25},
+                      datetime.date(1993, 5, 17): {"value": None}}},
+        ],
+        "metadata": {"reference": {
+            datetime.date(1984, 1, 1): [{"title": "LF 1984", "href": PIST}],
+            datetime.date(1993, 5, 17): [{"title": "Code 1993", "href": PIST}],
+            datetime.date(1998, 8, 17): [{"title": "Loi 98-73", "href": PIST}]}},
+    }
+
+    def test_une_ligne_par_tranche_et_par_date(self):
+        lignes = openfisca_tables.lignes_tranches("freres", self.BAREME, colonne="parente")
+        self.assertEqual(
+            [(l["tranche"], l["date_effet"], l["seuil"], l["taux"], l["texte"]) for l in lignes],
+            [(1, "1984-01-01", 0.0, 0.2, "LF 1984"),
+             (1, "1993-05-17", 0.0, 0.05, "Code 1993"),
+             # La reprise du même taux reste une ligne : la figure y voit un texte qui le
+             # reprend sans le changer.
+             (1, "1998-08-17", 0.0, 0.05, "Loi 98-73"),
+             (2, "1984-01-01", 5000.0, 0.25, "LF 1984"),
+             # Tranche close : ni seuil ni taux, jamais un taux nul.
+             (2, "1993-05-17", None, None, "Code 1993")])
+
+    def test_date_sans_texte_au_journal_officiel(self):
+        bareme = {**self.BAREME, "metadata": {"reference": {}}}
+        with self.assertRaises(ValueError):
+            openfisca_tables.lignes_tranches("freres", bareme)
+
+
 if __name__ == "__main__":
     unittest.main()

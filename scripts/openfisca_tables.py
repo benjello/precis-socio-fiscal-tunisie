@@ -131,7 +131,15 @@ PAQUETS = {
         # (PR #492) : en deçà, les tableaux de la pénalité, des chapitres V à VII du code et
         # des parkings du même volume ne pourraient être engendrés. La borne passe à la
         # 0.134, publiée le 11 octobre 2026.
-        "version_minimale": (0, 134),
+        # La 0.136 verse le droit d'enregistrement sur les successions, sous
+        # `fiscalite_indirecte/droits_enregistrement/successions/` (PR #494) : tarif par
+        # degré de parenté — six tranches au 1er janvier 1984, taux unique au 17 mai 1993,
+        # ligne directe à 2,5 % au 17 août 1998 —, abattements de 1975, 1993 et 1998,
+        # superficie de l'habitation principale exonérée et forfait des frais funéraires. En
+        # deçà, les deux séries des successions et leurs figures (chapitre « Le patrimoine
+        # immobilier » du volume « Fiscalité », section des donations et des successions) ne
+        # pourraient être engendrées. La borne passe à la 0.136.
+        "version_minimale": (0, 136),
     },
 }
 
@@ -1519,6 +1527,75 @@ def ecrire_serie_parametres(nom: str, parametres: list[ParametreDate], cache: st
         ecrire_fichier_liens(cache / f"{nom}.liens.{langue}.yml",
                              [(p.chemin, p.lien[langue]) for p in parametres], langue)
     print(f"✓ série {nom} : {len(lignes)} lignes, {len(parametres)} paramètres")
+    return 0
+
+
+# ------------------------------------------- barèmes à plusieurs tranches dans le temps
+#
+# `ParametreDate` ne lit qu'une valeur par date — un scalaire, ou la PREMIÈRE tranche d'un
+# barème (`taux_datee`). Un barème à plusieurs tranches qui change de structure — six
+# tranches, puis un taux unique — se décrit tranche par tranche : une ligne par tranche et
+# par date d'effet, avec le seuil et le taux en vigueur à cette date. Une tranche close
+# (`value: null` au seuil et au taux) donne une ligne sans seuil ni taux : c'est une
+# suppression, jamais un taux nul.
+
+
+def lignes_tranches(cle: str, donnees: dict[str, Any], colonne: str = "parametre",
+                    avec_textes: bool = True) -> list[dict[str, Any]]:
+    """Lignes de la série d'un barème : une par tranche et par date d'effet. Pure.
+
+    `donnees` : le YAML du barème, déjà chargé. Les dates d'une tranche sont l'union des
+    dates de son seuil et de son taux ; à chacune, seuil et taux sont ceux en vigueur ce
+    jour-là. Le texte est celui que le barème cite à la date ; une date sans texte au
+    Journal officiel lève une erreur, comme dans `lignes_serie_longue`.
+    """
+    lignes = []
+    for i, tranche in enumerate(donnees.get("brackets") or [], start=1):
+        seuils, taux = tranche.get("threshold") or {}, tranche.get("rate") or {}
+        cles_dates = {str(k)[:10]: k for k in list(seuils) + list(taux)}
+        for date in sorted(cles_dates):
+            jour = _date_de_cle(cles_dates[date])
+            ligne = {colonne: cle, "tranche": i, "date_effet": date,
+                     "seuil": valeur_a_la_date(seuils, jour),
+                     "taux": valeur_a_la_date(taux, jour)}
+            if ligne["taux"] is not None:
+                ligne["taux"] = round(ligne["taux"], 6)
+            if avec_textes:
+                titre, lien = _reference_a_la_date(donnees, cles_dates[date])
+                if not titre or not lien.startswith("https://www.pist.tn/"):
+                    raise ValueError(f"{cle}, tranche {i}, au {date} sans texte au Journal "
+                                     "officiel.")
+                ligne["texte"], ligne["lien"] = titre, lien
+            lignes.append(ligne)
+    return lignes
+
+
+def ecrire_serie_tranches(nom: str, baremes: list[tuple[str, str, dict[str, str]]],
+                          cache: str | Path, colonne: str = "parametre",
+                          langues: tuple[str, ...] = ("fr", "ar")) -> int:
+    """Émet la série `<cache>/<nom>.csv` de barèmes à tranches, et ses liens.
+
+    `baremes` : [(clé, chemin du YAML, {langue: libellé du lien « Base législative »})].
+    Rend 0, ou 1 après avoir dit pourquoi la série n'est pas écrite.
+    """
+    lignes = []
+    for cle, chemin, _lien in baremes:
+        donnees = charge_parametre(chemin)
+        if not donnees or not donnees.get("brackets"):
+            print(f"✗ {nom} : barème introuvable ou vide : {chemin}")
+            return 1
+        try:
+            lignes += lignes_tranches(cle, donnees, colonne=colonne)
+        except ValueError as erreur:
+            print(f"✗ {nom} : {erreur}")
+            return 1
+    cache = Path(cache)
+    cache.mkdir(parents=True, exist_ok=True)
+    ecrire_csv_serie(cache / f"{nom}.csv", lignes)
+    for langue in langues:
+        ecrire_fichier_liens(cache / f"{nom}.liens.{langue}.yml",
+                             [(chemin, lien[langue]) for _c, chemin, lien in baremes], langue)
+    print(f"✓ série {nom} : {len(lignes)} lignes, {len(baremes)} barèmes")
     return 0
 
 

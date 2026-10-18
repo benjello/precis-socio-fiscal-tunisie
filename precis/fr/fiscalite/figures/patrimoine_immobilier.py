@@ -1,4 +1,6 @@
-"""Figure « indice des prix déclarés de l'immobilier » du chapitre sur le patrimoine immobilier.
+"""Figures du chapitre sur le patrimoine immobilier : l'indice des prix déclarés de
+l'immobilier (ci-dessous), le tarif des mutations par décès et les abattements sur les
+successions (décrits à leur section, plus bas).
 
 DES PRIX DÉCLARÉS, PAS DES PRIX DE MARCHÉ. L'indice des prix de l'immobilier de l'INS est
 calculé sur le fichier de la direction générale des impôts qui recense l'enregistrement
@@ -38,6 +40,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import matplotlib.ticker  # noqa: E402
 
 _SCRIPTS = Path(__file__).resolve().parents[4] / "scripts"
 sys.path.insert(0, str(_SCRIPTS))
@@ -228,3 +231,414 @@ def valeurs_reelles(types=TYPES):
     """Pour le texte du chapitre : valeurs de la vue réelle (méthode révisée)."""
     reel = _reel(_large(SERIE_REVISEE), _ipc_2015())
     return reel[list(types)]
+
+
+# --- Les mutations par décès : le tarif selon la parenté et la part nette -----------------
+#
+# UN BARÈME, PAS UNE SÉRIE TEMPORELLE. L'abscisse est la part nette recueillie par l'ayant
+# droit, en dinars ; l'ordonnée, le taux que le texte fixe pour la tranche où tombe cette
+# part. Trois états du droit, un cadre par degré de parenté :
+#   - au 1er janvier 1984 (loi de finances pour 1984, art. 12) : six tranches, en escalier ;
+#   - au 17 mai 1993 (code des droits d'enregistrement et de timbre, art. 20, n° 16) : un taux
+#     unique, trait horizontal sur tout l'axe ;
+#   - au 17 août 1998 (loi n° 98-73, art. 8) : la ligne directe passe à 2,5 % ; les autres
+#     taux de 1993 demeurent, et le trait de 1998 se superpose à celui de 1993.
+# LE TAUX FIXÉ POUR LA TRANCHE, RIEN D'AUTRE. Le texte de 1984 fixe un taux par tranche sans
+# dire s'il frappe la seule fraction de part comprise dans la tranche, ou la part entière :
+# la figure ne calcule donc ni taux moyen ni impôt, et ses libellés ne disent pas « marginal ».
+# La série est celle du générateur (`successions-tarif`, tranche par tranche).
+SERIE_SUCC_TARIF = "successions-tarif"
+SERIE_SUCC_ABATTEMENTS = "successions-abattements"
+
+PARENTES = ("ligne_directe_epoux", "freres_soeurs", "oncles_neveux_cousins",
+            "au_dela_quatrieme_degre")
+ETATS_TARIF = ("1984-01-01", "1993-05-17", "1998-08-17")
+COULEURS_ETATS = {"1984-01-01": "#bf8700", "1993-05-17": "#0969da", "1998-08-17": "#1a7f37"}
+# Bord droit de l'axe : la dernière tranche de 1984 commence à 90 000 D et n'a pas de borne.
+PART_MAX = 120_000
+
+_L.update({
+    "ligne_directe_epoux": {"fr": "Ligne directe et époux", "ar": "الخط المباشر والزوجان"},
+    "freres_soeurs": {"fr": "Frères et sœurs", "ar": "الإخوة والأخوات"},
+    "oncles_neveux_cousins": {"fr": "Oncles, neveux et cousins",
+                              "ar": "الأعمام والأخوال وأبناء الإخوة وأبناء العمومة"},
+    "au_dela_quatrieme_degre": {"fr": "Au-delà du quatrième degré et non-parents",
+                                "ar": "ما بعد الدرجة الرابعة وغير الأقارب"},
+    "etat_1984-01-01": {"fr": "1er janvier 1984 : six tranches de part nette",
+                        "ar": "1 جانفي 1984: ست شرائح من الحصة الصافية"},
+    "etat_1993-05-17": {"fr": "17 mai 1993 : taux unique (code des droits d'enregistrement)",
+                        "ar": "17 ماي 1993: نسبة وحيدة (مجلة معاليم التسجيل)"},
+    "etat_1998-08-17": {"fr": "17 août 1998 : taux unique (loi n° 98-73)",
+                        "ar": "17 أوت 1998: نسبة وحيدة (القانون عدد 98-73)"},
+    "inchange_1998": {"fr": "inchangé en 1998", "ar": "دون تغيير سنة 1998"},
+    "au_dela": {"fr": "au-delà\nde 90 000 D", "ar": "ما يتجاوز\n90 000 د"},
+    "x_part": {"fr": "Part nette recueillie par l'ayant droit (dinars courants)",
+               "ar": "الحصة الصافية الراجعة لصاحب الحقّ (بالدينار الجاري)"},
+    "y_tarif": {"fr": "Taux fixé pour la tranche (%)", "ar": "النسبة المحدَّدة للشريحة (%)"},
+    "title_tarif": {"fr": ("Mutations par décès : taux du droit d'enregistrement selon la part "
+                           "nette et la parenté, en 1984, 1993 et 1998"),
+                    "ar": ("نقل الملكية بالوفاة: نسبة معلوم التسجيل حسب الحصة الصافية ودرجة "
+                           "القرابة، في 1984 و1993 و1998")},
+    "c_parente": {"fr": "Parenté", "ar": "القرابة"},
+    "c_tranche": {"fr": "Tranche de part nette (D)", "ar": "شريحة الحصة الصافية (د)"},
+    "c_etat_1984-01-01": {"fr": "Taux au 1er janvier 1984 (%)",
+                          "ar": "النسبة في 1 جانفي 1984 (%)"},
+    "c_etat_1993-05-17": {"fr": "Taux au 17 mai 1993 (%)", "ar": "النسبة في 17 ماي 1993 (%)"},
+    "c_etat_1998-08-17": {"fr": "Taux au 17 août 1998 (%)", "ar": "النسبة في 17 أوت 1998 (%)"},
+    "plus_de": {"fr": "plus de {a}", "ar": "أكثر من {a}"},
+})
+
+figtools.register_provenance(
+    SERIE_SUCC_TARIF,
+    titre=("Tarif du droit d'enregistrement des mutations par décès, par degré de parenté et "
+           "par tranche de part nette, à chaque date d'effet depuis le 1er janvier 1984"),
+    titre_ar=("تعريفة معلوم التسجيل على نقل الملكية بالوفاة، حسب درجة القرابة وشريحة الحصة "
+              "الصافية، عند كلّ تاريخ نفاذ منذ 1 جانفي 1984"),
+    sources=["lf-1984", "loi-93-53-cdet", "loi-98-73"],
+    unite="taux fixé pour la tranche, en pourcentage de la part nette",
+    unite_ar="النسبة المحدَّدة للشريحة، بالمائة من الحصة الصافية",
+    perimetre=("quatre degrés de parenté ; une ligne par tranche et par date d'effet, avec le "
+               "texte du Journal officiel qui la fixe ; une tranche close au 17 mai 1993 n'a "
+               "plus ni seuil ni taux"),
+    perimetre_ar=("أربع درجات قرابة؛ سطر لكلّ شريحة ولكلّ تاريخ نفاذ، مع نصّ الرائد الرسمي "
+                  "الذي يضبطها؛ والشريحة الملغاة في 17 ماي 1993 لا عتبة لها ولا نسبة"),
+    caveats=("La figure commence au barème de 1984 ; ceux de 1969 et de 1975 sont au tableau "
+             "des barèmes successoraux du chapitre. Le texte de 1984 fixe un taux par tranche "
+             "de part nette : la figure donne ce taux, non un taux moyen ni un montant d'impôt. "
+             "Depuis 1993, le même taux vaut pour les donations ; les donations familiales "
+             "sont au droit fixe depuis 2006."),
+    caveats_ar=("تبدأ الرسوم بتعريفة 1984؛ أمّا تعريفتا 1969 و1975 ففي جدول تعريفات التركات "
+                "من الفصل. يضبط نصّ 1984 نسبة لكلّ شريحة من الحصة الصافية: تعطي الرسوم هذه "
+                "النسبة، لا نسبة متوسّطة ولا مبلغ أداء. ومنذ 1993 تسري النسبة ذاتها على "
+                "الهبات؛ وتخضع الهبات العائلية لمعلوم قارّ منذ 2006."),
+)
+
+
+def _bareme_a(d, parente: str, date: str) -> list[tuple[float, float]]:
+    """Tranches (seuil, taux) en vigueur à `date` pour une parenté, seuil croissant."""
+    sous = d[(d["parente"] == parente) & (d["date_effet"] <= date)]
+    tranches = []
+    for _t, lignes in sous.sort_values("date_effet").groupby("tranche"):
+        derniere = lignes.iloc[-1]
+        if derniere["taux"] == derniere["taux"]:  # tranche close : taux vide (NaN)
+            tranches.append((float(derniere["seuil"]), float(derniere["taux"])))
+    return sorted(tranches)
+
+
+def _d(v: float) -> str:
+    return f"{v:,.0f}".replace(",", " ")
+
+
+def _pct_fr(v: float) -> str:
+    return f"{100 * v:g}".replace(".", ",") + " %"
+
+
+def fig_tarif_successions():
+    """Quatre cadres, un par parenté : barème de 1984 en escalier, taux uniques de 1993, 1998."""
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    from matplotlib.lines import Line2D
+
+    d = figtools.series(SERIE_SUCC_TARIF)
+    fig, axes = plt.subplots(2, 2, figsize=(10.5, 7.2), sharey=True)
+    for ax, parente in zip(axes.flat, PARENTES):
+        etats = {date: _bareme_a(d, parente, date) for date in ETATS_TARIF}
+        for date in ETATS_TARIF:
+            tranches, c = etats[date], COULEURS_ETATS[date]
+            identique = date == "1998-08-17" and tranches == etats["1993-05-17"]
+            for i, (seuil, taux) in enumerate(tranches):
+                fin = tranches[i + 1][0] if i + 1 < len(tranches) else PART_MAX
+                ls, lw = ((0, (4, 3)), 1.6) if identique else ("-", 2.2)
+                seg, = ax.plot([seuil, fin], [100 * taux, 100 * taux], color=c, lw=lw, ls=ls,
+                               solid_capstyle="butt", zorder=3 if identique else 2)
+                if i + 1 < len(tranches):
+                    ax.plot([fin, fin], [100 * taux, 100 * tranches[i + 1][1]], color=c,
+                            lw=1.1, zorder=2)
+                borne = (ft(_lab("plus_de").format(a=_d(seuil))) if fin == PART_MAX
+                         and len(tranches) > 1 else f"{_d(seuil)} – {_d(fin)} D")
+                if len(tranches) == 1:
+                    borne = ft({"fr": "toute la part", "ar": "كامل الحصة"}[figtools.lang()])
+                figtools.infobulle(seg, f"{_lab(parente)} · {_lab('etat_' + date)} · "
+                                        f"{borne} : {_pct_fr(taux)}")
+            if len(tranches) == 1:
+                texte = _pct_fr(tranches[0][1])
+                if identique:
+                    texte = _lab("inchange_1998")
+                dy = -11 if date == "1998-08-17" else 4
+                ax.annotate(ft(texte), xy=(PART_MAX, 100 * tranches[0][1]), xytext=(-3, dy),
+                            textcoords="offset points", ha="right", va="bottom",
+                            fontsize=7.5, color=c, fontweight="bold")
+        for seuil, taux in etats["1984-01-01"]:
+            ax.annotate(ft(f"{100 * taux:g}".replace(".", ",")), xy=(seuil, 100 * taux),
+                        xytext=(2, 3), textcoords="offset points", fontsize=7,
+                        color=COULEURS_ETATS["1984-01-01"])
+        ax.axvspan(90_000, PART_MAX, color="#8b949e", alpha=0.08, lw=0)
+        ax.annotate(ft(_lab("au_dela")), xy=(105_000, 1), xycoords=("data", "axes fraction"),
+                    xytext=(0, -4), textcoords="offset points", ha="center", va="top",
+                    fontsize=7, color="#57606a")
+        ax.set_title(ft(_lab(parente)), fontsize=10)
+        ax.set_xlim(0, PART_MAX)
+        ax.set_ylim(0, 92)
+        ax.set_xticks([0, 15_000, 45_000, 90_000])
+        ax.set_xticklabels([ft(_d(x)) for x in (0, 15_000, 45_000, 90_000)], fontsize=8)
+        ax.grid(True, axis="y", alpha=0.3)
+    for ax in axes[1]:
+        ax.set_xlabel(ft(_lab("x_part")), fontsize=8.5)
+    for ax in axes[:, 0]:
+        ax.set_ylabel(ft(_lab("y_tarif")))
+    poignees = [Line2D([], [], color=COULEURS_ETATS[e], lw=2.2) for e in ETATS_TARIF]
+    fig.legend(poignees, [ft(_lab("etat_" + e)) for e in ETATS_TARIF], loc="lower center",
+               ncol=1, fontsize=8, frameon=False)
+    fig.suptitle(ft(_lab("title_tarif")), fontsize=11)
+    fig.tight_layout(rect=(0, 0.09, 1, 0.96))
+    return fig
+
+
+def table_tarif_successions():
+    """Une ligne par parenté et par tranche de 1984 ; le taux à chacune des trois dates."""
+    import pandas as pd
+
+    d = figtools.series(SERIE_SUCC_TARIF)
+    lignes = []
+    for parente in PARENTES:
+        b84 = _bareme_a(d, parente, "1984-01-01")
+        uniques = {date: _bareme_a(d, parente, date) for date in ETATS_TARIF[1:]}
+        for i, (seuil, taux) in enumerate(b84):
+            fin = b84[i + 1][0] if i + 1 < len(b84) else None
+            tranche = (_lab("plus_de").format(a=_d(seuil)) if fin is None
+                       else f"{_d(seuil)} – {_d(fin)}")
+            ligne = {_lab("c_parente"): _lab(parente), _lab("c_tranche"): tranche,
+                     _lab("c_etat_1984-01-01"): round(100 * taux, 2)}
+            for date, tranches in uniques.items():
+                ligne[_lab("c_etat_" + date)] = round(100 * tranches[0][1], 2)
+            lignes.append(ligne)
+    return pd.DataFrame(lignes)
+
+
+# --- Les abattements sur les successions, en dinars courants et en dinars constants -------
+#
+# Trois montants de l'article 51 du code : l'abattement par enfant, ascendant à charge ou
+# conjoint survivant, son plafond, et l'abattement supplémentaire par héritier handicapé.
+# Vue en dinars courants : l'escalier commun (`figtools.fig_escalier`) ; la ligne de 1993,
+# qui reprend les montants de 1975, y est un losange creux, sans marche.
+# Vue en dinars constants : UN SEGMENT PAR ÉTAT DU DROIT (1975, 1993, 1998), jamais raccordés.
+# Une année n'est tracée que si le même texte vaut aux douze premiers jours de ses mois :
+# 1975 (effet le 2 janvier), 1993 (17 mai) et 1998 (17 août) se partagent entre deux états,
+# et n'appartiennent à aucun segment. Dinars constants : l'indice commun du précis
+# (`dinars_constants.ipc()`), année de base `dinars_constants.ANNEE_BASE`.
+ABATTEMENTS = {"par_enfant_ascendant_conjoint": "#0969da", "plafond": "#8250df",
+               "supplement_heritier_handicape": "#bf8700"}
+FIN_ABATTEMENTS = 2026
+
+_L.update({
+    "par_enfant_ascendant_conjoint": {
+        "fr": "Abattement par enfant, ascendant à charge ou conjoint",
+        "ar": "الطرح عن كلّ ابن أو أصل في الكفالة أو قرين"},
+    "plafond": {"fr": "Plafond de l'abattement total", "ar": "سقف الطرح الجملي"},
+    "supplement_heritier_handicape": {"fr": "Supplément par héritier handicapé",
+                                      "ar": "الطرح الإضافي عن كلّ وارث ذي إعاقة"},
+    "y_abatt": {"fr": "Montant (dinars courants)", "ar": "المبلغ (بالدينار الجاري)"},
+    "y_abatt_cst": {"fr": "Montant (dinars de {base})", "ar": "المبلغ (بدينار {base})"},
+    "vue_abatt_courants": {"fr": "Dinars courants", "ar": "بالدينار الجاري"},
+    "vue_abatt_constants": {"fr": "Dinars de {base}", "ar": "بدينار {base}"},
+    "rupture_1993": {"fr": "code de 1993", "ar": "مجلة 1993"},
+    "rupture_1998": {"fr": "loi n° 98-73", "ar": "القانون عدد 98-73"},
+    "texte_1975-01-02": {"fr": "loi de finances pour 1975, art. 30",
+                         "ar": "قانون المالية لسنة 1975، الفصل 30"},
+    "texte_1993-05-17": {"fr": "code des droits d'enregistrement et de timbre, art. 51",
+                         "ar": "مجلة معاليم التسجيل والطابع الجبائي، الفصل 51"},
+    "texte_1998-08-17": {"fr": "loi n° 98-73, art. 9 et 10",
+                         "ar": "القانون عدد 98-73، الفصلان 9 و10"},
+    "c_grandeur": {"fr": "Grandeur", "ar": "المقدار"},
+    "c_annee": {"fr": "Année", "ar": "السنة"},
+    "c_texte_vigueur": {"fr": "Texte en vigueur toute l'année",
+                        "ar": "النصّ النافذ طيلة السنة"},
+    "c_courant": {"fr": "Montant (dinars courants)", "ar": "المبلغ (بالدينار الجاري)"},
+    "c_ipc": {"fr": "Indice des prix à la consommation (1970 = 100)",
+              "ar": "مؤشر أسعار الاستهلاك (1970 = 100)"},
+    "c_constant": {"fr": "Montant (dinars de {base})", "ar": "المبلغ (بدينار {base})"},
+    "c_effet": {"fr": "Effet", "ar": "تاريخ النفاذ"},
+})
+
+figtools.register_provenance(
+    SERIE_SUCC_ABATTEMENTS,
+    titre=("Abattements sur les parts recueillies en ligne directe ou entre époux, pour le "
+           "droit d'enregistrement des mutations par décès, à chaque date d'effet depuis le "
+           "2 janvier 1975"),
+    titre_ar=("الطروح من الحصص الراجعة في الخط المباشر أو بين الزوجين، بعنوان معلوم التسجيل "
+              "على نقل الملكية بالوفاة، عند كلّ تاريخ نفاذ منذ 2 جانفي 1975"),
+    sources=["loi74-101-lf1975", "loi-93-53-cdet", "loi-98-73"],
+    unite="dinars courants", unite_ar="بالدينار الجاري",
+    perimetre=("trois montants : abattement par enfant, par ascendant à charge du défunt et par "
+               "conjoint survivant ; plafond de l'abattement total ; abattement supplémentaire "
+               "sur la part de chaque héritier handicapé, prévu par le code de 1993 ; une ligne "
+               "par montant et par date d'effet, avec le texte du Journal officiel qui le fixe"),
+    perimetre_ar=("ثلاثة مبالغ: الطرح عن كلّ ابن وكلّ أصل في كفالة الهالك وكلّ قرين باقٍ؛ سقف "
+                  "الطرح الجملي؛ الطرح الإضافي من حصّة كلّ وارث ذي إعاقة، الوارد بمجلة 1993؛ "
+                  "سطر لكلّ مبلغ ولكلّ تاريخ نفاذ، مع نصّ الرائد الرسمي الذي يضبطه"),
+    caveats=("Le code de 1993 reprend les montants de 1975 : la ligne du 17 mai 1993 ne change "
+             "pas leur valeur. L'abattement s'impute d'abord sur la part du conjoint survivant "
+             "(code, art. 51, I)."),
+    caveats_ar=("تعيد مجلة 1993 مبالغ 1975: لا يغيّر سطر 17 ماي 1993 قيمتها. ويُطرح المبلغ "
+                "أوّلاً من حصّة القرين الباقي على قيد الحياة (المجلة، الفصل 51، I)."),
+)
+
+
+def _courbes_abattements() -> dict:
+    return {cle: (_lab(cle), c) for cle, c in ABATTEMENTS.items()}
+
+
+def _fmt_d(v: float) -> str:
+    return _d(v) + (" D" if figtools.lang() == "fr" else " د")
+
+
+def segments_abattements():
+    """{clé: [(date d'effet, [(année, courant, indice, constant)])]} : un segment par état.
+
+    Une année appartient au segment d'un état si la valeur de cet état est en vigueur au
+    premier jour de chacun de ses douze mois. Les années de changement de texte n'appartiennent
+    à aucun segment.
+    """
+    ipc = dinars_constants.ipc()
+    base = dinars_constants.ANNEE_BASE
+    etats = figtools.serie_escalier(SERIE_SUCC_ABATTEMENTS, ABATTEMENTS)
+    sortie = {}
+    for cle, lignes in etats.items():
+        segs = []
+        for i, (date, v, _etat, _texte, _lien) in enumerate(lignes):
+            fin = lignes[i + 1][0] if i + 1 < len(lignes) else f"{base + 1}-01-01"
+            points = []
+            for annee in range(int(date[:4]), base + 1):
+                mois = [f"{annee}-{m:02d}-01" for m in range(1, 13)]
+                if mois[0] < date or mois[-1] >= fin or annee not in ipc or v is None:
+                    continue
+                points.append((annee, v, ipc[annee], v * ipc[base] / ipc[annee]))
+            segs.append((date, points))
+        sortie[cle] = segs
+    return sortie
+
+
+def fig_abattements_constants():
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    base = dinars_constants.ANNEE_BASE
+    fig, ax = plt.subplots(figsize=(9.5, 5.6))
+    for cle, segs in segments_abattements().items():
+        c = ABATTEMENTS[cle]
+        premier = True
+        for date, points in segs:
+            if not points:
+                continue
+            xs, ys = [p[0] for p in points], [p[3] for p in points]
+            ax.plot(xs, ys, "-o", ms=2.8, lw=1.9, color=c,
+                    label=ft(_lab(cle)) if premier else None)
+            premier = False
+            # Une étiquette au début de chaque segment, et à la fin du dernier : deux
+            # étiquettes de part et d'autre d'une rupture se chevaucheraient.
+            bouts = [((xs[0], ys[0]), (-4, "right"))]
+            if date == segs[-1][0]:
+                bouts.append(((xs[-1], ys[-1]), (4, "left")))
+            for (a, r), (dx, ha) in bouts:
+                ax.annotate(ft(_d(round(r, -2))), xy=(a, r), xytext=(dx, 0),
+                            textcoords="offset points", ha=ha, va="center", fontsize=7.5,
+                            fontweight="bold", color=c)
+            for a, v, _i, r in points:
+                p, = ax.plot([a], [r], "o", ms=2.8, color=c, alpha=0)
+                figtools.infobulle(p, f"{a} · {_lab(cle)} : {_fmt_d(v)} courants, "
+                                      f"{_fmt_d(round(r))} de {base}")
+    for annee, cle, dx, ha in ((1993, "rupture_1993", -4, "right"),
+                               (1998, "rupture_1998", 4, "left")):
+        figtools.marque_rupture(ax, annee)
+        ax.annotate(ft(_lab(cle)), xy=(annee - 0.5, 1), xycoords=("data", "axes fraction"),
+                    xytext=(dx, -4), textcoords="offset points", ha=ha, va="top",
+                    fontsize=7, color="#57606a")
+    ax.set_xlim(1972, base + 3.5)
+    ax.set_ylim(0, None)
+    ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda y, _p: _d(y)))
+    ax.set_xlabel(ft(_lab("c_annee")))
+    ax.set_ylabel(ft(_lab("y_abatt_cst").format(base=base)))
+    ax.grid(True, alpha=0.3)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.13), fontsize=8, frameon=False,
+              ncol=2)
+    fig.tight_layout()
+    return fig
+
+
+def fig_abattements():
+    """Les deux vues : dinars courants en escalier, dinars constants par segments."""
+    courants = figtools.fig_escalier(
+        SERIE_SUCC_ABATTEMENTS, _courbes_abattements(), fin=FIN_ABATTEMENTS,
+        format_valeur=_fmt_d, ylabel=_lab("y_abatt"), ylim=(0, 33_000),
+        etiquettes_x={"1975-01-02": "1975", "1993-05-17": "17 mai\n1993"
+                      if figtools.lang() == "fr" else "17 ماي\n1993",
+                      "1998-08-17": "17 août\n1998" if figtools.lang() == "fr"
+                      else "17 أوت\n1998"}, ncol=2)
+    base = dinars_constants.ANNEE_BASE
+    return [(_lab("vue_abatt_courants"), courants),
+            (_lab("vue_abatt_constants").format(base=base), fig_abattements_constants())]
+
+
+def table_abattements():
+    """Une ligne par montant et par année pleine d'un même état du droit."""
+    import pandas as pd
+
+    base = dinars_constants.ANNEE_BASE
+    lignes = []
+    for cle, segs in segments_abattements().items():
+        for date, points in segs:
+            for a, v, i, r in points:
+                lignes.append({_lab("c_grandeur"): _lab(cle), _lab("c_annee"): a,
+                               _lab("c_texte_vigueur"): _lab("texte_" + date),
+                               _lab("c_courant"): round(v),
+                               _lab("c_ipc"): round(i, 1),
+                               _lab("c_constant").format(base=base): round(r)})
+    return pd.DataFrame(lignes)
+
+
+def tableau_abattements_effet() -> str:
+    """Tableau Markdown court : à chaque date d'effet, les trois montants, en dinars courants
+    et en dinars de l'année de base, ces derniers déflatés par l'indice de l'année d'effet
+    (moyenne annuelle), arrondis à la dizaine."""
+    ipc = dinars_constants.ipc()
+    base = dinars_constants.ANNEE_BASE
+    etats = figtools.serie_escalier(SERIE_SUCC_ABATTEMENTS, ABATTEMENTS)
+    dates = sorted({l[0] for lignes in etats.values() for l in lignes})
+    courant, constant = _lab("u_courants"), _lab("u_constants").format(base=base)
+    entete = [_lab("c_effet")]
+    for cle in ABATTEMENTS:
+        entete += [f"{_lab('court_' + cle)}<br>({courant})",
+                   f"{_lab('court_' + cle)}<br>({constant})"]
+    md = ["| " + " | ".join(entete) + " |", "|---" + "|---:" * (len(entete) - 1) + "|"]
+    for date in dates:
+        an = int(date[:4])
+        cases = [f"[{date_longue(date)}]{{.insecable}}"]
+        for cle in ABATTEMENTS:
+            v = figtools.valeur_escalier(etats.get(cle, []), date)
+            cases += (["—", "—"] if v is None
+                      else [_d(v), _d(round(v * ipc[base] / ipc[an], -1))])
+        md.append("| " + " | ".join(cases) + " |")
+    return "\n".join(md)
+
+
+_MOIS = {"fr": ("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août",
+                "septembre", "octobre", "novembre", "décembre"),
+         "ar": ("جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان", "جويلية", "أوت",
+                "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر")}
+
+
+def date_longue(date: str) -> str:
+    """« 1998-08-17 » -> « 17 août 1998 » ; le 1er du mois en « 1^er^ » en français."""
+    a, m, j = int(date[:4]), int(date[5:7]), int(date[8:10])
+    langue = figtools.lang() if figtools.lang() in _MOIS else "fr"
+    jour = "1^er^" if j == 1 and langue == "fr" else str(j)
+    return f"{jour} {_MOIS[langue][m - 1]} {a}"
+
+
+_L.update({
+    "u_courants": {"fr": "D courants", "ar": "د جارية"},
+    "u_constants": {"fr": "D de {base}", "ar": "د {base}"},
+    "court_par_enfant_ascendant_conjoint": {"fr": "Abattement par tête", "ar": "الطرح عن كلّ فرد"},
+    "court_plafond": {"fr": "Plafond", "ar": "السقف"},
+    "court_supplement_heritier_handicape": {"fr": "Supplément par héritier handicapé",
+                                            "ar": "الإضافة عن كلّ وارث ذي إعاقة"},
+})

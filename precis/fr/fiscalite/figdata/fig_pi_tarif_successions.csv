@@ -1,0 +1,31 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-18
+# séries (tunisia_data) : successions-tarif
+# sources (citation) : @lf-1984, @loi-93-53-cdet, @loi-98-73
+# fiches : 
+# méthode/hypothèses : La figure commence au barème de 1984 ; ceux de 1969 et de 1975 sont au tableau des barèmes successoraux du chapitre. Le texte de 1984 fixe un taux par tranche de part nette : la figure donne ce taux, non un taux moyen ni un montant d'impôt. Depuis 1993, le même taux vaut pour les donations ; les donations familiales sont au droit fixe depuis 2006.
+# note : Mutations par décès : taux du droit d'enregistrement selon la part nette et la parenté, au 1^er^ janvier 1984, au 17 mai 1993 et au 17 août 1998
+Parenté,Tranche de part nette (D),Taux au 1er janvier 1984 (%),Taux au 17 mai 1993 (%),Taux au 17 août 1998 (%)
+Ligne directe et époux,0 – 5 000,6.0,5.0,2.5
+Ligne directe et époux,5 000 – 10 000,8.0,5.0,2.5
+Ligne directe et époux,10 000 – 15 000,10.0,5.0,2.5
+Ligne directe et époux,15 000 – 45 000,13.0,5.0,2.5
+Ligne directe et époux,45 000 – 90 000,18.0,5.0,2.5
+Ligne directe et époux,plus de 90 000,25.0,5.0,2.5
+Frères et sœurs,0 – 5 000,20.0,5.0,5.0
+Frères et sœurs,5 000 – 10 000,25.0,5.0,5.0
+Frères et sœurs,10 000 – 15 000,30.0,5.0,5.0
+Frères et sœurs,15 000 – 45 000,36.0,5.0,5.0
+Frères et sœurs,45 000 – 90 000,42.0,5.0,5.0
+Frères et sœurs,plus de 90 000,50.0,5.0,5.0
+"Oncles, neveux et cousins",0 – 5 000,25.0,25.0,25.0
+"Oncles, neveux et cousins",5 000 – 10 000,35.0,25.0,25.0
+"Oncles, neveux et cousins",10 000 – 15 000,45.0,25.0,25.0
+"Oncles, neveux et cousins",15 000 – 45 000,55.0,25.0,25.0
+"Oncles, neveux et cousins",45 000 – 90 000,65.0,25.0,25.0
+"Oncles, neveux et cousins",plus de 90 000,75.0,25.0,25.0
+Au-delà du quatrième degré et non-parents,0 – 5 000,35.0,35.0,35.0
+Au-delà du quatrième degré et non-parents,5 000 – 10 000,45.0,35.0,35.0
+Au-delà du quatrième degré et non-parents,10 000 – 15 000,55.0,35.0,35.0
+Au-delà du quatrième degré et non-parents,15 000 – 45 000,65.0,35.0,35.0
+Au-delà du quatrième degré et non-parents,45 000 – 90 000,75.0,35.0,35.0
+Au-delà du quatrième degré et non-parents,plus de 90 000,85.0,35.0,35.0

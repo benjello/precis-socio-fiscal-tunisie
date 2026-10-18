@@ -1,0 +1,10 @@
+- libelle: Droit sur les successions — Abattement par enfant, ascendant à charge ou
+    conjoint survivant
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/abattement/par_enfant_ascendant_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_enregistrement.successions.abattement.par_enfant_ascendant_conjoint/table/
+- libelle: Droit sur les successions — Plafond de l'abattement total
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/abattement/plafond.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_enregistrement.successions.abattement.plafond/table/
+- libelle: Droit sur les successions — Abattement supplémentaire par héritier handicapé
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/abattement/supplement_heritier_handicape.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_enregistrement.successions.abattement.supplement_heritier_handicape/table/
