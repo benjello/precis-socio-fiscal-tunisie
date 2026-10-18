@@ -118,6 +118,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Cotisation supplémentaire | الاشتراك الإضافي |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
 | Coût du travail | كلفة العمل |  |
+| Coût marginal des fonds publics | الكلفة الحدية للأموال العمومية |  |
 | Crédit de taxe sur la valeur ajoutée | فائض الأداء على القيمة المضافة |  |
 | Décentralisation | اللامركزية |  |
 | Déconcentration | اللامحورية |  |
@@ -206,6 +207,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Impôt sur la fortune immobilière | الضريبة على الثروة العقارية |  |
 | Impôt sur le revenu des personnes physiques | الضريبة على دخل الأشخاص الطبيعيين | IRPP |
 | Impôt sur les sociétés | الضريبة على الشركات | IS |
+| Impôt sur les transactions | الأداء على المعاملات |  |
 | Impôts directs | الأداءات المباشرة |  |
 | Impôts indirects | الأداءات والمعاليم غير المباشرة |  |
 | Imputation du droit de consommation | خصم المعلوم على الاستهلاك |  |
@@ -260,6 +262,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation financière | التعديل المالي |  |
 | Perte sèche | الخسارة الصافية في الرفاه |  |
 | Plus-value immobilière | القيمة الزائدة العقارية |  |
+| Plus-value nominale | القيمة الزائدة الاسمية |  |
 | Politique active de l'emploi | السياسة النشيطة للتشغيل |  |
 | Position tarifaire | البند التعريفي |  |
 | Potentiel fiscal | الطاقة الجبائية |  |

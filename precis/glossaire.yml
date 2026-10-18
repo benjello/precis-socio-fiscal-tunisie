@@ -10966,7 +10966,7 @@ entries:
     acronyme: null
     statut: provisoire
     references: [kleven-2016-bunching, kopczuk-munroe-2015-mansion-tax, best-kleven-2018-housing-transaction-taxes]
-    source_definition: {ref: kleven-2016-bunching, locator: "p. 1 et 7"}
+    source_definition: {ref: kleven-2016-bunching, locator: "p. 436 et 441-442"}
     voir_aussi: [seuil-a-changement-de-taux, regroupement-seuil, droit-complementaire-immeubles]
     fr:
       terme: Seuil à saut
@@ -10992,7 +10992,7 @@ entries:
     acronyme: null
     statut: provisoire
     references: [kleven-2016-bunching]
-    source_definition: {ref: kleven-2016-bunching, locator: "p. 1"}
+    source_definition: {ref: kleven-2016-bunching, locator: "p. 436"}
     voir_aussi: [seuil-a-saut, taux-marginal, regroupement-seuil]
     fr:
       terme: Seuil à changement de taux
@@ -11016,7 +11016,7 @@ entries:
     acronyme: null
     statut: provisoire
     references: [kleven-2016-bunching, best-kleven-2018-housing-transaction-taxes]
-    source_definition: {ref: kleven-2016-bunching, locator: "p. 1"}
+    source_definition: {ref: kleven-2016-bunching, locator: "p. 436"}
     voir_aussi: [seuil-a-saut, seuil-a-changement-de-taux, sous-declaration]
     fr:
       terme: Regroupement
@@ -11159,4 +11159,86 @@ entries:
         مراجعة ميرليس (Mirrlees Review، 2011)، يتحمّل الأداءَ من يُنقص من رفاهه،
         وليس بالضرورة من يدفعه؛ وحسب ألم وأنيز ومودي (2004)، يتوقّف توزيع معلوم
         نقل الملكية بين المشتري والبائع على مرونة الطلب والعرض.
+      synonymes: []
+
+  - id: impot-transactions
+    acronyme: null
+    statut: provisoire
+    references: [mirrlees-et-al-2011-tax-by-design]
+    source_definition: {ref: mirrlees-et-al-2011-tax-by-design, locator: "p. 151-152 et 403"}
+    voir_aussi: [droit-mutation, perte-seche, capitalisation-impot]
+    fr:
+      terme: Impôt sur les transactions
+      definition: >
+        Impôt assis sur l'échange d'un bien — action, immeuble, terrain — plutôt
+        que sur sa détention ou sur le revenu qu'il procure (*transactions tax*).
+        Selon la *Mirrlees Review* (2011), un tel impôt réduit le nombre des
+        échanges profitables aux deux parties, de sorte que les biens ne sont plus
+        nécessairement détenus par ceux qui leur accordent le plus de valeur ; il
+        pèse d'autant plus sur un bien que celui-ci change souvent de mains. Le
+        droit de mutation sur les immeubles en est un exemple.
+      synonymes: []
+    ar:
+      terme: الأداء على المعاملات
+      definition: >
+        أداء يُوظَّف على تبادل مال — سهم أو عقار أو أرض — لا على حيازته ولا على
+        الدخل الذي يدرّه (transactions tax). وحسب مراجعة ميرليس (Mirrlees
+        Review، 2011)، يقلّص هذا الأداء عدد المبادلات المفيدة للطرفين، فلا تبقى
+        الأموال بالضرورة بيد من يمنحها أكبر قيمة؛ ويثقل على المال بقدر تكرّر
+        انتقاله من يد إلى أخرى. ومعلوم نقل ملكية العقارات مثال على ذلك.
+      synonymes: []
+
+  # Määttänen et Terviö : pages de la version de travail récupérée (note CSL).
+  - id: cout-marginal-fonds-publics
+    acronyme: null
+    statut: provisoire
+    references: [maattanen-tervio-2022-welfare-transaction-taxes]
+    source_definition: {ref: maattanen-tervio-2022-welfare-transaction-taxes, locator: "p. 2 et 20"}
+    voir_aussi: [perte-seche, impot-transactions]
+    fr:
+      terme: Coût marginal des fonds publics
+      definition: >
+        Coût en bien-être, pour les contribuables, d'un dinar de recette
+        supplémentaire procuré par une hausse de l'impôt (*marginal cost of public
+        funds*, MCPF). Il vaut un pour un impôt qui ne modifie aucun comportement ;
+        l'excédent sur un mesure la perte sèche de la dernière unité de recette.
+        Selon Määttänen et Terviö (2022), il est d'environ 1,3 pour un droit de
+        mutation de 2 %, dans un modèle du marché du logement d'Helsinki, et dépasse
+        3 à un taux de 7 %.
+      synonymes: []
+    ar:
+      terme: الكلفة الحدية للأموال العمومية
+      definition: >
+        الكلفة في الرفاه، على المطالبين بالأداء، لكلّ دينار إضافي من المداخيل
+        يوفّره الترفيع في الأداء (marginal cost of public funds، MCPF). وتساوي
+        واحدًا لأداء لا يغيّر أيّ سلوك؛ ويقيس ما يزيد على الواحد الخسارة الصافية
+        في الرفاه لآخر وحدة من المداخيل. وحسب ماتانن وتيرفيو (2022)، تبلغ نحو 1,3
+        لمعلوم نقل ملكية بنسبة 2 %، في نموذج لسوق السكن في هلسنكي، وتتجاوز 3
+        عند نسبة 7 %.
+      synonymes: []
+
+  - id: plus-value-nominale
+    acronyme: null
+    statut: provisoire
+    references: [mirrlees-et-al-2011-tax-by-design]
+    source_definition: {ref: mirrlees-et-al-2011-tax-by-design, locator: "p. 325 et 489"}
+    voir_aussi: [plus-value-immobiliere, effet-de-verrouillage]
+    fr:
+      terme: Plus-value nominale
+      definition: >
+        Écart entre le prix de cession d'un bien et son prix d'acquisition, l'un et
+        l'autre en dinars courants (*nominal gain*). La plus-value réelle
+        (*real gain*) est cet écart corrigé de la hausse générale des prix pendant
+        la détention. Selon la *Mirrlees Review* (2011), un impôt qui frappe la
+        plus-value nominale, sans correction de l'inflation, a un taux effectif
+        très sensible à l'inflation.
+      synonymes: [Gain nominal]
+    ar:
+      terme: القيمة الزائدة الاسمية
+      definition: >
+        الفارق بين ثمن تفويت مال وثمن اقتنائه، كلاهما بالدينار الجاري (nominal
+        gain). والقيمة الزائدة الحقيقية (real gain) هي هذا الفارق بعد طرح أثر
+        الارتفاع العامّ للأسعار طيلة مدّة الحيازة. وحسب مراجعة ميرليس (Mirrlees
+        Review، 2011)، تكون النسبة الفعلية لأداء يُوظَّف على القيمة الزائدة الاسمية،
+        دون تعديل بحسب التضخّم، شديدة التأثّر بالتضخّم.
       synonymes: []
