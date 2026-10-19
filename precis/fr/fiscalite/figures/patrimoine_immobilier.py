@@ -259,6 +259,9 @@ SERIE_SUCC_ABATTEMENTS = "successions-abattements"
 PARENTES = ("ligne_directe_epoux", "freres_soeurs", "oncles_neveux_cousins",
             "au_dela_quatrieme_degre")
 ETATS_TARIF = ("1984-01-01", "1993-05-17", "1998-08-17")
+# Le texte de 1984 fixe un taux par tranche sans dire comment il s'applique : la figure n'en
+# trace que le taux de la tranche, sans courbe de taux moyen.
+SANS_MOYEN = ("1984-01-01",)
 COULEURS_ETATS = {"1984-01-01": "#bf8700", "1993-05-17": "#0969da", "1998-08-17": "#1a7f37"}
 # Bord droit de l'axe : la dernière tranche de 1984 commence à 90 000 D et n'a pas de borne.
 PART_MAX = 120_000
@@ -286,11 +289,10 @@ _L.update({
     "x_part": {"fr": "Part nette recueillie par l'ayant droit (dinars courants)",
                "ar": "الحصة الصافية الراجعة لصاحب الحقّ (بالدينار الجاري)"},
     "y_tarif": {"fr": "Taux (%)", "ar": "النسبة (%)"},
-    "title_tarif": {"fr": ("Mutations par décès : taux marginal et taux moyen du droit "
-                           "d'enregistrement selon la part nette et la parenté, en 1984, 1993 "
-                           "et 1998"),
-                    "ar": ("نقل الملكية بالوفاة: النسبة الحدية والنسبة المتوسّطة لمعلوم "
-                           "التسجيل حسب الحصة الصافية ودرجة القرابة، في 1984 و1993 و1998")},
+    "title_tarif": {"fr": ("Mutations par décès : taux du droit d'enregistrement selon la "
+                           "part nette et la parenté, en 1984, 1993 et 1998"),
+                    "ar": ("نقل الملكية بالوفاة: نسب معلوم التسجيل حسب الحصة الصافية "
+                           "ودرجة القرابة، في 1984 و1993 و1998")},
 })
 
 figtools.register_provenance(
@@ -310,13 +312,12 @@ figtools.register_provenance(
     perimetre_ar=("أربع درجات قرابة؛ سطر لكلّ شريحة ولكلّ تاريخ نفاذ، مع نصّ الرائد الرسمي "
                   "الذي يضبطها؛ والشريحة الملغاة في 17 ماي 1993 لا عتبة لها ولا نسبة"),
     caveats=("La figure commence au barème de 1984 ; les barèmes de 1969 et de 1975 sont au "
-             "tableau des barèmes successoraux du chapitre. Le taux moyen est calculé "
-             "barème appliqué par tranche : chaque fraction de part supporte le taux de sa "
-             "tranche. Depuis 1993, le même taux vaut pour les donations ; "
+             "tableau des barèmes successoraux du chapitre. Pour 1984, la figure donne le "
+             "taux de la tranche où tombe la part. Depuis 1993, le taux est unique et vaut aussi "
+             "pour les donations ; "
              "les donations familiales sont au droit fixe depuis 2006."),
     caveats_ar=("تبدأ الرسوم بتعريفة 1984؛ أمّا تعريفتا 1969 و1975 ففي جدول تعريفات التركات "
-                "من الفصل. تُحتسب النسبة المتوسّطة بتطبيق الجدول حسب الشرائح: يتحمّل "
-                "كلّ جزء من الحصة نسبة شريحته. ومنذ 1993 تسري النسبة ذاتها على الهبات؛ وتخضع الهبات "
+                "من الفصل. وتعرض الرسوم لسنة 1984 نسبة الشريحة التي تقع فيها الحصة. ومنذ 1993 تسري النسبة ذاتها على الهبات؛ وتخضع الهبات "
                 "العائلية لمعلوم قارّ منذ 2006."),
 )
 
@@ -341,14 +342,15 @@ def fig_tarif_successions():
         _panneaux_successions(), couleurs=COULEURS_ETATS,
         libelles_etats={e: _lab("etat_" + e) for e in ETATS_TARIF},
         assiette_max=PART_MAX, xlabel=_lab("x_part"), ylabel=_lab("y_tarif"),
-        titre=_lab("title_tarif"), xticks=(0, 15_000, 45_000, 90_000, PART_MAX), ymax=92)
+        titre=_lab("title_tarif"), xticks=(0, 15_000, 45_000, 90_000, PART_MAX), ymax=92,
+        sans_moyen=SANS_MOYEN)
 
 
 def table_tarif_successions():
     """Par parenté et par part nette : taux marginal et taux moyen à chaque date."""
     return taux_bareme.table_taux(
         _panneaux_successions(), {e: _lab("court_" + e) for e in ETATS_TARIF}, PARTS_TABLE,
-        entete_panneau=_lab("c_parente"), entete_assiette=_lab("c_part"))
+        entete_panneau=_lab("c_parente"), entete_assiette=_lab("c_part"), sans_moyen=SANS_MOYEN)
 
 
 # --- Les abattements sur les successions, en dinars courants et en dinars constants -------

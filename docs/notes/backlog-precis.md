@@ -667,9 +667,12 @@ liste qui suit le tableau, citations comprises. Restent :
   segment par texte en vigueur) ; `tbl-pi-abattements-successions` désormais engendré, avec ses
   colonnes en dinars de 2025 (TODO rédacteur levé). Séries `successions-tarif` et
   `successions-abattements` émises par `scripts/generate_bareme_tables.py` (openfisca-tunisia
-  ≥ 0.136). Reste : le mode de liquidation du barème de 1984 (TODO documentaliste à côté de la
-  figure) ; le taux moyen de 1984 est calculé barème appliqué par tranche — si le texte établit
-  le taux de la tranche atteinte appliqué à toute la part, retirer la courbe de 1984.
+  ≥ 0.136). Reste : le mode de liquidation du barème de 1984, qu'aucun texte de 1962 à 1984 ne
+  dit (note `docs/notes/successions-liquidation-1969-1984.md`, fiche
+  `r-liquidation-successions-1929`) : la figure ne trace que le taux de la tranche pour 1984 ;
+  lire le décret du 28 décembre 1929 (Revue algérienne, tunisienne et marocaine de législation,
+  1930, Gallica `bpt6k442529z`), puis rétablir la courbe du taux moyen ou ajouter le mode
+  « tranche atteinte ».
   Glossaire de la section (18 octobre 2026) : huit notions ancrées et définies, au statut
   `provisoire` — seuil à saut, seuil à changement de taux, regroupement, sous-déclaration, effet
   de verrouillage, capitalisation d'un impôt, perte sèche, incidence fiscale. Restent : termes
