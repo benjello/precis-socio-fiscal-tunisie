@@ -46,6 +46,7 @@ _SCRIPTS = Path(__file__).resolve().parents[4] / "scripts"
 sys.path.insert(0, str(_SCRIPTS))
 import dinars_constants  # noqa: E402
 import figtools  # noqa: E402
+import taux_bareme  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 FIGDATA = HERE.parent / "figdata"
@@ -236,16 +237,21 @@ def valeurs_reelles(types=TYPES):
 # --- Les mutations par décès : le tarif selon la parenté et la part nette -----------------
 #
 # UN BARÈME, PAS UNE SÉRIE TEMPORELLE. L'abscisse est la part nette recueillie par l'ayant
-# droit, en dinars ; l'ordonnée, le taux que le texte fixe pour la tranche où tombe cette
-# part. Trois états du droit, un cadre par degré de parenté :
-#   - au 1er janvier 1984 (loi de finances pour 1984, art. 12) : six tranches, en escalier ;
+# droit, en dinars ; l'ordonnée, un taux en pour cent. Trois états du droit, un cadre par
+# degré de parenté :
+#   - au 1er janvier 1984 (loi de finances pour 1984, art. 12) : six tranches ;
 #   - au 17 mai 1993 (code des droits d'enregistrement et de timbre, art. 20, n° 16) : un taux
-#     unique, trait horizontal sur tout l'axe ;
+#     unique, sur toute la part ;
 #   - au 17 août 1998 (loi n° 98-73, art. 8) : la ligne directe passe à 2,5 % ; les autres
-#     taux de 1993 demeurent, et le trait de 1998 se superpose à celui de 1993.
-# LE TAUX FIXÉ POUR LA TRANCHE, RIEN D'AUTRE. Le texte de 1984 fixe un taux par tranche sans
-# dire s'il frappe la seule fraction de part comprise dans la tranche, ou la part entière :
-# la figure ne calcule donc ni taux moyen ni impôt, et ses libellés ne disent pas « marginal ».
+#     taux de 1993 demeurent, et le trait de 1998 se superpose, en tireté, à celui de 1993.
+# TAUX MARGINAL ET TAUX MOYEN, BARÈME APPLIQUÉ PAR TRANCHE. Le composant commun
+# (`scripts/taux_bareme.py`) trace le taux de la tranche en escalier et le taux moyen —
+# droit rapporté à la part nette — en courbe. Le taux moyen de 1984 suppose que chaque
+# fraction de part supporte le taux de sa tranche. Le texte de 1984 ne le dit pas : le mode
+# de liquidation est à établir sur le décret du 28 décembre 1929 (TODO du documentaliste
+# dans le chapitre, docs/notes/successions-bareme-1985-1993.md, § 5). Si le taux de la
+# tranche atteinte frappait la part entière, le taux moyen de 1984 serait l'escalier
+# lui-même : retirer alors la courbe de 1984 et revoir la note de lecture.
 # La série est celle du générateur (`successions-tarif`, tranche par tranche).
 SERIE_SUCC_TARIF = "successions-tarif"
 SERIE_SUCC_ABATTEMENTS = "successions-abattements"
@@ -256,6 +262,8 @@ ETATS_TARIF = ("1984-01-01", "1993-05-17", "1998-08-17")
 COULEURS_ETATS = {"1984-01-01": "#bf8700", "1993-05-17": "#0969da", "1998-08-17": "#1a7f37"}
 # Bord droit de l'axe : la dernière tranche de 1984 commence à 90 000 D et n'a pas de borne.
 PART_MAX = 120_000
+# Assiettes du tableau de données : les seuils de 1984 et le bord de l'axe.
+PARTS_TABLE = (5_000, 10_000, 15_000, 45_000, 90_000, PART_MAX)
 
 _L.update({
     "ligne_directe_epoux": {"fr": "Ligne directe et époux", "ar": "الخط المباشر والزوجان"},
@@ -270,22 +278,19 @@ _L.update({
                         "ar": "17 ماي 1993: نسبة وحيدة (مجلة معاليم التسجيل)"},
     "etat_1998-08-17": {"fr": "17 août 1998 : taux unique (loi n° 98-73)",
                         "ar": "17 أوت 1998: نسبة وحيدة (القانون عدد 98-73)"},
-    "inchange_1998": {"fr": "inchangé en 1998", "ar": "دون تغيير سنة 1998"},
-    "au_dela": {"fr": "au-delà\nde 90 000 D", "ar": "ما يتجاوز\n90 000 د"},
+    "c_parente": {"fr": "Parenté", "ar": "القرابة"},
+    "c_part": {"fr": "Part nette (D)", "ar": "الحصة الصافية (د)"},
+    "court_1984-01-01": {"fr": "1984", "ar": "1984"},
+    "court_1993-05-17": {"fr": "1993", "ar": "1993"},
+    "court_1998-08-17": {"fr": "1998", "ar": "1998"},
     "x_part": {"fr": "Part nette recueillie par l'ayant droit (dinars courants)",
                "ar": "الحصة الصافية الراجعة لصاحب الحقّ (بالدينار الجاري)"},
-    "y_tarif": {"fr": "Taux fixé pour la tranche (%)", "ar": "النسبة المحدَّدة للشريحة (%)"},
-    "title_tarif": {"fr": ("Mutations par décès : taux du droit d'enregistrement selon la part "
-                           "nette et la parenté, en 1984, 1993 et 1998"),
-                    "ar": ("نقل الملكية بالوفاة: نسبة معلوم التسجيل حسب الحصة الصافية ودرجة "
-                           "القرابة، في 1984 و1993 و1998")},
-    "c_parente": {"fr": "Parenté", "ar": "القرابة"},
-    "c_tranche": {"fr": "Tranche de part nette (D)", "ar": "شريحة الحصة الصافية (د)"},
-    "c_etat_1984-01-01": {"fr": "Taux au 1er janvier 1984 (%)",
-                          "ar": "النسبة في 1 جانفي 1984 (%)"},
-    "c_etat_1993-05-17": {"fr": "Taux au 17 mai 1993 (%)", "ar": "النسبة في 17 ماي 1993 (%)"},
-    "c_etat_1998-08-17": {"fr": "Taux au 17 août 1998 (%)", "ar": "النسبة في 17 أوت 1998 (%)"},
-    "plus_de": {"fr": "plus de {a}", "ar": "أكثر من {a}"},
+    "y_tarif": {"fr": "Taux (%)", "ar": "النسبة (%)"},
+    "title_tarif": {"fr": ("Mutations par décès : taux marginal et taux moyen du droit "
+                           "d'enregistrement selon la part nette et la parenté, en 1984, 1993 "
+                           "et 1998"),
+                    "ar": ("نقل الملكية بالوفاة: النسبة الحدية والنسبة المتوسّطة لمعلوم "
+                           "التسجيل حسب الحصة الصافية ودرجة القرابة، في 1984 و1993 و1998")},
 })
 
 figtools.register_provenance(
@@ -295,124 +300,55 @@ figtools.register_provenance(
     titre_ar=("تعريفة معلوم التسجيل على نقل الملكية بالوفاة، حسب درجة القرابة وشريحة الحصة "
               "الصافية، عند كلّ تاريخ نفاذ منذ 1 جانفي 1984"),
     sources=["lf-1984", "loi-93-53-cdet", "loi-98-73"],
-    unite="taux fixé pour la tranche, en pourcentage de la part nette",
-    unite_ar="النسبة المحدَّدة للشريحة، بالمائة من الحصة الصافية",
+    unite=("taux fixé pour la tranche (taux marginal) et taux moyen, en pourcentage de la "
+           "part nette, elle-même en dinars courants"),
+    unite_ar=("النسبة المحدَّدة للشريحة (النسبة الحدية) والنسبة المتوسّطة، بالمائة من "
+              "الحصة الصافية؛ والحصة الصافية بالدينار الجاري"),
     perimetre=("quatre degrés de parenté ; une ligne par tranche et par date d'effet, avec le "
                "texte du Journal officiel qui la fixe ; une tranche close au 17 mai 1993 n'a "
                "plus ni seuil ni taux"),
     perimetre_ar=("أربع درجات قرابة؛ سطر لكلّ شريحة ولكلّ تاريخ نفاذ، مع نصّ الرائد الرسمي "
                   "الذي يضبطها؛ والشريحة الملغاة في 17 ماي 1993 لا عتبة لها ولا نسبة"),
     caveats=("La figure commence au barème de 1984 ; ceux de 1969 et de 1975 sont au tableau "
-             "des barèmes successoraux du chapitre. Le texte de 1984 fixe un taux par tranche "
-             "de part nette : la figure donne ce taux, non un taux moyen ni un montant d'impôt. "
-             "Depuis 1993, le même taux vaut pour les donations ; les donations familiales "
-             "sont au droit fixe depuis 2006."),
+             "des barèmes successoraux du chapitre. Le taux moyen est calculé "
+             "barème appliqué par tranche : chaque fraction de part supporte le taux de sa "
+             "tranche. Depuis 1993, le même taux vaut pour les donations ; "
+             "les donations familiales sont au droit fixe depuis 2006."),
     caveats_ar=("تبدأ الرسوم بتعريفة 1984؛ أمّا تعريفتا 1969 و1975 ففي جدول تعريفات التركات "
-                "من الفصل. يضبط نصّ 1984 نسبة لكلّ شريحة من الحصة الصافية: تعطي الرسوم هذه "
-                "النسبة، لا نسبة متوسّطة ولا مبلغ أداء. ومنذ 1993 تسري النسبة ذاتها على "
-                "الهبات؛ وتخضع الهبات العائلية لمعلوم قارّ منذ 2006."),
+                "من الفصل. تُحتسب النسبة المتوسّطة بتطبيق الجدول حسب الشرائح: يتحمّل "
+                "كلّ جزء من الحصة نسبة شريحته. ومنذ 1993 تسري النسبة ذاتها على الهبات؛ وتخضع الهبات "
+                "العائلية لمعلوم قارّ منذ 2006."),
 )
 
 
 def _bareme_a(d, parente: str, date: str) -> list[tuple[float, float]]:
     """Tranches (seuil, taux) en vigueur à `date` pour une parenté, seuil croissant."""
-    sous = d[(d["parente"] == parente) & (d["date_effet"] <= date)]
-    tranches = []
-    for _t, lignes in sous.sort_values("date_effet").groupby("tranche"):
-        derniere = lignes.iloc[-1]
-        if derniere["taux"] == derniere["taux"]:  # tranche close : taux vide (NaN)
-            tranches.append((float(derniere["seuil"]), float(derniere["taux"])))
-    return sorted(tranches)
+    return taux_bareme.bareme_a_la_date(d, "parente", parente, date)
 
 
 def _d(v: float) -> str:
-    return f"{v:,.0f}".replace(",", " ")
+    return f"{v:,.0f}".replace(",", " ")
 
 
-def _pct_fr(v: float) -> str:
-    return f"{100 * v:g}".replace(".", ",") + " %"
+def _panneaux_successions():
+    d = figtools.series(SERIE_SUCC_TARIF)
+    return [(_lab(p), {date: _bareme_a(d, p, date) for date in ETATS_TARIF}) for p in PARENTES]
 
 
 def fig_tarif_successions():
-    """Quatre cadres, un par parenté : barème de 1984 en escalier, taux uniques de 1993, 1998."""
-    figtools.apply_lang_font()
-    ft = figtools.fig_text
-    from matplotlib.lines import Line2D
-
-    d = figtools.series(SERIE_SUCC_TARIF)
-    fig, axes = plt.subplots(2, 2, figsize=(10.5, 7.2), sharey=True)
-    for ax, parente in zip(axes.flat, PARENTES):
-        etats = {date: _bareme_a(d, parente, date) for date in ETATS_TARIF}
-        for date in ETATS_TARIF:
-            tranches, c = etats[date], COULEURS_ETATS[date]
-            identique = date == "1998-08-17" and tranches == etats["1993-05-17"]
-            for i, (seuil, taux) in enumerate(tranches):
-                fin = tranches[i + 1][0] if i + 1 < len(tranches) else PART_MAX
-                ls, lw = ((0, (4, 3)), 1.6) if identique else ("-", 2.2)
-                seg, = ax.plot([seuil, fin], [100 * taux, 100 * taux], color=c, lw=lw, ls=ls,
-                               solid_capstyle="butt", zorder=3 if identique else 2)
-                if i + 1 < len(tranches):
-                    ax.plot([fin, fin], [100 * taux, 100 * tranches[i + 1][1]], color=c,
-                            lw=1.1, zorder=2)
-                borne = (ft(_lab("plus_de").format(a=_d(seuil))) if fin == PART_MAX
-                         and len(tranches) > 1 else f"{_d(seuil)} – {_d(fin)} D")
-                if len(tranches) == 1:
-                    borne = ft({"fr": "toute la part", "ar": "كامل الحصة"}[figtools.lang()])
-                figtools.infobulle(seg, f"{_lab(parente)} · {_lab('etat_' + date)} · "
-                                        f"{borne} : {_pct_fr(taux)}")
-            if len(tranches) == 1:
-                texte = _pct_fr(tranches[0][1])
-                if identique:
-                    texte = _lab("inchange_1998")
-                dy = -11 if date == "1998-08-17" else 4
-                ax.annotate(ft(texte), xy=(PART_MAX, 100 * tranches[0][1]), xytext=(-3, dy),
-                            textcoords="offset points", ha="right", va="bottom",
-                            fontsize=7.5, color=c, fontweight="bold")
-        for seuil, taux in etats["1984-01-01"]:
-            ax.annotate(ft(f"{100 * taux:g}".replace(".", ",")), xy=(seuil, 100 * taux),
-                        xytext=(2, 3), textcoords="offset points", fontsize=7,
-                        color=COULEURS_ETATS["1984-01-01"])
-        ax.axvspan(90_000, PART_MAX, color="#8b949e", alpha=0.08, lw=0)
-        ax.annotate(ft(_lab("au_dela")), xy=(105_000, 1), xycoords=("data", "axes fraction"),
-                    xytext=(0, -4), textcoords="offset points", ha="center", va="top",
-                    fontsize=7, color="#57606a")
-        ax.set_title(ft(_lab(parente)), fontsize=10)
-        ax.set_xlim(0, PART_MAX)
-        ax.set_ylim(0, 92)
-        ax.set_xticks([0, 15_000, 45_000, 90_000])
-        ax.set_xticklabels([ft(_d(x)) for x in (0, 15_000, 45_000, 90_000)], fontsize=8)
-        ax.grid(True, axis="y", alpha=0.3)
-    for ax in axes[1]:
-        ax.set_xlabel(ft(_lab("x_part")), fontsize=8.5)
-    for ax in axes[:, 0]:
-        ax.set_ylabel(ft(_lab("y_tarif")))
-    poignees = [Line2D([], [], color=COULEURS_ETATS[e], lw=2.2) for e in ETATS_TARIF]
-    fig.legend(poignees, [ft(_lab("etat_" + e)) for e in ETATS_TARIF], loc="lower center",
-               ncol=1, fontsize=8, frameon=False)
-    fig.suptitle(ft(_lab("title_tarif")), fontsize=11)
-    fig.tight_layout(rect=(0, 0.09, 1, 0.96))
-    return fig
+    """Quatre cadres, un par parenté : taux marginal en escalier, taux moyen en courbe."""
+    return taux_bareme.fig_taux_moyens_marginaux(
+        _panneaux_successions(), couleurs=COULEURS_ETATS,
+        libelles_etats={e: _lab("etat_" + e) for e in ETATS_TARIF},
+        assiette_max=PART_MAX, xlabel=_lab("x_part"), ylabel=_lab("y_tarif"),
+        titre=_lab("title_tarif"), xticks=(0, 15_000, 45_000, 90_000, PART_MAX), ymax=92)
 
 
 def table_tarif_successions():
-    """Une ligne par parenté et par tranche de 1984 ; le taux à chacune des trois dates."""
-    import pandas as pd
-
-    d = figtools.series(SERIE_SUCC_TARIF)
-    lignes = []
-    for parente in PARENTES:
-        b84 = _bareme_a(d, parente, "1984-01-01")
-        uniques = {date: _bareme_a(d, parente, date) for date in ETATS_TARIF[1:]}
-        for i, (seuil, taux) in enumerate(b84):
-            fin = b84[i + 1][0] if i + 1 < len(b84) else None
-            tranche = (_lab("plus_de").format(a=_d(seuil)) if fin is None
-                       else f"{_d(seuil)} – {_d(fin)}")
-            ligne = {_lab("c_parente"): _lab(parente), _lab("c_tranche"): tranche,
-                     _lab("c_etat_1984-01-01"): round(100 * taux, 2)}
-            for date, tranches in uniques.items():
-                ligne[_lab("c_etat_" + date)] = round(100 * tranches[0][1], 2)
-            lignes.append(ligne)
-    return pd.DataFrame(lignes)
+    """Par parenté et par part nette : taux marginal et taux moyen à chaque date."""
+    return taux_bareme.table_taux(
+        _panneaux_successions(), {e: _lab("court_" + e) for e in ETATS_TARIF}, PARTS_TABLE,
+        entete_panneau=_lab("c_parente"), entete_assiette=_lab("c_part"))
 
 
 # --- Les abattements sur les successions, en dinars courants et en dinars constants -------

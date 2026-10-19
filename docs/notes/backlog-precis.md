@@ -643,14 +643,17 @@ liste qui suit le tableau, citations comprises. Restent :
   les `caveats` du catalogue (« non extraites », « seule l'édition… est retenue »), affichés tels
   quels dans l'onglet « Sources ».
   **Section « Les donations et les successions »** (18 octobre 2026) : figures
-  `fig-pi-tarif-successions` (taux fixé pour chaque tranche de part nette, quatre parentés,
-  états du 1er janvier 1984, du 17 mai 1993 et du 17 août 1998) et
+  `fig-pi-tarif-successions` (taux marginal en escalier et taux moyen en courbe selon la part
+  nette, quatre parentés, états du 1er janvier 1984, du 17 mai 1993 et du 17 août 1998 ; tracée
+  depuis le 19 octobre 2026 par le composant commun `scripts/taux_bareme.py`, voir
+  `docs/notes/taux-moyens-marginaux-baremes.md`) et
   `fig-pi-abattements-successions` (trois abattements, dinars courants et dinars de 2025, un
   segment par texte en vigueur) ; `tbl-pi-abattements-successions` désormais engendré, avec ses
   colonnes en dinars de 2025 (TODO rédacteur levé). Séries `successions-tarif` et
   `successions-abattements` émises par `scripts/generate_bareme_tables.py` (openfisca-tunisia
   ≥ 0.136). Reste : le mode de liquidation du barème de 1984 (TODO documentaliste à côté de la
-  figure) ; une fois établi, ajouter à la figure le taux moyen par part nette.
+  figure) ; le taux moyen de 1984 est calculé barème appliqué par tranche — si le texte établit
+  le taux de la tranche atteinte appliqué à toute la part, retirer la courbe de 1984.
   Glossaire de la section (18 octobre 2026) : huit notions ancrées et définies, au statut
   `provisoire` — seuil à saut, seuil à changement de taux, regroupement, sous-déclaration, effet
   de verrouillage, capitalisation d'un impôt, perte sèche, incidence fiscale. Restent : termes
