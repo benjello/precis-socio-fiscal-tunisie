@@ -1,0 +1,375 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-19
+# séries (tunisia_data) : bic-forfait-tarifs, bic-minimum-impot, bic-hypotheses-benefice, irpp-bareme, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @code-irpp-is-1990, @lf-1993, @lf-1999, @lf-2006, @lf-2011, @lf-2014, @lf-2016, @lf-2018, @lf-2023, @lf-2026, @lf-1998, @lf-2017, @lf-2025, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Le tarif de 2016 à 2023 est lu comme 3 % du chiffre d'affaires entier au-dessus de 10 000 D, d'après le texte de l'article 17 de la loi de finances pour 2016., Le taux de 0,2 % de 2014 vise le chiffre d'affaires local ; les exonérations (entreprises nouvelles, zones de développement régional) ne sont pas reprises., Le taux de 10 % n'est fixé par aucun texte., Le taux moyen est celui du barème, barème appliqué par tranche, avant déductions pour charges de famille, minimum d'impôt et régimes dérogatoires., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Bénéfices industriels et commerciaux : impôt rapporté au chiffre d'affaires selon le régime, en fonction du chiffre d'affaires en dinars de 2025, état du droit de 1990 à 2026
+Réforme,Régime,Chiffre d'affaires (D de 2025),Chiffre d'affaires (D courants),Impôt (D courants),Impôt (D de 2025),Impôt rapporté au chiffre d'affaires (%)
+1990,"forfait, consommation sur place",5000.0,973,0.0,0.0,0.0
+1990,"forfait, consommation sur place",10000.0,1947,20.0,102.74,1.03
+1990,"forfait, consommation sur place",20000.0,3894,40.0,205.47,1.03
+1990,"forfait, consommation sur place",30000.0,5840,60.0,308.21,1.03
+1990,"forfait, consommation sur place",50000.0,9734,100.0,513.68,1.03
+1990,"forfait, consommation sur place",75000.0,14601,300.0,1541.03,2.05
+1990,"forfait, consommation sur place",100000.0,19468,500.0,2568.38,2.57
+1990,"forfait, consommation sur place",150000.0,29201,,,
+1990,"forfait, services",5000.0,973,0.0,0.0,0.0
+1990,"forfait, services",10000.0,1947,30.0,154.1,1.54
+1990,"forfait, services",20000.0,3894,60.0,308.21,1.54
+1990,"forfait, services",30000.0,5840,150.0,770.51,2.57
+1990,"forfait, services",50000.0,9734,350.0,1797.87,3.6
+1990,"forfait, services",75000.0,14601,600.0,3082.06,4.11
+1990,"forfait, services",100000.0,19468,,,
+1990,"forfait, services",150000.0,29201,,,
+1990,"forfait, achat-revente et transformation",5000.0,973,0.0,0.0,0.0
+1990,"forfait, achat-revente et transformation",10000.0,1947,10.0,51.37,0.51
+1990,"forfait, achat-revente et transformation",20000.0,3894,20.0,102.74,0.51
+1990,"forfait, achat-revente et transformation",30000.0,5840,30.0,154.1,0.51
+1990,"forfait, achat-revente et transformation",50000.0,9734,90.0,462.31,0.92
+1990,"forfait, achat-revente et transformation",75000.0,14601,280.0,1438.29,1.92
+1990,"forfait, achat-revente et transformation",100000.0,19468,400.0,2054.71,2.05
+1990,"forfait, achat-revente et transformation",150000.0,29201,700.0,3595.73,2.4
+1990,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,973,4.87,25.0,0.5
+1990,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,1947,9.73,50.0,0.5
+1990,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,3894,19.47,100.0,0.5
+1990,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",30000.0,5840,29.2,150.0,0.5
+1990,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",50000.0,9734,140.02,719.23,1.44
+1990,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",75000.0,14601,322.52,1656.73,2.21
+1990,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",100000.0,19468,505.03,2594.23,2.59
+1990,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",150000.0,29201,985.06,5060.04,3.37
+1990,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",5000.0,973,4.87,25.0,0.5
+1990,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",10000.0,1947,9.73,50.0,0.5
+1990,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",20000.0,3894,19.47,100.0,0.5
+1990,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",30000.0,5840,29.2,150.0,0.5
+1990,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",50000.0,9734,48.67,250.0,0.5
+1990,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",75000.0,14601,73.0,375.0,0.5
+1990,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",100000.0,19468,97.34,500.0,0.5
+1990,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,29201,213.02,1094.23,0.73
+1993,forfait,5000.0,1154,15.0,65.0,1.3
+1993,forfait,10000.0,2308,15.0,65.0,0.65
+1993,forfait,20000.0,4615,45.0,195.01,0.98
+1993,forfait,30000.0,6923,75.0,325.02,1.08
+1993,forfait,50000.0,11538,120.0,520.04,1.04
+1993,forfait,75000.0,17306,260.0,1126.75,1.5
+1993,forfait,100000.0,23075,460.0,1993.48,1.99
+1993,forfait,150000.0,34613,,,
+1993,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,1154,5.77,25.0,0.5
+1993,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,2308,11.54,50.0,0.5
+1993,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,4615,23.08,100.0,0.5
+1993,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",30000.0,6923,34.61,150.0,0.5
+1993,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",50000.0,11538,207.66,899.93,1.8
+1993,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",75000.0,17306,423.99,1837.43,2.45
+1993,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",100000.0,23075,678.76,2941.52,2.94
+1993,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",150000.0,34613,1255.64,5441.52,3.63
+1993,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",5000.0,1154,5.77,25.0,0.5
+1993,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",10000.0,2308,11.54,50.0,0.5
+1993,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",20000.0,4615,23.08,100.0,0.5
+1993,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",30000.0,6923,34.61,150.0,0.5
+1993,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",50000.0,11538,57.69,250.0,0.5
+1993,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",75000.0,17306,86.53,375.0,0.5
+1993,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",100000.0,23075,121.13,524.93,0.52
+1993,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,34613,294.19,1274.93,0.85
+1999,forfait,5000.0,1459,15.0,51.42,1.03
+1999,forfait,10000.0,2917,15.0,51.42,0.51
+1999,forfait,20000.0,5835,45.0,154.25,0.77
+1999,forfait,30000.0,8752,75.0,257.09,0.86
+1999,forfait,50000.0,14586,180.0,617.02,1.23
+1999,forfait,75000.0,21879,460.0,1576.82,2.1
+1999,forfait,100000.0,29173,700.0,2399.51,2.4
+1999,forfait,150000.0,43759,,,
+1999,impôt forfaitaire optionnel,5000.0,1459,1500.0,5141.81,102.84
+1999,impôt forfaitaire optionnel,10000.0,2917,1500.0,5141.81,51.42
+1999,impôt forfaitaire optionnel,20000.0,5835,1500.0,5141.81,25.71
+1999,impôt forfaitaire optionnel,30000.0,8752,1500.0,5141.81,17.14
+1999,impôt forfaitaire optionnel,50000.0,14586,1500.0,5141.81,10.28
+1999,impôt forfaitaire optionnel,75000.0,21879,1500.0,5141.81,6.86
+1999,impôt forfaitaire optionnel,100000.0,29173,1500.0,5141.81,5.14
+1999,impôt forfaitaire optionnel,150000.0,43759,1500.0,5141.81,3.43
+1999,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,1459,7.29,25.0,0.5
+1999,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,2917,14.59,50.0,0.5
+1999,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,5835,29.17,100.0,0.5
+1999,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",30000.0,8752,103.19,353.73,1.18
+1999,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",50000.0,14586,321.99,1103.73,2.21
+1999,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",75000.0,21879,618.97,2121.76,2.83
+1999,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",100000.0,29173,983.63,3371.76,3.37
+1999,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",150000.0,43759,1759.93,6032.82,4.02
+1999,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",5000.0,1459,7.29,25.0,0.5
+1999,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",10000.0,2917,14.59,50.0,0.5
+1999,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",20000.0,5835,29.17,100.0,0.5
+1999,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",30000.0,8752,43.76,150.0,0.5
+1999,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",50000.0,14586,72.93,250.0,0.5
+1999,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",75000.0,21879,109.4,375.0,0.5
+1999,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",100000.0,29173,212.59,728.73,0.73
+1999,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,43759,431.38,1478.73,0.99
+2006,forfait,5000.0,1780,25.0,70.23,1.4
+2006,forfait,10000.0,3560,45.0,126.41,1.26
+2006,forfait,20000.0,7120,75.0,210.68,1.05
+2006,forfait,30000.0,10680,120.0,337.08,1.12
+2006,forfait,50000.0,17800,260.0,730.34,1.46
+2006,forfait,75000.0,26700,580.0,1629.23,2.17
+2006,forfait,100000.0,35600,,,
+2006,forfait,150000.0,53399,,,
+2006,impôt forfaitaire optionnel,5000.0,1780,1500.0,4213.52,84.27
+2006,impôt forfaitaire optionnel,10000.0,3560,1500.0,4213.52,42.14
+2006,impôt forfaitaire optionnel,20000.0,7120,1500.0,4213.52,21.07
+2006,impôt forfaitaire optionnel,30000.0,10680,1500.0,4213.52,14.05
+2006,impôt forfaitaire optionnel,50000.0,17800,1500.0,4213.52,8.43
+2006,impôt forfaitaire optionnel,75000.0,26700,1500.0,4213.52,5.62
+2006,impôt forfaitaire optionnel,100000.0,35600,1500.0,4213.52,4.21
+2006,impôt forfaitaire optionnel,150000.0,53399,1500.0,4213.52,2.81
+2006,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,1780,100.0,280.9,5.62
+2006,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,3560,100.0,280.9,2.81
+2006,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,7120,100.0,280.9,1.4
+2006,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",30000.0,10680,175.5,492.97,1.64
+2006,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",50000.0,17800,442.49,1242.97,2.49
+2006,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",75000.0,26700,859.99,2415.72,3.22
+2006,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",100000.0,35600,1304.98,3665.72,3.67
+2006,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",150000.0,53399,2362.47,6636.21,4.42
+2006,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",5000.0,1780,100.0,280.9,5.62
+2006,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",10000.0,3560,100.0,280.9,2.81
+2006,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",20000.0,7120,100.0,280.9,1.4
+2006,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",30000.0,10680,100.0,280.9,0.94
+2006,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",50000.0,17800,100.0,280.9,0.56
+2006,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",75000.0,26700,175.5,492.97,0.66
+2006,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",100000.0,35600,308.99,867.97,0.87
+2006,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,53399,592.99,1665.72,1.11
+2011,"forfait, achat-revente et transformation, hors zones communales",5000.0,2162,50.0,115.65,2.31
+2011,"forfait, achat-revente et transformation, hors zones communales",10000.0,4324,86.47,200.0,2.0
+2011,"forfait, achat-revente et transformation, hors zones communales",20000.0,8647,172.94,400.0,2.0
+2011,"forfait, achat-revente et transformation, hors zones communales",30000.0,12971,259.41,600.0,2.0
+2011,"forfait, achat-revente et transformation, hors zones communales",50000.0,21618,432.36,1000.0,2.0
+2011,"forfait, achat-revente et transformation, hors zones communales",75000.0,32427,648.53,1500.0,2.0
+2011,"forfait, achat-revente et transformation, hors zones communales",100000.0,43236,864.71,2000.0,2.0
+2011,"forfait, achat-revente et transformation, hors zones communales",150000.0,64853,1297.07,3000.0,2.0
+2011,"forfait, autres activités, hors zones communales",5000.0,2162,54.04,125.0,2.5
+2011,"forfait, autres activités, hors zones communales",10000.0,4324,108.09,250.0,2.5
+2011,"forfait, autres activités, hors zones communales",20000.0,8647,216.18,500.0,2.5
+2011,"forfait, autres activités, hors zones communales",30000.0,12971,324.27,750.0,2.5
+2011,"forfait, autres activités, hors zones communales",50000.0,21618,540.45,1250.0,2.5
+2011,"forfait, autres activités, hors zones communales",75000.0,32427,810.67,1875.0,2.5
+2011,"forfait, autres activités, hors zones communales",100000.0,43236,1080.89,2500.0,2.5
+2011,"forfait, autres activités, hors zones communales",150000.0,64853,1621.34,3750.0,2.5
+2011,"forfait, achat-revente et transformation, zones communales",5000.0,2162,100.0,231.29,4.63
+2011,"forfait, achat-revente et transformation, zones communales",10000.0,4324,100.0,231.29,2.31
+2011,"forfait, achat-revente et transformation, zones communales",20000.0,8647,172.94,400.0,2.0
+2011,"forfait, achat-revente et transformation, zones communales",30000.0,12971,259.41,600.0,2.0
+2011,"forfait, achat-revente et transformation, zones communales",50000.0,21618,432.36,1000.0,2.0
+2011,"forfait, achat-revente et transformation, zones communales",75000.0,32427,648.53,1500.0,2.0
+2011,"forfait, achat-revente et transformation, zones communales",100000.0,43236,864.71,2000.0,2.0
+2011,"forfait, achat-revente et transformation, zones communales",150000.0,64853,1297.07,3000.0,2.0
+2011,"forfait, autres activités, zones communales",5000.0,2162,100.0,231.29,4.63
+2011,"forfait, autres activités, zones communales",10000.0,4324,108.09,250.0,2.5
+2011,"forfait, autres activités, zones communales",20000.0,8647,216.18,500.0,2.5
+2011,"forfait, autres activités, zones communales",30000.0,12971,324.27,750.0,2.5
+2011,"forfait, autres activités, zones communales",50000.0,21618,540.45,1250.0,2.5
+2011,"forfait, autres activités, zones communales",75000.0,32427,810.67,1875.0,2.5
+2011,"forfait, autres activités, zones communales",100000.0,43236,1080.89,2500.0,2.5
+2011,"forfait, autres activités, zones communales",150000.0,64853,1621.34,3750.0,2.5
+2011,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,2162,200.0,462.58,9.25
+2011,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,4324,200.0,462.58,4.63
+2011,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,8647,200.0,462.58,2.31
+2011,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",30000.0,12971,261.4,604.6,2.02
+2011,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",50000.0,21618,605.89,1401.37,2.8
+2011,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",75000.0,32427,1146.34,2651.37,3.54
+2011,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",100000.0,43236,1727.23,3994.92,3.99
+2011,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",150000.0,64853,3078.34,7119.92,4.75
+2011,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",5000.0,2162,200.0,462.58,9.25
+2011,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",10000.0,4324,200.0,462.58,4.63
+2011,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",20000.0,8647,200.0,462.58,2.31
+2011,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",30000.0,12971,200.0,462.58,1.54
+2011,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",50000.0,21618,200.0,462.58,0.93
+2011,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",75000.0,32427,261.4,604.6,0.81
+2011,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",100000.0,43236,423.53,979.6,0.98
+2011,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,64853,822.07,1901.37,1.27
+2014,"forfait, achat-revente et transformation, hors zones communales",5000.0,2554,75.0,146.82,2.94
+2014,"forfait, achat-revente et transformation, hors zones communales",10000.0,5108,102.16,200.0,2.0
+2014,"forfait, achat-revente et transformation, hors zones communales",20000.0,10216,204.33,400.0,2.0
+2014,"forfait, achat-revente et transformation, hors zones communales",30000.0,15325,306.49,600.0,2.0
+2014,"forfait, achat-revente et transformation, hors zones communales",50000.0,25541,510.82,1000.0,2.0
+2014,"forfait, achat-revente et transformation, hors zones communales",75000.0,38311,766.23,1500.0,2.0
+2014,"forfait, achat-revente et transformation, hors zones communales",100000.0,51082,1021.64,2000.0,2.0
+2014,"forfait, achat-revente et transformation, hors zones communales",150000.0,76623,1532.46,3000.0,2.0
+2014,"forfait, autres activités, hors zones communales",5000.0,2554,75.0,146.82,2.94
+2014,"forfait, autres activités, hors zones communales",10000.0,5108,127.7,250.0,2.5
+2014,"forfait, autres activités, hors zones communales",20000.0,10216,255.41,500.0,2.5
+2014,"forfait, autres activités, hors zones communales",30000.0,15325,383.11,750.0,2.5
+2014,"forfait, autres activités, hors zones communales",50000.0,25541,638.52,1250.0,2.5
+2014,"forfait, autres activités, hors zones communales",75000.0,38311,957.79,1875.0,2.5
+2014,"forfait, autres activités, hors zones communales",100000.0,51082,1277.05,2500.0,2.5
+2014,"forfait, autres activités, hors zones communales",150000.0,76623,1915.57,3750.0,2.5
+2014,"forfait, achat-revente et transformation, zones communales",5000.0,2554,150.0,293.65,5.87
+2014,"forfait, achat-revente et transformation, zones communales",10000.0,5108,150.0,293.65,2.94
+2014,"forfait, achat-revente et transformation, zones communales",20000.0,10216,204.33,400.0,2.0
+2014,"forfait, achat-revente et transformation, zones communales",30000.0,15325,306.49,600.0,2.0
+2014,"forfait, achat-revente et transformation, zones communales",50000.0,25541,510.82,1000.0,2.0
+2014,"forfait, achat-revente et transformation, zones communales",75000.0,38311,766.23,1500.0,2.0
+2014,"forfait, achat-revente et transformation, zones communales",100000.0,51082,1021.64,2000.0,2.0
+2014,"forfait, achat-revente et transformation, zones communales",150000.0,76623,1532.46,3000.0,2.0
+2014,"forfait, autres activités, zones communales",5000.0,2554,150.0,293.65,5.87
+2014,"forfait, autres activités, zones communales",10000.0,5108,150.0,293.65,2.94
+2014,"forfait, autres activités, zones communales",20000.0,10216,255.41,500.0,2.5
+2014,"forfait, autres activités, zones communales",30000.0,15325,383.11,750.0,2.5
+2014,"forfait, autres activités, zones communales",50000.0,25541,638.52,1250.0,2.5
+2014,"forfait, autres activités, zones communales",75000.0,38311,957.79,1875.0,2.5
+2014,"forfait, autres activités, zones communales",100000.0,51082,1277.05,2500.0,2.5
+2014,"forfait, autres activités, zones communales",150000.0,76623,1915.57,3750.0,2.5
+2014,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,2554,300.0,587.29,11.75
+2014,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,5108,300.0,587.29,5.87
+2014,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,10216,300.0,587.29,2.94
+2014,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",30000.0,15325,349.67,684.53,2.28
+2014,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",50000.0,25541,802.05,1570.12,3.14
+2014,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",75000.0,38311,1440.57,2820.12,3.76
+2014,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",100000.0,51082,2217.62,4341.3,4.34
+2014,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",150000.0,76623,3813.93,7466.3,4.98
+2014,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",5000.0,2554,300.0,587.29,11.75
+2014,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",10000.0,5108,300.0,587.29,5.87
+2014,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",20000.0,10216,300.0,587.29,2.94
+2014,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",30000.0,15325,300.0,587.29,1.96
+2014,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",50000.0,25541,300.0,587.29,1.17
+2014,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",75000.0,38311,349.67,684.53,0.91
+2014,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",100000.0,51082,546.64,1070.12,1.07
+2014,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,76623,1057.46,2070.12,1.38
+2016,"forfait, hors zones communales",5000.0,2774,75.0,135.17,2.7
+2016,"forfait, hors zones communales",10000.0,5549,75.0,135.17,1.35
+2016,"forfait, hors zones communales",20000.0,11098,332.93,600.0,3.0
+2016,"forfait, hors zones communales",30000.0,16646,499.39,900.0,3.0
+2016,"forfait, hors zones communales",50000.0,27744,832.31,1500.0,3.0
+2016,"forfait, hors zones communales",75000.0,41616,1248.47,2250.0,3.0
+2016,"forfait, hors zones communales",100000.0,55488,1664.63,3000.0,3.0
+2016,"forfait, hors zones communales",150000.0,83231,2496.94,4500.0,3.0
+2016,"forfait, zones communales",5000.0,2774,150.0,270.33,5.41
+2016,"forfait, zones communales",10000.0,5549,150.0,270.33,2.7
+2016,"forfait, zones communales",20000.0,11098,332.93,600.0,3.0
+2016,"forfait, zones communales",30000.0,16646,499.39,900.0,3.0
+2016,"forfait, zones communales",50000.0,27744,832.31,1500.0,3.0
+2016,"forfait, zones communales",75000.0,41616,1248.47,2250.0,3.0
+2016,"forfait, zones communales",100000.0,55488,1664.63,3000.0,3.0
+2016,"forfait, zones communales",150000.0,83231,2496.94,4500.0,3.0
+2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,2774,300.0,540.66,10.81
+2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,5549,300.0,540.66,5.41
+2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,11098,300.0,540.66,2.7
+2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",30000.0,16646,399.24,719.5,2.4
+2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",50000.0,27744,912.19,1643.95,3.29
+2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",75000.0,41616,1625.98,2930.35,3.91
+2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",100000.0,55488,2492.98,4492.85,4.49
+2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",150000.0,83231,4267.36,7690.65,5.13
+2016,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",5000.0,2774,300.0,540.66,10.81
+2016,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",10000.0,5549,300.0,540.66,5.41
+2016,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",20000.0,11098,300.0,540.66,2.7
+2016,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",30000.0,16646,300.0,540.66,1.8
+2016,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",50000.0,27744,300.0,540.66,1.08
+2016,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",75000.0,41616,399.24,719.5,0.96
+2016,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",100000.0,55488,634.75,1143.95,1.14
+2016,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,83231,1189.63,2143.95,1.43
+2018,"forfait, hors zones communales",5000.0,3140,100.0,159.24,3.18
+2018,"forfait, hors zones communales",10000.0,6280,100.0,159.24,1.59
+2018,"forfait, hors zones communales",20000.0,12560,376.79,600.0,3.0
+2018,"forfait, hors zones communales",30000.0,18840,565.19,900.0,3.0
+2018,"forfait, hors zones communales",50000.0,31399,941.98,1500.0,3.0
+2018,"forfait, hors zones communales",75000.0,47099,1412.97,2250.0,3.0
+2018,"forfait, hors zones communales",100000.0,62799,1883.96,3000.0,3.0
+2018,"forfait, hors zones communales",150000.0,94198,2825.94,4500.0,3.0
+2018,"forfait, zones communales",5000.0,3140,200.0,318.48,6.37
+2018,"forfait, zones communales",10000.0,6280,200.0,318.48,3.18
+2018,"forfait, zones communales",20000.0,12560,376.79,600.0,3.0
+2018,"forfait, zones communales",30000.0,18840,565.19,900.0,3.0
+2018,"forfait, zones communales",50000.0,31399,941.98,1500.0,3.0
+2018,"forfait, zones communales",75000.0,47099,1412.97,2250.0,3.0
+2018,"forfait, zones communales",100000.0,62799,1883.96,3000.0,3.0
+2018,"forfait, zones communales",150000.0,94198,2825.94,4500.0,3.0
+2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,3140,300.0,477.72,9.55
+2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,6280,300.0,477.72,4.78
+2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,12560,300.0,477.72,2.39
+2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",30000.0,18840,300.0,477.72,1.59
+2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",50000.0,31399,740.96,1179.89,2.36
+2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",75000.0,47099,1761.44,2804.89,3.74
+2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",100000.0,62799,2781.92,4429.89,4.43
+2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",150000.0,94198,4893.87,7792.94,5.2
+2018,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",5000.0,3140,300.0,477.72,9.55
+2018,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",10000.0,6280,300.0,477.72,4.78
+2018,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",20000.0,12560,300.0,477.72,2.39
+2018,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",30000.0,18840,300.0,477.72,1.59
+2018,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",50000.0,31399,300.0,477.72,0.96
+2018,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",75000.0,47099,300.0,477.72,0.64
+2018,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",100000.0,62799,332.77,529.89,0.53
+2018,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,94198,1149.15,1829.89,1.22
+2023,"forfait, hors zones communales",5000.0,4434,200.0,225.54,4.51
+2023,"forfait, hors zones communales",10000.0,8867,200.0,225.54,2.26
+2023,"forfait, hors zones communales",20000.0,17735,532.05,600.0,3.0
+2023,"forfait, hors zones communales",30000.0,26602,798.07,900.0,3.0
+2023,"forfait, hors zones communales",50000.0,44337,1330.11,1500.0,3.0
+2023,"forfait, hors zones communales",75000.0,66506,1995.17,2250.0,3.0
+2023,"forfait, hors zones communales",100000.0,88674,2660.23,3000.0,3.0
+2023,"forfait, hors zones communales",150000.0,133011,,,
+2023,"forfait, zones communales",5000.0,4434,400.0,451.09,9.02
+2023,"forfait, zones communales",10000.0,8867,400.0,451.09,4.51
+2023,"forfait, zones communales",20000.0,17735,532.05,600.0,3.0
+2023,"forfait, zones communales",30000.0,26602,798.07,900.0,3.0
+2023,"forfait, zones communales",50000.0,44337,1330.11,1500.0,3.0
+2023,"forfait, zones communales",75000.0,66506,1995.17,2250.0,3.0
+2023,"forfait, zones communales",100000.0,88674,2660.23,3000.0,3.0
+2023,"forfait, zones communales",150000.0,133011,,,
+2023,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,4434,300.0,338.32,6.77
+2023,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,8867,300.0,338.32,3.38
+2023,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,17735,300.0,338.32,1.69
+2023,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",30000.0,26602,429.15,483.96,1.61
+2023,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",50000.0,44337,1581.91,1783.96,3.57
+2023,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",75000.0,66506,3022.87,3408.96,4.55
+2023,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",100000.0,88674,4507.19,5082.87,5.08
+2023,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",150000.0,133011,7740.9,8729.6,5.82
+2023,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",5000.0,4434,300.0,338.32,6.77
+2023,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",10000.0,8867,300.0,338.32,3.38
+2023,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",20000.0,17735,300.0,338.32,1.69
+2023,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",30000.0,26602,300.0,338.32,1.13
+2023,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",50000.0,44337,300.0,338.32,0.68
+2023,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",75000.0,66506,429.15,483.96,0.65
+2023,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",100000.0,88674,1005.53,1133.96,1.13
+2023,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,133011,2158.29,2433.96,1.62
+2026,"forfait, hors zones communales",,5000,200.0,,4.0
+2026,"forfait, hors zones communales",,10000,200.0,,2.0
+2026,"forfait, hors zones communales",,20000,600.0,,3.0
+2026,"forfait, hors zones communales",,30000,900.0,,3.0
+2026,"forfait, hors zones communales",,50000,1500.0,,3.0
+2026,"forfait, hors zones communales",,75000,2250.0,,3.0
+2026,"forfait, hors zones communales",,100000,3000.0,,3.0
+2026,"forfait, hors zones communales",,150000,,,
+2026,"forfait, zones communales",,5000,400.0,,8.0
+2026,"forfait, zones communales",,10000,400.0,,4.0
+2026,"forfait, zones communales",,20000,600.0,,3.0
+2026,"forfait, zones communales",,30000,900.0,,3.0
+2026,"forfait, zones communales",,50000,1500.0,,3.0
+2026,"forfait, zones communales",,75000,2250.0,,3.0
+2026,"forfait, zones communales",,100000,3000.0,,3.0
+2026,"forfait, zones communales",,150000,,,
+2026,impôt forfaitaire optionnel,,5000,4000.0,,80.0
+2026,impôt forfaitaire optionnel,,10000,4000.0,,40.0
+2026,impôt forfaitaire optionnel,,20000,4000.0,,20.0
+2026,impôt forfaitaire optionnel,,30000,4000.0,,13.33
+2026,impôt forfaitaire optionnel,,50000,4000.0,,8.0
+2026,impôt forfaitaire optionnel,,75000,5000.0,,6.67
+2026,impôt forfaitaire optionnel,,100000,5000.0,,5.0
+2026,impôt forfaitaire optionnel,,150000,,,
+2026,"impôt forfaitaire optionnel, campagnes et villages",,5000,2000.0,,40.0
+2026,"impôt forfaitaire optionnel, campagnes et villages",,10000,2000.0,,20.0
+2026,"impôt forfaitaire optionnel, campagnes et villages",,20000,2000.0,,10.0
+2026,"impôt forfaitaire optionnel, campagnes et villages",,30000,2000.0,,6.67
+2026,"impôt forfaitaire optionnel, campagnes et villages",,50000,2000.0,,4.0
+2026,"impôt forfaitaire optionnel, campagnes et villages",,75000,2500.0,,3.33
+2026,"impôt forfaitaire optionnel, campagnes et villages",,100000,2500.0,,2.5
+2026,"impôt forfaitaire optionnel, campagnes et villages",,150000,,,
+2026,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",,5000,300.0,,6.0
+2026,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",,10000,300.0,,3.0
+2026,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",,20000,300.0,,1.5
+2026,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",,30000,375.0,,1.25
+2026,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",,50000,1375.0,,2.75
+2026,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",,75000,2937.5,,3.92
+2026,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",,100000,4750.0,,4.75
+2026,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",,150000,8725.0,,5.82
+2026,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",,5000,300.0,,6.0
+2026,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",,10000,300.0,,3.0
+2026,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",,20000,300.0,,1.5
+2026,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",,30000,300.0,,1.0
+2026,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",,50000,300.0,,0.6
+2026,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",,75000,375.0,,0.5
+2026,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",,100000,750.0,,0.75
+2026,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",,150000,2000.0,,1.33
