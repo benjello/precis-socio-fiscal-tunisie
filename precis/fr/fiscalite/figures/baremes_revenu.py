@@ -99,6 +99,7 @@ _L = {
     "courants": {"fr": "dinars courants", "ar": "بالدينار الجاري"},
     "constants": {"fr": "dinars de {base}", "ar": "بدينار {base}"},
     "c_annee": {"fr": "Année de revenus", "ar": "سنة المداخيل"},
+    "reforme": {"fr": "Réforme {a}", "ar": "إصلاح {a}"},
     "y_taux_moyen": {"fr": "Taux du barème (%)", "ar": "نسب الجدول (%)"},
     "y_seuil": {"fr": "Seuil (dinars de {base})", "ar": "العتبة (بدينار {base})"},
     "title_annuel": {"fr": ("IRPP, année par année : taux moyen d'un même revenu réel et seuils "
@@ -216,6 +217,28 @@ def lignes_annuelles():
     return lignes
 
 
+def _marque_reformes(ax, vertical: bool = False) -> None:
+    """Une ligne de rupture par réforme, libellée en haut du cadre.
+
+    Le libellé se pose à droite du trait ; pour la dernière année, où il n'y a pas la place,
+    à sa gauche. Le haut du cadre est dégagé pour qu'il ne chevauche aucune courbe.
+    """
+    haut = ax.get_ylim()[1]
+    ax.set_ylim(0, haut * 1.12)
+    for annee in (2017, 2025):
+        figtools.marque_rupture(ax, annee)
+        droite = annee < base_derniere() and not vertical
+        ax.annotate(figtools.fig_text(_lab("reforme").format(a=annee)),
+                    xy=(annee - 0.5, 1), xycoords=("data", "axes fraction"),
+                    xytext=(4 if droite else -4, -4), textcoords="offset points",
+                    ha="left" if droite else "right", va="top", fontsize=7.5, color="#57606a",
+                    rotation=90 if vertical else 0)
+
+
+def base_derniere() -> int:
+    return dinars_constants.ANNEE_BASE
+
+
 def _dinars(v: float) -> str:
     return f"{v:,.0f}".replace(",", " ")
 
@@ -241,10 +264,9 @@ def fig_irpp_taux_reel():
             figtools.infobulle(courbe, _lab("revenu_ref").format(r=_dinars(r), base=base))
             ax.step([l["annee"] for l in seg], [l["marginaux"][r] for l in seg], where="mid",
                     lw=1.0, ls=(0, (3, 2)), color=COULEURS_REF[r], alpha=0.9)
-    for annee in (2017, 2025):
-        figtools.marque_rupture(ax, annee)
     ax.set_xlim(ANNEE_DEBUT - 0.5, base + 0.5)
     ax.set_ylim(0, None)
+    _marque_reformes(ax)
     ax.set_xlabel(ft(_lab("c_annee")))
     ax.set_ylabel(ft(_lab("y_taux_moyen")))
     ax.grid(True, alpha=0.3)
@@ -276,15 +298,15 @@ def fig_irpp_seuils_constants():
                     label=ft(_lab("constants").format(base=base)) if etat == ETATS_IRPP[0] else None)
             ax.plot(xs, [l[cle] for l in seg], lw=1.2, ls=(0, (3, 2)), color=c,
                     label=ft(_lab("courants")) if etat == ETATS_IRPP[0] else None)
-        for annee in (2017, 2025):
-            figtools.marque_rupture(ax, annee)
         ax.set_title(ft(_lab("seuil_" + cle)), fontsize=9.5)
         ax.set_xlim(ANNEE_DEBUT - 0.5, base + 0.5)
         ax.set_ylim(0, None)
+        _marque_reformes(ax, vertical=True)
         ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda y, _p: _dinars(y)))
         ax.set_xlabel(ft(_lab("c_annee")))
         ax.grid(True, alpha=0.3)
-        ax.legend(loc="upper right", fontsize=8, frameon=False)
+        ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.14), fontsize=8, frameon=False,
+                  ncol=2)
     axes[0].set_ylabel(ft(_lab("y_seuil_d")))
     fig.tight_layout()
     return fig
