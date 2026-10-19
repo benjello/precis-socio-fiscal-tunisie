@@ -139,7 +139,10 @@ PAQUETS = {
         # deçà, les deux séries des successions et leurs figures (chapitre « Le patrimoine
         # immobilier » du volume « Fiscalité », section des donations et des successions) ne
         # pourraient être engendrées. La borne passe à la 0.136.
-        "version_minimale": (0, 136),
+        # La 0.136.1 verse les barèmes de 1969 et de 1975 du même paramètre (PR #495) : en
+        # deçà, le tableau des barèmes successoraux du même chapitre ne pourrait être
+        # engendré. La borne passe à la 0.136.1.
+        "version_minimale": (0, 136, 1),
     },
 }
 
@@ -197,7 +200,7 @@ def version_openfisca(paquet: str | None = None) -> tuple[int, ...] | None:
     try:
         from importlib.metadata import version
 
-        return tuple(int(x) for x in version(PAQUETS[nom]["distribution"]).split(".")[:2])
+        return tuple(int(x) for x in version(PAQUETS[nom]["distribution"]).split(".")[:3])
     except Exception:
         pass
     racine = _racine_paquet(nom)
@@ -209,7 +212,7 @@ def version_openfisca(paquet: str | None = None) -> tuple[int, ...] | None:
         for ligne in pyproject.read_text(encoding="utf-8").splitlines():
             if ligne.startswith("version"):
                 brut = ligne.split("=", 1)[1].strip().strip('"').strip("'")
-                return tuple(int(x) for x in brut.split(".")[:2])
+                return tuple(int(x) for x in brut.split(".")[:3])
     except Exception:
         return None
     return None

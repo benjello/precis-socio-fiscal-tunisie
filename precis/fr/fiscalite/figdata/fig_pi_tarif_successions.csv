@@ -1,8 +1,8 @@
 # Figure-data du précis socio-fiscal tunisien — généré le 2026-10-19
 # séries (tunisia_data) : successions-tarif
-# sources (citation) : @lf-1984, @loi-93-53-cdet, @loi-98-73
+# sources (citation) : @lf-1969, @loi74-101-lf1975, @lf-1984, @loi-93-53-cdet, @loi-98-73
 # fiches : 
-# méthode/hypothèses : La figure commence au barème de 1984 ; ceux de 1969 et de 1975 sont au tableau des barèmes successoraux du chapitre. Le taux moyen est calculé barème appliqué par tranche : chaque fraction de part supporte le taux de sa tranche. Depuis 1993, le même taux vaut pour les donations ; les donations familiales sont au droit fixe depuis 2006.
+# méthode/hypothèses : La figure commence au barème de 1984 ; les barèmes de 1969 et de 1975 sont au tableau des barèmes successoraux du chapitre. Le taux moyen est calculé barème appliqué par tranche : chaque fraction de part supporte le taux de sa tranche. Depuis 1993, le même taux vaut pour les donations ; les donations familiales sont au droit fixe depuis 2006.
 # note : Mutations par décès : taux marginal et taux moyen du droit d'enregistrement selon la part nette et la parenté, barème appliqué par tranche, au 1^er^ janvier 1984, au 17 mai 1993 et au 17 août 1998
 Parenté,Part nette (D),"1984, taux marginal (%)","1984, taux moyen (%)","1993, taux marginal (%)","1993, taux moyen (%)","1998, taux marginal (%)","1998, taux moyen (%)"
 Ligne directe et époux,5000,6.0,6.0,5.0,5.0,2.5,2.5
