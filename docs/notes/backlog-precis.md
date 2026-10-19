@@ -581,8 +581,10 @@ liste qui suit le tableau, citations comprises. Restent :
 - **Taux marginal et taux moyen des barèmes de l'IRPP et de la CPE — fait le 19 octobre 2026**
   (`fig-cpe-taux`, `fig-irpp-taux-bareme`, `#sec-irpp` ; module `figures/baremes_revenu.py`,
   séries `cpe-bareme` et `irpp-bareme`). Taux moyen du barème seul, en dinars courants ; ni
-  plafond de cotisation, ni exemptions, ni minimum d'impôt, ni charges de famille. Restent :
-  la version en dinars constants (déflateur à fixer, TODO économiste du chapitre) ; la CSS des
+  plafond de cotisation, ni exemptions, ni minimum d'impôt, ni charges de famille. IRPP année
+  par année, 1990-2026, en dinars constants (indice commun du précis, base 2025 ; `fig-irpp-annuel`,
+  `tbl-irpp-bareme-annuel`) : **fait le 19 octobre 2026** ; l'indice s'arrête à 2025, 2026 est
+  en dinars courants seulement. Restent : le seuil de la tranche à 0 % rapporté au SMIG ; la CSS des
   personnes physiques, dérivée du barème de l'IRPP (voir `taux-moyens-marginaux-baremes.md`) ;
   la version arabe du chapitre, à rendre avant fusion.
 

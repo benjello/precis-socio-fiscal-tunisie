@@ -17,6 +17,7 @@ from pathlib import Path
 
 _SCRIPTS = Path(__file__).resolve().parents[4] / "scripts"
 sys.path.insert(0, str(_SCRIPTS))
+import dinars_constants  # noqa: E402
 import figtools  # noqa: E402
 import taux_bareme  # noqa: E402
 
@@ -83,6 +84,42 @@ _L = {
                    "ar": ("الضريبة على الدخل: النسبة الحدية والنسبة المتوسّطة للجدول حسب "
                           "الدخل، مداخيل 1990 و2017 و2025")},
     "y_taux": {"fr": "Taux (%)", "ar": "النسبة (%)"},
+    "vue_taux_reel": {"fr": "Taux d'un revenu réel constant",
+                      "ar": "نسب دخل حقيقي ثابت"},
+    "moyen_court": {"fr": "taux moyen (trait plein)", "ar": "النسبة المتوسّطة (خط متصل)"},
+    "marginal_court": {"fr": "taux marginal (tireté)", "ar": "النسبة الحدية (متقطّع)"},
+    "y_seuil_d": {"fr": "Seuil (D)", "ar": "العتبة (د)"},
+    "c_marg_ref": {"fr": "Taux marginal à {r} D de {base}",
+                   "ar": "النسبة الحدية عند {r} د من {base}"},
+    "vue_seuils": {"fr": "Seuils en dinars de {base}", "ar": "العتبات بدينار {base}"},
+    "revenu_ref": {"fr": "Revenu de {r} D de {base}", "ar": "دخل بقيمة {r} د من {base}"},
+    "seuil_zero": {"fr": "Fin de la tranche à taux nul", "ar": "نهاية الشريحة ذات النسبة المعدومة"},
+    "seuil_haut": {"fr": "Début de la tranche au taux le plus élevé",
+                   "ar": "بداية الشريحة ذات أعلى نسبة"},
+    "courants": {"fr": "dinars courants", "ar": "بالدينار الجاري"},
+    "constants": {"fr": "dinars de {base}", "ar": "بدينار {base}"},
+    "c_annee": {"fr": "Année de revenus", "ar": "سنة المداخيل"},
+    "y_taux_moyen": {"fr": "Taux du barème (%)", "ar": "نسب الجدول (%)"},
+    "y_seuil": {"fr": "Seuil (dinars de {base})", "ar": "العتبة (بدينار {base})"},
+    "title_annuel": {"fr": ("IRPP, année par année : taux moyen d'un même revenu réel et seuils "
+                            "du barème en dinars de {base}, revenus de 1990 à {fin}"),
+                     "ar": ("الضريبة على الدخل سنة بسنة: النسبة المتوسّطة لدخل حقيقي ثابت "
+                            "وعتبات الجدول بدينار {base}، مداخيل 1990 إلى {fin}")},
+    "c_bareme": {"fr": "Barème", "ar": "الجدول"},
+    "c_tranches": {"fr": "Tranches<br>(dont la tranche à taux nul)",
+                   "ar": "الشرائح<br>(منها الشريحة ذات النسبة المعدومة)"},
+    "bareme_1990-01-01": {"fr": "code de 1989 (art. 44 § I)", "ar": "مجلة 1989 (الفصل 44 §I)"},
+    "bareme_2017-01-01": {"fr": "loi n° 2016-78", "ar": "القانون عدد 2016-78"},
+    "bareme_2025-01-01": {"fr": "loi n° 2024-48", "ar": "القانون عدد 2024-48"},
+    "c_taux_max": {"fr": "Taux marginal maximal", "ar": "أعلى نسبة حدية"},
+    "c_zero": {"fr": "Fin de la tranche à taux nul", "ar": "نهاية الشريحة ذات النسبة المعدومة"},
+    "c_haut": {"fr": "Seuil du taux maximal", "ar": "عتبة أعلى نسبة"},
+    "c_moyen_ref": {"fr": "Taux moyen à {r} D de {base}", "ar": "النسبة المتوسّطة عند {r} د من {base}"},
+    "c_ipc": {"fr": "Indice des prix", "ar": "مؤشر الأسعار"},
+    "u_courants": {"fr": "D courants", "ar": "د جارية"},
+    "u_constants": {"fr": "D de {base}", "ar": "د {base}"},
+    "u_pct": {"fr": "%", "ar": "%"},
+    "u_ipc": {"fr": "base 100 en 1970", "ar": "الأساس 100 سنة 1970"},
 }
 
 
@@ -139,6 +176,191 @@ def table_irpp():
     return taux_bareme.table_taux(
         _panneau_irpp(), {e: _lab("court_irpp_" + e) for e in ETATS_IRPP}, ASSIETTES_IRPP,
         entete_panneau=_lab("c_groupe"), entete_assiette=_lab("c_revenu"))
+
+
+# --- L'IRPP année par année, en dinars courants et en dinars constants ------------------
+
+REVENUS_REF = (10_000, 20_000, 40_000)  # dinars de l'année de base
+COULEURS_REF = {10_000: "#bf8700", 20_000: "#0969da", 40_000: "#1a7f37"}
+ANNEE_DEBUT = 1990
+ANNEE_FIN = 2026
+
+
+def _etat_de(annee: int) -> str:
+    return max(e for e in ETATS_IRPP if int(e[:4]) <= annee)
+
+
+def lignes_annuelles():
+    """Une ligne par année de revenus : barème, seuils, taux ; constants à None sans indice."""
+    ipc = dinars_constants.ipc()
+    base = dinars_constants.ANNEE_BASE
+    baremes = {e: _bareme(SERIE_IRPP, "irpp", e) for e in ETATS_IRPP}
+    lignes = []
+    for annee in range(ANNEE_DEBUT, ANNEE_FIN + 1):
+        etat = _etat_de(annee)
+        b = baremes[etat]
+        zero = min(s for s, t in b if t > 0)  # première tranche taxée : fin de la tranche nulle
+        taux_max = max(t for _s, t in b)
+        haut = min(s for s, t in b if t == taux_max)
+        k = ipc[base] / ipc[annee] if annee in ipc else None
+        moyens, marginaux = {}, {}
+        for r in REVENUS_REF:
+            if k is None:
+                moyens[r] = marginaux[r] = None
+            else:
+                moyens[r] = 100 * taux_bareme.taux_moyen(b, r / k)
+                marginaux[r] = 100 * taux_bareme.taux_marginal(b, r / k)
+        lignes.append({"annee": annee, "etat": etat, "tranches": len(b), "zero": zero,
+                       "haut": haut, "taux_max": 100 * taux_max, "k": k,
+                       "indice": ipc.get(annee), "moyens": moyens, "marginaux": marginaux})
+    return lignes
+
+
+def _dinars(v: float) -> str:
+    return f"{v:,.0f}".replace(",", " ")
+
+
+def fig_irpp_taux_reel():
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    base = dinars_constants.ANNEE_BASE
+    lignes = [l for l in lignes_annuelles() if l["k"] is not None]
+    fig, ax = plt.subplots(figsize=(9.5, 5.2))
+    for r in REVENUS_REF:
+        premier = True
+        for etat in ETATS_IRPP:  # un segment par barème : aucun raccord entre deux textes
+            seg = [l for l in lignes if l["etat"] == etat]
+            courbe, = ax.plot([l["annee"] for l in seg], [l["moyens"][r] for l in seg], "-o",
+                              ms=2.8, lw=1.9, color=COULEURS_REF[r],
+                              label=ft(_lab("revenu_ref").format(r=_dinars(r), base=base))
+                              if premier else None)
+            premier = False
+            figtools.infobulle(courbe, _lab("revenu_ref").format(r=_dinars(r), base=base))
+            ax.step([l["annee"] for l in seg], [l["marginaux"][r] for l in seg], where="mid",
+                    lw=1.0, ls=(0, (3, 2)), color=COULEURS_REF[r], alpha=0.9)
+    for annee in (2017, 2025):
+        figtools.marque_rupture(ax, annee)
+    ax.set_xlim(ANNEE_DEBUT - 0.5, base + 0.5)
+    ax.set_ylim(0, None)
+    ax.set_xlabel(ft(_lab("c_annee")))
+    ax.set_ylabel(ft(_lab("y_taux_moyen")))
+    ax.grid(True, alpha=0.3)
+    from matplotlib.lines import Line2D
+    poignees, noms = ax.get_legend_handles_labels()
+    poignees += [Line2D([], [], color="#57606a", lw=1.9), Line2D([], [], color="#57606a", lw=1.0,
+                                                                  ls=(0, (3, 2)))]
+    noms += [ft(_lab("moyen_court")), ft(_lab("marginal_court"))]
+    ax.legend(poignees, noms, loc="upper center", bbox_to_anchor=(0.5, -0.13), fontsize=8,
+              frameon=False, ncol=3)
+    fig.tight_layout()
+    return fig
+
+
+def fig_irpp_seuils_constants():
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    base = dinars_constants.ANNEE_BASE
+    lignes = [l for l in lignes_annuelles() if l["k"] is not None]
+    fig, axes = plt.subplots(1, 2, figsize=(10.5, 5.0))
+    for ax, cle, c in zip(axes, ("zero", "haut"), ("#bf8700", "#0969da")):
+        for etat in ETATS_IRPP:
+            seg = [l for l in lignes if l["etat"] == etat]
+            xs = [l["annee"] for l in seg]
+            ax.plot(xs, [l[cle] * l["k"] for l in seg], "-o", ms=2.8, lw=1.9, color=c,
+                    label=ft(_lab("constants").format(base=base)) if etat == ETATS_IRPP[0] else None)
+            ax.plot(xs, [l[cle] for l in seg], lw=1.2, ls=(0, (3, 2)), color=c,
+                    label=ft(_lab("courants")) if etat == ETATS_IRPP[0] else None)
+        for annee in (2017, 2025):
+            figtools.marque_rupture(ax, annee)
+        ax.set_title(ft(_lab("seuil_" + cle)), fontsize=9.5)
+        ax.set_xlim(ANNEE_DEBUT - 0.5, base + 0.5)
+        ax.set_ylim(0, None)
+        ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda y, _p: _dinars(y)))
+        ax.set_xlabel(ft(_lab("c_annee")))
+        ax.grid(True, alpha=0.3)
+        ax.legend(loc="upper right", fontsize=8, frameon=False)
+    axes[0].set_ylabel(ft(_lab("y_seuil_d")))
+    fig.tight_layout()
+    return fig
+
+
+def fig_irpp_annuel():
+    """Deux vues : taux moyen d'un même revenu réel ; seuils en dinars constants."""
+    base = dinars_constants.ANNEE_BASE
+    return [(_lab("vue_taux_reel"), fig_irpp_taux_reel()),
+            (_lab("vue_seuils").format(base=base), fig_irpp_seuils_constants())]
+
+
+def table_irpp_annuel_plat():
+    """Le même tableau, en-têtes sur une ligne (onglet « Données », exports, figdata)."""
+    df = table_irpp_annuel()
+    return df.rename(columns=lambda c: c.replace("<br>(", " (").replace("<br>", " "))
+
+
+def table_irpp_annuel():
+    """Une ligne par année de revenus, 1990-2026, tout engendré depuis la série de tranches."""
+    import pandas as pd
+    base = dinars_constants.ANNEE_BASE
+    cou, cst = _lab("u_courants"), _lab("u_constants").format(base=base)
+    pct = _lab("u_pct")
+    lignes = []
+    for l in lignes_annuelles():
+        k = l["k"]
+        ligne = {_lab("c_annee"): l["annee"],
+                 _lab("c_bareme"): _lab("bareme_" + l["etat"]),
+                 _lab("c_tranches"): l["tranches"],
+                 f"{_lab('c_zero')}<br>({cou})": round(l["zero"]),
+                 f"{_lab('c_zero')}<br>({cst})": None if k is None else round(l["zero"] * k),
+                 f"{_lab('c_haut')}<br>({cou})": round(l["haut"]),
+                 f"{_lab('c_haut')}<br>({cst})": None if k is None else round(l["haut"] * k),
+                 f"{_lab('c_taux_max')}<br>({pct})": round(l["taux_max"], 1)}
+        for r in REVENUS_REF:
+            m, mg = l["moyens"][r], l["marginaux"][r]
+            ligne[f"{_lab('c_marg_ref').format(r=_dinars(r), base=base)}<br>({pct})"] = (
+                None if mg is None else round(mg, 1))
+            ligne[f"{_lab('c_moyen_ref').format(r=_dinars(r), base=base)}<br>({pct})"] = (
+                None if m is None else round(m, 2))
+        ligne[f"{_lab('c_ipc')}<br>({_lab('u_ipc')})"] = (
+            None if l["indice"] is None else round(l["indice"], 1))
+        lignes.append(ligne)
+    df = pd.DataFrame(lignes)
+    for c in df.columns:
+        if "<br>(" + cou + ")" in c or "<br>(" + cst + ")" in c:
+            df[c] = df[c].astype("Int64")
+    return df
+
+
+def markdown_irpp_annuel() -> str:
+    """Le tableau annuel en Markdown : milliers séparés, virgule décimale, « — » sans indice."""
+    import pandas as pd
+    df = table_irpp_annuel()
+    virgule = figtools.lang() != "ar"
+    entetes = list(df.columns)
+
+    def cellule(c, v):
+        if v is None or pd.isna(v):
+            return "—"
+        if c in (entetes[0], entetes[2]):
+            return str(int(v))
+        if isinstance(v, str):
+            return v
+        if "<br>(%)" in c or "indice" in c.lower() or c.startswith(_lab("c_ipc")):
+            t = (f"{float(v):.2f}" if c.startswith(_lab("c_moyen_ref")[:9])
+                 else f"{float(v):.1f}") if "<br>(%)" in c else f"{float(v):.1f}"
+            return t.replace(".", ",") if virgule else t
+        return _dinars(float(v))
+
+    lignes = ["| " + " | ".join(entetes) + " |",
+              "|---|---|" + "|".join(["---:"] * (len(entetes) - 2)) + "|"]
+    for _i, r in df.iterrows():
+        lignes.append("| " + " | ".join(cellule(c, r[c]) for c in entetes) + " |")
+    return "\n".join(lignes)
 
 
 figtools.register_provenance(
