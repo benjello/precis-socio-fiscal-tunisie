@@ -95,6 +95,7 @@ _L = {
     "c_ca_const": {"fr": "Chiffre d'affaires (D de {base})", "ar": "رقم المعاملات (د {base})"},
     "c_ca_cour": {"fr": "Chiffre d'affaires (D courants)", "ar": "رقم المعاملات (د جارية)"},
     "c_impot": {"fr": "Impôt (D courants)", "ar": "الضريبة (د جارية)"},
+    "c_impot_const": {"fr": "Impôt (D de {base})", "ar": "الضريبة (د {base})"},
     "c_taux": {"fr": "Impôt rapporté au chiffre d'affaires (%)",
                "ar": "الضريبة منسوبة إلى رقم المعاملات (%)"},
 }
@@ -248,17 +249,21 @@ def table_bic_regimes():
     import pandas as pd
     d = Donnees()
     cols = (_lab("c_reforme"), _lab("c_regime"), _lab("c_ca_const").format(base=d.base),
-            _lab("c_ca_cour"), _lab("c_impot"), _lab("c_taux"))
+            _lab("c_ca_cour"), _lab("c_impot"), _lab("c_impot_const").format(base=d.base),
+            _lab("c_taux"))
     lignes = []
     for etat in ETATS:
         k = d.k(etat)
+        sans_indice = etat not in d.ipc  # 2026 : prix de 2025, aucun montant en dinars constants
         for c in _courbes(d, etat):
             for x in GRILLE_TABLEAU:
                 ca = x / k
                 v = c["f"](ca)
-                lignes.append({cols[0]: etat, cols[1]: _libelle_courbe(c), cols[2]: x,
-                               cols[3]: round(ca), cols[4]: None if v is None else round(v, 2),
-                               cols[5]: None if v is None else round(100 * v / ca, 2)})
+                lignes.append({cols[0]: etat, cols[1]: _libelle_courbe(c),
+                               cols[2]: None if sans_indice else x, cols[3]: round(ca),
+                               cols[4]: None if v is None else round(v, 2),
+                               cols[5]: None if (v is None or sans_indice) else round(v * k, 2),
+                               cols[6]: None if v is None else round(100 * v / ca, 2)})
     return pd.DataFrame(lignes)
 
 
@@ -276,9 +281,9 @@ def markdown_plafonds() -> str:
     for etat in ETATS:
         haut = float(forfait[forfait["etat"] == etat]["haut"].max())
         const = haut * d.k(etat)
-        marque = "" if etat in d.ipc else "\\*"
         cell = lambda v: f"{v:,.0f}".replace(",", " ")
-        lignes.append(f"| {_etat_lab(etat)} | {cell(haut)} | {cell(round(const, -2))}{marque} |")
+        const_txt = cell(round(const, -2)) if etat in d.ipc else "—"
+        lignes.append(f"| {_etat_lab(etat)} | {cell(haut)} | {const_txt} |")
     return "\n".join(lignes)
 
 

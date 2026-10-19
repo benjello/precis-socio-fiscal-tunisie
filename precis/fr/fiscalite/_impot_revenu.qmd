@@ -878,7 +878,7 @@ durées du régime forfaitaire seront datés et sourcés dans la base de paramè
 
 @fig-bic-regimes rapporte au chiffre d'affaires l'impôt qu'une entreprise individuelle des bénéfices industriels et commerciaux acquitte selon son régime, à dix états du droit : le code de 1990 et les lois de finances pour 1993, 1999, 2006, 2011, 2014, 2016, 2018, 2023 et 2026. Chaque panneau porte le [régime forfaitaire](#g-regime-forfaitaire), l'impôt forfaitaire optionnel quand le droit en prévoit un — 1 500 dinars de 1999 à 2010, puis le [régime forfaitaire optionnel](#g-regime-forfaitaire-optionnel) de 2026 — et le régime réel. Le régime réel est calculé sur un bénéfice égal à une fraction τ du chiffre d'affaires, selon deux hypothèses : τ = 25 %, le plafond que l'article 91 de la loi de finances pour 2026 fixe au taux de bénéfice net estimé de l'option [@lf-2026, art. 91], et τ = 10 %, hypothèse de lecture qu'aucun texte ne fixe. Il comprend le barème de l'impôt sur le revenu et le [minimum d'impôt](#g-minimum-impot) assis sur le chiffre d'affaires. Les chiffres d'affaires sont exprimés en dinars de 2025 : le chiffre d'affaires courant de l'année du panneau, multiplié par le rapport de l'indice des prix à la consommation de 2025 à celui de cette année.
 
-**Le plafond du forfait est le premier terme de la comparaison.** En dinars courants, il est de 30 000 dinars jusqu'à la loi de finances pour 2006 et de 100 000 dinars depuis celle de 2011 ; en dinars de 2025, il s'érode de 1990 à 2006, remonte avec la refonte de 2011, puis s'érode de nouveau (@tbl-bic-plafonds).
+**Plafond du forfait.** En dinars courants, il est de 30 000 dinars jusqu'à la loi de finances pour 2006 et de 100 000 dinars depuis celle de 2011 ; en dinars de 2025, il baisse de 1990 à 2006, remonte avec la refonte de 2011, puis baisse de nouveau (@tbl-bic-plafonds).
 
 ```{python}
 #| label: tbl-bic-plafonds
@@ -891,9 +891,8 @@ print()
 print(": Plafond de chiffre d'affaires du régime forfaitaire des bénéfices industriels et "
       "commerciaux à dix états du droit, en dinars courants et en dinars de 2025. Plafond le "
       "plus élevé de l'état : production, transformation et achat-revente en 1990 ; activités "
-      "autres que les services en 1993 et de 2011 à 2015. L'indice des prix de 2026 n'étant pas "
-      "publié, le plafond de 2026, marqué d'un astérisque, est exprimé au niveau des prix de "
-      "2025. {#tbl-bic-plafonds}")
+      "autres que les services en 1993 et de 2011 à 2015. Aucun indice des prix n'est publié "
+      "pour 2026 : le plafond de 2026 n'est donné qu'en dinars courants. {#tbl-bic-plafonds}")
 ```
 
 **Le forfait change de forme.** De 1990 à 2010, l'impôt est un montant lu dans la grille de l'annexe II selon la tranche de chiffre d'affaires [@code-irpp-is-1990, art. 44 § IV et annexe II ; @lf-1993, art. 101] : le taux rapporté au chiffre d'affaires monte à l'intérieur d'une tranche, s'abaisse au franchissement de la suivante et dessine une dent de scie. De 2011 à 2015, l'impôt est un taux de 2 % ou de 2,5 % du chiffre d'affaires avec un plancher [@lf-2011, art. 32 ; @lf-2014, art. 45]. Depuis 2016, c'est un montant fixe jusqu'à 10 000 dinars de chiffre d'affaires, puis 3 % du chiffre d'affaires [@lf-2016, art. 17]. Le taux d'un forfait de 3 % est constant au-dessus de 10 000 dinars de chiffre d'affaires courant ; la hausse du montant fixe, de 75 à 200 dinars hors zones communales de 2016 à 2023, ne joue que sous ce seuil [@lf-2018, art. 16 ; @lf-2023, art. 55].
