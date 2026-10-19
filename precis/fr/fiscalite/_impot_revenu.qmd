@@ -874,6 +874,92 @@ Sources : celles de chaque ligne. Les montants sont en dinars. La colonne « App
 durées du régime forfaitaire seront datés et sourcés dans la base de paramètres. Écart constaté le
 4 octobre 2026 : voir docs/notes/backlog-modele.md (régime forfaitaire). -->
 
+### Le taux d'imposition selon le régime, réforme par réforme {#sec-irpp-forfait-taux}
+
+@fig-bic-regimes rapporte au chiffre d'affaires l'impôt qu'une entreprise individuelle des bénéfices industriels et commerciaux acquitte selon son régime, à dix états du droit : le code de 1990 et les lois de finances pour 1993, 1999, 2006, 2011, 2014, 2016, 2018, 2023 et 2026. Chaque panneau porte le [régime forfaitaire](#g-regime-forfaitaire), l'impôt forfaitaire optionnel quand le droit en prévoit un — 1 500 dinars de 1999 à 2010, puis le [régime forfaitaire optionnel](#g-regime-forfaitaire-optionnel) de 2026 — et le régime réel. Le régime réel est calculé sur un bénéfice égal à une fraction τ du chiffre d'affaires, selon deux hypothèses : τ = 25 %, le plafond que l'article 91 de la loi de finances pour 2026 fixe au taux de bénéfice net estimé de l'option [@lf-2026, art. 91], et τ = 10 %, hypothèse de lecture qu'aucun texte ne fixe. Il comprend le barème de l'impôt sur le revenu et le [minimum d'impôt](#g-minimum-impot) assis sur le chiffre d'affaires. Les chiffres d'affaires sont exprimés en dinars de 2025 : le chiffre d'affaires courant de l'année du panneau, multiplié par le rapport de l'indice des prix à la consommation de 2025 à celui de cette année.
+
+**Le plafond du forfait est le premier terme de la comparaison.** En dinars courants, il est de 30 000 dinars jusqu'à la loi de finances pour 2006 et de 100 000 dinars depuis celle de 2011 ; en dinars de 2025, il s'érode de 1990 à 2006, remonte avec la refonte de 2011, puis s'érode de nouveau (@tbl-bic-plafonds).
+
+```{python}
+#| label: tbl-bic-plafonds
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import bic_regimes as fig_bic
+print(fig_bic.markdown_plafonds())
+print()
+print(": Plafond de chiffre d'affaires du régime forfaitaire des bénéfices industriels et "
+      "commerciaux à dix états du droit, en dinars courants et en dinars de 2025. Plafond le "
+      "plus élevé de l'état : production, transformation et achat-revente en 1990 ; activités "
+      "autres que les services en 1993 et de 2011 à 2015. L'indice des prix de 2026 n'étant pas "
+      "publié, le plafond de 2026, marqué d'un astérisque, est exprimé au niveau des prix de "
+      "2025. {#tbl-bic-plafonds}")
+```
+
+**Le forfait change de forme.** De 1990 à 2010, l'impôt est un montant lu dans la grille de l'annexe II selon la tranche de chiffre d'affaires [@code-irpp-is-1990, art. 44 § IV et annexe II ; @lf-1993, art. 101] : le taux rapporté au chiffre d'affaires monte à l'intérieur d'une tranche, s'abaisse au franchissement de la suivante et dessine une dent de scie. De 2011 à 2015, l'impôt est un taux de 2 % ou de 2,5 % du chiffre d'affaires avec un plancher [@lf-2011, art. 32 ; @lf-2014, art. 45]. Depuis 2016, c'est un montant fixe jusqu'à 10 000 dinars de chiffre d'affaires, puis 3 % du chiffre d'affaires [@lf-2016, art. 17]. Le taux d'un forfait de 3 % est constant au-dessus de 10 000 dinars de chiffre d'affaires courant ; la hausse du montant fixe, de 75 à 200 dinars hors zones communales de 2016 à 2023, ne joue que sous ce seuil [@lf-2018, art. 16 ; @lf-2023, art. 55].
+
+**En 2026, l'impôt forfaitaire optionnel est supérieur à celui du forfait ordinaire sur la plus grande part de son champ.** L'impôt de l'option est de 4 000 dinars jusqu'à 50 000 dinars de chiffre d'affaires et de 5 000 dinars de 50 001 à 100 000 dinars, soit 8 % de 50 000 dinars et 5 % de 100 000 dinars, contre 3 % au forfait ordinaire ; celui-ci n'excède pas 3 000 dinars à 100 000 dinars. Réduit de moitié dans les campagnes et villages, l'impôt de l'option y reste supérieur à celui du forfait ordinaire jusqu'à 83 333 dinars de chiffre d'affaires, et lui devient inférieur au-delà [@lf-2026, art. 91]. Le texte attache à l'option l'effet libératoire dans la limite des chiffres d'affaires déclarés spontanément, avec un taux de bénéfice net estimé d'au plus 25 %, l'absence de vérification fiscale pendant six ans sauf éléments établis d'enrichissement injustifié ou d'activités exclues, et l'extension à des activités rattachées au régime réel par le décret n° 2022-802 [@lf-2026, art. 91 ; @decret-2022-802].
+
+**Le régime réel dépend du bénéfice et du minimum d'impôt.** Au-delà de la zone où le minimum d'impôt s'impose, le taux du réel croît avec le chiffre d'affaires, le barème étant progressif. À petit chiffre d'affaires, c'est le minimum d'impôt qui détermine l'impôt : plafonné à 500 dinars jusqu'en 1997 puis à 1 000 dinars, il devient en 2006 un plancher de 100 dinars exigible même sans chiffre d'affaires, porté à 200 dinars en 2011 puis à 300 dinars en 2014 [@code-irpp-is-1990, art. 44 § II ; @lf-1998, art. 45 ; @lf-2006, art. 42 ; @lf-2011, art. 38 ; @lf-2014, art. 48] (@sec-irpp-minimum).
+
+<!-- Choix de présentation (rédacteur, 19 octobre 2026) : petits multiples (un panneau par état,
+axes partagés), non onglets. Le sujet est la comparaison des états entre eux : à la même échelle,
+l'œil lit d'un panneau à l'autre le plafond qui se déplace, le tarif qui change de forme et la
+place de l'option ; dix onglets séparent les états et interdisent cette lecture. Règle des
+variantes, appliquée à chaque panneau : une courbe par activité quand le texte fixe des tarifs
+différents (1990 ; 2011-2015), trait plein hors zones communales et tireté pour les zones
+communales (et, pour l'option de 2026, les campagnes et villages), plafond des services en point.
+Toutes les variantes figurent dans l'onglet « Données ». -->
+
+```{python}
+#| label: fig-bic-regimes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import bic_regimes as fig_bic
+import dinars_constants
+import figtools
+figtools.figure_tabs(
+    fig_bic.fig_bic_regimes(), fig_bic.table_bic_regimes(), fig_bic.SERIE_TARIFS,
+    fig_bic.SERIE_MINIMUM, fig_bic.SERIE_HYPOTHESES, fig_bic.SERIE_IRPP,
+    *dinars_constants.SERIES_IPC,
+    slug="fig_bic_regimes", nominal=False,
+    caption=("Bénéfices industriels et commerciaux : impôt rapporté au chiffre d'affaires "
+             "selon le régime, en fonction du chiffre d'affaires en dinars de 2025, état du "
+             "droit de 1990 à 2026"),
+    note_lecture=(
+        "Chaque panneau décrit le droit de l'année indiquée, le chiffre d'affaires étant "
+        "déflaté par l'indice des prix de cette année ; l'indice de 2026 n'étant pas publié, "
+        "le panneau 2026 est tracé au niveau des prix de 2025. Une courbe s'arrête au plafond "
+        "de chiffre d'affaires du régime (@tbl-bic-plafonds) ; l'ordonnée est tronquée à 12 %, "
+        "les planchers et les montants fixes dépassant ce taux sur les petits chiffres "
+        "d'affaires. Trait plein : tarif hors zones communales ; tireté : zones communales et, "
+        "pour l'impôt forfaitaire optionnel de 2026, campagnes et villages. Le triangle marque le "
+        "plafond particulier des services, 12 000 dinars en 1993 [@lf-1993, art. 102] et "
+        "50 000 dinars de 2011 à 2015 [@lf-2011, art. 32]. Le forfait de 2016 à 2026 est lu "
+        "comme 3 % du chiffre d'affaires entier au-dessus de 10 000 dinars "
+        "[@lf-2016, art. 17]. L'impôt forfaitaire optionnel de 1 500 dinars est tracé jusqu'à "
+        "100 000 dinars, chiffre d'affaires au-delà duquel il peut être relevé "
+        "[@lf-1999, art. 61]. Régime réel : barème de l'impôt sur le revenu appliqué au "
+        "bénéfice, soit τ fois le chiffre d'affaires avec τ = 25 % ou 10 %, avant déductions "
+        "pour charges de famille, puis minimum d'impôt de l'article 44 § II, en supposant que "
+        "tout le chiffre d'affaires est local et sans exonération [@code-irpp-is-1990, art. 44 "
+        "§ I et II ; @lf-2017, art. 14 ; @lf-2025, art. 36]. Le forfait tient lieu de taxe sur "
+        "la valeur ajoutée depuis 1993 [@lf-1993, art. 103] et comprend la taxe sur les "
+        "établissements à caractère industriel, commercial ou professionnel depuis 2011 "
+        "[@lf-2011, art. 32] ; les courbes du régime réel ne portent que l'impôt sur le revenu. "
+        "Indice des prix : INS en base 1970 [@ins-annuaire], prolongé après 2023 par la "
+        "variation de l'indice en base 2015 [@bct-ra]."),
+    generated="{{< meta date >}}",
+)
+```
+
+<!-- TODO (modéliste) : verser les paramètres du forfait en amont (openfisca-tunisia#476) -->
+
+<!-- TODO (documentaliste) : confirmer, dans la note commune n° 27/2016 de la DGI, que les 3 % de l'article 44 ter (LF 2016, art. 17) s'appliquent au chiffre d'affaires entier et non à la fraction au-delà de 10 000 dinars ; le texte de l'article dit « 3 % pour le chiffre d'affaires entre 10 mille dinars et 100 mille dinars ». La note commune n'est pas au corpus local. -->
+
+<!-- TODO (documentaliste) : plafond d'accès à l'impôt forfaitaire optionnel de 1 500 dinars (LF 1999, art. 61) : le texte donne 100 000 dinars comme seuil de relèvement, non comme condition d'accès ; la figure le trace jusqu'à 100 000 dinars. Vérifier l'usage de l'administration. Annexes III (forfait simplifié 1992-1998) : assises sur des indices d'emplois et de zones, non sur le chiffre d'affaires ; pas de courbe. Les panneaux suivent l'année de la loi, non l'année de chiffre d'affaires visée par le texte ou la note commune (2015 pour le tarif de 2016, 2017 pour celui de 2018). -->
+
 ### La longue période
 
 Les chiffres datés disponibles ici sur les forfaitaires viennent du diagnostic que le ministère des Finances a présenté en 2013, dans le cadre du projet de réforme du système fiscal, au groupe de travail chargé de la révision du régime forfaitaire [@minfin-cnf-2013-forfait] (@tbl-forfait-effectifs).
