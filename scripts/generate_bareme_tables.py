@@ -563,6 +563,17 @@ def baremes_successions() -> list[tuple[str, str, dict[str, str]]]:
             for cle, liens in _SUCC_TARIF_LIEN.items()]
 
 
+# ------------------------------- barèmes de l'impôt sur le revenu : séries à tranches
+#
+# IRPP (1990, 2017, 2025) et contribution personnelle d'État (1962-1986) : barèmes appliqués
+# par tranche. Les séries nourrissent les figures « taux marginal et taux moyen ».
+SERIE_IRPP_BAREME = "irpp-bareme"
+SERIE_CPE_BAREME = "cpe-bareme"
+_LIEN_IRPP = {"fr": "Impôt sur le revenu — barème", "ar": "الضريبة على الدخل — الجدول"}
+_LIEN_CPE = {"fr": "Contribution personnelle d'État — barème",
+             "ar": "المساهمة الشخصية للدولة — الجدول"}
+
+
 def parametres_abattements_successions() -> list:
     return [ot.ParametreDate(
         cle, f"{SUCCESSIONS}/abattement/{cle}.yaml", libelles, unite="dinars",
@@ -577,6 +588,10 @@ def parametres_dans_le_temps() -> int:
     return (
         ot.ecrire_serie_tranches(SERIE_SUCC_TARIF, baremes_successions(), CACHE,
                                  colonne="parente")
+        or ot.ecrire_serie_tranches(SERIE_IRPP_BAREME, [("irpp", BAREME, _LIEN_IRPP)], CACHE,
+                                    colonne="bareme")
+        or ot.ecrire_serie_tranches(SERIE_CPE_BAREME, [("cpe", BAREME_CPE, _LIEN_CPE)], CACHE,
+                                    colonne="bareme")
         or ot.ecrire_serie_parametres(SERIE_SUCC_ABATTEMENTS,
                                       parametres_abattements_successions(), CACHE)
         or
