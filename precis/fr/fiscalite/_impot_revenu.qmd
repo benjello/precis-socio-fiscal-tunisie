@@ -78,7 +78,7 @@ print(ot.markdown_un_tableau_en_onglets([
 
 Dans le barème des revenus de 1986, la lecture de la troisième colonne invite à ne pas confondre le taux marginal affiché et la charge réellement supportée : à 80 000 dinars de revenu, le taux d'imposition du revenu global ressortait à 59,98 %, et non à 68 %.
 
-@fig-cpe-taux place, pour les cinq barèmes, le [taux marginal](#g-taux-marginal), celui de la tranche où tombe le revenu, et le taux moyen, le droit du barème rapporté au revenu net imposable. Le taux moyen y est celui du barème avant plafonnement de la cotisation effective (@tbl-plafond-cpe).
+@fig-cpe-taux place, pour les cinq barèmes, le [taux marginal](#g-taux-marginal), celui de la tranche où tombe le revenu, et le [taux moyen](#g-taux-moyen), le droit du barème rapporté au revenu net imposable. Le taux moyen y est celui du barème avant plafonnement de la cotisation effective (@tbl-plafond-cpe).
 
 ```{python}
 #| label: fig-cpe-taux
@@ -325,7 +325,7 @@ Sources : @lf-1986 ; @code-irpp-is-1990 ; @lf-2017 ; @lf-2025 ; @lf-2026.
 
 Le tableau @tbl-bareme-irpp-generations fait apparaître deux rythmes très différents : une rupture unique et de grande ampleur en 1989-1990, suivie d'une immobilité de vingt-sept exercices, puis deux modifications en huit ans (2017 et 2025).
 
-@fig-irpp-taux-bareme place, pour les barèmes de 1990, de 2017 et de 2025, le [taux marginal](#g-taux-marginal) et le taux moyen, le droit du barème rapporté au revenu net imposable. Le barème de 1990 imprime lui-même ce dernier à la limite supérieure de chaque tranche : 10,50 %, 15,25 %, 20,12 % et 26,05 % à 5 000, 10 000, 20 000 et 50 000 dinars [@code-irpp-is-1990, art. 44, § I]. Les seuils sont en dinars courants : les trois courbes ne comparent pas des revenus de même pouvoir d'achat.
+@fig-irpp-taux-bareme place, pour les barèmes de 1990, de 2017 et de 2025, le [taux marginal](#g-taux-marginal) et le [taux moyen](#g-taux-moyen), le droit du barème rapporté au revenu net imposable. Le barème de 1990 imprime lui-même ce dernier à la limite supérieure de chaque tranche : 10,50 %, 15,25 %, 20,12 % et 26,05 % à 5 000, 10 000, 20 000 et 50 000 dinars [@code-irpp-is-1990, art. 44, § I]. Les seuils sont en dinars courants : les trois courbes ne comparent pas des revenus de même pouvoir d'achat.
 
 ```{python}
 #| label: fig-irpp-taux-bareme

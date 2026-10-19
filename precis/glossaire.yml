@@ -1169,23 +1169,57 @@ entries:
         الطرحات والتخفيضات.
       synonymes: []
 
+  # AR (النسبة الحدية, النسبة المتوسطة) : non attesté dans le JORT pour ces
+  # emplois ; à confirmer par un arabophone. Définitions valables pour tout
+  # barème par tranche (IRPP, contribution personnelle d'État, successions).
   - id: taux-marginal
     acronyme: null
-    statut: valide
+    statut: provisoire  # AR non attesté
     references: []
     source_definition: {ref: code-irpp-is-1990, locator: "art. 44 § I"}
-    voir_aussi: [irpp, assiette-fiscale, bareme-irpp, tranche-de-revenu, taux-effectif-limite-superieure]
+    voir_aussi: [taux-moyen, irpp, assiette-fiscale, bareme-irpp, tranche-de-revenu, taux-effectif-limite-superieure]
     fr:
       terme: Taux marginal
       definition: >
-        Taux d'imposition applicable à la dernière tranche de revenu ; dans un
-        barème progressif, il s'applique à l'euro (au dinar) supplémentaire.
-      synonymes: []
+        Taux d'un barème appliqué par tranche, pour la tranche où tombe la
+        dernière unité de l'assiette (revenu, part successorale) : c'est le
+        taux qui frappe un dinar de plus. Il se distingue du taux moyen, qui
+        rapporte l'impôt total à l'assiette, et du taux de la tranche atteinte
+        appliqué à toute la valeur, comme le droit complémentaire de 2017 ou
+        l'impôt sur la fortune : là, le taux de la tranche atteinte frappe la
+        valeur entière, et non la seule fraction comprise dans la tranche.
+        (*marginal rate*)
+      synonymes: [Taux de la dernière tranche]
     ar:
       terme: النسبة الحدية
       definition: >
-        نسبة الضريبة المطبَّقة على آخر شريحة من الدخل؛ في جدول تصاعدي، تُطبَّق
-        على الدينار الإضافي.
+        نسبة جدول يُطبَّق بالشرائح، وهي نسبة الشريحة التي تقع فيها آخر وحدة من
+        الوعاء (دخل أو نصيب في التركة)، أي النسبة التي تُوظَّف على الدينار
+        الإضافي. تختلف عن النسبة المتوسطة التي تقيس الضريبة الجملية بالنسبة
+        إلى الوعاء.
+      synonymes: []
+
+  - id: taux-moyen
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: []
+    voir_aussi: [taux-marginal, taux-effectif-limite-superieure, bareme-irpp, tranche-de-revenu, assiette-fiscale]
+    fr:
+      terme: Taux moyen
+      definition: >
+        Impôt total dû rapporté à l'assiette (revenu net imposable, part
+        recueillie) : la part de l'assiette que prélève le barème. Dans un
+        barème par tranche, il est inférieur au taux marginal dès que
+        l'assiette dépasse la première tranche, et tend vers lui quand
+        l'assiette croît. Il n'est pas défini pour une assiette nulle.
+        (*average rate*)
+      synonymes: [Taux d'imposition moyen]
+    ar:
+      terme: النسبة المتوسطة
+      definition: >
+        الضريبة الجملية المستوجبة مقيسةً إلى الوعاء (الدخل الصافي الخاضع
+        للضريبة أو النصيب المورَّث). وفي جدول بالشرائح تقلّ عن النسبة الحدية
+        متى جاوز الوعاء الشريحة الأولى. ولا تُعرَّف إذا كان الوعاء معدومًا.
       synonymes: []
 
   - id: smig
