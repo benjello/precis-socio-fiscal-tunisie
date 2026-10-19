@@ -1995,6 +1995,12 @@
     couverture: 'Intitulés de jort_cache 1993-1994 (LIKE et FTS ci-dessus) : aucun texte sur le prix de cession ; seule la loi n° 93-102 (garantie de l''État, British Gas). La note 1 de la p. 7 du rapport de contrôle de 2014 (copie dans tunisia-data) rattache les prix de cession du brut à une lettre ministérielle de 1974 et à des lettres de la direction générale de l''énergie. Reprise de la passe du 6 octobre 2026 (docs/notes/compensation-tarifs-1993-2004.md, § (a)) : OCR intégral des n° 66 à 100 de 1993, édition française, sans résultat. Lacunes : avis et communications des n° 75-86 de 1993 non lus à l''image ; édition arabe non ouverte ; l''annexe 10 du rapport n''est pas reproduite.'
     couvert_jusqu_au: 1994-12-31
     resultat: aucun
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local, web]
+    couverture: 'Rapport de contrôle de 2014, p. 42, § 65 (lu à l''image) : l''« art. 8 » du contrat avec la SONATRACH donne deux formules de prix selon le seuil de 27,3 $ le baril, alors que les états financiers de la STEG 2014 (note 11, p. 23) parlent d''un prix fixe de 90,800 DT ; piste ajoutée sur l''acte de 1993. jort_cache, titre LIKE gaz et (prix, tarif ou cession), toutes années : rien en 1993.'
+    couvert_jusqu_au: 1994-12-31
+    resultat: aucun
   a_faire:
   - lire à l'image les « avis et communications » des JORT n° 75 à 86 de 1993
   - édition arabe des fascicules d'octobre-novembre 1993
@@ -2869,9 +2875,17 @@
     couverture: 'jort_cache, intitulés seulement : FTS sur « gaz commercial », sur prix et gaz et concessions, et sur gaz et algérien et (redevance ou prélèvement ou transport), toutes années → seul le décret n° 2000-1027 (JORT n° 40 de 2000, p. 1107, lu à l''image : P = 80 % du fuel à 1 % de soufre FOB Méditerranée-Italie, moyenne des neuf mois précédents), plus les textes de transit (loi n° 2005-102, décrets n° 2006-458, 2006-1823 et 1824, 2006-3265, 2007-2194, 2007-2378 et 2379) ; LIKE arabe %غاز% croisé avec %سعر%, %أسعار%, %أتاوة% et %إتاوة% → loi n° 2019-71 et décret gouvernemental n° 2019-824 (redevance de transit), aucun texte de prix. Lacunes : plein texte non parcouru ; miroir iort non interrogé ; aucun modificatif du décret n° 2000-1027 identifié, la recherche étant insuffisante depuis 2011.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-17
+    role: documentaliste
+    sources: [jort_cache, corpus_local, iort]
+    couverture: 'Titres français de jort_cache : LIKE %Miskar%, %prix du gaz%, %gaz commercial%, %Amilcar% ; modificatifs du code des hydrocarbures (lois n° 2002-23, 2004-61, 2008-15 et 2017-41) : l''art. 73 n''est pas touché ; titres arabes : ميسكار, مسكار, سعر الغاز, الغاز التجاري, résultat vide mais non probant, les notices de 1993 à 2000 ayant des titres français. Miroir iort, recherche Python : loi_93_102, loi_2000_81, dec_loi_2022_44 (convention Miskar avec l''ETAP, JORT n° 70 de 2022, p. 1962) ; une première recherche faite avec grep ne trouvait rien et ne compte pas. Fascicules lus : 1985 n° 65 (décret-loi n° 85-9, art. 33 : 85 % du fuel à haute teneur en soufre), 1999 n° 67 (loi n° 99-93, art. 73.1 : prix fixé par décret), 2000 n° 101 (arrêté du 12 décembre 2000). Aucun modificatif du décret n° 2000-1027 identifié ; les conventions et avenants de Miskar, Amilcar, Franig et Baguel ne sont pas publiés au Journal officiel.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
   - parcourir le plein texte et le miroir iort avec les termes arabes de iort_ar
   - lire les conventions de concession (Miskar, Franig, Baguel) si elles sont publiées
+  - lire l'avenant Miskar du 13 mai 2000 et les lois n° 2000-80 et 2000-81, dont le texte n'est pas publié
+  - avenant n° 4 des concessions de Baguel et de Franig du 17 août 2018 (prix contractuel non donné)
 
 - id: r-pv-immobiliere-modificatifs-2023
   objet: texte modifiant le code de l'IRPP, art. 27 § 2 ou art. 44 § III-1 (plus-value immobilière), postérieur au décret-loi n° 2022-79, art. 43 (loi de finances pour 2023)
