@@ -45,7 +45,7 @@ Colonnes : où (livre, chapitre) ; présentation actuelle ; série dans le snaps
 | Barème | Où | Présentation actuelle | Série au snapshot | Mode | Effort |
 |---|---|---|---|---|---|
 | Droit sur les successions, 1984, 1993, 1998 | Fiscalité, `_patrimoine_immobilier.qmd`, `fig-pi-tarif-successions` | figure + tableau | `successions-tarif` | par tranche **supposé** pour 1984 (TODO documentaliste) ; taux unique depuis 1993 | **fait le 19/10/2026** |
-| Droit sur les successions, 1969 et 1975 | même chapitre, `tbl-pi-baremes-successoraux` | tableau fait main | non (la série commence en 1984) | à établir, comme 1984 | moyen : verser les barèmes de 1969 et 1975 dans le paramètre en amont, puis ajouter deux états |
+| Droit sur les successions, 1969 et 1975 | même chapitre, `tbl-pi-baremes-successoraux` | tableau engendré depuis la série `successions-tarif` (fait le 19/10/2026, paramètres 0.136.1, PR openfisca-tunisia #495) | oui | à établir, comme 1984 | fait pour le tableau ; la figure garde les états de 1984, 1993 et 1998 (demande du propriétaire : pas de changement de figure) |
 | Impôt sur le revenu (IRPP), 1990, 2017, 2025 | Fiscalité, `_impot_revenu.qmd`, tableaux `bareme_1990/2017/2025`, `bareme_generations` | tableaux engendrés, pas de figure | non | par tranche (art. 44 § I ; le texte de 1990 imprime le taux moyen aux limites) | **faible** : `lignes_tranches` passe sur `impot_revenu/bareme.yaml` sans erreur (18 lignes, dates 1990, 2017, 2025 ; essai sur la copie locale du modèle à 0.118, à refaire sur la version publiée) ; ajouter `ot.ecrire_serie_tranches("irpp-bareme", …)` à `generate_bareme_tables.py`, laisser la CI régénérer, puis une figure à un cadre et trois états |
 | Contribution personnelle d'État, 1962-1986 | même chapitre, tableaux `bareme_cpe_*` (onglets) | tableaux engendrés | non | par tranche (tableaux à taux effectif imprimé) | **faible** : `lignes_tranches` passe sur `contribution_personnelle_etat/bareme.yaml` (116 lignes, 1962, 1965, 1980, 1983, 1986) ; même démarche ; figure à un cadre, cinq états, ou deux cadres (CPE, IRPP) pour la rupture de 1990 |
 | Contribution sociale de solidarité des personnes physiques, depuis 2018 | Fiscalité, `_impot_revenu.qmd` (section CSS) ; Caisses, `_etat_caisses.qmd` | texte | non | différence entre l'impôt au barème majoré (1 point, ½ point de 2023 à 2025) et l'impôt au barème : barème dérivé de l'IRPP | moyen : dépend de la série IRPP ; références du paramètre à remplacer par des URL pist.tn (TODO existant) |
@@ -84,7 +84,7 @@ documentaliste à côté de la figure dit quoi refaire si le texte établit l'au
    1990 en taux moyen (68 % de taux marginal supérieur → 35 %).
 3. **Mode `tranche_atteinte`** dans le composant, puis le **droit complémentaire de 2017** et
    l'**impôt sur la fortune** (après lecture du texte sur le mode).
-4. **Successions de 1969 et 1975** : verser les barèmes en amont, puis deux états de plus.
+4. **Successions de 1969 et 1975** : barèmes versés en amont (0.136.1) et tableau du chapitre engendré le 19 octobre 2026 ; la figure ne change pas.
 5. **CSS des personnes physiques** : courbe dérivée du barème de l'IRPP, après 1.
 6. **Électricité et gaz** : composant à adapter aux prix ; grilles datées à verser en amont.
    Chantier le plus lourd.

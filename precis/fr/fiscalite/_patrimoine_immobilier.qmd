@@ -456,14 +456,15 @@ print(": Les abattements sur les successions en ligne directe et entre époux, a
 
 :::: {.chronologie-repliable titre="Barèmes successoraux de 1969, de la loi de finances pour 1975, de celle pour 1984 et du code de 1993 : taux par parenté et par tranche"}
 
-| Tarif | Tranches de part nette | Ligne directe et époux | Frères et sœurs | Oncles, neveux, cousins | Non-parents |
-|---|---|---|---|---|---|
-| 1969 [@lf-1969, art. 14, p. 1371-1372] | de 0 à plus de 12 000 D | 7 à 23 % | 23 à 65 % | 47 à 94 % | 62 à 100 % |
-| 1975 [@loi74-101-lf1975, art. 29, p. 2916 ; éd. ar. p. 3221] | 0-1 000 D à plus de 18 000 D, six tranches | 6, 8, 9, 12, 15, 18 % | 23, 31, 36, 43, 50, 65 % | 47, 53, 58, 65, 72, 94 % | 62, 65, 72, 79, 87, 100 % |
-| 1984 [@lf-1984, art. 12, p. 3372] | 0-5 000 D, 5 000-10 000 D, 10 000-15 000 D, 15 000-45 000 D, 45 000-90 000 D, plus de 90 000 D | 6, 8, 10, 13, 18, 25 % | 20, 25, 30, 36, 42, 50 % | 25, 35, 45, 55, 65, 75 % | 35, 45, 55, 65, 75, 85 % |
-| 1993 [@loi-93-53-cdet, code, art. 20, p. 720] | taux unique | 5 % | 5 % | 25 % | 35 % (au-delà du quatrième degré) |
-
-: Les barèmes du droit sur les successions de 1969 à 1993, par parenté. En 1969 et en 1975, l'habitation principale du défunt est taxée à 4,30 % ; en 1984, elle est exonérée en ligne directe et entre époux. Les donations de 1969 suivent un autre barème : ligne directe et époux 10,20 → 11,50 % ; frères et sœurs 38,10 → 43 % ; oncles, neveux et cousins 44,40 → 50 % ; au-delà du quatrième degré 57,20 → 65 %. Le premier taux de la ligne directe de 1975, 6 %, est celui de l'édition arabe du *Journal officiel*. Les barèmes de 1975 et de 1984 sont ceux des mutations par décès ; la catégorie des oncles, neveux et cousins vise en 1984 les cousins germains, en 1993 les « cousins » sans précision. Les lois de finances pour 1985, 1986, 1990, 1991, 1992 et 1993, les lois de finances complémentaires pour 1988, 1989 et 1991, et les deux lois du 26 novembre 1987 sur l'enregistrement ne modifient ni le barème de 1984 ni l'abattement de 1975 ; la loi de finances pour 1988 y déroge pour la propriété agricole (@tbl-pi-registre-donations). {#tbl-pi-baremes-successoraux}
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import patrimoine_immobilier as fig_pi
+print(fig_pi.tableau_baremes_successoraux())
+print()
+print(": Les barèmes du droit sur les successions de 1969 à 1993, par parenté. En 1969 et en 1975, l'habitation principale du défunt est taxée à 4,30 % ; en 1984, elle est exonérée en ligne directe et entre époux. Les donations de 1969 suivent un autre barème : ligne directe et époux 10,20 → 11,50 % ; frères et sœurs 38,10 → 43 % ; oncles, neveux et cousins 44,40 → 50 % ; au-delà du quatrième degré 57,20 → 65 %. Le premier taux de la ligne directe de 1975, 6 %, est celui de l'édition arabe du *Journal officiel*. Les barèmes de 1975 et de 1984 sont ceux des mutations par décès ; la catégorie des oncles, neveux et cousins vise en 1984 les cousins germains, en 1993 les « cousins » sans précision. Les lois de finances pour 1985, 1986, 1990, 1991, 1992 et 1993, les lois de finances complémentaires pour 1988, 1989 et 1991, et les deux lois du 26 novembre 1987 sur l'enregistrement ne modifient ni le barème de 1984 ni l'abattement de 1975 ; la loi de finances pour 1988 y déroge pour la propriété agricole (@tbl-pi-registre-donations). {#tbl-pi-baremes-successoraux}")
+```
 
 <!-- TODO (documentaliste) : barème successoral de 1984 à 1993 — LF 1987 (loi n° 86-106), LF 1988 hors art. 32 (loi n° 87-83) et LF 1989 hors pages 1793, 1798 et 1800-1805 (loi n° 88-145) restent à lire en entier ; lois hors finances dont l'intitulé ne vise pas l'enregistrement non parcourues ; fascicules 1986 n° 82, 84 et 86 absents du corpus local. Restent aussi : le mode de liquidation du barème avant 1993 (taux marginal par tranche ou taux de la tranche sur toute la part ; décret du 28 décembre 1929, différé), l'origine de l'abattement de 4 000 D par héritier handicapé s'il est antérieur au code, et la confirmation de l'art. 30 de la LF 1975 (impression tramée) sur l'édition arabe, p. 3221. Avant d'écrire que le barème de 1984 tient jusqu'au code sans réserve, lever ces points. Note : docs/notes/successions-bareme-1985-1993.md, § 2 et § 5. -->
 

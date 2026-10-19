@@ -296,10 +296,10 @@ _L.update({
 figtools.register_provenance(
     SERIE_SUCC_TARIF,
     titre=("Tarif du droit d'enregistrement des mutations par décès, par degré de parenté et "
-           "par tranche de part nette, à chaque date d'effet depuis le 1er janvier 1984"),
+           "par tranche de part nette, à chaque date d'effet depuis le 2 janvier 1969"),
     titre_ar=("تعريفة معلوم التسجيل على نقل الملكية بالوفاة، حسب درجة القرابة وشريحة الحصة "
-              "الصافية، عند كلّ تاريخ نفاذ منذ 1 جانفي 1984"),
-    sources=["lf-1984", "loi-93-53-cdet", "loi-98-73"],
+              "الصافية، عند كلّ تاريخ نفاذ منذ 2 جانفي 1969"),
+    sources=["lf-1969", "loi74-101-lf1975", "lf-1984", "loi-93-53-cdet", "loi-98-73"],
     unite=("taux fixé pour la tranche (taux marginal) et taux moyen, en pourcentage de la "
            "part nette, elle-même en dinars courants"),
     unite_ar=("النسبة المحدَّدة للشريحة (النسبة الحدية) والنسبة المتوسّطة، بالمائة من "
@@ -309,8 +309,8 @@ figtools.register_provenance(
                "plus ni seuil ni taux"),
     perimetre_ar=("أربع درجات قرابة؛ سطر لكلّ شريحة ولكلّ تاريخ نفاذ، مع نصّ الرائد الرسمي "
                   "الذي يضبطها؛ والشريحة الملغاة في 17 ماي 1993 لا عتبة لها ولا نسبة"),
-    caveats=("La figure commence au barème de 1984 ; ceux de 1969 et de 1975 sont au tableau "
-             "des barèmes successoraux du chapitre. Le taux moyen est calculé "
+    caveats=("La figure commence au barème de 1984 ; les barèmes de 1969 et de 1975 sont au "
+             "tableau des barèmes successoraux du chapitre. Le taux moyen est calculé "
              "barème appliqué par tranche : chaque fraction de part supporte le taux de sa "
              "tranche. Depuis 1993, le même taux vaut pour les donations ; "
              "les donations familiales sont au droit fixe depuis 2006."),
@@ -556,6 +556,42 @@ def tableau_abattements_effet() -> str:
     return "\n".join(md)
 
 
+# Barèmes successoraux : un état du droit par ligne, chaque case donne les taux de la parenté,
+# tranche par tranche, et les limites des tranches. Tout vient de la série `successions-tarif` ;
+# seules les références de chaque état sont écrites ici (clés de la bibliographie).
+ETATS_BAREMES = ("1969-01-02", "1975-01-02", "1984-01-01", "1993-05-17")
+REFERENCES_BAREMES = {
+    "1969-01-02": "[@lf-1969, art. 14, p. 1371-1372]",
+    "1975-01-02": "[@loi74-101-lf1975, art. 29, p. 2916 ; éd. ar. p. 3221]",
+    "1984-01-01": "[@lf-1984, art. 12, p. 3372]",
+    "1993-05-17": "[@loi-93-53-cdet, code, art. 20, p. 720]",
+}
+
+
+def _pct(taux: float) -> str:
+    return f"{taux * 100:g}".replace(".", ",")
+
+
+def _case_bareme(bareme: list[tuple[float, float]]) -> str:
+    taux = " / ".join(_pct(t) for _s, t in bareme) + " %"
+    if len(bareme) == 1:
+        return taux
+    limites = ", ".join(_d(s) for s, _t in bareme[1:])
+    return f"{taux}<br>({_lab('limites')} : {limites} D)"
+
+
+def tableau_baremes_successoraux() -> str:
+    """Tableau Markdown : à chaque état du droit, par parenté, taux et limites des tranches."""
+    d = figtools.series(SERIE_SUCC_TARIF)
+    entete = [_lab("c_tarif")] + [_lab(p) for p in PARENTES]
+    md = ["| " + " | ".join(entete) + " |", "|---" * len(entete) + "|"]
+    for date in ETATS_BAREMES:
+        cases = [f"{date_longue(date)} {REFERENCES_BAREMES[date]}"]
+        cases += [_case_bareme(_bareme_a(d, p, date)) for p in PARENTES]
+        md.append("| " + " | ".join(cases) + " |")
+    return "\n".join(md)
+
+
 _MOIS = {"fr": ("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août",
                 "septembre", "octobre", "novembre", "décembre"),
          "ar": ("جانفي", "فيفري", "مارس", "أفريل", "ماي", "جوان", "جويلية", "أوت",
@@ -571,6 +607,8 @@ def date_longue(date: str) -> str:
 
 
 _L.update({
+    "limites": {"fr": "limites des tranches", "ar": "حدود الشرائح"},
+    "c_tarif": {"fr": "Tarif en vigueur le", "ar": "التعريفة السارية في"},
     "u_courants": {"fr": "D courants", "ar": "د جارية"},
     "u_constants": {"fr": "D de {base}", "ar": "د {base}"},
     "court_par_enfant_ascendant_conjoint": {"fr": "Abattement par tête", "ar": "الطرح عن كلّ فرد"},
