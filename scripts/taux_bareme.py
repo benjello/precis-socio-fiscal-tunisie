@@ -44,10 +44,12 @@ Bareme = list[tuple[float, float]]
 _L = {
     "marginal": {"fr": "taux marginal (escalier)", "ar": "النسبة الحدية (درجات)"},
     "moyen": {"fr": "taux moyen (courbe)", "ar": "النسبة المتوسّطة (منحنى)"},
+    "tranche": {"fr": "taux de la tranche (escalier)", "ar": "نسبة الشريحة (درجات)"},
     "unique": {"fr": "taux unique : marginal et moyen confondus",
                "ar": "نسبة وحيدة: الحدية والمتوسّطة متطابقتان"},
     "c_assiette": {"fr": "Assiette (D)", "ar": "الوعاء (د)"},
     "c_marginal": {"fr": "taux marginal (%)", "ar": "النسبة الحدية (%)"},
+    "c_tranche": {"fr": "taux de la tranche (%)", "ar": "نسبة الشريحة (%)"},
     "c_du": {"fr": "montant dû (D)", "ar": "المبلغ المستوجَب (د)"},
     "c_moyen": {"fr": "taux moyen (%)", "ar": "النسبة المتوسّطة (%)"},
     "panneau": {"fr": "Barème", "ar": "الجدول"},
@@ -141,7 +143,7 @@ def grille(bareme: Bareme, assiette_max: float, n: int = 400) -> list[float]:
 def table_taux(panneaux: Sequence[tuple[str, dict[str, Bareme]]],
                libelles_etats: dict[str, str], assiettes: Iterable[float],
                entete_panneau: str | None = None, entete_assiette: str | None = None,
-               avec_montant: bool = False):
+               avec_montant: bool = False, sans_moyen: Iterable[str] = ()):
     """Données de la figure : par panneau et par assiette, marginal et moyen par état.
 
     `panneaux` : [(libellé du panneau, {date: barème})] ; `libelles_etats` : date ->
@@ -149,9 +151,13 @@ def table_taux(panneaux: Sequence[tuple[str, dict[str, Bareme]]],
     en-têtes des deux premières colonnes, dans la langue du livre (« Barème », « Assiette
     (D) » à défaut). Le taux moyen d'une assiette nulle est laissé vide. `avec_montant` :
     ajoute le montant dû, en dinars courants — à n'activer que si le tableau donne aussi
-    sa contrepartie en dinars constants (convention du précis).
+    sa contrepartie en dinars constants (convention du précis). `sans_moyen` : dates des états
+    dont le mode de liquidation n'est pas établi ; ils n'ont que la colonne du taux de leur
+    tranche, ni taux marginal ni taux moyen ni montant.
     """
     import pandas as pd
+
+    sans_moyen = set(sans_moyen)
 
     lignes = []
     assiettes = list(assiettes)
@@ -162,6 +168,9 @@ def table_taux(panneaux: Sequence[tuple[str, dict[str, Bareme]]],
             for date, bareme in etats.items():
                 tm = taux_moyen(bareme, x)
                 e = libelles_etats[date] + ("، " if figtools.lang() == "ar" else ", ")
+                if date in sans_moyen:
+                    ligne[f"{e}{_lab('c_tranche')}"] = round(100 * taux_marginal(bareme, x), 3)
+                    continue
                 ligne[f"{e}{_lab('c_marginal')}"] = round(100 * taux_marginal(bareme, x), 3)
                 if avec_montant:
                     ligne[f"{e}{_lab('c_du')}"] = round(montant_du(bareme, x), 3)
@@ -184,6 +193,7 @@ def fig_taux_moyens_marginaux(
     xlabel: str, ylabel: str, titre: str, colonnes: int = 2,
     xticks: Sequence[float] | Sequence[Sequence[float]] | None = None, ymax: float | None = None,
     infobulle_panneau: bool = True, largeur: float | None = None,
+    sans_moyen: Iterable[str] = (),
 ):
     """Taux marginal (escalier) et taux moyen (courbe) de chaque état, un cadre par panneau.
 
@@ -192,6 +202,8 @@ def fig_taux_moyens_marginaux(
     sont fournis dans la langue du livre ; le composant les met en forme (`fig_text`).
     `assiette_max` (et `xticks`) : une valeur pour tous les cadres, ou une liste, une valeur
     par cadre (barèmes d'échelles très différentes : 1962 et 1986, par exemple).
+    `sans_moyen` : dates des états dont le mode de liquidation n'est pas établi ; la figure n'en
+    trace que l'escalier du taux de la tranche, sans courbe de taux moyen.
     """
     import math
 
@@ -200,6 +212,8 @@ def fig_taux_moyens_marginaux(
     import matplotlib.pyplot as plt
     from matplotlib.lines import Line2D
 
+    sans_moyen = set(sans_moyen)
+    moyen_vu = False
     figtools.apply_lang_font()
     ft = figtools.fig_text
     lignes_fig = math.ceil(len(panneaux) / colonnes)
@@ -232,10 +246,11 @@ def fig_taux_moyens_marginaux(
             marg, = ax.step(xs, ys + [ys[-1]], where="post", color=c, lw=2.4 if unique else 1.2,
                             ls=ls, zorder=z, alpha=1 if unique else 0.9)
             plus_haut = max(plus_haut, max(ys))
-            if not unique:
+            if not unique and date not in sans_moyen:
                 gx = grille(bareme, assiette_max)
                 gy = [100 * taux_moyen(bareme, x) for x in gx]
                 moy, = ax.plot(gx, gy, color=c, lw=2.4, ls=ls, zorder=z + 1)
+                moyen_vu = True
                 if infobulle_panneau:
                     figtools.infobulle(moy, f"{libelle} · {libelles_etats[date]} · {_lab('moyen')}")
             if infobulle_panneau:
@@ -257,9 +272,13 @@ def fig_taux_moyens_marginaux(
         ax.set_ylabel(ft(ylabel))
     poignees = [Line2D([], [], color=couleurs[e], lw=2.4) for e in dates]
     noms = [ft(libelles_etats[e]) for e in dates]
-    poignees += [Line2D([], [], color="#57606a", lw=1.2, drawstyle="steps-post"),
-                 Line2D([], [], color="#57606a", lw=2.4)]
-    noms += [ft(_lab("marginal")), ft(_lab("moyen"))]
+    escalier = Line2D([], [], color="#57606a", lw=1.2, drawstyle="steps-post")
+    if sans_moyen and not moyen_vu:  # aucune courbe de taux moyen : l'escalier est le taux de la tranche
+        poignees.append(escalier)
+        noms.append(ft(_lab("tranche")))
+    else:
+        poignees += [escalier, Line2D([], [], color="#57606a", lw=2.4)]
+        noms += [ft(_lab("marginal")), ft(_lab("moyen"))]
     if unique_vu:
         poignees.append(Line2D([], [], color="#57606a", lw=2.4, ls="none", marker="none"))
         noms.append(ft(_lab("unique")))

@@ -3682,3 +3682,23 @@
   - 'lire à l''image la LF 1987 (loi n° 86-106, n° 78/1986, p. 1610-1623) et la LF 1988 (loi n° 87-83, n° 91/1987, p. 1628-1637) en entier, et la LF 1989 hors pages déjà lues'
   - 'établir le tarif des donations applicable de 1984 au code (loi n° 74-101, art. 29 et 31)'
   - 'établir l''origine de l''abattement de 4 000 D par héritier handicapé ; confirmer l''art. 30 de la LF 1975 sur l''édition arabe (p. 3221) ; le mode de liquidation avant 1993 relève d''une fiche à part, r-liquidation-successions-1929, proposée dans docs/notes/successions-liquidation-1969-1984.md, § 6, à verser avec son ancre'
+- id: r-liquidation-successions-1929
+  objet: règle de liquidation du tarif progressif des droits de mutation par décès avant le code de 1993 — taux de chaque tranche sur la seule fraction de la part nette comprise dans la tranche, ou taux de la tranche atteinte sur toute la part — posée par le décret du 28 décembre 1929 « substituant pour les droits de mutations par décès le tarif progressif au tarif proportionnel » ou par un texte qui l'a modifié
+  ou: [precis/fr/fiscalite/_patrimoine_immobilier.qmd#sec-pi-donations-successions]
+  requetes:
+    titres_like: ['%progressi%', '%mutation%par%d_c%', '%successions%', '%1929%', '%23 juin 1930%']
+    depuis: 1929-12-28
+  periode:
+    jusqu_au: 1993-05-17
+    motif: le décret du 28 décembre 1929 est abrogé, « tel que modifié et complété par les textes subséquents », par la loi n° 93-53 du 17 mai 1993, art. 8, II (JORT n° 39 du 25 mai 1993, p. 716)
+  passes:
+  - date: 2026-10-19
+    role: documentaliste
+    sources: [jort_cache, corpus_local, web]
+    couverture: 'Lus à l''image, édition française : loi n° 62-81, art. 1er (n° 64/1962, p. 1655) ; décret n° 68-104, art. 1er (n° 17/1968, p. 417-418) ; LF 1969, art. 14 (n° 55/1968, p. 1371-1372) ; LF 1975, art. 29 (n° 80/1974, p. 2916) ; LF 1984, art. 12 (n° 86/1983, p. 3372 ; édition arabe p. 4502) ; loi n° 93-53, art. 8 (n° 39/1993, p. 716-717) ; loi n° 58-65 (n° 51/1958, p. 685-686, prorogation de délai). Aucun de ces textes ne dit comment le taux s''applique : tous fixent les taux « pour la part nette recueillie par chaque ayant-droit » par tranches « Entre … et … ». jort_cache, titres avant 1993 (motifs LIKE ci-dessus) : aucun texte de liquidation. Lacunes : jort_cache et le corpus local ne remontent pas avant 1956, le décret de 1929 n''y est donc pas ; lois n° 59-98 (p. 912) et 60-23 (p. 1518) lues : prorogations de délai seules ; décret du 29 juin 1957, art. 8 (n° 52/1957) absent du corpus local ; décret n° 66-31 du 24 janvier 1966 non lu. Web, le 19/10/2026 : gallica.bnf.fr (SRU, pages /date, services/Issues) 403 ; Wayback save de bpt6k442529z.texteBrut 520 ; babel.hathitrust.org 403 ; googleapis.com/books 429 ; archive.org advancedsearch sans résultat.'
+    couvert_jusqu_au: 1993-05-25
+    resultat: aucun
+  a_faire:
+  - 'lire le décret du 28 décembre 1929 dans la Revue algérienne, tunisienne et marocaine de législation et de jurisprudence, année 1930, partie législation (Gallica, ark:/12148/bpt6k442529z ; 1929 : bpt6k442528k), depuis un poste qui atteint Gallica'
+  - 'à défaut : Journal officiel tunisien de fin décembre 1929 ou de début 1930, à la Bibliothèque nationale de Tunisie (Gallica n''a que 1883-1887 ; le Journal des tribunaux français en Tunisie n''y a ni 1929 ni 1930)'
+  - 'lire le décret n° 66-31 du 24 janvier 1966 et le décret du 29 juin 1957, art. 8 (n° 52/1957, à obtenir sur pist.tn)'

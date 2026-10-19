@@ -337,7 +337,7 @@ Les transmissions d'immeubles à titre gratuit — donations entre vifs et succe
 
 : Le droit sur les successions selon la parenté, 1969-2026. De 1969 à 1984, le taux croît avec la part nette reçue ; le premier taux de 1975 en ligne directe, 6 %, est celui de l'édition arabe du *Journal officiel* ; les barèmes complets sont au @tbl-pi-baremes-successoraux. {#tbl-pi-successions-en-dates}
 
-Pour les mutations par décès, @fig-pi-tarif-successions donne, pour chaque degré de parenté et selon la part nette recueillie par l'ayant droit, le [taux marginal](#g-taux-marginal) du droit, celui de la tranche où tombe la part, et son [taux moyen](#g-taux-moyen), le droit rapporté à la part, à trois dates : le barème à six tranches du 1^er^ janvier 1984, de 6 à 85 % ; le taux unique par parenté du code de 1993, où les deux taux se confondent ; la ligne directe et les époux ramenés de 5 % à 2,5 % le 17 août 1998. En 1993, les frères et sœurs passent de 20 à 50 % selon la tranche à 5 %, le taux de la ligne directe ; pour les oncles, neveux et cousins comme pour les parents plus éloignés, le taux unique est celui de la première tranche de 1984, 25 % et 35 %.
+Pour les mutations par décès, @fig-pi-tarif-successions donne, pour chaque degré de parenté et selon la part nette recueillie par l'ayant droit, le taux du droit à trois dates : le barème à six tranches du 1^er^ janvier 1984, de 6 à 85 %, où le taux est celui de la tranche où tombe la part ; le taux unique par parenté du code de 1993, qui vaut pour toute la part, de sorte que le [taux marginal](#g-taux-marginal) et le [taux moyen](#g-taux-moyen) se confondent ; la ligne directe et les époux ramenés de 5 % à 2,5 % le 17 août 1998. En 1993, les frères et sœurs passent de 20 à 50 % selon la tranche à 5 %, le taux de la ligne directe ; pour les oncles, neveux et cousins comme pour les parents plus éloignés, le taux unique est celui de la première tranche de 1984, 25 % et 35 %.
 
 ```{python}
 #| label: fig-pi-tarif-successions
@@ -350,31 +350,32 @@ figtools.figure_tabs(
     fig_pi.fig_tarif_successions(), fig_pi.table_tarif_successions(),
     fig_pi.SERIE_SUCC_TARIF,
     slug="fig_pi_tarif_successions", nominal=False,
-    caption=("Mutations par décès : taux marginal et taux moyen du droit d'enregistrement "
-             "selon la part nette et la parenté, barème appliqué par tranche, au 1^er^ janvier "
-             "1984, au 17 mai 1993 et au 17 août 1998"),
+    caption=("Mutations par décès : taux du droit d'enregistrement selon la part nette et "
+             "la parenté, au 1^er^ janvier 1984, au 17 mai 1993 et au 17 août 1998"),
     note_lecture=(
         "Chaque cadre suit un degré de parenté entre le défunt et l'ayant droit. L'axe "
         "horizontal porte la part nette recueillie par l'ayant droit, en dinars courants ; "
-        "l'axe vertical, un taux en pour cent. Le trait fin en escalier est le taux que le "
-        "texte fixe pour la tranche où tombe la part, ou taux marginal ; la courbe épaisse "
-        "est le taux moyen, droit rapporté à la part, calculé barème appliqué par tranche : "
-        "chaque fraction de la part supporte le taux de sa tranche. Le barème du 1^er^ "
+        "l'axe vertical, un taux en pour cent. L'escalier est le taux que le texte fixe pour la "
+        "tranche où tombe la part. Le barème du 1^er^ "
         "janvier 1984 a six tranches, de 0 à 5 000 D, de 5 000 à 10 000 D, de 10 000 à "
         "15 000 D, de 15 000 à 45 000 D, de 45 000 à 90 000 D, puis au-delà de 90 000 D "
         "[@lf-1984, art. 12, p. 3372]. Depuis le 17 mai 1993, le taux est unique pour toute "
-        "la part [@loi-93-53-cdet, code, art. 20, p. 720] : taux marginal et taux moyen se "
-        "confondent en un seul trait. Le 17 août 1998, seule la ligne directe change "
+        "la part [@loi-93-53-cdet, code, art. 20, p. 720] : le taux marginal et le taux "
+        "moyen, droit rapporté à la part, se confondent en un seul trait. Le 17 août 1998, "
+        "seule la ligne directe change "
         "[@loi-98-73, art. 8, p. 1737] ; ailleurs, le tireté vert de 1998 recouvre le trait "
-        "bleu de 1993. L'onglet « Données » donne, pour chaque parenté, le taux marginal "
-        "et le taux moyen aux seuils de 1984 et à 120 000 D ; à un seuil, le taux "
-        "marginal est celui de la tranche qui s'y achève. Les barèmes de 1969 "
+        "bleu de 1993. L'onglet « Données » donne, pour chaque parenté, le taux de la "
+        "tranche de 1984 et, pour 1993 et 1998, le taux marginal et le taux moyen, aux "
+        "seuils de 1984 et à 120 000 D ; à un seuil, le taux est celui de la tranche qui "
+        "s'y achève. Les barèmes de 1969 "
         "et de 1975 sont au @tbl-pi-baremes-successoraux."),
     generated="{{< meta date >}}",
 )
 ```
 
-<!-- TODO (documentaliste) : la figure fig-pi-tarif-successions calcule le taux moyen de 1984 barème appliqué par tranche (chaque fraction de part au taux de sa tranche). Le texte de 1984 ne dit pas si le taux frappe la seule fraction comprise dans la tranche ou la part entière : le mode de liquidation avant 1993 reste à établir (décret du 28 décembre 1929, voir le TODO du barème successoral plus bas et docs/notes/successions-bareme-1985-1993.md, § 5). S'il s'agit du taux de la tranche atteinte appliqué à toute la part, retirer la courbe du taux moyen de 1984 (scripts/taux_bareme.py ne traite que le barème par tranche) et revoir la note de lecture, la provenance et docs/notes/taux-moyens-marginaux-baremes.md. -->
+<!-- TODO (documentaliste) : le mode de liquidation du barème de 1984 — taux de chaque tranche sur la seule fraction comprise dans la tranche, ou taux de la tranche atteinte sur toute la part — ne se lit dans aucun texte de 1962 à 1984 (docs/notes/successions-liquidation-1969-1984.md) ; la figure ne trace donc pour 1984 que le taux de la tranche. Une fois le décret du 28 décembre 1929 lu, rétablir la courbe du taux moyen de 1984 si la liquidation est par tranches (retirer l'état de `SANS_MOYEN` dans figures/patrimoine_immobilier.py), ou la traiter en « tranche atteinte » (nouveau mode de scripts/taux_bareme.py) ; revoir alors le texte au-dessus, la note de lecture et la provenance. -->
+
+<!-- RECHERCHE r-liquidation-successions-1929 : règle de liquidation du tarif progressif des droits de mutation par décès avant le code de 1993 (voir docs/recherches.yml) -->
 
 - **Une rupture : les donations familiales au droit fixe, en 2006.** Depuis le 10 novembre 2006, date retenue par l'administration fiscale [@dgi-nc-23-2007], une donation d'immeuble entre ascendants et descendants ou entre époux n'est plus enregistrée au droit proportionnel de 2,5 %, plus 1 % de droit de la Conservation ou sur l'immeuble non immatriculé, plus 3 % pour défaut de mention de l'origine : elle supporte un droit fixe de 15 D par acte et 100 D de droit de la Conservation ou sur l'immeuble non immatriculé, et sort du droit pour défaut de mention de l'origine [@loi-2006-69, art. 1 à 3 et 5, p. 3869]. La loi est désignée par son intitulé, « relative à l'exonération des donations entre ascendants et descendants et entre époux du droit d'enregistrement proportionnel », et n'énonce pas de motif. Deux tiers en donnent un. Le Conseil constitutionnel, dans son avis publié avec la loi, écrit que ces facilités fiscales s'insèrent « dans le cadre de la protection de la famille qui fait partie des objectifs consacrés par le préambule de la Constitution » [@loi-2006-69, p. 3875] ; l'administration fiscale présente la loi comme prise « dans le but de faciliter les mutations de biens entre ascendants et descendants et entre époux » [@dgi-nc-23-2007]. **Les successions, elles, restent au droit proportionnel** de 2,5 % en ligne directe.
 - **Une étape : une fois tous les cinq ans, en 2018.** La loi de finances pour 2018, sous la rubrique « Rationalisation des avantages fiscaux au titre des donations d'immeubles et de fonds de commerce entre ascendants et descendants et entre époux », n'accorde plus les trois droits fixes qu'une fois tous les cinq ans pour un même droit réel [@lf-2018, art. 34, p. 4278].

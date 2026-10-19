@@ -22,6 +22,7 @@ from taux_bareme import (  # noqa: E402
     montant_du,
     taux_marginal,
     taux_moyen,
+    table_taux,
     taux_unique,
 )
 
@@ -136,6 +137,27 @@ class BaremeALaDateTest(unittest.TestCase):
                          [(0.0, 0.06), (5000.0, 0.08)])
         self.assertEqual(bareme_a_la_date(d, "parente", "ld", "1993-05-17"), [(0.0, 0.05)])
         self.assertEqual(bareme_a_la_date(d, "parente", "fs", "2000-01-01"), [(0.0, 0.2)])
+
+
+@unittest.skipIf(pd is None, "pandas absent")
+class SansMoyenTest(unittest.TestCase):
+    """Un état dont le mode de liquidation n'est pas établi n'a que le taux de sa tranche."""
+
+    PANNEAUX = [("P", {"1984": [(0.0, 0.06), (5000.0, 0.08)], "1993": [(0.0, 0.05)]})]
+
+    def test_colonnes(self):
+        df = table_taux(self.PANNEAUX, {"1984": "1984", "1993": "1993"}, [3000, 8000],
+                        sans_moyen=["1984"])
+        colonnes = list(df.columns)
+        self.assertIn("1984, taux de la tranche (%)", colonnes)
+        self.assertNotIn("1984, taux moyen (%)", colonnes)
+        self.assertNotIn("1984, taux marginal (%)", colonnes)
+        self.assertIn("1993, taux moyen (%)", colonnes)
+
+    def test_valeurs_de_la_tranche(self):
+        df = table_taux(self.PANNEAUX, {"1984": "1984", "1993": "1993"}, [3000, 8000],
+                        sans_moyen=["1984"])
+        self.assertEqual(list(df["1984, taux de la tranche (%)"]), [6.0, 8.0])
 
 
 if __name__ == "__main__":

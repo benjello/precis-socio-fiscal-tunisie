@@ -44,7 +44,7 @@ Colonnes : où (livre, chapitre) ; présentation actuelle ; série dans le snaps
 
 | Barème | Où | Présentation actuelle | Série au snapshot | Mode | Effort |
 |---|---|---|---|---|---|
-| Droit sur les successions, 1984, 1993, 1998 | Fiscalité, `_patrimoine_immobilier.qmd`, `fig-pi-tarif-successions` | figure + tableau | `successions-tarif` | par tranche **supposé** pour 1984 (TODO documentaliste) ; taux unique depuis 1993 | **fait le 19/10/2026** |
+| Droit sur les successions, 1984, 1993, 1998 | Fiscalité, `_patrimoine_immobilier.qmd`, `fig-pi-tarif-successions` | figure + tableau | `successions-tarif` | 1984 : mode de liquidation non établi, taux de la tranche seul (fiche `r-liquidation-successions-1929`) ; taux unique depuis 1993 | **fait le 19/10/2026** |
 | Droit sur les successions, 1969 et 1975 | même chapitre, `tbl-pi-baremes-successoraux` | tableau engendré depuis la série `successions-tarif` (fait le 19/10/2026, paramètres 0.136.1, PR openfisca-tunisia #495) | oui | à établir, comme 1984 | fait pour le tableau ; la figure garde les états de 1984, 1993 et 1998 (demande du propriétaire : pas de changement de figure) |
 | Impôt sur le revenu (IRPP), 1990, 2017, 2025 | Fiscalité, `_impot_revenu.qmd`, tableaux `bareme_1990/2017/2025`, `bareme_generations` | tableaux engendrés, pas de figure | non | par tranche (art. 44 § I ; le texte de 1990 imprime le taux moyen aux limites) | **faible** : `lignes_tranches` passe sur `impot_revenu/bareme.yaml` sans erreur (18 lignes, dates 1990, 2017, 2025 ; essai sur la copie locale du modèle à 0.118, à refaire sur la version publiée) ; ajouter `ot.ecrire_serie_tranches("irpp-bareme", …)` à `generate_bareme_tables.py`, laisser la CI régénérer, puis une figure à un cadre et trois états |
 | Contribution personnelle d'État, 1962-1986 | même chapitre, tableaux `bareme_cpe_*` (onglets) | tableaux engendrés | non | par tranche (tableaux à taux effectif imprimé) | **faible** : `lignes_tranches` passe sur `contribution_personnelle_etat/bareme.yaml` (116 lignes, 1962, 1965, 1980, 1983, 1986) ; même démarche ; figure à un cadre, cinq états, ou deux cadres (CPE, IRPP) pour la rupture de 1990 |
@@ -69,9 +69,13 @@ appliqué : `fig-pi-tarif-successions` trace, pour quatre parentés, le taux mar
 taux moyen aux états du 1er janvier 1984, du 17 mai 1993 et du 17 août 1998 ; l'onglet
 « Données » donne taux marginal et taux moyen aux seuils de 1984 et à 120 000 D.
 
-Réserve : le mode de liquidation du barème de 1984 n'est pas établi. Le taux moyen est
-calculé barème appliqué par tranche ; la note de lecture le dit en ces termes, et un TODO
-documentaliste à côté de la figure dit quoi refaire si le texte établit l'autre mode.
+Le mode de liquidation du barème de 1984 n'est établi par aucun texte de 1962 à 1984
+(`docs/notes/successions-liquidation-1969-1984.md`) : la figure ne trace pour 1984 que le
+taux de la tranche, sans courbe de taux moyen (`SANS_MOYEN` dans
+`figures/patrimoine_immobilier.py`, option `sans_moyen` du composant). Un TODO documentaliste
+et la fiche `r-liquidation-successions-1929` disent quoi refaire une fois le décret du
+28 décembre 1929 lu : rétablir la courbe si la liquidation est par tranches, ou ajouter le
+mode « tranche atteinte ».
 
 ## 4. Ordre de traitement proposé
 
