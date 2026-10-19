@@ -39,12 +39,17 @@ Autres textes vus :
 - loi n° 58-65 du 26 juin 1958 « relative aux droits de mutation par décès » (n° 51 du 27 juin
   1958, p. 685-686) : elle ne fait que proroger au 1^er^ juillet 1959 le délai de l'art. 54 du
   décret du 27 juin 1954 ;
-- lois n° 59-98 (n° 44/1959, p. 912) et n° 60-23 (n° 55/1960, p. 1518), de même intitulé : vues
-  par leurs intitulés seuls, qui annoncent la même prorogation ;
-- code de 1993 (compilation de 2020, infirst.tn) : art. 16 (« Les droits d'enregistrement sont
-  proportionnels, progressifs ou fixes ») ; aucun article ne dit comment un droit progressif se
-  liquide. L'art. 20 *bis* sur le droit complémentaire, ajouté en 2017, précise lui-même qu'il est
-  liquidé « sur la valeur globale ».
+- lois n° 59-98 du 20 août 1959 (n° 44/1959, p. 912) et n° 60-23 du 30 novembre 1960 (n° 55/1960,
+  p. 1518), de même intitulé, lues à l'image : un article chacune, qui proroge le même délai au
+  1^er^ juillet 1960, puis au 1^er^ juillet 1965 ;
+- code de 1993, art. 16, I (n° 39/1993, p. 719) : « Les droits d'enregistrement sont
+  proportionnels, progressifs ou fixes selon la nature des actes et mutations qui y sont
+  assujettis. » Les articles lus du code (art. 16 à 19, p. 719 ; art. 20, 49 et 51 à 55, lus lors
+  de la passe du 18 octobre) ne disent pas comment un droit progressif se liquide ; le reste du
+  code a été cherché par mots dans une compilation de 2020, sans résultat. Le droit complémentaire
+  sur les ventes d'immeubles, créé en 2017, est au contraire « liquidé sur la valeur globale de la
+  vente ou de la donation » (loi de finances pour 2017, art. 29, p. 3836 ; clé `lf-2017`) : quand
+  le législateur veut le taux de la tranche atteinte sur tout le montant, il l'écrit.
 
 La loi n° 93-53, art. 8, II, abroge séparément la loi n° 62-81 (sauf son art. 10), l'art. 31 de la
 loi n° 74-101 et les art. 13, 14 et 16 de la loi n° 83-113 (p. 717). Elle ne cite ni l'art. 29 de
@@ -58,7 +63,8 @@ ce décret qui décide.
 Ils sont à garder hors du texte rendu :
 
 1. **Taux de 100 %.** Entre parents au-delà du quatrième degré et entre non-parents, la dernière
-   tranche porte 100 % : depuis le décret n° 68-104 (p. 418 : 96,80 % plus 4,84 % de demi-décime),
+   tranche porte 100 % : depuis le décret n° 68-104 (p. 418 : ancien tarif 96,80 % et demi-décime
+   4,84 %, soit 101,64 %, mais « Tarif Nouveau » imprimé à 100 % : le taux est ramené à 100 %),
    dans la LF 1969 (« Au delà de 12.000 D » : 100 %, p. 1372) et dans la LF 1975 (« Au delà de
    18.000 D » : 100 %, p. 2916). Si le taux de la tranche atteinte frappait toute la part, un
    non-parent recevant 12 000,001 D en 1969 perdrait toute sa part. Celui qui reçoit 12 000 D
@@ -92,14 +98,18 @@ Ils sont à garder hors du texte rendu :
   - `www.googleapis.com/books/v1/volumes` : 429, quota ;
   - `archive.org/advancedsearch.php` : aucune notice utile ;
   - recherches générales et sur gallica.bnf.fr : le titre du décret n'apparaît que dans les
-    visas des compilations du code. Le *Journal officiel tunisien* n'est numérisé sur Gallica que
-    pour cinq années, toutes du XIX^e^ siècle d'après les notices indexées.
-- Autres pistes : *Journal des tribunaux de la Tunisie* (Gallica `cb32800545c`) ; Bibliothèque
-  nationale de Tunisie ; décret n° 66-31 du 24 janvier 1966 et décret du 29 juin 1957, art. 8
-  (n° 52/1957, absent du corpus local), non lus.
+    visas des compilations du code.
+- Ce que Gallica ne couvre pas, d'après les instantanés web.archive.org des pages de collection :
+  le *Journal officiel tunisien* (`cb328021808/date`, instantané du 23 février 2024) n'y a que
+  1883 à 1887 ; le *Journal des tribunaux français en Tunisie* (`cb32800545c/date`, instantané
+  du 12 novembre 2025) saute de 1928 (`bd6t5335834q`) à 1934 : ni 1929 ni 1930.
+- Autres pistes : Bibliothèque nationale de Tunisie (*Journal officiel tunisien* de fin
+  décembre 1929 ou de début 1930) ; décret n° 66-31 du 24 janvier 1966 et décret du 29 juin 1957,
+  art. 8 (n° 52/1957, absent du corpus local), non lus.
 
 Le PDF du volume de 1930 est à ranger dans `tunisia-data` (`data/raw/`, catalogue `sources/`) dès
-qu'il est obtenu. Rien n'a été téléchargé dans cette passe : aucune étude n'est citée.
+qu'il est obtenu. Aucune étude n'est citée ici ; la seule pièce téléchargée est une compilation du
+code de 2020 (infirst.tn), employée pour une recherche par mots et non citée.
 
 ## 5. Conséquence pour la figure `fig-pi-tarif-successions`
 
@@ -143,12 +153,12 @@ verser **avec** son ancre, placée près du TODO de la figure, dans la section
   - date: 2026-10-19
     role: documentaliste
     sources: [jort_cache, corpus_local, web]
-    couverture: 'Lus à l''image, édition française : loi n° 62-81, art. 1er (n° 64/1962, p. 1655) ; décret n° 68-104, art. 1er (n° 17/1968, p. 417-418) ; LF 1969, art. 14 (n° 55/1968, p. 1371-1372) ; LF 1975, art. 29 (n° 80/1974, p. 2916) ; LF 1984, art. 12 (n° 86/1983, p. 3372 ; édition arabe p. 4502) ; loi n° 93-53, art. 8 (n° 39/1993, p. 716-717) ; loi n° 58-65 (n° 51/1958, p. 685-686, prorogation de délai). Aucun de ces textes ne dit comment le taux s''applique : tous fixent les taux « pour la part nette recueillie par chaque ayant-droit » par tranches « Entre … et … ». jort_cache, titres avant 1993 (motifs LIKE ci-dessus) : aucun texte de liquidation. Lacunes : jort_cache et le corpus local ne remontent pas avant 1956, le décret de 1929 n''y est donc pas ; lois n° 59-98 et 60-23 vues par leurs intitulés seuls ; décret du 29 juin 1957, art. 8 (n° 52/1957) absent du corpus local ; décret n° 66-31 du 24 janvier 1966 non lu. Web, le 19/10/2026 : gallica.bnf.fr (SRU, pages /date, services/Issues) 403 ; Wayback save de bpt6k442529z.texteBrut 520 ; babel.hathitrust.org 403 ; googleapis.com/books 429 ; archive.org advancedsearch sans résultat.'
+    couverture: 'Lus à l''image, édition française : loi n° 62-81, art. 1er (n° 64/1962, p. 1655) ; décret n° 68-104, art. 1er (n° 17/1968, p. 417-418) ; LF 1969, art. 14 (n° 55/1968, p. 1371-1372) ; LF 1975, art. 29 (n° 80/1974, p. 2916) ; LF 1984, art. 12 (n° 86/1983, p. 3372 ; édition arabe p. 4502) ; loi n° 93-53, art. 8 (n° 39/1993, p. 716-717) ; loi n° 58-65 (n° 51/1958, p. 685-686, prorogation de délai). Aucun de ces textes ne dit comment le taux s''applique : tous fixent les taux « pour la part nette recueillie par chaque ayant-droit » par tranches « Entre … et … ». jort_cache, titres avant 1993 (motifs LIKE ci-dessus) : aucun texte de liquidation. Lacunes : jort_cache et le corpus local ne remontent pas avant 1956, le décret de 1929 n''y est donc pas ; lois n° 59-98 (p. 912) et 60-23 (p. 1518) lues : prorogations de délai seules ; décret du 29 juin 1957, art. 8 (n° 52/1957) absent du corpus local ; décret n° 66-31 du 24 janvier 1966 non lu. Web, le 19/10/2026 : gallica.bnf.fr (SRU, pages /date, services/Issues) 403 ; Wayback save de bpt6k442529z.texteBrut 520 ; babel.hathitrust.org 403 ; googleapis.com/books 429 ; archive.org advancedsearch sans résultat.'
     couvert_jusqu_au: 1993-05-25
     resultat: aucun
   a_faire:
   - 'lire le décret du 28 décembre 1929 dans la Revue algérienne, tunisienne et marocaine de législation et de jurisprudence, année 1930, partie législation (Gallica, ark:/12148/bpt6k442529z ; 1929 : bpt6k442528k), depuis un poste qui atteint Gallica'
-  - 'à défaut : Journal officiel tunisien de fin décembre 1929 ou de début 1930, Journal des tribunaux de la Tunisie (Gallica cb32800545c), Bibliothèque nationale de Tunisie'
+  - 'à défaut : Journal officiel tunisien de fin décembre 1929 ou de début 1930, à la Bibliothèque nationale de Tunisie (Gallica n''a que 1883-1887 ; le Journal des tribunaux français en Tunisie n''y a ni 1929 ni 1930)'
   - 'lire le décret n° 66-31 du 24 janvier 1966 et le décret du 29 juin 1957, art. 8 (n° 52/1957, à obtenir sur pist.tn)'
 ```
 
