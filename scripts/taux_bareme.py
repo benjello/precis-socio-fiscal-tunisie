@@ -179,16 +179,19 @@ def _dinars(v: float) -> str:
 
 def fig_taux_moyens_marginaux(
     panneaux: Sequence[tuple[str, dict[str, Bareme]]], *,
-    couleurs: dict[str, str], libelles_etats: dict[str, str], assiette_max: float,
+    couleurs: dict[str, str], libelles_etats: dict[str, str],
+    assiette_max: float | Sequence[float],
     xlabel: str, ylabel: str, titre: str, colonnes: int = 2,
-    xticks: Sequence[float] | None = None, ymax: float | None = None,
-    infobulle_panneau: bool = True,
+    xticks: Sequence[float] | Sequence[Sequence[float]] | None = None, ymax: float | None = None,
+    infobulle_panneau: bool = True, largeur: float | None = None,
 ):
     """Taux marginal (escalier) et taux moyen (courbe) de chaque état, un cadre par panneau.
 
     `panneaux` : [(libellé, {date: barème})], dans l'ordre des cadres ; les dates sont les
     clés de `couleurs` et de `libelles_etats`, dans l'ordre de la légende. Libellés et titre
     sont fournis dans la langue du livre ; le composant les met en forme (`fig_text`).
+    `assiette_max` (et `xticks`) : une valeur pour tous les cadres, ou une liste, une valeur
+    par cadre (barèmes d'échelles très différentes : 1962 et 1986, par exemple).
     """
     import math
 
@@ -200,12 +203,16 @@ def fig_taux_moyens_marginaux(
     figtools.apply_lang_font()
     ft = figtools.fig_text
     lignes_fig = math.ceil(len(panneaux) / colonnes)
-    fig, axes = plt.subplots(lignes_fig, colonnes, figsize=(5.25 * colonnes, 3.6 * lignes_fig + 0.9),
+    fig, axes = plt.subplots(lignes_fig, colonnes, figsize=(largeur or 5.25 * colonnes, 3.6 * lignes_fig + 0.9),
                              sharey=True, squeeze=False)
     dates = list(libelles_etats)
     plus_haut = 0.0
     unique_vu = False
-    for ax, (libelle, etats) in zip(axes.flat, panneaux):
+    maxima = (list(assiette_max) if isinstance(assiette_max, (list, tuple))
+              else [assiette_max] * len(panneaux))
+    repères = (list(xticks) if xticks is not None and isinstance(xticks[0], (list, tuple))
+               else [xticks] * len(panneaux))
+    for ax, (libelle, etats), assiette_max, xticks in zip(axes.flat, panneaux, maxima, repères):
         for date in dates:
             if date not in etats:
                 continue

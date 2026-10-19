@@ -75,11 +75,11 @@ documentaliste à côté de la figure dit quoi refaire si le texte établit l'au
 
 ## 4. Ordre de traitement proposé
 
-1. **IRPP** (1990, 2017, 2025) : effort faible, intérêt le plus fort (le chapitre a déjà ses
+1. **IRPP** (1990, 2017, 2025) — *fait le 19 octobre 2026, `fig-irpp-taux-bareme`* : effort faible, intérêt le plus fort (le chapitre a déjà ses
    tableaux et le taux moyen imprimé en 1990 sert de contrôle). Émettre la série dans
    `generate_bareme_tables.py`, laisser la CI régénérer le snapshot, puis une figure dans
    `_impot_revenu.qmd` près de `bareme_generations`.
-2. **Contribution personnelle d'État** (1962-1986) : même générateur, même démarche ; une
+2. **Contribution personnelle d'État** (1962-1986) — *fait le 19 octobre 2026, `fig-cpe-taux`, deux cadres d'échelles différentes ; le barème de 1990 est sur la figure de l'IRPP, non sur celle-ci* : même générateur, même démarche ; une
    figure qui place les cinq barèmes de la CPE et celui de 1990 permet de voir la rupture de
    1990 en taux moyen (68 % de taux marginal supérieur → 35 %).
 3. **Mode `tranche_atteinte`** dans le composant, puis le **droit complémentaire de 2017** et

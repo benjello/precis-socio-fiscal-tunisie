@@ -578,6 +578,14 @@ liste qui suit le tableau, citations comprises. Restent :
   pétroliers (terminologue), que l'instantané arabe laisse en français, comme le faisait
   déjà le livre arabe.
 
+- **Taux marginal et taux moyen des barèmes de l'IRPP et de la CPE — fait le 19 octobre 2026**
+  (`fig-cpe-taux`, `fig-irpp-taux-bareme`, `#sec-irpp` ; module `figures/baremes_revenu.py`,
+  séries `cpe-bareme` et `irpp-bareme`). Taux moyen du barème seul, en dinars courants ; ni
+  plafond de cotisation, ni exemptions, ni minimum d'impôt, ni charges de famille. Restent :
+  la version en dinars constants (déflateur à fixer, TODO économiste du chapitre) ; la CSS des
+  personnes physiques, dérivée du barème de l'IRPP (voir `taux-moyens-marginaux-baremes.md`) ;
+  la version arabe du chapitre, à rendre avant fusion.
+
 - **Le patrimoine immobilier : mutations, plus-values, antécédents fonciers** (17 octobre 2026 ;
   chapitre `precis/fr/fiscalite/_patrimoine_immobilier.qmd`, **rédigé le 17 octobre 2026**, en
   français seulement ; manque n° 6 de la revue du 5 octobre). Notes :
