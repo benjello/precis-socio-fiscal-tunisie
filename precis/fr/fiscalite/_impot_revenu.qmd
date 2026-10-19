@@ -78,6 +78,38 @@ print(ot.markdown_un_tableau_en_onglets([
 
 Dans le barème des revenus de 1986, la lecture de la troisième colonne invite à ne pas confondre le taux marginal affiché et la charge réellement supportée : à 80 000 dinars de revenu, le taux d'imposition du revenu global ressortait à 59,98 %, et non à 68 %.
 
+@fig-cpe-taux place, pour les cinq barèmes, le [taux marginal](#g-taux-marginal), celui de la tranche où tombe le revenu, et le [taux moyen](#g-taux-moyen), le droit du barème rapporté au revenu net imposable. Le taux moyen y est celui du barème avant plafonnement de la cotisation effective (@tbl-plafond-cpe).
+
+```{python}
+#| label: fig-cpe-taux
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import baremes_revenu as fig_br
+import figtools
+figtools.figure_tabs(
+    fig_br.fig_cpe(), fig_br.table_cpe(), fig_br.SERIE_CPE,
+    slug="fig_cpe_taux", nominal=False,
+    caption=("Contribution personnelle d'État : taux marginal et taux moyen du barème selon le "
+             "revenu net imposable, revenus de 1962, 1965, 1980, 1983 et 1986"),
+    note_lecture=(
+        "Les revenus et les seuils sont en dinars courants de l'année de chaque barème ; les "
+        "deux cadres n'ont pas la même échelle horizontale. Le trait fin en escalier est le "
+        "taux que le texte fixe pour la tranche où tombe le revenu, ou taux marginal ; la "
+        "courbe épaisse est le taux moyen, droit rapporté au revenu, calculé barème appliqué "
+        "par tranche : chaque fraction du revenu supporte le taux de sa tranche. Sources : "
+        "@loi-62-73-cpe, art. 2 ; @lf-1966, art. 10 ; @loi79-66-lf1980, art. 8 ; @lf-1983, "
+        "art. 9 ; @lf-1986, art. 8. Le taux moyen ne tient pas compte du plafond de la "
+        "cotisation effective, ni de l'exemption des revenus qui ne dépassent pas 100 dinars "
+        "dans le tarif de 1965, ni de l'exemption des revenus qui ne dépassent pas le SMIG "
+        "dans celui de 1986. À 80 000 dinars, le taux moyen du barème de 1986 est de "
+        "59,98 %, valeur que le texte imprime. L'onglet « Données » donne, pour chaque "
+        "barème, le taux marginal et le taux moyen à des revenus choisis ; à un seuil, le "
+        "taux marginal est celui de la tranche qui s'y achève."),
+    generated="{{< meta date >}}",
+)
+```
+
 <!-- TODO (documentaliste) : la série des tarifs de la contribution personnelle d'État compte
 désormais cinq tarifs lus au Journal officiel — revenus de 1962 (loi n° 62-73, art. 2), 1965
 (loi n° 65-46, art. 10), 1980 (loi n° 79-66, art. 8), 1983 (loi n° 82-91, art. 9) et 1986
@@ -243,7 +275,9 @@ Le barème de l'article 44 § I (@tbl-bareme-irpp-1990) n'a pas été modifié e
 
 Une conséquence mécanique de cette stabilité mérite d'être relevée : les seuils du barème étant fixés en dinars courants et n'ayant jamais été indexés, la hausse des prix et des salaires nominaux a déplacé les contribuables vers le haut du barème à revenu réel inchangé. La limite de la tranche à taux nul est ainsi restée à 1 500 dinars pendant vingt-sept ans.
 
-<!-- TODO: construire la série du seuil de la tranche à 0 % rapporté au SMIG et à l'indice des prix à la consommation, 1990-2026 (figure), pour documenter cet effet de dérive sans l'apprécier. Source pressentie : dépôt tunisia-data (INS, BCT). -->
+La dérive des seuils est chiffrée en dinars constants dans la section @sec-irpp-bareme-annuel (@fig-irpp-annuel).
+
+<!-- TODO (documentaliste) : rapporter aussi le seuil de la tranche à 0 % au SMIG (série à construire, tunisia-data). -->
 
 ### Revenus 2017 à 2024
 
@@ -291,11 +325,91 @@ Sources : @lf-1986 ; @code-irpp-is-1990 ; @lf-2017 ; @lf-2025 ; @lf-2026.
 
 Le tableau @tbl-bareme-irpp-generations fait apparaître deux rythmes très différents : une rupture unique et de grande ampleur en 1989-1990, suivie d'une immobilité de vingt-sept exercices, puis deux modifications en huit ans (2017 et 2025).
 
-<!-- NOTE : une figure comparant les taux moyens d'imposition par génération de barème a été
-écartée. Les seuils sont exprimés en dinars courants, de 1986 à 2025 : superposer les courbes sans
-déflater les seuils comparerait des revenus qui n'ont pas le même pouvoir d'achat et n'aurait pas de
-sens. Une telle figure supposerait au préalable une série de prix ou de revenu moyen, et l'énoncé
-explicite du déflateur retenu. -->
+@fig-irpp-taux-bareme place, pour les barèmes de 1990, de 2017 et de 2025, le [taux marginal](#g-taux-marginal) et le [taux moyen](#g-taux-moyen), le droit du barème rapporté au revenu net imposable. Le barème de 1990 imprime lui-même ce dernier à la limite supérieure de chaque tranche : 10,50 %, 15,25 %, 20,12 % et 26,05 % à 5 000, 10 000, 20 000 et 50 000 dinars [@code-irpp-is-1990, art. 44, § I]. Les seuils sont en dinars courants : les trois courbes ne comparent pas des revenus de même pouvoir d'achat.
+
+```{python}
+#| label: fig-irpp-taux-bareme
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import baremes_revenu as fig_br
+import figtools
+figtools.figure_tabs(
+    fig_br.fig_irpp(), fig_br.table_irpp(), fig_br.SERIE_IRPP,
+    slug="fig_irpp_taux_bareme", nominal=False,
+    caption=("Impôt sur le revenu des personnes physiques : taux marginal et taux moyen du "
+             "barème selon le revenu net imposable, revenus de 1990 à 2016, de 2017 à 2024 et "
+             "à compter de 2025"),
+    note_lecture=(
+        "Les revenus et les seuils sont en dinars courants de l'année de chaque barème. Le "
+        "trait fin en escalier est le taux que le texte fixe pour la tranche où tombe le "
+        "revenu, ou taux marginal ; la courbe épaisse est le taux moyen, droit rapporté au "
+        "revenu, calculé barème appliqué par tranche : chaque fraction du revenu supporte le "
+        "taux de sa tranche. Il s'applique au revenu net global, avant déductions pour "
+        "charges de famille, minimum d'impôt et régimes dérogatoires. Sources : "
+        "@code-irpp-is-1990, art. 44, § I ; @lf-2017, art. 14 ; @lf-2025, art. 36. L'onglet "
+        "« Données » donne le taux marginal et le taux moyen aux seuils des trois barèmes et "
+        "à 80 000 dinars ; à un seuil, le taux marginal est celui de la tranche qui s'y "
+        "achève."),
+    generated="{{< meta date >}}",
+)
+```
+
+### Le barème année par année, en dinars constants {#sec-irpp-bareme-annuel}
+
+@fig-irpp-annuel suit, pour chaque année de revenus de 1990 à 2025, le barème en vigueur au 1^er^ janvier, sans changement dans l'année, avec ses seuils et le taux moyen d'un même revenu réel. Les dinars constants sont les dinars de 2025 : chaque montant est multiplié par le rapport de l'indice des prix à la consommation de 2025 à celui de l'année, moyenne annuelle. L'indice est celui de l'INS en base 1970 [@ins-annuaire], prolongé après 2023 par la variation de l'indice en base 2015 que relaie la Banque centrale [@bct-ra] ; il n'est pas publié pour 2026, année que seul le tableau replié donne, en dinars courants.
+
+Un revenu réel donné, 20 000 dinars de 2025, supporte un taux moyen de 9,2 % en 1990 et de 16,2 % en 2016 : les seuils étant restés en dinars courants, la tranche à taux nul passe de 7 700 à 2 700 dinars de 2025 et le seuil du taux marginal de 35 % de 256 800 à 90 100 dinars de 2025. La réforme de 2017 relève la tranche à taux nul à 8 600 dinars de 2025 et ramène le taux moyen du même revenu à 14,9 % ; l'érosion reprend ensuite, jusqu'à 19,2 % en 2024, avant la réforme de 2025 (16,3 %).<!-- Choix des vues : un même revenu réel rend la dérive lisible par un seul taux (moyen et marginal) ; les seuils en dinars constants en montrent l'origine. -->
+
+```{python}
+#| label: fig-irpp-annuel
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import baremes_revenu as fig_br
+import dinars_constants
+import figtools
+figtools.figure_tabs(
+    fig_br.fig_irpp_annuel(), fig_br.table_irpp_annuel_plat(), fig_br.SERIE_IRPP,
+    *dinars_constants.SERIES_IPC,
+    slug="fig_irpp_annuel", nominal=False,
+    caption=("Impôt sur le revenu des personnes physiques, année par année : taux moyen d'un "
+             "même revenu réel et seuils du barème en dinars de 2025, revenus de 1990 à 2025"),
+    note_lecture=(
+        "Vue « Taux d'un revenu réel constant » : trois revenus de 10 000, 20 000 et "
+        "40 000 dinars de 2025, convertis chaque année en dinars courants par l'indice des "
+        "prix, puis imposés au barème de l'année ; trait plein : taux moyen, droit rapporté "
+        "au revenu, barème appliqué par tranche ; tireté : taux marginal, celui de la "
+        "tranche où tombe le revenu. Les taux s'entendent avant déductions pour charges de "
+        "famille, minimum d'impôt et régimes dérogatoires. Vue "
+        "« Seuils en dinars de 2025 » : fin de la tranche à taux nul et début de la tranche "
+        "au taux le plus élevé, en trait plein en dinars de 2025 et en tireté en dinars "
+        "courants. Les traits verticaux marquent les barèmes de 2017 et de 2025 ; aucun "
+        "raccord n'est tracé entre deux barèmes. Barèmes : @code-irpp-is-1990, art. 44, § I ; "
+        "@lf-2017, art. 14 ; @lf-2025, art. 36. Indice des prix : INS en base 1970 "
+        "[@ins-annuaire], prolongé après 2023 par la variation de l'indice en base 2015 "
+        "[@bct-ra]. L'onglet « Données » reprend le tableau annuel, 2026 compris, avec les taux marginaux aux trois revenus."),
+    generated="{{< meta date >}}",
+)
+```
+
+:::: {.chronologie-repliable titre="Barème de l'IRPP, année par année, 1990-2026 : seuils, taux, dinars courants et constants"}
+
+```{python}
+#| echo: false
+#| output: asis
+print(fig_br.markdown_irpp_annuel())
+print()
+print(": Barème de l'IRPP applicable aux revenus de chaque année de 1990 à 2026 : tranches, "
+      "fin de la tranche à taux nul et seuil du taux maximal en dinars courants et en dinars de "
+      "2025, taux marginal maximal, taux marginal et taux moyen de trois revenus réels, indice des prix. Le "
+      "taux moyen est celui du barème appliqué par tranche, avant déductions pour charges de "
+      "famille. L'indice des prix n'étant pas publié pour 2026, les montants de cette année ne "
+      "sont donnés qu'en dinars courants. {#tbl-irpp-bareme-annuel}")
+```
+
+::::
+
 
 <!-- TODO : exposer en regard au moins deux autres lectures attribuées (doctrine fiscale tunisienne — @ayadi1996, @baccouche2008, @yaich ; organisations internationales ; partenaires sociaux UGTT et UTICA sur les réformes 2017 et 2025), conformément à la règle d'attribution du précis. Références à identifier avec le bibliographe ; cf. Q16 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 

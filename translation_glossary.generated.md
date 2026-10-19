@@ -491,6 +491,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taux global de cotisation | النسبة الجملية للمساهمات |  |
 | Taux majoré de la TVA | النسبة المرتفعة |  |
 | Taux marginal | النسبة الحدية |  |
+| Taux moyen | النسبة المتوسطة |  |
 | Taux normal de la TVA | النسبة العادية |  |
 | Taux réduit de la TVA | النسبة المخفضة |  |
 | Taux spécifique | نسبة نوعية |  |

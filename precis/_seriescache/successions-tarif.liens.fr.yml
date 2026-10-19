@@ -1,0 +1,12 @@
+- libelle: Droit sur les successions — tarif, ligne directe et époux
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/tarif/ligne_directe_epoux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_enregistrement.successions.tarif.ligne_directe_epoux/table/
+- libelle: Droit sur les successions — tarif, frères et sœurs
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/tarif/freres_soeurs.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_enregistrement.successions.tarif.freres_soeurs/table/
+- libelle: Droit sur les successions — tarif, oncles, neveux et cousins
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/tarif/oncles_neveux_cousins.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_enregistrement.successions.tarif.oncles_neveux_cousins/table/
+- libelle: Droit sur les successions — tarif, au-delà du quatrième degré et non-parents
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/tarif/au_dela_quatrieme_degre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_enregistrement.successions.tarif.au_dela_quatrieme_degre/table/

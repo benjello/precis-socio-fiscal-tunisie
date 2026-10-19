@@ -1,0 +1,13 @@
+- libelle: معلوم التسجيل على التركات — التعريفة، الخط المباشر والزوجان
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/tarif/ligne_directe_epoux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.droits_enregistrement.successions.tarif.ligne_directe_epoux/table/
+- libelle: معلوم التسجيل على التركات — التعريفة، الإخوة والأخوات
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/tarif/freres_soeurs.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.droits_enregistrement.successions.tarif.freres_soeurs/table/
+- libelle: معلوم التسجيل على التركات — التعريفة، الأعمام والأخوال وأبناء الإخوة وأبناء
+    العمومة
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/tarif/oncles_neveux_cousins.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.droits_enregistrement.successions.tarif.oncles_neveux_cousins/table/
+- libelle: معلوم التسجيل على التركات — التعريفة، ما بعد الدرجة الرابعة وغير الأقارب
+  parametre: parameters/fiscalite_indirecte/droits_enregistrement/successions/tarif/au_dela_quatrieme_degre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.droits_enregistrement.successions.tarif.au_dela_quatrieme_degre/table/

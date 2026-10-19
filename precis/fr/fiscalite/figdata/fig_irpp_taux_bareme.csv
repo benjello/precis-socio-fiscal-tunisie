@@ -1,0 +1,16 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-19
+# séries (tunisia_data) : irpp-bareme
+# sources (citation) : @code-irpp-is-1990, @lf-2017, @lf-2025
+# fiches : 
+# méthode/hypothèses : Le taux moyen est celui du barème, barème appliqué par tranche, avant déductions pour charges de famille, minimum d'impôt et régimes dérogatoires.
+# note : Impôt sur le revenu des personnes physiques : taux marginal et taux moyen du barème selon le revenu net imposable, revenus de 1990 à 2016, de 2017 à 2024 et à compter de 2025
+Barèmes,Revenu net imposable (D),"1990, taux marginal (%)","1990, taux moyen (%)","2017, taux marginal (%)","2017, taux moyen (%)","2025, taux marginal (%)","2025, taux moyen (%)"
+Impôt sur le revenu,1500,0.0,0.0,0.0,0.0,0.0,0.0
+Impôt sur le revenu,5000,15.0,10.5,0.0,0.0,0.0,0.0
+Impôt sur le revenu,10000,20.0,15.25,26.0,13.0,15.0,7.5
+Impôt sur le revenu,20000,25.0,20.125,26.0,19.5,25.0,16.25
+Impôt sur le revenu,30000,30.0,23.417,28.0,22.333,30.0,20.833
+Impôt sur le revenu,40000,30.0,25.062,32.0,24.75,33.0,23.875
+Impôt sur le revenu,50000,30.0,26.05,32.0,26.2,36.0,26.3
+Impôt sur le revenu,70000,35.0,28.607,35.0,28.714,38.0,29.643
+Impôt sur le revenu,80000,35.0,29.406,35.0,29.5,40.0,30.938

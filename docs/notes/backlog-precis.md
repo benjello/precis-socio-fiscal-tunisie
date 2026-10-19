@@ -578,6 +578,16 @@ liste qui suit le tableau, citations comprises. Restent :
   pétroliers (terminologue), que l'instantané arabe laisse en français, comme le faisait
   déjà le livre arabe.
 
+- **Taux marginal et taux moyen des barèmes de l'IRPP et de la CPE — fait le 19 octobre 2026**
+  (`fig-cpe-taux`, `fig-irpp-taux-bareme`, `#sec-irpp` ; module `figures/baremes_revenu.py`,
+  séries `cpe-bareme` et `irpp-bareme`). Taux moyen du barème seul, en dinars courants ; ni
+  plafond de cotisation, ni exemptions, ni minimum d'impôt, ni charges de famille. IRPP année
+  par année, 1990-2026, en dinars constants (indice commun du précis, base 2025 ; `fig-irpp-annuel`,
+  `tbl-irpp-bareme-annuel`) : **fait le 19 octobre 2026** ; l'indice s'arrête à 2025, 2026 est
+  en dinars courants seulement. Restent : le seuil de la tranche à 0 % rapporté au SMIG ; la CSS des
+  personnes physiques, dérivée du barème de l'IRPP (voir `taux-moyens-marginaux-baremes.md`) ;
+  la version arabe du chapitre, à rendre avant fusion.
+
 - **Le patrimoine immobilier : mutations, plus-values, antécédents fonciers** (17 octobre 2026 ;
   chapitre `precis/fr/fiscalite/_patrimoine_immobilier.qmd`, **rédigé le 17 octobre 2026**, en
   français seulement ; manque n° 6 de la revue du 5 octobre). Notes :
@@ -642,6 +652,18 @@ liste qui suit le tableau, citations comprises. Restent :
   entre classeurs (TODO économiste) ; vue déflatée à proposer ; dans `tunisia-data`, réécrire
   les `caveats` du catalogue (« non extraites », « seule l'édition… est retenue »), affichés tels
   quels dans l'onglet « Sources ».
+  **Section « Les donations et les successions »** (18 octobre 2026) : figures
+  `fig-pi-tarif-successions` (taux marginal en escalier et taux moyen en courbe selon la part
+  nette, quatre parentés, états du 1er janvier 1984, du 17 mai 1993 et du 17 août 1998 ; tracée
+  depuis le 19 octobre 2026 par le composant commun `scripts/taux_bareme.py`, voir
+  `docs/notes/taux-moyens-marginaux-baremes.md`) et
+  `fig-pi-abattements-successions` (trois abattements, dinars courants et dinars de 2025, un
+  segment par texte en vigueur) ; `tbl-pi-abattements-successions` désormais engendré, avec ses
+  colonnes en dinars de 2025 (TODO rédacteur levé). Séries `successions-tarif` et
+  `successions-abattements` émises par `scripts/generate_bareme_tables.py` (openfisca-tunisia
+  ≥ 0.136). Reste : le mode de liquidation du barème de 1984 (TODO documentaliste à côté de la
+  figure) ; le taux moyen de 1984 est calculé barème appliqué par tranche — si le texte établit
+  le taux de la tranche atteinte appliqué à toute la part, retirer la courbe de 1984.
   Glossaire de la section (18 octobre 2026) : huit notions ancrées et définies, au statut
   `provisoire` — seuil à saut, seuil à changement de taux, regroupement, sous-déclaration, effet
   de verrouillage, capitalisation d'un impôt, perte sèche, incidence fiscale. Restent : termes

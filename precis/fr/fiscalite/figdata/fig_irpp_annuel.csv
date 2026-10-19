@@ -1,0 +1,44 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-19
+# séries (tunisia_data) : irpp-bareme, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @code-irpp-is-1990, @lf-2017, @lf-2025, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Le taux moyen est celui du barème, barème appliqué par tranche, avant déductions pour charges de famille, minimum d'impôt et régimes dérogatoires., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Impôt sur le revenu des personnes physiques, année par année : taux moyen d'un même revenu réel et seuils du barème en dinars de 2025, revenus de 1990 à 2025
+Année de revenus,Barème,Tranches (dont la tranche à taux nul),Fin de la tranche à taux nul (D courants),Fin de la tranche à taux nul (D de 2025),Seuil du taux maximal (D courants),Seuil du taux maximal (D de 2025),Taux marginal maximal (%),Taux marginal à 10 000 D de 2025 (%),Taux moyen à 10 000 D de 2025 (%),Taux marginal à 20 000 D de 2025 (%),Taux moyen à 20 000 D de 2025 (%),Taux marginal à 40 000 D de 2025 (%),Taux moyen à 40 000 D de 2025 (%),Indice des prix (base 100 en 1970)
+1990,code de 1989 (art. 44 § I),6,1500,7705,50000,256838,35.0,15.0,3.44,15.0,9.22,20.0,13.9,407.4
+1991,code de 1989 (art. 44 § I),6,1500,7151,50000,238350,35.0,15.0,4.27,15.0,9.64,20.0,14.34,439.0
+1992,code de 1989 (art. 44 § I),6,1500,6774,50000,225800,35.0,15.0,4.84,15.0,9.92,20.0,14.64,463.4
+1993,code de 1989 (art. 44 § I),6,1500,6500,50000,216682,35.0,15.0,5.25,15.0,10.12,20.0,14.85,482.9
+1994,code de 1989 (art. 44 § I),6,1500,6222,50000,207405,35.0,15.0,5.67,15.0,10.33,20.0,15.07,504.5
+1995,code de 1989 (art. 44 § I),6,1500,5856,50000,195216,35.0,15.0,6.22,20.0,10.73,25.0,15.48,536.0
+1996,code de 1989 (art. 44 § I),6,1500,5647,50000,188228,35.0,15.0,6.53,20.0,11.06,25.0,15.82,555.9
+1997,code de 1989 (art. 44 § I),6,1500,5445,50000,181502,35.0,15.0,6.83,20.0,11.38,25.0,16.15,576.5
+1998,code de 1989 (art. 44 § I),6,1500,5280,50000,176007,35.0,15.0,7.08,20.0,11.64,25.0,16.42,594.5
+1999,code de 1989 (art. 44 § I),6,1500,5142,50000,171394,35.0,15.0,7.29,20.0,11.86,25.0,16.64,610.5
+2000,code de 1989 (art. 44 § I),6,1500,4996,50000,166538,35.0,15.0,7.51,20.0,12.09,25.0,16.88,628.3
+2001,code de 1989 (art. 44 § I),6,1500,4901,50000,163366,35.0,15.0,7.65,20.0,12.24,25.0,17.04,640.5
+2002,code de 1989 (art. 44 § I),6,1500,4766,50000,158876,35.0,15.0,7.85,20.0,12.45,25.0,17.25,658.6
+2003,code de 1989 (art. 44 § I),6,1500,4640,50000,154672,35.0,15.0,8.04,20.0,12.65,25.0,17.46,676.5
+2004,code de 1989 (art. 44 § I),6,1500,4478,50000,149267,35.0,15.0,8.28,20.0,12.91,25.0,17.72,701.0
+2005,code de 1989 (art. 44 § I),6,1500,4388,50000,146282,35.0,15.0,8.42,20.0,13.05,25.0,17.87,715.3
+2006,code de 1989 (art. 44 § I),6,1500,4214,50000,140451,35.0,15.0,8.68,20.0,13.33,25.0,18.15,745.0
+2007,code de 1989 (art. 44 § I),6,1500,4074,50000,135785,35.0,15.0,8.89,20.0,13.55,25.0,18.38,770.6
+2008,code de 1989 (art. 44 § I),6,1500,3883,50000,129436,35.0,15.0,9.18,20.0,13.85,25.0,18.69,808.4
+2009,code de 1989 (art. 44 § I),6,1500,3750,50000,125013,35.0,15.0,9.37,20.0,14.06,25.0,18.91,837.0
+2010,code de 1989 (art. 44 § I),6,1500,3592,50000,119734,35.0,15.0,9.61,20.0,14.31,25.0,19.16,873.9
+2011,code de 1989 (art. 44 § I),6,1500,3469,50000,115645,35.0,15.0,9.8,20.0,14.51,25.0,19.36,904.8
+2012,code de 1989 (art. 44 § I),6,1500,3287,50000,109555,35.0,15.0,10.07,20.0,14.8,25.0,19.66,955.1
+2013,code de 1989 (art. 44 § I),6,1500,3097,50000,103242,35.0,15.0,10.35,20.0,15.1,25.0,19.97,1013.5
+2014,code de 1989 (art. 44 § I),6,1500,2936,50000,97882,35.0,20.0,10.7,25.0,15.46,30.0,20.33,1069.0
+2015,code de 1989 (art. 44 § I),6,1500,2804,50000,93467,35.0,20.0,11.12,25.0,15.89,30.0,20.77,1119.5
+2016,code de 1989 (art. 44 § I),6,1500,2703,50000,90110,35.0,20.0,11.44,25.0,16.21,30.0,21.1,1161.2
+2017,loi n° 2016-78,5,5000,8556,50000,85557,35.0,26.0,3.76,26.0,14.88,28.0,20.73,1223.0
+2018,loi n° 2016-78,5,5000,7962,50000,79619,35.0,26.0,5.3,26.0,15.65,28.0,21.23,1314.2
+2019,loi n° 2016-78,5,5000,7455,50000,74554,35.0,26.0,6.62,26.0,16.31,28.0,21.66,1403.5
+2020,loi n° 2016-78,5,5000,7058,50000,70576,35.0,26.0,7.65,26.0,16.83,28.0,22.0,1482.6
+2021,loi n° 2016-78,5,5000,6677,50000,66766,35.0,26.0,8.64,26.0,17.32,28.0,22.32,1567.2
+2022,loi n° 2016-78,5,5000,6164,50000,61645,35.0,26.0,9.97,26.0,17.99,32.0,23.06,1697.4
+2023,loi n° 2016-78,5,5000,5639,50000,56386,35.0,26.0,11.34,26.0,18.67,32.0,23.82,1855.7
+2024,loi n° 2016-78,5,5000,5269,50000,52687,35.0,26.0,12.3,26.0,19.15,32.0,24.36,1986.0
+2025,loi n° 2024-48,8,5000,5000,70000,70000,40.0,15.0,7.5,25.0,16.25,33.0,23.88,2092.7
+2026,loi n° 2024-48,8,5000,,70000,,40.0,,,,,,,

@@ -1304,11 +1304,19 @@ Taux supérieur au taux normal, appliqué aux produits du tableau C de 1988 à 2
 
 [العربية → النسبة الحدية](../../ar/fiscalite/_glossaire.html#g-taux-marginal)
 
-Taux d'imposition applicable à la dernière tranche de revenu ; dans un barème progressif, il s'applique à l'euro (au dinar) supplémentaire.
+Taux d'un barème appliqué par tranche, pour la tranche où tombe la dernière unité de l'assiette (revenu, part successorale) : c'est le taux qui frappe un dinar de plus. Il se distingue du taux moyen, qui rapporte l'impôt total à l'assiette, et du taux de la tranche atteinte appliqué à toute la valeur, comme le droit complémentaire de 2017 ou l'impôt sur la fortune : là, le taux de la tranche atteinte frappe la valeur entière, et non la seule fraction comprise dans la tranche. (*marginal rate*)
 
 *Source de la définition :* [@code-irpp-is-1990, art. 44 § I]
 
-*Voir aussi :* [Impôt sur le revenu des personnes physiques](#g-irpp), [Assiette fiscale](#g-assiette-fiscale), [Barème de l'impôt sur le revenu](#g-bareme-irpp), [Tranche](#g-tranche-de-revenu)
+*Voir aussi :* [Taux moyen](#g-taux-moyen), [Impôt sur le revenu des personnes physiques](#g-irpp), [Assiette fiscale](#g-assiette-fiscale), [Barème de l'impôt sur le revenu](#g-bareme-irpp), [Tranche](#g-tranche-de-revenu)
+
+## Taux moyen {#g-taux-moyen}
+
+[العربية → النسبة المتوسطة](../../ar/fiscalite/_glossaire.html#g-taux-moyen)
+
+Impôt total dû rapporté à l'assiette (revenu net imposable, part recueillie) : la part de l'assiette que prélève le barème. Dans un barème par tranche, il est inférieur au taux marginal dès que l'assiette dépasse la première tranche, et tend vers lui quand l'assiette croît. Il n'est pas défini pour une assiette nulle. (*average rate*)
+
+*Voir aussi :* [Taux marginal](#g-taux-marginal), [Barème de l'impôt sur le revenu](#g-bareme-irpp), [Tranche](#g-tranche-de-revenu), [Assiette fiscale](#g-assiette-fiscale)
 
 ## Taux normal de la TVA {#g-taux-normal-tva}
 

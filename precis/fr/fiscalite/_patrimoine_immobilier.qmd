@@ -337,20 +337,120 @@ Les transmissions d'immeubles à titre gratuit — donations entre vifs et succe
 
 : Le droit sur les successions selon la parenté, 1969-2026. De 1969 à 1984, le taux croît avec la part nette reçue ; le premier taux de 1975 en ligne directe, 6 %, est celui de l'édition arabe du *Journal officiel* ; les barèmes complets sont au @tbl-pi-baremes-successoraux. {#tbl-pi-successions-en-dates}
 
+Pour les mutations par décès, @fig-pi-tarif-successions donne, pour chaque degré de parenté et selon la part nette recueillie par l'ayant droit, le [taux marginal](#g-taux-marginal) du droit, celui de la tranche où tombe la part, et son [taux moyen](#g-taux-moyen), le droit rapporté à la part, à trois dates : le barème à six tranches du 1^er^ janvier 1984, de 6 à 85 % ; le taux unique par parenté du code de 1993, où les deux taux se confondent ; la ligne directe et les époux ramenés de 5 % à 2,5 % le 17 août 1998. En 1993, les frères et sœurs passent de 20 à 50 % selon la tranche à 5 %, le taux de la ligne directe ; pour les oncles, neveux et cousins comme pour les parents plus éloignés, le taux unique est celui de la première tranche de 1984, 25 % et 35 %.
+
+```{python}
+#| label: fig-pi-tarif-successions
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import patrimoine_immobilier as fig_pi
+import figtools
+figtools.figure_tabs(
+    fig_pi.fig_tarif_successions(), fig_pi.table_tarif_successions(),
+    fig_pi.SERIE_SUCC_TARIF,
+    slug="fig_pi_tarif_successions", nominal=False,
+    caption=("Mutations par décès : taux marginal et taux moyen du droit d'enregistrement "
+             "selon la part nette et la parenté, barème appliqué par tranche, au 1^er^ janvier "
+             "1984, au 17 mai 1993 et au 17 août 1998"),
+    note_lecture=(
+        "Chaque cadre suit un degré de parenté entre le défunt et l'ayant droit. L'axe "
+        "horizontal porte la part nette recueillie par l'ayant droit, en dinars courants ; "
+        "l'axe vertical, un taux en pour cent. Le trait fin en escalier est le taux que le "
+        "texte fixe pour la tranche où tombe la part, ou taux marginal ; la courbe épaisse "
+        "est le taux moyen, droit rapporté à la part, calculé barème appliqué par tranche : "
+        "chaque fraction de la part supporte le taux de sa tranche. Le barème du 1^er^ "
+        "janvier 1984 a six tranches, de 0 à 5 000 D, de 5 000 à 10 000 D, de 10 000 à "
+        "15 000 D, de 15 000 à 45 000 D, de 45 000 à 90 000 D, puis au-delà de 90 000 D "
+        "[@lf-1984, art. 12, p. 3372]. Depuis le 17 mai 1993, le taux est unique pour toute "
+        "la part [@loi-93-53-cdet, code, art. 20, p. 720] : taux marginal et taux moyen se "
+        "confondent en un seul trait. Le 17 août 1998, seule la ligne directe change "
+        "[@loi-98-73, art. 8, p. 1737] ; ailleurs, le tireté vert de 1998 recouvre le trait "
+        "bleu de 1993. L'onglet « Données » donne, pour chaque parenté, le taux marginal "
+        "et le taux moyen aux seuils de 1984 et à 120 000 D ; à un seuil, le taux "
+        "marginal est celui de la tranche qui s'y achève. Les barèmes de 1969 "
+        "et de 1975 sont au @tbl-pi-baremes-successoraux."),
+    generated="{{< meta date >}}",
+)
+```
+
+<!-- TODO (documentaliste) : la figure fig-pi-tarif-successions calcule le taux moyen de 1984 barème appliqué par tranche (chaque fraction de part au taux de sa tranche). Le texte de 1984 ne dit pas si le taux frappe la seule fraction comprise dans la tranche ou la part entière : le mode de liquidation avant 1993 reste à établir (décret du 28 décembre 1929, voir le TODO du barème successoral plus bas et docs/notes/successions-bareme-1985-1993.md, § 5). S'il s'agit du taux de la tranche atteinte appliqué à toute la part, retirer la courbe du taux moyen de 1984 (scripts/taux_bareme.py ne traite que le barème par tranche) et revoir la note de lecture, la provenance et docs/notes/taux-moyens-marginaux-baremes.md. -->
+
 - **Une rupture : les donations familiales au droit fixe, en 2006.** Depuis le 10 novembre 2006, date retenue par l'administration fiscale [@dgi-nc-23-2007], une donation d'immeuble entre ascendants et descendants ou entre époux n'est plus enregistrée au droit proportionnel de 2,5 %, plus 1 % de droit de la Conservation ou sur l'immeuble non immatriculé, plus 3 % pour défaut de mention de l'origine : elle supporte un droit fixe de 15 D par acte et 100 D de droit de la Conservation ou sur l'immeuble non immatriculé, et sort du droit pour défaut de mention de l'origine [@loi-2006-69, art. 1 à 3 et 5, p. 3869]. La loi est désignée par son intitulé, « relative à l'exonération des donations entre ascendants et descendants et entre époux du droit d'enregistrement proportionnel », et n'énonce pas de motif. Deux tiers en donnent un. Le Conseil constitutionnel, dans son avis publié avec la loi, écrit que ces facilités fiscales s'insèrent « dans le cadre de la protection de la famille qui fait partie des objectifs consacrés par le préambule de la Constitution » [@loi-2006-69, p. 3875] ; l'administration fiscale présente la loi comme prise « dans le but de faciliter les mutations de biens entre ascendants et descendants et entre époux » [@dgi-nc-23-2007]. **Les successions, elles, restent au droit proportionnel** de 2,5 % en ligne directe.
 - **Une étape : une fois tous les cinq ans, en 2018.** La loi de finances pour 2018, sous la rubrique « Rationalisation des avantages fiscaux au titre des donations d'immeubles et de fonds de commerce entre ascendants et descendants et entre époux », n'accorde plus les trois droits fixes qu'une fois tous les cinq ans pour un même droit réel [@lf-2018, art. 34, p. 4278].
 - **Des montants revus.** Le droit fixe par acte suit les droits fixes du code, 30 D depuis 2022 ; le droit de la Conservation et celui sur l'immeuble non immatriculé passent de 100 D à 200 D en 2026, la moitié du premier étant affectée au « compte de diversification des sources de la sécurité sociale » [@lf-2026, art. 20 et 49, éd. ar. p. 4233, 4235 et 4242].
 - **Les successions : abattements et habitation principale.** Depuis [1975](#r-pi-c-1975), un abattement s'opère sur l'ensemble des parts recueillies en ligne directe ou entre époux : 2 000 D par enfant, par ascendant à charge du défunt et pour le conjoint survivant, dans la limite de 12 000 D. Le [code de 1993](#r-pi-c-1993) reprend ces montants, impute l'abattement d'abord sur la part du conjoint, et prévoit 4 000 D de plus sur la part de chaque héritier handicapé ; [la loi n° 98-73](#r-pi-c-1998) les porte à 5 000 D, 30 000 D et 10 000 D (@tbl-pi-abattements-successions). L'habitation principale du défunt, taxée à 4,30 % en 1969 et en 1975, est exonérée en ligne directe et entre époux en [1984](#r-pi-c-1984), « quelle que soit l'importance de la succession » ; le code limite l'exonération à 1 000 m², dépendances bâties et non bâties comprises, l'excédent restant taxé.
 
-| Effet | Abattement par tête<br>(D) | Plafond<br>(D) | Supplément par héritier handicapé<br>(D) |
-|---|---|---|---|
-| [2 janvier 1975]{.insecable} | 2 000 | 12 000 | — |
-| [17 mai 1993]{.insecable} | 2 000 | 12 000 | 4 000 |
-| [17 août 1998]{.insecable} | 5 000 | 30 000 | 10 000 |
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import patrimoine_immobilier as fig_pi
+print(fig_pi.tableau_abattements_effet())
+print()
+print(": Les abattements sur les successions en ligne directe et entre époux, 1975-2026, "
+      "en dinars courants et en dinars de 2025. En 1975 et dans le code de 1993, "
+      "l'abattement par tête vaut pour chaque enfant, chaque ascendant à charge du défunt "
+      "et le conjoint survivant ; le plafond borne l'abattement total. Les dinars de 2025 "
+      "rapportent chaque montant à l'indice des prix à la consommation de son année "
+      "d'effet (moyenne annuelle) [@ins-annuaire ; @bct-ra], arrondis à la dizaine. Le "
+      "code consolidé par l'administration fiscale au 1^er^ janvier 2025 donne inchangés "
+      "les montants de 1998 (art. 51) [@minfin-cdet-2025]. Les textes sont au "
+      "@tbl-pi-registre-donations. {#tbl-pi-abattements-successions}")
+```
 
-: Les abattements sur les successions en ligne directe et entre époux, 1975-2026. En 1975 et dans le code de 1993, l'abattement par tête vaut pour chaque enfant, chaque ascendant à charge du défunt et le conjoint survivant ; le plafond borne l'abattement total. Le code consolidé par l'administration fiscale au 1^er^ janvier 2025 donne inchangés les montants de 1998 (art. 51) [@minfin-cdet-2025]. Les textes sont au @tbl-pi-registre-donations. {#tbl-pi-abattements-successions}
+Les montants de 1975 ne changent qu'une fois, en 1998 ; @fig-pi-abattements-successions les suit en dinars courants et en dinars de 2025. En dinars de 2025, l'abattement par tête vaut 30 800 D en 1976 et 7 300 D en 1997 ; le relèvement de 1998 le porte à 17 100 D en 1999, et la hausse des prix le ramène à 5 000 D en 2025, son montant courant inchangé depuis 1998. Le plafond passe, sur les mêmes années, de 184 900 D à 43 600 D, puis de 102 800 D à 30 000 D.
 
-<!-- TODO (rédacteur) : colonnes en dinars constants de l'année de référence du chapitre pour les abattements (convention « montant en dinars courants et constants »), une fois la série des prix retenue pour le chapitre. -->
+```{python}
+#| label: fig-pi-abattements-successions
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import patrimoine_immobilier as fig_pi
+import dinars_constants
+import figtools
+figtools.figure_tabs(
+    fig_pi.fig_abattements(), fig_pi.table_abattements(),
+    fig_pi.SERIE_SUCC_ABATTEMENTS, *dinars_constants.SERIES_IPC,
+    slug="fig_pi_abattements_successions", nominal=False,
+    caption=("Abattements sur les successions en ligne directe et entre époux, 1975-2026, "
+             "en dinars courants et en dinars de 2025"),
+    note_lecture=(
+        "Trois montants retranchés des parts recueillies en ligne directe ou entre époux : "
+        "l'abattement par enfant, par ascendant à charge du défunt et par conjoint "
+        "survivant ; le plafond de leur total ; l'abattement supplémentaire sur la part de "
+        "chaque héritier handicapé, que prévoit le code de 1993. Vue « Dinars courants » : "
+        "chaque montant vaut du jour de son effet à la veille du suivant ; le losange creux "
+        "du 17 mai 1993 marque le code, qui reprend les montants de 1975 sans les changer "
+        "[@loi74-101-lf1975, art. 30, p. 2916 ; @loi-93-53-cdet, code, art. 51, p. 725 ; "
+        "@loi-98-73, art. 9 et 10, p. 1737]. Vue « Dinars de 2025 » : chaque montant est "
+        "multiplié par le rapport de l'indice des prix à la consommation de 2025 à celui de "
+        "l'année, moyenne annuelle. L'indice est celui de l'INS en base 1970 "
+        "[@ins-annuaire], prolongé après 2023 par la variation de l'indice en base 2015 "
+        "que relaie la Banque centrale [@bct-ra]. Un segment par texte en vigueur : une "
+        "année n'est tracée que si le même texte vaut toute l'année. 1975 (effet le "
+        "2 janvier), 1993 (17 mai) et 1998 (17 août) se partagent entre deux textes et ne "
+        "sont pas tracées ; les traits verticaux marquent le code de 1993 et la loi "
+        "n° 98-73."),
+    generated="{{< meta date >}}",
+)
+```
+
+:::: {.chronologie-repliable titre="Abattements sur les successions : montants par année, en dinars courants et en dinars de 2025, 1976-2025"}
+
+```{python}
+#| echo: false
+#| output: asis
+import openfisca_tables as ot
+print(ot.tableau_vers_markdown(fig_pi.table_abattements()))
+print()
+print(": Les abattements sur les successions en ligne directe et entre époux, année par "
+      "année, en dinars courants et en dinars de 2025. Une année figure si le même texte "
+      "vaut toute l'année ; 1975, 1993 et 1998 se partagent entre deux textes. "
+      "{#tbl-pi-abattements-successions-annees}")
+```
+
+::::
 
 <!-- TODO (bibliographe) : notice propre pour l'avis du Conseil constitutionnel n° 31-2006 du 21 juin 2006 (éd. fr. p. 3875, éd. ar. p. 4557), publié avec la loi n° 2006-69, et pour l'avis n° 53-2006 (éd. fr. p. 3877). -->
 
