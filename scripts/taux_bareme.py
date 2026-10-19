@@ -44,6 +44,7 @@ Bareme = list[tuple[float, float]]
 _L = {
     "marginal": {"fr": "taux marginal (escalier)", "ar": "النسبة الحدية (درجات)"},
     "moyen": {"fr": "taux moyen (courbe)", "ar": "النسبة المتوسّطة (منحنى)"},
+    "tranche": {"fr": "taux de la tranche (escalier)", "ar": "نسبة الشريحة (درجات)"},
     "unique": {"fr": "taux unique : marginal et moyen confondus",
                "ar": "نسبة وحيدة: الحدية والمتوسّطة متطابقتان"},
     "c_assiette": {"fr": "Assiette (D)", "ar": "الوعاء (د)"},
@@ -206,13 +207,13 @@ def fig_taux_moyens_marginaux(
     """
     import math
 
-    sans_moyen = set(sans_moyen)
-
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     from matplotlib.lines import Line2D
 
+    sans_moyen = set(sans_moyen)
+    moyen_vu = False
     figtools.apply_lang_font()
     ft = figtools.fig_text
     lignes_fig = math.ceil(len(panneaux) / colonnes)
@@ -249,6 +250,7 @@ def fig_taux_moyens_marginaux(
                 gx = grille(bareme, assiette_max)
                 gy = [100 * taux_moyen(bareme, x) for x in gx]
                 moy, = ax.plot(gx, gy, color=c, lw=2.4, ls=ls, zorder=z + 1)
+                moyen_vu = True
                 if infobulle_panneau:
                     figtools.infobulle(moy, f"{libelle} · {libelles_etats[date]} · {_lab('moyen')}")
             if infobulle_panneau:
@@ -270,9 +272,13 @@ def fig_taux_moyens_marginaux(
         ax.set_ylabel(ft(ylabel))
     poignees = [Line2D([], [], color=couleurs[e], lw=2.4) for e in dates]
     noms = [ft(libelles_etats[e]) for e in dates]
-    poignees += [Line2D([], [], color="#57606a", lw=1.2, drawstyle="steps-post"),
-                 Line2D([], [], color="#57606a", lw=2.4)]
-    noms += [ft(_lab("marginal")), ft(_lab("moyen"))]
+    escalier = Line2D([], [], color="#57606a", lw=1.2, drawstyle="steps-post")
+    if sans_moyen and not moyen_vu:  # aucune courbe de taux moyen : l'escalier est le taux de la tranche
+        poignees.append(escalier)
+        noms.append(ft(_lab("tranche")))
+    else:
+        poignees += [escalier, Line2D([], [], color="#57606a", lw=2.4)]
+        noms += [ft(_lab("marginal")), ft(_lab("moyen"))]
     if unique_vu:
         poignees.append(Line2D([], [], color="#57606a", lw=2.4, ls="none", marker="none"))
         noms.append(ft(_lab("unique")))
