@@ -3679,9 +3679,10 @@
     couvert_jusqu_au: 1993-05-25
     resultat: aucun
   a_faire:
-  - 'lire à l''image la LF 1987 (loi n° 86-106, n° 78/1986, p. 1610-1623) et la LF 1988 (loi n° 87-83, n° 91/1987, p. 1628-1637) en entier, et la LF 1989 hors pages déjà lues'
-  - 'établir le tarif des donations applicable de 1984 au code (loi n° 74-101, art. 29 et 31)'
-  - 'établir l''origine de l''abattement de 4 000 D par héritier handicapé ; confirmer l''art. 30 de la LF 1975 sur l''édition arabe (p. 3221) ; le mode de liquidation avant 1993 relève d''une fiche à part, r-liquidation-successions-1929, proposée dans docs/notes/successions-liquidation-1969-1984.md, § 6, à verser avec son ancre'
+  - lire à l'image la LF 1987 (loi n° 86-106, n° 78/1986, p. 1610-1623) et la LF 1988 (loi n° 87-83, n° 91/1987, p. 1628-1637) en entier, et la LF 1989 hors pages déjà lues
+  - établir le tarif des donations applicable de 1984 au code (loi n° 74-101, art. 29 et 31)
+  - établir l'origine de l'abattement de 4 000 D par héritier handicapé ; confirmer l'art. 30 de la LF 1975 sur l'édition arabe (p. 3221) ; le mode de liquidation avant 1993 relève d'une fiche à part, r-liquidation-successions-1929, proposée dans docs/notes/successions-liquidation-1969-1984.md, § 6, à verser avec son ancre
+
 - id: r-liquidation-successions-1929
   objet: règle de liquidation du tarif progressif des droits de mutation par décès avant le code de 1993 — taux de chaque tranche sur la seule fraction de la part nette comprise dans la tranche, ou taux de la tranche atteinte sur toute la part — posée par le décret du 28 décembre 1929 « substituant pour les droits de mutations par décès le tarif progressif au tarif proportionnel » ou par un texte qui l'a modifié
   ou: [precis/fr/fiscalite/_patrimoine_immobilier.qmd#sec-pi-donations-successions]
@@ -3701,4 +3702,42 @@
   a_faire:
   - 'lire le décret du 28 décembre 1929 dans la Revue algérienne, tunisienne et marocaine de législation et de jurisprudence, année 1930, partie législation (Gallica, ark:/12148/bpt6k442529z ; 1929 : bpt6k442528k), depuis un poste qui atteint Gallica'
   - 'à défaut : Journal officiel tunisien de fin décembre 1929 ou de début 1930, à la Bibliothèque nationale de Tunisie (Gallica n''a que 1883-1887 ; le Journal des tribunaux français en Tunisie n''y a ni 1929 ni 1930)'
-  - 'lire le décret n° 66-31 du 24 janvier 1966 et le décret du 29 juin 1957, art. 8 (n° 52/1957, à obtenir sur pist.tn)'
+  - lire le décret n° 66-31 du 24 janvier 1966 et le décret du 29 juin 1957, art. 8 (n° 52/1957, à obtenir sur pist.tn)
+
+- id: r-mt-rupture-modif-apres-1996
+  objet: texte modifiant, après la loi n° 96-62, les articles 14 à 24 du code du travail (fin du contrat, préavis, gratification de fin de service, licenciement, dommages-intérêts), autre que le décret-loi n° 2020-2 (suspension) et la loi n° 2025-9 (art. 17)
+  ou: [precis/fr/marche_travail/_rupture_contrat.qmd#sec-mt-rc-etat-du-droit]
+  requetes:
+    titres_fts: ['"code du travail"', '"fin de service"', '"licenciement abusif"']
+    titres_like: ['%code du travail%', '%gratification de fin de service%']
+    iort_ar: [مجلة الشغل, مكافأة نهاية الخدمة, الطرد التعسفي, مراقبة الطرد, خطأ فادح]
+    depuis: 1996-07-24
+  passes:
+  - date: 2026-10-20
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: titres et objets de jort_cache du 1996-07-24 au 2026-10-02 (dernière publication indexée), notices à intitulé arabe comprises (5 337 sur la période) ; miroir iort (intitulés et texte arabe) ; candidats lus par leur intitulé ou leur texte iort ; plein texte des fascicules non parcouru ; fascicules inconnus de jort_cache non sondés ; terme arabe de la passe d'origine منحة نهاية الخدمة remplacé par مكافأة نهاية الخدمة, terme de la loi n° 94-29 (éd. arabe, art. 2)
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [rejouer avec le plein texte et --sonder-pist]
+
+- id: r-mt-rupture-decret-ccl-1966
+  objet: décret déterminant la composition, la compétence et la procédure de la commission chargée du contrôle des licenciements (code du travail, art. 21, al. 3, rédaction de 1966), le code organisant déjà une commission à ses art. 391 à 396
+  ou: [precis/fr/marche_travail/_rupture_contrat.qmd#sec-mt-rc-licenciement-economique]
+  requetes:
+    titres_fts: ['"controle des licenciements"', licenciements AND commission, licenciement AND commission]
+    titres_like: ['%controle des licenciements%', '%commission%licenci%']
+    plein_texte: [contrôle des licenciements, commission de contrôle des licenciements]
+    depuis: 1966-05-03
+  periode:
+    jusqu_au: 1996-07-31
+    motif: la loi n° 96-62, exécutoire le 31 juillet 1996, inscrit les commissions régionale et centrale dans le code (art. 21-4, 21-5) et abroge les art. 391 à 396 (art. 5)
+  passes:
+  - date: 2026-10-20
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: titres de jort_cache 1966-1996 (seul l'arrêté du 27 janvier 1956, transports, répond) ; plein texte du corpus local sur les seuls fascicules à couche texte, essentiellement 1994-1996 en français ; 1966-1993 en grande partie scans sans texte exploitable, non parcourus ; trois mentions (JORT n° 34/1995, 17/1996, 22/1996) renvoient à la commission sans la créer
+    couvert_jusqu_au: 1996-07-31
+    resultat: aucun
+  a_faire:
+  - océriser les fascicules 1966-1970 à la recherche d'un décret d'application de l'art. 21 ; le décret n'a peut-être jamais été pris, le code organisant lui-même la commission

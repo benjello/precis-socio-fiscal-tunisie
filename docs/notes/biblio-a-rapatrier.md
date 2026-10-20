@@ -3700,3 +3700,43 @@ celles que la note suggérait :
   Citée par `catalog.yml` de `tunisia-data` (`ins-ipim-trimestriel`,
   `ins-ipim-trimestriel-methode-anterieure`). `push_biblio.py --verifier` : 0 perte. `dry-run`
   Zotero non lancé.
+
+## Clôture du 20/10/2026 (marché du travail, « La rupture du contrat de travail ») — À REPORTER DANS ZOTERO
+
+27 clés versées dans `precis/{fr,ar}/marche_travail/references.json` (mêmes `id` des deux côtés),
+toutes absentes de Zotero, donc **provisoires** tant qu'elles n'y sont pas. Rangement voulu :
+collection du livre `marche_travail`. Contrôles locaux : toutes les `[@clé]` du chapitre résolvent
+(FR et AR), rendu FR sans `[?]`, `push_biblio.py --verifier` : 0 perte, `--dry-run` : conversion
+sans erreur, `--controle-rangement` : voir le compte rendu de la session (aucun défaut propre au
+chapitre). Action `dry-run` du workflow `biblio-zotero` non lancée (branche non poussée).
+
+À rapatrier :
+
+- [ ] Textes de droit (9) : `loi94-29`, `loi2025-9`, `arrete-2025-09-23-garantie-prestataires`,
+  `decret-loi2020-2`, `decret2020-411`, `loi92-81`, `loi2001-76`, `loi58-139`, `decret2025-327`.
+  `decret2025-327` : édition française absente de `jort_cache.db` (`pdf_fr` vide), donc FR sans URL,
+  intitulé traduit de l'arabe, lu dans l'édition arabe.
+- [ ] Études et données citées (11 sans DOI, à compléter si l'éditeur en porte un) :
+  `bm-2004-employment-strategy`, `bm-doing-business-2020-tunisie`, `oit-ilostat-salaries-temporaires`,
+  `ins-enquete-emploi-2012`, `bentolila-dolado-jimeno-2019-dual-labour-markets`,
+  `betcherman-2012-labor-market-institutions`, `felgueroso-et-al-2026-limiting-temporary-work`,
+  `estefan-et-al-2026-outsourcing-ban-mexico`, `holzmann-et-al-2011-severance-pay`,
+  `angel-urdinola-kuddo-2010-mena-employment-regulation`, `iace-2026-perception-drh-loi-2025-9`
+  (sans page : citées par section ou tableau, pas de `page` à verser).
+- [ ] Avec DOI : `bm-2015-labor-policy-good-jobs`, `garibaldi-violante-2005-severance`,
+  `heimberger-2021-epl-meta`, `bassanini-nunziata-venn-2009-epl-productivity`,
+  `wahba-assaad-2017-egypt-labor-regulation`. Pour `heimberger-2021-epl-meta`,
+  `bassanini-nunziata-venn-2009-epl-productivity` et `wahba-assaad-2017-egypt-labor-regulation`,
+  les pages citées sont celles de la version de travail (dit dans la `note`) : à ne pas confondre
+  avec la pagination de la version publiée.
+
+Doublons à trancher (non supprimés) : `bm-2004-employment-strategy` (citée par ce chapitre) double
+`bm2004-employment-strategy` (citée par `_politiques_emploi.qmd`) ; `bm-2015-labor-policy-good-jobs`
+(citée par ce chapitre, même DOI) double `bm2015-labor-policy` (citée par `_politiques_emploi.qmd`).
+Fusionner avant le versement : une seule clé dans Zotero, `sync_biblio.py` redescendra l'autre sinon.
+
+Versées mais non citées par ce chapitre : `ins-enquete-emploi-2012` (aucun chapitre ne la cite ;
+titre « Enquête nationale sur l'emploi 2012 », distinct de `ins-ees-2012` « Enquête emploi et
+salaires auprès des entreprises en 2012 »), `loi2007-19` (aucune citation, aucune entrée de
+glossaire), `decret2002-887` (citée par `prestations_sociales/_autres_risques.qmd`, pas par ce
+chapitre). `decret2025-327` : citée par l'entrée de glossaire seulement.

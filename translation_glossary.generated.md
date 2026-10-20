@@ -87,6 +87,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Catégorie de grade | صنف الرتبة |  |
 | Catégories à revenu limité | الفئات محدودة الدخل |  |
 | Catégories pauvres | الفئات الفقيرة |  |
+| Cause réelle et sérieuse | سبب حقيقي وجدي |  |
 | Centimes additionnels | صانتيمات إضافية |  |
 | Certificat d'aptitude professionnelle | شهادة الكفاءة المهنية | CAP |
 | Certificat de compétence | شهادة مهارة |  |
@@ -105,6 +106,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Collège pilote | المدرسة الإعدادية النموذجية |  |
 | Commerçant détaillant assujetti à la taxe sur la valeur ajoutée | تاجر التفصيل الخاضع للأداء على القيمة المضافة |  |
 | Commerçant grossiste | تاجر جملة |  |
+| Commission de contrôle du licenciement | لجنة مراقبة الطرد |  |
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
 | Commission régionale des bourses scolaires | اللجنة الجهوية للمنح المدرسية |  |
 | Compensation des carburants | دعم المحروقات |  |
@@ -123,6 +125,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Conseil supérieur de l'éducation et de l'enseignement | المجلس الأعلى للتربية والتعليم |  |
 | Conseil supérieur des collectivités locales | المجلس الأعلى للجماعات المحلية |  |
 | Conservation de la propriété foncière | إدارة الملكية العقارية |  |
+| Contrat à durée déterminée | عقد شغل لمدة معينة | CDD |
+| Contrat à durée indéterminée | عقد شغل لمدة غير معينة | CDI |
 | Contrat d'adaptation et d'insertion professionnelle | عقد التأهيل والإدماج المهني | CAIP |
 | Contrat d'apprentissage | عقد التدريب |  |
 | Contrat d'initiation à la vie professionnelle | عقد الإعداد للحياة المهنية | CIVP |
@@ -208,6 +212,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Enseignement moyen | التعليم المتوسط |  |
 | Enseignement secondaire | التعليم الثانوي |  |
 | Entrepositaire | أرباب المخازن |  |
+| Entreprise de prestation de services ou de fourniture de travaux | مؤسسة لإسداء خدمات أو للقيام بأشغال |  |
 | Entreprise tunisienne d'activités pétrolières | المؤسسة التونسية للأنشطة البترولية | ETAP |
 | Entreprises publiques | المنشآت العمومية |  |
 | Entreprises totalement exportatrices | المؤسسات المصدرة كليا |  |
@@ -225,6 +230,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fait générateur de la TVA | الحدث المنشئ للأداء |  |
 | Fait générateur du droit de consommation | الحدث المتولد عنه المعلوم على الاستهلاك |  |
 | Faute de gestion | خطأ التصرّف |  |
+| Faute grave | خطأ فادح |  |
 | Filière privée | المنظومة العلاجية الخاصة |  |
 | Filière publique | المنظومة العلاجية العمومية |  |
 | Flexibilité fiscale | المرونة الجبائية |  |
@@ -248,6 +254,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Gel du crédit de TVA (1998) | تجميد فائض الأداء على القيمة المضافة (1998) |  |
 | Gestion financière distincte | التصرّف المالي المستقلّ |  |
 | Grade | الرتبة |  |
+| Gratification de fin de service | مكافأة نهاية الخدمة |  |
 | Gratuité de l'enseignement | مجانية التعليم |  |
 | Grille de salaires conventionnelle | جدول الأجور |  |
 | Grille des salaires | شبكة الأجور |  |
@@ -294,6 +301,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Licence appliquée | الإجازة التطبيقية |  |
 | Licence fondamentale | الإجازة الأساسية |  |
 | Licence, mastère, doctorat | الإجازة والماجستير والدكتوراه | LMD |
+| Licenciement abusif | الطرد التعسفي |  |
+| Licenciement ou mise en chômage pour raisons économiques ou technologiques | الطرد أو الإيقاف عن العمل لأسباب اقتصادية أو فنية |  |
 | Limite de calcul des prestations | الحدّ الأقصى لاحتساب المنافع |  |
 | Livraison à soi-même | التسليم للنفس |  |
 | Livre foncier | السجل العقاري |  |
@@ -344,6 +353,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation des prix | تعديل الأسعار |  |
 | Péréquation des ressources | تعديل الموارد |  |
 | Péréquation financière | التعديل المالي |  |
+| Période d'essai | فترة التجربة |  |
 | Perte sèche | الخسارة الصافية في الرفاه |  |
 | Plus-value immobilière | القيمة الزائدة العقارية |  |
 | Plus-value nominale | القيمة الزائدة الاسمية |  |
@@ -352,6 +362,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Potentiel fiscal | الطاقة الجبائية |  |
 | Pourcentage de déduction | النسبة المائوية للطرح |  |
 | Pouvoir réglementaire local | السلطة الترتيبية |  |
+| Préavis | أجل الإعلام |  |
 | Précis socio-fiscal | الملخّص الاجتماعي والجبائي |  |
 | Présalaire | المرتب القبلي |  |
 | Prestation monétaire | المنفعة النقدية |  |
@@ -360,6 +371,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prêt universitaire | القرض الجامعي |  |
 | Prime d'investissement | منحة الاستثمار |  |
 | Prime de rendement | منحة المردودية |  |
+| Priorité de réembauchage | حق الأولوية في التشغيل |  |
 | Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale | تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي |  |
 | Prix de cession préférentiel | السعر التفاضلي |  |
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
@@ -458,6 +470,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Solde (militaire) | المرتّب العسكري |  |
 | Solde de réforme | منحة الإصلاح |  |
 | Sous-déclaration | التصريح بأقلّ من القيمة الحقيقية |  |
+| Sous-traitance de main-d'œuvre | مناولة اليد العاملة |  |
 | Souveraineté fiscale | السيادة الجبائية |  |
 | Stage d'initiation à la vie professionnelle | تربص الإعداد للحياة المهنية | SIVP |
 | Stage de cotisation | مدة الانخراط الدنيا |  |
@@ -514,6 +527,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Ticket modérateur | المعلوم التعديلي |  |
 | Titre foncier | الرسم العقاري |  |
 | Titre gelé | الرسم العقاري المجمد |  |
+| Titularisation | ترسيم |  |
 | Traitement de base | المرتب الأساسي |  |
 | Tranche | شريحة |  |
 | Transfert financier | التحويلات المالية |  |
@@ -526,5 +540,6 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
 | Valeur en douane | القيمة المصرح بها لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |
+| Zone franche économique | منطقة اقتصادية حرة |  |
 | Zones de développement régional | مناطق التنمية الجهوية |  |
 | Œuvres universitaires | الخدمات الجامعية |  |

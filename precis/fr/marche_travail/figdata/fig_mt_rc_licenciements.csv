@@ -1,0 +1,11 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-20
+# séries (tunisia_data) : banque-mondiale-2004-licenciements-economiques
+# sources (citation) : @bm-2004-employment-strategy
+# fiches : sources/banque-mondiale-2004-licenciements-economiques.md
+# méthode/hypothèses : SÉRIE DE SALARIÉS TOUCHÉS = LIGNE « Total Layoffs » ; la ligne « Number of Employees » (effectif total des entreprises demanderesses) n'est PAS transcrite et ne se trace jamais comme série de licenciés. Demandes de licenciement et leurs issues, pas des licenciements constatés. Tableau en image : valeurs lues à l'image, recoupées (issues = total, voies = total, parts imprimées). Une ligne du tableau est masquée par une tache noire. Série d'origine de l'inspection du travail non obtenue. Étude extérieure : à ne pas mêler au budgétaire.
+# note : Demandes de licenciement pour motif économique ou technologique : salariés visés selon l'issue de la demande, et part passée par la commission de contrôle, 1998-2001
+Année,Salariés visés par les demandes,Licenciement effectif,Chômage temporaire,Travail à temps partiel,Retraite anticipée,Autres issues,Salariés visés dont la demande passe par la commission (%)
+1998,16882.0,5102.0,7624.0,2350.0,1642.0,164.0,59.5
+1999,17565.0,3807.0,7271.0,4645.0,1333.0,509.0,52.8
+2000,19983.0,2894.0,11592.0,4644.0,724.0,129.0,36.9
+2001,18821.0,2618.0,9306.0,5820.0,845.0,232.0,33.9

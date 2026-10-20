@@ -2456,8 +2456,43 @@ en donnait trois.
   la fixation par décret de 2026 ne sont pas au chapitre, faute de clés de référence ; le décret
   n° 2018-674 (secteurs non couverts) n'a pas de clé non plus (TODO bibliographe dans
   `_negociations.qmd`).
-- **Chapitres annoncés, non écrits** : temps de travail et congés ; rupture du contrat de travail.
-  À ajouter au `_quarto.yml` français et arabe à leur rédaction.
+- **Chapitres annoncés, non écrits** : temps de travail et congés. À ajouter au `_quarto.yml`
+  français et arabe à sa rédaction.
+- **Rupture du contrat de travail — chapitre rédigé le 20 octobre 2026**
+  (`_rupture_contrat.qmd`, `#sec-mt-rupture-contrat`, entre `_negociations.qmd` et
+  `_politiques_emploi.qmd` au `_quarto.yml` français ; note `docs/notes/marche-travail-rupture-contrat.md`,
+  plan `docs/notes/marche-travail-rupture-contrat-plan-architecte.md`, fiche économique
+  `docs/notes/eco-rupture-contrat-travail.md`). Chapitre entier `.domicile-unique`, 48 lignes de
+  registre ; figures `fig-mt-rc-temporaires` (OIT, points par enquête) et
+  `fig-mt-rc-licenciements-economiques` (Banque mondiale 2004) ; figure `fig-mt-rc-contrats-ins`
+  engendré depuis la série de l'INS (snapshots du 20 octobre 2026). Restent :
+  - *arabe* : ajouter `_rupture_contrat.qmd` à `precis/ar/marche_travail/_quarto.yml` (entre
+    `_negociations.qmd` et `_politiques_emploi.qmd`) à la livraison de la traduction ;
+  - *tableaux faits main* : `tbl-mt-rc-parametres` et `tbl-mt-rc-etat-du-droit`, à engendrer
+    après versement des grandeurs (`backlog-modele.md`, 20/10/2026) ;
+  - *rémunérations publiques* : décret n° 2025-327 (sous-traitance interdite dans le secteur
+    public, effet au 22 juin 2025 ; édition arabe seule au corpus, éd. française 404) à exposer
+    dans « Les rémunérations dans le secteur public » (décision D6), puis renvoi depuis
+    `#sec-mt-rc-sous-traitance` ;
+  - *à obtenir* : JORT n° 32/2020 (décret-loi n° 2020-2, connu par iort ; 404 sur pist.tn) ;
+    étude BIT de 2019 sur un fonds perte d'emploi (403) ; série des licenciements économiques de
+    l'inspection du travail après 2001 ; décrets du Protectorat de 1940, 1943, 1944, 1950
+    (*Journal officiel tunisien*, OCR) ; dossier ARP du projet de loi n° 16/2025 et débats de 1994,
+    1996, 2025 (contexte des réformes, Q2) ;
+  - *à lire* : conventions de branche — préavis, indemnité de licenciement, départ à la retraite,
+    diviseur du « jour de salaire » (Q4, Q11 ; scans de `tunisia-data`, lecture à l'image) ;
+    loi n° 70-20 (texte local illisible, OCR à refaire, Q8) ; sort de la loi n° 58-139 (Q9) ;
+    code des obligations et contrats (Q14) ; rectificatif de la loi n° 92-81 et pied de page du
+    JORT n° 52/1992, à relire à l'image (Q6) ;
+  - *zones franches* : la loi n° 2001-76 (art. 1er, JORT n° 58/2001, p. 1752, exécutoire le
+    26 juillet 2001) renomme les zones « parcs d'activités économiques » ; le sort du contrat à
+    durée déterminée présumé (art. 23 de la loi n° 92-81) de 2001 à 2025 est à lire (reste de la
+    loi n° 2001-76, textes postérieurs sur les parcs) ; dénomination arabe non lue (édition arabe
+    du JORT n° 58/2001 à couche texte encodée, lecture à l'image) ;
+  - *glossaire* : « cause réelle et sérieuse », « priorité de réembauchage » et « zone franche
+    économique » ancrées le 20 octobre 2026 ; « délai-congé » est un synonyme de `preavis` ;
+    restent les notions économiques du § 7 de la fiche économique (protection de l'emploi,
+    marché du travail dual…).
 - **Politiques de l'emploi — chapitre arabe à déclarer** : `_politiques_emploi.qmd` est déclaré au
   `_quarto.yml` français seulement. À la livraison de la traduction, l'ajouter à la main à
   `precis/ar/marche_travail/_quarto.yml` (en dernier chapitre, après `_negociations.qmd`) et rendre le livre arabe :

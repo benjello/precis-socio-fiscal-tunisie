@@ -1,0 +1,513 @@
+# La rupture du contrat de travail {#sec-mt-rupture-contrat .domicile-unique}
+
+Ce chapitre présente ce que l'employeur doit au salarié quand le contrat de travail prend fin, et les conditions qu'il doit respecter pour y mettre fin : le [préavis](#g-preavis), la [gratification de fin de service](#g-gratification-fin-service), la réparation du [licenciement abusif](#g-licenciement-abusif), la procédure du [licenciement pour motif économique](#g-licenciement-economique) ; et les formes de contrat dont dépend ce coût : le [contrat à durée déterminée](#g-contrat-duree-determinee), la [période d'essai](#g-periode-essai), la [sous-traitance de main-d'œuvre](#g-sous-traitance-main-oeuvre). Il porte sur les salariés que régit le code du travail.
+
+Ce que verse la caisse de sécurité sociale aux travailleurs licenciés pour des raisons économiques ou technologiques, quand l'employeur en cessation de paiement ne paie pas, relève du volume [« Les prestations sociales »](../prestations_sociales/_autres_risques.html#sec-perte-emploi) ; le stage indemnisé de retour à l'emploi des licenciés, le [contrat de réinsertion dans la vie active](#g-crva), est au chapitre des politiques de l'emploi (@sec-mt-pe-renvoi).
+
+## Vue d'ensemble {#sec-mt-rc-en-bref}
+
+Un employeur qui licencie un salarié en [contrat à durée indéterminée](#g-contrat-duree-indeterminee) lui doit un [préavis](#g-preavis) d'un mois et, sauf [faute grave](#g-faute-grave), une [gratification de fin de service](#g-gratification-fin-service) d'un jour de salaire par mois de service, plafonnée à trois mois de salaire, barème inchangé depuis 1966 ; si le licenciement est sans [cause réelle et sérieuse](#g-cause-reelle-serieuse), il doit en outre, depuis 1994, des dommages-intérêts de un à deux mois de salaire par année d'ancienneté, dans la limite de trois ans de salaire. Le [licenciement pour motif économique](#g-licenciement-economique) passe, depuis 1966, par l'inspection du travail et une commission. Depuis le 28 mai 2025, le contrat de travail est réputé conclu pour une durée indéterminée, et la [sous-traitance de main-d'œuvre](#g-sous-traitance-main-oeuvre) est interdite.
+
+| Date d'effet et texte | Ce que la loi cherche, dans ses mots | Avant → après | Ce qui y naît |
+|:---|:---|:---|:---|
+| [1^er^ mai 1966]{.insecable}<br>[code du travail](#r-mt-rc-loi-1966) | « Fin du contrat de travail » (intitulé du chapitre) | décrets du Protectorat (contrôle des licenciements, rupture abusive, réembauchage) → un chapitre du code : préavis, indemnité de licenciement, licenciement abusif apprécié par le juge | contrôle du licenciement économique par une commission ; contrat « pour un temps déterminé » sans cas ni durée ; sous-entreprise de main-d'œuvre permise |
+| **[1^er^ mars 1994]{.insecable}**<br>[loi n° 94-29](#r-mt-rc-loi-1994) | « La dénomination "indemnité de licenciement" est remplacée par "gratification de fin de service" » | appréciation du juge selon les usages → cause réelle et sérieuse, onze fautes graves, barème des dommages-intérêts ; préavis unifié à un mois | — |
+| [31 juillet 1996]{.insecable}<br>[loi n° 96-62](#r-mt-rc-loi-1996) | « Le contrat de travail est conclu pour une durée indéterminée ou pour une durée déterminée » | contrat à durée déterminée sans cas ni durée → cinq cas de recours, ou quatre ans au plus par accord ; procédure du licenciement économique récrite, délais chiffrés | régime légal du contrat à durée déterminée |
+| **[28 mai 2025]{.insecable}**<br>[loi n° 2025-9](#r-mt-rc-loi-2025) | « Le contrat de travail est réputé conclu pour une durée indéterminée » ; « La sous-traitance de main-d'œuvre est interdite » | contrat à durée déterminée hors cas → trois cas seulement ; sous-traitance de main-d'œuvre permise → interdite, salariés sous-traités titularisés | régime des entreprises de prestation de services |
+
+: Les grandes réformes de la rupture du contrat de travail, 1966-2025 (en gras : les ruptures) {#tbl-mt-rc-reformes}
+
+Le coût d'une rupture pour l'employeur tient à quelques grandeurs, que le @tbl-mt-rc-parametres suit d'une réforme à l'autre.
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré (aucune de ces grandeurs n'est encore versée ; ligne de docs/notes/backlog-modele.md du 20/10/2026) -->
+
+| Grandeur | [1^er^ mai 1966]{.insecable}<br>[code](#r-mt-rc-loi-1966) | [1^er^ juin 1973]{.insecable}<br>[convention cadre](#r-mt-rc-loi-1973) | [1^er^ mars 1994]{.insecable}<br>[loi n° 94-29](#r-mt-rc-loi-1994) | [31 juillet 1996]{.insecable}<br>[loi n° 96-62](#r-mt-rc-loi-1996) | [28 mai 2025]{.insecable}<br>[loi n° 2025-9](#r-mt-rc-loi-2025) |
+|:---|:---|:---|:---|:---|:---|
+| Préavis | 1 mois (salariés payés au mois) ; 8 jours (autres) | délai des conventions de branche, à défaut celui de la loi | 1 mois pour tous | inchangé | inchangé |
+| Gratification de fin de service<br>(taux et plafond) | 1 jour de salaire par mois de services effectifs ; plafond de 3 mois de salaire | calcul renvoyé aux conventions de branche | inchangés | inchangés | inchangés |
+| Gratification<br>(condition) | 6 mois de services ; hors faute lourde | inchangée | après la période d'essai ; hors faute grave | inchangée | inchangée |
+| Dommages-intérêts<br>(licenciement abusif) | appréciés par le juge | inchangés | 1 à 2 mois de salaire par année d'ancienneté ; plafond de 3 ans de salaire | inchangés | inchangés |
+| Dommages-intérêts<br>(vice de procédure seul) | — | — | 1 à 4 mois de salaire | inchangés | inchangés |
+| Contrat à durée déterminée<br>(hors cas de recours) | ni cas ni durée | inchangé | inchangé | 4 ans au plus, renouvellements compris | interdit ; trois cas de recours, sans durée maximale |
+| Période d'essai | renvoyée aux conventions, à l'usage ou à la loi | 3 mois, renouvelable une fois | inchangée | inchangée | 6 mois au plus, renouvelable une fois |
+
+: Ce que coûte la fin d'un contrat permanent, 1966-2025 {#tbl-mt-rc-parametres}
+
+« Inchangé » signale une règle que le texte de la colonne ne touche pas ; un tiret, une règle qui n'existe pas encore. Les montants légaux sont des minimums, que les conventions de branche peuvent dépasser.
+
+- **Un barème stable.** La gratification de fin de service vaut un jour de salaire par mois de service, plafonnée à trois mois de salaire, en 1966 comme en 2026 ; en 1994, elle change de nom et de condition d'ancienneté, non de montant (@sec-mt-rc-1994).
+- **1994 : la cause réelle et sérieuse.** Le licenciement doit avoir une cause réelle et sérieuse, indiquée par écrit ; à défaut, des dommages-intérêts fixés par un barème remplacent l'appréciation du juge (@sec-mt-rc-1994).
+- **Le contrat à durée déterminée, libre, encadré, puis réduit à trois cas.** Libre en 1966, il reçoit en 1996 des cas de recours et une durée maximale de quatre ans hors de ces cas ; depuis 2025, il n'est permis que dans trois cas (@sec-mt-rc-cdd).
+- **2025 : la sous-traitance de main-d'œuvre interdite.** Les salariés sous-traités sont réputés titularisés auprès de l'entreprise qui les employait de fait (@sec-mt-rc-sous-traitance).
+
+## La mise en place : le code du travail de 1966 {#sec-mt-rc-mise-en-place}
+
+Le code du travail comme institution, sa promulgation et son contenu d'ensemble, sont présentés au chapitre des institutions du travail (@sec-mt-code). Cette section expose ce que le code de 1966 fixe pour la fin du contrat, et ce qu'il reprend des textes antérieurs.
+
+### Avant le code {#sec-mt-rc-antecedents}
+
+Le code de 1966 reprend des règles de la rupture que des décrets du Protectorat avaient posées, et il abroge ces décrets.
+
+- **Cinq décrets abrogés.** La [liste des textes abrogés](#r-mt-rc-decrets-protectorat) par la loi qui promulgue le code comprend, parmi ceux qui touchent la fin du contrat, le décret du 14 novembre 1940 « sur le contrôle des licenciements dans les établissements industriels et commerciaux », celui du 18 mars 1943 sur la « responsabilité du nouvel employeur en cas de rupture abusive du contrat de travail », celui du 16 mars 1944 « sur le réembauchage des salariés licenciés en raison des circonstances économiques », celui du 3 août 1950 « relatif au certificat de travail, à la garantie des droits du personnel salarié en cas de cession ou de transformation juridique des entreprises », et celui du 15 janvier 1953 sur le louage de services et les obligations militaires. Le code reprend leurs objets : contrôle des licenciements (art. 21 et 391 à 396), responsabilité du nouvel employeur (art. 26), réembauchage (art. 9), cession de l'entreprise et certificat de travail (art. 15 et 27), service militaire (art. 8 et 19).
+- **Les mines, depuis 1958.** Une [loi de 1958](#r-mt-rc-1958) accorde aux salariés des exploitations minières, à compter du 1^er^ juillet 1958, un préavis de huit jours et, sauf faute grave, une indemnité de licenciement de quatre journées de salaire par année d'ancienneté, majorée de 20 % au-delà de dix ans et plafonnée à soixante journées ; le licenciement est sans effet si l'indemnité n'est pas payée dans le mois.
+- **Une trace de 1940.** Dans le code de 1966, l'article qui classe les demandes de licenciement soumises à la commission range encore à part celles « qui résultent des conséquences directes de la situation de guerre ayant une gravité telle qu'elles peuvent être considérées comme constituant une force majeure » ([art. 393](#r-mt-rc-art393)).
+
+<!-- TODO (documentaliste) : décrets du 14/11/1940, 18/3/1943, 16/3/1944 et 3/8/1950 à lire au Journal officiel tunisien (OCR), pour décrire leurs règles au-delà de leur intitulé. -->
+<!-- TODO (documentaliste) : sort de la loi n° 58-139 après 1966 (Q9) : absente de la liste de l'art. 4 du code ; abrogation non établie. -->
+<!-- TODO (documentaliste) : le code des obligations et contrats (louage de services) comme antécédent du délai-congé (Q14). -->
+
+:::: {.chronologie-repliable titre="Textes antérieurs au code du travail sur la fin du contrat : décrets du Protectorat et indemnité des mineurs (préavis, montant), 1940-1966"}
+
+| Date | Portée | Texte et articles | Contenu |
+|---|---|---|---|
+| []{#r-mt-rc-decrets-protectorat}1940-1953 | antécédent | décrets des 14 novembre 1940, 18 mars 1943, 16 mars 1944, 3 août 1950 et 15 janvier 1953, abrogés par la loi n° 66-27 [@loi66-27, art. 4, p. 716] | contrôle des licenciements ; responsabilité du nouvel employeur en cas de rupture abusive ; réembauchage des licenciés économiques ; certificat de travail et cession d'entreprise ; obligations militaires |
+| []{#r-mt-rc-1958}[1^er^ juillet 1958]{.insecable} | antécédent | loi n° 58-139 du 23 décembre 1958 [@loi58-139, art. 2, 3, 5 et 6] | salariés des exploitations minières : préavis de 8 jours ; indemnité de 4 journées de salaire entre un et deux ans d'ancienneté, puis de 4 journées par année d'ancienneté, majorée de 20 % au-delà de dix ans, plafond de 60 journées ; licenciement sans effet si l'indemnité n'est pas payée dans le mois |
+| []{#r-mt-rc-art393}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 393, p. 810] | parmi les demandes de licenciement soumises à la commission, celles « qui résultent des conséquences directes de la situation de guerre […] » |
+
+: Les textes antérieurs au code du travail sur la fin du contrat, 1940-1966 {#tbl-mt-rc-antecedents-textes}
+
+::::
+
+### Le code de 1966 {#sec-mt-rc-code-1966}
+
+Le code du travail, en vigueur le 1^er^ mai 1966, réunit les règles de la fin du contrat dans un chapitre intitulé « Fin du contrat de travail » (art. 14 à 27) et en confie le contrôle au juge, sauf pour le licenciement économique, soumis à l'avis préalable d'une commission. La loi qui le promulgue ne se donne pas d'autre objet que de réunir « les textes […] relatifs au droit du travail constituant le Code du Travail » ([loi n° 66-27](#r-mt-rc-loi-1966)).
+
+- **Le préavis.** Le contrat à durée indéterminée prend fin après un délai-congé d'un mois pour les salariés payés au mois et de huit jours pour les autres, sauf disposition plus avantageuse d'un règlement, d'un accord, d'une convention ou d'un usage ([art. 14](#r-mt-rc-preavis-1966)).
+- **L'indemnité de licenciement.** Le salarié licencié après six mois de services reçoit, hors faute lourde, un jour de salaire par mois de services effectifs, dans la limite de trois mois de salaire « quelle que soit la durée des services » ([art. 22](#r-mt-rc-grat-1966)).
+- **L'abus, apprécié par le juge.** Le juge apprécie le caractère abusif d'un licenciement « d'après les usages, la nature et l'ancienneté des services » ; la faute grave, l'insuffisance professionnelle ou l'insuffisance de rendement due à une mauvaise volonté évidente « n'ouvrent droit à aucune réparation » ([art. 23 et 24](#r-mt-rc-motif-1966)).
+
+Quatre dispositifs naissent avec le code :
+
+- le contrôle des licenciements pour raison économique, soumis à l'avis préalable d'une commission ([art. 21 et 391 à 396](#r-mt-rc-le-1966) ; @sec-mt-rc-licenciement-economique) ;
+- le contrat conclu « pour un temps déterminé ou indéterminé, soit pour un travail déterminé », sans cas de recours ni durée ([art. 6 et 17](#r-mt-rc-cdd-1966) ; @sec-mt-rc-cdd) ;
+- la période d'essai, dont la durée est renvoyée aux conventions, à l'usage ou à la loi ([art. 18](#r-mt-rc-essai-1966) ; @sec-mt-rc-essai) ;
+- la sous-entreprise de main-d'œuvre, permise, l'entreprise principale répondant des obligations du sous-entrepreneur insolvable ([art. 28 à 30](#r-mt-rc-st-1966) ; @sec-mt-rc-sous-traitance).
+
+De 1966 à 1994, deux textes complètent ces règles sans les récrire. La [convention collective cadre](#g-convention-collective-cadre), rendue obligatoire au [1^er^ juin 1973](#r-mt-rc-loi-1973), fixe la période d'essai à trois mois et renvoie le délai-congé et le calcul de l'indemnité de licenciement aux conventions de branche (@sec-mt-rc-essai, @sec-mt-rc-registres). En 1992, l'État répute à durée déterminée les contrats de travail conclus dans les [zones franches économiques](#g-zone-franche-economique) (@sec-mt-rc-zones-franches).
+
+<!-- TODO (documentaliste) : loi n° 70-20 « portant modification du code du travail » (JORT n° 23/1970, p. 483) : texte illisible au fascicule local, objet non établi (Q8). -->
+
+## Les grandes réformes {#sec-mt-rc-reformes}
+
+Trois lois récrivent la fin du contrat après 1966 : celle de 1994 fonde le licenciement sur une cause réelle et sérieuse et fixe un barème de la réparation ; celle de 1996 donne un régime légal au contrat à durée déterminée et récrit la procédure du licenciement économique ; celle de 2025 répute le contrat conclu pour une durée indéterminée et interdit la sous-traitance de main-d'œuvre (@tbl-mt-rc-reformes).
+
+### 1994 : la cause réelle et sérieuse et le barème de la réparation {#sec-mt-rc-1994}
+
+Depuis le 1^er^ mars 1994, un licenciement doit reposer sur une [cause réelle et sérieuse](#g-cause-reelle-serieuse) ; à défaut, l'employeur doit des dommages-intérêts fixés par un barème légal, et non plus appréciés par le juge selon les usages.
+
+**Ce que la loi cherche.** Sous un intitulé général, « portant modification de certaines dispositions du code du travail », et sans rubrique, la [loi n° 94-29](#r-mt-rc-loi-1994) énumère les articles qu'elle modifie et ajoute au chapitre « Fin du contrat de travail », et dispose que « la dénomination "indemnité de licenciement" est remplacée par "gratification de fin de service" dans tous les articles du Code du travail » ([art. 2](#r-mt-rc-grat-1994)).
+
+<!-- TODO (documentaliste) : contexte d'époque de la loi n° 94-29 dans les mots d'une source de 1994 — débats de la Chambre des députés (adoption le 9 février 1994), documents du VIIIe Plan (Q2). -->
+
+**Avant → après.**
+
+- **Le préavis.** Un mois ou huit jours selon le mode de paie → un mois pour tous les salariés, notifié par lettre recommandée ; le salarié peut s'absenter, payé, « durant toute la deuxième moitié de la durée du préavis » ([art. 14 bis](#r-mt-rc-preavis-1994)).
+- **Le motif.** L'employeur indique les causes du licenciement dans la lettre de préavis ; est abusif le licenciement « sans l'existence d'une cause réelle et sérieuse » ou sans respect des procédures ; onze fautes graves sont énumérées ([art. 14 ter à 14 quinter](#r-mt-rc-motif-1994)).
+- **La réparation.** Les dommages-intérêts, appréciés jusque-là par le juge, sont compris « entre le salaire d'un mois et celui de deux mois pour chaque année d'ancienneté », dans la limite du « salaire de trois années » ; si la cause est réelle et sérieuse mais la procédure non respectée, ils vont de un à quatre mois de salaire. Ils « ne se confondent pas » avec l'indemnité de préavis ni avec la gratification. L'action se forme « dans l'année qui suit la rupture » ([art. 23 et 23 bis](#r-mt-rc-reparation-1994)). La rupture abusive d'un [contrat à durée déterminée](#g-contrat-duree-determinee) par l'employeur ouvre droit à des dommages-intérêts égaux au salaire de la durée restante ([art. 24](#r-mt-rc-cdd-abusif-1994)).
+- **La gratification.** L'[indemnité de licenciement](#g-gratification-fin-service) devient la gratification de fin de service ; elle est due « après l'expiration de la période d'essai », et non plus après six mois de services ; la « faute grave », et non plus la « faute lourde », l'exclut ; son taux et son plafond ne changent pas ([art. 22](#r-mt-rc-grat-1994)).
+
+### 1996 : le contrat à durée déterminée entre dans le code ; la procédure du licenciement économique récrite {#sec-mt-rc-1996}
+
+Depuis le 31 juillet 1996, le contrat à durée déterminée a un régime légal — des cas de recours et une durée maximale hors de ces cas —, et le licenciement pour motif économique suit une procédure aux délais chiffrés. Le préavis, le motif et la gratification ne changent pas.
+
+**Ce que la loi cherche.** Sous le même intitulé général qu'en 1994, et sans rubrique pour les articles qui touchent la fin du contrat, la [loi n° 96-62](#r-mt-rc-loi-1996) place en tête du régime du contrat : « Le contrat de travail est conclu pour une durée indéterminée ou pour une durée déterminée » ([art. 6-2](#r-mt-rc-cdd-1996)).
+
+<!-- TODO (documentaliste) : contexte d'époque de la loi n° 96-62 dans les mots d'une source de 1996 — débats (adoption le 18 juin 1996), IXe Plan, accord d'association avec l'Union européenne de 1995 (Q2). -->
+
+**Avant → après.**
+
+- **Le contrat à durée déterminée.** Sans cas ni durée → cinq cas de recours ; hors de ces cas, un contrat conclu par accord des parties, « à condition que la durée de ce contrat n'excède pas quatre ans y compris ses renouvellements » ; au-delà, le salarié est recruté « à titre permanent et sans période d'essai » ; ses salaires ne peuvent être inférieurs à ceux des salariés permanents ([art. 6-2 à 6-4](#r-mt-rc-cdd-1996) ; @sec-mt-rc-cdd).
+- **Le licenciement économique.** Une commission par branche et quatre groupes de demandes → notification à l'inspection du travail, enquête et conciliation en quinze jours, avis d'une commission régionale ou centrale en quinze jours, sept propositions possibles ; les articles 391 à 396 sont abrogés ([art. 21 à 21-12](#r-mt-rc-le-1996) ; @sec-mt-rc-licenciement-economique).
+- **La [priorité de réembauchage](#g-priorite-reembauchage).** La règle passe de l'article 9 à l'article 21-13, sans changer ([art. 21-13](#r-mt-rc-le-1996-reembauche)).
+
+Du 14 avril au 3 juillet 2020, pendant l'épidémie de Covid-19, la force majeure cesse d'être une cause de fin du contrat et de dispenser de l'avis de la commission de contrôle, et l'employeur peut imposer au salarié la prise de son congé annuel ([décret-loi n° 2020-2](#r-mt-rc-2020) ; @sec-mt-rc-licenciement-economique).
+
+<!-- TODO (documentaliste) : décret-loi n° 2020-2 connu par le seul texte du miroir iort.tn ; relire le JORT n° 32/2020 à l'image (404 sur pist.tn, éditions F et A, au 20/10/2026) (Q5). -->
+
+### 2025 : le contrat réputé à durée indéterminée, la sous-traitance de main-d'œuvre interdite {#sec-mt-rc-2025}
+
+Depuis le 28 mai 2025, le contrat de travail est réputé conclu pour une durée indéterminée : le contrat à durée déterminée n'est permis que dans trois cas, la sous-traitance de main-d'œuvre est interdite, et les salariés sous-traités sont réputés titularisés auprès de l'entreprise qui bénéficiait de leur travail.
+
+**Ce que la loi cherche.** Intitulée « portant réglementation des contrats de travail et interdiction de la sous-traitance de main-d'œuvre », rangée en quatre chapitres — « Des contrats de travail », « De l'interdiction de la sous-traitance de main d'œuvre », « Dispositions diverses », « Dispositions transitoires » —, la [loi n° 2025-9](#r-mt-rc-loi-2025) pose : « Le contrat de travail est réputé conclu pour une durée indéterminée » ([art. 6-2](#r-mt-rc-cdd-2025)) ; « La sous-traitance de main-d'œuvre est interdite » ([art. 28](#r-mt-rc-st-2025)).
+
+<!-- TODO (documentaliste) : contexte de la loi n° 2025-9 — comptes rendus de l'ARP des 20 et 21 mai 2025, dossier du projet de loi n° 16/2025 et rapport de la commission de la santé et des affaires sociales. La presse (Webdo, 19 mai 2025) donne le 14 mars 2025, date retenue par l'art. 6, pour date de dépôt du projet : à confirmer sur le site de l'ARP avant toute mention dans le texte. Le 6 mars 2024 (art. 9) reste sans explication (Q2). -->
+
+**Avant → après.**
+
+- **Le contrat à durée déterminée.** Cinq cas, ou quatre ans par accord → trois cas seulement ; écrit obligatoire, à défaut de quoi le contrat est à durée indéterminée ; les contrats en cours conclus hors des trois cas, et ceux « rompus après le 14 mars 2025 », deviennent des contrats à durée indéterminée ([art. 6](#r-mt-rc-cdd-2025-requalif) ; @sec-mt-rc-cdd). Un salarié qui continue de travailler après le terme est en contrat à durée indéterminée, avec son ancienneté et sans période d'essai ([art. 17](#r-mt-rc-cdd-2025)).
+- **La période d'essai.** Renvoyée aux conventions, qui la limitaient à trois mois renouvelables une fois → six mois au plus, renouvelable une fois ([art. 6-3](#r-mt-rc-essai-2025) ; @sec-mt-rc-essai).
+- **La sous-traitance de main-d'œuvre.** Permise → interdite, sous peine de sanctions pénales ; la prestation de services reste permise hors de l'activité principale et permanente de l'entreprise bénéficiaire. Les salariés sous-traités, et les agents employés de manière permanente auprès des offices, établissements publics et entreprises publiques à caractère industriel, commercial et agricole, « sont réputés titularisés auprès de l'entreprise bénéficiaire », avec leur ancienneté ([art. 28 à 30 sexies et art. 8](#r-mt-rc-st-2025-titularisation) ; @sec-mt-rc-sous-traitance).
+- **Les ruptures intervenues du 6 mars 2024 au 28 mai 2025.** Le salarié en contrat à durée déterminée ou sous-traité dont la relation de travail, rompue dans cette période, a duré quatre ans ou plus est titularisé de plein droit ; à défaut, il reçoit une indemnité de rupture de « deux mois de salaire par année d'ancienneté », prescrite un an après l'entrée en vigueur de la loi ([art. 9](#r-mt-rc-2025-art9)).
+
+Le préavis, le motif du licenciement et la gratification de fin de service ne changent pas ; le régime des [entreprises de prestation de services](#g-entreprise-prestation-services) et de fourniture de travaux remplace, dans le code, celui de la sous-entreprise de main-d'œuvre (@sec-mt-rc-sous-traitance).
+
+### Les textes, élément par élément {#sec-mt-rc-registres}
+
+Les quatre blocs qui suivent donnent, pour les lois de réforme et pour chaque règle de la fin du contrat permanent — préavis, motif et réparation, gratification —, tous les textes dans l'ordre des dates.
+
+:::: {.chronologie-repliable titre="Lois de réforme de la fin du contrat de travail : intitulés, rubriques et dates d'effet, 1966-2025"}
+
+| Effet | Portée | Texte | Intitulé, rubriques et date d'effet |
+|---|---|---|---|
+| []{#r-mt-rc-loi-1966}[1^er^ mai 1966]{.insecable} | mise en place | loi n° 66-27 du 30 avril 1966, code du travail [@loi66-27, art. 1er] | « Les textes publiés ci-après relatifs au droit du travail constituant le Code du Travail » ; « entrera en vigueur le 1er mai 1966 » ; livre I, titre premier, chapitre III, « Fin du contrat de travail » (art. 14 à 27) |
+| []{#r-mt-rc-loi-1973}[1^er^ juin 1973]{.insecable} | étape | convention collective cadre, rendue obligatoire par arrêté du 29 mai 1973 [@arrete-1973-05-29-convention-cadre, art. 10, 16 et 18] | période d'essai, délai-congé, indemnité de licenciement pour toutes les activités non agricoles |
+| []{#r-mt-rc-loi-1994}[1^er^ mars 1994]{.insecable} | **rupture** | loi n° 94-29 du 21 février 1994 [@loi94-29, art. 1er et 2, p. 318-319 et 325] | « portant modification de certaines dispositions du code du travail » ; aucune rubrique ; exécutoire cinq jours après le dépôt du JORT n° 15 au gouvernorat de Tunis, le 24 février 1994 |
+| []{#r-mt-rc-loi-1996}[31 juillet 1996]{.insecable} | grande réforme | loi n° 96-62 du 15 juillet 1996 [@loi96-62, art. 1er et 5, p. 1579-1580 et 1588] | même intitulé ; aucune rubrique pour les art. 6-2 à 6-4 et 21 à 21-13 ; exécutoire cinq jours après le dépôt du JORT n° 59, le 26 juillet 1996 |
+| []{#r-mt-rc-loi-2025}[28 mai 2025]{.insecable} | **rupture** | loi n° 2025-9 du 21 mai 2025 [@loi2025-9, art. 1er à 10, p. 1296-1299] | « portant réglementation des contrats de travail et interdiction de la sous-traitance de main-d'œuvre » ; chapitres « Des contrats de travail » (art. 1er), « De l'interdiction de la sous-traitance de main d'œuvre » (art. 2), « Dispositions diverses » (art. 3 à 5), « Dispositions transitoires » (art. 6 à 10) ; exécutoire cinq jours après le dépôt du JORT n° 61, le 23 mai 2025 |
+
+: Les lois de réforme de la fin du contrat de travail, 1966-2025 {#tbl-mt-rc-lois}
+
+::::
+
+:::: {.chronologie-repliable titre="Préavis de rupture du contrat à durée indéterminée : durée et règles, textes date par date, 1966-2026"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-rc-preavis-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 14, p. 718] | — → « un mois pour les travailleurs payés au mois ; huit jours pour les autres travailleurs », sauf disposition plus avantageuse d'un règlement, d'un accord, d'une convention ou d'un usage |
+| []{#r-mt-rc-preavis-1973}[1^er^ juin 1973]{.insecable} | ajustement | convention collective cadre [@arrete-1973-05-29-convention-cadre, art. 16, p. 854] | délai-congé fixé par les conventions de branche, « à défaut, selon la législation » ; indemnité de non-respect au moins égale au salaire du délai ; deux heures d'absence par jour ouvrable pendant le délai |
+| []{#r-mt-rc-preavis-1994}[1^er^ mars 1994]{.insecable} | **rupture** (1994) | loi n° 94-29 [@loi94-29, art. 1er (art. 14 bis), p. 318] | 1 mois ou 8 jours selon le mode de paie → « un mois avant la rupture », par lettre recommandée, pour tous ; absence payée « durant toute la deuxième moitié de la durée du préavis » |
+| []{#r-mt-rc-fin-cdi-1994}[1^er^ mars 1994]{.insecable} | étape (1994) | loi n° 94-29 [@loi94-29, art. 1er (art. 14)] | le contrat à durée déterminée prend fin à l'expiration de sa durée ou à l'achèvement du travail (al. 1er) ; le contrat à durée indéterminée, à « l'expiration du délai de préavis » (al. 2) ; tout contrat prend fin « par la volonté de l'une des parties suite à une faute grave commise par l'autre partie » (al. 3 b) |
+| []{#r-mt-rc-demission}[1^er^ mai 1966]{.insecable}<br>[1^er^ mars 1994]{.insecable} | ajustement | code du travail [@loi66-27, art. 18, p. 719] ; loi n° 94-29 [@loi94-29, art. 1er (art. 14 bis et 23)] | démission : le préavis d'un mois est dû à « l'autre partie », par le salarié comme par l'employeur ; « les femmes en état de grossesse peuvent quitter le travail sans délai-congé et sans avoir de ce fait à payer une indemnité de rupture » (art. 18, inchangé) ; la rupture abusive « par l'une des parties » ouvre droit à dommages-intérêts (art. 23) |
+
+: Le préavis, texte par texte, 1966-2026 {#tbl-mt-rc-preavis-textes}
+
+::::
+
+:::: {.chronologie-repliable titre="Motif du licenciement et dommages-intérêts du licenciement abusif : barème, conditions et textes date par date, 1966-2026"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-rc-motif-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 21, 23 et 24, p. 719] | abusif, le licenciement économique sans avis préalable de la commission, sauf force majeure (art. 21) ; abus apprécié par le juge « d'après les usages, la nature et l'ancienneté des services » (art. 23) ; faute grave, insuffisance professionnelle ou de rendement « n'ouvrent droit à aucune réparation », avec avis de la commission de classement pour les deux dernières (art. 24) |
+| []{#r-mt-rc-motif-1994}[1^er^ mars 1994]{.insecable} | **rupture** (1994) | loi n° 94-29 [@loi94-29, art. 1er (art. 14 ter, 14 quater et 14 quinter), p. 318] | causes indiquées dans la lettre de préavis ; abusif, le licenciement « sans l'existence d'une cause réelle et sérieuse » ou sans respect des procédures ; onze fautes graves énumérées |
+| []{#r-mt-rc-reparation-1994}[1^er^ mars 1994]{.insecable} | **rupture** (1994) | loi n° 94-29 [@loi94-29, art. 1er (art. 23 et 23 bis), p. 319] | dommages-intérêts appréciés par le juge → « entre le salaire d'un mois et celui de deux mois pour chaque année d'ancienneté », plafond « le salaire de trois années » ; vice de procédure seul : 1 à 4 mois ; dommages-intérêts qui « ne se confondent pas » avec l'indemnité de préavis ni avec la gratification ; action « dans l'année qui suit la rupture » (renvoi au code de procédure civile en 1966) |
+| []{#r-mt-rc-cdd-abusif-1994}[1^er^ mars 1994]{.insecable} | étape (1994) | loi n° 94-29 [@loi94-29, art. 1er (art. 24), p. 319] | rupture abusive d'un contrat à durée déterminée par l'employeur : dommages-intérêts égaux au salaire de la durée restante |
+| []{#r-mt-rc-2020}[14 avril 2020]{.insecable}<br>[3 juillet 2020]{.insecable} | ajustement temporaire | décret-loi n° 2020-2 du 14 avril 2020 [@decret-loi2020-2, art. 1er, 2 et 4 à 6] ; décret gouvernemental n° 2020-411 [@decret2020-411, art. 1er et 2, p. 1405] | suspendus, « à compter de la date de sa publication » : la fin du contrat pour impossibilité d'exécution par force majeure (art. 14 c) et, à l'art. 21-12, la dispense d'avis en cas de force majeure ; congé annuel imposé possible (art. 117) ; fin de la suspension à la levée du confinement total, le 3 juillet 2020 |
+| []{#r-mt-rc-2025-art9}[28 mai 2025]{.insecable} | étape (2025) | loi n° 2025-9 [@loi2025-9, art. 9, p. 1299] | ruptures de contrats à durée déterminée et de sous-traitance du 6 mars 2024 au 28 mai 2025 : titularisation de plein droit après quatre ans de relation ; à défaut, indemnité de « deux mois de salaire par année d'ancienneté », prescrite un an après l'entrée en vigueur |
+
+: Le motif du licenciement et sa réparation, texte par texte, 1966-2026 {#tbl-mt-rc-motif-textes}
+
+::::
+
+:::: {.chronologie-repliable titre="Gratification de fin de service (indemnité de licenciement) : taux, plafond et condition d'ancienneté, textes date par date, 1966-2026"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-rc-grat-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 22, p. 719] | — → « un jour de salaire par mois de services effectifs », après six mois de services, hors faute lourde ; plafond de « trois mois de salaire quelle que soit la durée des services » |
+| []{#r-mt-rc-grat-1973}[1^er^ juin 1973]{.insecable} | ajustement | convention collective cadre [@arrete-1973-05-29-convention-cadre, art. 18, p. 855] | indemnité « tenant compte de l'ancienneté », calcul « précisé dans les conventions collectives particulières » ; base : rémunération du mois précédant le préavis, au moins la moyenne des douze derniers mois |
+| []{#r-mt-rc-grat-1994}[1^er^ mars 1994]{.insecable} | étape (1994) | loi n° 94-29 [@loi94-29, art. 1er (art. 22) et art. 2, p. 319 et 325] | nom : « indemnité de licenciement » → « gratification de fin de service », dans tout le code ; condition : six mois de services → « après l'expiration de la période d'essai » ; « faute lourde » → « faute grave » ; taux et plafond inchangés ; base : « le salaire perçu par le travailleur au moment du licenciement, compte tenu de tous les avantages n'ayant pas le caractère de remboursement de frais » |
+
+: La gratification de fin de service, texte par texte, 1966-2026 {#tbl-mt-rc-gratification-textes}
+
+::::
+
+## Le droit au 1^er^ janvier 2026 {#sec-mt-rc-etat-du-droit}
+
+Au 1^er^ janvier 2026, ce que l'employeur doit dépend de la façon dont le contrat prend fin : rien en cas de démission, où c'est le salarié qui doit le préavis ; le préavis et la gratification en cas de licenciement fondé ; en outre des dommages-intérêts en cas de licenciement abusif ; le salaire de la durée restante en cas de rupture abusive d'un contrat à durée déterminée.
+
+Le préavis, le motif du licenciement et la gratification de fin de service sont dans leur rédaction de 1994 ; en l'état des textes identifiés, aucun texte postérieur ne les modifie, hors la suspension de 2020, levée la même année, et la nouvelle rédaction de la reconduction tacite du contrat à durée déterminée en 2025.
+
+<!-- RECHERCHE r-mt-rupture-modif-apres-1996 : texte modifiant, après la loi n° 96-62, les articles 14 à 24 du code du travail, autre que le décret-loi n° 2020-2 et la loi n° 2025-9 (voir docs/recherches.yml) -->
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré (aucune de ces grandeurs n'est encore versée ; ligne de docs/notes/backlog-modele.md du 20/10/2026) -->
+
+| Fin du contrat | Condition | Ce qui est dû | Qui paie | Population couverte |
+|:---|:---|:---|:---|:---|
+| Démission | à l'initiative du salarié | préavis d'un mois dû par le salarié ([art. 14 bis](#r-mt-rc-demission)) ; la salariée enceinte en est dispensée ([art. 18](#r-mt-rc-demission)) | — | occupés en contrat à durée indéterminée, comptés par l'INS parmi tous les occupés, indépendants compris (@fig-mt-rc-contrats-ins) |
+| Licenciement pour faute grave | une des fautes de la liste légale ([art. 14 quater](#r-mt-rc-motif-1994)) | pas de gratification ([art. 22](#r-mt-rc-grat-1994)) ; le contrat prend fin « par la volonté de l'une des parties suite à une faute grave commise par l'autre partie » ([art. 14](#r-mt-rc-fin-cdi-1994)) | — | occupés en contrat à durée indéterminée |
+| Licenciement pour cause réelle et sérieuse | causes indiquées dans la lettre de préavis | préavis d'un mois ([art. 14 bis](#r-mt-rc-preavis-1994)) et gratification ([art. 22](#r-mt-rc-grat-1994)) | l'employeur | occupés en contrat à durée indéterminée, après la période d'essai |
+| Licenciement sans cause réelle et sérieuse | jugement, action dans l'année | préavis, gratification et dommages-intérêts de 1 à 2 mois de salaire par année d'ancienneté, plafond de 36 mois ([art. 23 et 23 bis](#r-mt-rc-reparation-1994)) | l'employeur | occupés en contrat à durée indéterminée |
+| Vice de procédure seul | cause réelle et sérieuse, procédure non respectée | préavis, gratification et dommages-intérêts de 1 à 4 mois de salaire ([art. 23 bis](#r-mt-rc-reparation-1994)) | l'employeur | occupés en contrat à durée indéterminée |
+| Licenciement pour motif économique | procédure de l'inspection du travail et de la commission ; sans avis, licenciement abusif ([art. 21 à 21-12](#r-mt-rc-le-1996)) | préavis et gratification ; la commission donne son avis sur la gratification et concilie sur son montant ([art. 21-10](#r-mt-rc-le-1996)) | l'employeur ; la caisse si l'employeur est en cessation de paiement | occupés en contrat à durée indéterminée |
+| Fin d'un contrat à durée déterminée à son terme | expiration de la durée ou achèvement du travail ([art. 14](#r-mt-rc-fin-cdi-1994)) | aucune indemnité légale ; contrat à durée indéterminée si le travail continue ([art. 17](#r-mt-rc-cdd-2025)) | — | occupés en contrat à durée déterminée (@fig-mt-rc-contrats-ins) |
+| Rupture abusive d'un contrat à durée déterminée par l'employeur | avant le terme, sans faute grave | salaire de la durée restante ([art. 24](#r-mt-rc-cdd-abusif-1994)) | l'employeur | occupés en contrat à durée déterminée |
+| Fin de la période d'essai | notification quinze jours avant l'expiration ([art. 6-3](#r-mt-rc-essai-2025)) | aucune indemnité légale | — | salariés en période d'essai |
+
+: Ce que doit l'employeur selon la façon dont le contrat prend fin, au 1^er^ janvier 2026 {#tbl-mt-rc-etat-du-droit}
+
+Les montants sont les minimums de la loi ; la convention collective cadre renvoie le délai-congé et le calcul de l'indemnité de licenciement aux conventions de branche, qui peuvent prévoir davantage ([art. 16 et 18](#r-mt-rc-grat-1973)). Les effectifs se lisent, pour 2011 et 2012, au @fig-mt-rc-contrats-ins, où l'Institut national de la statistique compte les contrats parmi tous les occupés, indépendants compris : en 2012, 1 389,6 milliers d'occupés en contrat à durée indéterminée et 398,2 milliers en contrat à durée déterminée, sur 3 234,4 milliers. Le complément est formé des 1 443,6 milliers d'occupés sans contrat, indépendants et salariés sans contrat confondus, que ce tableau ne sépare pas.
+
+<!-- TODO (documentaliste) : clauses de préavis, d'indemnité de licenciement et d'indemnité de départ à la retraite des conventions de branche (scans du dépôt tunisia-data, data/raw/emploi/conventions-collectives-archives/, lecture à l'image) (Q11). -->
+<!-- TODO (documentaliste) : effectif des salariés en période d'essai et des salariés sous-traités : aucune source chiffrée réunie. -->
+
+**Les montants, en formules.** La gratification de fin de service $G$ d'un salarié licencié après la période d'essai, et les dommages-intérêts $D$ d'un licenciement sans cause réelle et sérieuse, s'écrivent :
+
+$$
+G = \min\left(\gamma \, n \, s_j ,\; \bar{g} \, s_m\right)
+$$
+
+$$
+\min\left(\underline{\delta} \, a ,\; \bar{D}\right) s_m \;\le\; D \;\le\; \min\left(\bar{\delta} \, a ,\; \bar{D}\right) s_m
+$$
+
+où $n$ est le nombre de mois de services effectifs, $a$ le nombre d'années d'ancienneté, $s_j$ le salaire d'un jour et $s_m$ le salaire mensuel ; $\gamma$ est le nombre de jours de salaire dus par mois de service et $\bar{g}$ le plafond de la gratification, en mois de salaire ; $\underline{\delta}$ et $\bar{\delta}$ sont les bornes des dommages-intérêts par année d'ancienneté et $\bar{D}$ leur plafond, en mois de salaire. En cas de seul vice de procédure, $\underline{v} \, s_m \le D \le \bar{v} \, s_m$, où $\underline{v}$ et $\bar{v}$ sont les bornes, en mois de salaire.
+
+Depuis le 1^er^ mai 1966, $\gamma = 1$ jour par mois et $\bar{g} = 3$ mois ; depuis le 1^er^ mars 1994, $\underline{\delta} = 1$ mois et $\bar{\delta} = 2$ mois par année d'ancienneté, $\bar{D} = 36$ mois, $\underline{v} = 1$ mois et $\bar{v} = 4$ mois (@tbl-mt-rc-parametres ; [art. 22](#r-mt-rc-grat-1994), [art. 23 et 23 bis](#r-mt-rc-reparation-1994)). Les dommages-intérêts s'ajoutent à la gratification et à l'indemnité de préavis non observé, avec lesquelles ils « ne se confondent pas » : un licenciement abusif coûte $G + D$, plus le préavis.
+
+<!-- TODO (documentaliste) : base du « jour de salaire » (salaire mensuel ÷ 26, ÷ 30, autre) : ni l'art. 22 ni la convention cadre (art. 18) ne fixent de diviseur ; conventions de branche à lire (Q4). Ne pas écrire de relation entre s_j et s_m d'ici là. -->
+
+- **L'impôt sur le revenu.** La gratification de fin de service est exonérée d'impôt sur le revenu dans les limites de la législation du travail, ou des montants approuvés par la commission de contrôle des licenciements ; la règle est exposée au volume [« La fiscalité »](../fiscalite/_impot_revenu.html#sec-irpp-salaires).
+- **L'employeur défaillant.** Quand l'employeur en cessation de paiement ne la verse pas, la caisse de sécurité sociale prend en charge la gratification des salariés licenciés pour des raisons économiques ou technologiques ; la règle est exposée au volume [« Les prestations sociales »](../prestations_sociales/_autres_risques.html#sec-perte-emploi).
+
+## Le contrat à durée déterminée {#sec-mt-rc-cdd}
+
+Depuis le 28 mai 2025, un [contrat à durée déterminée](#g-contrat-duree-determinee) ne se conclut que dans trois cas et par écrit ; de 1996 à 2025, il était permis dans cinq cas, ou hors de ces cas pour quatre ans au plus ; de 1966 à 1996, la loi ne lui fixait ni cas ni durée. La rupture abusive d'un tel contrat par l'employeur ouvre droit, depuis 1994, au salaire de la durée restante (@sec-mt-rc-1994).
+
+| Rupture | Ce que la loi cherche | Avant → après | Mise en œuvre |
+|:---|:---|:---|:---|
+| [9 août 1992]{.insecable}<br>[zones franches](#r-mt-rc-cdd-1992) | contrats « réputés des contrats de travail à durée déterminée quelle que soit leur forme, durée ou modalités de leur exécution » | droit commun → contrat à durée déterminée pour tous les salariés des zones franches | abrogé le 28 mai 2025 |
+| [31 juillet 1996]{.insecable}<br>[loi n° 96-62](#r-mt-rc-cdd-1996) | « Le contrat de travail est conclu pour une durée indéterminée ou pour une durée déterminée » | ni cas ni durée → cinq cas, ou quatre ans au plus par accord | au-delà de quatre ans, recrutement permanent sans période d'essai |
+| [28 mai 2025]{.insecable}<br>[loi n° 2025-9](#r-mt-rc-cdd-2025) | « Le contrat de travail est réputé conclu pour une durée indéterminée » | cinq cas ou quatre ans → trois cas, écrit obligatoire | contrats en cours requalifiés ; ruptures depuis le 6 mars 2024 réparées ; amende par salarié |
+
+: Les ruptures du contrat à durée déterminée, 1992-2025 {#tbl-mt-rc-cdd-ruptures}
+
+### Les cas de recours, 1966-2026 {#sec-mt-rc-cdd-recours}
+
+Le contrat à durée déterminée prend fin à l'expiration de sa durée ou à l'achèvement du travail pour lequel il est conclu ([art. 14](#r-mt-rc-fin-cdi-1994)) ; ce que la loi règle, d'une réforme à l'autre, ce sont les cas où l'employeur peut y recourir.
+
+- **1966 : un contrat libre.** Le code permet de conclure le contrat « pour un temps déterminé ou indéterminé, soit pour un travail déterminé » ; un contrat à durée déterminée poursuivi par tacite reconduction devient à durée indéterminée ([art. 6 et 17](#r-mt-rc-cdd-1966)).
+- **1996 : des cas et une durée.** La [loi n° 96-62](#r-mt-rc-cdd-1996) fixe cinq cas de recours ; hors de ces cas, les parties peuvent conclure un contrat à durée déterminée « à condition que la durée de ce contrat n'excède pas quatre ans y compris ses renouvellements » ; au-delà, le salarié est recruté « à titre permanent et sans période d'essai ». Le salarié en contrat à durée déterminée ne peut recevoir un salaire inférieur à celui d'un permanent.
+- **2025 : trois cas.** Depuis le [28 mai 2025](#r-mt-rc-cdd-2025), le contrat à durée déterminée n'est permis que pour un surcroît extraordinaire de travail, le remplacement d'un salarié, ou un travail saisonnier ou une activité où l'usage exclut le contrat à durée indéterminée. Il est écrit et mentionne sa durée, à défaut de quoi il est à durée indéterminée ; il ne comporte pas de période d'essai ; le salarié a les mêmes droits que les permanents et une priorité de recrutement. La loi fixe les cas de recours, non une durée maximale.
+- **2025 : les mesures de transition.** Les contrats en cours conclus hors des trois cas, et ceux « rompus après le 14 mars 2025 », deviennent des contrats à durée indéterminée, avec reprise de l'ancienneté si les interruptions n'ont pas dépassé un an ([art. 6](#r-mt-rc-cdd-2025-requalif)). Pour les ruptures du 6 mars 2024 au 28 mai 2025, le salarié est titularisé de plein droit après quatre ans de relation, ou reçoit à défaut deux mois de salaire par année d'ancienneté ([art. 9](#r-mt-rc-cdd-2025-art9)). L'employeur qui conclut un contrat à durée déterminée irrégulier encourt une amende de 100 à 300 dinars par salarié, dans la limite de 10 000 dinars ([art. 234 ter](#r-mt-rc-cdd-2025-amende)).
+
+:::: {.chronologie-repliable titre="Contrat à durée déterminée : cas de recours, durée maximale, requalification et sanctions, textes date par date, 1966-2026"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-rc-cdd-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 6 et 17, p. 718] | contrat « pour un temps déterminé ou indéterminé, soit pour un travail déterminé », sans cas ni durée ; tacite reconduction → contrat à durée indéterminée |
+| []{#r-mt-rc-cdd-1992}[9 août 1992]{.insecable} | **rupture** (zones franches) | loi n° 92-81 du 3 août 1992 [@loi92-81, art. 23, p. 1005-1006], rectificatif au JORT n° 76 de 1992, p. 1494 | droit commun → contrats « réputés des contrats de travail à durée déterminée quelle que soit leur forme, durée ou modalités de leur exécution » ; effet un jour franc après la publication du 7 août 1992 |
+| []{#r-mt-rc-cdd-1994}[1^er^ mars 1994]{.insecable} | étape (1994) | loi n° 94-29 [@loi94-29, art. 1er (art. 24), p. 319] | rupture abusive par l'employeur : dommages-intérêts égaux au salaire de la durée restante |
+| []{#r-mt-rc-cdd-1996}[31 juillet 1996]{.insecable} | **rupture** (1996) | loi n° 96-62 [@loi96-62, art. 1er (art. 6-2 à 6-4), p. 1579] | ni cas ni durée → cinq cas de recours ; hors de ces cas, par accord, quatre ans au plus, renouvellements compris ; au-delà, recrutement « à titre permanent et sans période d'essai » ; salaires au moins égaux à ceux des permanents |
+| []{#r-mt-rc-zf-2001}[26 juillet 2001]{.insecable} | ajustement (zones franches) | loi n° 2001-76 du 17 juillet 2001 [@loi2001-76, art. 1er, p. 1752] | « zones franches économiques » → « parcs d'activités économiques » dans la loi n° 92-81 ; la date d'effet n'est pas écrite dans le fascicule : exécutoire cinq jours après le dépôt du JORT n° 58 au siège du gouvernorat de Tunis, le 21 juillet 2001, jour du dépôt non compté (loi n° 93-64, art. 2) |
+| []{#r-mt-rc-cdd-2025}[28 mai 2025]{.insecable} | **rupture** (2025) | loi n° 2025-9 [@loi2025-9, art. 1er (art. 6-2, 6-4 et 17), p. 1296] | « Le contrat de travail est réputé conclu pour une durée indéterminée » ; trois cas de recours ; écrit et mention de la durée, sinon contrat à durée indéterminée ; aucune période d'essai ; mêmes droits que les permanents, priorité de recrutement ; aucune durée maximale ; travail poursuivi après le terme → contrat à durée indéterminée, avec l'ancienneté, sans période d'essai (art. 17) |
+| []{#r-mt-rc-cdd-2025-amende}[28 mai 2025]{.insecable} | étape (2025) | loi n° 2025-9 [@loi2025-9, art. 3 (art. 234 ter), p. 1298] | amende de 100 à 300 dinars par salarié, dans la limite de 10 000 dinars |
+| []{#r-mt-rc-zf-2025}[28 mai 2025]{.insecable} | étape (2025) | loi n° 2025-9 [@loi2025-9, art. 5] | abrogation de l'art. 23 de la loi n° 92-81 (zones franches) |
+| []{#r-mt-rc-cdd-2025-requalif}[28 mai 2025]{.insecable} | étape (2025) | loi n° 2025-9 [@loi2025-9, art. 6, p. 1298] | contrats en cours hors des trois cas, et contrats « rompus après le 14 mars 2025 » → contrats à durée indéterminée ; ancienneté reprise si les interruptions n'ont pas dépassé un an |
+| []{#r-mt-rc-cdd-2025-art9}[28 mai 2025]{.insecable} | étape (2025) | loi n° 2025-9 [@loi2025-9, art. 9, p. 1299] | ruptures du 6 mars 2024 au 28 mai 2025 : titularisation de plein droit après quatre ans de relation, à défaut indemnité de deux mois de salaire par année d'ancienneté |
+
+: Le contrat à durée déterminée, texte par texte, 1966-2026 {#tbl-mt-rc-cdd-textes}
+
+::::
+
+### Les zones franches économiques, 1992-2025 {#sec-mt-rc-zones-franches}
+
+De 1992 à 2025, les salariés des entreprises installées dans les [zones franches économiques](#g-zone-franche-economique), que l'État crée par [la loi du 3 août 1992](#r-mt-rc-cdd-1992), sont un public à part : depuis le 9 août 1992, leurs contrats sont « réputés des contrats de travail à durée déterminée quelle que soit leur forme, durée ou modalités de leur exécution ». Le 26 juillet 2001, ces zones prennent le nom de « parcs d'activités économiques » ([loi n° 2001-76](#r-mt-rc-zf-2001)). L'article de la loi de 1992 qui répute ces contrats à durée déterminée est [abrogé le 28 mai 2025](#r-mt-rc-zf-2025), et ces salariés relèvent depuis du droit commun.
+
+<!-- TODO (documentaliste) : que devient, de 2001 à 2025, le contrat à durée déterminée présumé de l'art. 23 de la loi n° 92-81 sous la dénomination « parcs d'activités économiques » ? Lire la loi n° 2001-76 en entier et les textes postérieurs sur les parcs ; dénomination arabe de 2001 non lue (édition arabe du JORT n° 58/2001 à couche texte encodée). -->
+<!-- TODO (documentaliste) : date de publication du JORT n° 52/1992 (7 août 1992) relevée dans le texte océrisé, pied de page à relire à l'image ; rectificatif du JORT n° 76/1992, p. 1494, qui récrit l'art. 23, à relire à l'image (Q6). -->
+
+## La période d'essai {#sec-mt-rc-essai}
+
+Depuis le 28 mai 2025, la loi fixe la [période d'essai](#g-periode-essai) à six mois au plus, renouvelable une fois ; de 1973 à 2025, la convention collective cadre la limitait à trois mois, renouvelables une fois. Pendant l'essai, chaque partie peut mettre fin au contrat sans indemnité ; la gratification de fin de service n'est due qu'au licenciement intervenu après l'essai.
+
+- **1966 : un renvoi.** Le code renvoie la durée de l'essai aux conventions collectives, à l'usage ou à la loi ([art. 18](#r-mt-rc-essai-1966)).
+- **1973 : trois mois, renouvelables une fois.** La [convention collective cadre](#g-convention-collective-cadre) limite l'essai à trois mois et permet « un deuxième et dernier essai pour une même période » ; pendant l'essai, le congé est donné « sans préavis, sur simple signification » ([art. 10](#r-mt-rc-essai-1973)).
+- **1994 et 1996 : l'essai, seuil de la gratification et du contrat permanent.** Depuis 1994, la gratification est due au licenciement intervenu « après l'expiration de la période d'essai » ([art. 22](#r-mt-rc-essai-1994)) ; depuis 1996, le salarié recruté après quatre ans de contrat à durée déterminée l'est sans période d'essai ([art. 6-4](#r-mt-rc-essai-1996)).
+- **2025 : six mois, renouvelable une fois.** La loi fixe l'essai à une durée « ne dépassant pas six mois, renouvelable une seule fois » ; chaque partie peut y mettre fin en prévenant l'autre « quinze jours avant l'expiration de la période d'essai » ([art. 6-3](#r-mt-rc-essai-2025)). La période d'essai stipulée avant la loi s'applique « si elle est inférieure à six mois » ([art. 7](#r-mt-rc-essai-2025-transit)). Le contrat à durée déterminée n'en comporte pas (@sec-mt-rc-cdd).
+
+:::: {.chronologie-repliable titre="Période d'essai : durée maximale, renouvellement et fin, textes date par date, 1966-2025"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-rc-essai-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 18, p. 719] | durée renvoyée aux conventions collectives, à l'usage ou à la loi |
+| []{#r-mt-rc-essai-1973}[1^er^ juin 1973]{.insecable} | étape (mise en place) | convention collective cadre [@arrete-1973-05-29-convention-cadre, art. 10, p. 854] | « n'excèdera pas trois mois » ; « un deuxième et dernier essai pour une même période » ; congé « sans préavis, sur simple signification » |
+| []{#r-mt-rc-essai-1994}[1^er^ mars 1994]{.insecable} | ajustement | loi n° 94-29 [@loi94-29, art. 1er (art. 22), p. 319] | gratification due « après l'expiration de la période d'essai » |
+| []{#r-mt-rc-essai-1996}[31 juillet 1996]{.insecable} | ajustement | loi n° 96-62 [@loi96-62, art. 1er (art. 6-4), p. 1579] | recrutement permanent « sans période d'essai » au-delà de quatre ans de contrat à durée déterminée |
+| []{#r-mt-rc-essai-2025}[28 mai 2025]{.insecable} | étape (2025) | loi n° 2025-9 [@loi2025-9, art. 1er (art. 6-3), p. 1296] | trois mois renouvelables (convention cadre) → « ne dépassant pas six mois, renouvelable une seule fois » ; fin notifiée « quinze jours avant l'expiration de la période d'essai » |
+| []{#r-mt-rc-essai-2025-transit}[28 mai 2025]{.insecable} | étape (2025) | loi n° 2025-9 [@loi2025-9, art. 7, p. 1298] | période d'essai stipulée avant la loi maintenue « si elle est inférieure à six mois » |
+
+: La période d'essai, texte par texte, 1966-2025 {#tbl-mt-rc-essai-textes}
+
+::::
+
+## Le licenciement pour motif économique et sa commission de contrôle {#sec-mt-rc-licenciement-economique}
+
+Ce que verse la caisse de sécurité sociale aux salariés licenciés pour des raisons économiques ou technologiques relève du volume [« Les prestations sociales »](../prestations_sociales/_autres_risques.html#sec-perte-emploi) ; la caisse ne se substitue qu'à l'employeur en cessation de paiement, pour la gratification de fin de service et les droits légaux, et le motif économique est constaté par l'inspection du travail ou la commission de contrôle. Le [contrat de réinsertion dans la vie active](#g-crva) des licenciés est au chapitre des politiques de l'emploi (@sec-mt-pe-renvoi).
+
+L'employeur qui veut licencier ou mettre en chômage des salariés pour des raisons économiques ou technologiques en informe l'inspection du travail ; à défaut d'accord, une [commission de contrôle du licenciement](#g-commission-controle-licenciement), régionale ou centrale, rend un avis dans des délais fixés ; un [licenciement pour motif économique](#g-licenciement-economique) prononcé sans cet avis est abusif.
+
+| Étape | Délai | Ce qui s'y fait |
+|:---|:---|:---|
+| Notification | avant le licenciement | l'employeur notifie sa demande à l'inspection du travail, avec la liste des salariés visés |
+| Enquête et conciliation | 15 jours | l'inspection du travail enquête et cherche un accord |
+| Transmission | 3 jours | à défaut d'accord, le dossier va à la commission régionale ou centrale |
+| Avis | 15 jours | la commission propose : rejet, reconversion, réorientation, suspension, réduction des heures, retraite anticipée ou acceptation ; elle donne son avis sur la gratification de fin de service |
+| Ordre des licenciements | — | qualification, situation familiale, ancienneté |
+
+: La procédure du licenciement pour motif économique, depuis le 31 juillet 1996 {#tbl-mt-rc-procedure}
+
+- **1966 : un contrôle préalable.** Le code soumet tout licenciement pour raison économique à l'avis préalable d'une commission ; sans cet avis, le licenciement est abusif, sauf force majeure. Il organise lui-même cette commission par branche — un inspecteur du travail, un représentant des employeurs, un représentant des salariés —, qui classe les demandes en quatre groupes et donne son avis sur les indemnités dues en application des conventions collectives, des contrats ou des usages ([art. 21 et 391 à 396](#r-mt-rc-le-1966)).
+- **1996 : une procédure aux délais chiffrés.** La [loi n° 96-62](#r-mt-rc-le-1996) inscrit dans le code les commissions régionale et centrale, fixe les délais du @tbl-mt-rc-procedure et énumère les sept propositions que la commission peut faire, parmi lesquelles la reconversion, la réduction des heures de travail et la retraite anticipée ; elle abroge les articles 391 à 396. Le procès-verbal d'accord a force exécutoire. La [priorité de réembauchage](#g-priorite-reembauchage) des licenciés, pendant un an, dans l'ordre de l'ancienneté majorée d'un an par enfant de moins de seize ans, passe de l'article 9 à l'article 21-13 ([art. 9 et 21-13](#r-mt-rc-le-1996-reembauche)).
+- **2020 : une suspension.** Du 14 avril au 3 juillet 2020, l'employeur ne peut plus invoquer la force majeure pour licencier sans l'avis de la commission ([décret-loi n° 2020-2](#r-mt-rc-le-2020) ; @sec-mt-rc-1996).
+
+<!-- RECHERCHE r-mt-rupture-decret-ccl-1966 : décret d'application de l'art. 21, al. 3, du code du travail de 1966 (composition, compétence et procédure de la commission de contrôle des licenciements) (voir docs/recherches.yml) -->
+
+Les demandes de licenciement pour motif économique de 1998 à 2001 et leurs issues sont à la @fig-mt-rc-licenciements-economiques.
+
+:::: {.chronologie-repliable titre="Licenciement pour motif économique : commission, procédure, délais et réembauchage, textes date par date, 1966-2020"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-rc-le-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 21, p. 719 ; art. 391 à 396, p. 810] | avis préalable d'une commission ; licenciement sans avis abusif, sauf force majeure ; commission par branche (inspecteur, un employeur, un salarié), quatre groupes de demandes, avis sur les indemnités dues « en application des conventions collectives, des contrats individuels de travail ou des usages » (art. 394) |
+| []{#r-mt-rc-le-1966-reembauche}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 9, p. 718] | priorité de réembauchage pendant un an ; ordre selon l'ancienneté majorée d'un an par enfant de moins de seize ans |
+| []{#r-mt-rc-le-1996}[31 juillet 1996]{.insecable} | étape (mise en place) | loi n° 96-62 [@loi96-62, art. 1er (art. 21 à 21-12), p. 1579-1580 ; art. 5, p. 1588] | notification à l'inspection, liste des salariés ; enquête et conciliation en 15 jours ; transmission en 3 jours ; avis de la commission régionale ou centrale en 15 jours ; sept propositions ; critères d'ordre ; avis sur la gratification et conciliation sur son montant (art. 21-10) ; procès-verbal d'accord exécutoire (art. 21-11) ; art. 391 à 396 abrogés |
+| []{#r-mt-rc-le-1996-reembauche}[31 juillet 1996]{.insecable} | ajustement | loi n° 96-62 [@loi96-62, art. 1er (art. 21-13) et art. 5, p. 1580] | priorité de réembauchage : art. 9 → art. 21-13, règle inchangée |
+| []{#r-mt-rc-le-2020}[14 avril 2020]{.insecable}<br>[3 juillet 2020]{.insecable} | ajustement temporaire | décret-loi n° 2020-2 [@decret-loi2020-2, art. 1er, 2 et 4 à 6] ; décret gouvernemental n° 2020-411 [@decret2020-411, art. 1er et 2, p. 1405] | dispense d'avis en cas de force majeure (art. 21-12) suspendue ; fin de la suspension le 3 juillet 2020 |
+
+: Le licenciement pour motif économique, texte par texte, 1966-2020 {#tbl-mt-rc-licenciement-economique-textes}
+
+::::
+
+## La sous-traitance de main-d'œuvre et les entreprises de prestation de services {#sec-mt-rc-sous-traitance}
+
+Depuis le 28 mai 2025, la [sous-traitance de main-d'œuvre](#g-sous-traitance-main-oeuvre) est interdite : est visé tout contrat par lequel une entreprise de location de main-d'œuvre loue des salariés et les met à la disposition d'une entreprise bénéficiaire, ainsi que le gardiennage et le nettoyage ([art. 28](#r-mt-rc-st-2025)). Seule reste permise la prestation de services ou de travaux spécialisés hors de l'activité principale et permanente de l'entreprise bénéficiaire, et les salariés sous-traités sont réputés [titularisés](#g-titularisation) auprès de celle-ci.
+
+| Date | Ce qui est permis | Qui répond des salaires | Sanction |
+|:---|:---|:---|:---|
+| [1^er^ mai 1966]{.insecable}<br>[code](#r-mt-rc-st-1966) | la sous-entreprise de main-d'œuvre | le sous-entrepreneur ; l'entreprise principale s'il est insolvable (salaires, congés payés, accidents du travail, charges sociales) | — |
+| [28 mai 2025]{.insecable}<br>[loi n° 2025-9](#r-mt-rc-st-2025) | la seule prestation de services ou de travaux spécialisés, hors activité principale et permanente | l'entreprise prestataire, au salaire de l'entreprise bénéficiaire à défaut de régime propre ; l'entreprise bénéficiaire, pour les conditions de travail dans ses locaux | sous-traitance de main-d'œuvre : amende de 10 000 dinars, doublée pour une personne morale, emprisonnement de trois à six mois en récidive |
+
+: La sous-traitance de main-d'œuvre, 1966 et 2025 {#tbl-mt-rc-sous-traitance}
+
+- **1966 : une sous-entreprise permise.** Le code permet à une entreprise de recourir à un sous-entrepreneur de main-d'œuvre ; si celui-ci est insolvable, l'entreprise principale répond des salaires, des congés payés, des accidents du travail et des charges sociales de ses salariés ([art. 28 à 30](#r-mt-rc-st-1966)).
+- **2025 : l'interdiction.** La sous-traitance de main-d'œuvre est interdite, gardiennage et nettoyage compris. Une [entreprise de prestation de services](#g-entreprise-prestation-services) peut fournir des services ou des travaux « nécessitant des connaissances professionnelles ou une spécialisation technique », hors de « l'activité principale et permanente » de l'entreprise bénéficiaire, avec des salariés qui ne sont pas placés « sous la direction et le contrôle de l'entreprise bénéficiaire » ; à défaut de régime salarial sectoriel ou propre à l'entreprise prestataire, ces salariés reçoivent le salaire de l'entreprise bénéficiaire, et l'entreprise prestataire prouve le paiement des salaires et des cotisations sous sept jours ([art. 30 et 30 ter](#r-mt-rc-st-2025)). Les entreprises de prestation existantes ont trois mois pour se mettre en conformité, soit jusqu'au 28 août 2025 ([art. 10](#r-mt-rc-st-2025-conformite)).
+- **2025 : la titularisation.** Les salariés employés en sous-traitance de main-d'œuvre, et les agents employés de manière permanente auprès des offices, établissements publics et entreprises publiques à caractère industriel, commercial et agricole, « sont réputés titularisés auprès de l'entreprise bénéficiaire » au 28 mai 2025 ; leur ancienneté est reprise si la relation a été régulière et sans interruption de plus d'un an ([art. 8](#r-mt-rc-st-2025-titularisation)). Les salariés sous-traités dont la relation a été rompue du 6 mars 2024 au 28 mai 2025 sont titularisés après quatre ans de relation, ou reçoivent à défaut deux mois de salaire par année d'ancienneté ([art. 9](#r-mt-rc-st-2025-art9)).
+- **Septembre 2025 : une garantie financière.** Depuis le 28 septembre 2025, l'entreprise prestataire souscrit, dans les trois jours de la conclusion du contrat, une garantie de 20 % de son montant ([arrêté du 23 septembre 2025](#r-mt-rc-st-2025-garantie)).
+
+<!-- TODO (rédacteur) : décret n° 2025-327 du 17 juin 2025 (interdiction de la sous-traitance dans le secteur public, lois n° 83-112 et 85-78 ; effet au 22 juin 2025) : à exposer au volume « Les rémunérations dans le secteur public » (décision D6 du 20/10/2026), avec un renvoi depuis cette section une fois la section écrite. -->
+
+:::: {.chronologie-repliable titre="Sous-traitance de main-d'œuvre et prestation de services : interdiction, titularisation, salaires, sanctions et garantie, textes date par date, 1966-2025"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-rc-st-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 28 à 30, p. 719-720] | sous-entreprise de main-d'œuvre permise ; l'entreprise principale répond, en cas d'insolvabilité du sous-entrepreneur, des salaires, congés payés, accidents du travail et charges sociales |
+| []{#r-mt-rc-st-2025}[28 mai 2025]{.insecable} | **rupture** (2025) | loi n° 2025-9 [@loi2025-9, art. 2 (art. 28 à 30 sexies), p. 1297-1298] | « La sous-traitance de main-d'œuvre est interdite » ; définition : contrats entre « une entreprise de location de main-d'œuvre et une entreprise bénéficiaire » ; gardiennage et nettoyage compris ; amende de 10 000 dinars, doublée pour une personne morale, trois à six mois d'emprisonnement en récidive ; prestation de services hors activité principale et permanente ; salaire de l'entreprise bénéficiaire à défaut de régime propre, preuve du paiement sous sept jours (art. 30 ter) |
+| []{#r-mt-rc-st-2025-titularisation}[28 mai 2025]{.insecable} | étape (2025) | loi n° 2025-9 [@loi2025-9, art. 8, p. 1298] | salariés sous-traités et agents permanents des offices, établissements et entreprises publics à caractère industriel, commercial et agricole « réputés titularisés auprès de l'entreprise bénéficiaire » ; ancienneté reprise si la relation a été régulière, sans interruption de plus d'un an |
+| []{#r-mt-rc-st-2025-art9}[28 mai 2025]{.insecable} | étape (2025) | loi n° 2025-9 [@loi2025-9, art. 9, p. 1299] | ruptures du 6 mars 2024 au 28 mai 2025 : titularisation après quatre ans de relation, à défaut deux mois de salaire par année d'ancienneté |
+| []{#r-mt-rc-st-2025-conformite}[28 mai 2025]{.insecable} | étape (2025) | loi n° 2025-9 [@loi2025-9, art. 10, p. 1299] | entreprises de prestation existantes : trois mois au plus pour se mettre en conformité |
+| []{#r-mt-rc-st-2025-garantie}[28 septembre 2025]{.insecable} | étape (2025) | arrêté du ministre des affaires sociales du 23 septembre 2025 [@arrete-2025-09-23-garantie-prestataires, art. 1er et 2, p. 2410] | garantie financière de 20 % du montant du contrat, souscrite dans les trois jours ; exécutoire cinq jours après le dépôt du JORT n° 117, le 23 septembre 2025 |
+
+: La sous-traitance de main-d'œuvre et la prestation de services, texte par texte, 1966-2025 {#tbl-mt-rc-sous-traitance-textes}
+
+::::
+
+## La longue période : contrats temporaires et licenciements {#sec-mt-rc-longue-periode}
+
+La fin du contrat est une charge de l'employeur ; la dépense publique liée aux licenciements est celle de la caisse de sécurité sociale, exposée au volume [« Les prestations sociales »](../prestations_sociales/_autres_risques.html#sec-perte-emploi). Cette section donne la statistique nationale des contrats, puis deux sources extérieures — la part des salariés temporaires calculée par l'Organisation internationale du travail, les demandes de licenciement économique publiées par la Banque mondiale —, et une comparaison internationale, chacune avec sa méthode.
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+sys.path.insert(0, ".")
+from figures import rupture_contrat as rc
+import figtools
+```
+
+### Les contrats des actifs occupés {#sec-mt-rc-contrats}
+
+L'Institut national de la statistique publie, pour 2011 et 2012, la répartition des personnes occupées selon le type de contrat ; le dénominateur est l'ensemble des occupés, indépendants compris, et non les seuls salariés. En 2012, en moyenne annuelle, 1 389,6 milliers d'occupés ont un contrat à durée indéterminée, 398,2 milliers un contrat à durée déterminée et 1 443,6 milliers n'ont pas de contrat, sur 3 234,4 milliers d'occupés ; les six trimestres disponibles varient peu (@fig-mt-rc-contrats-ins).
+
+```{python}
+#| label: fig-mt-rc-contrats-ins
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    rc.vues_contrats(), rc.table_contrats(), "ins-enquete-emploi-occupes-type-contrat",
+    slug="fig_mt_rc_contrats_ins", nominal=False,
+    caption=("Personnes occupées selon le type de contrat, 2011-2012 "
+             "(milliers, tous les occupés, indépendants compris)"),
+    note_lecture=(
+        "Chaque barre additionne les occupés de la période selon le type de contrat ; le "
+        "second onglet donne les parts du total. Les deux premières barres sont les moyennes "
+        "annuelles de 2011 et de 2012, les suivantes les trimestres publiés. « Pas de "
+        "contrat » comprend notamment les indépendants. La source ne donne ni le premier ni "
+        "le troisième trimestre de 2011. La part « Non déclaré » passe d'environ 38 milliers "
+        "en 2011 à 2 à 4 milliers en 2012, sans explication de la source."),
+)
+```
+
+### La part des salariés temporaires selon l'OIT {#sec-mt-rc-temporaires}
+
+L'Organisation internationale du travail calcule, à partir des microdonnées de trois enquêtes tunisiennes différentes, la part des salariés temporaires parmi les salariés pour quatre années : 17,2 % en 2010 et 20,3 % en 2019 dans l'enquête nationale sur la population et l'emploi, 23,8 % en 2014 dans une enquête par panel dont l'OIT signale la méthode comme révisée, 24,0 % en 2021 dans l'enquête sur le budget et la consommation des ménages [@oit-ilostat-salaries-temporaires]. Les points d'enquêtes différentes ne se comparent pas entre eux ; seuls 2010 et 2019 viennent de la même enquête. La part des femmes dépasse celle des hommes en 2010, 2019 et 2021, non en 2014 (@fig-mt-rc-temporaires).
+
+```{python}
+#| label: fig-mt-rc-temporaires
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    rc.vues_temporaires(), rc.table_temporaires(), "oit-ilostat-part-salaries-temporaires",
+    slug="fig_mt_rc_temporaires", nominal=False,
+    caption=("Part des salariés temporaires parmi les salariés, selon l'enquête, "
+             "2010, 2014, 2019 et 2021 (%)"),
+    note_lecture=(
+        "La couleur dit l'enquête dont l'OIT tire chaque point, la forme le groupe : "
+        "ensemble, hommes, femmes. Les points ne sont pas reliés : ils viennent de trois "
+        "enquêtes aux questionnaires différents, et l'OIT signale en 2014 une méthode "
+        "révisée. Seuls les points de 2010 et de 2019 viennent de la même enquête, au "
+        "deuxième trimestre ; ceux de 2021 viennent d'une enquête sur le budget des "
+        "ménages. Le dénominateur est l'ensemble des salariés."),
+)
+```
+
+### Les licenciements pour motif économique, 1998-2001 {#sec-mt-rc-licenciements}
+
+La Banque mondiale publie, dans un rapport de 2004 sur la stratégie de l'emploi, un tableau des demandes de licenciement pour motif économique ou technologique de 1998 à 2001, tiré selon elle des données de l'inspection du travail [@bm-2004-employment-strategy, tableau 30, p. 60 ; § 3.40, p. 59]. Les demandes visent de 16 882 à 19 983 salariés par an ; la part de ceux qui sont effectivement licenciés baisse de 30,2 % en 1998 à 13,9 % en 2001, les autres demandes se soldant surtout par du chômage temporaire ou du travail à temps partiel ; la part des salariés visés dont la demande passe devant la commission de contrôle baisse de 59,5 % à 33,9 % (@fig-mt-rc-licenciements-economiques).
+
+```{python}
+#| label: fig-mt-rc-licenciements-economiques
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    rc.vues_licenciements(), rc.table_licenciements(),
+    "banque-mondiale-2004-licenciements-economiques",
+    slug="fig_mt_rc_licenciements", nominal=False,
+    caption=("Demandes de licenciement pour motif économique ou technologique : salariés "
+             "visés selon l'issue de la demande, et part passée par la commission de "
+             "contrôle, 1998-2001"),
+    note_lecture=(
+        "Chaque barre du premier onglet additionne les salariés visés par les demandes de "
+        "l'année, toutes voies confondues, selon l'issue de la demande ; son total est "
+        "inscrit au-dessus. Une demande n'est pas un licenciement : seule la part orange "
+        "est faite de licenciements effectifs. Le second onglet donne la part des salariés "
+        "visés dont la demande passe devant la commission de contrôle des licenciements ; "
+        "le reste est réglé hors commission. La part des entreprises demanderesses passées "
+        "par la commission, autre grandeur, est au tableau de la source."),
+)
+```
+
+:::: {.chronologie-repliable titre="Licenciements pour motif économique, 1998-2001 : le tableau de la source (salariés visés, issues, entreprises, parts)"}
+
+```{python}
+#| echo: false
+#| output: asis
+print(rc.tableau_licenciements_source())
+```
+
+::::
+
+<!-- TODO (documentaliste) : série des licenciements économiques de l'inspection du travail après 2001 (rapports du ministère des affaires sociales) ; étude BIT et République tunisienne de 2019 sur un fonds perte d'emploi, non obtenue (403) (Q12). -->
+
+### Les comparaisons internationales {#sec-mt-rc-etudes}
+
+La Banque mondiale code, dans *Doing Business 2020*, les règles d'embauche et de licenciement pour un cas type : un caissier de supermarché de 19 ans, dans une entreprise de 60 salariés de la plus grande ville, la convention collective du commerce alimentaire étant appliquée si elle couvre plus de la moitié de la branche ; la collecte s'achève en mai 2019 [@bm-doing-business-2020-tunisie, p. 60]. Pour la Tunisie, elle relève qu'un contrat à durée déterminée peut être conclu pour une tâche permanente, pour 48 mois au plus renouvellements compris ; une période d'essai de six mois au plus ; un préavis de 4,3 semaines ; la notification et l'approbation d'un tiers pour le licenciement d'un salarié comme de neuf ; une obligation de reclassement [@bm-doing-business-2020-tunisie, p. 61-62]. Ces relevés concordent avec le droit de 1996 à 2025 : quatre ans de contrat à durée déterminée hors cas, trois mois d'essai renouvelables une fois, un mois de préavis (@tbl-mt-rc-parametres).
+
+<!-- TODO (rédacteur) : les indemnités de licenciement de Doing Business 2020 (4,3, 21,4 et 26,0 semaines à 1, 5 et 10 ans) ne suivent pas le barème de l'art. 22 ; non reprises (décision D5 du 20/10/2026) tant que les conventions de branche ne sont pas lues (Q11). Les affirmations du rapport Banque mondiale 2015 contraires aux textes ne sont pas reprises (note documentaire, § 6). -->
+
+## Ce qu'en dit l'économie {#sec-mt-rc-economie}
+
+**La question.** Que fait le coût du licenciement à l'emploi, à ses flux et au partage entre contrats permanents et temporaires ? Les économistes y distinguent un transfert au salarié et une taxe perdue hors de la relation [@garibaldi-violante-2005-severance, p. 799]. En Tunisie, le coût se lit en trois parts : la gratification légale, transfert connu à l'embauche ; les dommages-intérêts, transfert qui dépend du juge ; la procédure de la commission, qui tient de la taxe.
+
+**Établi.**
+
+- Les coûts de licenciement réduisent les flux entre emploi et chômage et allongent leurs durées, au détriment des jeunes, des femmes et des moins qualifiés [@betcherman-2012-labor-market-institutions, p. 22-25 : revue de plus de 150 études].
+- Leur effet moyen sur le chômage n'est pas distinct de zéro, corrélation partielle de −0,008, écart-type 0,028 [@heimberger-2021-epl-meta, p. 11 et 17, version de 2020 : méta-analyse de 881 estimations, 78 % sur l'OCDE].
+- Libéraliser le seul contrat temporaire accroît la rotation sans gain net d'emploi [@bentolila-dolado-jimeno-2019-dual-labour-markets, p. 10-13 : modèles calibrés sur la France et l'Espagne] ; le restreindre, comme en Espagne en 2021, accroît d'environ 40 points la part des jeunes embauchés en contrat permanent [@felgueroso-et-al-2026-limiting-temporary-work, p. 4 : double différence, 2014-2023].
+- En Tunisie, l'indemnité légale vaut 1,7 semaine de salaire à un an de service et 13,0 à dix ans [@holzmann-et-al-2011-severance-pay, p. 62-63 : 183 pays, 2010] ; l'indice de difficulté de licencier de 2010 vaut 80 sur 100, contre 40 à 60 dans quatre pays voisins [@angel-urdinola-kuddo-2010-mena-employment-regulation, p. 21 et 36-39 : cas type de *Doing Business*].
+
+**Débattu.** L'effet sur la productivité : +0,32 à 0,37 point de croissance annuelle par point d'indicateur en moins dans les branches de l'OCDE où le licenciement est contraint, de 1982 à 2003 [@bassanini-nunziata-venn-2009-epl-productivity, p. 19-20, version de 2008 : double différence], que d'autres travaux ne retrouvent pas ; la portée des réformes voisines, l'assouplissement égyptien de 2003 [@wahba-assaad-2017-egypt-labor-regulation, p. 6, version de 2015 : +2 à 3 points d'emplois avec contrat] et l'interdiction mexicaine de la sous-traitance en 2021 [@estefan-et-al-2026-outsourcing-ban-mexico, p. 1-3 : rémunérations +16,4 % en 2024, emploi inchangé].
+
+**Non évalué pour la Tunisie.** Aucune évaluation ne mesure l'effet des lois de 1994, 1996 et 2025 ; la loi n° 2025-9 n'a fait l'objet que d'une enquête de perception auprès d'« une centaine de DRH », sans tirage publié [@iace-2026-perception-drh-loi-2025-9, p. 1]. Les rapports de la Banque mondiale décrivent le droit tunisien du licenciement en des termes qui ne concordent pas avec le code [@bm-2015-labor-policy-good-jobs, p. 6 et 80] : le droit applicable est celui de la @sec-mt-rc-etat-du-droit.
+
+**Ce que le praticien retient.** Un indicateur qui ne retient que l'indemnité légale sous-estime le coût attendu d'un licenciement, un plafond de dommages-intérêts pris pour la norme le surestime ; ni les licenciements depuis 2001, ni les jugements, ni les indemnités des conventions de branche ne sont publiés pour trancher.
+
+Littérature arrêtée au mois d'octobre 2026.
