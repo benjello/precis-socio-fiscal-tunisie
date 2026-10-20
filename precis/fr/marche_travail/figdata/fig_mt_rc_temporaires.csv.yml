@@ -1,0 +1,5 @@
+series: [oit-ilostat-part-salaries-temporaires]
+sources: [oit-ilostat-salaries-temporaires]
+fiches: [sources/oit-ilostat-salaries-temporaires.md]
+caveats: [TROIS ENQUÊTES DIFFÉRENTES, À TRACER PAR SEGMENTS (colonne `segment`) : enpe (2010 et 2019), lmps (2014, marqué B « Break in series: Methodology revised »), hies (2021, enquête budget-consommation). Ne jamais relier les points de segments différents ; aucune interpolation. Les variations d'un segment à l'autre ne sont pas une évolution établie. Dénominateur : salariés. En 2014 seulement, taux des hommes supérieur à celui des femmes. Date d'édition de la base non relevée.]
+generated: 2026-10-20

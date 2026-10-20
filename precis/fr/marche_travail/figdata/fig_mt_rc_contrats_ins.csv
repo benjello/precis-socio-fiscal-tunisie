@@ -1,0 +1,15 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-20
+# séries (tunisia_data) : ins-enquete-emploi-occupes-type-contrat
+# sources (citation) : @ins-enquete-emploi-2012
+# fiches : sources/ins-emploi-2012-type-de-contrat.md
+# méthode/hypothèses : DÉNOMINATEUR : tous les occupés, pas les salariés ; ne pas rapprocher des parts de l'OIT. « Non déclaré » passe de 37-39 milliers (2011) à 2-4 (2012) : saut non expliqué par la source. Pas de 2011 T1 ni T3 dans le tableau. Quarante cases relues à l'image, totaux recoupés avec le tableau 30. Deux années seulement : pas une tendance.
+# note : Personnes occupées selon le type de contrat, 2011-2012 (milliers, tous les occupés, indépendants compris)
+Période,Contrat à durée déterminée (milliers),Contrat à durée indéterminée (milliers),Pas de contrat (milliers),Non déclaré (milliers),Total des occupés (milliers)
+2011 moyenne,378.1,1327.2,1412.1,37.9,3155.3
+2012 moyenne,398.2,1389.6,1443.6,3.0,3234.4
+2011 T2,394.6,1278.3,1428.3,38.6,3139.8
+2011 T4,361.6,1376.1,1395.8,37.2,3170.7
+2012 T1,382.8,1383.4,1438.5,2.4,3207.1
+2012 T2,383.6,1394.6,1449.0,4.4,3231.6
+2012 T3,417.5,1396.5,1426.2,2.7,3242.9
+2012 T4,408.7,1383.9,1460.7,2.5,3255.8

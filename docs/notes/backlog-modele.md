@@ -83,6 +83,21 @@ fait et celui où quelqu'un le corrige, et qu'on ne le refasse pas deux fois.
 - **Patrimoine immobilier** (18/10/2026) : Autres paramètres datés du chapitre « Le patrimoine immobilier » à verser, par ordre de maturité (fenêtre d'environ trente ans, règle « série à fenêtre » d'`AGENTS.md`) : (1) droit de mutation à titre onéreux et droits accessoires (5 % depuis 1987 ; droit de 1 % de la Conservation, 1981, et sur l'immeuble non immatriculé, 2003 ; défaut d'origine 3 % depuis 1990 ; droits fixes 25 → 30 D en 2022 ; minimum de perception 40 D ; 3 % hors délai) ; (2) droit complémentaire de 2017 (2 % de 500 000 D à 1 MD, 4 % au-delà, sur la valeur globale : deux seuils à saut) ; (3) terrains d'habitat individuel (barème 1/2/3 % jusqu'à 600 m², 5 % au-delà, depuis 1993 ; une seule fois depuis 2024) ; (4) logements de promoteurs (3 % sur la part au-dessus de 150 000 D en 2014, 200 000 D en 2015, 500 000 D en 2022 ; déduction relevée en 2019) ; (5) successions et donations (barème de 1993, loi n° 98-73, abattements de 5 000 et 10 000 D, droits fixes des donations familiales ; le barème de 1985 à 1993 est à établir, fiche `r-bareme-successions-1985-1993`)
 - **Patrimoine immobilier** (18/10/2026) : Constat de la fiche économique du chapitre (`docs/notes/eco-droits-mutation-plus-values.md`, § 5) : une simulation de l'effet des seuils à saut (500 000 D, 1 MD, cinq ans de détention) demanderait une élasticité du nombre de ventes au taux, une hypothèse d'incidence et la distribution des prix déclarés autour des seuils, que les statistiques publiques ne donnent pas
 
+- **Marché du travail : rupture du contrat de travail** (20/10/2026). Aucun paramètre dans
+  l'arbre. À verser sous `marche_travail/` (série à fenêtre, depuis 1996 environ) : préavis du CDI
+  (1 mois, 1er mars 1994, loi n° 94-29, art. 14 bis ; avant : 1 mois ou 8 jours selon le mode de
+  paie, code de 1966, art. 14, en vigueur le 1er mai 1966) ; gratification de fin de service
+  (1 jour de salaire par mois de service, plafond 3 mois ; art. 22, rédaction de la loi n° 94-29
+  au 1er mars 1994 ; même barème depuis le 1er mai 1966, condition de 6 mois de services avant
+  1994) ; dommages-intérêts du licenciement abusif (1 à 2 mois par année d'ancienneté, plafond
+  36 mois ; 1 à 4 mois pour vice de procédure ; art. 23 bis, 1er mars 1994) ; durée maximale du
+  CDD conclu hors des cas de recours (48 mois du 31 juillet 1996, loi n° 96-62, art. 6-4, au
+  27 mai 2025 ; plus de CDD hors cas au 28 mai 2025, loi n° 2025-9) ; période d'essai légale
+  (6 mois renouvelable une fois, 28 mai 2025, art. 6-3) ; garantie financière des entreprises
+  prestataires (20 % du contrat, 28 septembre 2025, arrêté du 23 septembre 2025). Série incomplète
+  pour les états de 1966 (non versés : antérieurs à la fenêtre). Note
+  `docs/notes/marche-travail-rupture-contrat.md`, § 2 et § 12. Dans le précis, `tbl-mt-rc-parametres` et
+  `tbl-mt-rc-etat-du-droit` (`_rupture_contrat.qmd`) sont faits main en attendant ce versement.
 
 ## Réglé
 

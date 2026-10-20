@@ -4945,3 +4945,64 @@
     135,81). Les prix sont déclarés et les valeurs révisables. Les valeurs données
     sont celles de l''édition du T4 2021, la dernière avant l''interruption.'
   fiche: data/processed/ins-ipim/ipim_trimestriel_methode_anterieure.csv.yml
+- id: ins-enquete-emploi-occupes-type-contrat
+  titre: Occupés selon le type de contrat, 2011-2012 (INS, enquête emploi 2012, tableau
+    31)
+  sources:
+  - ins-enquete-emploi-2012
+  build: scripts/extract_ins_emploi2012_contrat.py:main
+  raw:
+  - data/raw/ins-enquete-emploi/emploi_2012.pdf
+  output: data/processed/ins-enquete-emploi/occupes_type_contrat_2011_2012.csv
+  unite: milliers de personnes occupées
+  perimetre: tous les occupés, indépendants compris (« Pas de contrat » en contient
+    une grande partie) ; moyennes annuelles 2011 et 2012 et trimestres 2011 T2, 2011
+    T4, 2012 T1 à T4 ; CDD, CDI, pas de contrat, non déclaré, total
+  caveats: 'DÉNOMINATEUR : tous les occupés, pas les salariés ; ne pas rapprocher
+    des parts de l''OIT. « Non déclaré » passe de 37-39 milliers (2011) à 2-4 (2012)
+    : saut non expliqué par la source. Pas de 2011 T1 ni T3 dans le tableau. Quarante
+    cases relues à l''image, totaux recoupés avec le tableau 30. Deux années seulement
+    : pas une tendance.'
+  fiche: sources/ins-emploi-2012-type-de-contrat.md
+- id: banque-mondiale-2004-licenciements-economiques
+  titre: Licenciements pour motif économique ou technologique, 1998-2001 (Banque mondiale
+    2004, tableau 30)
+  sources:
+  - bm-2004-employment-strategy
+  build: scripts/extract_bm2004_licenciements_economiques.py:main
+  raw:
+  - data/raw/emploi/wb_2004_employment_strategy_main_25456.pdf
+  output: data/processed/banque-mondiale/licenciements_economiques_1998_2001.csv
+  unite: salariés visés par les demandes (« Total Layoffs ») et par issue ; entreprises
+    ; pourcentages imprimés
+  perimetre: 'source extérieure : tableau 30 du rapport 25456-TUN (vol. I, p. 60),
+    secteurs privé et public, données de l''inspection du travail selon le rapport
+    ; trois voies : devant la commission de contrôle des licenciements, hors commission,
+    total ; 1998-2001'
+  caveats: 'SÉRIE DE SALARIÉS TOUCHÉS = LIGNE « Total Layoffs » ; la ligne « Number
+    of Employees » (effectif total des entreprises demanderesses) n''est PAS transcrite
+    et ne se trace jamais comme série de licenciés. Demandes de licenciement et leurs
+    issues, pas des licenciements constatés. Tableau en image : valeurs lues à l''image,
+    recoupées (issues = total, voies = total, parts imprimées). Une ligne du tableau
+    est masquée par une tache noire. Série d''origine de l''inspection du travail
+    non obtenue. Étude extérieure : à ne pas mêler au budgétaire.'
+  fiche: sources/banque-mondiale-2004-licenciements-economiques.md
+- id: oit-ilostat-part-salaries-temporaires
+  titre: Part des salariés temporaires, Tunisie, 2010-2021 (OIT, ILOSTAT, EES_XTMP_RT)
+  sources:
+  - oit-ilostat-salaries-temporaires
+  build: scripts/extract_ilostat_salaries_temporaires.py:main
+  raw:
+  - data/raw/oit/ilostat/ilostat_ees_xtmp_tun.csv
+  output: data/processed/oit/ilostat_part_salaries_temporaires.csv
+  unite: pourcentage des salariés
+  perimetre: 'source extérieure : indicateur ILOSTAT EES_XTMP_RT, Tunisie, ensemble,
+    hommes, femmes ; quatre années tirées de trois enquêtes par traitement de microdonnées
+    de l''OIT'
+  caveats: 'TROIS ENQUÊTES DIFFÉRENTES, À TRACER PAR SEGMENTS (colonne `segment`)
+    : enpe (2010 et 2019), lmps (2014, marqué B « Break in series: Methodology revised
+    »), hies (2021, enquête budget-consommation). Ne jamais relier les points de segments
+    différents ; aucune interpolation. Les variations d''un segment à l''autre ne
+    sont pas une évolution établie. Dénominateur : salariés. En 2014 seulement, taux
+    des hommes supérieur à celui des femmes. Date d''édition de la base non relevée.'
+  fiche: sources/oit-ilostat-salaries-temporaires.md

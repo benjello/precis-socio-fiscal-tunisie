@@ -13352,3 +13352,490 @@ entries:
         Review، 2011)، تكون النسبة الفعلية لأداء يُوظَّف على القيمة الزائدة الاسمية،
         دون تعديل بحسب التضخّم، شديدة التأثّر بالتضخّم.
       synonymes: []
+
+  # --- Marché du travail : la rupture du contrat de travail ---
+  # Passe 1 (termes) puis passe 2 du 20/10/2026 (définitions). Termes arabes lus dans
+  # l'édition arabe du JORT : loi n° 94-29 (JORT AR n° 15 de 1994, p. 309-310 et 315,
+  # lu à l'image), loi n° 96-62 (JORT AR n° 59 de 1996, p. 1633-1634, lu à l'image),
+  # loi n° 2025-9 (JORT AR n° 61 de 2025, p. 1675-1677, couche texte). Le lieu exact de
+  # chaque terme est donné en commentaire sur la ligne `statut`. Le décret n° 2002-887 et
+  # la loi n° 2007-19 ne définissent ni le préavis ni le licenciement abusif : ils ne
+  # servent pas de source ici. Les pages citées en commentaire sont celles de
+  # l'édition arabe ; les `locator` ne donnent que les articles.
+
+  - id: contrat-duree-indeterminee
+    acronyme: CDI
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 6-2, 6-3 et 94-2, JORT AR n° 61 de 2025, p. 1675 (couche texte) ; loi n° 94-29 (AR), art. 14, JORT AR n° 15 de 1994, p. 309 (image)
+    references: [loi2025-9, loi94-29]
+    source_definition: {ref: loi2025-9, locator: "art. 1er (art. 6-2 nouveau du code du travail)"}
+    source_traduction: {ref: loi2025-9, locator: "art. 1er (art. 6-2 et 94-2)"}
+    voir_aussi: [contrat-duree-determinee, periode-essai, preavis]
+    fr:
+      terme: Contrat à durée indéterminée
+      definition: >
+        Contrat de travail conclu sans terme convenu. Il prend fin à l'expiration du
+        délai de préavis notifié par l'une des parties, ou dans les autres cas de
+        l'article 14 du code du travail : accord des parties, faute grave de l'autre
+        partie, force majeure ou décès du travailleur, résolution prononcée par le juge
+        (rédaction en vigueur depuis le 1er mars 1994). Depuis le 28 mai 2025, tout
+        contrat de travail est réputé conclu pour une durée indéterminée (art. 6-2).
+      synonymes: []
+    ar:
+      terme: عقد شغل لمدة غير معينة
+      definition: >
+        عقد شغل لا يُحدَّد له أجل. ينتهي بانتهاء أجل الإعلام بإنهاء العمل الذي يوجّهه أحد
+        الطرفين، أو في الحالات الأخرى التي يضبطها الفصل 14 من مجلة الشغل: اتفاق الطرفين،
+        أو ارتكاب الطرف الآخر خطأ فادحا، أو القوة القاهرة أو وفاة العامل، أو الفسخ المصرّح
+        به من طرف القاضي (الصيغة النافذة منذ 1 مارس 1994). ومنذ 28 ماي 2025، يُعتبر كل
+        عقد شغل مبرما لمدة غير معينة (الفصل 6-2).
+      synonymes: [عقد غير معين المدة]
+
+  - id: contrat-duree-determinee
+    acronyme: CDD
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 6-4 et 17, JORT AR n° 61 de 2025, p. 1675 (couche texte) ; loi n° 96-62 (AR), art. 6-2 et 6-4, JORT AR n° 59 de 1996, p. 1633 (image)
+    references: [loi2025-9, loi94-29, loi96-62]
+    source_definition: {ref: loi2025-9, locator: "art. 1er (art. 6-4 nouveau du code du travail)"}
+    source_traduction: {ref: loi2025-9, locator: "art. 1er (art. 6-4)"}
+    voir_aussi: [contrat-duree-indeterminee, periode-essai, titularisation]
+    fr:
+      terme: Contrat à durée déterminée
+      definition: >
+        Contrat de travail conclu pour une durée convenue ou pour l'accomplissement
+        d'un travail déterminé ; il prend fin à l'expiration de cette durée ou à
+        l'achèvement de ce travail (art. 14 du code du travail, rédaction du
+        1er mars 1994). Depuis le 28 mai 2025, il n'est permis que pour un surcroît
+        extraordinaire de services ou de travaux, le remplacement provisoire d'un
+        salarié permanent absent ou dont le contrat est suspendu, des travaux
+        saisonniers ou des activités qui, selon l'usage ou par leur nature, excluent
+        le contrat à durée indéterminée. Il est écrit, mentionne sa durée et son cas
+        d'exception, et ne comporte pas de période d'essai ; à défaut d'écrit ou de
+        ces mentions, il est réputé conclu pour une durée indéterminée. Le salarié a
+        les mêmes droits que les salariés permanents de même activité (art. 6-4).
+      synonymes: []
+    ar:
+      terme: عقد شغل لمدة معينة
+      definition: >
+        عقد شغل يُبرم لمدة متفق عليها أو لإنجاز عمل معيّن، وينتهي بانقضاء تلك المدة أو
+        بإنجاز العمل موضوع العقد (الفصل 14 من مجلة الشغل، صيغة 1 مارس 1994). ومنذ 28 ماي
+        2025، يُمنع إبرامه في غير الحالات الاستثنائية: زيادة غير عادية في حجم الخدمات أو
+        الأشغال، أو التعويض الوقتي لأجير قار متغيب أو توقف تنفيذ عقد شغله، أو الأعمال
+        الموسمية أو الأنشطة الأخرى التي لا يمكن حسب العرف أو بحكم طبيعتها اللجوء فيها إلى
+        عقود لمدة غير معينة. يُبرم كتابيا وينص على مدته وحالة الاستثناء، ولا يتضمن فترة
+        تجربة، وإلا اعتُبر مبرما لمدة غير معينة. ويتمتع الأجير بنفس حقوق الأجراء القارين
+        العاملين بنفس النشاط (الفصل 6-4).
+      synonymes: [عقد معين المدة]
+
+  - id: periode-essai
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 6-3, 6-4 et 7, JORT AR n° 61 de 2025, p. 1675-1676 (couche texte) ; loi n° 94-29 (AR), art. 22, JORT AR n° 15 de 1994, p. 309 (image)
+    references: [loi2025-9, loi94-29, arrete-1973-05-29-convention-cadre]
+    source_definition: {ref: loi2025-9, locator: "art. 1er (art. 6-3 nouveau du code du travail)"}
+    source_traduction: {ref: loi2025-9, locator: "art. 1er (art. 6-3)"}
+    voir_aussi: [contrat-duree-indeterminee, contrat-duree-determinee, gratification-fin-service]
+    fr:
+      terme: Période d'essai
+      definition: >
+        Période, au début d'un contrat de travail, pendant laquelle chaque partie peut
+        y mettre fin ; la gratification de fin de service n'est due qu'au salarié
+        licencié après son expiration (art. 22 du code du travail). Depuis le
+        28 mai 2025, elle dure six mois au plus, renouvelable une fois pour la même
+        durée ; la partie qui y met fin en informe l'autre, par un moyen laissant une
+        trace écrite, quinze jours avant son expiration ; elle est interdite dans un
+        contrat à durée déterminée (art. 6-3 et 6-4).
+      synonymes: []
+    ar:
+      terme: فترة التجربة
+      definition: >
+        فترة في بداية عقد الشغل يمكن خلالها لكل من الطرفين إنهاء العمل بالعقد، ولا تُستحق
+        مكافأة نهاية الخدمة إلا للعامل الذي يقع طرده بعد انقضائها (الفصل 22 من مجلة الشغل).
+        ومنذ 28 ماي 2025، لا تتجاوز مدتها ستة أشهر قابلة للتجديد مرة واحدة ولنفس المدة،
+        ويُعلم الطرف الذي ينهيها الطرف الآخر بأي وسيلة تترك أثرا كتابيا قبل خمسة عشر يوما
+        من انقضائها، ولا يجوز التنصيص عليها في عقد الشغل معين المدة (الفصلان 6-3 و6-4).
+      synonymes: [فترة تجربة]
+
+  - id: preavis
+    acronyme: null
+    # « Délai-congé » : terme du code de 1966 (art. 14 et 18, al. 4, ce dernier toujours en
+    # vigueur) et de la convention collective cadre (art. 16) ; la loi n° 94-29 écrit
+    # « délai de préavis ». « الإعلام بالطرد » est retiré : dans la loi n° 96-62 (art. 21-2)
+    # il désigne la notification du licenciement économique à l'inspection du travail.
+    statut: valide  # AR lu : loi n° 94-29 (AR), art. 14, 14 bis, 14 ter et 23, JORT AR n° 15 de 1994, p. 309-310 (image)
+    references: [loi94-29, loi66-27, arrete-1973-05-29-convention-cadre]
+    source_definition: {ref: loi94-29, locator: "art. 1er (art. 14, 14 bis et 14 ter du code du travail)"}
+    source_traduction: {ref: loi94-29, locator: "art. 1er (art. 14 et 14 bis)"}
+    voir_aussi: [contrat-duree-indeterminee, gratification-fin-service, licenciement-abusif]
+    fr:
+      terme: Préavis
+      definition: >
+        Délai entre la notification de la rupture d'un contrat à durée indéterminée et
+        la rupture elle-même ; le contrat prend fin à son expiration. Depuis le
+        1er mars 1994, il est d'un mois et notifié par lettre recommandée à l'autre
+        partie, sauf disposition plus avantageuse pour le travailleur (accord,
+        convention collective, usage) ; le travailleur peut s'absenter pendant toute la
+        seconde moitié du délai pour chercher un emploi, sans perte de salaire, et
+        l'employeur indique dans la lettre de préavis les causes du licenciement
+        (art. 14, 14 bis et 14 ter). Son inobservation ouvre droit à une indemnité,
+        distincte des dommages-intérêts pour rupture abusive (art. 23).
+      synonymes: [Délai-congé, Délai de préavis]
+    ar:
+      terme: أجل الإعلام
+      definition: >
+        الأجل الفاصل بين الإعلام بإنهاء عقد الشغل لمدة غير معينة وإنهائه، وينتهي العقد
+        بانتهائه. ومنذ 1 مارس 1994، مدته شهر ويتم الإعلام برسالة مضمونة الوصول توجّه إلى
+        الطرف الآخر، ما لم توجد مقتضيات أكثر فائدة للعامل ناتجة عن اتفاق الطرفين أو
+        الاتفاقية المشتركة أو العرف؛ ويُرخَّص للعامل بالتغيّب كامل النصف الثاني من الأجل
+        للبحث عن شغل آخر دون تخفيض في الأجر، ويبيّن المؤجر أسباب الطرد في رسالة الإعلام
+        بإنهاء العمل (الفصول 14 و14 مكرر و14 ثالثا). وتُستحق عن عدم مراعاته منحة لا
+        تختلط بغرم الضرر عن القطع التعسفي (الفصل 23).
+      synonymes: [الإعلام بإنهاء عقد الشغل, أجل الإعلام بإنهاء العمل]
+
+  - id: gratification-fin-service
+    acronyme: null
+    statut: valide  # AR lu : loi n° 94-29 (AR), art. 1er (art. 22 et 23) et art. 2, JORT AR n° 15 de 1994, p. 309-310 et 315 (image) ; loi n° 96-62 (AR), art. 21-10, JORT AR n° 59 de 1996, p. 1634 (image)
+    references: [loi94-29, loi66-27]
+    source_definition: {ref: loi94-29, locator: "art. 1er (art. 22 du code du travail) et art. 2"}
+    source_traduction: {ref: loi94-29, locator: "art. 2"}
+    voir_aussi: [preavis, licenciement-abusif, faute-grave, periode-essai, indemnite-perte-emploi]
+    fr:
+      terme: Gratification de fin de service
+      definition: >
+        Somme due par l'employeur au travailleur lié par un contrat à durée
+        indéterminée et licencié après la période d'essai, sauf faute grave. Depuis le
+        1er mai 1966, elle est d'un jour de salaire par mois de service effectif dans
+        l'entreprise, plafonnée à trois mois de salaire sauf disposition plus favorable ;
+        depuis le 1er mars 1994, elle se calcule sur le salaire perçu au moment du
+        licenciement, avantages compris hors remboursements de frais (art. 22). Elle
+        s'ajoute à l'indemnité de préavis et aux dommages-intérêts pour rupture abusive
+        (art. 23). Elle s'appelait « indemnité de licenciement » jusqu'à la loi
+        n° 94-29, qui l'a renommée (art. 2).
+      synonymes: [Indemnité de licenciement]
+    ar:
+      terme: مكافأة نهاية الخدمة
+      definition: >
+        مبلغ يدفعه المؤجر للعامل المرتبط بعقد لمدة غير معينة الذي يقع طرده بعد انقضاء فترة
+        التجربة، ما عدا صورة الخطأ الفادح. ومنذ 1 ماي 1966، تقدَّر بأجر يوم عن كل شهر عمل
+        فعلي في نفس المؤسسة، ولا تفوق أجر ثلاثة أشهر إلا في صورة وجود شروط أحسن؛ ومنذ
+        1 مارس 1994، تُحتسب على أساس الأجر الذي يتقاضاه العامل عند الطرد مع مراعاة جميع
+        الامتيازات التي ليست لها صبغة إرجاع مصاريف (الفصل 22). ولا تختلط بغرم الضرر عن
+        القطع التعسفي (الفصل 23). وكانت تسمّى «منحة الطرد» إلى أن عوّض القانون عدد 29
+        لسنة 1994 هذه التسمية (الفصل الثاني).
+      synonymes: [منحة الطرد]
+
+  - id: licenciement-abusif
+    acronyme: null
+    statut: valide  # AR lu : loi n° 94-29 (AR), art. 14 ter, 23 et 23 bis, JORT AR n° 15 de 1994, p. 309-310 (image) ; loi n° 96-62 (AR), art. 21-12, JORT AR n° 59 de 1996, p. 1634 (image)
+    references: [loi94-29, loi96-62, loi66-27]
+    source_definition: {ref: loi94-29, locator: "art. 1er (art. 14 ter, 23 et 23 bis du code du travail)"}
+    source_traduction: {ref: loi94-29, locator: "art. 1er (art. 23 bis)"}
+    voir_aussi: [cause-reelle-serieuse, faute-grave, preavis, gratification-fin-service]
+    fr:
+      terme: Licenciement abusif
+      definition: >
+        Licenciement intervenu sans cause réelle et sérieuse ou sans respect des
+        procédures légales, réglementaires ou conventionnelles (art. 14 ter, depuis le
+        1er mars 1994), ou licenciement pour raisons économiques sans l'avis préalable
+        de la commission de contrôle du licenciement, sauf force majeure ou accord des
+        parties (art. 21-12, depuis le 31 juillet 1996). Il ouvre droit à des
+        dommages-intérêts, distincts de l'indemnité de préavis et de la gratification
+        de fin de service (art. 23) : depuis le 1er mars 1994, d'un à deux mois de
+        salaire par année d'ancienneté, dans la limite de trois années de salaire, ou
+        d'un à quatre mois de salaire quand la cause est réelle et sérieuse mais la
+        procédure non respectée (art. 23 bis). La rupture abusive par l'une ou l'autre
+        partie relève de l'article 23.
+      synonymes: []
+    ar:
+      terme: الطرد التعسفي
+      definition: >
+        الطرد الواقع دون وجود سبب حقيقي وجدي يبرره أو دون احترام الإجراءات القانونية أو
+        الترتيبية أو التعاقدية (الفصل 14 ثالثا، منذ 1 مارس 1994)، أو الطرد لأسباب
+        اقتصادية أو فنية دون الحصول مسبقا على رأي اللجنة الجهوية أو المركزية لمراقبة
+        الطرد، إلا في صورة القوة القاهرة أو اتفاق الطرفين (الفصل 21-12، منذ 31 جويلية
+        1996). ويقع جبر الضرر بغرامة لا تختلط بمنحة أجل الإعلام ولا بمكافأة نهاية الخدمة
+        (الفصل 23): منذ 1 مارس 1994، تتراوح بين أجر شهر وأجر شهرين عن كل سنة أقدمية دون
+        أن تتجاوز أجر ثلاث سنوات، أو بين أجر شهر وأجر أربعة أشهر إذا كان للطرد سبب حقيقي
+        وجدي دون احترام الإجراءات (الفصل 23 مكرر). أما القطع التعسفي لعقد الشغل من أحد
+        الطرفين فيخضع للفصل 23.
+      synonymes: []
+
+  - id: cause-reelle-serieuse
+    acronyme: null
+    statut: valide  # AR lu : loi n° 94-29 (AR), art. 14 ter, 14 quater et 14 quinter, JORT AR n° 15 de 1994, p. 309 (image)
+    references: [loi94-29]
+    source_definition: {ref: loi94-29, locator: "art. 1er (art. 14 ter, 14 quater et 14 quinter du code du travail)"}
+    source_traduction: {ref: loi94-29, locator: "art. 1er (art. 14 ter)"}
+    voir_aussi: [licenciement-abusif, faute-grave]
+    fr:
+      terme: Cause réelle et sérieuse
+      definition: >
+        Motif qui justifie un licenciement ; depuis le 1er mars 1994, le licenciement
+        qui en est dépourvu est abusif (art. 14 ter du code du travail). La faute grave
+        en est une (art. 14 quater). Le juge apprécie le caractère réel et sérieux des
+        causes au vu des preuves apportées par les parties (art. 14 quinter).
+      synonymes: []
+    ar:
+      terme: سبب حقيقي وجدي
+      definition: >
+        السبب الذي يبرر الطرد؛ ومنذ 1 مارس 1994، يُعتبر تعسفيا الطرد الواقع دون وجوده
+        (الفصل 14 ثالثا من مجلة الشغل). ويُعتبر الخطأ الفادح من الأسباب الحقيقية والجدية
+        التي تبرر الطرد (الفصل 14 رابعا). ويرجع للقاضي تقدير مدى وجود الصبغة الحقيقية
+        والجدية لأسباب الطرد بناء على عناصر الإثبات المقدمة إليه من طرفي النزاع (الفصل 14
+        خامسا).
+      synonymes: [الأسباب الحقيقية والجدية]
+
+  - id: faute-grave
+    acronyme: null
+    statut: valide  # AR lu : loi n° 94-29 (AR), art. 14, 14 quater et 22, JORT AR n° 15 de 1994, p. 309 (image)
+    references: [loi94-29]
+    source_definition: {ref: loi94-29, locator: "art. 1er (art. 14, 14 quater et 22 du code du travail)"}
+    source_traduction: {ref: loi94-29, locator: "art. 1er (art. 14 quater)"}
+    voir_aussi: [cause-reelle-serieuse, licenciement-abusif, gratification-fin-service]
+    fr:
+      terme: Faute grave
+      definition: >
+        Faute qui permet à l'autre partie de rompre un contrat de travail, à durée
+        déterminée ou indéterminée (art. 14 du code du travail, depuis le
+        1er mars 1994). Commise par le travailleur, elle est une cause réelle et
+        sérieuse de licenciement (art. 14 quater) et le prive de la gratification de
+        fin de service (art. 22). La loi énumère onze cas, appréciés selon les
+        circonstances, parmi lesquels l'acte volontaire qui entrave le fonctionnement de
+        l'entreprise, le refus injustifié d'exécuter les ordres, le vol, l'état
+        d'ébriété au travail, l'abandon de poste, la violence et la divulgation d'un
+        secret professionnel (art. 14 quater).
+      synonymes: []
+    ar:
+      terme: خطأ فادح
+      definition: >
+        خطأ يجيز للطرف الآخر إنهاء عقد الشغل، سواء كان مبرما لمدة معينة أو لمدة غير
+        معينة (الفصل 14 من مجلة الشغل، منذ 1 مارس 1994). وإذا ارتكبه العامل، يُعتبر من
+        الأسباب الحقيقية والجدية التي تبرر الطرد (الفصل 14 رابعا) ويحرمه من مكافأة نهاية
+        الخدمة (الفصل 22). ويعدّد القانون إحدى عشرة حالة تُقدَّر حسب ظروف ارتكابها، منها
+        العمل أو التقصير المتعمد الذي من شأنه أن يعرقل سير النشاط العادي للمؤسسة، والامتناع
+        غير المبرر عن تنفيذ الأوامر المتعلقة بالعمل، والسرقة، والحضور للعمل في حالة سكر
+        واضح، والغياب عن العمل أو ترك مركزه دون ترخيص، وأعمال العنف، وإفشاء سر مهني
+        (الفصل 14 رابعا).
+      synonymes: [الخطأ الفادح]
+
+  - id: licenciement-economique
+    acronyme: null
+    statut: valide  # AR lu : loi n° 96-62 (AR), art. 21 à 21-3, JORT AR n° 59 de 1996, p. 1633 (image)
+    references: [loi96-62, loi66-27, decret-loi2020-2]
+    source_definition: {ref: loi96-62, locator: "art. 1er (art. 21 à 21-3 du code du travail)"}
+    source_traduction: {ref: loi96-62, locator: "art. 1er (art. 21)"}
+    voir_aussi: [commission-controle-licenciement, priorite-reembauchage, indemnite-perte-emploi]
+    fr:
+      terme: Licenciement ou mise en chômage pour raisons économiques ou technologiques
+      definition: >
+        Licenciement ou mise en chômage de tout ou partie du personnel permanent pour
+        des raisons économiques ou technologiques. Depuis le 31 juillet 1996,
+        l'employeur le notifie au préalable à l'inspection du travail, qui enquête et
+        tente la conciliation dans les quinze jours ; à défaut de conciliation, le
+        dossier est soumis à la commission régionale ou centrale de contrôle du
+        licenciement (art. 21 à 21-3). Les travailleurs licenciés ont une priorité de
+        réembauchage pendant un an (art. 21-13).
+      synonymes: [Licenciement économique, Licenciement pour raisons économiques ou technologiques]
+    ar:
+      terme: الطرد أو الإيقاف عن العمل لأسباب اقتصادية أو فنية
+      definition: >
+        طرد بعض العملة القارين أو كاملهم أو إيقافهم عن العمل لأسباب اقتصادية أو فنية.
+        ومنذ 31 جويلية 1996، يُعلم المؤجر بذلك مسبقا تفقدية الشغل، التي تجري بحثا وتقوم
+        بمحاولة صلحية في أجل أقصاه خمسة عشر يوما؛ وإذا تعذر الصلح، يُعرض الملف على اللجنة
+        الجهوية أو اللجنة المركزية لمراقبة الطرد (الفصول 21 إلى 21-3). وللعملة المطرودين
+        حق الأولوية في التشغيل طيلة عام (الفصل 21-13).
+      synonymes: [الطرد لأسباب اقتصادية أو فنية]
+
+  - id: commission-controle-licenciement
+    acronyme: null
+    statut: valide  # AR lu : loi n° 96-62 (AR), art. 21-3 à 21-12, JORT AR n° 59 de 1996, p. 1633-1634 (image) ; décret-loi n° 2020-2 (AR, iort)
+    references: [loi96-62, decret-loi2020-2, loi66-27]
+    source_definition: {ref: loi96-62, locator: "art. 1er (art. 21-3 à 21-12 du code du travail)"}
+    source_traduction: {ref: loi96-62, locator: "art. 1er (art. 21-3 à 21-5)"}
+    voir_aussi: [licenciement-economique, indemnite-perte-emploi, crva]
+    fr:
+      terme: Commission de contrôle du licenciement
+      definition: >
+        Commission tripartite, régionale (présidée par le chef de l'inspection du
+        travail territorialement compétente) ou centrale (présidée par le directeur
+        général de l'inspection du travail, quand les travailleurs concernés relèvent
+        de filiales situées dans deux gouvernorats ou plus), qui comprend un représentant de l'organisation
+        syndicale la plus représentative et un représentant de l'organisation
+        d'employeurs. Depuis le 31 juillet 1996, elle donne son avis, dans les quinze
+        jours de sa saisine, sur les demandes de licenciement ou de mise en chômage pour
+        raisons économiques ou technologiques que l'inspection n'a pu concilier ; elle
+        peut proposer notamment le rejet motivé, la reconversion, la réduction des
+        heures de travail, la retraite anticipée ou l'acceptation motivée, et donne son
+        avis sur la gratification de fin de service (art. 21-3 à 21-10). Le
+        licenciement intervenu sans son avis préalable est abusif, sauf force majeure
+        ou accord des parties (art. 21-12).
+      synonymes: [Commission régionale de contrôle du licenciement, Commission centrale de contrôle du licenciement]
+    ar:
+      terme: لجنة مراقبة الطرد
+      definition: >
+        لجنة ثلاثية، جهوية (يترأسها رئيس تفقدية الشغل المختصة ترابيا) أو مركزية (يترأسها
+        المدير العام لتفقدية الشغل، إذا كان العملة المعنيون ينتمون إلى فروع مؤسسة متواجدة
+        بولايتين أو أكثر)، تضم ممثلا عن المنظمة النقابية للعمال الأكثر تمثيلا وممثلا عن
+        المنظمة المهنية للمؤجرين. ومنذ 31 جويلية 1996، تبدي رأيها في أجل لا يتجاوز خمسة
+        عشر يوما من تاريخ تعهدها في ملفات الطرد أو الإيقاف عن العمل لأسباب اقتصادية أو
+        فنية التي تعذر فيها الصلح لدى تفقدية الشغل، وتقترح بالخصوص رفض المطلب مع
+        التعليل، أو إعادة تكوين العمال أو رسكلتهم، أو التخفيض في عدد الفرق أو ساعات العمل،
+        أو الإحالة على التقاعد المبكر، أو قبول المطلب مع التعليل، وتبدي رأيها في مكافأة
+        نهاية الخدمة (الفصول 21-3 إلى 21-10). ويُعتبر تعسفيا الطرد الذي يتم دون الحصول
+        مسبقا على رأيها، إلا في صورة القوة القاهرة أو اتفاق الطرفين (الفصل 21-12).
+      synonymes: [اللجنة الجهوية لمراقبة الطرد, اللجنة المركزية لمراقبة الطرد]
+
+  - id: priorite-reembauchage
+    acronyme: null
+    # Ne pas confondre avec la « priorité au recrutement » (أولوية الانتداب) des salariés en contrat à durée
+    # déterminée dans les postes permanents (loi n° 2025-9, art. 6-4).
+    statut: valide  # AR lu : loi n° 96-62 (AR), art. 21-13, JORT AR n° 59 de 1996, p. 1634 (image)
+    references: [loi96-62, loi66-27]
+    source_definition: {ref: loi96-62, locator: "art. 1er (art. 21-13 du code du travail)"}
+    source_traduction: {ref: loi96-62, locator: "art. 1er (art. 21-13)"}
+    voir_aussi: [licenciement-economique]
+    fr:
+      terme: Priorité de réembauchage
+      definition: >
+        Droit du travailleur dont l'emploi a été supprimé pour des raisons économiques
+        d'être réembauché en priorité, aux mêmes conditions de rémunération, si
+        l'entreprise recrute dans sa catégorie professionnelle. Le droit dure un an à
+        compter du licenciement ; les travailleurs sont réembauchés selon leur
+        ancienneté, majorée d'un an par enfant de moins de seize ans, et l'employeur en
+        informe par écrit l'inspection du travail (art. 21-13, depuis le
+        31 juillet 1996 ; art. 9 du code de 1966 auparavant).
+      synonymes: [Droit de priorité à l'emploi]
+    ar:
+      terme: حق الأولوية في التشغيل
+      definition: >
+        حق العامل الذي فُسخ عقد شغله نتيجة حذف مركز عمله لظروف اقتصادية في الأولوية في
+        التشغيل حسب شروط التأجير التي كان ينتفع بها عند طرده، إذا قامت المؤسسة بانتداب
+        عملة من نفس الصنف المهني. ويجري العمل بهذا الحق طيلة عام بداية من تاريخ الطرد،
+        وتقع إعادة انتداب العملة المطرودين حسب أقدميتهم بالمؤسسة مرفّعا فيها بسنة عن كل
+        ولد دون السادسة عشرة، ويُعلم المؤجر كتابيا تفقدية الشغل (الفصل 21-13، منذ 31
+        جويلية 1996؛ والفصل 9 من مجلة 1966 قبل ذلك).
+      synonymes: [إعادة انتداب العملة المطرودين]
+
+  - id: sous-traitance-main-oeuvre
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 2 (art. 28 nouveau) et art. 8, JORT AR n° 61 de 2025, p. 1675-1676 (couche texte)
+    references: [loi2025-9, decret2025-327]
+    source_definition: {ref: loi2025-9, locator: "art. 2 (art. 28 nouveau du code du travail)"}
+    source_traduction: {ref: loi2025-9, locator: "art. 2 (art. 28 nouveau)"}
+    voir_aussi: [entreprise-prestation-services, titularisation]
+    fr:
+      terme: Sous-traitance de main-d'œuvre
+      definition: >
+        Tout contrat ou accord entre une entreprise de location de main-d'œuvre et une
+        entreprise bénéficiaire, par lequel la main-d'œuvre est louée et mise à la
+        disposition de l'entreprise bénéficiaire par l'entreprise de location ; les
+        activités de gardiennage et de nettoyage en relèvent. Elle est interdite depuis
+        le 28 mai 2025 (art. 28 du code du travail).
+      synonymes: []
+    ar:
+      terme: مناولة اليد العاملة
+      definition: >
+        كل العقود أو الاتفاقات المبرمة بين مؤسسة مؤجرة لليد العاملة ومؤسسة مستفيدة يتم
+        بمقتضاها إجارة اليد العاملة ووضعها من المؤسسة المؤجرة على ذمة المؤسسة المستفيدة،
+        ويُعتبر مناولة يد عاملة نشاط الحراسة والتنظيف. وهي ممنوعة منذ 28 ماي 2025 (الفصل
+        28 من مجلة الشغل).
+      synonymes: []
+
+  - id: entreprise-prestation-services
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 2 (intitulé du titre II, art. 30 et 30 bis), JORT AR n° 61 de 2025, p. 1675-1676 (couche texte)
+    references: [loi2025-9, arrete-2025-09-23-garantie-prestataires]
+    source_definition: {ref: loi2025-9, locator: "art. 2 (art. 30 nouveau du code du travail)"}
+    source_traduction: {ref: loi2025-9, locator: "art. 2 (art. 30 nouveau)"}
+    voir_aussi: [sous-traitance-main-oeuvre]
+    fr:
+      terme: Entreprise de prestation de services ou de fourniture de travaux
+      definition: >
+        Entreprise, dite « prestataire », qui fournit par contrat écrit à une
+        entreprise bénéficiaire des services ou des travaux nécessitant des
+        connaissances professionnelles ou une spécialisation technique, à condition
+        qu'ils ne relèvent pas de l'activité principale et permanente de l'entreprise
+        bénéficiaire et que ses salariés ne soient pas placés sous la direction et le
+        contrôle de celle-ci (art. 30 du code du travail, depuis le 28 mai 2025). Elle
+        fournit une garantie financière pour les salaires et les cotisations de
+        sécurité sociale de ses salariés (art. 30 quater).
+      synonymes: [Entreprise prestataire]
+    ar:
+      terme: مؤسسة لإسداء خدمات أو للقيام بأشغال
+      definition: >
+        مؤسسة، تسمى «المؤسسة المسدية»، تقدّم بمقتضى عقد كتابي لفائدة مؤسسة مستفيدة خدمات
+        أو أشغالا تتطلب معارف مهنية أو تخصصا فنيا، على أن لا تتعلق هذه الخدمات أو الأشغال
+        بالنشاط الأساسي والدائم للمؤسسة المستفيدة، وأن لا يكون العمال المستخدمون تحت
+        إدارتها ومراقبتها (الفصل 30 من مجلة الشغل، منذ 28 ماي 2025). وتقدّم ضمانا ماليا
+        لخلاص أجور أجرائها ومساهماتهم في الضمان الاجتماعي (الفصل 30 رابعا).
+      synonymes: [المؤسسة المسدية]
+
+  - id: titularisation
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 8 et 9, JORT AR n° 61 de 2025, p. 1676 (couche texte) ; loi n° 96-62 (AR), art. 6-3, JORT AR n° 59 de 1996, p. 1633 (image)
+    references: [loi2025-9, loi96-62]
+    source_definition: {ref: loi2025-9, locator: "art. 8 et 9"}
+    source_traduction: {ref: loi2025-9, locator: "art. 8 et 9"}
+    voir_aussi: [contrat-duree-determinee, sous-traitance-main-oeuvre]
+    fr:
+      terme: Titularisation
+      definition: >
+        Intégration d'un salarié dans le personnel permanent de l'employeur. À l'entrée
+        en vigueur de la loi n° 2025-9, le 28 mai 2025, les salariés de la
+        sous-traitance de main-d'œuvre interdite et les agents employés de façon
+        permanente par les offices, établissements et entreprises publics à caractère
+        industriel, commercial et agricole sont réputés titularisés auprès de
+        l'entreprise bénéficiaire, avec reprise de leur ancienneté (art. 8) ; le
+        salarié dont le contrat à durée déterminée a été rompu entre le 6 mars 2024 et
+        cette date est titularisé de plein droit si la relation de travail a duré
+        quatre ans ou plus (art. 9).
+      synonymes: []
+    ar:
+      terme: ترسيم
+      definition: >
+        إدماج الأجير ضمن الأعوان القارين لدى المؤجر. وبدخول القانون عدد 9 لسنة 2025 حيز
+        النفاذ في 28 ماي 2025، يُعتبر الأجراء المستخدمون في إطار مناولة اليد العاملة
+        الممنوعة والأعوان المستخدمون بصفة دائمة من قبل الدواوين والمؤسسات والمنشآت
+        العمومية ذات الصبغة الصناعية والتجارية والفلاحية مرسمين بالمؤسسة المستفيدة، مع
+        احتساب أقدميتهم (الفصل 8)؛ ويُعدّ إنهاء عقد الشغل معين المدة بين 6 مارس 2024 وذلك
+        التاريخ موجبا لترسيم الأجير بقوة القانون إذا بلغت مدة العلاقة الشغلية أربع سنوات
+        أو أكثر (الفصل 9).
+      synonymes: []
+
+  - id: zone-franche-economique
+    acronyme: null
+    # Dénomination légale changée le 26 juillet 2001 : la loi n° 2001-76 (JORT n° 58 de
+    # 2001, p. 1752, art. 1er, lu en couche texte décodée ; exécutoire à cette date)
+    # remplace « zones franches économiques » par « parcs d'activités économiques » dans
+    # la loi n° 92-81. Reste `provisoire` tant que l'arabe de « parc d'activités
+    # économiques » n'est pas lu. Terme arabe attesté au
+    # pluriel seulement (loi n° 2025-9, art. 5) ; l'équivalent arabe de « parc
+    # d'activités économiques » n'est pas lu (édition arabe de 2001 à couche encodée).
+    # Définition tirée de l'art. 2 de la loi n° 92-81 (OCR français, p. 1005) ; l'art. 3
+    # a été récrit par le rectificatif (JORT n° 76 de 1992) et n'est pas repris.
+    statut: provisoire  # AR lu : loi n° 2025-9 (AR), art. 5, JORT AR n° 61 de 2025, p. 1676 (couche texte), « المناطق الاقتصادية الحرة » ; singulier dérivé
+    references: [loi92-81, loi2001-76, loi2025-9]
+    source_definition: {ref: loi92-81, locator: "art. 1er, 2 et 23"}
+    source_traduction: {ref: loi2025-9, locator: "art. 5"}
+    voir_aussi: [contrat-duree-determinee]
+    fr:
+      terme: Zone franche économique
+      definition: >
+        Zone du territoire tunisien créée par décret, délimitée et aménagée pour les
+        activités autorisées, soustraite au régime douanier, où les investissements
+        relèvent du régime d'encouragement de la loi n° 92-81 (art. 1er et 2). Depuis le
+        26 juillet 2001, la loi n° 92-81 les nomme « parcs d'activités économiques »
+        (loi n° 2001-76, art. 1er) : « zone franche économique » n'est plus leur
+        dénomination légale. Du
+        9 août 1992 au 28 mai 2025, les contrats de travail qui y étaient conclus
+        étaient réputés à durée déterminée (art. 23, abrogé par la loi n° 2025-9,
+        art. 5).
+      synonymes: [Zone économique franche, Parc d'activités économiques]
+    ar:
+      terme: منطقة اقتصادية حرة
+      definition: >
+        منطقة من التراب التونسي تُحدث بأمر، محددة ومهيأة لممارسة الأنشطة المرخص فيها،
+        ومستثناة من النظام الديواني، وتخضع الاستثمارات المنجزة فيها لنظام التشجيع الذي
+        يضبطه القانون عدد 81 لسنة 1992 (الفصلان 1 و2). ومنذ 26 جويلية 2001، غيّر القانون
+        عدد 76 لسنة 2001 (الفصل الأول) تسميتها في هذا القانون، فلم تعد «المنطقة الاقتصادية
+        الحرة» تسميتها القانونية. ومن 9 أوت 1992 إلى 28 ماي 2025، كانت عقود الشغل المبرمة
+        فيها تُعتبر عقودا لمدة معينة (الفصل 23، الذي ألغاه الفصل 5 من القانون عدد 9 لسنة
+        2025).
+      synonymes: [المناطق الاقتصادية الحرة]
