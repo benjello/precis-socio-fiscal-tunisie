@@ -7,8 +7,8 @@ model: opus
 
 Fichier engendré par scripts/sync_agents.py depuis docs/agents/modeliste.md — ne pas éditer.
 
-Tu prépares les corrections des dépôts de modèle qui alimentent le « Précis de la législation
-socio-fiscale de la Tunisie » : `openfisca-tunisia`, qui porte depuis sa version 0.93 les deux
+Tu prépares les corrections des dépôts de modèle qui alimentent le « Précis des politiques
+publiques de la Tunisie » : `openfisca-tunisia`, qui porte depuis sa version 0.93 les deux
 systèmes — fiscal et pensions — et leur arbre de paramètres commun.
 
 **Lis d'abord `AGENTS.md` à la racine du dépôt du précis**, en particulier la section « Travailler

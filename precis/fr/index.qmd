@@ -1,6 +1,6 @@
 ---
-title: "Précis de la législation socio-fiscale de la Tunisie"
-subtitle: "Historique et cadre législatif des politiques publiques en Tunisie"
+title: "Les politiques publiques de la Tunisie"
+subtitle: "Précis historique, juridique et économique"
 format:
   html:
     include-in-header: ../accueil.html
@@ -11,60 +11,80 @@ format:
 :::
 
 ::: {.objet-precis}
-Ce précis documente, texte par texte, l'évolution de la législation sociale et fiscale de la Tunisie, principalement depuis l'indépendance, en 1956, et rattache chaque règle à sa source au *Journal officiel*. Il s'adresse aux juristes, aux économistes et aux responsables de politiques publiques.
+Ce précis analyse les politiques publiques de la Tunisie, principalement depuis l'indépendance, en 1956, sous quatre angles : leur histoire ; les textes qui les mettent en œuvre, chacun rattaché à sa source au *Journal officiel* ; les chiffres et les faits qui les caractérisent, quand des séries existent ; et ce qu'en disent les enseignements de l'économie publique. Il s'adresse aux juristes, aux économistes et aux responsables de politiques publiques.
 :::
 
-## Les douze volumes
+## Les six parties
 
-::: {.sommaire-volumes}
+Le précis range ses volumes selon ce que leur texte documente : les revenus que la loi fixe, ce qu'elle prélève, ce qu'elle sert en espèces, les politiques d'un secteur, les institutions, puis l'ensemble.
 
-1. [La fiscalité](./fiscalite/)
+Un dispositif vit dans un seul volume, et les autres y renvoient. Ce qui est prélevé (taux, assiette, ventilation entre branches), l'organisme qui le gère et ses comptes se lisent dans les volumes des cotisations et des caisses de sécurité sociale. Ce qui est servi en espèces (pension, allocation, indemnité) se lit dans les retraites ou les prestations sociales ; les soins, dans la santé ; un prix ou un tarif administré, dans la compensation ; une règle de salaire, dans le marché du travail ou les rémunérations publiques ; le statut et les comptes d'une entreprise publique, dans les entreprises publiques. Un dispositif qui n'existe que pour un secteur vit dans le volume de ce secteur ; un cas d'un instrument général vit dans le volume de l'instrument.
 
-   L'impôt sur le revenu des personnes physiques, l'impôt sur les sociétés, l'impôt sur la fortune, la taxe sur la valeur ajoutée et les droits de consommation : ce qui les précédait, leur institution et leurs réformes ; puis les régimes d'incitation et les dépenses fiscales, ce qu'ils coûtent et qui en bénéficie.
+::: {.sommaire-parties}
 
-2. [Les cotisations sociales](./cotisations_sociales/)
+### I. Les revenus primaires
 
-   Qui cotise, sur quelle assiette et à quel taux : le cadre commun, chaque branche des origines à l'état actuel, et ce qui distingue les régimes.
+- [Le marché du travail](./marche_travail/)
 
-3. [Les prestations sociales](./prestations_sociales/)
+  Le salaire minimum, les conventions collectives et les négociations salariales du secteur privé : leurs institutions, leurs textes et leur évolution sur la longue période.
 
-   Les prestations autres que les pensions : celles que servent les caisses de sécurité sociale, et celles de l'assistance sociale, attribuées sous condition de ressources.
+- [Les rémunérations dans le secteur public](./remunerations_publiques/)
 
-4. [Les retraites](./retraites/)
+  Le périmètre du secteur public, puis, régime par régime, la construction de la rémunération des agents et les prélèvements qui la frappent.
 
-   La pension, dans le secteur public et dans le secteur privé : qui y a droit, comment elle se calcule, ce qu'elle devient au décès de son titulaire et comment elle évolue.
+### II. Les prélèvements
 
-5. [Les caisses de sécurité sociale](./caisses/)
+- [La fiscalité](./fiscalite/)
 
-   La CNSS, la CNRPS et la CNAM : les caisses dont elles procèdent depuis le Protectorat, leur statut commun, leurs comptes par régime et leurs relations avec l'État.
+  L'impôt sur le revenu des personnes physiques, l'impôt sur les sociétés, l'impôt sur la fortune, la taxe sur la valeur ajoutée et les droits de consommation : ce qui les précédait, leur institution et leurs réformes ; puis les régimes d'incitation et les dépenses fiscales, ce qu'ils coûtent et qui en bénéficie.
 
-6. [Les rémunérations dans le secteur public](./remunerations_publiques/)
+- [Les finances locales](./finances_locales/)
 
-   Le périmètre du secteur public, puis, régime par régime, la construction de la rémunération des agents et les prélèvements qui la frappent.
+  Les collectivités locales et ce qui les finance : les notions d'abord, puis les institutions, les impôts locaux et les transferts de l'État, et leur évolution sur la longue période.
 
-7. [Les finances locales](./finances_locales/)
+- [Les cotisations sociales](./cotisations_sociales/)
 
-   Les collectivités locales et ce qui les finance : les notions d'abord, puis les institutions, les impôts locaux et les transferts de l'État, et leur évolution sur la longue période.
+  Qui cotise, sur quelle assiette et à quel taux : le cadre commun, chaque branche des origines à l'état actuel, et ce qui distingue les régimes.
 
-8. [Le marché du travail](./marche_travail/)
+- [Les caisses de sécurité sociale](./caisses/)
 
-   Le salaire minimum, les conventions collectives et les négociations salariales du secteur privé : leurs institutions, leurs textes et leur évolution sur la longue période.
+  La CNSS, la CNRPS et la CNAM : les caisses dont elles procèdent depuis le Protectorat, leur statut commun, leurs comptes par régime et leurs relations avec l'État.
 
-9. [La compensation](./compensation/)
+### III. Les transferts en espèces
 
-   La Caisse générale de compensation et les subventions aux prix — produits de base, carburants, transport : les mécanismes d'avant 1970, la Caisse et son compte, les réformes, la dépense budgétaire sur la longue période, les carburants et leurs prix à la pompe, les tarifs de l'électricité et du gaz, les rapports extérieurs et la répartition entre les ménages.
+- [Les retraites](./retraites/)
 
-10. [Les entreprises publiques](./entreprises_publiques/)
+  La pension, dans le secteur public et dans le secteur privé : qui y a droit, comment elle se calcule, ce qu'elle devient au décès de son titulaire et comment elle évolue.
 
-     La relation financière entre l'État et les entreprises publiques : ce que le budget leur verse, ce que l'État garantit de leur dette, ce que l'État et elles se doivent, ce qu'elles lui versent, et ce que l'État a tiré de leur cession. Ce volume, un premier jet, n'existe pour l'instant qu'en français.
+- [Les prestations sociales](./prestations_sociales/)
 
-11. [La santé](./sante/)
+  Les prestations autres que les pensions : celles que servent les caisses de sécurité sociale, et celles de l'assistance sociale, attribuées sous condition de ressources.
 
-    La couverture et la prise en charge des soins, des protections antérieures à 1960 à l'assurance maladie et à l'assistance médicale ; l'hôpital public, la médecine de ville, la rémunération des soignants et les transferts non monétaires.
+### IV. Les politiques sectorielles
 
-12. [L'éducation et la formation](./education/)
+- [La santé](./sante/)
 
-    L'enseignement public comme dépense de l'État et comme droit : l'histoire des lois du système éducatif, les aides aux élèves et aux étudiants (bourses, prêts, restauration, hébergement) et la dépense publique d'éducation. Ce volume, un premier jet, n'existe pour l'instant qu'en français.
+  La couverture et la prise en charge des soins, des protections antérieures à 1960 à l'assurance maladie et à l'assistance médicale ; l'hôpital public, la médecine de ville, la rémunération des soignants et les transferts non monétaires.
+
+- [La compensation](./compensation/)
+
+  La Caisse générale de compensation et les subventions aux prix — produits de base, carburants, transport : les mécanismes d'avant 1970, la Caisse et son compte, les réformes, la dépense budgétaire sur la longue période, les carburants et leurs prix à la pompe, les tarifs de l'électricité et du gaz, les rapports extérieurs et la répartition entre les ménages.
+
+- [L'éducation et la formation](./education/)
+
+  L'enseignement public comme dépense de l'État et comme droit : l'histoire des lois du système éducatif, les aides aux élèves et aux étudiants (bourses, prêts, restauration, hébergement) et la dépense publique d'éducation. Ce volume, un premier jet, n'existe pour l'instant qu'en français.
+
+- [Le transport]{.a-venir}, [le logement]{.a-venir}, [l'environnement]{.a-venir} : à venir.
+
+### V. Les institutions
+
+- [Les entreprises publiques](./entreprises_publiques/)
+
+  La relation financière entre l'État et les entreprises publiques : ce que le budget leur verse, ce que l'État garantit de leur dette, ce que l'État et elles se doivent, ce qu'elles lui versent, et ce que l'État a tiré de leur cession. Ce volume, un premier jet, n'existe pour l'instant qu'en français.
+
+### VI. La synthèse
+
+- [Le cadre des finances publiques]{.a-venir} et [la redistribution]{.a-venir} : à venir.
 
 :::
 
