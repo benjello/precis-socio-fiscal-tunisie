@@ -1,0 +1,33 @@
+- libelle: Barème de l'impôt sur le revenu, dernière tranche
+  parametre: parameters/impot_revenu/bareme.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.bareme/table/
+- libelle: Retenue imputable sur les revenus de capitaux mobiliers
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_imputable.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_imputable/table/
+- libelle: Retenue sur les comptes spéciaux d'épargne
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_comptes_speciaux_epargne.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_comptes_speciaux_epargne/table/
+- libelle: Retenue sur les titres au porteur anonymes
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_titres_porteur_anonymes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_titres_porteur_anonymes/table/
+- libelle: Retenue sur les obligations au porteur anonymes
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_obligations_porteur_anonymes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_obligations_porteur_anonymes/table/
+- libelle: Taux de la plus-value de cession de titres
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.taux/table/
+- libelle: Franchise annuelle de la plus-value de titres
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/franchise.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.franchise/table/
+- libelle: Retenue sur les revenus distribués
+  parametre: parameters/impot_revenu/valeurs_mobilieres/revenus_distribues/taux_retenue_source.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.valeurs_mobilieres.revenus_distribues.taux_retenue_source/table/
+- libelle: Retenue sur les dépôts à terme
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_depots_terme.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_depots_terme/table/
+- libelle: Retenue libératoire sur les revenus de capitaux mobiliers
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_liberatoire.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_liberatoire/table/
+- libelle: Taux de la plus-value de titres non cotés détenus peu de temps
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/taux_non_cotes_detention_courte.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.taux_non_cotes_detention_courte/table/

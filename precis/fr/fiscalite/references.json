@@ -3398,6 +3398,91 @@
       },
       "note": "citation-key: loi-2001-83-code-opc\nJORT n° 59 du 24 juillet 2001 (en-tête du fascicule), tome 144 (notice jort_cache.db, recid 111425), page 1790 (sommaire du fascicule : « Loi n° 2001-83 … 1790 ») ; code : p. 1790 à 1796 (notice). Édition française lue par OCR le 20 octobre 2026 (le PDF n'a pas de couche texte exploitable) : art. 1 de la loi (promulgation du code) et art. 1 du code, p. 1790 : « Sont considérés comme organismes de placement collectif » les organismes de placement collectif en valeurs mobilières — sociétés d'investissement à capital variable et fonds communs de placement en valeurs mobilières — et les fonds communs de créances ; art. 2 (SICAV, sociétés anonymes à objet unique) , p. 1790. Édition arabe non lue ; intitulé arabe non établi (titre repris en français). Pagination citée : celle de l'édition française.",
       "URL": "https://www.pist.tn/jort/2001/2001F/Jo0592001.pdf"
+    },
+    {
+      "id": "piketty-saez-2013-inheritance-taxation",
+      "type": "article-journal",
+      "title": "A Theory of Optimal Inheritance Taxation",
+      "author": [
+        {
+          "family": "Piketty",
+          "given": "Thomas"
+        },
+        {
+          "family": "Saez",
+          "given": "Emmanuel"
+        }
+      ],
+      "container-title": "Econometrica",
+      "volume": "81",
+      "issue": "5",
+      "page": "1851-1886",
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            9
+          ]
+        ]
+      },
+      "DOI": "10.3982/ECTA10712",
+      "note": "citation-key: piketty-saez-2013-inheritance-taxation\nEconometrica 81(5), septembre 2013. Auteurs relevés sur le PDF (Crossref n'en donne pas) ; PDF dans tunisia-data (sources/epargne-capital-urls.csv). Étude extérieure : à citer avec sa méthode, à part du budgétaire."
+    },
+    {
+      "id": "saez-stantcheva-2018-capital-taxation",
+      "type": "article-journal",
+      "title": "A simpler theory of optimal capital taxation",
+      "author": [
+        {
+          "family": "Saez",
+          "given": "Emmanuel"
+        },
+        {
+          "family": "Stantcheva",
+          "given": "Stefanie"
+        }
+      ],
+      "container-title": "Journal of Public Economics",
+      "volume": "162",
+      "page": "120-142",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            6
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.jpubeco.2017.10.004",
+      "note": "citation-key: saez-stantcheva-2018-capital-taxation\nJournal of Public Economics 162, juin 2018 ; PDF dans tunisia-data (sources/epargne-capital-urls.csv). Étude extérieure : à citer avec sa méthode, à part du budgétaire."
+    },
+    {
+      "id": "straub-werning-2020-chamley-judd",
+      "type": "article-journal",
+      "title": "Positive Long-Run Capital Taxation: Chamley-Judd Revisited",
+      "author": [
+        {
+          "family": "Straub",
+          "given": "Ludwig"
+        },
+        {
+          "family": "Werning",
+          "given": "Iván"
+        }
+      ],
+      "container-title": "American Economic Review",
+      "volume": "110",
+      "issue": "1",
+      "page": "86-119",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "DOI": "10.1257/aer.20150210",
+      "note": "citation-key: straub-werning-2020-chamley-judd\nLES PAGES CITÉES (p. 10-11 et 4) SONT CELLES DE LA VERSION DE TRAVAIL : NBER Working Paper n° 20441, août 2014, DOI 10.3386/w20441 (PDF dans tunisia-data, sources/epargne-capital-urls.csv) ; le texte cite la version en le disant. Étude extérieure : à citer avec sa méthode, à part du budgétaire."
     }
   ]
 }

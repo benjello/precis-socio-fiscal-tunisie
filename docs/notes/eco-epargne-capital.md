@@ -154,3 +154,38 @@ intertemporelle (Havranek).
 À revoir : rapport complet de l'OCDE 2018 ; Isakov et al. ; versions publiées des documents de
 travail cités ; toute évaluation tunisienne (dividendes, intérêts 2020-2022, CEA) ; séries des
 dividendes des sociétés cotées autour de 2014 et 2017 ; ventilation des recettes des retenues.
+
+## Complément du 20/10/2026 : reprises de Chamley-Judd
+
+- **Piketty et Saez 2013** (*Econometrica* 81(5), p. 1851-1886). Hypothèse qui change : chocs
+  aléatoires sur les goûts pour le legs et sur les productivités ; ils rendent finie l'élasticité de
+  long terme des legs à l'impôt, infinie quand les chocs disparaissent (Chamley-Judd) (p. 1883).
+  Résultat, valable aussi dans le modèle dynastique de Barro-Becker : taux optimal sur l'héritage
+  positif dès que cette élasticité est finie (p. 1851, 1872) ; il dépend de l'élasticité, de la
+  concentration des legs et des préférences sociales pour la redistribution. Méthode : formules en
+  statistiques suffisantes, calibrées sur l'*Enquête Patrimoine* 2010 et le *Survey of Consumer
+  Finances* 2010 : « might be as large as 50%–60% » si l'élasticité est faible, les legs concentrés
+  et la société attachée surtout à ceux qui héritent peu (p. 1851, 1853, 1873).
+- **Saez et Stantcheva 2018** (*Journal of Public Economics* 162, p. 120-142). Hypothèse : goût
+  hétérogène pour la richesse dans l'utilité, d'où une élasticité finie du capital au rendement net.
+  Résultat : le zéro de Chamley-Judd vient d'une élasticité infinie due à l'anticipation d'une hausse
+  lointaine (p. 120, note 1 ; p. 136-137, tableau 1). Méthode : formules appliquées aux déclarations
+  américaines de 2007 ; à élasticités égales, taux supérieur optimal plus élevé sur le capital, plus
+  concentré (paramètre de Pareto 1,38 contre 1,6), que sur le travail (p. 130).
+- Pour situer : *Piketty et Saez 2012* (NBER WP 17989, version longue du précédent) : avec des
+  rendements aléatoires non assurables, une part de l'impôt sur l'héritage se reporte sur un impôt
+  annuel sur le revenu du capital (résumé ; p. 3). *Straub et Werning 2020* (*AER* 110(1),
+  p. 86-119, lu dans le WP NBER 20441 de 2014) : dans le modèle même de Judd, sans poids social sur
+  les capitalistes, l'impôt de long terme est positif si l'élasticité de substitution
+  intertemporelle est inférieure à 1 (p. 10-11, propositions 2-3) ; dans celui de Chamley, il peut
+  rester à son plafond (p. 4).
+
+Phrases-types :
+
+1. « Pour Piketty et Saez, puis Saez et Stantcheva, le zéro de Chamley et Judd tient à une
+   élasticité infinie de l'épargne de long terme ; finie, elle donne un taux optimal positif,
+   fonction de cette élasticité, de la concentration du patrimoine et des préférences sociales
+   [@piketty-saez-2013-inheritance-taxation, p. 1851 et 1872 ; @saez-stantcheva-2018-capital-taxation, p. 136-137]. »
+2. « Calibré sur des enquêtes patrimoniales françaises et américaines de 2010, ce taux sur
+   l'héritage peut atteindre 50 à 60 % si l'élasticité des legs est faible et les legs concentrés
+   [@piketty-saez-2013-inheritance-taxation, p. 1851 et 1873]. »

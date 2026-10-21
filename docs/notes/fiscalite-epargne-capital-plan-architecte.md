@@ -258,7 +258,7 @@ Aucun tableau propre à une réforme : les registres portent le détail. Le tabl
      - 52-II-2 est rétabli, étendu aux fonds d'amorçage et aux FCPR (fiche 6) ;
      - objet donné par la NC 1/2022, citée sur place comme note commune : « encourager les personnes physiques à adhérer aux différents mécanismes d'épargne, […] renforcer la justice fiscale ».
 - **Point de date, dans le texte principal** : ni restitution ni rattrapage des montants de 2021 (NC 1/2022).
-- **Clés** : `decret-loi-2020-30` (art. 12 et 17, p. 1410 et 1413, édition arabe), `lf-2021` (art. 17, p. 3129-3130 ; art. 42 pour la date), `lf-2022` (art. 38, p. 3090), `dgi-nc-1-2022`.
+- **Clés** : `decret-loi-2020-30` (art. 12 et 17, p. 1410 et 1414, édition arabe), `lf-2021` (art. 17, p. 3130 ; art. 42 pour la date), `lf-2022` (art. 38, p. 3090), `dgi-nc-1-2022`.
 
 #### `#### Les registres des textes {#sec-irpp-epargne-registres}`
 
