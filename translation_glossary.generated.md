@@ -55,6 +55,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
 | Bénéfice imposable | الربح الخاضع للضريبة |  |
 | Bénéfices des professions non commerciales | الأرباح غير التجارية | BNC |
+| Bénéfices distribués | الأرباح الموزعة |  |
 | Bénéfices industriels et commerciaux | الأرباح الصناعية والتجارية | BIC |
 | Bonification | الترفيع في مدّة الخدمات |  |
 | Bourse d'alternance | منحة التداول |  |
@@ -118,7 +119,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Comptable public | محاسب الجماعة المحلية |  |
 | Compte de compensation | حساب المقاصّة |  |
 | Compte de diversification des sources de sécurité sociale | حساب تنويع مصادر الضمان الاجتماعي |  |
+| Compte épargne en actions | حساب الادخار في الأسهم | CEA |
+| Compte épargne pour l'investissement | حساب الادخار للاستثمار | CEI |
 | Compte financier | الحساب المالي |  |
+| Comptes spéciaux d'épargne | الحسابات الخاصة للادخار |  |
 | Condition de ressources | شرط الموارد |  |
 | Conseil local | المجلس المحلي |  |
 | Conseil supérieur de l'éducation | المجلس الأعلى للتربية |  |
@@ -334,6 +338,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ordonnateur | آمر قبض وصرف |  |
+| Organisme de placement collectif en valeurs mobilières | مؤسسة التوظيف الجماعي في الأوراق المالية | OPCVM |
 | Orientation d'office | التوجيه الآلي |  |
 | Ouvrier de l'État | عامل الدولة |  |
 | Ouvriers de chantiers | عملة الحضائر |  |
@@ -355,6 +360,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation financière | التعديل المالي |  |
 | Période d'essai | فترة التجربة |  |
 | Perte sèche | الخسارة الصافية في الرفاه |  |
+| Plus-value de cession de titres | القيمة الزائدة المتأتية من التفويت في السندات |  |
 | Plus-value immobilière | القيمة الزائدة العقارية |  |
 | Plus-value nominale | القيمة الزائدة الاسمية |  |
 | Politique active de l'emploi | السياسة النشيطة للتشغيل |  |
@@ -432,12 +438,16 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Restauration universitaire | الإطعام الجامعي |  |
 | Restitution du crédit de taxe sur la valeur ajoutée | إرجاع فائض الأداء على القيمة المضافة |  |
 | Retenue à la source | الخصم من المورد |  |
+| Retenue à la source définitive et non restituable | الخصم من المورد النهائي وغير القابل للإرجاع |  |
+| Retenue à la source libératoire | الخصم من المورد التحرري |  |
 | Retraite anticipée volontaire | التقاعد المبكّر الاختياري |  |
 | Rétribution provisoire ou accidentelle | الأجر الوقتي أو العرضي |  |
 | Revalorisation des pensions | تعديل الجرايات |  |
 | Revenu annuel net | الدخل السنوي الصافي |  |
 | Revenu forfaitaire | الدخل التقديري |  |
+| Revenus de capitaux mobiliers | مداخيل رؤوس الأموال المنقولة |  |
 | Revenus de commercialisation des carburants | مداخيل تسويق المحروقات |  |
+| Revenus de valeurs mobilières | مداخيل الأوراق المالية |  |
 | Revenus fonciers | المداخيل العقارية |  |
 | Salaire brut | الأجر الخام |  |
 | Salaire conventionnel | الأجر التعاقدي |  |
@@ -505,6 +515,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taux majoré de la TVA | النسبة المرتفعة |  |
 | Taux marginal | النسبة الحدية |  |
 | Taux moyen | النسبة المتوسطة |  |
+| Taux moyen du marché monétaire | معدل نسبة الفائدة في السوق النقدية | TMM |
 | Taux normal de la TVA | النسبة العادية |  |
 | Taux réduit de la TVA | النسبة المخفضة |  |
 | Taux spécifique | نسبة نوعية |  |

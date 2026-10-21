@@ -6,6 +6,17 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Versement du 20/10/2026 (fiscalité de l'épargne et du capital, bibliographe, temps 1)
+
+Source : § 10 de `docs/notes/fiscalite-epargne-capital.md`. Treize notices ajoutées à `precis/{fr,ar}/fiscalite/references.json` (locales au volume) : `loi-99-92-relance-marche-financier`, `decret-loi-2011-28`, `decret-loi-2011-100`, `decret-loi-2020-30`, `dgi-nc-45-2002`, `dgi-nc-35-2003`, `dgi-nc-8-2004` (absente de la liste de la note, citée par sa prose), `dgi-nc-16-2004`, `dgi-nc-13-2005`, `dgi-nc-10-2008`, `dgi-nc-14-2018`, `dgi-nc-2-2018`, `dgi-nc-3-2023`. Les 31 clés « déjà présentes » le sont (volume ou fonds commun), sans doublon. `push_biblio.py --verifier` : 0 perte.
+- **Sans URL française** : `decret-loi-2020-30` (`pdf_fr` vide ; édition arabe, seule lue, dans la `note` FR et en URL AR). **Intitulé français** repris du code consolidé, à vérifier.
+- **Page limitée à la première** : `decret-loi-2011-100` (2299, lue à l'en-tête ; fin non relevée) ; texte non lu, aucun article à citer avant lecture. Le titre n'est PAS celui de la note (« capital risque … SICAR et FCPR » a été remplacé par l'intitulé du sommaire du fascicule français).
+- **Date d'effet non établie** (dite dans la `note`) : loi n° 99-92 (dépôt au gouvernorat), décret-loi n° 2011-28 (aucune note commune).
+- **Corrigé par rapport à la note** : intitulé de la NC 14/2018 (l'objet n'a pas de « relèvement » entre parenthèses ; en-tête relu à l'image, numéro confirmé) ; `issued` des textes = date de signature, comme dans le reste du fichier.
+- **Écartées (non lues ou non citables)** : NC 3/2015 et NC 16/2011 (non lues) ; CNF août 2013 (GT n° 1) et présentation « impôts directs » de novembre 2013 (pages « selon l'inventaire », non relues ; estimations −116,3 / −221,6 MD de méthode non décrite) ; rapports de dépenses fiscales PLF 2022-2025 (sans couche texte) ; BCT, *Bulletin des statistiques financières* (hors § 10, aucune clé proposée) ; loi n° 2005-59, LF 2007 art. 32, LF 2014 art. 44, LF 2019 art. 35 (annotations seules).
+- **À vérifier** : pages de `lf-2002` (la notice porte 4286 et 4301, la note lit les art. 30-31 p. 4253-4254) ; non modifiée ici.
+- **Zotero** : `dry-run` et `controle-rangement` non lancés ; rien poussé.
+
 ## Clôture du 17/10/2026 (éducation, bibliographe, temps 3)
 
 Neuf notices ajoutées à `precis/fr/education/references.json` (livre sans arabe ; rien sous `precis/ar/`), toutes lues dans `jort_cache.db` (recid), les notes `education-scolaire` et `education-superieur`, et le sommaire du fascicule JORT n° 44 de 2021 :
@@ -3740,3 +3751,23 @@ titre « Enquête nationale sur l'emploi 2012 », distinct de `ins-ees-2012` « 
 salaires auprès des entreprises en 2012 »), `loi2007-19` (aucune citation, aucune entrée de
 glossaire), `decret2002-887` (citée par `prestations_sociales/_autres_risques.qmd`, pas par ce
 chapitre). `decret2025-327` : citée par l'entrée de glossaire seulement.
+
+## Clôture du 20/10/2026 (fiscalité, section « Les revenus de l'épargne et du capital », `#sec-irpp-epargne`) — À REPORTER DANS ZOTERO
+
+Les 61 clés `@…` de la section résolvent (livre local ou fonds commun) ; ids FR et AR identiques (154 de chaque côté), sans doublon. Rendu `precis/fr/fiscalite` sans `[?]` ni `citeproc-not-found`.
+
+Versé par ce chantier (FR et AR, `precis/{fr,ar}/fiscalite/references.json`) :
+
+- [ ] `loi-2001-83-code-opc` : loi n° 2001-83 du 24 juillet 2001 portant promulgation du code des organismes de placement collectif (JORT n° 59 du 24 juillet 2001, tome 144, p. 1790-1796 selon la notice `jort_cache.db`, recid 111425). URL FR `https://www.pist.tn/jort/2001/2001F/Jo0592001.pdf`, URL AR `https://www.pist.tn/jort/2001/2001A/Ja0592001.pdf`, lues dans `pdf_fr` et `pdf_ar`. Édition française lue par OCR (pas de couche texte) : art. 1 de la loi et art. 1-2 du code, p. 1790. À brancher par le rédacteur (glossaire `opcvm` : « clé absente ») ; le .qmd et le glossaire n'ont pas été modifiés.
+- [ ] Titres arabes non établis : les deux fichiers portent l'intitulé français (comme `decret-loi-2020-30`). Édition arabe non lue.
+- [ ] TMM : aucune source BCT qui **définisse** le taux (mode de calcul) n'a été trouvée dans `tunisia-data`. Plus proche : rapport annuel 2009, p. 230, « taux moyen mensuel du marché monétaire (TMM) » (clé `bct-ra-2009`, déjà au fonds commun) ; liste des abréviations du rapport annuel 2024 (« TMM : taux moyen mensuel du marché monétaire », `bct-ra-2024`, aujourd'hui seulement dans `compensation`). Série : `tunisia-data/sources/bct-catalog.csv`, PL203105 (BCT, tableau statistique). Le rédacteur peut citer `bct-ra-2009` p. 230 pour le sens de l'acronyme, non pour le calcul.
+- [ ] Doublon `lf-2002` / `loi2001-123-lf2002` : non fusionné, à trancher (le chantier ne les touche pas).
+
+Rapatriement Zotero non lancé : en attente de feu vert. `push_biblio.py --verifier` : 1687 entrées, 0 perte. `--dry-run` local : la conversion aboutit, `loi-2001-83-code-opc` figure parmi les entrées à envoyer. `--controle-rangement` : 1293 bien rangées, 19 à déclasser (dont `code-irpp-is-1990` et `loi-2009-32-restauration-formation`, rattachés à `fiscalite` mais cités par plusieurs livres), 0 à ranger, 90 sans citation, 279 absentes de Zotero ; rien écrit. L'action GitHub `dry-run` du workflow `biblio-zotero` n'est pas lançable avant le push de la branche.
+
+Ajoutées ensuite au même chantier (FR et AR de `fiscalite`, 157 entrées de chaque côté, sans doublon) — À REPORTER DANS ZOTERO :
+
+- [ ] `piketty-saez-2013-inheritance-taxation` : *Econometrica* 81(5), p. 1851-1886, DOI 10.3982/ECTA10712 (auteurs relevés sur le PDF).
+- [ ] `saez-stantcheva-2018-capital-taxation` : *Journal of Public Economics* 162, p. 120-142, DOI 10.1016/j.jpubeco.2017.10.004.
+- [ ] `straub-werning-2020-chamley-judd` : *American Economic Review* 110(1), p. 86-119, DOI 10.1257/aer.20150210 ; pages citées (p. 10-11, 4) = version de travail NBER WP 20441 (dit en majuscules dans la `note`).
+- `piketty-saez-2012` volontairement non versée. `--verifier` : 1716 entrées, 0 perte ; `--dry-run` : conversion aboutie.

@@ -805,8 +805,10 @@ des quatre chapitres d'impôt ne renvoie à @sec-depenses-fiscales.
   avec ces lignes ;
 - avantages au titre du **réinvestissement** après 2017 (art. 72 à 77 du code) et régime des
   **sociétés d'investissement à capital risque** (186,8 MD en 2019) : non lus ;
-- **épargne** (comptes spéciaux, assurance-vie) : déjà traitée dans `_impot_revenu.qmd` ;
-  son coût (intérêts des dépôts et de l'épargne : 26,6 / 30,2 / 2,7 MD) vient du rapport ;
+- **épargne** (comptes spéciaux, assurance-vie, CEA, CEI) : traitée dans `_impot_revenu.qmd`,
+  `#sec-irpp-epargne` ; le domaine « Intérêts dépôts et épargne » du rapport (26,6 / 30,2 / 2,7 MD)
+  est la somme des déductions CEA + CEI, pas des intérêts exonérés (ceux-ci sont non valorisés) —
+  corrigé le 20/10/2026 ;
 - taux réduit de **10 %** de l'impôt sur les sociétés : le rapport le tient pour un taux de
   référence (§ 10.3), il n'est donc **pas** compté comme dépense fiscale — à dire dans
   `_impot_societes.qmd` si l'on y cite le chiffre de 9,15 %.
