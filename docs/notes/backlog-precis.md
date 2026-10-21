@@ -1149,8 +1149,12 @@ liste qui suit le tableau, citations comprises. Restent :
     il manque la fonction du générateur.
   - **Dates d'application non établies** (D9, non écrites comme établies) : loi n° 96-101
     (mention de dépôt du JORT n° 94 de 1996 à relever à l'image, fascicule au corpus ;
-    rectificatif du JORT n° 7 de 1997, p. 114, non lu) ; loi n° 2024-44 (aucune clause,
-    mention de dépôt non relevée) ; décret-loi n° 2024-4, loi n° 2002-32, loi n° 95-101,
+    rectificatif du JORT n° 7 de 1997, p. 114, non lu) ; loi n° 2024-44 (aucune clause ;
+    dépôt du 12 août 2024 relevé le 20 octobre 2026 dans les deux éditions : exécutoire le
+    17 août 2024 selon la loi n° 93-64, ou le 13 août selon le décret-loi n° 2020-1 ; le
+    propriétaire a tranché le 20 octobre 2026 pour le décret-loi n° 2020-1 : **13 août 2024**,
+    à reporter à `#r-ar-2024-44` et aux tableaux de `_autres_risques.qmd`, qui écrivent encore
+    17 août 2024 ; le chapitre `_temps_travail.qmd` du marché du travail porte déjà le 13 août) ; décret-loi n° 2024-4, loi n° 2002-32, loi n° 95-101,
     loi n° 2017-47 (à confirmer ou à calculer). L'article final de la loi de finances pour
     2025 n'est pas cité pour la date du 1er janvier 2025.
   - **À relire à l'image** : loi n° 2004-71, art. 1er (couche texte décodée : l'article n'est
@@ -2402,6 +2406,12 @@ en donnait trois.
 - **Salaire minimum — dates d'effet non établies** : loi n° 66-27, décret n° 73-247, décret
   n° 74-493, loi n° 96-62 et article 15 de la loi de finances pour 2026 figurent aux registres
   sans date d'effet (tiret) ; textes lus, date d'exécution à calculer par le documentaliste.
+  Établi le 20 octobre 2026 pour la **loi n° 66-27 : 1er mai 1966**, date énoncée par l'art. 1 de
+  la loi de promulgation (JORT n° 20 de 1966, p. 716, lu à l'image), à reporter aux registres
+  `#r-mt-sm-1966-duree` et `#r-mt-inst-1966-duree`. Établi aussi pour la **loi n° 96-62 : 31 juillet 1996** (dépôt du JORT n° 59 le 26 juillet
+  1996, mention de la dernière page, p. 1599, lue à l'image ; loi n° 93-64, art. 2), à reporter à
+  `#r-mt-sm-1996-duree` et `#r-mt-sm-1996-134` (note `marche-travail-temps-de-travail.md`, § 13,
+  Q1).
 - **Conventions — enrichissement du 8 octobre 2026** (branche `chantier/conventions-collectives-fond`,
   note `marche-travail-conventions-collectives-fond.md`) : le compte des agréments est corrigé
   (61 agréments de conventions sectorielles dans 56 branches, une 57e connue par ses seuls
@@ -2465,8 +2475,6 @@ en donnait trois.
   la fixation par décret de 2026 ne sont pas au chapitre, faute de clés de référence ; le décret
   n° 2018-674 (secteurs non couverts) n'a pas de clé non plus (TODO bibliographe dans
   `_negociations.qmd`).
-- **Chapitres annoncés, non écrits** : temps de travail et congés. À ajouter au `_quarto.yml`
-  français et arabe à sa rédaction.
 - **Rupture du contrat de travail — chapitre rédigé le 20 octobre 2026**
   (`_rupture_contrat.qmd`, `#sec-mt-rupture-contrat`, entre `_negociations.qmd` et
   `_politiques_emploi.qmd` au `_quarto.yml` français ; note `docs/notes/marche-travail-rupture-contrat.md`,
@@ -2502,6 +2510,70 @@ en donnait trois.
     économique » ancrées le 20 octobre 2026 ; « délai-congé » est un synonyme de `preavis` ;
     restent les notions économiques du § 7 de la fiche économique (protection de l'emploi,
     marché du travail dual…).
+- **Temps de travail et congés — chapitre rédigé le 20 octobre 2026** (`_temps_travail.qmd`,
+  branche `chantier/temps-de-travail`, déclaré au `_quarto.yml` français après
+  `_negociations.qmd`). **Restent** :
+  - *arabe* : à la livraison de la traduction, ajouter `_temps_travail.qmd` à la main au
+    `_quarto.yml` arabe, après `_negociations.qmd` et avant `_rupture_contrat.qmd` ;
+  - *dates du chapitre de la rupture* : corrigées par la PR « Correctifs de dates de la rupture du contrat
+    (loi n° 2025-9 au 24 mai 2025, art. 117) » (#482), non fusionnée à la rédaction de cette ligne ;
+  - *références* : Chemin et Wasmer 2009 (fiche `eco-temps-de-travail.md`) sans clé ni PDF, non
+    citée par la section « Ce qu'en dit l'économie » ;
+  - *date dérivée* : loi n° 2021-37 au 30 janvier 2022 (six mois après la publication du
+    30 juillet 2021, art. 29), à confirmer ;
+  - *textes non identifiés*, fiches versées à `docs/recherches.yml` le 20 octobre 2026 avec leurs
+    ancres : `r-mt-duree-40h-decrets`, `r-mt-art107-jours-feries`,
+    `r-mt-art121-cotisations-conges`, `r-mt-protectorat-duree-conges` ;
+  - *questions ouvertes de la note* (§ 13) : Q4 (jour de la loi n° 91-15, « mars 1991 » écrit),
+    Q7 (avenants : non-signataires ; « 7 novembre » depuis 2011), Q9 (contexte d'époque des
+    réformes de 1973, 1996 et 2021), Q10 (art. 11 et 28 et clause d'effet de la convention cadre
+    agricole), Q11 (textile, art. 22 à 28 sur un meilleur exemplaire, articles exacts du jour
+    férié travaillé et du congé de naissance), Q13 (limite de 9 heures par jour après 1996),
+    Q14 (art. 94-3 à 94-14 ; article de la loi n° 2025-9 qui récrit l'art. 94-2), Q15 (qui paie
+    les sept jours de paternité), Q16 (effectifs de la colonne « population couverte ») ;
+  - *séries* : la section des données ne trace que l'INS (trois trimestres de 2019, tableau 6,
+    p. 5) ; snapshot `ins-emploi-duree-travail-2019` tiré d'une série de `tunisia-data` non
+    encore committée sur `main` ;
+  - *tableaux faits main* (paramètres, état du droit, congé, jours fériés), à remplacer par des
+    tableaux engendrés quand les paramètres seront versés (ligne du 20/10/2026 de
+    `backlog-modele.md`).
+- **Temps de travail et congés — matière rassemblée le 20 octobre 2026, avant rédaction** (branche
+  `chantier/temps-de-travail`, note `docs/notes/marche-travail-temps-de-travail.md`) : plan
+  proposé, paramètres datés (durée, heures supplémentaires, congé annuel, jours fériés, congés
+  familiaux et de paternité), antécédents du Protectorat, conventions cadre et textile, séries
+  INS et OIT, notions à glossaire, références à créer. Établi et lu à l'image : code de 1966
+  (art. 1 et 4 de la loi de promulgation, art. 79 à 124, art. 445), rectificatifs n° 27 et 37 de
+  1966, lois n° 63-55, 88-55, 91-15, décret de 1957, décret n° 60-189, convention cadre de 1973
+  (art. 24-36) et ses avenants n° 1 (1984), n° 2 (1992) et n° 3 (2004), convention du textile de
+  1974 (art. 22-28) ; couche texte : loi n° 96-62, décrets-lois n° 2011-51 et
+  2021-11 ; à l'image : décrets-lois n° 2020-1 et 2020-2 (ce dernier touche les art. 92 et 117 :
+  récupération en six mois, congé annuel accordé par l'employeur pendant le confinement), lois n° 2021-37 (travail domestique), 2024-44 et 2025-9, convention cadre agricole de
+  2015 (édition arabe). **Restent** :
+  - *règle de date d'effet depuis le 14 avril 2020* : le décret-loi n° 2020-1 (JORT n° 32 de
+    2020, p. 767) rend les textes exécutoires « le lendemain de leur publication dans l'édition
+    électronique » et de leur dépôt électronique, « contrairement aux dispositions de la loi
+    n° 93-64 ». **Tranché par le propriétaire le 20 octobre 2026** : depuis le 14 avril 2020, le
+    lendemain de la publication électronique ; avant, la loi n° 93-64. Reste à l'écrire dans
+    `AGENTS.md` (« Dater ») et à reporter aux dates calculées depuis 2020 des autres volumes ;
+  - *date de publication de la loi n° 91-15* (JORT n° 17, numéro double « 1er et 5 mars
+    1991 », aucune mention de dépôt) ; la loi n° 96-62 est datée du 31 juillet 1996 (§ 13, Q1 ;
+    la première version de la note la disait sans date, à tort) ; *avenants de la convention cadre* : date à partir de laquelle ils obligent les
+    non-signataires, et application depuis 2011 du « 7 novembre » de la liste de neuf jours
+    fériés de l'avenant n° 2 ;
+  - *textes non identifiés* (fiches versées le 20 octobre 2026, voir l'entrée du chapitre
+    rédigé) : décrets de l'art. 80 (40 heures par branche, 1966-1996) ; arrêté de l'art. 107
+    nouveau (jours fériés) ; arrêté de l'art. 121 (cotisations de congés payés à la CNSS) ;
+    textes du Protectorat (décret du 4 août 1936 — « 14 août » dans la loi de 1966 —, décrets du
+    25 juillet 1946, du 9 mars 1944, du 20 avril 1921), à obtenir (*Journal officiel tunisien*,
+    Gallica inaccessible en accès automatisé) ;
+  - *contexte des réformes de 1988, 1991 et 1996* : aucune source d'époque lue (débats de la
+    Chambre des députés, plans, presse) ;
+  - *conventions de branche* : seule celle du textile est relue pour ces articles, sur un
+    exemplaire dégradé (art. 27 à relire) ; les autres textes sont au corpus ;
+  - *séries* : durée effective du travail seulement en 2019 (OIT, ENPE) et sur trois trimestres
+    de 2019 (INS, « sur-emploi ») ; aucune mesure des heures supplémentaires payées ni de la
+    répartition entre régimes de 48 et de 40 heures ;
+  - *glossaire* : onze notions créées par le terminologue (statut provisoire).
 - **Politiques de l'emploi — chapitre arabe à déclarer** : `_politiques_emploi.qmd` est déclaré au
   `_quarto.yml` français seulement. À la livraison de la traduction, l'ajouter à la main à
   `precis/ar/marche_travail/_quarto.yml` (en dernier chapitre, après `_negociations.qmd`) et rendre le livre arabe :
@@ -2621,7 +2693,12 @@ en donnait trois.
   couverts ; aucune grille lue (textile, BTP, commerce, hôtellerie). Avenants agréés lisibles au
   corpus (JORT, couche texte selon l'année).
 - **Code du travail de 1966** : fascicules n° 20-22 de 1966 sans couche texte (OCR requis pour
-  citer les art. 31-52 mot pour mot) ; rectificatif du n° 27/1966 non lu.
+  citer les art. 31-52 mot pour mot). Le 20 octobre 2026, OCR des n° 21 et 22 entiers et des
+  pp. 716-720 du n° 20 (fichiers de travail, non conservés au dépôt) ; art. 1 et 4 de la loi de
+  promulgation, art. 79-124 et 445 lus à l'image. Les rectificatifs du n° 27 (p. 960) et du
+  n° 37 (p. 1298) de 1966 sont lus : le second remplace, à l'art. 113, al. 2, « dix-huit à
+  vingt et un ans » par « dix-huit à vingt ans ». Art. 31-52 (conventions collectives,
+  pp. 720-721) toujours non relus à l'image.
 - **Socle du SMAG avant 1974** : arrêté et décret du 30 avril 1956 (JORT n° 35/1956) non lus.
 - **Le SMIG, les salaires du secteur privé et les prix** — section réécrite le 8 octobre 2026
   (`#sec-mt-salaires-prive`, dernière section de `_salaire_minimum.qmd`), d'après la note

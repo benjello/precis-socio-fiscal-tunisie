@@ -124,6 +124,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Compte financier | الحساب المالي |  |
 | Comptes spéciaux d'épargne | الحسابات الخاصة للادخار |  |
 | Condition de ressources | شرط الموارد |  |
+| Congé annuel payé | الرخصة السنوية الخالصة الأجر |  |
+| Congé de paternité | عطلة الأبوة |  |
 | Conseil local | المجلس المحلي |  |
 | Conseil supérieur de l'éducation | المجلس الأعلى للتربية |  |
 | Conseil supérieur de l'éducation et de l'enseignement | المجلس الأعلى للتربية والتعليم |  |
@@ -197,6 +199,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Droits d'enregistrement | معاليم التسجيل |  |
 | Droits d'inscription | رسوم التسجيل |  |
 | Durée de constatation du crédit de TVA | مدة تسجيل فائض الأداء على القيمة المضافة بالتصاريح |  |
+| Durée légale du travail | مدة الشغل |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | École préparatoire | المدرسة الإعدادية |  |
@@ -266,6 +269,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Habous | الأحباس |  |
 | Haute instance des finances locales | الهيئة العليا للمالية المحلية |  |
 | Hébergement universitaire | السكن الجامعي |  |
+| Heures supplémentaires | الساعات الإضافية |  |
 | Immatriculation foncière | التسجيل العقاري |  |
 | Immeubles non immatriculés | العقارات غير المرسمة |  |
 | Impôt exclusif | الأداء الحصري |  |
@@ -284,6 +288,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Incidence fiscale | توزيع العبء الجبائي |  |
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
+| Indemnité compensatrice de congé payé | منحة التعويض عن الرخصة |  |
 | Indemnité complémentaire provisoire | المنحة الإضافية المؤقتة | ICP |
 | Indemnité d'apprentissage | منحة التدريب |  |
 | Indemnité de cherté de vie | منحة لغلو المعاش |  |
@@ -298,6 +303,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Interventions publiques | التدخل العمومي |  |
 | Jardin d'enfants | روضة الأطفال |  |
 | Jouissance différée | الانتفاع المؤجَّل بالجراية |  |
+| Jours fériés chômés et payés | أيام الأعياد التي يبطل فيها العمل مع خلاص الأجر |  |
 | Kouttab coranique | الكتّاب القرآني |  |
 | Leçons de soutien | دروس الدعم |  |
 | Libre administration | التدبير الحر |  |
@@ -410,6 +416,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |
 | Régime de prévoyance | نظام الحيطة |  |
 | Régime de sécurité sociale des travailleuses agricoles | نظام الضمان الاجتماعي للعاملات الفلاحيات |  |
+| Régime de travail à plein temps | نظام عمل كامل الوقت |  |
 | Régime des artistes, créateurs et intellectuels | نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين |  |
 | Régime des prestations en nature | نظام التعويضات العينية |  |
 | Régime des salariés agricoles | نظام الأجراء الفلاحيين | RSA |
@@ -432,6 +439,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Rente d'accident du travail | إيراد حادث الشغل |  |
 | Rente viagère d'invalidité | الإيراد العمري للعجز |  |
 | Répartition des crédits | توزيع الاعتمادات |  |
+| Repos hebdomadaire | الراحة الأسبوعية |  |
 | Réserve du fonds commun | مدّخر المال المشترك |  |
 | Réserve technique | الاحتياطي الفنّي |  |
 | Ressources propres | الموارد الذاتية |  |
@@ -543,6 +551,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tranche | شريحة |  |
 | Transfert financier | التحويلات المالية |  |
 | Transfert monétaire direct | التحويل النقدي المباشر |  |
+| Travail à temps partiel | العمل لوقت جزئي |  |
+| Travail de nuit | العمل الليلي |  |
+| Travail domestique | العمل المنزلي |  |
 | Travaux pénibles et insalubres | الأشغال الشاقّة وغير الصحّية |  |
 | Tribunal immobilier | المحكمة العقارية |  |
 | Tutelle | سلطة الإشراف |  |

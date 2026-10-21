@@ -678,6 +678,118 @@
   - chercher en plein texte, dans les fascicules postérieurs au 12 août 2024, les visas de la loi n° 2024-44
   - consulter les circulaires et notes de la CNSS et de la CNRPS sur l'application des congés de 2024
 
+- id: r-mt-duree-40h-decrets
+  objet: décrets pris en application de l'art. 80 du code du travail (1966-1996) ramenant la durée du travail à 40 heures dans certaines branches, et textes réglementaires de l'art. 79 (nouveau) depuis la loi n° 96-62
+  ou: [precis/fr/marche_travail/_temps_travail.qmd#sec-mt-tt-duree]
+  requetes:
+    titres_fts: ['"quarante heures"', '"40 heures"', '"duree du travail"', '"duree legale"', '"duree hebdomadaire"', '"semaine de"']
+    titres_like:
+    - '%duree du travail%'
+    - '%duree legale du travail%'
+    - '%duree hebdomadaire%'
+    - '%horaire%travail%'
+    - '%regime de travail%'
+    - '%article 79 %code du travail%'
+    - '%article 80 %code du travail%'
+    iort_ar: [مدة العمل, 40 ساعة, توقيت العمل, الفصل 79 من مجلة الشغل, الفصل 80 من مجلة الشغل]
+    plein_texte: [article 79 (nouveau) du code du travail, article 80 du code du travail]
+    depuis: 1966-05-01
+  passes:
+  - date: 2026-10-20
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'jort_cache, titres et objets depuis le 1er mai 1966 : candidats par intitulé — arrêté du 25 août 1956 (vendanges), arrêté du 9 mars 1960 (salines), décret n° 60-189 (lu, antérieur au code), textes de la fonction publique, des ports et de l''enseignement (hors objet) ; miroir iort (corps arabe, textes depuis 2000) : statuts d''établissements publics, loi n° 2021-37 (lue), loi n° 2025-9 ; plein texte des fascicules français 1997-2026 : aucun. Lacunes : fascicules de 1966 à 1996 sans couche texte (non balayés) ; fascicules de 2000 à 2006 à police décalée. Note : docs/notes/marche-travail-temps-de-travail.md, § 10.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - sommaires des JORT 1966-1996, rubrique des affaires sociales, après OCR ciblée
+  - 'conventions de branche fixant une durée de 40 heures (piste : convention révisée des assurances, art. 30)'
+
+- id: r-mt-art107-jours-feries
+  objet: décret fixant les jours fériés chômés et payés du secteur privé et arrêté du ministre des affaires sociales fixant les modalités de l'art. 107 (nouveau) du code du travail (arrêt d'activité de 48 heures consécutives au plus), loi n° 96-62
+  ou: [precis/fr/marche_travail/_temps_travail.qmd#sec-mt-tt-jours-feries]
+  requetes:
+    titres_fts: [feries]
+    titres_like: ['%jours feries%', '%article 107 %code du travail%']
+    iort_ar: [أيام الأعياد, ايام الاعياد, خلاص الأجر, الخالصة الأجر, الأعياد, أيام العطل, العطل الرسمية, الفصل 107 من مجلة الشغل]
+    plein_texte: [article 107 (nouveau) du code du travail]
+    depuis: 1996-07-23
+  passes:
+  - date: 2026-10-20
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'jort_cache, titres et objets depuis le 23 juillet 1996 : seuls répondent les décrets de jours fériés de la fonction publique (86-1135, 87-1447, 90-1826, 91-1279, 95-1085, 2000-375, 2011-317, 2021-223), le décret gouvernemental n° 2017-515 (agents travaillant les jours de fête) et les textes modifiant l''art. 445 ; miroir iort : statuts d''établissements publics ; plein texte des fascicules français 1997-2026 : aucun. Lacunes : fascicules de 2000 à 2006 à police décalée ; douze fichiers « fr » qui sont l''arabe. Note : docs/notes/marche-travail-temps-de-travail.md, § 10.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-mt-art121-cotisations-conges
+  objet: arrêté fixant les taux et modalités des cotisations des employeurs à la CNSS pour les congés payés des salariés des activités discontinues (code du travail, art. 121)
+  ou: [precis/fr/marche_travail/_temps_travail.qmd#sec-mt-tt-conge-annuel]
+  requetes:
+    titres_fts: ['"conges payes"', '"conge paye"', '"conge annuel"']
+    titres_like: ['%article 121 %code du travail%']
+    iort_ar: [العطل الخالصة الأجر, العطلة السنوية, الفصل 121 من مجلة الشغل]
+    plein_texte: [article 121 du code du travail]
+    depuis: 1966-05-01
+  passes:
+  - date: 2026-10-20
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'jort_cache, titres et objets depuis le 1er mai 1966 : répondent la loi n° 63-33 et le code du pêcheur (loi n° 75-17, titre 9) ; miroir iort : aucun ; plein texte des fascicules français 1997-2026 : aucun. Lacunes : fascicules de 1966 à 1996 sans couche texte ; textes de la CNSS non publiés au JORT. Note : docs/notes/marche-travail-temps-de-travail.md, § 10.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - chercher côté CNSS (volume des caisses)
+  - chercher un arrêté antérieur au code (régime de 1946) éventuellement maintenu
+
+- id: r-mt-protectorat-duree-conges
+  objet: textes du décret du 4 août 1936 (16 djoumada I 1355 ; « 14 août 1936 » à l'art. 4 de la loi n° 66-27) instituant la semaine de quarante heures, de ses modificatifs (11 décembre 1936, 4 février 1937, 28 juillet 1938, arrêté du 12 mars 1938), des décrets du 25 juillet 1946 (heures supplémentaires ; congés payés), du 19 juillet 1948, du 9 mars 1944 (congés payés agricoles) et du 20 avril 1921 (repos hebdomadaire)
+  ou: [precis/fr/marche_travail/_temps_travail.qmd#sec-mt-tt-antecedents]
+  requetes:
+    titres_like: ['%heures%', '%conges%', '%repos%', '%feri%', '%travail%']
+    depuis: 1921-04-20
+  periode:
+    jusqu_au: 1966-05-01
+    motif: textes abrogés par la loi n° 66-27 du 30 avril 1966, art. 4 (JORT n° 20 du 3 mai 1966, p. 716-717), code du travail en vigueur le 1er mai 1966
+  passes:
+  - date: 2026-10-20
+    role: documentaliste
+    sources: [jort_cache, web]
+    couverture: 'jort_cache, notices antérieures à 1956 (69 notices de 1870 à 1955, surtout des expropriations), motifs LIKE ci-dessus : aucune notice. Web : Gallica (Journal officiel tunisien, ark bd6t5348372v cité par un catalogue tiers) répond 403 à l''accès automatisé. Lacunes : ni le corpus local ni jort_cache ne couvrent le Journal officiel tunisien d''avant 1956. Note : docs/notes/marche-travail-temps-de-travail.md, § 10.'
+    couvert_jusqu_au: 1955-12-31
+    resultat: aucun
+  a_faire:
+  - Gallica dans un navigateur
+  - CRL (Journal officiel tunisien 1882-1957)
+  - Archives diplomatiques de Nantes (microfilms 1936-1945)
+  - Bulletin économique et social de la Tunisie
+
+- id: r-mt-tt-modif-apres-1996
+  objet: texte modifiant, après la loi n° 96-62, les articles 79 à 124 (durée du travail, repos hebdomadaire, jours fériés, congés annuels payés) ou 445 (liste des jours fériés) du code du travail, autre que les décrets-lois n° 2011-51, 2020-2 et 2021-11 et les lois n° 2021-37, 2024-44 et 2025-9
+  ou: [precis/fr/marche_travail/_temps_travail.qmd#sec-mt-tt-etat-du-droit]
+  requetes:
+    titres_fts: ['"code du travail"']
+    titres_like: ['%code du travail%', '%jours feries%', '%conge%']
+    iort_ar: [مجلة الشغل]
+    plein_texte:
+    - article 79 (nouveau) du code du travail
+    - article 90 (nouveau) du code du travail
+    - article 107 (nouveau) du code du travail
+    - article 113 (nouveau) du code du travail
+    - article 119 (nouveau) du code du travail
+    - article 445 (nouveau) du code du travail
+    depuis: 1996-07-24
+  passes:
+  - date: 2026-10-20
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'plein texte des fascicules français de 1997 à 2026 (3 150 fichiers), motif « article(s) N (nouveau) du code du travail » pour N = 79, 80, 82, 88, 90, 93, 94, 107, 109, 113, 115, 119, 121, 122, 123, 445 : seuls répondent les décrets-lois n° 2011-51 et 2021-11 (art. 445, témoins positifs) ; lois à intitulé général modifiant le code (n° 69-16, 70-20, 76-84, 93-66, 94-29, 2006-18, 2007-19, 2025-9) lues : aucune ne touche les art. 79 à 124 ni 445, sauf la loi n° 2025-9 (art. 94-2) ; décret-loi n° 2020-2 lu à l''image (art. 92 et 117). Lacunes : fascicules de 2000 à 2006 à police décalée non décodés ; douze fichiers « fr » qui sont l''arabe ; textes à intitulé arabe seul non parcourus par le plein texte. Note : docs/notes/marche-travail-temps-de-travail.md, § 0 et § 13.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - décoder les fascicules de 2000 à 2006 et rejouer le plein texte
+  - rejouer avec les termes arabes sur le miroir iort
+
 - id: r-amg-cartes-quotas
   objet: arrêtés conjoints des ministres des affaires sociales et de la santé publique fixant le nombre global des cartes de soins gratuits (décret n° 98-1812, art. 2) et à tarifs réduits, et les quotas régionaux
   ou:

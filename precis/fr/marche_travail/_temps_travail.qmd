@@ -1,0 +1,586 @@
+# La durée du travail et les congés {#sec-mt-temps-travail .domicile-unique}
+
+Ce chapitre présente combien d'heures le salarié du secteur privé doit à son employeur, ce que coûte une heure faite au-delà, et le temps payé sans être travaillé : le congé annuel, les jours fériés, les congés pour événements familiaux. Il porte sur les salariés que régit le code du travail et, depuis 2022, sur les travailleurs domestiques.
+
+Les deux régimes du salaire minimum, à 48 et à 40 heures par semaine, et leurs montants sont exposés au chapitre du salaire minimum (@sec-mt-regimes-horaires) ; les congés de maternité et de paternité de 2024, leur durée et l'indemnité servie par la caisse, au volume [« Les prestations sociales »](../prestations_sociales/_autres_risques.html#sec-ar-conges-2024). La fin du contrat de travail — préavis, licenciement, contrat à durée déterminée — est exposée au chapitre de la rupture du contrat de travail (@sec-mt-rupture-contrat).
+
+
+## Vue d'ensemble {#sec-mt-tt-en-bref}
+
+Depuis le 1^er^ mai 1966, le salarié des activités non agricoles travaille au plus 48 heures par semaine, et chaque heure faite au-delà est majorée de 75 % ; une convention collective ou un texte réglementaire peut ramener la [durée du travail](#g-duree-legale-travail) jusqu'à 40 heures, les [heures supplémentaires](#g-heures-supplementaires) étant alors majorées de 25 % jusqu'à 48 heures et de 50 % au-delà. Le salarié a droit à un jour de [congé annuel payé](#g-conge-annuel-paye) par mois de travail, à six [jours fériés payés](#g-jours-feries-chomes-payes) par la loi — neuf par la [convention collective cadre](#g-convention-collective-cadre) —, et à des congés pour événements familiaux que fixent surtout les conventions.
+
+| Date d'effet et texte | Ce que la loi cherche, dans ses mots | Avant → après | Ce qui y naît |
+|:---|:---|:---|:---|
+| [1^er^ mai 1966]{.insecable}<br>[code du travail](#r-mt-tt-loi-1966) | « Aucune diminution dans le niveau de vie des travailleurs ne peut résulter de l'application des décrets » qui réduisent la durée (art. 80) | décrets du Protectorat, semaine de 40 heures appliquée profession par profession → 48 heures au plus, réductibles à 40 heures par décret ; majoration de 75 % | un seul texte pour la durée, le congé annuel, les jours fériés et le repos hebdomadaire |
+| [1^er^ juin 1973]{.insecable}<br>[convention collective cadre](#r-mt-tt-cc-1973) | « l'allongement des congés annuels payés, l'augmentation du nombre des jours fériés chômés et payés » (préambule) | quatre jours fériés légaux → sept par la convention ; indemnité de congé de 1/24 → « l'intégralité du traitement et des indemnités » | congés pour événements familiaux (naissance, mariage, décès) |
+| **[31 juillet 1996]{.insecable}**<br>[loi n° 96-62](#r-mt-tt-loi-1996) | intitulé : « portant modification de certaines dispositions du Code du Travail » | réduction de la durée par décret → par convention collective ou texte réglementaire ; majoration des régimes courts : 25 % pour huit heures, 50 % au-delà → 25 % jusqu'à 48 heures, 50 % au-delà, sur le salaire de base horaire | travail à temps partiel |
+| [30 janvier 2022]{.insecable}<br>[loi n° 2021-37](#r-mt-tt-loi-2021) | « réglementer le travail domestique de manière à garantir le droit au travail décent » (art. 1^er^) | loi du 1^er^ juillet 1965 relative à la situation des employés de maison → 48 heures par semaine, 10 heures par jour ; congé annuel d'un jour par mois ; congés familiaux propres | régime du travail domestique |
+
+: Les grandes réformes de la durée du travail et des congés, 1966-2022 (en gras : la rupture des règles de la durée et des heures supplémentaires) {#tbl-mt-tt-reformes}
+
+Quelques grandeurs suffisent à suivre ces règles d'une réforme à l'autre (@tbl-mt-tt-parametres).
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré (aucune de ces grandeurs n'est encore versée ; ligne de docs/notes/backlog-modele.md du 20/10/2026). -->
+
+| Grandeur | [1^er^ mai 1966]{.insecable}<br>[code](#r-mt-tt-loi-1966) | [1^er^ juin 1973]{.insecable}<br>[convention cadre](#r-mt-tt-cc-1973) | [17 novembre 1984]{.insecable}<br>[avenant n° 1](#r-mt-tt-feries-1984) | [5 juin 1988]{.insecable}<br>[loi n° 88-55](#r-mt-tt-feries-1988) | [31 juillet 1996]{.insecable}<br>[loi n° 96-62](#r-mt-tt-loi-1996) | [1^er^ janvier 2026]{.insecable} |
+|:---|:---|:---|:---|:---|:---|:---|
+| Durée maximale<br>(par semaine) | 48 heures | 48 heures | 48 heures | 48 heures | 48 heures | 48 heures |
+| Réduction possible | à 40 heures, par décret | idem | idem | idem | jusqu'à 40 heures, par convention ou texte réglementaire | idem |
+| Majoration<br>(régime de 48 heures) | 75 % | 75 % | 75 % | 75 % | 75 % du salaire de base horaire | idem |
+| Majoration<br>(régimes de moins de 48 heures) | régime de 40 heures : 25 % les huit premières heures supplémentaires, 50 % au-delà | idem | idem | idem | 25 % jusqu'à 48 heures, 50 % au-delà | idem |
+| Majoration<br>(temps partiel) | — | — | — | — | 50 % | 50 % |
+| Congé annuel<br>(adultes) | 1 jour par mois, 12 jours ouvrables au plus | idem | idem | idem | idem | idem |
+| Indemnité de congé<br>(loi) | 1/24 de la rémunération de la période | idem | idem | idem | salaire et indemnités habituels | idem |
+| Traitement pendant le congé<br>(convention cadre) | — | intégral | idem | idem | idem | idem |
+| Jours fériés payés<br>(loi) | 4 | 4 | 4 | 5 | 6 | 6 |
+| Jours fériés payés<br>(convention cadre) | — | 7 | 9 | 9 | 9 | 9 |
+
+: La durée, la majoration, le congé et les jours fériés, 1966-2026 {#tbl-mt-tt-parametres}
+
+« Idem » signale une règle que le texte de la colonne ne touche pas ; un tiret, une règle qui n'existe pas encore. Les règles de la loi sont des minimums, que les conventions peuvent dépasser ; la convention cadre vaut pour les activités non agricoles.
+
+- **48 heures et 75 % depuis 1966.** La durée maximale et la majoration du régime de 48 heures n'ont pas changé depuis le code ; la loi de 1996 change la voie de la réduction de la durée, l'assiette de la majoration et le seuil des majorations dans les régimes plus courts (@sec-mt-tt-1996).
+- **La convention cadre ajoute à la loi.** Depuis 1973, la convention collective cadre accorde plus de jours fériés que la loi, le maintien du salaire pendant le congé et des congés pour événements familiaux ; la loi intègre les fêtes religieuses en 1988 (@sec-mt-tt-1973, @sec-mt-tt-jours-feries).
+- **Deux publics réglés après 1966.** Le [travail à temps partiel](#g-travail-temps-partiel) reçoit ses règles en 1996, le [travail domestique](#g-travail-domestique) en 2022 (@sec-mt-tt-temps-partiel, @sec-mt-tt-domestique).
+
+## La mise en place : du Protectorat au code de 1966 {#sec-mt-tt-mise-en-place}
+
+Le code du travail comme institution, sa promulgation et son contenu d'ensemble sont présentés au chapitre des institutions du travail (@sec-mt-code). Cette section expose ce que le code de 1966 fixe pour la durée du travail et les congés, et ce qu'il remplace.
+
+### Avant le code {#sec-mt-tt-antecedents}
+
+Le code de 1966 remplace un régime de 40 heures institué en 1936 et appliqué profession par profession, des décrets sur les congés payés de 1944 et de 1946 et une loi de 1963 sur les jours fériés, qu'il abroge.
+
+- **Les textes abrogés.** Parmi les textes que la loi qui promulgue le code [abroge](#r-mt-tt-abrogations) figurent, pour les sujets de ce chapitre : le décret du 20 avril 1921 « instituant le repos hebdomadaire dans les établissements industriels et commerciaux » ; un décret de 1936 « instituant la semaine de 40 h. dans les établissements industriels et commerciaux » ; le décret du 9 mars 1944 « instituant les congés payés dans l'agriculture » ; deux décrets du 25 juillet 1946, l'un « relatif à la rémunération des heures supplémentaires », l'autre « portant refonte de la législation sur les congés payés dans le commerce, l'industrie et les professions libérales » ; le décret du 30 avril 1956 sur les conditions de rémunération et d'emploi des ouvriers agricoles ; la loi de 1963 sur les jours fériés.
+- **Les 40 heures, profession par profession.** En 1957, le gouvernement permet au ministre de fixer par arrêté « des conditions particulières d'application de la semaine de quarante heures, pour une profession ou un groupe de profession, dans une région, une localité ou un quartier déterminé » ([décret du 6 mai 1957](#r-mt-tt-1957)). En 1960, il abroge l'arrêté qui appliquait la semaine de 40 heures au bâtiment et aux travaux publics, dont la durée du travail est désormais « régie par les décrets » de 1936 et 1937 ([décret n° 60-189](#r-mt-tt-1960)).
+- **Les congés et les jours fériés.** En 1963, l'État permet de fractionner le congé payé ([loi n° 63-33](#r-mt-tt-1963-conges)) et fixe quatre fêtes « chômés et payés » : le 1^er^ mai, le 1^er^ juin, le 25 juillet et le 15 octobre ([loi n° 63-55](#r-mt-tt-1963-feries)).
+
+Le contenu du décret de 1936, de ses modificatifs et des décrets de 1944 et de 1946 n'est pas identifié ici ; la durée effectivement applicable de 1936 à 1966 n'est donc pas établie.
+
+<!-- RECHERCHE r-mt-protectorat-duree-conges : textes du Protectorat sur la semaine de quarante heures (1936-1938), les heures supplémentaires et les congés payés (1944, 1946, 1948) et le repos hebdomadaire (1921) (voir docs/recherches.yml) -->
+<!-- TODO (documentaliste) : date du décret de 1936 instituant la semaine de quarante heures — « 4 août 1936 » dans les décrets de 1957 et 1960, « 14 août 1936 » à l'art. 4 de la loi n° 66-27 (Q12). Ne pas écrire de lien avec la loi française du 21 juin 1936 sans source d'époque. -->
+
+:::: {.chronologie-repliable titre="Textes antérieurs au code du travail sur la durée, les congés payés et les jours fériés : abrogations, 40 heures, lois de 1963, 1921-1966"}
+
+| Date du texte | Portée | Texte et articles | Contenu |
+|---|---|---|---|
+| []{#r-mt-tt-abrogations}1921-1963 | antécédent | textes abrogés par la loi n° 66-27 [@loi66-27, art. 4, p. 716-717] | décret du 20 avril 1921 (repos hebdomadaire) ; décret de 1936 (semaine de 40 heures ; « 14 août 1936 » dans la liste, « 4 août 1936 » dans les décrets de 1957 et 1960) ; décret du 9 mars 1944 (congés payés dans l'agriculture) ; décrets du 25 juillet 1946 (heures supplémentaires ; congés payés), le second modifié par le décret du 19 juillet 1948 et la loi n° 63-33 ; décret du 30 avril 1956 (ouvriers agricoles) ; loi n° 63-55 (jours fériés) |
+| []{#r-mt-tt-1957}[6 mai 1957]{.insecable} | antécédent | décret du 6 mai 1957 [@decret-1957-05-06-quarante-heures, art. 1 et 2, p. 557] | pendant six mois, les arrêtés d'application du décret de 1936 peuvent être modifiés ; le ministre peut fixer par arrêté « des conditions particulières d'application de la semaine de quarante heures » par profession, région, localité ou quartier |
+| []{#r-mt-tt-1960}[24 mai 1960]{.insecable} | antécédent | décret n° 60-189 [@decret60-189, art. 1 et 2, p. 743] | abrogation de l'arrêté du 12 mars 1938 qui appliquait la semaine de 40 heures au bâtiment, aux travaux publics et à la fabrication des matériaux de construction ; durée « régie par les décrets » du 11 décembre 1936 et du 4 février 1937 |
+| []{#r-mt-tt-1963-conges}[4 novembre 1963]{.insecable} | antécédent | loi n° 63-33 [@loi63-33, p. 1562] | art. 4 du décret du 25 juillet 1946 remplacé : fractionnement du congé, dont une part continue de six jours ouvrables au plus |
+| []{#r-mt-tt-1963-feries}[30 décembre 1963]{.insecable} | antécédent | loi n° 63-55 [@loi63-55, art. 1, 2, 8 et 9, p. 1875] | 1^er^ mai, 1^er^ juin, 25 juillet, 15 octobre, jours « chômés et payés » ; pour 1963 seulement, 16 octobre et 13 décembre ; abrogation des décrets du 24 février 1949, du 12 juillet 1956 et du 26 janvier 1957 et de la loi n° 58-72 |
+
+: Les textes antérieurs au code du travail sur la durée et les congés, 1921-1966 {#tbl-mt-tt-antecedents}
+
+::::
+
+### Le code de 1966 {#sec-mt-tt-code-1966}
+
+Le code du travail, en vigueur le 1^er^ mai 1966, fixe la durée maximale du travail à 48 heures par semaine, permet de la réduire à 40 heures par décret, majore de 75 % l'heure faite au-delà, accorde un jour de congé payé par mois de travail et énumère les jours fériés payés ([loi n° 66-27](#r-mt-tt-loi-1966)).
+
+**Ce que la loi cherche.** Le code range ces règles dans son livre II, « L'exécution du travail », titre I, « Les conditions du travail », en quatre chapitres : « Durée du travail », « Le repos hebdomadaire », « Jours fériés chômés et payés », « Congés annuels payés ». Il ne leur donne qu'une phrase d'intention, à propos de la réduction de la durée : « Aucune diminution dans le niveau de vie des travailleurs ne peut résulter de l'application des décrets pris en application du présent article » ([art. 80](#r-mt-tt-duree-1966)).
+
+- **La durée.** La durée du travail effectif des activités non agricoles est de 48 heures par semaine « ou une limitation équivalente » sur une période d'un an au plus, et de 9 heures par jour ; un décret peut la ramener à 40 heures dans certaines branches ([art. 79 et 80](#r-mt-tt-duree-1966)). Des dérogations pour travaux urgents ou surcroît d'activité sont permises dans la limite de 100 heures par an, compensées en repos ([art. 83](#r-mt-tt-derogations-1966)) ; heures supplémentaires et récupérations comprises, la semaine ne dépasse pas 60 heures ([art. 93](#r-mt-tt-plafond-1966)).
+- **La majoration.** Dans le [régime](#g-regime-horaire) de 48 heures, toute heure au-delà « doit être majorée de soixante-quinze pour cent (75 %) » ; dans le régime de 40 heures, les huit premières heures supplémentaires de la semaine le sont de 25 % au moins, les suivantes de 50 % ([art. 90](#r-mt-tt-hs-1966)).
+
+Le code réunit cinq autres dispositifs, dont il reprend ou crée les règles :
+
+- le congé annuel d'un jour ouvrable par mois de travail, 12 jours ouvrables au plus, davantage pour les jeunes et avec l'ancienneté ([art. 113 à 121](#r-mt-tt-conge-1966) ; @sec-mt-tt-conge-annuel) ;
+- quatre jours fériés payés, repris de la loi de 1963 ([art. 107 et 445](#r-mt-tt-feries-1966) ; @sec-mt-tt-jours-feries) ;
+- un jour de congé au père à la naissance, avancé par l'employeur et remboursé par la caisse ([art. 122](#r-mt-tt-naissance-1966) ; @sec-mt-tt-conges-familiaux) ;
+- un régime agricole : 2 700 heures par an, majoration de 25 %, congé après six mois de services ([art. 88, 94 et 123](#r-mt-tt-agri-1966) ; @sec-mt-tt-agriculture) ;
+- un [repos hebdomadaire](#g-repos-hebdomadaire) de 24 heures consécutives ([art. 95 et 106](#r-mt-tt-repos-1966) ; @sec-mt-tt-repos-nuit).
+
+## Les grandes réformes {#sec-mt-tt-reformes}
+
+Trois réformes changent ces règles après 1966 : la convention collective cadre de 1973 ajoute à la loi des jours fériés, le maintien du salaire pendant le congé et des congés pour événements familiaux ; la loi de 1996 confie la réduction de la durée aux conventions, récrit la majoration des heures supplémentaires et crée le travail à temps partiel ; la loi de 2021 donne des règles de durée et de congé aux travailleurs domestiques (@tbl-mt-tt-reformes).
+
+### 1973 : la convention collective cadre ajoute à la loi {#sec-mt-tt-1973}
+
+Depuis le 1^er^ juin 1973, les salariés des activités non agricoles ont, par la convention collective cadre, plus de jours fériés payés que la loi n'en prévoit, leur salaire entier pendant le congé annuel et des congés payés pour la naissance, le mariage et les décès ; la durée du travail et la majoration restent celles du code.
+
+La convention cadre comme institution, sa négociation et son agrément sont présentés au chapitre des conventions collectives (@sec-mt-cadre-1973).
+
+**Ce que la convention cherche.** Son préambule vise « l'allongement des congés annuels payés, l'augmentation du nombre des jours fériés chômés et payés » ([convention collective cadre](#r-mt-tt-cc-1973)).
+
+<!-- TODO (documentaliste) : contexte d'époque de la convention cadre de 1973 (négociation UGTT-UTICA), dans les mots d'une source de 1973 (Q9). -->
+
+**Avant → après.**
+
+- **Les jours fériés.** Quatre jours, ceux de la loi → sept : les quatre jours légaux, l'Aïd Esseghir, l'Aïd El Kébir et le Mouled ; le travail un jour férié est majoré de 100 % ([art. 29](#r-mt-tt-feries-1973) ; @sec-mt-tt-jours-feries).
+- **Le congé annuel.** Indemnité de 1/24 de la rémunération de la période → « l'intégralité du traitement et des indemnités » pendant le congé ; la durée est renvoyée aux conventions particulières, à défaut à la loi ([art. 30](#r-mt-tt-conge-1973)).
+- **La durée, les heures supplémentaires, la nuit.** La convention renvoie à l'article 90 du code pour la majoration ([art. 27](#r-mt-tt-hs-1973)) et aux conventions de branche pour le travail de nuit ([art. 26](#r-mt-tt-nuit-1973)).
+
+**Ce qui naît.** Les congés pour événements familiaux : un jour ouvrable à la naissance, deux au mariage du salarié, un ou deux jours au décès d'un proche, salaire maintenu ([art. 31](#r-mt-tt-familiaux-1973) ; @sec-mt-tt-conges-familiaux).
+
+De 1973 à 1996, la liste des jours fériés change quatre fois. L'avenant n° 1 à la convention cadre porte les jours fériés conventionnels à neuf et allonge les congés familiaux, à compter du 17 novembre 1984 ; la loi fait entrer les deux Aïd dans la liste légale et en retire deux fêtes en 1988, puis ajoute le 7 novembre en 1991 ; l'avenant n° 2 aligne en 1992 la liste conventionnelle sur la liste légale (@sec-mt-tt-jours-feries).
+
+### 1996 : la réduction de la durée par convention ; le temps partiel {#sec-mt-tt-1996}
+
+Depuis le 31 juillet 1996, la durée du travail peut être ramenée jusqu'à 40 heures par convention collective ou par texte réglementaire, et non plus seulement par décret ; la majoration se calcule sur le salaire de base horaire, et dans les régimes de moins de 48 heures elle est de 25 % jusqu'à 48 heures et de 50 % au-delà. Le travail à temps partiel reçoit ses règles. La durée maximale de 48 heures et la majoration de 75 % ne changent pas.
+
+**Ce que la loi cherche.** Sous un intitulé général, « portant modification de certaines dispositions du Code du Travail », la [loi n° 96-62](#r-mt-tt-loi-1996) récrit les articles du chapitre « Durée du travail » sans exposé de motifs ; elle ajoute à ce chapitre une section intitulée « travail à temps partiel » ([art. 3](#r-mt-tt-tp-1996)). La règle de la durée s'écrit : réductible « par les conventions collectives ou par des textes réglementaires », après consultation, sans descendre sous 40 heures ([art. 79](#r-mt-tt-duree-1996)).
+
+<!-- TODO (documentaliste) : contexte d'époque de la loi n° 96-62 dans les mots d'une source de 1996 — débats de la Chambre des députés (séance du 25 juin 1996), IXe Plan (Q9). -->
+
+**Avant → après.**
+
+- **La réduction de la durée.** « Par décret à quarante heures » dans certaines branches → « par les conventions collectives ou par des textes réglementaires », après consultation des organisations les plus représentatives, sans descendre sous 40 heures ; les articles 80 et 81 sont abrogés ([art. 79 et art. 5](#r-mt-tt-duree-1996)).
+- **La majoration du régime de 48 heures.** 75 %, sans assiette nommée → 75 % « par référence au salaire de base horaire » ([art. 90](#r-mt-tt-hs-1996)).
+- **La majoration des régimes plus courts.** Régime de 40 heures : 25 % pour les huit premières heures supplémentaires de la semaine, 50 % au-delà → tout régime de moins de 48 heures : 25 % jusqu'à 48 heures, 50 % au-delà ([art. 90](#r-mt-tt-hs-1996)). Pour un régime de 40 heures, le résultat est le même, huit heures menant à 48 ; dans un régime de 42 ou de 45 heures, le taux de 25 % s'arrête désormais à 48 heures.
+- **La durée de présence et les dérogations.** Durée de présence fixée par arrêté sans plafond → 64 heures au plus ([art. 82](#r-mt-tt-presence-1996)) ; dérogations de 100 heures par an au plus → autorisées par l'inspection du travail et compensées, sans plafond écrit ([art. 83](#r-mt-tt-derogations-1996)).
+
+<!-- TODO (documentaliste) : la limite de 9 heures par jour n'est plus écrite à l'art. 79 nouveau ; vérifier si elle subsiste ailleurs (Q13). Ne rien écrire d'ici là. -->
+
+La même loi récrit les règles du congé annuel — indemnité égale au salaire et aux indemnités habituels, mois de travail de 26 jours ouvrables, année de référence ouverte au 1^er^ janvier, âge apprécié au 31 décembre ([art. 113 à 119](#r-mt-tt-conge-1996) ; @sec-mt-tt-conge-annuel) —, renvoie la fixation des jours fériés à un décret ou aux conventions ([art. 107](#r-mt-tt-feries-1996)), interdit les heures supplémentaires aux moins de 18 ans ([art. 63-2](#r-mt-tt-mineurs-1996)) et le travail de nuit aux femmes et aux moins de 18 ans ([art. 66](#r-mt-tt-nuit-1996)).
+
+**Ce qui naît.** Le travail à temps partiel : sa durée ne dépasse pas 70 % de la durée normale de l'entreprise, et ses heures supplémentaires, au plus le tiers de la durée du contrat, sont majorées de 50 % ([art. 90, 94-2 et 94-6](#r-mt-tt-tp-1996) ; @sec-mt-tt-temps-partiel).
+
+De 1996 à 2021, le 7 novembre fait place au 14 janvier dans la liste légale des jours fériés en 2011, sans que leur nombre change ; la convention cadre du secteur agricole de 2015 fixe sept jours fériés et des congés familiaux pour l'agriculture (@sec-mt-tt-jours-feries, @sec-mt-tt-agriculture). Du 14 avril 2020 à la levée du confinement total, pendant l'épidémie de Covid-19, l'employeur peut accorder le congé annuel à tous ses salariés ou à certains d'entre eux, au titre de l'année écoulée ou de l'année en cours ([décret-loi n° 2020-2](#r-mt-tt-conge-2020) ; @sec-mt-tt-conge-annuel).
+
+### 2021 : le travail domestique {#sec-mt-tt-2021}
+
+Depuis le 30 janvier 2022, le travailleur domestique d'un employeur unique travaille au plus 48 heures par semaine et 10 heures par jour, heures supplémentaires comprises ; il a un congé annuel d'un jour par mois et des congés pour événements familiaux propres.
+
+**Ce que la loi cherche.** La [loi n° 2021-37](#r-mt-tt-loi-2021), « relative à la réglementation du travail domestique », a pour objet de « réglementer le travail domestique de manière à garantir le droit au travail décent sans discrimination et dans le respect de la dignité humaine des travailleuses et travailleurs domestiques, conformément à la Constitution et aux conventions internationales ratifiées » ([art. 1^er^](#r-mt-tt-loi-2021)).
+
+<!-- TODO (documentaliste) : contexte d'époque de la loi n° 2021-37 (débats de l'ARP, séance du 30 juin 2021) ; rien sur la convention n° 189 de l'OIT sans une source qui le dise (Q9). -->
+
+**Avant → après.** Loi du 1^er^ juillet 1965 relative à la situation des employés de maison, abrogée ([art. 30](#r-mt-tt-loi-2021)) → 48 heures par semaine, 10 heures par jour heures supplémentaires comprises, une heure de pause chez un employeur unique ; 8 heures par jour, 10 avec les heures supplémentaires, chez plusieurs employeurs ([art. 13 et 19](#r-mt-tt-dom-duree)) ; congé annuel d'un jour par mois ([art. 14](#r-mt-tt-dom-conge)) ; congés pour événements familiaux ([art. 15](#r-mt-tt-dom-familiaux)).
+
+<!-- TODO (documentaliste) : lire la loi n° 65-25 du 1er juillet 1965 relative à la situation des employés de maison (durée, congé, jours fériés), antécédent abrogé par la loi n° 2021-37, art. 30. -->
+
+**Ce qui naît.** Le régime du travail domestique (@sec-mt-tt-domestique).
+
+Après 2021, le 14 janvier fait place au 17 décembre dans la liste légale, à compter du 15 décembre 2021 ([décret-loi n° 2021-11](#r-mt-tt-feries-2021)) ; le congé du père à la naissance passe d'un jour à sept le 13 août 2024 ([loi n° 2024-44](#r-mt-tt-paternite-2024) ; @sec-mt-tt-conges-familiaux) ; la loi n° 2025-9 récrit l'alinéa qui définit le temps partiel sans changer la limite de 70 % ([24 mai 2025](#r-mt-tt-tp-2025)).
+
+### Les textes, élément par élément {#sec-mt-tt-registres}
+
+Les trois blocs qui suivent donnent les lois et accords de réforme, puis, pour la durée et pour les heures supplémentaires, tous les textes dans l'ordre des dates.
+
+:::: {.chronologie-repliable titre="Lois et accords de réforme de la durée du travail et des congés : intitulés, rubriques et dates d'effet, 1966-2022"}
+
+| Effet | Portée | Texte | Intitulé, rubriques et date d'effet |
+|---|---|---|---|
+| []{#r-mt-tt-loi-1966}[1^er^ mai 1966]{.insecable} | mise en place | loi n° 66-27 du 30 avril 1966, code du travail [@loi66-27, art. 1^er^, p. 716] | « entrera en vigueur le 1er mai 1966 », date antérieure à la publication (JORT n° 20, 21 et 22 de mai 1966) ; livre II, « L'exécution du travail », titre I, « Les conditions du travail » : chapitre VI, « Durée du travail » (art. 79 à 94), chapitre VII, « Le repos hebdomadaire » (art. 95 à 106), chapitre VIII, « Jours fériés chômés et payés » (art. 107 à 111), chapitre IX, « Congés annuels payés » (art. 112 à 124) ; livre VII, chapitre XX, « Jours fériés chômés et payés » (art. 445 et 446) |
+| []{#r-mt-tt-cc-1973}[1^er^ juin 1973]{.insecable} | grande réforme | convention collective cadre, rendue obligatoire par arrêté du 29 mai 1973 [@arrete-1973-05-29-convention-cadre, préambule et art. 24 à 36, p. 853 et 855-856] | préambule : « l'allongement des congés annuels payés, l'augmentation du nombre des jours fériés chômés et payés » ; activités non agricoles |
+| []{#r-mt-tt-loi-1996}[31 juillet 1996]{.insecable} | **rupture** | loi n° 96-62 du 15 juillet 1996 [@loi96-62, art. 1^er^, 3 et 5, p. 1579 et 1588] | « portant modification de certaines dispositions du Code du Travail » ; aucune rubrique pour les articles modifiés ; section « travail à temps partiel » ajoutée au chapitre VI (art. 94-2 à 94-14) ; exécutoire cinq jours après le dépôt du JORT n° 59 au siège du gouvernorat de Tunis, le 26 juillet 1996, jour du dépôt non compté (loi n° 93-64, art. 2) |
+| []{#r-mt-tt-loi-2021}[30 janvier 2022]{.insecable} | grande réforme | loi n° 2021-37 du 16 juillet 2021 [@loi2021-37, art. 1^er^, 3, 4, 29 et 30, p. 2006 et 2010] | « relative à la réglementation du travail domestique » ; objet (art. 1^er^) ; champ : toute personne qui accomplit, « d'une manière continue et habituelle, des travaux liés au domicile ou à la famille », pour un ou plusieurs employeurs (art. 3) ; code du travail applicable sauf contrariété (art. 4) ; en vigueur « six mois après » la publication au JORT n° 68 du 30 juillet 2021 (art. 29) ; abrogation de la loi n° 65-25 du 1^er^ juillet 1965 (art. 30) |
+
+: Les lois et accords de réforme de la durée du travail et des congés, 1966-2022 {#tbl-mt-tt-lois}
+
+<!-- TODO (documentaliste) : date d'effet de la loi n° 2021-37 calculée (six mois après la publication du 30 juillet 2021) : confirmer le jour retenu (30 janvier 2022). -->
+
+::::
+
+:::: {.chronologie-repliable titre="Durée maximale du travail et régimes horaires (48 et 40 heures) : durée, présence, dérogations, plafond, textes date par date, 1966-2022"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-tt-duree-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 79 et 80, p. 760] | régime de 40 heures du décret de 1936 → 48 heures par semaine « ou une limitation équivalente » sur un an au plus, 9 heures par jour ; durée « peut être ramenée par décret à quarante heures » dans certaines branches ; « Aucune diminution dans le niveau de vie des travailleurs ne peut résulter de l'application des décrets pris en application du présent article » |
+| []{#r-mt-tt-presence-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 82, p. 760] | durée de présence supérieure à 48 heures fixée par arrêté, sans plafond |
+| []{#r-mt-tt-derogations-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 83, p. 760] | travaux urgents ou surcroît : 100 heures par an au plus, compensées en repos dans l'année ; 10 heures par jour |
+| []{#r-mt-tt-plafond-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 93, p. 761] | 60 heures par semaine au plus, heures supplémentaires et récupérations comprises |
+| []{#r-mt-tt-duree-1996}[31 juillet 1996]{.insecable} | **rupture** (1996) | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 79) et art. 5, p. 1582 et 1588] | réduction « par décret à quarante heures » → « par les conventions collectives ou par des textes réglementaires », après consultation, plancher de 40 heures ; art. 80 et 81 abrogés |
+| []{#r-mt-tt-presence-1996}[31 juillet 1996]{.insecable} | étape (1996) | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 82), p. 1582] | durée de présence sans plafond → 64 heures au plus, par arrêté |
+| []{#r-mt-tt-derogations-1996}[31 juillet 1996]{.insecable} | étape (1996) | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 83), p. 1582-1583] | dérogations de 100 heures par an au plus → autorisées par l'inspection du travail et compensées, plafond annuel non écrit ; 10 heures par jour |
+| []{#r-mt-tt-dom-duree}[30 janvier 2022]{.insecable} | étape (2022) | loi n° 2021-37 [@loi2021-37, art. 13 et 19, p. 2007-2008] | travail domestique : 48 heures par semaine ; employeur unique : 10 heures par jour heures supplémentaires comprises, pause d'une heure ; plusieurs employeurs : 8 heures par jour, 10 avec les heures supplémentaires |
+
+: La durée du travail, texte par texte, 1966-2022 {#tbl-mt-tt-duree-textes}
+
+::::
+
+:::: {.chronologie-repliable titre="Heures supplémentaires : taux de majoration (75 %, 25 %, 50 %), assiette, récupérations, textes date par date, 1966-2020"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-tt-hs-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 90, p. 761] | régime de 48 heures : « toute heure de travail effectuée au delà de cette durée doit être majorée de soixante-quinze pour cent (75 %) », assiette non nommée ; régime de 40 heures : au moins 25 % « du salaire horaire » pour chacune des huit premières heures supplémentaires de la semaine, 50 % au-delà |
+| []{#r-mt-tt-recup-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 92, p. 761] | heures perdues par interruption collective, récupérées dans les deux mois, payées au taux normal |
+| []{#r-mt-tt-hs-1973}[1^er^ juin 1973]{.insecable} | ajustement | convention collective cadre [@arrete-1973-05-29-convention-cadre, art. 27, p. 855] | renvoi à l'art. 90 du code, sans taux propre |
+| []{#r-mt-tt-hs-1974}[1^er^ juin 1974]{.insecable} | ajustement | convention collective du textile [@convention-textile-1974, art. 24, p. 2717] | renvoi à l'art. 90 du code (exemple de branche) |
+| []{#r-mt-tt-hs-1984}[17 novembre 1984]{.insecable} | ajustement | avenant n° 1 à la convention cadre [@arrete-1985-02-07-convention-cadre-avenant1, art. 27 (nouveau), p. 254] | renvoi à la législation |
+| []{#r-mt-tt-hs-1996}[31 juillet 1996]{.insecable} | **rupture** (1996) | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 90), p. 1583] | 75 % « par référence au salaire de base horaire » ; régimes de moins de 48 heures : 25 % « jusqu'à 48 heures », 50 % au-delà ; temps partiel : 50 % |
+| []{#r-mt-tt-mineurs-1996}[31 juillet 1996]{.insecable} | étape (1996) | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 63-2), p. 1581] | moins de 18 ans : aucune heure supplémentaire au-delà de leur durée normale |
+| []{#r-mt-tt-hs-2015}[1^er^ décembre 2015]{.insecable} | ajustement | convention collective cadre du secteur agricole [@arrete-2015-11-17-convention-cadre-agricole, art. 12, p. 3250 (éd. ar.)] | heures « au-delà de la durée légale journalière », renvoi à la législation |
+| []{#r-mt-tt-recup-2020}[14 avril 2020]{.insecable} | ajustement | code du travail [@loi66-27, art. 92, p. 761] ; décret-loi n° 2020-2 du 14 avril 2020 [@decret-loi2020-2, art. 3, 5 et 6, p. 768] | premier alinéa de l'art. 92 suspendu et remplacé : récupération dans les deux mois → « dans les six mois suivant l'interruption du travail » ; mesure exceptée du terme de la levée du confinement (art. 5), sans terme dans le texte ; en vigueur « à compter de la date de sa publication » (art. 6) |
+
+: Les heures supplémentaires, texte par texte, 1966-2020 {#tbl-mt-tt-hs-textes}
+
+::::
+
+## Le droit au 1^er^ janvier 2026 {#sec-mt-tt-etat-du-droit}
+
+Au 1^er^ janvier 2026, le salarié non agricole travaille au plus 48 heures par semaine, chaque heure au-delà étant majorée de 75 % du salaire de base horaire ; il a droit à un jour de congé par mois de travail, à six jours fériés payés par la loi et à neuf par la convention collective cadre.
+
+### La durée et les heures supplémentaires {#sec-mt-tt-duree}
+
+Les montants du salaire minimum de chaque régime horaire sont au chapitre du salaire minimum (@sec-mt-regimes-horaires).
+
+La [durée du travail](#g-duree-legale-travail) est de 48 heures par semaine ; elle peut être ramenée jusqu'à 40 heures par une convention collective ou un texte réglementaire, comme elle pouvait l'être par décret de 1966 à 1996 ([art. 79](#r-mt-tt-duree-1996)). Les décrets pris de 1966 à 1996 et les textes réglementaires pris depuis pour réduire la durée ne sont pas identifiés ici ; la liste des branches qui relèvent du [régime](#g-regime-horaire) de 40 heures n'est donc pas établie.
+
+<!-- RECHERCHE r-mt-duree-40h-decrets : décrets de l'art. 80 du code du travail (1966-1996) et textes de l'art. 79 nouveau (depuis 1996) ramenant la durée du travail à 40 heures (voir docs/recherches.yml) -->
+<!-- TODO (documentaliste) : part des salariés de chaque régime horaire ; piste : la convention révisée des assurances fixe le salaire « pour 40 heures par semaine » (art. 30, r-cc-assurances-1983), à confirmer (Q8). -->
+
+**La rémunération des [heures supplémentaires](#g-heures-supplementaires), en formule.** Pour un salarié qui fait $h$ heures dans la semaine, dans un régime de durée normale $\bar h$, avec une durée maximale $H$ et un salaire de base horaire $w$, la rémunération $S$ des heures faites au-delà de $\bar h$ s'écrit :
+
+$$
+S = \left(\min(h, H) - \bar h\right)^{+} w \left(1 + \tau_1\right) + \left(h - H\right)^{+} w \left(1 + \tau_2\right)
+$$
+
+où $\tau_1$ est le taux de majoration des heures comprises entre $\bar h$ et $H$, et $\tau_2$ celui des heures au-delà de $H$ ; $x^{+}$ vaut $x$ s'il est positif, zéro sinon. Depuis le 1^er^ mai 1966, $H = 48$ heures. Dans le régime de 48 heures, $\bar h = H$ et $\tau_2 = 75\,\%$ ; dans un régime plus court, depuis le 31 juillet 1996, $\tau_1 = 25\,\%$ et $\tau_2 = 50\,\%$ ([art. 90](#r-mt-tt-hs-1996) ; @tbl-mt-tt-parametres). De 1966 à 1996, dans le régime de 40 heures, le taux de 25 % valait pour les huit premières heures supplémentaires de la semaine ([art. 90](#r-mt-tt-hs-1966)). Le salarié à temps partiel dont le contrat prévoit $h_c$ heures par semaine est payé $\left(h - h_c\right)^{+} w \left(1 + \tau_p\right)$ pour ses heures au-delà, où $\tau_p$ est le taux de majoration du temps partiel : $\tau_p = 50\,\%$ depuis 1996 ([art. 90 et 94-6](#r-mt-tt-tp-1996)).
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré (aucune de ces grandeurs n'est encore versée ; ligne de docs/notes/backlog-modele.md du 20/10/2026). -->
+
+| Règle | Valeur au [1^er^ janvier 2026]{.insecable} | Texte | Population couverte |
+|:---|:---|:---|:---|
+| Durée maximale | 48 heures par semaine, réductible jusqu'à 40 heures | [art. 79](#r-mt-tt-duree-1996) | salariés non agricoles régis par le code |
+| Plafond hebdomadaire | 60 heures, heures supplémentaires comprises | [art. 93](#r-mt-tt-plafond-1966) | idem |
+| Majoration<br>(régime de 48 heures) | 75 % du salaire de base horaire | [art. 90](#r-mt-tt-hs-1996) | idem |
+| Majoration<br>(régimes plus courts) | 25 % jusqu'à 48 heures, 50 % au-delà | [art. 90](#r-mt-tt-hs-1996) | salariés des branches à durée réduite |
+| Majoration<br>(temps partiel) | 50 % | [art. 90 et 94-6](#r-mt-tt-tp-1996) | salariés à temps partiel |
+| Durée et majoration<br>(agriculture) | 2 700 heures par an ; 25 % | [art. 88 et 94](#r-mt-tt-agri-1966) | salariés agricoles |
+| Congé annuel<br>(adultes) | 1 jour ouvrable par mois, 12 jours ouvrables au plus | [art. 113](#r-mt-tt-conge-1996) | salariés régis par le code |
+| Congé annuel<br>(moins de 18 ans ; 18 à 20 ans) | 2 jours par mois, 24 jours ouvrables au plus ; 1,5 jour, 18 au plus | [art. 113](#r-mt-tt-conge-1996) | idem |
+| Congé d'ancienneté | 1 jour ouvrable par cinq ans, 18 jours ouvrables au plus au total | [art. 115](#r-mt-tt-conge-1966) | idem |
+| Indemnité de congé | salaire et indemnités habituels | [art. 119](#r-mt-tt-conge-1996) | idem |
+| Jours fériés payés<br>(loi) | 6 : 17 décembre, 20 mars, 1^er^ mai, 25 juillet, Aïd El Fitr, Aïd El Idha | [art. 445](#r-mt-tt-feries-2021) | idem |
+| Jours fériés payés<br>(convention cadre) | 9 | [avenant n° 2](#r-mt-tt-feries-1992) | salariés couverts par la convention cadre (@sec-mt-cc-couverture) |
+| Jour férié travaillé | code : indemnité égale au salaire, en plus du salaire, dans les activités continues ; convention cadre : majoration de 100 % | [art. 109](#r-mt-tt-feries-paiement) ; [art. 29](#r-mt-tt-feries-1973) | salariés des activités continues ; salariés couverts par la convention cadre |
+| Congé de paternité | 7 jours | [loi n° 2024-44](#r-mt-tt-paternite-2024) | salariés affiliés à la caisse (@sec-mt-tt-conges-familiaux) |
+| Travail domestique | employeur unique : 48 heures par semaine, 10 heures par jour ; 1 jour de congé par mois | [art. 13 et 19](#r-mt-tt-dom-duree) ; [art. 14](#r-mt-tt-dom-conge) | travailleurs domestiques |
+
+: Les règles de la durée du travail et des congés au 1^er^ janvier 2026, et ceux qu'elles couvrent {#tbl-mt-tt-etat-du-droit}
+
+Ces règles ne valent que pour les salariés qui relèvent du code ou de la loi de 2021 et dont l'emploi est déclaré ; l'[emploi informel](#g-emploi-informel) est défini au chapitre des notions (@sec-mt-notions-informel).
+
+<!-- TODO (documentaliste) : effectifs de salariés agricoles, non agricoles et domestiques, pour chiffrer la colonne « Population couverte » (Q16). -->
+
+La durée du travail, les heures supplémentaires et le congé annuel sont dans leur rédaction de 1996, la liste légale des jours fériés dans celle de décembre 2021 ; aucun autre texte qui les modifie n'est identifié ici, hors les mesures de 2020 sur la récupération des heures perdues et sur le congé annuel, le régime du travail domestique de 2021, le congé de paternité de 2024 et la loi n° 2025-9 sur le temps partiel.
+
+<!-- RECHERCHE r-mt-tt-modif-apres-1996 : texte modifiant, après la loi n° 96-62, les articles 79 à 124 ou 445 du code du travail, autre que les textes cités au chapitre (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : rectificatif éventuel de la loi n° 96-62, non cherché (note documentaire, § 6). -->
+
+### Ce que les conventions ajoutent à la loi {#sec-mt-tt-conventions}
+
+La loi fixe des minimums : la convention collective cadre et les conventions de branche peuvent accorder davantage ([art. 29 et 30](#r-mt-tt-conge-1973)). Le @tbl-mt-tt-conventions compare la loi, la convention cadre des activités non agricoles, la convention cadre du secteur agricole et une convention de branche, celle du textile, dans sa rédaction de 1974.
+
+| Objet | Loi | Convention cadre<br>(1973, avenants de 1984 et 1992) | Convention cadre agricole<br>(2015) | Textile<br>(1974) |
+|:---|:---|:---|:---|:---|
+| Jours fériés payés | 6 ([art. 445](#r-mt-tt-feries-2021)) | 9 ([avenant n° 2](#r-mt-tt-feries-1992)) | 7 ([art. 29](#r-mt-tt-feries-2015)) | 7 ([art. 26](#r-mt-tt-feries-1974)) |
+| Jour férié travaillé | activités continues : indemnité égale au salaire, en plus du salaire ([art. 109](#r-mt-tt-feries-paiement)) | + 100 % ([art. 29](#r-mt-tt-feries-1973)) | + 100 % ([art. 29](#r-mt-tt-feries-2015)) | + 100 % ([art. 22 à 28](#r-mt-tt-feries-1974)) |
+| Congé annuel | 1 jour par mois, 12 jours ouvrables ([art. 113](#r-mt-tt-conge-1996)) | renvoi aux branches ; traitement intégral ([art. 30](#r-mt-tt-conge-1973)) | selon la législation ([art. 24](#r-mt-tt-conge-2015)) | 1,5 jour par mois, 18 jours ouvrables, ancienneté en sus ([art. 27](#r-mt-tt-conge-1974)) |
+| Naissance | 7 jours depuis 2024 ([loi n° 2024-44](#r-mt-tt-paternite-2024)) | 2 jours ouvrables ([art. 31](#r-mt-tt-familiaux-1984)) | 2 jours ([art. 25](#r-mt-tt-familiaux-2015)) | 1 jour ouvrable ([art. 22 à 28](#r-mt-tt-familiaux-1974)) |
+| Heures supplémentaires | 75 % ; 25 % puis 50 % ([art. 90](#r-mt-tt-hs-1996)) | renvoi à la législation ([art. 27](#r-mt-tt-hs-1984)) | renvoi à la législation ([art. 12](#r-mt-tt-hs-2015)) | renvoi à l'art. 90 ([art. 24](#r-mt-tt-hs-1974)) |
+| Travail de nuit | aucune majoration | renvoi aux branches ([art. 26](#r-mt-tt-nuit-1973)) | — | + 25 % pour la nuit permanente ([art. 23](#r-mt-tt-nuit-1974)) |
+
+: Ce que les conventions ajoutent à la loi : jours fériés, congés, naissance, heures supplémentaires et nuit {#tbl-mt-tt-conventions}
+
+Un tiret signale un objet que la convention ne règle pas. La colonne du textile donne le texte d'origine de la convention, sans ses avenants.
+
+<!-- TODO (documentaliste) : relire les art. 22 à 28 de la convention du textile sur un meilleur exemplaire et dépouiller ses avenants (Q11) ; article exact de la majoration du jour férié travaillé et du congé de naissance. -->
+
+La liste conventionnelle en vigueur est celle de l'avenant n° 2, signé le 15 octobre 1992 : le 20 mars, le 1^er^ mai, le 25 juillet, le 7 novembre, le Mouled et deux jours pour chacun des deux Aïd ([avenant n° 2](#r-mt-tt-feries-1992)).
+
+<!-- TODO (documentaliste) : application de la liste de 1992, qui nomme le 7 novembre, depuis le changement de la liste légale en 2011 (14 janvier, puis 17 décembre) ; ne rien déduire d'ici là (Q7). -->
+
+- **Le légal, minimum ; le conventionnel, en sus.** La convention cadre ajoute trois jours fériés à la liste légale et le maintien du traitement pendant le congé ; une convention de branche comme celle du textile ajoute encore une demi-journée de congé par mois.
+- **L'agriculture garde un régime annuel** et sa propre convention cadre depuis 2015 (@sec-mt-tt-agriculture).
+- **Le temps partiel et le travail domestique ont leurs règles** (@sec-mt-tt-temps-partiel, @sec-mt-tt-domestique).
+
+## Le congé annuel payé {#sec-mt-tt-conge-annuel}
+
+Né du code de 1966, qui remplace des décrets de 1944 et de 1946, le [congé annuel payé](#g-conge-annuel-paye) vaut un jour ouvrable par mois de travail effectif chez le même employeur, dans la limite de 12 jours ouvrables (15 jours), davantage pour les moins de 21 ans, plus un jour ouvrable par cinq ans d'ancienneté, dans la limite de 18 jours ouvrables ; depuis 1996, il est payé au salaire habituel.
+
+**Le congé, en formule.** Le nombre de jours de congé $c$ d'un salarié qui a travaillé $m$ mois dans l'année de référence s'écrit $c = \min(m\,j,\ \bar c)$, où $j$ est le nombre de jours par mois et $\bar c$ le plafond, en jours ouvrables. Depuis 1966, $j = 1$ et $\bar c = 12$ pour les adultes ; $j = 2$ et $\bar c = 24$ pour les moins de 18 ans ; $j = 1{,}5$ et $\bar c = 18$ de 18 à 20 ans (@tbl-mt-tt-conge ; [art. 113](#r-mt-tt-conge-1966)).
+
+| Âge | Jours par mois | Plafond<br>(jours ouvrables) | Plafond<br>(jours) | Âge apprécié au |
+|:---|:---|:---|:---|:---|
+| Moins de 18 ans | 2 | 24 | 30 | 31 mai (1966) → 31 décembre (1996) |
+| 18 à 20 ans | 1,5 | 18 | 22 | 31 mai (1966) → 31 décembre (1996) |
+| 21 ans et plus | 1 | 12 | 15 | — |
+
+: Le congé annuel selon l'âge, 1966 et 1996 {#tbl-mt-tt-conge}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces grandeurs seront versées (ligne de docs/notes/backlog-modele.md du 20/10/2026). -->
+
+- **L'indemnité.** De 1966 à 1996, elle vaut 1/24 de la rémunération de la période de référence — 1/12 pour les moins de 18 ans, 1/16 de 18 à 21 ans —, sans être inférieure au salaire qu'aurait perçu le salarié ([art. 119](#r-mt-tt-conge-1966)) ; depuis 1996, elle est égale au « salaire et indemnités qu'il percevait habituellement pendant l'exercice effectif du travail » ([art. 119](#r-mt-tt-conge-1996)). La convention cadre accorde depuis 1973 « l'intégralité du traitement et des indemnités » ([art. 30](#r-mt-tt-conge-1973)).
+- **Le mois et l'année de référence.** Le mois de travail effectif, de quatre semaines ou 24 jours de travail en 1966, est de 26 jours ouvrables depuis 1996 ; l'année de référence, ouverte au 1^er^ juin, l'est au 1^er^ janvier depuis 1996 ([art. 114 et 116](#r-mt-tt-conge-1996)).
+- **La caisse dans certaines activités.** Dans les activités discontinues, l'employeur cotise à la caisse de sécurité sociale, qui sert les indemnités de congé ; ailleurs, la caisse rembourse la moitié de l'indemnité des moins de 18 ans et le tiers de celle des 18 à 20 ans ([art. 121](#r-mt-tt-cnss-1966)). L'arrêté qui fixe les taux de ces cotisations n'est pas identifié ici ; leur montant n'est donc pas établi.
+- **À la rupture.** Le salarié qui quitte l'entreprise reçoit une [indemnité compensatrice](#g-indemnite-compensatrice-conge) pour la fraction de congé non prise, sauf faute lourde ([art. 120](#r-mt-tt-compensatrice-1966)).
+
+<!-- RECHERCHE r-mt-art121-cotisations-conges : arrêté fixant les taux et modalités des cotisations des employeurs à la CNSS pour les congés payés des activités discontinues (code du travail, art. 121) (voir docs/recherches.yml) -->
+
+Aucune rupture n'a changé le congé depuis 1966 : la loi de 1996 en récrit l'indemnité, le mois de travail et l'année de référence, sans toucher la durée. En 2020, pendant l'épidémie de Covid-19, l'employeur peut accorder le congé à tous les salariés ou à certains d'entre eux, au titre de l'année écoulée ou de l'année en cours, jusqu'à la levée du confinement total ([décret-loi n° 2020-2](#r-mt-tt-conge-2020)).
+
+<!-- TODO (documentaliste) : date de la levée du confinement total (décret gouvernemental n° 2020-411, 3 juillet 2020 selon le chapitre de la rupture du contrat, non relu ici) et clé correspondante. -->
+
+:::: {.chronologie-repliable titre="Congé annuel payé : jours par mois, plafonds, indemnité de congé et année de référence, textes date par date, 1963-2022"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-tt-conge-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 113 à 116 et 119, p. 763-764] | décrets de 1944 et 1946 → un mois de travail effectif chez le même employeur ouvre le droit ; 1 jour par mois, au plus 15 jours dont 12 ouvrables ; moins de 18 ans : 2 jours par mois, 30 jours dont 24 ouvrables ; « dix-huit à vingt-et-un ans » : 1,5 jour, 22 jours dont 18 ouvrables ; âge au 31 mai ; mois de travail = 4 semaines ou 24 jours ; ancienneté : + 1 jour ouvrable par cinq ans, 18 jours ouvrables au plus, non cumulable avec les avantages conventionnels (art. 115) ; année de référence au 1^er^ juin (1^er^ avril pour les professions de l'art. 121) ; indemnité de 1/24 de la rémunération de la période (1/12 ; 1/16), au moins le salaire qu'aurait perçu le salarié (art. 119) |
+| []{#r-mt-tt-conge-1966-rectif}[1^er^ mai 1966]{.insecable} | ajustement | rectificatif au code du travail [@loi66-27, art. 113, al. 2 ; JORT n° 37 de 1966, p. 1298] | art. 113, al. 2 : « dix-huit à vingt-et-un ans » → « dix-huit à vingt ans » ; l'art. 119, non rectifié, dit encore « dix huit à vingt et un ans » |
+| []{#r-mt-tt-compensatrice-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 120, p. 764] | indemnité compensatrice due pour la fraction de congé non prise, sauf faute lourde du salarié |
+| []{#r-mt-tt-cnss-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 121, p. 764] | activités discontinues : cotisations patronales et service des indemnités par la caisse de sécurité sociale, taux par arrêté ; ailleurs, la caisse rembourse la moitié de l'indemnité des moins de 18 ans et le tiers de celle des 18 à 20 ans |
+| []{#r-mt-tt-conge-1973}[1^er^ juin 1973]{.insecable} | étape (1973) | convention collective cadre [@arrete-1973-05-29-convention-cadre, art. 29 et 30, p. 855-856] | durée « fixée dans les conventions collectives particulières et à défaut selon la législation » ; pendant le congé, « l'intégralité du traitement et des indemnités » ; article non modifié par les avenants n° 1 à 3 |
+| []{#r-mt-tt-conge-1974}[1^er^ juin 1974]{.insecable} | ajustement | convention collective du textile [@convention-textile-1974, art. 27, p. 2717] | 1,5 jour par mois, au plus 22 jours soit 18 ouvrables, « nonobstant les congés supplémentaires pour ancienneté » ; maintien du traitement et des indemnités |
+| []{#r-mt-tt-conge-1996}[31 juillet 1996]{.insecable} | étape (1996) | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 113, 114, 116, 117 et 119), p. 1584-1585] | droit de base inchangé ; âge au 31 mai → au 31 décembre ; mois de travail → 26 jours ouvrables ; année de référence → 1^er^ janvier ; indemnité → « le salaire et indemnités qu'il percevait habituellement pendant l'exercice effectif du travail » |
+| []{#r-mt-tt-conge-2015}[1^er^ décembre 2015]{.insecable} | ajustement | convention collective cadre du secteur agricole [@arrete-2015-11-17-convention-cadre-agricole, art. 24, p. 3251 (éd. ar.)] | congé annuel payé « selon la législation en vigueur » ; dispositions plus favorables possibles par convention de branche |
+| []{#r-mt-tt-conge-2020}[14 avril 2020]{.insecable} | ajustement temporaire | code du travail [@loi66-27, art. 117] ; décret-loi n° 2020-2 du 14 avril 2020 [@decret-loi2020-2, art. 4 à 6, p. 768] | premier alinéa de l'art. 117 suspendu et remplacé : « l'employeur peut accorder un congé annuel à tous les employés ou à certains d'entre eux au titre de l'année écoulée ou de l'année en cours » ; jusqu'à la levée du confinement total par décret gouvernemental (art. 5) ; en vigueur « à compter de la date de sa publication » (art. 6) |
+| []{#r-mt-tt-dom-conge}[30 janvier 2022]{.insecable} | étape (2022) | loi n° 2021-37 [@loi2021-37, art. 14, p. 2007] | travail domestique : 1 jour par mois de travail effectif, au plus 15 jours dont 12 ouvrés ; 18 à 20 ans : 1,5 jour, au plus 22 jours dont 18 ouvrés ; période fixée au contrat |
+
+: Le congé annuel payé, texte par texte, 1966-2022 {#tbl-mt-tt-conge-textes}
+
+::::
+
+## Les jours fériés payés {#sec-mt-tt-jours-feries}
+
+Depuis 1964, la loi énumère des [jours fériés payés](#g-jours-feries-chomes-payes) ; ils sont six depuis 1991 — en 2026, le 17 décembre, le 20 mars, le 1^er^ mai, le 25 juillet, l'Aïd El Fitr et l'Aïd El Idha —, et la convention collective cadre en accorde neuf depuis 1984. Dans les activités continues, le salarié qui travaille un jour férié reçoit, selon le code, une indemnité égale à son salaire en plus de celui-ci ; la convention cadre majore de 100 % le jour férié travaillé.
+
+| Date d'effet | Texte | Loi | Convention cadre |
+|:---|:---|:---|:---|
+| [2 janvier 1964]{.insecable} | [loi n° 63-55](#r-mt-tt-1963-feries) | 4 | — |
+| [1^er^ mai 1966]{.insecable} | [code du travail](#r-mt-tt-feries-1966) | 4 | — |
+| [1^er^ juin 1973]{.insecable} | [convention cadre](#r-mt-tt-feries-1973) | 4 | 7 |
+| [17 novembre 1984]{.insecable} | [avenant n° 1](#r-mt-tt-feries-1984) | 4 | 9 |
+| [5 juin 1988]{.insecable} | [loi n° 88-55](#r-mt-tt-feries-1988) | 5 | 9 |
+| mars 1991 | [loi n° 91-15](#r-mt-tt-feries-1991) | 6 | 9 |
+| [15 octobre 1992]{.insecable} | [avenant n° 2](#r-mt-tt-feries-1992) | 6 | 9 |
+| [16 juin 2011]{.insecable} | [décret-loi n° 2011-51](#r-mt-tt-feries-2011) | 6 | 9 |
+| [15 décembre 2021]{.insecable} | [décret-loi n° 2021-11](#r-mt-tt-feries-2021) | 6 | 9 |
+
+: Nombre de jours fériés payés, par la loi et par la convention collective cadre, 1964-2021 {#tbl-mt-tt-feries}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand ces grandeurs seront versées (ligne de docs/notes/backlog-modele.md du 20/10/2026). -->
+<!-- TODO (documentaliste) : jour de la publication du JORT n° 17 de 1991 (« 1er et 5 mars 1991 ») ; date d'effet le 3 ou le 7 mars 1991 (Q4). -->
+
+- **1988 : les fêtes religieuses entrent dans la loi.** La loi « portant modification des dispositions du code du travail relatives aux jours fériés, chômés et payés » fait entrer l'Aïd El Fitr, l'Aïd El Idha et le 20 mars dans la liste légale, et en retire le 1^er^ juin et le 15 octobre ([loi n° 88-55](#r-mt-tt-feries-1988)).
+- **1991 et 1992 : six jours légaux, neuf conventionnels.** En 1991, le 7 novembre s'ajoute à la liste, et l'article parle de « jours fériés payés », sans le mot « chômés » ([loi n° 91-15](#r-mt-tt-feries-1991)). L'avenant n° 2 à la convention cadre aligne en 1992 la liste conventionnelle sur la liste légale, avec deux jours pour chacun des Aïd et le Mouled ([avenant n° 2](#r-mt-tt-feries-1992)).
+- **1996 : décret ou convention.** Les jours fériés « sont fixés par décret ou par les conventions collectives », sans que leur octroi arrête l'activité plus de 48 heures consécutives ([art. 107](#r-mt-tt-feries-1996)) ; l'article 445, qui en donne la liste, reste en vigueur et continue d'être modifié. Le décret et l'arrêté prévus par l'article 107 ne sont pas identifiés ici.
+- **2011 et 2021 : une date change, le nombre reste.** Le 7 novembre devient le 14 janvier en 2011, puis le 14 janvier le 17 décembre en 2021 ([décret-loi n° 2011-51](#r-mt-tt-feries-2011) ; [décret-loi n° 2021-11](#r-mt-tt-feries-2021)).
+
+<!-- RECHERCHE r-mt-art107-jours-feries : décret fixant les jours fériés du secteur privé et arrêté des modalités de l'art. 107 nouveau du code du travail (loi n° 96-62) (voir docs/recherches.yml) -->
+
+Le jour férié ne réduit pas le salaire mensuel ; le salarié payé à l'heure ou à la tâche reçoit une indemnité égale au salaire perdu ; dans les activités continues, le salarié qui travaille un jour férié reçoit une indemnité égale à son salaire, en plus de celui-ci ([art. 108 à 110](#r-mt-tt-feries-paiement)).
+
+:::: {.chronologie-repliable titre="Jours fériés payés : listes de la loi, de la convention collective cadre et des conventions agricole et du textile, textes date par date, 1964-2021"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-tt-feries-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 107 et 445, p. 763 et 814] | jours fériés « fixés par la loi » (art. 107) ; 1^er^ mai, 1^er^ juin, 25 juillet, 15 octobre (art. 445) : 4 |
+| []{#r-mt-tt-feries-paiement}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 108 à 110, p. 763] | pas de réduction du salaire mensuel ; indemnité égale au salaire perdu pour les salariés payés à l'heure ou à la tâche (art. 108) ; travail un jour férié dans les activités continues : indemnité égale au salaire, en plus du salaire (art. 109) ; heures perdues récupérables selon les art. 92 et 93 (art. 110) ; articles non modifiés par la loi n° 96-62 |
+| []{#r-mt-tt-feries-1973}[1^er^ juin 1973]{.insecable} | grande réforme (1973) | convention collective cadre [@arrete-1973-05-29-convention-cadre, art. 29, p. 855] | jours de la législation + Aïd Esseghir, Aïd El Kébir, Mouled : 7 ; travail un jour férié : majoration de 100 % ; les conventions de branche « pourront prévoir le paiement d'autres jours fériés chômés » |
+| []{#r-mt-tt-feries-1974}[1^er^ juin 1974]{.insecable} | ajustement | convention collective du textile [@convention-textile-1974, art. 22 à 28, p. 2717] | 1^er^ mai, 1^er^ juin, 25 juillet, 15 octobre, Aïd Esseghir, Aïd El Kébir, Mouled : 7 (art. 26) ; travail un jour férié : majoration de 100 % |
+| []{#r-mt-tt-feries-1984}[17 novembre 1984]{.insecable} | étape (1973) | avenant n° 1 à la convention cadre [@arrete-1985-02-07-convention-cadre-avenant1, art. 29 (nouveau) et art. 3, p. 254-255] | 1^er^ mai, 1^er^ juin, 25 juillet, 15 octobre, Aïd El Fitr, Aïd El Idha, Mouled, plus l'an Hégire et le 20 mars, « de sorte que le nombre des jours chômés et payés sera au total 9 » ; exclus des deux jours ajoutés : entreprises dont la convention prévoit déjà 9 jours ou plus (un seul jour si elle en prévoit 8), artisans, boulangerie ; en vigueur « à partir de sa signature », le 17 novembre 1984 ; arrêté d'agrément exécutoire le 17 février 1985, un jour franc après sa publication |
+| []{#r-mt-tt-feries-1988}[5 juin 1988]{.insecable} | **rupture** (jours fériés) | loi n° 88-55 du 2 juin 1988 [@loi88-55, article unique, p. 798] | « portant modification des dispositions du code du travail relatives aux jours fériés, chômés et payés » ; 1^er^ mai, 1^er^ juin, 25 juillet, 15 octobre → 20 mars, 1^er^ mai, 25 juillet, Aïd El Fitr, Aïd El Idha : 5 ; sans clause d'effet, exécutoire un jour franc après la publication au JORT n° 37 du 3 juin 1988 |
+| []{#r-mt-tt-feries-1991}mars 1991 | étape (1988) | loi n° 91-15 du 25 février 1991 [@loi91-15, article unique, p. 377] | « portant modification du code du travail » ; 7 novembre ajouté : 6 ; « jours fériés payés », le mot « chômés » n'y figure plus ; JORT n° 17 daté « 1er et 5 mars 1991 », exécutoire un jour franc après la publication, le 3 ou le 7 mars 1991 |
+| []{#r-mt-tt-feries-1992}[15 octobre 1992]{.insecable} | étape (1988) | avenant n° 2 à la convention cadre [@arrete-1993-01-28-convention-cadre-avenant2, art. 29 (nouveau) et art. 2, p. 227] | 20 mars, 1^er^ mai, 25 juillet, 7 novembre, Mouled, premier et deuxième jours de l'Aïd El Fitr, premier et deuxième jours de l'Aïd El Idha : 9 ; en vigueur à sa signature ; arrêté d'agrément, qui le rend obligatoire sur tout le territoire, exécutoire le 14 février 1993, un jour franc après sa publication |
+| []{#r-mt-tt-feries-1996}[31 juillet 1996]{.insecable} | ajustement | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 107), p. 1584] | « fixés par la loi » → « fixés par décret ou par les conventions collectives » ; arrêt de l'activité de 48 heures consécutives au plus, modalités par arrêté ; art. 445 maintenu |
+| []{#r-mt-tt-feries-2004}[20 avril 2004]{.insecable} | sans effet | avenant n° 3 à la convention cadre [@arrete-2004-05-04-convention-cadre-avenant3, p. 1266-1270] | ne modifie ni l'art. 29 ni l'art. 31 de la convention cadre |
+| []{#r-mt-tt-feries-2011}[16 juin 2011]{.insecable} | ajustement | décret-loi n° 2011-51 du 6 juin 2011 [@dl2011-51, art. 1^er^, p. 884] | art. 445 : « le 7 novembre » → « le 14 Janvier », inséré avant le 20 mars : 6 ; exécutoire cinq jours après le dépôt du JORT n° 42 au siège du gouvernorat de Tunis, le 11 juin 2011, jour du dépôt non compté (loi n° 93-64, art. 2) |
+| []{#r-mt-tt-feries-2015}[1^er^ décembre 2015]{.insecable} | étape (agriculture) | convention collective cadre du secteur agricole [@arrete-2015-11-17-convention-cadre-agricole, art. 29, p. 3252 (éd. ar.)] | 14 janvier, 20 mars, 1^er^ mai, 12 mai (fête nationale de l'agriculture), 25 juillet, Aïd El Fitr, Aïd El Adha : 7 ; travail un de ces jours : majoration de 100 % ; convention signée le 13 octobre 2015 ; arrêté exécutoire cinq jours après le dépôt du JORT n° 94 au siège du gouvernorat de Tunis, le 26 novembre 2015, jour du dépôt non compté (loi n° 93-64, art. 2) |
+| []{#r-mt-tt-feries-2021}[15 décembre 2021]{.insecable} | ajustement | décret-loi n° 2021-11 du 13 décembre 2021 [@dl2021-11, art. 1^er^, p. 2951] ; règle de date [@dl2020-1, art. 2] | « portant modification de l'article 445 du code du travail » ; « le 14 janvier » → « le 17 décembre » : 6 ; publié au JORT n° 115 du 14 décembre 2021, exécutoire le lendemain de sa publication électronique |
+
+: Les jours fériés payés, texte par texte, 1964-2021 {#tbl-mt-tt-feries-textes}
+
+<!-- TODO (documentaliste) : clause d'effet propre de la convention cadre agricole (fin du texte arabe non lue à l'image) (Q10). -->
+
+::::
+
+## Les congés pour événements familiaux et la naissance {#sec-mt-tt-conges-familiaux}
+
+Les congés de maternité et de paternité de 2024, leur durée, leur champ et leur rémunération sont exposés au volume [« Les prestations sociales »](../prestations_sociales/_autres_risques.html#sec-ar-conges-2024).
+
+Le code accorde depuis 1966 un jour de congé au père à la naissance ; la convention collective cadre crée en 1973 des congés payés pour le mariage, la naissance et les décès, allongés en 1984 ; depuis le 13 août 2024, la loi accorde au père un [congé de paternité](#g-conge-paternite) de sept jours.
+
+| Événement | Code du travail | Convention cadre<br>(avenant de 1984) | Convention cadre agricole<br>(2015) | Travail domestique<br>(2022) |
+|:---|:---|:---|:---|:---|
+| Naissance | 1 jour (1966) ; 7 jours (2024) | 2 jours ouvrables | 2 jours | selon la législation |
+| Mariage du salarié | — | 3 jours ouvrables | 3 jours ouvrables | 7 jours |
+| Mariage d'un enfant | — | 1 jour | 1 jour | 2 jours |
+| Circoncision d'un enfant | — | 1 jour | 1 jour | 1 jour |
+| Décès du conjoint | — | 3 jours | 3 jours | 3 jours |
+| Décès d'un père, d'une mère, d'un enfant | — | 3 jours | 3 jours | 3 jours |
+| Décès d'un frère, d'une sœur, d'un petit-enfant, d'un grand-parent | — | 2 jours | 2 jours | 2 jours |
+
+: Les congés pour événements familiaux, selon le texte qui les accorde, au 1^er^ janvier 2026 {#tbl-mt-tt-conges-familiaux}
+
+- **1966 : un jour à la naissance.** Le père salarié a droit à un jour, le jour de la naissance ou dans les sept jours ; l'employeur le paie et la caisse de sécurité sociale le lui rembourse ([art. 122](#r-mt-tt-naissance-1966)).
+- **1973 et 1984 : les congés conventionnels.** La convention cadre accorde un jour ouvrable à la naissance, deux au mariage du salarié, un ou deux jours au décès d'un proche, avec maintien du salaire ([art. 31](#r-mt-tt-familiaux-1973)) ; l'avenant n° 1 porte la naissance à deux jours, le mariage à trois, les décès à deux ou trois jours, et ajoute le mariage et la circoncision d'un enfant ([art. 31](#r-mt-tt-familiaux-1984)).
+- **2024 : sept jours.** La loi accorde au père sept jours de congé « à plein traitement », dix en cas de naissances multiples, d'enfant handicapé ou prématuré, trois en cas d'enfant mort-né, à prendre dans les trente jours ([loi n° 2024-44](#r-mt-tt-paternite-2024)).
+
+<!-- TODO (documentaliste) : qui paie les sept jours de paternité dans le secteur privé ; sort du remboursement par la caisse de l'art. 122, ni repris ni expressément abrogé par la loi n° 2024-44 (Q15 ; fiche r-loi2024-44-application, placée au volume des prestations sociales). -->
+
+:::: {.chronologie-repliable titre="Congés pour événements familiaux et congé de naissance : jours accordés par la loi et les conventions, textes date par date, 1966-2024"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-tt-naissance-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 122, p. 764] | père salarié : 1 jour, le jour de la naissance ou dans les 7 jours ; avance de l'employeur remboursée par la caisse de sécurité sociale |
+| []{#r-mt-tt-familiaux-1973}[1^er^ juin 1973]{.insecable} | **rupture** (congés familiaux) | convention collective cadre [@arrete-1973-05-29-convention-cadre, art. 31, p. 856] | naissance : 1 jour ouvrable ; décès du conjoint ou d'un enfant à charge : 2 ; d'un ascendant direct ou d'un enfant qui n'est plus à charge : 2 ; d'un frère, d'une sœur, d'un petit-enfant : 1 ; mariage du salarié : 2 ; maintien intégral du salaire |
+| []{#r-mt-tt-familiaux-1974}[1^er^ juin 1974]{.insecable} | ajustement | convention collective du textile [@convention-textile-1974, art. 22 à 28, p. 2717] | naissance : 1 jour ouvrable (exemple de branche) |
+| []{#r-mt-tt-familiaux-1984}[17 novembre 1984]{.insecable} | étape (1973) | avenant n° 1 à la convention cadre [@arrete-1985-02-07-convention-cadre-avenant1, art. 31 (nouveau), p. 255] | naissance : 1 → 2 jours ouvrables ; décès du conjoint : 3 ; d'un père, d'une mère ou d'un fils : 3 ; d'un frère, d'une sœur, d'un petit-enfant ou d'un grand-parent : 2 ; mariage du salarié : 2 → 3 ; mariage d'un enfant : 1 ; circoncision d'un enfant : 1 ; article non modifié par les avenants n° 2 et 3 |
+| []{#r-mt-tt-familiaux-2015}[1^er^ décembre 2015]{.insecable} | étape (agriculture) | convention collective cadre du secteur agricole [@arrete-2015-11-17-convention-cadre-agricole, art. 25, p. 3251-3252 (éd. ar.)] | mariage du salarié : 3 jours ouvrables ; naissance : 2 ; mariage d'un enfant : 1 ; circoncision : 1 ; décès du conjoint ou d'un enfant : 3 ; d'un parent du salarié ou du conjoint : 3 ; d'un frère, d'une sœur, d'un petit-enfant ou d'un grand-parent : 2 |
+| []{#r-mt-tt-dom-familiaux}[30 janvier 2022]{.insecable} | étape (2022) | loi n° 2021-37 [@loi2021-37, art. 15, p. 2007-2008] | travail domestique : décès du conjoint, du père, de la mère ou d'un enfant : 3 jours ; d'un frère, d'une sœur, d'un petit-enfant ou d'un grand-parent : 2 ; mariage du travailleur : 7 ; circoncision d'un enfant : 1 ; mariage d'un enfant : 2 ; congé de paternité « conformément à la législation » |
+| []{#r-mt-tt-paternite-2024}[13 août 2024]{.insecable} | étape | loi n° 2024-44 du 12 août 2024 [@loi2024-44, art. 5 et 11, p. 2216] ; règle de date [@dl2020-1, art. 2] | naissance : 1 jour → 7 jours « à plein traitement » ; 10 en cas de naissances multiples, d'enfant handicapé ou prématuré ; 3 en cas d'enfant mort-né ; pris dans les 30 jours ; abrogation de « toutes les dispositions antérieures contraires » (art. 11) ; sans clause d'effet, publiée au JORT n° 99 du 12 août 2024, exécutoire le lendemain de sa publication électronique ; voir [la loi au volume des prestations sociales](../prestations_sociales/_autres_risques.html#r-ar-2024-44) |
+
+: Les congés pour événements familiaux, texte par texte, 1966-2024 {#tbl-mt-tt-familiaux-textes}
+
+<!-- TODO (documentaliste) : article du congé de naissance de la convention du textile (p. 2717, exemplaire dégradé) et art. 28 « عطلة الولادة » de la convention agricole (contenu non relevé) (Q10, Q11). -->
+
+::::
+
+## Le travail à temps partiel {#sec-mt-tt-temps-partiel}
+
+Né de la loi de 1996, le [travail à temps partiel](#g-travail-temps-partiel) ne dépasse pas 70 % de la durée normale du travail de l'entreprise ; les heures supplémentaires du salarié à temps partiel ne dépassent pas le tiers de la durée de son contrat et sont majorées de 50 %.
+
+- **1996 : la naissance.** La loi ajoute au chapitre « Durée du travail » une section « travail à temps partiel » ; la durée est d'au plus 70 % de la durée normale de l'entreprise ; les heures supplémentaires, au plus égales au tiers de la durée du contrat, ne portent pas le total au-delà de la durée normale du temps plein et sont majorées de 50 % ([art. 90, 94-2 et 94-6](#r-mt-tt-tp-1996)).
+- **2025 : un alinéa récrit.** La loi « portant réglementation des contrats de travail et interdiction de la sous-traitance de main-d'œuvre » récrit le premier alinéa de l'article 94-2 sans changer la limite de 70 % ([loi n° 2025-9](#r-mt-tt-tp-2025)).
+
+<!-- TODO (documentaliste) : contenu des art. 94-3 à 94-14 (Q14) ; article de la loi n° 2025-9 qui récrit l'art. 94-2, al. 1, et sa nouvelle rédaction. -->
+
+:::: {.chronologie-repliable titre="Travail à temps partiel : durée maximale (70 %), heures supplémentaires et majoration de 50 %, textes date par date, 1996-2025"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-tt-tp-1996}[31 juillet 1996]{.insecable} | **rupture** (temps partiel) | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 90, 94-2 et 94-6) et art. 3, p. 1583 et 1588] | section « travail à temps partiel » (art. 94-2 à 94-14) ajoutée au chapitre VI du titre premier du livre II ; durée au plus égale à 70 % de la durée normale de l'entreprise (art. 94-2) ; heures supplémentaires au plus égales au tiers de la durée du contrat, total au plus égal à la durée normale du temps plein (art. 94-6) ; majoration de 50 % (art. 90) |
+| []{#r-mt-tt-tp-2025}[24 mai 2025]{.insecable} | ajustement | loi n° 2025-9 du 21 mai 2025 [@loi2025-9, p. 1296-1299] ; règle de date [@dl2020-1, art. 2] | art. 94-2, al. 1, récrit ; limite de 70 % inchangée ; publiée au JORT n° 61 du 23 mai 2025, exécutoire le lendemain de sa publication électronique |
+
+: Le travail à temps partiel, texte par texte, 1996-2025 {#tbl-mt-tt-tp-textes}
+
+::::
+
+## Le secteur agricole {#sec-mt-tt-agriculture}
+
+Le salaire minimum agricole garanti ([SMAG](#g-smag)) est exposé au chapitre du salaire minimum (@sec-mt-salaire-minimum).
+
+Depuis 1966, la durée du travail agricole est annuelle : 2 700 heures pour 300 jours de travail effectif ; l'heure faite au-delà de la durée journalière est majorée de 25 %, et le congé annuel s'ouvre après six mois de services continus.
+
+- **1966 : un régime propre.** La durée est de 2 700 heures par an pour 300 jours de travail effectif, gardiens et bergers exclus ; les heures au-delà de la durée journalière sont majorées de 25 % ; le congé s'ouvre après six mois de services continus, à raison d'un jour ouvrable par mois, 15 jours dont 12 ouvrables au plus ([art. 88, 94 et 123](#r-mt-tt-agri-1966)) ; le repos hebdomadaire a son article ([art. 106](#r-mt-tt-repos-1966)).
+- **1996 : les jeunes.** Les moins de 18 ans ont deux jours de congé par mois (30 jours dont 24 ouvrables), les 18 à 20 ans un jour et demi (22 jours dont 18 ouvrables) ([art. 123](#r-mt-tt-agri-1996)).
+- **2015 : une convention cadre.** Depuis le 1^er^ décembre 2015, la convention collective cadre du secteur agricole fixe sept jours fériés payés, dont le 12 mai, fête nationale de l'agriculture, une majoration de 100 % pour le travail un jour férié et des congés pour événements familiaux ; le repos hebdomadaire n'y est pas payé « sauf accord contraire » ([art. 13](#r-mt-tt-agri-2015) ; [art. 25](#r-mt-tt-familiaux-2015) ; [art. 29](#r-mt-tt-feries-2015)).
+
+:::: {.chronologie-repliable titre="Secteur agricole : durée annuelle, majoration de 25 %, congé, repos et convention cadre de 2015, textes date par date, 1966-2015"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-tt-agri-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 88, 94 et 123, p. 761 et 764] | décret du 30 avril 1956 → 2 700 heures par an pour 300 jours de travail effectif, gardiens et bergers exclus (art. 88) ; majoration de 25 % au-delà de la durée journalière (art. 94) ; congé après six mois de services continus, 1 jour ouvrable par mois, au plus 15 jours dont 12 ouvrables (art. 123) |
+| []{#r-mt-tt-agri-1996}[31 juillet 1996]{.insecable} | étape (1996) | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 123), p. 1585] | + moins de 18 ans : 2 jours par mois, 30 dont 24 ouvrables ; 18 à 20 ans : 1,5 jour, 22 dont 18 ouvrables |
+| []{#r-mt-tt-agri-2015}[1^er^ décembre 2015]{.insecable} | étape (agriculture) | convention collective cadre du secteur agricole [@arrete-2015-11-17-convention-cadre-agricole, art. 11 et 13, p. 3250 (éd. ar.)] | durée du travail (art. 11) ; repos hebdomadaire non payé « sauf accord contraire » (art. 13) ; jours fériés, congés familiaux et congé annuel : voir les registres des [jours fériés](#r-mt-tt-feries-2015), des [congés familiaux](#r-mt-tt-familiaux-2015) et du [congé annuel](#r-mt-tt-conge-2015) |
+
+: Le secteur agricole, texte par texte, 1966-2015 {#tbl-mt-tt-agri-textes}
+
+<!-- TODO (documentaliste) : contenu de l'art. 11 de la convention cadre agricole (durée du travail) ; pages exactes à relire à l'image sur l'édition arabe (Q10). -->
+
+::::
+
+## Le travail domestique {#sec-mt-tt-domestique}
+
+La couverture sociale des travailleurs domestiques est exposée au volume [« Les retraites »](../retraites/_secteur_prive.html#sec-rtfr).
+
+Depuis le 30 janvier 2022, le [travailleur domestique](#g-travail-domestique) d'un employeur unique travaille au plus 48 heures par semaine et 10 heures par jour ; il a un congé annuel d'un jour par mois et des congés pour événements familiaux propres. Le code du travail lui est applicable en tout ce que la loi de 2021 ne contredit pas, et son salaire ne peut être inférieur au salaire minimum du régime de 48 heures ([art. 4 et 11](#r-mt-tt-dom-loi)).
+
+| Règle | Un seul employeur | Plusieurs employeurs |
+|:---|:---|:---|
+| Durée par semaine | 48 heures | |
+| Durée par jour | 10 heures, heures supplémentaires comprises | 8 heures ; 10 avec les heures supplémentaires |
+| Pause | 1 heure | |
+| Congé annuel | 1 jour par mois, 15 jours dont 12 ouvrés au plus | |
+
+: Durée du travail et congé du travailleur domestique, selon le nombre d'employeurs, depuis 2022 {#tbl-mt-tt-domestique}
+
+Une case vide signale une règle que la section de la loi consacrée aux employeurs multiples ne fixe pas ; le code du travail s'applique au travailleur domestique en tout ce que la loi ne contredit pas ([art. 4](#r-mt-tt-dom-loi)).
+
+- **Le champ.** La loi vise toute personne qui accomplit, « d'une manière continue et habituelle, des travaux liés au domicile ou à la famille », pour un ou plusieurs employeurs, personnes physiques sans but lucratif ; elle interdit l'emploi des enfants, sans en chiffrer l'âge ([art. 3 et 5](#r-mt-tt-dom-loi)).
+- **La durée et le congé.** Chez un employeur unique, 48 heures par semaine et 10 heures par jour, heures supplémentaires comprises, avec une heure de pause ; chez plusieurs employeurs, 8 heures par jour, 10 avec les heures supplémentaires ([art. 13 et 19](#r-mt-tt-dom-duree)). Le congé est d'un jour par mois de travail effectif, 15 jours dont 12 ouvrés au plus, un jour et demi de 18 à 20 ans ([art. 14](#r-mt-tt-dom-conge)).
+- **Les congés familiaux.** Sept jours au mariage du travailleur, deux au mariage d'un enfant, un à la circoncision, deux ou trois aux décès, le congé de paternité « conformément à la législation » ([art. 15](#r-mt-tt-dom-familiaux)).
+
+:::: {.chronologie-repliable titre="Travail domestique : champ, salaire, durée, congés, articles de la loi de 2021 en vigueur depuis 2022"}
+
+| Effet | Portée | Texte et articles | Contenu |
+|---|---|---|---|
+| []{#r-mt-tt-dom-loi}[30 janvier 2022]{.insecable} | grande réforme (2022) | loi n° 2021-37 [@loi2021-37, art. 3 à 5 et 11, p. 2006-2007] | champ (art. 3) ; code du travail applicable sauf contrariété, affiliation au régime de la loi n° 2002-32 (art. 4) ; emploi des enfants interdit (art. 5) ; salaire au moins égal au salaire minimum garanti « au régime de 48 heures de travail par semaine, qu'il soit payé mensuellement ou à l'heure » (art. 11) |
+
+: Le travail domestique : champ et salaire, 2022 {#tbl-mt-tt-dom-textes}
+
+La [durée](#r-mt-tt-dom-duree), le [congé annuel](#r-mt-tt-dom-conge) et les [congés familiaux](#r-mt-tt-dom-familiaux) du travailleur domestique sont aux registres de la durée, du congé annuel et des congés familiaux.
+
+::::
+
+## Le repos hebdomadaire et le travail de nuit {#sec-mt-tt-repos-nuit}
+
+Le salarié a droit à un [repos hebdomadaire](#g-repos-hebdomadaire) de 24 heures consécutives, le vendredi, le samedi ou le dimanche, ou un autre jour par accord depuis 1996 ; le code ne majore ni le repos travaillé ni le [travail de nuit](#g-travail-de-nuit), que les conventions de branche peuvent majorer.
+
+- **Le repos.** Le code fixe un repos de 24 heures consécutives, le vendredi, le samedi ou le dimanche ([art. 95](#r-mt-tt-repos-1966)) ; depuis 1996, un autre jour peut être fixé par accord ou par autorisation du gouverneur ([art. 95](#r-mt-tt-repos-1996)).
+- **La nuit.** La convention cadre renvoie le travail de nuit aux conventions de branche ([art. 26](#r-mt-tt-nuit-1973)) ; celle du textile majore de 25 % le travail de nuit permanent, de 21 heures à 5 heures ou de 22 heures à 6 heures ([art. 23](#r-mt-tt-nuit-1974)). Depuis 1996, le travail de nuit est interdit aux femmes et aux moins de 18 ans pendant 12 heures consécutives comprenant la période de 22 heures à 6 heures ([art. 66](#r-mt-tt-nuit-1996)).
+
+:::: {.chronologie-repliable titre="Repos hebdomadaire et travail de nuit : jour de repos, interdictions et majorations conventionnelles, textes date par date, 1966-1996"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-mt-tt-repos-1966}[1^er^ mai 1966]{.insecable} | mise en place | code du travail [@loi66-27, art. 95 et 106, p. 762-763] | décret du 20 avril 1921 → repos de 24 heures consécutives, le vendredi, le samedi ou le dimanche (art. 95) ; activités agricoles (art. 106) ; aucune règle de rémunération |
+| []{#r-mt-tt-nuit-1973}[1^er^ juin 1973]{.insecable} | ajustement | convention collective cadre [@arrete-1973-05-29-convention-cadre, art. 26, p. 855] | travail de nuit renvoyé aux conventions de branche |
+| []{#r-mt-tt-nuit-1974}[1^er^ juin 1974]{.insecable} | ajustement | convention collective du textile [@convention-textile-1974, art. 23, p. 2717] | travail de nuit permanent, de 21 h à 5 h ou de 22 h à 6 h : majoration de 25 % |
+| []{#r-mt-tt-repos-1996}[31 juillet 1996]{.insecable} | étape (1996) | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 95), p. 1583] | un autre jour de repos par accord ou autorisation du gouverneur |
+| []{#r-mt-tt-nuit-1996}[31 juillet 1996]{.insecable} | étape (1996) | loi n° 96-62 [@loi96-62, art. 1^er^ (art. 66), p. 1581] | travail de nuit interdit aux femmes et aux moins de 18 ans pendant 12 heures consécutives comprenant la période de 22 h à 6 h |
+
+: Le repos hebdomadaire et le travail de nuit, texte par texte, 1966-1996 {#tbl-mt-tt-repos-textes}
+
+::::
+
+## Le temps de travail habituel en 2019 {#sec-mt-tt-duree-2019}
+
+Ces règles sont une charge de l'employeur, sans dépense budgétaire de l'État ; la caisse de sécurité sociale sert une part de certains congés (@sec-mt-tt-conge-annuel, @sec-mt-tt-conges-familiaux). Cette section donne, d'après l'Institut national de la statistique, la répartition des personnes occupées selon leur temps de travail habituel en 2019.
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+sys.path.insert(0, ".")
+from figures import temps_travail as tt
+import figtools
+```
+
+L'enquête nationale sur la population et l'emploi classe les occupés selon le temps qu'ils travaillent habituellement dans toutes leurs activités, et non selon les heures supplémentaires payées. Du deuxième au quatrième trimestre de 2019, 16,6 % à 17,2 % des occupés déclarent travailler habituellement plus de 48 heures par semaine, 81,7 % à 82,0 % sont à temps complet, et 1,1 % à 1,6 % sont en sous-emploi lié au temps de travail [@ins-emploi-chomage-2019t4, tableau 6, p. 5] (@fig-mt-tt-temps-habituel). 
+
+```{python}
+#| label: fig-mt-tt-temps-habituel
+#| echo: false
+#| output: asis
+figtools.figure_tabs(
+    tt.vues_temps_travail(), tt.table_temps_travail(), "ins-emploi-duree-travail-2019",
+    slug="fig_mt_tt_temps_habituel", nominal=False,
+    caption=("Personnes occupées selon le temps de travail habituel, deuxième, troisième et "
+             "quatrième trimestres 2019 (milliers et % des occupés)"),
+    note_lecture=(
+        "Temps de travail habituel dans toutes les activités, déclaré à l'enquête. « Plus de "
+        "48 heures » : ce que l'Institut appelle « sur-emploi lié au temps du travail ». "
+        "« Sous-emploi » : 40 heures au plus et souhait de travailler davantage. « Temps "
+        "complet » : les autres occupés, qui travaillent 48 heures au plus sans souhaiter "
+        "travailler davantage. Les parts sont celles qu'imprime la source. La mesure porte "
+        "sur les heures faites, non sur les heures supplémentaires payées."),
+)
+```
+
+<!-- TODO (documentaliste) : une série du temps de travail avant 2019 (recensements, microdonnées de l'enquête emploi) et les heures supplémentaires payées de l'enquête « Emploi et salaires » (note documentaire, § 8). -->
+
+## Ce qu'en dit l'économie {#sec-mt-tt-economie}
+
+**La question.** La durée légale est, pour l'économiste, le seuil au-delà duquel l'heure coûte plus cher. Trois questions s'y attachent : baisser ce seuil remplace-t-il des heures par des personnes, ou réduit-il l'emploi parce que l'heure renchérit quand le salaire mensuel est maintenu ? Quel effet la majoration a-t-elle sur les heures, le salaire horaire et l'effectif ? Qui paie les congés et les jours fériés ?
+
+**Ce que dit la théorie.** Une baisse de la durée légale pousse l'employeur à remplacer des heures par des personnes, mais renchérit le travail et réduit donc la quantité employée ; le total d'heures baisse, l'effectif peut monter ou baisser selon les coûts fixes par salarié et la compensation salariale [@hunt-1999-work-sharing-germany ; @brown-hamermesh-2019-wages-hours-laws]. Quand l'heure supplémentaire est mieux payée, l'employeur peut abaisser le salaire de base ; quand le salaire mensuel ne peut baisser, comme au salaire minimum, l'ajustement passe par l'emploi [@brown-hamermesh-2019-wages-hours-laws ; @crepon-kramarz-2002-40-heures]. Un avantage imposé, comme un congé, se paie en salaire dans la mesure où les salariés lui accordent une valeur [@gruber-1994-mandated-maternity].
+
+**Ce que mesure l'empirique.** Les évaluations des baisses de la durée légale comparent, par différence de différences, les salariés qui dépassaient le nouveau seuil à ceux qui étaient déjà en dessous :
+
+- France, 1982, de 40 à 39 heures, salaire mensuel maintenu : la probabilité de perdre son emploi augmente de 2 à 4 points pour les salariés à 40 heures en 1981, davantage au salaire minimum (enquête Emploi 1977-1987) [@crepon-kramarz-2002-40-heures] ;
+- Allemagne, 1984-1989, de 40 à 37 heures par convention collective dans la métallurgie et l'imprimerie : par heure de réduction, l'emploi de branche augmente de 0,2 à 0,7 % selon les catégories de salariés et le total d'heures baisse de 2 à 3 % (201 branches manufacturières) [@hunt-1999-work-sharing-germany] ;
+- Portugal 1996 (44 à 40 heures), Chili 2005 (48 à 45 heures) : pas de perte d'emploi accrue ni de changement significatif des transitions d'emploi, salaire horaire en hausse (Portugal : données appariées salariés-entreprises ; Chili : panel de ménages) [@raposo-vanours-2010-portugal ; @sanchez-2013-chili] ;
+- France 2000-2002 (39 à 35 heures) : emploi agrégé sans changement significatif, emploi des salariés touchés en baisse et cumul d'emplois en hausse (enquête Emploi) [@estevao-sa-2008-35-heures].
+
+Sur les heures supplémentaires, neuf études publiées depuis 2006 dans sept pays trouvent toutes une baisse du total d'heures ; le salaire horaire monte dans certains cas et baisse dans d'autres ; aucune n'estime l'effet sur l'emploi [recension de @brown-hamermesh-2019-wages-hours-laws]. Les évaluations recensées portent sur la durée légale et les heures supplémentaires ; aucune ne mesure l'effet du congé annuel ou des jours fériés sur l'emploi ou les salaires. Le résultat le plus proche porte sur une assurance : aux États-Unis, l'obligation de couvrir la maternité dans l'assurance maladie a été payée pour l'essentiel par une baisse du salaire des femmes visées [@gruber-1994-mandated-maternity]. Aucune des études recensées ne porte sur la Tunisie ; la Banque mondiale qualifie le temps de travail tunisien de « relatively flexible » et juge le congé annuel inférieur aux normes de l'Organisation internationale du travail, sans estimation [@bm2015-labor-policy, p. 83].
+
+**Ce que le praticien retient.** Établi : une baisse de la durée légale réduit les heures des salariés touchés, et le salaire horaire monte quand le salaire mensuel est maintenu. Débattu : l'effet sur l'emploi, qui va d'un risque accru de perte d'emploi pour les salariés touchés (France, 1982) à un léger gain d'emploi de branche (Allemagne, 1984-1989) ; les mesures diffèrent d'une étude à l'autre. La Tunisie n'offre pas de réforme comparable : la durée de 48 heures n'a pas changé depuis 1966, la réduction à 40 heures se fait par branche, et la réécriture de la majoration en 1996 n'est pas évaluée. Les données tunisiennes ne disent ni la part des salariés de chaque régime horaire, ni les heures supplémentaires payées, ni le coût des congés pour l'employeur.
+
+<!-- TODO (économiste) : période et pays des données de Gruber 1994 à préciser (non relevés par la fiche) ; page de bm2015-labor-policy (p. 83) à confirmer. -->
+
+Littérature arrêtée au mois d'octobre 2026.
