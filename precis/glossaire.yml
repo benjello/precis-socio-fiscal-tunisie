@@ -971,15 +971,16 @@ entries:
   - id: retenue-a-la-source
     acronyme: null
     statut: valide
-    references: [loi-irpp-is-1989, lf-2016]
+    references: [loi-irpp-is-1989, lf-2016, code-irpp-is-1990]
     source_definition: {ref: loi-irpp-is-1989}
-    voir_aussi: [irpp, css, traitement-de-base, tva, credit-tva]
+    voir_aussi: [irpp, css, traitement-de-base, tva, credit-tva, retenue-liberatoire, retenue-definitive-non-restituable]
     fr:
       terme: Retenue à la source
       definition: >
         Prélèvement de l'impôt opéré par celui qui paie une somme, pour le
         compte de celui qui la reçoit ; le montant retenu est reversé au Trésor
-        et imputé sur l'impôt dû par ce dernier. En matière d'impôt sur le
+        et imputé sur l'impôt dû par ce dernier, sauf quand la loi la rend
+        libératoire ou définitive et non restituable (code, art. 52 et 54). En matière d'impôt sur le
         revenu des personnes physiques, l'employeur l'opère lors du paiement du
         traitement et des indemnités imposables (code de l'IRPP et de l'IS, loi
         n°89-114). En matière de taxe sur la valeur ajoutée, l'État, les
@@ -991,7 +992,9 @@ entries:
       terme: الخصم من المورد
       definition: >
         اقتطاع للأداء يقوم به دافع المبلغ لحساب من يقبضه، ويُدفَع المبلغ
-        المخصوم للخزينة ويُحتسَب على الأداء المستوجَب على هذا الأخير. ففي مادة
+        المخصوم للخزينة ويُحتسَب على الأداء المستوجَب على هذا الأخير، إلّا إذا
+        جعله القانون تحرّريًا أو نهائيًا وغير قابل للإرجاع (المجلة، الفصلان 52
+        و54). ففي مادة
         الضريبة على دخل الأشخاص الطبيعيين يقوم به المؤجِّر عند دفع المرتب
         والمنح الخاضعة للضريبة (مجلة الضريبة على الدخل والضريبة على الشركات،
         القانون عدد 89-114). وفي مادة الأداء على القيمة المضافة تخصم الدولة
@@ -1709,7 +1712,10 @@ entries:
         Montant plancher d'impôt annuel, calculé en pourcentage du chiffre
         d'affaires ou des recettes brutes, en deçà duquel l'impôt liquidé selon
         le barème ne peut descendre pour les activités commerciales et non
-        commerciales (article 44 § II du code de l'IRPP et de l'IS).
+        commerciales (article 44 § II du code de l'IRPP et de l'IS). Il ne se
+        confond pas avec le minimum de l'article 12 bis de la loi n° 89-114,
+        qui borne l'effet de certaines déductions et s'assied sur l'impôt dû
+        sans elles.
       synonymes: []
     ar:
       terme: الضريبة الدنيا
@@ -1717,7 +1723,10 @@ entries:
         الحدّ الأدنى من الضريبة السنوية، المحتسَب بنسبة من رقم المعاملات أو من
         المقابيض الخام، والذي لا يمكن أن تنزل عنه الضريبة المحتسبة حسب الجدول
         بالنسبة إلى الأنشطة التجارية وغير التجارية (الفقرة II من الفصل 44 من
-        مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على الشركات).
+        مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على الشركات). ولا
+        تُخلط بالضريبة الدنيا المنصوص عليها بالفصل 12 مكرر من القانون عدد 114
+        لسنة 1989، التي تحدّ من أثر بعض الطروحات وتُحتسب على الأداء المستوجب
+        دون اعتبارها.
       synonymes: []
 
   - id: regime-forfaitaire
@@ -3211,7 +3220,7 @@ entries:
     acronyme: null
     statut: valide
     references: [code-irpp-is-1990]
-    source_definition: {ref: code-irpp-is-1990, locator: "art. 39"}
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 39 et 40"}
     voir_aussi: [assiette-fiscale, revenu-annuel-net, bareme-irpp]
     fr:
       terme: Déductions communes
@@ -13178,7 +13187,7 @@ entries:
     statut: provisoire
     references: [mirrlees-et-al-2011-tax-by-design]
     source_definition: {ref: mirrlees-et-al-2011-tax-by-design, locator: "p. 296"}
-    voir_aussi: [plus-value-immobiliere]
+    voir_aussi: [plus-value-immobiliere, plus-value-cession-titres]
     fr:
       terme: Effet de verrouillage
       definition: >
@@ -13839,3 +13848,342 @@ entries:
         فيها تُعتبر عقودا لمدة معينة (الفصل 23، الذي ألغاه الفصل 5 من القانون عدد 9 لسنة
         2025).
       synonymes: [المناطق الاقتصادية الحرة]
+
+  # ------------------------------------------------- fiscalité de l'épargne et du capital
+  # Passe 1 du terminologue (20/10/2026) pour docs/notes/fiscalite-epargne-capital.md, § 9.
+  # Définitions à rédiger en passe 2, quand le chapitre de l'IRPP ancrera ces notions.
+  # Termes arabes relevés sur le JORT arabe : « couche texte » = texte du PDF normalisé
+  # (NFKC) ; « OCR » = océrisation (tesseract, ara) des pages du code de 1990
+  # (JORT AR n° 1 de 1990, Ja00190.pdf), dont l'édition arabe n'a pas de couche texte.
+
+  # AR : « ويكون الخصم من المورد تحرريا من الضريبة على الدخل », code de 1990, art. 52-II
+  # (OCR) ; « لخصم من المورد تحرري », intitulé de l'art. 12 du décret-loi n° 2020-30
+  # (couche texte).
+  - id: retenue-liberatoire
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, decret-loi-2020-30]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 52-II et 54"}
+    source_traduction: {ref: code-irpp-is-1990, locator: "art. 52-II"}
+    voir_aussi: [retenue-a-la-source, retenue-definitive-non-restituable, revenus-capitaux-mobiliers]
+    fr:
+      terme: Retenue à la source libératoire
+      definition: >
+        Retenue à la source qui éteint l'impôt sur le revenu dû sur la somme
+        à laquelle elle s'applique : ce revenu n'entre pas dans le revenu
+        global déclaré, et la retenue n'est pas imputée sur l'impôt dû. Le
+        code de 1990 la prévoit pour les revenus des bons de caisse au porteur
+        dont le bénéficiaire n'est pas révélé à l'administration et pour les
+        revenus servis aux personnes non résidentes ou non établies en Tunisie
+        (art. 52-II) ; les autres retenues sont imputables (art. 54).
+      synonymes: [Retenue libératoire]
+    ar:
+      terme: الخصم من المورد التحرري
+      definition: >
+        خصم من المورد يُبرئ من الضريبة على الدخل المستوجبة على المبلغ الذي
+        يُوظَّف عليه: لا يدخل هذا الدخل في الدخل الجملي المصرَّح به، ولا يُطرَح
+        الخصم من الأداء المستوجب. وتنصّ عليه مجلة سنة 1990 بالنسبة إلى مداخيل
+        وصولات الإيداع للحامل التي لم يُصرَّح للإدارة بهوية حاملها، وإلى المداخيل
+        الممنوحة للأشخاص غير المقيمين أو غير المستقرّين بالبلاد التونسية (الفصل
+        52-II)؛ أمّا سائر الخصوم فتُطرَح من الأداء (الفصل 54).
+      synonymes: []
+
+  # AR : « لخصم من المورد نهائي وغير قابل للإرجاع », décret-loi n° 2020-30, art. 12
+  # (nouveau 52-II-2 bis, couche texte) ; même tournure dans la LF 2021, art. 17
+  # (couche texte, JORT AR n° 128 de 2020).
+  - id: retenue-definitive-non-restituable
+    acronyme: null
+    statut: valide
+    references: [decret-loi-2020-30, lf-2021]
+    source_definition: {ref: decret-loi-2020-30, locator: "art. 12"}
+    source_traduction: {ref: decret-loi-2020-30, locator: "art. 12"}
+    voir_aussi: [retenue-a-la-source, retenue-liberatoire, tmm]
+    fr:
+      terme: Retenue à la source définitive et non restituable
+      definition: >
+        Retenue à la source qui n'est jamais rendue au bénéficiaire, quel que
+        soit son régime fiscal, même lorsqu'elle dépasse l'impôt qu'il doit
+        ou qu'il n'en doit pas. Le décret-loi n° 2020-30 (art. 12) qualifie
+        ainsi la retenue de 35 % sur les revenus des dépôts à terme dont le
+        taux de rémunération dépasse, au 1er janvier de l'année, le taux moyen
+        du marché monétaire diminué d'un point.
+      synonymes: []
+    ar:
+      terme: الخصم من المورد النهائي وغير القابل للإرجاع
+      definition: >
+        خصم من المورد لا يُرجَع إلى المستفيد مهما كان نظامه الجبائي، ولو تجاوز
+        الأداء المستوجب عليه أو لم يكن مُطالبًا بأداء. ويصف به المرسوم عدد 30
+        لسنة 2020 (الفصل 12) الخصم بنسبة 35 بالمائة على مداخيل الإيداعات بأجل
+        التي تفوق نسبة تأجيرها، في غرّة جانفي من السنة، معدل نسبة الفائدة في
+        السوق النقدية ناقص نقطة مائوية.
+      synonymes: []
+
+  # AR : « مداخيل رؤوس الأموال المنقولة », code de 1990, art. 34 (OCR) ; intitulé de
+  # l'art. 17 de la LF 2021, « مراجعة النظام الجبائي لمداخيل رؤوس الأموال المنقولة »
+  # (couche texte) ; décret-loi n° 2020-30, art. 12 (couche texte).
+  - id: revenus-capitaux-mobiliers
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2021]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 34"}
+    source_traduction: {ref: lf-2021, locator: "art. 17"}
+    voir_aussi: [revenus-valeurs-mobilieres, retenue-a-la-source, retenue-liberatoire]
+    fr:
+      terme: Revenus de capitaux mobiliers
+      definition: >
+        Revenus d'un prêt d'argent, rangés avec les revenus de valeurs
+        mobilières dans la sixième catégorie de l'impôt sur le revenu : intérêts
+        et autres produits des obligations, effets publics et autres titres
+        d'emprunt négociables, intérêts des créances, des dépôts de sommes
+        d'argent et des cautionnements en numéraire, produits des comptes
+        courants (code de 1990, art. 34).
+      synonymes: []
+    ar:
+      terme: مداخيل رؤوس الأموال المنقولة
+      definition: >
+        مداخيل إقراض المال، تندرج مع مداخيل الأوراق المالية في الصنف السادس من
+        الضريبة على الدخل: الفوائض وسائر محاصيل الرقاع والسندات العمومية وسندات
+        القروض القابلة للبيع والشراء، وفوائض الديون وودائع المبالغ المالية
+        والضمانات النقدية، ومحاصيل الحسابات الجارية (مجلة سنة 1990، الفصل 34).
+      synonymes: []
+
+  # AR : « مداخيل الأوراق المالية », code de 1990, intitulé de la sous-section qui précède
+  # l'art. 29 (OCR) ; la nomenclature budgétaire de la LF 2020 (tableau « أ », couche
+  # texte) écrit « مداخيل الأوراق المالية ورؤوس الأموال المنقولة ». La forme
+  # « مداخيل القيم المنقولة », pressentie par la note, n'est pas relevée sur le JORT.
+  - id: revenus-valeurs-mobilieres
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2004]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 29 à 33"}
+    source_traduction: {ref: code-irpp-is-1990, locator: "art. 29"}
+    voir_aussi: [benefices-distribues, revenus-capitaux-mobiliers, plus-value-cession-titres]
+    fr:
+      terme: Revenus de valeurs mobilières
+      definition: >
+        Revenus qu'une personne tire de sa qualité d'associé ou d'actionnaire,
+        rangés avec les revenus de capitaux mobiliers dans la sixième catégorie
+        de l'impôt sur le revenu : bénéfices distribués par les sociétés
+        passibles de l'impôt sur les sociétés et sommes assimilées à des
+        revenus distribués, comme les jetons de présence (code de 1990, art. 29
+        à 33). Depuis 2004, la plus-value de cession d'actions et de parts
+        sociales en fait aussi partie (loi de finances pour 2004, art. 61).
+      synonymes: []
+    ar:
+      terme: مداخيل الأوراق المالية
+      definition: >
+        مداخيل يجنيها الشخص بصفته شريكًا أو مساهمًا، تندرج مع مداخيل رؤوس الأموال
+        المنقولة في الصنف السادس من الضريبة على الدخل: الأرباح التي توزّعها
+        الشركات الخاضعة للضريبة على الشركات والمبالغ المعتبرة مداخيل موزّعة، مثل
+        مكافآت الحضور (مجلة سنة 1990، الفصول 29 إلى 33). ومنذ سنة 2004، تشمل أيضًا
+        القيمة الزائدة المتأتية من التفويت في الأسهم والمنابات الاجتماعية (قانون
+        المالية لسنة 2004، الفصل 61).
+      synonymes: []
+
+  # AR : « الأرباح الموزعة », intitulé commun aux art. 18 et 19 de la LF 2014 et intitulé
+  # de l'art. 46 de la LF 2018 (couche texte) ; « أرباحهم الموزعة », code de 1990, art. 29
+  # (OCR). Le corps du code écrit « المداخيل الموزعة » (art. 33 du code de 1990, OCR ;
+  # nouveau 52-I-c bis, LF 2014, art. 19, couche texte), d'où le synonyme.
+  - id: benefices-distribues
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2014, lf-2018]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 29 et 30"}
+    source_traduction: {ref: lf-2014, locator: "art. 18 et 19"}
+    voir_aussi: [revenus-valeurs-mobilieres, impot-societes]
+    fr:
+      terme: Bénéfices distribués
+      definition: >
+        Bénéfices ou produits d'une société passible de l'impôt sur les
+        sociétés qui ne sont ni mis en réserve ni incorporés au capital, et
+        sommes mises à la disposition des associés ou actionnaires sans être
+        prélevées sur les bénéfices ; le code y assimile notamment les avances
+        consenties aux associés et les rémunérations occultes (code de 1990,
+        art. 29 et 30). Pour l'associé personne physique, ce sont des revenus
+        de valeurs mobilières.
+      synonymes: [Revenus distribués]
+    ar:
+      terme: الأرباح الموزعة
+      definition: >
+        أرباح أو محاصيل شركة خاضعة للضريبة على الشركات غير مرصودة بالاحتياطي
+        وغير مدمجة برأس المال، والمبالغ الموضوعة على ذمّة الشركاء أو المساهمين
+        دون أن تُقتطَع من الأرباح؛ وتعتبر المجلة من قبيلها خاصّة المبالغ الموضوعة
+        على ذمّة الشركاء بعنوان تسبقات أو قروض، والمكافآت والامتيازات والأرباح
+        الخفيّة (مجلة سنة 1990، الفصلان 29 و30). وهي بالنسبة إلى الشريك الشخص
+        الطبيعي من مداخيل الأوراق المالية.
+      synonymes: [المداخيل الموزعة]
+
+  # AR : « القيمة الزائدة المتأتية من التفويت في السندات », intitulé de l'art. 42 de la
+  # LF 2023 (couche texte). Le corps de l'article dit « الأسهم » (actions), « المنابات
+  # الاجتماعية » (parts sociales) et « حصص الصناديق » (parts de fonds).
+  - id: plus-value-cession-titres
+    acronyme: null
+    statut: valide
+    references: [lf-2004, lf-2023, dgi-nc-3-2023]
+    source_definition: {ref: lf-2004, locator: "art. 61 à 63"}
+    source_traduction: {ref: lf-2023, locator: "art. 42"}
+    voir_aussi: [revenus-valeurs-mobilieres, plus-value-immobiliere, plus-value-nominale, effet-de-verrouillage]
+    fr:
+      terme: Plus-value de cession de titres
+      definition: >
+        Gain réalisé par une personne physique, hors de son activité
+        professionnelle, en cédant des actions ou des parts sociales : prix de
+        cession diminué de la valeur d'acquisition, après imputation des
+        moins-values de même nature de l'année. Depuis 2004, c'est un revenu
+        de valeurs mobilières, imposé à un taux proportionnel hors barème
+        (loi de finances pour 2004, art. 61 à 63).
+      synonymes: [Plus-value mobilière]
+    ar:
+      terme: القيمة الزائدة المتأتية من التفويت في السندات
+      definition: >
+        الربح الذي يحقّقه شخص طبيعي، خارج نشاطه المهني، عند التفويت في أسهم أو
+        منابات اجتماعية: ثمن التفويت مطروحًا منه قيمة الاقتناء، بعد طرح نقصان
+        القيمة من نفس الطبيعة المسجَّل خلال السنة. وتُعدّ منذ سنة 2004 من مداخيل
+        الأوراق المالية، وتخضع للضريبة بنسبة قارّة خارج الجدول (قانون المالية
+        لسنة 2004، الفصول 61 إلى 63).
+      synonymes: []
+
+  # AR : « حسابات الادخار في الأسهم », intitulé de l'art. 16 de la LF 2021 (couche
+  # texte) ; même forme dans la LF 2025 (loi n° 2024-48, JORT AR n° 149 de 2024, couche texte).
+  # Texte arabe de la loi n° 99-92 (Ja06799.pdf) sans couche texte : non relu.
+  - id: compte-epargne-actions
+    acronyme: CEA
+    statut: valide
+    references: [loi-99-92-relance-marche-financier, dgi-nc-16-2004, lf-2021]
+    source_definition: {ref: loi-99-92-relance-marche-financier, locator: "art. 4"}
+    source_traduction: {ref: lf-2021, locator: "art. 16"}
+    voir_aussi: [compte-epargne-investissement, deductions-communes, opcvm]
+    fr:
+      terme: Compte épargne en actions
+      definition: >
+        Compte créé par la loi n° 99-92 relative à la relance du marché
+        financier, dont les sommes sont placées en actions cotées en bourse et
+        en bons du Trésor assimilables et restent bloquées cinq ans. Son
+        titulaire déduit de son revenu imposable les sommes déposées, dans la
+        limite d'un plafond annuel ; en 1999, la déduction porte sur la moitié
+        des dépôts (art. 4).
+      synonymes: []
+    ar:
+      terme: حساب الادخار في الأسهم
+      definition: >
+        حساب أحدثه القانون عدد 92 لسنة 1999 المتعلّق بإنعاش السوق المالية،
+        تُوظَّف المبالغ المودعة فيه في أسهم مدرجة بالبورصة وفي رقاع خزينة
+        قابلة للتنظير وتبقى مجمَّدة خمس سنوات. ويطرح صاحبه من دخله الخاضع
+        للضريبة المبالغ المودعة في حدود سقف سنوي؛ وفي سنة 1999 يقتصر الطرح على
+        نصف المبالغ المودعة (الفصل 4).
+      synonymes: []
+
+  # AR : « حسابات الادخار للاستثمار », intitulé de l'art. 27 de la LF 2018 (couche
+  # texte), article qui modifie l'art. 39 bis du code. La forme « حساب الادخار من أجل
+  # الاستثمار », pressentie par la note, n'est pas relevée. Texte arabe de la LF 2003
+  # (Ja1022002.pdf) : police non décodable, non relu ; le terme du corps de l'art. 39 bis
+  # reste à vérifier.
+  - id: compte-epargne-investissement
+    acronyme: CEI
+    statut: valide
+    references: [lf-2003, dgi-nc-35-2003, lf-2018]
+    source_definition: {ref: dgi-nc-35-2003}
+    source_traduction: {ref: lf-2018, locator: "art. 27"}
+    voir_aussi: [compte-epargne-actions, deductions-communes]
+    fr:
+      terme: Compte épargne pour l'investissement
+      definition: >
+        Compte créé par la loi de finances pour 2003, dont les sommes sont
+        destinées à financer dans les cinq ans un projet d'investissement. Les
+        sommes déposées sont déduites du revenu imposable et les intérêts du
+        compte sont exonérés, chacun dans la limite d'un plafond annuel (code,
+        art. 39 bis et art. 38, point 15 ; note commune n° 35/2003).
+      synonymes: []
+    ar:
+      terme: حساب الادخار للاستثمار
+      definition: >
+        حساب أحدثه قانون المالية لسنة 2003، تُخصَّص المبالغ المودعة فيه لتمويل
+        مشروع استثماري في أجل خمس سنوات. وتُطرَح المبالغ المودعة من الدخل الخاضع
+        للضريبة وتُعفى فوائد الحساب، كلّ منهما في حدود سقف سنوي (المجلة، الفصل
+        39 مكرر والنقطة 15 من الفصل 38؛ المذكرة العامة عدد 35 لسنة 2003).
+      synonymes: []
+
+  # AR : « حسابات خاصة للادخار مفتوحة لدى البنوك », code de 1990, art. 39-II (OCR) ;
+  # « حسابات الادخار الخاصة », intitulés de l'art. 13 de la LF 2017 (couche texte) et
+  # du décret-loi n° 2021-21 portant LF 2022 (couche texte).
+  - id: comptes-speciaux-epargne
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2017, lf-2022]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 39-II et 52-I-b"}
+    source_traduction: {ref: code-irpp-is-1990, locator: "art. 39-II"}
+    voir_aussi: [deductions-communes, revenus-capitaux-mobiliers]
+    fr:
+      terme: Comptes spéciaux d'épargne
+      definition: >
+        Comptes d'épargne ouverts auprès des banques, dont les intérêts sont
+        déduits de la base de l'impôt sur le revenu dans la limite d'un plafond
+        annuel (code de 1990, art. 39-II) ; les intérêts supportent la retenue
+        à la source de l'article 52-I-b, au taux de 10 % en 1990.
+      synonymes: []
+    ar:
+      terme: الحسابات الخاصة للادخار
+      definition: >
+        حسابات ادّخار مفتوحة لدى البنوك، تُطرَح فوائدها من أساس الضريبة على
+        الدخل في حدود سقف سنوي (مجلة سنة 1990، الفقرة II من الفصل 39)؛ وتخضع
+        الفوائد للخصم من المورد المنصوص عليه بالفصل 52-I-ب، بنسبة 10 بالمائة
+        سنة 1990.
+      synonymes: [حسابات الادخار الخاصة]
+
+  # AR : « مؤسسات التوظيف الجماعي في الأوراق المالية », « شركات الاستثمار ذات رأس المال
+  # المتغير » (SICAV), « الصناديق المشتركة للتوظيف » (FCP) : JORT AR de 2016 à 2022
+  # (n° 20 de 2016, 34 de 2017, 38 de 2018, 66 de 2022 ; couche texte), fascicules hors
+  # lois de finances, sans clé bibliographique. Code des OPC (loi n° 2001-83) : clé
+  # loi-2001-83-code-opc ; texte arabe non relu.
+  - id: opcvm
+    acronyme: OPCVM
+    statut: provisoire
+    references: [dgi-nc-45-2002, loi-2001-83-code-opc]
+    source_definition: {ref: dgi-nc-45-2002}
+    voir_aussi: [compte-epargne-actions, plus-value-cession-titres]
+    fr:
+      terme: Organisme de placement collectif en valeurs mobilières
+      definition: >
+        Organisme qui place collectivement en valeurs mobilières l'épargne de
+        ses actionnaires ou porteurs de parts : société d'investissement à
+        capital variable (SICAV) ou fonds commun de placement (FCP). Selon
+        l'administration, à compter de 2002, les revenus de capitaux mobiliers
+        des fonds communs de placement en valeurs mobilières supportent une
+        retenue de 20 %, définitive et libératoire (note commune n° 45/2002).
+      synonymes: []
+    ar:
+      terme: مؤسسة التوظيف الجماعي في الأوراق المالية
+      definition: >
+        مؤسسة توظّف بصفة جماعية في الأوراق المالية ادّخار مساهميها أو حاملي
+        حصصها: شركة استثمار ذات رأس مال متغيّر أو صندوق مشترك للتوظيف. وحسب
+        الإدارة، تخضع مداخيل رؤوس الأموال المنقولة للصناديق المشتركة للتوظيف
+        في الأوراق المالية، ابتداءً من سنة 2002، لخصم من المورد بنسبة 20 بالمائة
+        نهائي وتحرّري (المذكرة العامة عدد 45 لسنة 2002).
+      synonymes: []
+
+  # AR : « معدل نسبة الفائدة في السوق النقدية », décret-loi n° 2020-30, art. 12 (couche
+  # texte). Pas de source de définition dans les bibliographies (BCT).
+  - id: tmm
+    acronyme: TMM
+    statut: provisoire
+    references: [decret-loi-2020-30]
+    source_traduction: {ref: decret-loi-2020-30, locator: "art. 12"}
+    voir_aussi: [retenue-definitive-non-restituable]
+    fr:
+      terme: Taux moyen du marché monétaire
+      definition: >
+        Taux d'intérêt moyen du marché monétaire tunisien, publié par la
+        Banque centrale de Tunisie. Le décret-loi n° 2020-30 (art. 12) en fait
+        un seuil fiscal : les revenus des dépôts à terme dont le taux de
+        rémunération dépasse, au 1er janvier de l'année, le TMM diminué d'un
+        point supportent une retenue de 35 %, définitive et non restituable.
+      synonymes: [Taux du marché monétaire]
+    ar:
+      terme: معدل نسبة الفائدة في السوق النقدية
+      definition: >
+        معدل نسبة الفائدة في السوق النقدية التونسية، يصدره البنك المركزي
+        التونسي. ويجعل منه المرسوم عدد 30 لسنة 2020 (الفصل 12) عتبة جبائية:
+        تخضع مداخيل الإيداعات بأجل التي تفوق نسبة تأجيرها، في غرّة جانفي من
+        السنة، هذا المعدل ناقص نقطة مائوية لخصم من المورد بنسبة 35 بالمائة،
+        نهائي وغير قابل للإرجاع.
+      synonymes: []

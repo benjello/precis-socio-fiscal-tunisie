@@ -142,7 +142,12 @@ PAQUETS = {
         # La 0.136.1 verse les barèmes de 1969 et de 1975 du même paramètre (PR #495) : en
         # deçà, le tableau des barèmes successoraux du même chapitre ne pourrait être
         # engendré. La borne passe à la 0.136.1.
-        "version_minimale": (0, 136, 1),
+        # La 0.137 verse les retenues sur les intérêts et les dividendes et le taux et la
+        # franchise de la plus-value de titres (PR #496), sous `impot_revenu/
+        # capitaux_mobiliers/` et `impot_revenu/valeurs_mobilieres/` : en deçà, le tableau
+        # des taux de l'épargne du chapitre de l'impôt sur le revenu ne pourrait être
+        # engendré. La borne passe à la 0.137.
+        "version_minimale": (0, 137),
     },
 }
 

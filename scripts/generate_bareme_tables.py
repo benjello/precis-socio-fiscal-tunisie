@@ -581,6 +581,188 @@ def parametres_abattements_successions() -> list:
         for cle, libelles in _SUCC_ABATTEMENTS.items()]
 
 
+# ------------------------- revenus de l'épargne et du capital : taux à chaque réforme
+#
+# Le tableau `irpp_epargne_taux` du chapitre de l'impôt sur le revenu. Une ligne par date
+# d'effet de l'une des séries versées, plus l'année de rédaction. Chaque case ne lit que la
+# série en vigueur à sa date : `ot.Lecture` échoue sur une valeur vide, et une série fermée
+# (retenue imputable en 2021, libératoire en 2022…) ne s'affiche pas.
+#
+# Hors tableau : la plus-value des actions cotées. Son régime dépend d'une condition de
+# détention (art. 38-17, 2011 ; 2023), qu'aucune feuille ne porte ; le chapitre la donne à
+# la main sous le tableau.
+
+CAP = "parameters/impot_revenu/capitaux_mobiliers/retenue_source"
+VM = "parameters/impot_revenu/valeurs_mobilieres"
+EPARGNE_DATES = ["1990-01-01", "1992-01-02", "1997-01-01", "2004-01-01", "2015-01-01",
+                 "2018-01-01", "2020-06-10", "2021-01-01", "2022-01-01", "2023-01-01",
+                 "2025-01-01"]
+# Registre du chapitre auquel renvoie la case, par colonne et par date.
+ANCRES_EPARGNE = {
+    "interets": {"1990-01-01": "r-epargne-interets-1990", "1992-01-02": "r-epargne-interets-1992",
+                 "1997-01-01": "r-epargne-interets-1997", "2004-01-01": "r-epargne-interets-2004",
+                 "2020-06-10": "r-epargne-interets-2020", "2021-01-01": "r-epargne-interets-2021",
+                 "2022-01-01": "r-epargne-interets-2022"},
+    "anonymes": {"1990-01-01": "r-epargne-interets-1990", "1992-01-02": "r-epargne-interets-1992"},
+    "dividende": {"1990-01-01": "r-epargne-distribues-1990", "2015-01-01": "r-epargne-distribues-2014",
+                  "2018-01-01": "r-epargne-distribues-2018"},
+    "plus_value": {"2004-01-01": "r-epargne-pv-2004", "2023-01-01": "r-epargne-pv-2023"},
+}
+MOTS_EPARGNE = {
+    "fr": {
+        "entetes": ["Date d'effet", "Dernière tranche du barème",
+                    "Intérêts : dépôt, obligation, bon du Trésor", "Titre anonyme au porteur",
+                    "Dividende", "Plus-value, action non cotée, part sociale"],
+        "revenus": "revenus {annee}", "bareme": "barème", "imputable": "{t} imputable",
+        "liberatoire": "{t}, libératoire", "comptes": " ({s} sur les comptes spéciaux d'épargne)",
+        "depots": " ; dépôts à terme rémunérés au-delà du TMM moins un point : {lien}",
+        "obligations": "{o} (obligations) ou {t}, libératoire", "commun": "régime commun",
+        "exonere": "exonéré", "hors_champ": "hors champ",
+        "pv_franchise": "{t}, au-delà de {f} par an",
+        "pv_courte": "{t} si détenue au-delà, sinon {c} ; sans franchise",
+        "lien_bareme": "Barème de l'impôt sur le revenu, dernière tranche",
+        "taux": "Taux", "fixe": "{t}",
+    },
+    "ar": {
+        "entetes": ["تاريخ النفاذ", "الشريحة الأخيرة من الجدول",
+                    "الفوائد: الإيداعات والسندات وأذون الخزينة",
+                    "السند لحامله المجهول", "الأرباح الموزعة",
+                    "القيمة الزائدة، سهم غير مدرج، حصة اجتماعية"],
+        "revenus": "مداخيل {annee}", "bareme": "الجدول", "imputable": "{t} قابل للطرح",
+        "liberatoire": "{t}، تحرري", "comptes": " ({s} على حسابات الادخار الخاصة)",
+        "depots": " ؛ الودائع لأجل التي تفوق مكافأتها معدل السوق النقدية ناقص نقطة: {lien}",
+        "obligations": "{o} (الرقاع) أو {t}، تحرري", "commun": "النظام العام",
+        "exonere": "معفى", "hors_champ": "خارج المجال",
+        "pv_franchise": "{t}، فوق {f} في السنة",
+        "pv_courte": "{t} إذا احتُفظ بها لما بعد ذلك، وإلا {c}؛ دون عتبة إعفاء",
+        "lien_bareme": "جدول الضريبة على الدخل، الشريحة الأخيرة",
+        "taux": "النسبة", "fixe": "{t}",
+    },
+}
+LIBELLES_EPARGNE = {
+    "imputable": {"fr": "Retenue imputable sur les revenus de capitaux mobiliers",
+                  "ar": "الخصم القابل للطرح على مداخيل رؤوس الأموال المنقولة"},
+    "liberatoire": {"fr": "Retenue libératoire sur les revenus de capitaux mobiliers",
+                    "ar": "الخصم التحرري على مداخيل رؤوس الأموال المنقولة"},
+    "comptes": {"fr": "Retenue sur les comptes spéciaux d'épargne",
+                "ar": "الخصم على حسابات الادخار الخاصة"},
+    "depots": {"fr": "Retenue sur les dépôts à terme",
+               "ar": "الخصم على الودائع لأجل"},
+    "obligations": {"fr": "Retenue sur les obligations au porteur anonymes",
+                    "ar": "الخصم على الرقاع لحامله المجهول"},
+    "titres": {"fr": "Retenue sur les titres au porteur anonymes",
+               "ar": "الخصم على السندات لحامله المجهول"},
+    "dividende": {"fr": "Retenue sur les revenus distribués",
+                  "ar": "الخصم على الأرباح الموزعة"},
+    "pv": {"fr": "Taux de la plus-value de cession de titres",
+           "ar": "نسبة القيمة الزائدة المتأتية من التفويت في السندات"},
+    "pv_courte": {"fr": "Taux de la plus-value de titres non cotés détenus peu de temps",
+                  "ar": "نسبة القيمة الزائدة للسندات غير المدرجة المحتفظ بها مدة قصيرة"},
+    "franchise": {"fr": "Franchise annuelle de la plus-value de titres",
+                  "ar": "العتبة السنوية المعفاة من القيمة الزائدة للسندات"},
+}
+
+
+def irpp_epargne_taux(langue):
+    m = MOTS_EPARGNE[langue]
+
+    def en_cours(chemin, date):
+        point = ot.en_vigueur(ot.serie_datee(f"{chemin}.yaml"), date)
+        return point is not None and point[1] is not None
+
+    def lire(chemin, date, cle, formateur="taux"):
+        return ot.Lecture(f"{chemin}.yaml", date, formateur, LIBELLES_EPARGNE[cle])
+
+    def lien(colonne, date, texte):
+        ancre = ANCRES_EPARGNE[colonne].get(date)
+        return f"[{texte}](#{ancre})" if ancre else texte
+
+    def lien_gabarit(colonne, date, modele):
+        """Place le lien autour de la valeur lue : `{t}` devient `[{t}](#ancre)`."""
+        ancre = ANCRES_EPARGNE[colonne].get(date)
+        return modele.replace("{t}", f"[{{t}}](#{ancre})") if ancre else modele
+
+    lignes = []
+    for d in EPARGNE_DATES:
+        annee = int(d[:4])
+        tranches = ot.bareme_a_la_date(BAREME, datetime.date.fromisoformat(d))
+        if not tranches:
+            raise ValueError(f"barème de l'IRPP : aucune tranche au {d}")
+        ot.releve_note(BAREME, m["lien_bareme"])
+        derniere = ot.formate_taux(tranches[-1][1])
+        if d in ("1990-01-01", "2025-01-01"):
+            date_txt = m["revenus"].format(annee=annee)
+        else:
+            date_txt = ("[" + ot.formate_date(d, langue) + "]{.insecable}") if langue == "fr" \
+                else ot.formate_date(d, langue)
+
+        # Intérêts
+        if en_cours(f"{CAP}/taux_liberatoire", d):
+            interets = ot.gabarit(lien_gabarit("interets", d, m["liberatoire"]),
+                                  t=lire(f"{CAP}/taux_liberatoire", d, "liberatoire"))
+        else:
+            modele = m["bareme"]
+            lectures = {}
+            if en_cours(f"{CAP}/taux_imputable", d):
+                modele += " ; " + lien_gabarit("interets", d, m["imputable"])
+                lectures["t"] = lire(f"{CAP}/taux_imputable", d, "imputable")
+                if en_cours(f"{CAP}/taux_comptes_speciaux_epargne", d):
+                    cs = ot.en_vigueur(ot.serie_datee(f"{CAP}/taux_comptes_speciaux_epargne.yaml"), d)[1]
+                    imp = ot.en_vigueur(ot.serie_datee(f"{CAP}/taux_imputable.yaml"), d)[1]
+                    if cs != imp:
+                        modele += m["comptes"]
+                        lectures["s"] = lire(f"{CAP}/taux_comptes_speciaux_epargne", d, "comptes")
+            if en_cours(f"{CAP}/taux_depots_terme", d):
+                ancre = ANCRES_EPARGNE["interets"].get(d)
+                texte_lien = m["liberatoire"].replace("{t}", "{d}")
+                texte_lien = f"[{texte_lien}](#{ancre})" if ancre else texte_lien
+                modele += m["depots"].format(lien=texte_lien)
+                lectures["d"] = lire(f"{CAP}/taux_depots_terme", d, "depots")
+            interets = ot.gabarit(modele, **lectures)
+        # Titres anonymes
+        titres_ok = en_cours(f"{CAP}/taux_titres_porteur_anonymes", d)
+        if titres_ok:
+            t = ot.en_vigueur(ot.serie_datee(f"{CAP}/taux_titres_porteur_anonymes.yaml"), d)[1]
+            lectures = {"t": lire(f"{CAP}/taux_titres_porteur_anonymes", d, "titres")}
+            if en_cours(f"{CAP}/taux_obligations_porteur_anonymes", d):
+                o = ot.en_vigueur(ot.serie_datee(f"{CAP}/taux_obligations_porteur_anonymes.yaml"), d)[1]
+            else:
+                o = None
+            if o is not None and o != t:
+                modele = m["obligations"]
+                lectures["o"] = lire(f"{CAP}/taux_obligations_porteur_anonymes", d, "obligations")
+            else:
+                modele = m["liberatoire"]
+            if d == "1990-01-01" and langue == "fr":
+                # Le paramètre ne vise que les bons de caisse jusqu'au 1er janvier 1992
+                # (art. 52-I d du code) ; le terme arabe n'est pas établi.
+                modele += " (bons de caisse)"
+            anonymes = ot.gabarit(lien_gabarit("anonymes", d, modele), **lectures)
+        else:
+            anonymes = m["commun"] if d == "1997-01-01" else "—"
+        # Dividendes
+        if en_cours(f"{VM}/revenus_distribues/taux_retenue_source", d):
+            dividende = ot.gabarit(lien_gabarit("dividende", d, m["liberatoire"]),
+                                   t=lire(f"{VM}/revenus_distribues/taux_retenue_source", d,
+                                          "dividende"))
+        else:
+            dividende = lien("dividende", d, m["exonere"])
+        # Plus-value de titres non cotés
+        pv = f"{VM}/plus_value_cession_titres"
+        if not en_cours(f"{pv}/taux", d):
+            plus_value = m["hors_champ"]
+        elif en_cours(f"{pv}/taux_non_cotes_detention_courte", d):
+            plus_value = ot.gabarit(lien_gabarit("plus_value", d, m["pv_courte"]),
+                                    t=lire(f"{pv}/taux", d, "pv"),
+                                    c=lire(f"{pv}/taux_non_cotes_detention_courte", d, "pv_courte"))
+        else:
+            plus_value = ot.gabarit(lien_gabarit("plus_value", d, m["pv_franchise"]),
+                                    t=lire(f"{pv}/taux", d, "pv"),
+                                    f=lire(f"{pv}/franchise", d, "franchise", "dinars"))
+        lignes.append([date_txt, derniere, interets, anonymes, dividende, plus_value])
+    return ot.tableau_gabarit(m["entetes"], lignes, langue)
+
+
 def parametres_dans_le_temps() -> int:
     """Les séries longues et les tableaux aux dates repères. Rend 0, ou 1 au premier échec."""
     generateur = Path(__file__).name
@@ -723,8 +905,21 @@ def main() -> int:
             entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
                    f"     Paramètres : {TVA}/taux_*/taux.yaml -->\n\n")
 
+        try:
+            df, liens = ot.avec_liens(lambda: irpp_epargne_taux(langue))
+        except ValueError as erreur:
+            print(f"échec : {langue}/irpp_epargne_taux.md : {erreur}", file=sys.stderr)
+            return 1
+        if df is None:
+            print(f"échec : {langue}/irpp_epargne_taux.md", file=sys.stderr)
+            return 1
+        ot.ecrire_tableau(
+            sortie / "irpp_epargne_taux.md", df, liens, langue,
+            entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
+                   f"     Paramètres : {CAP}/*, {VM}/* -->\n\n")
+
         total = (len(TABLEAUX_CPE) + len(evolutions(langue))
-                 + len(evolutions_datees(langue)) + len(TABLEAUX) + 1 + len(TABLEAUX_IS) + 1)
+                 + len(evolutions_datees(langue)) + len(TABLEAUX) + 1 + len(TABLEAUX_IS) + 2)
         print(f"✓ {langue} : {total} tableaux")
     return parametres_dans_le_temps()
 
