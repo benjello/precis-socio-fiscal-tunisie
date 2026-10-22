@@ -1,0 +1,39 @@
+- libelle: أجل الإعلام، الأجراء غير الخالصين بالشهر
+  parametre: parameters/marche_travail/rupture_contrat/preavis/duree_salaries_non_mensuels.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.preavis.duree_salaries_non_mensuels/table/
+- libelle: مكافأة نهاية الخدمة، الأقدمية الدنيا
+  parametre: parameters/marche_travail/rupture_contrat/gratification_fin_service/anciennete_minimale.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.gratification_fin_service.anciennete_minimale/table/
+- libelle: عقد الشغل لمدة معينة، المدة القصوى خارج حالات اللجوء إليه
+  parametre: parameters/marche_travail/rupture_contrat/contrat_duree_determinee/duree_maximale_hors_cas_recours.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.contrat_duree_determinee.duree_maximale_hors_cas_recours/table/
+- libelle: أجل الإعلام بإنهاء عقد الشغل لمدة غير معينة
+  parametre: parameters/marche_travail/rupture_contrat/preavis/duree.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.preavis.duree/table/
+- libelle: مكافأة نهاية الخدمة، عدد الأيام عن كل شهر خدمة
+  parametre: parameters/marche_travail/rupture_contrat/gratification_fin_service/jours_par_mois_service.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.gratification_fin_service.jours_par_mois_service/table/
+- libelle: مكافأة نهاية الخدمة، السقف
+  parametre: parameters/marche_travail/rupture_contrat/gratification_fin_service/plafond.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.gratification_fin_service.plafond/table/
+- libelle: غرامات الطرد التعسفي، الحد الأدنى عن كل سنة أقدمية
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/minimum_par_annee_anciennete.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.minimum_par_annee_anciennete/table/
+- libelle: غرامات الطرد التعسفي، الحد الأقصى عن كل سنة أقدمية
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/maximum_par_annee_anciennete.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.maximum_par_annee_anciennete/table/
+- libelle: غرامات الطرد التعسفي، السقف
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/plafond.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.plafond/table/
+- libelle: غرامات خرق الإجراءات، الحد الأدنى
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/vice_procedure_minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.vice_procedure_minimum/table/
+- libelle: غرامات خرق الإجراءات، الحد الأقصى
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/vice_procedure_maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.vice_procedure_maximum/table/
+- libelle: فترة التجربة، المدة القصوى
+  parametre: parameters/marche_travail/rupture_contrat/periode_essai/duree_maximale.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.periode_essai.duree_maximale/table/
+- libelle: فترة التجربة، العدد الأقصى للتجديدات
+  parametre: parameters/marche_travail/rupture_contrat/periode_essai/renouvellements_maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.periode_essai.renouvellements_maximum/table/

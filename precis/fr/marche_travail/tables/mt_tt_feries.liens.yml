@@ -1,0 +1,6 @@
+- libelle: Nombre de jours fériés payés de la loi
+  parametre: parameters/marche_travail/temps_travail/jours_feries/nombre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.jours_feries.nombre/table/
+- libelle: Jours fériés payés de la convention cadre
+  parametre: parameters/marche_travail/temps_travail/convention_cadre/jours_feries.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.convention_cadre.jours_feries/table/

@@ -1,0 +1,78 @@
+- libelle: منحة الرخصة، المقسوم عليه، 21 سنة فأكثر
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/indemnite_diviseur/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.indemnite_diviseur.adultes/table/
+- libelle: المدة القصوى للشغل في الأسبوع
+  parametre: parameters/marche_travail/temps_travail/duree/hebdomadaire_maximale.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.duree.hebdomadaire_maximale/table/
+- libelle: المدة الأسبوعية التي يمكن تخفيض مدة الشغل إلى حدها
+  parametre: parameters/marche_travail/temps_travail/duree/hebdomadaire_plancher_reduction.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.duree.hebdomadaire_plancher_reduction/table/
+- libelle: السقف الأسبوعي بما في ذلك الساعات الإضافية
+  parametre: parameters/marche_travail/temps_travail/duree/hebdomadaire_plafond_heures_supplementaires.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.duree.hebdomadaire_plafond_heures_supplementaires/table/
+- libelle: الزيادة، نظام 48 ساعة
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regime_48h.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.heures_supplementaires.regime_48h/table/
+- libelle: الأنظمة الأقل من 48 ساعة، الزيادة إلى حدود العتبة
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regimes_inferieurs_48h/taux_jusqu_au_seuil.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.heures_supplementaires.regimes_inferieurs_48h.taux_jusqu_au_seuil/table/
+- libelle: الأنظمة الأقل من 48 ساعة، العتبة
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regimes_inferieurs_48h/seuil.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.heures_supplementaires.regimes_inferieurs_48h.seuil/table/
+- libelle: الأنظمة الأقل من 48 ساعة، الزيادة فوق العتبة
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regimes_inferieurs_48h/taux_au_dela_du_seuil.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.heures_supplementaires.regimes_inferieurs_48h.taux_au_dela_du_seuil/table/
+- libelle: الزيادة، العمل لوقت جزئي
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/temps_partiel.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.heures_supplementaires.temps_partiel/table/
+- libelle: المدة السنوية القصوى للشغل الفلاحي
+  parametre: parameters/marche_travail/temps_travail/duree/agriculture_annuelle_maximale.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.duree.agriculture_annuelle_maximale/table/
+- libelle: الزيادة، الشغل الفلاحي
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/agriculture.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.heures_supplementaires.agriculture/table/
+- libelle: الرخصة السنوية، الأيام عن كل شهر، 21 سنة فأكثر
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/jours_par_mois/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.jours_par_mois.adultes/table/
+- libelle: الرخصة السنوية، السقف بأيام العمل، 21 سنة فأكثر
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours_ouvrables/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours_ouvrables.adultes/table/
+- libelle: الرخصة السنوية، الأيام عن كل شهر، أقل من 18 سنة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/jours_par_mois/moins_18_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.jours_par_mois.moins_18_ans/table/
+- libelle: الرخصة السنوية، السقف بأيام العمل، أقل من 18 سنة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours_ouvrables/moins_18_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours_ouvrables.moins_18_ans/table/
+- libelle: الرخصة السنوية، الأيام عن كل شهر، من 18 إلى 20 سنة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/jours_par_mois/de_18_a_20_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.jours_par_mois.de_18_a_20_ans/table/
+- libelle: الرخصة السنوية، السقف بأيام العمل، من 18 إلى 20 سنة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours_ouvrables/de_18_a_20_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours_ouvrables.de_18_a_20_ans/table/
+- libelle: رخصة الأقدمية، الأيام عن كل فترة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/anciennete/jours_ouvrables_par_periode.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.anciennete.jours_ouvrables_par_periode/table/
+- libelle: رخصة الأقدمية، مدة الفترة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/anciennete/duree_periode.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.anciennete.duree_periode/table/
+- libelle: رخصة الأقدمية، السقف الجملي
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/anciennete/plafond_total_jours_ouvrables.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.anciennete.plafond_total_jours_ouvrables/table/
+- libelle: عدد الأعياد الخالصة الأجر بحكم القانون
+  parametre: parameters/marche_travail/temps_travail/jours_feries/nombre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.jours_feries.nombre/table/
+- libelle: قائمة الأعياد الخالصة الأجر بحكم القانون
+  parametre: parameters/marche_travail/temps_travail/jours_feries/liste.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.jours_feries.liste/table/
+- libelle: الأعياد الخالصة الأجر بالاتفاقية الإطارية
+  parametre: parameters/marche_travail/temps_travail/convention_cadre/jours_feries.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.convention_cadre.jours_feries/table/
+- libelle: منحة يوم العيد المشغول، مجلة الشغل
+  parametre: parameters/marche_travail/temps_travail/jours_feries/indemnite_jour_ferie_travaille.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.jours_feries.indemnite_jour_ferie_travaille/table/
+- libelle: زيادة يوم العيد المشغول، الاتفاقية الإطارية
+  parametre: parameters/marche_travail/temps_travail/convention_cadre/majoration_jour_ferie_travaille.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.convention_cadre.majoration_jour_ferie_travaille/table/
+- libelle: عطلة الأبوة، المدة
+  parametre: parameters/marche_travail/temps_travail/conge_paternite/duree.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_paternite.duree/table/

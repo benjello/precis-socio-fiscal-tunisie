@@ -1,0 +1,45 @@
+- libelle: Indemnité de congé, diviseur, 21 ans et plus
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/indemnite_diviseur/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.indemnite_diviseur.adultes/table/
+- libelle: Durée hebdomadaire maximale du travail
+  parametre: parameters/marche_travail/temps_travail/duree/hebdomadaire_maximale.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.duree.hebdomadaire_maximale/table/
+- libelle: Durée hebdomadaire jusqu'à laquelle la durée du travail peut être réduite
+  parametre: parameters/marche_travail/temps_travail/duree/hebdomadaire_plancher_reduction.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.duree.hebdomadaire_plancher_reduction/table/
+- libelle: Majoration, régime de 48 heures
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regime_48h.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.heures_supplementaires.regime_48h/table/
+- libelle: Majoration, régime de 40 heures, premières heures
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regime_40h/taux_premieres_heures.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.heures_supplementaires.regime_40h.taux_premieres_heures/table/
+- libelle: Régime de 40 heures, nombre de premières heures supplémentaires
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regime_40h/nombre_premieres_heures.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.heures_supplementaires.regime_40h.nombre_premieres_heures/table/
+- libelle: Majoration, régime de 40 heures, heures suivantes
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regime_40h/taux_heures_suivantes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.heures_supplementaires.regime_40h.taux_heures_suivantes/table/
+- libelle: Régimes inférieurs à 48 heures, majoration jusqu'au seuil
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regimes_inferieurs_48h/taux_jusqu_au_seuil.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.heures_supplementaires.regimes_inferieurs_48h.taux_jusqu_au_seuil/table/
+- libelle: Régimes inférieurs à 48 heures, seuil
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regimes_inferieurs_48h/seuil.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.heures_supplementaires.regimes_inferieurs_48h.seuil/table/
+- libelle: Régimes inférieurs à 48 heures, majoration au-delà du seuil
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/regimes_inferieurs_48h/taux_au_dela_du_seuil.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.heures_supplementaires.regimes_inferieurs_48h.taux_au_dela_du_seuil/table/
+- libelle: Majoration, temps partiel
+  parametre: parameters/marche_travail/temps_travail/heures_supplementaires/temps_partiel.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.heures_supplementaires.temps_partiel/table/
+- libelle: Congé annuel, jours par mois, 21 ans et plus
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/jours_par_mois/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.jours_par_mois.adultes/table/
+- libelle: Congé annuel, plafond en jours ouvrables, 21 ans et plus
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours_ouvrables/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours_ouvrables.adultes/table/
+- libelle: Nombre de jours fériés payés de la loi
+  parametre: parameters/marche_travail/temps_travail/jours_feries/nombre.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.jours_feries.nombre/table/
+- libelle: Jours fériés payés de la convention cadre
+  parametre: parameters/marche_travail/temps_travail/convention_cadre/jours_feries.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.convention_cadre.jours_feries/table/
