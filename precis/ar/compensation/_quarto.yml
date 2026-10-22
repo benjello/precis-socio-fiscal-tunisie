@@ -12,6 +12,10 @@ book:
   repo-subdir: precis/ar/compensation
   repo-branch: master
   repo-actions: [edit, issue]
+  tools:
+    - icon: house
+      text: "الصفحة الرئيسية"
+      href: ../index.html
   downloads: [pdf]
   chapters:
     - index.qmd

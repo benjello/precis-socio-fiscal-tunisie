@@ -12,6 +12,10 @@ book:
   repo-subdir: precis/ar/sante
   repo-branch: master
   repo-actions: [edit, issue]
+  tools:
+    - icon: house
+      text: "الصفحة الرئيسية"
+      href: ../index.html
   downloads: [pdf]
   chapters:
     # - index.qmd : à déclarer dès la livraison de la traduction
