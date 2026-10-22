@@ -1,0 +1,7 @@
+- libelle: Retenue libératoire sur les comptes d'épargne-emprunts obligataires
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_comptes_epargne_emprunts_obligataires.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_comptes_epargne_emprunts_obligataires/table/
+- libelle: Retenue complémentaire en cas de retrait d'un compte d'épargne-emprunts
+    obligataires
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_complementaire_retrait_epargne_emprunts_obligataires.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_complementaire_retrait_epargne_emprunts_obligataires/table/

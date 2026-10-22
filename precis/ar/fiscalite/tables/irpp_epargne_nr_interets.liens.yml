@@ -1,0 +1,9 @@
+- libelle: الخصم التحرري على مداخيل رؤوس الأموال المنقولة لغير المقيمين
+  parametre: parameters/impot_revenu/capitaux_mobiliers/non_residents/taux_revenus_capitaux_mobiliers.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.non_residents.taux_revenus_capitaux_mobiliers/table/
+- libelle: الخصم على فوائد قروض البنوك غير المنتصبة
+  parametre: parameters/impot_revenu/capitaux_mobiliers/non_residents/taux_interets_prets_banques_non_etablies.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.non_residents.taux_interets_prets_banques_non_etablies/table/
+- libelle: الخصم على المداخيل المدفوعة في بلد ذي نظام جبائي تفاضلي
+  parametre: parameters/impot_revenu/capitaux_mobiliers/non_residents/taux_etats_regime_fiscal_privilegie.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.non_residents.taux_etats_regime_fiscal_privilegie/table/

@@ -1040,6 +1040,228 @@ def epargne_cotees(langue):
     return ot.tableau_gabarit([m["effet"], m["pv_cotee"]], lignes, langue)
 
 
+# ----------------- retenues sur les fonds, les non-résidents, les jetons de présence
+#
+# Cinq tableaux de plus, sous les mêmes conventions : la date et la valeur viennent des
+# feuilles, le libellé du texte et son ancre (registre du chapitre) sont éditoriaux. Une feuille
+# dont la dernière valeur est vide (retenue abrogée) s'écrit en toutes lettres à cette date.
+# Hors tableaux : la liste des États à régime fiscal privilégié, l'extension de 2002 aux fonds
+# communs de placement et `retenue_liberatoire/taux`, que le modèle ne porte pas.
+
+NR_CAP = "parameters/impot_revenu/capitaux_mobiliers/non_residents"
+NR_PV = f"{VM}/plus_value_cession_titres/non_residents"
+JETONS = f"{VM}/jetons_presence/taux_retenue_source"
+
+LIB_RETENUES = {
+    "fonds": {"fr": "Retenue définitive sur les revenus de capitaux mobiliers des organismes "
+                    "exonérés et des fonds",
+              "ar": "الخصم النهائي على مداخيل رؤوس الأموال المنقولة للهيئات المعفاة والصناديق"},
+    "ceo_lib": {"fr": "Retenue libératoire sur les comptes d'épargne-emprunts obligataires",
+                "ar": "الخصم التحرري على حسابات الادخار في الرقاع"},
+    "ceo_compl": {"fr": "Retenue complémentaire en cas de retrait d'un compte d'épargne-emprunts "
+                        "obligataires",
+                  "ar": "الخصم الإضافي عند السحب من حساب الادخار في الرقاع"},
+    "nr_rcm": {"fr": "Retenue libératoire sur les revenus de capitaux mobiliers des non-résidents",
+               "ar": "الخصم التحرري على مداخيل رؤوس الأموال المنقولة لغير المقيمين"},
+    "nr_banques": {"fr": "Retenue sur les intérêts des prêts des banques non établies",
+                   "ar": "الخصم على فوائد قروض البنوك غير المنتصبة"},
+    "nr_privilegie": {"fr": "Retenue sur les revenus servis dans un pays à régime fiscal privilégié",
+                      "ar": "الخصم على المداخيل المدفوعة في بلد ذي نظام جبائي تفاضلي"},
+    "nr_prix_pm": {"fr": "Retenue sur le prix de cession, personnes morales non résidentes",
+                   "ar": "الخصم على ثمن التفويت، الأشخاص المعنويون غير المقيمين"},
+    "nr_prix_pp": {"fr": "Retenue sur le prix de cession, personnes physiques non résidentes",
+                   "ar": "الخصم على ثمن التفويت، الأشخاص الطبيعيون غير المقيمين"},
+    "nr_pv_pm": {"fr": "Retenue sur la plus-value, personnes morales non résidentes",
+                 "ar": "الخصم على القيمة الزائدة، الأشخاص المعنويون غير المقيمين"},
+    "nr_pv_pp": {"fr": "Retenue sur la plus-value, personnes physiques non résidentes",
+                 "ar": "الخصم على القيمة الزائدة، الأشخاص الطبيعيون غير المقيمين"},
+    "nr_plaf_pm": {"fr": "Plafond de la retenue en part du prix, personnes morales non résidentes",
+                   "ar": "سقف الخصم بنسبة من الثمن، الأشخاص المعنويون غير المقيمين"},
+    "nr_plaf_pp": {"fr": "Plafond de la retenue en part du prix, personnes physiques non résidentes",
+                   "ar": "سقف الخصم بنسبة من الثمن، الأشخاص الطبيعيون غير المقيمين"},
+    "jetons": {"fr": "Retenue sur les jetons de présence",
+               "ar": "الخصم على منح الحضور"},
+}
+
+MOTS_RETENUES = {
+    "fr": {
+        "effet": "Date d'effet", "texte": "Texte",
+        "definitive": "Retenue définitive", "abrogee": "abrogée", "supprimee": "supprimée",
+        "ceo_lib": "Retenue libératoire", "ceo_compl": "Retenue complémentaire en cas de retrait",
+        "nr_rcm": "Revenus de capitaux mobiliers", "nr_banques": "Intérêts des prêts des banques non établies",
+        "nr_privilegie": "Bénéficiaire dans un pays à régime fiscal privilégié",
+        "commun": "régime commun",
+        "pm": "Personnes morales", "pp": "Personnes physiques",
+        "prix": "{t} du prix de cession", "pv": "{t} de la plus-value",
+        "pv_plafond": "{t} de la plus-value, dans la limite de {p} du prix",
+        "jetons": "Retenue", "revenus": "revenus {annee}",
+    },
+    "ar": {
+        "effet": "تاريخ النفاذ", "texte": "النص",
+        "definitive": "الخصم النهائي", "abrogee": "ملغى", "supprimee": "ملغى",
+        "ceo_lib": "الخصم التحرري", "ceo_compl": "الخصم الإضافي عند السحب",
+        "nr_rcm": "مداخيل رؤوس الأموال المنقولة",
+        "nr_banques": "فوائد قروض البنوك غير المنتصبة",
+        "nr_privilegie": "المنتفع في بلد ذي نظام جبائي تفاضلي",
+        "commun": "النظام العام",
+        "pm": "الأشخاص المعنويون", "pp": "الأشخاص الطبيعيون",
+        "prix": "{t} من ثمن التفويت", "pv": "{t} من القيمة الزائدة",
+        "pv_plafond": "{t} من القيمة الزائدة، في حدود {p} من الثمن",
+        "jetons": "الخصم", "revenus": "مداخيل {annee}",
+    },
+}
+
+
+def _t(fr, ar):
+    return {"fr": fr, "ar": ar}
+
+
+_LF = "loi de finances pour {a}, art. {n}"
+_QF = "قانون المالية لسنة {a}، الفصل {n}"
+TEXTES_PLAFONDS.update({
+    "fonds": {
+        "1992-01-02": (_t("loi de finances pour 1992, art. 31", "قانون المالية لسنة 1992، الفصل 31"),
+                       "r-epargne-fonds-1992"),
+        "2021-01-01": (_t("loi de finances pour 2021, art. 17", "قانون المالية لسنة 2021، الفصل 17"),
+                       "r-epargne-fonds-2021"),
+        "2022-01-01": (_t("décret-loi n° 2021-21, art. 38", "المرسوم عدد 2021-21، الفصل 38"),
+                       "r-epargne-fonds-2022"),
+    },
+    "ceo": {
+        "1992-01-02": (_t("loi de finances pour 1992, art. 33", "قانون المالية لسنة 1992، الفصل 33"),
+                       "r-epargne-cs-1992-ceo"),
+        "1997-01-01": (_t("loi de finances pour 1997, art. 33", "قانون المالية لسنة 1997، الفصل 33"),
+                       "r-epargne-cs-1997"),
+    },
+    "nr_interets": {
+        "1990-01-01": (_t("code, art. 52", "المجلة، الفصل 52"), "r-epargne-nr-1990"),
+        "1992-01-02": (_t("loi de finances pour 1992, art. 31", "قانون المالية لسنة 1992، الفصل 31"),
+                       "r-epargne-nr-1992"),
+        "1995-01-01": (_t("loi de finances pour 1995, art. 54", "قانون المالية لسنة 1995، الفصل 54"),
+                       "r-epargne-nr-1995"),
+        "1997-01-01": (_t("loi de finances pour 1997, art. 30 à 32",
+                          "قانون المالية لسنة 1997، الفصول 30 إلى 32"), "r-epargne-nr-1997"),
+        "2011-01-01": (_t("loi de finances pour 2011, art. 43", "قانون المالية لسنة 2011، الفصل 43"),
+                       "r-epargne-nr-2011-e"),
+        "2014-01-01": (_t("loi de finances pour 2014, art. 44", "قانون المالية لسنة 2014، الفصل 44"),
+                       "r-epargne-nr-2014-paradis"),
+        "2018-01-01": (_t("loi de finances pour 2018, art. 47", "قانون المالية لسنة 2018، الفصل 47"),
+                       "r-epargne-nr-2018"),
+        "2019-01-01": (_t("loi de finances pour 2019, art. 35", "قانون المالية لسنة 2019، الفصل 35"),
+                       "r-epargne-nr-2019"),
+    },
+    "nr_pv": {
+        "2011-01-01": (_t("loi de finances pour 2011, art. 41", "قانون المالية لسنة 2011، الفصل 41"),
+                       "r-epargne-nr-2011"),
+        "2012-01-01": (_t("loi de finances pour 2012, art. 15", "قانون المالية لسنة 2012، الفصل 15"),
+                       "r-epargne-nr-2012"),
+        "2012-05-25": (_t("loi de finances complémentaire pour 2012, art. 12",
+                          "قانون المالية التكميلي لسنة 2012، الفصل 12"), "r-epargne-nr-2012-lfc"),
+        "2014-01-01": (_t("loi de finances pour 2014, art. 18", "قانون المالية لسنة 2014، الفصل 18"),
+                       "r-epargne-nr-2014"),
+        "2021-01-01": (_t("loi de finances pour 2021, art. 14", "قانون المالية لسنة 2021، الفصل 14"),
+                       "r-epargne-nr-2021"),
+        "2025-01-01": (_t("loi de finances pour 2025, art. 37", "قانون المالية لسنة 2025، الفصل 37"),
+                       "r-epargne-nr-2025"),
+    },
+    "jetons": {
+        "1995-01-01": (_t("loi de finances pour 1995, art. 50 à 53",
+                          "قانون المالية لسنة 1995، الفصول 50 إلى 53"), "r-epargne-distribues-1995"),
+        "2005-01-01": (_t("loi de finances pour 2005, art. 69", "قانون المالية لسنة 2005، الفصل 69"),
+                       "r-epargne-distribues-2005"),
+        "2017-01-01": (_t("loi de finances pour 2017, art. 30", "قانون المالية لسنة 2017، الفصل 30"),
+                       "r-epargne-distribues-2017"),
+    },
+})
+
+
+def _lire(chemin: str, d: str, cle: str, formateur="taux") -> ot.Lecture:
+    return ot.Lecture(f"{chemin}.yaml", d, formateur, LIB_RETENUES[cle])
+
+
+def _date_retenue(d: str, langue: str, premiere: bool = False) -> str:
+    if premiere:
+        return MOTS_RETENUES[langue]["revenus"].format(annee=d[:4])
+    return _date_effet(d, langue, deduction=False)
+
+
+def epargne_fonds(langue):
+    m = MOTS_RETENUES[langue]
+    chemin = f"{CAP}/taux_definitif_organismes_exoneres"
+    lignes = []
+    for d in _dates_series(chemin):
+        cellule = (ot.gabarit("{t}", t=_lire(chemin, d, "fonds")) if _valeur(chemin, d) is not None
+                   else m["abrogee"])
+        lignes.append([_date_retenue(d, langue), cellule, _texte_plafonds("fonds", d, langue)])
+    return ot.tableau_gabarit([m["effet"], m["definitive"], m["texte"]], lignes, langue)
+
+
+def epargne_ceo(langue):
+    m = MOTS_RETENUES[langue]
+    lib = f"{CAP}/taux_comptes_epargne_emprunts_obligataires"
+    compl = f"{CAP}/taux_complementaire_retrait_epargne_emprunts_obligataires"
+    lignes = []
+    for d in _dates_series(lib, compl):
+        if _valeur(lib, d) is None:
+            cases = [m["supprimee"], m["supprimee"]]
+        else:
+            cases = [ot.gabarit("{t}", t=_lire(lib, d, "ceo_lib")),
+                     ot.gabarit("{t}", t=_lire(compl, d, "ceo_compl"))]
+        lignes.append([_date_retenue(d, langue), *cases, _texte_plafonds("ceo", d, langue)])
+    return ot.tableau_gabarit([m["effet"], m["ceo_lib"], m["ceo_compl"], m["texte"]], lignes,
+                              langue)
+
+
+def epargne_nr_interets(langue):
+    m = MOTS_RETENUES[langue]
+    rcm = f"{NR_CAP}/taux_revenus_capitaux_mobiliers"
+    banques = f"{NR_CAP}/taux_interets_prets_banques_non_etablies"
+    privilegie = f"{NR_CAP}/taux_etats_regime_fiscal_privilegie"
+    dates = _dates_series(rcm, banques, privilegie)
+    lignes = []
+    for i, d in enumerate(dates):
+        c_banques = (ot.gabarit("{t}", t=_lire(banques, d, "nr_banques"))
+                     if _valeur(banques, d) is not None else m["commun"])
+        c_privilegie = (ot.gabarit("{t}", t=_lire(privilegie, d, "nr_privilegie"))
+                        if _valeur(privilegie, d) is not None else "—")
+        lignes.append([_date_retenue(d, langue, premiere=i == 0),
+                       ot.gabarit("{t}", t=_lire(rcm, d, "nr_rcm")), c_banques, c_privilegie,
+                       _texte_plafonds("nr_interets", d, langue)])
+    return ot.tableau_gabarit([m["effet"], m["nr_rcm"], m["nr_banques"], m["nr_privilegie"],
+                               m["texte"]], lignes, langue)
+
+
+def epargne_nr_plus_values(langue):
+    m = MOTS_RETENUES[langue]
+    categories = {"pm": ("taux_retenue_prix_personnes_morales", "taux_personnes_morales",
+                         "plafond_prix_personnes_morales"),
+                  "pp": ("taux_retenue_prix_personnes_physiques", "taux_personnes_physiques",
+                         "plafond_prix_personnes_physiques")}
+    chemins = [f"{NR_PV}/{nom}" for trio in categories.values() for nom in trio]
+    lignes = []
+    for d in _dates_series(*chemins):
+        cases = []
+        for cat, (prix, pv, plafond) in categories.items():
+            prix, pv, plafond = (f"{NR_PV}/{prix}", f"{NR_PV}/{pv}", f"{NR_PV}/{plafond}")
+            if _valeur(prix, d) is not None:
+                cases.append(ot.gabarit(m["prix"], t=_lire(prix, d, f"nr_prix_{cat}")))
+            elif _valeur(plafond, d) is not None:
+                cases.append(ot.gabarit(m["pv_plafond"], t=_lire(pv, d, f"nr_pv_{cat}"),
+                                        p=_lire(plafond, d, f"nr_plaf_{cat}")))
+            else:
+                cases.append(ot.gabarit(m["pv"], t=_lire(pv, d, f"nr_pv_{cat}")))
+        lignes.append([_date_retenue(d, langue), *cases,
+                       _texte_plafonds("nr_pv", d, langue)])
+    return ot.tableau_gabarit([m["effet"], m["pm"], m["pp"], m["texte"]], lignes, langue)
+
+
+def epargne_jetons(langue):
+    m = MOTS_RETENUES[langue]
+    lignes = [[_date_retenue(d, langue), ot.gabarit("{t}", t=_lire(JETONS, d, "jetons")),
+               _texte_plafonds("jetons", d, langue)] for d in _dates_series(JETONS)]
+    return ot.tableau_gabarit([m["effet"], m["jetons"], m["texte"]], lignes, langue)
+
+
 TABLEAUX_EPARGNE = [
     ("irpp_epargne_comptes_speciaux", epargne_comptes_speciaux, f"{DED}/interets_*"),
     ("irpp_epargne_assurance_vie", epargne_assurance_vie, f"{DED}/assurance_vie/*"),
@@ -1047,6 +1269,13 @@ TABLEAUX_EPARGNE = [
     ("irpp_epargne_cei", epargne_cei,
      f"{DED}/cea_cei/cei, {DED}/interets_comptes_epargne_investissement/plaf"),
     ("irpp_epargne_cotees", epargne_cotees, f"{COTEES}/*"),
+    ("irpp_epargne_fonds", epargne_fonds, f"{CAP}/taux_definitif_organismes_exoneres"),
+    ("irpp_epargne_ceo", epargne_ceo,
+     f"{CAP}/taux_comptes_epargne_emprunts_obligataires, "
+     f"{CAP}/taux_complementaire_retrait_epargne_emprunts_obligataires"),
+    ("irpp_epargne_nr_interets", epargne_nr_interets, f"{NR_CAP}/*"),
+    ("irpp_epargne_nr_plus_values", epargne_nr_plus_values, f"{NR_PV}/*"),
+    ("irpp_epargne_jetons", epargne_jetons, JETONS),
 ]
 
 
