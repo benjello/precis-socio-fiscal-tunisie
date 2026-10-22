@@ -58,19 +58,19 @@
 - libelle: رخصة الأقدمية، السقف الجملي
   parametre: parameters/marche_travail/temps_travail/conge_annuel/anciennete/plafond_total_jours_ouvrables.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.anciennete.plafond_total_jours_ouvrables/table/
-- libelle: عدد الأعياد الخالصة الأجر بحكم القانون
+- libelle: عدد أيام عطلة خالصة الأجر بحكم القانون
   parametre: parameters/marche_travail/temps_travail/jours_feries/nombre.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.jours_feries.nombre/table/
-- libelle: قائمة الأعياد الخالصة الأجر بحكم القانون
+- libelle: قائمة أيام عطلة خالصة الأجر بحكم القانون
   parametre: parameters/marche_travail/temps_travail/jours_feries/liste.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.jours_feries.liste/table/
-- libelle: الأعياد الخالصة الأجر بالاتفاقية الإطارية
+- libelle: أيام عطلة خالصة الأجر بالاتفاقية المشتركة الإطارية
   parametre: parameters/marche_travail/temps_travail/convention_cadre/jours_feries.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.convention_cadre.jours_feries/table/
 - libelle: منحة يوم العيد المشغول، مجلة الشغل
   parametre: parameters/marche_travail/temps_travail/jours_feries/indemnite_jour_ferie_travaille.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.jours_feries.indemnite_jour_ferie_travaille/table/
-- libelle: زيادة يوم العيد المشغول، الاتفاقية الإطارية
+- libelle: زيادة يوم العيد المشغول، الاتفاقية المشتركة الإطارية
   parametre: parameters/marche_travail/temps_travail/convention_cadre/majoration_jour_ferie_travaille.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.convention_cadre.majoration_jour_ferie_travaille/table/
 - libelle: عطلة الأبوة، المدة

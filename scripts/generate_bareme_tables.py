@@ -625,14 +625,14 @@ MOTS_EPARGNE = {
     },
     "ar": {
         "entetes": ["تاريخ النفاذ", "الشريحة الأخيرة من الجدول",
-                    "الفوائد: الإيداعات والسندات وأذون الخزينة",
+                    "الفوائد: الإيداعات والرقاع وأذون الخزينة",
                     "السند لحامله المجهول", "الأرباح الموزعة",
-                    "القيمة الزائدة، سهم غير مدرج، حصة اجتماعية"],
+                    "القيمة الزائدة، سهم غير مدرج، منابة اجتماعية"],
         "revenus": "مداخيل {annee}", "bareme": "الجدول", "imputable": "{t} قابل للطرح",
         "liberatoire": "{t}، تحرري", "comptes": " ({s} على حسابات الادخار الخاصة)",
-        "depots": " ؛ الودائع لأجل التي تفوق مكافأتها معدل السوق النقدية ناقص نقطة: {lien}",
+        "depots": "؛ الودائع لأجل التي تفوق مكافأتها معدل نسبة الفائدة في السوق النقدية ناقص نقطة مائوية: {lien}",
         "obligations": "{o} (الرقاع) أو {t}، تحرري", "commun": "النظام العام",
-        "exonere": "معفى", "hors_champ": "خارج المجال",
+        "exonere": "معفاة", "hors_champ": "خارج المجال",
         "pv_franchise": "{t}، فوق {f} في السنة",
         "pv_courte": "{t} إذا احتُفظ بها لما بعد ذلك، وإلا {c}؛ دون عتبة إعفاء",
         "lien_bareme": "جدول الضريبة على الدخل، الشريحة الأخيرة",
@@ -649,7 +649,7 @@ LIBELLES_EPARGNE = {
     "depots": {"fr": "Retenue sur les dépôts à terme",
                "ar": "الخصم على الودائع لأجل"},
     "obligations": {"fr": "Retenue sur les obligations au porteur anonymes",
-                    "ar": "الخصم على الرقاع لحامله المجهول"},
+                    "ar": "الخصم على الرقاع لحاملها المجهول"},
     "titres": {"fr": "Retenue sur les titres au porteur anonymes",
                "ar": "الخصم على السندات لحامله المجهول"},
     "dividende": {"fr": "Retenue sur les revenus distribués",
@@ -704,7 +704,7 @@ def irpp_epargne_taux(langue):
             modele = m["bareme"]
             lectures = {}
             if en_cours(f"{CAP}/taux_imputable", d):
-                modele += " ; " + lien_gabarit("interets", d, m["imputable"])
+                modele += (" ; " if langue == "fr" else "؛ ") + lien_gabarit("interets", d, m["imputable"])
                 lectures["t"] = lire(f"{CAP}/taux_imputable", d, "imputable")
                 if en_cours(f"{CAP}/taux_comptes_speciaux_epargne", d):
                     cs = ot.en_vigueur(ot.serie_datee(f"{CAP}/taux_comptes_speciaux_epargne.yaml"), d)[1]
@@ -840,10 +840,10 @@ MOTS_PLAFONDS = {
         "pv_cotee": "القيمة الزائدة، سهم مدرج",
         "fleche": "←", "aucune": "لا شيء", "exonere": "معفاة",
         "cea_quote": "{q} من الإيداعات في حدود {p}", "cea_plein": "الإيداعات في حدود {p}",
-        "av_rang": "الزوج: {c} ؛ الطفل: {e}، بالنسبة إلى الأطفال {n} الأوائل",
-        "av_libre": "الزوج: {c} ؛ الطفل المتكفل به: {e}",
+        "av_rang": "الزوج: {c}؛ الطفل: {e}، بالنسبة إلى الأطفال {n} الأوائل",
+        "av_libre": "الزوج: {c}؛ الطفل المتكفل به: {e}",
         "nombres": {4: "الأربعة"},
-        "pv_avant": "مقتناة قبل {a}: معفاة ؛ مقتناة منذ ذلك التاريخ: ",
+        "pv_avant": "مقتناة قبل {a}: معفاة؛ مقتناة منذ ذلك التاريخ: ",
         "pv_apres": "{x} إذا فُوِّت فيها بعد انتهاء السنة الموالية لسنة الاقتناء، وإلا {c}",
         "pv_unique": "{t}",
     },

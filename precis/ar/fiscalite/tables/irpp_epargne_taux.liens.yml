@@ -10,7 +10,7 @@
 - libelle: الخصم على السندات لحامله المجهول
   parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_titres_porteur_anonymes.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_titres_porteur_anonymes/table/
-- libelle: الخصم على الرقاع لحامله المجهول
+- libelle: الخصم على الرقاع لحاملها المجهول
   parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_obligations_porteur_anonymes.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_obligations_porteur_anonymes/table/
 - libelle: نسبة القيمة الزائدة المتأتية من التفويت في السندات
