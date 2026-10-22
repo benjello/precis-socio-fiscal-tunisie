@@ -4058,6 +4058,12 @@ reprendre sans refaire la même recherche :
 4. **Entretenir la chaîne éditoriale** : après revue des deux références nouvelles,
    les verser dans Zotero et inspecter la descente ; après réouverture du budget de
    traduction, rattraper l'arabe et rendre les livres concernés.
+5. **Très basse priorité — institutions politiques et de contrôle** : le Parlement et la
+   Cour des comptes, avec leurs obligations et leurs prérogatives respectives, et un
+   inventaire des rapports de la Cour des comptes, au moins le rapport public annuel.
+   Proposé le 21 octobre 2026 par un lecteur qui s'attendait à les trouver dans la partie
+   « institutions », aujourd'hui limitée aux entreprises publiques. À examiner après les
+   livres en cours, avec la partie VI (synthèse).
 
 `todo-localisation.md` donne le point de départ pour les numéros et pages, **pas un
 décompte actuel de disponibilité** : un fascicule qui y manque peut depuis avoir été
