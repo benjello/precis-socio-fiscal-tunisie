@@ -250,3 +250,12 @@ class SchemaTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_supprimer_refuse_une_cle_encore_locale(capsys):
+    """On ne supprime de Zotero que ce que le précis ne cite plus : aucun appel réseau."""
+    import push_biblio
+
+    cle = next(iter(push_biblio.charge_local()))
+    assert push_biblio.supprimer("0", "sans-cle", [cle], ecrire=True) == 1
+    assert "encore présente" in capsys.readouterr().err
