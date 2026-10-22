@@ -189,12 +189,12 @@ de travail » est abrogé par l'art. 4 de la loi n° 66-27 (p. 716) ; son conten
 | 18 à 20 ans | → 1,5 jour par mois, au plus 22 jours dont 18 ouvrables. Le texte publié en mai 1966 disait « dix-huit à vingt-et-un ans » ; le rectificatif du 30 août 1966 lit « dix-huit à vingt ans » | 1er mai 1966 | art. 113, al. 2, p. 763 ; rectificatif, JORT n° 37 du 30 août-2 septembre 1966, p. 1298 | image |
 | | inchangé, âge au 31 décembre | 31 juillet 1996 | art. 113 (nouveau), p. 1585 | texte |
 | Mois de travail effectif | → 4 semaines ou 24 jours de travail | 1er mai 1966 | art. 114, p. 763 | image |
-| | → 26 jours ouvrables | 31 juillet 1996 | art. 114 (nouveau), p. 1585 | texte |
+| | → 26 jours ouvrables | 31 juillet 1996 | art. 114 (nouveau), p. 1584 | texte |
 | Ancienneté | → + 1 jour ouvrable par période de cinq ans de services chez le même employeur ; au plus 18 jours ouvrables ; non cumulable avec les avantages conventionnels | 1er mai 1966 | art. 115, p. 763 | image ; non modifié par la loi n° 96-62 (art. 1) ni par un texte postérieur identifié (§ 0) |
 | Année de référence | → part du 1er juin (1er avril pour les professions affiliées à la CNSS au titre de l'art. 121) | 1er mai 1966 | art. 116, p. 763 | image |
-| | → 1er janvier | 31 juillet 1996 | art. 116 (nouveau), p. 1585 | texte |
+| | → 1er janvier | 31 juillet 1996 | art. 116 (nouveau), p. 1584 | texte |
 | Indemnité de congé | → 1/24 de la rémunération totale de la période de référence (1/12 pour les moins de 18 ans, 1/16 pour les « dix huit à vingt et un ans » — l'art. 119 n'est pas rectifié), sans pouvoir être inférieure au salaire qu'aurait perçu le salarié | 1er mai 1966 | art. 119, p. 764 | image |
-| | → « le salaire et indemnités qu'il percevait habituellement pendant l'exercice effectif du travail » | 31 juillet 1996 | art. 119 (nouveau), p. 1585 | texte |
+| | → « le salaire et indemnités qu'il percevait habituellement pendant l'exercice effectif du travail » | 31 juillet 1996 | art. 119 (nouveau), p. 1584 | texte |
 | Période du congé (art. 117, al. 1) | → « l'employeur peut accorder un congé annuel à tous les employés ou à certains d'entre eux au titre de l'année écoulée ou de l'année en cours » (alinéa suspendu et remplacé), jusqu'à la levée du confinement total par décret gouvernemental | 14 avril 2020 → levée du confinement (date à reprendre de la note de la rupture : décret gouvernemental n° 2020-411, non relu ici) | décret-loi n° 2020-2, art. 4, 5, 6, p. 768 ; approuvé par la loi n° 2021-5 | image |
 | Indemnité compensatrice à la rupture | → due pour la fraction non prise, sauf faute lourde du salarié | 1er mai 1966 | art. 120, p. 764 | image |
 | Prise en charge par la CNSS (activités discontinues ; jeunes travailleurs) | → dans les activités discontinues, cotisations patronales et service des indemnités par la CNSS (taux par arrêté) ; ailleurs, la CNSS rembourse la moitié de l'indemnité des moins de 18 ans et le tiers de celle des 18-20 ans | 1er mai 1966 | art. 121, p. 764 | image — domicile : volume des caisses ; arrêté des taux non identifié (fiche F3) |
@@ -557,7 +557,7 @@ Déjà présentes, à compléter :
   art. 106-118 p. 763 ; art. 119-124 p. 764 ; art. 445 p. 814 ; rectificatif du JORT n° 37
   (p. 1298) : art. 113, al. 2, « dix-huit à vingt ans » au lieu de « dix-huit à vingt et un ans ».
 - `loi96-62` : art. 63-2 et 66 p. 1581 ; art. 79, 82, 83 pp. 1582-1583 ; art. 90, 94-2 à 94-14, 95
-  p. 1583 ; art. 97, 100, 106, 107, 113 p. 1584 ; art. 113 (fin), 114, 116, 117, 119, 123 p. 1585 ;
+  p. 1583 ; art. 97, 100, 106, 107, 113, 114, 116, 119 p. 1584 ; art. 113 (fin), 117, 123 p. 1585 ;
   art. 5 (abrogations, dont 80 et 81) p. 1588.
 - `arrete-1973-05-29-convention-cadre` : préambule p. 853 ; art. 24-30 p. 855 ; art. 30-36 p. 856.
 - `loi2024-44` (prestations sociales) : à copier dans `marche_travail/references.json` (FR et AR),

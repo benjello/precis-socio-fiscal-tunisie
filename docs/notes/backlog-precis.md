@@ -2485,8 +2485,11 @@ en donnait trois.
   engendré depuis la série de l'INS (snapshots du 20 octobre 2026). Restent :
   - *arabe* : ajouter `_rupture_contrat.qmd` à `precis/ar/marche_travail/_quarto.yml` (entre
     `_negociations.qmd` et `_politiques_emploi.qmd`) à la livraison de la traduction ;
-  - *tableaux faits main* : `tbl-mt-rc-parametres` et `tbl-mt-rc-etat-du-droit`, à engendrer
-    après versement des grandeurs (`backlog-modele.md`, 20/10/2026) ;
+  - *tableaux* : `tbl-mt-rc-parametres` est engendré (22/10/2026, versement de la 0.138 ; la
+    colonne de 1973 et les cases sans paramètre sont écrites dans
+    `scripts/generate_marche_travail_tables.py`) ; son en-tête porte le 24 mai 2025 et le texte
+    du chapitre le 28 tant que la PR « Dates d'effet depuis le décret-loi n° 2020-1 » (#482)
+    n'est pas fusionnée ; `tbl-mt-rc-etat-du-droit` reste fait main (TODO rédacteur) ;
   - *rémunérations publiques* : décret n° 2025-327 (sous-traitance interdite dans le secteur
     public, effet au 22 juin 2025 ; édition arabe seule au corpus, éd. française 404) à exposer
     dans « Les rémunérations dans le secteur public » (décision D6), puis renvoi depuis
@@ -2534,9 +2537,14 @@ en donnait trois.
   - *séries* : la section des données ne trace que l'INS (trois trimestres de 2019, tableau 6,
     p. 5) ; snapshot `ins-emploi-duree-travail-2019` tiré d'une série de `tunisia-data` non
     encore committée sur `main` ;
-  - *tableaux faits main* (paramètres, état du droit, congé, jours fériés), à remplacer par des
-    tableaux engendrés quand les paramètres seront versés (ligne du 20/10/2026 de
-    `backlog-modele.md`).
+  - *tableaux* : paramètres, état du droit, congé et jours fériés sont engendrés (22/10/2026,
+    versement de la 0.139) par `scripts/generate_marche_travail_tables.py` ; restent écrits dans
+    ce script, faute de paramètre : traitement pendant le congé, ligne de 1964 des jours fériés,
+    âge apprécié, « Population couverte », travail domestique (TODO documentaliste au chapitre) ;
+  - *pages* : art. 113, 114, 116 et 119 nouveaux de la loi n° 96-62 à la p. 1584 (corrigé au
+    registre) ; art. 2 de l'avenant n° 2 à la p. 229 ; entrée en vigueur de la convention cadre
+    au 1er juin 1973 confirmée par l'art. 52, p. 859. La note
+    `docs/notes/marche-travail-temps-de-travail.md` est corrigée de même.
 - **Temps de travail et congés — matière rassemblée le 20 octobre 2026, avant rédaction** (branche
   `chantier/temps-de-travail`, note `docs/notes/marche-travail-temps-de-travail.md`) : plan
   proposé, paramètres datés (durée, heures supplémentaires, congé annuel, jours fériés, congés
