@@ -1,0 +1,9 @@
+- libelle: نسبة القيمة الزائدة للأسهم المدرجة المفوت فيها قبل الأجل
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/actions_cotees/taux_detention_courte.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.actions_cotees.taux_detention_courte/table/
+- libelle: مدة الاحتفاظ بالأسهم المدرجة
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/actions_cotees/annees_detention.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.actions_cotees.annees_detention/table/
+- libelle: نسبة القيمة الزائدة للأسهم المدرجة المحتفظ بها إلى الأجل
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/actions_cotees/taux_detention_longue.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.actions_cotees.taux_detention_longue/table/

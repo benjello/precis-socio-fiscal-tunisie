@@ -1,0 +1,6 @@
+- libelle: حصة الإيداعات القابلة للخصم في حساب الادخار في الأسهم
+  parametre: parameters/impot_revenu/deductions/cea_cei/cea_quote_part.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.cea_cei.cea_quote_part/table/
+- libelle: سقف خصم الإيداعات في حساب الادخار في الأسهم
+  parametre: parameters/impot_revenu/deductions/cea_cei/cea.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.cea_cei.cea/table/

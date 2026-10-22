@@ -1,0 +1,6 @@
+- libelle: Quote-part des dépôts déductibles en compte épargne en actions
+  parametre: parameters/impot_revenu/deductions/cea_cei/cea_quote_part.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.cea_cei.cea_quote_part/table/
+- libelle: Plafond de la déduction des dépôts en compte épargne en actions
+  parametre: parameters/impot_revenu/deductions/cea_cei/cea.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.cea_cei.cea/table/

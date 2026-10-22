@@ -1,0 +1,6 @@
+- libelle: السقف الجملي لخصم فوائد الادخار
+  parametre: parameters/impot_revenu/deductions/interets_emprunts_obligataires/plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.interets_emprunts_obligataires.plaf/table/
+- libelle: سقف خصم فوائد حسابات الادخار الخاصة
+  parametre: parameters/impot_revenu/deductions/interets_comptes_speciaux_epargne_bancaires/plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.interets_comptes_speciaux_epargne_bancaires.plaf/table/

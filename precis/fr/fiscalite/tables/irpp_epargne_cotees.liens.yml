@@ -1,0 +1,9 @@
+- libelle: Taux de la plus-value d'actions cotées cédées avant l'échéance
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/actions_cotees/taux_detention_courte.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.actions_cotees.taux_detention_courte/table/
+- libelle: Durée de détention des actions cotées
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/actions_cotees/annees_detention.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.actions_cotees.annees_detention/table/
+- libelle: Taux de la plus-value d'actions cotées détenues jusqu'à l'échéance
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/actions_cotees/taux_detention_longue.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.actions_cotees.taux_detention_longue/table/
