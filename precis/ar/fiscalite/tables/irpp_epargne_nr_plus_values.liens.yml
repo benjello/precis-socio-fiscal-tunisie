@@ -1,0 +1,18 @@
+- libelle: الخصم على ثمن التفويت، الأشخاص المعنويون غير المقيمين
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/non_residents/taux_retenue_prix_personnes_morales.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.non_residents.taux_retenue_prix_personnes_morales/table/
+- libelle: الخصم على ثمن التفويت، الأشخاص الطبيعيون غير المقيمين
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/non_residents/taux_retenue_prix_personnes_physiques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.non_residents.taux_retenue_prix_personnes_physiques/table/
+- libelle: الخصم على القيمة الزائدة، الأشخاص المعنويون غير المقيمين
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/non_residents/taux_personnes_morales.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.non_residents.taux_personnes_morales/table/
+- libelle: الخصم على القيمة الزائدة، الأشخاص الطبيعيون غير المقيمين
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/non_residents/taux_personnes_physiques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.non_residents.taux_personnes_physiques/table/
+- libelle: سقف الخصم بنسبة من الثمن، الأشخاص المعنويون غير المقيمين
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/non_residents/plafond_prix_personnes_morales.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.non_residents.plafond_prix_personnes_morales/table/
+- libelle: سقف الخصم بنسبة من الثمن، الأشخاص الطبيعيون غير المقيمين
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/non_residents/plafond_prix_personnes_physiques.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.non_residents.plafond_prix_personnes_physiques/table/

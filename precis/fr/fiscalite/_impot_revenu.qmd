@@ -1114,6 +1114,16 @@ La même loi abaisse le taux de l'impôt sur les sociétés de 30 % à 25 % (@se
 
 Entre-temps, en 2015, la retenue s'étend aux bénéfices des établissements stables présumés distribués à leurs associés non résidents ([loi de finances pour 2015](#r-epargne-distribues-2015)) ; en 2017, les jetons de présence deviennent les rémunérations des membres des conseils, directoires et comités ([loi de finances pour 2017](#r-epargne-distribues-2017)).
 
+Les jetons de présence, exonérés avec les autres revenus distribués jusqu'en 1994, supportent depuis 1995 une retenue imputable.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_jetons",
+      "Retenue sur les jetons de présence, 1995-2026",
+      "tbl-irpp-epargne-jetons")
+```
+
 #### 2020-2022 : trois régimes en trois ans pour les intérêts {#sec-irpp-epargne-2020}
 
 De juin 2020 à janvier 2022, la retenue sur les intérêts change trois fois de régime.
@@ -1136,7 +1146,7 @@ Trois registres donnent, pour chacun des trois revenus — intérêts, revenus d
 |---|---|---|---|---|
 | []{#r-epargne-interets-1968}[1^er^ janvier 1968]{.insecable} | loi n° 67-57, loi de finances pour 1968 [@lf-1968, art. 13 et 14, p. 1649] | article premier du décret organique du 23 décembre 1918 récrit : taux global de 16,90 % (général) ou de 14,50 % (réduit) sur les revenus de valeurs mobilières et de créances ; 10 % sur les revenus des créances, dépôts, cautionnements et comptes courants ; 12,10 % et 9,10 % maintenus pour les obligations émises depuis le 1^er^ juillet 1956 pour cinq ans au moins ; bons de caisse : impôt sur les revenus des créances, plus 24 % si l'émetteur ne déclare pas les bénéficiaires (art. 14) | taxe additionnelle de 24 % à la place de la contribution personnelle d'État (bons de caisse anonymes) | antécédent |
 | []{#r-epargne-interets-1988}— | loi n° 87-83, loi de finances pour 1988 [@loi-87-83-lf-1988, art. 29 et 30, p. 1630] | « Unification des taux… » : 20 % sur les revenus des valeurs mobilières autres que ceux de la loi n° 87-48, sur les jetons de présence et sur les revenus des capitaux mobiliers ; crédit d'impôt de 20 % de ces revenus sur la contribution personnelle d'État ; contribution de solidarité supprimée sur ces revenus (art. 30) | crédit d'impôt | antécédent |
-| []{#r-epargne-interets-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 52 et 54, p. 11] | 10 % sur les intérêts des comptes spéciaux d'épargne des banques (52-I-b) ; 15 % sur les autres revenus de capitaux mobiliers et les sommes servies aux non-résidents (52-I-c) ; 35 % sur les bons de caisse au porteur dont le bénéficiaire n'est pas révélé (52-I-d) | imputable (art. 54) ; libératoire pour les bons de caisse anonymes et les non-résidents (52-II) | mise en place |
+| []{#r-epargne-interets-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 52 et 54, p. 11] | 10 % sur les intérêts des comptes spéciaux d'épargne des banques (52-I-b) ; 15 % sur les autres revenus de capitaux mobiliers (52-I-c, premier tiret ; le second tiret vise les sommes servies aux non-résidents au titre des revenus de l'article 3, point 6, qui ne sont pas des revenus de placement) ; 35 % sur les bons de caisse au porteur dont le bénéficiaire n'est pas révélé (52-I-d) | imputable (art. 54) ; libératoire pour les bons de caisse anonymes et les non-résidents (52-II) | mise en place |
 | []{#r-epargne-interets-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 31, p. 2084-2085] | 52-I et II remplacés : 15 % sur les dépôts à la CENT et en comptes spéciaux (10 % → 15 %), sur les obligations et les autres revenus de capitaux mobiliers ; 25 % sur les obligations au porteur anonymes ; 35 % sur les autres titres au porteur anonymes ; nouveau 52-II-2 : 20 % pour les personnes morales non soumises à l'impôt sur les sociétés ou totalement exonérées ; exécutoire un jour franc après la publication du 31 décembre 1991 | imputable ; libératoire (titres anonymes, non-résidents) ; définitive et non restituable (organismes exonérés) | **rupture** (1992) |
 | []{#r-epargne-interets-1997}[1^er^ janvier 1997]{.insecable} | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 30 à 32 et 54, p. 2581 et 2583] | « Unification des taux… » : taux de 15 % et de 35 % abrogés ; 52-I-c : 20 % sur les revenus de capitaux mobiliers ; fin du caractère libératoire pour les titres anonymes | imputable | étape (réforme de 1992) |
 | []{#r-epargne-interets-1999}[1^er^ janvier 1999]{.insecable} | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 43 et 76, p. 2505] | 52-I-c : intérêts des dépôts et titres en devises et en dinars convertibles exclus de la retenue ; 52-II-2 : mention des banques non résidentes (loi n° 85-108) retirée | — | ajustement |
@@ -1226,6 +1236,14 @@ table("irpp_epargne_comptes_speciaux",
 <!-- TODO (documentaliste) : année de revenus du premier plafond de 1 500 D (LF 1992, art. 30) : la loi n'a pas d'article final de date d'application et devient exécutoire le 2 janvier 1992 ; revenus 1991 ou 1992 (note fiscalite-epargne-capital.md, § 14, D6). -->
 
 En 1992 naît aussi le compte d'épargne-emprunts obligataires, dont les intérêts supportent une retenue libératoire de 15 % si les sommes restent bloquées cinq ans, et une retenue complémentaire de 10 % en cas de retrait ; la loi de finances pour 1997 met fin à ce régime. Les deux derniers relèvements ont pour rubriques « Relèvement du montant des intérêts des comptes spéciaux d'épargne déductible de l'assiette de l'impôt » ([loi de finances pour 2017](#r-epargne-cs-2017)) et « Relèvement du montant des intérêts des comptes spéciaux d'épargne et des intérêts des emprunts obligataires déductible de l'assiette de l'impôt » ([loi de finances pour 2022](#r-epargne-cs-2022)). La même loi de 2022 ouvre une déduction distincte, dans la limite de 10 000 D par an, pour les intérêts des emprunts obligataires verts, socialement responsables et durables ([art. 29](#r-epargne-cs-2022-verts)) ; depuis 2024, les bons du Trésor assimilables entrent dans la déduction, sans changement des plafonds ([loi de finances pour 2024](#r-epargne-cs-2024)).
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_ceo",
+      "Retenues sur le compte d'épargne-emprunts obligataires, 1992-1997",
+      "tbl-irpp-epargne-ceo")
+```
 
 :::: {.chronologie-repliable titre="Comptes spéciaux d'épargne et emprunts obligataires, 1990-2026 : plafonds de déduction des intérêts et textes"}
 
@@ -1355,6 +1373,16 @@ table("irpp_epargne_cei",
 
 Pour une personne morale qui ne paie pas l'impôt sur les sociétés, ou pour un fonds, la retenue sur les revenus de capitaux mobiliers est définitive et non restituable (article 52 § II-2 du code). La règle naît de la réforme de 1992 (@sec-irpp-epargne-1992). Selon l'administration, elle s'étend en 2002 aux fonds communs de placement en valeurs mobilières, dont les revenus supportent une retenue « définitive et libératoire » de 20 %, et les fonds communs de créances supportent une retenue de 20 % imputable sur celle que doivent leurs copropriétaires [@dgi-nc-45-2002]. Les parts de fonds communs de placement relèvent des revenus distribués (@sec-irpp-epargne-2014). La règle est abrogée en 2021, puis rétablie en 2022 et étendue aux fonds d'amorçage et aux fonds communs de placement à risque (@sec-irpp-epargne-2020). Les [organismes de placement collectif en valeurs mobilières](#g-opcvm) comprennent les SICAV et les fonds communs de placement.
 
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_fonds",
+      "Retenue définitive sur les revenus de capitaux mobiliers des organismes exonérés et des fonds, 1992-2026",
+      "tbl-irpp-epargne-fonds")
+```
+
+<!-- TODO (documentaliste) : le tableau ne porte pas l'extension de 2002 aux fonds communs de placement en valeurs mobilières (LF 2002, art. 21 à 28, selon la NC 45/2002, non relus au fascicule) : ligne à ajouter au registre et au tableau une fois les articles lus ; constat dans docs/notes/backlog-modele.md. -->
+
 <!-- TODO (documentaliste) : régime fiscal des SICAV (la NC 45/2002 renvoie à un régime « en vigueur » antérieur) ; LF 2002, art. 21 à 28, à lire au fascicule ; déduction de l'art. 39 ter (loi n° 2005-59, art. 3) et décret-loi n° 2011-100, connus par les annotations du code consolidé seulement. -->
 
 :::: {.chronologie-repliable titre="Retenue définitive des organismes exonérés et des fonds, 1992-2026 : textes"}
@@ -1375,7 +1403,27 @@ Pour un bénéficiaire qui n'est ni résident ni établi en Tunisie, la retenue 
 
 Depuis 2011, leurs plus-values de cession de titres sont imposables : d'abord par une retenue sur le prix, de 5 % pour les personnes morales et de 2,5 % pour les personnes physiques ([loi de finances pour 2011](#r-epargne-nr-2011)), puis, à partir de 2012, sur la plus-value, à 30 % pour les personnes morales et 10 % pour les personnes physiques ([loi de finances pour 2012](#r-epargne-nr-2012)), dans la limite de 5 % ou 2,5 % du prix ([loi de finances complémentaire pour 2012](#r-epargne-nr-2012-lfc)). Le taux des personnes morales suit celui de l'impôt sur les sociétés : 25 % en [2014](#r-epargne-nr-2014), 15 % en [2021](#r-epargne-nr-2021), 20 % en [2025](#r-epargne-nr-2025) (@sec-impot-societes). Les intérêts des prêts payés aux banques non établies supportent 2,5 % en [1995](#r-epargne-nr-1995), 5 % en [2011](#r-epargne-nr-2011-e), 10 % en [2018](#r-epargne-nr-2018). Les bénéficiaires établis dans un État à régime fiscal privilégié, dont la liste est fixée par décret, supportent 25 % ([loi de finances pour 2014](#r-epargne-nr-2014-paradis)).
 
-<!-- TODO (documentaliste) : LF 2019, art. 35-4 (taux de 25 % pour les États à régime fiscal privilégié ; article lu dans l'édition arabe, JORT n° 104 de 2018, pp. 5449-5450, à porter au registre ; date de la liste des États fixée par arrêté, non identifiée). -->
+Pour les intérêts, le tableau suivant donne le taux à chaque date ; le taux de 25 % ne vaut que pour les bénéficiaires établis dans l'un des États de la liste.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_nr_interets",
+      "Retenue libératoire sur les revenus de capitaux mobiliers servis aux non-résidents, 1990-2026",
+      "tbl-irpp-epargne-nr-interets")
+```
+
+Pour les plus-values de titres, le tableau suivant donne la base et le taux à chaque date, par catégorie de cédant.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_nr_plus_values",
+      "Retenue sur la plus-value de cession de titres réalisée par les non-résidents, 2011-2026",
+      "tbl-irpp-epargne-nr-plus-values")
+```
+
+<!-- TODO (documentaliste) : liste des États à régime fiscal privilégié (décret de 2014 à 2018, arrêté du ministre des finances à partir de 2019) : textes non identifiés, date de la liste non établie ; la liste n'est pas dans les tableaux. -->
 
 :::: {.chronologie-repliable titre="Non-résidents, 1990-2026 : retenues sur les intérêts, les dividendes et les plus-values, textes"}
 
@@ -1393,6 +1441,7 @@ Depuis 2011, leurs plus-values de cession de titres sont imposables : d'abord pa
 | []{#r-epargne-nr-2014}cessions à partir du [1^er^ janvier 2014]{.insecable} | loi n° 2013-54, loi de finances pour 2014 [@lf-2014, art. 18, p. 3670] | 30 % → 25 % | ajustement |
 | []{#r-epargne-nr-2014-paradis}[1^er^ janvier 2014]{.insecable} | loi n° 2013-54, loi de finances pour 2014 [@lf-2014, art. 44, p. 3677] | « Relèvement du taux de la retenue à la source sur les montants payés à des résidents dans des paradis fiscaux » : taux des alinéas b (3^e^ tiret), c, c *bis* et e porté à 25 %, liste des États fixée par décret | ajustement |
 | []{#r-epargne-nr-2018}[1^er^ janvier 2018]{.insecable} | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 47, p. 4286] | intérêts des prêts aux banques non établies : 5 % → 10 % | ajustement |
+| []{#r-epargne-nr-2019}[1^er^ janvier 2019]{.insecable} | loi n° 2018-56, loi de finances pour 2019 [@lf-2019, art. 35, pp. 5449-5450] (édition arabe) | « paradis fiscaux » (art. 52, avant-dernier alinéa) → « pays ou territoire à régime fiscal privilégié » au sens du point 12 de l'art. 14 : bénéficiaire dont l'impôt dû dans ce pays est inférieur à 50 % de l'impôt tunisien sur la même activité ; liste fixée par arrêté du ministre des finances ; taux de 25 % inchangé | ajustement |
 | []{#r-epargne-nr-2021}plus-values réalisées à partir du [1^er^ janvier 2021]{.insecable} | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 14, p. 3127] | 25 % → 15 % | ajustement |
 | []{#r-epargne-nr-2025}plus-values réalisées à partir du [1^er^ janvier 2025]{.insecable} | loi n° 2024-48, loi de finances pour 2025 [@lf-2025, art. 37, p. 3431] | 15 % → 20 % | ajustement |
 
