@@ -1,0 +1,12 @@
+- libelle: Plafond de la déduction des primes d'assurance-vie
+  parametre: parameters/impot_revenu/deductions/assurance_vie/plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.assurance_vie.plaf/table/
+- libelle: Rang maximal de l'enfant ouvrant la majoration d'assurance-vie
+  parametre: parameters/impot_revenu/deductions/assurance_vie/nb_enfants_max.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.assurance_vie.nb_enfants_max/table/
+- libelle: Majoration d'assurance-vie pour le conjoint
+  parametre: parameters/impot_revenu/deductions/assurance_vie/conj_plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.assurance_vie.conj_plaf/table/
+- libelle: Majoration d'assurance-vie par enfant à charge
+  parametre: parameters/impot_revenu/deductions/assurance_vie/enf_plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.assurance_vie.enf_plaf/table/

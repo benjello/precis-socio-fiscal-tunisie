@@ -763,6 +763,293 @@ def irpp_epargne_taux(langue):
     return ot.tableau_gabarit(m["entetes"], lignes, langue)
 
 
+# ------------------- revenus de l'épargne : plafonds des dispositifs aidés et actions cotées
+#
+# Cinq tableaux du chapitre de l'impôt sur le revenu, lus dans les feuilles datées de
+# `impot_revenu/deductions/` et de `valeurs_mobilieres/plus_value_cession_titres/actions_cotees/` :
+# plafonds des comptes spéciaux d'épargne et des emprunts obligataires, de l'assurance-vie, du
+# compte épargne en actions et du compte épargne pour l'investissement ; plus-value des actions
+# cotées. Les dates des feuilles de déduction sont des années de revenus (« revenus 2003 ») ;
+# une date qui n'est pas un 1er janvier est un jour d'effet (« 26 août 1999 »). Les libellés
+# des textes et leurs ancres (registres du chapitre) sont éditoriaux : seules les valeurs et
+# les dates viennent des feuilles.
+
+DED = "parameters/impot_revenu/deductions"
+COTEES = f"{VM}/plus_value_cession_titres/actions_cotees"
+# Dates de feuille dont l'année de revenus n'est pas établie : le tableau écrit « — ».
+DATES_INCERTAINES = {"1992-01-01"}
+# Dates auxquelles une note du chapitre renvoie (année dérivée de l'article final).
+DATES_ASTERISQUE = {"1997-01-01"}
+
+LIB_PLAF = {
+    "global": {"fr": "Plafond global de la déduction des intérêts de l'épargne",
+               "ar": "السقف الجملي لخصم فوائد الادخار"},
+    "comptes": {"fr": "Plafond de la déduction des intérêts des comptes spéciaux d'épargne",
+                "ar": "سقف خصم فوائد حسابات الادخار الخاصة"},
+    "av": {"fr": "Plafond de la déduction des primes d'assurance-vie",
+           "ar": "سقف خصم أقساط التأمين على الحياة"},
+    "av_conj": {"fr": "Majoration d'assurance-vie pour le conjoint",
+                "ar": "الزيادة بعنوان الزوج في خصم أقساط التأمين على الحياة"},
+    "av_enf": {"fr": "Majoration d'assurance-vie par enfant à charge",
+               "ar": "الزيادة بعنوان كل طفل متكفل به في خصم أقساط التأمين على الحياة"},
+    "av_rang": {"fr": "Rang maximal de l'enfant ouvrant la majoration d'assurance-vie",
+                "ar": "أقصى رتبة للطفل المخول للزيادة في خصم أقساط التأمين على الحياة"},
+    "cea": {"fr": "Plafond de la déduction des dépôts en compte épargne en actions",
+            "ar": "سقف خصم الإيداعات في حساب الادخار في الأسهم"},
+    "cea_part": {"fr": "Quote-part des dépôts déductibles en compte épargne en actions",
+                 "ar": "حصة الإيداعات القابلة للخصم في حساب الادخار في الأسهم"},
+    "cei": {"fr": "Plafond de la déduction des dépôts en compte épargne pour l'investissement",
+            "ar": "سقف خصم الإيداعات في حساب الادخار للاستثمار"},
+    "cei_int": {"fr": "Plafond de l'exonération des intérêts du compte épargne pour l'investissement",
+                "ar": "سقف الإعفاء من فوائد حساب الادخار للاستثمار"},
+    "cotees_courte": {"fr": "Taux de la plus-value d'actions cotées cédées avant l'échéance",
+                      "ar": "نسبة القيمة الزائدة للأسهم المدرجة المفوت فيها قبل الأجل"},
+    "cotees_longue": {"fr": "Taux de la plus-value d'actions cotées détenues jusqu'à l'échéance",
+                      "ar": "نسبة القيمة الزائدة للأسهم المدرجة المحتفظ بها إلى الأجل"},
+    "cotees_duree": {"fr": "Durée de détention des actions cotées",
+                     "ar": "مدة الاحتفاظ بالأسهم المدرجة"},
+}
+
+MOTS_PLAFONDS = {
+    "fr": {
+        "effet": "Date d'effet", "texte": "Texte", "annees": "Années de revenus",
+        "plafond": "Plafond<br>(dinars par an)", "majorations": "Majorations<br>(dinars par an)",
+        "global": "Plafond global<br>(dinars par an)",
+        "comptes": "Dont comptes spéciaux<br>(dinars par an)",
+        "comptes_banques": "{t} (comptes des banques)",
+        "deduction": "Déduction", "depots": "Dépôts déductibles<br>(dinars par an)",
+        "interets": "Intérêts exonérés<br>(dinars par an)",
+        "pv_cotee": "Plus-value, action cotée",
+        "fleche": "→", "aucune": "aucune", "exonere": "exonérée",
+        "cea_quote": "{q} des dépôts, dans la limite de {p}", "cea_plein": "dépôts, dans la limite de {p}",
+        "av_rang": "conjoint : {c} ; enfant : {e}, pour les {n} premiers",
+        "av_libre": "conjoint : {c} ; enfant à charge : {e}",
+        "nombres": {4: "quatre"},
+        "pv_avant": "achetée avant {a} : exonérée ; achetée depuis : ",
+        "pv_apres": "{x} si cédée après la fin de l'année suivant l'achat, sinon {c}",
+        "pv_unique": "{t}",
+    },
+    "ar": {
+        "effet": "تاريخ النفاذ", "texte": "النص", "annees": "سنوات المداخيل",
+        "plafond": "السقف<br>(دينار في السنة)", "majorations": "الزيادات<br>(دينار في السنة)",
+        "global": "السقف الجملي<br>(دينار في السنة)",
+        "comptes": "منها حسابات الادخار الخاصة<br>(دينار في السنة)",
+        "comptes_banques": "{t} (حسابات البنوك)",
+        "deduction": "الخصم", "depots": "الإيداعات القابلة للخصم<br>(دينار في السنة)",
+        "interets": "الفوائد المعفاة<br>(دينار في السنة)",
+        "pv_cotee": "القيمة الزائدة، سهم مدرج",
+        "fleche": "←", "aucune": "لا شيء", "exonere": "معفاة",
+        "cea_quote": "{q} من الإيداعات في حدود {p}", "cea_plein": "الإيداعات في حدود {p}",
+        "av_rang": "الزوج: {c} ؛ الطفل: {e}، بالنسبة إلى الأطفال {n} الأوائل",
+        "av_libre": "الزوج: {c} ؛ الطفل المتكفل به: {e}",
+        "nombres": {4: "الأربعة"},
+        "pv_avant": "مقتناة قبل {a}: معفاة ؛ مقتناة منذ ذلك التاريخ: ",
+        "pv_apres": "{x} إذا فُوِّت فيها بعد انتهاء السنة الموالية لسنة الاقتناء، وإلا {c}",
+        "pv_unique": "{t}",
+    },
+}
+
+# Texte de chaque ligne : (libellé par langue, ancre du registre du chapitre).
+TEXTES_PLAFONDS = {
+    "comptes": {
+        "1990-01-01": ({"fr": "code, art. 39 § II", "ar": "المجلة، الفصل 39 § II"},
+                       "r-epargne-cs-1990"),
+        "1992-01-01": ({"fr": "loi de finances pour 1992, art. 30",
+                        "ar": "قانون المالية لسنة 1992، الفصل 30"}, "r-epargne-cs-1992"),
+        "2016-01-01": ({"fr": "loi de finances pour 2017, art. 13",
+                        "ar": "قانون المالية لسنة 2017، الفصل 13"}, "r-epargne-cs-2017"),
+        "2021-01-01": ({"fr": "loi de finances pour 2022, art. 24",
+                        "ar": "قانون المالية لسنة 2022، الفصل 24"}, "r-epargne-cs-2022"),
+    },
+    "av": {
+        "1990-01-01": ({"fr": "code, art. 39", "ar": "المجلة، الفصل 39"}, "r-epargne-av-1990"),
+        "1997-01-01": ({"fr": "loi de finances pour 1998, art. 52",
+                        "ar": "قانون المالية لسنة 1998، الفصل 52"}, "r-epargne-av-1998"),
+        "2007-01-01": ({"fr": "loi de finances pour 2008, art. 23",
+                        "ar": "قانون المالية لسنة 2008، الفصل 23"}, "r-epargne-av-2008"),
+        "2011-01-01": ({"fr": "loi de finances complémentaire pour 2012, art. 42",
+                        "ar": "قانون المالية التكميلي لسنة 2012، الفصل 42"}, "r-epargne-av-2012"),
+        "2020-01-01": ({"fr": "loi de finances pour 2021, art. 16",
+                        "ar": "قانون المالية لسنة 2021، الفصل 16"}, "r-epargne-av-2021"),
+    },
+    "cea": {
+        "1999-08-26": ({"fr": "loi n° 99-92, art. 4", "ar": "القانون عدد 99-92، الفصل 4"},
+                       "r-epargne-cea-1999"),
+        "2003-01-01": ({"fr": "loi de finances pour 2004, art. 45 et 46",
+                        "ar": "قانون المالية لسنة 2004، الفصلان 45 و46"}, "r-epargne-cea-2004"),
+        "2011-04-25": ({"fr": "décret-loi n° 2011-28, art. 4",
+                        "ar": "المرسوم عدد 2011-28، الفصل 4"}, "r-epargne-cea-2011"),
+        "2020-01-01": ({"fr": "loi de finances pour 2021, art. 16",
+                        "ar": "قانون المالية لسنة 2021، الفصل 16"}, "r-epargne-cea-2021"),
+    },
+    "cei": {
+        "2003-01-01": ({"fr": "loi de finances pour 2003, art. 21 et 22",
+                        "ar": "قانون المالية لسنة 2003، الفصلان 21 و22"}, "r-epargne-cei-2003"),
+        "2017-01-01": ({"fr": "loi de finances pour 2018, art. 27",
+                        "ar": "قانون المالية لسنة 2018، الفصل 27"}, "r-epargne-cei-2018"),
+    },
+}
+ANCRES_COTEES = {"2004-01-01": "r-epargne-pv-2004", "2011-01-01": "r-epargne-pv-2011",
+                 "2023-01-01": "r-epargne-pv-2023"}
+
+
+def _dates_series(*chemins: str) -> list[str]:
+    """Union triée des dates d'effet des feuilles."""
+    dates = set()
+    for chemin in chemins:
+        dates.update(date for date, *_ in ot.serie_datee(f"{chemin}.yaml"))
+    return sorted(dates)
+
+
+def _date_effet(d: str, langue: str, deduction: bool = True) -> str:
+    """« revenus 2003 » pour un 1er janvier de déduction, sinon la date en toutes lettres."""
+    if deduction and d.endswith("-01-01"):
+        return MOTS_EPARGNE[langue]["revenus"].format(annee=d[:4])
+    if langue == "fr":
+        return "[" + ot.formate_date(d, langue) + "]{.insecable}"
+    return ot.formate_date(d, langue)
+
+
+def _annees_revenus(dates: list[str], i: int, langue: str) -> str:
+    """« 1997* → 2006 » : de l'année de la date i à la veille de la suivante, « — » si incertaine."""
+    fleche = MOTS_PLAFONDS[langue]["fleche"]
+    d = dates[i]
+    debut = "—" if d in DATES_INCERTAINES else d[:4]
+    if d in DATES_ASTERISQUE:
+        debut += "\\*"
+    if i + 1 < len(dates):
+        suivante = dates[i + 1]
+        fin = "—" if suivante in DATES_INCERTAINES else str(int(suivante[:4]) - 1)
+        return f"{debut} {fleche} {fin}"
+    return f"{debut} {fleche}"
+
+
+def _texte_plafonds(table: str, d: str, langue: str) -> str:
+    libelle, ancre = TEXTES_PLAFONDS[table][d]
+    return f"[{libelle[langue]}](#{ancre})"
+
+
+def _lecture(chemin: str, d: str, cle: str, formateur="dinars") -> ot.Lecture:
+    return ot.Lecture(f"{chemin}.yaml", d, formateur, LIB_PLAF[cle])
+
+
+def _valeur(chemin: str, d: str):
+    return ot.etat_a_la_date(ot.serie_datee(f"{chemin}.yaml"), d)
+
+
+def epargne_comptes_speciaux(langue):
+    m = MOTS_PLAFONDS[langue]
+    glob, spec = f"{DED}/interets_emprunts_obligataires/plaf", \
+        f"{DED}/interets_comptes_speciaux_epargne_bancaires/plaf"
+    dates = _dates_series(glob, spec)
+    lignes = []
+    for i, d in enumerate(dates):
+        comptes = _lecture(spec, d, "comptes")
+        cellule = ot.gabarit(m["comptes_banques"] if i == 0 else "{t}", t=comptes)
+        lignes.append([_annees_revenus(dates, i, langue),
+                       ot.gabarit("{t}", t=_lecture(glob, d, "global")), cellule,
+                       _texte_plafonds("comptes", d, langue)])
+    return ot.tableau_gabarit([m["annees"], m["global"], m["comptes"], m["texte"]], lignes, langue)
+
+
+def epargne_assurance_vie(langue):
+    m = MOTS_PLAFONDS[langue]
+    plaf = f"{DED}/assurance_vie/plaf"
+    conj, enf, rang = (f"{DED}/assurance_vie/conj_plaf", f"{DED}/assurance_vie/enf_plaf",
+                       f"{DED}/assurance_vie/nb_enfants_max")
+    dates = _dates_series(plaf, conj, enf, rang)
+
+    def mot(v, l):
+        return MOTS_PLAFONDS[l]["nombres"].get(int(v), str(int(v)))
+
+    lignes = []
+    for i, d in enumerate(dates):
+        if not _valeur(conj, d) and not _valeur(enf, d):
+            major = m["aucune"]
+        else:
+            lectures = {"c": _lecture(conj, d, "av_conj"), "e": _lecture(enf, d, "av_enf")}
+            if _valeur(rang, d) is not None and _valeur(rang, d) < 99:
+                major = ot.gabarit(m["av_rang"], n=_lecture(rang, d, "av_rang", mot), **lectures)
+            else:
+                major = ot.gabarit(m["av_libre"], **lectures)
+        lignes.append([_annees_revenus(dates, i, langue),
+                       ot.gabarit("{t}", t=_lecture(plaf, d, "av")), major,
+                       _texte_plafonds("av", d, langue)])
+    return ot.tableau_gabarit([m["annees"], m["plafond"], m["majorations"], m["texte"]],
+                              lignes, langue)
+
+
+def epargne_cea(langue):
+    m = MOTS_PLAFONDS[langue]
+    plaf, part = f"{DED}/cea_cei/cea", f"{DED}/cea_cei/cea_quote_part"
+    dates = _dates_series(plaf, part)
+    lignes = []
+    for d in dates:
+        quote = _valeur(part, d)
+        if quote is not None and quote < 1:
+            case = ot.gabarit(m["cea_quote"], q=_lecture(part, d, "cea_part", "taux"),
+                              p=_lecture(plaf, d, "cea"))
+        else:
+            case = ot.gabarit(m["cea_plein"], p=_lecture(plaf, d, "cea"))
+        lignes.append([_date_effet(d, langue), case, _texte_plafonds("cea", d, langue)])
+    return ot.tableau_gabarit([m["effet"], m["deduction"], m["texte"]], lignes, langue)
+
+
+def epargne_cei(langue):
+    m = MOTS_PLAFONDS[langue]
+    depots, interets = (f"{DED}/cea_cei/cei",
+                        f"{DED}/interets_comptes_epargne_investissement/plaf")
+    dates = _dates_series(depots, interets)
+    lignes = [[_date_effet(d, langue),
+               ot.gabarit("{t}", t=_lecture(depots, d, "cei")),
+               ot.gabarit("{t}", t=_lecture(interets, d, "cei_int")),
+               _texte_plafonds("cei", d, langue)] for d in dates]
+    return ot.tableau_gabarit([m["effet"], m["depots"], m["interets"], m["texte"]], lignes,
+                              langue)
+
+
+def epargne_cotees(langue):
+    """Plus-value d'une action cotée : taux avant et après l'échéance de détention."""
+    m = MOTS_PLAFONDS[langue]
+    courte, longue, duree = (f"{COTEES}/taux_detention_courte", f"{COTEES}/taux_detention_longue",
+                             f"{COTEES}/annees_detention")
+    dates = _dates_series(courte, longue, duree)
+    debut_duree = ot.serie_datee(f"{duree}.yaml")[0][0]
+
+    def taux(v, l):
+        return MOTS_PLAFONDS[l]["exonere"] if v == 0 else ot.formate_taux(v)
+
+    lignes = []
+    for d in dates:
+        ancre = ANCRES_COTEES[d]
+        if _valeur(duree, d) is None:
+            modele = "{x}"
+            lectures = {"x": _lecture(courte, d, "cotees_courte", taux)}
+        else:
+            if _valeur(duree, d) != 1:
+                raise ValueError(f"{duree} : la formule suppose une année suivant l'achat")
+            annee = debut_duree[:4]
+            modele = m["pv_avant"] + m["pv_apres"]
+            lectures = {
+                "a": ot.Lecture(f"{duree}.yaml", debut_duree, lambda v, l, a=annee: a,
+                                LIB_PLAF["cotees_duree"]),
+                "x": _lecture(longue, d, "cotees_longue", taux),
+                "c": _lecture(courte, d, "cotees_courte", "taux")}
+        lignes.append([_date_effet(d, langue, deduction=False),
+                       ot.gabarit(f"[{modele}](#{ancre})", **lectures)])
+    return ot.tableau_gabarit([m["effet"], m["pv_cotee"]], lignes, langue)
+
+
+TABLEAUX_EPARGNE = [
+    ("irpp_epargne_comptes_speciaux", epargne_comptes_speciaux, f"{DED}/interets_*"),
+    ("irpp_epargne_assurance_vie", epargne_assurance_vie, f"{DED}/assurance_vie/*"),
+    ("irpp_epargne_cea", epargne_cea, f"{DED}/cea_cei/cea*"),
+    ("irpp_epargne_cei", epargne_cei,
+     f"{DED}/cea_cei/cei, {DED}/interets_comptes_epargne_investissement/plaf"),
+    ("irpp_epargne_cotees", epargne_cotees, f"{COTEES}/*"),
+]
+
+
 def parametres_dans_le_temps() -> int:
     """Les séries longues et les tableaux aux dates repères. Rend 0, ou 1 au premier échec."""
     generateur = Path(__file__).name
@@ -918,7 +1205,21 @@ def main() -> int:
             entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
                    f"     Paramètres : {CAP}/*, {VM}/* -->\n\n")
 
-        total = (len(TABLEAUX_CPE) + len(evolutions(langue))
+        for nom, fabrique, origine in TABLEAUX_EPARGNE:
+            try:
+                df, liens = ot.avec_liens(lambda: fabrique(langue))
+            except ValueError as erreur:
+                print(f"échec : {langue}/{nom}.md : {erreur}", file=sys.stderr)
+                return 1
+            if df is None:
+                print(f"échec : {langue}/{nom}.md", file=sys.stderr)
+                return 1
+            ot.ecrire_tableau(
+                sortie / f"{nom}.md", df, liens, langue, a_gauche=True,
+                entete="<!-- Généré par scripts/generate_bareme_tables.py — ne pas éditer à la main.\n"
+                       f"     Paramètres : {origine} -->\n\n")
+
+        total = (len(TABLEAUX_EPARGNE) + len(TABLEAUX_CPE) + len(evolutions(langue))
                  + len(evolutions_datees(langue)) + len(TABLEAUX) + 1 + len(TABLEAUX_IS) + 2)
         print(f"✓ {langue} : {total} tableaux")
     return parametres_dans_le_temps()

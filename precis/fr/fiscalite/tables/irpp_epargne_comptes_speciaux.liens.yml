@@ -1,0 +1,6 @@
+- libelle: Plafond global de la déduction des intérêts de l'épargne
+  parametre: parameters/impot_revenu/deductions/interets_emprunts_obligataires/plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.interets_emprunts_obligataires.plaf/table/
+- libelle: Plafond de la déduction des intérêts des comptes spéciaux d'épargne
+  parametre: parameters/impot_revenu/deductions/interets_comptes_speciaux_epargne_bancaires/plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.interets_comptes_speciaux_epargne_bancaires.plaf/table/

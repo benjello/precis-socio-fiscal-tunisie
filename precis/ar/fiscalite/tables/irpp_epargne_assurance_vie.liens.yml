@@ -1,0 +1,12 @@
+- libelle: سقف خصم أقساط التأمين على الحياة
+  parametre: parameters/impot_revenu/deductions/assurance_vie/plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.assurance_vie.plaf/table/
+- libelle: أقصى رتبة للطفل المخول للزيادة في خصم أقساط التأمين على الحياة
+  parametre: parameters/impot_revenu/deductions/assurance_vie/nb_enfants_max.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.assurance_vie.nb_enfants_max/table/
+- libelle: الزيادة بعنوان الزوج في خصم أقساط التأمين على الحياة
+  parametre: parameters/impot_revenu/deductions/assurance_vie/conj_plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.assurance_vie.conj_plaf/table/
+- libelle: الزيادة بعنوان كل طفل متكفل به في خصم أقساط التأمين على الحياة
+  parametre: parameters/impot_revenu/deductions/assurance_vie/enf_plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.assurance_vie.enf_plaf/table/

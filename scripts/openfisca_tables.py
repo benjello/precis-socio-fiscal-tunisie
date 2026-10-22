@@ -147,7 +147,18 @@ PAQUETS = {
         # capitaux_mobiliers/` et `impot_revenu/valeurs_mobilieres/` : en deçà, le tableau
         # des taux de l'épargne du chapitre de l'impôt sur le revenu ne pourrait être
         # engendré. La borne passe à la 0.137.
-        "version_minimale": (0, 137),
+        # La 0.140 corrige et date les plafonds de l'épargne (PR #499) : compte épargne en
+        # actions (`cea_cei/cea`, `cea_quote_part`), compte épargne pour l'investissement
+        # (`cea_cei/cei`, `interets_comptes_epargne_investissement/plaf`), assurance-vie
+        # (`assurance_vie/plaf`, `conj_plaf`, `enf_plaf`, `nb_enfants_max`), comptes spéciaux et
+        # emprunts obligataires (`interets_comptes_speciaux_epargne_bancaires/plaf`,
+        # `interets_emprunts_obligataires/plaf`). La 0.141 verse la condition de détention des
+        # actions cotées (`plus_value_cession_titres/actions_cotees/`), les retenues des
+        # non-résidents, les jetons de présence et la retenue définitive des fonds (PR #500) :
+        # en deçà, les tableaux des plafonds de l'épargne et des actions cotées du chapitre de
+        # l'impôt sur le revenu ne pourraient être engendrés, ou le seraient sur des plafonds
+        # non sourcés. Aucun chemin déjà lu ne bouge. La borne passe à la 0.141.
+        "version_minimale": (0, 141),
     },
 }
 
