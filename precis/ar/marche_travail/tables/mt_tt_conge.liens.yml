@@ -1,0 +1,27 @@
+- libelle: الرخصة السنوية، الأيام عن كل شهر، أقل من 18 سنة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/jours_par_mois/moins_18_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.jours_par_mois.moins_18_ans/table/
+- libelle: الرخصة السنوية، السقف بأيام العمل، أقل من 18 سنة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours_ouvrables/moins_18_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours_ouvrables.moins_18_ans/table/
+- libelle: الرخصة السنوية، السقف بالأيام، أقل من 18 سنة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours/moins_18_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours.moins_18_ans/table/
+- libelle: الرخصة السنوية، الأيام عن كل شهر، من 18 إلى 20 سنة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/jours_par_mois/de_18_a_20_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.jours_par_mois.de_18_a_20_ans/table/
+- libelle: الرخصة السنوية، السقف بأيام العمل، من 18 إلى 20 سنة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours_ouvrables/de_18_a_20_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours_ouvrables.de_18_a_20_ans/table/
+- libelle: الرخصة السنوية، السقف بالأيام، من 18 إلى 20 سنة
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours/de_18_a_20_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours.de_18_a_20_ans/table/
+- libelle: الرخصة السنوية، الأيام عن كل شهر، 21 سنة فأكثر
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/jours_par_mois/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.jours_par_mois.adultes/table/
+- libelle: الرخصة السنوية، السقف بأيام العمل، 21 سنة فأكثر
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours_ouvrables/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours_ouvrables.adultes/table/
+- libelle: الرخصة السنوية، السقف بالأيام، 21 سنة فأكثر
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours.adultes/table/

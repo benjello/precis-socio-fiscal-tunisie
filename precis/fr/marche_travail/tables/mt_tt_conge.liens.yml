@@ -1,0 +1,27 @@
+- libelle: Congé annuel, jours par mois, moins de 18 ans
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/jours_par_mois/moins_18_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.jours_par_mois.moins_18_ans/table/
+- libelle: Congé annuel, plafond en jours ouvrables, moins de 18 ans
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours_ouvrables/moins_18_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours_ouvrables.moins_18_ans/table/
+- libelle: Congé annuel, plafond en jours, moins de 18 ans
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours/moins_18_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours.moins_18_ans/table/
+- libelle: Congé annuel, jours par mois, 18 à 20 ans
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/jours_par_mois/de_18_a_20_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.jours_par_mois.de_18_a_20_ans/table/
+- libelle: Congé annuel, plafond en jours ouvrables, 18 à 20 ans
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours_ouvrables/de_18_a_20_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours_ouvrables.de_18_a_20_ans/table/
+- libelle: Congé annuel, plafond en jours, 18 à 20 ans
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours/de_18_a_20_ans.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours.de_18_a_20_ans/table/
+- libelle: Congé annuel, jours par mois, 21 ans et plus
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/jours_par_mois/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.jours_par_mois.adultes/table/
+- libelle: Congé annuel, plafond en jours ouvrables, 21 ans et plus
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours_ouvrables/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours_ouvrables.adultes/table/
+- libelle: Congé annuel, plafond en jours, 21 ans et plus
+  parametre: parameters/marche_travail/temps_travail/conge_annuel/plafond_jours/adultes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.temps_travail.conge_annuel.plafond_jours.adultes/table/

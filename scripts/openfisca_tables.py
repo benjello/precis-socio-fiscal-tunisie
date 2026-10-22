@@ -157,7 +157,13 @@ PAQUETS = {
         # non-résidents, les jetons de présence et la retenue définitive des fonds (PR #500) :
         # en deçà, les tableaux des plafonds de l'épargne et des actions cotées du chapitre de
         # l'impôt sur le revenu ne pourraient être engendrés, ou le seraient sur des plafonds
-        # non sourcés. Aucun chemin déjà lu ne bouge. La borne passe à la 0.141.
+        # non sourcés. Aucun chemin déjà lu ne bouge.
+        # La 0.138 verse la rupture du contrat de travail (PR #497, sous `marche_travail/
+        # rupture_contrat/`) et la 0.139 le temps de travail (PR #498, sous `marche_travail/
+        # temps_travail/`) ; la 0.140 et la 0.141 ne touchent pas à ces nœuds. En deçà, les
+        # tableaux des chapitres « La rupture du contrat de travail » et « La durée du
+        # travail et les congés » ne pourraient être engendrés. La borne passe à la 0.141,
+        # version publiée qui porte les deux nœuds.
         "version_minimale": (0, 141),
     },
 }

@@ -3771,3 +3771,51 @@ Ajoutées ensuite au même chantier (FR et AR de `fiscalite`, 157 entrées de ch
 - [ ] `saez-stantcheva-2018-capital-taxation` : *Journal of Public Economics* 162, p. 120-142, DOI 10.1016/j.jpubeco.2017.10.004.
 - [ ] `straub-werning-2020-chamley-judd` : *American Economic Review* 110(1), p. 86-119, DOI 10.1257/aer.20150210 ; pages citées (p. 10-11, 4) = version de travail NBER WP 20441 (dit en majuscules dans la `note`).
 - `piketty-saez-2012` volontairement non versée. `--verifier` : 1716 entrées, 0 perte ; `--dry-run` : conversion aboutie.
+## Versement du 20/10/2026 (marché du travail, chapitre « Le temps de travail et les congés ») — À REPORTER DANS ZOTERO
+
+- [ ] 17 clés versées au livre `marche_travail` (FR et AR) : `decret-1957-05-06-quarante-heures`,
+  `decret60-189`, `loi63-33`, `loi63-55`, `arrete-1985-02-07-convention-cadre-avenant1`, `loi88-55`,
+  `loi91-15`, `arrete-1993-01-28-convention-cadre-avenant2`,
+  `arrete-2004-05-04-convention-cadre-avenant3`, `dl2011-51`, `dl2020-1`, `dl2021-11`,
+  `arrete-2015-11-17-convention-cadre-agricole`, `loi2025-9` (identique à la branche de la rupture
+  du contrat), `ins-emploi-chomage-2019t4`, `oit-ilostat-heures-travaillees`, `loi2024-44` (copie
+  de `prestations_sociales`). Notes complétées : `loi66-27`, `loi96-62`,
+  `arrete-1973-05-29-convention-cadre`, `convention-textile-1974`. `loi2021-37` reste au fonds
+  commun. `push_biblio.py --verifier` : 0 perte. `dry-run` Zotero non lancé.
+- [ ] `arrete-2015-11-17-convention-cadre-agricole` : pas d'URL en FR (`pdf_fr` vide, texte en
+  édition arabe seulement) ; pages exactes de l'édition arabe à relire à l'image.
+- [ ] `dl2020-1` : l'URL est de la forme `/record/143977/files/` (champ de `jort_cache.db`), pas
+  `/jort/2020/2020F/` (404).
+- [ ] `loi63-33` : rectificatif du JORT n° 12 de 1964, p. 268, non lu.
+- [ ] Textes du Protectorat (1921, 1936, 1938, 1944, 1946, 1948) : non lus, non versés.
+- [ ] `ins-emploi-chomage-2019t4` : la note dit « Tableau 6, p. 4 » ; le tableau est à la p. 5 (catalogue
+  `ins-emploi-duree-travail-2019` de `tunisia-data`, relu à l'image le 20/10/2026). Le chapitre cite p. 5.
+- [ ] Clés de `docs/notes/eco-temps-de-travail.md`, § 6, à créer (DOI à vérifier) : la section « Ce qu'en
+  dit l'économie » de `_temps_travail.qmd` nomme les auteurs sans citation en attendant.
+- [ ] `decret-loi2020-2` (et `decret2020-411`) : présentes dans la branche `chantier/rupture-contrat`,
+  absentes ici ; à reprendre à la fusion, pour les lignes `#r-mt-tt-recup-2020` et `#r-mt-tt-conge-2020`.
+
+## Clôture du 20/10/2026 (marché du travail, « Le temps de travail et les congés », bibliographe)
+
+- Clés citées par `_temps_travail.qmd` : 0 manquante dans `precis/fr/marche_travail/references.json` et dans
+  l'arabe ; ensembles d'identifiants FR et AR identiques (182 chacun). Rendu `quarto render --to html` du
+  livre : aucun `[?]`, aucun `citeproc-not-found`.
+- 29 clés versées par ce chantier (FR et AR) : les 17 ci-dessus, `decret-loi2020-2`, `loi63-33`, et les
+  études `brown-hamermesh-2019-wages-hours-laws`, `crepon-kramarz-2002-40-heures`,
+  `estevao-sa-2008-35-heures`, `gruber-1994-mandated-maternity`, `hunt-1999-work-sharing-germany`,
+  `raposo-vanours-2010-portugal`, `sanchez-2013-chili`. Versées **non citées** dans le chapitre :
+  `lee-kawaguchi-hamermesh-2012-gift-of-time`, `pencavel-2015-productivity-hours`, `oit-2022-working-time`
+  (volontairement), `oit-ilostat-heures-travaillees`, `angel-urdinola-kuddo-2010-mena-employment-regulation`.
+- [ ] Titres arabes non établis : dans `precis/ar/marche_travail/references.json`, les 29 entrées versées
+  portent le titre français ou anglais de l'original (aucun intitulé arabe lu) ; textes de droit : intitulé
+  arabe du JORT à relever, URL `pdf_ar` à lire dans `jort_cache.db` pour chacun.
+- [ ] Doublon à trancher : `bm2015-labor-policy` (présent dans `marche_travail`) et
+  `bm-2015-labor-policy-good-jobs` (signalé ; absent de tous les `references.json` locaux, donc sans doute
+  côté Zotero ou autre branche). Garder `bm2015-labor-policy` (clé citée) et supprimer l'autre dans Zotero.
+- Contrôles : `push_biblio.py --verifier` : 1691 entrées, 0 perte. `--dry-run` : 1691 références locales,
+  1691 à créer (aucune erreur de conversion). `--controle-rangement` : 1292 bien rangées, 19 à déclasser
+  (dont `loi2024-44`, citée par `prestations_sociales` et `marche_travail`, et `loi93-11`), 0 à ranger,
+  91 sans citation, 280 absentes de Zotero. Aucun déclassement lancé.
+- Rapatriement Zotero **non lancé** : en attente de feu vert humain (séquence `permissions` → `verifier` →
+  `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger`). L'action GitHub `dry-run` du workflow
+  `biblio-zotero` n'est pas lançable avant le push de la branche.

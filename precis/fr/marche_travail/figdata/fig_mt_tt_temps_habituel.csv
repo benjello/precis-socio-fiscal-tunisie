@@ -1,0 +1,10 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-20
+# séries (tunisia_data) : ins-emploi-duree-travail-2019
+# sources (citation) : @ins-emploi-chomage-2019t4
+# fiches : sources/ins-emploi-2019-duree-travail.md
+# méthode/hypothèses : TROIS TRIMESTRES NE FONT PAS UNE SÉRIE ; questionnaire rénové au T2 2019, aucun prolongement vers l'arrière. Temps habituel et souhait de travailler plus, pas les heures effectivement travaillées : ne pas rapprocher du sur-emploi (> 48 h) de la tranche « 49 heures ou plus » de l'OIT (16,7 % contre 18,0 % au T2 2019). Ensemble du T2 2019 : 3 527,9 (INS) contre 3 533,4 (OIT), écart non expliqué. Tableau 6 à la page 5 du fichier (la fiche de plan disait p. 4). 24 nombres relus à l'image.
+# note : Personnes occupées selon le temps de travail habituel, deuxième, troisième et quatrième trimestres 2019 (milliers et % des occupés)
+Trimestre,Temps complet (milliers),Temps complet (% des occupés),Plus de 48 heures (milliers),Plus de 48 heures (% des occupés),Sous-emploi lié au temps de travail (milliers),Sous-emploi lié au temps de travail (% des occupés),Ensemble des occupés (milliers)
+2e trimestre 2019,2883.8,81.7,589.3,16.7,54.8,1.6,3527.9
+3e trimestre 2019,2895.8,81.7,609.2,17.2,38.6,1.1,3543.6
+4e trimestre 2019,2925.0,82.0,590.5,16.6,50.9,1.4,3566.4

@@ -5006,3 +5006,24 @@
     sont pas une évolution établie. Dénominateur : salariés. En 2014 seulement, taux
     des hommes supérieur à celui des femmes. Date d''édition de la base non relevée.'
   fiche: sources/oit-ilostat-salaries-temporaires.md
+- id: ins-emploi-duree-travail-2019
+  titre: Occupés selon le temps de travail habituel (sous-emploi, temps complet, sur-emploi),
+    T2 à T4 2019 (INS, tableau 6)
+  sources:
+  - ins-emploi-chomage-2019t4
+  build: scripts/extract_ins_emploi2019_duree_travail.py:main
+  raw:
+  - data/raw/ins-enquete-emploi/chomage.pdf
+  output: data/processed/ins-enquete-emploi/occupes_temps_travail_2019.csv
+  unite: milliers de personnes occupées ; part imprimée en %
+  perimetre: 'tous les occupés ; temps de travail HABITUEL dans toutes les activités
+    ; trois trimestres (T2, T3, T4 2019) ; trois catégories (sous-emploi lié au temps
+    du travail, emploi à temps complet, sur-emploi : plus de 48 heures) et l''ensemble'
+  caveats: 'TROIS TRIMESTRES NE FONT PAS UNE SÉRIE ; questionnaire rénové au T2 2019,
+    aucun prolongement vers l''arrière. Temps habituel et souhait de travailler plus,
+    pas les heures effectivement travaillées : ne pas rapprocher du sur-emploi (>
+    48 h) de la tranche « 49 heures ou plus » de l''OIT (16,7 % contre 18,0 % au T2
+    2019). Ensemble du T2 2019 : 3 527,9 (INS) contre 3 533,4 (OIT), écart non expliqué.
+    Tableau 6 à la page 5 du fichier (la fiche de plan disait p. 4). 24 nombres relus
+    à l''image.'
+  fiche: sources/ins-emploi-2019-duree-travail.md
