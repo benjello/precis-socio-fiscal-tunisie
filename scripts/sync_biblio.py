@@ -55,6 +55,8 @@ COLLECTION_TO_BOOK = {
     "sante": "sante",
     "éducation": "education",
     "education": "education",
+    "éducation et formation": "education",
+    "education et formation": "education",
 }
 
 

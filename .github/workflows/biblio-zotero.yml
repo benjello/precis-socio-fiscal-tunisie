@@ -28,6 +28,8 @@ on:
           - controle-rangement  # compare l'usage réel au rangement Zotero (lecture seule)
           - appliquer-rangement-blanc  # ce que le reclassement ferait, sans rien envoyer
           - appliquer-rangement        # range ET déclasse, d'après l'usage réel
+          - supprimer-blanc  # ce que la suppression ferait (clés de « reference »), sans rien envoyer
+          - supprimer        # supprime de Zotero les clés de « reference » que le précis ne cite plus
           - corriger         # écrase dans Zotero la référence indiquée par sa version locale
           - verifier-urls    # recense les fascicules du JORT sans édition homologue
           - descendre        # relance sync_biblio.py et montre le diff, sans rien commiter
@@ -65,6 +67,10 @@ jobs:
                             --appliquer-rangement ;;
             appliquer-rangement) uv run python scripts/push_biblio.py \
                             --appliquer-rangement --pousser ;;
+            supprimer-blanc) uv run python scripts/push_biblio.py \
+                            --supprimer "${{ inputs.reference }}" ;;
+            supprimer)    uv run python scripts/push_biblio.py \
+                            --supprimer "${{ inputs.reference }}" --pousser ;;
             corriger)     uv run python scripts/push_biblio.py \
                             --corriger "${{ inputs.reference }}" ;;
             verifier-urls) uv run python scripts/verifier_urls_jort.py ;;
