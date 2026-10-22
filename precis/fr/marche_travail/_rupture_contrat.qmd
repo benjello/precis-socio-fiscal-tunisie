@@ -4,6 +4,24 @@ Ce chapitre présente ce que l'employeur doit au salarié quand le contrat de tr
 
 Ce que verse la caisse de sécurité sociale aux travailleurs licenciés pour des raisons économiques ou technologiques, quand l'employeur en cessation de paiement ne paie pas, relève du volume [« Les prestations sociales »](../prestations_sociales/_autres_risques.html#sec-perte-emploi) ; le stage indemnisé de retour à l'emploi des licenciés, le [contrat de réinsertion dans la vie active](#g-crva), est au chapitre des politiques de l'emploi (@sec-mt-pe-renvoi).
 
+```{python}
+#| echo: false
+#| output: false
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+
+TABLES = Path.cwd() / "tables"
+
+
+def table(nom, legende, label):
+    """Tableau de paramètres législatifs : snapshot versionné, réuni par
+    `scripts/generate_marche_travail_tables.py`."""
+    print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label))
+```
+
 ## Vue d'ensemble {#sec-mt-rc-en-bref}
 
 Un employeur qui licencie un salarié en [contrat à durée indéterminée](#g-contrat-duree-indeterminee) lui doit un [préavis](#g-preavis) d'un mois et, sauf [faute grave](#g-faute-grave), une [gratification de fin de service](#g-gratification-fin-service) d'un jour de salaire par mois de service, plafonnée à trois mois de salaire, barème inchangé depuis 1966 ; si le licenciement est sans [cause réelle et sérieuse](#g-cause-reelle-serieuse), il doit en outre, depuis 1994, des dommages-intérêts de un à deux mois de salaire par année d'ancienneté, dans la limite de trois ans de salaire. Le [licenciement pour motif économique](#g-licenciement-economique) passe, depuis 1966, par l'inspection du travail et une commission. Depuis le 24 mai 2025, le contrat de travail est réputé conclu pour une durée indéterminée, et la [sous-traitance de main-d'œuvre](#g-sous-traitance-main-oeuvre) est interdite.
@@ -19,19 +37,15 @@ Un employeur qui licencie un salarié en [contrat à durée indéterminée](#g-c
 
 Le coût d'une rupture pour l'employeur tient à quelques grandeurs, que le @tbl-mt-rc-parametres suit d'une réforme à l'autre.
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré (aucune de ces grandeurs n'est encore versée ; ligne de docs/notes/backlog-modele.md du 20/10/2026) -->
+```{python}
+#| echo: false
+#| output: asis
+table("mt_rc_parametres",
+      "Ce que coûte la fin d'un contrat permanent, 1966-2025",
+      "tbl-mt-rc-parametres")
+```
 
-| Grandeur | [1^er^ mai 1966]{.insecable}<br>[code](#r-mt-rc-loi-1966) | [1^er^ juin 1973]{.insecable}<br>[convention cadre](#r-mt-rc-loi-1973) | [1^er^ mars 1994]{.insecable}<br>[loi n° 94-29](#r-mt-rc-loi-1994) | [31 juillet 1996]{.insecable}<br>[loi n° 96-62](#r-mt-rc-loi-1996) | [24 mai 2025]{.insecable}<br>[loi n° 2025-9](#r-mt-rc-loi-2025) |
-|:---|:---|:---|:---|:---|:---|
-| Préavis | 1 mois (salariés payés au mois) ; 8 jours (autres) | délai des conventions de branche, à défaut celui de la loi | 1 mois pour tous | inchangé | inchangé |
-| Gratification de fin de service<br>(taux et plafond) | 1 jour de salaire par mois de services effectifs ; plafond de 3 mois de salaire | calcul renvoyé aux conventions de branche | inchangés | inchangés | inchangés |
-| Gratification<br>(condition) | 6 mois de services ; hors faute lourde | inchangée | après la période d'essai ; hors faute grave | inchangée | inchangée |
-| Dommages-intérêts<br>(licenciement abusif) | appréciés par le juge | inchangés | 1 à 2 mois de salaire par année d'ancienneté ; plafond de 3 ans de salaire | inchangés | inchangés |
-| Dommages-intérêts<br>(vice de procédure seul) | — | — | 1 à 4 mois de salaire | inchangés | inchangés |
-| Contrat à durée déterminée<br>(hors cas de recours) | ni cas ni durée | inchangé | inchangé | 4 ans au plus, renouvellements compris | interdit ; trois cas de recours, sans durée maximale |
-| Période d'essai | renvoyée aux conventions, à l'usage ou à la loi | 3 mois, renouvelable une fois | inchangée | inchangée | 6 mois au plus, renouvelable une fois |
-
-: Ce que coûte la fin d'un contrat permanent, 1966-2025 {#tbl-mt-rc-parametres}
+<!-- TODO (documentaliste) : la colonne de 1973 (convention cadre, qui renvoie aux conventions de branche), les lignes « appréciés par le juge » et « conventions » et la période d'essai de 1966 à 1996 ne sont portées par aucun paramètre ; elles sont écrites dans scripts/generate_marche_travail_tables.py jusqu'au versement de la convention cadre de 1973 et des conventions de branche. -->
 
 « Inchangé » signale une règle que le texte de la colonne ne touche pas ; un tiret, une règle qui n'existe pas encore. Les montants légaux sont des minimums, que les conventions de branche peuvent dépasser.
 
@@ -150,7 +164,7 @@ Les quatre blocs qui suivent donnent, pour les lois de réforme et pour chaque r
 | Effet | Portée | Texte | Intitulé, rubriques et date d'effet |
 |---|---|---|---|
 | []{#r-mt-rc-loi-1966}[1^er^ mai 1966]{.insecable} | mise en place | loi n° 66-27 du 30 avril 1966, code du travail [@loi66-27, art. 1er] | « Les textes publiés ci-après relatifs au droit du travail constituant le Code du Travail » ; « entrera en vigueur le 1er mai 1966 » ; livre I, titre premier, chapitre III, « Fin du contrat de travail » (art. 14 à 27) |
-| []{#r-mt-rc-loi-1973}[1^er^ juin 1973]{.insecable} | étape | convention collective cadre, rendue obligatoire par arrêté du 29 mai 1973 [@arrete-1973-05-29-convention-cadre, art. 10, 16 et 18] | période d'essai, délai-congé, indemnité de licenciement pour toutes les activités non agricoles |
+| []{#r-mt-rc-loi-1973}[1^er^ juin 1973]{.insecable} | étape | convention collective cadre, rendue obligatoire par arrêté du 29 mai 1973 [@arrete-1973-05-29-convention-cadre, art. 10, 16 et 18, et art. 52, p. 859] | période d'essai, délai-congé, indemnité de licenciement pour toutes les activités non agricoles ; entrée en vigueur le 1^er^ juin 1973 (art. 52) |
 | []{#r-mt-rc-loi-1994}[1^er^ mars 1994]{.insecable} | **rupture** | loi n° 94-29 du 21 février 1994 [@loi94-29, art. 1er et 2, p. 318-319 et 325] | « portant modification de certaines dispositions du code du travail » ; aucune rubrique ; exécutoire cinq jours après le dépôt du JORT n° 15 au gouvernorat de Tunis, le 24 février 1994 |
 | []{#r-mt-rc-loi-1996}[31 juillet 1996]{.insecable} | grande réforme | loi n° 96-62 du 15 juillet 1996 [@loi96-62, art. 1er et 5, p. 1579-1580 et 1588] | même intitulé ; aucune rubrique pour les art. 6-2 à 6-4 et 21 à 21-13 ; exécutoire cinq jours après le dépôt du JORT n° 59, le 26 juillet 1996 |
 | []{#r-mt-rc-loi-2025}[24 mai 2025]{.insecable} | **rupture** | loi n° 2025-9 du 21 mai 2025 [@loi2025-9, art. 1er à 10, p. 1296-1299] | « portant réglementation des contrats de travail et interdiction de la sous-traitance de main-d'œuvre » ; chapitres « Des contrats de travail » (art. 1er), « De l'interdiction de la sous-traitance de main d'œuvre » (art. 2), « Dispositions diverses » (art. 3 à 5), « Dispositions transitoires » (art. 6 à 10) ; exécutoire le lendemain de sa publication au JORT n° 61 du 23 mai 2025 (règle de date : décret-loi n° 2020-1, art. 2) |
