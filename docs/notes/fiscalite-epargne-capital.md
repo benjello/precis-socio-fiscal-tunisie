@@ -503,6 +503,30 @@ Lu le 20/10/2026 dans `openfisca-tunisia/openfisca_tunisia/parameters/impot_reve
   les livrets de la CENT sont alors exonérés (38-7). La CENT entre dans la déduction en 1992
   (LF 1992, art. 30). Paramètre à revoir ou à supprimer.
 
+- **État après la 0.141 (22/10/2026).** Les feuilles ci-dessus sont versées (#496, #499, #500).
+  Le précis en engendre, outre les cinq tableaux de plafonds et d'actions cotées, cinq tableaux
+  de retenues : `irpp_epargne_fonds` (retenue définitive, 1992, 2021, 2022),
+  `irpp_epargne_ceo` (comptes d'épargne-emprunts obligataires, 1992, 1997),
+  `irpp_epargne_nr_interets` (non-résidents : revenus de capitaux mobiliers, intérêts des
+  prêts des banques non établies, bénéficiaires de pays à régime fiscal privilégié),
+  `irpp_epargne_nr_plus_values` (retenue sur le prix puis sur la plus-value, plafond en part du
+  prix) et `irpp_epargne_jetons`. La date vient de la feuille ; le libellé du texte et l'ancre
+  du registre sont écrits dans `scripts/generate_bareme_tables.py`. Restent à la main : la
+  liste des États à régime fiscal privilégié, l'extension de 2002 aux fonds communs de
+  placement (LF 2002, art. 21 à 28 non relus), les lignes de registre sans changement de valeur
+  (1999 pour les fonds, 2005 pour les non-résidents), `regimes_speciaux/retenue_liberatoire/taux`
+  (0,20 en 1990 contre 15 % au code, p. 11) et le détail des textes de chaque registre.
+- **Correction du registre des intérêts (1990).** Au code de 1990 (JORT n° 1 des 2-5 janvier
+  1990, p. 11), l'alinéa 52-I-c a deux tirets : les revenus de capitaux mobiliers (15 %) et les
+  sommes servies aux non-résidents au titre de l'article 3, point 6 (15 %, redevances). La ligne
+  `r-epargne-interets-1990` écrivait « 15 % sur les autres revenus de capitaux mobiliers et les
+  sommes servies aux non-résidents » : le second tiret ne vise pas des revenus de placement ; la
+  ligne le dit. Le caractère libératoire pour les non-résidents (52-II) est inchangé. La LF 2019
+  (art. 35, édition arabe, pp. 5449-5450) est ajoutée au registre des non-résidents
+  (`r-epargne-nr-2019`).
+- **Écart de pages à noter** : la feuille des jetons de présence cite les art. 50 et 52 de la
+  LF 1995 ; le registre cite les art. 50 à 53 ; le tableau engendré reprend le registre.
+
 ## 12. Recherches infructueuses
 
 `uv run python scripts/recherches.py lister` (20/10/2026) : 170 fiches, aucune sur ce sujet.
