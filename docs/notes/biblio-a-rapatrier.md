@@ -3809,9 +3809,9 @@ Ajoutées ensuite au même chantier (FR et AR de `fiscalite`, 157 entrées de ch
 - [ ] Titres arabes non établis : dans `precis/ar/marche_travail/references.json`, les 29 entrées versées
   portent le titre français ou anglais de l'original (aucun intitulé arabe lu) ; textes de droit : intitulé
   arabe du JORT à relever, URL `pdf_ar` à lire dans `jort_cache.db` pour chacun.
-- [ ] Doublon à trancher : `bm2015-labor-policy` (présent dans `marche_travail`) et
-  `bm-2015-labor-policy-good-jobs` (signalé ; absent de tous les `references.json` locaux, donc sans doute
-  côté Zotero ou autre branche). Garder `bm2015-labor-policy` (clé citée) et supprimer l'autre dans Zotero.
+- [x] Doublon tranché le 22/10/2026 : `bm-2015-labor-policy-good-jobs` (citée par `_rupture_contrat.qmd`, même DOI)
+  fondue dans `bm2015-labor-policy` (note reprise, citation redirigée). Reste à supprimer la notice côté Zotero
+  (action `supprimer` du workflow `biblio-zotero`).
 - Contrôles : `push_biblio.py --verifier` : 1691 entrées, 0 perte. `--dry-run` : 1691 références locales,
   1691 à créer (aucune erreur de conversion). `--controle-rangement` : 1292 bien rangées, 19 à déclasser
   (dont `loi2024-44`, citée par `prestations_sociales` et `marche_travail`, et `loi93-11`), 0 à ranger,
