@@ -306,7 +306,12 @@ F_JOURS_OUVRABLES = _nom_compte("jour ouvrable", "jours ouvrables",
 F_JOURS_DEC = _nom_compte("jour", "jours", ("يوم", "يومان", "أيام", "يومًا"))
 F_ENTIER = lambda v, langue: str(int(v))  # noqa: E731
 F_ENTIER_LETTRES = lambda v, langue: (  # noqa: E731
-    {8: "huit"}.get(int(v), str(int(v))) if langue == "fr" else str(int(v)))
+    {8: "huit"}.get(int(v), str(int(v))) if langue == "fr"
+    else {8: "الثماني"}.get(int(v), f"الـ{int(v)}"))
+# Bornes d'une fourchette en mois : « من شهر إلى شهرين », « إلى 4 أشهر » (génitif, accord du nom).
+F_MOIS_BORNE = lambda v, langue: (  # noqa: E731
+    str(int(v)) if langue == "fr"
+    else ot.compte(int(v), ("شهر", "شهرين", "أشهر", "شهرا"), "ar"))
 F_DECIMAL = lambda v, langue: _fr(v)  # noqa: E731
 F_TAUX = lambda v, langue: ot.formate_taux(v)  # noqa: E731
 F_ANS_DE_MOIS = lambda v, langue: ot.compte(int(v) // 12, "ans", langue)  # noqa: E731
@@ -459,17 +464,17 @@ LIB = {
         "Indemnité de congé, diviseur, 21 ans et plus", "منحة الرخصة، المقسوم عليه، 21 سنة فأكثر"),
     f"{TT}/conge_paternite/duree": ("Congé de paternité, durée", "عطلة الأبوة، المدة"),
     f"{TT}/jours_feries/nombre": ("Nombre de jours fériés payés de la loi",
-                                  "عدد الأعياد الخالصة الأجر بحكم القانون"),
+                                  "عدد أيام عطلة خالصة الأجر بحكم القانون"),
     f"{TT}/jours_feries/liste": ("Liste des jours fériés payés de la loi",
-                                 "قائمة الأعياد الخالصة الأجر بحكم القانون"),
+                                 "قائمة أيام عطلة خالصة الأجر بحكم القانون"),
     f"{TT}/jours_feries/indemnite_jour_ferie_travaille": (
         "Indemnité du jour férié travaillé, code du travail",
         "منحة يوم العيد المشغول، مجلة الشغل"),
     f"{TT}/convention_cadre/jours_feries": ("Jours fériés payés de la convention cadre",
-                                            "الأعياد الخالصة الأجر بالاتفاقية الإطارية"),
+                                            "أيام عطلة خالصة الأجر بالاتفاقية المشتركة الإطارية"),
     f"{TT}/convention_cadre/majoration_jour_ferie_travaille": (
         "Majoration du jour férié travaillé, convention cadre",
-        "زيادة يوم العيد المشغول، الاتفاقية الإطارية"),
+        "زيادة يوم العيد المشغول، الاتفاقية المشتركة الإطارية"),
 }
 
 
@@ -543,7 +548,7 @@ def entete_date(date: str, etiquette: dict[str, str] | None, langue: str,
 # --- rupture du contrat : grandeurs aux dates des réformes
 RC_COLONNES = [
     ("1966-05-01", {"fr": "code", "ar": "المجلة"}, "r-mt-rc-loi-1966"),
-    ("1973-06-01", {"fr": "convention cadre", "ar": "الاتفاقية الإطارية"}, "r-mt-rc-loi-1973"),
+    ("1973-06-01", {"fr": "convention cadre", "ar": "الاتفاقية المشتركة الإطارية"}, "r-mt-rc-loi-1973"),
     ("1994-03-01", {"fr": "loi n° 94-29", "ar": "القانون عدد 94-29"}, "r-mt-rc-loi-1994"),
     ("1996-07-31", {"fr": "loi n° 96-62", "ar": "القانون عدد 96-62"}, "r-mt-rc-loi-1996"),
     ("2025-05-24", {"fr": "loi n° 2025-9", "ar": "القانون عدد 2025-9"}, "r-mt-rc-loi-2025"),
@@ -566,7 +571,7 @@ def rc_parametres(langue: str):
     lignes = [
         ({"fr": "Préavis", "ar": "أجل الإعلام"}, compacter([
             g("{m} (salariés payés au mois) ; {j} (autres)",
-              "{m} (الأجراء الخالصون بالشهر) ؛ {j} (غيرهم)",
+              "{m} (الأجراء الخالصون بالشهر)؛ {j} (غيرهم)",
               m=lire(f"{P}/duree", D66, F_MOIS),
               j=lire(f"{P}/duree_salaries_non_mensuels", D66, F_JOURS)),
             h("délai des conventions de branche, à défaut celui de la loi",
@@ -579,39 +584,39 @@ def rc_parametres(langue: str):
         ({"fr": "Gratification de fin de service<br>(taux et plafond)",
           "ar": "مكافأة نهاية الخدمة<br>(النسبة والسقف)"}, compacter([
             g("{j} de salaire par mois de services effectifs ; plafond de {p} de salaire",
-              "{j} من الأجر عن كل شهر من الخدمة الفعلية ؛ السقف {p} من الأجر",
+              "{j} من الأجر عن كل شهر من الخدمة الفعلية؛ السقف {p} من الأجر",
               j=lire(f"{GF}/jours_par_mois_service", D66, F_JOURS),
               p=lire(f"{GF}/plafond", D66, F_MOIS)),
             h("calcul renvoyé aux conventions de branche", "الاحتساب محال على الاتفاقيات القطاعية"),
             *[g("{j} de salaire par mois de services effectifs ; plafond de {p} de salaire",
-                "{j} من الأجر عن كل شهر من الخدمة الفعلية ؛ السقف {p} من الأجر",
+                "{j} من الأجر عن كل شهر من الخدمة الفعلية؛ السقف {p} من الأجر",
                 j=lire(f"{GF}/jours_par_mois_service", d, F_JOURS),
                 p=lire(f"{GF}/plafond", d, F_MOIS)) for d in (D94, D96, D25)],
         ], inch_p)),
         ({"fr": "Gratification<br>(condition)", "ar": "المكافأة<br>(الشرط)"}, compacter([
-            g("{m} de services ; hors faute lourde", "{m} من الخدمة ؛ باستثناء الخطأ الجسيم",
+            g("{m} de services ; hors faute lourde", "{m} من الخدمة؛ باستثناء الخطأ الجسيم",
               m=lire(f"{GF}/anciennete_minimale", D66, F_MOIS)),
             h("inchangée", "دون تغيير"),
             *[(close(f"{GF}/anciennete_minimale", d, langue) or
                g("après la période d'essai ; hors faute grave",
-                 "بعد انقضاء فترة التجربة ؛ باستثناء الخطأ الفادح")) for d in (D94, D96, D25)],
+                 "بعد انقضاء فترة التجربة؛ باستثناء الخطأ الفادح")) for d in (D94, D96, D25)],
         ], inch_f)),
         ({"fr": "Dommages-intérêts<br>(licenciement abusif)",
           "ar": "الغرامات<br>(الطرد التعسفي)"}, compacter([
             h("appréciés par le juge", "يقدّرها القاضي"),
             h("inchangés", "دون تغيير"),
             *[g("{a} à {b} mois de salaire par année d'ancienneté ; plafond de {p} de salaire",
-                "من {a} إلى {b} أشهر أجر عن كل سنة أقدمية ؛ السقف {p} من الأجر",
-                a=lire(f"{DI}/minimum_par_annee_anciennete", d, F_ENTIER),
-                b=lire(f"{DI}/maximum_par_annee_anciennete", d, F_ENTIER),
+                "أجر من {a} إلى {b} عن كل سنة أقدمية؛ السقف {p} من الأجر",
+                a=lire(f"{DI}/minimum_par_annee_anciennete", d, F_MOIS_BORNE),
+                b=lire(f"{DI}/maximum_par_annee_anciennete", d, F_MOIS_BORNE),
                 p=lire(f"{DI}/plafond", d, F_ANS_DE_MOIS)) for d in (D94, D96, D25)],
         ], inch_p)),
         ({"fr": "Dommages-intérêts<br>(vice de procédure seul)",
           "ar": "الغرامات<br>(خرق الإجراءات فقط)"}, compacter([
             VIDE_CASE, VIDE_CASE,
-            *[g("{a} à {b} mois de salaire", "من {a} إلى {b} أشهر أجر",
-                a=lire(f"{DI}/vice_procedure_minimum", d, F_ENTIER),
-                b=lire(f"{DI}/vice_procedure_maximum", d, F_ENTIER)) for d in (D94, D96, D25)],
+            *[g("{a} à {b} mois de salaire", "أجر من {a} إلى {b}",
+                a=lire(f"{DI}/vice_procedure_minimum", d, F_MOIS_BORNE),
+                b=lire(f"{DI}/vice_procedure_maximum", d, F_MOIS_BORNE)) for d in (D94, D96, D25)],
         ], inch_p)),
         ({"fr": "Contrat à durée déterminée<br>(hors cas de recours)",
           "ar": "عقد الشغل لمدة معينة<br>(خارج حالات اللجوء إليه)"}, [
@@ -623,7 +628,7 @@ def rc_parametres(langue: str):
                      F_ANS_DE_MOIS)),
             (close(f"{RC}/contrat_duree_determinee/duree_maximale_hors_cas_recours", D25, langue) or
              h("interdit ; trois cas de recours, sans durée maximale",
-               "ممنوع ؛ ثلاث حالات للجوء إليه، دون مدة قصوى")),
+               "ممنوع؛ ثلاث حالات للجوء إليه، دون مدة قصوى")),
         ]),
         ({"fr": "Période d'essai", "ar": "فترة التجربة"}, [
             h("renvoyée aux conventions, à l'usage ou à la loi",
@@ -644,8 +649,8 @@ def rc_parametres(langue: str):
 # --- temps de travail : grandeurs aux dates repères
 TT_COLONNES = [
     ("1966-05-01", {"fr": "code", "ar": "المجلة"}, "r-mt-tt-loi-1966"),
-    ("1973-06-01", {"fr": "convention cadre", "ar": "الاتفاقية الإطارية"}, "r-mt-tt-cc-1973"),
-    ("1984-11-17", {"fr": "avenant n° 1", "ar": "الملحق عدد 1"}, "r-mt-tt-feries-1984"),
+    ("1973-06-01", {"fr": "convention cadre", "ar": "الاتفاقية المشتركة الإطارية"}, "r-mt-tt-cc-1973"),
+    ("1984-11-17", {"fr": "avenant n° 1", "ar": "الملحق التعديلي عدد 1"}, "r-mt-tt-feries-1984"),
     ("1988-06-05", {"fr": "loi n° 88-55", "ar": "القانون عدد 88-55"}, "r-mt-tt-feries-1988"),
     ("1996-07-31", {"fr": "loi n° 96-62", "ar": "القانون عدد 96-62"}, "r-mt-tt-loi-1996"),
     (EFFET_2026, None, None),
@@ -689,7 +694,7 @@ def tt_parametres(langue: str):
     def majcourt(d):
         if d < T96:
             return g("régime de 40 heures : {a} les {n} premières heures supplémentaires, {b} au-delà",
-                     "نظام 40 ساعة : {a} للساعات الإضافية الـ{n} الأولى، و{b} بعدها",
+                     "نظام 40 ساعة: {a} للساعات الإضافية {n} الأولى، و{b} بعدها",
                      a=lire(f"{HS}/regime_40h/taux_premieres_heures", d, F_TAUX),
                      n=lire(f"{HS}/regime_40h/nombre_premieres_heures", d, F_ENTIER_LETTRES),
                      b=lire(f"{HS}/regime_40h/taux_heures_suivantes", d, F_TAUX))
@@ -730,10 +735,10 @@ def tt_parametres(langue: str):
                    compacter([indemnite(d) for d in TDATES], IDEM)))
 
     lignes.append(({"fr": "Traitement pendant le congé<br>(convention cadre)",
-                    "ar": "الأجر خلال الرخصة<br>(الاتفاقية الإطارية)"},
+                    "ar": "الأجر خلال الرخصة<br>(الاتفاقية المشتركة الإطارية)"},
                    [VIDE_CASE, h("intégral", "كامل")] + [IDEM] * 4))
 
-    lignes.append(({"fr": "Jours fériés payés<br>(loi)", "ar": "الأعياد الخالصة الأجر<br>(القانون)"},
+    lignes.append(({"fr": "Jours fériés payés<br>(loi)", "ar": "أيام عطلة خالصة الأجر<br>(القانون)"},
                    [g("{n}", "{n}", n=lire(f"{JF}/nombre", d, F_ENTIER)) for d in TDATES]))
 
     cases = []
@@ -744,7 +749,7 @@ def tt_parametres(langue: str):
         else:
             cases.append(g("{n}", "{n}", n=lire(f"{CC}/jours_feries", d, F_ENTIER)))
     lignes.append(({"fr": "Jours fériés payés<br>(convention cadre)",
-                    "ar": "الأعياد الخالصة الأجر<br>(الاتفاقية الإطارية)"}, cases))
+                    "ar": "أيام عطلة خالصة الأجر<br>(الاتفاقية المشتركة الإطارية)"}, cases))
 
     entetes = [{"fr": "Grandeur", "ar": "المقدار"}[langue]] + [
         entete_date(d, e, langue, a) for d, e, a in TT_COLONNES]
@@ -792,7 +797,7 @@ def tt_etat_du_droit(langue: str):
          lien_art("art. 90 et 94-6", "الفصلان 90 و94-6", "r-mt-tt-tp-1996"),
          h("salariés à temps partiel", "الأجراء لوقت جزئي")],
         [h("Durée et majoration<br>(agriculture)", "المدة والزيادة<br>(الفلاحة)"),
-         g("{h} par an ; {t}", "{h} في السنة ؛ {t}",
+         g("{h} par an ; {t}", "{h} في السنة؛ {t}",
            h=lire(f"{DU}/agriculture_annuelle_maximale", e, F_MILLIERS),
            t=lire(f"{HS}/agriculture", e, F_TAUX)),
          lien_art("art. 88 et 94", "الفصلان 88 و94", "r-mt-tt-agri-1966"),
@@ -803,9 +808,9 @@ def tt_etat_du_droit(langue: str):
            p=lire(f"{Pl}/adultes", e, F_JOURS_OUVRABLES)),
          lien_art("art. 113", "الفصل 113", "r-mt-tt-conge-1996"), regis],
         [h("Congé annuel<br>(moins de 18 ans ; 18 à 20 ans)",
-           "الرخصة السنوية<br>(أقل من 18 سنة ؛ من 18 إلى 20 سنة)"),
+           "الرخصة السنوية<br>(أقل من 18 سنة؛ من 18 إلى 20 سنة)"),
          g("{j1} par mois, {p1} au plus ; {j2}, {p2} au plus",
-           "{j1} عن كل شهر، {p1} على الأكثر ؛ {j2}، {p2} على الأكثر",
+           "{j1} عن كل شهر، {p1} على الأكثر؛ {j2}، {p2} على الأكثر",
            j1=lire(f"{A}/moins_18_ans", e, F_JOURS_DEC),
            p1=lire(f"{Pl}/moins_18_ans", e, F_JOURS_OUVRABLES),
            j2=lire(f"{A}/de_18_a_20_ans", e, F_JOURS_DEC),
@@ -820,27 +825,27 @@ def tt_etat_du_droit(langue: str):
         [h("Indemnité de congé", "منحة الرخصة"),
          h("salaire et indemnités habituels", "الأجر والمنح المعتادة"),
          lien_art("art. 119", "الفصل 119", "r-mt-tt-conge-1996"), meme],
-        [h("Jours fériés payés<br>(loi)", "الأعياد الخالصة الأجر<br>(القانون)"),
-         g("{n} : {l}", "{n} : {l}", n=lire(f"{JF}/nombre", e, F_ENTIER),
+        [h("Jours fériés payés<br>(loi)", "أيام عطلة خالصة الأجر<br>(القانون)"),
+         g("{n} : {l}", "{n}: {l}", n=lire(f"{JF}/nombre", e, F_ENTIER),
            l=lire(f"{JF}/liste", e, _liste_feries)),
          lien_art("art. 445", "الفصل 445", "r-mt-tt-feries-2021"), meme],
         [h("Jours fériés payés<br>(convention cadre)",
-           "الأعياد الخالصة الأجر<br>(الاتفاقية الإطارية)"),
+           "أيام عطلة خالصة الأجر<br>(الاتفاقية المشتركة الإطارية)"),
          g("{n}", "{n}", n=lire(f"{CC}/jours_feries", e, F_ENTIER)),
-         lien_art("avenant n° 2", "الملحق عدد 2", "r-mt-tt-feries-1992"),
+         lien_art("avenant n° 2", "الملحق التعديلي عدد 2", "r-mt-tt-feries-1992"),
          h("salariés couverts par la convention cadre (@sec-mt-cc-couverture)",
-           "الأجراء المشمولون بالاتفاقية الإطارية (@sec-mt-cc-couverture)")],
+           "الأجراء المشمولون بالاتفاقية المشتركة الإطارية (@sec-mt-cc-couverture)")],
         [h("Jour férié travaillé", "يوم العيد المشغول"),
          g("code : indemnité {i}, en plus du salaire, dans les activités continues ; "
            "convention cadre : majoration de {m}",
-           "المجلة : منحة {i}، علاوة على الأجر، في الأنشطة المتواصلة ؛ "
-           "الاتفاقية الإطارية : زيادة بنسبة {m}",
+           "المجلة: منحة {i}، علاوة على الأجر، في الأنشطة المستمرة؛ "
+           "الاتفاقية المشتركة الإطارية: زيادة بنسبة {m}",
            i=lire(f"{JF}/indemnite_jour_ferie_travaille", e, _indemnite_ferie),
            m=lire(f"{CC}/majoration_jour_ferie_travaille", e, F_TAUX)),
          {"fr": "[art. 109](#r-mt-tt-feries-paiement) ; [art. 29](#r-mt-tt-feries-1973)",
-          "ar": "[الفصل 109](#r-mt-tt-feries-paiement) ؛ [الفصل 29](#r-mt-tt-feries-1973)"},
+          "ar": "[الفصل 109](#r-mt-tt-feries-paiement)؛ [الفصل 29](#r-mt-tt-feries-1973)"},
          h("salariés des activités continues ; salariés couverts par la convention cadre",
-           "أجراء الأنشطة المتواصلة ؛ الأجراء المشمولون بالاتفاقية الإطارية")],
+           "أجراء الأنشطة المستمرة؛ الأجراء المشمولون بالاتفاقية المشتركة الإطارية")],
         [h("Congé de paternité", "عطلة الأبوة"),
          g("{d}", "{d}", d=lire(f"{TT}/conge_paternite/duree", e, F_JOURS)),
          lien_art("loi n° 2024-44", "القانون عدد 2024-44", "r-mt-tt-paternite-2024"),
@@ -848,9 +853,9 @@ def tt_etat_du_droit(langue: str):
            "الأجراء المنخرطون بالصندوق (@sec-mt-tt-conges-familiaux)")],
         [h("Travail domestique", "العمل المنزلي"),
          h("employeur unique : 48 heures par semaine, 10 heures par jour ; 1 jour de congé par mois",
-           "مشغّل وحيد : 48 ساعة في الأسبوع، 10 ساعات في اليوم ؛ يوم رخصة عن كل شهر"),
+           "مؤجر وحيد: 48 ساعة في الأسبوع، 10 ساعات في اليوم؛ يوم رخصة عن كل شهر"),
          {"fr": "[art. 13 et 19](#r-mt-tt-dom-duree) ; [art. 14](#r-mt-tt-dom-conge)",
-          "ar": "[الفصلان 13 و19](#r-mt-tt-dom-duree) ؛ [الفصل 14](#r-mt-tt-dom-conge)"},
+          "ar": "[الفصلان 13 و19](#r-mt-tt-dom-duree)؛ [الفصل 14](#r-mt-tt-dom-conge)"},
          h("travailleurs domestiques", "العمال المنزليون")],
     ]
     entetes = [
@@ -902,11 +907,11 @@ def tt_conge(langue: str):
 # --- temps de travail : jours fériés payés, une ligne par date d'effet
 FERIES_TEXTES = {
     "1966-05-01": ("code du travail", "مجلة الشغل", "r-mt-tt-feries-1966"),
-    "1973-06-01": ("convention cadre", "الاتفاقية الإطارية", "r-mt-tt-feries-1973"),
-    "1984-11-17": ("avenant n° 1", "الملحق عدد 1", "r-mt-tt-feries-1984"),
+    "1973-06-01": ("convention cadre", "الاتفاقية المشتركة الإطارية", "r-mt-tt-feries-1973"),
+    "1984-11-17": ("avenant n° 1", "الملحق التعديلي عدد 1", "r-mt-tt-feries-1984"),
     "1988-06-05": ("loi n° 88-55", "القانون عدد 88-55", "r-mt-tt-feries-1988"),
     "1991-03-07": ("loi n° 91-15", "القانون عدد 91-15", "r-mt-tt-feries-1991"),
-    "1992-10-15": ("avenant n° 2", "الملحق عدد 2", "r-mt-tt-feries-1992"),
+    "1992-10-15": ("avenant n° 2", "الملحق التعديلي عدد 2", "r-mt-tt-feries-1992"),
     "2011-06-16": ("décret-loi n° 2011-51", "المرسوم عدد 2011-51", "r-mt-tt-feries-2011"),
     "2021-12-15": ("décret-loi n° 2021-11", "المرسوم عدد 2021-11", "r-mt-tt-feries-2021"),
 }
@@ -943,7 +948,7 @@ def tt_feries(langue: str):
                        g("{n}", "{n}", n=lire(f"{JF}/nombre", d, F_ENTIER)), conv])
     entetes = [{"fr": x, "ar": y}[langue] for x, y in [
         ("Date d'effet", "تاريخ النفاذ"), ("Texte", "النص"), ("Loi", "القانون"),
-        ("Convention cadre", "الاتفاقية الإطارية")]]
+        ("Convention cadre", "الاتفاقية المشتركة الإطارية")]]
     return ot.tableau_gabarit(entetes, lignes, langue)
 
 
