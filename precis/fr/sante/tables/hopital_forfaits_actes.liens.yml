@@ -1,0 +1,52 @@
+- libelle: Photo-kératectomie au laser, supplément en cas de reprise
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/photokeratectomie_laser_reprise.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.photokeratectomie_laser_reprise/table/
+- libelle: Hémodialyse, par séance (dont 2 D affectés à la lutte contre l'insuffisance
+    rénale)
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/hemodialyse_seance.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.hemodialyse_seance/table/
+- libelle: Lithotripsie, par acte et par localisation
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/lithotripsie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.lithotripsie/table/
+- libelle: Imagerie par résonance magnétique
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/imagerie_resonance_magnetique.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.imagerie_resonance_magnetique/table/
+- libelle: 'Accouchement normal : établissement universitaire ; hôpital régional ;
+    hôpital de circonscription ou maternité périphérique'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/accouchement_normal/universitaire.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.accouchement_normal.universitaire/table/
+- libelle: 'Accouchement normal : établissement universitaire ; hôpital régional ;
+    hôpital de circonscription ou maternité périphérique'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/accouchement_normal/hopital_regional.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.accouchement_normal.hopital_regional/table/
+- libelle: 'Accouchement normal : établissement universitaire ; hôpital régional ;
+    hôpital de circonscription ou maternité périphérique'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/accouchement_normal/hopital_circonscription.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.accouchement_normal.hopital_circonscription/table/
+- libelle: 'Accouchement par césarienne : établissement universitaire ; hôpital régional'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/accouchement_cesarienne/universitaire.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.accouchement_cesarienne.universitaire/table/
+- libelle: 'Accouchement par césarienne : établissement universitaire ; hôpital régional'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/accouchement_cesarienne/hopital_regional.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.accouchement_cesarienne.hopital_regional/table/
+- libelle: Scanner du crâne ; scanner du reste du corps
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/scanner_crane.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.scanner_crane/table/
+- libelle: Scanner du crâne ; scanner du reste du corps
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/scanner_reste_corps.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.scanner_reste_corps/table/
+- libelle: Fécondation in vitro, par essai
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/fecondation_in_vitro.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.fecondation_in_vitro/table/
+- libelle: Insémination avec sperme du conjoint, par essai
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/insemination_sperme_conjoint.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.insemination_sperme_conjoint/table/
+- libelle: Photo-kératectomie au laser, par œil (100 D de plus en cas de reprise)
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/photokeratectomie_laser.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.photokeratectomie_laser/table/
+- libelle: Kératomileusis in situ au laser, par œil ; les deux yeux opérés ensemble
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/keratomileusis_laser.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.keratomileusis_laser/table/
+- libelle: Kératomileusis in situ au laser, par œil ; les deux yeux opérés ensemble
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/forfaits_actes/keratomileusis_laser_deux_yeux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.forfaits_actes.keratomileusis_laser_deux_yeux/table/

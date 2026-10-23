@@ -1,0 +1,96 @@
+- libelle: Consultation de médecine générale, malades payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/consultation/medecine_generale.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.consultation.medecine_generale/table/
+- libelle: Consultation externe, centre de santé de base, tarif réduit de 1998 en
+    pourcentage
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/taux_consultation/centre_sante_base.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.taux_consultation.centre_sante_base/table/
+- libelle: Consultation externe, centre de santé de base
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/consultation/centre_sante_base.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.consultation.centre_sante_base/table/
+- libelle: Consultation externe, hôpital de circonscription, tarif réduit de 1998
+    en pourcentage
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/taux_consultation/hopital_circonscription.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.taux_consultation.hopital_circonscription/table/
+- libelle: Consultation externe, hôpital de circonscription
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/consultation/hopital_circonscription.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.consultation.hopital_circonscription/table/
+- libelle: Consultation de spécialité, autres spécialistes, malades payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/consultation/specialite_autres_specialistes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.consultation.specialite_autres_specialistes/table/
+- libelle: Consultation de spécialité, professeurs et maîtres de conférence agrégés,
+    malades payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/consultation/specialite_professeurs_agreges.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.consultation.specialite_professeurs_agreges/table/
+- libelle: Consultation externe, hôpital régional, tarif réduit de 1998 en pourcentage
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/taux_consultation/hopital_regional.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.taux_consultation.hopital_regional/table/
+- libelle: Consultation externe, hôpital régional
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/consultation/hopital_regional.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.consultation.hopital_regional/table/
+- libelle: Consultation externe, établissement universitaire, tarif réduit de 1998
+    en pourcentage
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/taux_consultation/universitaire.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.taux_consultation.universitaire/table/
+- libelle: Consultation externe, établissement universitaire
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/consultation/universitaire.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.consultation.universitaire/table/
+- libelle: Journée d'hospitalisation, hôpital de circonscription, malades payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/hospitalisation/hopital_circonscription.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.hospitalisation.hopital_circonscription/table/
+- libelle: Hospitalisation en médecine, hôpital de circonscription
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/hospitalisation/hopital_circonscription_medecine.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.hospitalisation.hopital_circonscription_medecine/table/
+- libelle: Journée d'hospitalisation, hôpital régional, médecine, malades payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/hospitalisation/hopital_regional_medecine.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.hospitalisation.hopital_regional_medecine/table/
+- libelle: Hospitalisation en médecine, hôpital régional
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/hospitalisation/hopital_regional_medecine.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.hospitalisation.hopital_regional_medecine/table/
+- libelle: Journée d'hospitalisation, établissement universitaire, médecine, malades
+    payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/hospitalisation/universitaire_medecine.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.hospitalisation.universitaire_medecine/table/
+- libelle: Journée d'hospitalisation, établissement universitaire, spécialités médicales,
+    malades payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/hospitalisation/universitaire_specialites_medicales.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.hospitalisation.universitaire_specialites_medicales/table/
+- libelle: Journée d'hospitalisation, établissement universitaire, néphrologie, malades
+    payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/hospitalisation/universitaire_nephrologie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.hospitalisation.universitaire_nephrologie/table/
+- libelle: Hospitalisation en médecine, établissement universitaire
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/hospitalisation/universitaire_medecine.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.hospitalisation.universitaire_medecine/table/
+- libelle: Hospitalisation en chirurgie, hôpital de circonscription
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/hospitalisation/hopital_circonscription_chirurgie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.hospitalisation.hopital_circonscription_chirurgie/table/
+- libelle: Journée d'hospitalisation, hôpital régional, chirurgie, malades payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/hospitalisation/hopital_regional_chirurgie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.hospitalisation.hopital_regional_chirurgie/table/
+- libelle: Hospitalisation en chirurgie, hôpital régional
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/hospitalisation/hopital_regional_chirurgie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.hospitalisation.hopital_regional_chirurgie/table/
+- libelle: Journée d'hospitalisation, établissement universitaire, chirurgie, malades
+    payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/hospitalisation/universitaire_chirurgie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.hospitalisation.universitaire_chirurgie/table/
+- libelle: Hospitalisation en chirurgie, établissement universitaire
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/hospitalisation/universitaire_chirurgie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.hospitalisation.universitaire_chirurgie/table/
+- libelle: Journée d'hospitalisation, établissement universitaire, réanimation, malades
+    payants
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/hospitalisation/universitaire_reanimation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.hospitalisation.universitaire_reanimation/table/
+- libelle: Réanimation, établissement universitaire
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/hospitalisation/universitaire_reanimation.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.hospitalisation.universitaire_reanimation/table/
+- libelle: Examens complémentaires, interventions et actes de la nomenclature
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/actes/taux_maximal_conventionnels.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.actes.taux_maximal_conventionnels/table/
+- libelle: Examens complémentaires, interventions et actes de la nomenclature
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/actes/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.actes.taux/table/
+- libelle: Examens complémentaires, interventions et actes de la nomenclature
+  parametre: parameters/sante/tarifs_hospitaliers/tarifs_reduits/actes/plafond.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.tarifs_reduits.actes.plafond/table/

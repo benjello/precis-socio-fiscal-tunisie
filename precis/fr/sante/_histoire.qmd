@@ -230,26 +230,22 @@ Jusqu'à la loi de 2004 qui institue le régime de base, les deux caisses ne pre
 
 :::: {.chronologie-repliable titre="Tarifs réduits de 1993, contributions directes de 1994, tarifs des malades payants de 1996 et tarifs réduits de 1998 dans les hôpitaux publics : montants par établissement et par acte"}
 
-| Établissement et acte | 1993 : tarif réduit<br>(D) | 1994 : contribution directe<br>(D) | 1996 : tarif des malades payants<br>(D) | 1998 : tarif réduit<br>(D) |
-|---|---|---|---|---|
-| Consultation externe, centre de santé de base | 0,600 | 1 | 7 (médecine générale) | 1,500 |
-| Consultation externe, hôpital de circonscription | 1 | 1,500 | 7 (médecine générale) | 2 |
-| Consultation externe, hôpital régional | 1,500 | 2 | 10 (spécialiste) | 3 |
-| Consultation externe, établissement universitaire | 2 | 3 | 14 (professeur ou maître de conférence agrégé) | 4,500 |
-| Hospitalisation en médecine, hôpital de circonscription | 7 | 8 | 15 | 15 |
-| Hospitalisation en médecine, hôpital régional | 10 | 12 | 20 | 20 |
-| Hospitalisation en médecine, établissement universitaire | 12 | 15 | 30 ou 35 selon le service | 30 ou 35 selon le service |
-| Hospitalisation en chirurgie, hôpital de circonscription | 13 | 15 | 15 | 15 |
-| Hospitalisation en chirurgie, hôpital régional | 15 | 18 | 30 | 30 |
-| Hospitalisation en chirurgie, établissement universitaire | 18 | 20 | 40 | 40 |
-| Réanimation, établissement universitaire | — | 30 | 60 | 60 |
-| Examens complémentaires, interventions et actes de la nomenclature | — | en sus, dans la limite de 10 % des tarifs en vigueur | en sus, au tarif de l'acte | 20 % du tarif de l'acte, 30 D au plus |
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "soins_assures_hopital.md",
+                               "Tarifs réduits de 1993, contributions directes de 1994, tarifs des malades payants de 1996 et tarifs réduits de 1998 dans les structures sanitaires publiques", "tbl-soins-assures-hopital"))
+```
 
-: Tarifs réduits de 1993, contributions directes de 1994, tarifs des malades payants de 1996 et tarifs réduits de 1998 dans les structures sanitaires publiques {#tbl-soins-assures-hopital}
-
-Sources : [décret n° 93-529](#r-hist-1993), [décret n° 94-1738](#r-hist-1994), [arrêté du 19 décembre 1996](#r-hist-1996-tarifs) et [décret n° 98-409](#r-hist-1998). Les redevables ne sont pas les mêmes : en 1993, les titulaires de livrets de deuxième catégorie et les bénéficiaires des régimes de gratuité légaux et conventionnels ; en 1994, les affiliés des caisses et des régimes de soins conventionnels ; en 1998, les titulaires de la carte à tarifs réduits et, en sus des montants que leur caisse prend en charge, les affiliés des régimes conventionnels, sauf règles propres aux accidents du travail et aux maladies professionnelles. La colonne de 1996 donne le tarif que paient les malades qui ne relèvent ni de la gratuité, ni des tarifs réduits, ni d'une prise en charge conventionnelle : il se paie par consultation ou par journée d'hospitalisation. Les contributions de 1994 et les tarifs réduits de 1998 d'hospitalisation sont des forfaits par hospitalisation, quelle que soit la durée du séjour ; celui de 1998 est égal au tarif d'une journée de 1996. Les tarifs réduits de consultation de 1998 sont des pourcentages du tarif de 1996 — 20 % de 7 D (1,400), 25 % de 7 D (1,750), 30 % de 10 D (3,000), 30 % de 14 D (4,200) — arrondis à la tranche de 500 millimes, la dernière tranche comptée entière (art. 22). Les contributions demandées à presque tous les patients en 1983 et 1986 figurent au @tbl-soins-contributions. Les tarifs de 1996 et leurs modifications sont détaillés au [chapitre sur l'hôpital](./_hopital.html#sec-hopital-tarifs-malades-payants).
+Sources : [décret n° 93-529](#r-hist-1993), [décret n° 94-1738](#r-hist-1994), [arrêté du 19 décembre 1996](#r-hist-1996-tarifs) et [décret n° 98-409](#r-hist-1998). Les redevables ne sont pas les mêmes : en 1993, les titulaires de livrets de deuxième catégorie et les bénéficiaires des régimes de gratuité légaux et conventionnels ; en 1994, les affiliés des caisses et des régimes de soins conventionnels ; en 1998, les titulaires de la carte à tarifs réduits et, en sus des montants que leur caisse prend en charge, les affiliés des régimes conventionnels, sauf règles propres aux accidents du travail et aux maladies professionnelles. La colonne de 1996 donne le tarif que paient les malades qui ne relèvent ni de la gratuité, ni des tarifs réduits, ni d'une prise en charge conventionnelle : il se paie par consultation ou par journée d'hospitalisation. Les contributions de 1994 et les tarifs réduits de 1998 d'hospitalisation sont des forfaits par hospitalisation, quelle que soit la durée du séjour ; celui de 1998 est égal au tarif d'une journée de 1996. Les tarifs réduits de consultation de 1998 sont des pourcentages du tarif de 1996 : 20 % de la consultation de médecine générale (7 D) dans les centres de santé de base, 25 % dans les hôpitaux de circonscription, 30 % de la consultation de spécialité dans les hôpitaux régionaux, 30 % de la consultation d'un maître de conférence dans les établissements universitaires (art. 17) ; les montants sont fixés par tranche entière de 500 millimes (art. 22). Les contributions demandées à presque tous les patients en 1983 et 1986 figurent au @tbl-soins-contributions. Les tarifs de 1996 et leurs modifications sont détaillés au [chapitre sur l'hôpital](./_hopital.html#sec-hopital-tarifs-malades-payants).
 
 <!-- TODO (documentaliste) : confirmer sur un texte ou une circulaire d'application que la dernière tranche de l'art. 22 du décret n° 98-409 est arrondie par excès, que « maître de conférence » (art. 17) désigne la ligne « professeurs et maîtres de conférence agrégés » de l'arrêté de 1996 et que « consultation de spécialité » (art. 17, hôpitaux régionaux) désigne la ligne « autres spécialistes » (10 D) ; établir si le forfait d'hospitalisation de 1993 (décret n° 93-529) est par séjour ou par journée ; relever les dates d'effet des arrêtés de 1993, 1998, 2003 et 2008 (dépôt des fascicules). -->
+
+<!-- TODO (documentaliste) : montants de 1998 des quatre consultations en dinars : 1,500 ; 2 ; 3 ; 4,500 dans la version écrite à la main du tableau, retirés du tableau engendré parce que les paramètres ne tranchent pas trois choix dont ils dépendent : arrondi par excès (la dernière tranche est comptée entière, art. 22), ligne à 10 D pour la consultation de spécialité de l'hôpital régional (ou 14 D), 14 D pour le maître de conférence. À rétablir, avec un paramètre pour chacun, une fois les trois points établis sur un texte ou une circulaire d'application. La colonne de 1996 donne les deux lignes de spécialité (10 D et 14 D) sans les affecter à un niveau, pour la même raison. -->
 
 <!-- TODO (rédacteur) : montants en dinars courants ; ajouter les dinars constants de l'année de référence du volume quand l'indice des prix sera sourcé. -->
 
