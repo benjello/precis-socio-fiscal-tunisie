@@ -1,0 +1,43 @@
+- libelle: Bière classée, bouteille ou boîte de 0,661 à 1 l (tarif par récipient)
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/bieres/par_recipient/recipient_0_661_a_1_l.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.bieres.par_recipient.recipient_0_661_a_1_l/table/
+- libelle: Bière classée, bouteille ou boîte de 0,661 à 1 l (tarif au centilitre)
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/bieres/par_centilitre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.bieres.par_centilitre/table/
+- libelle: Vins en vrac classés livrés aux embouteilleurs
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/vins/vrac_livre_aux_embouteilleurs.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.vins.vrac_livre_aux_embouteilleurs/table/
+- libelle: Vins mousseux classés, bouteille d'au plus 1 l
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/vins/mousseux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.vins.mousseux/table/
+- libelle: Vins de liqueur, mistelles et moûts à l'alcool classés, bouteille d'au
+    plus 1 l
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/vins/liqueur_mistelles_mouts.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.vins.liqueur_mistelles_mouts/table/
+- libelle: Autres vins classés, bouteille de 0,751 à 1 l (tarif par bouteille)
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/vins/autres_vins_par_bouteille/bouteille_0_751_a_1_l.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.vins.autres_vins_par_bouteille.bouteille_0_751_a_1_l/table/
+- libelle: Autres vins classés, bouteille de 0,751 à 1 l (tarif au litre)
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/vins/autres_vins_par_litre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.vins.autres_vins_par_litre/table/
+- libelle: Vermouths et autres vins aromatisés
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/vermouths.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.vermouths/table/
+- libelle: Autres boissons fermentées (cidre, poiré, hydromel)
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/autres_boissons_fermentees.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.autres_boissons_fermentees/table/
+- libelle: Alcool éthylique de bon goût non dénaturé destiné aux boissons alcoolisées
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/alcool_ethylique_boissons.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.alcool_ethylique_boissons/table/
+- libelle: Eaux-de-vie obtenues par distillation
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/spiritueux/eaux_de_vie.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.spiritueux.eaux_de_vie/table/
+- libelle: Whiskies, cognac, vodka, gin et autres spiritueux non classés
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/spiritueux/spiritueux_non_classes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.spiritueux.spiritueux_non_classes/table/
+- libelle: Whiskies, cognac, vodka, gin et autres spiritueux classés
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/spiritueux/spiritueux_classes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.spiritueux.spiritueux_classes/table/
+- libelle: Pastis, ricard, anisette et thibarine
+  parametre: parameters/fiscalite_indirecte/accises/bieres_vins_alcools/spiritueux/pastis_anisette.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/fiscalite_indirecte.accises.bieres_vins_alcools.spiritueux.pastis_anisette/table/
