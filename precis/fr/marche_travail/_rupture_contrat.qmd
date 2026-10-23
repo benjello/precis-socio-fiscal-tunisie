@@ -45,7 +45,7 @@ table("mt_rc_parametres",
       "tbl-mt-rc-parametres")
 ```
 
-<!-- TODO (documentaliste) : la colonne de 1973 (convention cadre, qui renvoie aux conventions de branche pour le préavis et la gratification), les cases « appréciés par le juge » et « ni cas ni durée » et la période d'essai de 1966 à 1996 sont écrites dans scripts/generate_marche_travail_tables.py : ce sont des renvois ou des absences de règle, non des grandeurs. Seule la période d'essai de 3 mois renouvelable une fois (convention cadre, art. 10) attend un paramètre : voir docs/notes/backlog-modele.md. -->
+<!-- TODO (documentaliste) : la colonne de 1973 (convention cadre, qui renvoie aux conventions de branche pour le préavis et la gratification), les cases « appréciés par le juge » et « ni cas ni durée » et la période d'essai de 1966 à 1996 sont écrites dans scripts/generate_marche_travail_tables.py : ce sont des renvois ou des absences de règle, non des grandeurs. Seules attendent un paramètre la période d'essai de 3 mois renouvelable une fois (convention cadre, art. 10) et la case « quinze jours avant l'expiration » de l'état du droit (art. 6-3) : voir docs/notes/backlog-modele.md. -->
 
 « Inchangé » signale une règle que le texte de la colonne ne touche pas ; un tiret, une règle qui n'existe pas encore. Les montants légaux sont des minimums, que les conventions de branche peuvent dépasser.
 
