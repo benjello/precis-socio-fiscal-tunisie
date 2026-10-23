@@ -73,3 +73,47 @@ def test_sorties_rapprochees_du_recueil():
             assert max(int(r["annee_fin"]) for r in lignes) < int(s["liste_avant"]), s["entreprise"]
         positions[s["position"]] = positions.get(s["position"], 0) + 1
     assert positions == {"entre les deux listes": 15, "avant la première liste": 2}
+
+
+def test_plafond_de_la_garantie_est_continu():
+    """Un relèvement en cours de gestion porte le montant d'avant, qui est celui que la loi de
+    finances de l'année avait fixé ; les gestions se suivent de 1959-60 à 1994, sauf 1960."""
+    lignes = _lire("plafond-garanties-lois-de-finances")
+    fixe = {}
+    for l in lignes:
+        if l["nature"] == "fixation" and l["plafond_md"]:
+            fixe[l["gestion"]] = float(l["plafond_md"])
+    for l in lignes:
+        if l["plafond_avant_md"]:
+            assert float(l["plafond_avant_md"]) == fixe[l["gestion"]]
+            assert float(l["plafond_md"]) > float(l["plafond_avant_md"])
+    assert [l["gestion"] for l in lignes if l["nature"] == "fixation"] == [
+        "1958-59", "1959-60"] + [str(a) for a in range(1961, 1995)]
+    assert fixe["1977"] == 200.0 and fixe["1994"] == 950.0 and fixe["1992"] == 250.0
+    # une ligne par montant : pas deux fois le même article pour la même gestion
+    cles = [(l["gestion"], l["loi"], l["article"]) for l in lignes]
+    assert len(cles) == len(set(cles))
+
+
+def test_registre_du_plafond_du_chapitre_est_celui_du_releve():
+    """Le registre écrit dans le chapitre (pour que les ancres se lisent) est la sortie de
+    `tableau_plafond` : si le relevé change, le chapitre doit être recopié."""
+    import contextlib
+    import io
+    import sys
+
+    import pytest
+
+    pytest.importorskip("matplotlib")
+    racine = Path(__file__).resolve().parent.parent
+    sys.path.insert(0, str(racine / "precis/fr/entreprises_publiques"))
+    from figures import listes
+
+    sortie = io.StringIO()
+    with contextlib.redirect_stdout(sortie):
+        listes.tableau_plafond("x")
+    attendu = [l for l in sortie.getvalue().splitlines() if "{#r-ep-pl-" in l]
+    chapitre = (racine / "precis/fr/entreprises_publiques/_relation_financiere.qmd").read_text(
+        encoding="utf-8")
+    ecrit = [l for l in chapitre.splitlines() if "{#r-ep-pl-" in l]
+    assert attendu and ecrit == attendu

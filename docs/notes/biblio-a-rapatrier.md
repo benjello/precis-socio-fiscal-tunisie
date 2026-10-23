@@ -6,6 +6,13 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Versement et clôture du 23/10/2026 (entreprises publiques, plafond de la garantie de l'État, 1958-1994)
+
+Source : `docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md`. Dix-huit notices ajoutées au fonds commun `precis/{fr,ar}/references.json` : `loi58-45-lf1958`, `loi59-42-lf1959`, `loi60-38-lf1961`, `loi61-65-lf1962`, `loi62-82-lf1963`, `loi63-58-lf1964`, `loi64-59-lf1965`, `loi65-46-lf1966`, `loi66-79-lf1967`, `loi67-57-lf1968`, `loi71-59-lf1972`, `loi73-82-lf1974`, `loi74-75-lfc1974`, `loi75-83-lf1976`, `loi77-81-lf1978`, `loi78-59-lf1979`, `loi93-111-garantie-1993`, `arrete1993-04-03-commission-garantie`. Les autres lois citées sont déjà au fonds commun. À verser dans Zotero (champ Extra `citation-key`).
+- Adresses pist.tn tirées de `jort_cache.db` (`pdf_fr`, `pdf_ar` du même enregistrement), non rejouées en ligne ; pages d'articles lues sur les fascicules.
+- Doublon à fondre un jour : `lf-1978` (loi n° 77-81) existe dans `precis/{fr,ar}/compensation/references.json` ; le fonds commun porte `loi77-81-lf1978` pour la même loi.
+- Le volume « Les entreprises publiques » n'a pas de livre arabe : aucun `references.json` arabe de volume. Rendu du volume : aucune citation `[?]`. `push_biblio.py --verifier` : 0 perte. Les actions `dry-run` et `controle-rangement` du workflow `biblio-zotero` ne sont pas lancées depuis cette branche.
+
 ## Versement du 20/10/2026 (fiscalité de l'épargne et du capital, bibliographe, temps 1)
 
 Source : § 10 de `docs/notes/fiscalite-epargne-capital.md`. Treize notices ajoutées à `precis/{fr,ar}/fiscalite/references.json` (locales au volume) : `loi-99-92-relance-marche-financier`, `decret-loi-2011-28`, `decret-loi-2011-100`, `decret-loi-2020-30`, `dgi-nc-45-2002`, `dgi-nc-35-2003`, `dgi-nc-8-2004` (absente de la liste de la note, citée par sa prose), `dgi-nc-16-2004`, `dgi-nc-13-2005`, `dgi-nc-10-2008`, `dgi-nc-14-2018`, `dgi-nc-2-2018`, `dgi-nc-3-2023`. Les 31 clés « déjà présentes » le sont (volume ou fonds commun), sans doublon. `push_biblio.py --verifier` : 0 perte.

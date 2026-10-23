@@ -1,0 +1,42 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-23
+# séries (tunisia_data) : plafond-garanties-lois-de-finances
+# sources (citation) : @loi58-45-lf1958, @loi59-42-lf1959, @loi60-38-lf1961, @loi61-65-lf1962, @loi62-82-lf1963, @loi63-58-lf1964, @loi64-59-lf1965, @loi65-46-lf1966, @loi66-79-lf1967, @loi67-57-lf1968, @lf-1969, @lf-1970, @lf-1971, @loi71-59-lf1972, @lf-1973, @loi73-82-lf1974, @loi74-75-lfc1974, @loi74-101-lf1975, @loi75-83-lf1976, @lf-1977, @loi77-81-lf1978, @loi78-59-lf1979, @loi79-66-lf1980, @lf-1981, @loi81-100-lf1982, @lf-1983, @lf-1984, @lf-1985, @lf-1986, @loi86-106-lf1987, @loi-87-83-lf-1988, @loi-88-145-lf-1989, @lf-1990, @lf-1991, @lf-1992, @lf-1993, @loi93-111-garantie-1993, @lf-1994
+# fiches : 
+# méthode/hypothèses : Le plafond est un maximum légal annuel, non un montant de garanties accordées ni un encours. 1958-59 est imprimé en francs et ne figure pas sur la figure. Les lois de finances complémentaires dont l'index n'indique pas d'article sur la garantie n'ont pas été lues en entier. Aucune part du budget ni du PIB : les dénominateurs de la série du volume commencent en 1986 et en 1991.
+# note : Plafond de la garantie de l'État fixé par la loi de finances, en millions de dinars courants, 1959-60 à 1994
+Gestion,Plafond fixé par la loi de finances (MD),Montant en vigueur à la fin de la gestion (MD),Textes
+1959-60,12.0,12.0,loi n° 59-42
+1961,12.0,12.0,loi n° 60-38
+1962,12.0,12.0,loi n° 61-65
+1963,16.0,16.0,loi n° 62-82
+1964,16.0,16.0,loi n° 63-58
+1965,16.0,16.0,loi n° 64-59
+1966,16.0,16.0,loi n° 65-46
+1967,20.0,20.0,loi n° 66-79
+1968,25.0,25.0,loi n° 67-57
+1969,25.0,25.0,loi n° 68-41
+1970,25.0,25.0,loi n° 69-64
+1971,25.0,25.0,loi n° 70-66
+1972,25.0,25.0,loi n° 71-59
+1973,25.0,25.0,loi n° 72-87
+1974,25.0,50.0,loi n° 73-82 ; loi n° 74-75
+1975,50.0,50.0,loi n° 74-101
+1976,50.0,50.0,loi n° 75-83
+1977,200.0,200.0,loi n° 76-115
+1978,200.0,200.0,loi n° 77-81
+1979,200.0,200.0,loi n° 78-59
+1980,200.0,200.0,loi n° 79-66
+1981,200.0,200.0,loi n° 80-88
+1982,200.0,200.0,loi n° 81-100
+1983,200.0,200.0,loi n° 82-91
+1984,200.0,200.0,loi n° 83-113
+1985,200.0,200.0,loi n° 84-84
+1986,200.0,200.0,loi n° 85-109
+1987,200.0,200.0,loi n° 86-106
+1988,200.0,300.0,loi n° 87-83 ; loi n° 88-145
+1989,300.0,300.0,loi n° 88-145
+1990,300.0,300.0,loi n° 89-115
+1991,300.0,300.0,loi n° 90-111
+1992,250.0,530.0,loi n° 91-98 ; loi n° 92-122
+1993,500.0,900.0,loi n° 92-122 ; loi n° 93-111
+1994,950.0,950.0,loi n° 93-125

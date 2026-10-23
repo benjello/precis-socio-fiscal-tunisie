@@ -256,7 +256,7 @@ ep.figure(
 )
 ```
 
-- **Le plafond.** 3 000 MD de 2016 à 2018 ; 4 790 MD en 2019, après une loi de finances initiale à 4 500 MD ; 7 000 MD de 2020 à 2022 ; 8 000 MD en 2023 et en 2024. Pour 2020, la loi de finances initiale fixait 5 000 MD ; [la loi de finances rectificative du 14 décembre 2020](#r-ep-lfr-2020) porte le plafond à 7 000 MD. La traduction française d'une édition du rapport imprime 7 500 MD [@minfin-transferts-2021, p. 5] ; ses éditions arabes impriment 7 000 MD, comme la loi [@minfin-transferts-2022, p. 8].
+- **Le plafond.** 3 000 MD de 2016 à 2018 ; 4 790 MD en 2019, après une loi de finances initiale à 4 500 MD ; 7 000 MD de 2020 à 2022 ; 8 000 MD en 2023 et en 2024. Pour 2020, la loi de finances initiale fixait 5 000 MD ; [la loi de finances rectificative du 14 décembre 2020](#r-ep-lfr-2020) porte le plafond à 7 000 MD. La traduction française d'une édition du rapport imprime 7 500 MD [@minfin-transferts-2021, p. 5] ; ses éditions arabes impriment 7 000 MD, comme la loi [@minfin-transferts-2022, p. 8]. De 1959 à 1994, le plafond fixé par la loi de finances passe de 12 MD à 950 MD (@sec-ep-garanties-plafond-legal).
 - **Les garanties accordées.** De 2,4 à 5,2 milliards de dinars par an de 2016 à 2023, soit de 1,8 % à 3,9 % du PIB (@tbl-ep-garanties).
 - **À quoi servent les garanties intérieures.** En 2023, sur 3 055,7 MD : 1 550,4 MD au titre de l'audit complet des banques publiques, 1 215,2 MD pour financer l'importation de produits de base — pétrole, gaz, céréales, engrais, sucre, café —, 141,0 MD de rééchelonnements, 124,0 MD d'autres opérations d'exploitation, 25,1 MD d'investissement [@minfin-dette-2025, p. 64]. Les importations de produits de base faisaient 188,2 MD en 2021 et 956,1 MD en 2022 (@tbl-ep-garanties-objet).
 - **Qui prête.** L'encours garanti dû à des prêteurs intérieurs passe de 2,0 milliards de dinars fin 2016 à 8,8 milliards fin 2023 ; l'encours extérieur, de 9,3 à 12,5 milliards (@fig-ep-encours).
@@ -332,9 +332,94 @@ ep.tableau_audit_banques(
 
 : Plafond des garanties de l'État pour 2020 : la loi de finances rectificative {#tbl-ep-garanties-lfr-2020}
 
-**Le cadre.** La loi de finances de l'année fixe le plafond par un article ; une commission de garantie, instituée par un arrêté du 3 avril 1993, instruit les demandes [@minfin-transferts-2020, p. 38]. Selon le rapport sur la dette publique, la garantie d'un prêt extérieur joue dès la défaillance de l'emprunteur, celle d'un prêt intérieur après épuisement des poursuites contre lui [@minfin-dette-2025, p. 61].
+**Le cadre.** La loi de finances de l'année fixe le plafond par un article ; une commission de garantie instruit les demandes [@minfin-transferts-2020, p. 38]. Depuis [un arrêté du 3 avril 1993](#r-ep-arrete-1993-commission), l'octroi de la garantie est subordonné au paiement d'une commission (@sec-ep-garanties-plafond-legal). Selon le rapport sur la dette publique, la garantie d'un prêt extérieur joue dès la défaillance de l'emprunteur, celle d'un prêt intérieur après épuisement des poursuites contre lui [@minfin-dette-2025, p. 61].
 
-<!-- TODO (documentaliste) : lire l'arrêté du 3 avril 1993 sur la commission de garantie ; dépouiller les articles « octroi de la garantie de l'État » des lois de finances de 1961 à 1994, puis les suivantes, pour une série légale du plafond ; dépouiller les rapports sur la dette publique des éditions LF 2021 et LF 2024 (recoupement de l'encours) et leurs pages sur les prêts rétrocédés. -->
+<!-- TODO (documentaliste) : lire l'article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin donnée par le Trésor) et l'acte qui institue la commission de garantie chargée d'instruire les demandes ; dépouiller les articles sur la garantie des lois de finances de 1995 à 2015, puis les suivantes, pour prolonger la série légale du plafond (fiche r-ep-plafond-garantie-1995-2015) ; dépouiller les rapports sur la dette publique des éditions LF 2021 et LF 2024 (recoupement de l'encours) et leurs pages sur les prêts rétrocédés. -->
+
+::::
+
+## Le plafond des garanties fixé par la loi de finances, 1958-1994 {#sec-ep-garanties-plafond-legal}
+
+De 1958 à 1994, chaque loi de finances comporte un article « octroi de la garantie de l'État » : il fixe le montant maximal dans la limite duquel le ministre chargé des finances peut accorder la [garantie de l'État](#g-garantie-etat) « en vertu des textes et conventions en vigueur ». Ce plafond passe de 12 millions de dinars (MD) pour l'année financière 1959-60 à 950 MD pour 1994 (@fig-ep-plafond-legal).
+
+<!-- RECHERCHE r-ep-plafond-garantie-1995-2015 : article sur la garantie des lois de finances de 1995 à 2015, et textes de 1957-58 et 1960 (voir docs/recherches.yml) -->
+
+```{python}
+#| label: fig-ep-plafond-legal
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import listes as ls
+ls.figure_plafond(
+    caption=("Plafond de la garantie de l'État fixé par la loi de finances, en millions de "
+             "dinars courants, 1959-60 à 1994"),
+    note_lecture=(
+        "Chaque point est le montant que la loi de finances de la gestion fixe pour l'année ; la flèche et le losange orange sont le montant auquel une loi postérieure porte ce plafond au cours de la même gestion. "
+        "L'axe vertical est logarithmique : un même écart de hauteur est un même rapport de montants. "
+        "L'année financière 1958-59, imprimée à 7 milliards de francs avant la création du dinar, n'est pas tracée. "
+        "Le plafond est un maximum légal : il ne dit ni les garanties accordées ni l'encours."),
+)
+```
+
+- **Des paliers de longue durée.** Le plafond est de 12 MD pour 1959-60 et jusqu'en 1962, de 16 MD de [1963](#r-ep-pl-1963) à 1966, de 20 MD en [1967](#r-ep-pl-1967), de 25 MD de [1968](#r-ep-pl-1968) à 1973, de 50 MD de 1974 à 1976, de 200 MD de [1977](#r-ep-pl-1977) à 1987, de 300 MD de 1988 à 1991. Il est multiplié par quatre en 1977 (de 50 à 200 MD). Après 300 MD en 1991, il est de 250 MD en [1992](#r-ep-pl-1992), de 500 MD en [1993](#r-ep-pl-1993) et de 950 MD en [1994](#r-ep-pl-1994).
+- **Quatre relèvements en cours de gestion.** [La loi n° 74-75 du 3 août 1974](#r-ep-pl-1974-2) porte le plafond de 1974 de 25 à 50 MD. [La loi de finances pour 1989](#r-ep-pl-1988-2) fixe 300 MD « pour l'année 1988 et l'année 1989 », alors que celle de 1988 avait fixé 200 MD. [La loi de finances pour 1993](#r-ep-pl-1992-2) modifie le plafond de 1992, de 250 à 530 MD, sous la rubrique « régularisation de la garantie de l'Etat pour la gestion 1992 ». [La loi n° 93-111 du 8 novembre 1993](#r-ep-pl-1993-2), « portant augmentation du montant annuel d'octroi de la garantie de l'Etat », porte celui de 1993 de 500 à 900 MD.
+- **Une commission depuis 1993.** [L'arrêté du 3 avril 1993](#r-ep-arrete-1993-commission) subordonne l'octroi de la garantie au paiement d'une commission de 0,5 % du principal du crédit garanti pour une institution financière et de 1,5 % pour une institution non financière, versée au fonds d'amortissement de la garantie de bonne fin donnée par le Trésor.
+- **Un intitulé qui change.** Jusqu'à la loi de finances pour 1983, l'article autorise la « garantie du Trésor » ; [celle de 1984](#r-ep-pl-1984) écrit « garantie de l'État ».
+
+:::: {.chronologie-repliable titre="Plafond de la garantie de l'État : montant fixé ou modifié par chaque loi de finances, 1958-59 à 1994, avec le texte, l'article et la page, et arrêté du 3 avril 1993 sur la commission de garantie"}
+
+<!-- TODO (rédacteur) : tableau copié de `ls.tableau_plafond` (relevé listes/plafond-garanties-lois-de-finances.csv) pour que les ancres r-ep-pl-… soient lisibles par check_domicile_references.py ; tests/test_listes_entreprises_publiques.py contrôle l'identité des deux, à remplacer par l'appel quand le contrôle saura lire les ancres engendrées -->
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-pl-195859}gestion 1958-59 | [@loi58-45-lf1958, art. 30, p. 325] | plafond de la garantie fixé à 7 milliards de francs pour l'année financière | ajustement |
+| []{#r-ep-pl-195960}gestion 1959-60 | [@loi59-42-lf1959, art. 12, p. 281] | plafond fixé à 12 MD | ajustement |
+| []{#r-ep-pl-1961}gestion 1961 | [@loi60-38-lf1961, art. 15, p. 1711] | plafond reconduit à 12 MD | ajustement |
+| []{#r-ep-pl-1962}gestion 1962 | [@loi61-65-lf1962, art. 11, p. 1808] | plafond reconduit à 12 MD | ajustement |
+| []{#r-ep-pl-1963}gestion 1963 | [@loi62-82-lf1963, art. 12, p. 1658] | plafond porté de 12 MD à 16 MD par rapport à la gestion précédente | ajustement |
+| []{#r-ep-pl-1964}gestion 1964 | [@loi63-58-lf1964, art. 44, p. 1877] | plafond reconduit à 16 MD | ajustement |
+| []{#r-ep-pl-1965}gestion 1965 | [@loi64-59-lf1965, art. 14, p. 1569] | plafond reconduit à 16 MD | ajustement |
+| []{#r-ep-pl-1966}gestion 1966 | [@loi65-46-lf1966, art. 25, p. 1719] | plafond reconduit à 16 MD | ajustement |
+| []{#r-ep-pl-1967}gestion 1967 | [@loi66-79-lf1967, art. 21, p. 1788] | plafond porté de 16 MD à 20 MD par rapport à la gestion précédente | ajustement |
+| []{#r-ep-pl-1968}gestion 1968 | [@loi67-57-lf1968, art. 23, p. 1651] | plafond porté de 20 MD à 25 MD par rapport à la gestion précédente | ajustement |
+| []{#r-ep-pl-1969}gestion 1969 | [@lf-1969, art. 16, p. 1374] | plafond reconduit à 25 MD | ajustement |
+| []{#r-ep-pl-1970}gestion 1970 | [@lf-1970, art. 19, p. 1502] | plafond reconduit à 25 MD | ajustement |
+| []{#r-ep-pl-1971}gestion 1971 | [@lf-1971, art. 29, p. 1458] | plafond reconduit à 25 MD | ajustement |
+| []{#r-ep-pl-1972}gestion 1972 | [@loi71-59-lf1972, art. 7, p. 1722] | plafond reconduit à 25 MD | ajustement |
+| []{#r-ep-pl-1973}gestion 1973 | [@lf-1973, art. 11, p. 1854] | plafond reconduit à 25 MD | ajustement |
+| []{#r-ep-pl-1974}gestion 1974 | [@loi73-82-lf1974, art. 40, p. 2285] | plafond reconduit à 25 MD | ajustement |
+| []{#r-ep-pl-1974-2}gestion 1974 | [@loi74-75-lfc1974, art. 8, p. 1747] | plafond porté de 25 MD à 50 MD (relèvement en cours de gestion) | ajustement |
+| []{#r-ep-pl-1975}gestion 1975 | [@loi74-101-lf1975, art. 35, p. 2917] | plafond reconduit à 50 MD | ajustement |
+| []{#r-ep-pl-1976}gestion 1976 | [@loi75-83-lf1976, art. 16, p. 2853] | plafond reconduit à 50 MD | ajustement |
+| []{#r-ep-pl-1977}gestion 1977 | [@lf-1977, art. 50, p. 3168] | plafond porté de 50 MD à 200 MD par rapport à la gestion précédente | ajustement |
+| []{#r-ep-pl-1978}gestion 1978 | [@loi77-81-lf1978, art. 18, p. 3601] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1979}gestion 1979 | [@loi78-59-lf1979, art. 18, p. 3775] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1980}gestion 1980 | [@loi79-66-lf1980, art. 31, p. 3546] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1981}gestion 1981 | [@lf-1981, art. 45, p. 3280] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1982}gestion 1982 | [@loi81-100-lf1982, art. 65, p. 3041] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1983}gestion 1983 | [@lf-1983, art. 99, p. 2897] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1984}gestion 1984 | [@lf-1984, art. 59, p. 3380] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1985}gestion 1985 | [@lf-1985, art. 54, p. 2959] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1986}gestion 1986 | [@lf-1986, art. 58, p. 1739] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1987}gestion 1987 | [@loi86-106-lf1987, art. 68, p. 1620] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1988}gestion 1988 | [@loi-87-83-lf-1988, art. 20, p. 1629] | plafond reconduit à 200 MD | ajustement |
+| []{#r-ep-pl-1988-2}gestion 1988 | [@loi-88-145-lf-1989, art. 18, p. 1794] | plafond porté de 200 MD à 300 MD (relèvement en cours de gestion) | ajustement |
+| []{#r-ep-pl-1989}gestion 1989 | [@loi-88-145-lf-1989, art. 18, p. 1794] | même article : plafond de 300 MD aussi pour cette gestion | ajustement |
+| []{#r-ep-pl-1990}gestion 1990 | [@lf-1990, art. 20, p. 2146] | plafond reconduit à 300 MD | ajustement |
+| []{#r-ep-pl-1991}gestion 1991 | [@lf-1991, art. 20, p. 2050] | plafond reconduit à 300 MD | ajustement |
+| []{#r-ep-pl-1992}gestion 1992 | [@lf-1992, art. 20, p. 2083] | plafond ramené de 300 MD à 250 MD par rapport à la gestion précédente | ajustement |
+| []{#r-ep-pl-1992-2}gestion 1992 | [@lf-1993, art. 21, p. 1669] | plafond porté de 250 MD à 530 MD (régularisation de la gestion 1992) | ajustement |
+| []{#r-ep-pl-1993}gestion 1993 | [@lf-1993, art. 20, p. 1669] | plafond ramené de 530 MD à 500 MD par rapport à la gestion précédente | ajustement |
+| []{#r-ep-pl-1993-2}gestion 1993 | [@loi93-111-garantie-1993, art. unique, p. 1900] | plafond porté de 500 MD à 900 MD (relèvement en cours de gestion) | ajustement |
+| []{#r-ep-pl-1994}gestion 1994 | [@lf-1994, art. 18, p. 2195] | plafond porté de 900 MD à 950 MD par rapport à la gestion précédente | ajustement |
+
+: Plafond de la garantie de l'État : article de chaque loi de finances qui le fixe, et loi qui le modifie en cours de gestion, 1958-59 à 1994. Le montant de 1958-59 est imprimé en francs ; les autres sont en millions de dinars courants (MD). Source : *Journal officiel*, édition française {#tbl-ep-plafond-registre}
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-arrete-1993-commission}sans clause d'effet | arrêté du ministre des finances du 3 avril 1993 [@arrete1993-04-03-commission-garantie, art. 1^er^ à 4, p. 507] | l'octroi de la garantie de l'État est subordonné au paiement d'une commission de garantie, sur le montant du crédit garanti : 0,5 % pour une institution financière, 1,5 % pour une institution non financière (art. 2) ; versée au « fonds d'amortissement de la garantie de bonne fin donnée par le trésor » au plus tard à la date de la première utilisation du crédit (art. 3) ; autorisation de débit d'office du compte de l'emprunteur (art. 4) | ajustement |
+
+: Commission due au titre de l'octroi de la garantie de l'État : l'arrêté du 3 avril 1993 {#tbl-ep-garanties-commission}
 
 ::::
 

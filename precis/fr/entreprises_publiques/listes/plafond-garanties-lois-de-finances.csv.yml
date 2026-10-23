@@ -1,0 +1,76 @@
+# Manifeste du relevé « plafond de la garantie de l'État fixé par la loi de finances,
+# 1958-59 à 1994 ».
+#
+# Fichier lu par figures/listes.py. Il transcrit, pour chaque loi de finances, l'article
+# « octroi de la garantie de l'État » (montant maximal dans la limite duquel le ministre chargé
+# des finances est autorisé à accorder la garantie du Trésor, puis de l'État), et les lois qui
+# modifient ce montant en cours de gestion. Source de la transcription :
+# docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md.
+#
+# LECTURE À L'IMAGE du fascicule français du corpus local (édition française du Journal
+# officiel) pour les trente-huit lois ; la page est celle où l'article est imprimé, relevée sur
+# l'en-tête ou le pied de page du fascicule.
+# UNE LIGNE PAR MONTANT FIXÉ : la loi de finances de l'année, puis la loi qui change ce montant
+# (plafond_avant_md porte alors le montant remplacé). L'article 18 de la loi n° 88-145 fixe un
+# montant unique « pour l'année 1988 et l'année 1989 » : il a donc deux lignes.
+# PLAFOND_IMPRIME : 1958-59 est imprimé en francs, avant la création du dinar ; la ligne est
+# donnée telle qu'imprimée et n'entre pas dans la figure, qui est en millions de dinars.
+# NON LUS : l'arrêté ou décret de 1957-58 (fascicule absent du corpus local) ; gestion 1960 ;
+# lois de finances complémentaires dont l'index ne détaille pas les articles (n° 69-60,
+# 73-72, 80-1, 82-27, 83-81, 84-2, 86-83, 88-60, 89-88, 91-23) : lues par leur seul index.
+
+format: long
+cle_de_ligne: [gestion, loi, article]
+
+colonnes:
+  gestion: gestion budgétaire sur laquelle porte le montant (« année financière » 1958-59 et 1959-60 ; gestion 1961 et suivantes)
+  loi: numéro de la loi qui porte l'article
+  date: date de la loi (jort_cache)
+  jort_numero: numéro du fascicule du Journal officiel
+  article: numéro de l'article de la loi
+  page: page du Journal officiel, édition française
+  plafond_md: montant maximal fixé, en millions de dinars courants
+  plafond_avant_md: montant remplacé, pour une loi qui modifie un montant déjà fixé
+  plafond_imprime: montant tel qu'imprimé quand il n'est pas en dinars
+  nature: fixation par la loi de finances de l'année, ou modification du montant
+  cle: clé de citation de la loi
+
+sources:
+  - loi58-45-lf1958
+  - loi59-42-lf1959
+  - loi60-38-lf1961
+  - loi61-65-lf1962
+  - loi62-82-lf1963
+  - loi63-58-lf1964
+  - loi64-59-lf1965
+  - loi65-46-lf1966
+  - loi66-79-lf1967
+  - loi67-57-lf1968
+  - lf-1969
+  - lf-1970
+  - lf-1971
+  - loi71-59-lf1972
+  - lf-1973
+  - loi73-82-lf1974
+  - loi74-75-lfc1974
+  - loi74-101-lf1975
+  - loi75-83-lf1976
+  - lf-1977
+  - loi77-81-lf1978
+  - loi78-59-lf1979
+  - loi79-66-lf1980
+  - lf-1981
+  - loi81-100-lf1982
+  - lf-1983
+  - lf-1984
+  - lf-1985
+  - lf-1986
+  - loi86-106-lf1987
+  - loi-87-83-lf-1988
+  - loi-88-145-lf-1989
+  - lf-1990
+  - lf-1991
+  - lf-1992
+  - lf-1993
+  - loi93-111-garantie-1993
+  - lf-1994

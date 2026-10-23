@@ -3104,9 +3104,9 @@ Ce qui reste :
 - **Avant 1987, et avant 2016 pour les transferts et la dette garantie** : rien (fiche
   `r-ep-series-budgetaires-avant-2016`). Pistes non ouvertes : rapports annuels de la Banque
   centrale, lois de règlement, Cour des comptes (dette publique extérieure, 2018), plans de
-  développement. Le plafond des garanties est dans chaque loi de finances depuis 1961
-  (intitulés indexés jusqu'en 1994 ; fascicules **lisibles** dans le corpus, montants à lire) :
-  seul temps long à portée de main. Recettes de cession après 2009 : aucune série.
+  développement. Le plafond des garanties est lu de 1958-59 à 1994 (voir le point « Plafond
+  légal » plus bas) ; de 1995 à 2015, fascicules **lisibles** dans le corpus, articles à lire.
+  Recettes de cession après 2009 : aucune série.
 - **Annexes du projet de loi de finances pour 2026** : non obtenues (fiche
   `r-ep-annexes-plf-2026`).
 - **« Hors compensation, hors caisses » non calculé** : le total des transferts (annexe 8)
@@ -3136,6 +3136,20 @@ Ce qui reste :
   lue dans le corpus ; fiche `r-garantie-etat-plafond-2020-lfr` résolue). Les 7 500 MD de la
   traduction française du rapport ne sont pas dans la loi. À reporter dans `tunisia-data`, dont
   la série `garanties-etat` garde les deux valeurs et dit le point « non tranché ».
+- **Plafond légal de la garantie, 1958-59 à 1994 — fait le 23 octobre 2026**
+  (`docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md`, section
+  `#sec-ep-garanties-plafond-legal`, figure `fig-ep-plafond-legal`, registre `tbl-ep-plafond-registre`
+  et `tbl-ep-garanties-commission` repliés, relevé `listes/plafond-garanties-lois-de-finances.csv`
+  contrôlé par `tests/test_listes_entreprises_publiques.py`). Trente-huit lois lues aux fascicules
+  français du corpus ; arrêté du 3 avril 1993 sur la commission de garantie lu (le chapitre
+  l'attribuait à une commission d'instruction : corrigé). **Restent** : plafond de 1995 à 2015
+  (fiche `r-ep-plafond-garantie-1995-2015`, fascicules du corpus à lire) ; gestion 1960 et décret du
+  29 juin 1957 (fascicule absent du corpus local, à obtenir sur pist.tn) ; lois de finances
+  complémentaires de 1969 à 1991 à lire en entier ; article 36 de la loi n° 77-81 (fonds
+  d'amortissement de la garantie de bonne fin) ; acte de la commission d'instruction ; prêts du
+  Trésor aux entreprises publiques (article voisin, montants vus, pas en série) ; parts du budget
+  et du PIB avant 1986 (aucun dénominateur) ; libellés arabes de la figure ; `lf-1978` de
+  `compensation` à fondre avec `loi77-81-lf1978` (`docs/notes/biblio-a-rapatrier.md`).
 - **Second passage de la note** (son § 8) : ventilation par nature de 2023 (écart imprimé de
   23,0 MD) ; encours des prêts rétrocédés (rapport sur la dette publique, pages repérées) ;
   rapports sur la dette publique des éditions LF 2021 et LF 2024 ; page « bilan global » de la
