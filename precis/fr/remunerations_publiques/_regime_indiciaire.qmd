@@ -622,11 +622,11 @@ Au-delà de ces textes, les cycles de gel et de revalorisation salariale font l'
 Aucune source ne ventile les effectifs ni la masse salariale par régime de rémunération. Deux sources situent le régime indiciaire, chacune sur son champ.
 
 - **La masse salariale** est celle du budget de l'État entier, rapportée au PIB et aux dépenses de l'État (@fig-masse-salariale-ratios), d'après les séries du ministère des Finances [@minfin-remunerations; @minfin-indicateurs-fp].
-- **Les effectifs et les salaires** sont ceux de la fonction publique civile, publiés par l'INS [@ins-fonction-publique-2021; @ins-fonction-publique-2025] (@fig-effectifs-fp ; @fig-categories-statutaires) : des fonctionnaires classés de A1 à D, des ouvriers et des contractuels ; ni militaires, ni agents des forces de sécurité intérieure, ni magistrats (@sec-ventilation-ministere).
+- **Les effectifs et les salaires** sont ceux de la fonction publique que publie l'INS [@ins-fonction-publique-2021; @ins-fonction-publique-2025] (@fig-effectifs-fp ; @fig-categories-statutaires) : des fonctionnaires classés de A1 à D, des ouvriers et des contractuels. Le rapport de l'INS ne définit pas le champ statutaire de sa base administrative : il ne dit pas s'il compte les militaires, les agents des forces de sécurité intérieure, les magistrats et les douaniers (@sec-ventilation-ministere).
 
 Les rapports extérieurs sont d'un autre ordre : ceux du Fonds monétaire international et de la Banque mondiale [@imf-tunisia-art4-2020; @wb-tunisia-per-2020] portent sur la masse salariale de l'administration ; l'introduction du volume en donne le périmètre.
 
-Sur ce champ civil, trois constats : le rapport entre les salaires de A1 et de D se resserre en 2018-2019 ; en pouvoir d'achat, toutes les catégories finissent 2025 sous leur niveau de 2018 (@sec-ri-salaires-categories) ; les fonctionnaires forment de 76 à 80 % des agents (@sec-ri-emploi).
+Sur ce champ, trois constats : le rapport entre les salaires de A1 et de D se resserre en 2018-2019 ; en pouvoir d'achat, toutes les catégories finissent 2025 sous leur niveau de 2018 (@sec-ri-salaires-categories) ; les fonctionnaires forment de 76 à 80 % des agents (@sec-ri-emploi).
 
 <!-- TODO : construire, si des données ventilées par régime deviennent disponibles, une série propre au régime indiciaire (effectifs, masse salariale). -->
 
@@ -770,11 +770,11 @@ Les tableaux par catégorie des deux publications de l'INS ne portent que l'inti
 
 ### Le poids dans l'emploi {#sec-ri-emploi}
 
-Rapportés à la population active occupée, les effectifs de la fonction publique civile donnent la mesure de son poids dans l'emploi total (@fig-emploi-public). Deux effectifs s'y lisent : tous les agents — fonctionnaires, ouvriers et contractuels — et les seuls fonctionnaires, qui en forment de 76 à 79 % de 2015 à 2023, puis 80 % en 2024.
+Rapportés à la population active occupée, les effectifs de la fonction publique que publie l'INS donnent la mesure de son poids dans l'emploi total (@fig-emploi-public). Deux effectifs s'y lisent : tous les agents — fonctionnaires, ouvriers et contractuels — et les seuls fonctionnaires, qui en forment de 76 à 79 % de 2015 à 2023, puis 80 % en 2024.
 
 ```{python}
 #| label: fig-emploi-public
-#| fig-cap: "Poids de la fonction publique civile dans la population active occupée, 2015-2024 (sources INS et BCT)."
+#| fig-cap: "Poids de la fonction publique dans la population active occupée, 2015-2024 (sources INS et BCT)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -785,7 +785,7 @@ figtools.figure_tabs(
     "fonction-publique-categories", "fonction-publique-effectifs-2018-2025",
     "fonction-publique-categories-2018-2025", "bct-emploi-occupe",
     slug="fig_emploi_public",
-    caption="Poids de la fonction publique civile dans la population active occupée, 2015-2024",
+    caption="Poids de la fonction publique dans la population active occupée, 2015-2024",
     note_lecture=(
         "**Deux numérateurs, et l'écart entre eux est le sujet.** La courbe bleue compte "
         "tous les **agents** de la fonction publique — fonctionnaires, **ouvriers** et "
@@ -802,8 +802,8 @@ figtools.figure_tabs(
         "la population active occupée » : ce chiffre s'obtient avec le numérateur "
         "**large**, quand les fonctionnaires au sens strict donnent 14,6 %. Le mot y est "
         "employé dans son acception large.\n\n"
-        "**Trois réserves de lecture.** Le numérateur exclut les militaires, les agents "
-        "des forces de sécurité intérieure et les magistrats. En **2020**, la hausse "
+        "**Trois réserves de lecture.** La source ne dit pas si le numérateur compte les "
+        "militaires, les agents des forces de sécurité intérieure et les magistrats. En **2020**, la hausse "
         "du ratio vient du dénominateur, qui recule de 3 566 à 3 433 milliers : aucun "
         "recrutement n'y correspond ; il en va de même, en moindre ampleur, en 2023 "
         "(3 500 → 3 416 milliers). Enfin, la population active occupée n'est publiée "
@@ -817,7 +817,7 @@ figtools.figure_tabs(
 
 ### La ventilation par ministère {#sec-ventilation-ministere}
 
-L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] ventile les effectifs par ministère, sur la période 2015-2021, ainsi que les salaires moyens ; le rapport qui la prolonge en donne une nouvelle ventilation pour 2018-2025 [@ins-fonction-publique-2025]. Elle porte sur la fonction publique civile, dont les fonctionnaires sont classés dans les catégories statutaires A1 à D, et se lit sous trois réserves.
+L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] ventile les effectifs par ministère, sur la période 2015-2021, ainsi que les salaires moyens ; le rapport qui la prolonge en donne une nouvelle ventilation pour 2018-2025 [@ins-fonction-publique-2025]. Elle porte sur la fonction publique, dont les fonctionnaires sont classés dans les catégories statutaires A1 à D, et se lit sous trois réserves.
 
 ```{python}
 #| label: fig-ministeres
@@ -853,21 +853,23 @@ figtools.figure_tabs(
 )
 ```
 
-**Les corps à statut autonome n'y sont pas.** Plusieurs ministères emploient, **à côté de leurs agents régis par le statut général, des corps relevant d'un régime statutaire autonome** : les ministères de la Défense, de l'Intérieur et de la Justice comptent respectivement des militaires, des agents des forces de sécurité intérieure et des magistrats, régis par des statuts propres et des grilles distinctes (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)). Ces corps n'entrent dans aucune des catégories A1 à D et n'apparaissent donc pas dans cette statistique, qui ne permet pas d'évaluer leur poids.
+**Les corps à statut propre : un champ que la source ne définit pas.** Plusieurs ministères emploient, à côté des agents régis par le statut général, des corps à statut propre : militaires à la Défense, agents des forces de sécurité intérieure à l'Intérieur et, pour les prisons, à la Justice, magistrats à la Justice, agents des douanes aux Finances (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)). Ces corps ne sont pas tous hors des catégories A1 à D : depuis 1999, les magistrats judiciaires sont rangés dans la sous-catégorie A1 de la grille civile et les douaniers sur cette même grille ; seuls les militaires et les forces de sécurité intérieure ont une grille propre. Le rapport de l'INS ne définit pas le champ statutaire de sa base [@ins-fonction-publique-2025] : il ne dit pas lesquels de ces corps il compte. Les effectifs qu'il rattache à ces ministères ne se lisent donc ni comme ceux de leur seul personnel civil, ni comme ceux des corps. Les effectifs que la loi de finances autorise par mission, eux, comprennent tous les agents de la mission (@sec-statutaire-budget).
+
+<!-- TODO (documentaliste) : obtenir de l'INS la définition statutaire de la base administrative INSAF (militaires, forces de sécurité intérieure, magistrats, douaniers comptés ou non). Rapprochement à ne pas publier comme preuve : pour 2021, INS Intérieur 99 826, Défense 86 446, Justice 19 300 ; effectifs autorisés par la loi de finances 98 362, 91 365, 18 878 (docs/notes/regimes-speciaux-recrutement-departs-effectifs-2026-10-23.md, § 0.2 et 4.3). La fiche de source de tunisia-data (sources/ins-fonction-publique-salaires-2010-2021.md, l. 30) affirme sans source que l'enquête exclut les militaires de carrière : à corriger ou à sourcer. -->
 
 **La série 2015-2021 est une reconstitution de l'INS.** Les annexes annuelles ne retiennent pas d'une année sur l'autre la même nomenclature ministérielle : la série est fiable sur les ordres de grandeur et les tendances longues, non pour la comparaison fine d'une année à l'autre.
 
 **Les deux publications ne se joignent pas.** Sur les années qu'elles ont en commun, 2018-2021, le rapport 2018-2025 répartit autrement un total inchangé, au profit surtout du ministère de l'Intérieur [@ins-fonction-publique-2021; @ins-fonction-publique-2025]. Les deux séries sont donc présentées l'une et l'autre, sans être jointes, et l'évolution d'un ministère ne se lit qu'à l'intérieur de chacune.
 
-Les effectifs rattachés au ministère de la Défense progressent de près de 35 % entre 2015 et 2018, passant d'environ 63 000 à près de 85 000 agents. Cette progression est corroborée par deux publications distinctes de l'INS, les annexes annuelles et la série d'ensemble [@ins-fonction-publique-2021], et le rapport 2018-2025 en retrouve le point d'arrivée (84 971 agents en 2018), suivi d'une quasi-stabilité jusqu'en 2025 (87 765 agents) [@ins-fonction-publique-2025]. Le champ de l'enquête exclut les militaires de carrière : ce mouvement porte donc sur le personnel **civil** du ministère.
+Les effectifs rattachés au ministère de la Défense progressent de près de 35 % entre 2015 et 2018, passant d'environ 63 000 à près de 85 000 agents. Cette progression est corroborée par deux publications distinctes de l'INS, les annexes annuelles et la série d'ensemble [@ins-fonction-publique-2021], et le rapport 2018-2025 en retrouve le point d'arrivée (84 971 agents en 2018), suivi d'une quasi-stabilité jusqu'en 2025 (87 765 agents) [@ins-fonction-publique-2025]. Le rapport ne dit pas si ce mouvement porte sur le seul personnel civil du ministère ou aussi sur les militaires.
 
-<!-- TODO (rédacteur) : documenter, avant toute explication dans le texte visible, le lien éventuel entre cette hausse du personnel civil de la Défense et le renforcement des moyens de sécurité après les attentats de 2015 : source budgétaire, rapport administratif ou texte d'organisation, en distinguant recrutements, transferts et couverture statistique. -->
+<!-- TODO (rédacteur) : documenter, avant toute explication dans le texte visible, le lien éventuel entre cette hausse des effectifs de la Défense et le renforcement des moyens de sécurité après les attentats de 2015 : source budgétaire, rapport administratif ou texte d'organisation, en distinguant recrutements, transferts et couverture statistique. -->
 
-<!-- TODO (documentaliste) : chercher ce qui explique la hausse des effectifs civils de la Défense entre 2015 et 2018 (+35 %) — rapports d'activité du ministère, lois de finances, transferts de personnel depuis un autre ministère. Réserve écrite en attendant. -->
+<!-- TODO (documentaliste) : chercher ce qui explique la hausse des effectifs de la Défense entre 2015 et 2018 (+35 %) — rapports d'activité du ministère, lois de finances, transferts de personnel depuis un autre ministère. Réserve écrite en attendant. -->
 
 :::: {.chronologie-repliable titre="Effectifs par ministère : nomenclatures annuelles et écarts entre les deux publications de l'INS, 2015-2025"}
 
-**Le personnel civil seul.** Les grilles des corps à statut autonome sont distinctes de la grille du statut général. Le recoupement confirme leur absence : pour le ministère de la Défense, la somme des agents classés de A1 à D coïncide avec le total des fonctionnaires que l'enquête lui rattache, ce qui établit que la population recensée est celle du personnel civil, à l'exclusion des militaires de carrière. Les effectifs ministériels de l'INS recensent ainsi, pour ces ministères, leur personnel civil — et non l'ensemble de leurs agents. Ils ne permettent donc pas d'évaluer le poids des corps à statut autonome, dont la documentation chiffrée fait défaut (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)).
+**Le champ statutaire.** Pour le ministère de la Défense, la somme des agents classés de A1 à D coïncide avec le total des fonctionnaires que l'enquête lui rattache. Ce recoupement ne tranche pas la question du champ : les catégories A1 à D ne sont pas propres au statut général, puisque les magistrats et les douaniers sont rangés sur la grille civile, et le rapport 2018-2025 range la sécurité, la justice et la défense parmi les secteurs où se concentrent les effectifs de la fonction publique [@ins-fonction-publique-2025, pp. 3 et 11], sans dire quels corps il y compte (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)).
 
 **Les nomenclatures annuelles.** Les annexes annuelles de l'enquête ne retiennent pas d'une année sur l'autre la même nomenclature ministérielle : celle de 2017 ne compte que douze postes et regroupe la Défense, l'Intérieur et les collectivités locales dans une rubrique « autres ministères », tandis que celle de 2018 désigne les collectivités locales sous le nom de « communes » et que les intitulés composites — agriculture et ressources hydrauliques, équipement et habitat — apparaissent puis disparaissent au gré des remaniements. La série 2015-2021 de l'enquête est la **reconstitution que l'INS établit par-dessus ces variations**, et non la juxtaposition des décomptes annuels tels qu'ils ont été publiés. Elle se recoupe avec les annexes partout où les deux se laissent comparer, mais elle ne doit pas être lue comme une suite de relevés homogènes : la ventilation par ministère supporte mal la comparaison fine d'une année à l'autre, et c'est sur les ordres de grandeur et les tendances longues qu'elle est fiable.
 
