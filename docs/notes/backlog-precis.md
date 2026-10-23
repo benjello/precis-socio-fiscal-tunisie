@@ -826,7 +826,7 @@ liste qui suit le tableau, citations comprises. Restent :
   quatre chapitres, corrections ciblées, aucun plan changé).
   - *Levé* : les dates d'effet des lois n° 95-101 (10 décembre 1995), du 22 juillet 1996 (4 août 1996),
     n° 96-101 (1er décembre 1996), n° 2002-24 (7 mars 2002), n° 2002-32 (21 mars 2002), n° 2017-47
-    (3 juillet 2017), n° 2024-44 (17 août 2024), du décret-loi n° 2024-4 (28 octobre 2024), de l'art. 17 de
+    (3 juillet 2017), n° 2024-44 (17 août 2024), du décret-loi n° 2024-4 (24 octobre 2024), de l'art. 17 de
     la loi de finances pour 2025 (1er janvier 2025, art. 84) et de la loi n° 82-71 (fourchette du 19 au
     22 août 1982), chacune avec son calcul dans sa ligne de registre ; **la section de la cessation
     d'activité (`#sec-perte-emploi`) dit l'état du droit du 7 mars 2002** (loi n° 2002-24), la rédaction de
@@ -1187,8 +1187,9 @@ liste qui suit le tableau, citations comprises. Restent :
     17 août 2024 selon la loi n° 93-64, ou le 13 août selon le décret-loi n° 2020-1 ; le
     propriétaire a tranché le 20 octobre 2026 pour le décret-loi n° 2020-1 : **13 août 2024**,
     à reporter à `#r-ar-2024-44` et aux tableaux de `_autres_risques.qmd`, qui écrivent encore
-    17 août 2024 ; le chapitre `_temps_travail.qmd` du marché du travail porte déjà le 13 août) ; décret-loi n° 2024-4, loi n° 2002-32, loi n° 95-101,
-    loi n° 2017-47 (à confirmer ou à calculer). L'article final de la loi de finances pour
+    17 août 2024 ; le chapitre `_temps_travail.qmd` du marché du travail porte déjà le 13 août) ; loi n° 2002-32, loi n° 95-101,
+    loi n° 2017-47 (à confirmer ou à calculer) ; décret-loi n° 2024-4 : **24 octobre 2024**
+    (décret-loi n° 2020-1), reporté le 23 octobre 2026. L'article final de la loi de finances pour
     2025 n'est pas cité pour la date du 1er janvier 2025.
   - **À relire à l'image** : loi n° 2004-71, art. 1er (couche texte décodée : l'article n'est
     pas cité entre guillemets, le tableau des réformes ne donne que l'intitulé) ; loi
@@ -1650,10 +1651,27 @@ liste qui suit le tableau, citations comprises. Restent :
     115 fascicules citant la loi n° 94-28 sans le décret, non parcourus un à un.
 - **Lecture immédiate** : l'article 4 du décret n° 2007-1406 (`2007/fr/Jo0492007.pdf`,
   source déjà lue pour la maladie) : établir sur pièce ce qu'il change au partage
-  employeur/agent. Le décret-loi n° 2024-4 sur les travailleuses agricoles est désormais
-  présent dans les deux éditions textuelles du JORT n° 129 de 2024 ; relever taux,
-  assiette et dates avant d'affirmer qu'ils sont fixés. Le vieux relevé
-  `todo-localisation.md` le classe encore « absent du corpus » : **ce classement est périmé**.
+  employeur/agent.
+- **Travailleuses agricoles (décret-loi n° 2024-4) — lu et porté le 23 octobre 2026**
+  (`docs/notes/cotisations-decret-loi-2024-4.md`, JORT n° 129 de 2024, deux éditions au corpus ;
+  `todo-localisation.md`, qui le classe « absent du corpus », est périmé). Le décret-loi ne fixe
+  ni taux ni assiette de cotisation : `#sec-cot-travailleuses-agricoles` le dit, avec les trois
+  cas de prise en charge par l'État (art. 20, 23, 42), l'exemption de l'art. 3 et l'antécédent du
+  décret n° 2019-379 ; `#sec-cot-at-travailleuses-agricoles` porte les risques professionnels
+  (art. 38-42) ; la matrice `tbl-matrice-branches` est corrigée. Date d'effet : 24 octobre 2024
+  (décret-loi n° 2020-1), reportée aux volumes cotisations, retraites et prestations sociales.
+  Reste :
+  - les décrets d'application (art. 19, 22, 33, 41) : fiches `r-dl2024-4-cotisations` et
+    `r-dl2024-4-art33`, couvertes jusqu'au 2 octobre 2026 ; JORT n° 58 de 2026 à lire, jort_cache
+    à rafraîchir ;
+  - l'articulation avec le décret n° 2019-379 (RTFR) et avec la loi n° 81-6 : aucun article ne la
+    règle ; l'application des trois ans à une activité antérieure à l'entrée en vigueur ;
+  - folios des dernières pages (p. 2902 FR, 5297 AR) déduits, non lus à l'image ; décret
+    gouvernemental n° 2020-724 (transport) non lu ; effectifs affiliés et dépenses du fonds non
+    recherchés (budget du ministère des affaires sociales) ;
+  - la note `cnss-autres-regimes.md` § 10 dit que les deux éditions concordent sur l'art. 28 :
+    inexact (français « inférieure à 60 mois », arabe « n'excède pas 60 mois ») ; à corriger
+    dans cette note.
 - **OCR ciblé** : la loi n° 65-17 sur les risques couverts par le régime des étudiants
   se trouve au JORT n° 34 de 1965 (`1965/fr/Jo03465.pdf`), scan local. Lire l'article
   pertinent après OCR, au lieu de déduire les branches des seuls décrets de 1992 et 2003.
