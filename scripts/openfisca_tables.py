@@ -164,7 +164,15 @@ PAQUETS = {
         # tableaux des chapitres « La rupture du contrat de travail » et « La durée du
         # travail et les congés » ne pourraient être engendrés. La borne passe à la 0.141,
         # version publiée qui porte les deux nœuds.
-        "version_minimale": (0, 141),
+        # La 0.145 verse les allocations pour l'allergie au gluten et pour le xeroderma
+        # pigmentosum (PR #504, `prestations/non_contributives/allergie_gluten` et
+        # `xeroderma_pigmentosum`), la 0.146 les tarifs de consommation des bières, vins et
+        # alcools (PR #505, `fiscalite_indirecte/accises/bieres_vins_alcools/`), la 0.147 les
+        # tarifs hospitaliers (PR #506, `sante/tarifs_hospitaliers/`) : en deçà, les tableaux
+        # des montants du gluten, des tarifs des alcools et des quatre tableaux du volume
+        # « Santé » ne pourraient être engendrés. Aucun chemin déjà lu ne bouge. La borne
+        # passe à la 0.147.
+        "version_minimale": (0, 147),
     },
 }
 
