@@ -3726,10 +3726,10 @@
   - 'recueils de législation tunisienne : Bompard, Législation de la Tunisie (1888) ; Zeys'
 
 - id: r-enregistrement-protectorat-1912-1954
-  objet: tarif du décret organique sur l'enregistrement du 19 avril 1912 ; décret du 27 juin 1954, art. 52 (terrains destinés à l'habitation) ; décret n° 68-104 du 20 avril 1968, dont la loi de finances pour 1969 modifie le tarif ; textes d'exonération de la première mutation des immeubles d'habitation (décret du 28 octobre 1948, art. 75 ; décret du 29 septembre 1952, art. 27 à 29 ; loi n° 61-18, art. 3 ; loi n° 65-16 du 28 juin 1965)
+  objet: tarif du décret organique sur l'enregistrement du 19 avril 1912 ; décret du 27 juin 1954, art. 52 (terrains destinés à l'habitation) ; textes d'exonération de la première mutation des immeubles d'habitation (décret du 28 octobre 1948, art. 75 ; décret du 29 septembre 1952, art. 27 à 29 ; loi n° 61-18, art. 3 ; loi n° 65-16 du 28 juin 1965)
   ou: [precis/fr/fiscalite/_patrimoine_immobilier.qmd#sec-pi-enregistrement-avant-1969]
   requetes:
-    titres_fts: ['"68-104"', '"enregistrement" OR "habous" OR "immatriculation" OR "loi fonciere"']
+    titres_fts: ['"enregistrement" OR "habous" OR "immatriculation" OR "loi fonciere"']
     titres_like: [decret du 19 avril 1912, 27 juin 1954, 65-16]
     depuis: 1912-04-19
   periode:
@@ -3748,10 +3748,15 @@
     couverture: 'FTS sur enregistrement, habous, immatriculation, loi foncière, signature antérieure au 1er janvier 1966 : décrets du 4 octobre 1956 (JOT n° 81, p. 1360) et du 15 novembre 1956 (JOT n° 93, p. 1528) modifiant le décret de 1912, lus : ni tarif ni taux de mutation ; décret du 28 février 1957 (JOT n° 19, p. 257) et loi n° 57-41 du 27 septembre 1957 connus par l''index seul, fascicule de l''ancienne série absent du corpus local. Textes de 1948-1965 sur la première mutation connus par la loi de finances pour 1970, art. 7, et par l''abrogation de la loi de finances pour 1982, art. 20, non lus.'
     couvert_jusqu_au: 1957-02-28
     resultat: aucun
+  - date: 2026-10-23
+    role: rédacteur
+    sources: [corpus_local, visas]
+    couverture: 'Décret n° 68-104 du 20 avril 1968 lu à l''image par la documentaliste le 23 octobre 2026 (JORT n° 17 de 1968, pp. 417-420, clé decret-68-104-taux) : tarif du décret n° 66-31 majoré du demi-décime, chaque ligne renvoyant au numéro du tarif annexé au décret du 19 avril 1912 ; retiré de l''objet. Le tarif du décret de 1912 lui-même, le décret de 1954 et les textes de 1948-1965 sur la première mutation restent à obtenir.'
+    couvert_jusqu_au: 1968-12-31
+    resultat: aucun
   a_faire:
   - 'Journal officiel tunisien de 1912 (Gallica) : tarif du décret du 19 avril 1912'
   - décret du 27 juin 1954, art. 52 ; décret du 28 octobre 1948, art. 75 ; décret du 29 septembre 1952, art. 27 à 29 ; loi n° 61-18, art. 3 ; loi n° 65-16
-  - décret n° 68-104 du 20 avril 1968 (JORT de 1968, corpus local)
 
 - id: r-habous-prives-1957-fascicule
   objet: fac-similé du Journal officiel tunisien n° 58 du 19 juillet 1957 (décret du 18 juillet 1957 portant abolition du régime des habous privés et mixtes) et du n° 16 de février 1957 (décret du 19 février 1957 portant réorganisation du tribunal mixte immobilier)
@@ -4074,3 +4079,24 @@
   a_faire:
   - lire le décret n° 2012-435 (AR
   - à l'image) et les décrets de liste postérieurs ; relancer avec --sonder-pist
+
+- id: r-timbre-decret-1912
+  objet: texte et tarif du décret organique sur le timbre du 20 avril 1912 (3 joumada I 1330), et tarifs du timbre antérieurs au décret n° 65-222 du 5 mai 1965 (LF 1961, art. 11 ; loi n° 58-45, art. 21 à 24)
+  ou: [precis/fr/fiscalite/_timbre_enregistrement.qmd#sec-te-antecedents]
+  requetes:
+    titres_fts: ['"20 avril 1912"', '"3 joumada"']
+    titres_like: [20 avril 1912]
+    depuis: 1912-04-20
+  periode:
+    jusqu_au: 1965-05-04
+    motif: tarifs antérieurs au décret n° 65-222 du 5 mai 1965 relatif aux droits de timbre
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'FTS « 20 avril 1912 » : 3 notices (décrets du 10 janvier 1957, JOT n° 4, p. 50, et du 28 février 1957, JOT n° 19, p. 256, modifiant le décret de 1912 ; LF 1990, art. 33) ; LIKE : 3 ; FTS « 3 joumada » : 0. Le décret de 1912 est connu par les visas du décret n° 65-222 et par la loi n° 93-53, art. 8, § II. Lacunes : jort_cache commence en 1956 ; fascicules de l''ancienne série de 1957 absents du corpus local ; LF 1961 et loi n° 58-45 non lues.'
+    couvert_jusqu_au: 1965-05-04
+    resultat: aucun
+  a_faire:
+  - Journal officiel tunisien de 1912 (Gallica)
+  - loi n° 60-38 (LF 1961), art. 11, et loi n° 58-45, art. 21 à 24 (corpus local, JORT n° 60/1960 et n° 25/1958)
