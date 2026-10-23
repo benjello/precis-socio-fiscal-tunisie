@@ -104,7 +104,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 |---|---|---|
 | Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Boissons alcoolisées rédigées le 23 octobre 2026 (décrets n° 93-2090, 97-1368, 2002-627, 2007-1977, 2013-929, 2015-1768, 2022-545 et lois de finances 2016, 2018, 2021) ; lacunes ci-dessous |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Lacunes de la mise à la retraite avant l'âge légal de 2009 : voir la section Retraites de ce fichier |
-| Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs ; régime de rémunération des dirigeants d'entreprises publiques rédigé le 23 octobre 2026 | Décret n° 90-1855 (JORT n° 75 de 1990, scan à océriser) |
+| Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs ; régime de rémunération des dirigeants d'entreprises publiques rédigé le 23 octobre 2026 | Décret n° 78-885 et circulaire n° 78-45 (scans de 1978-1979 à océriser autrement) |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Caisses de sécurité sociale | Livre créé le 4 octobre 2026 : présentation, histoire (rédigée le 4 octobre), statut-cadre, comptes par régime, état des caisses, comptes de la longue période, chronologie ; rétrospective CNSS 1990-2004 tracée ; statuts annexés du personnel et couverture des déficits agricoles à obtenir hors JORT | Loi n° 98-91 (JORT n° 89 de 1998), fascicule local lisible, pour les modificatifs du statut-cadre |
@@ -1255,18 +1255,24 @@ liste qui suit le tableau, citations comprises. Restent :
     absents de l'index sous ces numéros, probablement non publiés ; date du décret n° 2006-242
     différente selon les visas (2 ou 12 octobre 2006) ; plein texte des fascicules 2006-2010 non
     parcouru (fiche `r-dirigeants-ep-categorie-exceptionnelle-2006-2010`) ;
-  - **décret n° 90-1855** (JORT n° 75 de 1990, pp. 1752-1753) : scan sans couche texte, **OCR
-    nécessaire** (`1990/fr/Jo07590.pdf`) pour décrire le régime de 1990 et savoir si la double
-    modalité ou l'exclusivité y figuraient ; décrets n° 78-885, 84-865 et 92-1 et circulaire
-    n° 78-45, connus par leur intitulé : fascicules (`1978/fr/Jo06878.pdf`, `1979/fr/Jo00279.pdf`,
-    `1984/fr/Jo04684.pdf`, `1992/fr/Jo00492.pdf`) sans couche texte, **OCR nécessaire** ; décret
-    n° 2006-2564 (`2006/fr/Jo0802006.pdf`) : **lisible dans le corpus**, à lire ;
+  - **fait le 24 octobre 2026** : décret n° 90-1855 (JORT n° 75/1990, pp. 1752-1753), modificatifs
+    n° 92-1 (JORT n° 4/1992, p. 67) et n° 2006-2564 (JORT n° 80/2006, pp. 3460-3461), décret
+    n° 84-865 (JORT n° 46/1984, pp. 1708-1709), modificatifs n° 82-509 (JORT n° 20/1982, p. 695) et
+    n° 83-577 (JORT n° 48/1983, p. 1874) du décret n° 78-885 : lus à l'image (OCR au premier plan)
+    et versés au chapitre (`#sec-conventionnel-dirigeants-1984-2006`, registre `#r-conventionnel-dirigeants-1982`
+    à `-2006`) ; le régime de 1990 a quatre éléments dont une indemnité de gestion, l'exclusivité
+    figure déjà en 1984 ;
+  - **décret n° 78-885** (JORT n° 68/1978, pp. 2844-2845) et **circulaire n° 78-45** (JORT n° 2/1979,
+    pp. 89-91) : le scan (`1978/fr/Jo06878.pdf`, `1979/fr/Jo00279.pdf`) ne rend presque rien à
+    l'OCR par défaut ; **OCR à reprendre avec un autre réglage** ; montants de 1978 de l'indemnité de
+    représentation et autres éléments à relever ; relation du décret n° 2014-12 au décret n° 90-1855
+    à établir ;
   - **circulaire n° 04 du 10 mars 2021** : introuvable en ligne, probablement hors JORT, **à obtenir** ;
   - **liste nominative des « banques publiques »** (décrets n° 2013-4953 et 2015-968) : non établie,
     **à obtenir** (les visas du décret n° 2013-4953 citent les textes d'organisation de la BNA, de
     la BH, de la STB, de la BFPME et de la BTS, entre autres) ;
     régime applicable avant le 15 août 2015 aux directeurs généraux des banques publiques :
-    **lisible dans le corpus** (décret n° 90-1855, à océriser, et décret n° 2014-12) ;
+    **lisible dans le corpus** (décret n° 90-1855, lu le 24 octobre 2026, qui ne vise pas les banques à part ; reste le décret n° 2014-12 et le texte qui les exceptait avant 2015) ;
   - **dates d'effet** des décrets n° 2014-12, 2017-1387 et 2020-422 : colophon des fascicules,
     **lisible dans le corpus** ;
   - **texte arabe du décret n° 2015-2217** : intitulés et termes relevés, comparaison article par
