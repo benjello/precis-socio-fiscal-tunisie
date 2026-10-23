@@ -124,7 +124,7 @@ Déjà au volume : `decret-98-409-amg2` (FR et AR communs), `decret94-1738`, `de
 
 ## 8. Lacunes
 
-- Modifications de l'arrêté de 1996 après le 11 juillet 2008 : fiche
+- Modifications de l'arrêté de 1996 après le 11 juillet 2008 : aucune trouvée (titres français, miroir iort et plein texte du corpus local, jusqu'au 2 octobre 2026) ; fiche
   `r-sante-tarifs-malades-payants-apres-2008` (passes dans le registre).
 - Montants applicables aujourd'hui aux malades payants et aux affiliés : non établis ; aucune
   affirmation de durée de validité.

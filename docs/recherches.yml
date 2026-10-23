@@ -3859,12 +3859,19 @@
   ou: [precis/fr/sante/_hopital.qmd#sec-hopital-tarifs-malades-payants]
   requetes:
     titres_like: ['%tarifs de prise en charge des malades%', '%tarifs des consultations et des hospitalisations%']
-    iort_ar: [تعريفة الاستشفاء بالهياكل الصحية العمومية, تعريفات التعهد بالمرضى الدافعين]
+    iort_ar: [تعريفة الاستشفاء بالهياكل الصحية العمومية, تعريفات التعهد بالمرضى الدافعين, المرضى الخاضعين لدفع مقابل]
+    plein_texte: [arrêté du 19 décembre 1996]
     depuis: 1993-01-25
   passes:
   - date: 2026-10-23
     role: documentaliste
     sources: [jort_cache, iort]
     couverture: 'jort_cache, titres français, du 1993-01-25 au 2026-10-02 : cinq arrêtés (25 janvier 1993 ; 19 décembre 1996 ; 17 avril 1998 ; 29 janvier 2003 ; 7 juillet 2008), aucun après 2008. Miroir iort (intitulés arabes) : aucun candidat, les termes arabes n''étant pas tirés d''un texte. Lacunes : 5337 notices de jort_cache n''ont qu''un intitulé arabe et ne sont pas atteintes par la requête française ; le visa de l''arrêté de 2008 ne cite que l''arrêté de 2003 comme modification antérieure ; textes de tarifs pris sous un autre intitulé (par exemple par établissement ou par acte) non cherchés ; plein texte non interrogé. Note : docs/notes/sante-tarifs-malades-payants-2026-10-23.md.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Passe du 23 octobre 2026 après élargissement : titres français de jort_cache du 1993-01-25 au 2026-10-02 (5 arrêtés, aucun après 2008) ; miroir iort, termes arabes tirés du titre arabe de l''arrêté de 1996 lu à l''image (المرضى الخاضعين لدفع مقابل) : 0 candidat ; plein texte du corpus local, terme « arrêté du 19 décembre 1996 » : 4 occurrences, toutes dans les fascicules de 1998 (n° 33) et de 2008 (n° 56) déjà lus. Lacunes : 5337 notices de jort_cache n''ont qu''un intitulé arabe ; fascicules sans couche texte exploitable ou absents du corpus (liste dans la sortie de la commande elargir, dont 1993 ar) ; fascicules dont la couche texte est décalée (comme 2003) non décodés par la recherche ; le visa de l''arrêté de 2008 ne cite que l''arrêté de 2003 comme modification antérieure. Note : docs/notes/sante-tarifs-malades-payants-2026-10-23.md.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun

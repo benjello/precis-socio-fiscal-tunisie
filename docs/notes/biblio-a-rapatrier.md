@@ -3829,3 +3829,8 @@ Ajoutées ensuite au même chantier (FR et AR de `fiscalite`, 157 entrées de ch
   françaises reprises) ; pour 1996, titre arabe et pp. 2855-2856 lus à l'image le 23/10/2026.
 - [ ] Dates d'effet : dépôt des fascicules de 1998, 2003 et 2008 non relevé.
 
+- Contrôles (23/10/2026) : `push_biblio.py --verifier` : 1747 entrées, 0 perte. `--dry-run` : 1747 références
+  locales, 1747 à créer (aucune erreur de conversion). `--controle-rangement` : 1642 bien rangées, 0 à
+  déclasser, 0 à ranger, 102 sans citation, 5 absentes de Zotero (les cinq clés ci-dessus). Rapatriement
+  Zotero non lancé (feu vert humain requis). Rendu `quarto render --to html` de `sante` : 0 citation non
+  résolue.
