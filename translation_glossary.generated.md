@@ -634,7 +634,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
 | Unité de gestion par objectifs | وحدة تصرف حسب الأهداف |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
-| Valeur en douane | القيمة المصرح بها لدى الديوانة |  |
+| Valeur en douane | القيمة لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |
 | Vente à tempérament | البيع بالتقسيط |  |
 | Zone franche économique | منطقة اقتصادية حرة |  |

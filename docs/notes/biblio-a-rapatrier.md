@@ -19,6 +19,13 @@ Sources : § 7 de `docs/notes/fiscalite-droits-douane-documentation.md`, § 10 d
 - **À verser dans Zotero** (champ Extra `citation-key`, après feu vert) : les 44 notices ; **à déclasser** de `compensation` vers le fonds commun : `lf-1987`, `lf-1988`, `bct-ra-1975`. `dry-run` et `controle-rangement` non lancés. `push_biblio.py --verifier` : 0 perte (1890 entrées) ; 68 tests OK.
 - **PDF introuvables, à rapatrier** (`tunisia-data/data/raw/`) : Jbili et Enders (1996), *Finance & Development*, juin 1996 ; Havrylyshyn (1996) ; Konan et Maskus (2000, Égypte) ; versions publiées de Baunsgaard-Keen, Cagé-Gadenne, Freund-Ornelas ; étude d'impact (Trade SIA) de l'ALECA de 2013 ; rapports annuels de la direction générale des douanes (`douane.gov.tn`) ; OMC 2025 en français (`french/news_f/news_docs/S479R1.pdf` rend du HTML).
 
+## Clôture du 23/10/2026 (fiscalité, droits de douane, bibliographe, temps 2)
+
+- Toutes les clés `@…` citées par `_droits_douane.qmd`, `index.qmd`, `douane/*.csv` et `figures/droits_douane.py` existent dans `precis/{fr,ar}/fiscalite/references.json` ou `precis/{fr,ar}/references.json`. Rendu du livre : 0 `[?]` dans `public/`.
+- **Doublon `lf-1988` / `loi-87-83-lf-1988`** (deux notices identiques au fonds commun, FR et AR) : le livre de la fiscalité emploie `loi-87-83-lf-1988` (51 occurrences, dont 2 dans `_droits_douane.qmd`) ; `lf-1988` n'est cité que par `compensation/_transport.qmd`, `compensation/figdata/fig_compensation_transport_caisse.csv` et `fiscalite/_glossaire.qmd` (engendré). Aucune clé supprimée ; à unifier (garder `loi-87-83-lf-1988`, convertir les trois emplois de `lf-1988`) sur décision humaine.
+- **Citations non résolues du glossaire engendré de la fiscalité** (entrée `zone-franche-economique`, chapitre marché du travail, hors droits de douane) : `loi92-81` et `loi2001-76` n'existent dans aucun `references.json` ; `loi2025-9` n'existe que dans `marche_travail` (à promouvoir au fonds commun). Base : 92-81 = JORT n° 52 de 1992 (rectificatif n° 76), 2001-76 = JORT n° 58 de 2001. Non versées ici (hors chapitre, glossaire en cours de modification).
+- **Décrets cités en commentaire du glossaire, sans clé** : n° 85-751, 92-720, 93-1233, 96-2474, 2000-2829 ; et `corden-1966` : ni le chapitre ni une entrée rendue ne les cite par `@clé` ; rien versé.
+
 ## Versement du 23/10/2026 (éducation, dépense des communes, bibliographe, temps 1)
 
 Source : `docs/notes/education-collectivites-2026-10-23.md`, § 6. Trois notices ajoutées à `precis/fr/education/references.json` (livre sans arabe ; rien sous `precis/ar/`) :
