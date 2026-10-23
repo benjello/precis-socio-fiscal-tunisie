@@ -2611,9 +2611,27 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
-  - lire les montants des articles « octroi de la garantie de l'État » des lois de finances de 1961 à 1994 (série légale du plafond)
   - ouvrir les rapports annuels de la Banque centrale et les lois de règlement pour les transferts, les revenus de participations et les recettes de privatisation
   - dépouiller le rapport de la Cour des comptes sur la dette publique extérieure (2018)
+
+- id: r-ep-plafond-garantie-1995-2015
+  objet: article de chaque loi de finances qui fixe le plafond de la garantie de l'État de 1995 à 2015, article de la loi de finances pour 1960 et texte de 1957-58, et lois de finances complémentaires de 1969 à 1991 dont l'index ne détaille pas les articles
+  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-garanties-plafond-legal]
+  requetes:
+    titres_like: ['%garantie de l''Etat%', '%octroi de la garantie%']
+    iort_ar: [ضمان الدولة]
+    depuis: 1957-01-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, titres : une notice par article « octroi de la garantie de l''Etat » de 1958-59 à 1994 (lois n° 58-45 à 93-125), articles lus dans les fascicules français du corpus local le 23 octobre 2026 (reconnaissance de caractères ; relus à l''image pour les gestions 1963, 1966, 1969, 1975, 1979 et 1985) ; pour 1995 et après, l''index ne détaille plus les articles et aucun plafond n''est lu. Le fascicule de 1957 qui porte le décret du 29 juin 1957 (budget ordinaire 1957-58, JORT n° 52, 1957F/Jo15257.pdf) n''est pas dans le corpus local. Aucune notice de loi de finances n''est indexée pour la gestion 1960. Lois de finances complémentaires de 1969, 1973, 1980, 1982, 1983, 1984, 1986, 1988, 1989 et 1991 : intitulés des articles indexés, aucun ne porte sur la garantie ; textes non lus en entier.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire l'article sur la garantie de chaque loi de finances de 1995 à 2015, dans les fascicules du corpus local
+  - lire en entier les lois de finances complémentaires de 1969 à 1991 pour y chercher une modification du plafond
+  - chercher la gestion 1960 et le décret du 29 juin 1957 (fascicule à obtenir sur pist.tn)
 
 - id: r-ep-annexes-plf-2026
   objet: rapports du ministère des Finances annexés au projet de loi de finances pour 2026 — rapport sur les entreprises publiques (annexe n° 9) et rapport sur les transferts et les garanties (annexe n° 8)
