@@ -6568,7 +6568,9 @@ entries:
   - id: valeur-en-douane
     acronyme: null
     statut: provisoire
-    references: [loi-88-62-droit-consommation]
+    references: [loi-88-62-droit-consommation, loi-2008-34-code-douanes]
+    # Le code des douanes de 2008 (art. 22-23) dit « القيمة لدى الديوانة » : synonyme AR.
+    # Passe 2 (droits de douane) : source de la définition générale à reporter sur le code.
     source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 4-a"}
     voir_aussi: [assiette-droit-consommation, taux-ad-valorem]
     fr:
@@ -6588,7 +6590,7 @@ entries:
         وهذه هي العبارة التي استعملها الفصل 4 من القانون عدد 62 لسنة 1988،
         ويقابلها في النظام الداخلي ثمن البيع باعتبار كل المصاريف والمعاليم
         والأداءات.
-      synonymes: []
+      synonymes: [القيمة لدى الديوانة]
 
   - id: taxe-unique-compensation-carburants
     acronyme: null
@@ -16118,5 +16120,384 @@ entries:
       synonymes: []
     ar:
       terme: المعلوم للمحافظة على البيئة
+      definition: ""
+      synonymes: []
+
+  # --- Droits de douane (livre Fiscalité) : passe 1 du terminologue, 23/10/2026. ---
+  # Termes arabes relevés sur l'édition arabe du JORT (miroir iort, texte intégral) :
+  # code des douanes de 2008, LF 2005 (loi 2004-90), LF 2016 (loi 2015-53), LF 2020
+  # (loi 2019-78). Définitions des entrées provisoires : passe 2, sur la prose.
+
+  - id: droits-de-douane
+    acronyme: null
+    statut: provisoire
+    references: [loi-2008-34-code-douanes]
+    # AR : « المعاليم الديوانية », code de 2008, art. 6 (éd. arabe) ; LF 2016, art. 41.
+    source_definition: {ref: loi-89-113-tarif-douanes, locator: "art. 1"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 6"}
+    voir_aussi: [tarif-des-droits-de-douane, valeur-en-douane, position-tarifaire]
+    fr:
+      terme: Droits de douane
+      definition: ""
+      synonymes: [Droits de douane à l'importation]
+    ar:
+      terme: المعاليم الديوانية
+      definition: ""
+      synonymes: [المعاليم الديوانية عند التوريد]
+
+  - id: tarif-des-droits-de-douane
+    acronyme: null
+    statut: provisoire
+    references: [loi-59-95-tarif-douanes, loi-73-45-tarif-douanes]
+    # AR : « تعريفة المعاليم الديوانية عند التوريد المصادق عليها بالقانون عدد 113 لسنة
+    # 1989 », LF 2016, art. 41 (éd. arabe) ; même formule en LF 2005, art. 29 et 72.
+    source_definition: {ref: loi-89-113-tarif-douanes}
+    source_traduction: {ref: lf-2016, locator: "art. 41"}
+    voir_aussi: [droits-de-douane, tarif-autonome, systeme-harmonise, position-tarifaire]
+    fr:
+      terme: Tarif des droits de douane à l'importation
+      definition: ""
+      synonymes: [Tarif douanier]
+    ar:
+      terme: تعريفة المعاليم الديوانية عند التوريد
+      definition: ""
+      synonymes: [التعريفة الديوانية]
+
+  - id: tarif-autonome
+    acronyme: null
+    statut: provisoire
+    references: [lf-2016]
+    # AR : « نسب المعاليم الديوانية حسب التعريفة الحرة », LF 2005, art. 28, face à « taux
+    # des droits de douane en tarif autonome » ; même paire dans l'intitulé du décret
+    # n° 90-1143 (sans clé). La LF 2017, art. 55, dit « tarif libre » en français.
+    source_definition: {ref: lf-2005, locator: "art. 28"}
+    source_traduction: {ref: lf-2005, locator: "art. 28"}
+    voir_aussi: [tarif-des-droits-de-douane, droit-consolide, tarif-minimum-tarif-general]
+    fr:
+      terme: Tarif autonome
+      definition: ""
+      synonymes: [Tarif libre]
+    ar:
+      terme: التعريفة الحرة
+      definition: ""
+      synonymes: []
+
+  - id: tarif-minimum-tarif-general
+    acronyme: null
+    statut: provisoire
+    # AR NON ATTESTÉ : terme d'attente. Le texte arabe de la loi n° 59-95 n'est pas
+    # lisible dans le corpus (intitulé seul : « تعريفة قمرقية جديدة »).
+    source_definition: {ref: loi-59-95-tarif-douanes, locator: "art. 1"}
+    voir_aussi: [tarif-autonome, tarif-des-droits-de-douane]
+    fr:
+      terme: Tarif minimum, tarif général
+      definition: ""
+      synonymes: []
+    ar:
+      terme: التعريفة الدنيا والتعريفة العامة
+      definition: ""
+      synonymes: []
+
+  - id: droit-consolide
+    acronyme: null
+    statut: provisoire
+    references: [omc-2016-tpr-tunisie]
+    # AR : « نسب المعاليم الديوانية المثبتة طبقا لاتفاقات جولة الأوروغواي », LF 2005,
+    # art. 28, face à « taux des droits de douane consolidés conformément aux accords de
+    # l'Uruguay Round ». Le pluriel est la forme attestée.
+    source_definition: {ref: lf-2005, locator: "art. 28"}
+    source_traduction: {ref: lf-2005, locator: "art. 28"}
+    voir_aussi: [tarif-autonome, taux-npf]
+    fr:
+      terme: Droit consolidé
+      definition: ""
+      synonymes: [Taux consolidé]
+    ar:
+      terme: المعاليم الديوانية المثبتة
+      definition: ""
+      synonymes: []
+
+  - id: demantelement-tarifaire
+    acronyme: null
+    statut: provisoire
+    references: [lf-1997]
+    # AR : « تفكيك المعاليم الديوانية », LF 2005, art. 29 (§ 7.27 des dispositions
+    # préliminaires du tarif), face à « démantèlement des droits de douane conformément
+    # aux articles 10 et 11 de l'Accord » d'association avec l'UE.
+    source_definition: {ref: accord-association-ue-tunisie-1995, locator: "art. 11"}
+    source_traduction: {ref: lf-2005, locator: "art. 29"}
+    voir_aussi: [droits-de-douane, taxe-effet-equivalent]
+    fr:
+      terme: Démantèlement tarifaire
+      definition: ""
+      synonymes: [Démantèlement des droits de douane]
+    ar:
+      terme: تفكيك المعاليم الديوانية
+      definition: ""
+      synonymes: []
+
+  - id: taxe-effet-equivalent
+    acronyme: null
+    statut: provisoire
+    references: [lf-1997]
+    # AR : « الأداءات ذات الأثر المماثل », code de 2008, art. 298 (éd. arabe), face à
+    # « taxes d'effets équivalents ». La loi n° 2001-94 dit « المعاليم ذات الأثر المماثل »
+    # face à « taxes d'effet équivalent » : variante en synonyme.
+    source_definition: {ref: accord-association-ue-tunisie-1995, locator: "art. 8 et 11"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 298"}
+    voir_aussi: [droits-de-douane, demantelement-tarifaire]
+    fr:
+      terme: Taxe d'effet équivalent
+      definition: ""
+      synonymes: [Droit d'effet équivalent]
+    ar:
+      terme: الأداءات ذات الأثر المماثل
+      definition: ""
+      synonymes: [المعاليم ذات الأثر المماثل]
+
+  - id: redevance-prestations-douanieres
+    acronyme: null
+    statut: provisoire
+    references: [lf-2024]
+    # AR : « الأتاوة على الخدمات الديوانية », LF 2020, tableau « A », ligne 17-02, face à
+    # « Redevance sur les prestations douanières ». Distincte de `redevance-compensation`
+    # (أتاوة الدعم) et des « redevances compensatrices » de 1958-1982.
+    source_definition: {ref: lf-1988, locator: "art. 51"}
+    source_traduction: {ref: lf-2020, locator: "tableau « A », 17-02"}
+    voir_aussi: [droits-de-douane]
+    fr:
+      terme: Redevance de prestations douanières
+      definition: ""
+      synonymes: [Redevance sur les prestations douanières]
+    ar:
+      terme: الأتاوة على الخدمات الديوانية
+      definition: ""
+      synonymes: [أتاوة الخدمات الديوانية]
+
+  - id: taxe-formalites-douanieres
+    acronyme: null
+    statut: provisoire
+    # AR : « الأداء على الإجراءات الديوانية », intitulé arabe du décret n° 85-751 (sans
+    # clé bibliographique), face à « taxe de formalités douanières ». Texte arabe de la
+    # LF 1988 non lisible dans le corpus (fascicule image).
+    source_definition: {ref: lf-1988, locator: "art. 48"}
+    voir_aussi: [redevance-prestations-douanieres]
+    fr:
+      terme: Taxe de formalités douanières
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الأداء على الإجراءات الديوانية
+      definition: ""
+      synonymes: []
+
+  - id: droit-compensateur-provisoire
+    acronyme: null
+    statut: provisoire
+    references: [lf-1994, lf-1997]
+    # AR : « المعلوم التكميلي المؤقت », intitulés arabes des décrets n° 92-720, 93-1233
+    # (FR « droit compensateur provisoire ») et n° 96-2474 (FR « droit complémentaire
+    # provisoire ») : l'arabe ne change pas avec le libellé français. Décrets sans clé.
+    # Ne pas confondre avec « المعلوم التعويضي » (droit compensateur antisubvention,
+    # décret n° 2000-477).
+    source_definition: {ref: lf-1991, locator: "art. 26"}
+    voir_aussi: [droits-de-douane]
+    fr:
+      terme: Droit compensateur provisoire
+      definition: ""
+      synonymes: [Droit complémentaire provisoire, DCP]
+    ar:
+      terme: المعلوم التكميلي المؤقت
+      definition: ""
+      synonymes: []
+
+  - id: minimum-perception-douane
+    acronyme: null
+    statut: provisoire
+    references: [lf-1987]
+    # AR : « الحد الأدنى القانوني للاستخلاص », code de 2008, art. 6 (éd. arabe), face à
+    # « minimum légal de perception ».
+    source_definition: {ref: loi-2008-34-code-douanes, locator: "art. 6"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 6"}
+    voir_aussi: [droits-de-douane, tarif-autonome]
+    fr:
+      terme: Minimum légal de perception
+      definition: ""
+      synonymes: [Minimum de perception]
+    ar:
+      terme: الحد الأدنى القانوني للاستخلاص
+      definition: ""
+      synonymes: []
+
+  - id: regimes-douaniers-suspensifs
+    acronyme: null
+    statut: valide
+    references: []
+    source_definition: {ref: loi-2008-34-code-douanes, locator: "art. 137-138"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 137-138"}
+    voir_aussi: [admission-temporaire, regime-suspensif-tva, entreprise-totalement-exportatrice, zone-franche-economique]
+    fr:
+      terme: Régimes suspensifs et régimes douaniers économiques
+      definition: >
+        Régimes qui permettent de stocker, transformer, utiliser ou faire
+        circuler des marchandises en suspension des droits de douane, des taxes
+        intérieures et de tout autre droit ou taxe dont elles sont passibles.
+        Le code des douanes de 2008 en énumère sept, avec l'exportation
+        temporaire : le transit, l'entrepôt douanier, la transformation sous
+        douane, le perfectionnement actif, l'admission temporaire, le
+        perfectionnement passif et l'exportation temporaire.
+      synonymes: [Régimes suspensifs, Régimes économiques]
+    ar:
+      terme: الأنظمة التوقيفية والأنظمة الديوانية الاقتصادية
+      definition: >
+        أنظمة تمكّن من خزن البضائع أو تحويلها أو استعمالها أو جولانها مع توقيف
+        العمل بالمعاليم الديوانية والأداءات الداخلية المستوجبة وبكلّ معلوم أو
+        أداء آخر يمكن أن تخضع له. وتعدّ مجلة الديوانة لسنة 2008 منها، مع التصدير
+        المؤقت، سبعة: العبور، والمستودع الديواني، والتحويل تحت مراقبة الديوانة،
+        والتحويل الفعال، والقبول المؤقت، والتحويل غير الفعال، والتصدير المؤقت.
+      synonymes: [الأنظمة التوقيفية]
+
+  - id: admission-temporaire
+    acronyme: null
+    statut: valide
+    references: []
+    source_definition: {ref: loi-2008-34-code-douanes, locator: "art. 233"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 233"}
+    voir_aussi: [regimes-douaniers-suspensifs]
+    fr:
+      terme: Admission temporaire
+      definition: >
+        Régime douanier qui permet d'utiliser sur le territoire douanier, en
+        suspension totale ou partielle des droits et taxes dus à
+        l'importation, des marchandises destinées à être réexportées sans
+        modification, hors leur dépréciation normale par l'usage autorisé.
+      synonymes: []
+    ar:
+      terme: القبول المؤقت
+      definition: >
+        نظام ديواني يمكّن من الاستعمال على التراب الديواني، مع توقيف العمل الكلي
+        أو الجزئي للمعاليم والأداءات المستوجبة عند التوريد، لبضائع معدّة لإعادة
+        التصدير دون أن تجري عليها تغييرات باستثناء التآكل العادي الناتج عن
+        الاستعمال المرخّص فيه.
+      synonymes: []
+
+  - id: origine-des-marchandises
+    acronyme: null
+    statut: valide
+    references: [freund-ornelas-2010-rta]
+    source_definition: {ref: loi-2008-34-code-douanes, locator: "art. 21"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 21"}
+    voir_aussi: [droits-de-douane, detournement-creation-commerce]
+    fr:
+      terme: Origine des marchandises
+      definition: >
+        Pays dont une marchandise est réputée provenir, et d'après lequel les
+        droits de douane sont perçus à l'importation. Hors les définitions
+        propres aux accords commerciaux, le code des douanes de 2008 tient
+        pour originaires d'un pays les marchandises « entièrement obtenues »
+        dans ce pays. Les règles d'origine des accords préférentiels décident
+        quelles importations bénéficient du taux réduit.
+      synonymes: [Règles d'origine]
+    ar:
+      terme: منشأ البضائع
+      definition: >
+        البلد الذي تُعتبر البضاعة ذات منشأ منه، وعلى أساسه تُستخلص المعاليم عند
+        التوريد. ومع مراعاة التعاريف الواردة بالاتفاقيات التجارية، تعتبر مجلة
+        الديوانة لسنة 2008 ذات منشأ من بلد ما البضائع «المتحصل عليها كليا» بهذا
+        البلد. وتحدّد قواعد المنشأ في الاتفاقيات التفاضلية الواردات التي تنتفع
+        بالنسبة المخفّضة.
+      synonymes: [قواعد المنشأ]
+
+  - id: systeme-harmonise
+    acronyme: SH
+    statut: provisoire
+    references: [loi-89-113-tarif-douanes]
+    # AR : « النظام المنسق لتعيين وترميز البضائع », code de 2008, art. 19 (éd. arabe).
+    # L'intitulé arabe de la loi n° 87-2 dit « النظام الموحد لتعيين البضائع وترميزها » :
+    # gardé en synonyme. Choix du terme du code à confirmer.
+    source_definition: {ref: loi-87-2-systeme-harmonise}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 19"}
+    voir_aussi: [position-tarifaire, tarif-des-droits-de-douane]
+    fr:
+      terme: Système harmonisé de désignation et de codification des marchandises
+      definition: ""
+      synonymes: [Système harmonisé]
+    ar:
+      terme: النظام المنسق لتعيين وترميز البضائع
+      definition: ""
+      synonymes: [النظام المنسق, النظام الموحد لتعيين البضائع وترميزها]
+
+  - id: taux-npf
+    acronyme: NPF
+    statut: provisoire
+    # AR NON ATTESTÉ : terme d'attente, formé sur « معاملة الدولة الأولى بالرعاية »
+    # (avis du Conseil constitutionnel n° 11-2009, sans clé).
+    source_definition: {ref: omc-2016-tpr-tunisie}
+    voir_aussi: [droit-consolide, tarif-autonome]
+    fr:
+      terme: Taux de la nation la plus favorisée
+      definition: ""
+      synonymes: [Taux NPF]
+    ar:
+      terme: نسبة الدولة الأولى بالرعاية
+      definition: ""
+      synonymes: []
+
+  - id: taux-perception-implicite
+    acronyme: null
+    statut: provisoire
+    # Notion analytique définie par le chapitre (droits perçus rapportés aux
+    # importations) : pas de source de définition. AR NON ATTESTÉ : terme d'attente.
+    voir_aussi: [droits-de-douane]
+    fr:
+      terme: Taux de perception implicite
+      definition: ""
+      synonymes: []
+    ar:
+      terme: نسبة الاستخلاص الضمنية
+      definition: ""
+      synonymes: []
+
+  - id: protection-effective
+    acronyme: null
+    statut: provisoire
+    # Source de définition en attente (Corden 1966, sans clé). AR NON ATTESTÉ.
+    voir_aussi: [droits-de-douane]
+    fr:
+      terme: Protection effective
+      definition: ""
+      synonymes: [Taux de protection effective]
+    ar:
+      terme: الحماية الفعلية
+      definition: ""
+      synonymes: []
+
+  - id: detournement-creation-commerce
+    acronyme: null
+    statut: provisoire
+    # AR NON ATTESTÉ : terme d'attente.
+    source_definition: {ref: freund-ornelas-2010-rta, locator: "p. 4"}
+    voir_aussi: [origine-des-marchandises, demantelement-tarifaire]
+    fr:
+      terme: Détournement et création de commerce
+      definition: ""
+      synonymes: [Détournement de commerce, Création de commerce]
+    ar:
+      terme: تحويل التجارة وإنشاء التجارة
+      definition: ""
+      synonymes: []
+
+  - id: evasion-tarifaire
+    acronyme: null
+    statut: provisoire
+    # AR NON ATTESTÉ : terme d'attente.
+    source_definition: {ref: rijkers-baghdadi-raballand-2017-tariff-evasion}
+    voir_aussi: [droits-de-douane]
+    fr:
+      terme: Évasion tarifaire
+      definition: ""
+      synonymes: []
+    ar:
+      terme: التهرب من المعاليم الديوانية
       definition: ""
       synonymes: []
