@@ -16,6 +16,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Acquit-à-caution | وصل ضمان |  |
 | Acte de notoriété | الوثيقة |  |
 | Administrations publiques | الإدارات العمومية |  |
+| Admission temporaire | القبول المؤقت |  |
 | Adoul | عدل إشهاد |  |
 | Agence foncière d'habitation | الوكالة العقارية للسكنى | AFH |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
@@ -189,12 +190,14 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Délai de carence | فترة الانتظار |  |
 | Délégation de compétences | تفويض الصلاحيات |  |
 | Délégation spéciale | النيابة الخصوصية |  |
+| Démantèlement tarifaire | تفكيك المعاليم الديوانية |  |
 | Demi-décime | نصف العشر الإضافي |  |
 | Dépenses de développement | نفقات التنمية |  |
 | Dépenses de gestion | نفقات التصرف |  |
 | Dépenses fiscales | النفقات الجبائية |  |
 | Dépenses obligatoires | النفقات الإجبارية |  |
 | Déséquilibre vertical | الاختلال العمودي |  |
+| Détournement et création de commerce | تحويل التجارة وإنشاء التجارة |  |
 | Dévolution de compétences | إسناد الصلاحيات الذاتية |  |
 | Diplôme de fin de l'enseignement de base | شهادة ختم التعليم الأساسي |  |
 | Discipline budgétaire | الانضباط في الميزانية |  |
@@ -202,7 +205,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Djemaïa des habous | جمعية الأحباس |  |
 | Doctorat | الدكتوراه |  |
 | Droit à déduction | حق الطرح |  |
+| Droit compensateur provisoire | المعلوم التكميلي المؤقت |  |
 | Droit complémentaire | معلوم التسجيل التكميلي |  |
+| Droit consolidé | المعاليم الديوانية المثبتة |  |
 | Droit d'apport | معلوم تسجيل الحصص |  |
 | Droit d'inscription foncière | معلوم الترسيم العقاري |  |
 | Droit de consommation | المعلوم على الاستهلاك |  |
@@ -214,6 +219,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Droit proportionnel | المعلوم النسبي |  |
 | Droits d'enregistrement | معاليم التسجيل |  |
 | Droits d'inscription | رسوم التسجيل |  |
+| Droits de douane | المعاليم الديوانية |  |
 | Droits sur les actes et transactions | معاليم على العقود والمبادلات |  |
 | Durée de constatation du crédit de TVA | مدة تسجيل فائض الأداء على القيمة المضافة بالتصاريح |  |
 | Durée légale du travail | مدة الشغل |  |
@@ -253,6 +259,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Établissement public à caractère industriel et commercial | المؤسسة العمومية ذات الصبغة الصناعية والتجارية | EPIC |
 | Établissement public à caractère non administratif | المؤسسة العمومية التي لا تكتسي صبغة إدارية | EPNA |
 | Établissement public à caractère scientifique et technologique | المؤسسة العمومية ذات الصبغة العلمية والتكنولوجية | EPST |
+| Évasion tarifaire | التهرب من المعاليم الديوانية |  |
 | Éviction de la construction privée | مزاحمة البناء الخاص |  |
 | Exonération de TVA | الإعفاء |  |
 | Facturation à l'identique | الفوترة بنفس المبلغ |  |
@@ -369,6 +376,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Minimum d'impôt | الضريبة الدنيا |  |
 | Minimum d'impôt sur le chiffre d'affaires | الضريبة الدنيا |  |
 | Minimum de perception | الاستخلاص الأدنى |  |
+| Minimum légal de perception | الحد الأدنى القانوني للاستخلاص |  |
 | Mise à la retraite avant l'âge légal | الإحالة على التقاعد قبل بلوغ السن القانونية |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
 | Mission budgétaire | المهمة |  |
@@ -383,6 +391,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Ordonnateur | آمر قبض وصرف |  |
 | Organisme de placement collectif en valeurs mobilières | مؤسسة التوظيف الجماعي في الأوراق المالية | OPCVM |
 | Orientation d'office | التوجيه الآلي |  |
+| Origine des marchandises | منشأ البضائع |  |
 | Ouvrier de l'État | عامل الدولة |  |
 | Ouvriers de chantiers | عملة الحضائر |  |
 | Part aux recettes | المناب من محصول الأداءات |  |
@@ -440,6 +449,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Promoteur immobilier agréé | الباعث العقاري المصادق عليه |  |
 | Promotion | الترقية |  |
 | Protection contre la perte d'emploi | الحماية الاجتماعية للعمال الذين يفقدون شغلهم لأسباب اقتصادية أو فنية |  |
+| Protection effective | الحماية الفعلية |  |
 | Quintile de niveau de vie | الشريحة الخُمسية لمستوى العيش |  |
 | Quota régional | الحصّة الجهوية |  |
 | Rachat (examen) | الإسعاف |  |
@@ -447,6 +457,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Recettes fiscales | المداخيل الجبائية |  |
 | Redevance d'utilisation | معلوم الاستعمال |  |
 | Redevance de compensation | أتاوة الدعم |  |
+| Redevance de prestations douanières | الأتاوة على الخدمات الديوانية |  |
 | Redoublement | الرسوب |  |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
 | Régime complémentaire | النظام التكميلي |  |
@@ -470,6 +481,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime indiciaire | النظام الاستدلالي للتأجير |  |
 | Régime statutaire autonome | النظام الأساسي الخاص |  |
 | Régime suspensif de la taxe sur la valeur ajoutée | نظام توقيف العمل بالأداء على القيمة المضافة |  |
+| Régimes suspensifs et régimes douaniers économiques | الأنظمة التوقيفية والأنظمة الديوانية الاقتصادية |  |
 | Règle d'or | القاعدة الذهبية |  |
 | Regroupement | التجمّع عند العتبة |  |
 | Régularisation des déductions | تعديل الطرح |  |
@@ -549,17 +561,23 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Suspension du droit de consommation | توقيف العمل بالمعلوم على الاستهلاك |  |
 | Système de remboursement | نظام استرجاع المصاريف |  |
 | Système fiscal de référence | النظام الجبائي المرجعي |  |
+| Système harmonisé de désignation et de codification des marchandises | النظام المنسق لتعيين وترميز البضائع | SH |
 | Tableau A du code de la TVA | الجدول « أ » |  |
 | Tableau annexé à la loi n° 88-62 | الجدول المدرج بملحق القانون عدد 62 لسنة 1988 |  |
 | Tableau B bis du code de la TVA | الجدول « ب مكرر » |  |
 | Tableau B du code de la TVA | الجدول « ب » |  |
 | Tableau C du code de la TVA | الجدول « ج » |  |
+| Tarif autonome | التعريفة الحرة |  |
 | Tarif de responsabilité | تعريفة الكفالة |  |
+| Tarif des droits de douane à l'importation | تعريفة المعاليم الديوانية عند التوريد |  |
+| Tarif minimum, tarif général | التعريفة الدنيا والتعريفة العامة |  |
 | Taux ad valorem | نسبة من القيمة |  |
 | Taux d'autonomie financière | نسبة الاستقلالية المالية |  |
 | Taux de couverture de la négociation collective | نسبة تغطية المفاوضة الجماعية |  |
 | Taux de facturation | نسبة الإصدار |  |
+| Taux de la nation la plus favorisée | نسبة الدولة الأولى بالرعاية | NPF |
 | Taux de liquidation | نسبة تصفية الجراية |  |
+| Taux de perception implicite | نسبة الاستخلاص الضمنية |  |
 | Taux de recouvrement | نسبة الاستخلاص |  |
 | Taux effectif à la limite supérieure | النسبة الفعلية في الحدّ الأقصى |  |
 | Taux global de cotisation | النسبة الجملية للمساهمات |  |
@@ -574,7 +592,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taxe à la production | الأداء على الإنتاج |  |
 | Taxe au profit du fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat | المعلوم لفائدة صندوق تنمية القدرة التنافسية في قطاعات الصناعة والخدمات والصناعات التقليدية |  |
 | Taxe conjoncturelle | معلوم ظرفي |  |
+| Taxe d'effet équivalent | الأداءات ذات الأثر المماثل |  |
 | Taxe de circulation sur les véhicules automobiles | معلوم الجولان |  |
+| Taxe de formalités douanières | الأداء على الإجراءات الديوانية |  |
 | Taxe de formation professionnelle | الأداء على التكوين المهني | TFP |
 | Taxe forfaitaire annuelle | الأداء السنوي التقديري |  |
 | Taxe forfaitaire mensuelle sur la valeur ajoutée | أداء تقديري شهري على القيمة المضافة |  |
@@ -614,7 +634,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
 | Unité de gestion par objectifs | وحدة تصرف حسب الأهداف |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
-| Valeur en douane | القيمة المصرح بها لدى الديوانة |  |
+| Valeur en douane | القيمة لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |
 | Vente à tempérament | البيع بالتقسيط |  |
 | Zone franche économique | منطقة اقتصادية حرة |  |

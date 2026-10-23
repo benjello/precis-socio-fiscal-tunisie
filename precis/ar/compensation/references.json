@@ -2253,30 +2253,6 @@
       "note": "citation-key: bct-ra-1974\n16ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 16 de la BCT (catalogue « Rapport Annuel, n° 16 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 13 467 639 octets, 167 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1974.pdf, SHA-256 704837e0f935bfda85cb101ec311f49354a2fa6b0d72ccf8e4a47162d79e86e5, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : première contribution du budget à la Caisse générale de compensation, 5,3 MD (couche texte, p. PDF 95) ; stabilisation des prix (p. PDF 57) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Édition arabe non recherchée : l'adresse est celle de l'édition française, comme pour bct-ra-1984. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
     },
     {
-      "id": "bct-ra-1975",
-      "type": "report",
-      "title": "17ème Rapport d'activité. Exercice 1975",
-      "author": [
-        {
-          "literal": "Banque centrale de Tunisie"
-        }
-      ],
-      "publisher": "Banque centrale de Tunisie",
-      "publisher-place": "Tunis",
-      "URL": "https://www.bct.gov.tn/bct/siteprod/documents/RA_fr_1975.pdf",
-      "accessed": {
-        "date-parts": [
-          [
-            2026,
-            10,
-            6
-          ]
-        ]
-      },
-      "title-short": "BCT, Rapport d'activité 1975",
-      "note": "citation-key: bct-ra-1975\n17ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 17 de la BCT (catalogue « Rapport Annuel, n° 17 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 14 102 000 octets, 184 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1975.pdf, SHA-256 5bfb31831ff8e2f3e5255d90a0646a91493c4ce604d43521505c752b5d284eda, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : opérations de la Caisse générale de compensation 1974-1975 (couche texte, p. PDF 117) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Édition arabe non recherchée : l'adresse est celle de l'édition française, comme pour bct-ra-1984. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
-    },
-    {
       "id": "bct-ra-1980",
       "type": "report",
       "title": "22ème Rapport d'activité. Exercice 1980",
