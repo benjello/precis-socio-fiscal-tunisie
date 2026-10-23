@@ -678,11 +678,135 @@ Ces agents supportent la [retenue à la source](#g-retenue-a-la-source) au titre
 
 ## Repères budgétaires et statistiques {#sec-statutaire-budget}
 
-Les crédits de rémunération sont votés par ministère, puis par mission. Les missions de la Défense, de l'Intérieur et de la Justice réunissent les corps de ce chapitre et des personnels civils ; le programme « Douane » de la mission Finances réunit les douaniers et les autres personnels de la direction générale des douanes. Une mission n'est donc pas un corps.
+La loi de finances vote les crédits de rémunération par ministère depuis 2011 au moins, par mission depuis 2020, et fixe depuis 2021 l'[effectif autorisé](#g-effectif-autorise) de chaque [mission](#g-mission-budgetaire). Les missions de la Défense, de l'Intérieur et de la Justice réunissent les corps de ce chapitre et des personnels civils ; le programme « Douane » de la mission Finances réunit les douaniers et les autres personnels de la direction générale des douanes. Les chiffres qui suivent sont donc ceux des missions, non ceux des corps.
 
-- **La dépense militaire totale** est recensée sur longue période par la base de données du SIPRI [@sipri-milex] ; il s'agit de toute la dépense de défense, et non de la seule masse salariale, qui n'en est qu'une composante.
+- **Les crédits votés aux trois missions** passent de 1 493 millions de dinars en 2011 à 7 983 millions en 2025, soit de 1 847 à 4 271 millions de dinars de 2015 ; leur part dans les rémunérations votées du budget de l'État monte de 20,5 % à 33,2 % en 2023, puis revient à 32,7 % en 2025 (@tbl-statutaire-credits).
+- **L'effectif autorisé** de la Défense croît chaque année de 2021 à 2026, de 91 365 à 106 893 agents ; celui de l'Intérieur culmine en 2022 et celui de la Justice reste proche de 19 000 (@tbl-statutaire-effectifs).
+- **Les recrutements prévus** pour ces missions sont d'abord ceux des diplômés des écoles de formation (@tbl-statutaire-recrutements).
 
-<!-- TODO (rédacteur) : refaire cette section selon le plan (docs/notes/plan-regimes-speciaux-remuneration.md, § 4.10 et § 6) : crédits de rémunération votés des missions Défense, Intérieur et Justice, 2011-2026, en dinars constants et en part du total (F2, registre replié) ; effectif autorisé 2021-2026 (T1) ; exécution, Cour des comptes 2022-2023 (T2) ; recrutements prévus pour les corps (T3) ; statistique de l'INS par ministère, sans la présenter comme un effectif de corps ; puis, à part et titrés comme rapports extérieurs, SIPRI (F3, dinars constants et part des dépenses publiques, pas de part du PIB) et effectifs des forces armées de l'IISS relayés par la Banque mondiale (F4, rupture de 1995). Sources : notes recrutement-départs-effectifs (§ 4), militaires (§ 6), magistrats (§ 8), sécurité-douanes (§ 9). -->
+### Les crédits de rémunération votés, 2011-2026 {#sec-statutaire-credits}
+
+Les montants sont les crédits initiaux de la loi de finances, non les dépenses exécutées : de 2011 à 2019, la première partie, « Rémunérations publiques », du tableau des crédits de paiement par ministère ; depuis 2020, les dépenses de rémunération par mission.
+
+| Année | Intérieur<br>(MD de 2015) | Défense<br>(MD de 2015) | Justice<br>(MD de 2015) | Trois missions<br>(MD courants) | Trois missions<br>(MD de 2015) | Part des rémunérations<br>votées (%) |
+|---|---:|---:|---:|---:|---:|---:|
+| 2011 | 911 | 710 | 227 | 1 493 | 1 847 | 20,5 |
+| 2014 | 1 514 | 1 018 | 307 | 2 710 | 2 839 | 25,7 |
+| 2017 | 1 885 | 1 352 | 370 | 3 941 | 3 607 | 28,8 |
+| 2020 | 2 393 | 1 768 | 449 | 6 106 | 4 610 | 32,1 |
+| 2023 | 2 476 | 1 619 | 469 | 7 566 | 4 564 | 33,2 |
+| 2025 | 2 259 | 1 574 | 438 | 7 983 | 4 271 | 32,7 |
+| 2026 | — | — | — | 7 997 | — | — |
+
+: Crédits de rémunération votés aux missions Intérieur, Défense et Justice, années repères, 2011-2026 {#tbl-statutaire-credits}
+
+Note de lecture : MD, millions de dinars. Dinars de 2015 : montant × indice des prix de 2015 / indice de l'année, moyenne annuelle ; l'indice est celui de l'INS en base 1970 [@ins-annuaire], prolongé après 2023 par l'indice en base 2015 que relaie la Banque centrale [@bct-ra]. Il n'est pas publié pour 2026, ni le total des rémunérations votées pour cette année : les cases restent vides. Toutes les années figurent au tableau replié qui suit.
+
+- **Deux ruptures de nomenclature.** En 2020, le budget passe des ministères aux missions et programmes. De 2019 à 2021, les affaires locales forment une mission distincte ; depuis 2022, la mission Intérieur comprend un programme « Affaires locales » [@dl2021-21-lf2022] : la série de l'Intérieur n'a pas le même périmètre avant et après 2022.
+- **Le ministère n'est pas resté le même.** En 2011, il s'agit du « ministère de l'Intérieur et du Développement local » [@lf-2011, p. 3483] ; de 2013 à 2015, la Justice a un chapitre distinct de celui des « Droits de l'Homme et justice transitionnelle », qui n'est pas compté ici [@lf-2015, p. 3479].
+
+<!-- TODO (rédacteur) : remplacer ces deux tableaux par une figure (F2 du plan : dinars constants et part du total, ruptures marquées en 2020 et en 2019-2022), une fois la série versée dans tunisia-data puis lue par figtools.series(). -->
+
+:::: {.chronologie-repliable titre="Crédits de rémunération votés, missions Défense, Intérieur et Justice : montants et sources, 2011-2026"}
+
+| LF | Intérieur<br>(MD courants) | Défense<br>(MD courants) | Justice<br>(MD courants) | Total des rémunérations<br>votées (MD courants) | Trois missions<br>(MD de 2015) | Part des trois<br>missions (%) | Source |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 2011 | 735,9 | 573,6 | 183,6 | 7 286,4 | 1 847 | 20,5 | [@lf-2011, p. 3483] |
+| 2012 | 1 094,1 | 740,8 | 215,0 | 8 564,7 | 2 403 | 23,9 | [@lf-2012, p. 17] |
+| 2013 | 1 329,7 | 871,7 | 258,2 | 9 780,6 | 2 717 | 25,1 | [@lf-2013, p. 34] |
+| 2014 | 1 445,6 | 971,8 | 293,1 | 10 554,9 | 2 839 | 25,7 | [@lf-2014, p. 3705] |
+| 2015 | 1 529,7 | 1 106,5 | 319,1 | 11 197,4 | 2 955 | 26,4 | [@lf-2015, p. 3479] |
+| 2016 | 1 778,5 | 1 321,8 | 366,7 | 13 000,0 | 3 342 | 26,7 | [@lf-2016, p. 3629] |
+| 2017 | 2 059,2 | 1 477,2 | 404,5 | 13 700,0 | 3 607 | 28,8 | [@lf-2017, p. 3857] |
+| 2018 | 2 390,1 | 1 593,9 | 450,2 | 14 751,0 | 3 777 | 30,1 | [@lf-2018, p. 4298] |
+| 2019 | 2 637,5 | 2 020,8 | 514,3 | 16 516,0 | 4 126 | 31,3 | [@loi2018-56-lf2019, p. 5475] |
+| 2020 | 3 169,6 | 2 342,0 | 594,1 | 19 030,0 | 4 610 | 32,1 | [@lf-2020, pp. 4718-4719] ; total : [@cdc-rapport-budget-2023, p. 62] |
+| 2021 | 3 379,1 | 2 424,0 | 654,0 | 20 118,5 | 4 613 | 32,1 | [@lf-2021, pp. 3144 et 3147] |
+| 2022 | 3 889,8 | 2 533,7 | 725,9 | 21 573,3 | 4 715 | 33,1 | [@dl2021-21-lf2022, p. 3113] ; total : [@cdc-rapport-budget-2023, p. 62] |
+| 2023 | 4 104,2 | 2 684,3 | 777,2 | 22 772,5 | 4 564 | 33,2 | [@lf-2023, p. 4088] ; total : [@cdc-rapport-budget-2023, p. 62] |
+| 2024 | 4 197,8 | 2 846,2 | 793,3 | 23 711,0 | 4 418 | 33,1 | [@lf-2024, p. 6465] ; total : [@minfin-rapport-budget-2024, p. 70] |
+| 2025 | 4 222,8 | 2 942,5 | 818,0 | 24 389,0 | 4 271 | 32,7 | [@lf-2025, p. 6459] ; total : [@minfin-rapport-budget-2025, p. 72] |
+| 2026 | 4 160,8 | 3 015,4 | 820,8 | — | — | — | [@lf-2026, p. 4264] |
+
+: Crédits de rémunération votés aux missions Intérieur, Défense et Justice, 2011-2026 {#tbl-statutaire-credits-registre}
+
+Les tableaux des lois de finances pour 2016, 2019, 2020 et 2023 à 2026 sont lus dans l'édition arabe du *Journal officiel*. Les totaux de 2020 et de 2022 à 2025 sont repris de la Cour des comptes ou du rapport sur le budget de l'État, non de la dernière page du tableau de la loi.
+
+<!-- TODO (documentaliste) : lire les totaux de la dernière page des tableaux C/ت de 2020 et de 2022 à 2026 ; ajouter la mission Finances (programme « Douane ») ; série longue des totaux votés de la « première section : Rémunérations publiques » avant 2011 (tableaux « C » des lois de finances 1990-2010, couche texte à décoder ou OCR) — docs/notes/regimes-speciaux-recrutement-departs-effectifs-2026-10-23.md, § 4.2. -->
+
+::::
+
+### Les effectifs autorisés, 2021-2026 {#sec-statutaire-effectifs}
+
+L'effectif autorisé est voté par la loi de finances, mission par mission, depuis 2021 ; c'est une autorisation, non un effectif observé. Le tableau de toutes les missions est dans l'introduction du livre (@tbl-remu-effectifs-autorises).
+
+| Mission | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
+|---|---:|---:|---:|---:|---:|---:|
+| Défense nationale | 91 365 | 96 849 | 98 861 | 101 416 | 103 678 | 106 893 |
+| Intérieur | 98 362 | 104 709 | 102 299 | 102 453 | 99 486 | 98 419 |
+| Justice | 18 878 | 19 352 | 19 637 | 19 216 | 18 761 | 19 544 |
+| Cour des comptes | 489 | 389 | 418 | 410 | 408 | 402 |
+| Conseil supérieur<br>de la magistrature | 9 | 9 | 9 | 8 | 6 | 14 |
+| Total de l'État | 644 872 | 654 922 | 658 911 | 656 961 | 663 757 | 687 000 |
+
+: Effectif autorisé par la loi de finances, missions des corps à statut propre, 2021-2026 (agents) {#tbl-statutaire-effectifs}
+
+Sources : lois de finances, article 9 et tableau des effectifs par mission [@lf-2021, art. 9; @dl2021-21-lf2022, art. 9; @lf-2023, art. 9; @lf-2024, art. 9; @lf-2025, art. 9; @lf-2026, art. 9]. Depuis 2022, la mission Intérieur comprend les affaires locales.
+
+<!-- TODO (documentaliste) : effectif du programme « Douane » de la mission Finances. Un seul point est publié (projet annuel de performance 2024 de la mission Finances : 6 880 agents à la fin de juin 2023) : ne pas le publier sans une série. Nombre de magistrats : rapports du Conseil supérieur de la magistrature, projets annuels de performance de la mission Justice. -->
+
+### L'exécution : les paiements de rémunération, 2020-2023 {#sec-statutaire-execution}
+
+La Cour des comptes rend compte de l'exécution du budget à partir des comptes du ministère des Finances. Les paiements de rémunération représentent de 96,7 % à 99,3 % des crédits définitifs de 2020 à 2023 [@cdc-rapport-budget-2023, p. 62]. Elle donne leur répartition par mission pour 2022 et 2023, sans détailler la Justice.
+
+| Mission | 2022<br>(% des paiements) | 2023<br>(% des paiements) |
+|---|---:|---:|
+| Éducation | 28,96 | 28,08 |
+| Intérieur | 17,72 | 17,66 |
+| Santé | 12,08 | 12,18 |
+| Défense | 11,51 | 11,53 |
+| Enseignement supérieur | 6,68 | 6,84 |
+| Autres missions | 23,04 | 23,69 |
+
+: Répartition des paiements de rémunération par mission, 2022-2023 {#tbl-statutaire-execution}
+
+Sources : Cour des comptes [@cdc-loireg-2022, p. 72; @cdc-rapport-budget-2023, pp. 64-65].
+
+<!-- TODO (documentaliste) : répartition par mission des paiements de 2018 à 2021 dans les rapports de la Cour des comptes (couche texte arabe partielle, lecture à l'image) ; rapport sur la clôture du budget 2024 à rapatrier. -->
+
+### Les recrutements prévus {#sec-statutaire-recrutements}
+
+Le rapport sur le budget de l'État annonce chaque année les recrutements prévus par ministère, puis par mission. Ce sont des prévisions, non des entrées observées.
+
+| Année | Défense | Intérieur | Justice | Total<br>(hors chantiers) |
+|---|---:|---:|---:|---:|
+| 2013 | — | 2 965 | 1 400 | 23 267 |
+| 2014 | 5 470 | 3 550 | 740 | 18 700 |
+| 2022 | 4 907 | 5 588 | 700 | 18 442 |
+| 2024 | 3 094 | 1 998 | 720 | 13 586 |
+| 2025 | 2 778 | 1 529 | 1 080 | 21 376 |
+
+: Recrutements prévus par le budget de l'État, missions Défense, Intérieur et Justice, 2013-2025 (agents) {#tbl-statutaire-recrutements}
+
+Sources : rapports sur le budget de l'État [@minfin-rapport-budget-2013, pp. 45-46; @minfin-rapport-budget-2014, pp. 27-28; @minfin-rapport-budget-2022, p. 43; @minfin-rapport-budget-2024, pp. 71-72; @minfin-rapport-budget-2025, pp. 48-49 et 73-74]. En 2013, la Défense n'est pas détaillée. En 2024 et en 2025, le total ne comprend pas les régularisations d'ouvriers de chantier (6 000 puis 12 000). La Justice compte en 2022 100 juges et 600 agents des prisons, en 2024 150 magistrats et 570 agents des prisons, en 2025 250 magistrats et 557 agents des prisons parmi 807 diplômés des écoles de formation.
+
+- **Les écoles de formation d'abord.** En 2014, le ministère des Finances écrit que la Défense et l'Intérieur reçoivent la plus grande part des recrutements, en raison des défis sécuritaires intérieurs et extérieurs que le pays affronte ; les diplômés des écoles de formation représentent 52,3 % des recrutements prévus [@minfin-rapport-budget-2014, p. 28].
+- **Puis leur réduction progressive.** La circulaire du chef du gouvernement du 20 mai 2022, qui prépare le budget de 2023, prescrit de réduire progressivement le nombre de diplômés des écoles de formation, notamment pour les ministères de la Défense, de l'Intérieur et de la Justice ; le rapport sur le budget de 2024 reprend la consigne [@cdc-rapport-budget-2023, p. 63; @minfin-rapport-budget-2024, pp. 48 et 70].
+- **Les corps hors des recrutements dérogatoires.** Le recrutement dérogatoire de 2012, par concours sur dossiers et par recrutement direct, ne s'applique pas aux militaires, aux forces de sécurité intérieure, aux douaniers ni aux magistrats ; les règles de ces régimes dérogatoires sont exposées au régime indiciaire (@sec-ri-recruter-partir).
+
+<!-- TODO (documentaliste) : recrutements prévus de 2012 (rapport sur le budget actualisé 2012, pp. 29-30 : Intérieur 3 075, Justice 1 996 ; aucune clé — bibliographe) et de 2023 (seules les parts sont données par la Cour des comptes ; rapport sur le budget 2023 à obtenir) ; rapports 2015-2021 et 2026 à rapatrier. -->
+
+### La statistique de l'INS par ministère {#sec-statutaire-ins}
+
+L'INS publie les effectifs et les salaires par ministère, 2015-2025 (@sec-ventilation-ministere). Son rapport ne définit pas le champ statutaire de sa base : ces effectifs ne se lisent pas comme ceux des corps, et ils ne se comparent pas aux effectifs autorisés, qui sont des autorisations votées.
+
+### Les rapports extérieurs {#sec-statutaire-rapports-exterieurs}
+
+Ces sources ne sont pas budgétaires : elles relèvent de bases internationales, avec leurs propres définitions.
+
+- **La dépense militaire totale** est recensée sur longue période par le SIPRI [@sipri-milex]. C'est toute la dépense de défense, et non la seule masse salariale, qui n'en est qu'une composante.
+
+<!-- TODO (rédacteur) : figure F3 du plan — dépense militaire totale du SIPRI, en dinars constants (1956-2024) et en part des dépenses publiques (1991-2024), sans part du PIB ; figure F4 — effectifs des forces armées (IISS, relayés par la Banque mondiale, clé wdi-armed-forces), 1985-2020, rupture de 1995 notée. Préalable : verser les fichiers bruts (xlsx SIPRI, json Banque mondiale) dans tunisia-data puis dans _seriescache. -->
 
 ## Ce qu'en dit l'économie {#sec-statutaire-economie}
 
