@@ -658,7 +658,7 @@ def rc_etat_du_droit(langue: str):
     Les grandeurs chiffrées (préavis, dommages-intérêts, plafond, bornes du vice de procédure)
     sont lues à la date de l'état du droit ; la clôture du préavis des non-mensuels et de la
     condition d'ancienneté de la gratification est contrôlée à cette date. Restent écrits ici
-    la condition, le débiteur et la population de chaque ligne, les articles qui les portent,
+    la condition, le débiteur de chaque ligne, les articles qui les portent,
     et deux cases sans paramètre : « quinze jours avant l'expiration » de la période d'essai et
     « salaire de la durée restante » du contrat à durée déterminée rompu à tort.
     """
@@ -668,104 +668,98 @@ def rc_etat_du_droit(langue: str):
     DI = f"{RC}/dommages_interets"
     close(f"{P}/duree_salaries_non_mensuels", e, langue)
     close(f"{GF}/anciennete_minimale", e, langue)
-    cdi = h("occupés en contrat à durée indéterminée", "المشتغلون بعقد شغل لمدة غير معينة")
     employeur = h("l'employeur", "المؤجر")
-    preavis = lire(f"{P}/duree", e, F_DE_MOIS)
+    preavis = lire(f"{P}/duree", e, F_MOIS)
+    du, dueg = h("dû", "مستحق"), h("due", "مستحقة")
+    a_ = lire(f"{DI}/minimum_par_annee_anciennete", e, F_MOIS_BORNE)
+    b_ = lire(f"{DI}/maximum_par_annee_anciennete", e, F_MOIS_BORNE)
+    plafond = lire(f"{DI}/plafond", e, F_MOIS)
 
+    # Une ligne par façon de mettre fin au contrat ; une colonne par chose due, pour que
+    # chaque case dise une seule chose : le préavis, la gratification, les dommages-intérêts
+    # ou le montant dû, et celui qui paie.
     lignes = [
         [h("Démission", "الاستقالة"),
          h("à l'initiative du salarié", "بمبادرة من العامل"),
-         g("préavis {m} dû par le salarié ([art. 14 bis](#r-mt-rc-demission)) ; la salariée "
-           "enceinte en est dispensée ([art. 18](#r-mt-rc-demission))",
-           "أجل إعلام مدته {m} يلتزم به العامل ([الفصل 14 مكرر](#r-mt-rc-demission))؛ "
-           "العاملة الحامل معفاة منه ([الفصل 18](#r-mt-rc-demission))",
-           m=preavis),
-         VIDE_CASE,
-         h("occupés en contrat à durée indéterminée, comptés par l'INS parmi tous les occupés, "
-           "indépendants compris (@fig-mt-rc-contrats-ins)",
-           "المشتغلون بعقد شغل لمدة غير معينة، ويحتسبهم المعهد الوطني للإحصاء ضمن مجموع "
-           "المشتغلين بمن فيهم المستقلون (@fig-mt-rc-contrats-ins)")],
+         g("dû par le salarié, {m} ([art. 14 bis](#r-mt-rc-demission)) ; la salariée enceinte "
+           "en est dispensée ([art. 18](#r-mt-rc-demission))",
+           "يلتزم به العامل، {m} ([الفصل 14 مكرر](#r-mt-rc-demission))؛ العاملة الحامل معفاة "
+           "منه ([الفصل 18](#r-mt-rc-demission))", m=preavis),
+         VIDE_CASE, VIDE_CASE, VIDE_CASE],
         [h("Licenciement pour faute grave", "الطرد لخطأ فادح"),
-         h("une des fautes de la liste légale ([art. 14 quater](#r-mt-rc-motif-1994))",
-           "أحد الأخطاء الواردة بالقائمة القانونية ([الفصل 14 رابعا](#r-mt-rc-motif-1994))"),
-         h("pas de gratification ([art. 22](#r-mt-rc-grat-1994)) ; le contrat prend fin « par la "
-           "volonté de l'une des parties suite à une faute grave commise par l'autre partie » "
-           "([art. 14](#r-mt-rc-fin-cdi-1994))",
-           "لا مكافأة نهاية خدمة ([الفصل 22](#r-mt-rc-grat-1994))؛ ينتهي العقد بإرادة أحد "
-           "الطرفين إثر خطأ فادح صادر عن الطرف الآخر ([الفصل 14](#r-mt-rc-fin-cdi-1994))"),
-         VIDE_CASE, cdi],
+         h("une des fautes de la liste légale ([art. 14 quater](#r-mt-rc-motif-1994)) ; le "
+           "contrat prend fin « par la volonté de l'une des parties suite à une faute grave "
+           "commise par l'autre partie » ([art. 14](#r-mt-rc-fin-cdi-1994))",
+           "أحد الأخطاء الواردة بالقائمة القانونية ([الفصل 14 رابعا](#r-mt-rc-motif-1994))؛ "
+           "ينتهي العقد بإرادة أحد الطرفين إثر خطأ فادح صادر عن الطرف الآخر "
+           "([الفصل 14](#r-mt-rc-fin-cdi-1994))"),
+         VIDE_CASE,
+         h("aucune ([art. 22](#r-mt-rc-grat-1994))", "لا مكافأة ([الفصل 22](#r-mt-rc-grat-1994))"),
+         VIDE_CASE, VIDE_CASE],
         [h("Licenciement pour cause réelle et sérieuse", "الطرد لسبب حقيقي وجدي"),
-         h("causes indiquées dans la lettre de préavis",
-           "أسباب مبينة برسالة الإعلام"),
-         g("préavis {m} ([art. 14 bis](#r-mt-rc-preavis-1994)) et gratification "
-           "([art. 22](#r-mt-rc-grat-1994))",
-           "أجل إعلام مدته {m} ([الفصل 14 مكرر](#r-mt-rc-preavis-1994)) ومكافأة نهاية الخدمة "
-           "([الفصل 22](#r-mt-rc-grat-1994))", m=preavis),
-         employeur,
-         h("occupés en contrat à durée indéterminée, après la période d'essai",
-           "المشتغلون بعقد شغل لمدة غير معينة، بعد انقضاء فترة التجربة")],
+         h("causes indiquées dans la lettre de préavis", "أسباب مبينة برسالة الإعلام"),
+         g("{m} ([art. 14 bis](#r-mt-rc-preavis-1994))",
+           "{m} ([الفصل 14 مكرر](#r-mt-rc-preavis-1994))", m=preavis),
+         h("due ([art. 22](#r-mt-rc-grat-1994))", "مستحقة ([الفصل 22](#r-mt-rc-grat-1994))"),
+         VIDE_CASE, employeur],
         [h("Licenciement sans cause réelle et sérieuse", "الطرد دون سبب حقيقي وجدي"),
          h("jugement, action dans l'année", "حكم قضائي، رفع الدعوى في أجل سنة"),
-         g("préavis, gratification et dommages-intérêts de {a} à {b} mois de salaire par année "
-           "d'ancienneté, plafond de {p} ([art. 23 et 23 bis](#r-mt-rc-reparation-1994))",
-           "أجل الإعلام ومكافأة نهاية الخدمة وغرم الضرر بأجر من {a} إلى {b} عن كل سنة أقدمية، "
-           "والسقف {p} من الأجر ([الفصلان 23 و23 مكرر](#r-mt-rc-reparation-1994))",
-           a=lire(f"{DI}/minimum_par_annee_anciennete", e, F_MOIS_BORNE),
-           b=lire(f"{DI}/maximum_par_annee_anciennete", e, F_MOIS_BORNE),
-           p=lire(f"{DI}/plafond", e, F_MOIS)),
-         employeur, cdi],
+         du, dueg,
+         g("de {a} à {b} mois de salaire par année d'ancienneté, plafond de {p} "
+           "([art. 23 et 23 bis](#r-mt-rc-reparation-1994))",
+           "بأجر من {a} إلى {b} عن كل سنة أقدمية، والسقف {p} من الأجر "
+           "([الفصلان 23 و23 مكرر](#r-mt-rc-reparation-1994))", a=a_, b=b_, p=plafond),
+         employeur],
         [h("Vice de procédure seul", "خرق الإجراءات فقط"),
          h("cause réelle et sérieuse, procédure non respectée",
            "سبب حقيقي وجدي، دون احترام الإجراءات"),
-         g("préavis, gratification et dommages-intérêts de {a} à {b} mois de salaire "
-           "([art. 23 bis](#r-mt-rc-reparation-1994))",
-           "أجل الإعلام ومكافأة نهاية الخدمة وغرم الضرر بأجر من {a} إلى {b} "
-           "([الفصل 23 مكرر](#r-mt-rc-reparation-1994))",
+         du, dueg,
+         g("de {a} à {b} mois de salaire ([art. 23 bis](#r-mt-rc-reparation-1994))",
+           "بأجر من {a} إلى {b} ([الفصل 23 مكرر](#r-mt-rc-reparation-1994))",
            a=lire(f"{DI}/vice_procedure_minimum", e, F_MOIS_BORNE),
            b=lire(f"{DI}/vice_procedure_maximum", e, F_MOIS_BORNE)),
-         employeur, cdi],
+         employeur],
         [h("Licenciement pour motif économique",
            "الطرد أو الإيقاف عن العمل لأسباب اقتصادية أو فنية"),
          h("procédure de l'inspection du travail et de la commission ; sans avis, licenciement "
            "abusif ([art. 21 à 21-12](#r-mt-rc-le-1996))",
            "إجراءات تفقدية الشغل واللجنة؛ ويعد الطرد دون رأي لجنة مراقبة الطرد تعسفيا "
            "([الفصول 21 إلى 21-12](#r-mt-rc-le-1996))"),
-         h("préavis et gratification ; la commission donne son avis sur la gratification et "
-           "concilie sur son montant ([art. 21-10](#r-mt-rc-le-1996))",
-           "أجل الإعلام ومكافأة نهاية الخدمة؛ وتبدي لجنة مراقبة الطرد رأيها في المكافأة وتصالح بشأن "
-           "مقدارها ([الفصل 21-10](#r-mt-rc-le-1996))"),
+         du,
+         h("due ; la commission donne son avis sur son montant et concilie "
+           "([art. 21-10](#r-mt-rc-le-1996))",
+           "مستحقة؛ وتبدي لجنة مراقبة الطرد رأيها في مقدارها وتصالح بشأنه "
+           "([الفصل 21-10](#r-mt-rc-le-1996))"),
+         VIDE_CASE,
          h("l'employeur ; la caisse si l'employeur est en cessation de paiement",
-           "المؤجر؛ والصندوق إذا كان المؤجر في حالة توقف عن الدفع"),
-         cdi],
+           "المؤجر؛ والصندوق إذا كان المؤجر في حالة توقف عن الدفع")],
         [h("Fin d'un contrat à durée déterminée à son terme",
            "انتهاء عقد الشغل لمدة معينة بحلول أجله"),
          h("expiration de la durée ou achèvement du travail ([art. 14](#r-mt-rc-fin-cdi-1994))",
            "انقضاء المدة أو إنجاز العمل ([الفصل 14](#r-mt-rc-fin-cdi-1994))"),
+         VIDE_CASE, VIDE_CASE,
          h("aucune indemnité légale ; contrat à durée indéterminée si le travail continue "
            "([art. 17](#r-mt-rc-cdd-2025))",
            "لا تعويض قانوني؛ ويصبح العقد لمدة غير معينة إذا تواصل العمل "
            "([الفصل 17](#r-mt-rc-cdd-2025))"),
-         VIDE_CASE,
-         h("occupés en contrat à durée déterminée (@fig-mt-rc-contrats-ins)",
-           "المشتغلون بعقد شغل لمدة معينة (@fig-mt-rc-contrats-ins)")],
+         VIDE_CASE],
         [h("Rupture abusive d'un contrat à durée déterminée par l'employeur",
            "القطع التعسفي لعقد الشغل لمدة معينة من قبل المؤجر"),
          h("avant le terme, sans faute grave", "قبل الأجل، دون خطأ فادح"),
+         VIDE_CASE, VIDE_CASE,
          h("salaire de la durée restante ([art. 24](#r-mt-rc-cdd-abusif-1994))",
            "أجر المدة المتبقية ([الفصل 24](#r-mt-rc-cdd-abusif-1994))"),
-         employeur,
-         h("occupés en contrat à durée déterminée", "المشتغلون بعقد شغل لمدة معينة")],
+         employeur],
         [h("Fin de la période d'essai", "انتهاء فترة التجربة"),
          h("notification quinze jours avant l'expiration ([art. 6-3](#r-mt-rc-essai-2025))",
            "الإعلام قبل خمسة عشر يوما من إنهاء فترة التجربة ([الفصل 6-3](#r-mt-rc-essai-2025))"),
-         h("aucune indemnité légale", "لا تعويض قانوني"),
-         VIDE_CASE,
-         h("salariés en période d'essai", "العمال في فترة التجربة")],
+         VIDE_CASE, VIDE_CASE, h("aucune indemnité légale", "لا تعويض قانوني"), VIDE_CASE],
     ]
     entetes = [{"fr": x, "ar": y}[langue] for x, y in [
         ("Fin du contrat", "نهاية العقد"), ("Condition", "الشرط"),
-        ("Ce qui est dû", "المستحق"), ("Qui paie", "من يدفع"),
-        ("Population couverte", "الفئة المشمولة")]]
+        ("Préavis", "أجل الإعلام"), ("Gratification de fin de service", "مكافأة نهاية الخدمة"),
+        ("Dommages-intérêts ou autre somme due", "غرم الضرر أو مبلغ آخر مستحق"),
+        ("À la charge de", "على كاهل")]]
     return ot.tableau_gabarit(entetes, lignes, langue)
 
 
