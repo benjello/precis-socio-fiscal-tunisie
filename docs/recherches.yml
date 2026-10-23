@@ -4216,3 +4216,110 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire: [plein texte des JORT FR de janvier-février 1997 et d'octobre-novembre 2009]
+
+- id: r-remuneration-membres-gouvernement
+  objet: décret (publié ou non) fixant le traitement, les indemnités et les avantages des membres du gouvernement (ministres, secrétaires d'État), et ses modificatifs
+  ou: [precis/fr/remunerations_publiques/_fonctions_politiques.qmd#sec-fp-gouvernement]
+  requetes:
+    titres_fts:
+    - 'titre:(remuneration OR traitement OR indemnite OR indemnites OR avantages) AND titre:(ministres OR gouvernement OR "secretaires d etat" OR "chef de cabinet" OR "emplois fonctionnels" OR "emplois superieurs" OR gouverneurs)'
+    - '(membres NEAR gouvernement) NOT signature NOT gouverneurs NOT deleguer NOT serment NOT declaration'
+    - 'titre:(remuneration OR indemnite OR indemnites OR avantages OR traitement) AND titre:(ministres OR "membres du gouvernement" OR "secretaires d etat")'
+    - 'titre:("president de la republique" OR "premier ministre" OR "premiers ministres" OR "chef du gouvernement" OR "anciens ministres") AND titre:(avantages OR remuneration OR indemnite OR indemnites OR retraite OR pension OR traitement OR dotation)'
+    titres_like: ['%membres du gouvernement%', '%secretaires d''etat%']
+    iort_ar: [أعضاء الحكومة, كتاب الدولة]
+    depuis: 1956-03-20
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: "titres et objets de jort_cache (FTS et LIKE ; LIKE arabe : « أعضاء الحكومة », « كاتب دولة », « كتاب الدولة », « الوزير » croisés avec « منحة/منح/امتيازات/تأجير/الأجر »), 1956 au 2 octobre 2026 : aucun texte de rémunération ; seuls délégation de signature, serment, déclaration de biens, retraite (loi n° 83-31, DL n° 2011-48). Le décret visé par le décret n° 2015-658 (« الأمر المؤرخ في 15 أوت 1998 », président de la République) n'est pas indexé (date_signature = 1998-08-15 : 0 ligne), comme le décret du 29 octobre 1991 visé par le décret n° 2020-769 pour les gouverneurs. Plein texte non parcouru. Fascicules de 2024-2026 inconnus de jort_cache (outillage § 1 f) non parcourus ; --sonder-pist non lancé."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte des fascicules, sources parlementaires (débats budgétaires, mission « Présidence du gouvernement »)]
+
+- id: r-indemnite-parlementaire-decret
+  objet: décret fixant les indemnités mensuelles du président et des membres de la Chambre des députés en application de l'art. 72 de la loi de finances pour 1989 (loi n° 88-145), puis textes fixant l'indemnité des membres de la Chambre des conseillers (loi n° 2005-54), de l'Assemblée des représentants du peuple (2014-2021) et des assemblées élues en 2022-2024
+  ou: [precis/fr/remunerations_publiques/_fonctions_politiques.qmd#sec-fp-parlementaires]
+  requetes:
+    titres_fts:
+    - 'titre:(deputes OR parlementaire OR parlementaires OR "assemblee nationale" OR conseillers OR "chambre des deputes" OR constituante OR "representants du peuple") AND titre:(indemnite OR indemnites OR remuneration OR avantages OR retraite OR traitement OR statut)'
+    titres_like: ['%indemnite parlementaire%']
+    iort_ar: [المنحة النيابية]
+    depuis: 1988-12-31
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, presse]
+    couverture: "titres de jort_cache, 31 décembre 1988 au 2 octobre 2026 (FTS français ; LIKE arabe « مجلس نواب الشعب », « المجلس الوطني التأسيسي », « النواب », « المجلس الوطني للجهات » croisés avec « منح/جراي/امتياز/تقاعد/النظام الأساسي » ; « المنحة النيابية », « منحة نيابية ») : aucun décret pris pour l'art. 72 de la LF 1989 ; trouvés seulement les arrêtés du président de l'ANC du 21 juillet et du 15 août 2012, et pour l'ARP les seuls décrets d'« indemnité de travail parlementaire » des agents (2016-589, 2019-342). La presse de 2012 (Business News, 17 août 2012) dit l'indemnité fixée par décret non publié. Plein texte non parcouru ; publications propres des assemblées non parcourues. Fascicules de 2024-2026 inconnus de jort_cache non parcourus ; --sonder-pist non lancé."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte des fascicules, site et rapports de l'ARP, décisions du bureau, budget de la mission « Assemblée »]
+
+- id: r-gouverneurs-decret-1991
+  objet: décret du 29 octobre 1991 fixant le salaire mensuel et les avantages accordés aux gouverneurs, et ses modificatifs dont celui visé comme « décret gouvernemental n° 2016-251 du 23 décembre 2016 » (visas du décret gouvernemental n° 2020-769)
+  ou: [precis/fr/remunerations_publiques/_fonctions_politiques.qmd#sec-fp-gouverneurs]
+  requetes:
+    titres_fts: ['titre:(remuneration OR traitement OR indemnite OR indemnites OR avantages) AND titre:(gouverneurs)']
+    titres_like: ['%gouverneurs%']
+    iort_ar: [251 لسنة 2016, الولاة]
+    depuis: 1991-10-29
+  periode:
+    jusqu_au: 2020-09-22
+    motif: le décret gouvernemental n° 2020-769 (JORT n° 95 du 22 septembre 2020) abroge le décret du 29 octobre 1991 (art. 9)
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: "jort_cache au 2 octobre 2026 : aucun texte du 29 octobre 1991 sur les gouverneurs (cinq arrêtés de ce jour, sans rapport) ; le décret gouvernemental n° 2016-251 de l'index est du 16 février 2016 et porte sur l'inspection pédagogique ; un seul décret du 23 décembre 2016 indexé (n° 2016-1396, huile d'olive). Plein texte non parcouru. Fascicules inconnus de jort_cache non parcourus ; --sonder-pist non lancé."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-diplomates-indemnite-poste-apres-1998
+  objet: texte transposant à la grille en dinars (décret n° 97-1832, concordance n° 99-2358) les tranches d'« indice » de l'indemnité de poste (décret n° 73-168, art. 2) et de l'indemnité de perte de change (décret n° 73-167, art. 11-12) ; arrêtés de classement zonal des postes postérieurs à 1985
+  ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-ri-diplomates]
+  requetes:
+    titres_fts:
+    - 'titre:(diplomatique OR consulaire OR diplomatiques OR consulaires OR "affaires etrangeres" OR "a l etranger" OR ambassadeurs) AND titre:(statut OR remuneration OR indemnite OR indemnites OR allocations OR avantages OR traitement OR residence)'
+    titres_like: ['%73-168%', '%73-167%']
+    iort_ar: [167 لسنة 1973, 168 لسنة 1973]
+    depuis: 1997-09-16
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "titres de jort_cache, 1956 au 2 octobre 2026 : modificatifs du décret n° 73-167 jusqu'au décret n° 2008-3481 (aucun ne touche l'art. 2 du décret n° 73-168 d'après les intitulés ; 2004-1772 et 2008-3481 lus : bagages, enseignement des enfants) ; pour le décret n° 73-168, seul l'arrêté du 1er mars 1985. Arrêtés de classement zonal non indexés sous ces termes. Plein texte non parcouru ; les arrêtés peuvent ne pas être publiés. Fascicules de 2024-2026 inconnus de jort_cache non parcourus ; --sonder-pist non lancé."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [lire les décrets n° 85-1183, 89-842, 90-721 (1985-1990, scans), plein texte]
+
+- id: r-loi2020-38-decrets-application
+  objet: décrets gouvernementaux d'application des art. 1 à 3 de la loi n° 2020-38 (recrutement direct des chômeurs diplômés de longue durée)
+  ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-ri-recrutement]
+  requetes:
+    titres_fts: ['"2020-38" OR "2021-27" OR "2025-18" OR chantiers OR "longue duree"']
+    titres_like: ['%2020-38%', '%dix ans et plus%', '%chomage de longue%']
+    iort_ar: [38 لسنة 2020, طالت بطالتهم]
+    depuis: 2020-08-19
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "intitulés de jort_cache du 19 août 2020 au 2 octobre 2026 ; seul trouvé : LF 2021 art. 12 (crédits pour 10 000 recrutements) ; aucun décret d'application ; plein texte non parcouru ; fascicules inconnus de jort_cache non examinés."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-loi2025-18-application
+  objet: décret ou arrêté d'application de la loi n° 2025-18 (plateforme, tranches de recrutement des diplômés chômeurs de longue durée)
+  ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-ri-recrutement]
+  requetes:
+    titres_like: ['%2025-18%', '%chomage de longue%', '%recrutement%']
+    iort_ar: [طالت بطالتهم, 18 لسنة 2025]
+    depuis: 2025-12-23
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: "intitulés de jort_cache du 1er décembre 2025 au 2 octobre 2026, hors arrêtés (nombreux arrêtés d'ouverture de concours non filtrés) ; seul texte voisin : décret 2026-12 (santé militaire) ; plein texte non parcouru ; fascicules 2026 inconnus de la base (n° 4, 8, 20, 32, 38, 66, 69, 85) non examinés."
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
