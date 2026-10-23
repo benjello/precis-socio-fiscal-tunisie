@@ -36,7 +36,10 @@
     <layout prefix="(" suffix=")" delimiter="&#160;; ">
       <group delimiter=", ">
         <text macro="designation"/>
-        <text variable="locator"/>
+        <group delimiter=" ">
+          <label variable="locator" form="short"/>
+          <text variable="locator"/>
+        </group>
       </group>
     </layout>
   </citation>
