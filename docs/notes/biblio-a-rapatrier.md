@@ -6,6 +6,14 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Versement du 23/10/2026 (éducation, dépense des communes, bibliographe, temps 1)
+
+Source : `docs/notes/education-collectivites-2026-10-23.md`, § 6. Trois notices ajoutées à `precis/fr/education/references.json` (livre sans arabe ; rien sous `precis/ar/`) :
+- **Copies identiques**, recopiées de `finances_locales` (à promouvoir au fonds commun) : `decret-gouv2020-52`, `dgct-donnees-ouvertes`.
+- **Créée** : `decret-gouv2020-439` (JORT n° 71 du 22 juillet 2020, pp. 1575-1576 ; URL française lue dans le champ `pdf_fr` de la notice 147652 de `jort_cache.db`). Date d'effet non établie. À ajouter aussi à `finances_locales`, qui ne la cite pas.
+- `loi-org-2018-29-ccl` est déjà au fonds commun.
+- **Clôture (temps 2)** : Les clés citées par la section « La dépense des communes » résolvent toutes (rendu du livre : 0 citation non résolue). `push_biblio.py --verifier` : 0 perte ; `--dry-run` : conversion complète ; `--controle-rangement` : `decret-gouv2020-52` et `dgct-donnees-ouvertes`, citées par deux livres, sont à déclasser du livre `finances_locales` vers le fonds commun ; `decret-gouv2020-439` est absente de Zotero (versement à faire). Rien poussé dans Zotero (feu vert humain requis).
+
 ## Versement du 20/10/2026 (fiscalité de l'épargne et du capital, bibliographe, temps 1)
 
 Source : § 10 de `docs/notes/fiscalite-epargne-capital.md`. Treize notices ajoutées à `precis/{fr,ar}/fiscalite/references.json` (locales au volume) : `loi-99-92-relance-marche-financier`, `decret-loi-2011-28`, `decret-loi-2011-100`, `decret-loi-2020-30`, `dgi-nc-45-2002`, `dgi-nc-35-2003`, `dgi-nc-8-2004` (absente de la liste de la note, citée par sa prose), `dgi-nc-16-2004`, `dgi-nc-13-2005`, `dgi-nc-10-2008`, `dgi-nc-14-2018`, `dgi-nc-2-2018`, `dgi-nc-3-2023`. Les 31 clés « déjà présentes » le sont (volume ou fonds commun), sans doublon. `push_biblio.py --verifier` : 0 perte.
