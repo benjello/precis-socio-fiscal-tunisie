@@ -40,7 +40,7 @@ def main() -> int:
     erreurs = []
     png("fig_dd_parts", dd.fig_parts())
     png("fig_dd_pib", dd.fig_pib())
-    for (titre, f), suffixe in zip(dd.fig_rendement(), ("cour", "cst")):
+    for (titre, f), suffixe in zip(dd.fig_rendement(), ("cour", "dep", "pib")):
         png(f"fig_dd_rendement_{suffixe}", f)
     png("fig_dd_perception", dd.fig_perception())
     for nom in ("table_parts", "table_pib", "table_rendement", "table_perception"):

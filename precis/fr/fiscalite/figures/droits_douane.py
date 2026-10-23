@@ -74,7 +74,7 @@ SERIE_PARTS = "droits-douane-parts"
 SERIE_PIB = "droits-douane-pib"
 SERIES_PARTS = (SERIE_PARTS,)
 SERIES_PIB = (SERIE_PIB,)
-SERIES_REND = (SERIE_REND, *dinars_constants.SERIES_IPC)
+SERIES_REND = (SERIE_REND, SERIE_DEN)
 SERIES_PERC = (SERIE_PERC, SERIE_COMPOSITION, SERIE_INS)
 
 BASE = dinars_constants.ANNEE_BASE
@@ -132,9 +132,11 @@ _L = {
     "rupture_nomen": {"fr": "nouvelle nomenclature du\ntableau A (2020), série continue",
                       "ar": "تبويب جديد للجدول أ (2020)، سلسلة متصلة"},
     "y_cour": {"fr": "Millions de dinars courants", "ar": "ملايين الدنانير الجارية"},
-    "y_cst": {"fr": f"Millions de dinars de {BASE}", "ar": f"ملايين الدنانير بأسعار {BASE}"},
     "vue_cour": {"fr": "Dinars courants", "ar": "بالدينار الجاري"},
-    "vue_cst": {"fr": f"Dinars de {BASE}", "ar": f"بدينار سنة {BASE}"},
+    "vue_dep": {"fr": "Part des dépenses de l'État", "ar": "حصة نفقات الدولة"},
+    "vue_pib": {"fr": "Part du PIB", "ar": "حصة الناتج المحلي الإجمالي"},
+    "y_dep": {"fr": "En % des dépenses de l'État hors service de la dette",
+              "ar": "% من نفقات الدولة دون خدمة الدين"},
     # fig_perception
     "lg_taux_total": {"fr": "Taux de perception implicite : rubrique / ensemble des importations",
                       "ar": "نسبة الاستخلاص الضمنية: الخانة / مجموع الواردات"},
@@ -173,7 +175,8 @@ _L = {
     "col_code": {"fr": "Article du tableau A", "ar": "فصل الجدول أ"},
     "col_lib": {"fr": "Libellé de la source", "ar": "تسمية المصدر"},
     "col_md": {"fr": "Millions de dinars courants", "ar": "ملايين الدنانير الجارية"},
-    "col_cst": {"fr": f"Millions de dinars de {BASE}", "ar": f"ملايين الدنانير بأسعار {BASE}"},
+    "col_part_dep": {"fr": "En % des dépenses de l'État", "ar": "% من نفقات الدولة"},
+    "col_part_pib": {"fr": "En % du PIB", "ar": "% من الناتج المحلي الإجمالي"},
     "col_trace": {"fr": "Tracée", "ar": "مرسومة"},
     "col_src": {"fr": "Source", "ar": "المصدر"},
     "col_page": {"fr": "Page", "ar": "الصفحة"},
@@ -465,12 +468,6 @@ def fig_pib():
 
 # --- 3. Droits et redevance : prévisions et réalisations ------------------------------------
 
-def _constants(annees, valeurs) -> list[float]:
-    ipc = dinars_constants.ipc()
-    return [round(v * ipc[BASE] / ipc[a], 1) if (a in ipc and a <= BASE) else float("nan")
-            for a, v in zip(annees, valeurs)]
-
-
 def _series_rendement() -> dict[str, pd.Series]:
     """{('prevision'|'realisation', 'droits'|'redevance'): Série annuelle en MD courants}.
 
@@ -491,42 +488,76 @@ def _series_rendement() -> dict[str, pd.Series]:
 
 def table_rendement() -> pd.DataFrame:
     df = _releve_rendement()
-    cst = _constants(df["annee"], df["valeur_md"])
     out = df.copy()
-    out["cst"] = cst
+    for cle, mode in (("part_dep", "dep"), ("part_pib", "pib")):
+        den = _denominateur_annuel(mode)
+        out[cle] = [round(v / den[a] * 100, 2) if a in den.index and pd.notna(den[a]) else float("nan")
+                    for a, v in zip(df["annee"], df["valeur_md"])]
     out["ligne"] = [_LIGNES[x].get(figtools.lang(), _LIGNES[x]["fr"]) for x in df["ligne"]]
     out = out[["annee", "nature", "ligne", "nomenclature", "code_article", "libelle_source",
-               "valeur_md", "cst", "trace", "source", "localisateur", "remarque"]]
+               "valeur_md", "part_dep", "part_pib", "trace", "source", "localisateur", "remarque"]]
     out.columns = [_l(k) for k in ("col_annee", "col_nature", "col_ligne", "col_nomen",
-                                   "col_code", "col_lib", "col_md", "col_cst", "col_trace",
+                                   "col_code", "col_lib", "col_md", "col_part_dep", "col_part_pib", "col_trace",
                                    "col_src", "col_page", "col_rem")]
     return out
 
 
-def _trace_rendement(constants: bool, fin: int):
+def _denominateur_annuel(mode: str) -> pd.Series:
+    d = _denominateurs()
+    return d["depenses_etat_hors_dette_MDT"] if mode == "dep" else d["pib_MDT"]
+
+
+def _valeurs(serie: pd.Series, mode: str) -> pd.Series:
+    """Montant en MD courants (mode « cour ») ou en % du dénominateur de la même année."""
+    if mode == "cour":
+        return serie
+    den = _denominateur_annuel(mode)
+    idx = [a for a in serie.index if a in den.index and pd.notna(den[a])]
+    return (serie.loc[idx] / den.loc[idx] * 100)
+
+
+def _runs_pib(annees) -> list[list[int]]:
+    """Années consécutives d'une même base de PIB : jamais deux bases chaînées."""
+    seg = _denominateurs()["segment_pib"]
+    runs: list[list[int]] = []
+    for a in sorted(annees):
+        if runs and a - runs[-1][-1] == 1 and seg.get(a) == seg.get(runs[-1][-1]):
+            runs[-1].append(a)
+        else:
+            runs.append([a])
+    return runs
+
+
+def _trace_rendement(mode: str, fin: int):
     figtools.apply_lang_font()
     s = _series_rendement()
     fig, ax = plt.subplots(figsize=(9.5, 5.4))
+    unite = {"cour": "MD", "dep": "% des dépenses", "pib": "% du PIB"}[mode]
     for ligne, cle, couleur in (("droits", "lg_droits", ROUGE), ("redevance", "lg_redevance", VIOLET)):
-        prev = s[("prev", ligne)]
+        prev = _valeurs(s[("prev", ligne)], mode)
         prev = prev[prev.index <= fin]
-        reel = s[("real", ligne)]
+        reel = _valeurs(s[("real", ligne)], mode)
         reel = reel[reel.index <= fin]
-        pv = _constants(prev.index, prev.values) if constants else list(prev.values)
-        rv = _constants(reel.index, reel.values) if constants else list(reel.values)
-        ax.plot(list(prev.index), pv, "-", color=couleur, lw=1.8, zorder=2)
-        for a, v in zip(prev.index, pv):
+        runs = _runs_pib(prev.index) if mode == "pib" else [list(prev.index)]
+        for run in runs:
+            ax.plot(run, [prev[a] for a in run], "-", color=couleur, lw=1.8, zorder=2)
+        for a, v in prev.items():
             pt, = ax.plot([a], [v], "o", color=couleur, ms=3, zorder=3)
-            figtools.infobulle(pt, f"{a} · {_l(cle)}, {_l('prev')} : {_nb(v)} MD")
-        for a, v in zip(reel.index, rv):
+            figtools.infobulle(pt, f"{a} · {_l(cle)}, {_l('prev')} : {_nb(v, 1 if mode == 'cour' else 2)} {unite}")
+        for a, v in reel.items():
             pt, = ax.scatter([a], [v], s=48, facecolors="white", edgecolors=couleur,
                              linewidths=1.6, zorder=4),
-            figtools.infobulle(pt, f"{a} · {_l(cle)}, {_l('real')} : {_nb(v)} MD")
+            figtools.infobulle(pt, f"{a} · {_l(cle)}, {_l('real')} : {_nb(v, 1 if mode == 'cour' else 2)} {unite}")
     figtools.marque_rupture(ax, ANNEE_NOMENCLATURE, figtools.fig_text(_l("rupture_nomen")))
-    _cadre(ax, "", _l("y_cst") if constants else _l("y_cour"), 2001, fin)
+    if mode == "pib":
+        for a in RUPTURES_PIB:
+            if 2001 < a <= fin:
+                figtools.marque_rupture(ax, a)
+    ylabel = {"cour": _l("y_cour"), "dep": _l("y_dep"), "pib": _l("y_pib")}[mode]
+    _cadre(ax, "", ylabel, 2001, fin)
     ax.set_title("")
     ax.set_ylim(bottom=0)
-    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0)))
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0 if mode == "cour" else 1)))
     poignees = [Line2D([], [], color=ROUGE, lw=1.8, marker="o", ms=3,
                        label=figtools.fig_text(_l("lg_droits"))),
                 Line2D([], [], color=VIOLET, lw=1.8, marker="o", ms=3,
@@ -541,9 +572,11 @@ def _trace_rendement(constants: bool, fin: int):
 
 
 def fig_rendement():
-    """Deux vues : dinars courants (2001-2026) ; dinars de l'année de base (2001-2025)."""
-    return [(_l("vue_cour"), _trace_rendement(False, 2026)),
-            (_l("vue_cst"), _trace_rendement(True, BASE))]
+    """Trois vues : dinars courants (2001-2026) ; part des dépenses de l'État et part du PIB,
+    prévisions et réalisations de l'année rapportées au dénominateur de la même année (2001-2025)."""
+    return [(_l("vue_cour"), _trace_rendement("cour", 2026)),
+            (_l("vue_dep"), _trace_rendement("dep", 2025)),
+            (_l("vue_pib"), _trace_rendement("pib", 2025))]
 
 
 # --- 4. Taux de perception implicite et moyennes simples ------------------------------------
