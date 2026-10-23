@@ -227,6 +227,13 @@ main table td[style*="text-align: right"],
 .tableau-engendre td:first-child {
   white-space: nowrap;
 }
+// Exception pour un tableau engendré dont la première colonne porte un libellé de plusieurs
+// mots (« Licenciement pour cause réelle et sérieuse ») : la classe `libelle-long`, posée sur
+// le tableau, lui rend le retour à la ligne.
+.tableau-engendre .libelle-long td:first-child {
+  white-space: normal;
+  hyphens: manual;
+}
 
 
 // Bouton « Tout déplier » (voir legendes.html) : discret, en tête de page.
