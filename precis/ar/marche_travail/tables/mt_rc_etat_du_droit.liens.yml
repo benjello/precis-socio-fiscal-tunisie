@@ -1,0 +1,24 @@
+- libelle: أجل الإعلام، الأجراء غير الخالصين بالشهر
+  parametre: parameters/marche_travail/rupture_contrat/preavis/duree_salaries_non_mensuels.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.preavis.duree_salaries_non_mensuels/table/
+- libelle: مكافأة نهاية الخدمة، الأقدمية الدنيا
+  parametre: parameters/marche_travail/rupture_contrat/gratification_fin_service/anciennete_minimale.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.gratification_fin_service.anciennete_minimale/table/
+- libelle: أجل الإعلام بإنهاء عقد الشغل لمدة غير معينة
+  parametre: parameters/marche_travail/rupture_contrat/preavis/duree.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.preavis.duree/table/
+- libelle: غرم الضرر عن الطرد التعسفي، الحد الأدنى عن كل سنة أقدمية
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/minimum_par_annee_anciennete.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.minimum_par_annee_anciennete/table/
+- libelle: غرم الضرر عن الطرد التعسفي، الحد الأقصى عن كل سنة أقدمية
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/maximum_par_annee_anciennete.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.maximum_par_annee_anciennete/table/
+- libelle: غرم الضرر عن الطرد التعسفي، السقف
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/plafond.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.plafond/table/
+- libelle: غرم الضرر عن خرق الإجراءات، الحد الأدنى
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/vice_procedure_minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.vice_procedure_minimum/table/
+- libelle: غرم الضرر عن خرق الإجراءات، الحد الأقصى
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/vice_procedure_maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.vice_procedure_maximum/table/
