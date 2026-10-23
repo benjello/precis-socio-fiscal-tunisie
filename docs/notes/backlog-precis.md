@@ -1181,8 +1181,8 @@ liste qui suit le tableau, citations comprises. Restent :
 
 ## Rémunérations publiques
 
-- **Rémunération des dirigeants d'entreprises publiques — rédigée le 23 octobre 2026 (non commitée
-  avant relecture ; branche `rediger/remuneration-dirigeants`).** Sous-section « Les dirigeants »
+- **Rémunération des dirigeants d'entreprises publiques — rédigée le 23 octobre 2026 (commitée,
+  à relire ; branche `rediger/remuneration-dirigeants`).** Sous-section « Les dirigeants »
   du régime conventionnel public (`#sec-conventionnel-dirigeants`, domicile unique), d'après
   `docs/notes/remunerations-decret-2015-2217.md` et
   `docs/notes/remunerations-publiques-dirigeants-plan-architecte.md` : grille de 2014 à 2015, deux
@@ -1202,10 +1202,14 @@ liste qui suit le tableau, citations comprises. Restent :
     parcouru (fiche `r-dirigeants-ep-categorie-exceptionnelle-2006-2010`) ;
   - **décret n° 90-1855** (JORT n° 75 de 1990, pp. 1752-1753) : scan sans couche texte, **OCR
     nécessaire** (`1990/fr/Jo07590.pdf`) pour décrire le régime de 1990 et savoir si la double
-    modalité ou l'exclusivité y figuraient ; décrets n° 78-885, 84-865, 92-1 et 2006-2564 et
-    circulaire n° 78-45, connus par leur intitulé : **lisibles dans le corpus**, à lire ;
+    modalité ou l'exclusivité y figuraient ; décrets n° 78-885, 84-865 et 92-1 et circulaire
+    n° 78-45, connus par leur intitulé : fascicules (`1978/fr/Jo06878.pdf`, `1979/fr/Jo00279.pdf`,
+    `1984/fr/Jo04684.pdf`, `1992/fr/Jo00492.pdf`) sans couche texte, **OCR nécessaire** ; décret
+    n° 2006-2564 (`2006/fr/Jo0802006.pdf`) : **lisible dans le corpus**, à lire ;
   - **circulaire n° 04 du 10 mars 2021** : introuvable en ligne, probablement hors JORT, **à obtenir** ;
-  - **liste nominative des « banques publiques »** (décrets n° 2013-4953 et 2015-968) : non établie ;
+  - **liste nominative des « banques publiques »** (décrets n° 2013-4953 et 2015-968) : non établie,
+    **à obtenir** (les visas du décret n° 2013-4953 citent les textes d'organisation de la BNA, de
+    la BH, de la STB, de la BFPME et de la BTS, entre autres) ;
     régime applicable avant le 15 août 2015 aux directeurs généraux des banques publiques :
     **lisible dans le corpus** (décret n° 90-1855, à océriser, et décret n° 2014-12) ;
   - **dates d'effet** des décrets n° 2014-12, 2017-1387 et 2020-422 : colophon des fascicules,
@@ -1218,7 +1222,7 @@ liste qui suit le tableau, citations comprises. Restent :
   - **séries** : aucune revalorisation des montants de 2015 trouvée jusqu'au 2 octobre 2026
     (constat de recherche) ; **effectifs de dirigeants par catégorie et coût budgétaire** : aucune
     source, **à obtenir** ;
-  - **Zotero** : six notices à verser (`docs/notes/biblio-a-rapatrier.md`).
+  - **Zotero** : sept notices à verser ou à corriger (`docs/notes/biblio-a-rapatrier.md`).
 
 - **Régime indiciaire converti aux principes de présentation — 8 octobre 2026 (non commité, à
   relire).** `_regime_indiciaire.qmd` suit `docs/notes/remunerations-regime-indiciaire-plan-architecte.md` :
