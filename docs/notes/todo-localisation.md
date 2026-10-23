@@ -94,7 +94,7 @@ Quatre avertissements, tous rencontrés en établissant ce tableau :
 | n° 60-33 | 1960 n°57 | 1616 | `retraites/index.qmd:32` |
 | n° 60-33 | 1960 n°8 | 0213-0214 | `retraites/index.qmd:32` |
 | n° 65-17 | 1965 n°3 | 0048 | `cotisations_sociales/index.qmd:365` |
-| n° 65-17 | 1965 n°34 | 0787 | `cotisations_sociales/index.qmd:365` |
+| n° 65-17 | 1965 n°34 (PDF : n° 32) | 0787 | `cotisations_sociales/index.qmd:365` |
 | n° 72-230 | 1972 n°29 | 0995-1003 | `remunerations_publiques/_regime_statutaire_autonome.qmd:96` |
 | n° 74-499 | 1974 n°30 | 0915-0919 | `cotisations_sociales/index.qmd:204` |
 | n° 74-499 | 1974 n°39 | 1252 | `cotisations_sociales/index.qmd:204` |
