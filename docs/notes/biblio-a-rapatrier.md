@@ -6,6 +6,13 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Versement du 23/10/2026 (régimes spéciaux, compléments, bibliographe)
+
+Sources : `docs/notes/regimes-speciaux-*.md` ; volume `remunerations_publiques`, FR et AR, à la main. Douze notices créées, URL lues sur `jort_cache.db` (`pdf_fr` pour le FR, `pdf_ar` du même enregistrement pour l'AR) : `loi72-67` (tribunal administratif ; JORT n° 32, pp. 1092-1094), `decret84-751`, `decret84-752`, `decret84-754`, `decret84-756` (grilles de 1984, JORT n° 47), `decret88-908` (logement des militaires, JORT n° 33, p. 743 ; rectificatif n° 36, pp. 788-789), `decret2002-323` (Cour des comptes), `decret2002-1048` (tribunal administratif), `decret2011-2093` (Cour des comptes), `decret2011-2094` (tribunal administratif), `decret2012-3552`, `decret2013-1401`.
+- Pages de l'édition arabe non relevées ; intitulé arabe non relevé (intitulé français provisoire) sauf `decret2011-2093` et `decret2011-2094`, dont l'intitulé arabe vient de `jort_cache.db`. Pages des deux décrets de 2011 absentes de la base. L'intitulé français de ces deux décrets est une traduction de l'arabe (édition française non lue).
+- **À faire** : verser ces douze notices dans Zotero (`citation-key` en Extra) et les ranger dans la collection du volume ; lire les pages arabes et les intitulés arabes. Rien poussé.
+- Contrôle : toutes les clés citées par le chapitre statutaire et par les notes `regimes-speciaux-*` résolvent ; `push_biblio.py --verifier` : 0 perte.
+
 ## Fusion des clés en doublon (23/10/2026)
 
 Vingt textes portaient deux ou trois clés. Chaque clé supprimée est remplacée par la clé gardée dans les `.qmd` français, `precis/glossaire.yml`, les générateurs, les tableaux et CSV engendrés et le cache de séries ; la notice fondue garde les deux notes et, quand les pages diffèrent, la plus petite page dans le champ `page` (les autres dans la note). Dans `precis/ar/references.json`, chaque clé supprimée subsiste comme alias « TRANSITOIRE » tant que les `.qmd` arabes la citent ; à retirer après leur retraduction. À supprimer de Zotero : les clés de la colonne « supprimée ». Le dépôt `tunisia-data` porte encore les anciennes clés dans deux transcriptions (`sources/transcriptions/jort-lf-caisse-transports-routiers.csv`, `sources/transcriptions/jort-lf-credits-programmes-incitations.csv`, et le catalogue qui en dérive) : à aligner avant le prochain export du cache.
