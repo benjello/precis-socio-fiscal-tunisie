@@ -67,6 +67,12 @@
     couverture: 'Relance du 24 septembre 2026, textes publiés depuis le 1er janvier 2024 : jort_cache mis à jour jusqu''au 18 septembre 2026 (FTS, LIKE, intitulés arabes) ; plein texte du corpus local après le téléchargement du 24 septembre 2026, jusqu''au n° 93 de 2026 (2024 : 145 FR, 156 AR ; 2025 : 151 FR, 154 AR ; 2026 : 87 FR, 88 AR). Complément pist.tn : 2024 n° 123 et 145, 2025 n° 47 (AR), 142 et 143, 2026 n° 66, 69 et 85, inconnus de jort_cache et absents du corpus, téléchargés et parcourus avec la normalisation de l''outil (témoins positifs : JORT n° 149/2024 et 80/2026, éd. ar.). Lacunes : n° 58 de 2026, inconnu de jort_cache, absent du corpus, 404 sur pist.tn dans les deux éditions ; rien après le n° 93 de 2026 (n° 94 : 404). Lus dans une seule édition : en français seulement 2024 n° 9 et 2026 n° 3 ; en arabe seulement 2024 n° 11-13, 75, 94, 109, 112-113, 118, 120, 125, 149, 2025 n° 29, 47, 77, 2026 n° 11 et 13 ; fichier français identique à l''arabe (pist.tn sert le même fichier aux deux adresses) : 2024 n° 8, 130, 145 ; 2025 n° 4, 88, 90, 95, 96, 148 ; 2026 n° 10, 62, 76. Les n° 107 de 2026 et 203 de 2025 que la relance dit absents sont des erreurs de numéro de jort_cache (n° 7 de 2026 et n° 102 de 2025, lus). Candidats lus au fascicule : loi n° 2024-48 (loi de finances pour 2025), JORT n° 149 du 10 décembre 2024, éd. ar. seule (éd. fr. 404) : art. 15 (p. 6420), qui crée le fonds de protection sociale des travailleuses agricoles, géré par la CNSS, et renvoie à un décret son fonctionnement et ses interventions, art. 16 (p. 6421), exonération d''impôt des revenus des bénéficiaires ; aucun taux de pension. Homonymes « 2024-4 » ou « 4 لسنة 2024 » écartés : loi organique n° 2024-4 du 18 janvier 2024 (extradition, n° 9/2024, visée au n° 16/2024), procès-verbal n° 4 de l''ISIE du 27 février 2024 (n° 34/2024, repris aux n° 145/2024 et 143/2025), arrêtés de la commission de lutte contre le terrorisme n° 2024-4 (n° 6/2024 et 116/2024), décret n° 2024-4 de nomination (n° 6/2024). Miroir iort : seul le décret-loi lui-même. Aucun décret d''application de l''article 33.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local, presse]
+    couverture: 'Relance du 23 octobre 2026, textes publiés depuis le 19 septembre 2026 : jort_cache (dernière publication indexée le 2 octobre 2026), 0 candidat ; seconde voie LIKE sur titres et objets (« travailleuses agricoles », « femmes rurales », « الفلاحيات », « الحماية الاجتماعية للعاملات ») depuis le 1er octobre 2024 : seuls le décret-loi et la loi n° 2024-48 ; miroir iort (124 fichiers datés de 2026 ou après), 0 candidat ; plein texte du corpus local, JORT n° 94 à 97 de 2026 (FR 94, 95, 97 ; n° 96 lu en arabe seulement, le fichier français étant l''arabe), 0 occurrence. Lacunes : n° 58 de 2026 toujours absent du corpus ; liste des fascicules parus après le 2 octobre 2026 inconnue localement. Presse (secondaire) : Mosaïque FM, 5 décembre 2025 (propos d''un responsable associatif : exécution retardée « في ظل غياب الأوامر التطبيقية ») ; Kapitalis, 15 février 2026 (décret-loi « دون تفعيل فعلي » plus d''un an après sa publication, sans mention des textes d''application). Note : docs/notes/cotisations-decret-loi-2024-4.md.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
   - 'lire le JORT n° 58 de 2026 : inconnu de jort_cache, absent du corpus local, et pist.tn répond 404 dans les deux éditions (24 septembre 2026) ; le n° 59 commence p. 1129'
   - 'lire les numéros postérieurs au n° 93 de 2026 : jort_cache s''arrête au 18 septembre 2026, et le n° 94 répond 404 sur pist.tn (24 septembre 2026)'
@@ -2611,9 +2617,27 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
-  - lire les montants des articles « octroi de la garantie de l'État » des lois de finances de 1961 à 1994 (série légale du plafond)
   - ouvrir les rapports annuels de la Banque centrale et les lois de règlement pour les transferts, les revenus de participations et les recettes de privatisation
   - dépouiller le rapport de la Cour des comptes sur la dette publique extérieure (2018)
+
+- id: r-ep-plafond-garantie-1995-2015
+  objet: article de chaque loi de finances qui fixe le plafond de la garantie de l'État de 1995 à 2015, article de la loi de finances pour 1960 et texte de 1957-58, et lois de finances complémentaires de 1969 à 1991 dont l'index ne détaille pas les articles
+  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-garanties-plafond-legal]
+  requetes:
+    titres_like: ['%garantie de l''Etat%', '%octroi de la garantie%']
+    iort_ar: [ضمان الدولة]
+    depuis: 1957-01-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, titres : une notice par article « octroi de la garantie de l''Etat » de 1958-59 à 1994 (lois n° 58-45 à 93-125), articles lus dans les fascicules français du corpus local le 23 octobre 2026 (reconnaissance de caractères ; relus à l''image pour les gestions 1963, 1966, 1969, 1975, 1979 et 1985) ; pour 1995 et après, l''index ne détaille plus les articles et aucun plafond n''est lu. Le fascicule de 1957 qui porte le décret du 29 juin 1957 (budget ordinaire 1957-58, JORT n° 52, 1957F/Jo15257.pdf) n''est pas dans le corpus local. Aucune notice de loi de finances n''est indexée pour la gestion 1960. Lois de finances complémentaires de 1969, 1973, 1980, 1982, 1983, 1984, 1986, 1988, 1989 et 1991 : intitulés des articles indexés, aucun ne porte sur la garantie ; textes non lus en entier.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire l'article sur la garantie de chaque loi de finances de 1995 à 2015, dans les fascicules du corpus local
+  - lire en entier les lois de finances complémentaires de 1969 à 1991 pour y chercher une modification du plafond
+  - chercher la gestion 1960 et le décret du 29 juin 1957 (fascicule à obtenir sur pist.tn)
 
 - id: r-ep-annexes-plf-2026
   objet: rapports du ministère des Finances annexés au projet de loi de finances pour 2026 — rapport sur les entreprises publiques (annexe n° 9) et rapport sur les transferts et les garanties (annexe n° 8)
@@ -3405,7 +3429,7 @@
 
 - id: r-educ-lois-reglement-tableaux-par-chapitre
   objet: tableaux annexés aux lois portant règlement du budget de l'État (tableau n° 2, dépenses payées par chapitre), qui donneraient les dépenses exécutées des ministères de l'Éducation, de l'Enseignement supérieur et de la Formation professionnelle
-  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-collectivites]
   requetes:
     titres_fts: ['"reglement du budget"']
     titres_like: ['%reglement du budget%']
@@ -3424,7 +3448,7 @@
 
 - id: r-educ-lois-reglement-2021-et-apres
   objet: loi portant règlement du budget de l'État pour les gestions 2021 et suivantes
-  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-collectivites]
   requetes:
     titres_fts: ['"reglement du budget"']
     titres_like: ['%reglement du budget%', '%règlement du budget%']
@@ -3477,7 +3501,7 @@
 
 - id: r-educ-collectivites-depense-education
   objet: 'dépense d''éducation des communes et des conseils régionaux (construction, entretien et équipement des écoles) : établir si leurs budgets et leurs comptes, exposés au chapitre « Budgets et comptes » du livre des finances locales (precis/fr/finances_locales/_budgets.qmd), permettent de l''isoler, et sur quelles années'
-  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-collectivites]
   requetes:
     titres_fts: [nomenclature AND budget AND collectivites, budget AND communes AND ecoles]
     titres_like:
@@ -3494,10 +3518,15 @@
     couverture: 'intitulés seuls (jort_cache, FTS et LIKE ; miroir iort, termes arabes), du 1958-01-01 au 2026-10-02, par recherches.py relancer --sans-plein-texte : répondent le décret gouvernemental n° 2020-52 du 23 janvier 2020 (modèle de la nomenclature budgétaire des communes) et sa modification, le décret gouvernemental n° 2020-439 du 14 juillet 2020, ainsi que des lois de finances de 2009 à 2019 (terme « صيانة المدارس ») ; aucun de ces textes n''est lu. Ni la nomenclature des conseils régionaux, ni les comptes des communes, ni le chapitre « Budgets et comptes » du livre des finances locales ne sont examinés ; plein texte du corpus local non parcouru.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [corpus_local, jort_cache]
+    couverture: 'lecture du décret gouvernemental n° 2020-52 et de son modèle annexé (JORT n° 9 de 2020, édition arabe, pp. 368-397, couche texte ; pp. 392-393 à l''image) : un article d''interventions dans l''enseignement et la formation (03.303), des revenus des jardins d''enfants (4101, 4201), aucune rubrique de construction ni d''entretien des écoles ; décret n° 2020-439 (JORT n° 71 de 2020, pp. 1575-1576) : seulement le remboursement du principal ; fichiers par commune de la DGCT, au niveau de l''article en 2022 et 2023 seulement ; non lus : nomenclature des conseils régionaux, nomenclature communale antérieure à 2020 (arrêté du 31 mars 2008, arrêté du 6 novembre 1975), plein texte du corpus local'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
-  - 'lire le décret gouvernemental n° 2020-52 (et le n° 2020-439) : la nomenclature budgétaire des communes a-t-elle une rubrique propre à l''enseignement ou aux écoles ?'
-  - 'lire precis/fr/finances_locales/_budgets.qmd et ses séries : une dépense d''éducation des communes ou des conseils régionaux y est-elle isolable, et sur quelles années ?'
-  - nomenclature budgétaire des conseils régionaux, et nomenclature des communes antérieure à 2020
+  - 'nomenclature budgétaire des conseils régionaux (arrêté du 31 mars 2008), et nomenclature des communes antérieure à 2020 (arrêtés de 1975 et de 2008) : les articles 3303 et 4101 existaient-ils ?'
+  - 'budgets des communes par article avant 2022 : non publiés par la DGCT (sections seules)'
   - plein texte du corpus local (relancer sans --sans-plein-texte)
 
 - id: r-educ-passage-septieme
@@ -3858,6 +3887,198 @@
     resultat: aucun
   a_faire:
   - océriser les fascicules 1966-1970 à la recherche d'un décret d'application de l'art. 21 ; le décret n'a peut-être jamais été pris, le code organisant lui-même la commission
+
+- id: r-cnrps-fonds-retraite-avant-age-2009-taux
+  objet: décrets fixant les pourcentages des ressources du fonds de financement des mesures exceptionnelles de mise à la retraite (LFC 2009, art. 3) pour 2009, 2011 et 2012, autres que le décret n° 2011-932 (année 2010)
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-retraite-avant-age-2009]
+  requetes:
+    titres_fts: ['"mesures exceptionnelles" retraite']
+    titres_like: ['%mesures exceptionnelles de mise%', '%avant l%ge l%gal%']
+    iort_ar: [تمويل الإجراءات الاستثنائية, الإجراءات الاستثنائية للإحالة, التقاعد قبل]
+    depuis: 2009-07-10
+  periode:
+    jusqu_au: 2016-12-31
+    motif: les taux de 2010 ont été fixés en juillet 2011 ; un décret pour 2011 ou 2012 peut paraître plusieurs années après
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache (dernière notice publiée le 2026-10-02), intitulés français (LIKE, FTS) et arabes (LIKE sur titre), toutes années : seul le décret n° 2011-932 (JORT n° 52/2011, p. 1252, lu) ; « التقاعد قبل » rend la loi n° 2017-51, le décret gouvernemental n° 2017-825, la LF 2022 (art. 14) et la LF 2025 (art. 14), hors objet. Miroir iort non interrogé ; plein texte non cherché.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-banque-donnees-2014-1526-suite
+  objet: texte prolongeant à nouveau, modifiant ou abrogeant le décret n° 2014-1526 (unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité) après le décret gouvernemental n° 2018-626, dont la prolongation d'un an court jusque vers mai 2019
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#r-nc-li-2018]
+  requetes:
+    titres_fts: ['"banque de donnees" AND necessiteuses']
+    titres_like: ['%1526%2014%', '%banque de donnees sur les familles%', '%unite de gestion par objectifs%']
+    iort_ar: [بنك معطيات, العائلات المعوزة ومحدودة الدخل, وحدة تصرف حسب الأهداف]
+    depuis: 2018-08-07
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, notices publiées de 2014 au 2 octobre 2026 ; LIKE sur titre et objet (« %1526%2014% »), LIKE sur titre (« %banque de donnees sur les familles% »), LIKE sur titre, deux conditions jointes par AND (« %unite de gestion par objectifs% » et « %affaires sociales% »), FTS « "banque de donnees" AND necessiteuses », LIKE arabe sur les titres de l''index (« %بنك معطيات% », « %العائلات المعوزة ومحدودة الدخل% », « %وحدة تصرف حسب الأهداف%الشؤون الاجتماعية% »), 2018-2026 pour ce dernier. Résultats : décrets n° 2014-1526 et 2018-626, décret n° 2018-400 (autre unité), art. 96 de la loi n° 2025-17 (fonds des orphelins). Miroir iort non interrogé ; plein texte des fascicules non parcouru ; fascicules inconnus de la base non sondés. Note : docs/notes/prestations-2018-626-lf2025-art26.md, § 1.4.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [rejouer les termes arabes sur le miroir iort ; parcourir le plein texte 2018-2020]
+
+- id: r-lf2026-art71-81-arretes
+  objet: arrêtés conjoints d'application des art. 71 (150 D pour l'achat d'un lecteur de glycémie sans piqûre, enfants diabétiques des familles pauvres et à revenu limité inscrites à l'Amen social) et 81 (150 D par mois, enfants atteints de troubles du spectre autistique, mêmes familles) de la loi n° 2025-17, loi de finances pour 2026
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#sec-nc-aides-categorielles]
+  requetes:
+    titres_fts: [glycemie, diabetiques, autistique, autisme]
+    iort_ar: [التوحد, السكري, نسبة السكر]
+    plein_texte: [glycémie, autisti, طيف التوحد, مرض السكري, نسبة السكر]
+    depuis: 2025-12-12
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, notices de 2025 et 2026 publiées jusqu''au 2 octobre 2026 : FTS « glycemie », « diabetiques », « autistique », « autisme » sans résultat ; LIKE arabe sur les titres de l''index (« %التوحد% », « %السكري% », « %نسبة السكر% ») : seuls les articles 36, 71 et 81 de la loi n° 2025-17. Plein texte du corpus local 2026 jusqu''au n° 97 (2 octobre 2026) : 94 fascicules français (« glyc[ée]mie », « autisti », « spectre de l.autisme » ; manquent les n° 11, 13 et 58) et 95 arabes après NFKC (« طيف التوحد », « مرض السكري », « نسبة السكر » ; manquent les n° 3 et 58). Seul résultat hors de la loi : décret n° 2026-192 du 27 juillet 2026 (JORT n° 76, AR p. 1600), programme d''intégration des enfants autistes en jardin d''enfants, qui n''applique pas l''art. 81. Miroir iort non interrogé. Note : docs/notes/prestations-2018-626-lf2025-art26.md, § 6.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [rejouer les termes arabes sur le miroir iort ; lire les fascicules postérieurs au n° 97]
+
+- id: r-dl2024-4-cotisations
+  objet: décret fixant les modalités, conditions et procédures d'affiliation aux régimes du décret-loi n° 2024-4 (art. 19 et 22, CNSS) et la base de calcul et le paiement des cotisations de risques professionnels (art. 41, CNAM), ou tout texte fixant le taux ou l'assiette de leurs cotisations
+  ou:
+  - precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-travailleuses-agricoles
+  - precis/fr/cotisations_sociales/_accidents_travail.qmd#sec-cot-at-travailleuses-agricoles
+  requetes:
+    titres_fts: ['"travailleuses agricoles"', travailleuses OR ouvrieres]
+    titres_like: ['%travailleuses agricoles%', '%femmes rurales%']
+    iort_ar: [العاملات الفلاحيات, عاملات الفلاحيات, الحماية الاجتماعية للعاملات]
+    plein_texte: [2024-4, العاملات الفلاحيات, 4 لسنة 2024, عاملات الفلاحيات]
+    depuis: 2024-10-23
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'jort_cache (dernière publication indexée le 2 octobre 2026) : FTS « travailleuses OR ouvrieres » depuis le 1er janvier 2024 et LIKE sur titres et objets (« travailleuses agricoles », « femmes rurales », « الفلاحيات », « الحماية الاجتماعية للعاملات ») depuis le 1er octobre 2024 : seuls le décret-loi n° 2024-4 et la loi n° 2024-48 (art. 15-16) ; miroir iort et plein texte des n° 94-97 de 2026 par la relance de r-dl2024-4-art33 (0 candidat). Pour la période antérieure au 19 septembre 2026, le plein texte FR/AR des fascicules de 2024 au n° 93 de 2026 a été parcouru avec les mêmes termes par les passes de r-dl2024-4-art33 des 23 et 24 septembre 2026 (autre passage). Lacune : n° 58 de 2026, absent du corpus et 404 sur pist.tn au 24 septembre 2026.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [lire le JORT n° 58 de 2026, relancer après mise à jour de jort_cache au-delà du 2 octobre 2026]
+
+- id: r-decret-2015-2217-application
+  objet: textes d'application, modificatifs ou dérogations du décret gouvernemental n° 2015-2217 du 11 décembre 2015 (rémunération des chefs d'entreprises publiques) — en particulier le décret gouvernemental fixant la liste des entreprises classées en catégorie exceptionnelle (art. 2, dernier alinéa), les arrêtés de classement et l'arrêté sur la commission de classement
+  ou: [precis/fr/remunerations_publiques/_regime_conventionnel.qmd#sec-conventionnel-dirigeants]
+  requetes:
+    titres_fts: [remuneration AND chefs, exceptionnelle AND categorie AND (entreprises OR societes)]
+    titres_like: ['%2217%', '%categorie exceptionnelle%', '%catégorie exceptionnelle%']
+    iort_ar: [تأجير رؤساء, الصنف الاستثنائي]
+    plein_texte: [2015-2217, 2015- 2217, '20152217', 2217 لسنة 2015]
+    depuis: 2015-12-18
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas, web]
+    couverture: 'jort_cache : requêtes FTS et LIKE ci-dessus sur titre et objet (les motifs arabes par LIKE sur les titres de jort_cache, pas sur le miroir iort, non interrogé). Plein texte : tous les fascicules français de 2015 à 2026 (n° 97 de 2026) avec le motif 2015[-‑ ]*2217 ; fascicules arabes du n° 101 de 2015 au n° 97 de 2026 (1 343 fichiers) avec le motif « 2217 لسنة 2015 » après NFKC et retrait des marques bidirectionnelles. Une quarantaine de textes citent le décret, presque tous en visa ; une dérogation (2020-422, art. 3), une extension par renvoi (2017-1387, art. 1), aucun modificatif, aucune liste de catégorie exceptionnelle. Corps examinés : textes français relevés et quatorze textes connus par la seule édition arabe ; deux applications ou renvois trouvés en plus (2023-294, art. 16 ; 2017-985, art. 4 nouveau). Lacunes : édition française incomplète en 2018 (70 fascicules) et 2019 (59) contre une centaine en arabe, ces années reposent sur la recherche en arabe ; fascicules sans couche texte non dénombrés ; textes non publiés au JORT hors de portée.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - interroger le miroir iort avec les termes arabes
+  - dénombrer les fascicules 2016-2026 sans couche texte et les océriser si besoin
+
+- id: r-dirigeants-ep-categorie-exceptionnelle-2006-2010
+  objet: décret n° 2006-242 (2 ou 12 octobre 2006 selon les visas) fixant la liste des entreprises publiques et à majorité publique classées en catégorie exceptionnelle et l'indemnité complémentaire de leurs dirigeants, ses modificatifs n° 2009-188 du 31 juillet 2009, n° 2010-24 du 15 février 2010 et n° 2010-215 du 6 août 2010, et le décret n° 2009-187 du 31 juillet 2009 fixant les taux des éléments de rémunération des catégories G à C
+  ou: [precis/fr/remunerations_publiques/_regime_conventionnel.qmd#sec-conventionnel-dirigeants]
+  requetes:
+    titres_fts: [exceptionnelle AND categorie AND (entreprises OR societes), remuneration AND chefs]
+    titres_like: ['%categorie exceptionnelle%', '%catégorie exceptionnelle%']
+    iort_ar: [الصنف الاستثنائي, تأجير رؤساء]
+    depuis: 2006-01-01
+  periode:
+    jusqu_au: 2014-01-17
+    motif: le décret n° 2014-12 (JORT n° 5 du 17 janvier 2014), art. 9, abroge le décret n° 2009-187 et l'article 2 du décret n° 2006-242 modifié par le décret n° 2010-24
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache : recherche par numéro (2006-242, 2009-187, 2009-188, 2010-24, 2010-215 : aucun texte de ce numéro ne porte sur l''objet ; le n° 2009-187 de l''index est un décret du 26 janvier 2009 sur la jeunesse, le n° 2010-24 un congé pour création d''entreprise) ; balayage des décrets par date de signature (2 et 12 octobre 2006, 31 juillet 2009, 15 février 2010, 6 août 2010) sur les titres contenant entreprise, منشآت ou مؤسسات : rien ; requêtes FTS et LIKE ci-dessus. Plein texte des fascicules 2006-2014 non parcouru. Hypothèse non vérifiée : décrets non publiés.'
+    couvert_jusqu_au: 2014-01-17
+    resultat: aucun
+  a_faire:
+  - plein texte des fascicules 2006-2010 (FR et AR) sur les numéros et sur « catégorie exceptionnelle »
+  - interroger le miroir iort
+
+- id: r-modificatifs-decret-97-1368
+  objet: Textes modifiant le décret n° 97-1368 du 24 juillet 1997 (régime fiscal des produits 22-03 à 22-08)
+  ou: [precis/fr/fiscalite/_droits_consommation.qmd#sec-dc-boissons]
+  requetes:
+    titres_like: ['%97-1368%', '%1368%1997%', '%22-03 a 22-08%', '%22.03 a 22.08%', '%22.3 a 22.8%']
+    iort_ar: ['%1368 لسنة 1997%']
+    plein_texte: [97-1368, 97 - 1368, 1368 لسنة 1997, 1368.*1997]
+    depuis: 1997-07-24
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Notices jort_cache (titre et objet) du 1997-07-24 au 2026-10-02, dernière publication indexée (JORT n° 97 de 2026) ; plein texte des fascicules locaux 2016-2026, FR et AR, couche texte seulement (fascicules scannés non parcourus). Trouvés : décrets n° 2002-627, 2007-1977, 2013-929, 2015-1768 et 2022-545 ; rien après le JORT n° 71 de 2022.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: decret-pres-2022-545-capsule-vins
+  a_faire: [parcourir les fascicules scannés de 2016 à 2026 (océrisation) pour le motif 97-1368]
+
+- id: r-sante-tarifs-malades-payants-apres-2008
+  objet: arrêtés modifiant ou remplaçant l'arrêté du 19 décembre 1996 (tarifs de prise en charge des malades payants dans les structures sanitaires publiques) après l'arrêté du 7 juillet 2008, et arrêté du 25 janvier 1993 qu'il remplace
+  ou: [precis/fr/sante/_hopital.qmd#sec-hopital-tarifs-malades-payants]
+  requetes:
+    titres_like: ['%tarifs de prise en charge des malades%', '%tarifs des consultations et des hospitalisations%']
+    iort_ar: [تعريفة الاستشفاء بالهياكل الصحية العمومية, تعريفات التعهد بالمرضى الدافعين, المرضى الخاضعين لدفع مقابل]
+    plein_texte: [arrêté du 19 décembre 1996]
+    depuis: 1993-01-25
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache, titres français, du 1993-01-25 au 2026-10-02 : cinq arrêtés (25 janvier 1993 ; 19 décembre 1996 ; 17 avril 1998 ; 29 janvier 2003 ; 7 juillet 2008), aucun après 2008. Miroir iort (intitulés arabes) : aucun candidat, les termes arabes n''étant pas tirés d''un texte. Lacunes : 5337 notices de jort_cache n''ont qu''un intitulé arabe et ne sont pas atteintes par la requête française ; le visa de l''arrêté de 2008 ne cite que l''arrêté de 2003 comme modification antérieure ; textes de tarifs pris sous un autre intitulé (par exemple par établissement ou par acte) non cherchés ; plein texte non interrogé. Note : docs/notes/sante-tarifs-malades-payants-2026-10-23.md.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Passe du 23 octobre 2026 après élargissement : titres français de jort_cache du 1993-01-25 au 2026-10-02 (5 arrêtés, aucun après 2008) ; miroir iort, termes arabes tirés du titre arabe de l''arrêté de 1996 lu à l''image (المرضى الخاضعين لدفع مقابل) : 0 candidat ; plein texte du corpus local, terme « arrêté du 19 décembre 1996 » : 4 occurrences, toutes dans les fascicules de 1998 (n° 33) et de 2008 (n° 56) déjà lus. Lacunes : 5337 notices de jort_cache n''ont qu''un intitulé arabe ; fascicules sans couche texte exploitable ou absents du corpus (liste dans la sortie de la commande elargir, dont 1993 ar) ; fascicules dont la couche texte est décalée (comme 2003) non décodés par la recherche ; le visa de l''arrêté de 2008 ne cite que l''arrêté de 2003 comme modification antérieure. Note : docs/notes/sante-tarifs-malades-payants-2026-10-23.md.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-contribution-conjoncturelle-2026
+  objet: texte reconduisant pour 2026 la contribution des grandes entreprises (LF 2025, art. 38) ou la taxe conjoncturelle sur les banques et assurances (LF 2024, art. 64), ou instituant une contribution conjoncturelle au profit du budget de l'État pour 2026
+  ou: [precis/fr/fiscalite/_contributions_conjoncturelles.qmd#sec-ccj-etat-du-droit]
+  requetes:
+    titres_fts: [conjoncturelle, '"contribution exceptionnelle"']
+    titres_like: ['%conjonctur%']
+    iort_ar: [مساهمة ظرفية, معلوم ظرفي, المساهمة الظرفية, لفائدة ميزانية الدولة]
+    plein_texte: [ظرفي, مساهمة, 2024-48, 2023-13, الفصل 38, الفصل 64]
+    depuis: 2025-01-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'LF 2026 (loi n° 2025-17, JORT n° 148 du 12 décembre 2025, édition arabe seule ; le fichier « fr » du corpus est l''arabe) lue en couche texte normalisée NFKC : aucune occurrence des références des lois n° 48 de 2024 et n° 13 de 2023 (une seule, sans rapport : art. 85, renvoi aux art. 50 et 51 de la loi n° 48 de 2024), aucun renvoi aux art. 38 ou 64 de ces lois, aucune contribution « ظرفية » ; jort_cache : aucune loi de finances rectificative ni aucun titre « conjonctur » / « ظرفي » publiés du 13 décembre 2025 au 2 octobre 2026. Lacunes : fascicules 2026 inconnus de jort_cache (n° 4, 8, 20, 32, 38, 66, 69, 85, cf. outillage-sources § 1 f) non parcourus en plein texte ; tableaux de la LF 2026 non lus.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [relancer avec --sonder-pist ; parcourir en plein texte les fascicules 2026 inconnus de jort_cache]
+
+- id: r-fodec-modificatifs-2012-2026
+  objet: texte postérieur à la LF 2011 modifiant l'assiette, le taux ou les exonérations de la taxe au profit du fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat
+  ou: [precis/fr/fiscalite/_taxes_fonds_speciaux.qmd#sec-fst-etat-du-droit]
+  requetes:
+    titres_fts: ['"fonds de developpement de la competitivite"', '"taxe professionnelle"']
+    titres_like: ['%competitivite%']
+    iort_ar: [صندوق تنمية القدرة التنافسية, المعلوم المهني, القدرة التنافسية]
+    plein_texte: [compétitivité, القدرة التنافسية]
+    depuis: 2011-01-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Lois de finances 2012-2026 parcourues en couche texte (FR, ou AR normalisée NFKC) pour « compétitivité » / « القدرة التنافسية » : seules l''exonération de la LF 2022 (art. 63 § 3, jusqu''au 31/12/2022) et celle de la LF 2025 (art. 29), plus les lignes du tableau « B ». Décrets de liste hors couverture.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire le décret n° 2012-435 (AR
+  - à l'image) et les décrets de liste postérieurs ; relancer avec --sonder-pist
 
 - id: r-timbre-decret-1912
   objet: texte et tarif du décret organique sur le timbre du 20 avril 1912 (3 joumada I 1330), et tarifs du timbre antérieurs au décret n° 65-222 du 5 mai 1965 (LF 1961, art. 11 ; loi n° 58-45, art. 21 à 24)

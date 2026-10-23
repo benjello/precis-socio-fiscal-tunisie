@@ -6,6 +6,29 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Versement du 23/10/2026 (éducation, dépense des communes, bibliographe, temps 1)
+
+Source : `docs/notes/education-collectivites-2026-10-23.md`, § 6. Trois notices ajoutées à `precis/fr/education/references.json` (livre sans arabe ; rien sous `precis/ar/`) :
+- **Copies identiques**, recopiées de `finances_locales` (à promouvoir au fonds commun) : `decret-gouv2020-52`, `dgct-donnees-ouvertes`.
+- **Créée** : `decret-gouv2020-439` (JORT n° 71 du 22 juillet 2020, pp. 1575-1576 ; URL française lue dans le champ `pdf_fr` de la notice 147652 de `jort_cache.db`). Date d'effet non établie. À ajouter aussi à `finances_locales`, qui ne la cite pas.
+- `loi-org-2018-29-ccl` est déjà au fonds commun.
+- **Clôture (temps 2)** : Les clés citées par la section « La dépense des communes » résolvent toutes (rendu du livre : 0 citation non résolue). `push_biblio.py --verifier` : 0 perte ; `--dry-run` : conversion complète ; `--controle-rangement` : `decret-gouv2020-52` et `dgct-donnees-ouvertes`, citées par deux livres, sont à déclasser du livre `finances_locales` vers le fonds commun ; `decret-gouv2020-439` est absente de Zotero (versement à faire). Rien poussé dans Zotero (feu vert humain requis).
+
+## Versement et clôture du 23/10/2026 (entreprises publiques, plafond de la garantie de l'État, 1958-1994)
+
+Source : `docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md`. Dix-sept notices neuves et une promotion (`loi66-79-lf1967`) au fonds commun `precis/{fr,ar}/references.json` : `loi58-45-lf1958`, `loi59-42-lf1959`, `loi60-38-lf1961`, `loi61-65-lf1962`, `loi62-82-lf1963`, `loi63-58-lf1964`, `loi64-59-lf1965`, `loi65-46-lf1966`, `loi66-79-lf1967`, `loi67-57-lf1968`, `loi71-59-lf1972`, `loi73-82-lf1974`, `loi74-75-lfc1974`, `loi75-83-lf1976`, `loi77-81-lf1978`, `loi78-59-lf1979`, `loi93-111-garantie-1993`, `arrete1993-04-03-commission-garantie`. Les autres lois citées sont déjà au fonds commun. À verser dans Zotero (champ Extra `citation-key`).
+- Adresses pist.tn tirées de `jort_cache.db` (`pdf_fr`, `pdf_ar` du même enregistrement), non rejouées en ligne ; pages d'articles lues sur les fascicules.
+- `loi66-79-lf1967` : promue du volume « Les cotisations sociales » (références locales FR et AR) au fonds commun, avec l'art. 21 (plafond de 20 MD) ajouté à sa note .
+- Doublon à fondre un jour : `lf-1978` (loi n° 77-81) existe dans `precis/{fr,ar}/compensation/references.json` ; le fonds commun porte `loi77-81-lf1978` pour la même loi.
+- Le volume « Les entreprises publiques » n'a pas de livre arabe : aucun `references.json` arabe de volume. Rendu du volume : aucune citation `[?]`. `push_biblio.py --verifier` : 0 perte. Les actions `dry-run` et `controle-rangement` du workflow `biblio-zotero` ne sont pas lancées depuis cette branche.
+
+## Versement du 23/10/2026 (rémunération des dirigeants d'entreprises publiques, bibliographe, temps 1)
+
+Source : § 6 de `docs/notes/remunerations-decret-2015-2217.md`. Volume `remunerations_publiques`, FR et AR, à la main.
+- **Corrigée** : `decret2015-2217` (intitulé « fixant le régime de rémunération… », et non « fixant les taux des éléments… », qui est celui du décret n° 2014-12 ; pp. 3017-3019 FR, 3469-3471 AR ; exécutoire le 24 décembre 2015 d'après le dépôt du 19). AR : « نظام » à la place de « نسب عناصر ». **Complétée** : `decret90-1855` (JORT n° 75, pp. 1752-1753 FR ; pages de l'édition arabe non relevées, fascicule sans couche texte).
+- **Créées** (FR + AR, URL lues sur `jort_cache.db`, pages arabes relues sur les fascicules) : `decret2015-968` (banques publiques ; AR pp. 2188-2189), `decret2020-422` (AR pp. 1740-1742), `decret2017-1387` (AR p. 4618), `decret2013-4953` (AR pp. 4103-4106), `kapitalis-2015-pdg-entreprises-publiques` (presse, cité comme presse et jamais pour les montants ; page française seulement).
+- **À faire** : verser dans Zotero (`citation-key` en Extra) les cinq notices créées, **corriger** les deux notices existantes (`decret2015-2217`, `decret90-1855`, dont les pages ajoutées seraient perdues à la prochaine synchronisation descendante), et les ranger dans la collection du volume ; `decret2013-4953` et `decret2015-968` pourraient aussi servir à d'autres livres (entreprises publiques). Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` passent par Zotero : non lancés ici, rien poussé.
+
 ## Versement du 23/10/2026 (fiscalité, timbre et enregistrement, bibliographe)
 
 Sources : § 9, 11 et 13 de `docs/notes/fiscalite-timbre-enregistrement-documentation.md`, le CSV des textes lus, `docs/notes/eco-timbre-enregistrement.md` (§ 6). Seize notices ajoutées à `precis/{fr,ar}/fiscalite/references.json` (mêmes clés dans les deux langues) :
@@ -1340,7 +1363,7 @@ identifié par numéro+type+date_signature ; jamais dérivées par substitution 
 |---|---|---|---|---|
 | `loi2016-48` | Loi n°2016-48 du 11/07/2016 (banques et établissements financiers) | `Jo0582016.pdf` | `Ja0582016.pdf` | n°58/2016 |
 | `cc-banques-2014` | Arrêté du 17/02/2014 (agrément convention coll. sectorielle banques/étab. financiers, révisée) | `Jo0232014.pdf` | `Ja0232014.pdf` | n°23/2014 |
-| `decret2015-2217` | Décret n°2015-2217 du 11/12/2015 (taux rémunération chefs d'étab./entreprises publiques et soc. à majorité publique) | `Jo1012015.pdf` | `Ja1012015.pdf` | n°101/2015 |
+| `decret2015-2217` | Décret gouvernemental n° 2015-2217 du 11/12/2015 (régime de rémunération des chefs d'établissement et des entreprises publics et des sociétés à majorité publique) | `Jo1012015.pdf` | `Ja1012015.pdf` | n°101/2015 |
 | `decret90-1855` | Décret n°90-1855 du 10/11/1990 (régime rémunération chefs d'entreprises à majorité publique) | `Jo07590.pdf` | `Ja07590.pdf` | n°75/1990 |
 
 - `cc-banques-2014` : l'enregistrement de l'**arrêté du 17 février 2014** EST présent dans le
@@ -2627,10 +2650,9 @@ l'enregistrement de `jort_cache.db`, jamais dérivées l'une de l'autre).
 - [ ] `decret-91-550-tarif-petroliers` — n° 29 de 1991, t. 134, p. 936 ; FR `Jo02991`, AR `Ja02991`.
 - [ ] `decret-91-551-tarif-boissons` — même fascicule, p. 936-937.
 - [ ] `decret-94-816-hydrocarbures` — n° 30, t. 137, p. 628-629 ; FR `Jo03094`, AR `Ja03094`.
-- [ ] `decret-97-1368-regime-alcools` — n° 59, t. 140, p. 1301-1316 ; FR `Jo05997`, AR `Ja05997`.
+- [x] `decret-97-1368-regime-alcools` — n° 59, t. 140, p. 1301-1316 ; FR `Jo05997`, AR `Ja05997` ; lu sur pièce le 23/10/2026.
 - [ ] `decret-99-894-tarif-petroliers` — n° 33, t. 142, p. 624-625 ; FR `Jo03399`, AR `Ja03399`.
-- [ ] `decret-gouv-2015-1768-annexes-alcools` — n° 92 de 2015 ; FR `Jo0922015`, AR `Ja0922015`.
-      Pagination et tome **vides** dans la notice : champs omis, pas devinés.
+- [x] `decret-gouv-2015-1768-annexes-alcools` — n° 92 de 2015, p. 2721-2722 (AR 3173-3174) ; FR `Jo0922015`, AR `Ja0922015` ; lu sur pièce le 23/10/2026. Le champ `page` de l'entrée reste vide (notice sans pagination), la note porte les pages.
 - [ ] `loi-2007-70-lf-2008` — n° 104, t. 150, p. 4367 ; FR `Jo1042007`, AR `Ja1042007`.
 - [ ] `loi-2018-56-lf-2019` — n° 104 de 2018, p. 4548-4553 ; **entrée FR SANS URL** (voir ci-dessous),
       AR `Ja1042018`.
@@ -2686,10 +2708,10 @@ surveiller : si une descente `sync_biblio.py` la réintroduit, c'est Zotero qu'i
       identifiée (non recherchées sur jibaya.tn). Entrées sans URL, à compléter.
 - [ ] `dgi-nc-7-2016` : le numéro « 7/2016 » n'est attesté que par le **nom de fichier** de la copie
       locale — ni en-tête de bulletin ni numéro dans le corps du document. À confirmer sur l'original.
-- [ ] `decret-94-816-hydrocarbures`, `decret-97-1368-regime-alcools`,
-      `decret-gouv-2015-1768-annexes-alcools`, `loi-2007-70-lf-2008` : **non lus sur pièce**
-      (métadonnées de notice). Date d'effet **non établie** pour les trois décrets. Leurs tarifs ne
-      doivent pas être cités d'après ces entrées.
+- [ ] `decret-94-816-hydrocarbures`, `loi-2007-70-lf-2008` : **non lus sur pièce**
+      (métadonnées de notice). Date d'effet **non établie**. Leurs tarifs ne doivent pas être
+      cités d'après ces entrées. (`decret-97-1368-regime-alcools` et
+      `decret-gouv-2015-1768-annexes-alcools` : lus sur pièce le 23/10/2026.)
 - [ ] `loi-2007-70-lf-2008`, `lf-2014` : date d'effet au 1er janvier **déduite**, clause non lue.
 - [ ] `decret-91-550-tarif-petroliers` : anomalie de visa (art. 35 de la loi 88-145 au lieu de la loi
       89-115) et divergence « 91-111 » / « 90-111 » — consignées en note, **non résolues**.
@@ -2792,9 +2814,9 @@ ou page 1 relue à l'image). Un `200` sur un chemin `…F/Jo…` ne prouve rien 
 | `lf-2013` | Loi n° 2012-27 (LF 2013), **art. 43** | **lu sur pièce, en entier** |
 | `decret-89-479-tableau` | Décret n° 89-479, modif. du tableau annexé | titre + pagination **lus à l'image** (sommaire FR) |
 | `decret-89-1348-tableau` | Décret n° 89-1348, modif. du tableau annexé | titre + pagination **lus à l'image** (sommaire FR) |
-| `decret-2007-1977-alcools` | Décret n° 2007-1977, modif. du décret 97-1368 | **visas lus sur pièce** |
-| `decret-2013-929-alcools` | Décret n° 2013-929, modif. du décret 97-1368 | **visas et intitulés de tableaux lus sur pièce** |
-| `decret-2002-627-alcools` | Décret n° 2002-627, modif. du décret 97-1368 | substance lue (encodage décalé), **chiffres perdus** |
+| `decret-2007-1977-alcools` | Décret n° 2007-1977, modif. du décret 97-1368 | **lu sur pièce le 23/10/2026** (annexe IV, art. 43 ter, date d'effet) |
+| `decret-2013-929-alcools` | Décret n° 2013-929, modif. du décret 97-1368 | **lu sur pièce le 23/10/2026** (tableaux, art. 2, date d'effet) |
+| `decret-2002-627-alcools` | Décret n° 2002-627, modif. du décret 97-1368 | **lu sur pièce le 23/10/2026** (encodage décalé décodé ; valeurs de l'annexe III d'après la note du 23/10/2026) |
 | `lf-1994` | Loi n° 93-125 (LF 1994), art. 50 | notice ; **numéro corroboré** par l'art. 64 de la LF 1995, lu sur pièce |
 | `lf-1992` | Loi n° 91-98 (LF 1992) | notice seule (titre 4, p. 2085-2086) |
 | `lf-2003` | Loi n° 2002-101 (LF 2003) | substance lue, **n° d'article non établi** |
@@ -2810,10 +2832,11 @@ ou page 1 relue à l'image). Un `200` sur un chemin `…F/Jo…` ne prouve rien 
 - [ ] **`lf-1992` art. 44** : fascicule sans couche texte, seule la page 1 relue à l'image.
       Contenu inconnu.
 - [ ] **Contenu** (positions, taux) des décrets **88-2002, 89-479, 89-1348** : jamais ouverts
-      au-delà du sommaire. Comme pour `94-816`, `97-1368`, `2015-1768` et `loi-2007-70-lf-2008`,
+      au-delà du sommaire. Comme pour `94-816` et `loi-2007-70-lf-2008`,
       **aucun tarif ne doit être tiré de ces entrées** ; leur note le dit explicitement.
 - [ ] **Dates d'effet** : déduites (1er janvier) pour les huit lois de finances, clause non lue ;
-      **non établies** pour les six décrets.
+      **non établies** pour les décrets 88-2002, 89-479, 89-1348, 91-550, 91-551, 94-816, 98-952 et 99-894 ;
+      établies le 23/10/2026 pour les décrets 97-1368, 2002-627, 2007-1977, 2013-929, 2015-1768 et 2022-545.
 - [ ] **Pages imprimées** des articles lus sur pièce (`lf-1995`, `lf-1997`, `lf-1999`, `lf-2013`) :
       non relevées ; le champ `page` porte le début de la loi.
 - [ ] **TODO arabe — le compte passe de 15 à 29.** Les 14 entrées AR de cette passe portent, comme
@@ -3837,3 +3860,117 @@ Ajoutées ensuite au même chantier (FR et AR de `fiscalite`, 157 entrées de ch
 - Rapatriement Zotero **non lancé** : en attente de feu vert humain (séquence `permissions` → `verifier` →
   `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger`). L'action GitHub `dry-run` du workflow
   `biblio-zotero` n'est pas lançable avant le push de la branche.
+
+## Versement du 23/10/2026 (chapitre « Logement social et FOPROLOS », prestations sociales, bibliographe)
+
+Sources : `docs/notes/logement-social-foprolos-2026-10-23.md` § 2.2 (17 entrées, dont le rapport de l'ARP) et
+`docs/notes/eco-logement-social.md` § 6 (10 études). Domicile : `precis/{fr,ar}/prestations_sociales/references.json`.
+`precis/ar/prestations_sociales/references.json` : mêmes entrées, URL `pdf_ar` lues dans `jort_cache.db`.
+
+- [x] 27 clés versées (FR et AR) : `loi57-19`, `loi77-53`, `loi77-60-lfc1977`, `decret77-965`, `decret86-438`,
+  `loi86-47`, `decret99-96`, `loi2004-77`, `decret2012-1224`, `arrete-2013-07-29-prix-foprolos`,
+  `decret2016-1126`, `decret2017-161`, `decret2023-127`, `loi2026-1`, `loi2026-2`, `decret2026-123`,
+  `arp-2025-11-16-equipement`, `olsen-2003-housing-programs`, `sinai-waldfogel-2005-crowd-out`,
+  `fack-2005-aides-logement`, `gruber-jensen-kleven-2021-mortgage-deduction`, `glaeser-gyourko-2018-housing-supply`,
+  `galiani-schargrodsky-2010-titling`, `buckley-kalarickal-2006-shelter-lending`,
+  `baharoglu-peltier-buckley-2005-mena-housing`, `bm-2003-rehabilitation-urbaine`,
+  `onu-habitat-2011-tunisia-housing-profile`. DOI des cinq articles vérifiés sur Crossref le 23/10/2026
+  (dont Galiani et Schargrodsky, que la fiche donnait « non vérifié »).
+- [x] Clés partagées avec d'autres livres, déplacées au fonds commun (`precis/{fr,ar}/references.json`, une seule
+  copie) : `loi77-54` (cotisations sociales), `dl-2011-56-lfc-2011` et `lf-2019` (fiscalité),
+  `gruber-1994-mandated-maternity` (marché du travail), `decret2010-3170` (entreprises publiques, FR ; copie
+  arabe créée avec `Ja1012010.pdf`, 200).
+  - [ ] **Zotero : ces cinq clés gardent la collection de leur livre d'origine** ; `ranger` n'en retire aucune.
+    Déclassement à lancer après feu vert (action sortante).
+- Clés déjà présentes, réutilisées : `loi86-106-lf1987`, `loi-87-83-lf-1988`, `loi-88-145-lf-1989`, `lf-1990`,
+  `lf-1993`, `lfc-2012`, `lf-2011`, `lf-2013` à `lf-2018`, `lf-2020`, `lf-2022`, `lf-2023`, `lf-2025`, `lf-2026`,
+  `zaafrane-2014-habitat`. Les URL arabes de `lf-2023`, `lf-2025`, `lf-2026` figuraient déjà dans
+  `precis/ar/references.json` ; les entrées françaises restent sans URL (l'édition française n'est pas en
+  ligne, voir leurs notes).
+- Doublons laissés tels quels (les fusionner touche les `.qmd` d'autres livres) : `lf-1987`, `lf-1988`, `lf-1989`
+  (compensation) contre `loi86-106-lf1987`, `loi-87-83-lf-1988`, `loi-88-145-lf-1989` ; `loi-76-115-lf-1977`
+  (éducation) contre `lf-1977` ; `loi-89-115-lf-1990` (fiscalité) contre `lf-1990` ; `lfc-1989` (compensation
+  et fonds commun, découvert au contrôle). Le chapitre doit citer les clés du fonds commun.
+- [ ] `loi2026-1`, `loi2026-2` (FR) : sans URL. `jort_cache.db` n'a pas de `pdf_fr` pour le JORT n° 19/2026 ;
+  `https://www.pist.tn/jort/2026/2026F/Jo0192026.pdf` répond 200, c'est un fascicule français (lu p. 262) et
+  son empreinte diffère de l'arabe. À verser à l'URL dès que la base le porte, ou sur décision humaine.
+  `jort_cache.db` donne aussi, pour la loi n° 2026-1, la date de signature 2026-01-13 ; le fascicule porte
+  « 13 février 2026 ».
+- [ ] `decret2026-123` (FR) : sans URL (le fichier `2026F/Jo0622026.pdf` est identique octet pour octet à
+  l'arabe) ; intitulé arabe conservé, `language: ar`. AR : `Ja0622026.pdf`.
+- [ ] `loi57-19` (AR) : sans URL. `jort_cache.db` porte `1957A/Ja01557.pdf`, mais pist.tn renvoie 404
+  (23/10/2026) et le corpus local n'a pas ce fichier.
+- [ ] Pagination arabe non relevée : dans l'arabe, les entrées de 1986 à 2026 de ce versement n'ont pas de champ
+  `page` (la pagination du fichier français y est rappelée en note) ; les trois textes du JORT n° 53/1977 et
+  le décret n° 77-965 gardent leurs pages, comme `loi77-54`.
+- [ ] Titres arabes non établis : les entrées arabes portent l'intitulé français (comme le reste du fichier).
+- Ajoutée ensuite : `decret77-964` (lu).
+- Non versées (non lues) : loi n° 73-21, loi n° 73-24, décrets n° 74-33, 74-224, 77-926, loi n° 93-78,
+  décret n° 2021-327.
+- Rapatriement Zotero **non lancé**. Remplacement du `dry-run` par une conversion locale : `csl_vers_zotero`
+  appliquée à toutes les entrées des `references.json` (FR et AR) sans erreur.
+
+### Boissons alcoolisées (23/10/2026)
+
+- [x] `decret-pres-2022-545-capsule-vins` et `decret-93-2090-alcools` créées (FR et AR, URL lues dans
+  `jort_cache.db`, champs `pdf_fr` et `pdf_ar`). Entrées AR : titre et note en français, comme le reste
+  du fichier ; la pagination de l'édition arabe (97-1368 : pp. 1362-1377 ; 2015-1768 : pp. 3173-3174 ;
+  2022-545 : pp. 2109-2110) est dans la note, le champ `page` garde la pagination française.
+- [x] `lf-2016`, `lf-2018`, `lf-2021` (fonds commun, FR et AR) : lignes « DROIT DE CONSOMMATION, BOISSONS »
+  ajoutées aux notes (articles, pages, dates d'application).
+- [ ] `lf-2016` : l'édition française du JORT n° 104 de 2015 n'est pas sur pist.tn ; l'article 44 est lu dans l'extrait local
+  `PDFs/Lois_de_Finances/Loi_de_Finances_2016.pdf` (pp. 3150-3151) et dans l'édition arabe (p. 3609). Les deux éditions diffèrent
+  pour les vins mousseux classés (4,000 D français, 24,000 arabe) : à confirmer sur un second exemplaire.
+- [x] `lf-2018` : l'article 45 commence p. 4282 (lu à l'image), non p. 4281 ; la note de l'entrée en fait état.
+- [ ] Rapatriement Zotero des deux entrées créées : en attente de feu vert (séquence habituelle).
+
+## Clôture du 23/10/2026 (santé, « Tarifs des malades payants », bibliographe)
+
+- 5 clés versées à `precis/{fr,ar}/sante/references.json` : `arrete-1993-01-25-tarifs`,
+  `arrete-1996-12-19-tarifs`, `arrete-1998-04-17-tarifs`, `arrete-2003-01-29-tarifs`,
+  `arrete-2008-07-07-tarifs`. Provisoires : à rapatrier dans Zotero (groupe 6529669, collection Santé).
+- [ ] Titres arabes et pagination arabe non relevés pour les clés de 1993, 1998, 2003 et 2008 (pages
+  françaises reprises) ; pour 1996, titre arabe et pp. 2855-2856 lus à l'image le 23/10/2026.
+- [ ] Dates d'effet : dépôt des fascicules de 1998, 2003 et 2008 non relevé.
+
+- Contrôles (23/10/2026) : `push_biblio.py --verifier` : 1747 entrées, 0 perte. `--dry-run` : 1747 références
+  locales, 1747 à créer (aucune erreur de conversion). `--controle-rangement` : 1642 bien rangées, 0 à
+  déclasser, 0 à ranger, 102 sans citation, 5 absentes de Zotero (les cinq clés ci-dessus). Rapatriement
+  Zotero non lancé (feu vert humain requis). Rendu `quarto render --to html` de `sante` : 0 citation non
+  résolue.
+
+## Fiscalité — taxes affectées (versement du 23/10/2026)
+
+- [x] Versées dans `precis/{fr,ar}/fiscalite/references.json` : `lfc-2017`, `lfc-2018`, `lfc-2019`, `loi73-72-lfc1973`,
+  `lf-2008`, `decret-2000-634`, `decret-2012-435`, `decret-1955-03-31-budget` ; `mccleary-1991-earmarking`,
+  `radev-allen-2010-extrabudgetary-funds`, `cashin-et-al-2017-earmarking-health`,
+  `pantuosco-et-al-2007-lotteries-earmarking`, `francis-moore-2014-temporary-taxes`, `pefa-2016-tunisie`,
+  `cdc-foprolos-2016` ; `fmi-2016-cr16138` copiée depuis `compensation`.
+- [ ] Sans URL française (pdf_fr vide) : `lfc-2018`, `decret-2012-435` ; sans URL : `decret-1955-03-31-budget`
+  (absent de `jort_cache.db`, JOT 1955 à obtenir ; titre à vérifier sur le texte).
+- [ ] À vérifier au fascicule : `loi73-72-lfc1973` (« pour la gestion 1973 » ; date de publication antérieure à la loi) ;
+  `cdc-foprolos-2016` (numéro du rapport annuel) ; titres non relus : `decret-2000-634`, `lf-2008`.
+- [ ] Doublons de clés signalés, non corrigés : `lf-2019` (fiscalité) / `loi2018-56-lf2019` (racine) ;
+  `lf-2022` (racine) / `dl2021-21-lf2022` (caisses).
+- [ ] À rapatrier dans Zotero (collection « Fiscalité », `fmi-2016-cr16138` déjà présente côté compensation).
+- [x] Versées le 23/10/2026 dans `precis/{fr,ar}/fiscalite/references.json` : `minfin-execution-2014-12` (rapport semestriel à fin
+  décembre 2014, mai 2015) et `minfin-execution-2016-12` (à fin décembre 2016, avril 2017). Captures Wayback lues au CDX
+  (20170629080114 et 20170606203200) ; originaux retirés du site du ministère. Capture 2014 : taille différente de la copie
+  de travail (miroir `dev.finances.gov.tn`), contenu à comparer. Pages 7 et 9 vérifiées sur la copie de travail, non sur la capture.
+- [ ] À rapatrier dans Zotero : ces deux rapports (collection « Fiscalité »). Aucune clé équivalente ailleurs ;
+  `minfin-execution-budget` (ébauche non versée, `docs/notes/compensation.md`) désigne un autre bulletin.
+
+## Fiscalité — contributions conjoncturelles (versement du 23/10/2026)
+
+- [x] Versées dans `precis/{fr,ar}/fiscalite/references.json` (source : § 6 de `docs/notes/eco-contributions-conjoncturelles.md`) :
+  `capelle-blancard-havrylchyk-2013-bank-levy`, `kogler-2016-bank-levies`, `buch-hilberg-tonzer-2014-bank-levy`,
+  `devereux-johannesen-vella-2013-bank-levies`, `fuest-peichl-siegloch-2015-corporate-taxes-wages`,
+  `eichengreen-1989-capital-levy`, `bde-fsr-2022-encadre-2-3`, `bde-fsr-2025-encadre-3-1`. `fmi-2015-article-iv` existait déjà.
+  Séries dans `collection-title`, URL de l'éditeur (catalogue `tunisia-data/sources/eco-contributions-conjoncturelles-urls.csv`),
+  `accessed` 23/10/2026, copie et SHA-256 en note.
+- [ ] Non versées (non obtenues) : FMI WP 22/187 et Note 2022/002 ; avis BCE CON/2022/36 et CON/2023/26.
+- [ ] Mois de parution non lu, année seule : `buch-hilberg-tonzer-2014-bank-levy`, `bde-fsr-2022-encadre-2-3` (automne),
+  `bde-fsr-2025-encadre-3-1` (printemps). Eichengreen : auteur lu au scan, titre de l'éditeur.
+- [ ] Versions publiées de Kogler (*ITPF* 2019) et de Devereux et al. (*Economic Journal* 2019) non lues : la référence est celle de la version de travail.
+- [ ] À rapatrier dans Zotero (collection « Fiscalité »). `push_biblio.py --verifier` : 0 perte ; `--dry-run` local sans erreur ;
+  l'action `dry-run` et `controle-rangement` du workflow restent à lancer après le push de la branche.

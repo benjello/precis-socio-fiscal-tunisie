@@ -499,6 +499,65 @@ def tableau_croisees(caption: str, tbl_id: str = "tbl-ep-croisees") -> None:
         caption, tbl_id)
 
 
+def _croisees_figure():
+    """Totaux de fin d'année : dettes envers l'État, créances sur l'État, et leur solde
+    (créances moins dettes), lus dans la série qui nourrit le tableau."""
+    c = _s(S_CROISEES)
+
+    def x(cote, poste):
+        return c[(c["cote"] == cote) & (c["poste"] == poste)].set_index("fin_annee")["valeur_md"]
+    return {"dettes": x("dettes_envers_etat", "total"), "creances": x("creances_sur_etat", "total"),
+            "solde": -x("ecart", "dettes_moins_creances")}
+
+
+def _fig_croisees(mesure: str):
+    figtools.apply_lang_font()
+    t = _croisees_figure()
+    ans = sorted(int(a) for a in t["dettes"].index)
+    fig, ax = plt.subplots(figsize=(9.2, 5.2))
+    larg = 0.26
+    for k, (cle, coul, nom) in enumerate((
+            ("dettes", BLEU, "dettes des entreprises envers l'État"),
+            ("creances", ORANGE, "créances des entreprises sur l'État"),
+            ("solde", GRIS, "solde : créances moins dettes (dû par l'État)"))):
+        xs, ys = _xy(ans, [t[cle][a] for a in ans], mesure)
+        barres = ax.bar([a + (k - 1) * larg for a in xs], ys, width=larg, color=coul, label=nom)
+        unite = "MD" if mesure == "md" else "%"
+        for barre, a, y in zip(barres, xs, ys):
+            figtools.infobulle(barre, f"Fin {a} — {nom} : {_n(y, 1 if mesure == 'md' else 2)} "
+                                      f"{unite}")
+    _style(ax)
+    _axe(ax, mesure, milliards=False)
+    ax.set_xticks(ans)
+    ax.set_xticklabels([f"fin {a}" for a in ans])
+    if mesure == "pib":
+        _marque_pib(ax, min(ans), max(ans))
+    ax.legend(fontsize=8, frameon=False, loc="upper left")
+    ax.set_ylim(top=ax.get_ylim()[1] * 1.15)
+    fig.tight_layout()
+    return fig
+
+
+def fig_croisees():
+    return _trois_vues(_fig_croisees)
+
+
+def table_croisees():
+    import pandas as pd
+    t = _croisees_figure()
+    ans = sorted(int(a) for a in t["dettes"].index)
+    df = pd.DataFrame({
+        "Fin d'année": ans,
+        "Dettes envers l'État (MD)": [t["dettes"][a] for a in ans],
+        "Créances sur l'État (MD)": [t["creances"][a] for a in ans],
+        "Solde, créances moins dettes (MD)": [t["solde"][a] for a in ans]})
+    for col, nom in (("Dettes envers l'État (MD)", "dettes"),
+                     ("Créances sur l'État (MD)", "créances")):
+        df = _ajoute_parts(df, "Fin d'année", col, nom)
+    df["Base du PIB"] = [_base_courte(a) for a in ans]
+    return df
+
+
 def tableau_croisees_entreprises(caption: str, tbl_id: str = "tbl-ep-croisees-entreprises") -> None:
     c = _s(S_CROISEES)
     c = c[c["poste"].str.startswith("entreprise:")]
@@ -1498,6 +1557,7 @@ FIGURES = {
     "resultats": (fig_resultats, table_resultats, (S_AGREGATS, DENOMINATEURS),
                   "fig_ep_resultats"),
     "cessions": (fig_cessions, table_cessions, (S_CESSIONS, DENOMINATEURS), "fig_ep_cessions"),
+    "croisees": (fig_croisees, table_croisees, (S_CROISEES, DENOMINATEURS), "fig_ep_croisees"),
     "masse": (fig_masse, table_masse, (S_EFFECTIFS, S_AGREGATS, DENOMINATEURS), "fig_ep_masse"),
     "effectifs": (fig_effectifs, table_effectifs_ep, (S_EFFECTIFS_EP,), "fig_ep_effectifs"),
 }

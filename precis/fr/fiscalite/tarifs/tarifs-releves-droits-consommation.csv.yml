@@ -94,6 +94,51 @@ tableaux:
       inchangés ni parmi les tarifs relevés de l'état consolidé. La ligne « gaz naturel
       carburant » vient de loi-2007-70-lf-2008, art. 58.
 
+  alcools-tarifs:
+    titre: Tarif du droit de consommation sur les bières, vins et alcools, 1997-2021
+    ancre: tbl-dc-alcools-tarifs
+    lignes: 60
+    colonnes: [4 août 1997, 21 février 2013, 24 novembre 2015, 1er janvier 2018, 1er janvier 2021]
+    sources:
+      - decret-97-1368-regime-alcools
+      - decret-2013-929-alcools
+      - decret-gouv-2015-1768-annexes-alcools
+      - lf-2018
+      - lf-2021
+    couverture: PARTIELLE
+    couverture_detail: >-
+      Douze lignes des positions 22-03 à 22-08, aux cinq dates où l'une d'elles change :
+      annexes I à III du décret n° 97-1368 (JORT n° 59, p. 1316), tableaux du décret
+      n° 2013-929, annexe du décret gouvernemental n° 2015-1768, tableaux annexés aux lois
+      de finances pour 2018 (art. 45) et 2021 (art. 20). Le tableau annexé à la loi de
+      finances pour 2016 (art. 44) reprend les valeurs de la colonne du 24 novembre 2015 ;
+      il n'a donc pas de colonne propre. La colonne du 21 février 2013 porte, pour les
+      positions 22-05, 22-06 et Ex 22-08, la mention « sans modification » du décret :
+      la valeur affichée est celle de l'annexe III de 1997. La colonne de 2021 reprend, pour
+      les lignes que l'article 20 ne vise pas, la valeur du tableau de 2018. Sont hors relevé :
+      la bière à pression et en vrac de 1997 et 2013, les lignes Ex 21-06 et Ex 33-02, et
+      quatre des cinq lignes de la position 22-07. Les valeurs de 1997 des spiritueux sont
+      celles de l'annexe III ; le décret n'en indique pas l'assiette, qui est celle de la loi
+      n° 88-62. Les lois de finances antérieures à 2018 n'ont pas été dépouillées une à une
+      pour ces positions.
+
+  capsule-fiscale:
+    titre: Tarif de la capsule fiscale sur les vins, 1997-2022
+    ancre: tbl-dc-capsule
+    lignes: 18
+    colonnes: [Annexe IV de 1997, 13 août 2007, 29 juin 2022]
+    sources:
+      - decret-97-1368-regime-alcools
+      - decret-2007-1977-alcools
+      - decret-pres-2022-545-capsule-vins
+    couverture: COMPLÈTE
+    couverture_detail: >-
+      Les six catégories de l'annexe IV et leurs trois états successifs. La date d'effet de
+      l'annexe de 1997 est vide : l'application de la capsule dépend d'un avis de
+      l'administration aux embouteilleurs (art. 44 du décret), dont la date ne se lit pas
+      au JORT. Les dates de 2007 et de 2022 sont celles de l'exécution des décrets, cinq
+      jours après le dépôt du fascicule.
+
 # La désignation des positions varie selon les textes : le tableau de 1988 porte la
 # position entière « 27-10 », tandis que les décrets de 1991 et de 1999 désignent les
 # mêmes produits par la position extraite « Ex 27-10 ». Le CSV retient la position entière.

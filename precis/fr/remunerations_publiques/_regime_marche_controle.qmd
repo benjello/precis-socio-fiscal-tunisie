@@ -5,11 +5,11 @@
 Le [« régime de marché contrôlé »](#g-regime-marche-controle) est la catégorie retenue dans ce livre pour les [entreprises publiques](#g-entreprises-publiques) **financières**. Le **sous-secteur juridique** documenté est celui des banques à capital public, sociétés anonymes où l'État et les actionnaires publics détiennent la majorité du capital.
 
 - **Qui il couvre.** Les agents des banques à capital public, couverts par la [convention collective sectorielle des banques et établissements financiers](#g-convention-collective-banques), commune aux établissements publics et privés. Dans l'assurance, la [convention collective de la branche](#g-convention-collective-assurances) vaut pour le secteur entier ; ni elle ni le rapport du ministère ne nomment d'assureur à capital public (@sec-marche-controle-assurances).
-- **Comment la rémunération s'y fixe.** Celle des agents, par la convention de leur branche ; celle des [**dirigeants**](#g-remuneration-dirigeants-entreprises-publiques), par voie réglementaire, l'État exerçant ses prérogatives d'actionnaire.
+- **Comment la rémunération s'y fixe.** Celle des agents, par la convention de leur branche ; celle des directeurs généraux des banques publiques, par le conseil d'administration, sur les éléments qu'un [comité de rémunération](#g-comite-de-remuneration) fixe (@sec-marche-controle-dirigeants) ; celle des chefs des autres entreprises publiques et sociétés à majorité publique, par le régime du chapitre précédent (@sec-conventionnel-dirigeants).
 - **À quelle caisse cotisent les agents.** En principe à la Caisse nationale de sécurité sociale.
 - **Ce que l'on en mesure.** Le *Rapport sur les entreprises publiques* du ministère chargé des finances donne le capital et la part publique des principales banques [@minfin-ep] ; pour l'assurance, la grille conventionnelle se compare au salaire minimum, de 1975 à 2021.
 
-Le chapitre présente le champ du régime (@sec-marche-controle-champ), la construction de la rémunération (@sec-marche-controle-remuneration), les prélèvements (@sec-marche-controle-prelevements), puis les dates (@sec-marche-controle-historique) et les sources chiffrées (@sec-marche-controle-budget).
+Le chapitre présente le champ du régime (@sec-marche-controle-champ), la construction de la rémunération (@sec-marche-controle-remuneration), la rémunération des directeurs généraux des banques publiques (@sec-marche-controle-dirigeants), les prélèvements (@sec-marche-controle-prelevements), puis les dates (@sec-marche-controle-historique) et les sources chiffrées (@sec-marche-controle-budget).
 
 ## Champ d'application {#sec-marche-controle-champ}
 
@@ -147,15 +147,25 @@ Bas : échelle 1, premier échelon ; haut : échelle 21, dernier échelon. Les r
 
 ## La construction de la rémunération {#sec-marche-controle-remuneration}
 
-La rémunération se fixe par deux voies, dont la réunion donne son nom au « marché contrôlé » : une convention collective pour les agents, un décret pour les dirigeants.
+La rémunération des agents se fixe par convention collective ; celle des directeurs généraux des banques publiques, par leur conseil d'administration, dans le cadre d'un décret gouvernemental.
 
 - **Les agents : la convention collective.** La convention collective sectorielle des banques et établissements financiers [@cc-banques-2014] fixe la classification des emplois et les grilles applicables, dans le cadre de la négociation collective et de l'agrément ministériel prévus par le Code du travail. Ce mécanisme est distinct de la rémunération [indiciaire](#g-regime-indiciaire) de la fonction publique comme des statuts particuliers approuvés pour les entreprises relevant de la loi n°85-78.
-- **Les dirigeants : le décret.** La rémunération des **dirigeants** des entreprises publiques — y compris les banques à majorité publique — est encadrée par voie réglementaire au titre des prérogatives de l'État actionnaire. Le texte en vigueur est le décret n°2015-2217 du 11 décembre 2015 fixant les taux des éléments de rémunération des chefs d'établissements et entreprises publiques et de sociétés à majorité publique [@decret2015-2217].
-- **Deux mécanismes.** La rémunération des agents relève d'un mécanisme conventionnel de marché ; celle des dirigeants est plafonnée par l'État actionnaire.
+- **Les dirigeants : le conseil d'administration, pour les banques publiques.** Le décret gouvernemental n°2015-968 du 6 août 2015 règle la rémunération des directeurs généraux des banques publiques (@sec-marche-controle-dirigeants). Les chefs des autres entreprises publiques et sociétés à majorité publique, y compris les autres sociétés financières, relèvent du décret gouvernemental n°2015-2217 du 11 décembre 2015 (@sec-conventionnel-dirigeants).
+- **Deux mécanismes.** La rémunération des agents relève d'un mécanisme conventionnel de marché ; celle des directeurs généraux des banques publiques est approuvée par le conseil d'administration, sur les éléments qu'un comité de rémunération fixe, avec une part variable plafonnée.
 
 <!-- TODO: la structure détaillée (éléments permanents conventionnels, part variable / politique salariale propre à chaque établissement) n'est pas établie sur source primaire ; l'OCR du texte de la convention révisée 2014 et de ses avenants reste à faire pour citer les articles et les grilles. Ne pas restituer de montants ni de part variable chiffrée avant cette lecture. -->
 
-<!-- TODO: confirmer sur le PDF du décret 2015-2217 que les banques à majorité publique entrent bien dans le champ « entreprises publiques et sociétés à majorité publique » ; sourcer la circulaire d'application n°04 du 10 mars 2021. -->
+## Les dirigeants des banques publiques {#sec-marche-controle-dirigeants}
+
+Pour les directeurs généraux des banques publiques, le conseil d'administration approuve le régime de rémunération, après que le [comité de rémunération](#g-comite-de-remuneration) en a fixé les éléments [@decret2015-968, art. 2]. Les chefs des autres entreprises publiques et sociétés à majorité publique, y compris les autres sociétés financières, relèvent du décret gouvernemental n°2015-2217 (@sec-conventionnel-dirigeants).
+
+- **Le comité.** Le conseil fixe la composition du comité, qui compte trois membres dont un au moins représente les participants publics et le préside [@decret2015-968, art. 2].
+- **L'élément fixe.** Un salaire mensuel fixé « en adéquation avec les performances à moyen et longs termes de la banque en matière de rentabilité et de risque » ; le décret ne fixe aucun plafond de cet élément [@decret2015-968, art. 2].
+- **L'élément variable.** Un élément annuel qui « ne dépasse pas 50 % du montant de l'élément fixe », calculé sur des indicateurs du contrat programme que fixe un arrêté du ministre des finances [@decret2015-968, art. 2].
+- **Le président du conseil.** Il reçoit le jeton de présence, que le conseil peut relever dans la limite du double de celui des autres membres [@decret2015-968, art. 3].
+- **Les règles écartées.** Le décret n°90-1855 ne s'applique pas à ces dirigeants, et les banques publiques sont retirées de la liste de la catégorie exceptionnelle [@decret2015-968, arts 4 et 5]. Le décret n°2013-4953 applique aux banques publiques l'exclusion prévue par l'article 22 ter de la loi n°89-9 [@decret2013-4953, art. 1]. Le décret n°2015-968 est exécutoire le 15 août 2015.
+
+<!-- TODO (documentaliste) : régime applicable avant le 15 août 2015 aux directeurs généraux des banques publiques ; liste nominative des « banques publiques » au sens des décrets n°2013-4953 et n°2015-968 ; circulaire d'application n°04 du 10 mars 2021 (texte non trouvé) -->
 
 ## Les prélèvements sur la rémunération {#sec-marche-controle-prelevements}
 
@@ -169,18 +179,17 @@ Les agents des banques publiques cotisent en principe au régime des salariés n
 
 ## Repères historiques {#sec-marche-controle-historique}
 
-Le trait constant du régime est la convention collective sectorielle commune aux banques publiques et privées. Trois suites de textes se succèdent (@tbl-marche-controle-reperes) : les lois bancaires, les conventions collectives des banques et des assurances et les décrets sur la rémunération des dirigeants.
+Le trait constant du régime est la convention collective sectorielle commune aux banques publiques et privées. Trois suites de textes se succèdent (@tbl-marche-controle-reperes) : les lois bancaires, les conventions collectives des banques et des assurances et les décrets sur la rémunération des dirigeants de banques publiques.
 
 | Année | Ce qui change | Portée |
 |---|---|---|
 | 1967 | la profession bancaire est réglementée par la loi n°67-51 du 7 décembre 1967 [@loi67-51] | point de départ |
 | 1975 | un arrêté agrée la convention collective du personnel des banques dont procède la convention en vigueur [@cc-banques-1975] ; un autre, du même jour, la convention collective nationale des assurances, signée le 24 juillet et en vigueur depuis le 1^er^ janvier [@cc-assurances-1975] | point de départ |
-| 1978 | le décret n°78-885 du 11 octobre 1978 porte sur la rémunération des dirigeants [@decret-78-885] | point de départ |
 | 1983 | la convention collective nationale des assurances, révisée, est agréée le 23 août, avec effet pécuniaire au 1^er^ janvier ; ses catégories passent de 7 à 5 [@cc-assurances-1983] | étape |
-| 1990 | le décret n°90-1855 du 10 novembre 1990 fixe le régime de rémunération des chefs d'entreprises à majorité publique [@decret90-1855] | étape |
 | 2001 | l'activité est régie par la loi n°2001-65 du 10 juillet 2001 relative aux établissements de crédit [@loi2001-65] | étape |
-| 2014 | le décret n°2014-12 du 10 janvier 2014 porte sur la rémunération des dirigeants [@decret2014-12] ; la convention collective révisée est agréée le 17 février [@cc-banques-2014] ; les avenants n° 10 et 11 de la convention des assurances le sont le 16 décembre [@cc-assurances-avenants-10-11] | étape |
-| 2015 | le décret n°2015-2217 fixe les taux des éléments de rémunération des dirigeants [@decret2015-2217] | étape |
+| 2013 | le décret n°2013-4953 du 5 décembre 2013 applique aux banques publiques l'exclusion prévue par l'article 22 ter de la loi n°89-9 [@decret2013-4953, art. 1] | étape |
+| 2014 | la convention collective révisée est agréée le 17 février [@cc-banques-2014] ; les avenants n° 10 et 11 de la convention des assurances le sont le 16 décembre [@cc-assurances-avenants-10-11] | étape |
+| 2015 | le décret gouvernemental n°2015-968, exécutoire le 15 août, confie au conseil d'administration l'approbation de la rémunération des directeurs généraux des banques publiques, sur les éléments fixés par un comité de rémunération, avec une part variable d'au plus la moitié de l'élément fixe [@decret2015-968, art. 2] | **rupture** |
 | 2016 | l'activité est régie par la loi n°2016-48 relative aux banques et aux établissements financiers [@loi2016-48] | étape |
 | 2022 | la convention collective des banques reçoit son avenant n°5 [@cc-banques-avenant5-2022] ; celle des assurances son avenant n° 15, agréé le 20 octobre, dont la dernière grille prend effet au 1^er^ juin 2021 [@cc-assurances-avenant15-2022] | ajustement |
 
