@@ -17,8 +17,8 @@ CE QUI EST ENGENDRÉ.
 
 L'indemnité de cherté de vie de 1971 (`indemnite_cherte_de_vie_*`, versée en 0.120) n'est
 pas encore engendrée : ses pages publiques n'existent pas avant la publication de la version.
-  - Cinq tableaux du droit du travail : grandeurs de la rupture du contrat, durée et congés
-    aux dates repères, règles au 1er janvier 2026, congé selon l'âge, jours fériés payés
+  - Six tableaux du droit du travail : grandeurs de la rupture du contrat, ce que l'employeur
+    doit selon la fin du contrat, durée et congés aux dates repères, règles au 1er janvier 2026, congé selon l'âge, jours fériés payés
     (`mt_rc_parametres`, `mt_tt_*` ; voir la section « droit du travail » ci-dessous).
   - La série brute `marche-travail-smig-smag` (`_seriescache/`), que lisent les figures de
     la longue période, et ses liens « Base législative » en deux langues.
@@ -256,10 +256,11 @@ def serie_figures() -> int:
 # ------------------------------------------------------------------ droit du travail
 #
 # Les tableaux des chapitres « La rupture du contrat de travail » et « La durée du travail
-# et les congés » : cinq tableaux, un fichier chacun (`mt_<nom>.md`).
+# et les congés » : six tableaux, un fichier chacun (`mt_<nom>.md`).
 #
 #   mt_rc_parametres      grandeurs de la rupture, aux dates des réformes (1966, 1973, 1994,
 #                         1996, 2025) ;
+#   mt_rc_etat_du_droit   ce que l'employeur doit selon la fin du contrat, au 1er janvier 2026 ;
 #   mt_tt_parametres      durée, majoration, congé, jours fériés, aux dates repères ;
 #   mt_tt_etat_du_droit   règles au 1er janvier 2026 ;
 #   mt_tt_conge           congé annuel selon l'âge ;
@@ -315,6 +316,10 @@ F_MOIS_BORNE = lambda v, langue: (  # noqa: E731
 F_DECIMAL = lambda v, langue: _fr(v)  # noqa: E731
 F_TAUX = lambda v, langue: ot.formate_taux(v)  # noqa: E731
 F_ANS_DE_MOIS = lambda v, langue: ot.compte(int(v) // 12, "ans", langue)  # noqa: E731
+# Complément d'un nom : « d'un mois », « de 2 mois » ; en arabe, le nom compté seul.
+F_DE_MOIS = lambda v, langue: (  # noqa: E731
+    ot.compte(int(v), "mois", "ar") if langue == "ar"
+    else ("d'un mois" if v == 1 else f"de {_fr(v)} mois"))
 F_MILLIERS = lambda v, langue: ot.compte(int(v), "heures", langue).replace(  # noqa: E731
     f"{int(v)}", f"{int(v):,}".replace(",", " "), 1)
 F_DIVISEUR = lambda v, langue: f"1/{int(v)}"  # noqa: E731
@@ -380,16 +385,16 @@ LIB = {
         "مكافأة نهاية الخدمة، الأقدمية الدنيا"),
     f"{RC}/dommages_interets/minimum_par_annee_anciennete": (
         "Dommages-intérêts du licenciement abusif, minimum par année d'ancienneté",
-        "غرامات الطرد التعسفي، الحد الأدنى عن كل سنة أقدمية"),
+        "غرم الضرر عن الطرد التعسفي، الحد الأدنى عن كل سنة أقدمية"),
     f"{RC}/dommages_interets/maximum_par_annee_anciennete": (
         "Dommages-intérêts du licenciement abusif, maximum par année d'ancienneté",
-        "غرامات الطرد التعسفي، الحد الأقصى عن كل سنة أقدمية"),
+        "غرم الضرر عن الطرد التعسفي، الحد الأقصى عن كل سنة أقدمية"),
     f"{RC}/dommages_interets/plafond": (
-        "Dommages-intérêts du licenciement abusif, plafond", "غرامات الطرد التعسفي، السقف"),
+        "Dommages-intérêts du licenciement abusif, plafond", "غرم الضرر عن الطرد التعسفي، السقف"),
     f"{RC}/dommages_interets/vice_procedure_minimum": (
-        "Dommages-intérêts du vice de procédure, minimum", "غرامات خرق الإجراءات، الحد الأدنى"),
+        "Dommages-intérêts du vice de procédure, minimum", "غرم الضرر عن خرق الإجراءات، الحد الأدنى"),
     f"{RC}/dommages_interets/vice_procedure_maximum": (
-        "Dommages-intérêts du vice de procédure, maximum", "غرامات خرق الإجراءات، الحد الأقصى"),
+        "Dommages-intérêts du vice de procédure, maximum", "غرم الضرر عن خرق الإجراءات، الحد الأقصى"),
     f"{RC}/contrat_duree_determinee/duree_maximale_hors_cas_recours": (
         "Contrat à durée déterminée, durée maximale hors cas de recours",
         "عقد الشغل لمدة معينة، المدة القصوى خارج حالات اللجوء إليه"),
@@ -602,7 +607,7 @@ def rc_parametres(langue: str):
                  "بعد انقضاء فترة التجربة؛ باستثناء الخطأ الفادح")) for d in (D94, D96, D25)],
         ], inch_f)),
         ({"fr": "Dommages-intérêts<br>(licenciement abusif)",
-          "ar": "الغرامات<br>(الطرد التعسفي)"}, compacter([
+          "ar": "غرم الضرر<br>(الطرد التعسفي)"}, compacter([
             h("appréciés par le juge", "يقدّرها القاضي"),
             h("inchangés", "دون تغيير"),
             *[g("{a} à {b} mois de salaire par année d'ancienneté ; plafond de {p} de salaire",
@@ -612,7 +617,7 @@ def rc_parametres(langue: str):
                 p=lire(f"{DI}/plafond", d, F_ANS_DE_MOIS)) for d in (D94, D96, D25)],
         ], inch_p)),
         ({"fr": "Dommages-intérêts<br>(vice de procédure seul)",
-          "ar": "الغرامات<br>(خرق الإجراءات فقط)"}, compacter([
+          "ar": "غرم الضرر<br>(خرق الإجراءات فقط)"}, compacter([
             VIDE_CASE, VIDE_CASE,
             *[g("{a} à {b} mois de salaire", "أجر من {a} إلى {b}",
                 a=lire(f"{DI}/vice_procedure_minimum", d, F_MOIS_BORNE),
@@ -644,6 +649,124 @@ def rc_parametres(langue: str):
     entetes = [{"fr": "Grandeur", "ar": "المقدار"}[langue]] + [
         entete_date(d, e, langue, a) for d, e, a in RC_COLONNES]
     return ot.tableau_gabarit(entetes, [[lib[langue]] + cases for lib, cases in lignes], langue)
+
+
+# --- rupture du contrat : ce que doit l'employeur au 1er janvier 2026
+def rc_etat_du_droit(langue: str):
+    """Ce que l'employeur doit selon la façon dont le contrat prend fin.
+
+    Les grandeurs chiffrées (préavis, dommages-intérêts, plafond, bornes du vice de procédure)
+    sont lues à la date de l'état du droit ; la clôture du préavis des non-mensuels et de la
+    condition d'ancienneté de la gratification est contrôlée à cette date. Restent écrits ici
+    la condition, le débiteur et la population de chaque ligne, les articles qui les portent,
+    et deux cases sans paramètre : « quinze jours avant l'expiration » de la période d'essai et
+    « salaire de la durée restante » du contrat à durée déterminée rompu à tort.
+    """
+    e = EFFET_2026
+    P = f"{RC}/preavis"
+    GF = f"{RC}/gratification_fin_service"
+    DI = f"{RC}/dommages_interets"
+    close(f"{P}/duree_salaries_non_mensuels", e, langue)
+    close(f"{GF}/anciennete_minimale", e, langue)
+    cdi = h("occupés en contrat à durée indéterminée", "المشتغلون بعقد شغل لمدة غير معينة")
+    employeur = h("l'employeur", "المؤجر")
+    preavis = lire(f"{P}/duree", e, F_DE_MOIS)
+
+    lignes = [
+        [h("Démission", "الاستقالة"),
+         h("à l'initiative du salarié", "بمبادرة من العامل"),
+         g("préavis {m} dû par le salarié ([art. 14 bis](#r-mt-rc-demission)) ; la salariée "
+           "enceinte en est dispensée ([art. 18](#r-mt-rc-demission))",
+           "أجل إعلام مدته {m} يلتزم به العامل ([الفصل 14 مكرر](#r-mt-rc-demission))؛ "
+           "العاملة الحامل معفاة منه ([الفصل 18](#r-mt-rc-demission))",
+           m=preavis),
+         VIDE_CASE,
+         h("occupés en contrat à durée indéterminée, comptés par l'INS parmi tous les occupés, "
+           "indépendants compris (@fig-mt-rc-contrats-ins)",
+           "المشتغلون بعقد شغل لمدة غير معينة، ويحتسبهم المعهد الوطني للإحصاء ضمن مجموع "
+           "المشتغلين بمن فيهم المستقلون (@fig-mt-rc-contrats-ins)")],
+        [h("Licenciement pour faute grave", "الطرد لخطأ فادح"),
+         h("une des fautes de la liste légale ([art. 14 quater](#r-mt-rc-motif-1994))",
+           "أحد الأخطاء الواردة بالقائمة القانونية ([الفصل 14 رابعا](#r-mt-rc-motif-1994))"),
+         h("pas de gratification ([art. 22](#r-mt-rc-grat-1994)) ; le contrat prend fin « par la "
+           "volonté de l'une des parties suite à une faute grave commise par l'autre partie » "
+           "([art. 14](#r-mt-rc-fin-cdi-1994))",
+           "لا مكافأة نهاية خدمة ([الفصل 22](#r-mt-rc-grat-1994))؛ ينتهي العقد بإرادة أحد "
+           "الطرفين إثر خطأ فادح صادر عن الطرف الآخر ([الفصل 14](#r-mt-rc-fin-cdi-1994))"),
+         VIDE_CASE, cdi],
+        [h("Licenciement pour cause réelle et sérieuse", "الطرد لسبب حقيقي وجدي"),
+         h("causes indiquées dans la lettre de préavis",
+           "أسباب مبينة برسالة الإعلام"),
+         g("préavis {m} ([art. 14 bis](#r-mt-rc-preavis-1994)) et gratification "
+           "([art. 22](#r-mt-rc-grat-1994))",
+           "أجل إعلام مدته {m} ([الفصل 14 مكرر](#r-mt-rc-preavis-1994)) ومكافأة نهاية الخدمة "
+           "([الفصل 22](#r-mt-rc-grat-1994))", m=preavis),
+         employeur,
+         h("occupés en contrat à durée indéterminée, après la période d'essai",
+           "المشتغلون بعقد شغل لمدة غير معينة، بعد انقضاء فترة التجربة")],
+        [h("Licenciement sans cause réelle et sérieuse", "الطرد دون سبب حقيقي وجدي"),
+         h("jugement, action dans l'année", "حكم قضائي، رفع الدعوى في أجل سنة"),
+         g("préavis, gratification et dommages-intérêts de {a} à {b} mois de salaire par année "
+           "d'ancienneté, plafond de {p} ([art. 23 et 23 bis](#r-mt-rc-reparation-1994))",
+           "أجل الإعلام ومكافأة نهاية الخدمة وغرم الضرر بأجر من {a} إلى {b} عن كل سنة أقدمية، "
+           "والسقف {p} من الأجر ([الفصلان 23 و23 مكرر](#r-mt-rc-reparation-1994))",
+           a=lire(f"{DI}/minimum_par_annee_anciennete", e, F_MOIS_BORNE),
+           b=lire(f"{DI}/maximum_par_annee_anciennete", e, F_MOIS_BORNE),
+           p=lire(f"{DI}/plafond", e, F_MOIS)),
+         employeur, cdi],
+        [h("Vice de procédure seul", "خرق الإجراءات فقط"),
+         h("cause réelle et sérieuse, procédure non respectée",
+           "سبب حقيقي وجدي، دون احترام الإجراءات"),
+         g("préavis, gratification et dommages-intérêts de {a} à {b} mois de salaire "
+           "([art. 23 bis](#r-mt-rc-reparation-1994))",
+           "أجل الإعلام ومكافأة نهاية الخدمة وغرم الضرر بأجر من {a} إلى {b} "
+           "([الفصل 23 مكرر](#r-mt-rc-reparation-1994))",
+           a=lire(f"{DI}/vice_procedure_minimum", e, F_MOIS_BORNE),
+           b=lire(f"{DI}/vice_procedure_maximum", e, F_MOIS_BORNE)),
+         employeur, cdi],
+        [h("Licenciement pour motif économique",
+           "الطرد أو الإيقاف عن العمل لأسباب اقتصادية أو فنية"),
+         h("procédure de l'inspection du travail et de la commission ; sans avis, licenciement "
+           "abusif ([art. 21 à 21-12](#r-mt-rc-le-1996))",
+           "إجراءات تفقدية الشغل واللجنة؛ ويعد الطرد دون رأي لجنة مراقبة الطرد تعسفيا "
+           "([الفصول 21 إلى 21-12](#r-mt-rc-le-1996))"),
+         h("préavis et gratification ; la commission donne son avis sur la gratification et "
+           "concilie sur son montant ([art. 21-10](#r-mt-rc-le-1996))",
+           "أجل الإعلام ومكافأة نهاية الخدمة؛ وتبدي لجنة مراقبة الطرد رأيها في المكافأة وتصالح بشأن "
+           "مقدارها ([الفصل 21-10](#r-mt-rc-le-1996))"),
+         h("l'employeur ; la caisse si l'employeur est en cessation de paiement",
+           "المؤجر؛ والصندوق إذا كان المؤجر في حالة توقف عن الدفع"),
+         cdi],
+        [h("Fin d'un contrat à durée déterminée à son terme",
+           "انتهاء عقد الشغل لمدة معينة بحلول أجله"),
+         h("expiration de la durée ou achèvement du travail ([art. 14](#r-mt-rc-fin-cdi-1994))",
+           "انقضاء المدة أو إنجاز العمل ([الفصل 14](#r-mt-rc-fin-cdi-1994))"),
+         h("aucune indemnité légale ; contrat à durée indéterminée si le travail continue "
+           "([art. 17](#r-mt-rc-cdd-2025))",
+           "لا تعويض قانوني؛ ويصبح العقد لمدة غير معينة إذا تواصل العمل "
+           "([الفصل 17](#r-mt-rc-cdd-2025))"),
+         VIDE_CASE,
+         h("occupés en contrat à durée déterminée (@fig-mt-rc-contrats-ins)",
+           "المشتغلون بعقد شغل لمدة معينة (@fig-mt-rc-contrats-ins)")],
+        [h("Rupture abusive d'un contrat à durée déterminée par l'employeur",
+           "القطع التعسفي لعقد الشغل لمدة معينة من قبل المؤجر"),
+         h("avant le terme, sans faute grave", "قبل الأجل، دون خطأ فادح"),
+         h("salaire de la durée restante ([art. 24](#r-mt-rc-cdd-abusif-1994))",
+           "أجر المدة المتبقية ([الفصل 24](#r-mt-rc-cdd-abusif-1994))"),
+         employeur,
+         h("occupés en contrat à durée déterminée", "المشتغلون بعقد شغل لمدة معينة")],
+        [h("Fin de la période d'essai", "انتهاء فترة التجربة"),
+         h("notification quinze jours avant l'expiration ([art. 6-3](#r-mt-rc-essai-2025))",
+           "الإعلام قبل خمسة عشر يوما من إنهاء فترة التجربة ([الفصل 6-3](#r-mt-rc-essai-2025))"),
+         h("aucune indemnité légale", "لا تعويض قانوني"),
+         VIDE_CASE,
+         h("salariés en période d'essai", "العمال في فترة التجربة")],
+    ]
+    entetes = [{"fr": x, "ar": y}[langue] for x, y in [
+        ("Fin du contrat", "نهاية العقد"), ("Condition", "الشرط"),
+        ("Ce qui est dû", "المستحق"), ("Qui paie", "من يدفع"),
+        ("Population couverte", "الفئة المشمولة")]]
+    return ot.tableau_gabarit(entetes, lignes, langue)
 
 
 # --- temps de travail : grandeurs aux dates repères
@@ -954,6 +1077,7 @@ def tt_feries(langue: str):
 
 TABLEAUX_DROIT_TRAVAIL = [
     ("mt_rc_parametres", rc_parametres, f"{RC}/*"),
+    ("mt_rc_etat_du_droit", rc_etat_du_droit, f"{RC}/*"),
     ("mt_tt_parametres", tt_parametres, f"{TT}/*"),
     ("mt_tt_etat_du_droit", tt_etat_du_droit, f"{TT}/*"),
     ("mt_tt_conge", tt_conge, f"{CA}/*"),
