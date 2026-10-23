@@ -526,31 +526,138 @@ entries:
   - id: remuneration-dirigeants-entreprises-publiques
     acronyme: null
     statut: valide
-    references: [decret2015-2217, decret90-1855]
+    references: [decret2015-2217, decret2015-968, decret2014-12, decret90-1855, decret-78-885]
     source_definition: {ref: decret2015-2217}
     source_traduction: {ref: decret2015-2217}
-    voir_aussi: [regime-marche-controle, entreprises-publiques, regime-conventionnel-public]
+    voir_aussi: [categorie-entreprise-publique, indemnite-de-responsabilite, indemnite-complementaire-de-responsabilite, comite-de-remuneration, entreprises-publiques, regime-conventionnel-public, regime-marche-controle]
     fr:
       terme: Rémunération des dirigeants d'entreprises publiques
       definition: >
-        Rémunération des chefs d'établissements et entreprises publics et de
-        sociétés à majorité publique, encadrée et plafonnée par voie réglementaire
-        au titre des prérogatives de l'État actionnaire. Le décret n°2015-2217 du
-        11 décembre 2015 fixe les taux des éléments de cette rémunération, à la
-        suite des décrets n°78-885 (1978), n°90-1855 (1990) et n°2014-12
-        (2014). Ce plafonnement constitue le versant « contrôle »
-        du régime de marché contrôlé, par contraste avec l'autonomie
-        conventionnelle de marché des agents.
+        Rémunération des chefs d'entreprises et d'établissements publics et des
+        sociétés à majorité publique, c'est-à-dire des sociétés dont des
+        participants publics et des entreprises publiques détiennent 50 % du
+        capital ou plus. Le décret gouvernemental n°2015-2217 du 11 décembre 2015
+        en fixe le régime : classement de l'entreprise en six catégories, deux
+        modalités de rémunération au choix du dirigeant, avantages en nature,
+        exclusivité de la rémunération. Les directeurs généraux des banques
+        publiques en sont exclus : ils relèvent du décret gouvernemental
+        n°2015-968 du 6 août 2015. Le décret de 2015 abroge le décret n°90-1855
+        (1990) et le décret n°2014-12 (2014) ; le décret n°78-885 (1978) ouvre la
+        suite de ces textes.
       synonymes: []
     ar:
       terme: تأجير رؤساء المؤسسات والمنشآت العمومية
       definition: >
-        تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية —
-        المضبوط والمسقَّف عن طريق التنظيم بعنوان صلاحيات الدولة المساهمة. ويضبط الأمر الحكومي
-        عدد 2015-2217 المؤرّخ في 11 ديسمبر 2015 نسب عناصر هذا التأجير، إثر
-        الأوامر عدد 78-885 (1978) وعدد 90-1855 (1990) وعدد 2014-12
-        (2014). ويشكّل هذا التسقيف الشقَّ «الرقابي» من نظام السوق الموجَّه، في
-        مقابل الاستقلالية الاتفاقية السوقية لأعوانها.
+        تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية،
+        وهي الشركات التي يمتلك المساهمون العموميون والمنشآت العمومية رأس مالها
+        بنسبة لا تقل عن 50 %. ويضبط الأمر الحكومي عدد 2217 لسنة 2015 المؤرّخ في
+        11 ديسمبر 2015 نظام هذا التأجير: ترتيب المؤسسة في ستة أصناف، وصيغتان
+        للتأجير يختار بينهما رئيس المؤسسة، والامتيازات المسندة له، ومنع إضافة
+        أي منحة أخرى إلى التأجير. ويُستثنى من هذا النظام المديرون العامون
+        للبنوك العمومية، الخاضعون للأمر الحكومي عدد 968 لسنة 2015 المؤرّخ في 6
+        أوت 2015. وقد ألغى أمر 2015 الأمر عدد 90-1855 (1990) والأمر عدد 2014-12
+        (2014)، ويفتتح الأمر عدد 78-885 (1978) سلسلة هذه النصوص.
+      synonymes: []
+
+  - id: categorie-entreprise-publique
+    acronyme: null
+    statut: valide
+    references: [decret2015-2217]
+    source_definition: {ref: decret2015-2217, locator: "art. 2"}
+    source_traduction: {ref: decret2015-2217}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, indemnite-de-responsabilite]
+    fr:
+      terme: Catégorie de classement de l'entreprise publique
+      definition: >
+        Classement d'une entreprise ou d'un établissement public, ou d'une société à
+        majorité publique, dans l'une des six catégories — exceptionnelle, G, M, A,
+        B, C — dont dépendent les éléments de rémunération de son chef. Le chef du
+        gouvernement fixe le classement par arrêté, après avis d'une commission de
+        classement ; un décret gouvernemental fixe la liste des entreprises de la
+        catégorie exceptionnelle.
+      synonymes: []
+    ar:
+      terme: صنف المؤسسة
+      definition: >
+        ترتيب المؤسسة أو المنشأة العمومية أو الشركة ذات الأغلبية العمومية في أحد ستة
+        أصناف — استثنائي و«ك» و«م» و«أ» و«ب» و«ج» — تتحدد بحسبه عناصر تأجير رئيسها.
+        ويضبط رئيس الحكومة الترتيب بقرار بعد أخذ رأي لجنة ترتيب المؤسسات والمنشآت
+        العمومية والشركات ذات الأغلبية العمومية، وتضبط بأمر حكومي قائمة المنشآت
+        العمومية والشركات ذات الأغلبية العمومية المرتبة في الصنف الاستثنائي.
+      synonymes: []
+
+  - id: indemnite-de-responsabilite
+    acronyme: null
+    statut: valide
+    references: [decret2015-2217]
+    source_definition: {ref: decret2015-2217, locator: "art. 4"}
+    source_traduction: {ref: decret2015-2217}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, categorie-entreprise-publique, indemnite-complementaire-de-responsabilite]
+    fr:
+      terme: Indemnité de responsabilité
+      definition: >
+        Élément de la deuxième modalité de rémunération d'un chef d'entreprise
+        publique, servi chaque mois avec le traitement de base et l'indemnité de
+        logement, selon la catégorie de l'entreprise. Il réunit les quatre
+        indemnités que prévoyait le décret n°2014-12 (représentation, gestion,
+        frais liés à la responsabilité, indemnité spéciale ou complémentaire) et il
+        est soumis à l'impôt sur le revenu et aux retenues de sécurité sociale.
+      synonymes: []
+    ar:
+      terme: منحة المسؤولية
+      definition: >
+        عنصر من عناصر الصيغة الثانية لتأجير رئيس مؤسسة عمومية، يُصرف شهريًا مع المرتب
+        الأساسي ومنحة السكن حسب صنف المؤسسة. ويجمع المنح الأربع التي نصّ عليها الأمر
+        عدد 2014-12، ويخضع للحجز بعنوان الضريبة على الدخل وأنظمة الضمان الاجتماعي.
+      synonymes: []
+
+  - id: indemnite-complementaire-de-responsabilite
+    acronyme: null
+    statut: valide
+    references: [decret2015-2217]
+    source_definition: {ref: decret2015-2217, locator: "art. 3"}
+    source_traduction: {ref: decret2015-2217}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, categorie-entreprise-publique, indemnite-de-responsabilite]
+    fr:
+      terme: Indemnité complémentaire de responsabilité
+      definition: >
+        Indemnité mensuelle de la première modalité de rémunération d'un chef
+        d'entreprise publique, versée en plus du salaire que le dirigeant percevait
+        légalement juste avant sa nomination. Son montant dépend de la catégorie de
+        l'entreprise ; le décret de 2015 n'en donne aucun pour la catégorie
+        exceptionnelle. Elle se distingue de l'indemnité provisoire pour
+        remboursement des frais liés à la responsabilité du décret n°2014-12.
+      synonymes: []
+    ar:
+      terme: المنحة التكميلية بعنوان المسؤولية
+      definition: >
+        منحة شهرية في إطار الصيغة الأولى للتأجير، تضاف إلى الأجر الذي كان يتقاضاه
+        الرئيس بصفة قانونية قبل تسميته مباشرة. ويضبط مقدارها حسب صنف المؤسسة، ولا
+        يضبط الأمر الحكومي عدد 2217 لسنة 2015 أي مقدار لها في الصنف الاستثنائي.
+      synonymes: []
+
+  - id: comite-de-remuneration
+    acronyme: null
+    statut: valide
+    references: [decret2015-968]
+    source_definition: {ref: decret2015-968, locator: "art. 2"}
+    source_traduction: {ref: decret2015-968}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, regime-marche-controle]
+    fr:
+      terme: Comité de rémunération
+      definition: >
+        Comité que le conseil d'administration d'une banque publique constitue
+        obligatoirement en son sein. Il fixe les éléments de la rémunération du
+        directeur général, que le conseil approuve, et les indicateurs de la part
+        variable. Il compte trois membres, dont au moins un représente les
+        participants publics et le préside.
+      synonymes: []
+    ar:
+      terme: لجنة التأجير
+      definition: >
+        لجنة تنبثق وجوبًا عن مجلس إدارة البنك العمومي. وتحدّد عناصر تأجير المدير
+        العام، ويصادق عليها المجلس، وكذلك مؤشرات العنصر المتغيّر. وتتكوّن من ثلاثة
+        أعضاء من بينهم عضو على الأقل يمثّل المساهمين العموميين يكون رئيسًا لها.
       synonymes: []
 
   - id: regime-conventionnel-public
@@ -582,8 +689,8 @@ entries:
   - id: regime-marche-controle
     acronyme: null
     statut: provisoire
-    references: [loi89-9, cc-banques-2014, cc-assurances-1975, decret2015-2217]
-    voir_aussi: [entreprises-publiques, convention-collective-banques, convention-collective-assurances, remuneration-dirigeants-entreprises-publiques, regime-conventionnel-public, cnss]
+    references: [loi89-9, cc-banques-2014, cc-assurances-1975, decret2015-968, decret2015-2217]
+    voir_aussi: [entreprises-publiques, convention-collective-banques, convention-collective-assurances, remuneration-dirigeants-entreprises-publiques, comite-de-remuneration, regime-conventionnel-public, cnss]
     fr:
       terme: Régime de marché contrôlé
       definition: >
@@ -593,9 +700,13 @@ entries:
         établissements publics et privés : celle des banques et établissements
         financiers, révisée et agréée le 17 février 2014 ; celle des assurances,
         agréée le 24 décembre 1975 pour le secteur entier, révisée en 1983 et
-        suivie de quinze avenants de 1989 à 2022. La rémunération des dirigeants
-        est, elle, encadrée par décret (décret n°2015-2217 du 11 décembre 2015).
-        La convention des assurances ne nomme aucune société.
+        suivie de quinze avenants de 1989 à 2022. La rémunération des directeurs
+        généraux des banques publiques relève du décret gouvernemental n°2015-968
+        du 6 août 2015 : le conseil d'administration l'approuve, sur les éléments
+        fixés par un comité de rémunération. Celle des chefs des autres entreprises
+        publiques et sociétés à majorité publique relève du décret gouvernemental
+        n°2015-2217 du 11 décembre 2015. La convention des assurances ne nomme
+        aucune société.
       synonymes: []
     ar:
       terme: نظام السوق الموجَّه
@@ -606,8 +717,11 @@ entries:
         المالية، المنقَّحة والمصادق عليها في 17 فيفري 2014؛ واتفاقية التأمين،
         المصادق عليها في 24 ديسمبر 1975 للقطاع بأسره، والمنقَّحة سنة 1983
         والمتبوعة بخمسة عشر ملحقًا تعديليًا من سنة 1989 إلى سنة 2022. أمّا تأجير
-        رؤساء المنشآت فيؤطَّر بأمر (الأمر الحكومي عدد 2015-2217 المؤرّخ في 11
-        ديسمبر 2015). ولا تسمّي اتفاقية التأمين أيّ شركة.
+        المديرين العامين للبنوك العمومية فيخضع للأمر الحكومي عدد 968 لسنة 2015
+        المؤرّخ في 6 أوت 2015: يصادق مجلس الإدارة على نظام التأجير بعد أن تحدّد
+        لجنة التأجير عناصره. وأمّا تأجير رؤساء المؤسسات العمومية والشركات ذات
+        الأغلبية العمومية الأخرى فيخضع للأمر الحكومي عدد 2217 لسنة 2015 المؤرّخ في
+        11 ديسمبر 2015. ولا تسمّي اتفاقية التأمين أيّ شركة.
       synonymes: []
 
   - id: point-indice

@@ -3853,3 +3853,45 @@
     resultat: aucun
   a_faire:
   - océriser les fascicules 1966-1970 à la recherche d'un décret d'application de l'art. 21 ; le décret n'a peut-être jamais été pris, le code organisant lui-même la commission
+
+- id: r-decret-2015-2217-application
+  objet: textes d'application, modificatifs ou dérogations du décret gouvernemental n° 2015-2217 du 11 décembre 2015 (rémunération des chefs d'entreprises publiques) — en particulier le décret gouvernemental fixant la liste des entreprises classées en catégorie exceptionnelle (art. 2, dernier alinéa), les arrêtés de classement et l'arrêté sur la commission de classement
+  ou: [precis/fr/remunerations_publiques/_regime_conventionnel.qmd#sec-conventionnel-dirigeants]
+  requetes:
+    titres_fts: [remuneration AND chefs, exceptionnelle AND categorie AND (entreprises OR societes)]
+    titres_like: ['%2217%', '%categorie exceptionnelle%', '%catégorie exceptionnelle%']
+    iort_ar: [تأجير رؤساء, الصنف الاستثنائي]
+    plein_texte: [2015-2217, 2015- 2217, '20152217', 2217 لسنة 2015]
+    depuis: 2015-12-18
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas, web]
+    couverture: 'jort_cache : requêtes FTS et LIKE ci-dessus sur titre et objet (les motifs arabes par LIKE sur les titres de jort_cache, pas sur le miroir iort, non interrogé). Plein texte : tous les fascicules français de 2015 à 2026 (n° 97 de 2026) avec le motif 2015[-‑ ]*2217 ; fascicules arabes du n° 101 de 2015 au n° 97 de 2026 (1 343 fichiers) avec le motif « 2217 لسنة 2015 » après NFKC et retrait des marques bidirectionnelles. Une quarantaine de textes citent le décret, presque tous en visa ; une dérogation (2020-422, art. 3), une extension par renvoi (2017-1387, art. 1), aucun modificatif, aucune liste de catégorie exceptionnelle. Corps examinés : textes français relevés et quatorze textes connus par la seule édition arabe ; deux applications ou renvois trouvés en plus (2023-294, art. 16 ; 2017-985, art. 4 nouveau). Lacunes : édition française incomplète en 2018 (70 fascicules) et 2019 (59) contre une centaine en arabe, ces années reposent sur la recherche en arabe ; fascicules sans couche texte non dénombrés ; textes non publiés au JORT hors de portée.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - interroger le miroir iort avec les termes arabes
+  - dénombrer les fascicules 2016-2026 sans couche texte et les océriser si besoin
+
+- id: r-dirigeants-ep-categorie-exceptionnelle-2006-2010
+  objet: décret n° 2006-242 (2 ou 12 octobre 2006 selon les visas) fixant la liste des entreprises publiques et à majorité publique classées en catégorie exceptionnelle et l'indemnité complémentaire de leurs dirigeants, ses modificatifs n° 2009-188 du 31 juillet 2009, n° 2010-24 du 15 février 2010 et n° 2010-215 du 6 août 2010, et le décret n° 2009-187 du 31 juillet 2009 fixant les taux des éléments de rémunération des catégories G à C
+  ou: [precis/fr/remunerations_publiques/_regime_conventionnel.qmd#sec-conventionnel-dirigeants]
+  requetes:
+    titres_fts: [exceptionnelle AND categorie AND (entreprises OR societes), remuneration AND chefs]
+    titres_like: ['%categorie exceptionnelle%', '%catégorie exceptionnelle%']
+    iort_ar: [الصنف الاستثنائي, تأجير رؤساء]
+    depuis: 2006-01-01
+  periode:
+    jusqu_au: 2014-01-17
+    motif: le décret n° 2014-12 (JORT n° 5 du 17 janvier 2014), art. 9, abroge le décret n° 2009-187 et l'article 2 du décret n° 2006-242 modifié par le décret n° 2010-24
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache : recherche par numéro (2006-242, 2009-187, 2009-188, 2010-24, 2010-215 : aucun texte de ce numéro ne porte sur l''objet ; le n° 2009-187 de l''index est un décret du 26 janvier 2009 sur la jeunesse, le n° 2010-24 un congé pour création d''entreprise) ; balayage des décrets par date de signature (2 et 12 octobre 2006, 31 juillet 2009, 15 février 2010, 6 août 2010) sur les titres contenant entreprise, منشآت ou مؤسسات : rien ; requêtes FTS et LIKE ci-dessus. Plein texte des fascicules 2006-2014 non parcouru. Hypothèse non vérifiée : décrets non publiés.'
+    couvert_jusqu_au: 2014-01-17
+    resultat: aucun
+  a_faire:
+  - plein texte des fascicules 2006-2010 (FR et AR) sur les numéros et sur « catégorie exceptionnelle »
+  - interroger le miroir iort
