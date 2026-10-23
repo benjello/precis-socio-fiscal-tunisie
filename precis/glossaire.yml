@@ -6442,29 +6442,35 @@ entries:
         في ذلك توابعه، ويثبت بشهادة من المصالح المختصة.
       synonymes: []
 
+  # Attestation bilingue du singulier : code des sociétés commerciales (loi n° 2000-93),
+  # « la cession du fonds de commerce » / « إحالة الأصل التجاري » (miroir iort ; pas de
+  # clé). Le CDET taxe la mutation de fonds de commerce (art. 20, n° 13). Synonyme AR
+  # « الأصل التجاري » : singulier de cette attestation ; terme pluriel gardé pour l'IF.
   - id: fonds-de-commerce
     acronyme: null
     statut: provisoire
-    references: [lf-2026]
+    references: [lf-2026, loi-93-53-cdet, loi-87-73]
     source_definition: {ref: lf-2026, locator: "art. 88 § 3"}
-    voir_aussi: [impot-fortune]
+    voir_aussi: [impot-fortune, droits-enregistrement, droit-proportionnel-enregistrement]
     fr:
       terme: Fonds de commerce
       definition: >
-        Élément du patrimoine que l'article 88 de la loi de finances pour 2026
-        range parmi les biens soumis à l'impôt sur la fortune, à côté des
-        immeubles et des meubles, et dont il exclut ceux qui sont
+        Élément du patrimoine d'un commerçant. Sa mutation à titre onéreux est soumise à un droit
+        d'enregistrement proportionnel (code des droits d'enregistrement et de
+        timbre, art. 20). L'article 88 de la loi de finances pour 2026 range les
+        fonds de commerce parmi les biens soumis à l'impôt sur la fortune, à
+        côté des immeubles et des meubles, et en exclut ceux qui sont
         effectivement exploités.
-        Le terme français est une traduction ; il reste à confirmer dans un
-        texte bilingue du Journal officiel.
       synonymes: []
     ar:
       terme: الأصول التجارية
       definition: >
-        عنصر من المكاسب يدرجه الفصل 88 من قانون المالية لسنة 2026 ضمن
-        المكاسب الخاضعة للضريبة على الثروة، إلى جانب العقارات والمنقولات،
-        ويستثني منه الأصول التجارية المستغلة فعليا.
-      synonymes: []
+        عنصر من مكاسب التاجر. ويخضع نقل ملكيته بمقابل لمعلوم
+        تسجيل نسبي (مجلة معاليم التسجيل والطابع الجبائي، الفصل 20). ويدرج الفصل 88
+        من قانون المالية لسنة 2026 الأصول التجارية ضمن المكاسب الخاضعة للضريبة على
+        الثروة، إلى جانب العقارات والمنقولات، ويستثني منها الأصول التجارية
+        المستغلة فعليا.
+      synonymes: [الأصل التجاري]
 
   - id: benefice-imposable
     acronyme: null
@@ -12958,20 +12964,32 @@ entries:
 
   # AR : « معاليم التسجيل » (LF 2017, art. 29 ; intitulé arabe du CDET, « مجلة معاليم
   # التسجيل والطابع الجبائي ») en regard de « droits d'enregistrement » (éd. fr.).
-  # Pas de clé pour la loi n° 93-53 (CDET) : source_definition vide.
+  # Clé `loi-93-53-cdet` versée en octobre 2026 : source_definition renseignée.
   - id: droits-enregistrement
     acronyme: null
-    statut: provisoire
-    references: []
+    statut: valide
+    references: [loi-93-53-cdet]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 1 à 116"}
     source_traduction: {ref: lf-2017, locator: "art. 29"}
-    voir_aussi: [droit-mutation, droit-fixe-enregistrement, droit-proportionnel-enregistrement, droit-progressif-terrains]
+    voir_aussi: [droit-mutation, droit-fixe-enregistrement, droit-proportionnel-enregistrement, droit-progressif-terrains, formalite-enregistrement, droit-timbre]
     fr:
       terme: Droits d'enregistrement
-      definition: ""
+      definition: >
+        Impôts perçus à l'occasion de la formalité de l'enregistrement d'un acte,
+        d'une mutation ou d'un jugement : mutations d'immeubles et de fonds de
+        commerce, successions et donations, actes de sociétés, marchés, baux,
+        jugements. Ils prennent la forme d'un droit proportionnel ou progressif,
+        assis sur la valeur, ou d'un droit fixe, par acte ou par page. Ils forment
+        la première partie du code des droits d'enregistrement et de timbre de 1993.
       synonymes: []
     ar:
       terme: معاليم التسجيل
-      definition: ""
+      definition: >
+        أداءات تُستخلص بمناسبة القيام بإجراء التسجيل على عقد أو نقل ملكية أو حكم:
+        نقل ملكية العقارات والأصول التجارية، والتركات والهبات، وعقود الشركات،
+        والصفقات، والأكرية، والأحكام. وهي إمّا معلوم نسبي أو تصاعدي يُوظَّف على
+        القيمة، وإمّا معلوم قار يُوظَّف على العقد أو على الصفحة. وتمثّل الجزء الأول
+        من مجلة معاليم التسجيل والطابع الجبائي لسنة 1993.
       synonymes: []
 
   # AR non attesté comme terme. Le JORT arabe dit « معلوم على نقل ومقاسمة العقارات غير
@@ -12999,34 +13017,56 @@ entries:
   # dinars » par « معلوم محدد بمائة دينار » ; la forme du code est « القار ».
   - id: droit-fixe-enregistrement
     acronyme: null
-    statut: provisoire
-    references: [lf-2014, lf-2018]
+    statut: valide
+    references: [loi-93-53-cdet, lf-2014, lf-2018]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 23"}
     source_traduction: {ref: lf-2014, locator: "art. 53"}
     voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
     fr:
       terme: Droit fixe
-      definition: ""
+      definition: >
+        Droit d'enregistrement d'un montant déterminé, indépendant de la valeur
+        de l'acte, dû par acte ou par page (code des droits d'enregistrement et
+        de timbre, art. 23 et 24). Il frappe les actes que le tarif ne taxe pas
+        à proportion de leur valeur : actes de sociétés, actes sans tarif propre,
+        certains baux, et les mutations que la loi place sous ce régime. Son
+        montant est relevé par les lois de finances.
       synonymes: [Droit fixe d'enregistrement]
     ar:
       terme: المعلوم القار
-      definition: ""
+      definition: >
+        معلوم تسجيل بمقدار محدد لا يتوقّف على قيمة العقد، يُستوجب على العقد أو على
+        الصفحة (مجلة معاليم التسجيل والطابع الجبائي، الفصلان 23 و24). ويُوظَّف على
+        العقود التي لا تخضعها التعريفة لمعلوم نسبي إلى قيمتها: عقود الشركات،
+        والعقود التي لا تعريفة خاصة لها، وبعض الأكرية، وعمليات نقل الملكية التي
+        يخضعها القانون لهذا النظام. وتُحيّن قوانين المالية مقداره.
       synonymes: []
 
   # AR : « المعلوم النسبي » (LF 2014, art. 53, § 1 : « بالمعلوم النسبي المحدد بـ 3% » en
   # regard de « au droit proportionnel de 3 % »).
   - id: droit-proportionnel-enregistrement
     acronyme: null
-    statut: provisoire
-    references: [lf-2014]
+    statut: valide
+    references: [loi-93-53-cdet, lf-2014]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 20"}
     source_traduction: {ref: lf-2014, locator: "art. 53"}
     voir_aussi: [droits-enregistrement, droit-fixe-enregistrement, droit-progressif-terrains]
     fr:
       terme: Droit proportionnel
-      definition: ""
+      definition: >
+        Droit d'enregistrement égal à un pourcentage de la valeur, du prix ou du
+        montant que l'acte constate (code des droits d'enregistrement et de
+        timbre, art. 20) : mutations d'immeubles et de fonds de commerce, baux,
+        ventes publiques de meubles, jugements, marchés. Il ne peut être inférieur
+        au minimum de perception.
       synonymes: [Droit proportionnel d'enregistrement]
     ar:
       terme: المعلوم النسبي
-      definition: ""
+      definition: >
+        معلوم تسجيل يساوي نسبة مائوية من القيمة أو الثمن أو المبلغ الذي يثبته العقد
+        (مجلة معاليم التسجيل والطابع الجبائي، الفصل 20): نقل ملكية العقارات والأصول
+        التجارية، والأكرية، والبيوعات العلنية للمنقولات، والأحكام، والصفقات. ولا
+        يمكن أن يقلّ عن الاستخلاص الأدنى.
       synonymes: []
 
   # AR : l'adjectif est attesté, « معاليم التسجيل النسبية والتصاعدية » (LF 2017, art. 29)
@@ -13159,23 +13199,339 @@ entries:
       definition: ""
       synonymes: []
 
-  # AR non attesté comme nom. Le nouvel art. 22 du CDET (LF 2017, art. 69, § 3) dit
-  # « لا يمكن استخلاص أقل من 40 دينارا » en regard de « Il ne peut être perçu moins de
-  # 40 dinars ». Distinct de `minimum-impot` (IRPP).
+  # AR : « الاستخلاص الأدنى » (LF 2013, art. 44, rubrique « تنسيق مبلغ الاستخلاص
+  # الأدنى » en regard de « Harmonisation du minimum de perception », à propos du code
+  # des droits et procédures fiscaux ; le DL 2021-21, LF 2022, emploie « مقدار الاستخلاص
+  # الأدنى » pour un droit d'enregistrement). Remplace « الحد الأدنى للاستخلاص », forme
+  # composée sans occurrence dans le miroir iort (23/10/2026). Le nouvel art. 22 du CDET
+  # (LF 2017, art. 69, § 3) dit « لا يمكن استخلاص أقل من 40 دينارا » en regard de « Il ne
+  # peut être perçu moins de 40 dinars ». Distinct de `minimum-impot` (IRPP).
   - id: minimum-perception-enregistrement
     acronyme: null
-    statut: provisoire  # AR non attesté tel quel
-    references: [lf-2017]
+    statut: provisoire
+    references: [lf-2017, lf-2013]
     source_definition: {ref: lf-2017, locator: "art. 69"}
+    source_traduction: {ref: lf-2013, locator: "art. 44"}
     voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
     fr:
       terme: Minimum de perception
       definition: ""
       synonymes: []
     ar:
-      terme: الحد الأدنى للاستخلاص
+      terme: الاستخلاص الأدنى
       definition: ""
       synonymes: []
+
+  # AR : « إجراء التسجيل » (LF 2020, art. 48, nouvel art. 13 ter du CDET : « عند القيام
+  # بإجراء التسجيل » en regard de « pour l'accomplissement de la formalité de
+  # l'enregistrement »). Même forme dans le DL 2021-21 (LF 2022) et la rubrique de
+  # l'art. 65 du DL 2022-79 (LF 2023), « إخضاع التواكيل وجوبا لإجراء التسجيل ».
+  - id: formalite-enregistrement
+    acronyme: null
+    statut: valide
+    references: [loi-93-53-cdet, lf-2020]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 1 à 15"}
+    source_traduction: {ref: lf-2020, locator: "art. 48"}
+    voir_aussi: [droits-enregistrement, droit-fixe-enregistrement]
+    fr:
+      terme: Formalité de l'enregistrement
+      definition: >
+        Présentation d'un acte, d'une déclaration ou d'un jugement au receveur de
+        l'enregistrement, qui perçoit les droits dus. Le code des droits d'enregistrement et de timbre (art. 1 à 15) dresse
+        la liste des actes obligatoirement enregistrés et fixe les délais ; un
+        acte qui n'y figure pas peut être présenté volontairement.
+      synonymes: [Formalité d'enregistrement]
+    ar:
+      terme: إجراء التسجيل
+      definition: >
+        تقديم عقد أو تصريح أو حكم إلى قابض التسجيل الذي يستخلص المعاليم
+        المستوجبة. وتضبط مجلة معاليم التسجيل والطابع الجبائي (الفصول 1 إلى
+        15) قائمة العقود الخاضعة وجوبا للتسجيل وآجاله؛ ويمكن تقديم العقد غير
+        المدرج بها للتسجيل اختياريا.
+      synonymes: []
+
+  # Budget (tableau A). FR « Droits sur les Actes et Transactions » : titre 4 du
+  # tableau A jusqu'en 2019 (« ( Enregistrement) », LF 2017, JORT n° 105 de 2016), puis
+  # ligne 18-02 depuis la LF 2020. AR « معاليم على العقود والمبادلات » : ligne 18-02 des
+  # LF 2023 (p. 4084) et 2026 (p. 4260), éditions arabes lues à l'image par la
+  # documentaliste (docs/notes/fiscalite-timbre-enregistrement-series.csv). Le titre 4
+  # arabe de la LF 2017 porte une autre forme, « المعاليم على العقود والمنقولات
+  # (التسجيل) » : non retenue, la nomenclature ayant changé. Notion budgétaire, sans
+  # définition légale : source_definition vide.
+  - id: droits-actes-transactions
+    acronyme: null
+    statut: valide
+    references: [lf-2017, lf-2019, lf-2020, lf-2026]
+    source_definition: {ref: lf-2020, locator: "tableau A, p. 4441"}
+    source_traduction: {ref: lf-2026}
+    voir_aussi: [droits-enregistrement, droit-timbre, taxe-unique-assurances]
+    fr:
+      terme: Droits sur les actes et transactions
+      definition: >
+        Rubrique des recettes fiscales au tableau A des lois de finances, dont le
+        périmètre change en 2020. Jusqu'en 2019, c'est le titre d'un groupe qui
+        réunit le droit de timbre, les droits de mutation, les autres droits
+        d'enregistrement et la taxe unique sur les assurances. Depuis 2020, c'est
+        une ligne (18-02) de la catégorie « Autres impôts et taxes », à côté du
+        droit de timbre (18-01) et de la taxe unique sur les assurances (18-04).
+        Notion budgétaire, sans définition légale.
+      synonymes: []
+    ar:
+      terme: معاليم على العقود والمبادلات
+      definition: >
+        باب من المداخيل الجبائية بالجدول «أ» لقوانين المالية، تغيّر مجاله سنة
+        2020. فإلى غاية 2019، يقابله في الجدول عنوان مجموعة، «المعاليم على العقود
+        والمنقولات (التسجيل)»، تضمّ معاليم الطابع الجبائي ومعاليم نقل الملكية
+        ومعاليم التسجيل الأخرى والمعلوم الوحيد على التأمينات. ومنذ 2020، هو سطر
+        (18-02) من الجدول، إلى جانب معاليم الطابع الجبائي (18-01) والمعلوم الوحيد
+        على التأمينات (18-04). مفهوم ميزانياتي لا تعريف قانوني له.
+      synonymes: []
+
+  # AR : « معلوم الطابع الجبائي » (LFC 2012, art. 47, rubrique « تحيين تعريفة معلوم
+  # الطابع الجبائي المستوجب على الفواتير » en regard de « Mise à jour du tarif du droit
+  # de timbre exigible sur les factures » ; LF 2017, art. 72, « إلغاء معلوم الطابع
+  # الجبائي المستوجب » en regard de « Suppression du droit de timbre dû » ; intitulé
+  # arabe du CDET). Tableau A, ligne 24-01 puis 18-01 : « Droits de Timbre fiscal » /
+  # « معاليم الطابع الجبائي ». Le timbre sur les quittances, puis sur les factures, est
+  # une ligne du tarif (art. 117, I, 6), non une notion : pas d'entrée propre.
+  - id: droit-timbre
+    acronyme: null
+    statut: valide
+    references: [loi-93-53-cdet, lfc-2012, lf-2017]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 117"}
+    source_traduction: {ref: lfc-2012, locator: "art. 47"}
+    voir_aussi: [timbre-mobile, timbre-dimension, timbre-proportionnel, droits-enregistrement, droits-actes-transactions]
+    fr:
+      terme: Droit de timbre
+      definition: >
+        Impôt dû sur un document, quel que soit l'acte ou l'opération qu'il
+        constate : actes et registres, effets de commerce, factures, recharges
+        téléphoniques, passeports, cartes et autres documents administratifs. Son
+        tarif, fixé par l'article 117 du code des droits d'enregistrement et de
+        timbre, est un montant par feuille, par document ou par copie, ou un
+        montant par dinar payé. Il se paie par timbres mobiles ou selon les
+        autres modes que fixe le code (art. 119 à 128).
+      synonymes: [Droits de timbre, Droits de timbre fiscal]
+    ar:
+      terme: معلوم الطابع الجبائي
+      definition: >
+        أداء يُستوجب على وثيقة، مهما كان العقد أو العملية التي تثبتها: العقود
+        والدفاتر، والأوراق التجارية، والفواتير، وعمليات شحن الهاتف، وجوازات
+        السفر، والبطاقات وغيرها من الوثائق الإدارية. وتضبط تعريفته بالفصل 117 من
+        مجلة معاليم التسجيل والطابع الجبائي، وهي مقدار على الورقة أو الوثيقة أو
+        النسخة، أو مقدار على كلّ دينار مدفوع. ويُدفع بواسطة الطوابع غير القارة أو
+        بالطرق الأخرى التي تضبطها المجلة (الفصول 119 إلى 128).
+      synonymes: [معاليم الطابع الجبائي]
+
+  # AR : « الطابع غير القار » (code pénal, art. 181, rédaction de la loi n° 2005-46 :
+  # « contrefait les timbres mobiles ou autres timbres fiscaux de l'Etat » en regard de
+  # « من يقلد الطوابع غير القارة أو غيرها من الطوابع الجبائية » ; miroir iort,
+  # loi_2005_46_2005.md). Pas de clé pour la loi n° 2005-46 : source_traduction vide.
+  # « timbres fiscaux » / « الطوابع الجبائية » : LF 2004, art. 78. La forme « الطابع
+  # الجبائي المتنقل » proposée par la note documentaire n'est pas attestée. Statut
+  # valide sur l'attestation du code pénal ; forme du CDET arabe (art. 121-122) non relevée.
+  - id: timbre-mobile
+    acronyme: null
+    statut: valide
+    references: [loi-93-53-cdet, lf-2004]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 121-122"}
+    voir_aussi: [droit-timbre]
+    fr:
+      terme: Timbre mobile
+      definition: >
+        Vignette émise par l'État, que l'on appose sur un document pour acquitter
+        le droit de timbre ; on l'appelle couramment timbre fiscal. C'est l'un
+        des modes de paiement du droit de timbre que fixe le code des droits
+        d'enregistrement et de timbre, à côté du papier timbré, du paiement sur
+        état et du visa du receveur.
+      synonymes: [Timbres mobiles]
+    ar:
+      terme: الطابع غير القار
+      definition: >
+        طابع تصدره الدولة يُلصق على الوثيقة لخلاص معلوم الطابع الجبائي، ويُسمّى
+        عادة الطابع الجبائي. وهو إحدى طرق دفع معلوم الطابع الجبائي التي تضبطها
+        مجلة معاليم التسجيل والطابع الجبائي، إلى جانب طرق الدفع الأخرى التي
+        تنصّ عليها.
+      synonymes: []
+
+  # AR non attesté. Le timbre de dimension (décret du 20 avril 1912 ; décret n° 65-222,
+  # art. 1 ; LF 1969, art. 12) est antérieur aux textes arabes disponibles en couche
+  # texte ; les fascicules arabes de 1965 et 1969 sont des images non océrisées.
+  # Proposition descriptive, à vérifier sur l'édition arabe du décret 65-222 ou de la
+  # LF 1969.
+  - id: timbre-dimension
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: [decret-65-222-timbre, lf-1969]
+    source_definition: {ref: decret-65-222-timbre, locator: "art. 1"}
+    voir_aussi: [droit-timbre, timbre-proportionnel]
+    fr:
+      terme: Timbre de dimension
+      definition: >
+        Droit de timbre dû sur un acte écrit selon le format du papier employé,
+        du petit papier au grand registre, quel que soit le contenu de l'acte. Il
+        relève du décret organique sur le timbre du 20 avril 1912, et ses montants
+        sont relevés par décret puis par loi de finances (décret n° 65-222,
+        art. 1 ; loi de finances pour 1969, art. 12). Le tarif du code des droits
+        d'enregistrement et de timbre de 1993 ne le comporte plus : le timbre des
+        actes y est dû par feuille.
+      synonymes: [Droit de timbre de dimension]
+    ar:
+      terme: معلوم الطابع حسب حجم الورق
+      definition: >
+        معلوم طابع يُستوجب على العقد المكتوب حسب حجم الورق المستعمل، من الورق
+        الصغير إلى الدفتر الكبير، مهما كان مضمون العقد. وهو يرجع إلى الأمر الأساسي
+        المتعلق بالطابع المؤرخ في 20 أفريل 1912، وقد رُفّعت مقاديره بأمر ثم بقانون
+        المالية (الأمر عدد 222 لسنة 1965، الفصل الأول؛ قانون المالية لسنة 1969، الفصل
+        12). ولم تعد تعريفة مجلة معاليم التسجيل والطابع الجبائي لسنة 1993 تتضمّنه:
+        فطابع العقود فيها مستوجب على الورقة.
+      synonymes: []
+
+  # AR non attesté (même motif que `timbre-dimension`). Proposition calquée sur
+  # « المعلوم النسبي » (droit proportionnel, LF 2014, art. 53).
+  - id: timbre-proportionnel
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: [decret-65-222-timbre, lf-1990]
+    source_definition: {ref: decret-65-222-timbre, locator: "art. 2"}
+    voir_aussi: [droit-timbre, timbre-dimension, droit-proportionnel-enregistrement]
+    fr:
+      terme: Timbre proportionnel
+      definition: >
+        Droit de timbre égal à une fraction du montant d'un titre, notamment d'un
+        effet de commerce, prévu par la section II du tarif annexé au décret du 20 avril 1912 sur le
+        timbre. La loi de finances pour 1990 (art. 33) abroge cette section et le
+        remplace par un montant fixe par effet, différent selon que l'effet est
+        domicilié ou non dans un établissement de crédit ou un bureau de chèques
+        postaux.
+      synonymes: [Droit de timbre proportionnel]
+    ar:
+      terme: معلوم الطابع النسبي
+      definition: >
+        معلوم طابع يساوي جزءا من مبلغ سند، ولا سيّما الورقة التجارية، نصّ عليه القسم الثاني من
+        التعريفة الملحقة بالأمر المؤرخ في 20 أفريل 1912 المتعلق بالطابع. وألغى
+        قانون المالية لسنة 1990 (الفصل 33) هذا القسم، وعوّضه بمقدار قار على كلّ
+        ورقة، يختلف بحسب توطين الورقة أو عدم توطينها لدى مؤسسة قرض أو مكتب صكوك
+        بريدية.
+      synonymes: []
+
+  # AR non attesté. « apport » est rendu par « حصة » dans le code des sociétés
+  # commerciales (« الحصص العينية », apports en nature) ; « معلوم تسجيل الحصص » est
+  # composé sur cette base. Droit d'apport : n° 55 du tarif annexé au décret du 19 avril
+  # 1912, taux du décret n° 68-104.
+  - id: droit-apport
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: [decret-68-104-taux, lf-1969]
+    source_definition: {ref: decret-68-104-taux}
+    voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement, droit-fixe-enregistrement]
+    fr:
+      terme: Droit d'apport
+      definition: >
+        Droit d'enregistrement proportionnel dû sur les actes de formation et de
+        prorogation d'une société, assis sur la valeur des apports (n° 55 du
+        tarif annexé au décret organique sur l'enregistrement du 19 avril 1912 ;
+        taux du décret n° 68-104 et de la loi de finances pour 1969). Le tarif du
+        code des droits d'enregistrement et de timbre de 1993 ne le comporte
+        plus : les actes de société y supportent un droit fixe par acte.
+      synonymes: []
+    ar:
+      terme: معلوم تسجيل الحصص
+      definition: >
+        معلوم تسجيل نسبي يُستوجب على عقود تأسيس الشركات والتمديد في مدّتها،
+        ويُوظَّف على قيمة الحصص (العدد 55 من التعريفة الملحقة بالأمر الأساسي
+        المتعلق بالتسجيل المؤرخ في 19 أفريل 1912؛ نسبه بالأمر عدد 104 لسنة 1968
+        وبقانون المالية لسنة 1969). ولم تعد تعريفة مجلة معاليم التسجيل والطابع
+        الجبائي لسنة 1993 تتضمّنه: فعقود الشركات فيها خاضعة لمعلوم قار على العقد.
+      synonymes: []
+
+  # AR non attesté. Majoration d'un demi-dixième des droits (décret n° 68-104, colonne
+  # « demi-décime », par application de l'art. 7 de la LF 1968, loi n° 67-57).
+  - id: demi-decime
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: [decret-68-104-taux]
+    source_definition: {ref: decret-68-104-taux}
+    voir_aussi: [droits-enregistrement, droit-timbre]
+    fr:
+      terme: Demi-décime
+      definition: >
+        Majoration générale d'un demi-dixième, soit d'un vingtième, appliquée à
+        tous les droits d'un tarif. Le décret n° 68-104 fixe le tarif des droits
+        d'enregistrement sur trois colonnes : le tarif antérieur, le demi-décime
+        institué par la loi de finances pour 1968 (art. 7) et le tarif qui en
+        résulte. Le procédé relève les tarifs sans en changer la structure.
+      synonymes: []
+    ar:
+      terme: نصف العشر الإضافي
+      definition: >
+        ترفيع عامّ بنصف العشر، أي بجزء من عشرين، يُطبَّق على كلّ المعاليم الواردة
+        بتعريفة. ويضبط الأمر عدد 104 لسنة 1968 تعريفة معاليم التسجيل في ثلاثة
+        أعمدة: التعريفة السابقة، ونصف العشر الإضافي المحدث بقانون المالية لسنة 1968
+        (الفصل 7)، والتعريفة الناتجة عنهما. ويُرفّع هذا الإجراء التعريفات دون
+        تغيير بنيتها.
+      synonymes: []
+
+  # AR : « طابع المحاماة » (décret n° 93-1148 du 22 mai 1993 « fixant le montant du
+  # timbre d'avocat » / « المتعلق بضبط طابع المحاماة », intitulé repris par les décrets
+  # n° 2008-355 et 2008-359 ; miroir iort, éditions FR et AR). Pas de clé pour ces
+  # décrets : source_traduction vide. Institué par la loi n° 93-53, art. 6.
+  - id: timbre-avocat
+    acronyme: null
+    statut: valide
+    references: [loi-93-53-cdet, minfin-cdet-2025]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 6"}
+    voir_aussi: [droit-timbre]
+    fr:
+      terme: Timbre d'avocat
+      definition: >
+        Timbre institué par la loi n° 93-53 (art. 6), qui promulgue le code des
+        droits d'enregistrement et de timbre, « au profit de la Caisse de
+        Prévoyance et de Retraite des avocats ». Son produit revient à cette
+        caisse et non au budget de l'État ; son montant est fixé par décret.
+      synonymes: []
+    ar:
+      terme: طابع المحاماة
+      definition: >
+        طابع أحدثه القانون عدد 53 لسنة 1993 (الفصل 6)، المتعلق بإصدار مجلة معاليم
+        التسجيل والطابع الجبائي، لفائدة صندوق الحيطة والتقاعد للمحامين. ويعود
+        مُتأتّاه إلى هذا الصندوق لا إلى ميزانية الدولة؛ ويُضبط مقداره بأمر.
+      synonymes: []
+
+  # AR : « المعلوم الوحيد على التأمين » (LF 2018, art. 48, rubrique « تحيين تعريفة
+  # المعلوم الوحيد على التأمين » en regard de « Actualisation du tarif de la taxe unique
+  # sur les assurances »). Le nom officiel arabe est « معلوم », non « ضريبة » : il est
+  # gardé tel quel. Le tableau A écrit le pluriel « المعلوم الوحيد على التأمينات »
+  # (ligne 24-04, LF 2017 et LFC 2012).
+  - id: taxe-unique-assurances
+    acronyme: TUA
+    statut: valide
+    references: [lf-1997, lf-2018, minfin-cdet-2025]
+    source_definition: {ref: lf-1997, locator: "art. 34"}
+    source_traduction: {ref: lf-2018, locator: "art. 48"}
+    voir_aussi: [droits-actes-transactions, droits-enregistrement]
+    fr:
+      terme: Taxe unique sur les assurances
+      definition: >
+        Taxe due sur « les contrats d'assurance ou de rente viagère conclus avec
+        des entreprises d'assurance », à un taux qui diffère selon que le risque
+        relève de la navigation maritime et aérienne ou d'une autre branche.
+        Instituée par la loi de finances pour 1997 (art. 34), elle forme la
+        troisième partie du code des droits d'enregistrement et de timbre,
+        « autres taxes » (art. 144 à 149) : elle n'est ni un droit
+        d'enregistrement ni un droit de timbre. L'assurance-vie, la réassurance et
+        d'autres branches en sont exonérées (art. 145).
+      synonymes: []
+    ar:
+      terme: المعلوم الوحيد على التأمين
+      definition: >
+        معلوم يُستوجب على عقود التأمين أو الإيراد العمري المبرمة مع مؤسسات
+        التأمين، بنسبة تختلف بحسب ما إذا كان الخطر يتعلّق بالملاحة البحرية والجوية
+        أو بصنف آخر. أُحدث بقانون المالية لسنة 1997 (الفصل 34)، ويمثّل الجزء الثالث
+        من مجلة معاليم التسجيل والطابع الجبائي (الفصول 144 إلى 149):
+        فهو ليس معلوم تسجيل ولا معلوم طابع جبائي. ويُعفى منه التأمين على الحياة
+        وإعادة التأمين وأصناف أخرى (الفصل 145).
+      synonymes: [المعلوم الوحيد على التأمينات]
 
   # --- Foncier
 
@@ -13656,6 +14012,81 @@ entries:
         Review، 2011)، يقلّص هذا الأداء عدد المبادلات المفيدة للطرفين، فلا تبقى
         الأموال بالضرورة بيد من يمنحها أكبر قيمة؛ ويثقل على المال بقدر تكرّر
         انتقاله من يد إلى أخرى. ومعلوم نقل ملكية العقارات مثال على ذلك.
+      synonymes: []
+
+  # Notion analytique (note économique sur le timbre et l'enregistrement, § 7). Sans
+  # terme officiel arabe : provisoire, sans source_traduction. Clé Matheson présente
+  # dans le seul livre de la fiscalité.
+  - id: effet-cascade
+    acronyme: null
+    statut: provisoire
+    references: [matheson-2011-taxing-financial-transactions]
+    source_definition: {ref: matheson-2011-taxing-financial-transactions, locator: "p. 25"}
+    voir_aussi: [impot-transactions]
+    fr:
+      terme: Effet cascade
+      definition: >
+        Cumul d'un impôt prélevé à chaque étape d'une chaîne de production, sans
+        crédit pour l'impôt payé aux étapes antérieures, de sorte que la charge
+        finale dépend du nombre d'étapes. Selon Matheson (2011), un impôt sur les
+        transactions intermédiaires se cumule ainsi selon l'intensité en
+        transactions de chaque secteur, et pousse les entreprises à s'intégrer
+        verticalement pour l'éviter.
+      synonymes: [Cumul en cascade]
+    ar:
+      terme: الأثر التراكمي
+      definition: >
+        تراكم أداء يُستخلص في كلّ مرحلة من سلسلة الإنتاج دون خصم الأداء المدفوع في
+        المراحل السابقة، فيتوقّف العبء النهائي على عدد المراحل. وحسب ماثيسون
+        (Matheson، 2011)، يتراكم الأداء على المعاملات الوسيطة بهذه الطريقة بحسب
+        كثافة المعاملات في كلّ قطاع، ويدفع المؤسسات إلى الاندماج العمودي لتفاديه.
+      synonymes: []
+
+  # Notion analytique (liquidité d'un marché de titres). Sans terme officiel arabe.
+  - id: liquidite-marche
+    acronyme: null
+    statut: provisoire
+    references: [matheson-2011-taxing-financial-transactions]
+    source_definition: {ref: matheson-2011-taxing-financial-transactions, locator: "p. 16"}
+    voir_aussi: [impot-transactions, capitalisation-impot]
+    fr:
+      terme: Liquidité
+      definition: >
+        Facilité avec laquelle un titre s'achète ou se vend rapidement, en
+        quantité, sans que l'opération déplace sensiblement son prix. Selon
+        Matheson (2011), un droit sur les transferts de titres renchérit chaque
+        échange et réduit la liquidité du marché.
+      synonymes: [Liquidité de marché]
+    ar:
+      terme: السيولة
+      definition: >
+        سهولة شراء سند أو بيعه بسرعة وبكميات كبيرة دون أن تؤثّر العملية تأثيرا
+        ملموسا في سعره. وحسب ماثيسون (Matheson، 2011)، يرفع المعلوم على نقل
+        السندات كلفة كلّ مبادلة ويقلّص سيولة السوق.
+      synonymes: []
+
+  # Notion analytique. Source à établir (note économique, § 7) : source_definition vide.
+  - id: cout-conformite
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: []
+    fr:
+      terme: Coût de conformité
+      definition: >
+        Coût que supporte le contribuable pour s'acquitter de ses obligations
+        fiscales, en plus de l'impôt lui-même : temps passé, recours à un
+        conseil, démarches, tenue de documents. Il se distingue du coût de
+        perception, que supporte l'administration fiscale. Les deux réunis
+        forment le coût de fonctionnement d'un impôt.
+      synonymes: [Coût de mise en conformité fiscale]
+    ar:
+      terme: كلفة الامتثال الجبائي
+      definition: >
+        الكلفة التي يتحمّلها المطالب بالأداء للوفاء بواجباته الجبائية، علاوة على
+        الأداء نفسه: الوقت المخصّص، واللجوء إلى مستشار، والإجراءات، ومسك الوثائق.
+        وهي تختلف عن كلفة الاستخلاص التي تتحمّلها الإدارة الجبائية. ويمثّل
+        مجموعهما كلفة تشغيل الأداء.
       synonymes: []
 
   # Määttänen et Terviö : pages de la version de travail récupérée (note CSL).

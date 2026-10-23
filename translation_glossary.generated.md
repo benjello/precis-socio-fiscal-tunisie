@@ -159,6 +159,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Cotisation supplémentaire | الاشتراك الإضافي |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
 | Cours particuliers | الدروس الخصوصية |  |
+| Coût de conformité | كلفة الامتثال الجبائي |  |
 | Coût du travail | كلفة العمل |  |
 | Coût marginal des fonds publics | الكلفة الحدية للأموال العمومية |  |
 | Coût unitaire | كلفة التلميذ |  |
@@ -176,6 +177,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Délai de carence | فترة الانتظار |  |
 | Délégation de compétences | تفويض الصلاحيات |  |
 | Délégation spéciale | النيابة الخصوصية |  |
+| Demi-décime | نصف العشر الإضافي |  |
 | Dépenses de développement | نفقات التنمية |  |
 | Dépenses de gestion | نفقات التصرف |  |
 | Dépenses fiscales | النفقات الجبائية |  |
@@ -189,21 +191,25 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Doctorat | الدكتوراه |  |
 | Droit à déduction | حق الطرح |  |
 | Droit complémentaire | معلوم التسجيل التكميلي |  |
+| Droit d'apport | معلوم تسجيل الحصص |  |
 | Droit d'inscription foncière | معلوم الترسيم العقاري |  |
 | Droit de consommation | المعلوم على الاستهلاك |  |
 | Droit de mutation | معلوم نقل الملكية |  |
+| Droit de timbre | معلوم الطابع الجبائي |  |
 | Droit fixe | المعلوم القار |  |
 | Droit forfaitaire simplifié | الأداء التقديري المبسط |  |
 | Droit progressif (terrains d'habitat) | المعلوم التصاعدي |  |
 | Droit proportionnel | المعلوم النسبي |  |
 | Droits d'enregistrement | معاليم التسجيل |  |
 | Droits d'inscription | رسوم التسجيل |  |
+| Droits sur les actes et transactions | معاليم على العقود والمبادلات |  |
 | Durée de constatation du crédit de TVA | مدة تسجيل فائض الأداء على القيمة المضافة بالتصاريح |  |
 | Durée légale du travail | مدة الشغل |  |
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | École préparatoire | المدرسة الإعدادية |  |
 | Éducation préscolaire | التربية قبل المدرسية |  |
+| Effet cascade | الأثر التراكمي |  |
 | Effet de verrouillage | أثر التجميد |  |
 | Effort fiscal | المجهود الجبائي |  |
 | Éléments permanents de la rémunération | العناصر القارة للمرتب |  |
@@ -252,6 +258,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds national de la réforme éducative | الصندوق الوطني للإصلاح التربوي |  |
 | Fonds spéciaux du Trésor | الحسابات الخاصة في الخزينة |  |
 | Forces de sécurité intérieure | قوات الأمن الداخلي |  |
+| Formalité de l'enregistrement | إجراء التسجيل |  |
 | Formation en alternance | التكوين بالتداول |  |
 | Formation professionnelle initiale | التكوين المهني الأساسي |  |
 | Foyer scolaire | المبيت المدرسي |  |
@@ -314,6 +321,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Licenciement abusif | الطرد التعسفي |  |
 | Licenciement ou mise en chômage pour raisons économiques ou technologiques | الطرد أو الإيقاف عن العمل لأسباب اقتصادية أو فنية |  |
 | Limite de calcul des prestations | الحدّ الأقصى لاحتساب المنافع |  |
+| Liquidité | السيولة |  |
 | Livraison à soi-même | التسليم للنفس |  |
 | Livre foncier | السجل العقاري |  |
 | Livret de soins | دفتر العلاج |  |
@@ -333,7 +341,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Micro-entreprise | مؤسسة صغرى |  |
 | Minimum d'impôt | الضريبة الدنيا |  |
 | Minimum d'impôt sur le chiffre d'affaires | الضريبة الدنيا |  |
-| Minimum de perception | الحد الأدنى للاستخلاص |  |
+| Minimum de perception | الاستخلاص الأدنى |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
 | Mission budgétaire | المهمة |  |
 | Moueddeb | المؤدب |  |
@@ -541,9 +549,14 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taxe sur les terrains non bâtis | المعلوم على الأراضي غير المبنية | TNB |
 | Taxe unique de compensation de transports routiers | المعلوم الوحيد التعويضي على النقل بالطرقات |  |
 | Taxe unique de compensation sur les produits pétroliers | المعلوم الوحيد التعويضي على منتوجات النفط |  |
+| Taxe unique sur les assurances | المعلوم الوحيد على التأمين | TUA |
 | Terres collectives | الأراضي الاشتراكية |  |
 | Territorialité de la TVA | مبدأ الإقليمية |  |
 | Ticket modérateur | المعلوم التعديلي |  |
+| Timbre d'avocat | طابع المحاماة |  |
+| Timbre de dimension | معلوم الطابع حسب حجم الورق |  |
+| Timbre mobile | الطابع غير القار |  |
+| Timbre proportionnel | معلوم الطابع النسبي |  |
 | Titre foncier | الرسم العقاري |  |
 | Titre gelé | الرسم العقاري المجمد |  |
 | Titularisation | ترسيم |  |
