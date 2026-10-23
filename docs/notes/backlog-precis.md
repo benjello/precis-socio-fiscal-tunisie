@@ -108,7 +108,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
-| Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, français seul, hors page d'accueil ; séries budgétaires 2016-2024 et 1987-2009 ; rien de budgétaire entre 2010 et 2016 ni avant 1987 | Articles « octroi de la garantie de l'État » des lois de finances de 1961 à 1994, fascicules locaux : série légale du plafond |
+| Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, français seul, hors page d'accueil ; séries budgétaires 2016-2024 et 1987-2009 ; rien de budgétaire entre 2010 et 2016 ni avant 1987 | Articles « octroi de la garantie de l'État » des lois de finances de 1961 à 1994, fascicules locaux : série légale du plafond ; **vue en part du PIB et des dépenses de l'État** de `#fig-ep-plafond-legal` (23/10/2026) : PIB de 1961 à 1994 (Banque mondiale sans base dite jusqu'en 1991, INS base 1983 de 1992 à 1994), dépenses de l'État hors service de la dette de 1986 à 1994 seulement ; restent à lire les totaux des budgets des lois de finances de 1959-60 à 1985 (fascicules locaux scannés, OCR à lancer ; lois de règlement) pour prolonger la part des dépenses, et à obtenir un PIB de 1959-60 et 1960 |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -3160,9 +3160,9 @@ Ce qui reste :
 - **Avant 1987, et avant 2016 pour les transferts et la dette garantie** : rien (fiche
   `r-ep-series-budgetaires-avant-2016`). Pistes non ouvertes : rapports annuels de la Banque
   centrale, lois de règlement, Cour des comptes (dette publique extérieure, 2018), plans de
-  développement. Le plafond des garanties est dans chaque loi de finances depuis 1961
-  (intitulés indexés jusqu'en 1994 ; fascicules **lisibles** dans le corpus, montants à lire) :
-  seul temps long à portée de main. Recettes de cession après 2009 : aucune série.
+  développement. Le plafond des garanties est lu de 1958-59 à 1994 (voir le point « Plafond
+  légal » plus bas) ; de 1995 à 2015, fascicules **lisibles** dans le corpus, articles à lire.
+  Recettes de cession après 2009 : aucune série.
 - **Annexes du projet de loi de finances pour 2026** : non obtenues (fiche
   `r-ep-annexes-plf-2026`).
 - **« Hors compensation, hors caisses » non calculé** : le total des transferts (annexe 8)
@@ -3192,6 +3192,20 @@ Ce qui reste :
   lue dans le corpus ; fiche `r-garantie-etat-plafond-2020-lfr` résolue). Les 7 500 MD de la
   traduction française du rapport ne sont pas dans la loi. À reporter dans `tunisia-data`, dont
   la série `garanties-etat` garde les deux valeurs et dit le point « non tranché ».
+- **Plafond légal de la garantie, 1958-59 à 1994 — fait le 23 octobre 2026**
+  (`docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md`, section
+  `#sec-ep-garanties-plafond-legal`, figure `fig-ep-plafond-legal`, registre `tbl-ep-plafond-registre`
+  et `tbl-ep-garanties-commission` repliés, relevé `listes/plafond-garanties-lois-de-finances.csv`
+  contrôlé par `tests/test_listes_entreprises_publiques.py`). Trente-huit lois lues aux fascicules
+  français du corpus ; arrêté du 3 avril 1993 sur la commission de garantie lu (le chapitre
+  l'attribuait à une commission d'instruction : corrigé). **Restent** : plafond de 1995 à 2015
+  (fiche `r-ep-plafond-garantie-1995-2015`, fascicules du corpus à lire) ; gestion 1960 et décret du
+  29 juin 1957 (fascicule absent du corpus local, à obtenir sur pist.tn) ; lois de finances
+  complémentaires de 1969 à 1991 à lire en entier ; article 36 de la loi n° 77-81 (fonds
+  d'amortissement de la garantie de bonne fin) ; acte de la commission d'instruction ; prêts du
+  Trésor aux entreprises publiques (article voisin, montants vus, pas en série) ; parts du budget
+  et du PIB avant 1986 (aucun dénominateur) ; libellés arabes de la figure ; `lf-1978` de
+  `compensation` à fondre avec `loi77-81-lf1978` (`docs/notes/biblio-a-rapatrier.md`).
 - **Second passage de la note** (son § 8) : ventilation par nature de 2023 (écart imprimé de
   23,0 MD) ; encours des prêts rétrocédés (rapport sur la dette publique, pages repérées) ;
   rapports sur la dette publique des éditions LF 2021 et LF 2024 ; page « bilan global » de la
