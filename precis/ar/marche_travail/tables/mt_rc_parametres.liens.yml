@@ -16,19 +16,19 @@
 - libelle: مكافأة نهاية الخدمة، السقف
   parametre: parameters/marche_travail/rupture_contrat/gratification_fin_service/plafond.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.gratification_fin_service.plafond/table/
-- libelle: غرامات الطرد التعسفي، الحد الأدنى عن كل سنة أقدمية
+- libelle: غرم الضرر عن الطرد التعسفي، الحد الأدنى عن كل سنة أقدمية
   parametre: parameters/marche_travail/rupture_contrat/dommages_interets/minimum_par_annee_anciennete.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.minimum_par_annee_anciennete/table/
-- libelle: غرامات الطرد التعسفي، الحد الأقصى عن كل سنة أقدمية
+- libelle: غرم الضرر عن الطرد التعسفي، الحد الأقصى عن كل سنة أقدمية
   parametre: parameters/marche_travail/rupture_contrat/dommages_interets/maximum_par_annee_anciennete.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.maximum_par_annee_anciennete/table/
-- libelle: غرامات الطرد التعسفي، السقف
+- libelle: غرم الضرر عن الطرد التعسفي، السقف
   parametre: parameters/marche_travail/rupture_contrat/dommages_interets/plafond.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.plafond/table/
-- libelle: غرامات خرق الإجراءات، الحد الأدنى
+- libelle: غرم الضرر عن خرق الإجراءات، الحد الأدنى
   parametre: parameters/marche_travail/rupture_contrat/dommages_interets/vice_procedure_minimum.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.vice_procedure_minimum/table/
-- libelle: غرامات خرق الإجراءات، الحد الأقصى
+- libelle: غرم الضرر عن خرق الإجراءات، الحد الأقصى
   parametre: parameters/marche_travail/rupture_contrat/dommages_interets/vice_procedure_maximum.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.rupture_contrat.dommages_interets.vice_procedure_maximum/table/
 - libelle: فترة التجربة، المدة القصوى
