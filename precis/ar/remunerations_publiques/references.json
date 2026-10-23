@@ -215,7 +215,7 @@
     {
       "id": "decret90-1855",
       "type": "legislation",
-      "note": "citation-key: decret90-1855",
+      "note": "citation-key: decret90-1855\nJournal officiel n° 75 du 20 novembre 1990, édition arabe.",
       "title": "الأمر عدد 90-1855 المؤرخ في 10 نوفمبر 1990 يتعلق بضبط نظام تأجير رؤساء المؤسسات ذات الأغلبية العمومية",
       "URL": "https://www.pist.tn/jort/1990/1990A/Ja07590.pdf",
       "issued": {
@@ -226,14 +226,19 @@
             10
           ]
         ]
-      }
+      },
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "75"
     },
     {
       "id": "decret2015-2217",
       "type": "legislation",
-      "note": "citation-key: decret2015-2217",
-      "title": "الأمر الحكومي عدد 2015-2217 المؤرخ في 11 ديسمبر 2015 يتعلق بضبط نسب عناصر تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية",
+      "note": "citation-key: decret2015-2217\nJournal officiel n° 101 du 18 décembre 2015, édition arabe, pp. 3469-3471.",
+      "title": "الأمر الحكومي عدد 2217 لسنة 2015 المؤرخ في 11 ديسمبر 2015 المتعلق بضبط نظام تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية",
       "URL": "https://www.pist.tn/jort/2015/2015A/Ja1012015.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "101",
+      "page": "3469-3471",
       "issued": {
         "date-parts": [
           [
@@ -243,6 +248,114 @@
           ]
         ]
       }
+    },
+    {
+      "id": "decret2015-968",
+      "type": "legislation",
+      "note": "citation-key: decret2015-968\nJournal officiel n° 63 du 7 août 2015, édition arabe, pp. 2188-2189.",
+      "title": "الأمر الحكومي عدد 968 لسنة 2015 المؤرخ في 6 أوت 2015 المتعلق بضبط نظام تأجير المديرين العامين للبنوك العمومية ورؤساء مجالس إدارتها",
+      "URL": "https://www.pist.tn/jort/2015/2015A/Ja0632015.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "63",
+      "page": "2188-2189",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "id": "decret2020-422",
+      "type": "legislation",
+      "note": "citation-key: decret2020-422\nJournal officiel n° 68 du 16 juillet 2020, édition arabe, pp. 1740-1742.",
+      "title": "الأمر الحكومي عدد 422 لسنة 2020 المؤرخ في 14 جويلية 2020 المتعلق بأحكام خاصة بالشركة الوطنية للاتصالات",
+      "URL": "https://www.pist.tn/jort/2020/2020A/Ja0682020.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "68",
+      "page": "1740-1742",
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "id": "decret2017-1387",
+      "type": "legislation",
+      "note": "citation-key: decret2017-1387\nJournal officiel n° 104 du 29 décembre 2017, édition arabe, p. 4618.",
+      "title": "الأمر الحكومي عدد 1387 لسنة 2017 المؤرخ في 19 ديسمبر 2017 المتعلق بضبط نظام تأجير رئيس الهيئة الوطنية للاتصالات ومنحة الحضور المسندة لفائدة أعضائها",
+      "URL": "https://www.pist.tn/jort/2017/2017A/Ja1042017.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "104",
+      "page": "4618",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            12,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "id": "decret2013-4953",
+      "type": "legislation",
+      "note": "citation-key: decret2013-4953\nJournal officiel n° 98 du 10 décembre 2013, édition arabe, pp. 4103-4106.",
+      "title": "الأمر عدد 4953 لسنة 2013 المؤرخ في 5 ديسمبر 2013 المتعلق بتطبيق أحكام الفصل (22 ثالثا) من القانون عدد 9 لسنة 1989 المؤرخ في أول فيفري 1989 المتعلق بالمساهمات والمنشآت والمؤسسات العمومية على البنوك العمومية",
+      "URL": "https://www.pist.tn/jort/2013/2013A/Ja0982013.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "98",
+      "page": "4103-4106",
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            12,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "kapitalis-2015-pdg-entreprises-publiques",
+      "type": "webpage",
+      "title": "Hausse des rémunérations des Pdg des entreprises et organismes publics",
+      "author": [
+        {
+          "family": "Ben Ameur",
+          "given": "Nabil"
+        }
+      ],
+      "container-title": "Kapitalis",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            12,
+            22
+          ]
+        ]
+      },
+      "URL": "https://kapitalis.com/tunisie/?p=31496",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            23
+          ]
+        ]
+      },
+      "note": "citation-key: kapitalis-2015-pdg-entreprises-publiques\nArticle de presse en ligne, source tertiaire, lu le 23 octobre 2026 (HTTP 200 ; publié le 22 décembre 2015, signé Nabil Ben Ameur). Cité comme presse, jamais pour les montants. Page en français (pas d'édition arabe)."
     },
     {
       "id": "decret-statut-caisses-1999",

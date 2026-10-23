@@ -1,0 +1,532 @@
+# Le logement social : le fonds de promotion du logement pour les salariés et les programmes publics {#sec-logement-social .domicile-unique}
+
+<!-- TODO (architecte) : chapitre à migrer vers un livre « Le logement » (partie IV) quand il sera ouvert ; ancres sans nom de livre (sec-log-, r-log-) ; voir docs/notes/backlog-precis.md, item 13. -->
+
+La contribution des employeurs qui alimente le fonds — taux, assiette, redevables, recouvrement — est exposée dans le volume [« Cotisations sociales »](../cotisations_sociales/_prelevements_salaires.html#sec-cot-foprolos) ; la contribution au Fonds national d'amélioration de l'habitat, adossée à la taxe sur les immeubles bâtis, dans le volume [« Les finances locales »](../finances_locales/_impots_immeubles.html#sec-fl-immeubles-fnah) ; le statut, le capital et les comptes des sociétés et agences publiques du logement, dans le volume [« Les entreprises publiques »](../entreprises_publiques/index.html). La priorité d'accès au logement social des catégories admises à l'Amen social est présentée avec ce programme (@sec-nc-amen-2019).
+
+L'État aide des ménages à se loger par des prêts à taux réduit, des dons, des subventions et des logements produits par des organismes publics. Ces aides sont financées par une contribution sur les salaires, versée au [fonds de promotion du logement pour les salariés](#g-fonds-foprolos), et par le budget de l'État. Le fonds est le seul instrument permanent depuis 1977 : le chapitre suit son objet, ses ressources, sa gestion et ses prêts, et présente à leur naissance les programmes qui puisent dans ses ressources ou se définissent par rapport à ses catégories.
+
+Le chapitre donne une vue d'ensemble, la mise en place de 1977 et ce qui l'a précédée, les cinq grandes réformes dans l'ordre des dates, l'état du droit en 2026, puis une section par dispositif : la résorption des logements rudimentaires et le Fonds national d'amélioration de l'habitat, le programme spécifique pour le logement social, le programme du premier logement, les opérateurs publics et la location-vente, le régime spécial de 1999. Il se termine par ce que pèse le fonds — prévisions des lois de finances, suivi du ministère des Finances, estimations d'une étude, tenus séparés — et par ce qu'en dit l'économie. Les montants sont en dinars (D) et en millions de dinars (MD) courants ; les publics se définissent en multiples du [salaire minimum interprofessionnel garanti](#g-smig) (SMIG).
+
+## Vue d'ensemble {#sec-log-vue-ensemble}
+
+Depuis 1977, une contribution des employeurs sur les salaires finance des prêts aux salariés qui accèdent à la propriété d'un logement ; depuis 2012 et 2017, le budget de l'État finance deux programmes pour les ménages à faible revenu et à revenu moyen, salariés ou non ; depuis 2026, le fonds finance aussi des logements construits par des opérateurs publics.
+
+| Depuis | Dispositif | Qui y a droit | Financé par | Forme | Où lire |
+|:---|:---|:---|:---|:---|:---|
+| [1^er^ décembre 1977]{.insecable} | prêts du fonds de promotion du logement pour les salariés | salariés de 1 à 3 SMIG à l'origine ; quatre catégories jusqu'à 6 SMIG en 2026 | [contribution](#g-foprolos) des employeurs sur les salaires ; remboursements | prêt à taux réduit ; don pour la première catégorie depuis 2016 | @sec-log-1977, @sec-log-etat-du-droit |
+| août 1977 | [Société de promotion des logements sociaux](#g-sprols) (SPROLS) | assurés sociaux | capital et programmes des caisses de sécurité sociale | logement construit, loué ou cédé | @sec-log-operateurs |
+| [17 avril 1986]{.insecable} | programme national de résorption des logements rudimentaires | populations mal logées | contribution sur les bénéfices ; prélèvements sur le fonds, 1987-1990 | logement remplacé ou amélioré | @sec-log-pnrlr |
+| août 2004 | [Fonds national d'amélioration de l'habitat](#g-fnah) (FNAH), refondu | propriétaires et, depuis 2012, occupants ; collectivités locales ; organismes de réhabilitation | contribution adossée à la taxe sur les immeubles bâtis ; prélèvements sur le fonds, 2011-2013 | prêt ; subvention | @sec-log-fnah |
+| mai 2012 | [programme spécifique pour le logement social](#g-programme-specifique-logement-social) | familles sans logement jusqu'à 3 SMIG, salariées ou non | budget de l'État | subvention ; crédit sans intérêt ; logement cédé ou loué | @sec-log-psls |
+| septembre 2016 | refonte des prêts du fonds : trois catégories jusqu'à 4,5 SMIG | salariés | contribution des employeurs | prêt ; don | @sec-log-2016 |
+| 2017 | programme du [premier logement](#g-premier-logement) | familles sans logement de 4,5 à 10 SMIG | budget de l'État, par un compte à la Banque centrale | prêt bonifié couvrant l'autofinancement | @sec-log-premier-logement |
+| [1^er^ janvier 2026]{.insecable} | financement des projets des opérateurs publics ; [location-vente](#g-location-vente) | catégories de salariés du fonds | contribution des employeurs | logement cédé en location-vente ou à tempérament | @sec-log-operateurs |
+
+: Le logement social dans l'ordre de naissance des dispositifs, 1977-2026 : public, financement, forme {#tbl-log-naissances .sm tbl-colwidths="[13,22,22,17,14,12]"}
+
+- **Deux sources de financement.** La contribution sur les salaires finance les prêts aux salariés, qui seuls y ont accès ; le budget de l'État finance le programme spécifique et le premier logement, ouverts aussi aux non-salariés (@sec-log-psls, @sec-log-premier-logement). Le fonds a en outre servi de réserve à d'autres politiques : de 1987 à 1990 et de 2011 à 2013, des lois de finances ont prélevé sur ses disponibilités au profit de la résorption de l'habitat rudimentaire et du FNAH (@tbl-log-prelevements).
+- **Des prêts aux personnes, puis des projets.** De 1977 à 2025, le fonds prête aux salariés ; depuis 2026, il finance aussi, sans intérêt, les logements que la [Société nationale immobilière de Tunisie](#g-snit) (SNIT), la SPROLS et l'[Agence foncière d'habitation](#g-afh) (AFH) construisent pour ses catégories (@sec-log-2026).
+- **Des publics définis en multiples du SMIG.** Ils vont de moins de 1 SMIG, pour la première catégorie du programme spécifique, à 10 SMIG pour le premier logement ; le premier logement commence à 4,5 SMIG, plafond de la troisième catégorie du fonds en 2016 (@sec-log-2017).
+
+## La mise en place, 1957-1977 {#sec-log-mise-en-place}
+
+En 1977, l'État crée en même temps une contribution sur les salaires, un fonds spécial du Trésor qui en reçoit le produit, des prêts directs aux salariés et une société publique de logements pour les assurés sociaux. Il trouve en place une société immobilière d'État et un régime d'épargne-logement.
+
+### Avant 1977 {#sec-log-antecedents}
+
+Avant 1977, l'aide publique au logement passe par une société d'État et par l'épargne des ménages.
+
+- **La SNIT, depuis 1957.** La Société nationale immobilière de Tunisie est une entreprise à caractère commercial régie par le droit des sociétés anonymes, dont le capital est apporté par l'État ; ses statuts sont [en vigueur au 1^er^ septembre 1957](#r-log-snit-1957). Elle réalise des opérations immobilières pour son compte, celui de l'État ou des collectivités, et peut « éventuellement » servir « d'intermédiaire et de contrôleur pour la distribution de crédits publics en matière de construction et notamment dans le domaine H.B.M. et H.L.M. », c'est-à-dire des habitations à bon marché et à loyer modéré.
+- **L'épargne-logement.** Un régime d'[épargne-logement](#g-epargne-logement) existe depuis la loi n° 73-24 du 7 mai 1973. [Le décret qui le modifie](#r-log-epargne-1977), publié le même jour que le décret d'application du fonds, prévoit des prêts « pour parfaire l'épargne exigée ».
+
+<!-- TODO (documentaliste) : antécédents à établir sur les textes (fascicules scannés, à océriser) : Fonds national d'amélioration de l'habitat de 1956 (décrets des 23 août et 16 novembre 1956, décret du 29 juin 1957, art. 12 ; loi n° 60-5, DL n° 63-1, loi n° 66-75) ; sociétés HBM et HLM et caisse mutuelle de crédit immobilier de Tunisie (loi n° 58-82 ; DL n° 61-7 ratifié par la loi n° 61-29 ; loi n° 61-18 ; décrets de liquidation de 1967 à 1985) ; loi n° 73-24 et décrets n° 74-223 et 74-224 (Caisse nationale d'épargne-logement) ; loi n° 73-21 et décret n° 74-33 (AFH) ; textes du Protectorat (Journal officiel tunisien, Bulletin économique et social de la Tunisie). Modifications des statuts de la SNIT (lois n° 58-47, 59-58, 61-57) ; la loi n° 59-58 est datée du 9 juin 1959 par l'index et la loi n° 2026-1, du 17 mai 1959 par les visas des décrets n° 2012-1224 et 2017-161 : date à trancher. -->
+
+:::: {.chronologie-repliable titre="Avant 1977 : la SNIT et l'épargne-logement, textes et articles, 1957-1977"}
+
+| Date d'effet | Portée | Texte et article | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-log-snit-1957}[1^er^ septembre 1957]{.insecable} | antécédent | loi n° 57-19 du 10 septembre 1957 [@loi57-19, art. 1er et 3 ; statut, art. 1er, 3, 6 et 8] | statuts « en vigueur à compter du 1er septembre 1957 » (art. 1er) ; exonération des droits d'enregistrement et de mutation (art. 3). Statut : entreprise à caractère commercial régie par le droit des sociétés anonymes (art. 1er) ; objet, dont la distribution éventuelle de crédits publics HBM et HLM (art. 3) ; capital apporté par l'État, participations de tiers limitées à 49 % (art. 6) ; tutelle des Finances et des Travaux publics et de l'Habitat (art. 8) |
+| []{#r-log-epargne-1977}[1^er^ décembre 1977]{.insecable} | antécédent | décret n° 77-964 du 24 novembre 1977 [@decret77-964, art. 1er et 3] | modifie le régime d'épargne-logement de la loi n° 73-24 ; prêts « pour parfaire l'épargne exigée » |
+
+::::
+
+### Les lois du 3 août 1977 {#sec-log-1977}
+
+Deux lois votées le 29 juillet 1977 et promulguées le 3 août créent le fonds et la SPROLS ; une loi de finances complémentaire du même jour fait du fonds un [fonds spécial du Trésor](#g-fonds-special-tresor).
+
+**L'objet du fonds.** La contribution de 2 % des salaires, due par tout employeur public ou privé à l'exception des exploitants agricoles privés, est exigible [à compter du 1^er^ août 1977](#r-log-res-1977) ([volume des cotisations](../cotisations_sociales/_prelevements_salaires.html#sec-cot-foprolos-taux)). Son produit va au « Fonds de Promotion du Logement pour les Salariés ». La loi dispose que ce fonds « est destiné à venir en aide, dans les conditions et selon les modalités qui seront fixées par décret, aux salariés des employeurs visés à l'article premier de la présente loi, désireux d'accéder à la propriété ou à la copropriété d'un immeuble à usage d'habitation ».
+
+**Ses ressources.** Outre la contribution, [le fonds reçoit](#r-log-res-1977) l'amortissement des prêts, leurs intérêts et « toutes autres sommes qui viendraient à lui être affectées ultérieurement ».
+
+**Sa gestion.** [Le fonds est un fonds spécial du Trésor](#r-log-fst-1977), dont le ministre des Finances est l'ordonnateur et dont les prévisions de dépenses sont évaluatives. [La loi prévoit](#r-log-gestion-1977) que sa gestion « pourrait être confiée à un organisme de crédit en vertu d'une convention à conclure entre cet organisme et le Ministre des Finances ».
+
+**Les prêts de 1977.** [Le décret d'application](#r-log-pret-1977) ouvre deux prêts, selon le salaire, aux salariés non propriétaires et pour leur habitation principale ; l'annuité ne doit pas dépasser le tiers des revenus bruts. Les salariés gagnant de 1 à 1,5 SMIG empruntent pour construire ou acheter un logement neuf ; ceux de 1,5 à 3 SMIG, pour compléter leur épargne-logement (@tbl-log-prets-1977). Le fonds consent aussi des crédits de préfinancement, au taux du marché et pour trois ans au plus, aux [promoteurs immobiliers agréés](#g-promoteur-agree) qui construisent des logements suburbains. Un arrêté du ministre des Finances fixe le programme d'emploi des ressources, après avis d'un conseil où siègent les administrations, la Banque centrale, le Parti socialiste destourien, l'UGTT et l'UTICA.
+
+| | Salaire de 1 à 1,5 SMIG | Salaire de 1,5 à 3 SMIG |
+|:---|:---|:---|
+| Objet | construire un logement, ou acheter un logement neuf à un promoteur agréé | compléter l'épargne-logement |
+| Logement | suburbain, 50 m² au plus | économique, 90 m² au plus |
+| Autofinancement minimal | 15 % | — |
+| Prêt au plus | 2 800 D | 528 D |
+| Taux annuel | 3 % | 4,5 % |
+| Durée | 15 ans | — |
+
+: Les deux prêts du fonds aux salariés en 1977 : objet, logement, montant, taux et durée ([décret du 24 novembre 1977](#r-log-pret-1977)) {#tbl-log-prets-1977}
+
+<!-- TODO (rédacteur) : donner les montants de 1977 aussi en dinars constants de 2025 (déflateur du volume « Le marché du travail »), dans une colonne voisine. -->
+<!-- TODO (documentaliste) : durée et autofinancement du prêt de l'art. 6 du décret n° 77-965, à relever au fascicule ; date d'effet du décret (1er décembre 1977 par la règle du jour franc, publication du 29 novembre) à confirmer. -->
+
+La même séance crée la [SPROLS](#r-log-sprols-1977), établissement public à caractère industriel et commercial chargé de « promouvoir la construction de logements au profit des assurés sociaux » ; sa mission et son financement par les caisses de sécurité sociale sont présentés avec les opérateurs (@sec-log-operateurs).
+
+<!-- TODO (documentaliste) : contexte de 1977 dans les mots des sources de l'époque (Ve Plan 1977-1981, volet habitat ; débats de l'Assemblée nationale du 29 juillet 1977) ; date de publication à retenir pour les lois n° 77-53, 77-54 et 77-60 (JORT n° 53 daté « 5-9 août 1977 »). -->
+
+## Les grandes réformes, 1986-2026 {#sec-log-reformes}
+
+Cinq réformes changent ce que le fonds sert ou font naître un dispositif à côté de lui : la résorption des logements rudimentaires, financée en partie par le fonds de 1987 à 1990 ; le programme spécifique pour le logement social en 2012 ; la refonte des prêts du fonds en 2016 ; le premier logement en 2017 ; le financement des logements des opérateurs publics en 2026.
+
+| Réforme | Ce que la loi cherche | Avant → après | Mise en œuvre |
+|---|---|---|---|
+| [**1986-1990 — la résorption des logements rudimentaires, le fonds mis à contribution**](#r-log-prel-1987) | programme « ayant pour but d'améliorer les conditions d'habitat des populations mal logées sur l'ensemble du territoire » | le fonds ne sert que les salariés acquéreurs → ses disponibilités financent aussi un programme pour les mal-logés, salariés ou non | programme en avril 1986 ; prélèvements de 1987 à 1990 |
+| [**2012 — le programme spécifique pour le logement social**](#r-log-psls-2012) | « Création d'un programme spécifique pour le logement social », « au profit des catégories sociales à faible revenu » | prêts du fonds réservés aux salariés ; résorption de l'habitat rudimentaire et FNAH → un programme financé par le budget de l'État, pour les familles sans logement jusqu'à 3 SMIG, salariées ou non | loi de mai 2012 ; décret d'août 2012 ; prélèvements de 2011 à 2013 au profit du FNAH |
+| [**2016 — la refonte des prêts du fonds**](#r-log-pret-2016) | décret « fixant les modalités et les conditions des interventions du fonds » ; objet non énoncé | en 1977, deux prêts jusqu'à 3 SMIG → trois catégories jusqu'à 4,5 SMIG ; prêts pour un terrain et pour une extension ; don pour la première catégorie ; revente interdite pendant dix ans | septembre 2016 ; quatrième catégorie et retraités en 2023 |
+| [**2017 — le premier logement**](#r-log-pl-2017) | « Création d'une ligne de financement pour le soutien du secteur de l'habitat dans le cadre du programme du premier logement », « au profit des catégories à revenu moyen » | prêts du fonds plafonnés à 4,5 SMIG → un prêt bonifié couvrant l'autofinancement, de 4,5 à 10 SMIG | décret de janvier 2017 ; construction ajoutée en 2025 |
+| [**2026 — le fonds finance les logements des opérateurs publics**](#r-log-res-2026) | consacrer le droit au logement ; élargir le champ d'intervention du fonds (rubriques arabes) | le fonds prête aux personnes → il finance aussi, jusqu'à la totalité du coût et sans intérêt, les projets de la SNIT, de la SPROLS et de l'AFH | lois de février 2026 sur la location-vente ; décret de juin 2026 |
+
+: Les cinq grandes réformes du logement social, 1986-2026 ; entre guillemets, les mots des textes {#tbl-log-reformes}
+
+Les textes des règles de base du fonds — ressources et prélèvements, gestion, prêts aux salariés — sont dans les trois blocs qui suivent ; ceux de chaque dispositif, dans sa section.
+
+:::: {.chronologie-repliable titre="Ressources du fonds de promotion du logement pour les salariés et prélèvements sur le fonds : textes, articles et montants, 1977-2026"}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-log-res-1977}[1^er^ août 1977]{.insecable} | **mise en place** | loi n° 77-54 du 3 août 1977 [@loi77-54, art. 5-6 et 10] | — → contribution exigible à compter du 1er août 1977 (art. 10) ; produit versé au fonds, « destiné à venir en aide […] aux salariés […] désireux d'accéder à la propriété ou à la copropriété d'un immeuble à usage d'habitation » (art. 5) ; autres ressources : amortissement des prêts, intérêts, « toutes autres sommes qui viendraient à lui être affectées ultérieurement » (art. 6) |
+| []{#r-log-prel-1987}1987 | **rupture** | loi n° 86-106, loi de finances pour 1987 [@loi86-106-lf1987, art. 96, p. 1624] | premier prélèvement : 5 MD « sur les disponibilités du fonds » au profit du fonds de concours du programme national de résorption des logements rudimentaires |
+| []{#r-log-prel-1988}1988 | étape — de 1987 | loi n° 87-83, loi de finances pour 1988 [@loi-87-83-lf-1988, art. 76, p. 1635] | 5 MD, même destination |
+| []{#r-log-taux-1989}1989 | ajustement | loi n° 88-145, loi de finances pour 1989 [@loi-88-145-lf-1989, art. 35] | taux de la contribution : 2 % → 1 %, sur les salaires et rétributions ([volume des cotisations](../cotisations_sociales/_prelevements_salaires.html#sec-cot-foprolos-taux)) |
+| []{#r-log-prel-1989}1989 | étape — de 1987 | même loi [@loi-88-145-lf-1989, art. 68, p. 1800] | « transfert » de 15 MD du fonds au fonds de concours du programme |
+| []{#r-log-prel-1990}1990 | étape — de 1987 | loi n° 89-115, loi de finances pour 1990 [@lf-1990, art. 46, p. 2151] | transfert de 15 MD, même destination |
+| []{#r-log-prel-2011}2011 | étape — de 1987 | décret-loi n° 2011-56, loi de finances complémentaire pour 2011 [@dl-2011-56-lfc-2011, art. 3, p. 1013] | 40 MD « pour l'année 2011 » : 20 MD au FNAH, 20 MD au Compte national de solidarité sociale |
+| []{#r-log-prel-2012}2012 | étape — de 1987 | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, art. 36, p. 927] | 60 MD « pour l'année 2012 » au FNAH |
+| []{#r-log-prel-2013}2013 | étape — de 1987 | loi n° 2012-27, loi de finances pour 2013 [@lf-2013, art. 11, p. 5] | 60 MD « pour l'année 2013 » au FNAH |
+| []{#r-log-res-2026}[1^er^ janvier 2026]{.insecable} | **rupture** | loi n° 2025-17, loi de finances pour 2026 [@lf-2026, art. 21 et 110, p. 4235] | rubriques : « تكريس الحق في السكن ودعم آليات توفير المسكن اللائق » ; « توسيع ميدان تدخل صندوق النهوض بالمسكن لفائدة الأجراء ». Un alinéa est ajouté à l'art. 5 de la loi n° 77-54 : le fonds contribue au financement de la construction de logements et de l'aménagement de lots sociaux réalisés par la SNIT et ses filiales, la SPROLS et l'AFH, aux conditions fixées par décret ; effet au 1er janvier 2026 (art. 110) |
+
+::::
+
+<!-- TODO (terminologue) : traduction française des deux rubriques arabes de la LF 2026, art. 21, à valider avant de la citer entre guillemets (traduction de travail : « consacrer le droit au logement et soutenir les mécanismes de logement décent » ; « élargir le champ d'intervention du fonds de promotion du logement pour les salariés »). -->
+<!-- TODO (documentaliste) : rubriques mot pour mot des articles de prélèvement (LF 1987, art. 96 ; LF 1988, art. 76 ; LF 1989, art. 68 ; LF 1990, art. 46 ; DL n° 2011-56, art. 3 ; LFC 2012, art. 36 ; LF 2013, art. 11) ; modification de la loi n° 77-54 par la LF 1994 (loi n° 93-125), citée dans les visas du décret n° 99-96. -->
+
+:::: {.chronologie-repliable titre="Gestion du fonds de promotion du logement pour les salariés : fonds spécial du Trésor, ordonnateur, gestionnaire, textes, 1977-1993"}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-log-gestion-1977}août 1977 | **mise en place** | loi n° 77-54 du 3 août 1977 [@loi77-54, art. 9] | liquidation et ordonnancement par le ministre des Finances sur proposition d'un conseil ; « La gestion du fonds pourrait être confiée à un organisme de crédit en vertu d'une convention à conclure entre cet organisme et le Ministre des Finances » |
+| []{#r-log-fst-1977}août 1977 | **mise en place** | loi n° 77-60 du 3 août 1977, loi de finances complémentaire pour 1977 [@loi77-60-lfc1977, art. 14, p. 2107] | le fonds « constitue un fonds spécial du trésor », soumis aux art. 22 à 24 de la loi organique du budget de 1967 ; ordonnateur : le ministre des Finances ; prévisions de dépenses évaluatives |
+| []{#r-log-ordo-1993}1993 | ajustement | loi de finances pour 1993 [@lf-1993, art. 34, p. 1670] | ordonnateur : ministre des Finances → « Le Ministre de l'Equipement et de l'Habitat est l'Ordonnateur du fonds précité » |
+
+::::
+
+<!-- TODO (documentaliste) : ordonnateur après le décret-loi n° 2011-55 du 9 juin 2011 (JORT n° 43/2011, pp. 923-924, lisible dans le corpus) ; convention de gestion avec la Banque de l'Habitat, gestionnaire « depuis 1990 » selon Zaafrane 2014, p. 62, et texte de transformation de la CNEL en Banque de l'Habitat. Fiche proposée r-foprolos-convention-gestion (note logement-social-foprolos-2026-10-23, § 5), à verser au registre des recherches ; poser alors l'ancre de recherche ici. -->
+
+:::: {.chronologie-repliable titre="Prêts du fonds aux salariés : bénéficiaires, plafonds, taux et durées, textes et articles, 1977-2026"}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-log-pret-1977}[1^er^ décembre 1977]{.insecable} | **mise en place** | décret n° 77-965 du 24 novembre 1977 [@decret77-965, art. 1-12] | prêts pour construire, acheter un logement neuf à un promoteur agréé, préfinancer sa construction, « parfaire l'épargne exigée du salarié » (art. 1er) ; 1 à 1,5 SMIG : logement suburbain de 50 m² au plus, autofinancement de 15 %, prêt de 2 800 D au plus, 15 ans, 3 % (art. 2 et 5) ; 1,5 à 3 SMIG : logement économique de 90 m² au plus, prêt de 528 D, 4,5 % (art. 3 et 6) ; non-propriétaires, habitation principale (art. 4) ; préfinancement des promoteurs au taux du marché, trois ans au plus (art. 7) ; majoration de 2 % l'an en cas de cessation de paiement (art. 10) ; annuité au plus égale au tiers des revenus bruts (art. 11) ; programme d'emploi des ressources par arrêté (art. 12) |
+| []{#r-log-regime-1999}[27 janvier 1999]{.insecable} au plus tôt | **rupture** — propre au régime de 1999 | décret n° 99-96 du 11 janvier 1999 [@decret99-96, art. 1-3] | « dans le cadre de l'exécution d'accords internationaux dans le domaine immobilier », prêts pour « l'acquisition de logements anciens appartenant à des étrangers » (art. 1er) aux locataires ou occupants de bonne foi prioritaires, de 1 à 3 SMIG (art. 2) ; de 1 à 2 SMIG : autofinancement de 10 %, prêt au plus égal à 110 fois le SMIG et à 90 % du prix (art. 3) |
+| []{#r-log-prix-2013}[7 août 2013]{.insecable} au plus tôt | ajustement | arrêté du 29 juillet 2013 [@arrete-2013-07-29-prix-foprolos, art. 1-3] | prix plafonds des logements neufs de promoteur financés par le fonds : individuel de 50 m² au plus, 45 000 D ; collectif de 75 m² au plus, 57 500 D ; collectif vertical de 80 à 100 m², de 62 000 à 77 500 D ; abroge l'arrêté du 2 décembre 2009 |
+| []{#r-log-pret-2016}[4 septembre 2016]{.insecable} au plus tôt | **rupture** | décret gouvernemental n° 2016-1126 du 18 août 2016 [@decret2016-1126, art. 1-12] | abroge le décret n° 77-965 et ses modificatifs (art. 12) ; prêts et dons pour construire ou étendre, acheter un terrain, acheter un logement neuf de promoteur (art. 1er) ; trois catégories selon le salaire mensuel brut : 1 à 2,5, 2,5 à 3,5, 3,5 à 4,5 SMIG (art. 2) ; revente interdite avant dix ans (art. 7) ; +1 % l'an sur l'échu impayé (art. 8) ; annuités au plus égales à 40 % des revenus bruts (art. 9) ; programme d'emploi par arrêté conjoint après avis d'une commission (art. 10) ; s'applique aux demandes non encore approuvées (art. 11) |
+| []{#r-log-pret-2023}[15 février 2023]{.insecable} | étape — de 2016 | décret n° 2023-127 du 10 février 2023 [@decret2023-127, art. 1er] | remplace les art. 1er à 5 et 10 du décret de 2016. Grille de 2016 → grille de 2023 (@tbl-log-etat-2026) : construction, 80/100/120 m², autofinancement 5/7,5/10 %, prêt de 170/200/240 fois le SMIG, 1/3/5 %, 25 ans → premier logement de 120 m², autofinancement 5/7,5/10/12,5 %, prêt de 300 fois le SMIG, 1/3/5/7 %, 25 ans et deux ans de grâce ; terrain, 150/200/250 m², prêt de 80/100/120 fois le SMIG, prix de 0,7 SMIG le m² → 250 m², prêt égal au prix moins l'autofinancement, prix de 0,75 SMIG le m² ; logement de promoteur, prix de 3 SMIG le m², prêt de 90 % du prix et de 250 fois le SMIG au plus → individuel de 100 m² ou collectif de 120 m², prix de 3,3 SMIG le m², prêt de 90 % du prix ; extension : prêt de 1,7 × SMIG × surface ajoutée → 150 fois le SMIG. Quatrième catégorie, de 4,5 à 6 SMIG ; revenu du ménage, conjoint compris, de 6 SMIG au plus ; « salariés actifs et retraités » ayant cotisé 24 mois continus ; terrain acheté à un promoteur agréé « ou du privé » ; remboursement achevé à 75 ans |
+| []{#r-log-pret-2026}[20 juin 2026]{.insecable} | étape — de 2026 | décret n° 2026-123 du 19 juin 2026 [@decret2026-123, art. 1er] | alinéa 5 de l'art. 1er du décret de 2016 : financement de projets de la SNIT et de ses filiales, de la SPROLS et de l'AFH, jusqu'à 100 % du coût, remboursable sans intérêt sur 25 ans au plus ; art. 9 bis : le prix plafond au mètre carré ne s'applique pas aux logements financés par le fonds, réalisés par la SNIT ou la SPROLS et cédés en location-vente ou à tempérament (@sec-log-operateurs) |
+
+::::
+
+<!-- TODO (documentaliste) : modificatifs du décret n° 77-965 de 1981 à 2015, à lire avant tout « avant » postérieur à 1977 : n° 81-1010, 83-927, 86-293, 88-1589, 90-1280, 93-1720 (à océriser) ; n° 95-789, 98-2093, 2000-1192, 2007-12, 2007-4099 (texte à tester) ; n° 2009-698, 2009-3586, 2015-881 (lisibles) ; n° 2011-3573 (JORT n° 86/2011, à localiser). Arrêtés de prix des 14 mai 2007, 2 décembre 2009 et 29 septembre 2014 ; survie de l'arrêté de 2014 après 2016. Arrêté de procédure (dossier, décaissement) et programme annuel d'emploi des ressources : fiche proposée r-foprolos-programme-emploi (note logement-social-foprolos-2026-10-23, § 5), à verser au registre des recherches ; poser alors l'ancre de recherche ici. -->
+
+### 1986-1990 : la résorption des logements rudimentaires, financée en partie par le fonds {#sec-log-1986}
+
+En 1986, l'État lance un programme national pour remplacer les [logements rudimentaires](#g-logement-rudimentaire) et, de 1987 à 1990, prélève sur les disponibilités du fonds pour le financer : pour la première fois, les ressources versées pour les salariés acquéreurs servent une politique ouverte aux mal-logés, salariés ou non.
+
+[Le programme national de résorption des logements rudimentaires](#r-log-pnrlr-1986), institué en avril 1986, a « pour but d'améliorer les conditions d'habitat des populations mal logées sur l'ensemble du territoire » ; il est présenté dans sa section (@sec-log-pnrlr). Il reçoit une contribution sur les bénéfices des entreprises, puis, de 1987 à 1990, quatre prélèvements sur le fonds : 5 MD en 1987 et en 1988, 15 MD en 1989 et en 1990 (@tbl-log-prelevements). [Le premier](#r-log-prel-1987), opéré par la loi de finances pour 1987, porte sur les « disponibilités du fonds » ; ceux de 1989 et de 1990 sont qualifiés de « transfert ». Dans la même période, [la loi de finances pour 1989](#r-log-taux-1989) ramène la contribution de 2 % à 1 % des salaires ([volume des cotisations](../cotisations_sociales/_prelevements_salaires.html#sec-cot-foprolos-taux)).
+
+<!-- TODO (documentaliste) : contexte de 1986-1990 dans les mots des sources de l'époque (VIIe Plan, documents de l'ajustement structurel de 1986). -->
+
+### 1990-2011 : l'ordonnateur, un régime spécial, le FNAH refondu {#sec-log-entre-temps}
+
+De 1990 à 2011, trois textes touchent le fonds ou ses voisins. En 1993, [l'ordonnateur du fonds](#r-log-ordo-1993) devient le ministre de l'Équipement et de l'Habitat. En 1999, un régime spécial permet au fonds de financer le rachat de logements anciens appartenant à des étrangers par leurs occupants (@sec-log-regime-1999). En 2004, la loi refond le Fonds national d'amélioration de l'habitat et en énumère les emplois (@sec-log-fnah).
+
+### 2012 : le programme spécifique pour le logement social {#sec-log-2012}
+
+En 2012, l'État crée un programme pour les familles à faible revenu sans logement, salariées ou non, financé par son budget ; dans les mêmes années, il prélève de nouveau sur le fonds, au profit du Fonds national d'amélioration de l'habitat.
+
+[La loi de finances complémentaire pour 2012](#r-log-psls-2012) range ses articles 27 à 32 sous la rubrique « Création d'un programme spécifique pour le logement social ». Le programme est créé « au profit des catégories sociales à faible revenu ayant pour objectif le remplacement des logements rudimentaires et la réalisation à leur profit de projets d'habitation ». Il est financé par le budget de l'État, le recouvrement des prêts et des dons, et réalisé par les conseils régionaux, les sociétés immobilières publiques, la SPROLS, l'Agence de réhabilitation et de rénovation urbaine, l'AFH et des promoteurs privés retenus après appel à la concurrence. [Un décret d'août 2012](#r-log-psls-decret) en fixe les modalités : le public est celui des familles sans logement dont le revenu ne dépasse pas 3 SMIG (@sec-log-psls).
+
+Le fonds sert de nouveau de réserve. Comme de 1987 à 1990, trois lois de finances prélèvent sur ses disponibilités : [40 MD en 2011](#r-log-prel-2011), partagés à parts égales entre le FNAH et le Compte national de solidarité sociale ; [60 MD en 2012](#r-log-prel-2012) et [60 MD en 2013](#r-log-prel-2013) au FNAH (@tbl-log-prelevements).
+
+<!-- TODO (documentaliste) : contexte de 2012 (débats de l'Assemblée nationale constituante sur la LFC 2012). Aucun autre prélèvement relevé dans le plein texte des LF et LFC de 2012 à 2026 (note § 1.4), sauf la LF 2012 initiale (JORT n° 100/2011, à obtenir) : constat à verser au registre des recherches avant de l'écrire. -->
+
+### 2016 : la refonte des prêts du fonds {#sec-log-2016}
+
+En 2016, l'État remplace le décret de 1977 qui fixait les prêts du fonds : le public monte jusqu'à 4,5 SMIG, réparti en trois catégories, et le fonds peut prêter pour un terrain ou une extension et donner une part de l'autofinancement.
+
+Entre 2012 et 2016, [un arrêté de 2013](#r-log-prix-2013) fixe les prix plafonds des logements neufs de promoteur financés par le fonds, de 45 000 D pour un logement individuel de 50 m² à 77 500 D pour un logement collectif de 100 m².
+
+[Le décret gouvernemental du 18 août 2016](#r-log-pret-2016), proposé par les ministres des Finances et de l'Équipement, abroge le décret de 1977 et ses modificatifs ; son intitulé dit qu'il fixe « les modalités et les conditions des interventions du fonds », et le texte n'énonce pas d'autre objet. Par rapport à l'état de 1977 :
+
+- trois catégories selon le salaire mensuel brut — de 1 à 2,5, de 2,5 à 3,5 et de 3,5 à 4,5 SMIG —, au lieu de deux tranches jusqu'à 3 SMIG ;
+- trois objets : construire ou étendre un logement individuel principal ; acheter un terrain constructible ; acheter un logement neuf à un promoteur agréé ;
+- pour la première catégorie, une part de l'autofinancement, au plus 15 fois le SMIG, « prise en charge par le fonds » : c'est un don ;
+- la revente interdite pendant dix ans ; des annuités au plus égales à 40 % des revenus bruts, au lieu du tiers.
+
+La grille de 2016 a été remplacée en 2023 ; la grille en vigueur est à l'état du droit (@tbl-log-etat-2026), celle de 2016 au registre des prêts.
+
+<!-- TODO (documentaliste) : l'« avant » de cette réforme est l'état de 1977 ; les modificatifs de 1981 à 2015 (dont n° 2009-698, 2009-3586, 2015-881, lisibles, et n° 2011-3573, à localiser) peuvent avoir déjà élargi le public ou créé le don. Tant qu'ils ne sont pas établis, 2016 reste classé comme rupture sous réserve (fiche de plan de l'architecte, § 3.2). Contexte : stratégie de l'habitat 2014-2015 (documents déjà dans tunisia-data). -->
+
+### 2017 : le programme du premier logement {#sec-log-2017}
+
+En 2017, l'État ouvre une aide aux familles à revenu moyen, de 4,5 à 10 SMIG — au-dessus du plafond de la troisième catégorie du fonds en 2016 —, financée par son budget et non par le fonds.
+
+[La loi de finances pour 2017](#r-log-pl-2017) range son article 61 sous la rubrique « Création d'une ligne de financement pour le soutien du secteur de l'habitat dans le cadre du programme du premier logement ». Elle ouvre une ligne de 200 MD « au profit des catégories à revenu moyen », pour un crédit à conditions favorables qui couvre l'autofinancement de l'achat d'un premier logement. Le programme est présenté dans sa section (@sec-log-premier-logement).
+
+<!-- TODO (documentaliste) : contexte de 2017 ; date d'effet de l'art. 61 de la LF 2017. -->
+
+### 2017-2026 : une quatrième catégorie de prêts, des retraités parmi les bénéficiaires {#sec-log-entre-temps-2023}
+
+En 2023, l'État étend les prêts du fonds aux ménages de 4,5 à 6 SMIG et aux retraités. [Le décret du 10 février 2023](#r-log-pret-2023) remplace les articles 1er à 5 et 10 du décret de 2016 :
+
+- les prêts financent un « premier logement » ;
+- une quatrième catégorie, de 4,5 à 6 SMIG, s'ajoute aux trois autres, et le revenu du ménage, conjoint compris, ne doit pas dépasser 6 SMIG ;
+- sont considérés comme salariés « les salariés actifs et retraités » qui ont cotisé 24 mois continus ;
+- le terrain peut être acheté à un promoteur agréé « ou du privé » ;
+- les prêts durent 25 ans, avec deux ans de grâce, et doivent être remboursés à 75 ans.
+
+La grille qui en résulte est à l'état du droit (@tbl-log-etat-2026). Dans la même période, la commission nationale du programme spécifique est supprimée en 2021 (@sec-log-psls) ; en 2025, le premier logement s'ouvre à la construction (@sec-log-premier-logement) et le FNAH finance des citernes d'eau de pluie (@sec-log-fnah).
+
+### 2026 : le fonds finance les logements des opérateurs publics {#sec-log-2026}
+
+Depuis 2026, le fonds ne prête plus seulement aux salariés : il finance aussi les logements que la SNIT, la SPROLS et l'AFH construisent pour ses catégories, et ces logements peuvent être cédés en location-vente.
+
+[La loi de finances pour 2026](#r-log-res-2026) range son article 21 sous deux rubriques, qui annoncent la consécration du droit au logement et l'élargissement du champ d'intervention du fonds. L'article ajoute à l'objet du fonds le financement de la construction de logements et de l'aménagement de lots sociaux réalisés par la SNIT et ses filiales, la SPROLS et l'AFH ; il prend effet au 1^er^ janvier 2026.
+
+Lors de l'examen du budget de la mission Équipement et Habitat pour 2026, le 16 novembre 2025, le ministre de l'Équipement et de l'Habitat range la loi régissant le fonds parmi les textes préparés en 2025 et intégrés à la loi de finances pour 2026, et annonce le lancement en 2026 d'un nouveau programme de location-vente, dont le cahier des charges est en préparation [@arp-2025-11-16-equipement, pp. 1692-1693].
+
+[Le décret du 19 juin 2026](#r-log-pret-2026) fixe les conditions : le fonds peut financer jusqu'à 100 % du coût d'un projet, remboursable sans intérêt sur 25 ans au plus. Deux lois de février 2026, [l'une pour la SNIT](#r-log-op-2026-1), [l'autre pour la SPROLS](#r-log-op-2026-2), permettent à ces deux opérateurs de vendre ces logements par paiement échelonné — la [vente à tempérament](#g-vente-a-temperament) — ou en location-vente, et le décret lève pour eux le prix plafond au mètre carré (@sec-log-operateurs).
+
+<!-- TODO (terminologue) : traduction française des rubriques arabes de la LF 2026, art. 21, avant citation entre guillemets. -->
+
+## L'état du droit en 2026 {#sec-log-etat-du-droit}
+
+En 2026, le fonds a pour objet d'aider les salariés à accéder à la propriété d'un logement et de financer la construction de logements et l'aménagement de lots sociaux par la SNIT et ses filiales, la SPROLS et l'AFH. Il reçoit la contribution des employeurs, au taux de 1 % des salaires depuis 1989, l'amortissement et les intérêts de ses prêts ; il est un fonds spécial du Trésor.
+
+Les prêts aux salariés suivent la grille de 2023, complétée en 2026 (@tbl-log-etat-2026). Ils sont ouverts aux salariés actifs et retraités qui ont cotisé 24 mois continus, qui ne possèdent pas de logement, eux et leur conjoint, sauf pour une extension, et dont le revenu mensuel brut du ménage ne dépasse pas 6 SMIG ; le salaire mensuel brut du demandeur fixe sa catégorie.
+
+| | Catégorie 1 | Catégorie 2 | Catégorie 3 | Catégorie 4 |
+|:---|:---|:---|:---|:---|
+| Salaire mensuel brut<br>(multiples du SMIG) | 1 à 2,5 | 2,5 à 3,5 | 3,5 à 4,5 | 4,5 à 6 |
+| **Construction** | | | | |
+| Autofinancement<br>(% du coût) | 5 | 7,5 | 10 | 12,5 |
+| Prêt au plus<br>(multiples du SMIG) | 300 | 300 | 300 | 300 |
+| Taux<br>(% par an) | 1 | 3 | 5 | 7 |
+| Durée<br>(années) | 25 | 25 | 25 | 25 |
+| Âge limite<br>(années) | 75 | 75 | 75 | 75 |
+| **Extension** | | | | |
+| Autofinancement<br>(% du coût) | 5 | 7,5 | — | — |
+| Prêt au plus<br>(multiples du SMIG) | 150 | 150 | — | — |
+| Taux<br>(% par an) | 1 | 3 | — | — |
+| Durée<br>(années) | 20 | 20 | — | — |
+| **Terrain** | | | | |
+| Autofinancement<br>(% du prix) | 5 | 7,5 | 10 | 12,5 |
+| Taux<br>(% par an) | 1 | 3 | 5 | 7 |
+| Durée<br>(années) | 25 | 25 | 25 | 25 |
+| **Logement de promoteur** | | | | |
+| Prêt au plus<br>(% du prix) | 90 | 90 | 90 | 90 |
+| Autofinancement<br>(% du prix) | 10 | 10 | 10 | 10 |
+| Don du fonds<br>(multiples du SMIG) | 15 au plus | — | — | — |
+| Taux<br>(% par an) | 1 | 3 | 5 | 7 |
+| Délai de grâce<br>(années) | 3 | 3 | 2 | 2 |
+| Durée<br>(années) | 25 | 25 | 25 | 25 |
+| Âge limite<br>(années) | 75 | 75 | 75 | 75 |
+
+: Prêts du fonds de promotion du logement pour les salariés par catégorie en 2026 : rédaction de 2023 ([décret du 10 février 2023](#r-log-pret-2023)) ; SMIG = salaire minimum interprofessionnel garanti mensuel {#tbl-log-etat-2026 .sm}
+
+Note de lecture : la construction porte sur un premier logement individuel de 120 m² au plus ; le terrain, sur 250 m² au plus, au prix de 0,75 SMIG le m² au plus, et le prêt couvre le prix moins l'autofinancement ; le logement de promoteur est individuel, de 100 m² au plus, ou collectif, de 120 m² au plus, au prix de 3,3 SMIG le m² au plus. La construction et le terrain ont deux ans de grâce. Le don couvre une part de l'autofinancement de la catégorie 1 si le conjoint ne dépasse pas le plafond de cette catégorie.
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré quand les paramètres des prêts du fonds (catégories, plafonds, taux, durées, 2016-2026) seront datés et sourcés en amont ; demande inscrite à docs/notes/backlog-modele.md. -->
+
+Depuis le 20 juin 2026, le fonds peut aussi financer jusqu'à 100 % du coût des projets de logements et de lots sociaux de la SNIT et de ses filiales, de la SPROLS et de l'AFH, remboursable sans intérêt sur 25 ans au plus (@sec-log-operateurs).
+
+Le ministère des Finances a communiqué le nombre de prêts accordés de 2009 à 2013 (@tbl-log-mef-prets).
+
+<!-- TODO (documentaliste) : population couverte (§ 4 des conventions) : aucune série de bénéficiaires ni de prêts accordés depuis 2013 (rapports de la Banque de l'Habitat, lois de règlement, à obtenir). Points de l'état du droit non établis, à ne pas écrire tant qu'ils ne le sont pas : ordonnateur après le DL n° 2011-55 ; survie du régime de 1999 (l'art. 12 du décret n° 2016-1126 n'abroge que le décret n° 77-965 et ses modificatifs) ; survie de l'arrêté de prix de 2014 ; modification de la loi n° 77-54 par la LF 1994. Le délai de grâce de l'art. 5 nouveau est tranché sur l'édition arabe (JORT n° 16/2023, p. 452). -->
+
+## La résorption des logements rudimentaires et le Fonds national d'amélioration de l'habitat {#sec-log-rudimentaire}
+
+La contribution au Fonds national d'amélioration de l'habitat, adossée à la taxe sur les immeubles bâtis, est exposée dans le volume [« Les finances locales »](../finances_locales/_impots_immeubles.html#sec-fl-immeubles-fnah). Cette section présente deux dispositifs qui remplacent ou améliorent l'habitat insalubre : le programme national de 1986 et le FNAH, refondu en 2004 ; tous deux ont reçu des prélèvements sur le fonds de promotion du logement pour les salariés (@sec-log-1986, @sec-log-2012).
+
+### Le programme national de 1986 {#sec-log-pnrlr}
+
+Le programme national de résorption des logements rudimentaires vise à remplacer l'habitat insalubre sur tout le territoire ; il est né de la réforme de 1986-1990 (@sec-log-1986).
+
+[Le décret du 12 avril 1986](#r-log-pnrlr-1986) institue un programme « ayant pour but d'améliorer les conditions d'habitat des populations mal logées sur l'ensemble du territoire ». Les logements rudimentaires y sont « les habitations insalubres telles que les gourbis, les kibs, les maamras, les baraques et les tentes ». Un comité national présidé par le Premier ministre supervise le programme.
+
+Quatre ressources l'alimentent, chacune pour une ou deux années :
+
+- une [contribution de 10 %](#r-log-contrib-1986) de l'impôt sur les bénéfices industriels et commerciaux et de l'impôt sur les sociétés dus en 1986, versée à un fonds de concours, [reconduite pour 1987](#r-log-contrib-1987) et étendue aux bénéfices non commerciaux, puis [reconduite pour 1988](#r-log-contrib-1988) ;
+- une « journée de travail » des salariés gagnant plus de 1,5 SMIG, en [1987](#r-log-contrib-1987) ;
+- les prélèvements sur le fonds de promotion du logement pour les salariés, de 1987 à 1990 (@tbl-log-prelevements) ;
+- [1,5 MD prélevés sur le FNAH](#r-log-fnah-1988) en 1988.
+
+<!-- TODO (documentaliste) : décret n° 87-709 modifiant le décret n° 86-438 (JORT n° 36/1987, pp. 684-685, à océriser) ; arrêté du 2 mai 1987 sur la contribution des salariés (JORT n° 34/1987, pp. 648-650) ; fin du programme ; série des logements remplacés (1986-2004, à obtenir). La contribution de la loi n° 86-47 a son domicile dans les taxes affectées du volume « La fiscalité » (backlog-precis, item 10), non écrit. -->
+
+:::: {.chronologie-repliable titre="Programme national de résorption des logements rudimentaires : textes, articles et ressources, 1986-1988"}
+
+| Date d'effet | Portée | Texte et article | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-log-pnrlr-1986}[17 avril 1986]{.insecable} | **rupture** — propre au programme | décret n° 86-438 du 12 avril 1986 [@decret86-438, art. 1-2, p. 504] | programme « ayant pour but d'améliorer les conditions d'habitat des populations mal logées sur l'ensemble du territoire » ; définition des logements rudimentaires (art. 1er) ; comité national de supervision présidé par le Premier ministre (art. 2) |
+| []{#r-log-contrib-1986}[12 juin 1986]{.insecable} | étape — de 1986 | loi n° 86-47 du 7 juin 1986 [@loi86-47, art. 1-4, p. 683] | contribution de 10 % de l'impôt sur les BIC et de l'impôt sur les sociétés dus en 1986, versée au fonds de concours « Contribution au programme national de résorption des logements rudimentaires » |
+| []{#r-log-contrib-1987}1987 | étape — de 1986 | loi n° 86-106, loi de finances pour 1987 [@loi86-106-lf1987, art. 34-39, p. 1617] | contribution reconduite pour 1987 et étendue aux bénéfices non commerciaux (art. 34 à 38) ; « journée de travail » des salariés au-delà de 1,5 SMIG (art. 39) |
+| []{#r-log-contrib-1988}1988 | étape — de 1986 | loi n° 87-83, loi de finances pour 1988 [@loi-87-83-lf-1988, art. 42-47, pp. 1631-1632] | contribution reconduite pour 1988 |
+| []{#r-log-fnah-1988}1988 | étape — de 1986 | même loi [@loi-87-83-lf-1988, art. 77, p. 1635] | 1,5 MD prélevés sur le Fonds national d'amélioration de l'habitat au profit du programme |
+
+::::
+
+### Le Fonds national d'amélioration de l'habitat {#sec-log-fnah}
+
+Le [FNAH](#g-fnah) finance par des prêts et des subventions l'éradication des logements rudimentaires, l'entretien et la réhabilitation des logements, des opérations des collectivités locales et la réparation après catastrophe. Ses emplois sont refondus en 2004.
+
+[La loi du 2 août 2004](#r-log-fnah-2004) énumère cinq emplois du fonds :
+
+- A — l'éradication des logements rudimentaires dans le cadre d'un programme national approuvé ;
+- B — l'entretien et la réhabilitation des logements par les propriétaires privés, et, depuis [2012](#r-log-fnah-2012), par les occupants privés ;
+- C — des opérations des collectivités locales ;
+- D — la réhabilitation et la rénovation urbaine confiées à des organismes ;
+- E — la réparation des logements après une catastrophe.
+
+Le fonds intervient par des prêts et par des subventions ; sa gestion est confiée par convention à « un établissement de crédit ayant la qualité d'une banque ». Depuis le 1^er^ janvier 2005, il est un fonds spécial du Trésor alimenté par une [contribution](#g-contribution-fnah) de 4 % de l'assiette de la taxe sur les immeubles bâtis des immeubles d'habitation ([volume des finances locales](../finances_locales/_impots_immeubles.html#sec-fl-immeubles-fnah)). De 2011 à 2013, il reçoit 140 MD prélevés sur le fonds de promotion du logement pour les salariés (@sec-log-2012, @tbl-log-prelevements). [En 2025](#r-log-fnah-2025), 2 MD prélevés sur le FNAH financent des prêts sans intérêt de 20 000 D au plus pour construire des citernes d'eau de pluie, jusqu'au 31 décembre 2027.
+
+<!-- TODO (documentaliste) : décrets n° 2007-534 et 2007-535 (conditions des prêts et subventions ; gestion), modifiés en 2012 (n° 2012-509, 2012-750) ; LF 2005, art. 11-17 (citée par le volume des finances locales, à harmoniser) ; LF 2023 (DL n° 2022-79), art. 28, première mesure des citernes ; FNAH de 1956 à 1966 ; date d'effet de la LF 2025, art. 27 (article final). Série des montants des citernes à construire avant d'en donner la vue d'évolution. -->
+
+:::: {.chronologie-repliable titre="Fonds national d'amélioration de l'habitat : emplois, prêts, subventions et gestion, textes et articles, 2004-2025"}
+
+| Date d'effet | Portée | Texte et article | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-log-fnah-2004}[11 août 2004]{.insecable} au plus tôt | **rupture** — propre au FNAH | loi n° 2004-77 du 2 août 2004 [@loi2004-77, art. 1-4] | cinq emplois, A à E (art. 1er) ; prêts (art. 2) ; subventions (art. 3) ; gestion par « un établissement de crédit ayant la qualité d'une banque », par convention (art. 4) |
+| []{#r-log-fnah-2012}[23 mai 2012]{.insecable} au plus tôt | étape — de 2004 | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, art. 33-35, p. 927] | au § b de l'art. 1er : propriétaires privés → propriétaires « ou les occupants privés » ; abrogation du 4e tiret de l'art. 53 de la loi de finances pour 2004 |
+| []{#r-log-fnah-2025}2025 | ajustement | loi n° 2024-48, loi de finances pour 2025 [@lf-2025, art. 27, p. 6425] | 2 MD sur le FNAH pour des prêts sans intérêt de 20 000 D au plus pour des citernes d'eau de pluie ; mesure prorogée jusqu'au 31 décembre 2027 |
+
+::::
+
+## Le programme spécifique pour le logement social {#sec-log-psls}
+
+Le programme spécifique pour le logement social remplace des logements rudimentaires et vend ou loue des [logements sociaux](#g-logement-social) aux familles sans logement dont le revenu ne dépasse pas 3 SMIG (salaire minimum interprofessionnel garanti), salariées ou non ; il est financé par le budget de l'État. Il est né de la réforme de 2012 (@sec-log-2012).
+
+[Le décret d'application de 2012](#r-log-psls-decret) donne deux définitions :
+
+- **le logement rudimentaire** : les locaux habités en permanence dont les matériaux, la surface ou la solidité « ne répondent pas aux normes sanitaires et techniques minimales d'habitabilité », « tels que les gourbis, les maamras, les cavernes et autres » ;
+- **le logement social** : un logement individuel extensible de 45 000 D au plus, ou collectif de 65 000 D au plus.
+
+Le public est celui des familles sans logement dont le revenu ne dépasse pas 3 SMIG, en trois catégories : moins de 1 SMIG ; de 1 à 2 SMIG ; de 2 à 3 SMIG.
+
+**Le remplacement d'un logement rudimentaire.** Son coût est plafonné à 35 000 D sur place et à 45 000 D sur un autre site ; l'État en prend la moitié à sa charge, et le reste est financé par un crédit de 25 ans sans intérêt, avec un an de grâce, garanti par une hypothèque.
+
+**L'achat d'un logement social.** L'État subventionne l'achat selon la catégorie et le prix du logement (@tbl-log-psls-subvention) ; un crédit complémentaire, dont les conditions sont fixées par arrêté conjoint des ministres de l'Habitat et des Finances, complète le financement.
+
+| Prix du logement | Catégorie 1<br>(moins de 1 SMIG) | Catégorie 2<br>(1 à 2 SMIG) | Catégorie 3<br>(2 à 3 SMIG) |
+|:---|:---|:---|:---|
+| jusqu'à 45 000 D | 40 % du prix | — | — |
+| 30 001 à 35 000 D | | 0 à 5 000 D | néant |
+| 35 001 à 40 000 D | | 5 000 à 7 500 D | 0 à 5 000 D |
+| 40 001 à 45 000 D | | 7 500 à 10 000 D | 5 000 à 7 500 D |
+| 45 001 à 50 000 D | | 10 000 D | 7 500 à 10 000 D |
+| 50 001 à 65 000 D | | 10 000 D | 10 000 D |
+
+: Subvention de l'État à l'achat d'un logement social du programme spécifique, selon la catégorie de revenu et le prix, rédaction d'août 2012 ([décret du 10 août 2012](#r-log-psls-decret)) ; la méthode de calcul à l'intérieur de chaque tranche est fixée par arrêté du ministre de l'Habitat {#tbl-log-psls-subvention}
+
+<!-- TODO (rédacteur) : montants aussi en dinars constants de 2025, dans une colonne voisine. -->
+
+En 2021, [la commission nationale de pilotage](#r-log-psls-2021) et les commissions régionales du programme sont supprimées, sous la rubrique « Accélération du rythme d'exécution du programme de logement social ».
+
+<!-- TODO (documentaliste) : état du programme après 2012 : décrets modificatifs n° 2013-3289, 2014-4251, 2015-460 et 2023-538 (JORT n° 82/2023, p. 1865) ; unité de gestion (décret n° 2012-1225, modifié par le n° 2015-152) ; arrêtés des art. 22 et 23 du décret n° 2012-1224 (méthode de calcul de la subvention, crédit complémentaire) : fiche proposée r-psls-arretes-subvention-credit (note logement-social-foprolos-2026-10-23, § 5), à verser au registre des recherches ; poser alors l'ancre de recherche ici. Dettes des bénéficiaires : LF 2018, art. 61 ; DL n° 2022-79, art. 16 ; arrêtés du 11 janvier 2016 et du 13 octobre 2023. Cessions de terres domaniales au dinar symbolique (décrets de 2016 à 2026). Logements réalisés et crédits du programme : à obtenir. -->
+
+:::: {.chronologie-repliable titre="Programme spécifique pour le logement social : création, définitions, publics, subvention et crédit, textes et articles, 2012-2021"}
+
+| Date d'effet | Portée | Texte et article | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-log-psls-2012}[23 mai 2012]{.insecable} au plus tôt | **rupture** | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, art. 27-32, pp. 926-927] | rubrique « Création d'un programme spécifique pour le logement social » ; programme « au profit des catégories sociales à faible revenu ayant pour objectif le remplacement des logements rudimentaires et la réalisation à leur profit de projets d'habitation » (art. 27) ; financement par le budget de l'État, le recouvrement des prêts, des dons (art. 28) ; réalisation par les conseils régionaux, les sociétés immobilières publiques, la SPROLS, l'ARRU, l'AFH et des promoteurs privés (art. 29) ; terres domaniales cédées au dinar symbolique (art. 30) ; appui financier, cession ou location (art. 31) ; commissions de pilotage (art. 32) |
+| []{#r-log-psls-decret}[22 août 2012]{.insecable} au plus tôt | étape — de 2012 | décret n° 2012-1224 du 10 août 2012 [@decret2012-1224, art. 2, 5, 7 et 18-23] | éradication des logements rudimentaires et projets d'habitation (art. 2) ; ressources gérées par un établissement de crédit bancaire (art. 5) ; définition du logement rudimentaire (art. 7) ; coût plafonné à 35 000 D ou 45 000 D (art. 18) ; 50 % à la charge de l'État, crédit de 25 ans sans intérêt, un an de grâce (art. 19) ; définition du logement social (art. 20) ; trois catégories jusqu'à 3 SMIG (art. 21) ; barème de subvention (art. 22) ; crédit complémentaire (art. 23) |
+| []{#r-log-psls-2021}2022 | ajustement | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 16, p. 3083] | rubrique « Accélération du rythme d'exécution du programme de logement social » ; art. 32 de la LFC 2012 abrogé : fin de la commission nationale et des commissions régionales |
+
+::::
+
+## Le programme du premier logement {#sec-log-premier-logement}
+
+Le programme du premier logement prête aux familles sans logement de revenu moyen, de 4,5 à 10 SMIG (salaire minimum interprofessionnel garanti), une partie de l'autofinancement de leur premier logement ; il est financé par le budget de l'État, sur un compte à la Banque centrale de Tunisie. Il est né de la réforme de 2017 (@sec-log-2017).
+
+[Le décret du 31 janvier 2017](#r-log-pl-decret) fixe les conditions, dans sa rédaction de 2017 :
+
+- **le logement** : neuf, à usage d'habitation principale, d'au moins deux chambres et un salon, réalisé par un promoteur agréé, d'un prix de 200 000 D au plus ;
+- **le public** : les familles sans logement dont le revenu familial brut est compris entre 4,5 et 10 SMIG, le bénéficiaire ou son conjoint étant salarié ;
+- **le prêt** : au plus 20 % du prix et 40 000 D, au taux de 2 %, remboursable sur sept ans après cinq ans de grâce sans intérêt ;
+- **la revente** : interdite pendant douze ans ;
+- **le suivi** : les crédits budgétaires sont versés par tranches à un compte spécial de la Banque centrale, qui adresse des rapports trimestriels aux ministères.
+
+[En 2025](#r-log-pl-2025), le programme, conçu pour l'achat d'un premier logement, s'ouvre à sa construction.
+
+<!-- TODO (documentaliste) : décrets modificatifs n° 2017-391 (JORT n° 25/2017, pp. 1156-1158) et n° 2019-39 (JORT n° 5/2019), lisibles ; décret adaptant le programme à la construction (LF 2025, art. 25) ; date d'effet de l'art. 25 (article final de la LF 2025) ; traduction de la rubrique arabe de la LF 2025, art. 25, à valider par le terminologue ; prêts accordés et montants (rapports de la BCT prévus par l'art. 12 du décret n° 2017-161, à obtenir). Montants de 2017 aussi en dinars constants de 2025 (rédacteur). -->
+
+:::: {.chronologie-repliable titre="Premier logement : ligne de financement, logement, public, prêt bonifié, textes et articles, 2017-2025"}
+
+| Date d'effet | Portée | Texte et article | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-log-pl-2017}2017 | **rupture** | loi n° 2016-78, loi de finances pour 2017 [@lf-2017, art. 61, pp. 3845-3846] | rubrique « Création d'une ligne de financement pour le soutien du secteur de l'habitat dans le cadre du programme du premier logement » ; ligne de 200 MD « au profit des catégories à revenu moyen » pour un crédit à conditions favorables couvrant l'autofinancement de l'acquisition d'un premier logement |
+| []{#r-log-pl-decret}[5 février 2017]{.insecable} au plus tôt | étape — de 2017 | décret gouvernemental n° 2017-161 du 31 janvier 2017 [@decret2017-161, art. 2-7 et 12] | compte spécial à la BCT (art. 2) ; premier logement neuf, deux chambres et un salon au moins, promoteur agréé, 200 000 D au plus (art. 3) ; familles sans logement de 4,5 à 10 SMIG, bénéficiaire ou conjoint salarié (art. 5) ; prêt de 20 % du prix et 40 000 D au plus, cinq ans de grâce sans intérêt, sept ans, 2 % (art. 6) ; incessibilité de douze ans (art. 7) ; rapports trimestriels de la BCT (art. 12) |
+| []{#r-log-pl-2025}2025 | étape — de 2017 | loi n° 2024-48, loi de finances pour 2025 [@lf-2025, art. 25, p. 6425] | rubrique « دعم الدور الاجتماعي للدولة في مجال السكن » ; à l'art. 61 de la LF 2017, « اقتناء مسكن أول » (acquisition d'un premier logement) → « اقتناء أو بناء مسكن أول » (acquisition ou construction) |
+
+::::
+
+## Les opérateurs publics et la location-vente {#sec-log-operateurs}
+
+Le statut, le capital, la tutelle et les comptes de la SNIT, de la SPROLS et de l'AFH sont l'affaire du volume [« Les entreprises publiques »](../entreprises_publiques/index.html). Cette section présente leurs missions de logement social et, depuis 2026, le financement de leurs projets par le fonds et la cession de leurs logements en location-vente. La SPROLS est née en 1977 (@sec-log-1977) ; le financement par le fonds et la location-vente, en 2026 (@sec-log-2026).
+
+**Les missions.** La SNIT réalise des opérations immobilières pour son compte, celui de l'État ou des collectivités, gère des immeubles et conduit des programmes de construction [depuis 1957](#r-log-op-snit). [La SPROLS](#r-log-sprols-1977), établissement public à caractère industriel et commercial créé en 1977, doit « promouvoir la construction de logements au profit des assurés sociaux » ; elle réalise et gère les programmes immobiliers de la Caisse nationale de sécurité sociale et de la Caisse d'assurance vieillesse, invalidité et survivants, et loue des logements aux assurés sociaux. Son capital initial, de 750 000 D, est apporté par ces deux caisses, auxquelles son patrimoine reviendrait en cas de dissolution. Placée à l'origine sous la tutelle des Affaires sociales, elle passe en 2010 sous [celle de l'Équipement](#r-log-sprols-2010).
+
+**Le financement par le fonds, depuis 2026.** Le fonds peut [financer jusqu'à 100 % du coût](#r-log-op-decret2026) des projets de construction de logements et d'aménagement de lots sociaux destinés à ses catégories de salariés et réalisés par la SNIT et ses filiales, la SPROLS ou l'AFH ; ce financement est remboursable sans intérêt sur 25 ans au plus.
+
+**La location-vente et la vente à tempérament.** Depuis le 14 février 2026, [la SNIT et ses filiales](#r-log-op-2026-1) et [la SPROLS](#r-log-op-2026-2) peuvent vendre les logements sociaux financés par le fonds par paiement échelonné ou en vertu de contrats de [location-vente](#g-location-vente). Pour ces cessions, [le prix plafond au mètre carré](#r-log-op-decret2026) des logements de promoteur ne s'applique pas ; loyers et mensualités sont fixés selon le coût de chaque projet, par convention entre l'opérateur et le ministère chargé de l'habitat.
+
+<!-- TODO (documentaliste) : décret n° 77-926 (organisation de la SPROLS) et ses modificatifs (n° 92-1818, 2017-840) ; loi n° 93-78 modifiant la loi n° 77-53 ; AFH : loi n° 73-21, décret n° 74-33, décret n° 2021-327 modifié par le décret n° 2023-584 ; activité des opérateurs (logements construits, cédés, loués), à obtenir. Indice à verser à la prochaine passe de la fiche r-caisses-placements-obligatoires : la loi n° 77-53 fait financer par la CNSS et la CAVIS le capital et les programmes de la SPROLS. -->
+
+:::: {.chronologie-repliable titre="SNIT, SPROLS et AFH : missions de logement social, financement par le fonds et location-vente, textes et articles, 1957-2026"}
+
+| Date d'effet | Portée | Texte et article | Ce qu'il établit |
+|---|---|---|---|
+| []{#r-log-op-snit}[1^er^ septembre 1957]{.insecable} | antécédent | loi n° 57-19 du 10 septembre 1957 [@loi57-19, statut, art. 3] | objet de la SNIT : opérations immobilières pour son compte, celui de l'État ou des collectivités ; gestion d'immeubles ; programmes de construction ; intermédiaire éventuel pour la distribution des crédits publics HBM et HLM |
+| []{#r-log-sprols-1977}août 1977 | **mise en place** | loi n° 77-53 du 3 août 1977 [@loi77-53, art. 1-4 et 6] | SPROLS, établissement public à caractère industriel et commercial « placée sous la tutelle du Ministère des Affaires Sociales » (art. 1er) ; « promouvoir la construction de logements au profit des assurés sociaux », programmes de la CNSS et de la CAVIS, location aux assurés sociaux (art. 2) ; programmes et fonds fixés par arrêté conjoint « dans le cadre des objectifs des plans de développement en matière d'habitat » (art. 3) ; capital initial de 500 000 D (CNSS) et 250 000 D (CAVIS) (art. 4) ; retour du patrimoine aux deux caisses en cas de dissolution (art. 6) |
+| []{#r-log-sprols-2010}2010 | ajustement | décret n° 2010-3170 [@decret2010-3170] | tutelle de la SPROLS : Affaires sociales → Équipement |
+| []{#r-log-op-2026-1}[14 février 2026]{.insecable} | étape — de 2026 | loi n° 2026-1 du 13 février 2026 [@loi2026-1] | ajout à l'art. 3 du statut de la SNIT : la SNIT et ses filiales « peuvent également vendre les logements sociaux financés par les ressources du fonds de promotion du logement pour les salariés, par paiement échelonné ou en vertu de contrats de location-vente » |
+| []{#r-log-op-2026-2}[14 février 2026]{.insecable} | étape — de 2026 | loi n° 2026-2 du 13 février 2026 [@loi2026-2] | même ajout à l'art. 2 de la loi n° 77-53, pour la SPROLS |
+| []{#r-log-op-decret2026}[20 juin 2026]{.insecable} | étape — de 2026 | décret n° 2026-123 du 19 juin 2026 [@decret2026-123, art. 1er] | financement des projets de la SNIT et de ses filiales, de la SPROLS et de l'AFH jusqu'à 100 % du coût, sans intérêt, 25 ans au plus (alinéa 5 de l'art. 1er du décret de 2016) ; prix plafond levé pour les logements cédés en location-vente (« الكراء المملّك ») ou à tempérament (« البيع بالتقسيط ») ; loyers ou mensualités fixés par convention projet par projet (art. 9 bis) |
+
+::::
+
+## Le régime spécial de 1999 : les logements anciens appartenant à des étrangers {#sec-log-regime-1999}
+
+En 1999, [un décret](#r-log-regime-1999) permet au fonds, « dans le cadre de l'exécution d'accords internationaux dans le domaine immobilier », de financer « l'acquisition de logements anciens appartenant à des étrangers ». Le prêt est ouvert aux locataires ou aux occupants de bonne foi qui bénéficient d'un droit de priorité et dont le revenu est compris entre 1 et 3 SMIG (salaire minimum interprofessionnel garanti). De 1 à 2 SMIG, l'acquéreur apporte au moins 10 % du prix, et le prêt ne dépasse ni 110 fois le SMIG ni 90 % du prix.
+
+<!-- TODO (documentaliste) : le régime est-il en vigueur ? L'art. 12 du décret n° 2016-1126 n'abroge que le décret n° 77-965 et ses modificatifs ; conditions de la tranche de 2 à 3 SMIG ; accords internationaux visés. -->
+
+## Ce que pèse le fonds {#sec-log-longue-periode}
+
+Trois familles de chiffres portent sur le fonds et ne se mêlent pas : les prévisions des lois de finances, budgétaires ; le suivi du ministère des Finances, budgétaire lui aussi, rapporté par une étude ; les estimations de cette étude, qui est une évaluation économique.
+
+### Les prévisions des lois de finances et les prélèvements sur le fonds, 1987-2020 {#sec-log-previsions}
+
+De 2011 à 2020, les lois de finances prévoient chaque année pour le fonds entre 10 et 58 MD de recettes (@tbl-log-previsions). Ce sont des prévisions des lois de finances initiales — révisée par la loi de finances complémentaire pour 2012 —, des ressources du fonds et non le produit brut de la contribution, en dinars courants. Les prélèvements opérés sur les disponibilités du fonds, de 1987 à 1990 et de 2011 à 2013, sont d'une autre nature : ils portent sur l'avoir accumulé du fonds, non sur ses recettes de l'année (@tbl-log-prelevements).
+
+| Budget | Prévision de recettes<br>(MD courants) | Loi de finances |
+|:---|---:|:---|
+| 2011 | 32 | [LF 2011, p. 3482](#r-log-prev-2011) |
+| 2012 | 25 | [LFC 2012, p. 938](#r-log-prev-2012) (prévision révisée) |
+| 2013 | 20 | [LF 2013, p. 33](#r-log-prev-2013) |
+| 2014 | 20 | [LF 2014, p. 3704](#r-log-prev-2014) |
+| 2015 | 25 | [LF 2015, p. 3478](#r-log-prev-2015) |
+| 2016 | 10 | [LF 2016, p. 3628](#r-log-prev-2016) |
+| 2017 | 58 | [LF 2017, p. 3856](#r-log-prev-2017) |
+| 2018 | 38 | [LF 2018, p. 4297](#r-log-prev-2018) |
+| 2019 | 38 | [LF 2019, p. 5474](#r-log-prev-2019) |
+| 2020 | 38 | [LF 2020, p. 4717](#r-log-prev-2020) |
+
+: Prévisions de recettes du fonds de promotion du logement pour les salariés dans les lois de finances, 2011-2020, en millions de dinars courants : tableau des recettes des fonds spéciaux du Trésor {#tbl-log-previsions}
+
+| Année | Montant<br>(MD courants) | Bénéficiaire | Texte |
+|:---|---:|:---|:---|
+| 1987 | 5 | programme national de résorption des logements rudimentaires | [LF 1987, art. 96](#r-log-prel-1987) |
+| 1988 | 5 | même programme | [LF 1988, art. 76](#r-log-prel-1988) |
+| 1989 | 15 | même programme | [LF 1989, art. 68](#r-log-prel-1989) |
+| 1990 | 15 | même programme | [LF 1990, art. 46](#r-log-prel-1990) |
+| 2011 | 40 | FNAH (20) ; Compte national de solidarité sociale (20) | [LFC 2011, art. 3](#r-log-prel-2011) |
+| 2012 | 60 | FNAH | [LFC 2012, art. 36](#r-log-prel-2012) |
+| 2013 | 60 | FNAH | [LF 2013, art. 11](#r-log-prel-2013) |
+
+: Prélèvements des lois de finances sur les disponibilités du fonds de promotion du logement pour les salariés, 1987-2013, en millions de dinars courants {#tbl-log-prelevements}
+
+<!-- TODO (rédacteur) : ajouter aux deux tableaux une colonne en dinars constants de 2025 (déflateur du volume « Le marché du travail ») ; puis figure F1 (barres des prévisions, marques des prélèvements, autre nature, et des réformes de 2012, 2016, 2017) quand la série sera versée dans tunisia-data avec sa fiche de provenance (valeur, loi, page, édition, 2012 révisée) et lue par figtools.series(). -->
+<!-- TODO (documentaliste) : prévisions avant 2011 (tableaux des LF de 1978 à 1993 à océriser ; 1994-2010, texte à tester) ; LF 2012 initiale (JORT n° 100/2011, à obtenir) ; arrêté du 5 janvier 1987 augmentant les prévisions de 1986 ; depuis 2021, ligne non localisée dans les lois de finances (budget de la mission Équipement et Habitat, annexe des comptes spéciaux du Trésor) : fiche proposée r-foprolos-ligne-lf-2021 (note logement-social-foprolos-2026-10-23, § 5), à verser au registre des recherches ; poser alors l'ancre de recherche ici. Réalisations (lois de règlement, rapports de la Banque de l'Habitat) : à obtenir. -->
+
+:::: {.chronologie-repliable titre="Prévisions de recettes du fonds de promotion du logement pour les salariés : lois de finances et pages, 2011-2020"}
+
+| Budget | Texte | Montant |
+|---|---|---|
+| []{#r-log-prev-2011}2011 | loi n° 2010-58, loi de finances pour 2011 [@lf-2011, p. 3482] | 32 000 000 D |
+| []{#r-log-prev-2012}2012 | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, p. 938] | 25 000 000 D, prévision révisée |
+| []{#r-log-prev-2013}2013 | loi n° 2012-27, loi de finances pour 2013 [@lf-2013, p. 33] | 20 000 000 D |
+| []{#r-log-prev-2014}2014 | loi n° 2013-54, loi de finances pour 2014 [@lf-2014, p. 3704] | 20 000 000 D |
+| []{#r-log-prev-2015}2015 | loi n° 2014-59, loi de finances pour 2015 [@lf-2015, p. 3478] | 25 000 000 D |
+| []{#r-log-prev-2016}2016 | loi n° 2015-53, loi de finances pour 2016 [@lf-2016, p. 3628], édition arabe | 10 000 000 D |
+| []{#r-log-prev-2017}2017 | loi n° 2016-78, loi de finances pour 2017 [@lf-2017, p. 3856] | 58 000 000 D |
+| []{#r-log-prev-2018}2018 | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, p. 4297] | 38 000 000 D |
+| []{#r-log-prev-2019}2019 | loi n° 2018-56, loi de finances pour 2019 [@lf-2019, p. 5474], édition arabe | 38 000 000 D |
+| []{#r-log-prev-2020}2020 | loi n° 2019-78, loi de finances pour 2020 [@lf-2020, p. 4717], édition arabe | 38 000 000 D |
+
+::::
+
+### Le suivi du ministère des Finances rapporté par une étude, 2009-2013 {#sec-log-suivi-mef}
+
+La direction du financement du ministère de l'Économie et des Finances a communiqué, pour 2009 à 2013, les ressources, les dépenses et les prêts du fonds ; une étude d'H. Zaafrane réalisée en 2014 pour le ministère de l'Équipement les rapporte [@zaafrane-2014-habitat, pp. 62-63]. Ce sont des chiffres budgétaires dont l'étude est le relais. Ils sont d'un autre ordre que les prévisions des lois de finances : les ressources de l'année y sont de quatre à dix fois plus élevées de 2011 à 2013 (@tbl-log-previsions). L'étude signale elle-même des « différences assez significatives » avec le rapport d'exécution du budget et les tableaux de suivi des fonds du Trésor [@zaafrane-2014-habitat, p. 62]. Les deux séries ne se cumulent pas.
+
+| | 2010 | 2011 | 2012 | 2013 |
+|:---|---:|---:|---:|---:|
+| Ressources de l'année | 164,6 | 119,8 | 106,5 | 197,3 |
+| Reliquat de l'année précédente | 144,9 | 243,5 | 363,3 | 469,8 |
+| Ressources non programmées | 226,4 | 346,2 | 452,7 | 650,0 |
+| Dépenses réalisées dans l'année | 66,0 | | | |
+| Dépenses réalisées, cumul | | 331,5 | 331,5 | 331,5 |
+| Encours des crédits, fin d'année | | | | 282 |
+| Impayés en principal, fin d'année | | | | 66,3 |
+| Taux de recouvrement, fin d'année<br>(%) | | | | 24,7 |
+
+: Ressources et emplois du fonds de promotion du logement pour les salariés selon le ministère de l'Économie et des Finances, 2010-2013, en millions de dinars courants sauf mention [@zaafrane-2014-habitat, tableau 41 et p. 63] {#tbl-log-mef-ressources .sm}
+
+Note de lecture : le tableau du ministère donne les dépenses de l'année pour 2010 et un cumul, identique de 2011 à 2013, pour les années suivantes ; l'encours, les impayés et le taux de recouvrement sont ceux de la fin de 2013.
+
+| | 2009 | 2010 | 2011 | 2012 | 2013 |
+|:---|---:|---:|---:|---:|---:|
+| Prêts accordés<br>(nombre) | 583 | 723 | 485 | 514 | 242 |
+| Prêts accordés<br>(MD courants) | 17,2 | 23,9 | 18,3 | 19,7 | 9,3 |
+| Rémunération de la Banque de l'Habitat<br>(MD courants) | 1,403 | 1,326 | 1,382 | 1,424 | |
+
+: Prêts accordés par le fonds de promotion du logement pour les salariés et rémunération de son gestionnaire selon le ministère de l'Économie et des Finances, 2009-2013 [@zaafrane-2014-habitat, tableau 42 et p. 62] {#tbl-log-mef-prets .sm}
+
+Selon l'étude, la Banque de l'Habitat gère le fonds par convention « depuis 1990 » et reçoit 2 % des prêts débloqués et 3 % des recouvrements [@zaafrane-2014-habitat, p. 62].
+
+<!-- TODO (rédacteur) : colonnes en dinars constants de 2025 pour les deux tableaux. Ne pas reprendre deux erreurs de l'étude : le sigle développé en « Fonds de promotion des logements sociaux » et la contribution décrite comme « un prélèvement de 1 % sur les salaires des employés » (la loi n° 77-54, art. 1er, la met à la charge de l'employeur). Détail des prêts par catégorie FOPROLOS 1, 2, 3 au tableau 42, à reprendre si utile. -->
+
+### Ce qu'estime une étude de 2014 {#sec-log-etudes}
+
+La même étude estime le coût des aides au logement pour l'État [@zaafrane-2014-habitat, pp. 9 et 63-65]. Ce sont des estimations d'auteur, chacune avec sa méthode.
+
+| Dispositif | Estimation | Méthode |
+|:---|:---|:---|
+| Prêts du fonds | bonification de 7,9 à 9,6 MD par an | encours de 282 MD à fin 2013 ; écart entre les taux retenus par l'étude (2,5 %, 4,0 % et 5,8 % selon la catégorie) et le taux moyen du crédit logement bancaire sur ressources ordinaires (7,63 %) ou celui d'un prêt direct de la Banque de l'Habitat (8,44 %) [@zaafrane-2014-habitat, p. 63] |
+| Prêts du fonds, seconde approche | impact budgétaire nul | comparaison des ressources et des emplois : l'excédent du fonds couvre ses interventions [@zaafrane-2014-habitat, p. 64] |
+| FNAH | 1,6 MD par an | intervention moyenne supposée de 10 MD par an [@zaafrane-2014-habitat, p. 65] |
+| Programme spécifique | 30 MD par an | subvention nette « correspondant à la moitié de ses ressources provenant de la dotation du Titre II du Ministère de l'équipement durant les années 2012 et 2013 » [@zaafrane-2014-habitat, p. 9] |
+
+: Coût des aides au logement estimé par une étude réalisée pour le ministère de l'Équipement, 2014 : estimation et méthode {#tbl-log-etude-cout}
+
+L'étude lit aussi le faible recouvrement des prêts du fonds et du FNAH, « de l'ordre de 25 % », comme une subvention implicite qui s'ajoute à la bonification [@zaafrane-2014-habitat, p. 9] ; le taux de 24,7 % à fin 2013 est au tableau du ministère (@tbl-log-mef-ressources).
+
+## Ce qu'en dit l'économie {#sec-log-economie}
+
+**La question.** Un fonds alimenté par un prélèvement sur les salaires, des prêts à taux bonifié, la production publique de logements et la réhabilitation de l'habitat précaire posent quatre questions : l'aide accroît-elle le parc ou remplace-t-elle des logements que le marché aurait produits ; le crédit moins cher fait-il accéder à la propriété ou grossit-il le logement et la dette de ceux qui y seraient venus ; qui paie le prélèvement et qui reçoit le prêt ; la réhabilitation et la sécurité de la tenure changent-elles l'investissement des ménages dans leur logement.
+
+**Ce que dit la théorie.** L'incidence d'une aide dépend de l'[élasticité de l'offre de logement](#g-elasticite-offre-logement) : là où l'offre est rigide — foncier rare, règles d'urbanisme —, une aide à la demande se reporte dans les prix [@glaeser-gyourko-2018-housing-supply, p. 13]. Une production publique adressée à des ménages que le marché aurait logés en remplace une partie, et cette [éviction](#g-eviction-logement) est plus faible là où la demande non satisfaite est forte [@sinai-waldfogel-2005-crowd-out]. L'[incidence](#g-incidence-fiscale) d'un prélèvement lié à un avantage dépend de la valeur que lui donnent ceux qui le financent : s'ils le valorisent à son coût, le salaire baisse d'autant et l'emploi ne change pas [@gruber-1994-mandated-maternity, p. 622]. Pour un fonds dont seule une partie des cotisants peut obtenir un prêt, le prélèvement se rapproche, pour les autres, d'un impôt sur les salaires.
+
+**Ce que mesure l'empirique.** Aux États-Unis, selon les études recensées par une revue de 2003, la production publique coûte plus que le loyer de marché d'un logement équivalent : de 10 à 17 % selon deux études anciennes, de 65 à 106 % selon les études récentes, quand les bons de logement coûtent ce loyer plus les frais de gestion [@olsen-2003-housing-programs, pp. 398-399]. Sur 22 901 communes américaines (recensement de 1990, logements aidés de 1996), trois logements aidés en remplacent en moyenne deux que le marché aurait produits [@sinai-waldfogel-2005-crowd-out]. En France, de 1973 à 2002, 50 à 80 % des [aides à la personne](#g-aide-a-la-personne) perçues par les locataires à bas revenus sont absorbés par la hausse de leurs loyers [@fack-2005-aides-logement, p. 17], ce qui oppose ces aides aux [aides à la pierre](#g-aide-a-la-pierre). Au Danemark, la réforme de la déduction des intérêts d'emprunt de la fin des années 1980 n'a pas changé l'accession à la propriété (élasticité inférieure à 0,02 en valeur absolue) ; elle a accru la surface, la valeur des logements et surtout l'endettement [@gruber-jensen-kleven-2021-mortgage-deduction, pp. 2 et 14]. Dans la banlieue de Buenos Aires, des titres de propriété attribués de façon quasi aléatoire ont accru la surface construite de 12 % et la qualité du logement de 37 %, avec un effet modeste sur le crédit (enquêtes de 2003 et 2007) [@galiani-schargrodsky-2010-titling, p. 2] ; la Banque mondiale relève les limites des titres comme voie d'accès au crédit dans les pays en développement [@buckley-kalarickal-2006-shelter-lending, pp. 29-30].
+
+Les travaux tunisiens cités ici ne sont pas des évaluations causales. Sur l'enquête de consommation de 2010 et avec les critères de 2014 (salariés réguliers de 2 à 4 SMIG), l'étude réalisée pour le ministère de l'Équipement estime que 12,5 % des chefs de ménage seraient éligibles, 7,5 % au Centre-Ouest et 9,1 % au Nord-Ouest, concentrés dans les déciles 4 à 7, les déciles 1 et 2 exclus [@zaafrane-2014-habitat, pp. 40-41] ; les critères ont changé depuis (@sec-log-etat-du-droit). ONU-Habitat juge l'[élément de subvention](#g-element-de-subvention) des prêts bonifiés « difficult to calculate » et observe qu'en dehors de la première catégorie les prêts publics visent surtout les classes moyennes, le système excluant chômeurs, indépendants et travailleurs informels [@onu-habitat-2011-tunisia-housing-profile, pp. 63-64]. Le recouvrement des prêts est au tableau du ministère (@tbl-log-mef-ressources). Une comparaison de huit pays de la région relève des bonifications de taux partout et cite la Tunisie pour l'exonération fiscale de l'épargne-logement, sans estimation causale [@baharoglu-peltier-buckley-2005-mena-housing, p. 20]. Pour l'habitat précaire, la Banque mondiale rapporte que l'investissement privé a dépassé cinq fois l'investissement public dans deux quartiers réhabilités, d'après des études d'évaluation dont la méthode n'est pas donnée [@bm-2003-rehabilitation-urbaine, par. 45].
+
+**Ce que le praticien retient.** Est établi, pour les États-Unis, le surcoût de la production publique par rapport à l'aide à la personne [@olsen-2003-housing-programs]. Restent débattus l'incidence d'une aide à la personne sur les loyers, qui dépend de l'élasticité de l'offre locale, et le titre de propriété comme levier du crédit. Pour la Tunisie, cotisants et bénéficiaires ne se recouvrent pas : le prélèvement porte sur tous les salaires assujettis, et 12,5 % des ménages auraient été éligibles en 2010 avec les critères de 2014. La subvention passe par le taux et par l'impayé, et aucune des deux n'est chiffrée à l'octroi. Les données tunisiennes ne tranchent ni le ciblage des prêts accordés, faute de microdonnées publiques par décile, ni l'éviction, ni l'incidence du prélèvement.
+
+Littérature arrêtée au mois d'octobre 2026.

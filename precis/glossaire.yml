@@ -526,31 +526,138 @@ entries:
   - id: remuneration-dirigeants-entreprises-publiques
     acronyme: null
     statut: valide
-    references: [decret2015-2217, decret90-1855]
+    references: [decret2015-2217, decret2015-968, decret2014-12, decret90-1855, decret-78-885]
     source_definition: {ref: decret2015-2217}
     source_traduction: {ref: decret2015-2217}
-    voir_aussi: [regime-marche-controle, entreprises-publiques, regime-conventionnel-public]
+    voir_aussi: [categorie-entreprise-publique, indemnite-de-responsabilite, indemnite-complementaire-de-responsabilite, comite-de-remuneration, entreprises-publiques, regime-conventionnel-public, regime-marche-controle]
     fr:
       terme: Rémunération des dirigeants d'entreprises publiques
       definition: >
-        Rémunération des chefs d'établissements et entreprises publics et de
-        sociétés à majorité publique, encadrée et plafonnée par voie réglementaire
-        au titre des prérogatives de l'État actionnaire. Le décret n°2015-2217 du
-        11 décembre 2015 fixe les taux des éléments de cette rémunération, à la
-        suite des décrets n°78-885 (1978), n°90-1855 (1990) et n°2014-12
-        (2014). Ce plafonnement constitue le versant « contrôle »
-        du régime de marché contrôlé, par contraste avec l'autonomie
-        conventionnelle de marché des agents.
+        Rémunération des chefs d'entreprises et d'établissements publics et des
+        sociétés à majorité publique, c'est-à-dire des sociétés dont des
+        participants publics et des entreprises publiques détiennent 50 % du
+        capital ou plus. Le décret gouvernemental n°2015-2217 du 11 décembre 2015
+        en fixe le régime : classement de l'entreprise en six catégories, deux
+        modalités de rémunération au choix du dirigeant, avantages en nature,
+        exclusivité de la rémunération. Les directeurs généraux des banques
+        publiques en sont exclus : ils relèvent du décret gouvernemental
+        n°2015-968 du 6 août 2015. Le décret de 2015 abroge le décret n°90-1855
+        (1990) et le décret n°2014-12 (2014) ; le décret n°78-885 (1978) ouvre la
+        suite de ces textes.
       synonymes: []
     ar:
       terme: تأجير رؤساء المؤسسات والمنشآت العمومية
       definition: >
-        تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية —
-        المضبوط والمسقَّف عن طريق التنظيم بعنوان صلاحيات الدولة المساهمة. ويضبط الأمر الحكومي
-        عدد 2015-2217 المؤرّخ في 11 ديسمبر 2015 نسب عناصر هذا التأجير، إثر
-        الأوامر عدد 78-885 (1978) وعدد 90-1855 (1990) وعدد 2014-12
-        (2014). ويشكّل هذا التسقيف الشقَّ «الرقابي» من نظام السوق الموجَّه، في
-        مقابل الاستقلالية الاتفاقية السوقية لأعوانها.
+        تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية،
+        وهي الشركات التي يمتلك المساهمون العموميون والمنشآت العمومية رأس مالها
+        بنسبة لا تقل عن 50 %. ويضبط الأمر الحكومي عدد 2217 لسنة 2015 المؤرّخ في
+        11 ديسمبر 2015 نظام هذا التأجير: ترتيب المؤسسة في ستة أصناف، وصيغتان
+        للتأجير يختار بينهما رئيس المؤسسة، والامتيازات المسندة له، ومنع إضافة
+        أي منحة أخرى إلى التأجير. ويُستثنى من هذا النظام المديرون العامون
+        للبنوك العمومية، الخاضعون للأمر الحكومي عدد 968 لسنة 2015 المؤرّخ في 6
+        أوت 2015. وقد ألغى أمر 2015 الأمر عدد 90-1855 (1990) والأمر عدد 2014-12
+        (2014)، ويفتتح الأمر عدد 78-885 (1978) سلسلة هذه النصوص.
+      synonymes: []
+
+  - id: categorie-entreprise-publique
+    acronyme: null
+    statut: valide
+    references: [decret2015-2217]
+    source_definition: {ref: decret2015-2217, locator: "art. 2"}
+    source_traduction: {ref: decret2015-2217}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, indemnite-de-responsabilite]
+    fr:
+      terme: Catégorie de classement de l'entreprise publique
+      definition: >
+        Classement d'une entreprise ou d'un établissement public, ou d'une société à
+        majorité publique, dans l'une des six catégories — exceptionnelle, G, M, A,
+        B, C — dont dépendent les éléments de rémunération de son chef. Le chef du
+        gouvernement fixe le classement par arrêté, après avis d'une commission de
+        classement ; un décret gouvernemental fixe la liste des entreprises de la
+        catégorie exceptionnelle.
+      synonymes: []
+    ar:
+      terme: صنف المؤسسة
+      definition: >
+        ترتيب المؤسسة أو المنشأة العمومية أو الشركة ذات الأغلبية العمومية في أحد ستة
+        أصناف — استثنائي و«ك» و«م» و«أ» و«ب» و«ج» — تتحدد بحسبه عناصر تأجير رئيسها.
+        ويضبط رئيس الحكومة الترتيب بقرار بعد أخذ رأي لجنة ترتيب المؤسسات والمنشآت
+        العمومية والشركات ذات الأغلبية العمومية، وتضبط بأمر حكومي قائمة المنشآت
+        العمومية والشركات ذات الأغلبية العمومية المرتبة في الصنف الاستثنائي.
+      synonymes: []
+
+  - id: indemnite-de-responsabilite
+    acronyme: null
+    statut: valide
+    references: [decret2015-2217]
+    source_definition: {ref: decret2015-2217, locator: "art. 4"}
+    source_traduction: {ref: decret2015-2217}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, categorie-entreprise-publique, indemnite-complementaire-de-responsabilite]
+    fr:
+      terme: Indemnité de responsabilité
+      definition: >
+        Élément de la deuxième modalité de rémunération d'un chef d'entreprise
+        publique, servi chaque mois avec le traitement de base et l'indemnité de
+        logement, selon la catégorie de l'entreprise. Il réunit les quatre
+        indemnités que prévoyait le décret n°2014-12 (représentation, gestion,
+        frais liés à la responsabilité, indemnité spéciale ou complémentaire) et il
+        est soumis à l'impôt sur le revenu et aux retenues de sécurité sociale.
+      synonymes: []
+    ar:
+      terme: منحة المسؤولية
+      definition: >
+        عنصر من عناصر الصيغة الثانية لتأجير رئيس مؤسسة عمومية، يُصرف شهريًا مع المرتب
+        الأساسي ومنحة السكن حسب صنف المؤسسة. ويجمع المنح الأربع التي نصّ عليها الأمر
+        عدد 2014-12، ويخضع للحجز بعنوان الضريبة على الدخل وأنظمة الضمان الاجتماعي.
+      synonymes: []
+
+  - id: indemnite-complementaire-de-responsabilite
+    acronyme: null
+    statut: valide
+    references: [decret2015-2217]
+    source_definition: {ref: decret2015-2217, locator: "art. 3"}
+    source_traduction: {ref: decret2015-2217}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, categorie-entreprise-publique, indemnite-de-responsabilite]
+    fr:
+      terme: Indemnité complémentaire de responsabilité
+      definition: >
+        Indemnité mensuelle de la première modalité de rémunération d'un chef
+        d'entreprise publique, versée en plus du salaire que le dirigeant percevait
+        légalement juste avant sa nomination. Son montant dépend de la catégorie de
+        l'entreprise ; le décret de 2015 n'en donne aucun pour la catégorie
+        exceptionnelle. Elle se distingue de l'indemnité provisoire pour
+        remboursement des frais liés à la responsabilité du décret n°2014-12.
+      synonymes: []
+    ar:
+      terme: المنحة التكميلية بعنوان المسؤولية
+      definition: >
+        منحة شهرية في إطار الصيغة الأولى للتأجير، تضاف إلى الأجر الذي كان يتقاضاه
+        الرئيس بصفة قانونية قبل تسميته مباشرة. ويضبط مقدارها حسب صنف المؤسسة، ولا
+        يضبط الأمر الحكومي عدد 2217 لسنة 2015 أي مقدار لها في الصنف الاستثنائي.
+      synonymes: []
+
+  - id: comite-de-remuneration
+    acronyme: null
+    statut: valide
+    references: [decret2015-968]
+    source_definition: {ref: decret2015-968, locator: "art. 2"}
+    source_traduction: {ref: decret2015-968}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, regime-marche-controle]
+    fr:
+      terme: Comité de rémunération
+      definition: >
+        Comité que le conseil d'administration d'une banque publique constitue
+        obligatoirement en son sein. Il fixe les éléments de la rémunération du
+        directeur général, que le conseil approuve, et les indicateurs de la part
+        variable. Il compte trois membres, dont au moins un représente les
+        participants publics et le préside.
+      synonymes: []
+    ar:
+      terme: لجنة التأجير
+      definition: >
+        لجنة تنبثق وجوبًا عن مجلس إدارة البنك العمومي. وتحدّد عناصر تأجير المدير
+        العام، ويصادق عليها المجلس، وكذلك مؤشرات العنصر المتغيّر. وتتكوّن من ثلاثة
+        أعضاء من بينهم عضو على الأقل يمثّل المساهمين العموميين يكون رئيسًا لها.
       synonymes: []
 
   - id: regime-conventionnel-public
@@ -582,8 +689,8 @@ entries:
   - id: regime-marche-controle
     acronyme: null
     statut: provisoire
-    references: [loi89-9, cc-banques-2014, cc-assurances-1975, decret2015-2217]
-    voir_aussi: [entreprises-publiques, convention-collective-banques, convention-collective-assurances, remuneration-dirigeants-entreprises-publiques, regime-conventionnel-public, cnss]
+    references: [loi89-9, cc-banques-2014, cc-assurances-1975, decret2015-968, decret2015-2217]
+    voir_aussi: [entreprises-publiques, convention-collective-banques, convention-collective-assurances, remuneration-dirigeants-entreprises-publiques, comite-de-remuneration, regime-conventionnel-public, cnss]
     fr:
       terme: Régime de marché contrôlé
       definition: >
@@ -593,9 +700,13 @@ entries:
         établissements publics et privés : celle des banques et établissements
         financiers, révisée et agréée le 17 février 2014 ; celle des assurances,
         agréée le 24 décembre 1975 pour le secteur entier, révisée en 1983 et
-        suivie de quinze avenants de 1989 à 2022. La rémunération des dirigeants
-        est, elle, encadrée par décret (décret n°2015-2217 du 11 décembre 2015).
-        La convention des assurances ne nomme aucune société.
+        suivie de quinze avenants de 1989 à 2022. La rémunération des directeurs
+        généraux des banques publiques relève du décret gouvernemental n°2015-968
+        du 6 août 2015 : le conseil d'administration l'approuve, sur les éléments
+        fixés par un comité de rémunération. Celle des chefs des autres entreprises
+        publiques et sociétés à majorité publique relève du décret gouvernemental
+        n°2015-2217 du 11 décembre 2015. La convention des assurances ne nomme
+        aucune société.
       synonymes: []
     ar:
       terme: نظام السوق الموجَّه
@@ -606,8 +717,11 @@ entries:
         المالية، المنقَّحة والمصادق عليها في 17 فيفري 2014؛ واتفاقية التأمين،
         المصادق عليها في 24 ديسمبر 1975 للقطاع بأسره، والمنقَّحة سنة 1983
         والمتبوعة بخمسة عشر ملحقًا تعديليًا من سنة 1989 إلى سنة 2022. أمّا تأجير
-        رؤساء المنشآت فيؤطَّر بأمر (الأمر الحكومي عدد 2015-2217 المؤرّخ في 11
-        ديسمبر 2015). ولا تسمّي اتفاقية التأمين أيّ شركة.
+        المديرين العامين للبنوك العمومية فيخضع للأمر الحكومي عدد 968 لسنة 2015
+        المؤرّخ في 6 أوت 2015: يصادق مجلس الإدارة على نظام التأجير بعد أن تحدّد
+        لجنة التأجير عناصره. وأمّا تأجير رؤساء المؤسسات العمومية والشركات ذات
+        الأغلبية العمومية الأخرى فيخضع للأمر الحكومي عدد 2217 لسنة 2015 المؤرّخ في
+        11 ديسمبر 2015. ولا تسمّي اتفاقية التأمين أيّ شركة.
       synonymes: []
 
   - id: point-indice
@@ -2599,13 +2713,58 @@ entries:
         Seconde catégorie légale de l'Amen social, au-dessus des catégories pauvres.
         Elle n'ouvre pas le transfert monétaire permanent mais donne accès aux soins à
         tarif réduit et, depuis 2022, à l'allocation familiale non contributive.
-      synonymes: []
+      synonymes: [catégories à faible revenu]
     ar:
       terme: الفئات محدودة الدخل
       definition: >
         الصنف القانوني الثاني في برنامج الأمان الاجتماعي، ويأتي فوق الفئات الفقيرة. ولا
         يفتح الحقّ في التحويل النقدي القارّ، لكنّه يخوّل النفاذ إلى العلاج بالتعريفة
         المنخفضة، ومنذ سنة 2022 إلى المنحة العائلية غير المساهماتية.
+      synonymes: []
+
+  - id: allergie-gluten
+    acronyme: null
+    statut: valide
+    references: [lf-2025, arrete-2026-07-14-xeroderma-gluten]
+    source_definition: {ref: lf-2025, locator: "art. 26"}
+    voir_aussi: [categories-pauvres, amen-social]
+    fr:
+      terme: Allergie au gluten
+      definition: >
+        Maladie dont les textes de 2025 et 2026 font la condition d'une allocation
+        mensuelle de l'Amen social pour les dépenses alimentaires. Elle est établie par un
+        certificat d'un médecin de la santé publique, qui atteste la nécessité d'un régime
+        sans gluten au long cours ; depuis le 19 juillet 2026, une commission médicale en
+        examine la preuve.
+      synonymes: []
+    ar:
+      terme: حساسية دابوق القمح
+      definition: >
+        مرض جعلته نصوص سنتي 2025 و2026 شرطًا لمنحة شهرية في إطار الأمان الاجتماعي لنفقات
+        الغذاء. ويثبت بشهادة طبيب من الصحة العمومية تفيد الحاجة إلى نظام غذائي خال من
+        الجلوتين على المدى الطويل، وتنظر في إثباته منذ 19 جويلية 2026 لجنة طبية.
+      synonymes: [حساسية الجلوتين]
+
+  - id: unite-de-gestion-par-objectifs
+    acronyme: null
+    statut: valide
+    references: [decret-2014-1526-banque-donnees, decret2018-626]
+    source_definition: {ref: decret-2014-1526-banque-donnees, locator: "art. 1"}
+    voir_aussi: [amen-social, categories-pauvres]
+    fr:
+      terme: Unité de gestion par objectifs
+      definition: >
+        Structure temporaire créée au sein d'un ministère pour réaliser un projet défini,
+        sous l'autorité du ministre. Celle du ministère des affaires sociales, créée en
+        2014, réalise le projet de banque de données sur les familles nécessiteuses et à
+        revenu limité.
+      synonymes: []
+    ar:
+      terme: وحدة تصرف حسب الأهداف
+      definition: >
+        هيكل وقتي يُحدث داخل وزارة لإنجاز مشروع محدّد، تحت سلطة الوزير. وقد أُحدثت سنة
+        2014 وحدة من هذا النوع بوزارة الشؤون الاجتماعية لإنجاز مشروع إعداد بنك معطيات حول
+        العائلات المعوزة ومحدودة الدخل.
       synonymes: []
 
   - id: condition-de-ressources
@@ -2903,6 +3062,53 @@ entries:
         التعريفة المقرّرة للمرضى غير المجانيين من الصنف المرتّب فيه المريض،
         وبالمصحة الخاصة، ثلثي التعريفة المقرّرة بالتراتيب (قرار 12 مارس 1973،
         الفصل 24 جديد).
+      synonymes: []
+
+  - id: malade-payant
+    acronyme: null
+    statut: valide
+    references: [arrete-1996-12-19-tarifs]
+    source_definition: {ref: arrete-1996-12-19-tarifs, locator: "art. 1"}
+    source_traduction: {ref: arrete-1996-12-19-tarifs}
+    voir_aussi: [tarif-de-responsabilite, amg2]
+    fr:
+      terme: Malade payant
+      definition: >
+        Malade d'une structure sanitaire publique que ne visent ni la gratuité des
+        soins, ni les tarifs réduits, ni la prise en charge conventionnelle des
+        articles 35 à 37 de la loi n° 91-63 ; il paie le tarif réglementaire des
+        consultations, des journées d'hospitalisation et des actes fixé par l'arrêté
+        du 19 décembre 1996 (art. 1er).
+      synonymes: []
+    ar:
+      terme: المريض الخاضع لدفع مقابل
+      definition: >
+        مريض بهيكل صحي عمومي لا تشمله مجانية العلاج ولا التعريفة المنخفضة ولا
+        التعهد بمقتضى الاتفاقيات المنصوص عليها بالفصول 35 و36 و37 من القانون عدد 63
+        لسنة 1991 ؛ ويدفع التعريفة المقررة للفحوص ولأيام الإقامة وللأعمال بمقتضى
+        القرار المؤرخ في 19 ديسمبر 1996 (الفصل 1).
+      synonymes: [المرضى غير المجانيين]
+  - id: lettre-cle
+    acronyme: null
+    statut: valide
+    references: [arrete-1996-12-19-tarifs]
+    source_definition: {ref: arrete-1996-12-19-tarifs, locator: "art. 10"}
+    source_traduction: {ref: arrete-1996-12-19-tarifs, locator: "art. 10"}
+    voir_aussi: [malade-payant]
+    fr:
+      terme: Lettre clé
+      definition: >
+        Lettre affectée à une catégorie d'actes professionnels de la nomenclature
+        générale, dont la valeur en dinars, multipliée par le coefficient de l'acte,
+        donne le tarif de l'acte dans les structures sanitaires publiques (arrêté du
+        19 décembre 1996, art. 10).
+      synonymes: [Lettre-clé]
+    ar:
+      terme: الحرف المصطلح عليه
+      definition: >
+        حرف مخصص لصنف من الأعمال المهنية بالمجموعة العامة للأعمال المهنية، تُضرب
+        قيمته بالدينار في معامل العمل لتحديد تعريفة العمل بالهياكل الصحية العمومية
+        (قرار 19 ديسمبر 1996، الفصل 10).
       synonymes: []
 
   - id: contribution-frais-soins
@@ -3344,9 +3550,9 @@ entries:
   - id: bonification
     acronyme: null
     statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
-    references: [loi2019-37]
+    references: [loi2019-37, loi2009-39]
     source_definition: {ref: loi85-12, locator: "art. 32-33"}
-    voir_aussi: [annuite-liquidable, travaux-penibles-insalubres, cadres-actifs, fonctions-astreignantes, mise-a-la-retraite-d-office]
+    voir_aussi: [mise-a-la-retraite-avant-age-legal, annuite-liquidable, travaux-penibles-insalubres, cadres-actifs, fonctions-astreignantes, mise-a-la-retraite-d-office]
     fr:
       terme: Bonification
       definition: >
@@ -3357,7 +3563,9 @@ entries:
         militaires et agents des forces de sécurité intérieure blessés en service,
         aux agents atteints d'une invalidité de 80 % au moins et aux agents mis à la
         retraite pour suppression d'emplois (art. 33). Son effet reste borné par le
-        plafond du taux de liquidation.
+        plafond du taux de liquidation. La loi n° 2009-39 (art. 5) accorde aux agents
+        mis à la retraite avant l'âge légal une bonification égale à la période qui
+        reste à accomplir pour l'atteindre ; le texte ne dit pas si ce plafond la borne.
       synonymes: []
     ar:
       terme: الترفيع في مدّة الخدمات
@@ -3367,7 +3575,9 @@ entries:
         الأسلاك النشيطة وللأعوان المباشرين لوظائف مرهقة (الفصل 32)، وكذلك للعسكريين
         وأعوان قوات الأمن الداخلي المصابين أثناء الخدمة، وللأعوان المصابين بعجز لا
         تقلّ نسبته عن 80 %، وللأعوان المحالين على التقاعد بسبب حذف الخطط (الفصل 33).
-        ويبقى أثره محدودًا بسقف نسبة التصفية.
+        ويبقى أثره محدودًا بسقف نسبة التصفية. ويمنح القانون عدد 39 لسنة 2009 (الفصل 5)
+        الأعوان المحالين على التقاعد قبل بلوغ السن القانونية تنفيلًا يساوي الفترة المتبقية
+        لبلوغها؛ ولا ينصّ على ما إذا كان هذا السقف يحدّه.
       synonymes: [التمتيع الاستثنائي]
 
   - id: cadres-actifs
@@ -3862,9 +4072,11 @@ entries:
         Système de départ anticipé des agents publics institué, hors de la loi
         n° 85-12, par la loi n° 87-7 du 6 mars 1987. Il est distinct du droit général
         au départ anticipé de l'article 30 de la loi n° 85-12 et de la mise à la
-        retraite avant l'âge légal instituée par la loi n° 2009-39 du 8 juillet 2009,
-        que l'article 7 de la loi n° 2019-37 maintient l'un et l'autre sous l'empire
-        des textes antérieurs pour l'âge légal.
+        retraite avant l'âge légal instituée par la loi n° 2009-39 du 8 juillet 2009.
+        L'article 7 de la loi n° 2019-37 laisse régis par les textes en vigueur à leur
+        date, pour l'âge légal, les programmes de mise à la retraite avant l'âge légal
+        et de départ volontaire dont l'exécution a commencé avant son entrée en
+        vigueur ; il ne nomme aucune de ces lois.
       synonymes: []
     ar:
       terme: التقاعد المبكّر الاختياري
@@ -3873,8 +4085,41 @@ entries:
         بمقتضى القانون عدد 7 لسنة 1987 المؤرّخ في 6 مارس 1987. وهو متميّز عن الحقّ العامّ
         في الخروج المبكّر المنصوص عليه بالفصل 30 من القانون عدد 12 لسنة 1985، وعن الإحالة
         على التقاعد قبل السنّ القانونية التي أحدثها القانون عدد 39 لسنة 2009 المؤرّخ في 8
-        جويلية 2009، وقد أبقى الفصل 7 من القانون عدد 37 لسنة 2019 كليهما خاضعَين، في ما
-        يتعلّق بالسنّ القانونية، للنصوص السابقة.
+        جويلية 2009. ويُبقي الفصل 7 من القانون عدد 37 لسنة 2019 برامج الإحالة على التقاعد
+        قبل بلوغ السنّ القانونية وبرامج المغادرة الطوعية التي بدأ تنفيذها قبل دخوله حيّز
+        التطبيق خاضعةً، في ما يتعلّق بالسنّ القانونية، للنصوص السارية في تاريخها؛ ولا
+        يُسمّي أيًّا من هذين القانونين.
+      synonymes: []
+
+  - id: mise-a-la-retraite-avant-age-legal
+    acronyme: null
+    statut: provisoire  # équivalent AR : intitulé de la loi n° 2009-39 (JORT, éd. ar.)
+    references: [decret2009-2085, lfc-2009, avis-cc-27-2009, decret2011-932]
+    source_definition: {ref: loi2009-39}
+    source_traduction: {ref: loi2009-39}
+    voir_aussi: [retraite-anticipee-volontaire, bonification, jouissance-differee, fonds-special-tresor]
+    fr:
+      terme: Mise à la retraite avant l'âge légal
+      definition: >
+        Mesure temporaire instituée par la loi n° 2009-39 du 8 juillet 2009 : les
+        agents publics affiliés à la CNRPS qui atteignent l'âge légal du 1er janvier
+        2010 au 31 décembre 2012 peuvent, avec 15 ans d'activité ayant donné lieu à
+        retenues, demander leur mise à la retraite avant cet âge. Une commission
+        spéciale du Premier ministère statue, dans la limite de 7 000 agents ; la
+        pension est immédiate, bonifiée de la période restant à courir jusqu'à l'âge
+        légal, et les pensions et contributions de cette période sont à la charge de
+        l'employeur. Le terme désigne aussi des programmes ultérieurs de même schéma.
+      synonymes: []
+    ar:
+      terme: الإحالة على التقاعد قبل بلوغ السن القانونية
+      definition: >
+        إجراء وقتي أحدثه القانون عدد 39 لسنة 2009 المؤرخ في 8 جويلية 2009: يمكن للأعوان
+        العموميين المنخرطين بالصندوق الوطني للتقاعد والحيطة الاجتماعية الذين يبلغون السن
+        القانونية من غرة جانفي 2010 إلى 31 ديسمبر 2012 أن يطلبوا إحالتهم على التقاعد قبل
+        بلوغها، متى كانت لهم 15 سنة نشاط خضعت للاقتطاعات. وتبتّ في الطلبات لجنة خاصة
+        بالوزارة الأولى في حدود 7000 عون؛ وتُصرف الجراية فورًا مع تنفيل يساوي المدة
+        المتبقية لبلوغ السن القانونية، ويتحمّل المشغّل الجرايات والمساهمات الاجتماعية
+        طيلة هذه المدة. ويُطلق المصطلح أيضًا على برامج لاحقة على المنوال نفسه.
       synonymes: []
 
   - id: solde-de-reforme
@@ -4882,15 +5127,15 @@ entries:
       definition: >
         Régime spécifique de sécurité sociale des travailleuses agricoles, institué par
         le décret-loi n° 2024-4 du 22 octobre 2024, relatif au régime de protection
-        sociale des travailleuses agricoles, exécutoire le 28 octobre 2024, et géré par
+        sociale des travailleuses agricoles, exécutoire le 24 octobre 2024, et géré par
         la CNSS ; il comporte les prestations de l'assurance maladie et les pensions de
         vieillesse, d'invalidité et de survivants (art. 1, 17 et 18). Il couvre la
         travailleuse agricole non salariée, à titre principal et pour son propre
         compte, et la salariée qui travaille au moins 15 jours par mois, en moyenne au
         moins 45 jours par trimestre ou 180 jours par an, sauf si son employeur est
         affilié à un régime légal couvrant les mêmes risques pour tous ses employés
-        (art. 17). L'État prend en charge ses cotisations pendant les trois premières
-        années d'activité (art. 20 et 23). La pension de vieillesse est ouverte à
+        (art. 17). L'État prend en charge, pendant les trois premières années d'activité,
+        les cotisations de la non-salariée et la quote-part de la salariée (art. 20 et 23). La pension de vieillesse est ouverte à
         65 ans, ou dès 60 ans, après 120 mois de cotisations effectives et validées
         (art. 26-27) ; ses taux et ses modalités sont renvoyés à un décret (art. 33).
       synonymes: [Régime spécifique de sécurité sociale des travailleuses agricoles]
@@ -4899,16 +5144,123 @@ entries:
       definition: >
         نظام خاصّ للضمان الاجتماعي للعاملات الفلاحيات، أحدثه المرسوم عدد 4 لسنة 2024
         المؤرّخ في 22 أكتوبر 2024 المتعلّق بنظام الحماية الاجتماعية للعاملات الفلاحيات،
-        النافذ منذ 28 أكتوبر 2024، ويديره الصندوق الوطني للضمان الاجتماعي؛ ويشمل منافع
+        النافذ منذ 24 أكتوبر 2024، ويديره الصندوق الوطني للضمان الاجتماعي؛ ويشمل منافع
         التأمين على المرض وجرايات الشيخوخة والعجز والباقين على قيد الحياة (الفصول 1 و17
         و18). ويغطّي العاملة الفلاحية غير الأجيرة التي تعمل بصفة أساسية ولحسابها الخاصّ،
         والأجيرة التي تعمل 15 يومًا على الأقلّ في الشهر، بمعدّل 45 يومًا على الأقلّ في
         الثلاثية أو 180 يومًا في السنة، ما لم يكن مؤجّرها منخرطًا في نظام قانوني يغطّي
-        نفس المخاطر لفائدة جميع أجرائه (الفصل 17). وتتكفّل الدولة باشتراكاتها خلال
-        السنوات الثلاث الأولى من النشاط (الفصلان 20 و23). وتُفتح جراية الشيخوخة في سنّ 65
+        نفس المخاطر لفائدة جميع أجرائه (الفصل 17). وتتكفّل الدولة، خلال السنوات الثلاث
+        الأولى من النشاط، باشتراكات غير الأجيرة وبحصّة الأجيرة منها (الفصلان 20 و23). وتُفتح جراية الشيخوخة في سنّ 65
         سنة، أو ابتداءً من 60 سنة، بعد 120 شهرًا من الاشتراكات الفعلية والمصادق عليها
         (الفصلان 26 و27)؛ ويُحيل المرسوم ضبط نسبها وصيغها إلى أمر (الفصل 33).
       synonymes: [النظام الخاص للضمان الاجتماعي للعاملات الفلاحيات]
+
+  - id: travailleuse-agricole
+    acronyme: null
+    # Définition de l'art. 2 du décret-loi n° 2024-4 (JORT n° 129/2024, éd. ar. qui fait foi).
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret-loi2024-4, locator: "art. 2"}
+    source_traduction: {ref: decret-loi2024-4, locator: "art. 2"}
+    voir_aussi: [regime-travailleuses-agricoles]
+    fr:
+      terme: Travailleuse agricole
+      definition: >
+        Femme travaillant dans le secteur agricole au sens de l'article 3 du code du travail :
+        soit non salariée, exerçant à titre principal une activité professionnelle agricole
+        pour son propre compte, soit salariée, travaillant chez un ou plusieurs employeurs
+        (décret-loi n° 2024-4, art. 2).
+
+      synonymes: []
+    ar:
+      terme: العاملة الفلاحية
+      definition: >
+        المرأة التي تعمل في القطاع الفلاحي بمفهوم الفصل 3 من مجلة الشغل، سواء كانت غير أجيرة
+        تمارس بصفة أساسية نشاطًا مهنيًا فلاحيًا لحسابها الخاص، أو أجيرة تعمل لدى مؤجّر أو
+        عدة مؤجّرين (المرسوم عدد 4 لسنة 2024، الفصل 2).
+
+      synonymes: []
+
+  - id: fonds-protection-sociale-travailleuses-agricoles
+    acronyme: null
+    # Nommé à l'art. 3 du décret-loi n° 2024-4 ; créé par l'art. 15 de la loi de finances pour 2025.
+    statut: provisoire
+    references: [lf-2025]
+    source_definition: {ref: decret-loi2024-4, locator: "art. 3"}
+    source_traduction: {ref: lf-2025, locator: "art. 15"}
+    voir_aussi: [regime-travailleuses-agricoles, regime-protection-sociale-travailleuses-agricoles]
+    fr:
+      terme: Fonds de protection sociale des travailleuses agricoles
+      definition: >
+        Fonds sur lequel sont imputées les dépenses des programmes du régime de protection
+        sociale des travailleuses agricoles (décret-loi n° 2024-4, art. 3), créé par l'article 15
+        de la loi de finances pour 2025 et géré par la CNSS. La travailleuse agricole est
+        exemptée des cotisations à son financement. Ses ressources comprennent une subvention
+        budgétaire, des recettes affectées et des dons.
+
+      synonymes: []
+    ar:
+      terme: صندوق الحماية الاجتماعية للعاملات الفلاحيات
+      definition: >
+        صندوق تُحمل عليه نفقات برامج نظام الحماية الاجتماعية للعاملات الفلاحيات (المرسوم عدد 4
+        لسنة 2024، الفصل 3)، أُحدث بالفصل 15 من قانون المالية لسنة 2025 ويديره الصندوق الوطني
+        للضمان الاجتماعي. وتُعفى العاملة الفلاحية من المساهمة في تمويله. وتشمل موارده منحة من
+        ميزانية الدولة وموارد مخصّصة وهبات.
+
+      synonymes: []
+
+  - id: regime-protection-sociale-travailleuses-agricoles
+    acronyme: null
+    # Intitulé du décret-loi n° 2024-4 et de son art. 1er ; plus large que le régime de
+    # sécurité sociale du titre III, chap. 1.
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret-loi2024-4, locator: "art. 1"}
+    source_traduction: {ref: decret-loi2024-4, locator: "intitulé"}
+    voir_aussi: [regime-travailleuses-agricoles, travailleuse-agricole]
+    fr:
+      terme: Régime de protection sociale des travailleuses agricoles
+      definition: >
+        Ensemble institué par le décret-loi n° 2024-4 au profit des travailleuses agricoles, qui
+        vise l'inclusion économique et garantit les prestations de l'assurance maladie, les
+        pensions de vieillesse, d'invalidité et de survivants, la couverture des risques
+        professionnels et les prestations du programme « Amen Social » (art. 1). Plus large que
+        le régime de sécurité sociale, qui n'en est qu'un volet.
+
+      synonymes: []
+    ar:
+      terme: نظام الحماية الاجتماعية للعاملات الفلاحيات
+      definition: >
+        نظام أحدثه المرسوم عدد 4 لسنة 2024 لفائدة العاملات الفلاحيات، يهدف إلى الإدماج الاقتصادي
+        ويضمن منافع التأمين على المرض وجرايات الشيخوخة والعجز والباقين على قيد الحياة والتغطية
+        من المخاطر المهنية ومنافع برنامج الأمان الاجتماعي (الفصل 1). وهو أوسع من نظام الضمان
+        الاجتماعي للعاملات الفلاحيات الذي لا يمثّل إلا أحد جوانبه.
+
+      synonymes: []
+
+  - id: inclusion-economique
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret-loi2024-4, locator: "art. 2 et 4 à 10"}
+    source_traduction: {ref: decret-loi2024-4, locator: "art. 2"}
+    voir_aussi: [regime-protection-sociale-travailleuses-agricoles]
+    fr:
+      terme: Inclusion économique
+      definition: >
+        Dans le décret-loi n° 2024-4, accès de la travailleuse agricole au travail salarié ou
+        indépendant par des mécanismes de qualification, de formation, d'accompagnement et de
+        financement de petites entreprises agricoles (art. 4 à 10). Traduction officielle ; le
+        texte arabe, qui fait foi, dit « intégration » (الإدماج).
+
+      synonymes: []
+    ar:
+      terme: الإدماج الاقتصادي
+      definition: >
+        في المرسوم عدد 4 لسنة 2024، تمكين العاملة الفلاحية من النفاذ إلى الشغل الأجير أو المستقل
+        عبر آليات التأهيل والتكوين والمرافقة وتمويل المؤسسات الصغرى الفلاحية (الفصول 4 إلى 10).
+
+      synonymes: []
 
   - id: securite-sociale-pecheurs
     acronyme: null
@@ -6298,6 +6650,128 @@ entries:
         جوان 1988، فحلّ محلّها المعلوم على الاستهلاك. نظام تاريخي.
       synonymes: []
 
+  - id: capsule-fiscale-vins
+    acronyme: null
+    statut: valide
+    references: [decret-97-1368-regime-alcools, decret-pres-2022-545-capsule-vins]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 6"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 6"}
+    voir_aussi: [droit-de-consommation, biere-vin-classe]
+    fr:
+      terme: Capsule fiscale sur les vins
+      definition: >
+        Marque apposée sur chaque bouteille de vin, immédiatement après le
+        remplissage, pour garantir le recouvrement des impôts et droits dus sur
+        les vins. Instituée par l'article 6 du décret n° 97-1368 du 24 juillet
+        1997, elle compte six catégories selon la nature du vin et la
+        contenance de la bouteille ; son tarif figure à l'annexe IV du décret.
+      synonymes: []
+    ar:
+      terme: العلامة الجبائية على الخمور
+      definition: >
+        علامة توضع على كل قارورة خمر مباشرة بعد ملئها لضمان استخلاص الأداءات
+        والمعاليم المستوجبة على الخمور. أحدثها الفصل 6 من الأمر عدد 1368 لسنة
+        1997 المؤرخ في 24 جويلية 1997؛ وهي من ست فئات بحسب نوع الخمر وسعة
+        القارورة، وتعريفتها واردة بالملحق عدد IV من الأمر.
+      synonymes: [العلامة الجبائية]
+
+  - id: biere-vin-classe
+    acronyme: null
+    statut: valide
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 3 et 5"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 3 et 5"}
+    voir_aussi: [droit-de-consommation, capsule-fiscale-vins]
+    fr:
+      terme: Bière, vin classés
+      definition: >
+        Bières et vins inscrits dans le classement que le ministre chargé du
+        secteur fixe par arrêté (décret n° 97-1368, article 3). Le tarif du
+        droit de consommation des annexes s'applique à ces produits ; il est
+        doublé pour les bières et les vins non classés (article 5).
+      synonymes: [bière classée, vin classé]
+    ar:
+      terme: الجعة والخمور المصنفة
+      definition: >
+        الجعة والخمور المدرجة في التصنيف الذي يضبطه بقرار الوزير المكلف
+        بالقطاع (الفصل 3 من الأمر عدد 1368 لسنة 1997). وتنطبق عليها تعريفة
+        المعلوم على الاستهلاك الواردة بالملاحق، وتضاعف هذه التعريفة بالنسبة
+        إلى الجعة والخمور غير المصنفة (الفصل 5).
+      synonymes: []
+
+  - id: acquit-a-caution
+    acronyme: null
+    statut: provisoire
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    voir_aussi: [conge-circulation, droit-de-consommation]
+    fr:
+      terme: Acquit-à-caution
+      definition: >
+        Titre qui accompagne le transport des alcools, des boissons
+        alcoolisées et des vins lorsque le droit de consommation n'a pas été
+        acquitté au plein tarif (décret n° 97-1368, article 31). Le destinataire
+        ou l'exportateur le dépose au bureau de contrôle des impôts dans les
+        vingt-quatre heures qui suivent la date fixée pour la livraison ou pour
+        l'exportation.
+      synonymes: []
+    ar:
+      terme: وصل ضمان
+      definition: >
+        سند يرافق نقل الكحول والمشروبات الكحولية والخمور إذا لم يدفع المعلوم
+        على الاستهلاك حسب النسبة العليا (الفصل 31 من الأمر عدد 1368 لسنة 1997).
+        ويودعه متسلم البضاعة أو مصدرها لدى مكتب مراقبة الأداءات في أجل أقصاه
+        أربع وعشرون ساعة من التاريخ المحدد لتسليم البضاعة أو لتصديرها.
+      synonymes: [وصل الضمان]
+
+  - id: conge-circulation
+    acronyme: null
+    statut: provisoire
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    voir_aussi: [acquit-a-caution, droit-de-consommation]
+    fr:
+      terme: Congé (titre de circulation)
+      definition: >
+        Titre qui accompagne le transport des alcools, des boissons
+        alcoolisées et des vins lorsque le droit de consommation a été acquitté
+        au plein tarif (décret n° 97-1368, article 31). Dans les autres cas, le
+        transport se fait sous acquit-à-caution.
+      synonymes: [congé]
+    ar:
+      terme: سند إعفاء
+      definition: >
+        سند يرافق نقل الكحول والمشروبات الكحولية والخمور إذا دفع المعلوم على
+        الاستهلاك حسب النسبة العليا (الفصل 31 من الأمر عدد 1368 لسنة 1997).
+        وينقل في الحالات الأخرى بوصل ضمان.
+      synonymes: [سند الإعفاء]
+
+  - id: comptabilite-matiere
+    acronyme: null
+    statut: provisoire
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 15"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 15"}
+    voir_aussi: [capsule-fiscale-vins, entrepositaire]
+    fr:
+      terme: Comptabilité matière
+      definition: >
+        Registre numéroté et paraphé par le bureau de contrôle des impôts,
+        tenu jour par jour sans blanc, rature ni addition, où les producteurs
+        et les embouteilleurs de vin, les fabricants d'alcool et de boissons
+        alcoolisées inscrivent les entrées et les sorties de matières (décret
+        n° 97-1368, article 15 pour les embouteilleurs de vin).
+      synonymes: [registre de comptabilité matière]
+    ar:
+      terme: حسابية المواد
+      definition: >
+        دفتر مرقم ومؤشر عليه من قبل مكتب مراقبة الأداءات، يمسك يوما بيوم دون
+        فراغ أو شطب أو إضافة، تسجل فيه مداخيل المواد ومخارجها (الفصل 15 من
+        الأمر عدد 1368 لسنة 1997 بالنسبة إلى معبئي الخمور).
+      synonymes: [دفتر حسابية مواد]
+
   - id: impot-societes
     acronyme: IS
     statut: valide
@@ -6764,7 +7238,7 @@ entries:
     references: [loi77-54]
     source_definition: {ref: loi77-54, locator: "art. 1-2"}
     source_traduction: {ref: loi-88-145-lf-1989, locator: "art. 35"}
-    voir_aussi: [tfp]
+    voir_aussi: [tfp, fonds-foprolos]
     fr:
       terme: Contribution au fonds de promotion du logement pour les salariés
       definition: >
@@ -6781,6 +7255,532 @@ entries:
         الفلاحيين الخواصّ، أُحدث سنة 1977 بنسبة 2 % من الأجور الخاضعة
         للمساهمات الاجتماعية، ثمّ خُفّض سنة 1989 إلى 1 % من الأجور
         والمرتّبات. يموّل صندوقًا يساعد الأجراء على الحصول على مسكن.
+      synonymes: []
+
+  # --- Logement social (livre prestations_sociales, chapitre _logement_social.qmd) ---
+  # Passe 1 (termes, sources) et passe 2 (définitions) du terminologue, 23/10/2026.
+
+  - id: fonds-foprolos
+    acronyme: null
+    statut: valide  # AR lu dans la LF 2026, art. 21 (rubrique, éd. AR), la loi n° 2026-1 et le décret n° 2026-123 (éd. AR)
+    references: [loi77-60-lfc1977, lf-2026, decret2026-123]
+    source_definition: {ref: loi77-54, locator: "art. 5-6"}
+    source_traduction: {ref: lf-2026, locator: "art. 21"}
+    voir_aussi: [foprolos, fonds-special-tresor, premier-logement, logement-social]
+    fr:
+      terme: Fonds de promotion du logement pour les salariés
+      definition: >
+        Fonds créé par la loi n° 77-54 du 3 août 1977, distinct de la
+        contribution des employeurs qui l'alimente ; la loi de finances
+        complémentaire du même jour en fait un fonds spécial du Trésor. Il est
+        destiné à venir en aide aux salariés qui veulent accéder à la propriété
+        d'un logement, par des prêts et, depuis 2016, des dons. Depuis le
+        1er janvier 2026, il contribue aussi au financement de la construction
+        de logements et de l'aménagement de lots sociaux par la SNIT et ses
+        filiales, la SPROLS et l'AFH. Ses ressources sont la contribution,
+        l'amortissement et les intérêts de ses prêts.
+      synonymes: [Fonds FOPROLOS]
+    ar:
+      terme: صندوق النهوض بالمسكن لفائدة الأجراء
+      definition: >
+        صندوق أُحدث بالقانون عدد 54 لسنة 1977 المؤرّخ في 3 أوت 1977، وهو متميّز
+        عن مساهمة المؤجّرين التي تموّله، وجعله قانون المالية التكميلي الصادر في
+        اليوم نفسه صندوقًا خاصًّا للخزينة. يهدف إلى مساعدة الأجراء الراغبين في
+        تملّك مسكن، بواسطة قروض، ومنذ 2016 بواسطة هبات أيضًا. ومنذ غرّة جانفي
+        2026، يساهم كذلك في تمويل بناء المساكن وتهيئة المقاسم الاجتماعية التي
+        تنجزها الشركة الوطنية العقارية للبلاد التونسية وفروعها وشركة النهوض
+        بالمساكن الاجتماعية والوكالة العقارية للسكنى. تتكوّن موارده من المساهمة
+        ومن استرجاع أصل قروضه وفوائضها.
+      synonymes: []
+
+  - id: snit
+    acronyme: SNIT
+    statut: valide  # AR lu dans la loi n° 2026-1 (éd. AR)
+    references: [loi2026-1]
+    source_definition: {ref: loi57-19, locator: "statut, art. 1er-3"}
+    source_traduction: {ref: loi2026-1}
+    voir_aussi: [sprols, afh, fonds-foprolos]
+    fr:
+      terme: Société nationale immobilière de Tunisie
+      definition: >
+        Entreprise à caractère commercial régie par le droit des sociétés
+        anonymes, dont le capital est apporté par l'État et dont les statuts
+        sont en vigueur depuis le 1er septembre 1957. Elle réalise des
+        opérations immobilières pour son compte, celui de l'État ou des
+        collectivités, gère des immeubles et conduit des programmes de
+        construction. Depuis le 14 février 2026, elle et ses filiales peuvent
+        vendre les logements sociaux financés par le fonds de promotion du
+        logement pour les salariés par paiement échelonné ou en location-vente.
+      synonymes: []
+    ar:
+      terme: الشركة الوطنية العقارية للبلاد التونسية
+      definition: >
+        مؤسسة ذات صبغة تجارية تخضع لأحكام شركات المساهمة، تساهم الدولة برأس
+        مالها، ودخل نظامها الأساسي حيّز التنفيذ بداية من غرّة سبتمبر 1957. تنجز
+        عمليات عقارية لحسابها أو لحساب الدولة أو الجماعات، وتتصرّف في عقارات،
+        وتنجز برامج بناء. ومنذ 14 فيفري 2026، يمكنها هي وفروعها بيع المساكن
+        الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن لفائدة الأجراء
+        بالتقسيط أو بمقتضى عقود الكراء المملّك.
+      synonymes: []
+
+  - id: sprols
+    acronyme: SPROLS
+    statut: valide  # AR lu dans le JORT AR n° 19/2026 (intitulé de la loi n° 2026-2)
+    references: [loi2026-2, decret2010-3170]
+    source_definition: {ref: loi77-53, locator: "art. 1er-4"}
+    source_traduction: {ref: loi2026-2}
+    voir_aussi: [snit, afh, fonds-foprolos, cnss, cavis]
+    fr:
+      terme: Société de promotion des logements sociaux
+      definition: >
+        Établissement public à caractère industriel et commercial créé par la
+        loi n° 77-53 du 3 août 1977 pour « promouvoir la construction de
+        logements au profit des assurés sociaux ». Elle réalise et gère les
+        programmes immobiliers de la Caisse nationale de sécurité sociale et de
+        la Caisse d'assurance vieillesse, invalidité et survivants, qui ont
+        apporté son capital initial, et loue des logements aux assurés sociaux.
+        Placée à l'origine sous la tutelle des Affaires sociales, elle relève
+        de l'Équipement depuis 2010. Depuis le 14 février 2026, elle peut
+        vendre les logements sociaux financés par le fonds de promotion du
+        logement pour les salariés par paiement échelonné ou en location-vente.
+      synonymes: []
+    ar:
+      terme: شركة النهوض بالمساكن الاجتماعية
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت بالقانون عدد 53 لسنة 1977
+        المؤرّخ في 3 أوت 1977 للنهوض ببناء المساكن لفائدة المضمونين
+        الاجتماعيين. تنجز البرامج العقارية للصندوق الوطني للضمان الاجتماعي
+        ولصندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع
+        بجراية وتتصرّف فيها، وقد ساهم الصندوقان في رأس مالها الأصلي، وتؤجّر
+        مساكن للمضمونين الاجتماعيين. كانت في الأصل تحت إشراف وزارة الشؤون
+        الاجتماعية، وأصبحت منذ 2010 تحت إشراف وزارة التجهيز. ومنذ 14 فيفري 2026،
+        يمكنها بيع المساكن الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن
+        لفائدة الأجراء بالتقسيط أو بمقتضى عقود الكراء المملّك.
+      synonymes: []
+
+  - id: afh
+    acronyme: AFH
+    statut: provisoire  # statut et missions (décrets n° 74-33 et 2021-327, non versés) non lus : la définition se borne aux rôles que donnent la LFC 2012 et la LF 2026 ; AR relevé dans les intitulés AR du JORT, sans clé pour l'éd. AR
+    references: [lfc-2012, decret2026-123]
+    source_definition: {ref: lf-2026, locator: "art. 21"}
+    voir_aussi: [snit, sprols, fonds-foprolos]
+    fr:
+      terme: Agence foncière d'habitation
+      definition: >
+        Organisme public du logement qui compte parmi les réalisateurs du
+        programme spécifique pour le logement social créé en 2012. Depuis le
+        1er janvier 2026, le fonds de promotion du logement pour les salariés
+        contribue au financement des logements et des lots sociaux qu'elle
+        réalise, jusqu'à la totalité du coût et sans intérêt depuis le
+        20 juin 2026.
+      synonymes: []
+    ar:
+      terme: الوكالة العقارية للسكنى
+      definition: >
+        هيكل عمومي في مجال السكن، من بين الهياكل المكلّفة بإنجاز البرنامج
+        الخصوصي للسكن الاجتماعي المحدث سنة 2012. ومنذ غرّة جانفي 2026، يساهم
+        صندوق النهوض بالمسكن لفائدة الأجراء في تمويل المساكن والمقاسم
+        الاجتماعية التي تنجزها، بنسبة قد تبلغ كامل الكلفة ودون فائدة منذ
+        20 جوان 2026.
+      synonymes: []
+
+  - id: fnah
+    acronyme: FNAH
+    statut: valide  # AR repris de la LF 2019, art. 72 (éd. AR), comme contribution-fnah
+    references: [decret86-438, lfc-2012, lf-2025]
+    source_definition: {ref: loi2004-77, locator: "art. 1er-4"}
+    source_traduction: {ref: loi2018-56-lf2019, locator: "art. 72"}
+    voir_aussi: [contribution-fnah, logement-rudimentaire, fonds-special-tresor]
+    fr:
+      terme: Fonds national d'amélioration de l'habitat
+      definition: >
+        Fonds qui finance, par des prêts et des subventions, l'éradication des
+        logements rudimentaires dans le cadre d'un programme national,
+        l'entretien et la réhabilitation des logements par les propriétaires
+        privés et, depuis 2012, par les occupants privés, des opérations des
+        collectivités locales, la réhabilitation et la rénovation urbaine
+        confiées à des organismes, et la réparation des logements après une
+        catastrophe ; ces emplois sont fixés par la loi n° 2004-77 du
+        2 août 2004. Sa gestion est confiée par convention à une banque. Fonds
+        spécial du Trésor, il est alimenté depuis 2005 par une contribution
+        adossée à la taxe sur les immeubles bâtis.
+      synonymes: []
+    ar:
+      terme: الصندوق الوطني لتحسين السكن
+      definition: >
+        صندوق يموّل، بواسطة قروض ومنح، إزالة المساكن البدائية في إطار برنامج
+        وطني، وصيانة المساكن وتعهّدها من قبل المالكين الخواص، ومنذ 2012 من قبل
+        الشاغلين الخواص أيضًا، وعمليات الجماعات المحلية، وإعادة التأهيل
+        والتجديد العمراني الموكولين إلى هياكل، وإصلاح المساكن إثر الكوارث؛
+        وقد ضبط هذه التدخّلات القانون عدد 77 لسنة 2004 المؤرّخ في 2 أوت 2004.
+        يُعهد بالتصرّف فيه بمقتضى اتفاقية إلى بنك. وهو صندوق خاص للخزينة، يموَّل
+        منذ 2005 بمساهمة مرتبطة بالمعلوم على العقارات المبنية.
+      synonymes: []
+
+  - id: logement-rudimentaire
+    acronyme: null
+    statut: provisoire  # AR : المساكن البدائية non retrouvé dans une édition AR du JORT (décrets n° 86-438 et 2012-1224 non lus en AR)
+    references: [decret86-438, loi2004-77]
+    source_definition: {ref: decret2012-1224, locator: "art. 7"}
+    voir_aussi: [fnah, programme-specifique-logement-social]
+    fr:
+      terme: Logement rudimentaire
+      definition: >
+        Habitation insalubre occupée en permanence. Le décret n° 86-438 du
+        12 avril 1986 range parmi les logements rudimentaires « les gourbis,
+        les kibs, les maamras, les baraques et les tentes » ; le décret
+        n° 2012-1224 du 10 août 2012 retient les locaux habités en permanence
+        dont les matériaux, la surface ou la solidité « ne répondent pas aux
+        normes sanitaires et techniques minimales d'habitabilité ». Leur
+        remplacement est l'objet du programme national de 1986, d'un emploi du
+        Fonds national d'amélioration de l'habitat et du programme spécifique
+        pour le logement social.
+      synonymes: []
+    ar:
+      terme: المساكن البدائية
+      definition: >
+        مسكن غير صحّي مأهول بصفة دائمة. يعدّ الأمر عدد 438 لسنة 1986 المؤرّخ في
+        12 أفريل 1986 من المساكن البدائية الأكواخ و«الكيب» و«المعمرات»
+        والبراريك والخيام؛ ويعتمد الأمر عدد 1224 لسنة 2012 المؤرّخ في 10 أوت
+        2012 المحلاّت المأهولة بصفة دائمة التي لا تستجيب موادّها أو مساحتها أو
+        متانتها للمواصفات الصحية والفنية الدنيا للسكن. وتعويضها هو موضوع
+        البرنامج الوطني لسنة 1986، وأحد تدخّلات الصندوق الوطني لتحسين السكن،
+        والبرنامج الخصوصي للسكن الاجتماعي.
+      synonymes: []
+
+  - id: logement-social
+    acronyme: null
+    statut: provisoire  # AR relevé dans les intitulés AR du JORT, à confirmer sur l'éd. AR du décret n° 2012-1224 ; plafonds de 2012, décrets modificatifs n° 2013-3289, 2014-4251, 2015-460, 2023-538 non lus
+    references: [lfc-2012, loi2026-1]
+    source_definition: {ref: decret2012-1224, locator: "art. 20"}
+    voir_aussi: [programme-specifique-logement-social, fonds-foprolos, premier-logement]
+    fr:
+      terme: Logement social
+      definition: >
+        Logement destiné aux ménages à faible revenu et produit ou financé
+        avec une aide publique. Dans le programme spécifique pour le logement
+        social, le décret n° 2012-1224 du 10 août 2012 le définit comme un
+        logement individuel extensible d'un prix de 45 000 D au plus, ou un
+        logement collectif de 65 000 D au plus. Depuis 2026, la SNIT, ses
+        filiales et la SPROLS peuvent vendre en location-vente ou à
+        tempérament les logements sociaux financés par le fonds de promotion
+        du logement pour les salariés.
+      synonymes: []
+    ar:
+      terme: السكن الاجتماعي
+      definition: >
+        مسكن موجّه إلى الأسر ذات الدخل الضعيف، يُنجز أو يُموَّل بدعم عمومي. وفي
+        إطار البرنامج الخصوصي للسكن الاجتماعي، يعرّفه الأمر عدد 1224 لسنة 2012
+        المؤرّخ في 10 أوت 2012 بأنه مسكن فردي قابل للتوسعة لا يتجاوز ثمنه
+        45 ألف دينار، أو مسكن جماعي لا يتجاوز ثمنه 65 ألف دينار. ومنذ 2026،
+        يمكن للشركة الوطنية العقارية للبلاد التونسية وفروعها ولشركة النهوض
+        بالمساكن الاجتماعية بيع المساكن الاجتماعية المموّلة من صندوق النهوض
+        بالمسكن لفائدة الأجراء بالكراء المملّك أو بالتقسيط.
+      synonymes: []
+
+  - id: programme-specifique-logement-social
+    acronyme: null
+    statut: provisoire  # AR relevé dans 14 intitulés AR du JORT, à confirmer sur l'éd. AR de la LFC 2012 ; décrets modificatifs du décret n° 2012-1224 non lus
+    references: [decret2012-1224, lf-2022]
+    source_definition: {ref: lfc-2012, locator: "art. 27-32"}
+    voir_aussi: [logement-social, logement-rudimentaire, afh, sprols]
+    fr:
+      terme: Programme spécifique pour le logement social
+      definition: >
+        Programme créé par la loi de finances complémentaire pour 2012 « au
+        profit des catégories sociales à faible revenu », pour remplacer les
+        logements rudimentaires et réaliser des projets d'habitation. Il est
+        financé par le budget de l'État, le recouvrement des prêts et des dons,
+        et réalisé par les conseils régionaux, les sociétés immobilières
+        publiques, la SPROLS, l'Agence de réhabilitation et de rénovation
+        urbaine, l'AFH et des promoteurs privés. Dans la rédaction du décret
+        d'août 2012, il s'adresse aux familles sans logement dont le revenu ne
+        dépasse pas 3 SMIG, en trois catégories, par une prise en charge de la
+        moitié du coût de remplacement d'un logement rudimentaire ou une
+        subvention à l'achat d'un logement social.
+      synonymes: []
+    ar:
+      terme: البرنامج الخصوصي للسكن الاجتماعي
+      definition: >
+        برنامج أحدثه قانون المالية التكميلي لسنة 2012 لفائدة الفئات الاجتماعية
+        محدودة الدخل، لتعويض المساكن البدائية وإنجاز مشاريع سكنية. يموَّل من
+        ميزانية الدولة ومن استخلاص القروض ومن الهبات، وتنجزه المجالس الجهوية
+        والشركات العقارية العمومية وشركة النهوض بالمساكن الاجتماعية ووكالة
+        التهذيب والتجديد العمراني والوكالة العقارية للسكنى وباعثون عقاريون
+        خواص. وفي صيغة الأمر الصادر في أوت 2012، يتوجّه إلى العائلات التي لا
+        تملك مسكنًا ولا يتجاوز دخلها ثلاث مرّات الأجر الأدنى المضمون لمختلف
+        المهن، في ثلاثة أصناف، بتحمّل نصف كلفة تعويض المسكن البدائي أو بمنحة
+        لاقتناء مسكن اجتماعي.
+      synonymes: []
+
+  - id: premier-logement
+    acronyme: null
+    statut: valide  # AR lu dans la LF 2025, art. 25 (éd. AR : « مسكن أول ») ; modificatifs n° 2017-391 et 2019-39 du décret n° 2017-161 non lus ; « promoteur agréé » rendu par باعث عقاري مصادق عليه, forme AR non attestée (voir promoteur-agree)
+    references: [lf-2017, lf-2025, decret2023-127]
+    source_definition: {ref: decret2017-161, locator: "art. 3, 5-6"}
+    source_traduction: {ref: lf-2025, locator: "art. 25"}
+    voir_aussi: [logement-social, fonds-foprolos, promoteur-agree]
+    fr:
+      terme: Premier logement
+      definition: >
+        Logement qu'un ménage sans logement acquiert pour son habitation
+        principale, et nom du programme créé par la loi de finances pour 2017
+        au profit des catégories à revenu moyen. Dans la rédaction du décret
+        n° 2017-161 du 31 janvier 2017, le logement est neuf, compte au moins
+        deux chambres et un salon, est réalisé par un promoteur agréé et coûte
+        200 000 D au plus ; le programme prête aux familles dont le revenu est
+        compris entre 4,5 et 10 SMIG une partie de l'autofinancement, à un taux
+        bonifié. Depuis 2025, le programme couvre aussi la construction d'un
+        premier logement. Depuis 2023, les prêts du fonds de promotion du
+        logement pour les salariés financent eux aussi un premier logement.
+      synonymes: []
+    ar:
+      terme: المسكن الأول
+      definition: >
+        مسكن تقتنيه أسرة لا تملك مسكنًا لسكناها الرئيسية، واسم البرنامج الذي
+        أحدثه قانون المالية لسنة 2017 لفائدة الفئات ذات الدخل المتوسّط. وفي صيغة
+        الأمر الحكومي عدد 161 لسنة 2017 المؤرّخ في 31 جانفي 2017، يكون المسكن
+        جديدًا، يتضمّن غرفتين وقاعة جلوس على الأقل، ينجزه باعث عقاري مصادق عليه، ولا يتجاوز
+        ثمنه 200 ألف دينار؛ ويقرض البرنامج العائلات التي يتراوح دخلها بين 4,5
+        و10 مرّات الأجر الأدنى المضمون لمختلف المهن جزءًا من التمويل الذاتي بنسبة
+        فائدة ميسّرة. ومنذ 2025، يشمل البرنامج أيضًا بناء مسكن أول. ومنذ 2023،
+        تموّل قروض صندوق النهوض بالمسكن لفائدة الأجراء هي أيضًا مسكنًا أول.
+      synonymes: []
+
+  - id: location-vente
+    acronyme: null
+    statut: provisoire  # AR lu dans le décret n° 2026-123, art. 9 bis (éd. AR) ; aucun texte versé ne définit le contrat lui-même : la définition s'en tient à l'usage qu'en font les lois n° 2026-1 et 2026-2 et le décret n° 2026-123
+    references: [loi2026-1, loi2026-2]
+    source_definition: {ref: decret2026-123, locator: "art. 9 bis"}
+    source_traduction: {ref: decret2026-123, locator: "art. 9 bis"}
+    voir_aussi: [vente-a-temperament, snit, sprols]
+    fr:
+      terme: Location-vente
+      definition: >
+        Mode de cession d'un logement par contrat de location-vente. Depuis le
+        14 février 2026, la SNIT et ses filiales et la SPROLS peuvent céder
+        ainsi les logements sociaux financés par le fonds de promotion du
+        logement pour les salariés ; depuis le 20 juin 2026, le prix plafond
+        au mètre carré des logements de promoteur ne s'applique pas à ces
+        cessions, et les loyers sont fixés selon le coût de chaque projet par
+        convention entre l'opérateur et le ministère chargé de l'habitat.
+      synonymes: []
+    ar:
+      terme: الكراء المملّك
+      definition: >
+        طريقة لإحالة مسكن بمقتضى عقد كراء مملّك. ومنذ 14 فيفري 2026، يمكن
+        للشركة الوطنية العقارية للبلاد التونسية وفروعها ولشركة النهوض بالمساكن
+        الاجتماعية إحالة المساكن الاجتماعية المموّلة من موارد صندوق النهوض
+        بالمسكن لفائدة الأجراء على هذا النحو؛ ومنذ 20 جوان 2026، لا ينطبق السعر
+        الأقصى للمتر المربع لمساكن الباعثين على هذه الإحالات، وتُضبط معينات
+        الكراء حسب كلفة كل مشروع بمقتضى اتفاقية بين الباعث العمومي والوزارة
+        المكلّفة بالإسكان.
+      synonymes: []
+
+  - id: vente-a-temperament
+    acronyme: null
+    statut: provisoire  # AR « البيع بالتقسيط » cité par la note documentaire (§ 1.3) et le registre comme texte de l'art. 9 bis du décret n° 2026-123 (éd. AR) ; aucun texte versé ne définit le contrat lui-même
+    references: [loi2026-1, loi2026-2]
+    source_definition: {ref: loi2026-1}
+    source_traduction: {ref: decret2026-123, locator: "art. 9 bis"}
+    voir_aussi: [location-vente, snit, sprols]
+    fr:
+      terme: Vente à tempérament
+      definition: >
+        Vente dont le prix est payé par versements échelonnés ; les lois
+        n° 2026-1 et 2026-2 du 13 février 2026 parlent de vente « par paiement
+        échelonné ». Depuis le 14 février 2026, la SNIT et ses filiales et la
+        SPROLS peuvent vendre ainsi les logements sociaux financés par le fonds
+        de promotion du logement pour les salariés ; depuis le 20 juin 2026, le
+        prix plafond au mètre carré des logements de promoteur ne s'applique
+        pas à ces ventes, et les mensualités sont fixées selon le coût de
+        chaque projet par convention entre l'opérateur et le ministère chargé
+        de l'habitat.
+      synonymes: [Paiement échelonné]
+    ar:
+      terme: البيع بالتقسيط
+      definition: >
+        بيع يُدفع ثمنه على أقساط. ومنذ 14 فيفري 2026، يمكن للشركة الوطنية
+        العقارية للبلاد التونسية وفروعها ولشركة النهوض بالمساكن الاجتماعية بيع
+        المساكن الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن لفائدة الأجراء
+        على هذا النحو؛ ومنذ 20 جوان 2026، لا ينطبق السعر الأقصى للمتر المربع
+        لمساكن الباعثين على هذه البيوعات، وتُضبط الأقساط الشهرية حسب كلفة كل
+        مشروع بمقتضى اتفاقية بين الباعث العمومي والوزارة المكلّفة بالإسكان.
+      synonymes: []
+
+  - id: epargne-logement
+    acronyme: null
+    statut: provisoire  # loi n° 73-24 non versée ni lue ; AR relevé dans un fascicule AR de 2001 (Ja0822001), à vérifier sur la loi n° 73-24
+    references: [decret77-965]
+    source_definition: {ref: decret77-964, locator: "art. 1er et 3"}
+    voir_aussi: [fonds-foprolos]
+    fr:
+      terme: Épargne-logement
+      definition: >
+        Régime institué par la loi n° 73-24 du 7 mai 1973, qui exige de
+        l'acquéreur d'un logement une épargne préalable. Le décret n° 77-964
+        du 24 novembre 1977 le modifie et prévoit des prêts « pour parfaire
+        l'épargne exigée » ; le décret n° 77-965 du même jour ouvre aux
+        salariés gagnant de 1,5 à 3 SMIG un prêt du fonds de promotion du
+        logement pour les salariés qui complète cette épargne.
+      synonymes: []
+    ar:
+      terme: الادخار السكني
+      definition: >
+        نظام أُحدث بالقانون عدد 24 لسنة 1973 المؤرّخ في 7 ماي 1973، يشترط على
+        مقتني المسكن ادّخارًا مسبقًا. نقّحه الأمر عدد 964 لسنة 1977 المؤرّخ في
+        24 نوفمبر 1977 وأقرّ قروضًا لاستكمال الادخار المطلوب؛ وفتح الأمر عدد 965
+        لسنة 1977 الصادر في اليوم نفسه للأجراء الذين يتراوح أجرهم بين 1,5 و3
+        مرّات الأجر الأدنى المضمون لمختلف المهن قرضًا من صندوق النهوض بالمسكن
+        لفائدة الأجراء يكمّل هذا الادخار.
+      synonymes: []
+
+  - id: promoteur-agree
+    acronyme: null
+    statut: provisoire  # AR non attesté (الباعث العقاري المصادق عليه proposé ; à relever sur l'éd. AR des décrets n° 2016-1126 ou 2023-127) ; régime de l'agrément non versé ; le chapitre ancre encore #g-promoteur-immobilier (l. 64)
+    references: [decret77-965, decret2016-1126, decret2023-127]
+    source_definition: {ref: decret2017-161, locator: "art. 3"}
+    voir_aussi: [promoteur-immobilier, premier-logement, fonds-foprolos]
+    fr:
+      terme: Promoteur immobilier agréé
+      definition: >
+        Promoteur immobilier titulaire de l'agrément de l'administration.
+        Depuis 1977, le fonds de promotion du logement pour les salariés prête
+        pour l'achat d'un logement neuf à un promoteur agréé ; depuis 2023, le
+        terrain qu'il finance peut être acheté à un promoteur agréé « ou du
+        privé ». Le logement du programme du premier logement est réalisé par
+        un promoteur agréé.
+      synonymes: [Promoteur agréé]
+    ar:
+      terme: الباعث العقاري المصادق عليه
+      definition: >
+        باعث عقاري متحصّل على مصادقة الإدارة. ومنذ 1977، يقرض صندوق النهوض
+        بالمسكن لفائدة الأجراء لاقتناء مسكن جديد من باعث عقاري مصادق عليه؛ ومنذ
+        2023، يمكن اقتناء الأرض التي يموّلها من باعث عقاري مصادق عليه أو من
+        الخواص. وينجز المسكنَ في برنامج المسكن الأول باعثٌ عقاري مصادق عليه.
+      synonymes: []
+
+  # Notions économiques (docs/notes/eco-logement-social.md, § 7) : termes AR proposés, non attestés.
+
+  - id: elasticite-offre-logement
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: glaeser-gyourko-2018-housing-supply, locator: "p. 13"}
+    voir_aussi: [eviction-logement, incidence-fiscale, aide-a-la-personne]
+    fr:
+      terme: Élasticité de l'offre de logement
+      definition: >
+        Variation en pourcentage de la quantité de logements offerts quand
+        leur prix augmente de 1 %. Selon Glaeser et Gyourko (2018), l'offre est
+        rigide là où le foncier est rare et les règles d'urbanisme strictes :
+        le prix s'y écarte du coût de construction, et une aide à la demande se
+        reporte dans les prix plutôt que d'accroître le parc.
+      synonymes: []
+    ar:
+      terme: مرونة عرض المساكن
+      definition: >
+        التغيّر بالنسبة المائوية في كمية المساكن المعروضة عند ارتفاع ثمنها بنسبة
+        1 %. وحسب غليزر وغيوركو (2018)، يكون العرض جامدًا حيث تندر الأراضي وتشتدّ
+        قواعد التعمير: يبتعد الثمن عندئذ عن كلفة البناء، وينعكس الدعم الموجّه إلى
+        الطلب على الأسعار بدل أن يزيد في عدد المساكن.
+      synonymes: []
+
+  - id: eviction-logement
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: sinai-waldfogel-2005-crowd-out}
+    voir_aussi: [elasticite-offre-logement, aide-a-la-pierre]
+    fr:
+      terme: Éviction de la construction privée
+      definition: >
+        Remplacement, par un logement aidé ou produit par la puissance
+        publique, d'un logement que le marché aurait produit ; seule la part
+        des logements aidés qui ne remplace pas une production privée accroît
+        le parc. Sinai et Waldfogel (2005) estiment qu'aux États-Unis trois
+        logements aidés en remplacent en moyenne deux, et que l'éviction est
+        plus faible là où la demande non satisfaite est forte.
+      synonymes: [Effet d'éviction]
+    ar:
+      terme: مزاحمة البناء الخاص
+      definition: >
+        تعويض مسكن كانت السوق ستنتجه بمسكن مدعوم أو تنتجه السلطة العمومية؛ ولا
+        يزيد في عدد المساكن إلا الجزء من المساكن المدعومة الذي لا يعوّض إنتاجًا
+        خاصًّا. ويقدّر سيناي ووالدفوغل (2005) أن ثلاثة مساكن مدعومة تعوّض في
+        المعدّل مسكنين في الولايات المتحدة، وأن المزاحمة تكون أضعف حيث يكون الطلب
+        غير الملبّى قويًّا.
+      synonymes: []
+
+  - id: aide-a-la-pierre
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: fack-2005-aides-logement}
+    voir_aussi: [aide-a-la-personne, eviction-logement]
+    fr:
+      terme: Aide à la pierre
+      definition: >
+        Aide publique attachée au logement plutôt qu'au ménage : subvention,
+        prêt à taux réduit ou financement accordé pour construire, acheter ou
+        réhabiliter des logements, ou logement produit par un organisme public.
+        Elle s'oppose à l'aide à la personne.
+      synonymes: [Aide à l'offre]
+    ar:
+      terme: الدعم الموجّه إلى البناء
+      definition: >
+        دعم عمومي مرتبط بالمسكن لا بالأسرة: منحة أو قرض بنسبة فائدة منخفضة أو
+        تمويل يُسند لبناء مساكن أو اقتنائها أو تهذيبها، أو مسكن ينتجه هيكل
+        عمومي. ويقابله الدعم الموجّه إلى الأسر.
+      synonymes: []
+
+  - id: aide-a-la-personne
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: fack-2005-aides-logement, locator: "p. 17"}
+    voir_aussi: [aide-a-la-pierre, incidence-fiscale, elasticite-offre-logement]
+    fr:
+      terme: Aide à la personne
+      definition: >
+        Aide publique au logement versée au ménage, selon ses ressources, pour
+        alléger son loyer ou ses charges de logement, et qui le suit quel que
+        soit le logement occupé. Elle s'oppose à l'aide à la pierre. Fack
+        (2005) estime qu'en France, de 1973 à 2002, 50 à 80 % des aides à la
+        personne perçues par les locataires à bas revenus sont absorbés par la
+        hausse de leurs loyers.
+      synonymes: [Aide à la demande]
+    ar:
+      terme: الدعم الموجّه إلى الأسر
+      definition: >
+        دعم عمومي للسكن يُسند إلى الأسرة حسب مواردها لتخفيف معين كرائها أو
+        أعباء سكنها، ويتبعها أيًّا كان المسكن الذي تشغله. ويقابله الدعم الموجّه
+        إلى البناء. ويقدّر فاك (2005) أن ما بين 50 و80 % من هذا الدعم الذي
+        يتقاضاه المتسوّغون ذوو الدخل الضعيف في فرنسا، من 1973 إلى 2002، قد
+        استوعبه ارتفاع معينات كرائهم.
+      synonymes: []
+
+  - id: element-de-subvention
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé (usage des institutions financières internationales), non attesté au JORT ; définition générique : ONU-Habitat (p. 63) emploie la notion sans la définir
+    references: [zaafrane-2014-habitat]
+    source_definition: {ref: onu-habitat-2011-tunisia-housing-profile, locator: "p. 63"}
+    voir_aussi: [premier-logement, fonds-foprolos]
+    fr:
+      terme: Élément de subvention d'un prêt bonifié
+      definition: >
+        Part d'un prêt à taux réduit qui équivaut à un don : différence entre
+        le montant prêté et la valeur actualisée, au taux du marché, des
+        remboursements dus au taux bonifié. ONU-Habitat (2011) juge celui des
+        prêts au logement tunisiens « difficult to calculate ».
+      synonymes: []
+    ar:
+      terme: عنصر المنحة في القرض الميسّر
+      definition: >
+        جزء من القرض بنسبة فائدة منخفضة يعادل هبة: الفرق بين المبلغ المقرَض
+        والقيمة الحالية، محسوبة بنسبة فائدة السوق، للأقساط المستحقّة بالنسبة
+        الميسّرة. ويرى موئل الأمم المتحدة (2011) أن احتساب هذا العنصر في قروض
+        السكن التونسية عسير.
       synonymes: []
 
   - id: avance-tfp
@@ -7820,7 +8820,7 @@ entries:
     references: [lf-2005, loi2018-56-lf2019]
     source_definition: {ref: lf-2005, locator: "art. 13"}
     source_traduction: {ref: loi2018-56-lf2019, locator: "art. 72"}
-    voir_aussi: [taxe-immeubles-batis]
+    voir_aussi: [taxe-immeubles-batis, fnah]
     fr:
       terme: Contribution au profit du Fonds national d'amélioration de l'habitat
       definition: >
@@ -10840,8 +11840,9 @@ entries:
         Engagement par lequel l'État se substitue à une entreprise ou à un
         établissement public dans ses obligations envers un prêteur, si
         l'emprunteur fait défaut. La loi de finances en fixe chaque année le
-        plafond (loi organique du budget n° 2019-15, article 45). On distingue
-        les garanties accordées dans l'année et l'encours de la dette garantie.
+        plafond (depuis l'année financière 1958-59 ; loi organique du budget
+        n° 2019-15, article 45). On distingue les garanties accordées dans l'année et l'encours de la
+        dette garantie.
       synonymes: []
     ar:
       terme: ضمان الدولة
@@ -11977,6 +12978,27 @@ entries:
     ar:
       terme: التدخل العمومي
       definition: ""
+      synonymes: []
+
+  - id: nomenclature-budgetaire
+    acronyme: null
+    statut: provisoire  # AR lu : intitulé du décret gouvernemental n° 2020-52 (AR), JORT n° 9 de 2020, p. 368 (« تبويب ميزانية البلديات ») ; colonnes du modèle annexé, p. 369
+    references: [decret-gouv2020-52]
+    source_definition: {ref: decret-gouv2020-52, locator: "annexe"}
+    source_traduction: {ref: decret-gouv2020-52, locator: "intitulé"}
+    voir_aussi: [interventions-publiques, depenses-de-gestion]
+    fr:
+      terme: Nomenclature budgétaire
+      definition: >
+        Classement des recettes et des dépenses d'un budget en titres, parties,
+        sections, articles et paragraphes ; pour les communes, un modèle approuvé par
+        décret gouvernemental.
+      synonymes: []
+    ar:
+      terme: تبويب الميزانية
+      definition: >
+        تصنيف مداخيل الميزانية ونفقاتها إلى عناوين وأجزاء وأقسام وفصول وفقرات ؛ وبالنسبة
+        إلى البلديات، نموذج يُصادَق عليه بأمر حكومي.
       synonymes: []
 
   - id: credits-d-engagement
