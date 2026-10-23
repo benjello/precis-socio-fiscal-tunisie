@@ -436,6 +436,39 @@ ls.figure_plafond(
 Fin 2023, 42 entreprises publiques déclarent 11 960,7 MD de créances sur l'État et 11 246,3 MD de dettes envers lui, soit 8,0 % et 7,5 % du PIB de l'année : l'État leur doit 714,4 MD de plus qu'elles ne lui doivent. Ces montants sont ceux des entreprises : le ministère des Finances écrit que les données lui sont pour l'essentiel fournies par elles et qu'il n'en garantit pas la fiabilité [@minfin-ep-2025, p. 124]. Les banques publiques ne sont pas dans cet échantillon ; les caisses de sécurité sociale y sont.
 
 ```{python}
+#| label: fig-ep-croisees
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "croisees",
+    caption=("Dettes et créances croisées entre l'État et 42 entreprises publiques, hors "
+             "banques, en fin d'année, 2021-2023, selon les déclarations des entreprises : "
+             "dettes des entreprises envers l'État, créances des entreprises sur l'État et "
+             "solde, en millions de dinars courants, en % des dépenses de l'État hors service "
+             "de la dette et en % du PIB. Source : ministère des Finances [@minfin-ep-2025, "
+             "p. 115-123]"),
+    note_lecture=(
+        "Les dettes sont ce que les entreprises doivent à l'État : impôts et taxes, prêts et avances du Trésor, autres dettes. Les créances sont ce que l'État leur doit : subventions non réglées, prestations rendues à l'État, autres créances. Le solde est la différence, créances moins dettes : une valeur positive est un montant net dû par l'État aux entreprises. Les montants sont ceux que les entreprises déclarent, sans garantie de fiabilité de la part du ministère. La créance de la STEG au titre du complément de subvention, que le ministère ne confirme pas, est comprise dans les créances de 2022 et de 2023. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. Un encours de fin d'année est rapporté à un flux annuel : la part donne une échelle, non une fraction du budget. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "Deux lignes des dettes portent, dans le rapport, un libellé français et un libellé arabe qui se contredisent ; elles sont comprises dans le total des dettes (@tbl-ep-croisees)."),
+)
+```
+
+- **Évolution.** Les dettes et les créances augmentent de fin 2021 à fin 2022, puis les dettes progressent moins et les créances reculent en 2023 ; le solde net dû par l'État aux entreprises se réduit chaque année (@tbl-ep-croisees).
+
+
+- **Ce que l'État doit.** D'abord des subventions non réglées : 5 934,8 MD fin 2021, 7 680,5 MD fin 2022, 6 956,8 MD fin 2023, soit 58 % des créances des entreprises à cette date. Viennent ensuite les prestations rendues à l'État, 3 312,3 MD fin 2023.
+- **À qui.** Fin 2023, les subventions non réglées sont dues à la [STEG](#g-steg) pour 3 151,6 MD, à l'Office des céréales pour 2 185,3 MD, à la [STIR](#g-stir) pour 762,0 MD et à l'Office national de l'huile pour 512,6 MD [@minfin-ep-2025, p. 121].
+- **Une créance que le ministère ne confirme pas.** La créance de la STEG au titre du complément de subvention — 3 423,1 MD fin 2022, 3 151,6 MD fin 2023 — est calculée par la société ; selon le rapport, elle n'est ni confirmée par les services du ministère des Finances ni convenue avec eux [@minfin-ep-2025, p. 124].
+- **Ce qui est dû à l'État.** Des impôts et taxes, pour 6 561,5 MD fin 2023, et des prêts et avances du Trésor, pour 3 456,7 MD. La CNRPS est la première débitrice (2 968,8 MD), devant l'Office des céréales (1 631,1 MD) et la Société des transports de Tunis (1 509,3 MD) (@tbl-ep-croisees-entreprises).
+- **Un règlement en 2020.** Le rapport annexé au projet de loi de finances pour 2021 signale l'affectation, dans la loi de finances complémentaire pour 2020, « de crédits d'environ 4 100 MD au titre du règlement des dettes arriérés à la charge de l'État », surtout envers l'Office des céréales, la STEG, la STIR et la Société nationale de distribution des pétroles, et la création d'une commission de liquidation des dettes et créances croisées [@minfin-ep, p. 142]. Ce que ces crédits ont réglé n'est pas établi ici.
+
+:::: {.chronologie-repliable titre="Dettes et créances croisées avec l'État : totaux et postes, fin 2021, fin 2022 et fin 2023"}
+
+```{python}
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -451,11 +484,7 @@ ep.tableau_croisees(
              "en base 2015, non rétropolé pour ces années [@ins-cnat-2015]"))
 ```
 
-- **Ce que l'État doit.** D'abord des subventions non réglées : 5 934,8 MD fin 2021, 7 680,5 MD fin 2022, 6 956,8 MD fin 2023, soit 58 % des créances des entreprises à cette date. Viennent ensuite les prestations rendues à l'État, 3 312,3 MD fin 2023.
-- **À qui.** Fin 2023, les subventions non réglées sont dues à la [STEG](#g-steg) pour 3 151,6 MD, à l'Office des céréales pour 2 185,3 MD, à la [STIR](#g-stir) pour 762,0 MD et à l'Office national de l'huile pour 512,6 MD [@minfin-ep-2025, p. 121].
-- **Une créance que le ministère ne confirme pas.** La créance de la STEG au titre du complément de subvention — 3 423,1 MD fin 2022, 3 151,6 MD fin 2023 — est calculée par la société ; selon le rapport, elle n'est ni confirmée par les services du ministère des Finances ni convenue avec eux [@minfin-ep-2025, p. 124].
-- **Ce qui est dû à l'État.** Des impôts et taxes, pour 6 561,5 MD fin 2023, et des prêts et avances du Trésor, pour 3 456,7 MD. La CNRPS est la première débitrice (2 968,8 MD), devant l'Office des céréales (1 631,1 MD) et la Société des transports de Tunis (1 509,3 MD) (@tbl-ep-croisees-entreprises).
-- **Un règlement en 2020.** Le rapport annexé au projet de loi de finances pour 2021 signale l'affectation, dans la loi de finances complémentaire pour 2020, « de crédits d'environ 4 100 MD au titre du règlement des dettes arriérés à la charge de l'État », surtout envers l'Office des céréales, la STEG, la STIR et la Société nationale de distribution des pétroles, et la création d'une commission de liquidation des dettes et créances croisées [@minfin-ep, p. 142]. Ce que ces crédits ont réglé n'est pas établi ici.
+::::
 
 :::: {.chronologie-repliable titre="Dettes et créances croisées avec l'État : les dix premières entreprises créancières et les dix premières débitrices, montants fin 2023"}
 

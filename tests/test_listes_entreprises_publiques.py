@@ -142,3 +142,34 @@ def test_parts_du_plafond_de_la_garantie():
     assert t.loc["1986", dep] == pytest.approx(100 * 200 / 2395.0, abs=0.01)
     assert set(t.loc["1961":"1991", "Base du PIB"]) == {"base non dite"}
     assert set(t.loc["1992":"1994", "Base du PIB"]) == {"base 1983"}
+
+
+def test_figure_des_dettes_et_creances_croisees_recoupe_le_tableau():
+    """Les trois séries de la figure sont les totaux du tableau ; le solde est créances moins
+    dettes ; le PIB est en base 2015, non rétropolé."""
+    import contextlib
+    import io
+    import sys
+
+    import pytest
+
+    pytest.importorskip("matplotlib")
+    racine = Path(__file__).resolve().parent.parent
+    sys.path.insert(0, str(racine / "precis/fr/entreprises_publiques"))
+    sys.path.insert(0, str(racine / "scripts"))
+    from figures import entreprises_publiques as ep
+
+    t = ep.table_croisees().set_index("Fin d'année")
+    assert list(t.index) == [2021, 2022, 2023]
+    assert t["Dettes envers l'État (MD)"].tolist() == [8391.8, 10899.3, 11246.3]
+    assert t["Créances sur l'État (MD)"].tolist() == [9864.4, 12184.3, 11960.7]
+    for a in t.index:
+        assert t.loc[a, "Solde, créances moins dettes (MD)"] == pytest.approx(
+            t.loc[a, "Créances sur l'État (MD)"] - t.loc[a, "Dettes envers l'État (MD)"], abs=0.1)
+    assert set(t["Base du PIB"]) == {"base 2015"}
+    sortie = io.StringIO()
+    with contextlib.redirect_stdout(sortie):
+        ep.tableau_croisees("x")
+    for a in t.index:
+        for col in ("Dettes envers l'État (MD)", "Créances sur l'État (MD)"):
+            assert ep._n(t.loc[a, col]) in sortie.getvalue()
