@@ -8,10 +8,13 @@ ministère des Finances) : la présente note donne le plafond fixé par la loi, 
 
 - Notices : `jort_cache.db`, titres « octroi de la garantie de l'Etat », 1956-1996. Le champ
   `pages` de la notice d'un article de loi de finances est la page où l'article est imprimé
-  (contrôlé sur l'en-tête ou le pied de page de chaque fascicule, trente-huit cas).
+  (contrôlé sur l'en-tête ou le pied de page de chaque fascicule, ou sur les pages voisines
+  du même fascicule, trente-huit cas).
 - Lecture : fascicules français du corpus local (`PDFs/JORT/<année>/fr/`), scannés, sans texte.
   Reconnaissance de caractères (Tesseract, français, 170 dpi) sur la page de l'article, relue à
-  l'image pour les gestions 1966, 1975 et 1979 dont la reconnaissance était illisible.
+  l'image pour les gestions 1966, 1975 et 1979 (reconnaissance illisible) et pour 1963, 1969 et
+  1985 (numéros d'article mal reconnus). Gestion 1985 : le numéro imprimé est peu lisible
+  (« 51 » ou « 54 ») ; 54 d'après la suite des articles 53 et 55.
 - Le relevé versionné est `precis/fr/entreprises_publiques/listes/plafond-garanties-lois-de-finances.csv`
   (manifeste `.csv.yml`, test `tests/test_listes_entreprises_publiques.py`).
 
@@ -50,17 +53,18 @@ Le détail article par article et page par page est dans le relevé CSV.
   du crédit (art. 3), avec débit d'office du compte de l'emprunteur (art. 4). Il vise l'article 36
   de la loi n° 77-81. **Correction du chapitre** : il disait que cet arrêté institue une
   commission de garantie qui instruit les demandes ; l'arrêté fixe la commission due par
-  l'emprunteur. La commission d'instruction, citée par le rapport du ministère des Finances
-  (édition LF 2020, p. 38), reste à relier à son acte.
+  l'emprunteur. Le rapport du ministère des Finances (édition LF 2020, p. 38) renvoie à cet
+  arrêté pour la « commission de garantie » (transcription du 11 octobre 2026, § 1.2) : rien ne
+  montre qu'une commission d'instruction des demandes existe ; le passage est à relire.
 - La loi de finances pour 1979 (loi n° 78-59, art. 44, p. 3778) supprime le « fonds de
   péréquation de change 1964 » et verse ses excédents au fonds spécial du Trésor intitulé
   « Fonds d'amortissement de la garantie de bonne fin donnée par le Trésor ».
 
 ## 3. Références
 
-Dix-sept notices neuves (FR et AR, fonds commun) : `loi58-45-lf1958`, `loi59-42-lf1959`,
+Seize notices neuves (FR et AR, fonds commun), plus `loi66-79-lf1967` promue du volume « Les cotisations sociales » au fonds commun : `loi58-45-lf1958`, `loi59-42-lf1959`,
 `loi60-38-lf1961`, `loi61-65-lf1962`, `loi62-82-lf1963`, `loi63-58-lf1964`, `loi64-59-lf1965`,
-`loi65-46-lf1966`, `loi66-79-lf1967`, `loi67-57-lf1968`, `loi71-59-lf1972`, `loi73-82-lf1974`,
+`loi65-46-lf1966`, `loi67-57-lf1968`, `loi71-59-lf1972`, `loi73-82-lf1974`,
 `loi74-75-lfc1974`, `loi75-83-lf1976`, `loi77-81-lf1978`, `loi78-59-lf1979`,
 `loi93-111-garantie-1993`, plus `arrete1993-04-03-commission-garantie`. Les autres lois sont
 déjà au fonds commun (`lf-1969`, `lf-1970`, `lf-1971`, `lf-1973`, `lf-1977`, `lf-1981`,

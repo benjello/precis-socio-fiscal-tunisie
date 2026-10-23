@@ -332,9 +332,9 @@ ep.tableau_audit_banques(
 
 : Plafond des garanties de l'État pour 2020 : la loi de finances rectificative {#tbl-ep-garanties-lfr-2020}
 
-**Le cadre.** La loi de finances de l'année fixe le plafond par un article ; une commission de garantie instruit les demandes [@minfin-transferts-2020, p. 38]. Depuis [un arrêté du 3 avril 1993](#r-ep-arrete-1993-commission), l'octroi de la garantie est subordonné au paiement d'une commission (@sec-ep-garanties-plafond-legal). Selon le rapport sur la dette publique, la garantie d'un prêt extérieur joue dès la défaillance de l'emprunteur, celle d'un prêt intérieur après épuisement des poursuites contre lui [@minfin-dette-2025, p. 61].
+**Le cadre.** La loi de finances de l'année fixe le plafond par un article. Depuis [un arrêté du 3 avril 1993](#r-ep-arrete-1993-commission), l'octroi de la garantie est subordonné au paiement d'une commission (@sec-ep-garanties-plafond-legal). Selon le rapport sur la dette publique, la garantie d'un prêt extérieur joue dès la défaillance de l'emprunteur, celle d'un prêt intérieur après épuisement des poursuites contre lui [@minfin-dette-2025, p. 61].
 
-<!-- TODO (documentaliste) : lire l'article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin donnée par le Trésor) et l'acte qui institue la commission de garantie chargée d'instruire les demandes ; dépouiller les articles sur la garantie des lois de finances de 1995 à 2015, puis les suivantes, pour prolonger la série légale du plafond (fiche r-ep-plafond-garantie-1995-2015) ; dépouiller les rapports sur la dette publique des éditions LF 2021 et LF 2024 (recoupement de l'encours) et leurs pages sur les prêts rétrocédés. -->
+<!-- TODO (documentaliste) : lire l'article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin donnée par le Trésor) et, dans le rapport sur les transferts et les garanties (édition LF 2020, p. 38), le passage qui renvoie à l'arrêté du 3 avril 1993 ; dépouiller les articles sur la garantie des lois de finances de 1995 à 2015, puis les suivantes, pour prolonger la série légale du plafond (fiche r-ep-plafond-garantie-1995-2015) ; dépouiller les rapports sur la dette publique des éditions LF 2021 et LF 2024 (recoupement de l'encours) et leurs pages sur les prêts rétrocédés. -->
 
 ::::
 
@@ -356,15 +356,15 @@ ls.figure_plafond(
     note_lecture=(
         "Chaque point est le montant que la loi de finances de la gestion fixe pour l'année ; la flèche et le losange orange sont le montant auquel une loi postérieure porte ce plafond au cours de la même gestion. "
         "L'axe vertical est logarithmique : un même écart de hauteur est un même rapport de montants. "
-        "L'année financière 1958-59, imprimée à 7 milliards de francs avant la création du dinar, n'est pas tracée. "
+        "L'année financière 1958-59, imprimée à 7 milliards de francs, n'est pas tracée. "
         "Le plafond est un maximum légal : il ne dit ni les garanties accordées ni l'encours."),
 )
 ```
 
-- **Des paliers de longue durée.** Le plafond est de 12 MD pour 1959-60 et jusqu'en 1962, de 16 MD de [1963](#r-ep-pl-1963) à 1966, de 20 MD en [1967](#r-ep-pl-1967), de 25 MD de [1968](#r-ep-pl-1968) à 1973, de 50 MD de 1974 à 1976, de 200 MD de [1977](#r-ep-pl-1977) à 1987, de 300 MD de 1988 à 1991. Il est multiplié par quatre en 1977 (de 50 à 200 MD). Après 300 MD en 1991, il est de 250 MD en [1992](#r-ep-pl-1992), de 500 MD en [1993](#r-ep-pl-1993) et de 950 MD en [1994](#r-ep-pl-1994).
+- **Des paliers de longue durée.** Le plafond est de 12 MD pour 1959-60, 1961 et 1962, de 16 MD de [1963](#r-ep-pl-1963) à 1966, de 20 MD en [1967](#r-ep-pl-1967), de 25 MD de [1968](#r-ep-pl-1968) à 1973, de 50 MD de 1974 à 1976, de 200 MD de [1977](#r-ep-pl-1977) à 1987, de 300 MD de 1988 à 1991. Il est multiplié par quatre en 1977 (de 50 à 200 MD). Après 300 MD en 1991, il est de 250 MD en [1992](#r-ep-pl-1992), de 500 MD en [1993](#r-ep-pl-1993) et de 950 MD en [1994](#r-ep-pl-1994).
 - **Quatre relèvements en cours de gestion.** [La loi n° 74-75 du 3 août 1974](#r-ep-pl-1974-2) porte le plafond de 1974 de 25 à 50 MD. [La loi de finances pour 1989](#r-ep-pl-1988-2) fixe 300 MD « pour l'année 1988 et l'année 1989 », alors que celle de 1988 avait fixé 200 MD. [La loi de finances pour 1993](#r-ep-pl-1992-2) modifie le plafond de 1992, de 250 à 530 MD, sous la rubrique « régularisation de la garantie de l'Etat pour la gestion 1992 ». [La loi n° 93-111 du 8 novembre 1993](#r-ep-pl-1993-2), « portant augmentation du montant annuel d'octroi de la garantie de l'Etat », porte celui de 1993 de 500 à 900 MD.
 - **Une commission depuis 1993.** [L'arrêté du 3 avril 1993](#r-ep-arrete-1993-commission) subordonne l'octroi de la garantie au paiement d'une commission de 0,5 % du principal du crédit garanti pour une institution financière et de 1,5 % pour une institution non financière, versée au fonds d'amortissement de la garantie de bonne fin donnée par le Trésor.
-- **Un intitulé qui change.** Jusqu'à la loi de finances pour 1983, l'article autorise la « garantie du Trésor » ; [celle de 1984](#r-ep-pl-1984) écrit « garantie de l'État ».
+- **Un libellé qui change.** Jusqu'à la loi de finances pour 1983, le corps de l'article autorise la « garantie du Trésor » ; [celle de 1984](#r-ep-pl-1984) écrit « garantie de l'État ».
 
 :::: {.chronologie-repliable titre="Plafond de la garantie de l'État : montant fixé ou modifié par chaque loi de finances, 1958-59 à 1994, avec le texte, l'article et la page, et arrêté du 3 avril 1993 sur la commission de garantie"}
 

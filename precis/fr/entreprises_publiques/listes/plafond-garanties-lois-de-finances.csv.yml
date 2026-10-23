@@ -7,14 +7,16 @@
 # modifient ce montant en cours de gestion. Source de la transcription :
 # docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md.
 #
-# LECTURE À L'IMAGE du fascicule français du corpus local (édition française du Journal
-# officiel) pour les trente-huit lois ; la page est celle où l'article est imprimé, relevée sur
-# l'en-tête ou le pied de page du fascicule.
+# LECTURE du fascicule français du corpus local (édition française du Journal officiel) pour les
+# trente-huit lois : reconnaissance de caractères sur la page de l'article, relue à l'image pour
+# les gestions 1963, 1966, 1969, 1975, 1979 et 1985. La page est celle où l'article est imprimé,
+# relevée sur l'en-tête ou le pied de la page, ou déduite des pages voisines du même fascicule.
+# GESTION 1985 : le numéro de l'article est mal imprimé (« 51 » ou « 54 » à l'image) ; 54 d'après
+# la suite des articles 53 et 55.
 # UNE LIGNE PAR MONTANT FIXÉ : la loi de finances de l'année, puis la loi qui change ce montant
 # (plafond_avant_md porte alors le montant remplacé). L'article 18 de la loi n° 88-145 fixe un
 # montant unique « pour l'année 1988 et l'année 1989 » : il a donc deux lignes.
-# PLAFOND_IMPRIME : 1958-59 est imprimé en francs, avant la création du dinar ; la ligne est
-# donnée telle qu'imprimée et n'entre pas dans la figure, qui est en millions de dinars.
+# PLAFOND_IMPRIME : 1958-59 est imprimé en francs ; la ligne est donnée telle qu'imprimée et n'entre pas dans la figure, qui est en millions de dinars.
 # NON LUS : l'arrêté ou décret de 1957-58 (fascicule absent du corpus local) ; gestion 1960 ;
 # lois de finances complémentaires dont l'index ne détaille pas les articles (n° 69-60,
 # 73-72, 80-1, 82-27, 83-81, 84-2, 86-83, 88-60, 89-88, 91-23) : lues par leur seul index.
