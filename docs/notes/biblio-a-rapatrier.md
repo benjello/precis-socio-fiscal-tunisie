@@ -6,6 +6,14 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Versement du 23/10/2026 (éducation, dépense des communes, bibliographe, temps 1)
+
+Source : `docs/notes/education-collectivites-2026-10-23.md`, § 6. Trois notices ajoutées à `precis/fr/education/references.json` (livre sans arabe ; rien sous `precis/ar/`) :
+- **Copies identiques**, recopiées de `finances_locales` (à promouvoir au fonds commun) : `decret-gouv2020-52`, `dgct-donnees-ouvertes`.
+- **Créée** : `decret-gouv2020-439` (JORT n° 71 du 22 juillet 2020, pp. 1575-1576 ; URL française lue dans le champ `pdf_fr` de la notice 147652 de `jort_cache.db`). Date d'effet non établie. À ajouter aussi à `finances_locales`, qui ne la cite pas.
+- `loi-org-2018-29-ccl` est déjà au fonds commun.
+- **Clôture (temps 2)** : Les clés citées par la section « La dépense des communes » résolvent toutes (rendu du livre : 0 citation non résolue). `push_biblio.py --verifier` : 0 perte ; `--dry-run` : conversion complète ; `--controle-rangement` : `decret-gouv2020-52` et `dgct-donnees-ouvertes`, citées par deux livres, sont à déclasser du livre `finances_locales` vers le fonds commun ; `decret-gouv2020-439` est absente de Zotero (versement à faire). Rien poussé dans Zotero (feu vert humain requis).
+
 ## Versement et clôture du 23/10/2026 (entreprises publiques, plafond de la garantie de l'État, 1958-1994)
 
 Source : `docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md`. Dix-sept notices neuves et une promotion (`loi66-79-lf1967`) au fonds commun `precis/{fr,ar}/references.json` : `loi58-45-lf1958`, `loi59-42-lf1959`, `loi60-38-lf1961`, `loi61-65-lf1962`, `loi62-82-lf1963`, `loi63-58-lf1964`, `loi64-59-lf1965`, `loi65-46-lf1966`, `loi66-79-lf1967`, `loi67-57-lf1968`, `loi71-59-lf1972`, `loi73-82-lf1974`, `loi74-75-lfc1974`, `loi75-83-lf1976`, `loi77-81-lf1978`, `loi78-59-lf1979`, `loi93-111-garantie-1993`, `arrete1993-04-03-commission-garantie`. Les autres lois citées sont déjà au fonds commun. À verser dans Zotero (champ Extra `citation-key`).
