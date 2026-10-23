@@ -3853,3 +3853,18 @@
     resultat: aucun
   a_faire:
   - océriser les fascicules 1966-1970 à la recherche d'un décret d'application de l'art. 21 ; le décret n'a peut-être jamais été pris, le code organisant lui-même la commission
+
+- id: r-sante-tarifs-malades-payants-apres-2008
+  objet: arrêtés modifiant ou remplaçant l'arrêté du 19 décembre 1996 (tarifs de prise en charge des malades payants dans les structures sanitaires publiques) après l'arrêté du 7 juillet 2008, et arrêté du 25 janvier 1993 qu'il remplace
+  ou: [precis/fr/sante/_hopital.qmd#sec-hopital-tarifs-malades-payants]
+  requetes:
+    titres_like: ['%tarifs de prise en charge des malades%', '%tarifs des consultations et des hospitalisations%']
+    iort_ar: [تعريفة الاستشفاء بالهياكل الصحية العمومية, تعريفات التعهد بالمرضى الدافعين]
+    depuis: 1993-01-25
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache, titres français, du 1993-01-25 au 2026-10-02 : cinq arrêtés (25 janvier 1993 ; 19 décembre 1996 ; 17 avril 1998 ; 29 janvier 2003 ; 7 juillet 2008), aucun après 2008. Miroir iort (intitulés arabes) : aucun candidat, les termes arabes n''étant pas tirés d''un texte. Lacunes : 5337 notices de jort_cache n''ont qu''un intitulé arabe et ne sont pas atteintes par la requête française ; le visa de l''arrêté de 2008 ne cite que l''arrêté de 2003 comme modification antérieure ; textes de tarifs pris sous un autre intitulé (par exemple par établissement ou par acte) non cherchés ; plein texte non interrogé. Note : docs/notes/sante-tarifs-malades-payants-2026-10-23.md.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun

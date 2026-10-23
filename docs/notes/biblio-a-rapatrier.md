@@ -3819,3 +3819,13 @@ Ajoutées ensuite au même chantier (FR et AR de `fiscalite`, 157 entrées de ch
 - Rapatriement Zotero **non lancé** : en attente de feu vert humain (séquence `permissions` → `verifier` →
   `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger`). L'action GitHub `dry-run` du workflow
   `biblio-zotero` n'est pas lançable avant le push de la branche.
+
+## Clôture du 23/10/2026 (santé, « Tarifs des malades payants », bibliographe)
+
+- 5 clés versées à `precis/{fr,ar}/sante/references.json` : `arrete-1993-01-25-tarifs`,
+  `arrete-1996-12-19-tarifs`, `arrete-1998-04-17-tarifs`, `arrete-2003-01-29-tarifs`,
+  `arrete-2008-07-07-tarifs`. Provisoires : à rapatrier dans Zotero (groupe 6529669, collection Santé).
+- [ ] Titres arabes et pagination arabe non relevés pour les clés de 1993, 1998, 2003 et 2008 (pages
+  françaises reprises) ; pour 1996, titre arabe et pp. 2855-2856 lus à l'image le 23/10/2026.
+- [ ] Dates d'effet : dépôt des fascicules de 1998, 2003 et 2008 non relevé.
+

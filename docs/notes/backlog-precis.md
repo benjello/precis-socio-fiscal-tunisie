@@ -2035,9 +2035,7 @@ mesure ni les soins réalisés ni les revenus des médecins.
     1982 faute de clé) ; lois des mutuelles de corps (n° 77-80, 82-68, 82-69, 89-53, 96-30),
     décret n° 85-847, arrêté du 7 septembre 1993 (Union nationale des sociétés mutualistes) ;
     rectificatif de 1965 au règlement intérieur de la CNSS.
-  - **Lisible au corpus, à lire ou à confirmer à l'image** : décret n° 98-409, barème des
-    tarifs réduits payés par les affiliés à partir de 1998 (troisième colonne de
-    `#tbl-soins-assures-hopital`) ; loi n° 60-30, art. 5 ; règlement intérieur, art. 102-109 ; arrêtés du 30 mars 1991 et du
+  - **Lisible au corpus, à lire ou à confirmer à l'image** : loi n° 60-30, art. 5 ; règlement intérieur, art. 102-109 ; arrêtés du 30 mars 1991 et du
     17 septembre 1984 ; code des assurances, art. 31-32 ; décrets n° 76-3 et 89-1890
     (organisation de la CNRPS, OCR inexploitable) ; arrêté du 2 avril 1979 (longue maladie) ;
     décret n° 91-487.
@@ -2097,6 +2095,32 @@ mesure ni les soins réalisés ni les revenus des médecins.
   - **Non repris, à juger** : couverture de la population en 2016 (note CRES/UNICEF 2019,
     p. 14 : clé versée, non citée ; les parts publiées ne somment pas à 100 %) ; dépenses CNAM
     par secteur 2007-2010 de la thèse (relais aux totaux incohérents) ; actes ATDSRP 2017.
+- **Tarifs des malades payants et tarifs réduits de 1998, écrit le 23 octobre 2026** (branche
+  `rediger/sante-chantier-2`, non fusionnée ; note `sante-tarifs-malades-payants-2026-10-23.md`).
+  Le décret n° 98-409 fixe les tarifs réduits en pourcentage des tarifs de l'arrêté du
+  19 décembre 1996, non en dinars : la case « montants de 1998 » du tableau
+  `#tbl-soins-assures-hopital` est remplie par calcul (colonnes 1996 et 1998 ajoutées, formules et
+  arrondi de l'art. 22 sous le tableau). Lus : arrêtés du 19 décembre 1996 (couche texte ; dépôt
+  du 30 décembre 1996 lu à l'image, exécutoire le 4 janvier 1997 ; édition arabe lue à l'image,
+  pp. 2855-2856), du 17 avril 1998, du 29 janvier 2003 (couche texte décalée de 29 points de code)
+  et du 7 juillet 2008 ; arrêté du 25 janvier 1993 lu à l'image (JORT n° 10, pp. 201-202).
+  Section nouvelle `#sec-hopital-tarifs-malades-payants` (`_hopital.qmd`, tableaux
+  `#tbl-hopital-tarifs-malades-payants`, `#tbl-hopital-lettres-cles`, `#tbl-hopital-forfaits-actes`),
+  ligne `#r-hist-1996-tarifs` à `_histoire.qmd`, cinq clés `arrete-…-tarifs` (FR et AR), deux notions
+  au glossaire (`malade-payant`, `lettre-cle`), fiche `r-sante-tarifs-malades-payants-apres-2008`
+  (cinq arrêtés dans `jort_cache`, aucun après 2008).
+  - **À confirmer** : arrondi par excès de l'art. 22 et ligne « maître de conférence » de l'art. 17
+    (un texte ou une circulaire d'application) ; dates d'effet des arrêtés de 1993, 1998, 2003 et
+    2008 (dépôt des fascicules : 1993 sans mention imprimée, les trois autres non relevés) ; sort des
+    forfaits de scanner de 1996 face aux lettres clés S de 2008.
+  - **À obtenir** : tarifs de consultation et d'hospitalisation en vigueur après 2008 (aucun arrêté
+    identifié ; 5 337 notices de `jort_cache` n'ont qu'un intitulé arabe) ; nomenclature du 25 septembre
+    1990 et du 1er juin 2006 (coefficients des actes, hors corpus lu) ; tarifs réduits de 2008
+    à 2026 (les modifications du décret n° 98-409 de 1999 à 2021 portent sur les cartes, non sur les
+    montants, d'après le volume des prestations sociales) ; dinars constants des tarifs de 1993 à 1998.
+  - **Hors périmètre** : numérotation des sections de `sante/` (`check_numerotation.py` : `index.qmd:1`,
+    `_histoire.qmd:211`, `_couverture.qmd:102` et `:334`, sections à une seule sous-section), échec
+    antérieur à ce chantier.
 - **Intégration bilingue** : `_quarto.yml` et `references.json` tenus dans les deux langues ;
   les références arabes de 1987 à 2021 demandent page et, pour celles dont elle manque,
   URL vérifiée ; les URL arabes des fascicules de 1989, 1991 et de la convention de 2007

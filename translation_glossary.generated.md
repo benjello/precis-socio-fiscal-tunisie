@@ -306,6 +306,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Jours fériés chômés et payés | أيام الأعياد التي يبطل فيها العمل مع خلاص الأجر |  |
 | Kouttab coranique | الكتّاب القرآني |  |
 | Leçons de soutien | دروس الدعم |  |
+| Lettre clé | الحرف المصطلح عليه |  |
 | Libre administration | التدبير الحر |  |
 | Licence (enseignement supérieur) | الإجازة |  |
 | Licence appliquée | الإجازة التطبيقية |  |
@@ -323,6 +324,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Magistrat | القاضي |  |
 | Maîtrise | الأستاذية |  |
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |
+| Malade payant | المريض الخاضع لدفع مقابل |  |
 | Maladie professionnelle | مرض مهني |  |
 | Masse salariale | كتلة الأجور |  |
 | Mastère | الماجستير |  |

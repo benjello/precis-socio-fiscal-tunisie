@@ -2905,6 +2905,54 @@ entries:
         الفصل 24 جديد).
       synonymes: []
 
+  - id: malade-payant
+    acronyme: null
+    statut: valide
+    references: [arrete-1996-12-19-tarifs]
+    source_definition: {ref: arrete-1996-12-19-tarifs, locator: "art. 1"}
+    source_traduction: {ref: arrete-1996-12-19-tarifs}
+    voir_aussi: [tarif-de-responsabilite, amg2]
+    fr:
+      terme: Malade payant
+      definition: >
+        Malade d'une structure sanitaire publique que ne visent ni la gratuité des
+        soins, ni les tarifs réduits, ni la prise en charge conventionnelle des
+        articles 35 à 37 de la loi n° 91-63 ; il paie le tarif réglementaire des
+        consultations, des journées d'hospitalisation et des actes fixé par l'arrêté
+        du 19 décembre 1996 (art. 1er).
+      synonymes: []
+    ar:
+      terme: المريض الخاضع لدفع مقابل
+      definition: >
+        مريض بهيكل صحي عمومي لا تشمله مجانية العلاج ولا التعريفة المنخفضة ولا
+        التعهد بمقتضى الاتفاقيات المنصوص عليها بالفصول 35 و36 و37 من القانون عدد 63
+        لسنة 1991 ؛ ويدفع التعريفة المقررة للفحوص ولأيام الإقامة وللأعمال بمقتضى
+        القرار المؤرخ في 19 ديسمبر 1996 (الفصل 1).
+      synonymes: []
+
+  - id: lettre-cle
+    acronyme: null
+    statut: valide
+    references: [arrete-1996-12-19-tarifs]
+    source_definition: {ref: arrete-1996-12-19-tarifs, locator: "art. 10"}
+    source_traduction: {ref: arrete-1996-12-19-tarifs, locator: "art. 10"}
+    voir_aussi: [malade-payant]
+    fr:
+      terme: Lettre clé
+      definition: >
+        Lettre affectée à une catégorie d'actes professionnels de la nomenclature
+        générale, dont la valeur en dinars, multipliée par le coefficient de l'acte,
+        donne le tarif de l'acte dans les structures sanitaires publiques (arrêté du
+        19 décembre 1996, art. 10).
+      synonymes: [Lettre-clé]
+    ar:
+      terme: الحرف المصطلح عليه
+      definition: >
+        حرف مخصص لصنف من الأعمال المهنية بالمجموعة العامة للأعمال المهنية، تُضرب
+        قيمته بالدينار في معامل العمل لتحديد تعريفة العمل بالهياكل الصحية العمومية
+        (قرار 19 ديسمبر 1996، الفصل 10).
+      synonymes: []
+
   - id: contribution-frais-soins
     acronyme: null
     statut: valide
