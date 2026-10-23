@@ -334,6 +334,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Minimum d'impôt | الضريبة الدنيا |  |
 | Minimum d'impôt sur le chiffre d'affaires | الضريبة الدنيا |  |
 | Minimum de perception | الحد الأدنى للاستخلاص |  |
+| Mise à la retraite avant l'âge légal | الإحالة على التقاعد قبل بلوغ السن القانونية |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
 | Mission budgétaire | المهمة |  |
 | Moueddeb | المؤدب |  |

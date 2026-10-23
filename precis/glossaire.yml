@@ -3344,9 +3344,9 @@ entries:
   - id: bonification
     acronyme: null
     statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
-    references: [loi2019-37]
+    references: [loi2019-37, loi2009-39]
     source_definition: {ref: loi85-12, locator: "art. 32-33"}
-    voir_aussi: [annuite-liquidable, travaux-penibles-insalubres, cadres-actifs, fonctions-astreignantes, mise-a-la-retraite-d-office]
+    voir_aussi: [mise-a-la-retraite-avant-age-legal, annuite-liquidable, travaux-penibles-insalubres, cadres-actifs, fonctions-astreignantes, mise-a-la-retraite-d-office]
     fr:
       terme: Bonification
       definition: >
@@ -3357,7 +3357,9 @@ entries:
         militaires et agents des forces de sécurité intérieure blessés en service,
         aux agents atteints d'une invalidité de 80 % au moins et aux agents mis à la
         retraite pour suppression d'emplois (art. 33). Son effet reste borné par le
-        plafond du taux de liquidation.
+        plafond du taux de liquidation. La loi n° 2009-39 (art. 5) accorde aux agents
+        mis à la retraite avant l'âge légal une bonification égale à la période qui
+        reste à accomplir pour l'atteindre ; le texte ne dit pas si ce plafond la borne.
       synonymes: []
     ar:
       terme: الترفيع في مدّة الخدمات
@@ -3367,7 +3369,9 @@ entries:
         الأسلاك النشيطة وللأعوان المباشرين لوظائف مرهقة (الفصل 32)، وكذلك للعسكريين
         وأعوان قوات الأمن الداخلي المصابين أثناء الخدمة، وللأعوان المصابين بعجز لا
         تقلّ نسبته عن 80 %، وللأعوان المحالين على التقاعد بسبب حذف الخطط (الفصل 33).
-        ويبقى أثره محدودًا بسقف نسبة التصفية.
+        ويبقى أثره محدودًا بسقف نسبة التصفية. ويمنح القانون عدد 39 لسنة 2009 (الفصل 5)
+        الأعوان المحالين على التقاعد قبل بلوغ السن القانونية تنفيلًا يساوي الفترة المتبقية
+        لبلوغها؛ ولا ينصّ على ما إذا كان هذا السقف يحدّه.
       synonymes: [التمتيع الاستثنائي]
 
   - id: cadres-actifs
@@ -3862,9 +3866,11 @@ entries:
         Système de départ anticipé des agents publics institué, hors de la loi
         n° 85-12, par la loi n° 87-7 du 6 mars 1987. Il est distinct du droit général
         au départ anticipé de l'article 30 de la loi n° 85-12 et de la mise à la
-        retraite avant l'âge légal instituée par la loi n° 2009-39 du 8 juillet 2009,
-        que l'article 7 de la loi n° 2019-37 maintient l'un et l'autre sous l'empire
-        des textes antérieurs pour l'âge légal.
+        retraite avant l'âge légal instituée par la loi n° 2009-39 du 8 juillet 2009.
+        L'article 7 de la loi n° 2019-37 laisse régis par les textes en vigueur à leur
+        date, pour l'âge légal, les programmes de mise à la retraite avant l'âge légal
+        et de départ volontaire dont l'exécution a commencé avant son entrée en
+        vigueur ; il ne nomme aucune de ces lois.
       synonymes: []
     ar:
       terme: التقاعد المبكّر الاختياري
@@ -3873,8 +3879,41 @@ entries:
         بمقتضى القانون عدد 7 لسنة 1987 المؤرّخ في 6 مارس 1987. وهو متميّز عن الحقّ العامّ
         في الخروج المبكّر المنصوص عليه بالفصل 30 من القانون عدد 12 لسنة 1985، وعن الإحالة
         على التقاعد قبل السنّ القانونية التي أحدثها القانون عدد 39 لسنة 2009 المؤرّخ في 8
-        جويلية 2009، وقد أبقى الفصل 7 من القانون عدد 37 لسنة 2019 كليهما خاضعَين، في ما
-        يتعلّق بالسنّ القانونية، للنصوص السابقة.
+        جويلية 2009. ويُبقي الفصل 7 من القانون عدد 37 لسنة 2019 برامج الإحالة على التقاعد
+        قبل بلوغ السنّ القانونية وبرامج المغادرة الطوعية التي بدأ تنفيذها قبل دخوله حيّز
+        التطبيق خاضعةً، في ما يتعلّق بالسنّ القانونية، للنصوص السارية في تاريخها؛ ولا
+        يُسمّي أيًّا من هذين القانونين.
+      synonymes: []
+
+  - id: mise-a-la-retraite-avant-age-legal
+    acronyme: null
+    statut: provisoire  # équivalent AR : intitulé de la loi n° 2009-39 (JORT, éd. ar.)
+    references: [decret2009-2085, lfc-2009, avis-cc-27-2009, decret2011-932]
+    source_definition: {ref: loi2009-39}
+    source_traduction: {ref: loi2009-39}
+    voir_aussi: [retraite-anticipee-volontaire, bonification, jouissance-differee, fonds-special-tresor]
+    fr:
+      terme: Mise à la retraite avant l'âge légal
+      definition: >
+        Mesure temporaire instituée par la loi n° 2009-39 du 8 juillet 2009 : les
+        agents publics affiliés à la CNRPS qui atteignent l'âge légal du 1er janvier
+        2010 au 31 décembre 2012 peuvent, avec 15 ans d'activité ayant donné lieu à
+        retenues, demander leur mise à la retraite avant cet âge. Une commission
+        spéciale du Premier ministère statue, dans la limite de 7 000 agents ; la
+        pension est immédiate, bonifiée de la période restant à courir jusqu'à l'âge
+        légal, et les pensions et contributions de cette période sont à la charge de
+        l'employeur. Le terme désigne aussi des programmes ultérieurs de même schéma.
+      synonymes: []
+    ar:
+      terme: الإحالة على التقاعد قبل بلوغ السن القانونية
+      definition: >
+        إجراء وقتي أحدثه القانون عدد 39 لسنة 2009 المؤرخ في 8 جويلية 2009: يمكن للأعوان
+        العموميين المنخرطين بالصندوق الوطني للتقاعد والحيطة الاجتماعية الذين يبلغون السن
+        القانونية من غرة جانفي 2010 إلى 31 ديسمبر 2012 أن يطلبوا إحالتهم على التقاعد قبل
+        بلوغها، متى كانت لهم 15 سنة نشاط خضعت للاقتطاعات. وتبتّ في الطلبات لجنة خاصة
+        بالوزارة الأولى في حدود 7000 عون؛ وتُصرف الجراية فورًا مع تنفيل يساوي المدة
+        المتبقية لبلوغ السن القانونية، ويتحمّل المشغّل الجرايات والمساهمات الاجتماعية
+        طيلة هذه المدة. ويُطلق المصطلح أيضًا على برامج لاحقة على المنوال نفسه.
       synonymes: []
 
   - id: solde-de-reforme
