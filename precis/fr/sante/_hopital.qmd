@@ -61,7 +61,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
 import openfisca_tables as ot
 print(ot.markdown_avec_legende(Path.cwd() / "tables" / "hopital_tarifs_malades_payants.md",
-                               "Tarifs des consultations et d'une journée d'hospitalisation pour les malades payants des structures sanitaires publiques, arrêtés de 1993 et de 1996", "tbl-hopital-tarifs-malades-payants"))
+                               "Tarifs des consultations et d'une journée d'hospitalisation pour les malades payants des structures sanitaires publiques, arrêtés de 1993 et de 1996", "tbl-hopital-tarifs-malades-payants", '.sm .libelle-long tbl-colwidths="[60,20,20]"'))
 ```
 
 - **Les tarifs réduits en découlent.** Le décret de 1998 fixe les [tarifs réduits](./_histoire.html#r-hist-1998) en pourcentage de ces tarifs : 20 % à 30 % de la consultation, forfait égal à une journée d'hospitalisation, 20 % des actes dans la limite de 30 D. Les [montants de 1998](./_histoire.html#tbl-soins-assures-hopital) de l'hospitalisation figurent au tableau des tarifs réduits.
@@ -80,7 +80,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
 import openfisca_tables as ot
 print(ot.markdown_avec_legende(Path.cwd() / "tables" / "hopital_lettres_cles.md",
-                               "Valeurs des lettres clés des actes professionnels dans les structures sanitaires publiques, 1996 et 2008", "tbl-hopital-lettres-cles"))
+                               "Valeurs des lettres clés des actes professionnels dans les structures sanitaires publiques, 1996 et 2008", "tbl-hopital-lettres-cles", '.sm tbl-colwidths="[12,58,15,15]"'))
 ```
 
 ```{python}
@@ -91,7 +91,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
 import openfisca_tables as ot
 print(ot.markdown_avec_legende(Path.cwd() / "tables" / "hopital_forfaits_actes.md",
-                               "Forfaits d'actes dans les structures sanitaires publiques, arrêtés de 1996, 1998, 2003 et 2008", "tbl-hopital-forfaits-actes"))
+                               "Forfaits d'actes dans les structures sanitaires publiques, arrêtés de 1996, 1998, 2003 et 2008", "tbl-hopital-forfaits-actes", '.sm .libelle-long tbl-colwidths="[44,14,14,14,14]"'))
 ```
 
 Le tiret signale un forfait que l'arrêté ne traite pas. Les forfaits de 1998 reprennent ceux de 1996.
