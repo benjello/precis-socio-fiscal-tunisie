@@ -1,0 +1,97 @@
+# Manifeste du relevé « droits de douane et redevance de prestations douanières : prévisions
+# des lois de finances (2001-2026) et réalisations (2018-2024) ».
+#
+# Fichier TENU À LA MAIN, lu par figures/droits_douane.py (figure fig-dd-rendement du chapitre
+# « Les droits de douane »).
+#
+# D'OÙ VIENNENT LES VALEURS. Prévisions : tableau A de chaque loi de finances initiale, article
+# par article, page du Journal officiel dans `localisateur`. Réalisations : rapports de la Cour
+# des comptes sur les projets de loi de règlement (2018-2022) et sur la clôture du budget de
+# l'État (2023-2024), qui reprennent l'exécution du ministère des Finances (famille
+# budgétaire, relais). Relevé du 23 octobre 2026 (docs/notes/fiscalite-droits-douane-series.csv),
+# converti en millions de dinars arrondis au dixième.
+#
+# UN ARTICLE, UNE LIGNE. Le CSV garde une ligne par article du tableau A tel qu'il est
+# imprimé :
+#   - jusqu'en 2019 : 21-01 « droits de douane à l'importation » (`droits_importation`), 21-02
+#     « redevances sur prestations douanières à l'importation » (`redevance_importation`) et
+#     21-03 « redevances … à l'exportation » (`redevance_exportation`) ; en 2001 les articles
+#     portent les numéros 121-01 à 121-03 ;
+#   - depuis 2020 : 17-01 « droits de douane » (`droits_importation`) et 17-02 « redevance sur
+#     les prestations douanières » (`redevance`), qui fond les anciens 21-02 et 21-03.
+# La série se raccorde en 2020 : 17-01 = 21-01 ; 17-02 = 21-02 + 21-03 (même total que la
+# rubrique « droits de douane » du ministère). La figure additionne donc les articles 21-02
+# et 21-03 avant 2020 pour tracer la redevance ; le tableau de données garde les articles.
+# Pour les réalisations, la Cour des comptes garde la distinction importation / exportation
+# après 2020 : la figure additionne les deux lignes pour comparer à la prévision.
+#
+# LIBELLÉS FAUTIFS. En 2009 et en 2013, l'article 21-02 est imprimé « Droits de Douane à
+# l'exportation ». Les autres années il porte « Redevances sur prestations douanières à
+# l'importation » ; en 2013 sa valeur (118 MD) est celle que la loi de finances pour 2014 imprime
+# pour 21-02 « redevances … à l'importation ». Les deux lignes sont lues comme la redevance à
+# l'importation, la valeur et le libellé imprimé étant gardés.
+#
+# ÉDITION ARABE. Les lois de finances 2016, 2019, 2020, 2023 et 2026 sont lues dans l'édition
+# arabe du Journal officiel (« éd. ar. » dans la page) ; les pages de 2024 et 2025 sont celles
+# du tiré à part français.
+
+format: long
+cle_de_ligne: [annee, nature, ligne]
+
+colonnes:
+  annee: exercice budgétaire
+  nature: prévision (tableau A de la loi de finances initiale) ou réalisation (Cour des comptes)
+  ligne: droits_importation ; redevance_importation ; redevance_exportation ; redevance (17-02, depuis 2020 pour les prévisions)
+  nomenclature: ancienne (jusqu'à 2019) ou nouvelle (2020)
+  code_article: article du tableau A (prévisions)
+  libelle_source: libellé de la source, dans sa langue
+  valeur_md: millions de dinars courants
+  trace: oui, ou non pour une valeur que la figure ne trace pas
+  source: clé de citation
+  localisateur: page
+  remarque: remarque de la documentaliste
+
+sources:
+  - lf-2001
+  - lf-2002
+  - lf-2003
+  - lf-2004
+  - lf-2005
+  - lf-2006
+  - lf-2007
+  - lf-2008
+  - lf-2009
+  - lf-2010
+  - lf-2011
+  - lf-2012
+  - lf-2013
+  - lf-2014
+  - lf-2015
+  - lf-2016
+  - lf-2017
+  - lf-2018
+  - lf-2019
+  - lf-2020
+  - lf-2021
+  - lf-2022
+  - lf-2023
+  - lf-2024
+  - lf-2025
+  - lf-2026
+  - cdc-loireg-2019
+  - cdc-loireg-2020
+  - cdc-loireg-2021
+  - cdc-loireg-2022
+  - cdc-rapport-budget-2023
+  - cdc-rapport-budget-2024
+
+perimetre: >-
+  Articles « droits de douane » et « redevances sur prestations douanières » du tableau A des
+  lois de finances initiales, 2001-2026 ; réalisations 2018-2024 de la Cour des comptes.
+  La rubrique « droits de douane » du ministère des Finances comprend les redevances.
+caveats: >-
+  Prévisions et réalisations ne se confondent pas. Nomenclature du tableau A changée en 2020,
+  avec raccord : 17-01 = 21-01 ; 17-02 = 21-02 + 21-03. Articles 21-02 de 2009 et de 2013
+  imprimés avec le libellé « droits de douane à l'exportation », lus comme la redevance à
+  l'importation. Depuis 1994, la redevance à l'importation est assise sur les droits et taxes liquidés
+  en douane (loi de finances pour 1994, art. 75).

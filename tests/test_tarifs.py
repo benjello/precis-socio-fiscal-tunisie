@@ -14,6 +14,7 @@ sys.path.insert(0, str(RACINE / "scripts"))
 import tarifs  # noqa: E402
 
 CSV_REEL = RACINE / "precis/fr/fiscalite/tarifs/tarifs-releves-droits-consommation.csv"
+CSV_DOUANE = RACINE / "precis/fr/fiscalite/douane/tarifs-releves-droits-douane.csv"
 
 
 def rang(tableau, ordre, colonne, valeur="", unite="", statut="lu",
@@ -69,6 +70,21 @@ class PivotTest(unittest.TestCase):
         self.assertEqual(len(tarifs.pivot(rangs, "petroliers")), 1)
 
 
+class CitationTest(unittest.TestCase):
+    """Le champ spécial « @texte » rend la citation de la ligne."""
+
+    def test_la_citation_joint_le_texte_et_l_article(self):
+        r = rang("redevance", 0, "Minimum", "5", "D", position="1994")
+        r.update(texte="lf-1994", article="art. 75, p. 2202")
+        ligne = tarifs.pivot([r], "redevance")[0]
+        self.assertEqual(ligne[-1], "[@lf-1994, art. 75, p. 2202]")
+
+    def test_sans_article_la_citation_porte_la_seule_cle(self):
+        r = rang("redevance", 0, "Minimum", "5", "D", position="1994")
+        r.update(texte="lf-1994", article="")
+        self.assertEqual(tarifs.pivot([r], "redevance")[0][-1], "[@lf-1994]")
+
+
 class MarkdownTest(unittest.TestCase):
     def test_alignement_a_gauche_partout(self):
         # tableau_vers_markdown aligne à droite les colonnes numériques ; les tableaux
@@ -115,6 +131,38 @@ class CsvReelTest(unittest.TestCase):
         for nom in tarifs.TABLEAUX:
             for ligne in tarifs.pivot(self.rangs, nom):
                 self.assertEqual([c for c in ligne if c is None], [], nom)
+
+
+class CsvDouaneTest(unittest.TestCase):
+    """Le relevé des droits de douane : chaque ligne porte son texte, et les tableaux
+    pivotent sans cellule vide inattendue."""
+
+    @classmethod
+    def setUpClass(cls):
+        if not CSV_DOUANE.is_file():
+            raise unittest.SkipTest("relevé des droits de douane absent")
+        with CSV_DOUANE.open(encoding="utf-8", newline="") as f:
+            cls.rangs = list(csv.DictReader(f))
+
+    def test_tout_tableau_est_declare(self):
+        self.assertEqual({r["tableau"] for r in self.rangs} - set(tarifs.TABLEAUX), set())
+
+    def test_chaque_ligne_porte_son_texte_et_son_article(self):
+        for r in self.rangs:
+            self.assertTrue(r["texte"] and r["article"], (r["tableau"], r["ordre"]))
+
+    def test_une_valeur_lue_n_est_jamais_vide(self):
+        for r in self.rangs:
+            if r["statut"] not in tarifs.PROSE:
+                self.assertTrue(r["valeur"], (r["tableau"], r["ordre"], r["colonne"]))
+
+    def test_les_tableaux_de_douane_n_ont_pas_de_cellule_vide(self):
+        for nom in ("redevance", "correspondances", "bandes", "minimum-perception",
+                    "calendrier-ue"):
+            lignes = tarifs.pivot(self.rangs, nom)
+            self.assertTrue(lignes, nom)
+            for ligne in lignes:
+                self.assertNotIn("", ligne[1:], nom)
 
 
 if __name__ == "__main__":

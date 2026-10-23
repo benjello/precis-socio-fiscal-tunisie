@@ -1,0 +1,111 @@
+# Manifeste des tarifs relevés des droits de douane.
+#
+# Fichier TENU À LA MAIN — il n'est produit par aucun générateur. Il accompagne
+# tarifs-releves-droits-douane.csv, lu par scripts/tarifs.py (`tarifs.imprime`). Le relevé
+# porte les valeurs que le chapitre « Les droits de douane » imprime en tableaux : redevance
+# de prestations douanières, tables de correspondance des taux de 1987, 1988 et 1994, étapes
+# du tarif de 2004 à 2022, calendrier de l'accord d'association, minimum de perception.
+#
+# Format long : une ligne par (tableau, ordre, colonne). Chaque ligne porte son texte (clé de
+# citation) et son article ou sa page. Le champ « Texte et article » des tableaux imprimés est
+# la citation `[@texte, article]` de la première ligne de chaque ordre.
+#
+# DATES D'EFFET. Les lois de finances de 1987 et de 1988 n'ont pas de clause générale
+# d'application : un jour franc après la publication du 31 décembre, soit le 2 janvier (règle
+# de datation du précis). Les lois de finances depuis 1994 portent la clause « date d'application
+# de la loi de finances » : 1er janvier. Le calendrier de l'accord d'association compte en années
+# après l'entrée en vigueur de l'accord et n'a pas de date d'effet dans ce relevé.
+
+format: long
+cle_de_ligne: [tableau, ordre, colonne]
+statuts:
+  lu: valeur lue dans le texte cité
+  sans objet: le texte ne fixe rien pour cette ligne et cette colonne
+
+tableaux:
+
+  redevance:
+    titre: Redevance de prestations douanières, 1988-2024 — assiette, taux et minimum de perception
+    ancre: tbl-dd-redevance
+    lignes: 7
+    sources: [loi-87-83-lf-1988, lf-1994, lf-1998, lf-1999, lf-2013, lf-2014, lf-2024]
+    couverture: COMPLÈTE pour les dates où un texte lu change l'assiette, le taux ou le minimum
+    couverture_detail: >-
+      Sept états, de l'institution en 1988 au minimum de 20 dinars de 2024. Les lignes de 2013
+      et de 2024 ne changent que le minimum. Le minimum de 1999 est donné à l'importation
+      (5 dinars) et à l'exportation (1 dinar, pétrole brut seul). L'article 66 de la loi de
+      finances pour 2024 est cité sans page.
+    # LE MINIMUM « PAR ARTICLE » N'EST DIT QU'EN 1988 ET EN 1994. Les textes de 1998 à 2024 qui
+    # relèvent le minimum le donnent en dinars sans préciser « par article » dans le relevé ;
+    # le tableau reproduit les mots du relevé, sans compléter.
+
+  correspondances:
+    titre: Tables de correspondance des taux, 1987, 1988 et 1994 — taux avant, taux après
+    ancre: tbl-dd-correspondances
+    lignes: 66
+    sources: [lf-1987, loi-87-83-lf-1988, lf-1994]
+    couverture: COMPLÈTE pour les trois tables lues
+    couverture_detail: >-
+      Vingt-cinq lignes pour 1987 (article 25), dix-huit pour 1988 (article 52), vingt-trois
+      pour 1994 (article 71). Les intitulés de taux sont ceux des textes, y compris les
+      intervalles (« de 21 % à 25,5 % inclus », « de 20 % à 29 % », « 52,5 % et plus »).
+    # LES TROIS TABLES NE SE CHAÎNENT PAS. Les taux de départ de 1994 (10, 17, 30, 33, 35 %…)
+    # ne sont pas tous des taux d'arrivée de la table de 1988 ; chacune s'applique au tarif
+    # tel qu'il est à sa date. La table de 1994 exclut les taux des droits de douane consolidés
+    # dans le cadre de l'Accord général sur les tarifs douaniers et le commerce (article 71, § 2),
+    # et les produits du tableau « M » sont exclus de la table de 1987. Taux le plus élevé après
+    # transposition : 45 % (1987), 43 % (1988), 43 % (1994).
+
+  bandes:
+    titre: Étapes du tarif de 2004 à 2022 — transposition d'un taux en un autre, par texte
+    ancre: tbl-dd-bandes
+    lignes: 30
+    sources: [lf-2004, lf-2005, lf-2006, lf-2007, lf-2008, lf-2009, lf-2011, lf-2016, lf-2018, lf-2022]
+    couverture: PARTIELLE
+    couverture_detail: >-
+      Les seuls articles qui transposent un taux en un autre, avec leur champ tel que le texte
+      le dit. Chaque loi de finances retouche d'autres produits un à un : aucune ligne ne donne
+      l'état complet du tarif à une date, et aucun texte ne donne la répartition des positions
+      par taux. Les articles 42 et 43 de la loi de finances pour 2016, qui fixent des taux
+      sans transposer un taux antérieur, et l'article 81 de la loi de finances pour 2019
+      (motocycles), dont le tableau n'est lu qu'en partie, ne figurent pas au relevé. Le champ
+      de l'article 12 de la loi de finances pour 2009 est porté par une cellule vide « — ».
+    # LE TARIF « À DEUX TAUX » DE 2016 N'EST EXACT QUE POUR LES CHAPITRES 25 À 97, et sous
+    # réserve des annexes 2 et 3 de la loi de finances pour 2016.
+    # LES POSITIONS 080390 ET 851712001 de la loi de finances pour 2022, article 57, § 2, sont
+    # relevées telles que la note les donne (« de 0 à 50 % », « de 0 à 20 % »).
+
+  minimum-perception:
+    titre: Minimum de perception du tarif minimum ad valorem à l'importation, 1987 et 1988
+    ancre: tbl-dd-minimum
+    lignes: 2
+    sources: [lf-1987, loi-87-83-lf-1988]
+    couverture: COMPLÈTE pour 1987 et 1988
+    couverture_detail: >-
+      Deux états : 10 % en 1987 (biens d'équipement sans similaire produit en Tunisie, sur
+      liste arrêtée : 15 % au plus), 15 % en 1988 (biens d'équipement : 22 %). Aucun texte lu
+      ne donne le minimum de perception après 1988.
+
+  calendrier-ue:
+    titre: Calendrier de démantèlement des droits de l'accord d'association avec l'Union européenne — part du droit de base, par annexe
+    ancre: tbl-dd-calendrier-ue
+    lignes: 13
+    sources: [accord-association-ue-tunisie-1995]
+    couverture: COMPLÈTE pour les annexes 3, 4 et 5
+    couverture_detail: >-
+      Article 11, paragraphes 2 et 3, de l'accord, lu au Journal officiel des Communautés
+      européennes L 97 du 30 mars 1998, pp. L 97/5-6. Annexe 3 : 85, 70, 55, 40 et 25 % du droit
+      de base, puis suppression cinq ans après l'entrée en vigueur. Annexe 4 : 92 % à l'entrée en
+      vigueur, puis huit points de moins par an, suppression douze ans après. Annexe 5 : aucune
+      étape les trois premières années ; 88 % quatre ans après, puis onze points de moins par an,
+      suppression douze ans après. Les produits hors des annexes 3 à 6 sont libérés dès l'entrée en
+      vigueur (§ 1). Les produits de l'annexe 6 sont hors calendrier (article 12 : régime réexaminé
+      par le Conseil d'association quatre ans après l'entrée en vigueur). Le droit de base est le
+      droit effectivement appliqué à l'égard de la Communauté le 1er janvier 1995 (§ 5), remplacé
+      par une réduction erga omnes postérieure (§ 6). L'annexe 5 dit « taux de base » là où les
+      annexes 3 et 4 disent « droit de base ». Les annexes sont des listes de codes de la
+      nomenclature combinée, sans intitulé dans l'accord.
+    # AUCUNE ANNÉE CIVILE EN EN-TÊTE. Le calendrier compte en années après l'entrée en
+    # vigueur de l'accord. La seule correspondance avec l'année civile que le texte lu donne
+    # est l'article 21 de la loi de finances pour 1997 : le 1er janvier 1997 est le début de la
+    # deuxième année du calendrier d'application.

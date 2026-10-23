@@ -86,6 +86,40 @@ TABLEAUX = {
         "entetes": ["Élément", "1990-1997", "1998-2005", "2006-2010", "2011-2013",
                     "Depuis 2014"],
     },
+    # DROITS DE DOUANE (relevé `douane/tarifs-releves-droits-douane.csv`). Le champ spécial
+    # « @texte » est la citation de la ligne, `[@texte, article]`, bâtie depuis les champs
+    # `texte` et `article` du relevé : le tableau montre alors la source de chaque ligne.
+    "redevance": {
+        "champs": ["position", "produit", "Minimum", "@texte"],
+        "entetes": ["Effet", "Assiette et taux", "Minimum de perception", "Texte et article"],
+    },
+    # Trois tables « ancien taux → nouveau taux », une par date d'effet. Elles ne se
+    # chaînent pas : les taux de départ de 1994 ne sont pas tous des taux d'arrivée de 1988.
+    "correspondances": {
+        "champs": ["position", "produit", "Taux après", "@texte"],
+        "entetes": ["Effet", "Taux avant", "Taux après", "Texte et article"],
+    },
+    "bandes": {
+        "champs": ["position", "produit", "Taux avant", "Taux après", "@texte"],
+        "entetes": ["Effet", "Produits visés", "Taux avant", "Taux après",
+                    "Texte et article"],
+    },
+    "minimum-perception": {
+        "champs": ["position", "Minimum de perception", "Biens d'équipement", "@texte"],
+        "entetes": ["Effet", "Minimum de perception<br>(tarif minimum ad valorem)",
+                    "Biens d'équipement", "Texte et article"],
+    },
+    # Calendrier de l'article 11 de l'accord d'association : une ligne par moment, une
+    # colonne par annexe. La ligne n'a pas de date : le texte compte en « années après
+    # l'entrée en vigueur ». L'annexe 5 exprime ses parts en « taux de base » (même mot
+    # que le texte), les annexes 3 et 4 en « droit de base ».
+    "calendrier-ue": {
+        "champs": ["position", "Annexe 3", "Annexe 4", "Annexe 5"],
+        "entetes": ["Moment du calendrier",
+                    "Annexe 3<br>(% du droit de base)",
+                    "Annexe 4<br>(% du droit de base)",
+                    "Annexe 5<br>(% du taux de base)"],
+    },
 }
 
 
@@ -117,6 +151,9 @@ def pivot(rangs: list[dict], tableau: str) -> list[list[str]]:
         d["position"] = r["position"]
         d["produit"] = r["produit"]
         d[r["colonne"]] = recompose(r["valeur"], r["unite"], r["statut"])
+        if r.get("texte"):
+            d.setdefault("@texte", "[@" + r["texte"]
+                         + (", " + r["article"] if r.get("article") else "") + "]")
     return [[par_ordre[o].get(c, "") for c in spec["champs"]]
             for o in sorted(par_ordre)]
 
