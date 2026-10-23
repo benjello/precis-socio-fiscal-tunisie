@@ -3357,10 +3357,17 @@ Ce qui reste :
   de l'Office national de l'huile (loi de finances pour 1997, art. 17, 980 MD), lue et non versée ;
   article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin) ; acte de la
   commission d'instruction ; prêts du Trésor aux entreprises publiques (article voisin de chaque loi,
-  40 MD de 1995 à 2005 et 100 MD de 2013 à 2015, montants vus, pas en série) ; parts du budget et du PIB avant 1986 (aucun
-  dénominateur) ; libellés arabes de la figure ; `lf-1978` de `compensation` à fondre avec
-  `loi77-81-lf1978` (`docs/notes/biblio-a-rapatrier.md`). **À reporter dans `tunisia-data`** : la
-  série du plafond légal (montant fixé, montant en vigueur à la fin de la gestion), 1959-60 à 2015.
+  40 MD de 1995 à 2005 et 100 MD de 2013 à 2015, montants vus, pas en série) ; budgets d'équipement et de développement de 1961 à 1985 et réalisation du budget avant 1986
+  (fiche `r-ep-budget-etat-1959-1985`) ; PIB de 1959-60 et de 1960 ; libellés arabes de la figure ; alias arabe transitoire `lf-1978` à retirer après la
+  retraduction (`docs/notes/biblio-a-rapatrier.md`). **Dénominateurs d'avant 1986 (§ 7 de la note)** : établi le budget ordinaire voté (titre I ;
+  recettes ordinaires = crédits des dépenses de gestion ou courantes) de 1959-60 à 1986 (les crédits de
+  1959-60 sont effacés à l'image), lu aux fascicules scannés ; relevé `listes/budget-ordinaire-lois-de-finances.csv`,
+  vue en part du budget de la figure sur deux segments séparés en 1986 (budget ordinaire voté, puis dépenses
+  réalisées hors service de la dette) ; aucun total de l'État (budget d'équipement non lu, contribution du
+  budget ordinaire à compter une fois). Notion « budget ordinaire » non versée au glossaire, faute de terme
+  arabe attesté par un texte lu. **À reporter dans `tunisia-data`** (signalé, non versé) : la série du plafond
+  légal (montant fixé, montant en vigueur à la fin de la gestion), 1959-60 à 2015, et la série du budget
+  ordinaire voté, 1959-60 à 1986.
 - **Second passage de la note** (son § 8) : ventilation par nature de 2023 (écart imprimé de
   23,0 MD) ; encours des prêts rétrocédés (rapport sur la dette publique, pages repérées) ;
   rapports sur la dette publique des éditions LF 2021 et LF 2024 ; page « bilan global » de la

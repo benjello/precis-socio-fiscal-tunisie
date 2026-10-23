@@ -308,13 +308,29 @@ figtools.register_provenance(
     caveats=("Le PIB d'avant 1992 n'a pas de base dite ; les passages de 1991 à 1992, de 1996 à "
              "1997 et de 2009 à 2010 sont des ruptures de série, et aucune conversion n'est faite "
              "(voir l'annexe sur le PIB) ; la base 1997 est recalculée par l'INS de 1997 à 2004, la "
-             "base 2015 de 2010 à 2014. Aucune dépense de l'État n'est portée avant 1986 ; aucun PIB "
-             "avant 1961. L'année financière 1959-60 n'a donc aucune part. Le numérateur est un "
-             "plafond voté, le dénominateur des dépenses un montant réalisé."))
+             "base 2015 de 2010 à 2014. Les dépenses de l'État hors service de la dette ne sont portées qu'à partir de 1986 (avant, voir le budget ordinaire voté) ; aucun PIB "
+             "avant 1961 : l'année financière 1959-60 n'a pas de part du PIB. Le numérateur est "
+             "un plafond voté, le dénominateur un budget voté jusqu'en 1986 et des dépenses "
+             "réalisées ensuite."))
 
 RUPTURES_PIB = (1992, 1997, 2010)  # années où le PIB change de série (base) : trait interrompu
+BUDGET = "budget-ordinaire-lois-de-finances"
+figtools.register_provenance(
+    BUDGET, titre="Budget ordinaire de l'État voté par la loi de finances, 1959-60 à 1986",
+    sources=_sources(BUDGET), unite="millions de dinars courants",
+    perimetre=("montant des recettes ordinaires du budget de l'État (article 1er) et montant "
+               "maximum des crédits des dépenses de gestion ou courantes (article 3 ou 6), égaux "
+               "chaque année, tels que la loi de finances les fixe ; budgets annexes, "
+               "établissements rattachés et fonds spéciaux exclus"),
+    caveats=("Montant voté du seul budget ordinaire (titre I), qui peut comprendre une "
+             "contribution au budget d'équipement et le service de la dette ; le budget "
+             "d'équipement et de développement n'est pas compris. Il ne se raccorde pas aux "
+             "dépenses de l'État hors service de la dette, en réalisation, de 1986 à 2015 : "
+             "les deux séries se recouvrent en 1986 et ne sont jamais chaînées. Pour 1959-60, "
+             "le chiffre des crédits est illisible : seules les recettes sont lues."))
+
 MESURES = {"md": "Millions de dinars courants", "pib": "En % du PIB",
-           "dep": "En % des dépenses de l'État"}
+           "dep": "En % du budget de l'État"}
 
 
 def plafond() -> pd.DataFrame:
@@ -330,6 +346,16 @@ def plafond() -> pd.DataFrame:
         if not pd.isna(r["plafond"]):
             precedent = r["plafond"]
     d["precedent"] = precedents
+    return d
+
+
+def budget() -> pd.DataFrame:
+    """Budget ordinaire voté : une ligne par gestion, `budget_md` = crédits, ou recettes quand
+    le chiffre des crédits n'est pas lu (1959-60)."""
+    d = _lire(BUDGET)
+    d["recettes"] = pd.to_numeric(d["recettes_md"], errors="coerce")
+    d["credits"] = pd.to_numeric(d["credits_md"], errors="coerce")
+    d["budget_md"] = d["credits"].fillna(d["recettes"])
     return d
 
 
@@ -372,18 +398,22 @@ def _parts(g: pd.DataFrame) -> pd.DataFrame:
         g[col] = g["annee"].map(den[col])
     g["base"] = g["base"].map(lambda b: None if pd.isna(b) else _base_pib(b))
     g.loc[g["gestion"] == "1959-60", ["pib", "base", "depenses"]] = None
-    for mesure, col in (("pib", "pib"), ("dep", "depenses")):
+    g["budget"] = g["gestion"].map(budget().set_index("gestion")["budget_md"])
+    for mesure, col in (("pib", "pib"), ("dep", "depenses"), ("bud", "budget")):
         g[f"fixe_{mesure}"] = 100.0 * g["fixe_md"] / g[col]
         g[f"fin_{mesure}"] = 100.0 * g["fin_md"] / g[col]
     return g
 
 
-def _soit(valeur: float, colonne: str) -> str:
+def _soit(valeur: float, colonne: str, denominateur: str = "") -> str:
     """Suffixe d'infobulle : la part, quand la vue est une part."""
-    return "" if colonne.endswith("_md") else f", soit {valeur:.1f} %".replace(".", ",")
+    if colonne.endswith("_md"):
+        return ""
+    return f", soit {valeur:.1f} %{denominateur}".replace(".", ",", 1)
 
 
-def _trace_gestions(ax, g: pd.DataFrame, fixe: str, fin: str, ruptures=()) -> None:
+def _trace_gestions(ax, g: pd.DataFrame, fixe: str, fin: str, ruptures=(), couleur=BLEU,
+                    marque="o", denominateur: str = "") -> None:
     """Trait par suite d'années consécutives, un rond par gestion, un losange orange quand un
     montant postérieur porte le plafond en cours de gestion. Le trait s'interrompt aux années de
     `ruptures` : deux séries de PIB de bases différentes ne se raccordent pas."""
@@ -394,24 +424,29 @@ def _trace_gestions(ax, g: pd.DataFrame, fixe: str, fin: str, ruptures=()) -> No
                 or g["annee"].iloc[i] in ruptures):
             seg = g.iloc[debut:i]
             if len(seg) > 1:
-                ax.step(seg["annee"], seg[fixe], where="post", color=BLEU, lw=1.8, zorder=2)
+                ax.step(seg["annee"], seg[fixe], where="post", color=couleur, lw=1.8, zorder=2)
             debut = i
     for _, r in g.iterrows():
-        p, = ax.plot([r["annee"]], [r[fixe]], "o", color=BLEU, ms=4.5, zorder=3)
+        p, = ax.plot([r["annee"]], [r[fixe]], marque, color=couleur, ms=4.5, zorder=3)
         figtools.infobulle(p, f"gestion {r['gestion']} · plafond fixé par la loi de finances : "
-                              f"{r['fixe_md']:g} MD{_soit(r[fixe], fixe)}")
+                              f"{r['fixe_md']:g} MD{_soit(r[fixe], fixe, denominateur)}")
         if r["fin_md"] != r["fixe_md"]:
             ax.annotate("", xy=(r["annee"], r[fin]), xytext=(r["annee"], r[fixe]),
                         arrowprops=dict(arrowstyle="-|>", color=ORANGE, lw=1.4), zorder=3)
             p, = ax.plot([r["annee"]], [r[fin]], "D", color=ORANGE, ms=5, zorder=4)
             figtools.infobulle(p, f"gestion {r['gestion']} · montant porté à {r['fin_md']:g} MD "
-                                  f"par {r['lois'].split(' ; ')[-1]}{_soit(r[fin], fin)}")
+                                  f"par {r['lois'].split(' ; ')[-1]}{_soit(r[fin], fin, denominateur)}")
 
 
-def _legende_plafond(ax, ft) -> None:
-    ax.legend(handles=[
+def _legende_plafond(ax, ft, dep: bool = False) -> None:
+    carre = ([Line2D([], [], color=VERT, marker="s", lw=1.8, ms=4.5,
+                     label=ft("plafond fixé, en % du budget ordinaire voté (1959-60 à 1986)"))]
+             if dep else [])
+    ax.legend(handles=carre + [
         Line2D([], [], color=BLEU, marker="o", lw=1.8, ms=4.5,
-               label=ft("plafond fixé par la loi de finances de la gestion")),
+               label=ft("plafond fixé, en % des dépenses de l'État hors service de la dette, "
+                        "réalisation (1986 à 2015)" if dep
+                        else "plafond fixé par la loi de finances de la gestion")),
         Line2D([], [], color=ORANGE, marker="D", lw=0, ms=5,
                label=ft("montant porté en cours de gestion par une loi postérieure"))],
         loc="upper left", fontsize=8, frameon=False)
@@ -454,8 +489,14 @@ def fig_plafond(mesure: str = "md"):
                         ha="center", fontsize=7.5)
         ax.set_ylabel(ft("Millions de dinars courants (échelle logarithmique)"))
     else:
-        _trace_gestions(ax, g, f"fixe_{mesure}", f"fin_{mesure}",
-                        ruptures=RUPTURES_PIB if mesure == "pib" else ())
+        if mesure == "dep":
+            _trace_gestions(ax, g, "fixe_bud", "fin_bud", couleur=VERT, marque="s",
+                            denominateur=" du budget ordinaire voté")
+            _trace_gestions(ax, g, "fixe_dep", "fin_dep",
+                            denominateur=" des dépenses de l'État hors service de la dette")
+        else:
+            _trace_gestions(ax, g, f"fixe_{mesure}", f"fin_{mesure}",
+                            ruptures=RUPTURES_PIB if mesure == "pib" else ())
         if mesure == "pib":
             ax.set_ylim(0, 11)
             ax.set_ylabel(ft("% du PIB de l'année"))
@@ -469,12 +510,15 @@ def fig_plafond(mesure: str = "md"):
                             ha="center", va="bottom", fontsize=7,
                             color=GRIS, annotation_clip=False)
         else:
-            ax.set_xlim(1985.5, 2016.0)
-            ax.set_xticks(list(range(1987, 2016, 4)))
-            ax.set_xlabel(ft("Gestion (année de la loi de finances)"))
-            ax.set_ylim(0, 27)
-            ax.set_ylabel(ft("% des dépenses de l'État hors service de la dette"))
-    _legende_plafond(ax, ft)
+            figtools.marque_rupture(ax, 1986)
+            for x, texte in ((1972, "budget ordinaire voté (loi de finances)"),
+                             (2001, "dépenses de l'État hors service de la dette, réalisation")):
+                ax.annotate(ft(texte), xy=(x, 1), xycoords=("data", "axes fraction"),
+                            xytext=(0, 5), textcoords="offset points", ha="center",
+                            va="bottom", fontsize=7, color=GRIS, annotation_clip=False)
+            ax.set_ylim(0, 55)
+            ax.set_ylabel(ft("% du budget de l'État (deux dénominateurs, voir les traits)"))
+    _legende_plafond(ax, ft, dep=(mesure == "dep"))
     fig.tight_layout()
     return fig
 
@@ -501,12 +545,15 @@ def table_plafond() -> pd.DataFrame:
             [None if pd.isna(x) else float(x) for x in g["depenses"]],
         "Plafond fixé, en % des dépenses de l'État": arr("fixe_dep"),
         "Montant en vigueur à la fin, en % des dépenses de l'État": arr("fin_dep"),
+        "Budget ordinaire voté (MD)": [None if pd.isna(x) else float(x) for x in g["budget"]],
+        "Plafond fixé, en % du budget ordinaire voté": arr("fixe_bud"),
+        "Montant en vigueur à la fin, en % du budget ordinaire voté": arr("fin_bud"),
         "Textes": g["lois"]})
 
 
 def figure_plafond(caption: str, note_lecture: str | None = None) -> None:
     """Émet la figure du plafond légal en onglets (chunk `output: asis`, étiqueté `fig-…`)."""
-    figtools.figure_tabs(vues_plafond(), table_plafond(), PLAFOND, PLAFOND_DEN,
+    figtools.figure_tabs(vues_plafond(), table_plafond(), PLAFOND, PLAFOND_DEN, BUDGET,
                          slug="fig_ep_plafond_legal",
                          caption=caption, note_lecture=note_lecture)
     plt.close("all")
@@ -551,5 +598,38 @@ def tableau_plafond(caption: str, tbl_id: str = "tbl-ep-plafond-registre") -> No
         lignes.append([f"[]{{#{ancre}}}gestion {g}", texte, change, "ajustement"])
     entete = ["Date d'effet", "Texte, article et page", "Ce que le texte change", "Portée"]
     out = ["| " + " | ".join(entete) + " |", "|---|---|---|---|"]
+    out += ["| " + " | ".join(l) + " |" for l in lignes]
+    print("\n".join(out) + f"\n\n: {caption} {{#{tbl_id}}}\n")
+
+
+def tableau_budget(caption: str, tbl_id: str = "tbl-ep-budget-ordinaire-registre") -> None:
+    """Registre du budget ordinaire voté : une ligne par loi de finances de 1959-60 à 1986, avec
+    le texte cité (articles et pages) et les montants que la loi fixe. Les recettes ordinaires et
+    les crédits sont égaux ; le chiffre illisible de 1959-60 n'est pas écrit."""
+    d = budget()
+    lignes = []
+    for _, r in d.iterrows():
+        if pd.isna(r["credits"]):
+            loc = f"art. {r['article_recettes']}, p. {r['page_recettes']}"
+        elif r["page_recettes"] == r["page_credits"] and r["article_recettes"] != r["article_credits"]:
+            loc = f"art. {r['article_recettes']} et {r['article_credits']}, p. {r['page_recettes']}"
+        elif r["page_recettes"] == r["page_credits"]:
+            loc = f"art. {r['article_recettes']}, p. {r['page_recettes']}"
+        else:
+            loc = (f"art. {r['article_recettes']}, p. {r['page_recettes']} ; art. "
+                   f"{r['article_credits']}, p. {r['page_credits']}")
+        if pd.isna(r["credits"]):
+            fixe = f"recettes ordinaires du budget de l'État : {_mnt(r['recettes'])} MD"
+        elif r["credits"] == r["recettes"]:
+            fixe = (f"recettes ordinaires du budget de l'État et crédits des dépenses de gestion "
+                    f"(ou courantes) : {_mnt(r['recettes'])} MD chacun")
+        else:
+            fixe = f"recettes {_mnt(r['recettes'])} MD ; crédits {_mnt(r['credits'])} MD"
+        if r["gestion"] == "1983":
+            fixe += ("; la loi fixe aussi un budget général de 1 753 MD, dont 954 MD de dépenses "
+                     "courantes et 799 MD de dépenses d'investissement (crédits de paiement), "
+                     "aux articles 1er et 2, p. 2876")
+        lignes.append([f"gestion {r['gestion']}", f"[@{r['cle']}, {loc}]", fixe])
+    out = ["| Date d'effet | Texte, article et page | Ce que le texte fixe |", "|---|---|---|"]
     out += ["| " + " | ".join(l) + " |" for l in lignes]
     print("\n".join(out) + f"\n\n: {caption} {{#{tbl_id}}}\n")

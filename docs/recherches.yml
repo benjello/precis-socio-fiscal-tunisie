@@ -2645,6 +2645,25 @@
   - chercher la gestion 1960 et le décret du 29 juin 1957 (fascicule à obtenir sur pist.tn)
   - lire l'article sur la garantie des lois de finances de 2016 à 2024, pour que la série légale rejoigne les annexes du ministère des Finances
 
+- id: r-ep-budget-etat-1959-1985
+  objet: "budget de l'État avant 1986 : budgets d'équipement et de développement des lois de finances de 1961 à 1985, réalisation du budget (lois de règlement, rapports annuels de la Banque centrale), budget ordinaire de 1958-59 (décret du 29 juin 1957) et crédits de 1959-60"
+  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-garanties-plafond-legal]
+  requetes:
+    titres_like: ['%portant loi de finances pour la gestion%', '%budget ordinaire pour la gestion%']
+    iort_ar: [قانون المالية]
+    depuis: 1957-01-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Fascicules français du corpus local (scannés, sans couche texte), reconnaissance de caractères à 250 dpi puis relecture de l''image : articles 1 à 4 (budget ordinaire, titre I) des lois de finances de 1959-60 et de 1961 à 1986, versés au relevé budget-ordinaire-lois-de-finances.csv. Recettes ordinaires et crédits égaux chaque année, sauf 1959-60 (crédits effacés à l''image). Non lus : budget d''équipement (titre II, puis budget de développement, structure variable d''une loi à l''autre : voies et moyens, crédits d''engagement et de paiement, reconstruction), lois de règlement, rapports annuels de la Banque centrale, budget ordinaire de 1958-59 (loi n° 58-45, en francs). Note : docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md, § 7.'
+    couvert_jusqu_au: 2026-10-23
+    resultat: partiel
+  a_faire:
+  - lire les articles sur le budget d'équipement et de développement des lois de finances de 1961 à 1985 pour un total de l'État qui ne compte pas deux fois la contribution du budget ordinaire
+  - chercher la réalisation du budget de l'État avant 1986 (lois de règlement, rapports annuels de la Banque centrale)
+  - chercher le décret du 29 juin 1957 et le chiffre des crédits de 1959-60 (autre exemplaire du fascicule n° 18 de 1959)
+
 - id: r-ep-annexes-plf-2026
   objet: rapports du ministère des Finances annexés au projet de loi de finances pour 2026 — rapport sur les entreprises publiques (annexe n° 9) et rapport sur les transferts et les garanties (annexe n° 8)
   ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-lp-lacunes]

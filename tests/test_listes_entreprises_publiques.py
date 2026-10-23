@@ -77,7 +77,7 @@ def test_sorties_rapprochees_du_recueil():
 
 def test_plafond_de_la_garantie_est_continu():
     """Un relèvement en cours de gestion porte le montant d'avant, qui est celui que la loi de
-    finances de l'année avait fixé ; les gestions se suivent de 1959-60 à 1994, sauf 1960."""
+    finances de l'année avait fixé ; les gestions se suivent de 1959-60 à 2015, sauf 1960."""
     lignes = _lire("plafond-garanties-lois-de-finances")
     fixe = {}
     for l in lignes:
@@ -101,6 +101,29 @@ def test_plafond_de_la_garantie_est_continu():
     # une ligne par montant : pas deux fois le même article pour la même gestion
     cles = [(l["gestion"], l["loi"], l["article"]) for l in lignes]
     assert len(cles) == len(set(cles))
+
+
+def test_budget_ordinaire_vote_recettes_et_credits_egaux():
+    """Le budget ordinaire voté (titre I) a des recettes égales aux crédits chaque année : l'égalité
+    contrôle la lecture. 1959-60 n'a que les recettes (crédits effacés à l'image) ; les gestions se
+    suivent de 1961 à 1986."""
+    lignes = _lire("budget-ordinaire-lois-de-finances")
+    assert [l["gestion"] for l in lignes] == ["1959-60"] + [str(a) for a in range(1961, 1987)]
+    for l in lignes:
+        if l["credits_md"]:
+            assert float(l["credits_md"]) == float(l["recettes_md"]), l["gestion"]
+        else:
+            assert l["gestion"] == "1959-60"
+    montants = [float(l["recettes_md"]) for l in lignes]
+    assert montants == sorted(montants)  # le budget voté ne baisse jamais, en dinars courants
+    par = {l["gestion"]: float(l["recettes_md"]) for l in lignes}
+    assert par["1961"] == 55.8 and par["1969"] == 131.35 and par["1977"] == 441.5
+    assert par["1983"] == 1420.0 and par["1986"] == 1970.0
+    # chaque loi du relevé du budget est une loi du relevé du plafond, même numéro et même date
+    plafond = {(l["gestion"], l["loi"]): l["date"] for l in _lire("plafond-garanties-lois-de-finances")
+               if l["nature"] == "fixation"}
+    for l in lignes:
+        assert plafond[(l["gestion"], l["loi"])] == l["date"], l["gestion"]
 
 
 def test_registre_du_plafond_du_chapitre_est_celui_du_releve():
@@ -129,7 +152,7 @@ def test_registre_du_plafond_du_chapitre_est_celui_du_releve():
 
 def test_parts_du_plafond_de_la_garantie():
     """Parts du plafond : PIB de l'année de la gestion (aucune part pour 1959-60), dépenses de
-    l'État hors service de la dette de 1986 à 1994 seulement, PIB en deux segments de base."""
+    l'État hors service de la dette de 1986 à 2015 seulement, budget ordinaire voté de 1959-60 à 1986, PIB en quatre segments de base."""
     import sys
 
     import pytest
@@ -147,6 +170,13 @@ def test_parts_du_plafond_de_la_garantie():
     assert t.loc["1977", pib] == pytest.approx(100 * 200 / 2191.9, abs=0.01)
     assert t.loc["1994", dep] == pytest.approx(100 * 950 / 4276.6, abs=0.01)
     assert t.loc["1985", dep] != t.loc["1985", dep]  # NaN : pas de dépenses avant 1986
+    bud = "Plafond fixé, en % du budget ordinaire voté"
+    assert t.loc["1959-60", bud] == pytest.approx(100 * 12 / 48.6, abs=0.01)
+    assert t.loc["1977", bud] == pytest.approx(100 * 200 / 441.5, abs=0.01)
+    assert t.loc["1974", "Montant en vigueur à la fin, en % du budget ordinaire voté"] == (
+        pytest.approx(100 * 50 / 247.2, abs=0.01))
+    assert t.loc["1986", bud] == pytest.approx(100 * 200 / 1970.0, abs=0.01)  # recouvrement 1986
+    assert t.loc["1987", bud] != t.loc["1987", bud]  # NaN : le budget voté s'arrête en 1986
     assert t.loc["1986", dep] == pytest.approx(100 * 200 / 2395.0, abs=0.01)
     assert set(t.loc["1961":"1991", "Base du PIB"]) == {"base non dite"}
     assert set(t.loc["1992":"1996", "Base du PIB"]) == {"base 1983"}

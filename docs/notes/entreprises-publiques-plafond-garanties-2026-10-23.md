@@ -152,3 +152,60 @@ fonds commun (`lf-1995` à `lf-2015`, `loi2001-123-lf2002`, `loi-2007-70-lf-2008
 **Lacunes.** Gestion 1960, décret du 29 juin 1957 et lois de finances complémentaires de 1969 à 1991
 (fiche `r-ep-plafond-garantie-1995-2015`) ; lois de finances de 2016 à 2024 (le plafond de 2016 à 2024
 vient des annexes du ministère des Finances ; seule la loi de 2020 est lue).
+
+## 7. Dénominateurs d'avant 1986 : le budget ordinaire voté (ajouté le 23 octobre 2026)
+
+**Question.** Parts du plafond dans le budget de l'État avant 1986 : « aucun dénominateur » dans
+l'entrepôt (dépenses de l'État hors service de la dette, réalisation, depuis 1986 seulement).
+
+**Lu.** Les articles 1 à 4 de chaque loi de finances de 1959-60 et de 1961 à 1986 (fascicules
+français scannés, reconnaissance de caractères à 250 dpi, deux colonnes séparées, puis relecture de
+l'image) : article 1er, recettes ordinaires du budget de l'État (tableau « A ») ; article 3 (ou 6),
+montant maximum des crédits des dépenses de gestion (1961-1967) ou courantes (depuis 1968). **Les
+deux montants sont égaux chaque année** : l'égalité contrôle la lecture. Relevé versionné :
+`listes/budget-ordinaire-lois-de-finances.csv` (manifeste `.csv.yml`, test
+`test_budget_ordinaire_vote_recettes_et_credits_egaux`).
+
+| Gestion | MD | Gestion | MD | Gestion | MD |
+|---|---|---|---|---|---|
+| 1959-60 | 48,6 (recettes) | 1970 | 146,5 | 1980 | 751,6 |
+| 1961 | 55,8 | 1971 | 154,0 | 1981 | 938,0 |
+| 1962 | 56,8 | 1972 | 175,0 | 1982 | 1 168,0 |
+| 1963 | 59,95 | 1973 | 208,1 | 1983 | 1 420,0 |
+| 1964 | 68,3 | 1974 | 247,2 | 1984 | 1 544,0 |
+| 1965 | 86,0 | 1975 | 344,6 | 1985 | 1 885,0 |
+| 1966 | 100,5 | 1976 | 385,5 | 1986 | 1 970,0 |
+| 1967 | 108,1 | 1977 | 441,5 | | |
+| 1968 | 124,0 | 1978 | 541,2 | | |
+| 1969 | 131,35 | 1979 | 625,1 | | |
+
+**Ce que le montant est — et n'est pas.** Un montant voté du seul budget ordinaire (titre I). Les voies et
+moyens du budget d'équipement comprennent une « contribution du budget ordinaire » (3 MD en 1961, art. 23
+de la loi n° 60-38) : la somme des deux budgets compterait deux fois cette contribution, et la structure du
+budget d'équipement (puis de développement : crédits d'engagement, crédits de paiement, reconstruction,
+voies et moyens) change d'une loi à l'autre. Aucun total de l'État n'est donc établi ; le budget
+d'équipement n'est pas compris. La loi de finances pour 1983 (loi n° 82-91, art. 1er et 2, p. 2876) fixe
+en outre un budget général de 1 753 MD, dont 954 MD de dépenses courantes et 799 MD de dépenses
+d'investissement (crédits de paiement) ; l'année suivante, la loi revient au seul budget ordinaire :
+ce total de 1983 n'a pas de voisin et n'est pas versé. Le dénominateur de 1986 à 2015 (dépenses de
+l'État hors service de la dette, réalisation) est un autre concept : la ligne de 1986 porte les deux
+(plafond de 200 MD : 10,2 % du budget ordinaire voté de 1 970 MD, 8,4 % des dépenses réalisées de
+2 395 MD), les séries ne sont pas chaînées, la figure les sépare par un trait vertical.
+
+**Pages.** Page de l'article : en-tête du fascicule (décalage page imprimée moins page du fichier lu sur
+les en-têtes voisins) ; pour 1985 (loi n° 84-84), la double page numérisée porte l'article 1er page 2950
+et l'article 3 sur la moitié droite (2951).
+
+**Lecture à l'image** pour 1962, 1963, 1964, 1967, 1968, 1969 (la reconnaissance de caractères donnait
+131,85 au lieu de 131,35), 1975 (scan à basse résolution), 1976, 1978 à 1986 ; reconnaissance de caractères
+concordante entre les articles 1er et 3 pour les autres gestions. Dans la loi de finances pour 1959-60
+(loi n° 59-42), les recettes (48,6 MD, art. 1er) sont lues, le chiffre des crédits (art. 3) est effacé :
+seule la recette est versée. Loi de finances pour 1979 (loi n° 78-59) : recettes lues à basse résolution.
+
+**À reporter dans `tunisia-data`** : la série « budget ordinaire voté, 1959-60 à 1986 » (recettes =
+crédits), avec sa définition ci-dessus ; **non versée ici**.
+
+**Non lus (fiche `r-ep-budget-etat-1959-1985`).** Budgets d'équipement et de développement de 1961 à 1985 ;
+réalisation du budget avant 1986 (lois de règlement, rapports de la Banque centrale) ; budget ordinaire de
+1958-59 (loi n° 58-45, en francs, budget fixé par décret du 29 juin 1957) ; gestion 1960 ; crédits de
+1959-60.
