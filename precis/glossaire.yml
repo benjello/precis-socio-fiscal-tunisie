@@ -2599,13 +2599,58 @@ entries:
         Seconde catégorie légale de l'Amen social, au-dessus des catégories pauvres.
         Elle n'ouvre pas le transfert monétaire permanent mais donne accès aux soins à
         tarif réduit et, depuis 2022, à l'allocation familiale non contributive.
-      synonymes: []
+      synonymes: [catégories à faible revenu]
     ar:
       terme: الفئات محدودة الدخل
       definition: >
         الصنف القانوني الثاني في برنامج الأمان الاجتماعي، ويأتي فوق الفئات الفقيرة. ولا
         يفتح الحقّ في التحويل النقدي القارّ، لكنّه يخوّل النفاذ إلى العلاج بالتعريفة
         المنخفضة، ومنذ سنة 2022 إلى المنحة العائلية غير المساهماتية.
+      synonymes: []
+
+  - id: allergie-gluten
+    acronyme: null
+    statut: valide
+    references: [lf-2025, arrete-2026-07-14-xeroderma-gluten]
+    source_definition: {ref: lf-2025, locator: "art. 26"}
+    voir_aussi: [categories-pauvres, amen-social]
+    fr:
+      terme: Allergie au gluten
+      definition: >
+        Maladie dont les textes de 2025 et 2026 font la condition d'une allocation
+        mensuelle de l'Amen social pour les dépenses alimentaires. Elle est établie par un
+        certificat d'un médecin de la santé publique, qui atteste la nécessité d'un régime
+        sans gluten au long cours ; depuis le 19 juillet 2026, une commission médicale en
+        examine la preuve.
+      synonymes: []
+    ar:
+      terme: حساسية دابوق القمح
+      definition: >
+        مرض جعلته نصوص سنتي 2025 و2026 شرطًا لمنحة شهرية في إطار الأمان الاجتماعي لنفقات
+        الغذاء. ويثبت بشهادة طبيب من الصحة العمومية تفيد الحاجة إلى نظام غذائي خال من
+        الجلوتين على المدى الطويل، وتنظر في إثباته منذ 19 جويلية 2026 لجنة طبية.
+      synonymes: [حساسية الجلوتين]
+
+  - id: unite-de-gestion-par-objectifs
+    acronyme: null
+    statut: valide
+    references: [decret-2014-1526-banque-donnees, decret2018-626]
+    source_definition: {ref: decret-2014-1526-banque-donnees, locator: "art. 1"}
+    voir_aussi: [amen-social, categories-pauvres]
+    fr:
+      terme: Unité de gestion par objectifs
+      definition: >
+        Structure temporaire créée au sein d'un ministère pour réaliser un projet défini,
+        sous l'autorité du ministre. Celle du ministère des affaires sociales, créée en
+        2014, réalise le projet de banque de données sur les familles nécessiteuses et à
+        revenu limité.
+      synonymes: []
+    ar:
+      terme: وحدة تصرف حسب الأهداف
+      definition: >
+        هيكل وقتي يُحدث داخل وزارة لإنجاز مشروع محدّد، تحت سلطة الوزير. وقد أُحدثت سنة
+        2014 وحدة من هذا النوع بوزارة الشؤون الاجتماعية لإنجاز مشروع إعداد بنك معطيات حول
+        العائلات المعوزة ومحدودة الدخل.
       synonymes: []
 
   - id: condition-de-ressources
@@ -6803,7 +6848,7 @@ entries:
     references: [loi77-54]
     source_definition: {ref: loi77-54, locator: "art. 1-2"}
     source_traduction: {ref: loi-88-145-lf-1989, locator: "art. 35"}
-    voir_aussi: [tfp]
+    voir_aussi: [tfp, fonds-foprolos]
     fr:
       terme: Contribution au fonds de promotion du logement pour les salariés
       definition: >
@@ -6820,6 +6865,532 @@ entries:
         الفلاحيين الخواصّ، أُحدث سنة 1977 بنسبة 2 % من الأجور الخاضعة
         للمساهمات الاجتماعية، ثمّ خُفّض سنة 1989 إلى 1 % من الأجور
         والمرتّبات. يموّل صندوقًا يساعد الأجراء على الحصول على مسكن.
+      synonymes: []
+
+  # --- Logement social (livre prestations_sociales, chapitre _logement_social.qmd) ---
+  # Passe 1 (termes, sources) et passe 2 (définitions) du terminologue, 23/10/2026.
+
+  - id: fonds-foprolos
+    acronyme: null
+    statut: valide  # AR lu dans la LF 2026, art. 21 (rubrique, éd. AR), la loi n° 2026-1 et le décret n° 2026-123 (éd. AR)
+    references: [loi77-60-lfc1977, lf-2026, decret2026-123]
+    source_definition: {ref: loi77-54, locator: "art. 5-6"}
+    source_traduction: {ref: lf-2026, locator: "art. 21"}
+    voir_aussi: [foprolos, fonds-special-tresor, premier-logement, logement-social]
+    fr:
+      terme: Fonds de promotion du logement pour les salariés
+      definition: >
+        Fonds créé par la loi n° 77-54 du 3 août 1977, distinct de la
+        contribution des employeurs qui l'alimente ; la loi de finances
+        complémentaire du même jour en fait un fonds spécial du Trésor. Il est
+        destiné à venir en aide aux salariés qui veulent accéder à la propriété
+        d'un logement, par des prêts et, depuis 2016, des dons. Depuis le
+        1er janvier 2026, il contribue aussi au financement de la construction
+        de logements et de l'aménagement de lots sociaux par la SNIT et ses
+        filiales, la SPROLS et l'AFH. Ses ressources sont la contribution,
+        l'amortissement et les intérêts de ses prêts.
+      synonymes: [Fonds FOPROLOS]
+    ar:
+      terme: صندوق النهوض بالمسكن لفائدة الأجراء
+      definition: >
+        صندوق أُحدث بالقانون عدد 54 لسنة 1977 المؤرّخ في 3 أوت 1977، وهو متميّز
+        عن مساهمة المؤجّرين التي تموّله، وجعله قانون المالية التكميلي الصادر في
+        اليوم نفسه صندوقًا خاصًّا للخزينة. يهدف إلى مساعدة الأجراء الراغبين في
+        تملّك مسكن، بواسطة قروض، ومنذ 2016 بواسطة هبات أيضًا. ومنذ غرّة جانفي
+        2026، يساهم كذلك في تمويل بناء المساكن وتهيئة المقاسم الاجتماعية التي
+        تنجزها الشركة الوطنية العقارية للبلاد التونسية وفروعها وشركة النهوض
+        بالمساكن الاجتماعية والوكالة العقارية للسكنى. تتكوّن موارده من المساهمة
+        ومن استرجاع أصل قروضه وفوائضها.
+      synonymes: []
+
+  - id: snit
+    acronyme: SNIT
+    statut: valide  # AR lu dans la loi n° 2026-1 (éd. AR)
+    references: [loi2026-1]
+    source_definition: {ref: loi57-19, locator: "statut, art. 1er-3"}
+    source_traduction: {ref: loi2026-1}
+    voir_aussi: [sprols, afh, fonds-foprolos]
+    fr:
+      terme: Société nationale immobilière de Tunisie
+      definition: >
+        Entreprise à caractère commercial régie par le droit des sociétés
+        anonymes, dont le capital est apporté par l'État et dont les statuts
+        sont en vigueur depuis le 1er septembre 1957. Elle réalise des
+        opérations immobilières pour son compte, celui de l'État ou des
+        collectivités, gère des immeubles et conduit des programmes de
+        construction. Depuis le 14 février 2026, elle et ses filiales peuvent
+        vendre les logements sociaux financés par le fonds de promotion du
+        logement pour les salariés par paiement échelonné ou en location-vente.
+      synonymes: []
+    ar:
+      terme: الشركة الوطنية العقارية للبلاد التونسية
+      definition: >
+        مؤسسة ذات صبغة تجارية تخضع لأحكام شركات المساهمة، تساهم الدولة برأس
+        مالها، ودخل نظامها الأساسي حيّز التنفيذ بداية من غرّة سبتمبر 1957. تنجز
+        عمليات عقارية لحسابها أو لحساب الدولة أو الجماعات، وتتصرّف في عقارات،
+        وتنجز برامج بناء. ومنذ 14 فيفري 2026، يمكنها هي وفروعها بيع المساكن
+        الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن لفائدة الأجراء
+        بالتقسيط أو بمقتضى عقود الكراء المملّك.
+      synonymes: []
+
+  - id: sprols
+    acronyme: SPROLS
+    statut: valide  # AR lu dans le JORT AR n° 19/2026 (intitulé de la loi n° 2026-2)
+    references: [loi2026-2, decret2010-3170]
+    source_definition: {ref: loi77-53, locator: "art. 1er-4"}
+    source_traduction: {ref: loi2026-2}
+    voir_aussi: [snit, afh, fonds-foprolos, cnss, cavis]
+    fr:
+      terme: Société de promotion des logements sociaux
+      definition: >
+        Établissement public à caractère industriel et commercial créé par la
+        loi n° 77-53 du 3 août 1977 pour « promouvoir la construction de
+        logements au profit des assurés sociaux ». Elle réalise et gère les
+        programmes immobiliers de la Caisse nationale de sécurité sociale et de
+        la Caisse d'assurance vieillesse, invalidité et survivants, qui ont
+        apporté son capital initial, et loue des logements aux assurés sociaux.
+        Placée à l'origine sous la tutelle des Affaires sociales, elle relève
+        de l'Équipement depuis 2010. Depuis le 14 février 2026, elle peut
+        vendre les logements sociaux financés par le fonds de promotion du
+        logement pour les salariés par paiement échelonné ou en location-vente.
+      synonymes: []
+    ar:
+      terme: شركة النهوض بالمساكن الاجتماعية
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت بالقانون عدد 53 لسنة 1977
+        المؤرّخ في 3 أوت 1977 للنهوض ببناء المساكن لفائدة المضمونين
+        الاجتماعيين. تنجز البرامج العقارية للصندوق الوطني للضمان الاجتماعي
+        ولصندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع
+        بجراية وتتصرّف فيها، وقد ساهم الصندوقان في رأس مالها الأصلي، وتؤجّر
+        مساكن للمضمونين الاجتماعيين. كانت في الأصل تحت إشراف وزارة الشؤون
+        الاجتماعية، وأصبحت منذ 2010 تحت إشراف وزارة التجهيز. ومنذ 14 فيفري 2026،
+        يمكنها بيع المساكن الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن
+        لفائدة الأجراء بالتقسيط أو بمقتضى عقود الكراء المملّك.
+      synonymes: []
+
+  - id: afh
+    acronyme: AFH
+    statut: provisoire  # statut et missions (décrets n° 74-33 et 2021-327, non versés) non lus : la définition se borne aux rôles que donnent la LFC 2012 et la LF 2026 ; AR relevé dans les intitulés AR du JORT, sans clé pour l'éd. AR
+    references: [lfc-2012, decret2026-123]
+    source_definition: {ref: lf-2026, locator: "art. 21"}
+    voir_aussi: [snit, sprols, fonds-foprolos]
+    fr:
+      terme: Agence foncière d'habitation
+      definition: >
+        Organisme public du logement qui compte parmi les réalisateurs du
+        programme spécifique pour le logement social créé en 2012. Depuis le
+        1er janvier 2026, le fonds de promotion du logement pour les salariés
+        contribue au financement des logements et des lots sociaux qu'elle
+        réalise, jusqu'à la totalité du coût et sans intérêt depuis le
+        20 juin 2026.
+      synonymes: []
+    ar:
+      terme: الوكالة العقارية للسكنى
+      definition: >
+        هيكل عمومي في مجال السكن، من بين الهياكل المكلّفة بإنجاز البرنامج
+        الخصوصي للسكن الاجتماعي المحدث سنة 2012. ومنذ غرّة جانفي 2026، يساهم
+        صندوق النهوض بالمسكن لفائدة الأجراء في تمويل المساكن والمقاسم
+        الاجتماعية التي تنجزها، بنسبة قد تبلغ كامل الكلفة ودون فائدة منذ
+        20 جوان 2026.
+      synonymes: []
+
+  - id: fnah
+    acronyme: FNAH
+    statut: valide  # AR repris de la LF 2019, art. 72 (éd. AR), comme contribution-fnah
+    references: [decret86-438, lfc-2012, lf-2025]
+    source_definition: {ref: loi2004-77, locator: "art. 1er-4"}
+    source_traduction: {ref: loi2018-56-lf2019, locator: "art. 72"}
+    voir_aussi: [contribution-fnah, logement-rudimentaire, fonds-special-tresor]
+    fr:
+      terme: Fonds national d'amélioration de l'habitat
+      definition: >
+        Fonds qui finance, par des prêts et des subventions, l'éradication des
+        logements rudimentaires dans le cadre d'un programme national,
+        l'entretien et la réhabilitation des logements par les propriétaires
+        privés et, depuis 2012, par les occupants privés, des opérations des
+        collectivités locales, la réhabilitation et la rénovation urbaine
+        confiées à des organismes, et la réparation des logements après une
+        catastrophe ; ces emplois sont fixés par la loi n° 2004-77 du
+        2 août 2004. Sa gestion est confiée par convention à une banque. Fonds
+        spécial du Trésor, il est alimenté depuis 2005 par une contribution
+        adossée à la taxe sur les immeubles bâtis.
+      synonymes: []
+    ar:
+      terme: الصندوق الوطني لتحسين السكن
+      definition: >
+        صندوق يموّل، بواسطة قروض ومنح، إزالة المساكن البدائية في إطار برنامج
+        وطني، وصيانة المساكن وتعهّدها من قبل المالكين الخواص، ومنذ 2012 من قبل
+        الشاغلين الخواص أيضًا، وعمليات الجماعات المحلية، وإعادة التأهيل
+        والتجديد العمراني الموكولين إلى هياكل، وإصلاح المساكن إثر الكوارث؛
+        وقد ضبط هذه التدخّلات القانون عدد 77 لسنة 2004 المؤرّخ في 2 أوت 2004.
+        يُعهد بالتصرّف فيه بمقتضى اتفاقية إلى بنك. وهو صندوق خاص للخزينة، يموَّل
+        منذ 2005 بمساهمة مرتبطة بالمعلوم على العقارات المبنية.
+      synonymes: []
+
+  - id: logement-rudimentaire
+    acronyme: null
+    statut: provisoire  # AR : المساكن البدائية non retrouvé dans une édition AR du JORT (décrets n° 86-438 et 2012-1224 non lus en AR)
+    references: [decret86-438, loi2004-77]
+    source_definition: {ref: decret2012-1224, locator: "art. 7"}
+    voir_aussi: [fnah, programme-specifique-logement-social]
+    fr:
+      terme: Logement rudimentaire
+      definition: >
+        Habitation insalubre occupée en permanence. Le décret n° 86-438 du
+        12 avril 1986 range parmi les logements rudimentaires « les gourbis,
+        les kibs, les maamras, les baraques et les tentes » ; le décret
+        n° 2012-1224 du 10 août 2012 retient les locaux habités en permanence
+        dont les matériaux, la surface ou la solidité « ne répondent pas aux
+        normes sanitaires et techniques minimales d'habitabilité ». Leur
+        remplacement est l'objet du programme national de 1986, d'un emploi du
+        Fonds national d'amélioration de l'habitat et du programme spécifique
+        pour le logement social.
+      synonymes: []
+    ar:
+      terme: المساكن البدائية
+      definition: >
+        مسكن غير صحّي مأهول بصفة دائمة. يعدّ الأمر عدد 438 لسنة 1986 المؤرّخ في
+        12 أفريل 1986 من المساكن البدائية الأكواخ و«الكيب» و«المعمرات»
+        والبراريك والخيام؛ ويعتمد الأمر عدد 1224 لسنة 2012 المؤرّخ في 10 أوت
+        2012 المحلاّت المأهولة بصفة دائمة التي لا تستجيب موادّها أو مساحتها أو
+        متانتها للمواصفات الصحية والفنية الدنيا للسكن. وتعويضها هو موضوع
+        البرنامج الوطني لسنة 1986، وأحد تدخّلات الصندوق الوطني لتحسين السكن،
+        والبرنامج الخصوصي للسكن الاجتماعي.
+      synonymes: []
+
+  - id: logement-social
+    acronyme: null
+    statut: provisoire  # AR relevé dans les intitulés AR du JORT, à confirmer sur l'éd. AR du décret n° 2012-1224 ; plafonds de 2012, décrets modificatifs n° 2013-3289, 2014-4251, 2015-460, 2023-538 non lus
+    references: [lfc-2012, loi2026-1]
+    source_definition: {ref: decret2012-1224, locator: "art. 20"}
+    voir_aussi: [programme-specifique-logement-social, fonds-foprolos, premier-logement]
+    fr:
+      terme: Logement social
+      definition: >
+        Logement destiné aux ménages à faible revenu et produit ou financé
+        avec une aide publique. Dans le programme spécifique pour le logement
+        social, le décret n° 2012-1224 du 10 août 2012 le définit comme un
+        logement individuel extensible d'un prix de 45 000 D au plus, ou un
+        logement collectif de 65 000 D au plus. Depuis 2026, la SNIT, ses
+        filiales et la SPROLS peuvent vendre en location-vente ou à
+        tempérament les logements sociaux financés par le fonds de promotion
+        du logement pour les salariés.
+      synonymes: []
+    ar:
+      terme: السكن الاجتماعي
+      definition: >
+        مسكن موجّه إلى الأسر ذات الدخل الضعيف، يُنجز أو يُموَّل بدعم عمومي. وفي
+        إطار البرنامج الخصوصي للسكن الاجتماعي، يعرّفه الأمر عدد 1224 لسنة 2012
+        المؤرّخ في 10 أوت 2012 بأنه مسكن فردي قابل للتوسعة لا يتجاوز ثمنه
+        45 ألف دينار، أو مسكن جماعي لا يتجاوز ثمنه 65 ألف دينار. ومنذ 2026،
+        يمكن للشركة الوطنية العقارية للبلاد التونسية وفروعها ولشركة النهوض
+        بالمساكن الاجتماعية بيع المساكن الاجتماعية المموّلة من صندوق النهوض
+        بالمسكن لفائدة الأجراء بالكراء المملّك أو بالتقسيط.
+      synonymes: []
+
+  - id: programme-specifique-logement-social
+    acronyme: null
+    statut: provisoire  # AR relevé dans 14 intitulés AR du JORT, à confirmer sur l'éd. AR de la LFC 2012 ; décrets modificatifs du décret n° 2012-1224 non lus
+    references: [decret2012-1224, lf-2022]
+    source_definition: {ref: lfc-2012, locator: "art. 27-32"}
+    voir_aussi: [logement-social, logement-rudimentaire, afh, sprols]
+    fr:
+      terme: Programme spécifique pour le logement social
+      definition: >
+        Programme créé par la loi de finances complémentaire pour 2012 « au
+        profit des catégories sociales à faible revenu », pour remplacer les
+        logements rudimentaires et réaliser des projets d'habitation. Il est
+        financé par le budget de l'État, le recouvrement des prêts et des dons,
+        et réalisé par les conseils régionaux, les sociétés immobilières
+        publiques, la SPROLS, l'Agence de réhabilitation et de rénovation
+        urbaine, l'AFH et des promoteurs privés. Dans la rédaction du décret
+        d'août 2012, il s'adresse aux familles sans logement dont le revenu ne
+        dépasse pas 3 SMIG, en trois catégories, par une prise en charge de la
+        moitié du coût de remplacement d'un logement rudimentaire ou une
+        subvention à l'achat d'un logement social.
+      synonymes: []
+    ar:
+      terme: البرنامج الخصوصي للسكن الاجتماعي
+      definition: >
+        برنامج أحدثه قانون المالية التكميلي لسنة 2012 لفائدة الفئات الاجتماعية
+        محدودة الدخل، لتعويض المساكن البدائية وإنجاز مشاريع سكنية. يموَّل من
+        ميزانية الدولة ومن استخلاص القروض ومن الهبات، وتنجزه المجالس الجهوية
+        والشركات العقارية العمومية وشركة النهوض بالمساكن الاجتماعية ووكالة
+        التهذيب والتجديد العمراني والوكالة العقارية للسكنى وباعثون عقاريون
+        خواص. وفي صيغة الأمر الصادر في أوت 2012، يتوجّه إلى العائلات التي لا
+        تملك مسكنًا ولا يتجاوز دخلها ثلاث مرّات الأجر الأدنى المضمون لمختلف
+        المهن، في ثلاثة أصناف، بتحمّل نصف كلفة تعويض المسكن البدائي أو بمنحة
+        لاقتناء مسكن اجتماعي.
+      synonymes: []
+
+  - id: premier-logement
+    acronyme: null
+    statut: valide  # AR lu dans la LF 2025, art. 25 (éd. AR : « مسكن أول ») ; modificatifs n° 2017-391 et 2019-39 du décret n° 2017-161 non lus ; « promoteur agréé » rendu par باعث عقاري مصادق عليه, forme AR non attestée (voir promoteur-agree)
+    references: [lf-2017, lf-2025, decret2023-127]
+    source_definition: {ref: decret2017-161, locator: "art. 3, 5-6"}
+    source_traduction: {ref: lf-2025, locator: "art. 25"}
+    voir_aussi: [logement-social, fonds-foprolos, promoteur-agree]
+    fr:
+      terme: Premier logement
+      definition: >
+        Logement qu'un ménage sans logement acquiert pour son habitation
+        principale, et nom du programme créé par la loi de finances pour 2017
+        au profit des catégories à revenu moyen. Dans la rédaction du décret
+        n° 2017-161 du 31 janvier 2017, le logement est neuf, compte au moins
+        deux chambres et un salon, est réalisé par un promoteur agréé et coûte
+        200 000 D au plus ; le programme prête aux familles dont le revenu est
+        compris entre 4,5 et 10 SMIG une partie de l'autofinancement, à un taux
+        bonifié. Depuis 2025, le programme couvre aussi la construction d'un
+        premier logement. Depuis 2023, les prêts du fonds de promotion du
+        logement pour les salariés financent eux aussi un premier logement.
+      synonymes: []
+    ar:
+      terme: المسكن الأول
+      definition: >
+        مسكن تقتنيه أسرة لا تملك مسكنًا لسكناها الرئيسية، واسم البرنامج الذي
+        أحدثه قانون المالية لسنة 2017 لفائدة الفئات ذات الدخل المتوسّط. وفي صيغة
+        الأمر الحكومي عدد 161 لسنة 2017 المؤرّخ في 31 جانفي 2017، يكون المسكن
+        جديدًا، يتضمّن غرفتين وقاعة جلوس على الأقل، ينجزه باعث عقاري مصادق عليه، ولا يتجاوز
+        ثمنه 200 ألف دينار؛ ويقرض البرنامج العائلات التي يتراوح دخلها بين 4,5
+        و10 مرّات الأجر الأدنى المضمون لمختلف المهن جزءًا من التمويل الذاتي بنسبة
+        فائدة ميسّرة. ومنذ 2025، يشمل البرنامج أيضًا بناء مسكن أول. ومنذ 2023،
+        تموّل قروض صندوق النهوض بالمسكن لفائدة الأجراء هي أيضًا مسكنًا أول.
+      synonymes: []
+
+  - id: location-vente
+    acronyme: null
+    statut: provisoire  # AR lu dans le décret n° 2026-123, art. 9 bis (éd. AR) ; aucun texte versé ne définit le contrat lui-même : la définition s'en tient à l'usage qu'en font les lois n° 2026-1 et 2026-2 et le décret n° 2026-123
+    references: [loi2026-1, loi2026-2]
+    source_definition: {ref: decret2026-123, locator: "art. 9 bis"}
+    source_traduction: {ref: decret2026-123, locator: "art. 9 bis"}
+    voir_aussi: [vente-a-temperament, snit, sprols]
+    fr:
+      terme: Location-vente
+      definition: >
+        Mode de cession d'un logement par contrat de location-vente. Depuis le
+        14 février 2026, la SNIT et ses filiales et la SPROLS peuvent céder
+        ainsi les logements sociaux financés par le fonds de promotion du
+        logement pour les salariés ; depuis le 20 juin 2026, le prix plafond
+        au mètre carré des logements de promoteur ne s'applique pas à ces
+        cessions, et les loyers sont fixés selon le coût de chaque projet par
+        convention entre l'opérateur et le ministère chargé de l'habitat.
+      synonymes: []
+    ar:
+      terme: الكراء المملّك
+      definition: >
+        طريقة لإحالة مسكن بمقتضى عقد كراء مملّك. ومنذ 14 فيفري 2026، يمكن
+        للشركة الوطنية العقارية للبلاد التونسية وفروعها ولشركة النهوض بالمساكن
+        الاجتماعية إحالة المساكن الاجتماعية المموّلة من موارد صندوق النهوض
+        بالمسكن لفائدة الأجراء على هذا النحو؛ ومنذ 20 جوان 2026، لا ينطبق السعر
+        الأقصى للمتر المربع لمساكن الباعثين على هذه الإحالات، وتُضبط معينات
+        الكراء حسب كلفة كل مشروع بمقتضى اتفاقية بين الباعث العمومي والوزارة
+        المكلّفة بالإسكان.
+      synonymes: []
+
+  - id: vente-a-temperament
+    acronyme: null
+    statut: provisoire  # AR « البيع بالتقسيط » cité par la note documentaire (§ 1.3) et le registre comme texte de l'art. 9 bis du décret n° 2026-123 (éd. AR) ; aucun texte versé ne définit le contrat lui-même
+    references: [loi2026-1, loi2026-2]
+    source_definition: {ref: loi2026-1}
+    source_traduction: {ref: decret2026-123, locator: "art. 9 bis"}
+    voir_aussi: [location-vente, snit, sprols]
+    fr:
+      terme: Vente à tempérament
+      definition: >
+        Vente dont le prix est payé par versements échelonnés ; les lois
+        n° 2026-1 et 2026-2 du 13 février 2026 parlent de vente « par paiement
+        échelonné ». Depuis le 14 février 2026, la SNIT et ses filiales et la
+        SPROLS peuvent vendre ainsi les logements sociaux financés par le fonds
+        de promotion du logement pour les salariés ; depuis le 20 juin 2026, le
+        prix plafond au mètre carré des logements de promoteur ne s'applique
+        pas à ces ventes, et les mensualités sont fixées selon le coût de
+        chaque projet par convention entre l'opérateur et le ministère chargé
+        de l'habitat.
+      synonymes: [Paiement échelonné]
+    ar:
+      terme: البيع بالتقسيط
+      definition: >
+        بيع يُدفع ثمنه على أقساط. ومنذ 14 فيفري 2026، يمكن للشركة الوطنية
+        العقارية للبلاد التونسية وفروعها ولشركة النهوض بالمساكن الاجتماعية بيع
+        المساكن الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن لفائدة الأجراء
+        على هذا النحو؛ ومنذ 20 جوان 2026، لا ينطبق السعر الأقصى للمتر المربع
+        لمساكن الباعثين على هذه البيوعات، وتُضبط الأقساط الشهرية حسب كلفة كل
+        مشروع بمقتضى اتفاقية بين الباعث العمومي والوزارة المكلّفة بالإسكان.
+      synonymes: []
+
+  - id: epargne-logement
+    acronyme: null
+    statut: provisoire  # loi n° 73-24 non versée ni lue ; AR relevé dans un fascicule AR de 2001 (Ja0822001), à vérifier sur la loi n° 73-24
+    references: [decret77-965]
+    source_definition: {ref: decret77-964, locator: "art. 1er et 3"}
+    voir_aussi: [fonds-foprolos]
+    fr:
+      terme: Épargne-logement
+      definition: >
+        Régime institué par la loi n° 73-24 du 7 mai 1973, qui exige de
+        l'acquéreur d'un logement une épargne préalable. Le décret n° 77-964
+        du 24 novembre 1977 le modifie et prévoit des prêts « pour parfaire
+        l'épargne exigée » ; le décret n° 77-965 du même jour ouvre aux
+        salariés gagnant de 1,5 à 3 SMIG un prêt du fonds de promotion du
+        logement pour les salariés qui complète cette épargne.
+      synonymes: []
+    ar:
+      terme: الادخار السكني
+      definition: >
+        نظام أُحدث بالقانون عدد 24 لسنة 1973 المؤرّخ في 7 ماي 1973، يشترط على
+        مقتني المسكن ادّخارًا مسبقًا. نقّحه الأمر عدد 964 لسنة 1977 المؤرّخ في
+        24 نوفمبر 1977 وأقرّ قروضًا لاستكمال الادخار المطلوب؛ وفتح الأمر عدد 965
+        لسنة 1977 الصادر في اليوم نفسه للأجراء الذين يتراوح أجرهم بين 1,5 و3
+        مرّات الأجر الأدنى المضمون لمختلف المهن قرضًا من صندوق النهوض بالمسكن
+        لفائدة الأجراء يكمّل هذا الادخار.
+      synonymes: []
+
+  - id: promoteur-agree
+    acronyme: null
+    statut: provisoire  # AR non attesté (الباعث العقاري المصادق عليه proposé ; à relever sur l'éd. AR des décrets n° 2016-1126 ou 2023-127) ; régime de l'agrément non versé ; le chapitre ancre encore #g-promoteur-immobilier (l. 64)
+    references: [decret77-965, decret2016-1126, decret2023-127]
+    source_definition: {ref: decret2017-161, locator: "art. 3"}
+    voir_aussi: [promoteur-immobilier, premier-logement, fonds-foprolos]
+    fr:
+      terme: Promoteur immobilier agréé
+      definition: >
+        Promoteur immobilier titulaire de l'agrément de l'administration.
+        Depuis 1977, le fonds de promotion du logement pour les salariés prête
+        pour l'achat d'un logement neuf à un promoteur agréé ; depuis 2023, le
+        terrain qu'il finance peut être acheté à un promoteur agréé « ou du
+        privé ». Le logement du programme du premier logement est réalisé par
+        un promoteur agréé.
+      synonymes: [Promoteur agréé]
+    ar:
+      terme: الباعث العقاري المصادق عليه
+      definition: >
+        باعث عقاري متحصّل على مصادقة الإدارة. ومنذ 1977، يقرض صندوق النهوض
+        بالمسكن لفائدة الأجراء لاقتناء مسكن جديد من باعث عقاري مصادق عليه؛ ومنذ
+        2023، يمكن اقتناء الأرض التي يموّلها من باعث عقاري مصادق عليه أو من
+        الخواص. وينجز المسكنَ في برنامج المسكن الأول باعثٌ عقاري مصادق عليه.
+      synonymes: []
+
+  # Notions économiques (docs/notes/eco-logement-social.md, § 7) : termes AR proposés, non attestés.
+
+  - id: elasticite-offre-logement
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: glaeser-gyourko-2018-housing-supply, locator: "p. 13"}
+    voir_aussi: [eviction-logement, incidence-fiscale, aide-a-la-personne]
+    fr:
+      terme: Élasticité de l'offre de logement
+      definition: >
+        Variation en pourcentage de la quantité de logements offerts quand
+        leur prix augmente de 1 %. Selon Glaeser et Gyourko (2018), l'offre est
+        rigide là où le foncier est rare et les règles d'urbanisme strictes :
+        le prix s'y écarte du coût de construction, et une aide à la demande se
+        reporte dans les prix plutôt que d'accroître le parc.
+      synonymes: []
+    ar:
+      terme: مرونة عرض المساكن
+      definition: >
+        التغيّر بالنسبة المائوية في كمية المساكن المعروضة عند ارتفاع ثمنها بنسبة
+        1 %. وحسب غليزر وغيوركو (2018)، يكون العرض جامدًا حيث تندر الأراضي وتشتدّ
+        قواعد التعمير: يبتعد الثمن عندئذ عن كلفة البناء، وينعكس الدعم الموجّه إلى
+        الطلب على الأسعار بدل أن يزيد في عدد المساكن.
+      synonymes: []
+
+  - id: eviction-logement
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: sinai-waldfogel-2005-crowd-out}
+    voir_aussi: [elasticite-offre-logement, aide-a-la-pierre]
+    fr:
+      terme: Éviction de la construction privée
+      definition: >
+        Remplacement, par un logement aidé ou produit par la puissance
+        publique, d'un logement que le marché aurait produit ; seule la part
+        des logements aidés qui ne remplace pas une production privée accroît
+        le parc. Sinai et Waldfogel (2005) estiment qu'aux États-Unis trois
+        logements aidés en remplacent en moyenne deux, et que l'éviction est
+        plus faible là où la demande non satisfaite est forte.
+      synonymes: [Effet d'éviction]
+    ar:
+      terme: مزاحمة البناء الخاص
+      definition: >
+        تعويض مسكن كانت السوق ستنتجه بمسكن مدعوم أو تنتجه السلطة العمومية؛ ولا
+        يزيد في عدد المساكن إلا الجزء من المساكن المدعومة الذي لا يعوّض إنتاجًا
+        خاصًّا. ويقدّر سيناي ووالدفوغل (2005) أن ثلاثة مساكن مدعومة تعوّض في
+        المعدّل مسكنين في الولايات المتحدة، وأن المزاحمة تكون أضعف حيث يكون الطلب
+        غير الملبّى قويًّا.
+      synonymes: []
+
+  - id: aide-a-la-pierre
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: fack-2005-aides-logement}
+    voir_aussi: [aide-a-la-personne, eviction-logement]
+    fr:
+      terme: Aide à la pierre
+      definition: >
+        Aide publique attachée au logement plutôt qu'au ménage : subvention,
+        prêt à taux réduit ou financement accordé pour construire, acheter ou
+        réhabiliter des logements, ou logement produit par un organisme public.
+        Elle s'oppose à l'aide à la personne.
+      synonymes: [Aide à l'offre]
+    ar:
+      terme: الدعم الموجّه إلى البناء
+      definition: >
+        دعم عمومي مرتبط بالمسكن لا بالأسرة: منحة أو قرض بنسبة فائدة منخفضة أو
+        تمويل يُسند لبناء مساكن أو اقتنائها أو تهذيبها، أو مسكن ينتجه هيكل
+        عمومي. ويقابله الدعم الموجّه إلى الأسر.
+      synonymes: []
+
+  - id: aide-a-la-personne
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: fack-2005-aides-logement, locator: "p. 17"}
+    voir_aussi: [aide-a-la-pierre, incidence-fiscale, elasticite-offre-logement]
+    fr:
+      terme: Aide à la personne
+      definition: >
+        Aide publique au logement versée au ménage, selon ses ressources, pour
+        alléger son loyer ou ses charges de logement, et qui le suit quel que
+        soit le logement occupé. Elle s'oppose à l'aide à la pierre. Fack
+        (2005) estime qu'en France, de 1973 à 2002, 50 à 80 % des aides à la
+        personne perçues par les locataires à bas revenus sont absorbés par la
+        hausse de leurs loyers.
+      synonymes: [Aide à la demande]
+    ar:
+      terme: الدعم الموجّه إلى الأسر
+      definition: >
+        دعم عمومي للسكن يُسند إلى الأسرة حسب مواردها لتخفيف معين كرائها أو
+        أعباء سكنها، ويتبعها أيًّا كان المسكن الذي تشغله. ويقابله الدعم الموجّه
+        إلى البناء. ويقدّر فاك (2005) أن ما بين 50 و80 % من هذا الدعم الذي
+        يتقاضاه المتسوّغون ذوو الدخل الضعيف في فرنسا، من 1973 إلى 2002، قد
+        استوعبه ارتفاع معينات كرائهم.
+      synonymes: []
+
+  - id: element-de-subvention
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé (usage des institutions financières internationales), non attesté au JORT ; définition générique : ONU-Habitat (p. 63) emploie la notion sans la définir
+    references: [zaafrane-2014-habitat]
+    source_definition: {ref: onu-habitat-2011-tunisia-housing-profile, locator: "p. 63"}
+    voir_aussi: [premier-logement, fonds-foprolos]
+    fr:
+      terme: Élément de subvention d'un prêt bonifié
+      definition: >
+        Part d'un prêt à taux réduit qui équivaut à un don : différence entre
+        le montant prêté et la valeur actualisée, au taux du marché, des
+        remboursements dus au taux bonifié. ONU-Habitat (2011) juge celui des
+        prêts au logement tunisiens « difficult to calculate ».
+      synonymes: []
+    ar:
+      terme: عنصر المنحة في القرض الميسّر
+      definition: >
+        جزء من القرض بنسبة فائدة منخفضة يعادل هبة: الفرق بين المبلغ المقرَض
+        والقيمة الحالية، محسوبة بنسبة فائدة السوق، للأقساط المستحقّة بالنسبة
+        الميسّرة. ويرى موئل الأمم المتحدة (2011) أن احتساب هذا العنصر في قروض
+        السكن التونسية عسير.
       synonymes: []
 
   - id: avance-tfp
@@ -7859,7 +8430,7 @@ entries:
     references: [lf-2005, loi2018-56-lf2019]
     source_definition: {ref: lf-2005, locator: "art. 13"}
     source_traduction: {ref: loi2018-56-lf2019, locator: "art. 72"}
-    voir_aussi: [taxe-immeubles-batis]
+    voir_aussi: [taxe-immeubles-batis, fnah]
     fr:
       terme: Contribution au profit du Fonds national d'amélioration de l'habitat
       definition: >
@@ -12016,6 +12587,27 @@ entries:
     ar:
       terme: التدخل العمومي
       definition: ""
+      synonymes: []
+
+  - id: nomenclature-budgetaire
+    acronyme: null
+    statut: provisoire  # AR lu : intitulé du décret gouvernemental n° 2020-52 (AR), JORT n° 9 de 2020, p. 368 (« تبويب ميزانية البلديات ») ; colonnes du modèle annexé, p. 369
+    references: [decret-gouv2020-52]
+    source_definition: {ref: decret-gouv2020-52, locator: "annexe"}
+    source_traduction: {ref: decret-gouv2020-52, locator: "intitulé"}
+    voir_aussi: [interventions-publiques, depenses-de-gestion]
+    fr:
+      terme: Nomenclature budgétaire
+      definition: >
+        Classement des recettes et des dépenses d'un budget en titres, parties,
+        sections, articles et paragraphes ; pour les communes, un modèle approuvé par
+        décret gouvernemental.
+      synonymes: []
+    ar:
+      terme: تبويب الميزانية
+      definition: >
+        تصنيف مداخيل الميزانية ونفقاتها إلى عناوين وأجزاء وأقسام وفصول وفقرات ؛ وبالنسبة
+        إلى البلديات، نموذج يُصادَق عليه بأمر حكومي.
       synonymes: []
 
   - id: credits-d-engagement
