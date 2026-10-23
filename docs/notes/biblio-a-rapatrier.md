@@ -13,6 +13,14 @@ Sources : `docs/notes/regimes-speciaux-*.md` ; volume `remunerations_publiques`,
 - **À faire** : verser ces douze notices dans Zotero (`citation-key` en Extra) et les ranger dans la collection du volume ; lire les pages arabes et les intitulés arabes. Rien poussé.
 - Contrôle : toutes les clés citées par le chapitre statutaire et par les notes `regimes-speciaux-*` résolvent ; `push_biblio.py --verifier` : 0 perte.
 
+## Complément du 23/10/2026 (décrets 1976-2025, prime de rentrée universitaire, rapport actualisé 2012)
+
+Volume `remunerations_publiques`, FR et AR, à la main. `decret-gouv-2018-904-prime-rentree-universitaire` était déjà dans les deux fichiers (notice arabe avec p. 4717-4718). Onze notices ajoutées : `decret91-1078`, `decret85-1183`, `decret2006-1245`, `decret91-802`, `decret76-843`, `decret2025-459`, `decret-gouv2020-550`, `decret-gouv2019-1129`, `decret2023-592` (URL `pdf_fr` / `pdf_ar` de `jort_cache.db`) et `minfin-rapport-budget-actualise-2012` (capture Wayback du 17/04/2012, horodatage lu dans le CDX).
+- Sans URL française : `decret-gouv2019-1129` et `decret2023-592` (la base n'a que l'édition arabe) ; intitulé français = arabe + traduction de travail entre crochets. Pages et intitulés arabes des autres décrets non relevés (intitulé français provisoire côté AR).
+- Les clés ne sont citées dans aucun `.qmd` encore (le chapitre les nomme dans des TODO).
+- **À faire** : verser ces onze notices dans Zotero (`citation-key` en Extra) et les ranger dans la collection du volume. Rien poussé.
+- Contrôle : toutes les `[@clé]` des trois chapitres et d'`index.qmd` résolvent (FR et AR) ; `push_biblio.py --verifier` : 0 perte.
+
 ## Fusion des clés en doublon (23/10/2026)
 
 Vingt textes portaient deux ou trois clés. Chaque clé supprimée est remplacée par la clé gardée dans les `.qmd` français, `precis/glossaire.yml`, les générateurs, les tableaux et CSV engendrés et le cache de séries ; la notice fondue garde les deux notes et, quand les pages diffèrent, la plus petite page dans le champ `page` (les autres dans la note). Dans `precis/ar/references.json`, chaque clé supprimée subsiste comme alias « TRANSITOIRE » tant que les `.qmd` arabes la citent ; à retirer après leur retraduction. À supprimer de Zotero : les clés de la colonne « supprimée ». Le dépôt `tunisia-data` porte encore les anciennes clés dans deux transcriptions (`sources/transcriptions/jort-lf-caisse-transports-routiers.csv`, `sources/transcriptions/jort-lf-credits-programmes-incitations.csv`, et le catalogue qui en dérive) : à aligner avant le prochain export du cache.
