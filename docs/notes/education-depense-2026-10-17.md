@@ -554,8 +554,9 @@ identifier et à obtenir**. Les annexes D.1, pages 3 à 6, et les graphiques son
 
 ## 9. Collectivités locales (Q8)
 
-Rien de lu dans cette passe. Le tableau des dépenses communales par fonction, s'il existe, relève
-des séries `finances-locales-*` déjà en cache. **À vérifier** dans `finances-locales-ins-comptes`.
+Instruit le 23 octobre 2026 : voir `education-collectivites-2026-10-23.md`. Les budgets des communes n'ont pas de
+classification par fonction ; la nomenclature de 2020 isole un article d'interventions dans l'enseignement et la
+formation et les revenus des jardins d'enfants, publiés par article pour 2022 et 2023 seulement.
 
 ---
 

@@ -1,0 +1,24 @@
+- libelle: Préavis, salariés non payés au mois
+  parametre: parameters/marche_travail/rupture_contrat/preavis/duree_salaries_non_mensuels.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.rupture_contrat.preavis.duree_salaries_non_mensuels/table/
+- libelle: Gratification de fin de service, ancienneté minimale
+  parametre: parameters/marche_travail/rupture_contrat/gratification_fin_service/anciennete_minimale.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.rupture_contrat.gratification_fin_service.anciennete_minimale/table/
+- libelle: Préavis de rupture du contrat à durée indéterminée
+  parametre: parameters/marche_travail/rupture_contrat/preavis/duree.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.rupture_contrat.preavis.duree/table/
+- libelle: Dommages-intérêts du licenciement abusif, minimum par année d'ancienneté
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/minimum_par_annee_anciennete.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.rupture_contrat.dommages_interets.minimum_par_annee_anciennete/table/
+- libelle: Dommages-intérêts du licenciement abusif, maximum par année d'ancienneté
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/maximum_par_annee_anciennete.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.rupture_contrat.dommages_interets.maximum_par_annee_anciennete/table/
+- libelle: Dommages-intérêts du licenciement abusif, plafond
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/plafond.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.rupture_contrat.dommages_interets.plafond/table/
+- libelle: Dommages-intérêts du vice de procédure, minimum
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/vice_procedure_minimum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.rupture_contrat.dommages_interets.vice_procedure_minimum/table/
+- libelle: Dommages-intérêts du vice de procédure, maximum
+  parametre: parameters/marche_travail/rupture_contrat/dommages_interets/vice_procedure_maximum.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/marche_travail.rupture_contrat.dommages_interets.vice_procedure_maximum/table/
