@@ -1,42 +1,63 @@
 # Figure-data du précis socio-fiscal tunisien — généré le 2026-10-23
-# séries (tunisia_data) : plafond-garanties-lois-de-finances, plafond-garantie-denominateurs
-# sources (citation) : @loi58-45-lf1958, @loi59-42-lf1959, @loi60-38-lf1961, @loi61-65-lf1962, @loi62-82-lf1963, @loi63-58-lf1964, @loi64-59-lf1965, @loi65-46-lf1966, @loi66-79-lf1967, @loi67-57-lf1968, @lf-1969, @lf-1970, @lf-1971, @loi71-59-lf1972, @lf-1973, @loi73-82-lf1974, @loi74-75-lfc1974, @loi74-101-lf1975, @loi75-83-lf1976, @lf-1977, @loi77-81-lf1978, @loi78-59-lf1979, @loi79-66-lf1980, @lf-1981, @loi81-100-lf1982, @lf-1983, @lf-1984, @loi84-84-lf1985, @loi85-109-lf1986, @loi86-106-lf1987, @loi-87-83-lf-1988, @loi88-145-lf1989, @loi-89-115-lf-1990, @loi90-111-lf1991, @loi91-98-lf1992, @lf-1993, @loi93-111-garantie-1993, @lf-1994, @wb-wdi, @undata-sna, @minfin-remunerations
+# séries (tunisia_data) : plafond-garanties-lois-de-finances, plafond-garantie-denominateurs, budget-ordinaire-lois-de-finances
+# sources (citation) : @loi58-45-lf1958, @loi59-42-lf1959, @loi60-38-lf1961, @loi61-65-lf1962, @loi62-82-lf1963, @loi63-58-lf1964, @loi64-59-lf1965, @loi65-46-lf1966, @loi66-79-lf1967, @loi67-57-lf1968, @lf-1969, @lf-1970, @lf-1971, @loi71-59-lf1972, @lf-1973, @loi73-82-lf1974, @loi74-75-lfc1974, @loi74-101-lf1975, @loi75-83-lf1976, @lf-1977, @loi77-81-lf1978, @loi78-59-lf1979, @loi79-66-lf1980, @lf-1981, @loi81-100-lf1982, @lf-1983, @lf-1984, @loi84-84-lf1985, @loi85-109-lf1986, @loi86-106-lf1987, @loi-87-83-lf-1988, @loi88-145-lf1989, @loi-89-115-lf-1990, @loi90-111-lf1991, @loi91-98-lf1992, @lf-1993, @loi93-111-garantie-1993, @lf-1994, @lf-1995, @lf-1996, @lf-1997, @lf-1998, @lf-1999, @lf-2000, @lf-2001, @loi2001-123-lf2002, @loi2002-90-garantie-2002, @lf-2003, @lf-2004, @lf-2005, @lf-2006, @lf-2007, @loi-2007-70-lf-2008, @lf-2009, @lf-2010, @lf-2011, @dl-2011-56-lfc-2011, @lf-2012, @lf-2013, @lf-2014, @lf-2015, @wb-wdi, @undata-sna, @ins-cnat-2015, @ins-pib-base-2015-2010-2020, @minfin-remunerations
 # fiches : 
-# méthode/hypothèses : Le plafond est un maximum légal annuel, non un montant de garanties accordées ni un encours. 1958-59 est imprimé en francs et ne figure pas sur la figure. Les lois de finances complémentaires dont l'index n'indique pas d'article sur la garantie n'ont pas été lues en entier. Les parts du PIB et des dépenses de l'État sont des ordres de grandeur : le numérateur est un plafond voté, les dénominateurs sont décrits sous « plafond-garantie-denominateurs »., Le PIB d'avant 1992 n'a pas de base dite ; le passage de 1991 à 1992 est une rupture de série, dont le niveau n'est pas connu, et aucune conversion n'est faite (voir l'annexe sur le PIB). Aucune dépense de l'État n'est portée avant 1986 ; aucun PIB avant 1961. L'année financière 1959-60 n'a donc aucune part. Le numérateur est un plafond voté, le dénominateur des dépenses un montant réalisé.
-# note : x
-Gestion,Plafond fixé par la loi de finances (MD),Montant en vigueur à la fin de la gestion (MD),PIB de l'année (MD),Base du PIB,"Plafond fixé, en % du PIB","Montant en vigueur à la fin, en % du PIB","Dépenses de l'État hors service de la dette, réalisation (MD)","Plafond fixé, en % des dépenses de l'État","Montant en vigueur à la fin, en % des dépenses de l'État",Textes
-1959-60,12.0,12.0,,,,,,,,loi n° 59-42
-1961,12.0,12.0,363.8,base non dite,3.3,3.3,,,,loi n° 60-38
-1962,12.0,12.0,369.6,base non dite,3.25,3.25,,,,loi n° 61-65
-1963,16.0,16.0,431.2,base non dite,3.71,3.71,,,,loi n° 62-82
-1964,16.0,16.0,457.8,base non dite,3.49,3.49,,,,loi n° 63-58
-1965,16.0,16.0,520.3,base non dite,3.08,3.08,,,,loi n° 64-59
-1966,16.0,16.0,546.5,base non dite,2.93,2.93,,,,loi n° 65-46
-1967,20.0,20.0,570.0,base non dite,3.51,3.51,,,,loi n° 66-79
-1968,25.0,25.0,637.7,base non dite,3.92,3.92,,,,loi n° 67-57
-1969,25.0,25.0,677.2,base non dite,3.69,3.69,,,,loi n° 68-41
-1970,25.0,25.0,755.6,base non dite,3.31,3.31,,,,loi n° 69-64
-1971,25.0,25.0,881.2,base non dite,2.84,2.84,,,,loi n° 70-66
-1972,25.0,25.0,1067.5,base non dite,2.34,2.34,,,,loi n° 71-59
-1973,25.0,25.0,1151.3,base non dite,2.17,2.17,,,,loi n° 72-87
-1974,25.0,50.0,1547.8,base non dite,1.62,3.23,,,,loi n° 73-82 ; loi n° 74-75
-1975,50.0,50.0,1741.4,base non dite,2.87,2.87,,,,loi n° 74-101
-1976,50.0,50.0,1933.0,base non dite,2.59,2.59,,,,loi n° 75-83
-1977,200.0,200.0,2191.9,base non dite,9.12,9.12,,,,loi n° 76-115
-1978,200.0,200.0,2483.9,base non dite,8.05,8.05,,,,loi n° 77-81
-1979,200.0,200.0,2922.0,base non dite,6.84,6.84,,,,loi n° 78-59
-1980,200.0,200.0,3540.5,base non dite,5.65,5.65,,,,loi n° 79-66
-1981,200.0,200.0,4162.0,base non dite,4.81,4.81,,,,loi n° 80-88
-1982,200.0,200.0,4804.4,base non dite,4.16,4.16,,,,loi n° 81-100
-1983,200.0,200.0,5668.1,base non dite,3.53,3.53,,,,loi n° 82-91
-1984,200.0,200.0,6412.4,base non dite,3.12,3.12,,,,loi n° 83-113
-1985,200.0,200.0,7018.3,base non dite,2.85,2.85,,,,loi n° 84-84
-1986,200.0,200.0,7160.4,base non dite,2.79,2.79,2395.0,8.35,8.35,loi n° 85-109
-1987,200.0,200.0,8035.3,base non dite,2.49,2.49,2316.6,8.63,8.63,loi n° 86-106
-1988,200.0,300.0,8660.6,base non dite,2.31,3.46,2603.3,7.68,11.52,loi n° 87-83 ; loi n° 88-145
-1989,300.0,300.0,9589.9,base non dite,3.13,3.13,2969.8,10.1,10.1,loi n° 88-145
-1990,300.0,300.0,10815.7,base non dite,2.77,2.77,3181.8,9.43,9.43,loi n° 89-115
-1991,300.0,300.0,12028.8,base non dite,2.49,2.49,3514.0,8.54,8.54,loi n° 90-111
-1992,250.0,530.0,13706.0,base 1983,1.82,3.87,3656.4,6.84,14.5,loi n° 91-98 ; loi n° 92-122
-1993,500.0,900.0,14663.0,base 1983,3.41,6.14,4014.2,12.46,22.42,loi n° 92-122 ; loi n° 93-111
-1994,950.0,950.0,15814.0,base 1983,6.01,6.01,4276.6,22.21,22.21,loi n° 93-125
+# méthode/hypothèses : Le plafond est un maximum légal annuel, non un montant de garanties accordées ni un encours. 1958-59 est imprimé en francs et ne figure pas sur la figure. Les lois de finances complémentaires dont l'index n'indique pas d'article sur la garantie n'ont pas été lues en entier : celles de 1969 à 1991 le sont par leur seul index, celles de 1995 à 2015 ne modifient pas le plafond. Les parts du PIB et des dépenses de l'État sont des ordres de grandeur : le numérateur est un plafond voté, les dénominateurs sont décrits sous « plafond-garantie-denominateurs »., Le PIB d'avant 1992 n'a pas de base dite ; les passages de 1991 à 1992, de 1996 à 1997 et de 2009 à 2010 sont des ruptures de série, et aucune conversion n'est faite (voir l'annexe sur le PIB) ; la base 1997 est recalculée par l'INS de 1997 à 2004, la base 2015 de 2010 à 2014. Les dépenses de l'État hors service de la dette ne sont portées qu'à partir de 1986 (avant, voir le budget ordinaire voté) ; aucun PIB avant 1961 : l'année financière 1959-60 n'a pas de part du PIB. Le numérateur est un plafond voté, le dénominateur un budget voté jusqu'en 1986 et des dépenses réalisées ensuite., Montant voté du seul budget ordinaire (titre I), qui peut comprendre une contribution au budget d'équipement et le service de la dette ; le budget d'équipement et de développement n'est pas compris. Il ne se raccorde pas aux dépenses de l'État hors service de la dette, en réalisation, de 1986 à 2015 : les deux séries se recouvrent en 1986 et ne sont jamais chaînées. Pour 1959-60, le chiffre des crédits est illisible : seules les recettes sont lues.
+# note : Plafond de la garantie de l'État fixé par la loi de finances, en millions de dinars courants, en % du PIB et en % du budget de l'État, 1959-60 à 2015
+Gestion,Plafond fixé par la loi de finances (MD),Montant en vigueur à la fin de la gestion (MD),PIB de l'année (MD),Base du PIB,"Plafond fixé, en % du PIB","Montant en vigueur à la fin, en % du PIB","Dépenses de l'État hors service de la dette, réalisation (MD)","Plafond fixé, en % des dépenses de l'État","Montant en vigueur à la fin, en % des dépenses de l'État",Budget ordinaire voté (MD),"Plafond fixé, en % du budget ordinaire voté","Montant en vigueur à la fin, en % du budget ordinaire voté",Textes
+1959-60,12.0,12.0,,,,,,,,48.6,24.69,24.69,loi n° 59-42
+1961,12.0,12.0,363.8,base non dite,3.3,3.3,,,,55.8,21.51,21.51,loi n° 60-38
+1962,12.0,12.0,369.6,base non dite,3.25,3.25,,,,56.8,21.13,21.13,loi n° 61-65
+1963,16.0,16.0,431.2,base non dite,3.71,3.71,,,,59.95,26.69,26.69,loi n° 62-82
+1964,16.0,16.0,457.8,base non dite,3.49,3.49,,,,68.3,23.43,23.43,loi n° 63-58
+1965,16.0,16.0,520.3,base non dite,3.08,3.08,,,,86.0,18.6,18.6,loi n° 64-59
+1966,16.0,16.0,546.5,base non dite,2.93,2.93,,,,100.5,15.92,15.92,loi n° 65-46
+1967,20.0,20.0,570.0,base non dite,3.51,3.51,,,,108.1,18.5,18.5,loi n° 66-79
+1968,25.0,25.0,637.7,base non dite,3.92,3.92,,,,124.0,20.16,20.16,loi n° 67-57
+1969,25.0,25.0,677.2,base non dite,3.69,3.69,,,,131.35,19.03,19.03,loi n° 68-41
+1970,25.0,25.0,755.6,base non dite,3.31,3.31,,,,146.5,17.06,17.06,loi n° 69-64
+1971,25.0,25.0,881.2,base non dite,2.84,2.84,,,,154.0,16.23,16.23,loi n° 70-66
+1972,25.0,25.0,1067.5,base non dite,2.34,2.34,,,,175.0,14.29,14.29,loi n° 71-59
+1973,25.0,25.0,1151.3,base non dite,2.17,2.17,,,,208.1,12.01,12.01,loi n° 72-87
+1974,25.0,50.0,1547.8,base non dite,1.62,3.23,,,,247.2,10.11,20.23,loi n° 73-82 ; loi n° 74-75
+1975,50.0,50.0,1741.4,base non dite,2.87,2.87,,,,344.6,14.51,14.51,loi n° 74-101
+1976,50.0,50.0,1933.0,base non dite,2.59,2.59,,,,385.5,12.97,12.97,loi n° 75-83
+1977,200.0,200.0,2191.9,base non dite,9.12,9.12,,,,441.5,45.3,45.3,loi n° 76-115
+1978,200.0,200.0,2483.9,base non dite,8.05,8.05,,,,541.2,36.95,36.95,loi n° 77-81
+1979,200.0,200.0,2922.0,base non dite,6.84,6.84,,,,625.1,31.99,31.99,loi n° 78-59
+1980,200.0,200.0,3540.5,base non dite,5.65,5.65,,,,751.6,26.61,26.61,loi n° 79-66
+1981,200.0,200.0,4162.0,base non dite,4.81,4.81,,,,938.0,21.32,21.32,loi n° 80-88
+1982,200.0,200.0,4804.4,base non dite,4.16,4.16,,,,1168.0,17.12,17.12,loi n° 81-100
+1983,200.0,200.0,5668.1,base non dite,3.53,3.53,,,,1420.0,14.08,14.08,loi n° 82-91
+1984,200.0,200.0,6412.4,base non dite,3.12,3.12,,,,1544.0,12.95,12.95,loi n° 83-113
+1985,200.0,200.0,7018.3,base non dite,2.85,2.85,,,,1885.0,10.61,10.61,loi n° 84-84
+1986,200.0,200.0,7160.4,base non dite,2.79,2.79,2395.0,8.35,8.35,1970.0,10.15,10.15,loi n° 85-109
+1987,200.0,200.0,8035.3,base non dite,2.49,2.49,2316.6,8.63,8.63,,,,loi n° 86-106
+1988,200.0,300.0,8660.6,base non dite,2.31,3.46,2603.3,7.68,11.52,,,,loi n° 87-83 ; loi n° 88-145
+1989,300.0,300.0,9589.9,base non dite,3.13,3.13,2969.8,10.1,10.1,,,,loi n° 88-145
+1990,300.0,300.0,10815.7,base non dite,2.77,2.77,3181.8,9.43,9.43,,,,loi n° 89-115
+1991,300.0,300.0,12028.8,base non dite,2.49,2.49,3514.0,8.54,8.54,,,,loi n° 90-111
+1992,250.0,530.0,13706.0,base 1983,1.82,3.87,3656.4,6.84,14.5,,,,loi n° 91-98 ; loi n° 92-122
+1993,500.0,900.0,14663.0,base 1983,3.41,6.14,4014.2,12.46,22.42,,,,loi n° 92-122 ; loi n° 93-111
+1994,950.0,950.0,15814.0,base 1983,6.01,6.01,4276.6,22.21,22.21,,,,loi n° 93-125
+1995,950.0,950.0,17052.0,base 1983,5.57,5.57,4584.2,20.72,20.72,,,,loi n° 94-127
+1996,950.0,950.0,19066.0,base 1983,4.98,4.98,4858.3,19.55,19.55,,,,loi n° 95-109
+1997,950.0,950.0,22943.9,base 1997,4.14,4.14,5292.7,17.95,17.95,,,,loi n° 96-113
+1998,950.0,950.0,24827.6,base 1997,3.83,3.83,5607.9,16.94,16.94,,,,loi n° 97-88
+1999,950.0,950.0,27215.9,base 1997,3.49,3.49,6165.3,15.41,15.41,,,,loi n° 98-111
+2000,950.0,950.0,29433.3,base 1997,3.23,3.23,6638.0,14.31,14.31,,,,loi n° 99-101
+2001,950.0,950.0,31746.5,base 1997,2.99,2.99,7205.2,13.18,13.18,,,,loi n° 2000-98
+2002,950.0,1800.0,32901.4,base 1997,2.89,5.47,7515.8,12.64,23.95,,,,loi n° 2001-123 ; loi n° 2002-90
+2003,1200.0,1200.0,35373.3,base 1997,3.39,3.39,7931.5,15.13,15.13,,,,loi n° 2002-101
+2004,950.0,950.0,38838.6,base 1997,2.45,2.45,8527.8,11.14,11.14,,,,loi n° 2003-80
+2005,950.0,950.0,41871.0,base 1997,2.27,2.27,9191.4,10.34,10.34,,,,loi n° 2004-90
+2006,950.0,950.0,45756.2,base 1997,2.08,2.08,9973.9,9.52,9.52,,,,loi n° 2005-106
+2007,950.0,950.0,49857.5,base 1997,1.91,1.91,11166.1,8.51,8.51,,,,loi n° 2006-85
+2008,950.0,950.0,55267.8,base 1997,1.72,1.72,12791.8,7.43,7.43,,,,loi n° 2007-70
+2009,950.0,950.0,58677.2,base 1997,1.62,1.62,14174.5,6.7,6.7,,,,loi n° 2008-77
+2010,950.0,950.0,66139.7,base 2015,1.44,1.44,14267.4,6.66,6.66,,,,loi n° 2009-71
+2011,1800.0,4000.0,67747.3,base 2015,2.66,5.9,17143.3,10.5,23.33,,,,loi n° 2010-58 ; loi n° 2011-56
+2012,4000.0,4000.0,73895.4,base 2015,5.41,5.41,19141.9,20.9,20.9,,,,loi n° 2011-7
+2013,3000.0,3000.0,79096.6,base 2015,3.79,3.79,22011.6,13.63,13.63,,,,loi n° 2012-27
+2014,3000.0,3000.0,85345.7,base 2015,3.52,3.52,22452.7,13.36,13.36,,,,loi n° 2013-54
+2015,3000.0,3000.0,89802.2,base 2015,3.34,3.34,22248.5,13.48,13.48,,,,loi n° 2014-59
