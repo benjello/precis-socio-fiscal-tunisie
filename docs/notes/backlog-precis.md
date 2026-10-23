@@ -1001,7 +1001,10 @@ liste qui suit le tableau, citations comprises. Restent :
   quatre → six cadres. Aide « gluten » : arrêté du 30 juillet 2025 abrogé par l'arrêté conjoint
   du 14 juillet 2026 (JORT n° 70, pp. 1327-1328, exécutoire le 19 juillet 2026 ; commission
   médicale, registre spécifique, condition de non-couverture pour le *xeroderma pigmentosum*),
-  portés à `#sec-nc-aides-categorielles`. Lacunes :
+  portés à `#sec-nc-aides-categorielles`. Le tableau des montants `#tbl-nc-gluten-montant` est
+  engendré depuis le 23 octobre 2026 (`generate_prestations_tables.py`, 0.145) ; le tableau
+  `#tbl-nc-aides-categorielles`, qui mêle des aides sans feuille (art. 71, 81, 96 de 2026) à
+  des conditions rédigées, reste écrit à la main. Lacunes :
   - **articulation art. 26 (2025) / art. 35 (2026)** : montant servi du 1er janvier au
     19 juillet 2026, survie de l'art. 26, cumul ; aucun texte lu (TODO HTML dans le chapitre) ;
   - **suite de la banque de données après mai 2019** : aucune prolongation ni abrogation du
@@ -2251,7 +2254,12 @@ mesure ni les soins réalisés ni les revenus des médecins.
   Le décret n° 98-409 fixe les tarifs réduits en pourcentage des tarifs de l'arrêté du
   19 décembre 1996, non en dinars : la case « montants de 1998 » du tableau
   `#tbl-soins-assures-hopital` est remplie par calcul (colonnes 1996 et 1998 ajoutées, formules et
-  arrondi de l'art. 22 sous le tableau). Lus : arrêtés du 19 décembre 1996 (couche texte ; dépôt
+  arrondi de l'art. 22 sous le tableau). **Depuis le 23 octobre 2026, les quatre tableaux de tarifs
+  sont engendrés** (`scripts/generate_sante_tables.py`, français seul) et recoupent le fait main,
+  sauf la colonne 1998 des consultations de `#tbl-soins-assures-hopital` : pourcentage et ligne nommée
+  par l'art. 17, sans montant (1,500 ; 2 ; 3 ; 4,500 D retirés), et la colonne 1996 des consultations
+  de l'hôpital régional et de l'établissement universitaire (« 10 ou 14 selon le praticien ») ;
+  TODO (documentaliste) dans `_histoire.qmd`, constat dans `backlog-modele.md`. Lus : arrêtés du 19 décembre 1996 (couche texte ; dépôt
   du 30 décembre 1996 lu à l'image, exécutoire le 4 janvier 1997 ; édition arabe lue à l'image,
   pp. 2855-2856), du 17 avril 1998, du 29 janvier 2003 (couche texte décalée de 29 points de code)
   et du 7 juillet 2008 ; arrêté du 25 janvier 1993 lu à l'image (JORT n° 10, pp. 201-202).
@@ -4397,8 +4405,10 @@ matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
   ventes : régime des boissons non repris dans la section ; à rédiger.
 - **Fascicules scannés 2016-2026.** Recherche du motif 97-1368 sur la couche texte seulement :
   fiche `r-modificatifs-decret-97-1368` (`a_faire`).
-- **Tableaux.** `alcools-tarifs` et `capsule-fiscale` sont des relevés tenus à la main
-  (`tarifs/tarifs-releves-droits-consommation.csv`) ; TODO (rédacteur) de remplacement par un
-  tableau engendré.
+- **Tableaux.** `alcools-tarifs` est engendré depuis le 23 octobre 2026
+  (`generate_droit_consommation_tables.py`, 0.147 : les 60 cases lues dans les paramètres rendent
+  exactement le relevé, cinq colonnes, la date du 1er janvier 2016 vérifiée sans valeur nouvelle ;
+  le relevé reste le garde-fou) ; `capsule-fiscale` reste un relevé tenu à la main
+  (`tarifs/tarifs-releves-droits-consommation.csv`), sans feuille d'accises.
 - **Arabe.** Termes retenus sur l'édition arabe du décret de 1997 (lue à l'image, pp. 1366 et
   1370) : وصل ضمان, سند إعفاء, حسابية المواد ; à faire relire par le relecteur-ar.
