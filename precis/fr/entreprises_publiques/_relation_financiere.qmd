@@ -352,16 +352,24 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import listes as ls
 ls.figure_plafond(
     caption=("Plafond de la garantie de l'État fixé par la loi de finances, en millions de "
-             "dinars courants, 1959-60 à 1994"),
+             "dinars courants, en % du PIB et en % des dépenses de l'État, 1959-60 à 1994"),
     note_lecture=(
         "Chaque point est le montant que la loi de finances de la gestion fixe pour l'année ; la flèche et le losange orange sont le montant auquel une loi postérieure porte ce plafond au cours de la même gestion. "
-        "L'axe vertical est logarithmique : un même écart de hauteur est un même rapport de montants. "
+        "Dans la première vue, l'axe vertical est logarithmique : un même écart de hauteur est un même rapport de montants. "
         "L'année financière 1958-59, imprimée à 7 milliards de francs, n'est pas tracée. "
+        "Dans les deux autres vues, le plafond de la gestion N est rapporté au PIB de l'année N et, de 1986 à 1994, aux dépenses de l'État de l'année N hors service de la dette, dans leur réalisation. "
+        "L'année financière 1959-60 n'a pas de PIB annuel correspondant et n'a donc aucune part. "
+        "Le PIB de 1961 à 1991 est celui de la Banque mondiale, dans une base que la source ne dit pas ; celui de 1992 à 1994 est celui de l'Institut national de la statistique, en base 1983. "
+        "Le trait vertical de 1992 marque ce changement de série : aucune conversion n'est faite entre les deux, et le niveau de la rupture n'est pas connu (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "Le plafond est un montant voté, les dépenses un montant réalisé : les parts sont des ordres de grandeur. "
         "Le plafond est un maximum légal : il ne dit ni les garanties accordées ni l'encours."),
 )
 ```
 
+<!-- TODO (documentaliste) : dépenses de l'État de 1959-60 à 1985 (totaux des budgets des lois de finances, ou lois de règlement et rapports annuels de la Banque centrale), pour prolonger la vue en part des dépenses de l'État, qui ne commence qu'en 1986 ; PIB de 1959-60 et de 1960 et base du PIB d'avant 1992 (annexe PIB, lacunes L1 à L3) ; voir docs/notes/backlog-precis.md. -->
+
 - **Des paliers de longue durée.** Le plafond est de 12 MD pour 1959-60, 1961 et 1962, de 16 MD de [1963](#r-ep-pl-1963) à 1966, de 20 MD en [1967](#r-ep-pl-1967), de 25 MD de [1968](#r-ep-pl-1968) à 1973, de 50 MD de 1974 à 1976, de 200 MD de [1977](#r-ep-pl-1977) à 1987, de 300 MD de 1988 à 1991. Il est multiplié par quatre en 1977 (de 50 à 200 MD). Après 300 MD en 1991, il est de 250 MD en [1992](#r-ep-pl-1992), de 500 MD en [1993](#r-ep-pl-1993) et de 950 MD en [1994](#r-ep-pl-1994).
+- **En part du PIB.** Le plafond vaut de 1,6 % à 3,9 % du PIB de 1961 à 1976, puis 9,1 % en 1977, après son passage de 50 à 200 MD, et il redescend à 2,5 % en 1987 et en 1991 ; pour 1992 à 1994, avec le PIB de l'Institut national de la statistique, il est de 1,8 %, 3,4 % puis 6,0 % du PIB (deuxième vue de @fig-ep-plafond-legal). Le PIB change de série en 1992 : la hausse de 1992 à 1994 se lit dans la seule série de l'Institut. Rapporté aux dépenses de l'État hors service de la dette (troisième vue, 1986 à 1994), il est de 8,4 % en 1986 et de 8,5 % en 1991, puis de 6,8 %, 12,5 % et 22,2 % de 1992 à 1994. Ces parts sont celles du plafond fixé par la loi de finances de la gestion, avant les relèvements de 1992 et de 1993.
 - **Quatre relèvements en cours de gestion.** [La loi n° 74-75 du 3 août 1974](#r-ep-pl-1974-2) porte le plafond de 1974 de 25 à 50 MD. [La loi de finances pour 1989](#r-ep-pl-1988-2) fixe 300 MD « pour l'année 1988 et l'année 1989 », alors que celle de 1988 avait fixé 200 MD. [La loi de finances pour 1993](#r-ep-pl-1992-2) modifie le plafond de 1992, de 250 à 530 MD, sous la rubrique « régularisation de la garantie de l'Etat pour la gestion 1992 ». [La loi n° 93-111 du 8 novembre 1993](#r-ep-pl-1993-2), « portant augmentation du montant annuel d'octroi de la garantie de l'Etat », porte celui de 1993 de 500 à 900 MD.
 - **Une commission depuis 1993.** [L'arrêté du 3 avril 1993](#r-ep-arrete-1993-commission) subordonne l'octroi de la garantie au paiement d'une commission de 0,5 % du principal du crédit garanti pour une institution financière et de 1,5 % pour une institution non financière, versée au fonds d'amortissement de la garantie de bonne fin donnée par le Trésor.
 - **Un libellé qui change.** Jusqu'à la loi de finances pour 1983, le corps de l'article autorise la « garantie du Trésor » ; [celle de 1984](#r-ep-pl-1984) écrit « garantie de l'État ».

@@ -117,3 +117,28 @@ def test_registre_du_plafond_du_chapitre_est_celui_du_releve():
         encoding="utf-8")
     ecrit = [l for l in chapitre.splitlines() if "{#r-ep-pl-" in l]
     assert attendu and ecrit == attendu
+
+
+def test_parts_du_plafond_de_la_garantie():
+    """Parts du plafond : PIB de l'année de la gestion (aucune part pour 1959-60), dépenses de
+    l'État hors service de la dette de 1986 à 1994 seulement, PIB en deux segments de base."""
+    import sys
+
+    import pytest
+
+    pytest.importorskip("matplotlib")
+    racine = Path(__file__).resolve().parent.parent
+    sys.path.insert(0, str(racine / "precis/fr/entreprises_publiques"))
+    from figures import listes
+
+    t = listes.table_plafond().set_index("Gestion")
+    pib = "Plafond fixé, en % du PIB"
+    dep = "Plafond fixé, en % des dépenses de l'État"
+    assert t.loc["1959-60", pib] != t.loc["1959-60", pib]  # NaN : pas d'année de PIB
+    assert t.loc["1961", "PIB de l'année (MD)"] == 363.8
+    assert t.loc["1977", pib] == pytest.approx(100 * 200 / 2191.9, abs=0.01)
+    assert t.loc["1994", dep] == pytest.approx(100 * 950 / 4276.6, abs=0.01)
+    assert t.loc["1985", dep] != t.loc["1985", dep]  # NaN : pas de dépenses avant 1986
+    assert t.loc["1986", dep] == pytest.approx(100 * 200 / 2395.0, abs=0.01)
+    assert set(t.loc["1961":"1991", "Base du PIB"]) == {"base non dite"}
+    assert set(t.loc["1992":"1994", "Base du PIB"]) == {"base 1983"}

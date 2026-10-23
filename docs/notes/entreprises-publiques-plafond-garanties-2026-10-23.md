@@ -86,8 +86,12 @@ d'amortissement de la garantie de bonne fin.
   décret du 29 juin 1957 (budget ordinaire 1957-58, JORT n° 52, `1957F/Jo15257.pdf`, absent du
   corpus local) ; lois de finances complémentaires de 1969 à 1991 non lues en entier.
 - Article 36 de la loi n° 77-81 non lu.
-- Aucune part du budget ni du PIB avant 1986 : les dépenses de l'État du volume couvrent
-  1986-1987 puis depuis 1991 ; le PIB, depuis 1986.
+- Parts du plafond (ajoutées le 23 octobre 2026) : PIB de l'année de la gestion de 1961 à 1994
+  (Banque mondiale sans base dite jusqu'en 1991, INS en base 1983 de 1992 à 1994, deux segments,
+  rupture en 1992 sans conversion) ; dépenses de l'État hors service de la dette, réalisation,
+  de 1986 à 1994 (série `denominateurs-depenses-etat-pib`). Aucune dépense de l'État avant 1986
+  dans l'entrepôt : totaux des budgets des lois de finances de 1959-60 à 1985 à lire ; aucun PIB
+  pour 1959-60.
 - Prêts du Trésor aux entreprises publiques (article voisin de chaque loi, code de la
   comptabilité publique, art. 62) : montants vus (1974-75 : 14 puis 20 MD ; 1979 : 20 MD ;
   1992 : 20 MD ; 1994 : 40 MD), non relevés en série.
