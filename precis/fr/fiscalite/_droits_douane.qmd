@@ -1,0 +1,700 @@
+# Les droits de douane {#sec-dd}
+
+Le [droit de consommation](#g-droit-de-consommation) dû à l'importation a son chapitre (@sec-droits-consommation), comme la taxe sur la valeur ajoutée (@sec-tva) et la taxe au profit du fonds de développement de la compétitivité (@sec-fst-mise-en-place), que la douane perçoit avec les droits de douane. Les franchises de droits de douane des codes d'investissement sont exposées avec les régimes d'incitation (@sec-regimes-incitation), et leur coût avec les dépenses fiscales (@sec-depenses-fiscales).
+
+Les [droits de douane](#g-droits-de-douane) sont dus sur les marchandises importées. Leur taux est celui que fixe, pour chaque [position tarifaire](#g-position-tarifaire), le [tarif des droits de douane](#g-tarif-des-droits-de-douane) à l'importation, établi par la loi. Ce taux, [*ad valorem*](#g-taux-ad-valorem), s'applique à la [valeur en douane](#g-valeur-en-douane) de la marchandise, qui est en premier lieu sa valeur transactionnelle. La douane calcule le montant dû — elle le liquide — au tarif en vigueur le jour où la déclaration en détail est enregistrée ; elle le perçoit et le verse au budget de l'État. Avec les droits, elle perçoit une [redevance de prestations douanières](#g-redevance-prestations-douanieres), assise depuis 1994 sur le montant des droits et taxes liquidés en douane.
+
+Le chapitre donne : une vue d'ensemble des réformes ; la mise en place du tarif, de l'union douanière avec la France au tarif de 1959 ; les cinq grandes réformes — la compression des taux en 1987-1988, le tarif à l'importation seule en 1990, le calendrier de l'accord d'association avec l'Union européenne en 1997, les relèvements de 2018 et de 2022 — ; l'état du droit au 1^er^ janvier 2026 ; la redevance de prestations douanières, le droit compensateur provisoire de 1991 à 1997, les accords commerciaux, les autres prélèvements perçus en douane et le code des douanes ; ce que les droits rapportent de 1986 à 2025 ; ce qu'en disent les rapports extérieurs et une évaluation ; ce qu'en dit l'économie.
+
+## Vue d'ensemble {#sec-dd-vue}
+
+Depuis le 1^er^ janvier 1990, le droit de douane est dû à l'importation seule, au taux du tarif de la loi n° 89-113, que les lois de finances modifient chaque année ; il est liquidé sur la valeur en douane, perçu par la douane et versé au budget de l'État. Le tarif tunisien date de 1959 ; cinq réformes en ont changé la structure ou l'objectif.
+
+| Date et texte | Ce que la loi cherche, dans ses mots | Avant → après | Ce qui y naît |
+|---|---|---|---|
+| [1^er^ octobre 1959]{.insecable} : [loi n° 59-95](#r-dd-ant-1959) et [convention avec la France](#r-dd-ant-1959-convention) | « mise en vigueur d'un nouveau tarif des douanes à l'importation et à l'exportation » ; « Le régime de l'Union Douanière franco-tunisienne est abrogé » | union douanière avec la France, tarif du 29 décembre 1955 → tarif tunisien : tarif minimum, tarif général au triple, tarif à l'exportation | un tarif national (mise en place) |
+| [2 janvier 1987]{.insecable} et [2 janvier 1988]{.insecable} : lois de finances pour [1987](#r-dd-t-1987) et [1988](#r-dd-t-1988) | « Aménagement du tarif » ; « Institution d'une redevance de prestation douanière » | taux du tarif de 1973 jusqu'à « 52,5 % et plus » → de 10 à 45 % en 1987, puis 0 % et de 17 à 43 % en 1988 | minimum de perception ; redevance de prestations douanières |
+| [1^er^ janvier 1990]{.insecable} : [loi n° 89-113](#r-dd-t-1990) | « Il n'existe pas de tarif de droit de douanes à l'exportation » | tarifs minimum et général, à l'importation et à l'exportation, en nomenclature de Bruxelles → un tarif à l'importation seule, en nomenclature du système harmonisé | — |
+| [1^er^ janvier 1997]{.insecable} : [loi de finances pour 1997](#r-dd-acc-1997) | « Démantèlement progressif des droits de douane pour la période 1996-2007 » | droit commun sur les produits industriels de la Communauté européenne → droits réduits selon le calendrier de l'accord d'association | une préférence tarifaire pour une origine |
+| [1^er^ janvier 2018]{.insecable} : [loi de finances pour 2018](#r-dd-t-2018) | « Mesures tarifaires pour la maîtrise du déficit de la balance commerciale » | certains produits des chapitres 25 à 97 : 20 → 30 % ; produits d'une annexe : 0 → 15 % | droits rétablis sur des produits turcs ; taxe de contrôle par scanner |
+| [1^er^ janvier 2022]{.insecable} : [loi de finances pour 2022](#r-dd-t-2022) | « Révision des droits de douane appliqués aux produits de consommation ou ayant un similaire fabriqué localement » | 20, 30 ou 36 % → 43 ou 50 % pour les chapitres et positions d'un tableau | — |
+
+: La mise en place et les cinq grandes réformes du tarif des droits de douane, 1959-2022. Les textes, date par date, sont aux registres des @sec-dd-mise-en-place, @sec-dd-reformes et @sec-dd-accords. {#tbl-dd-reformes .sm tbl-colwidths="[22,28,32,18]"}
+
+- **La sortie de l'union douanière, en 1959.** Le 1^er^ octobre 1959, la Tunisie quitte l'union douanière avec la France et applique son propre tarif (@sec-dd-1959).
+- **La compression des taux, en 1987 et 1988.** Deux lois de finances remplacent chaque taux du tarif de 1973 par un autre, selon une table de correspondance : le taux le plus élevé de la table passe à 45 % en 1987, puis à 43 % en 1988 (@sec-dd-1987-1988).
+- **La préférence européenne, depuis 1997.** Les droits sur les produits industriels originaires de la Communauté européenne baissent selon le calendrier de l'accord d'association de 1995 (@sec-dd-1997 ; @sec-dd-accords-ue).
+- **Des relèvements, en 2018 et en 2022.** Des produits passent de 20 à 30 % en 2018, puis de 20, 30 ou 36 % à 43 ou 50 % en 2022 (@sec-dd-2018 ; @sec-dd-2022).
+
+<!-- TODO (figures) : fig-dd-frise — frise de tête : union douanière et textes de 1955 ; tarif de 1959 ; tarif de 1973 ; réformes de 1987-1988, 1990, 1997, 2018, 2022 en points ; droit compensateur provisoire (1991-1997) en bande ; redevance (1988, 1994) ; code des douanes (2009) ; accords de libre-échange en points. -->
+
+## La mise en place : de l'union douanière au tarif de 1959 {#sec-dd-mise-en-place .domicile-unique}
+
+Le tarif tunisien entre en vigueur le 1^er^ octobre 1959. Il remplace le tarif du 29 décembre 1955, appliqué dans l'union douanière avec la France, que la Tunisie quitte le même jour. Une loi de 1973 le refond sur la même architecture.
+
+### Les antécédents : l'union douanière et les textes de 1955 {#sec-dd-antecedents}
+
+Avant le 1^er^ octobre 1959, la Tunisie forme une union douanière avec la France. Deux décrets du 29 décembre 1955 en portent les règles. Le premier porte « refonte et codification de la législation douanière » : c'est le code des douanes, en vigueur jusqu'au code de 2008 ([loi n° 2008-34, art. 3](#r-dd-code-2008)). Le second porte « mise en vigueur d'un nouveau tarif des douanes à l'importation et à l'exportation » ; la loi qui crée le tarif tunisien l'abroge ([loi n° 59-95, art. 4](#r-dd-ant-1959)).
+
+Une [taxe de formalités douanières](#g-taxe-formalites-douanieres), « instituée par le décret du 24 décembre 1936 portant fixation du budget de l'exercice de 1937 », est perçue en outre sur les déclarations, à l'importation et à l'exportation ; elle dure jusqu'en 1988 ([loi de finances pour 1988, art. 48](#r-dd-red-1988) ; @sec-dd-redevance).
+
+Le texte et les taux des deux décrets de 1955, et le régime douanier de l'union, ne sont pas identifiés ici. Ce que le tarif de 1959 reprend du tarif de 1955 et ce qu'il en écarte ne peut donc pas être établi.
+
+<!-- RECHERCHE r-douane-legislation-1955 : décrets du 29 décembre 1955 portant refonte et codification de la législation douanière et portant mise en vigueur d'un nouveau tarif des douanes (voir docs/recherches.yml) -->
+
+<!-- RECHERCHE r-douane-union-douaniere-protectorat : régime douanier du Protectorat avant le 1er octobre 1959, union douanière franco-tunisienne (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : redevances compensatrices de 1958-1982 (sucres, décrets n° 58-163 et 59-19 ; thé, décret n° 58-173 ; produits du chapitre 73, décret n° 67-99, suspendu par le décret n° 75-633) et leur abrogation par la LF 1982, art. 45-48 (p. 3039) : connues par les intitulés de jort_cache ; à lire au corpus avant toute mention. Décret du 29 décembre 1955 relatif au protocole d'application de l'union douanière (rectificatif au JORT n° 16 de 1957, p. 218) : vérifier le numéro du fascicule. -->
+
+### 1959 : le tarif tunisien et la fin de l'union douanière {#sec-dd-1959}
+
+Le 1^er^ octobre 1959, deux textes entrent en vigueur. [La loi n° 59-95 du 20 août 1959](#r-dd-ant-1959) fixe un tarif des droits à l'importation en deux colonnes : le [tarif minimum](#g-tarif-minimum-tarif-general), au tableau A annexé, « appliqué conformément aux stipulations des traités, conventions et arrangements internationaux », et le tarif général, « fixé au triple du tarif minimum ». Un tableau B fixe un tarif à l'exportation. Jusqu'au 30 septembre 1959, le régime antérieur demeure ; les produits que le nouveau tarif taxe davantage bénéficient alors d'une réduction égale à la différence.
+
+[La convention commerciale et tarifaire du 5 septembre 1959 avec la France](#r-dd-ant-1959-convention) s'ouvre sur ces mots : « Le régime de l'Union Douanière franco-tunisienne est abrogé et remplacé par les dispositions ci-après » (art. 1). Les deux pays s'accordent le traitement de la nation la plus favorisée, hors union douanière, zone de libre-échange et préférences de la zone franc (art. 2). La convention fixe des contingents et des admissions à des conditions particulières ; conclue pour un an, elle se renouvelle par tacite reconduction.
+
+Les taux des tableaux A et B ne sont pas publiés au *Journal officiel*, qui annonce leur vente en fascicule séparé : « Le Nouveau Tarif des Douanes à l'Importation et à l'Exportation », n° 59-5. Ce fascicule n'est pas identifié ici ; les taux du tarif de 1959 ne sont donc pas connus.
+
+<!-- RECHERCHE r-douane-tableaux-tarifs : tableaux des taux annexés aux lois n° 59-95, 73-45 et 89-113, publiés hors du Journal officiel, et tarif consolidé en vigueur (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : contexte de 1959 (négociation de la convention commerciale et tarifaire, débats) ; aucune source de l'époque lue. Lois n° 61-41 (JORT n° 27 de 1961, p. 918) et 62-68 (JORT n° 62 de 1962, pp. 1594-1595), modificatives du tarif de 1959 : à lire. Protocole additionnel de 1960 (décret-loi n° 60-28, décret n° 60-340). -->
+
+### 1973 : un nouveau tarif, la même architecture {#sec-dd-1973}
+
+Le 23 juillet 1973, [la loi n° 73-45](#r-dd-ant-1973) remplace le tarif de 1959 « à compter de sa promulgation ». Elle garde l'architecture de 1959 : tarif minimum au tableau A, tarif général au triple, tarif à l'exportation au tableau B. Elle ajoute une habilitation : « Des décrets pris sur proposition du Ministre des Finances peuvent procéder à des amendements à la nomenclature des produits en conformité avec la nomenclature internationale de Bruxelles » (art. 3). Comme en 1959, les tableaux de taux ne sont pas publiés au *Journal officiel*.
+
+Entre-temps, de 1973 à 1986, chaque loi de finances aménage le tarif et habilite le gouvernement à réduire ou à rétablir les droits par décret en cours d'année. En 1984, par exemple, l'État modifie le tarif de 1973 par un tableau « G », reconduit les suspensions et réductions jusqu'au 31 décembre 1984 et reçoit l'habilitation pour l'année ([loi de finances pour 1984](#r-dd-ant-1984)) ; la même loi majore d'un [demi-décime](#g-demi-decime) les droits à l'importation au profit de la Caisse générale de compensation (@sec-dd-autres).
+
+<!-- TODO (documentaliste) : sections douanières des LF 1971, 1977, 1981, 1982 (art. 40-42), 1983 (art. 86-88), 1985 (art. 44-48), 1986 (art. 31-32, 78) : aménagements du tarif, habilitations, taxe de formalités ; lisibles dans le corpus (un OCR des LF 1982-1986 éviterait la lecture page à page). Décrets d'amendement de la nomenclature n° 79-85 et 79-477. Contexte du tarif de 1973 (séance de l'Assemblée nationale du 20 juillet 1973). -->
+
+:::: {.chronologie-repliable titre="Tarif des droits de douane de 1959 à 1986 : lois, convention avec la France et loi de finances pour 1984, textes date par date"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-dd-ant-1959}[1^er^ octobre 1959]{.insecable} | **mise en place** | loi n° 59-95 du 20 août 1959 portant mise en vigueur d'un nouveau tarif des douanes à l'importation et à l'exportation [@loi-59-95-tarif-douanes, art. 1 à 4, pp. 885-886] | décret du 29 décembre 1955 (tarif) → tarif minimum (tableau A) ; tarif général « fixé au triple du tarif minimum » (art. 1, I) ; tarif à l'exportation (tableau B, art. 1, II) ; entrée en vigueur le 1^er^ octobre 1959 (art. 2) ; régime antérieur maintenu jusqu'au 30 septembre 1959, réduction de la différence pour les produits moins taxés (art. 3) ; décret du 29 décembre 1955 abrogé (art. 4) ; tableaux vendus en fascicule n° 59-5 (annonce p. 885) |
+| []{#r-dd-ant-1959-convention}[1^er^ octobre 1959]{.insecable} | **mise en place** | loi n° 59-110 du 28 septembre 1959 ; convention commerciale et tarifaire franco-tunisienne du 5 septembre 1959, publiée par le décret n° 59-283 [@loi-59-110-convention-france, convention, art. 1, 2 et 9, pp. 1036 et 1043-1044] | union douanière franco-tunisienne → abrogée (art. 1) ; traitement de la nation la plus favorisée, sauf union douanière, zone de libre-échange et préférences de la zone franc (art. 2) ; contingents (tableaux B et C), conditions tarifaires particulières (tableaux D et E) ; un an, renouvelable par tacite reconduction (art. 9) |
+| []{#r-dd-ant-1973}[23 juillet 1973]{.insecable} | étape (de la mise en place) | loi n° 73-45 du 23 juillet 1973 portant mise en vigueur d'un nouveau tarif des douanes à l'importation et à l'exportation [@loi-73-45-tarif-douanes, art. 1 à 4, p. 1134] | tarif de 1959 (loi n° 59-95, modifiée par les lois n° 61-41 et 62-68) → nouveau tarif minimum (tableau A), tarif général au triple, tarif à l'exportation (tableau B) (art. 1) ; « à compter de sa promulgation » (art. 2) ; amendements de nomenclature par décret selon la nomenclature de Bruxelles (art. 3) ; adoptée par l'Assemblée nationale le 20 juillet 1973 |
+| []{#r-dd-ant-1984}[1^er^ janvier 1984]{.insecable} | ajustement | loi n° 83-113, loi de finances pour 1984 [@lf-1984, art. 50 et 51, pp. 3378-3380] | tarif de 1973 modifié par le tableau « G » ; suspensions et réductions reconduites au 31 décembre 1984 (art. 50) ; réduction ou rétablissement des droits par décret en cours de gestion 1984 (art. 51) |
+
+: Les textes du tarif de 1959 à 1986, avec la portée de chaque texte. Une date de clause propre est reprise telle quelle. {#tbl-dd-registre-mise-en-place}
+
+<!-- TODO (documentaliste) : date d'effet de la LF 1984 : clause générale non lue ; à défaut, un jour franc après la publication du 30 décembre 1983 (1er janvier 1984), à confirmer au fascicule. -->
+
+::::
+
+## Les grandes réformes {#sec-dd-reformes .domicile-unique}
+
+Cinq réformes changent la structure du tarif ou son objectif : la compression des taux en 1987-1988, le tarif à l'importation seule en 1990, le calendrier de l'accord d'association avec l'Union européenne en 1997, les relèvements de 2018 et ceux de 2022. Entre elles, les lois de finances réduisent ou relèvent des taux, produit par produit ou par bandes de taux : ce sont des étapes ou des ajustements. La redevance de prestations douanières, née en 1988, le droit compensateur provisoire de 1991 et les accords ont leurs sections (@sec-dd-redevance, @sec-dd-compensateur, @sec-dd-accords).
+
+### 1987-1988 : la compression des taux {#sec-dd-1987-1988}
+
+Au 2 janvier 1987, puis au 2 janvier 1988, chaque taux du tarif minimum *ad valorem* de 1973 est remplacé par un autre, selon une table de correspondance. [La loi de finances pour 1987](#r-dd-t-1987) range ces articles sous la rubrique « Dispositions douanières — Aménagement du tarif » ; [celle pour 1988](#r-dd-t-1988), sous les rubriques « Aménagement du tarif » et « Institution d'une redevance de prestation douanière ».
+
+- **Avant → après, en 1987.** La table ramène les taux de « 0 % à 10 % » à 10 %, ceux « de 21 % à 25,5 % inclus » à 20 %, ceux de « 52,5 % et plus » à 45 %. Les taux de la table vont de 10 à 45 % ; les produits du tableau « M » en sont exclus. Les biens d'équipement sans similaires produits en Tunisie, sur liste, sont ramenés à 15 % au plus.
+- **Avant → après, en 1988.** La table laisse le taux nul, relève les taux bas (10 % → 17 %, 15 % → 22 %), ramène les taux de 20 à 29 % à 27 % et abaisse les plus élevés (45 % → 43 %). Les taux de la table vont de 17 à 43 %, outre le taux nul ; les biens d'équipement passent de 15 à 22 % (@tbl-dd-correspondances).
+- **Un minimum de perception.** En 1987, le [minimum de perception](#g-minimum-perception-douane) des droits en tarif minimum *ad valorem* est fixé à 10 % ; il s'applique nonobstant les exonérations que prévoient des lois de 1975 à 1985, des conventions et les articles 99 et 170 du code des douanes. En 1988, il passe à 15 % (@tbl-dd-minimum).
+- **La redevance.** La loi de finances pour 1988 supprime la taxe de formalités douanières de 1936 et institue une redevance de 1,5 % de la valeur en douane (@sec-dd-redevance).
+
+<!-- TODO (documentaliste) : contexte de 1987-1988 (lettres de politique, prêts d'ajustement de la Banque mondiale, VIIe plan, débats des lois de finances) : aucune source de l'époque lue ; ne pas écrire « ajustement structurel » sans elle. Ne pas présenter la table de 1988 comme l'incorporation de la taxe de formalités dans les taux sans source de l'époque. Minimum de perception après 1988 : à établir (LF 1989 et suivantes). -->
+
+Entre-temps, le 6 février 1987, la Tunisie ratifie la convention internationale sur le [système harmonisé](#g-systeme-harmonise) de désignation et de codification des marchandises, signée en son nom le 24 janvier 1986 ([loi n° 87-2](#r-dd-t-1987-sh)).
+
+### 1990 : un tarif à l'importation seule, en nomenclature du système harmonisé {#sec-dd-1990}
+
+Au 1^er^ janvier 1990, [la loi n° 89-113 du 30 décembre 1989](#r-dd-t-1990), « relative à l'application d'un nouveau tarif des droits de douanes à l'importation », remplace le tarif de 1973. Son intitulé est son seul énoncé d'objet ; son article 1^er^ dit : « Il n'existe pas de tarif de droit de douanes à l'exportation ».
+
+- **Avant → après.** Tarifs minimum et général, à l'importation et à l'exportation, en nomenclature de Bruxelles → un seul tarif, à l'importation, en deux parties : des « dispositions préliminaires » (règles générales, suspensions, réductions) et le « tableau des taux des droits de douanes dûs à l'importation ». La nomenclature d'importation sert aussi à déclarer les exportations.
+- **La nomenclature.** Le tarif suit le système harmonisé ; le code des douanes de 2008 rattache à cette loi les règles générales d'interprétation de la nomenclature (@sec-dd-code). Au 1^er^ janvier 1999, le numéro du tarif passe à neuf chiffres, sous la rubrique « Harmonisation de la nomenclature douanière tunisienne avec la nomenclature de l'Union Européenne » ([loi de finances pour 1999, art. 65](#r-dd-t-1999-nomenclature)) ; les lois de finances récentes désignent des positions à onze chiffres.
+- **Le texte du tarif en vigueur.** La loi n° 89-113 reste, au 1^er^ janvier 2026, le texte du tarif ; chaque loi de finances la modifie. Son tableau des taux n'est pas publié au *Journal officiel* (@sec-dd-1959).
+
+La Chambre des députés adopte la loi le 28 décembre 1989. Le 27 avril 1990, la Tunisie signe le protocole de son adhésion à l'Accord général sur les tarifs douaniers et le commerce (GATT), qu'elle ratifie le 28 juin 1990 ([loi n° 90-61](#r-dd-acc-1990-gatt)).
+
+<!-- TODO (documentaliste) : contexte du tarif de 1990 — débats de la Chambre des députés du 28 décembre 1989, exposé des motifs ; rapport éventuel avec la négociation d'adhésion au GATT, à établir par une source de l'époque. -->
+
+Entre-temps, de 1990 à 1997, un droit compensateur provisoire s'ajoute aux droits de douane sur une liste de produits à partir du 2 janvier 1991 (@sec-dd-compensateur). Les lois de finances pour 1993 et pour 1994 rangent leurs articles douaniers sous la rubrique « Protection de la compétitivité de la production nationale dans le cadre de la réforme économique », puis « Soutien de la compétitivité de la production nationale dans le cadre de la réforme économique » ([1993](#r-dd-t-1993) ; [1994](#r-dd-t-1994)). Au 1^er^ janvier 1994, sous la rubrique « Incorporation du prélèvement conjoncturel dans les droits de douane et aménagement des droits de douane », une nouvelle table relève de trois ou quatre points les taux de 17 à 40 % et laisse inchangés le taux nul, 10 % et 43 % ; les taux consolidés au GATT en sont exclus ([loi de finances pour 1994, art. 71](#r-dd-t-1994) ; @tbl-dd-correspondances). Le même jour, la redevance change d'assiette (@sec-dd-redevance). Le 23 janvier 1995, la Tunisie ratifie les accords de l'Uruguay Round ([loi n° 95-6](#r-dd-acc-1995-omc)).
+
+<!-- TODO (documentaliste) : LF 1990 (loi n° 89-115), articles sur la suspension des droits (pp. 2148-2149) ; LF 1992 (loi n° 91-98), art. 45-52 (pp. 2086-2087) ; LF 1995 (art. 93 et suivants, pp. 2050-2051), LF 1996 (pp. 2371 et 2375), LF 2000 à 2003 : bandes de taux de 1994 à 2004, lisibles dans le corpus. -->
+
+### 1997 : le calendrier de l'accord d'association avec l'Union européenne {#sec-dd-1997}
+
+Au 1^er^ janvier 1997, les droits sur les produits industriels originaires de la Communauté européenne baissent selon le calendrier de l'accord d'association signé le 17 juillet 1995 et ratifié par la Tunisie le 20 juin 1996 ([loi n° 96-49](#r-dd-acc-1996-ue)). [La loi de finances pour 1997](#r-dd-acc-1997) range l'article sous la rubrique « Démantèlement progressif des droits de douane pour la période 1996-2007 » : « Les dispositions fiscales figurant dans l'accord […] entrent en vigueur en considérant le 1er janvier 1997 comme étant le début de la deuxième année du calendrier d'application dudit accord ». Sous la rubrique « Suppression du droit compensateur provisoire », la même loi supprime ce droit à compter du 31 décembre 1997 ([même loi, art. 20](#r-dd-dcp-1997)).
+
+- **Avant → après.** Droit commun sur les produits industriels communautaires → droits supprimés, ou ramenés à une part décroissante du droit de base, selon l'annexe de l'accord où figure le produit (@tbl-dd-calendrier-ue).
+- **Ce que prévoit l'accord.** Une zone de libre-échange établie « pendant une période de transition de douze années au maximum à compter de la date d'entrée en vigueur » (art. 6). L'accord entre en vigueur le premier jour du deuxième mois qui suit les notifications des parties (art. 96).
+- **Ce qui naît.** Un [démantèlement tarifaire](#g-demantelement-tarifaire) réservé à une origine : à côté du tarif de droit commun, un tarif préférentiel pour les produits européens. D'autres accords de libre-échange suivent (@sec-dd-accords-autres).
+
+<!-- TODO (documentaliste) : date d'entrée en vigueur de l'accord d'association — 1er mars 1998 d'après la page de l'accord sur le site du Service européen pour l'action extérieure (https://www.eeas.europa.eu/node/11560_en, lue le 23 octobre 2026, source secondaire) ; lire la notice d'entrée en vigueur au JOCE avant de l'écrire. Contexte de 1997 (débats de la séance du 11 juin 1996, exposé des motifs de la LF 1997). -->
+
+Entre-temps, de 1997 à 2018, les lois de finances transposent des bandes de taux du [tarif autonome](#g-tarif-autonome) — le tarif de droit commun, ainsi nommé dans ces lois — en d'autres, plus basses (@tbl-dd-bandes). Au 1^er^ janvier 2004, les taux de 37 à 42 % passent à 36 %, ceux de 28 à 35 % à 27 % ([loi de finances pour 2004](#r-dd-t-2004)). Au 1^er^ janvier 2005, des produits agricoles, agro-alimentaires et textiles reçoivent les taux consolidés de l'Uruguay Round, réduits, de 22 à 150 % ([loi de finances pour 2005](#r-dd-t-2005)). Pour certains produits, les taux de 100 et 150 % passent à 73 % en [2007](#r-dd-t-2007), ceux de 73 % à 60 % en [2008](#r-dd-t-2008), ceux de 43 et 60 % à 36 % en [2009](#r-dd-t-2009). Au 1^er^ janvier 2011, le taux de 36 % passe à 30 % pour les produits des chapitres 25 à 97 ([loi de finances pour 2011](#r-dd-t-2011)). Au 1^er^ janvier 2016, sous une rubrique qui annonce la réduction des droits sur les matières premières, les produits semi-finis et les équipements, les taux de 30 et 27 % de ces chapitres passent à 20 %, ceux de 15 et 10 % à 0 % ([loi de finances pour 2016](#r-dd-t-2016)) : le tarif des chapitres 25 à 97 n'a plus alors que deux taux, 0 et 20 %, sous réserve des produits des annexes 2 et 3 de la même loi. Le code des douanes de 2008 s'applique depuis le 1^er^ janvier 2009 (@sec-dd-code), et des accords de libre-échange se succèdent (@sec-dd-accords-autres).
+
+### 2018 : des relèvements pour la balance commerciale {#sec-dd-2018}
+
+Au 1^er^ janvier 2018, [la loi de finances pour 2018](#r-dd-t-2018) relève des droits de douane sous la rubrique « Mesures tarifaires pour la maîtrise du déficit de la balance commerciale ».
+
+- **Avant → après.** « Sous réserve des taux des droits de douane consolidés », certains équipements et produits des chapitres 25 à 97 sont « relevés de 20 % à 30 % », et les produits de l'annexe 2 de la loi, « de 0 % à 15 % » ; les produits de l'annexe 1 reçoivent les taux qu'elle fixe. La réserve vise les [taux consolidés](#g-droit-consolide) dans le cadre de l'Accord général sur les tarifs douaniers et le commerce, que la table de 1994 excluait déjà. Les intrants sans similaires fabriqués localement restent exonérés.
+- **Ce qui naît.** Les produits d'origine turque de onze chapitres sont soumis aux droits dans la limite de 90 % du droit commun, pour deux ans ([même loi, art. 40](#r-dd-acc-turquie-2018) ; @sec-dd-accords-autres). Une taxe de contrôle par scanner frappe les unités de charge en admission temporaire ([même loi, art. 42](#r-dd-aut-2018-scanner) ; @sec-dd-autres).
+
+<!-- TODO (documentaliste) : contexte de 2018 (rapport sur le projet de budget 2018, débats) ; annexes 1 et 2 de la LF 2018 (listes de positions) à lire. -->
+
+Entre-temps, au 1^er^ janvier 2019, les droits des motocycles de la position 87.11 sont relevés, dont 30 % pour les cylindrées de 50 à moins de 125 cm³ ([loi de finances pour 2019](#r-dd-t-2019)). Au 1^er^ janvier 2020, les droits sur les produits turcs sont prolongés de deux ans (@sec-dd-accords-autres).
+
+### 2022 : des relèvements sur les produits de consommation {#sec-dd-2022}
+
+Au 1^er^ janvier 2022, [la loi de finances pour 2022](#r-dd-t-2022) relève les droits d'une liste de chapitres et de positions sous la rubrique « Révision des droits de douane appliqués aux produits de consommation ou ayant un similaire fabriqué localement ».
+
+- **Avant → après.** Les taux sont relevés « de 20 % ou 30 %, ou 36 % à 43 % ou 50 % » selon un tableau. 43 % vaut notamment pour les positions 25.15 à 25.23, 32.08, 32.09, 33.03 à 33.07, 34.01, 84.50, 85.16, 94.01 et 94.03 à 94.05 et pour les chapitres 42 et 65 à 70 ; 50 % notamment pour les chapitres 07, 08, 57, 61 et 62 et les positions 04.06, 17.04, 18.06, 20.01 à 20.09, 22.02 à 22.08 et 64.01 à 64.05. La position 080390 passe de 0 à 50 %, la position 851712001 de 0 à 20 %.
+- **Les intrants.** Les intrants sans similaires fabriqués localement restent exonérés.
+
+<!-- TODO (documentaliste) : contexte de 2022 (rapport sur le projet de budget 2022) ; le motif que donne la Cour des comptes explique la hausse de la recette, non l'objet de la loi. -->
+
+Après 2022, les lois de finances pour 2023 à 2026 modifient les droits de produits pris un à un (@sec-dd-etat).
+
+:::: {.chronologie-repliable titre="Champ et nomenclature du tarif des droits de douane : système harmonisé, tarif à l'importation seule, numéro du tarif, textes date par date, 1987-2006"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-dd-t-1987-sh}[6 février 1987]{.insecable} | étape (de la réforme de 1990) | loi n° 87-2 du 6 février 1987 portant ratification de la convention internationale sur le système harmonisé [@loi-87-2-systeme-harmonise, article unique, p. 191] | convention conclue à Bruxelles le 14 juin 1983, signée au nom de la Tunisie le 24 janvier 1986 → ratifiée ; adoptée par la Chambre des députés le 3 février 1987 |
+| []{#r-dd-t-1990}[1^er^ janvier 1990]{.insecable} | **rupture** | loi n° 89-113 du 30 décembre 1989 relative à l'application d'un nouveau tarif des droits de douanes à l'importation [@loi-89-113-tarif-douanes, art. 1 à 3, p. 2142] | tarif de 1973, à l'importation et à l'exportation → tarif qui « s'applique à l'importation », en deux parties, dispositions préliminaires et tableau des taux (art. 1, 1)) ; « Il n'existe pas de tarif de droit de douanes à l'exportation » (art. 1, 2)) ; entrée en vigueur le 1^er^ janvier 1990 (art. 2) ; loi n° 73-45 abrogée, textes d'application non contraires maintenus (art. 3) ; adoptée par la Chambre des députés le 28 décembre 1989 |
+| []{#r-dd-t-1999-nomenclature}[1^er^ janvier 1999]{.insecable} | étape (de la réforme de 1990) | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 65, p. 2508] | « Harmonisation de la nomenclature douanière tunisienne avec la nomenclature de l'Union Européenne » : « La 2ème colonne est réservée au n° du tarif à 9 chiffres » |
+| []{#r-dd-t-2006-72}[novembre 2006]{.insecable} | ajustement | loi n° 2006-72 du 28 octobre 2006 modifiant la loi relative au tarif des droits de douane à l'importation [@loi-2006-72-tarif-douanes, article unique, p. 3870] | § 7.16.2 des dispositions préliminaires récrit : autocars de transport de personnes handicapées incessibles pendant cinq ans, droits dus en cas de cession |
+
+: Les textes du champ et de la nomenclature du tarif, 1987-2006, avec la portée de chaque texte. Pour une loi de ratification, la date de la loi ; pour la loi n° 2006-72, le mois de sa publication, le jour d'effet n'étant pas établi. {#tbl-dd-registre-champ}
+
+<!-- TODO (documentaliste) : date d'effet de la loi n° 2006-72 (cinq jours après le dépôt au siège du gouvernorat de Tunis du JORT n° 88 du 3 novembre 2006). -->
+
+::::
+
+:::: {.chronologie-repliable titre="Taux du tarif des droits de douane, 1987-2022 : tables de correspondance, réductions et relèvements, textes date par date"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-dd-t-1987}[2 janvier 1987]{.insecable} | **rupture** (1987-1988) | loi n° 86-106, loi de finances pour 1987 [@lf-1987, art. 25 à 29, pp. 1612-1613] | « Dispositions douanières — Aménagement du tarif » : taux du tableau A de 1973 → table de correspondance, de 10 % (« 0 % à 10 % ») à 45 % (« 52,5 % et plus »), hors produits du tableau « M » ; suspensions et réductions échues reconduites au 31 décembre 1987 (art. 25) ; biens d'équipement sans similaires produits en Tunisie : 15 % au plus (art. 26) ; minimum de perception : 10 % (art. 27) ; matières premières des industries pharmaceutique et des pneumatiques : 10 % (art. 28) ; réduction ou rétablissement des droits par décret en 1987 (art. 29) ; exécutoire un jour franc après la publication du 31 décembre 1986 |
+| []{#r-dd-t-1988}[2 janvier 1988]{.insecable} | **rupture** (1987-1988) | loi n° 87-83, loi de finances pour 1988 [@loi-87-83-lf-1988, art. 52 à 57, pp. 1632-1633] | « Aménagement du tarif » : nouvelle table, 0 → 0 ; 10 → 17 ; 15 → 22 ; « de 20 à 29 » → 27 ; 45 → 43 % (art. 52) ; minimum de perception 10 → 15 % (art. 53) ; biens d'équipement 15 → 22 % (art. 54) ; dispositions préliminaires refondues, paragraphe D « encouragement à l'industrie » (art. 55-56) ; réduction ou rétablissement des droits par décret en 1988 (art. 57) ; exécutoire un jour franc après la publication du 31 décembre 1987 |
+| []{#r-dd-t-1991}[2 janvier 1991]{.insecable} | ajustement | loi n° 90-111, loi de finances pour 1991 [@lf-1991, art. 25 et 27 à 30, p. 2051] | tableau « L » de modifications du tarif (art. 25) ; matières premières et demi-produits, § 7.2.2.3 des dispositions préliminaires (art. 27) ; intrants agricoles de la position 38-08 (art. 28) ; suspensions prorogées au 31 décembre 1991 (art. 29) ; produits pharmaceutiques : suspension pour cinq ans (art. 30) ; exécutoire un jour franc après la publication du 31 décembre 1990 |
+| []{#r-dd-t-1993}[2 janvier 1993]{.insecable} | ajustement | loi n° 92-122, loi de finances pour 1993 [@lf-1993, art. 74, 116 et 122, pp. 1673 et 1678-1679] | « Protection de la compétitivité de la production nationale dans le cadre de la réforme économique » : tableau « L » (art. 74) ; biens d'équipement touristiques : droits à 10 % (art. 116) ; suspensions et réductions échues prorogées au 31 décembre 1993 (art. 122) ; exécutoire un jour franc après la publication du 31 décembre 1992 |
+| []{#r-dd-t-1994}[1^er^ janvier 1994]{.insecable} | étape (de la réforme de 1990) | loi n° 93-125, loi de finances pour 1994 [@lf-1994, art. 70, 71, 76 et 77, pp. 2201-2202] | « Soutien de la compétitivité de la production nationale dans le cadre de la réforme économique » : tableau « P » (art. 70) ; « Incorporation du prélèvement conjoncturel dans les droits de douane et aménagement des droits de douane » : 0 → 0 ; 10 → 10 ; 17 → 20 ; 20 → 24 ; 30 → 34 ; 36 → 40 ; 40 → 43 ; 43 → 43 %, taux consolidés au GATT exclus (art. 71) ; suspension, réduction ou rétablissement par décret en 1994 (art. 76) ; « applicables à compter du 1er janvier 1994 » (art. 77) |
+| []{#r-dd-t-1997}[1^er^ janvier 1997]{.insecable} | ajustement | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 18, 19 et 52, pp. 2580 et 2583] | équipements sans similaires fabriqués localement des art. 9, 30, 41, 50 et 56 du code d'incitations aux investissements : exonérés de droits de douane et de taxes d'effet équivalent (art. 18) et soumis à la TVA de 10 % (art. 19) ; suspension, réduction ou rétablissement des droits et du droit compensateur par décret en 1997 (art. 52) |
+| []{#r-dd-t-2004}[1^er^ janvier 2004]{.insecable} | étape | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 13, p. 3722] | « Réduction des taux de droits de douane » : 18 et 19 → 17 ; 21 → 20 ; 23 à 26 → 22 ; 28 à 35 → 27 ; 37 à 42 → 36 % |
+| []{#r-dd-t-2005}[1^er^ janvier 2005]{.insecable} | étape | loi n° 2004-90, loi de finances pour 2005 [@lf-2005, art. 28, p. 3435] | « Modification du tarif des droits de douane à l'importation » : chapitres 1, 2, 4 à 24, 29, 33, 35, 38, 41, 43 et 50 à 63, taux autonomes → taux consolidés de l'Uruguay Round, réduits : 25 → 22 ; 30, 32, 35 → 27 ; 62, 65, 72 → 60 ; 75, 76, 80, 90 → 73 ; 110, 120, 125 → 100 ; 170, 175, 180, 200 → 150 % ; « à partir du 1er janvier 2005 » |
+| []{#r-dd-t-2006}[1^er^ janvier 2006]{.insecable} | étape | loi n° 2005-106, loi de finances pour 2006 [@lf-2006, art. 33, p. 3600] | équipements, matières et articles du tableau « H » de la loi de finances pour 2000 et de l'annexe IV de l'accord d'association : 17, 20, 22 → 15 % |
+| []{#r-dd-t-2007}[1^er^ janvier 2007]{.insecable} | étape | loi n° 2006-85, loi de finances pour 2007 [@lf-2007, art. 23, p. 4385] | « en tarif autonome », certains équipements, matières et produits : 20 → 17 ; 100 → 73 ; 150 → 73 % |
+| []{#r-dd-t-2008}[1^er^ janvier 2008]{.insecable} | étape | loi n° 2007-70, loi de finances pour 2008 [@lf-2008, art. 14 à 16, p. 4359] | matières premières, demi-produits, équipements et autres produits : 22 → 17 ; 73 → 60 % (art. 14) ; tableaux « G » (exonération) et « H » (réduction) (art. 15-16) |
+| []{#r-dd-t-2009}[1^er^ janvier 2009]{.insecable} | étape | loi n° 2008-77, loi de finances pour 2009 [@lf-2009, art. 12, p. 4275] | « en tarif autonome » : 17 → 15 ; 43 → 36 ; 60 → 36 % |
+| []{#r-dd-t-2011}[1^er^ janvier 2011]{.insecable} | étape | loi n° 2010-58, loi de finances pour 2011 [@lf-2011, art. 10, p. 3462] | matières premières, produits semi-finis, équipements et autres produits des chapitres 25 à 97 : 36 → 30 % |
+| []{#r-dd-t-2016}[1^er^ janvier 2016]{.insecable} | étape | loi n° 2015-53, loi de finances pour 2016 [@lf-2016, art. 41 à 43, pp. 3607-3608, éd. ar.] | « التخفيض في المعاليم الديوانية المستوجبة عند توريد المواد الأولية والمواد نصف المصنّعة والتجهيزات » (réduction des droits de douane dus à l'importation des matières premières, des produits semi-finis et des équipements) : chapitres 25 à 97, 30 → 20 ; 27 → 20 ; 15 → 0 ; 10 → 0 % (art. 41) ; 20 % pour les produits de l'annexe 2 (art. 42) ; 0 ou 20 % pour ceux de l'annexe 3 (art. 43) |
+| []{#r-dd-t-2018}[1^er^ janvier 2018]{.insecable} | **rupture** | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 39, § 1 à 4, pp. 4279-4280] | « Mesures tarifaires pour la maîtrise du déficit de la balance commerciale » : taux de l'annexe 1 (§ 1) ; « sous réserve des taux des droits de douane consolidés », certains équipements et produits des chapitres 25 à 97 « relevés de 20 % à 30 % » (§ 2) ; produits de l'annexe 2 « de 0 % à 15 % » (§ 3) ; intrants sans similaires exonérés (§ 4) |
+| []{#r-dd-t-2019}[1^er^ janvier 2019]{.insecable} | étape (de la réforme de 2018) | loi n° 2018-56, loi de finances pour 2019 [@lf-2019, art. 81, pp. 5465-5466, éd. ar.] | « الترفيع في المعاليم الديوانية بالنسبة للدراجات النارية المجهزة بعجلتين » (relèvement des droits de douane sur les motocycles à deux roues) : position 87.11, taux relevés, dont 30 % pour les cylindrées de 50 à moins de 125 cm³ |
+| []{#r-dd-t-2022}[1^er^ janvier 2022]{.insecable} | **rupture** | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 57, pp. 3099-3100] | « Révision des droits de douane appliqués aux produits de consommation ou ayant un similaire fabriqué localement » : « de 20 % ou 30 %, ou 36 % à 43 % ou 50 % » selon un tableau de chapitres et de positions (§ 1) ; position 080390 : 0 → 50 % ; position 851712001 : 0 → 20 % (§ 2) ; intrants sans similaires exonérés |
+
+: Les textes des taux du tarif, 1987-2022, avec la portée de chaque texte. Pour une loi de finances sans clause générale d'application (1987, 1988, 1991, 1993), la date est celle à laquelle elle devient exécutoire, un jour franc après sa publication ; depuis 1994, le 1^er^ janvier, date d'application de la loi de finances. Les réductions de 2004 à 2016 sont des étapes qu'aucun texte ne rattache à une réforme. {#tbl-dd-registre-taux}
+
+<!-- TODO (documentaliste) : LF 2010, art. 22, et LF 2011, art. 11 (tableaux « G ») ; LF 2012 (loi n° 2011-7), art. 16-17 ; lecture complète des sections douanières des LF 2015 à 2017 et 2019 à 2026 ; annexes 2 et 3 de la LF 2016 et 1 et 2 de la LF 2018 ; tableau de la LF 2019, art. 81, lu en partie ; LF 2021 (suspension de la TVA et des droits de douane sur certains produits, intitulé seul) ; LF 2024, art. 40 (panneaux solaires, intitulé seul). Lisibles dans le corpus. -->
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré -->
+
+::::
+
+:::: {.chronologie-repliable titre="Tables de correspondance des taux du tarif de 1987, 1988 et 1994 : taux avant, taux après"}
+
+: Les trois tables de correspondance des taux du tarif : 1987 (art. 25 de la loi de finances pour 1987), 1988 (art. 52 de la loi de finances pour 1988) et 1994 (art. 71 de la loi de finances pour 1994). Les intitulés de taux sont ceux des textes. Les trois tables ne se chaînent pas : chacune s'applique au tarif tel qu'il est à sa date. Taux le plus élevé après transposition : 45 % (1987), 43 % (1988), 43 % (1994). La table de 1987 exclut les produits du tableau « M », celle de 1994 les taux consolidés au GATT. {#tbl-dd-correspondances .sm tbl-colwidths="[20,30,20,30]"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import tarifs
+tarifs.imprime("douane/tarifs-releves-droits-douane.csv", "correspondances")
+```
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres -->
+
+::::
+
+:::: {.chronologie-repliable titre="Étapes du tarif des droits de douane de 2004 à 2022 : produits visés, taux avant, taux après, par texte"}
+
+: Les articles des lois de finances de 2004 à 2022 qui transposent un taux du tarif en un autre, avec leur champ tel que le texte le dit. Chaque loi de finances retouche aussi d'autres produits, un à un : aucune ligne ne donne l'état complet du tarif à une date. {#tbl-dd-bandes .sm tbl-colwidths="[16,36,14,12,22]"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import tarifs
+tarifs.imprime("douane/tarifs-releves-droits-douane.csv", "bandes")
+```
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres -->
+
+::::
+
+:::: {.chronologie-repliable titre="Minimum de perception des droits de douane en tarif minimum ad valorem, 1987 et 1988 : taux"}
+
+: Le minimum de perception des droits de douane en tarif minimum *ad valorem* et le taux des biens d'équipement, 1987 et 1988. {#tbl-dd-minimum .sm tbl-colwidths="[18,28,22,32]"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import tarifs
+tarifs.imprime("douane/tarifs-releves-droits-douane.csv", "minimum-perception")
+```
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres -->
+
+::::
+
+## L'état du droit au 1^er^ janvier 2026 {#sec-dd-etat .domicile-unique}
+
+Au 1^er^ janvier 2026, les droits de douane sont dus à l'importation, aux taux du tarif de [la loi n° 89-113](#r-dd-t-1990) modifiée, selon la nomenclature du système harmonisé ; les lois de finances désignent les positions par un numéro à onze chiffres. Ils sont liquidés sur la valeur en douane ([code des douanes, art. 22 et 23](#r-dd-code-art22)), au tarif en vigueur à la date d'enregistrement de la déclaration en détail ([art. 125](#r-dd-code-art125)).
+
+Le tableau des taux du tarif n'est pas publié au *Journal officiel*, et le tarif consolidé en vigueur au 1^er^ janvier 2026 n'est pas identifié ici. Le taux le plus élevé en vigueur et la répartition des positions par taux ne peuvent donc pas être donnés ; les taux connus sont ceux que fixent les lois de finances pour les produits qu'elles énumèrent.
+
+<!-- RECHERCHE r-douane-tableaux-tarifs : tableaux des taux annexés aux lois n° 59-95, 73-45 et 89-113, publiés hors du Journal officiel, et tarif consolidé en vigueur (voir docs/recherches.yml) -->
+
+::: {.tableau-engendre}
+
+| Élément | Règle au 1^er^ janvier 2026 | Textes |
+|---|---|---|
+| Champ | importation seule ; aucun tarif à l'exportation | [loi n° 89-113, art. 1](#r-dd-t-1990) |
+| Nomenclature | système harmonisé ; numéro du tarif à neuf chiffres depuis 1999, positions à onze chiffres dans les lois de finances récentes | [loi de finances pour 1999, art. 65](#r-dd-t-1999-nomenclature) |
+| Liquidation | droits et taxes en vigueur à la date d'enregistrement de la déclaration en détail | [code des douanes, art. 125](#r-dd-code-art125) |
+| Chapitres 25 à 97 | 0 % et 20 %, sauf les produits des annexes 2 et 3 de la loi de finances pour 2016 et les relèvements postérieurs | [loi de finances pour 2016](#r-dd-t-2016) |
+| Produits des annexes de la loi de finances pour 2018 | 30 % pour les produits relevés de 20 % ; 15 % pour ceux de l'annexe 2, relevés de 0 % | [loi de finances pour 2018](#r-dd-t-2018) |
+| Produits de consommation de la liste de 2022 | 43 % ou 50 % | [loi de finances pour 2022](#r-dd-t-2022) |
+| Suspensions et réductions par décret | possibles, minimum légal de perception compris, pour l'année où elles sont prises | [code des douanes, art. 6](#r-dd-code-art6) |
+| Préférences | accord d'association avec l'Union européenne ; accords de libre-échange (@sec-dd-accords) | [code des douanes, art. 4](#r-dd-code-art4) |
+| Redevance de prestations douanières | 3 % des droits et taxes liquidés à l'importation, minimum 20 D par article ; 100 D par déclaration de transit terrestre | [1998](#r-dd-red-1998), [2014](#r-dd-red-2014), [2024](#r-dd-red-2024) |
+| Taxe de contrôle par scanner | 100 D par unité de charge de vingt pieds au plus, 200 D au-delà, en admission temporaire | [loi de finances pour 2018, art. 42](#r-dd-aut-2018-scanner) |
+| Taxes intérieures perçues par la douane | taxe sur la valeur ajoutée, droit de consommation, taxe au profit du fonds de développement de la compétitivité | [code des douanes, art. 297](#r-dd-code-art297) |
+
+: Les règles des droits de douane au 1^er^ janvier 2026. Les taux des lignes 4 à 6 valent pour les produits que chaque texte énumère, non pour tout le tarif ; les lois de finances pour 2023 à 2026 modifient en outre des produits un à un (registre replié ci-dessous). {#tbl-dd-etat .sm .libelle-long tbl-colwidths="[26,48,26]"}
+
+:::
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré -->
+
+<!-- TODO (documentaliste) : tarif en vigueur au 1er janvier 2026 (site de la direction générale des douanes) : taux maximal, nombre de taux, répartition des positions par taux ; ne pas reprendre au tableau les « 11 taux » de l'OMC (2025), rapport extérieur. Taux sur les produits agricoles des chapitres de la LF 2005 après 2009. Rattachement à l'article 1.5 % à l'exportation du pétrole brut (art. 51 de la LF 1988, rédaction de 1999) : vérifier qu'aucun texte postérieur ne le modifie. -->
+
+**La population couverte.** Les marchandises placées sous un régime suspensif ou introduites dans une zone franche ne supportent pas, ou pas en totalité, les droits (@sec-dd-code). La statistique du commerce extérieur de l'Institut national de la statistique sépare un « régime général » et un « régime off shore » : de 1998 à 2023, le régime off shore fait de 28 % à 36 % des importations de biens, le régime général le reste (@fig-df-commerce-regime). L'annuaire ne définit pas ces régimes.
+
+<!-- TODO (documentaliste) : définition statistique des régimes « général » et « off shore » de l'annuaire de l'INS ; importations par régime en 2024 et 2025 ; part des importations du régime général effectivement taxées (hors franchises et suspensions). -->
+
+:::: {.chronologie-repliable titre="Dispositions douanières des lois de finances 2022 à 2026 : produits, taux, textes"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-dd-t-2022-31}[1^er^ janvier 2022]{.insecable} | ajustement | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 31] | panneaux solaires : droits ramenés à 10 % |
+| []{#r-dd-t-2023}[1^er^ janvier 2023]{.insecable} | ajustement | décret-loi n° 2022-79, loi de finances pour 2023 [@lf-2023, art. 24, pp. 4075-4078, éd. ar.] | « التشجيع على استعمال الطاقات البديلة » (encouragement à l'usage des énergies alternatives) : chargeurs de véhicules électriques (85044055003, 853710) → droits de 10 % et TVA de 7 %, jusqu'au 31 décembre 2023 |
+| []{#r-dd-t-2025}[1^er^ janvier 2025]{.insecable} | ajustement | loi n° 2024-48, loi de finances pour 2025 [@lf-2025, art. 58, p. 6445, éd. ar.] | panneaux composites en aluminium : droits relevés à 30 % |
+| []{#r-dd-t-2026}[1^er^ janvier 2026]{.insecable} | ajustement | loi n° 2025-17, loi de finances pour 2026 [@lf-2026, art. 47, § 3 et 4, pp. 4240-4241, éd. ar.] | véhicules hybrides rechargeables (87.02, 87.04) : 0 % ; chargeurs (85044055003, 853710) : droits de 10 % et TVA de 7 % jusqu'au 31 décembre 2028 |
+| []{#r-dd-t-2026-lunettes}[1^er^ janvier 2026]{.insecable} | ajustement | loi n° 2025-17, loi de finances pour 2026 [@lf-2026, art. 72, p. 4249, éd. ar.] | « تخفيض المعاليم الديوانية الموظفة على منتجات قطاع النظارات » (réduction des droits de douane sur les produits de l'optique) : lunettes médicales, montures et leurs parties (9003, 9004) → 10 % |
+
+: Les dispositions douanières des lois de finances de 2022 à 2026 qui fixent un taux pour un produit, avec la portée de chaque texte. Les mesures sur les produits turcs (2020, 2024) sont au registre de la @sec-dd-accords-autres, la redevance (2024) à celui de la @sec-dd-redevance, l'intérêt de retard (2020) à celui de la @sec-dd-code. {#tbl-dd-registre-lf-recentes}
+
+<!-- TODO (documentaliste) : LF 2023, art. 63 (friperie, positions 6309 et 6310 : tableau lu en partie) ; LF 2025, tableau du lait en poudre (040210, 040221, 36 %, contingent de 2 000 t ; rattachement à l'art. 40 à confirmer) ; LF 2022, art. 70 (abandon des redevances inscrites aux registres des receveurs des douanes, intitulé seul) ; LF 2024, art. 40 (panneaux solaires, taux à relever) ; LF 2022, art. 31 : page à relever. Exonérations par bénéficiaire des LF 2025 et 2026 (Office de la famille, Pharmacie centrale, Office du commerce, ONAS, Compagnie des phosphates de Gafsa) : domicile à décider (dépenses fiscales). -->
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré -->
+
+::::
+
+## La redevance de prestations douanières {#sec-dd-redevance .domicile-unique}
+
+La redevance de prestations douanières est un prélèvement que la douane perçoit sur les déclarations en douane, en plus des droits. Depuis 1994, elle est assise sur le montant des droits et taxes liquidés à l'importation, ce qui comprend les taxes intérieures que la douane perçoit (@sec-dd-autres) ; son taux est de 3 % depuis 1998, et son minimum de 20 D par article depuis 2024. Son produit entre dans la rubrique « droits de douane » des recettes fiscales que publie le ministère des Finances (@sec-dd-longue-periode).
+
+**Ce qu'elle remplace : la taxe de formalités douanières.** Instituée en 1936, la taxe de formalités douanières est perçue à l'importation et à l'exportation. En 1984, 40 % de son produit à l'importation sont versés à la Caisse générale de compensation ; la même année, l'État en exempte les livres et le pétrole brut en entrepôt, et assoit au poids brut celle due à l'exportation ([loi de finances pour 1984](#r-dd-red-1984)). Les recettes de la Caisse sont exposées au livre [« La compensation »](../compensation/_institution.html#sec-compensation-financement). Au 2 janvier 1988, la taxe est supprimée, avec la redevance compensatrice sur les déclarations détaillées de 1981 ([loi de finances pour 1988, art. 48](#r-dd-red-1988)).
+
+- **1988 : la naissance.** Sous la rubrique « Institution d'une redevance de prestation douanière », la redevance est de 1,5 % de la valeur en douane, avec un minimum de 1 D par article, sur toutes les déclarations en détail, et sur l'exportation des produits d'une liste : huiles, boissons, tabacs, phosphates, pétrole brut, cuirs, fonte et acier, cuivre, aluminium ([loi de finances pour 1988, art. 51](#r-dd-red-1988)).
+- **1994 : une autre assiette.** La redevance devient « 2 % du montant des droits et taxes liquidés en douane sur toutes les déclarations en douane à l'importation avec un minimum de perception de cinq dinars par article » ; 10 % de son produit vont aux dépenses spécifiques des agents des douanes ([loi de finances pour 1994](#r-dd-red-1994)).
+- **De 1998 à 2024 : des étapes.** Le taux passe à 3 % en [1998](#r-dd-red-1998). En [1999](#r-dd-red-1999), la redevance à l'exportation ne vise plus que le pétrole brut, à 1,5 % de sa valeur. Le minimum passe à 10 D en [2013](#r-dd-red-2013). En [2014](#r-dd-red-2014), une redevance de 100 D frappe chaque déclaration de transit terrestre, et l'affectation de 10 % prend fin : tout le produit va au budget de l'État. Le minimum passe à 20 D en [2024](#r-dd-red-2024).
+
+: La redevance de prestations douanières : assiette, taux et minimum de perception, 1988-2024. {#tbl-dd-redevance .sm tbl-colwidths="[16,46,16,22]"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import tarifs
+tarifs.imprime("douane/tarifs-releves-droits-douane.csv", "redevance")
+```
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres -->
+
+<!-- TODO (documentaliste) : taxe de formalités douanières de 1971 à 1987 (LF 1971, art. 27 ; LF 1977, art. 38 ; LF 1981, art. 20 et 25 ; LF 1982, art. 42 ; affectation de 40 % : LF 1983, art. 86 ; LF 1985, art. 48 ; LF 1986, art. 78) : taux et assiette, lisibles dans le corpus. Décrets de suspension de la redevance à l'exportation n° 98-1870 et 98-1983 (intitulés seuls). -->
+
+:::: {.chronologie-repliable titre="Taxe de formalités douanières et redevance de prestations douanières : textes date par date, 1984-2024"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-dd-red-1984}[1^er^ janvier 1984]{.insecable} | antécédent | loi n° 83-113, loi de finances pour 1984 [@lf-1984, art. 48 et 53 à 55, pp. 3378-3380] | « Reconduction du prélèvement de 40 % du produit de la Taxe de Formalités Douanières » : « Est transféré à concurrence de 40 % le produit de la taxe de formalités douanières à l'importation pour la gestion 1984 au profit de la Caisse Générale de Compensation » (art. 48) ; exemptions (livres, pétrole brut en entrepôt) et assiette au poids brut à l'exportation (art. 53-55) |
+| []{#r-dd-red-1988}[2 janvier 1988]{.insecable} | **rupture** (naissance) | loi n° 87-83, loi de finances pour 1988 [@loi-87-83-lf-1988, art. 48 et 51, p. 1632] | « Suppression de la taxe et de la redevance sur les formalités douanières à l'importation et à l'exportation » : taxe de formalités douanières instituée par le décret du 24 décembre 1936 et redevance compensatrice sur les déclarations détaillées (LF 1981, art. 25) supprimées (art. 48) ; « Institution d'une redevance de prestation douanière » : 1,5 % de la valeur en douane, minimum 1 D par article, sur toutes les déclarations en détail et sur l'exportation des produits d'un tableau (art. 51) ; exécutoire un jour franc après la publication du 31 décembre 1987 |
+| []{#r-dd-red-1994}[1^er^ janvier 1994]{.insecable} | **rupture** | loi n° 93-125, loi de finances pour 1994 [@lf-1994, art. 75, p. 2202] | 1,5 % de la valeur en douane → « 2 % du montant des droits et taxes liquidés en douane sur toutes les déclarations en douane à l'importation avec un minimum de perception de cinq dinars par article » ; 10 % du produit affectés aux dépenses spécifiques des agents des douanes |
+| []{#r-dd-red-1998}[1^er^ janvier 1998]{.insecable} | étape (de la réforme de 1994) | loi n° 97-88, loi de finances pour 1998 [@lf-1998, art. 43, p. 2439] | « Relèvement du taux de la redevance de prestations douanières à l'importation » : 2 → 3 % des droits et taxes liquidés, minimum de cinq dinars par article de déclaration |
+| []{#r-dd-red-1999}[1^er^ janvier 1999]{.insecable} | étape (de la réforme de 1994) | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 32, p. 2503] | « Suppression de la redevance de prestations douanières applicable à certains produits à l'exportation… » : art. 51 de la LF 1988 récrit ; exportation : pétrole brut (27-09) seul, 1,5 % de la valeur en douane, minimum 1 D ; importation : 3 % des droits et taxes liquidés, minimum 5 D ; 10 % affectés |
+| []{#r-dd-red-2013}[1^er^ janvier 2013]{.insecable} | étape (de la réforme de 1994) | loi n° 2012-27, loi de finances pour 2013 [@lf-2013, art. 57, p. 17] | « Mise à jour du montant de la redevance de prestations douanières à l'importation » : minimum « cinq » → « dix » dinars |
+| []{#r-dd-red-2014}[1^er^ janvier 2014]{.insecable} | étape (de la réforme de 1994) | loi n° 2013-54, loi de finances pour 2014 [@lf-2014, art. 16, p. 3669] | « Transfert du rendement total de la redevance des prestations douanières au budget de l'Etat et révision de son montant au titre des déclarations en douane relatives aux opérations de transit terrestre des marchandises » : « cent dinars par déclaration en douane de transit terrestre de marchandises » ; affectation de 10 % abrogée |
+| []{#r-dd-red-2024}[1^er^ janvier 2024]{.insecable} | étape (de la réforme de 1994) | loi n° 2023-13, loi de finances pour 2024 [@lf-2024, art. 66] | « تحيين مبلغ الأتاوة على الخدمات الديوانية عند التوريد » (mise à jour du montant de la redevance de prestations douanières à l'importation) : minimum « عشرة دنانير » (dix dinars) → « عشرين دينارا » (vingt dinars) |
+
+: Les textes de la taxe de formalités douanières et de la redevance de prestations douanières, 1984-2024, avec la portée de chaque texte. {#tbl-dd-registre-redevance}
+
+<!-- TODO (documentaliste) : page de la LF 2024, art. 66, dans l'édition arabe (p. 6454 environ) à confirmer à l'image. -->
+
+::::
+
+## Le droit compensateur provisoire, 1991-1997 {#sec-dd-compensateur .domicile-unique}
+
+Le [droit compensateur provisoire](#g-droit-compensateur-provisoire) s'ajoute aux droits de douane de 1991 à 1997, sur une liste de matières et de produits. Il est créé au 2 janvier 1991, sous la rubrique « Institution d'un droit compensateur provisoire » : « dû à l'importation de certains matières et produits quelle que soit leur origine », il est liquidé et contrôlé comme les droits de douane ; ses produits et ses taux sont au tableau « M » ([loi de finances pour 1991](#r-dd-dcp-1991)). La même loi permet de le suspendre, de le réduire ou de le rétablir par décret en 1991.
+
+- **1993.** La liste des produits change, et les taux sont « réduits de dix points » ([loi de finances pour 1993](#r-dd-dcp-1993)).
+- **1994.** Le droit prend le nom de « droit complémentaire provisoire », et ses taux baissent encore de dix points ([loi de finances pour 1994](#r-dd-dcp-1994)).
+- **1997.** Le droit « est supprimé à compter du 31 décembre 1997 », par la loi qui met en œuvre le calendrier de l'accord d'association ([loi de finances pour 1997, art. 20](#r-dd-dcp-1997) ; @sec-dd-1997).
+
+Depuis 2009, le code des douanes permet de relever les droits par décret selon la législation sur les mesures de sauvegarde ([code des douanes, art. 6](#r-dd-code-art6)).
+
+<!-- TODO (documentaliste) : taux et produits des tableaux « M », « P » et « N » (LF 1991, 1992, 1993, 1994) ; LF 1992 (loi n° 91-98), art. 45-52 ; contexte de 1991 (aucune source de l'époque lue). Législation sur les pratiques déloyales et la sauvegarde : décret n° 93-695, décret n° 94-1745, loi n° 98-106 (JORT n° 102 de 1998, pp. 2451-2454), loi n° 99-9 (JORT n° 15 de 1999, pp. 279-283), décret n° 2000-477 — lisibles dans le corpus, à lire avant mention. -->
+
+:::: {.chronologie-repliable titre="Droit compensateur provisoire, puis droit complémentaire provisoire : textes date par date, 1991-1997"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-dd-dcp-1991}[2 janvier 1991]{.insecable} | **rupture** (naissance) | loi n° 90-111, loi de finances pour 1991 [@lf-1991, art. 26 et 31, p. 2051] | — → « Est institué un droit compensateur provisoire dû à l'importation de certains matières et produits quelle que soit leur origine », produits et taux au tableau « M », liquidé et contrôlé comme les droits de douane (art. 26) ; suspension, réduction ou rétablissement du droit et des droits de douane par décret en 1991 (art. 31) ; exécutoire un jour franc après la publication du 31 décembre 1990 |
+| []{#r-dd-dcp-1993}[2 janvier 1993]{.insecable} | étape | loi n° 92-122, loi de finances pour 1993 [@lf-1993, art. 75 à 77, pp. 1673-1674] | « Modification de la liste des produits soumis au droit compensateur provisoire » : tableau « M » (art. 75) ; « Sont réduits de dix points les taux du droit compensateur provisoire mentionnés au tableau "P" » de la LF 1992 (art. 76) ; suspension par décret en 1993 (art. 77) ; exécutoire un jour franc après la publication du 31 décembre 1992 |
+| []{#r-dd-dcp-1994}[1^er^ janvier 1994]{.insecable} | étape | loi n° 93-125, loi de finances pour 1994 [@lf-1994, art. 68 et 69, p. 2201] | « Droit complémentaire provisoire » : droit compensateur → « droit complémentaire provisoire » (tableau « N »), taux réduits de dix points |
+| []{#r-dd-dcp-1997}[31 décembre 1997]{.insecable} | fin | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 20, p. 2580] | « Suppression du droit compensateur provisoire » : « Est supprimé à compter du 31 décembre 1997 le droit compensateur provisoire » |
+
+: Les textes du droit compensateur provisoire, 1991-1997, avec la portée de chaque texte. {#tbl-dd-registre-compensateur}
+
+::::
+
+## Les accords commerciaux {#sec-dd-accords .domicile-unique}
+
+Les marchandises importées sont soumises au tarif « sauf dérogations expresses prévues par les traités et conventions commerciaux en vigueur » ([code des douanes, art. 4](#r-dd-code-art4)). Ces dérogations dépendent de l'[origine des marchandises](#g-origine-des-marchandises) : les droits sont perçus selon l'origine, qui est le pays où la marchandise a été entièrement obtenue ou a subi une transformation substantielle ([art. 21](#r-dd-code-art21)). Depuis 1997, la principale est l'accord d'association avec l'Union européenne ; d'autres accords de libre-échange suivent, avec les pays arabes, l'Association européenne de libre-échange, la Turquie et l'Afrique.
+
+### L'accord d'association avec l'Union européenne {#sec-dd-accords-ue}
+
+L'accord d'association entre la Tunisie et les Communautés européennes et leurs États membres est signé à Bruxelles le 17 juillet 1995. La Tunisie le ratifie le 20 juin 1996 et le publie par un décret du 18 mai 1998, l'accord paraissant dans un fascicule annexé au *Journal officiel* ([loi n° 96-49 et décret n° 98-1273](#r-dd-acc-1996-ue)). Il remplace l'accord de coopération signé à Tunis le 25 avril 1976 (art. 96).
+
+- **Une zone de libre-échange en douze ans au plus** (art. 6). Aucun droit nouveau ni aucune [taxe d'effet équivalent](#g-taxe-effet-equivalent) ne peut être institué (art. 8). Les produits industriels tunisiens entrent dans la Communauté en exemption (art. 9).
+- **Un calendrier pour les produits industriels communautaires importés en Tunisie** (art. 11). Hors des annexes 3 à 6, les droits sont supprimés dès l'entrée en vigueur. Pour les produits des annexes 3, 4 et 5, ils baissent par étapes, en part du droit de base, jusqu'à leur suppression, cinq ou douze ans après l'entrée en vigueur (@tbl-dd-calendrier-ue). Le droit de base est le droit « effectivement appliqué à l'égard de la Communauté, le 1er janvier 1995 », remplacé par toute réduction appliquée ensuite à tous les pays. Les produits de l'annexe 6 sont hors calendrier ; leur régime est réexaminé quatre ans après l'entrée en vigueur (art. 12). Les droits de douane à caractère fiscal sont aussi supprimés (art. 13).
+- **Des droits majorés à titre exceptionnel** (art. 14). Pour des industries naissantes ou des secteurs en restructuration, la Tunisie peut majorer ou rétablir des droits, à 25 % *ad valorem* au plus, sur 15 % au plus des importations industrielles venant de la Communauté, pour cinq ans au plus et au plus tard jusqu'au terme des douze ans.
+- **Les produits agricoles** relèvent de protocoles ; leur libéralisation est à examiner à partir du 1^er^ janvier 2000 (art. 15 à 18).
+
+: Calendrier de démantèlement des droits de l'accord d'association avec l'Union européenne, pour les produits industriels originaires de la Communauté : part du droit de base, par annexe, en années après l'entrée en vigueur de l'accord (art. 11, § 2 et 3). Les annexes sont des listes de codes de la nomenclature combinée, sans intitulé dans l'accord. Un tiret : aucune étape ou plus de droit. {#tbl-dd-calendrier-ue .sm tbl-colwidths="[25,25,25,25]"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../../scripts")
+import tarifs
+tarifs.imprime("douane/tarifs-releves-droits-douane.csv", "calendrier-ue")
+```
+
+Le calendrier compte en années après l'entrée en vigueur. Une seule correspondance avec l'année civile est donnée par les textes : la loi de finances pour 1997 fait du 1^er^ janvier 1997 le début de la deuxième année du calendrier, sous la rubrique « Démantèlement progressif des droits de douane pour la période 1996-2007 » ([loi de finances pour 1997, art. 21](#r-dd-acc-1997)). Les décrets qui ont appliqué ce calendrier aux produits d'origine communautaire, année après année, ne sont pas identifiés ici ; les taux effectivement appliqués à ces produits de 1996 à 2007 ne peuvent donc pas être donnés.
+
+<!-- RECHERCHE r-douane-decrets-demantelement-ue : décrets appliquant aux produits d'origine communautaire le calendrier de démantèlement de l'accord d'association, 1996-2007 (voir docs/recherches.yml) -->
+
+Le tarif tunisien intègre l'accord par plusieurs lois de finances. Au 1^er^ janvier 1999, les droits peuvent être « relevés ou rétablis totalement ou partiellement » par décret, dans le cadre des mesures tarifaires exceptionnelles des conventions, et les ventes sur le marché local des [entreprises totalement exportatrices](#g-entreprise-totalement-exportatrice) bénéficient des taux de démantèlement des articles 10 et 11 de l'accord ([loi de finances pour 1999](#r-dd-acc-1999)). Au 1^er^ janvier 2004, les intrants sans similaires fabriqués localement sont exonérés lorsque le produit fini similaire bénéficie, au titre de l'accord, d'un taux de démantèlement inférieur à 10 % ([loi de finances pour 2004](#r-dd-acc-2004)). Au 1^er^ janvier 2006, les équipements, matières et articles de l'annexe IV de l'accord passent à 15 % ([loi de finances pour 2006](#r-dd-acc-2006)). Le 31 décembre 2025, la Tunisie approuve un amendement de l'accord adopté par le conseil d'association le 22 janvier 2025 ([loi organique n° 2025-21](#r-dd-acc-2025-ue)).
+
+<!-- TODO (documentaliste) : objet de l'amendement de 2025 (décision n° 01/2025, annexe de la loi organique n° 2025-21) ; accord CEE de 1969 (décret n° 69-293, JORT n° 31, pp. 1020-1043) et accord de coopération de 1976 ; protocoles agricoles (loi n° 2001-25, décret n° 2001-1724 ; loi n° 2008-24 ; lois organiques n° 2020-32 et 2021-32) ; fascicule annexé au JORT n° 49 de 1998 (texte tunisien de l'accord). -->
+
+### Les autres accords de libre-échange {#sec-dd-accords-autres}
+
+Après l'accord avec l'Union européenne, la Tunisie conclut des accords de libre-échange avec la [Jordanie](#r-dd-acc-1998-jordanie) (1998), l'[Égypte](#r-dd-acc-1999-egypte) (1998), le [Maroc](#r-dd-acc-1999-maroc) (1999), la [Libye](#r-dd-acc-2001-libye) (2001), l'[Irak](#r-dd-acc-2001-irak) (2001), la [Syrie](#r-dd-acc-2004-syrie) (2002), les États arabes méditerranéens de l'[accord d'Agadir](#r-dd-acc-2004-agadir) (2004), la [Turquie](#r-dd-acc-2005-turquie) (2004) et les États de l'[Association européenne de libre-échange](#r-dd-acc-2005-aele) (2004) ; elle était liée depuis 1991 aux États de l'[Union du Maghreb arabe](#r-dd-acc-1991-uma) par une convention commerciale et tarifaire. Elle adhère au [marché commun de l'Afrique orientale et australe](#r-dd-acc-2019-comesa) en 2019 et approuve en 2020 l'accord portant création de la [zone de libre-échange continentale africaine](#r-dd-acc-2020-zlecaf) (@tbl-dd-accords). Les années sont celles de la signature. Les lois qui les ratifient ou les approuvent ne comptent qu'un article ; le texte des conventions, leurs listes de produits et leurs calendriers n'y sont pas reproduits.
+
+<!-- TODO (documentaliste) : dates d'entrée en vigueur et calendriers de démantèlement des accords autres que l'accord avec l'Union européenne ; conventions arabes (lois n° 81-41, 2007-11 ; UMA, produits agricoles, loi n° 91-1 ; adhésion de nouveaux États à l'accord d'Agadir, loi organique n° 2018-6), connues par les intitulés de jort_cache ; date de signature du protocole avec l'Irak (colonne illisible). -->
+
+**Les produits turcs : des droits rétablis à titre exceptionnel, depuis 2018.** Au 1^er^ janvier 2018, sous la rubrique « Mesures tarifaires exceptionnelles sur une liste de produits importés d'origine turque », les produits d'origine turque des chapitres 33, 34, 40, 48, 61 à 64, 72, 76, 84 et 85 de la deuxième liste de l'accord sont « soumis aux droits de douane dans la limite de 90 % des droits appliqués selon le droit commun », pour deux ans, puis à une suppression sur trois ans ([loi de finances pour 2018, art. 40](#r-dd-acc-turquie-2018)). Au 1^er^ janvier 2020, la durée est portée à quatre ans à compter du 1^er^ janvier 2018 ([loi de finances pour 2020](#r-dd-acc-turquie-2020)). Au 1^er^ janvier 2024, les produits d'une annexe sont soumis aux droits dans la limite de 75 % du droit commun, pour trois ans, puis à une suppression progressive sur deux ans à partir de la quatrième année ([loi de finances pour 2024](#r-dd-acc-turquie-2024)).
+
+:::: {.chronologie-repliable titre="Accords commerciaux et de libre-échange : partenaires, signatures, lois d'approbation, 1959-2025"}
+
+::: {.tableau-engendre}
+
+| Partenaire | Signature | Texte tunisien | Objet |
+|---|---|---|---|
+| []{#r-dd-acc-1959}France | Tunis, 5 septembre 1959 | loi n° 59-110 du 28 septembre 1959 [@loi-59-110-convention-france, p. 1036] | convention commerciale et tarifaire : fin de l'union douanière, traitement de la nation la plus favorisée |
+| []{#r-dd-acc-1990-gatt}Accord général sur les tarifs douaniers et le commerce | Genève, 27 avril 1990 | loi n° 90-61 du 28 juin 1990 [@loi-90-61-gatt, article unique, p. 839] | protocole d'adhésion de la Tunisie |
+| []{#r-dd-acc-1991-uma}Union du Maghreb arabe | Ras Lanouf, 10 mars 1991 | loi n° 91-46 du 22 juillet 1991 [@loi-91-46-uma-convention-commerciale, article unique, p. 1344] | convention commerciale et tarifaire |
+| []{#r-dd-acc-1995-omc}Accords de l'Uruguay Round | Marrakech, 15 avril 1994 | loi n° 95-6 du 23 janvier 1995 [@loi-95-6-uruguay-round, article unique, p. 271] | ratification ; publication par le décret n° 98-1009 du 5 mai 1998 |
+| []{#r-dd-acc-1996-ue}Communautés européennes et leurs États membres | Bruxelles, 17 juillet 1995 | loi n° 96-49 du 20 juin 1996 [@loi-96-49-accord-association-ue, article unique, p. 1311] ; décret n° 98-1273 du 18 mai 1998 [@decret-98-1273-publication-accord-ue, p. 1326] ; accord [@accord-association-ue-tunisie-1995, art. 6, 8 à 18 et 96, pp. L 97/4-7 et L 97/21] | accord d'association : zone de libre-échange, calendrier de démantèlement (art. 11) |
+| []{#r-dd-acc-1998-jordanie}Jordanie | Tunis, 22 avril 1998 | loi n° 98-80 du 2 novembre 1998 [@loi-98-80-ale-jordanie, article unique, p. 2181] | zone de libre-échange |
+| []{#r-dd-acc-1999-egypte}Égypte | Le Caire, 5 mars 1998 | loi n° 99-17 du 1^er^ mars 1999 [@loi-99-17-ale-egypte, article unique, p. 347] | libre-échange ; règles d'origine |
+| []{#r-dd-acc-1999-maroc}Maroc | Rabat, 16 mars 1999 | loi n° 99-34 du 30 avril 1999 [@loi-99-34-ale-maroc, article unique, p. 683] | libre-échange ; règles d'origine et coopération douanière |
+| []{#r-dd-acc-2001-libye}Libye | Tripoli, 14 juin 2001 | loi n° 2001-114 du 26 novembre 2001 [@loi-2001-114-ale-libye, article unique, p. 3995] | zone de libre-échange |
+| []{#r-dd-acc-2001-irak}Irak | — | loi n° 2001-115 du 26 novembre 2001 [@loi-2001-115-ale-irak, article unique, p. 3995] | protocole exécutif pour l'établissement d'une zone de libre-échange |
+| []{#r-dd-acc-2004-syrie}Syrie | Damas, 15 avril 2002 | loi n° 2004-82 du 6 décembre 2004 [@loi-2004-82-ale-syrie, article unique, p. 3336] | zone de libre-échange |
+| []{#r-dd-acc-2004-agadir}États arabes méditerranéens (accord d'Agadir) | Rabat, 25 février 2004 | loi n° 2004-58 du 27 juillet 2004 [@loi-2004-58-accord-agadir, article unique, p. 1940] | zone de libre-échange |
+| []{#r-dd-acc-2005-turquie}Turquie | 25 novembre 2004 | loi n° 2005-36 du 11 mai 2005 [@loi-2005-36-ale-turquie, article unique, p. 1061] | convention d'association, zone de libre-échange |
+| []{#r-dd-acc-2005-aele}États de l'Association européenne de libre-échange | Genève, 17 décembre 2004 | loi n° 2005-34 du 11 mai 2005 [@loi-2005-34-ale-aele, article unique, p. 1061] | accord de libre-échange et protocoles |
+| []{#r-dd-acc-2019-comesa}Marché commun de l'Afrique orientale et australe | — | loi organique n° 2019-33 du 10 avril 2019 [@loi-org-2019-33-comesa, article unique, p. 980] | adhésion |
+| []{#r-dd-acc-2020-zlecaf}Zone de libre-échange continentale africaine | Kigali, 21 mars 2018 | loi organique n° 2020-34 du 7 août 2020 [@loi-org-2020-34-zlecaf, article unique, p. 1727] | création de la zone |
+| []{#r-dd-acc-2025-aele}États de l'Association européenne de libre-échange | décision mixte n° 01/2024 du 9 octobre 2024 | loi organique n° 2025-20 du 31 décembre 2025 [@loi-org-2025-20-amendement-aele, article unique, p. 3680] | amendement du protocole B : produits originaires, coopération administrative |
+| []{#r-dd-acc-2025-ue}Union européenne | décision du conseil d'association n° 01/2025 du 22 janvier 2025 | loi organique n° 2025-21 du 31 décembre 2025 [@loi-org-2025-21-amendement-accord-ue, article unique, pp. 3680-3681] | amendement de l'accord d'association |
+
+: Les accords commerciaux et de libre-échange de la Tunisie, 1959-2025 : partenaires, signatures et lois de ratification ou d'approbation. Un tiret : date de signature non donnée par la loi. {#tbl-dd-accords .sm .libelle-long tbl-colwidths="[24,18,34,24]"}
+
+:::
+
+::::
+
+:::: {.chronologie-repliable titre="Accord d'association et produits turcs dans les lois de finances : calendrier, intrants, mesures exceptionnelles, textes date par date, 1997-2024"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-dd-acc-1997}[1^er^ janvier 1997]{.insecable} | **rupture** | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 21, p. 2580] | « Démantèlement progressif des droits de douane pour la période 1996-2007 » : « Les dispositions fiscales figurant dans l'accord ratifié par la loi n° 96-49 du 20 juin 1996 […] entrent en vigueur en considérant le 1er janvier 1997 comme étant le début de la deuxième année du calendrier d'application dudit accord » |
+| []{#r-dd-acc-1999}[1^er^ janvier 1999]{.insecable} | étape (de la réforme de 1997) | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 34 et 35, pp. 2503-2504] | § 8 des dispositions préliminaires : taux « relevés ou rétablis totalement ou partiellement » par décret, conformément aux conventions internationales relatives aux mesures tarifaires exceptionnelles (art. 34) ; ventes locales des entreprises totalement exportatrices aux « taux de démantèlement prévus aux articles 10 et 11 de l'accord » (art. 35) |
+| []{#r-dd-acc-2004}[1^er^ janvier 2004]{.insecable} | étape (de la réforme de 1997) | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 14, p. 3722] | « Soutien de la compétitivité de l'industrie locale » : § 7.26, intrants sans similaires locaux exonérés lorsque le produit fini similaire bénéficie d'un taux de démantèlement inférieur à 10 % au titre des articles 10 et 11 de l'accord |
+| []{#r-dd-acc-2006}[1^er^ janvier 2006]{.insecable} | étape | loi n° 2005-106, loi de finances pour 2006 [@lf-2006, art. 33, p. 3600] | équipements, matières et articles de l'annexe IV de l'accord et du tableau « H » de la loi de finances pour 2000 : 17, 20, 22 → 15 % |
+| []{#r-dd-acc-turquie-2018}[1^er^ janvier 2018]{.insecable} | **rupture** (produits turcs) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 40, p. 4280] | « Mesures tarifaires exceptionnelles sur une liste de produits importés d'origine turque » : produits des chapitres 33, 34, 40, 48, 61 à 64, 72, 76, 84 et 85 de la deuxième liste de l'accord → droits « dans la limite de 90 % des droits appliqués selon le droit commun », deux ans à partir du 1^er^ janvier 2018, puis suppression sur trois ans |
+| []{#r-dd-acc-turquie-2020}[1^er^ janvier 2020]{.insecable} | étape (produits turcs) | loi n° 2019-78, loi de finances pour 2020 [@lf-2020, art. 52, pp. 4709-4710, éd. ar.] | « التمديد في تطبيق المعاليم الديوانية الموظفة إستثنائيا على المنتجات ذات المنشأ التركي بسنتين إضافيتين » (prolongation de deux ans des droits appliqués à titre exceptionnel aux produits d'origine turque) : deux ans → quatre ans à partir du 1^er^ janvier 2018, puis suppression sur trois ans |
+| []{#r-dd-acc-turquie-2024}[1^er^ janvier 2024]{.insecable} | étape (produits turcs) | loi n° 2023-13, loi de finances pour 2024 [@lf-2024, art. 44] | « إجراءات تعريفية استثنائية على قائمة من المنتجات الموردة ذات المنشأ التركي » (mesures tarifaires exceptionnelles sur une liste de produits importés d'origine turque) : produits de l'annexe 1 → droits dans la limite de 75 % du droit commun, trois ans à partir du 1^er^ janvier 2024, puis suppression progressive sur deux ans à partir de la quatrième année |
+
+: La mise en œuvre de l'accord d'association et les mesures sur les produits turcs dans les lois de finances, 1997-2024, avec la portée de chaque texte. {#tbl-dd-registre-accords-lf}
+
+<!-- TODO (documentaliste) : page de la LF 2024, art. 44, dans l'édition arabe (p. 6444 environ) à confirmer ; liste de l'annexe 1 de la LF 2024 ; loi organique n° 2013-39 (amendement des tableaux A et B du protocole II de l'accord avec la Turquie, intitulé seul). -->
+
+::::
+
+## Les autres prélèvements perçus en douane {#sec-dd-autres .domicile-unique}
+
+La douane perçoit, outre les droits et la redevance, « les taxes intérieures exigibles à l'importation et à l'exportation » ([code des douanes, art. 297](#r-dd-code-art297)) : la taxe sur la valeur ajoutée (@sec-tva), le droit de consommation (@sec-droits-consommation) et la taxe au profit du [fonds de développement de la compétitivité](#g-fodec) (@sec-fst-mise-en-place), présentés chacun dans son chapitre. Elle a perçu ou perçoit aussi des prélèvements propres à l'importation ou à l'exportation.
+
+- **Le demi-décime de 1984.** En 1984, sous la rubrique « Affectation de la majoration d'un demi-décime », une majoration d'un demi-décime des droits de douane à l'importation et de la taxe de formalités douanières est affectée à la Caisse générale de compensation ([loi de finances pour 1984, art. 49](#r-dd-aut-1984)).
+- **La fin du prélèvement conjoncturel à l'importation, en 1994.** Le prélèvement conjoncturel à l'importation de 1991 est présenté avec les contributions conjoncturelles (@sec-ccj-importation). Prorogé pour 1993 ([loi de finances pour 1993, art. 118](#r-dd-aut-1993)), il est incorporé aux droits de douane au 1^er^ janvier 1994 par la table de correspondance de cette année-là, et l'article qui l'instituait est abrogé ([loi de finances pour 1994, art. 71 et 74](#r-dd-aut-1994)).
+- **Les taxes à l'exportation de l'huile d'olive** des décrets du 26 novembre 1953 et du 22 novembre 1956 sont abrogées au 1^er^ janvier 1999 ([loi de finances pour 1999, art. 33](#r-dd-aut-1999)).
+- **La taxe de contrôle par scanner**, depuis le 1^er^ janvier 2018, frappe les unités de charge importées en [admission temporaire](#g-admission-temporaire) : 100 D pour un conteneur de vingt pieds au plus, 200 D au-delà ([loi de finances pour 2018, art. 42](#r-dd-aut-2018-scanner)).
+- **Le prélèvement sur les fruits frais** au profit de la Caisse générale de compensation passe, pour la banane, de 0,500 à 0,600 D par kilogramme au 1^er^ janvier 2018 ([loi de finances pour 2018, art. 39, § 5](#r-dd-aut-2018-fruits)) ; les recettes de la Caisse sont exposées au livre [« La compensation »](../compensation/_institution.html#sec-compensation-financement).
+
+<!-- TODO (documentaliste) : prélèvements à l'importation sur la viande bovine (décret n° 90-1193), la poudre de lait (décret n° 91-1391), la viande ovine (décret n° 93-1924), le beurre et l'huile acide (décret n° 93-2115) ; prélèvement sur les fruits frais (décret n° 95-1212) ; taxe à l'exportation des ferrailles et déchets de métaux non ferreux (LF 2022, art. 58, intitulé seul) — connus par les intitulés ; à lire avant mention. Voyageurs : régime des franchises non lu. Taxe à la production perçue à l'importation avant 1988 : domicile, chapitre de la TVA. -->
+
+:::: {.chronologie-repliable titre="Autres prélèvements perçus en douane : demi-décime, prélèvement conjoncturel, taxes sur l'huile d'olive, scanner, fruits frais, textes date par date, 1984-2018"}
+
+| Effet | Portée | Texte et articles | Avant → après |
+|---|---|---|---|
+| []{#r-dd-aut-1984}[1^er^ janvier 1984]{.insecable} | ajustement | loi n° 83-113, loi de finances pour 1984 [@lf-1984, art. 49, p. 3379] | « Affectation de la majoration d'un demi-décime » : majoration d'un demi-décime (LF 1968, art. 7) sur les droits de douane à l'importation et la taxe de formalités douanières → affectée à la Caisse générale de compensation |
+| []{#r-dd-aut-1993}[2 janvier 1993]{.insecable} | ajustement | loi n° 92-122, loi de finances pour 1993 [@lf-1993, art. 118, pp. 1678-1679] | « Reconduction du prélèvement conjoncturel à l'importation » : « Est prorogé pour l'année 1993, le prélèvement conjoncturel à l'importation institué par l'article 6 de la loi n° 91-23 du 28 Mars 1991 » |
+| []{#r-dd-aut-1994}[1^er^ janvier 1994]{.insecable} | fin | loi n° 93-125, loi de finances pour 1994 [@lf-1994, art. 71 et 74, pp. 2201-2202] | « Incorporation du prélèvement conjoncturel dans les droits de douane et aménagement des droits de douane » : nouvelle table des taux (art. 71) ; art. 6 de la LFC 1991 (prélèvement conjoncturel) abrogé (art. 74) |
+| []{#r-dd-aut-1999}[1^er^ janvier 1999]{.insecable} | fin | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 33, p. 2503] | « … des taxes sur l'huile d'olive à l'exportation » : taxes des décrets du 26 novembre 1953 et du 22 novembre 1956 abrogées |
+| []{#r-dd-aut-2018-scanner}[1^er^ janvier 2018]{.insecable} | **rupture** (naissance) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 42, p. 4280] | « Institution d'une taxe de contrôle par scanner sur les unités de charge à l'importation » : — → 100 D par unité de charge de vingt pieds au plus, 200 D au-delà, en admission temporaire |
+| []{#r-dd-aut-2018-fruits}[1^er^ janvier 2018]{.insecable} | ajustement | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 39, § 5, p. 4280] | prélèvement sur les fruits frais au profit de la Caisse générale de compensation, banane : 0,500 → 0,600 D par kilogramme |
+
+: Les textes des autres prélèvements perçus en douane, 1984-2018, avec la portée de chaque texte. {#tbl-dd-registre-autres}
+
+::::
+
+## Le code des douanes, les régimes douaniers et les suspensions par décret {#sec-dd-code .domicile-unique}
+
+Les franchises de droits accordées par les codes d'investissement sont exposées avec les régimes d'incitation (@sec-regimes-incitation) ; les véhicules des Tunisiens résidents à l'étranger, au chapitre du droit de consommation (@sec-droits-consommation).
+
+Le code des douanes fixe les règles qui servent à appliquer le tarif : l'espèce, l'origine et la valeur de la marchandise, la liquidation, ce que le gouvernement peut faire par décret, les régimes qui suspendent les droits. Le code en vigueur est celui de 2008, applicable depuis le 1^er^ janvier 2009 ; il remplace le code issu du décret du 29 décembre 1955 ([loi n° 2008-34](#r-dd-code-2008)).
+
+- **L'espèce.** Les marchandises sont classées selon la nomenclature du système harmonisé, dont les règles d'interprétation sont rattachées à la loi n° 89-113 ; les décisions de classement sont publiées au *Journal officiel* ([art. 19 et 20](#r-dd-code-art19)).
+- **L'origine.** Les droits sont perçus selon l'origine des marchandises : « entièrement obtenues » dans un pays, ou y ayant subi une transformation substantielle, dont les critères sont fixés par décret ([art. 21](#r-dd-code-art21)).
+- **La valeur en douane.** Elle est en premier lieu la valeur transactionnelle de la marchandise, à défaut celle que donnent des méthodes subsidiaires ([art. 22 à 35](#r-dd-code-art22)).
+- **La liquidation.** « Les droits et taxes à percevoir sont ceux qui sont en vigueur à la date d'enregistrement de la déclaration en détail » ([art. 125](#r-dd-code-art125)) ; une marchandise expédiée avant l'entrée en vigueur d'une mesure garde le régime antérieur s'il lui est plus favorable ([art. 12](#r-dd-code-art12)).
+- **Les suspensions par décret.** Le gouvernement peut suspendre, minimum légal de perception compris, réduire ou rétablir les droits par décret ; ces mesures valent « pendant l'année où elles sont prises ». Il peut aussi relever les droits par décret selon la législation sur les mesures de sauvegarde, et les relever ou les rétablir pour protéger l'industrie locale dans le cadre des conventions ([art. 6](#r-dd-code-art6)) ; il peut prendre des mesures tarifaires contre un État qui traite moins favorablement les produits tunisiens ([art. 7](#r-dd-code-art4)). Avant le code, chaque loi de finances donnait cette habilitation pour l'année (@sec-dd-1973).
+- **Les [régimes douaniers suspensifs](#g-regimes-douaniers-suspensifs)** et économiques : transit, entrepôts, transformation sous douane, perfectionnement actif, admission temporaire, perfectionnement passif, exportation temporaire ([titre VI](#r-dd-code-titre6)). Les zones franches sont « soustraites en tout ou partie du régime des douanes » ([art. 1](#r-dd-code-art1)) ; la [zone franche économique](#g-zone-franche-economique) a son régime propre.
+- **La restitution et le remboursement.** Les droits indûment perçus sont restitués, sauf s'ils ont été répercutés ([art. 15 à 18](#r-dd-code-art15)) ; les droits et taxes d'effet équivalent supportés par un produit exporté peuvent être remboursés, sur un tarif fixé par le directeur général des douanes ([art. 298](#r-dd-code-art298)).
+
+Avant la promulgation, le Conseil constitutionnel juge que la suspension des droits pour une période déterminée « ne peut être considérée comme une suppression de ces taxes » et que « les taxes douanières revêtent un caractère fiscal » ; il déclare incompatibles avec la Constitution deux articles du projet sur l'installation des bureaux de douane dans des locaux privés ([avis n° 2-2007](#r-dd-code-avis)).
+
+Depuis 2009, des lois de finances modifient le code : les renseignements préalables en 2015 ([loi de finances pour 2015](#r-dd-code-2015)) ; l'intérêt de retard, ramené de 6 % à 0,75 % par mois en 2020 ([loi de finances pour 2020](#r-dd-code-2020)). Les Tunisiens résidents à l'étranger bénéficient, depuis 1993, d'une franchise de droits sur leurs matériels et biens d'équipement, camion compris, après deux ans de séjour à l'étranger ; ces biens sont incessibles pendant cinq ans ([loi de finances pour 1993, art. 115](#r-dd-code-1993-tre)).
+
+<!-- TODO (documentaliste) : modificatifs du code de 2008 (LF 2017, art. 56 à 60 ; LF 2018, art. 31 et 35 à 38 ; décret n° 2024-463 ; liste à établir sur une version consolidée) ; avis n° 33-2007 et 32-2008 du Conseil constitutionnel ; modificatifs du code de 1955 (loi n° 2001-92 ; LF 1982, art. 29 à 39 ; LF 1983, art. 89 à 96) ; organisation de la direction générale des douanes (décret n° 94-1845 et modificatifs, intitulés seuls) ; LF 1975, art. 33 (régime des Tunisiens résidents à l'étranger avant 1993) ; marchandises fortement taxées (art. 5) et franchises (art. 272, décret n° 2009-1327). -->
+
+:::: {.chronologie-repliable titre="Code des douanes de 2008 : articles sur le tarif, la valeur, l'origine, la liquidation, les suspensions et les régimes, et lois qui le modifient, 1993-2020"}
+
+| Effet | Portée | Texte et articles | Contenu |
+|---|---|---|---|
+| []{#r-dd-code-1993-tre}[2 janvier 1993]{.insecable} | ajustement | loi n° 92-122, loi de finances pour 1993 [@lf-1993, art. 115, pp. 1678-1679] | « Harmonisation des avantages accordés aux tunisiens résidents à l'étranger » : art. 33 nouveau de la LF 1975 : franchise des matériels et biens d'équipement, camion compris, après deux ans de séjour à l'étranger ; incessibilité pendant cinq ans |
+| []{#r-dd-code-2008}[1^er^ janvier 2009]{.insecable} | **mise en place** (du code) | loi n° 2008-34 du 2 juin 2008 portant promulgation du code des douanes [@loi-2008-34-code-douanes, loi, art. 1 à 3, p. 1748] | code promulgué (art. 1) ; entrée en vigueur « à compter du premier janvier 2009 » (art. 2) ; décret du 29 décembre 1955 portant refonte et codification de la législation douanière abrogé (art. 3) ; adoptée par la Chambre des députés le 13 mai 2008 et par la Chambre des conseillers le 22 mai 2008 |
+| []{#r-dd-code-avis}[10 juin 2008]{.insecable} | avis | avis n° 2-2007 du Conseil constitutionnel [@cc-avis-2007-2-code-douanes, pp. 1804-1805] | suspension des droits pour une période déterminée : « ne peut être considérée comme une suppression de ces taxes » ; « les taxes douanières revêtent un caractère fiscal » ; art. 52 et 53 du projet incompatibles avec la Constitution |
+| []{#r-dd-code-art1}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 1, p. 1748] | territoire douanier ; zones franches « soustraites en tout ou partie du régime des douanes » |
+| []{#r-dd-code-art4}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 4 et 7, pp. 1748-1749] | marchandises soumises à la loi tarifaire « sauf dérogations expresses prévues par les traités et conventions commerciaux en vigueur » (art. 4) ; mesures tarifaires de rétorsion par décret (art. 7) |
+| []{#r-dd-code-art6}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 6, pp. 1748-1749] | § 1 : suspension, minimum légal de perception compris, réduction ou rétablissement des droits par décret, valables « pendant l'année où elles sont prises » ; § 2 : hausse par décret selon la législation de sauvegarde ; § 3 : hausse ou rétablissement par décret pour protéger l'industrie locale, dans le cadre des conventions |
+| []{#r-dd-code-art12}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 12, p. 1749] | régime antérieur plus favorable pour les marchandises expédiées avant l'entrée en vigueur d'une mesure |
+| []{#r-dd-code-art15}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 15 à 18, pp. 1749-1750] | restitution des droits indûment perçus ; pas de restitution des droits répercutés (art. 16) |
+| []{#r-dd-code-art19}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 19 et 20, p. 1750] | nomenclature du système harmonisé, règles d'interprétation rattachées à la loi n° 89-113 (art. 19, § 3) ; décisions de classement publiées au *Journal officiel* (art. 20) |
+| []{#r-dd-code-art21}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 21, pp. 1750-1751] | droits perçus selon l'origine ; marchandises « entièrement obtenues » ; transformation substantielle définie par décret |
+| []{#r-dd-code-art22}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 22 à 35, pp. 1751-1755] | valeur en douane : valeur transactionnelle (art. 23), méthodes subsidiaires ; confidentialité (art. 35) |
+| []{#r-dd-code-art125}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 125, p. 1767] | « les droits et taxes à percevoir sont ceux qui sont en vigueur à la date d'enregistrement de la déclaration en détail » |
+| []{#r-dd-code-titre6}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, titre IV (art. 87 à 92) et titre VI (art. 134 et suiv.), pp. 1761-1763 et 1769-1784] | zones d'activités logistiques (titre IV) ; régimes suspensifs et économiques : transit, entrepôts, transformation sous douane, perfectionnement actif, admission temporaire, perfectionnement passif, exportation temporaire (titre VI) |
+| []{#r-dd-code-art297}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 297, p. 1788] | perception par la douane des « taxes intérieures exigibles à l'importation et à l'exportation » |
+| []{#r-dd-code-art298}[1^er^ janvier 2009]{.insecable} | règle | code des douanes [@loi-2008-34-code-douanes, code, art. 298, p. 1788] | remboursement à l'exportation des droits et taxes d'effet équivalent ; tarif de remboursement fixé par le directeur général des douanes, forfaitaire possible |
+| []{#r-dd-code-2015}[1^er^ janvier 2015]{.insecable} | ajustement | loi de finances pour 2015 [@lf-2015, art. 41] | renseignements préalables (art. 13 *bis* et suivants du code) |
+| []{#r-dd-code-2020}[1^er^ janvier 2020]{.insecable} | ajustement | loi n° 2019-78, loi de finances pour 2020 [@lf-2020, art. 51, pp. 4709-4710, éd. ar.] | art. 130, § 3, du code : intérêt de retard 6 % → 0,75 % par mois |
+
+: Le code des douanes de 2008, article par article, et les lois qui touchent au régime douanier, 1993-2020, avec la portée de chaque texte. L'avis du Conseil constitutionnel est daté de sa publication. {#tbl-dd-registre-code}
+
+<!-- TODO (documentaliste) : page de la LF 2015, art. 41 (p. 3471 d'après l'index) à vérifier au fascicule ; date de l'avis n° 2-2007 ; vérifier sur une comparaison que les méthodes subsidiaires des art. 24 à 35 suivent l'accord sur l'évaluation en douane de l'OMC. -->
+
+::::
+
+## La longue période : ce que rapportent les droits de douane {#sec-dd-longue-periode}
+
+Cette section présente ce que l'État encaisse au titre des droits de douane de 1986 à 2025, d'après la série des recettes fiscales du ministère des Finances [@minfin-recettes-fiscales]. Sa rubrique « Droits de Douanes » comprend la redevance de prestations douanières : chaque fois que la loi de finances détaille la prévision, la rubrique égale la somme des droits à l'importation et des redevances à l'importation et à l'exportation inscrites au tableau A (@fig-dd-rendement). Toute part ou tout ratio de cette section porte donc sur les droits et la redevance ensemble. Les rapports extérieurs et les évaluations sont présentés à part (@sec-dd-etudes).
+
+```{python}
+#| label: fig-dd-parts
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import droits_douane as fig_dd
+import figtools
+figtools.figure_tabs(
+    fig_dd.fig_parts(), fig_dd.table_parts(), *fig_dd.SERIES_PARTS,
+    slug="fig_dd_parts",
+    caption=("Part des droits de douane, redevance de prestations douanières comprise, dans "
+             "les recettes fiscales et dans les dépenses de l'État hors service de la dette, "
+             "1986-2025, en %"),
+    note_lecture=(
+        "Le numérateur est la rubrique « Droits de Douanes » de la série des recettes "
+        "fiscales du ministère des Finances, qui comprend la redevance de prestations "
+        "douanières. Les traits verticaux marquent des textes, nommés sur la figure ; le "
+        "trait de 2020 marque la nouvelle nomenclature du tableau A des lois de finances, "
+        "sans rupture de la série. Le dénominateur des dépenses est la réalisation des "
+        "dépenses de l'État hors service de la dette."
+    ),
+    nominal=False,
+    generated="{{< meta date >}}",
+)
+```
+
+- **Plus d'un cinquième des recettes fiscales de 1988 à 1995, un vingtième depuis 2018.** La part des droits passe de 17,0 % des recettes fiscales en 1986 à 23,5 % en 1989, son point le plus haut, et se tient au-dessus de 22 % jusqu'en 1995. Elle baisse chaque année de 1996 à 2011 — 19,6 % en 1996, 11,3 % en 2000, 4,1 % en 2011 — et atteint son point le plus bas en 2016, à 3,4 %. Elle remonte à 4,9 % en 2018 et vaut 5,1 % en 2025 (@fig-dd-parts).
+- **Dans les dépenses de l'État hors service de la dette**, la part va de 11,6 % en 1986 à 18,1 % en 1992, puis descend à 2,7 % en 2016 et remonte à 4,3 % en 2025.
+- **En dinars courants**, la rubrique passe de 773 MD en 1995 à 490 MD en 2006, puis remonte à 2 279 MD en 2025. Deux variations annuelles dépassent 20 % : de 2015 à 2016, la rubrique baisse de 23 % (832,5 → 639,7 MD) ; de 2017 à 2018, elle monte de 63 % (741,9 → 1 208,3 MD). Le FMI estime le coût de la réforme tarifaire de 2016 (@sec-dd-rapports).
+
+```{python}
+#| label: fig-dd-pib
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import droits_douane as fig_dd
+import figtools
+figtools.figure_tabs(
+    fig_dd.fig_pib(), fig_dd.table_pib(), *fig_dd.SERIES_PIB,
+    slug="fig_dd_pib",
+    caption=("Part des droits de douane, redevance de prestations douanières comprise, dans "
+             "le PIB, par segment de base du PIB, 1986-2025, en %"),
+    note_lecture=(
+        "Un segment par base du PIB, jamais relié au suivant : 1986-1991, base 1983 "
+        "présumée ; 1992-1996, base 1983 ; 1997-2001, base 1997, valeurs rétropolées ; "
+        "2005-2009, base 1997, valeurs d'origine ; 2010-2024, base 2015, rétropolée pour "
+        "2010-2014. Les années 2002 à 2004 et 2025 portent une valeur du PIB propre au "
+        "ministère des Finances, rattachée à aucune base : elles sont tracées à part. "
+        "Chaque changement de base est une rupture de série (voir l'[annexe sur le "
+        "PIB](../annexe-pib.html#sec-pib-ruptures)). Le numérateur comprend la redevance."
+    ),
+    nominal=False,
+    generated="{{< meta date >}}",
+)
+```
+
+En part du PIB, les droits valent 3,9 % en 1986 et 4,8 % en 1992 (base 1983), 3,1 % en 1997 et 2,1 % en 2001 (base 1997, rétropolée), 1,2 % en 2005 et 0,9 % en 2009 (base 1997), 0,85 % en 2010, 0,67 % en 2016 et 1,30 % en 2024 (base 2015). Les années 2002 à 2004 et 2025 sont tracées à part, faute de base établie pour le PIB qui les mesure (@fig-dd-pib). Le passage de 1996 à 1997 (3,9 % → 3,1 %) mêle la baisse de la recette et le changement de base du PIB ; les deux ne se séparent pas sur cette figure.
+
+```{python}
+#| label: fig-dd-rendement
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import droits_douane as fig_dd
+import figtools
+figtools.figure_tabs(
+    fig_dd.fig_rendement(), fig_dd.table_rendement(), *fig_dd.SERIES_REND,
+    slug="fig_dd_rendement",
+    caption=("Droits de douane à l'importation et redevance de prestations douanières : "
+             "prévisions des lois de finances, 2001-2026, et réalisations, 2018-2024, en "
+             "millions de dinars courants et en millions de dinars de 2025"),
+    note_lecture=(
+        "Les traits relient les prévisions du tableau A des lois de finances initiales ; "
+        "les marqueurs sont les réalisations que publie la Cour des comptes. La redevance "
+        "réunit les redevances à l'importation et à l'exportation, que le tableau A sépare "
+        "jusqu'en 2019 et fond en un seul article depuis 2020 ; la série se raccorde. La vue "
+        "en dinars de 2025 divise chaque montant par l'indice des prix à la consommation de "
+        "son année ; elle s'arrête en 2025."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+Les lois de finances séparent les droits de la redevance dans leurs prévisions depuis 2001 ; la Cour des comptes sépare les réalisations depuis 2018 (@tbl-dd-cour). En prévision, la redevance fait de 11 % (2001) à 26 % (2017) de l'ensemble ; en réalisation, de 17,2 % (2024) à 21,5 % (2018). Les deux séries ne coïncident pas : en 2020, 1 521 MD sont prévus et 1 228,4 MD encaissés ; en 2024, 1 900 MD prévus et 2 071,3 MD encaissés [@lf-2020, tableau A ; @lf-2024, tableau A ; @cdc-loireg-2020, p. 45 ; @cdc-rapport-budget-2024, pp. 34-35].
+
+| Année | Droits<br>(MD courants) | Droits<br>(MD de 2025) | Redevance<br>(MD courants) | Redevance<br>(MD de 2025) | Part de la redevance<br>(%) |
+|---|---|---|---|---|---|
+| 2018 | 949,7 | 1 512,3 | 260,6 | 415,0 | 21,5 |
+| 2019 | 1 018,5 | 1 518,7 | 268,4 | 400,2 | 20,9 |
+| 2020 | 986,8 | 1 392,9 | 241,6 | 341,0 | 19,7 |
+| 2021 | 1 138,4 | 1 520,1 | 281,6 | 376,0 | 19,8 |
+| 2022 | 1 446,4 | 1 783,3 | 336,7 | 415,1 | 18,9 |
+| 2023 | 1 519,7 | 1 713,8 | 329,3 | 371,3 | 17,8 |
+| 2024 | 1 715,1 | 1 807,3 | 356,2 | 375,4 | 17,2 |
+
+: Droits de douane à l'importation et redevance de prestations douanières (importation et exportation) encaissés, 2018-2024, d'après la Cour des comptes, qui reprend l'exécution du budget du ministère des Finances. Les montants en dinars de 2025 divisent chaque montant par l'indice des prix à la consommation de son année. Sources : @cdc-loireg-2019, p. 55 ; @cdc-loireg-2020, p. 45 ; @cdc-loireg-2021, p. 54 ; @cdc-loireg-2022, p. 44 ; @cdc-rapport-budget-2023, p. 38 ; @cdc-rapport-budget-2024, pp. 34-35. {#tbl-dd-cour .sm tbl-colwidths="[12,16,16,18,18,20]"}
+
+La Cour des comptes explique la baisse de 2020 par le recul des importations (− 18,7 %) et des exportations (− 11,7 %) [@cdc-loireg-2020, p. 45], et la hausse de 2022 par celle des importations (+ 32,4 %) et par le relèvement des droits sur les produits de consommation ayant un similaire fabriqué localement [@cdc-loireg-2022, p. 44]. Pour 2024, elle cite les mesures tarifaires exceptionnelles sur les produits d'origine turque et le minimum de la redevance porté de 10 à 20 dinars [@cdc-rapport-budget-2024, pp. 34-35].
+
+<!-- TODO (documentaliste) : prévisions du tableau A avant 2001 (LF 1970-1993 lisibles à l'image ; 1994-2000 à localiser ; en priorité LF 1989, 1995, 1996, 1997) ; ventilation des réalisations avant 2018 (rapport de la Cour sur 2018, lois de règlement) ; droits de douane 1959-1985 dans les rapports annuels de la BCT (1972-1975 relevés, unité à établir) ; importations 2024-2025. Colonne « LF 2022 » du classeur du ministère (2 056 MD) contre 1 856 MD au tableau A : à signaler à la source. -->
+
+**Les dépenses fiscales.** Le ministère des Finances évalue chaque année le coût des exonérations et réductions de droits de douane : de 382 MD pour l'exercice 2017 à 1 517 MD pour l'exercice 2023, selon le rapport qui les publie ; les rapports se révisent d'une édition à l'autre et ne forment pas une série [@gbo-depenses-fiscales]. Le rapport annexé au projet de loi de finances pour 2023 les rapporte aux recettes de la rubrique, redevance comprise : 63,2 % en 2019, 61,1 % en 2020, 63,2 % en 2021 [@minfin-depenses-fiscales-plf2023, p. 32]. La mesure et ses limites sont exposées au chapitre des [dépenses fiscales](#g-depense-fiscale) (@tbl-df-par-impot ; @fig-df-total).
+
+## Ce qu'en disent les rapports extérieurs et une évaluation {#sec-dd-etudes}
+
+Cette section rassemble ce que des institutions internationales et une étude écrivent du tarif tunisien et de son rendement. Chacune a sa méthode et sa définition ; leurs chiffres ne se chaînent pas d'une source à l'autre et ne se comparent pas sans précaution aux séries budgétaires de la @sec-dd-longue-periode.
+
+### Les rapports extérieurs : GATT, OMC, FMI, Banque mondiale {#sec-dd-rapports}
+
+**Les examens des politiques commerciales du GATT et de l'OMC.** Le Secrétariat du GATT (1994), puis celui de l'OMC (2005, 2016, 2025), calcule les taux moyens du tarif sur les données des autorités, pour le [taux de la nation la plus favorisée](#g-taux-npf) (taux NPF), c'est-à-dire le taux de droit commun, ligne par ligne : environ 6 000 lignes en 1994, 16 232 lignes à onze chiffres en 2005, 11 502 lignes à neuf chiffres en 2016, 17 511 lignes à onze chiffres en 2025. Le nombre de lignes change avec la nomenclature, et la moyenne avec lui.
+
+- **La fourchette des taux.** Le GATT écrit qu'au début des années 1980 les droits allaient de 5 à 236 % [@gatt-1994-tpr-tunisie, p. 55] ; le FMI écrit pour 1986 : « Custom duties ranged from 5 percent to 236 percent, with the average rate exceeding 40 percent » [@fmi-1997-selected-issues, p. 9]. Le GATT donne 17-43 % en 1988 [@gatt-1994-tpr-tunisie, p. 55]. L'OMC compte 15 taux de 0 à 150 % en 2005, avec un taux le plus fréquent de 43 % [@omc-2005-tpr-tunisie, § III.22] ; un taux maximal de 36 % de 2009 à 2016 [@omc-2016-tpr-tunisie, graphique 3.2, p. 46] ; 11 taux de 0 à 50 % en 2025 [@omc-2025-tpr-tunisie, § 3.26, p. 39]. Pour 2016, l'OMC écrit « seulement trois taux en 2016 : zéro, 20 % et 36 % » dans son résumé (p. 9), et six taux dans le corps du rapport (§ 3.24, p. 46) [@omc-2016-tpr-tunisie].
+- **La moyenne simple.** 32,5 % en 1987, 30,2 % en 1988, 28,5 % en 1989 [@gatt-1994-tpr-tunisie, tableau IV.1, p. 56] ; 32,7 % en 2004 et 31,7 % en 2005 [@omc-2005-tpr-tunisie, tableau III.1] ; 18,2 % en 2013 et 14,1 % en 2016, lignes à neuf chiffres [@omc-2016-tpr-tunisie, graphique 3.2, p. 46] ; 23,8 % en 2025 à onze chiffres, 22,3 % à neuf chiffres, comparable à 2016 [@omc-2025-tpr-tunisie, tableau 3.3, pp. 39-40]. La Banque mondiale donne, sur la nomenclature à six chiffres, 30 % en 2002 et 16 % en 2011 [@banquemondiale2014-revolution-inachevee, encadré 1.5, p. 56].
+- **La préférence européenne.** En 2005, le taux moyen appliqué aux produits de l'Union européenne est de 18,0 %, contre 31,7 % en NPF, et de 6,3 % pour les produits non agricoles [@omc-2005-tpr-tunisie, tableau III.2] ; en 2016, les produits non agricoles de l'Union entrent en franchise, sauf 122 lignes [@omc-2016-tpr-tunisie, tableau 3.7, p. 55] ; en 2025, la moyenne est de 7,6 %, 1,7 % pour les produits non agricoles et 30,6 % pour les produits agricoles [@omc-2025-tpr-tunisie, tableau 3.4, p. 42].
+- **Le recul des recettes, selon l'OMC.** Les droits de douane font 13,2 % des recettes budgétaires totales en 1994, 6,5 % en 2000, 4,9 % en 2003 ; « Cette baisse résulte de plusieurs facteurs, notamment les réductions tarifaires progressives portant sur les produits non-agricoles dans le cadre de l'Accord avec l'Union européenne, et l'augmentation des exemptions de droits de douanes accordées aux industries locales pour l'importation de leurs intrants » [@omc-2005-tpr-tunisie, § III.15]. L'OMC reprend la même explication pour la baisse de 6,4 % à 4,3 % des recettes de l'État de 2005 à 2015 [@omc-2016-tpr-tunisie, § 3.22, p. 45].
+
+**Le FMI.** Les services du FMI, sur les données du ministère des Finances, attribuent le recul des droits en part du PIB de 1992 à 1995 « to the granting of exemptions or rate reductions, including those under the investment code, and the increased share of imports by the offshore sector, which remained exempt from taxes on imports » [@fmi-1996-red, p. 35]. En 1997, ils estiment ce que l'accord d'association coûterait en recettes, par un calcul statique : l'origine et le niveau des importations, et le PIB, sont tenus à leur niveau de 1995, et la perte liée à la suppression du droit complémentaire provisoire est comptée à part. La perte irait « from 0.2 percent of GDP in 1996 to 0.5 percent in 1997 and further to 2.4 percent of GDP by 2008 » ; le rapport ajoute qu'elle serait plus forte si l'on tenait compte du détournement de commerce [@fmi-1997-selected-issues, pp. 12-13]. Pour la réforme tarifaire de 2016, le FMI donne un rendement de la mesure douanière de 0,22, 0,20 et 0,09 % du PIB en 2016, 2017 et 2018 [@fmi-2015-article-iv, p. 18], puis une perte de 316 MD, 0,4 % du PIB, en 2016, pour le passage de sept à deux taux [@fmi-2016-cr16138, p. 21] ; la méthode de ces deux estimations n'est pas décrite par la source.
+
+**La Banque mondiale (1995).** À partir des taux de protection nominale et effective de 1983 à 1995, la Banque mondiale donne une moyenne des droits supérieure à 40 % avant l'ajustement, de 24 % de 1987 à 1990 et d'environ 35 % en 1995, droit complémentaire provisoire compris ; la fourchette est de 15 à 43 % en 1990 [@bm-1995-vers-21e-siecle, annexe 2, p. 5].
+
+**Le tarif et la recette : le taux de perception implicite.** Rapporter la rubrique « droits de douane » du ministère des Finances, redevance comprise, à la valeur des importations donne un [taux de perception implicite](#g-taux-perception-implicite) : la part de la valeur importée que l'État perçoit en droits. C'est un calcul du précis, non une valeur publiée ; les importations sont celles de la Banque centrale de 1988 à 1997 [@bct-ra-1998, p. 129] et de l'Institut national de la statistique depuis 1998 [@ins-annuaire, tableau 14.2]. La figure le superpose aux moyennes simples du GATT et de l'OMC : les deux mesures portent sur le même tarif, mais l'une pèse ce qui est perçu, l'autre les taux affichés.
+
+```{python}
+#| label: fig-dd-perception
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import droits_douane as fig_dd
+import figtools
+figtools.figure_tabs(
+    fig_dd.fig_perception(), fig_dd.table_perception(), *fig_dd.SERIES_PERC,
+    slug="fig_dd_perception",
+    caption=("Taux de perception implicite des droits de douane, redevance comprise, "
+             "1988-2023, et moyennes simples des taux du tarif publiées par le GATT et "
+             "l'OMC, 1987-2025, en %"),
+    note_lecture=(
+        "Deux familles, deux légendes. Les courbes sont un calcul du précis : la rubrique "
+        "« droits de douane » du ministère des Finances, redevance comprise, rapportée aux "
+        "importations, toutes ou du seul régime général. Les importations viennent de la "
+        "Banque centrale jusqu'en 1997 (marqueurs creux), de l'Institut national de la "
+        "statistique depuis 1998 (marqueurs pleins) ; les courbes de l'INS sont coupées "
+        "entre 2003 et 2004, les années antérieures n'étant imprimées dans aucune édition "
+        "révisée. Les points isolés sont des moyennes simples des taux NPF du tarif, "
+        "calculées par le GATT et l'OMC chacun sur sa nomenclature ; leur nombre de lignes "
+        "change d'un rapport à l'autre."
+    ),
+    nominal=False,
+    generated="{{< meta date >}}",
+)
+```
+
+Le taux de perception implicite passe de 12,6 % en 1988 à 10,4 % en 1995, 8,0 % en 1997, 2,9 % en 2005 et 1,5 % en 2017, son point le plus bas ; il remonte à 2,3 % en 2023. Rapporté aux seules importations du régime général, il va de 11,4 % en 1998 à 2,2 % en 2017 et 3,5 % en 2023 (@fig-dd-perception). L'écart avec les taux affichés est ancien : le GATT relève qu'en 1989 le taux moyen pondéré est de 22 % pour un rapport des droits aux importations de 11 %, ce qui « suggests the existence of substantial duty-free imports entering under special regimes, such as temporary admission and the free zone regime » [@gatt-1994-tpr-tunisie, p. 57] ; le FMI donne pour 1996 un rapport de 10,3 %, « reflecting the importance of the off-shore sector, which took in 32 percent of total imports, and exemptions » [@fmi-1997-selected-issues, p. 9].
+
+### Une évaluation économique : le commerce informel aux frontières terrestres {#sec-dd-etude-ayadi}
+
+Ayadi, Benjamin, Bensassi et Raballand, pour la Banque mondiale, estiment en 2013 le commerce informel de la Tunisie avec la Libye et l'Algérie par deux méthodes : les statistiques miroirs, qui comparent ce que déclarent les deux pays, et une enquête de terrain à Ras Jedir et dans la région de Kasserine. Ils chiffrent ce commerce à au moins 1,8 milliard de dinars selon l'enquête, 2,4 milliards selon les valeurs unitaires [@ayadi-2013-commerce-informel, tableau 1, p. 10]. Ils calculent la recette perdue au « lowest rate of tax burden on imports for this category of goods, or 72% of its value and 30% for customs duties » (note 39) : « at least around 1.2 billion TND (of which around 500 TND for customs duties or more than one-sixth of total customs duties) » [@ayadi-2013-commerce-informel, p. 27]. Le montant des droits est imprimé sans unité.
+
+## Ce qu'en dit l'économie {#sec-dd-economie}
+
+Cette section résume ce que la littérature économique dit des droits sur les importations. L'économiste y voit une protection, qui relève le prix intérieur du bien produit sur place, et une recette, facile à percevoir à la frontière. Trois questions : quelle perte d'efficacité, par rapport à un impôt sur la consommation ; l'État retrouve-t-il ailleurs la recette perdue quand il abaisse ses tarifs ; que change un démantèlement réservé à un partenaire ?
+
+**Ce que dit la théorie.** Trois résultats, chacun sous ses hypothèses. Pour une petite économie ouverte, il est optimal de ramener les tarifs à zéro et de lever la recette par des impôts sur la consommation, selon Dixit (1985) d'après Diamond et Mirrlees (1971), cités par Keen et Ligthart ; une baisse du tarif compensée par l'impôt sur la consommation, à prix à la consommation inchangés, accroît le bien-être et la recette, si l'économie est concurrentielle et tous les biens échangeables ; les conditions se durcissent avec les biens non échangeables, les intrants et la concurrence imparfaite [@keen-ligthart-2002-tariff-tax-reform, pp. 1 et 3-6]. Si la TVA ne couvre pas le secteur informel, alors que le tarif atteint toute importation, la même réforme à recette inchangée réduit le bien-être « under plausible conditions » [@emran-stiglitz-2005-selective-indirect-tax, p. 599] : le désaccord porte sur la couverture de l'impôt intérieur, qui détermine la [perte sèche](#g-perte-seche) de chaque instrument. Un accord préférentiel crée du commerce, quand les importations remplacent une production locale plus coûteuse, et en détourne, quand elles passent du fournisseur le plus efficace au partenaire préféré, selon Viner (1950), cité par Freund et Ornelas [@freund-ornelas-2010-rta, p. 4] ; dans un pays qui taxait ses importations, ce [détournement](#g-detournement-creation-commerce) se paie en recette perdue [@brown-deardorff-stern-1996-tunisie-ue, p. 15].
+
+**Ce que mesure l'empirique.** Sur 125 pays de 1975 à 2000, pour chaque dollar de recette douanière perdu, les pays à haut revenu en récupèrent plus d'un, les pays à revenu intermédiaire de 45 à 65 cents, les pays à bas revenu au plus 30 cents ; la présence d'une TVA ne change pas significativement la récupération [@baunsgaard-keen-2010-trade-liberalization, pp. 1, 4 et 18]. Sur 130 pays de 1792 à 2006, Cagé et Gadenne comptent 140 épisodes où la recette douanière baisse d'au moins un point de PIB : depuis 1970, aucun pays riche n'en subit de coût budgétaire, plus de la moitié des pays en développement en subissent un, et près de 40 % des pays à bas revenu et 34 % des pays à revenu intermédiaire ne retrouvent jamais la recette perdue [@cage-gadenne-2018-fiscal-cost, pp. 2-3 et 9]. La baisse des droits accroît la productivité mesurée des branches, et les droits sur les intrants ont des effets « often much larger » que les droits sur les produits finis, en Indonésie et en Inde [@goldberg-pavcnik-2016-trade-policy, pp. 32-33]. En Tunisie, Brown, Deardorff et Stern estiment, par un modèle d'équilibre général sur les données de 1990, l'effet de l'accord avec l'Union européenne sur le bien-être de − 0,2 % du PIB si le capital ne change pas de secteur à un gain s'il est mobile [@brown-deardorff-stern-1996-tunisie-ue, pp. 15 et 18] ; le FMI, d'après la Banque mondiale, cite une [protection effective](#g-protection-effective) moyenne de 70 % en 1986 et de 56 % en 1995 [@fmi-1997-selected-issues, p. 9]. La Banque mondiale estime, par les écarts entre statistiques miroirs ligne par ligne, une [évasion tarifaire](#g-evasion-tarifaire) d'au moins 100 millions de dollars par an, « approximately 0.15 percent of GDP » [@banquemondiale2014-revolution-inachevee, p. 118]. Rijkers, Baghdadi et Raballand trouvent, de 2002 à 2009, un écart entre exportations déclarées par les partenaires et importations déclarées en douane plus grand de 9,9 points pour les biens taxés à 36 % ou plus [@rijkers-baghdadi-raballand-2017-tariff-evasion, p. 9] ; les entreprises de la famille Ben Ali, 0,2 % des entreprises privées, font 16 % des bénéfices nets du secteur privé de 1996 à 2010 [@rijkers-freund-nucifora-2017-state-capture, pp. 3-4]. Le coût budgétaire de l'accord estimé par le FMI est présenté à la @sec-dd-rapports.
+
+**Ce que le praticien retient.** Établi : la recette douanière perdue est mal récupérée dans les pays à revenu bas ou intermédiaire, sur deux bases de données et par deux méthodes ; la baisse des droits, surtout sur les intrants, accroît la productivité mesurée. Débattu : le remplacement du tarif par la TVA, qui dépend de la couverture de la TVA ; le gain de l'accord tunisien, qui dépend de la mobilité du capital retenue. Mesuré sur la Tunisie seule : une évasion qui croît avec le taux, et des rentes de protection concentrées dans des entreprises liées au pouvoir, de 2002 à 2010. Ce que les données tunisiennes ne tranchent pas : aucune évaluation *ex post* identifiée ne mesure la recette récupérée après 1996, ni l'effet du démantèlement sur l'emploi ou la productivité des entreprises tunisiennes.
+
+Littérature arrêtée en octobre 2026
