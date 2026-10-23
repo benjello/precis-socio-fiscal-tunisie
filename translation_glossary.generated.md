@@ -345,7 +345,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité de revenu unique | منحة الدخل الوحيد |  |
 | Indemnité de stage | منحة التربص |  |
 | Indemnité journalière | التعويض اليومي |  |
-| Indemnité parlementaire | المنحة النيابية |  |
+| Indemnité parlementaire | المنحة البرلمانية |  |
 | Indemnité pour charges militaires | منحة الكلف العسكرية |  |
 | Indemnité provisoire complémentaire (militaires et forces de sécurité intérieure) | المنحة الوقتية التكميلية |  |
 | Indemnité spécifique | المنحة الخصوصية |  |
@@ -560,7 +560,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
-| Solde (militaire) | المرتّب العسكري |  |
+| Solde (militaire) | أجور العسكريين |  |
 | Solde de réforme | منحة الإصلاح |  |
 | Sous-déclaration | التصريح بأقلّ من القيمة الحقيقية |  |
 | Sous-traitance de main-d'œuvre | مناولة اليد العاملة |  |
