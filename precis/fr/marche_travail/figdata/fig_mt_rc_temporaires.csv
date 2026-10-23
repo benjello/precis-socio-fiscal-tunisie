@@ -1,0 +1,11 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-20
+# séries (tunisia_data) : oit-ilostat-part-salaries-temporaires
+# sources (citation) : @oit-ilostat-salaries-temporaires
+# fiches : sources/oit-ilostat-salaries-temporaires.md
+# méthode/hypothèses : TROIS ENQUÊTES DIFFÉRENTES, À TRACER PAR SEGMENTS (colonne `segment`) : enpe (2010 et 2019), lmps (2014, marqué B « Break in series: Methodology revised »), hies (2021, enquête budget-consommation). Ne jamais relier les points de segments différents ; aucune interpolation. Les variations d'un segment à l'autre ne sont pas une évolution établie. Dénominateur : salariés. En 2014 seulement, taux des hommes supérieur à celui des femmes. Date d'édition de la base non relevée.
+# note : Part des salariés temporaires parmi les salariés, selon l'enquête, 2010, 2014, 2019 et 2021 (%)
+Année,Enquête,Ensemble,Hommes,Femmes,Rupture signalée par l'OIT
+2010,"Enquête nationale sur la population et l'emploi (INS), 2e trimestre",17.2,14.1,25.7,
+2014,"Labor Market Panel Survey, 2e trimestre",23.8,24.5,21.5,méthode révisée
+2019,"Enquête nationale sur la population et l'emploi (INS), 2e trimestre",20.3,18.5,24.3,
+2021,Enquête nationale sur le budget et la consommation des ménages,24.0,16.9,36.4,

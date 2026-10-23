@@ -1,0 +1,6 @@
+- libelle: سقف خصم الإيداعات في حساب الادخار للاستثمار
+  parametre: parameters/impot_revenu/deductions/cea_cei/cei.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.cea_cei.cei/table/
+- libelle: سقف الإعفاء من فوائد حساب الادخار للاستثمار
+  parametre: parameters/impot_revenu/deductions/interets_comptes_epargne_investissement/plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.deductions.interets_comptes_epargne_investissement.plaf/table/

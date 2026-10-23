@@ -352,7 +352,7 @@ def zotero_tout(chemin: str, api_key: str, params: dict) -> list:
             return resultats
 
 
-def zotero(path: str, api_key: str, methode: str = "GET", corps=None):
+def zotero(path: str, api_key: str, methode: str = "GET", corps=None, entetes=None):
     url = f"{BASE_URL}{path}"
     donnees = json.dumps(corps).encode() if corps is not None else None
     req = urllib.request.Request(url, data=donnees, method=methode)
@@ -360,6 +360,8 @@ def zotero(path: str, api_key: str, methode: str = "GET", corps=None):
     req.add_header("Zotero-API-Version", "3")
     if donnees:
         req.add_header("Content-Type", "application/json")
+    for nom, valeur in (entetes or {}).items():
+        req.add_header(nom, valeur)
     try:
         with urllib.request.urlopen(req) as resp:
             brut = resp.read().decode()
@@ -583,6 +585,23 @@ def appliquer_rangement(groupe: str, api_key: str, ecrire: bool) -> int:
         }
 
     citations = {livre: cles_citees(livre) for livre in COLLECTIONS}
+    # Une collection de livre absente de Zotero est créée avant le rangement : sans elle,
+    # les références de ce livre restent « à ranger » sans qu'aucune action n'y remédie.
+    absentes = sorted(b for b, cles in citations.items() if cles and b not in cle_par_livre)
+    for livre in absentes:
+        if not ecrire:
+            print(f"  collection à créer : « {COLLECTIONS[livre]} » ({livre})")
+            continue
+        reponse = zotero(f"/groups/{groupe}/collections", api_key, "POST",
+                         [{"name": COLLECTIONS[livre]}])
+        cree = (reponse.get("successful") or {}).get("0")
+        if not cree:
+            print(f"  X collection « {COLLECTIONS[livre]} » : {reponse.get('failed')}",
+                  file=sys.stderr)
+            return 1
+        livre_par_collection[cree["key"]] = livre
+        cle_par_livre[livre] = cree["key"]
+        print(f"  collection créée : « {COLLECTIONS[livre]} » ({livre})")
     rapport = classe_rangement(citations, collections_par_cle, cles_du_fonds_commun())
 
     voulu: dict[str, set[str]] = {}
@@ -761,6 +780,42 @@ def ranger(groupe: str, api_key: str, locales: dict) -> int:
     return 0
 
 
+def supprimer(groupe: str, api_key: str, cles: list[str], ecrire: bool) -> int:
+    """Supprime de Zotero les références désignées par leur clé de citation.
+
+    Refuse toute clé que les fichiers locaux portent encore : on ne supprime que ce que
+    le précis ne cite plus (doublon côté Zotero). À blanc par défaut.
+    """
+    locales = charge_local()
+    encore = [c for c in cles if c in locales]
+    if encore:
+        print(f"✗ clé(s) encore présente(s) dans les fichiers locaux : {', '.join(encore)}",
+              file=sys.stderr)
+        return 1
+    items = zotero_tout(f"/groups/{groupe}/items", api_key, {"format": "json"})
+    par_cle = {}
+    for item in items:
+        m = re.search(r"citation-key:\s*(\S+)", item.get("data", {}).get("extra", ""), re.I)
+        if m:
+            par_cle[m.group(1)] = item
+    manquantes = [c for c in cles if c not in par_cle]
+    if manquantes:
+        print(f"✗ absente(s) de Zotero : {', '.join(manquantes)}", file=sys.stderr)
+        return 1
+    for cle in cles:
+        item = par_cle[cle]
+        titre = item["data"].get("title", "")[:80]
+        if not ecrire:
+            print(f"  à supprimer : {cle} ({item['key']}) — {titre}")
+            continue
+        zotero(f"/groups/{groupe}/items/{item['key']}", api_key, "DELETE",
+               entetes={"If-Unmodified-Since-Version": str(item["version"])})
+        print(f"  supprimée : {cle} ({item['key']}) — {titre}")
+    if not ecrire:
+        print("(à blanc : rien n'a été supprimé ; --pousser pour supprimer)")
+    return 0
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--permissions", action="store_true", help="que permet la clé ?")
@@ -786,6 +841,9 @@ def main() -> int:
     p.add_argument("--controle-rangement", action="store_true",
                    help="compare l'usage réel des références au rangement Zotero "
                         "(LECTURE SEULE, n'écrit rien)")
+    p.add_argument("--supprimer", default="",
+                   help="supprime de Zotero ces références (clés séparées par des virgules), "
+                        "à condition que les fichiers locaux ne les portent plus (à blanc sans --pousser)")
     args = p.parse_args()
 
     schema = charge_schema()
@@ -832,6 +890,13 @@ def main() -> int:
         infos.pop("key", None)  # ne jamais réafficher le secret
         print(json.dumps(infos, ensure_ascii=False, indent=2))
         return 0
+
+    if args.supprimer:
+        if not api_key:
+            print("ZOTERO_API_KEY absente.", file=sys.stderr)
+            return 1
+        cles = [c.strip() for c in args.supprimer.split(",") if c.strip()]
+        return supprimer(args.groupe, api_key, cles, args.pousser)
 
     if args.corriger:
         items = zotero_tout(f"/groups/{args.groupe}/items", api_key, {"format": "json"})

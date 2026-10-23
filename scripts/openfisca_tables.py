@@ -142,7 +142,29 @@ PAQUETS = {
         # La 0.136.1 verse les barèmes de 1969 et de 1975 du même paramètre (PR #495) : en
         # deçà, le tableau des barèmes successoraux du même chapitre ne pourrait être
         # engendré. La borne passe à la 0.136.1.
-        "version_minimale": (0, 136, 1),
+        # La 0.137 verse les retenues sur les intérêts et les dividendes et le taux et la
+        # franchise de la plus-value de titres (PR #496), sous `impot_revenu/
+        # capitaux_mobiliers/` et `impot_revenu/valeurs_mobilieres/` : en deçà, le tableau
+        # des taux de l'épargne du chapitre de l'impôt sur le revenu ne pourrait être
+        # engendré. La borne passe à la 0.137.
+        # La 0.140 corrige et date les plafonds de l'épargne (PR #499) : compte épargne en
+        # actions (`cea_cei/cea`, `cea_quote_part`), compte épargne pour l'investissement
+        # (`cea_cei/cei`, `interets_comptes_epargne_investissement/plaf`), assurance-vie
+        # (`assurance_vie/plaf`, `conj_plaf`, `enf_plaf`, `nb_enfants_max`), comptes spéciaux et
+        # emprunts obligataires (`interets_comptes_speciaux_epargne_bancaires/plaf`,
+        # `interets_emprunts_obligataires/plaf`). La 0.141 verse la condition de détention des
+        # actions cotées (`plus_value_cession_titres/actions_cotees/`), les retenues des
+        # non-résidents, les jetons de présence et la retenue définitive des fonds (PR #500) :
+        # en deçà, les tableaux des plafonds de l'épargne et des actions cotées du chapitre de
+        # l'impôt sur le revenu ne pourraient être engendrés, ou le seraient sur des plafonds
+        # non sourcés. Aucun chemin déjà lu ne bouge.
+        # La 0.138 verse la rupture du contrat de travail (PR #497, sous `marche_travail/
+        # rupture_contrat/`) et la 0.139 le temps de travail (PR #498, sous `marche_travail/
+        # temps_travail/`) ; la 0.140 et la 0.141 ne touchent pas à ces nœuds. En deçà, les
+        # tableaux des chapitres « La rupture du contrat de travail » et « La durée du
+        # travail et les congés » ne pourraient être engendrés. La borne passe à la 0.141,
+        # version publiée qui porte les deux nœuds.
+        "version_minimale": (0, 141),
     },
 }
 

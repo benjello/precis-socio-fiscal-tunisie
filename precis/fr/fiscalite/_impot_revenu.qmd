@@ -136,7 +136,7 @@ table("plafond_cpe",
 Source : @loi-62-73-cpe, art. 2 (JORT n° 64 des 28-31 décembre 1962, p. 1647) ; @lf-1966, art. 10 (JORT n° 66 du 31 décembre 1965, p. 1716) ; @loi79-66-lf1980, art. 8 (JORT n° 76 des 28-31 décembre 1979, p. 3540). Le tarif de 1983 ne fixe pas de plafond [@lf-1983, art. 9] (JORT n° 84 du 31 décembre 1982, p. 2877-2878) ; celui de 60 % est rétabli pour les revenus de 1986 [@lf-1986, art. 8] (JORT n° 91 du 31 décembre 1985, p. 1731). Les plafonds qu'auraient pu fixer d'éventuels tarifs intermédiaires, entre 1966 et 1979, ne sont pas connus ici.
 
 
-### La suppression de 1990
+### La suppression de 1990 {#sec-irpp-suppression-1990}
 
 L'inventaire le plus sûr de ce système est donné par le texte qui l'abroge. L'article 2 de la loi n° 89-114 du 30 décembre 1989 énumère nommément, avec leurs textes fondateurs, les prélèvements supprimés pour les revenus et bénéfices réalisés à compter du 1^er^ janvier 1990 [@loi-irpp-is-1989, art. 2] :
 
@@ -186,9 +186,9 @@ Cf. § 1 et TODO 12 de docs/notes/fiscalite-irpp-assiette-abattements.md. -->
 4. **Le revenu net imposable** est le solde de ces opérations. C'est lui, et non le revenu brut, que le barème frappe.
 5. **L'application du barème.** Le barème progressif par tranches du paragraphe I de l'article 44 du code [@code-irpp-is-1990, art. 44] est appliqué au revenu net imposable et donne l'impôt brut. La progressivité opère par tranches : chaque fraction de revenu n'est imposée qu'au taux de la tranche dans laquelle elle tombe, de sorte que le taux marginal supérieur ne s'applique jamais à la totalité du revenu.
 6. **Minimum d'impôt et plafonnement des déductions.** Le montant ainsi obtenu est corrigé par deux mécanismes de sens opposés. Le paragraphe II du même article 44 institue un **minimum d'impôt**, assis sur le chiffre d'affaires et dû quel que soit le résultat de la liquidation au barème ; ses modalités et ses montants ont varié à plusieurs reprises et sont retracés plus loin. Un plafonnement limite par ailleurs la part de l'impôt que les déductions et avantages fiscaux peuvent effacer : il est porté non par le code, mais par l'**article 12 *bis* de la loi n° 89-114** elle-même, ce qui explique qu'on ne le trouve pas dans les millésimes du code consolidé. Trois dispositifs homonymes doivent ici être distingués : l'article 12 *bis* de la loi n° 89-114 (minimum d'impôt au titre des avantages fiscaux), l'article 12 *bis* **du code** (règles d'amortissement, ajouté par l'article 41 de la loi de finances pour 2008) et l'article 44 § II du code (minimum d'impôt assis sur le chiffre d'affaires).
-7. **Retenue à la source, avances et acomptes.** L'impôt n'est pas acquitté en une seule fois au moment de la déclaration : il fait l'objet, selon les catégories de revenus, d'une [retenue à la source](#g-retenue-a-la-source) — mensuelle pour les salaires et pensions — et d'acomptes en cours d'année. Ces versements s'imputent sur l'impôt liquidé, le solde seul étant dû ou restitué. La distinction entre règle d'assiette et règle de recouvrement est ici essentielle : une dispense de retenue à la source n'exonère pas d'impôt.
+7. **Retenue à la source, avances et acomptes.** L'impôt n'est pas acquitté en une seule fois au moment de la déclaration : il fait l'objet, selon les catégories de revenus, d'une [retenue à la source](#g-retenue-a-la-source) — mensuelle pour les salaires et pensions — et d'acomptes en cours d'année. Ces versements s'imputent sur l'impôt liquidé, le solde seul étant dû ou restitué, sauf les retenues libératoires, qui font sortir le revenu du revenu global (@sec-irpp-epargne). La distinction entre règle d'assiette et règle de recouvrement est ici essentielle : une dispense de retenue à la source n'exonère pas d'impôt.
 8. **Les prélèvements adossés.** À l'impôt proprement dit s'ajoutent des prélèvements assis sur la même assiette et liquidés avec lui, au premier rang desquels la [contribution sociale de solidarité](#g-css), qui n'entre pas dans le produit de l'IRPP mais pèse sur le même contribuable.
-9. **Les régimes dérogatoires.** Cette chaîne n'est pas suivie par tous les contribuables. Le **régime forfaitaire** des bénéfices industriels et commerciaux, aujourd'hui aux articles 44 *bis* à 44 *sexies* du code, substitue à la détermination du bénéfice réel un impôt calculé sur le chiffre d'affaires ; le **régime forfaitaire optionnel** ajouté à l'article 44 *ter* par l'article 91 de la loi de finances pour 2026 procède de la même logique [@lf-2026, art. 91] ; enfin, certains revenus de capitaux mobiliers supportent une retenue à la source **libératoire**, qui les fait sortir du revenu global.
+9. **Les régimes dérogatoires.** Cette chaîne n'est pas suivie par tous les contribuables. Le **régime forfaitaire** des bénéfices industriels et commerciaux, aujourd'hui aux articles 44 *bis* à 44 *sexies* du code, substitue à la détermination du bénéfice réel un impôt calculé sur le chiffre d'affaires ; le **régime forfaitaire optionnel** ajouté à l'article 44 *ter* par l'article 91 de la loi de finances pour 2026 procède de la même logique [@lf-2026, art. 91] ; enfin, certains revenus de capitaux mobiliers supportent une retenue à la source **libératoire**, qui les fait sortir du revenu global (@sec-irpp-epargne).
 
 Les opérations 1 à 7 s'écrivent en quelques formules, pour un contribuable imposé au régime réel. Le revenu net imposable se forme d'abord :
 
@@ -244,7 +244,7 @@ $$
 
 où $V$ est le total des retenues à la source et des acomptes imputables, et $D$ le solde dû, ou restitué s'il est négatif.
 
-Cette écriture laisse de côté quatre règles décrites ailleurs dans le chapitre : le plancher de l'article 10 de la loi de finances complémentaire pour 2014, fondé sur l'impôt d'un agent public de même grade [@lfc-2014, art. 10] ; le régime forfaitaire et le régime forfaitaire optionnel, qui substituent à la chaîne un impôt assis sur le chiffre d'affaires ; les retenues à la source libératoires, qui font sortir certains revenus de $R$ ; et la contribution sociale de solidarité, distincte de l'impôt. Les notations sont rassemblées en annexe (@sec-irpp-notations).
+Cette écriture laisse de côté quatre règles décrites ailleurs dans le chapitre : le plancher de l'article 10 de la loi de finances complémentaire pour 2014, fondé sur l'impôt d'un agent public de même grade [@lfc-2014, art. 10] ; le régime forfaitaire et le régime forfaitaire optionnel, qui substituent à la chaîne un impôt assis sur le chiffre d'affaires ; les retenues à la source libératoires, qui font sortir certains revenus de $R$ (@sec-irpp-epargne) ; et la contribution sociale de solidarité, distincte de l'impôt. Les notations sont rassemblées en annexe (@sec-irpp-notations).
 
 <!-- TODO (documentaliste) : la formule écrit les minima de l'article 12 bis de la loi n° 89-114 et
 de l'article 44 § II du code comme deux planchers simultanés. Établir sur texte ou note commune
@@ -255,10 +255,10 @@ Chacun de ces maillons a sa propre histoire, et ces histoires ne sont pas synchr
 
 Un tableau les reprend ensuite texte par texte, pour montrer ce que chaque loi a changé d'un seul geste (@sec-irpp-reformes).
 
-<!-- TODO (rédaction, non bloquant pour la structure) : préciser, texte à l'appui, les articles
-régissant la retenue à la source et les acomptes provisionnels (articles 52 et 53 du code,
-pressentis mais non vérifiés ; hors périmètre de la note documentaire sur l'assiette). Aucun
-numéro d'article n'est avancé ici tant qu'il n'est pas vérifié sur le texte officiel.
+<!-- TODO (rédaction, non bloquant pour la structure) : l'article 52 du code (retenue à la source)
+est lu pour les revenus de capitaux et les revenus distribués (docs/notes/fiscalite-epargne-capital.md,
+§ 4.1, et @sec-irpp-epargne) ; reste à vérifier sur le texte officiel l'article 53 (acomptes
+provisionnels) et les retenues de l'article 52 sur les autres revenus avant de les nommer ici.
 Les deux autres points de ce TODO sont clos : la liste et l'ordre des catégories de l'article 8,
 et l'article porteur du plafonnement (article 12 bis de la loi n° 89-114), sont désormais
 documentés — cf. docs/notes/fiscalite-irpp-assiette-abattements.md, § 1 et § 9.3. -->
@@ -583,53 +583,33 @@ Le § IV de l'article 28 fixe enfin la plus-value imposable comme la différence
 
 ### Revenus de valeurs mobilières et de capitaux mobiliers (catégorie VI) {#sec-irpp-capitaux}
 
+Les retenues sur ces revenus, leurs exonérations et les dispositifs d'épargne aidée ont leur section (@sec-irpp-epargne) ; celle-ci donne les définitions.
+
 Les articles 29 à 32 définissent les **revenus de valeurs mobilières** : bénéfices distribués par les sociétés passibles de l'impôt sur les sociétés, les coopératives et leurs unions, les associations en participation revêtant en fait une forme juridique les rendant imposables à l'IS, et les établissements tunisiens de sociétés étrangères. Sont regardés comme distribués tous les bénéfices ou produits qui ne sont ni mis en réserve ni incorporés au capital, ainsi que les sommes ou valeurs mises à la disposition des associés et non prélevées sur les bénéfices [@code-irpp-is-1990, art. 29]. L'article 30 y assimile les avances, prêts et acomptes aux associés, les rémunérations, avantages et bénéfices occultes, ainsi que les rémunérations des membres des organes de direction. L'article 31 *bis*, ajouté par la loi de finances pour 2004, y a fait entrer la **plus-value de cession d'actions et de parts sociales**, pour les opérations effectuées à partir du 1^er^ janvier 2004.
 
 Les articles 34 et 35 visent les **revenus de capitaux mobiliers** : intérêts, arrérages, lots et primes de remboursement des obligations et titres d'emprunt négociables ; intérêts des créances ; intérêts et revenus des dépôts de sommes d'argent ; intérêts et rémunérations des cautionnements ; produits des comptes courants ; revenus des parts de fonds commun de créances ; bénéfice net des *sukuk* et produits de liquidation du fonds commun correspondant.
 
 **Cette catégorie ne comporte aucun abattement**, et c'est un fait à énoncer clairement, car il commande la lecture de la progressivité effective de l'impôt. L'article 33 dispose que « le revenu net est constitué par le **montant brut** des revenus distribués » ; l'article 35, que le revenu net est le « montant brut des intérêts et tous autres produits ou avantages que le créancier perçoit ». Les deux phrases sont inchangées depuis 1990 [@code-irpp-is-1990, art. 33].
 
-Ce qui tient lieu d'abattement, ce sont donc des **exonérations** — celles de l'article 38 — et, pour le recouvrement, des retenues à la source libératoires qui font sortir certains revenus du revenu global. Figurent dans la première catégorie, depuis 1990, les intérêts de l'épargne logement, les intérêts des dépôts et titres en devises ou en dinars convertibles et les intérêts des comptes courants entre industriels, commerçants ou exploitants agricoles ; s'y sont ajoutés les intérêts des comptes d'épargne pour les études (loi de finances pour 1999), les intérêts des comptes épargne pour l'investissement (loi de finances pour 2003), diverses plus-values de cession de titres cotés et de parts d'organismes de placement collectif, et les sommes provenant des jeux de pari sur les courses de chevaux et concours de pronostics sportifs organisés par des établissements publics [@lf-2018, art. 56].
+Ce qui tient lieu d'abattement, ce sont donc des **exonérations** — celles de l'article 38 — et des retenues à la source libératoires qui font sortir certains revenus du revenu global ; les unes et les autres sont décrites avec les dispositifs d'épargne (@sec-irpp-epargne-exoneree, @sec-irpp-epargne-vue). Les intérêts des comptes courants entre industriels, commerçants ou exploitants agricoles sont exonérés depuis 1990 [@code-irpp-is-1990, art. 38].
 
-Le mouvement structurant de la période est cependant en sens inverse : c'est la **fin de l'exonération générale des dividendes**. Le point 10 de l'article 38, qui exonérait les revenus de valeurs mobilières des articles 29 à 31, figurait dans le code depuis 1990 ; il a été abrogé par l'article 19 § 2 de la loi de finances pour 2014 [@lf-2014, art. 19], l'abrogation prenant effet pour les **opérations de distribution de bénéfices réalisées à partir du 1^er^ janvier 2015**, les distributions prélevées sur les fonds propres figurant au bilan au 31 décembre 2013 demeurant exonérées sous condition de mention dans les notes aux états financiers. C'est, sur la période documentée, la principale extension d'assiette de l'impôt.
+Pour les distributions faites à partir du 1^er^ janvier 2015, l'exonération générale des dividendes, inscrite au point 10 de l'article 38 depuis 1990, est abrogée par l'article 19 de la loi de finances pour 2014 [@lf-2014, art. 19]  (@sec-irpp-epargne-2014).
 
 ### Autres revenus (catégorie VII) {#sec-irpp-autres}
 
 Cette catégorie a changé de nature en cours de route. Dans le code de 1990, elle est **résiduelle et géographique** : « les autres revenus sont constitués des revenus de source étrangère n'ayant pas été soumis au paiement de l'impôt dans le pays d'origine » [@code-irpp-is-1990, art. 36], le revenu net étant constitué des « sommes effectivement perçues de l'étranger » (article 37). L'article 61 de la loi de finances pour 1998 y a ajouté un renvoi à l'article 26 pour les traitements, salaires, pensions et rentes viagères, et l'article 35 de la loi de finances pour 2007 la déduction de 80 % sur les pensions de source étrangère (@tbl-pensions-etrangeres).
 
-L'article 19 § 1 de la loi de finances pour 2016 lui donne un second visage [@lf-2016, art. 19] : y sont désormais rangés les revenus des **jeux de pari, de hasard et de loterie**, et les revenus déterminés selon les **dépenses personnelles ostensibles et notoires** et selon l'**accroissement du patrimoine**, conformément à l'article 43 du code, lorsque le contribuable ne réalise pas de revenus dans les catégories des bénéfices industriels et commerciaux, non commerciaux ou agricoles. Cette seconde branche est le **rattachement catégoriel de l'évaluation forfaitaire** : avant 2016, l'accroissement de fortune non justifié était réintégré sans catégorie de rattachement explicite. Elle se lit avec l'article 42, qui autorise l'évaluation d'après les éléments de train de vie selon le barème de l'annexe I du code, avec majoration lorsque plusieurs éléments sont réunis et sous condition d'une disproportion marquée avec le revenu net global déclaré — dispositions d'origine, jamais modifiées. L'article 19 n'énonçant pas de date d'effet propre, son application aux revenus de 2015 est **dérivée** de la règle générale de conversion.
+L'article 19 § 1 de la loi de finances pour 2016 lui donne un second visage [@lf-2016, art. 19] : y sont désormais rangés les revenus des **jeux de pari, de hasard et de loterie**, et les revenus déterminés selon les **dépenses personnelles ostensibles et notoires** et selon l'**accroissement du patrimoine**, conformément à l'article 43 du code, lorsque le contribuable ne réalise pas de revenus dans les catégories des bénéfices industriels et commerciaux, non commerciaux ou agricoles. Cette seconde branche est le **rattachement catégoriel de l'évaluation forfaitaire** : avant 2016, l'accroissement de fortune non justifié était réintégré sans catégorie de rattachement explicite. Elle se lit avec l'article 42, qui autorise l'évaluation d'après les éléments de train de vie selon le barème de l'annexe I du code, avec majoration lorsque plusieurs éléments sont réunis et sous condition d'une disproportion marquée avec le revenu net global déclaré — dispositions d'origine, jamais modifiées. L'article 19 n'énonçant pas de date d'effet propre, son application aux revenus de 2015 est **dérivée** de la règle générale de conversion. Depuis la loi de finances pour 2018, les sommes provenant des jeux de pari sur les courses de chevaux et des concours de pronostics sportifs organisés par des établissements publics sont exonérées [@lf-2018, art. 56].
 
 ### Ce qui ne relève d'aucune catégorie : charges déductibles et plafonnement {#sec-irpp-deductions}
 
 Le code range sous l'intitulé « [Déductions communes](#g-deductions-communes) » les articles 39 à 41. Il faut y ajouter un texte qui n'est pas dans le code et dont la localisation explique qu'il ait longtemps été difficile à retrouver : l'article 12 *bis* de la loi n° 89-114 elle-même.
 
-**Les charges déductibles du revenu global (article 39 § I).** La formule d'attaque, inchangée depuis 1990, pose le principe organisateur de tout l'article : l'impôt est établi sur le total des revenus nets « sous déduction des charges ci-après **lorsqu'elles n'entrent pas en compte pour l'évaluation de l'une des catégories de revenus** » [@code-irpp-is-1990, art. 39]. Cinq charges y figurent aujourd'hui : les arrérages des rentes payées à titre obligatoire et gratuit ; les primes d'assurance-vie et de contrats de capitalisation ; le remboursement des prêts universitaires, en principal et intérêts (loi de finances pour 1999) ; les intérêts et commissions des prêts d'acquisition ou de construction d'une **seule** habitation, sous condition de coût maximal et à l'exclusion des personnes déjà propriétaires ; et les cotisations des travailleurs non salariés affiliés à l'un des régimes légaux de sécurité sociale [@lf-2010, art. 44].
+**Les charges déductibles du revenu global (article 39 § I).** La formule d'attaque, inchangée depuis 1990, pose le principe organisateur de tout l'article : l'impôt est établi sur le total des revenus nets « sous déduction des charges ci-après **lorsqu'elles n'entrent pas en compte pour l'évaluation de l'une des catégories de revenus** » [@code-irpp-is-1990, art. 39]. Cinq charges y figurent aujourd'hui : les arrérages des rentes payées à titre obligatoire et gratuit ; les primes d'assurance-vie et de contrats de capitalisation, dont le plafond est retracé avec les dispositifs d'épargne (@sec-irpp-epargne-assurance-vie) ; le remboursement des prêts universitaires, en principal et intérêts (loi de finances pour 1999) ; les intérêts et commissions des prêts d'acquisition ou de construction d'une **seule** habitation, sous condition de coût maximal et à l'exclusion des personnes déjà propriétaires ; et les cotisations des travailleurs non salariés affiliés à l'un des régimes légaux de sécurité sociale [@lf-2010, art. 44].
 
-Le plafond de la déduction des **primes d'assurance-vie** n'a que ses deux bornes établies. Dans le code de 1990, il était de 200 dinars par an, majorés de 100 dinars au titre du conjoint et de 50 dinars au titre de chacun des quatre premiers enfants à charge. À compter des revenus de 2020, il est de 100 000 dinars, l'article 16 de la loi de finances pour 2021 l'ayant porté de 10 000 à 100 000 dinars [@lf-2021, art. 16] et, dans le même mouvement, ayant soumis pour la première fois cette déduction au minimum d'impôt de l'article 12 *bis* de la loi n° 89-114 [@dgi-nc-1-2021]. L'intitulé officiel de cet article est « Encouragement de l'épargne à moyen et long terme via les comptes épargne en actions et les contrats d'assurance-vie et de capitalisation ». Les valeurs et les dates intermédiaires entre ces deux bornes ne sont pas établies : le contenu de sept textes modificatifs n'est pas encore établi ici, et aucune série n'est publiée ici tant qu'elle n'est pas complète.
+**La déduction des intérêts de l'épargne (article 39 § II)** et celle des primes d'assurance-vie sont des avantages à l'épargne : leurs plafonds successifs sont donnés avec les dispositifs d'épargne aidée (@tbl-epargne, @tbl-irpp-epargne-assurance-vie).
 
-<!-- TODO (documentaliste) : dépouiller les sept textes modificatifs du plafond des primes d'assurance-vie. -->
-
-<!-- TODO (documentaliste) : établir la série intermédiaire du plafond de déduction des primes
-d'assurance-vie (art. 39 § I-2) entre 200 D (revenus 1990) et 10 000 D (avant les revenus 2020) :
-sept textes à dépouiller — LF 1998 art. 52, LF 2002 art. 45, LF 2008 art. 23, LFC 2012 art. 42,
-LF 2014 art. 24, LF 2018 art. 27, LF 2020 art. 12. Même besoin pour le plafond du compte épargne
-pour l'investissement (art. 39 bis) et pour le plafond d'exonération de ses intérêts (art. 38,
-point 15). Cf. § 10 de docs/notes/fiscalite-irpp-assiette-abattements.md. -->
-
-**La déduction des intérêts de l'épargne (article 39 § II)**, en revanche, se laisse retracer intégralement.
-
-| Années de revenus | Plafond global | Dont comptes spéciaux d'épargne | Texte |
-|---|---|---|---|
-| 1990 → 1991 ? | 1 000 D (comptes spéciaux d'épargne seuls) | 1 000 D | article 39 § II du code [@code-irpp-is-1990, art. 39] |
-| 1992 ? → 2015 | 1 500 D | 1 000 D | article 30 de la loi de finances pour 1992 (**l'année de bascule entre ces deux lignes n'est pas établie** : le texte de l'article 30 de la loi n° 91-98 du 31 décembre 1991 n'est pas établi ici) |
-| 2016 → 2020 | 5 000 D | 3 000 D | article 13 de la loi de finances pour 2017 [@lf-2017, art. 13] ; date d'effet attestée par [@dgi-nc-2-2017] |
-| 2021 → | 10 000 D | 6 000 D | article 24 de la loi de finances pour 2022 [@lf-2022, art. 24] ; date d'effet attestée par [@dgi-nc-1-2022] |
-
-: Plafond de déduction des intérêts de l'épargne (article 39 § II du code) {#tbl-epargne}
-
-Les intitulés officiels des deux derniers relèvements sont « Relèvement du montant des intérêts des comptes spéciaux d'épargne déductible de l'assiette de l'impôt » (loi de finances pour 2017) et « Relèvement du montant des intérêts des comptes spéciaux d'épargne et des intérêts des emprunts obligataires déductible de l'assiette de l'impôt » (loi de finances pour 2022). L'article 34 de la loi de finances pour 2024 n'a **pas** modifié ces montants : il s'est borné à ajouter les bons du trésor assimilables à la liste des supports éligibles [@lf-2024, art. 34]. Un paragraphe II *bis*, ajouté par l'article 29 de la loi de finances pour 2022, ouvre par ailleurs une déduction distincte, également plafonnée à 10 000 dinars par an, au titre des intérêts des emprunts obligataires verts, socialement responsables et durables [@lf-2022, art. 29].
-
-Les autres paragraphes de l'article 39 relèvent moins de l'assiette que du régime des avantages fiscaux : deux tiers des revenus de certaines activités (§ V, qui a porté de 2014 à mars 2017 la déduction des revenus d'exportation), comptes épargne en actions (§ VIII, plafond porté de 50 000 à 100 000 dinars par la loi de finances pour 2021 [@lf-2021, art. 16]), dons et subventions au Fonds national de l'emploi (§ X), comptes épargne pour l'investissement (article 39 *bis*), parts de fonds d'amorçage et de fonds communs de placement à risque (article 39 *ter*), acquisition d'entreprises (article 39 *quater*). Un fait de chronologie mérite d'être noté : les paragraphes III, III *bis*, III *ter*, V *bis*, VI, VII, IX et XI ont été abrogés simultanément par la loi n° 2017-8 du 14 février 2017 portant refonte du dispositif des avantages fiscaux [@loi-avantages-fiscaux-2017]. Avant elle, un avantage au titre du réinvestissement se trouvait hors du code : le code d'incitations aux investissements de 1993 accordait un dégrèvement des revenus réinvestis dans la souscription au capital, dans la limite de 35 % du revenu net imposable [@loi-93-120-code-incitations, art. 7] (@sec-df-code-1993).
+Les autres paragraphes de l'article 39 relèvent moins de l'assiette que du régime des avantages fiscaux : deux tiers des revenus de certaines activités (§ V, qui a porté de 2014 à mars 2017 la déduction des revenus d'exportation), comptes épargne en actions (§ VIII ; @sec-irpp-epargne-cea), dons et subventions au Fonds national de l'emploi (§ X), comptes épargne pour l'investissement (article 39 *bis* ; @sec-irpp-epargne-cei), parts de fonds d'amorçage et de fonds communs de placement à risque (article 39 *ter*), acquisition d'entreprises (article 39 *quater*). Un fait de chronologie mérite d'être noté : les paragraphes III, III *bis*, III *ter*, V *bis*, VI, VII, IX et XI ont été abrogés simultanément par la loi n° 2017-8 du 14 février 2017 portant refonte du dispositif des avantages fiscaux [@loi-avantages-fiscaux-2017]. Avant elle, un avantage au titre du réinvestissement se trouvait hors du code : le code d'incitations aux investissements de 1993 accordait un dégrèvement des revenus réinvestis dans la souscription au capital, dans la limite de 35 % du revenu net imposable [@loi-93-120-code-incitations, art. 7] (@sec-df-code-1993).
 
 
 **Le plafonnement des avantages fiscaux : l'article 12 *bis* de la loi n° 89-114.** Le mécanisme qui limite l'effet cumulé des déductions ne figure pas dans le code, mais dans la **loi de promulgation** elle-même — ce qui explique qu'il soit absent des millésimes du code consolidé. Le code y renvoie pourtant constamment, sous deux formules qui s'opposent : « **sous réserve** du minimum d'impôt prévu par l'article 12 *bis* de la loi n° 89-114 du 30 décembre 1989 » pour les déductions qui y sont soumises (article 39 § I-2, § VIII, articles 39 *bis*, 39 *quater*…), et « **nonobstant** les dispositions de l'article 12 *bis* » pour celles qui y échappent (article 39 § V, article 39 *ter*…).
@@ -651,7 +631,9 @@ Deux précisions doivent accompagner ce tableau. **La date d'effet du passage à
 balayage des lois de finances 2000-2006 est structurellement inopérant, plusieurs PDF du corpus
 employant une police à encodage décalé qui supprime les chiffres à l'extraction : une OCR forcée est
 requise) ; (ii) l'exercice de rattachement du passage à 45 % au 1er avril 2017, à établir sur une
-note commune de 2017 non identifiée. Cf. § 9.3 et § 10 de
+note commune de 2017 non identifiée. Jalon : les NC 35/2003 et 16/2004 écrivent que le minimum est
+« fixé à 60 % de l'impôt dû sur le revenu global » : le taux de 60 % est en vigueur en 2003
+(docs/notes/fiscalite-epargne-capital.md, § 4.5). Cf. § 9.3 et § 10 de
 docs/notes/fiscalite-irpp-assiette-abattements.md. -->
 
 <!-- TODO : documenter également la « contribution au budget de l'État » (barème en jours de
@@ -743,7 +725,7 @@ L'article 48 de la loi de finances pour 2014 **dédouble le taux** selon l'origi
 L'article 10 de la loi de finances complémentaire pour 2014 ajoute enfin un **plancher d'une autre nature**, qui ne s'assied pas sur le chiffre d'affaires mais sur une comparaison. Pour les personnes visées au paragraphe II de l'article 22 qui exercent une activité ayant un équivalent dans le secteur public, l'impôt annuel ne peut être inférieur à celui qu'acquitte, pour la même activité et au même grade, un agent de ce secteur. La règle vaut à compter de la quatrième année d'activité suivant le dépôt de la déclaration d'existence, et à compter du 1^er^ janvier 2015 pour ceux qui dépassaient déjà quatre ans à cette date [@lfc-2014, art. 10].
 
 ::: {.callout-note title="Deux articles de la même loi, à ne pas confondre"}
-La loi de finances complémentaire pour 2014 porte aussi une **contribution conjoncturelle**, instituée par son article 29 pour la seule année 2014 et assise notamment sur 50 % du minimum d'impôt de l'article 44 § II [@lfc-2014, art. 29]. Ce n'est pas un modificatif du minimum : celui-ci y sert d'assiette à un prélèvement temporaire. Un relevé qui rangerait les deux articles sur la même ligne ferait croire à une modification du minimum en 2014 alors qu'il n'en est rien.
+La loi de finances complémentaire pour 2014 porte aussi une **contribution conjoncturelle exceptionnelle au profit du budget de l'État**, instituée par son article 28 au titre de la seule année 2014. Son article 29 en fixe les taux et prend notamment pour assiette 50 % du minimum d'impôt des personnes physiques (article 44 § II) et 50 % de celui des sociétés (article 49 § II) [@lfc-2014, art. 28 et 29, p. 2103]. Ce n'est pas un modificatif du minimum : celui-ci y sert d'assiette à un prélèvement temporaire. Un relevé qui rangerait les deux articles sur la même ligne ferait croire à une modification du minimum en 2014 alors qu'il n'en est rien. La contribution de 2017 prend de même 50 % du minimum pour assiette, sans le modifier [@lf-2017, art. 49, pp. 3843-3844]. Ces contributions ont leur chapitre (@sec-ccj-reforme-2014).
 :::
 
 <!-- TODO (documentaliste) : deux points restent ouverts sur cette section.
@@ -766,7 +748,7 @@ modificatif. Cf. Q9 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
 ## L'évolution des régimes dérogatoires {#sec-irpp-regimes}
 
-Le régime réel n'est pas le seul mode d'imposition des personnes physiques. Trois sous-secteurs juridiques coexistent aujourd'hui : le **régime réel**, le **régime forfaitaire** des bénéfices industriels et commerciaux — porté par les articles 44 *bis* à 44 *sexies* du code, issus du transfert opéré par l'article 37 de la loi de finances pour 2011 depuis le § IV de l'article 44 —, et le **régime forfaitaire optionnel** que l'article 91 de la loi de finances pour 2026 ajoute à l'article 44 *ter* pour les contribuables dont le chiffre d'affaires n'excède pas 100 000 dinars [@lf-2026, art. 91].
+Le régime réel n'est pas le seul mode d'imposition des personnes physiques. Trois sous-secteurs juridiques coexistent aujourd'hui : le **régime réel**, le **régime forfaitaire** des bénéfices industriels et commerciaux — porté par les articles 44 *bis* à 44 *sexies* du code, issus du transfert opéré par l'article 37 de la loi de finances pour 2011 depuis le § IV de l'article 44 —, et le **régime forfaitaire optionnel** que l'article 91 de la loi de finances pour 2026 ajoute à l'article 44 *ter* pour les contribuables dont le chiffre d'affaires n'excède pas 100 000 dinars [@lf-2026, art. 91]. Les revenus de capitaux soumis à une retenue libératoire sortent eux aussi de la chaîne de calcul (@sec-irpp-epargne).
 
 ## Le régime forfaitaire {#sec-irpp-forfait}
 
@@ -986,11 +968,550 @@ secteur en 2010 (diapositives 6 et 33), comparaison avec le réel (diapositive 1
 forfaitaires et 23,4 MD dans « إدارة الجباية : الواقع والآفاق » (juin 2013, p. 11-12), synthèse
 CNF de novembre 2013. Fichiers : ~/projets/tunisia-data/data/raw/minfinances/reforme_fiscale_2013_2014/. -->
 
-<!-- TODO (documentaliste) : MANQUE ENCORE, et c'est un sujet distinct : le régime de la retenue à la source libératoire
-(revenus de capitaux mobiliers notamment), articles du code et série des taux.
-Cf. Q12 et Q6 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
+## Les revenus de l'épargne et du capital {#sec-irpp-epargne .domicile-unique}
 
-## Les prélèvements adossés : la contribution sociale de solidarité
+Cette section décrit comment l'impôt sur le revenu saisit les revenus de placement d'une personne physique résidente : intérêts, dividendes, plus-values de cession de titres, et dispositifs d'épargne aidée. La plus-value immobilière est un revenu foncier (@sec-irpp-foncier), dont l'histoire est au chapitre du patrimoine immobilier (@sec-pi-1990) ; le régime des sociétés qui s'introduisent en bourse relève de l'impôt sur les sociétés (@sec-impot-societes, « Un régime hors du code : l'admission en bourse »).
+
+Un revenu de placement suit l'un de trois régimes. Il peut rester dans le revenu net global $R$ et subir le barème : la [retenue à la source](#g-retenue-a-la-source) opérée par le payeur est alors **imputable**, c'est-à-dire qu'elle entre dans $V$, le total des retenues et acomptes déduits de l'impôt dû $I$, le solde dû étant $D = I - V$. Il peut sortir de $R$ : la [retenue libératoire](#g-retenue-liberatoire) éteint l'impôt sur ce revenu, qui n'est plus déclaré, et elle n'entre pas dans $V$. Il peut enfin être exonéré, ou la somme placée être déduite du revenu, dans la limite d'un plafond. Une [retenue définitive et non restituable](#g-retenue-definitive-non-restituable) n'est jamais rendue, même quand elle dépasse l'impôt du bénéficiaire. Les [revenus de capitaux mobiliers](#g-revenus-capitaux-mobiliers), pour l'essentiel des intérêts, et les [revenus de valeurs mobilières](#g-revenus-valeurs-mobilieres), bénéfices distribués et plus-values de titres, sont définis à la @sec-irpp-capitaux.
+
+### Vue d'ensemble {#sec-irpp-epargne-vue}
+
+En 2026, le taux qui frappe un dinar de revenu de placement dépend du placement plus que du revenu de son titulaire. Les intérêts restent au barème, jusqu'à 40 %, avec une retenue imputable de 20 % ; les dividendes supportent une retenue libératoire de 10 % ; la plus-value de cession de titres est imposée à part, à 0, 10 ou 15 % selon la cotation et la durée de détention. Le @tbl-irpp-epargne-taux donne ces taux à chaque réforme depuis 1990.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_taux",
+      "Taux marginal légal d'un dinar de revenu de placement, pour un contribuable de la dernière tranche du barème, aux dates des réformes, 1990-2026",
+      "tbl-irpp-epargne-taux")
+```
+
+L'exonération des actions cotées dépend d'une durée de détention depuis 2011 ; le tableau suivant la donne à part.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_cotees",
+      "Plus-value de cession d'actions cotées, aux dates des réformes, 2004-2026",
+      "tbl-irpp-epargne-cotees")
+```
+
+Note de lecture : le taux est un taux marginal légal. Il vaut au-delà des plafonds d'exonération ou de déduction, sur le rendement nominal, sans compter l'impôt payé en amont par la société distributrice ni la contribution sociale de solidarité (@sec-irpp-css). « Barème » désigne le taux de la dernière tranche (@tbl-bareme-irpp-generations). Pour un contribuable du bas du barème, la retenue imputable de 20 % peut dépasser l'impôt dû ; l'excédent est restitué ([code, art. 54](#r-epargne-interets-1990)), sauf en 2021, où la retenue est libératoire. Depuis 2015, une personne physique dont les revenus distribués ne dépassent pas 10 000 D par an peut déduire la retenue sur les dividendes de son impôt annuel ou se la faire restituer ([loi de finances pour 2014, art. 19](#r-epargne-distribues-2014)).
+
+<!-- TODO (documentaliste) : sort des intérêts courus avant le 10 juin 2020 et payés après (aucune note commune propre au décret-loi n° 2020-30 au corpus ; note fiscalite-epargne-capital.md, § 14, D3). -->
+
+Trois traits ressortent du tableau.
+
+- **De 1990 à 2014, les dividendes sont hors de l'impôt, et toute plus-value de titres l'est jusqu'en 2004.** Les intérêts sont au barème, sauf ceux des titres anonymes, frappés jusqu'au 31 décembre 1996 d'un taux libératoire de 25 ou 35 %.
+- **Depuis 2015, le dividende supporte une retenue libératoire**, de 5 % puis de 10 % à partir de 2018. Les intérêts sont restés au barème, sauf de juin 2020 à décembre 2021 : 35 % libératoires sur certains dépôts à terme, puis 20 % libératoires sur tous les intérêts en 2021. Le tableau ne compte pas l'impôt sur les sociétés payé sur le bénéfice distribué : il ne classe pas les placements selon l'impôt total qu'ils supportent.
+- **Les épargnes aidées jouent par des plafonds en dinars** : comptes spéciaux d'épargne, assurance-vie, comptes épargne en actions et pour l'investissement (@sec-irpp-epargne-dispositifs).
+
+### La mise en place : des impôts cédulaires au code de 1990 {#sec-irpp-epargne-1990}
+
+À partir des revenus de 1990, les intérêts entrent dans le revenu global et subissent le barème, avec une retenue imputable de 10 ou 15 % ; les bons de caisse anonymes paient 35 % libératoires ; les dividendes sont exonérés.
+
+Avant 1990, les revenus de placement supportent deux impôts cédulaires, la taxe sur le revenu des valeurs mobilières (décret organique du 23 décembre 1918) et l'impôt sur le revenu des créances (décret organique du 20 décembre 1919), que la loi n° 89-114 supprime (@sec-irpp-suppression-1990). Depuis [la loi de finances pour 1968](#r-epargne-interets-1968), la première taxe frappe les revenus de valeurs mobilières et de créances, « dividendes, coupons, arrérages, intérêts », au taux global de 16,90 % ou de 14,50 % ; les créances, dépôts, cautionnements et comptes courants supportent 10 % à partir du 1^er^ janvier 1968. Les intérêts des bons de caisse dont l'émetteur ne déclare pas les bénéficiaires supportent en outre une taxe additionnelle de 24 %, qui « remplace forfaitairement la part de la Contribution Personnelle d'État » : le code de 1990 en reprend le principe avec son taux de 35 % sur les bons anonymes. [La loi de finances pour 1988](#r-epargne-interets-1988), sous la rubrique « Unification des taux de l'impôt sur les revenus des valeurs mobilières et de l'impôt sur les revenus de capitaux mobiliers », soumet à un taux unique de 20 % les revenus des valeurs mobilières autres que ceux que vise la loi n° 87-48 du 2 août 1987, les jetons de présence et les revenus des capitaux mobiliers ; un crédit d'impôt de 20 % de ces revenus s'impute sur la contribution personnelle d'État des personnes physiques. Le code de 1990 garde la retenue opérée par le payeur et son imputation, ainsi qu'un taux plus élevé pour les titres dont le porteur n'est pas révélé ; il exonère les dividendes, que la loi de finances pour 1988 taxait à 20 %, et ramène à 15 % le taux des intérêts.
+
+
+<!-- TODO (documentaliste) : régime des revenus de placement de 1969 à 1987 (LF 1983, art. 24 ; LF 1984, art. 24 ; loi n° 87-48), et contexte de la réforme de 1989-1990 propre à ces revenus. -->
+
+- **Les intérêts.** Le code retient 10 % sur les intérêts des comptes spéciaux d'épargne des banques et 15 % sur les autres revenus de capitaux mobiliers ; ces retenues s'imputent sur l'impôt ([code, art. 52 et 54](#r-epargne-interets-1990)). Les bons de caisse au porteur dont le bénéficiaire n'est pas révélé supportent 35 %, libératoires.
+- **Les dividendes.** Les revenus de valeurs mobilières des articles 29 à 31 sont exonérés, sans retenue ([code, art. 38, point 10](#r-epargne-distribues-1990)).
+- **L'épargne aidée.** Le code déduit du revenu les intérêts des comptes spéciaux d'épargne, dans la limite de 1 000 D, et les primes d'assurance-vie, dans la limite de 200 D majorés pour le conjoint et les enfants ; il exonère les intérêts de l'épargne logement, des livrets de la Caisse d'épargne nationale de Tunisie (CENT) et des dépôts en devises (@sec-irpp-epargne-dispositifs). Les revenus servis aux non-résidents supportent une retenue libératoire de 15 % (@sec-irpp-epargne-non-residents).
+
+### Les grandes réformes {#sec-irpp-epargne-reformes}
+
+Cinq réformes changent le traitement des revenus de placement : l'harmonisation des retenues sur l'épargne en 1992, achevée par le taux unique de 1997 ; la relance du marché financier en 1999 ; l'imposition de la plus-value sur actions en 2004 ; celle des dividendes, votée en 2013 pour les distributions de 2015 ; trois régimes successifs pour les intérêts de 2020 à 2022. Les textes, élément par élément, sont aux registres repliés de la @sec-irpp-epargne-registres.
+
+| Année | Loi | Ce qui change | Portée |
+|---|---|---|---|
+| 1992 | [loi de finances pour 1992](#r-epargne-interets-1992) | 15 % sur tous les dépôts et obligations ; 25 % et 35 % libératoires sur les titres anonymes ; 20 % définitive pour les organismes exonérés | **rupture** |
+| 1997 | [loi de finances pour 1997](#r-epargne-interets-1997) | un seul taux, 20 % ; fin des taux libératoires des titres anonymes | étape (de la réforme de 1992) |
+| 1999 | [loi n° 99-92](#r-epargne-cea-1999) | compte épargne en actions : déduction de 50 % des dépôts, dans la limite de 5 000 D | **rupture** |
+| 2004 | [loi de finances pour 2004](#r-epargne-pv-2004) | la plus-value de cession d'actions et de parts sociales est imposée à 10 % ; actions cotées exonérées ; franchise de 10 000 D | **rupture** |
+| 2011 | [loi de finances pour 2011](#r-epargne-pv-2011) | exonération des actions cotées subordonnée à une durée de détention | étape (de la réforme de 2004) |
+| 2014 | [loi de finances pour 2014](#r-epargne-distribues-2014) | dividendes : exonération → retenue libératoire de 5 %, pour les distributions faites à partir de 2015 | **rupture** |
+| 2018 | [loi de finances pour 2018](#r-epargne-distribues-2018) | dividendes : 5 % → 10 % | étape (de la réforme de 2014) |
+| 2020 | [décret-loi n° 2020-30](#r-epargne-interets-2020) | 35 % libératoires sur les dépôts à terme les mieux rémunérés | étape (de la réforme de 2020-2022) |
+| 2021 | [loi de finances pour 2021](#r-epargne-interets-2021) | retenue de 20 % libératoire sur tous les intérêts | **rupture** |
+| 2022 | [loi de finances pour 2022](#r-epargne-interets-2022) | retour à la retenue imputable | étape (de la réforme de 2020-2022) |
+| 2023 | [loi de finances pour 2023](#r-epargne-pv-2023) | plus-value : 10 % ou 15 % selon la cotation et la durée de détention ; franchise supprimée | étape (de la réforme de 2004) |
+
+: Les grandes réformes de l'imposition des revenus de placement, 1992-2023, et leurs étapes {#tbl-irpp-epargne-reformes}
+
+#### 1992 : harmoniser les formes d'épargne, puis unifier le taux (1997) {#sec-irpp-epargne-1992}
+
+Au 2 janvier 1992, les intérêts de toutes les formes d'épargne supportent la même retenue, 15 %. [La loi de finances pour 1992](#r-epargne-interets-1992) range ses mesures sous le titre « Dispositions portant harmonisation du régime fiscal applicable aux différentes formes d'épargne », avec deux rubriques : « Déduction des intérêts de l'épargne » et « Dispositions relatives à la retenue à la source ».
+
+Dans son rapport pour 1992, la Banque centrale de Tunisie présente la mesure « dans le cadre de la suppression des distorsions fiscales qui existent entre les diverses formes de placements » : la loi « a aligné les taux d'imposition qui grèvent les intérêts de l'épargne bancaire d'un côté et de l'épargne postale de l'autre » [@bct-ra-1992].
+
+<!-- TODO (documentaliste) : page imprimée du rapport annuel 1992 de la BCT pour les deux citations (fichier RA_fr_1992.pdf, p. 135 et 137 du fichier). -->
+
+- **Les intérêts.** 10 % sur les comptes spéciaux des banques et 15 % sur les autres revenus → 15 % sur tous les dépôts, livrets de la CENT compris, sur les obligations et sur les autres revenus de capitaux mobiliers, imputables.
+- **Les titres anonymes.** 35 % sur les bons de caisse → 25 % sur les obligations au porteur et 35 % sur les autres titres au porteur, libératoires.
+- **Les organismes exonérés.** Les revenus de capitaux mobiliers des personnes morales qui ne sont pas soumises à l'impôt sur les sociétés, ou qui en sont totalement exonérées, supportent une retenue de 20 %, définitive et non restituable (@sec-irpp-epargne-fonds).
+- **Les livrets de la CENT.** L'exonération devient une déduction plafonnée : le plafond global passe à 1 500 D, dont 1 000 D au titre des comptes spéciaux ([art. 30](#r-epargne-cs-1992)).
+
+La même loi crée le compte d'épargne-emprunts obligataires, dont les intérêts supportent 15 % libératoires si les sommes restent bloquées cinq ans ([art. 33](#r-epargne-cs-1992-ceo) ; @sec-irpp-epargne-comptes-speciaux). La Banque centrale rattache ce compte et les fonds communs de placement, créés la même année, à « l'encouragement des autorités monétaires à la mobilisation de l'épargne et afin de contribuer à la réalisation de la privatisation de certaines entreprises publiques » [@bct-ra-1992].
+
+**1997 : un taux unique.** Au 1^er^ janvier 1997, [la loi de finances pour 1997](#r-epargne-interets-1997), sous la rubrique « Unification des taux de la retenue à la source sur les revenus de capitaux mobiliers », porte la retenue de 15 % à 20 % et supprime les taux libératoires des titres anonymes et du compte d'épargne-emprunts obligataires : ces revenus rejoignent le barème. La Banque centrale relève que le taux « a été unifié à 20 % », parmi les mesures de « renforcement des structures de fonctionnement du marché financier », à côté de la création du Conseil du marché financier et de la cotation électronique à la Bourse [@bct-ra-1996].
+
+Entre-temps, en 1995, les jetons de présence quittent l'exonération des dividendes et supportent une retenue de 15 % ([loi de finances pour 1995](#r-epargne-distribues-1995)) ; en 1999, les intérêts des dépôts en devises et en dinars convertibles, déjà exonérés, sortent du champ de la retenue ([loi de finances pour 1999](#r-epargne-interets-1999)).
+
+#### 1999 : relancer le marché financier {#sec-irpp-epargne-1999}
+
+Le 26 août 1999, [la loi n° 99-92](#r-epargne-cea-1999) « relative à la relance du marché financier » crée le [compte épargne en actions](#g-compte-epargne-actions) (CEA) : son titulaire déduit de son revenu la moitié des sommes déposées, dans la limite de 5 000 D, s'il les laisse cinq ans placées en actions cotées et en bons du Trésor assimilables. La même loi soumet à l'impôt sur les sociétés au taux de 20 %, pendant cinq ans, les sociétés qui admettent au moins 30 % de leur capital à la cote ; ce régime relève de l'impôt sur les sociétés (@sec-impot-societes).
+
+Dans son rapport pour 2000, la Banque centrale écrit qu'« aucune nouvelle admission à la cote de la Bourse n'a été enregistrée, au cours de l'année 2000, et ce, en dépit des incitations fiscales additionnelles décidées par la loi n° 99-92 du 17 août 1999 pour encourager de nouvelles sociétés à s'introduire en Bourse » [@bct-ra-2000].
+
+<!-- TODO (documentaliste) : page imprimée du rapport annuel 2000 de la BCT (fichier p. 231) ; exposé des motifs ou débats de la loi n° 99-92. -->
+
+- **Avant → après.** Aucune déduction liée au placement en actions → déduction de 50 % des dépôts sur un CEA, dans la limite de 5 000 D, sous blocage de cinq ans.
+
+<!-- TODO (documentaliste) : décret n° 99-2773 du 13 décembre 1999 (conditions d'ouverture des CEA) à lire et à citer ; année de revenus de la première déduction (revenus 1999 vraisemblables, non attestés). -->
+
+Entre-temps, en 2002, les fonds communs de placement en valeurs mobilières reçoivent un régime propre et le CEA s'ouvre aux organismes de placement collectif (@sec-irpp-epargne-fonds, @sec-irpp-epargne-cea) ; en 2003 naît le compte épargne pour l'investissement (@sec-irpp-epargne-cei). La Banque centrale range ces deux comptes parmi les mesures prises pour « concrétiser […] les objectifs du Xème Plan », par « la promotion de l'épargne longue destinée directement au financement des investissements par l'adoption de régimes fiscaux de faveur pour les titulaires de comptes épargne en actions et épargne pour l'investissement » [@bct-ra-2003].
+
+#### 2004 : la plus-value sur actions entre dans l'impôt {#sec-irpp-epargne-2004}
+
+Pour les cessions faites à partir du 1^er^ janvier 2004, la plus-value de cession d'actions et de parts sociales réalisée par une personne physique hors de son activité devient un revenu de valeurs mobilières, imposé à 10 % hors barème. [La loi de finances pour 2004](#r-epargne-pv-2004) range ces articles sous deux rubriques : « Soumission de la plus-value provenant de la cession des actions et des parts sociales à l'impôt sur le revenu » et « Exonération de la plus-value réalisée dans le cadre d'une opération d'introduction en bourse ».
+
+<!-- TODO (documentaliste) : contexte de 2004 (exposé des motifs, rapport de la commission des finances ; le rapport annuel 2004 de la BCT n'est pas récupéré, adresse au catalogue sources/bct-archives-urls.csv). -->
+
+- **Avant → après.** La plus-value n'est rattachée à aucune catégorie → [plus-value de cession de titres](#g-plus-value-cession-titres), égale au prix de cession moins la valeur d'acquisition, après imputation des moins-values de l'année, et imposée à 10 % de son montant.
+- **Les exonérations.** Actions cotées à la Bourse des valeurs mobilières de Tunis, cessions faites lors d'une introduction en bourse, actions de SICAV, cessions faites pour le compte de personnes physiques par les sociétés d'investissement à capital risque (SICAR).
+- **La franchise.** Les 10 000 premiers dinars de plus-value de l'année sont exonérés.
+
+La même loi récrit l'article 52 du code : à la lettre, la retenue de 20 % sur les intérêts devient libératoire pour tous ([art. 71](#r-epargne-interets-2004)). L'administration la maintient imputable pour les résidents, qui déclarent ces revenus dans leur revenu global [@dgi-nc-8-2004] ; [la loi de finances pour 2005](#r-epargne-interets-2005) récrit l'article en ce sens et réserve le caractère libératoire aux non-résidents. La loi de finances pour 2004 exonère aussi les rentes viagères servies par les contrats d'assurance-vie et porte le plafond du CEA à 20 000 D (@sec-irpp-epargne-assurance-vie, @sec-irpp-epargne-cea).
+
+**2011 : une durée de détention pour les actions cotées.** Pour les cessions faites à partir du 1^er^ janvier 2011, [la loi de finances pour 2011](#r-epargne-pv-2011), sous la rubrique « Rationalisation de l'exonération de la plus value provenant de la cession des titres », réserve l'exonération des actions cotées à celles acquises avant cette date et aux introductions en bourse. Une action cotée acquise depuis est exonérée si elle est cédée après la fin de l'année qui suit son acquisition, et imposée à 10 % sinon. La même loi impose les plus-values des non-résidents (@sec-irpp-epargne-non-residents).
+
+**2023 : deux taux.** Pour les cessions faites à partir du 1^er^ janvier 2023, [la loi de finances pour 2023](#r-epargne-pv-2023) fixe deux taux, sous la rubrique « مراجعة النظام الجبائي للقيمة الزائدة المتأتية من التفويت في السندات », que l'administration traduit « Révision du régime fiscal de la plus-value provenant de la cession des titres non rattachés à un bilan » [@dgi-nc-3-2023] :
+
+- 10 % pour les actions cotées cédées avant la fin de l'année qui suit l'acquisition, et pour les autres actions, parts sociales et parts de fonds cédées après ;
+- 15 % pour les actions non cotées, parts sociales et parts de fonds cédées avant cette échéance ;
+- la franchise de 10 000 D est supprimée. Les actions cotées détenues au-delà de l'échéance restent exonérées.
+
+Entre-temps, en 2007, la plus-value d'apport de titres à une société holding qui s'engage à s'introduire en bourse est exonérée ([loi de finances pour 2007](#r-epargne-pv-2007)).
+
+<!-- TODO (documentaliste) : décret-loi n° 2011-100 du 21 octobre 2011, art. 6 à 13 (plus-value de cession de parts de fonds à partir de 2012, point 17 de l'art. 38 récrit, point 18 bis abrogé) : connu par les annotations du code consolidé, à lire au fascicule (JORT n° 81 de 2011) avant d'être porté au registre des plus-values. -->
+
+#### 2014 : imposer les dividendes {#sec-irpp-epargne-2014}
+
+Pour les distributions faites à partir du 1^er^ janvier 2015, les dividendes perçus par une personne physique supportent une retenue de 5 %, libératoire. [La loi de finances pour 2014](#r-epargne-distribues-2014) range la mesure, avec la baisse du taux de l'impôt sur les sociétés, sous la rubrique « Réduction du taux de l'impôt sur les sociétés et imposition des bénéfices distribués ».
+
+Le rapport de synthèse des groupes de travail sur la réforme fiscale, publié par le ministère des Finances en novembre 2013, constate que « les dividendes se trouvent totalement défiscalisés peu importe que les bénéfices générés au niveau de la société distributrice aient fait l'objet d'une imposition ou pas » ; pour les intérêts, que « la combinaison du prélèvement à la source de 20 % et du respect d'un secret bancaire fait que de nombreux contribuables préfèrent ne pas déclarer les revenus mobiliers » [@minfin-cnf-2013-synthese, p. 24].
+
+- **Avant → après.** Exonération générale des [bénéfices distribués](#g-benefices-distribues) (article 38, point 10, abrogé) → retenue de 5 % sur les revenus distribués, parts de fonds communs de placement comprises, libératoire.
+- **Les réserves anciennes.** Les distributions prélevées sur les fonds propres inscrits au bilan du 31 décembre 2013, et mentionnées dans les notes aux états financiers, restent hors retenue.
+- **Les petits bénéficiaires.** Pour une personne physique dont les revenus distribués ne dépassent pas 10 000 D par an, la retenue est déductible de l'impôt annuel ou restituable [@dgi-nc-3-2015].
+
+<!-- TODO (documentaliste) : modalités de la déduction ou de la restitution sous 10 000 D (option, déclaration, seuil apprécié par bénéficiaire et par an) : la NC 3/2015 juxtapose le caractère libératoire et cette faculté sans les décrire, la NC 14/2018 n'en parle pas (note, § 14, D4). -->
+
+La même loi abaisse le taux de l'impôt sur les sociétés de 30 % à 25 % (@sec-impot-societes, « 2014 — abaisser à 25 %, et dédoubler le minimum »).
+
+**2018 : 10 %.** Pour les distributions faites à partir du 1^er^ janvier 2018, même sur des bénéfices antérieurs, la retenue passe à 10 % ([loi de finances pour 2018](#r-epargne-distribues-2018), rubrique « Relèvement du taux d'imposition des bénéfices distribués » ; @dgi-nc-14-2018).
+
+Entre-temps, en 2015, la retenue s'étend aux bénéfices des établissements stables présumés distribués à leurs associés non résidents ([loi de finances pour 2015](#r-epargne-distribues-2015)) ; en 2017, les jetons de présence deviennent les rémunérations des membres des conseils, directoires et comités ([loi de finances pour 2017](#r-epargne-distribues-2017)).
+
+Les jetons de présence, exonérés avec les autres revenus distribués jusqu'en 1994, supportent depuis 1995 une retenue imputable.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_jetons",
+      "Retenue sur les jetons de présence, 1995-2026",
+      "tbl-irpp-epargne-jetons")
+```
+
+#### 2020-2022 : trois régimes en trois ans pour les intérêts {#sec-irpp-epargne-2020}
+
+De juin 2020 à janvier 2022, la retenue sur les intérêts change trois fois de régime.
+
+1. **10 juin 2020.** [Le décret-loi n° 2020-30](#r-epargne-interets-2020) « portant des mesures pour la consolidation des assises de la solidarité nationale et le soutien des personnes et des entreprises suite aux répercussions de la propagation du Coronavirus » place sous son titre des mesures pour le financement de l'investissement et la relance de l'économie un article qui soumet à une retenue libératoire de 35 % les revenus des dépôts à terme dont le taux de rémunération dépasse, au 1^er^ janvier de l'année, le [taux moyen du marché monétaire](#g-tmm) (TMM) diminué d'un point. La retenue est « définitive et non restituable », quel que soit le régime fiscal du bénéficiaire ; les dépôts en devises et en dinars convertibles en sont exclus. Les autres intérêts restent au barème.
+2. **1^er^ janvier 2021.** [La loi de finances pour 2021](#r-epargne-interets-2021), sous la rubrique « Révision du régime fiscal des revenus de capitaux mobiliers », abroge le taux de 35 % et rend la retenue de 20 % « définitive et non restituable […] nonobstant le régime fiscal du bénéficiaire ». L'administration la qualifie de « retenue à la source libératoire au taux de 20 % » [@dgi-nc-1-2022] : les intérêts sortent du barème. Les exonérations et les déductions sont maintenues.
+3. **1^er^ janvier 2022.** [La loi de finances pour 2022](#r-epargne-interets-2022), sous la rubrique « Réinstauration de la retenue à la source déductible due sur les revenus de capitaux mobiliers », rend la retenue de 20 % de nouveau imputable ; la retenue définitive des organismes exonérés est rétablie et étendue aux fonds d'amorçage et aux fonds communs de placement à risque (FCPR). L'administration en donne l'objet : « encourager les personnes physiques à adhérer aux différents mécanismes d'épargne, […] renforcer la justice fiscale » [@dgi-nc-1-2022].
+
+Les retenues libératoires opérées en 2021 ne sont ni restituées ni régularisées [@dgi-nc-1-2022].
+
+<!-- TODO (documentaliste) : contexte de 2020 et de 2021 (exposés des motifs, débats ; position de la BCT sur les dépôts à terme rémunérés au-delà du TMM). -->
+
+#### Les registres des textes {#sec-irpp-epargne-registres}
+
+Trois registres donnent, pour chacun des trois revenus — intérêts, revenus distribués, plus-values de titres —, tous les textes dans l'ordre des dates, avec le caractère de la retenue et la portée du texte : rupture, étape d'une réforme, ajustement. Les dispositifs d'épargne aidée ont leur registre dans leur section.
+
+:::: {.chronologie-repliable titre="Retenue sur les intérêts (revenus de capitaux mobiliers), 1968-2026 : taux, caractère libératoire ou imputable, textes"}
+
+| Effet | Texte et articles | Avant → après | Caractère de la retenue | Portée |
+|---|---|---|---|---|
+| []{#r-epargne-interets-1968}[1^er^ janvier 1968]{.insecable} | loi n° 67-57, loi de finances pour 1968 [@lf-1968, art. 13 et 14, p. 1649] | article premier du décret organique du 23 décembre 1918 récrit : taux global de 16,90 % (général) ou de 14,50 % (réduit) sur les revenus de valeurs mobilières et de créances ; 10 % sur les revenus des créances, dépôts, cautionnements et comptes courants ; 12,10 % et 9,10 % maintenus pour les obligations émises depuis le 1^er^ juillet 1956 pour cinq ans au moins ; bons de caisse : impôt sur les revenus des créances, plus 24 % si l'émetteur ne déclare pas les bénéficiaires (art. 14) | taxe additionnelle de 24 % à la place de la contribution personnelle d'État (bons de caisse anonymes) | antécédent |
+| []{#r-epargne-interets-1988}— | loi n° 87-83, loi de finances pour 1988 [@loi-87-83-lf-1988, art. 29 et 30, p. 1630] | « Unification des taux… » : 20 % sur les revenus des valeurs mobilières autres que ceux de la loi n° 87-48, sur les jetons de présence et sur les revenus des capitaux mobiliers ; crédit d'impôt de 20 % de ces revenus sur la contribution personnelle d'État ; contribution de solidarité supprimée sur ces revenus (art. 30) | crédit d'impôt | antécédent |
+| []{#r-epargne-interets-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 52 et 54, p. 11] | 10 % sur les intérêts des comptes spéciaux d'épargne des banques (52-I-b) ; 15 % sur les autres revenus de capitaux mobiliers (52-I-c, premier tiret ; le second tiret vise les sommes servies aux non-résidents au titre des revenus de l'article 3, point 6, qui ne sont pas des revenus de placement) ; 35 % sur les bons de caisse au porteur dont le bénéficiaire n'est pas révélé (52-I-d) | imputable (art. 54) ; libératoire pour les bons de caisse anonymes et les non-résidents (52-II) | mise en place |
+| []{#r-epargne-interets-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 31, p. 2084-2085] | 52-I et II remplacés : 15 % sur les dépôts à la CENT et en comptes spéciaux (10 % → 15 %), sur les obligations et les autres revenus de capitaux mobiliers ; 25 % sur les obligations au porteur anonymes ; 35 % sur les autres titres au porteur anonymes ; nouveau 52-II-2 : 20 % pour les personnes morales non soumises à l'impôt sur les sociétés ou totalement exonérées ; exécutoire un jour franc après la publication du 31 décembre 1991 | imputable ; libératoire (titres anonymes, non-résidents) ; définitive et non restituable (organismes exonérés) | **rupture** (1992) |
+| []{#r-epargne-interets-1997}[1^er^ janvier 1997]{.insecable} | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 30 à 32 et 54, p. 2581 et 2583] | « Unification des taux… » : taux de 15 % et de 35 % abrogés ; 52-I-c : 20 % sur les revenus de capitaux mobiliers ; fin du caractère libératoire pour les titres anonymes | imputable | étape (réforme de 1992) |
+| []{#r-epargne-interets-1999}[1^er^ janvier 1999]{.insecable} | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 43 et 76, p. 2505] | 52-I-c : intérêts des dépôts et titres en devises et en dinars convertibles exclus de la retenue ; 52-II-2 : mention des banques non résidentes (loi n° 85-108) retirée | — | ajustement |
+| []{#r-epargne-interets-2004}[1^er^ janvier 2004]{.insecable} | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 71, p. 3732] ; [@dgi-nc-8-2004] | 52-II-1 récrit : la retenue est « libératoire de l'impôt sur le revenu ou de l'impôt sur les sociétés au titre des sommes prévues par les alinéas b, c et e », sans réserve pour les résidents ; l'administration maintient l'imputation pour les résidents, qui déclarent ces revenus dans leur revenu global | imputable pour les résidents (administration) | ajustement |
+| []{#r-epargne-interets-2005}[1^er^ janvier 2005]{.insecable} | loi n° 2004-90, loi de finances pour 2005 [@lf-2005, art. 69, p. 3443] ; [@dgi-nc-13-2005] | 52-II-1 récrit : libératoire pour les sommes des alinéas b et c « servies aux non résidents et non établis » et pour l'alinéa e ; jetons de présence de 15 % à 20 % | imputable pour les résidents | ajustement |
+| []{#r-epargne-interets-2020}[10 juin 2020]{.insecable} | décret-loi n° 2020-30 [@decret-loi-2020-30, art. 12 et 17, p. 1410 et 1414] (édition arabe) | nouveau 52-II-2 *bis* : 35 % sur les revenus des dépôts à terme dont la rémunération dépasse, au 1^er^ janvier, le TMM moins un point, quel que soit le bénéficiaire ; devises et dinars convertibles exclus ; entrée en vigueur à la publication (art. 17) | libératoire, définitive et non restituable | étape (réforme de 2020-2022) |
+| []{#r-epargne-interets-2021}[1^er^ janvier 2021]{.insecable} | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 17 et 42, p. 3130 et 3138] ; [@dgi-nc-1-2022] | « Révision du régime fiscal… » : 52-II-2 et 2 *bis* abrogés ; retenue de 20 % (52-I-c) « définitive et non restituable […] nonobstant le régime fiscal du bénéficiaire » ; exonérations et déductions maintenues | libératoire | **rupture** (réforme de 2020-2022) |
+| []{#r-epargne-interets-2022}[1^er^ janvier 2022]{.insecable} | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 38, p. 3090] ; [@dgi-nc-1-2022] | « Réinstauration… » : phrase de 2021 supprimée ; 52-II-2 rétabli (personnes morales exonérées, fonds communs de placement), étendu aux fonds d'amorçage et aux FCPR, hors devises ; sans restitution des retenues de 2021 | imputable | étape (réforme de 2020-2022) |
+
+: Retenue sur les revenus de capitaux mobiliers : textes, 1968-2026 {#tbl-irpp-epargne-registre-interets}
+
+Les intérêts des bons du Trésor sont des revenus de capitaux mobiliers (« effets publics », article 34 du code) et suivent la retenue de droit commun.
+
+<!-- TODO (documentaliste) : LF 2000, art. 57, et décret n° 2007-1870 du 17 juillet 2007 (retenue sur les titres d'emprunt négociables ; la NC 1/2008 qui le commente est au corpus) : à lire avant d'être portés au registre. -->
+
+::::
+
+:::: {.chronologie-repliable titre="Revenus distribués (dividendes, parts de fonds, jetons de présence), 1988-2026 : exonération, retenue, textes"}
+
+| Effet | Texte et articles | Avant → après | Caractère de la retenue | Portée |
+|---|---|---|---|---|
+| []{#r-epargne-distribues-1988}— | loi n° 87-83, loi de finances pour 1988 [@loi-87-83-lf-1988, art. 29, p. 1630] | revenus des valeurs mobilières autres que ceux de la loi n° 87-48, et jetons de présence : 20 %, avec crédit d'impôt de 20 % sur la contribution personnelle d'État | crédit d'impôt | antécédent |
+| []{#r-epargne-distribues-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 38, p. 8] | revenus de valeurs mobilières des articles 29 à 31 exonérés (art. 38, point 10) ; aucune retenue | — | mise en place |
+| []{#r-epargne-distribues-1995}[1^er^ janvier 1995]{.insecable} | loi n° 94-127, loi de finances pour 1995 [@lf-1995, art. 50 à 53, p. 2046] | « Imposition des jetons de présence » : exclus de l'exonération ; retenue de 15 % (52-I-b) ; déductibles de l'impôt sur les sociétés | imputable | ajustement |
+| []{#r-epargne-distribues-2005}[1^er^ janvier 2005]{.insecable} | loi n° 2004-90, loi de finances pour 2005 [@lf-2005, art. 69, p. 3443] ; [@dgi-nc-13-2005] | jetons de présence : 15 % → 20 % (déplacés à 52-I-c) | imputable | ajustement |
+| []{#r-epargne-distribues-2014}distributions à partir du [1^er^ janvier 2015]{.insecable} | loi n° 2013-54, loi de finances pour 2014 [@lf-2014, art. 19, p. 3670-3671] | point 10 de l'art. 38 abrogé ; nouveau 52-I-c *bis* : 5 % sur les revenus distribués (29-II-a et 29-II *bis*, parts de fonds communs de placement comprises) ; 52-II-1 étendu à c *bis* ; personnes physiques dont les revenus distribués ne dépassent pas 10 000 D par an : retenue déductible de l'impôt annuel ou restituable ; distributions sur les fonds propres au bilan du 31 décembre 2013 exclues | libératoire | **rupture** (2014) |
+| []{#r-epargne-distribues-2015}[1^er^ janvier 2015]{.insecable} | loi n° 2014-59, loi de finances pour 2015 [@lf-2015, art. 25, p. 3466] | c *bis* étendu aux bénéfices des établissements stables présumés distribués aux associés non résidents (29-II-c), payés par déclaration de l'établissement | libératoire | étape (réforme de 2014) |
+| []{#r-epargne-distribues-2017}montants payés à partir du [1^er^ janvier 2017]{.insecable} | loi n° 2016-78, loi de finances pour 2017 [@lf-2017, art. 30, p. 3837] | « jetons de présence » → rémunérations et primes des membres des conseils, des directoires et des comités des sociétés anonymes et en commandite par actions (art. 30, 48 et 52) | imputable | ajustement |
+| []{#r-epargne-distribues-2018}distributions à partir du [1^er^ janvier 2018]{.insecable} | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 46, p. 4286] ; [@dgi-nc-14-2018] | « Relèvement du taux… » : 5 % → 10 %, même sur des bénéfices antérieurs ; restent hors retenue les bénéfices distribués aux personnes morales résidentes et les fonds propres au 31 décembre 2013 | libératoire | étape (réforme de 2014) |
+
+: Revenus distribués : textes, 1988-2026 {#tbl-irpp-epargne-registre-distribues}
+
+::::
+
+:::: {.chronologie-repliable titre="Plus-value de cession de titres des personnes physiques résidentes, 2004-2026 : champ, taux, exonérations, franchise, textes"}
+
+| Effet | Texte et articles | Avant → après | Caractère de l'impôt | Portée |
+|---|---|---|---|---|
+| []{#r-epargne-pv-2004}cessions à partir du [1^er^ janvier 2004]{.insecable} | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 61 à 63, p. 3730] | nouvel art. 31 *bis* : plus-value de cession d'actions et de parts sociales, revenu de valeurs mobilières ; art. 33 : prix de cession moins valeur d'acquisition, moins-values de l'année imputées ; 44-III-3 : 10 % ; 38-17 : actions cotées, introductions en bourse, actions de SICAV, cessions par les SICAR exonérées ; 38-18 : franchise de 10 000 D par an | taux proportionnel, hors barème | **rupture** (2004) |
+| []{#r-epargne-pv-2007}[1^er^ janvier 2007]{.insecable} | loi n° 2006-85, loi de finances pour 2007 [@lf-2007, art. 32, p. 4387] | 38-17 complété : plus-value d'apport d'actions et de parts sociales au capital d'une société mère ou holding qui s'engage à introduire ses actions en bourse avant la fin de l'année suivante, délai prorogeable d'un an, exonérée | — | ajustement |
+| []{#r-epargne-pv-2011}cessions à partir du [1^er^ janvier 2011]{.insecable} | loi n° 2010-58, loi de finances pour 2011 [@lf-2011, art. 41, p. 3474-3476] | « Rationalisation de l'exonération… » : exonération des actions cotées réservée à celles acquises ou souscrites avant le 1^er^ janvier 2011 et aux introductions en bourse ; actions cotées acquises depuis : exonérées si cédées après la fin de l'année suivant l'acquisition, sinon 10 % | taux proportionnel, hors barème | étape (réforme de 2004) |
+| []{#r-epargne-pv-2023}cessions à partir du [1^er^ janvier 2023]{.insecable} | décret-loi n° 2022-79, loi de finances pour 2023 [@lf-2023, art. 42, p. 4068] (édition arabe) ; [@dgi-nc-3-2023] | 44-III-3 : 10 % pour les actions cotées cédées avant la fin de l'année suivant l'acquisition et pour les autres actions, parts sociales et parts de fonds cédées après ; 15 % pour les actions non cotées, parts sociales et parts de fonds cédées avant ; franchise de l'art. 38-18 abrogée | taux proportionnel, libératoire | étape (réforme de 2004) |
+
+: Plus-value de cession de titres des personnes physiques résidentes : textes, 2004-2026 {#tbl-irpp-epargne-registre-plus-values}
+
+<!-- TODO (documentaliste) : LF 2007, art. 32 : page 4387 à confirmer à l'image (le texte suit le pied de page 4386). -->
+
+::::
+
+### L'état du droit au 1^er^ janvier 2026 {#sec-irpp-epargne-etat}
+
+Au 1^er^ janvier 2026, chacun des trois revenus a son régime : les intérêts sont au barème, avec une retenue imputable de 20 % ; les dividendes supportent 10 % libératoires ; les plus-values de titres sont imposées à 0, 10 ou 15 %, hors barème.
+
+| Revenu | Taux | Caractère | Exonérations et plafonds | Population couverte | Textes |
+|---|---|---|---|---|---|
+| Intérêts des dépôts, obligations et bons du Trésor | barème, retenue de 20 % | imputable | — |  | [2022](#r-epargne-interets-2022) |
+| Intérêts des comptes spéciaux d'épargne et des emprunts obligataires | barème au-delà du plafond, retenue de 20 % | imputable | déduits jusqu'à 10 000 D par an, dont 6 000 D de comptes spéciaux ; 10 000 D de plus pour les emprunts obligataires verts, socialement responsables et durables |  | [2022](#r-epargne-cs-2022), [2022](#r-epargne-cs-2022-verts) |
+| Intérêts de l'épargne logement, des dépôts en devises, des comptes d'épargne pour les études | 0 | — | exonérés, sans plafond |  | [1990](#r-epargne-exo-1990), [1999](#r-epargne-exo-1999-etudes) |
+| Dividendes et parts de fonds communs de placement | 10 % | libératoire ; déductible ou restituable sous 10 000 D par an | distributions sur les fonds propres au 31 décembre 2013 exclues |  | [2014](#r-epargne-distribues-2014), [2018](#r-epargne-distribues-2018) |
+| Plus-value, action cotée | 0 % si détenue au-delà de la fin de l'année suivant l'achat, sinon 10 % | proportionnel, hors barème | — |  | [2023](#r-epargne-pv-2023) |
+| Plus-value, action non cotée, part sociale, part de fonds | 10 % au-delà de la même échéance, sinon 15 % | proportionnel, hors barème | aucune franchise |  | [2023](#r-epargne-pv-2023) |
+| Revenus servis aux non-résidents | intérêts 20 %, dividendes 10 %, plus-values : @sec-irpp-epargne-non-residents | libératoire | — |  | [2005](#r-epargne-nr-2005) |
+
+: Les revenus de placement d'une personne physique au 1^er^ janvier 2026 : taux, caractère de la retenue, plafonds {#tbl-irpp-epargne-etat}
+
+<!-- TODO (documentaliste) : colonne « Population couverte » : nombre de foyers déclarant des revenus de capitaux mobiliers, de bénéficiaires de dividendes, de titulaires de CEA, de CEI et de contrats d'assurance-vie, de comptes spéciaux d'épargne ; source à chercher (DGI, CMF, FTUSA, BCT). -->
+
+- **La faculté de restitution sous 10 000 D** figure toujours à l'article 52 § II-1 du code, au même seuil nominal depuis 2015.
+- **L'exonération des actions cotées détenues au-delà de la fin de l'année suivant l'achat** demeure (article 38, point 17).
+
+### Les dispositifs d'épargne aidée {#sec-irpp-epargne-dispositifs}
+
+Sept dispositifs aménagent la règle pour un placement ou un public : les comptes spéciaux d'épargne, l'épargne exonérée, l'assurance-vie, le compte épargne en actions, le compte épargne pour l'investissement, les fonds et organismes exonérés, les non-résidents. Les déductions des dépôts en CEA et en CEI, et, depuis les revenus de 2020, celle des primes d'assurance-vie, sont accordées sous réserve du minimum d'impôt de l'article 12 *bis* de la loi n° 89-114 : l'impôt ne peut descendre sous une fraction, 45 % depuis le 1^er^ avril 2017, de l'impôt dû sans elles (@tbl-plafonnement). Ces déductions s'ajoutent aux [déductions communes](#g-deductions-communes) de l'article 39 (@sec-irpp-deductions).
+
+#### Les comptes spéciaux d'épargne et les emprunts obligataires {#sec-irpp-epargne-comptes-speciaux}
+
+Les intérêts des [comptes spéciaux d'épargne](#g-comptes-speciaux-epargne), et ceux des emprunts obligataires, sont déduits du revenu imposable, dans la limite d'un plafond annuel (article 39 § II du code). La déduction existe depuis 1990 pour les comptes des banques ; [la loi de finances pour 1992](#r-epargne-cs-1992) y fait entrer les livrets de la CENT et porte le plafond global à 1 500 D.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_comptes_speciaux",
+      "Plafond de déduction des intérêts de l'épargne (article 39 § II du code), 1990-2026",
+      "tbl-epargne")
+```
+
+<!-- TODO (documentaliste) : année de revenus du premier plafond de 1 500 D (LF 1992, art. 30) : la loi n'a pas d'article final de date d'application et devient exécutoire le 2 janvier 1992 ; revenus 1991 ou 1992 (note fiscalite-epargne-capital.md, § 14, D6). -->
+
+En 1992 naît aussi le compte d'épargne-emprunts obligataires, dont les intérêts supportent une retenue libératoire de 15 % si les sommes restent bloquées cinq ans, et une retenue complémentaire de 10 % en cas de retrait ; la loi de finances pour 1997 met fin à ce régime. Les deux derniers relèvements ont pour rubriques « Relèvement du montant des intérêts des comptes spéciaux d'épargne déductible de l'assiette de l'impôt » ([loi de finances pour 2017](#r-epargne-cs-2017)) et « Relèvement du montant des intérêts des comptes spéciaux d'épargne et des intérêts des emprunts obligataires déductible de l'assiette de l'impôt » ([loi de finances pour 2022](#r-epargne-cs-2022)). La même loi de 2022 ouvre une déduction distincte, dans la limite de 10 000 D par an, pour les intérêts des emprunts obligataires verts, socialement responsables et durables ([art. 29](#r-epargne-cs-2022-verts)) ; depuis 2024, les bons du Trésor assimilables entrent dans la déduction, sans changement des plafonds ([loi de finances pour 2024](#r-epargne-cs-2024)).
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_ceo",
+      "Retenues sur le compte d'épargne-emprunts obligataires, 1992-1997",
+      "tbl-irpp-epargne-ceo")
+```
+
+:::: {.chronologie-repliable titre="Comptes spéciaux d'épargne et emprunts obligataires, 1990-2026 : plafonds de déduction des intérêts et textes"}
+
+| Effet | Texte et articles | Avant → après | Portée |
+|---|---|---|---|
+| []{#r-epargne-cs-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 39, p. 8] | déduction des intérêts des comptes spéciaux d'épargne ouverts auprès des banques, dans la limite de 1 000 D | mise en place |
+| []{#r-epargne-cs-1992}— | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 30, p. 2084] | « Déduction des intérêts de l'épargne » : livrets de la CENT ajoutés ; plafond global 1 000 → 1 500 D, dont 1 000 D au titre des comptes spéciaux | étape (réforme de 1992) |
+| []{#r-epargne-cs-1992-ceo}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 33, p. 2085] | compte d'épargne-emprunts obligataires : retenue libératoire de 15 % si aucun retrait pendant cinq ans ; retenue complémentaire de 10 % en cas de retrait | rupture propre (réforme de 1992) |
+| []{#r-epargne-cs-1997}[1^er^ janvier 1997]{.insecable} | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 33, p. 2581] | 2^e^ et 3^e^ paragraphes de l'art. 33 de la loi de finances pour 1992 abrogés : fin du taux libératoire du compte d'épargne-emprunts obligataires | étape (réforme de 1992) |
+| []{#r-epargne-cs-2017}revenus 2016 | loi n° 2016-78, loi de finances pour 2017 [@lf-2017, art. 13] ; [@dgi-nc-2-2017] | 1 500 D, dont 1 000 D de comptes spéciaux → 5 000 D, dont 3 000 D | ajustement |
+| []{#r-epargne-cs-2022}revenus 2021 | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 24] ; [@dgi-nc-1-2022] | 5 000 D, dont 3 000 D → 10 000 D, dont 6 000 D | ajustement |
+| []{#r-epargne-cs-2022-verts}— | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 29] | nouveau § II *bis* : déduction des intérêts des emprunts obligataires verts, socialement responsables et durables, dans la limite de 10 000 D par an | rupture propre |
+| []{#r-epargne-cs-2024}— | loi de finances pour 2024 [@lf-2024, art. 34] | bons du Trésor assimilables ajoutés aux supports ; plafonds inchangés | ajustement |
+
+::::
+
+#### L'épargne exonérée : logement, devises, études {#sec-irpp-epargne-exoneree}
+
+Certains intérêts sont exonérés sans plafond (article 38, points 7, 8 et 12 du code). Depuis 1990, ce sont ceux de l'épargne logement et des dépôts et titres en devises ou en dinars convertibles ; les livrets de la CENT, exonérés en 1990, passent en 1992 à la déduction plafonnée des comptes spéciaux (@sec-irpp-epargne-comptes-speciaux). En 1999, les intérêts des dépôts en devises sortent du champ de la retenue ([loi de finances pour 1999, art. 43](#r-epargne-exo-1999)), et ceux des comptes d'épargne pour les études sont exonérés ([art. 45](#r-epargne-exo-1999-etudes)). Le rapport sur les dépenses fiscales ne chiffre pas le coût de ces exonérations (@sec-irpp-epargne-longue-periode).
+
+<!-- TODO (documentaliste) : décret n° 99-1923 (comptes d'épargne pour les études) à lire avant d'être porté au registre. -->
+
+:::: {.chronologie-repliable titre="Épargne exonérée (logement, devises, études), 1990-2026 : textes"}
+
+| Effet | Texte et articles | Avant → après | Portée |
+|---|---|---|---|
+| []{#r-epargne-exo-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 38, p. 8] | exonérés : intérêts des livrets de la CENT et des contrats d'épargne logement (point 7), des dépôts et titres en devises ou en dinars convertibles (point 8) | mise en place |
+| []{#r-epargne-exo-1992}— | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 30, p. 2084] | point 7 réduit à l'épargne logement ; livrets de la CENT dans la déduction plafonnée de l'art. 39 § II | étape (réforme de 1992) |
+| []{#r-epargne-exo-1999}[1^er^ janvier 1999]{.insecable} | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 43, p. 2505] | intérêts des dépôts et titres en devises et en dinars convertibles exclus de la retenue de 52-I-c | ajustement |
+| []{#r-epargne-exo-1999-etudes}[1^er^ janvier 1999]{.insecable} | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 45 et 76, p. 2506] | intérêts des comptes d'épargne pour les études exonérés (point 12) | rupture propre |
+
+::::
+
+#### L'assurance-vie {#sec-irpp-epargne-assurance-vie}
+
+Les primes des contrats d'assurance-vie et de capitalisation sont déduites du revenu, dans la limite d'un plafond (article 39 § I-2 du code) ; depuis 2004, les rentes viagères servies par ces contrats sont exonérées (article 38, point 16). En 1990, la déduction est familiale : 200 D, majorés de 100 D pour le conjoint et de 50 D pour chacun des quatre premiers enfants à charge.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_assurance_vie",
+      "Plafond de déduction des primes d'assurance-vie (article 39 § I-2 du code), 1990-2026",
+      "tbl-irpp-epargne-assurance-vie")
+```
+
+\* Année dérivée de l'article final de la loi de finances pour 1998, applicable à compter du 1^er^ janvier 1998.
+
+Deux textes changent la nature de la déduction. Depuis les revenus de 2011, [la loi de finances complémentaire pour 2012](#r-epargne-av-2012) remplace la déduction familiale par un plafond unique de 10 000 D : elle devient une déduction d'épargne. À partir des revenus de 2020, [la loi de finances pour 2021](#r-epargne-av-2021), sous la rubrique « Encouragement de l'épargne à moyen et long terme via les comptes épargne en actions et les contrats d'assurance-vie et de capitalisation », porte le plafond à 100 000 D et soumet pour la première fois la déduction au minimum d'impôt de l'article 12 *bis* de la loi n° 89-114 [@dgi-nc-1-2021]. Entre ces textes, la déduction s'étend aux contrats collectifs ([2002](#r-epargne-av-2002), [2014](#r-epargne-av-2014)), aux cotisations de l'adhérent et aux contrats d'assurance *takaful* ([2020](#r-epargne-av-2020)) ; la durée minimale du contrat est fixée à dix ans en [2014](#r-epargne-av-2014), puis à huit ans pour les contrats conclus à partir de [2018](#r-epargne-av-2018) ; le rachat sans pénalité est permis après cinq ans d'épargne à partir de [2008](#r-epargne-av-2008).
+
+
+
+:::: {.chronologie-repliable titre="Assurance-vie, 1990-2026 : plafonds de la déduction des primes, durées, rentes, textes"}
+
+| Effet | Texte et articles | Avant → après | Portée |
+|---|---|---|---|
+| []{#r-epargne-av-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 39, p. 8] | primes déductibles dans la limite de 200 D, plus 100 D pour le conjoint et 50 D par enfant à charge, pour les quatre premiers | mise en place |
+| []{#r-epargne-av-1998}revenus 1997\* | loi n° 97-88, loi de finances pour 1998 [@lf-1998, art. 52, p. 2439] | 200 D → 800 D ; conjoint : 400 D ; 200 D par enfant à charge | ajustement |
+| []{#r-epargne-av-2002}— | loi n° 2001-123, loi de finances pour 2002 [@loi2001-123-lf2002, art. 45] | déduction étendue aux contrats « individuels ou collectifs » ; montants inchangés | ajustement |
+| []{#r-epargne-av-2004}[1^er^ janvier 2004]{.insecable} | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 44] | rentes viagères servies par les contrats d'assurance-vie exonérées (art. 38, point 16) | ajustement |
+| []{#r-epargne-av-2008}primes payées à partir du [1^er^ janvier 2007]{.insecable} | loi n° 2007-70, loi de finances pour 2008 [@loi-2007-70-lf-2008, art. 23, p. 4360] ; [@dgi-nc-10-2008] | 800 D → 1 200 D ; conjoint : 600 D ; 300 D par enfant ; rachat sans pénalités après cinq ans d'épargne, pour les rachats à partir du 1^er^ janvier 2008 | ajustement |
+| []{#r-epargne-av-2012}revenus 2011 | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, art. 42, p. 929] ; [@dgi-nc-25-2012] | plafond unique de 10 000 D par an ; majorations pour le conjoint et les enfants supprimées ; descendants ajoutés | rupture propre |
+| []{#r-epargne-av-2014}— | loi n° 2013-54, loi de finances pour 2014 [@lf-2014, art. 24, p. 3671] | 10 000 D maintenus ; durée minimale du contrat : dix ans ; contrats collectifs | étape (rupture de 2012) |
+| []{#r-epargne-av-2018}contrats conclus à partir du [1^er^ janvier 2018]{.insecable} | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 27, p. 4275] ; [@dgi-nc-2-2018] | durée minimale : dix ans → huit ans | ajustement |
+| []{#r-epargne-av-2020}— | loi n° 2019-78, loi de finances pour 2020 [@lf-2020, art. 12, p. 4427] | déduction étendue aux cotisations de l'adhérent et aux contrats d'assurance *takaful* ; montant inchangé | ajustement |
+| []{#r-epargne-av-2021}revenus 2020 | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 16, p. 3129] ; [@dgi-nc-1-2021] | 10 000 D → 100 000 D ; déduction soumise au minimum d'impôt de l'art. 12 *bis* de la loi n° 89-114 | rupture propre |
+
+\* Année dérivée de l'article final de la loi, applicable à compter du 1^er^ janvier 1998.
+
+::::
+
+#### Le compte épargne en actions {#sec-irpp-epargne-cea}
+
+Les sommes déposées sur un [compte épargne en actions](#g-compte-epargne-actions) (CEA), bloquées cinq ans et placées en actions cotées et en bons du Trésor assimilables, sont déduites du revenu, dans la limite d'un plafond (article 39 § VIII du code). Le compte naît de la réforme de 1999 (@sec-irpp-epargne-1999) : la moitié des dépôts est alors déductible, dans la limite de 5 000 D. Le plafond est relevé ensuite par paliers.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_cea",
+      "Plafond de déduction des dépôts en comptes épargne en actions (article 39 § VIII du code), 1999-2026",
+      "tbl-irpp-epargne-cea")
+```
+
+En 2002, les placements admis s'étendent aux parts d'organismes de placement collectif investis en actions cotées et en bons du Trésor assimilables, sans changement du plafond ([loi de finances pour 2002](#r-epargne-cea-2002)).
+
+La Banque centrale présente le relèvement de 2003 comme une harmonisation : « en vue de lever les distorsions grevant les différents comptes d'épargne, il a été procédé à l'harmonisation de la fiscalité relative aux comptes d'épargne en actions et aux comptes d'épargne pour l'investissement » [@bct-ra-2003]. Le palier de 100 000 D vient de la même rubrique que celui de l'assurance-vie (@sec-irpp-epargne-assurance-vie).
+
+<!-- TODO (documentaliste) : année de revenus du plafond de 50 000 D (décret-loi n° 2011-28, art. 4, JORT n° 27 du 19 avril 2011, exécutoire le 25 avril 2011 ; aucune note commune au corpus n'en rattache l'effet à une année de revenus) ; page imprimée du rapport annuel 2003 de la BCT (p. 107 et 192 relevées sur le fichier). -->
+
+:::: {.chronologie-repliable titre="Compte épargne en actions, 1999-2026 : plafonds de déduction et textes"}
+
+| Effet | Texte et articles | Avant → après | Portée |
+|---|---|---|---|
+| []{#r-epargne-cea-1999}[26 août 1999]{.insecable} | loi n° 99-92 du 17 août 1999 [@loi-99-92-relance-marche-financier, art. 1 à 4, p. 1463-1464] | art. 4 : création du CEA ; déduction de 50 % des dépôts, dans la limite de 5 000 D ; blocage de cinq ans ; actions cotées et bons du Trésor assimilables ; art. 1 à 3 : impôt sur les sociétés à 20 % pendant cinq ans pour les sociétés qui admettent au moins 30 % de leur capital à la cote ; exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, le 21 août 1999 | **rupture** (1999) |
+| []{#r-epargne-cea-2002}[1^er^ janvier 2002]{.insecable} | loi n° 2001-123, loi de finances pour 2002 [@loi2001-123-lf2002, art. 30 et 31] | placements admis élargis aux organismes de placement collectif investis en actions cotées et en bons du Trésor assimilables ; 5 000 D maintenus | étape (réforme de 1999) |
+| []{#r-epargne-cea-2004}revenus 2003 | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 45 et 46] ; [@dgi-nc-16-2004] | 50 % et 5 000 D → dépôts dans la limite de 20 000 D, sans quote-part ; condition de comptabilité supprimée | étape (réforme de 1999) |
+| []{#r-epargne-cea-2011}[25 avril 2011]{.insecable} | décret-loi n° 2011-28 du 18 avril 2011 [@decret-loi-2011-28, art. 4, p. 488] | 20 000 D → 50 000 D ; exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, le 20 avril 2011 | étape (réforme de 1999) |
+| []{#r-epargne-cea-2021}revenus 2020 | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 16, p. 3129] ; [@dgi-nc-1-2021] | 50 000 D → 100 000 D | étape (réforme de 1999) |
+
+<!-- TODO (bibliographe) : LF 2002, art. 30-31 : à citer par la clé lf-2002 (ne pas créer loi2001-123-lf2002) ; pages des art. 30-31 (p. 4253-4254 du fascicule n° 104 de 2001) à confirmer à l'image avant d'être citées. -->
+
+::::
+
+#### Le compte épargne pour l'investissement {#sec-irpp-epargne-cei}
+
+Les sommes déposées sur un [compte épargne pour l'investissement](#g-compte-epargne-investissement) (CEI), destinées à financer dans les cinq ans un projet d'investissement, sont déduites du revenu, et les intérêts du compte sont exonérés, dans deux limites (article 39 *bis* et article 38, point 15, du code). Selon l'administration, le compte, créé par la loi de finances pour 2003, ouvre une déduction de 20 000 D par an et une exonération des intérêts de 2 000 D [@dgi-nc-35-2003]. Pour les montants déposés et les intérêts réalisés à partir du 1^er^ janvier 2017, ces limites passent à 50 000 D et 4 000 D, et les bénéfices s'ajoutent aux revenus déposables ([loi de finances pour 2018](#r-epargne-cei-2018)). Le @tbl-irpp-epargne-cei donne les deux limites à chaque date.
+
+<!-- TODO (documentaliste) : arrêté du 24 avril 2003 (conditions d'ouverture du CEI), à lire au fascicule ; art. 23 de la LF 2003, cité par l'administration, non relu. -->
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_cei",
+      "Plafonds de déduction des dépôts et d'exonération des intérêts du compte épargne pour l'investissement (articles 39 *bis* et 38, point 15, du code), 2003-2026",
+      "tbl-irpp-epargne-cei")
+```
+
+:::: {.chronologie-repliable titre="Compte épargne pour l'investissement, 2003-2026 : plafonds des dépôts et des intérêts, textes"}
+
+| Effet | Texte et articles | Avant → après | Portée |
+|---|---|---|---|
+| []{#r-epargne-cei-2003}[1^er^ janvier 2003]{.insecable} | loi n° 2002-101, loi de finances pour 2003 [@lf-2003, art. 21, 22 et 87, p. 2877-2878 et 2888] ; [@dgi-nc-35-2003] | art. 21, nouvel art. 39 *bis* : dépôts déductibles jusqu'à 20 000 D par an ; art. 22, nouveau point 15 de l'art. 38 : intérêts exonérés jusqu'à 2 000 D par an | rupture propre |
+| []{#r-epargne-cei-2018}[1^er^ janvier 2017]{.insecable} | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 27, p. 4275] ; [@dgi-nc-2-2018] | montants déposés et intérêts ou bénéfices réalisés à partir de cette date : dépôts déductibles 20 000 D → 50 000 D ; intérêts et bénéfices exonérés 2 000 D → 4 000 D | ajustement |
+
+::::
+
+#### Les fonds et les organismes exonérés : la retenue définitive {#sec-irpp-epargne-fonds}
+
+Pour une personne morale qui ne paie pas l'impôt sur les sociétés, ou pour un fonds, la retenue sur les revenus de capitaux mobiliers est définitive et non restituable (article 52 § II-2 du code). La règle naît de la réforme de 1992 (@sec-irpp-epargne-1992). Selon l'administration, elle s'étend en 2002 aux fonds communs de placement en valeurs mobilières, dont les revenus supportent une retenue « définitive et libératoire » de 20 %, et les fonds communs de créances supportent une retenue de 20 % imputable sur celle que doivent leurs copropriétaires [@dgi-nc-45-2002]. Les parts de fonds communs de placement relèvent des revenus distribués (@sec-irpp-epargne-2014). La règle est abrogée en 2021, puis rétablie en 2022 et étendue aux fonds d'amorçage et aux fonds communs de placement à risque (@sec-irpp-epargne-2020). Les [organismes de placement collectif en valeurs mobilières](#g-opcvm) comprennent les SICAV et les fonds communs de placement.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_fonds",
+      "Retenue définitive sur les revenus de capitaux mobiliers des organismes exonérés et des fonds, 1992-2026",
+      "tbl-irpp-epargne-fonds")
+```
+
+<!-- TODO (documentaliste) : le tableau ne porte pas l'extension de 2002 aux fonds communs de placement en valeurs mobilières (LF 2002, art. 21 à 28, selon la NC 45/2002, non relus au fascicule) : ligne à ajouter au registre et au tableau une fois les articles lus ; constat dans docs/notes/backlog-modele.md. -->
+
+<!-- TODO (documentaliste) : régime fiscal des SICAV (la NC 45/2002 renvoie à un régime « en vigueur » antérieur) ; LF 2002, art. 21 à 28, à lire au fascicule ; déduction de l'art. 39 ter (loi n° 2005-59, art. 3) et décret-loi n° 2011-100, connus par les annotations du code consolidé seulement. -->
+
+:::: {.chronologie-repliable titre="Retenue définitive des organismes exonérés et des fonds, 1992-2026 : textes"}
+
+| Effet | Texte et articles | Avant → après | Portée |
+|---|---|---|---|
+| []{#r-epargne-fonds-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 31, p. 2085] | nouveau 52-II-2 : 20 % définitive et non restituable sur les revenus de capitaux mobiliers des personnes morales non soumises à l'impôt sur les sociétés ou totalement exonérées | mise en place (réforme de 1992) |
+| []{#r-epargne-fonds-1999}[1^er^ janvier 1999]{.insecable} | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 43, p. 2505] | mention des banques non résidentes retirée de 52-II-2 | ajustement |
+| []{#r-epargne-fonds-2002}[1^er^ janvier 2002]{.insecable} | loi n° 2001-123, loi de finances pour 2002, art. 21 à 28, selon l'administration [@dgi-nc-45-2002] | 52-II-2 étendu aux fonds communs de placement en valeurs mobilières ; fonds communs de créances : 20 % imputable sur la retenue due aux copropriétaires | — |
+| []{#r-epargne-fonds-2021}[1^er^ janvier 2021]{.insecable} | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 17, p. 3130] | 52-II-2 abrogé ; la retenue de 20 % devient libératoire pour tous | étape (réforme de 2020-2022) |
+| []{#r-epargne-fonds-2022}[1^er^ janvier 2022]{.insecable} | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 38, p. 3090] ; [@dgi-nc-1-2022] | 52-II-2 rétabli ; étendu aux fonds d'amorçage et aux FCPR ; hors devises | étape (réforme de 2020-2022) |
+
+::::
+
+#### Les non-résidents {#sec-irpp-epargne-non-residents}
+
+Pour un bénéficiaire qui n'est ni résident ni établi en Tunisie, la retenue est libératoire : elle est le seul impôt dû en Tunisie sur ce revenu. Les intérêts supportent 15 % libératoires en [1990](#r-epargne-nr-1990), comme en [1992](#r-epargne-nr-1992), puis 20 % à partir de [1997](#r-epargne-nr-1997) ; [la loi de finances pour 2005](#r-epargne-nr-2005) réserve expressément le caractère libératoire aux non-résidents. Les dividendes qu'ils perçoivent supportent la retenue de droit commun depuis 2015 (@sec-irpp-epargne-2014).
+
+Depuis 2011, leurs plus-values de cession de titres sont imposables : d'abord par une retenue sur le prix, de 5 % pour les personnes morales et de 2,5 % pour les personnes physiques ([loi de finances pour 2011](#r-epargne-nr-2011)), puis, à partir de 2012, sur la plus-value, à 30 % pour les personnes morales et 10 % pour les personnes physiques ([loi de finances pour 2012](#r-epargne-nr-2012)), dans la limite de 5 % ou 2,5 % du prix ([loi de finances complémentaire pour 2012](#r-epargne-nr-2012-lfc)). Le taux des personnes morales suit celui de l'impôt sur les sociétés : 25 % en [2014](#r-epargne-nr-2014), 15 % en [2021](#r-epargne-nr-2021), 20 % en [2025](#r-epargne-nr-2025) (@sec-impot-societes). Les intérêts des prêts payés aux banques non établies supportent 2,5 % en [1995](#r-epargne-nr-1995), 5 % en [2011](#r-epargne-nr-2011-e), 10 % en [2018](#r-epargne-nr-2018). Les bénéficiaires établis dans un État à régime fiscal privilégié, dont la liste est fixée par décret, supportent 25 % ([loi de finances pour 2014](#r-epargne-nr-2014-paradis)).
+
+Pour les intérêts, le tableau suivant donne le taux à chaque date ; le taux de 25 % ne vaut que pour les bénéficiaires établis dans l'un des États de la liste.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_nr_interets",
+      "Retenue libératoire sur les revenus de capitaux mobiliers servis aux non-résidents, 1990-2026",
+      "tbl-irpp-epargne-nr-interets")
+```
+
+Pour les plus-values de titres, le tableau suivant donne la base et le taux à chaque date, par catégorie de cédant.
+
+```{python}
+#| echo: false
+#| output: asis
+table("irpp_epargne_nr_plus_values",
+      "Retenue sur la plus-value de cession de titres réalisée par les non-résidents, 2011-2026",
+      "tbl-irpp-epargne-nr-plus-values")
+```
+
+<!-- TODO (documentaliste) : liste des États à régime fiscal privilégié (décret de 2014 à 2018, arrêté du ministre des finances à partir de 2019) : textes non identifiés, date de la liste non établie ; la liste n'est pas dans les tableaux. -->
+
+:::: {.chronologie-repliable titre="Non-résidents, 1990-2026 : retenues sur les intérêts, les dividendes et les plus-values, textes"}
+
+| Effet | Texte et articles | Avant → après | Portée |
+|---|---|---|---|
+| []{#r-epargne-nr-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 52, p. 11] | intérêts et autres revenus de capitaux mobiliers : 15 % (52-I-c), retenue libératoire pour les revenus servis aux personnes non résidentes ou non établies en Tunisie (52-II) | mise en place |
+| []{#r-epargne-nr-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 31, p. 2084-2085] | 15 % maintenus, libératoires | étape (réforme de 1992) |
+| []{#r-epargne-nr-1995}[1^er^ janvier 1995]{.insecable} | loi n° 94-127, loi de finances pour 1995 [@lf-1995, art. 54, p. 2046] | intérêts des prêts payés aux banques non établies (52-I-e) : 2,5 % | ajustement |
+| []{#r-epargne-nr-1997}[1^er^ janvier 1997]{.insecable} | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 30 à 32, p. 2581] | 15 % → 20 % (taux unique de 52-I-c) | étape (réforme de 1992) |
+| []{#r-epargne-nr-2005}[1^er^ janvier 2005]{.insecable} | loi n° 2004-90, loi de finances pour 2005 [@lf-2005, art. 69, p. 3443] ; [@dgi-nc-13-2005] | caractère libératoire réservé aux sommes « servies aux non résidents et non établis » et à l'alinéa e | ajustement |
+| []{#r-epargne-nr-2011}cessions à partir du [1^er^ janvier 2011]{.insecable} | loi n° 2010-58, loi de finances pour 2011 [@lf-2011, art. 41, p. 3474-3476] | plus-values des non-résidents imposables (art. 3 et 45-III) ; retenue sur le prix (52-I-e) : 5 % (personnes morales), 2,5 % (personnes physiques), avec option pour l'imposition de la plus-value réelle | rupture propre |
+| []{#r-epargne-nr-2011-e}[1^er^ janvier 2011]{.insecable} | loi n° 2010-58, loi de finances pour 2011 [@lf-2011, art. 43, p. 3476] | intérêts des prêts aux banques non établies : 2,5 % → 5 % | ajustement |
+| []{#r-epargne-nr-2012}[1^er^ janvier 2012]{.insecable} | loi n° 2011-7, loi de finances pour 2012 [@lf-2012, art. 15, p. 5] | retenue sur le prix → 52-I-e *bis* : 30 % de la plus-value (personnes morales), 10 % (personnes physiques) | étape (rupture de 2011) |
+| []{#r-epargne-nr-2012-lfc}[25 mai 2012]{.insecable} | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, art. 12, p. 923] ; date retenue par l'administration fiscale pour cette loi [@dgi-nc-14-2012] | retenue plafonnée à 5 % du prix (personnes morales) et 2,5 % (personnes physiques) | ajustement |
+| []{#r-epargne-nr-2014}cessions à partir du [1^er^ janvier 2014]{.insecable} | loi n° 2013-54, loi de finances pour 2014 [@lf-2014, art. 18, p. 3670] | 30 % → 25 % | ajustement |
+| []{#r-epargne-nr-2014-paradis}[1^er^ janvier 2014]{.insecable} | loi n° 2013-54, loi de finances pour 2014 [@lf-2014, art. 44, p. 3677] | « Relèvement du taux de la retenue à la source sur les montants payés à des résidents dans des paradis fiscaux » : taux des alinéas b (3^e^ tiret), c, c *bis* et e porté à 25 %, liste des États fixée par décret | ajustement |
+| []{#r-epargne-nr-2018}[1^er^ janvier 2018]{.insecable} | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 47, p. 4286] | intérêts des prêts aux banques non établies : 5 % → 10 % | ajustement |
+| []{#r-epargne-nr-2019}[1^er^ janvier 2019]{.insecable} | loi n° 2018-56, loi de finances pour 2019 [@lf-2019, art. 35, pp. 5449-5450] (édition arabe) | « paradis fiscaux » (art. 52, avant-dernier alinéa) → « pays ou territoire à régime fiscal privilégié » au sens du point 12 de l'art. 14 : bénéficiaire dont l'impôt dû dans ce pays est inférieur à 50 % de l'impôt tunisien sur la même activité ; liste fixée par arrêté du ministre des finances ; taux de 25 % inchangé | ajustement |
+| []{#r-epargne-nr-2021}plus-values réalisées à partir du [1^er^ janvier 2021]{.insecable} | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 14, p. 3127] | 25 % → 15 % | ajustement |
+| []{#r-epargne-nr-2025}plus-values réalisées à partir du [1^er^ janvier 2025]{.insecable} | loi n° 2024-48, loi de finances pour 2025 [@lf-2025, art. 37, p. 3431] | 15 % → 20 % | ajustement |
+
+::::
+
+### La longue période : ce que coûtent les avantages à l'épargne {#sec-irpp-epargne-longue-periode}
+
+Selon les rapports du ministère des Finances sur les dépenses fiscales, les déductions liées à l'épargne coûtent ensemble de 2,7 à 82 millions de dinars par an de 2017 à 2023, selon l'exercice et le rapport, au titre surtout du CEA et, à partir de 2020, de l'assurance-vie (@fig-irpp-epargne-depenses-fiscales). La méthode de ces rapports — perte de recettes à comportement inchangé — est exposée au chapitre des dépenses fiscales (@sec-df-rapport).
+
+```{python}
+#| label: fig-irpp-epargne-depenses-fiscales
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import epargne_capital as fig_ep
+import figtools
+figtools.figure_tabs(
+    fig_ep.fig(), fig_ep.table(), fig_ep.SERIE,
+    slug="fig_irpp_epargne_depenses_fiscales",
+    caption="Coût des déductions liées à l'épargne selon les rapports sur les dépenses fiscales annexés aux projets de loi de finances pour 2021, 2024 et 2025, exercices 2017-2023",
+    note_lecture=(
+        "Une marque par rapport ; les points d'un même rapport sont seuls reliés, et rien "
+        "n'est raccordé d'un rapport à l'autre. Pour l'exercice 2022, les rapports pour 2024 "
+        "et 2025 donnent des montants différents. Le rapport pour 2021 ne valorise pas la "
+        "déduction des primes d'assurance-vie (exercices 2017 à 2019) : la courbe de "
+        "l'assurance-vie commence en 2020, l'année où le plafond passe à 100 000 D, sans que "
+        "son départ mesure l'effet de ce relèvement. Les intérêts des comptes spéciaux "
+        "d'épargne ne sont valorisés dans aucun des trois rapports."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+- **Le domaine « Intérêts dépôts et épargne » du rapport pour 2021 est la somme des déductions CEA et CEI.** Ses montants, 26,64, 30,23 et 2,70 MD pour 2017, 2018 et 2019, sont exactement ceux des deux mesures du même rapport [@gbo-depenses-fiscales, rapport annexé au projet de loi de finances pour 2021, p. 32] : ils ne mesurent pas des intérêts exonérés.
+- **Les exonérations d'intérêts ne sont pas chiffrées.** Épargne logement, dépôts en devises, comptes d'épargne pour les études et intérêts des comptes spéciaux sont « non valorisés » dans les trois rapports.
+- **Les millésimes divergent.** Pour 2022, le CEA vaut 13,71 MD dans le rapport pour 2024 et 36,43 MD dans le rapport pour 2025 ; l'assurance-vie 15,96 et 44,30 MD ; 2021 concorde entre les deux. Le rapport pour 2021 n'explique pas la chute de 2019 (CEA : 2,58 MD, contre 28,26 MD en 2018).
+
+<!-- TODO (rédacteur, données) : figure des plafonds de déduction (comptes spéciaux, assurance-vie, CEA, CEI) en dinars courants et constants, 1990-2026 : générateur scripts/generate_epargne_capital_series.py à écrire sur le modèle de generate_forfait_bic_series.py, depuis les registres de cette section et la série ipc-longue-periode ; le remplacer par une lecture de l'arbre de paramètres quand ceux-ci seront corrigés en amont. -->
+
+<!-- TODO (documentaliste) : recettes des retenues sur les revenus de capitaux mobiliers, sur les dividendes et sur les plus-values : aucune série ventilée dans les recettes publiées par le ministère des Finances ; examiner les rapports annuels de la DGI 2013-2014, les lois de règlement, le rapport sur le budget de l'État 2014. Encours de l'épargne bancaire et postale et des dépôts à terme, 2003-2024 (BCT, Bulletin des statistiques financières, table IV-2-a, transcrite dans tunisia-data, absente du catalogue) : à cataloguer avant une figure. -->
+
+### Ce qu'en dit l'économie {#sec-irpp-epargne-economie}
+
+**La question.** Les lois de 1992 et de 1997 parlent d'« harmonisation » et d'« unification des taux », celle de 2014 d'imposer les bénéfices distribués en baissant l'impôt sur les sociétés. L'économiste se demande si l'impôt traite également les placements, s'il modifie le montant et la forme de l'épargne, les distributions des sociétés et le moment des cessions, et ce que coûte en progressivité une retenue libératoire.
+
+**Ce que dit la théorie.** Deux résultats concluent à un impôt nul sur le rendement de l'épargne, sous des hypothèses restrictives : des contribuables qui ne diffèrent que par leur capacité de gain (Atkinson et Stiglitz), ou des dynasties à horizon infini (Chamley et Judd) [@mirrlees-et-al-2011-tax-by-design, pp. 292-293]. La *Mirrlees Review*, revue normative du système britannique, fait de la neutralité entre actifs le but central de l'imposition de l'épargne (p. 314) et classe les régimes selon que l'impôt frappe l'apport, le rendement ou le retrait (p. 297) ; elle tient pour ouverte la question d'imposer le rendement normal de l'épargne (pp. 307-308). Piketty et Saez, puis Saez et Stantcheva, rattachent le zéro de Chamley et Judd à une élasticité de long terme infinie des legs ou du capital à l'impôt ; finie, elle donne un taux optimal positif, fonction de cette élasticité, de la concentration du patrimoine et des préférences sociales pour la redistribution (formules en statistiques suffisantes ; chez Saez et Stantcheva, appliquées aux déclarations de revenus américaines de 2007) [@piketty-saez-2013-inheritance-taxation, pp. 1851, 1872 et 1883 ; @saez-stantcheva-2018-capital-taxation, pp. 120 et 136-137]. Selon Piketty et Saez, le taux optimal sur l'héritage peut atteindre 50 à 60 % si l'élasticité des legs est faible et les legs concentrés (calibrage sur l'*Enquête Patrimoine* 2010 et le *Survey of Consumer Finances* 2010) [@piketty-saez-2013-inheritance-taxation, pp. 1851 et 1873]. Straub et Werning concluent que, dans le cadre même de Judd, l'impôt de long terme sur le capital est positif si l'élasticité de substitution intertemporelle est inférieure à 1 (résolution théorique de ce cadre, sans poids social accordé aux détenteurs du capital) [@straub-werning-2020-chamley-judd, pp. 10-11 de la version de travail]. Une synthèse de la littérature retient comme raison la plus solide de l'imposer l'hétérogénéité des rendements et des héritages entre contribuables de même revenu du travail ; elle note que l'impôt dual, qui taxe le capital à taux proportionnel, ouvre des transferts entre revenus d'autant plus larges que l'écart avec le taux supérieur du travail est grand [@bastani-waldenstrom-2020-capital-taxation, pp. 7 et 19-20 de la version de travail].
+
+**Ce que mesure l'empirique.** Sur les plus-values, une étude des variations des taux des États américains de 1980 à 2016, par projections locales, trouve une élasticité des plus-values réalisées au taux comprise entre −0,3 et −0,5 à dix ans, plus forte à court terme [@agersnap-zidar-2021-capital-gains-elasticity, p. 2] : une part de la réponse est un déplacement des cessions dans le temps, l'[effet de verrouillage](#g-effet-de-verrouillage).
+
+Sur les dividendes, les distributions répondent vite à l'impôt. Aux États-Unis, après la baisse de 2003, les dividendes réguliers des sociétés cotées augmentent d'environ 20 %, soit une élasticité au taux d'environ −0,5 (comparaison avant-après avec contrôles, sociétés cotées, 1980-2004) [@chetty-saez-2005-dividend-taxes]. En France, après les réformes de 2013 et de 2018, les élasticités des dividendes au taux net d'impôt sont de 4,2 et 2,1, portées par les actionnaires qui contrôlent leur société (doubles différences sur les déclarations appariées des ménages et des sociétés, 2000-2022) [@bach-et-al-2023-follow-the-money] ; les deux études ne définissent pas l'élasticité de la même façon, et leurs chiffres ne forment pas une plage. En Norvège, un impôt sur les dividendes de 28 %, annoncé pour 2006 là où il n'y en avait pas, fait monter les distributions des 75 433 sociétés non cotées étudiées avant son entrée en vigueur, puis chuter (1999-2006) [@alstadsaeter-fjaerli-2009-announced-dividend-tax]. L'investissement, lui, ne répond pas de façon mesurable à la baisse américaine de 2003 : élasticité de 0,00, intervalle de confiance à 95 % de −0,08 à 0,08 (sociétés soumises ou non à l'impôt sur les dividendes, 1996-2008) [@yagan-2015-dividend-tax-cut, p. 3548] ; le même constat vaut en France après 2013 et 2018 [@bach-et-al-2023-follow-the-money].
+
+Sur l'épargne, au Danemark, un dollar de subvention aux comptes d'épargne-retraite accroît l'épargne totale d'environ un cent : 15 % d'épargnants « actifs », plus aisés, déplacent leurs actifs, les autres ne répondent pas (données de population, 41 millions d'observations, 1995-2009) [@chetty-et-al-2014-active-passive-savings]. Une méta-analyse de 2 735 estimations (169 études, 120 pays) trouve, après correction du biais de publication, une élasticité de substitution intertemporelle proche de zéro sur données agrégées et de 0,3 à 0,4 pour les détenteurs d'actifs [@havranek-2015-intertemporal-substitution] ; cette élasticité gouverne, sans s'y confondre, la réponse de l'épargne au rendement.
+
+Pour la Tunisie, trois documents traitent du dispositif, chacun de sa famille, sans mesurer l'effet des réformes de 2015 à 2023 :
+
+- le diagnostic du ministère des Finances de 2013, cité à la @sec-irpp-epargne-2014, décrit sans le chiffrer l'effet conjoint de la retenue de 20 % et du secret bancaire sur la déclaration des revenus mobiliers [@minfin-cnf-2013-synthese, p. 24] ;
+- la Banque mondiale estime en 2014 le taux effectif marginal d'imposition de l'investissement à environ 31 % pour les entreprises « onshore » et 5 % pour les « offshore », par des calculs dont elle ne publie ni l'année ni les hypothèses ; une simulation non publiée sur plus de 55 000 entreprises subordonne, selon elle, la neutralité budgétaire d'un taux unique d'impôt sur les sociétés à une retenue sur les dividendes [@banquemondiale2014-revolution-inachevee, p. 145, 164 note 14 et 165 note 33] ;
+- le FMI écrit en 2015 que les impôts directs tunisiens « favor capital income » (annexe V), et estime ex ante, sans décrire sa méthode, que le passage de la retenue sur les dividendes à 10 % rapporterait « 0.05 » % du PIB en 2016 [@fmi-2015-article-iv, p. 18, 67 et 70].
+
+**Ce que le praticien retient.**
+
+- **Un taux légal n'est pas un taux effectif.** La retenue frappe le rendement nominal, et le bénéfice distribué a déjà supporté l'impôt sur les sociétés : le taux cumulé sur un dinar de bénéfice distribué est $t_s + (1 - t_s)\,t_d$, où $t_s$ est le taux de l'impôt sur les sociétés et $t_d$ celui de la retenue sur les dividendes.
+- **Le droit a ouvert deux fenêtres pour avancer les distributions** : avant le 1^er^ janvier 2015, et avant le 1^er^ janvier 2018, la retenue de 10 % frappant les distributions postérieures même sur des bénéfices antérieurs. L'exclusion des fonds propres au 31 décembre 2013 incite, elle, à imputer les distributions sur ces réserves.
+- **Le seuil de détention des actions cotées est calendaire** — la fin de l'année qui suit l'achat — : la détention requise va de douze à vingt-quatre mois selon la date d'achat.
+- **Les déductions de l'apport** (CEA, assurance-vie, CEI) valent d'autant plus que le taux marginal du titulaire est élevé, dans la limite du minimum d'impôt (@tbl-plafonnement).
+- **Ce que les données tunisiennes ne tranchent pas** : les recettes publiées ne séparent pas les retenues sur les intérêts, les dividendes et les plus-values ; les dividendes des ménages ne sont pas rapprochés des sociétés distributrices ; la répartition des revenus du capital par niveau de revenu n'est pas publiée.
+
+Littérature arrêtée au mois d'octobre 2026.
+
+## Les prélèvements adossés : la contribution sociale de solidarité {#sec-irpp-css}
 
 La [contribution sociale de solidarité](#g-css) est un prélèvement distinct de l'IRPP mais assis sur la même assiette et liquidé avec lui : instituée par l'article 53 de la loi de finances pour 2018, elle est calculée comme la différence entre l'impôt résultant du barème majoré d'un point sur chaque taux de tranche et l'impôt résultant du barème non majoré [@lf-2018, art. 53]. La loi de finances pour 2023 ramène la majoration à un demi-point pour les revenus dont la déclaration échoit en 2023, 2024 et 2025, et en dispense les personnes qui ne perçoivent que des traitements, salaires, pensions et rentes viagères et dont le revenu annuel net, après les déductions pour situation et charges de famille, n'excède pas 5 000 dinars [@lf-2023, art. 22]. Son affectation aux caisses de sécurité sociale est exposée dans le livre [« Les caisses de sécurité sociale »](../caisses/_etat_caisses.html#sec-caisses-financeur).
 
@@ -1004,7 +1525,7 @@ URL pist.tn. Cf. Q10 de docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
 ## Les réformes de l'IRPP, texte par texte {#sec-irpp-reformes}
 
-Les sections qui précèdent suivent chacune un élément de l'impôt. Le tableau suivant range les mêmes modifications par texte, dans l'ordre chronologique, pour montrer ce que chaque loi a changé d'un seul geste. Il ne reprend que les textes cités dans ce chapitre, et renvoie pour chacun à la section qui le détaille. La colonne « Effet » suit la convention de datation en années de revenus (@sec-irpp-assiette) : une année suivie d'un astérisque est dérivée de l'article final de la loi, et un tiret signale une date d'effet que le chapitre n'établit pas.
+Les sections qui précèdent suivent chacune un élément de l'impôt. Le tableau suivant range les mêmes modifications par texte, dans l'ordre chronologique, pour montrer ce que chaque loi a changé d'un seul geste. Il ne reprend que les textes cités dans ce chapitre, et renvoie pour chacun à la section qui le détaille ; les textes propres aux revenus de l'épargne et du capital ont leurs registres dans leur section (@sec-irpp-epargne-registres). La colonne « Effet » suit la convention de datation en années de revenus (@sec-irpp-assiette) : une année suivie d'un astérisque est dérivée de l'article final de la loi, et un tiret signale une date d'effet que le chapitre n'établit pas.
 
 : Les réformes de l'impôt sur le revenu des personnes physiques depuis 1990, texte par texte {#tbl-irpp-reformes}
 
@@ -1030,7 +1551,7 @@ Les sections qui précèdent suivent chacune un élément de l'impôt. Le tablea
 | art. 44 [@lf-2010, art. 44] | — | charges déductibles (art. 39 § I) | aucune → déduction des cotisations des travailleurs non salariés affiliés à un régime légal de sécurité sociale, ajoutée | @sec-irpp-deductions |
 | **Loi de finances pour 2011**, art. 32 et 37 [@lf-2011, art. 32 et 37; @dgi-nc-15-2011] | revenus 2011 | régime forfaitaire | § IV de l'art. 44 et tarif par tranches de l'annexe II → art. 44 *bis* à 44 *sexies* : 2 % ou 2,5 % du chiffre d'affaires, plancher de 50 ou 100 D, seuils de 100 000 et 50 000 D ; impôt forfaitaire optionnel de 1 500 D supprimé | @sec-irpp-forfait |
 | art. 38 [@lf-2011, art. 38] | — | minimum d'impôt (art. 44 § II) | plancher : 100 → 200 D | @sec-irpp-minimum |
-| **Loi de finances pour 2014**, art. 19 [@lf-2014, art. 19] | distributions à partir du 1^er^ janvier 2015 | revenus de valeurs mobilières (art. 38, point 10) | exonération générale des dividendes → abrogée, sauf distributions prélevées sur les fonds propres au 31 décembre 2013 | @sec-irpp-capitaux |
+| **Loi de finances pour 2014**, art. 19 [@lf-2014, art. 19] | distributions à partir du 1^er^ janvier 2015 | revenus de valeurs mobilières (art. 38, point 10) | exonération générale des dividendes → abrogée, sauf distributions prélevées sur les fonds propres au 31 décembre 2013 | @sec-irpp-epargne-2014 |
 | art. 45 [@lf-2014, art. 45] | revenus 2013\* | régime forfaitaire (art. 44 *bis* et *ter*) | planchers : 50 → 75 D et 100 → 150 D ; exclusion, par décret, d'activités exercées en zone communale ; majoration de 50 % en cas de dépôt tardif | @sec-irpp-forfait |
 | art. 46 [@lf-2014, art. 46] | revenus 2013\* | bénéfices non commerciaux au forfait (art. 22 § II) | 70 % → 80 % des recettes brutes | @sec-irpp-bnc |
 | art. 48 [@lf-2014, art. 48] | — | minimum d'impôt (art. 44 § II) | 0,1 % et 200 D → 0,2 % et 300 D pour le chiffre d'affaires local ; 0,1 % et 200 D pour l'exportation et les chiffres d'affaires assimilés | @sec-irpp-minimum |
@@ -1043,7 +1564,7 @@ Les sections qui précèdent suivent chacune un élément de l'impôt. Le tablea
 | art. 19 § 1 [@lf-2016, art. 19] | revenus 2015\* | autres revenus (catégorie VII) | revenus de source étrangère seuls → s'y ajoutent les jeux de pari, de hasard et de loterie, et les revenus évalués d'après les dépenses ostensibles et l'accroissement du patrimoine | @sec-irpp-autres |
 | art. 21 [@lf-2016, art. 21; @dgi-nc-16-2016] | revenus 2015 | revenus des propriétés bâties (art. 28 § II) | déduction forfaitaire : 30 % → 20 %, frais de réparation et d'entretien justifiés déductibles en sus | @sec-irpp-foncier |
 | art. 38 [@lf-2016, art. 38] | — | régime forfaitaire : retrait (art. 44 *sexies*) | décision du ministre → du directeur général des impôts ou du chef du centre régional de contrôle des impôts | @sec-irpp-forfait |
-| **Loi de finances pour 2017** (loi n° 2016-78), art. 13 [@lf-2017, art. 13; @dgi-nc-2-2017] | revenus 2016 | intérêts de l'épargne (art. 39 § II) | plafond : 1 500 D, dont 1 000 D de comptes spéciaux → 5 000 D, dont 3 000 D | @sec-irpp-deductions |
+| **Loi de finances pour 2017** (loi n° 2016-78), art. 13 [@lf-2017, art. 13; @dgi-nc-2-2017] | revenus 2016 | intérêts de l'épargne (art. 39 § II) | plafond : 1 500 D, dont 1 000 D de comptes spéciaux → 5 000 D, dont 3 000 D | @sec-irpp-epargne-comptes-speciaux |
 | art. 14 § 1 [@lf-2017, art. 14] | revenus 2017 | barème (art. 44 § I) | 6 → 5 tranches ; tranche à taux nul : 1 500 → 5 000 D ; tranches à 15 % et 20 % supprimées, taux intermédiaires relevés ; 35 % au-delà de 50 000 D inchangé | @sec-irpp-bareme |
 | art. 14 [@lf-2017, art. 14] | revenus 2017 | frais professionnels (art. 26 § I) | 10 % sans plafond → 10 % dans la limite de 2 000 D | @sec-irpp-salaires |
 | art. 14 § 3 [@lf-2017, art. 14] | revenus 2017 | retenue à la source | dispense de retenue sur les rétributions provisoires ou accidentelles lorsque le salaire annuel global net ne dépasse pas 5 000 D | @sec-irpp-salaires |
@@ -1052,19 +1573,19 @@ Les sections qui précèdent suivent chacune un élément de l'impôt. Le tablea
 | **Loi de finances pour 2018** (loi n° 2017-66), art. 16 [@lf-2018, art. 16; @dgi-nc-lf2018-art16] | chiffre d'affaires 2017 | régime forfaitaire (art. 44 *bis* et *ter*) | jusqu'à 10 000 D : 150 → 200 D en zone communale, 75 → 100 D ailleurs ; durée : 3 → 4 ans | @sec-irpp-forfait |
 | art. 54 [@lf-2018, art. 54] | revenus 2019 | charges de famille : chef de famille, enfants | chef de famille : 150 → 300 D ; enfants : 90, 75, 60 et 45 D selon le rang → 100 D pour chacun des quatre premiers | @sec-irpp-famille |
 | art. 55 [@lf-2018, art. 55; @dgi-nc-7-2018] | revenus 2017 | charges de famille : enfant infirme | 1 200 → 2 000 D | @sec-irpp-famille |
-| art. 56 [@lf-2018, art. 56] | — | exonérations (art. 38) | ajout des sommes provenant des jeux de pari sur les courses de chevaux et des concours de pronostics sportifs organisés par des établissements publics | @sec-irpp-capitaux |
+| art. 56 [@lf-2018, art. 56] | — | exonérations (art. 38) | ajout des sommes provenant des jeux de pari sur les courses de chevaux et des concours de pronostics sportifs organisés par des établissements publics | @sec-irpp-autres |
 | **Loi de finances pour 2020**, art. 41 [@lf-2020, art. 41; @dgi-nc-3-2020] | revenus 2019 | charges de famille : parent à charge | plafond : 150 → 450 D par parent ; condition de ressources : SMIG → double du SMIG | @sec-irpp-famille |
 | art. 42 [@lf-2020, art. 42] | — | régime forfaitaire (art. 44 *bis*) | durée de 4 ans → sans limite hors zones communales | @sec-irpp-forfait |
 | art. 44 [@lf-2020, art. 44] | — | exonérations (art. 38) | ajout de l'avantage « transport domicile-travail » offert par les entreprises des zones de développement régional | @sec-irpp-salaires |
-| **Loi de finances pour 2021**, art. 16 [@lf-2021, art. 16; @dgi-nc-1-2021] | revenus 2020 | primes d'assurance-vie (art. 39 § I) | plafond : 10 000 → 100 000 D ; déduction soumise pour la première fois au minimum de l'art. 12 *bis* de la loi n° 89-114 | @sec-irpp-deductions |
-| art. 16 [@lf-2021, art. 16] | — | comptes épargne en actions (art. 39 § VIII) | plafond : 50 000 → 100 000 D | @sec-irpp-deductions |
+| **Loi de finances pour 2021**, art. 16 [@lf-2021, art. 16; @dgi-nc-1-2021] | revenus 2020 | primes d'assurance-vie (art. 39 § I) | plafond : 10 000 → 100 000 D ; déduction soumise pour la première fois au minimum de l'art. 12 *bis* de la loi n° 89-114 | @sec-irpp-epargne-assurance-vie |
+| art. 16 [@lf-2021, art. 16] | — | comptes épargne en actions (art. 39 § VIII) | plafond : 50 000 → 100 000 D | @sec-irpp-epargne-cea |
 | art. 18 [@lf-2021, art. 18] | — | régime forfaitaire (art. 44 *bis*) | durée : 4 → 6 ans | @sec-irpp-forfait |
-| **Loi de finances pour 2022**, art. 24 [@lf-2022, art. 24; @dgi-nc-1-2022] | revenus 2021 | intérêts de l'épargne (art. 39 § II) | plafond : 5 000 D, dont 3 000 D de comptes spéciaux → 10 000 D, dont 6 000 D | @sec-irpp-deductions |
-| art. 29 [@lf-2022, art. 29] | — | intérêts des emprunts obligataires verts, socialement responsables et durables (art. 39 § II *bis*) | déduction créée, dans la limite de 10 000 D par an | @sec-irpp-deductions |
+| **Loi de finances pour 2022**, art. 24 [@lf-2022, art. 24; @dgi-nc-1-2022] | revenus 2021 | intérêts de l'épargne (art. 39 § II) | plafond : 5 000 D, dont 3 000 D de comptes spéciaux → 10 000 D, dont 6 000 D | @sec-irpp-epargne-comptes-speciaux |
+| art. 29 [@lf-2022, art. 29] | — | intérêts des emprunts obligataires verts, socialement responsables et durables (art. 39 § II *bis*) | déduction créée, dans la limite de 10 000 D par an | @sec-irpp-epargne-comptes-speciaux |
 | **Décret n° 2022-802** [@decret-2022-802] | 1^er^ janvier 2023 | régime forfaitaire (art. 44 *bis*) | listes des activités exclues en zone communale complétées | @sec-irpp-forfait |
 | **Loi de finances pour 2023** (décret-loi n° 2022-79), art. 43 [@lf-2023, art. 43] | — | plus-value immobilière (art. 27) | exclusion d'un seul local d'habitation de 1 000 m² au plus, à la première cession (règle de la loi de finances pour 2005) → réservée en outre aux prix de cession inférieurs à 500 000 D ; exclusion des terrains agricoles supprimée | @sec-irpp-foncier ; @sec-pi-registres |
 | art. 55 [@lf-2023, art. 55] | déclarations dues à partir de 2023 | régime forfaitaire (art. 44 *ter*) | jusqu'à 10 000 D de chiffre d'affaires : 200 → 400 D en zone communale, 100 → 200 D ailleurs | @sec-irpp-forfait |
-| **Loi de finances pour 2024**, art. 34 [@lf-2024, art. 34] | — | intérêts de l'épargne (art. 39 § II) | bons du trésor assimilables ajoutés aux supports éligibles ; plafonds inchangés | @sec-irpp-deductions |
+| **Loi de finances pour 2024**, art. 34 [@lf-2024, art. 34] | — | intérêts de l'épargne (art. 39 § II) | bons du trésor assimilables ajoutés aux supports éligibles ; plafonds inchangés | @sec-irpp-epargne-comptes-speciaux |
 | **Loi de finances pour 2025** (loi n° 2024-48), art. 20 [@lf-2025, art. 20] | pensions payées à partir du 1^er^ janvier 2025 | exonérations (art. 38) | pensions d'orphelins et pensions d'invalidité d'origine non professionnelle → exonérées | @sec-irpp-salaires |
 | art. 36 § 1 [@lf-2025, art. 36] | revenus 2025 | barème (art. 44 § I) | 5 → 8 tranches ; 35 % au-delà de 50 000 D → 40 % au-delà de 70 000 D, la tranche de 50 000 à 70 000 D étant imposée à 38 % | @sec-irpp-bareme |
 | art. 39 [@lf-2025, art. 39] | revenus 2024, rétroactivement | revenus des propriétés bâties (art. 28 § II) | 20 % et frais de réparation et d'entretien en sus → 25 %, frais compris | @sec-irpp-foncier |
@@ -1074,8 +1595,7 @@ Les sections qui précèdent suivent chacune un élément de l'impôt. Le tablea
 Sources : celles de chaque ligne. Les montants sont en dinars.
 
 <!-- TODO (rédacteur) : le tableau ne retient que les textes cités avec leur référence dans le
-chapitre. En sont absents, faute de référence : l'art. 30 de la loi de finances pour 1992 (intérêts
-de l'épargne), les art. 61 et 76 de la loi de finances pour 1998 (pensions de source étrangère,
+chapitre. En sont absents, faute de référence : les art. 61 et 76 de la loi de finances pour 1998 (pensions de source étrangère,
 bénéfices agricoles), l'art. 71 de la loi de finances pour 2002 (irréversibilité du réel des
 bénéfices non commerciaux), l'art. 42 de la loi de finances pour 2011 (gérants de SARL), et
 l'origine du taux de 60 % de l'art. 12 bis de la loi n° 89-114. Les revenus des travailleuses

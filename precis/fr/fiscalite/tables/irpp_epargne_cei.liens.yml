@@ -1,0 +1,6 @@
+- libelle: Plafond de la déduction des dépôts en compte épargne pour l'investissement
+  parametre: parameters/impot_revenu/deductions/cea_cei/cei.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.cea_cei.cei/table/
+- libelle: Plafond de l'exonération des intérêts du compte épargne pour l'investissement
+  parametre: parameters/impot_revenu/deductions/interets_comptes_epargne_investissement/plaf.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.deductions.interets_comptes_epargne_investissement.plaf/table/

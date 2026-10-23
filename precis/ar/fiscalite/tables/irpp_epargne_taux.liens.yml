@@ -1,0 +1,33 @@
+- libelle: جدول الضريبة على الدخل، الشريحة الأخيرة
+  parametre: parameters/impot_revenu/bareme.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.bareme/table/
+- libelle: الخصم القابل للطرح على مداخيل رؤوس الأموال المنقولة
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_imputable.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_imputable/table/
+- libelle: الخصم على حسابات الادخار الخاصة
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_comptes_speciaux_epargne.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_comptes_speciaux_epargne/table/
+- libelle: الخصم على السندات لحامله المجهول
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_titres_porteur_anonymes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_titres_porteur_anonymes/table/
+- libelle: الخصم على الرقاع لحاملها المجهول
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_obligations_porteur_anonymes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_obligations_porteur_anonymes/table/
+- libelle: نسبة القيمة الزائدة المتأتية من التفويت في السندات
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/taux.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.taux/table/
+- libelle: العتبة السنوية المعفاة من القيمة الزائدة للسندات
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/franchise.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.franchise/table/
+- libelle: الخصم على الأرباح الموزعة
+  parametre: parameters/impot_revenu/valeurs_mobilieres/revenus_distribues/taux_retenue_source.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.revenus_distribues.taux_retenue_source/table/
+- libelle: الخصم على الودائع لأجل
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_depots_terme.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_depots_terme/table/
+- libelle: الخصم التحرري على مداخيل رؤوس الأموال المنقولة
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_liberatoire.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_liberatoire/table/
+- libelle: نسبة القيمة الزائدة للسندات غير المدرجة المحتفظ بها مدة قصيرة
+  parametre: parameters/impot_revenu/valeurs_mobilieres/plus_value_cession_titres/taux_non_cotes_detention_courte.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.valeurs_mobilieres.plus_value_cession_titres.taux_non_cotes_detention_courte/table/

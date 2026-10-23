@@ -1,0 +1,6 @@
+- libelle: الخصم التحرري على حسابات الادخار في الرقاع
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_comptes_epargne_emprunts_obligataires.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_comptes_epargne_emprunts_obligataires/table/
+- libelle: الخصم الإضافي عند السحب من حساب الادخار في الرقاع
+  parametre: parameters/impot_revenu/capitaux_mobiliers/retenue_source/taux_complementaire_retrait_epargne_emprunts_obligataires.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/impot_revenu.capitaux_mobiliers.retenue_source.taux_complementaire_retrait_epargne_emprunts_obligataires/table/

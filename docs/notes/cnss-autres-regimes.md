@@ -496,7 +496,7 @@ loi, mais incomplet pour le régime.
 ## 10. Le régime des travailleuses agricoles (décret-loi n° 2024-4)
 
 JORT n° 129 du 23 octobre 2024, p. 2897-2901 **[T]**. Pas de clause d'effet (art. 52) ; « déposé au
-siège du gouvernorat de Tunis le 23 octobre 2024 » → exécutoire le **28 octobre 2024** [D].
+siège du gouvernorat de Tunis le 23 octobre 2024 » → exécutoire le **28 octobre 2024** [D] selon la loi n° 93-64 ; **24 octobre 2024** selon le décret-loi n° 2020-1, art. 2, règle retenue depuis le 20 octobre 2026.
 
 - **Art. 1 et 17** : « un régime spécifique de sécurité sociale des travailleuses agricoles comportant
   l'octroi des prestations de l'assurance maladie et les pensions de vieillesse, d'invalidité et des
@@ -514,7 +514,7 @@ siège du gouvernorat de Tunis le 23 octobre 2024 » → exécutoire le **28 oct
 - **Contrôle sur l'édition arabe** (Ja1292024, p. 5295, couche texte) : art. 26 « خمس وستين سنة » et
   « 120 شهرا » ; art. 27 « بداية من سن الستين سنة » après 120 mois ; art. 28 « إذا لم تتجاوز مدة
   الاشتراكات الفعلية والمعتبرة 60 شهرا » (allocation si la durée **ne dépasse pas** 60 mois) ; art. 29
-  « يخفّض إلى النصف على الأقل ». Les deux éditions concordent. **Entre 61 et 119 mois, le décret-loi ne
+  « يخفّض إلى النصف على الأقل ». Les deux éditions concordent, sauf à l'art. 28 : français « inférieure à 60 mois », arabe « n'excède pas 60 mois » (l'arabe fait foi ; correction du 23 octobre 2026). **Entre 61 et 119 mois, le décret-loi ne
   prévoit rien** : ni pension, ni allocation.
 - **Art. 31-32** : conjoint survivant (lien conjugal au décès) ; orphelins 16 / 21 / 25 ans, fille sans
   ressources, infirmes.

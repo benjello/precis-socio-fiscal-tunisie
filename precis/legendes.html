@@ -502,3 +502,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 0);
 });
 </script>
+
+<script>
+// Retour à l'accueil du précis : le lien du pied de page est loin quand la page est longue.
+// Un bouton « maison » rejoint les outils de l'en-tête de la barre latérale (la clé `tools`
+// de Quarto n'y produit rien pour un livre).
+document.addEventListener("DOMContentLoaded", () => {
+  const outils = document.querySelector(".sidebar-tools-main");
+  if (!outils || outils.querySelector(".lien-accueil-precis")) return;
+  const titre = document.documentElement.lang === "ar" ? "الصفحة الرئيسية" : "Accueil du précis";
+  const lien = document.createElement("a");
+  lien.href = "../index.html";
+  lien.title = titre;
+  lien.className = "quarto-navigation-tool px-1 lien-accueil-precis";
+  lien.setAttribute("aria-label", titre);
+  lien.innerHTML = '<i class="bi bi-house"></i>';
+  outils.insertBefore(lien, outils.firstChild);
+});
+</script>

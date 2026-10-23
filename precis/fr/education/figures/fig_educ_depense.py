@@ -293,6 +293,40 @@ def vues_nature():
     return vues
 
 
+# --------------------------------------------------------------------------- communes
+def vues_communes():
+    """Articles d'éducation des budgets des communes, en parts : deux panneaux, deux années."""
+    figtools.apply_lang_font()
+    d = lire("fig_educ_communes")
+    fig, axes = plt.subplots(1, 2, figsize=(9.3, 4.4), sharey=True)
+    panneaux = (("Dépenses de l'article 3303, enseignement et formation",
+                 "Dépense d'enseignement et de formation\n(article 3303)",
+                 ("dépenses du titre I", "dépenses totales (titres I et II)"),
+                 ("Part des dépenses du titre I", "Part des dépenses totales (titres I et II)")),
+                ("Recettes de l'article 4101, jardins d'enfants",
+                 "Recettes des jardins d'enfants\n(article 4101)",
+                 ("recettes du titre I", "recettes totales (titres I et II)"),
+                 ("Part des recettes du titre I", "Part des recettes totales (titres I et II)")))
+    largeur = 0.36
+    for ax, (grandeur, titre, denos, libelles) in zip(axes, panneaux):
+        for k, (den, lib, c) in enumerate(zip(denos, libelles, (BLEU, ORANGE))):
+            s = d[(d["Grandeur"] == grandeur) & (d["Dénominateur"] == den)].set_index("Année")
+            x = [i + (k - 0.5) * largeur for i in range(len(s))]
+            barres = ax.bar(x, s["Part (%)"], width=largeur, color=c, label=figtools.fig_text(lib))
+            for b, (a, v) in zip(barres, s["Part (%)"].items()):
+                ax.text(b.get_x() + b.get_width() / 2, v, f"{v:.2f}".replace(".", ",") + " %".replace(" ", "\u202f"),
+                        ha="center", va="bottom", fontsize=8)
+        ax.set_xticks(range(2))
+        ax.set_xticklabels([figtools.fig_text("2022"), figtools.fig_text("2023 (provisoire)")], fontsize=9)
+        ax.set_title(figtools.fig_text(titre), fontsize=9)
+        ax.set_ylim(0, 0.115)
+        ax.spines[["top", "right"]].set_visible(False)
+        ax.legend(frameon=False, fontsize=8, loc="upper center", bbox_to_anchor=(0.5, -0.1))
+    axes[0].set_ylabel(figtools.fig_text("Part du budget des communes (%)"))
+    fig.tight_layout()
+    return [(None, fig)]
+
+
 # --------------------------------------------------------------------------- F7 enseignants
 def vues_enseignants():
     figtools.apply_lang_font()

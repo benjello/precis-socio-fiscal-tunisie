@@ -1,6 +1,6 @@
 # La dépense d'éducation {#sec-educ-depense}
 
-Ce chapitre suit ce que l'État dépense pour l'éducation, du plus général au plus particulier : la part de l'Éducation et de l'Enseignement supérieur dans les dépenses de l'État et dans le [PIB](#g-pib) ; la dépense de chaque ministère, par titre, par nature et par niveau ; les enseignants et la masse salariale ; puis la dépense des ménages. Viennent ensuite, à part et titrés comme tels, deux familles de chiffres qui ne sont pas budgétaires : les rapports d'institutions internationales et une étude d'incidence, chacun avec sa méthode.
+Ce chapitre suit ce que l'État dépense pour l'éducation, du plus général au plus particulier : la part de l'Éducation et de l'Enseignement supérieur dans les dépenses de l'État et dans le [PIB](#g-pib) ; la dépense de chaque ministère, par titre, par nature et par niveau ; les enseignants et la masse salariale ; la dépense des communes ; puis la dépense des ménages. Viennent ensuite, à part et titrés comme tels, deux familles de chiffres qui ne sont pas budgétaires : les rapports d'institutions internationales et une étude d'incidence, chacun avec sa méthode.
 
 Les effectifs d'élèves et d'étudiants sont au [chapitre des lois du système éducatif](./_histoire.html#sec-educ-eleves) ; les bourses, les prêts et les œuvres universitaires, au [chapitre des aides](./_aides.html#sec-educ-aides) ; la rémunération des enseignants, au volume [« Rémunérations publiques »](../remunerations_publiques/_regime_indiciaire.html#sec-regime-indiciaire).
 
@@ -71,7 +71,7 @@ Une ligne propre de la recherche (2005-2018 en gestion, 2005-2023 en développem
 - **Le stade des chiffres.** L'*Annuaire* ne le dit pas. Chaque édition donne trois années (cinq pour celle de 1995-2001), et les valeurs d'une même année changent d'une édition à l'autre. L'année la plus récente d'une édition est un chiffre provisoire, arrondi à la centaine de milliers de dinars jusqu'en 2009 ; la troisième année, ou une année plus ancienne, est un réalisé. C'est vérifié pour 2012 : la gestion de l'Éducation de l'*Annuaire* (3 007 491 milliers de dinars) est exactement la réalisation de 2012 du [projet annuel de performance](#g-projet-annuel-performance) du ministère pour 2014 [@mineducation-pap-2014, tableau 1, p. 6]. Chaque année du chapitre est prise dans l'édition la plus récente qui la contient, donc le plus souvent à son stade de réalisé ; quatre exceptions : 1999-2001 (premières années de l'édition 1995-2001), 2002-2003 (valeurs arrondies), 2015-2017 (colonnes reprises de l'édition 2013-2017, dont 2017 provisoire) et 2022-2023 (deux années les plus récentes de l'édition 2019-2023).
 - **Le développement se trace en deux segments, 1997-2008 et 2009-2023.** Pour 2009, l'édition 2006-2010 donne 2 594 millions de dinars de dépenses de développement de l'État, l'édition 2007-2011 en donne 3 274 : l'ampleur de l'écart indique un changement de périmètre, non une révision. Une hypothèse, que la source ne confirme pas : les éditions antérieures excluraient les dépenses de développement sur ressources extérieures affectées, que la section III de la loi de règlement comprend. Les deux segments ne sont jamais chaînés, et la part dans les dépenses de l'État commence en 2009.
 - **Les lois de règlement** donnent, dans leurs articles, les paiements par partie, non par ministère. Les tableaux par chapitre annexés aux lois de règlement ne sont pas identifiés ici. <!-- RECHERCHE r-educ-lois-reglement-tableaux-par-chapitre : tableaux n° 2, 2-1 et 2-2 annexés aux lois de règlement, ventilant les paiements par chapitre (voir docs/recherches.yml) --> Aucune loi de règlement n'est identifiée pour 2021 et après. <!-- RECHERCHE r-educ-lois-reglement-2021-et-apres : lois de règlement du budget des gestions 2021 et suivantes (voir docs/recherches.yml) -->
-- **Les collectivités locales.** Depuis 1958, des dépenses obligatoires leur incombent pour l'enseignement — construction, logement du personnel, entretien, mobilier, éclairage et chauffage [@loi58-118, art. 30] ([la loi de 1958](./_histoire.html#sec-educ-1958)). Depuis le code de 2018, l'entretien des écoles de base est une [compétence partagée](../finances_locales/_competences.html#sec-fl-comp-commune) de la commune et de l'autorité centrale [@loi-org-2018-29-ccl, art. 243]. La dépense des collectivités pour les écoles n'est pas isolée ici ; ce que la commune en a la charge est au [tableau des compétences de la commune](../finances_locales/_competences.html#tbl-fl-comp-commune) du livre « Les finances locales ». <!-- RECHERCHE r-educ-collectivites-depense-education : budgets des communes et des conseils régionaux, dépense d'éducation isolable ? (voir docs/recherches.yml) -->
+- **Les collectivités locales** n'entrent dans aucun total ni aucun ratio de ce chapitre : leur dépense, d'un autre périmètre, est à la section @sec-educ-depense-collectivites.
 
 :::: {.chronologie-repliable titre="Stade comptable de la série de l'Annuaire : comparaisons de 2010, 2012 et 2017 avec les crédits votés, le projet annuel de performance et la loi de règlement"}
 
@@ -394,6 +394,67 @@ fd.onglets(
 Source : [@ins-annuaire-statistique], chapitre « Enseignement et culture » (chapitre 3 avant 2005), tableau des données générales de l'enseignement ; sources citées : ministère de l'Éducation, ministère de l'Enseignement supérieur et de la Recherche scientifique. Chaque année scolaire est prise dans l'édition la plus récente qui la contient. Le préscolaire et la formation professionnelle ne sont pas dans ce tableau.
 
 ::::
+
+## La dépense des communes {#sec-educ-depense-collectivites}
+
+Les budgets des communes portent deux articles d'éducation : un article de dépenses d'interventions dans l'enseignement et la formation, et un article de recettes des jardins d'enfants. La construction et l'entretien des écoles n'ont pas d'article propre.
+
+- **Les charges.** Depuis 1958, des dépenses obligatoires incombent aux collectivités pour l'enseignement — construction, logement du personnel, entretien, mobilier, éclairage et chauffage [@loi58-118, art. 30] ([la loi de 1958](./_histoire.html#sec-educ-1958)). Depuis le code de 2018, l'entretien des écoles de base est une [compétence partagée](../finances_locales/_competences.html#sec-fl-comp-commune) de la commune et de l'autorité centrale [@loi-org-2018-29-ccl, art. 243] ; le [tableau des compétences de la commune](../finances_locales/_competences.html#tbl-fl-comp-commune) du livre « Les finances locales » les énumère.
+- **La nomenclature de 2020.** Le modèle de [nomenclature budgétaire](#g-nomenclature-budgetaire) des communes, approuvé par un décret gouvernemental du 23 janvier 2020 ([registre du livre des finances locales](../finances_locales/_budgets.html#r-fl-budg-nomenclature-2020)), classe en dépenses de gestion l'article 03.303, « interventions dans le domaine de l'enseignement et de la formation » [@decret-gouv2020-52, annexe, p. 393]. Il a quatre paragraphes : la contribution au centre de formation et d'appui à la décentralisation, le transport des élèves pauvres, les prix scolaires, les autres interventions. En recettes, il range les revenus des jardins d'enfants (article 4101, p. 376) et ceux de leur concession (article 4201, p. 377). Un décret gouvernemental du 14 juillet 2020 ne modifie que les lignes du remboursement du principal de la dette [@decret-gouv2020-439, art. 1er].
+- **Ce que le modèle n'isole pas.** Aucun article ne porte sur la construction, l'équipement ou l'entretien des écoles. La construction de jardins d'enfants est un paragraphe de l'article des équipements collectifs de culture, de jeunesse, de sport et d'enfance [@decret-gouv2020-52, annexe, p. 397] ; l'entretien des bâtiments communaux, toutes destinations confondues, est classé dans les moyens des services.
+- **Les années publiées.** Les budgets par commune sont publiés par article pour 2022, exécution définitive, et pour 2023, situation provisoire au 10 janvier 2024 ; de 2018 à 2021, ils le sont par grande section seulement — gestion, intérêts de la dette, développement, remboursement du principal [@dgct-donnees-ouvertes] (@tbl-educ-communes).
+
+Les deux articles pèsent moins d'un millième des budgets : la dépense d'enseignement et de formation de l'article 3303 est de 0,09 % des dépenses du titre I en 2022 et de 0,06 % en 2023, et les recettes des jardins d'enfants de l'article 4101 de 0,08 % des recettes du titre I les deux années ; rapportées aux dépenses et aux recettes totales, les parts sont plus faibles encore (@fig-educ-communes). Le titre I réunit les dépenses de gestion et les intérêts de la dette ; le titre II, le développement, le remboursement du principal de la dette et les crédits reportés.
+
+```{python}
+#| label: fig-educ-communes
+#| fig-cap: "Articles d'éducation des budgets des 350 communes en parts des dépenses et des recettes, 2022 et 2023."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import fig_educ_depense as fd
+fd.onglets(
+    fd.vues_communes(), "fig_educ_communes",
+    caption=("Articles 3303 (enseignement et formation) et 4101 (jardins d'enfants) des budgets des "
+             "communes, en parts des dépenses et des recettes du titre I et du budget total, 2022 et 2023"),
+    source="Source : [@dgct-donnees-ouvertes], fichiers par commune et par article ; calcul du précis",
+    note_lecture=(
+        "Panneau de gauche : dépenses réalisées de l'article 3303 divisées par les dépenses réalisées "
+        "du titre I (gestion et intérêts de la dette), puis par les dépenses totales (titres I et II). "
+        "Panneau de droite : recettes réalisées de l'article 4101 divisées par les recettes réalisées "
+        "du titre I, puis par les recettes totales (titres I et II) ; le titre II des recettes comprend "
+        "les emprunts et les ressources de développement. Les montants sont ceux de 350 communes. 2022 "
+        "est une exécution définitive, 2023 une situation provisoire au 10 janvier 2024. L'article 3303 "
+        "additionne quatre paragraphes, dont la formation des agents locaux : sa part est un majorant de "
+        "la dépense d'enseignement. Les montants et les dénominateurs sont dans l'onglet « Données »."
+    ),
+)
+```
+
+<!-- TODO (documentaliste) : série 2018-2021 impossible avec les fichiers de la DGCT lus : ceux de 2018 à 2021 (Municipalites_depenses2018/2019/2020, Depenses_Decembre2021, Recettes_Decembre2021) s'arrêtent à la section ou à la catégorie, sans identifiant d'article. Chercher un budget par article de ces années (comptes de gestion, rapports de la Cour des comptes). -->
+
+:::: {.chronologie-repliable titre="Articles d'éducation des budgets des communes : montants et nombre de communes, 2022 et 2023"}
+
+| Article des budgets des communes | 2022 | 2023<br>(provisoire) |
+|---|---:|---:|
+| 3303, interventions dans l'enseignement et la formation : dépenses réalisées<br>(millions de dinars) | 1,02 | 0,64 |
+| 3303 : part des dépenses du titre I<br>(%) | 0,09 | 0,06 |
+| 3303 : communes dont la dépense est positive<br>(sur 350) | 160 | 101 |
+| 4101, revenus des jardins d'enfants : recettes réalisées<br>(millions de dinars) | 1,10 | 1,13 |
+| 4101 : communes dont la recette est positive<br>(sur 350) | 29 | 29 |
+
+: Articles d'éducation des budgets des 350 communes, 2022 et 2023 {#tbl-educ-communes}
+
+Source : [@dgct-donnees-ouvertes], fichiers des dépenses et des recettes par commune et par article, 2022 et 2023 ; calcul du précis. Le titre I réunit les dépenses de gestion et les intérêts de la dette : 1 145 millions de dinars en 2022 et 1 082 en 2023.
+
+::::
+
+L'article 3303 additionne la contribution à un centre de formation, le transport des élèves pauvres, les prix scolaires et d'autres interventions ; les fichiers publiés s'arrêtent à l'article et ne séparent pas les paragraphes. La dépense d'enseignement des communes qu'il porte est donc au plus de 1,02 million de dinars en 2022 et de 0,64 en 2023. Les recettes des jardins d'enfants, 1,10 et 1,13 million de dinars, viennent de 29 communes.
+
+<!-- TODO (documentaliste) : lire le décret n° 2004-1182 sur le Centre de formation et d'appui à la décentralisation (JORT n° 44 de 2004), pour dire ce que finance la contribution du paragraphe 4 de l'article 03.303. -->
+<!-- TODO (documentaliste) : lire la nomenclature des budgets des conseils régionaux (arrêté du 31 mars 2008) et la nomenclature communale antérieure à 2020 (arrêtés de 1975 et de 2008) : les articles 3303 et 4101 y existaient-ils ? Les fichiers de la DGCT lus ne donnent pas de budget de conseil régional par article. -->
+<!-- TODO (documentaliste) : établir la destination des tickets-repas de l'article 3304 (contribution à l'amicale, 13,8 millions de dinars en 2022, 13,1 en 2023) ; classé hors éducation tant que ses bénéficiaires ne sont pas lus. -->
+<!-- RECHERCHE r-educ-collectivites-depense-education : budgets des communes et des conseils régionaux, dépense d'éducation isolable ? (voir docs/recherches.yml) -->
 
 ## La dépense des ménages {#sec-educ-depense-menages}
 

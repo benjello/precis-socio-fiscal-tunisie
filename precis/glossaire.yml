@@ -526,31 +526,138 @@ entries:
   - id: remuneration-dirigeants-entreprises-publiques
     acronyme: null
     statut: valide
-    references: [decret2015-2217, decret90-1855]
+    references: [decret2015-2217, decret2015-968, decret2014-12, decret90-1855, decret-78-885]
     source_definition: {ref: decret2015-2217}
     source_traduction: {ref: decret2015-2217}
-    voir_aussi: [regime-marche-controle, entreprises-publiques, regime-conventionnel-public]
+    voir_aussi: [categorie-entreprise-publique, indemnite-de-responsabilite, indemnite-complementaire-de-responsabilite, comite-de-remuneration, entreprises-publiques, regime-conventionnel-public, regime-marche-controle]
     fr:
       terme: Rémunération des dirigeants d'entreprises publiques
       definition: >
-        Rémunération des chefs d'établissements et entreprises publics et de
-        sociétés à majorité publique, encadrée et plafonnée par voie réglementaire
-        au titre des prérogatives de l'État actionnaire. Le décret n°2015-2217 du
-        11 décembre 2015 fixe les taux des éléments de cette rémunération, à la
-        suite des décrets n°78-885 (1978), n°90-1855 (1990) et n°2014-12
-        (2014). Ce plafonnement constitue le versant « contrôle »
-        du régime de marché contrôlé, par contraste avec l'autonomie
-        conventionnelle de marché des agents.
+        Rémunération des chefs d'entreprises et d'établissements publics et des
+        sociétés à majorité publique, c'est-à-dire des sociétés dont des
+        participants publics et des entreprises publiques détiennent 50 % du
+        capital ou plus. Le décret gouvernemental n°2015-2217 du 11 décembre 2015
+        en fixe le régime : classement de l'entreprise en six catégories, deux
+        modalités de rémunération au choix du dirigeant, avantages en nature,
+        exclusivité de la rémunération. Les directeurs généraux des banques
+        publiques en sont exclus : ils relèvent du décret gouvernemental
+        n°2015-968 du 6 août 2015. Le décret de 2015 abroge le décret n°90-1855
+        (1990) et le décret n°2014-12 (2014) ; le décret n°78-885 (1978) ouvre la
+        suite de ces textes.
       synonymes: []
     ar:
       terme: تأجير رؤساء المؤسسات والمنشآت العمومية
       definition: >
-        تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية —
-        المضبوط والمسقَّف عن طريق التنظيم بعنوان صلاحيات الدولة المساهمة. ويضبط الأمر الحكومي
-        عدد 2015-2217 المؤرّخ في 11 ديسمبر 2015 نسب عناصر هذا التأجير، إثر
-        الأوامر عدد 78-885 (1978) وعدد 90-1855 (1990) وعدد 2014-12
-        (2014). ويشكّل هذا التسقيف الشقَّ «الرقابي» من نظام السوق الموجَّه، في
-        مقابل الاستقلالية الاتفاقية السوقية لأعوانها.
+        تأجير رؤساء المؤسسات والمنشآت العمومية والشركات ذات الأغلبية العمومية،
+        وهي الشركات التي يمتلك المساهمون العموميون والمنشآت العمومية رأس مالها
+        بنسبة لا تقل عن 50 %. ويضبط الأمر الحكومي عدد 2217 لسنة 2015 المؤرّخ في
+        11 ديسمبر 2015 نظام هذا التأجير: ترتيب المؤسسة في ستة أصناف، وصيغتان
+        للتأجير يختار بينهما رئيس المؤسسة، والامتيازات المسندة له، ومنع إضافة
+        أي منحة أخرى إلى التأجير. ويُستثنى من هذا النظام المديرون العامون
+        للبنوك العمومية، الخاضعون للأمر الحكومي عدد 968 لسنة 2015 المؤرّخ في 6
+        أوت 2015. وقد ألغى أمر 2015 الأمر عدد 90-1855 (1990) والأمر عدد 2014-12
+        (2014)، ويفتتح الأمر عدد 78-885 (1978) سلسلة هذه النصوص.
+      synonymes: []
+
+  - id: categorie-entreprise-publique
+    acronyme: null
+    statut: valide
+    references: [decret2015-2217]
+    source_definition: {ref: decret2015-2217, locator: "art. 2"}
+    source_traduction: {ref: decret2015-2217}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, indemnite-de-responsabilite]
+    fr:
+      terme: Catégorie de classement de l'entreprise publique
+      definition: >
+        Classement d'une entreprise ou d'un établissement public, ou d'une société à
+        majorité publique, dans l'une des six catégories — exceptionnelle, G, M, A,
+        B, C — dont dépendent les éléments de rémunération de son chef. Le chef du
+        gouvernement fixe le classement par arrêté, après avis d'une commission de
+        classement ; un décret gouvernemental fixe la liste des entreprises de la
+        catégorie exceptionnelle.
+      synonymes: []
+    ar:
+      terme: صنف المؤسسة
+      definition: >
+        ترتيب المؤسسة أو المنشأة العمومية أو الشركة ذات الأغلبية العمومية في أحد ستة
+        أصناف — استثنائي و«ك» و«م» و«أ» و«ب» و«ج» — تتحدد بحسبه عناصر تأجير رئيسها.
+        ويضبط رئيس الحكومة الترتيب بقرار بعد أخذ رأي لجنة ترتيب المؤسسات والمنشآت
+        العمومية والشركات ذات الأغلبية العمومية، وتضبط بأمر حكومي قائمة المنشآت
+        العمومية والشركات ذات الأغلبية العمومية المرتبة في الصنف الاستثنائي.
+      synonymes: []
+
+  - id: indemnite-de-responsabilite
+    acronyme: null
+    statut: valide
+    references: [decret2015-2217]
+    source_definition: {ref: decret2015-2217, locator: "art. 4"}
+    source_traduction: {ref: decret2015-2217}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, categorie-entreprise-publique, indemnite-complementaire-de-responsabilite]
+    fr:
+      terme: Indemnité de responsabilité
+      definition: >
+        Élément de la deuxième modalité de rémunération d'un chef d'entreprise
+        publique, servi chaque mois avec le traitement de base et l'indemnité de
+        logement, selon la catégorie de l'entreprise. Il réunit les quatre
+        indemnités que prévoyait le décret n°2014-12 (représentation, gestion,
+        frais liés à la responsabilité, indemnité spéciale ou complémentaire) et il
+        est soumis à l'impôt sur le revenu et aux retenues de sécurité sociale.
+      synonymes: []
+    ar:
+      terme: منحة المسؤولية
+      definition: >
+        عنصر من عناصر الصيغة الثانية لتأجير رئيس مؤسسة عمومية، يُصرف شهريًا مع المرتب
+        الأساسي ومنحة السكن حسب صنف المؤسسة. ويجمع المنح الأربع التي نصّ عليها الأمر
+        عدد 2014-12، ويخضع للحجز بعنوان الضريبة على الدخل وأنظمة الضمان الاجتماعي.
+      synonymes: []
+
+  - id: indemnite-complementaire-de-responsabilite
+    acronyme: null
+    statut: valide
+    references: [decret2015-2217]
+    source_definition: {ref: decret2015-2217, locator: "art. 3"}
+    source_traduction: {ref: decret2015-2217}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, categorie-entreprise-publique, indemnite-de-responsabilite]
+    fr:
+      terme: Indemnité complémentaire de responsabilité
+      definition: >
+        Indemnité mensuelle de la première modalité de rémunération d'un chef
+        d'entreprise publique, versée en plus du salaire que le dirigeant percevait
+        légalement juste avant sa nomination. Son montant dépend de la catégorie de
+        l'entreprise ; le décret de 2015 n'en donne aucun pour la catégorie
+        exceptionnelle. Elle se distingue de l'indemnité provisoire pour
+        remboursement des frais liés à la responsabilité du décret n°2014-12.
+      synonymes: []
+    ar:
+      terme: المنحة التكميلية بعنوان المسؤولية
+      definition: >
+        منحة شهرية في إطار الصيغة الأولى للتأجير، تضاف إلى الأجر الذي كان يتقاضاه
+        الرئيس بصفة قانونية قبل تسميته مباشرة. ويضبط مقدارها حسب صنف المؤسسة، ولا
+        يضبط الأمر الحكومي عدد 2217 لسنة 2015 أي مقدار لها في الصنف الاستثنائي.
+      synonymes: []
+
+  - id: comite-de-remuneration
+    acronyme: null
+    statut: valide
+    references: [decret2015-968]
+    source_definition: {ref: decret2015-968, locator: "art. 2"}
+    source_traduction: {ref: decret2015-968}
+    voir_aussi: [remuneration-dirigeants-entreprises-publiques, regime-marche-controle]
+    fr:
+      terme: Comité de rémunération
+      definition: >
+        Comité que le conseil d'administration d'une banque publique constitue
+        obligatoirement en son sein. Il fixe les éléments de la rémunération du
+        directeur général, que le conseil approuve, et les indicateurs de la part
+        variable. Il compte trois membres, dont au moins un représente les
+        participants publics et le préside.
+      synonymes: []
+    ar:
+      terme: لجنة التأجير
+      definition: >
+        لجنة تنبثق وجوبًا عن مجلس إدارة البنك العمومي. وتحدّد عناصر تأجير المدير
+        العام، ويصادق عليها المجلس، وكذلك مؤشرات العنصر المتغيّر. وتتكوّن من ثلاثة
+        أعضاء من بينهم عضو على الأقل يمثّل المساهمين العموميين يكون رئيسًا لها.
       synonymes: []
 
   - id: regime-conventionnel-public
@@ -582,8 +689,8 @@ entries:
   - id: regime-marche-controle
     acronyme: null
     statut: provisoire
-    references: [loi89-9, cc-banques-2014, cc-assurances-1975, decret2015-2217]
-    voir_aussi: [entreprises-publiques, convention-collective-banques, convention-collective-assurances, remuneration-dirigeants-entreprises-publiques, regime-conventionnel-public, cnss]
+    references: [loi89-9, cc-banques-2014, cc-assurances-1975, decret2015-968, decret2015-2217]
+    voir_aussi: [entreprises-publiques, convention-collective-banques, convention-collective-assurances, remuneration-dirigeants-entreprises-publiques, comite-de-remuneration, regime-conventionnel-public, cnss]
     fr:
       terme: Régime de marché contrôlé
       definition: >
@@ -593,9 +700,13 @@ entries:
         établissements publics et privés : celle des banques et établissements
         financiers, révisée et agréée le 17 février 2014 ; celle des assurances,
         agréée le 24 décembre 1975 pour le secteur entier, révisée en 1983 et
-        suivie de quinze avenants de 1989 à 2022. La rémunération des dirigeants
-        est, elle, encadrée par décret (décret n°2015-2217 du 11 décembre 2015).
-        La convention des assurances ne nomme aucune société.
+        suivie de quinze avenants de 1989 à 2022. La rémunération des directeurs
+        généraux des banques publiques relève du décret gouvernemental n°2015-968
+        du 6 août 2015 : le conseil d'administration l'approuve, sur les éléments
+        fixés par un comité de rémunération. Celle des chefs des autres entreprises
+        publiques et sociétés à majorité publique relève du décret gouvernemental
+        n°2015-2217 du 11 décembre 2015. La convention des assurances ne nomme
+        aucune société.
       synonymes: []
     ar:
       terme: نظام السوق الموجَّه
@@ -606,8 +717,11 @@ entries:
         المالية، المنقَّحة والمصادق عليها في 17 فيفري 2014؛ واتفاقية التأمين،
         المصادق عليها في 24 ديسمبر 1975 للقطاع بأسره، والمنقَّحة سنة 1983
         والمتبوعة بخمسة عشر ملحقًا تعديليًا من سنة 1989 إلى سنة 2022. أمّا تأجير
-        رؤساء المنشآت فيؤطَّر بأمر (الأمر الحكومي عدد 2015-2217 المؤرّخ في 11
-        ديسمبر 2015). ولا تسمّي اتفاقية التأمين أيّ شركة.
+        المديرين العامين للبنوك العمومية فيخضع للأمر الحكومي عدد 968 لسنة 2015
+        المؤرّخ في 6 أوت 2015: يصادق مجلس الإدارة على نظام التأجير بعد أن تحدّد
+        لجنة التأجير عناصره. وأمّا تأجير رؤساء المؤسسات العمومية والشركات ذات
+        الأغلبية العمومية الأخرى فيخضع للأمر الحكومي عدد 2217 لسنة 2015 المؤرّخ في
+        11 ديسمبر 2015. ولا تسمّي اتفاقية التأمين أيّ شركة.
       synonymes: []
 
   - id: point-indice
@@ -971,15 +1085,16 @@ entries:
   - id: retenue-a-la-source
     acronyme: null
     statut: valide
-    references: [loi-irpp-is-1989, lf-2016]
+    references: [loi-irpp-is-1989, lf-2016, code-irpp-is-1990]
     source_definition: {ref: loi-irpp-is-1989}
-    voir_aussi: [irpp, css, traitement-de-base, tva, credit-tva]
+    voir_aussi: [irpp, css, traitement-de-base, tva, credit-tva, retenue-liberatoire, retenue-definitive-non-restituable]
     fr:
       terme: Retenue à la source
       definition: >
         Prélèvement de l'impôt opéré par celui qui paie une somme, pour le
         compte de celui qui la reçoit ; le montant retenu est reversé au Trésor
-        et imputé sur l'impôt dû par ce dernier. En matière d'impôt sur le
+        et imputé sur l'impôt dû par ce dernier, sauf quand la loi la rend
+        libératoire ou définitive et non restituable (code, art. 52 et 54). En matière d'impôt sur le
         revenu des personnes physiques, l'employeur l'opère lors du paiement du
         traitement et des indemnités imposables (code de l'IRPP et de l'IS, loi
         n°89-114). En matière de taxe sur la valeur ajoutée, l'État, les
@@ -991,7 +1106,9 @@ entries:
       terme: الخصم من المورد
       definition: >
         اقتطاع للأداء يقوم به دافع المبلغ لحساب من يقبضه، ويُدفَع المبلغ
-        المخصوم للخزينة ويُحتسَب على الأداء المستوجَب على هذا الأخير. ففي مادة
+        المخصوم للخزينة ويُحتسَب على الأداء المستوجَب على هذا الأخير، إلّا إذا
+        جعله القانون تحرّريًا أو نهائيًا وغير قابل للإرجاع (المجلة، الفصلان 52
+        و54). ففي مادة
         الضريبة على دخل الأشخاص الطبيعيين يقوم به المؤجِّر عند دفع المرتب
         والمنح الخاضعة للضريبة (مجلة الضريبة على الدخل والضريبة على الشركات،
         القانون عدد 89-114). وفي مادة الأداء على القيمة المضافة تخصم الدولة
@@ -1709,7 +1826,10 @@ entries:
         Montant plancher d'impôt annuel, calculé en pourcentage du chiffre
         d'affaires ou des recettes brutes, en deçà duquel l'impôt liquidé selon
         le barème ne peut descendre pour les activités commerciales et non
-        commerciales (article 44 § II du code de l'IRPP et de l'IS).
+        commerciales (article 44 § II du code de l'IRPP et de l'IS). Il ne se
+        confond pas avec le minimum de l'article 12 bis de la loi n° 89-114,
+        qui borne l'effet de certaines déductions et s'assied sur l'impôt dû
+        sans elles.
       synonymes: []
     ar:
       terme: الضريبة الدنيا
@@ -1717,7 +1837,10 @@ entries:
         الحدّ الأدنى من الضريبة السنوية، المحتسَب بنسبة من رقم المعاملات أو من
         المقابيض الخام، والذي لا يمكن أن تنزل عنه الضريبة المحتسبة حسب الجدول
         بالنسبة إلى الأنشطة التجارية وغير التجارية (الفقرة II من الفصل 44 من
-        مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على الشركات).
+        مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على الشركات). ولا
+        تُخلط بالضريبة الدنيا المنصوص عليها بالفصل 12 مكرر من القانون عدد 114
+        لسنة 1989، التي تحدّ من أثر بعض الطروحات وتُحتسب على الأداء المستوجب
+        دون اعتبارها.
       synonymes: []
 
   - id: regime-forfaitaire
@@ -2590,13 +2713,58 @@ entries:
         Seconde catégorie légale de l'Amen social, au-dessus des catégories pauvres.
         Elle n'ouvre pas le transfert monétaire permanent mais donne accès aux soins à
         tarif réduit et, depuis 2022, à l'allocation familiale non contributive.
-      synonymes: []
+      synonymes: [catégories à faible revenu]
     ar:
       terme: الفئات محدودة الدخل
       definition: >
         الصنف القانوني الثاني في برنامج الأمان الاجتماعي، ويأتي فوق الفئات الفقيرة. ولا
         يفتح الحقّ في التحويل النقدي القارّ، لكنّه يخوّل النفاذ إلى العلاج بالتعريفة
         المنخفضة، ومنذ سنة 2022 إلى المنحة العائلية غير المساهماتية.
+      synonymes: []
+
+  - id: allergie-gluten
+    acronyme: null
+    statut: valide
+    references: [lf-2025, arrete-2026-07-14-xeroderma-gluten]
+    source_definition: {ref: lf-2025, locator: "art. 26"}
+    voir_aussi: [categories-pauvres, amen-social]
+    fr:
+      terme: Allergie au gluten
+      definition: >
+        Maladie dont les textes de 2025 et 2026 font la condition d'une allocation
+        mensuelle de l'Amen social pour les dépenses alimentaires. Elle est établie par un
+        certificat d'un médecin de la santé publique, qui atteste la nécessité d'un régime
+        sans gluten au long cours ; depuis le 19 juillet 2026, une commission médicale en
+        examine la preuve.
+      synonymes: []
+    ar:
+      terme: حساسية دابوق القمح
+      definition: >
+        مرض جعلته نصوص سنتي 2025 و2026 شرطًا لمنحة شهرية في إطار الأمان الاجتماعي لنفقات
+        الغذاء. ويثبت بشهادة طبيب من الصحة العمومية تفيد الحاجة إلى نظام غذائي خال من
+        الجلوتين على المدى الطويل، وتنظر في إثباته منذ 19 جويلية 2026 لجنة طبية.
+      synonymes: [حساسية الجلوتين]
+
+  - id: unite-de-gestion-par-objectifs
+    acronyme: null
+    statut: valide
+    references: [decret-2014-1526-banque-donnees, decret2018-626]
+    source_definition: {ref: decret-2014-1526-banque-donnees, locator: "art. 1"}
+    voir_aussi: [amen-social, categories-pauvres]
+    fr:
+      terme: Unité de gestion par objectifs
+      definition: >
+        Structure temporaire créée au sein d'un ministère pour réaliser un projet défini,
+        sous l'autorité du ministre. Celle du ministère des affaires sociales, créée en
+        2014, réalise le projet de banque de données sur les familles nécessiteuses et à
+        revenu limité.
+      synonymes: []
+    ar:
+      terme: وحدة تصرف حسب الأهداف
+      definition: >
+        هيكل وقتي يُحدث داخل وزارة لإنجاز مشروع محدّد، تحت سلطة الوزير. وقد أُحدثت سنة
+        2014 وحدة من هذا النوع بوزارة الشؤون الاجتماعية لإنجاز مشروع إعداد بنك معطيات حول
+        العائلات المعوزة ومحدودة الدخل.
       synonymes: []
 
   - id: condition-de-ressources
@@ -2894,6 +3062,53 @@ entries:
         التعريفة المقرّرة للمرضى غير المجانيين من الصنف المرتّب فيه المريض،
         وبالمصحة الخاصة، ثلثي التعريفة المقرّرة بالتراتيب (قرار 12 مارس 1973،
         الفصل 24 جديد).
+      synonymes: []
+
+  - id: malade-payant
+    acronyme: null
+    statut: valide
+    references: [arrete-1996-12-19-tarifs]
+    source_definition: {ref: arrete-1996-12-19-tarifs, locator: "art. 1"}
+    source_traduction: {ref: arrete-1996-12-19-tarifs}
+    voir_aussi: [tarif-de-responsabilite, amg2]
+    fr:
+      terme: Malade payant
+      definition: >
+        Malade d'une structure sanitaire publique que ne visent ni la gratuité des
+        soins, ni les tarifs réduits, ni la prise en charge conventionnelle des
+        articles 35 à 37 de la loi n° 91-63 ; il paie le tarif réglementaire des
+        consultations, des journées d'hospitalisation et des actes fixé par l'arrêté
+        du 19 décembre 1996 (art. 1er).
+      synonymes: []
+    ar:
+      terme: المريض الخاضع لدفع مقابل
+      definition: >
+        مريض بهيكل صحي عمومي لا تشمله مجانية العلاج ولا التعريفة المنخفضة ولا
+        التعهد بمقتضى الاتفاقيات المنصوص عليها بالفصول 35 و36 و37 من القانون عدد 63
+        لسنة 1991 ؛ ويدفع التعريفة المقررة للفحوص ولأيام الإقامة وللأعمال بمقتضى
+        القرار المؤرخ في 19 ديسمبر 1996 (الفصل 1).
+      synonymes: [المرضى غير المجانيين]
+  - id: lettre-cle
+    acronyme: null
+    statut: valide
+    references: [arrete-1996-12-19-tarifs]
+    source_definition: {ref: arrete-1996-12-19-tarifs, locator: "art. 10"}
+    source_traduction: {ref: arrete-1996-12-19-tarifs, locator: "art. 10"}
+    voir_aussi: [malade-payant]
+    fr:
+      terme: Lettre clé
+      definition: >
+        Lettre affectée à une catégorie d'actes professionnels de la nomenclature
+        générale, dont la valeur en dinars, multipliée par le coefficient de l'acte,
+        donne le tarif de l'acte dans les structures sanitaires publiques (arrêté du
+        19 décembre 1996, art. 10).
+      synonymes: [Lettre-clé]
+    ar:
+      terme: الحرف المصطلح عليه
+      definition: >
+        حرف مخصص لصنف من الأعمال المهنية بالمجموعة العامة للأعمال المهنية، تُضرب
+        قيمته بالدينار في معامل العمل لتحديد تعريفة العمل بالهياكل الصحية العمومية
+        (قرار 19 ديسمبر 1996، الفصل 10).
       synonymes: []
 
   - id: contribution-frais-soins
@@ -3211,7 +3426,7 @@ entries:
     acronyme: null
     statut: valide
     references: [code-irpp-is-1990]
-    source_definition: {ref: code-irpp-is-1990, locator: "art. 39"}
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 39 et 40"}
     voir_aussi: [assiette-fiscale, revenu-annuel-net, bareme-irpp]
     fr:
       terme: Déductions communes
@@ -3335,9 +3550,9 @@ entries:
   - id: bonification
     acronyme: null
     statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #151
-    references: [loi2019-37]
+    references: [loi2019-37, loi2009-39]
     source_definition: {ref: loi85-12, locator: "art. 32-33"}
-    voir_aussi: [annuite-liquidable, travaux-penibles-insalubres, cadres-actifs, fonctions-astreignantes, mise-a-la-retraite-d-office]
+    voir_aussi: [mise-a-la-retraite-avant-age-legal, annuite-liquidable, travaux-penibles-insalubres, cadres-actifs, fonctions-astreignantes, mise-a-la-retraite-d-office]
     fr:
       terme: Bonification
       definition: >
@@ -3348,7 +3563,9 @@ entries:
         militaires et agents des forces de sécurité intérieure blessés en service,
         aux agents atteints d'une invalidité de 80 % au moins et aux agents mis à la
         retraite pour suppression d'emplois (art. 33). Son effet reste borné par le
-        plafond du taux de liquidation.
+        plafond du taux de liquidation. La loi n° 2009-39 (art. 5) accorde aux agents
+        mis à la retraite avant l'âge légal une bonification égale à la période qui
+        reste à accomplir pour l'atteindre ; le texte ne dit pas si ce plafond la borne.
       synonymes: []
     ar:
       terme: الترفيع في مدّة الخدمات
@@ -3358,7 +3575,9 @@ entries:
         الأسلاك النشيطة وللأعوان المباشرين لوظائف مرهقة (الفصل 32)، وكذلك للعسكريين
         وأعوان قوات الأمن الداخلي المصابين أثناء الخدمة، وللأعوان المصابين بعجز لا
         تقلّ نسبته عن 80 %، وللأعوان المحالين على التقاعد بسبب حذف الخطط (الفصل 33).
-        ويبقى أثره محدودًا بسقف نسبة التصفية.
+        ويبقى أثره محدودًا بسقف نسبة التصفية. ويمنح القانون عدد 39 لسنة 2009 (الفصل 5)
+        الأعوان المحالين على التقاعد قبل بلوغ السن القانونية تنفيلًا يساوي الفترة المتبقية
+        لبلوغها؛ ولا ينصّ على ما إذا كان هذا السقف يحدّه.
       synonymes: [التمتيع الاستثنائي]
 
   - id: cadres-actifs
@@ -3853,9 +4072,11 @@ entries:
         Système de départ anticipé des agents publics institué, hors de la loi
         n° 85-12, par la loi n° 87-7 du 6 mars 1987. Il est distinct du droit général
         au départ anticipé de l'article 30 de la loi n° 85-12 et de la mise à la
-        retraite avant l'âge légal instituée par la loi n° 2009-39 du 8 juillet 2009,
-        que l'article 7 de la loi n° 2019-37 maintient l'un et l'autre sous l'empire
-        des textes antérieurs pour l'âge légal.
+        retraite avant l'âge légal instituée par la loi n° 2009-39 du 8 juillet 2009.
+        L'article 7 de la loi n° 2019-37 laisse régis par les textes en vigueur à leur
+        date, pour l'âge légal, les programmes de mise à la retraite avant l'âge légal
+        et de départ volontaire dont l'exécution a commencé avant son entrée en
+        vigueur ; il ne nomme aucune de ces lois.
       synonymes: []
     ar:
       terme: التقاعد المبكّر الاختياري
@@ -3864,8 +4085,41 @@ entries:
         بمقتضى القانون عدد 7 لسنة 1987 المؤرّخ في 6 مارس 1987. وهو متميّز عن الحقّ العامّ
         في الخروج المبكّر المنصوص عليه بالفصل 30 من القانون عدد 12 لسنة 1985، وعن الإحالة
         على التقاعد قبل السنّ القانونية التي أحدثها القانون عدد 39 لسنة 2009 المؤرّخ في 8
-        جويلية 2009، وقد أبقى الفصل 7 من القانون عدد 37 لسنة 2019 كليهما خاضعَين، في ما
-        يتعلّق بالسنّ القانونية، للنصوص السابقة.
+        جويلية 2009. ويُبقي الفصل 7 من القانون عدد 37 لسنة 2019 برامج الإحالة على التقاعد
+        قبل بلوغ السنّ القانونية وبرامج المغادرة الطوعية التي بدأ تنفيذها قبل دخوله حيّز
+        التطبيق خاضعةً، في ما يتعلّق بالسنّ القانونية، للنصوص السارية في تاريخها؛ ولا
+        يُسمّي أيًّا من هذين القانونين.
+      synonymes: []
+
+  - id: mise-a-la-retraite-avant-age-legal
+    acronyme: null
+    statut: provisoire  # équivalent AR : intitulé de la loi n° 2009-39 (JORT, éd. ar.)
+    references: [decret2009-2085, lfc-2009, avis-cc-27-2009, decret2011-932]
+    source_definition: {ref: loi2009-39}
+    source_traduction: {ref: loi2009-39}
+    voir_aussi: [retraite-anticipee-volontaire, bonification, jouissance-differee, fonds-special-tresor]
+    fr:
+      terme: Mise à la retraite avant l'âge légal
+      definition: >
+        Mesure temporaire instituée par la loi n° 2009-39 du 8 juillet 2009 : les
+        agents publics affiliés à la CNRPS qui atteignent l'âge légal du 1er janvier
+        2010 au 31 décembre 2012 peuvent, avec 15 ans d'activité ayant donné lieu à
+        retenues, demander leur mise à la retraite avant cet âge. Une commission
+        spéciale du Premier ministère statue, dans la limite de 7 000 agents ; la
+        pension est immédiate, bonifiée de la période restant à courir jusqu'à l'âge
+        légal, et les pensions et contributions de cette période sont à la charge de
+        l'employeur. Le terme désigne aussi des programmes ultérieurs de même schéma.
+      synonymes: []
+    ar:
+      terme: الإحالة على التقاعد قبل بلوغ السن القانونية
+      definition: >
+        إجراء وقتي أحدثه القانون عدد 39 لسنة 2009 المؤرخ في 8 جويلية 2009: يمكن للأعوان
+        العموميين المنخرطين بالصندوق الوطني للتقاعد والحيطة الاجتماعية الذين يبلغون السن
+        القانونية من غرة جانفي 2010 إلى 31 ديسمبر 2012 أن يطلبوا إحالتهم على التقاعد قبل
+        بلوغها، متى كانت لهم 15 سنة نشاط خضعت للاقتطاعات. وتبتّ في الطلبات لجنة خاصة
+        بالوزارة الأولى في حدود 7000 عون؛ وتُصرف الجراية فورًا مع تنفيل يساوي المدة
+        المتبقية لبلوغ السن القانونية، ويتحمّل المشغّل الجرايات والمساهمات الاجتماعية
+        طيلة هذه المدة. ويُطلق المصطلح أيضًا على برامج لاحقة على المنوال نفسه.
       synonymes: []
 
   - id: solde-de-reforme
@@ -4873,15 +5127,15 @@ entries:
       definition: >
         Régime spécifique de sécurité sociale des travailleuses agricoles, institué par
         le décret-loi n° 2024-4 du 22 octobre 2024, relatif au régime de protection
-        sociale des travailleuses agricoles, exécutoire le 28 octobre 2024, et géré par
+        sociale des travailleuses agricoles, exécutoire le 24 octobre 2024, et géré par
         la CNSS ; il comporte les prestations de l'assurance maladie et les pensions de
         vieillesse, d'invalidité et de survivants (art. 1, 17 et 18). Il couvre la
         travailleuse agricole non salariée, à titre principal et pour son propre
         compte, et la salariée qui travaille au moins 15 jours par mois, en moyenne au
         moins 45 jours par trimestre ou 180 jours par an, sauf si son employeur est
         affilié à un régime légal couvrant les mêmes risques pour tous ses employés
-        (art. 17). L'État prend en charge ses cotisations pendant les trois premières
-        années d'activité (art. 20 et 23). La pension de vieillesse est ouverte à
+        (art. 17). L'État prend en charge, pendant les trois premières années d'activité,
+        les cotisations de la non-salariée et la quote-part de la salariée (art. 20 et 23). La pension de vieillesse est ouverte à
         65 ans, ou dès 60 ans, après 120 mois de cotisations effectives et validées
         (art. 26-27) ; ses taux et ses modalités sont renvoyés à un décret (art. 33).
       synonymes: [Régime spécifique de sécurité sociale des travailleuses agricoles]
@@ -4890,16 +5144,123 @@ entries:
       definition: >
         نظام خاصّ للضمان الاجتماعي للعاملات الفلاحيات، أحدثه المرسوم عدد 4 لسنة 2024
         المؤرّخ في 22 أكتوبر 2024 المتعلّق بنظام الحماية الاجتماعية للعاملات الفلاحيات،
-        النافذ منذ 28 أكتوبر 2024، ويديره الصندوق الوطني للضمان الاجتماعي؛ ويشمل منافع
+        النافذ منذ 24 أكتوبر 2024، ويديره الصندوق الوطني للضمان الاجتماعي؛ ويشمل منافع
         التأمين على المرض وجرايات الشيخوخة والعجز والباقين على قيد الحياة (الفصول 1 و17
         و18). ويغطّي العاملة الفلاحية غير الأجيرة التي تعمل بصفة أساسية ولحسابها الخاصّ،
         والأجيرة التي تعمل 15 يومًا على الأقلّ في الشهر، بمعدّل 45 يومًا على الأقلّ في
         الثلاثية أو 180 يومًا في السنة، ما لم يكن مؤجّرها منخرطًا في نظام قانوني يغطّي
-        نفس المخاطر لفائدة جميع أجرائه (الفصل 17). وتتكفّل الدولة باشتراكاتها خلال
-        السنوات الثلاث الأولى من النشاط (الفصلان 20 و23). وتُفتح جراية الشيخوخة في سنّ 65
+        نفس المخاطر لفائدة جميع أجرائه (الفصل 17). وتتكفّل الدولة، خلال السنوات الثلاث
+        الأولى من النشاط، باشتراكات غير الأجيرة وبحصّة الأجيرة منها (الفصلان 20 و23). وتُفتح جراية الشيخوخة في سنّ 65
         سنة، أو ابتداءً من 60 سنة، بعد 120 شهرًا من الاشتراكات الفعلية والمصادق عليها
         (الفصلان 26 و27)؛ ويُحيل المرسوم ضبط نسبها وصيغها إلى أمر (الفصل 33).
       synonymes: [النظام الخاص للضمان الاجتماعي للعاملات الفلاحيات]
+
+  - id: travailleuse-agricole
+    acronyme: null
+    # Définition de l'art. 2 du décret-loi n° 2024-4 (JORT n° 129/2024, éd. ar. qui fait foi).
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret-loi2024-4, locator: "art. 2"}
+    source_traduction: {ref: decret-loi2024-4, locator: "art. 2"}
+    voir_aussi: [regime-travailleuses-agricoles]
+    fr:
+      terme: Travailleuse agricole
+      definition: >
+        Femme travaillant dans le secteur agricole au sens de l'article 3 du code du travail :
+        soit non salariée, exerçant à titre principal une activité professionnelle agricole
+        pour son propre compte, soit salariée, travaillant chez un ou plusieurs employeurs
+        (décret-loi n° 2024-4, art. 2).
+
+      synonymes: []
+    ar:
+      terme: العاملة الفلاحية
+      definition: >
+        المرأة التي تعمل في القطاع الفلاحي بمفهوم الفصل 3 من مجلة الشغل، سواء كانت غير أجيرة
+        تمارس بصفة أساسية نشاطًا مهنيًا فلاحيًا لحسابها الخاص، أو أجيرة تعمل لدى مؤجّر أو
+        عدة مؤجّرين (المرسوم عدد 4 لسنة 2024، الفصل 2).
+
+      synonymes: []
+
+  - id: fonds-protection-sociale-travailleuses-agricoles
+    acronyme: null
+    # Nommé à l'art. 3 du décret-loi n° 2024-4 ; créé par l'art. 15 de la loi de finances pour 2025.
+    statut: provisoire
+    references: [lf-2025]
+    source_definition: {ref: decret-loi2024-4, locator: "art. 3"}
+    source_traduction: {ref: lf-2025, locator: "art. 15"}
+    voir_aussi: [regime-travailleuses-agricoles, regime-protection-sociale-travailleuses-agricoles]
+    fr:
+      terme: Fonds de protection sociale des travailleuses agricoles
+      definition: >
+        Fonds sur lequel sont imputées les dépenses des programmes du régime de protection
+        sociale des travailleuses agricoles (décret-loi n° 2024-4, art. 3), créé par l'article 15
+        de la loi de finances pour 2025 et géré par la CNSS. La travailleuse agricole est
+        exemptée des cotisations à son financement. Ses ressources comprennent une subvention
+        budgétaire, des recettes affectées et des dons.
+
+      synonymes: []
+    ar:
+      terme: صندوق الحماية الاجتماعية للعاملات الفلاحيات
+      definition: >
+        صندوق تُحمل عليه نفقات برامج نظام الحماية الاجتماعية للعاملات الفلاحيات (المرسوم عدد 4
+        لسنة 2024، الفصل 3)، أُحدث بالفصل 15 من قانون المالية لسنة 2025 ويديره الصندوق الوطني
+        للضمان الاجتماعي. وتُعفى العاملة الفلاحية من المساهمة في تمويله. وتشمل موارده منحة من
+        ميزانية الدولة وموارد مخصّصة وهبات.
+
+      synonymes: []
+
+  - id: regime-protection-sociale-travailleuses-agricoles
+    acronyme: null
+    # Intitulé du décret-loi n° 2024-4 et de son art. 1er ; plus large que le régime de
+    # sécurité sociale du titre III, chap. 1.
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret-loi2024-4, locator: "art. 1"}
+    source_traduction: {ref: decret-loi2024-4, locator: "intitulé"}
+    voir_aussi: [regime-travailleuses-agricoles, travailleuse-agricole]
+    fr:
+      terme: Régime de protection sociale des travailleuses agricoles
+      definition: >
+        Ensemble institué par le décret-loi n° 2024-4 au profit des travailleuses agricoles, qui
+        vise l'inclusion économique et garantit les prestations de l'assurance maladie, les
+        pensions de vieillesse, d'invalidité et de survivants, la couverture des risques
+        professionnels et les prestations du programme « Amen Social » (art. 1). Plus large que
+        le régime de sécurité sociale, qui n'en est qu'un volet.
+
+      synonymes: []
+    ar:
+      terme: نظام الحماية الاجتماعية للعاملات الفلاحيات
+      definition: >
+        نظام أحدثه المرسوم عدد 4 لسنة 2024 لفائدة العاملات الفلاحيات، يهدف إلى الإدماج الاقتصادي
+        ويضمن منافع التأمين على المرض وجرايات الشيخوخة والعجز والباقين على قيد الحياة والتغطية
+        من المخاطر المهنية ومنافع برنامج الأمان الاجتماعي (الفصل 1). وهو أوسع من نظام الضمان
+        الاجتماعي للعاملات الفلاحيات الذي لا يمثّل إلا أحد جوانبه.
+
+      synonymes: []
+
+  - id: inclusion-economique
+    acronyme: null
+    statut: provisoire
+    references: []
+    source_definition: {ref: decret-loi2024-4, locator: "art. 2 et 4 à 10"}
+    source_traduction: {ref: decret-loi2024-4, locator: "art. 2"}
+    voir_aussi: [regime-protection-sociale-travailleuses-agricoles]
+    fr:
+      terme: Inclusion économique
+      definition: >
+        Dans le décret-loi n° 2024-4, accès de la travailleuse agricole au travail salarié ou
+        indépendant par des mécanismes de qualification, de formation, d'accompagnement et de
+        financement de petites entreprises agricoles (art. 4 à 10). Traduction officielle ; le
+        texte arabe, qui fait foi, dit « intégration » (الإدماج).
+
+      synonymes: []
+    ar:
+      terme: الإدماج الاقتصادي
+      definition: >
+        في المرسوم عدد 4 لسنة 2024، تمكين العاملة الفلاحية من النفاذ إلى الشغل الأجير أو المستقل
+        عبر آليات التأهيل والتكوين والمرافقة وتمويل المؤسسات الصغرى الفلاحية (الفصول 4 إلى 10).
+
+      synonymes: []
 
   - id: securite-sociale-pecheurs
     acronyme: null
@@ -6289,6 +6650,128 @@ entries:
         جوان 1988، فحلّ محلّها المعلوم على الاستهلاك. نظام تاريخي.
       synonymes: []
 
+  - id: capsule-fiscale-vins
+    acronyme: null
+    statut: valide
+    references: [decret-97-1368-regime-alcools, decret-pres-2022-545-capsule-vins]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 6"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 6"}
+    voir_aussi: [droit-de-consommation, biere-vin-classe]
+    fr:
+      terme: Capsule fiscale sur les vins
+      definition: >
+        Marque apposée sur chaque bouteille de vin, immédiatement après le
+        remplissage, pour garantir le recouvrement des impôts et droits dus sur
+        les vins. Instituée par l'article 6 du décret n° 97-1368 du 24 juillet
+        1997, elle compte six catégories selon la nature du vin et la
+        contenance de la bouteille ; son tarif figure à l'annexe IV du décret.
+      synonymes: []
+    ar:
+      terme: العلامة الجبائية على الخمور
+      definition: >
+        علامة توضع على كل قارورة خمر مباشرة بعد ملئها لضمان استخلاص الأداءات
+        والمعاليم المستوجبة على الخمور. أحدثها الفصل 6 من الأمر عدد 1368 لسنة
+        1997 المؤرخ في 24 جويلية 1997؛ وهي من ست فئات بحسب نوع الخمر وسعة
+        القارورة، وتعريفتها واردة بالملحق عدد IV من الأمر.
+      synonymes: [العلامة الجبائية]
+
+  - id: biere-vin-classe
+    acronyme: null
+    statut: valide
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 3 et 5"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 3 et 5"}
+    voir_aussi: [droit-de-consommation, capsule-fiscale-vins]
+    fr:
+      terme: Bière, vin classés
+      definition: >
+        Bières et vins inscrits dans le classement que le ministre chargé du
+        secteur fixe par arrêté (décret n° 97-1368, article 3). Le tarif du
+        droit de consommation des annexes s'applique à ces produits ; il est
+        doublé pour les bières et les vins non classés (article 5).
+      synonymes: [bière classée, vin classé]
+    ar:
+      terme: الجعة والخمور المصنفة
+      definition: >
+        الجعة والخمور المدرجة في التصنيف الذي يضبطه بقرار الوزير المكلف
+        بالقطاع (الفصل 3 من الأمر عدد 1368 لسنة 1997). وتنطبق عليها تعريفة
+        المعلوم على الاستهلاك الواردة بالملاحق، وتضاعف هذه التعريفة بالنسبة
+        إلى الجعة والخمور غير المصنفة (الفصل 5).
+      synonymes: []
+
+  - id: acquit-a-caution
+    acronyme: null
+    statut: provisoire
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    voir_aussi: [conge-circulation, droit-de-consommation]
+    fr:
+      terme: Acquit-à-caution
+      definition: >
+        Titre qui accompagne le transport des alcools, des boissons
+        alcoolisées et des vins lorsque le droit de consommation n'a pas été
+        acquitté au plein tarif (décret n° 97-1368, article 31). Le destinataire
+        ou l'exportateur le dépose au bureau de contrôle des impôts dans les
+        vingt-quatre heures qui suivent la date fixée pour la livraison ou pour
+        l'exportation.
+      synonymes: []
+    ar:
+      terme: وصل ضمان
+      definition: >
+        سند يرافق نقل الكحول والمشروبات الكحولية والخمور إذا لم يدفع المعلوم
+        على الاستهلاك حسب النسبة العليا (الفصل 31 من الأمر عدد 1368 لسنة 1997).
+        ويودعه متسلم البضاعة أو مصدرها لدى مكتب مراقبة الأداءات في أجل أقصاه
+        أربع وعشرون ساعة من التاريخ المحدد لتسليم البضاعة أو لتصديرها.
+      synonymes: [وصل الضمان]
+
+  - id: conge-circulation
+    acronyme: null
+    statut: provisoire
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    voir_aussi: [acquit-a-caution, droit-de-consommation]
+    fr:
+      terme: Congé (titre de circulation)
+      definition: >
+        Titre qui accompagne le transport des alcools, des boissons
+        alcoolisées et des vins lorsque le droit de consommation a été acquitté
+        au plein tarif (décret n° 97-1368, article 31). Dans les autres cas, le
+        transport se fait sous acquit-à-caution.
+      synonymes: [congé]
+    ar:
+      terme: سند إعفاء
+      definition: >
+        سند يرافق نقل الكحول والمشروبات الكحولية والخمور إذا دفع المعلوم على
+        الاستهلاك حسب النسبة العليا (الفصل 31 من الأمر عدد 1368 لسنة 1997).
+        وينقل في الحالات الأخرى بوصل ضمان.
+      synonymes: [سند الإعفاء]
+
+  - id: comptabilite-matiere
+    acronyme: null
+    statut: provisoire
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 15"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 15"}
+    voir_aussi: [capsule-fiscale-vins, entrepositaire]
+    fr:
+      terme: Comptabilité matière
+      definition: >
+        Registre numéroté et paraphé par le bureau de contrôle des impôts,
+        tenu jour par jour sans blanc, rature ni addition, où les producteurs
+        et les embouteilleurs de vin, les fabricants d'alcool et de boissons
+        alcoolisées inscrivent les entrées et les sorties de matières (décret
+        n° 97-1368, article 15 pour les embouteilleurs de vin).
+      synonymes: [registre de comptabilité matière]
+    ar:
+      terme: حسابية المواد
+      definition: >
+        دفتر مرقم ومؤشر عليه من قبل مكتب مراقبة الأداءات، يمسك يوما بيوم دون
+        فراغ أو شطب أو إضافة، تسجل فيه مداخيل المواد ومخارجها (الفصل 15 من
+        الأمر عدد 1368 لسنة 1997 بالنسبة إلى معبئي الخمور).
+      synonymes: [دفتر حسابية مواد]
+
   - id: impot-societes
     acronyme: IS
     statut: valide
@@ -6433,29 +6916,35 @@ entries:
         في ذلك توابعه، ويثبت بشهادة من المصالح المختصة.
       synonymes: []
 
+  # Attestation bilingue du singulier : code des sociétés commerciales (loi n° 2000-93),
+  # « la cession du fonds de commerce » / « إحالة الأصل التجاري » (miroir iort ; pas de
+  # clé). Le CDET taxe la mutation de fonds de commerce (art. 20, n° 13). Synonyme AR
+  # « الأصل التجاري » : singulier de cette attestation ; terme pluriel gardé pour l'IF.
   - id: fonds-de-commerce
     acronyme: null
     statut: provisoire
-    references: [lf-2026]
+    references: [lf-2026, loi-93-53-cdet, loi-87-73]
     source_definition: {ref: lf-2026, locator: "art. 88 § 3"}
-    voir_aussi: [impot-fortune]
+    voir_aussi: [impot-fortune, droits-enregistrement, droit-proportionnel-enregistrement]
     fr:
       terme: Fonds de commerce
       definition: >
-        Élément du patrimoine que l'article 88 de la loi de finances pour 2026
-        range parmi les biens soumis à l'impôt sur la fortune, à côté des
-        immeubles et des meubles, et dont il exclut ceux qui sont
+        Élément du patrimoine d'un commerçant. Sa mutation à titre onéreux est soumise à un droit
+        d'enregistrement proportionnel (code des droits d'enregistrement et de
+        timbre, art. 20). L'article 88 de la loi de finances pour 2026 range les
+        fonds de commerce parmi les biens soumis à l'impôt sur la fortune, à
+        côté des immeubles et des meubles, et en exclut ceux qui sont
         effectivement exploités.
-        Le terme français est une traduction ; il reste à confirmer dans un
-        texte bilingue du Journal officiel.
       synonymes: []
     ar:
       terme: الأصول التجارية
       definition: >
-        عنصر من المكاسب يدرجه الفصل 88 من قانون المالية لسنة 2026 ضمن
-        المكاسب الخاضعة للضريبة على الثروة، إلى جانب العقارات والمنقولات،
-        ويستثني منه الأصول التجارية المستغلة فعليا.
-      synonymes: []
+        عنصر من مكاسب التاجر. ويخضع نقل ملكيته بمقابل لمعلوم
+        تسجيل نسبي (مجلة معاليم التسجيل والطابع الجبائي، الفصل 20). ويدرج الفصل 88
+        من قانون المالية لسنة 2026 الأصول التجارية ضمن المكاسب الخاضعة للضريبة على
+        الثروة، إلى جانب العقارات والمنقولات، ويستثني منها الأصول التجارية
+        المستغلة فعليا.
+      synonymes: [الأصل التجاري]
 
   - id: benefice-imposable
     acronyme: null
@@ -6755,7 +7244,7 @@ entries:
     references: [loi77-54]
     source_definition: {ref: loi77-54, locator: "art. 1-2"}
     source_traduction: {ref: loi-88-145-lf-1989, locator: "art. 35"}
-    voir_aussi: [tfp]
+    voir_aussi: [tfp, fonds-foprolos]
     fr:
       terme: Contribution au fonds de promotion du logement pour les salariés
       definition: >
@@ -6772,6 +7261,532 @@ entries:
         الفلاحيين الخواصّ، أُحدث سنة 1977 بنسبة 2 % من الأجور الخاضعة
         للمساهمات الاجتماعية، ثمّ خُفّض سنة 1989 إلى 1 % من الأجور
         والمرتّبات. يموّل صندوقًا يساعد الأجراء على الحصول على مسكن.
+      synonymes: []
+
+  # --- Logement social (livre prestations_sociales, chapitre _logement_social.qmd) ---
+  # Passe 1 (termes, sources) et passe 2 (définitions) du terminologue, 23/10/2026.
+
+  - id: fonds-foprolos
+    acronyme: null
+    statut: valide  # AR lu dans la LF 2026, art. 21 (rubrique, éd. AR), la loi n° 2026-1 et le décret n° 2026-123 (éd. AR)
+    references: [loi77-60-lfc1977, lf-2026, decret2026-123]
+    source_definition: {ref: loi77-54, locator: "art. 5-6"}
+    source_traduction: {ref: lf-2026, locator: "art. 21"}
+    voir_aussi: [foprolos, fonds-special-tresor, premier-logement, logement-social]
+    fr:
+      terme: Fonds de promotion du logement pour les salariés
+      definition: >
+        Fonds créé par la loi n° 77-54 du 3 août 1977, distinct de la
+        contribution des employeurs qui l'alimente ; la loi de finances
+        complémentaire du même jour en fait un fonds spécial du Trésor. Il est
+        destiné à venir en aide aux salariés qui veulent accéder à la propriété
+        d'un logement, par des prêts et, depuis 2016, des dons. Depuis le
+        1er janvier 2026, il contribue aussi au financement de la construction
+        de logements et de l'aménagement de lots sociaux par la SNIT et ses
+        filiales, la SPROLS et l'AFH. Ses ressources sont la contribution,
+        l'amortissement et les intérêts de ses prêts.
+      synonymes: [Fonds FOPROLOS]
+    ar:
+      terme: صندوق النهوض بالمسكن لفائدة الأجراء
+      definition: >
+        صندوق أُحدث بالقانون عدد 54 لسنة 1977 المؤرّخ في 3 أوت 1977، وهو متميّز
+        عن مساهمة المؤجّرين التي تموّله، وجعله قانون المالية التكميلي الصادر في
+        اليوم نفسه صندوقًا خاصًّا للخزينة. يهدف إلى مساعدة الأجراء الراغبين في
+        تملّك مسكن، بواسطة قروض، ومنذ 2016 بواسطة هبات أيضًا. ومنذ غرّة جانفي
+        2026، يساهم كذلك في تمويل بناء المساكن وتهيئة المقاسم الاجتماعية التي
+        تنجزها الشركة الوطنية العقارية للبلاد التونسية وفروعها وشركة النهوض
+        بالمساكن الاجتماعية والوكالة العقارية للسكنى. تتكوّن موارده من المساهمة
+        ومن استرجاع أصل قروضه وفوائضها.
+      synonymes: []
+
+  - id: snit
+    acronyme: SNIT
+    statut: valide  # AR lu dans la loi n° 2026-1 (éd. AR)
+    references: [loi2026-1]
+    source_definition: {ref: loi57-19, locator: "statut, art. 1er-3"}
+    source_traduction: {ref: loi2026-1}
+    voir_aussi: [sprols, afh, fonds-foprolos]
+    fr:
+      terme: Société nationale immobilière de Tunisie
+      definition: >
+        Entreprise à caractère commercial régie par le droit des sociétés
+        anonymes, dont le capital est apporté par l'État et dont les statuts
+        sont en vigueur depuis le 1er septembre 1957. Elle réalise des
+        opérations immobilières pour son compte, celui de l'État ou des
+        collectivités, gère des immeubles et conduit des programmes de
+        construction. Depuis le 14 février 2026, elle et ses filiales peuvent
+        vendre les logements sociaux financés par le fonds de promotion du
+        logement pour les salariés par paiement échelonné ou en location-vente.
+      synonymes: []
+    ar:
+      terme: الشركة الوطنية العقارية للبلاد التونسية
+      definition: >
+        مؤسسة ذات صبغة تجارية تخضع لأحكام شركات المساهمة، تساهم الدولة برأس
+        مالها، ودخل نظامها الأساسي حيّز التنفيذ بداية من غرّة سبتمبر 1957. تنجز
+        عمليات عقارية لحسابها أو لحساب الدولة أو الجماعات، وتتصرّف في عقارات،
+        وتنجز برامج بناء. ومنذ 14 فيفري 2026، يمكنها هي وفروعها بيع المساكن
+        الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن لفائدة الأجراء
+        بالتقسيط أو بمقتضى عقود الكراء المملّك.
+      synonymes: []
+
+  - id: sprols
+    acronyme: SPROLS
+    statut: valide  # AR lu dans le JORT AR n° 19/2026 (intitulé de la loi n° 2026-2)
+    references: [loi2026-2, decret2010-3170]
+    source_definition: {ref: loi77-53, locator: "art. 1er-4"}
+    source_traduction: {ref: loi2026-2}
+    voir_aussi: [snit, afh, fonds-foprolos, cnss, cavis]
+    fr:
+      terme: Société de promotion des logements sociaux
+      definition: >
+        Établissement public à caractère industriel et commercial créé par la
+        loi n° 77-53 du 3 août 1977 pour « promouvoir la construction de
+        logements au profit des assurés sociaux ». Elle réalise et gère les
+        programmes immobiliers de la Caisse nationale de sécurité sociale et de
+        la Caisse d'assurance vieillesse, invalidité et survivants, qui ont
+        apporté son capital initial, et loue des logements aux assurés sociaux.
+        Placée à l'origine sous la tutelle des Affaires sociales, elle relève
+        de l'Équipement depuis 2010. Depuis le 14 février 2026, elle peut
+        vendre les logements sociaux financés par le fonds de promotion du
+        logement pour les salariés par paiement échelonné ou en location-vente.
+      synonymes: []
+    ar:
+      terme: شركة النهوض بالمساكن الاجتماعية
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت بالقانون عدد 53 لسنة 1977
+        المؤرّخ في 3 أوت 1977 للنهوض ببناء المساكن لفائدة المضمونين
+        الاجتماعيين. تنجز البرامج العقارية للصندوق الوطني للضمان الاجتماعي
+        ولصندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع
+        بجراية وتتصرّف فيها، وقد ساهم الصندوقان في رأس مالها الأصلي، وتؤجّر
+        مساكن للمضمونين الاجتماعيين. كانت في الأصل تحت إشراف وزارة الشؤون
+        الاجتماعية، وأصبحت منذ 2010 تحت إشراف وزارة التجهيز. ومنذ 14 فيفري 2026،
+        يمكنها بيع المساكن الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن
+        لفائدة الأجراء بالتقسيط أو بمقتضى عقود الكراء المملّك.
+      synonymes: []
+
+  - id: afh
+    acronyme: AFH
+    statut: provisoire  # statut et missions (décrets n° 74-33 et 2021-327, non versés) non lus : la définition se borne aux rôles que donnent la LFC 2012 et la LF 2026 ; AR relevé dans les intitulés AR du JORT, sans clé pour l'éd. AR
+    references: [lfc-2012, decret2026-123]
+    source_definition: {ref: lf-2026, locator: "art. 21"}
+    voir_aussi: [snit, sprols, fonds-foprolos]
+    fr:
+      terme: Agence foncière d'habitation
+      definition: >
+        Organisme public du logement qui compte parmi les réalisateurs du
+        programme spécifique pour le logement social créé en 2012. Depuis le
+        1er janvier 2026, le fonds de promotion du logement pour les salariés
+        contribue au financement des logements et des lots sociaux qu'elle
+        réalise, jusqu'à la totalité du coût et sans intérêt depuis le
+        20 juin 2026.
+      synonymes: []
+    ar:
+      terme: الوكالة العقارية للسكنى
+      definition: >
+        هيكل عمومي في مجال السكن، من بين الهياكل المكلّفة بإنجاز البرنامج
+        الخصوصي للسكن الاجتماعي المحدث سنة 2012. ومنذ غرّة جانفي 2026، يساهم
+        صندوق النهوض بالمسكن لفائدة الأجراء في تمويل المساكن والمقاسم
+        الاجتماعية التي تنجزها، بنسبة قد تبلغ كامل الكلفة ودون فائدة منذ
+        20 جوان 2026.
+      synonymes: []
+
+  - id: fnah
+    acronyme: FNAH
+    statut: valide  # AR repris de la LF 2019, art. 72 (éd. AR), comme contribution-fnah
+    references: [decret86-438, lfc-2012, lf-2025]
+    source_definition: {ref: loi2004-77, locator: "art. 1er-4"}
+    source_traduction: {ref: loi2018-56-lf2019, locator: "art. 72"}
+    voir_aussi: [contribution-fnah, logement-rudimentaire, fonds-special-tresor]
+    fr:
+      terme: Fonds national d'amélioration de l'habitat
+      definition: >
+        Fonds qui finance, par des prêts et des subventions, l'éradication des
+        logements rudimentaires dans le cadre d'un programme national,
+        l'entretien et la réhabilitation des logements par les propriétaires
+        privés et, depuis 2012, par les occupants privés, des opérations des
+        collectivités locales, la réhabilitation et la rénovation urbaine
+        confiées à des organismes, et la réparation des logements après une
+        catastrophe ; ces emplois sont fixés par la loi n° 2004-77 du
+        2 août 2004. Sa gestion est confiée par convention à une banque. Fonds
+        spécial du Trésor, il est alimenté depuis 2005 par une contribution
+        adossée à la taxe sur les immeubles bâtis.
+      synonymes: []
+    ar:
+      terme: الصندوق الوطني لتحسين السكن
+      definition: >
+        صندوق يموّل، بواسطة قروض ومنح، إزالة المساكن البدائية في إطار برنامج
+        وطني، وصيانة المساكن وتعهّدها من قبل المالكين الخواص، ومنذ 2012 من قبل
+        الشاغلين الخواص أيضًا، وعمليات الجماعات المحلية، وإعادة التأهيل
+        والتجديد العمراني الموكولين إلى هياكل، وإصلاح المساكن إثر الكوارث؛
+        وقد ضبط هذه التدخّلات القانون عدد 77 لسنة 2004 المؤرّخ في 2 أوت 2004.
+        يُعهد بالتصرّف فيه بمقتضى اتفاقية إلى بنك. وهو صندوق خاص للخزينة، يموَّل
+        منذ 2005 بمساهمة مرتبطة بالمعلوم على العقارات المبنية.
+      synonymes: []
+
+  - id: logement-rudimentaire
+    acronyme: null
+    statut: provisoire  # AR : المساكن البدائية non retrouvé dans une édition AR du JORT (décrets n° 86-438 et 2012-1224 non lus en AR)
+    references: [decret86-438, loi2004-77]
+    source_definition: {ref: decret2012-1224, locator: "art. 7"}
+    voir_aussi: [fnah, programme-specifique-logement-social]
+    fr:
+      terme: Logement rudimentaire
+      definition: >
+        Habitation insalubre occupée en permanence. Le décret n° 86-438 du
+        12 avril 1986 range parmi les logements rudimentaires « les gourbis,
+        les kibs, les maamras, les baraques et les tentes » ; le décret
+        n° 2012-1224 du 10 août 2012 retient les locaux habités en permanence
+        dont les matériaux, la surface ou la solidité « ne répondent pas aux
+        normes sanitaires et techniques minimales d'habitabilité ». Leur
+        remplacement est l'objet du programme national de 1986, d'un emploi du
+        Fonds national d'amélioration de l'habitat et du programme spécifique
+        pour le logement social.
+      synonymes: []
+    ar:
+      terme: المساكن البدائية
+      definition: >
+        مسكن غير صحّي مأهول بصفة دائمة. يعدّ الأمر عدد 438 لسنة 1986 المؤرّخ في
+        12 أفريل 1986 من المساكن البدائية الأكواخ و«الكيب» و«المعمرات»
+        والبراريك والخيام؛ ويعتمد الأمر عدد 1224 لسنة 2012 المؤرّخ في 10 أوت
+        2012 المحلاّت المأهولة بصفة دائمة التي لا تستجيب موادّها أو مساحتها أو
+        متانتها للمواصفات الصحية والفنية الدنيا للسكن. وتعويضها هو موضوع
+        البرنامج الوطني لسنة 1986، وأحد تدخّلات الصندوق الوطني لتحسين السكن،
+        والبرنامج الخصوصي للسكن الاجتماعي.
+      synonymes: []
+
+  - id: logement-social
+    acronyme: null
+    statut: provisoire  # AR relevé dans les intitulés AR du JORT, à confirmer sur l'éd. AR du décret n° 2012-1224 ; plafonds de 2012, décrets modificatifs n° 2013-3289, 2014-4251, 2015-460, 2023-538 non lus
+    references: [lfc-2012, loi2026-1]
+    source_definition: {ref: decret2012-1224, locator: "art. 20"}
+    voir_aussi: [programme-specifique-logement-social, fonds-foprolos, premier-logement]
+    fr:
+      terme: Logement social
+      definition: >
+        Logement destiné aux ménages à faible revenu et produit ou financé
+        avec une aide publique. Dans le programme spécifique pour le logement
+        social, le décret n° 2012-1224 du 10 août 2012 le définit comme un
+        logement individuel extensible d'un prix de 45 000 D au plus, ou un
+        logement collectif de 65 000 D au plus. Depuis 2026, la SNIT, ses
+        filiales et la SPROLS peuvent vendre en location-vente ou à
+        tempérament les logements sociaux financés par le fonds de promotion
+        du logement pour les salariés.
+      synonymes: []
+    ar:
+      terme: السكن الاجتماعي
+      definition: >
+        مسكن موجّه إلى الأسر ذات الدخل الضعيف، يُنجز أو يُموَّل بدعم عمومي. وفي
+        إطار البرنامج الخصوصي للسكن الاجتماعي، يعرّفه الأمر عدد 1224 لسنة 2012
+        المؤرّخ في 10 أوت 2012 بأنه مسكن فردي قابل للتوسعة لا يتجاوز ثمنه
+        45 ألف دينار، أو مسكن جماعي لا يتجاوز ثمنه 65 ألف دينار. ومنذ 2026،
+        يمكن للشركة الوطنية العقارية للبلاد التونسية وفروعها ولشركة النهوض
+        بالمساكن الاجتماعية بيع المساكن الاجتماعية المموّلة من صندوق النهوض
+        بالمسكن لفائدة الأجراء بالكراء المملّك أو بالتقسيط.
+      synonymes: []
+
+  - id: programme-specifique-logement-social
+    acronyme: null
+    statut: provisoire  # AR relevé dans 14 intitulés AR du JORT, à confirmer sur l'éd. AR de la LFC 2012 ; décrets modificatifs du décret n° 2012-1224 non lus
+    references: [decret2012-1224, lf-2022]
+    source_definition: {ref: lfc-2012, locator: "art. 27-32"}
+    voir_aussi: [logement-social, logement-rudimentaire, afh, sprols]
+    fr:
+      terme: Programme spécifique pour le logement social
+      definition: >
+        Programme créé par la loi de finances complémentaire pour 2012 « au
+        profit des catégories sociales à faible revenu », pour remplacer les
+        logements rudimentaires et réaliser des projets d'habitation. Il est
+        financé par le budget de l'État, le recouvrement des prêts et des dons,
+        et réalisé par les conseils régionaux, les sociétés immobilières
+        publiques, la SPROLS, l'Agence de réhabilitation et de rénovation
+        urbaine, l'AFH et des promoteurs privés. Dans la rédaction du décret
+        d'août 2012, il s'adresse aux familles sans logement dont le revenu ne
+        dépasse pas 3 SMIG, en trois catégories, par une prise en charge de la
+        moitié du coût de remplacement d'un logement rudimentaire ou une
+        subvention à l'achat d'un logement social.
+      synonymes: []
+    ar:
+      terme: البرنامج الخصوصي للسكن الاجتماعي
+      definition: >
+        برنامج أحدثه قانون المالية التكميلي لسنة 2012 لفائدة الفئات الاجتماعية
+        محدودة الدخل، لتعويض المساكن البدائية وإنجاز مشاريع سكنية. يموَّل من
+        ميزانية الدولة ومن استخلاص القروض ومن الهبات، وتنجزه المجالس الجهوية
+        والشركات العقارية العمومية وشركة النهوض بالمساكن الاجتماعية ووكالة
+        التهذيب والتجديد العمراني والوكالة العقارية للسكنى وباعثون عقاريون
+        خواص. وفي صيغة الأمر الصادر في أوت 2012، يتوجّه إلى العائلات التي لا
+        تملك مسكنًا ولا يتجاوز دخلها ثلاث مرّات الأجر الأدنى المضمون لمختلف
+        المهن، في ثلاثة أصناف، بتحمّل نصف كلفة تعويض المسكن البدائي أو بمنحة
+        لاقتناء مسكن اجتماعي.
+      synonymes: []
+
+  - id: premier-logement
+    acronyme: null
+    statut: valide  # AR lu dans la LF 2025, art. 25 (éd. AR : « مسكن أول ») ; modificatifs n° 2017-391 et 2019-39 du décret n° 2017-161 non lus ; « promoteur agréé » rendu par باعث عقاري مصادق عليه, forme AR non attestée (voir promoteur-agree)
+    references: [lf-2017, lf-2025, decret2023-127]
+    source_definition: {ref: decret2017-161, locator: "art. 3, 5-6"}
+    source_traduction: {ref: lf-2025, locator: "art. 25"}
+    voir_aussi: [logement-social, fonds-foprolos, promoteur-agree]
+    fr:
+      terme: Premier logement
+      definition: >
+        Logement qu'un ménage sans logement acquiert pour son habitation
+        principale, et nom du programme créé par la loi de finances pour 2017
+        au profit des catégories à revenu moyen. Dans la rédaction du décret
+        n° 2017-161 du 31 janvier 2017, le logement est neuf, compte au moins
+        deux chambres et un salon, est réalisé par un promoteur agréé et coûte
+        200 000 D au plus ; le programme prête aux familles dont le revenu est
+        compris entre 4,5 et 10 SMIG une partie de l'autofinancement, à un taux
+        bonifié. Depuis 2025, le programme couvre aussi la construction d'un
+        premier logement. Depuis 2023, les prêts du fonds de promotion du
+        logement pour les salariés financent eux aussi un premier logement.
+      synonymes: []
+    ar:
+      terme: المسكن الأول
+      definition: >
+        مسكن تقتنيه أسرة لا تملك مسكنًا لسكناها الرئيسية، واسم البرنامج الذي
+        أحدثه قانون المالية لسنة 2017 لفائدة الفئات ذات الدخل المتوسّط. وفي صيغة
+        الأمر الحكومي عدد 161 لسنة 2017 المؤرّخ في 31 جانفي 2017، يكون المسكن
+        جديدًا، يتضمّن غرفتين وقاعة جلوس على الأقل، ينجزه باعث عقاري مصادق عليه، ولا يتجاوز
+        ثمنه 200 ألف دينار؛ ويقرض البرنامج العائلات التي يتراوح دخلها بين 4,5
+        و10 مرّات الأجر الأدنى المضمون لمختلف المهن جزءًا من التمويل الذاتي بنسبة
+        فائدة ميسّرة. ومنذ 2025، يشمل البرنامج أيضًا بناء مسكن أول. ومنذ 2023،
+        تموّل قروض صندوق النهوض بالمسكن لفائدة الأجراء هي أيضًا مسكنًا أول.
+      synonymes: []
+
+  - id: location-vente
+    acronyme: null
+    statut: provisoire  # AR lu dans le décret n° 2026-123, art. 9 bis (éd. AR) ; aucun texte versé ne définit le contrat lui-même : la définition s'en tient à l'usage qu'en font les lois n° 2026-1 et 2026-2 et le décret n° 2026-123
+    references: [loi2026-1, loi2026-2]
+    source_definition: {ref: decret2026-123, locator: "art. 9 bis"}
+    source_traduction: {ref: decret2026-123, locator: "art. 9 bis"}
+    voir_aussi: [vente-a-temperament, snit, sprols]
+    fr:
+      terme: Location-vente
+      definition: >
+        Mode de cession d'un logement par contrat de location-vente. Depuis le
+        14 février 2026, la SNIT et ses filiales et la SPROLS peuvent céder
+        ainsi les logements sociaux financés par le fonds de promotion du
+        logement pour les salariés ; depuis le 20 juin 2026, le prix plafond
+        au mètre carré des logements de promoteur ne s'applique pas à ces
+        cessions, et les loyers sont fixés selon le coût de chaque projet par
+        convention entre l'opérateur et le ministère chargé de l'habitat.
+      synonymes: []
+    ar:
+      terme: الكراء المملّك
+      definition: >
+        طريقة لإحالة مسكن بمقتضى عقد كراء مملّك. ومنذ 14 فيفري 2026، يمكن
+        للشركة الوطنية العقارية للبلاد التونسية وفروعها ولشركة النهوض بالمساكن
+        الاجتماعية إحالة المساكن الاجتماعية المموّلة من موارد صندوق النهوض
+        بالمسكن لفائدة الأجراء على هذا النحو؛ ومنذ 20 جوان 2026، لا ينطبق السعر
+        الأقصى للمتر المربع لمساكن الباعثين على هذه الإحالات، وتُضبط معينات
+        الكراء حسب كلفة كل مشروع بمقتضى اتفاقية بين الباعث العمومي والوزارة
+        المكلّفة بالإسكان.
+      synonymes: []
+
+  - id: vente-a-temperament
+    acronyme: null
+    statut: provisoire  # AR « البيع بالتقسيط » cité par la note documentaire (§ 1.3) et le registre comme texte de l'art. 9 bis du décret n° 2026-123 (éd. AR) ; aucun texte versé ne définit le contrat lui-même
+    references: [loi2026-1, loi2026-2]
+    source_definition: {ref: loi2026-1}
+    source_traduction: {ref: decret2026-123, locator: "art. 9 bis"}
+    voir_aussi: [location-vente, snit, sprols]
+    fr:
+      terme: Vente à tempérament
+      definition: >
+        Vente dont le prix est payé par versements échelonnés ; les lois
+        n° 2026-1 et 2026-2 du 13 février 2026 parlent de vente « par paiement
+        échelonné ». Depuis le 14 février 2026, la SNIT et ses filiales et la
+        SPROLS peuvent vendre ainsi les logements sociaux financés par le fonds
+        de promotion du logement pour les salariés ; depuis le 20 juin 2026, le
+        prix plafond au mètre carré des logements de promoteur ne s'applique
+        pas à ces ventes, et les mensualités sont fixées selon le coût de
+        chaque projet par convention entre l'opérateur et le ministère chargé
+        de l'habitat.
+      synonymes: [Paiement échelonné]
+    ar:
+      terme: البيع بالتقسيط
+      definition: >
+        بيع يُدفع ثمنه على أقساط. ومنذ 14 فيفري 2026، يمكن للشركة الوطنية
+        العقارية للبلاد التونسية وفروعها ولشركة النهوض بالمساكن الاجتماعية بيع
+        المساكن الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن لفائدة الأجراء
+        على هذا النحو؛ ومنذ 20 جوان 2026، لا ينطبق السعر الأقصى للمتر المربع
+        لمساكن الباعثين على هذه البيوعات، وتُضبط الأقساط الشهرية حسب كلفة كل
+        مشروع بمقتضى اتفاقية بين الباعث العمومي والوزارة المكلّفة بالإسكان.
+      synonymes: []
+
+  - id: epargne-logement
+    acronyme: null
+    statut: provisoire  # loi n° 73-24 non versée ni lue ; AR relevé dans un fascicule AR de 2001 (Ja0822001), à vérifier sur la loi n° 73-24
+    references: [decret77-965]
+    source_definition: {ref: decret77-964, locator: "art. 1er et 3"}
+    voir_aussi: [fonds-foprolos]
+    fr:
+      terme: Épargne-logement
+      definition: >
+        Régime institué par la loi n° 73-24 du 7 mai 1973, qui exige de
+        l'acquéreur d'un logement une épargne préalable. Le décret n° 77-964
+        du 24 novembre 1977 le modifie et prévoit des prêts « pour parfaire
+        l'épargne exigée » ; le décret n° 77-965 du même jour ouvre aux
+        salariés gagnant de 1,5 à 3 SMIG un prêt du fonds de promotion du
+        logement pour les salariés qui complète cette épargne.
+      synonymes: []
+    ar:
+      terme: الادخار السكني
+      definition: >
+        نظام أُحدث بالقانون عدد 24 لسنة 1973 المؤرّخ في 7 ماي 1973، يشترط على
+        مقتني المسكن ادّخارًا مسبقًا. نقّحه الأمر عدد 964 لسنة 1977 المؤرّخ في
+        24 نوفمبر 1977 وأقرّ قروضًا لاستكمال الادخار المطلوب؛ وفتح الأمر عدد 965
+        لسنة 1977 الصادر في اليوم نفسه للأجراء الذين يتراوح أجرهم بين 1,5 و3
+        مرّات الأجر الأدنى المضمون لمختلف المهن قرضًا من صندوق النهوض بالمسكن
+        لفائدة الأجراء يكمّل هذا الادخار.
+      synonymes: []
+
+  - id: promoteur-agree
+    acronyme: null
+    statut: provisoire  # AR non attesté (الباعث العقاري المصادق عليه proposé ; à relever sur l'éd. AR des décrets n° 2016-1126 ou 2023-127) ; régime de l'agrément non versé ; le chapitre ancre encore #g-promoteur-immobilier (l. 64)
+    references: [decret77-965, decret2016-1126, decret2023-127]
+    source_definition: {ref: decret2017-161, locator: "art. 3"}
+    voir_aussi: [promoteur-immobilier, premier-logement, fonds-foprolos]
+    fr:
+      terme: Promoteur immobilier agréé
+      definition: >
+        Promoteur immobilier titulaire de l'agrément de l'administration.
+        Depuis 1977, le fonds de promotion du logement pour les salariés prête
+        pour l'achat d'un logement neuf à un promoteur agréé ; depuis 2023, le
+        terrain qu'il finance peut être acheté à un promoteur agréé « ou du
+        privé ». Le logement du programme du premier logement est réalisé par
+        un promoteur agréé.
+      synonymes: [Promoteur agréé]
+    ar:
+      terme: الباعث العقاري المصادق عليه
+      definition: >
+        باعث عقاري متحصّل على مصادقة الإدارة. ومنذ 1977، يقرض صندوق النهوض
+        بالمسكن لفائدة الأجراء لاقتناء مسكن جديد من باعث عقاري مصادق عليه؛ ومنذ
+        2023، يمكن اقتناء الأرض التي يموّلها من باعث عقاري مصادق عليه أو من
+        الخواص. وينجز المسكنَ في برنامج المسكن الأول باعثٌ عقاري مصادق عليه.
+      synonymes: []
+
+  # Notions économiques (docs/notes/eco-logement-social.md, § 7) : termes AR proposés, non attestés.
+
+  - id: elasticite-offre-logement
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: glaeser-gyourko-2018-housing-supply, locator: "p. 13"}
+    voir_aussi: [eviction-logement, incidence-fiscale, aide-a-la-personne]
+    fr:
+      terme: Élasticité de l'offre de logement
+      definition: >
+        Variation en pourcentage de la quantité de logements offerts quand
+        leur prix augmente de 1 %. Selon Glaeser et Gyourko (2018), l'offre est
+        rigide là où le foncier est rare et les règles d'urbanisme strictes :
+        le prix s'y écarte du coût de construction, et une aide à la demande se
+        reporte dans les prix plutôt que d'accroître le parc.
+      synonymes: []
+    ar:
+      terme: مرونة عرض المساكن
+      definition: >
+        التغيّر بالنسبة المائوية في كمية المساكن المعروضة عند ارتفاع ثمنها بنسبة
+        1 %. وحسب غليزر وغيوركو (2018)، يكون العرض جامدًا حيث تندر الأراضي وتشتدّ
+        قواعد التعمير: يبتعد الثمن عندئذ عن كلفة البناء، وينعكس الدعم الموجّه إلى
+        الطلب على الأسعار بدل أن يزيد في عدد المساكن.
+      synonymes: []
+
+  - id: eviction-logement
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: sinai-waldfogel-2005-crowd-out}
+    voir_aussi: [elasticite-offre-logement, aide-a-la-pierre]
+    fr:
+      terme: Éviction de la construction privée
+      definition: >
+        Remplacement, par un logement aidé ou produit par la puissance
+        publique, d'un logement que le marché aurait produit ; seule la part
+        des logements aidés qui ne remplace pas une production privée accroît
+        le parc. Sinai et Waldfogel (2005) estiment qu'aux États-Unis trois
+        logements aidés en remplacent en moyenne deux, et que l'éviction est
+        plus faible là où la demande non satisfaite est forte.
+      synonymes: [Effet d'éviction]
+    ar:
+      terme: مزاحمة البناء الخاص
+      definition: >
+        تعويض مسكن كانت السوق ستنتجه بمسكن مدعوم أو تنتجه السلطة العمومية؛ ولا
+        يزيد في عدد المساكن إلا الجزء من المساكن المدعومة الذي لا يعوّض إنتاجًا
+        خاصًّا. ويقدّر سيناي ووالدفوغل (2005) أن ثلاثة مساكن مدعومة تعوّض في
+        المعدّل مسكنين في الولايات المتحدة، وأن المزاحمة تكون أضعف حيث يكون الطلب
+        غير الملبّى قويًّا.
+      synonymes: []
+
+  - id: aide-a-la-pierre
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: fack-2005-aides-logement}
+    voir_aussi: [aide-a-la-personne, eviction-logement]
+    fr:
+      terme: Aide à la pierre
+      definition: >
+        Aide publique attachée au logement plutôt qu'au ménage : subvention,
+        prêt à taux réduit ou financement accordé pour construire, acheter ou
+        réhabiliter des logements, ou logement produit par un organisme public.
+        Elle s'oppose à l'aide à la personne.
+      synonymes: [Aide à l'offre]
+    ar:
+      terme: الدعم الموجّه إلى البناء
+      definition: >
+        دعم عمومي مرتبط بالمسكن لا بالأسرة: منحة أو قرض بنسبة فائدة منخفضة أو
+        تمويل يُسند لبناء مساكن أو اقتنائها أو تهذيبها، أو مسكن ينتجه هيكل
+        عمومي. ويقابله الدعم الموجّه إلى الأسر.
+      synonymes: []
+
+  - id: aide-a-la-personne
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé, non attesté
+    references: []
+    source_definition: {ref: fack-2005-aides-logement, locator: "p. 17"}
+    voir_aussi: [aide-a-la-pierre, incidence-fiscale, elasticite-offre-logement]
+    fr:
+      terme: Aide à la personne
+      definition: >
+        Aide publique au logement versée au ménage, selon ses ressources, pour
+        alléger son loyer ou ses charges de logement, et qui le suit quel que
+        soit le logement occupé. Elle s'oppose à l'aide à la pierre. Fack
+        (2005) estime qu'en France, de 1973 à 2002, 50 à 80 % des aides à la
+        personne perçues par les locataires à bas revenus sont absorbés par la
+        hausse de leurs loyers.
+      synonymes: [Aide à la demande]
+    ar:
+      terme: الدعم الموجّه إلى الأسر
+      definition: >
+        دعم عمومي للسكن يُسند إلى الأسرة حسب مواردها لتخفيف معين كرائها أو
+        أعباء سكنها، ويتبعها أيًّا كان المسكن الذي تشغله. ويقابله الدعم الموجّه
+        إلى البناء. ويقدّر فاك (2005) أن ما بين 50 و80 % من هذا الدعم الذي
+        يتقاضاه المتسوّغون ذوو الدخل الضعيف في فرنسا، من 1973 إلى 2002، قد
+        استوعبه ارتفاع معينات كرائهم.
+      synonymes: []
+
+  - id: element-de-subvention
+    acronyme: null
+    statut: provisoire  # notion analytique ; AR proposé (usage des institutions financières internationales), non attesté au JORT ; définition générique : ONU-Habitat (p. 63) emploie la notion sans la définir
+    references: [zaafrane-2014-habitat]
+    source_definition: {ref: onu-habitat-2011-tunisia-housing-profile, locator: "p. 63"}
+    voir_aussi: [premier-logement, fonds-foprolos]
+    fr:
+      terme: Élément de subvention d'un prêt bonifié
+      definition: >
+        Part d'un prêt à taux réduit qui équivaut à un don : différence entre
+        le montant prêté et la valeur actualisée, au taux du marché, des
+        remboursements dus au taux bonifié. ONU-Habitat (2011) juge celui des
+        prêts au logement tunisiens « difficult to calculate ».
+      synonymes: []
+    ar:
+      terme: عنصر المنحة في القرض الميسّر
+      definition: >
+        جزء من القرض بنسبة فائدة منخفضة يعادل هبة: الفرق بين المبلغ المقرَض
+        والقيمة الحالية، محسوبة بنسبة فائدة السوق، للأقساط المستحقّة بالنسبة
+        الميسّرة. ويرى موئل الأمم المتحدة (2011) أن احتساب هذا العنصر في قروض
+        السكن التونسية عسير.
       synonymes: []
 
   - id: avance-tfp
@@ -7811,7 +8826,7 @@ entries:
     references: [lf-2005, loi2018-56-lf2019]
     source_definition: {ref: lf-2005, locator: "art. 13"}
     source_traduction: {ref: loi2018-56-lf2019, locator: "art. 72"}
-    voir_aussi: [taxe-immeubles-batis]
+    voir_aussi: [taxe-immeubles-batis, fnah]
     fr:
       terme: Contribution au profit du Fonds national d'amélioration de l'habitat
       definition: >
@@ -8808,6 +9823,357 @@ entries:
         عشر لخبراء إحصاءات العمل، 1966، الفقرة 3).
       synonymes: []
 
+  # --- Temps de travail et congés (volume marché du travail) — passe 1 : termes ---
+  # Termes AR lus dans l'édition arabe du JORT. Code du travail de 1966 : JORT ar.
+  # n° 21 des 10-13 mai 1966, lu à l'image. Loi n° 96-62 : JORT ar. n° 59 du
+  # 23 juillet 1996, lu à l'image. Lois n° 2021-37, 2024-44 et 2025-9 : couche texte.
+
+  - id: duree-legale-travail
+    acronyme: null
+    # AR : « مدة الشغل », intitulé du titre VI du code (p. 873, image) ; art. 79 :
+    # « مدة الشغل الذي يقع القيام به فعليا ». « مدة العمل » : loi n° 96-62, art. 83
+    # nouveau (p. 1636, image) ; loi n° 2021-37, art. 13 (couche texte). Aucun
+    # équivalent attesté de « légale » : terme sans qualificatif.
+    statut: provisoire
+    references: [loi66-27, loi96-62]
+    source_definition: {ref: loi66-27, locator: "art. 79"}
+    source_traduction: {ref: loi66-27, locator: "art. 79"}
+    voir_aussi: [regime-horaire, heures-supplementaires, travail-temps-partiel]
+    fr:
+      terme: Durée légale du travail
+      definition: >
+        Durée maximale du travail effectif fixée par le code du
+        travail : 48 heures par semaine dans les activités non
+        agricoles, ou une limitation équivalente sur une période d'un
+        an au plus. Depuis 1996, une convention collective ou un texte
+        réglementaire peut la ramener jusqu'à 40 heures (code du
+        travail, art. 79, rédaction de la loi n° 96-62). Les heures
+        faites au-delà sont des heures supplémentaires.
+      synonymes: [durée du travail, durée du travail effectif]
+    ar:
+      terme: مدة الشغل
+      definition: >
+        المدة القصوى للشغل الفعلي التي تضبطها مجلة الشغل: ثمان وأربعون
+        ساعة في الأسبوع في الأنشطة غير الفلاحية، أو تحديد معادل لها
+        على فترة لا تتجاوز سنة. ومنذ 1996 يمكن التخفيض فيها إلى أربعين
+        ساعة بمقتضى اتفاقية مشتركة أو نص ترتيبي (مجلة الشغل، الفصل 79،
+        كما نقّح بالقانون عدد 62 لسنة 1996). والساعات المنجزة بعدها
+        ساعات إضافية.
+      synonymes: [مدة العمل]
+
+  - id: regime-horaire
+    acronyme: null
+    # FR : « régime de travail à plein temps de 48 heures par semaine », loi n° 96-62,
+    # art. 90 nouveau (éd. fr., couche texte). AR : « نظام عمل كامل الوقت 48 ساعة في
+    # الأسبوع », même article (p. 1636, image) ; 1966 : « نظام اسبوع الثمان والاربعين
+    # ساعة », art. 90 (p. 874, image).
+    statut: valide
+    references: [loi96-62, loi66-27]
+    source_definition: {ref: loi96-62, locator: "art. 90"}
+    source_traduction: {ref: loi96-62, locator: "art. 90"}
+    voir_aussi: [duree-legale-travail, heures-supplementaires]
+    fr:
+      terme: Régime de travail à plein temps
+      definition: >
+        Durée hebdomadaire normale applicable dans une entreprise ou
+        une branche, qui sert de seuil aux heures supplémentaires :
+        régime de 48 heures par semaine, fixé par le code, ou régime
+        réduit, de 40 heures au moins, fixé par convention collective
+        ou par texte réglementaire (code du travail, art. 79 et 90,
+        rédaction de la loi n° 96-62). La majoration des heures
+        supplémentaires et le montant du salaire minimum dépendent du
+        régime.
+      synonymes: [régime horaire, régime de 48 heures, régime de 40 heures]
+    ar:
+      terme: نظام عمل كامل الوقت
+      definition: >
+        المدة الأسبوعية العادية المطبقة في مؤسسة أو قطاع، وهي العتبة
+        التي تُحتسب بعدها الساعات الإضافية: نظام ثمان وأربعين ساعة في
+        الأسبوع الذي تضبطه المجلة، أو نظام أقل لا يقل عن أربعين ساعة
+        تضبطه اتفاقية مشتركة أو نص ترتيبي (مجلة الشغل، الفصلان 79 و90،
+        كما نقّحا بالقانون عدد 62 لسنة 1996). ويتوقف على النظام مقدار
+        الزيادة في أجر الساعات الإضافية ومبلغ الأجر الأدنى.
+      synonymes: [نظام أسبوع الثمان والأربعين ساعة]
+
+  - id: heures-supplementaires
+    acronyme: null
+    # AR : « الساعات الزائدة », intitulé de la section II du titre VI du code
+    # (p. 874, image) ; « ساعات عمل زائدة », loi n° 96-62, art. 90 nouveau (p. 1636,
+    # image). « الساعات الإضافية » : loi n° 2021-37, art. 13 (couche texte) et
+    # convention cadre agricole de 2015, art. 12 (selon la note documentaire).
+    # Terme principal الساعات الإضافية : décision du propriétaire du 20/10/2026.
+    statut: valide
+    references: [loi66-27, loi96-62, loi2021-37]
+    source_definition: {ref: loi96-62, locator: "art. 90"}
+    source_traduction: {ref: loi2021-37, locator: "art. 13"}
+    voir_aussi: [duree-legale-travail, regime-horaire]
+    fr:
+      terme: Heures supplémentaires
+      definition: >
+        Heures de travail effectuées au-delà de la durée normale du
+        régime applicable. Depuis 1996, elles sont majorées de 75 % du
+        salaire de base horaire dans le régime de 48 heures ; dans un
+        régime inférieur, de 25 % jusqu'à 48 heures et de 50 % au-delà
+        ; pour le salarié à temps partiel, de 50 % (code du travail,
+        art. 90, rédaction de la loi n° 96-62).
+      synonymes: []
+    ar:
+      terme: الساعات الإضافية
+      definition: >
+        ساعات العمل المنجزة بعد المدة العادية للنظام المطبق. ومنذ 1996
+        يُزاد في أجرها بنسبة 75 بالمائة من الأجر الأساسي للساعة في
+        نظام ثمان وأربعين ساعة، وفي نظام أقل بنسبة 25 بالمائة إلى حدود
+        ثمان وأربعين ساعة و50 بالمائة بعدها، وللعامل لوقت جزئي بنسبة
+        50 بالمائة (مجلة الشغل، الفصل 90، كما نقّح بالقانون عدد 62
+        لسنة 1996).
+      synonymes: [الساعات الزائدة]
+
+  - id: conge-annuel-paye
+    acronyme: null
+    # AR : titre IX du code « الرخص السنوية الخالصة » ; art. 112 : « رخصة خالصة
+    # الأجر » (p. 876, image). « الراحة السنوية » : loi n° 2021-37, art. 14 ;
+    # « عطلة الاستراحة السنوية » : loi n° 2024-44, art. 4 (couche texte).
+    statut: provisoire
+    references: [loi66-27, loi96-62]
+    source_definition: {ref: loi66-27, locator: "art. 112"}
+    source_traduction: {ref: loi66-27, locator: "art. 112"}
+    voir_aussi: [indemnite-compensatrice-conge, jours-feries-chomes-payes]
+    fr:
+      terme: Congé annuel payé
+      definition: >
+        Congé auquel le salarié a droit chaque année, après un mois de
+        travail effectif chez le même employeur : un jour ouvrable par
+        mois de travail, au plus 12 jours ouvrables, davantage pour
+        les jeunes salariés, plus un jour ouvrable par cinq ans
+        d'ancienneté, au plus 18 jours ouvrables (code du travail,
+        art. 112 à 115). Depuis 1996, l'indemnité de congé est égale
+        au salaire et aux indemnités habituellement perçus (art. 119,
+        rédaction de la loi n° 96-62).
+      synonymes: [congé payé]
+    ar:
+      terme: الرخصة السنوية الخالصة الأجر
+      definition: >
+        رخصة يستحقها الأجير كل سنة بعد شهر من العمل الفعلي لدى نفس
+        المؤجر: يوم عمل عن كل شهر عمل، في حدود اثني عشر يوم عمل، وأكثر
+        للأجراء الشبان، يُضاف إليها يوم عمل عن كل خمس سنوات أقدمية في
+        حدود ثمانية عشر يوم عمل (مجلة الشغل، الفصول من 112 إلى 115).
+        ومنذ 1996 تساوي منحة الرخصة الأجر والمنح التي يتقاضاها الأجير
+        عادة (الفصل 119، كما نقّح بالقانون عدد 62 لسنة 1996).
+      synonymes: [الراحة السنوية, عطلة الاستراحة السنوية]
+
+  - id: indemnite-compensatrice-conge
+    acronyme: null
+    # AR non attesté comme locution : l'art. 120 du code dit que le travailleur
+    # « يتقاضى في مقابل الجزء الذي لم يتمتع به من الرخصة منحة تعويض » (p. 877,
+    # image). Terme construit sur cette tournure, à confirmer. À ne pas confondre
+    # avec `indemnite-compensatrice` (المنحة التعويضية, rémunérations publiques).
+    statut: provisoire
+    references: [loi66-27]
+    source_definition: {ref: loi66-27, locator: "art. 120"}
+    voir_aussi: [conge-annuel-paye, indemnite-compensatrice]
+    fr:
+      terme: Indemnité compensatrice de congé payé
+      definition: >
+        Somme versée au salarié dont le contrat prend fin avant qu'il
+        ait pris tout son congé annuel payé, pour la fraction de congé
+        non prise. Elle n'est pas due en cas de faute lourde du
+        salarié (code du travail, art. 120).
+      synonymes: [indemnité compensatrice de congé]
+    ar:
+      terme: منحة التعويض عن الرخصة
+      definition: >
+        مبلغ يُصرف للأجير الذي ينتهي عقده قبل أن يتمتع بكامل رخصته
+        السنوية الخالصة الأجر، مقابل الجزء الذي لم يتمتع به منها. ولا
+        يُستحق في صورة الخطأ الفادح من الأجير (مجلة الشغل، الفصل 120).
+      synonymes: []
+
+  - id: jours-feries-chomes-payes
+    acronyme: null
+    # AR : « أيام الأعياد التي يبطل فيها العمل مع خلاص الأجر », intitulé de la loi
+    # n° 88-55 (sommaire du JORT ar. n° 37 du 3 juin 1988, p. 806, image ; miroir
+    # iort ; texte de la loi non lu). « أيام عطلة خالصة الأجر » : art. 445 nouveau,
+    # loi n° 91-15 (JORT ar. n° 17 de 1991, p. 381, image). « أيام الأعياد والعطل
+    # الخالصة » : intitulé du titre VIII du code (p. 876, image).
+    statut: valide
+    references: [loi66-27, loi63-55, loi88-55, loi91-15, dl2011-51, dl2021-11]
+    source_definition: {ref: loi66-27, locator: "art. 445"}
+    source_traduction: {ref: loi88-55}
+    voir_aussi: [conge-annuel-paye, repos-hebdomadaire]
+    fr:
+      terme: Jours fériés chômés et payés
+      definition: >
+        Jours pendant lesquels le travail est suspendu sans perte de
+        salaire. Le code du travail en donne la liste (art. 445) : six
+        jours depuis 1991, liste dans sa rédaction du décret-loi
+        n° 2021-11, en vigueur depuis le 15 décembre 2021. La convention
+        collective cadre en ajoute pour les activités non agricoles.
+        Le salarié qui travaille un jour férié dans une activité
+        continue reçoit, en plus de son salaire, une indemnité égale à
+        celui-ci (art. 109).
+      synonymes: [jours fériés payés]
+    ar:
+      terme: أيام الأعياد التي يبطل فيها العمل مع خلاص الأجر
+      definition: >
+        أيام يتوقف فيها العمل دون نقص في الأجر. وتضبط مجلة الشغل
+        قائمتها (الفصل 445): ستة أيام منذ 1991، والقائمة كما نقّحها
+        المرسوم عدد 11 لسنة 2021 النافذ منذ 15 ديسمبر 2021. وتضيف إليها الاتفاقية
+        المشتركة الإطارية أيامًا في الأنشطة غير الفلاحية. ويتقاضى
+        الأجير الذي يعمل يوم عيد في نشاط مستمر منحة تساوي أجره زيادة
+        على هذا الأجر (الفصل 109).
+      synonymes: [أيام عطلة خالصة الأجر, أيام الأعياد والعطل الخالصة]
+
+  - id: repos-hebdomadaire
+    acronyme: null
+    # AR : intitulé du titre VII du code « الراحة الأسبوعية » ; art. 95 (p. 874,
+    # image) ; loi n° 2025-9 (couche texte) ; loi n° 2021-37, art. 14 : « راحة
+    # أسبوعية ».
+    statut: valide
+    references: [loi66-27, loi96-62]
+    source_definition: {ref: loi66-27, locator: "art. 95"}
+    source_traduction: {ref: loi66-27, locator: "art. 95"}
+    voir_aussi: [jours-feries-chomes-payes, duree-legale-travail]
+    fr:
+      terme: Repos hebdomadaire
+      definition: >
+        Repos de 24 heures consécutives auquel le salarié a droit
+        chaque semaine, le vendredi, le samedi ou le dimanche (code du
+        travail, art. 95). Depuis 1996, un autre jour peut être fixé
+        par accord ou par autorisation du gouverneur (art. 95,
+        rédaction de la loi n° 96-62).
+      synonymes: []
+    ar:
+      terme: الراحة الأسبوعية
+      definition: >
+        راحة مدتها أربع وعشرون ساعة متتالية يستحقها الأجير كل أسبوع،
+        يوم الجمعة أو السبت أو الأحد (مجلة الشغل، الفصل 95). ومنذ 1996
+        يمكن تعيين يوم آخر بالاتفاق أو بترخيص من الوالي (الفصل 95، كما
+        نقّح بالقانون عدد 62 لسنة 1996).
+      synonymes: []
+
+  - id: travail-temps-partiel
+    acronyme: null
+    # AR : « العمل لوقت جزئي », loi n° 96-62, art. 94-2 (p. 1636, image) ; loi
+    # n° 2025-9, art. 94-2 nouveau, al. 1 (couche texte).
+    statut: valide
+    references: [loi96-62, loi2025-9]
+    source_definition: {ref: loi96-62, locator: "art. 94-2"}
+    source_traduction: {ref: loi96-62, locator: "art. 94-2"}
+    voir_aussi: [regime-horaire, heures-supplementaires]
+    fr:
+      terme: Travail à temps partiel
+      definition: >
+        Travail dont la durée ne dépasse pas 70 % de la durée normale
+        du travail de l'entreprise, régi depuis 1996 par une section
+        du code du travail (art. 94-2 à 94-14, ajoutés par la loi n°
+        96-62). Les heures supplémentaires du salarié à temps partiel
+        ne dépassent pas le tiers de la durée de son contrat et sont
+        majorées de 50 % (art. 90 et 94-6). La loi n° 2025-9 a récrit
+        l'alinéa qui le définit sans changer cette limite.
+      synonymes: [temps partiel]
+    ar:
+      terme: العمل لوقت جزئي
+      definition: >
+        عمل لا تتجاوز مدته 70 بالمائة من المدة العادية للعمل في
+        المؤسسة، تنظمه منذ 1996 الفصول من 94-2 إلى 94-14 من مجلة الشغل،
+        المضافة بالقانون عدد 62 لسنة 1996. ولا تتجاوز الساعات
+        الإضافية للعامل لوقت جزئي ثلث مدة عقده، ويُزاد في أجرها بنسبة
+        50 بالمائة (الفصلان 90 و94-6). وأعاد القانون عدد 9 لسنة 2025
+        صياغة الفقرة التي تعرّفه دون تغيير هذا الحد.
+      synonymes: []
+
+  - id: travail-de-nuit
+    acronyme: null
+    # AR : « العمل الليلي », loi n° 2025-9 (couche texte). L'art. 66 nouveau (loi
+    # n° 96-62, p. 1635, image) n'emploie pas le substantif : « تشغيل ... ليلا خلال
+    # فترة اثنتي عشرة ساعة » ; l'art. 68-2 dit « الفترة الليلية ».
+    statut: valide
+    references: [loi96-62, loi2025-9]
+    source_definition: {ref: loi96-62, locator: "art. 66"}
+    source_traduction: {ref: loi2025-9}
+    voir_aussi: [duree-legale-travail]
+    fr:
+      terme: Travail de nuit
+      definition: >
+        Travail effectué pendant la période de nuit. Depuis 1996, il
+        est interdit aux femmes et aux moins de 18 ans pendant une
+        période de 12 heures consécutives comprenant l'intervalle de
+        22 heures à 6 heures (code du travail, art. 66, rédaction de
+        la loi n° 96-62). Le code ne le majore pas ; les conventions
+        de branche peuvent le faire.
+      synonymes: []
+    ar:
+      terme: العمل الليلي
+      definition: >
+        العمل المنجز خلال الفترة الليلية. ومنذ 1996 يُمنع تشغيل النساء
+        ومن سنّهم دون الثامنة عشرة ليلًا خلال فترة اثنتي عشرة ساعة
+        متتالية تشمل الفترة الممتدة من الساعة العاشرة ليلًا إلى الساعة
+        السادسة صباحًا (مجلة الشغل، الفصل 66، كما نقّح بالقانون عدد 62
+        لسنة 1996). ولا تنص المجلة على زيادة في أجره، ويمكن للاتفاقيات
+        القطاعية أن تنص عليها.
+      synonymes: []
+
+  - id: conge-paternite
+    acronyme: null
+    # AR : « عطلة الأبوة », loi n° 2024-44, art. 2 (définition) et 5 (couche texte) ;
+    # loi n° 2021-37, art. 15 : « عطلة أبوة ».
+    statut: valide
+    references: [loi2024-44, loi66-27]
+    source_definition: {ref: loi2024-44, locator: "art. 2"}
+    source_traduction: {ref: loi2024-44, locator: "art. 2"}
+    voir_aussi: [conge-annuel-paye]
+    fr:
+      terme: Congé de paternité
+      definition: >
+        Congé accordé au père à la naissance d'un enfant. Depuis le 13
+        août 2024, il est de sept jours à plein traitement, dix en cas
+        de naissances multiples, d'enfant handicapé ou prématuré,
+        trois en cas d'enfant mort-né, à prendre dans les trente jours
+        (loi n° 2024-44, art. 2 et 5). Le code du travail accordait
+        auparavant un jour.
+      synonymes: []
+    ar:
+      terme: عطلة الأبوة
+      definition: >
+        عطلة تُمنح للأب عند ولادة طفل. ومنذ 13 أوت 2024 مدتها سبعة
+        أيام بأجر كامل، وعشرة أيام في صورة الولادات المتعددة أو ولادة
+        طفل ذي إعاقة أو قبل الأوان، وثلاثة أيام في صورة ولادة طفل ميت،
+        تُؤخذ خلال الثلاثين يومًا (القانون عدد 44 لسنة 2024، الفصلان 2
+        و5). وكانت مجلة الشغل تمنح قبل ذلك يومًا واحدًا.
+      synonymes: []
+
+  - id: travail-domestique
+    acronyme: null
+    # AR : « العمل المنزلي », intitulé et art. 3 (définition) de la loi n° 2021-37
+    # (couche texte). Notion distincte de `employes-de-maison` (catégorie de
+    # cotisants du décret n° 95-538).
+    statut: valide
+    references: [loi2021-37]
+    source_definition: {ref: loi2021-37, locator: "art. 3"}
+    source_traduction: {ref: loi2021-37, locator: "art. 3"}
+    voir_aussi: [employes-de-maison]
+    fr:
+      terme: Travail domestique
+      definition: >
+        Travaux liés au domicile ou à la famille qu'une personne
+        accomplit de manière continue et habituelle pour un ou
+        plusieurs employeurs (loi n° 2021-37, art. 3). Depuis le 30
+        janvier 2022, cette loi en fixe la durée — 48 heures par
+        semaine —, les congés et le salaire, qui ne peut être
+        inférieur au salaire minimum du régime de 48 heures ; le code
+        du travail s'applique en ce qu'elle ne contredit pas (art. 4,
+        11, 13 et 14).
+      synonymes: []
+    ar:
+      terme: العمل المنزلي
+      definition: >
+        الأعمال المرتبطة بالمنزل أو بالأسرة التي يؤديها شخص بصفة
+        مستمرة واعتيادية لفائدة مؤجر أو أكثر (القانون عدد 37 لسنة
+        2021، الفصل 3). ومنذ 30 جانفي 2022 يضبط هذا القانون مدة العمل،
+        وهي ثمان وأربعون ساعة في الأسبوع، والعطل والأجر الذي لا يقل عن
+        الأجر الأدنى لنظام ثمان وأربعين ساعة، وتنطبق مجلة الشغل في ما
+        لا يتعارض معه (الفصول 4 و11 و13 و14).
+      synonymes: []
+
   - id: emploi-informel
     acronyme: null
     statut: provisoire
@@ -9633,7 +10999,7 @@ entries:
   - id: fonds-special-tresor
     acronyme: null
     statut: provisoire
-    references: [lf-1971, lf-2014]
+    references: [lf-1971, lf-2014, lf-1995]
     source_definition: {ref: lf-1971, locator: "art. 48"}
     # AR : attesté au pluriel seulement — « fonds spéciaux du Trésor » en regard de
     # « الحسابات الخاصة في الخزينة » (LF 2014, art. 2 et tableau « B »). Le singulier
@@ -10480,8 +11846,9 @@ entries:
         Engagement par lequel l'État se substitue à une entreprise ou à un
         établissement public dans ses obligations envers un prêteur, si
         l'emprunteur fait défaut. La loi de finances en fixe chaque année le
-        plafond (loi organique du budget n° 2019-15, article 45). On distingue
-        les garanties accordées dans l'année et l'encours de la dette garantie.
+        plafond (depuis l'année financière 1958-59 ; loi organique du budget
+        n° 2019-15, article 45). On distingue les garanties accordées dans l'année et l'encours de la
+        dette garantie.
       synonymes: []
     ar:
       terme: ضمان الدولة
@@ -11619,6 +12986,27 @@ entries:
       definition: ""
       synonymes: []
 
+  - id: nomenclature-budgetaire
+    acronyme: null
+    statut: provisoire  # AR lu : intitulé du décret gouvernemental n° 2020-52 (AR), JORT n° 9 de 2020, p. 368 (« تبويب ميزانية البلديات ») ; colonnes du modèle annexé, p. 369
+    references: [decret-gouv2020-52]
+    source_definition: {ref: decret-gouv2020-52, locator: "annexe"}
+    source_traduction: {ref: decret-gouv2020-52, locator: "intitulé"}
+    voir_aussi: [interventions-publiques, depenses-de-gestion]
+    fr:
+      terme: Nomenclature budgétaire
+      definition: >
+        Classement des recettes et des dépenses d'un budget en titres, parties,
+        sections, articles et paragraphes ; pour les communes, un modèle approuvé par
+        décret gouvernemental.
+      synonymes: []
+    ar:
+      terme: تبويب الميزانية
+      definition: >
+        تصنيف مداخيل الميزانية ونفقاتها إلى عناوين وأجزاء وأقسام وفصول وفقرات ؛ وبالنسبة
+        إلى البلديات، نموذج يُصادَق عليه بأمر حكومي.
+      synonymes: []
+
   - id: credits-d-engagement
     acronyme: null
     statut: provisoire  # AR lu : loi organique n° 2019-15 (AR, couche texte), art. 22
@@ -12598,20 +13986,32 @@ entries:
 
   # AR : « معاليم التسجيل » (LF 2017, art. 29 ; intitulé arabe du CDET, « مجلة معاليم
   # التسجيل والطابع الجبائي ») en regard de « droits d'enregistrement » (éd. fr.).
-  # Pas de clé pour la loi n° 93-53 (CDET) : source_definition vide.
+  # Clé `loi-93-53-cdet` versée en octobre 2026 : source_definition renseignée.
   - id: droits-enregistrement
     acronyme: null
-    statut: provisoire
-    references: []
+    statut: valide
+    references: [loi-93-53-cdet]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 1 à 116"}
     source_traduction: {ref: lf-2017, locator: "art. 29"}
-    voir_aussi: [droit-mutation, droit-fixe-enregistrement, droit-proportionnel-enregistrement, droit-progressif-terrains]
+    voir_aussi: [droit-mutation, droit-fixe-enregistrement, droit-proportionnel-enregistrement, droit-progressif-terrains, formalite-enregistrement, droit-timbre]
     fr:
       terme: Droits d'enregistrement
-      definition: ""
+      definition: >
+        Impôts perçus à l'occasion de la formalité de l'enregistrement d'un acte,
+        d'une mutation ou d'un jugement : mutations d'immeubles et de fonds de
+        commerce, successions et donations, actes de sociétés, marchés, baux,
+        jugements. Ils prennent la forme d'un droit proportionnel ou progressif,
+        assis sur la valeur, ou d'un droit fixe, par acte ou par page. Ils forment
+        la première partie du code des droits d'enregistrement et de timbre de 1993.
       synonymes: []
     ar:
       terme: معاليم التسجيل
-      definition: ""
+      definition: >
+        أداءات تُستخلص بمناسبة القيام بإجراء التسجيل على عقد أو نقل ملكية أو حكم:
+        نقل ملكية العقارات والأصول التجارية، والتركات والهبات، وعقود الشركات،
+        والصفقات، والأكرية، والأحكام. وهي إمّا معلوم نسبي أو تصاعدي يُوظَّف على
+        القيمة، وإمّا معلوم قار يُوظَّف على العقد أو على الصفحة. وتمثّل الجزء الأول
+        من مجلة معاليم التسجيل والطابع الجبائي لسنة 1993.
       synonymes: []
 
   # AR non attesté comme terme. Le JORT arabe dit « معلوم على نقل ومقاسمة العقارات غير
@@ -12639,34 +14039,56 @@ entries:
   # dinars » par « معلوم محدد بمائة دينار » ; la forme du code est « القار ».
   - id: droit-fixe-enregistrement
     acronyme: null
-    statut: provisoire
-    references: [lf-2014, lf-2018]
+    statut: valide
+    references: [loi-93-53-cdet, lf-2014, lf-2018]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 23"}
     source_traduction: {ref: lf-2014, locator: "art. 53"}
     voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
     fr:
       terme: Droit fixe
-      definition: ""
+      definition: >
+        Droit d'enregistrement d'un montant déterminé, indépendant de la valeur
+        de l'acte, dû par acte ou par page (code des droits d'enregistrement et
+        de timbre, art. 23 et 24). Il frappe les actes que le tarif ne taxe pas
+        à proportion de leur valeur : actes de sociétés, actes sans tarif propre,
+        certains baux, et les mutations que la loi place sous ce régime. Son
+        montant est relevé par les lois de finances.
       synonymes: [Droit fixe d'enregistrement]
     ar:
       terme: المعلوم القار
-      definition: ""
+      definition: >
+        معلوم تسجيل بمقدار محدد لا يتوقّف على قيمة العقد، يُستوجب على العقد أو على
+        الصفحة (مجلة معاليم التسجيل والطابع الجبائي، الفصلان 23 و24). ويُوظَّف على
+        العقود التي لا تخضعها التعريفة لمعلوم نسبي إلى قيمتها: عقود الشركات،
+        والعقود التي لا تعريفة خاصة لها، وبعض الأكرية، وعمليات نقل الملكية التي
+        يخضعها القانون لهذا النظام. وتُحيّن قوانين المالية مقداره.
       synonymes: []
 
   # AR : « المعلوم النسبي » (LF 2014, art. 53, § 1 : « بالمعلوم النسبي المحدد بـ 3% » en
   # regard de « au droit proportionnel de 3 % »).
   - id: droit-proportionnel-enregistrement
     acronyme: null
-    statut: provisoire
-    references: [lf-2014]
+    statut: valide
+    references: [loi-93-53-cdet, lf-2014]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 20"}
     source_traduction: {ref: lf-2014, locator: "art. 53"}
     voir_aussi: [droits-enregistrement, droit-fixe-enregistrement, droit-progressif-terrains]
     fr:
       terme: Droit proportionnel
-      definition: ""
+      definition: >
+        Droit d'enregistrement égal à un pourcentage de la valeur, du prix ou du
+        montant que l'acte constate (code des droits d'enregistrement et de
+        timbre, art. 20) : mutations d'immeubles et de fonds de commerce, baux,
+        ventes publiques de meubles, jugements, marchés. Il ne peut être inférieur
+        au minimum de perception.
       synonymes: [Droit proportionnel d'enregistrement]
     ar:
       terme: المعلوم النسبي
-      definition: ""
+      definition: >
+        معلوم تسجيل يساوي نسبة مائوية من القيمة أو الثمن أو المبلغ الذي يثبته العقد
+        (مجلة معاليم التسجيل والطابع الجبائي، الفصل 20): نقل ملكية العقارات والأصول
+        التجارية، والأكرية، والبيوعات العلنية للمنقولات، والأحكام، والصفقات. ولا
+        يمكن أن يقلّ عن الاستخلاص الأدنى.
       synonymes: []
 
   # AR : l'adjectif est attesté, « معاليم التسجيل النسبية والتصاعدية » (LF 2017, art. 29)
@@ -12799,23 +14221,339 @@ entries:
       definition: ""
       synonymes: []
 
-  # AR non attesté comme nom. Le nouvel art. 22 du CDET (LF 2017, art. 69, § 3) dit
-  # « لا يمكن استخلاص أقل من 40 دينارا » en regard de « Il ne peut être perçu moins de
-  # 40 dinars ». Distinct de `minimum-impot` (IRPP).
+  # AR : « الاستخلاص الأدنى » (LF 2013, art. 44, rubrique « تنسيق مبلغ الاستخلاص
+  # الأدنى » en regard de « Harmonisation du minimum de perception », à propos du code
+  # des droits et procédures fiscaux ; le DL 2021-21, LF 2022, emploie « مقدار الاستخلاص
+  # الأدنى » pour un droit d'enregistrement). Remplace « الحد الأدنى للاستخلاص », forme
+  # composée sans occurrence dans le miroir iort (23/10/2026). Le nouvel art. 22 du CDET
+  # (LF 2017, art. 69, § 3) dit « لا يمكن استخلاص أقل من 40 دينارا » en regard de « Il ne
+  # peut être perçu moins de 40 dinars ». Distinct de `minimum-impot` (IRPP).
   - id: minimum-perception-enregistrement
     acronyme: null
-    statut: provisoire  # AR non attesté tel quel
-    references: [lf-2017]
+    statut: provisoire
+    references: [lf-2017, lf-2013]
     source_definition: {ref: lf-2017, locator: "art. 69"}
+    source_traduction: {ref: lf-2013, locator: "art. 44"}
     voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
     fr:
       terme: Minimum de perception
       definition: ""
       synonymes: []
     ar:
-      terme: الحد الأدنى للاستخلاص
+      terme: الاستخلاص الأدنى
       definition: ""
       synonymes: []
+
+  # AR : « إجراء التسجيل » (LF 2020, art. 48, nouvel art. 13 ter du CDET : « عند القيام
+  # بإجراء التسجيل » en regard de « pour l'accomplissement de la formalité de
+  # l'enregistrement »). Même forme dans le DL 2021-21 (LF 2022) et la rubrique de
+  # l'art. 65 du DL 2022-79 (LF 2023), « إخضاع التواكيل وجوبا لإجراء التسجيل ».
+  - id: formalite-enregistrement
+    acronyme: null
+    statut: valide
+    references: [loi-93-53-cdet, lf-2020]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 1 à 15"}
+    source_traduction: {ref: lf-2020, locator: "art. 48"}
+    voir_aussi: [droits-enregistrement, droit-fixe-enregistrement]
+    fr:
+      terme: Formalité de l'enregistrement
+      definition: >
+        Présentation d'un acte, d'une déclaration ou d'un jugement au receveur de
+        l'enregistrement, qui perçoit les droits dus. Le code des droits d'enregistrement et de timbre (art. 1 à 15) dresse
+        la liste des actes obligatoirement enregistrés et fixe les délais ; un
+        acte qui n'y figure pas peut être présenté volontairement.
+      synonymes: [Formalité d'enregistrement]
+    ar:
+      terme: إجراء التسجيل
+      definition: >
+        تقديم عقد أو تصريح أو حكم إلى قابض التسجيل الذي يستخلص المعاليم
+        المستوجبة. وتضبط مجلة معاليم التسجيل والطابع الجبائي (الفصول 1 إلى
+        15) قائمة العقود الخاضعة وجوبا للتسجيل وآجاله؛ ويمكن تقديم العقد غير
+        المدرج بها للتسجيل اختياريا.
+      synonymes: []
+
+  # Budget (tableau A). FR « Droits sur les Actes et Transactions » : titre 4 du
+  # tableau A jusqu'en 2019 (« ( Enregistrement) », LF 2017, JORT n° 105 de 2016), puis
+  # ligne 18-02 depuis la LF 2020. AR « معاليم على العقود والمبادلات » : ligne 18-02 des
+  # LF 2023 (p. 4084) et 2026 (p. 4260), éditions arabes lues à l'image par la
+  # documentaliste (docs/notes/fiscalite-timbre-enregistrement-series.csv). Le titre 4
+  # arabe de la LF 2017 porte une autre forme, « المعاليم على العقود والمنقولات
+  # (التسجيل) » : non retenue, la nomenclature ayant changé. Notion budgétaire, sans
+  # définition légale : source_definition vide.
+  - id: droits-actes-transactions
+    acronyme: null
+    statut: valide
+    references: [lf-2017, lf-2019, lf-2020, lf-2026]
+    source_definition: {ref: lf-2020, locator: "tableau A, p. 4441"}
+    source_traduction: {ref: lf-2026}
+    voir_aussi: [droits-enregistrement, droit-timbre, taxe-unique-assurances]
+    fr:
+      terme: Droits sur les actes et transactions
+      definition: >
+        Rubrique des recettes fiscales au tableau A des lois de finances, dont le
+        périmètre change en 2020. Jusqu'en 2019, c'est le titre d'un groupe qui
+        réunit le droit de timbre, les droits de mutation, les autres droits
+        d'enregistrement et la taxe unique sur les assurances. Depuis 2020, c'est
+        une ligne (18-02) de la catégorie « Autres impôts et taxes », à côté du
+        droit de timbre (18-01) et de la taxe unique sur les assurances (18-04).
+        Notion budgétaire, sans définition légale.
+      synonymes: []
+    ar:
+      terme: معاليم على العقود والمبادلات
+      definition: >
+        باب من المداخيل الجبائية بالجدول «أ» لقوانين المالية، تغيّر مجاله سنة
+        2020. فإلى غاية 2019، يقابله في الجدول عنوان مجموعة، «المعاليم على العقود
+        والمنقولات (التسجيل)»، تضمّ معاليم الطابع الجبائي ومعاليم نقل الملكية
+        ومعاليم التسجيل الأخرى والمعلوم الوحيد على التأمينات. ومنذ 2020، هو سطر
+        (18-02) من الجدول، إلى جانب معاليم الطابع الجبائي (18-01) والمعلوم الوحيد
+        على التأمينات (18-04). مفهوم ميزانياتي لا تعريف قانوني له.
+      synonymes: []
+
+  # AR : « معلوم الطابع الجبائي » (LFC 2012, art. 47, rubrique « تحيين تعريفة معلوم
+  # الطابع الجبائي المستوجب على الفواتير » en regard de « Mise à jour du tarif du droit
+  # de timbre exigible sur les factures » ; LF 2017, art. 72, « إلغاء معلوم الطابع
+  # الجبائي المستوجب » en regard de « Suppression du droit de timbre dû » ; intitulé
+  # arabe du CDET). Tableau A, ligne 24-01 puis 18-01 : « Droits de Timbre fiscal » /
+  # « معاليم الطابع الجبائي ». Le timbre sur les quittances, puis sur les factures, est
+  # une ligne du tarif (art. 117, I, 6), non une notion : pas d'entrée propre.
+  - id: droit-timbre
+    acronyme: null
+    statut: valide
+    references: [loi-93-53-cdet, lfc-2012, lf-2017]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 117"}
+    source_traduction: {ref: lfc-2012, locator: "art. 47"}
+    voir_aussi: [timbre-mobile, timbre-dimension, timbre-proportionnel, droits-enregistrement, droits-actes-transactions]
+    fr:
+      terme: Droit de timbre
+      definition: >
+        Impôt dû sur un document, quel que soit l'acte ou l'opération qu'il
+        constate : actes et registres, effets de commerce, factures, recharges
+        téléphoniques, passeports, cartes et autres documents administratifs. Son
+        tarif, fixé par l'article 117 du code des droits d'enregistrement et de
+        timbre, est un montant par feuille, par document ou par copie, ou un
+        montant par dinar payé. Il se paie par timbres mobiles ou selon les
+        autres modes que fixe le code (art. 119 à 128).
+      synonymes: [Droits de timbre, Droits de timbre fiscal]
+    ar:
+      terme: معلوم الطابع الجبائي
+      definition: >
+        أداء يُستوجب على وثيقة، مهما كان العقد أو العملية التي تثبتها: العقود
+        والدفاتر، والأوراق التجارية، والفواتير، وعمليات شحن الهاتف، وجوازات
+        السفر، والبطاقات وغيرها من الوثائق الإدارية. وتضبط تعريفته بالفصل 117 من
+        مجلة معاليم التسجيل والطابع الجبائي، وهي مقدار على الورقة أو الوثيقة أو
+        النسخة، أو مقدار على كلّ دينار مدفوع. ويُدفع بواسطة الطوابع غير القارة أو
+        بالطرق الأخرى التي تضبطها المجلة (الفصول 119 إلى 128).
+      synonymes: [معاليم الطابع الجبائي]
+
+  # AR : « الطابع غير القار » (code pénal, art. 181, rédaction de la loi n° 2005-46 :
+  # « contrefait les timbres mobiles ou autres timbres fiscaux de l'Etat » en regard de
+  # « من يقلد الطوابع غير القارة أو غيرها من الطوابع الجبائية » ; miroir iort,
+  # loi_2005_46_2005.md). Pas de clé pour la loi n° 2005-46 : source_traduction vide.
+  # « timbres fiscaux » / « الطوابع الجبائية » : LF 2004, art. 78. La forme « الطابع
+  # الجبائي المتنقل » proposée par la note documentaire n'est pas attestée. Statut
+  # valide sur l'attestation du code pénal ; forme du CDET arabe (art. 121-122) non relevée.
+  - id: timbre-mobile
+    acronyme: null
+    statut: valide
+    references: [loi-93-53-cdet, lf-2004]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 121-122"}
+    voir_aussi: [droit-timbre]
+    fr:
+      terme: Timbre mobile
+      definition: >
+        Vignette émise par l'État, que l'on appose sur un document pour acquitter
+        le droit de timbre ; on l'appelle couramment timbre fiscal. C'est l'un
+        des modes de paiement du droit de timbre que fixe le code des droits
+        d'enregistrement et de timbre, à côté du papier timbré, du paiement sur
+        état et du visa du receveur.
+      synonymes: [Timbres mobiles]
+    ar:
+      terme: الطابع غير القار
+      definition: >
+        طابع تصدره الدولة يُلصق على الوثيقة لخلاص معلوم الطابع الجبائي، ويُسمّى
+        عادة الطابع الجبائي. وهو إحدى طرق دفع معلوم الطابع الجبائي التي تضبطها
+        مجلة معاليم التسجيل والطابع الجبائي، إلى جانب طرق الدفع الأخرى التي
+        تنصّ عليها.
+      synonymes: []
+
+  # AR non attesté. Le timbre de dimension (décret du 20 avril 1912 ; décret n° 65-222,
+  # art. 1 ; LF 1969, art. 12) est antérieur aux textes arabes disponibles en couche
+  # texte ; les fascicules arabes de 1965 et 1969 sont des images non océrisées.
+  # Proposition descriptive, à vérifier sur l'édition arabe du décret 65-222 ou de la
+  # LF 1969.
+  - id: timbre-dimension
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: [decret-65-222-timbre, lf-1969]
+    source_definition: {ref: decret-65-222-timbre, locator: "art. 1"}
+    voir_aussi: [droit-timbre, timbre-proportionnel]
+    fr:
+      terme: Timbre de dimension
+      definition: >
+        Droit de timbre dû sur un acte écrit selon le format du papier employé,
+        du petit papier au grand registre, quel que soit le contenu de l'acte. Il
+        relève du décret organique sur le timbre du 20 avril 1912, et ses montants
+        sont relevés par décret puis par loi de finances (décret n° 65-222,
+        art. 1 ; loi de finances pour 1969, art. 12). Le tarif du code des droits
+        d'enregistrement et de timbre de 1993 ne le comporte plus : le timbre des
+        actes y est dû par feuille.
+      synonymes: [Droit de timbre de dimension]
+    ar:
+      terme: معلوم الطابع حسب حجم الورق
+      definition: >
+        معلوم طابع يُستوجب على العقد المكتوب حسب حجم الورق المستعمل، من الورق
+        الصغير إلى الدفتر الكبير، مهما كان مضمون العقد. وهو يرجع إلى الأمر الأساسي
+        المتعلق بالطابع المؤرخ في 20 أفريل 1912، وقد رُفّعت مقاديره بأمر ثم بقانون
+        المالية (الأمر عدد 222 لسنة 1965، الفصل الأول؛ قانون المالية لسنة 1969، الفصل
+        12). ولم تعد تعريفة مجلة معاليم التسجيل والطابع الجبائي لسنة 1993 تتضمّنه:
+        فطابع العقود فيها مستوجب على الورقة.
+      synonymes: []
+
+  # AR non attesté (même motif que `timbre-dimension`). Proposition calquée sur
+  # « المعلوم النسبي » (droit proportionnel, LF 2014, art. 53).
+  - id: timbre-proportionnel
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: [decret-65-222-timbre, lf-1990]
+    source_definition: {ref: decret-65-222-timbre, locator: "art. 2"}
+    voir_aussi: [droit-timbre, timbre-dimension, droit-proportionnel-enregistrement]
+    fr:
+      terme: Timbre proportionnel
+      definition: >
+        Droit de timbre égal à une fraction du montant d'un titre, notamment d'un
+        effet de commerce, prévu par la section II du tarif annexé au décret du 20 avril 1912 sur le
+        timbre. La loi de finances pour 1990 (art. 33) abroge cette section et le
+        remplace par un montant fixe par effet, différent selon que l'effet est
+        domicilié ou non dans un établissement de crédit ou un bureau de chèques
+        postaux.
+      synonymes: [Droit de timbre proportionnel]
+    ar:
+      terme: معلوم الطابع النسبي
+      definition: >
+        معلوم طابع يساوي جزءا من مبلغ سند، ولا سيّما الورقة التجارية، نصّ عليه القسم الثاني من
+        التعريفة الملحقة بالأمر المؤرخ في 20 أفريل 1912 المتعلق بالطابع. وألغى
+        قانون المالية لسنة 1990 (الفصل 33) هذا القسم، وعوّضه بمقدار قار على كلّ
+        ورقة، يختلف بحسب توطين الورقة أو عدم توطينها لدى مؤسسة قرض أو مكتب صكوك
+        بريدية.
+      synonymes: []
+
+  # AR non attesté. « apport » est rendu par « حصة » dans le code des sociétés
+  # commerciales (« الحصص العينية », apports en nature) ; « معلوم تسجيل الحصص » est
+  # composé sur cette base. Droit d'apport : n° 55 du tarif annexé au décret du 19 avril
+  # 1912, taux du décret n° 68-104.
+  - id: droit-apport
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: [decret-68-104-taux, lf-1969]
+    source_definition: {ref: decret-68-104-taux}
+    voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement, droit-fixe-enregistrement]
+    fr:
+      terme: Droit d'apport
+      definition: >
+        Droit d'enregistrement proportionnel dû sur les actes de formation et de
+        prorogation d'une société, assis sur la valeur des apports (n° 55 du
+        tarif annexé au décret organique sur l'enregistrement du 19 avril 1912 ;
+        taux du décret n° 68-104 et de la loi de finances pour 1969). Le tarif du
+        code des droits d'enregistrement et de timbre de 1993 ne le comporte
+        plus : les actes de société y supportent un droit fixe par acte.
+      synonymes: []
+    ar:
+      terme: معلوم تسجيل الحصص
+      definition: >
+        معلوم تسجيل نسبي يُستوجب على عقود تأسيس الشركات والتمديد في مدّتها،
+        ويُوظَّف على قيمة الحصص (العدد 55 من التعريفة الملحقة بالأمر الأساسي
+        المتعلق بالتسجيل المؤرخ في 19 أفريل 1912؛ نسبه بالأمر عدد 104 لسنة 1968
+        وبقانون المالية لسنة 1969). ولم تعد تعريفة مجلة معاليم التسجيل والطابع
+        الجبائي لسنة 1993 تتضمّنه: فعقود الشركات فيها خاضعة لمعلوم قار على العقد.
+      synonymes: []
+
+  # AR non attesté. Majoration d'un demi-dixième des droits (décret n° 68-104, colonne
+  # « demi-décime », par application de l'art. 7 de la LF 1968, loi n° 67-57).
+  - id: demi-decime
+    acronyme: null
+    statut: provisoire  # AR non attesté
+    references: [decret-68-104-taux]
+    source_definition: {ref: decret-68-104-taux}
+    voir_aussi: [droits-enregistrement, droit-timbre]
+    fr:
+      terme: Demi-décime
+      definition: >
+        Majoration générale d'un demi-dixième, soit d'un vingtième, appliquée à
+        tous les droits d'un tarif. Le décret n° 68-104 fixe le tarif des droits
+        d'enregistrement sur trois colonnes : le tarif antérieur, le demi-décime
+        institué par la loi de finances pour 1968 (art. 7) et le tarif qui en
+        résulte. Le procédé relève les tarifs sans en changer la structure.
+      synonymes: []
+    ar:
+      terme: نصف العشر الإضافي
+      definition: >
+        ترفيع عامّ بنصف العشر، أي بجزء من عشرين، يُطبَّق على كلّ المعاليم الواردة
+        بتعريفة. ويضبط الأمر عدد 104 لسنة 1968 تعريفة معاليم التسجيل في ثلاثة
+        أعمدة: التعريفة السابقة، ونصف العشر الإضافي المحدث بقانون المالية لسنة 1968
+        (الفصل 7)، والتعريفة الناتجة عنهما. ويُرفّع هذا الإجراء التعريفات دون
+        تغيير بنيتها.
+      synonymes: []
+
+  # AR : « طابع المحاماة » (décret n° 93-1148 du 22 mai 1993 « fixant le montant du
+  # timbre d'avocat » / « المتعلق بضبط طابع المحاماة », intitulé repris par les décrets
+  # n° 2008-355 et 2008-359 ; miroir iort, éditions FR et AR). Pas de clé pour ces
+  # décrets : source_traduction vide. Institué par la loi n° 93-53, art. 6.
+  - id: timbre-avocat
+    acronyme: null
+    statut: valide
+    references: [loi-93-53-cdet, minfin-cdet-2025]
+    source_definition: {ref: loi-93-53-cdet, locator: "art. 6"}
+    voir_aussi: [droit-timbre]
+    fr:
+      terme: Timbre d'avocat
+      definition: >
+        Timbre institué par la loi n° 93-53 (art. 6), qui promulgue le code des
+        droits d'enregistrement et de timbre, « au profit de la Caisse de
+        Prévoyance et de Retraite des avocats ». Son produit revient à cette
+        caisse et non au budget de l'État ; son montant est fixé par décret.
+      synonymes: []
+    ar:
+      terme: طابع المحاماة
+      definition: >
+        طابع أحدثه القانون عدد 53 لسنة 1993 (الفصل 6)، المتعلق بإصدار مجلة معاليم
+        التسجيل والطابع الجبائي، لفائدة صندوق الحيطة والتقاعد للمحامين. ويعود
+        مُتأتّاه إلى هذا الصندوق لا إلى ميزانية الدولة؛ ويُضبط مقداره بأمر.
+      synonymes: []
+
+  # AR : « المعلوم الوحيد على التأمين » (LF 2018, art. 48, rubrique « تحيين تعريفة
+  # المعلوم الوحيد على التأمين » en regard de « Actualisation du tarif de la taxe unique
+  # sur les assurances »). Le nom officiel arabe est « معلوم », non « ضريبة » : il est
+  # gardé tel quel. Le tableau A écrit le pluriel « المعلوم الوحيد على التأمينات »
+  # (ligne 24-04, LF 2017 et LFC 2012).
+  - id: taxe-unique-assurances
+    acronyme: TUA
+    statut: valide
+    references: [lf-1997, lf-2018, minfin-cdet-2025]
+    source_definition: {ref: lf-1997, locator: "art. 34"}
+    source_traduction: {ref: lf-2018, locator: "art. 48"}
+    voir_aussi: [droits-actes-transactions, droits-enregistrement]
+    fr:
+      terme: Taxe unique sur les assurances
+      definition: >
+        Taxe due sur « les contrats d'assurance ou de rente viagère conclus avec
+        des entreprises d'assurance », à un taux qui diffère selon que le risque
+        relève de la navigation maritime et aérienne ou d'une autre branche.
+        Instituée par la loi de finances pour 1997 (art. 34), elle forme la
+        troisième partie du code des droits d'enregistrement et de timbre,
+        « autres taxes » (art. 144 à 149) : elle n'est ni un droit
+        d'enregistrement ni un droit de timbre. L'assurance-vie, la réassurance et
+        d'autres branches en sont exonérées (art. 145).
+      synonymes: []
+    ar:
+      terme: المعلوم الوحيد على التأمين
+      definition: >
+        معلوم يُستوجب على عقود التأمين أو الإيراد العمري المبرمة مع مؤسسات
+        التأمين، بنسبة تختلف بحسب ما إذا كان الخطر يتعلّق بالملاحة البحرية والجوية
+        أو بصنف آخر. أُحدث بقانون المالية لسنة 1997 (الفصل 34)، ويمثّل الجزء الثالث
+        من مجلة معاليم التسجيل والطابع الجبائي (الفصول 144 إلى 149):
+        فهو ليس معلوم تسجيل ولا معلوم طابع جبائي. ويُعفى منه التأمين على الحياة
+        وإعادة التأمين وأصناف أخرى (الفصل 145).
+      synonymes: [المعلوم الوحيد على التأمينات]
 
   # --- Foncier
 
@@ -13178,7 +14916,7 @@ entries:
     statut: provisoire
     references: [mirrlees-et-al-2011-tax-by-design]
     source_definition: {ref: mirrlees-et-al-2011-tax-by-design, locator: "p. 296"}
-    voir_aussi: [plus-value-immobiliere]
+    voir_aussi: [plus-value-immobiliere, plus-value-cession-titres]
     fr:
       terme: Effet de verrouillage
       definition: >
@@ -13298,6 +15036,81 @@ entries:
         انتقاله من يد إلى أخرى. ومعلوم نقل ملكية العقارات مثال على ذلك.
       synonymes: []
 
+  # Notion analytique (note économique sur le timbre et l'enregistrement, § 7). Sans
+  # terme officiel arabe : provisoire, sans source_traduction. Clé Matheson présente
+  # dans le seul livre de la fiscalité.
+  - id: effet-cascade
+    acronyme: null
+    statut: provisoire
+    references: [matheson-2011-taxing-financial-transactions]
+    source_definition: {ref: matheson-2011-taxing-financial-transactions, locator: "p. 25"}
+    voir_aussi: [impot-transactions]
+    fr:
+      terme: Effet cascade
+      definition: >
+        Cumul d'un impôt prélevé à chaque étape d'une chaîne de production, sans
+        crédit pour l'impôt payé aux étapes antérieures, de sorte que la charge
+        finale dépend du nombre d'étapes. Selon Matheson (2011), un impôt sur les
+        transactions intermédiaires se cumule ainsi selon l'intensité en
+        transactions de chaque secteur, et pousse les entreprises à s'intégrer
+        verticalement pour l'éviter.
+      synonymes: [Cumul en cascade]
+    ar:
+      terme: الأثر التراكمي
+      definition: >
+        تراكم أداء يُستخلص في كلّ مرحلة من سلسلة الإنتاج دون خصم الأداء المدفوع في
+        المراحل السابقة، فيتوقّف العبء النهائي على عدد المراحل. وحسب ماثيسون
+        (Matheson، 2011)، يتراكم الأداء على المعاملات الوسيطة بهذه الطريقة بحسب
+        كثافة المعاملات في كلّ قطاع، ويدفع المؤسسات إلى الاندماج العمودي لتفاديه.
+      synonymes: []
+
+  # Notion analytique (liquidité d'un marché de titres). Sans terme officiel arabe.
+  - id: liquidite-marche
+    acronyme: null
+    statut: provisoire
+    references: [matheson-2011-taxing-financial-transactions]
+    source_definition: {ref: matheson-2011-taxing-financial-transactions, locator: "p. 16"}
+    voir_aussi: [impot-transactions, capitalisation-impot]
+    fr:
+      terme: Liquidité
+      definition: >
+        Facilité avec laquelle un titre s'achète ou se vend rapidement, en
+        quantité, sans que l'opération déplace sensiblement son prix. Selon
+        Matheson (2011), un droit sur les transferts de titres renchérit chaque
+        échange et réduit la liquidité du marché.
+      synonymes: [Liquidité de marché]
+    ar:
+      terme: السيولة
+      definition: >
+        سهولة شراء سند أو بيعه بسرعة وبكميات كبيرة دون أن تؤثّر العملية تأثيرا
+        ملموسا في سعره. وحسب ماثيسون (Matheson، 2011)، يرفع المعلوم على نقل
+        السندات كلفة كلّ مبادلة ويقلّص سيولة السوق.
+      synonymes: []
+
+  # Notion analytique. Source à établir (note économique, § 7) : source_definition vide.
+  - id: cout-conformite
+    acronyme: null
+    statut: provisoire
+    references: []
+    voir_aussi: []
+    fr:
+      terme: Coût de conformité
+      definition: >
+        Coût que supporte le contribuable pour s'acquitter de ses obligations
+        fiscales, en plus de l'impôt lui-même : temps passé, recours à un
+        conseil, démarches, tenue de documents. Il se distingue du coût de
+        perception, que supporte l'administration fiscale. Les deux réunis
+        forment le coût de fonctionnement d'un impôt.
+      synonymes: [Coût de mise en conformité fiscale]
+    ar:
+      terme: كلفة الامتثال الجبائي
+      definition: >
+        الكلفة التي يتحمّلها المطالب بالأداء للوفاء بواجباته الجبائية، علاوة على
+        الأداء نفسه: الوقت المخصّص، واللجوء إلى مستشار، والإجراءات، ومسك الوثائق.
+        وهي تختلف عن كلفة الاستخلاص التي تتحمّلها الإدارة الجبائية. ويمثّل
+        مجموعهما كلفة تشغيل الأداء.
+      synonymes: []
+
   # Määttänen et Terviö : pages de la version de travail récupérée (note CSL).
   - id: cout-marginal-fonds-publics
     acronyme: null
@@ -13351,4 +15164,959 @@ entries:
         الارتفاع العامّ للأسعار طيلة مدّة الحيازة. وحسب مراجعة ميرليس (Mirrlees
         Review، 2011)، تكون النسبة الفعلية لأداء يُوظَّف على القيمة الزائدة الاسمية،
         دون تعديل بحسب التضخّم، شديدة التأثّر بالتضخّم.
+      synonymes: []
+
+  # --- Marché du travail : la rupture du contrat de travail ---
+  # Passe 1 (termes) puis passe 2 du 20/10/2026 (définitions). Termes arabes lus dans
+  # l'édition arabe du JORT : loi n° 94-29 (JORT AR n° 15 de 1994, p. 309-310 et 315,
+  # lu à l'image), loi n° 96-62 (JORT AR n° 59 de 1996, p. 1633-1634, lu à l'image),
+  # loi n° 2025-9 (JORT AR n° 61 de 2025, p. 1675-1677, couche texte). Le lieu exact de
+  # chaque terme est donné en commentaire sur la ligne `statut`. Le décret n° 2002-887 et
+  # la loi n° 2007-19 ne définissent ni le préavis ni le licenciement abusif : ils ne
+  # servent pas de source ici. Les pages citées en commentaire sont celles de
+  # l'édition arabe ; les `locator` ne donnent que les articles.
+
+  - id: contrat-duree-indeterminee
+    acronyme: CDI
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 6-2, 6-3 et 94-2, JORT AR n° 61 de 2025, p. 1675 (couche texte) ; loi n° 94-29 (AR), art. 14, JORT AR n° 15 de 1994, p. 309 (image)
+    references: [loi2025-9, loi94-29]
+    source_definition: {ref: loi2025-9, locator: "art. 1er (art. 6-2 nouveau du code du travail)"}
+    source_traduction: {ref: loi2025-9, locator: "art. 1er (art. 6-2 et 94-2)"}
+    voir_aussi: [contrat-duree-determinee, periode-essai, preavis]
+    fr:
+      terme: Contrat à durée indéterminée
+      definition: >
+        Contrat de travail conclu sans terme convenu. Il prend fin à l'expiration du
+        délai de préavis notifié par l'une des parties, ou dans les autres cas de
+        l'article 14 du code du travail : accord des parties, faute grave de l'autre
+        partie, force majeure ou décès du travailleur, résolution prononcée par le juge
+        (rédaction en vigueur depuis le 1er mars 1994). Depuis le 24 mai 2025, tout
+        contrat de travail est réputé conclu pour une durée indéterminée (art. 6-2).
+      synonymes: []
+    ar:
+      terme: عقد شغل لمدة غير معينة
+      definition: >
+        عقد شغل لا يُحدَّد له أجل. ينتهي بانتهاء أجل الإعلام بإنهاء العمل الذي يوجّهه أحد
+        الطرفين، أو في الحالات الأخرى التي يضبطها الفصل 14 من مجلة الشغل: اتفاق الطرفين،
+        أو ارتكاب الطرف الآخر خطأ فادحا، أو القوة القاهرة أو وفاة العامل، أو الفسخ المصرّح
+        به من طرف القاضي (الصيغة النافذة منذ 1 مارس 1994). ومنذ 28 ماي 2025، يُعتبر كل
+        عقد شغل مبرما لمدة غير معينة (الفصل 6-2).
+      synonymes: [عقد غير معين المدة]
+
+  - id: contrat-duree-determinee
+    acronyme: CDD
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 6-4 et 17, JORT AR n° 61 de 2025, p. 1675 (couche texte) ; loi n° 96-62 (AR), art. 6-2 et 6-4, JORT AR n° 59 de 1996, p. 1633 (image)
+    references: [loi2025-9, loi94-29, loi96-62]
+    source_definition: {ref: loi2025-9, locator: "art. 1er (art. 6-4 nouveau du code du travail)"}
+    source_traduction: {ref: loi2025-9, locator: "art. 1er (art. 6-4)"}
+    voir_aussi: [contrat-duree-indeterminee, periode-essai, titularisation]
+    fr:
+      terme: Contrat à durée déterminée
+      definition: >
+        Contrat de travail conclu pour une durée convenue ou pour l'accomplissement
+        d'un travail déterminé ; il prend fin à l'expiration de cette durée ou à
+        l'achèvement de ce travail (art. 14 du code du travail, rédaction du
+        1er mars 1994). Depuis le 24 mai 2025, il n'est permis que pour un surcroît
+        extraordinaire de services ou de travaux, le remplacement provisoire d'un
+        salarié permanent absent ou dont le contrat est suspendu, des travaux
+        saisonniers ou des activités qui, selon l'usage ou par leur nature, excluent
+        le contrat à durée indéterminée. Il est écrit, mentionne sa durée et son cas
+        d'exception, et ne comporte pas de période d'essai ; à défaut d'écrit ou de
+        ces mentions, il est réputé conclu pour une durée indéterminée. Le salarié a
+        les mêmes droits que les salariés permanents de même activité (art. 6-4).
+      synonymes: []
+    ar:
+      terme: عقد شغل لمدة معينة
+      definition: >
+        عقد شغل يُبرم لمدة متفق عليها أو لإنجاز عمل معيّن، وينتهي بانقضاء تلك المدة أو
+        بإنجاز العمل موضوع العقد (الفصل 14 من مجلة الشغل، صيغة 1 مارس 1994). ومنذ 28 ماي
+        2025، يُمنع إبرامه في غير الحالات الاستثنائية: زيادة غير عادية في حجم الخدمات أو
+        الأشغال، أو التعويض الوقتي لأجير قار متغيب أو توقف تنفيذ عقد شغله، أو الأعمال
+        الموسمية أو الأنشطة الأخرى التي لا يمكن حسب العرف أو بحكم طبيعتها اللجوء فيها إلى
+        عقود لمدة غير معينة. يُبرم كتابيا وينص على مدته وحالة الاستثناء، ولا يتضمن فترة
+        تجربة، وإلا اعتُبر مبرما لمدة غير معينة. ويتمتع الأجير بنفس حقوق الأجراء القارين
+        العاملين بنفس النشاط (الفصل 6-4).
+      synonymes: [عقد معين المدة]
+
+  - id: periode-essai
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 6-3, 6-4 et 7, JORT AR n° 61 de 2025, p. 1675-1676 (couche texte) ; loi n° 94-29 (AR), art. 22, JORT AR n° 15 de 1994, p. 309 (image)
+    references: [loi2025-9, loi94-29, arrete-1973-05-29-convention-cadre]
+    source_definition: {ref: loi2025-9, locator: "art. 1er (art. 6-3 nouveau du code du travail)"}
+    source_traduction: {ref: loi2025-9, locator: "art. 1er (art. 6-3)"}
+    voir_aussi: [contrat-duree-indeterminee, contrat-duree-determinee, gratification-fin-service]
+    fr:
+      terme: Période d'essai
+      definition: >
+        Période, au début d'un contrat de travail, pendant laquelle chaque partie peut
+        y mettre fin ; la gratification de fin de service n'est due qu'au salarié
+        licencié après son expiration (art. 22 du code du travail). Depuis le
+        24 mai 2025, elle dure six mois au plus, renouvelable une fois pour la même
+        durée ; la partie qui y met fin en informe l'autre, par un moyen laissant une
+        trace écrite, quinze jours avant son expiration ; elle est interdite dans un
+        contrat à durée déterminée (art. 6-3 et 6-4).
+      synonymes: []
+    ar:
+      terme: فترة التجربة
+      definition: >
+        فترة في بداية عقد الشغل يمكن خلالها لكل من الطرفين إنهاء العمل بالعقد، ولا تُستحق
+        مكافأة نهاية الخدمة إلا للعامل الذي يقع طرده بعد انقضائها (الفصل 22 من مجلة الشغل).
+        ومنذ 28 ماي 2025، لا تتجاوز مدتها ستة أشهر قابلة للتجديد مرة واحدة ولنفس المدة،
+        ويُعلم الطرف الذي ينهيها الطرف الآخر بأي وسيلة تترك أثرا كتابيا قبل خمسة عشر يوما
+        من انقضائها، ولا يجوز التنصيص عليها في عقد الشغل معين المدة (الفصلان 6-3 و6-4).
+      synonymes: [فترة تجربة]
+
+  - id: preavis
+    acronyme: null
+    # « Délai-congé » : terme du code de 1966 (art. 14 et 18, al. 4, ce dernier toujours en
+    # vigueur) et de la convention collective cadre (art. 16) ; la loi n° 94-29 écrit
+    # « délai de préavis ». « الإعلام بالطرد » est retiré : dans la loi n° 96-62 (art. 21-2)
+    # il désigne la notification du licenciement économique à l'inspection du travail.
+    statut: valide  # AR lu : loi n° 94-29 (AR), art. 14, 14 bis, 14 ter et 23, JORT AR n° 15 de 1994, p. 309-310 (image)
+    references: [loi94-29, loi66-27, arrete-1973-05-29-convention-cadre]
+    source_definition: {ref: loi94-29, locator: "art. 1er (art. 14, 14 bis et 14 ter du code du travail)"}
+    source_traduction: {ref: loi94-29, locator: "art. 1er (art. 14 et 14 bis)"}
+    voir_aussi: [contrat-duree-indeterminee, gratification-fin-service, licenciement-abusif]
+    fr:
+      terme: Préavis
+      definition: >
+        Délai entre la notification de la rupture d'un contrat à durée indéterminée et
+        la rupture elle-même ; le contrat prend fin à son expiration. Depuis le
+        1er mars 1994, il est d'un mois et notifié par lettre recommandée à l'autre
+        partie, sauf disposition plus avantageuse pour le travailleur (accord,
+        convention collective, usage) ; le travailleur peut s'absenter pendant toute la
+        seconde moitié du délai pour chercher un emploi, sans perte de salaire, et
+        l'employeur indique dans la lettre de préavis les causes du licenciement
+        (art. 14, 14 bis et 14 ter). Son inobservation ouvre droit à une indemnité,
+        distincte des dommages-intérêts pour rupture abusive (art. 23).
+      synonymes: [Délai-congé, Délai de préavis]
+    ar:
+      terme: أجل الإعلام
+      definition: >
+        الأجل الفاصل بين الإعلام بإنهاء عقد الشغل لمدة غير معينة وإنهائه، وينتهي العقد
+        بانتهائه. ومنذ 1 مارس 1994، مدته شهر ويتم الإعلام برسالة مضمونة الوصول توجّه إلى
+        الطرف الآخر، ما لم توجد مقتضيات أكثر فائدة للعامل ناتجة عن اتفاق الطرفين أو
+        الاتفاقية المشتركة أو العرف؛ ويُرخَّص للعامل بالتغيّب كامل النصف الثاني من الأجل
+        للبحث عن شغل آخر دون تخفيض في الأجر، ويبيّن المؤجر أسباب الطرد في رسالة الإعلام
+        بإنهاء العمل (الفصول 14 و14 مكرر و14 ثالثا). وتُستحق عن عدم مراعاته منحة لا
+        تختلط بغرم الضرر عن القطع التعسفي (الفصل 23).
+      synonymes: [الإعلام بإنهاء عقد الشغل, أجل الإعلام بإنهاء العمل]
+
+  - id: gratification-fin-service
+    acronyme: null
+    statut: valide  # AR lu : loi n° 94-29 (AR), art. 1er (art. 22 et 23) et art. 2, JORT AR n° 15 de 1994, p. 309-310 et 315 (image) ; loi n° 96-62 (AR), art. 21-10, JORT AR n° 59 de 1996, p. 1634 (image)
+    references: [loi94-29, loi66-27]
+    source_definition: {ref: loi94-29, locator: "art. 1er (art. 22 du code du travail) et art. 2"}
+    source_traduction: {ref: loi94-29, locator: "art. 2"}
+    voir_aussi: [preavis, licenciement-abusif, faute-grave, periode-essai, indemnite-perte-emploi]
+    fr:
+      terme: Gratification de fin de service
+      definition: >
+        Somme due par l'employeur au travailleur lié par un contrat à durée
+        indéterminée et licencié après la période d'essai, sauf faute grave. Depuis le
+        1er mai 1966, elle est d'un jour de salaire par mois de service effectif dans
+        l'entreprise, plafonnée à trois mois de salaire sauf disposition plus favorable ;
+        depuis le 1er mars 1994, elle se calcule sur le salaire perçu au moment du
+        licenciement, avantages compris hors remboursements de frais (art. 22). Elle
+        s'ajoute à l'indemnité de préavis et aux dommages-intérêts pour rupture abusive
+        (art. 23). Elle s'appelait « indemnité de licenciement » jusqu'à la loi
+        n° 94-29, qui l'a renommée (art. 2).
+      synonymes: [Indemnité de licenciement]
+    ar:
+      terme: مكافأة نهاية الخدمة
+      definition: >
+        مبلغ يدفعه المؤجر للعامل المرتبط بعقد لمدة غير معينة الذي يقع طرده بعد انقضاء فترة
+        التجربة، ما عدا صورة الخطأ الفادح. ومنذ 1 ماي 1966، تقدَّر بأجر يوم عن كل شهر عمل
+        فعلي في نفس المؤسسة، ولا تفوق أجر ثلاثة أشهر إلا في صورة وجود شروط أحسن؛ ومنذ
+        1 مارس 1994، تُحتسب على أساس الأجر الذي يتقاضاه العامل عند الطرد مع مراعاة جميع
+        الامتيازات التي ليست لها صبغة إرجاع مصاريف (الفصل 22). ولا تختلط بغرم الضرر عن
+        القطع التعسفي (الفصل 23). وكانت تسمّى «منحة الطرد» إلى أن عوّض القانون عدد 29
+        لسنة 1994 هذه التسمية (الفصل الثاني).
+      synonymes: [منحة الطرد]
+
+  - id: licenciement-abusif
+    acronyme: null
+    statut: valide  # AR lu : loi n° 94-29 (AR), art. 14 ter, 23 et 23 bis, JORT AR n° 15 de 1994, p. 309-310 (image) ; loi n° 96-62 (AR), art. 21-12, JORT AR n° 59 de 1996, p. 1634 (image)
+    references: [loi94-29, loi96-62, loi66-27]
+    source_definition: {ref: loi94-29, locator: "art. 1er (art. 14 ter, 23 et 23 bis du code du travail)"}
+    source_traduction: {ref: loi94-29, locator: "art. 1er (art. 23 bis)"}
+    voir_aussi: [cause-reelle-serieuse, faute-grave, preavis, gratification-fin-service]
+    fr:
+      terme: Licenciement abusif
+      definition: >
+        Licenciement intervenu sans cause réelle et sérieuse ou sans respect des
+        procédures légales, réglementaires ou conventionnelles (art. 14 ter, depuis le
+        1er mars 1994), ou licenciement pour raisons économiques sans l'avis préalable
+        de la commission de contrôle du licenciement, sauf force majeure ou accord des
+        parties (art. 21-12, depuis le 31 juillet 1996). Il ouvre droit à des
+        dommages-intérêts, distincts de l'indemnité de préavis et de la gratification
+        de fin de service (art. 23) : depuis le 1er mars 1994, d'un à deux mois de
+        salaire par année d'ancienneté, dans la limite de trois années de salaire, ou
+        d'un à quatre mois de salaire quand la cause est réelle et sérieuse mais la
+        procédure non respectée (art. 23 bis). La rupture abusive par l'une ou l'autre
+        partie relève de l'article 23.
+      synonymes: []
+    ar:
+      terme: الطرد التعسفي
+      definition: >
+        الطرد الواقع دون وجود سبب حقيقي وجدي يبرره أو دون احترام الإجراءات القانونية أو
+        الترتيبية أو التعاقدية (الفصل 14 ثالثا، منذ 1 مارس 1994)، أو الطرد لأسباب
+        اقتصادية أو فنية دون الحصول مسبقا على رأي اللجنة الجهوية أو المركزية لمراقبة
+        الطرد، إلا في صورة القوة القاهرة أو اتفاق الطرفين (الفصل 21-12، منذ 31 جويلية
+        1996). ويقع جبر الضرر بغرامة لا تختلط بمنحة أجل الإعلام ولا بمكافأة نهاية الخدمة
+        (الفصل 23): منذ 1 مارس 1994، تتراوح بين أجر شهر وأجر شهرين عن كل سنة أقدمية دون
+        أن تتجاوز أجر ثلاث سنوات، أو بين أجر شهر وأجر أربعة أشهر إذا كان للطرد سبب حقيقي
+        وجدي دون احترام الإجراءات (الفصل 23 مكرر). أما القطع التعسفي لعقد الشغل من أحد
+        الطرفين فيخضع للفصل 23.
+      synonymes: []
+
+  - id: cause-reelle-serieuse
+    acronyme: null
+    statut: valide  # AR lu : loi n° 94-29 (AR), art. 14 ter, 14 quater et 14 quinter, JORT AR n° 15 de 1994, p. 309 (image)
+    references: [loi94-29]
+    source_definition: {ref: loi94-29, locator: "art. 1er (art. 14 ter, 14 quater et 14 quinter du code du travail)"}
+    source_traduction: {ref: loi94-29, locator: "art. 1er (art. 14 ter)"}
+    voir_aussi: [licenciement-abusif, faute-grave]
+    fr:
+      terme: Cause réelle et sérieuse
+      definition: >
+        Motif qui justifie un licenciement ; depuis le 1er mars 1994, le licenciement
+        qui en est dépourvu est abusif (art. 14 ter du code du travail). La faute grave
+        en est une (art. 14 quater). Le juge apprécie le caractère réel et sérieux des
+        causes au vu des preuves apportées par les parties (art. 14 quinter).
+      synonymes: []
+    ar:
+      terme: سبب حقيقي وجدي
+      definition: >
+        السبب الذي يبرر الطرد؛ ومنذ 1 مارس 1994، يُعتبر تعسفيا الطرد الواقع دون وجوده
+        (الفصل 14 ثالثا من مجلة الشغل). ويُعتبر الخطأ الفادح من الأسباب الحقيقية والجدية
+        التي تبرر الطرد (الفصل 14 رابعا). ويرجع للقاضي تقدير مدى وجود الصبغة الحقيقية
+        والجدية لأسباب الطرد بناء على عناصر الإثبات المقدمة إليه من طرفي النزاع (الفصل 14
+        خامسا).
+      synonymes: [الأسباب الحقيقية والجدية]
+
+  - id: faute-grave
+    acronyme: null
+    statut: valide  # AR lu : loi n° 94-29 (AR), art. 14, 14 quater et 22, JORT AR n° 15 de 1994, p. 309 (image)
+    references: [loi94-29]
+    source_definition: {ref: loi94-29, locator: "art. 1er (art. 14, 14 quater et 22 du code du travail)"}
+    source_traduction: {ref: loi94-29, locator: "art. 1er (art. 14 quater)"}
+    voir_aussi: [cause-reelle-serieuse, licenciement-abusif, gratification-fin-service]
+    fr:
+      terme: Faute grave
+      definition: >
+        Faute qui permet à l'autre partie de rompre un contrat de travail, à durée
+        déterminée ou indéterminée (art. 14 du code du travail, depuis le
+        1er mars 1994). Commise par le travailleur, elle est une cause réelle et
+        sérieuse de licenciement (art. 14 quater) et le prive de la gratification de
+        fin de service (art. 22). La loi énumère onze cas, appréciés selon les
+        circonstances, parmi lesquels l'acte volontaire qui entrave le fonctionnement de
+        l'entreprise, le refus injustifié d'exécuter les ordres, le vol, l'état
+        d'ébriété au travail, l'abandon de poste, la violence et la divulgation d'un
+        secret professionnel (art. 14 quater).
+      synonymes: []
+    ar:
+      terme: خطأ فادح
+      definition: >
+        خطأ يجيز للطرف الآخر إنهاء عقد الشغل، سواء كان مبرما لمدة معينة أو لمدة غير
+        معينة (الفصل 14 من مجلة الشغل، منذ 1 مارس 1994). وإذا ارتكبه العامل، يُعتبر من
+        الأسباب الحقيقية والجدية التي تبرر الطرد (الفصل 14 رابعا) ويحرمه من مكافأة نهاية
+        الخدمة (الفصل 22). ويعدّد القانون إحدى عشرة حالة تُقدَّر حسب ظروف ارتكابها، منها
+        العمل أو التقصير المتعمد الذي من شأنه أن يعرقل سير النشاط العادي للمؤسسة، والامتناع
+        غير المبرر عن تنفيذ الأوامر المتعلقة بالعمل، والسرقة، والحضور للعمل في حالة سكر
+        واضح، والغياب عن العمل أو ترك مركزه دون ترخيص، وأعمال العنف، وإفشاء سر مهني
+        (الفصل 14 رابعا).
+      synonymes: [الخطأ الفادح]
+
+  - id: licenciement-economique
+    acronyme: null
+    statut: valide  # AR lu : loi n° 96-62 (AR), art. 21 à 21-3, JORT AR n° 59 de 1996, p. 1633 (image)
+    references: [loi96-62, loi66-27, decret-loi2020-2]
+    source_definition: {ref: loi96-62, locator: "art. 1er (art. 21 à 21-3 du code du travail)"}
+    source_traduction: {ref: loi96-62, locator: "art. 1er (art. 21)"}
+    voir_aussi: [commission-controle-licenciement, priorite-reembauchage, indemnite-perte-emploi]
+    fr:
+      terme: Licenciement ou mise en chômage pour raisons économiques ou technologiques
+      definition: >
+        Licenciement ou mise en chômage de tout ou partie du personnel permanent pour
+        des raisons économiques ou technologiques. Depuis le 31 juillet 1996,
+        l'employeur le notifie au préalable à l'inspection du travail, qui enquête et
+        tente la conciliation dans les quinze jours ; à défaut de conciliation, le
+        dossier est soumis à la commission régionale ou centrale de contrôle du
+        licenciement (art. 21 à 21-3). Les travailleurs licenciés ont une priorité de
+        réembauchage pendant un an (art. 21-13).
+      synonymes: [Licenciement économique, Licenciement pour raisons économiques ou technologiques]
+    ar:
+      terme: الطرد أو الإيقاف عن العمل لأسباب اقتصادية أو فنية
+      definition: >
+        طرد بعض العملة القارين أو كاملهم أو إيقافهم عن العمل لأسباب اقتصادية أو فنية.
+        ومنذ 31 جويلية 1996، يُعلم المؤجر بذلك مسبقا تفقدية الشغل، التي تجري بحثا وتقوم
+        بمحاولة صلحية في أجل أقصاه خمسة عشر يوما؛ وإذا تعذر الصلح، يُعرض الملف على اللجنة
+        الجهوية أو اللجنة المركزية لمراقبة الطرد (الفصول 21 إلى 21-3). وللعملة المطرودين
+        حق الأولوية في التشغيل طيلة عام (الفصل 21-13).
+      synonymes: [الطرد لأسباب اقتصادية أو فنية]
+
+  - id: commission-controle-licenciement
+    acronyme: null
+    statut: valide  # AR lu : loi n° 96-62 (AR), art. 21-3 à 21-12, JORT AR n° 59 de 1996, p. 1633-1634 (image) ; décret-loi n° 2020-2 (AR, iort)
+    references: [loi96-62, decret-loi2020-2, loi66-27]
+    source_definition: {ref: loi96-62, locator: "art. 1er (art. 21-3 à 21-12 du code du travail)"}
+    source_traduction: {ref: loi96-62, locator: "art. 1er (art. 21-3 à 21-5)"}
+    voir_aussi: [licenciement-economique, indemnite-perte-emploi, crva]
+    fr:
+      terme: Commission de contrôle du licenciement
+      definition: >
+        Commission tripartite, régionale (présidée par le chef de l'inspection du
+        travail territorialement compétente) ou centrale (présidée par le directeur
+        général de l'inspection du travail, quand les travailleurs concernés relèvent
+        de filiales situées dans deux gouvernorats ou plus), qui comprend un représentant de l'organisation
+        syndicale la plus représentative et un représentant de l'organisation
+        d'employeurs. Depuis le 31 juillet 1996, elle donne son avis, dans les quinze
+        jours de sa saisine, sur les demandes de licenciement ou de mise en chômage pour
+        raisons économiques ou technologiques que l'inspection n'a pu concilier ; elle
+        peut proposer notamment le rejet motivé, la reconversion, la réduction des
+        heures de travail, la retraite anticipée ou l'acceptation motivée, et donne son
+        avis sur la gratification de fin de service (art. 21-3 à 21-10). Le
+        licenciement intervenu sans son avis préalable est abusif, sauf force majeure
+        ou accord des parties (art. 21-12).
+      synonymes: [Commission régionale de contrôle du licenciement, Commission centrale de contrôle du licenciement]
+    ar:
+      terme: لجنة مراقبة الطرد
+      definition: >
+        لجنة ثلاثية، جهوية (يترأسها رئيس تفقدية الشغل المختصة ترابيا) أو مركزية (يترأسها
+        المدير العام لتفقدية الشغل، إذا كان العملة المعنيون ينتمون إلى فروع مؤسسة متواجدة
+        بولايتين أو أكثر)، تضم ممثلا عن المنظمة النقابية للعمال الأكثر تمثيلا وممثلا عن
+        المنظمة المهنية للمؤجرين. ومنذ 31 جويلية 1996، تبدي رأيها في أجل لا يتجاوز خمسة
+        عشر يوما من تاريخ تعهدها في ملفات الطرد أو الإيقاف عن العمل لأسباب اقتصادية أو
+        فنية التي تعذر فيها الصلح لدى تفقدية الشغل، وتقترح بالخصوص رفض المطلب مع
+        التعليل، أو إعادة تكوين العمال أو رسكلتهم، أو التخفيض في عدد الفرق أو ساعات العمل،
+        أو الإحالة على التقاعد المبكر، أو قبول المطلب مع التعليل، وتبدي رأيها في مكافأة
+        نهاية الخدمة (الفصول 21-3 إلى 21-10). ويُعتبر تعسفيا الطرد الذي يتم دون الحصول
+        مسبقا على رأيها، إلا في صورة القوة القاهرة أو اتفاق الطرفين (الفصل 21-12).
+      synonymes: [اللجنة الجهوية لمراقبة الطرد, اللجنة المركزية لمراقبة الطرد]
+
+  - id: priorite-reembauchage
+    acronyme: null
+    # Ne pas confondre avec la « priorité au recrutement » (أولوية الانتداب) des salariés en contrat à durée
+    # déterminée dans les postes permanents (loi n° 2025-9, art. 6-4).
+    statut: valide  # AR lu : loi n° 96-62 (AR), art. 21-13, JORT AR n° 59 de 1996, p. 1634 (image)
+    references: [loi96-62, loi66-27]
+    source_definition: {ref: loi96-62, locator: "art. 1er (art. 21-13 du code du travail)"}
+    source_traduction: {ref: loi96-62, locator: "art. 1er (art. 21-13)"}
+    voir_aussi: [licenciement-economique]
+    fr:
+      terme: Priorité de réembauchage
+      definition: >
+        Droit du travailleur dont l'emploi a été supprimé pour des raisons économiques
+        d'être réembauché en priorité, aux mêmes conditions de rémunération, si
+        l'entreprise recrute dans sa catégorie professionnelle. Le droit dure un an à
+        compter du licenciement ; les travailleurs sont réembauchés selon leur
+        ancienneté, majorée d'un an par enfant de moins de seize ans, et l'employeur en
+        informe par écrit l'inspection du travail (art. 21-13, depuis le
+        31 juillet 1996 ; art. 9 du code de 1966 auparavant).
+      synonymes: [Droit de priorité à l'emploi]
+    ar:
+      terme: حق الأولوية في التشغيل
+      definition: >
+        حق العامل الذي فُسخ عقد شغله نتيجة حذف مركز عمله لظروف اقتصادية في الأولوية في
+        التشغيل حسب شروط التأجير التي كان ينتفع بها عند طرده، إذا قامت المؤسسة بانتداب
+        عملة من نفس الصنف المهني. ويجري العمل بهذا الحق طيلة عام بداية من تاريخ الطرد،
+        وتقع إعادة انتداب العملة المطرودين حسب أقدميتهم بالمؤسسة مرفّعا فيها بسنة عن كل
+        ولد دون السادسة عشرة، ويُعلم المؤجر كتابيا تفقدية الشغل (الفصل 21-13، منذ 31
+        جويلية 1996؛ والفصل 9 من مجلة 1966 قبل ذلك).
+      synonymes: [إعادة انتداب العملة المطرودين]
+
+  - id: sous-traitance-main-oeuvre
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 2 (art. 28 nouveau) et art. 8, JORT AR n° 61 de 2025, p. 1675-1676 (couche texte)
+    references: [loi2025-9, decret2025-327]
+    source_definition: {ref: loi2025-9, locator: "art. 2 (art. 28 nouveau du code du travail)"}
+    source_traduction: {ref: loi2025-9, locator: "art. 2 (art. 28 nouveau)"}
+    voir_aussi: [entreprise-prestation-services, titularisation]
+    fr:
+      terme: Sous-traitance de main-d'œuvre
+      definition: >
+        Tout contrat ou accord entre une entreprise de location de main-d'œuvre et une
+        entreprise bénéficiaire, par lequel la main-d'œuvre est louée et mise à la
+        disposition de l'entreprise bénéficiaire par l'entreprise de location ; les
+        activités de gardiennage et de nettoyage en relèvent. Elle est interdite depuis
+        le 24 mai 2025 (art. 28 du code du travail).
+      synonymes: []
+    ar:
+      terme: مناولة اليد العاملة
+      definition: >
+        كل العقود أو الاتفاقات المبرمة بين مؤسسة مؤجرة لليد العاملة ومؤسسة مستفيدة يتم
+        بمقتضاها إجارة اليد العاملة ووضعها من المؤسسة المؤجرة على ذمة المؤسسة المستفيدة،
+        ويُعتبر مناولة يد عاملة نشاط الحراسة والتنظيف. وهي ممنوعة منذ 28 ماي 2025 (الفصل
+        28 من مجلة الشغل).
+      synonymes: []
+
+  - id: entreprise-prestation-services
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 2 (intitulé du titre II, art. 30 et 30 bis), JORT AR n° 61 de 2025, p. 1675-1676 (couche texte)
+    references: [loi2025-9, arrete-2025-09-23-garantie-prestataires]
+    source_definition: {ref: loi2025-9, locator: "art. 2 (art. 30 nouveau du code du travail)"}
+    source_traduction: {ref: loi2025-9, locator: "art. 2 (art. 30 nouveau)"}
+    voir_aussi: [sous-traitance-main-oeuvre]
+    fr:
+      terme: Entreprise de prestation de services ou de fourniture de travaux
+      definition: >
+        Entreprise, dite « prestataire », qui fournit par contrat écrit à une
+        entreprise bénéficiaire des services ou des travaux nécessitant des
+        connaissances professionnelles ou une spécialisation technique, à condition
+        qu'ils ne relèvent pas de l'activité principale et permanente de l'entreprise
+        bénéficiaire et que ses salariés ne soient pas placés sous la direction et le
+        contrôle de celle-ci (art. 30 du code du travail, depuis le 24 mai 2025). Elle
+        fournit une garantie financière pour les salaires et les cotisations de
+        sécurité sociale de ses salariés (art. 30 quater).
+      synonymes: [Entreprise prestataire]
+    ar:
+      terme: مؤسسة لإسداء خدمات أو للقيام بأشغال
+      definition: >
+        مؤسسة، تسمى «المؤسسة المسدية»، تقدّم بمقتضى عقد كتابي لفائدة مؤسسة مستفيدة خدمات
+        أو أشغالا تتطلب معارف مهنية أو تخصصا فنيا، على أن لا تتعلق هذه الخدمات أو الأشغال
+        بالنشاط الأساسي والدائم للمؤسسة المستفيدة، وأن لا يكون العمال المستخدمون تحت
+        إدارتها ومراقبتها (الفصل 30 من مجلة الشغل، منذ 28 ماي 2025). وتقدّم ضمانا ماليا
+        لخلاص أجور أجرائها ومساهماتهم في الضمان الاجتماعي (الفصل 30 رابعا).
+      synonymes: [المؤسسة المسدية]
+
+  - id: titularisation
+    acronyme: null
+    statut: valide  # AR lu : loi n° 2025-9 (AR), art. 8 et 9, JORT AR n° 61 de 2025, p. 1676 (couche texte) ; loi n° 96-62 (AR), art. 6-3, JORT AR n° 59 de 1996, p. 1633 (image)
+    references: [loi2025-9, loi96-62]
+    source_definition: {ref: loi2025-9, locator: "art. 8 et 9"}
+    source_traduction: {ref: loi2025-9, locator: "art. 8 et 9"}
+    voir_aussi: [contrat-duree-determinee, sous-traitance-main-oeuvre]
+    fr:
+      terme: Titularisation
+      definition: >
+        Intégration d'un salarié dans le personnel permanent de l'employeur. À l'entrée
+        en vigueur de la loi n° 2025-9, le 24 mai 2025, les salariés de la
+        sous-traitance de main-d'œuvre interdite et les agents employés de façon
+        permanente par les offices, établissements et entreprises publics à caractère
+        industriel, commercial et agricole sont réputés titularisés auprès de
+        l'entreprise bénéficiaire, avec reprise de leur ancienneté (art. 8) ; le
+        salarié dont le contrat à durée déterminée a été rompu entre le 6 mars 2024 et
+        cette date est titularisé de plein droit si la relation de travail a duré
+        quatre ans ou plus (art. 9).
+      synonymes: []
+    ar:
+      terme: ترسيم
+      definition: >
+        إدماج الأجير ضمن الأعوان القارين لدى المؤجر. وبدخول القانون عدد 9 لسنة 2025 حيز
+        النفاذ في 28 ماي 2025، يُعتبر الأجراء المستخدمون في إطار مناولة اليد العاملة
+        الممنوعة والأعوان المستخدمون بصفة دائمة من قبل الدواوين والمؤسسات والمنشآت
+        العمومية ذات الصبغة الصناعية والتجارية والفلاحية مرسمين بالمؤسسة المستفيدة، مع
+        احتساب أقدميتهم (الفصل 8)؛ ويُعدّ إنهاء عقد الشغل معين المدة بين 6 مارس 2024 وذلك
+        التاريخ موجبا لترسيم الأجير بقوة القانون إذا بلغت مدة العلاقة الشغلية أربع سنوات
+        أو أكثر (الفصل 9).
+      synonymes: []
+
+  - id: zone-franche-economique
+    acronyme: null
+    # Dénomination légale changée le 26 juillet 2001 : la loi n° 2001-76 (JORT n° 58 de
+    # 2001, p. 1752, art. 1er, lu en couche texte décodée ; exécutoire à cette date)
+    # remplace « zones franches économiques » par « parcs d'activités économiques » dans
+    # la loi n° 92-81. Reste `provisoire` tant que l'arabe de « parc d'activités
+    # économiques » n'est pas lu. Terme arabe attesté au
+    # pluriel seulement (loi n° 2025-9, art. 5) ; l'équivalent arabe de « parc
+    # d'activités économiques » n'est pas lu (édition arabe de 2001 à couche encodée).
+    # Définition tirée de l'art. 2 de la loi n° 92-81 (OCR français, p. 1005) ; l'art. 3
+    # a été récrit par le rectificatif (JORT n° 76 de 1992) et n'est pas repris.
+    statut: provisoire  # AR lu : loi n° 2025-9 (AR), art. 5, JORT AR n° 61 de 2025, p. 1676 (couche texte), « المناطق الاقتصادية الحرة » ; singulier dérivé
+    references: [loi92-81, loi2001-76, loi2025-9]
+    source_definition: {ref: loi92-81, locator: "art. 1er, 2 et 23"}
+    source_traduction: {ref: loi2025-9, locator: "art. 5"}
+    voir_aussi: [contrat-duree-determinee]
+    fr:
+      terme: Zone franche économique
+      definition: >
+        Zone du territoire tunisien créée par décret, délimitée et aménagée pour les
+        activités autorisées, soustraite au régime douanier, où les investissements
+        relèvent du régime d'encouragement de la loi n° 92-81 (art. 1er et 2). Depuis le
+        26 juillet 2001, la loi n° 92-81 les nomme « parcs d'activités économiques »
+        (loi n° 2001-76, art. 1er) : « zone franche économique » n'est plus leur
+        dénomination légale. Du
+        9 août 1992 au 24 mai 2025, les contrats de travail qui y étaient conclus
+        étaient réputés à durée déterminée (art. 23, abrogé par la loi n° 2025-9,
+        art. 5).
+      synonymes: [Zone économique franche, Parc d'activités économiques]
+    ar:
+      terme: منطقة اقتصادية حرة
+      definition: >
+        منطقة من التراب التونسي تُحدث بأمر، محددة ومهيأة لممارسة الأنشطة المرخص فيها،
+        ومستثناة من النظام الديواني، وتخضع الاستثمارات المنجزة فيها لنظام التشجيع الذي
+        يضبطه القانون عدد 81 لسنة 1992 (الفصلان 1 و2). ومنذ 26 جويلية 2001، غيّر القانون
+        عدد 76 لسنة 2001 (الفصل الأول) تسميتها في هذا القانون، فلم تعد «المنطقة الاقتصادية
+        الحرة» تسميتها القانونية. ومن 9 أوت 1992 إلى 28 ماي 2025، كانت عقود الشغل المبرمة
+        فيها تُعتبر عقودا لمدة معينة (الفصل 23، الذي ألغاه الفصل 5 من القانون عدد 9 لسنة
+        2025).
+      synonymes: [المناطق الاقتصادية الحرة]
+
+  # ------------------------------------------------- fiscalité de l'épargne et du capital
+  # Passe 1 du terminologue (20/10/2026) pour docs/notes/fiscalite-epargne-capital.md, § 9.
+  # Définitions à rédiger en passe 2, quand le chapitre de l'IRPP ancrera ces notions.
+  # Termes arabes relevés sur le JORT arabe : « couche texte » = texte du PDF normalisé
+  # (NFKC) ; « OCR » = océrisation (tesseract, ara) des pages du code de 1990
+  # (JORT AR n° 1 de 1990, Ja00190.pdf), dont l'édition arabe n'a pas de couche texte.
+
+  # AR : « ويكون الخصم من المورد تحرريا من الضريبة على الدخل », code de 1990, art. 52-II
+  # (OCR) ; « لخصم من المورد تحرري », intitulé de l'art. 12 du décret-loi n° 2020-30
+  # (couche texte).
+  - id: retenue-liberatoire
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, decret-loi-2020-30]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 52-II et 54"}
+    source_traduction: {ref: code-irpp-is-1990, locator: "art. 52-II"}
+    voir_aussi: [retenue-a-la-source, retenue-definitive-non-restituable, revenus-capitaux-mobiliers]
+    fr:
+      terme: Retenue à la source libératoire
+      definition: >
+        Retenue à la source qui éteint l'impôt sur le revenu dû sur la somme
+        à laquelle elle s'applique : ce revenu n'entre pas dans le revenu
+        global déclaré, et la retenue n'est pas imputée sur l'impôt dû. Le
+        code de 1990 la prévoit pour les revenus des bons de caisse au porteur
+        dont le bénéficiaire n'est pas révélé à l'administration et pour les
+        revenus servis aux personnes non résidentes ou non établies en Tunisie
+        (art. 52-II) ; les autres retenues sont imputables (art. 54).
+      synonymes: [Retenue libératoire]
+    ar:
+      terme: الخصم من المورد التحرري
+      definition: >
+        خصم من المورد يُبرئ من الضريبة على الدخل المستوجبة على المبلغ الذي
+        يُوظَّف عليه: لا يدخل هذا الدخل في الدخل الجملي المصرَّح به، ولا يُطرَح
+        الخصم من الأداء المستوجب. وتنصّ عليه مجلة سنة 1990 بالنسبة إلى مداخيل
+        وصولات الإيداع للحامل التي لم يُصرَّح للإدارة بهوية حاملها، وإلى المداخيل
+        الممنوحة للأشخاص غير المقيمين أو غير المستقرّين بالبلاد التونسية (الفصل
+        52-II)؛ أمّا سائر الخصوم فتُطرَح من الأداء (الفصل 54).
+      synonymes: []
+
+  # AR : « لخصم من المورد نهائي وغير قابل للإرجاع », décret-loi n° 2020-30, art. 12
+  # (nouveau 52-II-2 bis, couche texte) ; même tournure dans la LF 2021, art. 17
+  # (couche texte, JORT AR n° 128 de 2020).
+  - id: retenue-definitive-non-restituable
+    acronyme: null
+    statut: valide
+    references: [decret-loi-2020-30, lf-2021]
+    source_definition: {ref: decret-loi-2020-30, locator: "art. 12"}
+    source_traduction: {ref: decret-loi-2020-30, locator: "art. 12"}
+    voir_aussi: [retenue-a-la-source, retenue-liberatoire, tmm]
+    fr:
+      terme: Retenue à la source définitive et non restituable
+      definition: >
+        Retenue à la source qui n'est jamais rendue au bénéficiaire, quel que
+        soit son régime fiscal, même lorsqu'elle dépasse l'impôt qu'il doit
+        ou qu'il n'en doit pas. Le décret-loi n° 2020-30 (art. 12) qualifie
+        ainsi la retenue de 35 % sur les revenus des dépôts à terme dont le
+        taux de rémunération dépasse, au 1er janvier de l'année, le taux moyen
+        du marché monétaire diminué d'un point.
+      synonymes: []
+    ar:
+      terme: الخصم من المورد النهائي وغير القابل للإرجاع
+      definition: >
+        خصم من المورد لا يُرجَع إلى المستفيد مهما كان نظامه الجبائي، ولو تجاوز
+        الأداء المستوجب عليه أو لم يكن مُطالبًا بأداء. ويصف به المرسوم عدد 30
+        لسنة 2020 (الفصل 12) الخصم بنسبة 35 بالمائة على مداخيل الإيداعات بأجل
+        التي تفوق نسبة تأجيرها، في غرّة جانفي من السنة، معدل نسبة الفائدة في
+        السوق النقدية ناقص نقطة مائوية.
+      synonymes: []
+
+  # AR : « مداخيل رؤوس الأموال المنقولة », code de 1990, art. 34 (OCR) ; intitulé de
+  # l'art. 17 de la LF 2021, « مراجعة النظام الجبائي لمداخيل رؤوس الأموال المنقولة »
+  # (couche texte) ; décret-loi n° 2020-30, art. 12 (couche texte).
+  - id: revenus-capitaux-mobiliers
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2021]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 34"}
+    source_traduction: {ref: lf-2021, locator: "art. 17"}
+    voir_aussi: [revenus-valeurs-mobilieres, retenue-a-la-source, retenue-liberatoire]
+    fr:
+      terme: Revenus de capitaux mobiliers
+      definition: >
+        Revenus d'un prêt d'argent, rangés avec les revenus de valeurs
+        mobilières dans la sixième catégorie de l'impôt sur le revenu : intérêts
+        et autres produits des obligations, effets publics et autres titres
+        d'emprunt négociables, intérêts des créances, des dépôts de sommes
+        d'argent et des cautionnements en numéraire, produits des comptes
+        courants (code de 1990, art. 34).
+      synonymes: []
+    ar:
+      terme: مداخيل رؤوس الأموال المنقولة
+      definition: >
+        مداخيل إقراض المال، تندرج مع مداخيل الأوراق المالية في الصنف السادس من
+        الضريبة على الدخل: الفوائض وسائر محاصيل الرقاع والسندات العمومية وسندات
+        القروض القابلة للبيع والشراء، وفوائض الديون وودائع المبالغ المالية
+        والضمانات النقدية، ومحاصيل الحسابات الجارية (مجلة سنة 1990، الفصل 34).
+      synonymes: []
+
+  # AR : « مداخيل الأوراق المالية », code de 1990, intitulé de la sous-section qui précède
+  # l'art. 29 (OCR) ; la nomenclature budgétaire de la LF 2020 (tableau « أ », couche
+  # texte) écrit « مداخيل الأوراق المالية ورؤوس الأموال المنقولة ». La forme
+  # « مداخيل القيم المنقولة », pressentie par la note, n'est pas relevée sur le JORT.
+  - id: revenus-valeurs-mobilieres
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2004]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 29 à 33"}
+    source_traduction: {ref: code-irpp-is-1990, locator: "art. 29"}
+    voir_aussi: [benefices-distribues, revenus-capitaux-mobiliers, plus-value-cession-titres]
+    fr:
+      terme: Revenus de valeurs mobilières
+      definition: >
+        Revenus qu'une personne tire de sa qualité d'associé ou d'actionnaire,
+        rangés avec les revenus de capitaux mobiliers dans la sixième catégorie
+        de l'impôt sur le revenu : bénéfices distribués par les sociétés
+        passibles de l'impôt sur les sociétés et sommes assimilées à des
+        revenus distribués, comme les jetons de présence (code de 1990, art. 29
+        à 33). Depuis 2004, la plus-value de cession d'actions et de parts
+        sociales en fait aussi partie (loi de finances pour 2004, art. 61).
+      synonymes: []
+    ar:
+      terme: مداخيل الأوراق المالية
+      definition: >
+        مداخيل يجنيها الشخص بصفته شريكًا أو مساهمًا، تندرج مع مداخيل رؤوس الأموال
+        المنقولة في الصنف السادس من الضريبة على الدخل: الأرباح التي توزّعها
+        الشركات الخاضعة للضريبة على الشركات والمبالغ المعتبرة مداخيل موزّعة، مثل
+        مكافآت الحضور (مجلة سنة 1990، الفصول 29 إلى 33). ومنذ سنة 2004، تشمل أيضًا
+        القيمة الزائدة المتأتية من التفويت في الأسهم والمنابات الاجتماعية (قانون
+        المالية لسنة 2004، الفصل 61).
+      synonymes: []
+
+  # AR : « الأرباح الموزعة », intitulé commun aux art. 18 et 19 de la LF 2014 et intitulé
+  # de l'art. 46 de la LF 2018 (couche texte) ; « أرباحهم الموزعة », code de 1990, art. 29
+  # (OCR). Le corps du code écrit « المداخيل الموزعة » (art. 33 du code de 1990, OCR ;
+  # nouveau 52-I-c bis, LF 2014, art. 19, couche texte), d'où le synonyme.
+  - id: benefices-distribues
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2014, lf-2018]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 29 et 30"}
+    source_traduction: {ref: lf-2014, locator: "art. 18 et 19"}
+    voir_aussi: [revenus-valeurs-mobilieres, impot-societes]
+    fr:
+      terme: Bénéfices distribués
+      definition: >
+        Bénéfices ou produits d'une société passible de l'impôt sur les
+        sociétés qui ne sont ni mis en réserve ni incorporés au capital, et
+        sommes mises à la disposition des associés ou actionnaires sans être
+        prélevées sur les bénéfices ; le code y assimile notamment les avances
+        consenties aux associés et les rémunérations occultes (code de 1990,
+        art. 29 et 30). Pour l'associé personne physique, ce sont des revenus
+        de valeurs mobilières.
+      synonymes: [Revenus distribués]
+    ar:
+      terme: الأرباح الموزعة
+      definition: >
+        أرباح أو محاصيل شركة خاضعة للضريبة على الشركات غير مرصودة بالاحتياطي
+        وغير مدمجة برأس المال، والمبالغ الموضوعة على ذمّة الشركاء أو المساهمين
+        دون أن تُقتطَع من الأرباح؛ وتعتبر المجلة من قبيلها خاصّة المبالغ الموضوعة
+        على ذمّة الشركاء بعنوان تسبقات أو قروض، والمكافآت والامتيازات والأرباح
+        الخفيّة (مجلة سنة 1990، الفصلان 29 و30). وهي بالنسبة إلى الشريك الشخص
+        الطبيعي من مداخيل الأوراق المالية.
+      synonymes: [المداخيل الموزعة]
+
+  # AR : « القيمة الزائدة المتأتية من التفويت في السندات », intitulé de l'art. 42 de la
+  # LF 2023 (couche texte). Le corps de l'article dit « الأسهم » (actions), « المنابات
+  # الاجتماعية » (parts sociales) et « حصص الصناديق » (parts de fonds).
+  - id: plus-value-cession-titres
+    acronyme: null
+    statut: valide
+    references: [lf-2004, lf-2023, dgi-nc-3-2023]
+    source_definition: {ref: lf-2004, locator: "art. 61 à 63"}
+    source_traduction: {ref: lf-2023, locator: "art. 42"}
+    voir_aussi: [revenus-valeurs-mobilieres, plus-value-immobiliere, plus-value-nominale, effet-de-verrouillage]
+    fr:
+      terme: Plus-value de cession de titres
+      definition: >
+        Gain réalisé par une personne physique, hors de son activité
+        professionnelle, en cédant des actions ou des parts sociales : prix de
+        cession diminué de la valeur d'acquisition, après imputation des
+        moins-values de même nature de l'année. Depuis 2004, c'est un revenu
+        de valeurs mobilières, imposé à un taux proportionnel hors barème
+        (loi de finances pour 2004, art. 61 à 63).
+      synonymes: [Plus-value mobilière]
+    ar:
+      terme: القيمة الزائدة المتأتية من التفويت في السندات
+      definition: >
+        الربح الذي يحقّقه شخص طبيعي، خارج نشاطه المهني، عند التفويت في أسهم أو
+        منابات اجتماعية: ثمن التفويت مطروحًا منه قيمة الاقتناء، بعد طرح نقصان
+        القيمة من نفس الطبيعة المسجَّل خلال السنة. وتُعدّ منذ سنة 2004 من مداخيل
+        الأوراق المالية، وتخضع للضريبة بنسبة قارّة خارج الجدول (قانون المالية
+        لسنة 2004، الفصول 61 إلى 63).
+      synonymes: []
+
+  # AR : « حسابات الادخار في الأسهم », intitulé de l'art. 16 de la LF 2021 (couche
+  # texte) ; même forme dans la LF 2025 (loi n° 2024-48, JORT AR n° 149 de 2024, couche texte).
+  # Texte arabe de la loi n° 99-92 (Ja06799.pdf) sans couche texte : non relu.
+  - id: compte-epargne-actions
+    acronyme: CEA
+    statut: valide
+    references: [loi-99-92-relance-marche-financier, dgi-nc-16-2004, lf-2021]
+    source_definition: {ref: loi-99-92-relance-marche-financier, locator: "art. 4"}
+    source_traduction: {ref: lf-2021, locator: "art. 16"}
+    voir_aussi: [compte-epargne-investissement, deductions-communes, opcvm]
+    fr:
+      terme: Compte épargne en actions
+      definition: >
+        Compte créé par la loi n° 99-92 relative à la relance du marché
+        financier, dont les sommes sont placées en actions cotées en bourse et
+        en bons du Trésor assimilables et restent bloquées cinq ans. Son
+        titulaire déduit de son revenu imposable les sommes déposées, dans la
+        limite d'un plafond annuel ; en 1999, la déduction porte sur la moitié
+        des dépôts (art. 4).
+      synonymes: []
+    ar:
+      terme: حساب الادخار في الأسهم
+      definition: >
+        حساب أحدثه القانون عدد 92 لسنة 1999 المتعلّق بإنعاش السوق المالية،
+        تُوظَّف المبالغ المودعة فيه في أسهم مدرجة بالبورصة وفي رقاع خزينة
+        قابلة للتنظير وتبقى مجمَّدة خمس سنوات. ويطرح صاحبه من دخله الخاضع
+        للضريبة المبالغ المودعة في حدود سقف سنوي؛ وفي سنة 1999 يقتصر الطرح على
+        نصف المبالغ المودعة (الفصل 4).
+      synonymes: []
+
+  # AR : « حسابات الادخار للاستثمار », intitulé de l'art. 27 de la LF 2018 (couche
+  # texte), article qui modifie l'art. 39 bis du code. La forme « حساب الادخار من أجل
+  # الاستثمار », pressentie par la note, n'est pas relevée. Texte arabe de la LF 2003
+  # (Ja1022002.pdf) : police non décodable, non relu ; le terme du corps de l'art. 39 bis
+  # reste à vérifier.
+  - id: compte-epargne-investissement
+    acronyme: CEI
+    statut: valide
+    references: [lf-2003, dgi-nc-35-2003, lf-2018]
+    source_definition: {ref: dgi-nc-35-2003}
+    source_traduction: {ref: lf-2018, locator: "art. 27"}
+    voir_aussi: [compte-epargne-actions, deductions-communes]
+    fr:
+      terme: Compte épargne pour l'investissement
+      definition: >
+        Compte créé par la loi de finances pour 2003, dont les sommes sont
+        destinées à financer dans les cinq ans un projet d'investissement. Les
+        sommes déposées sont déduites du revenu imposable et les intérêts du
+        compte sont exonérés, chacun dans la limite d'un plafond annuel (code,
+        art. 39 bis et art. 38, point 15 ; note commune n° 35/2003).
+      synonymes: []
+    ar:
+      terme: حساب الادخار للاستثمار
+      definition: >
+        حساب أحدثه قانون المالية لسنة 2003، تُخصَّص المبالغ المودعة فيه لتمويل
+        مشروع استثماري في أجل خمس سنوات. وتُطرَح المبالغ المودعة من الدخل الخاضع
+        للضريبة وتُعفى فوائد الحساب، كلّ منهما في حدود سقف سنوي (المجلة، الفصل
+        39 مكرر والنقطة 15 من الفصل 38؛ المذكرة العامة عدد 35 لسنة 2003).
+      synonymes: []
+
+  # AR : « حسابات خاصة للادخار مفتوحة لدى البنوك », code de 1990, art. 39-II (OCR) ;
+  # « حسابات الادخار الخاصة », intitulés de l'art. 13 de la LF 2017 (couche texte) et
+  # du décret-loi n° 2021-21 portant LF 2022 (couche texte).
+  - id: comptes-speciaux-epargne
+    acronyme: null
+    statut: valide
+    references: [code-irpp-is-1990, lf-2017, lf-2022]
+    source_definition: {ref: code-irpp-is-1990, locator: "art. 39-II et 52-I-b"}
+    source_traduction: {ref: code-irpp-is-1990, locator: "art. 39-II"}
+    voir_aussi: [deductions-communes, revenus-capitaux-mobiliers]
+    fr:
+      terme: Comptes spéciaux d'épargne
+      definition: >
+        Comptes d'épargne ouverts auprès des banques, dont les intérêts sont
+        déduits de la base de l'impôt sur le revenu dans la limite d'un plafond
+        annuel (code de 1990, art. 39-II) ; les intérêts supportent la retenue
+        à la source de l'article 52-I-b, au taux de 10 % en 1990.
+      synonymes: []
+    ar:
+      terme: الحسابات الخاصة للادخار
+      definition: >
+        حسابات ادّخار مفتوحة لدى البنوك، تُطرَح فوائدها من أساس الضريبة على
+        الدخل في حدود سقف سنوي (مجلة سنة 1990، الفقرة II من الفصل 39)؛ وتخضع
+        الفوائد للخصم من المورد المنصوص عليه بالفصل 52-I-ب، بنسبة 10 بالمائة
+        سنة 1990.
+      synonymes: [حسابات الادخار الخاصة]
+
+  # AR : « مؤسسات التوظيف الجماعي في الأوراق المالية », « شركات الاستثمار ذات رأس المال
+  # المتغير » (SICAV), « الصناديق المشتركة للتوظيف » (FCP) : JORT AR de 2016 à 2022
+  # (n° 20 de 2016, 34 de 2017, 38 de 2018, 66 de 2022 ; couche texte), fascicules hors
+  # lois de finances, sans clé bibliographique. Code des OPC (loi n° 2001-83) : clé
+  # loi-2001-83-code-opc ; texte arabe non relu.
+  - id: opcvm
+    acronyme: OPCVM
+    statut: provisoire
+    references: [dgi-nc-45-2002, loi-2001-83-code-opc]
+    source_definition: {ref: dgi-nc-45-2002}
+    voir_aussi: [compte-epargne-actions, plus-value-cession-titres]
+    fr:
+      terme: Organisme de placement collectif en valeurs mobilières
+      definition: >
+        Organisme qui place collectivement en valeurs mobilières l'épargne de
+        ses actionnaires ou porteurs de parts : société d'investissement à
+        capital variable (SICAV) ou fonds commun de placement (FCP). Selon
+        l'administration, à compter de 2002, les revenus de capitaux mobiliers
+        des fonds communs de placement en valeurs mobilières supportent une
+        retenue de 20 %, définitive et libératoire (note commune n° 45/2002).
+      synonymes: []
+    ar:
+      terme: مؤسسة التوظيف الجماعي في الأوراق المالية
+      definition: >
+        مؤسسة توظّف بصفة جماعية في الأوراق المالية ادّخار مساهميها أو حاملي
+        حصصها: شركة استثمار ذات رأس مال متغيّر أو صندوق مشترك للتوظيف. وحسب
+        الإدارة، تخضع مداخيل رؤوس الأموال المنقولة للصناديق المشتركة للتوظيف
+        في الأوراق المالية، ابتداءً من سنة 2002، لخصم من المورد بنسبة 20 بالمائة
+        نهائي وتحرّري (المذكرة العامة عدد 45 لسنة 2002).
+      synonymes: []
+
+  # AR : « معدل نسبة الفائدة في السوق النقدية », décret-loi n° 2020-30, art. 12 (couche
+  # texte). Pas de source de définition dans les bibliographies (BCT).
+  - id: tmm
+    acronyme: TMM
+    statut: provisoire
+    references: [decret-loi-2020-30]
+    source_traduction: {ref: decret-loi-2020-30, locator: "art. 12"}
+    voir_aussi: [retenue-definitive-non-restituable]
+    fr:
+      terme: Taux moyen du marché monétaire
+      definition: >
+        Taux d'intérêt moyen du marché monétaire tunisien, publié par la
+        Banque centrale de Tunisie. Le décret-loi n° 2020-30 (art. 12) en fait
+        un seuil fiscal : les revenus des dépôts à terme dont le taux de
+        rémunération dépasse, au 1er janvier de l'année, le TMM diminué d'un
+        point supportent une retenue de 35 %, définitive et non restituable.
+      synonymes: [Taux du marché monétaire]
+    ar:
+      terme: معدل نسبة الفائدة في السوق النقدية
+      definition: >
+        معدل نسبة الفائدة في السوق النقدية التونسية، يصدره البنك المركزي
+        التونسي. ويجعل منه المرسوم عدد 30 لسنة 2020 (الفصل 12) عتبة جبائية:
+        تخضع مداخيل الإيداعات بأجل التي تفوق نسبة تأجيرها، في غرّة جانفي من
+        السنة، هذا المعدل ناقص نقطة مائوية لخصم من المورد بنسبة 35 بالمائة،
+        نهائي وغير قابل للإرجاع.
+      synonymes: []
+
+  - id: contribution-conjoncturelle-exceptionnelle
+    acronyme: null
+    statut: provisoire
+    references: [lfc-1991, lfc-2014, lf-2017, lf-2025]
+    # AR attesté par les tableaux « A » et par la LF 2017, art. 48 (édition arabe).
+    # Définition AR à rédiger sur le texte arabe des articles (non lu).
+    source_definition: {ref: lfc-2014, locator: "art. 28-31"}
+    source_traduction: {ref: lf-2017, locator: "art. 48"}
+    voir_aussi: [taxe-conjoncturelle, fonds-special-tresor]
+    fr:
+      terme: Contribution conjoncturelle exceptionnelle
+      definition: >
+        Prélèvement temporaire institué par une loi de finances « au titre de
+        l'année » qu'elle nomme, au profit du budget de l'État. Il est assis sur
+        l'impôt direct dû ou sur sa base : acomptes provisionnels, minimum
+        d'impôt, impôt pétrolier, bénéfices ou revenus servant de base à
+        l'impôt, salaires et pensions selon les années. Il n'est pas déductible
+        de l'assiette de l'impôt sur lequel il s'appuie, et suit les règles de
+        contrôle et de contentieux de cet impôt. Des contributions de ce type
+        sont instituées en 1991, en 2014 (prolongée en 2015), en 2017 et, pour
+        les seules grandes entreprises, en 2025.
+      synonymes: [Contribution conjoncturelle exceptionnelle au profit du budget de l'État, Contribution conjoncturelle]
+    ar:
+      terme: المساهمة الظرفية الاستثنائية
+      definition: ""
+      synonymes: []
+
+  - id: taxe-conjoncturelle
+    acronyme: null
+    statut: provisoire
+    references: [lf-2018, lf-2024]
+    # « معلوم ظرفي » : LF 2018, art. 52 ; LF 2024, art. 64 (assiette bancaire et
+    # assurances). Définition AR à rédiger sur le texte arabe des articles (non lu).
+    source_definition: {ref: lf-2018, locator: "art. 52"}
+    source_traduction: {ref: lf-2018, locator: "art. 52"}
+    voir_aussi: [contribution-conjoncturelle-exceptionnelle]
+    fr:
+      terme: Taxe conjoncturelle
+      definition: >
+        Prélèvement temporaire au profit du budget de l'État, dû par les
+        banques et les établissements financiers, sauf les établissements de
+        paiement, et par les sociétés d'assurance et de réassurance. Il est
+        assis sur les bénéfices servant de base à l'impôt sur les sociétés,
+        payé avec cet impôt, non déductible de son assiette, et suit son
+        contrôle et son contentieux. Institué pour les déclarations de 2018 et
+        de 2019, il est repris pour celles de 2024 et de 2025.
+      synonymes: []
+    ar:
+      terme: معلوم ظرفي
+      definition: ""
+      synonymes: []
+
+  - id: fodec
+    # Sigle laissé hors du champ « acronyme » : FODEC n'est écrit dans aucune des lois
+    # lues, seulement en doctrine (note commune 29/2007). À confirmer avant de
+    # l'établir comme sigle officiel.
+    acronyme: null
+    statut: provisoire
+    references: [lf-1995, lf-2000, lf-2011]
+    # AR : DL 2021-21, art. 63 (édition arabe) ; LF 2025, art. 29 dit « المعلوم المهني
+    # لفائدة صندوق … ». Définition AR à rédiger sur le texte arabe (non lu).
+    source_definition: {ref: lf-2011, locator: "art. 14-16"}
+    voir_aussi: [fonds-special-tresor]
+    fr:
+      terme: Taxe au profit du fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat
+      definition: >
+        Taxe professionnelle dont le produit est affecté au fonds de
+        développement de la compétitivité dans les secteurs industriel, de
+        services et de l'artisanat, compte spécial du Trésor. Elle est due sur
+        les produits fabriqués localement ou importés et sur les services d'une
+        liste fixée par décret : sur le chiffre d'affaires hors taxe sur la
+        valeur ajoutée des fabricants et des prestataires, et sur la valeur en
+        douane des importations. Les produits et services exportés en sont
+        exonérés. Créée en 1995 sur une liste de produits industriels, elle est
+        étendue aux services en 2011.
+      synonymes: [FODEC, Taxe au profit du fonds de développement de la compétitivité industrielle]
+    ar:
+      terme: المعلوم لفائدة صندوق تنمية القدرة التنافسية في قطاعات الصناعة والخدمات والصناعات التقليدية
+      definition: ""
+      synonymes: []
+
+  - id: taxe-circulation
+    acronyme: null
+    statut: provisoire
+    references: [lf-2000, lf-2016, lf-2022]
+    # Base légale : art. 19 du décret du 31 mars 1955 (clé decret-1955-03-31-budget,
+    # texte hors corpus, non lu : pas en source_definition) ; modifié par la LF 2000,
+    # art. 58, la LF 2016, art. 90, la LF 2022, art. 55. « Vignette » est l'usage ; le
+    # texte dit « taxe de circulation ». Non ancrée par la prose au 23/10/2026 : sa
+    # section attend le chapitre des droits d'enregistrement et de timbre.
+    source_definition: {ref: lfc-2014, locator: "tableau « A »"}
+    fr:
+      terme: Taxe de circulation sur les véhicules automobiles
+      definition: >
+        Taxe annuelle due sur les voitures et les motocycles, établie par
+        l'article 19 du décret du 31 mars 1955 et modifiée depuis par les lois
+        de finances. C'est une recette du budget général de l'État, classée
+        parmi les « droits sur les transports et autres produits », et non une
+        taxe perçue au profit d'un fonds spécial du Trésor.
+      synonymes: [Vignette, Taxe de circulation]
+    ar:
+      terme: معلوم الجولان
+      definition: ""
+      synonymes: []
+
+  - id: taxe-protection-environnement
+    acronyme: null
+    statut: provisoire
+    references: [lf-2003, lf-2013]
+    # AR : intitulés des LF 2016 et 2018 (« المعلوم للمحافظة على البيئة »). Définition
+    # AR à rédiger sur le texte arabe (non lu). Taux de 2003 à relire à l'image : aucun
+    # chiffre dans la définition.
+    source_definition: {ref: lf-2003, locator: "art. 58-59"}
+    voir_aussi: [fonds-special-tresor]
+    fr:
+      terme: Taxe pour la protection de l'environnement
+      definition: >
+        Taxe dont le produit est affecté au fonds de dépollution, compte
+        spécial du Trésor. Elle est due sur les produits énumérés au tableau
+        annexé à l'article 58 de la loi de finances pour 2003, sur le chiffre
+        d'affaires hors taxe sur la valeur ajoutée des fabricants et sur la
+        valeur en douane des produits importés. Le tableau est complété par des
+        lois de finances ultérieures.
+      synonymes: []
+    ar:
+      terme: المعلوم للمحافظة على البيئة
+      definition: ""
       synonymes: []

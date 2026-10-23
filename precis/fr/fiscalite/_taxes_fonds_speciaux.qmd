@@ -1,0 +1,419 @@
+# Les taxes au profit des fonds spéciaux du Trésor {#sec-taxes-fonds-speciaux .domicile-unique}
+
+Certaines taxes ne vont pas au budget général de l'État : la loi en verse le produit à un compte spécial du Trésor, qui finance les dépenses qu'elle lui assigne. Ce chapitre présente la principale, la taxe au profit du fonds de développement de la compétitivité, et les taxes de même construction perçues au profit d'autres fonds.
+
+## Vue d'ensemble {#sec-fst-vue-ensemble}
+
+Les contributions conjoncturelles, versées au budget général, ont leur chapitre (@sec-contributions-conjoncturelles). La taxe de circulation sur les véhicules automobiles est elle aussi une recette du budget général : elle figure parmi les « droits sur les transports et autres produits » du [tableau des recettes du budget de l'État](#r-fst-circulation-2014), et non parmi les fonds spéciaux.
+
+<!-- TODO (rédacteur) : lier la taxe de circulation à sa section dans le chapitre des droits d'enregistrement et de timbre quand celui-ci sera écrit (plan, § 5). -->
+
+Un [fonds spécial du Trésor](#g-fonds-special-tresor) est un compte ouvert dans les écritures du Trésor par une loi de finances, qui lui affecte des ressources et lui fixe des missions ; chaque loi de finances en arrête les prévisions de recettes et de dépenses dans un tableau annexé. La loi de finances complémentaire pour 2014 en énumère trente-deux, rangés par ministère (@tbl-fst-comptes-2014) ; tous ne sont pas alimentés par une taxe.
+
+La taxe principale est la [taxe au profit du fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat](#g-fodec), que la doctrine administrative désigne par le sigle FODEC [@dgi-nc-29-2007]. Depuis 2011, elle est due au taux de 1 % sur le chiffre d'affaires hors [taxe sur la valeur ajoutée](#g-tva) des fabricants et des prestataires de services d'une liste fixée par décret, et sur la [valeur en douane](#g-valeur-en-douane) des produits importés (@sec-fst-etat-du-droit). Créée en 1995 sur des produits industriels, elle a été étendue aux services en 2011, quand les missions du fonds se sont ouvertes aux services et à l'artisanat.
+
+Trois taxes reprennent la même construction pour un secteur ou un objet : celles du fonds de développement de la compétitivité dans le secteur de l'agriculture et de la pêche (@sec-fst-agriculture), celle du fonds du tourisme (@sec-fst-tourisme), et la [taxe pour la protection de l'environnement](#g-taxe-protection-environnement), au profit du fonds de dépollution (@sec-fst-tpe). D'autres fonds alimentés par un prélèvement sont documentés dans d'autres livres (@tbl-fst-inventaire).
+
+: Les fonds spéciaux du Trésor alimentés par une taxe ou une contribution, et où les lire {#tbl-fst-inventaire}
+
+| Fonds | Ce qui l'alimente | Où lire |
+|---|---|---|
+| Fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat | taxe de 1 % sur le chiffre d'affaires des fabricants et des prestataires d'une liste, et sur la valeur en douane des importations | @sec-fst-mise-en-place, @sec-fst-reformes |
+| Fonds de développement de la compétitivité dans le secteur de l'agriculture et de la pêche | taxes sur les fruits et légumes, le maïs et les tourteaux de soja, les produits de la pêche ; taxe de statistique sur les céréales | @sec-fst-agriculture |
+| Fonds de développement de la compétitivité dans le secteur du tourisme | taxe sur le chiffre d'affaires des établissements touristiques et des restaurants touristiques classés ; taxe par siège des véhicules de transport touristique | @sec-fst-tourisme |
+| Fonds de dépollution | taxe pour la protection de l'environnement | @sec-fst-tpe |
+| Fonds de soutien de la délimitation du patrimoine foncier | contribution aux frais de l'immatriculation foncière obligatoire | @sec-fst-autres-taxes |
+| Fonds de promotion des logements pour les salariés | contribution des employeurs | [Cotisations sociales](../cotisations_sociales/_prelevements_salaires.html#sec-cot-foprolos) |
+| Fonds de promotion de la formation et de l'apprentissage professionnel | taxe de formation professionnelle | [Cotisations sociales](../cotisations_sociales/_prelevements_salaires.html#sec-cot-tfp) |
+| Fonds national de l'emploi | ressources diverses, dont des taxes affectées | [Marché du travail](../marche_travail/_politiques_emploi.html#sec-mt-pe-fne) |
+| Fonds de transition énergétique | taxe sur l'électricité et le gaz naturel | [Compensation](../compensation/_electricite_gaz.html#sec-compensation-electricite-gaz) |
+| Fonds de protection des zones touristiques | moitié de la taxe hôtelière des hôtels des zones touristiques municipales | [Finances locales](../finances_locales/_impots_activite.html#sec-fl-taxe-hoteliere-reformes) |
+| Caisse générale de compensation | taxes et redevances de compensation | [Compensation](../compensation/_institution.html#sec-compensation-caisse) |
+
+Le Fonds de promotion et de décentralisation industrielle (FOPRODI), qui accorde des primes à l'investissement, n'est pas alimenté par une taxe : il reçoit des crédits du budget (@sec-df-foprodi).
+
+La taxe au profit du fonds de développement de la compétitivité et le [droit de consommation](#g-droit-de-consommation) sont liquidés chacun sur une assiette qui ne comprend pas l'autre, et tous deux entrent dans l'assiette de la taxe sur la valeur ajoutée, selon la doctrine administrative [@dgi-nc-29-2007] (@tbl-dc-cascade).
+
+Ce que pèsent ensemble les fonds spéciaux dans les recettes fiscales, de 1991 à 2025, est donné avec la longue période (@sec-fst-serie).
+
+<!-- TODO (rédacteur) : frise des naissances de fonds et des réformes de la taxe (1995, 1996, 2000, 2003, 2011), avec la frise commune du livre (plan, § 4). -->
+
+:::: {.chronologie-repliable titre="Fonds spéciaux du Trésor en 2014 : les trente-deux comptes de la loi de finances complémentaire, par ministère"}
+
+: Les comptes spéciaux du Trésor énumérés par la loi de finances complémentaire pour 2014 {#tbl-fst-comptes-2014}
+
+| Ministère | Compte | Ressource affectée, ou livre qui la documente |
+|---|---|---|
+| Présidence du gouvernement | Compte d'emploi des frais de contrôle financier, des jetons de présence et tantièmes revenant à l'État | |
+| Présidence du gouvernement | Fonds de restructuration du capital des entreprises publiques | |
+| Intérieur | Compte conjoint des collectivités publiques locales | |
+| Intérieur | Fonds de la protection civile et de la sécurité routière | |
+| Intérieur | Fonds de prévention des accidents de la circulation | |
+| Intérieur | Fonds de coopération des collectivités locales | |
+| Défense nationale | Fonds du service national | |
+| Finances | Compte de cautionnement mutuel des comptables publics | |
+| Domaines de l'État et affaires foncières | Fonds de garantie des victimes des accidents de la circulation | |
+| Domaines de l'État et affaires foncières | Fonds de soutien de la délimitation du patrimoine foncier | contribution aux frais d'immatriculation foncière (@sec-fst-autres-taxes) |
+| Agriculture | Fonds de développement de la compétitivité dans le secteur de l'agriculture et de la pêche | @sec-fst-agriculture |
+| Agriculture | Fonds de promotion de la qualité des dattes | |
+| Agriculture | Fonds de financement du repos biologique dans le secteur de la pêche | |
+| Industrie | Fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat | @sec-fst-reformes |
+| Industrie | Fonds de transition énergétique | livre de la compensation |
+| Industrie | Fonds de promotion de l'huile d'olive conditionnée | |
+| Commerce et artisanat | Caisse générale de compensation | livre de la compensation |
+| Commerce et artisanat | Fonds de promotion des exportations | |
+| Technologies de l'information et de la communication | Fonds de développement des communications, des technologies de l'information et de la télécommunication | |
+| Tourisme | Fonds de protection des zones touristiques | livre des finances locales |
+| Tourisme | Fonds de développement de la compétitivité dans le secteur du tourisme | @sec-fst-tourisme |
+| Équipement et environnement | Fonds national de l'amélioration de l'habitat | |
+| Équipement et environnement | Fonds de promotion des logements pour les salariés | livre des cotisations sociales |
+| Équipement et environnement | Fonds de développement des autoroutes | |
+| Équipement et environnement | Fonds de la protection et de l'esthétique de l'environnement | |
+| Équipement et environnement | Fonds de dépollution | @sec-fst-tpe |
+| Culture | Fonds de promotion de la création littéraire et artistique | |
+| Jeunesse et sports | Fonds national de promotion des sports et de la jeunesse | |
+| Affaires sociales | Fonds national de solidarité sociale | |
+| Affaires sociales | Compte de financement des mesures exceptionnelles de la mise à la retraite | |
+| Emploi et formation professionnelle | Fonds national de l'emploi | livre du marché du travail |
+| Emploi et formation professionnelle | Fonds de promotion de la formation et de l'apprentissage professionnel | livre des cotisations sociales |
+
+: Les textes de la liste des comptes et de la taxe de circulation {#tbl-fst-comptes-2014-textes}
+
+| Texte | Ce qu'il établit |
+|---|---|
+| []{#r-fst-comptes-2014}loi de finances complémentaire pour 2014, tableau « B » [@lfc-2014, tableau « B », p. 2114] | prévisions de recettes des fonds spéciaux du Trésor pour 2014, par compte et par ministère ; liste reproduite ci-dessus |
+| []{#r-fst-circulation-2014}loi de finances complémentaire pour 2014, tableau « A » [@lfc-2014, tableau « A », p. 2111] | la « taxe de circulation sur les véhicules automobiles » est une recette du budget de l'État, ligne 25-02, sous les « droits sur les transports et autres produits » |
+
+::::
+
+<!-- TODO (documentaliste) : la colonne « ressource » n'est remplie que pour les fonds dont un chapitre du précis documente le financement ; les textes de financement des autres comptes restent à identifier (note, § 5). Le tableau « B » de la LFC 2014 ne porte de montant que pour trois comptes (FTE, FNE, fonds de la formation) et « inchangé » pour les autres : les prévisions de la LF 2014 restent à relever pour donner un ordre de grandeur par compte. -->
+
+## La mise en place, 1995 {#sec-fst-mise-en-place}
+
+La loi de finances pour 1995 ouvre un compte spécial du Trésor, le « fonds de développement de la compétitivité industrielle », lui affecte trois prélèvements professionnels qui existaient déjà dans l'industrie, et crée à son profit une taxe de 1 % sur une liste de produits, applicable au 1^er^ janvier 1995. La même loi ouvre un fonds voisin pour l'agriculture, la pêche et les industries agro-alimentaires (@sec-fst-agriculture).
+
+<!-- TODO (documentaliste) : contexte de la création du fonds dans les mots des sources de l'époque (exposé des motifs de la LF 1995, IXe Plan, programme de mise à niveau, accord d'association de 1995) : aucune source de contexte n'est lue ; rien n'est écrit (plan, Q2). -->
+
+### Ce que la taxe remplace : trois prélèvements professionnels {#sec-fst-antecedents}
+
+Avant 1995, trois branches de l'industrie supportent chacune un prélèvement professionnel propre. [L'article 38 de la loi de finances pour 1995](#r-fst-1995-ressources) les affecte au nouveau fonds :
+
+- la cotisation professionnelle sur les chaussures, instituée par le décret du 20 septembre 1956 relatif à la création de la caisse inter-professionnelle de compensation des chaussures ;
+- la cotisation professionnelle sur les textiles, instituée par la loi n° 58-79 du 11 juillet 1958 ;
+- la taxe professionnelle sur les matériaux de construction, la céramique et le verre, instituée par la loi de finances pour 1985.
+
+La loi reprend ces trois prélèvements et en étend deux. La cotisation sur les chaussures [s'étend aux autres articles en cuir](#r-fst-1995-ressources) des positions tarifaires 42-01 à 42-04 ; la taxe sur les matériaux de construction, aux autres matériaux d'un tableau « M » annexé à la loi, et à la valeur en douane des mêmes produits importés. Cette dernière est désormais perçue comme les droits de douane à l'importation et, pour les produits fabriqués localement, sur déclaration mensuelle des fabricants, dans les délais de la taxe sur la valeur ajoutée. Elle y ajoute une taxe nouvelle, assise sur une liste de produits de toutes branches (@sec-fst-1995).
+
+<!-- TODO (documentaliste) : lire le décret du 20 septembre 1956 (art. 2), la loi n° 58-79 (art. 2) et la loi n° 84-84 (art. 31-33) : taux, assiette et affectation avant 1995 ; textes au corpus sans couche texte (OCR à demander, note, § 3.1 et § 11). Contenu des tableaux « L » et « M » de la LF 1995 non relevé. -->
+
+### La loi de finances pour 1995 {#sec-fst-1995}
+
+La loi range ses articles 37 à 44 sous la rubrique « Le fonds de développement de la compétitivité industrielle. » : la rubrique nomme le fonds sans dire son objet. Les missions du fonds, que [l'article 37](#r-fst-1995) énumère, disent ce que la loi cherche : contribuer au financement de l'amélioration de la qualité des produits industriels et des opérations de restructuration industrielle, financer les études sectorielles stratégiques, accorder des subventions aux centres techniques industriels, et « entreprendre toutes autres actions visant à développer la compétitivité industrielle ». Le ministre chargé de l'industrie en est l'ordonnateur ; l'organisation du fonds et ses modes d'intervention sont renvoyés à un décret.
+
+[La taxe](#r-fst-1995) est une « taxe professionnelle sur les produits locaux ou importés figurant au tableau "L" » annexé à la loi. Elle est due au taux de 1 % sur le chiffre d'affaires des fabricants de ces produits et sur la valeur en douane des importations. Elle est perçue comme les droits de douane à l'importation et, en régime intérieur, sur une déclaration mensuelle des fabricants, dans les délais de la taxe sur la valeur ajoutée ; le contrôle et le contentieux suivent, selon le cas, les règles des droits de douane ou de la taxe sur la valeur ajoutée. La loi s'applique [à compter du 1^er^ janvier 1995](#r-fst-1995-dates).
+
+Sous la rubrique « Fonds spéciaux du trésor », [la même loi](#r-fst-1995-suppressions) supprime sept fonds spéciaux et en verse les ressources au budget général : le fonds de la coopération et de la mutualité, le fonds d'amortissement de la garantie de bonne fin donnée par le Trésor, le fonds de développement agricole, le fonds de péréquation des changes et des taux d'intérêt, les fonds de stabilisation des prix des légumes et des fruits et des produits avicoles, et le fonds de compensation et de soutien des transports routiers.
+
+<!-- TODO (rédacteur) : la clé decret-95-2495 est versée ; citer le décret n° 95-2495 du 18 décembre 1995 fixant l'organisation, les modalités de fonctionnement et les modes d'intervention du fonds (JORT n° 103 du 26 décembre 1995, pp. 2363-2364, couche texte lisible). Lu par le rédacteur le 23/10/2026 : art. 2, aides à la restructuration « dans le cadre de la mise à niveau des entreprises en activité », primes aux centres techniques, aides à la qualité, études sectorielles ; art. 3, comité de pilotage de 16 membres (administration, UTICA, UGTT, institutions financières) ; art. 6, primes de 20 % de l'investissement matériel financé sur fonds propres et 10 % du reliquat, 70 % des études de diagnostic (plafond 20 000 D), 50 % des autres investissements immatériels. À verser dans cette section, avec ligne de registre, une fois la clé créée ; le décret n° 99-2741 le remplace (à lire). -->
+
+## Les grandes réformes {#sec-fst-reformes}
+
+Après 1995, quatre lois de finances changent la taxe ou font naître une taxe sœur : en 1996, en 2000, en 2003 et en 2011 (@tbl-fst-reformes). Les lois de 2000 et de 2011 changent les règles de base de la taxe : son champ, ses redevables, son assiette, les missions du fonds. Celles de 1996 et de 2003 créent des taxes au profit d'autres fonds. Le taux de 1 % ne change pas.
+
+Ce que chaque loi cherche est donné par la rubrique sous laquelle elle range ses articles.
+
+: Les quatre grandes réformes des taxes au profit des fonds spéciaux, 1996-2011 {#tbl-fst-reformes}
+
+| Réforme et date d'effet | Ce que la loi cherche, par ses rubriques | Ce qui change à la taxe du fonds industriel, avant → après | Ce qui y naît, ou s'y transforme |
+|---|---|---|---|
+| [**1996**](#r-fst-1996) — 1^er^ janvier 1996 | | ressources du fonds : + la taxe sur les conserves alimentaires de 1994 | naît la taxe au profit du fonds du tourisme (@sec-fst-tourisme) ; les taxes du fonds agricole sont fixées à 2 % (@sec-fst-agriculture) |
+| [**2000**](#r-fst-2000) — 1^er^ janvier 2000 | | une taxe sur la liste « L » et trois prélèvements de branche → une seule taxe sur les produits locaux ou importés d'une liste fixée par décret ; assiette hors taxe sur la valeur ajoutée ; exportations exonérées ; missions : + mise à niveau des services | la taxe de statistique sur les céréales est affectée au fonds agricole (@sec-fst-agriculture) |
+| [**2003**](#r-fst-tpe-2003) | | — | naît la taxe pour la protection de l'environnement, au profit du fonds de dépollution (@sec-fst-tpe) |
+| [**2011**](#r-fst-2011) — 1^er^ janvier 2011 | « Extension du domaine d'intervention du fonds de développement de la compétitivité industrielle et renforcement de ses ressources » | produits → produits et services ; prestataires de services redevables, à 1 % de leur chiffre d'affaires hors taxe ; missions : mise à niveau des services et de l'artisanat ; fonds renommé | les ressources du fonds du tourisme sont relevées (@sec-fst-tourisme) |
+
+Le tableau ne porte pas de références : chaque texte est nommé dans la section de sa réforme, et lié à sa ligne de registre.
+
+<!-- TODO (documentaliste) : rubriques des LF 1996 (art. 58-65), LF 2000 (art. 35-40) et LF 2003 (art. 58-59), mot pour mot (plan, Q1) ; fascicules sans couche texte exploitable. Contexte de chaque réforme dans les mots des sources de l'époque : aucune source lue (plan, Q2). -->
+
+### 1996 : le même instrument pour le tourisme {#sec-fst-reforme-1996}
+
+La loi de finances pour 1996 crée une taxe au profit du fonds de développement de la compétitivité dans le secteur du tourisme, assise sur le chiffre d'affaires des établissements touristiques et sur les sièges des véhicules de transport touristique (@sec-fst-tourisme). Elle fixe à 2 % les taxes sur les fruits et légumes et sur le maïs et les tourteaux de soja qui alimentent le fonds agricole (@sec-fst-agriculture).
+
+Pour le fonds industriel, [la même loi](#r-fst-1996) ajoute à ses ressources la taxe sur les conserves alimentaires instituée par la loi de finances pour 1994. Ses dispositions s'appliquent [à compter du 1^er^ janvier 1996](#r-fst-1996-dates).
+
+### 2000 : une seule taxe, une liste fixée par décret {#sec-fst-reforme-2000}
+
+La loi de finances pour 2000 refond la taxe du fonds industriel. Elle remplace la taxe sur les produits du tableau « L » et les trois prélèvements de branche repris en 1995 par une seule « taxe professionnelle due sur les produits locaux ou importés », dont [la liste est fixée par décret](#r-fst-2000). Elle abroge les textes de 1956, de 1958 et de 1984 qui instituaient les prélèvements de branche, ainsi que les articles 40 et 41 de la loi de 1995, en maintenant les listes en vigueur jusqu'à la publication du décret.
+
+L'assiette devient le chiffre d'affaires **hors taxe sur la valeur ajoutée** des fabricants, et la valeur en douane à l'importation ; le taux reste de 1 %. Les produits exportés sont exonérés, et les exportateurs qui ne sont pas redevables de la taxe peuvent acheter en suspension. Les missions du fonds s'étendent à la mise à niveau des services. Ces dispositions s'appliquent [à compter du 1^er^ janvier 2000](#r-fst-2000-dates).
+
+La même loi affecte au fonds agricole la taxe de statistique sur les céréales (@sec-fst-agriculture) et récrit la contribution aux frais de l'immatriculation foncière (@sec-fst-autres-taxes).
+
+<!-- TODO (documentaliste) : le décret n° 2000-634 du 13 mars 2000 (liste des produits, JORT n° 26 de 2000, pp. 736-767) est au corpus : en relever le contenu (plan, Q4). Décret n° 2008-4111 (modifie la liste) : intitulé seul. Lois de finances 2001-2010 non parcourues en plein texte pour la taxe (Q7). -->
+
+### 2003 : une taxe pour la dépollution {#sec-fst-reforme-2003}
+
+La loi de finances pour 2003 crée la [taxe pour la protection de l'environnement](#g-taxe-protection-environnement), due sur les produits d'un tableau annexé à son article 58, au profit du fonds de dépollution. Elle ne touche pas à la taxe du fonds industriel. Le champ, l'assiette et l'évolution de cette taxe sont dans sa section (@sec-fst-tpe).
+
+### 2011 : les services et l'artisanat {#sec-fst-reforme-2011}
+
+La loi de finances pour 2011 range ses articles 14 à 16 sous la rubrique « Extension du domaine d'intervention du fonds de développement de la compétitivité industrielle et renforcement de ses ressources ». Elle fait entrer les services dans le champ de la taxe, et l'artisanat dans les missions du fonds.
+
+- **Le champ.** La taxe devient [« due sur les services et sur les produits importés ou fabriqués localement »](#r-fst-2011), dont la liste est fixée par décret. Les produits et services exportés par les redevables sont exonérés.
+- **Les redevables et l'assiette.** Aux fabricants, taxés sur leur chiffre d'affaires hors taxe sur la valeur ajoutée, et aux importations, taxées sur leur valeur en douane, s'ajoutent les prestataires de services, taxés à 1 % de leur chiffre d'affaires hors taxe sur la valeur ajoutée.
+- **Les missions.** Les deux dernières missions de l'article 37 de la loi de 1995 sont récrites : le fonds contribue au financement de la mise à niveau du secteur des services et de celui de l'artisanat, et de toute opération visant la compétitivité des secteurs de l'industrie, des services et de l'artisanat.
+- **Le nom.** Le fonds devient, dans tous les textes en vigueur, le « fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat ».
+
+Ces dispositions s'appliquent [à compter du 1^er^ janvier 2011](#r-fst-2011-dates). Sous la rubrique suivante, la même loi relève les taux de la taxe au profit du fonds du tourisme (@sec-fst-tourisme).
+
+**Depuis 2011**, la taxe n'est touchée que par deux exonérations ciblées. Les produits de protection individuelle contre la propagation du coronavirus en sont [exonérés du 1^er^ janvier au 31 décembre 2022](#r-fst-2022), sous la rubrique « Allègement de la fiscalité des produits de protection individuelle et leurs intrants destinés à la prévention contre la propagation du coronavirus ». Les préservatifs de la position 40.14 importés par l'Office national de la famille et de la population en sont [exonérés depuis le 1^er^ janvier 2025](#r-fst-2025), sous la rubrique « تعزيز دور الديوان الوطني للأسرة والعمران البشري في التوقي من الأمراض المعدية » (renforcement du rôle de l'Office dans la prévention des maladies infectieuses).
+
+<!-- TODO (documentaliste) : décret n° 2012-435 du 26 mai 2012 modifiant et complétant la liste du décret n° 2000-634 : édition arabe seule, à lire à l'image ; savoir s'il porte la liste des services ouverte par la LF 2011 (plan, Q4). Pas de ligne de registre avant lecture. -->
+
+### Le détail, texte par texte {#sec-fst-textes}
+
+:::: {.chronologie-repliable titre="Taxe au profit du fonds de développement de la compétitivité : textes, date par date, avec le taux et l'assiette, 1995-2025"}
+
+: La taxe au profit du fonds de développement de la compétitivité : les textes et ce qu'ils changent, 1995-2025 {#tbl-fst-textes}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-fst-1995-ressources}[1^er^ janvier 1995]{.insecable} | point de départ — ce que la taxe remplace | loi de finances pour 1995, art. 38 et 42 à 44 [@lf-1995, art. 38 et 42 à 44, p. 2045] | cotisation sur les chaussures (décret du 20 septembre 1956), cotisation sur les textiles (loi n° 58-79), taxe sur les matériaux de construction, la céramique et le verre (loi n° 84-84, art. 31) → affectées au fonds ; la première étendue aux articles en cuir des positions 42-01 à 42-04, la troisième aux matériaux du tableau « M » et aux importations, perçue comme les droits de douane ou sur déclaration mensuelle |
+| []{#r-fst-1995}[1^er^ janvier 1995]{.insecable} | **rupture** — mise en place | loi de finances pour 1995, art. 37 et 39 à 41 [@lf-1995, art. 37 et 39 à 41, p. 2045] | — → compte spécial du Trésor « fonds de développement de la compétitivité industrielle », cinq missions, ordonnateur le ministre chargé de l'industrie ; taxe professionnelle de 1 % sur le chiffre d'affaires des fabricants et la valeur en douane des produits du tableau « L » |
+| []{#r-fst-1995-suppressions}[1^er^ janvier 1995]{.insecable} | voisin — même rubrique | loi de finances pour 1995, art. 35 [@lf-1995, art. 35, p. 2045] | sept fonds spéciaux supprimés, leurs ressources versées au budget général |
+| []{#r-fst-1995-dates}[1^er^ janvier 1995]{.insecable} | règle de datation | loi de finances pour 1995, art. 100 [@lf-1995, art. 100, p. 2051] | « applicables à compter du 1^er^ janvier 1995 » |
+| []{#r-fst-1996}[1^er^ janvier 1996]{.insecable} | ajustement — réforme de 1996 | loi de finances pour 1996, art. 61 [@lf-1996, art. 61, p. 2374] | quatrième tiret de l'article 38 de la loi de 1995 remplacé : + la taxe sur les conserves alimentaires instituée par l'article 65 de la loi n° 93-125 |
+| []{#r-fst-1996-dates}[1^er^ janvier 1996]{.insecable} | règle de datation | loi de finances pour 1996, art. 68 [@lf-1996, art. 68, p. 2375] | application au 1^er^ janvier 1996, sous réserve des dispositions spéciales |
+| []{#r-fst-2000}[1^er^ janvier 2000]{.insecable} | **rupture** — réforme de 2000 | loi de finances pour 2000, art. 36 à 39 [@lf-2000, art. 36 à 39, pp. 2744-2745] ; décret n° 2000-634 [@decret-2000-634] | taxe sur la liste « L » et trois prélèvements de branche → une seule taxe professionnelle sur les produits locaux ou importés, liste fixée par décret ; 1 % du chiffre d'affaires hors taxe sur la valeur ajoutée des fabricants et de la valeur en douane ; exportations exonérées, achats en suspension pour les exportateurs non redevables ; abrogation du décret du 20 septembre 1956, de la loi n° 58-79, des art. 31 à 33 de la loi n° 84-84 et des art. 40 et 41 de la loi de 1995, listes maintenues jusqu'au décret ; missions : + mise à niveau des services |
+| []{#r-fst-2000-dates}[1^er^ janvier 2000]{.insecable} | règle de datation | loi de finances pour 2000, art. 73 [@lf-2000, art. 73, p. 2751] | « applicables à compter du 1^er^ janvier 2000 » |
+| []{#r-fst-2011}[1^er^ janvier 2011]{.insecable} | **rupture** — réforme de 2011 | loi de finances pour 2011, art. 14 à 16 [@lf-2011, art. 14 à 16, p. 3463] | produits importés ou fabriqués localement → services et produits, liste fixée par décret ; + 1 % du chiffre d'affaires hors taxe sur la valeur ajoutée des prestataires de services ; produits et services exportés exonérés ; missions : mise à niveau des services et de l'artisanat ; « fonds de développement de la compétitivité industrielle » → « fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat » |
+| []{#r-fst-2011-dates}[1^er^ janvier 2011]{.insecable} | règle de datation | loi de finances pour 2011, art. 50 [@lf-2011, art. 50, p. 3477] | applicable à compter du 1^er^ janvier 2011, sous réserve des articles 18, 40 et 41 |
+| []{#r-fst-2022}[1^er^ janvier 2022]{.insecable} | ajustement — exonération temporaire | décret-loi de finances pour 2022, art. 63 et 73 [@lf-2022, art. 63, pp. 3102-3103 ; @lf-2022, art. 73, p. 3107] | produits de protection individuelle contre la propagation du coronavirus, énumérés au tableau de l'article : taxés → exonérés, jusqu'au 31 décembre 2022 |
+| []{#r-fst-2025}[1^er^ janvier 2025]{.insecable} | ajustement — exonération | loi de finances pour 2025, art. 29 [@lf-2025, art. 29, p. 6426 de l'édition arabe] | préservatifs de la position 40.14 importés par l'Office national de la famille et de la population : taxés → exonérés, avec les droits de douane |
+
+::::
+
+<!-- TODO (documentaliste) : relire à l'image les articles d'application de la LF 1996 (art. 68) et de la LF 2000 (art. 73), lus par OCR de page (plan, Q5). Décrets d'organisation n° 95-2495 (lisible, voir TODO de la mise en place), n° 97-2126, n° 99-2741 et modificatifs (2005-2556, 2006-1703, 2007-313, 2008-2404), décret de liste n° 2008-4111 : pas de ligne avant lecture. -->
+
+## L'état du droit en 2026 {#sec-fst-etat-du-droit}
+
+Au 1^er^ janvier 2026, la taxe au profit du fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat est due sur les produits importés ou fabriqués localement et sur les services d'une liste fixée par décret, au taux de 1 %, depuis sa refonte de 2011 (@tbl-fst-etat-du-droit). Les lois de finances de 2012 à 2026 ne changent ni son assiette ni son taux ; elles n'y ajoutent que deux exonérations, celle de 2022, éteinte le 31 décembre 2022, et celle de 2025. Aucun autre texte modifiant l'assiette, le taux ou les exonérations n'est identifié ici.
+
+<!-- RECHERCHE r-fodec-modificatifs-2012-2026 : texte postérieur à la LF 2011 modifiant l'assiette, le taux ou les exonérations de la taxe au profit du fonds de développement de la compétitivité (voir docs/recherches.yml) -->
+
+: La taxe au profit du fonds de développement de la compétitivité au 1^er^ janvier 2026 {#tbl-fst-etat-du-droit}
+
+| Élément | Règle | Depuis | Population couverte |
+|---|---|---|---|
+| Champ | produits importés ou fabriqués localement, et services, d'une liste fixée par décret | [[1^er^ janvier 2011]{.insecable}](#r-fst-2011) | |
+| Redevables | fabricants des produits de la liste ; prestataires des services de la liste ; à l'importation, perception comme les droits de douane | [[1^er^ janvier 2011]{.insecable}](#r-fst-2011) | |
+| Assiette | chiffre d'affaires hors taxe sur la valeur ajoutée des fabricants et des prestataires ; valeur en douane des importations | [[1^er^ janvier 2011]{.insecable}](#r-fst-2011) | |
+| Taux | 1 % | [[1^er^ janvier 1995]{.insecable}](#r-fst-1995) | |
+| Exonérations | produits et services exportés par les redevables ; préservatifs importés par l'Office national de la famille et de la population | [[1^er^ janvier 2011]{.insecable}](#r-fst-2011) ; [[1^er^ janvier 2025]{.insecable}](#r-fst-2025) | |
+| Affectation | fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat, compte spécial du Trésor | [[1^er^ janvier 2011]{.insecable}](#r-fst-2011) | |
+
+<!-- TODO (documentaliste) : colonne « population couverte » : nombre de redevables de la taxe (fabricants, prestataires, importateurs) et sa série ; aucune source identifiée (plan, Q9). Contenu de la liste des produits et services en vigueur (décrets n° 2000-634 et n° 2012-435 et suivants) : rien n'est écrit sur la liste (Q4). -->
+
+## Les autres taxes au profit d'un fonds {#sec-fst-dispositifs}
+
+Chaque taxe de cette partie est affectée à un fonds limité à un secteur ou à un objet. Leur construction est celle de la taxe du fonds industriel : un compte spécial du Trésor, une taxe professionnelle sur le chiffre d'affaires ou la valeur en douane, des missions fixées par la loi.
+
+### Le fonds de développement de la compétitivité dans le secteur de l'agriculture et de la pêche {#sec-fst-agriculture}
+
+Le fonds de développement de la compétitivité dans le secteur de l'agriculture et de la pêche finance des interventions dans l'agriculture, la pêche et les industries agro-alimentaires. Il est né en 1995, en même temps que le fonds industriel, et vit de taxes sur des produits agricoles.
+
+**1995 : naissance.** Sous la rubrique « Fonds de développement de la compétitivité dans les secteurs de l'agriculture, de la pêche et des industries agro-alimentaires », [la loi de finances pour 1995](#r-fst-agri-1995) ouvre un compte spécial du Trésor de ce nom, « destiné à financer les interventions relatives aux activités agricoles, de pêche et des industries agro-alimentaires, soit directement, soit par l'intermédiaire des groupements inter-professionnels ou d'organismes spécialisés, dans le but de développer la compétitivité dans ces secteurs ». Le ministre de l'agriculture en est l'ordonnateur. Le fonds reçoit quatre taxes déjà existantes : sur les produits de la pêche (loi de finances complémentaire pour 1982), sur les légumes et les fruits (loi de finances pour 1983), sur le maïs et le soja (loi de finances pour 1984) et sur les conserves alimentaires (loi de finances pour 1994). La taxe sur les légumes et les fruits est récrite : taxe professionnelle à l'importation et sur la production, hors exportation, de 2 % sur les légumes et de 1 % sur les fruits, perçue comme les droits de douane à l'importation et, sur les produits locaux, retenue par les commissionnaires des marchés, les fabricants de conserves et les grossistes.
+
+**1996 : des taux de 2 %.** [La loi de finances pour 1996](#r-fst-agri-1996) fixe à 2 % la taxe professionnelle sur les fruits et les légumes, à l'importation et à la production hors exportation, et à 2 % la taxe sur le maïs et les tourteaux de soja.
+
+**2000 : les céréales.** [La loi de finances pour 2000](#r-fst-agri-2000) affecte au fonds la taxe de statistique sur les céréales.
+
+En 2014, le fonds porte le nom de « fonds de développement de la compétitivité dans le secteur de l'agriculture et de la pêche » (@tbl-fst-comptes-2014).
+
+<!-- TODO (documentaliste) : (1) texte qui retire les « industries agro-alimentaires » du nom du fonds ; (2) taxe sur la tomate de transformation (décret n° 2001-1586, intitulé seul) ; (3) art. 48 de la LF 1995 (abrogation de l'art. 5 des lois créant les groupements interprofessionnels des agrumes, des légumes et des dattes) : objet des articles abrogés ; (4) taux des taxes sur la pêche, le maïs et le soja avant 1996, et taux de la taxe de statistique sur les céréales ; (5) état du droit de ces taxes en 2026. -->
+
+:::: {.chronologie-repliable titre="Fonds de développement de la compétitivité agricole : ses taxes et leurs taux, texte par texte, 1995-2000"}
+
+: Le fonds de développement de la compétitivité dans le secteur de l'agriculture et de la pêche : les textes et ce qu'ils changent, 1995-2000 {#tbl-fst-agriculture-textes}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-fst-agri-1995}[1^er^ janvier 1995]{.insecable} | **rupture** — naissance, avec la mise en place | loi de finances pour 1995, art. 45 à 47 [@lf-1995, art. 45 à 47, p. 2046] | — → compte spécial du Trésor, ordonnateur le ministre de l'agriculture ; ressources : taxes sur les produits de la pêche (loi n° 82-27, art. 14), sur les légumes et les fruits (loi n° 82-91, art. 150), sur le maïs et le soja (loi n° 83-113, art. 97), sur les conserves alimentaires (loi n° 93-125, art. 65) ; taxe sur les légumes et les fruits récrite : 2 % sur les légumes, 1 % sur les fruits, à l'importation et sur la production hors exportation |
+| []{#r-fst-agri-1996}[1^er^ janvier 1996]{.insecable} | étape | loi de finances pour 1996, art. 64 et 65 [@lf-1996, art. 64 et 65, p. 2374] | taxe professionnelle de 2 % à l'importation et à la production, hors exportation, des fruits et légumes ; taxe de 2 % sur le maïs et les tourteaux de soja |
+| []{#r-fst-agri-2000}[1^er^ janvier 2000]{.insecable} | étape | loi de finances pour 2000, art. 35 [@lf-2000, art. 35, p. 2744] | taxe de statistique sur les céréales : → affectée au fonds |
+
+::::
+
+### Le fonds de développement de la compétitivité dans le secteur du tourisme {#sec-fst-tourisme}
+
+La taxe au profit du fonds de développement de la compétitivité dans le secteur du tourisme frappe le chiffre d'affaires des établissements touristiques et des restaurants touristiques classés, ainsi que les véhicules de transport touristique des agences de voyages de catégorie « A ». Elle est née de la réforme de 1996 (@sec-fst-reforme-1996).
+
+[La loi de finances pour 1996](#r-fst-tourisme-1996) la fixe à 1 % du chiffre d'affaires des établissements touristiques et des restaurants touristiques classés, et à 1,700 dinar par mois et par siège offert pour les véhicules de transport touristique des agences de catégorie « A ». Sous la rubrique « Renforcement des ressources du fonds de développement de la compétitivité dans le secteur du tourisme », [la loi de finances pour 2011](#r-fst-tourisme-2011) récrit ces deux taux : 1 % du chiffre d'affaires des exploitants d'établissements touristiques et de restaurants touristiques classés, et deux dinars par mois et par siège, à compter du 1^er^ septembre 2011.
+
+: La taxe au profit du fonds de développement de la compétitivité dans le secteur du tourisme, 1996-2011 {#tbl-fst-tourisme}
+
+| Assiette | 1^er^ janvier 1996 | 1^er^ septembre 2011 |
+|---|---|---|
+| Chiffre d'affaires des établissements touristiques et des restaurants touristiques classés | 1 % | 1 % |
+| Véhicules de transport touristique des agences de catégorie « A »<br>(dinars par mois et par siège offert) | 1,700 | 2,000 |
+
+<!-- TODO (documentaliste) : la LF 2007 (art. 60) modifie la taxe : intitulé seul ; l'état du droit de la taxe en 2026 n'est donc pas écrit (plan, Q6). Montants en dinars constants à ajouter avec la série de prix du chapitre. -->
+
+:::: {.chronologie-repliable titre="Taxe au profit du fonds de compétitivité du tourisme : taux, texte par texte, 1996-2011"}
+
+: La taxe au profit du fonds de développement de la compétitivité dans le secteur du tourisme : les textes et ce qu'ils changent, 1996-2011 {#tbl-fst-tourisme-textes}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-fst-tourisme-1996}[1^er^ janvier 1996]{.insecable} | **rupture** — naissance, réforme de 1996 | loi de finances pour 1996, art. 58 à 60 [@lf-1996, art. 58 à 60, p. 2374] | — → 1 % du chiffre d'affaires des établissements touristiques et des restaurants touristiques classés ; 1,700 D par mois et par siège des véhicules de transport touristique des agences de catégorie « A » |
+| []{#r-fst-tourisme-2011}[1^er^ septembre 2011]{.insecable} | ajustement | loi de finances pour 2011, art. 17 et 18 [@lf-2011, art. 17 et 18, p. 3463] | premier et deuxième tirets de l'article 60 de la loi de 1996 récrits : 1 % du chiffre d'affaires des exploitants d'établissements touristiques et de restaurants touristiques classés ; 1,700 D → 2 D par mois et par siège ; application au 1^er^ septembre 2011 (art. 18) |
+
+::::
+
+### La taxe pour la protection de l'environnement {#sec-fst-tpe}
+
+La [taxe pour la protection de l'environnement](#g-taxe-protection-environnement) est due sur les produits d'un tableau annexé à l'article 58 de la loi de finances pour 2003, au profit du fonds de dépollution. Elle est née de la réforme de 2003 (@sec-fst-reforme-2003).
+
+[La loi de finances pour 2003](#r-fst-tpe-2003) l'assoit sur le chiffre d'affaires hors taxe sur la valeur ajoutée des fabricants et sur la valeur en douane des produits importés. Le tableau est complété depuis, notamment par la loi de finances complémentaire pour 2012, puis par [la loi de finances pour 2013](#r-fst-tpe-2013), sous la rubrique « Renforcement des ressources du fonds de dépollution » : celle-ci y ajoute, à compter du 1^er^ janvier 2013, des préparations chimiques des positions 38.09, 38.10, 38.17 et 38.24 et des ouvrages en matières plastiques de la position 39.26.
+
+<!-- TODO (documentaliste) : (1) LF 2003, art. 58-59, p. 2883 : taux (2,5 % d'après la couche texte décodée) et positions (39-01 à 39-14) à relire à l'image avant toute publication (plan, Q5) ; rien de chiffré n'est écrit d'ici là ; date d'effet de la LF 2003 à établir ; (2) fonds de dépollution ouvert par la LF 1993, art. 35-37 : intitulé seul ; (3) extensions du champ par la LFC 2012 (art. 53, citée par la LF 2013), les LF 2005 (art. 67-68), 2008 (art. 31), 2010 (art. 37), 2014 (art. 71), 2016 (art. 88), 2018 (art. 23-24) : à lire (Q6) ; l'état du droit de la taxe n'est pas écrit ; (4) la note cite la LF 2013, art. 68, en p. 20 : l'article commence en p. 21 (vérifié par le rédacteur le 23/10/2026). -->
+
+:::: {.chronologie-repliable titre="Taxe pour la protection de l'environnement : champ, texte par texte, 2003-2013"}
+
+: La taxe pour la protection de l'environnement : les textes et ce qu'ils changent, 2003-2013 {#tbl-fst-tpe-textes}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-fst-tpe-2003}non établie | **rupture** — naissance, réforme de 2003 | loi de finances pour 2003, art. 58 et 59 [@lf-2003, art. 58 et 59, p. 2883] | — → taxe pour la protection de l'environnement, au profit du fonds de dépollution, sur le chiffre d'affaires hors taxe sur la valeur ajoutée des fabricants et la valeur en douane des produits d'un tableau annexé à l'article 58 |
+| []{#r-fst-tpe-2013}[1^er^ janvier 2013]{.insecable} | étape | loi de finances pour 2013, art. 68 et 79 [@lf-2013, art. 68, p. 21 ; @lf-2013, art. 79, p. 28] | tableau du § I de l'article 58 de la loi de 2003, déjà modifié notamment par l'article 53 de la loi de finances complémentaire pour 2012 : + préparations chimiques (Ex 38.09, Ex 38.10, Ex 38.17, Ex 38.24) et ouvrages en matières plastiques (Ex 39.26) |
+
+::::
+
+### Les autres taxes au profit d'un fonds spécial {#sec-fst-autres-taxes}
+
+Le Fonds de soutien de la délimitation du patrimoine foncier reçoit une contribution aux frais de l'immatriculation foncière obligatoire, que [la loi de finances pour 2000](#r-fst-foncier-2000) récrit. Les autres fonds alimentés par un prélèvement sont documentés dans d'autres livres (@tbl-fst-inventaire).
+
+<!-- TODO (documentaliste) : états antérieur et postérieur de la contribution aux frais d'immatriculation foncière (décret-loi n° 64-3, art. 15) : la valeur de 2000 reste seule ; autres comptes de la liste de 2014 : textes de financement à identifier. -->
+
+:::: {.chronologie-repliable titre="Autres taxes au profit d'un fonds spécial : la contribution aux frais d'immatriculation foncière, tarif de 2000"}
+
+: Les autres taxes au profit d'un fonds spécial : les textes et ce qu'ils changent {#tbl-fst-autres-textes}
+
+| Date d'effet | Portée | Texte et article | Avant → après |
+|---|---|---|---|
+| []{#r-fst-foncier-2000}[1^er^ janvier 2000]{.insecable} | ajustement | loi de finances pour 2000, art. 40 [@lf-2000, art. 40, p. 2745] | article 15 du décret-loi n° 64-3 récrit : contribution aux frais de l'immatriculation foncière obligatoire, au profit du Fonds de soutien de la délimitation du patrimoine foncier, de 20 millimes par m² en zone d'aménagement urbain et de 10 dinars par hectare ailleurs |
+
+::::
+
+## La longue période : ce que pèsent les fonds spéciaux {#sec-fst-longue-periode}
+
+Les recettes des fonds spéciaux ne sont publiées, en réalisations, qu'en agrégat : une ligne de la série des recettes fiscales du ministère des Finances, qui réunit tous les fonds. Les prévisions du fonds de développement de la compétitivité se lisent, elles, dans les lois de finances. Les chiffres de cette partie sont tous budgétaires ; les rapports extérieurs et les études sont dans la section suivante (@sec-fst-economie).
+
+### La ligne « Fonds spéciaux de Trésor » des recettes fiscales, 1991-2025 {#sec-fst-serie}
+
+Les recettes des fonds spéciaux du Trésor passent de 36,7 millions de dinars en 1991 à 3 587,8 millions en 2024 (@tbl-fst-serie). La série a une case vide en 2000 et une rupture en 2014-2015, et sa valeur de 2025 est une prévision.
+
+: Recettes des fonds spéciaux du Trésor, 1991-2025 {#tbl-fst-serie}
+
+| Année | Fonds spéciaux<br>(millions de dinars) | Année | Fonds spéciaux<br>(millions de dinars) | Année | Fonds spéciaux<br>(millions de dinars) |
+|---|---:|---|---:|---|---:|
+| 1991 | 36,7 | 2003 | 392,4 | 2015 | 615,1 |
+| 1992 | 41,8 | 2004 | 345,3 | 2016 | 1 704,9 |
+| 1993 | 43,3 | 2005 | 333,7 | 2017 | 1 759,6 |
+| 1994 | 44,9 | 2006 | 512,5 | 2018 | 2 038,0 |
+| 1995 | 96,8 | 2007 | 462,4 | 2019 | 2 102,8 |
+| 1996 | 175,5 | 2008 | 447,8 | 2020 | 1 989,8 |
+| 1997 | 187,2 | 2009 | 652,5 | 2021 | 2 125,6 |
+| 1998 | 199,9 | 2010 | 887,6 | 2022 | 3 001,0 |
+| 1999 | 271,7 | 2011 | 892,1 | 2023 | 3 246,2 |
+| 2000 | | 2012 | 1 109,0 | 2024 | 3 587,8 |
+| 2001 | 364,5 | 2013 | 1 228,5 | 2025 | 4 119,0 |
+| 2002 | 384,1 | 2014 | 627,7 | | |
+
+Source : @minfin-recettes-fiscales, rubrique « Autres impôts indirects », sous-ligne « Fonds Spéciaux de Trésor », réalisations en dinars courants.
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré, puis par une figure tirée de figtools.series() quand la colonne fonds_speciaux_tresor_MDT existera dans tunisia-data (plan, § 4) ; y ajouter la part des recettes fiscales, les dinars constants de l'année de référence du chapitre et un ratio au PIB par segments de base, avec renvoi à l'annexe sur le PIB. -->
+
+Six précautions commandent la lecture de cette série.
+
+- **La ligne réunit tous les fonds** : le fonds de développement de la compétitivité, mais aussi ceux de la formation professionnelle, du logement des salariés, de la transition énergétique, de la dépollution et les autres (@tbl-fst-inventaire). Elle mesure le poids des recettes affectées, non celui d'un dispositif.
+- **Avant 1991, le classeur ne distingue pas les fonds spéciaux** : de 1986 à 1990, la rubrique « Autres » de la même famille porte seule le total.
+- **La case de 2000 est vide** dans le classeur.
+- **2014-2015 : rupture.** La ligne tombe à 627,7 et 615,1 millions de dinars, quand la sous-ligne « Autres » de la même rubrique passe de 1 090,0 millions en 2013 à 2 091,8 en 2014 et 2 443,4 en 2015, avant de revenir à 1 457,0 en 2016. Le classeur n'en donne pas la cause ; les années 2014 et 2015 ne se comparent pas aux autres.
+- **2022 : un saut que le classeur n'explique pas**, de 2 125,6 à 3 001,0 millions de dinars. La contribution sociale de solidarité n'en est pas la cause apparente : [la loi de finances pour 2019](#r-fst-css-2019) la range parmi les impôts directs, non parmi les fonds spéciaux.
+- **La valeur de 2025 est égale à la prévision** de la loi de finances pour 2025 : c'est une valeur provisoire, non une réalisation.
+
+La ligne double entre 1994 et 1995, de 44,9 à 96,8 millions de dinars : c'est l'année où les fonds de développement de la compétitivité industrielle et agricole reçoivent leurs ressources, et aussi celle où sept autres fonds sont supprimés (@sec-fst-1995). Le classeur ne ventile pas la hausse.
+
+### Les prévisions du fonds de développement de la compétitivité, 1995-2020 {#sec-fst-fodec-previsions}
+
+Les lois de finances prévoient pour le fonds de développement de la compétitivité des recettes qui passent de 20 millions de dinars en 1995 à des montants compris entre 55 et 75 millions de 2011 à 2020 (@tbl-fst-fodec-previsions). Ce sont des prévisions, non des recettes encaissées.
+
+: Prévisions de recettes du fonds de développement de la compétitivité dans les lois de finances, 1995-2020 {#tbl-fst-fodec-previsions}
+
+| Loi de finances | Prévision<br>(millions de dinars) |
+|---|---:|
+| [pour 1995](#r-fst-prev-1995) | 20,0 |
+| [pour 1997](#r-fst-prev-1997) | 26,0 |
+| [pour 2005](#r-fst-prev-2005) | 45,0 |
+| [pour 2011](#r-fst-prev-2011) | 71,0 |
+| [pour 2012](#r-fst-prev-2012) | 74,0 |
+| [pour 2013](#r-fst-prev-2013) | 74,0 |
+| [complémentaire pour 2013](#r-fst-prev-lfc2013) | 58,0 |
+| [pour 2014](#r-fst-prev-2014) | 65,0 |
+| [complémentaire pour 2014](#r-fst-prev-lfc2014) | inchangée |
+| [pour 2015](#r-fst-prev-2015) | 75,0 |
+| [pour 2016](#r-fst-prev-2016) | 55,0 |
+| [pour 2017](#r-fst-prev-2017) | 74,0 |
+| [complémentaire pour 2017](#r-fst-prev-lfc2017) | 68,0 |
+| [pour 2018](#r-fst-prev-2018) | 74,0 |
+| [pour 2019](#r-fst-prev-2019) | 74,0 |
+| [pour 2020](#r-fst-prev-2020) | 73,0 |
+
+<!-- TODO (bibliographe) : créer les clés de la LFC 2008 (prévision de 67,0 MD, tableau « B », JORT n° 101 de 2008, p. 4171, page déduite) et de la LFC 2020 (loi n° 2020-45, 73,0 MD, AR p. 3179) ; les deux lignes seront ajoutées à ce tableau avec leur registre. -->
+<!-- TODO (documentaliste) : tableaux « B » 2021-2026 non ventilés par fonds dans la couche texte (à lire à l'image ou dans les annexes par mission) ; réalisations du fonds : lois de règlement à consulter ; page de la LF 2016 (AR p. 3628) déduite, à vérifier. Montants en dinars constants à ajouter. -->
+
+:::: {.chronologie-repliable titre="Prévisions de recettes du fonds de développement de la compétitivité, montants et pages des lois de finances, 1995-2020, et classement de la contribution sociale de solidarité en 2019"}
+
+: Les prévisions des lois de finances citées dans cette partie : tableaux et pages {#tbl-fst-previsions-textes}
+
+| Loi de finances | Tableau, page | Ce que le texte porte |
+|---|---|---|
+| []{#r-fst-prev-1995}pour 1995 | tableau « K » [@lf-1995, tableau « K », p. 2126] | fonds de développement de la compétitivité industrielle : recettes propres 20,0 MD, sans subvention du budget |
+| []{#r-fst-prev-1997}pour 1997 | tableau des fonds spéciaux [@lf-1997, tableau des fonds spéciaux du Trésor, p. 2624] | recettes du fonds : 26,0 MD |
+| []{#r-fst-prev-2005}pour 2005 | tableau « B » [@lf-2005, tableau « B », p. 3450] | recettes du fonds : 45,0 MD |
+| []{#r-fst-prev-2011}pour 2011 | tableau « B » [@lf-2011, tableau « B », p. 3482] | recettes du fonds : 71,0 MD |
+| []{#r-fst-prev-2012}pour 2012 | tableau « B » [@lf-2012, tableau « B », p. 16] | recettes du fonds : 74,0 MD |
+| []{#r-fst-prev-2013}pour 2013 | tableau « B » [@lf-2013, tableau « B », p. 33] | recettes du fonds : 74,0 MD |
+| []{#r-fst-prev-lfc2013}complémentaire pour 2013 | tableau « B » [@lfc-2013, tableau « B », p. 3572] | recettes du fonds : 58,0 MD |
+| []{#r-fst-prev-2014}pour 2014 | tableau « B » [@lf-2014, tableau « B », p. 3704] | recettes du fonds : 65,0 MD |
+| []{#r-fst-prev-lfc2014}complémentaire pour 2014 | tableau « B » [@lfc-2014, tableau « B », p. 2114] | recettes du fonds : « Inchangé » |
+| []{#r-fst-prev-2015}pour 2015 | tableau « B » [@lf-2015, tableau « B », p. 3478] | recettes du fonds : 75,0 MD |
+| []{#r-fst-prev-2016}pour 2016 | tableau « ب » [@lf-2016, tableau « ب », p. 3628 de l'édition arabe] | recettes du fonds : 55,0 MD |
+| []{#r-fst-prev-2017}pour 2017 | tableau « B » [@lf-2017, tableau « B », p. 3856] | recettes du fonds : 74,0 MD |
+| []{#r-fst-prev-lfc2017}complémentaire pour 2017 | tableau « B » [@lfc-2017, tableau « B », p. 3937] | recettes du fonds : 68,0 MD |
+| []{#r-fst-prev-2018}pour 2018 | tableau « B » [@lf-2018, tableau « B », p. 4297] | recettes du fonds : 74,0 MD |
+| []{#r-fst-prev-2019}pour 2019 | tableau « ب » [@lf-2019, tableau « ب », p. 5474 de l'édition arabe] | recettes du fonds : 74,0 MD |
+| []{#r-fst-prev-2020}pour 2020 | tableau « ب » [@lf-2020, tableau « ب », p. 4717 de l'édition arabe] | recettes du fonds : 73,0 MD |
+| []{#r-fst-css-2019}pour 2019 | tableau « أ » [@lf-2019, tableau « أ », p. 5470 de l'édition arabe] | la contribution sociale de solidarité figure parmi les impôts directs, ligne 13-08 |
+
+::::
+
+## Ce qu'en dit l'économie {#sec-fst-economie}
+
+**La question.** Une taxe est affectée quand la loi en réserve le produit à une dépense désignée au lieu de le verser au budget général ; en Tunisie, l'affectation passe surtout par les fonds spéciaux du Trésor, exception à la non-affectation des recettes que prévoit la loi organique du budget [@pefa-2016-tunisie, p. 37]. L'économiste demande si le lien entre ceux qui paient et ceux qui bénéficient est réel, si la dépense visée augmente ou si le budget général retire d'un côté ce que la taxe apporte de l'autre, ce que coûte la rigidité des soldes reportés, et si les fonds sont retracés et contrôlés comme le budget.
+
+**Ce que dit la théorie.** Selon McCleary, l'affectation n'est efficiente que si elle prolonge le principe du bénéfice : service proche d'un bien privé, payeurs et bénéficiaires confondus, comme la taxe sur les carburants affectée aux routes ; pour l'alcool, le tabac ou les loteries affectés au social, « there is no connection between the amount of revenue raised and the appropriate level of expenditure » [@mccleary-1991-earmarking, pp. 82, 90 et 101]. L'affectation peut aussi rendre acceptable un impôt que des électeurs méfiants envers l'emploi des recettes générales refuseraient (Buchanan, 1963, et Goetz, 1968, cités par @mccleary-1991-earmarking [p. 86]). Quand l'affectation est souple — recette inférieure à la dépense du secteur, complétée par le budget général que l'État peut réduire d'autant —, la théorie ne dit pas si la dépense du programme visé augmente [@cashin-et-al-2017-earmarking-health, pp. 12 et 45].
+
+**Ce que mesure l'empirique.** Les synthèses internationales reposent surtout sur des études de cas. Sur cinq fonds routiers évalués en 1989-1990 (Centrafrique, Colombie, Ghana, Mali, Zaïre), seul celui du Ghana réussit ; ailleurs, les recettes sont gelées ou détournées quand le budget se resserre, et le rendement d'un droit spécifique est érodé par l'inflation [@mccleary-1991-earmarking, pp. 91-92]. La part affectée croît vite là où elle s'étend : en Colombie, de 11 % des recettes de l'État en 1970 à 28 % en 1986 [@mccleary-1991-earmarking, p. 99] ; sur 32 pays en 2005-2007, les fonds extrabudgétaires hors sécurité sociale représentent 11,1 % des dépenses de l'État central (12,2 % dans les 9 pays avancés, 9,4 % dans les 23 autres) [@radev-allen-2010-extrabudgetary-funds, p. 2]. Dans les États américains de 1984 à 2001, les loteries affectées à l'enseignement ont « little or no impact on actual state K-12 funding », quand celles versées au budget général accroissent cette dépense [@pantuosco-et-al-2007-lotteries-earmarking, p. 169] ; pour la santé, six études de cas concluent à une hausse rarement durable de la part du secteur [@cashin-et-al-2017-earmarking-health, pp. 3 et 27].
+
+Pour la Tunisie, quatre diagnostics traitent des fonds spéciaux, chacun de sa famille, sans mesurer l'effet d'une taxe affectée :
+
+- le ministère des Finances, en 2014, reprend le diagnostic des organismes internationaux : « des taxes sont perçues au profit de 27 FST », dont le cloisonnement « empêche la recherche d'une optimisation étendue », sans mesure [@minfin-assises-2014-projet-reforme, pp. 28-29] ;
+- l'évaluation PEFA de 2016, menée pour la Banque mondiale, la Banque africaine de développement et l'Union européenne sur les exercices 2011-2013, compte 31 fonds spéciaux à recettes affectées en 2013, pour 1,16 milliard de dinars, et juge qu'ils sont « trop nombreux d'autant que les règles de report de leurs soldes empêchent de redéployer les ressources » [@pefa-2016-tunisie, pp. 2 et 37] ;
+- la Cour des comptes relève que le Fonds de promotion des logements pour les salariés disposait fin 2013 de 618,365 millions de dinars de ressources, dont 481,022 millions d'excédents reportés, contre 34,199 millions d'excédents fin 2008, et attribue la hausse à la non-exécution de dépenses en 2011-2013 [@cdc-foprolos-2016, p. 473] ;
+- le FMI range en 2015 la réduction des taxes affectées parmi les axes de la réforme fiscale et en attend une perte de recettes de 0,32, 0,10 et 0,09 % du PIB en 2016, 2017 et 2018, estimation ex ante dont la méthode n'est pas décrite [@fmi-2015-article-iv, pp. 18 et 21] ; en 2016, il l'estime à 200 millions de dinars, 0,2 % du PIB [@fmi-2016-cr16138, p. 21].
+
+**Ce que le praticien retient.** Établi : la protection de l'affectation cède quand le budget se resserre [@mccleary-1991-earmarking, pp. 92 et 101] ; sous affectation souple, la dépense visée augmente de moins d'un dinar par dinar affecté [@pantuosco-et-al-2007-lotteries-earmarking ; @cashin-et-al-2017-earmarking-health, p. 3]. Débattu : l'ampleur de cet écart, et l'intérêt de l'affectation quand la procédure budgétaire générale fonctionne mal [@mccleary-1991-earmarking, pp. 84 et 92 ; @radev-allen-2010-extrabudgetary-funds, p. 8]. Les soldes reportés, comme ceux du fonds du logement des salariés de 2008 à 2013, mesurent la rigidité mieux que le taux. Les données tunisiennes ne permettent pas de trancher : aucune série publique ne donne, fonds par fonds et sur longue période, les recettes et les soldes ; rien ne dit si la dotation d'un secteur baisse quand sa recette affectée augmente ; l'incidence des taxes assises sur le chiffre d'affaires n'est pas mesurée.
+
+Littérature arrêtée au mois d'octobre 2026.

@@ -193,7 +193,9 @@ et son empreinte dans le catalogue `sources/`). On ne cite pas de seconde main c
 obtenir : quand un rapport en rapporte un autre, on va chercher l'autre. Un document
 introuvable est dit tel dans `docs/notes/biblio-a-rapatrier.md`, avec les adresses essayées.
 
-**Une page se cite par son numéro, sans dire « du PDF ».** On écrit « p. 34 », ou l'on nomme
+**Une page se cite par son numéro, sans dire « du PDF ».** « p. » pour une page, « pp. » dès
+qu'il y en a plusieurs ou une plage (« p. 34 », « pp. 34-36 », « pp. 120 et 136-137 »), dans les
+locators `[@clé, pp. 34-36]` comme dans le texte. On écrit « p. 34 », ou l'on nomme
 la section du rapport (« chapitre 3, tableau 12 ») quand elle situe mieux le passage ; jamais
 « p. 34 du PDF », « du fichier PDF » ni « PDF p. 34 ». Dans un tableau de sources, la colonne
 s'appelle « Page » ; quand les données d'une figure gardent aussi le rang de la page dans le

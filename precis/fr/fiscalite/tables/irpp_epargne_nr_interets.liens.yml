@@ -1,0 +1,9 @@
+- libelle: Retenue libératoire sur les revenus de capitaux mobiliers des non-résidents
+  parametre: parameters/impot_revenu/capitaux_mobiliers/non_residents/taux_revenus_capitaux_mobiliers.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.non_residents.taux_revenus_capitaux_mobiliers/table/
+- libelle: Retenue sur les intérêts des prêts des banques non établies
+  parametre: parameters/impot_revenu/capitaux_mobiliers/non_residents/taux_interets_prets_banques_non_etablies.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.non_residents.taux_interets_prets_banques_non_etablies/table/
+- libelle: Retenue sur les revenus servis dans un pays à régime fiscal privilégié
+  parametre: parameters/impot_revenu/capitaux_mobiliers/non_residents/taux_etats_regime_fiscal_privilegie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/impot_revenu.capitaux_mobiliers.non_residents.taux_etats_regime_fiscal_privilegie/table/

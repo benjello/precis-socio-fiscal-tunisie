@@ -79,7 +79,7 @@ fiche devient `resolu`, remplace la réserve par la règle sourcée et retire l'
 - Préserve la structure Quarto/Markdown existante (titres, `:::`, en-têtes).
 
 ## Citations
-- Cite avec les clés Pandoc : `[@cle]`, ou `[@cle, art. 1]` / `[@cle, p. 12]` pour un locator.
+- Cite avec les clés Pandoc : `[@cle]`, ou `[@cle, art. 1]` / `[@cle, p. 12]` pour un locator. « p. » pour une seule page, « pp. » dès qu'il y en a plusieurs ou une plage : `[@cle, pp. 12-14]`, `[@cle, pp. 120 et 136-137]`.
 - N'emploie que des clés présentes dans `references.json` (locales ou partagées). Si une source manque, signale-le explicitement comme TODO plutôt que d'inventer une clé.
 - Chaque affirmation factuelle importante (date, montant, réforme) doit être appuyée par une citation issue de la note documentaire.
 

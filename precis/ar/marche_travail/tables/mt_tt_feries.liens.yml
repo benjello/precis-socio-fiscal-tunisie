@@ -1,0 +1,6 @@
+- libelle: عدد أيام عطلة خالصة الأجر بحكم القانون
+  parametre: parameters/marche_travail/temps_travail/jours_feries/nombre.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.jours_feries.nombre/table/
+- libelle: أيام عطلة خالصة الأجر بالاتفاقية المشتركة الإطارية
+  parametre: parameters/marche_travail/temps_travail/convention_cadre/jours_feries.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/marche_travail.temps_travail.convention_cadre.jours_feries/table/

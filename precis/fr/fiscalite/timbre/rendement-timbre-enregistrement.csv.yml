@@ -1,0 +1,73 @@
+# Manifeste du relevé « droit de timbre, autres droits d'enregistrement et taxe unique sur
+# les assurances : prévisions des lois de finances (2001-2026) et réalisations (2018-2023) ».
+#
+# Fichier TENU À LA MAIN, lu par figures/timbre_enregistrement.py (figure fig-te-rendement du
+# chapitre « Le droit de timbre et les droits d'enregistrement »).
+#
+# D'OÙ VIENNENT LES VALEURS. Prévisions : tableau A de chaque loi de finances initiale, ligne
+# par ligne, page du Journal officiel dans `localisateur`. Réalisations : rapports de la Cour
+# des comptes sur la clôture du budget de l'État, qui reprennent l'exécution du ministère des
+# Finances (famille budgétaire, relais). Relevé de la documentaliste du 23 octobre 2026
+# (docs/notes/fiscalite-timbre-enregistrement-series.csv), converti en millions de dinars
+# arrondis au dixième.
+#
+# RUPTURE DE NOMENCLATURE EN 2020. Jusqu'en 2019 : titre « Droits sur les actes et
+# transactions (Enregistrements) », 24-01 timbre, 24-03 autres droits d'enregistrement, 24-04
+# taxe unique sur les assurances. Depuis 2020 : catégorie « Autres impôts et taxes », 18-01
+# timbre, 18-02 « droits sur les actes et transactions », 18-04 taxe unique. 24-03 et 18-02 ne
+# se raccordent pas : deux lignes distinctes (`ligne`), jamais jointes. Pour 2019, la Cour des
+# comptes donne la réalisation du timbre dans les deux nomenclatures : deux lignes.
+#
+# TAXE UNIQUE 2021 ET 2022. Le tableau A imprime 2 MD en regard de 18-04 et 208 et 242 MD en
+# regard de 18-03 (formalités) : permutation probable (réalisations : 228,1 et 244,3 MD pour
+# la taxe, 2,2 et 2,6 MD pour les formalités). La valeur imprimée est gardée, avec `trace:
+# non` : la figure ne la trace pas.
+
+format: long
+cle_de_ligne: [annee, nature, ligne, nomenclature]
+
+colonnes:
+  annee: exercice budgétaire
+  nature: prévision (tableau A de la loi de finances initiale) ou réalisation (Cour des comptes)
+  ligne: timbre ; autres_droits_enregistrement (24-03, jusqu'en 2019) ; actes_transactions (18-02, depuis 2020) ; taxe_unique_assurances
+  nomenclature: ancienne (jusqu'à 2019) ou nouvelle (2020)
+  code_article: article du tableau A (prévisions)
+  libelle_source: libellé de la source, dans sa langue
+  valeur_md: millions de dinars courants
+  trace: oui, ou non pour une valeur imprimée que la figure ne trace pas
+  source: clé de citation
+  localisateur: page
+  remarque: remarque de la documentaliste
+
+sources:
+  - lf-2001
+  - lf-2002
+  - lf-2003
+  - lf-2004
+  - lf-2005
+  - lf-2006
+  - lf-2007
+  - lf-2008
+  - lf-2009
+  - lf-2010
+  - lf-2011
+  - lf-2012
+  - lf-2013
+  - lf-2014
+  - lf-2015
+  - lf-2016
+  - lf-2017
+  - lf-2018
+  - lf-2019
+  - lf-2020
+  - lf-2021
+  - lf-2022
+  - lf-2023
+  - lf-2024
+  - lf-2025
+  - lf-2026
+  - cdc-loireg-2019
+  - cdc-loireg-2020
+  - cdc-loireg-2021
+  - cdc-loireg-2022
+  - cdc-rapport-budget-2023
