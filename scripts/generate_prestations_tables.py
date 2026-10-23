@@ -72,6 +72,8 @@ MOTS = {
         "amen_transfert": "Base mensuelle du transfert de l'Amen social",
         "afnc": "Allocation familiale non contributive, par enfant de moins de 6 ans",
         "afnc_6_18": "Allocation familiale, par enfant de 6 à 18 ans",
+        "gluten": "Montant par mois et par personne",
+        "gluten_lien": "Allocation pour allergie au gluten, par mois et par personne",
         "menage": "Composition du ménage", "plafond_revenu": "Plafond de revenu mensuel",
         "menage1": "Individu", "menage2": "2 personnes", "menage34": "3 ou 4 personnes",
         "menage5": "5 personnes et plus",
@@ -106,6 +108,8 @@ MOTS = {
         "amen_transfert": "القاعدة الشهرية لتحويل الأمان الاجتماعي",
         "afnc": "المنحة العائلية غير المساهماتية عن كلّ طفل دون 6 سنوات",
         "afnc_6_18": "المنحة العائلية عن كلّ طفل بين 6 سنوات و18 سنة",
+        "gluten": "المبلغ عن كلّ شخص وكلّ شهر",
+        "gluten_lien": "منحة حساسية دابوق القمح، عن كلّ شخص وكلّ شهر",
         "menage": "تركيبة الأسرة", "plafond_revenu": "سقف الدخل الشهري",
         "menage1": "فرد", "menage2": "شخصان", "menage34": "3 أو 4 أشخاص",
         "menage5": "5 أشخاص فأكثر",
@@ -212,6 +216,13 @@ CLES_AMEN_ET_AFNC = dict(
         "2025-11-09": "arrete-2025-11-03-allocation-familiale-6-18, art. 2",
     }
 )
+# Allocation pour les patients allergiques au gluten : lois de finances pour 2025 (art. 26) et
+# pour 2026 (art. 35, deuxième alinéa). Les dates sont celles que les lois énoncent (art. 84
+# et 110 : 1er janvier), reprises telles quelles.
+CLES_GLUTEN = {
+    "2025-01-01": "lf-2025, art. 26",
+    "2026-01-01": "lf-2026, art. 35",
+}
 # Plafonds de ressources de l'article 5 du décret gouvernemental n° 2020-317. Les mêmes
 # plafonds majorés pour un membre lourdement handicapé (`eligibilite/handicap_lourd/`) ne
 # sont PAS engendrés : la portée de la majoration attend une lecture du documentaliste.
@@ -309,6 +320,16 @@ def tableaux(langue):
                            m["plafond_menage"].format(menage=m[cle]))
         return df
 
+    def gluten_montant():
+        df = ot.tableau_evolution_datee(
+            [(f"{NC}/allergie_gluten.yaml", m["gluten"], dinars)],
+            cles=CLES_GLUTEN, langue=langue,
+            colonne_periode=m["effet"], colonne_texte=m["texte"],
+        )
+        # L'en-tête ne nomme pas seul la prestation : le lien reçoit un libellé explicite.
+        ot.releve_note(f"{NC}/allergie_gluten.yaml", m["gluten_lien"])
+        return df
+
     return {
         "af_evolution.md": af_evolution,
         "aides_ponctuelles.md": aides_ponctuelles,
@@ -349,6 +370,7 @@ def tableaux(langue):
             cles=CLES_SUPPLEMENT, langue=langue,
             colonne_periode=m["date_etat"], colonne_texte=m["texte"],
         ),
+        "gluten_montant.md": gluten_montant,
         "amen_vs_afnc.md": lambda: ot.tableau_evolution_datee(
             [
                 (f"{NC}/amen_social/allocation_base.yaml", m["amen_transfert"], dinars),

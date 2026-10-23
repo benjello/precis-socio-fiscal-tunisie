@@ -731,12 +731,13 @@ Les lois de finances pour 2025 et 2026 créent plusieurs aides destinées à des
 
 L'aide aux personnes [allergiques au gluten](#g-allergie-gluten) est servie depuis le [1^er^ janvier 2025]{.insecable}, à 30 dinars par mois et par personne, puis à 130 dinars depuis le [1^er^ janvier 2026]{.insecable} (@tbl-nc-gluten-montant).
 
-| Date d'effet | Texte | Montant par mois et par personne |
-|---|---|---|
-| [1^er^ janvier 2025]{.insecable} | loi de finances pour 2025, art. 26 | 30 D |
-| [1^er^ janvier 2026]{.insecable} | loi de finances pour 2026, art. 35 | 130 D |
-
-: Allocation pour les dépenses alimentaires des patients allergiques au gluten {#tbl-nc-gluten-montant}
+```{python}
+#| echo: false
+#| output: asis
+table("gluten_montant",
+      "Allocation pour les dépenses alimentaires des patients allergiques au gluten",
+      "tbl-nc-gluten-montant")
+```
 
 L'état du droit au [19 juillet 2026]{.insecable} est fixé par [l'arrêté conjoint du 14 juillet 2026](#r-nc-ap-2026), qui abroge [l'arrêté conjoint du 30 juillet 2025](#r-nc-ap-gluten). Il réglemente l'allocation de l'article 35 de la loi de finances pour 2026 et ne fixe aucun montant. La demande est écrite et accompagnée d'un certificat d'un médecin de la santé publique ; une commission médicale de trois médecins (affaires sociales, santé, caisse nationale d'assurance maladie) examine la preuve de la maladie ; le demandeur est inscrit dans un registre de données spécifique. L'allocation pour *xeroderma pigmentosum*, de même montant, est réservée aux personnes qui ne relèvent d'aucun régime légal de couverture sociale ; l'allocation pour allergie au gluten reste réservée aux familles pauvres et à revenu limité inscrites à l'Amen social.
 
