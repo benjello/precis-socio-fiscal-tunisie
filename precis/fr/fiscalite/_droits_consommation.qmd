@@ -157,21 +157,20 @@ Le droit de consommation sur les bières, les vins, les alcools et les boissons 
 - **2015 : un tarif au volume.** Le décret gouvernemental n° 2015-1768 du 10 novembre 2015, exécutoire le 24 novembre 2015, remplace les annexes I à III du décret de 1997 par une annexe unique [@decret-gouv-2015-1768-annexes-alcools, art. 1er et 2]. La bière se taxe au centilitre, le vin en bouteille au litre, les spiritueux à un taux uniforme de 50 % ; la distinction entre spiritueux classés et non classés disparaît.
 - **2016 : la loi reprend le tarif.** L'article 44 de la loi de finances pour 2016 abroge le tableau annexé à la loi n° 88-62 et le remplace par un tableau dont les lignes 22-03 à 22-08 reprennent, au 1^er^ janvier 2016, les valeurs de l'annexe de 2015 ; la loi de finances pour 2018 porte ensuite les vermouths et les spiritueux à 100 %, celle pour 2021 révise la bière et les vins [@lf-2016, art. 44 et 92 ; @lf-2018, art. 45 et 67 ; @lf-2021, art. 20 et 42]. La capsule fiscale reste fixée par décret.
 
-: Tarif du droit de consommation sur les bières, les vins et les alcools, 1997-2021 {#tbl-dc-alcools-tarifs}
-
 ```{python}
 #| echo: false
 #| output: asis
-import sys; sys.path.insert(0, "../../../scripts")
-import tarifs
-tarifs.imprime("tarifs/tarifs-releves-droits-consommation.csv", "alcools-tarifs")
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "droit_consommation_alcools.md",
+                               "Tarif du droit de consommation sur les bières, les vins et les alcools, 1997-2021", "tbl-dc-alcools-tarifs", '.sm tbl-colwidths="[8,28,14,13,13,12,12]"'))
 ```
 
 Le tableau retient douze lignes, aux cinq dates où l'une d'elles change. Le tableau annexé à la loi de finances pour 2016 reprend, à partir du 1^er^ janvier 2016, les valeurs de la colonne du 24 novembre 2015. Les taux en pourcentage s'appliquent à l'assiette que fixe la loi n° 88-62 ; le décret de 1997 n'en indique pas. Un tarif de 0,018 D par centilitre fait 1,8 D par litre. Pour les vins mousseux classés, l'édition française de la loi de finances pour 2016 imprime 4,000 D l'unité (p. 3150) et l'édition arabe 24,000 D (p. 3609) ; le tableau retient 24,000 D, valeur de l'annexe de 2015 et des lois de 2018 et 2021. Pour les positions 22-05, 22-06 et Ex 22-08, le décret de 2013 porte la mention « sans modification » : la valeur de la colonne du 21 février 2013 est celle de 1997. Sources : annexes I à III du décret de 1997, p. 1316 [@decret-97-1368-regime-alcools] ; tableaux du décret de 2013 [@decret-2013-929-alcools] ; annexe du décret de 2015 [@decret-gouv-2015-1768-annexes-alcools] ; tableaux annexés aux lois de finances pour 2018 et 2021 [@lf-2018, art. 45 ; @lf-2021, art. 20].
 
 <!-- TODO (documentaliste) : vins mousseux de l'article 44 de la LF 2016 : « 4,000 D » dans l'édition française, « 24,000 » dans l'édition arabe ; confirmer la coquille auprès d'un second exemplaire du JORT n° 104 de 2015. -->
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré ; le relevé est tenu à la main dans tarifs/tarifs-releves-droits-consommation.csv en attendant que les paramètres soient datés et sourcés en amont. -->
 
 <!-- TODO (documentaliste) : les lois de finances antérieures à 2018 (1998-2017) n'ont pas été dépouillées une à une pour les positions 22-05, 22-06 et Ex 22-08 ; le tableau de la loi n° 88-62 a pu les modifier entre 1997 et 2015 (LF 1998, art. 47, contenu non lu). Le texte des lois de finances pour 2022 à 2026 n'a pas été confronté ligne à ligne au tableau consolidé le plus récent. -->
 

@@ -1,0 +1,76 @@
+- libelle: 'KC : chirurgie opératoire (en 2008, ou anesthésie ou radiologie interventionnelle)'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/chirurgie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.chirurgie/table/
+- libelle: 'KE : acte de spécialité d''un médecin dans la limite de ses compétences'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/specialite.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.specialite/table/
+- libelle: 'Rd en 1996, Z en 2008 : radiodiagnostic par un médecin radiologue ou un
+    médecin dentiste'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/radiodiagnostic.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.radiodiagnostic/table/
+- libelle: 'Ri : radiologie interventionnelle'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/radiologie_interventionnelle.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.radiologie_interventionnelle/table/
+- libelle: 'Rt en 1996, RT en 2008 : radiothérapie'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/radiotherapie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.radiotherapie/table/
+- libelle: 'E : échographie'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/echographie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.echographie/table/
+- libelle: 'B : biologie (en 1996, par un biologiste ou un pharmacien autorisé)'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/biologie.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.biologie/table/
+- libelle: 'P : anatomie et cytologie pathologiques'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/anatomie_cytologie_pathologiques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.anatomie_cytologie_pathologiques/table/
+- libelle: 'APB : prélèvement de produits biologiques pour analyse'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/prelevement_produits_biologiques.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.prelevement_produits_biologiques/table/
+- libelle: 'D : acte d''un médecin dentiste'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/medecin_dentiste.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.medecin_dentiste/table/
+- libelle: 'SF : acte de sage-femme'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/sage_femme.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.sage_femme/table/
+- libelle: 'AMM, AMO, AMY : physiothérapeute, orthophoniste, orthoptiste'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/physiotherapeute.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.physiotherapeute/table/
+- libelle: 'AMM, AMO, AMY : physiothérapeute, orthophoniste, orthoptiste'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/orthophoniste.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.orthophoniste/table/
+- libelle: 'AMM, AMO, AMY : physiothérapeute, orthophoniste, orthoptiste'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/orthoptiste.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.orthoptiste/table/
+- libelle: 'AMI : infirmier'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/infirmier.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.infirmier/table/
+- libelle: 'S 10, S 20, S 30, S 35, S 40 : scanographie, par cotation'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/scanographie/s10.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.scanographie.s10/table/
+- libelle: 'S 10, S 20, S 30, S 35, S 40 : scanographie, par cotation'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/scanographie/s20.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.scanographie.s20/table/
+- libelle: 'S 10, S 20, S 30, S 35, S 40 : scanographie, par cotation'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/scanographie/s30.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.scanographie.s30/table/
+- libelle: 'S 10, S 20, S 30, S 35, S 40 : scanographie, par cotation'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/scanographie/s35.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.scanographie.s35/table/
+- libelle: 'S 10, S 20, S 30, S 35, S 40 : scanographie, par cotation'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/scanographie/s40.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.scanographie.s40/table/
+- libelle: 'I 3, I 10, I 15, I 20, I 25 : imagerie par résonance magnétique, par cotation'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/imagerie_resonance_magnetique/i3.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.imagerie_resonance_magnetique.i3/table/
+- libelle: 'I 3, I 10, I 15, I 20, I 25 : imagerie par résonance magnétique, par cotation'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/imagerie_resonance_magnetique/i10.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.imagerie_resonance_magnetique.i10/table/
+- libelle: 'I 3, I 10, I 15, I 20, I 25 : imagerie par résonance magnétique, par cotation'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/imagerie_resonance_magnetique/i15.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.imagerie_resonance_magnetique.i15/table/
+- libelle: 'I 3, I 10, I 15, I 20, I 25 : imagerie par résonance magnétique, par cotation'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/imagerie_resonance_magnetique/i20.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.imagerie_resonance_magnetique.i20/table/
+- libelle: 'I 3, I 10, I 15, I 20, I 25 : imagerie par résonance magnétique, par cotation'
+  parametre: parameters/sante/tarifs_hospitaliers/malades_payants/lettres_cles/imagerie_resonance_magnetique/i25.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/sante.tarifs_hospitaliers.malades_payants.lettres_cles.imagerie_resonance_magnetique.i25/table/

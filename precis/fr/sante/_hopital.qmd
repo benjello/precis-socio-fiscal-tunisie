@@ -53,23 +53,18 @@ Une [loi de finances antérieure](#r-hopital-caisses-1988) montre que les organi
 
 Le [malade payant](#g-malade-payant), que ne couvrent ni la gratuité, ni les tarifs réduits, ni une prise en charge conventionnelle, paie à la structure publique un tarif réglementaire par consultation, par journée d'hospitalisation et par acte. [L'arrêté de 1996](#r-hopital-tarifs-1996), exécutoire le 4 janvier 1997, succède à [celui de 1993](#r-hopital-tarifs-1993) et relève chacun de ces tarifs.
 
-| Tarif | Arrêté du 25 janvier 1993<br>(D) | Arrêté du 19 décembre 1996<br>(D) |
-|---|---|---|
-| Consultation de médecine générale ou dentaire | 5 | 7 |
-| Consultation de spécialité, autres spécialistes | 8 | 10 |
-| Consultation de spécialité, professeurs et maîtres de conférence agrégés | 12 | 14 |
-| Journée d'hospitalisation, hôpital de circonscription | 12 | 15 |
-| Journée d'hospitalisation, hôpital régional, médecine | 15 | 20 |
-| Journée d'hospitalisation, hôpital régional, chirurgie | 20 | 30 |
-| Journée d'hospitalisation, établissement universitaire : médecine générale, pédiatrie, pneumo-phtisiologie, dermato-vénérologie, psychiatrie | 18 | 30 |
-| Journée d'hospitalisation, établissement universitaire : nutrition, endocrinologie, cardiologie, gastro-entérologie, gynécologie-obstétrique, rhumatologie, neurologie | 20 | 35 |
-| Journée d'hospitalisation, établissement universitaire : néphrologie | 30 | 35 |
-| Journée d'hospitalisation, établissement universitaire : chirurgie et spécialités chirurgicales, radiothérapie | 30 | 40 |
-| Journée d'hospitalisation, établissement universitaire : réanimation médicale et soins intensifs | 30 | 60 |
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "hopital_tarifs_malades_payants.md",
+                               "Tarifs des consultations et d'une journée d'hospitalisation pour les malades payants des structures sanitaires publiques, arrêtés de 1993 et de 1996", "tbl-hopital-tarifs-malades-payants", '.sm .libelle-long tbl-colwidths="[60,20,20]"'))
+```
 
-: Tarifs des consultations et d'une journée d'hospitalisation pour les malades payants des structures sanitaires publiques, arrêtés de 1993 et de 1996 {#tbl-hopital-tarifs-malades-payants}
-
-- **Les tarifs réduits en découlent.** Le décret de 1998 fixe les [tarifs réduits](./_histoire.html#r-hist-1998) en pourcentage de ces tarifs : 20 % à 30 % de la consultation, forfait égal à une journée d'hospitalisation, 20 % des actes dans la limite de 30 D. Les [montants de 1998](./_histoire.html#tbl-soins-assures-hopital) en dinars figurent au tableau des tarifs réduits.
+- **Les tarifs réduits en découlent.** Le décret de 1998 fixe les [tarifs réduits](./_histoire.html#r-hist-1998) en pourcentage de ces tarifs : 20 % à 30 % de la consultation, forfait égal à une journée d'hospitalisation, 20 % des actes dans la limite de 30 D. Les [montants de 1998](./_histoire.html#tbl-soins-assures-hopital) de l'hospitalisation figurent au tableau des tarifs réduits.
 - **Un tarif de facturation n'est pas un tarif de remboursement.** L'arrêté de 1996 prévoit des réductions conventionnelles de 15 % au plus et précise que ses tarifs [ne sont pas opposables](#r-hopital-tarifs-1996) comme base de remboursement par les organismes d'assurance et de prévoyance sociale. Le tarif facturé au malade payant ne mesure donc pas la charge d'une caisse ; la [carte des périmètres](./_couverture.html#sec-sante-perimetres) distingue ces écritures.
 - **Les arrêtés suivants portent sur les actes, non sur la consultation ni sur la journée.** [L'arrêté de 1998](#r-hopital-tarifs-1998) ajoute des forfaits de procréation médicalement assistée, [celui de 2003](#r-hopital-tarifs-2003) deux actes de chirurgie réfractive au laser, [celui de 2008](#r-hopital-tarifs-2008) les lettres clés de la nomenclature de 2006 ; aucun ne modifie les tarifs du tableau. <!-- RECHERCHE r-sante-tarifs-malades-payants-apres-2008 : arrêtés de tarifs des malades payants postérieurs à 2008 (voir docs/recherches.yml) -->
 
@@ -77,40 +72,27 @@ Le [malade payant](#g-malade-payant), que ne couvrent ni la gratuité, ni les ta
 
 Le tarif d'un acte est le produit de la valeur de sa [lettre clé](#g-lettre-cle) par son coefficient dans la nomenclature générale des actes professionnels ; les valeurs de 1996 et de 2008 sont celles des [arrêtés de 1996](#r-hopital-tarifs-1996) et [de 2008](#r-hopital-tarifs-2008).
 
-| Lettre clé | Acte | 1996<br>(D) | 2008<br>(D) |
-|---|---|---|---|
-| KC | chirurgie opératoire (en 2008, ou anesthésie ou radiologie interventionnelle) | 1,400 | 1,400 |
-| KE | acte de spécialité d'un médecin dans la limite de ses compétences | 1,200 | 1,200 |
-| Rd en 1996, Z en 2008 | radiodiagnostic par un médecin radiologue ou un médecin dentiste | 0,900 | 0,900 |
-| Ri | radiologie interventionnelle | 0,900 | rattachée à KC |
-| Rt en 1996, RT en 2008 | radiothérapie | 0,900 | 0,900 |
-| E | échographie | — | 3,600 |
-| B | biologie (en 1996, par un biologiste ou un pharmacien autorisé) | 0,160 | 0,160 |
-| P | anatomie et cytologie pathologiques | 0,160 | 0,160 |
-| APB | prélèvement de produits biologiques pour analyse | 0,800 | 0,800 |
-| D | acte d'un médecin dentiste | 0,850 | 0,850 |
-| SF | acte de sage-femme | 0,600 | 0,600 |
-| AMM, AMO, AMY | physiothérapeute, orthophoniste, orthoptiste | 0,600 | 0,600 |
-| AMI | infirmier | 0,500 | 0,500 |
-| S 10, S 20, S 30, S 35, S 40 | scanographie, par cotation | — | 90 ; 180 ; 240 ; 290 ; 325 |
-| I 3, I 10, I 15, I 20, I 25 | imagerie par résonance magnétique, par cotation | — | 50 ; 180 ; 270 ; 325 ; 400 |
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "hopital_lettres_cles.md",
+                               "Valeurs des lettres clés des actes professionnels dans les structures sanitaires publiques, 1996 et 2008", "tbl-hopital-lettres-cles", '.sm tbl-colwidths="[12,58,15,15]"'))
+```
 
-: Valeurs des lettres clés des actes professionnels dans les structures sanitaires publiques, 1996 et 2008 {#tbl-hopital-lettres-cles}
-
-| Acte | Arrêté de 1996<br>(D) | Arrêté de 1998<br>(D) | Arrêté de 2003<br>(D) | Arrêté de 2008<br>(D) |
-|---|---|---|---|---|
-| Hémodialyse, par séance (dont 2 D affectés à la lutte contre l'insuffisance rénale) | 89 | 89 | — | — |
-| Lithotripsie, par acte et par localisation | 500 | 500 | — | — |
-| Imagerie par résonance magnétique | 360 | 360 | — | forfait abrogé |
-| Accouchement normal : établissement universitaire ; hôpital régional ; hôpital de circonscription ou maternité périphérique | 150 ; 100 ; 50 | 150 ; 100 ; 50 | — | — |
-| Accouchement par césarienne : établissement universitaire ; hôpital régional | 300 ; 200 | 300 ; 200 | — | — |
-| Scanner du crâne ; scanner du reste du corps | 80 ; 100 | 80 ; 100 | — | — |
-| Fécondation in vitro, par essai | — | 250 | — | — |
-| Insémination avec sperme du conjoint, par essai | — | 50 | — | — |
-| Photo-kératectomie au laser, par œil (100 D de plus en cas de reprise) | — | — | 300 | — |
-| Kératomileusis in situ au laser, par œil ; les deux yeux opérés ensemble | — | — | 400 ; 700 | — |
-
-: Forfaits d'actes dans les structures sanitaires publiques, arrêtés de 1996, 1998, 2003 et 2008 {#tbl-hopital-forfaits-actes}
+```{python}
+#| echo: false
+#| output: asis
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "hopital_forfaits_actes.md",
+                               "Forfaits d'actes dans les structures sanitaires publiques, arrêtés de 1996, 1998, 2003 et 2008", "tbl-hopital-forfaits-actes", '.sm .libelle-long tbl-colwidths="[44,14,14,14,14]"'))
+```
 
 Le tiret signale un forfait que l'arrêté ne traite pas. Les forfaits de 1998 reprennent ceux de 1996.
 
