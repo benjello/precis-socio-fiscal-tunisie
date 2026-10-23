@@ -149,8 +149,9 @@ et a été lu pour l'IRPP. **Ces deux lois ne sont donc plus des textes « absen
 pas confondre l'absence en ligne du fascicule français de 2015 avec celle de son extrait
 français conservé localement.
 
-**OCR ciblé.** Le texte initial de la TVA au JORT n° 39 de 1988 (`Jo03988.pdf`) est un scan
-présent localement : vérifier ses annexes sur l'image après OCR. Le code fiscal du JORT n° 1 de
+**OCR ciblé.** Le texte initial de la TVA au JORT n° 39 de 1988 (`Jo03988.pdf`, p. 827-846)
+a été océrisé le 23 octobre 2026 (`docs/notes/ocr-cibles-2026-10-23.md`) ; les tableaux et
+chiffres se relèvent encore à l'image avant citation. Le code fiscal du JORT n° 1 de
 1990 a été océrisé le 4 octobre 2026 ; ses annexes II et III (forfait) sont relues à l'image
 (`docs/notes/fiscalite-regime-forfaitaire.md`).
 
@@ -973,8 +974,9 @@ liste qui suit le tableau, citations comprises. Restent :
   (fascicule français absent de pist.tn ; folio arabe à trancher entre 6420-6421 et 6421-6422) ;
   loi de finances pour 2026, art. 35 p. 4238. La date de la loi n° 2017-47 est tranchée au JORT
   n° 50 de 2017 : 15 juin 2017, publié le 23 juin, exécutoire le 3 juillet 2017.
-- **OCR ciblé** : décret n° 75-952 (`1975/fr/Jo08775.pdf`, scan local) pour la série
-  des indemnités familiales antérieure à 1986. La circulaire n° 42 de 1996,
+- **Décret n° 75-952** (`1975/fr/Jo08775.pdf`, p. 2884) : océrisé et lu à l'image le
+  23 octobre 2026 (`docs/notes/ocr-cibles-2026-10-23.md`) : taux mensuels par enfant au
+  1er janvier 1976 relevés ; reste à les verser à la série des indemnités familiales antérieure à 1986. La circulaire n° 42 de 1996,
   **textuelle et déjà locale** dans `1996/fr/Jo09496.pdf` (à partir de la p. 2349),
   peut être lue sans OCR pour établir les règles de gestion. Les arrêtés des quotas
   régionaux des cartes AMG et le décret d'application du fonds contre la perte
@@ -1621,9 +1623,10 @@ liste qui suit le tableau, citations comprises. Restent :
   présent dans les deux éditions textuelles du JORT n° 129 de 2024 ; relever taux,
   assiette et dates avant d'affirmer qu'ils sont fixés. Le vieux relevé
   `todo-localisation.md` le classe encore « absent du corpus » : **ce classement est périmé**.
-- **OCR ciblé** : la loi n° 65-17 sur les risques couverts par le régime des étudiants
-  se trouve au JORT n° 34 de 1965 (`1965/fr/Jo03465.pdf`), scan local. Lire l'article
-  pertinent après OCR, au lieu de déduire les branches des seuls décrets de 1992 et 2003.
+- **Loi n° 65-17** (régime des étudiants, `1965/fr/Jo03465.pdf`, p. 787) : océrisée et lue
+  à l'image le 23 octobre 2026 (`docs/notes/ocr-cibles-2026-10-23.md`) ; elle couvre les soins
+  et les allocations familiales (art. 4 à 7). À reporter dans le chapitre ; numéro de fascicule
+  à trancher (l'en-tête du PDF dit n° 32, la base n° 34).
 - **À rechercher/établir** : assiette exacte du régime général, part historique des
   prestations familiales dans le taux global, cotisation maladie des agents publics
   avant 2007 et ventilation des parts résiduelles entre risques ; plusieurs recherches
@@ -4132,9 +4135,9 @@ reprendre sans refaire la même recherche :
    art. 26 (Prestations) ; décrets n° 97-1368 et 2015-1768 (Fiscalité) ; décret
    n° 2015-2217 (Rémunérations). Vérifier chaque article à sa page, pas seulement
    la présence du fascicule.
-2. **Océriser par cible**, avec contrôle à l'image : loi n° 65-17 (étudiants), décret
-   n° 75-952 (indemnités familiales), code fiscal de 1990 (annexe II) et code TVA
-   de 1988. La convention bancaire arabe de 2014 est **extractible après NFKC**,
+2. **Océriser par cible** — fait le 23 octobre 2026 (`docs/notes/ocr-cibles-2026-10-23.md`) pour
+   la loi n° 65-17 (étudiants), le décret n° 75-952 (indemnités familiales), le code fiscal de
+   1990 (annexe II) et le code TVA de 1988 ; reste à exploiter les textes dans les chapitres. La convention bancaire arabe de 2014 est **extractible après NFKC**,
    sans OCR. Les fascicules sont déjà locaux ; l'OCR ne peut créer une annexe absente.
 3. **Chercher hors corpus** : montants/dates PNAFN auprès de l'administration, statuts
    annexés du personnel des caisses, méthode du barème d'actualisation des retraites.
