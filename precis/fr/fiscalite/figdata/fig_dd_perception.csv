@@ -1,0 +1,48 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-23
+# séries (tunisia_data) : droits-douane-perception, recettes-fiscales-composition, ins-commerce-exterieur-par-regime
+# sources (citation) : @bct-ra-1998, @gatt-1994-tpr-tunisie, @omc-2005-tpr-tunisie, @omc-2016-tpr-tunisie, @omc-2025-tpr-tunisie, @minfin-recettes-fiscales, @ins-annuaire
+# fiches : sources/minfinances-recettes-fiscales.md, sources/ins-commerce-exterieur-par-regime.md
+# méthode/hypothèses : Le taux de perception implicite est un calcul du précis, non une valeur publiée : rubrique « droits de douane » du ministère (redevances comprises) divisée par les importations CAF. Les moyennes simples des rapports extérieurs diffèrent par la définition (neuf ou onze chiffres, droits complémentaires provisoires compris ou non) ; elles ne sont pas des taux de perception., sources/minfinances-recettes-fiscales.md, STATISTIQUE PUBLIQUE, non budgétaire. L'ANNUAIRE NE DÉFINIT PAS LES DEUX RÉGIMES dans les pages lues ; le libellé arabe est « régime non résident » (نظام غير مقيم), qui n'est pas la notion d'entreprise totalement exportatrice du code de 1993 : ne pas assimiler sans source. PART NON PUBLIÉE : part_off_shore_pct = 100 × régime off shore / ensemble, tels qu'imprimés, arrondie au dixième. ARBITRAGE : chaque année est imprimée dans une à trois éditions ; la série retient la dernière (même source, même tableau, millésimes successifs) ; nb_editions_differentes compte les éditions antérieures aux chiffres différents — 2001, 2002, 2004 (exportations 12 054,9 puis 12 403,8), 2005, 2007, 2014, 2021 ; toutes les attestations sont dans ins-commerce-exterieur-par-regime-editions. LA DERNIÈRE ANNÉE D'UNE ÉDITION EST SOUVENT RÉVISÉE PAR LA SUIVANTE (dix des treize attestations révisées) : 2023, imprimée dans la seule édition 2019-2023 (`nb_editions` = 1), peut l'être encore. EN 2004 ET 2005 LA RÉVISION PORTE SUR LE SEUL RÉGIME OFF SHORE (+ 2 à + 4 %), le régime général ne bougeant pas ; 2003 et les années antérieures ne sont imprimées dans aucune édition postérieure à cette révision : la source ne dit pas s'il s'agit de chiffres provisoires devenus définitifs ou d'un changement de méthode — ne pas tracer la part d'un trait continu à travers 2003-2004 sans le dire. Régime général + régime off shore = ensemble à 0,1 près (arrondis). RELU À L'IMAGE : en-têtes et trois lignes de total des 22 éditions. Ventilation par groupement sectoriel non transcrite. Montants courants ; aucun ratio au PIB. Série arrêtée à 2023 (édition 2019-2023).
+# note : Taux de perception implicite des droits de douane, redevance comprise, 1988-2023, et moyennes simples des taux du tarif publiées par le GATT et l'OMC, 1987-2025, en %
+Année,"Rubrique « droits de douane », redevances comprises (MD)",Importations (MD),Source des importations,Importations du régime général (MD),"Taux de perception implicite, ensemble (%)","Taux de perception implicite, régime général (%)",Moyenne simple des taux du tarif (%),Source de la moyenne,Moyenne tracée
+1987,,,,,,,32.5,gatt-1994-tpr-tunisie,oui
+1988,398.8,3167.0,Banque centrale,,12.59,,30.2,gatt-1994-tpr-tunisie,oui
+1989,458.0,4164.0,Banque centrale,,11.0,,28.5,gatt-1994-tpr-tunisie,oui
+1990,495.6,4826.0,Banque centrale,,10.27,,,,
+1991,570.1,4789.0,Banque centrale,,11.9,,,,
+1992,660.5,5689.0,Banque centrale,,11.61,,,,
+1993,697.0,6171.0,Banque centrale,,11.29,,,,
+1994,735.4,6647.0,Banque centrale,,11.06,,30.7,omc-2005-tpr-tunisie,oui
+1994,735.4,6647.0,Banque centrale,,11.06,,33.2,gatt-1994-tpr-tunisie,non
+1995,773.0,7464.0,Banque centrale,,10.36,,,,
+1996,741.0,7499.0,Banque centrale,,9.88,,,,
+1997,704.3,8794.0,Banque centrale,,8.01,,,,
+1998,714.0,9489.5,INS,6265.2,7.52,11.4,,,
+1999,687.1,10070.5,INS,6858.3,6.82,10.02,,,
+2000,641.6,11738.0,INS,8250.5,5.47,7.78,,,
+2001,655.2,13697.3,INS,9255.6,4.78,7.08,,,
+2002,594.8,13510.9,INS,8971.6,4.4,6.63,,,
+2003,553.6,14038.9,INS,9030.9,3.94,6.13,,,
+2004,556.7,16185.1,INS,10669.1,3.44,5.22,32.7,omc-2005-tpr-tunisie,non
+2005,505.9,17291.5,INS,11447.2,2.93,4.42,31.3,omc-2016-tpr-tunisie,oui
+2005,505.9,17291.5,INS,11447.2,2.93,4.42,31.7,omc-2005-tpr-tunisie,non
+2006,489.8,20003.5,INS,13352.0,2.45,3.67,44.7,omc-2016-tpr-tunisie,oui
+2007,514.3,24437.3,INS,16330.4,2.1,3.15,26.1,omc-2016-tpr-tunisie,oui
+2008,584.7,30241.2,INS,21681.9,1.93,2.7,24.7,omc-2016-tpr-tunisie,oui
+2009,520.2,25877.6,INS,18132.0,2.01,2.87,22.9,omc-2016-tpr-tunisie,oui
+2010,563.9,31816.7,INS,21969.8,1.77,2.57,18.8,omc-2016-tpr-tunisie,oui
+2011,561.2,33695.4,INS,22751.9,1.67,2.47,18.7,omc-2016-tpr-tunisie,oui
+2012,715.5,38178.0,INS,27433.6,1.87,2.61,18.2,omc-2016-tpr-tunisie,oui
+2013,728.9,39505.5,INS,28171.0,1.85,2.59,16.4,omc-2016-tpr-tunisie,oui
+2014,825.3,42012.8,INS,29999.2,1.96,2.75,,,
+2015,832.5,39609.7,INS,27794.3,2.1,3.0,18.2,omc-2016-tpr-tunisie,oui
+2016,639.7,41746.8,INS,28325.5,1.53,2.26,14.1,omc-2016-tpr-tunisie,oui
+2017,741.9,50021.6,INS,33908.6,1.48,2.19,,,
+2018,1208.3,60010.3,INS,40308.4,2.01,3.0,,,
+2019,1284.4,63291.6,INS,42435.6,2.03,3.03,,,
+2020,1228.4,51536.2,INS,34545.6,2.38,3.56,,,
+2021,1420.1,62864.9,INS,42269.1,2.26,3.36,,,
+2022,1784.2,82788.9,INS,57185.1,2.16,3.12,,,
+2023,1849.0,79146.3,INS,53407.3,2.34,3.46,,,
+2025,,,,,,,22.3,omc-2025-tpr-tunisie,oui
+2025,,,,,,,23.8,omc-2025-tpr-tunisie,non

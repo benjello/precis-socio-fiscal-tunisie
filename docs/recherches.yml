@@ -4101,6 +4101,84 @@
   - Journal officiel tunisien de 1912 (Gallica)
   - loi n° 60-38 (LF 1961), art. 11, et loi n° 58-45, art. 21 à 24 (corpus local, JORT n° 60/1960 et n° 25/1958)
 
+- id: r-douane-legislation-1955
+  objet: décrets du 29 décembre 1955 portant refonte et codification de la législation douanière (code des douanes abrogé par la loi n° 2008-34, art. 3) et portant mise en vigueur d'un nouveau tarif des douanes (abrogé par la loi n° 59-95, art. 4)
+  ou: [precis/fr/fiscalite/_droits_douane.qmd#sec-dd-antecedents]
+  requetes:
+    titres_fts: ['"29 decembre 1955" AND douan*', '"refonte et codification"', '"tarif des douanes"']
+    titres_like: [29 decembre 1955, refonte et codification de la legislation douaniere]
+    depuis: 1955-12-29
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas]
+    couverture: 'FTS « 29 decembre 1955 » AND douan* : 23 notices, des arrêtés modifiant l''arrêté du 29 décembre 1955 d''application du code (1958-2001) et le rectificatif de 1957 (JORT n° 16, p. 218) sur le protocole d''union douanière ; LIKE « 29 decembre 1955 » avec « douan » : 23 ; FTS « refonte et codification » : 23 notices, dont une seule sur la douane (loi n° 61-48 du 24 novembre 1961 modifiant le décret de 1955, JORT n° 52, p. 1528), les autres sur la législation des changes (loi n° 76-18) ; LIKE « refonte et codification de la legislation douaniere » : 1 (la loi n° 61-48) ; FTS « tarif des douanes » : 11 notices, aucune de 1955. Les deux décrets sont connus par les visas de la loi n° 59-95 (p. 886) et par la loi n° 2008-34, art. 3 (p. 1748). Lacunes : jort_cache et le corpus local commencent en 1956 ; le Journal officiel tunisien de 1955 n''est pas parcouru.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - Journal officiel tunisien de décembre 1955 et janvier 1956 (Gallica ou archives nationales)
+  - vérifier le fascicule du rectificatif de 1957 (JORT n° 16, p. 218), absent du fichier Jo01657.pdf
+
+- id: r-douane-union-douaniere-protectorat
+  objet: régime douanier du Protectorat avant le 1er octobre 1959 — union douanière franco-tunisienne (convention économique et financière et protocole de 1955), tarifs et conventions antérieurs
+  ou: [precis/fr/fiscalite/_droits_douane.qmd#sec-dd-antecedents]
+  requetes:
+    titres_fts: ['"union douaniere"', convention AND commerciale AND (France OR francaise)]
+    titres_like: [union douaniere]
+    depuis: 1881-05-12
+  periode:
+    jusqu_au: 1959-09-30
+    motif: régime abrogé par l'art. 1 de la convention commerciale et tarifaire du 5 septembre 1959, en vigueur le 1er octobre 1959 (loi n° 59-110)
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas]
+    couverture: 'FTS « union douaniere » : 1 notice (décret du 29 décembre 1955 relatif au protocole d''application, rectificatif au JORT n° 16 de 1957, p. 218, non lu) ; LIKE « union douaniere » : 1 (la même) ; FTS « convention AND commerciale AND (France OR francaise) » : 7 notices, dont avant 1965 la convention de 1959 (loi n° 59-110, décret n° 59-283, lus) et son protocole additionnel de 1960 (décret-loi n° 60-28, décret n° 60-340). Lacunes : rien avant 1956 dans jort_cache ni dans le corpus local ; Bulletin économique et social de la Tunisie non parcouru.'
+    couvert_jusqu_au: 1959-09-30
+    resultat: aucun
+  a_faire:
+  - Journal officiel tunisien 1955 (conventions franco-tunisiennes du 3 juin 1955 et décrets de ratification)
+  - Bulletin économique et social de la Tunisie (régime douanier, tarifs)
+
+- id: r-douane-tableaux-tarifs
+  objet: tableaux des taux annexés aux lois n° 59-95 (tableaux A et B), n° 73-45 (tableaux A et B) et n° 89-113 (tarif des droits de douane à l'importation), publiés hors du Journal officiel
+  ou: [precis/fr/fiscalite/_droits_douane.qmd#sec-dd-1959, precis/fr/fiscalite/_droits_douane.qmd#sec-dd-etat]
+  requetes:
+    titres_fts: ['"nouveau tarif"', '"tarif des douanes"']
+    titres_like: [tarif des droits de douane a l%importation]
+    depuis: 1959-08-18
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'FTS « nouveau tarif » : 13 notices, « tarif des douanes » : 11 ; LIKE « tarif des droits de douane a l%importation » : 58 notices (1990-2022, rubriques de lois de finances et décrets modificatifs) ; aucune ne publie les tableaux. Lu à l''image : JORT n° 43 de 1959, p. 885 (annonce de la vente du tarif en fascicule n° 59-5, 1 dinar) ; JORT n° 28 de 1973, pp. 1134-1136 ; JORT n° 88 de 1989, p. 2142 : tableaux non reproduits. Lacunes : publications de l''Imprimerie officielle hors JORT non parcourues ; tarif consolidé de la direction générale des douanes non consulté.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - fascicule « Le Nouveau Tarif des Douanes » n° 59-5 (1959) et éditions de 1973 et 1989 (Imprimerie officielle, bibliothèques)
+  - tarif en ligne de la direction générale des douanes (état au 1er janvier 2026)
+
+- id: r-douane-decrets-demantelement-ue
+  objet: décrets appliquant aux produits d'origine communautaire le calendrier de démantèlement de l'accord d'association (art. 11), 1996-2007
+  ou: [precis/fr/fiscalite/_droits_douane.qmd#sec-dd-accords-ue]
+  requetes:
+    titres_fts: [origine AND (communautaire OR "union europeenne" OR "communaute europeenne") AND douane, demantelement]
+    titres_like: [demantelement]
+    depuis: 1996-01-01
+  periode:
+    jusqu_au: 2008-12-31
+    motif: calendrier de douze ans au plus (accord, art. 6), première année 1996 (LF 1997, art. 21)
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Période 1996-2008 : FTS « demantelement » : 2 notices (LF 1997, art. 21 ; LF 1999, art. 35) ; LIKE « demantelement » : 2 ; FTS origine AND (communautaire OR « union europeenne » OR « communaute europeenne ») AND douane : 1 (LF 1999, art. 35). Lus au sommaire du JORT n° 105 de 1996 : décrets n° 96-2471 à 96-2477 du 30 décembre 1996 (lait, agriculture et pêche, produits agricoles, droit complémentaire provisoire, médicaments, cahiers scolaires, produits agro-alimentaires) : aucun ne vise l''origine communautaire. Lacunes : décrets de fin décembre 1997 à 2007 non lus ; plein texte non joué.'
+    couvert_jusqu_au: 2008-12-31
+    resultat: aucun
+  a_faire:
+  - lire les décrets de réduction des droits de douane publiés fin décembre de chaque année 1995-2007 (ex. décrets n° 96-2471 à 96-2477, JORT n° 105 de 1996)
+  - jouer le plein texte sur « produits originaires » et « annexe 3 »/« annexe 4 »
+
 - id: r-magistrats-majorations-indemnite
   objet: décret majorant l'indemnité de magistrature des magistrats de l'ordre judiciaire (seul ou avec le Tribunal administratif et la Cour des comptes), publié entre le décret n° 2012-3554 et le décret n° 2026-65, autre que 2015-463, 2016-742, 2017-1364, 2019-210, 2019-285, 2019-1132, 2020-768 et 2022-798 ; en particulier pour 2014 et 2021
   ou: [precis/fr/remunerations_publiques/_regime_statutaire_autonome.qmd#sec-statutaire-magistrats-niveau]

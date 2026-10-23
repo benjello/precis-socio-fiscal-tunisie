@@ -1,0 +1,47 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-23
+# séries (tunisia_data) : droits-douane-pib
+# sources (citation) : @minfin-recettes-fiscales, @minfin-indicateurs-fp, @ins-cnat-2015
+# fiches : 
+# méthode/hypothèses : Le PIB n'est pas chaîné : base 1983 présumée de 1986 à 1991, base 1983 de 1992 à 1996, base 1997 de 1997 à 2001 (rétropolée) et de 2005 à 2009, valeur propre au ministère des Finances, rattachée à aucune base, de 2002 à 2004 et en 2025, base 2015 de l'INS de 2010 à 2024 (rétropolée pour 2010-2014). Chaque changement de base est une rupture.
+# note : Part des droits de douane, redevance de prestations douanières comprise, dans le PIB, par segment de base du PIB, 1986-2025, en %
+Année,"Rubrique « droits de douane », redevances comprises (MD)",PIB (MD),Part du PIB (%),Segment de PIB,PIB rétropolé
+1986,277.8,7160.4,3.88,pib-minfin 1986-1991 (base 1983 présumée),non précisé par la source
+1987,348.8,8035.3,4.341,pib-minfin 1986-1991 (base 1983 présumée),non précisé par la source
+1988,398.8,8660.6,4.605,pib-minfin 1986-1991 (base 1983 présumée),non précisé par la source
+1989,458.0,9589.8,4.776,pib-minfin 1986-1991 (base 1983 présumée),non précisé par la source
+1990,495.6,10815.7,4.582,pib-minfin 1986-1991 (base 1983 présumée),non précisé par la source
+1991,570.1,12028.8,4.739,pib-minfin 1986-1991 (base 1983 présumée),non précisé par la source
+1992,660.5,13705.9,4.819,pib-minfin 1992-1996 (base 1983),non précisé par la source
+1993,697.0,14662.9,4.753,pib-minfin 1992-1996 (base 1983),non précisé par la source
+1994,735.4,15813.8,4.65,pib-minfin 1992-1996 (base 1983),non précisé par la source
+1995,773.0,17051.8,4.533,pib-minfin 1992-1996 (base 1983),non précisé par la source
+1996,741.0,19066.2,3.886,pib-minfin 1992-1996 (base 1983),non précisé par la source
+1997,704.3,22943.9,3.07,pib-minfin 1997-2001 (base 1997),oui
+1998,714.0,24827.6,2.876,pib-minfin 1997-2001 (base 1997),oui
+1999,687.1,27215.9,2.525,pib-minfin 1997-2001 (base 1997),oui
+2000,641.6,29433.4,2.18,pib-minfin 1997-2001 (base 1997),oui
+2001,655.2,31746.4,2.064,pib-minfin 1997-2001 (base 1997),oui
+2002,594.8,32112.0,1.852,pib-minfin 2002-2004 (non rattachée),non précisé par la source
+2003,553.6,34630.0,1.599,pib-minfin 2002-2004 (non rattachée),non précisé par la source
+2004,556.7,37601.2,1.481,pib-minfin 2002-2004 (non rattachée),non précisé par la source
+2005,505.9,41871.0,1.208,pib-minfin 2005-2009 (base 1997),non
+2006,489.8,45756.2,1.071,pib-minfin 2005-2009 (base 1997),non
+2007,514.3,49874.2,1.031,pib-minfin 2005-2009 (base 1997),non
+2008,584.7,55296.6,1.057,pib-minfin 2005-2009 (base 1997),non
+2009,520.2,58883.3,0.883,pib-minfin 2005-2009 (base 1997),non
+2010,563.9,66139.7,0.853,pib-ins 2010-2024 (base 2015),oui
+2011,561.2,67747.3,0.828,pib-ins 2010-2024 (base 2015),oui
+2012,715.5,73895.4,0.968,pib-ins 2010-2024 (base 2015),oui
+2013,728.9,79096.6,0.922,pib-ins 2010-2024 (base 2015),oui
+2014,825.3,85345.7,0.967,pib-ins 2010-2024 (base 2015),oui
+2015,832.5,89802.2,0.927,pib-ins 2010-2024 (base 2015),non
+2016,639.7,95286.9,0.671,pib-ins 2010-2024 (base 2015),non
+2017,741.9,102011.5,0.727,pib-ins 2010-2024 (base 2015),non
+2018,1208.3,112985.5,1.069,pib-ins 2010-2024 (base 2015),non
+2019,1284.4,122969.3,1.044,pib-ins 2010-2024 (base 2015),non
+2020,1228.4,119502.1,1.028,pib-ins 2010-2024 (base 2015),non
+2021,1420.1,131544.6,1.08,pib-ins 2010-2024 (base 2015),non
+2022,1784.2,139444.5,1.28,pib-ins 2010-2024 (base 2015),non
+2023,1849.0,149793.6,1.234,pib-ins 2010-2024 (base 2015),non
+2024,2071.3,159852.7,1.296,pib-ins 2010-2024 (base 2015),non
+2025,2278.9,172614.0,1.32,pib-minfin 2025-2025 (non rattachée),non précisé par la source
