@@ -6603,6 +6603,128 @@ entries:
         جوان 1988، فحلّ محلّها المعلوم على الاستهلاك. نظام تاريخي.
       synonymes: []
 
+  - id: capsule-fiscale-vins
+    acronyme: null
+    statut: valide
+    references: [decret-97-1368-regime-alcools, decret-pres-2022-545-capsule-vins]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 6"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 6"}
+    voir_aussi: [droit-de-consommation, biere-vin-classe]
+    fr:
+      terme: Capsule fiscale sur les vins
+      definition: >
+        Marque apposée sur chaque bouteille de vin, immédiatement après le
+        remplissage, pour garantir le recouvrement des impôts et droits dus sur
+        les vins. Instituée par l'article 6 du décret n° 97-1368 du 24 juillet
+        1997, elle compte six catégories selon la nature du vin et la
+        contenance de la bouteille ; son tarif figure à l'annexe IV du décret.
+      synonymes: []
+    ar:
+      terme: العلامة الجبائية على الخمور
+      definition: >
+        علامة توضع على كل قارورة خمر مباشرة بعد ملئها لضمان استخلاص الأداءات
+        والمعاليم المستوجبة على الخمور. أحدثها الفصل 6 من الأمر عدد 1368 لسنة
+        1997 المؤرخ في 24 جويلية 1997؛ وهي من ست فئات بحسب نوع الخمر وسعة
+        القارورة، وتعريفتها واردة بالملحق عدد IV من الأمر.
+      synonymes: [العلامة الجبائية]
+
+  - id: biere-vin-classe
+    acronyme: null
+    statut: valide
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 3 et 5"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 3 et 5"}
+    voir_aussi: [droit-de-consommation, capsule-fiscale-vins]
+    fr:
+      terme: Bière, vin classés
+      definition: >
+        Bières et vins inscrits dans le classement que le ministre chargé du
+        secteur fixe par arrêté (décret n° 97-1368, article 3). Le tarif du
+        droit de consommation des annexes s'applique à ces produits ; il est
+        doublé pour les bières et les vins non classés (article 5).
+      synonymes: [bière classée, vin classé]
+    ar:
+      terme: الجعة والخمور المصنفة
+      definition: >
+        الجعة والخمور المدرجة في التصنيف الذي يضبطه بقرار الوزير المكلف
+        بالقطاع (الفصل 3 من الأمر عدد 1368 لسنة 1997). وتنطبق عليها تعريفة
+        المعلوم على الاستهلاك الواردة بالملاحق، وتضاعف هذه التعريفة بالنسبة
+        إلى الجعة والخمور غير المصنفة (الفصل 5).
+      synonymes: []
+
+  - id: acquit-a-caution
+    acronyme: null
+    statut: provisoire
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    voir_aussi: [conge-circulation, droit-de-consommation]
+    fr:
+      terme: Acquit-à-caution
+      definition: >
+        Titre qui accompagne le transport des alcools, des boissons
+        alcoolisées et des vins lorsque le droit de consommation n'a pas été
+        acquitté au plein tarif (décret n° 97-1368, article 31). Le destinataire
+        ou l'exportateur le dépose au bureau de contrôle des impôts dans les
+        vingt-quatre heures qui suivent la date fixée pour la livraison ou pour
+        l'exportation.
+      synonymes: []
+    ar:
+      terme: وصل ضمان
+      definition: >
+        سند يرافق نقل الكحول والمشروبات الكحولية والخمور إذا لم يدفع المعلوم
+        على الاستهلاك حسب النسبة العليا (الفصل 31 من الأمر عدد 1368 لسنة 1997).
+        ويودعه متسلم البضاعة أو مصدرها لدى مكتب مراقبة الأداءات في أجل أقصاه
+        أربع وعشرون ساعة من التاريخ المحدد لتسليم البضاعة أو لتصديرها.
+      synonymes: [وصل الضمان]
+
+  - id: conge-circulation
+    acronyme: null
+    statut: provisoire
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
+    voir_aussi: [acquit-a-caution, droit-de-consommation]
+    fr:
+      terme: Congé (titre de circulation)
+      definition: >
+        Titre qui accompagne le transport des alcools, des boissons
+        alcoolisées et des vins lorsque le droit de consommation a été acquitté
+        au plein tarif (décret n° 97-1368, article 31). Dans les autres cas, le
+        transport se fait sous acquit-à-caution.
+      synonymes: [congé]
+    ar:
+      terme: سند إعفاء
+      definition: >
+        سند يرافق نقل الكحول والمشروبات الكحولية والخمور إذا دفع المعلوم على
+        الاستهلاك حسب النسبة العليا (الفصل 31 من الأمر عدد 1368 لسنة 1997).
+        وينقل في الحالات الأخرى بوصل ضمان.
+      synonymes: [سند الإعفاء]
+
+  - id: comptabilite-matiere
+    acronyme: null
+    statut: provisoire
+    references: [decret-97-1368-regime-alcools]
+    source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 15"}
+    source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 15"}
+    voir_aussi: [capsule-fiscale-vins, entrepositaire]
+    fr:
+      terme: Comptabilité matière
+      definition: >
+        Registre numéroté et paraphé par le bureau de contrôle des impôts,
+        tenu jour par jour sans blanc, rature ni addition, où les producteurs
+        et les embouteilleurs de vin, les fabricants d'alcool et de boissons
+        alcoolisées inscrivent les entrées et les sorties de matières (décret
+        n° 97-1368, article 15 pour les embouteilleurs de vin).
+      synonymes: [registre de comptabilité matière]
+    ar:
+      terme: حسابية المواد
+      definition: >
+        دفتر مرقم ومؤشر عليه من قبل مكتب مراقبة الأداءات، يمسك يوما بيوم دون
+        فراغ أو شطب أو إضافة، تسجل فيه مداخيل المواد ومخارجها (الفصل 15 من
+        الأمر عدد 1368 لسنة 1997 بالنسبة إلى معبئي الخمور).
+      synonymes: [دفتر حسابية مواد]
+
   - id: impot-societes
     acronyme: IS
     statut: valide

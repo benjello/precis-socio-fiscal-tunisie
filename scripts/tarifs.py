@@ -50,6 +50,22 @@ TABLEAUX = {
         "champs": ["position", "produit", "Droit de consommation"],
         "entetes": ["Position", "Désignation des produits", "Droit de consommation"],
     },
+    # CINQ DATES D'EFFET, une colonne par date où l'une des lignes change. Le tableau de la
+    # loi de finances pour 2016 reprend les valeurs de l'annexe du 24 novembre 2015 : il
+    # n'a pas de colonne, la date du 1er janvier 2016 ne change aucune valeur.
+    "alcools-tarifs": {
+        "champs": ["position", "produit", "4 août 1997", "21 février 2013",
+                   "24 novembre 2015", "1er janvier 2018", "1er janvier 2021"],
+        "entetes": ["Position", "Produit", "Depuis le 4 août 1997",
+                    "Depuis le 21 février 2013", "Depuis le 24 novembre 2015",
+                    "Depuis le 1er janvier 2018", "Depuis le 1er janvier 2021"],
+    },
+    "capsule-fiscale": {
+        "champs": ["position", "produit", "Annexe IV de 1997", "13 août 2007",
+                   "29 juin 2022"],
+        "entetes": ["Catégorie", "Vins et contenances", "Annexe IV de 1997",
+                    "Depuis le 13 août 2007", "Depuis le 29 juin 2022"],
+    },
     # SIX COLONNES DE PÉRIODE, ET NON CINQ. Le taux de droit commun ne change que quatre
     # fois, ce qui suffirait à cinq colonnes ; mais le taux des petites et moyennes
     # sociétés naît en 2018, au milieu de la période où le droit commun vaut 25 %.

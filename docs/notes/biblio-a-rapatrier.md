@@ -2632,10 +2632,9 @@ l'enregistrement de `jort_cache.db`, jamais dérivées l'une de l'autre).
 - [ ] `decret-91-550-tarif-petroliers` — n° 29 de 1991, t. 134, p. 936 ; FR `Jo02991`, AR `Ja02991`.
 - [ ] `decret-91-551-tarif-boissons` — même fascicule, p. 936-937.
 - [ ] `decret-94-816-hydrocarbures` — n° 30, t. 137, p. 628-629 ; FR `Jo03094`, AR `Ja03094`.
-- [ ] `decret-97-1368-regime-alcools` — n° 59, t. 140, p. 1301-1316 ; FR `Jo05997`, AR `Ja05997`.
+- [x] `decret-97-1368-regime-alcools` — n° 59, t. 140, p. 1301-1316 ; FR `Jo05997`, AR `Ja05997` ; lu sur pièce le 23/10/2026.
 - [ ] `decret-99-894-tarif-petroliers` — n° 33, t. 142, p. 624-625 ; FR `Jo03399`, AR `Ja03399`.
-- [ ] `decret-gouv-2015-1768-annexes-alcools` — n° 92 de 2015 ; FR `Jo0922015`, AR `Ja0922015`.
-      Pagination et tome **vides** dans la notice : champs omis, pas devinés.
+- [x] `decret-gouv-2015-1768-annexes-alcools` — n° 92 de 2015, p. 2721-2722 (AR 3173-3174) ; FR `Jo0922015`, AR `Ja0922015` ; lu sur pièce le 23/10/2026. Le champ `page` de l'entrée reste vide (notice sans pagination), la note porte les pages.
 - [ ] `loi-2007-70-lf-2008` — n° 104, t. 150, p. 4367 ; FR `Jo1042007`, AR `Ja1042007`.
 - [ ] `loi-2018-56-lf-2019` — n° 104 de 2018, p. 4548-4553 ; **entrée FR SANS URL** (voir ci-dessous),
       AR `Ja1042018`.
@@ -2691,10 +2690,10 @@ surveiller : si une descente `sync_biblio.py` la réintroduit, c'est Zotero qu'i
       identifiée (non recherchées sur jibaya.tn). Entrées sans URL, à compléter.
 - [ ] `dgi-nc-7-2016` : le numéro « 7/2016 » n'est attesté que par le **nom de fichier** de la copie
       locale — ni en-tête de bulletin ni numéro dans le corps du document. À confirmer sur l'original.
-- [ ] `decret-94-816-hydrocarbures`, `decret-97-1368-regime-alcools`,
-      `decret-gouv-2015-1768-annexes-alcools`, `loi-2007-70-lf-2008` : **non lus sur pièce**
-      (métadonnées de notice). Date d'effet **non établie** pour les trois décrets. Leurs tarifs ne
-      doivent pas être cités d'après ces entrées.
+- [ ] `decret-94-816-hydrocarbures`, `loi-2007-70-lf-2008` : **non lus sur pièce**
+      (métadonnées de notice). Date d'effet **non établie**. Leurs tarifs ne doivent pas être
+      cités d'après ces entrées. (`decret-97-1368-regime-alcools` et
+      `decret-gouv-2015-1768-annexes-alcools` : lus sur pièce le 23/10/2026.)
 - [ ] `loi-2007-70-lf-2008`, `lf-2014` : date d'effet au 1er janvier **déduite**, clause non lue.
 - [ ] `decret-91-550-tarif-petroliers` : anomalie de visa (art. 35 de la loi 88-145 au lieu de la loi
       89-115) et divergence « 91-111 » / « 90-111 » — consignées en note, **non résolues**.
@@ -2797,9 +2796,9 @@ ou page 1 relue à l'image). Un `200` sur un chemin `…F/Jo…` ne prouve rien 
 | `lf-2013` | Loi n° 2012-27 (LF 2013), **art. 43** | **lu sur pièce, en entier** |
 | `decret-89-479-tableau` | Décret n° 89-479, modif. du tableau annexé | titre + pagination **lus à l'image** (sommaire FR) |
 | `decret-89-1348-tableau` | Décret n° 89-1348, modif. du tableau annexé | titre + pagination **lus à l'image** (sommaire FR) |
-| `decret-2007-1977-alcools` | Décret n° 2007-1977, modif. du décret 97-1368 | **visas lus sur pièce** |
-| `decret-2013-929-alcools` | Décret n° 2013-929, modif. du décret 97-1368 | **visas et intitulés de tableaux lus sur pièce** |
-| `decret-2002-627-alcools` | Décret n° 2002-627, modif. du décret 97-1368 | substance lue (encodage décalé), **chiffres perdus** |
+| `decret-2007-1977-alcools` | Décret n° 2007-1977, modif. du décret 97-1368 | **lu sur pièce le 23/10/2026** (annexe IV, art. 43 ter, date d'effet) |
+| `decret-2013-929-alcools` | Décret n° 2013-929, modif. du décret 97-1368 | **lu sur pièce le 23/10/2026** (tableaux, art. 2, date d'effet) |
+| `decret-2002-627-alcools` | Décret n° 2002-627, modif. du décret 97-1368 | **lu sur pièce le 23/10/2026** (encodage décalé décodé ; valeurs de l'annexe III d'après la note du 23/10/2026) |
 | `lf-1994` | Loi n° 93-125 (LF 1994), art. 50 | notice ; **numéro corroboré** par l'art. 64 de la LF 1995, lu sur pièce |
 | `lf-1992` | Loi n° 91-98 (LF 1992) | notice seule (titre 4, p. 2085-2086) |
 | `lf-2003` | Loi n° 2002-101 (LF 2003) | substance lue, **n° d'article non établi** |
@@ -2815,10 +2814,11 @@ ou page 1 relue à l'image). Un `200` sur un chemin `…F/Jo…` ne prouve rien 
 - [ ] **`lf-1992` art. 44** : fascicule sans couche texte, seule la page 1 relue à l'image.
       Contenu inconnu.
 - [ ] **Contenu** (positions, taux) des décrets **88-2002, 89-479, 89-1348** : jamais ouverts
-      au-delà du sommaire. Comme pour `94-816`, `97-1368`, `2015-1768` et `loi-2007-70-lf-2008`,
+      au-delà du sommaire. Comme pour `94-816` et `loi-2007-70-lf-2008`,
       **aucun tarif ne doit être tiré de ces entrées** ; leur note le dit explicitement.
 - [ ] **Dates d'effet** : déduites (1er janvier) pour les huit lois de finances, clause non lue ;
-      **non établies** pour les six décrets.
+      **non établies** pour les décrets 88-2002, 89-479, 89-1348, 91-550, 91-551, 94-816, 98-952 et 99-894 ;
+      établies le 23/10/2026 pour les décrets 97-1368, 2002-627, 2007-1977, 2013-929, 2015-1768 et 2022-545.
 - [ ] **Pages imprimées** des articles lus sur pièce (`lf-1995`, `lf-1997`, `lf-1999`, `lf-2013`) :
       non relevées ; le champ `page` porte le début de la loi.
 - [ ] **TODO arabe — le compte passe de 15 à 29.** Les 14 entrées AR de cette passe portent, comme
@@ -3891,3 +3891,17 @@ Sources : `docs/notes/logement-social-foprolos-2026-10-23.md` § 2.2 (17 entrée
   décret n° 2021-327.
 - Rapatriement Zotero **non lancé**. Remplacement du `dry-run` par une conversion locale : `csl_vers_zotero`
   appliquée à toutes les entrées des `references.json` (FR et AR) sans erreur.
+
+### Boissons alcoolisées (23/10/2026)
+
+- [x] `decret-pres-2022-545-capsule-vins` et `decret-93-2090-alcools` créées (FR et AR, URL lues dans
+  `jort_cache.db`, champs `pdf_fr` et `pdf_ar`). Entrées AR : titre et note en français, comme le reste
+  du fichier ; la pagination de l'édition arabe (97-1368 : pp. 1362-1377 ; 2015-1768 : pp. 3173-3174 ;
+  2022-545 : pp. 2109-2110) est dans la note, le champ `page` garde la pagination française.
+- [x] `lf-2016`, `lf-2018`, `lf-2021` (fonds commun, FR et AR) : lignes « DROIT DE CONSOMMATION, BOISSONS »
+  ajoutées aux notes (articles, pages, dates d'application).
+- [ ] `lf-2016` : l'édition française du JORT n° 104 de 2015 n'est pas sur pist.tn ; l'article 44 est lu dans l'extrait local
+  `PDFs/Lois_de_Finances/Loi_de_Finances_2016.pdf` (pp. 3150-3151) et dans l'édition arabe (p. 3609). Les deux éditions diffèrent
+  pour les vins mousseux classés (4,000 D français, 24,000 arabe) : à confirmer sur un second exemplaire.
+- [x] `lf-2018` : l'article 45 commence p. 4282 (lu à l'image), non p. 4281 ; la note de l'entrée en fait état.
+- [ ] Rapatriement Zotero des deux entrées créées : en attente de feu vert (séquence habituelle).

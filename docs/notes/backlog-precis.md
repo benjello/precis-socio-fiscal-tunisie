@@ -102,7 +102,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
+| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Boissons alcoolisées rédigées le 23 octobre 2026 (décrets n° 93-2090, 97-1368, 2002-627, 2007-1977, 2013-929, 2015-1768, 2022-545 et lois de finances 2016, 2018, 2021) ; lacunes ci-dessous |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Lacunes de la mise à la retraite avant l'âge légal de 2009 : voir la section Retraites de ce fichier |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs ; régime de rémunération des dirigeants d'entreprises publiques rédigé le 23 octobre 2026 | Décret n° 90-1855 (JORT n° 75 de 1990, scan à océriser) |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
@@ -140,9 +140,9 @@ mais que la couche texte testée est vide. Un texte absent du JORT en français 
 
 - **Présentation (`index.qmd`) : impôts directs et indirects définis et sourcés** (LOB 1967, 1996, 2019 ; tableaux A des LF 2014 et 2021 ; support ENA de S. Zakraoui), textes lus dans le corpus. Reste : relever la page de fin des trois LOB dans l'édition arabe ; dater le support ENA ou lui substituer la doctrine imprimée (`baccouche2008`, `ayadi1996`, à obtenir) ; l'arrêté de nomenclature des recettes (LOB 2019, art. 16) n'est pas identifié.
 
-**Immédiat, avec les sources déjà présentes.** Les décrets n° 97-1368 et 2015-1768
-(`PDFs/JORT/1997/fr/Jo05997.pdf` et `2015/fr/Jo0922015.pdf`) ont une couche texte : relever
-leurs articles, tarifs et clauses d'effet pour le chapitre des droits de consommation.
+**Immédiat, avec les sources déjà présentes.** Les décrets n° 97-1368 et 2015-1768 sont
+lus et rédigés (23 octobre 2026, section « Les boissons alcoolisées » du chapitre des droits
+de consommation) ; lacunes ouvertes : voir « Droits de consommation, boissons : lacunes ».
 L'extrait français `PDFs/Lois_de_Finances/Loi_de_Finances_2016.pdf` porte les articles
 utilisés de la LF 2016 ; le JORT français n° 128 de 2020 (LF 2021) est aussi au corpus
 et a été lu pour l'IRPP. **Ces deux lois ne sont donc plus des textes « absents »** ; ne
@@ -4266,7 +4266,7 @@ reprendre sans refaire la même recherche :
   toute fusion. Les sources du PNAFN et les annexes des statuts des caisses restent à
   obtenir hors du corpus JORT.
 
-1. **Lire ce qui est déjà textuel** : décrets n° 97-1368 et 2015-1768 (Fiscalité). Vérifier chaque article à sa page, pas seulement
+1. **Lire ce qui est déjà textuel** : les textes recensés au 23 octobre 2026 sont lus ; vérifier chaque article à sa page, pas seulement
    la présence du fascicule.
 2. **Océriser par cible**, avec contrôle à l'image : loi n° 65-17 (étudiants), décret
    n° 75-952 (indemnités familiales), code fiscal de 1990 (annexe II) et code TVA
@@ -4290,3 +4290,46 @@ reprendre sans refaire la même recherche :
 décompte actuel de disponibilité** : un fascicule qui y manque peut depuis avoir été
 téléchargé (décret-loi n° 2024-4, par exemple), ou un chemin « français » servir
 en réalité l'édition arabe.
+
+### Droits de consommation, boissons : lacunes (23 octobre 2026)
+
+Tâche close : lecture des décrets n° 97-1368 et 2015-1768 et de leurs modificatifs
+(2002-627, 2007-1977, 2013-929, 2022-545), section `sec-dc-boissons` du chapitre
+`_droits_consommation.qmd`. Plan : `docs/notes/plan-droits-consommation-alcools.md` ;
+matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
+
+- **Annexe de 2015 et tableau de la loi.** Les lois de finances pour 2016 (art. 44), 2018
+  (art. 45) et 2021 (art. 20) portent les lignes 22-03 à 22-08 dans le tableau de la loi
+  n° 88-62 : texte lisible dans le corpus (LF 2016 : édition française pp. 3150-3151 et édition arabe p. 3609 ; LF 2018
+  pp. 4282-4283 et LF 2021 p. 3130, éditions françaises). Les deux éditions de la LF 2016 diffèrent pour les
+  vins mousseux classés (4,000 D français, 24,000 arabe) : à confirmer. Reste à lire la doctrine administrative (notes communes sur
+  les art. 44 de la LF 2016 et 45 de la LF 2018) pour savoir si l'annexe du décret de 2015 est
+  abrogée, sans objet ou laissée en coexistence. TODO au chapitre.
+- **Lois de finances 2022 à 2026.** Rubriques des textes indexés (`jort_cache`) : aucune ne
+  porte sur les positions 22-03 à 22-08 ; le tableau consolidé de 2023 (`tbl-dc-en-vigueur`)
+  porte les valeurs de 2021. À confronter, ligne à ligne, au texte des lois de finances 2024 à
+  2026 (fascicules français de 2023 et 2024 absents du corpus ; éditions arabes présentes).
+- **Lois de finances 1998 à 2017.** Non dépouillées pour les positions 22-05, 22-06 et Ex 22-08
+  (la LF 1998, art. 47, modifie le tableau pour un contenu non lu) : les valeurs de 1997 à 2015
+  de ces lignes reposent sur la chaîne des décrets (« sans modification » en 2002 et en 2013).
+- **Habilitation de l'article 86 (LF 1989).** Elle vise les positions 22-03 et 22-05 à 22-09, sans
+  22-04, alors que les décrets de 1993 et de 1997 fixent des tarifs pour Ex 22-04 (vins dans la
+  nomenclature actuelle). Piste : la loi de décembre 1988 précède le tarif harmonisé (loi n° 89-113) ;
+  le tableau de 1988 emploie l'ancienne numérotation (alcool éthylique en 22-08), où 22-04 désignerait
+  les moûts de raisin. À vérifier sur le tarif de 1988, sans conclure.
+- **Capsule de 1997.** La date de l'avis aux embouteilleurs (art. 44) est inconnue ; le JORT ne
+  la porte pas.
+- **Décret n° 93-2090.** Date de dépôt du JORT n° 80 de 1993 non lue ; libellés des lignes lus
+  par OCR (colonne gauche à contrôler à l'image).
+- **Contexte de 1997.** Le décret n'a pas d'exposé des motifs ; budget de 1997 et IXe plan non
+  consultés.
+- **Loi de finances 2022, art. 33 et 59 ; loi de finances 2023, art. 62.** TVA du commerce de
+  détail des boissons alcoolisées, tarif du droit sur la vente à emporter, avance sur les
+  ventes : régime des boissons non repris dans la section ; à rédiger.
+- **Fascicules scannés 2016-2026.** Recherche du motif 97-1368 sur la couche texte seulement :
+  fiche `r-modificatifs-decret-97-1368` (`a_faire`).
+- **Tableaux.** `alcools-tarifs` et `capsule-fiscale` sont des relevés tenus à la main
+  (`tarifs/tarifs-releves-droits-consommation.csv`) ; TODO (rédacteur) de remplacement par un
+  tableau engendré.
+- **Arabe.** Termes retenus sur l'édition arabe du décret de 1997 (lue à l'image, pp. 1366 et
+  1370) : وصل ضمان, سند إعفاء, حسابية المواد ; à faire relire par le relecteur-ar.
