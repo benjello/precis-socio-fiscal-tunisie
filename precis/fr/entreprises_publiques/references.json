@@ -503,26 +503,6 @@
       "publisher-place": "Tunis"
     },
     {
-      "id": "loi2020-45-lfr",
-      "type": "legislation",
-      "title": "Loi n° 2020-45 du 14 décembre 2020, portant loi de finances rectificative pour l'année 2020",
-      "title-short": "Loi n° 2020-45 du 14 décembre 2020",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "123",
-      "page": "2931",
-      "issued": {
-        "date-parts": [
-          [
-            2020,
-            12,
-            14
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2020/2020F/Jo1232020.pdf",
-      "note": "citation-key: loi2020-45-lfr\nJORT n° 123 du 14 décembre 2020, édition française ; la loi commence p. 2931 (dernière page non relevée ; édition arabe : p. 3172-3188). Article premier : articles 9 et 10 nouveaux de la loi de finances pour 2020, p. 2932 — plafond des prêts du Trésor aux établissements publics, 550 MD ; plafond des garanties de l'État, 7 000 MD. Adresse vérifiée le 11/10/2026 (réponse 200)."
-    },
-    {
       "id": "wb-tunisia-gouvernance-ep-2014",
       "type": "report",
       "title": "Pour une meilleure gouvernance des entreprises publiques en Tunisie",
@@ -1038,6 +1018,26 @@
       },
       "URL": "https://www.pist.tn/jort/2007/2007F/Jo0452007.pdf",
       "note": "citation-key: loi2007-33\nJORT n° 45."
+    },
+    {
+      "id": "loi2020-45-lfr",
+      "type": "legislation",
+      "title": "Loi n° 2020-45 du 14 décembre 2020, portant loi de finances rectificative pour l'année 2020",
+      "title-short": "Loi n° 2020-45 du 14 décembre 2020",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "123",
+      "page": "2931",
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            12,
+            14
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2020/2020F/Jo1232020.pdf",
+      "note": "citation-key: loi2020-45-lfr\nJORT n° 123 du 14 décembre 2020, édition française ; la loi commence p. 2931 (dernière page non relevée ; édition arabe : p. 3172-3188). Article premier : articles 9 et 10 nouveaux de la loi de finances pour 2020, p. 2932 — plafond des prêts du Trésor aux établissements publics, 550 MD ; plafond des garanties de l'État, 7 000 MD. Adresse vérifiée le 11/10/2026 (réponse 200).\nClé lfc-2020 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi2020-45-lfr : 2931 ; lfc-2020 : 3172-3188. Champ « page » : plus petite page relevée.\nJORT n° 123 du 14 décembre 2020 (pp. 3172-3188 selon jort_cache.db)."
     }
   ]
 }

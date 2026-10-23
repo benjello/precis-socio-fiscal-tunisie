@@ -51,13 +51,13 @@ Les impôts cédulaires eux-mêmes procédaient de textes échelonnés sur plusi
 
 Le plus ancien tarif connu ici est celui de l'article 2 de la loi n° 62-73 du 31 décembre 1962, qui abroge et remplace l'article 8 du décret du 31 mars 1932 pour l'imposition « au titre de l'année 1963 (Revenus de l'année 1962) et des années postérieures » [@loi-62-73-cpe, art. 2].
 
-L'article 10 de la loi n° 65-46 du 31 décembre 1965, portant loi de finances pour la gestion 1966, remplace à nouveau cet article 8 pour l'imposition « au titre de l'année 1966 (revenus de l'année 1965) et des années postérieures », par un tarif fixé « compte-tenu du décime prévu par la loi de Finances n° 64-59 du 31 décembre 1964 », et exempte les contribuables dont les revenus nets imposables ne dépassent pas 100 dinars [@lf-1966, art. 10].
+L'article 10 de la loi n° 65-46 du 31 décembre 1965, portant loi de finances pour la gestion 1966, remplace à nouveau cet article 8 pour l'imposition « au titre de l'année 1966 (revenus de l'année 1965) et des années postérieures », par un tarif fixé « compte-tenu du décime prévu par la loi de Finances n° 64-59 du 31 décembre 1964 », et exempte les contribuables dont les revenus nets imposables ne dépassent pas 100 dinars [@loi65-46-lf1966, art. 10].
 
 Les tarifs qui auraient pu être fixés pour les revenus de 1966 à 1979 ne sont pas connus ici ; le suivant qui le soit est celui de l'article 8 de la loi n° 79-66 du 31 décembre 1979, portant loi de finances pour la gestion 1980, qui abroge et remplace à son tour l'article 8 du décret de 1932 [@loi79-66-lf1980, art. 8].
 
 L'article 9 de la loi n° 82-91 du 31 décembre 1982, portant loi de finances pour la gestion 1983, remplace l'article 8 du décret de 1932 « tel que modifié par l'article 8 de la loi de finances pour la gestion 1980 », pour les revenus à réaliser à partir du 1^er^ janvier 1983 [@lf-1983, art. 9].
 
-Le dernier barème de la contribution personnelle d'État avant la réforme résulte de l'article 8 de la loi n° 85-109 du 31 décembre 1985 portant loi de finances pour la gestion 1986, qui abroge et remplace l'article 8 du décret du 31 mars 1932 [@lf-1986, art. 8]. Il comportait **dix-huit tranches** et un [taux marginal](#g-taux-marginal) supérieur de **68 % au-delà de 80 000 dinars**. Le texte légal publiait, à côté du taux de chaque tranche, le taux d'imposition du revenu global atteint à la limite supérieure de celle-ci — une présentation rare, qui permet de lire directement la charge effective.
+Le dernier barème de la contribution personnelle d'État avant la réforme résulte de l'article 8 de la loi n° 85-109 du 31 décembre 1985 portant loi de finances pour la gestion 1986, qui abroge et remplace l'article 8 du décret du 31 mars 1932 [@loi85-109-lf1986, art. 8]. Il comportait **dix-huit tranches** et un [taux marginal](#g-taux-marginal) supérieur de **68 % au-delà de 80 000 dinars**. Le texte légal publiait, à côté du taux de chaque tranche, le taux d'imposition du revenu global atteint à la limite supérieure de celle-ci — une présentation rare, qui permet de lire directement la charge effective.
 
 ```{python}
 #| echo: false
@@ -66,13 +66,13 @@ print(ot.markdown_un_tableau_en_onglets([
     ("Revenus de 1962", TABLES / "bareme_cpe_1962.md",
      "Source : @loi-62-73-cpe, art. 2 (JORT n° 64 des 28-31 décembre 1962, p. 1647). Le texte ne publie que le taux de chaque tranche : la dernière colonne en est déduite. Au-delà de 10 200 dinars, il distingue une tranche allant jusqu'à 10 600 dinars et une tranche au-dessus, toutes deux à 80 %, réunies ici en une seule."),
     ("Revenus de 1965", TABLES / "bareme_cpe_1965.md",
-     "Source : @lf-1966, art. 10 (JORT n° 66 du 31 décembre 1965, p. 1716-1717). Le texte ne publie que le taux de chaque tranche : la dernière colonne en est déduite, sans tenir compte de l'exemption des revenus nets imposables qui ne dépassent pas 100 dinars. Au-delà de 9 800 dinars, il distingue une tranche allant jusqu'à 10 200 dinars et une tranche au-dessus, toutes deux à 88 %, réunies ici en une seule."),
+     "Source : @loi65-46-lf1966, art. 10 (JORT n° 66 du 31 décembre 1965, p. 1716-1717). Le texte ne publie que le taux de chaque tranche : la dernière colonne en est déduite, sans tenir compte de l'exemption des revenus nets imposables qui ne dépassent pas 100 dinars. Au-delà de 9 800 dinars, il distingue une tranche allant jusqu'à 10 200 dinars et une tranche au-dessus, toutes deux à 88 %, réunies ici en une seule."),
     ("Revenus de 1980", TABLES / "bareme_cpe_1980.md",
      'Source : @loi79-66-lf1980, art. 8 (JORT n° 76 des 28-31 décembre 1979, p. 3540).'),
     ("Revenus de 1983", TABLES / "bareme_cpe_1983.md",
      'Source : @lf-1983, art. 9 (JORT n° 84 du 31 décembre 1982, p. 2877-2878).'),
     ("Revenus de 1986", TABLES / "bareme_cpe_1986.md",
-     'Source : @lf-1986, art. 8 (JORT n° 91 du 31 décembre 1985, p. 1731).'),
+     'Source : @loi85-109-lf1986, art. 8 (JORT n° 91 du 31 décembre 1985, p. 1731).'),
 ], "Barèmes successifs de la contribution personnelle d'État, par année de revenus", "tbl-bareme-cpe"))
 ```
 
@@ -98,8 +98,8 @@ figtools.figure_tabs(
         "taux que le texte fixe pour la tranche où tombe le revenu, ou taux marginal ; la "
         "courbe épaisse est le taux moyen, droit rapporté au revenu, calculé barème appliqué "
         "par tranche : chaque fraction du revenu supporte le taux de sa tranche. Sources : "
-        "@loi-62-73-cpe, art. 2 ; @lf-1966, art. 10 ; @loi79-66-lf1980, art. 8 ; @lf-1983, "
-        "art. 9 ; @lf-1986, art. 8. Le taux moyen ne tient pas compte du plafond de la "
+        "@loi-62-73-cpe, art. 2 ; @loi65-46-lf1966, art. 10 ; @loi79-66-lf1980, art. 8 ; @lf-1983, "
+        "art. 9 ; @loi85-109-lf1986, art. 8. Le taux moyen ne tient pas compte du plafond de la "
         "cotisation effective, ni de l'exemption des revenus qui ne dépassent pas 100 dinars "
         "dans le tarif de 1965, ni de l'exemption des revenus qui ne dépassent pas le SMIG "
         "dans celui de 1986. À 80 000 dinars, le taux moyen du barème de 1986 est de "
@@ -123,7 +123,7 @@ docs/notes/fiscalite-irpp-besoins-documentation.md. -->
 
 ### Le plafonnement de la cotisation effective
 
-Le même article assortissait le barème de plusieurs correctifs, qui en bornaient la charge par le bas comme par le haut : les contribuables dont les revenus annuels ne dépassaient pas le [SMIG](#g-smig) en étaient exonérés, l'impôt ne pouvait excéder l'excédent des revenus par rapport au SMIG, et la cotisation effective ne pouvait dépasser **60 % du revenu global imposable** [@lf-1986, art. 8]. Ce plafond avait des précédents : les tarifs de 1962, 1965 et 1980 en fixaient chacun un, porté de 40 % à 55 % (@tbl-plafond-cpe). L'article 8 récrit pour les revenus de 1983, en revanche, n'en comporte aucun [@lf-1983, art. 9] — son barème affiche d'ailleurs des taux d'imposition du revenu global supérieurs à 60 % au-delà de 80 000 dinars (@tbl-bareme-cpe, revenus de 1983) —, et c'est cette rédaction que la loi de 1985 abroge : le plafond à 60 % y est donc rétabli, non maintenu. Un décret devait par ailleurs publier le barème par tranches de 20 dinars à partir de 900 dinars, sous forme de table de cotes d'impôt : c'est l'objet du décret n° 86-1188 du 12 novembre 1986.
+Le même article assortissait le barème de plusieurs correctifs, qui en bornaient la charge par le bas comme par le haut : les contribuables dont les revenus annuels ne dépassaient pas le [SMIG](#g-smig) en étaient exonérés, l'impôt ne pouvait excéder l'excédent des revenus par rapport au SMIG, et la cotisation effective ne pouvait dépasser **60 % du revenu global imposable** [@loi85-109-lf1986, art. 8]. Ce plafond avait des précédents : les tarifs de 1962, 1965 et 1980 en fixaient chacun un, porté de 40 % à 55 % (@tbl-plafond-cpe). L'article 8 récrit pour les revenus de 1983, en revanche, n'en comporte aucun [@lf-1983, art. 9] — son barème affiche d'ailleurs des taux d'imposition du revenu global supérieurs à 60 % au-delà de 80 000 dinars (@tbl-bareme-cpe, revenus de 1983) —, et c'est cette rédaction que la loi de 1985 abroge : le plafond à 60 % y est donc rétabli, non maintenu. Un décret devait par ailleurs publier le barème par tranches de 20 dinars à partir de 900 dinars, sous forme de table de cotes d'impôt : c'est l'objet du décret n° 86-1188 du 12 novembre 1986.
 
 ```{python}
 #| echo: false
@@ -133,7 +133,7 @@ table("plafond_cpe",
       "tbl-plafond-cpe")
 ```
 
-Source : @loi-62-73-cpe, art. 2 (JORT n° 64 des 28-31 décembre 1962, p. 1647) ; @lf-1966, art. 10 (JORT n° 66 du 31 décembre 1965, p. 1716) ; @loi79-66-lf1980, art. 8 (JORT n° 76 des 28-31 décembre 1979, p. 3540). Le tarif de 1983 ne fixe pas de plafond [@lf-1983, art. 9] (JORT n° 84 du 31 décembre 1982, p. 2877-2878) ; celui de 60 % est rétabli pour les revenus de 1986 [@lf-1986, art. 8] (JORT n° 91 du 31 décembre 1985, p. 1731). Les plafonds qu'auraient pu fixer d'éventuels tarifs intermédiaires, entre 1966 et 1979, ne sont pas connus ici.
+Source : @loi-62-73-cpe, art. 2 (JORT n° 64 des 28-31 décembre 1962, p. 1647) ; @loi65-46-lf1966, art. 10 (JORT n° 66 du 31 décembre 1965, p. 1716) ; @loi79-66-lf1980, art. 8 (JORT n° 76 des 28-31 décembre 1979, p. 3540). Le tarif de 1983 ne fixe pas de plafond [@lf-1983, art. 9] (JORT n° 84 du 31 décembre 1982, p. 2877-2878) ; celui de 60 % est rétabli pour les revenus de 1986 [@loi85-109-lf1986, art. 8] (JORT n° 91 du 31 décembre 1985, p. 1731). Les plafonds qu'auraient pu fixer d'éventuels tarifs intermédiaires, entre 1966 et 1979, ne sont pas connus ici.
 
 
 ### La suppression de 1990 {#sec-irpp-suppression-1990}
@@ -167,7 +167,7 @@ table("bareme_1990",
 
 Source : @code-irpp-is-1990, art. 44 § I (JORT n° 1 des 2-5 janvier 1990, p. 9).
 
-La comparaison des deux tableaux donne la mesure de la rupture. Le nombre de tranches passe de dix-huit à six et le taux marginal supérieur de 68 % à 35 %, **en une seule fois et par le code lui-même**. La simplification du barème est donc l'œuvre de la réforme de 1989-1990, et non d'un texte ultérieur : le récit d'une « simplification de 1991 », que l'on rencontre parfois, ne correspond à aucun véhicule législatif — la loi de finances pour la gestion 1991 ne comporte pas une seule occurrence du mot « barème » et ses dispositions relatives au code de l'IRPP et de l'IS visent les articles 45, 52, 54 et 63 [@lf-1991]. Le terme de « simplification » a bien un référent dans la décennie, mais il porte sur d'autres objets : le **régime forfaitaire** du § IV de l'article 44, refondu par les articles 100 à 103 de la loi de finances pour 1993 sous l'intitulé « Unification et simplification du régime forfaitaire » [@lf-1993, art. 100 à 103] (@sec-irpp-forfait), et les **procédures fiscales**, avec la loi n° 98-73 du 4 août 1998 portant simplification des procédures fiscales et réduction des taux de l'impôt, dont le dispositif concerne la plus-value immobilière et les droits d'enregistrement [@loi-98-73].
+La comparaison des deux tableaux donne la mesure de la rupture. Le nombre de tranches passe de dix-huit à six et le taux marginal supérieur de 68 % à 35 %, **en une seule fois et par le code lui-même**. La simplification du barème est donc l'œuvre de la réforme de 1989-1990, et non d'un texte ultérieur : le récit d'une « simplification de 1991 », que l'on rencontre parfois, ne correspond à aucun véhicule législatif — la loi de finances pour la gestion 1991 ne comporte pas une seule occurrence du mot « barème » et ses dispositions relatives au code de l'IRPP et de l'IS visent les articles 45, 52, 54 et 63 [@loi90-111-lf1991]. Le terme de « simplification » a bien un référent dans la décennie, mais il porte sur d'autres objets : le **régime forfaitaire** du § IV de l'article 44, refondu par les articles 100 à 103 de la loi de finances pour 1993 sous l'intitulé « Unification et simplification du régime forfaitaire » [@lf-1993, art. 100 à 103] (@sec-irpp-forfait), et les **procédures fiscales**, avec la loi n° 98-73 du 4 août 1998 portant simplification des procédures fiscales et réduction des taux de l'impôt, dont le dispositif concerne la plus-value immobilière et les droits d'enregistrement [@loi-98-73].
 
 ## Comment se calcule l'IRPP {#sec-irpp-calcul}
 
@@ -321,7 +321,7 @@ table("bareme_generations",
       "tbl-bareme-irpp-generations")
 ```
 
-Sources : @lf-1986 ; @code-irpp-is-1990 ; @lf-2017 ; @lf-2025 ; @lf-2026.
+Sources : @loi85-109-lf1986 ; @code-irpp-is-1990 ; @lf-2017 ; @lf-2025 ; @lf-2026.
 
 Le tableau @tbl-bareme-irpp-generations fait apparaître deux rythmes très différents : une rupture unique et de grande ampleur en 1989-1990, suivie d'une immobilité de vingt-sept exercices, puis deux modifications en huit ans (2017 et 2025).
 
@@ -766,7 +766,7 @@ Le paragraphe IV de l'article 44 soumet au régime forfaitaire « les petits exp
 
 Les lois de finances de la décennie récrivent le paragraphe IV à plusieurs reprises. Elles en font converger les seuils, en ajoutent les exclusions, et ramènent à une grille unique ce qui se lisait dans quatre annexes.
 
-**1992 : la structure.** L'article 62 de la loi de finances pour 1992 récrit le paragraphe en trois points : le IV-1 énumère les conditions — auxquelles il ajoute de ne pas être rémunéré par des commissions — et distingue le « forfait légal » de l'annexe II et le « forfait simplifié » des annexes III ; le IV-2 ouvre l'option pour le réel ; le IV-3 règle le caractère définitif de l'impôt. Les seuils sont inchangés [@lf-1992, art. 62]. Faute de clause d'application, la loi, publiée le 31 décembre 1991, est exécutoire le 2 janvier 1992.
+**1992 : la structure.** L'article 62 de la loi de finances pour 1992 récrit le paragraphe en trois points : le IV-1 énumère les conditions — auxquelles il ajoute de ne pas être rémunéré par des commissions — et distingue le « forfait légal » de l'annexe II et le « forfait simplifié » des annexes III ; le IV-2 ouvre l'option pour le réel ; le IV-3 règle le caractère définitif de l'impôt. Les seuils sont inchangés [@loi91-98-lf1992, art. 62]. Faute de clause d'application, la loi, publiée le 31 décembre 1991, est exécutoire le 2 janvier 1992.
 
 **1993 : l'unification.** Sous l'intitulé « Unification et simplification du régime forfaitaire », la loi de finances pour 1993 exclut le commerce de gros et la fabrication de produits à base d'alcool [@lf-1993, art. 100], remplace l'annexe II par une grille unique en dix tranches de 3 000 dinars, sans distinction de nature d'activité, et récrit les grilles des cafés et des coiffeurs [@lf-1993, art. 101] (@tbl-forfait-annexe-2). Elle abaisse le seuil des prestations de services à 12 000 dinars, maintient 30 000 dinars pour la production, la transformation et l'achat-revente, et ne retient plus de seuil propre à la consommation sur place [@lf-1993, art. 102]. Elle rend enfin l'impôt forfaitaire libératoire de la taxe sur la valeur ajoutée [@lf-1993, art. 103]. Faute de clause d'application, la loi, publiée le 31 décembre 1992, est exécutoire le 2 janvier 1993.
 
@@ -1144,17 +1144,17 @@ Trois registres donnent, pour chacun des trois revenus — intérêts, revenus d
 
 | Effet | Texte et articles | Avant → après | Caractère de la retenue | Portée |
 |---|---|---|---|---|
-| []{#r-epargne-interets-1968}[1^er^ janvier 1968]{.insecable} | loi n° 67-57, loi de finances pour 1968 [@lf-1968, art. 13 et 14, p. 1649] | article premier du décret organique du 23 décembre 1918 récrit : taux global de 16,90 % (général) ou de 14,50 % (réduit) sur les revenus de valeurs mobilières et de créances ; 10 % sur les revenus des créances, dépôts, cautionnements et comptes courants ; 12,10 % et 9,10 % maintenus pour les obligations émises depuis le 1^er^ juillet 1956 pour cinq ans au moins ; bons de caisse : impôt sur les revenus des créances, plus 24 % si l'émetteur ne déclare pas les bénéficiaires (art. 14) | taxe additionnelle de 24 % à la place de la contribution personnelle d'État (bons de caisse anonymes) | antécédent |
+| []{#r-epargne-interets-1968}[1^er^ janvier 1968]{.insecable} | loi n° 67-57, loi de finances pour 1968 [@loi67-57-lf1968, art. 13 et 14, p. 1649] | article premier du décret organique du 23 décembre 1918 récrit : taux global de 16,90 % (général) ou de 14,50 % (réduit) sur les revenus de valeurs mobilières et de créances ; 10 % sur les revenus des créances, dépôts, cautionnements et comptes courants ; 12,10 % et 9,10 % maintenus pour les obligations émises depuis le 1^er^ juillet 1956 pour cinq ans au moins ; bons de caisse : impôt sur les revenus des créances, plus 24 % si l'émetteur ne déclare pas les bénéficiaires (art. 14) | taxe additionnelle de 24 % à la place de la contribution personnelle d'État (bons de caisse anonymes) | antécédent |
 | []{#r-epargne-interets-1988}— | loi n° 87-83, loi de finances pour 1988 [@loi-87-83-lf-1988, art. 29 et 30, p. 1630] | « Unification des taux… » : 20 % sur les revenus des valeurs mobilières autres que ceux de la loi n° 87-48, sur les jetons de présence et sur les revenus des capitaux mobiliers ; crédit d'impôt de 20 % de ces revenus sur la contribution personnelle d'État ; contribution de solidarité supprimée sur ces revenus (art. 30) | crédit d'impôt | antécédent |
 | []{#r-epargne-interets-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 52 et 54, p. 11] | 10 % sur les intérêts des comptes spéciaux d'épargne des banques (52-I-b) ; 15 % sur les autres revenus de capitaux mobiliers (52-I-c, premier tiret ; le second tiret vise les sommes servies aux non-résidents au titre des revenus de l'article 3, point 6, qui ne sont pas des revenus de placement) ; 35 % sur les bons de caisse au porteur dont le bénéficiaire n'est pas révélé (52-I-d) | imputable (art. 54) ; libératoire pour les bons de caisse anonymes et les non-résidents (52-II) | mise en place |
-| []{#r-epargne-interets-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 31, p. 2084-2085] | 52-I et II remplacés : 15 % sur les dépôts à la CENT et en comptes spéciaux (10 % → 15 %), sur les obligations et les autres revenus de capitaux mobiliers ; 25 % sur les obligations au porteur anonymes ; 35 % sur les autres titres au porteur anonymes ; nouveau 52-II-2 : 20 % pour les personnes morales non soumises à l'impôt sur les sociétés ou totalement exonérées ; exécutoire un jour franc après la publication du 31 décembre 1991 | imputable ; libératoire (titres anonymes, non-résidents) ; définitive et non restituable (organismes exonérés) | **rupture** (1992) |
+| []{#r-epargne-interets-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@loi91-98-lf1992, art. 31, p. 2084-2085] | 52-I et II remplacés : 15 % sur les dépôts à la CENT et en comptes spéciaux (10 % → 15 %), sur les obligations et les autres revenus de capitaux mobiliers ; 25 % sur les obligations au porteur anonymes ; 35 % sur les autres titres au porteur anonymes ; nouveau 52-II-2 : 20 % pour les personnes morales non soumises à l'impôt sur les sociétés ou totalement exonérées ; exécutoire un jour franc après la publication du 31 décembre 1991 | imputable ; libératoire (titres anonymes, non-résidents) ; définitive et non restituable (organismes exonérés) | **rupture** (1992) |
 | []{#r-epargne-interets-1997}[1^er^ janvier 1997]{.insecable} | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 30 à 32 et 54, p. 2581 et 2583] | « Unification des taux… » : taux de 15 % et de 35 % abrogés ; 52-I-c : 20 % sur les revenus de capitaux mobiliers ; fin du caractère libératoire pour les titres anonymes | imputable | étape (réforme de 1992) |
 | []{#r-epargne-interets-1999}[1^er^ janvier 1999]{.insecable} | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 43 et 76, p. 2505] | 52-I-c : intérêts des dépôts et titres en devises et en dinars convertibles exclus de la retenue ; 52-II-2 : mention des banques non résidentes (loi n° 85-108) retirée | — | ajustement |
 | []{#r-epargne-interets-2004}[1^er^ janvier 2004]{.insecable} | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 71, p. 3732] ; [@dgi-nc-8-2004] | 52-II-1 récrit : la retenue est « libératoire de l'impôt sur le revenu ou de l'impôt sur les sociétés au titre des sommes prévues par les alinéas b, c et e », sans réserve pour les résidents ; l'administration maintient l'imputation pour les résidents, qui déclarent ces revenus dans leur revenu global | imputable pour les résidents (administration) | ajustement |
 | []{#r-epargne-interets-2005}[1^er^ janvier 2005]{.insecable} | loi n° 2004-90, loi de finances pour 2005 [@lf-2005, art. 69, p. 3443] ; [@dgi-nc-13-2005] | 52-II-1 récrit : libératoire pour les sommes des alinéas b et c « servies aux non résidents et non établis » et pour l'alinéa e ; jetons de présence de 15 % à 20 % | imputable pour les résidents | ajustement |
 | []{#r-epargne-interets-2020}[10 juin 2020]{.insecable} | décret-loi n° 2020-30 [@decret-loi-2020-30, art. 12 et 17, p. 1410 et 1414] (édition arabe) | nouveau 52-II-2 *bis* : 35 % sur les revenus des dépôts à terme dont la rémunération dépasse, au 1^er^ janvier, le TMM moins un point, quel que soit le bénéficiaire ; devises et dinars convertibles exclus ; entrée en vigueur à la publication (art. 17) | libératoire, définitive et non restituable | étape (réforme de 2020-2022) |
 | []{#r-epargne-interets-2021}[1^er^ janvier 2021]{.insecable} | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 17 et 42, p. 3130 et 3138] ; [@dgi-nc-1-2022] | « Révision du régime fiscal… » : 52-II-2 et 2 *bis* abrogés ; retenue de 20 % (52-I-c) « définitive et non restituable […] nonobstant le régime fiscal du bénéficiaire » ; exonérations et déductions maintenues | libératoire | **rupture** (réforme de 2020-2022) |
-| []{#r-epargne-interets-2022}[1^er^ janvier 2022]{.insecable} | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 38, p. 3090] ; [@dgi-nc-1-2022] | « Réinstauration… » : phrase de 2021 supprimée ; 52-II-2 rétabli (personnes morales exonérées, fonds communs de placement), étendu aux fonds d'amorçage et aux FCPR, hors devises ; sans restitution des retenues de 2021 | imputable | étape (réforme de 2020-2022) |
+| []{#r-epargne-interets-2022}[1^er^ janvier 2022]{.insecable} | décret-loi n° 2021-21, loi de finances pour 2022 [@dl2021-21-lf2022, art. 38, p. 3090] ; [@dgi-nc-1-2022] | « Réinstauration… » : phrase de 2021 supprimée ; 52-II-2 rétabli (personnes morales exonérées, fonds communs de placement), étendu aux fonds d'amorçage et aux FCPR, hors devises ; sans restitution des retenues de 2021 | imputable | étape (réforme de 2020-2022) |
 
 : Retenue sur les revenus de capitaux mobiliers : textes, 1968-2026 {#tbl-irpp-epargne-registre-interets}
 
@@ -1250,12 +1250,12 @@ table("irpp_epargne_ceo",
 | Effet | Texte et articles | Avant → après | Portée |
 |---|---|---|---|
 | []{#r-epargne-cs-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 39, p. 8] | déduction des intérêts des comptes spéciaux d'épargne ouverts auprès des banques, dans la limite de 1 000 D | mise en place |
-| []{#r-epargne-cs-1992}— | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 30, p. 2084] | « Déduction des intérêts de l'épargne » : livrets de la CENT ajoutés ; plafond global 1 000 → 1 500 D, dont 1 000 D au titre des comptes spéciaux | étape (réforme de 1992) |
-| []{#r-epargne-cs-1992-ceo}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 33, p. 2085] | compte d'épargne-emprunts obligataires : retenue libératoire de 15 % si aucun retrait pendant cinq ans ; retenue complémentaire de 10 % en cas de retrait | rupture propre (réforme de 1992) |
+| []{#r-epargne-cs-1992}— | loi n° 91-98, loi de finances pour 1992 [@loi91-98-lf1992, art. 30, p. 2084] | « Déduction des intérêts de l'épargne » : livrets de la CENT ajoutés ; plafond global 1 000 → 1 500 D, dont 1 000 D au titre des comptes spéciaux | étape (réforme de 1992) |
+| []{#r-epargne-cs-1992-ceo}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@loi91-98-lf1992, art. 33, p. 2085] | compte d'épargne-emprunts obligataires : retenue libératoire de 15 % si aucun retrait pendant cinq ans ; retenue complémentaire de 10 % en cas de retrait | rupture propre (réforme de 1992) |
 | []{#r-epargne-cs-1997}[1^er^ janvier 1997]{.insecable} | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 33, p. 2581] | 2^e^ et 3^e^ paragraphes de l'art. 33 de la loi de finances pour 1992 abrogés : fin du taux libératoire du compte d'épargne-emprunts obligataires | étape (réforme de 1992) |
 | []{#r-epargne-cs-2017}revenus 2016 | loi n° 2016-78, loi de finances pour 2017 [@lf-2017, art. 13] ; [@dgi-nc-2-2017] | 1 500 D, dont 1 000 D de comptes spéciaux → 5 000 D, dont 3 000 D | ajustement |
-| []{#r-epargne-cs-2022}revenus 2021 | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 24] ; [@dgi-nc-1-2022] | 5 000 D, dont 3 000 D → 10 000 D, dont 6 000 D | ajustement |
-| []{#r-epargne-cs-2022-verts}— | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 29] | nouveau § II *bis* : déduction des intérêts des emprunts obligataires verts, socialement responsables et durables, dans la limite de 10 000 D par an | rupture propre |
+| []{#r-epargne-cs-2022}revenus 2021 | décret-loi n° 2021-21, loi de finances pour 2022 [@dl2021-21-lf2022, art. 24] ; [@dgi-nc-1-2022] | 5 000 D, dont 3 000 D → 10 000 D, dont 6 000 D | ajustement |
+| []{#r-epargne-cs-2022-verts}— | décret-loi n° 2021-21, loi de finances pour 2022 [@dl2021-21-lf2022, art. 29] | nouveau § II *bis* : déduction des intérêts des emprunts obligataires verts, socialement responsables et durables, dans la limite de 10 000 D par an | rupture propre |
 | []{#r-epargne-cs-2024}— | loi de finances pour 2024 [@lf-2024, art. 34] | bons du Trésor assimilables ajoutés aux supports ; plafonds inchangés | ajustement |
 
 ::::
@@ -1271,7 +1271,7 @@ Certains intérêts sont exonérés sans plafond (article 38, points 7, 8 et 12 
 | Effet | Texte et articles | Avant → après | Portée |
 |---|---|---|---|
 | []{#r-epargne-exo-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 38, p. 8] | exonérés : intérêts des livrets de la CENT et des contrats d'épargne logement (point 7), des dépôts et titres en devises ou en dinars convertibles (point 8) | mise en place |
-| []{#r-epargne-exo-1992}— | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 30, p. 2084] | point 7 réduit à l'épargne logement ; livrets de la CENT dans la déduction plafonnée de l'art. 39 § II | étape (réforme de 1992) |
+| []{#r-epargne-exo-1992}— | loi n° 91-98, loi de finances pour 1992 [@loi91-98-lf1992, art. 30, p. 2084] | point 7 réduit à l'épargne logement ; livrets de la CENT dans la déduction plafonnée de l'art. 39 § II | étape (réforme de 1992) |
 | []{#r-epargne-exo-1999}[1^er^ janvier 1999]{.insecable} | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 43, p. 2505] | intérêts des dépôts et titres en devises et en dinars convertibles exclus de la retenue de 52-I-c | ajustement |
 | []{#r-epargne-exo-1999-etudes}[1^er^ janvier 1999]{.insecable} | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 45 et 76, p. 2506] | intérêts des comptes d'épargne pour les études exonérés (point 12) | rupture propre |
 
@@ -1342,7 +1342,7 @@ La Banque centrale présente le relèvement de 2003 comme une harmonisation : «
 | []{#r-epargne-cea-2011}[25 avril 2011]{.insecable} | décret-loi n° 2011-28 du 18 avril 2011 [@decret-loi-2011-28, art. 4, p. 488] | 20 000 D → 50 000 D ; exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, le 20 avril 2011 | étape (réforme de 1999) |
 | []{#r-epargne-cea-2021}revenus 2020 | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 16, p. 3129] ; [@dgi-nc-1-2021] | 50 000 D → 100 000 D | étape (réforme de 1999) |
 
-<!-- TODO (bibliographe) : LF 2002, art. 30-31 : à citer par la clé lf-2002 (ne pas créer loi2001-123-lf2002) ; pages des art. 30-31 (p. 4253-4254 du fascicule n° 104 de 2001) à confirmer à l'image avant d'être citées. -->
+<!-- TODO (bibliographe) : LF 2002, art. 30-31 : à citer par la clé loi2001-123-lf2002 ; pages des art. 30-31 (p. 4253-4254 du fascicule n° 104 de 2001) à confirmer à l'image avant d'être citées. -->
 
 ::::
 
@@ -1389,11 +1389,11 @@ table("irpp_epargne_fonds",
 
 | Effet | Texte et articles | Avant → après | Portée |
 |---|---|---|---|
-| []{#r-epargne-fonds-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 31, p. 2085] | nouveau 52-II-2 : 20 % définitive et non restituable sur les revenus de capitaux mobiliers des personnes morales non soumises à l'impôt sur les sociétés ou totalement exonérées | mise en place (réforme de 1992) |
+| []{#r-epargne-fonds-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@loi91-98-lf1992, art. 31, p. 2085] | nouveau 52-II-2 : 20 % définitive et non restituable sur les revenus de capitaux mobiliers des personnes morales non soumises à l'impôt sur les sociétés ou totalement exonérées | mise en place (réforme de 1992) |
 | []{#r-epargne-fonds-1999}[1^er^ janvier 1999]{.insecable} | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 43, p. 2505] | mention des banques non résidentes retirée de 52-II-2 | ajustement |
 | []{#r-epargne-fonds-2002}[1^er^ janvier 2002]{.insecable} | loi n° 2001-123, loi de finances pour 2002, art. 21 à 28, selon l'administration [@dgi-nc-45-2002] | 52-II-2 étendu aux fonds communs de placement en valeurs mobilières ; fonds communs de créances : 20 % imputable sur la retenue due aux copropriétaires | — |
 | []{#r-epargne-fonds-2021}[1^er^ janvier 2021]{.insecable} | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 17, p. 3130] | 52-II-2 abrogé ; la retenue de 20 % devient libératoire pour tous | étape (réforme de 2020-2022) |
-| []{#r-epargne-fonds-2022}[1^er^ janvier 2022]{.insecable} | décret-loi n° 2021-21, loi de finances pour 2022 [@lf-2022, art. 38, p. 3090] ; [@dgi-nc-1-2022] | 52-II-2 rétabli ; étendu aux fonds d'amorçage et aux FCPR ; hors devises | étape (réforme de 2020-2022) |
+| []{#r-epargne-fonds-2022}[1^er^ janvier 2022]{.insecable} | décret-loi n° 2021-21, loi de finances pour 2022 [@dl2021-21-lf2022, art. 38, p. 3090] ; [@dgi-nc-1-2022] | 52-II-2 rétabli ; étendu aux fonds d'amorçage et aux FCPR ; hors devises | étape (réforme de 2020-2022) |
 
 ::::
 
@@ -1430,7 +1430,7 @@ table("irpp_epargne_nr_plus_values",
 | Effet | Texte et articles | Avant → après | Portée |
 |---|---|---|---|
 | []{#r-epargne-nr-1990}revenus 1990 | code de l'impôt sur le revenu [@code-irpp-is-1990, art. 52, p. 11] | intérêts et autres revenus de capitaux mobiliers : 15 % (52-I-c), retenue libératoire pour les revenus servis aux personnes non résidentes ou non établies en Tunisie (52-II) | mise en place |
-| []{#r-epargne-nr-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@lf-1992, art. 31, p. 2084-2085] | 15 % maintenus, libératoires | étape (réforme de 1992) |
+| []{#r-epargne-nr-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@loi91-98-lf1992, art. 31, p. 2084-2085] | 15 % maintenus, libératoires | étape (réforme de 1992) |
 | []{#r-epargne-nr-1995}[1^er^ janvier 1995]{.insecable} | loi n° 94-127, loi de finances pour 1995 [@lf-1995, art. 54, p. 2046] | intérêts des prêts payés aux banques non établies (52-I-e) : 2,5 % | ajustement |
 | []{#r-epargne-nr-1997}[1^er^ janvier 1997]{.insecable} | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 30 à 32, p. 2581] | 15 % → 20 % (taux unique de 52-I-c) | étape (réforme de 1992) |
 | []{#r-epargne-nr-2005}[1^er^ janvier 2005]{.insecable} | loi n° 2004-90, loi de finances pour 2005 [@lf-2005, art. 69, p. 3443] ; [@dgi-nc-13-2005] | caractère libératoire réservé aux sommes « servies aux non résidents et non établis » et à l'alinéa e | ajustement |
@@ -1441,7 +1441,7 @@ table("irpp_epargne_nr_plus_values",
 | []{#r-epargne-nr-2014}cessions à partir du [1^er^ janvier 2014]{.insecable} | loi n° 2013-54, loi de finances pour 2014 [@lf-2014, art. 18, p. 3670] | 30 % → 25 % | ajustement |
 | []{#r-epargne-nr-2014-paradis}[1^er^ janvier 2014]{.insecable} | loi n° 2013-54, loi de finances pour 2014 [@lf-2014, art. 44, p. 3677] | « Relèvement du taux de la retenue à la source sur les montants payés à des résidents dans des paradis fiscaux » : taux des alinéas b (3^e^ tiret), c, c *bis* et e porté à 25 %, liste des États fixée par décret | ajustement |
 | []{#r-epargne-nr-2018}[1^er^ janvier 2018]{.insecable} | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 47, p. 4286] | intérêts des prêts aux banques non établies : 5 % → 10 % | ajustement |
-| []{#r-epargne-nr-2019}[1^er^ janvier 2019]{.insecable} | loi n° 2018-56, loi de finances pour 2019 [@lf-2019, art. 35, pp. 5449-5450] (édition arabe) | « paradis fiscaux » (art. 52, avant-dernier alinéa) → « pays ou territoire à régime fiscal privilégié » au sens du point 12 de l'art. 14 : bénéficiaire dont l'impôt dû dans ce pays est inférieur à 50 % de l'impôt tunisien sur la même activité ; liste fixée par arrêté du ministre des finances ; taux de 25 % inchangé | ajustement |
+| []{#r-epargne-nr-2019}[1^er^ janvier 2019]{.insecable} | loi n° 2018-56, loi de finances pour 2019 [@loi2018-56-lf2019, art. 35, pp. 5449-5450] (édition arabe) | « paradis fiscaux » (art. 52, avant-dernier alinéa) → « pays ou territoire à régime fiscal privilégié » au sens du point 12 de l'art. 14 : bénéficiaire dont l'impôt dû dans ce pays est inférieur à 50 % de l'impôt tunisien sur la même activité ; liste fixée par arrêté du ministre des finances ; taux de 25 % inchangé | ajustement |
 | []{#r-epargne-nr-2021}plus-values réalisées à partir du [1^er^ janvier 2021]{.insecable} | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 14, p. 3127] | 25 % → 15 % | ajustement |
 | []{#r-epargne-nr-2025}plus-values réalisées à partir du [1^er^ janvier 2025]{.insecable} | loi n° 2024-48, loi de finances pour 2025 [@lf-2025, art. 37, p. 3431] | 15 % → 20 % | ajustement |
 
@@ -1532,7 +1532,7 @@ Les sections qui précèdent suivent chacune un élément de l'impôt. Le tablea
 | Texte | Effet | Élément touché | Ce qui change (avant → après) | Détail |
 |---|---|---|---|---|
 | **Loi n° 89-114** et code annexé [@loi-irpp-is-1989; @code-irpp-is-1990] | revenus 1990 | institution de l'impôt | impôts cédulaires et contribution personnelle d'État → IRPP ; barème : 18 tranches et 68 % au-delà de 80 000 D → 6 tranches et 35 % au-delà de 50 000 D | @sec-irpp-institution |
-| **Loi de finances pour 1992** (loi n° 91-98), art. 62 [@lf-1992, art. 62] | — | régime forfaitaire (art. 44 § IV) | § IV récrit : exclusion des entreprises rémunérées par des commissions ajoutée ; forfait légal (annexe II) et forfait simplifié (annexes III) distingués ; seuils inchangés | @sec-irpp-forfait |
+| **Loi de finances pour 1992** (loi n° 91-98), art. 62 [@loi91-98-lf1992, art. 62] | — | régime forfaitaire (art. 44 § IV) | § IV récrit : exclusion des entreprises rémunérées par des commissions ajoutée ; forfait légal (annexe II) et forfait simplifié (annexes III) distingués ; seuils inchangés | @sec-irpp-forfait |
 | **Loi de finances pour 1993** (loi n° 92-122), art. 100 à 103 [@lf-1993, art. 100 à 103] | — | régime forfaitaire (art. 44 § IV, annexes II et III) | grilles de l'annexe II par nature d'activité → grille unique de 15 à 700 D ; seuil des services : 15 000 → 12 000 D ; commerce de gros et alcool exclus ; impôt libératoire de la TVA | @sec-irpp-forfait |
 | **Loi de finances pour 1994** (loi n° 93-125), art. 47 [@lf-1994, art. 47] | revenus 1993\* | régime forfaitaire (art. 44 § IV) | seuil des services : 12 000 → 20 000 D ; un seul véhicule de transport | @sec-irpp-forfait |
 | **Loi de finances pour 1997** (loi n° 96-113), art. 28 et 29 [@lf-1997, art. 28 et 29] | — | régime forfaitaire : acomptes (art. 51) | aucun acompte → trois acomptes de 30 % de l'impôt forfaitaire | @sec-irpp-forfait |
@@ -1580,8 +1580,8 @@ Les sections qui précèdent suivent chacune un élément de l'impôt. Le tablea
 | **Loi de finances pour 2021**, art. 16 [@lf-2021, art. 16; @dgi-nc-1-2021] | revenus 2020 | primes d'assurance-vie (art. 39 § I) | plafond : 10 000 → 100 000 D ; déduction soumise pour la première fois au minimum de l'art. 12 *bis* de la loi n° 89-114 | @sec-irpp-epargne-assurance-vie |
 | art. 16 [@lf-2021, art. 16] | — | comptes épargne en actions (art. 39 § VIII) | plafond : 50 000 → 100 000 D | @sec-irpp-epargne-cea |
 | art. 18 [@lf-2021, art. 18] | — | régime forfaitaire (art. 44 *bis*) | durée : 4 → 6 ans | @sec-irpp-forfait |
-| **Loi de finances pour 2022**, art. 24 [@lf-2022, art. 24; @dgi-nc-1-2022] | revenus 2021 | intérêts de l'épargne (art. 39 § II) | plafond : 5 000 D, dont 3 000 D de comptes spéciaux → 10 000 D, dont 6 000 D | @sec-irpp-epargne-comptes-speciaux |
-| art. 29 [@lf-2022, art. 29] | — | intérêts des emprunts obligataires verts, socialement responsables et durables (art. 39 § II *bis*) | déduction créée, dans la limite de 10 000 D par an | @sec-irpp-epargne-comptes-speciaux |
+| **Loi de finances pour 2022**, art. 24 [@dl2021-21-lf2022, art. 24; @dgi-nc-1-2022] | revenus 2021 | intérêts de l'épargne (art. 39 § II) | plafond : 5 000 D, dont 3 000 D de comptes spéciaux → 10 000 D, dont 6 000 D | @sec-irpp-epargne-comptes-speciaux |
+| art. 29 [@dl2021-21-lf2022, art. 29] | — | intérêts des emprunts obligataires verts, socialement responsables et durables (art. 39 § II *bis*) | déduction créée, dans la limite de 10 000 D par an | @sec-irpp-epargne-comptes-speciaux |
 | **Décret n° 2022-802** [@decret-2022-802] | 1^er^ janvier 2023 | régime forfaitaire (art. 44 *bis*) | listes des activités exclues en zone communale complétées | @sec-irpp-forfait |
 | **Loi de finances pour 2023** (décret-loi n° 2022-79), art. 43 [@lf-2023, art. 43] | — | plus-value immobilière (art. 27) | exclusion d'un seul local d'habitation de 1 000 m² au plus, à la première cession (règle de la loi de finances pour 2005) → réservée en outre aux prix de cession inférieurs à 500 000 D ; exclusion des terrains agricoles supprimée | @sec-irpp-foncier ; @sec-pi-registres |
 | art. 55 [@lf-2023, art. 55] | déclarations dues à partir de 2023 | régime forfaitaire (art. 44 *ter*) | jusqu'à 10 000 D de chiffre d'affaires : 200 → 400 D en zone communale, 100 → 200 D ailleurs | @sec-irpp-forfait |
@@ -1679,7 +1679,7 @@ loi n° 2001-123 du 28 décembre 2001 (LF 2002, art. 71) ; loi n° 2007-70 du 27
 Vérifié le 20 septembre 2026 : la parité FR/AR des references.json de « fiscalité » est
 complète — soixante-dix-neuf entrées de part et d'autre —, la consigne de créer les entrées
 arabes est donc close. Cinq des huit textes réputés sans clé en ont désormais une
-(lf-1992, lf-1998, lf-1999, lf-2003, lf-2004) ; un sixième, la loi n° 2010-58 (LF 2011,
+(loi91-98-lf1992, lf-1998, lf-1999, lf-2003, lf-2004) ; un sixième, la loi n° 2010-58 (LF 2011,
 art. 42), reçoit la sienne avec la branche de l'impôt sur les sociétés. -->
 
 ## Annexe : notations du chapitre {#sec-irpp-notations}

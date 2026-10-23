@@ -20,7 +20,7 @@ def table(nom, legende, label, **options):
     print(ot.markdown_avec_legende(TABLES / f"{nom}.md", legende, label, **options))
 ```
 
-Deux prélèvements s'ajoutent aux cotisations sociales sur la masse salariale : la [taxe de formation professionnelle](#g-tfp) et la [contribution au fonds de promotion du logement pour les salariés](#g-foprolos) (FOPROLOS). Ils ne sont pas des cotisations : aucun droit individuel n'est attaché à leur versement, et leur produit ne va pas aux caisses de sécurité sociale. Ils sont à la charge de l'employeur seul, sans part salariale, et depuis 1989 tous deux sont assis sur les salaires et rétributions [@loi-88-145-lf-1989, art. 29-30 et 35].
+Deux prélèvements s'ajoutent aux cotisations sociales sur la masse salariale : la [taxe de formation professionnelle](#g-tfp) et la [contribution au fonds de promotion du logement pour les salariés](#g-foprolos) (FOPROLOS). Ils ne sont pas des cotisations : aucun droit individuel n'est attaché à leur versement, et leur produit ne va pas aux caisses de sécurité sociale. Ils sont à la charge de l'employeur seul, sans part salariale, et depuis 1989 tous deux sont assis sur les salaires et rétributions [@loi88-145-lf1989, art. 29-30 et 35].
 
 Leur poids s'ajoute au coin social présenté plus haut (@sec-cot-coin). Depuis les salaires de janvier 1989, ils représentent ensemble 2 points de la masse salariale dans les industries manufacturières et 3 points dans les autres secteurs ; de 1977 à 1988, chacun était de 2 % (@tbl-tfp-foprolos). Comme pour les cotisations, ce partage juridique ne dit rien de qui en supporte la charge économique.
 
@@ -40,7 +40,7 @@ La taxe est instituée en 1956 à la charge des assujettis à la patente, hors p
 
 <!-- RECHERCHE r-tfp-decret-1957 : décret du 16 janvier 1957 fixant le taux initial de la taxe de formation professionnelle (voir docs/recherches.yml) -->
 
-Le taux est porté à 2 % au 1^er^ janvier 1967 [@decret66-527, art. 1-2] (@tbl-tfp-foprolos). La loi de finances pour 1989 introduit la seule différenciation du barème : 1 % pour les industries manufacturières, 2 % pour les autres secteurs, sur les salaires et rétributions versés chaque mois [@loi-88-145-lf-1989, art. 29-30]. En 2003, l'assiette inclut expressément les avantages en nature, et la taxe s'étend aux personnes exerçant une profession non commerciale [@lf-2003, art. 35-36]. Aucun texte postérieur modifiant ces taux n'est identifié ici.
+Le taux est porté à 2 % au 1^er^ janvier 1967 [@decret66-527, art. 1-2] (@tbl-tfp-foprolos). La loi de finances pour 1989 introduit la seule différenciation du barème : 1 % pour les industries manufacturières, 2 % pour les autres secteurs, sur les salaires et rétributions versés chaque mois [@loi88-145-lf1989, art. 29-30]. En 2003, l'assiette inclut expressément les avantages en nature, et la taxe s'étend aux personnes exerçant une profession non commerciale [@lf-2003, art. 35-36]. Aucun texte postérieur modifiant ces taux n'est identifié ici.
 
 <!-- RECHERCHE r-tfp-foprolos-taux-recents : texte modifiant le taux de la TFP ou de la contribution au FOPROLOS après la loi n° 88-145 (voir docs/recherches.yml) -->
 
@@ -66,13 +66,13 @@ Le produit de la taxe va d'abord au budget de l'État [@decret-1956-01-12-format
 
 ### Taux et assiette {#sec-cot-foprolos-taux}
 
-La contribution est instituée au 1^er^ août 1977 au taux de 2 % des salaires soumis à cotisation à la CNRPS, à la CNSS ou à la CRPSPEGT ; elle constitue une charge déductible [@loi77-54, art. 2 et 10]. La loi de finances pour 1987 étend cette assiette à l'indemnité complémentaire provisoire, à la majoration du SMIG de 1982 et à l'indemnité de transport [@loi86-106-lf1987, art. 49]. La loi de finances pour 1989 ramène le taux à 1 % et l'assoit sur les salaires et rétributions, comme la taxe de formation professionnelle [@loi-88-145-lf-1989, art. 35] (@tbl-tfp-foprolos). Le taux n'a pas changé depuis, en l'état des textes identifiés (@sec-cot-tfp-taux).
+La contribution est instituée au 1^er^ août 1977 au taux de 2 % des salaires soumis à cotisation à la CNRPS, à la CNSS ou à la CRPSPEGT ; elle constitue une charge déductible [@loi77-54, art. 2 et 10]. La loi de finances pour 1987 étend cette assiette à l'indemnité complémentaire provisoire, à la majoration du SMIG de 1982 et à l'indemnité de transport [@loi86-106-lf1987, art. 49]. La loi de finances pour 1989 ramène le taux à 1 % et l'assoit sur les salaires et rétributions, comme la taxe de formation professionnelle [@loi88-145-lf1989, art. 35] (@tbl-tfp-foprolos). Le taux n'a pas changé depuis, en l'état des textes identifiés (@sec-cot-tfp-taux).
 
 ### Qui la paie {#sec-cot-foprolos-redevables}
 
 Le champ est plus large que celui de la taxe de formation professionnelle : la contribution est due par tout employeur, public ou privé, à la seule exception des exploitants agricoles privés [@loi77-54, art. 1er]. L'État y est donc assujetti par un texte exprès. Les exonérations de 2007 en faveur des petites entreprises et de l'enseignement s'appliquent aux deux prélèvements [@loi2007-69, art. 24 et 33], de même que les exclusions d'assiette de 2011 et 2013 [@lf-2011, art. 28; @lf-2013, art. 22].
 
-Perçue d'abord par les caisses de sécurité sociale, la contribution est recouvrée depuis 1989 par la recette des finances [@loi77-54, art. 3; @loi-88-145-lf-1989, art. 35-38]. La rédaction de l'article 3 de la loi n° 77-54 en vigueur depuis lors n'est pas établie ici.
+Perçue d'abord par les caisses de sécurité sociale, la contribution est recouvrée depuis 1989 par la recette des finances [@loi77-54, art. 3; @loi88-145-lf1989, art. 35-38]. La rédaction de l'article 3 de la loi n° 77-54 en vigueur depuis lors n'est pas établie ici.
 
 <!-- RECHERCHE r-foprolos-art3-redaction : rédaction de l'art. 3 de la loi n° 77-54 en vigueur après l'art. 38 de la loi n° 88-145 (voir docs/recherches.yml) -->
 

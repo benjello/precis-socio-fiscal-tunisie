@@ -2,9 +2,9 @@ annee,nature,ligne,nomenclature,code_article,libelle_source,valeur_md,trace,sour
 2001,prévision,timbre,ancienne (jusqu'à 2019),124-01,Droits de Timbre fiscal,28.0,oui,lf-2001,"tableau A, p. 3184",titre 4 « Droits sur les actes et transactions (Enregistrements) »
 2001,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),124-03,Autres droits d'enregistrements,50.0,oui,lf-2001,"tableau A, p. 3184",
 2001,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),124-04,Taxe unique sur les assurances,34.0,oui,lf-2001,"tableau A, p. 3184",
-2002,prévision,timbre,ancienne (jusqu'à 2019),24-01,Droits de Timbre fiscal,31.0,oui,lf-2002,"tableau A, p. 4263",
-2002,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),24-03,Autres droits d'enregistrements,50.0,oui,lf-2002,"tableau A, p. 4263",
-2002,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),24-04,Taxe unique sur les assurances,34.0,oui,lf-2002,"tableau A, p. 4263",
+2002,prévision,timbre,ancienne (jusqu'à 2019),24-01,Droits de Timbre fiscal,31.0,oui,loi2001-123-lf2002,"tableau A, p. 4263",
+2002,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),24-03,Autres droits d'enregistrements,50.0,oui,loi2001-123-lf2002,"tableau A, p. 4263",
+2002,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),24-04,Taxe unique sur les assurances,34.0,oui,loi2001-123-lf2002,"tableau A, p. 4263",
 2003,prévision,timbre,ancienne (jusqu'à 2019),24-01,Droits de Timbre fiscal,32.0,oui,lf-2003,"tableau A, p. 2890",
 2003,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),24-03,Autres droits d'enregistrements,60.0,oui,lf-2003,"tableau A, p. 2890",
 2003,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),24-04,Taxe unique sur les assurances,41.0,oui,lf-2003,"tableau A, p. 2890",
@@ -20,9 +20,9 @@ annee,nature,ligne,nomenclature,code_article,libelle_source,valeur_md,trace,sour
 2007,prévision,timbre,ancienne (jusqu'à 2019),24-01,Droits de Timbre fiscal,66.0,oui,lf-2007,"tableau A, p. 4397",
 2007,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),24-03,Autres droits d'enregistrements,85.0,oui,lf-2007,"tableau A, p. 4397",
 2007,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),24-04,Taxe unique sur les assurances,66.0,oui,lf-2007,"tableau A, p. 4397",
-2008,prévision,timbre,ancienne (jusqu'à 2019),24-01,Droits de Timbre fiscal,123.6,oui,lf-2008,"tableau A, p. 4370",
-2008,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),24-03,Autres droits d'enregistrements,76.0,oui,lf-2008,"tableau A, p. 4370",
-2008,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),24-04,Taxe unique sur les assurances,68.0,oui,lf-2008,"tableau A, p. 4370",
+2008,prévision,timbre,ancienne (jusqu'à 2019),24-01,Droits de Timbre fiscal,123.6,oui,loi-2007-70-lf-2008,"tableau A, p. 4370",
+2008,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),24-03,Autres droits d'enregistrements,76.0,oui,loi-2007-70-lf-2008,"tableau A, p. 4370",
+2008,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),24-04,Taxe unique sur les assurances,68.0,oui,loi-2007-70-lf-2008,"tableau A, p. 4370",
 2009,prévision,timbre,ancienne (jusqu'à 2019),24-01,Droits de timbre fiscal,161.0,oui,lf-2009,"tableau A, p. 4282",
 2009,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),24-03,Autres droits d'enregistrement,90.0,oui,lf-2009,"tableau A, p. 4282",
 2009,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),24-04,Taxe unique sur les assurances,75.0,oui,lf-2009,"tableau A, p. 4282",
@@ -53,18 +53,18 @@ annee,nature,ligne,nomenclature,code_article,libelle_source,valeur_md,trace,sour
 2018,prévision,timbre,ancienne (jusqu'à 2019),24-01,Droits de Timbre fiscal,474.0,oui,lf-2018,"tableau A, p. 4294",
 2018,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),24-03,Autres droits d'enregistrement,367.0,oui,lf-2018,"tableau A, p. 4294",
 2018,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),24-04,Taxe unique sur les assurances,175.0,oui,lf-2018,"tableau A, p. 4294",
-2019,prévision,timbre,ancienne (jusqu'à 2019),24-01,Droits de Timbre fiscal,565.5,oui,lf-2019,"tableau A, p. 4557",
-2019,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),24-03,Autres droits d'enregistrement,283.0,oui,lf-2019,"tableau A, p. 4557",
-2019,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),24-04,Taxe unique sur les assurances,243.0,oui,lf-2019,"tableau A, p. 4557",
+2019,prévision,timbre,ancienne (jusqu'à 2019),24-01,Droits de Timbre fiscal,565.5,oui,loi2018-56-lf2019,"tableau A, p. 4557",
+2019,prévision,autres_droits_enregistrement,ancienne (jusqu'à 2019),24-03,Autres droits d'enregistrement,283.0,oui,loi2018-56-lf2019,"tableau A, p. 4557",
+2019,prévision,taxe_unique_assurances,ancienne (jusqu'à 2019),24-04,Taxe unique sur les assurances,243.0,oui,loi2018-56-lf2019,"tableau A, p. 4557",
 2020,prévision,timbre,nouvelle (2020),18-01,Droits de Timbre fiscal,542.0,oui,lf-2020,"tableau A, p. 4441",nouvelle nomenclature : catégorie 5 « Autres impôts et taxes »
 2020,prévision,actes_transactions,nouvelle (2020),18-02,Droits sur les Actes et Transactions,232.0,oui,lf-2020,"tableau A, p. 4441",succède à 24-03 « Autres droits d'enregistrement » ; raccord non établi
 2020,prévision,taxe_unique_assurances,nouvelle (2020),18-04,Taxe unique sur les assurances,227.0,oui,lf-2020,"tableau A, p. 4441",
 2021,prévision,timbre,nouvelle (2020),18-01,Droits de Timbre fiscal,571.0,oui,lf-2021,"tableau A, p. 3140",
 2021,prévision,actes_transactions,nouvelle (2020),18-02,Droits sur les Actes et Transactions,263.0,oui,lf-2021,"tableau A, p. 3140",
 2021,prévision,taxe_unique_assurances,nouvelle (2020),18-04,Taxe unique sur les assurances,2.0,non,lf-2021,"tableau A, p. 3140",valeur imprimée en regard de 18-04 ; voir remarque 18-03
-2022,prévision,timbre,nouvelle (2020),18-01,Droits de Timbre fiscal,594.5,oui,lf-2022,"tableau A, p. 3109",
-2022,prévision,actes_transactions,nouvelle (2020),18-02,Droits sur les Actes et Transactions,316.0,oui,lf-2022,"tableau A, p. 3109",
-2022,prévision,taxe_unique_assurances,nouvelle (2020),18-04,Taxe unique sur les assurances,2.0,non,lf-2022,"tableau A, p. 3109",voir remarque 18-03
+2022,prévision,timbre,nouvelle (2020),18-01,Droits de Timbre fiscal,594.5,oui,dl2021-21-lf2022,"tableau A, p. 3109",
+2022,prévision,actes_transactions,nouvelle (2020),18-02,Droits sur les Actes et Transactions,316.0,oui,dl2021-21-lf2022,"tableau A, p. 3109",
+2022,prévision,taxe_unique_assurances,nouvelle (2020),18-04,Taxe unique sur les assurances,2.0,non,dl2021-21-lf2022,"tableau A, p. 3109",voir remarque 18-03
 2023,prévision,timbre,nouvelle (2020),18-01,معاليم الطابع الجبائي (droits de timbre fiscal),598.0,oui,lf-2023,"tableau A, p. 4084 (éd. ar.)",édition française absente
 2023,prévision,actes_transactions,nouvelle (2020),18-02,معاليم على العقود والمبادلات (droits sur les actes et transactions),455.4,oui,lf-2023,"tableau A, p. 4084 (éd. ar.)",
 2023,prévision,taxe_unique_assurances,nouvelle (2020),18-04,المعلوم الوحيد على التأمينات (taxe unique sur les assurances),276.0,oui,lf-2023,"tableau A, p. 4084 (éd. ar.)",

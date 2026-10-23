@@ -156,7 +156,7 @@ class BlocEngendreTest(unittest.TestCase):
     en HTML, de masquer sa colonne « Texte » au profit d'une infobulle. Le snapshot, lui, est
     repris à l'octet près."""
 
-    CORPS = "| Effet | Taux | Texte |\n|---|---:|---|\n| 1990 | 5 % | [@lf-1990, art. 3] |"
+    CORPS = "| Effet | Taux | Texte |\n|---|---:|---|\n| 1990 | 5 % | [@loi-89-115-lf-1990, art. 3] |"
 
     def setUp(self):
         import tempfile
