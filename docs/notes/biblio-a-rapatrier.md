@@ -3819,3 +3819,39 @@ Ajoutées ensuite au même chantier (FR et AR de `fiscalite`, 157 entrées de ch
 - Rapatriement Zotero **non lancé** : en attente de feu vert humain (séquence `permissions` → `verifier` →
   `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger`). L'action GitHub `dry-run` du workflow
   `biblio-zotero` n'est pas lançable avant le push de la branche.
+
+## Fiscalité — taxes affectées (versement du 23/10/2026)
+
+- [x] Versées dans `precis/{fr,ar}/fiscalite/references.json` : `lfc-2017`, `lfc-2018`, `lfc-2019`, `loi73-72-lfc1973`,
+  `lf-2008`, `decret-2000-634`, `decret-2012-435`, `decret-1955-03-31-budget` ; `mccleary-1991-earmarking`,
+  `radev-allen-2010-extrabudgetary-funds`, `cashin-et-al-2017-earmarking-health`,
+  `pantuosco-et-al-2007-lotteries-earmarking`, `francis-moore-2014-temporary-taxes`, `pefa-2016-tunisie`,
+  `cdc-foprolos-2016` ; `fmi-2016-cr16138` copiée depuis `compensation`.
+- [ ] Sans URL française (pdf_fr vide) : `lfc-2018`, `decret-2012-435` ; sans URL : `decret-1955-03-31-budget`
+  (absent de `jort_cache.db`, JOT 1955 à obtenir ; titre à vérifier sur le texte).
+- [ ] À vérifier au fascicule : `loi73-72-lfc1973` (« pour la gestion 1973 » ; date de publication antérieure à la loi) ;
+  `cdc-foprolos-2016` (numéro du rapport annuel) ; titres non relus : `decret-2000-634`, `lf-2008`.
+- [ ] Doublons de clés signalés, non corrigés : `lf-2019` (fiscalité) / `loi2018-56-lf2019` (racine) ;
+  `lf-2022` (racine) / `dl2021-21-lf2022` (caisses).
+- [ ] À rapatrier dans Zotero (collection « Fiscalité », `fmi-2016-cr16138` déjà présente côté compensation).
+- [x] Versées le 23/10/2026 dans `precis/{fr,ar}/fiscalite/references.json` : `minfin-execution-2014-12` (rapport semestriel à fin
+  décembre 2014, mai 2015) et `minfin-execution-2016-12` (à fin décembre 2016, avril 2017). Captures Wayback lues au CDX
+  (20170629080114 et 20170606203200) ; originaux retirés du site du ministère. Capture 2014 : taille différente de la copie
+  de travail (miroir `dev.finances.gov.tn`), contenu à comparer. Pages 7 et 9 vérifiées sur la copie de travail, non sur la capture.
+- [ ] À rapatrier dans Zotero : ces deux rapports (collection « Fiscalité »). Aucune clé équivalente ailleurs ;
+  `minfin-execution-budget` (ébauche non versée, `docs/notes/compensation.md`) désigne un autre bulletin.
+
+## Fiscalité — contributions conjoncturelles (versement du 23/10/2026)
+
+- [x] Versées dans `precis/{fr,ar}/fiscalite/references.json` (source : § 6 de `docs/notes/eco-contributions-conjoncturelles.md`) :
+  `capelle-blancard-havrylchyk-2013-bank-levy`, `kogler-2016-bank-levies`, `buch-hilberg-tonzer-2014-bank-levy`,
+  `devereux-johannesen-vella-2013-bank-levies`, `fuest-peichl-siegloch-2015-corporate-taxes-wages`,
+  `eichengreen-1989-capital-levy`, `bde-fsr-2022-encadre-2-3`, `bde-fsr-2025-encadre-3-1`. `fmi-2015-article-iv` existait déjà.
+  Séries dans `collection-title`, URL de l'éditeur (catalogue `tunisia-data/sources/eco-contributions-conjoncturelles-urls.csv`),
+  `accessed` 23/10/2026, copie et SHA-256 en note.
+- [ ] Non versées (non obtenues) : FMI WP 22/187 et Note 2022/002 ; avis BCE CON/2022/36 et CON/2023/26.
+- [ ] Mois de parution non lu, année seule : `buch-hilberg-tonzer-2014-bank-levy`, `bde-fsr-2022-encadre-2-3` (automne),
+  `bde-fsr-2025-encadre-3-1` (printemps). Eichengreen : auteur lu au scan, titre de l'éditeur.
+- [ ] Versions publiées de Kogler (*ITPF* 2019) et de Devereux et al. (*Economic Journal* 2019) non lues : la référence est celle de la version de travail.
+- [ ] À rapatrier dans Zotero (collection « Fiscalité »). `push_biblio.py --verifier` : 0 perte ; `--dry-run` local sans erreur ;
+  l'action `dry-run` et `controle-rangement` du workflow restent à lancer après le push de la branche.

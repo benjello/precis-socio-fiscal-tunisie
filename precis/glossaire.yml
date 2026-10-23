@@ -9993,7 +9993,7 @@ entries:
   - id: fonds-special-tresor
     acronyme: null
     statut: provisoire
-    references: [lf-1971, lf-2014]
+    references: [lf-1971, lf-2014, lf-1995]
     source_definition: {ref: lf-1971, locator: "art. 48"}
     # AR : attesté au pluriel seulement — « fonds spéciaux du Trésor » en regard de
     # « الحسابات الخاصة في الخزينة » (LF 2014, art. 2 et tableau « B »). Le singulier
@@ -14537,4 +14537,133 @@ entries:
         تخضع مداخيل الإيداعات بأجل التي تفوق نسبة تأجيرها، في غرّة جانفي من
         السنة، هذا المعدل ناقص نقطة مائوية لخصم من المورد بنسبة 35 بالمائة،
         نهائي وغير قابل للإرجاع.
+      synonymes: []
+
+  - id: contribution-conjoncturelle-exceptionnelle
+    acronyme: null
+    statut: provisoire
+    references: [lfc-1991, lfc-2014, lf-2017, lf-2025]
+    # AR attesté par les tableaux « A » et par la LF 2017, art. 48 (édition arabe).
+    # Définition AR à rédiger sur le texte arabe des articles (non lu).
+    source_definition: {ref: lfc-2014, locator: "art. 28-31"}
+    source_traduction: {ref: lf-2017, locator: "art. 48"}
+    voir_aussi: [taxe-conjoncturelle, fonds-special-tresor]
+    fr:
+      terme: Contribution conjoncturelle exceptionnelle
+      definition: >
+        Prélèvement temporaire institué par une loi de finances « au titre de
+        l'année » qu'elle nomme, au profit du budget de l'État. Il est assis sur
+        l'impôt direct dû ou sur sa base : acomptes provisionnels, minimum
+        d'impôt, impôt pétrolier, bénéfices ou revenus servant de base à
+        l'impôt, salaires et pensions selon les années. Il n'est pas déductible
+        de l'assiette de l'impôt sur lequel il s'appuie, et suit les règles de
+        contrôle et de contentieux de cet impôt. Des contributions de ce type
+        sont instituées en 1991, en 2014 (prolongée en 2015), en 2017 et, pour
+        les seules grandes entreprises, en 2025.
+      synonymes: [Contribution conjoncturelle exceptionnelle au profit du budget de l'État, Contribution conjoncturelle]
+    ar:
+      terme: المساهمة الظرفية الاستثنائية
+      definition: ""
+      synonymes: []
+
+  - id: taxe-conjoncturelle
+    acronyme: null
+    statut: provisoire
+    references: [lf-2018, lf-2024]
+    # « معلوم ظرفي » : LF 2018, art. 52 ; LF 2024, art. 64 (assiette bancaire et
+    # assurances). Définition AR à rédiger sur le texte arabe des articles (non lu).
+    source_definition: {ref: lf-2018, locator: "art. 52"}
+    source_traduction: {ref: lf-2018, locator: "art. 52"}
+    voir_aussi: [contribution-conjoncturelle-exceptionnelle]
+    fr:
+      terme: Taxe conjoncturelle
+      definition: >
+        Prélèvement temporaire au profit du budget de l'État, dû par les
+        banques et les établissements financiers, sauf les établissements de
+        paiement, et par les sociétés d'assurance et de réassurance. Il est
+        assis sur les bénéfices servant de base à l'impôt sur les sociétés,
+        payé avec cet impôt, non déductible de son assiette, et suit son
+        contrôle et son contentieux. Institué pour les déclarations de 2018 et
+        de 2019, il est repris pour celles de 2024 et de 2025.
+      synonymes: []
+    ar:
+      terme: معلوم ظرفي
+      definition: ""
+      synonymes: []
+
+  - id: fodec
+    # Sigle laissé hors du champ « acronyme » : FODEC n'est écrit dans aucune des lois
+    # lues, seulement en doctrine (note commune 29/2007). À confirmer avant de
+    # l'établir comme sigle officiel.
+    acronyme: null
+    statut: provisoire
+    references: [lf-1995, lf-2000, lf-2011]
+    # AR : DL 2021-21, art. 63 (édition arabe) ; LF 2025, art. 29 dit « المعلوم المهني
+    # لفائدة صندوق … ». Définition AR à rédiger sur le texte arabe (non lu).
+    source_definition: {ref: lf-2011, locator: "art. 14-16"}
+    voir_aussi: [fonds-special-tresor]
+    fr:
+      terme: Taxe au profit du fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat
+      definition: >
+        Taxe professionnelle dont le produit est affecté au fonds de
+        développement de la compétitivité dans les secteurs industriel, de
+        services et de l'artisanat, compte spécial du Trésor. Elle est due sur
+        les produits fabriqués localement ou importés et sur les services d'une
+        liste fixée par décret : sur le chiffre d'affaires hors taxe sur la
+        valeur ajoutée des fabricants et des prestataires, et sur la valeur en
+        douane des importations. Les produits et services exportés en sont
+        exonérés. Créée en 1995 sur une liste de produits industriels, elle est
+        étendue aux services en 2011.
+      synonymes: [FODEC, Taxe au profit du fonds de développement de la compétitivité industrielle]
+    ar:
+      terme: المعلوم لفائدة صندوق تنمية القدرة التنافسية في قطاعات الصناعة والخدمات والصناعات التقليدية
+      definition: ""
+      synonymes: []
+
+  - id: taxe-circulation
+    acronyme: null
+    statut: provisoire
+    references: [lf-2000, lf-2016, lf-2022]
+    # Base légale : art. 19 du décret du 31 mars 1955 (clé decret-1955-03-31-budget,
+    # texte hors corpus, non lu : pas en source_definition) ; modifié par la LF 2000,
+    # art. 58, la LF 2016, art. 90, la LF 2022, art. 55. « Vignette » est l'usage ; le
+    # texte dit « taxe de circulation ». Non ancrée par la prose au 23/10/2026 : sa
+    # section attend le chapitre des droits d'enregistrement et de timbre.
+    source_definition: {ref: lfc-2014, locator: "tableau « A »"}
+    fr:
+      terme: Taxe de circulation sur les véhicules automobiles
+      definition: >
+        Taxe annuelle due sur les voitures et les motocycles, établie par
+        l'article 19 du décret du 31 mars 1955 et modifiée depuis par les lois
+        de finances. C'est une recette du budget général de l'État, classée
+        parmi les « droits sur les transports et autres produits », et non une
+        taxe perçue au profit d'un fonds spécial du Trésor.
+      synonymes: [Vignette, Taxe de circulation]
+    ar:
+      terme: معلوم الجولان
+      definition: ""
+      synonymes: []
+
+  - id: taxe-protection-environnement
+    acronyme: null
+    statut: provisoire
+    references: [lf-2003, lf-2013]
+    # AR : intitulés des LF 2016 et 2018 (« المعلوم للمحافظة على البيئة »). Définition
+    # AR à rédiger sur le texte arabe (non lu). Taux de 2003 à relire à l'image : aucun
+    # chiffre dans la définition.
+    source_definition: {ref: lf-2003, locator: "art. 58-59"}
+    voir_aussi: [fonds-special-tresor]
+    fr:
+      terme: Taxe pour la protection de l'environnement
+      definition: >
+        Taxe dont le produit est affecté au fonds de dépollution, compte
+        spécial du Trésor. Elle est due sur les produits énumérés au tableau
+        annexé à l'article 58 de la loi de finances pour 2003, sur le chiffre
+        d'affaires hors taxe sur la valeur ajoutée des fabricants et sur la
+        valeur en douane des produits importés. Le tableau est complété par des
+        lois de finances ultérieures.
+      synonymes: []
+    ar:
+      terme: المعلوم للمحافظة على البيئة
+      definition: ""
       synonymes: []

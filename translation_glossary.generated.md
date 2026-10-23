@@ -146,6 +146,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Contribution au profit du Fonds national d'amélioration de l'habitat | المساهمة لفائدة الصندوق الوطني لتحسين السكن |  |
 | Contribution aux frais de crèche | المساهمة في مصاريف رياض الأطفال |  |
 | Contribution aux frais de soins et d'hospitalisation | المساهمة في تغطية مصاريف العلاج والإقامة |  |
+| Contribution conjoncturelle exceptionnelle | المساهمة الظرفية الاستثنائية |  |
 | Contribution financière des étudiants à la vie universitaire | مساهمة الطلبة المالية في الحياة الجامعية |  |
 | Contribution personnelle d'État | الضريبة الشخصية للدولة | CPE |
 | Contribution sociale de solidarité | المساهمة الاجتماعية التضامنية | CSS |
@@ -529,10 +530,14 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Taux spécifique | نسبة نوعية |  |
 | Taxe (au sens des finances publiques) | الرسم (بمفهوم المالية العمومية) |  |
 | Taxe à la production | الأداء على الإنتاج |  |
+| Taxe au profit du fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat | المعلوم لفائدة صندوق تنمية القدرة التنافسية في قطاعات الصناعة والخدمات والصناعات التقليدية |  |
+| Taxe conjoncturelle | معلوم ظرفي |  |
+| Taxe de circulation sur les véhicules automobiles | معلوم الجولان |  |
 | Taxe de formation professionnelle | الأداء على التكوين المهني | TFP |
 | Taxe forfaitaire annuelle | الأداء السنوي التقديري |  |
 | Taxe forfaitaire mensuelle sur la valeur ajoutée | أداء تقديري شهري على القيمة المضافة |  |
 | Taxe hôtelière | المعلوم على النزل |  |
+| Taxe pour la protection de l'environnement | المعلوم للمحافظة على البيئة |  |
 | Taxe sur la valeur ajoutée | الأداء على القيمة المضافة | TVA |
 | Taxe sur les bières, vins et autres boissons alcoolisées | الأداء على الجعة والخمور والمشروبات الكحولية الأخرى |  |
 | Taxe sur les établissements à caractère industriel, commercial ou professionnel | المعلوم على المؤسسات ذات الصبغة الصناعية أو التجارية أو المهنية | TCL |
