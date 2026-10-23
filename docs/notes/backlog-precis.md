@@ -1400,30 +1400,60 @@ liste qui suit le tableau, citations comprises. Restent :
   - **autres volumes non conformes** (figures de rendement fiscal, figures de la CNSS
     1990-2004, retraites, finances locales) : non touchés ici, inventaire sur la branche
     `docs/annexe-pib`.
-- **Chapitres à étoffer** : régime conventionnel public, marché contrôlé et statutaire
-  autonome ; le régime indiciaire est le plus développé. Ne pas réutiliser les
-  longueurs des chapitres mesurées avant la relecture des rémunérations.
-- **Chronologies à construire** : indemnité de magistrature (décrets identifiés au JORT) ;
-  textes de rémunération des magistrats de l'ordre judiciaire, des forces de sécurité
-  intérieure et des douanes, absents du livre.
+- **Chapitres à étoffer** : régime conventionnel public et marché contrôlé ; le régime
+  indiciaire est le plus développé. Ne pas réutiliser les longueurs des chapitres mesurées
+  avant la relecture des rémunérations.
+- **Régime statutaire autonome — réorganisé le 23 octobre 2026** (première moitié du plan
+  `docs/notes/plan-regimes-speciaux-remuneration.md`, branche `rediger/regimes-speciaux-secteur-public`) :
+  vue d'ensemble, mise en place 1967-1972, quatre réformes (1982-1983, 1995, 1997-2000,
+  2011-2013), état du droit au 1er janvier 2026, magistrats (indemnité de magistrature
+  1985-2028 et niveau calculé en dinars courants et constants), militaires, forces de sécurité
+  intérieure, douanes, prélèvements corrigés, « Ce qu'en dit l'économie » ; corrections C1 à C7
+  appliquées, C8 en `TODO` ; six fiches de recherche (`r-magistrats-majorations-indemnite`,
+  `r-mil-traitement-base-1997`, `r-mil-solde-79-96-1982-1985`, `r-mil-charges-militaires-2011`,
+  `r-fsi-indemnites-1992`, `r-douanes-indemnites-1997`). Restent :
+  - **section budgétaire** (`#sec-statutaire-budget`) : à refaire (seconde moitié du plan,
+    § 4.10 et § 6 : F2, T1-T3, F3, F4) ; figure F1 de l'indemnité de magistrature après
+    versement de la série dans `tunisia-data` ; frise de la vue d'ensemble ;
+  - **lisible dans le corpus** : permanence des magistrats depuis 2009 (décrets n° 2009-2826,
+    2009-2791, 2009-2792, JORT n° 80 de 2009) ; décrets n° 85-907, 85-908, 93-2453, 93-2581
+    (indemnité de magistrature au Tribunal administratif et à la Cour des comptes) ; n° 2006-1379,
+    2000-1344, 2019-654 ; concordances de 2000 et 2012 des autres corps de sécurité intérieure ;
+    décret gouvernemental n° 2016-512 (douanes) ; lois n° 72-40 et 72-67 (statut des membres
+    du Tribunal administratif, C8) ;
+  - **OCR ou lecture à l'image** : grilles de 1984 de la Garde nationale, des prisons et de la
+    protection civile (n° 84-751, 84-752, 84-754, 84-756) ; statuts de 2006 (n° 2006-1160 à
+    2006-1168, édition française en image) ; fascicules de février-mars 1992 (indemnités des
+    forces de sécurité intérieure) et de 1982-1985 (solde des militaires) ; décret n° 72-230 ;
+    décret n° 88-905 (champ) ;
+  - **à obtenir** : édition arabe du décret n° 2019-285 (JORT n° 24 de 2019, 404 sur pist.tn) ;
+    nombre de magistrats et effectifs par corps ; contexte des réformes de 1982, 1995, 2011,
+    2013 et des majorations des magistrats de 2012-2013 et 2018 (sources de l'époque) ;
+  - **hors chapitre, à signaler** : `index.qmd` (douanes absentes de la liste des corps) ;
+    `_regime_indiciaire.qmd` § ventilation par ministère (« aucune des catégories A1 à D »,
+    exclusion par l'INS : faux pour les magistrats et les douanes) ; glossaire `solde-militaire`
+    et `magistrat` (terminologue) ; livre « Retraites » : décret n° 85-614, loi organique
+    n° 85-79 art. 43, loi organique n° 88-73 ;
+  - **clés à créer (bibliographe)** : lois n° 72-67 ; décrets n° 88-908, 2013-1401, 2012-3552,
+    2011-2093, 2011-2094, 2002-323, 2002-1048, 84-751 à 84-756 ;
+  - fiche `r-augmentations-ep-2013-2025` : sa couverture omet les décrets des magistrats
+    n° 2019-1132, 2020-768 et 2022-798, ces deux derniers absents de `jort_cache` ; à reprendre
+    par une passe du documentaliste.
 - **Présentation des trois chapitres courts — fait le 8 octobre 2026** (`_regime_statutaire_autonome`,
   `_regime_conventionnel`, `_regime_marche_controle`) : vue d'ensemble en tête, trame du volume
   conservée, section « Repères historiques » avec tableau des dates, registres repliés à colonne
-  « Portée » ; `.domicile-unique` sur `#sec-statutaire-champ`, `#sec-statutaire-remuneration` et
+  « Portée » ; `.domicile-unique` sur deux sections du chapitre statutaire (repris le 23 octobre 2026, voir plus haut) et sur
   `#sec-augmentations-ep` seulement. Restent :
   - **clés versées le 8 octobre 2026 (bibliographe)** : lois n° 70-46, n° 2009-47, n° 67-51 et
     n° 2001-65 ; décrets n° 97-2133, n° 97-2134, n° 78-885, n° 2014-12 et n° 2019-1132 ; les huit
     modificatifs du décret n° 79-96 ; arrêté d'agrément de 1975 et avenant n° 5 de 2022 de la
     convention des banques (`docs/notes/biblio-a-rapatrier.md`) ; les mentions du chapitre
-    statutaire autonome et du chapitre du marché contrôlé portent l'appel de citation ; **restent**
-    le texte arabe de l'arrêté de 1975 (fichier arabe du fascicule tronqué), le décret n° 2019-1132,
-    versé mais non cité (aucune mention au chapitre), et le décret gouvernemental n° 2016-742 du
-    10 mai 2016 (magistrats, JORT n° 50 du 21 juin 2016, intitulé arabe seul à l'index, adresses
-    française et arabe renseignées) : ni lu ni versé, inscrit au `TODO` du chapitre statutaire ;
+    statutaire autonome et du chapitre du marché contrôlé portent l'appel de citation ; **reste**
+    le texte arabe de l'arrêté de 1975 (fichier arabe du fascicule tronqué) — les décrets
+    n° 2019-1132 et 2016-742 sont lus et cités au chapitre statutaire depuis le 23 octobre 2026
+    (décret gouvernemental n° 2016-742 du
+    10 mai 2016, JORT n° 50 du 21 juin 2016) ;
     les lois n° 70-46 et n° 2009-47 ont leur ligne de registre et leur lien depuis le 8 octobre 2026 ;
-  - **décret n° 2026-65 (magistrats, 2026-2028)** : porté au registre de
-    `#sec-statutaire-remuneration` par son seul intitulé ; fascicule JORT n° 44 de 2026
-    **à lire** pour les montants ;
   - **`index.qmd`** : la liste des corps du régime statutaire autonome (annonce des chapitres
     et tableau des sous-périmètres) omet les agents des douanes, que le chapitre couvre ;
   - **transferts aux entreprises publiques (8,9 % et 7,5 % du PIB) — attribution corrigée le
@@ -1482,12 +1512,14 @@ liste qui suit le tableau, citations comprises. Restent :
     entreprises publiques, communiqués conjoints de 1996 et 1999) ;
   - décrets des entreprises publiques entre 2013 et 2026 (fiche
     `r-augmentations-ep-2013-2025`) : plein texte 2014-2025 **lisible**, non parcouru ;
-  - magistrats : le décret n° 2026-65 est porté au régime statutaire autonome par son
-    intitulé (8 octobre 2026) ; le décret n° 2019-1132 est versé (clé `decret2019-1132`,
-    8 octobre 2026), non encore cité au chapitre ;
+  - magistrats : décrets n° 2026-65 et 2019-1132 lus et cités au régime statutaire autonome
+    (23 octobre 2026) ;
   - poids budgétaire par cycle : aucun texte ne le donne.
 - **Séries** : effectifs et masse salariale par régime ; dépenses de défense ; effectifs du
-  secteur financier public. Substituer des sources tunisiennes officielles aux chiffres du
+  secteur financier public. Régime statutaire autonome (plan, § 6) : F1 indemnité de magistrature
+  1985-2028 ; F2 crédits de rémunération votés, missions Défense, Intérieur, Justice, 2011-2026 ;
+  F3 dépense militaire du SIPRI ; F4 effectifs des forces armées (IISS, Banque mondiale) ; séries à
+  verser dans `tunisia-data`. Substituer des sources tunisiennes officielles aux chiffres du
   FMI et de la Banque mondiale.
 - **Lecture immédiate des textes locaux** : le décret n° 2015-2217 est lu et rédigé
   (23 octobre 2026) ; les directeurs généraux des banques publiques en sont exclus et relèvent
@@ -1909,7 +1941,7 @@ Notes : `docs/notes/fiscalite-taxes-affectees.md` (documentation), `plan-fiscali
 
 **Social et secteur public**
 
-11. Régimes spéciaux du secteur public (militaires, forces de sécurité, magistrats, membres du gouvernement), recrutement, départs anticipés et plans de départ volontaire.
+11. Régimes spéciaux du secteur public (militaires, forces de sécurité, magistrats, membres du gouvernement), recrutement, départs anticipés et plans de départ volontaire. **En cours (23 octobre 2026)** : chapitre statutaire autonome réorganisé (magistrats, militaires, forces de sécurité intérieure, douanes) ; restent sa section budgétaire, les corps particuliers et la fiche « Recruter et faire partir » du régime indiciaire (diplomates, universitaires, recrutement, départ volontaire), et un chapitre `_fonctions_politiques` à planifier.
 12. Couverture santé au-delà de la CNAM : filières, ticket modérateur, mutuelles et assurance complémentaire de groupe — **volume X « La santé » commencé le 12 octobre 2026**, voir le chantier ci-dessous.
 13. Logement social (FOPROLOS, programmes, prêts aidés), en lien avec le foncier. **Chapitre rédigé le 23 octobre 2026** dans `prestations_sociales/_logement_social.qmd` (`#sec-logement-social`), à titre provisoire : à migrer vers un livre « Le logement » (partie IV) quand il s'ouvrira ; ancres sans nom de livre (`sec-log-`, `r-log-`), seuls les liens entrants changeront de chemin (cotisations `#sec-cot-foprolos-affectation` et `#sec-cot-prelevements-rendement`, finances locales `#sec-fl-immeubles-fnah`, présentation du livre). Sources : note `docs/notes/logement-social-foprolos-2026-10-23.md`, plan `docs/notes/logement-social-plan-architecte.md`, fiche `docs/notes/eco-logement-social.md`. Fait : mise en place (1957-1977), cinq réformes (1986-1990, 2012, 2016, 2017, 2026), état du droit des prêts en 2026 (tableau fait main), résorption et FNAH, programme spécifique, premier logement, opérateurs et location-vente, régime de 1999, prévisions 2011-2020 et prélèvements 1987-1990 et 2011-2013, suivi du ministère des Finances 2009-2013, estimations d'une étude de 2014, « Ce qu'en dit l'économie » ; cotisations corrigées (premier prélèvement en 1987, prélèvements de 2011-2013 cités, renvois) ; lien depuis les finances locales. Restes :
     - **Lisible dans le corpus** : modificatifs n° 2009-698, 2009-3586, 2015-881 du décret n° 77-965 (« avant » de 2016, prioritaire) ; décrets n° 2017-391 et 2019-39 (premier logement) ; n° 2013-3289, 2014-4251, 2015-460, 2023-538, 2012-1225 (programme spécifique) ; n° 2021-327 et 2023-584 (AFH) ; n° 2018-749 (fonds de garantie) ; DL n° 2011-55 (ordonnateur) ; LF 2005, art. 11-17, à harmoniser avec le volume des finances locales ; décrets n° 2007-534 et 2007-535 ; LF 2018, art. 61 ; DL n° 2022-79, art. 16 ; article final de la LF 2025 (date d'effet des art. 25 et 27).
