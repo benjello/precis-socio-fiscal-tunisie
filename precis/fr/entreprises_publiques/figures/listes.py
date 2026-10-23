@@ -5,7 +5,7 @@ entreprises publiques »).
     ls.figure(caption=…, note_lecture=…)          # le périmètre en nombre, 1997-2021
     ls.tableau_ensemble(caption=…)                # une ligne par entreprise, cinq listes
     ls.tableau_etablissements(caption=…)          # les établissements, six états de la liste
-    ls.figure_plafond(caption=…, note_lecture=…)  # plafond légal de la garantie, 1959-1994
+    ls.figure_plafond(caption=…, note_lecture=…)  # plafond légal de la garantie, 1959-2015
     ls.tableau_plafond(caption=…)                 # registre des articles, avec ancres r-ep-pl-…
 
 D'OÙ VIENNENT LES DONNÉES. De deux relevés versionnés DANS le livre (`listes/*.csv`, chacun
@@ -274,10 +274,10 @@ def tableau_sorties(caption: str, tbl_id: str = "tbl-ep-liste-sorties-recueil") 
     print("\n".join(out) + f"\n\n: {caption} {{#{tbl_id}}}\n")
 
 
-# --- plafond légal de la garantie de l'État, 1958-1994 -------------------------------------------
+# --- plafond légal de la garantie de l'État, 1958-2015 -------------------------------------------
 
 figtools.register_provenance(
-    PLAFOND, titre="Plafond de la garantie de l'État fixé par la loi de finances, 1958-59 à 1994",
+    PLAFOND, titre="Plafond de la garantie de l'État fixé par la loi de finances, 1958-59 à 2015",
     sources=_sources(PLAFOND), unite="millions de dinars courants",
     perimetre=("article « octroi de la garantie de l'État » de chaque loi de finances, et lois "
                "qui en modifient le montant en cours de gestion ; montant maximal dans la limite "
@@ -286,28 +286,33 @@ figtools.register_provenance(
     caveats=("Le plafond est un maximum légal annuel, non un montant de garanties accordées ni "
              "un encours. 1958-59 est imprimé en francs et ne figure pas sur la figure. Les "
              "lois de finances complémentaires dont l'index n'indique pas d'article sur la "
-             "garantie n'ont pas été lues en entier. Les parts du PIB et des dépenses de "
+             "garantie n'ont pas été lues en entier : celles de 1969 à 1991 le sont par leur seul "
+             "index, celles de 1995 à 2015 ne modifient pas le plafond. Les parts du PIB et des dépenses de "
              "l'État sont des ordres de grandeur : le numérateur est un plafond voté, les "
              "dénominateurs sont décrits sous « plafond-garantie-denominateurs »."))
 
 PLAFOND_DEN = "plafond-garantie-denominateurs"
 figtools.register_provenance(
     PLAFOND_DEN,
-    titre=("Dénominateurs des parts du plafond de la garantie : PIB aux prix courants, 1961-1994, "
-           "et dépenses de l'État hors service de la dette, 1986-1994"),
-    sources=["wb-wdi", "undata-sna", "minfin-remunerations"],
+    titre=("Dénominateurs des parts du plafond de la garantie : PIB aux prix courants, 1961-2015, "
+           "et dépenses de l'État hors service de la dette, 1986-2015"),
+    sources=["wb-wdi", "undata-sna", "ins-cnat-2015", "ins-pib-base-2015-2010-2020",
+             "minfin-remunerations"],
     unite="millions de dinars courants",
     perimetre=("PIB aux prix courants, un par année, jamais raccordé : Banque mondiale de 1961 à "
                "1991, dans une base que la source ne dit pas ; Institut national de la "
-               "statistique, transmis aux Nations unies, en base 1983, de 1992 à 1994. "
+               "statistique, en base 1983 de 1992 à 1996, en base 1997 de 1997 à 2009 et en base "
+               "2015 de 2010 à 2015. "
                "Dépenses du budget de l'État hors service de la dette, colonnes de réalisation "
-               "de la répartition économique des dépenses du ministère des Finances, 1986-1994"),
-    caveats=("Le PIB d'avant 1992 n'a pas de base dite ; le passage de 1991 à 1992 est une rupture "
-             "de série, dont le niveau n'est pas connu, et aucune conversion n'est faite (voir "
-             "l'annexe sur le PIB). Aucune dépense de l'État n'est portée avant 1986 ; aucun PIB "
+               "de la répartition économique des dépenses du ministère des Finances, 1986-2015"),
+    caveats=("Le PIB d'avant 1992 n'a pas de base dite ; les passages de 1991 à 1992, de 1996 à "
+             "1997 et de 2009 à 2010 sont des ruptures de série, et aucune conversion n'est faite "
+             "(voir l'annexe sur le PIB) ; la base 1997 est recalculée par l'INS de 1997 à 2004, la "
+             "base 2015 de 2010 à 2014. Aucune dépense de l'État n'est portée avant 1986 ; aucun PIB "
              "avant 1961. L'année financière 1959-60 n'a donc aucune part. Le numérateur est un "
              "plafond voté, le dénominateur des dépenses un montant réalisé."))
 
+RUPTURES_PIB = (1992, 1997, 2010)  # années où le PIB change de série (base) : trait interrompu
 MESURES = {"md": "Millions de dinars courants", "pib": "En % du PIB",
            "dep": "En % des dépenses de l'État"}
 
@@ -378,13 +383,15 @@ def _soit(valeur: float, colonne: str) -> str:
     return "" if colonne.endswith("_md") else f", soit {valeur:.1f} %".replace(".", ",")
 
 
-def _trace_gestions(ax, g: pd.DataFrame, fixe: str, fin: str) -> None:
+def _trace_gestions(ax, g: pd.DataFrame, fixe: str, fin: str, ruptures=()) -> None:
     """Trait par suite d'années consécutives, un rond par gestion, un losange orange quand un
-    montant postérieur porte le plafond en cours de gestion."""
+    montant postérieur porte le plafond en cours de gestion. Le trait s'interrompt aux années de
+    `ruptures` : deux séries de PIB de bases différentes ne se raccordent pas."""
     g = g[g[fixe].notna()].reset_index(drop=True)
     debut = 0
     for i in range(1, len(g) + 1):
-        if i == len(g) or g["annee"].iloc[i] != g["annee"].iloc[i - 1] + 1:
+        if (i == len(g) or g["annee"].iloc[i] != g["annee"].iloc[i - 1] + 1
+                or g["annee"].iloc[i] in ruptures):
             seg = g.iloc[debut:i]
             if len(seg) > 1:
                 ax.step(seg["annee"], seg[fixe], where="post", color=BLEU, lw=1.8, zorder=2)
@@ -411,8 +418,8 @@ def _legende_plafond(ax, ft) -> None:
 
 
 def _cadre_plafond(ax) -> None:
-    ax.set_xlim(1958.5, 1995.5)
-    ax.set_xticks(list(range(1960, 1996, 5)))
+    ax.set_xlim(1958.5, 2016.5)
+    ax.set_xticks(list(range(1960, 2016, 5)))
     ax.grid(axis="y", color="#d0d7de", lw=0.6)
     ax.set_axisbelow(True)
     for cote in ("top", "right"):
@@ -422,7 +429,7 @@ def _cadre_plafond(ax) -> None:
 def fig_plafond(mesure: str = "md"):
     """Une vue du plafond : `md` (millions de dinars courants, échelle logarithmique), `pib`
     (en % du PIB de l'année, par segment de base) ou `dep` (en % des dépenses de l'État hors
-    service de la dette, 1986-1994)."""
+    service de la dette, 1986-2015)."""
     figtools.apply_lang_font()
     ft = figtools.fig_text
     g = _parts(_gestions())
@@ -432,34 +439,40 @@ def fig_plafond(mesure: str = "md"):
     if mesure == "md":
         _trace_gestions(ax, g, "fixe_md", "fin_md")
         ax.set_yscale("log")
-        ax.set_ylim(8, 1300)
-        ax.set_yticks([10, 25, 50, 100, 200, 300, 500, 900])
-        ax.set_yticklabels(["10", "25", "50", "100", "200", "300", "500", "900"])
+        ax.set_ylim(8, 7000)
+        ax.set_yticks([10, 25, 50, 100, 200, 500, 1000, 2000, 4000])
+        ax.set_yticklabels(["10", "25", "50", "100", "200", "500", "1 000", "2 000", "4 000"])
         ax.minorticks_off()
-        for annee, y, texte in ((1959, 12, "12"), (1963, 16, "16"), (1967, 20, "20"),
-                                (1968, 25, "25"), (1975, 50, "50"), (1977, 200, "200"),
-                                (1988, 300, "300"), (1992, 250, "250"), (1993, 500, "500"),
-                                (1994, 950, "950")):
-            ax.annotate(texte, xy=(annee, y), xytext=(0, -13), textcoords="offset points",
+        for annee, y, texte, dx, dy in ((1959, 12, "12", 0, -13), (1963, 16, "16", 0, -13),
+                                        (1967, 20, "20", 0, -13), (1968, 25, "25", 0, -13),
+                                        (1975, 50, "50", 0, -13), (1977, 200, "200", 0, -13),
+                                        (1988, 300, "300", 0, -13), (1992, 250, "250", 0, -13),
+                                        (1993, 500, "500", 0, -13), (1994, 950, "950", 0, -13),
+                                        (2003, 1200, "1 200", 14, -3), (2012, 4000, "4 000", 0, 7),
+                                        (2013, 3000, "3 000", 0, -13)):
+            ax.annotate(texte, xy=(annee, y), xytext=(dx, dy), textcoords="offset points",
                         ha="center", fontsize=7.5)
         ax.set_ylabel(ft("Millions de dinars courants (échelle logarithmique)"))
     else:
-        _trace_gestions(ax, g, f"fixe_{mesure}", f"fin_{mesure}")
+        _trace_gestions(ax, g, f"fixe_{mesure}", f"fin_{mesure}",
+                        ruptures=RUPTURES_PIB if mesure == "pib" else ())
         if mesure == "pib":
             ax.set_ylim(0, 11)
             ax.set_ylabel(ft("% du PIB de l'année"))
-            figtools.marque_rupture(ax, 1992)
+            for rupture in RUPTURES_PIB:
+                figtools.marque_rupture(ax, rupture)
             for x, texte in ((1976, "PIB 1961-1991 : Banque mondiale, base non dite"),
-                             (1992.2, "INS, base 1983")):
+                             (1994, "INS, base 1983"), (2003.5, "INS, base 1997"),
+                             (2013.2, "INS, base 2015")):
                 ax.annotate(texte, xy=(x, 1), xycoords=("data", "axes fraction"),
                             xytext=(0, 5), textcoords="offset points",
-                            ha="center" if x < 1990 else "left", va="bottom", fontsize=7,
+                            ha="center", va="bottom", fontsize=7,
                             color=GRIS, annotation_clip=False)
         else:
-            ax.set_xlim(1985.5, 1994.7)
-            ax.set_xticks(list(range(1986, 1995)))
+            ax.set_xlim(1985.5, 2016.0)
+            ax.set_xticks(list(range(1987, 2016, 4)))
             ax.set_xlabel(ft("Gestion (année de la loi de finances)"))
-            ax.set_ylim(0, 25)
+            ax.set_ylim(0, 27)
             ax.set_ylabel(ft("% des dépenses de l'État hors service de la dette"))
     _legende_plafond(ax, ft)
     fig.tight_layout()
@@ -500,6 +513,9 @@ def figure_plafond(caption: str, note_lecture: str | None = None) -> None:
 
 
 def _mnt(x: float) -> str:
+    """Montant en MD, espace comme séparateur des milliers (« 1 800 »)."""
+    if float(x).is_integer():
+        return f"{int(x):,}".replace(",", " ")
     return f"{x:g}".replace(".", ",")
 
 
@@ -529,6 +545,8 @@ def tableau_plafond(caption: str, tbl_id: str = "tbl-ep-plafond-registre") -> No
                       "par rapport à la gestion précédente")
         if r["nature"] == "fixation" and lignes and lignes[-1][1] == texte:
             change = f"même article : plafond de {_mnt(r['plafond'])} MD aussi pour cette gestion"
+        if r["precision"]:
+            change += f" ; {r['precision']}"
         g = r["gestion"]
         lignes.append([f"[]{{#{ancre}}}gestion {g}", texte, change, "ajustement"])
     entete = ["Date d'effet", "Texte, article et page", "Ce que le texte change", "Portée"]

@@ -88,8 +88,16 @@ def test_plafond_de_la_garantie_est_continu():
             assert float(l["plafond_avant_md"]) == fixe[l["gestion"]]
             assert float(l["plafond_md"]) > float(l["plafond_avant_md"])
     assert [l["gestion"] for l in lignes if l["nature"] == "fixation"] == [
-        "1958-59", "1959-60"] + [str(a) for a in range(1961, 1995)]
+        "1958-59", "1959-60"] + [str(a) for a in range(1961, 2016)]
     assert fixe["1977"] == 200.0 and fixe["1994"] == 950.0 and fixe["1992"] == 250.0
+    # 1995-2015 : 950 MD jusqu'en 2010 sauf 2003 (1 200), 1 800 en 2011, 4 000 en 2012, 3 000 de 2013 à 2015
+    assert all(fixe[str(a)] == 950.0 for a in range(1994, 2011) if a != 2003)
+    assert fixe["2003"] == 1200.0 and fixe["2011"] == 1800.0 and fixe["2012"] == 4000.0
+    assert {fixe[str(a)] for a in (2013, 2014, 2015)} == {3000.0}
+    # deux relèvements en cours de gestion depuis 1995 : 2002 (loi n° 2002-90) et 2011 (décret-loi n° 2011-56)
+    releves = {l["gestion"]: (float(l["plafond_avant_md"]), float(l["plafond_md"]))
+               for l in lignes if l["plafond_avant_md"] and int(l["gestion"][:4]) >= 1995}
+    assert releves == {"2002": (950.0, 1800.0), "2011": (1800.0, 4000.0)}
     # une ligne par montant : pas deux fois le même article pour la même gestion
     cles = [(l["gestion"], l["loi"], l["article"]) for l in lignes]
     assert len(cles) == len(set(cles))
@@ -141,7 +149,12 @@ def test_parts_du_plafond_de_la_garantie():
     assert t.loc["1985", dep] != t.loc["1985", dep]  # NaN : pas de dépenses avant 1986
     assert t.loc["1986", dep] == pytest.approx(100 * 200 / 2395.0, abs=0.01)
     assert set(t.loc["1961":"1991", "Base du PIB"]) == {"base non dite"}
-    assert set(t.loc["1992":"1994", "Base du PIB"]) == {"base 1983"}
+    assert set(t.loc["1992":"1996", "Base du PIB"]) == {"base 1983"}
+    assert set(t.loc["1997":"2009", "Base du PIB"]) == {"base 1997"}
+    assert set(t.loc["2010":"2015", "Base du PIB"]) == {"base 2015"}
+    assert t.loc["2012", dep] == pytest.approx(100 * 4000 / 19141.9, abs=0.01)
+    assert t.loc["2011", "Montant en vigueur à la fin, en % du PIB"] == pytest.approx(
+        100 * 4000 / 67747.3, abs=0.01)
 
 
 def test_figure_des_dettes_et_creances_croisees_recoupe_le_tableau():

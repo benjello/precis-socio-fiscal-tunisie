@@ -95,3 +95,60 @@ d'amortissement de la garantie de bonne fin.
 - Prêts du Trésor aux entreprises publiques (article voisin de chaque loi, code de la
   comptabilité publique, art. 62) : montants vus (1974-75 : 14 puis 20 MD ; 1979 : 20 MD ;
   1992 : 20 MD ; 1994 : 40 MD), non relevés en série.
+
+## 6. Plafond de 1995 à 2015 (ajouté le 23 octobre 2026)
+
+**Méthode.** Fascicules français du corpus local (`PDFs/JORT/<année>/fr/`) : couche texte, lue par
+`pdftotext`. Les fascicules de 1999 à 2004 (et celui du 1er novembre 2002) ont une police codée :
+chaque caractère est décalé de 29 rangs, le texte se déchiffre en ajoutant 29 au code. Numéro de page
+relevé sur le pied de page de la page qui porte l'article ; page 2876 (gestion 2003) contrôlée à
+l'image. Les lois de finances complémentaires sont cherchées par « limite duquel » dans le texte ; pour
+2002, 2004 et 2006 (autre codage), par reconnaissance de caractères.
+
+| Gestion | Montant (MD) | Loi, article, page |
+|---|---|---|
+| 1995 | 950 | loi n° 94-127, art. 13, p. 2042 |
+| 1996 | 950 | loi n° 95-109, art. 13, p. 2369 (le texte écrit « législation en vigueur », et non plus « textes et conventions en vigueur ») |
+| 1997 | 950 | loi n° 96-113, art. 16, p. 2579 |
+| 1998 | 950 | loi n° 97-88, art. 16, p. 2436 |
+| 1999 | 950 | loi n° 98-111, art. 11, p. 2501 |
+| 2000 | 950 | loi n° 99-101, art. 11, p. 2740 |
+| 2001 | 950 | loi n° 2000-98, art. 11, p. 3172 |
+| 2002 | 950, puis 1 800 | loi n° 2001-123, art. 11, p. 4252 ; loi n° 2002-90 du 29 octobre 2002, art. unique, p. 2535 (JORT n° 89) : « est porté de 950.000.000 dinars à 1.800.000.000 dinars » |
+| 2003 | 1 200 | loi n° 2002-101, art. 11, p. 2876 |
+| 2004 | 950 | loi n° 2003-80, art. 11, p. 3722 |
+| 2005 à 2010 | 950 | lois n° 2004-90 (art. 9, p. 3433), 2005-106 (p. 3597), 2006-85 (p. 4381), 2007-70 (p. 4358), 2008-77 (p. 4275), 2009-71 (p. 3912) |
+| 2011 | 1 800, puis 4 000 | loi n° 2010-58, art. 9, p. 3462 ; décret-loi n° 2011-56 du 25 juin 2011, art. 1er (art. 9 nouveau), p. 1013 (JORT n° 47) |
+| 2012 | 4 000 | loi n° 2011-7, art. 9, p. 5 |
+| 2013 | 3 000 | loi n° 2012-27, art. 9, p. 5 : garantie « pour la conclusion des prêts ou émissions des soukouks islamiques » |
+| 2014, 2015 | 3 000 | lois n° 2013-54 (art. 9, p. 3668) et 2014-59 (art. 9, p. 3463), même libellé |
+
+**Constats.**
+
+- Loi n° 2012-1 du 16 mai 2012 (loi de finances complémentaire pour 2012, art. 1er, p. 921) : « article 9
+  (nouveau) » au même montant de 4 000 MD pour 2012. Aucun montant ne change : pas de ligne dans le relevé.
+- Loi de finances pour 1997, art. 17, p. 2580 : « nonobstant » l'article 16, la garantie de l'État est
+  accordée dans la limite de 980 000 000 dinars aux dettes de l'Office des céréales et de l'Office
+  national de l'huile envers la Banque nationale agricole au 31 décembre 1996, consolidées sur douze ans
+  sans intérêts et rachetées par la Banque centrale. Garantie distincte, hors du plafond de l'article 16 :
+  non versée dans la série.
+- Lois de finances complémentaires sans modification du plafond (aucune occurrence de « limite duquel »
+  ou de « garantie de l'État » dans le texte) : n° 2005-103, 2007-64, 2008-76, 2009-40, 2013-51, 2014-54 ;
+  par reconnaissance de caractères : n° 2002-100 (modifie les articles 1, 2, 5, 6 et 7 de la loi n° 2001-123),
+  2004-87, 2006-70 (modifie la loi n° 2001-123, autres articles). Pas de loi de finances complémentaire
+  indexée pour 2015.
+- Décrets-lois et décrets de 2001 à 2002 « portant octroi de la garantie de l'État pour la couverture des
+  conséquences de la responsabilité civile du fait des risques de guerre » dans le transport aérien :
+  garantie propre, sans montant plafond annuel, hors série.
+
+**À reporter dans `tunisia-data`** : la série du plafond légal (gestion, montant fixé, montant en vigueur
+à la fin de la gestion), 1959-60 à 2015, relevé versionné `listes/plafond-garanties-lois-de-finances.csv`.
+
+**Références.** Nouvelle notice : `loi2002-90-garantie-2002` (FR et AR, fonds commun). `lf-1998`
+(loi n° 97-88) promue du volume « Fiscalité » au fonds commun, FR et AR. Les autres lois sont déjà au
+fonds commun (`lf-1995` à `lf-2015`, `loi2001-123-lf2002`, `loi-2007-70-lf-2008`,
+`dl-2011-56-lfc-2011`) : leur note porte maintenant l'article et la page du plafond.
+
+**Lacunes.** Gestion 1960, décret du 29 juin 1957 et lois de finances complémentaires de 1969 à 1991
+(fiche `r-ep-plafond-garantie-1995-2015`) ; lois de finances de 2016 à 2024 (le plafond de 2016 à 2024
+vient des annexes du ministère des Finances ; seule la loi de 2020 est lue).
