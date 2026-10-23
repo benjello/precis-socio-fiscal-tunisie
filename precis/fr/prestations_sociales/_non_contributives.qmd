@@ -708,7 +708,7 @@ Les lois de finances pour 2025 et 2026 créent plusieurs aides destinées à des
 | Loi de finances | Article | Bénéficiaires | Montant |
 |---|---|---|---|
 | [pour 2025](#r-nc-ac-2025) | art. 26 | patients allergiques au gluten des familles pauvres et à revenu limité inscrites à l'Amen social | 30 D par mois et par personne |
-| [pour 2026](#r-nc-ac-2026) | art. 35 | personnes atteintes de *xeroderma pigmentosum*, sans condition de ressources ; patients allergiques au gluten des familles pauvres et à revenu limité inscrites à l'Amen social | 130 D par mois et par personne |
+| [pour 2026](#r-nc-ac-2026) | art. 35 | personnes atteintes de *xeroderma pigmentosum*, sans condition de ressources dans la loi (depuis le [19 juillet 2026]{.insecable}, l'arrêté d'application réserve l'aide aux personnes qui ne relèvent d'aucun régime légal de couverture sociale) ; patients allergiques au gluten des familles pauvres et à revenu limité inscrites à l'Amen social | 130 D par mois et par personne |
 | [pour 2026](#r-nc-ac-2026) | art. 71 | enfants diabétiques des familles pauvres et à revenu limité inscrites à l'Amen social | 150 D, sans périodicité énoncée (lecteur de glycémie sans piqûre) |
 | [pour 2026](#r-nc-ac-2026) | art. 81 | enfants atteints de troubles du spectre autistique des familles pauvres et à revenu limité inscrites à l'Amen social | 150 D par mois |
 | [pour 2026](#r-nc-ac-2026) | art. 96 | orphelins des familles démunies et à revenu limité : création d'un fonds d'accompagnement matériel et social, sans prestation définie | — |
@@ -724,15 +724,27 @@ Les lois de finances pour 2025 et 2026 créent plusieurs aides destinées à des
 
 ::::
 
-<!-- TODO (documentaliste) : arrêtés conjoints d'application des articles 35, 71 et 81 de la loi de finances pour 2026, non
-cherchés ; articles repris de la couche texte (texte français collecté sur jibaya.tn pour 2025, édition arabe pour 2026), à
-relire à l'image. -->
+<!-- TODO (documentaliste) : arrêté d'application de l'article 35 de la loi de finances pour 2026 : trouvé (arrêté conjoint du 14 juillet 2026). Arrêtés d'application des articles 71 et 81 : non identifiés, voir la fiche r-lf2026-art71-81-arretes. Articles repris de la couche texte (texte français collecté sur jibaya.tn pour 2025, édition arabe pour 2026) ; la page 6425 de l'édition arabe de la loi de finances pour 2025 est lue et concorde sur l'article 26 ; articles de 2026 à relire à l'image. -->
+<!-- RECHERCHE r-lf2026-art71-81-arretes : arrêtés conjoints d'application des articles 71 (lecteur de glycémie) et 81 (troubles du spectre autistique) de la loi de finances pour 2026 (voir docs/recherches.yml) -->
 
-Un texte d'application est établi : [l'arrêté conjoint du 30 juillet 2025](#r-nc-ap-gluten) fixe les modalités d'octroi de l'allocation pour la prise en charge des dépenses alimentaires des patients allergiques au gluten, et entre en vigueur **à compter du 1^er^ janvier 2025**, soit sept mois avant sa publication.
+<!-- TODO (documentaliste) : articulation de l'article 26 de la loi de finances pour 2025 (30 D) et de l'article 35 de celle de 2026 (130 D) : montant servi du 1er janvier au 19 juillet 2026, survie de l'article 26, cumul éventuel. Aucun texte lu ne la règle ; ne pas la déduire. -->
 
-:::: {.chronologie-repliable titre="Aide aux patients allergiques au gluten : modalités de demande et date d'effet, arrêté du 30 juillet 2025"}
+L'aide aux personnes [allergiques au gluten](#g-allergie-gluten) est servie depuis le [1^er^ janvier 2025]{.insecable}, à 30 dinars par mois et par personne, puis à 130 dinars depuis le [1^er^ janvier 2026]{.insecable} (@tbl-nc-gluten-montant).
 
-[]{#r-nc-ap-gluten}L'arrêté conjoint du 30 juillet 2025 [@arrete-2025-07-30-gluten, art. 3] retient une demande écrite accompagnée d'un certificat médical, déposée selon la procédure du décret gouvernemental de 2020 et enregistrée au registre des données ; il entre en vigueur à compter du 1^er^ janvier 2025.
+| Date d'effet | Texte | Montant par mois et par personne |
+|---|---|---|
+| [1^er^ janvier 2025]{.insecable} | loi de finances pour 2025, art. 26 | 30 D |
+| [1^er^ janvier 2026]{.insecable} | loi de finances pour 2026, art. 35 | 130 D |
+
+: Allocation pour les dépenses alimentaires des patients allergiques au gluten {#tbl-nc-gluten-montant}
+
+L'état du droit au [19 juillet 2026]{.insecable} est fixé par [l'arrêté conjoint du 14 juillet 2026](#r-nc-ap-2026), qui abroge [l'arrêté conjoint du 30 juillet 2025](#r-nc-ap-gluten). Il réglemente l'allocation de l'article 35 de la loi de finances pour 2026 et ne fixe aucun montant. La demande est écrite et accompagnée d'un certificat d'un médecin de la santé publique ; une commission médicale de trois médecins (affaires sociales, santé, caisse nationale d'assurance maladie) examine la preuve de la maladie ; le demandeur est inscrit dans un registre de données spécifique. L'allocation pour *xeroderma pigmentosum*, de même montant, est réservée aux personnes qui ne relèvent d'aucun régime légal de couverture sociale ; l'allocation pour allergie au gluten reste réservée aux familles pauvres et à revenu limité inscrites à l'Amen social.
+
+:::: {.chronologie-repliable titre="Aide aux patients allergiques au gluten et aux personnes atteintes de xeroderma pigmentosum : modalités de demande, commission médicale, registre et dates d'effet, arrêtés du 30 juillet 2025 et du 14 juillet 2026"}
+
+[]{#r-nc-ap-gluten}L'arrêté conjoint du 30 juillet 2025 [@arrete-2025-07-30-gluten, art. 1 à 3, p. 1977] retient une demande écrite accompagnée d'un certificat médical selon un modèle annexé, déposée selon la procédure du décret gouvernemental de 2020 et enregistrée au registre des données des catégories pauvres et à faible revenu. Il s'applique à compter du 1^er^ janvier 2025, soit sept mois avant sa publication au *Journal officiel* du 7 août 2025. L'arrêté du 14 juillet 2026 l'abroge (art. 4).
+
+[]{#r-nc-ap-2026}L'arrêté conjoint du 14 juillet 2026 [@arrete-2026-07-14-xeroderma-gluten, art. 1 à 5, pp. 1327-1328] vise l'article 35 de la loi de finances pour 2026 et règle les deux allocations de cet article. Article 1 : l'allocation pour *xeroderma pigmentosum* est réservée aux personnes atteintes qui ne bénéficient d'aucun régime légal de couverture sociale ; l'allocation pour allergie au gluten est servie aux personnes atteintes qui appartiennent à des familles pauvres et à revenu limité inscrites à l'Amen social. Article 2 : demande écrite, certificat d'un médecin de la santé publique conforme à l'un des deux modèles annexés à l'édition arabe, preuve examinée par une commission médicale composée d'un médecin du ministère des affaires sociales, d'un médecin du ministère de la santé et d'un médecin contrôleur de la caisse nationale d'assurance maladie, désignés par décision du ministre des affaires sociales. Article 3 : procédure des articles 11 et 12 du décret gouvernemental de 2020 ; enregistrement dans un registre de données spécifique. Article 4 : abrogation de l'arrêté du 30 juillet 2025. Article 5 : publication ; sans clause d'effet, l'arrêté est exécutoire le 19 juillet 2026, cinq jours après le dépôt du *Journal officiel* n° 70 le 14 juillet 2026, jour du dépôt non compté.
 
 ::::
 
@@ -801,14 +813,16 @@ Les textes de l'aide médicale emploient les listes du programme. [Le décret n�
 
 [Le décret n° 2014-1526](#r-nc-li-2014) crée par ailleurs une unité de gestion par objectifs chargée d'instaurer une **banque de données sur les familles nécessiteuses et à revenu limité**, pour une durée de quatre ans en quatre étapes, [prolongée d'un an en 2018](#r-nc-li-2018). [La loi organique de 2019](#r-nc-li-2019) institue ensuite un registre de données sur les catégories pauvres et les catégories à revenu limité.
 
+<!-- RECHERCHE r-banque-donnees-2014-1526-suite : texte prolongeant à nouveau, modifiant ou abrogeant le décret n° 2014-1526 après le décret gouvernemental n° 2018-626 (voir docs/recherches.yml) -->
+
 :::: {.chronologie-repliable titre="Listes du programme d'aide aux familles nécessiteuses, banque de données et registre : textes et articles, 1998-2019"}
 
 | Date | Texte | Ce qu'il établit |
 |---|---|---|
 | []{#r-nc-li-1998}1998 | décret n° 98-1812 [@decret-98-1812-amg1, art. 5] | la première liste des bénéficiaires de la carte de soins gratuits tient compte des listes nominatives des bénéficiaires des aides permanentes |
 | []{#r-nc-li-2012}2012 | décret n° 2012-2521 [@decret-2012-2521-amg1-pnafn, art. 5] | la liste des éligibles est élaborée au vu des listes des bénéficiaires et des éligibles aux aides monétaires directes du programme |
-| []{#r-nc-li-2014}2014 | décret n° 2014-1526 [@decret-2014-1526-banque-donnees, art. 3] | unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité, quatre ans en quatre étapes |
-| []{#r-nc-li-2018}[13 août 2018]{.insecable} | décret gouvernemental n° 2018-626 du 26 juillet 2018 [@decret2018-626, art. 1-2] | la durée de réalisation du projet de banque de données est prolongée d'un an à compter de l'expiration de la période prévue en 2014 (art. 1) ; l'unité de gestion compte six cadres ayant rang de chef de service d'administration centrale (art. 2). Dépôt du *Journal officiel* n° 63 le 8 août 2018 : exécution cinq jours après, jour du dépôt non compté |
+| []{#r-nc-li-2014}[19 mai 2014]{.insecable} | décret n° 2014-1526 du 30 avril 2014 [@decret-2014-1526-banque-donnees, art. 3 et 5] | [unité de gestion par objectifs](#g-unite-de-gestion-par-objectifs), banque de données sur les familles nécessiteuses et à revenu limité, quatre ans en quatre étapes (art. 3) ; quatre cadres ayant rang de chef de service d'administration centrale (art. 5). Dépôt du *Journal officiel* n° 38 le 14 mai 2014 : exécution cinq jours après, jour du dépôt non compté |
+| []{#r-nc-li-2018}[13 août 2018]{.insecable} | décret gouvernemental n° 2018-626 du 26 juillet 2018 [@decret2018-626, art. 1 et 2] | la durée de réalisation du projet de banque de données est prolongée d'un an à compter de l'expiration de la période prévue en 2014 (art. 1) ; l'unité de gestion compte six cadres ayant rang de chef de service d'administration centrale, au lieu de quatre (art. 2). Dépôt du *Journal officiel* n° 63 le 8 août 2018 : exécution cinq jours après, jour du dépôt non compté |
 | []{#r-nc-li-2019}2019 | loi organique n° 2019-10 [@loi-amen-social-2019, art. 18 à 22] | registre de données sur les catégories pauvres et les catégories à revenu limité |
 
 ::::
