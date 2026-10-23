@@ -13,6 +13,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Abattement sur les pensions et rentes viagères | الطرح بعنوان الجرايات والإيرادات العمرية |  |
 | Accident du travail | حادث شغل |  |
 | Accréditation | الاعتماد |  |
+| Acquit-à-caution | وصل ضمان |  |
 | Acte de notoriété | الوثيقة |  |
 | Administrations publiques | الإدارات العمومية |  |
 | Adoul | عدل إشهاد |  |
@@ -57,6 +58,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Bénéfices des professions non commerciales | الأرباح غير التجارية | BNC |
 | Bénéfices distribués | الأرباح الموزعة |  |
 | Bénéfices industriels et commerciaux | الأرباح الصناعية والتجارية | BIC |
+| Bière, vin classés | الجعة والخمور المصنفة |  |
 | Bonification | الترفيع في مدّة الخدمات |  |
 | Bourse d'alternance | منحة التداول |  |
 | Bourse d'hébergement | منحة السكن |  |
@@ -81,6 +83,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Capacité d'emprunt | طاقة التداين |  |
 | Capital-décès | رأس مال الوفاة |  |
 | Capitalisation d'un impôt | رسملة الأداء |  |
+| Capsule fiscale sur les vins | العلامة الجبائية على الخمور |  |
 | Carnet de soins familial | دفتر عائلي للمعالجة |  |
 | Carte de soins | بطاقة العلاج |  |
 | Carte de soins à tarifs réduits | بطاقة العلاج بالتعريفة المنخفضة | AMG2 |
@@ -116,6 +119,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Compétences partagées | الصلاحيات المشتركة |  |
 | Compétences propres | الصلاحيات الذاتية |  |
 | Compétences transférées | الصلاحيات المنقولة |  |
+| Comptabilité matière | حسابية المواد |  |
 | Comptable public | محاسب الجماعة المحلية |  |
 | Compte de compensation | حساب المقاصّة |  |
 | Compte de diversification des sources de sécurité sociale | حساب تنويع مصادر الضمان الاجتماعي |  |
@@ -124,6 +128,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Compte financier | الحساب المالي |  |
 | Comptes spéciaux d'épargne | الحسابات الخاصة للادخار |  |
 | Condition de ressources | شرط الموارد |  |
+| Congé (titre de circulation) | سند إعفاء |  |
 | Congé annuel payé | الرخصة السنوية الخالصة الأجر |  |
 | Congé de paternité | عطلة الأبوة |  |
 | Conseil local | المجلس المحلي |  |

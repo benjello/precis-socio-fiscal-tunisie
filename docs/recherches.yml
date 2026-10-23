@@ -3853,3 +3853,20 @@
     resultat: aucun
   a_faire:
   - océriser les fascicules 1966-1970 à la recherche d'un décret d'application de l'art. 21 ; le décret n'a peut-être jamais été pris, le code organisant lui-même la commission
+
+- id: r-modificatifs-decret-97-1368
+  objet: Textes modifiant le décret n° 97-1368 du 24 juillet 1997 (régime fiscal des produits 22-03 à 22-08)
+  ou: [precis/fr/fiscalite/_droits_consommation.qmd#sec-dc-boissons]
+  requetes:
+    titres_like: ['%97-1368%', '%1368%1997%', '%22-03 a 22-08%', '%22.03 a 22.08%', '%22.3 a 22.8%']
+    iort_ar: ['%1368 لسنة 1997%']
+    plein_texte: [97-1368, 97 - 1368, 1368 لسنة 1997, 1368.*1997]
+    depuis: 1997-07-24
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Notices jort_cache (titre et objet) du 1997-07-24 au 2026-10-02, dernière publication indexée (JORT n° 97 de 2026) ; plein texte des fascicules locaux 2016-2026, FR et AR, couche texte seulement (fascicules scannés non parcourus). Trouvés : décrets n° 2002-627, 2007-1977, 2013-929, 2015-1768 et 2022-545 ; rien après le JORT n° 71 de 2022.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: decret-pres-2022-545-capsule-vins
+  a_faire: [parcourir les fascicules scannés de 2016 à 2026 (océrisation) pour le motif 97-1368]
