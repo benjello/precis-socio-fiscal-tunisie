@@ -404,6 +404,37 @@ Les budgets des communes portent deux articles d'éducation : un article de dép
 - **Ce que le modèle n'isole pas.** Aucun article ne porte sur la construction, l'équipement ou l'entretien des écoles. La construction de jardins d'enfants est un paragraphe de l'article des équipements collectifs de culture, de jeunesse, de sport et d'enfance [@decret-gouv2020-52, annexe, p. 397] ; l'entretien des bâtiments communaux, toutes destinations confondues, est classé dans les moyens des services.
 - **Les années publiées.** Les budgets par commune sont publiés par article pour 2022, exécution définitive, et pour 2023, situation provisoire au 10 janvier 2024 ; de 2018 à 2021, ils le sont par grande section seulement — gestion, intérêts de la dette, développement, remboursement du principal [@dgct-donnees-ouvertes] (@tbl-educ-communes).
 
+Les deux articles pèsent moins d'un millième des budgets : la dépense d'enseignement et de formation de l'article 3303 est de 0,09 % des dépenses du titre I en 2022 et de 0,06 % en 2023, et les recettes des jardins d'enfants de l'article 4101 de 0,08 % des recettes du titre I les deux années ; rapportées aux dépenses et aux recettes totales, les parts sont plus faibles encore (@fig-educ-communes). Le titre I réunit les dépenses de gestion et les intérêts de la dette ; le titre II, le développement, le remboursement du principal de la dette et les crédits reportés.
+
+```{python}
+#| label: fig-educ-communes
+#| fig-cap: "Articles d'éducation des budgets des 350 communes en parts des dépenses et des recettes, 2022 et 2023."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import fig_educ_depense as fd
+fd.onglets(
+    fd.vues_communes(), "fig_educ_communes",
+    caption=("Articles 3303 (enseignement et formation) et 4101 (jardins d'enfants) des budgets des "
+             "communes, en parts des dépenses et des recettes du titre I et du budget total, 2022 et 2023"),
+    source="Source : [@dgct-donnees-ouvertes], fichiers par commune et par article ; calcul du précis",
+    note_lecture=(
+        "Panneau de gauche : dépenses réalisées de l'article 3303 divisées par les dépenses réalisées "
+        "du titre I (gestion et intérêts de la dette), puis par les dépenses totales (titres I et II). "
+        "Panneau de droite : recettes réalisées de l'article 4101 divisées par les recettes réalisées "
+        "du titre I, puis par les recettes totales (titres I et II) ; le titre II des recettes comprend "
+        "les emprunts et les ressources de développement. Les montants sont ceux de 350 communes. 2022 "
+        "est une exécution définitive, 2023 une situation provisoire au 10 janvier 2024. L'article 3303 "
+        "additionne quatre paragraphes, dont la formation des agents locaux : sa part est un majorant de "
+        "la dépense d'enseignement. Les montants et les dénominateurs sont dans l'onglet « Données »."
+    ),
+)
+```
+
+<!-- TODO (documentaliste) : série 2018-2021 impossible avec les fichiers de la DGCT lus : ceux de 2018 à 2021 (Municipalites_depenses2018/2019/2020, Depenses_Decembre2021, Recettes_Decembre2021) s'arrêtent à la section ou à la catégorie, sans identifiant d'article. Chercher un budget par article de ces années (comptes de gestion, rapports de la Cour des comptes). -->
+
+:::: {.chronologie-repliable titre="Articles d'éducation des budgets des communes : montants et nombre de communes, 2022 et 2023"}
+
 | Article des budgets des communes | 2022 | 2023<br>(provisoire) |
 |---|---:|---:|
 | 3303, interventions dans l'enseignement et la formation : dépenses réalisées<br>(millions de dinars) | 1,02 | 0,64 |
@@ -415,6 +446,8 @@ Les budgets des communes portent deux articles d'éducation : un article de dép
 : Articles d'éducation des budgets des 350 communes, 2022 et 2023 {#tbl-educ-communes}
 
 Source : [@dgct-donnees-ouvertes], fichiers des dépenses et des recettes par commune et par article, 2022 et 2023 ; calcul du précis. Le titre I réunit les dépenses de gestion et les intérêts de la dette : 1 145 millions de dinars en 2022 et 1 082 en 2023.
+
+::::
 
 L'article 3303 additionne la contribution à un centre de formation, le transport des élèves pauvres, les prix scolaires et d'autres interventions ; les fichiers publiés s'arrêtent à l'article et ne séparent pas les paragraphes. La dépense d'enseignement des communes qu'il porte est donc au plus de 1,02 million de dinars en 2022 et de 0,64 en 2023. Les recettes des jardins d'enfants, 1,10 et 1,13 million de dinars, viennent de 29 communes.
 

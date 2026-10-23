@@ -2140,8 +2140,9 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   grande section). Reste : nomenclature des budgets des conseils régionaux (arrêté du 31 mars 2008), nomenclature
   communale antérieure à 2020 (arrêtés de 1975 et de 2008), décret n° 2004-1182 (centre de formation), destination
   des tickets-repas de l'article 3304 (13,8 MD en 2022) ; plein texte du corpus non parcouru. Fiche
-  `r-educ-collectivites-depense-education` ouverte. Les séries par article (2022-2023) sont à verser au catalogue de
-  `tunisia-data` avant toute figure. Le TODO du livre des finances locales sur l'annexe du décret n° 2020-52
+  `r-educ-collectivites-depense-education` ouverte. Figure `fig-educ-communes` (parts des articles 3303 et 4101 dans les
+  budgets, 2022-2023) engendrée par `figures/fig_educ_communes_donnees.py` depuis les fichiers bruts de la DGCT ; les séries par
+  article sont encore à verser au catalogue de `tunisia-data`. Série 2018-2021 impossible : fichiers sans identifiant d'article. Le TODO du livre des finances locales sur l'annexe du décret n° 2020-52
   (`_budgets.qmd`, section de la nomenclature) est en partie levé : le modèle est lu, le contenu des articles 6101
   et 8002 reste à lire ; `decret-gouv2020-439` est à ajouter aux références de ce livre.
 - [ ] **Textes à lire à l'image** : liste au § 9 du plan (arrêtés de montants de bourses 1958-1978, textes de 1990 et
