@@ -11045,6 +11045,66 @@
       },
       "title-short": "BCT, Rapport d'activité 1975",
       "note": "citation-key: bct-ra-1975\n17ème Rapport d'activité : couverture lue à l'image, le 6 octobre 2026. Rapport n° 17 de la BCT (catalogue « Rapport Annuel, n° 17 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 14 102 000 octets, 184 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/RA_fr_1975.pdf, SHA-256 5bfb31831ff8e2f3e5255d90a0646a91493c4ce604d43521505c752b5d284eda, ignorée par git). Utilisé par la note documentaire compensation-avant-1970-et-plans pour : opérations de la Caisse générale de compensation 1974-1975 (couche texte, p. PDF 117) ; numéros de page calculés sur la couche texte, à confirmer à l'ouverture. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "loi2025-9",
+      "type": "legislation",
+      "title": "Loi n° 2025-9 du 21 mai 2025, portant réglementation des contrats de travail et interdiction de la sous-traitance de main-d'œuvre",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "61",
+      "page": "1296-1299",
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            21
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2025/2025F/Jo0612025.pdf",
+      "note": "citation-key: loi2025-9\nJORT n° 61 de 2025, pp. 1296-1299 (édition française ; l'édition arabe est paginée à partir de la p. 1675). Art. 1er (art. 6-2 à 6-4, 17) p. 1296 ; art. 2 pp. 1297-1298 ; art. 3 à 8 p. 1298 ; art. 9 et 10 p. 1299. URL tirée de jort_cache.db (recid 197450, champ pdf_fr).",
+      "title-short": "Loi n° 2025-9 du 21 mai 2025"
+    },
+    {
+      "id": "loi92-81",
+      "type": "legislation",
+      "title": "Loi n° 92-81 du 3 août 1992, portant création des zones franches économiques",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "52",
+      "page": "1005-1006",
+      "issued": {
+        "date-parts": [
+          [
+            1992,
+            8,
+            3
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1992/1992F/Jo05292.pdf",
+      "note": "citation-key: loi92-81\nJORT n° 52 de 1992, pp. 1005-1006 pour l'art. 23 (contrats de travail en zone franche), lu à l'OCR. Rectificatif : JORT n° 76 de 1992, p. 1494, non lu. URL tirée de jort_cache.db (recid 113195, champ pdf_fr).",
+      "title-short": "Loi n° 92-81 du 3 août 1992"
+    },
+    {
+      "id": "loi2001-76",
+      "type": "legislation",
+      "title": "Loi n° 2001-76 du 17 juillet 2001, modifiant et complétant la loi n° 92-81 du 3 août 1992 portant création des zones franches économiques, telle que modifiée et complétée par la loi n° 94-14 du 31 janvier 1994",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "58",
+      "page": "1752-1753",
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            7,
+            17
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2001/2001F/Jo0582001.pdf",
+      "note": "citation-key: loi2001-76\nJORT n° 58 de 2001 (20 juillet 2001), pp. 1752-1753 ; art. 1er, p. 1752 : l'expression « zones franches économiques » est remplacée par « parcs d'activités économiques ». Numéro du JORT déposé au siège du gouvernorat de Tunis le 21 juillet 2001. URL tirée de jort_cache.db (recid 111433, champ pdf_fr).",
+      "title-short": "Loi n° 2001-76 du 17 juillet 2001"
     }
   ]
 }
