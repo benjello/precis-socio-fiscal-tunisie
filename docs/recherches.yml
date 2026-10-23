@@ -3405,7 +3405,7 @@
 
 - id: r-educ-lois-reglement-tableaux-par-chapitre
   objet: tableaux annexés aux lois portant règlement du budget de l'État (tableau n° 2, dépenses payées par chapitre), qui donneraient les dépenses exécutées des ministères de l'Éducation, de l'Enseignement supérieur et de la Formation professionnelle
-  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-collectivites]
   requetes:
     titres_fts: ['"reglement du budget"']
     titres_like: ['%reglement du budget%']
@@ -3424,7 +3424,7 @@
 
 - id: r-educ-lois-reglement-2021-et-apres
   objet: loi portant règlement du budget de l'État pour les gestions 2021 et suivantes
-  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-collectivites]
   requetes:
     titres_fts: ['"reglement du budget"']
     titres_like: ['%reglement du budget%', '%règlement du budget%']
@@ -3477,7 +3477,7 @@
 
 - id: r-educ-collectivites-depense-education
   objet: 'dépense d''éducation des communes et des conseils régionaux (construction, entretien et équipement des écoles) : établir si leurs budgets et leurs comptes, exposés au chapitre « Budgets et comptes » du livre des finances locales (precis/fr/finances_locales/_budgets.qmd), permettent de l''isoler, et sur quelles années'
-  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-collectivites]
   requetes:
     titres_fts: [nomenclature AND budget AND collectivites, budget AND communes AND ecoles]
     titres_like:
@@ -3494,10 +3494,15 @@
     couverture: 'intitulés seuls (jort_cache, FTS et LIKE ; miroir iort, termes arabes), du 1958-01-01 au 2026-10-02, par recherches.py relancer --sans-plein-texte : répondent le décret gouvernemental n° 2020-52 du 23 janvier 2020 (modèle de la nomenclature budgétaire des communes) et sa modification, le décret gouvernemental n° 2020-439 du 14 juillet 2020, ainsi que des lois de finances de 2009 à 2019 (terme « صيانة المدارس ») ; aucun de ces textes n''est lu. Ni la nomenclature des conseils régionaux, ni les comptes des communes, ni le chapitre « Budgets et comptes » du livre des finances locales ne sont examinés ; plein texte du corpus local non parcouru.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [corpus_local, jort_cache]
+    couverture: 'lecture du décret gouvernemental n° 2020-52 et de son modèle annexé (JORT n° 9 de 2020, édition arabe, pp. 368-397, couche texte ; pp. 392-393 à l''image) : un article d''interventions dans l''enseignement et la formation (03.303), des revenus des jardins d''enfants (4101, 4201), aucune rubrique de construction ni d''entretien des écoles ; décret n° 2020-439 (JORT n° 71 de 2020, pp. 1575-1576) : seulement le remboursement du principal ; fichiers par commune de la DGCT, au niveau de l''article en 2022 et 2023 seulement ; non lus : nomenclature des conseils régionaux, nomenclature communale antérieure à 2020 (arrêté du 31 mars 2008, arrêté du 6 novembre 1975), plein texte du corpus local'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
-  - 'lire le décret gouvernemental n° 2020-52 (et le n° 2020-439) : la nomenclature budgétaire des communes a-t-elle une rubrique propre à l''enseignement ou aux écoles ?'
-  - 'lire precis/fr/finances_locales/_budgets.qmd et ses séries : une dépense d''éducation des communes ou des conseils régionaux y est-elle isolable, et sur quelles années ?'
-  - nomenclature budgétaire des conseils régionaux, et nomenclature des communes antérieure à 2020
+  - 'nomenclature budgétaire des conseils régionaux (arrêté du 31 mars 2008), et nomenclature des communes antérieure à 2020 (arrêtés de 1975 et de 2008) : les articles 3303 et 4101 existaient-ils ?'
+  - 'budgets des communes par article avant 2022 : non publiés par la DGCT (sections seules)'
   - plein texte du corpus local (relancer sans --sans-plein-texte)
 
 - id: r-educ-passage-septieme

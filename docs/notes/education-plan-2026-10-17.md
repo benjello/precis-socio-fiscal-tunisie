@@ -591,7 +591,7 @@ questions ouvertes, écrire ou relire « Ce qu'en dit l'économie ». Pour ce li
   les crée (lois n° 88-135 à 88-137, modifiées en 1996 ; décret n° 2006-2245 pour l'office du Nord),
   s'ils sont des établissements publics à caractère administratif ou non : la réponse ne change pas le
   domicile.
-- **Q8. Les collectivités. OUVERTE, comme lacune documentaire à instruire par la lecture.** Les
+- **Q8. Les collectivités. PARTIELLEMENT INSTRUITE le 23 octobre 2026 (communes ; voir `education-collectivites-2026-10-23.md`, section `#sec-educ-depense-collectivites`) : la nomenclature communale de 2020 isole un article d'interventions dans l'enseignement et la formation et les revenus des jardins d'enfants, rien pour la construction ni l'entretien des écoles ; les conseils régionaux restent à lire. Énoncé d'origine :** Les
   communes et les conseils régionaux ont-ils, ou ont-ils eu, une dépense d'éducation isolable
   (construction et entretien des écoles) ? Le livre des finances locales dit déjà que la commune
   partage l'entretien des écoles avec l'autorité centrale et exerce par transfert la construction et

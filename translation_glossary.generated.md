@@ -339,6 +339,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Moueddeb | المؤدب |  |
 | Moyenne annuelle | المعدل السنوي |  |
 | Moyens des services | وسائل المصالح |  |
+| Nomenclature budgétaire | تبويب الميزانية |  |
 | Obligation scolaire | إجبارية التعليم الأساسي |  |
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |

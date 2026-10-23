@@ -11979,6 +11979,27 @@ entries:
       definition: ""
       synonymes: []
 
+  - id: nomenclature-budgetaire
+    acronyme: null
+    statut: provisoire  # AR lu : intitulé du décret gouvernemental n° 2020-52 (AR), JORT n° 9 de 2020, p. 368 (« تبويب ميزانية البلديات ») ; colonnes du modèle annexé, p. 369
+    references: [decret-gouv2020-52]
+    source_definition: {ref: decret-gouv2020-52, locator: "annexe"}
+    source_traduction: {ref: decret-gouv2020-52, locator: "intitulé"}
+    voir_aussi: [interventions-publiques, depenses-de-gestion]
+    fr:
+      terme: Nomenclature budgétaire
+      definition: >
+        Classement des recettes et des dépenses d'un budget en titres, parties,
+        sections, articles et paragraphes ; pour les communes, un modèle approuvé par
+        décret gouvernemental.
+      synonymes: []
+    ar:
+      terme: تبويب الميزانية
+      definition: >
+        تصنيف مداخيل الميزانية ونفقاتها إلى عناوين وأجزاء وأقسام وفصول وفقرات ؛ وبالنسبة
+        إلى البلديات، نموذج يُصادَق عليه بأمر حكومي.
+      synonymes: []
+
   - id: credits-d-engagement
     acronyme: null
     statut: provisoire  # AR lu : loi organique n° 2019-15 (AR, couche texte), art. 22

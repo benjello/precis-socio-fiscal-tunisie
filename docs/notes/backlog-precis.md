@@ -2130,11 +2130,20 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
 - [ ] **Chapitres non commencés** : résultats (scolarisation, examens, abandon) et rapports et études (chap. 7 et 8
   du plan) ; ils attendent les séries du ministère de l'Éducation (taux de scolarisation par âge, abandon) et les
   rapports à obtenir ; « Ce qu'en dit l'économie » par dispositif ; version arabe.
-- [ ] **Q8, collectivités : à instruire par la lecture.** Les budgets des communes et des conseils régionaux (livre
-  des finances locales, « Budgets et comptes ») permettent-ils d'isoler une dépense d'éducation ? Fiche
-  `r-educ-collectivites-depense-education` ; décrets gouvernementaux n° 2020-52 et n° 2020-439
-  (nomenclature budgétaire des communes), repérés et non lus. Le chapitre de la dépense n'a aucune ligne
-  « collectivités » dans ses totaux et renvoie au livre des finances locales (art. 243 et 244 du code).
+- [ ] **Q8, collectivités : instruite pour les communes le 23 octobre 2026 ; reste les conseils régionaux.**
+  Section `#sec-educ-depense-collectivites` du chapitre de la dépense, note `education-collectivites-2026-10-23`.
+  Lus : décret gouvernemental n° 2020-52 et son modèle annexé (JORT n° 9 de 2020, édition arabe, pp. 368-397),
+  décret n° 2020-439 (ne touche que le principal de la dette), fichiers par commune de la DGCT. Constat : un article
+  de dépenses d'interventions dans l'enseignement et la formation (03.303, mêlé à la contribution au centre de
+  formation et d'appui à la décentralisation), les revenus des jardins d'enfants (4101, 4201), aucune rubrique pour la
+  construction ni l'entretien des écoles ; budgets par article publiés pour 2022 et 2023 seulement (2018-2021 : par
+  grande section). Reste : nomenclature des budgets des conseils régionaux (arrêté du 31 mars 2008), nomenclature
+  communale antérieure à 2020 (arrêtés de 1975 et de 2008), décret n° 2004-1182 (centre de formation), destination
+  des tickets-repas de l'article 3304 (13,8 MD en 2022) ; plein texte du corpus non parcouru. Fiche
+  `r-educ-collectivites-depense-education` ouverte. Les séries par article (2022-2023) sont à verser au catalogue de
+  `tunisia-data` avant toute figure. Le TODO du livre des finances locales sur l'annexe du décret n° 2020-52
+  (`_budgets.qmd`, section de la nomenclature) est en partie levé : le modèle est lu, le contenu des articles 6101
+  et 8002 reste à lire ; `decret-gouv2020-439` est à ajouter aux références de ce livre.
 - [ ] **Textes à lire à l'image** : liste au § 9 du plan (arrêtés de montants de bourses 1958-1978, textes de 1990 et
   1992, décret n° 80-1001, arrêté de 1982, fascicules d'avant 1990, décrets de répartition des crédits,
   budgets citoyens 2014-2018). Ticket proposé au § 9, à ouvrir par l'humain.
