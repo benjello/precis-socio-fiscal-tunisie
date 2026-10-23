@@ -3827,3 +3827,52 @@ Ajoutées ensuite au même chantier (FR et AR de `fiscalite`, 157 entrées de ch
 - Rapatriement Zotero **non lancé** : en attente de feu vert humain (séquence `permissions` → `verifier` →
   `dry-run` → `pousser-un` → `comparer` → `pousser-tout` → `ranger`). L'action GitHub `dry-run` du workflow
   `biblio-zotero` n'est pas lançable avant le push de la branche.
+
+## Versement du 23/10/2026 (chapitre « Logement social et FOPROLOS », prestations sociales, bibliographe)
+
+Sources : `docs/notes/logement-social-foprolos-2026-10-23.md` § 2.2 (17 entrées, dont le rapport de l'ARP) et
+`docs/notes/eco-logement-social.md` § 6 (10 études). Domicile : `precis/{fr,ar}/prestations_sociales/references.json`.
+`precis/ar/prestations_sociales/references.json` : mêmes entrées, URL `pdf_ar` lues dans `jort_cache.db`.
+
+- [x] 27 clés versées (FR et AR) : `loi57-19`, `loi77-53`, `loi77-60-lfc1977`, `decret77-965`, `decret86-438`,
+  `loi86-47`, `decret99-96`, `loi2004-77`, `decret2012-1224`, `arrete-2013-07-29-prix-foprolos`,
+  `decret2016-1126`, `decret2017-161`, `decret2023-127`, `loi2026-1`, `loi2026-2`, `decret2026-123`,
+  `arp-2025-11-16-equipement`, `olsen-2003-housing-programs`, `sinai-waldfogel-2005-crowd-out`,
+  `fack-2005-aides-logement`, `gruber-jensen-kleven-2021-mortgage-deduction`, `glaeser-gyourko-2018-housing-supply`,
+  `galiani-schargrodsky-2010-titling`, `buckley-kalarickal-2006-shelter-lending`,
+  `baharoglu-peltier-buckley-2005-mena-housing`, `bm-2003-rehabilitation-urbaine`,
+  `onu-habitat-2011-tunisia-housing-profile`. DOI des cinq articles vérifiés sur Crossref le 23/10/2026
+  (dont Galiani et Schargrodsky, que la fiche donnait « non vérifié »).
+- [x] Clés partagées avec d'autres livres, déplacées au fonds commun (`precis/{fr,ar}/references.json`, une seule
+  copie) : `loi77-54` (cotisations sociales), `dl-2011-56-lfc-2011` et `lf-2019` (fiscalité),
+  `gruber-1994-mandated-maternity` (marché du travail), `decret2010-3170` (entreprises publiques, FR ; copie
+  arabe créée avec `Ja1012010.pdf`, 200).
+  - [ ] **Zotero : ces cinq clés gardent la collection de leur livre d'origine** ; `ranger` n'en retire aucune.
+    Déclassement à lancer après feu vert (action sortante).
+- Clés déjà présentes, réutilisées : `loi86-106-lf1987`, `loi-87-83-lf-1988`, `loi-88-145-lf-1989`, `lf-1990`,
+  `lf-1993`, `lfc-2012`, `lf-2011`, `lf-2013` à `lf-2018`, `lf-2020`, `lf-2022`, `lf-2023`, `lf-2025`, `lf-2026`,
+  `zaafrane-2014-habitat`. Les URL arabes de `lf-2023`, `lf-2025`, `lf-2026` figuraient déjà dans
+  `precis/ar/references.json` ; les entrées françaises restent sans URL (l'édition française n'est pas en
+  ligne, voir leurs notes).
+- Doublons laissés tels quels (les fusionner touche les `.qmd` d'autres livres) : `lf-1987`, `lf-1988`, `lf-1989`
+  (compensation) contre `loi86-106-lf1987`, `loi-87-83-lf-1988`, `loi-88-145-lf-1989` ; `loi-76-115-lf-1977`
+  (éducation) contre `lf-1977` ; `loi-89-115-lf-1990` (fiscalité) contre `lf-1990` ; `lfc-1989` (compensation
+  et fonds commun, découvert au contrôle). Le chapitre doit citer les clés du fonds commun.
+- [ ] `loi2026-1`, `loi2026-2` (FR) : sans URL. `jort_cache.db` n'a pas de `pdf_fr` pour le JORT n° 19/2026 ;
+  `https://www.pist.tn/jort/2026/2026F/Jo0192026.pdf` répond 200, c'est un fascicule français (lu p. 262) et
+  son empreinte diffère de l'arabe. À verser à l'URL dès que la base le porte, ou sur décision humaine.
+  `jort_cache.db` donne aussi, pour la loi n° 2026-1, la date de signature 2026-01-13 ; le fascicule porte
+  « 13 février 2026 ».
+- [ ] `decret2026-123` (FR) : sans URL (le fichier `2026F/Jo0622026.pdf` est identique octet pour octet à
+  l'arabe) ; intitulé arabe conservé, `language: ar`. AR : `Ja0622026.pdf`.
+- [ ] `loi57-19` (AR) : sans URL. `jort_cache.db` porte `1957A/Ja01557.pdf`, mais pist.tn renvoie 404
+  (23/10/2026) et le corpus local n'a pas ce fichier.
+- [ ] Pagination arabe non relevée : dans l'arabe, les entrées de 1986 à 2026 de ce versement n'ont pas de champ
+  `page` (la pagination du fichier français y est rappelée en note) ; les trois textes du JORT n° 53/1977 et
+  le décret n° 77-965 gardent leurs pages, comme `loi77-54`.
+- [ ] Titres arabes non établis : les entrées arabes portent l'intitulé français (comme le reste du fichier).
+- Ajoutée ensuite : `decret77-964` (lu).
+- Non versées (non lues) : loi n° 73-21, loi n° 73-24, décrets n° 74-33, 74-224, 77-926, loi n° 93-78,
+  décret n° 2021-327.
+- Rapatriement Zotero **non lancé**. Remplacement du `dry-run` par une conversion locale : `csl_vers_zotero`
+  appliquée à toutes les entrées des `references.json` (FR et AR) sans erreur.
