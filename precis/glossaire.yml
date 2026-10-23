@@ -6349,7 +6349,7 @@ entries:
 
   - id: acquit-a-caution
     acronyme: null
-    statut: valide
+    statut: provisoire
     references: [decret-97-1368-regime-alcools]
     source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
     source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
@@ -6375,7 +6375,7 @@ entries:
 
   - id: conge-circulation
     acronyme: null
-    statut: valide
+    statut: provisoire
     references: [decret-97-1368-regime-alcools]
     source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
     source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 31"}
@@ -6398,7 +6398,7 @@ entries:
 
   - id: comptabilite-matiere
     acronyme: null
-    statut: valide
+    statut: provisoire
     references: [decret-97-1368-regime-alcools]
     source_definition: {ref: decret-97-1368-regime-alcools, locator: "art. 15"}
     source_traduction: {ref: decret-97-1368-regime-alcools, locator: "art. 15"}

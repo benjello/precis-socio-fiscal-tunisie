@@ -4176,9 +4176,11 @@ matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
 - **Lois de finances 1998 à 2017.** Non dépouillées pour les positions 22-05, 22-06 et Ex 22-08
   (la LF 1998, art. 47, modifie le tableau pour un contenu non lu) : les valeurs de 1997 à 2015
   de ces lignes reposent sur la chaîne des décrets (« sans modification » en 2002 et en 2013).
-- **Habilitation de l'article 86 (LF 1989).** Elle vise les positions 22-03 et 22-05 à 22-09,
-  non la position 22-04 (vins), pour laquelle les décrets de 1993 et de 1997 fixent des tarifs :
-  à instruire (texte d'origine, modifications), sans conclure.
+- **Habilitation de l'article 86 (LF 1989).** Elle vise les positions 22-03 et 22-05 à 22-09, sans
+  22-04, alors que les décrets de 1993 et de 1997 fixent des tarifs pour Ex 22-04 (vins dans la
+  nomenclature actuelle). Piste : la loi de décembre 1988 précède le tarif harmonisé (loi n° 89-113) ;
+  le tableau de 1988 emploie l'ancienne numérotation (alcool éthylique en 22-08), où 22-04 désignerait
+  les moûts de raisin. À vérifier sur le tarif de 1988, sans conclure.
 - **Capsule de 1997.** La date de l'avis aux embouteilleurs (art. 44) est inconnue ; le JORT ne
   la porte pas.
 - **Décret n° 93-2090.** Date de dépôt du JORT n° 80 de 1993 non lue ; libellés des lignes lus

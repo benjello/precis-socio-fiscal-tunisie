@@ -20,7 +20,7 @@ placée après « Qui peut modifier le tableau » et avant « L'articulation ave
 ajoutée ». Le paragraphe de « Qui peut modifier le tableau » garde l'habilitation de l'article 86
 et renvoie à cette section en tête.
 
-## Ruptures (trois)
+## Ruptures (deux) et une reprise par la loi
 
 1. **4 août 1997 : un code complet par décret.** Le décret n° 97-1368 réunit droit de
    consommation, TVA propre, capsule fiscale sur les vins, obligations des producteurs et
@@ -28,9 +28,10 @@ et renvoie à cette section en tête.
 2. **24 novembre 2015 : un tarif au volume, une annexe unique.** Bière au centilitre, vin en
    bouteille au litre, spiritueux à un taux uniforme ; fin de la distinction classés / non classés
    pour les spiritueux.
-3. **1er janvier 2016 : le tarif entre dans la loi.** Le tableau de la loi reprend les lignes de
-   l'annexe de 2015 ; les révisions de 2018 et de 2021 passent par la loi de finances. La capsule
-   reste fixée par décret.
+3. **1er janvier 2016 : la loi reprend le tarif (étape).** Le tableau de la loi, refondu en entier,
+   porte les lignes 22-03 à 22-08 aux valeurs de l'annexe de 2015 ; les révisions de 2018 et de 2021
+   passent par la loi de finances. La capsule reste fixée par décret. Le tableau de 1988 portait déjà
+   des lignes de boissons : il n'y a pas là de rupture.
 
 ## Étapes et ajustements (dans le tableau daté et le bloc replié)
 
@@ -58,8 +59,9 @@ contrôle ; ils vont dans le bloc replié, sans section propre.
   vérification des lois de finances 2022 à 2026 sur le tableau consolidé le plus récent.
 - Rapport entre l'annexe de 2015 et le tableau de la loi : les textes lus ne règlent pas le sort
   de l'annexe.
-- Habilitation de l'article 86 (positions 22-03 et 22-05 à 22-09) : la position 22-04 n'y figure
-  pas, et le décret de 1997 y fixe des tarifs.
+- Habilitation de l'article 86 (positions 22-03 et 22-05 à 22-09) : 22-04 n'y figure pas, alors que le
+  décret de 1997 y fixe des tarifs ; piste : nomenclature antérieure au tarif harmonisé (22-04 =
+  moûts de raisin), à vérifier.
 - Date d'application de la capsule de 1997 (avis aux embouteilleurs, article 44).
 - Contexte de 1997 : le décret n'a pas d'exposé des motifs.
 - Lignes du décret n° 93-2090 lues par OCR : libellés à contrôler à l'image.
