@@ -89,6 +89,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Carte de soins | بطاقة العلاج |  |
 | Carte de soins à tarifs réduits | بطاقة العلاج بالتعريفة المنخفضة | AMG2 |
 | Carte de soins gratuits | بطاقة العلاج المجاني | AMG1 |
+| Catégorie de classement de l'entreprise publique | صنف المؤسسة |  |
 | Catégorie de grade | صنف الرتبة |  |
 | Catégories à revenu limité | الفئات محدودة الدخل |  |
 | Catégories pauvres | الفئات الفقيرة |  |
@@ -109,6 +110,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Coefficient budgétaire | المعامل الميزانياتي |  |
 | Collectivité locale | الجماعة المحلية |  |
 | Collège pilote | المدرسة الإعدادية النموذجية |  |
+| Comité de rémunération | لجنة التأجير |  |
 | Commerçant détaillant assujetti à la taxe sur la valeur ajoutée | تاجر التفصيل الخاضع للأداء على القيمة المضافة |  |
 | Commerçant grossiste | تاجر جملة |  |
 | Commission de contrôle du licenciement | لجنة مراقبة الطرد |  |
@@ -301,11 +303,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
 | Indemnité compensatrice de congé payé | منحة التعويض عن الرخصة |  |
+| Indemnité complémentaire de responsabilité | المنحة التكميلية بعنوان المسؤولية |  |
 | Indemnité complémentaire provisoire | المنحة الإضافية المؤقتة | ICP |
 | Indemnité d'apprentissage | منحة التدريب |  |
 | Indemnité de cherté de vie | منحة لغلو المعاش |  |
 | Indemnité de décès | منحة الوفاة |  |
 | Indemnité de gestion et d'exécution | منحة التصرف والتنفيذ |  |
+| Indemnité de responsabilité | منحة المسؤولية |  |
 | Indemnité de revenu unique | منحة الدخل الوحيد |  |
 | Indemnité de stage | منحة التربص |  |
 | Indemnité journalière | التعويض اليومي |  |

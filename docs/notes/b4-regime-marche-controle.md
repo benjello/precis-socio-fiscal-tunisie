@@ -118,16 +118,21 @@ Tout point non vérifié est marqué TODO. URL JORT = pist.tn.
     `.../2014F/Jo0052014.pdf`) ;
   - **décret n°2015-2217 du 11 décembre 2015** (en vigueur), *fixant le régime/les taux des
     éléments de rémunération des chefs d'établissements et entreprises publiques et de
-    sociétés à majorité publique*. JORT n°101 de 2015,
+    sociétés à majorité publique* [intitulé corrigé le 23 octobre 2026 : « fixant le régime de
+    rémunération des chefs d'établissement et des entreprises publics et des sociétés à majorité
+    publique »]. JORT n°101 de 2015,
     `https://www.pist.tn/jort/2015/2015F/Jo1012015.pdf`. Abroge les textes antérieurs
     contraires (dont 90-1855 et 2014-12 selon la base legislation-securite.tn).
   Ainsi le contraste est documenté : agents = autonomie conventionnelle de marché ;
   DIRIGEANTS = plafonnement réglementaire par l'État. C'est précisément le « marché
   contrôlé ».
-- TODO : confirmer sur le PDF du décret 2015-2217 que les BANQUES à majorité publique
-  entrent bien dans son champ « entreprises publiques et sociétés à majorité publique »
-  (probable mais à lire). Circulaire n°04 du 10 mars 2021 citée par legislation-securite.tn
-  comme texte d'application du régime de rémunération des chefs — à vérifier/sourcer.
+- **Lu le 23 octobre 2026 (voir `remunerations-decret-2015-2217.md`)** : l'article 1 du décret
+  n° 2015-2217 exclut les directeurs généraux des banques publiques, qui relèvent du décret
+  gouvernemental n° 2015-968 du 6 août 2015 (rémunération approuvée par le conseil
+  d'administration, sur avis d'un comité de rémunération). Le régime du décret n° 2015-2217 est
+  décrit au régime conventionnel public. Reste : circulaire n°04 du 10 mars 2021 citée par
+  legislation-securite.tn comme texte d'application du régime de rémunération des chefs — à
+  sourcer.
 
 ## 3. Les prélèvements sur la rémunération — faits sourcés (point sensible)
 
@@ -207,8 +212,8 @@ Tout point non vérifié est marqué TODO. URL JORT = pist.tn.
   {
     "id": "decret2015-2217",
     "type": "legislation",
-    "title": "Décret n°2015-2217 du 11 décembre 2015, fixant les taux des éléments de rémunération des chefs d'établissements et entreprises publiques et de sociétés à majorité publique",
-    "note": "citation-key: decret2015-2217 | JORT n°101 de 2015. Texte en vigueur encadrant la rémunération des dirigeants d'entreprises publiques (y c. banques à majorité publique — à confirmer sur PDF). Succède aux décrets 78-885, 90-1855, 2014-12.",
+    "title": "Décret gouvernemental n° 2015-2217 du 11 décembre 2015, fixant le régime de rémunération des chefs d'établissement et des entreprises publics et des sociétés à majorité publique",
+    "note": "citation-key: decret2015-2217 | JORT n°101 de 2015. Texte en vigueur fixant le régime de rémunération des dirigeants d'entreprises publiques, hors directeurs généraux des banques publiques (décret n° 2015-968), lu le 23 octobre 2026. Abroge les décrets 90-1855 et 2014-12.",
     "URL": "https://www.pist.tn/jort/2015/2015F/Jo1012015.pdf",
     "issued": {"date-parts": [[2015, 12, 11]]}
   },
@@ -256,8 +261,9 @@ part actuelle.
    BCT) OU qualifier/retirer l'affirmation. LACUNE statistique principale.
 3. **Structure fixe/variable de la rémunération bancaire** : OCR de la convention révisée
    2014 + avenants pour citer les articles (éléments permanents, part variable). Non fait.
-4. **Champ exact du décret 2015-2217** : confirmer que les banques à majorité publique y
-   sont incluses ; sourcer la circulaire d'application n°04 de 2021.
+4. **Champ exact du décret 2015-2217** : réglé le 23 octobre 2026, les directeurs généraux
+   des banques publiques en sont exclus (décret n° 2015-968) ; sourcer la circulaire
+   d'application n°04 de 2021.
 5. **CNSS — exhaustivité** : confirmer l'absence de tout régime de retraite spécial propre à
    une banque publique avant d'affirmer « CNSS sans exception » ; taux de cotisation exacts.
 6. **Intitulé FR de la loi 2016-48** : notice de cache en arabe ; lire le PDF FR pist.tn

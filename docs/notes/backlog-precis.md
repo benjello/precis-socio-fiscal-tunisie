@@ -104,7 +104,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 |---|---|---|
 | Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Lacunes de la mise à la retraite avant l'âge légal de 2009 : voir la section Retraites de ce fichier |
-| Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
+| Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs ; régime de rémunération des dirigeants d'entreprises publiques rédigé le 23 octobre 2026 | Décret n° 90-1855 (JORT n° 75 de 1990, scan à océriser) |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
@@ -1215,6 +1215,49 @@ liste qui suit le tableau, citations comprises. Restent :
 
 ## Rémunérations publiques
 
+- **Rémunération des dirigeants d'entreprises publiques — rédigée le 23 octobre 2026 (commitée,
+  à relire ; branche `rediger/remuneration-dirigeants`).** Sous-section « Les dirigeants »
+  du régime conventionnel public (`#sec-conventionnel-dirigeants`, domicile unique), d'après
+  `docs/notes/remunerations-decret-2015-2217.md` et
+  `docs/notes/remunerations-publiques-dirigeants-plan-architecte.md` : grille de 2014 à 2015, deux
+  modalités, règles autres que le montant, dérogations (décrets gouvernementaux n° 2020-422 et
+  2017-1387), registre. Le marché contrôlé garde le décret gouvernemental n° 2015-968 (banques
+  publiques, `#sec-marche-controle-dirigeants`). Corrections : intitulé du décret n° 2015-2217
+  (« fixant le régime », non « fixant les taux »), exclusion des directeurs généraux des banques
+  publiques, retrait du « versant contrôle » du glossaire, renvoi du volume des retraites.
+  **Tâche « décret n° 2015-2217 » close.** Restent, avec l'état du texte :
+  - **liste de la catégorie exceptionnelle** (art. 2) et **arrêtés de classement** : aucun texte
+    identifié dans le corpus ; probablement non publiés, à obtenir auprès de la Présidence du
+    gouvernement ou de la direction générale de la tutelle des entreprises publiques (fiche
+    `r-decret-2015-2217-application`) ;
+  - **décret n° 2006-242 et modificatifs** (n° 2009-188, 2010-24, 2010-215), **décret n° 2009-187** :
+    absents de l'index sous ces numéros, probablement non publiés ; date du décret n° 2006-242
+    différente selon les visas (2 ou 12 octobre 2006) ; plein texte des fascicules 2006-2010 non
+    parcouru (fiche `r-dirigeants-ep-categorie-exceptionnelle-2006-2010`) ;
+  - **décret n° 90-1855** (JORT n° 75 de 1990, pp. 1752-1753) : scan sans couche texte, **OCR
+    nécessaire** (`1990/fr/Jo07590.pdf`) pour décrire le régime de 1990 et savoir si la double
+    modalité ou l'exclusivité y figuraient ; décrets n° 78-885, 84-865 et 92-1 et circulaire
+    n° 78-45, connus par leur intitulé : fascicules (`1978/fr/Jo06878.pdf`, `1979/fr/Jo00279.pdf`,
+    `1984/fr/Jo04684.pdf`, `1992/fr/Jo00492.pdf`) sans couche texte, **OCR nécessaire** ; décret
+    n° 2006-2564 (`2006/fr/Jo0802006.pdf`) : **lisible dans le corpus**, à lire ;
+  - **circulaire n° 04 du 10 mars 2021** : introuvable en ligne, probablement hors JORT, **à obtenir** ;
+  - **liste nominative des « banques publiques »** (décrets n° 2013-4953 et 2015-968) : non établie,
+    **à obtenir** (les visas du décret n° 2013-4953 citent les textes d'organisation de la BNA, de
+    la BH, de la STB, de la BFPME et de la BTS, entre autres) ;
+    régime applicable avant le 15 août 2015 aux directeurs généraux des banques publiques :
+    **lisible dans le corpus** (décret n° 90-1855, à océriser, et décret n° 2014-12) ;
+  - **dates d'effet** des décrets n° 2014-12, 2017-1387 et 2020-422 : colophon des fascicules,
+    **lisible dans le corpus** ;
+  - **texte arabe du décret n° 2015-2217** : intitulés et termes relevés, comparaison article par
+    article à faire (**lisible dans le corpus**) ;
+  - **décrets n° 2023-294 (art. 16) et n° 2017-985 (art. 4 nouveau)** : lus en arabe, clés à verser ;
+  - **montants en dinars constants de 2015** : à ajouter quand la date d'effet du décret n° 2014-12
+    sera établie ; tableaux faits main (`TODO (rédacteur)` : tableau engendré) ;
+  - **séries** : aucune revalorisation des montants de 2015 trouvée jusqu'au 2 octobre 2026
+    (constat de recherche) ; **effectifs de dirigeants par catégorie et coût budgétaire** : aucune
+    source, **à obtenir** ;
+  - **Zotero** : sept notices à verser ou à corriger (`docs/notes/biblio-a-rapatrier.md`).
+
 - **Régime indiciaire converti aux principes de présentation — 8 octobre 2026 (non commité, à
   relire).** `_regime_indiciaire.qmd` suit `docs/notes/remunerations-regime-indiciaire-plan-architecte.md` :
   « Vue d'ensemble » (tableau court `tbl-ri-reformes`), champ, construction (état du droit),
@@ -1425,10 +1468,9 @@ liste qui suit le tableau, citations comprises. Restent :
 - **Séries** : effectifs et masse salariale par régime ; dépenses de défense ; effectifs du
   secteur financier public. Substituer des sources tunisiennes officielles aux chiffres du
   FMI et de la Banque mondiale.
-- **Lecture immédiate des textes locaux** : le décret n° 2015-2217 sur les dirigeants
-  des entreprises publiques est dans `2015/fr/Jo1012015.pdf`, texte extractible ; en
-  établir l'article sur les sociétés à majorité publique avant d'étendre la règle aux
-  banques. Le Code des collectivités locales est lisible en arabe dans
+- **Lecture immédiate des textes locaux** : le décret n° 2015-2217 est lu et rédigé
+  (23 octobre 2026) ; les directeurs généraux des banques publiques en sont exclus et relèvent
+  du décret n° 2015-968. Le Code des collectivités locales est lisible en arabe dans
   `2018/ar/Ja0392018.pdf` ; relever ses dispositions sur les élus et agents sans
   conclure à l'absence d'un régime par une simple recherche de mots. Le décret
   n° 72-230 est dans `1972/fr/Jo02972.pdf`, **scan** à océriser avant d'en qualifier
@@ -4224,8 +4266,7 @@ reprendre sans refaire la même recherche :
   toute fusion. Les sources du PNAFN et les annexes des statuts des caisses restent à
   obtenir hors du corpus JORT.
 
-1. **Lire ce qui est déjà textuel** : décret-loi n° 2024-4 (Cotisations) ; décrets n° 97-1368 et 2015-1768 (Fiscalité) ; décret
-   n° 2015-2217 (Rémunérations). Vérifier chaque article à sa page, pas seulement
+1. **Lire ce qui est déjà textuel** : décrets n° 97-1368 et 2015-1768 (Fiscalité). Vérifier chaque article à sa page, pas seulement
    la présence du fascicule.
 2. **Océriser par cible**, avec contrôle à l'image : loi n° 65-17 (étudiants), décret
    n° 75-952 (indemnités familiales), code fiscal de 1990 (annexe II) et code TVA

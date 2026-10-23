@@ -22,6 +22,13 @@ Source : `docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md`. Dix
 - Doublon à fondre un jour : `lf-1978` (loi n° 77-81) existe dans `precis/{fr,ar}/compensation/references.json` ; le fonds commun porte `loi77-81-lf1978` pour la même loi.
 - Le volume « Les entreprises publiques » n'a pas de livre arabe : aucun `references.json` arabe de volume. Rendu du volume : aucune citation `[?]`. `push_biblio.py --verifier` : 0 perte. Les actions `dry-run` et `controle-rangement` du workflow `biblio-zotero` ne sont pas lancées depuis cette branche.
 
+## Versement du 23/10/2026 (rémunération des dirigeants d'entreprises publiques, bibliographe, temps 1)
+
+Source : § 6 de `docs/notes/remunerations-decret-2015-2217.md`. Volume `remunerations_publiques`, FR et AR, à la main.
+- **Corrigée** : `decret2015-2217` (intitulé « fixant le régime de rémunération… », et non « fixant les taux des éléments… », qui est celui du décret n° 2014-12 ; pp. 3017-3019 FR, 3469-3471 AR ; exécutoire le 24 décembre 2015 d'après le dépôt du 19). AR : « نظام » à la place de « نسب عناصر ». **Complétée** : `decret90-1855` (JORT n° 75, pp. 1752-1753 FR ; pages de l'édition arabe non relevées, fascicule sans couche texte).
+- **Créées** (FR + AR, URL lues sur `jort_cache.db`, pages arabes relues sur les fascicules) : `decret2015-968` (banques publiques ; AR pp. 2188-2189), `decret2020-422` (AR pp. 1740-1742), `decret2017-1387` (AR p. 4618), `decret2013-4953` (AR pp. 4103-4106), `kapitalis-2015-pdg-entreprises-publiques` (presse, cité comme presse et jamais pour les montants ; page française seulement).
+- **À faire** : verser dans Zotero (`citation-key` en Extra) les cinq notices créées, **corriger** les deux notices existantes (`decret2015-2217`, `decret90-1855`, dont les pages ajoutées seraient perdues à la prochaine synchronisation descendante), et les ranger dans la collection du volume ; `decret2013-4953` et `decret2015-968` pourraient aussi servir à d'autres livres (entreprises publiques). Le `dry-run` et le `controle-rangement` du workflow `biblio-zotero` passent par Zotero : non lancés ici, rien poussé.
+
 ## Versement du 20/10/2026 (fiscalité de l'épargne et du capital, bibliographe, temps 1)
 
 Source : § 10 de `docs/notes/fiscalite-epargne-capital.md`. Treize notices ajoutées à `precis/{fr,ar}/fiscalite/references.json` (locales au volume) : `loi-99-92-relance-marche-financier`, `decret-loi-2011-28`, `decret-loi-2011-100`, `decret-loi-2020-30`, `dgi-nc-45-2002`, `dgi-nc-35-2003`, `dgi-nc-8-2004` (absente de la liste de la note, citée par sa prose), `dgi-nc-16-2004`, `dgi-nc-13-2005`, `dgi-nc-10-2008`, `dgi-nc-14-2018`, `dgi-nc-2-2018`, `dgi-nc-3-2023`. Les 31 clés « déjà présentes » le sont (volume ou fonds commun), sans doublon. `push_biblio.py --verifier` : 0 perte.
@@ -1338,7 +1345,7 @@ identifié par numéro+type+date_signature ; jamais dérivées par substitution 
 |---|---|---|---|---|
 | `loi2016-48` | Loi n°2016-48 du 11/07/2016 (banques et établissements financiers) | `Jo0582016.pdf` | `Ja0582016.pdf` | n°58/2016 |
 | `cc-banques-2014` | Arrêté du 17/02/2014 (agrément convention coll. sectorielle banques/étab. financiers, révisée) | `Jo0232014.pdf` | `Ja0232014.pdf` | n°23/2014 |
-| `decret2015-2217` | Décret n°2015-2217 du 11/12/2015 (taux rémunération chefs d'étab./entreprises publiques et soc. à majorité publique) | `Jo1012015.pdf` | `Ja1012015.pdf` | n°101/2015 |
+| `decret2015-2217` | Décret gouvernemental n° 2015-2217 du 11/12/2015 (régime de rémunération des chefs d'établissement et des entreprises publics et des sociétés à majorité publique) | `Jo1012015.pdf` | `Ja1012015.pdf` | n°101/2015 |
 | `decret90-1855` | Décret n°90-1855 du 10/11/1990 (régime rémunération chefs d'entreprises à majorité publique) | `Jo07590.pdf` | `Ja07590.pdf` | n°75/1990 |
 
 - `cc-banques-2014` : l'enregistrement de l'**arrêté du 17 février 2014** EST présent dans le
