@@ -3877,6 +3877,25 @@
   a_faire:
   - océriser les fascicules 1966-1970 à la recherche d'un décret d'application de l'art. 21 ; le décret n'a peut-être jamais été pris, le code organisant lui-même la commission
 
+- id: r-cnrps-fonds-retraite-avant-age-2009-taux
+  objet: décrets fixant les pourcentages des ressources du fonds de financement des mesures exceptionnelles de mise à la retraite (LFC 2009, art. 3) pour 2009, 2011 et 2012, autres que le décret n° 2011-932 (année 2010)
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-retraite-avant-age-2009]
+  requetes:
+    titres_fts: ['"mesures exceptionnelles" retraite']
+    titres_like: ['%mesures exceptionnelles de mise%', '%avant l%ge l%gal%']
+    iort_ar: [تمويل الإجراءات الاستثنائية, الإجراءات الاستثنائية للإحالة, التقاعد قبل]
+    depuis: 2009-07-10
+  periode:
+    jusqu_au: 2016-12-31
+    motif: les taux de 2010 ont été fixés en juillet 2011 ; un décret pour 2011 ou 2012 peut paraître plusieurs années après
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache (dernière notice publiée le 2026-10-02), intitulés français (LIKE, FTS) et arabes (LIKE sur titre), toutes années : seul le décret n° 2011-932 (JORT n° 52/2011, p. 1252, lu) ; « التقاعد قبل » rend la loi n° 2017-51, le décret gouvernemental n° 2017-825, la LF 2022 (art. 14) et la LF 2025 (art. 14), hors objet. Miroir iort non interrogé ; plein texte non cherché.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
 - id: r-banque-donnees-2014-1526-suite
   objet: texte prolongeant à nouveau, modifiant ou abrogeant le décret n° 2014-1526 (unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité) après le décret gouvernemental n° 2018-626, dont la prolongation d'un an court jusque vers mai 2019
   ou: [precis/fr/prestations_sociales/_non_contributives.qmd#r-nc-li-2018]

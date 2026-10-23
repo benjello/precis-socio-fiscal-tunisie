@@ -103,7 +103,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
 | Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Décrets n° 97-1368 et 2015-1768 dans les fascicules français locaux, à lire sur pièce |
-| Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Loi n° 2009-39 et décret n° 2009-2085 dans les JORT n° 55 et 56 de 2009, textes locaux extractibles |
+| Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Lacunes de la mise à la retraite avant l'âge légal de 2009 : voir la section Retraites de ce fichier |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs | Décret n° 2015-2217 dans le JORT n° 101 de 2015, texte local extractible |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
@@ -721,11 +721,21 @@ liste qui suit le tableau, citations comprises. Restent :
   que les âges de mise à la retraite qu'il énumère, pas l'article 32. Le chapitre et
   le glossaire distinguent désormais ces dates ; vérifier séparément la date portée
   en amont pour le repère du modèle avant de le modifier.
-- **Lecture immédiate suivante** : loi n° 2009-39 et décret n° 2009-2085 sur le départ
-  avant l'âge légal (`2009/fr/Jo0552009.pdf` et `Jo0562009.pdf`, textuels) ; exposer
-  les conditions que le chapitre laisse encore de côté. Les rectificatifs du décret
-  n° 82-1030 et de la loi n° 81-6 restent à relire sur les scans locaux après
-  identification exacte des pages : un numéro peut avoir des homonymes.
+- **Mise à la retraite avant l'âge légal de 2009 : exposée** (§ `#sec-cnrps-retraite-avant-age-2009`,
+  note `docs/notes/retraites-depart-anticipe-2009.md`). Lacunes, toutes en TODO du chapitre :
+  coût du dispositif et exécution du compte spécial (lois de règlement 2009-2013, annexes des
+  fonds spéciaux, Cour des comptes, rapports de la CNRPS : à chercher) ; pourcentages
+  d'affectation de 2009, 2011 et 2012 (fiche `r-cnrps-fonds-retraite-avant-age-2009-taux`, miroir
+  iort et plein texte non interrogés) ; sort du compte spécial ; convention ministre des
+  finances - CNRPS (décret, art. 8) ; exposé des motifs et débats des chambres (30 juin et
+  4 juillet 2009), à obtenir ; application aux militaires, magistrats, forces de sécurité et
+  douanes (visas du décret) ; plafond du taux de liquidation sur la bonification ; page arabe de
+  l'avis n° 27-2009 ; ligne « 2009-39 » du guide statistique 2000-2010 à lire à l'image, et page
+  de la valeur 2 686 dans le guide 2010-2014. Restent à lire pour le même § : loi n° 87-7 et décret
+  n° 87-337 (JORT n° 18/1987, à lire), loi n° 2017-51 (JORT n° 53/2017, corpus local, fr et ar),
+  décret gouvernemental n° 2017-825 (JORT n° 60/2017, éd. ar. seule), arrêtés annuels 2022-2025.
+  Les rectificatifs du décret n° 82-1030 et de la loi n° 81-6 restent à relire sur les scans
+  locaux après identification exacte des pages : un numéro peut avoir des homonymes.
 - **Barème d'actualisation — coefficients relevés.** Les 31 arrêtés de 1994 à 2024
   et leurs **1 488 coefficients** ont été relevés et contrôlés, y compris les images des
   tableaux de 1997 et 2024 ; voir `_secteur_prive.qmd#sec-rsna-bareme`. Les questions
@@ -4184,8 +4194,7 @@ verser par le terminologue quand un volume les emploiera.
 établi au **5 mai 2019** dans le livre « Retraites », le glossaire et le dossier. Pour
 reprendre sans refaire la même recherche :
 
-- **D'abord, les textes locaux déjà lisibles** : loi n° 2009-39 et décret n° 2009-2085
-  pour les conditions du départ anticipé public ; puis les autres lectures de la liste
+- **D'abord, les textes locaux déjà lisibles** : les lectures de la liste
   ci-dessous, un sujet à la fois, en mettant ce backlog à jour avec chaque chapitre.
 - **Côté modèle**, comparer le repère de l'article 32 et sa date à l'état publié dans
   `openfisca-tunisia` avant toute correction : la date du **5 mai 2019** ne se déduit
@@ -4197,8 +4206,7 @@ reprendre sans refaire la même recherche :
   toute fusion. Les sources du PNAFN et les annexes des statuts des caisses restent à
   obtenir hors du corpus JORT.
 
-1. **Lire ce qui est déjà textuel** : loi n° 2009-39 et décret n° 2009-2085
-   (Retraites) ; décret-loi n° 2024-4 (Cotisations) ; décrets n° 97-1368 et 2015-1768 (Fiscalité) ; décret
+1. **Lire ce qui est déjà textuel** : décret-loi n° 2024-4 (Cotisations) ; décrets n° 97-1368 et 2015-1768 (Fiscalité) ; décret
    n° 2015-2217 (Rémunérations). Vérifier chaque article à sa page, pas seulement
    la présence du fascicule.
 2. **Océriser par cible**, avec contrôle à l'image : loi n° 65-17 (étudiants), décret
