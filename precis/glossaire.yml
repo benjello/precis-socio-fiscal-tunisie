@@ -405,7 +405,7 @@ entries:
     statut: provisoire
     references: [loi82-70]
     source_definition: {ref: loi82-70}
-    voir_aussi: [regime-statutaire-autonome, statut-particulier, pensions-civiles-militaires]
+    voir_aussi: [regime-statutaire-autonome, statut-particulier, pensions-civiles-militaires, agents-des-douanes]
     fr:
       terme: Forces de sécurité intérieure
       definition: >
@@ -16118,5 +16118,526 @@ entries:
       synonymes: []
     ar:
       terme: المعلوم للمحافظة على البيئة
+      definition: ""
+      synonymes: []
+
+  # --- Régimes spéciaux de rémunération du secteur public (passe 1, 23/10/2026) ---
+  # Termes et sources seulement ; définitions en passe 2. Statut provisoire partout.
+
+  - id: enseignant-chercheur
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « سلك المدرسين الباحثين » (intitulé arabe du décret n° 93-1825, miroir iort) ; singulier « المدرس الباحث » relevé dans d'autres textes.
+    source_definition: {ref: decret-93-1825, locator: "art. 2"}
+    voir_aussi: [statut-particulier, indemnite-encadrement-recherche]
+    fr:
+      terme: Enseignant-chercheur
+      definition: ""
+      synonymes: []
+    ar:
+      terme: المدرس الباحث
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-encadrement-recherche
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : intitulés JORT (décret n° 2011-3325 et suivants) ; à confirmer sur l'édition arabe du décret n° 85-1405.
+    source_definition: {ref: decret-85-1405}
+    voir_aussi: [enseignant-chercheur]
+    fr:
+      terme: "Indemnité d'encadrement et de recherche"
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة التأطير والبحث
+      definition: ""
+      synonymes: []
+
+  - id: prime-de-rentree-universitaire
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : intitulé arabe du décret gouvernemental n° 2018-904.
+    source_definition: {ref: decret-gouv-2018-904-prime-rentree-universitaire, locator: "art. 1er"}
+    source_traduction: {ref: decret-gouv-2018-904-prime-rentree-universitaire}
+    voir_aussi: [enseignant-chercheur]
+    fr:
+      terme: Prime de rentrée universitaire
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة العودة الجامعية
+      definition: ""
+      synonymes: []
+
+  - id: niveau-de-remuneration
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « مستويات التأجير » au texte arabe du décret n° 99-1804 (miroir iort). Voir aussi les décrets de concordance n° 99-1208 (militaires) et 2000-1009 (sécurité intérieure).
+    source_definition: {ref: decret-99-1804, locator: "art. 1er"}
+    source_traduction: {ref: decret-99-1804}
+    voir_aussi: [grille-des-salaires, grade]
+    fr:
+      terme: Niveau de rémunération
+      definition: ""
+      synonymes: []
+    ar:
+      terme: مستوى التأجير
+      definition: ""
+      synonymes: []
+
+  - id: corps-diplomatique
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : graphie du texte arabe du décret n° 91-1077 (« السلك الدبلوماسي »).
+    source_definition: {ref: decret-91-1077, locator: "art. 23"}
+    source_traduction: {ref: decret-91-1077}
+    voir_aussi: [indemnite-de-poste, indemnite-de-representation]
+    fr:
+      terme: Corps diplomatique
+      definition: ""
+      synonymes: []
+    ar:
+      terme: السلك الدبلوماسي
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-de-poste
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : intitulé arabe d'un texte fixant les zones et taux de « منحة المركز » des agents du ministère des affaires étrangères (miroir iort) ; non relevé sur l'édition arabe du décret n° 73-167.
+    source_definition: {ref: decret-73-167, locator: "art. 5"}
+    voir_aussi: [corps-diplomatique, indemnite-de-representation]
+    fr:
+      terme: Indemnité de poste
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة المركز
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-de-representation
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « منحة التمثيل », relevé dans plusieurs textes du miroir iort ; non relevé sur l'édition arabe du décret n° 73-167.
+    source_definition: {ref: decret-73-167, locator: "art. 7"}
+    voir_aussi: [corps-diplomatique, indemnite-de-poste]
+    fr:
+      terme: Indemnité de représentation
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة التمثيل
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-parlementaire
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « المنحة النيابية », relevé dans un texte du miroir iort ; à confirmer sur l'édition arabe du décret-loi n° 60-9.
+    source_definition: {ref: decret-loi-60-9}
+    voir_aussi: []
+    fr:
+      terme: Indemnité parlementaire
+      definition: ""
+      synonymes: []
+    ar:
+      terme: المنحة النيابية
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-de-magistrature
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « منحة قضاء لفائدة القضاة » au texte arabe du décret n° 85-814 (miroir iort) ; « منحة القضاء » dans les décrets n° 2015-463 et 2017-1364.
+    source_definition: {ref: decret85-814}
+    source_traduction: {ref: decret85-814}
+    voir_aussi: [magistrat, indemnite-de-permanence-magistrats]
+    fr:
+      terme: Indemnité de magistrature
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة القضاء
+      definition: ""
+      synonymes: []
+
+  - id: conseil-superieur-magistrature
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : dénomination arabe courante au JORT ; à confirmer sur l'édition arabe de la loi organique n° 2016-34.
+    source_definition: {ref: loi-org-2016-34}
+    voir_aussi: [magistrat]
+    fr:
+      terme: Conseil supérieur de la magistrature
+      definition: ""
+      synonymes: []
+    ar:
+      terme: المجلس الأعلى للقضاء
+      definition: ""
+      synonymes: []
+
+  - id: institut-superieur-magistrature
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : dénomination arabe courante au JORT ; à confirmer sur l'édition arabe de la loi n° 85-80.
+    source_definition: {ref: loi85-80}
+    voir_aussi: [magistrat, auditeur-de-justice]
+    fr:
+      terme: Institut supérieur de la magistrature
+      definition: ""
+      synonymes: []
+    ar:
+      terme: المعهد الأعلى للقضاء
+      definition: ""
+      synonymes: []
+
+  - id: auditeur-de-justice
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « الملحق القضائي » / « الملحقين القضائيين », relevés dans le miroir iort ; à confirmer sur le texte arabe de la loi organique n° 85-79.
+    source_definition: {ref: loi-org-85-79, locator: "art. 29 (nouveau)"}
+    voir_aussi: [magistrat, institut-superieur-magistrature]
+    fr:
+      terme: Auditeur de justice
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الملحق القضائي
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-de-permanence-magistrats
+    acronyme: null
+    statut: provisoire
+    references: []
+    # Paire lue dans les deux versions du décret n° 2001-2125 (miroir iort) : « indemnité spécifique appelée indemnité de permanence » / « منحة خصوصية تسمّى منحة الاستمرار ».
+    source_definition: {ref: decret2001-2125}
+    source_traduction: {ref: decret2001-2125}
+    voir_aussi: [magistrat, indemnite-de-magistrature]
+    fr:
+      terme: "Indemnité de permanence (magistrats)"
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة الاستمرار
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-charges-militaires
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « منحة الكلف العسكرية » au texte arabe du décret n° 2013-3797 (miroir iort).
+    source_definition: {ref: decret-67-158, locator: "art. 1er"}
+    voir_aussi: [solde-militaire]
+    fr:
+      terme: Indemnité pour charges militaires
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة الكلف العسكرية
+      definition: ""
+      synonymes: []
+
+  - id: service-national
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : intitulés JORT relatifs au service national.
+    source_definition: {ref: loi2004-1, locator: "art. 1er à 3"}
+    voir_aussi: [appele, solde-militaire]
+    fr:
+      terme: Service national
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الخدمة الوطنية
+      definition: ""
+      synonymes: []
+
+  - id: appele
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : pluriel « المجندين » dans les intitulés JORT (décret gouvernemental n° 2016-808 et textes sur le service national) ; singulier à confirmer.
+    source_definition: {ref: loi67-19, locator: "art. 2"}
+    voir_aussi: [service-national, solde-militaire]
+    fr:
+      terme: Appelé
+      definition: ""
+      synonymes: []
+    ar:
+      terme: المجنّد
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-provisoire-complementaire
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : intitulé arabe du décret n° 82-515 (« منحة وقتية تكميلية لفائدة الأعوان العسكريين… »). À ne pas confondre avec l'indemnité complémentaire provisoire du SMIG (décret n° 81-437, « المنحة الإضافية المؤقتة »).
+    source_definition: {ref: decret82-515}
+    voir_aussi: [solde-militaire, forces-de-securite-interieure, indemnite-complementaire-provisoire]
+    fr:
+      terme: "Indemnité provisoire complémentaire (militaires et forces de sécurité intérieure)"
+      definition: ""
+      synonymes: []
+    ar:
+      terme: المنحة الوقتية التكميلية
+      definition: ""
+      synonymes: []
+
+  - id: agents-des-douanes
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : visas arabes de l'arrêté du 25 novembre 2019 (« النظام الأساسي العام لأعوان الديوانة »).
+    source_definition: {ref: loi95-46, locator: "art. 1er"}
+    voir_aussi: [forces-de-securite-interieure, prime-de-risque]
+    fr:
+      terme: Agents des douanes
+      definition: ""
+      synonymes: []
+    ar:
+      terme: أعوان الديوانة
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-charge-securite
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : intitulé arabe du décret du 1er février 1992 cité en visa du décret n° 2004-1335 (miroir iort). Texte fondateur non identifié.
+    source_definition: {ref: decret2004-1335}
+    voir_aussi: [forces-de-securite-interieure]
+    fr:
+      terme: Indemnité de charge de sécurité
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة التكاليف الأمنية
+      definition: ""
+      synonymes: []
+
+  - id: prime-de-risque
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « منحة الخطر », relevé dans le miroir iort ; à confirmer sur l'édition arabe du décret n° 2013-3798.
+    source_definition: {ref: decret2013-3798, locator: "art. 1er"}
+    voir_aussi: [agents-des-douanes, forces-de-securite-interieure]
+    fr:
+      terme: Prime de risque
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة الخطر
+      definition: ""
+      synonymes: []
+
+  - id: gratification-exceptionnelle
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « مكافأة استثنائية لأعوان قوات الأمن الداخلي » au texte arabe de la loi n° 2000-58 (miroir iort).
+    source_definition: {ref: loi2000-58, locator: "art. 25 quater"}
+    source_traduction: {ref: loi2000-58}
+    voir_aussi: [forces-de-securite-interieure]
+    fr:
+      terme: Gratification exceptionnelle
+      definition: ""
+      synonymes: []
+    ar:
+      terme: مكافأة استثنائية
+      definition: ""
+      synonymes: []
+
+  - id: depart-volontaire
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : note documentaire (intitulé JORT de la loi n° 2018-5).
+    source_definition: {ref: loi2018-5, locator: "art. 1er"}
+    voir_aussi: [prime-de-depart-volontaire, retraite-anticipee-volontaire, mise-a-la-retraite-avant-age-legal]
+    fr:
+      terme: "Départ volontaire (agents publics)"
+      definition: ""
+      synonymes: []
+    ar:
+      terme: المغادرة الاختيارية
+      definition: ""
+      synonymes: []
+
+  - id: prime-de-depart-volontaire
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : note documentaire (loi n° 2018-5, art. 5).
+    source_definition: {ref: loi2018-5, locator: "art. 5"}
+    voir_aussi: [depart-volontaire]
+    fr:
+      terme: Prime de départ volontaire
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة المغادرة
+      definition: ""
+      synonymes: []
+
+  - id: effectif-autorise
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : formule des lois de finances (art. 9) et de la LOB n° 2019-15.
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 45"}
+    voir_aussi: [masse-salariale, mission-budgetaire]
+    fr:
+      terme: Effectif global du personnel autorisé
+      definition: ""
+      synonymes: []
+    ar:
+      terme: العدد الجملي للأعوان المرخص فيهم
+      definition: ""
+      synonymes: []
+
+  - id: recrutement-direct
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « الانتداب المباشر », courant au JORT.
+    source_definition: {ref: loi2012-4, locator: "art. 3"}
+    voir_aussi: [concours-externe-sur-dossiers]
+    fr:
+      terme: Recrutement direct
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الانتداب المباشر
+      definition: ""
+      synonymes: []
+
+  - id: concours-externe-sur-dossiers
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « مناظرة خارجية بالملفات », relevé dans le miroir iort.
+    source_definition: {ref: decretloi2011-32, locator: "art. 2"}
+    voir_aussi: [recrutement-direct]
+    fr:
+      terme: Concours externe sur dossiers
+      definition: ""
+      synonymes: []
+    ar:
+      terme: مناظرة خارجية بالملفات
+      definition: ""
+      synonymes: []
+
+  - id: conge-creation-entreprise
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « عطلة لبعث مؤسسة », courant au JORT.
+    source_definition: {ref: loi83-112, locator: "art. 50 bis"}
+    voir_aussi: [depart-volontaire]
+    fr:
+      terme: "Congé pour création d'entreprise"
+      definition: ""
+      synonymes: []
+    ar:
+      terme: عطلة لبعث مؤسسة
+      definition: ""
+      synonymes: []
+
+  - id: prime-salariale-publique
+    acronyme: null
+    statut: provisoire
+    references: []
+    # Notion analytique, sans terme officiel : AR non attesté.
+    source_definition: {ref: fmi-2016-government-compensation}
+    voir_aussi: [masse-salariale, difference-compensatrice]
+    fr:
+      terme: Prime salariale du secteur public
+      definition: ""
+      synonymes: []
+    ar:
+      terme: علاوة الأجر في القطاع العمومي
+      definition: ""
+      synonymes: []
+
+  - id: salaire-d-efficience
+    acronyme: null
+    statut: provisoire
+    references: []
+    # Notion analytique, sans terme officiel : AR non attesté.
+    source_definition: {ref: vanrijckeghem-weder-2001-corruption}
+    voir_aussi: [prime-salariale-publique]
+    fr:
+      terme: "Salaire d'efficience"
+      definition: ""
+      synonymes: []
+    ar:
+      terme: أجر الكفاءة
+      definition: ""
+      synonymes: []
+
+  - id: difference-compensatrice
+    acronyme: null
+    statut: provisoire
+    references: []
+    # Notion analytique (compensating differential), sans terme officiel : AR non attesté. Distincte de l'indemnité compensatrice (« المنحة التعويضية »).
+    source_definition: {ref: dalbo-finan-rossi-2013-state-capabilities}
+    voir_aussi: [prime-salariale-publique, elasticite-offre-travail]
+    fr:
+      terme: Différence compensatrice
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الفارق التعويضي في الأجر
+      definition: ""
+      synonymes: []
+
+  - id: elasticite-offre-travail
+    acronyme: null
+    statut: provisoire
+    references: []
+    # Notion analytique, sans terme officiel : AR non attesté.
+    source_definition: {ref: dalbo-finan-rossi-2013-state-capabilities}
+    voir_aussi: [difference-compensatrice]
+    fr:
+      terme: "Élasticité de l'offre de travail"
+      definition: ""
+      synonymes: []
+    ar:
+      terme: مرونة عرض العمل
+      definition: ""
+      synonymes: []
+
+  - id: selection-adverse
+    acronyme: null
+    statut: provisoire
+    references: []
+    # Notion analytique, sans terme officiel : AR non attesté.
+    source_definition: {ref: rama-1997-downsizing}
+    voir_aussi: [depart-volontaire]
+    fr:
+      terme: "Sélection adverse (départs volontaires)"
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الانتقاء العكسي
       definition: ""
       synonymes: []
