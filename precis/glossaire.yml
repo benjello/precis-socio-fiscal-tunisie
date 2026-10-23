@@ -6567,28 +6567,37 @@ entries:
 
   - id: valeur-en-douane
     acronyme: null
-    statut: provisoire
+    statut: valide
     references: [loi-88-62-droit-consommation]
-    source_definition: {ref: loi-88-62-droit-consommation, locator: "art. 4-a"}
-    voir_aussi: [assiette-droit-consommation, taux-ad-valorem]
+    # Passe 2 (droits de douane, 23/10/2026) : définition générale reportée sur le code
+    # des douanes de 2008, art. 22-23 (éd. fr. et ar. du JORT n° 47 de 2008). Terme AR
+    # du code, « القيمة لدى الديوانة » ; « القيمة المصرح بها لدى الديوانة » (loi n° 88-62,
+    # art. 4) passe en synonyme.
+    source_definition: {ref: loi-2008-34-code-douanes, locator: "art. 22 et 23"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 22"}
+    voir_aussi: [droits-de-douane, assiette-droit-consommation, taux-ad-valorem]
     fr:
       terme: Valeur en douane
       definition: >
-        Valeur retenue au dédouanement, qui sert d'assiette au droit de
-        consommation à l'importation pour les produits soumis à un taux ad
-        valorem. L'article 4 de la loi n° 88-62 la désigne comme la valeur
-        déclarée en douane ; en régime intérieur lui répond le prix de vente
-        tous frais, droits et taxes compris.
-      synonymes: []
+        Valeur des marchandises importées déterminée en vue de la perception
+        des droits de douane ad valorem. C'est en premier lieu la valeur
+        transactionnelle, c'est-à-dire le prix effectivement payé ou à payer
+        pour les marchandises vendues pour l'exportation à destination de la
+        Tunisie, ajusté selon les articles 30 et 31 du code des douanes ; à
+        défaut, des méthodes subsidiaires s'appliquent. Elle sert aussi
+        d'assiette au droit de consommation dû à l'importation (loi n° 88-62,
+        art. 4).
+      synonymes: [Valeur déclarée en douane]
     ar:
-      terme: القيمة المصرح بها لدى الديوانة
+      terme: القيمة لدى الديوانة
       definition: >
-        القيمة المعتمدة عند الإخراج من الديوانة، وهي قاعدة المعلوم على
-        الاستهلاك عند التوريد بالنسبة إلى المنتوجات الخاضعة لنسبة من القيمة.
-        وهذه هي العبارة التي استعملها الفصل 4 من القانون عدد 62 لسنة 1988،
-        ويقابلها في النظام الداخلي ثمن البيع باعتبار كل المصاريف والمعاليم
-        والأداءات.
-      synonymes: []
+        قيمة البضائع الموردة التي يتم تحديدها لغرض توظيف المعاليم الديوانية
+        عليها بناء على القيمة عند التوريد. وهي في المقام الأول القيمة التعاقدية،
+        أي الثمن المدفوع فعلا أو الذي يتعيّن دفعه على البضائع عند بيعها للتصدير
+        في اتجاه البلاد التونسية بعد تعديله وفقا لأحكام الفصلين 30 و31 من مجلة
+        الديوانة، وتطبّق عند تعذّر ذلك طرق فرعية. وهي أيضا قاعدة المعلوم على
+        الاستهلاك المستوجب عند التوريد (الفصل 4 من القانون عدد 62 لسنة 1988).
+      synonymes: [القيمة المصرح بها لدى الديوانة]
 
   - id: taxe-unique-compensation-carburants
     acronyme: null
@@ -16119,4 +16128,582 @@ entries:
     ar:
       terme: المعلوم للمحافظة على البيئة
       definition: ""
+      synonymes: []
+
+  # --- Droits de douane (livre Fiscalité) : passe 1 du terminologue, 23/10/2026. ---
+  # Termes arabes relevés sur l'édition arabe du JORT (miroir iort, texte intégral) :
+  # code des douanes de 2008, LF 2005 (loi 2004-90), LF 2016 (loi 2015-53), LF 2020
+  # (loi 2019-78). Passe 2 (23/10/2026) : définitions rédigées sur le chapitre
+  # _droits_douane.qmd et les textes qu'il cite ; entrées validées quand l'arabe est
+  # attesté au JORT.
+
+  - id: droits-de-douane
+    acronyme: null
+    statut: valide
+    references: [loi-2008-34-code-douanes]
+    # AR : « المعاليم الديوانية », code de 2008, art. 6 (éd. arabe) ; LF 2016, art. 41.
+    # Définition : loi n° 89-113, art. 1 ; code de 2008, art. 4, 22 et 125.
+    source_definition: {ref: loi-89-113-tarif-douanes, locator: "art. 1"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 6"}
+    voir_aussi: [tarif-des-droits-de-douane, valeur-en-douane, position-tarifaire]
+    fr:
+      terme: Droits de douane
+      definition: >
+        Droits dus à l'importation des marchandises, au taux que fixe le tarif
+        des droits de douane pour chaque position tarifaire, sauf dérogations
+        prévues par les traités et conventions commerciaux en vigueur. Depuis
+        la loi n° 89-113, il n'existe pas de tarif de droits de douane à
+        l'exportation. Les droits sont liquidés sur la valeur en douane, au
+        tarif en vigueur à la date d'enregistrement de la déclaration en
+        détail.
+      synonymes: [Droits de douane à l'importation]
+    ar:
+      terme: المعاليم الديوانية
+      definition: >
+        معاليم مستوجبة عند توريد البضائع، بالنسبة التي تضبطها تعريفة المعاليم
+        الديوانية لكل بند تعريفي، ماعدا الاستثناءات المنصوص عليها بصفة صريحة في
+        المعاهدات والاتفاقيات التجارية النافذة المفعول. ولا توجد منذ القانون
+        عدد 113 لسنة 1989 تعريفة للمعاليم الديوانية عند التصدير. وتُحتسب
+        المعاليم على أساس القيمة لدى الديوانة، حسب ما يجري به العمل في تاريخ
+        تسجيل التصريح المفصّل.
+      synonymes: [المعاليم الديوانية عند التوريد]
+
+  - id: tarif-des-droits-de-douane
+    acronyme: null
+    statut: valide
+    references: [loi-59-95-tarif-douanes, loi-73-45-tarif-douanes]
+    # AR : « تعريفة المعاليم الديوانية عند التوريد المصادق عليها بالقانون عدد 113 لسنة
+    # 1989 », LF 2016, art. 41 (éd. arabe) ; même formule en LF 2005, art. 29 et 72,
+    # qui dit aussi « الأحكام التمهيدية لتعريفة المعاليم الديوانية عند التوريد ».
+    source_definition: {ref: loi-89-113-tarif-douanes, locator: "art. 1"}
+    source_traduction: {ref: lf-2016, locator: "art. 41"}
+    voir_aussi: [droits-de-douane, tarif-autonome, systeme-harmonise, position-tarifaire]
+    fr:
+      terme: Tarif des droits de douane à l'importation
+      definition: >
+        Texte de loi qui fixe, pour chaque position de la nomenclature, le taux
+        des droits de douane dus à l'importation. Le tarif en vigueur est celui
+        de la loi n° 89-113, en deux parties, des dispositions préliminaires et
+        le tableau des taux ; les lois de finances le modifient. Il remplace
+        les tarifs des lois de 1959 et de 1973, qui comportaient aussi un tarif
+        à l'exportation.
+      synonymes: [Tarif douanier]
+    ar:
+      terme: تعريفة المعاليم الديوانية عند التوريد
+      definition: >
+        النص القانوني الذي يضبط، لكل بند من التصنيفة، نسبة المعاليم الديوانية
+        المستوجبة عند التوريد. والتعريفة الجاري بها العمل هي المصادق عليها
+        بالقانون عدد 113 لسنة 1989، وتتكوّن من أحكام تمهيدية ومن جدول النسب،
+        وتنقّحها قوانين المالية. وقد عوّضت تعريفتي قانوني 1959 و1973 اللتين
+        كانتا تشملان أيضا تعريفة عند التصدير.
+      synonymes: [التعريفة الديوانية]
+
+  - id: tarif-autonome
+    acronyme: null
+    statut: valide
+    references: [lf-2016, omc-2016-tpr-tunisie]
+    # AR : « نسب المعاليم الديوانية حسب التعريفة الحرة », LF 2005, art. 28, face à « taux
+    # des droits de douane en tarif autonome » ; même paire dans l'intitulé du décret
+    # n° 90-1143 (sans clé). La LF 2017, art. 55, dit « tarif libre » en français.
+    source_definition: {ref: lf-2005, locator: "art. 28"}
+    source_traduction: {ref: lf-2005, locator: "art. 28"}
+    voir_aussi: [tarif-des-droits-de-douane, droit-consolide, tarif-minimum-tarif-general]
+    fr:
+      terme: Tarif autonome
+      definition: >
+        Tarif de droit commun des droits de douane, que fixe la loi
+        tunisienne, par opposition aux taux consolidés dans le cadre de
+        l'Organisation mondiale du commerce et aux taux préférentiels des
+        accords commerciaux. Les lois de finances emploient ce terme quand
+        elles modifient ces taux.
+      synonymes: [Tarif libre]
+    ar:
+      terme: التعريفة الحرة
+      definition: >
+        التعريفة العادية للمعاليم الديوانية التي يضبطها القانون التونسي، في
+        مقابل النسب المثبتة في إطار المنظمة العالمية للتجارة والنسب التفاضلية
+        الواردة بالاتفاقيات التجارية. وتستعمل قوانين المالية هذه العبارة عند
+        تنقيح هذه النسب.
+      synonymes: []
+
+  - id: tarif-minimum-tarif-general
+    acronyme: null
+    statut: provisoire
+    references: [loi-73-45-tarif-douanes]
+    # AR NON ATTESTÉ : terme d'attente. Le texte arabe de la loi n° 59-95 n'est pas
+    # lisible dans le corpus (intitulé seul : « تعريفة قمرقية جديدة »).
+    source_definition: {ref: loi-59-95-tarif-douanes, locator: "art. 1"}
+    voir_aussi: [tarif-autonome, tarif-des-droits-de-douane]
+    fr:
+      terme: Tarif minimum, tarif général
+      definition: >
+        Les deux colonnes du tarif des droits à l'importation des lois de 1959
+        et de 1973, en vigueur jusqu'au 31 décembre 1989. Le tarif minimum
+        s'applique conformément aux stipulations des traités, conventions et
+        arrangements internationaux ; le tarif général est fixé au triple du
+        tarif minimum.
+      synonymes: []
+    ar:
+      terme: التعريفة الدنيا والتعريفة العامة
+      definition: >
+        عمودا تعريفة المعاليم عند التوريد في قانوني 1959 و1973، وقد بقيا
+        ساريين إلى غاية 31 ديسمبر 1989. وتطبّق التعريفة الدنيا طبقا لأحكام
+        المعاهدات والاتفاقيات والترتيبات الدولية، وتحدَّد التعريفة العامة
+        بثلاثة أضعاف التعريفة الدنيا.
+      synonymes: []
+
+  - id: droit-consolide
+    acronyme: null
+    statut: valide
+    references: [omc-2016-tpr-tunisie, lf-2018]
+    # AR : « نسب المعاليم الديوانية المثبتة طبقا لاتفاقات جولة الأوروغواي », LF 2005,
+    # art. 28, face à « taux des droits de douane consolidés conformément aux accords de
+    # l'Uruguay Round ». Le pluriel est la forme attestée.
+    source_definition: {ref: lf-2005, locator: "art. 28"}
+    source_traduction: {ref: lf-2005, locator: "art. 28"}
+    voir_aussi: [tarif-autonome, taux-npf]
+    fr:
+      terme: Droit consolidé
+      definition: >
+        Taux de droit de douane inscrit dans la liste d'engagements de la
+        Tunisie au GATT, puis à l'Organisation mondiale du commerce, et que le
+        taux appliqué ne peut dépasser. Les lois de finances réservent ces
+        taux quand elles relèvent les droits ; celle pour 2005 a soumis des
+        produits agricoles et textiles aux taux consolidés à l'issue de
+        l'Uruguay Round.
+      synonymes: [Taux consolidé]
+    ar:
+      terme: المعاليم الديوانية المثبتة
+      definition: >
+        نسبة معلوم ديواني مدرجة بقائمة التعهدات التعريفية للبلاد التونسية في
+        إطار الاتفاقات التجارية المتعددة الأطراف، ثم المنظمة العالمية للتجارة،
+        لا يمكن أن تتجاوزها النسبة المطبّقة. وتحتفظ قوانين المالية بهذه النسب
+        عند الترفيع في المعاليم، وقد أخضع قانون المالية لسنة 2005 منتجات
+        فلاحية ونسيجية للنسب المثبتة طبقا لاتفاقات جولة الأوروغواي.
+      synonymes: []
+
+  - id: demantelement-tarifaire
+    acronyme: null
+    statut: valide
+    references: [lf-1997]
+    # AR : « تفكيك المعاليم الديوانية », LF 2005, art. 29 (§ 7.27 des dispositions
+    # préliminaires du tarif), face à « démantèlement des droits de douane conformément
+    # aux articles 10 et 11 de l'Accord » d'association avec l'UE. Nom arabe de l'accord
+    # dans la même LF : « الاتفاق المؤسس لشراكة بين الجمهورية التونسية … والاتحاد الأوروبي ».
+    source_definition: {ref: accord-association-ue-tunisie-1995, locator: "art. 11"}
+    source_traduction: {ref: lf-2005, locator: "art. 29"}
+    voir_aussi: [droits-de-douane, taxe-effet-equivalent, origine-des-marchandises]
+    fr:
+      terme: Démantèlement tarifaire
+      definition: >
+        Suppression progressive des droits de douane sur les produits
+        originaires d'un partenaire, selon le calendrier d'un accord
+        commercial. Pour les produits industriels originaires de la Communauté
+        européenne, l'accord d'association de 1995 supprime les droits dès son
+        entrée en vigueur ou les ramène par étapes à une part décroissante du
+        droit de base, selon l'annexe où figure le produit (art. 11).
+      synonymes: [Démantèlement des droits de douane]
+    ar:
+      terme: تفكيك المعاليم الديوانية
+      definition: >
+        إلغاء تدريجي للمعاليم الديوانية على المنتجات ذات المنشأ من بلد شريك،
+        حسب رزنامة يضبطها اتفاق تجاري. وبالنسبة إلى المنتجات الصناعية ذات
+        المنشأ من المجموعة الأوروبية، يلغي الاتفاق المؤسس للشراكة لسنة 1995
+        المعاليم منذ دخوله حيز التنفيذ أو يخفّضها على مراحل في شكل نسبة متناقصة
+        من المعلوم الأساسي، حسب الملحق الذي يرد فيه المنتوج (الفصل 11).
+      synonymes: []
+
+  - id: taxe-effet-equivalent
+    acronyme: null
+    statut: valide
+    references: [lf-1997]
+    # AR : « الأداءات ذات الأثر المماثل », code de 2008, art. 298 (éd. arabe), face à
+    # « taxes d'effets équivalents ». La loi n° 2001-94 dit « المعاليم ذات الأثر المماثل »
+    # face à « taxes d'effet équivalent » : variante en synonyme.
+    source_definition: {ref: accord-association-ue-tunisie-1995, locator: "art. 8"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 298"}
+    voir_aussi: [droits-de-douane, demantelement-tarifaire]
+    fr:
+      terme: Taxe d'effet équivalent
+      definition: >
+        Prélèvement qui, sans être un droit de douane, frappe une marchandise
+        à raison de son importation ou de son exportation. L'accord
+        d'association de 1995 interdit d'en instituer de nouvelles dans les
+        échanges entre les parties (art. 8) ; le code des douanes de 2008
+        permet de rembourser, à l'exportation, les droits de douane et taxes
+        d'effet équivalent perçus à l'importation de la marchandise ou des
+        matières premières qui la composent (art. 298).
+      synonymes: [Droit d'effet équivalent]
+    ar:
+      terme: الأداءات ذات الأثر المماثل
+      definition: >
+        أداء يوظَّف على البضاعة بمناسبة توريدها أو تصديرها دون أن يكون معلوما
+        ديوانيا. ويمنع الاتفاق المؤسس للشراكة لسنة 1995 إحداث أداءات جديدة منها
+        في المبادلات بين الطرفين (الفصل 8)، وتمكّن مجلة الديوانة لسنة 2008 عند
+        التصدير من إرجاع المعاليم الديوانية والأداءات ذات الأثر المماثل
+        المستخلصة عند توريد البضاعة أو توريد المواد الأوّلية الداخلة في
+        تركيبها (الفصل 298).
+      synonymes: [المعاليم ذات الأثر المماثل]
+
+  - id: redevance-prestations-douanieres
+    acronyme: null
+    statut: valide
+    references: [loi-87-83-lf-1988, lf-1994, lf-2014, lf-2024]
+    # AR : « الأتاوة على الخدمات الديوانية », LF 2020, tableau « A », ligne 17-02, face à
+    # « Redevance sur les prestations douanières » ; LF 2024, art. 66, « الأتاوة على
+    # الخدمات الديوانية عند التوريد ». Distincte de `redevance-compensation` (أتاوة الدعم)
+    # et des « redevances compensatrices » de 1958-1982. Source de la définition : art. 51
+    # de la LF 1988 dans la rédaction de la LF 1999, art. 32.
+    source_definition: {ref: lf-1999, locator: "art. 32"}
+    source_traduction: {ref: lf-2020, locator: "tableau « A », 17-02"}
+    voir_aussi: [droits-de-douane, taxe-formalites-douanieres]
+    fr:
+      terme: Redevance de prestations douanières
+      definition: >
+        Prélèvement que la douane perçoit sur les déclarations en douane, en
+        plus des droits. Institué en 1988 sur la valeur en douane, il est assis
+        depuis 1994 sur le montant des droits et taxes liquidés à
+        l'importation, avec un minimum de perception par article ; une
+        redevance fixe frappe en outre chaque déclaration de transit terrestre.
+      synonymes: [Redevance sur les prestations douanières]
+    ar:
+      terme: الأتاوة على الخدمات الديوانية
+      definition: >
+        أتاوة تستخلصها الديوانة على التصاريح الديوانية إضافة إلى المعاليم.
+        أُحدثت سنة 1988 على أساس القيمة لدى الديوانة، وهي موظّفة منذ 1994 على
+        مبلغ المعاليم والأداءات المستوجبة عند التوريد مع حدّ أدنى للاستخلاص،
+        وتوظَّف إضافة إلى ذلك أتاوة قارة على كل تصريح ديواني بعبور بري للبضائع.
+      synonymes: [أتاوة الخدمات الديوانية]
+
+  - id: taxe-formalites-douanieres
+    acronyme: null
+    statut: valide
+    references: [lf-1984]
+    # AR : « الأداء على الإجراءات الديوانية », intitulé arabe du décret n° 85-751 sur le
+    # portail du JORT (miroir iort, dec_85_751_1985), face à l'intitulé français « taxe
+    # de formalités douanières » (jort_cache.db). Décret sans clé bibliographique : pas de
+    # source_traduction. Texte arabe de la LF 1988 non lisible dans le corpus.
+    source_definition: {ref: loi-87-83-lf-1988, locator: "art. 48"}
+    voir_aussi: [redevance-prestations-douanieres, caisse-generale-compensation]
+    fr:
+      terme: Taxe de formalités douanières
+      definition: >
+        Taxe perçue sur les déclarations en douane, à l'importation et à
+        l'exportation, instituée par le décret du 24 décembre 1936 portant
+        fixation du budget de l'exercice 1937. Une part de son produit à
+        l'importation a été versée à la Caisse générale de compensation. Elle
+        est supprimée au 2 janvier 1988, et la redevance de prestations
+        douanières lui succède.
+      synonymes: []
+    ar:
+      terme: الأداء على الإجراءات الديوانية
+      definition: >
+        أداء يستخلص على التصاريح الديوانية عند التوريد وعند التصدير، أُحدث
+        بالأمر المؤرخ في 24 ديسمبر 1936 المتعلق بضبط ميزانية سنة 1937. وقد
+        حُوّل جزء من مداخيله عند التوريد إلى الصندوق العام للتعويض. وحُذف في
+        2 جانفي 1988، وخلفته الأتاوة على الخدمات الديوانية.
+      synonymes: []
+
+  - id: droit-compensateur-provisoire
+    acronyme: null
+    statut: valide
+    references: [lf-1994, lf-1997]
+    # AR : « المعلوم التكميلي المؤقت », intitulés arabes des décrets n° 92-720, 93-1233
+    # (FR « droit compensateur provisoire ») et n° 96-2474 (FR « droit complémentaire
+    # provisoire ») : l'arabe ne change pas avec le libellé français. Paires vérifiées le
+    # 23/10/2026 (miroir iort pour l'arabe, jort_cache.db pour le français). Décrets sans
+    # clé : pas de source_traduction. Ne pas confondre avec « المعلوم التعويضي » (droit
+    # compensateur antisubvention, décret n° 2000-477).
+    source_definition: {ref: loi90-111-lf1991, locator: "art. 26"}
+    voir_aussi: [droits-de-douane]
+    fr:
+      terme: Droit compensateur provisoire
+      definition: >
+        Droit dû, en plus des droits de douane, à l'importation de certaines
+        matières et produits quelle que soit leur origine, liquidé et contrôlé
+        comme les droits de douane. Institué au 2 janvier 1991, appelé droit
+        complémentaire provisoire à partir de 1994, il est supprimé à compter
+        du 31 décembre 1997. Il est distinct du droit compensateur qui frappe
+        les importations subventionnées.
+      synonymes: [Droit complémentaire provisoire, DCP]
+    ar:
+      terme: المعلوم التكميلي المؤقت
+      definition: >
+        معلوم مستوجب، إضافة إلى المعاليم الديوانية، عند توريد بعض المواد
+        والمنتجات مهما كان منشؤها، ويُحتسب ويُراقب مثل المعاليم الديوانية.
+        أُحدث في 2 جانفي 1991، وتغيّرت تسميته الفرنسية سنة 1994 دون أن تتغيّر
+        تسميته العربية، وحُذف ابتداء من 31 ديسمبر 1997. وهو غير المعلوم
+        التعويضي الموظّف على الواردات المدعّمة.
+      synonymes: []
+
+  - id: minimum-perception-douane
+    acronyme: null
+    statut: valide
+    references: [loi-2008-34-code-douanes, loi-87-83-lf-1988]
+    # AR : « الحد الأدنى القانوني للاستخلاص », code de 2008, art. 6 (éd. arabe), face à
+    # « minimum légal de perception ».
+    source_definition: {ref: loi86-106-lf1987, locator: "art. 27"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 6"}
+    voir_aussi: [droits-de-douane, tarif-autonome]
+    fr:
+      terme: Minimum légal de perception
+      definition: >
+        Taux minimal de droits de douane perçu à l'importation nonobstant les
+        exonérations que prévoient certaines lois et conventions. Fixé par la
+        loi de finances pour 1987 pour les droits en tarif minimum ad valorem,
+        il peut, selon le code des douanes de 2008, être suspendu par décret
+        avec les droits de douane (art. 6).
+      synonymes: [Minimum de perception]
+    ar:
+      terme: الحد الأدنى القانوني للاستخلاص
+      definition: >
+        نسبة دنيا من المعاليم الديوانية تستخلص عند التوريد رغم الإعفاءات التي
+        تنصّ عليها بعض القوانين والاتفاقيات. ضبطها قانون المالية لسنة 1987،
+        ويمكن حسب مجلة الديوانة لسنة 2008 توقيف العمل بها بمقتضى أمر مع
+        المعاليم الديوانية (الفصل 6).
+      synonymes: []
+
+  - id: regimes-douaniers-suspensifs
+    acronyme: null
+    statut: valide
+    references: []
+    source_definition: {ref: loi-2008-34-code-douanes, locator: "art. 137-138"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 137-138"}
+    voir_aussi: [admission-temporaire, regime-suspensif-tva, entreprise-totalement-exportatrice, zone-franche-economique]
+    fr:
+      terme: Régimes suspensifs et régimes douaniers économiques
+      definition: >
+        Régimes qui permettent de stocker, transformer, utiliser ou faire
+        circuler des marchandises en suspension des droits de douane, des taxes
+        intérieures et de tout autre droit ou taxe dont elles sont passibles.
+        Le code des douanes de 2008 en énumère sept, avec l'exportation
+        temporaire : le transit, l'entrepôt douanier, la transformation sous
+        douane, le perfectionnement actif, l'admission temporaire, le
+        perfectionnement passif et l'exportation temporaire.
+      synonymes: [Régimes suspensifs, Régimes économiques]
+    ar:
+      terme: الأنظمة التوقيفية والأنظمة الديوانية الاقتصادية
+      definition: >
+        أنظمة تمكّن من خزن البضائع أو تحويلها أو استعمالها أو جولانها مع توقيف
+        العمل بالمعاليم الديوانية والأداءات الداخلية المستوجبة وبكلّ معلوم أو
+        أداء آخر يمكن أن تخضع له. وتعدّ مجلة الديوانة لسنة 2008 منها، مع التصدير
+        المؤقت، سبعة: العبور، والمستودع الديواني، والتحويل تحت مراقبة الديوانة،
+        والتحويل الفعال، والقبول المؤقت، والتحويل غير الفعال، والتصدير المؤقت.
+      synonymes: [الأنظمة التوقيفية]
+
+  - id: admission-temporaire
+    acronyme: null
+    statut: valide
+    references: []
+    source_definition: {ref: loi-2008-34-code-douanes, locator: "art. 233"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 233"}
+    voir_aussi: [regimes-douaniers-suspensifs]
+    fr:
+      terme: Admission temporaire
+      definition: >
+        Régime douanier qui permet d'utiliser sur le territoire douanier, en
+        suspension totale ou partielle des droits et taxes dus à
+        l'importation, des marchandises destinées à être réexportées sans
+        modification, hors leur dépréciation normale par l'usage autorisé.
+      synonymes: []
+    ar:
+      terme: القبول المؤقت
+      definition: >
+        نظام ديواني يمكّن من الاستعمال على التراب الديواني، مع توقيف العمل الكلي
+        أو الجزئي للمعاليم والأداءات المستوجبة عند التوريد، لبضائع معدّة لإعادة
+        التصدير دون أن تجري عليها تغييرات باستثناء التآكل العادي الناتج عن
+        الاستعمال المرخّص فيه.
+      synonymes: []
+
+  - id: origine-des-marchandises
+    acronyme: null
+    statut: valide
+    references: [freund-ornelas-2010-rta]
+    source_definition: {ref: loi-2008-34-code-douanes, locator: "art. 21"}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 21"}
+    voir_aussi: [droits-de-douane, detournement-creation-commerce]
+    fr:
+      terme: Origine des marchandises
+      definition: >
+        Pays dont une marchandise est réputée provenir, et d'après lequel les
+        droits de douane sont perçus à l'importation. Hors les définitions
+        propres aux accords commerciaux, le code des douanes de 2008 tient
+        pour originaires d'un pays les marchandises « entièrement obtenues »
+        dans ce pays ; pour une marchandise obtenue avec des produits importés
+        d'un autre pays, un décret fixe les règles selon le critère de la
+        transformation substantielle. Les règles d'origine des accords
+        préférentiels décident quelles importations bénéficient du taux réduit.
+      synonymes: [Règles d'origine]
+    ar:
+      terme: منشأ البضائع
+      definition: >
+        البلد الذي تُعتبر البضاعة ذات منشأ منه، وعلى أساسه تُستخلص المعاليم عند
+        التوريد. ومع مراعاة التعاريف الواردة بالاتفاقيات التجارية، تعتبر مجلة
+        الديوانة لسنة 2008 ذات منشأ من بلد ما البضائع «المتحصل عليها كليا» بهذا
+        البلد، وتُضبط بأمر، طبقا لقاعدة التحويل الجوهري، قواعد تحديد منشأ بضاعة
+        متحصل عليها باستعمال منتجات موردة من بلد آخر. وتحدّد قواعد المنشأ في
+        الاتفاقيات التفاضلية الواردات التي تنتفع بالنسبة المخفّضة.
+      synonymes: [قواعد المنشأ]
+
+  - id: systeme-harmonise
+    acronyme: SH
+    statut: valide
+    references: [loi-89-113-tarif-douanes, loi-2008-34-code-douanes]
+    # AR : « النظام المنسق لتعيين وترميز البضائع », code de 2008, art. 19 (éd. arabe),
+    # retenu comme terme. L'intitulé arabe de la loi n° 87-2 dit « النظام الموحد لتعيين
+    # البضائع وترميزها » : forme du JORT gardée en synonyme.
+    source_definition: {ref: loi-87-2-systeme-harmonise}
+    source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 19"}
+    voir_aussi: [position-tarifaire, tarif-des-droits-de-douane]
+    fr:
+      terme: Système harmonisé de désignation et de codification des marchandises
+      definition: >
+        Nomenclature internationale des marchandises, établie par la
+        convention conclue à Bruxelles le 14 juin 1983, que la Tunisie ratifie
+        en 1987. Le tarif des droits de douane la suit depuis la loi n° 89-113 ;
+        le code des douanes de 2008 classe les marchandises sous réserve de ses
+        règles générales d'interprétation (art. 19).
+      synonymes: [Système harmonisé]
+    ar:
+      terme: النظام المنسق لتعيين وترميز البضائع
+      definition: >
+        تصنيفة دولية للبضائع ضبطتها الاتفاقية المبرمة ببروكسل في 14 جوان 1983،
+        وصادقت عليها البلاد التونسية سنة 1987. وتتبعها تعريفة المعاليم الديوانية
+        منذ القانون عدد 113 لسنة 1989، وتُبنَّد البضائع حسب مجلة الديوانة لسنة
+        2008 مع مراعاة القواعد العامة لتفسير التصنيفة التعريفية للنظام المنسق
+        (الفصل 19).
+      synonymes: [النظام المنسق, النظام الموحد لتعيين البضائع وترميزها]
+
+  - id: taux-npf
+    acronyme: NPF
+    statut: provisoire
+    # AR NON ATTESTÉ : terme d'attente, formé sur « معاملة الدولة الأولى بالرعاية »
+    # (avis du Conseil constitutionnel n° 11-2009, sans clé).
+    source_definition: {ref: omc-2016-tpr-tunisie, locator: "§ 3.23"}
+    voir_aussi: [droit-consolide, tarif-autonome]
+    fr:
+      terme: Taux de la nation la plus favorisée
+      definition: >
+        Taux de droit de douane qu'un membre de l'Organisation mondiale du
+        commerce applique aux importations des autres membres en l'absence de
+        préférence : le taux de droit commun. Les examens des politiques
+        commerciales du GATT et de l'OMC calculent les moyennes du tarif sur
+        ces taux, ligne par ligne.
+      synonymes: [Taux NPF]
+    ar:
+      terme: نسبة الدولة الأولى بالرعاية
+      definition: >
+        نسبة المعلوم الديواني التي يطبّقها عضو في المنظمة العالمية للتجارة على
+        واردات الأعضاء الآخرين في غياب أي معاملة تفاضلية، أي النسبة العادية.
+        وتحتسب مراجعات السياسات التجارية في إطار الاتفاق العام ثم المنظمة
+        العالمية للتجارة معدّلات التعريفة على أساس هذه النسب، بندا بندا.
+      synonymes: []
+
+  - id: taux-perception-implicite
+    acronyme: null
+    statut: provisoire
+    # Notion analytique définie par le chapitre (_droits_douane.qmd, longue période) :
+    # droits perçus, redevance comprise, rapportés aux importations. Pas de source de
+    # définition publiée. AR NON ATTESTÉ : terme d'attente.
+    voir_aussi: [droits-de-douane, taux-npf]
+    fr:
+      terme: Taux de perception implicite
+      definition: >
+        Rapport entre les droits de douane perçus, redevance de prestations
+        douanières comprise, et la valeur des importations : la part de la
+        valeur importée que l'État perçoit en droits. Il mesure ce qui est
+        perçu, là où une moyenne des taux du tarif mesure les taux affichés.
+      synonymes: []
+    ar:
+      terme: نسبة الاستخلاص الضمنية
+      definition: >
+        النسبة بين المعاليم الديوانية المستخلصة، بما فيها الأتاوة على الخدمات
+        الديوانية، وقيمة الواردات، أي الجزء من القيمة الموردة الذي تستخلصه
+        الدولة في شكل معاليم. وهي تقيس ما يُستخلص فعلا، في حين يقيس معدّل نسب
+        التعريفة النسب المعلنة.
+      synonymes: []
+
+  - id: protection-effective
+    acronyme: null
+    statut: provisoire
+    references: [fmi-1997-selected-issues]
+    # Notion analytique (Corden 1966, sans clé). La Banque mondiale (1995, annexe 2,
+    # p. 16) rattache la protection effective à la valeur ajoutée locale et note qu'elle
+    # dépasse le taux nominal ; le FMI (1997, p. 9) cite ses taux moyens sans la
+    # définir. AR NON ATTESTÉ : terme d'attente.
+    source_definition: {ref: bm-1995-vers-21e-siecle, locator: "annexe 2, p. 16"}
+    voir_aussi: [droits-de-douane]
+    fr:
+      terme: Protection effective
+      definition: >
+        Protection que la structure des droits de douane assure à la valeur
+        ajoutée d'une branche, et non au prix de son produit : elle tient
+        compte à la fois des droits sur le produit et des droits sur les
+        intrants importés. Son taux rapporte l'écart entre la valeur ajoutée
+        aux prix intérieurs et la valeur ajoutée aux prix mondiaux à cette
+        dernière ; il dépasse le taux nominal quand les intrants sont moins
+        taxés que le produit.
+      synonymes: [Taux de protection effective]
+    ar:
+      terme: الحماية الفعلية
+      definition: >
+        الحماية التي توفّرها بنية المعاليم الديوانية للقيمة المضافة لفرع من فروع
+        الإنتاج، لا لثمن منتوجه، إذ تأخذ في الاعتبار المعاليم الموظّفة على
+        المنتوج والمعاليم الموظّفة على المدخلات الموردة معا. وتنسب نسبتُها الفارقَ
+        بين القيمة المضافة بالأسعار الداخلية والقيمة المضافة بالأسعار العالمية
+        إلى هذه الأخيرة، وتفوق النسبة الاسمية عندما تكون المدخلات أقلّ خضوعا
+        للمعاليم من المنتوج.
+      synonymes: []
+
+  - id: detournement-creation-commerce
+    acronyme: null
+    statut: provisoire
+    references: [brown-deardorff-stern-1996-tunisie-ue]
+    # Viner (1950), cité par Freund et Ornelas ; recette perdue : Brown, Deardorff et
+    # Stern (1996), p. 15. AR NON ATTESTÉ : terme d'attente.
+    source_definition: {ref: freund-ornelas-2010-rta, locator: "p. 4"}
+    voir_aussi: [origine-des-marchandises, demantelement-tarifaire]
+    fr:
+      terme: Détournement et création de commerce
+      definition: >
+        Les deux effets d'un accord commercial préférentiel sur les échanges.
+        L'accord crée du commerce quand les importations du partenaire
+        remplacent une production intérieure plus coûteuse ; il en détourne
+        quand elles remplacent les importations d'un fournisseur extérieur plus
+        efficace. Dans un pays qui taxait ces importations, le détournement se
+        paie aussi en recette douanière perdue.
+      synonymes: [Détournement de commerce, Création de commerce]
+    ar:
+      terme: تحويل التجارة وإنشاء التجارة
+      definition: >
+        أثرا اتفاق تجاري تفاضلي على المبادلات. فالاتفاق ينشئ تجارة عندما تحلّ
+        واردات البلد الشريك محلّ إنتاج محلّي أكثر كلفة، ويحوّلها عندما تحلّ محلّ
+        واردات من مزوّد أجنبي أكثر نجاعة. وفي بلد كان يوظّف معاليم على هذه
+        الواردات، يُفقد تحويل التجارة أيضا جزءا من المداخيل الديوانية.
+      synonymes: []
+
+  - id: evasion-tarifaire
+    acronyme: null
+    statut: provisoire
+    references: [banquemondiale2014-revolution-inachevee]
+    # Mesure par les « evasion gaps » (Fisman et Wei, 2004), selon Rijkers, Baghdadi et
+    # Raballand. AR NON ATTESTÉ : terme d'attente.
+    source_definition: {ref: rijkers-baghdadi-raballand-2017-tariff-evasion}
+    voir_aussi: [droits-de-douane, valeur-en-douane]
+    fr:
+      terme: Évasion tarifaire
+      definition: >
+        Soustraction aux droits de douane par une déclaration inexacte des
+        importations, notamment par la minoration des prix unitaires déclarés.
+        Elle se mesure par l'écart entre les exportations vers la Tunisie que
+        déclarent les pays partenaires et les importations des mêmes produits
+        déclarées en douane.
+      synonymes: []
+    ar:
+      terme: التهرب من المعاليم الديوانية
+      definition: >
+        التفصّي من المعاليم الديوانية بتصريح غير صحيح بالواردات، ولا سيما
+        بالتقليص من الأسعار الأحادية المصرّح بها. ويقاس بالفارق بين الصادرات نحو
+        البلاد التونسية التي تصرّح بها البلدان الشريكة وواردات المنتجات نفسها
+        المصرّح بها لدى الديوانة.
       synonymes: []

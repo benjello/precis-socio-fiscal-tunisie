@@ -1,0 +1,55 @@
+# Manifeste du relevé « importations de la Banque centrale (1988-1997) et moyennes simples des
+# taux du tarif publiées par le GATT et l'OMC ».
+#
+# Fichier TENU À LA MAIN, lu par figures/droits_douane.py (figure fig-dd-perception du chapitre
+# « Les droits de douane »).
+#
+# CE QUE PORTE LE RELEVÉ, ET CE QU'IL NE PORTE PAS. Deux familles, qui ne se mêlent pas :
+#   - statistique publique : importations CAF 1988-1997 du rapport annuel 1998 de la Banque
+#     centrale (tableau « Évolution du commerce extérieur de la Tunisie 1988-1998 »), arrondies
+#     au million ; employées seulement comme dénominateur du taux de perception implicite ;
+#   - rapport extérieur : moyennes simples des taux du tarif données par le GATT (1994) et
+#     l'OMC (2005, 2016, 2025), chacune avec sa définition dans `remarque`.
+# Le numérateur du taux (rubrique « droits de douane » du ministère des Finances, redevances
+# comprises) vient de la série « recettes fiscales, composition », et les importations de
+# 1998 à 2023 de la série de l'Annuaire statistique de l'INS (tableau 14.2) : la figure les lit
+# là, pas ici.
+#
+# LES MOYENNES SIMPLES NE SONT PAS DES TAUX DE PERCEPTION. Une moyenne simple des taux du tarif
+# se calcule sur les lignes du tarif ; le taux de perception rapporte les recettes aux
+# importations. Les deux sont tracés sur le même axe en pourcentage, avec deux légendes.
+# `trace: non` : valeur lue, gardée dans les données, que la figure ne trace pas (définition
+# différente de celle des autres années : droits complémentaires provisoires compris en 1994
+# selon le GATT ; nomenclature à onze chiffres en 2004, 2005 et pour la seconde valeur de 2025).
+#
+# Pas de WDI : les indicateurs de la Banque mondiale (WITS, TRAINS) sont exclus du relevé.
+
+format: long
+cle_de_ligne: [annee, famille, grandeur, trace]
+
+colonnes:
+  annee: année de la valeur
+  famille: statistique publique, ou rapport extérieur
+  grandeur: importations (millions de dinars courants, CAF) ; moyenne_simple (moyenne simple des taux du tarif, en %)
+  valeur: valeur lue
+  unite: unité
+  trace: oui, ou non pour une valeur que la figure ne trace pas
+  source: clé de citation
+  localisateur: page, tableau ou paragraphe
+  remarque: définition ou réserve de la source
+
+sources:
+  - bct-ra-1998
+  - gatt-1994-tpr-tunisie
+  - omc-2005-tpr-tunisie
+  - omc-2016-tpr-tunisie
+  - omc-2025-tpr-tunisie
+
+perimetre: >-
+  Importations de biens de la Tunisie, 1988-1997 (Banque centrale) ; moyennes simples des taux
+  du tarif des rapports d'examen des politiques commerciales du GATT et de l'OMC.
+caveats: >-
+  Les importations de 1997 et de 1998 se raccordent (9 489 millions de dinars à la Banque
+  centrale pour 1998, 9 489,5 à l'INS), mais les sources changent. Les moyennes des rapports
+  extérieurs diffèrent par la définition (nomenclature à neuf ou à onze chiffres, droits
+  complémentaires provisoires compris ou non) et par l'année de pondération.
