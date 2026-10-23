@@ -710,8 +710,7 @@ liste qui suit le tableau, citations comprises. Restent :
   n° 31-2006 et 53-2006 ; notes communes 23/2014 et 28/2002 ; URL pist.tn de `lf-2016`, `lf-2019`,
   `lf-2020` ; compléter les notes de `loi79-66-lf1980` (art. 14 et 15, pp. 3542-3543),
   `loi-93-53-cdet` (art. 3, p. 715 ; art. 8 § II, p. 716), `loi-98-73` (dépôt du 12 août 1998,
-  art. 12), `lfc-2014` et `lfc-2015` (dépôts) ; doublons `lf-1990`/`loi-89-115-lf-1990` et
-  `lf-1992`/`loi91-98-lf1992` ; `lfc-1989` (à reprendre de `compensation/references.json`),
+  art. 12), `lfc-2014` et `lfc-2015` (dépôts) ; `lfc-1989` (à reprendre de `compensation/references.json`),
   `lfc-1991`, `dgi-nc-15-2016`, `dgi-nc-17-2016` (notices proposées dans
   `successions-bareme-1985-1993.md`, § 9). **Traduction arabe** différée : ajouter le chapitre au `_quarto.yml` arabe à la
   livraison. Fiches de recherche : les quatre ci-dessus, `r-pv-immobiliere-modificatifs-2023` et `r-bareme-successions-1985-1993`.
@@ -1906,7 +1905,7 @@ Notes : `docs/notes/fiscalite-taxes-affectees.md` (documentation), `plan-fiscali
   - population couverte : aucune source ; dinars constants et part du PIB (base dite, annexe PIB) : à faire.
 - Vignette (taxe de circulation) : recette du budget général ; chapitre « timbre et enregistrement » à lui donner une section (worktree `precis-wt-fiscalite-timbre-enregistrement`) ; décret du 31 mars 1955, art. 19-21, hors corpus (JOT 1955, à obtenir) ; arrêté du 27 mai 1955 ; tarifs 1964-1994 : OCR ; tarif des voitures de 2000 à 2021 non établi (LF 2016, art. 90 : lignes imprimées en tirets) ; LF 2024 (abandon des taxes 2020-2022 : numéro d'article à relever) ; réalisations : à obtenir.
 - Fonds sans texte de financement lu (liste du tableau « B » de la LFC 2014, 32 comptes) : fonds de garantie des victimes des accidents de la circulation, de prévention des accidents, de la protection civile, FNAH, promotion des exportations, communications, huile d'olive conditionnée, qualité des dattes, repos biologique, création littéraire, sports et jeunesse, solidarité sociale, autoroutes, comptes des collectivités locales.
-- Clés doublons à fondre : `lf-2019` / `loi2018-56-lf2019` ; `lf-2022` / `dl2021-21-lf2022`. Rapatriement Zotero des clés versées (fiscalité, 23/10/2026) : sur feu vert.
+- Clés doublons : fondues le 23/10/2026 (correspondances dans `docs/notes/biblio-a-rapatrier.md`, § « Fusion des clés en doublon »). Rapatriement Zotero des clés versées (fiscalité, 23/10/2026) : sur feu vert.
 
 **Social et secteur public**
 
@@ -4412,3 +4411,4 @@ matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
   (`tarifs/tarifs-releves-droits-consommation.csv`), sans feuille d'accises.
 - **Arabe.** Termes retenus sur l'édition arabe du décret de 1997 (lue à l'image, pp. 1366 et
   1370) : وصل ضمان, سند إعفاء, حسابية المواد ; à faire relire par le relecteur-ar.
+- Alias arabes transitoires (23/10/2026) : les clés fondues restent dans `precis/ar/references.json` (note « TRANSITOIRE ») tant que les `.qmd` arabes les citent ; à retirer, clé par clé, après la retraduction du chapitre qui les cite (liste dans `docs/notes/biblio-a-rapatrier.md`, § « Fusion des clés en doublon »).

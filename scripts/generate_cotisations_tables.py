@@ -650,7 +650,7 @@ AUTRES = "parameters/prelevements_sociaux/autres"
 CLES_TFP_FOPROLOS = {
     "1967-01-01": "decret66-527, art. 1-2",
     "1977-08-01": "loi77-54, art. 2 et 10",
-    "1989-01-01": "loi-88-145-lf-1989, art. 29-30 et 35",
+    "1989-01-01": "loi88-145-lf1989, art. 29-30 et 35",
 }
 
 

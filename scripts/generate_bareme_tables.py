@@ -239,9 +239,9 @@ def evolutions_datees(langue):
     return [
         ("plafond_cpe.md",
          [(f"{cpe}/plafond_cotisation.yaml", m["plafond_cpe"], taux_ou_sans_plafond)],
-         {"1962-01-01": "loi-62-73-cpe, art. 2", "1965-01-01": "lf-1966, art. 10",
+         {"1962-01-01": "loi-62-73-cpe, art. 2", "1965-01-01": "loi65-46-lf1966, art. 10",
           "1980-01-01": "loi79-66-lf1980, art. 8", "1983-01-01": "lf-1983, art. 9",
-          "1986-01-01": "lf-1986, art. 8"}),
+          "1986-01-01": "loi85-109-lf1986, art. 8"}),
     ]
 
 
@@ -302,7 +302,7 @@ def bareme(chemin, annee, libelle, langue, colonne_tranche, avec_taux_effectif):
 # d'État, puis chaque barème de l'IRPP, dont les dates sont celles des références du paramètre.
 
 DERNIERE_ANNEE = 2026
-GENERATION_CPE = (BAREME_CPE, 1986, "lf-1986, art. 8",
+GENERATION_CPE = (BAREME_CPE, 1986, "loi85-109-lf1986, art. 8",
                   {"fr": "n° 91 du 31 déc. 1985, p. 1731", "ar": "العدد 91 بتاريخ 31 ديسمبر 1985، ص. 1731"})
 TEXTES_IRPP = {
     1990: ("code-irpp-is-1990, art. 44 § I",

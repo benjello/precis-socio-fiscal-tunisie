@@ -391,7 +391,7 @@ figtools.register_provenance(
            "pour les revenus de 1962, 1965, 1980, 1983 et 1986"),
     titre_ar=("تعريفة المساهمة الشخصية للدولة، حسب شريحة الدخل الصافي الخاضع للضريبة، "
               "لمداخيل 1962 و1965 و1980 و1983 و1986"),
-    sources=["loi-62-73-cpe", "lf-1966", "loi79-66-lf1980", "lf-1983", "lf-1986"],
+    sources=["loi-62-73-cpe", "loi65-46-lf1966", "loi79-66-lf1980", "lf-1983", "loi85-109-lf1986"],
     unite="taux fixé pour la tranche, en pourcentage ; seuils en dinars courants",
     unite_ar="النسبة المحدَّدة للشريحة بالمائة؛ والعتبات بالدينار الجاري",
     perimetre=("cinq tarifs, une ligne par tranche et par tarif, avec le texte du Journal "
