@@ -246,6 +246,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds commun des collectivités locales | المال المشترك للجماعات المحلية | FCCL |
 | Fonds de commerce | الأصول التجارية |  |
 | Fonds de promotion de la formation professionnelle et de l'apprentissage | صندوق النهوض بالتكوين والتدريب المهني |  |
+| Fonds de protection sociale des travailleuses agricoles | صندوق الحماية الاجتماعية للعاملات الفلاحيات |  |
 | Fonds de réserve | صندوق الاحتياط |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
 | Fonds national de l'emploi | الصندوق الوطني للتشغيل | FNE |
@@ -286,6 +287,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Imputation du droit de consommation | خصم المعلوم على الاستهلاك |  |
 | Incidence des subventions | توزيع منافع الدعم |  |
 | Incidence fiscale | توزيع العبء الجبائي |  |
+| Inclusion économique | الإدماج الاقتصادي |  |
 | Indemnité à caractère familial | المنحة ذات الصبغة العائلية |  |
 | Indemnité compensatrice | المنحة التعويضية |  |
 | Indemnité compensatrice de congé payé | منحة التعويض عن الرخصة |  |
@@ -415,6 +417,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Régime conventionnel public | النظام الاتفاقي العمومي |  |
 | Régime de marché contrôlé | نظام السوق الموجَّه |  |
 | Régime de prévoyance | نظام الحيطة |  |
+| Régime de protection sociale des travailleuses agricoles | نظام الحماية الاجتماعية للعاملات الفلاحيات |  |
 | Régime de sécurité sociale des travailleuses agricoles | نظام الضمان الاجتماعي للعاملات الفلاحيات |  |
 | Régime de travail à plein temps | نظام عمل كامل الوقت |  |
 | Régime des artistes, créateurs et intellectuels | نظام الضمان الاجتماعي للفنانين والمبدعين والمثقفين |  |
@@ -554,6 +557,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Travail à temps partiel | العمل لوقت جزئي |  |
 | Travail de nuit | العمل الليلي |  |
 | Travail domestique | العمل المنزلي |  |
+| Travailleuse agricole | العاملة الفلاحية |  |
 | Travaux pénibles et insalubres | الأشغال الشاقّة وغير الصحّية |  |
 | Tribunal immobilier | المحكمة العقارية |  |
 | Tutelle | سلطة الإشراف |  |
