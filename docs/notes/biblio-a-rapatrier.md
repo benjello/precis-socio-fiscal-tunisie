@@ -3905,3 +3905,18 @@ Sources : `docs/notes/logement-social-foprolos-2026-10-23.md` § 2.2 (17 entrée
   pour les vins mousseux classés (4,000 D français, 24,000 arabe) : à confirmer sur un second exemplaire.
 - [x] `lf-2018` : l'article 45 commence p. 4282 (lu à l'image), non p. 4281 ; la note de l'entrée en fait état.
 - [ ] Rapatriement Zotero des deux entrées créées : en attente de feu vert (séquence habituelle).
+
+## Clôture du 23/10/2026 (santé, « Tarifs des malades payants », bibliographe)
+
+- 5 clés versées à `precis/{fr,ar}/sante/references.json` : `arrete-1993-01-25-tarifs`,
+  `arrete-1996-12-19-tarifs`, `arrete-1998-04-17-tarifs`, `arrete-2003-01-29-tarifs`,
+  `arrete-2008-07-07-tarifs`. Provisoires : à rapatrier dans Zotero (groupe 6529669, collection Santé).
+- [ ] Titres arabes et pagination arabe non relevés pour les clés de 1993, 1998, 2003 et 2008 (pages
+  françaises reprises) ; pour 1996, titre arabe et pp. 2855-2856 lus à l'image le 23/10/2026.
+- [ ] Dates d'effet : dépôt des fascicules de 1998, 2003 et 2008 non relevé.
+
+- Contrôles (23/10/2026) : `push_biblio.py --verifier` : 1747 entrées, 0 perte. `--dry-run` : 1747 références
+  locales, 1747 à créer (aucune erreur de conversion). `--controle-rangement` : 1642 bien rangées, 0 à
+  déclasser, 0 à ranger, 102 sans citation, 5 absentes de Zotero (les cinq clés ci-dessus). Rapatriement
+  Zotero non lancé (feu vert humain requis). Rendu `quarto render --to html` de `sante` : 0 citation non
+  résolue.
