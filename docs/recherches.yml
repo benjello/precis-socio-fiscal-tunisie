@@ -3853,3 +3853,37 @@
     resultat: aucun
   a_faire:
   - océriser les fascicules 1966-1970 à la recherche d'un décret d'application de l'art. 21 ; le décret n'a peut-être jamais été pris, le code organisant lui-même la commission
+
+- id: r-banque-donnees-2014-1526-suite
+  objet: texte prolongeant à nouveau, modifiant ou abrogeant le décret n° 2014-1526 (unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité) après le décret gouvernemental n° 2018-626, dont la prolongation d'un an court jusque vers mai 2019
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#r-nc-li-2018]
+  requetes:
+    titres_fts: ['"banque de donnees" AND necessiteuses']
+    titres_like: ['%1526%2014%', '%banque de donnees sur les familles%', '%unite de gestion par objectifs%']
+    iort_ar: [بنك معطيات, العائلات المعوزة ومحدودة الدخل, وحدة تصرف حسب الأهداف]
+    depuis: 2018-08-07
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, notices publiées de 2014 au 2 octobre 2026 ; LIKE sur titre et objet (« %1526%2014% »), LIKE sur titre (« %banque de donnees sur les familles% »), LIKE sur titre, deux conditions jointes par AND (« %unite de gestion par objectifs% » et « %affaires sociales% »), FTS « "banque de donnees" AND necessiteuses », LIKE arabe sur les titres de l''index (« %بنك معطيات% », « %العائلات المعوزة ومحدودة الدخل% », « %وحدة تصرف حسب الأهداف%الشؤون الاجتماعية% »), 2018-2026 pour ce dernier. Résultats : décrets n° 2014-1526 et 2018-626, décret n° 2018-400 (autre unité), art. 96 de la loi n° 2025-17 (fonds des orphelins). Miroir iort non interrogé ; plein texte des fascicules non parcouru ; fascicules inconnus de la base non sondés. Note : docs/notes/prestations-2018-626-lf2025-art26.md, § 1.4.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [rejouer les termes arabes sur le miroir iort ; parcourir le plein texte 2018-2020]
+
+- id: r-lf2026-art71-81-arretes
+  objet: arrêtés conjoints d'application des art. 71 (150 D pour l'achat d'un lecteur de glycémie sans piqûre, enfants diabétiques des familles pauvres et à revenu limité inscrites à l'Amen social) et 81 (150 D par mois, enfants atteints de troubles du spectre autistique, mêmes familles) de la loi n° 2025-17, loi de finances pour 2026
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#sec-nc-aides-categorielles]
+  requetes:
+    titres_fts: [glycemie, diabetiques, autistique, autisme]
+    iort_ar: [التوحد, السكري, نسبة السكر]
+    plein_texte: [glycémie, autisti, طيف التوحد, مرض السكري, نسبة السكر]
+    depuis: 2025-12-12
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, notices de 2025 et 2026 publiées jusqu''au 2 octobre 2026 : FTS « glycemie », « diabetiques », « autistique », « autisme » sans résultat ; LIKE arabe sur les titres de l''index (« %التوحد% », « %السكري% », « %نسبة السكر% ») : seuls les articles 36, 71 et 81 de la loi n° 2025-17. Plein texte du corpus local 2026 jusqu''au n° 97 (2 octobre 2026) : 94 fascicules français (« glyc[ée]mie », « autisti », « spectre de l.autisme » ; manquent les n° 11, 13 et 58) et 95 arabes après NFKC (« طيف التوحد », « مرض السكري », « نسبة السكر » ; manquent les n° 3 et 58). Seul résultat hors de la loi : décret n° 2026-192 du 27 juillet 2026 (JORT n° 76, AR p. 1600), programme d''intégration des enfants autistes en jardin d''enfants, qui n''applique pas l''art. 81. Miroir iort non interrogé. Note : docs/notes/prestations-2018-626-lf2025-art26.md, § 6.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [rejouer les termes arabes sur le miroir iort ; lire les fascicules postérieurs au n° 97]

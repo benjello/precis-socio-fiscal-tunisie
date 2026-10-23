@@ -827,7 +827,7 @@ liste qui suit le tableau, citations comprises. Restent :
     son texte français ; les aides catégorielles des lois de finances pour 2025 et 2026 (condition de
     l'art. 81 ajoutée) ; les aides aux familles d'accueil (`#tbl-nc-familles-accueil`, deux séries) ; les
     modalités, les taux et le plafond de 2008 de l'assurance maladie (bloc replié) ; les décrets
-    n° 99-1372 et n° 2018-626 ; les conditions du programme d'autonomisation ; le tableau 13 du rapport du
+    n° 99-1372 (le n° 2018-626 est relu et porté le 23 octobre 2026) ; les conditions du programme d'autonomisation ; le tableau 13 du rapport du
     ministère pour 2023 (il ne se referme pas).
   - *Trouvé en écrivant, hors de la note* : les décrets de 1997 sont modifiés — n° 2002-886 et
     n° 2006-1025 pour le décret n° 97-1925 (aide plafonnée à trois, puis six, puis douze mensualités),
@@ -967,6 +967,29 @@ liste qui suit le tableau, citations comprises. Restent :
   français, p. 3427) et art. 35, 71, 81, 96 et 110 de la loi de finances pour 2026 (édition arabe,
   la seule : le fichier « français » de pist.tn est l'arabe), portés à
   `#sec-nc-aides-categorielles`. Reste : les arrêtés d'application des articles de 2026.
+- **Décret n° 2018-626 et loi de finances pour 2025, art. 26 — clos le 23 octobre 2026**
+  (note : `docs/notes/prestations-2018-626-lf2025-art26.md`). Décret relu à l'image (FR p. 2653,
+  AR p. 3524) ; décret n° 2014-1526 exécutoire le 19 mai 2014 ; art. 2 du décret de 2018 :
+  quatre → six cadres. Aide « gluten » : arrêté du 30 juillet 2025 abrogé par l'arrêté conjoint
+  du 14 juillet 2026 (JORT n° 70, pp. 1327-1328, exécutoire le 19 juillet 2026 ; commission
+  médicale, registre spécifique, condition de non-couverture pour le *xeroderma pigmentosum*),
+  portés à `#sec-nc-aides-categorielles`. Lacunes :
+  - **articulation art. 26 (2025) / art. 35 (2026)** : montant servi du 1er janvier au
+    19 juillet 2026, survie de l'art. 26, cumul ; aucun texte lu (TODO HTML dans le chapitre) ;
+  - **suite de la banque de données après mai 2019** : aucune prolongation ni abrogation du
+    décret n° 2014-1526 trouvée dans `jort_cache` (fiche `r-banque-donnees-2014-1526-suite` ;
+    miroir iort et plein texte 2018-2020 à parcourir) ; le « scoring » prévu à l'art. 3 du
+    décret de 2014 n'est pas rapproché du score de l'Amen social, aucun texte lu ne le fait ;
+  - **arrêtés d'application des art. 71 et 81 de la loi de finances pour 2026** : non
+    identifiés (fiche `r-lf2026-art71-81-arretes`, fascicules postérieurs au n° 97 à lire) ; le
+    décret n° 2026-192 du 27 juillet 2026 (JORT n° 76, AR p. 1600, enfants autistes en jardin
+    d'enfants) est un programme distinct, non lu ;
+  - **données** : ni effectif de bénéficiaires ni dépense de ces aides (budget du ministère des
+    affaires sociales, rapports Amen social 2025 : non cherchés) ;
+  - **LF 2025, édition française** : absente de pist.tn ; seule source, la copie locale
+    (corpus local, texte arabe concordant sur l'art. 26) ; la notice n'a pas d'URL française ;
+  - **LF 2026, art. 35** : relu sur le fascicule arabe (p. 4238) ; relecture à l'image des
+    articles 35, 71, 81, 96 et 110 encore à faire.
 - **Pagination des textes de 2024 et postérieurs — établie le 10 octobre 2026** et portée aux
   notices : décret-loi n° 2024-4, p. 2897-2902 en français ; loi n° 2024-44, p. 2215-2216 ;
   décret n° 2022-919, p. 3367-3370 ; loi de finances pour 2025, art. 17 p. 3423 du texte français
@@ -4128,8 +4151,7 @@ reprendre sans refaire la même recherche :
   obtenir hors du corpus JORT.
 
 1. **Lire ce qui est déjà textuel** : loi n° 2009-39 et décret n° 2009-2085
-   (Retraites) ; décret-loi n° 2024-4 (Cotisations) ; décret n° 2018-626 et LF 2025,
-   art. 26 (Prestations) ; décrets n° 97-1368 et 2015-1768 (Fiscalité) ; décret
+   (Retraites) ; décret-loi n° 2024-4 (Cotisations) ; décrets n° 97-1368 et 2015-1768 (Fiscalité) ; décret
    n° 2015-2217 (Rémunérations). Vérifier chaque article à sa page, pas seulement
    la présence du fascicule.
 2. **Océriser par cible**, avec contrôle à l'image : loi n° 65-17 (étudiants), décret

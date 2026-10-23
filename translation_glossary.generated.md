@@ -20,6 +20,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Agence tunisienne de la formation professionnelle | الوكالة التونسية للتكوين المهني | ATFP |
 | Agent temporaire | العون الوقتي |  |
 | Agrément d'une convention collective | المصادقة على الاتفاقية المشتركة |  |
+| Allergie au gluten | حساسية دابوق القمح |  |
 | Allocation de vieillesse | منحة الشيخوخة |  |
 | Allocation familiale | المنحة العائلية |  |
 | Allocation familiale non contributive | المنحة العائلية غير المساهماتية |  |
@@ -559,6 +560,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tutelle | سلطة الإشراف |  |
 | Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
+| Unité de gestion par objectifs | وحدة تصرف حسب الأهداف |  |
 | Valeur du point d'indice | قيمة النقطة الاستدلالية |  |
 | Valeur en douane | القيمة المصرح بها لدى الديوانة |  |
 | Validation des services | إدماج الخدمات |  |

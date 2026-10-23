@@ -2599,13 +2599,58 @@ entries:
         Seconde catégorie légale de l'Amen social, au-dessus des catégories pauvres.
         Elle n'ouvre pas le transfert monétaire permanent mais donne accès aux soins à
         tarif réduit et, depuis 2022, à l'allocation familiale non contributive.
-      synonymes: []
+      synonymes: [catégories à faible revenu]
     ar:
       terme: الفئات محدودة الدخل
       definition: >
         الصنف القانوني الثاني في برنامج الأمان الاجتماعي، ويأتي فوق الفئات الفقيرة. ولا
         يفتح الحقّ في التحويل النقدي القارّ، لكنّه يخوّل النفاذ إلى العلاج بالتعريفة
         المنخفضة، ومنذ سنة 2022 إلى المنحة العائلية غير المساهماتية.
+      synonymes: []
+
+  - id: allergie-gluten
+    acronyme: null
+    statut: valide
+    references: [lf-2025, arrete-2026-07-14-xeroderma-gluten]
+    source_definition: {ref: lf-2025, locator: "art. 26"}
+    voir_aussi: [categories-pauvres, amen-social]
+    fr:
+      terme: Allergie au gluten
+      definition: >
+        Maladie dont les textes de 2025 et 2026 font la condition d'une allocation
+        mensuelle de l'Amen social pour les dépenses alimentaires. Elle est établie par un
+        certificat d'un médecin de la santé publique, qui atteste la nécessité d'un régime
+        sans gluten au long cours ; depuis le 19 juillet 2026, une commission médicale en
+        examine la preuve.
+      synonymes: []
+    ar:
+      terme: حساسية دابوق القمح
+      definition: >
+        مرض جعلته نصوص سنتي 2025 و2026 شرطًا لمنحة شهرية في إطار الأمان الاجتماعي لنفقات
+        الغذاء. ويثبت بشهادة طبيب من الصحة العمومية تفيد الحاجة إلى نظام غذائي خال من
+        الجلوتين على المدى الطويل، وتنظر في إثباته منذ 19 جويلية 2026 لجنة طبية.
+      synonymes: [حساسية الجلوتين]
+
+  - id: unite-de-gestion-par-objectifs
+    acronyme: null
+    statut: valide
+    references: [decret-2014-1526-banque-donnees, decret2018-626]
+    source_definition: {ref: decret-2014-1526-banque-donnees, locator: "art. 1"}
+    voir_aussi: [amen-social, categories-pauvres]
+    fr:
+      terme: Unité de gestion par objectifs
+      definition: >
+        Structure temporaire créée au sein d'un ministère pour réaliser un projet défini,
+        sous l'autorité du ministre. Celle du ministère des affaires sociales, créée en
+        2014, réalise le projet de banque de données sur les familles nécessiteuses et à
+        revenu limité.
+      synonymes: []
+    ar:
+      terme: وحدة تصرف حسب الأهداف
+      definition: >
+        هيكل وقتي يُحدث داخل وزارة لإنجاز مشروع محدّد، تحت سلطة الوزير. وقد أُحدثت سنة
+        2014 وحدة من هذا النوع بوزارة الشؤون الاجتماعية لإنجاز مشروع إعداد بنك معطيات حول
+        العائلات المعوزة ومحدودة الدخل.
       synonymes: []
 
   - id: condition-de-ressources
