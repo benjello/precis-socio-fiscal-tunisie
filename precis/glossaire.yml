@@ -1238,7 +1238,7 @@ entries:
   - id: contribution-personnelle-etat
     acronyme: CPE
     statut: valide
-    references: [lf-1986, decret86-1188, loi-irpp-is-1989]
+    references: [loi85-109-lf1986, decret86-1188, loi-irpp-is-1989]
     source_definition: {ref: loi-irpp-is-1989, locator: "art. 2"}
     source_traduction: {ref: decret86-1188, locator: "art. 1er"}
     voir_aussi: [irpp, bareme-irpp, taux-marginal]
@@ -3114,7 +3114,7 @@ entries:
   - id: contribution-frais-soins
     acronyme: null
     statut: valide
-    references: [lf-1983, lf-1986]
+    references: [lf-1983, loi85-109-lf1986]
     source_definition: {ref: lf-1983, locator: "art. 105"}
     source_traduction: {ref: lf-1983, locator: "art. 105"}
     voir_aussi: [livret-de-soins]
@@ -5792,9 +5792,9 @@ entries:
   - id: tva-sur-marge
     acronyme: null
     statut: provisoire
-    references: [lf-1991, lf-2016, dgelf-code-tva-2023]
+    references: [loi90-111-lf1991, lf-2016, dgelf-code-tva-2023]
     source_definition: {ref: lf-2016, locator: "art. 33"}
-    source_traduction: {ref: lf-1991, locator: "art. 34"}
+    source_traduction: {ref: loi90-111-lf1991, locator: "art. 34"}
     voir_aussi: [tva, assujetti, chiffre-affaires-imposable]
     fr:
       terme: TVA sur la marge
@@ -7226,8 +7226,8 @@ entries:
     acronyme: TFP
     statut: valide
     references: [decret-1956-01-12-formation-professionnelle, decret66-527]
-    source_definition: {ref: loi-88-145-lf-1989, locator: "art. 29-30"}
-    source_traduction: {ref: loi-88-145-lf-1989, locator: "art. 29-30"}
+    source_definition: {ref: loi88-145-lf1989, locator: "art. 29-30"}
+    source_traduction: {ref: loi88-145-lf1989, locator: "art. 29-30"}
     voir_aussi: [foprolos, avance-tfp]
     fr:
       terme: Taxe de formation professionnelle
@@ -7252,7 +7252,7 @@ entries:
     statut: valide
     references: [loi77-54]
     source_definition: {ref: loi77-54, locator: "art. 1-2"}
-    source_traduction: {ref: loi-88-145-lf-1989, locator: "art. 35"}
+    source_traduction: {ref: loi88-145-lf1989, locator: "art. 35"}
     voir_aussi: [tfp, fonds-foprolos]
     fr:
       terme: Contribution au fonds de promotion du logement pour les salariés
@@ -7496,7 +7496,7 @@ entries:
   - id: programme-specifique-logement-social
     acronyme: null
     statut: provisoire  # AR relevé dans 14 intitulés AR du JORT, à confirmer sur l'éd. AR de la LFC 2012 ; décrets modificatifs du décret n° 2012-1224 non lus
-    references: [decret2012-1224, lf-2022]
+    references: [decret2012-1224, dl2021-21-lf2022]
     source_definition: {ref: lfc-2012, locator: "art. 27-32"}
     voir_aussi: [logement-social, logement-rudimentaire, afh, sprols]
     fr:
@@ -14292,7 +14292,7 @@ entries:
   - id: droits-actes-transactions
     acronyme: null
     statut: valide
-    references: [lf-2017, lf-2019, lf-2020, lf-2026]
+    references: [lf-2017, loi2018-56-lf2019, lf-2020, lf-2026]
     source_definition: {ref: lf-2020, locator: "tableau A, p. 4441"}
     source_traduction: {ref: lf-2026}
     voir_aussi: [droits-enregistrement, droit-timbre, taxe-unique-assurances]
@@ -14423,7 +14423,7 @@ entries:
   - id: timbre-proportionnel
     acronyme: null
     statut: provisoire  # AR non attesté
-    references: [decret-65-222-timbre, lf-1990]
+    references: [decret-65-222-timbre, loi-89-115-lf-1990]
     source_definition: {ref: decret-65-222-timbre, locator: "art. 2"}
     voir_aussi: [droit-timbre, timbre-dimension, droit-proportionnel-enregistrement]
     fr:
@@ -15922,7 +15922,7 @@ entries:
   - id: comptes-speciaux-epargne
     acronyme: null
     statut: valide
-    references: [code-irpp-is-1990, lf-2017, lf-2022]
+    references: [code-irpp-is-1990, lf-2017, dl2021-21-lf2022]
     source_definition: {ref: code-irpp-is-1990, locator: "art. 39-II et 52-I-b"}
     source_traduction: {ref: code-irpp-is-1990, locator: "art. 39-II"}
     voir_aussi: [deductions-communes, revenus-capitaux-mobiliers]
@@ -16085,7 +16085,7 @@ entries:
   - id: taxe-circulation
     acronyme: null
     statut: provisoire
-    references: [lf-2000, lf-2016, lf-2022]
+    references: [lf-2000, lf-2016, dl2021-21-lf2022]
     # Base légale : art. 19 du décret du 31 mars 1955 (clé decret-1955-03-31-budget,
     # texte hors corpus, non lu : pas en source_definition) ; modifié par la LF 2000,
     # art. 58, la LF 2016, art. 90, la LF 2022, art. 55. « Vignette » est l'usage ; le
@@ -16414,7 +16414,7 @@ entries:
     # 23/10/2026 (miroir iort pour l'arabe, jort_cache.db pour le français). Décrets sans
     # clé : pas de source_traduction. Ne pas confondre avec « المعلوم التعويضي » (droit
     # compensateur antisubvention, décret n° 2000-477).
-    source_definition: {ref: lf-1991, locator: "art. 26"}
+    source_definition: {ref: loi90-111-lf1991, locator: "art. 26"}
     voir_aussi: [droits-de-douane]
     fr:
       terme: Droit compensateur provisoire
@@ -16442,7 +16442,7 @@ entries:
     references: [loi-2008-34-code-douanes, loi-87-83-lf-1988]
     # AR : « الحد الأدنى القانوني للاستخلاص », code de 2008, art. 6 (éd. arabe), face à
     # « minimum légal de perception ».
-    source_definition: {ref: lf-1987, locator: "art. 27"}
+    source_definition: {ref: loi86-106-lf1987, locator: "art. 27"}
     source_traduction: {ref: loi-2008-34-code-douanes, locator: "art. 6"}
     voir_aussi: [droits-de-douane, tarif-autonome]
     fr:

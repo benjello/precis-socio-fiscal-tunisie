@@ -43,7 +43,7 @@ tableaux:
     titre: Tables de correspondance des taux, 1987, 1988 et 1994 — taux avant, taux après
     ancre: tbl-dd-correspondances
     lignes: 66
-    sources: [lf-1987, loi-87-83-lf-1988, lf-1994]
+    sources: [loi86-106-lf1987, loi-87-83-lf-1988, lf-1994]
     couverture: COMPLÈTE pour les trois tables lues
     couverture_detail: >-
       Vingt-cinq lignes pour 1987 (article 25), dix-huit pour 1988 (article 52), vingt-trois
@@ -60,7 +60,7 @@ tableaux:
     titre: Étapes du tarif de 2004 à 2022 — transposition d'un taux en un autre, par texte
     ancre: tbl-dd-bandes
     lignes: 30
-    sources: [lf-2004, lf-2005, lf-2006, lf-2007, lf-2008, lf-2009, lf-2011, lf-2016, lf-2018, lf-2022]
+    sources: [lf-2004, lf-2005, lf-2006, lf-2007, loi-2007-70-lf-2008, lf-2009, lf-2011, lf-2016, lf-2018, dl2021-21-lf2022]
     couverture: PARTIELLE
     couverture_detail: >-
       Les seuls articles qui transposent un taux en un autre, avec leur champ tel que le texte
@@ -79,7 +79,7 @@ tableaux:
     titre: Minimum de perception du tarif minimum ad valorem à l'importation, 1987 et 1988
     ancre: tbl-dd-minimum
     lignes: 2
-    sources: [lf-1987, loi-87-83-lf-1988]
+    sources: [loi86-106-lf1987, loi-87-83-lf-1988]
     couverture: COMPLÈTE pour 1987 et 1988
     couverture_detail: >-
       Deux états : 10 % en 1987 (biens d'équipement sans similaire produit en Tunisie, sur

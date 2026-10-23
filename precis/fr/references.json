@@ -1042,27 +1042,6 @@
       "note": "citation-key: fmi-1997-selected-issues\nDocument d'accompagnement de la consultation de 1997 au titre de l'article IV (« This Selected Issues paper serves as background to the 1997 Article IV Consultation with Tunisia »). Titre, auteur, éditeur et date lus dans les métadonnées de la page de la bibliothèque en ligne du FMI : citation_title « Tunisia: Selected Issues », citation_author « International Monetary Fund », citation_publication_date « 1997/07/25 », citation_journal_title « IMF Staff Country Reports », volume 1997, numéro 057 ; DOI 10.5089/9781451837742.002.A001. Le rapport est d'ordinaire cité comme « IMF Staff Country Report No. 97/57 », forme usuelle du FMI pour ce volume et ce numéro (la bibliographie du même document cite ainsi « Morocco-Selected Issues, Staff Country Report No. 97/6 ») ; cette chaîne n'apparaît pas sur la page, et la page de titre du PDF, refusée aux accès automatisés (HTTP 403), n'a pas été lue : le champ genre reprend donc la forme lue (volume 1997, numéro 057). Utilisé pour le chapitre IV « Regulatory Framework Issues », section « Current labor market regulations », tableau 5 « Tunisia: Wage and Employment Indicators, 1981-96 » (sources : « Ministry of Economic Development; World Bank; and Fund staff estimates ») : masse salariale, salariés et salaire annuel moyen, total, agriculture, État et reste de l'économie ; 1994 : estimations préliminaires. La page d'origine refuse les accès automatisés (HTTP 403, y compris par le DOI, qui y redirige) : capture des archives du web du 27 juillet 2026, https://web.archive.org/web/20260727011700/https://www.elibrary.imf.org/view/journals/002/1997/057/article-A001-en.xml , vérifiée le 22 septembre 2026 (HTTP 200 sans redirection, 3 404 920 octets, mêmes citation_title et DOI, tableau 5 présent). Consulté le 22 septembre 2026. Cité aussi par « La TVA » (volume Fiscalité) : § 108, p. 42 du PDF, règlement « early and unlimited » des crédits de TVA et apurement du stock ; sans chiffre. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/imf_1997_057_red_tunisia.pdf (SHA-256 57cf2e0f…). Adresse du PDF de la bibliothèque en ligne : https://www.elibrary.imf.org/view/journals/002/1997/057/article-A001-en.pdf (relevée par recherche le 6 octobre 2026, non ouverte)."
     },
     {
-      "id": "lf-2022",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: lf-2022\nissue: 119\nJORT n° 119 du 28 décembre 2021, tome 164, ÉDITION FRANÇAISE (179 pages) ; le décret-loi commence page 3081. Article 24 (intérêts de l'épargne : « cinq mille dinars » → « dix mille dinars » et « trois mille dinars » → « six mille dinars », article 39 § II du code) en PAGE 3086. NC 1/2022 : effet sur les revenus réalisés à partir de l'année 2021. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. Édition arabe : https://www.pist.tn/jort/2021/2021A/Ja1192021.pdf\nPages relevées pour la note documentaire sur les tableaux de la TVA (édition française) : art. 34 p. 3089, art. 39 p. 3090, art. 43 p. 3092, art. 50 p. 3096.",
-      "page": "3086",
-      "title": "Décret-loi n° 2021-21 du 28 décembre 2021, portant loi de finances pour l'année 2022",
-      "URL": "https://www.pist.tn/jort/2021/2021F/Jo1192021.pdf",
-      "volume": "164",
-      "issued": {
-        "date-parts": [
-          [
-            2021,
-            12,
-            28
-          ]
-        ]
-      },
-      "issue": "119",
-      "title-short": "Décret-loi n° 2021-21 du 28 décembre 2021"
-    },
-    {
       "id": "lf-2023",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",
@@ -1509,26 +1488,6 @@
       "note": "citation-key: loi60-33\nJORT n° 57, fascicule daté 13-16 décembre 1960 (même fascicule que la loi n° 60-30), p. 1616. Intitulé de la notice JORT ; les visas du décret n° 90-1455 la citent sous la forme « … et un régime d'allocations de vieillesse et de survie dans le secteur non agricole ». Art. 1 : institue, au profit des salariés visés à l'art. 34 de la loi n° 60-30, le régime de pensions et le régime d'allocation ; art. 2 : gestion par la CNSS, taux et répartition des cotisations fixés par décret ; art. 3 : conditions d'ouverture des droits, mode de calcul et montant des prestations renvoyés à un décret, sur proposition d'une commission tripartite ; art. 4 : contrôle des organismes non publics ; art. 5 : un décret règle le sort des régimes conventionnels et, en cas de fusion, ses modalités. La loi ne fixe donc aucun paramètre. Art. 1 à 4 lus à l'image ; art. 5 par OCR. Ne porte PAS le barème de liquidation du RSNA : celui-ci est fixé par l'art. 17 du décret n° 74-499 (dossier retraites, § 0 et § 6.1).",
       "URL": "https://www.pist.tn/jort/1960/1960F/Jo05760.pdf",
       "title-short": "Loi n° 60-33 du 14 décembre 1960"
-    },
-    {
-      "id": "loi75-83",
-      "type": "legislation",
-      "title": "Loi n° 75-83 du 30 décembre 1975, portant loi de finances pour la gestion 1976",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "87",
-      "page": "2852-2857",
-      "issued": {
-        "date-parts": [
-          [
-            1975,
-            12,
-            30
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1975/1975F/Jo08775.pdf",
-      "note": "citation-key: loi75-83\nJORT n° 87 des 30-31 décembre 1975, p. 2852-2854 — même fascicule que la loi n° 75-82 sur les allocations familiales. C'est cette loi de finances qui institue la Caisse nationale de retraite et de prévoyance sociale, fait attesté par l'article 2 de la loi n° 86-86, lu à l'image. Art. 28 lu à l'image (p. 2854) : la Caisse nationale de retraite et la Caisse de prévoyance sociale « sont transformées en un établissement public à caractère financier doté de la personnalité civile et de l'autonomie financière », dénommé CNRPS et rattaché au ministère des Finances ; art. 30 (organisation par décret), 31 (transfert des patrimoines), 32 (privilège du Trésor), 34 (dévolution à l'État en cas de dissolution). Art. 67 et 68 LUS À L'IMAGE le 6 octobre 2026 (édition française) : art. 67 (p. 2856, la suite p. 2857) — la Caisse spéciale de compensation des ciments, gérée par la Société des Ciments Portland de Bizerte, est supprimée ; son solde net au 31 décembre 1975 est versé à la Caisse générale de compensation, qui prend en charge à compter du 1er janvier 1976 les dépenses et les recettes afférentes ; art. 68 (p. 2857) — les opérations du compte de stabilisation des produits pétroliers finis sont prises en charge par la CGC à compter du 1er janvier 1976, solde net au 31 décembre 1975 versé à la CGC. L'art. 69 ne concerne pas la CGC (Fonds de reconversion du vignoble) : la note documentaire parlait à tort des art. 67-69. Signature « Fait au Palais de Carthage, le 30 décembre 1975 » p. 2857 : le champ page, qui s'arrêtait à 2854, est porté à 2852-2857 ; le tableau F annexé n'a pas été paginé.",
-      "title-short": "Loi n° 75-83 du 30 décembre 1975"
     },
     {
       "id": "loi81-6",
@@ -2094,26 +2053,6 @@
       },
       "issue": "148",
       "title-short": "Loi n° 2025-17 du 12 décembre 2025"
-    },
-    {
-      "id": "loi2001-123-lf2002",
-      "type": "legislation",
-      "title": "Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "104",
-      "page": "4260",
-      "issued": {
-        "date-parts": [
-          [
-            2001,
-            12,
-            28
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf",
-      "note": "citation-key: loi2001-123-lf2002\nJORT n° 104 du 28 décembre 2001. Art. 85, p. 4260 (édition française) : échéancier pluriannuel — assuré social +1 point (0,50 au 1/7/2002, 0,25 au 1/7/2003, 0,25 au 1/7/2004) ; employeur +1,5 point en cinq marches de 2002 à 2006 ; modifie les art. 9 et 13 de la loi n° 85-12. C'est l'article qui porte les paliers 2003 et 2004 de la série CNRPS. Art. 86, p. 4260 : modifie l'art. 37 de la loi n° 85-12 — la péréquation est soumise aux art. 9, 10, 11 et 13 (l'art. 36 sort des renvois) ; la contribution du bénéficiaire au titre de la péréquation est due pendant toute la période de service de la pension et de ses accessoires, celle de l'employeur sur 36 mois. Date d'effet : art. 97, p. 4261, dispositions applicables à compter du 1er janvier 2002, sans dérogation pour les art. 85-86. Aucun autre article de la loi ne vise la loi n° 85-12 (pp. 4251-4261 dépouillées). Texte lu (couche texte à encodage décalé de -29 ; décodage vérifié contre la pagination du fascicule, puis relu à l'image).",
-      "title-short": "Loi n° 2001-123 du 28 décembre 2001"
     },
     {
       "id": "decret80-75",
@@ -3606,44 +3545,6 @@
       "URL": "https://www.pist.tn/jort/1956/1956F/Jo07456.pdf",
       "note": "citation-key: decret-1956-09-13-publication\nJORT n° 74 du 14 septembre 1956, p. 1247. Métadonnées jort_cache.db (recid 108190). Texte lu (OCR du fascicule local, p. 1247). Article unique : l'art. 3 du décret du 27 janvier 1883 est remplacé. Art. 3 (nouveau), al. 1 : « Les décrets et arrêtés seront obligatoires à Tunis un jour franc après la publication au Journal Officiel Tunisien et, sur le reste du territoire, un jour franc après que ce journal sera parvenu au chef-lieu de la circonscription du Gouvernorat. » Al. 2 : « L'exécution immédiate d'un décret ou d'un arrêté pourra être ordonnée par disposition expresse. » Abrogé par la loi n° 93-64 du 5 juillet 1993 (art. 3). Intitulé retenu : celui du fascicule (décret beylical, rubrique « Présidence du Conseil », sans autorité dans l'intitulé) ; la notice porte « Decret du Chef du gouvernement du 13 Septembre 1956 ».",
       "title-short": "Décret du 13 septembre 1956 (7 safar 1376)"
-    },
-    {
-      "id": "loi93-64",
-      "type": "legislation",
-      "title": "Loi n° 93-64 du 5 juillet 1993, relative à la publication des textes au Journal officiel de la République tunisienne et à leur exécution",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "50",
-      "page": "931",
-      "issued": {
-        "date-parts": [
-          [
-            1993,
-            7,
-            5
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1993/1993F/Jo05093.pdf",
-      "note": "citation-key: loi93-64\nJORT n° 50 du 6 juillet 1993, p. 931. Métadonnées jort_cache.db (recid 112971). Texte lu (OCR du fascicule local, p. 931). Art. 1er : lois, décrets-lois, décrets et arrêtés publiés au JORT en langue arabe, et dans une autre langue à titre d'information seulement. Art. 2 : « Les textes législatifs et réglementaires sont exécutoires cinq jours après le dépôt du journal officiel dans lequel ils sont insérés, au siège du gouvernorat de Tunis. Le jour du dépôt n'est pas pris en considération dans le décompte du délai. » Al. 3 : les textes peuvent prévoir une exécution immédiate ou un délai plus long. Art. 3 : abroge le décret du 27 janvier 1883 et les textes l'ayant complété ou modifié, notamment les décrets du 8 septembre 1955 et du 13 septembre 1956.",
-      "title-short": "Loi n° 93-64 du 5 juillet 1993"
-    },
-    {
-      "id": "loi2018-56-lf2019",
-      "type": "legislation",
-      "note": "citation-key: loi2018-56-lf2019\nDROIT DE CONSOMMATION (versement « droits de consommation », 16/09/2026) : JORT n° 104, p. 4548-4553 ; art. 62 p. 4548 (véhicules 8-9 places pour handicapés, tableau annexé à la loi n° 88-62), art. 69 p. 4550 (champ du droit pour les mélanges odoriférants Ex 33.02 ; suppression pour certains produits alimentaires), art. 80 p. 4553 (motocycles). Texte français lu dans PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_n_2018-56….pdf, pieds de page lus dans la couche texte ; LA PAGINATION EST CELLE DE L'ÉDITION FRANÇAISE — ne pas la « corriger » vers la pagination arabe. SANS URL CÔTÉ FRANÇAIS, ET C'EST VOULU : https://www.pist.tn/jort/2018/2018F/Jo1042018.pdf rend 404 (curl -k, en-tête serveur reçu, 16/09/2026) et jort_cache.db n'a pas de pdf_fr. Édition arabe, seule en ligne : https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf. RÉFÉRENCE COMMUNE : citée par les livres « Rémunérations publiques » et « Fiscalité » — d'où son rangement au fonds commun. La clé loi-2018-56-lf-2019, créée par erreur le 16/09/2026 dans le livre Fiscalité, a été SUPPRIMÉE au profit de celle-ci.\nDÉPENSES FISCALES (note documentaire § 1.3) : art. 37 (p. 4539, À CONTRÔLER) — abrogation des art. 67 à 69 du code de l'IRPP et de l'IS (régime de l'exportation) ; art. 41 § 1 (p. 4541, À CONTRÔLER) — les entreprises en activité au 31 décembre 2018 gardent l'avantage jusqu'au 31 décembre 2020. Pagination de l'ÉDITION FRANÇAISE.",
-      "title": "Loi n° 2018-56 du 27 décembre 2018, portant loi de finances pour l'année 2019",
-      "issued": {
-        "date-parts": [
-          [
-            2018,
-            12,
-            27
-          ]
-        ]
-      },
-      "issue": "104",
-      "page": "4548-4553",
-      "title-short": "Loi n° 2018-56 du 27 décembre 2018"
     },
     {
       "id": "lf-2018",
@@ -5925,36 +5826,6 @@
       "title-short": "Loi n° 86-83 du 1er septembre 1986"
     },
     {
-      "id": "loi-87-83-lf-1988",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: loi-87-83-lf-1988\nissue: 91\nauthority: République tunisienne\nevent-date: 1987-12-31\nURL, fascicule et pagination vérifiés sur l'édition française du fascicule (téléchargement pist.tn du 8 septembre 2026). Provisoire : à rapatrier dans Zotero.\nJORT n° 91 du 31 décembre 1987. Art. 66 (contributions des organismes de sécurité sociale aux budgets des hôpitaux publics portées de 3 à 5 MD) et 67 (2,5 MD au budget général pour le programme des familles nécessiteuses), p. 1634 ; tableau A, lignes 62-09 (CNSS, 15 MD), 62-10 (CNRPS, 1 MD), 62-13 (2,5 MD ; « 0,5 MD (LF 1975) » imprimé pour la majoration de 0,5 point), p. 1640. Lu à l'image.\nFusion du 4 octobre 2026 : la clé loi87-83-lf1988, doublon de celle-ci, est retirée ; toutes ses citations passent ici.\nArt. 76 (p. 1635) : prélèvement sur le fonds de promotion du logement pour les salariés au profit du programme national de résorption des logements rudimentaires. Lu à l'image (docs/notes/cotisations-prelevements-salaires.md).",
-      "page": "1633-1634, 1640",
-      "title": "Loi n° 87-83 du 31 décembre 1987, portant loi de finances pour la gestion 1988",
-      "URL": "https://www.pist.tn/jort/1987/1987F/Jo09187.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            1987,
-            12,
-            31
-          ]
-        ]
-      },
-      "issue": "91",
-      "authority": "République tunisienne",
-      "event-date": {
-        "date-parts": [
-          [
-            1987,
-            12,
-            31
-          ]
-        ]
-      },
-      "title-short": "Loi n° 87-83 du 31 décembre 1987"
-    },
-    {
       "id": "loi2017-47",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",
@@ -7543,27 +7414,6 @@
       "note": "citation-key: decret66-527\nJORT n° 55 du 27-30 décembre 1966, p. 1804. Art. 1er : § II nouveau de l'art. 1er du décret du 16 janvier 1957, taux de la taxe de formation professionnelle porté à 2 %. Art. 2 : effet au 1er janvier 1967. Lu à l'image."
     },
     {
-      "id": "loi-88-145-lf-1989",
-      "type": "legislation",
-      "title": "Loi n° 88-145 du 31 décembre 1988, portant loi de finances pour la gestion 1989",
-      "container-title": "Journal Officiel de la République Tunisienne",
-      "issue": "87",
-      "volume": "131",
-      "page": "1793-1805",
-      "issued": {
-        "date-parts": [
-          [
-            1988,
-            12,
-            31
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1988/1988F/Jo08788.pdf",
-      "note": "citation-key: loi-88-145-lf-1989\nPubliée les 30-31 décembre 1988. Art. 27 (p. 1795-1796) : suppression du droit de consommation sur une longue liste de positions tarifaires. Art. 86 (p. 1801) : habilitation à fixer par décret les taux applicables aux produits 22-03 et 22-05 à 22-09 — fondement des décrets 91-551 et 97-1368. Les deux articles lus à l'image. Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja08788.pdf. URL FR et AR vérifiées (HTTP 200, 16 septembre 2026).\nTFP : art. 29-30 (p. 1797), taxe liquidée mensuellement sur les salaires et rétributions, 1 % pour les industries manufacturières et 2 % pour les autres secteurs, à compter des salaires de janvier 1989. FOPROLOS : art. 35-38 (p. 1797), contribution ramenée à 1 % des salaires et rétributions, recouvrée par la recette des finances ; l'art. 38 met fin aux art. 2 à 4 de la loi n° 77-54. Édition arabe p. 1773-1774. Lus à l'image le 5 octobre 2026.",
-      "title-short": "Loi n° 88-145 du 31 décembre 1988"
-    },
-    {
       "id": "loi2007-69",
       "type": "legislation",
       "title": "Loi n° 2007-69 du 27 décembre 2007, relative à l'initiative économique",
@@ -8388,109 +8238,6 @@
       "note": "citation-key: ins-portail-2009-salaires-prive\nPage en arabe du premier portail de l'INS (www.ins.nat.tn), code indicateur 0402040 ; aucune version française de cette mise à jour n'est archivée. Intitulé original lu sur la page : « المؤشر : نسبة التطور الثلاثي للأجور في القطاع الخاص الغير الفلاحي » ; « الوحدة : بالمائة ». Le titre français donné ici en est la traduction littérale ; la page française du même indicateur, en 2006, l'intitulait « Taux d’évolution trimestriel du salaire moyen dans le secteur privé non agricole » (voir ins-portail-2006-salaires-prive). Rubrique « معطيات ظرفية » (données conjoncturelles), sous-rubrique « معطيات عن الأجور » (données sur les salaires). Taux trimestriels de T1 2001 à T1 2009. Pied de page : « تاريخ آخر تحيين: 30-06-2009 » (date de dernière mise à jour, retenue) ; « المصدر : المعهد الوطني للإحصاء » (source : Institut national de la statistique). Page disparue : l'URL donnée est la capture des archives du web du 13 juillet 2009, seule capture de la page arabe (liste des captures : http://web.archive.org/cdx/search/cdx?url=ins.nat.tn&matchType=domain&filter=original:.*0402040.*) ; réponse HTTP 200 vérifiée le 22 septembre 2026. Page encodée en windows-1256. Copie : dépôt tunisia-data, data/raw/ins-bms/ar2009_0402040.html ; fiche : sources/ins-bms-salaires-prive.md. Consulté le 22 septembre 2026."
     },
     {
-      "id": "lf-1986",
-      "type": "legislation",
-      "title": "Loi n° 85-109 du 31 décembre 1985, portant loi de finances pour la gestion 1986",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "91",
-      "volume": "128",
-      "page": "1730-1773",
-      "issued": {
-        "date-parts": [
-          [
-            1985,
-            12,
-            31
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1985/1985F/Jo09185.pdf",
-      "title-short": "Loi n° 85-109 du 31 décembre 1985",
-      "note": "citation-key: lf-1986\n\nJORT n° 91 du 31 décembre 1985, tome 128. Tableau « F », ligne 34 (p. 1771), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, recettes 8 000 000 D, dépenses 8 000 000 D. Date de signature d'après jort_cache.db ; la loi commence p. 1730 d'après la même notice. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).\n\nissue: 91\nJORT n° 91 du 31 décembre 1985, tome 128. Barème de la contribution personnelle d'État : article 8, page 1731. URL pist.tn vérifiée (HTTP 200 ; certificat TLS expiré, utiliser curl -k). Édition arabe : https://www.pist.tn/jort/1985/1985A/Ja09185.pdf\n\nPages relevées avant la réunion des copies — notice antérieure : 1771 ; volume fiscalite : 1730. Champ « page » : début du texte d'après l'index du Journal officiel ; non relu au fascicule à cette occasion.\nArt. 56 (FR p. 1739 ; AR p. 1749, lu à l'image le 14 octobre 2026) : modifie l'alinéa 3 de l'article 105 de la loi n° 82-91 (LF 1983) : 300 millimes par consultation en dispensaire, 500 millimes dans les hôpitaux de circonscription, 1 dinar dans les hôpitaux régionaux et universitaires, centres et instituts spécialisés, 5 dinars par hospitalisation de médecine générale, de maternité et de spécialités médicales, 10 dinars de chirurgie ; exécutoire pour la gestion 1986. Loi : FR pp. 1730-1773 (la loi n° 85-110 commence p. 1774) ; AR pp. 1740-1784 (n° 110 : p. 1785)."
-    },
-    {
-      "id": "lf-1990",
-      "type": "legislation",
-      "title": "Loi n° 89-115 du 30 décembre 1989, portant loi de finances pour la gestion 1990",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "88",
-      "volume": "132",
-      "page": "2152-2239",
-      "issued": {
-        "date-parts": [
-          [
-            1989,
-            12,
-            30
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1989/1989F/Jo08889.pdf",
-      "title-short": "Loi n° 89-115 du 30 décembre 1989",
-      "note": "citation-key: lf-1990\n\nJORT n° 88 des 29-31 décembre 1989, tome 132. Tableau « L » (p. 2239), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, subvention du budget 32 500 000 D, recettes propres néant. Date de signature d'après jort_cache.db (41 notices sur 44 ; trois portent le 31 décembre) ; la loi commence p. 2144 d'après la même notice. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).\n\nJORT n° 88 des 29-31 décembre 1989 ; art. 53 à 55 (FR p. 2152 ; le montant de l'art. 53 lu par océrisation seulement) et tableau « L » des fonds spéciaux du Trésor (FR p. 2239, lu à l'image) ; pages AR non relevées.\n\nPages relevées avant la réunion des copies — notice antérieure : 2239 ; volume finances_locales : 2152-2239. Champ « page » : plus petite page relevée par un volume (l'index du Journal officiel donne 2156-2239) ; non relu au fascicule à cette occasion."
-    },
-    {
-      "id": "lf-1991",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: lf-1991\n\nissue: 86\nJORT n° 86 des 28-31 décembre 1990, tome 133 ; la loi commence page 2049. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1990/1990A/Ja08690.pdf\nDROIT DE CONSOMMATION : art. 38 (p. 2052), « Suppression et réduction du droit de consommation dû sur certains produits », modifie la liste annexée à la loi n° 88-62 conformément au tableau « N » de la deuxième partie de la loi (tableaux annexes, p. 2062-2204, NON LUS : le détail des suppressions et réductions de 1991 reste inconnu). Art. 38 lu à l'image. Le champ « page » de cette entrée porte le début de la loi (2049) et n'est pas modifié.\n\nJORT n° 86 des 28-31 décembre 1990, tome 133. Tableau « K » (p. 2163), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, subvention du budget 33 000 000 D, recettes propres néant. Date de signature d'après jort_cache.db ; la loi commence p. 2049. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).\n\nPages relevées avant la réunion des copies — notice antérieure : 2049 ; volume compensation : 2163. Champ « page » : plus petite page relevée par un volume (l'index du Journal officiel donne 2062-2204) ; non relu au fascicule à cette occasion.",
-      "page": "2049",
-      "title": "Loi n° 90-111 du 31 décembre 1990, portant loi de finances pour la gestion 1991",
-      "URL": "https://www.pist.tn/jort/1990/1990F/Jo08690.pdf",
-      "volume": "133",
-      "issued": {
-        "date-parts": [
-          [
-            1990,
-            12,
-            31
-          ]
-        ]
-      },
-      "issue": "86",
-      "title-short": "Loi n° 90-111 du 31 décembre 1990"
-    },
-    {
-      "id": "lf-1992",
-      "type": "legislation",
-      "title": "Loi n° 91-98 du 31 décembre 1991, portant loi de finances pour la gestion 1992",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "90",
-      "volume": "134",
-      "page": "2082",
-      "issued": {
-        "date-parts": [
-          [
-            1991,
-            12,
-            31
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1991/1991F/Jo09091.pdf",
-      "note": "citation-key: lf-1992\n\nissue: 90\nJORT n° 90 du 31 décembre 1991, tome 134 ; la loi commence page 2082 (sommaire lu à l'image). Édition française établie sur pièce : la taille distante (content-length, curl -ksI, 16 septembre 2026) est égale à l'octet près au fascicule du corpus local, dont la première page porte « traduction française ». Un code 200 sur un chemin « …F/Jo… » ne suffit pas : pist.tn sert parfois l'édition arabe sous une adresse française.\nDROIT DE CONSOMMATION : le titre 4 de la loi, « dispositions relatives à la taxe sur la valeur ajoutée et au droit de consommation », occupe les pages 2085-2086 selon les notices de jort_cache.db. ARTICLE NON ÉTABLI SUR PIÈCE : la liste DGELF porte l'article 44, que le fascicule n'a pas permis de vérifier (aucune couche texte ; seule la page 1 a été relue à l'image). Date d'effet déduite (1er janvier 1992), clause non lue. Ni le contenu ni les taux de cet article ne doivent être cités d'après cette entrée. Édition arabe : https://www.pist.tn/jort/1991/1991A/Ja09091.pdf\n\nJORT n° 90 du 31 décembre 1991, tome 134. Tableau « K » (p. 2197), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, subvention du budget 40 000 000 D, recettes propres néant. Date de signature d'après jort_cache.db ; la loi commence p. 2082. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).\n\nPages relevées avant la réunion des copies — notice antérieure : 2082 ; volume compensation : 2197. Champ « page » : plus petite page relevée par un volume (l'index du Journal officiel donne 2094-2263) ; non relu au fascicule à cette occasion.",
-      "title-short": "Loi n° 91-98 du 31 décembre 1991"
-    },
-    {
-      "id": "lf-1977",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: lf-1977\n\nissue: 83\nJORT n° 83 du 31 décembre 1976. Articles 27 et 28, page 3166 : « Institution d'un impôt sur les plus-values immobilières » (rubrique de la loi ; le texte n'énonce aucun objectif). Lu à l'image.",
-      "title": "Loi n° 76-115 du 31 décembre 1976, portant loi de finances pour la gestion 1977",
-      "URL": "https://www.pist.tn/jort/1976/1976F/Jo08376.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            1976,
-            12,
-            31
-          ]
-        ]
-      },
-      "issue": "83",
-      "title-short": "Loi n° 76-115 du 31 décembre 1976"
-    },
-    {
       "id": "lf-1993",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",
@@ -8575,27 +8322,6 @@
       "note": "citation-key: lf-2009\n\nJORT n° 104 du 26 décembre 2008. Tableau des crédits de programmes de l'État, lu à l'image le 13 octobre 2026 : Fonds de promotion et de décentralisation industrielle  chapitre de l'industrie  42 000 000 D (p. 4306) ; prise en charge par l'État de la contribution patronale au régime légal de la sécurité sociale  chapitre des affaires sociales  35 000 000 D (p. 4325). La loi commence p. 4274 d'après jort_cache.db. URL pist.tn contrôlée le 13 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).\n\nJORT n° 104 du 26 décembre 2008. Art. 33 en p. 4279 de l'édition française ; application à compter du 1er janvier 2009 (art. 39). Étendue des pages non relevée."
     },
     {
-      "id": "loi-2007-70-lf-2008",
-      "type": "legislation",
-      "title": "Loi n° 2007-70 du 27 décembre 2007, portant loi de finances pour l'année 2008",
-      "container-title": "Journal Officiel de la République Tunisienne",
-      "issue": "104",
-      "volume": "150",
-      "page": "4367",
-      "issued": {
-        "date-parts": [
-          [
-            2007,
-            12,
-            27
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2007/2007F/Jo1042007.pdf",
-      "note": "citation-key: loi-2007-70-lf-2008\n\nPubliée le 28 décembre 2007. Art. 58 : soumission au droit de consommation du gaz naturel destiné à l'utilisation comme carburant, et ajout de la STEG à la liste des assujettis (art. 2-5 de la loi n° 88-62). Pagination de notice (jort_cache.db, p. 4367 pour l'article relatif au droit de consommation) ; texte NON LU SUR PIÈCE. DATE D'EFFET DÉDUITE du droit commun des lois de finances (1er janvier 2008) : la clause d'application n'a pas été lue. Tome 150 selon la notice. Édition arabe : https://www.pist.tn/jort/2007/2007A/Ja1042007.pdf. URL FR et AR vérifiées (HTTP 200, 16 septembre 2026).\nDÉPENSES FISCALES : art. 12, p. 4358 (texte lu, note documentaire § 1.3) — dans les art. 5 à 12 de la loi n° 2006-80, « 1er janvier 2008 » devient « 1er janvier 2011 » (poursuite de l'exonération des revenus et bénéfices de l'exportation). Édition française.\n\nPubliée le 28 décembre 2007. Art. 58 : soumission au droit de consommation du gaz naturel destiné à l'utilisation comme carburant, et ajout de la STEG à la liste des assujettis (art. 2-5 de la loi n° 88-62). Pagination de notice (jort_cache.db, p. 4367 pour l'article relatif au droit de consommation) ; texte NON LU SUR PIÈCE. DATE D'EFFET DÉDUITE du droit commun des lois de finances (1er janvier 2008) : la clause d'application n'a pas été lue. Tome 150 selon la notice. Édition arabe : https://www.pist.tn/jort/2007/2007A/Ja1042007.pdf. URL FR et AR vérifiées (HTTP 200, 16 septembre 2026).\nTFP : art. 40 (p. 4364), exonération de la CNSS, de la CNRPS et de la CNAM ; art. 64 : effet au 1er janvier 2008. Lu (couche texte) le 5 octobre 2026.",
-      "title-short": "Loi n° 2007-70 du 27 décembre 2007"
-    },
-    {
       "id": "loi-org-2019-15-lob",
       "type": "legislation",
       "title": "Loi organique n° 2019-15 du 13 février 2019, relative à la loi organique du budget",
@@ -8675,26 +8401,6 @@
       "URL": "https://www.pist.tn/jort/1970/1970F/Jo02770.pdf",
       "title-short": "Loi n° 70-26 du 19 mai 1970",
       "note": "citation-key: loi70-26\nJORT n° 27 des 19-22 mai 1970. Art. 3 (p. 617), LU À L'IMAGE le 6 octobre 2026 dans l'édition française du corpus local : « Il est institué une Caisse Générale de Compensation destinée à agir sur les prix des marchandises, produits et services de première nécessité notamment au moyen de subvention et de péréquation. Les modalités de fonctionnement de cette Caisse seront fixées par décret. » La lecture par OCR de la note documentaire est confirmée. Intitulé relu à l'image (p. 617) ; la loi commence p. 617, la fin à la p. 621 est celle de la notice jort_cache.db (page vue par OCR seulement). Tome non relevé."
-    },
-    {
-      "id": "loi86-106-lf1987",
-      "type": "legislation",
-      "title": "Loi n° 86-106 du 31 décembre 1986, portant loi de finances pour la gestion 1987",
-      "issued": {
-        "date-parts": [
-          [
-            1986,
-            12,
-            31
-          ]
-        ]
-      },
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "78",
-      "page": "1610",
-      "URL": "https://www.pist.tn/jort/1986/1986F/Jo07886.pdf",
-      "note": "citation-key: loi86-106-lf1987\n\nJORT n° 78 des 30-31 décembre 1986. Art. 64 (art. 22 bis de la loi n° 85-72, publication des comptes), p. 1620 ; art. 75 (organisation administrative et financière des EPIC modifiable par décret), 76 (prêts des caisses à l'office du logement du personnel de l'intérieur), 77 (art. 6 de la loi n° 86-86), p. 1621. Lu à l'image.\nContribution au FOPROLOS : art. 49 (p. 1618), assiette étendue à l'indemnité complémentaire provisoire, à la majoration du SMIG de 1982 et à l'indemnité de transport ; lu à l'image le 5 octobre 2026.\n\nJORT n° 78 des 30-31 décembre 1986 ; art. 44 (p. 1618), 91, 92 et 94 (p. 1623), lus à l'image ; pages AR non relevées.\n\nPages relevées avant la réunion des copies — notice antérieure : 1620-1621 ; volume finances_locales : 1618-1623. Champ « page » : début du texte d'après l'index du Journal officiel ; non relu au fascicule à cette occasion.",
-      "title-short": "Loi n° 86-106 du 31 décembre 1986"
     },
     {
       "id": "loi95-101",
@@ -9556,27 +9262,6 @@
       "note": "citation-key: loi-93-53-cdet\nJORT n° 39 du 25 mai 1993, tome 136. La loi occupe les pages 715-717 et le code les pages 717 à 736 (jort_cache.db : première partie, droits d'enregistrement, pp. 717-732 ; deuxième partie, droits de timbre, pp. 733-736). Pages lues à l'image : loi, art. 8 § II (abrogation des décrets organiques des 19 et 20 avril 1912), p. 716 ; code, art. 20, p. 720 ; art. 117, p. 733. Pagination de l'édition française."
     },
     {
-      "id": "loi-93-64",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "title": "Loi n° 93-64 du 5 juillet 1993, relative à la publication des textes au Journal officiel de la République tunisienne et à leur exécution",
-      "title-short": "Loi n° 93-64 du 5 juillet 1993",
-      "issued": {
-        "date-parts": [
-          [
-            1993,
-            7,
-            5
-          ]
-        ]
-      },
-      "issue": "50",
-      "volume": "136",
-      "page": "931",
-      "URL": "https://www.pist.tn/jort/1993/1993F/Jo05093.pdf",
-      "note": "citation-key: loi-93-64\nJORT n° 50 du 6 juillet 1993, tome 136, page 931. Fixe l'exécutoire des textes (règle du dépôt du Journal officiel au siège du gouvernorat de Tunis). Pagination de l'édition française."
-    },
-    {
       "id": "loi-2006-69",
       "type": "legislation",
       "container-title": "Journal officiel de la République tunisienne",
@@ -9796,27 +9481,6 @@
       "URL": "https://www.pist.tn/jort/1983/1983F/Jo08683.pdf",
       "title-short": "Loi n° 83-113 du 30 décembre 1983",
       "note": "citation-key: lf-1984\nJORT n° 86 du 30 décembre 1983. Art. 87 (p. 3384) : financement des mesures d'accompagnement de la suppression de la compensation des céréales et dérivés sur les disponibilités de la CGC pour 1984 ; tableau F (p. 3422) : prévision 1984 du fonds CGC, 145 000 000 D. Lus par le documentaliste (docs/notes/compensation.md, § 1.1, niveau « texte lu ») ; non relus à l'image le 6 octobre 2026. L'art. 87 est abrogé par l'art. 27 de la loi n° 84-2 (lfc-1984). La loi commence p. 3371 d'après jort_cache.db ; les pages citées sont celles des passages utiles. ATTENTION : distincte de lf-1983, qui est la loi n° 82-91 (loi de finances pour 1983). Lus à l'image le 11 octobre 2026 (chapitre « La compensation du transport public ») : p. 3378 (art. 38 et 39, taxe unique de compensation de transports routiers), p. 3385 (rubrique « Création d'une caisse de compensation et de soutien des transports routiers », art. 99) et p. 3386 (art. 100 à 103 : objets et ressources de la caisse, suppression de la caisse de la loi n° 63-13). Tableau F, ligne 30 (p. 3422), relu à l'image le 13 octobre 2026 : caisse de compensation et de soutien des transports routiers, dépenses 5 600 000 D, recettes 5 600 000 D."
-    },
-    {
-      "id": "lf-1985",
-      "type": "legislation",
-      "title": "Loi n° 84-84 du 31 décembre 1984, portant loi de finances pour la gestion 1985",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "79",
-      "volume": "127",
-      "page": "3003",
-      "issued": {
-        "date-parts": [
-          [
-            1984,
-            12,
-            31
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1984/1984F/Jo07984.pdf",
-      "title-short": "Loi n° 84-84 du 31 décembre 1984",
-      "note": "citation-key: lf-1985\nJORT n° 79 des 28-31 décembre 1984, tome 127. Tableau « F », ligne 34 (p. 3003), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, recettes 6 000 000 D, dépenses 6 000 000 D. Date de signature d'après jort_cache.db ; la loi commence p. 2950 d'après la même notice. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local)."
     },
     {
       "id": "loi81-100-lf1982",
@@ -10643,24 +10307,6 @@
       "URL": "https://www.pist.tn/jort/2011/2011F/Jo0472011.pdf"
     },
     {
-      "id": "lf-2019",
-      "type": "legislation",
-      "title": "Loi n° 2018-56 du 27 décembre 2018, portant loi de finances pour l'année 2019",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "104",
-      "issued": {
-        "date-parts": [
-          [
-            2018,
-            12,
-            27
-          ]
-        ]
-      },
-      "title-short": "Loi n° 2018-56 du 27 décembre 2018",
-      "note": "citation-key: lf-2019\nJORT n° 104 du 28 décembre 2018. Lu à l'image dans l'ÉDITION ARABE, pagination arabe, le 13 octobre 2026 (édition française absente du corpus local et de pist.tn) : tableau « ث » des crédits de programmes — FOPRODI 37 000 000 D (p. 5511) ; aide aux promoteurs de projets touristiques 3 049 000 D (p. 5514) ; prise en charge de la contribution patronale 32 000 000 D (p. 5546) ; FONAPRA 15 000 000 D (p. 5562). Numéro et date de la loi repris de jort_cache.db, non relus au fascicule. Pas d'URL : seule l'édition arabe est servie par pist.tn (https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf, contrôlée le 13 octobre 2026)."
-    },
-    {
       "id": "gruber-1994-mandated-maternity",
       "type": "article-journal",
       "title": "The Incidence of Mandated Maternity Benefits",
@@ -10844,46 +10490,6 @@
       "title-short": "Loi n° 64-59 du 31 décembre 1964"
     },
     {
-      "id": "loi65-46-lf1966",
-      "type": "legislation",
-      "title": "Loi n° 65-46 du 31 décembre 1965, portant loi de finances pour la gestion 1966",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "66",
-      "page": "1719",
-      "issued": {
-        "date-parts": [
-          [
-            1965,
-            12,
-            31
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1965/1965F/Jo06665.pdf",
-      "note": "citation-key: loi65-46-lf1966\nJORT n° 66 (loi du 31 décembre 1965), édition française. Art. 25 (p. 1719) : plafond de la garantie de l'État fixé à 16 MD pour la gestion 1966. Lu à l'image dans le fascicule du corpus local le 23 octobre 2026 (docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md). Métadonnées de jort_cache.db (recid 117327). La page citée est celle de l'article, non l'étendue de la loi.",
-      "title-short": "Loi n° 65-46 du 31 décembre 1965"
-    },
-    {
-      "id": "loi67-57-lf1968",
-      "type": "legislation",
-      "title": "Loi n° 67-57 du 30 décembre 1967, portant loi de finances pour la gestion 1968",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "55",
-      "page": "1651",
-      "issued": {
-        "date-parts": [
-          [
-            1967,
-            12,
-            30
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1967/1967F/Jo05567.pdf",
-      "note": "citation-key: loi67-57-lf1968\nJORT n° 55 (loi du 30 décembre 1967), édition française. Art. 23 (p. 1651) : plafond de la garantie de l'État fixé à 25 MD pour la gestion 1968. Lu dans le fascicule du corpus local le 23 octobre 2026 (reconnaissance de caractères, page contrôlée sur l'en-tête ou le pied de page) (docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md). Métadonnées de jort_cache.db (recid 117129). La page citée est celle de l'article, non l'étendue de la loi.",
-      "title-short": "Loi n° 67-57 du 30 décembre 1967"
-    },
-    {
       "id": "loi71-59-lf1972",
       "type": "legislation",
       "title": "Loi n° 71-59 du 29 décembre 1971, portant loi de finances pour la gestion 1972",
@@ -10942,46 +10548,6 @@
       "URL": "https://www.pist.tn/jort/1974/1974F/Jo05174.pdf",
       "note": "citation-key: loi74-75-lfc1974\nJORT n° 51 (loi du 3 août 1974), édition française. Art. 8 (p. 1747) : plafond de la garantie de l'État porté de 25 MD à 50 MD. Lu dans le fascicule du corpus local le 23 octobre 2026 (reconnaissance de caractères, page contrôlée sur l'en-tête ou le pied de page) (docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md). Métadonnées de jort_cache.db (recid 116324). La page citée est celle de l'article, non l'étendue de la loi.",
       "title-short": "Loi n° 74-75 du 3 août 1974"
-    },
-    {
-      "id": "loi75-83-lf1976",
-      "type": "legislation",
-      "title": "Loi n° 75-83 du 30 décembre 1975, portant loi de finances pour la gestion 1976",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "87",
-      "page": "2853",
-      "issued": {
-        "date-parts": [
-          [
-            1975,
-            12,
-            30
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1975/1975F/Jo08775.pdf",
-      "note": "citation-key: loi75-83-lf1976\nJORT n° 87 (loi du 30 décembre 1975), édition française. Art. 16 (p. 2853) : plafond de la garantie de l'État fixé à 50 MD pour la gestion 1976. Lu dans le fascicule du corpus local le 23 octobre 2026 (reconnaissance de caractères, page contrôlée sur l'en-tête ou le pied de page) (docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md). Métadonnées de jort_cache.db (recid 116061). La page citée est celle de l'article, non l'étendue de la loi.",
-      "title-short": "Loi n° 75-83 du 30 décembre 1975"
-    },
-    {
-      "id": "loi77-81-lf1978",
-      "type": "legislation",
-      "title": "Loi n° 77-81 du 31 décembre 1977, portant loi de finances pour la gestion 1978",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "86",
-      "page": "3601",
-      "issued": {
-        "date-parts": [
-          [
-            1977,
-            12,
-            31
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1977/1977F/Jo08677.pdf",
-      "note": "citation-key: loi77-81-lf1978\nJORT n° 86 (loi du 31 décembre 1977), édition française. Art. 18 (p. 3601) : plafond de la garantie de l'État fixé à 200 MD pour la gestion 1978. Lu dans le fascicule du corpus local le 23 octobre 2026 (reconnaissance de caractères, page contrôlée sur l'en-tête ou le pied de page) (docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md). Métadonnées de jort_cache.db (recid 115715). La page citée est celle de l'article, non l'étendue de la loi.",
-      "title-short": "Loi n° 77-81 du 31 décembre 1977"
     },
     {
       "id": "loi78-59-lf1979",
@@ -11064,13 +10630,133 @@
       "note": "citation-key: loi66-79-lf1967\nJORT n° 55 du 27-30 décembre 1966. Art. 16 (p. 1788) : la taxe de formation professionnelle est perçue au profit du budget de l'État ; art. 17 : suppression au 1er janvier 1967 de comptes et fonds spéciaux, dont le « Fonds de formation professionnelle ». Lu à l'image. Art. 21 (p. 1788) : plafond de la garantie de l'État fixé à 20 MD pour la gestion 1967. Lu dans le fascicule du corpus local le 23 octobre 2026 (reconnaissance de caractères, page contrôlée sur le pied de page) (docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md). Promue du volume « Les cotisations sociales » au fonds commun le 23 octobre 2026."
     },
     {
-      "id": "lf-1987",
+      "id": "loi65-46-lf1966",
+      "type": "legislation",
+      "title": "Loi n° 65-46 du 31 décembre 1965, portant loi de finances pour la gestion 1966",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "66",
+      "page": "1716-1717",
+      "issued": {
+        "date-parts": [
+          [
+            1965,
+            12,
+            31
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1965/1965F/Jo06665.pdf",
+      "note": "citation-key: loi65-46-lf1966\nissue: 66\nJORT n° 66 (loi du 31 décembre 1965), édition française. Art. 25 (p. 1719) : plafond de la garantie de l'État fixé à 16 MD pour la gestion 1966. Lu à l'image dans le fascicule du corpus local le 23 octobre 2026 (docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md). Métadonnées de jort_cache.db (recid 117327).\nClé lf-1966 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi65-46-lf1966 : 1719 ; lf-1966 : 1716-1717. Champ « page » : plus petite page relevée.\nJORT n° 66 du 31 décembre 1965, tome 108 ; la loi commence page 1715. Article 10 : abroge et remplace les articles 2 et 8 du décret du 31 mars 1932 ; tarif applicable « au titre de l'année 1966 (revenus de l'année 1965) et des années postérieures », fixé « compte-tenu du décime prévu par la loi de Finances n° 64-59 du 31 décembre 1964 » ; exemption des revenus nets imposables ne dépassant pas 100 dinars ; le texte publie le seul taux de chaque tranche et scinde en deux tranches au même taux de 88 % les revenus au-delà de 9 800 dinars ; plafond de la cotisation effective : 45 %. Rectificatif au JORT n° 1 du 4 janvier 1966, p. 2 (recid 117310) : il porte sur les articles 11 et 22 et le tableau C, non sur l'article 10. Métadonnées vérifiées dans jort_cache.db (recid 117314) ; article lu au fascicule (corpus local, océrisé le 23/09/2026). URL pist.tn contrôlées le 23/09/2026 (curl -k, HTTP 206, application/pdf). Édition arabe : https://www.pist.tn/jort/1965/1965A/Ja06665.pdf",
+      "title-short": "Loi n° 65-46 du 31 décembre 1965",
+      "volume": "108"
+    },
+    {
+      "id": "loi67-57-lf1968",
+      "type": "legislation",
+      "title": "Loi n° 67-57 du 30 décembre 1967, portant loi de finances pour la gestion 1968",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "55",
+      "page": "1649",
+      "issued": {
+        "date-parts": [
+          [
+            1967,
+            12,
+            30
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1967/1967F/Jo05567.pdf",
+      "note": "citation-key: loi67-57-lf1968\nJORT n° 55 (loi du 30 décembre 1967), édition française. Art. 23 (p. 1651) : plafond de la garantie de l'État fixé à 25 MD pour la gestion 1968. Lu dans le fascicule du corpus local le 23 octobre 2026 (reconnaissance de caractères, page contrôlée sur l'en-tête ou le pied de page) (docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md). Métadonnées de jort_cache.db (recid 117129).\nClé lf-1968 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi67-57-lf1968 : 1651 ; lf-1968 : 1649. Champ « page » : plus petite page relevée.\nJORT n° 55 des 29-30 décembre 1967, tome 110 ; articles 13 et 14 à la p. 1649 (la loi commence p. 1648). Numéro, date, fascicule, tome et pages repris de jort_cache.db (recid 117121 à 117126, 20/10/2026) ; articles lus à l'image, voir docs/notes/fiscalite-epargne-capital.md, § 14, D1. URL pist.tn contrôlées le 20/10/2026 (HTTP 206, application/pdf). Intitulé arabe non établi (la base ne porte que l'URL de l'édition arabe). Édition arabe : https://www.pist.tn/jort/1967/1967A/Ja05567.pdf",
+      "title-short": "Loi n° 67-57 du 30 décembre 1967",
+      "volume": "110"
+    },
+    {
+      "id": "lf-1977",
+      "type": "legislation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "note": "citation-key: lf-1977\n\nissue: 83\nJORT n° 83 du 31 décembre 1976. Articles 27 et 28, page 3166 : « Institution d'un impôt sur les plus-values immobilières » (rubrique de la loi ; le texte n'énonce aucun objectif). Lu à l'image.\nClé loi-76-115-lf-1977 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — lf-1977 : aucune ; loi-76-115-lf-1977 : 3163. Champ « page » : plus petite page relevée.\nJORT n° 83, p. 3163. Art. 15 lu (p. 3164). Notice jort_cache.db (recid 115840). Le champ page donne le début du texte selon l'index. Note documentaire : docs/notes/education-aides-scolaires-2026-10-17.md, § 1.5.",
+      "title": "Loi n° 76-115 du 31 décembre 1976, portant loi de finances pour la gestion 1977",
+      "URL": "https://www.pist.tn/jort/1976/1976F/Jo08376.pdf",
+      "issued": {
+        "date-parts": [
+          [
+            1976,
+            12,
+            31
+          ]
+        ]
+      },
+      "issue": "83",
+      "title-short": "Loi n° 76-115 du 31 décembre 1976",
+      "page": "3163"
+    },
+    {
+      "id": "loi77-81-lf1978",
+      "type": "legislation",
+      "title": "Loi n° 77-81 du 31 décembre 1977, portant loi de finances pour la gestion 1978",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "86",
+      "page": "3601",
+      "issued": {
+        "date-parts": [
+          [
+            1977,
+            12,
+            31
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1977/1977F/Jo08677.pdf",
+      "note": "citation-key: loi77-81-lf1978\nJORT n° 86 (loi du 31 décembre 1977), édition française. Art. 18 (p. 3601) : plafond de la garantie de l'État fixé à 200 MD pour la gestion 1978. Lu dans le fascicule du corpus local le 23 octobre 2026 (reconnaissance de caractères, page contrôlée sur l'en-tête ou le pied de page) (docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md). Métadonnées de jort_cache.db (recid 115715).\nClé lf-1978 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi77-81-lf1978 : 3601 ; lf-1978 : 3603. Champ « page » : plus petite page relevée.\nJORT n° 86 du 30 décembre 1977, p. 3603. Art. 37 et 38 (p. 3603) : la caisse spéciale de compensation des transports routiers finance la création et le fonctionnement des centres de visite technique et reçoit le droit de visite. Lecture par reconnaissance de caractères, non relue à l'image. Source : docs/notes/compensation-transport-2026-10-11.md.",
+      "title-short": "Loi n° 77-81 du 31 décembre 1977"
+    },
+    {
+      "id": "loi84-84-lf1985",
+      "type": "legislation",
+      "title": "Loi n° 84-84 du 31 décembre 1984, portant loi de finances pour l'année 1985",
+      "title-short": "Loi n° 84-84 du 31 décembre 1984 (loi de finances pour 1985)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "79",
+      "page": "2960",
+      "issued": {
+        "date-parts": [
+          [
+            1984,
+            12,
+            31
+          ]
+        ]
+      },
+      "note": "citation-key: loi84-84-lf1985\nJORT n° 79 des 28-31 décembre 1984 ; art. 63, FR p. 2960 ; page AR non relevée.\nClé lf-1985 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi84-84-lf1985 : 2960 ; lf-1985 : 3003. Champ « page » : plus petite page relevée.\nJORT n° 79 des 28-31 décembre 1984, tome 127. Tableau « F », ligne 34 (p. 3003), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, recettes 6 000 000 D, dépenses 6 000 000 D. Date de signature d'après jort_cache.db ; la loi commence p. 2950 d'après la même notice. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).",
+      "URL": "https://www.pist.tn/jort/1984/1984F/Jo07984.pdf",
+      "volume": "127"
+    },
+    {
+      "id": "loi85-109-lf1986",
+      "type": "legislation",
+      "title": "Loi n° 85-109 du 31 décembre 1985, portant loi de finances pour l'année 1986",
+      "title-short": "Loi n° 85-109 du 31 décembre 1985 (loi de finances pour 1986)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "91",
+      "page": "1730-1773",
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            12,
+            31
+          ]
+        ]
+      },
+      "note": "citation-key: loi85-109-lf1986\nissue: 91\nJORT n° 91 du 31 décembre 1985 ; art. 68 (« Modification des taux de répartition du fonds commun »), FR p. 1740, lu à l'image ; page AR non relevée.\nClé lf-1986 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi85-109-lf1986 : 1740 ; lf-1986 : 1730-1773. Champ « page » : plus petite page relevée.\nJORT n° 91 du 31 décembre 1985, tome 128. Tableau « F », ligne 34 (p. 1771), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, recettes 8 000 000 D, dépenses 8 000 000 D. Date de signature d'après jort_cache.db ; la loi commence p. 1730 d'après la même notice. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).\n\nJORT n° 91 du 31 décembre 1985, tome 128. Barème de la contribution personnelle d'État : article 8, page 1731. URL pist.tn vérifiée (HTTP 200 ; certificat TLS expiré, utiliser curl -k). Édition arabe : https://www.pist.tn/jort/1985/1985A/Ja09185.pdf\n\nPages relevées avant la réunion des copies — notice antérieure : 1771 ; volume fiscalite : 1730. Champ « page » : début du texte d'après l'index du Journal officiel ; non relu au fascicule à cette occasion.\nArt. 56 (FR p. 1739 ; AR p. 1749, lu à l'image le 14 octobre 2026) : modifie l'alinéa 3 de l'article 105 de la loi n° 82-91 (LF 1983) : 300 millimes par consultation en dispensaire, 500 millimes dans les hôpitaux de circonscription, 1 dinar dans les hôpitaux régionaux et universitaires, centres et instituts spécialisés, 5 dinars par hospitalisation de médecine générale, de maternité et de spécialités médicales, 10 dinars de chirurgie ; exécutoire pour la gestion 1986. Loi : FR pp. 1730-1773 (la loi n° 85-110 commence p. 1774) ; AR pp. 1740-1784 (n° 110 : p. 1785).",
+      "URL": "https://www.pist.tn/jort/1985/1985F/Jo09185.pdf",
+      "volume": "128"
+    },
+    {
+      "id": "loi86-106-lf1987",
       "type": "legislation",
       "title": "Loi n° 86-106 du 31 décembre 1986, portant loi de finances pour la gestion 1987",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "78",
-      "volume": "129",
-      "page": "1623-1624, 1677",
       "issued": {
         "date-parts": [
           [
@@ -11080,18 +10766,22 @@
           ]
         ]
       },
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "78",
+      "page": "1610",
       "URL": "https://www.pist.tn/jort/1986/1986F/Jo07886.pdf",
+      "note": "citation-key: loi86-106-lf1987\n\nJORT n° 78 des 30-31 décembre 1986. Art. 64 (art. 22 bis de la loi n° 85-72, publication des comptes), p. 1620 ; art. 75 (organisation administrative et financière des EPIC modifiable par décret), 76 (prêts des caisses à l'office du logement du personnel de l'intérieur), 77 (art. 6 de la loi n° 86-86), p. 1621. Lu à l'image.\nContribution au FOPROLOS : art. 49 (p. 1618), assiette étendue à l'indemnité complémentaire provisoire, à la majoration du SMIG de 1982 et à l'indemnité de transport ; lu à l'image le 5 octobre 2026.\n\nJORT n° 78 des 30-31 décembre 1986 ; art. 44 (p. 1618), 91, 92 et 94 (p. 1623), lus à l'image ; pages AR non relevées.\n\nPages relevées avant la réunion des copies — notice antérieure : 1620-1621 ; volume finances_locales : 1618-1623. Champ « page » : début du texte d'après l'index du Journal officiel ; non relu au fascicule à cette occasion.\nClé lf-1987 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi86-106-lf1987 : 1610 ; lf-1987 : 1623-1624, 1677. Champ « page » : plus petite page relevée.\nJORT n° 78 des 30-31 décembre 1986, tome 129. Lus à l'image le 12 octobre 2026 : art. 91 (p. 1623, suppression de dix-huit fonds spéciaux du Trésor, dont le fonds spécial de la sécurité routière ; la caisse de compensation et de soutien des transports routiers n'y est pas) ; art. 92 (p. 1623, rubrique « Intégration au budget de l'État des recettes fiscales et para-fiscales revenant aux fonds spéciaux du Trésor » : les recettes affectées à douze fonds, dont cette caisse et la Caisse générale de compensation, reviennent au budget général) ; art. 102 (p. 1624) ; tableau « L », ligne 21 (p. 1677) : subvention du budget 8 000 000 D, recettes propres 4 000 000 D, total 12 000 000 D. Date de signature lue à l'image (p. 1624). La loi commence p. 1610 d'après jort_cache.db. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).",
       "title-short": "Loi n° 86-106 du 31 décembre 1986",
-      "note": "citation-key: lf-1987\nJORT n° 78 des 30-31 décembre 1986, tome 129. Lus à l'image le 12 octobre 2026 : art. 91 (p. 1623, suppression de dix-huit fonds spéciaux du Trésor, dont le fonds spécial de la sécurité routière ; la caisse de compensation et de soutien des transports routiers n'y est pas) ; art. 92 (p. 1623, rubrique « Intégration au budget de l'État des recettes fiscales et para-fiscales revenant aux fonds spéciaux du Trésor » : les recettes affectées à douze fonds, dont cette caisse et la Caisse générale de compensation, reviennent au budget général) ; art. 102 (p. 1624) ; tableau « L », ligne 21 (p. 1677) : subvention du budget 8 000 000 D, recettes propres 4 000 000 D, total 12 000 000 D. Date de signature lue à l'image (p. 1624). La loi commence p. 1610 d'après jort_cache.db. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local)."
+      "volume": "129"
     },
     {
-      "id": "lf-1988",
+      "id": "loi-87-83-lf-1988",
       "type": "legislation",
-      "title": "Loi n° 87-83 du 31 décembre 1987, portant loi de finances pour la gestion 1988",
       "container-title": "Journal officiel de la République tunisienne",
-      "issue": "91",
-      "volume": "130",
-      "page": "1694",
+      "note": "citation-key: loi-87-83-lf-1988\nissue: 91\nauthority: République tunisienne\nevent-date: 1987-12-31\nURL, fascicule et pagination vérifiés sur l'édition française du fascicule (téléchargement pist.tn du 8 septembre 2026). Provisoire : à rapatrier dans Zotero.\nJORT n° 91 du 31 décembre 1987. Art. 66 (contributions des organismes de sécurité sociale aux budgets des hôpitaux publics portées de 3 à 5 MD) et 67 (2,5 MD au budget général pour le programme des familles nécessiteuses), p. 1634 ; tableau A, lignes 62-09 (CNSS, 15 MD), 62-10 (CNRPS, 1 MD), 62-13 (2,5 MD ; « 0,5 MD (LF 1975) » imprimé pour la majoration de 0,5 point), p. 1640. Lu à l'image.\nFusion du 4 octobre 2026 : la clé loi87-83-lf1988, doublon de celle-ci, est retirée ; toutes ses citations passent ici.\nArt. 76 (p. 1635) : prélèvement sur le fonds de promotion du logement pour les salariés au profit du programme national de résorption des logements rudimentaires. Lu à l'image (docs/notes/cotisations-prelevements-salaires.md).\nClé lf-1988 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi-87-83-lf-1988 : 1633-1634, 1640 ; lf-1988 : 1694. Champ « page » : plus petite page relevée.\nJORT n° 91 des 29-31 décembre 1987, tome 130. Tableau « L » (p. 1694), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, subvention du budget 22 500 000 D, recettes propres néant. Date de signature d'après jort_cache.db ; la loi commence p. 1628 d'après la même notice. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).",
+      "page": "1633-1634, 1640",
+      "title": "Loi n° 87-83 du 31 décembre 1987, portant loi de finances pour la gestion 1988",
+      "URL": "https://www.pist.tn/jort/1987/1987F/Jo09187.pdf",
       "issued": {
         "date-parts": [
           [
@@ -11101,9 +10791,236 @@
           ]
         ]
       },
-      "URL": "https://www.pist.tn/jort/1987/1987F/Jo09187.pdf",
-      "title-short": "Loi n° 87-83 du 31 décembre 1987",
-      "note": "citation-key: lf-1988\nJORT n° 91 des 29-31 décembre 1987, tome 130. Tableau « L » (p. 1694), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, subvention du budget 22 500 000 D, recettes propres néant. Date de signature d'après jort_cache.db ; la loi commence p. 1628 d'après la même notice. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local)."
+      "issue": "91",
+      "authority": "République tunisienne",
+      "event-date": {
+        "date-parts": [
+          [
+            1987,
+            12,
+            31
+          ]
+        ]
+      },
+      "title-short": "Loi n° 87-83 du 31 décembre 1987",
+      "volume": "130"
+    },
+    {
+      "id": "loi88-145-lf1989",
+      "type": "legislation",
+      "title": "Loi n° 88-145 du 29 décembre 1988, portant loi de finances pour la gestion 1989",
+      "title-short": "Loi n° 88-145 du 29 décembre 1988 (loi de finances pour 1989)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "87",
+      "page": "1793-1805",
+      "issued": {
+        "date-parts": [
+          [
+            1988,
+            12,
+            29
+          ]
+        ]
+      },
+      "note": "citation-key: loi88-145-lf1989\nJORT n° 87 des 30-31 décembre 1988 ; art. 100 à 103, FR p. 1803 ; page AR non relevée.\nClé lf-1989 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi88-145-lf1989 : 1803 ; lf-1989 : 1870. Champ « page » : plus petite page relevée.\nJORT n° 87 du 31 décembre 1988, tome 131. Tableau « L » (p. 1870), valeurs lues à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, subvention du budget 32 500 000 D, recettes propres néant. Numéro de page et date du fascicule non lus à l'image (page lue par océrisation, date d'après jort_cache.db) : à confirmer. Date de signature d'après jort_cache.db ; la loi commence p. 1793 d'après la même notice. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).\nClé loi-88-145-lf-1989 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi88-145-lf1989 : 1803 ; loi-88-145-lf-1989 : 1793-1805. Champ « page » : plus petite page relevée.\nPubliée les 30-31 décembre 1988. Art. 27 (p. 1795-1796) : suppression du droit de consommation sur une longue liste de positions tarifaires. Art. 86 (p. 1801) : habilitation à fixer par décret les taux applicables aux produits 22-03 et 22-05 à 22-09 — fondement des décrets 91-551 et 97-1368. Les deux articles lus à l'image. Édition arabe : https://www.pist.tn/jort/1988/1988A/Ja08788.pdf. URL FR et AR vérifiées (HTTP 200, 16 septembre 2026).\nTFP : art. 29-30 (p. 1797), taxe liquidée mensuellement sur les salaires et rétributions, 1 % pour les industries manufacturières et 2 % pour les autres secteurs, à compter des salaires de janvier 1989. FOPROLOS : art. 35-38 (p. 1797), contribution ramenée à 1 % des salaires et rétributions, recouvrée par la recette des finances ; l'art. 38 met fin aux art. 2 à 4 de la loi n° 77-54. Édition arabe p. 1773-1774. Lus à l'image le 5 octobre 2026.",
+      "URL": "https://www.pist.tn/jort/1988/1988F/Jo08788.pdf",
+      "volume": "131"
+    },
+    {
+      "id": "loi-89-115-lf-1990",
+      "type": "legislation",
+      "title": "Loi n° 89-115 du 30 décembre 1989, portant loi de finances pour la gestion 1990",
+      "container-title": "Journal Officiel de la République Tunisienne",
+      "issue": "88",
+      "volume": "132",
+      "page": "2144-2155",
+      "issued": {
+        "date-parts": [
+          [
+            1989,
+            12,
+            30
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1989/1989F/Jo08889.pdf",
+      "note": "Publiée les 29-31 décembre 1989. Art. 29 (p. 2148-2149) : suppression du droit sur une liste de positions. Art. 34 (p. 2150) : facturation à l'identique, ajoutée à l'art. 5 de la loi n° 88-62. Art. 35 (p. 2150) : les taux des produits 27-09 à 27-11 sont fixés par décret — alinéa 2 de l'art. 1er de la loi n° 88-62, fondement des décrets 91-550 et 99-894. Art. 36 (p. 2150) : abrogation du renvoi (1) du tableau annexé (déduction de 50 % par les hôteliers). Tous lus à l'image ; le PDF local n'a pas de couche texte. Édition arabe : https://www.pist.tn/jort/1989/1989A/Ja08889.pdf. URL FR et AR vérifiées (HTTP 200, 16 septembre 2026).\nClé lf-1990 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi-89-115-lf-1990 : 2144-2155 ; lf-1990 : 2152-2239. Champ « page » : plus petite page relevée.\nJORT n° 88 des 29-31 décembre 1989, tome 132. Tableau « L » (p. 2239), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, subvention du budget 32 500 000 D, recettes propres néant. Date de signature d'après jort_cache.db (41 notices sur 44 ; trois portent le 31 décembre) ; la loi commence p. 2144 d'après la même notice. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).\n\nJORT n° 88 des 29-31 décembre 1989 ; art. 53 à 55 (FR p. 2152 ; le montant de l'art. 53 lu par océrisation seulement) et tableau « L » des fonds spéciaux du Trésor (FR p. 2239, lu à l'image) ; pages AR non relevées.\n\nPages relevées avant la réunion des copies — notice antérieure : 2239 ; volume finances_locales : 2152-2239. Champ « page » : plus petite page relevée par un volume (l'index du Journal officiel donne 2156-2239) ; non relu au fascicule à cette occasion.",
+      "title-short": "Loi n° 89-115 du 30 décembre 1989"
+    },
+    {
+      "id": "loi90-111-lf1991",
+      "type": "legislation",
+      "title": "Loi n° 90-111 du 31 décembre 1990, portant loi de finances pour la gestion 1991",
+      "title-short": "Loi n° 90-111 du 31 décembre 1990 (loi de finances pour 1991)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "86",
+      "page": "2049",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            12,
+            31
+          ]
+        ]
+      },
+      "note": "citation-key: loi90-111-lf1991\nauthority: République tunisienne\nevent-date: 1990-12-31\nissue: 86\nJORT n° 86 des 28-31 décembre 1990 ; art. 79 à 81, FR p. 2058-2059 (montant de l'art. 79 lu par océrisation seulement) ; pages AR non relevées.\nClé lf-1991 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi90-111-lf1991 : 2058-2059 ; lf-1991 : 2049. Champ « page » : plus petite page relevée.\nJORT n° 86 des 28-31 décembre 1990, tome 133 ; la loi commence page 2049. URL pist.tn vérifiée (HTTP 200). Édition arabe : https://www.pist.tn/jort/1990/1990A/Ja08690.pdf\nDROIT DE CONSOMMATION : art. 38 (p. 2052), « Suppression et réduction du droit de consommation dû sur certains produits », modifie la liste annexée à la loi n° 88-62 conformément au tableau « N » de la deuxième partie de la loi (tableaux annexes, p. 2062-2204, NON LUS : le détail des suppressions et réductions de 1991 reste inconnu). Art. 38 lu à l'image. Le champ « page » de cette entrée porte le début de la loi (2049) et n'est pas modifié.\n\nJORT n° 86 des 28-31 décembre 1990, tome 133. Tableau « K » (p. 2163), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, subvention du budget 33 000 000 D, recettes propres néant. Date de signature d'après jort_cache.db ; la loi commence p. 2049. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).\n\nPages relevées avant la réunion des copies — notice antérieure : 2049 ; volume compensation : 2163. Champ « page » : plus petite page relevée par un volume (l'index du Journal officiel donne 2062-2204) ; non relu au fascicule à cette occasion.\nClé loi-90-111-lf-1991 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi90-111-lf1991 : 2049 ; loi-90-111-lf-1991 : 2056. Champ « page » : plus petite page relevée.\nURL, fascicule et pagination vérifiés sur l'édition française du fascicule (téléchargement pist.tn du 8 septembre 2026). Provisoire : à rapatrier dans Zotero.",
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo08690.pdf",
+      "volume": "133",
+      "authority": "République tunisienne",
+      "event-date": {
+        "date-parts": [
+          [
+            1990,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "id": "loi91-98-lf1992",
+      "type": "legislation",
+      "title": "Loi n° 91-98 du 31 décembre 1991, portant loi de finances pour la gestion 1992",
+      "title-short": "Loi n° 91-98 du 31 décembre 1991 (loi de finances pour 1992)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "90",
+      "page": "2082",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            12,
+            31
+          ]
+        ]
+      },
+      "note": "citation-key: loi91-98-lf1992\nissue: 90\nJORT n° 90 du 31 décembre 1991 ; art. 80 et 81, FR p. 2091, lus par océrisation ; page AR non relevée.\nClé lf-1992 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi91-98-lf1992 : 2091 ; lf-1992 : 2082. Champ « page » : plus petite page relevée.\nJORT n° 90 du 31 décembre 1991, tome 134 ; la loi commence page 2082 (sommaire lu à l'image). Édition française établie sur pièce : la taille distante (content-length, curl -ksI, 16 septembre 2026) est égale à l'octet près au fascicule du corpus local, dont la première page porte « traduction française ». Un code 200 sur un chemin « …F/Jo… » ne suffit pas : pist.tn sert parfois l'édition arabe sous une adresse française.\nDROIT DE CONSOMMATION : le titre 4 de la loi, « dispositions relatives à la taxe sur la valeur ajoutée et au droit de consommation », occupe les pages 2085-2086 selon les notices de jort_cache.db. ARTICLE NON ÉTABLI SUR PIÈCE : la liste DGELF porte l'article 44, que le fascicule n'a pas permis de vérifier (aucune couche texte ; seule la page 1 a été relue à l'image). Date d'effet déduite (1er janvier 1992), clause non lue. Ni le contenu ni les taux de cet article ne doivent être cités d'après cette entrée. Édition arabe : https://www.pist.tn/jort/1991/1991A/Ja09091.pdf\n\nJORT n° 90 du 31 décembre 1991, tome 134. Tableau « K » (p. 2197), lu à l'image le 12 octobre 2026 : caisse de compensation et de soutien des transports routiers, subvention du budget 40 000 000 D, recettes propres néant. Date de signature d'après jort_cache.db ; la loi commence p. 2082. URL pist.tn contrôlée le 12 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).\n\nPages relevées avant la réunion des copies — notice antérieure : 2082 ; volume compensation : 2197. Champ « page » : plus petite page relevée par un volume (l'index du Journal officiel donne 2094-2263) ; non relu au fascicule à cette occasion.",
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo09091.pdf",
+      "volume": "134"
+    },
+    {
+      "id": "loi2001-123-lf2002",
+      "type": "legislation",
+      "title": "Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "104",
+      "page": "4251",
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            12,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf",
+      "note": "citation-key: loi2001-123-lf2002\nJORT n° 104 du 28 décembre 2001. Art. 85, p. 4260 (édition française) : échéancier pluriannuel — assuré social +1 point (0,50 au 1/7/2002, 0,25 au 1/7/2003, 0,25 au 1/7/2004) ; employeur +1,5 point en cinq marches de 2002 à 2006 ; modifie les art. 9 et 13 de la loi n° 85-12. C'est l'article qui porte les paliers 2003 et 2004 de la série CNRPS. Art. 86, p. 4260 : modifie l'art. 37 de la loi n° 85-12 — la péréquation est soumise aux art. 9, 10, 11 et 13 (l'art. 36 sort des renvois) ; la contribution du bénéficiaire au titre de la péréquation est due pendant toute la période de service de la pension et de ses accessoires, celle de l'employeur sur 36 mois. Date d'effet : art. 97, p. 4261, dispositions applicables à compter du 1er janvier 2002, sans dérogation pour les art. 85-86. Aucun autre article de la loi ne vise la loi n° 85-12 (pp. 4251-4261 dépouillées). Texte lu (couche texte à encodage décalé de -29 ; décodage vérifié contre la pagination du fascicule, puis relu à l'image).\nClé lf-2002 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi2001-123-lf2002 : 4260 ; lf-2002 : 4251. Champ « page » : plus petite page relevée.\nJORT n° 104 du 28 décembre 2001. Tableau des crédits de programmes de l'État, lu à l'image le 13 octobre 2026 : Fonds de promotion et de décentralisation industrielle chapitre de l'industrie 33 000 000 D (p. 4286) ; prise en charge par l'État de la contribution patronale au régime légal de la sécurité sociale chapitre des affaires sociales 9 000 000 D (p. 4301). La loi commence p. 4251 d'après jort_cache.db. URL pist.tn contrôlée le 13 octobre 2026 (200, application/pdf, taille égale au fichier du corpus local).",
+      "title-short": "Loi n° 2001-123 du 28 décembre 2001",
+      "volume": "144"
+    },
+    {
+      "id": "loi-2007-70-lf-2008",
+      "type": "legislation",
+      "title": "Loi n° 2007-70 du 27 décembre 2007, portant loi de finances pour l'année 2008",
+      "container-title": "Journal Officiel de la République Tunisienne",
+      "issue": "104",
+      "volume": "150",
+      "page": "4367",
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            12,
+            27
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2007/2007F/Jo1042007.pdf",
+      "note": "citation-key: loi-2007-70-lf-2008\n\nPubliée le 28 décembre 2007. Art. 58 : soumission au droit de consommation du gaz naturel destiné à l'utilisation comme carburant, et ajout de la STEG à la liste des assujettis (art. 2-5 de la loi n° 88-62). Pagination de notice (jort_cache.db, p. 4367 pour l'article relatif au droit de consommation) ; texte NON LU SUR PIÈCE. DATE D'EFFET DÉDUITE du droit commun des lois de finances (1er janvier 2008) : la clause d'application n'a pas été lue. Tome 150 selon la notice. Édition arabe : https://www.pist.tn/jort/2007/2007A/Ja1042007.pdf. URL FR et AR vérifiées (HTTP 200, 16 septembre 2026).\nDÉPENSES FISCALES : art. 12, p. 4358 (texte lu, note documentaire § 1.3) — dans les art. 5 à 12 de la loi n° 2006-80, « 1er janvier 2008 » devient « 1er janvier 2011 » (poursuite de l'exonération des revenus et bénéfices de l'exportation). Édition française.\n\nTFP : art. 40 (p. 4364), exonération de la CNSS, de la CNRPS et de la CNAM ; art. 64 : effet au 1er janvier 2008. Lu (couche texte) le 5 octobre 2026.\nClé lf-2008 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi-2007-70-lf-2008 : 4367 ; lf-2008 : aucune. Champ « page » : plus petite page relevée.\nJORT n° 104 du 28 décembre 2007. Art. 56, p. 4366 (taxe de circulation : harmonisation avec la taxe unique de compensation des transports routiers, exonérations) ; art. 31, p. 4361 (taxe pour la protection de l'environnement). Pages signalées dans la note documentaire, non relues ici.",
+      "title-short": "Loi n° 2007-70 du 27 décembre 2007"
+    },
+    {
+      "id": "loi2018-56-lf2019",
+      "type": "legislation",
+      "note": "citation-key: loi2018-56-lf2019\nDROIT DE CONSOMMATION (versement « droits de consommation », 16/09/2026) : JORT n° 104, p. 4548-4553 ; art. 62 p. 4548 (véhicules 8-9 places pour handicapés, tableau annexé à la loi n° 88-62), art. 69 p. 4550 (champ du droit pour les mélanges odoriférants Ex 33.02 ; suppression pour certains produits alimentaires), art. 80 p. 4553 (motocycles). Texte français lu dans PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_n_2018-56….pdf, pieds de page lus dans la couche texte ; LA PAGINATION EST CELLE DE L'ÉDITION FRANÇAISE — ne pas la « corriger » vers la pagination arabe. SANS URL CÔTÉ FRANÇAIS, ET C'EST VOULU : https://www.pist.tn/jort/2018/2018F/Jo1042018.pdf rend 404 (curl -k, en-tête serveur reçu, 16/09/2026) et jort_cache.db n'a pas de pdf_fr. Édition arabe, seule en ligne : https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf. RÉFÉRENCE COMMUNE : citée par les livres « Rémunérations publiques » et « Fiscalité » — d'où son rangement au fonds commun. La clé loi-2018-56-lf-2019, créée par erreur le 16/09/2026 dans le livre Fiscalité, a été SUPPRIMÉE au profit de celle-ci.\nDÉPENSES FISCALES (note documentaire § 1.3) : art. 37 (p. 4539, À CONTRÔLER) — abrogation des art. 67 à 69 du code de l'IRPP et de l'IS (régime de l'exportation) ; art. 41 § 1 (p. 4541, À CONTRÔLER) — les entreprises en activité au 31 décembre 2018 gardent l'avantage jusqu'au 31 décembre 2020. Pagination de l'ÉDITION FRANÇAISE.\nClé lf-2019 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi2018-56-lf2019 : 4548-4553 ; lf-2019 : aucune. Champ « page » : plus petite page relevée.\nJORT n° 104 du 28 décembre 2018. Lu à l'image dans l'ÉDITION ARABE, pagination arabe, le 13 octobre 2026 (édition française absente du corpus local et de pist.tn) : tableau « ث » des crédits de programmes — FOPRODI 37 000 000 D (p. 5511) ; aide aux promoteurs de projets touristiques 3 049 000 D (p. 5514) ; prise en charge de la contribution patronale 32 000 000 D (p. 5546) ; FONAPRA 15 000 000 D (p. 5562). Numéro et date de la loi repris de jort_cache.db, non relus au fascicule. Pas d'URL : seule l'édition arabe est servie par pist.tn (https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf, contrôlée le 13 octobre 2026).",
+      "title": "Loi n° 2018-56 du 27 décembre 2018, portant loi de finances pour l'année 2019",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            12,
+            27
+          ]
+        ]
+      },
+      "issue": "104",
+      "page": "4548-4553",
+      "title-short": "Loi n° 2018-56 du 27 décembre 2018",
+      "container-title": "Journal officiel de la République tunisienne"
+    },
+    {
+      "id": "dl2021-21-lf2022",
+      "type": "legislation",
+      "title": "Décret-loi n° 2021-21 du 28 décembre 2021, portant loi de finances pour l'année 2022",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            28
+          ]
+        ]
+      },
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "119",
+      "page": "3081-3082",
+      "URL": "https://www.pist.tn/jort/2021/2021F/Jo1192021.pdf",
+      "note": "citation-key: dl2021-21-lf2022\nissue: 119\nJORT n° 119 du 28 décembre 2021 (édition française ; l'intitulé jort_cache donne p. 3258 pour l'édition arabe). Art. 12 : compte spécial du Trésor « compte de diversification des sources de sécurité sociale » (p. 3081) ; art. 14 : programme de départ anticipé 2022-2024 (p. 3082). Couche texte lue.\nClé lf-2022 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — dl2021-21-lf2022 : 3081-3082 ; lf-2022 : 3086. Champ « page » : plus petite page relevée.\nJORT n° 119 du 28 décembre 2021, tome 164, ÉDITION FRANÇAISE (179 pages) ; le décret-loi commence page 3081. Article 24 (intérêts de l'épargne : « cinq mille dinars » → « dix mille dinars » et « trois mille dinars » → « six mille dinars », article 39 § II du code) en PAGE 3086. NC 1/2022 : effet sur les revenus réalisés à partir de l'année 2021. Fascicule téléchargé et ouvert le 7 septembre 2026 depuis www.pist.tn (certificat TLS expiré, curl -k) ; édition, numéro, date et pagination contrôlés sur pièce. Édition arabe : https://www.pist.tn/jort/2021/2021A/Ja1192021.pdf\nPages relevées pour la note documentaire sur les tableaux de la TVA (édition française) : art. 34 p. 3089, art. 39 p. 3090, art. 43 p. 3092, art. 50 p. 3096.",
+      "title-short": "Décret-loi n° 2021-21 du 28 décembre 2021",
+      "volume": "164"
+    },
+    {
+      "id": "loi75-83-lf1976",
+      "type": "legislation",
+      "title": "Loi n° 75-83 du 30 décembre 1975, portant loi de finances pour la gestion 1976",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "87",
+      "page": "2852-2857",
+      "issued": {
+        "date-parts": [
+          [
+            1975,
+            12,
+            30
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1975/1975F/Jo08775.pdf",
+      "note": "citation-key: loi75-83-lf1976\nJORT n° 87 (loi du 30 décembre 1975), édition française. Art. 16 (p. 2853) : plafond de la garantie de l'État fixé à 50 MD pour la gestion 1976. Lu dans le fascicule du corpus local le 23 octobre 2026 (reconnaissance de caractères, page contrôlée sur l'en-tête ou le pied de page) (docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md). Métadonnées de jort_cache.db (recid 116061).\nClé loi75-83 fondue ici le 23 octobre 2026 (même texte). Pages relevées avant la réunion des copies — loi75-83-lf1976 : 2853 ; loi75-83 : 2852-2857. Champ « page » : plus petite page relevée.\nJORT n° 87 des 30-31 décembre 1975, p. 2852-2854 — même fascicule que la loi n° 75-82 sur les allocations familiales. C'est cette loi de finances qui institue la Caisse nationale de retraite et de prévoyance sociale, fait attesté par l'article 2 de la loi n° 86-86, lu à l'image. Art. 28 lu à l'image (p. 2854) : la Caisse nationale de retraite et la Caisse de prévoyance sociale « sont transformées en un établissement public à caractère financier doté de la personnalité civile et de l'autonomie financière », dénommé CNRPS et rattaché au ministère des Finances ; art. 30 (organisation par décret), 31 (transfert des patrimoines), 32 (privilège du Trésor), 34 (dévolution à l'État en cas de dissolution). Art. 67 et 68 LUS À L'IMAGE le 6 octobre 2026 (édition française) : art. 67 (p. 2856, la suite p. 2857) — la Caisse spéciale de compensation des ciments, gérée par la Société des Ciments Portland de Bizerte, est supprimée ; son solde net au 31 décembre 1975 est versé à la Caisse générale de compensation, qui prend en charge à compter du 1er janvier 1976 les dépenses et les recettes afférentes ; art. 68 (p. 2857) — les opérations du compte de stabilisation des produits pétroliers finis sont prises en charge par la CGC à compter du 1er janvier 1976, solde net au 31 décembre 1975 versé à la CGC. L'art. 69 ne concerne pas la CGC (Fonds de reconversion du vignoble) : la note documentaire parlait à tort des art. 67-69. Signature « Fait au Palais de Carthage, le 30 décembre 1975 » p. 2857 : le champ page, qui s'arrêtait à 2854, est porté à 2852-2857 ; le tableau F annexé n'a pas été paginé.",
+      "title-short": "Loi n° 75-83 du 30 décembre 1975"
+    },
+    {
+      "id": "loi93-64",
+      "type": "legislation",
+      "title": "Loi n° 93-64 du 5 juillet 1993, relative à la publication des textes au Journal officiel de la République tunisienne et à leur exécution",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "50",
+      "page": "931",
+      "issued": {
+        "date-parts": [
+          [
+            1993,
+            7,
+            5
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1993/1993F/Jo05093.pdf",
+      "note": "citation-key: loi93-64\nJORT n° 50 du 6 juillet 1993, p. 931. Métadonnées jort_cache.db (recid 112971). Texte lu (OCR du fascicule local, p. 931). Art. 1er : lois, décrets-lois, décrets et arrêtés publiés au JORT en langue arabe, et dans une autre langue à titre d'information seulement. Art. 2 : « Les textes législatifs et réglementaires sont exécutoires cinq jours après le dépôt du journal officiel dans lequel ils sont insérés, au siège du gouvernorat de Tunis. Le jour du dépôt n'est pas pris en considération dans le décompte du délai. » Al. 3 : les textes peuvent prévoir une exécution immédiate ou un délai plus long. Art. 3 : abroge le décret du 27 janvier 1883 et les textes l'ayant complété ou modifié, notamment les décrets du 8 septembre 1955 et du 13 septembre 1956.\nClé loi-93-64 fondue ici le 23 octobre 2026 (même texte).\nJORT n° 50 du 6 juillet 1993, tome 136, page 931. Fixe l'exécutoire des textes (règle du dépôt du Journal officiel au siège du gouvernorat de Tunis). Pagination de l'édition française.",
+      "title-short": "Loi n° 93-64 du 5 juillet 1993",
+      "volume": "136"
     },
     {
       "id": "bct-ra-1975",

@@ -26,6 +26,33 @@ Sources : § 7 de `docs/notes/fiscalite-droits-douane-documentation.md`, § 10 d
 - **Citations non résolues du glossaire engendré de la fiscalité** (entrée `zone-franche-economique`, chapitre marché du travail, hors droits de douane) : `loi92-81` et `loi2001-76` n'existent dans aucun `references.json` ; `loi2025-9` n'existe que dans `marche_travail` (à promouvoir au fonds commun). Base : 92-81 = JORT n° 52 de 1992 (rectificatif n° 76), 2001-76 = JORT n° 58 de 2001. Non versées ici (hors chapitre, glossaire en cours de modification).
 - **Décrets cités en commentaire du glossaire, sans clé** : n° 85-751, 92-720, 93-1233, 96-2474, 2000-2829 ; et `corden-1966` : ni le chapitre ni une entrée rendue ne les cite par `@clé` ; rien versé.
 
+## Fusion des clés en doublon (23/10/2026)
+
+Vingt textes portaient deux ou trois clés. Chaque clé supprimée est remplacée par la clé gardée dans les `.qmd` français, `precis/glossaire.yml`, les générateurs, les tableaux et CSV engendrés et le cache de séries ; la notice fondue garde les deux notes et, quand les pages diffèrent, la plus petite page dans le champ `page` (les autres dans la note). Dans `precis/ar/references.json`, chaque clé supprimée subsiste comme alias « TRANSITOIRE » tant que les `.qmd` arabes la citent ; à retirer après leur retraduction. À supprimer de Zotero : les clés de la colonne « supprimée ». Le dépôt `tunisia-data` porte encore les anciennes clés dans deux transcriptions (`sources/transcriptions/jort-lf-caisse-transports-routiers.csv`, `sources/transcriptions/jort-lf-credits-programmes-incitations.csv`, et le catalogue qui en dérive) : à aligner avant le prochain export du cache.
+
+| Clé gardée | Clés supprimées |
+|---|---|
+| `loi65-46-lf1966` | `lf-1966` |
+| `loi67-57-lf1968` | `lf-1968` |
+| `lf-1977` | `loi-76-115-lf-1977` |
+| `loi77-81-lf1978` | `lf-1978` |
+| `loi84-84-lf1985` | `lf-1985` |
+| `loi85-109-lf1986` | `lf-1986` |
+| `loi86-106-lf1987` | `lf-1987` |
+| `loi-87-83-lf-1988` | `lf-1988` |
+| `loi88-145-lf1989` | `lf-1989`, `loi-88-145-lf-1989` |
+| `loi-89-115-lf-1990` | `lf-1990` |
+| `loi90-111-lf1991` | `lf-1991`, `loi-90-111-lf-1991` |
+| `loi91-98-lf1992` | `lf-1992` |
+| `loi2001-123-lf2002` | `lf-2002` |
+| `loi-2007-70-lf-2008` | `lf-2008` |
+| `loi2018-56-lf2019` | `lf-2019` |
+| `dl2021-21-lf2022` | `lf-2022` |
+| `loi2020-45-lfr` | `lfc-2020` |
+| `loi75-83-lf1976` | `loi75-83` |
+| `loi93-64` | `loi-93-64` |
+| `decret2024-182` | `decret-2024-182-incitations-financieres` |
+
 ## Versement du 23/10/2026 (éducation, dépense des communes, bibliographe, temps 1)
 
 Source : `docs/notes/education-collectivites-2026-10-23.md`, § 6. Trois notices ajoutées à `precis/fr/education/references.json` (livre sans arabe ; rien sous `precis/ar/`) :

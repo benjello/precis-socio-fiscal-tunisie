@@ -42,7 +42,8 @@ Le coût d'une rupture pour l'employeur tient à quelques grandeurs, que le @tbl
 #| output: asis
 table("mt_rc_parametres",
       "Ce que coûte la fin d'un contrat permanent, 1966-2025",
-      "tbl-mt-rc-parametres")
+      "tbl-mt-rc-parametres",
+      '.sm .libelle-long tbl-colwidths="[20,17,17,17,14,15]"')
 ```
 
 <!-- TODO (documentaliste) : la colonne de 1973 (convention cadre, qui renvoie aux conventions de branche pour le préavis et la gratification), les cases « appréciés par le juge » et « ni cas ni durée » et la période d'essai de 1966 à 1996 sont écrites dans scripts/generate_marche_travail_tables.py : ce sont des renvois ou des absences de règle, non des grandeurs. Seules attendent un paramètre la période d'essai de 3 mois renouvelable une fois (convention cadre, art. 10) et la case « quinze jours avant l'expiration » de l'état du droit (art. 6-3) : voir docs/notes/backlog-modele.md. -->

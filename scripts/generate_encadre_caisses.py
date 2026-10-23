@@ -41,7 +41,7 @@ COMMUN = (
     "gère les régimes du secteur privé, salariés et non-salariés. La "
     "[Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) (CNRPS) est formée par "
     "la loi de finances pour 1976, à partir de la Caisse nationale de retraites et de la "
-    "Caisse de prévoyance sociale, et couvre les agents publics [@loi75-83, art. 28]. La "
+    "Caisse de prévoyance sociale, et couvre les agents publics [@loi75-83-lf1976, art. 28]. La "
     "[Caisse nationale d'assurance maladie](#g-cnam) "
     "(CNAM), créée en 2004, gère l'assurance maladie des deux secteurs et la réparation des "
     "accidents du travail [@loi2004-71, art. 7 et 8]. De 1976 à 1994, une quatrième caisse, "
