@@ -1858,7 +1858,32 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 7. Droits de douane.
 8. Dépenses fiscales et régimes d'incitation (code d'incitation aux investissements, loi de 2016, entreprises totalement exportatrices, développement régional) — **chapitre créé le 6 octobre 2026, scindé le 11 octobre 2026** (`fiscalite/_regimes_incitation.qmd` et `fiscalite/_depenses_fiscales.qmd`) ; lacunes dans la section « Fiscalité » ci-dessus.
 9. Fiscalité de l'épargne et du capital : retenues libératoires sur les revenus de capitaux mobiliers, plus-values mobilières, épargne exonérée. **Rédigée le 20 octobre 2026** comme section `#sec-irpp-epargne` du chapitre de l'IRPP (`fiscalite/_impot_revenu.qmd`), par décision du propriétaire ; lacunes dans la section « Fiscalité » ci-dessus.
-10. Taxes affectées et contributions exceptionnelles (contribution conjoncturelle, contribution au budget de l'État de 2014, FODEC, vignette).
+10. Taxes affectées et contributions exceptionnelles (contribution conjoncturelle, contribution au budget de l'État de 2014, FODEC, vignette). **Rédigée le 23 octobre 2026** en deux chapitres de la fiscalité, `fiscalite/_contributions_conjoncturelles.qmd` et `fiscalite/_taxes_fonds_speciaux.qmd` ; la vignette n'est pas une taxe affectée et reste à loger dans le chapitre « timbre et enregistrement » (lacunes ci-dessous).
+
+**Lacunes des chapitres « contributions conjoncturelles » et « taxes au profit des fonds spéciaux » (23 octobre 2026)**
+
+Notes : `docs/notes/fiscalite-taxes-affectees.md` (documentation), `plan-fiscalite-taxes-affectees.md`, `eco-taxes-affectees.md`, `eco-contributions-conjoncturelles.md`.
+
+- Contributions conjoncturelles :
+  - encaissements de 2017, 2018-2019, 2024-2025 et 2025 : à obtenir (lois de règlement ; rapports d'exécution postérieurs à 2018 absents de `tunisia-data`) ; ceux de 2014 (186 MD) et 2015 (75 MD) sont lus ;
+  - tableaux « A » des LF 2016, 2018 et 2020-2026, rubrique « contribution conjoncturelle » : à relever (éditions arabes à lire à l'image) ;
+  - contexte des LFC 1991, LFC 2014, LF 2017, LF 2018 et LF 2025 (exposés des motifs, débats) : aucune source lue ;
+  - antécédents 1959-1988 (défense nationale, reconductions de la contribution de solidarité, loi n° 85-89, inondations 1983, banques de dépôt 1988) : fascicules au corpus, OCR à demander ;
+  - arrêté fixant les cinq mois de 1991 de la contribution des salariés (LFC 1991, art. 3) : à identifier ; décret n° 2012-472 (contribution volontaire de 2012) : intitulé seul, JORT n° 44 de 2012, p. 1334, au corpus ;
+  - 2026 : recherche `r-contribution-conjoncturelle-2026` (aucune reconduction trouvée dans la LF 2026) ; fascicules 2026 inconnus de `jort_cache` à parcourir ;
+  - population couverte par chaque épisode : aucune source ; montants en dinars constants : à faire ;
+  - livre des caisses : la contribution de 1 % de 2019 au profit des caisses (LF 2019, art. 87-88, AR p. 5468, lisible) n'a pas de domicile ; abrogation (LF 2020, art. 39 § 5) à relire.
+- Taxes au profit des fonds spéciaux :
+  - rubriques des LF 1996, 2000 et 2003 : à lire à l'image ; LF 2003, art. 58-59 (taxe pour la protection de l'environnement) : chiffres à relire à l'image, extensions 2005-2018 et LF 2007, art. 60 (tourisme) à lire ;
+  - décret n° 2000-634 (liste des produits du FODEC, lisible au corpus), décrets n° 99-2741, 2008-4111 ; décret n° 2012-435 (édition arabe seule, à l'image) ; décret n° 95-2495 (lisible, pp. 2363-2364) ;
+  - textes de 1956, 1958 et 1984 que la taxe de 1995 remplace : OCR à demander ;
+  - contexte de la LF 1995 (mise à niveau, accord d'association) : sources de l'époque à lire ;
+  - tableaux « B » 2021-2026 ventilés par fonds : à lire à l'image ; réalisations par fonds : lois de règlement, à obtenir ;
+  - série « Fonds spéciaux de Trésor » : colonne à créer dans `tunisia-data` (build `irpp`), puis figure par `figtools.series()` ; le tableau actuel est écrit à la main (TODO) ;
+  - population couverte : aucune source ; dinars constants et part du PIB (base dite, annexe PIB) : à faire.
+- Vignette (taxe de circulation) : recette du budget général ; chapitre « timbre et enregistrement » à lui donner une section (worktree `precis-wt-fiscalite-timbre-enregistrement`) ; décret du 31 mars 1955, art. 19-21, hors corpus (JOT 1955, à obtenir) ; arrêté du 27 mai 1955 ; tarifs 1964-1994 : OCR ; tarif des voitures de 2000 à 2021 non établi (LF 2016, art. 90 : lignes imprimées en tirets) ; LF 2024 (abandon des taxes 2020-2022 : numéro d'article à relever) ; réalisations : à obtenir.
+- Fonds sans texte de financement lu (liste du tableau « B » de la LFC 2014, 32 comptes) : fonds de garantie des victimes des accidents de la circulation, de prévention des accidents, de la protection civile, FNAH, promotion des exportations, communications, huile d'olive conditionnée, qualité des dattes, repos biologique, création littéraire, sports et jeunesse, solidarité sociale, autoroutes, comptes des collectivités locales.
+- Clés doublons à fondre : `lf-2019` / `loi2018-56-lf2019` ; `lf-2022` / `dl2021-21-lf2022`. Rapatriement Zotero des clés versées (fiscalité, 23/10/2026) : sur feu vert.
 
 **Social et secteur public**
 

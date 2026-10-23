@@ -4036,3 +4036,41 @@
     couverture: 'Passe du 23 octobre 2026 après élargissement : titres français de jort_cache du 1993-01-25 au 2026-10-02 (5 arrêtés, aucun après 2008) ; miroir iort, termes arabes tirés du titre arabe de l''arrêté de 1996 lu à l''image (المرضى الخاضعين لدفع مقابل) : 0 candidat ; plein texte du corpus local, terme « arrêté du 19 décembre 1996 » : 4 occurrences, toutes dans les fascicules de 1998 (n° 33) et de 2008 (n° 56) déjà lus. Lacunes : 5337 notices de jort_cache n''ont qu''un intitulé arabe ; fascicules sans couche texte exploitable ou absents du corpus (liste dans la sortie de la commande elargir, dont 1993 ar) ; fascicules dont la couche texte est décalée (comme 2003) non décodés par la recherche ; le visa de l''arrêté de 2008 ne cite que l''arrêté de 2003 comme modification antérieure. Note : docs/notes/sante-tarifs-malades-payants-2026-10-23.md.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+
+- id: r-contribution-conjoncturelle-2026
+  objet: texte reconduisant pour 2026 la contribution des grandes entreprises (LF 2025, art. 38) ou la taxe conjoncturelle sur les banques et assurances (LF 2024, art. 64), ou instituant une contribution conjoncturelle au profit du budget de l'État pour 2026
+  ou: [precis/fr/fiscalite/_contributions_conjoncturelles.qmd#sec-ccj-etat-du-droit]
+  requetes:
+    titres_fts: [conjoncturelle, '"contribution exceptionnelle"']
+    titres_like: ['%conjonctur%']
+    iort_ar: [مساهمة ظرفية, معلوم ظرفي, المساهمة الظرفية, لفائدة ميزانية الدولة]
+    plein_texte: [ظرفي, مساهمة, 2024-48, 2023-13, الفصل 38, الفصل 64]
+    depuis: 2025-01-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'LF 2026 (loi n° 2025-17, JORT n° 148 du 12 décembre 2025, édition arabe seule ; le fichier « fr » du corpus est l''arabe) lue en couche texte normalisée NFKC : aucune occurrence des références des lois n° 48 de 2024 et n° 13 de 2023 (une seule, sans rapport : art. 85, renvoi aux art. 50 et 51 de la loi n° 48 de 2024), aucun renvoi aux art. 38 ou 64 de ces lois, aucune contribution « ظرفية » ; jort_cache : aucune loi de finances rectificative ni aucun titre « conjonctur » / « ظرفي » publiés du 13 décembre 2025 au 2 octobre 2026. Lacunes : fascicules 2026 inconnus de jort_cache (n° 4, 8, 20, 32, 38, 66, 69, 85, cf. outillage-sources § 1 f) non parcourus en plein texte ; tableaux de la LF 2026 non lus.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [relancer avec --sonder-pist ; parcourir en plein texte les fascicules 2026 inconnus de jort_cache]
+
+- id: r-fodec-modificatifs-2012-2026
+  objet: texte postérieur à la LF 2011 modifiant l'assiette, le taux ou les exonérations de la taxe au profit du fonds de développement de la compétitivité dans les secteurs industriel, de services et de l'artisanat
+  ou: [precis/fr/fiscalite/_taxes_fonds_speciaux.qmd#sec-fst-etat-du-droit]
+  requetes:
+    titres_fts: ['"fonds de developpement de la competitivite"', '"taxe professionnelle"']
+    titres_like: ['%competitivite%']
+    iort_ar: [صندوق تنمية القدرة التنافسية, المعلوم المهني, القدرة التنافسية]
+    plein_texte: [compétitivité, القدرة التنافسية]
+    depuis: 2011-01-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Lois de finances 2012-2026 parcourues en couche texte (FR, ou AR normalisée NFKC) pour « compétitivité » / « القدرة التنافسية » : seules l''exonération de la LF 2022 (art. 63 § 3, jusqu''au 31/12/2022) et celle de la LF 2025 (art. 29), plus les lignes du tableau « B ». Décrets de liste hors couverture.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire le décret n° 2012-435 (AR
+  - à l'image) et les décrets de liste postérieurs ; relancer avec --sonder-pist
