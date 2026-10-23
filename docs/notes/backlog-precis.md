@@ -2489,7 +2489,12 @@ en donnait trois.
     colonne de 1973 et les cases sans paramètre sont écrites dans
     `scripts/generate_marche_travail_tables.py`) ; son en-tête porte le 24 mai 2025 et le texte
     du chapitre le 28 tant que la PR « Dates d'effet depuis le décret-loi n° 2020-1 » (#482)
-    n'est pas fusionnée ; `tbl-mt-rc-etat-du-droit` reste fait main (TODO rédacteur) ;
+    n'est pas fusionnée ; `tbl-mt-rc-etat-du-droit` est engendré depuis le 23/10/2026
+    (`mt_rc_etat_du_droit` : préavis, dommages-intérêts, plafond et vice de procédure lus ;
+    condition, débiteur, population et articles écrits dans le script). Reste, après la
+    publication de la 0.143 : lire la période d'essai de la convention cadre et le délai de
+    notification de la rupture (colonne de 1973 et cases « inchangée » de `tbl-mt-rc-parametres`,
+    case de la fin d'essai de `tbl-mt-rc-etat-du-droit`) ;
   - *rémunérations publiques* : décret n° 2025-327 (sous-traitance interdite dans le secteur
     public, effet au 22 juin 2025 ; édition arabe seule au corpus, éd. française 404) à exposer
     dans « Les rémunérations dans le secteur public » (décision D6), puis renvoi depuis
@@ -2539,8 +2544,13 @@ en donnait trois.
     encore committée sur `main` ;
   - *tableaux* : paramètres, état du droit, congé et jours fériés sont engendrés (22/10/2026,
     versement de la 0.139) par `scripts/generate_marche_travail_tables.py` ; restent écrits dans
-    ce script, faute de paramètre : traitement pendant le congé, ligne de 1964 des jours fériés,
-    âge apprécié, « Population couverte », travail domestique (TODO documentaliste au chapitre) ;
+    ce script, faute de paramètre : traitement pendant le congé (convention cadre, art. 30),
+    ligne de 1964 des jours fériés (loi n° 63-55, avant la première date de la série), âge
+    apprécié, « Population couverte », travail domestique (TODO documentaliste au chapitre).
+    Les tableaux `tbl-mt-tt-conventions`, `tbl-mt-tt-conges-familiaux` et `tbl-mt-tt-domestique`
+    restent faits main. Après la publication de la 0.144 (travail domestique) : engendrer la
+    ligne « Travail domestique » de `tbl-mt-tt-etat-du-droit`, `tbl-mt-tt-domestique` et la
+    colonne du travail domestique de `tbl-mt-tt-conges-familiaux` ;
   - *pages* : art. 113, 114, 116 et 119 nouveaux de la loi n° 96-62 à la p. 1584 (corrigé au
     registre) ; art. 2 de l'avenant n° 2 à la p. 229 ; entrée en vigueur de la convention cadre
     au 1er juin 1973 confirmée par l'art. 52, p. 859. La note
