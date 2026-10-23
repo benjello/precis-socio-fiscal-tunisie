@@ -73,3 +73,103 @@ def test_sorties_rapprochees_du_recueil():
             assert max(int(r["annee_fin"]) for r in lignes) < int(s["liste_avant"]), s["entreprise"]
         positions[s["position"]] = positions.get(s["position"], 0) + 1
     assert positions == {"entre les deux listes": 15, "avant la première liste": 2}
+
+
+def test_plafond_de_la_garantie_est_continu():
+    """Un relèvement en cours de gestion porte le montant d'avant, qui est celui que la loi de
+    finances de l'année avait fixé ; les gestions se suivent de 1959-60 à 1994, sauf 1960."""
+    lignes = _lire("plafond-garanties-lois-de-finances")
+    fixe = {}
+    for l in lignes:
+        if l["nature"] == "fixation" and l["plafond_md"]:
+            fixe[l["gestion"]] = float(l["plafond_md"])
+    for l in lignes:
+        if l["plafond_avant_md"]:
+            assert float(l["plafond_avant_md"]) == fixe[l["gestion"]]
+            assert float(l["plafond_md"]) > float(l["plafond_avant_md"])
+    assert [l["gestion"] for l in lignes if l["nature"] == "fixation"] == [
+        "1958-59", "1959-60"] + [str(a) for a in range(1961, 1995)]
+    assert fixe["1977"] == 200.0 and fixe["1994"] == 950.0 and fixe["1992"] == 250.0
+    # une ligne par montant : pas deux fois le même article pour la même gestion
+    cles = [(l["gestion"], l["loi"], l["article"]) for l in lignes]
+    assert len(cles) == len(set(cles))
+
+
+def test_registre_du_plafond_du_chapitre_est_celui_du_releve():
+    """Le registre écrit dans le chapitre (pour que les ancres se lisent) est la sortie de
+    `tableau_plafond` : si le relevé change, le chapitre doit être recopié."""
+    import contextlib
+    import io
+    import sys
+
+    import pytest
+
+    pytest.importorskip("matplotlib")
+    racine = Path(__file__).resolve().parent.parent
+    sys.path.insert(0, str(racine / "precis/fr/entreprises_publiques"))
+    from figures import listes
+
+    sortie = io.StringIO()
+    with contextlib.redirect_stdout(sortie):
+        listes.tableau_plafond("x")
+    attendu = [l for l in sortie.getvalue().splitlines() if "{#r-ep-pl-" in l]
+    chapitre = (racine / "precis/fr/entreprises_publiques/_relation_financiere.qmd").read_text(
+        encoding="utf-8")
+    ecrit = [l for l in chapitre.splitlines() if "{#r-ep-pl-" in l]
+    assert attendu and ecrit == attendu
+
+
+def test_parts_du_plafond_de_la_garantie():
+    """Parts du plafond : PIB de l'année de la gestion (aucune part pour 1959-60), dépenses de
+    l'État hors service de la dette de 1986 à 1994 seulement, PIB en deux segments de base."""
+    import sys
+
+    import pytest
+
+    pytest.importorskip("matplotlib")
+    racine = Path(__file__).resolve().parent.parent
+    sys.path.insert(0, str(racine / "precis/fr/entreprises_publiques"))
+    from figures import listes
+
+    t = listes.table_plafond().set_index("Gestion")
+    pib = "Plafond fixé, en % du PIB"
+    dep = "Plafond fixé, en % des dépenses de l'État"
+    assert t.loc["1959-60", pib] != t.loc["1959-60", pib]  # NaN : pas d'année de PIB
+    assert t.loc["1961", "PIB de l'année (MD)"] == 363.8
+    assert t.loc["1977", pib] == pytest.approx(100 * 200 / 2191.9, abs=0.01)
+    assert t.loc["1994", dep] == pytest.approx(100 * 950 / 4276.6, abs=0.01)
+    assert t.loc["1985", dep] != t.loc["1985", dep]  # NaN : pas de dépenses avant 1986
+    assert t.loc["1986", dep] == pytest.approx(100 * 200 / 2395.0, abs=0.01)
+    assert set(t.loc["1961":"1991", "Base du PIB"]) == {"base non dite"}
+    assert set(t.loc["1992":"1994", "Base du PIB"]) == {"base 1983"}
+
+
+def test_figure_des_dettes_et_creances_croisees_recoupe_le_tableau():
+    """Les trois séries de la figure sont les totaux du tableau ; le solde est créances moins
+    dettes ; le PIB est en base 2015, non rétropolé."""
+    import contextlib
+    import io
+    import sys
+
+    import pytest
+
+    pytest.importorskip("matplotlib")
+    racine = Path(__file__).resolve().parent.parent
+    sys.path.insert(0, str(racine / "precis/fr/entreprises_publiques"))
+    sys.path.insert(0, str(racine / "scripts"))
+    from figures import entreprises_publiques as ep
+
+    t = ep.table_croisees().set_index("Fin d'année")
+    assert list(t.index) == [2021, 2022, 2023]
+    assert t["Dettes envers l'État (MD)"].tolist() == [8391.8, 10899.3, 11246.3]
+    assert t["Créances sur l'État (MD)"].tolist() == [9864.4, 12184.3, 11960.7]
+    for a in t.index:
+        assert t.loc[a, "Solde, créances moins dettes (MD)"] == pytest.approx(
+            t.loc[a, "Créances sur l'État (MD)"] - t.loc[a, "Dettes envers l'État (MD)"], abs=0.1)
+    assert set(t["Base du PIB"]) == {"base 2015"}
+    sortie = io.StringIO()
+    with contextlib.redirect_stdout(sortie):
+        ep.tableau_croisees("x")
+    for a in t.index:
+        for col in ("Dettes envers l'État (MD)", "Créances sur l'État (MD)"):
+            assert ep._n(t.loc[a, col]) in sortie.getvalue()

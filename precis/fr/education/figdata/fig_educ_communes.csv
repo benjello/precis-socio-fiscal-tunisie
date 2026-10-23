@@ -1,0 +1,15 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-23
+# séries (tunisia_data) : 
+# sources (citation) : @dgct-donnees-ouvertes
+# fiches : docs/notes/education-collectivites-2026-10-23.md
+# méthode/hypothèses : Fichiers par commune de la DGCT, 350 communes, niveau de l'article disponible pour 2022 et 2023 seulement ; de 2018 à 2021 les fichiers s'arrêtent à la section. 2022 : exécution définitive ; 2023 : situation provisoire au 10 janvier 2024. Titre I = gestion et intérêts de la dette ; titre II = développement, remboursement du principal, crédits reportés, comptes de participation. L'article 3303 additionne quatre paragraphes dont la formation des agents locaux : majorant de la dépense d'éducation. Aucun article ne porte sur la construction ou l'entretien des écoles
+# note : Articles 3303 (dépenses) et 4101 (recettes) des budgets des communes en parts des dépenses et des recettes, 2022 et 2023
+Année,Grandeur,Montant (millions D),Communes à montant positif,Dénominateur,Montant du dénominateur (millions D),Part (%),Stade
+2022,"Dépenses de l'article 3303, enseignement et formation",1.015,160,dépenses du titre I,1145.1,0.089,exécution définitive
+2022,"Dépenses de l'article 3303, enseignement et formation",1.015,160,dépenses totales (titres I et II),1571.1,0.065,exécution définitive
+2022,"Recettes de l'article 4101, jardins d'enfants",1.102,29,recettes du titre I,1384.6,0.08,exécution définitive
+2022,"Recettes de l'article 4101, jardins d'enfants",1.102,29,recettes totales (titres I et II),2527.1,0.044,exécution définitive
+2023,"Dépenses de l'article 3303, enseignement et formation",0.639,101,dépenses du titre I,1082.1,0.059,provisoire (10 janvier 2024)
+2023,"Dépenses de l'article 3303, enseignement et formation",0.639,101,dépenses totales (titres I et II),1444.6,0.044,provisoire (10 janvier 2024)
+2023,"Recettes de l'article 4101, jardins d'enfants",1.13,29,recettes du titre I,1455.7,0.078,provisoire (10 janvier 2024)
+2023,"Recettes de l'article 4101, jardins d'enfants",1.13,29,recettes totales (titres I et II),2632.0,0.043,provisoire (10 janvier 2024)

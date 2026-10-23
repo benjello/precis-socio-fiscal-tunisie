@@ -2617,9 +2617,27 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
-  - lire les montants des articles « octroi de la garantie de l'État » des lois de finances de 1961 à 1994 (série légale du plafond)
   - ouvrir les rapports annuels de la Banque centrale et les lois de règlement pour les transferts, les revenus de participations et les recettes de privatisation
   - dépouiller le rapport de la Cour des comptes sur la dette publique extérieure (2018)
+
+- id: r-ep-plafond-garantie-1995-2015
+  objet: article de chaque loi de finances qui fixe le plafond de la garantie de l'État de 1995 à 2015, article de la loi de finances pour 1960 et texte de 1957-58, et lois de finances complémentaires de 1969 à 1991 dont l'index ne détaille pas les articles
+  ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-garanties-plafond-legal]
+  requetes:
+    titres_like: ['%garantie de l''Etat%', '%octroi de la garantie%']
+    iort_ar: [ضمان الدولة]
+    depuis: 1957-01-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, titres : une notice par article « octroi de la garantie de l''Etat » de 1958-59 à 1994 (lois n° 58-45 à 93-125), articles lus dans les fascicules français du corpus local le 23 octobre 2026 (reconnaissance de caractères ; relus à l''image pour les gestions 1963, 1966, 1969, 1975, 1979 et 1985) ; pour 1995 et après, l''index ne détaille plus les articles et aucun plafond n''est lu. Le fascicule de 1957 qui porte le décret du 29 juin 1957 (budget ordinaire 1957-58, JORT n° 52, 1957F/Jo15257.pdf) n''est pas dans le corpus local. Aucune notice de loi de finances n''est indexée pour la gestion 1960. Lois de finances complémentaires de 1969, 1973, 1980, 1982, 1983, 1984, 1986, 1988, 1989 et 1991 : intitulés des articles indexés, aucun ne porte sur la garantie ; textes non lus en entier.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire l'article sur la garantie de chaque loi de finances de 1995 à 2015, dans les fascicules du corpus local
+  - lire en entier les lois de finances complémentaires de 1969 à 1991 pour y chercher une modification du plafond
+  - chercher la gestion 1960 et le décret du 29 juin 1957 (fascicule à obtenir sur pist.tn)
 
 - id: r-ep-annexes-plf-2026
   objet: rapports du ministère des Finances annexés au projet de loi de finances pour 2026 — rapport sur les entreprises publiques (annexe n° 9) et rapport sur les transferts et les garanties (annexe n° 8)
@@ -3411,7 +3429,7 @@
 
 - id: r-educ-lois-reglement-tableaux-par-chapitre
   objet: tableaux annexés aux lois portant règlement du budget de l'État (tableau n° 2, dépenses payées par chapitre), qui donneraient les dépenses exécutées des ministères de l'Éducation, de l'Enseignement supérieur et de la Formation professionnelle
-  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-collectivites]
   requetes:
     titres_fts: ['"reglement du budget"']
     titres_like: ['%reglement du budget%']
@@ -3430,7 +3448,7 @@
 
 - id: r-educ-lois-reglement-2021-et-apres
   objet: loi portant règlement du budget de l'État pour les gestions 2021 et suivantes
-  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-collectivites]
   requetes:
     titres_fts: ['"reglement du budget"']
     titres_like: ['%reglement du budget%', '%règlement du budget%']
@@ -3483,7 +3501,7 @@
 
 - id: r-educ-collectivites-depense-education
   objet: 'dépense d''éducation des communes et des conseils régionaux (construction, entretien et équipement des écoles) : établir si leurs budgets et leurs comptes, exposés au chapitre « Budgets et comptes » du livre des finances locales (precis/fr/finances_locales/_budgets.qmd), permettent de l''isoler, et sur quelles années'
-  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-perimetre]
+  ou: [precis/fr/education/_depense.qmd#sec-educ-depense-collectivites]
   requetes:
     titres_fts: [nomenclature AND budget AND collectivites, budget AND communes AND ecoles]
     titres_like:
@@ -3500,10 +3518,15 @@
     couverture: 'intitulés seuls (jort_cache, FTS et LIKE ; miroir iort, termes arabes), du 1958-01-01 au 2026-10-02, par recherches.py relancer --sans-plein-texte : répondent le décret gouvernemental n° 2020-52 du 23 janvier 2020 (modèle de la nomenclature budgétaire des communes) et sa modification, le décret gouvernemental n° 2020-439 du 14 juillet 2020, ainsi que des lois de finances de 2009 à 2019 (terme « صيانة المدارس ») ; aucun de ces textes n''est lu. Ni la nomenclature des conseils régionaux, ni les comptes des communes, ni le chapitre « Budgets et comptes » du livre des finances locales ne sont examinés ; plein texte du corpus local non parcouru.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [corpus_local, jort_cache]
+    couverture: 'lecture du décret gouvernemental n° 2020-52 et de son modèle annexé (JORT n° 9 de 2020, édition arabe, pp. 368-397, couche texte ; pp. 392-393 à l''image) : un article d''interventions dans l''enseignement et la formation (03.303), des revenus des jardins d''enfants (4101, 4201), aucune rubrique de construction ni d''entretien des écoles ; décret n° 2020-439 (JORT n° 71 de 2020, pp. 1575-1576) : seulement le remboursement du principal ; fichiers par commune de la DGCT, au niveau de l''article en 2022 et 2023 seulement ; non lus : nomenclature des conseils régionaux, nomenclature communale antérieure à 2020 (arrêté du 31 mars 2008, arrêté du 6 novembre 1975), plein texte du corpus local'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
-  - 'lire le décret gouvernemental n° 2020-52 (et le n° 2020-439) : la nomenclature budgétaire des communes a-t-elle une rubrique propre à l''enseignement ou aux écoles ?'
-  - 'lire precis/fr/finances_locales/_budgets.qmd et ses séries : une dépense d''éducation des communes ou des conseils régionaux y est-elle isolable, et sur quelles années ?'
-  - nomenclature budgétaire des conseils régionaux, et nomenclature des communes antérieure à 2020
+  - 'nomenclature budgétaire des conseils régionaux (arrêté du 31 mars 2008), et nomenclature des communes antérieure à 2020 (arrêtés de 1975 et de 2008) : les articles 3303 et 4101 existaient-ils ?'
+  - 'budgets des communes par article avant 2022 : non publiés par la DGCT (sections seules)'
   - plein texte du corpus local (relancer sans --sans-plein-texte)
 
 - id: r-educ-passage-septieme
@@ -3859,6 +3882,59 @@
     resultat: aucun
   a_faire:
   - océriser les fascicules 1966-1970 à la recherche d'un décret d'application de l'art. 21 ; le décret n'a peut-être jamais été pris, le code organisant lui-même la commission
+
+- id: r-cnrps-fonds-retraite-avant-age-2009-taux
+  objet: décrets fixant les pourcentages des ressources du fonds de financement des mesures exceptionnelles de mise à la retraite (LFC 2009, art. 3) pour 2009, 2011 et 2012, autres que le décret n° 2011-932 (année 2010)
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-retraite-avant-age-2009]
+  requetes:
+    titres_fts: ['"mesures exceptionnelles" retraite']
+    titres_like: ['%mesures exceptionnelles de mise%', '%avant l%ge l%gal%']
+    iort_ar: [تمويل الإجراءات الاستثنائية, الإجراءات الاستثنائية للإحالة, التقاعد قبل]
+    depuis: 2009-07-10
+  periode:
+    jusqu_au: 2016-12-31
+    motif: les taux de 2010 ont été fixés en juillet 2011 ; un décret pour 2011 ou 2012 peut paraître plusieurs années après
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache (dernière notice publiée le 2026-10-02), intitulés français (LIKE, FTS) et arabes (LIKE sur titre), toutes années : seul le décret n° 2011-932 (JORT n° 52/2011, p. 1252, lu) ; « التقاعد قبل » rend la loi n° 2017-51, le décret gouvernemental n° 2017-825, la LF 2022 (art. 14) et la LF 2025 (art. 14), hors objet. Miroir iort non interrogé ; plein texte non cherché.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-banque-donnees-2014-1526-suite
+  objet: texte prolongeant à nouveau, modifiant ou abrogeant le décret n° 2014-1526 (unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité) après le décret gouvernemental n° 2018-626, dont la prolongation d'un an court jusque vers mai 2019
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#r-nc-li-2018]
+  requetes:
+    titres_fts: ['"banque de donnees" AND necessiteuses']
+    titres_like: ['%1526%2014%', '%banque de donnees sur les familles%', '%unite de gestion par objectifs%']
+    iort_ar: [بنك معطيات, العائلات المعوزة ومحدودة الدخل, وحدة تصرف حسب الأهداف]
+    depuis: 2018-08-07
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, notices publiées de 2014 au 2 octobre 2026 ; LIKE sur titre et objet (« %1526%2014% »), LIKE sur titre (« %banque de donnees sur les familles% »), LIKE sur titre, deux conditions jointes par AND (« %unite de gestion par objectifs% » et « %affaires sociales% »), FTS « "banque de donnees" AND necessiteuses », LIKE arabe sur les titres de l''index (« %بنك معطيات% », « %العائلات المعوزة ومحدودة الدخل% », « %وحدة تصرف حسب الأهداف%الشؤون الاجتماعية% »), 2018-2026 pour ce dernier. Résultats : décrets n° 2014-1526 et 2018-626, décret n° 2018-400 (autre unité), art. 96 de la loi n° 2025-17 (fonds des orphelins). Miroir iort non interrogé ; plein texte des fascicules non parcouru ; fascicules inconnus de la base non sondés. Note : docs/notes/prestations-2018-626-lf2025-art26.md, § 1.4.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [rejouer les termes arabes sur le miroir iort ; parcourir le plein texte 2018-2020]
+
+- id: r-lf2026-art71-81-arretes
+  objet: arrêtés conjoints d'application des art. 71 (150 D pour l'achat d'un lecteur de glycémie sans piqûre, enfants diabétiques des familles pauvres et à revenu limité inscrites à l'Amen social) et 81 (150 D par mois, enfants atteints de troubles du spectre autistique, mêmes familles) de la loi n° 2025-17, loi de finances pour 2026
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#sec-nc-aides-categorielles]
+  requetes:
+    titres_fts: [glycemie, diabetiques, autistique, autisme]
+    iort_ar: [التوحد, السكري, نسبة السكر]
+    plein_texte: [glycémie, autisti, طيف التوحد, مرض السكري, نسبة السكر]
+    depuis: 2025-12-12
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, notices de 2025 et 2026 publiées jusqu''au 2 octobre 2026 : FTS « glycemie », « diabetiques », « autistique », « autisme » sans résultat ; LIKE arabe sur les titres de l''index (« %التوحد% », « %السكري% », « %نسبة السكر% ») : seuls les articles 36, 71 et 81 de la loi n° 2025-17. Plein texte du corpus local 2026 jusqu''au n° 97 (2 octobre 2026) : 94 fascicules français (« glyc[ée]mie », « autisti », « spectre de l.autisme » ; manquent les n° 11, 13 et 58) et 95 arabes après NFKC (« طيف التوحد », « مرض السكري », « نسبة السكر » ; manquent les n° 3 et 58). Seul résultat hors de la loi : décret n° 2026-192 du 27 juillet 2026 (JORT n° 76, AR p. 1600), programme d''intégration des enfants autistes en jardin d''enfants, qui n''applique pas l''art. 81. Miroir iort non interrogé. Note : docs/notes/prestations-2018-626-lf2025-art26.md, § 6.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [rejouer les termes arabes sur le miroir iort ; lire les fascicules postérieurs au n° 97]
 
 - id: r-dl2024-4-cotisations
   objet: décret fixant les modalités, conditions et procédures d'affiliation aux régimes du décret-loi n° 2024-4 (art. 19 et 22, CNSS) et la base de calcul et le paiement des cotisations de risques professionnels (art. 41, CNAM), ou tout texte fixant le taux ou l'assiette de leurs cotisations
