@@ -2,99 +2,666 @@
 
 ## Vue d'ensemble {#sec-statutaire-vue-ensemble}
 
-Le [régime statutaire autonome](#g-regime-statutaire-autonome) est celui des corps régis par un statut propre, distinct du statut général de la fonction publique et assorti de grilles et de progressions spécifiques. Les **sous-secteurs juridiques** concernés sont les [magistrats](#g-magistrat) — de l'ordre judiciaire, du Tribunal administratif et de la Cour des comptes —, les militaires, les [forces de sécurité intérieure](#g-forces-de-securite-interieure) et les agents des douanes.
+Les magistrats, les militaires, les agents des forces de sécurité intérieure et les agents des douanes sont payés selon un statut propre, hors du statut général de la fonction publique : un traitement ou une [solde](#g-solde-militaire) de base, placé sur une grille de [niveaux de rémunération](#g-niveau-de-remuneration) — la grille civile pour les magistrats et les douanes, une grille propre aux militaires et aux forces de sécurité intérieure —, et des indemnités fixées corps par corps. C'est le [régime statutaire autonome](#g-regime-statutaire-autonome). Ses **sous-secteurs juridiques** sont les [magistrats](#g-magistrat) — de l'ordre judiciaire, du Tribunal administratif et de la Cour des comptes —, les militaires de l'armée nationale, les [forces de sécurité intérieure](#g-forces-de-securite-interieure) — Sûreté nationale et police nationale, Garde nationale, protection civile, prisons et rééducation — et les [agents des douanes](#g-agents-des-douanes).
 
-- **Qui il couvre.** [La loi n° 83-112 du 12 décembre 1983](#r-statutaire-exclusion-1983) exclut expressément de son champ « les magistrats, les personnels militaires, les personnels des Forces de Sécurité Intérieure » (ainsi que ceux des établissements publics à caractère industriel et commercial), « qui sont régis par des textes particuliers ». L'autonomie des agents des douanes repose, quant à elle, sur leur statut général propre, fixé par [la loi n° 95-46](#r-statutaire-douanes-1995).
-- **Comment la rémunération s'y fixe.** Chaque corps reçoit un traitement ou une [solde](#g-solde-militaire) de base, complété d'indemnités liées aux sujétions du service ; ses grilles lui sont propres et se situent hors de la grille des salaires du statut général, celle du régime indiciaire (@sec-regime-indiciaire).
-- **Depuis quand.** Ces corps ont toujours relevé de statuts particuliers : leur détachement du statut général est une exclusion de champ, non un mouvement progressif de sortie.
-- **Ce que l'on en mesure.** Les effectifs et la masse salariale des corps de défense et de sécurité ne sont pas ventilés dans la statistique publique.
+| Corps | Statut | Traitement de base<br>(depuis 1999-2000) | Indemnités propres |
+|---|---|---|---|
+| Magistrats | [loi de 1967](#r-statutaire-magistrature-1967) (ordre judiciaire) ; [loi de 1972](#r-statutaire-ta-1972) (Tribunal administratif) ; [décret-loi de 1970](#r-statutaire-cour-comptes-1970) (Cour des comptes) | grille civile, sous-catégorie A1 | [indemnité de magistrature](#g-indemnite-de-magistrature) par grade ; avantages d'un [emploi fonctionnel](#g-emploi-fonctionnel) attachés au grade ; permanence ; pôles judiciaires |
+| Militaires | [loi de 1967](#r-statutaire-militaires-1967) | grille des militaires et des forces de sécurité intérieure | [charges militaires](#g-indemnite-charges-militaires) ; responsabilité et commandement ; risque |
+| Forces de sécurité intérieure | [loi de 1982](#r-statutaire-fsi-1982) | grille des militaires et des forces de sécurité intérieure ; grille civile pour le sous-corps civil des prisons | [charge de sécurité](#g-indemnite-charge-securite), risque, commandement et responsabilité, logement |
+| Agents des douanes | [loi de 1995](#r-statutaire-douanes-1995) | grille civile | [prime de risque](#g-prime-de-risque) ; part du produit des amendes et confiscations |
 
-Le chapitre présente, pour chaque corps, le statut qui le régit (@sec-statutaire-champ) et les textes qui fixent sa rémunération (@sec-statutaire-remuneration) ; puis les prélèvements (@sec-statutaire-prelevements), les dates qui jalonnent le régime (@sec-statutaire-historique) et les sources chiffrées (@sec-statutaire-budget).
+: Les quatre corps du régime statutaire autonome : statut, grille et indemnités propres {#tbl-statutaire-synthese}
 
-## Champ d'application {#sec-statutaire-champ .domicile-unique}
+- **Qui il couvre.** Le statut général de la fonction publique de 1983 exclut de son champ « les magistrats, les personnels militaires, les personnels des Forces de Sécurité Intérieure », « régis par des textes particuliers » ([loi de 1983, art. 1^er^](#r-statutaire-exclusion-1983)). Les agents des douanes en sont sortis par un autre chemin : un statut général propre, en 1995.
+- **Comment la rémunération se fixe.** Chaque statut renvoie la rémunération à un décret : le traitement ou la solde, puis les indemnités, une par une. Depuis 1997-2000, les traitements de base sont rangés sur deux grilles de niveaux : la grille civile du statut général pour les magistrats et les douaniers, une grille propre pour les militaires et les forces de sécurité intérieure (@sec-statutaire-1997).
+- **Depuis quand.** Les militaires et les magistrats reçoivent leur statut en 1967, les forces de sécurité intérieure en 1982, les douanes en 1995 (@tbl-statutaire-reperes).
+- **Ce que l'on en mesure.** Le budget de l'État vote les crédits de rémunération par mission — Défense, Intérieur, Justice, Finances —, et chaque mission réunit ces corps et des personnels civils (@sec-statutaire-budget).
 
-Chaque famille de corps est régie par un texte statutaire qui lui est propre (@tbl-statutaire-statuts), à distinguer des textes d'organisation de l'institution à laquelle elle appartient. Les règles de **gouvernance et de carrière** d'un corps et son **barème de rémunération** relèvent souvent de textes différents.
+| Année | Ce qui change |
+|---|---|
+| [1967](#r-statutaire-militaires-1967) | les militaires puis les magistrats de l'ordre judiciaire reçoivent un statut ; la rémunération est fixée par décret |
+| [1972](#r-statutaire-militaires-1972) | un statut et une grille indiciaire uniques pour les trois armées |
+| [1975](#r-statutaire-solde-1975) | une solde journalière pour les soldats et les appelés, hors de la grille |
+| [1982-1983](#r-coeur-fsi-1982) | un statut général pour les quatre corps des forces de sécurité intérieure ; exclusion des trois corps du statut général de la fonction publique |
+| [1985](#r-statutaire-indemnite-1985) | l'indemnité de magistrature est refondue ; trois grades judiciaires ; grève interdite aux magistrats |
+| [1993](#r-statutaire-indemnite-1993) | l'indemnité de magistrature devient un taux mensuel unique |
+| [1995](#r-coeur-douanes-1995) | un statut général pour les agents des douanes |
+| [1997-2000](#r-coeur-magistrats-1999) | les grilles indiciaires laissent la place aux niveaux de rémunération |
+| [2001](#r-statutaire-prisons-2001) | les agents des prisons passent sous l'autorité du ministre de la Justice ; indemnité de permanence des magistrats |
+| [2011-2013](#r-coeur-fsi-2011) | droit syndical pour les forces de sécurité intérieure puis pour les douanes, grève toujours interdite ; indemnité mensuelle des appelés |
+| [2018](#r-statutaire-poles-2018) | indemnité des magistrats des pôles judiciaires |
+| [2023](#r-coeur-non-classes-2023) | les soldats sont intégrés dans la grille |
+
+: Les dates du régime statutaire autonome, 1967-2023 {#tbl-statutaire-reperes}
+
+<!-- TODO (rédacteur) : remplacer ce tableau par une frise graphique (quatre réformes communes ; 1985 et 1993 pour la magistrature ; 2001 et 2018 pour la permanence et les pôles ; 2011 pour les appelés ; 2023 pour les soldats). -->
+
+Le chapitre présente la mise en place des statuts de 1967 à 1972 (@sec-statutaire-mise-en-place), les quatre réformes communes à ces corps (@sec-statutaire-reformes) et l'état du droit au 1^er^ janvier 2026 (@sec-statutaire-etat-droit). Viennent ensuite, pour chaque corps, son traitement de base, ses indemnités et leurs montants : magistrats (@sec-statutaire-magistrats), militaires (@sec-statutaire-militaires), forces de sécurité intérieure (@sec-statutaire-fsi), douanes (@sec-statutaire-douanes). Le chapitre se clôt sur les prélèvements, les données budgétaires et ce qu'en dit l'économie.
+
+## La mise en place, 1967-1972 {#sec-statutaire-mise-en-place .domicile-unique}
+
+En 1967, deux lois donnent aux militaires et aux magistrats de l'ordre judiciaire un statut propre et renvoient leur rémunération à un décret ; des grilles indiciaires propres à chaque corps suivent, pour l'armée en 1967 puis en 1972.
 
 | Corps | Statut | Texte qui le précise ou le modifie |
 |---|---|---|
-| Magistrats de l'ordre judiciaire | [loi n° 67-29 du 14 juillet 1967](#r-statutaire-magistrature-1967), relative à l'organisation judiciaire, au Conseil supérieur de la magistrature et au statut de la magistrature | [loi organique n° 2016-34 du 28 avril 2016](#r-statutaire-csm-2016), relative au Conseil supérieur de la magistrature |
+| Magistrats de l'ordre judiciaire | [loi n° 67-29 du 14 juillet 1967](#r-statutaire-magistrature-1967), relative à l'organisation judiciaire, au Conseil supérieur de la magistrature et au statut de la magistrature | [loi organique n° 85-79 du 11 août 1985](#r-statutaire-magistrature-1985) ; [loi organique n° 2016-34 du 28 avril 2016](#r-statutaire-csm-2016), relative au Conseil supérieur de la magistrature |
 | Magistrats du Tribunal administratif | [loi n° 72-40 du 1^er^ juin 1972](#r-statutaire-ta-1972), relative au Tribunal administratif | complétée et modifiée à plusieurs reprises |
 | Membres de la Cour des comptes | [décret-loi n° 70-6 du 26 septembre 1970](#r-statutaire-cour-comptes-1970), portant statut des membres de la Cour des comptes, ratifié par la [loi n° 70-46 du 20 novembre 1970](#r-statutaire-ratification-1970) | organisation de la Cour : [loi n° 68-8 du 8 mars 1968](#r-statutaire-cour-comptes-1968) |
 | Militaires | [loi n° 67-20 du 31 mai 1967](#r-statutaire-militaires-1967), statut général des militaires de l'armée nationale | [loi n° 2009-47 du 8 juillet 2009](#r-statutaire-militaires-2009), notamment ; [décret n° 72-380 du 6 décembre 1972](#r-statutaire-militaires-1972), portant statut particulier des militaires des forces de terre, de mer et de l'air |
-| Forces de sécurité intérieure | [loi n° 82-70 du 6 août 1982](#r-statutaire-fsi-1982), portant statut général des forces de sécurité intérieure | — |
+| Forces de sécurité intérieure | [loi n° 82-70 du 6 août 1982](#r-statutaire-fsi-1982), portant statut général des forces de sécurité intérieure | [loi n° 2000-58 du 13 juin 2000](#r-statutaire-fsi-2000) ; [loi n° 2001-51 du 3 mai 2001](#r-statutaire-prisons-2001), relative aux agents des prisons et de rééducation |
 | Agents des douanes | [loi n° 95-46 du 15 mai 1995](#r-statutaire-douanes-1995), portant statut général des agents des douanes | [décret n° 96-2311 du 3 décembre 1996](#r-statutaire-douanes-1996), fixant le statut particulier du corps des agents des services douaniers |
 
 : Le statut de chaque corps du régime statutaire autonome, 1967-2016 {#tbl-statutaire-statuts}
 
-- **Trois statuts pour les magistrats.** Les magistrats du Tribunal administratif relèvent d'un statut **distinct** de celui de l'ordre judiciaire : leur situation ne se confond pas avec celle des magistrats régis par la loi n° 67-29. Pour la Cour des comptes, le texte d'organisation de l'institution et le texte portant statut de ses membres sont deux textes différents.
-- **Le Conseil supérieur de la magistrature, refondu en 2016.** La loi de 1967 demeure en vigueur, sauf dispositions contraires de la loi organique de 2016. Celle-ci a refondu la gouvernance du Conseil — recrutement, avancement, discipline — sans porter sur le barème de rémunération des magistrats, qui reste régi par les dispositions statutaires antérieures.
-- **Quatre corps dans les forces de sécurité intérieure.** Leur statut couvre les agents de la Sûreté nationale, de la Garde nationale, de la protection civile ainsi que des services des prisons et de la rééducation.
-- **Les douanes, un corps séparé.** Les agents des douanes ne relèvent ni de la loi sur les forces de sécurité intérieure ni du statut général de la fonction publique.
+<!-- TODO (documentaliste) : statut des membres du Tribunal administratif. La loi organique n° 2016-34 (art. 78) maintient « la loi n° 72-67 du 1er août 1972 » (fonctionnement du Tribunal administratif et statut de ses membres), alors que ce tableau et le registre donnent la loi n° 72-40 du 1er juin 1972. Lire les deux lois et corriger ; aucune clé n'existe pour la loi n° 72-67 (bibliographe). -->
+
+- **Ce que la loi de 1967 remplace, pour l'armée.** Le statut général des militaires abroge « le décret du 10 janvier 1957, portant loi sur le recrutement et l'organisation de l'Armée », dont il ne garde que la loi de février 1967 sur la mise à la retraite d'office ([loi de 1967, art. 94](#r-statutaire-militaires-1967)).
+- **La rémunération des militaires.** Elle « comprend la solde, les indemnités accessoires et le cas échéant des indemnités familiales et des prestations en nature ». La solde des officiers et des sous-officiers servant au-delà de la durée légale est fixée par décret ; la solde journalière des sous-officiers servant pendant la durée légale, des caporaux et des soldats aussi ; le régime des indemnités de même ([art. 42-43](#r-statutaire-militaires-1967)). Les décrets suivent le même jour pour l'armée de terre : un [statut particulier](#r-statutaire-militaires-terre-1967), une [grille indiciaire des officiers](#r-statutaire-mil-grille-1967) et un [régime d'indemnités](#r-statutaire-indemnites-1967).
+- **La rémunération des magistrats.** « Les magistrats perçoivent une rémunération qui comprend le traitement et ses accessoires. La rémunération des magistrats est fixée par décret » ([loi de 1967, art. 37](#r-statutaire-magistrature-1967)). La hiérarchie judiciaire compte six [grades](#g-grade) ; les échelons et l'échelonnement indiciaire sont fixés par décret (art. 13) ; l'échelon s'avance tous les deux ans, délai que le Conseil supérieur de la magistrature peut porter à quatre ans (art. 33).
+- **Un statut unique pour les trois armées, en 1972.** Le [statut particulier de 1972](#r-statutaire-militaires-1972) remplace ceux de chaque armée et prend effet au 1^er^ janvier 1972. Une [grille indiciaire commune](#r-statutaire-mil-grille-1972) range officiers, sous-officiers et caporaux-chefs, de l'indice 115 (caporal-chef) à l'indice 800 (général).
+- **Les deux autres corps de magistrats.** La Cour des comptes a son organisation en 1968 et le statut de ses membres en 1970 ; le Tribunal administratif reçoit le sien en 1972. Leur rémunération est fixée par décret, en 1971 pour la Cour des comptes et en 1973 pour les indemnités du Tribunal administratif (@sec-statutaire-magistrats-ta-cdc).
+- **Des statuts antérieurs au statut général de 1968.** Les statuts des militaires et de la magistrature précèdent de quelques mois la [loi de 1968](#r-statutaire-statut-general-1968), statut général des personnels de l'État qui a précédé celui de 1983.
+
+<!-- TODO (documentaliste) : antécédents à lire pour l'ouverture : statut des officiers et sous-officiers du 10 janvier 1957 et régime indemnitaire du 12 janvier 1957 (JORT n° 8 de 1957) ; échelonnement indiciaire des magistrats (arrêté du 31 octobre 1956, décret n° 59-109) ; statut de la police (loi n° 57-85 et décret n° 57-194 du 31 décembre 1957, arrêté du 22 décembre 1945) ; garde nationale (arrêté du 10 octobre 1956, décret n° 65-148) ; douanes (arrêtés de 1953-1958, décret n° 65-183). Aucun n'est lu : le chapitre n'en dit rien tant qu'ils ne le sont pas. -->
+
+:::: {.chronologie-repliable titre="Statuts des magistrats, des militaires, des forces de sécurité intérieure et des douanes : textes date par date, 1967-2023"}
+
+| Date du texte | Portée | Texte et articles | Ce que le texte fixe |
+|---|---|---|---|
+| []{#r-statutaire-militaires-1967}[31 mai 1967]{.insecable} | point de départ — militaires | loi n° 67-20 [@loi67-20, art. 4, 42-43 et 94] | statut général des militaires : grades d'officiers, de sous-officiers et d'hommes de troupe (art. 4) ; rémunération et renvoi au décret (art. 42-43) ; abroge le décret du 10 janvier 1957 (art. 94) |
+| []{#r-statutaire-militaires-terre-1967}[31 mai 1967]{.insecable} | étape — militaires | décret n° 67-156 [@decret-67-156] | statut particulier des militaires de l'armée de terre |
+| []{#r-statutaire-magistrature-1967}[14 juillet 1967]{.insecable} | point de départ — ordre judiciaire | loi n° 67-29 [@loi67-29, art. 13, 29, 33 et 37] | six grades, échelons et échelonnement indiciaire par décret (art. 13) ; recrutement par concours de 22 à 30 ans, licence en droit (art. 29) ; avancement d'échelon tous les deux ans (art. 33) ; rémunération fixée par décret (art. 37) |
+| []{#r-statutaire-cour-comptes-1968}[8 mars 1968]{.insecable} | étape — Cour des comptes | loi n° 68-8 [@loi68-8] | organisation de la Cour des comptes |
+| []{#r-statutaire-statut-general-1968}[3 juin 1968]{.insecable} | étape — fonction publique | loi n° 68-12 [@loi68-12] | statut général des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif, qui précède celui de 1983 |
+| []{#r-statutaire-cour-comptes-1970}[26 septembre 1970]{.insecable} | point de départ — Cour des comptes | décret-loi n° 70-6 [@decret-loi-70-6] | statut des membres de la Cour des comptes |
+| []{#r-statutaire-ratification-1970}[20 novembre 1970]{.insecable} | étape — Cour des comptes | loi n° 70-46 [@loi70-46] | ratification du décret-loi n° 70-6 |
+| []{#r-statutaire-ta-1972}[1^er^ juin 1972]{.insecable} | point de départ — Tribunal administratif | loi n° 72-40 [@loi72-40] | Tribunal administratif et statut de ses membres |
+| []{#r-statutaire-militaires-1972}[6 décembre 1972]{.insecable} | étape — militaires | décret n° 72-380 [@decret-72-380, art. 2, 30 et 37] | statut particulier unique des trois armées : cadres A, B et C (art. 2) ; séjour de deux ans aux trois premiers échelons de chaque grade, trois ans au-delà (art. 30) ; effet au 1^er^ janvier 1972 (art. 37) |
+| []{#r-statutaire-militaires-1980}[23 mai 1980]{.insecable} | ajustement — militaires | loi n° 80-25 [@loi80-25] | promotions exceptionnelles pour fait de guerre ou action d'héroïsme, jusqu'à deux grades pour les sous-officiers et hommes de troupe |
+| []{#r-statutaire-fsi-1982}[6 août 1982]{.insecable} | point de départ — sécurité intérieure | loi n° 82-70 [@loi82-70, art. 1, 4 et 77-78] | statut général des forces de sécurité intérieure, « force armée civile » (art. 1) : Sûreté nationale, police nationale, Garde nationale, protection civile, prisons et rééducation (art. 4) ; statuts particuliers antérieurs maintenus à titre provisoire (art. 77) ; effet au 1^er^ janvier 1982 (art. 78) |
+| []{#r-statutaire-exclusion-1983}[12 décembre 1983]{.insecable} | étape — fonction publique | loi n° 83-112 [@loi83-112, art. 1er] | le statut général de la fonction publique exclut de son champ les magistrats, les personnels militaires et ceux des forces de sécurité intérieure, « régis par des textes particuliers » |
+| []{#r-statutaire-fsi-statuts-1984}[30 avril 1984]{.insecable} | étape — sécurité intérieure | décrets n° 84-748, 84-750, 84-753 et 84-755 [@decret84-748; @decret84-750; @decret84-753; @decret84-755] | statuts particuliers de la police, de la Garde nationale, des prisons et rééducation et de la protection civile, pris en application de la loi de 1982 |
+| []{#r-statutaire-militaires-1985}[4 août 1985]{.insecable} | ajustement — militaires | loi n° 85-76 [@loi85-76] | gratuité des soins étendue aux enfants poursuivant des études supérieures, jusqu'à 25 ans |
+| []{#r-statutaire-magistrature-1985}[11 août 1985]{.insecable} | rupture — ordre judiciaire | loi organique n° 85-79 [@loi-org-85-79, art. 13, 18, 29 et 31] | trois grades au lieu de six (art. 13) ; grève et action concertée interdites (art. 18) ; recrutement parmi les diplômés de l'Institut supérieur de la magistrature, rangés au début du premier grade (art. 29 et 31) |
+| []{#r-statutaire-ism-1985}[11 août 1985]{.insecable} | étape — ordre judiciaire | loi n° 85-80 [@loi85-80] | création de l'Institut supérieur de la magistrature |
+| []{#r-statutaire-militaires-1987}[31 décembre 1987]{.insecable} | ajustement — militaires | loi n° 87-82 [@loi87-82] | grades de colonel-major, d'adjudant-major et de soldat de 1^re^ classe |
+| []{#r-statutaire-militaires-1988}[26 avril 1988]{.insecable} | ajustement — militaires | décret n° 88-903 [@decret-88-903] | grades du statut particulier en trois cadres, avec les grades de 1987 ; conditions de nomination au grade de sous-lieutenant |
+| []{#r-statutaire-magistrature-1988}[2 juillet 1988]{.insecable} | ajustement — ordre judiciaire | loi organique n° 88-73 [@loi-org-88-73, art. 1-2] | le régime des pensions civiles et militaires s'applique aux magistrats ; la table d'âges par grade de 1985 est abrogée |
+| []{#r-statutaire-douanes-1995}[15 mai 1995]{.insecable} | point de départ — douanes | loi n° 95-46 [@loi95-46, art. 1] | statut général des « divers corps des agents des douanes » ; statuts particuliers par décret |
+| []{#r-statutaire-douanes-loi-1996}[18 novembre 1996]{.insecable} | ajustement — douanes | loi n° 96-102 [@loi96-102] | recrutement de contractuels ; grade supérieur à titre exceptionnel, une fois dans la carrière (art. 32 nouveau) |
+| []{#r-statutaire-douanes-1996}[3 décembre 1996]{.insecable} | étape — douanes | décret n° 96-2311 [@decret-96-2311] | statut particulier du corps des agents des services douaniers |
+| []{#r-statutaire-fsi-2000}[13 juin 2000]{.insecable} | étape — sécurité intérieure | loi n° 2000-58 [@loi2000-58] | recrutement par concours (art. 24) ; avancement d'échelon automatique selon les cadences du statut particulier (art. 25 bis) ; gratification exceptionnelle (art. 25 quater) ; congé annuel de 45 jours (art. 31) |
+| []{#r-statutaire-prisons-2001}[3 mai 2001]{.insecable} | rupture — prisons | loi n° 2001-51 [@loi2001-51, art. 1-3] | les agents des prisons et de rééducation restent régis par la loi de 1982 mais relèvent du ministre de la Justice |
+| []{#r-statutaire-militaires-2009}[8 juillet 2009]{.insecable} | ajustement — militaires | loi n° 2009-47 [@loi2009-47] | intégration des sous-officiers contractuels parmi les sous-officiers de carrière ; gratification exceptionnelle ; grade de soldat engagé |
+| []{#r-statutaire-csm-2016}[28 avril 2016]{.insecable} | ajustement — magistrats | loi organique n° 2016-34 [@loi-org-2016-34, art. 4, 42, 45, 53 et 78] | Conseil supérieur de la magistrature refondu : nomination, promotion, mutation (art. 45, 53) ; indemnités de ses membres (art. 4, 42) ; lois de 1967, 1970 et 1972 maintenues sauf dispositions contraires (art. 78) |
+| []{#r-statutaire-csm-2022}[12 février 2022]{.insecable} | ajustement — magistrats | décret-loi n° 2022-11 [@decret-loi2022-11, art. 9] | Conseil supérieur provisoire de la magistrature ; grève interdite aux magistrats de tout ordre |
+| []{#r-statutaire-militaires-2023}[1^er^ décembre 2023]{.insecable} | étape — militaires | décret n° 2023-739 [@decret2023-739] | grade de soldat engagé au statut particulier ; soldat de 1^re^ classe après un an de soldat engagé |
+
+: Les textes statutaires des corps du régime statutaire autonome, 1967-2023 {#tbl-statutaire-textes-statuts}
+
+::::
 
 <!-- TODO : vérifier sur source primaire le décret n° 72-230 (statut particulier des services
 actifs de la Sûreté nationale), non cité tant qu'il ne l'est pas. Localisé le 20 septembre
 2026 : JORT n° 29 de 1972, pp. 995-1003 ; fascicule présent au corpus local mais SCAN sans
 couche texte. -->
 
-:::: {.chronologie-repliable titre="Statuts des magistrats, des militaires, des forces de sécurité intérieure et des agents des douanes : textes, date par date, 1967-2016"}
+## Les grandes réformes {#sec-statutaire-reformes .domicile-unique}
 
-| Date du texte | Portée | Texte et articles | Ce que le texte fixe |
+Quatre réformes touchent ensemble ces corps : un statut général pour les forces de sécurité intérieure et l'exclusion du statut général de la fonction publique (1982-1983) ; un statut général pour les douanes (1995) ; le passage des grilles indiciaires aux niveaux de rémunération (1997-2000) ; le droit syndical, la grève restant interdite (2011-2013).
+
+| Réforme | Ce que la loi cherche (ses mots) | Avant → après | Ce qui naît |
 |---|---|---|---|
-| []{#r-statutaire-militaires-1967}[31 mai 1967]{.insecable} | point de départ — militaires | loi n° 67-20 [@loi67-20] | statut général des militaires de l'armée nationale ; modifiée notamment par la loi n° 2009-47 du 8 juillet 2009 |
-| []{#r-statutaire-magistrature-1967}[14 juillet 1967]{.insecable} | point de départ — ordre judiciaire | loi n° 67-29 [@loi67-29] | organisation judiciaire, Conseil supérieur de la magistrature et statut de la magistrature |
-| []{#r-statutaire-cour-comptes-1968}[8 mars 1968]{.insecable} | étape — Cour des comptes | loi n° 68-8 [@loi68-8] | organisation de la Cour des comptes |
-| []{#r-statutaire-statut-general-1968}[3 juin 1968]{.insecable} | étape — fonction publique | loi n° 68-12 [@loi68-12] | statut général des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif, qui précède celui de 1983 |
-| []{#r-statutaire-cour-comptes-1970}[26 septembre 1970]{.insecable} | point de départ — Cour des comptes | décret-loi n° 70-6 [@decret-loi-70-6] | statut des membres de la Cour des comptes ; ratifié par la loi n° 70-46 du 20 novembre 1970 |
-| []{#r-statutaire-ratification-1970}[20 novembre 1970]{.insecable} | étape — Cour des comptes | loi n° 70-46 [@loi70-46] | ratification du décret-loi n° 70-6 du 26 septembre 1970, portant statut des membres de la Cour des comptes |
-| []{#r-statutaire-ta-1972}[1^er^ juin 1972]{.insecable} | point de départ — Tribunal administratif | loi n° 72-40 [@loi72-40] | Tribunal administratif et statut de ses membres ; complétée et modifiée à plusieurs reprises |
-| []{#r-statutaire-militaires-1972}[6 décembre 1972]{.insecable} | étape — militaires | décret n° 72-380 [@decret-72-380] | statut particulier des militaires des forces de terre, de mer et de l'air |
-| []{#r-statutaire-fsi-1982}[6 août 1982]{.insecable} | point de départ — sécurité intérieure | loi n° 82-70 [@loi82-70] | statut général des forces de sécurité intérieure : Sûreté nationale, Garde nationale, protection civile, services des prisons et de la rééducation |
-| []{#r-statutaire-exclusion-1983}[12 décembre 1983]{.insecable} | étape — fonction publique | loi n° 83-112 [@loi83-112, art. 1er] | le statut général de la fonction publique exclut de son champ les magistrats, les personnels militaires et ceux des forces de sécurité intérieure, « régis par des textes particuliers » |
-| []{#r-statutaire-douanes-1995}[15 mai 1995]{.insecable} | point de départ — douanes | loi n° 95-46 [@loi95-46] | statut général des agents des douanes |
-| []{#r-statutaire-douanes-1996}[3 décembre 1996]{.insecable} | étape — douanes | décret n° 96-2311 [@decret-96-2311] | statut particulier du corps des agents des services douaniers |
-| []{#r-statutaire-militaires-2009}[8 juillet 2009]{.insecable} | étape — militaires | loi n° 2009-47 [@loi2009-47] | modifie et complète la loi n° 67-20 du 31 mai 1967, portant statut général des militaires |
-| []{#r-statutaire-csm-2016}[28 avril 2016]{.insecable} | étape — ordre judiciaire | loi organique n° 2016-34 [@loi-org-2016-34] | gouvernance du Conseil supérieur de la magistrature refondue (recrutement, avancement, discipline) ; barème de rémunération des magistrats inchangé |
+| [1982-1983](#r-coeur-fsi-1982) | « une force armée civile » ; « aucune compensation ou indemnité […] si elle n'a fait l'objet d'un décret » | quatre corps régis chacun par décret → un statut général commun ; exclusion du statut général de la fonction publique en 1983 | statuts particuliers et grilles de 1984 ; indemnité provisoire complémentaire commune aux militaires et aux forces de sécurité intérieure |
+| [1995](#r-coeur-douanes-1995) | statut général des « divers corps des agents des douanes » ; la grève « expressément interdite » | statuts particuliers par décret → statut général propre, sur le modèle de 1982 | statut particulier de 1996 |
+| [1997-2000](#r-coeur-magistrats-1999) | « concordance entre les échelons […] et les niveaux de rémunération » | grilles indiciaires propres → deux grilles de niveaux : civile (magistrats, douanes), militaire (militaires, forces de sécurité intérieure) | indemnités compensatrices du passage |
+| [2011-2013](#r-coeur-fsi-2011) | « le droit à l'action syndicale » ; la grève toujours interdite | interdiction d'adhérer à un syndicat → syndicats propres au corps | — |
 
-: Les textes statutaires des corps du régime statutaire autonome, 1967-2016 {#tbl-statutaire-textes-statuts}
+: Les quatre réformes communes du régime statutaire autonome, 1982-2013 {#tbl-statutaire-ruptures}
+
+:::: {.chronologie-repliable titre="Champ, grilles et interdictions des quatre corps : textes date par date, 1967-2023"}
+
+| Date du texte | Portée | Texte et articles | Ce qui change |
+|---|---|---|---|
+| []{#r-coeur-militaires-1967}[31 mai 1967]{.insecable} | point de départ — militaires | loi n° 67-20 [@loi67-20, art. 42-43] | solde, indemnités et prestations en nature des militaires fixées par décret |
+| []{#r-coeur-magistrats-1967}[14 juillet 1967]{.insecable} | point de départ — magistrats | loi n° 67-29 [@loi67-29, art. 37] | rémunération des magistrats fixée par décret |
+| []{#r-coeur-ipc-1982}[16 mars 1982]{.insecable} | étape — dispositif commun | décret n° 82-515 [@decret82-515, art. 1-3] | indemnité provisoire complémentaire commune aux militaires et aux quatre corps de sécurité intérieure |
+| []{#r-coeur-fsi-1982}[6 août 1982]{.insecable} | rupture — sécurité intérieure | loi n° 82-70 [@loi82-70, art. 1, 11, 12, 29 et 77] | quatre corps sous un statut général ; grève interdite (art. 11) ; adhésion à un syndicat interdite (art. 12) ; aucune indemnité sans décret (art. 29) |
+| []{#r-coeur-exclusion-1983}[12 décembre 1983]{.insecable} | rupture — fonction publique | loi n° 83-112 [@loi83-112, art. 1er] | magistrats, militaires et forces de sécurité intérieure hors du statut général de la fonction publique |
+| []{#r-coeur-grille-police-1984}[30 avril 1984]{.insecable} | étape — sécurité intérieure | décret n° 84-749 [@decret84-749, art. 1-3] | grille indiciaire de la police : indices 180 (gardien de la paix) à 800 (commissaire général de 1^re^ classe) ; abroge la grille de 1972 |
+| []{#r-coeur-greve-magistrats-1985}[11 août 1985]{.insecable} | étape — magistrats | loi organique n° 85-79 [@loi-org-85-79, art. 18] | grève et action concertée interdites aux membres du corps judiciaire |
+| []{#r-coeur-douanes-1995}[15 mai 1995]{.insecable} | rupture — douanes | loi n° 95-46 [@loi95-46, art. 1, 9 et 34] | statut général des douanes ; grève et adhésion syndicale interdites (art. 9) ; aucune indemnité sans décret (art. 34) |
+| []{#r-coeur-civils-1997}[16 septembre 1997]{.insecable} | contexte — fonction publique | décret n° 97-1832 [@decret-97-1832] | grille des salaires des agents de l'État en niveaux de rémunération |
+| []{#r-coeur-compensatrice-1997}[10 novembre 1997]{.insecable} | contexte — fonction publique | décret n° 97-2127 [@decret-97-2127] | indemnité compensatrice du passage à la grille de 1997, pour les agents civils |
+| []{#r-coeur-militaires-1999}[31 mai 1999]{.insecable} | rupture — militaires | décret n° 99-1208 [@decret-99-1208, art. 1-7] | concordance des échelons des grades militaires avec les niveaux de rémunération ; fin de l'indemnité compensatrice à l'échelon fixé pour chaque grade |
+| []{#r-coeur-magistrats-1999}[13 septembre 1999]{.insecable} | rupture — magistrats | décrets n° 99-2020 et 99-2021 [@decret99-2020, art. 1-4; @decret99-2021, art. 1-5] | grades judiciaires en sous-catégorie A1 ; concordance avec les niveaux de la grille de 1997 ; abrogation de l'échelonnement indiciaire de 1971 |
+| []{#r-coeur-douanes-1999}[27 décembre 1999]{.insecable} | rupture — douanes | décret n° 99-2847 [@decret99-2847, art. 1] | concordance des grades des douanes avec les niveaux de la grille civile de 1997 |
+| []{#r-coeur-fsi-2000}[11 mai 2000]{.insecable} | rupture — sécurité intérieure | décret n° 2000-1009 [@decret2000-1009, art. 1] | concordance des grades de la police avec la « grille des salaires des militaires et des forces de sécurité intérieure » |
+| []{#r-coeur-prisons-2000}[11 mai 2000]{.insecable} | étape — prisons | décret n° 2000-1017 [@decret2000-1017, art. 1-2] | sous-corps civil des prisons sur la grille civile, sous-corps en tenue sur la grille des militaires et des forces de sécurité intérieure |
+| []{#r-coeur-fsi-2011}[25 mai 2011]{.insecable} | rupture — sécurité intérieure | décret-loi n° 2011-42 [@decretloi2011-42, art. 1] | droit syndical, syndicats indépendants (art. 11 nouveau) ; grève toujours interdite ; seule l'adhésion politique reste interdite (art. 12 nouveau) |
+| []{#r-coeur-recrutement-2012}[20 juillet 2012]{.insecable} | ajustement — quatre corps | décret n° 2012-833 [@decret2012-833, art. 3] | les quatre corps sont exclus du régime dérogatoire de recrutement de 2012 |
+| []{#r-coeur-douanes-grille-2013}[22 avril 2013]{.insecable} | étape — douanes | décret n° 2013-1402 [@decret2013-1402, art. 1] | nouvelle concordance des grades des douanes avec la grille civile |
+| []{#r-coeur-douanes-2013}[30 juillet 2013]{.insecable} | rupture — douanes | loi organique n° 2013-28 [@loiorg2013-28, art. 1] | droit syndical, un syndicat professionnel unifié et élu (art. 9 nouveau) ; grève et adhésion politique toujours interdites |
+| []{#r-coeur-magistrats-2022}[12 février 2022]{.insecable} | ajustement — magistrats | décret-loi n° 2022-11 [@decret-loi2022-11, art. 9] | grève interdite aux magistrats des trois ordres |
+| []{#r-coeur-non-classes-2023}[1^er^ décembre 2023]{.insecable} | étape — militaires | décret n° 2023-738 [@decret2023-738, art. 1-3] | soldats engagés et soldats de 1^re^ classe intégrés dans la grille ; fin de la solde spéciale progressive |
+
+: Le champ, les grilles et les interdictions des corps du régime statutaire autonome, 1967-2023 {#tbl-statutaire-coeur}
 
 ::::
 
-## La construction de la rémunération {#sec-statutaire-remuneration .domicile-unique}
+### 1982-1983 : un statut général pour la sécurité intérieure, l'exclusion du statut de la fonction publique {#sec-statutaire-1982}
 
-La rémunération suit la même logique dans tous ces corps : un traitement ou une solde de base, complété d'indemnités liées aux sujétions propres au service — risque, astreinte, grade, et, pour les militaires, alimentation. Les grilles sont propres à chaque corps et situées **hors de la grille des salaires du statut général**, celle du régime indiciaire (@sec-regime-indiciaire).
+L'État donne en 1982 un statut général commun aux quatre corps de la sécurité intérieure, puis, en 1983, exclut ces corps, les magistrats et les militaires du statut général de la fonction publique.
 
-- **La solde des militaires.** L'État la fixe par [le décret n° 79-96 du 11 janvier 1979](#r-statutaire-solde-1979), qui porte sur la solde des militaires « non classés dans la grille indiciaire de la fonction publique » et sur le régime de l'alimentation dans l'armée. La rémunération militaire n'est donc pas adossée à la grille du statut général, que cet intitulé désigne comme une grille *indiciaire* — ce qu'elle était en 1979 (@sec-ancien-systeme-indiciaire). À la solde de base s'ajoutent des indemnités ; celles des personnels de l'armée de terre sont fixées par [le décret n° 67-158 du 31 mai 1967](#r-statutaire-indemnites-1967).
-- **La Cour des comptes et le Tribunal administratif.** La rémunération du personnel de la Cour des comptes est fixée par [un décret du 29 mai 1971](#r-statutaire-cdc-1971), les indemnités du personnel du Tribunal administratif par [un décret du 14 février 1973](#r-statutaire-ta-1973) ; l'un et l'autre sont modifiés le 10 novembre 1997.
-- **L'indemnité de magistrature.** Aux traitements de base s'ajoute, pour les trois corps de magistrats, une indemnité de magistrature revalorisée par une série continue de décrets, distincte pour chacun des trois ordres — ordre judiciaire, Tribunal administratif, Cour des comptes. Cette série court au moins de 2001 à 2018 et procède le plus souvent par tranches d'augmentation servies sur plusieurs exercices, selon une mécanique proche de celle des [augmentations générales](#g-augmentation-generale-des-salaires) de la fonction publique (@sec-cycles-revalorisation).
-- **Les montants.** Les barèmes chiffrés figurent dans des annexes et des arrêtés dont le texte n'est pas établi ici. Les textes qui les portent sont identifiés et datés, et leurs modifications se suivent sans interruption (@tbl-textes-statutaires) : la structure et la chronologie de ces régimes indemnitaires sont documentées, leurs montants ne le sont pas.
+- **Le contexte.** La Chambre des députés adopte le statut le 30 juillet 1982, un an avant le statut général de la fonction publique de décembre 1983 ([loi de 1982](#r-statutaire-fsi-1982)). Le statut prend effet au 1^er^ janvier 1982, avant même sa promulgation.
+- **Ce que la loi cherche.** Les forces de sécurité intérieure « sont une force armée civile dont les agents sont régis par les dispositions du présent statut général et des statuts particuliers relatifs à chaque corps » ([art. 1](#r-coeur-fsi-1982)). Leur rémunération « comprend le traitement, les différentes indemnités et avantages en nature et, le cas échéant, les allocations familiales » ; « aucune compensation ou indemnité de quelque nature que ce soit ne peut être accordée […] si elle n'a fait l'objet d'un décret » (art. 29).
+- **Avant → après.** Police nationale, Garde nationale, protection civile, prisons et rééducation avaient chacun un statut particulier pris par décret ; la loi les maintient à titre provisoire (art. 77) et place les quatre corps sous des règles communes : grève « expressément interdite » (art. 11), adhésion à une organisation politique ou syndicale interdite (art. 12), autorisation du ministre de l'Intérieur avant mariage, nominations et avancements non publiés au *Journal officiel* ([art. 8 et 28](#r-statutaire-fsi-obligations-1982)). En 1983, le statut général de la fonction publique exclut ces agents, les magistrats et les militaires de son champ ([loi de 1983, art. 1^er^](#r-coeur-exclusion-1983)).
+- **Ce qui naît.** Les statuts particuliers et les grilles indiciaires des quatre corps suivent le 30 avril 1984 (@sec-statutaire-fsi). Quelques mois avant la loi, une [indemnité provisoire complémentaire](#g-indemnite-provisoire-complementaire) est créée pour les militaires et les quatre corps à la fois ([mars 1982](#r-coeur-ipc-1982)).
 
-<!-- TODO : construire la chronologie de l'indemnité de magistrature à partir des décrets identifiés au JORT (2001-2125, 2001-2775, 2001-2776 ; 2009-2791, 2009-2792, 2009-2826 ; 2010-1749, 2010-1751, 2010-2521 ; 2012-3552, 2012-3553, 2012-3554 ; 2017-1361, 2017-1362, 2017-1364 ; 2018-73) — vérifier chaque intitulé et chaque date avant citation, puis créer les références CSL correspondantes. Les montants ne seront restitués que sur lecture du texte. -->
-<!-- TODO : identifier de même les textes de rémunération des magistrats de l'ordre judiciaire, des forces de sécurité intérieure et des agents des douanes, aujourd'hui absents du tableau ci-dessus. -->
-<!-- TODO (documentaliste) : ce qui reste pour les augmentations des magistrats. (1) Lire le décret n° 2026-65 (2026-2028, JORT n° 44 de 2026), porté au registre par son seul intitulé, et en relever les montants. (2) Décret gouvernemental n° 2019-1132 (deuxième et troisième tranches, magistrats) : clé versée (decret2019-1132), texte à lire avant de le porter au registre et de le citer. (3) Décret gouvernemental n° 2016-742 du 10 mai 2016 (JORT n° 50 du 21 juin 2016 ; index vérifié le 8 octobre 2026, adresses 2016F/Jo0502016.pdf et 2016A/Ja0502016.pdf) : l'index ne porte qu'un intitulé arabe, relatif à l'augmentation générale des salaires au titre de 2015 et 2016 et à l'augmentation spécifique des magistrats des trois ordres au titre de 2016, 2017 et 2018 ; ni lu, ni versé — à lire avant d'en rien écrire. Les clés des lois n° 70-46 et n° 2009-47, des décrets n° 97-2133 et n° 97-2134 et des modificatifs du décret n° 79-96 sont versées et citées depuis le 8 octobre 2026. -->
+<!-- TODO (documentaliste) : contexte de la loi n° 82-70 — exposé des motifs, débats de la Chambre des députés du 30 juillet 1982, presse de l'époque. Rien n'est lu au-delà de la date d'adoption. -->
 
-:::: {.chronologie-repliable titre="Rémunération des militaires, de la Cour des comptes, du Tribunal administratif et des magistrats : textes de base et décrets modificatifs, 1967-2026"}
+### 1995 : un statut général pour les douanes {#sec-statutaire-1995}
 
-| Date du texte | Portée | Corps | Texte de base | Décrets modificatifs |
+En 1995, l'État donne aux agents des douanes un statut général propre, sur le modèle de celui des forces de sécurité intérieure, le ministre des Finances tenant la place du ministre de l'Intérieur.
+
+- **Le contexte.** La Chambre des députés adopte la loi le 2 mai 1995 ([loi de 1995](#r-coeur-douanes-1995)).
+- **Ce que la loi cherche.** Un statut général des « divers corps des agents des douanes », complété de statuts particuliers par décret (art. 1).
+- **Avant → après.** Les règles sont celles de 1982, article par article : port d'armes ; autorisation du ministre avant mariage, l'agent marié sans autorisation étant « réputé démissionnaire » ; adhésion à une organisation politique ou syndicale interdite ; « la grève est expressément interdite à tous les agents des douanes » (art. 9) ; aucune indemnité ni avantage sans décret (art. 34) ; congé annuel de 45 jours.
+- **Ce qui naît.** Le statut particulier du corps des agents des services douaniers suit en décembre 1996 ([décret de 1996](#r-statutaire-douanes-1996)) ; une loi du mois précédent ouvre le recrutement de contractuels et une promotion exceptionnelle ([loi de 1996](#r-statutaire-douanes-loi-1996)).
+
+<!-- TODO (documentaliste) : statuts particuliers des douanes antérieurs à 1995 (décrets n° 73-210, 88-1200, 91-1374) et débats de la loi n° 95-46 : à lire pour dire ce que la loi remplace. -->
+
+### 1997-2000 : des grilles indiciaires aux niveaux de rémunération {#sec-statutaire-1997}
+
+Entre 1997 et 2000, les traitements de base des quatre corps passent, comme ceux des fonctionnaires civils, d'une grille indiciaire à une grille de niveaux de rémunération en dinars ; mais ces corps se répartissent entre deux grilles.
+
+- **Le contexte.** Le 16 septembre 1997, l'État remplace l'indice par une grille en dinars pour les agents civils (@sec-ri-reforme-1998). Le même jour est daté un décret « fixant le traitement de base des militaires et des forces de la sécurité intérieure », que les décrets de concordance visent.
+- **Ce que la loi cherche.** Fixer, corps par corps, « la concordance entre les échelons des grades […] et les niveaux de rémunération » : c'est l'intitulé commun des décrets de 1999 et 2000.
+- **Avant → après.** Chaque corps avait une grille indiciaire propre : celle des magistrats de 1971, celle de l'armée de 1972, celle de la police de 1984. Après la réforme, il reste deux grilles :
+  - la **grille civile** du décret de 1997, pour les magistrats de l'ordre judiciaire, rangés en sous-catégorie A1, aux niveaux 1 à 25 ([décrets de septembre 1999](#r-coeur-magistrats-1999)), et pour les agents des douanes, malgré leurs grades de type militaire ([décret de décembre 1999](#r-coeur-douanes-1999)) ;
+  - la **« grille des salaires des militaires et des forces de sécurité intérieure »**, pour les cadres de l'armée ([mai 1999](#r-coeur-militaires-1999)) et pour les quatre corps de sécurité intérieure ([mai 2000](#r-coeur-fsi-2000)), sauf le sous-corps civil des prisons, rangé sur la grille civile ([décret de 2000 sur les prisons](#r-coeur-prisons-2000)).
+- **Ce qui naît.** Une [indemnité compensatrice](#g-indemnite-compensatrice) garantit le traitement antérieur pendant le passage ; elle cesse quand l'agent atteint l'échelon fixé pour son grade ([civils](#r-coeur-compensatrice-1997) ; [militaires](#r-coeur-militaires-1999)).
+
+**Le barème des militaires et des forces de sécurité intérieure.** Le décret du 16 septembre 1997 fixant le traitement de base des militaires et des forces de sécurité intérieure, que des textes de 2009 et de 2023 citent sous le numéro « 97-130 », n'est pas identifié ici ; le décret du 10 novembre 1997 relatif à leurs indemnités compensatrices non plus. Les concordances grade par grade sont publiées ; le montant en dinars de chaque niveau de cette grille, lui, n'est établi par aucun texte identifié depuis 1997.
+
+<!-- RECHERCHE r-mil-traitement-base-1997 : décret du 16 septembre 1997 (« 97-130 ») fixant le traitement de base des militaires et des forces de sécurité intérieure, et ses modificatifs (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : discordance sur la grille des douanes. Le décret n° 2023-738 cite le décret « 97-130 » sous un intitulé qui comprend les « agents des services douaniers » ; les concordances des douanes de 1999 et 2013 renvoient au décret civil n° 97-1832. Ne pas trancher sans le texte du « 97-130 » ou une concordance douanière postérieure à 2013 (décret gouvernemental n° 2016-512 à lire). -->
+
+### 2011-2013 : le droit syndical, la grève toujours interdite {#sec-statutaire-2011}
+
+En 2011, les agents des forces de sécurité intérieure obtiennent le droit de former des syndicats, et en 2013 les agents des douanes ; la grève leur reste interdite.
+
+- **Le contexte.** Le décret-loi de mai 2011 est signé par le Président de la République par intérim, sous l'organisation provisoire des pouvoirs publics de mars 2011 ([décret-loi de 2011](#r-coeur-fsi-2011)) ; la loi organique de juillet 2013 est adoptée par l'Assemblée nationale constituante le 17 juillet 2013 ([loi organique de 2013](#r-coeur-douanes-2013)).
+- **Ce que la loi cherche.** « Les agents des forces de sûreté intérieure ont le droit à l'action syndicale et de constituer, à cet effet, des syndicats professionnels indépendants de tous autres syndicats professionnels et de leurs unions » ; « les agents des douanes ont le droit à l'exercice de l'action syndicale et de constituer, à cet effet, un syndicat professionnel unifié, élu, représentant l'ensemble des catégories des agents des douanes ».
+- **Avant → après.** L'interdiction d'adhérer à un syndicat de 1982 et de 1995 tombe ; restent interdites l'adhésion à une organisation politique et la grève — « il est interdit aux agents […], dans l'exercice de l'action syndicale, de recourir à la grève ou d'entraver, de quelque manière que ce soit, la marche du travail ». Les magistrats restent sous l'interdiction de grève de 1985, que l'État étend en 2022 aux magistrats des trois ordres ([décret-loi de 2022](#r-coeur-magistrats-2022)).
+- **À la même période**, l'État exclut les quatre corps du régime dérogatoire de recrutement de 2012 ([décret de 2012, art. 3](#r-coeur-recrutement-2012)), exposé au chapitre du régime indiciaire (@sec-ri-statuts-generaux).
+
+<!-- TODO (documentaliste) : genèse du décret-loi n° 2011-42 et de la loi organique n° 2013-28 (débats de l'Assemblée nationale constituante, presse) ; rien n'est lu au-delà des dates. -->
+
+## L'état du droit au 1^er^ janvier 2026 {#sec-statutaire-etat-droit .domicile-unique}
+
+Au 1^er^ janvier 2026, le magistrat de l'ordre judiciaire reçoit le traitement de la sous-catégorie A1 de la grille civile, une indemnité de magistrature par grade, majorée de 120 dinars par an de 2026 à 2028, et les avantages d'un emploi fonctionnel attachés à son grade. Le militaire et l'agent des forces de sécurité intérieure sont rangés sur leur grille propre, soldats compris depuis 2023. Le douanier est rangé sur la grille civile et reçoit une prime de risque uniforme et une part du produit des amendes et confiscations.
+
+| Corps | Traitement de base | Indemnités propres | Dernier texte de montant | Population couverte |
 |---|---|---|---|---|
-| []{#r-statutaire-indemnites-1967}[31 mai 1967]{.insecable} | point de départ | **Militaires** (armée de terre) | décret n° 67-158, fixant le régime des indemnités applicables aux personnels de l'armée de terre [@decret-67-158] | — |
-| []{#r-statutaire-cdc-1971}[29 mai 1971]{.insecable} | point de départ | **Cour des comptes** | décret n° 71-222, portant fixation de la rémunération du personnel de la Cour des comptes [@decret-71-222] | modifié notamment par le décret n° 97-2134 du 10 novembre 1997 [@decret-97-2134] |
-| []{#r-statutaire-ta-1973}[14 février 1973]{.insecable} | point de départ | **Tribunal administratif** | décret n° 73-58, relatif aux indemnités servies au personnel du Tribunal administratif [@decret-73-58] | modifié notamment par le décret n° 97-2133 du 10 novembre 1997 [@decret-97-2133] |
-| []{#r-statutaire-solde-1979}[11 janvier 1979]{.insecable} | point de départ | **Militaires** | décret n° 79-96, fixant la solde des militaires non classés dans la grille indiciaire de la fonction publique et le régime de l'alimentation dans l'armée [@decret-79-96] | modifié à intervalles réguliers : décrets n° 87-878 [@decret-87-878], n° 88-263 [@decret-88-263], n° 88-909 [@decret-88-909], n° 2002-1973 [@decret2002-1973], n° 2004-2127 [@decret2004-2127], n° 2005-3382 [@decret2005-3382], n° 2007-2408 [@decret2007-2408], n° 2010-2935 [@decret2010-2935] |
-| []{#r-statutaire-magistrats-2026}[30 avril 2026]{.insecable} | étape | **Magistrats** des trois ordres | décret n° 2026-65, fixant le programme et les montants de l'augmentation des salaires des magistrats au titre des années 2026, 2027 et 2028 [@decret2026-65] | — |
+| Magistrats de l'ordre judiciaire | grille civile, A1, niveaux 1 à 25 ([1999](#r-coeur-magistrats-1999)) | indemnité de magistrature ; emploi fonctionnel attaché au grade ; permanence ; pôles | [décret de 2026](#r-statutaire-magistrats-2026) : +120 D par mois au 1^er^ janvier 2026, 2027 et 2028 | |
+| Militaires | grille des militaires et des forces de sécurité intérieure ([1999](#r-coeur-militaires-1999), [2023](#r-coeur-non-classes-2023)) | charges militaires ; responsabilité et commandement ; risque | [décret de 2013](#r-statutaire-charges-2013) : charges militaires, +110 D par mois | |
+| Forces de sécurité intérieure | même grille ([2000](#r-coeur-fsi-2000)) ; grille civile pour le sous-corps civil des prisons | charge de sécurité ; risque ; commandement et responsabilité ; logement | [décret de 2005](#r-statutaire-fsi-charge-2005) : charge de sécurité, agents des prisons seulement | |
+| Agents des douanes | grille civile ([2013](#r-coeur-douanes-grille-2013)) | prime de risque ; produit des amendes et confiscations | [décret de 2013](#r-statutaire-douanes-risque-2013) : prime de risque, 100 D par mois ; [arrêté de 2019](#r-statutaire-douanes-amendes-2019) : parts du produit | |
 
-: Textes de rémunération des principaux corps à statut autonome et chaînes de modification. {#tbl-textes-statutaires}
+: Le régime de rémunération de chaque corps au 1^er^ janvier 2026 {#tbl-statutaire-etat-droit}
+
+<!-- TODO (documentaliste) : colonne « population couverte » vide faute d'effectif publié par corps (nombre de magistrats : rapports du Conseil supérieur de la magistrature, projets annuels de performance de la mission Justice ; militaires et forces de sécurité intérieure : aucune source tunisienne identifiée ; douanes : un seul point, juin 2023, à ne pas publier isolé). -->
+
+- **La majoration de 2026-2028 des magistrats**, de 120 dinars par mois à chaque 1^er^ janvier, est aussi applicable aux pensions ; elle s'inscrit dans la série des majorations de l'indemnité de magistrature (@tbl-statutaire-magistrature-indemnite).
+- **Le niveau de l'indemnité de magistrature** n'est redonné par aucun texte depuis 1995 : il se calcule, sous des hypothèses dites (@sec-statutaire-magistrats-niveau).
+- **Trois barèmes ne sont établis par aucun texte identifié** : le traitement de base de la grille des militaires et des forces de sécurité intérieure depuis 1997 (@sec-statutaire-1997) ; les quatre indemnités propres des forces de sécurité intérieure du ministère de l'Intérieur (@sec-statutaire-fsi) ; les indemnités mensuelles fixes des douanes (@sec-statutaire-douanes).
+
+## Les magistrats {#sec-statutaire-magistrats .domicile-unique}
+
+Depuis 1999, le traitement de base du magistrat de l'ordre judiciaire est celui des niveaux 1 à 25 de la sous-catégorie A1 de la grille commune ; ce qui lui est propre, c'est l'[indemnité de magistrature](#g-indemnite-de-magistrature) par grade et les avantages d'un [emploi fonctionnel](#g-emploi-fonctionnel) attachés au grade, sans nomination à l'emploi. Le Tribunal administratif et la Cour des comptes suivent le même modèle (@sec-statutaire-magistrats-ta-cdc). Les âges de départ et les pensions sont exposés au livre [« Retraites »](../retraites/_secteur_public.html#sec-cnrps-militaires).
+
+| Date | Ce qui change | Portée |
+|---|---|---|
+| [1985](#r-statutaire-indemnite-1985) | indemnité en deux parties, mensuelle par grade et annuelle selon « la rentabilité et l'efficacité de l'action judiciaire » ; avantages d'emploi fonctionnel attachés au grade ; trois grades | rupture |
+| [1991-1993](#r-statutaire-indemnite-1991) | la deuxième partie devient mensuelle, ses critères sont abrogés ; puis un taux mensuel unique par grade | rupture |
+| [1996-2011](#r-statutaire-indemnite-1996) | majorations par tranches annuelles, de 46 à 120 D selon le grade et l'année | étapes |
+| [2012-2013](#r-statutaire-indemnite-2012) et [2018](#r-statutaire-indemnite-2018) | deux majorations hors cycle, par grade : 900 / 700 / 550 D, puis 1 000 / 950 / 900 D | étapes, hors cycle |
+| [2016](#r-statutaire-indemnite-2016) | chaque augmentation générale des agents est transposée aux magistrats par un décret propre | rupture |
+| [2001](#r-statutaire-permanence-2001) et [2018](#r-statutaire-poles-2018) | indemnité de permanence ; indemnité des pôles judiciaires | naissances de dispositifs |
+
+: Les ruptures de la rémunération des magistrats de l'ordre judiciaire, 1985-2028 {#tbl-statutaire-magistrats-ruptures}
+
+<!-- TODO (rédacteur) : figure de l'indemnité de magistrature par grade, 1985-2028 : majorations cumulées (établies) et niveau calculé (en pointillé, légende « calcul »), en dinars courants et en dinars constants de 2015. Préalable : verser la série dans tunisia-data puis dans _seriescache ; lecture par figtools.series(). -->
+
+### Le traitement de base : la grille commune depuis 1999 {#sec-statutaire-magistrats-grille}
+
+Depuis septembre 1999, les trois grades judiciaires sont tous en catégorie A, sous-catégorie A1, et leurs échelons correspondent aux niveaux de rémunération de la grille des agents de l'État (@sec-ri-traitement-base) ([décrets de 1999](#r-coeur-magistrats-1999)). Ce qui distingue le magistrat est le nombre d'échelons de chaque grade :
+
+| Grade | Fonctions (loi organique de 1985) | Échelons | Niveaux de rémunération |
+|---|---|---:|---|
+| Troisième grade | conseillers à la Cour de cassation, avocats généraux | 17 | 9 à 25 |
+| Deuxième grade | conseillers à la cour d'appel, substituts du procureur général | 20 | 6 à 25 |
+| Premier grade | juges des tribunaux de première instance, substituts du procureur de la République | 25 | 1 à 25 |
+
+: Grades, échelons et niveaux des magistrats de l'ordre judiciaire, depuis 1999 {#tbl-statutaire-magistrats-grades}
+
+- **Avant 1999, une grille propre.** Les magistrats avaient un échelonnement indiciaire propre, de 1971, que les décrets de 1999 abrogent.
+- **Le passage.** Les magistrats du premier grade alors classés en A2 sont reclassés en A1 ; l'indemnité compensatrice du passage à la grille de 1997 cesse au 4^e^ échelon pour les deuxième et troisième grades, dès le reclassement pour le premier.
+
+### L'indemnité de magistrature, 1985-2028 {#sec-statutaire-magistrats-indemnite}
+
+L'indemnité de magistrature est une indemnité mensuelle propre aux magistrats, fixée par grade et majorée par décret propre. Elle existe depuis 1980 : le décret de 1985 abroge le décret n° 80-958, qui attribuait déjà une indemnité de magistrature aux magistrats de l'ordre judiciaire ([décret de 1985, art. 3](#r-statutaire-indemnite-1985)).
+
+- **1985, deux parties.** Une partie mensuelle de 135, 110 et 90 dinars (troisième, deuxième et premier grade) et une partie servie en fin d'année, « sur la base de la rentabilité et de l'efficacité de l'action judiciaire », qui « varie entre zéro (0) et cinquante pour cent (50 %) des taux sus-indiqués ». L'indemnité est soumise à retenue pour pension mais « exempte des retenues relatives à l'impôt ». Le même jour, l'État attache à chaque grade les indemnités et avantages d'un emploi fonctionnel (@sec-statutaire-magistrats-autres) ; deux mois plus tard, le corps passe de six à trois grades et la grève lui est interdite ([loi organique de 1985](#r-statutaire-magistrature-1985)).
+- **1989-1990, deux étapes.** La deuxième partie est servie chaque trimestre à titre d'avance ; la partie mensuelle est relevée en trois tranches d'octobre 1990 à octobre 1992, jusqu'à 385, 310 et 265 dinars.
+- **1991-1993, un taux unique.** En 1991, la deuxième partie est « payée mensuellement et à terme échu » et l'arrêté qui fixait les critères d'appréciation de l'activité est abrogé ([1991](#r-statutaire-indemnite-1991)) ; en décembre 1993, l'État fixe « les taux mensuels de l'indemnité de magistrature », en trois tranches jusqu'à 802,5, 680 et 595 dinars au 1^er^ octobre 1995 ([1993](#r-statutaire-indemnite-1993)).
+- **1996-2011, des tranches.** L'indemnité est majorée chaque 1^er^ octobre par tranches d'un programme triennal d'« augmentation globale », au rythme des augmentations des agents de l'État (@sec-cycles-revalorisation) : de 46 à 69 dinars par tranche de 1996 à 2007, de 70 à 100 dinars de 2008 à 2010, 85 à 120 dinars en 2011 ([registre](#r-statutaire-indemnite-1996)).
+- **2012-2013 et 2018, deux majorations hors cycle.** L'État majore l'indemnité de 500, 400 et 350 dinars au 1^er^ décembre 2012, puis de 400, 300 et 200 dinars au 1^er^ décembre 2013 ([2012](#r-statutaire-indemnite-2012)) ; de 500, 475 et 450 dinars au 1^er^ janvier 2018, puis encore au 1^er^ septembre 2018 ([2018](#r-statutaire-indemnite-2018)). Ces deux majorations, propres aux magistrats et différenciées par grade, sont d'un autre ordre de grandeur que les tranches d'environ 100 dinars des années précédentes.
+- **Depuis 2015-2016, la transposition des augmentations générales.** Le décret de 2016 accorde aux magistrats « l'augmentation générale » et « l'augmentation spécifique » de la sous-catégorie A1 ([2016](#r-statutaire-indemnite-2016)). Depuis, à chaque cycle de négociation, un décret propre aux magistrats suit le décret des agents dans les mêmes semaines — en 2019, 2020, 2022 et 2026 — et intègre l'augmentation « dans l'indemnité de magistrature de chaque corps ». Le montant est alors uniforme entre grades et égal à celui de la sous-catégorie A1, sauf en 2018 (@sec-ri-augmentations-generales).
+- **Une indemnité ponctuelle en 2019.** Une « indemnité complémentaire occasionnelle » égale aux montants nets de la première tranche de 2019 dus pour décembre 2018, janvier et février 2019 est versée une fois aux magistrats en activité, sur les crédits d'interventions du budget de 2019 ([2019](#r-statutaire-indemnite-2019-occasionnelle)).
+
+<!-- TODO (documentaliste) : contexte des majorations de 2012-2013 et de 2018 (mouvements des magistrats, Association des magistrats tunisiens, négociations de 2012 et de 2017) : sources de l'époque à lire. Article 1er du décret n° 2019-285 : texte arabe incomplet ; fascicule arabe n° 24 de 2019 à obtenir (absent du corpus, 404 sur pist.tn). -->
+
+:::: {.chronologie-repliable titre="Indemnité de magistrature (ordre judiciaire) : taux et majorations par grade, textes date par date, 1985-2028"}
+
+Montants mensuels en dinars courants, par grade (troisième / deuxième / premier). Jusqu'en 1995, les lignes donnent un taux ; à partir de 1996, une majoration qui s'ajoute au taux en vigueur.
+
+| Date d'effet | Portée | Texte et articles | Nature | 3^e^ grade | 2^e^ grade | 1^er^ grade |
+|---|---|---|---|---:|---:|---:|
+| []{#r-statutaire-indemnite-1985}[1^er^ juin 1985]{.insecable} | rupture | décret n° 85-814 [@decret85-814, art. 1-4] | taux de la partie mensuelle ; partie annuelle de 0 à 50 % de ces taux ; exempte d'impôt ; abroge le décret n° 80-958 | 135 | 110 | 90 |
+| []{#r-statutaire-indemnite-1989}[1^er^ avril 1989]{.insecable}<br>[1^er^ avril 1990]{.insecable} | étape — de 1985 | décret n° 89-464 [@decret89-464] | plafond mensuel de la deuxième partie, servie chaque trimestre à titre d'avance | 135<br>202,5 | 122,5<br>190 | 112,5<br>180 |
+| []{#r-statutaire-indemnite-1990}[1^er^ octobre 1990]{.insecable}<br>[1^er^ octobre 1991]{.insecable}<br>[1^er^ octobre 1992]{.insecable} | étape — de 1985 | décret n° 90-1527 [@decret90-1527] | taux de la partie mensuelle | 235<br>335<br>385 | 190<br>270<br>310 | 160<br>230<br>265 |
+| []{#r-statutaire-indemnite-1991}[23 septembre 1991]{.insecable} | rupture | décret n° 91-1378 [@decret91-1378] | deuxième partie « payée mensuellement et à terme échu » ; abroge l'arrêté du 16 janvier 1986 sur les critères | | | |
+| []{#r-statutaire-indemnite-1993}[1^er^ octobre 1993]{.insecable}<br>[1^er^ octobre 1994]{.insecable}<br>[1^er^ octobre 1995]{.insecable} | rupture | décret n° 93-2455 [@decret93-2455] | « taux mensuels de l'indemnité de magistrature » | 652,5<br>722,5<br>802,5 | 550<br>610<br>680 | 485<br>535<br>595 |
+| []{#r-statutaire-indemnite-1996}[1^er^ octobre 1996]{.insecable} | étape — de 1993 | décret n° 96-1997 [@decret96-1997, art. 1-2] | majoration, première tranche d'une augmentation globale de 200 / 165 / 140 D pour 1996-1998 | 66 | 55 | 46 |
+| [1^er^ octobre 1997]{.insecable} | étape — de 1993 | décret n° 97-889 [@decret97-889] | majoration | 67 | 55 | 47 |
+| [1^er^ octobre 1998]{.insecable} | étape — de 1993 | décret n° 98-1424 [@decret98-1424] | majoration | 67 | 55 | 47 |
+| [1^er^ octobre 1999]{.insecable} | étape — de 1993 | décret n° 99-2310 [@decret99-2310] | majoration, première tranche d'une augmentation globale de 205 / 170 / 145 D pour 1999-2001 | 68 | 56 | 48 |
+| [1^er^ octobre 2000]{.insecable} | étape — de 1993 | décret n° 2000-1451 [@decret2000-1451] | majoration | 68 | 57 | 48 |
+| [1^er^ octobre 2001]{.insecable} | étape — de 1993 | décret n° 2001-1148 [@decret2001-1148] | majoration | 69 | 57 | 49 |
+| [1^er^ octobre 2002]{.insecable} | étape — de 1993 | décret n° 2002-2847 [@decret2002-2847] | majoration, première tranche d'une augmentation globale de 198,5 / 164,5 / 140,5 D pour 2002-2004 | 61,5 | 50,5 | 43,5 |
+| [1^er^ octobre 2003]{.insecable} | étape — de 1993 | décret n° 2003-2261 [@decret2003-2261] | majoration | 68 | 57 | 48 |
+| [1^er^ octobre 2004]{.insecable} | étape — de 1993 | décret n° 2004-2336 [@decret2004-2336] | majoration | 69 | 57 | 49 |
+| [1^er^ octobre 2005]{.insecable} | étape — de 1993 | décret n° 2005-3167 [@decret2005-3167, art. 1-3] | majoration, première tranche d'une augmentation globale de 198,5 / 164,5 / 140,5 D pour 2005-2007, « exclusive de toute autre majoration de même nature » | 66 | 54 | 46 |
+| [1^er^ octobre 2006]{.insecable} | étape — de 1993 | décret n° 2006-2850 [@decret2006-2850] | majoration | 66 | 55 | 47 |
+| [1^er^ octobre 2007]{.insecable} | étape — de 1993 | décret n° 2007-2322 [@decret2007-2322] | majoration | 66,5 | 55,5 | 47,5 |
+| [1^er^ octobre 2008]{.insecable} | étape — de 1993 | décret n° 2008-4084 [@decret2008-4084] | majoration, première tranche d'une augmentation globale de 299 / 248 / 212 D pour 2008-2010 | 99 | 82 | 70 |
+| [1^er^ octobre 2009]{.insecable} | étape — de 1993 | décret n° 2009-2159 [@decret2009-2159] | majoration | 100 | 83 | 71 |
+| [1^er^ octobre 2010]{.insecable} | étape — de 1993 | décret n° 2010-2521 [@decret2010-2521] | majoration | 100 | 83 | 71 |
+| [1^er^ octobre 2011]{.insecable} | étape — de 1993 | décret n° 2011-3290 [@decret2011-3290, art. 1-2] | majoration « au titre de l'année 2011 » | 120 | 100 | 85 |
+| []{#r-statutaire-indemnite-2012}[1^er^ décembre 2012]{.insecable}<br>[1^er^ décembre 2013]{.insecable} | étape — hors cycle | décret n° 2012-3554 [@decret2012-3554] | majoration en deux tranches | 500<br>400 | 400<br>300 | 350<br>200 |
+| []{#r-statutaire-indemnite-2015}[1^er^ janvier 2015]{.insecable} | étape — premier montant uniforme | décret gouvernemental n° 2015-463 [@decret2015-463, art. 1er] | majoration « au titre de l'année 2014 », trois ordres | 50 | 50 | 50 |
+| []{#r-statutaire-indemnite-2016}[1^er^ janvier 2016]{.insecable}<br>[1^er^ juillet 2016]{.insecable}<br>[1^er^ janvier 2017]{.insecable}<br>[1^er^ avril 2017]{.insecable}<br>[1^er^ avril 2018]{.insecable} | rupture — transposition | décret gouvernemental n° 2016-742 [@decret2016-742, art. 2-4] | augmentation générale (60 D) et augmentation spécifique (50 D) de la sous-catégorie A1, en alternance ; soumises à l'impôt et aux retenues sociales | 60<br>50<br>60<br>50<br>50 | 60<br>50<br>60<br>50<br>50 | 60<br>50<br>60<br>50<br>50 |
+| []{#r-statutaire-indemnite-2018}[1^er^ janvier 2018]{.insecable}<br>[1^er^ septembre 2018]{.insecable} | étape — hors cycle | décret gouvernemental n° 2017-1364 [@decret2017-1364, art. 1er] | majoration en deux tranches | 500<br>500 | 475<br>475 | 450<br>450 |
+| []{#r-statutaire-indemnite-2019}[1^er^ mars 2019]{.insecable} | étape — de 2016 | décret gouvernemental n° 2019-210 [@decret2019-210, art. 1er] | première tranche | 90 | 90 | 90 |
+| []{#r-statutaire-indemnite-2019-occasionnelle}décembre 2018 à février 2019 | ajustement — versement unique | décret gouvernemental n° 2019-285 [@decret2019-285] | indemnité complémentaire occasionnelle égale aux montants nets de la première tranche pour trois mois, versée une fois, soumise à l'impôt et aux retenues sociales (art. 2-4) | | | |
+| []{#r-statutaire-indemnite-2019b}[1^er^ juillet 2019]{.insecable}<br>[1^er^ janvier 2020]{.insecable} | étape — de 2016 | décret gouvernemental n° 2019-1132 [@decret2019-1132, art. 1-2] | deuxième et troisième tranches, versées à compter du 1^er^ janvier 2020 | 40<br>50 | 40<br>50 | 40<br>50 |
+| []{#r-statutaire-indemnite-2020}[1^er^ août 2020]{.insecable} | étape — de 2016 | décret gouvernemental n° 2020-768 [@decret2020-768, art. 1er] | majoration « intégrée dans l'indemnité de magistrature de chaque corps » | 90 | 90 | 90 |
+| []{#r-statutaire-indemnite-2022}[1^er^ octobre 2022]{.insecable}<br>[1^er^ janvier 2024]{.insecable}<br>[1^er^ janvier 2025]{.insecable} | étape — de 2016 | décret n° 2022-798 [@decret2022-798, art. 1er] | augmentation générale au titre de 2023, 2024 et 2025 | 100<br>100<br>100 | 100<br>100<br>100 | 100<br>100<br>100 |
+| []{#r-statutaire-magistrats-2026}[1^er^ janvier 2026]{.insecable}<br>[1^er^ janvier 2027]{.insecable}<br>[1^er^ janvier 2028]{.insecable} | étape — de 2016 | décret n° 2026-65 [@decret2026-65, art. 1-2] | augmentation au titre de 2026, 2027 et 2028, applicable aux pensions | 120<br>120<br>120 | 120<br>120<br>120 | 120<br>120<br>120 |
+
+: Indemnité de magistrature des magistrats de l'ordre judiciaire : taux et majorations mensuels par grade, en dinars courants, 1985-2028 {#tbl-statutaire-magistrature-indemnite}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré, avec une colonne en dinars constants de 2015 pour chaque montant. -->
+
+::::
+
+### Le niveau de l'indemnité en 2026 : un calcul {#sec-statutaire-magistrats-niveau}
+
+Aucun texte ne redonne le niveau de l'indemnité de magistrature après le taux du 1^er^ octobre 1995. Il se calcule en ajoutant à ce taux — 802,5, 680 et 595 dinars par mois aux troisième, deuxième et premier grades ([décret de 1993](#r-statutaire-indemnite-1993)) — les majorations publiées depuis (@tbl-statutaire-magistrature-indemnite). Le calcul vaut pour l'ordre judiciaire seulement et repose sur trois hypothèses :
+
+1. **Le taux de 1993 remplace les deux parties de 1985.** Le décret de 1993 fixe « les taux mensuels de l'indemnité de magistrature » sans dire s'il absorbe la deuxième partie ; si une deuxième partie subsiste après 1993, le niveau est supérieur à celui du calcul.
+2. **Le décret de 2017 pour l'ordre judiciaire est une majoration.** Sa colonne s'intitule « montant mensuel de l'indemnité de magistrature » ; le décret du même jour pour le Tribunal administratif parle du « montant mensuel de la majoration », et le calcul lit les deux de la même façon.
+3. **Aucune majoration ne manque à la série.** Aucun décret de majoration n'est identifié pour 2014 ni pour 2021 ; une majoration non identifiée relèverait le niveau d'autant.
+
+<!-- RECHERCHE r-magistrats-majorations-indemnite : décret majorant l'indemnité de magistrature publié entre décembre 2012 et avril 2026, autre que ceux du registre, en particulier pour 2014 et 2021 (voir docs/recherches.yml) -->
+
+Le calcul compte l'augmentation générale et l'augmentation spécifique de 2016-2018, toutes deux intégrées à l'indemnité ; il écarte l'indemnité occasionnelle de 2019, versée une fois.
+
+| Date d'effet | 3^e^ grade<br>(D courants) | 3^e^ grade<br>(D de 2015) | 2^e^ grade<br>(D courants) | 2^e^ grade<br>(D de 2015) | 1^er^ grade<br>(D courants) | 1^er^ grade<br>(D de 2015) |
+|---|---:|---:|---:|---:|---:|---:|
+| [1^er^ octobre 1995]{.insecable} | 802,5 | 1 676 | 680 | 1 420 | 595 | 1 243 |
+| [1^er^ octobre 1998]{.insecable} | 1 002,5 | 1 888 | 845 | 1 591 | 735 | 1 384 |
+| [1^er^ octobre 2001]{.insecable} | 1 207,5 | 2 111 | 1 015 | 1 774 | 880 | 1 538 |
+| [1^er^ octobre 2004]{.insecable} | 1 406 | 2 245 | 1 179,5 | 1 884 | 1 020,5 | 1 630 |
+| [1^er^ octobre 2007]{.insecable} | 1 604,5 | 2 331 | 1 344 | 1 953 | 1 161 | 1 687 |
+| [1^er^ octobre 2010]{.insecable} | 1 903,5 | 2 438 | 1 592 | 2 039 | 1 373 | 1 759 |
+| [1^er^ octobre 2011]{.insecable} | 2 023,5 | 2 504 | 1 692 | 2 093 | 1 458 | 1 804 |
+| [1^er^ décembre 2013]{.insecable} | 2 923,5 | 3 229 | 2 392 | 2 642 | 2 008 | 2 218 |
+| [1^er^ janvier 2015]{.insecable} | 2 973,5 | 2 974 | 2 442 | 2 442 | 2 058 | 2 058 |
+| [1^er^ septembre 2018]{.insecable} | 4 243,5 | 3 624 | 3 662 | 3 127 | 3 228 | 2 757 |
+| [1^er^ août 2020]{.insecable} | 4 513,5 | 3 419 | 3 932 | 2 979 | 3 498 | 2 650 |
+| [1^er^ octobre 2022]{.insecable} | 4 613,5 | 3 053 | 4 032 | 2 668 | 3 598 | 2 381 |
+| [1^er^ janvier 2025]{.insecable} | 4 813,5 | 2 584 | 4 232 | 2 272 | 3 798 | 2 039 |
+| [1^er^ janvier 2026]{.insecable} | 4 933,5 | | 4 352 | | 3 918 | |
+| [1^er^ janvier 2028]{.insecable} | 5 173,5 | | 4 592 | | 4 158 | |
+
+: Niveau mensuel calculé de l'indemnité de magistrature (ordre judiciaire), par grade, en dinars courants et en dinars constants de 2015, 1995-2028 {#tbl-statutaire-magistrature-niveau}
+
+*Note de lecture.* Calcul : taux du 1^er^ octobre 1995 et majorations du registre, sous les trois hypothèses ci-dessus ; aucun texte n'énonce ces niveaux. Dinars constants : chaque montant est divisé par l'indice annuel moyen des prix à la consommation de l'année de la date d'effet, ramené à 100 en 2015 — indice de l'Institut national de la statistique jusqu'en 2014 [@ins-annuaire-statistique], indice en base 2015 de la Banque centrale à partir de 2015 [@bct-ra] ; les deux séries se raccordent en 2015, qui vaut 100 par définition de la base. Les dates en cours d'année sont déflatées par l'indice annuel moyen, ce qui est une approximation. Les cases de 2026 et 2028 sont vides : l'indice de ces années n'est pas publié.
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré. -->
+<!-- TODO (documentaliste) : un texte qui redonne le niveau de l'indemnité de magistrature après 1995 (arrêté, circulaire, rapport de la Cour des comptes, projet annuel de performance de la mission Justice) remplacerait le calcul. -->
+
+- **Ce qui est établi : les majorations cumulées.** Du 1^er^ octobre 1995 au 1^er^ janvier 2026, les majorations publiées ajoutent 4 131, 3 672 et 3 323 dinars par mois aux troisième, deuxième et premier grades ; 4 371, 3 912 et 3 563 dinars au 1^er^ janvier 2028.
+- **En dinars de 2015, le niveau calculé culmine en septembre 2018**, après la seconde majoration hors cycle, puis recule : au 1^er^ janvier 2025, il est inférieur à celui du 1^er^ janvier 2015 pour les trois grades.
+
+### Les autres indemnités : emploi fonctionnel, permanence, pôles {#sec-statutaire-magistrats-autres}
+
+Trois éléments s'ajoutent à l'indemnité de magistrature : les avantages d'un emploi fonctionnel attachés au grade, une [indemnité de permanence](#g-indemnite-de-permanence-magistrats) et une indemnité des pôles judiciaires.
+
+- **Les avantages d'un emploi fonctionnel attachés au grade, depuis 1985.** Le magistrat qui n'occupe pas d'emploi fonctionnel reçoit les indemnités et avantages de directeur d'administration centrale au troisième grade, de sous-directeur au deuxième, de chef de service au premier grade après cinq ans ; avant cinq ans, une indemnité spéciale de sujétion de 630 dinars par an, exempte d'impôt ([1985](#r-statutaire-fonctionnel-1985)). Depuis le 1^er^ octobre 2004, les avantages de sous-directeur s'étendent au premier grade à partir du 4^e^ échelon, ceux de chef de service aux autres magistrats du premier grade ([2004](#r-statutaire-fonctionnel-2004)).
+- **L'indemnité de permanence, depuis 2002.** Pour les séances tenues hors des heures de service — vendredi après-midi et samedi pour le siège, tous les jours pour le parquet et l'instruction —, l'État crée une indemnité mensuelle de 280, 230 et 195 dinars selon le grade, soumise à l'impôt et aux retenues sociales, en vigueur au 1^er^ janvier 2002 ([2001](#r-statutaire-permanence-2001)). Les magistrats détachés auprès de l'État, des collectivités locales et des établissements publics administratifs la reçoivent aux mêmes montants ([2003](#r-statutaire-permanence-2003)).
+- **L'indemnité des pôles judiciaires, depuis 2018.** Les magistrats qui exercent au pôle judiciaire de lutte contre le terrorisme et au pôle judiciaire économique et financier reçoivent une indemnité des charges spéciales de 300 dinars par mois, soumise à l'impôt et aux retenues sociales, non cumulable avec une indemnité couvrant les mêmes charges ([2018](#r-statutaire-poles-2018)).
+
+<!-- TODO (documentaliste) : montants de l'indemnité de permanence depuis 2009 (décrets n° 2009-2826, 2009-2791 et 2009-2792, JORT n° 80 de 2009) : la série s'arrête ici à 2002 ; indemnité de permanence au Tribunal administratif et à la Cour des comptes (décrets n° 2001-2775 et 2001-2776, sans clé) ; décrets n° 2006-1379 (complète 2004-2207), 2000-1344 (prime de rendement), 2019-654 (heures hors service) ; arrêtés de 1986 sur la partie annuelle de 1985. -->
+
+:::: {.chronologie-repliable titre="Autres indemnités des magistrats : emploi fonctionnel, permanence, pôles, montants et textes, 1985-2018"}
+
+| Date d'effet | Portée | Texte et articles | Ce qui change |
+|---|---|---|---|
+| []{#r-statutaire-fonctionnel-1985}[1^er^ juin 1985]{.insecable} | rupture | décret n° 85-813 [@decret85-813, art. 1-2] | indemnités et avantages de directeur d'administration centrale (3^e^ grade), de sous-directeur (2^e^ grade), de chef de service (1^er^ grade, cinq ans) ; indemnité spéciale de sujétion de 630 D par an au 1^er^ grade de moins de cinq ans, exempte d'impôt |
+| []{#r-statutaire-permanence-2001}[1^er^ janvier 2002]{.insecable} | naissance d'un dispositif | décret n° 2001-2125 [@decret2001-2125, art. 2-5] | indemnité de permanence : 280 / 230 / 195 D par mois (3^e^ / 2^e^ / 1^er^ grade) ; soumise à l'impôt et aux retenues retraite, prévoyance et capital décès |
+| []{#r-statutaire-permanence-2003}[1^er^ janvier 2002]{.insecable} | étape — de 2001 | décret n° 2003-122 [@decret2003-122, art. 1-2] | indemnité de permanence étendue aux magistrats des trois ordres détachés ; les montants compensatoires antérieurs cessent |
+| []{#r-statutaire-fonctionnel-2004}[1^er^ octobre 2004]{.insecable} | étape — de 1985 | décret n° 2004-2207 [@decret2004-2207, art. 1-3] | avantages de sous-directeur au 1^er^ grade à partir du 4^e^ échelon ; de chef de service aux autres magistrats du 1^er^ grade ; abroge le décret de 1985 |
+| []{#r-statutaire-poles-2018}[1^er^ janvier 2018]{.insecable} | naissance d'un dispositif | décret gouvernemental n° 2018-73 [@decret2018-73, art. 1-6] | indemnité des charges spéciales des pôles judiciaires de lutte contre le terrorisme et économique et financier : 300 D par mois ; liste par arrêté du ministre de la Justice sur avis du Conseil supérieur de la magistrature |
+
+: Autres indemnités des magistrats de l'ordre judiciaire, 1985-2018 {#tbl-statutaire-magistrats-autres}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré, avec les montants en dinars constants de 2015. -->
+
+::::
+
+### Le Tribunal administratif et la Cour des comptes {#sec-statutaire-magistrats-ta-cdc}
+
+Les magistrats du Tribunal administratif et les membres de la Cour des comptes sont payés sur le même modèle que ceux de l'ordre judiciaire : un traitement de base de la grille civile et une indemnité de magistrature propre à chaque corps. Les décrets de 2017 désignent leurs membres « rangés à partir du 10^e^ niveau de la sous-catégorie A1 de la grille des salaires » ([Tribunal administratif](#r-statutaire-ta-2017), [Cour des comptes](#r-statutaire-cdc-2017)).
+
+- **Des majorations parallèles.** La Cour des comptes reçoit en 2012-2013 la même majoration hors cycle que l'ordre judiciaire, de 500, 400 et 350 dinars puis de 400, 300 et 200 dinars selon le grade ([2012](#r-statutaire-cdc-2012)) ; les deux corps reçoivent en 2018 deux majorations de 500, 475 et 450 dinars selon le grade et la fonction. Depuis 2015, un décret unique majore l'indemnité des trois ordres (@tbl-statutaire-magistrature-indemnite).
+- **Le niveau de leur indemnité n'est pas calculé ici** : les textes de base de l'indemnité de magistrature de ces deux corps ne sont pas établis.
+
+<!-- TODO (documentaliste) : textes de base de l'indemnité de magistrature au Tribunal administratif et à la Cour des comptes (décrets n° 81-55 et 81-56 ; 85-907 et 85-908 ; 93-2453 et 93-2581) ; tableaux de concordance des grades avec les niveaux (décrets n° 2002-323 pour la Cour des comptes et 2002-1048 pour le Tribunal administratif, sans clé : bibliographe) ; décrets de 1996 à 2011 parallèles à ceux de l'ordre judiciaire (dont 2011-2093 et 2011-2094, 2012-3552, sans clé). -->
+
+:::: {.chronologie-repliable titre="Tribunal administratif et Cour des comptes : textes de rémunération et majorations, 1971-2018"}
+
+| Date | Portée | Corps | Texte et articles | Ce qui change |
+|---|---|---|---|---|
+| []{#r-statutaire-cdc-1971}[29 mai 1971]{.insecable} | point de départ | Cour des comptes | décret n° 71-222 [@decret-71-222] ; modifié par le décret n° 97-2134 du 10 novembre 1997 [@decret-97-2134] | rémunération du personnel de la Cour des comptes |
+| []{#r-statutaire-ta-1973}[14 février 1973]{.insecable} | point de départ | Tribunal administratif | décret n° 73-58 [@decret-73-58] ; modifié par le décret n° 97-2133 du 10 novembre 1997 [@decret-97-2133] | indemnités servies au personnel du Tribunal administratif |
+| []{#r-statutaire-cdc-2012}[1^er^ décembre 2012]{.insecable}<br>[1^er^ décembre 2013]{.insecable} | étape — hors cycle | Cour des comptes | décret n° 2012-3553 [@decret2012-3553] | majoration de l'indemnité de magistrature : 500 / 400 / 350 D, puis 400 / 300 / 200 D par mois selon le grade |
+| []{#r-statutaire-ta-2017}[1^er^ janvier 2018]{.insecable}<br>[1^er^ septembre 2018]{.insecable} | étape — hors cycle | Tribunal administratif | décret gouvernemental n° 2017-1361 [@decret2017-1361, art. 1er] | « montant mensuel de la majoration » : 500 D (premier président … conseillers à partir du 10^e^ niveau A1), 475 D, 450 D (conseillers adjoints), à chaque date |
+| []{#r-statutaire-cdc-2017}[1^er^ janvier 2018]{.insecable}<br>[1^er^ septembre 2018]{.insecable} | étape — hors cycle | Cour des comptes | décret gouvernemental n° 2017-1362 [@decret2017-1362, art. 1er] | majoration de 500 / 475 / 450 D selon la fonction, à chaque date |
+
+: Textes de rémunération du Tribunal administratif et de la Cour des comptes, 1971-2018 {#tbl-textes-statutaires}
+
+::::
+
+### Le Conseil supérieur de la magistrature {#sec-statutaire-magistrats-csm}
+
+Le [Conseil supérieur de la magistrature](#g-conseil-superieur-magistrature) statue sur la carrière des magistrats ; il ne fixe pas leur barème. La loi organique de 2016 refond sa gouvernance — nomination, promotion, mutation, détachement, retraite anticipée « conformément aux statuts » — et maintient les lois de 1967, 1970 et 1972 sauf dispositions contraires ; le barème de rémunération des magistrats n'y est pas touché. Elle confie en revanche à l'assemblée plénière du Conseil la fixation des indemnités et avantages de ses propres membres, « dans le cadre des dispositions budgétaires approuvées » ([loi organique de 2016, art. 4 et 42](#r-statutaire-csm-2016)). En 2022, le Conseil supérieur provisoire de la magistrature remplace le Conseil, et la grève est interdite aux magistrats « de tout ordre » ([décret-loi de 2022, art. 9](#r-statutaire-csm-2022)).
+
+<!-- TODO (documentaliste) : arrêtés du Conseil fixant les indemnités de ses membres (n° 02 du 13 novembre 2017 ; n° 2018-1 du 30 mars 2018, publié en arabe seulement) ; décret gouvernemental n° 2021-362 (indemnité des agents du Conseil) ; justice militaire (décret-loi n° 2011-70, loi organique n° 2023-6), visée par le décret n° 2026-65 sans en bénéficier. -->
+
+## Les militaires {#sec-statutaire-militaires .domicile-unique}
+
+Les officiers, sous-officiers et caporaux sont rangés sur une grille — indiciaire jusqu'en 1997, de niveaux de rémunération propre aux militaires et aux forces de sécurité intérieure depuis — ; les soldats et les appelés du contingent ont reçu, jusqu'en 2023 et 2011, une [solde](#g-solde-militaire) journalière hors de la grille. Les âges de mise à la retraite et les pensions sont exposés au livre [« Retraites »](../retraites/_secteur_public.html#sec-cnrps-militaires).
+
+| Date | Ce qui change | Portée |
+|---|---|---|
+| [1967](#r-statutaire-mil-grille-1967), [1972](#r-statutaire-mil-grille-1972) | grille indiciaire des officiers, puis de tous les cadres des trois armées | point de départ |
+| [1975](#r-statutaire-solde-1975) | solde journalière des soldats (solde spéciale progressive) et des appelés (solde spéciale), hors de la grille ; prime globale d'alimentation | rupture |
+| [1999](#r-statutaire-mil-niveaux-1999) | les cadres passent aux niveaux de rémunération | étape de la réforme de 1997-2000 |
+| [2011](#r-statutaire-appeles-2011) | la solde journalière des appelés devient une indemnité mensuelle, selon le diplôme | rupture |
+| [2023](#r-statutaire-non-classes-2023) | les soldats engagés et les soldats de 1^re^ classe entrent dans la grille | rupture |
+
+: Les ruptures de la rémunération militaire, 1967-2023 {#tbl-statutaire-militaires-ruptures}
+
+- **La grille des cadres, 1967-1997.** Les officiers de l'armée de terre reçoivent en 1967 des indices de 250 (sous-lieutenant) à 750 (général de corps d'armée) ; en 1972, une grille commune aux trois armées range officiers, sous-officiers en trois échelles selon le brevet et caporaux-chefs, de l'indice 115 à 800 ; les caporaux y entrent en 1975, aux indices 100 à 200 ; les grades de colonel-major et d'adjudant-major y sont placés en 1988 (@tbl-statutaire-mil-grille). La valeur du point qui convertissait l'indice en dinars relève du régime de la fonction publique (@sec-ancien-systeme-indiciaire).
+- **Les niveaux depuis 1999.** Depuis 1999, chaque grade est rangé dans une catégorie, de A1 (officiers généraux et supérieurs) à D (caporal-chef, caporal, soldat), et ses échelons correspondent aux niveaux de la grille des militaires et des forces de sécurité intérieure ; l'échelon s'avance après un an aux échelons 2 à 4, après deux ans au-delà pour la plupart des grades ([1999](#r-statutaire-mil-categories-1999)). Le montant en dinars de chaque niveau n'est établi par aucun texte identifié (@sec-statutaire-1997).
+- **La solde des soldats et des appelés, 1975-2023.** En 1975, l'État fixe la solde des militaires « non classés dans la grille indiciaire de la fonction publique » en deux barèmes journaliers : la solde spéciale progressive des soldats et matelots qui servent au-delà de la durée légale, en dix échelons, de 0,760 à 1,390 dinar par jour, et la solde spéciale des appelés, de 0,050 dinar (soldat) à 0,080 dinar (sergent) par jour ; une prime globale d'alimentation est versée « à l'ordinaire du corps » ([1975](#r-statutaire-solde-1975)). Le décret de 1979 reprend cette structure ([1979](#r-statutaire-solde-1979)). La solde spéciale du soldat appelé atteint 0,950 dinar par jour en 2007 (@tbl-statutaire-mil-solde).
+- **Le trou de 1979-1987.** Les décrets de 1987 et de 1988 visent des modificatifs du décret de 1979 datés du 16 mars 1982, des 18 juin et 2 août 1983 et du 4 juillet 1985, sans numéro : ces décrets ne sont pas identifiés ici. Les barèmes de cette période ne sont donc pas établis : la solde spéciale progressive passe de 1,725 dinar par jour à l'échelon 1 en 1979 à 3,406 dinars en 1988, sans étape connue.
+
+<!-- RECHERCHE r-mil-solde-79-96-1982-1985 : décrets modifiant le décret n° 79-96 entre 1979 et 1987, cités sans numéro (voir docs/recherches.yml) -->
+
+- **2011, une indemnité mensuelle pour les appelés.** Depuis le 1^er^ juillet 2011, les incorporés du service militaire actif et du service national hors des unités des forces armées reçoivent, pendant la durée légale et deux ans au plus au-delà, une indemnité mensuelle de 200 dinars s'ils sont titulaires d'un diplôme supérieur, de 100 dinars sinon, à la charge du ministère de la Défense nationale ([2011](#r-statutaire-appeles-2011)).
+- **2023, les soldats dans la grille.** Depuis la publication du décret de décembre 2023, les soldats engagés et les soldats de 1^re^ classe reçoivent le traitement de base de la grille des militaires, qui remplace « le traitement spécial progressif » ; ils sont classés au niveau qui leur donne un traitement égal ou immédiatement supérieur ([2023](#r-statutaire-non-classes-2023)). Le grade de soldat engagé entre au statut particulier le même jour.
+- **Les indemnités.** La plus ancienne est l'[indemnité pour charges militaires](#g-indemnite-charges-militaires) de 1967, annuelle et fonction du grade et de la situation de famille : de 28,440 dinars (sous-officier célibataire) à 155,520 dinars (officier général ou supérieur, trois enfants et plus) ([1967](#r-statutaire-indemnites-1967)). Ses taux de 1988 vont jusqu'à 1 200 dinars par an pour les généraux ; ce décret vise « le décret non publiable du 17 juin 1983 relatif à l'indemnité des chargés militaires » ([1988](#r-statutaire-charges-1988)). Le 1^er^ octobre 2013, l'État la majore de 110 dinars par mois pour tous les grades, du général de corps d'armée au soldat engagé ([2013](#r-statutaire-charges-2013)). Le décret du 22 octobre 2011 qui l'avait modifiée, cité par celui de 2013, n'est pas identifié ici.
+
+<!-- RECHERCHE r-mil-charges-militaires-2011 : décret n° 2011-225 du 22 octobre 2011 modifiant l'indemnité pour charges militaires (voir docs/recherches.yml) -->
+
+- **Le service militaire puis le service national.** Le service militaire, personnel à 20 ans, dure un an en 1967 ([1967](#r-statutaire-service-1967)) ; depuis 2004, le [service national](#g-service-national) d'un an prend deux formes, le service militaire actif et le service hors des unités des forces armées, où les affectés individuels gardent leur salaire contre une participation mensuelle au fonds du service national ([2004](#r-statutaire-service-2004)).
+
+<!-- TODO (documentaliste) : décret du 16 mars 1982 instituant l'indemnité de risque militaire (non identifié) et ses majorations de 1996-2005 (décrets n° 96-1992 … 2005-3174) ; décret n° 88-905 (sujétion spéciale et prime de rendement : champ à établir — art. 11 du décret n° 67-158 tel que modifié en 1976 — avant de citer ses montants) ; décret n° 88-908 (logement des militaires, sans clé : bibliographe) ; décrets n° 80-1405 et 81-1005 (grille des cadres) ; décrets n° 2014-1771 et 2014-1772 ; décret n° 2007-100 (transfert d'une part de l'indemnité spécifique au traitement de base), non identifié ; valeur du point applicable aux militaires avant 1997 (aucun texte militaire n'en fixe un). Contexte des réformes de 2011, 2013 et 2023 : aucune source d'époque lue. -->
+
+:::: {.chronologie-repliable titre="Solde spéciale et solde spéciale progressive des militaires : taux journaliers, textes date par date, 1975-2023"}
+
+Solde spéciale : appelés et soldats pendant la durée légale. Taux journaliers.
+
+| Date d'effet | Portée | Texte et articles | Sergent<br>(D par jour) | Caporal<br>(D par jour) | Soldat<br>(D par jour) | Soldat<br>(D de 2015 par jour) |
+|---|---|---|---:|---:|---:|---:|
+| []{#r-statutaire-solde-1975}[1^er^ juin 1975]{.insecable} | rupture | décret n° 75-590 [@decret-75-590, art. 1-3 et 14] | 0,080 | 0,065 | 0,050 | 0,434 |
+| []{#r-statutaire-solde-1979}[1^er^ janvier 1979]{.insecable} | étape — de 1975 | décret n° 79-96 [@decret-79-96, art. 1-3, 6 et 12] | 0,080 | 0,065 | 0,050 | 0,337 |
+| []{#r-statutaire-solde-1987}[1^er^ janvier 1987]{.insecable} | étape — de 1975 | décret n° 87-878 [@decret-87-878, art. 1 et 3] | 0,320 | 0,260 | 0,200 | 0,677 |
+| []{#r-statutaire-solde-1988}[1^er^ janvier 1988]{.insecable} | étape — de 1975 | décret n° 88-263 [@decret-88-263, art. 1 et 3] | 0,370 | 0,310 | 0,250 | 0,789 |
+| []{#r-statutaire-solde-2002}[1^er^ juin 2002]{.insecable} | étape — de 1975 | décret n° 2002-1973 [@decret2002-1973, art. 1 et 3] | 0,520 | 0,460 | 0,400 | 0,680 |
+| []{#r-statutaire-solde-2004}[1^er^ septembre 2004]{.insecable} | étape — de 1975 | décret n° 2004-2127 [@decret2004-2127, art. 1 et 3] | 0,670 | 0,610 | 0,550 | 0,878 |
+| []{#r-statutaire-solde-2006}[1^er^ janvier 2006]{.insecable} | étape — de 1975 | décret n° 2005-3382 [@decret2005-3382, art. 1 et 3] | 0,870 | 0,810 | 0,750 | 1,127 |
+| []{#r-statutaire-solde-2007}[1^er^ septembre 2007]{.insecable} | étape — de 1975 | décret n° 2007-2408 [@decret2007-2408, art. 1 et 3] | 1,070 | 1,010 | 0,950 | 1,380 |
+| []{#r-statutaire-solde-2010}publication du [12 novembre 2010]{.insecable} | ajustement | décret n° 2010-2935 [@decret2010-2935, art. 1-2] | 1,070 | 1,010 | 0,950 | 1,217 |
+| []{#r-statutaire-appeles-2011}[1^er^ juillet 2011]{.insecable} | rupture | décret n° 2011-626 [@decret2011-626, art. 1-5] | | | | |
+
+: Solde spéciale des appelés : taux journaliers par grade, 1975-2011 {#tbl-statutaire-mil-solde}
+
+Le décret de 2010 ajoute deux lignes pour les officiers qui servent pendant la durée légale — lieutenant 6,041 dinars, sous-lieutenant 4,866 dinars par jour — et remplace, dans le titre du décret de 1979, la « grille indiciaire » par la « grille des salaires mensuels de la fonction publique ». En 2011, la solde spéciale des appelés laisse la place à une indemnité de 200 dinars par mois (diplômés de l'enseignement supérieur) ou de 100 dinars (autres).
+
+Solde spéciale progressive : soldats et matelots au-delà de la durée légale. Taux journaliers aux échelons extrêmes.
+
+| Date d'effet | Portée | Texte et articles | Échelon 1<br>(D par jour) | Échelon 10<br>(D par jour) | Échelon 1<br>(D de 2015 par jour) | Ce qui change |
+|---|---|---|---:|---:|---:|---|
+| []{#r-statutaire-progressive-1975}[1^er^ juin 1975]{.insecable} | rupture | décret n° 75-590 [@decret-75-590, art. 2] | 0,760 | 1,390 | 6,601 | dix échelons, de 0,070 D en 0,070 D |
+| []{#r-statutaire-progressive-1977}[1^er^ février 1977]{.insecable} | étape — de 1975 | décret n° 77-268 [@decret-77-268] | | | | majoration uniforme de 0,425 D |
+| []{#r-statutaire-progressive-1977b}[15 mars 1977]{.insecable} | ajustement | décret n° 77-217 [@decret-77-217] | | | | abroge la retenue de solde pour punition de plus de huit jours d'arrêts de rigueur |
+| []{#r-statutaire-progressive-1978}[1^er^ janvier 1978]{.insecable} | étape — de 1975 | décret n° 78-337 [@decret-78-337] | | | | majoration uniforme de 0,270 D |
+| []{#r-statutaire-progressive-1979}[1^er^ janvier 1979]{.insecable} | étape — de 1975 | décret n° 79-96 [@decret-79-96, art. 2] | 1,725 | 2,355 | 11,640 | nouveau tableau |
+| []{#r-statutaire-progressive-1988}publication de [mai 1988]{.insecable} | étape — de 1975 | décret n° 88-909 [@decret-88-909, art. 1] | 3,406 | 4,036 | 10,747 | soldat de 1^re^ classe : 3,616 à 4,266 D |
+| []{#r-statutaire-non-classes-2023}publication du [15 décembre 2023]{.insecable} | rupture | décret n° 2023-738 [@decret2023-738, art. 1-6] ; décret n° 2023-740 [@decret2023-740] | | | | traitement de base de la grille des militaires à la place de la solde spéciale progressive ; échelons du soldat de 1^re^ classe (23) et du soldat engagé (25) |
+
+: Solde spéciale progressive des soldats : taux journaliers, 1975-2023 {#tbl-statutaire-mil-progressive}
+
+*Note de lecture.* Dinars constants : division par l'indice annuel moyen des prix à la consommation de l'année de la date d'effet, ramené à 100 en 2015 [@ins-annuaire-statistique]. Les taux de 1988 de la ligne « 1^re^ classe » sont reproduits tels qu'imprimés, avec des écarts irréguliers entre échelons.
+
+<!-- TODO (rédacteur) : remplacer ces deux tableaux par des tableaux engendrés. -->
+
+::::
+
+:::: {.chronologie-repliable titre="Grille des cadres militaires : indices, puis catégories et niveaux, textes date par date, 1967-2023"}
+
+| Date d'effet | Portée | Texte et articles | Ce qui change |
+|---|---|---|---|
+| []{#r-statutaire-mil-grille-1967}[1^er^ juillet 1967]{.insecable} | point de départ | décret n° 67-157 [@decret-67-157, art. 1-5] | officiers de l'armée de terre : sous-lieutenant 250-275, lieutenant 300-375, capitaine 360-475, commandant 450-525, lieutenant-colonel 520-580, colonel 580-630, général de brigade 650-675, de division 700, de corps d'armée 750 |
+| []{#r-statutaire-mil-grille-1972}[1^er^ janvier 1972]{.insecable} | étape | décret n° 72-381 [@decret-72-381, art. 1-7 et 9] | trois armées : aspirant 275, sous-lieutenant 300 ou 375, lieutenant 400-575, capitaine 500-650, commandant 600-675, lieutenant-colonel 675-750, colonel 750-775, général 800 ; sous-officiers en trois échelles selon le brevet (sergent 150-230 à adjudant-chef 430-550) ; caporal-chef 115-210 |
+| []{#r-statutaire-mil-grille-1975}[1^er^ juin 1975]{.insecable} | étape | décret n° 75-589 [@decret-75-589] | caporaux dans la grille : indices 100 à 200, dix échelons |
+| []{#r-statutaire-mil-grille-1988}publication de [mai 1988]{.insecable} | ajustement | décret n° 88-904 [@decret-88-904] | grade de « général » supprimé ; colonel-major à l'indice 775 ; adjudant-major de 525 à 650 |
+| []{#r-statutaire-mil-categories-1999}publication du [11 juin 1999]{.insecable} | étape — de 1997-2000 | décret n° 99-1207 [@decret-99-1207] | grades rangés de A1 (officiers généraux et supérieurs) à D (caporal-chef, caporal, soldat) ; un an aux échelons 2 à 4, deux ans au-delà pour la plupart des grades |
+| []{#r-statutaire-mil-niveaux-1999}publication du [11 juin 1999]{.insecable} | étape — de 1997-2000 | décret n° 99-1208 [@decret-99-1208, art. 1-6] | échelons par grade (officiers généraux 16, capitaine 25, caporal 25) ; officiers généraux aux niveaux 10 à 25 ; fin de l'indemnité compensatrice à l'échelon fixé |
+| []{#r-statutaire-mil-2009}[12 octobre 2009]{.insecable} | ajustement | décret n° 2009-3034 [@decret2009-3034] | nouvelle table des cadres, catégories et grades du statut particulier |
+| []{#r-statutaire-mil-niveaux-2023}publication du [15 décembre 2023]{.insecable} | étape — de 2023 | décret n° 2023-740 [@decret2023-740] | concordance étendue aux hommes de troupe : soldat de 1^re^ classe (23 échelons), soldat engagé (25) |
+
+: Grille des cadres militaires, 1967-2023 {#tbl-statutaire-mil-grille}
+
+::::
+
+:::: {.chronologie-repliable titre="Indemnités des militaires : charges militaires, responsabilité et commandement, taux et textes, 1967-2013"}
+
+| Date | Portée | Texte et articles | Ce qui change |
+|---|---|---|---|
+| []{#r-statutaire-indemnites-1967}[31 mai 1967]{.insecable} | point de départ | décret n° 67-158 [@decret-67-158, art. 1, 3, 4, 7 et 9] | armée de terre : charges militaires, taux annuels selon la situation de famille — officier général et supérieur 80,640 / 120,960 / 155,520 D ; officier subalterne 56,520 / 85,680 / 114,840 D ; sous-officier 28,440 / 44,640 / 60,840 D ; représentation des officiers généraux 300 D par an ; responsabilité et commandement 180 à 300 D ; risque 30 à 48 D ; Sahara 60 à 240 D |
+| []{#r-statutaire-mil-ipc-1982}[1^er^ février 1982]{.insecable} | étape — dispositif commun | décret n° 82-515 [@decret82-515, art. 1-3] | indemnité provisoire complémentaire, commune aux forces de sécurité intérieure (@tbl-statutaire-fsi-indemnites) |
+| []{#r-statutaire-commandement-1988}publication de [mai 1988]{.insecable} | ajustement | décret n° 88-906 [@decret-88-906] | responsabilité et commandement, taux annuels : de 420 D (lieutenant) à 1 380 D (officier général, chef d'état-major, inspecteur général) |
+| []{#r-statutaire-charges-1988}publication de [mai 1988]{.insecable} | ajustement | décret n° 88-907 [@decret-88-907] | charges militaires, taux annuels : généraux 1 200 D ; colonel-major 1 080 D ; adjudant-major 630 D ; vise « le décret non publiable du 17 juin 1983 » |
+| []{#r-statutaire-charges-2013}[1^er^ octobre 2013]{.insecable} | ajustement | décret n° 2013-3797 [@decret2013-3797] | charges militaires : majoration mensuelle uniforme de 110 D pour tous les grades, du général de corps d'armée au soldat engagé |
+
+: Indemnités des militaires, 1967-2013 {#tbl-statutaire-mil-indemnites}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré, avec les montants en dinars constants de 2015. -->
+
+::::
+
+:::: {.chronologie-repliable titre="Service militaire et service national : durée, formes et indemnités des élèves, textes date par date, 1967-2004"}
+
+| Date | Portée | Texte et articles | Ce qui change |
+|---|---|---|---|
+| []{#r-statutaire-service-1967}[31 mai 1967]{.insecable} | point de départ | loi n° 67-19 [@loi67-19, art. 1, 2, 4 et 9] | service militaire personnel à 20 ans ; service actif d'un an, fractionnable pour certaines catégories ; vingt-cinq ans d'obligations au total ; engagement de 18 à 23 ans |
+| []{#r-statutaire-eleves-1975}[1^er^ juin 1975]{.insecable} | ajustement | décret n° 75-588 [@decret-75-588] | indemnité forfaitaire mensuelle des élèves des écoles : élève-officier 42 D (1^re^ et 2^e^ années) à 62 D (4^e^ année et au-delà) ; élève sous-officier 7,500 D |
+| []{#r-statutaire-service-2004}[14 janvier 2004]{.insecable} | rupture | loi n° 2004-1 [@loi2004-1, art. 2-4, 8 et 10] | service national d'un an, de 20 à 35 ans : service militaire actif ou service hors des unités des forces armées ; les affectés individuels gardent leur salaire contre une participation au fonds du service national |
+
+: Service militaire et service national, 1967-2004 {#tbl-statutaire-mil-service}
+
+::::
+
+## Les forces de sécurité intérieure {#sec-statutaire-fsi .domicile-unique}
+
+Les quatre corps des [forces de sécurité intérieure](#g-forces-de-securite-interieure) — Sûreté nationale et police nationale, Garde nationale, protection civile, prisons et rééducation — relèvent d'un même statut général depuis 1982 et sont rangés depuis 2000 sur la grille des militaires ; leurs indemnités propres ne sont publiées que pour les agents des prisons. La réforme commune de 1982 est exposée plus haut (@sec-statutaire-1982) ; les âges de départ et les pensions, au livre [« Retraites »](../retraites/_secteur_public.html#sec-cnrps-militaires).
+
+| Corps | Statut particulier | Grille de 1984 | Concordance de 2000 |
+|---|---|---|---|
+| Sûreté nationale et police nationale | [1984](#r-statutaire-fsi-statuts-1984) | [indices 180 à 800](#r-coeur-grille-police-1984) | [grille des militaires et des forces de sécurité intérieure](#r-coeur-fsi-2000) |
+| Garde nationale | [1984](#r-statutaire-fsi-statuts-1984) | | grille des militaires et des forces de sécurité intérieure |
+| Protection civile | [1984](#r-statutaire-fsi-statuts-1984) | | grille des militaires et des forces de sécurité intérieure |
+| Prisons et rééducation | [1984](#r-statutaire-fsi-statuts-1984) ; Justice depuis [2001](#r-statutaire-prisons-2001) | | [sous-corps en tenue : grille des militaires ; sous-corps civil : grille civile](#r-coeur-prisons-2000) |
+
+: Statut et grille des quatre corps des forces de sécurité intérieure, 1984-2000 {#tbl-statutaire-fsi-corps}
+
+<!-- TODO (documentaliste) : grilles de 1984 de la Garde nationale, des prisons et de la protection civile (décrets n° 84-751, 84-752, 84-754, 84-756 : scans, lecture à l'image ; clés à créer) ; concordances de 2000 de ces trois corps (n° 2000-1013, 2000-1015, 2000-1019) ; statuts de 2006 (n° 2006-1160 à 2006-1168) à lire sur l'image du JORT français ; concordances de 2012 (n° 2012-1334 à 2012-1336, 2012-248). -->
+
+- **La grille de la police en 1984.** Le statut particulier et la grille indiciaire de la police sont du 30 avril 1984 : de l'indice 180 (gardien de la paix) à 800 (commissaire général de 1^re^ classe) ([grille de 1984](#r-coeur-grille-police-1984)). Les grades en tenue, de sous-lieutenant à colonel, y ont les mêmes bornes d'indices que les officiers de l'armée de 1972 (@tbl-statutaire-fsi-grille-police).
+- **La grille des militaires depuis 2000.** En mai 2000, les grades de la police, puis ceux des autres corps, sont mis en concordance avec la « grille des salaires des militaires et des forces de sécurité intérieure » ; l'indemnité compensatrice du passage de 1997 cesse pour les agents reclassés ([2000](#r-coeur-fsi-2000)). Dans les prisons, le sous-corps non soumis au port de la tenue est rangé sur la grille civile, le sous-corps en tenue sur celle des militaires ([prisons](#r-coeur-prisons-2000)). Le décret du 16 septembre 1997 qui fixe le montant de chaque niveau de cette grille n'est pas identifié ici ; le traitement de base des policiers, des gardes nationaux, des agents de la protection civile et des agents des prisons en tenue n'est donc établi en dinars par aucun texte identifié depuis 1997.
+
+<!-- RECHERCHE r-mil-traitement-base-1997 : barème commun aux militaires et aux forces de sécurité intérieure, visé par les concordances de 2000 (voir docs/recherches.yml) -->
+
+- **Aucune indemnité sans décret.** « Aucune compensation ou indemnité de quelque nature que ce soit ne peut être accordée aux agents des Forces de Sécurité Intérieure, si elle n'a fait l'objet d'un décret » ([loi de 1982, art. 29](#r-coeur-fsi-1982)). Les décrets publiés sont ponctuels : une indemnité forfaitaire spéciale de 10 dinars par mois pour les agents affectés à la protection des personnalités et à l'ordre public, en 1973, étendue en 1980 ; l'indemnité provisoire complémentaire de 1982, commune aux militaires, de 15 à 20 dinars par mois selon la catégorie, hors retraite et hors impôt (@tbl-statutaire-fsi-indemnites).
+- **Les quatre indemnités propres.** L'[indemnité de charge de sécurité](#g-indemnite-charge-securite), l'indemnité de risque, l'indemnité de commandement et de responsabilité et l'indemnité de logement sont attribuées par un décret du 1^er^ février 1992, que des décrets de 2004 et 2005 visent sans numéro, avec ses modificatifs de 1998 et de 2002 : ces textes ne sont pas identifiés ici. Les montants de ces indemnités pour les forces de sécurité intérieure du ministère de l'Intérieur ne sont donc établis par aucun texte identifié. Pour les agents des prisons, deux décrets publiés majorent l'indemnité de charge de sécurité : troisième tranche de 15 à 32 dinars par mois au 1^er^ juillet 2004 ; augmentation globale de 43,5 à 92 dinars pour 2005-2007, dont une première tranche de 14,5 à 30 dinars au 1^er^ juillet 2005, selon le grade ([2004](#r-statutaire-fsi-charge-2004), [2005](#r-statutaire-fsi-charge-2005)).
+
+<!-- RECHERCHE r-fsi-indemnites-1992 : décret du 1er février 1992 portant attribution des quatre indemnités propres aux forces de sécurité intérieure, et ses modificatifs (voir docs/recherches.yml) -->
+
+- **2001, les prisons passent à la Justice.** Les cadres et agents des prisons et de rééducation restent régis par le statut de 1982 mais « relèvent de l'autorité du ministre de la justice », sauf lorsqu'ils participent comme force de réserve au maintien de l'ordre ([2001](#r-statutaire-prisons-2001)). Leurs indemnités de 2004-2005 sont prises sur proposition du ministre de la Justice, et leur rémunération figure aujourd'hui dans la mission Justice, au programme « Prisons et rééducation » [@arp-cle-2025-11-07-justice, p. 4].
+- **Le statut, au-delà du salaire.** Le statut de 1982 accorde la gratuité des soins à l'agent et à sa famille et une permission annuelle de 45 jours ; la loi de 2000 y ajoute l'avancement d'échelon automatique, une [gratification exceptionnelle](#g-gratification-exceptionnelle) accordée par le Président de la République et un congé de fin de carrière de six mois en catégorie A, trois mois dans les autres ([2000](#r-statutaire-fsi-2000)). Les militaires et les agents envoyés en mission de maintien de la paix à l'étranger voient depuis 1992 leur temps compté double pour l'ancienneté et la pension ([1992](#r-statutaire-paix-1992)).
+
+<!-- TODO (documentaliste) : majorations de l'indemnité de charge de sécurité après 2005 et pour le ministère de l'Intérieur (aucun décret identifié) ; décret n° 90-2007 (charge de sécurité dans l'assiette de la retraite, à relire pour la date) ; décret n° 58-206 et modificatifs (sujétions de la Garde nationale) ; loi n° 88-60, art. 10 (réserve de l'art. 2 de la loi n° 82-70). Contexte de la réforme de 2000 : aucune source lue. -->
+
+:::: {.chronologie-repliable titre="Indemnités des forces de sécurité intérieure : textes et montants, 1973-2005"}
+
+| Date d'effet | Portée | Texte et articles | Ce qui change |
+|---|---|---|---|
+| []{#r-statutaire-fsi-forfait-1973}[1^er^ juillet 1973]{.insecable} | point de départ | décret n° 73-339 [@decret73-339, art. 1-2] | indemnité forfaitaire spéciale de 10 D par mois aux agents de la police et de la Garde nationale affectés à la sécurité du chef de l'État et des personnalités, à l'ordre public, à l'intervention |
+| []{#r-statutaire-fsi-forfait-1979}[1^er^ janvier 1979]{.insecable} | ajustement | décret n° 80-1244 [@decret80-1244, art. 1-2] | même indemnité, 10 D par mois, pour les corps actifs du ministère de l'Intérieur affectés à la protection des personnalités, à l'ordre public, à l'intervention et à la régie de la protection civile ; effet rétroactif |
+| []{#r-statutaire-fsi-ipc-1982}[1^er^ février 1982]{.insecable} | étape — dispositif commun | décret n° 82-515 [@decret82-515, art. 1-3] | indemnité provisoire complémentaire, militaires et quatre corps : 20 D (catégories A1 à A3), 17,500 D (B), 15 D (C et D) par mois ; sans retenue pour la retraite, hors impôt sur les traitements et salaires |
+| []{#r-statutaire-paix-1992}[9 juin 1992]{.insecable} | ajustement — commun aux militaires | loi n° 92-54 [@loi92-54, art. 1-4] | militaires et agents en mission de maintien de la paix à l'étranger : réputés en activité ; temps compté double pour le service, l'ancienneté et la pension ; avantages et primes maintenus |
+| []{#r-statutaire-fsi-charge-2004}[1^er^ juillet 2004]{.insecable} | étape — prisons | décret n° 2004-1335 [@decret2004-1335] | charge de sécurité des agents des prisons, troisième tranche : 32 D (colonel à commandant), 29 D (capitaine à sous-lieutenant), 20 D, 17 D, 15 D (agents temporaires) par mois |
+| []{#r-statutaire-fsi-charge-2005}[1^er^ juillet 2005]{.insecable} | étape — prisons | décret n° 2005-3168 [@decret2005-3168, art. 1-3] | augmentation globale 2005-2007 : 92 / 82,5 / 58 / 48,5 / 43,5 D par mois selon le groupe de grades ; première tranche : 30 / 27 / 19 / 16 / 14,5 D ; « exclusive de toute autre majoration de même nature » |
+
+: Indemnités des forces de sécurité intérieure, 1973-2005 {#tbl-statutaire-fsi-indemnites}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré, avec les montants en dinars constants de 2015. -->
+
+::::
+
+:::: {.chronologie-repliable titre="Grille indiciaire de la police : indices par grade, 1984"}
+
+Grille indiciaire des cadres et agents de la Sûreté nationale et de la police nationale, décret n° 84-749, art. 1-2 [@decret84-749, art. 1-2].
+
+| Grade | Indices | Échelons |
+|---|---|---:|
+| Commissaire général de 1^re^ classe | 800 | 1 |
+| Commissaire général de 2^e^ classe | 675-750 | 4 |
+| Commissaire supérieur | 610-720 | 4 |
+| Commissaire principal | 550-675 | 6 |
+| Commissaire | 375-650 | 10 |
+| Officier de police principal | 310-580 | 10 |
+| Officier de police | 250-550 | 11 |
+| Inspecteur chef | 280-500 | 9 |
+| Officier de police adjoint | 200-450 | 12 |
+| Inspecteur principal | 240-440 | 10 |
+| Inspecteur de police | 185-420 | 13 |
+| Colonel | 750-775 | 2 |
+| Lieutenant-colonel | 675-750 | 4 |
+| Commandant | 600-675 | 4 |
+| Capitaine | 500-650 | 7 |
+| Lieutenant | 400-575 | 9 |
+| Sous-lieutenant | 375 | 1 |
+| Brigadier en chef | 325-450 | 6 |
+| Brigadier | 290-405 | 7 |
+| Sous-brigadier | 245-365 | 8 |
+| Gardien de la paix | 180-320 | 13 |
+
+: Grille indiciaire de la police, 1984 {#tbl-statutaire-fsi-grille-police}
+
+::::
+
+:::: {.chronologie-repliable titre="Statut des forces de sécurité intérieure : obligations, réformes de 2000 et 2011, rattachement des prisons, textes 1982-2016"}
+
+| Date | Portée | Texte et articles | Ce qui change |
+|---|---|---|---|
+| []{#r-statutaire-fsi-obligations-1982}[6 août 1982]{.insecable} | point de départ | loi n° 82-70 [@loi82-70, art. 8-12, 19, 28 et 31] | autorisation du ministre de l'Intérieur avant mariage (art. 8) ; discrétion pendant dix ans après les fonctions (art. 9) ; grève interdite, syndicat interdit (art. 11-12) ; soins gratuits pour l'agent et sa famille (art. 19) ; nominations et avancements non publiés au *Journal officiel* (art. 28) ; permission annuelle de 45 jours (art. 31) |
+| []{#r-statutaire-fsi-2000b}[13 juin 2000]{.insecable} | étape | loi n° 2000-58 [@loi2000-58] | congé de fin de carrière : six mois (catégorie A), trois mois (autres) ; avancement d'échelon automatique ; gratification exceptionnelle ; conseils supérieurs de la police et des prisons devenus conseils d'honneur |
+| []{#r-statutaire-fsi-syndicat-2011}[25 mai 2011]{.insecable} | rupture | décret-loi n° 2011-42 [@decretloi2011-42] | droit syndical, grève toujours interdite ; déclarations des dirigeants syndicaux aux médias |
+| []{#r-statutaire-fsi-reintegration-2016}[11 janvier 2016]{.insecable} | ajustement | décret gouvernemental n° 2016-86 [@decret2016-86] | l'État prend en charge les cotisations de retraite des périodes d'interruption des agents des forces de sécurité intérieure et des douanes réintégrés en 2011 (livre « Retraites ») |
+
+: Statut des forces de sécurité intérieure, 1982-2016 {#tbl-statutaire-fsi-statut}
+
+::::
+
+## Les agents des douanes {#sec-statutaire-douanes .domicile-unique}
+
+Les [agents des douanes](#g-agents-des-douanes) portent des grades de type militaire — de l'auxiliaire et du caporal au général des douanes — mais sont payés sur la grille civile des agents de l'État, non sur celle des militaires et des forces de sécurité intérieure. Leur statut général de 1995 est exposé plus haut (@sec-statutaire-1995).
+
+| Grade | Échelons (1999) |
+|---|---:|
+| Général | 16 |
+| Colonel-major | 17 |
+| Colonel | 18 |
+| Lieutenant-colonel | 20 |
+| Commandant | 22 |
+| Capitaine | 24 |
+| Lieutenant-major, lieutenant, sous-lieutenant | 25 |
+| Adjudant-major | 21 |
+| Caporal-chef | 18 |
+| Caporal | 21 |
+| Auxiliaire des douanes | 25 |
+
+: Nombre d'échelons de quelques grades des douanes, depuis 1999 {#tbl-statutaire-douanes-grades}
+
+- **La grille civile depuis 1999.** Les échelons de chaque grade correspondent aux niveaux de rémunération de la grille civile de 1997 : le général des douanes, en sous-catégorie A1, occupe les niveaux 10 à 25 ([1999](#r-statutaire-douanes-niveaux-1999)). L'échelon s'avance après un an aux échelons 2, 3 et 4, après deux ans au-delà ([1999](#r-statutaire-douanes-cadences-1999)). En 2013, une nouvelle concordance s'aligne sur la grille civile modifiée en 2007 ([2013](#r-statutaire-douanes-grille-2013)).
+- **Une prime de risque uniforme depuis 2013.** Depuis le 1^er^ septembre 2013, la [prime de risque](#g-prime-de-risque) des agents des services douaniers vaut 100 dinars par mois pour tous les grades, de la catégorie A1 à la catégorie D ; elle remplace les taux par grade de l'indemnité de risque fixés en 1997 ([2013](#r-statutaire-douanes-risque-2013)). Le même jour, l'État majore de 110 dinars par mois les charges militaires (@sec-statutaire-militaires). Le décret du 20 janvier 1997 qui fixe les indemnités mensuelles fixes des douaniers, et son modificatif du 15 octobre 2009, cités par le décret de 2013 sans numéro, ne sont pas identifiés ici : les montants de ces indemnités, et ceux de l'indemnité de risque avant 2013, ne sont établis par aucun texte identifié.
+
+<!-- RECHERCHE r-douanes-indemnites-1997 : décret du 20 janvier 1997 portant détermination des indemnités mensuelles fixes des agents des services douaniers, et son modificatif du 15 octobre 2009 (voir docs/recherches.yml) -->
+
+- **Une part du produit des amendes et confiscations.** Depuis l'arrêté du 25 novembre 2019, le produit net des amendes et confiscations des affaires poursuivies par l'administration des douanes se répartit ainsi : 60 % au Trésor, 20 % à la mutuelle des agents des douanes, 5 % aux saisissants et intervenants directs, 14 % à un compte unifié partagé à parts égales, deux fois par an, entre tous les agents, fonctionnaires et ouvriers de la direction générale des douanes « sans égard au grade », 1 % à un compte de récompense des informateurs et de lutte contre la fraude ; l'informateur reçoit 5 % du produit net ([2019](#r-statutaire-douanes-amendes-2019)). Aucun mécanisme semblable n'existe dans les textes des forces de sécurité intérieure.
+
+<!-- TODO (documentaliste) : arrêté du 23 août 2011 abrogé par celui de 2019 (parts antérieures) ; édition française de l'arrêté de 2019 ; décret gouvernemental n° 2016-512 (statut des douanes) ; statuts particuliers et grilles antérieurs (73-210/211, 88-1200/1201, 91-1374/1375, 96-2312) ; décret n° 2013-1401 (table des grades, sans clé : bibliographe). Effectif du corps : un seul point publié (projet annuel de performance 2024 de la mission Finances, fin juin 2023), à ne publier qu'avec une série. -->
+
+:::: {.chronologie-repliable titre="Douanes : grades, échelons et niveaux, prime de risque et produit des amendes, textes date par date, 1996-2019"}
+
+| Date | Portée | Texte et articles | Ce qui change |
+|---|---|---|---|
+| []{#r-statutaire-douanes-cadences-1999}[27 décembre 1999]{.insecable} | étape | décret n° 99-2846 [@decret99-2846] | nombre d'échelons par grade (général 16 … auxiliaire 25) ; un an pour les échelons 2 à 4, deux ans au-delà ; à la promotion, échelon au traitement immédiatement supérieur |
+| []{#r-statutaire-douanes-niveaux-1999}[27 décembre 1999]{.insecable} | rupture — de 1997-2000 | décret n° 99-2847 [@decret99-2847, art. 1] | concordance avec les niveaux de la grille civile de 1997 ; général des douanes, A1, échelons 1 à 16 = niveaux 10 à 25 |
+| []{#r-statutaire-douanes-grille-2013}[22 avril 2013]{.insecable} | étape | décret n° 2013-1402 [@decret2013-1402, art. 1] | nouvelle concordance avec la grille civile modifiée en 2007 |
+| []{#r-statutaire-douanes-syndicat-2013}[30 juillet 2013]{.insecable} | rupture | loi organique n° 2013-28 [@loiorg2013-28] | un syndicat professionnel unifié et élu ; grève toujours interdite |
+| []{#r-statutaire-douanes-risque-2013}[1^er^ septembre 2013]{.insecable} | ajustement | décret n° 2013-3798 [@decret2013-3798, art. 1-3] | prime de risque : 100 D par mois pour tous les grades ; abroge les taux de l'indemnité de risque de 1997 |
+| []{#r-statutaire-douanes-amendes-2019}[25 novembre 2019]{.insecable} | rupture | arrêté du ministre des Finances [@arrete-2019-11-25-douane-amendes, art. 1-3, 7, 12-13 et 20] | produit net des amendes et confiscations : 60 % Trésor, 20 % mutuelle, 5 % saisissants, 14 % compte unifié, 1 % informateurs ; sous 200 D : 60 / 20 / 20 ; partage sans égard au grade ; abroge l'arrêté du 23 août 2011 |
+
+: Statut, grille et indemnités des agents des douanes, 1999-2019 {#tbl-statutaire-douanes}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré. -->
 
 ::::
 
 ## Les prélèvements sur la rémunération {#sec-statutaire-prelevements}
 
-Les âges de mise à la retraite des militaires sont exposés au livre [« Retraites »](../retraites/_secteur_public.html#sec-cnrps-militaires), l'impôt sur le revenu au livre [« Fiscalité »](../fiscalite/_impot_revenu.html#sec-irpp). Les agents de ces corps cotisent au régime de retraite du secteur public et supportent les mêmes prélèvements fiscaux que ceux du régime indiciaire.
-
-### La retraite
-
-Les [pensions civiles **et** militaires](#g-pensions-civiles-militaires) relèvent d'un régime commun, géré par la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) (CNRPS) : il n'existe pas de caisse militaire distincte. Ce régime est fixé par la loi n° 85-12 du 5 mars 1985 portant régime des pensions civiles et militaires de retraite et des survivants dans le secteur public [@loi85-12], modifiée notamment par la loi n° 2019-37 du 30 avril 2019 [@loi2019-37].
-
-Au sein de ce régime commun, les militaires ont des paramètres dérogatoires : des durées de services et des âges de jouissance différenciés selon le grade.
+Les âges de mise à la retraite, les durées de services et les pensions des militaires et des autres corps sont exposés au livre [« Retraites »](../retraites/_secteur_public.html#sec-cnrps-militaires), l'impôt sur le revenu au livre [« Fiscalité »](../fiscalite/_impot_revenu.html#sec-irpp). Les agents de ces corps relèvent du régime des [pensions civiles et militaires](#g-pensions-civiles-militaires), géré par la [Caisse nationale de retraite et de prévoyance sociale](#g-cnrps) (CNRPS) [@loi85-12].
 
 <!-- ÉTAT DU RENVOI, vérifié le 20 septembre 2026. Le livre « Retraites » (secteur public,
 section « Les militaires ») traite les âges de mise à la retraite (loi n° 85-12, art. 61, et
@@ -106,33 +673,26 @@ Ce n'est PAS une consigne de ce chapitre : la besogne est suivie là où elle se
 chapitre du secteur public du livre « Retraites », qui porte la consigne correspondante. Ne
 pas la rouvrir ici — elle y était suivie deux fois. -->
 
-### L'IRPP et la CSS
+Ces agents supportent la [retenue à la source](#g-retenue-a-la-source) au titre de l'[impôt sur le revenu des personnes physiques](#g-irpp) (IRPP) et la [contribution sociale de solidarité](#g-css) (CSS) instaurée par la loi de finances pour 2018 [@lf-2018, art. 53]. Deux éléments propres ont été exonérés d'impôt : l'indemnité de magistrature de 1985, « exempte des retenues relatives à l'impôt » ([décret de 1985, art. 2](#r-statutaire-indemnite-1985)), et l'indemnité provisoire complémentaire de 1982 des militaires et des forces de sécurité intérieure, hors impôt sur les traitements et salaires ([1982](#r-statutaire-fsi-ipc-1982)). Les indemnités des magistrats créées depuis 2001 — permanence, pôles — et leurs majorations depuis 2016 sont soumises à l'impôt et aux retenues sociales (@tbl-statutaire-magistrats-autres).
 
-Les corps à statut spécial sont soumis aux mêmes prélèvements transversaux que le régime indiciaire : la [retenue à la source](#g-retenue-a-la-source) au titre de l'[impôt sur le revenu des personnes physiques](#g-irpp) (IRPP) et la [contribution sociale de solidarité](#g-css) (CSS) instaurée par la loi de finances pour 2018 [@lf-2018, art. 53]. Aucune dérogation propre à ces corps n'est établie sur ce point.
-
-## Repères historiques {#sec-statutaire-historique}
-
-Ces corps ont toujours relevé de statuts particuliers, en marge des statuts généraux successifs de la fonction publique (1959, 1968, 1983). L'ordre des dates varie selon le corps (@tbl-statutaire-reperes) : les statuts des militaires et de la magistrature, de 1967, sont antérieurs à [la loi n° 68-12 du 3 juin 1968](#r-statutaire-statut-general-1968), statut général qui a précédé la loi n° 83-112 aujourd'hui en vigueur.
-
-| Année | Ce qui change |
-|---|---|
-| 1967 | les militaires ([[31 mai]{.insecable}](#r-statutaire-militaires-1967)) puis les magistrats de l'ordre judiciaire ([[14 juillet]{.insecable}](#r-statutaire-magistrature-1967)) reçoivent leur statut |
-| 1970 et 1972 | les membres de la Cour des comptes ([1970](#r-statutaire-cour-comptes-1970)), puis ceux du Tribunal administratif ([1972](#r-statutaire-ta-1972)), reçoivent le leur |
-| [1979](#r-statutaire-solde-1979) | la solde des militaires est fixée hors de la grille de la fonction publique |
-| [1982](#r-statutaire-fsi-1982) | les forces de sécurité intérieure reçoivent un statut général |
-| [1983](#r-statutaire-exclusion-1983) | le statut général de la fonction publique exclut de son champ les magistrats, les militaires et les forces de sécurité intérieure |
-| 1985 | le régime commun des pensions civiles et militaires, géré par la CNRPS, est fixé par la loi n° 85-12 [@loi85-12] |
-| [1995](#r-statutaire-douanes-1995) | les agents des douanes reçoivent un statut général |
-| [2016](#r-statutaire-csm-2016) | la gouvernance du Conseil supérieur de la magistrature est refondue, sans toucher au barème |
-| [2026](#r-statutaire-magistrats-2026) | l'État fixe par décret le programme et les montants de l'augmentation des salaires des magistrats des trois ordres pour 2026, 2027 et 2028 |
-
-: Les dates du régime statutaire autonome, 1967-2026 {#tbl-statutaire-reperes}
+<!-- TODO (documentaliste) : texte qui a mis fin à l'exonération d'impôt de l'indemnité de magistrature (décret n° 85-814, art. 2) — code de l'IRPP de 1989, décret de 1993 ? — et sort de l'exonération de l'indemnité provisoire complémentaire. -->
 
 ## Repères budgétaires et statistiques {#sec-statutaire-budget}
 
-Les effectifs et la masse salariale des corps de défense et de sécurité ne sont pas ventilés publiquement : ni la statistique de la fonction publique de l'Institut national de la statistique (INS), ni les rapports du ministère des Finances ne les distinguent. Aucune source identifiée ne fournit de série pluriannuelle officielle de leur évolution.
+Les crédits de rémunération sont votés par ministère, puis par mission. Les missions de la Défense, de l'Intérieur et de la Justice réunissent les corps de ce chapitre et des personnels civils ; le programme « Douane » de la mission Finances réunit les douaniers et les autres personnels de la direction générale des douanes. Une mission n'est donc pas un corps.
 
-- **La ventilation par ministère de l'INS porte sur un autre champ.** Classée par catégories statutaires A1 à D, elle recense le personnel civil relevant du régime indiciaire rattaché aux ministères — y compris ceux de la Défense, de l'Intérieur et de la Justice —, mais non les militaires, les agents des forces de sécurité intérieure ou les magistrats, qui en sont exclus [@ins-fonction-publique-2021]. Le recoupement statistique qui l'établit est exposé au chapitre du régime indiciaire (@sec-ventilation-ministere).
-- **La seule série longue accessible est la dépense militaire totale** recensée par la base de données du SIPRI [@sipri-milex]. Elle peut servir d'indicateur indirect de l'évolution de l'effort de défense, sous une réserve essentielle : il s'agit de la **dépense militaire totale**, et non de la seule masse salariale, qui n'en est qu'une composante.
+- **La seule série longue accessible sur la défense est la dépense militaire totale** recensée par la base de données du SIPRI [@sipri-milex]. Il s'agit de la **dépense militaire totale**, et non de la seule masse salariale, qui n'en est qu'une composante.
 
-<!-- TODO: construire la série SIPRI (Tunisie, USD constants + % du PIB) et la présenter en graphique/tableau ; à compléter, le cas échéant, par la masse salariale « Défense / Intérieur » via les lois de finances par mission (PLF/LF, finances.gov.tn). -->
+<!-- TODO (rédacteur) : refaire cette section selon le plan (docs/notes/plan-regimes-speciaux-remuneration.md, § 4.10 et § 6) : crédits de rémunération votés des missions Défense, Intérieur et Justice, 2011-2026, en dinars constants et en part du total (F2, registre replié) ; effectif autorisé 2021-2026 (T1) ; exécution, Cour des comptes 2022-2023 (T2) ; recrutements prévus pour les corps (T3) ; statistique de l'INS par ministère, sans la présenter comme un effectif de corps ; puis, à part et titrés comme rapports extérieurs, SIPRI (F3, dinars constants et part des dépenses publiques, pas de part du PIB) et effectifs des forces armées de l'IISS relayés par la Banque mondiale (F4, rupture de 1995). Sources : notes recrutement-départs-effectifs (§ 4), militaires (§ 6), magistrats (§ 8), sécurité-douanes (§ 9). -->
+
+## Ce qu'en dit l'économie {#sec-statutaire-economie}
+
+**La question.** Militaires, policiers et magistrats sont payés selon des barèmes que l'État fixe seul, sans marché de référence. L'économiste demande ce que le niveau de leur rémunération change : le nombre et la qualité des candidats, l'effort et l'efficacité au travail, la probité et, pour les juges, l'indépendance.
+
+**Ce que dit la théorie.** Deux résultats dominent. Le premier est celui du [salaire d'efficience](#g-salaire-d-efficience) : un salaire plus élevé augmente ce que l'agent perd s'il est révoqué, et donc le coût d'une faute ou d'un pot-de-vin ; mais l'effet dépend de la sanction — si la détection est rare ou les pots-de-vin élevés, le salaire qui élimine la corruption devient très élevé [@vanrijckeghem-weder-2001-corruption]. Pour les juges, le salaire n'améliore la performance que si le juge peut être sanctionné ou si la nomination trie les candidats ; l'inamovibilité supprime le premier canal [@choi-gulati-posner-2009-judges, p. 47]. Le second résultat porte sur la sélection : un salaire plus élevé élargit le vivier des candidats, au risque d'attirer des profils moins motivés par le service public, et il compense l'éloignement et le danger — c'est la [différence compensatrice](#g-difference-compensatrice) [@finan-olken-pande-2017-personnel-economics; @dalbo-finan-rossi-2013-state-capabilities].
+
+**Ce que mesure l'empirique.** Les mesures portent presque toutes sur les États-Unis. Pour l'armée de métier américaine depuis 1973, les études économétriques de l'offre d'engagements, passées en revue par Warner et Asch, trouvent une [élasticité](#g-elasticite-offre-travail) des engagements à la solde relative comprise entre 0,5 et 1,0 [@warner-asch-2001-all-volunteer, p. 184]. Pour la police, Mas compare l'activité des services du New Jersey après 383 arbitrages salariaux de 1978 à 1996 : quand le syndicat perd l'arbitrage, le taux d'élucidation par arrestation baisse d'environ 12 % et la criminalité déclarée augmente d'environ 5,5 % dans les mois qui suivent, d'autant plus que l'écart à la demande est grand [@mas-2006-police-pay, p. 785]. Pour les magistrats, une seule étude quantifiée existe : sur les cours suprêmes des cinquante États américains de 1998 à 2000, Choi, Gulati et Posner ne trouvent de lien entre le salaire et ni la productivité, ni la qualité mesurée par les citations, ni l'indépendance [@choi-gulati-posner-2009-judges, pp. 49-50]. Sur la corruption de l'ensemble des agents publics, dans 25 pays en développement de 1982 à 1994, Van Rijckeghem et Weder associent, en coupe entre pays, un salaire public passé de une à deux fois le salaire de l'industrie manufacturière à un indice de corruption meilleur d'environ un point sur six, sans effet significatif dans le temps au sein d'un même pays ; une élimination presque complète exigerait de trois à sept fois ce salaire [@vanrijckeghem-weder-2001-corruption]. Pour la Tunisie, aucune étude ne distingue un corps : les travaux disponibles mesurent l'écart de salaire entre public et privé pour l'ensemble des agents [@amara-khallouli-zidi-2017-tunisie; @bouassida-ellahga-2017-tunisie; @marouani-le-2023-tunisie].
+
+**Ce que le praticien retient.** Est établi, aux États-Unis, que les engagements militaires répondent à la solde. Restent débattus le lien entre salaire et corruption, que la coupe entre pays montre et que le suivi dans le temps ne retrouve pas, les auteurs discutant eux-mêmes le sens de la causalité, et le lien entre salaire et qualité des juges, qui repose sur une seule étude américaine et sur un indicateur de qualité que ses auteurs discutent. Les primes de risque et de sujétion des forces de sécurité sont peu étudiées, et aucun corps spécial du Maghreb ne l'est. Les données tunisiennes ne tranchent pas : l'enquête nationale sur la population et l'emploi n'identifie pas ces corps, et aucune évaluation tunisienne ne rapporte la rémunération d'un corps à son recrutement ou à son activité. Les ordres de grandeur étrangers ci-dessus ne se transposent pas.
+
+Littérature arrêtée en octobre 2026.
