@@ -3226,14 +3226,18 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
 - **Arabe** : `precis/ar/compensation/_quarto.yml` (tenu à la main) porte en commentaire les six
   chapitres, dont `_carburants.qmd` et `_exterieurs.qmd` ; décommenter chaque chapitre quand sa
   traduction est livrée, puis rendre le livre arabe.
-- **Bibliographie — clés manquantes, citées en clair dans le texte** (bibliographe) :
-  `bct-ra-1987` (dotation de 189 MD, citation sur la loi de finances pour 1987, p. 71) et
-  `bct-ra-1997` (dotation de 320 MD, p. 91) ; `decret78-316` (taxe unique à 7,120 D/hl) ;
-  `minenergie-opendata-prix-vente-petroliers` (moyennes annuelles 1990-2016, fichier aux
-  archives du web, **non versé à l'entrepôt**) ; `ins-bms` (présente dans « Retraites » seulement) ;
-  dix articles de presse de la frise 2002-2018 ; loi de finances pour 1981 et pour 1987, loi
-  n° 91-98, arrêtés des 11 octobre 1990 et 7 juillet 1992, arrêté du 10 mai 2024 (la loi n° 63-13,
-  caisse des transports routiers, est versée le 11 octobre 2026 : clé `loi63-13`). La collection Zotero « Compensation » reste à créer.
+- **Bibliographie** (bibliographe, état du 24 octobre 2026) : les clés `bct-ra-1987`, `bct-ra-1997`,
+  `decret78-316`, `minenergie-opendata-prix-vente-petroliers`, `ins-bms`, `lf-1981`,
+  `loi91-98-lf1992` et `loi86-106-lf1987` existent (le précédent état de cette liste était périmé).
+  Versées le 24 octobre 2026 (FR et AR, compensation) : `arrete-1990-10-11-cgc`,
+  `arrete-1992-07-07-cgc`, `arrete-2024-05-10-redevance-patisseries`, `lfc-2008`, `fipa-2002-06-electricite-aout-2000`,
+  `fipa-2003-08-gaz`, et dix-sept décrets de prélèvement (`decret93-1187`, `decret95-851`,
+  `decret95-1212`, `decret97-2509`, `decret2002-2227`, `decret2003-2048`, `decret2004-2314`,
+  `decret2005-213`, `decret2005-2931`, `decret2006-1`, `decret2006-4`, `decret2006-1835`,
+  `decret2007-8`, `decret2007-10`, `decret2007-1199`, `decret2009-2293`, `decret2015-50`). Restent : les articles de
+  presse de la frise des prix 2002-2018 (cités en clair dans le tableau, non versés) ; la collection
+  Zotero « Compensation », à créer ; la loi de finances pour 2024 (art. 45), fascicule
+  n° 144 de 2023 absent du corpus local et de pist.tn.
 - **Glossaire** (terminologue, 24 octobre 2026) : toutes les notions listées jusqu'ici existent
   et sont ancrées ; le mécanisme de 2009 est décrit dans `ajustement-automatique-prix-carburants`.
   Dix entrées ajoutées : `tranche-economique`, `tranche-normale`, `fonds-transition-energetique`,
@@ -3278,7 +3282,15 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     total, la Caisse n'y est pas nommée) ; ligne « compensation » du budget du ministère du
     commerce (rapports sur les finances publiques) rapprochée de la dotation de la BCT pour 2003,
     2006, 2008, 2009 et 2011 (ordre de grandeur, non montant ; égale en 2004 et 2010, écart en
-    2005 et 2007). **Restent** : montant versé de 1988-1990, 2000, 2001 et, au sens strict, des
+    2005 et 2007). **Seconde passe** : lois de règlement des gestions 1988 et 1989 lues
+    à l'image (totaux des fonds spéciaux seuls : 460,2 et 659,82 MD) ; lois de finances 1995-2011
+    balayées : la Caisse n'est nommée qu'en 2011 ; arrêtés des 11 octobre 1990 (302 → 320 MD) et
+    7 juillet 1992 (270 → 348 MD) lus ; prêts du Trésor de 95 MD (LF 1981, art. 58) et de 73 MD
+    (LF 1992, art. 77) versés ; suppression de la taxe spéciale de compensation à l'importation
+    (décret n° 78-315, LF 1981, art. 33) ; crédits du ministère du commerce des LFC 2008 et 2009.
+    Tableau III-1 du mémorandum de 1985 versé (`_exterieurs.qmd`) ; prix de la bouteille de
+    gaz du 4 août 1992 (3,800 D) lu à l'image ; arrêté du 10 mai 2024 sur les pâtisseries versé.
+    **Restent** : montant versé de 1988-1990, 2000, 2001 et, au sens strict, des
     cinq années précédentes (lois de règlement 1988 et 1989 à lire à l'image, budget économique,
     lois de finances complémentaires, tableaux des fonds spéciaux des lois 1995-2010 non
     ouverts). Recettes propres après 1999,
@@ -3290,9 +3302,12 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     `#sec-compensation-prelevements-importation`) : huit décrets lus à l'image ; ensuite : décret
     n° 93-1187 du 24 mai 1993 et modifications du décret n° 91-1391 (n° 2002-2227, 2009-2293,
     2015-50) : **lus et versés le 24 octobre 2026** (clés `decret93-1187`, `decret2002-2227`,
-    `decret2009-2293`, `decret2015-50`, FR et AR) ; restent les onze décrets de suspension ou de
-    réduction de 1997 à 2007 (intitulés seuls) et le produit annuel (fiche
-    `r-prelevements-importation-cgc`). Clés `decret90-1193`,
+    `decret2009-2293`, `decret2015-50`, FR et AR) ; **seconde passe** : onze décrets de suspension ou
+    de réduction de 1998 à 2007 lus (tableau `tbl-compensation-prelevements-suspensions`) et décrets
+    n° 95-851 (bovins, 8 mai 1995) et n° 95-1212 (fruits, 10 juillet 1995), tous deux au profit
+    de la Caisse (tableau `tbl-compensation-prelevements-1995`) ; restent les décrets de
+    suspension de 1998 à 2002 et d'après 2007, la suite du tarif de 1995 (p. 1534) et le produit
+    annuel (fiche `r-prelevements-importation-cgc`). Clés `decret90-1193`,
     `decret90-1194`, `decret91-1391`, `decret92-1340`, `decret93-1605`, `decret93-1924`,
     `decret93-2115`, `decret93-2116` versées (FR et AR, compensation).
   - **La Caisse reste un fonds spécial du Trésor** : elle figure aux tableaux des fonds spéciaux

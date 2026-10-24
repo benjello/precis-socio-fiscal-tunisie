@@ -4548,8 +4548,13 @@
     couverture: 'Lois de règlement des gestions 1988, 1989 et 1990 (lois n° 92-10, 93-49 et 94-63) et des gestions 2000, 2001, 2003, 2006, 2008 et 2009 (lois n° 2002-102, 2003-57, 2005-61, 2008-69, 2010-56 et 2013-6), fascicules français du corpus local : la loi de la gestion 1990 (JORT n° 48 de 1994, p. 1040-1046) lue en entier ne donne les fonds spéciaux du Trésor que par un total (tableau n° 6) ; les fascicules de 1992 et de 1993 n''ont pas de couche texte et n''ont pas été lus à l''image ; les couches texte de 2002 à 2013 ne portent pas la chaîne « compensation ». Rapports du ministère des Finances sur les finances publiques de 2005 à 2011 (copies dans tunisia-data, data/raw/minfinances/portail_ancien/rapports_finances_publiques/ ; texte arabe en formes de présentation, normalisé avant recherche) : la ligne « ministère du commerce (compensation) » du budget est lue, mais elle n''est pas désignée comme la dotation à la Caisse ; elle égale la dotation relayée par la BCT en 2004 et 2010 et s''en écarte en 2005 et 2007. Lacunes : lois de règlement 1988 et 1989 à l''image ; budget économique ; lois de finances complémentaires ; rapports de la Cour des comptes ; rapports du FMI.'
     couvert_jusqu_au: 2013-12-31
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Seconde passe du 24 octobre 2026. Lois de règlement des gestions 1988 (loi n° 92-10, JORT n° 7 de 1992) et 1989 (loi n° 93-49, JORT n° 35 de 1993), fascicules sans couche texte lus par reconnaissance de caractères : les fonds spéciaux du Trésor n''y figurent que par un total (460,2 MD pour 1988, 659,82 MD pour 1989), sans détail par fonds. Lois de finances de 1995 à 2011 (fascicules français du corpus local, couches texte chiffrées décodées) : aucune occurrence de « Caisse générale de compensation » dans un tableau de fonds spéciaux avant la loi de finances pour 2011 ; les lois de finances complémentaires n° 2008-76 et 2009-40 donnent les crédits du ministère du commerce (lignes versées au volume), celle de 2007 a ses tableaux en images non lues, celles de 2000, 2001, 2003 et 2006 ne sont pas indexées. Budgets économiques : hors du corpus local.'
+    couvert_jusqu_au: 2013-12-31
+    resultat: aucun
   a_faire:
-  - lois de règlement des gestions 1988 et 1989, à lire à l'image (fascicules sans couche texte)
   - budget économique et rapports sur le budget de l'État du ministère du plan, 1989-2012
   - lois de finances complémentaires 2000, 2001, 2003, 2006, 2008, 2009, 2011
   - tableaux des fonds spéciaux des lois de finances 1995 à 2010 (subvention du budget à la Caisse)
@@ -4575,6 +4580,13 @@
     couverture: 'jort_cache, numéro de décret (le décret n° 93-1187 est indexé sous « prelevement sur la viande bovine importee », JORT n° 42 de 1993, p. 797). Les quatre décrets sont lus : n° 93-1187 à l''image (fascicule sans couche texte) ; n° 2002-2227 à l''image de la page, la couche texte du fascicule étant chiffrée ; n° 2009-2293 et n° 2015-50 à la couche texte. Ils sont versés au volume. Non lus : les décrets de suspension ou de réduction du prélèvement n° 97-2509, 2003-2048, 2004-2314, 2005-213, 2005-2931, 2006-1, 2006-4, 2006-1835, 2007-8, 2007-10 et 2007-1199 ; édition arabe ; produit annuel des prélèvements.'
     couvert_jusqu_au: 2026-10-02
     resultat: partiel
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Seconde passe du 24 octobre 2026. Lus : les onze décrets de suspension ou de réduction n° 97-2509, 2003-2048, 2004-2314, 2005-213, 2005-2931, 2006-1, 2006-4 (articles sur le prélèvement seuls), 2006-1835, 2007-8, 2007-10 (articles sur le prélèvement seuls) et 2007-1199, à l''image ou à la couche texte ; les décrets n° 95-851 du 8 mai 1995 (tarif des bovins et de la viande bovine au profit de la Caisse, qui abroge les décrets n° 90-1193, 92-1340 et 93-1187) et n° 95-1212 du 10 juillet 1995 (fruits frais et secs, au profit de la Caisse, première page du tarif seule), cités par les précédents. Versés au volume. Lacunes : décrets de suspension de 1998 à 2002 et d''après 2007 (non cherchés par intitulé complet), suite du tarif du décret n° 95-1212, produit annuel des prélèvements, édition arabe.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: partiel
   a_faire:
-  - lire les décrets de suspension ou de réduction du prélèvement (n° 97-2509 à 2007-1199) pour savoir quels produits ils exonèrent
+  - décrets de suspension du prélèvement de 1998 à 2002 et d'après 2007 (intitulés « suspension … du prélèvement » dans jort_cache)
+  - suite du tarif du décret n° 95-1212 (JORT n° 57 de 1995, p. 1534)
   - produit annuel des prélèvements (loi de règlement, rapports de la BCT)
