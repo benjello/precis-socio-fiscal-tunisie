@@ -121,7 +121,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
 | Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Boissons alcoolisées rédigées le 23 octobre 2026 (décrets n° 93-2090, 97-1368, 2002-627, 2007-1977, 2013-929, 2015-1768, 2022-545 et lois de finances 2016, 2018, 2021) ; lacunes ci-dessous |
-| Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Lacunes de la mise à la retraite avant l'âge légal de 2009 : voir la section Retraites de ce fichier |
+| Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Départs avant l'âge légal (1987, 2009, 2017, 2022-2028) et limite d'âge des magistrats exposés ; lacunes restantes : voir la section Retraites de ce fichier |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans texte pour ses onze dates et montants (fiche `r-pnafn-montants-historiques`, passe du 24 octobre 2026 : presse et études en ligne confirment 70 D en 2011, 150 D en 2015, 180 D annoncé en janvier 2018, rien de plus) ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des autres textes repris de la couche texte (liste dans la section « Prestations sociales ») ; étude CRES-BAD de 2016 sur le PNAFN à récupérer ; budgets économiques 2012-2018 pour les paliers du PNAFN |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs ; régime de rémunération des dirigeants d'entreprises publiques rédigé le 23 octobre 2026 | Décret n° 78-885 et circulaire n° 78-45 (scans de 1978-1979 à océriser autrement) |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
@@ -756,21 +756,37 @@ liste qui suit le tableau, citations comprises. Restent :
   que les âges de mise à la retraite qu'il énumère, pas l'article 32. Le chapitre et
   le glossaire distinguent désormais ces dates ; vérifier séparément la date portée
   en amont pour le repère du modèle avant de le modifier.
-- **Mise à la retraite avant l'âge légal de 2009 : exposée** (§ `#sec-cnrps-retraite-avant-age-2009`,
-  note `docs/notes/retraites-depart-anticipe-2009.md`). Lacunes, toutes en TODO du chapitre :
-  coût du dispositif et exécution du compte spécial (lois de règlement 2009-2013, annexes des
-  fonds spéciaux, Cour des comptes, rapports de la CNRPS : à chercher) ; pourcentages
-  d'affectation de 2009, 2011 et 2012 (fiche `r-cnrps-fonds-retraite-avant-age-2009-taux`, miroir
-  iort et plein texte non interrogés) ; sort du compte spécial ; convention ministre des
-  finances - CNRPS (décret, art. 8) ; exposé des motifs et débats des chambres (30 juin et
-  4 juillet 2009), à obtenir ; application aux militaires, magistrats, forces de sécurité et
-  douanes (visas du décret) ; plafond du taux de liquidation sur la bonification ; page arabe de
-  l'avis n° 27-2009 ; ligne « 2009-39 » du guide statistique 2000-2010 à lire à l'image, et page
-  de la valeur 2 686 dans le guide 2010-2014. Restent à lire pour le même § : loi n° 87-7 et décret
-  n° 87-337 (JORT n° 18/1987, à lire), loi n° 2017-51 (JORT n° 53/2017, corpus local, fr et ar),
-  décret gouvernemental n° 2017-825 (JORT n° 60/2017, éd. ar. seule), arrêtés annuels 2022-2025.
-  Les rectificatifs du décret n° 82-1030 et de la loi n° 81-6 restent à relire sur les scans
-  locaux après identification exacte des pages : un numéro peut avoir des homonymes.
+- **Départs avant l'âge légal hors de la loi n° 85-12 : exposés (24 octobre 2026)** (§ `#sec-cnrps-departs-anticipes` :
+  `#sec-cnrps-retraite-anticipee-1987`, `#sec-cnrps-retraite-avant-age-2009`, `#sec-cnrps-retraite-avant-age-2017`,
+  programme de 2022 à 2028 dans `#sec-cnrps-reforme-2022` ; notes `docs/notes/retraites-depart-anticipe-2009.md` et
+  `docs/notes/regimes-speciaux-recrutement-departs-effectifs-2026-10-23.md`).
+  - **Fait** : loi n° 87-7 (art. 1 à 8, JORT n° 18/1987, pp. 363-364) et décret n° 87-337 (art. 1 à 9, pp. 369-370), lus à l'image ;
+    loi n° 2017-51 (art. 1 à 7, éd. ar. pp. 2126-2127 ; traduction française « pour information », p. 2303) et décret
+    gouvernemental n° 2017-825 (art. 1 à 10, éd. ar. pp. 2380-2381) ; dates d'effet par le dépôt des fascicules (6 juillet et 29 juillet 2017) ;
+    décret présidentiel n° 2022-542 et arrêtés annuels de délais 2022-2025 (pp. 1926, 34, 3653, 3784), art. 14 de la loi de
+    finances pour 2025 (prolongation jusqu'au 31 décembre 2028, éd. ar. p. 6420) ; sort du compte spécial de 2009 : abrogé par
+    l'art. 17, 4), de la loi de finances pour 2025 (éd. ar. p. 6422), solde transféré au fonds d'assurance contre la perte d'emploi
+    pour des motifs économiques ; recettes prévues du compte (tableaux « B » 2009-2013) et excédents transférés au budget
+    (lois de règlement, gestions 2015-2018) ; page de l'avis n° 27-2009 : non relevée (TODO conservé).
+  - **Reste, lisible au corpus ou à océriser** : pourcentages d'affectation de 2009, 2011 et 2012 (fiche
+    `r-cnrps-fonds-retraite-avant-age-2009-taux` : une quinzaine de fascicules français sans couche texte complète à océriser,
+    fascicules arabes de 2013 à 2016) ; dépenses du compte (fiche `r-cnrps-compte-retraite-avant-age-2009-depenses` : annexes des
+    lois de règlement) ; relecture à l'image des art. 9 à 13 du décret n° 2022-542 ; ligne « 2009-39 » du guide statistique 2000-2010
+    et page de la valeur 2 686 du guide 2010-2014 ; rectificatifs du décret n° 82-1030 et de la loi n° 81-6 (scans locaux, pages à identifier).
+  - **Reste, à obtenir** : exposé des motifs et débats des chambres (30 juin et 4 juillet 2009 ; 3 mars 1987) ; convention entre
+    le ministre des finances et la CNRPS (décret n° 2009-2085, art. 8) et convention du décret n° 2017-825 (art. 8) ; arrêté du
+    Premier ministre fixant le contingent de 1987 ; nombre de départs de 2017-2021 et de 2022-2025 ; décision sur la bonification
+    et le plafond du taux de liquidation (question de droit non tranchée par les textes).
+- **Magistrats de l'ordre judiciaire : limite d'âge (24 octobre 2026)** (`#sec-cnrps-magistrats`) : décret n° 85-614 (JORT n° 32, p. 599),
+  loi organique n° 85-79, art. 43 nouveau (JORT n° 59, p. 1024), loi organique n° 88-73 (JORT n° 47, p. 1019), d'après
+  `docs/notes/regimes-speciaux-magistrats-2026-10-23.md` ; loi n° 2019-37 relue en entier : aucune disposition propre aux
+  magistrats. **Reste** : sort du décret n° 85-614 après 1988 ; texte en vigueur de l'art. 42 de la loi n° 67-29 depuis la loi
+  organique n° 2016-34 ; limites d'âge du Tribunal administratif (décret n° 73-459) et de la Cour des comptes (décret n° 74-820).
+- **Reste à porter au livre (hors de la liste de cette passe)** : LF 1988 art. 60-61 et loi n° 2005-55 (anciens présidents, Premiers
+  ministres, présidents des chambres), LF 1989 art. 75-76, loi n° 2015-39 ; décret-loi n° 2011-48 (contribution de l'employeur des
+  membres du gouvernement et des gouverneurs) ; décret-loi n° 2020-30 du 10 juin 2020.
+  Les rectificatifs du décret n° 82-1030 et de la loi n° 81-6 restent à relire sur les scans locaux après identification exacte
+  des pages : un numéro peut avoir des homonymes.
 - **Barème d'actualisation — coefficients relevés.** Les 31 arrêtés de 1994 à 2024
   et leurs **1 488 coefficients** ont été relevés et contrôlés, y compris les images des
   tableaux de 1997 et 2024 ; voir `_secteur_prive.qmd#sec-rsna-bareme`. Les questions
@@ -1475,7 +1491,7 @@ liste qui suit le tableau, citations comprises. Restent :
     2013 et des majorations des magistrats de 2012-2013 et 2018 (sources de l'époque) ;
   - **hors chapitre, à signaler** : glossaire `solde-militaire` et `magistrat` (terminologue) ;
     livre « Retraites » : décret n° 85-614, loi organique n° 85-79 art. 43, loi organique
-    n° 88-73 ; (`index.qmd` et § ventilation par ministère du régime indiciaire corrigés le
+    n° 88-73 (fait le 24 octobre 2026, `#sec-cnrps-magistrats`) ; (`index.qmd` et § ventilation par ministère du régime indiciaire corrigés le
     23 octobre 2026) ;
   - **clés à créer (bibliographe)** : lois n° 72-67 ; décrets n° 88-908, 2013-1401, 2012-3552,
     2011-2093, 2011-2094, 2002-323, 2002-1048, 84-751 à 84-756 ;
