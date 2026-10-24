@@ -1,0 +1,79 @@
+parametre,date_effet,valeur,unite,famille,source,ligne_du_registre,remarque
+droit_fixe_page,1993-05-17,10,D,texte de loi,loi-93-53-cdet,r-te-a-1993,
+droit_fixe_page,2005-01-01,15,D,texte de loi,lf-2005,r-te-a-2005,
+droit_fixe_page,2012-05-25,20,D,texte de loi,lfc-2012,r-te-a-2012,date retenue par l'administration fiscale (note commune n° 14/2012)
+droit_fixe_page,2018-01-01,25,D,texte de loi,lf-2018,r-te-a-2018,
+droit_fixe_page,2022-01-01,30,D,texte de loi,dl2021-21-lf2022,r-te-a-2022,
+minimum_actes,1969-01-02,0.14,D,texte de loi,lf-1969,r-te-a-1969,
+minimum_actes,1977-01-02,1,D,texte de loi,lf-1977,r-te-ant-1977,
+minimum_actes,1983-01-02,3,D,texte de loi,lf-1983,r-te-ant-1983,
+minimum_actes,1993-05-17,5,D,texte de loi,loi-93-53-cdet,r-te-a-1993,
+minimum_actes,2003-01-01,10,D,texte de loi,lf-2003,r-te-a-2003,
+minimum_actes,2006-01-01,15,D,texte de loi,lf-2006,r-te-a-2006,
+minimum_actes,2012-05-25,20,D,texte de loi,lfc-2012,r-te-a-2012,date retenue par l'administration fiscale (note commune n° 14/2012)
+minimum_actes,2017-01-01,40,D,texte de loi,lf-2017,r-te-a-2017,"minimum unique : actes, mutations, jugements et écrits"
+minimum_jug_cantonaux,1977-01-02,1,D,texte de loi,lf-1977,r-te-ant-1977,
+minimum_jug_cantonaux,1983-01-02,5,D,texte de loi,lf-1983,r-te-ant-1983,
+minimum_jug_cantonaux,2003-01-01,10,D,texte de loi,lf-2003,r-te-a-2003,
+minimum_jug_cantonaux,2006-01-01,15,D,texte de loi,lf-2006,r-te-a-2006,
+minimum_jug_cantonaux,2012-05-25,20,D,texte de loi,lfc-2012,r-te-a-2012,date retenue par l'administration fiscale (note commune n° 14/2012)
+minimum_jug_cantonaux,2017-01-01,40,D,texte de loi,lf-2017,r-te-a-2017,minimum unique de 40 D
+minimum_jug_premiere_instance,1977-01-02,2,D,texte de loi,lf-1977,r-te-ant-1977,
+minimum_jug_premiere_instance,1983-01-02,10,D,texte de loi,lf-1983,r-te-ant-1983,
+minimum_jug_premiere_instance,2003-01-01,20,D,texte de loi,lf-2003,r-te-a-2003,
+minimum_jug_premiere_instance,2006-01-01,30,D,texte de loi,lf-2006,r-te-a-2006,
+minimum_jug_premiere_instance,2012-05-25,40,D,texte de loi,lfc-2012,r-te-a-2012,date retenue par l'administration fiscale (note commune n° 14/2012)
+minimum_jug_premiere_instance,2017-01-01,40,D,texte de loi,lf-2017,r-te-a-2017,minimum unique de 40 D
+minimum_jug_appel_cassation,1977-01-02,3,D,texte de loi,lf-1977,r-te-ant-1977,
+minimum_jug_appel_cassation,1983-01-02,20,D,texte de loi,lf-1983,r-te-ant-1983,
+minimum_jug_appel_cassation,2003-01-01,40,D,texte de loi,lf-2003,r-te-a-2003,
+minimum_jug_appel_cassation,2006-01-01,60,D,texte de loi,lf-2006,r-te-a-2006,
+minimum_jug_appel_cassation,2012-05-25,75,D,texte de loi,lfc-2012,r-te-a-2012,"date retenue par l'administration fiscale (note commune n° 14/2012) ; arrêts des cours d'appel et de la cour de cassation, jugements et arrêts du tribunal administratif"
+minimum_jug_appel_cassation,2017-01-01,40,D,texte de loi,lf-2017,r-te-a-2017,minimum unique de 40 D
+factures,1993-05-17,0.2,D,texte de loi,loi-93-53-cdet,r-te-f-1993,"quittances, reçus, décharges"
+factures,2006-01-01,0.3,D,texte de loi,lf-2006,r-te-f-2006,"factures ; 0,200 D de 2004 à 2005, même montant que les quittances"
+factures,2012-05-25,0.4,D,texte de loi,lfc-2012,r-te-f-2012,factures hors téléphonie post-payée ; date retenue par l'administration fiscale (note commune n° 14/2012)
+factures,2014-08-27,0.5,D,texte de loi,lfc-2014,r-te-f-2014,
+factures,2018-01-01,0.6,D,texte de loi,lf-2018,r-te-f-2018,factures hors téléphonie et internet
+factures,2023-01-01,1.0,D,texte de loi,lf-2023,r-te-f-2023,
+effets_domicilies,1969-01-02,0.02,D,texte de loi,lf-1969,r-te-t-1969,
+effets_domicilies,1981-12-31,0.05,D,texte de loi,loi81-100-lf1982,r-te-ant-1982,au plus tôt : date de publication non relevée
+effets_domicilies,1986-01-02,0.1,D,texte de loi,loi85-109-lf1986,r-te-ant-1986,inchangé en 1990
+effets_domicilies,1993-05-17,0.2,D,texte de loi,loi-93-53-cdet,r-te-t-1993,
+effets_domicilies,2006-01-01,0.3,D,texte de loi,lf-2006,r-te-t-2006,
+effets_domicilies,2013-01-01,0.4,D,texte de loi,lf-2013,r-te-t-2013,
+effets_domicilies,2018-01-01,0.6,D,texte de loi,lf-2018,r-te-t-2018,
+autres_effets,1990-01-02,1,D,texte de loi,loi-89-115-lf-1990,r-te-t-1990,"timbre proportionnel supprimé : montant fixe, quel que soit le montant de l'effet"
+autres_effets,1993-05-17,2,D,texte de loi,loi-93-53-cdet,r-te-t-1993,
+autres_effets,2013-01-01,3,D,texte de loi,lf-2013,r-te-t-2013,
+autres_effets,2018-01-01,5,D,texte de loi,lf-2018,r-te-t-2018,
+titre_de_credit,2001-01-01,5,D,texte de loi,lf-2001,r-te-t-2001,art. 64 : n° 7 ajouté au § I de l'art. 117
+titre_de_credit,2006-01-01,10,D,texte de loi,lf-2006,r-te-t-2006,
+titre_de_credit,2013-01-01,15,D,texte de loi,lf-2013,r-te-t-2013,
+titre_de_credit,2018-01-01,25,D,texte de loi,lf-2018,r-te-t-2018,
+telephone_carte_5d,2006-01-01,0.3,D,texte de loi ; équivalent calculé depuis 2012,lf-2006,r-te-tel-2006,"0,300 D par carte"
+telephone_carte_5d,2012-05-25,0.4,D,texte de loi ; équivalent calculé depuis 2012,lfc-2012,r-te-tel-2012,"équivalent pour 5 D, calculé : taux par dinar × 5 (0,080 D par dinar) ; date retenue par l'administration fiscale (note commune n° 14/2012)"
+telephone_carte_5d,2014-08-27,0.5,D,texte de loi ; équivalent calculé depuis 2012,lfc-2014,r-te-tel-2014,"équivalent pour 5 D, calculé : taux par dinar × 5 (0,100 D par dinar)"
+telephone_carte_5d,2018-01-01,0.7,D,texte de loi ; équivalent calculé depuis 2012,lf-2018,r-te-tel-2018,"équivalent pour 5 D, calculé : taux par dinar × 5 (0,140 D par dinar)"
+telephone_recharge_5d,2006-01-01,0.3,D,texte de loi ; équivalent calculé depuis 2018,lf-2006,r-te-tel-2006,"0,300 D par recharge"
+telephone_recharge_5d,2012-05-25,0.4,D,texte de loi ; équivalent calculé depuis 2018,lfc-2012,r-te-tel-2012,"0,400 D par tranche de 5 D ; date retenue par l'administration fiscale (note commune n° 14/2012)"
+telephone_recharge_5d,2014-08-27,0.5,D,texte de loi ; équivalent calculé depuis 2018,lfc-2014,r-te-tel-2014,"0,500 D par tranche de 5 D"
+telephone_recharge_5d,2018-01-01,0.7,D,texte de loi ; équivalent calculé depuis 2018,lf-2018,r-te-tel-2018,"équivalent pour 5 D, calculé : taux par dinar × 5 (0,140 D par dinar)"
+telephone_recharge_5d,2026-01-01,0.8,D,texte de loi ; équivalent calculé depuis 2018,lf-2026,r-te-tel-2026,"équivalent pour 5 D, calculé : taux par dinar × 5, plus 0,100 D par recharge de 5 D ou plus"
+passeport,1969-01-02,3.75,D,texte de loi,lf-1969,r-te-adm-1969,
+passeport,1983-01-02,10,D,texte de loi,lf-1983,r-te-ant-1983,"6,500 D immédiatement avant ; date de ce montant non établie"
+passeport,1993-05-17,21,D,texte de loi,loi-93-53-cdet,r-te-adm-1993,
+passeport,1999-01-01,30,D,texte de loi,lf-1999,r-te-adm-1999,
+passeport,2004-01-01,35,D,texte de loi,lf-2004,r-te-adm-2004,
+passeport,2006-01-01,60,D,texte de loi,lf-2006,r-te-adm-2006,
+passeport,2013-01-01,80,D,texte de loi,lf-2013,r-te-adm-2013,
+passeport_etudiants,1969-01-02,1.25,D,texte de loi,lf-1969,r-te-adm-1969,
+passeport_etudiants,1983-01-02,3,D,texte de loi,lf-1983,r-te-ant-1983,2 D immédiatement avant ; date de ce montant non établie
+passeport_etudiants,1993-05-17,7,D,texte de loi,loi-93-53-cdet,r-te-adm-1993,
+passeport_etudiants,1999-01-01,10,D,texte de loi,lf-1999,r-te-adm-1999,
+passeport_etudiants,2006-01-01,20,D,texte de loi,lf-2006,r-te-adm-2006,
+passeport_etudiants,2013-01-01,25,D,texte de loi,lf-2013,r-te-adm-2013,
+renouvellement_carte_perte,1993-05-17,5,D,texte de loi,loi-93-53-cdet,r-te-adm-1993,
+renouvellement_carte_perte,1997-01-01,10,D,texte de loi,lf-1997,r-te-adm-1997,
+renouvellement_carte_perte,1999-01-01,20,D,texte de loi,lf-1999,r-te-adm-1999,
+renouvellement_carte_perte,2014-08-27,25,D,texte de loi,lfc-2014,r-te-adm-2014,libellé de 2014 : renouvellement de la carte d'identité

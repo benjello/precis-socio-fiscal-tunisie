@@ -317,19 +317,30 @@ from figures import impot_societes as fig_is
 import figtools
 figtools.figure_tabs(
     fig_is.fig_rendement(), fig_is.table(),
-    "recettes-fiscales-composition", "irpp-ratios",
+    *fig_is.SERIES_RENDEMENT,
     slug="fig_impot_societes_rendement",
-    caption="Ce que rapporte l'impôt sur les sociétés, 1986-2025",
+    caption="Ce que rapporte l'impôt sur les sociétés rapporté au PIB de chaque base des comptes nationaux et aux dépenses de l'État, 1986-2025",
     note_lecture=(
         "La bande grise couvre les exercices 1986 à 1989, que la rubrique du ministère "
         "intitule déjà « impôts sur les sociétés » alors que l'impôt sur les sociétés "
         "n'existe pas encore : ces années portent l'impôt sur les bénéfices des sociétés "
         "de la loi n° 85-109, abrogé par le code de 1989. La courbe de droite ne commence "
         "qu'en 1990, les dépenses totales de l'État n'étant pas publiées avant cette date. "
-        "Dans l'onglet « Données », les deux colonnes de produit intérieur brut portent le "
-        "même chiffre sur la plus grande partie de la période : les deux sources ne "
-        "divergent que pour sept exercices, dont 2012 à 2014 où l'écart atteint 5 %. Cette "
-        "égalité est un fait des sources, non un doublon."
+        "Les courbes de gauche rapportent l'impôt au **PIB** de chaque base. "
+        "**Le PIB est celui de chacune des trois bases des comptes nationaux, 1983, 1997 et "
+        "2015, tracées séparément.** Aucun raccord n'est calculé, l'écart entre deux bases "
+        "n'étant pas constant : une année publiée dans deux bases porte deux points (1997 à "
+        "2009 : bases 1983 et 1997 ; 2010 à 2017 : bases 1997 et 2015), chacun rapporté au PIB "
+        "de sa base. Un trait vertical pointillé marque l'année où la série passe à une base "
+        "plus récente (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Un "
+        "marqueur plein est un PIB publié dans sa base, ou dont la source ne dit pas s'il est "
+        "recalculé pour le passé (base 1983) ; un marqueur creux, un PIB que l'Institut "
+        "national de la statistique a recalculé pour le passé. De 1986 à 1991, le PIB est "
+        "présumé de base 1983, aucune série de base connue n'existant avant 1992 (points "
+        "pâles). Les losanges gris sont des valeurs du ministère des Finances, pour 2002 à 2004 "
+        "et pour 2025, que la source ne rattache à aucune base. La courbe **rouge** (échelle de "
+        "droite) rapporte l'impôt aux **dépenses totales de l'État**, publiées à partir de "
+        "1990 : aucun PIB n'y intervient. "
     ),
     generated="{{< meta date >}}",
 )
@@ -337,7 +348,7 @@ figtools.figure_tabs(
 
 Trois traits s'en dégagent.
 
-**Le rendement a doublé en points de produit intérieur brut**, de 1,86 % pour les bénéfices de 1990 à 3,77 % en 2025. Rapporté aux dépenses de l'État, le mouvement est du même ordre : de 6,3 % à 12,4 %. L'impôt sur les sociétés finance aujourd'hui près d'un huitième de la dépense publique, contre un seizième à sa création.
+**Le rendement a doublé en points de produit intérieur brut (PIB)**, de 1,86 % pour les bénéfices de 1990, sur un PIB présumé de base 1983, à 3,79 % en 2025 en base 2015 (3,77 % sur la valeur du ministère des Finances, que la source ne rattache à aucune base). Il ne progresse pas sans à-coups : en base 2015, il passe de 4,8 % en 2014 à 1,7 % en 2016, puis remonte à 3,1 % en 2019 et en 2023. Les niveaux de bases différentes ne se comparent pas (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Rapporté aux dépenses de l'État, le mouvement est du même ordre : de 6,3 % à 12,4 %. L'impôt sur les sociétés finance aujourd'hui près d'un huitième de la dépense publique, contre un seizième à sa création.
 
 **Mais sa part dans les recettes fiscales progresse beaucoup plus lentement.** Elle passe de 9,3 % en 1990 à 14,6 % en 2025 — une progression de moitié, quand l'impôt sur le revenu, sur la même période, triple la sienne. Les deux impôts partagent un code ; ils ne partagent pas une trajectoire.
 

@@ -4213,6 +4213,70 @@
     resultat: decret-pres-2022-545-capsule-vins
   a_faire: [parcourir les fascicules scannés de 2016 à 2026 (océrisation) pour le motif 97-1368]
 
+- id: r-dc-alcools-lois-de-finances-1998-2017
+  objet: Modifications des lignes 22-03 à 22-08 du tableau annexé à la loi n° 88-62 (droit de consommation) par les lois de finances ou les lois de finances complémentaires de 1998 à 2017
+  ou: [precis/fr/fiscalite/_droits_consommation.qmd#sec-dc-boissons]
+  requetes:
+    plein_texte: ['22[-. ]0[3-8]', 'Ex[. ]*22[-. ]0']
+    depuis: 1998-01-01
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Plein texte (pdftotext, édition française, couche texte) de 31 fascicules de lois de finances et de lois de finances complémentaires, 1998 à 2017 (clés lf-1998 à lf-2018, lfc-2008 à lfc-2019 de references.json). Occurrences du motif 22-03 à 22-08 : aucune dans les articles de loi avant la LF 2018 (art. 45) ; 22.07 apparaît dans le tarif des droits de douane annexé aux LF 2013 et 2015, hors tableau du droit de consommation. La LF 1998, art. 47, vise les voitures de tourisme (87-03) et les motocycles (87-11), exonérés de droits de douane et soumis au droit de consommation selon le tableau M : rien sur les boissons. Lacunes : tableaux annexés rendus en image, non lus par la couche texte ; édition arabe non parcourue ; lois de finances 2023 à 2026 non parcourues par ce motif.'
+    couvert_jusqu_au: 2017-12-31
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Mêmes fascicules, recherche élargie aux numéros tarifaires à quatre et six chiffres (22xx, 22xxxx), aux désignations (vins, bières, vermouths, whiskies, mousseux) et aux fascicules arabes de 2022 à 2025 (lois de finances pour 2023 à 2026, termes arabes du droit de consommation) : les tableaux annexés sont dans la couche texte ; aucune ligne des positions 22-03 à 22-08 hors de la LF 2018, art. 45, et du tarif douanier annexé aux LF 2013 et 2015 (22.07, 23.07). Les modifications du droit de consommation des LF 2023 à 2026 portent sur la position 87-03 ; la LF 2023, art. 62, porte une avance de 5 % sur les ventes de boissons alcoolisées. Lacunes : fascicules à couche texte décalée décodés sans les accents ; LF 2026 lue sur la seule édition arabe du JORT n° 148 de 2025.'
+    couvert_jusqu_au: 2026-01-01
+    resultat: aucun
+  a_faire:
+  - relire à l'image les tableaux annexés des lois de finances 2000 à 2004, dont la couche texte est décalée
+
+- id: r-tva-credit-series-apres-2014
+  objet: Séries annuelles du crédit de TVA, des restitutions et de la retenue à la source de TVA après l'exercice 2014 et avant 2009
+  ou: [precis/fr/fiscalite/_tva.qmd#sec-tva-credit-donnees]
+  requetes:
+    plein_texte: ['restitution.{0,40}(TVA|taxe sur la valeur ajoutée)', crédit de (TVA|taxe sur la valeur ajoutée)]
+    depuis: 1988-07-01
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local, web]
+    couverture: 'Plein texte des rapports de la Cour des comptes de tunisia-data (lois de règlement 2018 à 2022, rapports de la série 18, 82 et autres, couche texte française) : aucune série de restitutions de TVA. Rapports annuels de la direction générale des impôts sur 2013 et 2014 (portail ancien du ministère) : texte arabe à police non Unicode, non cherchable ; non lus à l image. Recherche web : seules des déclarations ponctuelles du ministère (remboursements de 2020, demandes non éligibles de 2021, restitutions de début 2023), sans série annuelle. Lacunes : lois de règlement antérieures à 2018, rapports annuels de performance de la mission Finances, rapports annuels de la direction générale des impôts postérieurs à 2014.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Rapport annuel de la direction générale des impôts sur 2014 (portail ancien du ministère, 40 pages, arabe) : 16 pages sur 40 parcourues à l''image (plan d''action, contrôle fiscal, contentieux, formation, moyens) : rapport d''activité administrative, aucune série de crédit ou de restitution de TVA. Rapport sur 2013 non parcouru à l''image. Lacunes : 24 pages du rapport de 2014 et tout le rapport de 2013 non vues ; rapports postérieurs à 2014 absents du corpus local.'
+    couvert_jusqu_au: 2014-12-31
+    resultat: aucun
+  a_faire:
+  - parcourir à l'image les 24 pages restantes du rapport de la direction générale des impôts sur 2014 et le rapport sur 2013
+  - chercher les rapports annuels de la direction générale des impôts postérieurs à 2014
+  - parcourir les rapports annuels de performance de la mission Finances
+
+- id: r-te-arretes-machines-a-timbrer
+  objet: Arrêtés du ministre des finances fixant les conditions d'application de l'article 128 bis (machines à timbrer) et de l'article 128 quinquies (paiement du timbre par les moyens électroniques fiables) du code des droits d'enregistrement et de timbre
+  ou: [precis/fr/fiscalite/_timbre_enregistrement.qmd#sec-te-paiement]
+  requetes:
+    titres_like: ['%machines a timbrer%', '%machine a timbrer%', '%128 bis%', '%128 quinquies%', '%moyens electroniques fiables%timbre%']
+    plein_texte: [machines à timbrer]
+    depuis: 1998-01-01
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'Notices jort_cache (titre) du 1998-01-01 au 2026-10-02 : seules les lois de finances de 1998 et de 1999 portent les machines à timbrer ; aucun arrêté. Les arrêtés du 4 juin 2003 (lettre de change), du 2 août 2013 et du 23 mai 2022 (quittances) sont trouvés. Lacunes : 5352 notices de jort_cache n ont qu un intitulé arabe ; plein texte des fascicules non parcouru pour ce motif.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - parcourir le plein texte des fascicules pour le motif machines à timbrer
+  - chercher les intitulés arabes
+
 - id: r-sante-tarifs-malades-payants-apres-2008
   objet: arrêtés modifiant ou remplaçant l'arrêté du 19 décembre 1996 (tarifs de prise en charge des malades payants dans les structures sanitaires publiques) après l'arrêté du 7 juillet 2008, et arrêté du 25 janvier 1993 qu'il remplace
   ou: [precis/fr/sante/_hopital.qmd#sec-hopital-tarifs-malades-payants]
