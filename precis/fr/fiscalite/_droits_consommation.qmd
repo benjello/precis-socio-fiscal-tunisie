@@ -172,7 +172,9 @@ Le tableau retient douze lignes, aux cinq dates où l'une d'elles change. Le tab
 
 <!-- TODO (documentaliste) : vins mousseux de l'article 44 de la LF 2016 : « 4,000 D » dans l'édition française, « 24,000 » dans l'édition arabe ; l'édition 2019 du code (française) donne 24,000 D, mais elle reprend le tableau consolidé, non le fascicule de 2015 ; un second exemplaire de l'édition française du JORT n° 104 de 2015 (absente du corpus local ; pist.tn ne la sert pas : HTTP 404 le 24/10/2026) confirmerait la coquille. -->
 
-<!-- TODO (documentaliste) : les lois de finances antérieures à 2018 (1998-2017) n'ont pas été dépouillées une à une pour les positions 22-05, 22-06 et Ex 22-08 ; le tableau de la loi n° 88-62 a pu les modifier entre 1997 et 2015 (LF 1998, art. 47, contenu non lu). Le texte des lois de finances pour 2022 à 2026 n'a pas été confronté ligne à ligne au tableau consolidé le plus récent. -->
+<!-- TODO (documentaliste) : lire à l'image les tableaux annexés des lois de finances 1999 à 2017 pour les positions 22-03 à 22-08 (la couche texte n'y relève aucune occurrence avant la LF 2018, art. 45), parcourir l'édition arabe et confronter les lois de finances pour 2023 à 2026 au tableau consolidé le plus récent. -->
+
+<!-- RECHERCHE r-dc-alcools-lois-de-finances-1998-2017 : modifications des lignes 22-03 à 22-08 du tableau de la loi n° 88-62 par les lois de finances de 1998 à 2017 (voir docs/recherches.yml) -->
 
 Le tarif des lignes 22-03 à 22-08 figure donc à deux endroits, l'annexe du décret de 2015 et le tableau de la loi. Les valeurs de 2015 et de 2016 sont les mêmes ; elles diffèrent à partir de 2018 pour les vermouths et les spiritueux, et à partir de 2021 pour la bière et les vins. L'état consolidé de 2023 porte les valeurs de la loi (@tbl-dc-en-vigueur).
 
@@ -240,6 +242,26 @@ Sources : @decret-93-2090-alcools ; @decret-97-1368-regime-alcools ; @decret-200
 Source : @decret-97-1368-regime-alcools, art. 6 à 44, pp. 1303-1315.
 
 :::
+
+## Deux prélèvements propres aux boissons alcoolisées {#sec-dc-boissons-autres}
+
+Deux prélèvements s'ajoutent au droit de consommation sur les boissons alcoolisées : la redevance qui accompagne l'autorisation de les vendre à emporter, et, depuis 2023, une avance de 5 % sur les ventes des producteurs.
+
+**La redevance d'autorisation de vente à emporter.** Le commerce de boissons alcoolisées à emporter est soumis, depuis la loi n° 98-14 du 18 février 1998, à une autorisation préalable du ministre chargé du commerce, après avis du ministre de l'intérieur ; l'autorisation vaut deux ans et se renouvelle. Elle donne lieu à une redevance au profit du Trésor, due pour chaque point de vente [@loi-98-14-boissons-emporter, art. 1 et 2, p. 371]. Le montant est fixé trois fois, par le texte de 1998, par la loi n° 2004-76 du 2 août 2004, qui en fait une redevance annuelle, puis par le décret-loi de finances pour 2022 (@tbl-dc-emporter).
+
+: Redevance sur le commerce de boissons alcoolisées à emporter, par point de vente, 1998-2022 {#tbl-dc-emporter}
+
+| Date d'effet | Texte | Distribution de gros (D) | Distribution de détail (D) | Périodicité |
+|---|---|---|---|---|
+| non établie | loi n° 98-14, art. 2 [@loi-98-14-boissons-emporter, art. 2, p. 371] | 1 500 | 1 000 | à l'attribution et au renouvellement de l'autorisation, valable deux ans |
+| non établie | loi n° 2004-76, art. 2 nouveau [@loi-2004-76-boissons-emporter, art. 2, p. 2235] | 750 | 500 | annuelle |
+| 1^er^ janvier 2022 | décret-loi n° 2021-21 (LF 2022), art. 59 et 73 [@dl2021-21-lf2022, art. 59, p. 3100 ; @dl2021-21-lf2022, art. 73, p. 3106] | 7 500 | 5 000 | annuelle |
+
+L'article 59 de la loi de finances pour 2022 abroge les deux tirets de l'article 2 de la loi de 1998, tel que modifié en 2004, et les remplace par les montants de 7 500 et 5 000 dinars. Le même texte assujettit à la taxe sur la valeur ajoutée le commerce de détail des boissons alcoolisées, des vins et des bières (@tbl-tva-exonerations-textes).
+
+**L'avance de 5 % sur les ventes des producteurs.** L'article 62 du décret-loi de finances pour 2023 ajoute au code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés un article 51 *septies* : les fabricants et les embouteilleurs de vins, de bières et de boissons alcoolisées appliquent une avance de 5 % sur leurs ventes de ces produits. Elle se calcule sur le montant facturé, toutes taxes comprises ; elle est déclarée et payée dans le mois qui suit celui où elle est appliquée, dans les délais fixés pour la retenue à la source. Le même article coordonne cette avance avec les articles 54 et 55 du code de l'impôt sur le revenu et de l'impôt sur les sociétés et avec les articles 83 *bis* et 92 du code des droits et procédures fiscaux, qui visent déjà l'avance de l'article 51 *quater* [@lf-2023, art. 62, p. 4076 de l'édition arabe]. Le décret-loi s'applique à compter du 1^er^ janvier 2023 [@lf-2023, art. 76].
+
+<!-- TODO (documentaliste) : dates d'effet des art. 2 de la loi n° 98-14 et de la loi n° 2004-76 (date de dépôt des JORT n° 15 de 1998 et n° 63 de 2004 non relevée) ; arrêté du ministre du commerce du 4 juin 1998 et arrêté du 14 décembre 2006 (conditions d'octroi et de retrait de l'autorisation) non lus ; montants de la redevance avant 2022 : le décret-loi n° 2021-21 n'en donne pas l'exposé des motifs. -->
 
 ## L'articulation avec la taxe sur la valeur ajoutée
 
@@ -311,7 +333,7 @@ La suite des lois de finances fait apparaître une régularité que le tableau d
 
 La loi de finances pour 2004 relève de la même matière, sans qu'il soit possible de la rattacher à cette position précise : ses intitulés visent les pneumatiques en caoutchouc, les véhicules aménagés à l'usage des personnes handicapées et les véhicules tout terrain, et la seule disposition déchiffrée concerne une position « Ex » de produits importés montés sur roues entières [@lf-2004].
 
-Deux de ces maillons se corroborent l'un l'autre : l'article 64 de 1995 et l'article 50 de 1999, les seuls dont la lettre est établie ici, nomment respectivement l'article 50 de 1994 et l'article 47 de 1998, et établissent ainsi leur objet sans en livrer le contenu. **Les taux successifs ne sont pas établis ici** : la série ne peut donc pas être chiffrée ici, et seule la suite des interventions est établie. Elle suffit à situer le barème par cylindrée qui occupe aujourd'hui la place la plus visible du tableau : la fiscalité automobile n'est pas un ajout récent au droit de consommation, elle en est un terrain d'ajustement dès la première décennie.
+L'article 50 de la loi de finances pour 1994 modifie la liste des produits soumis au droit de consommation selon un tableau « L » annexé à la loi, et retire ces produits du tableau C de la taxe sur la valeur ajoutée [@lf-1994, art. 50, p. 2199]. L'article 47 de la loi de finances pour 1998 exonère des droits de douane les voitures de tourisme de la position 87-03 et les motocycles de plus de 50 cm³ de la position 87-11, triporteurs exclus, et les soumet au droit de consommation selon un tableau « M » annexé à la loi, à compter du 1^er^ janvier 1998 [@lf-1998, art. 47 et 90, p. 2438 et 2443]. L'article 64 de 1995 et l'article 50 de 1999 nomment respectivement l'article 50 de 1994 et l'article 47 de 1998. **Les taux successifs ne sont pas établis ici** : la série ne peut donc pas être chiffrée ici, et seule la suite des interventions est établie. Elle suffit à situer le barème par cylindrée qui occupe aujourd'hui la place la plus visible du tableau : la fiscalité automobile n'est pas un ajout récent au droit de consommation, elle en est un terrain d'ajustement dès la première décennie.
 
 ### 1998 et 1999 — les produits pétroliers, un régime dans le régime
 
@@ -379,7 +401,7 @@ Les sous-sections qui précèdent suivent les textes un à un. Trois vues les ra
 | 1^er^ janvier 1995 (déduit) | loi n° 94-127 (LF 1995), art. 64 | modifie la position 87-03, véhicules de transport de personnes ; taux non établis ici | n° 103 des 30-31 décembre 1994, p. 2042 |
 | 1^er^ janvier 1997 (déduit) | loi n° 96-113 (LF 1997), art. 51 | exonère de droits de douane et soumet au droit au taux de 10 % les véhicules de la position 87-03 n'excédant pas 4 chevaux fiscaux et 1200 cm^3^, hors tout terrain | n° 105 du 31 décembre 1996, p. 2578 |
 | 4 août 1997 | décret n° 97-1368 | régime fiscal des produits 22-03 à 22-08 : tarif par récipient pour la bière et le vin, capsule fiscale, obligations des producteurs (voir la section sur les boissons) | n° 59 du 25 juillet 1997, p. 1301-1316 |
-| 1^er^ janvier 1998 (déduit) | loi n° 97-88 (LF 1998), art. 47 | modifie le tableau annexé ; contenu non établi, article visé par l'article 50 de la loi de finances pour 1999 | n° 104 des 30-31 décembre 1997, p. 2435 |
+| 1^er^ janvier 1998 | loi n° 97-88 (LF 1998), art. 47 et 90 | voitures de tourisme de la position 87-03 et motocycles de plus de 50 cm³ de la position 87-11, triporteurs exclus : exonérés des droits de douane et soumis au droit de consommation selon le tableau « M » annexé à la loi ; article visé par l'article 50 de la loi de finances pour 1999 ; application au 1^er^ janvier 1998 par l'article 90 | n° 104 des 30-31 décembre 1997, p. 2438 et 2443 |
 | 6 mai 1998 | décret n° 98-952, art. 2 | retire les produits pétroliers du taux réduit de TVA et fixe leur tarif au droit de consommation | n° 35 du 1^er^ mai 1998, p. 923 |
 | 1^er^ janvier 1999 (déduit) | loi n° 98-111 (LF 1999), art. 50 | modifie de nouveau la position 87-03 ; taux non établis ici | n° 104 des 29-31 décembre 1998, p. 2500 |
 | 22 avril 1999 | décret n° 99-894 | fixe le tarif complet applicable aux produits pétroliers | n° 33 du 23 avril 1999, p. 624-625 |
@@ -474,9 +496,9 @@ from figures import droits_consommation as fig_dc
 import figtools
 figtools.figure_tabs(
     fig_dc.fig_rendement(), fig_dc.table(),
-    "recettes-fiscales-composition", "irpp-ratios",
+    *fig_dc.SERIES_RENDEMENT,
     slug="fig_droits_consommation_rendement",
-    caption="Rendement des droits de consommation rapporté au PIB et aux dépenses de l'État, 1986-2025",
+    caption="Rendement des droits de consommation rapporté au PIB de chaque base des comptes nationaux et aux dépenses de l'État, 1986-2025",
     note_lecture=(
         "**La zone grisée, à gauche de 1988, ne mesure pas le droit refondu.** La rubrique "
         "« droits de consommation » du ministère des Finances est continue depuis 1986 — "
@@ -486,21 +508,29 @@ figtools.figure_tabs(
         "boissons alcoolisées et la taxe unique de compensation sur les carburants. Les deux "
         "segments ne se comparent donc pas, et l'exercice 1988 lui-même n'est soumis au "
         "régime refondu qu'au second semestre. "
-        "La courbe **ocre** (échelle de gauche) rapporte le droit au **PIB**, la courbe "
-        "**rouge** (échelle de droite) aux **dépenses totales de l'État**, qui ne sont "
-        "publiées qu'à partir de 1990 : les exercices 1988 et 1989 n'ont donc que le premier "
-        "des deux rapports. "
-        "**Le PIB retenu est celui du ministère des Finances**, celui sur lequel il calcule "
-        "lui-même ses ratios ; l'onglet « Données » donne à côté le PIB des comptes "
-        "nationaux, qui ne s'en écarte que pour 2012, 2013 et 2014."
+        "Les courbes de gauche rapportent le droit au **PIB** de chaque base. "
+        "**Le PIB est celui de chacune des trois bases des comptes nationaux, 1983, 1997 et "
+        "2015, tracées séparément.** Aucun raccord n'est calculé, l'écart entre deux bases "
+        "n'étant pas constant : une année publiée dans deux bases porte deux points (1997 à "
+        "2009 : bases 1983 et 1997 ; 2010 à 2017 : bases 1997 et 2015), chacun rapporté au PIB "
+        "de sa base. Un trait vertical pointillé marque l'année où la série passe à une base "
+        "plus récente (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Un "
+        "marqueur plein est un PIB publié dans sa base, ou dont la source ne dit pas s'il est "
+        "recalculé pour le passé (base 1983) ; un marqueur creux, un PIB que l'Institut "
+        "national de la statistique a recalculé pour le passé. De 1986 à 1991, le PIB est "
+        "présumé de base 1983, aucune série de base connue n'existant avant 1992 (points "
+        "pâles). Les losanges gris sont des valeurs du ministère des Finances, pour 2002 à 2004 "
+        "et pour 2025, que la source ne rattache à aucune base. La courbe **rouge** (échelle de "
+        "droite) rapporte le droit aux **dépenses totales de l'État**, publiées à partir de "
+        "1990 : aucun PIB n'y intervient. "
     ),
     generated="{{< meta date >}}",
 )
 ```
 
-Rapporté au produit intérieur brut, le rendement du droit de consommation **culmine au milieu des années 1990**, et non à la fin de la période : le maximum de la série est atteint en 1994, à 3,7 %, et les cinq exercices les plus productifs sont tous compris entre 1991 et 1996 — 3,7 % en 1994, 3,5 % en 1995, 3,4 % en 1996, 3,3 % en 1991 et en 1993. Le rapport décroît ensuite de près d'un point et demi de produit intérieur brut jusqu'à son minimum, 2,0 % en 2015, puis se tient autour de 2,4 % : c'est la moyenne des exercices 2015 à 2025. La valeur de 1,4 % relevée en 1986 n'appartient pas à cette histoire : elle mesure les taxes que l'article 7 de la loi de 1988 abroge, non le droit refondu.
+Rapporté au produit intérieur brut (PIB) de chaque base des comptes nationaux, le rendement du droit de consommation **culmine au milieu des années 1990**, et non à la fin de la période. En base 1983, le maximum est atteint en 1994, à 3,7 % ; viennent ensuite 3,5 % en 1995 et 3,4 % en 1996 ; la série descend à 2,9 % en 2008. De 1989 à 1991, sur un PIB présumé de cette base, elle va de 3,0 % à 3,3 %. En base 1997, elle va de 3,1 % en 1997 à 2,1 % en 2015, puis 2,6 % en 2017. En base 2015, elle va de 2,4 % en 2010 à son minimum, 2,0 % en 2015, puis se tient entre 2,3 % et 2,6 % de 2016 à 2025. Chaque base montre donc le même mouvement, un recul depuis le milieu des années 1990, puis une stabilité autour de 2,5 % depuis 2016 ; les niveaux de bases différentes ne se comparent pas (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). La valeur de 1,4 % relevée en 1986, sur un PIB présumé de base 1983, n'appartient pas à cette histoire : elle mesure les taxes que l'article 7 de la loi de 1988 abroge, non le droit refondu.
 
-Rapporté aux dépenses de l'État, dont la série ne commence qu'en 1990, le profil est voisin mais décalé : le sommet est atteint en 2001, à 14,1 %, et la part revient à 8,1 % en 2025. Les deux rapports ne varient pas ensemble, et l'écart tient au dénominateur : le droit de consommation se maintient en points de produit intérieur brut sur la dernière décennie tandis que les dépenses de l'État progressent plus vite que lui.
+Rapporté aux dépenses de l'État, dont la série ne commence qu'en 1990, le profil est voisin mais décalé : le sommet est atteint en 2001, à 14,1 %, et la part revient à 8,1 % en 2025. Les deux rapports ne varient pas ensemble, et l'écart tient au dénominateur : le droit de consommation se maintient autour de 2,5 % du PIB de base 2015 depuis 2016 tandis que les dépenses de l'État progressent plus vite que lui.
 
 Aucun des textes réunis dans ce chapitre n'établit la cause de ce reflux. La forme de la courbe est ici décrite, non expliquée.
 

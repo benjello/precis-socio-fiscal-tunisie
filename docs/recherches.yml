@@ -4115,6 +4115,24 @@
     resultat: decret-pres-2022-545-capsule-vins
   a_faire: [parcourir les fascicules scannés de 2016 à 2026 (océrisation) pour le motif 97-1368]
 
+- id: r-dc-alcools-lois-de-finances-1998-2017
+  objet: Modifications des lignes 22-03 à 22-08 du tableau annexé à la loi n° 88-62 (droit de consommation) par les lois de finances ou les lois de finances complémentaires de 1998 à 2017
+  ou: [precis/fr/fiscalite/_droits_consommation.qmd#sec-dc-boissons]
+  requetes:
+    plein_texte: ['22[-. ]0[3-8]', 'Ex[. ]*22[-. ]0']
+    depuis: 1998-01-01
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Plein texte (pdftotext, édition française, couche texte) de 31 fascicules de lois de finances et de lois de finances complémentaires, 1998 à 2017 (clés lf-1998 à lf-2018, lfc-2008 à lfc-2019 de references.json). Occurrences du motif 22-03 à 22-08 : aucune dans les articles de loi avant la LF 2018 (art. 45) ; 22.07 apparaît dans le tarif des droits de douane annexé aux LF 2013 et 2015, hors tableau du droit de consommation. La LF 1998, art. 47, vise les voitures de tourisme (87-03) et les motocycles (87-11), exonérés de droits de douane et soumis au droit de consommation selon le tableau M : rien sur les boissons. Lacunes : tableaux annexés rendus en image, non lus par la couche texte ; édition arabe non parcourue ; lois de finances 2023 à 2026 non parcourues par ce motif.'
+    couvert_jusqu_au: 2017-12-31
+    resultat: aucun
+  a_faire:
+  - lire à l'image les tableaux annexés des lois de finances 1999 à 2017 pour les positions 22-03 à 22-08
+  - parcourir l'édition arabe
+  - étendre à 2023-2026
+
 - id: r-sante-tarifs-malades-payants-apres-2008
   objet: arrêtés modifiant ou remplaçant l'arrêté du 19 décembre 1996 (tarifs de prise en charge des malades payants dans les structures sanitaires publiques) après l'arrêté du 7 juillet 2008, et arrêté du 25 janvier 1993 qu'il remplace
   ou: [precis/fr/sante/_hopital.qmd#sec-hopital-tarifs-malades-payants]

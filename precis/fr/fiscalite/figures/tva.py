@@ -344,8 +344,8 @@ figtools.register_provenance(
     perimetre=("règles de base et dispositifs du chapitre : naissance dans le code de 1988 et "
                "ruptures que les registres désignent"),
     caveats=("Les jalons reprennent les registres du chapitre ; les étapes et les ajustements "
-             "n'y figurent pas. Deux lois ont une date d'effet non établie (forfaits de 1993, "
-             "retrait du tableau B prévu en 1996) : elles sont posées à l'année de la loi. Le "
+             "n'y figurent pas. Une loi a une date d'effet non établie (forfaits de 1993) : elle est "
+             "posée à l'année de la loi. Le "
              "classement en rupture de 2014 (achats en espèces) et de 2016 (facture "
              "électronique) attend confirmation."))
 _L.update({
