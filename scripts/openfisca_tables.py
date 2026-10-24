@@ -172,6 +172,11 @@ PAQUETS = {
         # des montants du gluten, des tarifs des alcools et des quatre tableaux du volume
         # « Santé » ne pourraient être engendrés. Aucun chemin déjà lu ne bouge. La borne
         # passe à la 0.147.
+        # La 0.148 date au 1er janvier 2002 l'extension de la retenue définitive aux fonds
+        # communs de placement en valeurs mobilières (openfisca-tunisia PR #508 ; loi de
+        # finances pour 2002, art. 21) : en deçà, le tableau `irpp_epargne_fonds` n'a pas
+        # sa ligne de 2002 et sortirait différent de celui que la CI régénère. La borne passe
+        # à la 0.148, publiée le 24 octobre 2026.
         # La 0.151 verse la retenue des députés et la contribution de l'État de l'article 5
         # de la loi n° 85-16 (PR #511, `prelevements_sociaux/cotisations_sociales/
         # secteur_public/regimes_speciaux/deputes/`), la 0.152 la limite d'âge de 65 ans des
