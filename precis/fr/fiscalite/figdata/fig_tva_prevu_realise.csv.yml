@@ -1,5 +1,5 @@
-series: [tva-recettes-par-regime, recettes-fiscales-composition]
-sources: [lf-2001, loi2001-123-lf2002, lf-2003, lf-2004, lf-2005, lf-2006, lf-2007, loi-2007-70-lf-2008, lf-2009, lf-2010, lf-2011, lf-2012, lf-2013, lf-2014, lf-2015, lf-2016, lf-2017, lf-2018, loi2018-56-lf2019, lf-2020, lf-2021, dl2021-21-lf2022, lf-2023, lf-2024, lf-2025, lf-2026, minfin-recettes-fiscales]
+series: [tva-recettes-par-regime, recettes-fiscales-composition, irpp-ratios]
+sources: [lf-2001, loi2001-123-lf2002, lf-2003, lf-2004, lf-2005, lf-2006, lf-2007, loi-2007-70-lf-2008, lf-2009, lf-2010, lf-2011, lf-2012, lf-2013, lf-2014, lf-2015, lf-2016, lf-2017, lf-2018, loi2018-56-lf2019, lf-2020, lf-2021, dl2021-21-lf2022, lf-2023, lf-2024, lf-2025, lf-2026, minfin-recettes-fiscales, minfin-indicateurs-fp]
 fiches: [sources/minfinances-recettes-fiscales.md]
 caveats: [Prévisions, non recettes encaissées : aucune réalisation par régime n'a été identifiée. En 2020 et en 2022, le tableau imprime chaque valeur un rang au-dessus de son libellé ; l'attribution retenue est la seule où les deux valeurs somment au total imprimé., sources/minfinances-recettes-fiscales.md]
 generated: 2026-10-24
