@@ -1013,7 +1013,14 @@
     couverture: 'Corpus JORT local (jort_cache.db, recherche en titres et objets, termes français et arabes) : aucun texte publié ne fixe un montant de l''allocation ; seuls figurent l''arrêté du 6 janvier 1987 (contribution de la caisse nationale de retraite pour 1986), la loi n° 86-83, la loi n° 87-83, le décret n° 2014-1526 (unité de gestion par objectifs) et le décret gouvernemental n° 2018-626. Documents obtenus et rangés dans tunisia-data : (1) Banque mondiale pour le ministère des Affaires sociales, rapport technique de ciblage, 2021, encadré 2, p. 50 : 7,7 D en 1987, 36,3 en 2000, 56,7 en 2010, 115 en 2014, 150 en 2014, 180 en février 2018 ; (2) BAD et CRES, version provisoire du 30 mars 2013, p. 12 : 100 D par mois en 2012, 10 D par enfant scolarisé ; annexe VII : circulaire conjointe Intérieur n° 12 et Affaires sociales n° 3 du 27 mai 2011 ; (3) UNICEF 2019, note 4 : 180 D en janvier 2018. Presse (L''Économiste maghrébin, 15 janvier 2018) : 70 D jusqu''en 2010, 150 D en 2017, 180 D ordonné, dates contradictoires avec les autres sources. Wayback Machine : une capture de 2023 du rapport de la BAD récupérée ; l''API de disponibilité répond 429 puis le service est hors ligne, aucun sondage de social.gov.tn ni de pm.gov.tn n''a abouti. Budgets économiques 2012-2018 et circulaires de montant : non trouvés en ligne (deux recherches web), pas de document finances.gov.tn indexé.'
     couvert_jusqu_au: 2026-10-24
     resultat: partiel
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [web]
+    couverture: 'Seconde passe du 24 octobre 2026. Wayback Machine : l''API de disponibilité répond (capture de social.gov.tn du 17 octobre 2026), l''API d''index (CDX) est hors ligne, donc aucune liste de pages archivées de social.gov.tn, de pnafn.gov.tn ni de pm.gov.tn. Page du ministère sur les transferts monétaires, édition arabe (téléchargée le 24 octobre 2026) : elle cite le « منشور مشترك » n° 3 du 27 mai 2011 (Intérieur et Affaires sociales) sans lien ni fichier, et ne cite aucun texte de montant. Une recherche web sur le numéro et la date de la circulaire ne renvoie aucun document tunisien. Le texte de la circulaire n''est pas en ligne sous les adresses essayées.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: aucun
   a_faire:
+  - obtenir le texte de la circulaire conjointe n° 12 (Intérieur) et n° 3 (Affaires sociales) du 27 mai 2011 auprès du ministère ou d'une bibliothèque administrative
   - lire les exposés des motifs et les tableaux des budgets économiques 2012-2018 (finances.gov.tn, hors index du moteur de recherche ; chercher par Wayback quand le service est rétabli)
   - rejouer le sondage de la Wayback Machine sur social.gov.tn, pm.gov.tn et pnafn.gov.tn
   - dater les neuf paliers 53,3 ; 56,7 (début) ; 63,3 ; 70 ; 100 ; 110 ; 120 ; 150 ; 180 par un texte ou un communiqué du ministère
@@ -4572,3 +4579,18 @@
   a_faire:
   - lire les décrets n° 2002-2227, 2009-2293 et 2015-50 (modifications du décret n° 91-1391)
   - retrouver le décret n° 93-1187 du 24 mai 1993 (modification du décret n° 90-1193)
+
+- id: r-foprolos-prelevements-lf
+  objet: article de loi de finances, autre que ceux de 1987-1990, de 2011, de 2012 et de 2013, prélevant sur les ressources du fonds de promotion du logement pour les salariés
+  ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-previsions]
+  requetes:
+    plein_texte: [logement pour les salariés, logements pour les salariés, promotion du logement]
+    depuis: 1986-01-01
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Plein texte du fascicule JORT n° 1 du 3 janvier 2012 (loi n° 2011-7 du 31 décembre 2011, loi de finances pour 2012, édition française) : le fonds n''y figure que dans la liste des fonds spéciaux du Trésor, sans article de prélèvement. La note logement-social-foprolos-2026-10-23, § 1.4, porte le relevé des lois de finances et des lois de finances complémentaires de 2012 à 2026 ; ce relevé n''a pas été rejoué ici. Lois de finances de 1991 à 2010 : non parcourues.'
+    couvert_jusqu_au: 2012-01-03
+    resultat: aucun
+  a_faire: [rejouer le plein texte des lois de finances de 1991 à 2010 et de 2014 à 2026]
