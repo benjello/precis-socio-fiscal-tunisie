@@ -1007,10 +1007,16 @@
     couverture: 'Deux recherches web (arabe : منحة قارة العائلات المعوزة, 100 دinar, 2012-2013 ; français : PNAFN allocation 100 et 120 dinars 2012-2013) : résultats postérieurs à 2021 seulement (180 D porté à 200 D par la loi de finances pour 2022 selon une annonce du ministère des finances ; 280 D en 2026), aucun texte ni document daté pour 2012-2013. Wayback Machine (API de disponibilité, social.gov.tn et pnafn.gov.tn) : réponse 429 (trop de requêtes), sondage non abouti, à rejouer.'
     couvert_jusqu_au: 2026-10-24
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [web, presse, jort_cache]
+    couverture: 'Corpus JORT local (jort_cache.db, recherche en titres et objets, termes français et arabes) : aucun texte publié ne fixe un montant de l''allocation ; seuls figurent l''arrêté du 6 janvier 1987 (contribution de la caisse nationale de retraite pour 1986), la loi n° 86-83, la loi n° 87-83, le décret n° 2014-1526 (unité de gestion par objectifs) et le décret gouvernemental n° 2018-626. Documents obtenus et rangés dans tunisia-data : (1) Banque mondiale pour le ministère des Affaires sociales, rapport technique de ciblage, 2021, encadré 2, p. 50 : 7,7 D en 1987, 36,3 en 2000, 56,7 en 2010, 115 en 2014, 150 en 2014, 180 en février 2018 ; (2) BAD et CRES, version provisoire du 30 mars 2013, p. 12 : 100 D par mois en 2012, 10 D par enfant scolarisé ; annexe VII : circulaire conjointe Intérieur n° 12 et Affaires sociales n° 3 du 27 mai 2011 ; (3) UNICEF 2019, note 4 : 180 D en janvier 2018. Presse (L''Économiste maghrébin, 15 janvier 2018) : 70 D jusqu''en 2010, 150 D en 2017, 180 D ordonné, dates contradictoires avec les autres sources. Wayback Machine : une capture de 2023 du rapport de la BAD récupérée ; l''API de disponibilité répond 429 puis le service est hors ligne, aucun sondage de social.gov.tn ni de pm.gov.tn n''a abouti. Budgets économiques 2012-2018 et circulaires de montant : non trouvés en ligne (deux recherches web), pas de document finances.gov.tn indexé.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: partiel
   a_faire:
-  - récupérer l'étude CRES-BAD de 2016 complète (seul le projet BAD-CRES est rangé)
-  - lire les exposés des motifs et les tableaux des budgets économiques 2012-2018
+  - lire les exposés des motifs et les tableaux des budgets économiques 2012-2018 (finances.gov.tn, hors index du moteur de recherche ; chercher par Wayback quand le service est rétabli)
   - rejouer le sondage de la Wayback Machine sur social.gov.tn, pm.gov.tn et pnafn.gov.tn
+  - dater les neuf paliers 53,3 ; 56,7 (début) ; 63,3 ; 70 ; 100 ; 110 ; 120 ; 150 ; 180 par un texte ou un communiqué du ministère
 
 - id: r-lf2025-art15-decret
   objet: décret fixant les modalités de fonctionnement du fonds de protection sociale des travailleuses agricoles et les conditions de ses interventions (loi n° 2024-48, loi de finances pour 2025, art. 15, 1), al. 2)
