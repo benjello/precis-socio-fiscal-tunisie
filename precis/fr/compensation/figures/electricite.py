@@ -6,8 +6,14 @@
     el.figure("subvention", caption=…, note_lecture=…)
     el.figure("gaz_sources", caption=…, note_lecture=…)
     el.figure("gaz_pib", caption=…, note_lecture=…)
+    el.figure("tarifs_mt", caption=…, note_lecture=…)
 
-D'OÙ VIENNENT LES DONNÉES. Cinq séries de `tunisia-data` (la cinquième, la facture des combustibles,
+LA FIGURE `tarifs_mt` lit une sixième série, `steg-tarifs-moyenne-tension`, versionnée dans
+`precis/_seriescache/` : la transcription valeur par valeur des trois tableaux du chapitre sur la
+moyenne tension (`scripts/serie_tarifs_mt.py`, qui la compare aux tableaux, dans les deux sens). Elle
+n'est pas dans l'entrepôt : sa provenance est déclarée ici.
+
+D'OÙ VIENNENT LES AUTRES DONNÉES. Cinq séries de `tunisia-data` (la cinquième, la facture des combustibles,
 ne sert qu'à la figure en points de PIB), lues par `figtools.series()` — donc
 depuis le snapshot `precis/_seriescache/` quand l'entrepôt est absent :
 
@@ -64,6 +70,7 @@ SUBV = "steg-subvention-exploitation"
 GAZ = "steg-prelevements-gaz"
 FACTURE = "steg-facture-combustibles"
 PIB = "pib-courant-par-base"
+TARIFS_MT = "steg-tarifs-moyenne-tension"
 
 BLEU, BLEU_CLAIR, ORANGE, VERT, VIOLET, ROUGE, GRIS, BRUN, NOIR, ROSE, TEAL = (
     "#0969da", "#80b3f0", "#d1600f", "#1a7f37", "#8250df", "#cf222e", "#8c959f", "#9a6700",
@@ -185,6 +192,28 @@ PROVENANCE = {
                  "gaz » de 2019-2024 vient d'un autre tableau et n'est pas le total des "
                  "prélèvements. Quantités en ktep, pouvoir calorifique supérieur.")),
 }
+PROVENANCE[TARIFS_MT] = dict(
+    titre=("Le tarif de l'électricité en moyenne tension, 1994-2022 : prix du kilowattheure par "
+           "poste horaire, tarif uniforme et tarif de secours, prime de puissance, à chaque date "
+           "d'effet"),
+    perimetre=("grilles de la moyenne tension de la STEG à chaque date d'effet : relais des "
+               "agences publiques de promotion (FIPA, API) et tableau 6.2 de l'ESMAP pour juin 1994, "
+               "août 2000, août 2001 et avril 2003 ; grilles de la STEG, pages archivées de son site "
+               "et documents de l'entreprise, du 1er mai 2004 au 1er octobre 2022. Prix hors taxes, "
+               "en millimes courants par kWh ; prime en millimes par kW et par mois (par kVA pour le "
+               "tarif uniforme de 1994 à 2003)"),
+    caveats=("Les familles de postes ne se raccordent pas : trois postes (juin 1994 à août 2000), "
+             "quatre postes (août 2000 à mai 2014), quatre postes redéfinis (depuis le 1er mai "
+             "2014). Le jour du passage de trois à quatre postes n'est pas établi, ni le jour "
+             "d'effet de la grille de juin 1994. Le soir et la nuit du tarif à postes horaires et "
+             "du tarif de secours du 1er août 2001 ne sont pas donnés par la source. Le tarif de "
+             "secours n'est pas relevé après 2003. Aucune grille postérieure au 1er octobre 2022 "
+             "n'est établie."),
+    source_ligne=("grilles de la moyenne tension de la STEG, 2004-2022 ; relais des agences "
+                  "publiques et de l'ESMAP, 1994-2003 (toutes les références : onglet « Sources »)"),
+)
+figtools.register_provenance(TARIFS_MT, titre=PROVENANCE[TARIFS_MT]["titre"], sources=[],
+                             unite="millimes courants par kWh, hors taxes")
 _ORIGINE: dict[str, dict] = {}
 
 
@@ -688,6 +717,149 @@ def _figure_gaz_pib():
     return ([(None, fig_gaz_pib())], table, cles, "fig_compensation_eg_gaz_pib")
 
 
+
+# --- 6. Le tarif de la moyenne tension, 1994-2022 -------------------------------------------------
+
+# Un poste a une couleur ; la famille de postes (trois, quatre, quatre redéfinis) dit seulement où
+# la courbe commence et finit. Aucune courbe ne traverse une rupture.
+POSTES_MT = (
+    ("jour", "jour", BLEU), ("pointe", "pointe", ROUGE), ("pointe_matin_ete", "pointe", ROUGE),
+    ("soir", "soir", ORANGE), ("pointe_soir", "soir", ORANGE), ("nuit", "nuit", VERT),
+)
+NOM_POSTE_MT = {
+    "jour": "jour", "pointe": "pointe", "soir": "soir", "nuit": "nuit",
+    "pointe_matin_ete": "pointe du matin en été", "pointe_soir": "pointe du soir",
+    "prix_unique": "prix unique", "prime_puissance": "prime de puissance"}
+NOM_FAMILLE_MT = {"trois_postes": "trois postes", "quatre_postes": "quatre postes",
+                  "quatre_postes_2014": "quatre postes redéfinis", "uniforme": "tarif uniforme"}
+NOM_TARIF_MT = {"postes_horaires": "postes horaires", "uniforme": "uniforme",
+                "secours": "secours"}
+FIN_MT = 2023.0  # le 31 décembre 2022 : la dernière grille établie est celle du 1er octobre 2022
+
+
+def _repere_date(ax, date, texte):
+    """Trait vertical pointillé à la date d'effet et triangle porteur de l'infobulle."""
+    x = figtools.abscisse_date(date)
+    ax.axvline(x, color="#57606a", ls=(0, (2, 2)), lw=1, zorder=1)
+    p, = ax.plot([x], [1], marker=7, ms=6, color=GRIS_FONCE, clip_on=False, zorder=5,
+                 transform=ax.get_xaxis_transform())
+    figtools.infobulle(p, texte)
+
+
+def _courbe_escalier_mt(ax, d, nom, couleur, ls="-", lw=2.0, etiquette=True):
+    """Une courbe en escalier : un niveau par grille, du jour d'effet à la grille suivante.
+
+    `d` : lignes d'une famille et d'un poste, triées par date. La grille suivante est celle de la
+    série entière (`dates`) : un niveau sans valeur à la grille suivante s'arrête à elle et laisse
+    un blanc, le trait ne se prolonge pas sur une valeur inconnue.
+    """
+    dates = sorted(set(d.attrs["dates"]))
+    lignes = list(d.itertuples(index=False))
+    for i, r in enumerate(lignes):
+        x = figtools.abscisse_date(r.date_effet)
+        suivante = [t for t in dates if t > r.date_effet]
+        fin = figtools.abscisse_date(suivante[0]) if suivante else FIN_MT
+        if r.valeur != r.valeur:  # case vide : rien à tracer
+            continue
+        if i + 1 == len(lignes) and suivante:
+            fin -= 0.4  # fin de famille : le trait s'arrête avant la rupture, il ne la traverse pas
+        ax.plot([x, fin], [r.valeur, r.valeur], color=couleur, ls=ls, lw=lw,
+                solid_capstyle="butt", zorder=3)
+        if i + 1 < len(lignes) and lignes[i + 1].valeur == lignes[i + 1].valeur \
+                and abs(figtools.abscisse_date(lignes[i + 1].date_effet) - fin) < 1e-9:
+            ax.plot([fin, fin], [r.valeur, lignes[i + 1].valeur], color=couleur, lw=1.0, zorder=2)
+        p, = ax.plot([x], [r.valeur], "o", color=couleur, ms=4.5, zorder=4)
+        incertain = "" if r.jour_etabli == "oui" else " (jour d'effet non établi)"
+        figtools.infobulle(
+            p, f"{r.date_effet}{incertain} · {nom} : {_nb(r.valeur, 0)} millimes par kWh "
+               f"({r.portee} ; {r.source})")
+    if etiquette:
+        v = d.dropna(subset=["valeur"])
+        for k in (0, -1):
+            r = v.iloc[k]
+            ax.annotate(_nb(r["valeur"], 0), xy=(figtools.abscisse_date(r["date_effet"]),
+                                                 r["valeur"]), xytext=(3, 4),
+                        textcoords="offset points", fontsize=7, color=couleur)
+
+
+def _donnees_mt():
+    d = figtools.series(TARIFS_MT)
+    d["date_effet"] = d["date_effet"].astype(str)
+    return d
+
+
+def _tracees_mt(d):
+    """Les lignes tracées : tarif à postes horaires hors prime, et prix du tarif uniforme."""
+    return d[((d["tarif"] == "postes_horaires") & (d["poste"] != "prime_puissance"))
+             | ((d["tarif"] == "uniforme") & (d["poste"] == "prix_unique"))]
+
+
+def fig_tarifs_mt():
+    figtools.apply_lang_font()
+    d = _donnees_mt()
+    fig, ax = plt.subplots(figsize=(9.5, 5.4))
+    dates = d[d["tarif"] == "postes_horaires"]["date_effet"].tolist()
+    uni = d[(d["tarif"] == "uniforme") & (d["poste"] == "prix_unique")].sort_values("date_effet")
+    uni.attrs["dates"] = dates
+    _courbe_escalier_mt(ax, uni, "tarif uniforme", GRIS_FONCE, ls=(0, (4, 2)), lw=1.6,
+                        etiquette=False)
+    for fam in ("trois_postes", "quatre_postes", "quatre_postes_2014"):
+        for poste, _, couleur in POSTES_MT:
+            s = d[(d["tarif"] == "postes_horaires") & (d["famille"] == fam)
+                  & (d["poste"] == poste)].sort_values("date_effet")
+            if s.empty:
+                continue
+            s.attrs["dates"] = dates
+            _courbe_escalier_mt(ax, s, f"{NOM_POSTE_MT[poste]} ({NOM_FAMILLE_MT[fam]})", couleur)
+    for r in d[d["rupture"].fillna("") != ""].drop_duplicates("date_effet").itertuples(index=False):
+        _repere_date(ax, r.date_effet, f"{r.date_effet[:4]} · {r.rupture}")
+    haut = 450
+    for nom, a, b in (("trois postes", "1994-06-01", "2000-08-15"),
+                      ("quatre postes", "2000-08-15", "2014-05-01"),
+                      ("quatre postes redéfinis", "2014-05-01", None)):
+        x0 = figtools.abscisse_date(a)
+        x1 = figtools.abscisse_date(b) if b else FIN_MT
+        ax.annotate(figtools.fig_text(nom), xy=((x0 + x1) / 2, 0.985), xycoords=("data", "axes fraction"),
+                    ha="center", va="top", fontsize=7.5, color=GRIS_FONCE)
+    _cadre(ax, "Millimes courants par kWh, hors taxes")
+    ax.set_xlim(1993.6, FIN_MT + 0.4)
+    ax.set_xticks(range(1994, 2024, 2))
+    ax.set_ylim(0, haut)
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0)))
+    poignees = [Line2D([0], [0], color=BLEU, lw=2, marker="o", ms=4.5, label=figtools.fig_text("Jour")),
+                Line2D([0], [0], color=ROUGE, lw=2, marker="o", ms=4.5,
+                       label=figtools.fig_text("Pointe (depuis 2014 : pointe du matin en été)")),
+                Line2D([0], [0], color=ORANGE, lw=2, marker="o", ms=4.5,
+                       label=figtools.fig_text("Soir (depuis 2014 : pointe du soir)")),
+                Line2D([0], [0], color=VERT, lw=2, marker="o", ms=4.5,
+                       label=figtools.fig_text("Nuit")),
+                Line2D([0], [0], color=GRIS_FONCE, lw=1.6, ls=(0, (4, 2)),
+                       label=figtools.fig_text("Tarif uniforme")),
+                Line2D([0], [0], marker=7, color=GRIS_FONCE, ls="none", ms=6,
+                       label=figtools.fig_text("rupture de série (infobulle sur le triangle)"))]
+    _legende(ax, poignees, ncol=2, y=-0.14)
+    fig.tight_layout()
+    return fig
+
+
+def _figure_tarifs_mt():
+    d = _donnees_mt()
+    tracee = _tracees_mt(d)
+    d = d.assign(tracee=["oui" if i in tracee.index and v == v else "non"
+                         for i, v in zip(d.index, d["valeur"])])
+    table = d[["tarif", "famille", "poste", "date_effet", "jour_etabli", "valeur", "unite", "etat",
+               "tracee", "portee", "source", "page", "rupture", "remarque"]].copy()
+    table["tarif"] = table["tarif"].map(NOM_TARIF_MT)
+    table["famille"] = table["famille"].map(NOM_FAMILLE_MT)
+    table["poste"] = table["poste"].map(NOM_POSTE_MT)
+    table["etat"] = table["etat"].map({"lu": "lu", "non_etabli": "non établi"})
+    table["jour_etabli"] = table["jour_etabli"].map({"oui": "oui", "non": "non"})
+    table.columns = ["Tarif", "Famille de postes", "Poste", "Date d'effet", "Jour d'effet établi",
+                     "Valeur", "Unité", "État", "Tracée", "Portée", "Source", "Page", "Rupture",
+                     "Remarque"]
+    return ([(None, fig_tarifs_mt())], table.reset_index(drop=True),
+            {TARIFS_MT: _cles(d.assign(cle=d["source"]))}, "fig_compensation_eg_tarifs_mt")
+
 # --- registre ---------------------------------------------------------------------------------
 
 FIGURES = {
@@ -696,8 +868,9 @@ FIGURES = {
     "subvention": _figure_subvention,
     "gaz_sources": _figure_gaz_sources,
     "gaz_pib": _figure_gaz_pib,
+    "tarifs_mt": _figure_tarifs_mt,
 }
-NON_MONETAIRES = {"gaz_sources"}
+NON_MONETAIRES = {"gaz_sources", "tarifs_mt"}
 
 
 def figure(nom: str, caption: str, note_lecture: str | None = None) -> None:

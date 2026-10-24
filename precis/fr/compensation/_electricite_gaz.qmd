@@ -315,6 +315,36 @@ Le gaz se lit de la même façon : une redevance d'abonnement, une redevance de 
 
 ### La moyenne tension
 
+De juin 1994 à octobre 2022, le kilowattheure de jour de la moyenne tension passe de 47 à 290 millimes hors taxes et celui de nuit de 30 à 222, sur trois familles de postes horaires qui ne se raccordent pas. Le @fig-compensation-eg-tarifs-mt trace chaque poste à chaque date d'effet ; les trois tableaux de la moyenne tension de 1994 à 2022 sont repliés sous la figure.
+
+```{python}
+#| label: fig-compensation-eg-tarifs-mt
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "tarifs_mt",
+    caption=(
+        "Le tarif de l'électricité en moyenne tension, juin 1994 - octobre 2022, par poste horaire "
+        "et à chaque date d'effet (millimes courants par kWh, hors taxes)"),
+    note_lecture=(
+        "Chaque courbe est un poste horaire, en escalier : le prix vaut du jour d'effet de la grille "
+        "à celui de la suivante. Trois familles de postes se succèdent et aucune ne se raccorde à la "
+        "précédente : trois postes (jour, pointe, nuit) de juin 1994 à août 2000 ; quatre postes (jour, "
+        "pointe, soir, nuit) du 15 août 2000 au 1er mai 2014 ; quatre postes redéfinis (jour, pointe du "
+        "matin en été, pointe du soir, nuit) depuis le 1er mai 2014, après la réforme de 2014. Les deux "
+        "repères triangulaires marquent ces ruptures ; le jour du passage de trois à quatre postes "
+        "n'est pas établi ; chaque courbe s'arrête avant la rupture, qu'elle ne traverse pas. "
+        "Le mois de la grille de juin 1994 vient d'un rapport extérieur, et son jour n'est pas établi. "
+        "En 2001, la source ne donne ni le soir ni la nuit : ces deux courbes s'interrompent à la "
+        "grille du 1er août 2001 et reprennent le 1er avril 2003. Le tarif uniforme, défini de la même "
+        "façon sur toute la période, est tracé d'un seul trait. Le tarif de secours de 1994 à 2003 et "
+        "la prime de puissance (en millimes par kW et par mois) sont dans l'onglet « Données ». La "
+        "dernière grille établie est celle du 1er octobre 2022. Millimes courants, sans rapport au "
+        "PIB."))
+```
+
 Du 1^er^ mai 2004 au 1^er^ octobre 2022, le kilowattheure de jour passe de 58 à 290 millimes, celui de nuit de 40 à 222, et la prime de puissance de 3 000 à 11 000 millimes. La hausse la plus forte en une fois est celle du 1^er^ septembre 2018 : le kilowattheure de jour passe de 173 à 215 millimes et la prime de 8 000 à 11 000.
 
 :::: {.chronologie-repliable titre="Tarif de l'électricité en moyenne tension, grille par grille, 1975-2022 : prix par poste horaire, prime de puissance et tarif uniforme"}

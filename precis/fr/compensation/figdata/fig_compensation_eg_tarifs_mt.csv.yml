@@ -1,0 +1,5 @@
+series: [steg-tarifs-moyenne-tension]
+sources: [fipa-2001-02-electricite-eng, fipa-1999-production, fipa-2001-05-electricite, api-2003-04-couts-energie, esmap-2005-307-electrification-rurale, fipa-2003-08-electricite-avril-2003, steg-grille-2004-05-01, steg-grille-2006-01-01, steg-grille-2008-09-01, steg-grille-2010-06-01, steg-grille-2012-09-01, steg-grille-2013-03-01, steg-grille-2014-05-01, steg-grille-2017-01-01, steg-grille-2018-05-01, steg-grille-2018-09-01, steg-grille-2019-06-01, steg-grille-2022-10-01-mt]
+fiches: []
+caveats: [Les familles de postes ne se raccordent pas : trois postes (juin 1994 à août 2000), quatre postes (août 2000 à mai 2014), quatre postes redéfinis (depuis le 1er mai 2014). Le jour du passage de trois à quatre postes n'est pas établi, ni le jour d'effet de la grille de juin 1994. Le soir et la nuit du tarif à postes horaires et du tarif de secours du 1er août 2001 ne sont pas donnés par la source. Le tarif de secours n'est pas relevé après 2003. Aucune grille postérieure au 1er octobre 2022 n'est établie.]
+generated: 2026-10-24

@@ -3203,6 +3203,12 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
   `_depense.qmd` ; `fig-compensation-carburants-beneficiaires`,
   `fig-compensation-carburants-directe-totale` et `fig-compensation-prix-pompe` dans
   `_carburants.qmd` ; `fig-compensation-sources-exterieures` dans `_exterieurs.qmd`.
+  - **Figure des tarifs de la moyenne tension** (24 octobre 2026) : `fig-compensation-eg-tarifs-mt`
+    (`_electricite_gaz.qmd`, `figures/electricite.py`, série versionnée
+    `precis/_seriescache/steg-tarifs-moyenne-tension.csv`, 118 lignes, écrite et comparée aux trois
+    tableaux par `scripts/serie_tarifs_mt.py`, test `tests/test_serie_tarifs_mt.py`). Une courbe par
+    poste, trois familles sans raccord ; le tarif de secours et la prime sont dans l'onglet
+    « Données » ; libellés arabes à verser (traduction différée) ; haute tension et gaz non tracés.
   - **Snapshots** : refaits le 6 octobre 2026 depuis `main` de `tunisia-data` (neuf séries
     `compensation-*` et `prix-carburants*`). Les notes de lecture disent la base du PIB d'après
     `segment_pib`, `pib_retropole` et `rupture_pib` (2010-2024 : INS, base 2015, rétropolée
