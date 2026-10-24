@@ -73,6 +73,12 @@
     couverture: 'Relance du 23 octobre 2026, textes publiés depuis le 19 septembre 2026 : jort_cache (dernière publication indexée le 2 octobre 2026), 0 candidat ; seconde voie LIKE sur titres et objets (« travailleuses agricoles », « femmes rurales », « الفلاحيات », « الحماية الاجتماعية للعاملات ») depuis le 1er octobre 2024 : seuls le décret-loi et la loi n° 2024-48 ; miroir iort (124 fichiers datés de 2026 ou après), 0 candidat ; plein texte du corpus local, JORT n° 94 à 97 de 2026 (FR 94, 95, 97 ; n° 96 lu en arabe seulement, le fichier français étant l''arabe), 0 occurrence. Lacunes : n° 58 de 2026 toujours absent du corpus ; liste des fascicules parus après le 2 octobre 2026 inconnue localement. Presse (secondaire) : Mosaïque FM, 5 décembre 2025 (propos d''un responsable associatif : exécution retardée « في ظل غياب الأوامر التطبيقية ») ; Kapitalis, 15 février 2026 (décret-loi « دون تفعيل فعلي » plus d''un an après sa publication, sans mention des textes d''application). Note : docs/notes/cotisations-decret-loi-2024-4.md.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'relance du 24 octobre 2026 depuis le 10 avril 2026 : jort_cache jusqu''au 2 octobre 2026, miroir iort et plein texte des fascicules 2026 lus : aucun candidat, aucune occurrence.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
   - 'lire le JORT n° 58 de 2026 : inconnu de jort_cache, absent du corpus local, et pist.tn répond 404 dans les deux éditions (24 septembre 2026) ; le n° 59 commence p. 1129'
   - 'lire les numéros postérieurs au n° 93 de 2026 : jort_cache s''arrête au 18 septembre 2026, et le n° 94 répond 404 sur pist.tn (24 septembre 2026)'
@@ -124,6 +130,12 @@
     couverture: 'Relance du 24 septembre 2026 depuis le 28 août 2007 (relancer --depuis 2007-08-28), plein texte compris. Plein texte exploitable : éditions françaises de 2007 à 2026 ; éditions arabes depuis 2014 seulement (de 2007 à 2013, sans texte ou en codage illisible pour l''essentiel). Lacunes, fascicules parcourus dans aucune édition (absents, sans texte ou illisibles dans les deux) : 2011 n° 62, 73, 90-99 ; 2012 n° 12, 41, 43, 100 ; 2013 n° 47 ; 2015 n° 53 ; 2019 n° 23 ; 2020 n° 23-29, 31-33 ; 2021 n° 45-46 ; 2022 n° 92, 132 ; 2026 n° 58 ; numéros ni dans le corpus local ni dans jort_cache, dont l''existence n''est donc pas établie : 2019 n° 83 ; 2020 n° 4, 30, 39, 86, 96-98, 102, 125 ; 2023 n° 122 ; rien après le n° 93 de 2026 ; n° 163/2020, 164/2021, 203/2025 et 107/2026 : erreurs de numéro de jort_cache, non des lacunes ; les autres absences (éd. fr. de 2015 à 2025, dont une trentaine de numéros en 2018 et une quarantaine en 2019 ; éd. ar. 2014 n° 4, 2019 n° 22-24, 2022 n° 130, 2023 n° 45 et 146, 2024 n° 9, 2026 n° 3) sont couvertes par l''autre édition. jort_cache (23 intitulés) : le décret n° 2007-2148 lui-même, les arrêtés annuels du barème d''actualisation (2008-2015, 2018, 2020-2024) — le plein texte y ajoute ceux du 1er mars 2016 (n° 20/2016), du 10 avril 2017 (n° 32/2017) et du 5 mars 2019 (n° 21/2019), que jort_cache n''indexe que sous un intitulé arabe, les décrets n° 2013-3304, 2014-10, 2015-1224 et 2019-40 (prise en charge par l''État des cotisations), n° 2023-161 et 2026-67 à 2026-69 (salaires) ; miroir iort (5 intitulés) : aucun modificatif. Occurrences du plein texte (76, 2008-2026) lues en fenêtre large : visas citant le décret n° 2007-2148 comme dernier modificatif (ou « notamment ») de 2008 (n° 8/2008) à 2026 (n° 80/2026) ; arrêtés du barème pris en application de l''article 18 (nouveau), qui visent tantôt le décret n° 94-1429 (arrêtés de 2008 à 2016, 2019 et 2020), tantôt le décret n° 2007-2148 (2017, 2018, 2021 à 2024) ; arrêtés d''application de l''article 15 (55 ans : agents des mines, n° 75/2015 ; assainissement et nettoiement, n° 55/2023) ; formulaire de la CNSS (n° 1/2019 et 2/2019, éd. ar.). Aucun modificatif postérieur au décret n° 2007-2148.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'relance du 24 octobre 2026 depuis le 10 avril 2026 : jort_cache jusqu''au 2 octobre 2026 (trois décrets de salaires du 30 avril 2026, sans rapport) ; plein texte des fascicules 2026 lus (français n° 37 à 57, 59 à 61, 63 à 75, 77 à 95 et 97 ; arabes n° 37 à 57 et 59 à 97) : la chaîne 74-499 n''apparaît que dans les visas d''un arrêté conjoint du JORT n° 80 du 7 août 2026 (p. 1611), qui cite le décret n° 74-499 « dont le dernier en date le décret n° 2007-2148 ».'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
   - 'lire le JORT n° 58 de 2026 : inconnu de jort_cache, absent du corpus local, et pist.tn répond 404 dans les deux éditions (24 septembre 2026) ; le n° 59 commence p. 1129'
   - 'lire les numéros postérieurs au n° 93 de 2026 : jort_cache s''arrête au 18 septembre 2026, et le n° 94 répond 404 sur pist.tn (24 septembre 2026)'
@@ -148,6 +160,12 @@
     sources: [corpus_local, pist]
     couverture: 'fascicules FR et AR jusqu''au JORT n° 93 du 18 septembre 2026, sauf le n° 58 de 2026 ; termes cherchés non consignés. Trace : TODO du chapitre « Retraites », commit 6290f52 (« aucun modificatif de l''âge […] jusqu''au 18 septembre 2026 »).'
     couvert_jusqu_au: 2026-09-18
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'relance du 24 octobre 2026 depuis le 10 avril 2026 : un seul candidat de jort_cache, le décret n° 2026-229 du 2 octobre 2026 (liste des éléments permanents des agents de l''Instance supérieure indépendante pour les élections), sans rapport avec l''âge légal du secteur privé ; miroir iort : aucun candidat.'
+    couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
   - lire le JORT n° 58 de 2026 (pp. 1073-1127)
@@ -230,6 +248,12 @@
     couverture: 'Trois arrêtés trouvés par recherche en plein texte des fascicules : arrêté du 1er mars 2016 (JORT n° 20/2016, p. 686, arrete-2016-03-01-bareme-actualisation), arrêté du 10 avril 2017 (JORT n° 32/2017, p. 1497-1498, arrete-2017-04-10-bareme-actualisation), arrêté du 5 mars 2019 (JORT n° 21/2019, édition arabe, p. 783, arrete-2019-03-05-bareme-actualisation ; aucune édition française trouvée, l''adresse française de pist.tn sert le fascicule arabe). jort_cache ne les indexe que sous leur intitulé arabe « يتعلق بضبط السلم التقييمي لتحيين الأجور » : les requêtes françaises des passes précédentes ne pouvaient pas les remonter. Barèmes versés par openfisca-tunisia#459 (version 0.112). Les années 2025 et 2026 passent à la fiche r-rsna-bareme-2025-2026.'
     couvert_jusqu_au: 2026-09-18
     resultat: arrete-2016-03-01-bareme-actualisation
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'relance du 24 octobre 2026 depuis le 10 avril 2026 : jort_cache jusqu''au 2 octobre 2026, miroir iort et plein texte des fascicules 2026 lus : aucun candidat, aucune occurrence ; aucun barème 2025 ou 2026 identifié.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   resolu: arrete-2016-03-01-bareme-actualisation
 
 - id: r-rsna-bareme-2025-2026
@@ -2684,8 +2708,16 @@
     couverture: 'Rapports du ministère des Finances annexés aux projets de loi de finances pour 2020 à 2025 (entreprises publiques, transferts et garanties, dette publique des éditions LF 2022 et LF 2025) : aucune réalisation antérieure à 2016. Site de la Direction générale de la privatisation et ses captures aux archives du web : statistiques arrêtées au 31 janvier 2009, relevé annuel jusqu''à 2009. jort_cache, titres : articles de lois de finances repérés par leur seul intitulé — garantie de l''État dans chaque loi de finances de 1961 à 1994 ; lois n° 80-88, 83-113, 85-109, 89-115 (fonds de restructuration du capital des entreprises publiques), 91-98, 96-113, 98-111, 2002-101 — sans lecture des montants. Non ouverts : rapports annuels de la Banque centrale, lois de règlement, rapports de la Cour des comptes sur la clôture du budget et sur la dette publique extérieure (2018), plans de développement, rapports sur la dette publique des éditions LF 2021 et LF 2024. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 1.2, § 2 et § 5.2.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Rapports de la Cour des comptes sur la clôture du budget de l''État, éditions arabes, gestions 2011 à 2016 (catalogue de tunisia-data, rubrique 18 ; copies locales hors git), lus aux pages des recettes non fiscales, de la dette garantie, des prêts et des recettes non ordinaires : transferts des entreprises publiques et profits du Trésor (2010-2016), principal et intérêts de la dette garantie payés par l''État (2010-2016), remboursements de prêts reçus (2011-2016), recettes de privatisation inscrites au budget (2010-2016). Les rapports ventilent la dépense par ministère et par nature, non par entreprise bénéficiaire : aucun transfert du budget aux entreprises publiques n''en sort. Les rapports écrivent chaque année que le compte général ne porte ni la situation des prêts rétrocédés ni celle des prêts garantis : aucun encours. Le rapport de clôture de la gestion 2010 n''est pas au catalogue de la Cour (saut de 2009 à 2011) ; ses valeurs viennent de la colonne de comparaison du rapport 2011. Non lus : rapports des gestions 2017 à 2019 (hors période), tableaux des fonds spéciaux du Trésor (fonds de restructuration du capital des entreprises à participation publique), lois de règlement du Journal officiel, rapports annuels de la Banque centrale, annexes du ministère des Finances des lois de finances d''avant 2020. Série : tunisia-data, cdc-cloture-entreprises-publiques ; fiche sources/cdc-cloture-entreprises-publiques.md.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: partiel
   a_faire:
-  - ouvrir les rapports annuels de la Banque centrale et les lois de règlement pour les transferts, les revenus de participations et les recettes de privatisation
+  - 'transferts du budget aux entreprises publiques par entreprise, 2010-2015 : rapports sur les transferts et les garanties annexés aux lois de finances d''avant 2020, lois de règlement, rapports annuels de la Banque centrale'
+  - fonds de restructuration du capital des entreprises à participation publique et recapitalisations des banques publiques, en réalisation (tableaux des fonds spéciaux de chaque rapport de clôture)
+  - 'rapport de clôture de la gestion 2010 : demander à la Cour des comptes ou chercher à l''Assemblée'
   - dépouiller le rapport de la Cour des comptes sur la dette publique extérieure (2018)
 
 - id: r-ep-plafond-garantie-1995-2015
@@ -2727,8 +2759,14 @@
     couverture: 'Fascicules français du corpus local (scannés, sans couche texte), reconnaissance de caractères à 250 dpi puis relecture de l''image : articles 1 à 4 (budget ordinaire, titre I) des lois de finances de 1959-60 et de 1961 à 1986, versés au relevé budget-ordinaire-lois-de-finances.csv. Recettes ordinaires et crédits égaux chaque année, sauf 1959-60 (crédits effacés à l''image). Non lus : budget d''équipement (titre II, puis budget de développement, structure variable d''une loi à l''autre : voies et moyens, crédits d''engagement et de paiement, reconstruction), lois de règlement, rapports annuels de la Banque centrale, budget ordinaire de 1958-59 (loi n° 58-45, en francs). Note : docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md, § 7.'
     couvert_jusqu_au: 2026-10-23
     resultat: partiel
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Fascicules français du corpus local (scannés), reconnaissance de caractères à 250 dpi puis relecture à l''image : budget d''équipement, puis de capital, de la loi n° 60-38 (gestion 1961) à la loi n° 85-110 (gestion 1986), vingt-cinq textes : titre II des lois de finances de 1961, 1962 (provisoire), 1966 à 1969 et 1981 à 1983 ; loi n° 62-27 (période 1962-1964) ; loi n° 65-14 (1965) ; lois portant fixation du budget de capital de 1970 à 1980 et de 1984 à 1986. Voies et moyens égaux aux crédits de paiement dans les vingt-cinq textes. Les lois n° 62-82 et 63-58 ne portent que le budget ordinaire : aucun montant annuel pour 1963 et 1964 ; aucune loi d''équipement identifiée pour 1959-60. Non lus : lois modificatives et complémentaires (n° 70-59, 71-58, 74-76, 84-3, 81-70, 82-27, 83-81), répartition par chapitre, lois de règlement, rapports annuels de la Banque centrale. Relevé : precis/fr/entreprises_publiques/listes/budget-equipement-lois-de-finances.csv.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: partiel
   a_faire:
-  - lire les articles sur le budget d'équipement et de développement des lois de finances de 1961 à 1985 pour un total de l'État qui ne compte pas deux fois la contribution du budget ordinaire
+  - lire les lois modifiant un budget de capital en cours d'année (1970, 1971, 1974, 1981 à 1984)
   - chercher la réalisation du budget de l'État avant 1986 (lois de règlement, rapports annuels de la Banque centrale)
   - chercher le décret du 29 juin 1957 et le chiffre des crédits de 1959-60 (autre exemplaire du fascicule n° 18 de 1959)
 
@@ -4005,8 +4043,20 @@
     couverture: 'miroir iort (textes/md), termes arabes « الإجراءات الاستثنائية للإحالة », « تمويل الإجراءات الاستثنائية » : lois de finances et de règlement, aucun décret ; plein texte des fascicules français 2009-2017 du corpus local, expression « mesures exceptionnelles de (la) mise (à|en) la retraite » : lois de finances (tableau B), décret n° 2011-932, aucun autre décret ; plein texte arabe 2013-2016 (829 fascicules arabes de 2009 à 2016 parcourus après normalisation des formes de présentation) : occurrences dans les seuls tableaux des lois de finances, aucun décret ; plein texte arabe 2009-2012 : le même parcours ne retrouve ni le décret n° 2011-932 ni les tableaux des lois de finances, dont les fascicules ne portent pas de couche texte arabe exploitable, de sorte que cette recherche ne vaut rien pour ces années ; quatre fascicules arabes de 2015 (n° 53, 57, 64, 67) sans texte. Non couverts : une quinzaine de fascicules français de 2009-2014 de moins de 20 Ko sans couche texte complète (JORT 2009 n° 101 ; 2011 n° 8 à 11, 24 ; 2012 n° 4, 7, 11, 13, 14, 22, 34 ; 2013 n° 104 ; 2014 n° 59), fascicules arabes de 2009 à 2012, années 2018-2024 en plein texte.'
     couvert_jusqu_au: 2017-12-31
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local, iort]
+    couverture: 'plein texte des quinze fascicules français de 2009-2014 qui n''avaient pas de couche texte complète (JORT 2009 n° 101 ; 2011 n° 8 à 11 et 24 ; 2012 n° 4, 7, 11, 13, 14, 22 et 34 ; 2013 n° 104 ; 2014 n° 59), océrisés à l''image (tesseract, français) et parcourus pour « exceptionnelles », « mise à la retraite », « tabac », « 2009-40 » : aucun décret de pourcentages (fascicules de nominations, arrêtés et décrets sans rapport). Les articles des lois de finances 2011 (loi n° 2010-58), 2012 (loi n° 2011-7) et du décret-loi n° 2011-56 ne portent que les lignes du tableau B, sans pourcentage. Non couverts : fascicules arabes de 2009 à 2012, sans couche texte exploitable et sans océrisation arabe pratiquée ici ; années 2018-2024 en plein texte.'
+    couvert_jusqu_au: 2017-12-31
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'sommaires (trois premières pages) de 362 fascicules arabes du JORT, du n° 50 de 2009 au n° 103 de 2012, océrisés en arabe (tesseract, modèle ara du dépôt PDFs-legislation-tunisie) et parcourus pour « حساب تمويل », « صندوق تمويل », « موارد حساب », « تمويل الإجراءات », « الإجراءات الاستثنائية », « الإحالة على التقاعد قبل » : seuls ressortent la loi n° 2009-39, l''avis n° 27-2009 et l''ordre n° 2011-932 (JORT n° 52/2011, p. 1246 de l''édition arabe, intitulé « ضبط موارد حساب تمويل الإجراءات الاستثنائية »), aucun autre texte. Limite : seul le sommaire est lu, non le corps des fascicules ; une reconnaissance partielle de certaines lignes est possible.'
+    couvert_jusqu_au: 2012-12-31
+    resultat: aucun
   a_faire:
-  - océriser les fascicules français sans couche texte listés ci-dessus et les fascicules arabes de 2009 à 2012 ; parcourir le plein texte de 2018 à 2024
+  - lire le corps des fascicules arabes de 2009 à 2012 (seuls les sommaires ont été océrisés) ; parcourir le plein texte de 2018 à 2024
 
 - id: r-cnrps-compte-retraite-avant-age-2009-depenses
   objet: dépenses et exécution du compte de financement des mesures exceptionnelles de mise à la retraite (loi n° 2009-40, art. 2 à 4), pensions et contributions imputées, de 2009 à son abrogation par la loi de finances pour 2025
@@ -4026,6 +4076,54 @@
     resultat: aucun
   a_faire:
   - chercher les annexes des lois de règlement (tableaux des dépenses des fonds spéciaux) hors du JORT ; rapports de la Cour des comptes sur les lois de règlement 2009-2020 ; archives du ministère des finances (comptes de fin d'année)
+
+- id: r-cnrps-convention-retraite-avant-age-2009
+  objet: convention entre le ministre des finances et le président-directeur général de la CNRPS réglant le transfert des pensions et contributions des agents mis à la retraite avant l'âge légal (décret n° 2009-2085, art. 8, al. 2) et convention équivalente du décret gouvernemental n° 2017-825 (art. 8)
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-retraite-avant-age-2009]
+  requetes:
+    titres_fts: [convention AND "caisse nationale de retraite"]
+    titres_like: ['%convention%transfert%pensions%', '%convention%mise a la retraite avant%']
+    iort_ar: [اتفاقية, الإحالة على التقاعد قبل السن القانونية]
+    depuis: 2009-07-20
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache (notices jusqu''au 2 octobre 2026), titres français (FTS, LIKE ; « convention » joint à « caisse nationale de retraite » ou « CNRPS », toutes années) et arabes (LIKE « اتفاقية » joint à « التقاعد » ou « الصندوق الوطني للتقاعد », toutes années) : seules répondent les conventions relatives à la régularisation de l''amnistie générale (décret n° 2014-10 et décret gouvernemental n° 2019-40), sans rapport ; miroir iort : les décrets n° 2009-2085 et n° 2011-932 ne renvoient à aucun texte approuvant la convention. Une convention approuvée par décret figurerait au JORT sous un décret « portant approbation de la convention » : aucun pour ce sujet. Non couvert : texte des conventions non publiées (archives de la CNRPS et du ministère des finances).'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'sommaires de 362 fascicules arabes du JORT (n° 50 de 2009 au n° 103 de 2012), océrisés en arabe : aucune ligne « اتفاقية » relative à la CNRPS ou à la retraite avant l''âge légal. Limite : sommaires seuls.'
+    couvert_jusqu_au: 2012-12-31
+    resultat: aucun
+  a_faire:
+  - demander à la CNRPS ou au ministère des finances si les conventions de 2009 et de 2017 existent, et sous quelle forme ; rejouer les termes arabes sur le plein texte arabe de 2009-2010 après océrisation
+
+- id: r-decret-85-614-sort
+  objet: texte abrogeant, modifiant ou visant le décret n° 85-614 du 18 avril 1985 (limite d'âge de certains magistrats de l'ordre judiciaire) après la loi organique n° 88-73 du 2 juillet 1988
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-magistrats]
+  requetes:
+    titres_fts: ['"limites d age" AND magistrats']
+    titres_like: ['%85-614%', '%limites d age de certains magistrats%']
+    iort_ar: [حدود سن بعض القضاة]
+    plein_texte: [85-614]
+    depuis: 1988-07-08
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache (notices jusqu''au 2 octobre 2026), LIKE « %85-614% » sur titre et objet et FTS « limites d age » joint à « magistrats » : le seul texte portant ce numéro est le décret lui-même ; miroir iort (32 118 textes, grep « 85-614 » sur le texte entier) : seul le décret lui-même contient la chaîne. Les textes modifiant la loi n° 67-29 de 1988 à 2016 (lois organiques n° 88-73, 91-9, 2005-81, 2012-13, 2016-34) ont été lus : aucun ne vise le décret. Non couvert : plein texte des fascicules du corpus local, arabes comme français.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'plein texte (commande relancer --depuis 1988-07-08) des fascicules du corpus local lisibles, français et arabes, de 1997 à 2026 pour la chaîne « 85-614 » : 0 occurrence. Non lus : fascicules de 1988 à 1996 (images sans couche texte, français et arabes), fascicules arabes de 1997 et 1999 en partie, fascicules absents du corpus local listés par la commande.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [océriser les fascicules de 1988 à 1996 pour « 85-614 »]
 
 - id: r-banque-donnees-2014-1526-suite
   objet: texte prolongeant à nouveau, modifiant ou abrogeant le décret n° 2014-1526 (unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité) après le décret gouvernemental n° 2018-626, dont la prolongation d'un an court jusque vers mai 2019
