@@ -3901,6 +3901,54 @@
       "note": "citation-key: fipa-2003-08-electricite-avril-2003\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20030805143433 lu dans le CDX le 6 octobre 2026). Contenu : grille du 1er avril 2003 pour l'électricité ; la date d'effet au jour vient de la BAD. Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : fipa/v_a050701_20030805143433.htm, SHA-256 32317007abe84da2dd393d9a026e7148cb2e05ced7ee03bcb0103ed4eb1065fb. Page en français ; édition arabe non cherchée."
     },
     {
+      "id": "fipa-2002-06-electricite-aout-2000",
+      "type": "webpage",
+      "title": "Guide de l'investisseur : électricité (tarifs en hors taxes, août 2000)",
+      "author": [
+        {
+          "literal": "Agence de promotion de l'investissement extérieur"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20020617012142/http://www.investintunisia.com:80/fre/poleA/a050701.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            24
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.investintunisia.com:80/fre/poleA/a050701.htm",
+      "title-short": "Guide de l'investisseur : électricité (août 2000)",
+      "note": "citation-key: fipa-2002-06-electricite-aout-2000\nFamille : source officielle tunisienne (agence publique relayant la grille). Page archivée lue dans la capture 20020617012142 (variante id_, relue le 24 octobre 2026). Contenu : grille du 15 août 2000 de la haute tension à trois et à quatre postes horaires, de la moyenne et de la basse tension ; la date d'effet vient de la BAD."
+    },
+    {
+      "id": "fipa-2003-08-gaz",
+      "type": "webpage",
+      "title": "Guide de l'investisseur : gaz naturel (tarifs en hors taxes)",
+      "author": [
+        {
+          "literal": "Agence de promotion de l'investissement extérieur"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20030805143656/http://www.investintunisia.com:80/fre/poleA/a050702.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            24
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.investintunisia.com:80/fre/poleA/a050702.htm",
+      "title-short": "Guide de l'investisseur : gaz naturel",
+      "note": "citation-key: fipa-2003-08-gaz\nFamille : source officielle tunisienne (agence publique relayant la grille). Page archivée lue dans la capture 20030805143656 (variante id_, relue le 24 octobre 2026). Contenu : prix de l'énergie du gaz, hors taxes : haute pression 13,2, moyenne pression 14, basse pression 17,1 millimes par thermie, sans date d'effet."
+    },
+    {
       "id": "fipa-2004-11-gaz-mai-2004",
       "type": "webpage",
       "title": "Guide de l'investisseur : Gaz naturel (tarifs en hors taxes, « Mai 2004 »)",
@@ -5573,6 +5621,86 @@
       "title-short": "Décret n° 93-2116 du 25 octobre 1993",
       "note": "citation-key: decret93-2116\nJORT n° 83 du 2 novembre 1993. Art. 2 du décret n° 91-1391 refait : 800 millimes par kilogramme pour la poudre de lait à 0 % de matière grasse, 680 millimes par kilogramme pour la poudre à 26 %. Lecture faite sur l'édition française (image), le 24 octobre 2026 ; édition arabe : intitulé arabe non lu (le titre français est conservé, selon l'usage du fonds), pagination arabe non mesurée (champ page laissé vide) ; URL lue dans pdf_ar de jort_cache.",
       "volume": "136"
+    },
+    {
+      "id": "decret93-1187",
+      "type": "legislation",
+      "title": "Décret n° 93-1187 du 24 mai 1993, modifiant le décret n° 90-1193 du 12 juillet 1990 relatif à l'institution d'un prélèvement sur la viande bovine importée",
+      "container-title": "الرائد الرسمي للجمهورية التونسية",
+      "issue": "42",
+      "issued": {
+        "date-parts": [
+          [
+            1993,
+            5,
+            24
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1993/1993A/Ja04293.pdf",
+      "title-short": "Décret n° 93-1187 du 24 mai 1993",
+      "note": "citation-key: decret93-1187\nJORT n° 42 du 8 juin 1993. Art. 1 (nouveau) : prélèvement « au profit de la caisse générale de compensation » de 670 millimes par kilogramme sur les bovins vivants de plus de 300 kg destinés à la boucherie (n° 0102909 du tarif douanier) et de 1 200 millimes par kilogramme sur la viande bovine des positions 02.01 (fraîche ou réfrigérée) et 02.02 (congelée), en carcasses, morceaux non désossés et désossés ; art. 2 (nouveau) : prélèvements perçus à l'importation, révisés chaque année ou en cas de besoin d'après l'évolution des prix internationaux non subventionnés, non pris en compte dans la liquidation des autres droits et taxes. Lecture faite sur l'édition française (image), le 24 octobre 2026. Édition arabe : intitulé arabe non lu (le titre français est conservé, selon l'usage du fonds), pagination arabe non mesurée (champ page laissé vide) ; URL lue dans pdf_ar de jort_cache.",
+      "volume": "136"
+    },
+    {
+      "id": "decret2002-2227",
+      "type": "legislation",
+      "title": "Décret n° 2002-2227 du 7 octobre 2002, modifiant le décret n° 91-1391 du 23 septembre 1991, relatif à l'institution d'un prélèvement à l'importation de la poudre de lait",
+      "container-title": "الرائد الرسمي للجمهورية التونسية",
+      "issue": "84",
+      "issued": {
+        "date-parts": [
+          [
+            2002,
+            10,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2002/2002A/Ja0842002.pdf",
+      "title-short": "Décret n° 2002-2227 du 7 octobre 2002",
+      "note": "citation-key: decret2002-2227\nJORT n° 84 du 15 octobre 2002. Art. 1 : premier et deuxième tirets de l'art. 2 du décret n° 91-1391 refaits (poudre à 26 % de matière grasse : 680 dinars par tonne ; poudre à 0 % destinée aux nourrissons, aux malades ou à l'alimentation animale : 800 dinars par tonne) et troisième tiret rédigé ainsi (poudre à 0 % : prélèvement en dinars par tonne = 4 450 D moins la somme du prix à l'importation C.I.F. et des droits de douane). Le texte ne dit pas au profit de qui le prélèvement est perçu. Couche texte du fascicule chiffrée ; lecture faite sur l'image de la page, le 24 octobre 2026. Édition arabe : intitulé arabe non lu (le titre français est conservé, selon l'usage du fonds), pagination arabe non mesurée (champ page laissé vide) ; URL lue dans pdf_ar de jort_cache.",
+      "volume": "145"
+    },
+    {
+      "id": "decret2009-2293",
+      "type": "legislation",
+      "title": "Décret n° 2009-2293 du 31 juillet 2009, portant modification du décret n° 91-1391 du 23 septembre 1991 relatif à l'institution de prélèvements à l'importation de la poudre de lait",
+      "container-title": "الرائد الرسمي للجمهورية التونسية",
+      "issue": "64",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            7,
+            31
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009A/Ja0642009.pdf",
+      "title-short": "Décret n° 2009-2293 du 31 juillet 2009",
+      "note": "citation-key: decret2009-2293\nJORT n° 64 du 11 août 2009. Art. 1 : troisième tiret de l'art. 2 du décret n° 91-1391 abrogé et remplacé : poudre de lait à 0 % de matière grasse : 680 dinars par tonne (au lieu de la formule de 2002). Le texte ne dit pas au profit de qui le prélèvement est perçu. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026. Édition arabe : intitulé arabe non lu (le titre français est conservé, selon l'usage du fonds), pagination arabe non mesurée (champ page laissé vide) ; URL lue dans pdf_ar de jort_cache.",
+      "volume": "152"
+    },
+    {
+      "id": "decret2015-50",
+      "type": "legislation",
+      "title": "Décret n° 2015-50 du 2 janvier 2015, portant modification du décret n° 91-1391 du 23 septembre 1991 relatif à l'institution d'un prélèvement à l'importation sur la poudre de lait",
+      "container-title": "الرائد الرسمي للجمهورية التونسية",
+      "issue": "8",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            1,
+            2
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2015/2015A/Ja0082015.pdf",
+      "title-short": "Décret n° 2015-50 du 2 janvier 2015",
+      "note": "citation-key: decret2015-50\nJORT n° 8 du 27 janvier 2015. Art. 1 : premier et troisième tirets de l'art. 2 du décret n° 91-1391 abrogés et remplacés : poudre de lait à 26 % de matière grasse : 1 500 dinars par tonne ; poudre de lait à 0 % : 1 500 dinars par tonne. Le deuxième tiret (800 dinars par tonne, nourrissons, malades, alimentation animale) n'est pas modifié. Le texte ne dit pas au profit de qui le prélèvement est perçu. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026. Édition arabe : intitulé arabe non lu (le titre français est conservé, selon l'usage du fonds), pagination arabe non mesurée (champ page laissé vide) ; URL lue dans pdf_ar de jort_cache.",
+      "volume": "158"
     }
   ]
 }
