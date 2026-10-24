@@ -1,0 +1,15 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-24
+# séries (tunisia_data) : log-prelevements-fonds
+# sources (citation) : @loi86-106-lf1987, @loi-87-83-lf-1988, @loi88-145-lf1989, @loi-89-115-lf-1990, @dl-2011-56-lfc-2011, @lfc-2012, @lf-2013
+# fiches : 
+# méthode/hypothèses : Montants fixés par les textes, non les sommes effectivement prélevées. Une année sans barre est une année où aucun prélèvement n'a été identifié.
+# note : Prélèvements des lois de finances sur les disponibilités du fonds de promotion du logement pour les salariés, 1987-2013, en millions de dinars courants
+Année,Bénéficiaire,Montant (MD courants),Texte,Page du Journal officiel
+1987,programme national de résorption des logements rudimentaires,5,loi n° 86-106 (LF 1987) art. 96,1624
+1988,programme national de résorption des logements rudimentaires,5,loi n° 87-83 (LF 1988) art. 76,1635
+1989,programme national de résorption des logements rudimentaires,15,loi n° 88-145 (LF 1989) art. 68,1800
+1990,programme national de résorption des logements rudimentaires,15,loi n° 89-115 (LF 1990) art. 46,2151
+2011,Fonds national d'amélioration de l'habitat,20,décret-loi n° 2011-56 (LFC 2011) art. 3,1013
+2011,Compte national de solidarité sociale,20,décret-loi n° 2011-56 (LFC 2011) art. 3,1013
+2012,Fonds national d'amélioration de l'habitat,60,loi n° 2012-1 (LFC 2012) art. 36,927
+2013,Fonds national d'amélioration de l'habitat,60,loi n° 2012-27 (LF 2013) art. 11,5
