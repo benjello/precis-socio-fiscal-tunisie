@@ -4654,6 +4654,23 @@ verser par le terminologue quand un volume les emploiera.
   décrivent plus le fichier actuel. Examiner la stratégie de découpage ou de
   traduction par sections avant une retraduction complète.
 
+- **Budget de l'État voté, 1986-2026 : série versée, usage à décider (24 octobre 2026).**
+  `tunisia-data`, série `jort-lf-budget-etat` (64 lois de finances initiales et complémentaires,
+  ressources, charges, fonds spéciaux, emprunts nets, déficit imprimé depuis 2020 ; fiche
+  `sources/jort-lf-budget-etat.md`). Aucun chapitre ni figure ne l'emploie encore : un total voté
+  ne se lit qu'avec sa vue d'évolution datée et par régime de présentation (budget général,
+  titres I et II, parties, missions : jamais chaînés ; les ressources d'avant 2020 comprennent
+  les emprunts bruts et égalent les charges). Usages à instruire, un par un : (1) contexte
+  budgétaire de la longue période des chapitres de dispositifs, en lisant les ressources
+  ordinaires (`recettes_ordinaires_md`) et non le total ; (2) rapprochement, sur un graphique, des
+  lois initiales et complémentaires d'une même année (écart voté) ; (3) fonds spéciaux, à
+  rapprocher de la ligne des recettes des fonds spéciaux du ministère (`minfin-fonds-speciaux-tresor`).
+  Lacunes : fonds spéciaux de 1986, 1987 et 1989 (loi initiale) ; articles d'emprunts nets de
+  quelques lois complémentaires ; clés bibliographiques des lois complémentaires de 2002, 2004,
+  2005, 2007, 2008, 2014, 2016, 2019, 2020, 2021, 2022 et 2023 et des deux lois du budget de capital
+  de 1986 à verser (colonne `cle` vide) ; fascicule français de la loi de finances pour 2023
+  (n° 141 de 2022) absent du corpus local, lue dans l'édition arabe.
+
 ## Suite proposée
 
 **Point d'arrêt du 30 septembre 2026.** Le repère de bonification de l'article 32 est
