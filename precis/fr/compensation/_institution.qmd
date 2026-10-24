@@ -16,7 +16,7 @@ Les textes de 1943, 1945, 1953, 1954 et 1955 ne sont connus ici que par les visa
 
 De 1956 à 1967, cette caisse agit surtout par [péréquation](#g-perequation-des-prix) : elle prélève une redevance sur certains produits pour en soutenir d'autres, ou pour égaliser un prix d'importation et un prix intérieur. Quatre familles de produits sont concernées, d'après l'intitulé même des textes :
 
-- les **huiles de graines** — une redevance compensatrice sur les huiles alimentaires autres que l'huile d'olive, importées ou produites en Tunisie [@arrete-1956-04-07-redevance-huiles] ;
+- les **huiles de graines** — une [redevance compensatrice](#g-redevance-compensatrice) sur les huiles alimentaires autres que l'huile d'olive, importées ou produites en Tunisie [@arrete-1956-04-07-redevance-huiles] ;
 - le **sucre** — une redevance compensatrice sur les sucres importés [@arrete-1956-12-27-redevance-sucres ; @decret58-163] ;
 - l'**acier** — une redevance compensatrice sur les produits du chapitre 73 du tarif des douanes [@decret67-99] ;
 - les **carburants** — deux prélèvements successifs, détaillés ci-dessous.
@@ -82,10 +82,10 @@ L'expression est celle du décret de 1970, qui la reprend sans la convertir ; il
 
 ### Comment la Caisse fonctionne
 
-La Caisse ne vend ni n'achète : elle paie aux offices et aux opérateurs la différence entre le coût d'un produit et son prix de vente administré. Son compte se lit en trois lignes.
+La Caisse ne vend ni n'achète : elle paie aux offices et aux opérateurs la différence entre le coût d'un produit et son prix de vente administré. Son [compte](#g-compte-caisse-compensation) se lit en trois lignes.
 
 - Les **charges** : ce que la Caisse doit, au titre de l'année, pour les subventions aux [produits de base](#g-produits-de-base) — céréales, huiles, sucre, lait, engrais, papier scolaire. Ce n'est pas une dépense du budget de l'État.
-- Les **ressources** : des recettes propres ou affectées (taxes et redevances que la loi lui attribue) ; une **dotation** du budget de l'État ; des prélèvements ponctuels sur d'autres fonds ; des prêts du Trésor.
+- Les **ressources** : des recettes propres ou affectées (taxes et redevances que la loi lui attribue) ; une [**dotation**](#g-dotation-budgetaire) du budget de l'État ; des prélèvements ponctuels sur d'autres fonds ; des prêts du Trésor.
 - Le **solde** : un déficit devient un arriéré de la Caisse envers les offices ; un excédent est reporté sur l'année suivante.
 
 Ce qui pèse sur le budget de l'État n'est donc pas la charge, mais la dotation. Le tableau replié ci-dessous met les deux côte à côte, année par année, et rapporte la dotation aux dépenses de l'État ; la figure qui suit le trace.
@@ -290,11 +290,53 @@ cm.tableau_recettes_affectees(
 
 La rupture la plus forte du compte ne tient pas à son coût. Le rapport annuel de la Banque centrale pour 1987 l'énonce ainsi [@bct-ra-1987, p. 71] : « Aux termes de la loi de finances de 1987, les recettes fiscales et para-fiscales destinées à la Caisse générale de compensation ne sont plus individualisées mais intégrées au budget de l'État. Ce dernier a alloué à la Caisse une dotation budgétaire fixée à 189 millions de dinars ». La dotation passe de 68 MD en 1986 à 189 MD en 1987, alors que les charges baissent, de 218,0 MD à 195,8 MD (@tbl-compensation-compte-caisse).
 
-Le saut de 1987 est donc un changement de mode de financement, non de coût : les taxes qui alimentaient la Caisse — la taxe unique sur les carburants en tête — deviennent des recettes du budget général, et la Caisse reçoit en retour une dotation qui couvre presque toutes ses charges. La compensation devient, à cette date, une dépense du budget de l'État pour l'essentiel de son montant. La loi de finances pour 1987 elle-même n'est pas citée ici dans sa lettre ; et le texte qui a ensuite retiré la Caisse des fonds spéciaux du Trésor n'est pas identifié ici.
+Le saut de 1987 est donc un changement de mode de financement, non de coût : les taxes qui alimentaient la Caisse — la taxe unique sur les carburants en tête — deviennent des recettes du budget général, et la Caisse reçoit en retour une dotation qui couvre presque toutes ses charges. La compensation devient, à cette date, une dépense du budget de l'État pour l'essentiel de son montant.
+
+**Le texte.** L'article 92 de la loi de finances pour 1987 dispose que « les impôts, droits, taxes redevances et contributions à caractère fiscal ou para-fiscal affectés en totalité ou en partie, en vertu de la législation ou de la réglementation en vigueur aux fonds spéciaux de trésor désignés ci-dessous, reviennent au profit du budget général de l'État » [@loi86-106-lf1987, art. 92, p. 1623]. La liste porte douze fonds, dont la Caisse générale de compensation (ministère du commerce et de l'industrie), la Caisse de compensation et de soutien des transports routiers, le Fonds commun des collectivités locales, le Fonds national d'amélioration de l'habitat et le Fonds de promotion du logement pour les salariés. Les modalités d'application sont fixées par le ministre du plan et des finances. L'article 91 supprime d'autres fonds spéciaux, parmi lesquels la Caisse interprofessionnelle de compensation des textiles et le Fonds de soutien et de développement du ciment, et rend leurs recettes au budget [@loi86-106-lf1987, art. 91, p. 1623].
+
+La Caisse n'est pas supprimée. Le tableau L des fonds spéciaux de la même loi la maintient, avec une subvention du budget de 188 MD et une recette propre de 1 MD, soit 189 MD de recettes et de dépenses prévues [@loi86-106-lf1987, tableau L, p. 1677] : le montant de 189 MD que la Banque centrale appelle dotation est ce total. L'année suivante, le budget général porte lui-même les deux taxes de compensation, 55 MD pour la taxe unique de compensation sur les produits pétroliers blancs et 20 MD pour la taxe de compensation sur les transports [@loi-87-83-lf-1988, tableau A, art. 21-14 et 21-10, p. 1638]. La Caisse figure encore dans la liste des fonds spéciaux du Trésor des lois de finances pour 2011 et pour 2012, sans montant de recettes [@lf-2011, tableau B, p. 3482 ; @lf-2012, tableau B, p. 16] : la dépense de la Caisse passe par le budget, le compte reste un fonds spécial.
+
+::: {.callout-note collapse="true" title="La Caisse dans le tableau des fonds spéciaux du Trésor, 1987-1994 : le tableau"}
+| Gestion | Subvention du budget | Recettes propres | Total des recettes, égal aux dépenses | Dotation relayée par la BCT | Texte |
+|---|---:|---:|---:|---:|---|
+| 1987 | 188,0 | 1,0 | 189,0 | 189,0 | [@loi86-106-lf1987, tableau L, p. 1677] |
+| 1988 | 188,0 | 7,0 | 195,0 | | [@loi-87-83-lf-1988, tableau L, p. 1694] |
+| 1989 | 188,0 | 2,0 | 190,0 | | [@loi88-145-lf1989, tableau L, p. 1870] |
+| 1990 | 300,0 | 2,0 | 302,0 | | [@loi-89-115-lf-1990, tableau L, p. 2239] |
+| 1991 | 272,0 | 13,0 | 285,0 | 272,0 | [@loi90-111-lf1991, tableau K, p. 2163] |
+| 1992 | 255,0 | 15,0 | 270,0 | 255,0 | [@loi91-98-lf1992, tableau K, p. 2197] |
+| 1993 | 245,0 | 37,0 | 282,0 | 245,0 | [@lf-1993, tableau K, p. 1770] |
+| 1994 | 230,0 | 28,0 | 258,0 | 230,0 | [@lf-1994, tableau K, p. 2294] |
+
+: La Caisse générale de compensation dans les lois de finances initiales, 1987-1994 (millions de dinars courants, prévisions). Source : tableau des fonds spéciaux du Trésor de chaque loi (« L » de 1987 à 1990, « K » de 1991 à 1994). Les recettes propres de 1988 comprennent le solde reporté. En 1989, le premier chiffre des recettes propres est rogné sur la page : elles se déduisent du total (190,0) et de la subvention (188,0). La dotation relayée par la BCT est celle du @tbl-compensation-compte-caisse ; la colonne reste vide quand les rapports ne la donnent pas. {#tbl-compensation-lf-caisse}
+:::
+
+La subvention prévue passe de 188 MD en 1987-1989 à 300 MD en 1990, puis décroît de 272 MD en 1991 à 230 MD en 1994 ; la subvention prévue de 1991 à 1994 est égale à la dotation que la Banque centrale relaie pour les mêmes années. Les recettes propres prévues sont, à partir de 1991, celles des prélèvements à l'importation décrits ci-dessous.
 
 <!-- RECHERCHE r-cgc-budgetisation-1992-2003 : texte transférant la dépense de la CGC des fonds spéciaux du Trésor au budget général, entre 1992 et 2003 (voir docs/recherches.yml) -->
 
-<!-- TODO (documentaliste) : établir le numéro de la loi de finances pour 1987 et lire l'article qui intègre au budget les recettes de la Caisse, et le verser. -->
+## Les prélèvements à l'importation affectés à la Caisse, 1990-1993 {#sec-compensation-prelevements-importation}
+
+Après 1987, la Caisse garde des recettes propres : de 1991 à 1999, le compte en porte de 2 à 39 MD (@tbl-compensation-compte-caisse). Le rapport de la Banque centrale pour 1992 les rattache aux « taxes perçues à l'importation de la viande bovine et de la poudre de lait » [@bct-ra-1992, p. 83]. Ce sont des prélèvements que des décrets instituent « au profit de la caisse générale de compensation », perçus au stade de l'importation, sur le fondement de l'article 48 de la loi de finances pour 1971 [@lf-1971, art. 48]. Les décrets de 1990 et de 1991 visent aussi l'article 3 de la loi n° 70-26 sur les prix [@loi70-26] ; ceux de 1993, la loi n° 91-64 sur la concurrence et les prix [@loi91-64]. Chaque décret fixe le montant par kilogramme, révisable chaque année ou en cas de besoin d'après l'évolution des prix internationaux non subventionnés ; le prélèvement n'entre pas dans la liquidation des droits et taxes.
+
+| Décret | Produit | Prélèvement | Portée | Texte |
+|---|---|---|---|---|
+| 12 juillet 1990 | viande bovine réfrigérée ou congelée, de type carcasse | 880 millimes par kg | mise en place | [@decret90-1193, art. 1 et 2, p. 921] |
+| 12 juillet 1990 | poudre de lait à 26 % et à 0 % de matière grasse | 102 et 245 millimes par kg | mise en place | [@decret90-1194, art. 1 et 2, p. 921] |
+| 23 septembre 1991 | poudre de lait à 26 % et à 0 % | 368 et 735 millimes par kg | ajustement | [@decret91-1391, art. 2, p. 1670] |
+| 20 juillet 1992 | viande bovine, et bovins vivants de plus de 300 kg destinés à la boucherie | 1 200 millimes par kg la viande, 670 millimes par kg les bovins | extension | [@decret92-1340, art. 1 et 2, p. 983] |
+| 26 juillet 1993 | viande bovine congelée du n° 02-02, importée durant « l'année 1992 » | prélèvement suspendu | étape | [@decret93-1605, art. 1, p. 1219] |
+| 20 septembre 1993 | viande ovine (n° 02.04) | 1,200 dinar par kg | extension | [@decret93-1924, art. 1 et 2, p. 1671] |
+| 25 octobre 1993 | beurre, en vrac ou conditionné ; huile acide | 350 millimes par kg ; 30 dinars par tonne | extension | [@decret93-2115, art. 1 et 2, p. 1856-1857] |
+| 25 octobre 1993 | poudre de lait à 0 % et à 26 % | 800 et 680 millimes par kg | ajustement | [@decret93-2116, art. 1, p. 1857] |
+
+: Les prélèvements à l'importation institués au profit de la Caisse générale de compensation, 1990-1993. Les montants sont ceux des décrets, en millimes ou en dinars courants. {#tbl-compensation-prelevements}
+
+Le prélèvement sur la poudre de lait à 26 % de matière grasse passe de 102 millimes par kilogramme en 1990 à 368 en 1991 puis 680 en 1993 ; celui sur la poudre à 0 % de 245 à 735 puis 800. Le prélèvement sur la viande bovine passe de 880 à 1 200 millimes par kilogramme en 1992, et la viande ovine, le beurre et l'huile acide s'y ajoutent en 1993.
+
+<!-- TODO (documentaliste) : lire le décret n° 93-1187 du 24 mai 1993 (modifie le décret n° 90-1193) et les modifications du décret n° 91-1391 par les décrets n° 2002-2227, 2009-2293 et 2015-50, connus par leur intitulé ; produit annuel des prélèvements : voir docs/recherches.yml, fiche r-prelevements-importation-cgc. -->
+
+<!-- RECHERCHE r-prelevements-importation-cgc : décrets instituant ou modifiant les prélèvements à l'importation au profit de la Caisse générale de compensation après 1993 (voir docs/recherches.yml) -->
 
 ## Ce que la dotation pèse dans les dépenses de l'État {#sec-compensation-dotation-poids}
 
@@ -305,6 +347,19 @@ Rapportée aux dépenses de l'État hors service de la dette, la dotation à la 
 - un reflux continu ensuite, à 4,7 % en 1995 et 1996, 3,8 % en 1999, **3,1 % en 2002** et 2,4 % en 2004, coupé par le relèvement de la dotation à 320 MD en 1997 et 1998 (6,1 % puis 5,7 %) après les déficits de 1993 à 1996 ;
 - une remontée avec les cours mondiaux, à 5,4 % en 2007 et **5,1 % en 2010**.
 
-La dotation n'est pas connue pour dix années : 1988, 1989 et 1990, 2000 et 2001, 2003, 2006, 2008, 2009 et 2011. Pour 2008 et 2009, les rapports de la Banque centrale disent seulement que les charges sont financées en totalité par des subventions du budget, sans en donner le montant [@bct-ra-2008, p. 109 ; @bct-ra-2009, p. 112]. Aucune dotation n'est ici déduite des charges.
+Le montant versé n'est pas identifié ici pour dix années : 1988, 1989 et 1990, 2000 et 2001, 2003, 2006, 2008, 2009 et 2011. Pour 1988, 1989 et 1990, la loi de finances initiale prévoit une subvention du budget de 188, 188 et 300 MD (@tbl-compensation-lf-caisse). Pour 2008 et 2009, les rapports de la Banque centrale disent seulement que les charges sont financées en totalité par des subventions du budget, sans en donner le montant [@bct-ra-2008, p. 109 ; @bct-ra-2009, p. 112] ; ils ajoutent qu'une dotation de 70 MD du budget de 2007, bloquée à la Trésorerie générale au profit de l'Office des céréales, a été dépensée en 2008 pour les charges de novembre et décembre et n'est pas comptée dans les charges de l'année [@bct-ra-2009, p. 112]. Aucune dotation n'est ici déduite des charges.
+
+Après 1994, la loi de finances ne nomme plus la Caisse dans ses crédits : le budget de l'État ouvre des crédits d'interventions publiques par ministère. Le tableau ci-dessous donne ceux du ministère chargé du commerce, qui ne se confondent pas avec la dotation : en 2002, le crédit de 251,2 MD dépasse de 16 MD la dotation de 235 MD que la Banque centrale relaie.
+
+| Loi de finances | Crédits d'interventions publiques du ministère du commerce | Dotation relayée par la BCT | Texte |
+|---|---:|---:|---|
+| 2000 | 248,9 | | [@lf-2000, tableau B, p. 2756] |
+| 2001 | 235,2 | | [@lf-2001, tableau B, p. 3187] |
+| 2002 | 251,2 | 235,0 | [@loi2001-123-lf2002, tableau B, p. 4266] |
+| 2011 | 722,4, dont 700,0 d'interventions dans le domaine social | | [@lf-2011, tableau C, p. 3483 et p. 3718] |
+
+: Les crédits d'interventions publiques du chapitre du ministère chargé du commerce, lois de finances initiales (millions de dinars courants, crédits de paiement, titre premier). La loi ne désigne pas la Caisse dans ces lignes. Le chapitre est celui du ministère du commerce en 2000-2002, du commerce et de l'artisanat en 2011. {#tbl-compensation-lf-commerce}
+
+<!-- RECHERCHE r-cgc-dotation-annees-manquantes : dotation versée à la Caisse générale de compensation en 1988-1990, 2000, 2001, 2003, 2006, 2008, 2009 et 2011 (voir docs/recherches.yml) -->
 
 À partir de 2003, la dotation à la Caisse se prolonge par le poste « produits de base » de la dépense budgétaire de compensation, auquel s'ajoutent les carburants et le transport : c'est l'objet du chapitre sur la dépense (@sec-compensation-longue-periode), dont la première figure trace la dotation, les charges et la dépense en trois postes sur une même échelle.
