@@ -62,6 +62,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Baccalauréat | البكالوريا |  |
 | Baccalauréat professionnel | البكالوريا المهنية |  |
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
+| Base caisse | أساس الخزينة |  |
 | Bénéfice imposable | الربح الخاضع للضريبة |  |
 | Bénéfices des professions non commerciales | الأرباح غير التجارية | BNC |
 | Bénéfices distribués | الأرباح الموزعة |  |
@@ -133,6 +134,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Comptable public | محاسب الجماعة المحلية |  |
 | Compte de compensation | حساب المقاصّة |  |
 | Compte de diversification des sources de sécurité sociale | حساب تنويع مصادر الضمان الاجتماعي |  |
+| Compte de la Caisse générale de compensation | حساب الصندوق العام للتعويض |  |
 | Compte épargne en actions | حساب الادخار في الأسهم | CEA |
 | Compte épargne pour l'investissement | حساب الادخار للاستثمار | CEI |
 | Compte financier | الحساب المالي |  |
@@ -190,6 +192,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Cycle préparatoire | المرحلة الإعدادية |  |
 | Cycle primaire | المرحلة الابتدائية |  |
 | Décentralisation | اللامركزية |  |
+| Décision ministérielle | مقرر |  |
 | Déconcentration | اللامحورية |  |
 | Décote | التخفيض في الجراية |  |
 | Déductions communes | الطروحات المشتركة |  |
@@ -213,6 +216,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | District | الإقليم |  |
 | Djemaïa des habous | جمعية الأحباس |  |
 | Doctorat | الدكتوراه |  |
+| Dotation budgétaire de la Caisse générale de compensation | منحة الميزانية للصندوق العام للتعويض |  |
 | Droit à déduction | حق الطرح |  |
 | Droit compensateur provisoire | المعلوم التكميلي المؤقت |  |
 | Droit complémentaire | معلوم التسجيل التكميلي |  |
@@ -291,6 +295,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds de protection sociale des travailleuses agricoles | صندوق الحماية الاجتماعية للعاملات الفلاحيات |  |
 | Fonds de réserve | صندوق الاحتياط |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
+| Fonds de transition énergétique | صندوق الانتقال الطاقي |  |
 | Fonds national d'amélioration de l'habitat | الصندوق الوطني لتحسين السكن | FNAH |
 | Fonds national de l'emploi | الصندوق الوطني للتشغيل | FNE |
 | Fonds national de la réforme éducative | الصندوق الوطني للإصلاح التربوي |  |
@@ -316,6 +321,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Haute instance des finances locales | الهيئة العليا للمالية المحلية |  |
 | Hébergement universitaire | السكن الجامعي |  |
 | Heures supplémentaires | الساعات الإضافية |  |
+| Homologation des prix | المصادقة الإدارية على الأسعار |  |
 | Immatriculation foncière | التسجيل العقاري |  |
 | Immeubles non immatriculés | العقارات غير المرسمة |  |
 | Impôt exclusif | الأداء الحصري |  |
@@ -462,6 +468,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale | تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي |  |
 | Prix de cession préférentiel | السعر التفاضلي |  |
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
+| Prix limite de vente | السعر الأقصى للبيع |  |
 | Produit intérieur brut | الناتج المحلي الإجمالي | PIB |
 | Produits de base | المواد الأساسية |  |
 | Programme budgétaire | البرنامج |  |
@@ -484,6 +491,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Rapport annuel de performance | التقرير السنوي للأداء | RAP |
 | Recettes fiscales | المداخيل الجبائية |  |
 | Recrutement direct | الانتداب المباشر |  |
+| Redevance compensatrice | الأتاوة التعويضية |  |
 | Redevance d'utilisation | معلوم الاستعمال |  |
 | Redevance de compensation | أتاوة الدعم |  |
 | Redevance de prestations douanières | الأتاوة على الخدمات الديوانية |  |
@@ -653,6 +661,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Titularisation | ترسيم |  |
 | Traitement de base | المرتب الأساسي |  |
 | Tranche | شريحة |  |
+| Tranche économique | الشريحة الاقتصادية |  |
+| Tranche normale | القسط العادي |  |
 | Transfert financier | التحويلات المالية |  |
 | Transfert monétaire direct | التحويل النقدي المباشر |  |
 | Travail à temps partiel | العمل لوقت جزئي |  |
