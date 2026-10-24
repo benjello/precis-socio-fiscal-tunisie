@@ -2659,8 +2659,16 @@
     couverture: 'Rapports du ministère des Finances annexés aux projets de loi de finances pour 2020 à 2025 (entreprises publiques, transferts et garanties, dette publique des éditions LF 2022 et LF 2025) : aucune réalisation antérieure à 2016. Site de la Direction générale de la privatisation et ses captures aux archives du web : statistiques arrêtées au 31 janvier 2009, relevé annuel jusqu''à 2009. jort_cache, titres : articles de lois de finances repérés par leur seul intitulé — garantie de l''État dans chaque loi de finances de 1961 à 1994 ; lois n° 80-88, 83-113, 85-109, 89-115 (fonds de restructuration du capital des entreprises publiques), 91-98, 96-113, 98-111, 2002-101 — sans lecture des montants. Non ouverts : rapports annuels de la Banque centrale, lois de règlement, rapports de la Cour des comptes sur la clôture du budget et sur la dette publique extérieure (2018), plans de développement, rapports sur la dette publique des éditions LF 2021 et LF 2024. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 1.2, § 2 et § 5.2.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Rapports de la Cour des comptes sur la clôture du budget de l''État, éditions arabes, gestions 2011 à 2016 (catalogue de tunisia-data, rubrique 18 ; copies locales hors git), lus aux pages des recettes non fiscales, de la dette garantie, des prêts et des recettes non ordinaires : transferts des entreprises publiques et profits du Trésor (2010-2016), principal et intérêts de la dette garantie payés par l''État (2010-2016), remboursements de prêts reçus (2011-2016), recettes de privatisation inscrites au budget (2010-2016). Les rapports ventilent la dépense par ministère et par nature, non par entreprise bénéficiaire : aucun transfert du budget aux entreprises publiques n''en sort. Les rapports écrivent chaque année que le compte général ne porte ni la situation des prêts rétrocédés ni celle des prêts garantis : aucun encours. Le rapport de clôture de la gestion 2010 n''est pas au catalogue de la Cour (saut de 2009 à 2011) ; ses valeurs viennent de la colonne de comparaison du rapport 2011. Non lus : rapports des gestions 2017 à 2019 (hors période), tableaux des fonds spéciaux du Trésor (fonds de restructuration du capital des entreprises à participation publique), lois de règlement du Journal officiel, rapports annuels de la Banque centrale, annexes du ministère des Finances des lois de finances d''avant 2020. Série : tunisia-data, cdc-cloture-entreprises-publiques ; fiche sources/cdc-cloture-entreprises-publiques.md.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: partiel
   a_faire:
-  - ouvrir les rapports annuels de la Banque centrale et les lois de règlement pour les transferts, les revenus de participations et les recettes de privatisation
+  - 'transferts du budget aux entreprises publiques par entreprise, 2010-2015 : rapports sur les transferts et les garanties annexés aux lois de finances d''avant 2020, lois de règlement, rapports annuels de la Banque centrale'
+  - fonds de restructuration du capital des entreprises à participation publique et recapitalisations des banques publiques, en réalisation (tableaux des fonds spéciaux de chaque rapport de clôture)
+  - 'rapport de clôture de la gestion 2010 : demander à la Cour des comptes ou chercher à l''Assemblée'
   - dépouiller le rapport de la Cour des comptes sur la dette publique extérieure (2018)
 
 - id: r-ep-plafond-garantie-1995-2015
@@ -2702,8 +2710,14 @@
     couverture: 'Fascicules français du corpus local (scannés, sans couche texte), reconnaissance de caractères à 250 dpi puis relecture de l''image : articles 1 à 4 (budget ordinaire, titre I) des lois de finances de 1959-60 et de 1961 à 1986, versés au relevé budget-ordinaire-lois-de-finances.csv. Recettes ordinaires et crédits égaux chaque année, sauf 1959-60 (crédits effacés à l''image). Non lus : budget d''équipement (titre II, puis budget de développement, structure variable d''une loi à l''autre : voies et moyens, crédits d''engagement et de paiement, reconstruction), lois de règlement, rapports annuels de la Banque centrale, budget ordinaire de 1958-59 (loi n° 58-45, en francs). Note : docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md, § 7.'
     couvert_jusqu_au: 2026-10-23
     resultat: partiel
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Fascicules français du corpus local (scannés), reconnaissance de caractères à 250 dpi puis relecture à l''image : budget d''équipement, puis de capital, de la loi n° 60-38 (gestion 1961) à la loi n° 85-110 (gestion 1986), vingt-cinq textes : titre II des lois de finances de 1961, 1962 (provisoire), 1966 à 1969 et 1981 à 1983 ; loi n° 62-27 (période 1962-1964) ; loi n° 65-14 (1965) ; lois portant fixation du budget de capital de 1970 à 1980 et de 1984 à 1986. Voies et moyens égaux aux crédits de paiement dans les vingt-cinq textes. Les lois n° 62-82 et 63-58 ne portent que le budget ordinaire : aucun montant annuel pour 1963 et 1964 ; aucune loi d''équipement identifiée pour 1959-60. Non lus : lois modificatives et complémentaires (n° 70-59, 71-58, 74-76, 84-3, 81-70, 82-27, 83-81), répartition par chapitre, lois de règlement, rapports annuels de la Banque centrale. Relevé : precis/fr/entreprises_publiques/listes/budget-equipement-lois-de-finances.csv.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: partiel
   a_faire:
-  - lire les articles sur le budget d'équipement et de développement des lois de finances de 1961 à 1985 pour un total de l'État qui ne compte pas deux fois la contribution du budget ordinaire
+  - lire les lois modifiant un budget de capital en cours d'année (1970, 1971, 1974, 1981 à 1984)
   - chercher la réalisation du budget de l'État avant 1986 (lois de règlement, rapports annuels de la Banque centrale)
   - chercher le décret du 29 juin 1957 et le chiffre des crédits de 1959-60 (autre exemplaire du fascicule n° 18 de 1959)
 

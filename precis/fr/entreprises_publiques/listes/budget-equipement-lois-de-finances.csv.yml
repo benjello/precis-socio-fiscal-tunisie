@@ -1,0 +1,118 @@
+# Manifeste du relevé « budget d'équipement, puis de capital, voté par les lois de 1961 à 1986 ».
+#
+# Fichier lu par figures/listes.py. Il transcrit, pour chaque gestion de 1961 à 1986, le budget des
+# dépenses d'équipement (titre II des lois de finances de 1961 à 1969 ; « budget d'équipement » puis,
+# à partir de 1968, « dépenses en capital » ou « budget de capital »). Il complète le relevé
+# budget-ordinaire-lois-de-finances.csv : les voies et moyens du budget d'équipement comprennent une
+# « contribution du budget ordinaire », qui figure déjà dans le budget ordinaire voté ; la somme des
+# deux budgets la compterait deux fois.
+#
+# LES TEXTES. Selon les gestions, le budget d'équipement est fixé :
+#   - par le titre II de la loi de finances : 1961, 1962 (provisoire), 1966, 1967, 1968, 1969, puis
+#     1981, 1982 et 1983 (deuxième partie, titre II) ;
+#   - par une loi propre : la loi n° 62-27 du 31 mai 1962 pour la période triennale 1962-1964 (une
+#     seule ligne « 1962-1964 », sans répartition annuelle : les gestions 1963 et 1964 n'ont pas de
+#     montant) ; la loi n° 65-14 du 29 mai 1965 pour la gestion 1965 (la loi de finances n° 64-59 avait
+#     seulement prorogé la loi n° 62-27, art. 22) ; puis les lois « portant fixation du budget de
+#     capital » de 1970 à 1980 et de 1984 à 1986 (elles sont promulguées le même jour que la loi de
+#     finances, sauf pour 1970 : loi n° 70-18 du 20 avril 1970, la loi de finances ne portant que des
+#     crédits provisoires).
+# Aucun budget d'équipement n'est fixé par la loi n° 59-42 (budget ordinaire de 1959-60).
+#
+# CE QUE LE MONTANT EST. Pour chaque gestion :
+#   - les voies et moyens du budget d'équipement (« budget de capital »), en millions de dinars
+#     courants, avec la contribution du budget ordinaire qu'ils comprennent ;
+#   - le montant maximum des crédits d'engagement et celui des crédits de paiement. Les deux sont
+#     donnés et ne s'additionnent pas : les crédits d'engagement autorisent des projets pluriannuels,
+#     les crédits de paiement sont les dépenses de la gestion. Les voies et moyens sont égaux aux
+#     crédits de paiement dans toutes les lois : l'égalité sert de contrôle de lecture. En 1961, 1962
+#     et 1962-1964, les crédits de paiement comprennent ceux de la reconstruction (0,85 MD), fixés par
+#     un article distinct.
+#   - le budget ordinaire voté de la même gestion (repris du relevé budget-ordinaire-lois-de-finances.csv)
+#     et le total de l'État qui s'en déduit.
+# Le budget de capital comprend aussi, selon les gestions, les budgets annexes (P.T.T. et R.T.T.),
+# des opérations financières et la dette publique (1979 : tableau C). Pour 1985 et 1986, la loi sépare
+# le budget de capital de l'État de celui des budgets annexes : seul le premier est versé ici, le
+# second est donné en remarque. Les lois qui modifient un budget de capital en cours d'année (loi
+# n° 70-59, n° 71-58, n° 74-76, n° 84-3 ; lois de finances complémentaires n° 81-70, n° 82-27,
+# n° 83-81) ne sont pas lues : les montants sont ceux du vote initial.
+#
+# TOTAL DE L'ÉTAT. « total_etat_calcule_md » = budget ordinaire + crédits de paiement − contribution
+# du budget ordinaire. Il suppose que la contribution est comprise dans le budget ordinaire voté, c'est-à-dire
+# que le budget ordinaire (recettes = crédits) la finance. La loi de finances pour 1983 le dit : budget
+# général de 1 753 MD (art. 1er et 2), recettes courantes 1 420 MD + recettes en capital 333 MD « compte
+# non tenu de l'excédent des recettes courantes par rapport aux dépenses courantes » ; dépenses courantes
+# 954 MD + investissement 799 MD ; 1 420 − 954 = 466 MD, soit la contribution. Cette gestion seule porte
+# un total « établi » par la loi (« total_etat_etabli_md ») ; il égale le total calculé. Pour les autres
+# gestions, le total calculé repose sur le même mécanisme, dont aucune autre loi ne donne la preuve écrite.
+# Il n'est pas calculé pour 1962 (montant provisoire abrogé), 1962-1964, 1963 et 1964 (pas de montant annuel).
+# Il n'est ni une réalisation ni un solde : budgets annexes, établissements rattachés pour ordre et fonds
+# spéciaux du Trésor sont exclus (voir le relevé du budget ordinaire).
+#
+# LECTURE : fascicules français du corpus local, scannés, sans couche texte ; reconnaissance de
+# caractères à 250 dpi, puis relecture de l'image de l'article et du tableau des ressources
+# (tableau F, G, E, B ou C selon la loi) pour chaque montant retenu. Toutes les gestions sont lues à
+# l'image. Les sommes des ressources sont contrôlées lorsque l'image est de faible qualité (1975,
+# 1978). Exception : les crédits de paiement de la reconstruction de 1962 (0,85 MD, art. 27) ne sont
+# lus que par la reconnaissance de caractères, concordante avec les articles 25 et 26 (13 = 12,15 + 0,85).
+# Les numéros de page sont ceux de l'en-tête ou du pied de la page, ou la page déduite des pages voisines.
+#
+# NON LUS : la répartition par chapitre des crédits (tableaux de crédits de programme et de crédits de
+# paiement) ; le budget d'équipement de 1958-59 et de 1959-60 (aucune loi identifiée) ; la gestion 1960
+# (loi n° 60-4 du 20 avril 1960, neuf mois, hors relevé) ; les lois modificatives et complémentaires
+# citées ci-dessus ; la réalisation du budget d'équipement. 1979 : les pages des articles de la loi
+# n° 78-60 ne figurent pas dans le fascicule numérisé ; les montants sont lus aux tableaux B et C.
+
+format: long
+cle_de_ligne: [gestion]
+
+colonnes:
+  gestion: gestion budgétaire (« année financière » 1959-60 ; gestion 1961 et suivantes ; « 1962-1964 » pour la loi triennale)
+  loi: numéro de la loi qui fixe le budget d'équipement (loi de finances ou loi propre)
+  date: date de la loi (jort_cache, date de signature)
+  jort_numero: numéro du fascicule du Journal officiel
+  article_voies_moyens: article qui fixe les voies et moyens du budget d'équipement ou de capital
+  page_voies_moyens: page du Journal officiel, édition française
+  voies_moyens_md: voies et moyens, en millions de dinars courants
+  contribution_budget_ordinaire_md: part des voies et moyens fournie par le budget ordinaire (« contribution du budget ordinaire » ; « du budget de gestion » en 1965-1967, « du budget courant » en 1968-1969), en millions de dinars courants
+  article_credits: article qui fixe les crédits d'engagement et de paiement
+  page_credits: page du Journal officiel, édition française
+  credits_engagement_md: montant maximum des crédits d'engagement, en millions de dinars courants (ne s'ajoute pas aux crédits de paiement)
+  credits_paiement_md: montant maximum des crédits de paiement, en millions de dinars courants (reconstruction comprise en 1961, 1962 et 1962-1964)
+  page_contribution: page du Journal officiel du tableau (ou de l'article) qui donne la contribution du budget ordinaire
+  budget_ordinaire_md: budget ordinaire voté de la gestion, en millions de dinars courants (relevé budget-ordinaire-lois-de-finances.csv)
+  total_etat_calcule_md: budget ordinaire + crédits de paiement − contribution du budget ordinaire, en millions de dinars courants
+  total_etat_etabli_md: total de l'État fixé par la loi elle-même (1983 seule)
+  lecture: comment les montants ont été lus
+  remarque: précision propre à la loi
+  cle: clé de citation de la loi
+
+sources:
+  - loi59-42-lf1959
+  - loi60-38-lf1961
+  - loi61-65-lf1962
+  - loi62-27-equipement-1962-1964
+  - loi62-82-lf1963
+  - loi63-58-lf1964
+  - loi65-14-equipement-1965
+  - loi65-46-lf1966
+  - loi66-79-lf1967
+  - loi67-57-lf1968
+  - lf-1969
+  - loi70-18-capital-1970
+  - loi70-67-capital-1971
+  - loi71-60-capital-1972
+  - loi72-88-capital-1973
+  - loi73-83-capital-1974
+  - loi74-102-capital-1975
+  - loi75-84-capital-1976
+  - loi76-116-capital-1977
+  - loi77-82-capital-1978
+  - loi78-60-capital-1979
+  - loi79-67-capital-1980
+  - lf-1981
+  - loi81-100-lf1982
+  - lf-1983
+  - loi83-114-capital-1984
+  - loi84-85-capital-1985
+  - loi85-110-capital-1986

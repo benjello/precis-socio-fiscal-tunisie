@@ -39,6 +39,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import pandas as pd  # noqa: E402
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 from matplotlib.ticker import FuncFormatter
@@ -1540,6 +1541,201 @@ def chiffres_effectifs() -> None:
         print(ent, [(r.exercice, r.edition[2:], int(r.effectif), r.statut[:4]) for r in b.itertuples()])
 
 
+# --- clôture du budget, gestions 2010-2016 (Cour des comptes) ---------------------------------------
+
+S_CDC = "cdc-cloture-entreprises-publiques"
+GESTIONS_CDC = list(range(2010, 2017))
+LIGNES_RECETTES_CDC = [
+    ("profits_bct", "Part du budget dans les profits de la Banque centrale", BLEU),
+    ("excedents_ep", "Excédents des entreprises publiques", VERT),
+    ("benefices_societes_non_petrolieres", "Bénéfices des sociétés non pétrolières", ORANGE),
+    ("benefices_societes_petrolieres", "Bénéfices des sociétés pétrolières", ROUGE),
+    ("autres_profits_tresor", "Autres profits du Trésor", GRIS)]
+LIGNES_GARANTIE_CDC = [
+    ("stb", "Société tunisienne de banque"),
+    ("fouladh", "Société tunisienne de sidérurgie"),
+    ("stir", "Société tunisienne des industries de raffinage"),
+    ("pate_alfa", "Société nationale de cellulose et de papier alfa"),
+    ("office_huile", "Office national de l'huile"),
+    ("ateliers_sncft", "Société des travaux ferroviaires"),
+    ("bna_agricole", "Banque nationale agricole, crédits agricoles"),
+    ("office_cereales", "Office des céréales, emprunt obligataire"),
+    ("art24_lf1999", "Article 24 de la loi de finances de 1999"),
+    ("fpcl", "Caisse des prêts et de soutien des collectivités locales")]
+
+
+def _cdc(rubrique: str):
+    """Une rubrique de la série : lignes `poste`, colonnes `gestion`, valeurs en MD. Une valeur
+    reprise dans deux rapports est identique (contrôlé à la fabrication de la série)."""
+    d = _s(S_CDC)
+    d = d[d["rubrique"] == rubrique].drop_duplicates(["poste", "gestion"])
+    return d.pivot(index="gestion", columns="poste", values="valeur_md")
+
+
+def _recettes_cdc():
+    t = _cdc("transferts_ep_profits_tresor").reindex(GESTIONS_CDC)
+    t["excedents_ep"] = t["excedents_ep_non_petrolieres"].fillna(0) + t["excedents_ep_petrolieres"].fillna(0)
+    return t
+
+
+def _garantie_cdc():
+    p = _cdc("garantie_principal_paye").reindex(GESTIONS_CDC)
+    i = _cdc("garantie_interets_payes").reindex(GESTIONS_CDC)["interets_dette_garantie"]
+    p["interets"] = i
+    return p
+
+
+def _fig_cdc(mesure: str):
+    figtools.apply_lang_font()
+    fig, axes = plt.subplots(2, 2, figsize=(9.6, 6.8))
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
+    # 1. Ce que les entreprises versent au budget, par ligne
+    ax = axes[0][0]
+    r = _recettes_cdc()
+    bas = [0.0] * len(r)
+    for cle, nom, coul in LIGNES_RECETTES_CDC:
+        for i, a in enumerate(r.index):
+            v = _part(r.at[a, cle], a, mesure)
+            if v is None or v == 0:
+                continue
+            b = ax.bar(a, v, bottom=bas[i], color=coul, width=0.72, edgecolor="white", lw=0.5)
+            figtools.infobulle(b[0], f"{a} — {nom} : {_n(v, dec)} {unite}")
+            bas[i] += v
+    ax.legend(handles=[Patch(color=c, label=n) for _, n, c in LIGNES_RECETTES_CDC], fontsize=6,
+              frameon=False, loc="upper right")
+    ax.set_title("Ce que les entreprises et la Banque centrale versent au budget,\npar ligne",
+                 fontsize=8.5, loc="left")
+    # 2. Dette garantie remboursée par l'État : principal et intérêts
+    ax = axes[0][1]
+    g = _garantie_cdc()
+    for a in g.index:
+        vp = _part(g.at[a, "total"], a, mesure)
+        vi = _part(g.at[a, "interets"], a, mesure)
+        if vp is not None:
+            b = ax.bar(a, vp, color=BLEU, width=0.72)
+            figtools.infobulle(b[0], f"{a} — principal : {_n(vp, dec)} {unite}")
+        if vi is not None and vp is not None:
+            b = ax.bar(a, vi, bottom=vp, color=ORANGE, width=0.72)
+            figtools.infobulle(b[0], f"{a} — intérêts : {_n(vi, dec)} {unite}")
+    ax.legend(handles=[Patch(color=BLEU, label="principal"), Patch(color=ORANGE, label="intérêts")],
+              fontsize=7, frameon=False, loc="upper right")
+    ax.set_title("Ce que l'État rembourse au titre de dettes garanties,\nprincipal et intérêts",
+                 fontsize=8.5, loc="left")
+    # 3. Remboursements de prêts reçus
+    ax = axes[1][0]
+    p = _cdc("remboursements_prets_recus").reindex(GESTIONS_CDC)
+    x, y = _xy(p.index, p["total"], mesure)
+    ax.plot(x, y, color=VERT, marker="o", lw=2, ms=4.5)
+    ax.set_title("Ce que l'État reçoit en remboursement de prêts,\ntotal",
+                 fontsize=8.5, loc="left")
+    # 4. Recettes de privatisation inscrites au budget
+    ax = axes[1][1]
+    v = _cdc("recettes_privatisation_budget").reindex(GESTIONS_CDC)["total"]
+    for a in v.index:
+        vv = _part(v[a], a, mesure)
+        if vv is None:
+            continue
+        b = ax.bar(a, vv, color=VIOLET, width=0.72)
+        figtools.infobulle(b[0], f"{a} — recettes de privatisation : {_n(vv, dec)} {unite}")
+    ax.set_title("Recettes de privatisation inscrites au budget", fontsize=8.5, loc="left")
+    for ligne in axes:
+        for ax in ligne:
+            _style(ax)
+            ax.set_xlim(2009.4, 2016.6)
+            ax.set_xticks(GESTIONS_CDC)
+            ax.tick_params(labelsize=7.5)
+            ax.set_ylim(bottom=0)
+            _axe(ax, mesure, milliards=False)
+            ax.yaxis.label.set_size(7.5)
+            if mesure == "pib":
+                _marque_pib(ax, 2010, 2016, dedans=True)
+    fig.tight_layout()
+    return fig
+
+
+def fig_cdc():
+    return _trois_vues(_fig_cdc)
+
+
+def table_cdc():
+    r = _recettes_cdc()
+    g = _garantie_cdc()
+    p = _cdc("remboursements_prets_recus").reindex(GESTIONS_CDC)
+    v = _cdc("recettes_privatisation_budget").reindex(GESTIONS_CDC)
+    t = pd.DataFrame({
+        "Année": GESTIONS_CDC,
+        "Versements au budget, total (MD courants)": list(r["total"]),
+        "Principal garanti remboursé (MD courants)": list(g["total"]),
+        "Intérêts de la dette garantie (MD courants)": list(g["interets"]),
+        "Remboursements de prêts reçus (MD courants)": list(p["total"]),
+        "Recettes de privatisation (MD courants)": list(v["total"])})
+    for col in list(t.columns[1:]):
+        nom = col.split(" (")[0]
+        t[f"{nom}, % du PIB"] = [_arrondi(_part(x, a, "pib")) for x, a in zip(t[col], t["Année"])]
+        t[f"{nom}, % des dépenses de l'État"] = [_arrondi(_part(x, a, "dep"))
+                                                  for x, a in zip(t[col], t["Année"])]
+    t["Base du PIB"] = [_base_courte(a) for a in t["Année"]]
+    return t
+
+
+def _cdc_ligne_pib(valeur, annee, mesure="pib"):
+    x = _part(valeur, annee, mesure)
+    return "" if x is None else _n(x, 2)
+
+
+def tableau_cdc_recettes(caption: str, tbl_id: str = "tbl-ep-cdc-recettes") -> None:
+    r = _recettes_cdc()
+    lignes = []
+    for a in GESTIONS_CDC:
+        c = [("—" if r.at[a, k] == 0 else _n(r.at[a, k], 1)) if r.at[a, k] == r.at[a, k] else ""
+             for k, _, _ in LIGNES_RECETTES_CDC]
+        lignes.append([str(a)] + c + [f"**{_n(r.at[a, 'total'], 1)}**",
+                                      _cdc_ligne_pib(r.at[a, "total"], a), _base_courte(a)])
+    _md(["Gestion"] + [n.replace(" du budget dans les", " dans les") for _, n, _ in LIGNES_RECETTES_CDC]
+        + ["Total", "Total,<br>% du PIB", "Base du PIB"], "g" + "d" * 6 + "dg", lignes, caption, tbl_id)
+
+
+def tableau_cdc_garantie(caption: str, tbl_id: str = "tbl-ep-cdc-garantie") -> None:
+    p = _cdc("garantie_principal_paye").reindex(GESTIONS_CDC)
+    i = _garantie_cdc()["interets"]
+    lignes = []
+    for a in GESTIONS_CDC:
+        cases = []
+        for cle, _ in LIGNES_GARANTIE_CDC:
+            x = p.at[a, cle] if cle in p.columns else float("nan")
+            if cle == "fouladh" and a == 2013:
+                cases.append("(47,0)")
+            elif x == x:
+                cases.append(_n(x, 1))
+            else:
+                cases.append("")
+        lignes.append([str(a)] + cases + [f"**{_n(p.at[a, 'total'], 1)}**", _n(i[a], 1),
+                                          _cdc_ligne_pib(p.at[a, "total"], a)])
+    entete = ["Gestion", "STB", "Sidérurgie", "STIR", "Papier alfa", "Huile", "Travaux ferroviaires",
+              "BNA agricole", "Office des céréales", "Art. 24 LF 1999", "CPSCL", "Principal, total",
+              "Intérêts", "Principal,<br>% du PIB"]
+    _md(entete, "g" + "d" * 13, lignes, caption, tbl_id)
+
+
+def tableau_cdc_autres(caption: str, tbl_id: str = "tbl-ep-cdc-autres") -> None:
+    p = _cdc("remboursements_prets_recus").reindex(GESTIONS_CDC)
+    v = _cdc("recettes_privatisation_budget").reindex(GESTIONS_CDC)
+    cols = {k: (p[k] if k in p.columns else pd.Series(dtype=float)) for k in
+            ("total", "retroces_exterieurs", "prets_titre2_ep")}
+    lignes = []
+    for a in GESTIONS_CDC:
+        def c(s, dec=1):
+            x = s.get(a, float("nan")) if len(s) else float("nan")
+            return _n(x, dec) if x == x else ""
+        tt = v["tunisie_telecom"] if "tunisie_telecom" in v.columns else pd.Series(dtype=float)
+        lignes.append([str(a), c(cols["total"], 3), c(cols["retroces_exterieurs"], 3),
+                       c(cols["prets_titre2_ep"], 3), c(v["total"], 3), c(tt, 3)])
+    _md(["Gestion", "Remboursements de prêts,<br>total", "dont prêts extérieurs<br>rétrocédés",
+         "dont prêts du titre II<br>aux entreprises", "Recettes de privatisation,<br>total",
+         "dont cession de 35 %<br>de Tunisie Télécom"], "gddddd", lignes, caption, tbl_id)
+
+
 # --- point d'entrée ------------------------------------------------------------------------------------
 
 FIGURES = {
@@ -1557,6 +1753,7 @@ FIGURES = {
     "resultats": (fig_resultats, table_resultats, (S_AGREGATS, DENOMINATEURS),
                   "fig_ep_resultats"),
     "cessions": (fig_cessions, table_cessions, (S_CESSIONS, DENOMINATEURS), "fig_ep_cessions"),
+    "cdc": (fig_cdc, table_cdc, (S_CDC, DENOMINATEURS), "fig_ep_cdc"),
     "croisees": (fig_croisees, table_croisees, (S_CROISEES, DENOMINATEURS), "fig_ep_croisees"),
     "masse": (fig_masse, table_masse, (S_EFFECTIFS, S_AGREGATS, DENOMINATEURS), "fig_ep_masse"),
     "effectifs": (fig_effectifs, table_effectifs_ep, (S_EFFECTIFS_EP,), "fig_ep_effectifs"),
