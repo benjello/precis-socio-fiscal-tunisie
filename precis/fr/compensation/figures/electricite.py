@@ -213,58 +213,32 @@ PROVENANCE[TARIFS_MT] = dict(
     source_ligne=("grilles de la moyenne tension de la STEG, 2004-2022 ; relais des agences "
                   "publiques et de l'ESMAP, 1994-2003 (toutes les références : onglet « Sources »)"),
 )
-MOIS_FR = ("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
-           "octobre", "novembre", "décembre")
-
-
-def _mois_dernier() -> tuple[str, float, float]:
-    """(« juillet 2026 », indice du mois, moyenne de 2025), tous deux en base 2015."""
-    periode, indice, annuel = dinars_constants.dernier_indice_mensuel()
-    annee, mois = periode.split("-")
-    return f"{MOIS_FR[int(mois) - 1]} {annee}", indice, annuel
-
-
-def _regle_2026() -> str:
-    """La règle de la monnaie de 2026, écrite sous les figures et dans l'onglet « Sources »."""
-    mois, indice, annuel = _mois_dernier()
+def _regle_2025() -> str:
+    """La règle de la monnaie de 2025, écrite sous les figures et dans l'onglet « Sources »."""
     ipc = dinars_constants.ipc()
     return (
-        f"Monnaie de 2026 : valeurs calculées, non observées. L'indice annuel moyen de 2026 n'existe "
-        f"pas encore ; on retient le dernier indice mensuel publié, celui de {mois} ({_nb(indice)}, base "
-        f"100 en 2015, bulletin mensuel de la statistique de l'INS mis en ligne le 8 septembre 2026), "
-        f"sans prolonger 2025 par une prévision. Un montant est multiplié par l'indice de {mois} divisé "
-        f"par l'indice annuel moyen de son année ; une date d'effet en cours d'année est ramenée par "
-        f"l'indice annuel moyen de son année d'effet, et une grille qui dure plusieurs années est "
-        f"ramenée année par année (la valeur de la grille baisse en monnaie de 2026 tant qu'elle ne "
-        f"change pas). Les indices annuels sont ceux de l'INS en base 1970 jusqu'en 2023, prolongés pour "
-        f"2024 et 2025 par la variation de l'indice en base 2015 que relaie la Banque centrale ; "
-        f"{mois} s'en déduit par la variation de l'indice en base 2015 entre sa moyenne de 2025 "
-        f"({_nb(annuel)}) et {mois} ({_nb(indice)}), soit {_nb(100 * (indice / annuel - 1))} % : aucune "
-        f"base n'est raccordée sans que ce raccord soit dit. Sur 2015-2023, où les deux bases sont "
-        f"publiées, leur rapport varie de 0,3 %. Les familles et les ruptures de la figure ne sont pas "
-        f"raccordées par ce changement d'unité.")
+        "Monnaie de 2025 : valeurs calculées, non observées. La référence est l'indice annuel moyen "
+        "de 2025, le dernier indice annuel publié (base 100 en 2015, 186,3, que relaie la Banque "
+        "centrale) ; elle sera actualisée à la publication de l'indice annuel suivant. Le coefficient "
+        "d'une année est l'indice annuel moyen de 2025 divisé par celui de cette année ; une date "
+        "d'effet en cours d'année est ramenée par l'indice annuel moyen de son année d'effet, et une "
+        "grille qui dure plusieurs années est ramenée année par année (la valeur de la grille baisse "
+        "en monnaie de 2025 tant qu'elle ne change pas). Les indices annuels sont ceux de l'INS en "
+        "base 1970 jusqu'en 2023, prolongés pour 2024 et 2025 par la variation de l'indice en base "
+        f"2015 que relaie la Banque centrale (indice de 2025 : {_nb(ipc[2025])} en base 1970, par ce "
+        "raccord) ; sur 2015-2023, où les deux bases sont publiées, leur rapport varie de 0,3 %. Les "
+        "familles et les ruptures de la figure ne sont pas raccordées par ce changement d'unité.")
 
 
-regle_2026 = _regle_2026
+regle_2025 = _regle_2025
 
 
 def _coeff(annee: int) -> float:
-    """Coefficient qui ramène un montant de l'année `annee` à la monnaie du dernier mois publié."""
-    return dinars_constants.coefficient_dernier_mois(int(annee))
+    """Coefficient qui ramène un montant de l'année `annee` à la monnaie de 2025 (indice annuel)."""
+    indice = dinars_constants.ipc()
+    return indice[dinars_constants.ANNEE_BASE] / indice[int(annee)]
 
 
-IPC_MENSUEL = dinars_constants.SERIE_IPC_MENSUEL
-figtools.register_provenance(
-    IPC_MENSUEL,
-    titre=("Indice des prix à la consommation familiale de l'INS, base 100 en 2015 : indices mensuels "
-           "de juillet 2025 à juillet 2026 et moyenne mensuelle de 2025"),
-    sources=["ins-bms"], unite="indice base 100 = 2015",
-    perimetre=("ligne « Ensemble » du tableau 9.2 du bulletin mensuel de la statistique de juillet "
-               "2026, p. 30 ; sert à ramener les montants à la monnaie du dernier mois publié, "
-               "juillet 2026"),
-    caveats=("Indice publié par l'INS, provisoire comme tout indice du dernier mois. Aucune valeur "
-             "pour août 2026 et après. La moyenne mensuelle de 2025 (186,3) est l'indice annuel de "
-             "2025 que relaie la Banque centrale."))
 figtools.register_provenance(TARIFS_MT, titre=PROVENANCE[TARIFS_MT]["titre"], sources=[],
                              unite="millimes courants par kWh, hors taxes")
 _ORIGINE: dict[str, dict] = {}
@@ -282,7 +256,7 @@ def _declarer(series_id: str, cles=None, surcharge: dict | None = None) -> None:
     champs["sources"] = [k for k in cles if k in connues]
     champs.update(PROVENANCE.get(series_id, {}))
     if series_id in (TARIFS_MT, PRIX) and "caveats" in champs:
-        champs["caveats"] = f"{champs['caveats']} {_regle_2026()}"
+        champs["caveats"] = f"{champs['caveats']} {_regle_2025()}"
     champs.update(surcharge or {})
     figtools.register_provenance(series_id, **champs)
 
@@ -299,11 +273,11 @@ FAM_PRIX = (
 )
 
 
-def _prix_2026(d):
-    """Ajoute le coefficient et la valeur en monnaie de 2026 (calculée) à chaque ligne annuelle."""
+def _prix_2025(d):
+    """Ajoute le coefficient et la valeur en monnaie de 2025 (calculée) à chaque ligne annuelle."""
     d = d.copy()
-    d["coefficient_2026"] = [_coeff(a) for a in d["annee"]]
-    d["valeur_2026"] = d["valeur"] * d["coefficient_2026"]
+    d["coefficient_2025"] = [_coeff(a) for a in d["annee"]]
+    d["valeur_2025"] = d["valeur"] * d["coefficient_2025"]
     return d
 
 
@@ -311,16 +285,16 @@ def fig_prix_achat_gaz(constants: bool = False):
     figtools.apply_lang_font()
     d = figtools.series(PRIX)
     if constants:
-        d = _prix_2026(d)
+        d = _prix_2025(d)
         d["valeur_courante"] = d["valeur"]
-        d["valeur"] = d["valeur_2026"]
+        d["valeur"] = d["valeur_2025"]
     fig, ax = plt.subplots(figsize=(9.5, 4.9))
     for fam, etiquette, couleur, marque, ls in FAM_PRIX:
         df = d[d["famille"] == fam]
         if constants:
             texte = lambda r, e=etiquette: (
-                f"{r.annee} · {e} : {_nb(r.valeur)} dinars de 2026 par tep, valeur calculée "
-                f"({_nb(r.valeur_courante)} dinars courants × {_nb(r.coefficient_2026, 3)} ; "
+                f"{r.annee} · {e} : {_nb(r.valeur)} dinars de 2025 par tep, valeur calculée "
+                f"({_nb(r.valeur_courante)} dinars courants × {_nb(r.coefficient_2025, 3)} ; "
                 f"{r.source}, {r.page})")
         else:
             texte = lambda r, e=etiquette: (
@@ -349,7 +323,7 @@ def fig_prix_achat_gaz(constants: bool = False):
                     ha="center", fontsize=7.5, color=BLEU)
     for r in d[d["rupture"].fillna("") != ""].itertuples(index=False):
         _repere(ax, int(r.rupture_annee), f"{int(r.rupture_annee)} · {r.rupture}")
-    _cadre(ax, "Dinars de 2026 par tep (calculés)" if constants
+    _cadre(ax, "Dinars de 2025 par tep (calculés)" if constants
            else "Dinars courants par tonne équivalent pétrole")
     ax.set_xlim(1992.3, 2023.7)
     ax.set_xticks(range(1993, 2024, 2))
@@ -369,22 +343,22 @@ def fig_prix_achat_gaz(constants: bool = False):
 def _figure_prix_achat_gaz():
     d = figtools.series(PRIX)
     d = d[d["famille"] != "observatoire_import_gaz_algerien"].sort_values(["famille", "annee"])
-    d = _prix_2026(d)
+    d = _prix_2025(d)
     noms = {"prix_de_cession": "prix de cession administré",
             "rapport_de_controle_2014": "prix moyen d'achat, rapport de contrôle de 2014",
             "etats_financiers_steg": "prix moyen d'achat, états financiers de la STEG"}
-    table = d[["famille", "annee", "valeur", "coefficient_2026", "valeur_2026", "etat", "source",
+    table = d[["famille", "annee", "valeur", "coefficient_2025", "valeur_2025", "etat", "source",
                "page", "lecture", "rupture"]].copy()
     table["famille"] = table["famille"].map(noms)
-    table["coefficient_2026"] = table["coefficient_2026"].round(4)
-    table["valeur_2026"] = table["valeur_2026"].round(1)
-    table.columns = ["Famille", "Année", "Dinars courants par tep", "Coefficient de 2026 (calculé)",
-                     "valeur_2026 : dinars de 2026 par tep (calculée)", "État", "Source", "Page",
+    table["coefficient_2025"] = table["coefficient_2025"].round(4)
+    table["valeur_2025"] = table["valeur_2025"].round(1)
+    table.columns = ["Famille", "Année", "Dinars courants par tep", "Coefficient de 2025 (calculé)",
+                     "valeur_2025 : dinars de 2025 par tep (calculée)", "État", "Source", "Page",
                      "Lecture", "Rupture"]
     vues = [("Dinars courants", fig_prix_achat_gaz()),
-            ("Dinars de 2026 (calculés)", fig_prix_achat_gaz(constants=True))]
+            ("Dinars de 2025 (calculés)", fig_prix_achat_gaz(constants=True))]
     return (vues, table.reset_index(drop=True),
-            {PRIX: _cles(d), IPC_MENSUEL: None, dinars_constants.SERIE_IPC: None,
+            {PRIX: _cles(d), dinars_constants.SERIE_IPC: None,
              dinars_constants.SERIE_IPC_RECENT: None},
             "fig_compensation_eg_prix_achat_gaz")
 
@@ -844,7 +818,7 @@ def _courbe_escalier_mt(ax, d, nom, couleur, ls="-", lw=2.0, etiquette=True, con
     série entière (`dates`) : un niveau sans valeur à la grille suivante s'arrête à elle et laisse
     un blanc, le trait ne se prolonge pas sur une valeur inconnue.
 
-    `constants` : montants en monnaie de 2026 (calculés). Le point est la valeur de la grille à son
+    `constants` : montants en monnaie de 2025 (calculés). Le point est la valeur de la grille à son
     année d'effet (indice annuel moyen de cette année) ; le niveau, lui, est ramené année par année,
     car une grille qui ne change pas perd de sa valeur réelle d'une année à l'autre.
     """
@@ -866,7 +840,7 @@ def _courbe_escalier_mt(ax, d, nom, couleur, ls="-", lw=2.0, etiquette=True, con
                         ls=ls, lw=lw, solid_capstyle="butt", zorder=3)
             coef = _coeff(int(x))
             y = r.valeur * coef
-            texte = (f"{r.date_effet}{incertain} · {nom} : {_nb(y, 0)} millimes de 2026 par kWh, "
+            texte = (f"{r.date_effet}{incertain} · {nom} : {_nb(y, 0)} millimes de 2025 par kWh, "
                      f"valeur calculée ({_nb(r.valeur, 0)} millimes courants × {_nb(coef, 3)} ; "
                      f"{r.portee} ; {r.source})")
         else:
@@ -929,7 +903,7 @@ def fig_tarifs_mt(constants: bool = False):
         x1 = figtools.abscisse_date(b) if b else FIN_MT
         ax.annotate(figtools.fig_text(nom), xy=((x0 + x1) / 2, 0.985), xycoords=("data", "axes fraction"),
                     ha="center", va="top", fontsize=7.5, color=GRIS_FONCE)
-    _cadre(ax, "Millimes de 2026 par kWh, hors taxes (calculés)" if constants
+    _cadre(ax, "Millimes de 2025 par kWh, hors taxes (calculés)" if constants
            else "Millimes courants par kWh, hors taxes")
     ax.set_xlim(1993.6, FIN_MT + 0.4)
     ax.set_xticks(range(1994, 2024, 2))
@@ -956,25 +930,25 @@ def _figure_tarifs_mt():
     tracee = _tracees_mt(d)
     d = d.assign(tracee=["oui" if i in tracee.index and v == v else "non"
                          for i, v in zip(d.index, d["valeur"])])
-    d["coefficient_2026"] = [_coeff(int(a[:4])) for a in d["date_effet"]]
-    d["valeur_2026"] = d["valeur"] * d["coefficient_2026"]
+    d["coefficient_2025"] = [_coeff(int(a[:4])) for a in d["date_effet"]]
+    d["valeur_2025"] = d["valeur"] * d["coefficient_2025"]
     table = d[["tarif", "famille", "poste", "date_effet", "jour_etabli", "valeur", "unite",
-               "coefficient_2026", "valeur_2026", "etat", "tracee", "portee", "source", "page",
+               "coefficient_2025", "valeur_2025", "etat", "tracee", "portee", "source", "page",
                "rupture", "remarque"]].copy()
     table["tarif"] = table["tarif"].map(NOM_TARIF_MT)
     table["famille"] = table["famille"].map(NOM_FAMILLE_MT)
     table["poste"] = table["poste"].map(NOM_POSTE_MT)
     table["etat"] = table["etat"].map({"lu": "lu", "non_etabli": "non établi"})
-    table["coefficient_2026"] = table["coefficient_2026"].round(4)
-    table["valeur_2026"] = table["valeur_2026"].round(1)
+    table["coefficient_2025"] = table["coefficient_2025"].round(4)
+    table["valeur_2025"] = table["valeur_2025"].round(1)
     table.columns = ["Tarif", "Famille de postes", "Poste", "Date d'effet", "Jour d'effet établi",
-                     "Valeur courante", "Unité", "Coefficient de 2026 (calculé)",
-                     "valeur_2026 : valeur en monnaie de 2026 (calculée)", "État", "Tracée",
+                     "Valeur courante", "Unité", "Coefficient de 2025 (calculé)",
+                     "valeur_2025 : valeur en monnaie de 2025 (calculée)", "État", "Tracée",
                      "Portée", "Source", "Page", "Rupture", "Remarque"]
     vues = [("Millimes courants", fig_tarifs_mt()),
-            ("Millimes de 2026 (calculés)", fig_tarifs_mt(constants=True))]
+            ("Millimes de 2025 (calculés)", fig_tarifs_mt(constants=True))]
     return (vues, table.reset_index(drop=True),
-            {TARIFS_MT: _cles(d.assign(cle=d["source"])), IPC_MENSUEL: None,
+            {TARIFS_MT: _cles(d.assign(cle=d["source"])),
              dinars_constants.SERIE_IPC: None, dinars_constants.SERIE_IPC_RECENT: None},
             "fig_compensation_eg_tarifs_mt")
 
