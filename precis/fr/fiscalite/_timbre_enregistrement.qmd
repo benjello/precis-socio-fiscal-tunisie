@@ -267,7 +267,26 @@ Au tarif de 1969, les droits fixes vont de 0,170 à 1,740 D par acte, et le mini
 
 En dinars courants, le droit fixe a triplé de 1993 à 2022, et le minimum de perception a été multiplié par huit de 1993 à 2017.
 
-<!-- TODO (rédacteur) : figure en escalier du droit fixe et du minimum de perception en dinars courants et en dinars de 2025 (figtools.figure_escalier), dès que la série est disponible. -->
+En dinars de 2025, le droit fixe par page vaut 41,5 D en 1994, 29,9 D en 2004 au plus bas, 37,0 D en 2022 après le relèvement à 30 D, puis 30,0 D en 2025 : chaque relèvement remonte la courbe, que les prix font redescendre ensuite (@fig-te-droit-fixe). Le minimum de perception des actes et des mutations vaut 2,9 D de 2025 en 1970, 2,2 D en 1976 au plus bas, 53,4 D en 2021 et 40,0 D en 2025 (@fig-te-minimum).
+
+```{python}
+#| label: fig-te-droit-fixe
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import timbre_montants as fig_tm
+fig_tm.figure("droit-fixe", generated="{{< meta date >}}")
+```
+
+```{python}
+#| label: fig-te-minimum
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import timbre_montants as fig_tm
+fig_tm.figure("minimum", generated="{{< meta date >}}")
+```
+
 
 :::: {.chronologie-repliable titre="Droit fixe d'enregistrement et minimum de perception : textes et montants, date par date, 1968-2022"}
 
@@ -275,13 +294,13 @@ En dinars courants, le droit fixe a triplé de 1993 à 2022, et le minimum de pe
 |---|---|---|---|
 | []{#r-te-a-1968}[avril 1968]{.insecable} | ajustement | décret n° 68-104 du 20 avril 1968 [@decret-68-104-taux, art. 1, pp. 417-420] | minimum de perception 0,120 → 0,125 D ; droits fixes des actes civils 0,140 à 1,450 D → 0,150 à 1,500 D |
 | []{#r-te-a-1969}[2 janvier 1969]{.insecable} | ajustement | loi n° 68-41, loi de finances pour 1969 [@lf-1969, art. 14, pp. 1371-1373] | minimum de perception 0,125 → 0,140 D ; droits fixes 0,150 à 1,500 D → 0,170 à 1,740 D |
-| []{#r-te-a-1993}[17 mai 1993]{.insecable} | **mise en place** | loi n° 93-53, code des droits d'enregistrement et de timbre [@loi-93-53-cdet, code, art. 22 et 23, pp. 721-722] | droits fixes : 10 D par page (art. 23, n° 1 à 18, 24 et 25), 5 D par page (n° 22, actes sans tarif ; n° 23, actes présentés volontairement) ; minimum de perception : 5 D ; jugements : 5, 10 ou 20 D selon la juridiction (art. 22) |
+| []{#r-te-a-1993}[17 mai 1993]{.insecable} | **mise en place** | loi n° 93-53, code des droits d'enregistrement et de timbre [@loi-93-53-cdet, code, art. 22 et 23, pp. 721-722] | droits fixes : 10 D par page (art. 23, n° 1 à 18, 24 et 25), 5 D par page (n° 22, actes sans tarif ; n° 23, actes présentés volontairement) ; minimum de perception : 5 D ; jugements : 5 D (tribunaux cantonaux), 10 D (tribunaux de première instance), 20 D (arrêts des cours d'appel et de la cour de cassation, et arrêts du tribunal administratif en appel ou en cassation des décisions de l'ordre judiciaire) (art. 22) |
 | []{#r-te-a-2002}[1^er^ janvier 2002]{.insecable} | ajustement | loi n° 2001-123, loi de finances pour 2002 [@loi2001-123-lf2002, art. 75 et 97, pp. 4258-4259] | « Unification et mise à jour du tarif des droits fixes d'enregistrement » : n° 22 et 23 de l'art. 23, 5 → 10 D par page |
 | []{#r-te-a-2003}[1^er^ janvier 2003]{.insecable} | ajustement | loi n° 2002-101, loi de finances pour 2003 [@lf-2003, art. 64 et 87, p. 2884] | « Révision du tarif du droit d'enregistrement minimum » : 5 → 10 D ; jugements 10, 20 ou 40 D |
 | []{#r-te-a-2005}[1^er^ janvier 2005]{.insecable} | ajustement | loi n° 2004-90, loi de finances pour 2005 [@lf-2005, art. 57 et 89, p. 3441] | « Actualisation du tarif du droit fixe d'enregistrement » : 10 → 15 D (art. 23, n° 1 à 12 *ter*, 16 à 18, 22 à 25, 28) |
 | []{#r-te-a-2006}[1^er^ janvier 2006]{.insecable} | ajustement | loi n° 2005-106, loi de finances pour 2006 [@lf-2006, art. 48 et 62, p. 3602] | « Révision du tarif du droit d'enregistrement minimum » : 10 → 15 D ; jugements 15, 30 ou 60 D |
-| []{#r-te-a-2012}[25 mai 2012]{.insecable} | ajustement | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, art. 43 à 45, p. 929] ; date retenue par l'administration fiscale [@dgi-nc-14-2012] | droit fixe 15 → 20 D (art. 23, n° 1 à 13, 16 à 18 *ter*, 22 à 25, 28) (art. 43) ; minimum 15 → 20 D ; jugements 20, 40 ou 75 D (art. 44 et 45) |
-| []{#r-te-a-2017}[1^er^ janvier 2017]{.insecable} | ajustement | loi n° 2016-78, loi de finances pour 2017 [@lf-2017, art. 69, § 3, et art. 79, p. 3848] | art. 22 récrit : minimum 20 D et minimum des jugements → « Il ne peut être perçu moins de 40 dinars pour l'enregistrement des actes, des mutations, des jugements et arrêts et des écrits soumis à un droit d'enregistrement proportionnel ou progressif » |
+| []{#r-te-a-2012}[25 mai 2012]{.insecable} | ajustement | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, art. 43 à 45, p. 929] ; date retenue par l'administration fiscale [@dgi-nc-14-2012] | droit fixe 15 → 20 D (art. 23, n° 1 à 13, 16 à 18 *ter*, 22 à 25, 28) (art. 43) ; minimum 15 → 20 D ; jugements 20 D (tribunaux cantonaux), 40 D (première instance), 75 D (cours d'appel, cassation, et jugements et arrêts du tribunal administratif) (art. 44 et 45) |
+| []{#r-te-a-2017}[1^er^ janvier 2017]{.insecable} | ajustement | loi n° 2016-78, loi de finances pour 2017 [@lf-2017, art. 69, § 3, et art. 79, p. 3849] | art. 22 récrit : minimum 20 D et minimum des jugements → « Il ne peut être perçu moins de 40 dinars pour l'enregistrement des actes, des mutations, des jugements et arrêts et des écrits soumis à un droit d'enregistrement proportionnel ou progressif » |
 | []{#r-te-a-2018}[1^er^ janvier 2018]{.insecable} | ajustement | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 50, § 1, et art. 67, p. 4286] | « Révision du tarif des droits fixes d'enregistrement… » : 20 → 25 D |
 | []{#r-te-a-2022}[1^er^ janvier 2022]{.insecable} | ajustement | décret-loi n° 2021-21, loi de finances pour 2022 [@dl2021-21-lf2022, art. 53 et 73, p. 3097] | « Actualisation du tarif du droit fixe d'enregistrement » : « L'expression « 25 dinars » prévue à l'article 23 […] est remplacée par l'expression « 30 dinars » » |
 
@@ -319,16 +338,17 @@ Avant 1993, la formation et la prorogation d'une société supportent un droit d
 
 ## Les marchés et les concessions {#sec-te-marches .domicile-unique}
 
-Les marchés — de travaux, de fournitures, de services — et les concessions sont soumis à l'enregistrement. Leur régime change trois fois de nature : un droit proportionnel jusqu'en 1993, un droit fixe par page de 1994 à 2012, un droit proportionnel de 0,5 % depuis 2013, retenu sur chaque paiement pour les marchés publics.
+Les marchés — de travaux, de fournitures, de services — et les concessions sont soumis à l'enregistrement. Leur régime change trois fois de nature : un droit proportionnel jusqu'en 1993, sauf trois catégories de marchés au droit fixe dès 1993, un droit fixe par page de 1994 à 2012, un droit proportionnel de 0,5 % depuis 2013, retenu sur chaque paiement pour les marchés publics.
 
-Au tarif de 1969, les marchés sont taxés à 2,20 %, et les marchés d'études au droit fixe ([loi de finances pour 1969](#r-te-m-1969)) ; [le code de 1993](#r-te-m-1993) les porte à 2,7 %.
+Au tarif de 1969, les marchés sont taxés à 2,20 %, et les marchés d'études au droit fixe ([loi de finances pour 1969](#r-te-m-1969)) ; [le code de 1993](#r-te-m-1993) les porte à 2,7 %, hors trois catégories de marchés que son article 23 taxe au droit fixe de 10 D par page : marchés d'un acquéreur ou d'un maître d'œuvre assujetti à la taxe sur la valeur ajoutée selon le régime réel, marchés de sous-traitance, marchés des collectivités locales, des établissements publics à caractère industriel et commercial et des promoteurs immobiliers.
 
 | Date | Texte | Régime des marchés |
 |---|---|---|
 | [2 janvier 1969]{.insecable} | [loi de finances pour 1969](#r-te-m-1969) | 2,20 % ; marchés d'études au droit fixe |
-| [17 mai 1993]{.insecable} | [code des droits d'enregistrement et de timbre](#r-te-m-1993) | 2,7 % |
+| [17 mai 1993]{.insecable} | [code des droits d'enregistrement et de timbre](#r-te-m-1993) | 2,7 % ; trois catégories à 10 D par page |
 | [1^er^ janvier 1994]{.insecable} | [loi de finances pour 1994](#r-te-m-1994) | droit fixe de 10 D par page |
 | [1^er^ janvier 2005]{.insecable} | [loi de finances pour 2005](#r-te-m-2005) | droit fixe de 15 D par page, au plus 2 % de la valeur |
+| [25 mai 2012]{.insecable} | [loi de finances complémentaire pour 2012](#r-te-m-2012) | droit fixe de 20 D par page, jusqu'au 31 décembre 2012 |
 | [1^er^ janvier 2013]{.insecable} | [loi de finances pour 2013](#r-te-m-2013) | 0,5 % de la valeur toutes taxes comprises ; retenue par l'ordonnateur pour les marchés publics |
 | [1^er^ janvier 2018]{.insecable} | [loi de finances pour 2018](#r-te-m-2018) | 0,5 %, champ élargi |
 
@@ -348,10 +368,11 @@ Au tarif de 1969, les marchés sont taxés à 2,20 %, et les marchés d'études 
 |---|---|---|---|
 | []{#r-te-m-1968}[avril 1968]{.insecable} | ajustement | décret n° 68-104 du 20 avril 1968 [@decret-68-104-taux, art. 1, pp. 417-420] | marchés (n° 22 et 23 du tarif de 1912) 1,80 → 1,90 % |
 | []{#r-te-m-1969}[2 janvier 1969]{.insecable} | ajustement | loi n° 68-41, loi de finances pour 1969 [@lf-1969, art. 13 et 14, pp. 1371-1373] | marchés 1,90 → 2,20 % ; n° 22 et 23 du tarif de 1912 récrits, marchés d'études au droit fixe (art. 13) |
-| []{#r-te-m-1993}[17 mai 1993]{.insecable} | **mise en place** | loi n° 93-53, code des droits d'enregistrement et de timbre [@loi-93-53-cdet, code, art. 20, p. 720] | marchés (art. 20, n° 19) : 2,7 % |
+| []{#r-te-m-1993}[17 mai 1993]{.insecable} | **mise en place** | loi n° 93-53, code des droits d'enregistrement et de timbre [@loi-93-53-cdet, code, art. 20 et 23, pp. 720-721] | marchés (art. 20, n° 19) : 2,7 % ; au droit fixe de 10 D par page : marchés d'un acquéreur ou d'un maître d'œuvre assujetti à la taxe sur la valeur ajoutée selon le régime réel, pour une activité totalement soumise à la taxe (art. 23, n° 13), marchés de sous-traitance découlant d'un marché principal enregistré (n° 14), marchés des collectivités locales, des établissements publics à caractère industriel et commercial et des promoteurs immobiliers (n° 15) |
 | []{#r-te-m-1994}[1^er^ janvier 1994]{.insecable} | **rupture** (marchés au droit fixe) | loi n° 93-125, loi de finances pour 1994 [@lf-1994, art. 57, 59 et 77, p. 2200] | « Enregistrement des marchés au droit fixe » : art. 20, n° 19 (2,7 %) abrogé (art. 59) ; « adjudications et marchés pour construction, réparation, entretien, approvisionnement, fourniture et tous autres services » au droit fixe de 10 D par page (art. 23, n° 13) (art. 57) ; n° 14 et 15 de l'art. 23 et art. 32 et 68 abrogés |
 | []{#r-te-m-2005}[1^er^ janvier 2005]{.insecable} | ajustement | loi n° 2004-90, loi de finances pour 2005 [@lf-2005, art. 53 à 55 et 89, pp. 3440-3441] | « Révision du régime d'enregistrement des marchés et des concessions » : concessions et marchés 10 → 15 D par page (art. 54) ; « Le montant maximum de perception pour les concessions et marchés est fixé à 2 % de leur valeur » (art. 55) |
-| []{#r-te-m-2013}[1^er^ janvier 2013]{.insecable} | **rupture** (retour au droit proportionnel) | loi n° 2012-27, loi de finances pour 2013 [@lf-2013, art. 50 à 54 et 79, pp. 14-15] | « Révision du régime de l'enregistrement des marchés et concessions » : 15 D par page → « 19 (nouveau). Les marchés et concessions 0,5 % », sur la valeur toutes taxes comprises (art. 50) ; marchés publics enregistrés au minimum, droit retenu par l'ordonnateur sur chaque paiement (art. 52, art. 68 *bis* du code) ; n° 13 de l'art. 23 et maximum de 2 % abrogés (art. 54) |
+| []{#r-te-m-2012}[25 mai 2012]{.insecable} | ajustement | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, art. 43, p. 929] ; date retenue par l'administration fiscale [@dgi-nc-14-2012] | droit fixe de l'art. 23, n° 1 à 13 (dont le n° 13, marchés) : 15 → 20 D par page ; les marchés sont donc à 20 D, non à 15 D, du 25 mai au 31 décembre 2012 |
+| []{#r-te-m-2013}[1^er^ janvier 2013]{.insecable} | **rupture** (retour au droit proportionnel) | loi n° 2012-27, loi de finances pour 2013 [@lf-2013, art. 50 à 54 et 79, pp. 15-16] | « Révision du régime de l'enregistrement des marchés et concessions » : 15 D par page → « 19 (nouveau). Les marchés et concessions 0,5 % », sur la valeur toutes taxes comprises (art. 50) ; marchés publics enregistrés au minimum, droit retenu par l'ordonnateur sur chaque paiement (art. 52, art. 68 *bis* du code) ; n° 13 de l'art. 23 et maximum de 2 % abrogés (art. 54) |
 | []{#r-te-m-2018}[1^er^ janvier 2018]{.insecable} | ajustement | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 33 ; @minfin-cdet-2025, pp. 31 et 46] | d'après le code consolidé au 1^er^ janvier 2025 : art. 20, n° 19, étendu aux opérations de publicité, à la franchise, aux droits de propriété intellectuelle, aux contrats avec des artistes et des sportifs, à 0,5 % ; assiette limitée aux trois premières années pour les contrats de plus de trois ans |
 
 : Le régime d'enregistrement des marchés et des concessions, texte par texte, 1968-2018, avec la portée de chaque texte. {#tbl-te-registre-marches}
@@ -397,6 +418,26 @@ Jusqu'en 1993, le timbre des actes est un [timbre de dimension](#g-timbre-dimens
 
 <!-- TODO (documentaliste) : montants du timbre des actes (2 → 3 D), des effets domiciliés (0,300 → 0,400 D) et des autres effets (2 → 3 D) juste avant la loi de finances pour 2013, qui ne donne que le nouveau tarif ; vérifier les lois de finances de 1994 à 2012 (l'index FTS « timbre » les liste). LF 2001 (loi n° 2000-98), art. 64 : montant initial du timbre du titre de crédit et date d'effet. -->
 
+Les effets domiciliés passent de 0,020 D en 1969 à 0,600 D en 2018, et les autres effets, à montant fixe depuis 1990, de 1 D à 5 D (@fig-te-effets). Le titre de crédit, créé en 2001 à 5 D, est à 25 D depuis 2018 (@fig-te-titre-credit).
+
+```{python}
+#| label: fig-te-effets
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import timbre_montants as fig_tm
+fig_tm.figure("effets", generated="{{< meta date >}}")
+```
+
+```{python}
+#| label: fig-te-titre-credit
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import timbre_montants as fig_tm
+fig_tm.figure("titre-credit", generated="{{< meta date >}}")
+```
+
 :::: {.chronologie-repliable titre="Timbre des actes, des effets de commerce et des titres de crédit : montants, textes date par date, 1965-2018"}
 
 | Effet | Portée | Texte et articles | Avant → après |
@@ -406,11 +447,11 @@ Jusqu'en 1993, le timbre des actes est un [timbre de dimension](#g-timbre-dimens
 | []{#r-te-t-1969}[2 janvier 1969]{.insecable} | ajustement | loi n° 68-41, loi de finances pour 1969 [@lf-1969, art. 12, pp. 1368-1370] | petit papier 0,480 → 0,520 D ; grand registre 1,440 → 1,560 D ; effets 5,20 ‰ → 5,70 ‰ ; effets domiciliés 0,007 → 0,020 D |
 | []{#r-te-t-1990}[2 janvier 1990]{.insecable} | étape (anticipée, du code de 1993) | loi n° 89-115, loi de finances pour 1990 [@loi-89-115-lf-1990, art. 33, p. 2149] | timbre proportionnel des effets (section II du tarif du décret du 20 avril 1912) abrogé : effets domiciliés 0,100 D ; autres effets 1 D, quel que soit leur montant |
 | []{#r-te-t-1993}[17 mai 1993]{.insecable} | **mise en place** | loi n° 93-53, code des droits d'enregistrement et de timbre [@loi-93-53-cdet, code, art. 117 et 118, pp. 733-734] | répertoires et registres des officiers publics, actes soumis à un droit proportionnel ou progressif et expéditions : 2 D par feuille ; contrats de transport international 2 D par copie ; effets domiciliés 0,200 D ; autres effets 2 D ; chèques exonérés (art. 118) |
-| []{#r-te-t-2001}[2001]{.insecable} | naissance d'un timbre | loi n° 2000-98, loi de finances pour 2001 [@lf-2001, art. 64 ; @minfin-cdet-2025, p. 82] | timbre sur le titre de crédit, d'après le code consolidé au 1^er^ janvier 2025 |
+| []{#r-te-t-2001}[1^er^ janvier 2001]{.insecable} | naissance d'un timbre | loi n° 2000-98, loi de finances pour 2001 [@lf-2001, art. 64 et 68, pp. 3181-3182] | « Fixation du droit de timbre relatif au titre de crédit » : n° 7 ajouté au § I de l'art. 117, titre de crédit 5 D |
 | []{#r-te-t-2006}[1^er^ janvier 2006]{.insecable} | ajustement | loi n° 2005-106, loi de finances pour 2006 [@lf-2006, art. 45 et 62, p. 3602] | effets domiciliés 0,200 → 0,300 D ; titre de crédit → 10 D |
-| []{#r-te-t-2013}[1^er^ janvier 2013]{.insecable} | ajustement (étape d'ensemble de 2013) | loi n° 2012-27, loi de finances pour 2013 [@lf-2013, art. 49 et 79] | « Actualisation du tarif du droit de timbre » : répertoires et actes soumis au droit proportionnel → 3 D par feuille ; transport international → 3 D ; effets domiciliés → 0,400 D ; autres effets → 3 D ; titre de crédit → 15 D |
-| []{#r-te-t-2017}[1^er^ janvier 2017]{.insecable} | ajustement | loi n° 2016-78, loi de finances pour 2017 [@lf-2017, art. 69, § 6, 7 et 11, pp. 3848-3849] | actes soumis au droit proportionnel : 3 D par feuille, hors marchés, concessions et jugements (§ 6) ; grosses et expéditions des jugements : 60 D par copie (art. 117, n° 2 *bis*) (§ 7), pour les jugements rendus à partir du 1^er^ janvier 2017 (§ 11) |
-| []{#r-te-t-2018}[1^er^ janvier 2018]{.insecable} | ajustement (étape d'ensemble de 2018) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 50, § 3, et art. 67, pp. 4286-4287] | répertoires et actes 3 → 5 D par feuille ; transport international → 5 D ; effets domiciliés 0,400 → 0,600 D ; autres effets 3 → 5 D ; titre de crédit 15 → 25 D |
+| []{#r-te-t-2013}[1^er^ janvier 2013]{.insecable} | ajustement (étape d'ensemble de 2013) | loi n° 2012-27, loi de finances pour 2013 [@lf-2013, art. 49, p. 14, et art. 79] | « Actualisation du tarif du droit de timbre » : répertoires et actes soumis au droit proportionnel → 3 D par feuille ; transport international → 3 D ; effets domiciliés → 0,400 D ; autres effets → 3 D ; titre de crédit → 15 D |
+| []{#r-te-t-2017}[1^er^ janvier 2017]{.insecable} | ajustement | loi n° 2016-78, loi de finances pour 2017 [@lf-2017, art. 69, § 6, 7 et 11, pp. 3849-3850] | actes soumis au droit proportionnel : 3 D par feuille, hors marchés, concessions et jugements (§ 6) ; grosses et expéditions des jugements : 60 D par copie (art. 117, n° 2 *bis*) (§ 7), pour les jugements rendus à partir du 1^er^ janvier 2017 (§ 11) |
+| []{#r-te-t-2018}[1^er^ janvier 2018]{.insecable} | ajustement (étape d'ensemble de 2018) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 50, § 3, et art. 67, p. 4287] | répertoires et actes 3 → 5 D par feuille ; transport international → 5 D ; effets domiciliés 0,400 → 0,600 D ; autres effets 3 → 5 D ; titre de crédit 15 → 25 D |
 
 : Le timbre des actes, des effets de commerce et des titres de crédit, texte par texte, 1965-2018, en dinars courants, avec la portée de chaque texte. {#tbl-te-registre-timbre-actes}
 
@@ -421,6 +462,19 @@ Jusqu'en 1993, le timbre des actes est un [timbre de dimension](#g-timbre-dimens
 ## Le timbre des quittances, des factures et des tickets de caisse {#sec-te-factures .domicile-unique}
 
 Le timbre frappe chaque facture, quel qu'en soit le montant, et, chez les grandes surfaces et les franchisés d'une marque étrangère, chaque ticket de caisse. Il est de 1 D par facture depuis 2023 ; 100 millimes par ticket depuis 2022.
+
+Le timbre d'une facture ordinaire passe de 0,200 D en 1993 à 1 D en 2023 : en dinars de 2025, il vaut 0,83 D en 1994, 0,59 D en 2005 au plus bas, 1,13 D en 2023 et 1,00 D en 2025 (@fig-te-factures).
+
+```{python}
+#| label: fig-te-factures
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import timbre_montants as fig_tm
+fig_tm.figure("factures", generated="{{< meta date >}}")
+```
+
+::: {.chronologie-repliable titre="Timbre des quittances, des factures et des tickets de caisse : le tableau des dates et des montants"}
 
 | Date | Texte | Assiette | Montant |
 |---|---|---|---|
@@ -436,6 +490,8 @@ Le timbre frappe chaque facture, quel qu'en soit le montant, et, chez les grande
 | [1^er^ janvier 2026]{.insecable} | [loi de finances pour 2026](#r-te-f-2026) | factures des grandes surfaces | 1,500 D de 50 à 100 D ; 2 D au-delà |
 
 : Le timbre des quittances, des factures et des tickets de caisse, 1969-2026, en dinars courants. {#tbl-te-factures-en-dates}
+
+:::
 
 <!-- TODO (rédacteur) : remplacer par un tableau engendré -->
 
@@ -455,11 +511,11 @@ Le timbre frappe chaque facture, quel qu'en soit le montant, et, chez les grande
 | []{#r-te-f-2004}[1^er^ janvier 2004]{.insecable} | **rupture** (des quittances aux factures) | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 76, 77 et 105, p. 3733] | « Exonération des quittances du droit de timbre » : n° 6 de l'art. 117 récrit, « 6- Les factures 0,200 par facture » au lieu des effets et actes constatant décharge, reçu ou quittance (art. 76) ; exonérations n° 12, 15 à 18, 21, 22 et 30 de l'art. 118 abrogées : billets d'entrée, acquits sur chèques, quittances délivrées à l'État, reçus de dépôt d'espèces, billets de transport, quittances de salaires, quittances des notaires, péages (art. 77) |
 | []{#r-te-f-2006}[1^er^ janvier 2006]{.insecable} | ajustement | loi n° 2005-106, loi de finances pour 2006 [@lf-2006, art. 45 et 62, p. 3602] | factures 0,200 → 0,300 D |
 | []{#r-te-f-2012}[25 mai 2012]{.insecable} | ajustement | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, art. 47, p. 930] ; date retenue par l'administration fiscale [@dgi-nc-14-2012] | factures, hors factures de téléphonie post-payée, 0,300 → 0,400 D |
-| []{#r-te-f-2014}[27 août 2014]{.insecable} | ajustement | loi n° 2014-54, loi de finances complémentaire pour 2014 [@lfc-2014, art. 35, § 1, p. 2104] | « 6) Les factures sauf les factures objet du numéro 8 *quater* de cet article » : 0,400 → 0,500 D ; exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis [@loi93-64, art. 2] |
-| []{#r-te-f-2018}[1^er^ janvier 2018]{.insecable} | ajustement (étape d'ensemble de 2018) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 50, § 3, et art. 67, pp. 4286-4287] | factures, hors téléphonie et internet, 0,500 → 0,600 D |
+| []{#r-te-f-2014}[27 août 2014]{.insecable} | ajustement | loi n° 2014-54, loi de finances complémentaire pour 2014 [@lfc-2014, art. 35, § 1, p. 2105] | « 6) Les factures sauf les factures objet du numéro 8 *quater* de cet article » : 0,400 → 0,500 D ; exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis [@loi93-64, art. 2] |
+| []{#r-te-f-2018}[1^er^ janvier 2018]{.insecable} | ajustement (étape d'ensemble de 2018) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 50, § 3, et art. 67, p. 4287] | factures, hors téléphonie et internet, 0,500 → 0,600 D |
 | []{#r-te-f-2022}[1^er^ janvier 2022]{.insecable} | **rupture** (réforme de 2022) | décret-loi n° 2021-21, loi de finances pour 2022 [@dl2021-21-lf2022, art. 54 et 73, p. 3098] | « Instauration d'un droit de timbre sur les tickets de vente… » : « 10°) Les tickets de vente délivrés aux clients par les grandes surfaces commerciales … 100 millimes sur chaque ticket de vente », grandes surfaces et franchisés d'une marque commerciale étrangère |
-| []{#r-te-f-2023}[1^er^ janvier 2023]{.insecable} | ajustement | décret-loi n° 2022-79, loi de finances pour 2023 [@lf-2023, art. 69, § 1, et art. 76, éd. ar. p. 4078] | « تحيين تعريفة معلوم الطابع الجبائي الموظف على الفواتير » (actualisation du tarif du droit de timbre sur les factures) : 0,600 → 1 D |
-| []{#r-te-f-2026}[1^er^ janvier 2026]{.insecable} | **rupture** (réforme de 2026) | loi n° 2025-17, loi de finances pour 2026 [@lf-2026, art. 20, § 6 et 7, et art. 110, éd. ar. pp. 4233-4234] | « تعزيز موارد تمويل الصناديق الاجتماعية » : factures des grandes surfaces (art. 117, n° 6 *bis*) de 50 à 100 D : 1 → 1,500 D ; de plus de 100 D : 1 → 2 D (§ 6) ; affectés au compte de diversification des sources de la sécurité sociale : 50 % du timbre sur les tickets de vente et sur les cahiers des charges, et le produit des nouveaux tarifs (§ 7) |
+| []{#r-te-f-2023}[1^er^ janvier 2023]{.insecable} | ajustement | décret-loi n° 2022-79, loi de finances pour 2023 [@lf-2023, art. 69, § 1, et art. 76, éd. ar. p. 4079] | « تحيين تعريفة معلوم الطابع الجبائي الموظف على الفواتير » (actualisation du tarif du droit de timbre sur les factures) : 0,600 → 1 D |
+| []{#r-te-f-2026}[1^er^ janvier 2026]{.insecable} | **rupture** (réforme de 2026) | loi n° 2025-17, loi de finances pour 2026 [@lf-2026, art. 20, § 6 et 7, et art. 110, éd. ar. pp. 4234-4235] | « تعزيز موارد تمويل الصناديق الاجتماعية » : factures des grandes surfaces (art. 117, n° 6 *bis*) de 50 à 100 D : 1 → 1,500 D ; de plus de 100 D : 1 → 2 D (§ 6) ; affectés au compte de diversification des sources de la sécurité sociale : 50 % du timbre sur les tickets de vente et sur les cahiers des charges, et le produit des nouveaux tarifs (§ 7) |
 
 : Le timbre des quittances, des factures et des tickets de caisse, texte par texte, 1969-2026, en dinars courants, avec la portée de chaque texte. Pour une loi sans clause d'effet, la date est celle à laquelle le texte devient exécutoire ; pour la loi de finances complémentaire pour 2012, la date retenue par l'administration fiscale. {#tbl-te-registre-factures}
 
@@ -471,6 +527,19 @@ Le timbre frappe chaque facture, quel qu'en soit le montant, et, chez les grande
 
 Le timbre frappe les cartes et opérations de recharge du téléphone depuis 2006, et les factures de téléphonie et d'internet depuis 2012 et 2018 ; il est de 0,140 D par dinar facturé ou payé, toutes taxes comprises, depuis 2018, avec un supplément de 0,100 D par recharge de 5 D ou plus depuis 2026.
 
+Pour une carte ou une recharge de 5 D, le timbre passe de 0,300 D en 2006 à 0,700 D en 2018, et à 0,800 D pour une recharge sans carte en 2026 ; en dinars de 2025, 0,84 D en 2006 et 0,70 D en 2025 (@fig-te-telephone).
+
+```{python}
+#| label: fig-te-telephone
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import timbre_montants as fig_tm
+fig_tm.figure("telephone", generated="{{< meta date >}}")
+```
+
+::: {.chronologie-repliable titre="Timbre sur la téléphonie et internet : le tableau des dates et des montants"}
+
 | Date | Cartes de 5 D au plus | Cartes de plus de 5 D et recharges sans carte | Factures post-payées |
 |---|---|---|---|
 | [1^er^ janvier 2006]{.insecable} | 0,300 D par carte ou recharge | 0,300 D par carte ou recharge | — |
@@ -481,6 +550,8 @@ Le timbre frappe les cartes et opérations de recharge du téléphone depuis 200
 | [1^er^ janvier 2026]{.insecable} | 0,140 D par dinar | 0,140 D par dinar, + 0,100 D par recharge de 5 D ou plus | 0,140 D par dinar |
 
 : Le timbre sur la téléphonie et internet, 2006-2026, en dinars courants. Les textes sont au registre replié de cette section. {#tbl-te-telephonie-en-dates}
+
+:::
 
 <!-- TODO (rédacteur) : remplacer par un tableau engendré -->
 
@@ -496,9 +567,9 @@ Le timbre frappe les cartes et opérations de recharge du téléphone depuis 200
 | []{#r-te-tel-2006}[1^er^ janvier 2006]{.insecable} | **rupture** (réforme de 2006) | loi n° 2005-106, loi de finances pour 2006 [@lf-2006, art. 45 et 62, p. 3602] | « Mise à jour du tarif des droits de timbre et soumission des cartes et opérations de recharge du téléphone au droit de timbre » : « 8) Les cartes et les opérations de recharge du téléphone 0,300 » (art. 117, n° 8 nouveau) |
 | []{#r-te-tel-2007}[1^er^ janvier 2007]{.insecable} | étape (de la réforme de 2006) | loi n° 2006-85, loi de finances pour 2007 [@lf-2007, art. 72 et 88, p. 4392] | « Fixation de l'assiette du droit de timbre dû sur les opérations de recharge électronique du téléphone » : n° 8 remplacé par 8, 8 *bis*, 8 *ter* : cartes de 5 D au plus 0,300 D ; cartes de plus de 5 D et recharges sans carte, 0,300 D par tranche de 5 D |
 | []{#r-te-tel-2012}[25 mai 2012]{.insecable} | ajustement | loi n° 2012-1, loi de finances complémentaire pour 2012 [@lfc-2012, art. 48 et 49, p. 930] ; date retenue par l'administration fiscale [@dgi-nc-14-2012] | cartes de 5 D au plus 0,300 D → 0,080 D par dinar ; plus de 5 D 0,300 → 0,400 D par tranche de 5 D (art. 48) ; factures de téléphonie post-payée : 0,400 D par tranche de 5 D (art. 49) |
-| []{#r-te-tel-2014}[27 août 2014]{.insecable} | ajustement | loi n° 2014-54, loi de finances complémentaire pour 2014 [@lfc-2014, art. 35, § 1, p. 2104] | « 8) Les cartes de recharge du téléphone dont le montant n'excède pas 5 dinars 0,100 D sur chaque dinar » : 0,080 → 0,100 D par dinar ; cartes de plus de 5 D, recharges sans carte et post-payé 0,400 → 0,500 D par tranche de 5 D |
-| []{#r-te-tel-2018}[1^er^ janvier 2018]{.insecable} | étape (de la réforme de 2006 ; étape d'ensemble de 2018) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 50, § 2, et art. 67, p. 4286] | n° 8 à 8 *quater* remplacés : « 8° (nouveau)- Les factures relatives aux services de téléphonie et aux services d'internet ainsi que les opérations de recharge y afférentes … 0,140 sur chaque dinar ou fraction de dinar facturé ou payé tous droits et taxes compris » ; internet des particuliers exclu |
-| []{#r-te-tel-2026}[1^er^ janvier 2026]{.insecable} | **rupture** (réforme de 2026) | loi n° 2025-17, loi de finances pour 2026 [@lf-2026, art. 20, § 4 et 7, et art. 110, éd. ar. p. 4233] | « يوظف مبلغ إضافي قدره 0,100 دينار على كل عملية شحن لرصيد الهاتف الجوال تساوي أو تفوق 5 دنانير » : supplément de 0,100 D par recharge de 5 D ou plus, affecté au compte de diversification des sources de la sécurité sociale (§ 7) |
+| []{#r-te-tel-2014}[27 août 2014]{.insecable} | ajustement | loi n° 2014-54, loi de finances complémentaire pour 2014 [@lfc-2014, art. 35, § 1, p. 2105] | « 8) Les cartes de recharge du téléphone dont le montant n'excède pas 5 dinars 0,100 D sur chaque dinar » : 0,080 → 0,100 D par dinar ; cartes de plus de 5 D, recharges sans carte et post-payé 0,400 → 0,500 D par tranche de 5 D |
+| []{#r-te-tel-2018}[1^er^ janvier 2018]{.insecable} | étape (de la réforme de 2006 ; étape d'ensemble de 2018) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 50, § 2, et art. 67, p. 4287] | n° 8 à 8 *quater* remplacés : « 8° (nouveau)- Les factures relatives aux services de téléphonie et aux services d'internet ainsi que les opérations de recharge y afférentes … 0,140 sur chaque dinar ou fraction de dinar facturé ou payé tous droits et taxes compris » ; internet des particuliers exclu |
+| []{#r-te-tel-2026}[1^er^ janvier 2026]{.insecable} | **rupture** (réforme de 2026) | loi n° 2025-17, loi de finances pour 2026 [@lf-2026, art. 20, § 4 et 7, et art. 110, éd. ar. pp. 4234-4235] | « يوظف مبلغ إضافي قدره 0,100 دينار على كل عملية شحن لرصيد الهاتف الجوال تساوي أو تفوق 5 دنانير » : supplément de 0,100 D par recharge de 5 D ou plus, affecté au compte de diversification des sources de la sécurité sociale (§ 7) |
 
 : Le timbre sur la téléphonie et internet, texte par texte, 2006-2026, avec la portée de chaque texte. {#tbl-te-registre-telephonie}
 
@@ -509,6 +580,28 @@ Le timbre frappe les cartes et opérations de recharge du téléphone depuis 200
 ## Les timbres des documents administratifs {#sec-te-documents .domicile-unique}
 
 Le timbre est dû sur la délivrance de nombreux documents administratifs : passeport, carte d'identité, carte de séjour, certificat de visite technique, autorisation d'ouvrir un débit de boissons, permis d'armes, et, depuis 2023 et 2026, bons de commande, attestations d'avantages fiscaux et cahiers des charges. Le passeport coûte 80 D depuis 2013, la carte d'identité 3 D.
+
+Le passeport passe de 3,750 D en 1969 à 80 D en 2013, et celui des étudiants de 1,250 D à 25 D (@fig-te-passeport) ; le renouvellement de la carte pour perte, de 5 D en 1993 à 25 D en 2014 (@fig-te-carte-perte).
+
+```{python}
+#| label: fig-te-passeport
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import timbre_montants as fig_tm
+fig_tm.figure("passeport", generated="{{< meta date >}}")
+```
+
+```{python}
+#| label: fig-te-carte-perte
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import timbre_montants as fig_tm
+fig_tm.figure("carte-perte", generated="{{< meta date >}}")
+```
+
+::: {.chronologie-repliable titre="Passeport, carte d'identité et carte de séjour : le tableau des dates et des montants"}
 
 | Date | Passeport | Passeport des étudiants | Carte d'identité | Carte de séjour |
 |---|---|---|---|---|
@@ -521,6 +614,8 @@ Le timbre est dû sur la délivrance de nombreux documents administratifs : pass
 | [27 août 2014]{.insecable} | | | | 150 D (étudiants 75 D) |
 
 : Le timbre du passeport, de la carte d'identité et de la carte de séjour, 1969-2014, en dinars courants : chaque case donne le montant que fixe un texte à cette date ; une case vide, un montant que le texte de cette date ne change pas. Montants inchangés au 1^er^ janvier 2025 d'après le code consolidé. Les textes sont au registre replié de cette section. {#tbl-te-documents-en-dates}
+
+:::
 
 <!-- TODO (rédacteur) : remplacer par un tableau engendré -->
 
@@ -542,12 +637,12 @@ Le passeport passe de 3,750 D au tarif de [1969](#r-te-adm-1969) à 21 D au [cod
 | []{#r-te-adm-1999}[1^er^ janvier 1999]{.insecable} | ajustement | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 71 et 76, p. 2509] | « Relèvement du droit de timbre dû sur la carte d'identité nationale, la carte de séjour des étrangers et les passeports » : carte de séjour 5 → 10 D ; renouvellement pour perte 10 → 20 D ; passeport 21 → 30 D ; étudiants 7 → 10 D |
 | []{#r-te-adm-2004}[1^er^ janvier 2004]{.insecable} | ajustement | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 56 et 105, p. 3729] | visite technique 2 → 7 D ; passeport 30 → 35 D |
 | []{#r-te-adm-2006}[1^er^ janvier 2006]{.insecable} | ajustement | loi n° 2005-106, loi de finances pour 2006 [@lf-2006, art. 45 et 62, p. 3602] | « Passeports délivrés aux autres personnes ainsi que leur prorogation 60,000 » : 35 → 60 D ; étudiants 10 → 20 D |
-| []{#r-te-adm-2013}[1^er^ janvier 2013]{.insecable} | ajustement (étape d'ensemble de 2013) | loi n° 2012-27, loi de finances pour 2013 [@lf-2013, art. 49 et 79] | carte d'identité → 3 D ; passeport 60 → 80 D ; étudiants 20 → 25 D ; renouvellement du passeport 100 → 150 D ; débits de boissons 100 → 200 D |
-| []{#r-te-adm-2014}[27 août 2014]{.insecable} | ajustement | loi n° 2014-54, loi de finances complémentaire pour 2014 [@lfc-2014, art. 35, pp. 2104-2105] | « Actualisation du tarif des droits d'enregistrement et institution d'autres droits » : carte de séjour → 150 D (étudiants 75 D) ; renouvellement de la carte d'identité → 25 D ; débits de boissons 200 → 2 000 D ; permis d'achat d'armes 150 D ; coupons Promosport 0,025 D par colonne |
+| []{#r-te-adm-2013}[1^er^ janvier 2013]{.insecable} | ajustement (étape d'ensemble de 2013) | loi n° 2012-27, loi de finances pour 2013 [@lf-2013, art. 49, p. 14, et art. 79] | carte d'identité → 3 D ; passeport 60 → 80 D ; étudiants 20 → 25 D ; renouvellement du passeport 100 → 150 D ; débits de boissons 100 → 200 D |
+| []{#r-te-adm-2014}[27 août 2014]{.insecable} | ajustement | loi n° 2014-54, loi de finances complémentaire pour 2014 [@lfc-2014, art. 35, p. 2105] | « Actualisation du tarif des droits d'enregistrement et institution d'autres droits » : carte de séjour → 150 D (étudiants 75 D) ; renouvellement de la carte d'identité → 25 D ; débits de boissons 200 → 2 000 D ; permis d'achat d'armes 150 D ; coupons Promosport 0,025 D par colonne |
 | []{#r-te-adm-2017}[1^er^ janvier 2017]{.insecable} | ajustement | loi n° 2016-78, loi de finances pour 2017 [@lf-2017, art. 72 et 79] | « Suppression du droit de timbre dû sur le permis de circulation des voitures étrangères » : 2^e^ et 3^e^ tirets du n° 9 du § II de l'art. 117 abrogés |
-| []{#r-te-adm-2018}[1^er^ janvier 2018]{.insecable} | ajustement (étape d'ensemble de 2018) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 50, § 3, et art. 67, pp. 4286-4287] | services rendus par l'État sans redevance 3 → 5 D |
-| []{#r-te-adm-2023}[1^er^ janvier 2023]{.insecable} | ajustement | décret-loi n° 2022-79, loi de finances pour 2023 [@lf-2023, art. 69, § 3, et art. 76, éd. ar. pp. 4078-4079] | « وإخضاع بعض الوثائق الإدارية للمعلوم » (soumission de certains documents administratifs au droit) : bons de commande 10 D ; attestations d'avantages fiscaux 100 D (générales) et 50 D (ponctuelles) |
-| []{#r-te-adm-2026}[1^er^ janvier 2026]{.insecable} | **rupture** (réforme de 2026) | loi n° 2025-17, loi de finances pour 2026 [@lf-2026, art. 20, § 2 et 7, et art. 110, éd. ar. pp. 4232-4233] | cahiers des charges sans timbre spécial : 20 D (art. 117, § II, n° 10 *bis*) ; 50 % affectés au compte de diversification des sources de la sécurité sociale (§ 7) |
+| []{#r-te-adm-2018}[1^er^ janvier 2018]{.insecable} | ajustement (étape d'ensemble de 2018) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 50, § 3, et art. 67, p. 4287] | services rendus par l'État sans redevance 3 → 5 D |
+| []{#r-te-adm-2023}[1^er^ janvier 2023]{.insecable} | ajustement | décret-loi n° 2022-79, loi de finances pour 2023 [@lf-2023, art. 69, § 3, et art. 76, éd. ar. p. 4079] | « وإخضاع بعض الوثائق الإدارية للمعلوم » (soumission de certains documents administratifs au droit) : bons de commande 10 D ; attestations d'avantages fiscaux 100 D (générales) et 50 D (ponctuelles) |
+| []{#r-te-adm-2026}[1^er^ janvier 2026]{.insecable} | **rupture** (réforme de 2026) | loi n° 2025-17, loi de finances pour 2026 [@lf-2026, art. 20, § 2 et 7, et art. 110, éd. ar. pp. 4234-4235] | cahiers des charges sans timbre spécial : 20 D (art. 117, § II, n° 10 *bis*) ; 50 % affectés au compte de diversification des sources de la sécurité sociale (§ 7) |
 
 : Les timbres des documents administratifs, texte par texte, 1969-2026, en dinars courants, avec la portée de chaque texte. {#tbl-te-registre-documents}
 
@@ -569,11 +664,11 @@ La taxe unique sur les assurances est due sur les contrats d'assurance et de ren
 
 | Effet | Portée | Texte et articles | Avant → après |
 |---|---|---|---|
-| []{#r-te-tua-1997}[1^er^ janvier 1997]{.insecable} | **rupture** (réforme de 1997) | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 34, 35 et 54, p. 2580] | « Révision de la fiscalité du secteur des assurances » : « Est ajoutée au code des droits d'enregistrement et de timbre une troisième partie intitulée "autres taxes" » ; contrats d'assurance ou de rente viagère soumis à la « taxe unique sur les assurances » ; « 5 % pour les contrats d'assurance des risques de la navigation maritime et aérienne ; 10 % pour les contrats d'assurance des autres risques » (art. 34, art. 147 nouveau du code) ; dispositions du décret du 27 mars 1947 relatives au régime fiscal des assurances supprimées (art. 35) |
-| []{#r-te-tua-2001}[1^er^ janvier 2001]{.insecable} | ajustement | loi n° 2000-98, loi de finances pour 2001 [@lf-2001, art. 45 et 68, p. 3178] | « Réduction du taux de la taxe unique sur les assurances sur les contrats d'assurance des risques agricoles et de pêche » : ajout, au premier tiret de l'article 147, des contrats d'assurance relatifs aux risques agricoles et de pêche |
+| []{#r-te-tua-1997}[1^er^ janvier 1997]{.insecable} | **rupture** (réforme de 1997) | loi n° 96-113, loi de finances pour 1997 [@lf-1997, art. 34, 35 et 54, p. 2581] | « Révision de la fiscalité du secteur des assurances » : « Est ajoutée au code des droits d'enregistrement et de timbre une troisième partie intitulée "autres taxes" » ; contrats d'assurance ou de rente viagère soumis à la « taxe unique sur les assurances » ; « 5 % pour les contrats d'assurance des risques de la navigation maritime et aérienne ; 10 % pour les contrats d'assurance des autres risques » (art. 34, art. 147 nouveau du code) ; dispositions du décret du 27 mars 1947 relatives au régime fiscal des assurances supprimées (art. 35) |
+| []{#r-te-tua-2001}[1^er^ janvier 2001]{.insecable} | ajustement | loi n° 2000-98, loi de finances pour 2001 [@lf-2001, art. 45 et 68, p. 3179] | « Réduction du taux de la taxe unique sur les assurances sur les contrats d'assurance des risques agricoles et de pêche » : ajout, au premier tiret de l'article 147, des contrats d'assurance relatifs aux risques agricoles et de pêche |
 | []{#r-te-tua-2008}[1^er^ janvier 2008]{.insecable} | ajustement | loi n° 2007-70, loi de finances pour 2008 [@loi-2007-70-lf-2008, art. 27 et 64, p. 4360] | « Exonération des contrats d'assurance relatifs aux risques agricoles et de pêche de la taxe unique sur les assurances » : n° 2 de l'article 145, contrats d'assurance relatifs aux risques agricoles et de pêche ; premier tiret de l'article 147 : 5 % pour les contrats d'assurance des risques de la navigation maritime et aérienne |
 | []{#r-te-tua-2018}[1^er^ janvier 2018]{.insecable} | ajustement (étape d'ensemble de 2018) | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 48 et 67, p. 4286] | « Actualisation du tarif de la taxe unique sur les assurances » : « de 5 % à 6 % et de 10 % à 12 % » (art. 147 du code) |
-| []{#r-te-tua-2020}[1^er^ janvier 2020]{.insecable} | ajustement | loi n° 2019-78, loi de finances pour 2020 [@lf-2020, art. 15, 16 et 58, p. 4427] | assurance takaful : art. 144 étendu aux entreprises d'assurance takaful ; art. 146 nouveau, base de la taxe : primes ou cotisations émises et accessoires, après déduction des montants annulés ou restitués ; art. 148, § 1 : taxe payée par l'entreprise, le fonds des adhérents ou leur représentant dans les vingt-huit premiers jours de chaque mois, sur déclaration, pour les primes ou cotisations du mois écoulé |
+| []{#r-te-tua-2020}[1^er^ janvier 2020]{.insecable} | ajustement | loi n° 2019-78, loi de finances pour 2020 [@lf-2020, art. 15, 16 et 58, p. 4428] | assurance takaful : art. 144 étendu aux entreprises d'assurance takaful ; art. 146 nouveau, base de la taxe : primes ou cotisations émises et accessoires, après déduction des montants annulés ou restitués ; art. 148, § 1 : taxe payée par l'entreprise, le fonds des adhérents ou leur représentant dans les vingt-huit premiers jours de chaque mois, sur déclaration, pour les primes ou cotisations du mois écoulé |
 | []{#r-te-tua-2025}[1^er^ janvier 2025]{.insecable} | constat | code consolidé au 1^er^ janvier 2025 [@minfin-cdet-2025, pp. 94-96] ; lois de finances pour 2001 (art. 45), 2008 (art. 27) et 2020 (art. 15 et 16) [@lf-2001 ; @loi-2007-70-lf-2008 ; @lf-2020] | exonérations (art. 145) : assurance-vie, capitalisation et rentes viagères ; réassurance ; risques agricoles ; exportation ; assurance construction obligatoire ; assurance takaful (loi de finances pour 2020) ; taux de 6 % et 12 % |
 
 : La taxe unique sur les assurances, texte par texte, 1997-2025, avec la portée de chaque texte. {#tbl-te-registre-tua}
@@ -596,13 +691,13 @@ Les lois de finances ajoutent des modes de paiement en cinq temps. [En 1998](#r-
 |---|---|---|---|
 | []{#r-te-mp-1998}[1^er^ janvier 1998]{.insecable} | **rupture** — les machines à timbrer | loi n° 97-88, loi de finances pour 1998 [@lf-1998, art. 86, 87 et 90, p. 2443] | « Paiement du droit de timbre par l'emploi des machines à timbrer » : article 128 *bis* nouveau ; le ministre chargé des finances peut autoriser toute personne, sur demande écrite et motivée, à acquitter le timbre exigible sur ses documents par l'apposition d'empreintes au moyen de machines à timbrer approuvées ; autorisation personnelle et incessible ; paiement par déclaration mensuelle déposée à la recette des finances dans les quinze premiers jours du mois qui suit ; n° 5 de l'art. 121, « sur déclaration » |
 | []{#r-te-mp-1999}[1^er^ janvier 1999]{.insecable} | ajustement — le délai de la déclaration | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 74 et 76, p. 2509] | « Harmonisation des délais de dépôt des déclarations fiscales relatifs au paiement des droits de timbre sur états ou par l'emploi des machines à timbrer avec les délais de dépôt des déclarations mensuelles » : paragraphe 3 de l'art. 128 *bis* ; la déclaration mensuelle des machines à timbrer est déposée dans les délais du § III de l'art. 119 (au lieu des quinze premiers jours du mois suivant) |
-| []{#r-te-mp-2002}[1^er^ juin 2003]{.insecable} | étape — la lettre de change à lecture électronique | loi n° 2001-123, loi de finances pour 2002 [@loi2001-123-lf2002, art. 76 et 77] | « Détermination du fait générateur et du mode de paiement du timbre exigible sur la lettre de change se prêtant à la lecture électronique » : fait générateur à la distribution (art. 11, § I, n° 5) ; article 128 *ter* nouveau, paiement sur déclaration mensuelle par la personne autorisée à imprimer la lettre, dans les délais du § III de l'art. 11 ; autorisation préalable d'impression ; date d'entrée en application fixée par arrêté du ministre des finances, les articles 76 et 77 étant exclus de la date générale du 1^er^ janvier 2002 ; l'arrêté du 4 juin 2003 la fixe au 1^er^ juin 2003 [@arrete-2003-06-04-lettre-de-change, art. 7, p. 1823-1824] ; il soumet l'impression et la distribution à une demande écrite et à une autorisation personnelle et incessible, impose un registre coté et paraphé par le contrôle fiscal, joint à la déclaration mensuelle un relevé des quantités distribuées, et tient pour non recouvrés les droits des lettres non consignées au registre, émises sous un même numéro, non conformes à la norme ou imprimées par concession |
-| []{#r-te-mp-2004}[1^er^ janvier 2004]{.insecable} | **rupture** — le paiement sur déclaration obligatoire | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 93 à 97 et 105, p. 3734-3735] | « Assouplissement des modalités de paiement du droit de timbre » : article 124 nouveau, paiement sur déclaration obligatoire pour les personnes morales soumises à l'impôt sur les sociétés, même exonérées, pour les factures, les billets de transport international aérien et maritime de personnes et les certificats de visite technique, l'administration pouvant y autoriser d'autres personnes ; articles 126 et 127 : mentions de la déclaration et des documents (« droit de timbre payé sur déclaration », numéro et date de l'autorisation) ; « états » remplacé par « déclaration » aux art. 11 et 125 ; n° 2 de l'art. 121 : papier ayant une valeur déterminée ; n° 3 abrogé |
+| []{#r-te-mp-2002}[1^er^ juin 2003]{.insecable} | étape — la lettre de change à lecture électronique | loi n° 2001-123, loi de finances pour 2002 [@loi2001-123-lf2002, art. 76 et 77, p. 4259] | « Détermination du fait générateur et du mode de paiement du timbre exigible sur la lettre de change se prêtant à la lecture électronique » : fait générateur à la distribution (art. 11, § I, n° 5) ; article 128 *ter* nouveau, paiement sur déclaration mensuelle par la personne autorisée à imprimer la lettre, dans les délais du § III de l'art. 11 ; autorisation préalable d'impression ; date d'entrée en application fixée par arrêté du ministre des finances, les articles 76 et 77 étant exclus de la date générale du 1^er^ janvier 2002 ; l'arrêté du 4 juin 2003 la fixe au 1^er^ juin 2003 [@arrete-2003-06-04-lettre-de-change, art. 7, p. 1823-1824] ; il soumet l'impression et la distribution à une demande écrite et à une autorisation personnelle et incessible, impose un registre coté et paraphé par le contrôle fiscal, joint à la déclaration mensuelle un relevé des quantités distribuées, et tient pour non recouvrés les droits des lettres non consignées au registre, émises sous un même numéro, non conformes à la norme ou imprimées par concession |
+| []{#r-te-mp-2004}[1^er^ janvier 2004]{.insecable} | **rupture** — le paiement sur déclaration obligatoire | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 93 à 97 et 105, p. 3735-3736] | « Assouplissement des modalités de paiement du droit de timbre » : article 124 nouveau, paiement sur déclaration obligatoire pour les personnes morales soumises à l'impôt sur les sociétés, même exonérées, pour les factures, les billets de transport international aérien et maritime de personnes et les certificats de visite technique, l'administration pouvant y autoriser d'autres personnes ; articles 126 et 127 : mentions de la déclaration et des documents (« droit de timbre payé sur déclaration », numéro et date de l'autorisation) ; « états » remplacé par « déclaration » aux art. 11 et 125 ; n° 2 de l'art. 121 : papier ayant une valeur déterminée ; n° 3 abrogé |
 | []{#r-te-mp-2013}[6 août 2013]{.insecable} | étape — la quittance pour les pièces d'identité | arrêté du ministre des finances du 2 août 2013 [@arrete-2013-08-02-timbre-quittance, art. 1, 3 et 5, p. 2329-2330] | « Révision des modes de paiement du droit de timbre fiscal dû sur certaines formules administratives » : paiement par quittance pour la carte d'identité, la carte de séjour des étrangers (et leur renouvellement), le bulletin n° 3 du casier judiciaire et les passeports ; quittance valable trois mois ; formules des postes diplomatiques et consulaires exclues ; applicable à compter de la publication |
 | []{#r-te-mp-2017}non établie | ajustement — toutes les formules du tarif | arrêté du ministre des finances du 4 juillet 2017 [@arrete-2017-07-04-timbre-quittance, art. 1, p. 2373] | articles 1 et 4 de l'arrêté de 2013 remplacés : paiement par quittances de la recette des finances pour toutes les formules administratives de l'art. 128 *quater* dont le tarif est fixé par l'art. 117 ; sont exclues les formules des postes diplomatiques et consulaires et celles dont le timbre est perçu par le paiement électronique sur internet |
-| []{#r-te-mp-2020}[1^er^ janvier 2020]{.insecable} | étape — les moyens électroniques | loi n° 2019-78, loi de finances pour 2020 [@lf-2020, art. 23 et 58, p. 4429] | « Adoption des moyens électroniques pour l'enregistrement des contrats, écrits et mutations et pour le paiement des droits de timbre exigibles » : article 13 *bis* (enregistrement par les moyens électroniques fiables) ; article 128 *quinquies* « Paiement par les moyens électroniques fiables » ; n° 7 de l'art. 121 ; domaine et modalités fixés par arrêté du ministre des finances |
-| []{#r-te-mp-2022}[1^er^ janvier 2022]{.insecable} | étape — la quittance de la recette des finances | décret-loi n° 2021-21, loi de finances pour 2022 [@dl2021-21-lf2022, art. 44, § 1, p. 3091 ; @dl2021-21-lf2022, art. 73, p. 3106] | « Amélioration de la digitalisation des services administratifs et développement des modalités de paiement des dépenses publiques » : au premier paragraphe de l'article 128 *quater*, ajout : le timbre exigible sur les autres documents administratifs de l'article 117 peut être payé par quittances délivrées par les recettes des finances ; date, champ et modalités fixés par arrêté du ministre des finances |
-| []{#r-te-mp-2022-arrete}non établie (art. 1) ; [26 juin 2022]{.insecable} (art. 2) | étape — cinq formules de plus | arrêté de la ministre des finances du 23 mai 2022 [@arrete-2022-05-23-timbre-quittance, art. 1 à 6, p. 1647-1648] | paiement par quittances de la recette des finances des formules de l'art. 117 visées à l'art. 128 *quater* (art. 1) ; titres de crédit, certificats de nationalité, décrets de naturalisation, attestations de résidence et attestations de déclaration de perte (art. 2, en vigueur trente jours après la publication du 27 mai 2022) ; quittance valable six mois ; arrêté de 2013 abrogé |
+| []{#r-te-mp-2020}[1^er^ janvier 2020]{.insecable} | étape — les moyens électroniques | loi n° 2019-78, loi de finances pour 2020 [@lf-2020, art. 23 et 58, p. 4430] | « Adoption des moyens électroniques pour l'enregistrement des contrats, écrits et mutations et pour le paiement des droits de timbre exigibles » : article 13 *bis* (enregistrement par les moyens électroniques fiables) ; article 128 *quinquies* « Paiement par les moyens électroniques fiables » ; n° 7 de l'art. 121 ; domaine et modalités fixés par arrêté du ministre des finances |
+| []{#r-te-mp-2022}[1^er^ janvier 2022]{.insecable} | étape — la quittance de la recette des finances | décret-loi n° 2021-21, loi de finances pour 2022 [@dl2021-21-lf2022, art. 44, § 1, p. 3092 ; @dl2021-21-lf2022, art. 73, p. 3107] | « Amélioration de la digitalisation des services administratifs et développement des modalités de paiement des dépenses publiques » : au premier paragraphe de l'article 128 *quater*, ajout : le timbre exigible sur les autres documents administratifs de l'article 117 peut être payé par quittances délivrées par les recettes des finances ; date, champ et modalités fixés par arrêté du ministre des finances |
+| []{#r-te-mp-2022-arrete}non établie (art. 1) ; [26 juin 2022]{.insecable} (art. 2) | étape — cinq formules de plus | arrêté de la ministre des finances du 23 mai 2022 [@arrete-2022-05-23-timbre-quittance, art. 1 à 6, p. 1647] | paiement par quittances de la recette des finances des formules de l'art. 117 visées à l'art. 128 *quater* (art. 1) ; titres de crédit, certificats de nationalité, décrets de naturalisation, attestations de résidence et attestations de déclaration de perte (art. 2, en vigueur trente jours après la publication du 27 mai 2022) ; quittance valable six mois ; arrêté de 2013 abrogé |
 | []{#r-te-mp-2023}[1^er^ janvier 2023]{.insecable} | ajustement | arrêté de la ministre des finances du 16 janvier 2023 [@arrete-2023-01-16-timbre-quittance, art. 1 à 3, p. 94] | quittances étendues aux visas des bons de commande et aux attestations générales et ponctuelles d'avantages fiscaux en matière de taxe sur la valeur ajoutée, de droit de consommation ou d'autres taxes sur le chiffre d'affaires |
 | []{#r-te-mp-2026}[1^er^ janvier 2026]{.insecable} | ajustement | arrêté de la ministre des finances du 6 janvier 2026 [@arrete-2026-01-06-timbre-quittance, art. 1 et 2, p. 25] | quittances étendues aux cahiers des charges non soumis à un droit de timbre fiscal spécifique |
 
@@ -634,7 +729,8 @@ figtools.figure_tabs(
     slug="fig_te_rendement",
     caption=("Droit de timbre, autres droits d'enregistrement et taxe unique sur les "
              "assurances : prévisions des lois de finances, 2001-2026, et réalisations, "
-             "2018-2023, en millions de dinars courants et en millions de dinars de 2025"),
+             "2018-2023, en millions de dinars courants, en part des dépenses de l'État, en part du "
+             "PIB de chaque base des comptes nationaux et en millions de dinars de 2025"),
     note_lecture=(
         "Les traits relient les prévisions du tableau A des lois de finances initiales ; les "
         "cercles creux sont les réalisations que publie la Cour des comptes. Une couleur par "
@@ -645,15 +741,28 @@ figtools.figure_tabs(
         "du timbre dans les deux nomenclatures : deux cercles. La prévision de la taxe "
         "unique sur les assurances pour 2021 et 2022 n'est pas tracée : le tableau A imprime "
         "2 MD, valeur probablement permutée avec celle des formalités administratives ; "
-        "l'onglet « Données » la donne telle qu'imprimée. La vue en dinars de 2025 divise "
-        "chaque montant par l'indice des prix à la consommation de son année ; elle s'arrête "
-        "en 2025, dernier indice publié."
+        "l'onglet « Données » la donne telle qu'imprimée. Quatre vues se choisissent par les "
+        "boutons au-dessus du graphique. **Part des dépenses de l'État** : dépenses de l'État hors "
+        "service de la dette, réalisations du classeur du ministère des Finances, une seule série "
+        "de 1986 à 2025 ; le numérateur est voté (prévision) ou réalisé (Cour des comptes), le "
+        "dénominateur réalisé : la part donne un ordre de grandeur. **Part du PIB** : une courbe "
+        "par base des comptes nationaux, 1983, 1997 et 2015, jamais raccordées ; une année "
+        "publiée dans deux bases porte deux points, chacun rapporté au PIB de sa base, et le "
+        "trait pointillé marque l'année où la série passe à la base 2015 (voir l'[annexe sur le "
+        "PIB](../annexe-pib.html#sec-pib-ruptures)) ; les valeurs du ministère que la source ne "
+        "rattache à aucune base (2002 à 2004 et 2025) ne sont pas tracées, l'onglet « Données » "
+        "les donne. **Dinars de 2025** : chaque montant est divisé par l'indice annuel moyen des "
+        "prix à la consommation de son exercice (INS, base 1970 = 100), multiplié par l'indice de "
+        "2025 ; 2024 et 2025 prolongent cet indice par la variation de l'indice en base 2015 que "
+        "relaie la Banque centrale, seul raccord de la période ; la vue s'arrête en 2025, dernier "
+        "indice publié. L'onglet « Données » donne une ligne par exercice, par ligne du tableau A "
+        "et par vue, avec le dénominateur ou l'indice, sa base et sa source."
     ),
     generated="{{< meta date >}}",
 )
 ```
 
-En dinars courants, la prévision du timbre passe de 28 MD en 2001 à 826 MD en 2026 ; celle des autres droits d'enregistrement, de 50 MD en 2001 à 283 MD en 2019 ; celle de la taxe unique sur les assurances, de 34 MD à 348 MD (@fig-te-rendement). La prévision du timbre double presque en 2007, de 38 à 66 MD, et de nouveau en 2008, à 123,6 MD ; elle atteint 553 MD en 2015, avant de revenir à 432,3 MD en 2016 [@lf-2006, tableau A, p. 3606 ; @lf-2007, tableau A, p. 4397 ; @loi-2007-70-lf-2008, tableau A, p. 4370 ; @lf-2015, tableau A, p. 3475 ; @lf-2016, tableau A, p. 3167]. En dinars de 2025, la prévision du timbre passe de 91,5 MD en 2001 à 753 MD en 2025.
+En dinars courants, la prévision du timbre passe de 28 MD en 2001 à 826 MD en 2026 ; celle des autres droits d'enregistrement, de 50 MD en 2001 à 283 MD en 2019 ; celle de la taxe unique sur les assurances, de 34 MD à 348 MD (@fig-te-rendement). La prévision du timbre double presque en 2007, de 38 à 66 MD, et de nouveau en 2008, à 123,6 MD ; elle atteint 553 MD en 2015, avant de revenir à 432,3 MD en 2016 [@lf-2006, tableau A, p. 3606 ; @lf-2007, tableau A, p. 4397 ; @loi-2007-70-lf-2008, tableau A, p. 4370 ; @lf-2015, tableau A, p. 3475 ; @lf-2016, tableau A, p. 3167]. En dinars de 2025, la prévision du timbre passe de 91,5 MD en 2001 à 753 MD en 2025. Rapportée aux dépenses de l'État hors service de la dette, réalisées, elle passe de 0,39 % en 2001 à 1,27 % en 2010, 2,49 % en 2015 et 1,43 % en 2025 ; rapportée au PIB de base 2015, de 0,27 % en 2010 à 0,62 % en 2015 et 0,44 % en 2025 (en base 1997, 0,29 % en 2010 et 0,65 % en 2015). Le numérateur est une prévision et le dénominateur une réalisation, et les deux bases de PIB ne se comparent pas.
 
 <!-- TODO (documentaliste) : sauts de la prévision du timbre en 2008 (66 → 123,6 MD) et en 2015 (271 → 553 MD, puis 432,3 MD en 2016) — chercher l'explication dans les rapports sur les projets de budget 2008 et 2015 (tunisia-data) avant d'écrire une phrase de contexte. -->
 

@@ -1,0 +1,39 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-24
+# séries (tunisia_data) : timbre-montants-dates, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @loi-93-53-cdet, @lf-1969, @lf-1977, @loi81-100-lf1982, @lf-1983, @loi85-109-lf1986, @loi-89-115-lf-1990, @lf-1997, @lf-1999, @lf-2001, @lf-2003, @lf-2004, @lf-2005, @lf-2006, @lfc-2012, @lf-2013, @lfc-2014, @lf-2017, @lf-2018, @dl2021-21-lf2022, @lf-2023, @lf-2026, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Les montants sont ceux des textes, lus dans les registres du chapitre ; les dates sans clause d'effet sont celles où le texte devient exécutoire. Le 25 mai 2012 est la date retenue par l'administration fiscale pour la loi de finances complémentaire. Le timbre du téléphone depuis 2012 est un taux par dinar : l'équivalent pour 5 D est un calcul, distingué dans la colonne famille. Avant le 6 500 D du passeport de 1983, la date du montant de 6,500 D n'est pas établie., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Timbre du renouvellement de la carte d'identité ou de séjour pour perte ou destruction, à chaque date d'effet, 1993-2026, en dinars courants et en dinars de 2025
+Grandeur,Année,"Montant en vigueur, moyenne de l'année (dinars courants)",Indice des prix à la consommation,Montant en dinars de 2025
+Renouvellement de la carte pour perte,1994,5.0,504.5,20.74
+Renouvellement de la carte pour perte,1995,5.0,536.0,19.52
+Renouvellement de la carte pour perte,1996,5.0,555.9,18.82
+Renouvellement de la carte pour perte,1997,10.0,576.5,36.3
+Renouvellement de la carte pour perte,1998,10.0,594.5,35.2
+Renouvellement de la carte pour perte,1999,20.0,610.5,68.56
+Renouvellement de la carte pour perte,2000,20.0,628.3,66.62
+Renouvellement de la carte pour perte,2001,20.0,640.5,65.35
+Renouvellement de la carte pour perte,2002,20.0,658.6,63.55
+Renouvellement de la carte pour perte,2003,20.0,676.5,61.87
+Renouvellement de la carte pour perte,2004,20.0,701.0,59.71
+Renouvellement de la carte pour perte,2005,20.0,715.3,58.51
+Renouvellement de la carte pour perte,2006,20.0,745.0,56.18
+Renouvellement de la carte pour perte,2007,20.0,770.6,54.31
+Renouvellement de la carte pour perte,2008,20.0,808.4,51.77
+Renouvellement de la carte pour perte,2009,20.0,837.0,50.01
+Renouvellement de la carte pour perte,2010,20.0,873.9,47.89
+Renouvellement de la carte pour perte,2011,20.0,904.8,46.26
+Renouvellement de la carte pour perte,2012,20.0,955.1,43.82
+Renouvellement de la carte pour perte,2013,20.0,1013.5,41.3
+Renouvellement de la carte pour perte,2014,21.667,1069.0,42.42
+Renouvellement de la carte pour perte,2015,25.0,1119.5,46.73
+Renouvellement de la carte pour perte,2016,25.0,1161.2,45.06
+Renouvellement de la carte pour perte,2017,25.0,1223.0,42.78
+Renouvellement de la carte pour perte,2018,25.0,1314.2,39.81
+Renouvellement de la carte pour perte,2019,25.0,1403.5,37.28
+Renouvellement de la carte pour perte,2020,25.0,1482.6,35.29
+Renouvellement de la carte pour perte,2021,25.0,1567.2,33.38
+Renouvellement de la carte pour perte,2022,25.0,1697.4,30.82
+Renouvellement de la carte pour perte,2023,25.0,1855.7,28.19
+Renouvellement de la carte pour perte,2024,25.0,1986.0,26.34
+Renouvellement de la carte pour perte,2025,25.0,2092.7,25.0
