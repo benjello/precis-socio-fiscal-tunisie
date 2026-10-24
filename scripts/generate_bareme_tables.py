@@ -1122,6 +1122,8 @@ TEXTES_PLAFONDS.update({
     "fonds": {
         "1992-01-02": (_t("loi de finances pour 1992, art. 31", "قانون المالية لسنة 1992، الفصل 31"),
                        "r-epargne-fonds-1992"),
+        "2002-01-01": (_t("loi de finances pour 2002, art. 21", "قانون المالية لسنة 2002، الفصل 21"),
+                       "r-epargne-fonds-2002"),
         "2021-01-01": (_t("loi de finances pour 2021, art. 17", "قانون المالية لسنة 2021، الفصل 17"),
                        "r-epargne-fonds-2021"),
         "2022-01-01": (_t("décret-loi n° 2021-21, art. 38", "المرسوم عدد 2021-21، الفصل 38"),
