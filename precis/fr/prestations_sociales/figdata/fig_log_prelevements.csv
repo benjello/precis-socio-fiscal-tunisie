@@ -1,15 +1,15 @@
 # Figure-data du précis socio-fiscal tunisien — généré le 2026-10-24
-# séries (tunisia_data) : log-prelevements-fonds
-# sources (citation) : @loi86-106-lf1987, @loi-87-83-lf-1988, @loi88-145-lf1989, @loi-89-115-lf-1990, @dl-2011-56-lfc-2011, @lfc-2012, @lf-2013
-# fiches : 
-# méthode/hypothèses : Montants fixés par les textes, non les sommes effectivement prélevées. Une année sans barre est une année où aucun prélèvement n'a été identifié.
-# note : Prélèvements des lois de finances sur les disponibilités du fonds de promotion du logement pour les salariés, 1987-2013, en millions de dinars courants
-Année,Bénéficiaire,Montant (MD courants),Texte,Page du Journal officiel
-1987,programme national de résorption des logements rudimentaires,5,loi n° 86-106 (LF 1987) art. 96,1624
-1988,programme national de résorption des logements rudimentaires,5,loi n° 87-83 (LF 1988) art. 76,1635
-1989,programme national de résorption des logements rudimentaires,15,loi n° 88-145 (LF 1989) art. 68,1800
-1990,programme national de résorption des logements rudimentaires,15,loi n° 89-115 (LF 1990) art. 46,2151
-2011,Fonds national d'amélioration de l'habitat,20,décret-loi n° 2011-56 (LFC 2011) art. 3,1013
-2011,Compte national de solidarité sociale,20,décret-loi n° 2011-56 (LFC 2011) art. 3,1013
-2012,Fonds national d'amélioration de l'habitat,60,loi n° 2012-1 (LFC 2012) art. 36,927
-2013,Fonds national d'amélioration de l'habitat,60,loi n° 2012-27 (LF 2013) art. 11,5
+# séries (tunisia_data) : log-prelevements-fonds, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @loi86-106-lf1987, @loi-87-83-lf-1988, @loi88-145-lf1989, @loi-89-115-lf-1990, @dl-2011-56-lfc-2011, @lfc-2012, @lf-2013, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Montants fixés par les textes, non les sommes effectivement prélevées. Une année sans barre est une année où aucun prélèvement n'a été identifié., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Prélèvements des lois de finances sur les disponibilités du fonds de promotion du logement pour les salariés, 1987-2013, en millions de dinars courants et en dinars de 2025
+Année,Bénéficiaire,Montant (MD courants),Montant (MD de 2025),Texte,Page du Journal officiel
+1987,programme national de résorption des logements rudimentaires,5,31.6,loi n° 86-106 (LF 1987) art. 96,1624
+1988,programme national de résorption des logements rudimentaires,5,29.5,loi n° 87-83 (LF 1988) art. 76,1635
+1989,programme national de résorption des logements rudimentaires,15,82.1,loi n° 88-145 (LF 1989) art. 68,1800
+1990,programme national de résorption des logements rudimentaires,15,77.1,loi n° 89-115 (LF 1990) art. 46,2151
+2011,Fonds national d'amélioration de l'habitat,20,46.3,décret-loi n° 2011-56 (LFC 2011) art. 3,1013
+2011,Compte national de solidarité sociale,20,46.3,décret-loi n° 2011-56 (LFC 2011) art. 3,1013
+2012,Fonds national d'amélioration de l'habitat,60,131.5,loi n° 2012-1 (LFC 2012) art. 36,927
+2013,Fonds national d'amélioration de l'habitat,60,123.9,loi n° 2012-27 (LF 2013) art. 11,5
