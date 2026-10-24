@@ -42,6 +42,8 @@ SERIE_ALLOCATAIRES = "mas-amen-social-2023-beneficiaires-bruts"
 SERIE_CREDITS = "mas-amen-social-2023-credits-bruts"
 SERIE_PIB = "cnat-pib-nominal"
 SERIE_PNAFN_BM = "pnafn-transfert-smig-banque-mondiale"
+SERIE_ETUDES = "pnafn-montants-etudes"
+SERIE_ALLOCATAIRES_TABLEAU = "amen-social-allocataires-tableau"
 SERIE_SUIVI = "amen-social-effectifs-suivi"
 # Dernière année où le montant du dernier palier est constaté par un texte : l'arrêté conjoint
 # du 10 juillet 2024 dit l'allocation « fixée à 180 dinars » à la date de sa publication.
@@ -79,6 +81,47 @@ figtools.register_provenance(
              "avec l'indice annuel moyen des prix à la consommation."),
     caveats_ar=("لا تزال تواريخ جميع المستويات والمبالغ السابقة لمبلغ 180 دينارًا بحاجة إلى "
                 "توثيق. وتُحسب القوة الشرائية بمؤشر أسعار الاستهلاك السنوي المتوسط."),
+)
+
+
+figtools.register_provenance(
+    SERIE_ETUDES,
+    titre="Montants mensuels de l'allocation du programme national d'aide aux familles nécessiteuses rapportés par des études, des documents et la presse",
+    sources=["mas-bm-ciblage-2021", "bad-2013-subventions-aides-directes",
+             "unicef-2019-garantie-allocation-enfants", "economiste-maghrebin-2018-01-15"],
+    unite="dinars par mois (prix courants)",
+    perimetre=("montants mensuels cités par quatre documents, chacun une famille distincte, "
+               "jamais raccordée à une autre ; aucun ne cite de texte de droit"),
+    caveats=("Quatre familles : le rapport de ciblage de la Banque mondiale pour le ministère "
+             "(2021, p. 50, six montants), la version provisoire du rapport de la BAD et du CRES "
+             "(30 mars 2013, p. 12, 100 dinars en 2012), le rapport du ministère et de l'UNICEF "
+             "(décembre 2019, p. 18, 180 dinars en janvier 2018) et un article de presse "
+             "(15 janvier 2018, propos du ministre et ordre du chef du gouvernement). Aucune ne "
+             "cite le texte qui fixe le montant ; les dates sont celles des documents, au mois ou "
+             "à l'année. Le plafond de 585 dinars de revenu annuel moyen ajusté de la circulaire "
+             "du 27 mai 2011 et les 10 dinars par enfant scolarisé sont d'autres grandeurs : "
+             "hors figure. Le pouvoir d'achat est calculé avec l'indice annuel moyen des prix à "
+             "la consommation de l'année de la date citée."),
+)
+
+
+figtools.register_provenance(
+    SERIE_ALLOCATAIRES_TABLEAU,
+    titre="Allocataires de l'aide monétaire permanente, par date et par source, 2010-2026",
+    sources=["mas-amen-social-2023", "banquemondiale2021pad4414", "banquemondiale2022pad4815",
+             "banquemondiale2026ppiaf000292", "banquemondiale2025isr04716",
+             "banquemondiale2026isr08116"],
+    unite="allocataires (individus ou familles) ou ménages",
+    perimetre=("stocks de décembre 2018 à 2023 du ministère des Affaires sociales et décomptes de "
+               "ménages rapportés par cinq documents de la Banque mondiale, une valeur par ligne "
+               "du tableau « Allocataires de l'aide monétaire permanente, par date et par source »"),
+    caveats=("Deux grandeurs distinctes : des allocataires, individus ou familles, au sens de "
+             "l'arrêté conjoint du 19 mai 2020, pour le ministère, et des ménages pour la Banque "
+             "mondiale, dont les décomptes sont ceux du ministère rapportés ; leurs dates, "
+             "arrêtés au jour, au mois ou à l'année, diffèrent. Chaque document est une famille "
+             "à part, jamais raccordée à une autre. Un même mois d'avril 2026 porte deux totaux "
+             "(386 351 et 387 668) dans le même rapport. Le fichier reprend à l'identique les "
+             "valeurs du tableau du chapitre ; `scripts/verifier_effectifs_tableau.py` le contrôle."),
 )
 
 
@@ -129,8 +172,39 @@ def points_banque_mondiale() -> list[tuple[int, float, float]]:
                   for a, v in zip(df["date_reference"], df["valeur"]))
 
 
-SERIE_CHAPITRE = "Série du chapitre (paliers)"
+SERIE_CHAPITRE = "Série du chapitre (paliers sans texte)"
 SERIE_BANQUE = "Banque mondiale, figure de 2022 (valeur de l'année)"
+ARRETE_2024 = ("arrete-2024-07-10-allocation-pauvres", 2024 + 6.5 / 12)
+
+# Les familles d'études : (libellé, couleur, marque). Chacune a sa couleur et sa marque, et
+# n'est jamais reliée à une autre ni à la série du chapitre.
+VERT_FONCE, CYAN = "#0f766e", "#0891b2"
+FAMILLES = {
+    "ciblage-2021": ("Rapport de ciblage Banque mondiale / ministère, 2021, p. 50", VERT_FONCE, "D"),
+    "bad-cres-2013": ("BAD et CRES, version provisoire de mars 2013, p. 12", ROUGE, "^"),
+    "unicef-2019": ("Ministère et UNICEF, décembre 2019, p. 18", VIOLET, "v"),
+    "presse-2018": ("L'Économiste maghrébin, 15 janvier 2018", CYAN, "P"),
+}
+# Tailles distinctes : à valeur égale (180 D en 2018) les marques s'emboîtent et restent lisibles.
+TAILLES = {"ciblage-2021": 70, "bad-cres-2013": 80, "unicef-2019": 150, "presse-2018": 110}
+FAMILLE_BM2022 = ("Banque mondiale, figure de 2022 (une valeur par année)", BLEU, "s")
+LIBELLE_FAMILLE = {cle: v[0] for cle, v in FAMILLES.items()}
+
+
+def points_etudes() -> list[dict]:
+    """Les montants des études : une ligne par valeur, avec abscisse et pouvoir d'achat."""
+    df = figtools.series(SERIE_ETUDES)
+    ipc = DEFLATEUR.ipc()
+    lignes = []
+    for r in df.itertuples():
+        annee = int(str(r.date_reference)[:4])
+        lignes.append({
+            "famille": r.famille, "date": str(r.date_reference), "precision": r.precision_date,
+            "x": _place(str(r.date_reference), r.precision_date), "courant": float(r.valeur),
+            "reel": float(r.valeur) * ipc[ANNEE_BASE] / ipc[annee], "source": r.source,
+            "page": "" if str(r.page) == "nan" else str(r.page).replace(".0", ""),
+            "citation": r.citation, "remarque": r.remarque, "nature": r.nature})
+    return lignes
 
 
 def table_aide_permanente():
@@ -140,55 +214,125 @@ def table_aide_permanente():
          "Date de l'état": ot.formate_date(d, figtools.lang()),
          "Allocation mensuelle (D courants)": ot.formate_dinars(m),
          f"Pouvoir d'achat (D de {ANNEE_BASE})": ot.formate_dinars(round(r, 1)),
-         "Point de mesure": "Changement de palier" if p else "Repère annuel"}
+         "Point de mesure": "Changement de palier, sans texte" if p else "Repère annuel",
+         "Source": "—"}
         for d, m, r, p in serie_aide_permanente()]
+    ipc = DEFLATEUR.ipc()
+    lignes.append(
+        {"Série": "Arrêté conjoint du 10 juillet 2024",
+         "Date de l'état": "juillet 2024 (publication)",
+         "Allocation mensuelle (D courants)": ot.formate_dinars(180.0),
+         f"Pouvoir d'achat (D de {ANNEE_BASE})": ot.formate_dinars(round(180.0 * ipc[ANNEE_BASE] / ipc[2024], 1)),
+         "Point de mesure": "Montant constaté par un texte", "Source": ARRETE_2024[0]})
     lignes += [
         {"Série": SERIE_BANQUE,
          "Date de l'état": str(a),
          "Allocation mensuelle (D courants)": ot.formate_dinars(m),
          f"Pouvoir d'achat (D de {ANNEE_BASE})": ot.formate_dinars(round(r, 1)),
-         "Point de mesure": "Étiquette de la figure, année entière"}
+         "Point de mesure": "Étiquette de la figure, année entière",
+         "Source": "banquemondiale2022pad4815"}
         for a, m, r in points_banque_mondiale()]
+    lignes += [
+        {"Série": LIBELLE_FAMILLE[q["famille"]],
+         "Date de l'état": _date_lisible(q["date"], q["precision"]),
+         "Allocation mensuelle (D courants)": ot.formate_dinars(q["courant"]),
+         f"Pouvoir d'achat (D de {ANNEE_BASE})": ot.formate_dinars(round(q["reel"], 1)),
+         "Point de mesure": ("Annonce rapportée" if q["nature"] == "annonce"
+                             else "Montant rapporté, sans texte cité"),
+         "Source": q["source"] + (f", p. {q['page']}" if q["page"] else "")}
+        for q in points_etudes()]
     return pd.DataFrame(lignes)
 
 
-def fig_aide_permanente():
+def _place_infobulle(artiste, texte):
+    figtools.infobulle(artiste, texte)
+
+
+def _vue_aide(reel: bool):
+    """Une vue : dinars courants (reel=False) ou pouvoir d'achat en dinars de l'année de base."""
     figtools.apply_lang_font()
     ft = figtools.fig_text
     serie = serie_aide_permanente()
     x = [_abscisse(d) for d, *_ in serie] + [ANNEE_CONSTAT + 0.55]
-    courant = [m for _, m, _, _ in serie] + [serie[-1][1]]
-    reel = [r for _, _, r, _ in serie] + [serie[-1][2]]
-    fig, ax = plt.subplots(figsize=(9.5, 5.4))
-    ax.step(x, courant, where="post", color=GRIS, lw=2, ls=":",
-            label=ft("Série du chapitre : montant courant (paliers à fiabiliser)"))
-    ax.step(x, reel, where="post", color=ORANGE, lw=2, ls="--",
-            label=ft(f"Série du chapitre : pouvoir d'achat (dinars de {ANNEE_BASE})"))
-    paliers = [(xi, m, r) for xi, (_, m, r, p) in zip(x, serie) if p]
-    ax.scatter([p[0] for p in paliers], [p[1] for p in paliers], color=GRIS, s=42, zorder=4)
-    ax.scatter([p[0] for p in paliers], [p[2] for p in paliers], color=ORANGE, marker="D",
-               s=35, zorder=5)
-    # La famille de la Banque mondiale : des points seuls, au milieu de leur année, sans trait.
-    banque = points_banque_mondiale()
-    xb = [a + 0.5 for a, _, _ in banque]
-    ax.scatter(xb, [m for _, m, _ in banque], marker="s", s=46, facecolors="none",
-               edgecolors=BLEU, linewidths=1.5, zorder=6,
-               label=ft("Banque mondiale, figure de 2022 : montant courant (points non reliés)"))
-    ax.scatter(xb, [r for _, _, r in banque], marker="^", s=52, facecolors="none",
-               edgecolors=VIOLET, linewidths=1.5, zorder=6,
-               label=ft(f"Banque mondiale, figure de 2022 : pouvoir d'achat (dinars de {ANNEE_BASE})"))
-    ax.annotate(ft("180 D constatés\nle 10 juillet 2024"),
-                xy=(ANNEE_CONSTAT + 0.5, 180), xytext=(-8, -34), textcoords="offset points",
-                ha="right", va="top", fontsize=8, color="#57606a",
-                arrowprops={"arrowstyle": "-", "color": "#57606a", "lw": 0.8})
+    idx = 2 if reel else 1
+    y = [ligne[idx] for ligne in serie] + [serie[-1][idx]]
+    fig, ax = plt.subplots(figsize=(9.8, 5.8))
+    ax.step(x, y, where="post", color=GRIS, lw=1.6, ls=":",
+            label=ft("Série du chapitre : paliers sans texte (marque creuse)"), zorder=2)
+    for xi, (d, m, r, est_palier) in zip(x, serie):
+        if not est_palier:
+            continue
+        v = r if reel else m
+        pt = ax.scatter([xi], [v], facecolors="white", edgecolors=GRIS, marker="o", s=44,
+                        linewidths=1.6, zorder=4)
+        _place_infobulle(pt, f"Palier de la série du chapitre, sans texte : {_fr(m, 1)} D "
+                             f"depuis le {ot.formate_date(d, 'fr')}"
+                             + (f" ; {_fr(r, 1)} D de {ANNEE_BASE}" if reel else ""))
+    # Le seul montant constaté par un texte : l'arrêté conjoint du 10 juillet 2024.
+    ipc = DEFLATEUR.ipc()
+    v24 = 180.0 * ipc[ANNEE_BASE] / ipc[2024] if reel else 180.0
+    pt = ax.scatter([ARRETE_2024[1]], [v24], color="#24292f", marker="s", s=58, zorder=7,
+                    label=ft("Montant constaté par un texte : arrêté conjoint du 10 juillet 2024"))
+    _place_infobulle(pt, "Arrêté conjoint du 10 juillet 2024 : allocation fixée à 180 D à la "
+                         "date de sa publication")
+    # La famille de la Banque mondiale de 2022 : points seuls, au milieu de leur année.
+    lib, coul, marque = FAMILLE_BM2022
+    for a, m, r in points_banque_mondiale():
+        v = r if reel else m
+        pt = ax.scatter([a + 0.5], [v], marker=marque, s=46, facecolors="none", edgecolors=coul,
+                        linewidths=1.5, zorder=6)
+        _place_infobulle(pt, f"{lib} : {_fr(m, 1)} D en {a}")
+    ax.scatter([], [], marker=marque, s=46, facecolors="none", edgecolors=coul, linewidths=1.5,
+               label=ft(lib))
+    # Chaque étude : sa couleur, sa marque, jamais reliée.
+    pts = points_etudes()
+    for cle, (lib, coul, marque) in FAMILLES.items():
+        for q in [q for q in pts if q["famille"] == cle]:
+            v = q["reel"] if reel else q["courant"]
+            pt = ax.scatter([q["x"]], [v], marker=marque, s=TAILLES[cle], facecolors="none",
+                            edgecolors=coul, linewidths=1.6, zorder=6)
+            _place_infobulle(pt, f"{lib} : {_fr(q['courant'], 1)} D "
+                                 f"({_date_lisible(q['date'], q['precision'])})"
+                                 + (f" ; {_fr(q['reel'], 1)} D de {ANNEE_BASE}" if reel else ""))
+        ax.scatter([], [], marker=marque, s=60, facecolors="none", edgecolors=coul,
+                   linewidths=1.6, label=ft(lib))
+    # Deux dates qui divergent : repère et infobulle.
+    ax.set_ylim(0, max(ax.get_ylim()[1], 0) * 1.08)
+    ymax = ax.get_ylim()[1]
+
+    def repere(x0, x1, montant, texte, bulle, frac):
+        def v(m, xx):
+            return m * ipc[ANNEE_BASE] / ipc[int(xx)] if reel else m
+        y0, y1 = v(montant, x0), v(montant, x1)
+        seg, = ax.plot([x0, x1], [y0, y1], color="#57606a", lw=1.6, zorder=3)
+        _place_infobulle(seg, bulle)
+        ax.annotate(ft(texte), xy=((x0 + x1) / 2, (y0 + y1) / 2), xytext=(2016.2, frac * ymax),
+                    textcoords="data", ha="left", va="center", fontsize=7.8, color="#57606a",
+                    arrowprops={"arrowstyle": "-", "color": "#8c959f", "lw": 0.6})
+    repere(2014.5, 2015.0, 150, "150 D : 2014 (rapport de ciblage)\nou 1er janvier 2015 (série)",
+           "150 D : l'année 2014 selon le rapport de ciblage, le 1er janvier 2015 selon la "
+           "série du chapitre ; aucun texte ne tranche", 0.56)
+    repere(2018 + 1.5 / 12, 2018.25, 180, "180 D : février 2018 (rapport de ciblage)\n"
+           "ou 1er avril 2018 (série)",
+           "180 D : février 2018 selon le rapport de ciblage, le 1er avril 2018 selon la série "
+           "du chapitre ; aucun texte ne tranche", 0.38)
     ax.set_xlim(1986, ANNEE_CONSTAT + 1.5)
-    ax.set_ylim(0, None)
-    ax.set_ylabel(ft(f"Dinars par mois (courants et constants de {ANNEE_BASE})"))
+    unite = f"Dinars par mois de {ANNEE_BASE}" if reel else "Dinars courants par mois"
+    ax.set_ylabel(ft(unite))
     ax.set_xlabel(ft("Année"))
     ax.grid(True, alpha=0.3)
-    ax.legend(loc="upper left", fontsize=8)
+    ax.legend(loc="upper left", fontsize=7.8)
     fig.tight_layout()
     return fig
+
+
+def vues_aide_permanente():
+    return [("Dinars courants", _vue_aide(False)),
+            (f"Pouvoir d'achat (dinars de {ANNEE_BASE})", _vue_aide(True))]
+
+
+def fig_aide_permanente():
+    return _vue_aide(False)
 
 
 # --- les allocataires du transfert mensuel, 2018-2023 -----------------------------------------
@@ -209,37 +353,81 @@ def donnees_allocataires() -> dict[str, dict[int, float]]:
     }
 
 
+# Une famille par document : (libellé, couleur, marque). Les décomptes de ménages de la Banque
+# mondiale ont une marque creuse, les allocataires du ministère un trait plein.
+PIECES_MENAGES = {
+    "banquemondiale2021pad4414": ("Banque mondiale, document d'évaluation, mars 2021", VERT, "D"),
+    "banquemondiale2022pad4815": ("Banque mondiale, financement additionnel, mars 2022", ROUGE, "^"),
+    "banquemondiale2026ppiaf000292": ("Banque mondiale, second financement additionnel, mars 2026",
+                                      VIOLET, "v"),
+    "banquemondiale2025isr04716": ("Banque mondiale, rapport d'exécution, novembre 2025",
+                                   "#0891b2", "P"),
+    "banquemondiale2026isr08116": ("Banque mondiale, rapport d'exécution, juillet 2026",
+                                   ORANGE, "X"),
+}
+
+
+def donnees_tableau() -> list[dict]:
+    """Les lignes du tableau des allocataires : une valeur, sa date, sa grandeur, sa source."""
+    df = figtools.series(SERIE_ALLOCATAIRES_TABLEAU)
+    lignes = []
+    for r in df.itertuples():
+        d = str(r.date_reference)
+        lignes.append({"date": d, "precision": r.precision_date, "x": _place(d, r.precision_date),
+                       "grandeur": r.grandeur, "valeur": float(r.valeur), "unite": r.unite,
+                       "source": r.source, "emplacement": r.emplacement})
+    return sorted(lignes, key=lambda q: (q["x"], q["grandeur"], q["valeur"]))
+
+
 def table_allocataires():
+    """Onglet Données : toutes les valeurs du tableau, puis les flux de la seconde vue."""
     import pandas as pd
+    lignes = [{"Date": _date_lisible(q["date"], q["precision"]),
+               "Grandeur": ("Allocataires selon le ministère (individus ou familles)"
+                            if q["grandeur"] == "allocataires_ministere"
+                            else "Ménages selon la Banque mondiale"),
+               "Valeur": _fr(q["valeur"]),
+               "Source": f"{q['source']}, {q['emplacement']}"} for q in donnees_tableau()]
     d = donnees_allocataires()
-
-    def cellule(cle, annee):
-        return _fr(d[cle][annee]) if annee in d[cle] else "—"
-
-    return pd.DataFrame([
-        {"Année": str(a),
-         "Allocataires en décembre (individus ou familles)": cellule("stock", a),
-         "Entrées de l'année": cellule("entrees", a),
-         "Sorties de l'année": cellule("sorties", a),
-         "Solde": cellule("solde", a)}
-        for a in sorted(d["stock"])])
+    for cle, nom in (("entrees", "Entrées de l'année (ministère)"),
+                     ("sorties", "Sorties de l'année (ministère)"),
+                     ("solde", "Solde de l'année (ministère)")):
+        lignes += [{"Date": str(a), "Grandeur": nom, "Valeur": _fr(d[cle][a]),
+                    "Source": "mas-amen-social-2023, tabl. 4 et 13"} for a in sorted(d[cle])]
+    return pd.DataFrame(lignes)
 
 
 def _fig_stock():
     figtools.apply_lang_font()
     ft = figtools.fig_text
-    stock = donnees_allocataires()["stock"]
-    annees = sorted(stock)
-    fig, ax = plt.subplots(figsize=(9.5, 4.8))
-    ax.plot(annees, [stock[a] / 1000 for a in annees], color=BLEU, lw=2, marker="o")
-    for a in annees:
-        ax.annotate(_fr(stock[a]), xy=(a, stock[a] / 1000), xytext=(0, 8),
-                    textcoords="offset points", ha="center", fontsize=8.5, color=BLEU)
-    ax.set_ylim(0, max(stock.values()) / 1000 * 1.15)
-    ax.set_xticks(annees)
-    ax.set_ylabel(ft("Allocataires en décembre (milliers)"))
-    ax.set_xlabel(ft("Année"))
+    q = donnees_tableau()
+    fig, ax = plt.subplots(figsize=(10, 5.4))
+    mini = [r for r in q if r["grandeur"] == "allocataires_ministere"]
+    ax.plot([r["x"] for r in mini], [r["valeur"] / 1000 for r in mini], color=BLEU, lw=2,
+            zorder=3, label=ft("Ministère des Affaires sociales : allocataires en décembre "
+                               "(individus ou familles)"))
+    for r in mini:
+        pt = ax.scatter([r["x"]], [r["valeur"] / 1000], color=BLEU, s=34, zorder=5)
+        figtools.infobulle(pt, f"Ministère, {_date_lisible(r['date'], r['precision'])} : "
+                               f"{_fr(r['valeur'])} allocataires")
+        ax.annotate(_fr(r["valeur"]), xy=(r["x"], r["valeur"] / 1000), xytext=(0, 8),
+                    textcoords="offset points", ha="center", fontsize=8, color=BLEU)
+    for cle, (lib, coul, marque) in PIECES_MENAGES.items():
+        pts = [r for r in q if r["source"] == cle]
+        for r in pts:
+            pt = ax.scatter([r["x"]], [r["valeur"] / 1000], marker=marque, s=70,
+                            facecolors="none", edgecolors=coul, linewidths=1.7, zorder=6)
+            figtools.infobulle(pt, f"{lib}, {_date_lisible(r['date'], r['precision'])} : "
+                                   f"{_fr(r['valeur'])} ménages ({r['emplacement']})")
+        ax.scatter([], [], marker=marque, s=70, facecolors="none", edgecolors=coul,
+                   linewidths=1.7, label=ft(f"{lib} : ménages"))
+    ax.set_ylim(0, max(r["valeur"] for r in q) / 1000 * 1.15)
+    ax.set_xlim(2009.3, 2027.2)
+    ax.set_xticks(range(2010, 2027, 2))
+    ax.set_ylabel(ft("Allocataires ou ménages (milliers)"))
+    ax.set_xlabel(ft("Date du décompte"))
     ax.grid(True, alpha=0.3)
+    ax.legend(loc="upper left", fontsize=7.8)
     fig.tight_layout()
     return fig
 

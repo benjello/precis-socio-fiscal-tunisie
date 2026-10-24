@@ -1,5 +1,5 @@
-series: [mas-amen-social-2023-beneficiaires-bruts]
-sources: [mas-amen-social-2023]
+series: [mas-amen-social-2023-beneficiaires-bruts, amen-social-allocataires-tableau]
+sources: [mas-amen-social-2023, banquemondiale2021pad4414, banquemondiale2022pad4815, banquemondiale2026ppiaf000292, banquemondiale2025isr04716, banquemondiale2026isr08116]
 fiches: [sources/mas-amen-social-2023.md]
-caveats: [Trois totaux de bénéficiaires en 2023 selon les pages : 337 178 (texte), 337 199 (tableau des flux), 337 200 (répartition et score). Stock 2022 du classement inférieur de 4 au tableau des flux. Les colonnes d'âge du tableau des aides aux enfants ne sont pas sommées à la place du total publié.]
-generated: 2026-10-09
+caveats: [Trois totaux de bénéficiaires en 2023 selon les pages : 337 178 (texte), 337 199 (tableau des flux), 337 200 (répartition et score). Stock 2022 du classement inférieur de 4 au tableau des flux. Les colonnes d'âge du tableau des aides aux enfants ne sont pas sommées à la place du total publié., Deux grandeurs distinctes : des allocataires, individus ou familles, au sens de l'arrêté conjoint du 19 mai 2020, pour le ministère, et des ménages pour la Banque mondiale, dont les décomptes sont ceux du ministère rapportés ; leurs dates, arrêtés au jour, au mois ou à l'année, diffèrent. Chaque document est une famille à part, jamais raccordée à une autre. Un même mois d'avril 2026 porte deux totaux (386 351 et 387 668) dans le même rapport. Le fichier reprend à l'identique les valeurs du tableau du chapitre ; `scripts/verifier_effectifs_tableau.py` le contrôle.]
+generated: 2026-10-24

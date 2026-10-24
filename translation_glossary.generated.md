@@ -295,6 +295,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Fonds de protection sociale des travailleuses agricoles | صندوق الحماية الاجتماعية للعاملات الفلاحيات |  |
 | Fonds de réserve | صندوق الاحتياط |  |
 | Fonds de sécurité sociale | صناديق الضمان الاجتماعي |  |
+| Fonds de solidarité nationale | صندوق التضامن الوطني |  |
 | Fonds de transition énergétique | صندوق الانتقال الطاقي |  |
 | Fonds national d'amélioration de l'habitat | الصندوق الوطني لتحسين السكن | FNAH |
 | Fonds national de l'emploi | الصندوق الوطني للتشغيل | FNE |
