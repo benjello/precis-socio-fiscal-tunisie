@@ -172,7 +172,12 @@ PAQUETS = {
         # des montants du gluten, des tarifs des alcools et des quatre tableaux du volume
         # « Santé » ne pourraient être engendrés. Aucun chemin déjà lu ne bouge. La borne
         # passe à la 0.147.
-        "version_minimale": (0, 147),
+        # La 0.148 date au 1er janvier 2002 l'extension de la retenue définitive aux fonds
+        # communs de placement en valeurs mobilières (openfisca-tunisia PR #508 ; loi de
+        # finances pour 2002, art. 21) : en deçà, le tableau `irpp_epargne_fonds` n'a pas
+        # sa ligne de 2002 et sortirait différent de celui que la CI régénère. La borne passe
+        # à la 0.148, publiée le 24 octobre 2026.
+        "version_minimale": (0, 148),
     },
 }
 
