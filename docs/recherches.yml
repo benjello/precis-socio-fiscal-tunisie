@@ -3980,8 +3980,14 @@
     couverture: 'miroir iort (textes/md), termes arabes « الإجراءات الاستثنائية للإحالة », « تمويل الإجراءات الاستثنائية » : lois de finances et de règlement, aucun décret ; plein texte des fascicules français 2009-2017 du corpus local, expression « mesures exceptionnelles de (la) mise (à|en) la retraite » : lois de finances (tableau B), décret n° 2011-932, aucun autre décret ; plein texte arabe 2013-2016 (829 fascicules arabes de 2009 à 2016 parcourus après normalisation des formes de présentation) : occurrences dans les seuls tableaux des lois de finances, aucun décret ; plein texte arabe 2009-2012 : le même parcours ne retrouve ni le décret n° 2011-932 ni les tableaux des lois de finances, dont les fascicules ne portent pas de couche texte arabe exploitable, de sorte que cette recherche ne vaut rien pour ces années ; quatre fascicules arabes de 2015 (n° 53, 57, 64, 67) sans texte. Non couverts : une quinzaine de fascicules français de 2009-2014 de moins de 20 Ko sans couche texte complète (JORT 2009 n° 101 ; 2011 n° 8 à 11, 24 ; 2012 n° 4, 7, 11, 13, 14, 22, 34 ; 2013 n° 104 ; 2014 n° 59), fascicules arabes de 2009 à 2012, années 2018-2024 en plein texte.'
     couvert_jusqu_au: 2017-12-31
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local, iort]
+    couverture: 'plein texte des quinze fascicules français de 2009-2014 qui n''avaient pas de couche texte complète (JORT 2009 n° 101 ; 2011 n° 8 à 11 et 24 ; 2012 n° 4, 7, 11, 13, 14, 22 et 34 ; 2013 n° 104 ; 2014 n° 59), océrisés à l''image (tesseract, français) et parcourus pour « exceptionnelles », « mise à la retraite », « tabac », « 2009-40 » : aucun décret de pourcentages (fascicules de nominations, arrêtés et décrets sans rapport). Les articles des lois de finances 2011 (loi n° 2010-58), 2012 (loi n° 2011-7) et du décret-loi n° 2011-56 ne portent que les lignes du tableau B, sans pourcentage. Non couverts : fascicules arabes de 2009 à 2012, sans couche texte exploitable et sans océrisation arabe pratiquée ici ; années 2018-2024 en plein texte.'
+    couvert_jusqu_au: 2017-12-31
+    resultat: aucun
   a_faire:
-  - océriser les fascicules français sans couche texte listés ci-dessus et les fascicules arabes de 2009 à 2012 ; parcourir le plein texte de 2018 à 2024
+  - océriser en arabe les fascicules de 2009 à 2012 (tessdata `ara` du dépôt PDFs-legislation-tunisie) ; parcourir le plein texte de 2018 à 2024
 
 - id: r-cnrps-compte-retraite-avant-age-2009-depenses
   objet: dépenses et exécution du compte de financement des mesures exceptionnelles de mise à la retraite (loi n° 2009-40, art. 2 à 4), pensions et contributions imputées, de 2009 à son abrogation par la loi de finances pour 2025
@@ -4001,6 +4007,42 @@
     resultat: aucun
   a_faire:
   - chercher les annexes des lois de règlement (tableaux des dépenses des fonds spéciaux) hors du JORT ; rapports de la Cour des comptes sur les lois de règlement 2009-2020 ; archives du ministère des finances (comptes de fin d'année)
+
+- id: r-cnrps-convention-retraite-avant-age-2009
+  objet: convention entre le ministre des finances et le président-directeur général de la CNRPS réglant le transfert des pensions et contributions des agents mis à la retraite avant l'âge légal (décret n° 2009-2085, art. 8, al. 2) et convention équivalente du décret gouvernemental n° 2017-825 (art. 8)
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-retraite-avant-age-2009]
+  requetes:
+    titres_fts: [convention AND "caisse nationale de retraite"]
+    titres_like: ['%convention%transfert%pensions%', '%convention%mise a la retraite avant%']
+    iort_ar: [اتفاقية, الإحالة على التقاعد قبل السن القانونية]
+    depuis: 2009-07-20
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache (notices jusqu''au 2 octobre 2026), titres français (FTS, LIKE ; « convention » joint à « caisse nationale de retraite » ou « CNRPS », toutes années) et arabes (LIKE « اتفاقية » joint à « التقاعد » ou « الصندوق الوطني للتقاعد », toutes années) : seules répondent les conventions relatives à la régularisation de l''amnistie générale (décret n° 2014-10 et décret gouvernemental n° 2019-40), sans rapport ; miroir iort : les décrets n° 2009-2085 et n° 2011-932 ne renvoient à aucun texte approuvant la convention. Une convention approuvée par décret figurerait au JORT sous un décret « portant approbation de la convention » : aucun pour ce sujet. Non couvert : texte des conventions non publiées (archives de la CNRPS et du ministère des finances).'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - demander à la CNRPS ou au ministère des finances si les conventions de 2009 et de 2017 existent, et sous quelle forme ; rejouer les termes arabes sur le plein texte arabe de 2009-2010 après océrisation
+
+- id: r-decret-85-614-sort
+  objet: texte abrogeant, modifiant ou visant le décret n° 85-614 du 18 avril 1985 (limite d'âge de certains magistrats de l'ordre judiciaire) après la loi organique n° 88-73 du 2 juillet 1988
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-magistrats]
+  requetes:
+    titres_fts: ['"limites d age" AND magistrats']
+    titres_like: ['%85-614%', '%limites d age de certains magistrats%']
+    iort_ar: [حدود سن بعض القضاة]
+    plein_texte: [85-614]
+    depuis: 1988-07-08
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache (notices jusqu''au 2 octobre 2026), LIKE « %85-614% » sur titre et objet et FTS « limites d age » joint à « magistrats » : le seul texte portant ce numéro est le décret lui-même ; miroir iort (32 118 textes, grep « 85-614 » sur le texte entier) : seul le décret lui-même contient la chaîne. Les textes modifiant la loi n° 67-29 de 1988 à 2016 (lois organiques n° 88-73, 91-9, 2005-81, 2012-13, 2016-34) ont été lus : aucun ne vise le décret. Non couvert : plein texte des fascicules du corpus local, arabes comme français.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [parcourir le plein texte français des fascicules de 1988 à 2026 pour « 85-614 »]
 
 - id: r-banque-donnees-2014-1526-suite
   objet: texte prolongeant à nouveau, modifiant ou abrogeant le décret n° 2014-1526 (unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité) après le décret gouvernemental n° 2018-626, dont la prolongation d'un an court jusque vers mai 2019

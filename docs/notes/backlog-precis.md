@@ -769,22 +769,35 @@ liste qui suit le tableau, citations comprises. Restent :
     pour des motifs économiques ; recettes prévues du compte (tableaux « B » 2009-2013) et excédents transférés au budget
     (lois de règlement, gestions 2015-2018) ; page de l'avis n° 27-2009 : non relevée (TODO conservé).
   - **Reste, lisible au corpus ou à océriser** : pourcentages d'affectation de 2009, 2011 et 2012 (fiche
-    `r-cnrps-fonds-retraite-avant-age-2009-taux` : une quinzaine de fascicules français sans couche texte complète à océriser,
-    fascicules arabes de 2013 à 2016) ; dépenses du compte (fiche `r-cnrps-compte-retraite-avant-age-2009-depenses` : annexes des
+    `r-cnrps-fonds-retraite-avant-age-2009-taux` : les quinze fascicules français sans couche texte ont été océrisés le 24 octobre
+    2026, aucun décret de pourcentages ; reste l'océrisation arabe des fascicules de 2009 à 2012, tessdata `ara` du dépôt
+    PDFs-legislation-tunisie ; les lois de finances 2011, 2012 et le décret-loi n° 2011-56 ne portent que le tableau B) ; dépenses du compte (fiche `r-cnrps-compte-retraite-avant-age-2009-depenses` : annexes des
     lois de règlement) ; relecture à l'image des art. 9 à 13 du décret n° 2022-542 ; ligne « 2009-39 » du guide statistique 2000-2010
     et page de la valeur 2 686 du guide 2010-2014 ; rectificatifs du décret n° 82-1030 et de la loi n° 81-6 (scans locaux, pages à identifier).
   - **Reste, à obtenir** : exposé des motifs et débats des chambres (30 juin et 4 juillet 2009 ; 3 mars 1987) ; convention entre
-    le ministre des finances et la CNRPS (décret n° 2009-2085, art. 8) et convention du décret n° 2017-825 (art. 8) ; arrêté du
+    le ministre des finances et la CNRPS (décret n° 2009-2085, art. 8) et convention du décret n° 2017-825 (art. 8) (fiche
+    `r-cnrps-convention-retraite-avant-age-2009` : aucune approbation par décret au JORT ; à demander à la CNRPS ou au ministère
+    des finances) ; arrêté du
     Premier ministre fixant le contingent de 1987 ; nombre de départs de 2017-2021 et de 2022-2025 ; décision sur la bonification
     et le plafond du taux de liquidation (question de droit non tranchée par les textes).
 - **Magistrats de l'ordre judiciaire : limite d'âge (24 octobre 2026)** (`#sec-cnrps-magistrats`) : décret n° 85-614 (JORT n° 32, p. 599),
   loi organique n° 85-79, art. 43 nouveau (JORT n° 59, p. 1024), loi organique n° 88-73 (JORT n° 47, p. 1019), d'après
   `docs/notes/regimes-speciaux-magistrats-2026-10-23.md` ; loi n° 2019-37 relue en entier : aucune disposition propre aux
-  magistrats. **Reste** : sort du décret n° 85-614 après 1988 ; texte en vigueur de l'art. 42 de la loi n° 67-29 depuis la loi
-  organique n° 2016-34 ; limites d'âge du Tribunal administratif (décret n° 73-459) et de la Cour des comptes (décret n° 74-820).
-- **Reste à porter au livre (hors de la liste de cette passe)** : LF 1988 art. 60-61 et loi n° 2005-55 (anciens présidents, Premiers
-  ministres, présidents des chambres), LF 1989 art. 75-76, loi n° 2015-39 ; décret-loi n° 2011-48 (contribution de l'employeur des
-  membres du gouvernement et des gouverneurs) ; décret-loi n° 2020-30 du 10 juin 2020.
+  magistrats. **Fait le 24 octobre 2026** : limites d'âge du Tribunal administratif
+  (décret n° 73-459, JORT n° 37/1973, p. 1532) et de la Cour des comptes (décret n° 74-820, JORT n° 55/1974, p. 1919), lues à l'image,
+  65 ans ; loi organique n° 2016-34 (art. 53, 78, 80) ; les lois organiques n° 91-9, 2005-81 et 2012-13 ne touchent pas l'art. 42 de
+  la loi n° 67-29. **Reste** : sort du décret n° 85-614 après 1988 (fiche `r-decret-85-614-sort`, plein texte des fascicules à
+  parcourir) ; texte consolidé de l'art. 42 ; limites d'âge propres éventuelles de la loi organique n° 72-67 et du décret-loi n° 70-6 ;
+  pensions des magistrats.
+- **Régimes spéciaux (députés, gouvernement, gouverneurs, Constituante) : portés au livre le 24 octobre 2026** (`#sec-cnrps-regimes-speciaux`) :
+  LF 1989 art. 75-76 (JORT n° 87/1988, p. 1800, lue à l'image), loi n° 2005-54, loi n° 2015-39 (membres de l'Assemblée constituante, JORT
+  n° 79/2015, pp. 2371-2372), décret-loi n° 2011-48 (contribution de l'employeur, +1 point au 1er juillet 2011), LF 2026 art. 102-103
+  (nouveaux art. 3 et 5 de la loi n° 85-16, effet au 13 mars 2023, p. 4257 de l'édition arabe), loi n° 83-31 art. 8 à 10 et loi n° 88-16 art. 6
+  (lues à l'image). **Reste** : loi n° 88-101 (texte arabe seul au miroir, à lire à l'image) ; textes de la retenue et de la contribution de
+  l'art. 5 de la loi n° 85-16 entre 1985 et 2023 ; LF 1988 art. 60-61 et loi n° 2005-55 (anciens présidents, Premiers ministres,
+  présidents des chambres : avantages en nature, relevant plutôt du livre « Rémunérations publiques » où `loi2005-55` existe) ;
+  décret-loi n° 2020-30 du 10 juin 2020 ; régime des assemblées postérieures à 2014 (aucun texte identifié, fiche
+  `r-indemnite-parlementaire-decret`).
   Les rectificatifs du décret n° 82-1030 et de la loi n° 81-6 restent à relire sur les scans locaux après identification exacte
   des pages : un numéro peut avoir des homonymes.
 - **Barème d'actualisation — coefficients relevés.** Les 31 arrêtés de 1994 à 2024
@@ -823,8 +836,6 @@ liste qui suit le tableau, citations comprises. Restent :
   | article 32 de la loi n° 85-12 | repère de 60 → 62 ans exécutoire le 5 mai 2019 ; les autres distinctions entre colonnes restent des règles |
 
   Les conditions d'âge, d'études et de ressources de la pension d'orphelin restent à la main.
-- **Régimes spéciaux** : le décret-loi n° 2011-48 relève aussi la contribution de
-  l'employeur pour les membres du gouvernement et les gouverneurs ; le chapitre ne le dit pas.
 
 - **Tableaux de paramètres engendrés (recension du 2 octobre, lots 1a à 1c) — fait le
   3 octobre 2026** : trois tableaux faits main remplacés par des tableaux mixtes engendrés
