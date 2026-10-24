@@ -1858,6 +1858,28 @@
       "title-short": "BAD, Subventions et aides directes (2013)"
     },
     {
+      "id": "mf-budget-actualise-2012",
+      "type": "report",
+      "note": "citation-key: mf-budget-actualise-2012\nRapport en arabe, 80 p., avril 2012, accompagnant la loi de finances complémentaire pour 2012. Texte lu par la couche texte du PDF le 24 octobre 2026 : exposé (relèvement de 50 000 du nombre de familles nécessiteuses, 35 MD) et tableau des dépenses d'intervention (« منح للعائلات المعوزة », 106 MD). Copie locale tunisia-data/data/raw/minfinances/portail_ancien/lois_finances/2012-04_rapport_projet_budget_etat_actualise_2012_ar.pdf, SHA-256 a14484f7fd97afafcae67e4e38ac8a01bf7589b1ec5fc6a2499c956bd29cd0a3. Titre français traduit de travail.",
+      "title": "تقرير حول مشروع ميزانية الدولة المحينة لسنة 2012 [Rapport sur le projet de budget actualisé de l'État pour 2012]",
+      "author": [
+        {
+          "literal": "Ministère des Finances"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            4
+          ]
+        ]
+      },
+      "URL": "http://dev.finances.gov.tn/old/portail/publications/-E-A-O-A-O-E-2012.pdf",
+      "language": "ar",
+      "title-short": "Rapport sur le budget actualisé de l'État pour 2012"
+    },
+    {
       "id": "mas-amen-social-2022",
       "type": "report",
       "note": "citation-key: mas-amen-social-2022\nRapport administratif du ministère, 29 p., en arabe. Date de publication non portée par le document : l'année est celle de l'exercice ; mis en ligne en septembre 2025 d'après le chemin du fichier. Obtenu par les archives du web (capture du 14 décembre 2025), adresse vérifiée le 10 octobre 2026 (réponse 200, 1 331 863 octets, taille de la copie locale) ; copie locale tunisia-data/data/raw/caisses/mas/amen_social_suivi_evaluation_2022_ar.pdf, SHA-256 518382ce8a6741f07a798c78caeae81142e21a95f79b865763c8e44f75dfa197. Pages lues à l'image : 17 à 19 seulement (score et déciles, tableau 4 ; circulaire n° 12 ; cartes de soins électroniques) ; chapitres III et IV (p. 20-26) non lus. P. 18 : le classement parmi les ménages les plus pauvres rend éligible au transfert mensuel, sous réserve des conditions préalables ; p. 19 : la circulaire n° 12 fixe les règles de ciblage du transfert ; la distribution des cartes de soins électroniques a commencé en 2022. Une seconde version, « تقرير نشاط لسنة 2022 », 29 p., texte différent, est rangée à côté et n'a pas été comparée. Nom du service traduit de l'en-tête arabe (traduction de travail).",
@@ -3284,7 +3306,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/1977/1977F/Jo07677.pdf",
-      "note": "citation-key: decret77-926\nJORT n° 76 du 18 novembre 1977, pp. 3186-3188. Fascicule scanné, océrisé le 24 octobre 2026 (OCR à 220 dpi, texte vérifié sur l'image pour les art. 1er, 8, 9, 15 et 16 ; art. 11 à 14 et 17 à fin non lus)."
+      "note": "citation-key: decret77-926\nJORT n° 76 du 18 novembre 1977, pp. 3186-3188. Fascicule scanné, océrisé le 24 octobre 2026 (OCR à 220 dpi, texte lu en entier, art. 1er à 19 ; art. 14 lu partiellement)."
     },
     {
       "id": "decret92-1818",
@@ -3364,7 +3386,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/1974/1974F/Jo02474.pdf",
-      "note": "citation-key: decret74-223\nJORT n° 24 du 29 mars 1974, pp. 668-669. Fascicule scanné, océrisé le 24 octobre 2026, art. 1er à 17 lus ; suite non lue. Le décret n° 74-224 de la même page (organisation de la Caisse nationale d'épargne-logement) n'est pas lu."
+      "note": "citation-key: decret74-223\nJORT n° 24 du 29 mars 1974, pp. 668-669. Fascicule scanné, océrisé le 24 octobre 2026, art. 1er à 24 lus."
     },
     {
       "id": "loi73-21",
@@ -3404,7 +3426,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/1974/1974F/Jo00674.pdf",
-      "note": "citation-key: decret74-33\nJORT n° 6 du 25 janvier 1974, pp. 173-175. Fascicule scanné, océrisé le 24 octobre 2026, art. 1er à 5 lus ; suite non lue. Abrogé par le décret gouvernemental n° 2021-327, art. 27."
+      "note": "citation-key: decret74-33\nJORT n° 6 du 25 janvier 1974, pp. 173-175. Fascicule scanné, océrisé le 24 octobre 2026, art. 1er à 13 lus, dont les art. 8 à 12 (vente et cahier des charges) ; suite non lue. Abrogé par le décret gouvernemental n° 2021-327, art. 27."
     },
     {
       "id": "decret87-709",
@@ -3444,7 +3466,287 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/1987/1987F/Jo03487.pdf",
-      "note": "citation-key: arrete1987-05-02-contribution-salaries\nJORT n° 34 du 12 mai 1987, pp. 648-650. Fascicule scanné, océrisé le 24 octobre 2026 (200 dpi) ; art. 1er à 6 lus ; l'annexe (modalités de calcul et de recouvrement) n'est pas lue."
+      "note": "citation-key: arrete1987-05-02-contribution-salaries\nJORT n° 34 du 12 mai 1987, pp. 648-650. Fascicule scanné, océrisé le 24 octobre 2026 (200 dpi) ; art. 1er à 6 et annexe (secteur public, calcul et recouvrement) lus."
+    },
+    {
+      "id": "decret2007-535",
+      "type": "legislation",
+      "title": "Décret n° 2007-535 du 12 mars 2007, fixant les modalités et les conditions de gestion du fonds national d'amélioration de l'habitat",
+      "title-short": "Décret n° 2007-535 du 12 mars 2007",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "24",
+      "page": "978-980",
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            3,
+            12
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2007/2007F/Jo0242007.pdf",
+      "note": "citation-key: decret2007-535\nJORT n° 24 du 23 mars 2007, pp. 978-980. Couche texte de l'édition française, lu le 24 octobre 2026, art. 1er à 5."
+    },
+    {
+      "id": "decret2015-152",
+      "type": "legislation",
+      "title": "Décret n° 2015-152 du 12 mai 2015, modifiant le décret n° 2012-1225 du 10 août 2012, portant création d'une unité de gestion par objectifs pour la réalisation du programme spécifique du logement social et fixant son organisation et les modalités de son fonctionnement",
+      "title-short": "Décret n° 2015-152 du 12 mai 2015",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "40",
+      "page": "1004-1006",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            12
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2015/2015F/Jo0402015.pdf",
+      "note": "citation-key: decret2015-152\nJORT n° 40 du 19 mai 2015, pp. 1004-1006. Couche texte de l'édition française, lu le 24 octobre 2026, art. 1er (art. 3 et 5 nouveaux du décret n° 2012-1225). Le numéro 2015-152 désigne aussi, dans le miroir de l'IORT, une nomination du 2 janvier 2015 : ne pas confondre."
+    },
+    {
+      "id": "decret-gouv2016-1125",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2016-1125 du 22 août 2016, modifiant et complétant le décret n° 2007-534 du 12 mars 2007, fixant les conditions d'octroi des prêts et subventions par le fonds national d'amélioration de l'habitat",
+      "title-short": "Décret gouvernemental n° 2016-1125 du 22 août 2016",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "71",
+      "page": "2775-2779",
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            22
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2016/2016F/Jo0712016.pdf",
+      "note": "citation-key: decret-gouv2016-1125\nJORT n° 71 du 30 août 2016, pp. 2775-2779. Texte français du miroir de l'IORT et couche texte du fascicule, lu le 24 octobre 2026. Art. 1er : art. 2, 4 à 9 et 13 à 17 remplacés ; art. 2 : art. 15 bis."
+    },
+    {
+      "id": "decret-gouv2017-840",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2017-840 du 26 juillet 2017, modifiant le décret n° 77-926 du 10 novembre 1977, portant organisation de la société de promotion des logements sociaux, tel que modifié par le décret n° 92-1818 du 19 octobre 1992",
+      "title-short": "Décret gouvernemental n° 2017-840 du 26 juillet 2017",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "61",
+      "page": "2513-2514",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            7,
+            26
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2017/2017F/Jo0612017.pdf",
+      "note": "citation-key: decret-gouv2017-840\nJORT n° 61 du 1er août 2017, pp. 2513-2514. Texte français du miroir de l'IORT, lu le 24 octobre 2026. Art. 1er : art. 1er du décret n° 77-926 remplacé."
+    },
+    {
+      "id": "loi89-18",
+      "type": "legislation",
+      "title": "Loi n° 89-18 du 22 février 1989, modifiant et complétant la loi n° 73-24 du 7 mai 1973 instituant un régime d'épargne-logement",
+      "title-short": "Loi n° 89-18 du 22 février 1989",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "16",
+      "page": "339",
+      "issued": {
+        "date-parts": [
+          [
+            1989,
+            2,
+            22
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1989/1989F/Jo01689.pdf",
+      "note": "citation-key: loi89-18\nJORT n° 16 du 3 mars 1989, p. 339. Fascicule scanné, océrisé le 24 octobre 2026 (250 dpi), art. 1er à 4 lus. La loi ne nomme pas la banque issue de la transformation."
+    },
+    {
+      "id": "decret1956-08-23-fnah",
+      "type": "legislation",
+      "title": "Décret du 23 août 1956 (16 moharem 1376), instituant un Fonds national d'amélioration de l'habitat",
+      "title-short": "Décret du 23 août 1956",
+      "container-title": "Journal officiel tunisien",
+      "issue": "68",
+      "page": "1163-1164",
+      "issued": {
+        "date-parts": [
+          [
+            1956,
+            8,
+            23
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1956/1956F/Jo06856.pdf",
+      "note": "citation-key: decret1956-08-23-fnah\nJOT n° 68 du 24 août 1956, pp. 1163-1164. Fascicule scanné, océrisé le 24 octobre 2026 (250 dpi), art. 1er à 9 lus."
+    },
+    {
+      "id": "loi60-5",
+      "type": "legislation",
+      "title": "Loi n° 60-5 du 30 mai 1960, portant modification du décret du 23 août 1956, instituant un fonds national d'amélioration de l'habitat, et abrogation de l'article 12 du décret du 29 juin 1957, portant fixation du budget ordinaire pour la gestion 1957-1958",
+      "title-short": "Loi n° 60-5 du 30 mai 1960",
+      "container-title": "Journal officiel tunisien",
+      "issue": "27",
+      "page": "754",
+      "issued": {
+        "date-parts": [
+          [
+            1960,
+            5,
+            30
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1960/1960F/Jo02760.pdf",
+      "note": "citation-key: loi60-5\nJORT n° 27 du 31 mai 1960, p. 754. Fascicule scanné, océrisé le 24 octobre 2026, art. 1er (art. 1er à 4 nouveaux du décret de 1956) lu jusqu'à l'art. 4 nouveau, début."
+    },
+    {
+      "id": "decret-loi63-1",
+      "type": "legislation",
+      "title": "Décret-loi n° 63-1 du 4 février 1963, portant modification du décret du 23 août 1956, instituant un fonds national d'amélioration de l'habitat tel qu'il a été modifié par la loi n° 60-5 du 30 mai 1960",
+      "title-short": "Décret-loi n° 63-1 du 4 février 1963",
+      "container-title": "Journal officiel tunisien",
+      "issue": "6",
+      "page": "164-165",
+      "issued": {
+        "date-parts": [
+          [
+            1963,
+            2,
+            4
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1963/1963F/Jo00663.pdf",
+      "note": "citation-key: decret-loi63-1\nJORT n° 6 du 5 février 1963, pp. 164-165. Fascicule scanné, océrisé le 24 octobre 2026, art. 1er à 3 lus en partie, art. 4. Ratifié par la loi n° 63-2 du 22 avril 1963 (JORT n° 19, p. 504, non lue). Le même fascicule porte le décret-loi n° 63-2 relatif à l'aliénation des logements populaires."
+    },
+    {
+      "id": "loi66-75",
+      "type": "legislation",
+      "title": "Loi n° 66-75 du 28 novembre 1966, portant modification du décret du 23 août 1956, instituant un fonds national d'amélioration de l'habitat",
+      "title-short": "Loi n° 66-75 du 28 novembre 1966",
+      "container-title": "Journal officiel tunisien",
+      "issue": "51",
+      "page": "1674",
+      "issued": {
+        "date-parts": [
+          [
+            1966,
+            11,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1966/1966F/Jo05166.pdf",
+      "note": "citation-key: loi66-75\nJORT n° 51 du 29 novembre 1966, p. 1674. Fascicule scanné, océrisé le 24 octobre 2026, article unique lu."
+    },
+    {
+      "id": "decret74-224",
+      "type": "legislation",
+      "title": "Décret n° 74-224 du 28 mars 1974, portant organisation et fonctionnement de la caisse nationale d'épargne-logement",
+      "title-short": "Décret n° 74-224 du 28 mars 1974",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "24",
+      "page": "669-670",
+      "issued": {
+        "date-parts": [
+          [
+            1974,
+            3,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1974/1974F/Jo02474.pdf",
+      "note": "citation-key: decret74-224\nJORT n° 24 du 29 mars 1974, pp. 669-670. Fascicule scanné, océrisé le 24 octobre 2026 (250 dpi), art. 1er à 10 lus ; art. 11 et suivants non lus."
+    },
+    {
+      "id": "loi58-47",
+      "type": "legislation",
+      "title": "Loi n° 58-47 du 11 avril 1958, portant fixation de l'apport initial de l'État à la Société nationale immobilière de Tunisie (S.N.I.T.) et complétant la loi n° 57-19 du 10 septembre 1957, portant approbation des statuts de ladite société",
+      "title-short": "Loi n° 58-47 du 11 avril 1958",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "29",
+      "page": "394",
+      "issued": {
+        "date-parts": [
+          [
+            1958,
+            4,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1958/1958F/Jo02958.pdf",
+      "note": "citation-key: loi58-47\nJORT n° 29 de 1958, p. 394. Fascicule scanné, océrisé le 24 octobre 2026 (250 dpi), art. 1er (apport de 110 000 000 de francs) lu ; la suite de l'article et le tableau des apports en nature ne sont pas lus."
+    },
+    {
+      "id": "loi59-58",
+      "type": "legislation",
+      "title": "Loi n° 59-58 du 9 juin 1959, portant approbation des modifications apportées aux statuts de la Société nationale immobilière de Tunisie (S.N.I.T.)",
+      "title-short": "Loi n° 59-58 du 9 juin 1959",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "32",
+      "page": "578-579",
+      "issued": {
+        "date-parts": [
+          [
+            1959,
+            6,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1959/1959F/Jo03259.pdf",
+      "note": "citation-key: loi59-58\nJORT n° 32 des 9-12 juin 1959, pp. 578-579. Fascicule scanné, océrisé le 24 octobre 2026 (250 dpi). La loi est datée « du 9 juin 1959 (2 doul hidja 1378) » ; les visas des décrets n° 2012-1224 et 2017-161 la datent du 17 mai 1959, ce que le fascicule ne confirme pas. Art. 3 nouveau des statuts lu ; art. 6 et 9 non lus."
+    },
+    {
+      "id": "loi61-57",
+      "type": "legislation",
+      "title": "Loi n° 61-57 du 1er décembre 1961, portant approbation des modifications apportées aux statuts de la Société nationale immobilière de Tunisie (S.N.I.T.)",
+      "title-short": "Loi n° 61-57 du 1er décembre 1961",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "53",
+      "page": "1550",
+      "issued": {
+        "date-parts": [
+          [
+            1961,
+            12,
+            1
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1961/1961F/Jo05361.pdf",
+      "note": "citation-key: loi61-57\nJORT n° 53 de 1961, p. 1550. Fascicule scanné, océrisé le 24 octobre 2026 (250 dpi), article unique et alinéas 15 et 24 nouveaux lus. Rectificatif au JORT n° 55, p. 1637, non lu."
+    },
+    {
+      "id": "arrete1987-01-05-previsions-fonds",
+      "type": "legislation",
+      "title": "Arrêté du ministre du Plan et des Finances du 5 janvier 1987, portant augmentation des prévisions de recettes et de dépenses du fonds spécial du Trésor intitulé « Fonds de promotion du logement pour les salariés », gestion 1986",
+      "title-short": "Arrêté du 5 janvier 1987",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "3",
+      "page": "37",
+      "issued": {
+        "date-parts": [
+          [
+            1987,
+            1,
+            5
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1987/1987F/Jo00387.pdf",
+      "note": "citation-key: arrete1987-01-05-previsions-fonds\nJORT n° 3 du 13 janvier 1987, p. 37. Fascicule scanné, océrisé le 24 octobre 2026 (250 dpi), texte entier lu : prévisions de 1986 portées de 25 000 000 D à 33 000 000 D ; la loi n° 85-109 du 31 décembre 1985, tableau F, fixait 25 000 000 D."
     },
     {
       "id": "decret2011-3573",

@@ -1019,11 +1019,17 @@
     couverture: 'Seconde passe du 24 octobre 2026. Wayback Machine : l''API de disponibilité répond (capture de social.gov.tn du 17 octobre 2026), l''API d''index (CDX) est hors ligne, donc aucune liste de pages archivées de social.gov.tn, de pnafn.gov.tn ni de pm.gov.tn. Page du ministère sur les transferts monétaires, édition arabe (téléchargée le 24 octobre 2026) : elle cite le « منشور مشترك » n° 3 du 27 mai 2011 (Intérieur et Affaires sociales) sans lien ni fichier, et ne cite aucun texte de montant. Une recherche web sur le numéro et la date de la circulaire ne renvoie aucun document tunisien. Le texte de la circulaire n''est pas en ligne sous les adresses essayées.'
     couvert_jusqu_au: 2026-10-24
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [web]
+    couverture: 'Documents du ministère des Finances rangés dans tunisia-data (portail ancien, rubrique lois_finances), texte lu par la couche texte : rapport sur le projet de budget actualisé pour 2012 (avril 2012), rapport sur le projet de budget pour 2013 (novembre 2012), note d''actualisation du budget de 2013 (septembre 2013), projet de budget pour 2014 (octobre 2013). Seul le rapport d''avril 2012 parle des familles nécessiteuses : relèvement de 50 000 du nombre de familles (35 MD) et 106 MD de transferts supplémentaires ; aucun montant mensuel. Les budgets citoyens de 2014, 2015, 2017 et 2018 n''ont pas de couche texte (scans) et ne sont pas lus ; le rapport de 2016 est lu sans résultat. Budgets économiques et rapports sur les budgets de 2015 à 2018 non rangés dans tunisia-data.'
+    couvert_jusqu_au: 2013-10-31
+    resultat: aucun
   a_faire:
   - obtenir le texte de la circulaire conjointe n° 12 (Intérieur) et n° 3 (Affaires sociales) du 27 mai 2011 auprès du ministère ou d'une bibliothèque administrative
-  - lire les exposés des motifs et les tableaux des budgets économiques 2012-2018 (finances.gov.tn, hors index du moteur de recherche ; chercher par Wayback quand le service est rétabli)
   - rejouer le sondage de la Wayback Machine sur social.gov.tn, pm.gov.tn et pnafn.gov.tn
   - dater les neuf paliers 53,3 ; 56,7 (début) ; 63,3 ; 70 ; 100 ; 110 ; 120 ; 150 ; 180 par un texte ou un communiqué du ministère
+  - budgets économiques et rapports sur les projets de budget de 2015 à 2018 (non rangés dans tunisia-data) ; budgets citoyens de 2014 à 2018 à océriser
 
 - id: r-lf2025-art15-decret
   objet: décret fixant les modalités de fonctionnement du fonds de protection sociale des travailleuses agricoles et les conditions de ses interventions (loi n° 2024-48, loi de finances pour 2025, art. 15, 1), al. 2)
@@ -4594,3 +4600,79 @@
     couvert_jusqu_au: 2012-01-03
     resultat: aucun
   a_faire: [rejouer le plein texte des lois de finances de 1991 à 2010 et de 2014 à 2026]
+
+- id: r-foprolos-convention-gestion
+  objet: convention de gestion du fonds de promotion du logement pour les salariés entre le ministre des Finances et un organisme de crédit (loi n° 77-54, art. 9)
+  ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-reformes]
+  requetes:
+    titres_fts:
+    - convention AND gestion AND (logement OR logements) AND salaries
+    - '"banque de l habitat"'
+    - caisse AND epargne AND logement AND (banque OR denomination OR transformation)
+    iort_ar: [بنك الإسكان, اتفاقية النهوض بالمسكن]
+    depuis: 1977-08-05
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: intitulés jort_cache jusqu'au 2 octobre 2026 ; aucune convention ni texte de transformation de la CNEL en Banque de l'Habitat ; plein texte non parcouru ; rapports annuels de la BH non consultés
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache (intitulés, 1986-2011) et miroir iort local (plein texte des textes de 1980 à 1999 : aucune occurrence de « Banque de l''Habitat » avant 2003). Le texte de transformation de la caisse nationale d''épargne-logement en banque est identifié : loi n° 89-18 du 22 février 1989, art. 1er à 3 (JORT n° 16 du 3 mars 1989, p. 339), qui ne nomme pas la banque et la charge de gérer le régime d''épargne-logement par convention avec le ministère des Finances. Aucune convention de gestion du fonds de promotion du logement pour les salariés n''est publiée au Journal officiel.'
+    couvert_jusqu_au: 2011-12-31
+    resultat: aucun
+  a_faire:
+  - rapports annuels de la Banque de l'Habitat
+  - dénomination de la banque issue de la caisse nationale d'épargne-logement (texte ou document de la banque)
+
+- id: r-foprolos-programme-emploi
+  objet: arrêtés fixant le programme d'emploi des ressources du fonds (décret n° 77-965, art. 12 ; décret gouvernemental n° 2016-1126, art. 10)
+  ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-reformes]
+  requetes:
+    titres_fts:
+    - programme AND emploi AND ressources AND (logement OR logements)
+    - (logement OR logements) AND (salaries OR salarie) AND (fonds OR promotion)
+    iort_ar: [صندوق النهوض بالمسكن لفائدة الأجراء]
+    depuis: 1977-11-29
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'intitulés jort_cache jusqu''au 2 octobre 2026 : seuls un arrêté du 5 janvier 1987 (prévisions 1986) et quatre arrêtés de prix (2007, 2009, 2013, 2014) répondent ; plein texte non parcouru'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-psls-arretes-subvention-credit
+  objet: arrêté du ministre de l'Habitat fixant la méthode de calcul de la subvention (décret n° 2012-1224, art. 22) et arrêté conjoint Habitat-Finances fixant les conditions du crédit complémentaire (art. 23)
+  ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-psls]
+  requetes:
+    titres_fts:
+    - (subvention OR credit OR credits) AND "logement social"
+    - '"logement social" OR "logements sociaux" OR "habitat social"'
+    iort_ar: [البرنامج الخصوصي للسكن الاجتماعي, السكن الاجتماعي]
+    depuis: 2012-08-17
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'intitulés jort_cache jusqu''au 2 octobre 2026 : répondent les arrêtés du 11 janvier 2016 et du 13 octobre 2023 (abandon d''intérêts), aucun arrêté de subvention ni de crédit ; plein texte non parcouru ; modificatifs n° 2013-3289, 2014-4251, 2015-460 et 2023-538 lus le 24 octobre 2026 : ils renvoient les arrêtés sans les citer'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-foprolos-ligne-lf-2021
+  objet: prévision de recettes du fonds dans les lois de finances depuis 2021 (ligne du tableau des comptes spéciaux du Trésor présente jusqu'à la LF 2020)
+  ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-previsions]
+  requetes:
+    plein_texte: [promotion du logement pour les salariés, promotion des logements pour les salariés, النهوض بالمسكن]
+    depuis: 2020-12-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'plein texte FR et AR des LF pour 2021 à 2026 (JORT n° 128/2020, 119/2021, 141/2022, 144/2023, 149/2024, 148/2025) : aucune ligne chiffrée du fonds ; annexes budgétaires (missions, programmes, comptes spéciaux) non consultées'
+    couvert_jusqu_au: 2025-12-12
+    resultat: aucun
+  a_faire: [budget de la mission Équipement et Habitat, annexe des comptes spéciaux du Trésor (finances.gov.tn)]
