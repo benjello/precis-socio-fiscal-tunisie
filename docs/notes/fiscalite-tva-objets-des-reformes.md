@@ -784,6 +784,8 @@ avec son article.
 
 ## 6. Références : rien à créer côté *Journal officiel*, une note commune à ajouter
 
+**Versées le 24 octobre 2026** dans `precis/{fr,ar}/fiscalite/references.json`, après relecture des pièces (notes de la TVA, `docs/notes/biblio-a-rapatrier.md`). La note commune y porte la clé **`dgi-nc-5-2023`** (forme des autres notes communes du livre), non `dgelf-nc-2023-05` ; `minfin-plf-2018` suit le gabarit des archives du web (capture du 18 octobre 2017) ; les autres champs sont ceux de l'entrée versée, qui prime sur le bloc ci-dessous.
+
 **Clés déjà présentes** dans `precis/fr/fiscalite/references.json` (contrôle par identifiant,
 7 octobre 2026) : `lf-1991`, `lf-1993`, `lf-1994`, `lf-1995`, `lf-1996`, `lf-1998`, `lf-2010`,
 `lf-2017`, `loi-2006-80-reduction-taux`, `loi-avantages-fiscaux-2017`, `dgelf-code-tva-2023`.

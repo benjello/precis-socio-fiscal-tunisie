@@ -311,10 +311,15 @@ figtools.register_provenance(
     perimetre_ar=("عشرة أوضاع قانونية، سطر لكلّ جزء من التعريفة، مع النصّ والصفحة اللذين يحدّدانه؛ "
                   "ولا تُستعاد ملاحق III من المجلة (النظام التقديري المبسّط، 1990-1998) "
                   "المبنيّة على مؤشرات الأجراء والمناطق"),
-    caveats=("Le tarif de 2016 à 2023 est lu comme 3 % du chiffre d'affaires entier au-dessus de "
-             "10 000 D, d'après le texte de l'article 17 de la loi de finances pour 2016."),
-    caveats_ar=("تُقرأ تعريفة 2016 إلى 2023 على أنّها 3 % من رقم المعاملات كاملاً فوق 10 000 د، "
-                "وفق نصّ الفصل 17 من قانون المالية لسنة 2016."),
+    caveats=("Le tarif de 2016 à 2026 est lu comme le montant fixe, augmenté de 3 % de la "
+             "fraction du chiffre d'affaires au-dessus de 10 000 D, comme l'applique la note "
+             "commune n° 27/2016 (p. 5 ; exemples p. 11-12). Cette note ne commente que le tarif de 2016 : "
+             "les lois de 2018 et de 2023 ne modifient que le montant fixe, et l'application du même "
+             "mode de calcul à ces états prolonge la note."),
+    caveats_ar=("تُقرأ تعريفة 2016 إلى 2026 على أنّها المبلغ القار مضافًا إليه 3 % من الجزء من "
+                "رقم المعاملات الذي يفوق 10 000 د، كما تطبّقها المذكرة العامة عدد 27 لسنة 2016 "
+                "(ص. 5 ؛ أمثلة ص. 11-12). لا تعلّق هذه المذكرة إلا على تعريفة 2016، ولا تعدّل قوانين 2018 "
+                "و2023 إلا المبلغ القار، وتطبيق طريقة الحساب نفسها على هذه الأوضاع امتداد للمذكرة."),
 )
 
 figtools.register_provenance(

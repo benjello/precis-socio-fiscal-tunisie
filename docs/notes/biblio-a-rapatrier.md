@@ -6,6 +6,16 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Versement du 24/10/2026 (fiscalité, TVA, quatre clés des objets des réformes, bibliographe)
+
+Source : § 6 de `docs/notes/fiscalite-tva-objets-des-reformes.md` ; `precis/{fr,ar}/fiscalite/references.json`, à la main. Quatre notices créées, chacune relue sur la pièce le 24/10/2026.
+- **`dgi-nc-5-2023`** (note commune n° 5/2023, article 44 du décret-loi n° 2022-79, TVA des professions non commerciales) : la note préparatoire la nommait `dgelf-nc-2023-05` ; la clé suit la forme `dgi-nc-N-AAAA` des quarante autres notes communes du livre. URL jibaya.tn (HTTP 200, 424 959 octets, SHA-256 identique à la copie locale). Pages lues : 1 à 5.
+- **`rectificatif-lf-1993`** (JORT n° 33 du 4 mai 1993, p. 579) : URL pist.tn FR (`Jo03393`) et AR (`Ja03393`, lue à l'image : le rectificatif y est aussi à la p. 579, même rectification 12 000 → 20 000 D).
+- **`minfin-plf-2018`** : projet de loi de finances pour 2018, en arabe ; document retiré du site du ministère, consulté dans la capture du 18/10/2017 (horodatage 20171018233539 lu dans le CDX), téléchargée le 24/10/2026, SHA-256 identique à la copie `tunisia-data`. Lu à l'image : p. 91-92 et 146-149. Gabarit des archives du web (`archive`, `archive_location`, `accessed`).
+- **`minfin-plf-2014`** : projet de loi de finances pour 2014, en arabe ; adresse du site de développement du ministère (HTTP 200). Exposé des motifs des art. 34 et 35 du projet lu à l'image, p. 77 imprimée (page 84 du fichier).
+- Clés citées : `_tva.qmd` (les quatre) et `_droits_consommation.qmd` (`dgelf-code-tva-2019`, déjà présente). `dgelf-code-tva-2021` est maintenant citée pour l'art. 7, numéro 3 (p. 23).
+- **À faire** : verser les quatre notices dans Zotero (`citation-key` en Extra) et les ranger dans la collection du volume. Rien poussé. Pas de `number-of-pages` sur ces rapports (conversion Zotero).
+
 ## Versement du 23/10/2026 (régimes spéciaux, compléments, bibliographe)
 
 Sources : `docs/notes/regimes-speciaux-*.md` ; volume `remunerations_publiques`, FR et AR, à la main. Douze notices créées, URL lues sur `jort_cache.db` (`pdf_fr` pour le FR, `pdf_ar` du même enregistrement pour l'AR) : `loi72-67` (tribunal administratif ; JORT n° 32, pp. 1092-1094), `decret84-751`, `decret84-752`, `decret84-754`, `decret84-756` (grilles de 1984, JORT n° 47), `decret88-908` (logement des militaires, JORT n° 33, p. 743 ; rectificatif n° 36, pp. 788-789), `decret2002-323` (Cour des comptes), `decret2002-1048` (tribunal administratif), `decret2011-2093` (Cour des comptes), `decret2011-2094` (tribunal administratif), `decret2012-3552`, `decret2013-1401`.
