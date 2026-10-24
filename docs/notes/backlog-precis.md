@@ -769,24 +769,45 @@ liste qui suit le tableau, citations comprises. Restent :
     pour des motifs économiques ; recettes prévues du compte (tableaux « B » 2009-2013) et excédents transférés au budget
     (lois de règlement, gestions 2015-2018) ; page de l'avis n° 27-2009 : non relevée (TODO conservé).
   - **Reste, lisible au corpus ou à océriser** : pourcentages d'affectation de 2009, 2011 et 2012 (fiche
-    `r-cnrps-fonds-retraite-avant-age-2009-taux` : une quinzaine de fascicules français sans couche texte complète à océriser,
-    fascicules arabes de 2013 à 2016) ; dépenses du compte (fiche `r-cnrps-compte-retraite-avant-age-2009-depenses` : annexes des
-    lois de règlement) ; relecture à l'image des art. 9 à 13 du décret n° 2022-542 ; ligne « 2009-39 » du guide statistique 2000-2010
+    `r-cnrps-fonds-retraite-avant-age-2009-taux` : les quinze fascicules français sans couche texte ont été océrisés le 24 octobre
+    2026, aucun décret de pourcentages ; les sommaires de 362 fascicules arabes (n° 50 de 2009 au n° 103 de 2012) ont été océrisés en arabe le 24 octobre 2026 :
+    seul le décret n° 2011-932 ressort ; reste le corps des fascicules arabes de 2009 à 2012 ; les lois de finances 2011, 2012 et le décret-loi n° 2011-56 ne portent que le tableau B) ; dépenses du compte (fiche `r-cnrps-compte-retraite-avant-age-2009-depenses` : annexes des
+    lois de règlement) ; relecture à l'image des art. 9 à 13 du décret n° 2022-542 (faite le 24 octobre 2026 sur le fascicule français : art. 9, 11 et 13 précisés au chapitre) ; ligne « 2009-39 » du guide statistique 2000-2010
     et page de la valeur 2 686 du guide 2010-2014 ; rectificatifs du décret n° 82-1030 et de la loi n° 81-6 (scans locaux, pages à identifier).
   - **Reste, à obtenir** : exposé des motifs et débats des chambres (30 juin et 4 juillet 2009 ; 3 mars 1987) ; convention entre
-    le ministre des finances et la CNRPS (décret n° 2009-2085, art. 8) et convention du décret n° 2017-825 (art. 8) ; arrêté du
+    le ministre des finances et la CNRPS (décret n° 2009-2085, art. 8) et convention du décret n° 2017-825 (art. 8) (fiche
+    `r-cnrps-convention-retraite-avant-age-2009` : aucune approbation par décret au JORT, sommaires arabes 2009-2012 compris ; à demander
+    à la CNRPS ou au ministère des finances) ; arrêté du
     Premier ministre fixant le contingent de 1987 ; nombre de départs de 2017-2021 et de 2022-2025 ; décision sur la bonification
     et le plafond du taux de liquidation (question de droit non tranchée par les textes).
 - **Magistrats de l'ordre judiciaire : limite d'âge (24 octobre 2026)** (`#sec-cnrps-magistrats`) : décret n° 85-614 (JORT n° 32, p. 599),
   loi organique n° 85-79, art. 43 nouveau (JORT n° 59, p. 1024), loi organique n° 88-73 (JORT n° 47, p. 1019), d'après
   `docs/notes/regimes-speciaux-magistrats-2026-10-23.md` ; loi n° 2019-37 relue en entier : aucune disposition propre aux
-  magistrats. **Reste** : sort du décret n° 85-614 après 1988 ; texte en vigueur de l'art. 42 de la loi n° 67-29 depuis la loi
-  organique n° 2016-34 ; limites d'âge du Tribunal administratif (décret n° 73-459) et de la Cour des comptes (décret n° 74-820).
-- **Reste à porter au livre (hors de la liste de cette passe)** : LF 1988 art. 60-61 et loi n° 2005-55 (anciens présidents, Premiers
-  ministres, présidents des chambres), LF 1989 art. 75-76, loi n° 2015-39 ; décret-loi n° 2011-48 (contribution de l'employeur des
-  membres du gouvernement et des gouverneurs) ; décret-loi n° 2020-30 du 10 juin 2020.
+  magistrats. **Fait le 24 octobre 2026** : limites d'âge du Tribunal administratif
+  (décret n° 73-459, JORT n° 37/1973, p. 1532) et de la Cour des comptes (décret n° 74-820, JORT n° 55/1974, p. 1919), lues à l'image,
+  65 ans ; loi organique n° 2016-34 (art. 53, 78, 80) ; les lois organiques n° 91-9, 2005-81 et 2012-13 ne touchent pas l'art. 42 de
+  la loi n° 67-29. **Reste** : sort du décret n° 85-614 après 1988 (fiche `r-decret-85-614-sort` : plein texte lu de 1997 à 2026, zéro
+  occurrence ; fascicules de 1988 à 1996 à océriser) ; texte consolidé de l'art. 42 ; limites d'âge propres éventuelles de la loi organique n° 72-67 et du décret-loi n° 70-6 ;
+  pensions des magistrats.
+- **Régimes spéciaux (députés, gouvernement, gouverneurs, Constituante) : portés au livre le 24 octobre 2026** (`#sec-cnrps-regimes-speciaux`) :
+  LF 1989 art. 75-76 (JORT n° 87/1988, p. 1800, lue à l'image), loi n° 2005-54, loi n° 2015-39 (membres de l'Assemblée constituante, JORT
+  n° 79/2015, pp. 2371-2372), décret-loi n° 2011-48 (contribution de l'employeur, +1 point au 1er juillet 2011), LF 2026 art. 102-103
+  (nouveaux art. 3 et 5 de la loi n° 85-16, effet au 13 mars 2023, p. 4257 de l'édition arabe), loi n° 83-31 art. 8 à 10 et loi n° 88-16 art. 6
+  (lues à l'image) ; loi n° 88-101 (lue à l'image, JORT n° 55/1988, p. 1156) ; chaîne des taux de la retenue et de la contribution de
+  l'art. 5 de la loi n° 85-16, 1985-2023 (tableau `tbl-cnrps-deputes-retenue` : loi n° 85-16, loi n° 94-71, LF 2002, loi n° 2007-43, LF 2026).
+  **Reste** : application aux députés du relèvement d'un point du décret-loi n° 2011-48 (le texte ne nomme pas la loi n° 85-16) ; LF 1988 art. 60-61 et loi n° 2005-55 (anciens présidents, Premiers ministres,
+  présidents des chambres : avantages en nature, relevant plutôt du livre « Rémunérations publiques » où `loi2005-55` existe) ;
+  régime des assemblées postérieures à 2014 (aucun texte identifié, fiche
+  `r-indemnite-parlementaire-decret`).
   Les rectificatifs du décret n° 82-1030 et de la loi n° 81-6 restent à relire sur les scans locaux après identification exacte
   des pages : un numéro peut avoir des homonymes.
+- **RSNA, RTNS et régime public : lacunes de lecture closes le 24 octobre 2026** : date d'effet du décret n° 2002-3018 (dépôt du 30 novembre 2002,
+  exécutoire le 5 décembre) ; date d'effet du décret n° 94-1477 (dépôt du 18 juillet 1994, exécutoire le 23 juillet) ; loi n° 88-38, art. 1 à 4
+  (ni vieillesse ni retraite) ; décret n° 90-1455, art. 3, 14, 30, 32, 43 et 54 (lus à l'image, ajoutés au tableau des textes) ; décret n° 80-103,
+  art. 11 bis (18 mois de cotisations au cours des trois premières années, édition arabe, p. 252) ; décret n° 2026-229 du 2 octobre 2026 (liste
+  du décret n° 85-1176, Instance supérieure indépendante pour les élections). Relances des fiches `r-dec74-499-modificatifs`, `r-rsna-age-relevement`,
+  `r-dl2024-4-art33` et `r-rsna-bareme-annees-manquantes` jusqu'au JORT n° 97 de 2026 : rien de nouveau (un arrêté conjoint du n° 80 de 2026 cite
+  le décret n° 2007-2148 comme dernier modificatif du décret n° 74-499). **Reste** : méthode de calcul du barème d'actualisation, hors du JORT.
 - **Barème d'actualisation — coefficients relevés.** Les 31 arrêtés de 1994 à 2024
   et leurs **1 488 coefficients** ont été relevés et contrôlés, y compris les images des
   tableaux de 1997 et 2024 ; voir `_secteur_prive.qmd#sec-rsna-bareme`. Les questions
@@ -823,8 +844,6 @@ liste qui suit le tableau, citations comprises. Restent :
   | article 32 de la loi n° 85-12 | repère de 60 → 62 ans exécutoire le 5 mai 2019 ; les autres distinctions entre colonnes restent des règles |
 
   Les conditions d'âge, d'études et de ressources de la pension d'orphelin restent à la main.
-- **Régimes spéciaux** : le décret-loi n° 2011-48 relève aussi la contribution de
-  l'employeur pour les membres du gouvernement et les gouverneurs ; le chapitre ne le dit pas.
 
 - **Tableaux de paramètres engendrés (recension du 2 octobre, lots 1a à 1c) — fait le
   3 octobre 2026** : trois tableaux faits main remplacés par des tableaux mixtes engendrés
@@ -870,8 +889,9 @@ liste qui suit le tableau, citations comprises. Restent :
     (`r-amg-cartes-quotas`) ; édition arabe de l'arrêté du 31 août 2020 à relire à l'image (début
     p. 2249 ou 2250) ; le sigle « P2P » (fiche `r-covid-2020-p2p` proposée par la note, non créée :
     le chapitre n'en a pas besoin).
-  - **reste, pour la relecture** : le décret-loi n° 2020-30 du 10 juin 2020 (complément portant les
-    pensions à 180 D) est à signaler au volume « Retraites ».
+  - **fait le 24 octobre 2026** : le décret-loi n° 2020-30 du 10 juin 2020 (complément portant les
+    pensions à 180 D, art. 1) est exposé au volume « Retraites » (`_secteur_public.qmd`, section « La péréquation cotisée »). Reste :
+    prolongation ou relèvement éventuel du seuil de 180 D, conventions de gestion, bénéficiaires et coût.
 
 - **Relecture à l'image du 24 octobre 2026** (`_autres_risques.qmd`, protection des travailleurs ayant cessé leur travail) :
   - *fait* : loi n° 2002-24 (JORT n° 18 du 1er mars 2002, p. 515, art. 1 et 2, sans clause d'effet, dépôt le
