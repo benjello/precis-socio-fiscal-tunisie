@@ -368,7 +368,7 @@ ls.figure_plafond(
 )
 ```
 
-<!-- TODO (documentaliste) : budgets d'équipement et de développement de 1961 à 1985 (structure différente d'une loi à l'autre), lois de règlement ou rapports annuels de la Banque centrale pour une réalisation avant 1986, budget ordinaire de 1958-59 (en francs, décret du 29 juin 1957) et crédits de 1959-60 (chiffre effacé à l'image) ; PIB de 1959-60 et de 1960 et base du PIB d'avant 1992 (annexe PIB, lacunes L1 à L3) ; voir docs/notes/backlog-precis.md et la fiche r-ep-budget-etat-1959-1985. -->
+<!-- TODO (documentaliste) : lois modifiant un budget de capital en cours d'année (n° 70-59, 71-58, 74-76, 84-3, 81-70, 82-27, 83-81), budget de 1959-60 et de 1963-1964 sans répartition annuelle, lois de règlement ou rapports annuels de la Banque centrale pour une réalisation avant 1986, budget ordinaire de 1958-59 (en francs, décret du 29 juin 1957) et crédits de 1959-60 (chiffre effacé à l'image) ; PIB de 1959-60 et de 1960 et base du PIB d'avant 1992 (annexe PIB, lacunes L1 à L3) ; voir docs/notes/backlog-precis.md et la fiche r-ep-budget-etat-1959-1985. -->
 <!-- RECHERCHE r-ep-budget-etat-1959-1985 : budgets d'équipement et de développement des lois de finances de 1961 à 1985, réalisation du budget de l'État avant 1986, budget de 1958-59 (voir docs/recherches.yml) -->
 
 - **Des paliers de longue durée.** Le plafond est de 12 MD pour 1959-60, 1961 et 1962, de 16 MD de [1963](#r-ep-pl-1963) à 1966, de 20 MD en [1967](#r-ep-pl-1967), de 25 MD de [1968](#r-ep-pl-1968) à 1973, de 50 MD de 1974 à 1976, de 200 MD de [1977](#r-ep-pl-1977) à 1987, de 300 MD de 1988 à 1991. Il est multiplié par quatre en 1977 (de 50 à 200 MD). Après 300 MD en 1991, il est de 250 MD en [1992](#r-ep-pl-1992), de 500 MD en [1993](#r-ep-pl-1993) et de 950 MD en [1994](#r-ep-pl-1994), montant qu'il garde jusqu'en [2010](#r-ep-pl-2010), sauf en [2003](#r-ep-pl-2003) (1 200 MD). Il est ensuite de 1 800 MD en [2011](#r-ep-pl-2011), de 4 000 MD en [2012](#r-ep-pl-2012) et de 3 000 MD de [2013](#r-ep-pl-2013) à 2015.
@@ -379,7 +379,7 @@ ls.figure_plafond(
 
 :::: {.chronologie-repliable titre="Plafond de la garantie de l'État : montant fixé ou modifié par chaque loi de finances, 1958-59 à 2015, avec le texte, l'article et la page, et arrêté du 3 avril 1993 sur la commission de garantie"}
 
-<!-- TODO (rédacteur) : tableau copié de `ls.tableau_plafond` (relevé listes/plafond-garanties-lois-de-finances.csv) pour que les ancres r-ep-pl-… soient lisibles par check_domicile_references.py ; tests/test_listes_entreprises_publiques.py contrôle l'identité des deux, à remplacer par l'appel quand le contrôle saura lire les ancres engendrées -->
+<!-- TODO (rédacteur) : tableau copié de `ls.tableau_plafond` (série `jort-lf-plafond-garanties` de tunisia-data) pour que les ancres r-ep-pl-… soient lisibles par check_domicile_references.py ; tests/test_listes_entreprises_publiques.py contrôle l'identité des deux, à remplacer par l'appel quand le contrôle saura lire les ancres engendrées -->
 
 | Date d'effet | Texte, article et page | Ce que le texte change | Portée |
 |---|---|---|---|
@@ -471,6 +471,27 @@ ls.tableau_budget(
              "année ; les budgets annexes, les établissements rattachés et le budget "
              "d'équipement ou de développement ne sont pas compris. Source : *Journal "
              "officiel*, édition française"))
+```
+
+::::
+
+Le budget de l'État voté avant 1986 se compose du budget ordinaire et du budget d'équipement, puis de capital, dont les voies et moyens comprennent une contribution du budget ordinaire. Le total de l'État est le budget ordinaire, plus les crédits de paiement du budget d'équipement, moins cette contribution. [La loi de finances pour 1983](#r-ep-pl-1983) l'établit : un budget général de 1 753 MD, dont 954 MD de dépenses courantes et 799 MD de dépenses d'investissement. Pour les autres gestions de 1961 à 1986, le total est calculé de la même façon à partir des montants que chaque loi fixe ; il n'existe pas pour 1962 (montant provisoire, abrogé), pour la période 1962-1964 (un seul montant triennal) ni pour 1963 et 1964. Les lois modifiant un budget de capital en cours d'année ne sont pas lues.
+
+:::: {.chronologie-repliable titre="Budget de l'État voté de 1961 à 1986 : budget ordinaire, budget d'équipement ou de capital et total sans double compte de la contribution du budget ordinaire, avec le texte et la page"}
+
+```{python}
+#| label: ep-budget-etat-registre
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import listes as ls
+ls.tableau_budget_etat(
+    caption=("Budget de l'État voté, 1961 à 1986, en millions de dinars courants (MD) : budget "
+             "ordinaire, crédits de paiement du budget d'équipement (puis de capital), dont "
+             "contribution du budget ordinaire, et total de l'État. Le total de 1983, en gras, "
+             "est celui de la loi ; les autres sont calculés. Les voies et moyens du budget "
+             "d'équipement comprennent, avant 1985, les budgets annexes ; pour 1985 et 1986 seul "
+             "le budget de l'État est compris. Source : *Journal officiel*, édition française"))
 ```
 
 ::::
@@ -663,7 +684,7 @@ ep.tableau_cessions_plans(
 
 - **Une concentration dans le temps.** Le X^e^ Plan (2002-2006) fait 4 071 MD sur 5 963 ; l'année 2006, 3 110,5 MD à elle seule (@tbl-ep-cessions).
 - **Aucun détail par opération.** Les relevés de la Direction générale de la privatisation donnent des recettes par année et par période, non par entreprise cédée.
-- **Après 2009.** Aucune série budgétaire des recettes de cession n'est établie ici (@sec-ep-lp-lacunes).
+- **Après 2009.** Les recettes de privatisation inscrites au budget de 2010 à 2016 sont données plus loin (@sec-ep-lp-cloture) ; aucune série des recettes de cession n'est établie ici depuis 2017 (@sec-ep-lp-lacunes).
 
 <!-- TODO (documentaliste) : la page « bilan global » de la Direction générale de la privatisation donne les opérations par mode (114 privatisations totales, 29 partielles, 10 offres publiques de vente, 5 concessions, 41 liquidations, 18 autres) : à verser dans tunisia-data avec sa clé de bibliographie avant de la publier ; documenter les grandes cessions opération par opération (cimenteries, seconde licence de téléphonie, Tunisie Télécom). -->
 
@@ -954,13 +975,98 @@ ep.tableau_transferts_revisions(
 
 <!-- TODO (documentaliste) : des fiches par entreprise du rapport, seuls les effectifs et les charges de personnel sont versés (section des effectifs) ; restent la dette, la subvention d'exploitation et le total des passifs (éditions arabes : tableaux tournés d'un quart de tour) : relire à l'image puis verser, pour STEG, STIR, Tunisair, Transtu, SNCFT, SONEDE, ETAP, Groupe chimique, CPG, Office des céréales, RNTA, Office du commerce. Les classements par charges de personnel et par produits d'exploitation restent aussi à verser. -->
 
+### Les gestions 2010 à 2016, d'après les rapports de la Cour des comptes {#sec-ep-lp-cloture}
+
+Pour chacune des gestions 2011 à 2016 et celle qui la précède, le rapport de la Cour des comptes sur la clôture du budget de l'État donne quatre flux qui touchent les entreprises publiques : ce que les entreprises et la Banque centrale versent au budget, ce que l'État rembourse au titre de dettes qu'il a garanties, ce qu'il reçoit en remboursement de prêts, et ses recettes de privatisation. Les gestions 2010 à 2016 se situent entre les relevés de la Direction générale de la privatisation, arrêtés à 2009, et les annexes du ministère des Finances, qui commencent en 2016. Aucun de ces flux n'est un transfert du budget aux entreprises : les rapports de clôture ventilent la dépense par ministère et par nature, non par entreprise bénéficiaire. Les séries ne se chaînent à aucune de celles des annexes. Le PIB est celui de l'Institut national de la statistique, en base 2015, rétropolé par l'INS pour 2010-2014 : il n'y a pas de rupture de base sur la période.
+
+```{python}
+#| label: fig-ep-cdc
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "cdc",
+    caption=("Entreprises publiques et budget de l'État, gestions 2010 à 2016 : versements au "
+             "budget, dette garantie remboursée par l'État, remboursements de prêts, recettes de "
+             "privatisation, en dinars courants, en % des dépenses de l'État hors service de la "
+             "dette et en % du PIB"),
+    note_lecture=(
+        "Quatre panneaux, trois vues. Les versements au budget sont la recette « transferts des entreprises publiques et profits du Trésor » : elle comprend la part du budget dans les profits de la Banque centrale et les autres profits du Trésor, et pas seulement les dividendes des entreprises. Le principal garanti remboursé est le principal de la dette garantie que l'État a payé à la place du débiteur ; ses lignes ne sont pas toutes des entreprises publiques (tableau replié). Le panneau des prêts donne le total des recettes de remboursement de prêts, sans les prêts de 2010. Les recettes de privatisation sont celles que le budget inscrit, non les produits des opérations de l'année : 2013 reprend 1 000 MD du solde que la Banque centrale détenait au titre de la cession de 35 % de Tunisie Télécom de 2006."
+    ),
+)
+```
+
+- **Les versements au budget varient d'un facteur trois en sept ans.** Ils font 812,7 MD en 2010, 1 595,6 MD en 2011, puis 810,5, 1 117,4, 583,2, 477,2 et 523,3 MD de 2012 à 2016 : de 1,23 % du PIB en 2010 à 2,36 % en 2011, puis 0,53 % en 2015 et 0,55 % en 2016. La part du budget dans les profits de la Banque centrale fait 874 MD en 2011 pour 190,6 MD en 2013 et 194 MD en 2016 ; la ligne est vide en 2010.
+- **Les bénéfices des sociétés non pétrolières font l'essentiel de la baisse de 2014.** Ils passent de 761,9 MD en 2013 à 272,6 MD en 2014 puis à 15,5 MD en 2016 ; la Cour l'attribue en 2014 au recul des résultats de la plupart des entreprises, notamment de la Compagnie des phosphates de Gafsa [@cdc-cloture-2014, p. 50]. Les bénéfices des sociétés pétrolières font 192,8 MD en 2016 ; la ligne porte le nom d'une seule société.
+- **La dette garantie remboursée par l'État monte jusqu'en 2014 puis retombe.** Le principal fait 39,3 MD en 2010, 18,1 MD en 2011, 74,0 MD en 2012, 159,2 MD en 2013, 174,1 MD en 2014, 162,8 MD en 2015 et 89,8 MD en 2016, soit 0,06 % du PIB en 2010 et 0,20 % en 2013 et en 2014 ; les intérêts font 33,2 MD en 2013. La composition change : la Société tunisienne de banque en 2012 (70 MD), la Société tunisienne des industries de raffinage de 2013 à 2016 (101,8, 123,6, 124,3 puis 76,7 MD).
+- **Les recettes de privatisation sont nulles en 2010, 2011 et 2015.** Elles font 1 105 MD en 2012, 1 070,4 MD en 2013, 4,3 MD en 2014 et 396,9 MD en 2016 ; en 2012, en 2013 et en 2016, elles viennent pour l'essentiel de la cession de 35 % de Tunisie Télécom (@sec-ep-itceq).
+- **Pas d'encours.** La Cour écrit chaque année que le compte général de la gestion ne porte pas la situation des prêts rétrocédés ni celle des prêts garantis : le remboursement est connu, l'encours restant dû ne l'est pas [@cdc-cloture-2011, p. 42 ; @cdc-cloture-2016, p. 54].
+
+:::: {.chronologie-repliable titre="Gestions 2010 à 2016 : versements au budget par ligne, principal garanti remboursé par ligne, remboursements de prêts et recettes de privatisation"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cdc_recettes(
+    caption=("Versements des entreprises publiques et de la Banque centrale au budget de l'État "
+             "(transferts des entreprises publiques et profits du Trésor), gestions 2010 à 2016, "
+             "en millions de dinars courants et en % du PIB. Les excédents réunissent ceux des "
+             "entreprises non pétrolières et pétrolières ; un tiret marque une ligne vide. "
+             "Sources : Cour des comptes [@cdc-cloture-2011, p. 39 ; @cdc-cloture-2013, p. 44 ; "
+             "@cdc-cloture-2014, p. 49 ; @cdc-cloture-2015, p. 42 ; @cdc-cloture-2016, p. 50]. "
+             "PIB : Institut national de la statistique "
+             "[@ins-cnat-2015], base dite à chaque ligne"))
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cdc_garantie(
+    caption=("Principal de la dette garantie payé par l'État, par ligne, et intérêts, gestions "
+             "2010 à 2016, en millions de dinars courants ; principal en % du PIB. Les lignes sont "
+             "celles du rapport : l'article 24 de la loi de finances de 1999, la Caisse des prêts "
+             "et de soutien des collectivités locales, les crédits agricoles et l'Office des "
+             "céréales ne sont pas des entreprises publiques au sens du rapport sur les "
+             "entreprises publiques. En 2013, le rapport de 2013 attribue 47,0 MD à la Société "
+             "tunisienne de banque et celui de 2014 à la société de sidérurgie ; le montant est "
+             "porté dans la première colonne, entre parenthèses dans l'autre. En 2014, les lignes "
+             "imprimées font 500 dinars de plus que le total imprimé. Sources : Cour des comptes "
+             "[@cdc-cloture-2011, p. 74 et 92 ; @cdc-cloture-2012, p. 89 et 103 ; "
+             "@cdc-cloture-2013, p. 78 et 95 ; @cdc-cloture-2014, p. 82 et 99 ; "
+             "@cdc-cloture-2015, p. 91 ; @cdc-cloture-2016, p. 86 et 100]"))
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cdc_autres(
+    caption=("Remboursements de prêts reçus par l'État et recettes de privatisation inscrites "
+             "au budget, gestions 2010 à 2016, en millions de dinars courants. La ventilation "
+             "des remboursements ne figure qu'à partir de 2013. En 2012, la table du déficit "
+             "structurel du rapport de 2012 donne 1 105 MD de recettes de privatisation, dont "
+             "900 MD pour Tunisie Télécom selon le rapport de 2016. Sources : Cour des comptes "
+             "[@cdc-cloture-2011, p. 42 ; @cdc-cloture-2012, p. 27 ; @cdc-cloture-2013, p. 46-47 ; "
+             "@cdc-cloture-2014, p. 52-53 ; @cdc-cloture-2015, p. 46 ; @cdc-cloture-2016, p. 53-54]"))
+```
+
+::::
+
+<!-- TODO (documentaliste) : transferts du budget aux entreprises publiques, par entreprise, pour 2010 à 2015 ; les rapports de clôture de 2011 à 2016 ne les ventilent pas, les éditions du rapport sur les transferts et les garanties annexées aux lois de finances d'avant 2020 et les lois de règlement restent à ouvrir (fiche r-ep-series-budgetaires-avant-2016). Rapport de clôture de la gestion 2010 absent du catalogue de la Cour : écrire à la Cour ou chercher à l'Assemblée. Recapitalisations des banques publiques, reprises de dettes (Tunisair, 165 MD autorisés en 2014) et fonds de restructuration du capital des entreprises à participation publique : montants autorisés par les lois de finances, à lire en réalisation dans les tableaux des fonds spéciaux de chaque rapport. -->
+
 ### Les années sans série budgétaire {#sec-ep-lp-lacunes}
 
-- **Entre 2010 et 2016, aucune série budgétaire.** Les recettes de cession s'arrêtent en 2009 ; les transferts, les garanties et les résultats commencent en 2016 ou en 2017. Le Livre blanc de 2018 tire ses chiffres de 2010 à 2014 d'un rapport annuel de l'Unité de suivi du système de productivité des établissements et entreprises publics, à la Présidence du gouvernement (@sec-ep-livre-blanc). Ce rapport n'est pas identifié ici.
+- **Entre 2010 et 2016, des flux de clôture, mais ni transferts ni encours.** Les rapports de la Cour des comptes donnent quatre flux (@sec-ep-lp-cloture) ; les transferts du budget aux entreprises, les résultats et l'encours de la dette garantie commencent en 2016 ou en 2017. Le Livre blanc de 2018 tire ses chiffres de 2010 à 2014 d'un rapport annuel de l'Unité de suivi du système de productivité des établissements et entreprises publics, à la Présidence du gouvernement (@sec-ep-livre-blanc). Ce rapport n'est pas identifié ici.
 
 <!-- RECHERCHE r-ep-rapport-unite-suivi-2010-2014 : rapport annuel sur les résultats des établissements publics, Unité de suivi, Présidence du gouvernement, 2010-2014 (voir docs/recherches.yml) -->
 
-- **Avant 1987, rien ; avant 2016, ni transferts ni dette garantie.** Aucune série budgétaire des transferts aux entreprises publiques ou de l'encours de la dette garantie antérieure à 2016 n'est établie ici, ni aucune série des recettes de cession postérieure à 2009.
+- **Avant 1987, rien ; avant 2016, ni transferts ni encours de la dette garantie.** Aucune série budgétaire des transferts aux entreprises publiques ou de l'encours de la dette garantie antérieure à 2016 n'est établie ici ; les recettes de privatisation de 2010 à 2016 sont dans la section précédente, aucune ne l'est depuis 2017.
 
 <!-- RECHERCHE r-ep-series-budgetaires-avant-2016 : séries budgétaires des transferts aux entreprises publiques et de la dette garantie avant 2016, des recettes de cession après 2009 (voir docs/recherches.yml) -->
 

@@ -15,8 +15,8 @@ ministère des Finances) : la présente note donne le plafond fixé par la loi, 
   l'image pour les gestions 1966, 1975 et 1979 (reconnaissance illisible) et pour 1963, 1969 et
   1985 (numéros d'article mal reconnus). Gestion 1985 : le numéro imprimé est peu lisible
   (« 51 » ou « 54 ») ; 54 d'après la suite des articles 53 et 55.
-- Le relevé versionné est `precis/fr/entreprises_publiques/listes/plafond-garanties-lois-de-finances.csv`
-  (manifeste `.csv.yml`, test `tests/test_listes_entreprises_publiques.py`).
+- Le relevé est versé dans `tunisia-data` (série `jort-lf-plafond-garanties`, cache `precis/_seriescache/jort-lf-plafond-garanties.csv`) ; le fichier `listes/plafond-garanties-lois-de-finances.csv` du livre est retiré le 24 octobre 2026
+  (test `tests/test_listes_entreprises_publiques.py`).
 
 ## 2. Faits sourcés
 
@@ -142,7 +142,7 @@ l'image. Les lois de finances complémentaires sont cherchées par « limite duq
   garantie propre, sans montant plafond annuel, hors série.
 
 **À reporter dans `tunisia-data`** : la série du plafond légal (gestion, montant fixé, montant en vigueur
-à la fin de la gestion), 1959-60 à 2015, relevé versionné `listes/plafond-garanties-lois-de-finances.csv`.
+à la fin de la gestion), 1959-60 à 2015, série `jort-lf-plafond-garanties` de `tunisia-data`.
 
 **Références.** Nouvelle notice : `loi2002-90-garantie-2002` (FR et AR, fonds commun). `lf-1998`
 (loi n° 97-88) promue du volume « Fiscalité » au fonds commun, FR et AR. Les autres lois sont déjà au
@@ -180,7 +180,7 @@ deux montants sont égaux chaque année** : l'égalité contrôle la lecture. Re
 | 1969 | 131,35 | 1979 | 625,1 | | |
 
 **Ce que le montant est — et n'est pas.** Un montant voté du seul budget ordinaire (titre I). Les voies et
-moyens du budget d'équipement comprennent une « contribution du budget ordinaire » (3 MD en 1961, art. 23
+moyens du budget d'équipement comprennent une « contribution du budget ordinaire » (0,6 MD en 1961, art. 23
 de la loi n° 60-38) : la somme des deux budgets compterait deux fois cette contribution, et la structure du
 budget d'équipement (puis de développement : crédits d'engagement, crédits de paiement, reconstruction,
 voies et moyens) change d'une loi à l'autre. Aucun total de l'État n'est donc établi ; le budget

@@ -5027,3 +5027,230 @@
     Tableau 6 à la page 5 du fichier (la fiche de plan disait p. 4). 24 nombres relus
     à l''image.'
   fiche: sources/ins-emploi-2019-duree-travail.md
+- id: cdc-cloture-entreprises-publiques
+  titre: 'Rapports de la Cour des comptes sur la clôture du budget de l''État, gestions
+    2010 à 2016 : transferts des entreprises publiques et profits du Trésor, dette
+    garantie remboursée par l''État, remboursements de prêts, recettes de privatisation'
+  sources:
+  - cdc-cloture-2011
+  - cdc-cloture-2012
+  - cdc-cloture-2013
+  - cdc-cloture-2014
+  - cdc-cloture-2015
+  - cdc-cloture-2016
+  build: uv run python scripts/build_cdc_cloture_entreprises_publiques.py
+  raw:
+  - sources/transcriptions/cdc-cloture-entreprises-publiques-2010-2016.csv
+  output: data/processed/entreprises-publiques/cour_des_comptes_cloture_ep_2010_2016.csv
+  unite: dinars courants (colonne valeur_dinars, entiers) et millions de dinars courants
+    (valeur_md)
+  perimetre: 'rapports de la Cour des comptes sur la clôture du budget de l''État
+    pour les gestions 2011, 2012, 2013, 2014, 2015 et 2016 (éditions arabes), chacun
+    avec la gestion précédente en comparaison, d''où les gestions 2010 à 2016 : recettes
+    « transferts des entreprises publiques et profits du Trésor » (total et cinq ou
+    six lignes : part du budget dans les profits de la Banque centrale, excédents
+    des entreprises publiques non pétrolières et pétrolières, bénéfices des sociétés
+    non pétrolières et pétrolières, autres profits du Trésor) ; principal de la dette
+    garantie payé par l''État, ligne par ligne, avec la prise en charge de dettes
+    bancaires (art. 25 de la loi de finances de 1999) et la dette du secteur agricole
+    (loi n° 65 de 1999) ; intérêts de la dette garantie payés par l''État ; remboursements
+    de prêts reçus (total, prêts extérieurs rétrocédés, prêts du titre II aux entreprises
+    publiques) ; recettes de privatisation inscrites au budget ; une ligne par (rubrique,
+    poste, gestion, rapport)'
+  caveats: 'CE NE SONT NI DES TRANSFERTS DU BUDGET AUX ENTREPRISES PUBLIQUES (les
+    rapports de clôture ne ventilent pas la dépense par entreprise bénéficiaire ;
+    voir l''annexe 8 des lois de finances depuis 2016), NI UN ENCOURS DE DETTE GARANTIE
+    (la Cour écrit chaque année que le compte général ne porte pas la situation des
+    prêts rétrocédés ni des prêts garantis). `transferts_ep_profits_tresor` est un
+    FLUX DES ENTREPRISES VERS LE BUDGET, qui comprend la part du budget dans les profits
+    de la Banque centrale et les autres profits du Trésor. `garantie_principal_paye`
+    est la dette garantie REMBOURSÉE PAR L''ÉTAT : ses lignes ne sont pas toutes des
+    entreprises publiques (art. 24 de la loi de finances de 1999, Caisse des prêts
+    et de soutien des collectivités locales, crédits agricoles, Office des céréales).
+    Écart imprimé déclaré : 2014, lignes 174 131 665 contre un total imprimé de 174
+    131 165 (rapports 2014 et 2015). Libellé divergent : le montant de 47 000 000
+    dinars de 2013 est celui de la Société tunisienne de banque dans le rapport 2013
+    et celui de la société tunisienne de sidérurgie dans le rapport 2014. Recettes
+    de privatisation 2012 : 1 105 MD (table du déficit structurel, rapport 2012) et
+    900 MD pour la seule cession de 35 % de Tunisie Télécom (rapport 2016) ; 2013
+    : 1 070,402 MD et 1 000 MD ; la licence mobile de 2016 est une recette distincte.
+    Gestion 2010 : le rapport de clôture de 2010 n''est pas au catalogue de la Cour
+    ; les valeurs de 2010 viennent de la colonne de comparaison du rapport 2011. Les
+    intérêts de 2012 à 2014 sont lus à la couche texte, recoupés d''un rapport à l''autre.
+    Montants courants ; aucune part du PIB dans la série (le précis les calcule avec
+    les dénominateurs de la compensation, PIB en base 2015 pour 2010-2016).'
+  titre_ar: 'تقارير دائرة المحاسبات عن غلق ميزانية الدولة، التصرفات 2010 إلى 2016:
+    تحويلات المنشآت العمومية ومرابيح الخزينة، الدين المضمون المسدَّد من قبل الدولة،
+    استرجاع القروض، مداخيل التخصيص'
+  unite_ar: بالدينار الجاري (قيم صحيحة) وبملايين الدنانير الجارية
+  perimetre_ar: تقارير دائرة المحاسبات عن غلق ميزانية الدولة للتصرفات 2011 إلى 2016
+    مع سنة المقارنة السابقة لكل تقرير
+  caveats_ar: ليست تحويلات من الميزانية إلى المنشآت العمومية ولا حجم دين مضمون. تحويلات
+    المنشآت العمومية تدفق نحو الميزانية. الدين المضمون المسدَّد من الدولة ليس كله
+    لمنشآت عمومية. فارق مطبوع مصرَّح به في 2014. لا تقرير لغلق ميزانية 2010 في فهرس
+    الدائرة.
+  fiche: sources/cdc-cloture-entreprises-publiques.md
+- id: jort-lf-plafond-garanties
+  titre: Plafond de la garantie de l'État fixé par les lois de finances, 1958-59 à
+    2015 (montant fixé et modifications en cours de gestion)
+  sources:
+  - loi58-45-lf1958
+  - loi59-42-lf1959
+  - loi60-38-lf1961
+  - loi61-65-lf1962
+  - loi62-82-lf1963
+  - loi63-58-lf1964
+  - loi64-59-lf1965
+  - loi65-46-lf1966
+  - loi66-79-lf1967
+  - loi67-57-lf1968
+  - lf-1969
+  - lf-1970
+  - lf-1971
+  - loi71-59-lf1972
+  - lf-1973
+  - loi73-82-lf1974
+  - loi74-75-lfc1974
+  - loi74-101-lf1975
+  - loi75-83-lf1976
+  - lf-1977
+  - loi77-81-lf1978
+  - loi78-59-lf1979
+  - loi79-66-lf1980
+  - lf-1981
+  - loi81-100-lf1982
+  - lf-1983
+  - lf-1984
+  - loi84-84-lf1985
+  - loi85-109-lf1986
+  - loi86-106-lf1987
+  - loi-87-83-lf-1988
+  - loi88-145-lf1989
+  - loi-89-115-lf-1990
+  - loi90-111-lf1991
+  - loi91-98-lf1992
+  - lf-1993
+  - loi93-111-garantie-1993
+  - lf-1994
+  - lf-1995
+  - lf-1996
+  - lf-1997
+  - lf-1998
+  - lf-1999
+  - lf-2000
+  - lf-2001
+  - loi2001-123-lf2002
+  - loi2002-90-garantie-2002
+  - lf-2003
+  - lf-2004
+  - lf-2005
+  - lf-2006
+  - lf-2007
+  - loi-2007-70-lf-2008
+  - lf-2009
+  - lf-2010
+  - lf-2011
+  - dl-2011-56-lfc-2011
+  - lf-2012
+  - lf-2013
+  - lf-2014
+  - lf-2015
+  build: uv run python scripts/build_jort_lf_plafond_garanties.py
+  raw:
+  - sources/transcriptions/plafond-garanties-lois-de-finances.csv
+  output: data/processed/entreprises-publiques/plafond_garantie_lois_de_finances_1958_2015.csv
+  unite: 'millions de dinars courants (1958-59 : imprimé en francs, colonne valeur_imprimee)'
+  perimetre: 'article « octroi de la garantie de l''État » de chaque loi de finances
+    (JORT, édition française) : montant maximal dans la limite duquel le ministre
+    chargé des finances est autorisé à accorder la garantie du Trésor, puis de l''État,
+    en vertu des textes et conventions en vigueur ; une ligne par montant fixé (fixation)
+    ou modifié en cours de gestion (relèvement, régularisation) avec le montant remplacé
+    ; colonne en_vigueur_fin_gestion_md pour le dernier montant de la gestion'
+  caveats: 'UN PLAFOND VOTÉ, NON UN MONTANT DE GARANTIES ACCORDÉES NI UN ENCOURS.
+    1958-59 est imprimé en francs (7 milliards) : valeur_md vide, aucune conversion.
+    AUCUNE LIGNE POUR 1960 (aucune notice) ; le décret du 29 juin 1957 (1957-58) est
+    absent du corpus local. LOIS DE FINANCES COMPLÉMENTAIRES de 1969 à 1991 lues par
+    leur seul index (n° 69-60, 73-72, 80-1, 82-27, 83-81, 84-2, 86-83, 88-60, 89-88,
+    91-23) : un relèvement en cours de gestion peut manquer ; celles de 1995 à 2015
+    ont été cherchées dans le texte et ne modifient pas le plafond ; aucune loi de
+    finances complémentaire pour 2015 n''est indexée. La loi n° 88-145 fixe un montant
+    unique pour 1988 et 1989 (deux lignes). Libellé changé en 1996 (« législation
+    en vigueur ») et en 2013 (prêts ou émissions de sukuk) : colonne remarque. La
+    garantie propre aux dettes des offices des céréales et de l''huile de 1997 (980
+    MD, art. 17) n''entre pas dans la série. Lecture à l''image ou par océrisation
+    (fascicules scannés), couche texte déchiffrée pour 1999-2004. Gestion 1985 : numéro
+    d''article mal imprimé, 54 retenu. Plafond de 2016 à 2024 : série garanties-etat
+    (annexes du ministère des Finances), jamais chaînée à celle-ci. Les parts du PIB
+    et des dépenses de l''État sont calculées par le précis (dénominateurs : denominateurs-depenses-etat-pib
+    depuis 1986).'
+  titre_ar: سقف ضمان الدولة المحدّد بقوانين المالية، 1958-59 إلى 2015
+  unite_ar: 'بملايين الدنانير الجارية (1958-59: مطبوع بالفرنك)'
+  perimetre_ar: فصل «منح ضمان الدولة» في كلّ قانون مالية بالرائد الرسمي، والقوانين
+    التي تعدّل المبلغ أثناء التصرّف
+  caveats_ar: سقف مصادق عليه وليس مبلغ ضمانات ممنوحة ولا رصيد دين. 1958-59 مطبوع بالفرنك.
+    لا سطر لتصرّف 1960. قوانين المالية التكميلية من 1969 إلى 1991 قُرئت من فهرسها
+    فقط. لا تُربط هذه السلسلة بسلسلة 2016-2024.
+  fiche: sources/jort-lf-plafond-garanties.md
+- id: jort-lf-budget-ordinaire
+  titre: Budget ordinaire de l'État voté par la loi de finances, 1959-60 à 1986 (recettes
+    ordinaires et crédits des dépenses de gestion ou courantes)
+  sources:
+  - loi59-42-lf1959
+  - loi60-38-lf1961
+  - loi61-65-lf1962
+  - loi62-82-lf1963
+  - loi63-58-lf1964
+  - loi64-59-lf1965
+  - loi65-46-lf1966
+  - loi66-79-lf1967
+  - loi67-57-lf1968
+  - lf-1969
+  - lf-1970
+  - lf-1971
+  - loi71-59-lf1972
+  - lf-1973
+  - loi73-82-lf1974
+  - loi74-101-lf1975
+  - loi75-83-lf1976
+  - lf-1977
+  - loi77-81-lf1978
+  - loi78-59-lf1979
+  - loi79-66-lf1980
+  - lf-1981
+  - loi81-100-lf1982
+  - lf-1983
+  - lf-1984
+  - loi84-84-lf1985
+  - loi85-109-lf1986
+  build: uv run python scripts/build_jort_lf_budget_ordinaire.py
+  raw:
+  - sources/transcriptions/budget-ordinaire-lois-de-finances.csv
+  output: data/processed/entreprises-publiques/budget_ordinaire_lois_de_finances_1959_1986.csv
+  unite: millions de dinars courants
+  perimetre: article 1er (recettes ordinaires du budget de l'État, tableau « A »)
+    et article 3 ou 6 (montant maximum des crédits des dépenses de gestion de 1961
+    à 1967, courantes depuis 1968) de chaque loi de finances, JORT, édition française
+    ; budgets annexes, établissements rattachés et fonds spéciaux exclus
+  caveats: 'CE N''EST PAS UN TOTAL DE L''ÉTAT : le budget d''équipement, puis de développement,
+    est à part et sa structure change d''une loi à l''autre (non lu). Montant VOTÉ
+    du seul budget ordinaire (titre I), jamais une réalisation ; il peut comprendre
+    une contribution au budget d''équipement (3 MD en 1961) et la loi ne dit pas,
+    à ces articles, s''il comprend le service de la dette. NE SE RACCORDE PAS à denominateurs-depenses-etat-pib
+    (dépenses de l''État hors service de la dette, réalisation, depuis 1986) : concepts
+    différents, jamais chaînés. La loi de finances pour 1983 fixe en outre un budget
+    général de 1 753 MD (954 courantes, 799 d''investissement) : non versé, sans équivalent
+    les années voisines. 1959-60 : le chiffre des crédits est effacé à l''image, seules
+    les recettes sont lues. Non lus : budget ordinaire de 1958-59 (en francs, fixé
+    par décret du 29 juin 1957, fascicule absent du corpus local), gestion 1960 (aucune
+    notice), lois de finances complémentaires. Recettes et crédits égaux chaque année
+    lue : l''égalité contrôle la lecture. Fascicules scannés : lecture à l''image
+    ou océrisation concordante (colonne lecture).'
+  titre_ar: ميزانية التسيير العادية للدولة المصادق عليها بقانون المالية، 1959-60 إلى
+    1986
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: الفصل الأول (الموارد العادية) وفصل اعتمادات نفقات التسيير أو الجارية
+    في كلّ قانون مالية، دون الميزانيات الملحقة والصناديق الخاصة
+  caveats_ar: 'ليست مجموع ميزانية الدولة: ميزانية التجهيز والتنمية على حدة. مبلغ مصادق
+    عليه وليس إنجازًا. لا يُربط بنفقات الدولة المنجزة منذ 1986. اعتمادات 1959-60 غير
+    مقروءة؛ الموارد وحدها مقروءة.'
+  fiche: sources/jort-lf-budget-ordinaire.md

@@ -129,7 +129,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 | Marché du travail | Volume VIII : institutions, notions, salaire minimum, conventions collectives, négociations, politiques de l'emploi, annexe des conventions branche par branche (8-9 octobre 2026 ; grilles tracées depuis le modèle, 193 cases illisibles sur les fascicules) | Décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire), fascicules au corpus ; grilles du textile 1983-1993 et du bâtiment 1991-1992 : scans français au corpus, OCR à lancer |
 | Compensation | Volume IX, huit chapitres réécrits le 6 octobre 2026 (institution, réformes, dépense, carburants, électricité et gaz, transport, rapports extérieurs, incidence) ; montant versé de la dotation de la Caisse inconnu pour dix années (subvention prévue 1987-1994 versée le 24 octobre 2026) ; tarifs MT/HT 1994-2003 non publiés | Lois de règlement, budget économique, lois de finances complémentaires et tableaux des fonds spéciaux 1995-2010 (dotation) ; décret n° 93-1187 et modifications du décret n° 91-1391 (prélèvements à l'importation) |
-| Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, avec une section « effectifs et masse salariale », français seul ; inscrit à l'accueil le 20 octobre 2026 (partie V) ; séries budgétaires 2016-2024 et 1987-2009 ; rien de budgétaire entre 2010 et 2016 ni avant 1987 ; forme (volume ou chapitre) à trancher par la revue | Articles « octroi de la garantie de l'État » des lois de finances de 1995 à 2015, fascicules locaux : suite de la série légale du plafond (1959-60 à 1994 rédigée le 23 octobre 2026) ; totaux des budgets de 1959-60 à 1985, scans à océriser |
+| Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, avec une section « effectifs et masse salariale », français seul ; inscrit à l'accueil le 20 octobre 2026 (partie V) ; séries budgétaires 2016-2024 et 1987-2009 ; quatre flux de clôture du budget pour 2010-2016 (24 octobre 2026) ; ni transferts par entreprise avant 2016, ni encours de la dette garantie, ni série avant 1987 ; forme (volume ou chapitre) à trancher par la revue (note dans la section du volume) | Lois de finances de 2016 à 2024 (articles sur la garantie) ; transferts par entreprise 2010-2015 ; totaux des budgets de 1959-60 à 1985 (voir la section du volume) |
 | Santé | Volume X, première rédaction le 12 octobre 2026, français seul : histoire, couverture, hôpital, médecine de ville ; dépenses du département 2018-2023 et comptes de la CNAM 2016-2021 intégrés, comptes 2011-2015 lus à l'image le 15 octobre ; les prestations en espèces restent dans « Prestations sociales » | Statistiques de prestations de la CNAM, lisibles en couche texte dans le corpus ; ventilation de la dépense par prestation à obtenir hors JORT |
 | Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense ; lectures des 18 et 19 octobre à relire à la revue ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001, arrêté de 1982 : fascicules au corpus, à lire à l'image (§ 9 du plan) |
 
@@ -3495,16 +3495,27 @@ les dinars constants sont retirés du volume.
 
 Ce qui reste :
 
-- **2010-2016 : aucune série budgétaire.** Le rapport de l'Unité de suivi (Présidence du
-  gouvernement) que cite le Livre blanc donnerait 2010-2014, peut-être 2010-2016 ; non obtenu
-  (fiche `r-ep-rapport-unite-suivi-2010-2014`). À chercher dans les archives du web avant toute
-  demande à l'administration.
-- **Avant 1987, et avant 2016 pour les transferts et la dette garantie** : rien (fiche
-  `r-ep-series-budgetaires-avant-2016`). Pistes non ouvertes : rapports annuels de la Banque
-  centrale, lois de règlement, Cour des comptes (dette publique extérieure, 2018), plans de
-  développement. Le plafond des garanties est lu de 1958-59 à 1994 (voir le point « Plafond
-  légal » plus bas) ; de 1995 à 2015, fascicules **lisibles** dans le corpus, articles à lire.
-  Recettes de cession après 2009 : aucune série.
+- **2010-2016 : quatre flux de clôture, versés le 24 octobre 2026** (série `cdc-cloture-entreprises-publiques`
+  de `tunisia-data`, section `#sec-ep-lp-cloture`, figure `fig-ep-cdc`, trois tableaux repliés) : versements au budget
+  (« transferts des entreprises publiques et profits du Trésor », total et lignes), principal et intérêts de la
+  dette garantie payés par l'État, remboursements de prêts reçus, recettes de privatisation inscrites au budget,
+  d'après les rapports de la Cour des comptes sur la clôture du budget des gestions 2011 à 2016 (chacun avec la
+  gestion précédente). **Ce que la série n'est pas** : ni transferts du budget aux entreprises (les rapports
+  ventilent par ministère et par nature), ni encours de la dette garantie (la Cour écrit chaque année que le
+  compte général ne porte pas la situation des prêts rétrocédés ni des prêts garantis). **Restent** : transferts
+  par entreprise 2010-2015 (rapports sur les transferts et les garanties annexés aux lois de finances d'avant
+  2020, lois de règlement, rapports annuels de la Banque centrale) ; rapport de clôture de la gestion 2010
+  absent du catalogue de la Cour ; fonds de restructuration du capital des entreprises à participation publique
+  et recapitalisations des banques publiques en réalisation (tableaux des fonds spéciaux de chaque rapport) ;
+  intérêts de 2012 à 2014 lus à la couche texte (recoupés d'un rapport à l'autre) ; rapport de l'Unité de suivi
+  (Présidence du gouvernement) que cite le Livre blanc, non obtenu (fiche `r-ep-rapport-unite-suivi-2010-2014`).
+  PIB : base 2015, rétropolée par l'INS pour 2010-2014, dite sous la figure.
+- **Avant 1987, et avant 2016 pour les transferts par entreprise et l'encours de la dette garantie** : rien
+  (fiche `r-ep-series-budgetaires-avant-2016`, passe du 24 octobre 2026, résultat partiel). Pistes non
+  ouvertes : rapports annuels de la Banque centrale, lois de règlement du Journal officiel, Cour des comptes
+  (dette publique extérieure, 2018), plans de développement. Le plafond des garanties est lu de 1958-59 à 2015
+  (voir le point « Plafond légal » plus bas). Recettes de cession : 1987-2009 (Direction générale de la
+  privatisation) et 2010-2016 (clôture) ; rien depuis 2017.
 - **Annexes du projet de loi de finances pour 2026** : non obtenues (fiche
   `r-ep-annexes-plf-2026`).
 - **« Hors compensation, hors caisses » non calculé** : le total des transferts (annexe 8)
@@ -3537,8 +3548,9 @@ Ce qui reste :
 - **Plafond légal de la garantie, 1958-59 à 2015 — fait le 23 octobre 2026**
   (`docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md`, §§ 1 à 6, section
   `#sec-ep-garanties-plafond-legal`, figure `fig-ep-plafond-legal`, registre `tbl-ep-plafond-registre`
-  et `tbl-ep-garanties-commission` repliés, relevé `listes/plafond-garanties-lois-de-finances.csv`
-  contrôlé par `tests/test_listes_entreprises_publiques.py`). Soixante et une lois et textes lus aux
+  et `tbl-ep-garanties-commission` repliés ; série `jort-lf-plafond-garanties` de `tunisia-data`, lue par
+  `figures/listes.py` depuis le cache du précis le 24 octobre 2026, contrôlée par
+  `tests/test_listes_entreprises_publiques.py`). Soixante et une lois et textes lus aux
   fascicules français du corpus : trente-huit de 1958-59 à 1994 (reconnaissance de caractères) ;
   vingt-trois de 1995 à 2015 (couche texte ; polices codées de 1999 à 2004 déchiffrées), dont deux
   relèvements en cours de gestion — loi n° 2002-90 (2002 : de 950 à 1 800 MD) et décret-loi
@@ -3553,7 +3565,7 @@ Ce qui reste :
   de l'Office national de l'huile (loi de finances pour 1997, art. 17, 980 MD), lue et non versée ;
   article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin) ; acte de la
   commission d'instruction ; prêts du Trésor aux entreprises publiques (article voisin de chaque loi,
-  40 MD de 1995 à 2005 et 100 MD de 2013 à 2015, montants vus, pas en série) ; budgets d'équipement et de développement de 1961 à 1985 et réalisation du budget avant 1986
+  40 MD de 1995 à 2005 et 100 MD de 2013 à 2015, montants vus, pas en série) ; lois modifiant un budget de capital en cours d'année et réalisation du budget avant 1986
   (fiche `r-ep-budget-etat-1959-1985`) ; PIB de 1959-60 et de 1960 ; libellés arabes de la figure ; alias arabe transitoire `lf-1978` à retirer après la
   retraduction (`docs/notes/biblio-a-rapatrier.md`). **Dénominateurs d'avant 1986 (§ 7 de la note)** : établi le budget ordinaire voté (titre I ;
   recettes ordinaires = crédits des dépenses de gestion ou courantes) de 1959-60 à 1986 (les crédits de
@@ -3561,9 +3573,7 @@ Ce qui reste :
   vue en part du budget de la figure sur deux segments séparés en 1986 (budget ordinaire voté, puis dépenses
   réalisées hors service de la dette) ; aucun total de l'État (budget d'équipement non lu, contribution du
   budget ordinaire à compter une fois). Notion « budget ordinaire » non versée au glossaire, faute de terme
-  arabe attesté par un texte lu. **À reporter dans `tunisia-data`** (signalé, non versé) : la série du plafond
-  légal (montant fixé, montant en vigueur à la fin de la gestion), 1959-60 à 2015, et la série du budget
-  ordinaire voté, 1959-60 à 1986.
+  arabe attesté par un texte lu. **Versé dans `tunisia-data`** : séries `jort-lf-plafond-garanties` (montant fixé, montant en vigueur à la fin de la gestion, 1958-59 à 2015) et `jort-lf-budget-ordinaire` (1959-60 à 1986) ; le relevé du plafond du livre est retiré, celui du budget ordinaire reste dans le livre pour ses colonnes d'article et de page (la série porte la localisation en une colonne).
 - **Second passage de la note** (son § 8) : ventilation par nature de 2023 (écart imprimé de
   23,0 MD) ; encours des prêts rétrocédés (rapport sur la dette publique, pages repérées) ;
   rapports sur la dette publique des éditions LF 2021 et LF 2024 ; page « bilan global » de la
@@ -3604,6 +3614,47 @@ Ce qui reste :
 - **Intégration du volume** : livre arabe et `_quarto.yml` arabe, page d'accueil, comptes de
   livres (`AGENTS.md`, README), collection Zotero dans `sync_biblio.py`, libellés arabes des
   figures (`figures/entreprises_publiques.py`, table `LIB`).
+- **Budget d'équipement et total de l'État avant 1986 — fait le 24 octobre 2026** (relevé
+  `listes/budget-equipement-lois-de-finances.csv` et manifeste, test
+  `test_budget_d_equipement_et_total_de_l_etat`, tableau replié `tbl-ep-budget-etat` dans la section du plafond ;
+  seize clés de lois neuves dans `entreprises_publiques/references.json`, à promouvoir au fonds commun). Vingt-cinq
+  textes lus à l'image, 1961 à 1986 : voies et moyens égaux aux crédits de paiement partout ; total de l'État =
+  budget ordinaire + crédits de paiement − contribution du budget ordinaire, **établi par la loi pour 1983 seule**
+  (1 753 MD), calculé selon le même mécanisme pour les autres gestions ; vide pour 1962 (montant provisoire
+  abrogé), 1962-1964 (montant triennal), 1963 et 1964. Avant 1985 les voies et moyens comprennent les budgets annexes
+  (le raccord 1984-1985 n'est pas à périmètre égal). **Restent** : lois modificatives et complémentaires (n° 70-59,
+  71-58, 74-76, 84-3, 81-70, 82-27, 83-81) ; gestions 1959-60, 1963, 1964 sans montant annuel ; réalisation avant
+  1986 ; reversement du total dans `tunisia-data` (relevé versionné dans le livre pour l'instant) ; la figure du
+  plafond garde le budget ordinaire pour dénominateur (le total calculé n'y est pas encore substitué). Correction :
+  la contribution du budget ordinaire en 1961 est de 0,6 MD (les 3 MD de la note du 23 octobre sont les emprunts).
+- **Gestions 2010-2016, lois de finances 2016-2024** : voir les points « 2010-2016 » et « Plafond légal » ci-dessus ;
+  le plafond de 2016 à 2024 vient des annexes du ministère (série `garanties-etat`), les articles des lois de
+  finances de 2016 à 2024 restent à lire pour que la série légale rejoigne les annexes.
+- **Forme du livre : volume ou chapitre — décision laissée à la revue.** Éléments : (a) le livre n'a qu'un chapitre
+  (`_relation_financiere.qmd`, environ 1 200 lignes) et une annexe ; (b) ses figures, ses séries et son plan
+  (mise en place, réformes, état du droit, longue période) sont ceux d'un chapitre de partie V ; (c) le volume
+  n'existe qu'en français et n'est pas lié depuis l'accueil comme les autres ; (d) la matière s'est étendue
+  (garanties, dettes croisées, dividendes, cessions, effectifs, 2010-2016, budget avant 1986) au point que la
+  scission du chapitre selon le critère de `docs/conventions-redaction.md` § 4 est plausible : relation financière,
+  garanties et dette garantie, cessions, effectifs. Un volume suppose un livre arabe et un `_quarto.yml` arabe
+  tenus à la main ; un chapitre de la partie V évite cette charge mais allonge un volume déjà chargé. Aucune
+  décision prise ici.
+- **État chiffré des lacunes restantes du volume (24 octobre 2026)** :
+
+  | Lacune | État | Raison |
+  |---|---|---|
+  | Transferts du budget aux entreprises, par entreprise, 2010-2015 | 0 année sur 6 | rapports de clôture sans ventilation ; annexes d'avant 2020 non ouvertes |
+  | Encours de la dette garantie avant 2016 | 0 année sur 6 | la Cour écrit que le compte général ne le porte pas |
+  | Rapport de clôture de la gestion 2010 | 1 sur 7 gestions absent du catalogue | valeurs de 2010 prises à la comparaison du rapport 2011 (3 flux sur 4) |
+  | Intérêts de la dette garantie 2012-2014 | 3 sur 7 années lues à la couche texte | recoupées d'un rapport à l'autre, non relues à l'image |
+  | Articles de garantie des lois de finances 2016-2024 | 8 lois sur 9 non lues (la loi de 2020 l'est) | plafond tiré des annexes ; seule la loi de 2020 lue |
+  | Lois modificatives des budgets de capital 1970-1984 | 7 lois non lues | montants du vote initial |
+  | Budget de l'État avant 1986 : total calculé | 23 gestions sur 26 (1961 à 1986) ; établi par la loi pour 1983 | sans total : 1962 (provisoire), 1963 et 1964 (triennal 1962-1964) ; 1959-60 sans budget d'équipement |
+  | Réalisation du budget avant 1986 | 0 année sur 27 | lois de règlement et rapports de la Banque centrale non ouverts |
+  | Recettes de cession depuis 2017 | 0 année | aucune source ouverte |
+  | Fonds de restructuration du capital, recapitalisations en réalisation | 0 année | tableaux des fonds spéciaux non lus |
+  | Rapport de l'Unité de suivi 2010-2014 | 1 document | non obtenu (fiche `r-ep-rapport-unite-suivi-2010-2014`) |
+
 ### Le transport public (`_transport.qmd`, 11 octobre 2026)
 
 Chapitre nouveau, écrit sur `docs/notes/compensation-transport-2026-10-11.md` et sur les sept

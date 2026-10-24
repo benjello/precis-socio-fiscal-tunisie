@@ -8,10 +8,12 @@ entreprises publiques »).
     ls.figure_plafond(caption=…, note_lecture=…)  # plafond légal de la garantie, 1959-2015
     ls.tableau_plafond(caption=…)                 # registre des articles, avec ancres r-ep-pl-…
 
-D'OÙ VIENNENT LES DONNÉES. De deux relevés versionnés DANS le livre (`listes/*.csv`, chacun
-avec son manifeste `.csv.yml`) : ils transcrivent des listes fixées par décret et le tableau
-nominatif d'un rapport du ministère des Finances. Ce n'est pas une statistique de l'entrepôt :
-la figure les lit directement, comme `fiscalite/figures/regimes_incitation.py` lit les siens.
+D'OÙ VIENNENT LES DONNÉES. Des relevés versionnés DANS le livre (`listes/*.csv`, chacun avec
+son manifeste `.csv.yml`) : ils transcrivent des listes fixées par décret, le tableau nominatif
+d'un rapport du ministère des Finances et le budget ordinaire voté ; la figure les lit
+directement, comme `fiscalite/figures/regimes_incitation.py` lit les siens. Le PLAFOND de la
+garantie est, lui, une série de `tunisia-data` (`jort-lf-plafond-garanties`), lue par
+`figtools.series()` (cache du précis).
 
 RÈGLES.
 
@@ -42,8 +44,7 @@ ENSEMBLE = "entreprises-publiques-listes"
 ETABLISSEMENTS = "etablissements-entreprises-publiques"
 SORTIES = "sorties-recueil-privatisation"
 RECUEIL = "privatisation-recueil-operations"
-PLAFOND = "jort-lf-plafond-garanties"
-FICHIER_PLAFOND = "plafond-garanties-lois-de-finances"  # relevé versionné
+PLAFOND = "jort-lf-plafond-garanties"  # série de tunisia-data, lue par figtools.series
 
 BLEU, ORANGE, VERT, GRIS = "#0969da", "#bc4c00", "#1a7f37", "#57606a"
 # Année de la liste -> libellé de colonne
@@ -277,21 +278,6 @@ def tableau_sorties(caption: str, tbl_id: str = "tbl-ep-liste-sorties-recueil") 
 
 # --- plafond légal de la garantie de l'État, 1958-2015 -------------------------------------------
 
-figtools.register_provenance(
-    PLAFOND, titre="Plafond de la garantie de l'État fixé par la loi de finances, 1958-59 à 2015",
-    sources=_sources(FICHIER_PLAFOND), unite="millions de dinars courants",
-    perimetre=("article « octroi de la garantie de l'État » de chaque loi de finances, et lois "
-               "qui en modifient le montant en cours de gestion ; montant maximal dans la limite "
-               "duquel le ministre chargé des finances est autorisé à accorder la garantie du "
-               "Trésor, puis de l'État, en vertu des textes et conventions en vigueur"),
-    caveats=("Le plafond est un maximum légal annuel, non un montant de garanties accordées ni "
-             "un encours. 1958-59 est imprimé en francs et ne figure pas sur la figure. Les "
-             "lois de finances complémentaires dont l'index n'indique pas d'article sur la "
-             "garantie n'ont pas été lues en entier : celles de 1969 à 1991 le sont par leur seul "
-             "index, celles de 1995 à 2015 ne modifient pas le plafond. Les parts du PIB et des dépenses de "
-             "l'État sont des ordres de grandeur : le numérateur est un plafond voté, les "
-             "dénominateurs sont décrits sous « plafond-garantie-denominateurs »."))
-
 PLAFOND_DEN = "plafond-garantie-denominateurs"
 figtools.register_provenance(
     PLAFOND_DEN,
@@ -335,10 +321,23 @@ MESURES = {"md": "Millions de dinars courants", "pib": "En % du PIB",
            "dep": "En % du budget de l'État"}
 
 
+def _releve_serie(serie: str, colonnes: dict[str, str]) -> pd.DataFrame:
+    """Une série de l'entrepôt (cache du précis) sous la forme du relevé qu'elle remplace :
+    texte partout, cases vides pour les valeurs absentes, entiers sans « .0 »."""
+    d = figtools.series(serie).rename(columns=colonnes)
+    for c in d.columns:
+        if d[c].dtype.kind == "f" and (d[c].dropna() % 1 == 0).all():
+            d[c] = d[c].astype("Int64")
+        d[c] = d[c].astype("string").fillna("").astype(str)
+    return d
+
+
 def plafond() -> pd.DataFrame:
-    """Relevé enrichi : une ligne par montant fixé ou modifié, avec le montant de la gestion
-    précédente (dernier montant en vigueur) pour les lois de finances de l'année."""
-    d = _lire(FICHIER_PLAFOND)
+    """Plafond de la garantie, lu dans la série `jort-lf-plafond-garanties` : une ligne par
+    montant fixé ou modifié, avec le montant de la gestion précédente (dernier montant en
+    vigueur) pour les lois de finances de l'année."""
+    d = _releve_serie(PLAFOND, {"valeur_md": "plafond_md", "valeur_avant_md": "plafond_avant_md",
+                                "valeur_imprimee": "plafond_imprime", "remarque": "precision"})
     d["plafond"] = pd.to_numeric(d["plafond_md"], errors="coerce")
     d["avant"] = pd.to_numeric(d["plafond_avant_md"], errors="coerce")
     precedent = None
@@ -633,5 +632,27 @@ def tableau_budget(caption: str, tbl_id: str = "tbl-ep-budget-ordinaire-registre
                      "aux articles 1er et 2, p. 2876")
         lignes.append([f"gestion {r['gestion']}", f"[@{r['cle']}, {loc}]", fixe])
     out = ["| Date d'effet | Texte, article et page | Ce que le texte fixe |", "|---|---|---|"]
+    out += ["| " + " | ".join(l) + " |" for l in lignes]
+    print("\n".join(out) + f"\n\n: {caption} {{#{tbl_id}}}\n")
+
+
+def tableau_budget_etat(caption: str, tbl_id: str = "tbl-ep-budget-etat") -> None:
+    """Budget ordinaire voté, budget d'équipement (puis de capital) voté et total de l'État sans
+    double compte de la contribution du budget ordinaire, une ligne par gestion de 1961 à 1986.
+    Le total n'est écrit que s'il est calculé par le relevé ; celui de 1983 est établi par la loi."""
+    d = _lire("budget-equipement-lois-de-finances")
+    lignes = []
+    for _, r in d.iterrows():
+        if not r["voies_moyens_md"]:
+            continue
+        def n(x):
+            return _mnt(float(x)) if x else ""
+        total = r["total_etat_etabli_md"] or r["total_etat_calcule_md"]
+        mark = "" if not total else ("**" + _mnt(float(total)) + "**" if r["total_etat_etabli_md"] else _mnt(float(total)))
+        lignes.append([f"gestion {r['gestion']}", f"[@{r['cle']}, p. {r['page_voies_moyens']}]",
+                       n(r["budget_ordinaire_md"]), n(r["credits_paiement_md"]),
+                       n(r["contribution_budget_ordinaire_md"]), mark])
+    out = ["| Date d'effet | Texte et page | Budget ordinaire voté | Budget d'équipement ou de capital, crédits de paiement | Dont contribution du budget ordinaire | Total de l'État |",
+           "|---|---|---:|---:|---:|---:|"]
     out += ["| " + " | ".join(l) + " |" for l in lignes]
     print("\n".join(out) + f"\n\n: {caption} {{#{tbl_id}}}\n")
