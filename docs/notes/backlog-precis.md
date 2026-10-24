@@ -128,7 +128,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Caisses de sécurité sociale | Livre créé le 4 octobre 2026 : présentation, histoire (rédigée le 4 octobre), statut-cadre, comptes par régime, état des caisses, comptes de la longue période, chronologie ; rétrospective CNSS 1990-2004 tracée ; statuts annexés du personnel et couverture des déficits agricoles à obtenir hors JORT | Loi n° 98-91 (JORT n° 89 de 1998), fascicule local lisible, pour les modificatifs du statut-cadre |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 | Marché du travail | Volume VIII : institutions, notions, salaire minimum, conventions collectives, négociations, politiques de l'emploi, annexe des conventions branche par branche (8-9 octobre 2026 ; grilles tracées depuis le modèle, 193 cases illisibles sur les fascicules) | Décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire), fascicules au corpus ; grilles du textile 1983-1993 et du bâtiment 1991-1992 : scans français au corpus, OCR à lancer |
-| Compensation | Volume IX, huit chapitres réécrits le 6 octobre 2026 (institution, réformes, dépense, carburants, électricité et gaz, transport, rapports extérieurs, incidence) ; montant versé de la dotation de la Caisse inconnu pour dix années (subvention prévue 1987-1994 versée le 24 octobre 2026) ; tarifs MT/HT 1994-2003 non publiés | Lois de règlement, budget économique, lois de finances complémentaires et tableaux des fonds spéciaux 1995-2010 (dotation) ; décret n° 93-1187 et modifications du décret n° 91-1391 (prélèvements à l'importation) |
+| Compensation | Volume IX, huit chapitres réécrits le 6 octobre 2026 (institution, réformes, dépense, carburants, électricité et gaz, transport, rapports extérieurs, incidence) ; montant versé de la dotation de la Caisse inconnu pour dix années, dont cinq (2003, 2006, 2008, 2009, 2011) ont une ligne budgétaire d'ordre de grandeur (subvention prévue 1987-1994 et ligne 2003-2011 versées le 24 octobre 2026) ; tarifs MT/HT et gaz 1994-2003 versés le 24 octobre 2026, grille d'octobre 1993 non publiée | Lois de règlement 1988 et 1989 (scans à lire à l'image), budget économique, lois de finances complémentaires et tableaux des fonds spéciaux 1995-2010 (dotation) ; décrets de suspension du prélèvement à l'importation (n° 97-2509 à 2007-1199) ; produit annuel des prélèvements ; décret n° 93-1187 et modifications de 2002, 2009 et 2015 du décret n° 91-1391 lus le 24 octobre 2026 |
 | Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, avec une section « effectifs et masse salariale », français seul ; inscrit à l'accueil le 20 octobre 2026 (partie V) ; séries budgétaires 2016-2024 et 1987-2009 ; rien de budgétaire entre 2010 et 2016 ni avant 1987 ; forme (volume ou chapitre) à trancher par la revue | Articles « octroi de la garantie de l'État » des lois de finances de 1995 à 2015, fascicules locaux : suite de la série légale du plafond (1959-60 à 1994 rédigée le 23 octobre 2026) ; totaux des budgets de 1959-60 à 1985, scans à océriser |
 | Santé | Volume X, première rédaction le 12 octobre 2026, français seul : histoire, couverture, hôpital, médecine de ville ; dépenses du département 2018-2023 et comptes de la CNAM 2016-2021 intégrés, comptes 2011-2015 lus à l'image le 15 octobre ; les prestations en espèces restent dans « Prestations sociales » | Statistiques de prestations de la CNAM, lisibles en couche texte dans le corpus ; ventilation de la dépense par prestation à obtenir hors JORT |
 | Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense ; lectures des 18 et 19 octobre à relire à la revue ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001, arrêté de 1982 : fascicules au corpus, à lire à l'image (§ 9 du plan) |
@@ -3226,14 +3226,18 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
 - **Arabe** : `precis/ar/compensation/_quarto.yml` (tenu à la main) porte en commentaire les six
   chapitres, dont `_carburants.qmd` et `_exterieurs.qmd` ; décommenter chaque chapitre quand sa
   traduction est livrée, puis rendre le livre arabe.
-- **Bibliographie — clés manquantes, citées en clair dans le texte** (bibliographe) :
-  `bct-ra-1987` (dotation de 189 MD, citation sur la loi de finances pour 1987, p. 71) et
-  `bct-ra-1997` (dotation de 320 MD, p. 91) ; `decret78-316` (taxe unique à 7,120 D/hl) ;
-  `minenergie-opendata-prix-vente-petroliers` (moyennes annuelles 1990-2016, fichier aux
-  archives du web, **non versé à l'entrepôt**) ; `ins-bms` (présente dans « Retraites » seulement) ;
-  dix articles de presse de la frise 2002-2018 ; loi de finances pour 1981 et pour 1987, loi
-  n° 91-98, arrêtés des 11 octobre 1990 et 7 juillet 1992, arrêté du 10 mai 2024 (la loi n° 63-13,
-  caisse des transports routiers, est versée le 11 octobre 2026 : clé `loi63-13`). La collection Zotero « Compensation » reste à créer.
+- **Bibliographie** (bibliographe, état du 24 octobre 2026) : les clés `bct-ra-1987`, `bct-ra-1997`,
+  `decret78-316`, `minenergie-opendata-prix-vente-petroliers`, `ins-bms`, `lf-1981`,
+  `loi91-98-lf1992` et `loi86-106-lf1987` existent (le précédent état de cette liste était périmé).
+  Versées le 24 octobre 2026 (FR et AR, compensation) : `arrete-1990-10-11-cgc`,
+  `arrete-1992-07-07-cgc`, `arrete-2024-05-10-redevance-patisseries`, `lfc-2008`, `fipa-2002-06-electricite-aout-2000`,
+  `fipa-2003-08-gaz`, et dix-sept décrets de prélèvement (`decret93-1187`, `decret95-851`,
+  `decret95-1212`, `decret97-2509`, `decret2002-2227`, `decret2003-2048`, `decret2004-2314`,
+  `decret2005-213`, `decret2005-2931`, `decret2006-1`, `decret2006-4`, `decret2006-1835`,
+  `decret2007-8`, `decret2007-10`, `decret2007-1199`, `decret2009-2293`, `decret2015-50`). Restent : les articles de
+  presse de la frise des prix 2002-2018 (cités en clair dans le tableau, non versés) ; la collection
+  Zotero « Compensation », à créer ; la loi de finances pour 2024 (art. 45), fascicule
+  n° 144 de 2023 absent du corpus local et de pist.tn.
 - **Glossaire** (terminologue, 24 octobre 2026) : toutes les notions listées jusqu'ici existent
   et sont ancrées ; le mécanisme de 2009 est décrit dans `ajustement-automatique-prix-carburants`.
   Dix entrées ajoutées : `tranche-economique`, `tranche-normale`, `fonds-transition-energetique`,
@@ -3273,17 +3277,37 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     initiales 1987-1994, tableaux des fonds spéciaux lus à l'image (188, 188, 188, 300, 272, 255,
     245, 230 MD ; pages dans le tableau) ; crédits d'interventions du ministère du commerce 2000,
     2001, 2002 et 2011 (`tbl-compensation-lf-commerce`), non désignés comme la dotation (251,2 MD
-    en 2002 pour 235 MD de dotation) ; 70 MD de 2007 dépensés en 2008. **Restent** : montant versé
-    de ces dix années (lois de règlement, budget économique, lois de finances complémentaires,
-    tableaux des fonds spéciaux des lois 1995-2010 non ouverts). Recettes propres après 1999,
+    en 2002 pour 235 MD de dotation) ; 70 MD de 2007 dépensés en 2008. **Complété le 24 octobre
+    2026** : lois de règlement des gestions 1990 et 2000 à 2009 lues (fonds spéciaux en un seul
+    total, la Caisse n'y est pas nommée) ; ligne « compensation » du budget du ministère du
+    commerce (rapports sur les finances publiques) rapprochée de la dotation de la BCT pour 2003,
+    2006, 2008, 2009 et 2011 (ordre de grandeur, non montant ; égale en 2004 et 2010, écart en
+    2005 et 2007). **Seconde passe** : lois de règlement des gestions 1988 et 1989 lues
+    à l'image (totaux des fonds spéciaux seuls : 460,2 et 659,82 MD) ; lois de finances 1995-2011
+    balayées : la Caisse n'est nommée qu'en 2011 ; arrêtés des 11 octobre 1990 (302 → 320 MD) et
+    7 juillet 1992 (270 → 348 MD) lus ; prêts du Trésor de 95 MD (LF 1981, art. 58) et de 73 MD
+    (LF 1992, art. 77) versés ; suppression de la taxe spéciale de compensation à l'importation
+    (décret n° 78-315, LF 1981, art. 33) ; crédits du ministère du commerce des LFC 2008 et 2009.
+    Tableau III-1 du mémorandum de 1985 versé (`_exterieurs.qmd`) ; prix de la bouteille de
+    gaz du 4 août 1992 (3,800 D) lu à l'image ; arrêté du 10 mai 2024 sur les pâtisseries versé.
+    **Restent** : montant versé de 1988-1990, 2000, 2001 et, au sens strict, des
+    cinq années précédentes (lois de règlement 1988 et 1989 à lire à l'image, budget économique,
+    lois de finances complémentaires, tableaux des fonds spéciaux des lois 1995-2010 non
+    ouverts). Recettes propres après 1999,
     charges par produit de 1984, 1989-1991 et 1994, prêts et avances du Trésor par année : non
     établis.
   - **Loi de finances pour 1987** : lue le 24 octobre 2026 (loi n° 86-106, JORT n° 78 de 1986,
     art. 91 et 92, p. 1623 ; tableau L, p. 1677). Fait.
   - **Prélèvements à l'importation au profit de la Caisse, 1990-1993** (nouvelle section
-    `#sec-compensation-prelevements-importation`) : huit décrets lus à l'image ; à lire : décret
+    `#sec-compensation-prelevements-importation`) : huit décrets lus à l'image ; ensuite : décret
     n° 93-1187 du 24 mai 1993 et modifications du décret n° 91-1391 (n° 2002-2227, 2009-2293,
-    2015-50) ; produit annuel (fiche `r-prelevements-importation-cgc`). Clés `decret90-1193`,
+    2015-50) : **lus et versés le 24 octobre 2026** (clés `decret93-1187`, `decret2002-2227`,
+    `decret2009-2293`, `decret2015-50`, FR et AR) ; **seconde passe** : onze décrets de suspension ou
+    de réduction de 1998 à 2007 lus (tableau `tbl-compensation-prelevements-suspensions`) et décrets
+    n° 95-851 (bovins, 8 mai 1995) et n° 95-1212 (fruits, 10 juillet 1995), tous deux au profit
+    de la Caisse (tableau `tbl-compensation-prelevements-1995`) ; restent les décrets de
+    suspension de 1998 à 2002 et d'après 2007, la suite du tarif de 1995 (p. 1534) et le produit
+    annuel (fiche `r-prelevements-importation-cgc`). Clés `decret90-1193`,
     `decret90-1194`, `decret91-1391`, `decret92-1340`, `decret93-1605`, `decret93-1924`,
     `decret93-2115`, `decret93-2116` versées (FR et AR, compensation).
   - **La Caisse reste un fonds spécial du Trésor** : elle figure aux tableaux des fonds spéciaux
@@ -3343,7 +3367,12 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     gouvernemental remplaçant la liste après la loi n° 2015-36 (fiche
     `r-decret-91-1996-liste-apres-2015`) ; jour d'effet des grilles d'octobre 1993 et de juin
     1994 (fiche `r-tarifs-electricite-grilles-1993-2003`) ; moyenne et haute tension et gaz de
-    1994 à 2003, aucune grille publiée (étude de l'ANER d'avril 2000 lue le 24 octobre 2026 : prix moyens par niveau de tension 1996-1998 en graphique sans valeurs, annexes de tarifs absentes) ; grilles du gaz de 2001 à 2003 ;
+    1994 à 2003 **versés le 24 octobre 2026** (grilles de juin 1994, août 2000, août 2001 et
+    avril 2003 ; gaz ; pages des agences publiques et ESMAP relus aux sources) ; restent la
+    grille d'octobre 1993 (moyenne et haute tension, gaz), les soir et nuit de la moyenne
+    tension en 2001, la formule de la haute pression de 1992 à avril 2000 et la grille « Mai
+    2004 » de la FIPA (étude de l'ANER d'avril 2000 lue : prix moyens par niveau de tension
+    1996-1998 en graphique sans valeurs, annexes de tarifs absentes) ;
     contradiction de 2003 (90 ou 94) et écart de 2005 avec l'INS ; tarifs du Journal officiel
     de 1975 à 1990 à relire (moyenne et haute tension, unité de la prime de 1975 à 1982) ; haute
     tension de septembre 2012, moyenne pression de 2012-2013 ; heures des postes avant 2014 ;
