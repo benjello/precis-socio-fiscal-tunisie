@@ -42,45 +42,60 @@ En 2026, l'État verse aux ménages que le programme Amen social classe parmi le
 #| echo: false
 #| output: asis
 figtools.figure_tabs(
-    fig_as.fig_aide_permanente(), fig_as.table_aide_permanente(),
-    fig_as.SERIE_PNAFN, fig_as.SERIE_PNAFN_BM, *fig_as.SERIES_IPC,
+    fig_as.vues_aide_permanente(), fig_as.table_aide_permanente(),
+    fig_as.SERIE_PNAFN, fig_as.SERIE_ETUDES, fig_as.SERIE_PNAFN_BM, *fig_as.SERIES_IPC,
     slug="fig_pnafn_allocation",
     caption=("Allocation mensuelle du programme national d'aide aux familles nécessiteuses, "
-             "en dinars courants et en dinars constants de 2025, 1987-2024 : série du "
-             "chapitre et, à part, quinze valeurs annuelles d'une figure de la Banque "
-             "mondiale, 1987-2021"),
+             "1987-2024, en dinars courants puis en dinars constants de 2025 : série du "
+             "chapitre, montant constaté en 2024 et cinq familles de montants rapportés par "
+             "des documents, jamais reliées entre elles"),
     note_lecture=(
-        "La courbe grise retrace les onze paliers de l'allocation en dinars courants, de "
-        "7,7 dinars en 1987 à 180 dinars en 2018. La courbe orange donne le pouvoir d'achat "
-        "du montant applicable, en dinars de 2025 : montant × indice des prix de 2025 / "
-        "indice des prix de l'année. Elle est recalculée au début de chaque année, ce qui "
-        "montre l'érosion entre deux revalorisations ; les losanges signalent les changements "
-        "de palier. Les 7,7 dinars de 1987 valent 48,7 dinars de 2025 ; les 36,3 dinars de "
-        "2000, 120,9 ; les 180 dinars de 2018, 286,6 à leur fixation et 189,7 en 2024. La "
-        "conversion emploie l'indice annuel moyen des prix à la consommation : pour un "
-        "changement intervenu en cours d'année, elle ne mesure pas les prix du mois exact. Le "
-        "montant de 180 dinars est constaté par l'arrêté conjoint du 10 juillet 2024 à la "
-        "date de sa publication : la figure le prolonge jusqu'à cette année. Cet arrêté ne "
-        "dit pas depuis quand ce montant est servi, et la date du 1^er^ avril 2018 à laquelle "
-        "la série le place n'est établie par aucun texte identifié. Les sources "
-        "administratives de toutes les dates et des autres montants restent à établir. "
-        "Les carrés bleus et les triangles violets sont une seconde famille, jamais reliée "
-        "à la première : les quinze valeurs annuelles du transfert mensuel du programme "
-        "qu'une figure de la Banque mondiale de 2022 imprime, en dinars courants puis "
-        "converties en dinars de 2025 par le même indice. Chaque point est placé au milieu "
-        "de son année ; rien n'est interpolé entre deux points. Cette figure donne pour "
-        "source « l'Institut national de la statistique et le ministère des Affaires "
-        "sociales », sans citer de texte. Les deux familles concordent en 1987 (7,7 "
-        "dinars), en 2000 (36,3), en 2015 (150) et de 2019 à 2021 (180) ; en 2012, 2013 et "
-        "2014, la valeur de la Banque mondiale (92,5 ; 105 ; 115) égale la moyenne sur "
-        "l'année des deux paliers de la série. Elles divergent ailleurs : 15 dinars en 1990 "
-        "et 25,8 en 1995, quand la série tient 7,7 dinars de 1987 à 2000 ; 43,3 en 2005, "
-        "quand elle tient 36,3 de 2000 à 2009 ; 56,7 en 2010, 68,3 en 2011 et 180 en 2018, "
-        "années où la série passe de 56,7 à 63,3, de 63,3 à 70 et de 150 à 180. En dinars "
-        "de 2025, l'écart est de 77,1 contre 39,6 en 1990, de 100,7 contre 30,1 en 1995 et "
-        "de 126,7 contre 106,2 en 2005. Aucune des deux familles n'est établie par un "
-        "texte : la figure ne tranche pas. Le transfert de l'Amen social, de 180 dinars en "
-        "2020 à 280 dinars en 2026, est au tableau de son montant de base."),
+        "**Ce que montre la figure.** Tous les montants mensuels de l'allocation que les "
+        "documents donnent de 1987 à 2018, avec un seul montant constaté par un texte, "
+        "180 dinars à la date de l'arrêté conjoint du 10 juillet 2024 (carré noir). La courbe "
+        "pointillée et ses cercles creux retracent les onze paliers de la série du chapitre, "
+        "de 7,7 dinars en 1987 à 180 dinars en 2018 : aucun n'est établi par un texte, et la "
+        "marque creuse le dit. Chaque autre marque est une famille à part, avec sa couleur et "
+        "sa forme, jamais reliée à une autre ni à la série : un point est un montant que le "
+        "document cite, à l'année ou au mois qu'il donne, et rien n'est interpolé. Le second "
+        "onglet donne les mêmes points en dinars de 2025 (montant × indice des prix de 2025 / "
+        "indice de l'année, indice annuel moyen des prix à la consommation ; pour un mois, "
+        "l'indice de son année). Survoler un point en donne la valeur et la date.\n\n"
+        "**Les familles et leur méthode.** *Banque mondiale, figure de 2022* (carrés bleus) : "
+        "le premier financement additionnel d'un projet de la Banque imprime quinze valeurs "
+        "annuelles du transfert du programme, de 1987 à 2021, avec pour source « l'Institut "
+        "national de la statistique et le ministère des Affaires sociales » et sans texte ; les "
+        "valeurs sont lues sur les étiquettes de la figure, une par année, sans calcul. "
+        "*Rapport de ciblage de 2021* (losanges verts) : un rapport technique de la Banque pour "
+        "le ministère des Affaires sociales, consacré à un modèle d'approximation des moyens "
+        "pour classer les ménages ; un encadré (p. 50) relate l'évolution du transfert du "
+        "programme en six montants, sans source, sans texte et sans calcul ; il donne deux "
+        "montants pour 2014. *BAD et CRES, 2013* (triangle rouge) : version provisoire d'un "
+        "rapport de la Banque africaine de développement avec le Centre de recherches et "
+        "d'études sociales, qui simule la réaffectation du budget des subventions alimentaires vers le "
+        "programme avec l'enquête de l'INS de 2010 ; la page 12 décrit le programme tel "
+        "qu'il est en 2012 : 100 dinars par mois et par famille, plus 10 dinars par enfant "
+        "scolarisé (hors figure, comme grandeur distincte). *Ministère et UNICEF, 2019* "
+        "(triangle violet) : étude de faisabilité d'une allocation pour enfants, qui chiffre "
+        "son coût et son impact par la simulation de plusieurs scénarios ; la note 4 de la page 18 rapporte la "
+        "décision du gouvernement de janvier 2018 de porter le montant à 180 dinars. "
+        "*L'Économiste maghrébin, 15 janvier 2018* (croix cyan) : un article de presse qui "
+        "rapporte les propos du ministre (70 dinars « jusqu'à 2010 », 150 dinars « en 2017 ») "
+        "et l'ordre du chef du gouvernement de porter le montant à 180 dinars ; le point de "
+        "2010 est la fin d'une période, non la date d'un palier, et celui de janvier 2018 une "
+        "annonce, non une date d'effet. Aucun de ces documents ne cite le texte qui fixe le "
+        "montant.\n\n"
+        "**Ce que la comparaison montre.** Deux dates divergent, repérées par un trait : le "
+        "palier de 150 dinars est placé en 2014 par le rapport de ciblage et au 1^er^ janvier "
+        "2015 par la série, et celui de 180 dinars en février 2018 par le rapport de ciblage "
+        "et au 1^er^ avril 2018 par la série ; le ministre le place en 2017 pour 150 dinars. "
+        "Avant 2012, les familles ne coïncident que pour 1987 (7,7), 2000 (36,3) et 2010 "
+        "(56,7), et la presse donne 70 dinars là où le rapport de ciblage en donne 56,7 ; "
+        "la figure de 2022 donne 15 dinars en 1990 et 25,8 en 1995 là où la série tient 7,7. "
+        "Le plafond de 585 dinars de revenu annuel moyen ajusté de la circulaire du 27 mai 2011 "
+        "est une autre grandeur : il n'est pas sur la figure. Les montants de 2025 et 2026, "
+        "constatés ou plafonnés par les arrêtés conjoints, sont au tableau des arrêtés "
+        "(@tbl-nc-pnafn-arretes) : leur rattachement au seul programme n'est pas établi."),
     generated="{{< meta date >}}",
 )
 ```
@@ -89,7 +104,8 @@ figtools.figure_tabs(
 <!-- TODO (documentaliste) : fiabiliser les onze montants et dates de la série PNAFN ;
 voir https://github.com/openfisca/openfisca-tunisia/issues/462. Les quinze valeurs annuelles de la figure 4 du PAD4815 de la
 Banque mondiale (série `pnafn-transfert-smig-banque-mondiale`), tracées à part, contredisent la série en 1990, 1995 et 2005 et
-ne coïncident pas en 2010, 2011 et 2018 : constat inscrit à docs/notes/backlog-modele.md. -->
+ne coïncident pas en 2010, 2011 et 2018 : constat inscrit à docs/notes/backlog-modele.md.
+Le rapport de ciblage de 2021 (clé `mas-bm-ciblage-2021`, p. 50) redit six de ces montants sans texte (180 D en février 2018, 150 D en 2014) : pas de palier daté par un texte. -->
 
 <!-- TODO (rédacteur) : prolonger cette figure par la base du transfert de l'Amen social (2020-2026) et la renommer alors
 `fig-nc-aide-permanente` ; il manque une série du cache (`precis/_seriescache/`) pour le montant de base, à écrire par
@@ -773,7 +789,7 @@ La loi organique de 2019 maintient les programmes d'aides sociales antérieurs �
 
 L'allocation est une somme mensuelle versée aux familles inscrites au programme. La série disponible comporte onze paliers entre 1987 et 2018, de 7,7 à 180 dinars par mois (@fig-pnafn-allocation) ; aucun de ces paliers n'est fondé sur un texte identifié. À partir de 2024, trois arrêtés conjoints constatent son montant et organisent son relèvement dans la limite du transfert de l'Amen social.
 
-**Deux séries qui ne concordent pas avant 2012.** Une figure du document de financement additionnel de la Banque mondiale de 2022 imprime le transfert mensuel du programme pour quinze années, de 1987 à 2021, avec pour source « l'Institut national de la statistique et le ministère des Affaires sociales », sans texte de droit [@banquemondiale2022pad4815, fig. 4]. Elle donne 7,7 dinars en 1987, 15 en 1990, 25,8 en 1995, 36,3 en 2000, 43,3 en 2005, 56,7 en 2010, puis 180 dinars de 2018 à 2021. La série à onze paliers tient, elle, 7,7 dinars de 1987 à 2000 et 36,3 dinars de 2000 à 2009 : les deux concordent en 1987, en 2000, en 2015 et de 2019 à 2021, et divergent en 1990, 1995 et 2005 (@fig-pnafn-allocation). La conséquence porte sur le pouvoir d'achat de l'aide : en dinars de 2025, l'allocation de 1995 vaut 30,1 dinars selon la série à paliers et 100,7 selon la valeur de la Banque mondiale ; celle de 2005, 106,2 ou 126,7. Aucun des montants antérieurs à 2024 n'étant établi par un texte identifié, le pouvoir d'achat de l'aide n'est pas établi avant 2000, ni de 2000 à 2009 ; l'érosion que la série à paliers montre de 1987 à 1999 ne se retrouve pas dans les valeurs de la Banque mondiale, qui montent de 48,7 dinars de 2025 en 1987 à 120,9 en 2000.
+**Deux séries qui ne concordent pas avant 2012.** Une figure du document de financement additionnel de la Banque mondiale de 2022 imprime le transfert mensuel du programme pour quinze années, de 1987 à 2021, avec pour source « l'Institut national de la statistique et le ministère des Affaires sociales », sans texte de droit [@banquemondiale2022pad4815, fig. 4]. Elle donne 7,7 dinars en 1987, 15 en 1990, 25,8 en 1995, 36,3 en 2000, 43,3 en 2005, 56,7 en 2010, puis 180 dinars de 2018 à 2021. La série à onze paliers tient, elle, 7,7 dinars de 1987 à 2000 et 36,3 dinars de 2000 à 2009 : les deux concordent en 1987, en 2000, en 2015 et de 2019 à 2021, et divergent en 1990, 1995 et 2005 (@fig-pnafn-allocation). La conséquence porte sur le pouvoir d'achat de l'aide : en dinars de 2025, l'allocation de 1995 vaut 30,1 dinars selon la série à paliers et 100,7 selon la valeur de la Banque mondiale ; celle de 2005, 106,2 ou 126,7. Aucun des montants antérieurs à 2024 n'étant établi par un texte identifié, le pouvoir d'achat de l'aide n'est pas établi avant 2000, ni de 2000 à 2009 ; l'érosion que la série à paliers montre de 1987 à 1999 ne se retrouve pas dans les valeurs de la Banque mondiale, qui montent de 48,7 dinars de 2025 en 1987 à 120,9 en 2000. Un rapport de ciblage de la Banque mondiale pour le ministère des Affaires sociales relève six montants mensuels, sans citer de texte : 7,7 dinars en 1987, 36,3 en 2000, 56,7 en 2010, 115 en 2014, 150 en 2014 et 180 en février 2018 [@mas-bm-ciblage-2021, p. 50]. Ce relevé rejoint la série en 1987, en 2000 et en 2010, et date le palier de 180 dinars de février 2018, non d'avril ; il place celui de 150 dinars en 2014, quand la série le place en janvier 2015. Il ne ramène pas à des paliers datés par un texte les neuf montants intermédiaires. Le rapport sur le projet de budget actualisé de l'État pour 2012, d'avril 2012, prévoit le relèvement de 50 000 du nombre de familles nécessiteuses, pour 35 MD, et inscrit 106 MD de « منح للعائلات المعوزة » (aides aux familles nécessiteuses) parmi les dépenses d'intervention supplémentaires ; il ne donne pas de montant mensuel [@mf-budget-actualise-2012, exposé et tableau des dépenses de gestion]. Un rapport de la Banque africaine de développement et du Centre de recherches et d'études sociales, en version provisoire du 30 mars 2013, donne 100 dinars par mois et par famille en 2012, avec 10 dinars par enfant scolarisé (trois au plus) [@bad-2013-subventions-aides-directes, p. 12] : il rejoint le palier de 100 dinars de la série, sans en dater le début. Le même rapport rattache la liste des familles à une circulaire conjointe des ministères de l'Intérieur (n° 12) et des Affaires sociales (n° 3) du 27 mai 2011, qui fixe à 585 dinars le revenu annuel moyen ajusté au-delà duquel une famille n'est pas inscrite [@bad-2013-subventions-aides-directes, annexe VII, p. 76-77].
 
 | Arrêté conjoint | Montant constaté à la publication<br>(D par mois) | Limite du relèvement<br>(D par mois) | Effet |
 |---|---:|---:|---|
@@ -923,21 +939,28 @@ figtools.figure_tabs(
 #| output: asis
 figtools.figure_tabs(
     fig_as.vues_allocataires(), fig_as.table_allocataires(),
-    fig_as.SERIE_ALLOCATAIRES,
+    fig_as.SERIE_ALLOCATAIRES, fig_as.SERIE_ALLOCATAIRES_TABLEAU,
     slug="fig_nc_beneficiaires",
-    caption=("Allocataires du transfert mensuel de l'aide permanente : nombre en décembre, "
-             "entrées et sorties de l'année, 2018-2023, selon le ministère des Affaires "
-             "sociales"),
+    caption=("Allocataires de l'aide monétaire permanente, 2010-2026 : stocks de décembre du "
+             "ministère des Affaires sociales et décomptes de ménages de cinq documents de la "
+             "Banque mondiale ; entrées et sorties de l'année, 2018-2023"),
     note_lecture=(
-        "La première vue donne le nombre d'allocataires actifs inscrits en décembre de "
-        "chaque année ; la seconde, les entrées et les sorties de l'année. Un allocataire "
-        "est un individu ou une famille, au sens de l'arrêté conjoint du 19 mai 2020 : le "
-        "rapport écrit « bénéficiaire » à ce tableau et « ménages » à celui du classement "
-        "par le score, pour des totaux égaux à une unité près. Ce n'est pas un nombre de "
-        "personnes couvertes. Le rapport imprime trois totaux pour 2023 : 337 178 dans son "
-        "texte introductif, 337 199 au tableau des entrées et des sorties, tracé ici, et "
-        "337 200 au tableau par montant versé. Le solde des entrées et des sorties égale la "
-        "variation du nombre de décembre."),
+        "La première vue porte toutes les valeurs du tableau @tbl-nc-effectifs, une marque par "
+        "valeur. Le trait bleu relie les six stocks de décembre du ministère, de 2018 à 2023 ; "
+        "un allocataire est un individu ou une famille, au sens de l'arrêté conjoint du 19 mai "
+        "2020 : le rapport écrit « bénéficiaire » à ce tableau et « ménages » à celui du "
+        "classement par le score, pour des totaux égaux à une unité près. Ce n'est pas un "
+        "nombre de personnes couvertes. Les marques creuses sont des décomptes de ménages que "
+        "la Banque mondiale rapporte du ministère, une couleur et une forme par document, "
+        "jamais reliés entre eux ni au trait du ministère : ce n'est pas la même grandeur, et "
+        "chaque décompte est arrêté à sa date, à l'année, au mois ou au jour. Deux totaux "
+        "d'avril 2026 figurent dans le même rapport (386 351 et 387 668), deux valeurs de 2010 "
+        "dans deux documents (124 000 et 130 000), et le même total de 124 000 est repris par "
+        "deux documents. Survoler une marque en donne la valeur, la date et la page. La seconde "
+        "vue donne les entrées et les sorties de l'année du ministère ; le rapport imprime "
+        "trois totaux pour 2023 : 337 178 dans son texte introductif, 337 199 au tableau des "
+        "entrées et des sorties, tracé ici, et 337 200 au tableau par montant versé. Le solde "
+        "des entrées et des sorties égale la variation du nombre de décembre."),
     generated="{{< meta date >}}",
     nominal=False,
 )
