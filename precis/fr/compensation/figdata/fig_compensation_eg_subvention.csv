@@ -1,43 +1,43 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-17
-# séries (tunisia_data) : steg-subvention-exploitation
-# sources (citation) : @steg-ra-2007, @steg-ra-2008, @steg-ra-2009, @steg-ra-2010, @steg-ra-2011, @steg-ra-2013, @steg-ra-2014, @steg-ra-2016, @steg-ef-2014, @minfin-compensation-carburants-2014
-# fiches : docs/steg-gaz-electricite.md
-# méthode/hypothèses : La subvention d'exploitation des comptes n'est pas la ligne budgétaire : jusqu'en 2014 elle comprend la subvention indirecte, c'est-à-dire le gaz valorisé à sa valeur économique. Elle égale le soutien total du rapport de contrôle, à l'arrondi imprimé près. Rupture de 2015. Aucune valeur après 2016. Dinars courants.
-# note : La subvention d'exploitation de la STEG, 2006-2016 : montant des comptes, soutien direct et indirect du rapport de contrôle de 2014 (millions de dinars courants)
-Famille,Année,Grandeur,Millions de dinars courants,État,Tracée,Source,Page,Lecture,Rupture,Remarque
-comptes de la STEG,2006,subvention d'exploitation,589.714,publié,oui,"STEG, rapport annuel 2007",p. 56,texte,,2006 retraité dans l'édition 2007
-comptes de la STEG,2007,subvention d'exploitation,672.703,publié,oui,"STEG, rapport annuel 2007",p. 56,texte,,
-comptes de la STEG,2008,subvention d'exploitation,1232.411,publié,oui,"STEG, rapport annuel 2008",p. 60,texte,,
-comptes de la STEG,2009,subvention d'exploitation,560.3,publié,oui,"STEG, rapport annuel 2009",p. 59,texte,,
-comptes de la STEG,2010,subvention d'exploitation,1108.292,publié,oui,"STEG, rapport annuel 2010",p. 61,texte,,
-comptes de la STEG,2011,subvention d'exploitation,1670.853,publié,oui,"STEG, rapport annuel 2011",p. 62,texte,,
-comptes de la STEG,2012,subvention d'exploitation,2733.661,publié,oui,"STEG, rapport annuel 2013",p. 70,texte,,colonne 2012 de l'édition 2013
-comptes de la STEG,2013,subvention d'exploitation,2768.794,publié,oui,"STEG, rapport annuel 2013",p. 70,texte,,
-comptes de la STEG,2014,subvention d'exploitation,2323.093,publié,oui,"STEG, rapport annuel 2014",p. 74,texte,,
-comptes de la STEG,2015,subvention d'exploitation,858.0,publié,oui,"STEG, rapport annuel 2016",p. 96,texte,2015 : fin du prix de cession ; la STEG achète son gaz au prix mondial et la subvention devient budgétaire : la subvention d'exploitation égale la ligne budgétaire (858) ; jusqu'en 2014 elle comprend la subvention indirecte,colonne 2015 de l'édition 2016; égale la subvention budgétaire de 2015
-comptes de la STEG,2016,subvention d'exploitation,0.0,publié,oui,"STEG, rapport annuel 2016",p. 96,texte,,; 2016 : aucune subvention d'exploitation
-états financiers de 2014,2013,subvention directe reçue,850.0,publié,non,"STEG, états financiers 2014, note II-2",p. 35,texte,,« subvention directe reçue » : subvention d'équilibre de l'État
-états financiers de 2014,2014,subvention directe reçue,53.0,publié,non,"STEG, états financiers 2014, note II-2",p. 35,texte,,« subvention directe reçue » : subvention d'équilibre de l'État
-états financiers de 2014,2013,subvention indirecte sur l'achat du gaz algérien,1918.794,publié,non,"STEG, états financiers 2014, note II-2",p. 35,texte,,« subvention indirecte sur l'achat du gaz algérien » : différence entre le prix international du gaz algérien et son prix de cession à la STEG
-états financiers de 2014,2014,subvention indirecte sur l'achat du gaz algérien,2270.093,publié,non,"STEG, états financiers 2014, note II-2",p. 35,texte,,« subvention indirecte sur l'achat du gaz algérien » : différence entre le prix international du gaz algérien et son prix de cession à la STEG
-rapport de contrôle de 2014,2007,soutien direct,155.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2008,soutien direct,220.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2009,soutien direct,0.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2010,soutien direct,330.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2011,soutien direct,570.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2012,soutien direct,940.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2013,soutien direct,850.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2007,soutien indirect,517.7,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2008,soutien indirect,1012.4,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2009,soutien indirect,560.3,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2010,soutien indirect,778.3,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2011,soutien indirect,1100.8,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2012,soutien indirect,1793.7,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2013,soutien indirect,1919.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2007,soutien total,672.7,publié,non,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2008,soutien total,1232.4,publié,non,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2009,soutien total,560.3,publié,non,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2010,soutien total,1108.3,publié,non,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2011,soutien total,1670.8,publié,non,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2012,soutien total,2733.7,publié,non,rapport de contrôle de 2014,p. 72,texte,,
-rapport de contrôle de 2014,2013,soutien total,2769.0,publié,non,rapport de contrôle de 2014,p. 72,texte,,total arrondi à l'unité dans la source
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-24
+# séries (tunisia_data) : steg-subvention-exploitation, compensation-parts
+# sources (citation) : @steg-ra-2007, @steg-ra-2008, @steg-ra-2009, @steg-ra-2010, @steg-ra-2011, @steg-ra-2013, @steg-ra-2014, @steg-ra-2016, @steg-ef-2014, @minfin-compensation-carburants-2014, @bct-ra-1965, @bct-ra-1971, @bct-ra-1974, @bct-ra-1975, @bct-ra-1984, @bct-ra-1985, @bct-ra-1986, @bct-ra-1987, @bct-ra-1988, @bct-ra-1989, @bct-ra-1991, @bct-ra-1992, @bct-ra-1993, @bct-ra-1994, @bct-ra-1995, @bct-ra-1996, @bct-ra-1997, @bct-ra-1998, @bct-ra-1999, @bct-ra-2000, @bct-ra-2001, @bct-ra-2002, @bct-ra-2003, @bct-ra-2004, @bct-ra-2005, @bct-ra-2006, @bct-ra-2007, @bct-ra-2008, @bct-ra-2009, @bct-ra-2010, @bct-ra-2011, @bct-ra-2018, @bct-ra-2019, @bct-ra-2020, @bct-ra-2021, @bct-ra-2022, @bct-ra-2023, @bct-ra-2024, @bct-ra-2025, @bm-1985-cem-5328-vol1, @bm-1985-cem-5328-vol2, @fmi-1996-red, @fmi-2000-red, @lf-1970, @lf-1971, @lf-1984, @minfin-finances-publiques-2005, @minfin-finances-publiques-2008, @minfin-finances-publiques-2011, @minfin-note-execution-2018-12, @minfin-projet-lfc-2015, @minfin-resultats-provisoires-2013-03, @minfin-resultats-provisoires-2015-12, @minfin-resultats-provisoires-2017-01, @minfin-resultats-provisoires-2018-07, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015, @undata-sna, @wb-wdi
+# fiches : docs/steg-gaz-electricite.md, docs/compensation-depense-par-poste.md
+# méthode/hypothèses : La subvention d'exploitation des comptes n'est pas la ligne budgétaire : jusqu'en 2014 elle comprend la subvention indirecte, c'est-à-dire le gaz valorisé à sa valeur économique. Elle égale le soutien total du rapport de contrôle, à l'arrondi imprimé près. Rupture de 2015. Aucune valeur après 2016. Dinars courants., UN SEUL PIB PAR ANNÉE, QUI CHANGE DE BASE : tracer la part du PIB par segments de `segment_pib` (ruptures en 1986, 1997, 2002, 2005, 2010 et 2025), jamais d'un trait continu ni en groupant par `base_pib` ; de 2010 à 2024 le PIB est celui de l'INS en base 2015 (rétropolé pour 2010-2014), avant 2010 et en 2025 celui du ministère des Finances, avant 1986 celui de la Banque mondiale ; `rupture_pib` porte les libellés partagés avec `masse-salariale-ratios` ; pour comparer les bases entre elles, lire `compensation-ratios`. Filtrer `famille` : les familles ne se raccordent pas, et `nature` sépare le budgétaire des rapports extérieurs. Dépenses de l'État hors service de la dette. Carburants : périmètre élargi en 2015 (colonne `rupture`), la baisse de 2015 tenant au prix du baril. 2025 et 2026 sont des lois de finances (`etat_norme`). Voir docs/compensation-depense-par-poste.md et docs/compensation-ratios.md.
+# note : La subvention d'exploitation de la STEG, 2006-2016 : montant des comptes, soutien direct et indirect du rapport de contrôle de 2014 : en millions de dinars courants, en part du PIB et en part des dépenses de l'État hors service de la dette
+Famille,Année,Grandeur,Millions de dinars courants,État,Tracée,Source,Page,Lecture,Rupture,Remarque,"Subvention d'exploitation, % du PIB","Subvention d'exploitation, % des dépenses de l'État"
+comptes de la STEG,2006,subvention d'exploitation,589.714,publié,oui,"STEG, rapport annuel 2007",p. 56,texte,,2006 retraité dans l'édition 2007,1.289,5.913
+comptes de la STEG,2007,subvention d'exploitation,672.703,publié,oui,"STEG, rapport annuel 2007",p. 56,texte,,,1.349,6.025
+comptes de la STEG,2008,subvention d'exploitation,1232.411,publié,oui,"STEG, rapport annuel 2008",p. 60,texte,,,2.229,9.634
+comptes de la STEG,2009,subvention d'exploitation,560.3,publié,oui,"STEG, rapport annuel 2009",p. 59,texte,,,0.952,3.953
+comptes de la STEG,2010,subvention d'exploitation,1108.292,publié,oui,"STEG, rapport annuel 2010",p. 61,texte,,,1.676,7.768
+comptes de la STEG,2011,subvention d'exploitation,1670.853,publié,oui,"STEG, rapport annuel 2011",p. 62,texte,,,2.466,9.746
+comptes de la STEG,2012,subvention d'exploitation,2733.661,publié,oui,"STEG, rapport annuel 2013",p. 70,texte,,colonne 2012 de l'édition 2013,3.699,14.281
+comptes de la STEG,2013,subvention d'exploitation,2768.794,publié,oui,"STEG, rapport annuel 2013",p. 70,texte,,,3.501,12.579
+comptes de la STEG,2014,subvention d'exploitation,2323.093,publié,oui,"STEG, rapport annuel 2014",p. 74,texte,,,2.722,10.347
+comptes de la STEG,2015,subvention d'exploitation,858.0,publié,oui,"STEG, rapport annuel 2016",p. 96,texte,2015 : fin du prix de cession ; la STEG achète son gaz au prix mondial et la subvention devient budgétaire : la subvention d'exploitation égale la ligne budgétaire (858) ; jusqu'en 2014 elle comprend la subvention indirecte,colonne 2015 de l'édition 2016; égale la subvention budgétaire de 2015,0.955,3.856
+comptes de la STEG,2016,subvention d'exploitation,0.0,publié,oui,"STEG, rapport annuel 2016",p. 96,texte,,; 2016 : aucune subvention d'exploitation,0.0,0.0
+états financiers de 2014,2013,subvention directe reçue,850.0,publié,non,"STEG, états financiers 2014, note II-2",p. 35,texte,,« subvention directe reçue » : subvention d'équilibre de l'État,1.075,3.862
+états financiers de 2014,2014,subvention directe reçue,53.0,publié,non,"STEG, états financiers 2014, note II-2",p. 35,texte,,« subvention directe reçue » : subvention d'équilibre de l'État,0.062,0.236
+états financiers de 2014,2013,subvention indirecte sur l'achat du gaz algérien,1918.794,publié,non,"STEG, états financiers 2014, note II-2",p. 35,texte,,« subvention indirecte sur l'achat du gaz algérien » : différence entre le prix international du gaz algérien et son prix de cession à la STEG,2.426,8.717
+états financiers de 2014,2014,subvention indirecte sur l'achat du gaz algérien,2270.093,publié,non,"STEG, états financiers 2014, note II-2",p. 35,texte,,« subvention indirecte sur l'achat du gaz algérien » : différence entre le prix international du gaz algérien et son prix de cession à la STEG,2.66,10.111
+rapport de contrôle de 2014,2007,soutien direct,155.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,0.311,1.388
+rapport de contrôle de 2014,2008,soutien direct,220.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,0.398,1.72
+rapport de contrôle de 2014,2009,soutien direct,0.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,0.0,0.0
+rapport de contrôle de 2014,2010,soutien direct,330.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,0.499,2.313
+rapport de contrôle de 2014,2011,soutien direct,570.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,0.841,3.325
+rapport de contrôle de 2014,2012,soutien direct,940.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,1.272,4.911
+rapport de contrôle de 2014,2013,soutien direct,850.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,1.075,3.862
+rapport de contrôle de 2014,2007,soutien indirect,517.7,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,1.038,4.636
+rapport de contrôle de 2014,2008,soutien indirect,1012.4,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,1.831,7.914
+rapport de contrôle de 2014,2009,soutien indirect,560.3,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,0.952,3.953
+rapport de contrôle de 2014,2010,soutien indirect,778.3,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,1.177,5.455
+rapport de contrôle de 2014,2011,soutien indirect,1100.8,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,1.625,6.421
+rapport de contrôle de 2014,2012,soutien indirect,1793.7,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,2.427,9.371
+rapport de contrôle de 2014,2013,soutien indirect,1919.0,publié,oui,rapport de contrôle de 2014,p. 72,texte,,,2.426,8.718
+rapport de contrôle de 2014,2007,soutien total,672.7,publié,non,rapport de contrôle de 2014,p. 72,texte,,,1.349,6.024
+rapport de contrôle de 2014,2008,soutien total,1232.4,publié,non,rapport de contrôle de 2014,p. 72,texte,,,2.229,9.634
+rapport de contrôle de 2014,2009,soutien total,560.3,publié,non,rapport de contrôle de 2014,p. 72,texte,,,0.952,3.953
+rapport de contrôle de 2014,2010,soutien total,1108.3,publié,non,rapport de contrôle de 2014,p. 72,texte,,,1.676,7.768
+rapport de contrôle de 2014,2011,soutien total,1670.8,publié,non,rapport de contrôle de 2014,p. 72,texte,,,2.466,9.746
+rapport de contrôle de 2014,2012,soutien total,2733.7,publié,non,rapport de contrôle de 2014,p. 72,texte,,,3.699,14.281
+rapport de contrôle de 2014,2013,soutien total,2769.0,publié,non,rapport de contrôle de 2014,p. 72,texte,,total arrondi à l'unité dans la source,3.501,12.58

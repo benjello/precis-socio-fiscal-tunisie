@@ -64,6 +64,7 @@ SUBV = "steg-subvention-exploitation"
 GAZ = "steg-prelevements-gaz"
 FACTURE = "steg-facture-combustibles"
 PIB = "pib-courant-par-base"
+PARTS = "compensation-parts"  # dénominateurs : PIB et dépenses de l'État hors service de la dette
 
 BLEU, BLEU_CLAIR, ORANGE, VERT, VIOLET, ROUGE, GRIS, BRUN, NOIR, ROSE, TEAL = (
     "#0969da", "#80b3f0", "#d1600f", "#1a7f37", "#8250df", "#cf222e", "#8c959f", "#9a6700",
@@ -357,9 +358,32 @@ def _figure_cout_prix_kwh():
 
 # --- 3. La subvention d'exploitation de la STEG ----------------------------------------------
 
-def fig_subvention():
+MESURES_SUBV = {
+    "md": ("Millions de dinars courants", None),
+    "pib": ("% du PIB", "pib_MDT"),
+    "dep": ("% des dépenses de l'État hors service de la dette", "depenses_etat_hors_dette_MDT"),
+}
+
+
+def _denominateurs(colonne: str) -> dict[int, float]:
+    """Dénominateur par année, lu dans la série `compensation-parts` du livre : une valeur par
+    année, la même sur toutes ses lignes."""
+    d = figtools.series(PARTS)
+    d = d[d[colonne].notna()].groupby("annee")[colonne].first()
+    return {int(a): float(v) for a, v in d.items()}
+
+
+def fig_subvention(mesure: str = "md"):
     figtools.apply_lang_font()
     d = figtools.series(SUBV)
+    ylabel, colonne = MESURES_SUBV[mesure]
+    den = _denominateurs(colonne) if colonne else None
+    dec = 0 if den is None else 2
+    d = d.copy()
+    if den is not None:
+        d["valeur"] = [v * 100 / den[int(a)] for v, a in zip(d["valeur"], d["annee"])]
+    unite = "millions de dinars" if den is None else ("% du PIB" if mesure == "pib"
+                                                      else "% des dépenses de l'État")
     comptes = d[d["grandeur"] == "subvention_exploitation"].sort_values("annee")
     cg = d[d["famille"] == "rapport_de_controle_2014"].pivot(index="annee", columns="grandeur",
                                                              values="valeur")
@@ -368,25 +392,28 @@ def fig_subvention():
         barre = ax.bar([a], [v["soutien_direct"]], width=0.62, color=BLEU, hatch="//",
                        edgecolor="white", zorder=2)
         figtools.infobulle(barre[0], f"{a} · soutien direct (rapport de contrôle de 2014) : "
-                                     f"{_nb(v['soutien_direct'])} millions de dinars")
+                                     f"{_nb(v['soutien_direct'], 2 if den else 1)} {unite}")
         barre = ax.bar([a], [v["soutien_indirect"]], bottom=[v["soutien_direct"]], width=0.62,
                        color=ORANGE, edgecolor="white", zorder=2)
         figtools.infobulle(barre[0], f"{a} · soutien indirect (rapport de contrôle de 2014) : "
-                                     f"{_nb(v['soutien_indirect'])} millions de dinars")
+                                     f"{_nb(v['soutien_indirect'], 2 if den else 1)} {unite}")
     ax.plot(comptes["annee"], comptes["valeur"], color=NOIR, lw=1.2, zorder=3)
     for r in comptes.itertuples(index=False):
         p, = ax.plot([r.annee], [r.valeur], marker="o", ms=6, color=NOIR, ls="none", zorder=4)
         figtools.infobulle(p, f"{r.annee} · subvention d'exploitation des comptes de la STEG : "
-                              f"{_nb(r.valeur)} millions de dinars ({r.source}, {r.page})")
-        ax.annotate(_v(r.valeur), xy=(r.annee, r.valeur), xytext=(0, 7),
+                              f"{_nb(r.valeur, 2 if den else 1)} {unite} ({r.source}, {r.page})")
+        ax.annotate(_v(r.valeur) if den is None else _nb(r.valeur, 2), xy=(r.annee, r.valeur),
+                    xytext=(0, 7),
                     textcoords="offset points", ha="center", fontsize=7)
     for r in comptes[comptes["rupture"].fillna("") != ""].itertuples(index=False):
         _repere(ax, int(r.rupture_annee), f"{int(r.rupture_annee)} · {r.rupture}")
-    _cadre(ax, "Millions de dinars courants")
+    if mesure == "pib":
+        _repere(ax, 2010, "2010 · PIB : base 1997 → base 2015")
+    _cadre(ax, ylabel)
     ax.set_xticks(range(2006, 2017))
     ax.set_xlim(2005.4, 2016.6)
     ax.set_ylim(0, ax.get_ylim()[1] * 1.08)
-    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0)))
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0 if den is None else 1)))
     _legende(ax, [
         Patch(facecolor=BLEU, hatch="//", edgecolor="white",
               label="soutien direct (rapport de contrôle de 2014)"),
@@ -417,8 +444,16 @@ def _figure_subvention():
                    "lecture", "rupture", "remarque"]]
     table.columns = ["Famille", "Année", "Grandeur", "Millions de dinars courants", "État",
                      "Tracée", "Source", "Page", "Lecture", "Rupture", "Remarque"]
-    return ([(None, fig_subvention())], table.reset_index(drop=True),
-            {SUBV: _cles(d)}, "fig_compensation_eg_subvention")
+    for mesure, colonne, nom in (("pib", "pib_MDT", "Subvention d'exploitation, % du PIB"),
+                                 ("dep", "depenses_etat_hors_dette_MDT",
+                                  "Subvention d'exploitation, % des dépenses de l'État")):
+        den = _denominateurs(colonne)
+        table[nom] = [round(100 * v / den[int(a)], 3) if int(a) in den else None
+                      for v, a in zip(table["Millions de dinars courants"], table["Année"])]
+    vues = [(MESURES_SUBV[m][0], fig_subvention(m)) for m in ("md", "pib", "dep")]
+    return (vues, table.reset_index(drop=True),
+            {SUBV: _cles(d), PARTS: None},
+            "fig_compensation_eg_subvention")
 
 
 # --- 4. Le gaz prélevé par la STEG, par source -----------------------------------------------
