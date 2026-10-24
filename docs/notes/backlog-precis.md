@@ -104,8 +104,8 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 |---|---|---|
 | Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Boissons alcoolisées rédigées le 23 octobre 2026 (décrets n° 93-2090, 97-1368, 2002-627, 2007-1977, 2013-929, 2015-1768, 2022-545 et lois de finances 2016, 2018, 2021) ; lacunes ci-dessous |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Lacunes de la mise à la retraite avant l'âge légal de 2009 : voir la section Retraites de ce fichier |
+| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans texte pour ses onze dates et montants (fiche `r-pnafn-montants-historiques`, passe du 24 octobre 2026 : presse et études en ligne confirment 70 D en 2011, 150 D en 2015, 180 D annoncé en janvier 2018, rien de plus) ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des autres textes repris de la couche texte (liste dans la section « Prestations sociales ») ; étude CRES-BAD de 2016 sur le PNAFN à récupérer ; budgets économiques 2012-2018 pour les paliers du PNAFN |
 | Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs ; régime de rémunération des dirigeants d'entreprises publiques rédigé le 23 octobre 2026 | Décret n° 78-885 et circulaire n° 78-45 (scans de 1978-1979 à océriser autrement) |
-| Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans sources pour ses onze dates et montants ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des textes repris de la couche texte : loi n° 2002-24 et décrets n° 2002-886, n° 2002-887 et n° 2006-1025 (corpus local) |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Caisses de sécurité sociale | Livre créé le 4 octobre 2026 : présentation, histoire (rédigée le 4 octobre), statut-cadre, comptes par régime, état des caisses, comptes de la longue période, chronologie ; rétrospective CNSS 1990-2004 tracée ; statuts annexés du personnel et couverture des déficits agricoles à obtenir hors JORT | Loi n° 98-91 (JORT n° 89 de 1998), fascicule local lisible, pour les modificatifs du statut-cadre |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
@@ -839,6 +839,19 @@ liste qui suit le tableau, citations comprises. Restent :
   - **reste, pour la relecture** : le décret-loi n° 2020-30 du 10 juin 2020 (complément portant les
     pensions à 180 D) est à signaler au volume « Retraites ».
 
+- **Relecture à l'image du 24 octobre 2026** (`_autres_risques.qmd`, protection des travailleurs ayant cessé leur travail) :
+  - *fait* : loi n° 2002-24 (JORT n° 18 du 1er mars 2002, p. 515, art. 1 et 2, sans clause d'effet, dépôt le
+    2 mars 2002) ; rectificatif à la loi n° 96-101 (JORT n° 7 du 24 janvier 1997, p. 114) ; décrets
+    n° 97-1925 et n° 97-1926 (JORT n° 80 du 7 octobre 1997, p. 1849-1850, articles 1 à 8, sans clause
+    d'effet) : texte conforme aux lignes de registre ; **dates d'exécution levées** par les mentions de dépôt
+    au siège du gouvernorat de Tunis : n° 80 de 1997 le 9 octobre 1997 (exécution le 14 octobre 1997), n° 34 de
+    2002 le 27 avril 2002 (2 mai 2002), n° 31 de 2006 le 19 avril 2006 (24 avril 2006). Les décrets n° 2002-886,
+    n° 2002-887 et n° 2006-1025 étaient relus à l'image depuis le 12 octobre.
+  - *PNAFN* : fiche `r-pnafn-montants-historiques` ouverte ; le palier de 150 D (2015) est confirmé par le
+    projet de loi de finances pour 2018 (presse, 29 octobre 2017) et l'étude CRES-BAD ; l'annonce de 180 D
+    date du 13 janvier 2018 sans texte ni date d'effet ; les neuf autres paliers restent sans source. Piste
+    non suivie : budgets économiques 2012-2018, circulaires, Wayback Machine sur social.gov.tn.
+
 - **Lectures du 10 octobre 2026 portées dans le volume** (`docs/notes/prestations-sociales-lectures-2026-10-10.md` ;
   quatre chapitres, corrections ciblées, aucun plan changé).
   - *Levé* : les dates d'effet des lois n° 95-101 (10 décembre 1995), du 22 juillet 1996 (4 août 1996),
@@ -862,12 +875,11 @@ liste qui suit le tableau, citations comprises. Restent :
     texte du corpus (`2002/fr/Jo0342002.pdf`, police décalée, décodée ; `2006/fr/Jo0312006.pdf`), puis
     **relus à l'image le 12 octobre 2026** : contenu confirmé, registre complété (articles 3 bis et 6 de
     2002, inscription au bureau d'emploi), aucune clause d'effet, aucun modificatif postérieur à 2006 dans
-    les intitulés. *Reste* : la date de dépôt des deux fascicules, pour dater l'exécution.
-  - *Reste, lisible au corpus* : relecture à l'image des textes repris de la couche texte (loi n° 2002-24,
-    rectificatif de 1997, décrets de 1997, 2002 et 2006, loi n° 94-28 art. 42 à 53, décrets n° 2007-1367,
+    les intitulés. Dates d'exécution levées le 24 octobre 2026 (voir plus haut).
+  - *Reste, lisible au corpus* : relecture à l'image des textes repris de la couche texte (loi n° 94-28 art. 42 à 53, décrets n° 2007-1367,
     n° 2008-756 et n° 2021-318, arrêté du 3 juin 2008, arrêtés des familles d'accueil, décret n° 2022-715
     dont les articles finaux, lois de finances pour 2025 — texte français de jibaya.tn — et pour 2026 —
-    arabe) ; dates d'effet des décrets de 1997 (mention de dépôt du n° 80 non relevée) ; art. 34 de la loi
+    arabe) ; art. 34 de la loi
     n° 60-30 ; décrets n° 99-1514, n° 2016-1401, n° 93-529, n° 94-1738, n° 2019-1130, n° 2002-916 ;
     décret n° 75-952 et circulaire n° 42 de 1996 ; décret du 6 avril 1950 ; loi n° 95-56 et gestion des
     accidents du travail du secteur public ; arrêté conjoint du 25 juin 2007 (affections lourdes ou

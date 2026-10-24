@@ -987,6 +987,25 @@
     resultat: aucun
   a_faire: [rejouer avec les formes accentuées, lire le décret n° 75-952 et la circulaire n° 42]
 
+- id: r-pnafn-montants-historiques
+  objet: texte ou document administratif daté qui fixe le montant mensuel de l'allocation du programme national d'aide aux familles nécessiteuses à chacun de ses paliers de 1987 à 2018 (7,7 ; 36,3 ; 53,3 ; 56,7 ; 63,3 ; 70 ; 100 ; 110 ; 120 ; 150 ; 180 dinars)
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#sec-nc-vue-ensemble]
+  requetes:
+    titres_fts: [necessiteuses, PNAFN]
+    iort_ar: [العائلات المعوزة, المنحة القارة]
+    depuis: 1986-01-01
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [web, presse]
+    couverture: 'Archives du web et presse en ligne, avant toute demande à l''administration. Trouvé, sans texte normatif : (1) L''Économiste maghrébin, 13 janvier 2018, annonce du ministre des affaires sociales en conseil ministériel restreint, passage de 150 à 180 dinars, 210 dinars selon le nombre d''enfants, 20 % de hausse, 100 MD ; aucun texte cité, aucune date d''effet ; (2) Webmanagercenter (arabe), 29 octobre 2017, projet de loi de finances pour 2018 : allocation de 150 dinars par mois pour 250 000 familles, 10 dinars par enfant d''âge scolaire, hausse de 4 % des aides, et la mention d''une hausse de 120 à 150 dinars en 2015 ; (3) Maghreb Émergent, 6 mai 2017, rapportant l''étude CRES-BAD : transfert mensuel moyen par famille de 58 dinars en 2010 et de 150 dinars en 2015, 108 900 puis 230 000 familles (moyennes d''enquête, non des paliers) ; (4) projet BAD-CRES rangé dans tunisia-data (afdb_2016_evaluation_performance_assistance_sociale.pdf) : « de l''ordre de 70 dinars » mensuels, 210 000 familles, sans date de palier. Ces sources de presse et d''étude confirment les paliers de 150 dinars (2015) et de 180 dinars (annonce de janvier 2018) et rejoignent le palier de 70 dinars de 2011 ; elles ne datent ni ne fondent les neuf autres. Non cherché : circulaires du ministère (1987 à 2018), documents du budget économique, rapports de la Cour des comptes, archives de pm.gov.tn et social.gov.tn par la Wayback Machine ; l''étude CRES-BAD complète est à récupérer avant d''être citée.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: aucun
+  a_faire:
+  - récupérer l'étude CRES-BAD de 2016 complète
+  - lire les exposés des motifs et les tableaux des budgets économiques 2012-2018
+  - sonder la Wayback Machine sur social.gov.tn et pm.gov.tn
+
 - id: r-lf2025-art15-decret
   objet: décret fixant les modalités de fonctionnement du fonds de protection sociale des travailleuses agricoles et les conditions de ses interventions (loi n° 2024-48, loi de finances pour 2025, art. 15, 1), al. 2)
   ou: [precis/fr/retraites/_secteur_prive.qmd#sec-travailleuses-agricoles]
