@@ -110,7 +110,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Caisses de sécurité sociale | Livre créé le 4 octobre 2026 : présentation, histoire (rédigée le 4 octobre), statut-cadre, comptes par régime, état des caisses, comptes de la longue période, chronologie ; rétrospective CNSS 1990-2004 tracée ; statuts annexés du personnel et couverture des déficits agricoles à obtenir hors JORT | Loi n° 98-91 (JORT n° 89 de 1998), fascicule local lisible, pour les modificatifs du statut-cadre |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 | Marché du travail | Volume VIII : institutions, notions, salaire minimum, conventions collectives, négociations, politiques de l'emploi, annexe des conventions branche par branche (8-9 octobre 2026 ; grilles tracées depuis le modèle, 193 cases illisibles sur les fascicules) | Décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire), fascicules au corpus ; grilles du textile 1983-1993 et du bâtiment 1991-1992 : scans français au corpus, OCR à lancer |
-| Compensation | Volume IX, huit chapitres réécrits le 6 octobre 2026 (institution, réformes, dépense, carburants, électricité et gaz, transport, rapports extérieurs, incidence) ; dotation de la Caisse inconnue pour dix années ; tarifs MT/HT 1994-2003 non publiés ; une vingtaine de notions de glossaire à définir | Avis et communications des JORT n° 75 à 86 de 1993 (prix de cession du gaz, tarifs), fascicules locaux, à lire à l'image ; loi de finances pour 1987 (intégration des recettes au budget), au JORT |
+| Compensation | Volume IX, huit chapitres réécrits le 6 octobre 2026 (institution, réformes, dépense, carburants, électricité et gaz, transport, rapports extérieurs, incidence) ; montant versé de la dotation de la Caisse inconnu pour dix années (subvention prévue 1987-1994 versée le 24 octobre 2026) ; tarifs MT/HT 1994-2003 non publiés | Lois de règlement, budget économique, lois de finances complémentaires et tableaux des fonds spéciaux 1995-2010 (dotation) ; décret n° 93-1187 et modifications du décret n° 91-1391 (prélèvements à l'importation) |
 | Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, avec une section « effectifs et masse salariale », français seul ; inscrit à l'accueil le 20 octobre 2026 (partie V) ; séries budgétaires 2016-2024 et 1987-2009 ; rien de budgétaire entre 2010 et 2016 ni avant 1987 ; forme (volume ou chapitre) à trancher par la revue | Articles « octroi de la garantie de l'État » des lois de finances de 1995 à 2015, fascicules locaux : suite de la série légale du plafond (1959-60 à 1994 rédigée le 23 octobre 2026) ; totaux des budgets de 1959-60 à 1985, scans à océriser |
 | Santé | Volume X, première rédaction le 12 octobre 2026, français seul : histoire, couverture, hôpital, médecine de ville ; dépenses du département 2018-2023 et comptes de la CNAM 2016-2021 intégrés, comptes 2011-2015 lus à l'image le 15 octobre ; les prestations en espèces restent dans « Prestations sociales » | Statistiques de prestations de la CNAM, lisibles en couche texte dans le corpus ; ventilation de la dépense par prestation à obtenir hors JORT |
 | Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense ; lectures des 18 et 19 octobre à relire à la revue ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001, arrêté de 1982 : fascicules au corpus, à lire à l'image (§ 9 du plan) |
@@ -3200,12 +3200,25 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
   dix articles de presse de la frise 2002-2018 ; loi de finances pour 1981 et pour 1987, loi
   n° 91-98, arrêtés des 11 octobre 1990 et 7 juillet 1992, arrêté du 10 mai 2024 (la loi n° 63-13,
   caisse des transports routiers, est versée le 11 octobre 2026 : clé `loi63-13`). La collection Zotero « Compensation » reste à créer.
-- **Glossaire — notions à créer** (terminologue) : subvention directe / subvention indirecte ;
-  prix de cession (préférentiel) ; séparation des opérations de commercialisation des
-  hydrocarbures ; revenus de commercialisation des carburants ; compte de la Caisse (charges,
-  recettes propres) ; dotation budgétaire ; taxe unique de compensation sur les produits
-  pétroliers ; redevance compensatrice ; centimes additionnels ; prix limite de vente ; structure
-  des prix ; arrêté interne ; mécanisme d'ajustement de 2009 ; base caisse ; ETAP, STIR, STEG.
+- **Glossaire** (terminologue, 24 octobre 2026) : toutes les notions listées jusqu'ici existent
+  et sont ancrées ; le mécanisme de 2009 est décrit dans `ajustement-automatique-prix-carburants`.
+  Dix entrées ajoutées : `tranche-economique`, `tranche-normale`, `fonds-transition-energetique`,
+  `homologation-des-prix`, `decision-ministerielle` (`valide`, définitions arabes à relire par un
+  arabophone) ; `redevance-compensatrice`, `compte-caisse-compensation`, `dotation-budgetaire`,
+  `prix-limite-vente`, `base-caisse` (`provisoire`, terme arabe non attesté, sans définition
+  arabe). Restent :
+  - termes arabes à relever : éditions arabes de l'arrêté du 5 février 1957 et des arrêtés de
+    prix 1964-1993 (corpus, image) ; « dotation » et « compte » de la Caisse dans les rapports
+    arabes de la BCT ou du ministère des Finances ;
+  - `base-caisse` n'a pas de `source_definition` : le chapitre ne cite aucun texte qui définisse
+    la notion ;
+  - « tranche économique » : le JORT écrit القسط الاقتصادي en 1984 et الشريحة الاقتصادية dans
+    les lois de finances pour 2019 et 2024 ; la seconde est retenue comme terme, à confirmer ;
+  - tableau A du décret n° 91-1996 : dans l'édition arabe d'origine (JORT n° 88 de 1991,
+    p. 1766, lue à l'image), les carburants sont au n° 7 et l'électricité, l'eau et le gaz au
+    n° 8 ; rétablissement du tableau au JORT n° 30 de 1992 non lu ;
+  - « taxe due sur les produits énergétiques consommés » : pas d'entrée propre, décrite dans
+    `fonds-transition-energetique`.
   L'ancre `#g-auto-ciblage` n'est toujours pas employée.
 - **Lacunes**, dans l'état que les notes établissent :
   - **Avant 1956** : aucun texte établi dans sa lettre ; décrets de 1943, 1945, 1954, 1955 connus
@@ -3218,13 +3231,31 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     OCR seul : **à relire à l'image**. Première série de 1957 du Journal officiel : absente du
     corpus local, présente sur pist.tn. Aucune série du compte avant 1970 (deux points : 1965,
     1967).
-  - **Dotation du budget à la Caisse, dix années sans valeur** : 1988, 1989, 1990, 2000, 2001,
-    2003, 2006, 2008, 2009, 2011 — à chercher au chapitre des finances publiques des rapports de
-    la BCT (au corpus, textuels) et dans les lois de règlement. Recettes propres après 1999,
+  - **Dotation du budget à la Caisse, dix années sans valeur versée** (1988, 1989, 1990, 2000,
+    2001, 2003, 2006, 2008, 2009, 2011), **traitée le 24 octobre 2026** (fiche
+    `r-cgc-dotation-annees-manquantes`). Rapports annuels de la BCT 1987-2013 parcourus au texte
+    intégral : aucun montant ; archives du web : rien. **Ajouté** (`_institution.qmd`, tableau
+    `tbl-compensation-lf-caisse`) : subvention du budget **prévue** par les lois de finances
+    initiales 1987-1994, tableaux des fonds spéciaux lus à l'image (188, 188, 188, 300, 272, 255,
+    245, 230 MD ; pages dans le tableau) ; crédits d'interventions du ministère du commerce 2000,
+    2001, 2002 et 2011 (`tbl-compensation-lf-commerce`), non désignés comme la dotation (251,2 MD
+    en 2002 pour 235 MD de dotation) ; 70 MD de 2007 dépensés en 2008. **Restent** : montant versé
+    de ces dix années (lois de règlement, budget économique, lois de finances complémentaires,
+    tableaux des fonds spéciaux des lois 1995-2010 non ouverts). Recettes propres après 1999,
     charges par produit de 1984, 1989-1991 et 1994, prêts et avances du Trésor par année : non
-    établis. Loi de finances pour 1987 (intégration des recettes au budget) : à lire au JORT.
-  - **Passage de la Caisse hors des fonds spéciaux** : texte non identifié (fiche
-    `r-cgc-budgetisation-1992-2003`) ; lois de finances 1993-2003 à ouvrir.
+    établis.
+  - **Loi de finances pour 1987** : lue le 24 octobre 2026 (loi n° 86-106, JORT n° 78 de 1986,
+    art. 91 et 92, p. 1623 ; tableau L, p. 1677). Fait.
+  - **Prélèvements à l'importation au profit de la Caisse, 1990-1993** (nouvelle section
+    `#sec-compensation-prelevements-importation`) : huit décrets lus à l'image ; à lire : décret
+    n° 93-1187 du 24 mai 1993 et modifications du décret n° 91-1391 (n° 2002-2227, 2009-2293,
+    2015-50) ; produit annuel (fiche `r-prelevements-importation-cgc`). Clés `decret90-1193`,
+    `decret90-1194`, `decret91-1391`, `decret92-1340`, `decret93-1605`, `decret93-1924`,
+    `decret93-2115`, `decret93-2116` versées (FR et AR, compensation).
+  - **La Caisse reste un fonds spécial du Trésor** : elle figure aux tableaux des fonds spéciaux
+    de 1987 à 1994 et aux lois de finances pour 2011 et 2012 (sans montant). Aucun texte de
+    sortie n'est à chercher ; fiche `r-cgc-budgetisation-1992-2003` : tableaux 1995-2010 à
+    ouvrir pour dater la disparition de la subvention du tableau.
   - **Décret d'application de l'article 3 de la loi n° 70-26** : non identifié (fiche).
   - **Rupture de 2015** : effet constaté de la séparation de 2015 à 2018, subvention indirecte de
     2013 et 2014, bénéficiaires de la ligne en 2013 et après 2016, recettes de commercialisation
@@ -3262,8 +3293,9 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     moyenne tension en dinars par kW et par mois en 1984. Huit références créées (arrêtés de
     1980 et 1981, loi n° 91-64, décrets n° 95-1142 et 2015-307, loi n° 2015-36, tarif
     interruptible de 2013). **Restent** (lisibles dans le corpus, sauf mention) :
-    avis et communications des JORT n° 75 à 86 de 1993, à lire à l'image (fiches
-    `r-decision-1993-10-08-prix-cession-gaz` et `r-tarifs-electricite-gaz-apres-1992`) ; actes
+    avis et communications des JORT n° 75 à 86 de 1993 : **lus à l'image le 24 octobre 2026, aucun
+    ne porte sur le gaz ou un tarif** (fiches `r-decision-1993-10-08-prix-cession-gaz` et
+    `r-tarifs-electricite-gaz-apres-1992`) ; actes
     tarifaires depuis 1992 — 10 août 2000, 5 mars 2013, et ceux d'octobre 1993, juin 1994, août
     2001, avril 2003, mai 2004 et 2014 — non identifiés au JORT (à demander à la STEG si les
     archives restent muettes) ; date d'effet des hausses de 2014 (1er janvier et 1er juin, ou
@@ -3277,7 +3309,7 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     gouvernemental remplaçant la liste après la loi n° 2015-36 (fiche
     `r-decret-91-1996-liste-apres-2015`) ; jour d'effet des grilles d'octobre 1993 et de juin
     1994 (fiche `r-tarifs-electricite-grilles-1993-2003`) ; moyenne et haute tension et gaz de
-    1994 à 2003, établis par les notes et non publiés ; grilles du gaz de 2001 à 2003 ;
+    1994 à 2003, aucune grille publiée (étude de l'ANER d'avril 2000 lue le 24 octobre 2026 : prix moyens par niveau de tension 1996-1998 en graphique sans valeurs, annexes de tarifs absentes) ; grilles du gaz de 2001 à 2003 ;
     contradiction de 2003 (90 ou 94) et écart de 2005 avec l'INS ; tarifs du Journal officiel
     de 1975 à 1990 à relire (moyenne et haute tension, unité de la prime de 1975 à 1982) ; haute
     tension de septembre 2012, moyenne pression de 2012-2013 ; heures des postes avant 2014 ;

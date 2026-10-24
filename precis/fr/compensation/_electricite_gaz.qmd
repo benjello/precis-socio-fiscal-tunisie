@@ -70,7 +70,7 @@ Quatre réformes changent la structure du tarif des ménages, l'autorité qui le
 
 ### 1984 : le tarif des ménages devient progressif {#sec-compensation-eg-1984}
 
-Le 31 mai 1984, le tarif de l'électricité, jusque-là un prix unique, devient progressif : le prix du kilowattheure monte avec la consommation. [L'arrêté du 4 juin 1984](#r-eg-1984) distingue une **tranche économique** — les cinquante premiers kilowattheures par mois des abonnements de 1 ou 2 kVA —, qui garde le prix unique de 1982, 61 millimes par kWh, et une **tranche normale**, à 70 millimes, pour le reste de leur consommation et pour toute celle des abonnements de plus de 2 kVA. Les prix sont taxes comprises.
+Le 31 mai 1984, le tarif de l'électricité, jusque-là un prix unique, devient progressif : le prix du kilowattheure monte avec la consommation. [L'arrêté du 4 juin 1984](#r-eg-1984) distingue une [**tranche économique**](#g-tranche-economique) — les cinquante premiers kilowattheures par mois des abonnements de 1 ou 2 kVA —, qui garde le prix unique de 1982, 61 millimes par kWh, et une [**tranche normale**](#g-tranche-normale), à 70 millimes, pour le reste de leur consommation et pour toute celle des abonnements de plus de 2 kVA. Les prix sont taxes comprises.
 
 - **Avant → après.** Prix unique de 61 millimes → tranche économique à 61, tranche normale à 70 : la hausse, de 15 %, épargne les cinquante premiers kilowattheures des petits abonnés.
 - **Une première apparition établie.** La tranche économique est absente des grilles de 1978, 1981 et 1982, comme des arrêtés de [juillet](#r-eg-1980-07) et d'[octobre 1980](#r-eg-1980-10) et de [janvier 1981](#r-eg-1981-01), qui modifient le tarif entre-temps : elle apparaît avec la grille de 1984.
@@ -82,7 +82,7 @@ Entre-temps, en [1987](#r-eg-1987), les deux tranches passent à 59 et 72 millim
 
 Le 1^er^ janvier 1992, le régime des prix change. [La loi du 29 juillet 1991 sur la concurrence et les prix](#r-eg-loi-1991) a pour objet, selon son article premier, « de définir les dispositions régissant la liberté des prix et d'établir les règles présidant à la libre concurrence ». Elle abroge à cette date la loi du 19 mai 1970, en vertu de laquelle le ministre arrêtait des prix maxima, et exclut de la liberté des prix les biens et services « afférents à des secteurs ou zones où la concurrence par les prix est limitée soit en raison d'une situation de monopole ou de difficultés durables d'approvisionnement soit [par] l'effet de dispositions législatives ou règlementaires » ; elle en renvoie la liste à un décret.
 
-- **L'homologation.** [Le décret du 23 décembre 1991](#r-eg-decret-1991) range l'électricité, l'eau et le gaz parmi les produits et services soumis à l'homologation des prix à tous les stades, qu'il définit comme « la fixation préalable par l'administration du niveau des prix ou de leurs variations ».
+- **L'homologation.** [Le décret du 23 décembre 1991](#r-eg-decret-1991) range l'électricité, l'eau et le gaz parmi les produits et services soumis à l'[homologation des prix](#g-homologation-des-prix) à tous les stades, qu'il définit comme « la fixation préalable par l'administration du niveau des prix ou de leurs variations ».
 - **Le dernier acte tarifaire publié.** [La décision du ministre de l'économie nationale du 11 août 1992](#r-eg-1992), parue à la rubrique des avis et communications, dispose : « Les prix de vente hors taxe de l'électricité et du gaz sont fixés selon les tarifs annexés à la présente décision et applicables sur l'ensemble du territoire de la République ». Les deux tranches passent à 59 et 76 millimes le 1^er^ août 1992.
 - **Des prix hors taxe.** Depuis [le 1^er^ janvier 1991](#r-eg-1991), les prix sont donnés hors taxe sur la valeur ajoutée ; jusqu'en 1987, ils l'étaient taxes comprises. Les niveaux ne se comparent donc pas de part et d'autre.
 - **Après 1992.** Les grilles postérieures ne sont connues que par la STEG, par des agences publiques qui les relaient, ou par des rapports de bailleurs. Un seul acte est nommé : l'Agence de promotion de l'industrie donne pour source de la grille du 15 août 2000, électricité et gaz, une « Décision du Ministre de l'Industrie du 10/08/2000 » [@api-2003-04-couts-energie]. La forme reste donc, en 2000, celle de 1992 — une décision ministérielle —, signée cette fois du ministre de l'industrie (@sec-compensation-eg-autorite).
@@ -108,7 +108,7 @@ La nature de l'acte de 1993 n'est pas établie, et son texte n'est pas identifi�
 
 <!-- RECHERCHE r-decision-1993-10-08-prix-cession-gaz : acte du ministre de l'économie nationale du 8 octobre 1993 fixant le prix de cession du gaz à la STEG (voir docs/recherches.yml) -->
 
-Entre-temps, de 2017 à 2024, les grilles de 2017 et de 2019 sont des ajustements ; en 2024, la taxe au profit du Fonds de transition énergétique passe de 1 à 5 millimes par kWh (@sec-compensation-eg-etat-du-droit).
+Entre-temps, de 2017 à 2024, les grilles de 2017 et de 2019 sont des ajustements ; en 2024, la taxe au profit du [Fonds de transition énergétique](#g-fonds-transition-energetique) passe de 1 à 5 millimes par kWh (@sec-compensation-eg-etat-du-droit).
 
 ### Les grilles des ménages, date par date {#sec-compensation-eg-grilles}
 
@@ -154,7 +154,7 @@ Jusqu'en 1975, le tarif est dégressif : le kilowattheure coûte moins cher à m
 
 :::: {.chronologie-repliable titre="Tarif de l'électricité des ménages de 1993 à 2003 : grilles établies par les agences publiques et par un rapport extérieur, et la contradiction de 2003"}
 
-Entre la décision du 11 août 1992 et la grille de la STEG du 1^er^ mai 2004, aucun texte publié ne donne les tarifs. Cinq grilles sont néanmoins établies, par deux voies qui ne sont pas du même rang et que deux tableaux tiennent séparées.
+Entre la [décision](#g-decision-ministerielle) du 11 août 1992 et la grille de la STEG du 1^er^ mai 2004, aucun texte publié ne donne les tarifs. Cinq grilles sont néanmoins établies, par deux voies qui ne sont pas du même rang et que deux tableaux tiennent séparées.
 
 **Les relais officiels tunisiens.** Trois agences publiques de promotion de l'investissement — l'Agence de promotion de l'investissement extérieur (FIPA), l'Agence de promotion des investissements agricoles (APIA) et l'Agence de promotion de l'industrie (API) — reproduisaient la grille de la STEG dans leurs pages sur les coûts des facteurs, conservées aux archives du web.
 
