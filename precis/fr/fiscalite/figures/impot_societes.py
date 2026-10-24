@@ -18,25 +18,8 @@ droit aux dépenses totales de l'État. Le second ne commence qu'en 1990 : le mi
 publie pas les dépenses totales avant cette date. Ici, les deux bornes coïncident, la
 création de l'impôt et le début de la série des dépenses tombant la même année.
 
-DEUX DÉNOMINATEURS DE PIB, ET C'EST VOULU. Le PIB n'est publié par aucune des deux
-sources : il se déduit du fichier d'indicateurs du ministère. Celui des comptes
-nationaux de l'INS, base 2015, ne coïncide pas pour 2012-2014. La figure retient le PIB
-du ministère — c'est celui sur lequel il calcule lui-même ses ratios —, et le tableau
-conserve les deux colonnes côte à côte : le dénominateur d'un ratio se choisit, il ne se
-devine pas.
-
-LES DEUX COLONNES SONT SOUVENT IDENTIQUES, ET CE N'EST PAS UN DÉFAUT. Mesuré sur les
-quarante exercices, l'écart entre les deux PIB est nul pour trente-trois d'entre eux, y
-compris toute la fin de période. Il n'apparaît que sur sept exercices, où il est alors
-considérable : −4,79 % en 2012, −5,00 % en 2013, −5,25 % en 2014. Un lecteur qui verrait
-deux colonnes portant le même nombre pourrait croire à une erreur de construction ; la
-note de lecture de la figure le prévient expressément. Retirer la colonne pour cause de
-ressemblance reviendrait à masquer le seul endroit où les deux sources se contredisent.
-
-CE QUE LA SÉRIE NE PERMET PAS DE FAIRE. Le classeur source distingue les impôts sur les
-sociétés « pétrolières » et « non pétrolières ». La série transformée n'en garde qu'un
-agrégat. Aucun commentaire de cette figure ne peut donc porter sur la part pétrolière du
-rendement, et le texte du chapitre le dit plutôt que de laisser croire le contraire.
+LE PIB EST CELUI DE CHAQUE BASE DES COMPTES NATIONAUX (1983, 1997, 2015), jamais raccordées : voir
+`figures/rendement_bases.py`, qui trace et tabule le rendement base par base.
 """
 from __future__ import annotations
 
@@ -50,6 +33,7 @@ import matplotlib.pyplot as plt
 _SCRIPTS = Path(__file__).resolve().parents[4] / "scripts"
 sys.path.insert(0, str(_SCRIPTS))
 import figtools  # noqa: E402
+from figures import rendement_bases as rb  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 FIGDATA = HERE.parent / "figdata"
@@ -99,98 +83,18 @@ def _lab(key: str) -> str:
     return _L[key].get(figtools.lang(), _L[key]["fr"])
 
 
-def _donnees():
-    """Les deux séries jointes sur l'année, avec les ratios au PIB et aux dépenses.
+NOM = {"fr": "Impôt sur les sociétés", "ar": "الضريبة على الشركات"}
+SERIES_RENDEMENT = rb.SERIES
 
-    La composition des recettes porte le montant de l'impôt sur les sociétés ; les
-    ratios de l'impôt sur le revenu portent les deux PIB et les dépenses totales.
-    Aucune des deux ne porte tout.
-    """
-    comp = figtools.series(SERIE_COMPOSITION)
-    rat = figtools.series(SERIE_RATIOS)
-    d = comp[["annee", "is_MDT", "is_pct"]].merge(
-        rat[["annee", "pib_minfin_MDT", "pib_cnat_MDT", "depenses_totales_MDT"]],
-        on="annee", how="left")
-    d["is_sur_pib_pct"] = 100 * d["is_MDT"] / d["pib_minfin_MDT"]
-    d["is_sur_pib_cnat_pct"] = 100 * d["is_MDT"] / d["pib_cnat_MDT"]
-    d["is_sur_depenses_pct"] = 100 * d["is_MDT"] / d["depenses_totales_MDT"]
-    return d
+
+def _nom() -> str:
+    return NOM.get(figtools.lang(), NOM["fr"])
 
 
 def table():
-    d = _donnees()
-    cols = ["annee", "is_sur_pib_pct", "is_sur_depenses_pct",
-            "is_sur_pib_cnat_pct", "is_pct", "is_MDT"]
-    w = d[cols].copy()
-    for c in ("is_sur_pib_pct", "is_sur_depenses_pct",
-              "is_sur_pib_cnat_pct", "is_pct"):
-        w[c] = w[c].round(2)
-    return w.rename(columns={
-        "annee": _lab("col_annee"),
-        "is_sur_pib_pct": _lab("col_pib"),
-        "is_sur_depenses_pct": _lab("col_dep"),
-        "is_sur_pib_cnat_pct": _lab("col_pib_cnat"),
-        "is_pct": _lab("col_rec"),
-        "is_MDT": _lab("col_mdt"),
-    })
-
-
-def prepare(generated: str | None = None):
-    d = _donnees()
-    figtools.write_figdata(
-        table(), FIGDATA / "fig_impot_societes_rendement.csv",
-        SERIE_COMPOSITION, SERIE_RATIOS,
-        note=("rendement de l'impôt sur les sociétés en points de PIB et en part des "
-              "dépenses de l'État, 1986-2025 ; rupture de série en 1990, les exercices "
-              "antérieurs portant l'impôt sur les bénéfices des sociétés abrogé par le "
-              "code de 1989 ; les dépenses totales ne sont publiées qu'à partir de 1990 ; "
-              "la ventilation entre sociétés pétrolières et non pétrolières du classeur "
-              "source n'est pas conservée par la série"),
-        generated=generated)
-    return d
+    return rb.tableau("is_MDT", "is_pct", _nom())
 
 
 def fig_rendement():
-    figtools.apply_lang_font()
-    ft = figtools.fig_text
-    d = _donnees()
-    avant = d[d["annee"] < ANNEE_IS]
-    apres = d[d["annee"] >= ANNEE_IS]
-    depenses = d[d["annee"] >= ANNEE_DEPENSES]
-
-    fig, ax1 = plt.subplots(figsize=(9.5, 5.2))
-    ax2 = ax1.twinx()
-
-    # La bande grise couvre les années où la rubrique mesure autre chose que l'impôt
-    # sur les sociétés.
-    ax1.axvspan(d["annee"].min() - 0.5, ANNEE_IS - 0.5, color="#8b949e", alpha=0.13, lw=0)
-    ax1.axvline(ANNEE_IS - 0.5, color="#57606a", lw=1.2, ls="--")
-
-    l0, = ax1.plot(avant["annee"], avant["is_sur_pib_pct"], "o:", color="#57606a",
-                   lw=1.6, ms=4, label=ft(_lab("lg_avant")))
-    # Le bleu clair est celui de la bande « impôt sur les sociétés » de la figure de
-    # composition : une même couleur pour un même impôt, d'une figure à l'autre. Le
-    # rouge de l'axe droit reprend la convention des deux autres figures de rendement,
-    # où il porte déjà le rapport aux dépenses de l'État.
-    l1, = ax1.plot(apres["annee"], apres["is_sur_pib_pct"], "o-", color="#54aeff",
-                   lw=2, ms=4, label=ft(_lab("lg_pib")))
-    l2, = ax2.plot(depenses["annee"], depenses["is_sur_depenses_pct"], "s--",
-                   color="#d1242f", lw=1.8, ms=3, label=ft(_lab("lg_dep")))
-
-    # L'annotation se place dans la moitié haute du cadre : les deux courbes occupent
-    # le bas sur la plus grande partie de la période.
-    bas, haut = ax1.get_ylim()
-    y_texte = bas + 0.85 * (haut - bas)
-    ax1.annotate(ft(_lab("rupture")), xy=(ANNEE_IS - 0.5, y_texte),
-                 xytext=(ANNEE_IS + 2.0, y_texte),
-                 fontsize=8, color="#57606a", va="center",
-                 arrowprops=dict(arrowstyle="->", color="#57606a", lw=1))
-
-    ax1.set_ylabel(ft(_lab("y_pib")), color="#54aeff")
-    ax2.set_ylabel(ft(_lab("y_dep")), color="#d1242f")
-    ax1.set_xlabel(ft(_lab("xlabel")))
-    ax1.set_title(ft(_lab("title")))
-    ax1.grid(True, alpha=0.3)
-    ax1.legend(handles=[l0, l1, l2], loc="upper left", fontsize=8.5)
-    fig.tight_layout()
-    return fig
+    return rb.figure("is_MDT", "is_pct", nom=_nom(), annee_debut=ANNEE_IS,
+                     titre=_lab("title"), rupture=_lab("rupture"), y_rupture=0.62)
