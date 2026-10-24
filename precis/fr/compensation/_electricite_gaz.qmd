@@ -562,7 +562,8 @@ el.figure(
     "subvention",
     caption=(
         "La subvention d'exploitation de la STEG, 2006-2016 : montant des comptes, soutien direct et "
-        "indirect du rapport de contrôle de 2014 (millions de dinars courants)"),
+        "indirect du rapport de contrôle de 2014 : en millions de dinars courants, en part du PIB et en part "
+        "des dépenses de l'État hors service de la dette"),
     note_lecture=(
         "Les barres empilent, de 2007 à 2013, le soutien direct — la subvention que verse le budget — "
         "et le soutien indirect — le gaz acheté au prix de cession préférentiel — que calcule le "
@@ -571,11 +572,16 @@ el.figure(
         "elle égale le soutien total du rapport, à l'arrondi imprimé près, de 2007 à 2013 ; le "
         "chiffre de 2006 est celui que le rapport annuel de 2007 retraite."
         "\n\n"
+        "Trois vues, à choisir dans les sous-onglets : les montants en millions de dinars courants, puis les mêmes "
+        "montants rapportés au PIB et aux dépenses de l'État hors service de la dette de l'année, tels que le livre "
+        "les donne pour la compensation (@fig-compensation-longue-periode). Le PIB change de base en 2010 : le repère de la vue en part du "
+        "PIB marque la rupture, et les deux côtés ne se comparent pas sans réserve."
+        "\n\n"
         "Le repère triangulaire de 2015 marque la rupture : le prix de cession a pris fin, la "
         "subvention d'exploitation égale la ligne budgétaire, 858 millions de dinars, et elle est "
         "nulle en 2016 (rond à zéro). Pour 2013 et 2014, les états financiers de 2014 ventilent la "
         "subvention entre directe et indirecte ; leurs valeurs sont dans l'onglet « Données ». "
-        "Montants en dinars courants, sans rapport au PIB."))
+        "Les ruptures de série de la STEG valent pour les trois vues."))
 ```
 
 
