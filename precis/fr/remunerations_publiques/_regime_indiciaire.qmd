@@ -26,7 +26,7 @@ Un tiret dans la colonne « Date d'effet » signale une date qui n'est pas étab
 
 **Son poids.** Le régime porte l'essentiel des effectifs et de la masse salariale du budget de l'État (@fig-effectifs-fp ; @fig-masse-salariale-ratios).
 
-**Comment le chapitre se lit.** D'abord l'état du droit : champ (@sec-ri-champ), construction de la rémunération (@sec-ri-construction), prélèvements (@sec-ri-prelevements). Puis l'histoire, dans l'ordre des dates (@sec-reperes-historiques-indiciaire). Enfin les salaires et les effectifs, de 2010 à 2025 (@sec-ri-reperes-budgetaires).
+**Comment le chapitre se lit.** D'abord l'état du droit : champ (@sec-ri-champ), construction de la rémunération (@sec-ri-construction), avec les indemnités propres aux diplomates, aux enseignants-chercheurs et aux emplois fonctionnels (@sec-ri-diplomates ; @sec-ri-enseignants-chercheurs ; @sec-ri-emplois-fonctionnels), prélèvements (@sec-ri-prelevements). Puis l'histoire, dans l'ordre des dates (@sec-reperes-historiques-indiciaire), dont le recrutement et les départs des agents depuis 1983 (@sec-ri-recruter-partir). Enfin les salaires et les effectifs, de 2010 à 2025 (@sec-ri-reperes-budgetaires).
 
 ## Champ d'application {#sec-ri-champ}
 
@@ -227,6 +227,174 @@ Ces indemnités et primes ne comptent pas toutes pour la pension : la contributi
 
 ::::
 
+Trois groupes d'agents régis par le statut général et payés sur sa grille ont des indemnités propres, qui s'ajoutent au traitement de base de leur grade : les diplomates (@sec-ri-diplomates), les enseignants-chercheurs des universités (@sec-ri-enseignants-chercheurs) et les agents chargés d'un emploi fonctionnel ou membres d'un cabinet ministériel (@sec-ri-emplois-fonctionnels). Les corps exclus du statut général — magistrats, militaires, forces de sécurité intérieure — et les douaniers ont leur chapitre : [Le régime statutaire autonome](_regime_statutaire_autonome.qmd).
+
+#### Les diplomates {#sec-ri-diplomates}
+
+Les agents du [corps diplomatique](#g-corps-diplomatique) sont des agents du statut général, payés sur sa grille. Ce qui leur est propre est la rémunération du service à l'étranger, qui s'ajoute au traitement de base : une [indemnité de poste](#g-indemnite-de-poste) selon la zone du poste, une indemnité de logement, une majoration des indemnités familiales et, pour les chefs de mission, une [indemnité de représentation](#g-indemnite-de-representation).
+
+| Grade | Sous-catégorie | Échelons | Niveaux de<br>rémunération | Fin de l'indemnité<br>compensatrice |
+|---|---|---:|---|---|
+| Ministre plénipotentiaire<br>hors classe | A1 | 16 | 10 à 25 | échelon 3<br>(niveau 12) |
+| Ministre plénipotentiaire | A1 | 20 | 6 à 25 | échelon 5<br>(niveau 10) |
+| Conseiller des affaires<br>étrangères | A1 | 25 | 1 à 25 | échelon 10<br>(niveau 10) |
+| Secrétaire des affaires<br>étrangères | A2 | 25 | 1 à 25 | échelon 11<br>(niveau 11) |
+
+: Les grades du corps diplomatique sur la grille des salaires, depuis la concordance de 1999 {#tbl-ri-diplomates-grille}
+
+Sources : [statut de 1991](#r-ri-dip-statut-1991) pour les grades et sous-catégories ; [concordance de 1999](#r-ri-dip-concordance-1999) pour les échelons, les niveaux et la fin de l'[indemnité compensatrice](#g-indemnite-compensatrice) du passage à la grille.
+
+- **Un corps du statut général.** Le [statut particulier de 1991](#r-ri-dip-statut-1991) soumet les diplomates au statut général « en ce qui n'y est pas dérogé » et range leurs quatre grades dans la catégorie A.
+- **La grille commune depuis 1999.** Le [décret de concordance de 1999](#r-ri-dip-concordance-1999) range les échelons de chaque grade sur les [niveaux de rémunération](#g-niveau-de-remuneration) de la grille de 1997 et abroge l'ancien classement indiciaire du corps.
+- **La rémunération à l'étranger, fixée en 1973.** Le [décret du 6 avril 1973](#r-ri-dip-etranger-1973) compose la rémunération de l'agent en poste : les émoluments de son grade ; les indemnités familiales, majorées de 5 % du total des émoluments et de l'indemnité de poste par enfant à charge, dans la limite de 20 % ; l'indemnité de poste ; une indemnité de logement égale à 25 % des émoluments majorés de l'indemnité de poste et des indemnités familiales, ou 50 % dans les postes désignés par arrêté ; une indemnité de perte de change pour les agents d'indice inférieur à 300. L'indemnité de poste est un pourcentage des émoluments globaux, de 195 % à 280 % selon la [zone du poste et l'indice de l'agent](#r-ri-dip-zones-1973) (@tbl-ri-diplomates-poste).
+- **Des tranches d'indice que la grille en dinars ne connaît plus.** L'indemnité de poste et l'indemnité de perte de change sont graduées par tranches d'indice, alors que, depuis 1998, aucun indice n'entre dans le traitement de base (@sec-ri-reforme-1998). Le texte qui rapporte ces tranches aux niveaux de rémunération n'est pas identifié ici. Les deux indemnités n'ont donc, en l'état des textes identifiés, aucune correspondance établie avec la grille de 1997.
+
+<!-- RECHERCHE r-diplomates-indemnite-poste-apres-1998 : texte transposant à la grille en dinars les tranches d'indice de l'indemnité de poste (décret n° 73-168, art. 2) et de l'indemnité de perte de change (décret n° 73-167, art. 11-12) ; arrêtés de classement zonal postérieurs à 1985 (voir docs/recherches.yml) -->
+
+<!-- TODO (documentaliste) : lire les modificatifs du décret n° 73-167 de 1985 à 1992 (n° 85-1183, 89-842, 90-721 qui crée l'art. 31 bis, 91-666, 92-93 ; scans) et la fin du statut de 1991 (pp. 1423-1425) ; arrêté du 1er mars 1985 complétant le décret n° 73-168 ; budget de la mission « Affaires étrangères » et effectif du corps diplomatique. Clés à créer (bibliographe) pour les décrets n° 91-1078 et 85-1183 si on les cite. -->
+
+:::: {.chronologie-repliable titre="Diplomates : statut, concordance avec la grille, taux de l'indemnité de poste et indemnités du service à l'étranger — textes date par date, 1973-2013"}
+
+| Indice de l'agent | Zone I | Zone II | Zone III |
+|---|---:|---:|---:|
+| jusqu'à 300 | 280 % | 260 % | 240 % |
+| de 301 à 360 | 265 % | 245 % | 225 % |
+| de 361 à 500 | 240 % | 225 % | 205 % |
+| plus de 500 | 230 % | 215 % | 195 % |
+
+: Taux de l'indemnité de poste des agents en service à l'étranger, en pourcentage des émoluments globaux, par zone et tranche d'indice, depuis le 1^er^ janvier 1973 {#tbl-ri-diplomates-poste}
+
+Zones fixées en 1973 : la zone I comprend notamment Paris, Washington, New York, Rome, Tokyo et Moscou ; la zone II, Londres, Bruxelles, Genève, Berne, La Haye, l'Algérie et la Libye ; la zone III, Rabat, Le Caire, Madrid, Ankara, Amman et Pékin. Le classement des postes peut être modifié par arrêté du ministre, selon le coût de la vie.
+
+<!-- TODO (rédacteur) : remplacer ce tableau par un tableau engendré. -->
+
+| Effet | Portée | Texte et articles | Ce que le texte dispose |
+|---|---|---|---|
+| []{#r-ri-dip-etranger-1973}[1^er^ janvier 1973]{.insecable} | texte fondateur du régime de l'étranger | décret n° 73-167 du 6 avril 1973 [@decret-73-167, art. 2-12 et 60] | éléments de la rémunération en poste : émoluments de grade, indemnités familiales majorées de 5 % par enfant à charge (au plus 20 %), indemnité de poste par zone, indemnité de logement de 25 % (50 % dans les postes listés par arrêté), indemnité de perte de change pour les indices inférieurs à 300 (25 % jusqu'à l'indice 225, 20 % de 226 à 250, 15 % de 251 à 299) ; indemnité de représentation pour les chefs de mission |
+| []{#r-ri-dip-zones-1973}[1^er^ janvier 1973]{.insecable} | texte fondateur | décret n° 73-168 du 6 avril 1973 [@decret-73-168, art. 1-3] | trois zones de postes ; taux de l'indemnité de poste par zone et tranche d'indice (@tbl-ri-diplomates-poste) |
+| []{#r-ri-dip-representation-1973}[1^er^ janvier 1973]{.insecable} | montant | arrêté du Premier ministre du 6 avril 1973 [@arrete-1973-04-06-representation] | indemnité de représentation annuelle : 600 dinars pour l'ambassadeur chef de mission, 400 pour le consul général ou le chargé d'affaires dirigeant une mission, 200 pour le consul dirigeant un consulat — soit 5 939, 3 959 et 1 980 dinars de 2015 |
+| []{#r-ri-dip-statut-1991}— | statut | décret n° 91-1077 du 22 juillet 1991 [@decret-91-1077, art. 2, 23 et 24] | les agents du corps diplomatique sont régis par la loi n° 83-112 « en ce qui n'y est pas dérogé » ; quatre grades, trois en A1, le secrétaire des affaires étrangères en A2 |
+| []{#r-ri-dip-echelons-1999}— | étape | décret n° 99-2357 du 27 octobre 1999 [@decret-99-2357, art. 24 bis et 24 ter] | 25 échelons par grade, 16 pour le ministre plénipotentiaire hors classe, 20 pour le ministre plénipotentiaire ; cadence d'un an pour les échelons 2 à 4, de deux ans au-delà |
+| []{#r-ri-dip-concordance-1999}— | **rupture** | décret n° 99-2358 du 27 octobre 1999 [@decret-99-2358, art. 1, 3 et 4] | classement indiciaire du corps → concordance des échelons avec les niveaux de rémunération de la grille de 1997 (@tbl-ri-diplomates-grille) ; abrogation du décret n° 91-1078 |
+| — | ajustement | décret n° 2004-1772 du 27 juillet 2004 [@decret2004-1772] | indemnité forfaitaire de transport des bagages et du mobilier, égale à 50 % de l'indemnité de l'article 31 bis |
+| — | ajustement | décret n° 2008-3481 du 10 novembre 2008 [@decret2008-3481] | enseignement des enfants : prise en charge à 75 % → prise en charge totale, contribution de l'agent de 10 %, plafond annuel par enfant fixé par arrêté |
+| — | ajustement | décret n° 2013-1391 du 10 avril 2013 [@decret2013-1391] | recrutement des conseillers des affaires étrangères |
+
+: Les diplomates, texte par texte, 1973-2013 {#tbl-ri-diplomates-textes}
+
+Un tiret dans la colonne « Effet » signale un texte dont la date d'effet n'est pas établie ici ; la date qui suit son numéro est celle du texte. Dinars de 2015 : montant × indice des prix de 2015 / indice de 1973 ; indice de l'INS en base 1970 [@ins-annuaire].
+
+<!-- TODO (rédacteur) : remplacer le registre des montants par un tableau engendré. -->
+
+::::
+
+#### Les enseignants-chercheurs {#sec-ri-enseignants-chercheurs}
+
+Les [enseignants-chercheurs](#g-enseignant-chercheur) des universités ont un statut particulier pris en application du statut général et sont payés sur sa grille. Ce qui leur est propre tient à leurs indemnités : l'[indemnité d'encadrement et de recherche](#g-indemnite-encadrement-recherche), une [indemnité spécifique](#g-indemnite-specifique), une indemnité kilométrique forfaitaire et la rémunération des heures d'enseignement complémentaires.
+
+| Élément propre | Depuis | Montants établis | Dernière date<br>de montant |
+|---|---|---|---|
+| Indemnité d'encadrement<br>et de recherche | 1985 | majorations de 2020-2021 et de 2026-2028 | [1^er^ janvier 2028]{.insecable} |
+| Indemnité spécifique | [1^er^ janvier 2000]{.insecable} | taux de 2000 et 2001 ; augmentation de 2012-2014 | [1^er^ juillet 2014]{.insecable} |
+| Indemnité kilométrique<br>forfaitaire | [1^er^ janvier 2000]{.insecable} | taux de 2000 et 2001 | [1^er^ janvier 2001]{.insecable} |
+| Heures d'enseignement<br>complémentaires | 1992 | taux annuels de 2000, repris en 2016 | — |
+
+: Les éléments propres de la rémunération des enseignants-chercheurs, 1985-2028 {#tbl-ri-ec-elements}
+
+- **Un corps du statut général, sur sa grille.** Le [statut de 1993](#r-ri-ec-statut-1993) vise le statut général en premier ; il compte quatre grades permanents — professeur de l'enseignement supérieur, maître de conférences, maître assistant, assistant — et fixe leurs obligations de service : 4 h 30 de cours par semaine pour les professeurs et les maîtres de conférences, 12 heures de travaux pratiques ou 8 heures de travaux dirigés pour les maîtres assistants. Depuis la [concordance de 1999](#r-ri-ec-concordance-1999), le professeur est rangé aux niveaux 3 à 25 de la grille, les trois autres grades aux niveaux 1 à 25, tous en sous-catégorie A1.
+- **L'indemnité d'encadrement et de recherche porte les augmentations.** [Instituée en 1985](#r-ri-ec-ier-1985), elle est augmentée [de 2020 à 2021](#r-ri-ec-ier-2020), en quatre tranches, de 1 000 dinars par mois au total pour le professeur à 450 dinars pour l'assistant. L'augmentation générale de 2026-2028 passe par elle : [trois tranches de 120 dinars par mois](#r-ri-ec-ier-2026), aux 1^er^ janvier 2026, 2027 et 2028, comme pour les autres agents de la sous-catégorie A1 (@sec-ri-augmentations-generales).
+- **L'indemnité spécifique de 2000.** [Instituée au 1^er^ janvier 2000](#r-ri-ec-specifique-2000), elle va de 200 dinars par mois pour le professeur à 100 pour l'assistant, puis de 280 à 150 dinars au 1^er^ janvier 2001 ; elle est soumise à l'impôt et aux retenues pour pension. Un [décret de 2013](#r-ri-ec-specifique-2013) l'augmente en trois tranches, du 1^er^ décembre 2012 au 1^er^ juillet 2014.
+- **Des heures complémentaires au même taux de 2000 à 2016.** L'heure annuelle de cours du professeur est payée [640 dinars en 2000](#r-ri-ec-heures-2000), et toujours [640 dinars en 2016](#r-ri-ec-heures-2016) ; en dinars de 2015, elle passe de 1 140 à 617 dinars (@tbl-ri-ec-heures).
+
+L'âge de la retraite des professeurs et son prolongement sont au livre « Retraites » ([2009 : les enseignants du supérieur](../retraites/_secteur_public.html#sec-cnrps-reforme-2009)) ; les effectifs d'enseignants du supérieur, au livre « Éducation ».
+
+<!-- TODO (bibliographe) : la prime de rentrée universitaire (décret gouvernemental n° 2018-904 du 9 novembre 2018, JORT n° 90, pp. 4717-4718, édition arabe : prime annuelle brute de 1 706 D pour le professeur, 1 530 D pour le maître de conférences, 1 295 D pour le maître assistant, 1 118 D pour l'assistant ; imposable, hors retenues pour pension ; effet en septembre 2018) a sa clé dans precis/fr/education/references.json seulement (decret-gouv-2018-904-prime-rentree-universitaire) : la copier dans remunerations_publiques/references.json (FR et AR) pour qu'elle entre au tableau tbl-ri-ec-elements et au registre. Décret n° 2019-1129 (enseignement supérieur agricole) et n° 2020-550 (militaire) : clés à créer. -->
+<!-- TODO (documentaliste) : niveau de l'indemnité d'encadrement et de recherche — lire le décret n° 85-1405 (JORT n° 81 de 1985, scan) et ses majorations (86-146, 90-1240, 91-516, 93-2310, 94-63 ; tranches de 1996 à 2011, dont 2011-3325) ; dire si les montants du décret n° 2013-1470 sont des tranches qui se cumulent ou des montants successifs, et lire le décret n° 2009-910 qui modifie l'indemnité spécifique ; heures complémentaires après 2016. -->
+
+:::: {.chronologie-repliable titre="Enseignants-chercheurs : statut, concordance, montants de l'indemnité d'encadrement et de recherche, de l'indemnité spécifique, de l'indemnité kilométrique et taux des heures complémentaires — textes date par date, 1985-2028"}
+
+| Grade | Cours | Travaux dirigés | Travaux pratiques | Cours en 2000<br>(D de 2015) | Cours en 2016<br>(D de 2015) |
+|---|---:|---:|---:|---:|---:|
+| Professeur | 640 | 480 | 320 | 1 140 | 617 |
+| Maître de conférences | 608 | 456 | 304 | 1 083 | 586 |
+| Maître assistant | 544 | 408 | 272 | 969 | 524 |
+| Assistant | 532 | 400 | 266 | 948 | 513 |
+
+: Taux annuels de l'heure d'enseignement complémentaire, par grade, en dinars, du 1^er^ janvier 2000 à 2016 {#tbl-ri-ec-heures}
+
+| Grade | Indemnité spécifique<br>au 1^er^ janvier 2000<br>(D par mois) | Au 1^er^ janvier 2001<br>(D par mois) | Au 1^er^ janvier 2001<br>(D de 2015) | Augmentation de l'IER,<br>2020-2021<br>(D par mois) | Augmentation de l'IER<br>(D de 2015, prix de 2021) |
+|---|---:|---:|---:|---:|---:|
+| Professeur | 200 | 280 | 489 | 1 000 | 714 |
+| Maître de conférences | 160 | 230 | 402 | 800 | 571 |
+| Maître assistant | 130 | 195 | 341 | 650 | 464 |
+| Assistant | 100 | 150 | 262 | 450 | 321 |
+
+: Indemnité spécifique (2000-2001) et augmentation de l'indemnité d'encadrement et de recherche (IER, 2020-2021) des enseignants-chercheurs, par grade {#tbl-ri-ec-indemnites}
+
+<!-- TODO (rédacteur) : remplacer ces deux tableaux et le registre des montants par des tableaux engendrés. -->
+
+| Effet | Portée | Texte et articles | Ce que le texte dispose |
+|---|---|---|---|
+| []{#r-ri-ec-ier-1985}— | création | décret n° 85-1405 du 8 novembre 1985 [@decret-85-1405] | institution de l'indemnité d'encadrement et de recherche ; montants non repris ici |
+| []{#r-ri-ec-statut-1993}[15 septembre 1993]{.insecable} | statut | décret n° 93-1825 du 6 septembre 1993 [@decret-93-1825, art. 1, 2, 7, 24, 33 et 65] | statut particulier pris sous la loi n° 83-112 ; hospitalo-universitaires exclus ; quatre grades permanents ; obligations de service ; abroge le statut de 1982 |
+| []{#r-ri-ec-echelons-1999}— | étape | décret n° 99-1803 du 23 août 1999 [@decret-99-1803] | échelons portés à 23 pour le professeur et à 25 pour les trois autres grades ; cadence de deux ans à partir du 4^e^ ou du 6^e^ échelon |
+| []{#r-ri-ec-concordance-1999}— | **rupture** | décret n° 99-1804 du 23 août 1999 [@decret-99-1804, art. 1, 3 et 4] | classement indiciaire des personnels de l'enseignement supérieur → concordance avec les niveaux de rémunération de la grille de 1997 : professeur, niveaux 3 à 25 ; maître de conférences, maître assistant et assistant, niveaux 1 à 25 ; l'indemnité compensatrice cesse à l'échelon 6 (professeur), 11 (maître de conférences) ou 10 ; abroge le décret n° 73-464 |
+| []{#r-ri-ec-specifique-2000}[1^er^ janvier 2000]{.insecable}<br>[1^er^ janvier 2001]{.insecable} | création | décret n° 2000-241 du 31 janvier 2000 [@decret2000-241, art. 2 et 3] | indemnité spécifique mensuelle, soumise à l'impôt et aux retenues de retraite, de prévoyance et de capital décès : 200, 160, 130 et 100 dinars, puis 280, 230, 195 et 150 dinars (@tbl-ri-ec-indemnites) |
+| [1^er^ janvier 2000]{.insecable}<br>[1^er^ janvier 2001]{.insecable} | création | décret n° 2000-242 du 31 janvier 2000 [@decret2000-242] | indemnité kilométrique forfaitaire mensuelle : professeur et maître de conférences 57 puis 85 dinars (102 puis 149 dinars de 2015) ; maître assistant et assistant 39 puis 57 dinars (69 puis 100 dinars de 2015) ; exclusive de l'indemnité kilométrique de droit commun |
+| []{#r-ri-ec-heures-2000}[1^er^ janvier 2000]{.insecable} | montant | décret n° 2000-243 du 31 janvier 2000 [@decret2000-243] | taux annuels de l'heure complémentaire de cours, de travaux dirigés et de travaux pratiques par grade (@tbl-ri-ec-heures) |
+| []{#r-ri-ec-specifique-2013}[1^er^ décembre 2012]{.insecable}<br>[1^er^ décembre 2013]{.insecable}<br>[1^er^ juillet 2014]{.insecable} | étape | décret n° 2013-1470 du 6 mai 2013 [@decret2013-1470] | augmentation mensuelle de l'indemnité spécifique, aux trois dates : professeur 280, 280 et 290 dinars ; maître de conférences 230, 230 et 240 ; maître assistant 180, 180 et 190 ; assistant 130, 130 et 140 |
+| []{#r-ri-ec-heures-2016}— | ajustement | décret gouvernemental n° 2016-399 du 16 mars 2016 [@decret-gouv2016-399] | refonte des heures complémentaires : taux des enseignants-chercheurs inchangés ; taux propres aux enseignants du secondaire affectés au supérieur |
+| []{#r-ri-ec-ier-2020}[1^er^ janvier 2020]{.insecable}<br>[1^er^ juillet 2020]{.insecable}<br>[1^er^ janvier 2021]{.insecable}<br>[1^er^ juillet 2021]{.insecable} | étape | décret gouvernemental n° 2020-142 du 25 février 2020 [@decret-gouv2020-142] | augmentation de l'IER en quatre tranches : professeur 4 × 250 dinars ; maître de conférences 4 × 200 ; maître assistant 164 + 162 + 162 + 162 ; assistant 114 + 112 + 112 + 112 (@tbl-ri-ec-indemnites) ; même jour, augmentation de l'indemnité des enseignants technologues [@decret-gouv2020-143] |
+| []{#r-ri-ec-ier-2026}[1^er^ janvier 2026]{.insecable}<br>[1^er^ janvier 2027]{.insecable}<br>[1^er^ janvier 2028]{.insecable} | étape | décret n° 2026-63 du 30 avril 2026 [@decret2026-63, art. 1 et 2] | l'augmentation générale est servie aux enseignants-chercheurs sur l'IER : 120 dinars par mois à chaque date pour la sous-catégorie A1 |
+| — | ajustement | décret n° 2023-749 du 4 décembre 2023 [@decret2023-749] | recrutement et instances : jurys, concours de maître assistant en deux étapes, mandat des commissions ; aucune règle de rémunération |
+
+: Les enseignants-chercheurs, texte par texte, 1985-2028 {#tbl-ri-ec-textes}
+
+Un tiret dans la colonne « Effet » signale un texte dont la date d'effet n'est pas établie ici ; la date qui suit son numéro est celle du texte. Dinars de 2015 : montant × indice des prix de 2015 / indice de l'année ; indice de l'INS en base 1970 [@ins-annuaire], prolongé après 2023 par l'indice en base 2015 que relaie la Banque centrale [@bct-ra].
+
+::::
+
+#### Les emplois fonctionnels et les cabinets ministériels {#sec-ri-emplois-fonctionnels}
+
+L'agent chargé d'un [emploi fonctionnel](#g-emploi-fonctionnel) d'administration centrale, de chef de service à secrétaire général de ministère, perçoit une indemnité de fonction mensuelle fixée par emploi ; le fonctionnaire membre d'un cabinet ministériel, une indemnité de cabinet. Au [1^er^ août 2009](#r-ri-ef-2009), l'indemnité de fonction va de 200 dinars pour le chef de service à 500 dinars pour le secrétaire général (@tbl-ri-emplois-fonctionnels).
+
+| Emploi | Montant au 1^er^ août 2009<br>(D par mois) | Montant au 1^er^ août 2009<br>(D de 2015) |
+|---|---:|---:|
+| Chef de service | 200 | 268 |
+| Chef de service,<br>classe exceptionnelle | 225 | 301 |
+| Sous-directeur | 250 | 334 |
+| Sous-directeur,<br>classe exceptionnelle | 275 | 368 |
+| Directeur | 300 | 401 |
+| Directeur,<br>classe exceptionnelle | 350 | 468 |
+| Directeur général | 400 | 535 |
+| Directeur général,<br>classe exceptionnelle | 450 | 602 |
+| Secrétaire général<br>de ministère | 500 | 669 |
+| Chef de cabinet ministériel<br>(fonctionnaire) | 500 | 669 |
+| Attaché de cabinet<br>(fonctionnaire) | 260 | 348 |
+
+: Indemnité de fonction des emplois fonctionnels d'administration centrale et indemnité de cabinet, au 1^er^ août 2009 {#tbl-ri-emplois-fonctionnels}
+
+Sources : [indemnité de fonction](#r-ri-ef-2009) ; [indemnité de cabinet](#r-ri-cabinet-2009). Dinars de 2015 : montant × indice des prix de 2015 / indice de 2009 ; indice de l'INS en base 1970 [@ins-annuaire].
+
+- **Une indemnité soumise aux retenues et à l'impôt.** L'indemnité de fonction supporte les retenues de retraite, de prévoyance et de capital décès, et l'impôt sur le revenu ; le [décret de 2009](#r-ri-ef-2009) abroge le régime de 1983 et ses modificatifs.
+- **Les cabinets.** Le directeur du cabinet du Premier ministre et les chefs de cabinet ministériels qui ont la qualité de fonctionnaire perçoivent 500 dinars par mois, les attachés de cabinet fonctionnaires 260 dinars ([décret de 2009](#r-ri-cabinet-2009)).
+- **Les magistrats** bénéficient des avantages d'un emploi fonctionnel attachés à leur grade (@sec-statutaire-magistrats-autres).
+
+<!-- TODO (documentaliste) : textes postérieurs au 1er août 2009 sur ces montants ; régime d'attribution et de retrait des emplois fonctionnels (décrets n° 71-364, 88-188, 2006-1245, modifié par le décret n° 2023-592) ; indemnité spécifique des emplois fonctionnels (décret n° 91-802 et ses décrets d'application) et indemnités complémentaires (décret n° 97-1321) ; régime des cabinets (décret n° 76-843 et modificatifs n° 91-800 et 2006-1718 ; scans) ; secrétaire général du gouvernement (décrets n° 71-385 à 79-931). Clés à créer (bibliographe). -->
+
+:::: {.chronologie-repliable titre="Emplois fonctionnels et cabinets ministériels : montants de l'indemnité de fonction et de l'indemnité de cabinet, textes, 2009"}
+
+| Effet | Portée | Texte et articles | Ce que le texte dispose |
+|---|---|---|---|
+| []{#r-ri-ef-2009}[1^er^ août 2009]{.insecable} | montant | décret n° 2009-2252 du 31 juillet 2009 [@decret2009-2252, art. 1 à 4] | indemnité de fonction mensuelle par emploi, de 200 dinars (chef de service) à 500 dinars (secrétaire général de ministère) (@tbl-ri-emplois-fonctionnels) ; soumise aux retenues de retraite, de prévoyance et de capital décès et à l'impôt sur le revenu ; abroge le décret n° 83-576 du 17 juin 1983 et ses modificatifs |
+| []{#r-ri-cabinet-2009}[1^er^ août 2009]{.insecable} | montant | décret n° 2009-2251 du 31 juillet 2009 [@decret2009-2251, art. 1, 2 et 4] | article 6 du décret n° 76-843 modifié : indemnité de cabinet de 500 dinars pour le directeur du cabinet du Premier ministre et les chefs de cabinet fonctionnaires, de 260 dinars pour les attachés de cabinet fonctionnaires |
+
+: Les emplois fonctionnels et les cabinets ministériels, texte par texte, 2009 {#tbl-ri-emplois-fonctionnels-textes}
+
+<!-- TODO (rédacteur) : remplacer par un tableau engendré. -->
+
+::::
+
 ## Les prélèvements sur la rémunération {#sec-ri-prelevements}
 
 La rémunération brute supporte quatre prélèvements — retenue pour pension, cotisation d'assurance maladie, retenue à la source de l'impôt sur le revenu, contribution sociale de solidarité —, auxquels s'ajoute un régime d'accidents du travail propre au secteur public. L'histoire de chacun est dans un autre volume, indiqué à chaque fois.
@@ -321,6 +489,89 @@ De cette double origine subsiste une séparation : **ouvriers et fonctionnaires 
 | []{#r-ri-s-1997}loi n° 97-83 du 20 décembre 1997 [@loi97-83] | étape | modifie plusieurs dispositions du statut général, dont celles relatives à la promotion et au reclassement |
 
 : Les statuts généraux de la fonction publique, texte par texte, 1956-1997 {#tbl-ri-statuts-textes}
+
+::::
+
+### Recruter et faire partir, 1983-2028 {#sec-ri-recruter-partir}
+
+Les pensions servies aux agents qui partent avant l'âge légal sont au livre « Retraites » ([Les départs anticipés et la jouissance différée](../retraites/_secteur_public.html#sec-cnrps-departs-anticipes)) ; la régularisation des ouvriers de chantier, au livre « Le marché du travail ».
+
+Le statut général de 1983 (@sec-ri-statuts-generaux) fixe les conditions d'accès à la fonction publique et ses voies de recrutement : l'école de formation, le concours, la promotion interne. Depuis 2011, des lois successives y dérogent pour recruter des chômeurs diplômés, sur dossier ou sans concours ; dans le même temps, l'État fait partir des agents avant l'âge légal, ou contre une prime, en 2017, en 2018 et de 2022 à 2028.
+
+| Date du texte | Recrutement | Départ |
+|---|---|---|
+| [1983](#r-ri-rec-1983) | concours et écoles de formation : la moitié au plus des emplois des catégories A à C pourvue par recrutement externe | — |
+| [1987](#r-ri-dep-1987) | — | retraite anticipée volontaire, contre un programme de recrutement en remplacement |
+| [2011](#r-ri-rec-2011) | concours externes sur dossiers, ouverts aux chômeurs, pour l'année 2011 | — |
+| [2012](#r-ri-rec-2012) | recrutement direct des familles des martyrs, des blessés de la révolution, des amnistiés, des handicapés | — |
+| [2017](#r-ri-dep-2017) | — | mise à la retraite avant l'âge légal des agents qui l'atteignent de 2018 à 2021 |
+| [2018](#r-ri-dep-2018) | — | départ volontaire contre une prime de 36 mois de salaire net |
+| [2020](#r-ri-rec-2020) | recrutement direct des chômeurs diplômés depuis dix ans et plus | — |
+| [2021-2022](#r-ri-dep-2022) | — | programme spécifique de mise à la retraite avant l'âge légal, 2022-2028 |
+| [2025](#r-ri-rec-2025) | recrutement exceptionnel des diplômés chômeurs de longue durée | — |
+
+: Recrutements dérogatoires et programmes de départ des agents publics, 1983-2025 {#tbl-ri-recruter-partir}
+
+#### Le recrutement : le concours, puis les dérogations de 2011 à 2025 {#sec-ri-recrutement}
+
+- **La règle de 1983.** Nul n'est nommé fonctionnaire s'il n'est de nationalité tunisienne, ne jouit de ses droits civiques, n'est en règle au regard du recrutement de l'armée, n'a 18 ans au moins et n'est apte physiquement et mentalement. Dans les catégories A, B et C, la moitié au plus des emplois à pourvoir va au recrutement externe — nomination des élèves d'une école de formation agréée, concours externe sur épreuves — et la moitié au plus à la promotion interne, dont 40 % par cycle de formation ou concours interne et 10 % au choix ; la catégorie D se recrute par concours sur épreuves ([statut général de 1983, art. 17 à 19](#r-ri-rec-1983)).
+- **2011 : le concours sur dossiers.** Le programme de recrutement de 2011 passe par des [concours externes sur dossiers](#g-concours-externe-sur-dossiers) « au profit des candidats en chômage », classés selon l'année du diplôme, l'âge, la situation familiale, la mention et les stages ([décret-loi de 2011](#r-ri-rec-2011)) ; un barème sur 100 points en fixe le poids, 30 points pour l'ancienneté du diplôme ([décret de 2011](#r-ri-rec-2011-bareme)).
+- **2012 : le recrutement direct.** Au moins 70 % des postes sont pourvus par des concours classés selon l'âge et l'année du diplôme, puis une épreuve ; hors concours, l'administration recrute directement un membre de chaque famille des martyrs de la révolution, les blessés de la révolution, les bénéficiaires de l'amnistie générale ou un membre de leur famille, et les handicapés ; un membre de chaque famille dont tous les membres sont chômeurs, dans la limite de 5 % ([loi de 2012](#r-ri-rec-2012)). Ces règles ne s'appliquent pas aux militaires, aux forces de sécurité intérieure, aux douaniers, aux magistrats, ni aux enseignants-chercheurs, aux corps médicaux et paramédicaux, aux enseignants et aux diplomates ([décret de 2012, art. 3](#r-ri-rec-2012-exclusions)).
+- **2016 : des concours d'exception.** Les conditions des concours externes de 2016 sont fixées par décision du ministre, nonobstant les statuts particuliers, avec deux observateurs de la société civile dans les jurys ([décret de 2016](#r-ri-rec-2016)).
+- **2020 : les chômeurs de longue durée.** La loi prévoit le [recrutement direct](#g-recrutement-direct), par tranches annuelles et en quatre ans au plus, des diplômés du supérieur au chômage depuis dix ans et plus, des diplômés chômeurs de 35 ans et plus, et d'un membre de chaque famille dont tous les membres sont chômeurs ; 5 % au moins des recrutements annuels de la fonction publique sont réservés aux handicapés ([loi de 2020](#r-ri-rec-2020)). La loi de finances pour 2021 ouvre des crédits pour recruter 10 000 diplômés à ce titre ([2021](#r-ri-rec-2021)). Les décrets d'application que la loi prévoit à ses articles 1 à 3 ne sont pas identifiés ici. Le recrutement direct n'a donc, en l'état des textes identifiés, ni procédure ni calendrier fixés par décret. Le ministère des Finances annonce dans son rapport sur le budget de 2022 la non-activation de la loi [@minfin-rapport-budget-2022, p. 21] ; la Cour des comptes note que son application est reportée pour la deuxième année [@cdc-loireg-2022, p. 70].
+- **2021 : les ouvriers de chantier.** Un article 18 bis du statut général écarte le concours pour le recrutement direct des ouvriers de chantier de plus de 45 ans ([loi de 2021](#r-ri-rec-chantiers)) ; la loi de finances pour 2024 échelonne leur régularisation en trois tranches, de 2024 à 2026 ([2024](#r-ri-rec-chantiers-2024)).
+- **2025 : le recrutement exceptionnel.** La loi organise, sur une plateforme numérique et en trois ans au plus, le recrutement des diplômés du supérieur en chômage de longue durée, par priorité ceux de plus de 40 ans et ceux dont le diplôme a plus de dix ans ; le candidat ne doit avoir bénéficié d'aucune régularisation ni être affilié de façon continue à un régime de retraite ([loi de 2025](#r-ri-rec-2025)). La loi de finances pour 2026 ouvre les crédits de la première tranche, après publication des textes d'application ([2026](#r-ri-rec-2025-credits)). Ces textes ne sont pas identifiés ici ; la première tranche n'a donc, en l'état des textes identifiés, pas de procédure fixée.
+- **2023 : l'audit des recrutements.** L'État ordonne un audit général des recrutements et des intégrations effectués du 14 janvier 2011 au 25 juillet 2021 dans la fonction publique, les établissements et entreprises publics et les sociétés à participation publique ([décret de 2023](#r-ri-rec-audit-2023)).
+
+<!-- RECHERCHE r-loi2020-38-decrets-application : décrets gouvernementaux d'application des articles 1 à 3 de la loi n° 2020-38 (voir docs/recherches.yml) -->
+<!-- RECHERCHE r-loi2025-18-application : décret ou arrêté d'application de la loi n° 2025-18 (voir docs/recherches.yml) -->
+
+Le gel des recrutements se lit dans les rapports sur le budget de l'État. Celui de 2022 annonce le gel des recrutements « dans la mesure du possible », sauf pour les diplômés des écoles de formation et les secteurs prioritaires, et le non-remplacement des départs, dans un cadre que le ministère des Finances décrit comme celui de la maîtrise de la masse salariale et de la restructuration de la fonction publique [@minfin-rapport-budget-2022, pp. 21 et 37] ; ceux de 2024 et de 2025 limitent les recrutements aux secteurs prioritaires et les promotions annuelles à 20 %, puis à 40 % [@minfin-rapport-budget-2024, pp. 48 et 70; @minfin-rapport-budget-2025, p. 72]. Les recrutements prévus pour la Défense, l'Intérieur et la Justice sont au chapitre du régime statutaire autonome (@sec-statutaire-recrutements).
+
+**Ce qu'en dit le FMI.** Dans le mémorandum de politiques économiques et financières joint à sa demande d'accord au FMI en 2016, le gouvernement prévoit de maintenir « the hiring freeze in all ministries through the next three years, with the exception of urgent needs for security and defense personnel », et de réduire les effectifs, « including by voluntary separations and no replacement of those who leave », pour ramener la masse salariale à « 12 percent of GDP in 2020 » [@imf-tunisia-eff-2016, p. 69] ; le rapport annonce des « incentives for targeted voluntary departures in 2018 » [@imf-tunisia-eff-2016, p. 16].
+
+<!-- TODO (documentaliste) : rédaction actuelle des art. 17 à 20 de la loi n° 83-112 (lois modificatives de 1997, 2003, 2007, 2011, 2021) ; antécédent des recrutements « exceptionnels et temporaires » de 1957-1969 (décret du 28 janvier 1957 et série jusqu'au décret n° 69-377), connus par leur intitulé : à lire avant d'en parler ; décret n° 2012-3256 (réintégration des amnistiés, édition arabe) et art. 32-33 de la loi de finances pour 2013 ; art. 90, 92 et 108 de la loi de finances pour 2026 (recrutements et titularisations) ; décret n° 2024-86 (prorogation de l'audit). Clé à créer (bibliographe) pour le décret n° 2025-459 si on le cite. -->
+
+#### Les départs : retraite avant l'âge légal et départ volontaire {#sec-ri-departs}
+
+- **1987 : la retraite anticipée volontaire.** Jusqu'au 31 décembre 1987, les agents publics et les salariés du privé à moins de cinq ans de l'âge normal, ou qui justifient de trente ans de cotisation, peuvent partir avec une pension immédiate, bonifiée de la période restant à courir dans la limite de cinq ans ; l'employeur présente un programme de recrutement en remplacement, faute de quoi il rembourse à la caisse les pensions servies ([loi de 1987](#r-ri-dep-1987)). Une loi du même jour interdit l'emploi de retraités dans le secteur public ([1987](#r-ri-dep-1987-retraites)).
+- **2009** : la mise à la retraite avant l'âge légal est exposée au livre « Retraites » ([La mise à la retraite avant l'âge légal de 2009](../retraites/_secteur_public.html#sec-cnrps-retraite-avant-age-2009)).
+- **2017 : avant l'âge légal, sur demande.** Les agents de la fonction publique qui atteignent l'âge légal du 1^er^ janvier 2018 au 1^er^ janvier 2021 peuvent demander à partir avant ; une commission à la Présidence du gouvernement statue selon « le maintien de l'équilibre de la structure des ressources humaines du secteur public » ; la pension immédiate, bonifiée jusqu'à l'âge légal, est à la charge de l'employeur ([loi de 2017](#r-ri-dep-2017)).
+- **2018 : le départ volontaire contre une prime.** À titre exceptionnel, tout agent de la fonction publique, des établissements et des entreprises publics qui compte cinq ans au moins d'activité soumise à retenue pour la retraite peut demander le [départ volontaire](#g-depart-volontaire). La [prime de départ volontaire](#g-prime-de-depart-volontaire) est forfaitaire : 36 mois de son dernier salaire net, versés en une fois par l'employeur, exonérés de l'impôt sur le revenu, dans la limite de 50 % des salaires nets que l'agent aurait perçus jusqu'à l'âge légal. L'agent garde un an de couverture maladie, ne peut plus être employé par l'État, les collectivités, les établissements ou les entreprises publics, et touche sa pension à l'âge légal ([loi de 2018](#r-ri-dep-2018)). Deux tours sont ouverts en 2018, les demandes étant reçues du 1^er^ mars au 30 avril puis du 2 juillet au 30 août ([2018](#r-ri-dep-2018-tours)).
+- **2022-2028 : le programme spécifique.** Les agents de 57 ans au moins qui comptent quinze ans de service peuvent partir avec une pension immédiate, bonifiée jusqu'à 62 ans et à la charge de l'employeur ; les agents des collectivités locales, des établissements et entreprises publics non administratifs et des instances constitutionnelles en sont exclus ; les agents en congé de longue maladie et ceux qui ont à charge un parent ou un enfant handicapé passent en priorité ([2022](#r-ri-dep-2022)). Le programme, ouvert pour 2022-2024, est prolongé aux mêmes conditions du 1^er^ janvier 2025 au 31 décembre 2028 ([2025](#r-ri-dep-2025)). Le livre « Retraites » en expose la pension ([2022-2023 : le départ anticipé temporaire](../retraites/_secteur_public.html#sec-cnrps-reforme-2022)).
+- **Le congé pour création d'entreprise.** Depuis 2022, l'agent peut prendre un [congé pour créer une entreprise](#g-conge-creation-entreprise) de trois ans au plus, renouvelable une fois, avec la moitié de son salaire la première année, ou les deux premières en zone de développement régional, et sa couverture sociale pendant trois ans, sans avancement ni promotion ([2022](#r-ri-dep-conge-2022)).
+
+<!-- TODO (documentaliste) : nombre de bénéficiaires et coût réalisé des départs de 2017-2021 (loi n° 2017-51), de 2018 (loi n° 2018-5) et du programme spécifique 2022-2028 — guides statistiques de la CNRPS, rapports sur le budget 2019-2021 et 2023, rapports de la Cour des comptes 2018-2021 (lecture à l'image), revues du FMI 2017-2019. Prévision du ministère des Finances pour 2022 (environ 6 000 départs ; rapport sur le budget 2022, p. 42) : ne pas la publier seule. Écart : le rapport sur le budget 2025 (p. 72) dit le programme prolongé « jusqu'à la fin de 2027 », la loi de finances jusqu'au 31 décembre 2028 ; la loi fait foi. Contexte de 1987 (plan d'ajustement, débats du 3 mars 1987) : non lu. -->
+
+:::: {.chronologie-repliable titre="Recrutement et départs des agents publics : conditions, recrutements dérogatoires, primes et programmes de départ — textes date par date, 1983-2028"}
+
+| Effet | Portée | Texte et articles | Ce que le texte dispose |
+|---|---|---|---|
+| []{#r-ri-rec-1983}— | texte fondateur | loi n° 83-112 du 12 décembre 1983 [@loi83-112, art. 17 à 20] | conditions d'accès (art. 17) ; catégories A, B et C : 50 % au plus des emplois par recrutement externe (école de formation agréée, concours externe), 50 % au plus par promotion interne, dont 40 % par cycle de formation ou concours interne et 10 % au choix (art. 18) ; catégorie D par concours (art. 19) ; radiation du candidat qui refuse son poste (art. 20) ; rédaction de 1983 |
+| []{#r-ri-dep-1987}— | antécédent | loi n° 87-7 du 6 mars 1987 [@loi87-7, art. 1 à 8] ; décret n° 87-337 [@decret-87-337] | retraite anticipée volontaire, secteurs public et privé, pour les mises à la retraite effectuées jusqu'au 31 décembre 1987 ; bonification d'au plus cinq ans ; programme de recrutement en remplacement, faute de quoi l'employeur rembourse les pensions ; critères de priorité et recrutement dans le mois (décret) |
+| []{#r-ri-dep-1987-retraites}— | antécédent | loi n° 87-8 du 6 mars 1987 [@loi87-8] | interdiction d'employer des retraités dans le secteur public |
+| []{#r-ri-rec-2011}— | **rupture** | décret-loi n° 2011-32 du 27 avril 2011 [@decretloi2011-32, art. 1 à 5] | concours externes → concours externes sur dossiers « au profit des candidats en chômage », pour le seul programme de 2011 |
+| []{#r-ri-rec-2011-bareme}— | étape | décret n° 2011-544 du 14 mai 2011 [@decret2011-544, art. 7, 9 et annexe] | barème sur 100 points : année du diplôme 30, âge 20, situation familiale 10, mention 20, stages 20 ; note du dossier 70 % et épreuve 30 % quand une épreuve est organisée |
+| []{#r-ri-rec-2012}— | étape | loi n° 2012-4 du 22 juin 2012 [@loi2012-4, art. 1 à 5] | concours sur dossiers et épreuves (70 % au moins classés sur l'âge et l'année du diplôme) ; recrutement direct des familles des martyrs, des blessés de la révolution, des amnistiés et des handicapés ; un membre par famille de chômeurs (5 %) ; dérogation d'âge de dix ans, plafond de 50 ans |
+| []{#r-ri-rec-2012-exclusions}— | étape | décret n° 2012-833 du 20 juillet 2012 [@decret2012-833, art. 2 à 4] | 1 % des postes aux handicapés ; comité pour les recrutements directs ; exclusion des corps militaires, des forces de sécurité intérieure, des douaniers, des magistrats judiciaires et militaires, de la Cour des comptes et du Tribunal administratif, des enseignants-chercheurs, des corps médicaux et paramédicaux, des enseignants et des diplomates |
+| []{#r-ri-rec-2016}— | ajustement | décret gouvernemental n° 2016-372 du 21 mars 2016 [@decret2016-372, art. 2 à 8] | concours externes de 2016 : conditions fixées par décision du ministre nonobstant les statuts particuliers ; observateurs de la société civile ; jusqu'au 31 décembre 2016 |
+| []{#r-ri-dep-2017}— | étape | loi n° 2017-51 du 28 juin 2017 [@loi2017-51, art. 1 à 6] ; décret gouvernemental n° 2017-825 [@decret2017-825] | mise à la retraite avant l'âge légal des agents qui l'atteignent du 1^er^ janvier 2018 au 1^er^ janvier 2021, sur demande et décision d'une commission ; pension bonifiée à la charge de l'employeur |
+| []{#r-ri-dep-2018}— | **rupture** | loi n° 2018-5 du 23 janvier 2018 [@loi2018-5, art. 1 à 10] ; décret gouvernemental n° 2018-205 [@decret2018-205] | départ volontaire contre une prime de 36 salaires mensuels nets, exonérée d'impôt, plafonnée à 50 % des salaires nets restant à percevoir jusqu'à l'âge légal ; interdiction de réemploi dans le secteur public ; textes cités d'après l'édition arabe du *Journal officiel* |
+| []{#r-ri-dep-2018-tours}— | ajustement | arrêtés du chef du gouvernement du 23 février et du 7 mai 2018 [@arrete2018-02-23-depart-volontaire; @arrete2018-05-07-depart-volontaire] | demandes du 1^er^ mars au 30 avril 2018, puis du 2 juillet au 30 août 2018 |
+| []{#r-ri-rec-2020}— | étape | loi n° 2020-38 du 13 août 2020 [@loi2020-38, art. 1 à 6] | recrutement direct par tranches annuelles, en quatre ans au plus : chômeurs diplômés depuis dix ans et plus, de 35 ans et plus, un membre par famille de chômeurs ; 5 % des recrutements annuels aux handicapés ; décrets d'application prévus |
+| []{#r-ri-rec-2021}— | ajustement | loi de finances pour 2021 [@lf-2021, art. 12] | crédits pour le recrutement de 10 000 chômeurs diplômés en application de la loi n° 2020-38 |
+| []{#r-ri-rec-chantiers}— | renvoi au livre « Le marché du travail » | loi n° 2021-27 du 7 juin 2021 [@loi2021-27] | article 18 bis du statut général : recrutement direct, hors concours, des ouvriers de chantier de plus de 45 ans |
+| []{#r-ri-dep-2022}[1^er^ janvier 2022]{.insecable} | étape | loi de finances pour 2022 [@dl2021-21-lf2022, art. 14] ; décret présidentiel n° 2022-542 du 13 juin 2022 [@decret2022-542, art. 2, 8, 10 et 11] ; arrêtés de délais [@arrete2022-06-16-retraite-avant-age] | programme spécifique 2022-2024 : 57 ans, quinze ans de service, pension bonifiée jusqu'à 62 ans à la charge de l'employeur ; exclusions et priorités |
+| []{#r-ri-dep-conge-2022}— | ajustement | loi de finances pour 2022 [@dl2021-21-lf2022, art. 15] | nouvel article 50 bis du statut général : congé pour création d'entreprise |
+| []{#r-ri-rec-audit-2023}— | ajustement | décret n° 2023-591 du 21 septembre 2023 [@decret2023-591, art. 1, 2 et 4] | audit général des recrutements et intégrations du 14 janvier 2011 au 25 juillet 2021 ; texte cité d'après l'édition arabe du *Journal officiel* |
+| []{#r-ri-rec-chantiers-2024}— | renvoi au livre « Le marché du travail » | loi de finances pour 2024 [@lf-2024, art. 12] | régularisation des ouvriers de chantier de 45 à 55 ans en trois tranches, de 2024 à 2026, avec une prime pour ceux qui choisissent de partir |
+| []{#r-ri-dep-2025}[1^er^ janvier 2025]{.insecable} | étape | loi de finances pour 2025 [@lf-2025, art. 14] | programme spécifique prolongé aux mêmes conditions du 1^er^ janvier 2025 au 31 décembre 2028 |
+| []{#r-ri-rec-2025}— | étape | loi n° 2025-18 du 22 décembre 2025 [@loi2025-18, art. 1 à 6] | recrutement exceptionnel des diplômés chômeurs de longue durée, sur plateforme numérique, par tranches en trois ans au plus ; conditions d'inscription, d'absence de régularisation antérieure et d'affiliation |
+| []{#r-ri-rec-2025-credits}— | ajustement | loi de finances pour 2026 [@lf-2026, art. 57] | crédits de la première tranche, après publication des textes d'application de la loi n° 2025-18 |
+
+: Recrutement et départs des agents publics, texte par texte, 1983-2028 {#tbl-ri-recruter-partir-textes}
+
+Un tiret dans la colonne « Effet » signale un texte dont la date d'effet n'est pas établie ici ; la date qui suit son numéro est celle du texte.
 
 ::::
 
@@ -622,11 +873,11 @@ Au-delà de ces textes, les cycles de gel et de revalorisation salariale font l'
 Aucune source ne ventile les effectifs ni la masse salariale par régime de rémunération. Deux sources situent le régime indiciaire, chacune sur son champ.
 
 - **La masse salariale** est celle du budget de l'État entier, rapportée au PIB et aux dépenses de l'État (@fig-masse-salariale-ratios), d'après les séries du ministère des Finances [@minfin-remunerations; @minfin-indicateurs-fp].
-- **Les effectifs et les salaires** sont ceux de la fonction publique civile, publiés par l'INS [@ins-fonction-publique-2021; @ins-fonction-publique-2025] (@fig-effectifs-fp ; @fig-categories-statutaires) : des fonctionnaires classés de A1 à D, des ouvriers et des contractuels ; ni militaires, ni agents des forces de sécurité intérieure, ni magistrats (@sec-ventilation-ministere).
+- **Les effectifs et les salaires** sont ceux de la fonction publique que publie l'INS [@ins-fonction-publique-2021; @ins-fonction-publique-2025] (@fig-effectifs-fp ; @fig-categories-statutaires) : des fonctionnaires classés de A1 à D, des ouvriers et des contractuels. Le rapport de l'INS ne définit pas le champ statutaire de sa base administrative : il ne dit pas s'il compte les militaires, les agents des forces de sécurité intérieure, les magistrats et les douaniers (@sec-ventilation-ministere).
 
 Les rapports extérieurs sont d'un autre ordre : ceux du Fonds monétaire international et de la Banque mondiale [@imf-tunisia-art4-2020; @wb-tunisia-per-2020] portent sur la masse salariale de l'administration ; l'introduction du volume en donne le périmètre.
 
-Sur ce champ civil, trois constats : le rapport entre les salaires de A1 et de D se resserre en 2018-2019 ; en pouvoir d'achat, toutes les catégories finissent 2025 sous leur niveau de 2018 (@sec-ri-salaires-categories) ; les fonctionnaires forment de 76 à 80 % des agents (@sec-ri-emploi).
+Sur ce champ, trois constats : le rapport entre les salaires de A1 et de D se resserre en 2018-2019 ; en pouvoir d'achat, toutes les catégories finissent 2025 sous leur niveau de 2018 (@sec-ri-salaires-categories) ; les fonctionnaires forment de 76 à 80 % des agents (@sec-ri-emploi).
 
 <!-- TODO : construire, si des données ventilées par régime deviennent disponibles, une série propre au régime indiciaire (effectifs, masse salariale). -->
 
@@ -770,11 +1021,11 @@ Les tableaux par catégorie des deux publications de l'INS ne portent que l'inti
 
 ### Le poids dans l'emploi {#sec-ri-emploi}
 
-Rapportés à la population active occupée, les effectifs de la fonction publique civile donnent la mesure de son poids dans l'emploi total (@fig-emploi-public). Deux effectifs s'y lisent : tous les agents — fonctionnaires, ouvriers et contractuels — et les seuls fonctionnaires, qui en forment de 76 à 79 % de 2015 à 2023, puis 80 % en 2024.
+Rapportés à la population active occupée, les effectifs de la fonction publique que publie l'INS donnent la mesure de son poids dans l'emploi total (@fig-emploi-public). Deux effectifs s'y lisent : tous les agents — fonctionnaires, ouvriers et contractuels — et les seuls fonctionnaires, qui en forment de 76 à 79 % de 2015 à 2023, puis 80 % en 2024.
 
 ```{python}
 #| label: fig-emploi-public
-#| fig-cap: "Poids de la fonction publique civile dans la population active occupée, 2015-2024 (sources INS et BCT)."
+#| fig-cap: "Poids de la fonction publique dans la population active occupée, 2015-2024 (sources INS et BCT)."
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
@@ -785,7 +1036,7 @@ figtools.figure_tabs(
     "fonction-publique-categories", "fonction-publique-effectifs-2018-2025",
     "fonction-publique-categories-2018-2025", "bct-emploi-occupe",
     slug="fig_emploi_public",
-    caption="Poids de la fonction publique civile dans la population active occupée, 2015-2024",
+    caption="Poids de la fonction publique dans la population active occupée, 2015-2024",
     note_lecture=(
         "**Deux numérateurs, et l'écart entre eux est le sujet.** La courbe bleue compte "
         "tous les **agents** de la fonction publique — fonctionnaires, **ouvriers** et "
@@ -802,8 +1053,8 @@ figtools.figure_tabs(
         "la population active occupée » : ce chiffre s'obtient avec le numérateur "
         "**large**, quand les fonctionnaires au sens strict donnent 14,6 %. Le mot y est "
         "employé dans son acception large.\n\n"
-        "**Trois réserves de lecture.** Le numérateur exclut les militaires, les agents "
-        "des forces de sécurité intérieure et les magistrats. En **2020**, la hausse "
+        "**Trois réserves de lecture.** La source ne dit pas si le numérateur compte les "
+        "militaires, les agents des forces de sécurité intérieure et les magistrats. En **2020**, la hausse "
         "du ratio vient du dénominateur, qui recule de 3 566 à 3 433 milliers : aucun "
         "recrutement n'y correspond ; il en va de même, en moindre ampleur, en 2023 "
         "(3 500 → 3 416 milliers). Enfin, la population active occupée n'est publiée "
@@ -817,7 +1068,7 @@ figtools.figure_tabs(
 
 ### La ventilation par ministère {#sec-ventilation-ministere}
 
-L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] ventile les effectifs par ministère, sur la période 2015-2021, ainsi que les salaires moyens ; le rapport qui la prolonge en donne une nouvelle ventilation pour 2018-2025 [@ins-fonction-publique-2025]. Elle porte sur la fonction publique civile, dont les fonctionnaires sont classés dans les catégories statutaires A1 à D, et se lit sous trois réserves.
+L'enquête de l'INS sur les agents de la fonction publique [@ins-fonction-publique-2021] ventile les effectifs par ministère, sur la période 2015-2021, ainsi que les salaires moyens ; le rapport qui la prolonge en donne une nouvelle ventilation pour 2018-2025 [@ins-fonction-publique-2025]. Elle porte sur la fonction publique, dont les fonctionnaires sont classés dans les catégories statutaires A1 à D, et se lit sous trois réserves.
 
 ```{python}
 #| label: fig-ministeres
@@ -853,21 +1104,23 @@ figtools.figure_tabs(
 )
 ```
 
-**Les corps à statut autonome n'y sont pas.** Plusieurs ministères emploient, **à côté de leurs agents régis par le statut général, des corps relevant d'un régime statutaire autonome** : les ministères de la Défense, de l'Intérieur et de la Justice comptent respectivement des militaires, des agents des forces de sécurité intérieure et des magistrats, régis par des statuts propres et des grilles distinctes (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)). Ces corps n'entrent dans aucune des catégories A1 à D et n'apparaissent donc pas dans cette statistique, qui ne permet pas d'évaluer leur poids.
+**Les corps à statut propre : un champ que la source ne définit pas.** Plusieurs ministères emploient, à côté des agents régis par le statut général, des corps à statut propre : militaires à la Défense, agents des forces de sécurité intérieure à l'Intérieur et, pour les prisons, à la Justice, magistrats à la Justice, agents des douanes aux Finances (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)). Ces corps ne sont pas tous hors des catégories A1 à D : depuis 1999, les magistrats judiciaires sont rangés dans la sous-catégorie A1 de la grille civile et les douaniers sur cette même grille ; seuls les militaires et les forces de sécurité intérieure ont une grille propre. Le rapport de l'INS ne définit pas le champ statutaire de sa base [@ins-fonction-publique-2025] : il ne dit pas lesquels de ces corps il compte. Les effectifs qu'il rattache à ces ministères ne se lisent donc ni comme ceux de leur seul personnel civil, ni comme ceux des corps. Les effectifs que la loi de finances autorise par mission, eux, comprennent tous les agents de la mission (@sec-statutaire-budget).
+
+<!-- TODO (documentaliste) : obtenir de l'INS la définition statutaire de la base administrative INSAF (militaires, forces de sécurité intérieure, magistrats, douaniers comptés ou non). Rapprochement à ne pas publier comme preuve : pour 2021, INS Intérieur 99 826, Défense 86 446, Justice 19 300 ; effectifs autorisés par la loi de finances 98 362, 91 365, 18 878 (docs/notes/regimes-speciaux-recrutement-departs-effectifs-2026-10-23.md, § 0.2 et 4.3). La fiche de source de tunisia-data (sources/ins-fonction-publique-salaires-2010-2021.md, l. 30) affirme sans source que l'enquête exclut les militaires de carrière : à corriger ou à sourcer. -->
 
 **La série 2015-2021 est une reconstitution de l'INS.** Les annexes annuelles ne retiennent pas d'une année sur l'autre la même nomenclature ministérielle : la série est fiable sur les ordres de grandeur et les tendances longues, non pour la comparaison fine d'une année à l'autre.
 
 **Les deux publications ne se joignent pas.** Sur les années qu'elles ont en commun, 2018-2021, le rapport 2018-2025 répartit autrement un total inchangé, au profit surtout du ministère de l'Intérieur [@ins-fonction-publique-2021; @ins-fonction-publique-2025]. Les deux séries sont donc présentées l'une et l'autre, sans être jointes, et l'évolution d'un ministère ne se lit qu'à l'intérieur de chacune.
 
-Les effectifs rattachés au ministère de la Défense progressent de près de 35 % entre 2015 et 2018, passant d'environ 63 000 à près de 85 000 agents. Cette progression est corroborée par deux publications distinctes de l'INS, les annexes annuelles et la série d'ensemble [@ins-fonction-publique-2021], et le rapport 2018-2025 en retrouve le point d'arrivée (84 971 agents en 2018), suivi d'une quasi-stabilité jusqu'en 2025 (87 765 agents) [@ins-fonction-publique-2025]. Le champ de l'enquête exclut les militaires de carrière : ce mouvement porte donc sur le personnel **civil** du ministère.
+Les effectifs rattachés au ministère de la Défense progressent de près de 35 % entre 2015 et 2018, passant d'environ 63 000 à près de 85 000 agents. Cette progression est corroborée par deux publications distinctes de l'INS, les annexes annuelles et la série d'ensemble [@ins-fonction-publique-2021], et le rapport 2018-2025 en retrouve le point d'arrivée (84 971 agents en 2018), suivi d'une quasi-stabilité jusqu'en 2025 (87 765 agents) [@ins-fonction-publique-2025]. Le rapport ne dit pas si ce mouvement porte sur le seul personnel civil du ministère ou aussi sur les militaires.
 
-<!-- TODO (rédacteur) : documenter, avant toute explication dans le texte visible, le lien éventuel entre cette hausse du personnel civil de la Défense et le renforcement des moyens de sécurité après les attentats de 2015 : source budgétaire, rapport administratif ou texte d'organisation, en distinguant recrutements, transferts et couverture statistique. -->
+<!-- TODO (rédacteur) : documenter, avant toute explication dans le texte visible, le lien éventuel entre cette hausse des effectifs de la Défense et le renforcement des moyens de sécurité après les attentats de 2015 : source budgétaire, rapport administratif ou texte d'organisation, en distinguant recrutements, transferts et couverture statistique. -->
 
-<!-- TODO (documentaliste) : chercher ce qui explique la hausse des effectifs civils de la Défense entre 2015 et 2018 (+35 %) — rapports d'activité du ministère, lois de finances, transferts de personnel depuis un autre ministère. Réserve écrite en attendant. -->
+<!-- TODO (documentaliste) : chercher ce qui explique la hausse des effectifs de la Défense entre 2015 et 2018 (+35 %) — rapports d'activité du ministère, lois de finances, transferts de personnel depuis un autre ministère. Réserve écrite en attendant. -->
 
 :::: {.chronologie-repliable titre="Effectifs par ministère : nomenclatures annuelles et écarts entre les deux publications de l'INS, 2015-2025"}
 
-**Le personnel civil seul.** Les grilles des corps à statut autonome sont distinctes de la grille du statut général. Le recoupement confirme leur absence : pour le ministère de la Défense, la somme des agents classés de A1 à D coïncide avec le total des fonctionnaires que l'enquête lui rattache, ce qui établit que la population recensée est celle du personnel civil, à l'exclusion des militaires de carrière. Les effectifs ministériels de l'INS recensent ainsi, pour ces ministères, leur personnel civil — et non l'ensemble de leurs agents. Ils ne permettent donc pas d'évaluer le poids des corps à statut autonome, dont la documentation chiffrée fait défaut (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)).
+**Le champ statutaire.** Pour le ministère de la Défense, la somme des agents classés de A1 à D coïncide avec le total des fonctionnaires que l'enquête lui rattache. Ce recoupement ne tranche pas la question du champ : les catégories A1 à D ne sont pas propres au statut général, puisque les magistrats et les douaniers sont rangés sur la grille civile, et le rapport 2018-2025 range la sécurité, la justice et la défense parmi les secteurs où se concentrent les effectifs de la fonction publique [@ins-fonction-publique-2025, pp. 3 et 11], sans dire quels corps il y compte (voir [le régime statutaire autonome](_regime_statutaire_autonome.qmd)).
 
 **Les nomenclatures annuelles.** Les annexes annuelles de l'enquête ne retiennent pas d'une année sur l'autre la même nomenclature ministérielle : celle de 2017 ne compte que douze postes et regroupe la Défense, l'Intérieur et les collectivités locales dans une rubrique « autres ministères », tandis que celle de 2018 désigne les collectivités locales sous le nom de « communes » et que les intitulés composites — agriculture et ressources hydrauliques, équipement et habitat — apparaissent puis disparaissent au gré des remaniements. La série 2015-2021 de l'enquête est la **reconstitution que l'INS établit par-dessus ces variations**, et non la juxtaposition des décomptes annuels tels qu'ils ont été publiés. Elle se recoupe avec les annexes partout où les deux se laissent comparer, mais elle ne doit pas être lue comme une suite de relevés homogènes : la ventilation par ministère supporte mal la comparaison fine d'une année à l'autre, et c'est sur les ordres de grandeur et les tendances longues qu'elle est fiable.
 
