@@ -1,0 +1,33 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-24
+# séries (tunisia_data) : tva-frise-reformes
+# sources (citation) : @loi-88-61-tva, @lf-1993, @lf-1995, @lf-1996, @lf-1998, @lf-1999, @lf-2010, @lf-2014, @lf-2015, @lf-2016, @loi-2006-80-reduction-taux, @loi-avantages-fiscaux-2017, @dl2021-21-lf2022
+# fiches : 
+# méthode/hypothèses : Les jalons reprennent les registres du chapitre ; les étapes et les ajustements n'y figurent pas. Deux lois ont une date d'effet non établie (forfaits de 1993, retrait du tableau B prévu en 1996) : elles sont posées à l'année de la loi. Le classement en rupture de 2014 (achats en espèces) et de 2016 (facture électronique) attend confirmation.
+# note : Les réformes de la TVA, 1988-2026 : périodes du chapitre, naissance des dispositifs et ruptures désignées par les registres
+Ligne,Nature,État,Date d'effet,Libellé,Ce que dit le registre,Ancre du registre,Texte,Article
+Périodes du chapitre,periode,établi,1988-1990,mise en place,code de la TVA de 1988 et entrée en vigueur par étapes,sec-tva-mise-en-place,,
+Périodes du chapitre,periode,établi,1995-1996,R1,réforme de 1995-1996 : taux de 10 % et commerce de détail,sec-tva-reforme-1995-1996,,
+Périodes du chapitre,periode,établi,1998-1999,R2,réforme de 1998-1999 : taux normal à 18 %,sec-tva-reforme-1998-1999,,
+Périodes du chapitre,periode,établi,2007-2007,R3,réforme de 2007 : fin du taux majoré,sec-tva-reforme-2007,,
+Périodes du chapitre,periode,établi,2016-2018,R4,réforme de 2016-2018 : champ élargi et un point de plus sur chaque taux,sec-tva-reforme-2016-2018,,
+Champ et taux,naissance,établi,1988-07-01,code de la TVA,taxes sur le chiffre d'affaires de 1955 → affaires industrielles artisanales et libérales et opérations commerciales énumérées,r-tva-champ-1988,loi-88-61-tva,art. 1 et 2
+Champ et taux,rupture,établi,1995-01-01,taux de 10 %,machines de traitement de l'information services informatiques téléviseurs et transport de marchandises : 6 % → 10 %,r-tva-perimetre-1995,lf-1995,art. 56 à 58 et 100
+Champ et taux,rupture,établi,1996-07-01,commerce de détail,commerce de détail hors du champ → détaillant assujetti au-delà de 100 000 dinars de chiffre d'affaires annuel global,r-tva-champ-1996,lf-1996,art. 68
+Champ et taux,rupture,établi,2007-01-01,fin du taux de 29 %,taux de 29 % supprimé ; opérations à 10 % → 12 %,r-tva-perimetre-2007,loi-2006-80-reduction-taux,art. 13 17 et 19
+Champ et taux,rupture,établi,2016-01-01,champ élargi,plusieurs opérations exonérées → retirées du tableau A ; tableaux A B et B bis refondus,r-tva-champ-2016,lf-2016,art. 30 31 33 et 92
+Réductions et suspensions par décret,naissance,établi,1988-07-01,pouvoir de réduire,pouvoir de réduire ou de suspendre la taxe par décret pour l'année civile ; électricité gaz et huiles de pétrole à 6 %,r-tva-reductions-1988,loi-88-61-tva,art. 8 et tableau B
+Réductions et suspensions par décret,rupture,date non établie,1996,hors du taux réduit,électricité et produits pétroliers au tableau B → retrait du tableau prévu à une date fixée par décret,r-tva-reductions-1996,lf-1996,art. 40
+Réductions et suspensions par décret,rupture,établi,2015-01-01,inscription au code,réductions reconduites chaque année → inscrites au tableau B bis à 12 %,r-tva-reductions-2015,lf-2015,art. 36 et 46
+Forfaits,rupture,date non établie,1993,impôt forfaitaire libératoire,taxe forfaitaire annuelle et droit forfaitaire simplifié → forfait unique dans l'impôt sur le revenu libératoire de la TVA,r-tva-forfaits-1993,lf-1993,art. 100 à 105
+Droit à déduction,naissance,établi,1988-07-01,déduction globale,déduction globale équipements et bâtiments compris ; exclusion des voitures de tourisme et des achats auprès des forfaitaires,r-tva-deduction-1988,loi-88-61-tva,art. 9 et 10
+Droit à déduction,rupture,classement à confirmer,2014-01-01,achats en espèces,taxe déductible quel que soit le mode de paiement → non déductible sur les achats réglés en espèces à partir de 20 000 dinars hors taxe,r-tva-deduction-2014,lf-2014,art. 34
+Crédit et restitution,naissance,établi,1988-07-01,restitution partielle,restitution intégrale pour l'exportation et les ventes en suspension ; 20 % du crédit dans les autres cas,r-tva-restitution-1988,loi-88-61-tva,art. 15
+Crédit et restitution,rupture,établi,1998-12-31,gel du crédit,gel du crédit dégagé au 31 décembre 1998 hors exportation ventes en suspension retenue à la source et investissements,r-tva-restitution-1998-gel,lf-1999,art. 53 à 55
+Crédit et restitution,rupture,établi,2007-01-01,tout restituer,restitution intégrale dans tous les cas,r-tva-restitution-2007,loi-2006-80-reduction-taux,art. 15 et 16
+Crédit et restitution,rupture,établi,2010-01-01,restituer vite,crédit constaté sur trois mois pour tous les investissements ; avance des comptes certifiés de 35 % à 50 %,r-tva-restitution-2010,lf-2010,art. 27 à 33
+Régime suspensif,naissance,établi,1988-07-01,activité exportatrice,régime ouvert aux assujettis dont l'activité vise exclusivement ou principalement l'exportation ou les ventes en suspension,r-tva-suspension-1988,loi-88-61-tva,art. 11
+Régime suspensif,rupture,établi,2017-04-01,un seuil de 50 %,critère de l'activité exclusive ou principale → chiffre d'affaires à l'exportation ou en suspension supérieur à 50 %,r-tva-suspension-2017,loi-avantages-fiscaux-2017,art. 3
+Régime suspensif,rupture,établi,2022-01-01,champ resserré,sociétés de commerce international et entreprises de services admises → exclues,r-tva-suspension-2022,dl2021-21-lf2022,art. 52
+Retenue à la source,rupture,établi,1998-01-01,l'acheteur public retient,le fournisseur verse toute la taxe → l'État les collectivités locales les entreprises et les établissements publics en retiennent 50 % sur les marchés,r-tva-retenue-1998,lf-1998,art. 36 et 37
+Déclaration et facture,naissance,établi,1988-07-01,facture obligatoire,déclaration mensuelle ; facture obligatoire sauf pour les contribuables au forfait,r-tva-declaration-1988,loi-88-61-tva,art. 18
+Déclaration et facture,rupture,classement à confirmer,2016-01-01,facture électronique,facture sur papier → facture électronique admise et obligatoire dans certaines opérations,r-tva-declaration-2016,lf-2016,art. 22

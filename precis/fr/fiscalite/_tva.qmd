@@ -12,7 +12,37 @@ La taxe fournit, selon les années, entre 26 % et 32 % des recettes fiscales, et
 
 Le chapitre suit l'ordre des dates, puis celui des dispositifs. La mise en place, de 1988 à 1990, pose l'architecture d'origine (@sec-tva-mise-en-place). Quatre réformes la transforment : en 1995-1996, en 1998-1999, en 2007 et de 2016 à 2018 (@sec-tva-reformes). Un bilan des taux les résume en une figure et dit ce qui est établi du droit en vigueur (@sec-tva-bilan). Viennent ensuite les dispositifs qui aménagent la taxe, chacun dans sa section, avec le registre de ses textes (@sec-tva-dispositifs, @sec-tva-deduction), puis ce que la taxe rapporte et ce qui lui échappe (@sec-tva-longue-periode).
 
-<!-- TODO (rédacteur) : frise des réformes et des naissances de dispositifs, voir le plan § 6 -->
+Une frise donne d'un coup d'œil les périodes du chapitre et, pour chaque règle de base et chaque dispositif, sa naissance dans le code de 1988 et une sélection de ruptures que les registres du chapitre désignent (@fig-tva-frise).
+
+```{python}
+#| label: fig-tva-frise
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tva as fig_tva
+import figtools
+figtools.figure_tabs(
+    fig_tva.fig_frise(), fig_tva.table_frise(), fig_tva.FRISE,
+    slug="fig_tva_frise",
+    caption="Les réformes de la TVA, 1988-2026 : périodes du chapitre, naissance des dispositifs et ruptures désignées par les registres",
+    note_lecture=(
+        "En tête, les bandes sont les périodes du chapitre : la mise en place de 1988 à 1990, "
+        "puis les quatre réformes, R1 (1995-1996), R2 (1998-1999), R3 (2007) et R4 "
+        "(2016-2018). Chaque ligne est une règle de base ou un dispositif ; le carré marque son "
+        "existence dans le code de 1988, le cercle plein une rupture que le registre de sa "
+        "section désigne ainsi. Un losange creux est une loi dont la date d'effet n'est pas "
+        "établie : il est posé à l'année de la loi. Un cercle creux est une rupture dont le "
+        "classement doit encore être confirmé (les achats en espèces de 2014, la facture "
+        "électronique de 2016). Chaque ligne porte au plus une rupture par date : les lignes "
+        "jumelles d'un registre, qui disent la même loi à la même date, sont fondues en un "
+        "jalon ; le registre des régimes par catégorie n'est pas repris. Les étapes et les "
+        "ajustements de chaque dispositif sont aux registres de sa section. L'onglet « Données » donne, pour chaque jalon, son ancre de registre, "
+        "le texte et l'article."
+    ),
+    nominal=False,
+    generated="{{< meta date >}}",
+)
+```
 
 ::: {.callout-note title="Comment les dates sont-elles lues dans ce chapitre ?"}
 La TVA frappe des opérations. Le taux applicable est donc celui en vigueur au [fait générateur](#g-fait-generateur-tva) de l'opération : une réforme en cours d'année peut partager le même exercice entre deux régimes. Il faut distinguer la signature du texte, sa publication au *Journal officiel* et sa date d'effet.
@@ -186,11 +216,9 @@ La réforme de 2016-2018 tient à trois lois de finances consécutives et à la 
 
 **Ce que les lois cherchent.** Trois lois de finances consécutives emploient les mêmes mots. [Celle pour 2016](#r-tva-champ-2016) ouvre la rubrique « Elargissement du champ d'application de la taxe sur la valeur ajoutée » ; [celle pour 2017](#r-tva-champ-2017), la rubrique « Poursuite de l'élargissement du champ d'application de la taxe sur la valeur ajoutée ». [Celle pour 2018](#r-tva-taux-2018) reprend mot pour mot cette dernière rubrique pour un article, et en donne une autre au relèvement des taux : « Révision des taux de la taxe sur la valeur ajoutée ». La quatrième loi du groupe a un autre objet : c'est [la loi n° 2017-8 du 14 février 2017](#r-tva-suspension-2017), « portant refonte du dispositif des avantages fiscaux », dont les articles 3 et 5, qui touchent la taxe, ne sont rangés sous aucune rubrique.
 
-Le ministère des Finances a donné ses propres motifs. Le projet de loi de finances pour 2018, qu'il dépose en octobre 2017, accompagne chaque article d'un exposé des motifs, en arabe. Ces exposés présentent les lois de finances pour 2016 et 2017 comme la suppression progressive d'exonérations, remplacées par une imposition aux taux de 6 % ou de 18 % selon le cas. Ils en donnent la raison : selon le ministère, l'exonération prive l'assujetti du [droit à déduction](#g-droit-a-deduction-tva), de sorte que la taxe payée en amont devient un élément du coût de production. Pour le point de taux de 2018, l'exposé avance la poursuite de la réforme fiscale et la mobilisation de ressources fiscales supplémentaires pour l'État.
+Le ministère des Finances a donné ses propres motifs. Le projet de loi de finances pour 2018, que le ministère diffuse en octobre 2017, accompagne chaque article d'un exposé des motifs, en arabe. Ces exposés présentent les lois de finances pour 2016 et 2017 comme la suppression progressive d'exonérations, remplacées par une imposition aux taux de 6 % ou de 18 % selon le cas. Ils en donnent la raison : selon le ministère, l'exonération prive l'assujetti du [droit à déduction](#g-droit-a-deduction-tva), de sorte que la taxe payée en amont devient un élément du coût de production. Pour le point de taux de 2018, l'exposé avance la poursuite de la réforme fiscale et la mobilisation de ressources fiscales supplémentaires pour l'État, et cite en regard les taux « des pays voisins » : Portugal 23 %, Italie 22 %, Espagne 21 %, Maroc et France 20 %, Algérie 19 % [@minfin-plf-2018, p. 91-92 et 146-149]. Les numéros d'articles de ce projet ne sont pas ceux de la loi.
 
-<!-- TODO (bibliographe) : verser la clé `minfin-plf-2018` (projet de loi de finances pour 2018, exposés des motifs des art. 28 et 45 du projet, p. 91-92 et 146-149 ; entrée CSL proposée au § 6 de docs/notes/fiscalite-tva-objets-des-reformes.md), puis citer le paragraphe qui précède. -->
-
-<!-- TODO (rédacteur) : le même exposé chiffre le point de taux de 2018 à 313 MD par an (25 + 43 + 245), prévision du ministère des Finances sans méthode exposée. Non écrit : chiffre isolé et sans clé. À reprendre, attribué et présenté comme une prévision, quand la clé sera versée et qu'une vue d'ensemble pourra l'accompagner (@fig-tva-rendement). -->
+<!-- TODO (rédacteur) : le même exposé (p. 149) chiffre le point de taux de 2018 à 313 MD par an (25 pour le passage de 6 % à 7 %, 43 pour 12 % à 13 %, 245 pour 18 % à 19 %), prévision du ministère des Finances dont la méthode n'est pas exposée. Non écrit : chiffre sans vue d'évolution. À reprendre, attribué et présenté comme une prévision, avec une série des recettes de la taxe en millions de dinars (@fig-tva-rendement ne la donne qu'en part du PIB). Clé versée : `minfin-plf-2018`. -->
 
 **Le champ et les exonérations : un élargissement.** Les lois de finances pour 2016 et 2017 élargissent sensiblement le champ taxé. [La première](#r-tva-champ-2016) retire du [tableau A](#g-tableau-a-tva) plusieurs opérations jusque-là exonérées et en reclasse une partie au taux de 6 %, notamment l'enseignement privé à compter du 1^er^ septembre 2016 ; elle refond les tableaux A, B et B bis et étend la [TVA sur la marge](#g-tva-sur-marge) aux biens achetés par un commerçant auprès de tout non-assujetti. [La seconde](#r-tva-champ-2017) réduit encore le tableau A, soumet les ventes de lots de terrain par les [promoteurs immobiliers](#g-promoteur-immobilier), étend les livraisons à soi-même aux immobilisations incorporelles, réorganise les opérations à 6 % et abroge le tableau B bis en portant directement le taux de 12 % à l'article 7.
 
@@ -407,13 +435,11 @@ Le registre ne porte que les textes qui font passer une catégorie d'un régime 
 
 Cinq de ces trajectoires demandent une précision que le tableau ne porte pas.
 
-- **Les professions libérales.** Au 1^er^ avril 1996, certains contrats enregistrés avant cette date restent à 6 %. L'inscription directe de ces professions à l'article 7, [en 2017](#r-tva-trajectoires-professions-2017), n'est pas un changement de taux : elle remplace le [tableau B bis](#g-tableau-b-bis-tva) à 12 % par une liste portée dans l'article lui-même, au même taux. Au 1^er^ janvier 2023, [le décret-loi de finances pour 2023](#r-tva-trajectoires-professions-2023) abroge le tiret de l'article 7 qui portait cette liste. L'article n'écrit aucun taux : les services en cause relèvent du [taux normal](#g-taux-normal-tva) de 19 % par l'effet du premier alinéa de l'article 7, qui y soumet les opérations non soumises à un autre taux [@dgelf-code-tva-2023, art. 7]. La rubrique de l'article, publiée en arabe, annonce la révision du taux appliqué aux services de certaines personnes exerçant des professions non commerciales, non de toutes. Dans l'édition du code publiée par le ministère des Finances en 2021, le tiret abrogé est celui des architectes et ingénieurs-conseils, des dessinateurs, géomètres et topographes, des avocats, notaires, huissiers-notaires et interprètes, des conseils fiscaux, des entrepreneurs de tenue de comptabilité, des experts et des conseils. Les professions de santé, taxées à 7 %, le restent ; le même article ne retire de ce taux que la médecine et la chirurgie esthétiques, hors actes à caractère curatif. L'administration fiscale, dans sa note commune n° 5/2023, résume la mesure comme un relèvement de 13 % à 19 % pour ces professions, et de 7 % à 19 % pour la médecine et la chirurgie esthétiques. Elle lui donne pour objet la réduction du nombre des taux, par la suppression progressive des opérations soumises au taux de 13 %.
+- **Les professions libérales.** Au 1^er^ avril 1996, certains contrats enregistrés avant cette date restent à 6 %. L'inscription directe de ces professions à l'article 7, [en 2017](#r-tva-trajectoires-professions-2017), n'est pas un changement de taux : elle remplace le [tableau B bis](#g-tableau-b-bis-tva) à 12 % par une liste portée dans l'article lui-même, au même taux. Au 1^er^ janvier 2023, [le décret-loi de finances pour 2023](#r-tva-trajectoires-professions-2023) abroge le tiret de l'article 7 qui portait cette liste. L'article n'écrit aucun taux : les services en cause relèvent du [taux normal](#g-taux-normal-tva) de 19 % par l'effet du premier alinéa de l'article 7, qui y soumet les opérations non soumises à un autre taux [@dgelf-code-tva-2023, art. 7]. La rubrique de l'article, publiée en arabe, annonce la révision du taux appliqué aux services de certaines personnes exerçant des professions non commerciales, non de toutes. Dans l'édition du code publiée par le ministère des Finances en 2021, le tiret abrogé est celui des architectes et ingénieurs-conseils, des dessinateurs, géomètres et topographes, des avocats, notaires, huissiers-notaires et interprètes, des conseils fiscaux, des entrepreneurs de tenue de comptabilité, des experts et des conseils [@dgelf-code-tva-2021, art. 7, numéro 3, p. 23 ; @dgi-nc-5-2023, p. 2 et 4]. Les professions de santé, taxées à 7 %, le restent ; le même article ne retire de ce taux que la médecine et la chirurgie esthétiques, hors actes à caractère curatif. L'administration fiscale, dans sa note commune n° 5/2023, résume la mesure comme un relèvement de 13 % à 19 % pour ces professions, et de 7 % à 19 % pour la médecine et la chirurgie esthétiques. Elle lui donne pour objet la réduction du nombre des taux, par la suppression progressive des opérations soumises au taux de 13 % [@dgi-nc-5-2023, p. 1, 2 et 4].
 - **Le logement vendu par les promoteurs.** L'exonération de 2001 porte sur les immeubles bâtis à usage exclusif d'habitation et leurs dépendances. Au 1^er^ janvier 2018, elle est limitée aux logements sociaux financés par le fonds de promotion du logement pour les salariés, et le taux de 13 % s'applique aux autres ventes sous réserve des contrats et promesses conclus avant cette date. Un passage au taux normal, [d'abord prévu pour 2020](#r-tva-trajectoires-logement-2018), est reporté [à 2021](#r-tva-trajectoires-logement-2019), puis [à 2024](#r-tva-trajectoires-logement-2020) et [à 2025](#r-tva-trajectoires-logement-2024). Il cède finalement la place, [au 1^er^ janvier 2025](#r-tva-trajectoires-logement-2025), aux deux branches du tableau [@dgelf-code-tva-2023, art. 7].
 - **Les télécommunications.** Exonérées de 1995 à 2002, elles sortent ensuite du [tableau A](#g-tableau-a-tva), dont le numéro 48 est limité à la radio-télédiffusion. La date du 1^er^ janvier 2003 est fixée par [le décret n° 2002-3356](#r-tva-trajectoires-telecom-2003).
 - **Les médicaments au détail.** La fin de l'exonération, votée en 2016, n'a pas de date d'application propre : [une loi de finances complémentaire](#r-tva-trajectoires-medicaments-reports) la fixe au 1^er^ janvier 2017, puis [la loi de finances pour 2020](#r-tva-trajectoires-medicaments-reports) au 1^er^ janvier 2020. [La disposition de 2021](#r-tva-trajectoires-medicaments-2021) qui rétablit l'exonération au détail abandonne définitivement la TVA antérieurement due, sans restitution des sommes déjà acquittées.
 - **L'hôtellerie et la restauration.** Le passage de 6 % à 10 %, au 1^er^ septembre 1996, vaut aussi pour certaines activités touristiques et pour la restauration.
-
-<!-- TODO (bibliographe) : verser la clé `dgelf-nc-2023-05` (note commune n° 5/2023, p. 1 à 5 ; entrée CSL proposée au § 6 de docs/notes/fiscalite-tva-objets-des-reformes.md) et la citer à la fin de l'alinéa qui précède ; le contenu du tiret abrogé vient du code édité par le ministère en 2021 (art. 7, numéro 3), qui n'a pas de clé. -->
 
 :::: {.chronologie-repliable titre="Opérations qui changent de régime de TVA : la trajectoire de chacune, texte par texte, 1988-2025"}
 
@@ -549,12 +575,10 @@ Les changements de 1990, 1991 et 1993 sont rattachés ici aux lois de finances c
 | []{#r-tva-forfaits-1988}différés au 1^er^ juillet 1988 | point de départ | décret n° 88-1109 [@decret-88-1109-calendrier-tva, art. 1] | régimes forfaitaires des articles 16 et 17 du code : non mis en application |
 | []{#r-tva-forfaits-1990}non établie | étape — clôt la mise en place | loi de finances pour 1990 [@loi-89-115-lf-1990, art. 24 à 26 ; @loi-89-115-lf-1990, p. 2146 ; @loi-89-115-lf-1990, p. 2146-2148 et 2155] | articles 16 et 17 dans leur rédaction de 1988 → taxe forfaitaire annuelle et droit forfaitaire simplifié ; barèmes propres aux cafetiers de première catégorie et aux coiffeurs pour hommes |
 | []{#r-tva-forfaits-1991}non établie | ajustement | loi de finances pour 1991 [@loi90-111-lf1991, art. 34, p. 2052 ; @loi90-111-lf1991, p. 2061] | — → taxe liquidée sur la marge pour les produits achetés aux contribuables forfaitaires |
-| []{#r-tva-forfaits-1993}non établie | **rupture** — l'impôt forfaitaire libératoire | loi de finances pour 1993 [@lf-1993, art. 100 à 105, p. 1676-1677 ; @lf-1993, p. 1676-1677 et 1679] | taxe forfaitaire annuelle et droit forfaitaire simplifié → forfait unique dans l'impôt sur le revenu, libératoire de la TVA ; articles 16 et 17, I, du code abrogés. Un rectificatif publié au *Journal officiel* du 4 mai 1993 corrige l'article 102 : pour les prestations de services, le plafond du régime forfaitaire se lit 20 000 dinars, et non 12 000 ; les deux autres montants de l'article, de 30 000 dinars, sont inchangés |
+| []{#r-tva-forfaits-1993}non établie | **rupture** — l'impôt forfaitaire libératoire | loi de finances pour 1993 [@lf-1993, art. 100 à 105, p. 1676-1677 ; @lf-1993, p. 1676-1677 et 1679] ; rectificatif [@rectificatif-lf-1993, p. 579] | taxe forfaitaire annuelle et droit forfaitaire simplifié → forfait unique dans l'impôt sur le revenu, libératoire de la TVA ; articles 16 et 17, I, du code abrogés. Un rectificatif publié au *Journal officiel* du 4 mai 1993 corrige l'article 102 : pour les prestations de services, le plafond du régime forfaitaire se lit 20 000 dinars, et non 12 000 ; les deux autres montants de l'article, de 30 000 dinars, sont inchangés |
 | []{#r-tva-forfaits-1998-transports}1^er^ janvier 1998 | étape — un public nouveau, les transports terrestres | loi de finances pour 1998 [@lf-1998, art. 29 et 30] | article 17, II → taxe forfaitaire mensuelle, imputable sur la TVA due selon le régime réel |
 | []{#r-tva-forfaits-1998-deduction}1^er^ janvier 1998 | ajustement | loi de finances pour 1998 [@lf-1998, art. 30, 38 et 39, p. 2438] | exclusion du droit à déduction : achats auprès des forfaitaires de la TVA → auprès des forfaitaires de l'impôt sur le revenu (@tbl-tva-deduction-textes) |
 | []{#r-tva-forfaits-2016}1^er^ janvier 2016 | étape — réforme de 2016-2018 | loi de finances pour 2016 [@lf-2016, art. 30, 31, 33 et 92] | taxe sur la marge : achats auprès des forfaitaires → auprès de tout non-assujetti |
-
-<!-- TODO (bibliographe) : verser la clé `rectificatif-lf-1993` (JORT n° 33 du 4 mai 1993, p. 579 ; entrée CSL proposée au § 6 de docs/notes/fiscalite-tva-objets-des-reformes.md) et la citer à la ligne de 1993. -->
 
 ::::
 
@@ -618,7 +642,7 @@ Ces limites sont nées avec le code. Aucune grande réforme ne les refond ; une 
 Lorsque la taxe due ne permet pas d'imputer toute la taxe déductible, le reliquat est reporté sur les mois suivants ([article 9 du code](#r-tva-deduction-1988)). C'est ce reliquat qui forme le [crédit de TVA](#g-credit-tva), objet d'une section propre (@sec-tva-credit-restitution).
 
 - **Deux exclusions en 1988, l'une déplacée en 1998.** [L'article 10](#r-tva-deduction-1988) n'écarte en 1988 que deux catégories d'achats : les voitures de tourisme servant au transport de personnes, hors celles qui font l'objet de l'exploitation, avec leur location et leurs frais ; les biens et services livrés par les contribuables soumis aux forfaits des articles 16 et 17. [Au 1^er^ janvier 1998](#r-tva-deduction-1998-forfaitaires), cette seconde exclusion est reportée sur les forfaitaires de l'impôt sur le revenu, et la taxe retenue à la source par les acheteurs publics devient déductible sur présentation du certificat de retenue. [Depuis le 1^er^ janvier 2022](#r-tva-deduction-2022), cette dernière déduction est limitée aux montants inscrits sur la plateforme électronique des certificats de retenue.
-- **2014 : les achats réglés en espèces.** [La loi de finances pour 2014](#r-tva-deduction-2014) ajoute une exclusion d'une autre nature, qui fait du droit à déduction un instrument de lutte contre les paiements en espèces : la taxe n'est plus déductible sur les achats réglés en espèces à partir d'un montant hors taxe de 20 000 dinars au 1^er^ janvier 2014, abaissé à 10 000 dinars au 1^er^ janvier 2015 et à 5 000 dinars au 1^er^ janvier 2016. L'article est rangé sous la rubrique « Rationalisation des opérations commerciales effectuées en espèces ».
+- **2014 : les achats réglés en espèces.** [La loi de finances pour 2014](#r-tva-deduction-2014) ajoute une exclusion d'une autre nature, qui fait du droit à déduction un instrument de lutte contre les paiements en espèces : la taxe n'est plus déductible sur les achats réglés en espèces à partir d'un montant hors taxe de 20 000 dinars au 1^er^ janvier 2014, abaissé à 10 000 dinars au 1^er^ janvier 2015 et à 5 000 dinars au 1^er^ janvier 2016. L'article est rangé sous la rubrique « Rationalisation des opérations commerciales effectuées en espèces ». L'exposé des motifs du projet de loi, en arabe, présente la mesure comme un moyen d'accroître la transparence des transactions entre entreprises, par référence à la législation comparée, et d'inciter à régler par virement bancaire ou postal, chèque, effet de commerce, moyen de paiement électronique ou compensation [@minfin-plf-2014, p. 77].
 - **Le pourcentage de déduction et la régularisation.** Celui qui n'acquitte pas la taxe sur la totalité de ses affaires — l'[assujetti partiel](#g-assujetti-partiel-tva) — ne déduit qu'une fraction de la taxe d'amont. Ce [pourcentage de déduction](#g-prorata-deduction-tva) est le rapport, calculé sur l'exercice précédent, entre les recettes qui ouvrent droit à déduction — recettes taxées, exportations, ventes en suspension — et l'ensemble des recettes, exonérées et hors du champ comprises. L'exportation et les ventes en suspension figurent donc au numérateur : elles n'amputent pas le droit à déduction, alors même qu'elles ne donnent lieu à aucune collecte de taxe. La [régularisation](#g-regularisation-deductions-tva) corrige la déduction quand la situation de l'assujetti ou du bien change : la taxe déduite est alors reversée, diminuée d'un cinquième par année de détention pour les équipements et d'un dixième pour les bâtiments. La formule, en symboles, et le détail des règles sont donnés, repliés, sous ce paragraphe.
 
 :::: {.chronologie-repliable titre="Déduction de la TVA : le pourcentage de déduction et la régularisation, règles et formule"}
@@ -710,7 +734,7 @@ Dix-neuf textes ont retouché la restitution depuis 1988. Trois seulement change
 | []{#r-tva-restitution-2023}1^er^ janvier 2023 | étape — restituer vite | décret-loi de finances pour 2023 [@lf-2023, art. 34 § 1 et 2, p. 4066 de l'édition arabe ; @lf-2023, art. 76, p. 4082 de l'édition arabe] | délai général de restitution : 120 → 90 jours |
 | []{#r-tva-restitution-2023-investissement}demandes déposées à compter du 1^er^ janvier 2023 | étape — restituer vite | décret-loi de finances pour 2023 [@lf-2023, art. 34 § 3 et 4, p. 4066 de l'édition arabe] | crédit des investissements directs et de la mise à niveau : 30 → 21 jours ; le délai vaut aussi pour le crédit confirmé par l'administration à compter de cette date, quelle que soit la date de la demande |
 
-<!-- TODO (documentaliste) : la date d'effet des articles 10 et 11 de la loi n° 2007-69 n'est pas relevée (article final à lire, JORT n° 104 des 28-31 décembre 2007) ; la case du tableau reste « non établie » en attendant. -->
+<!-- TODO (documentaliste) : date d'effet des articles 10 et 11 de la loi n° 2007-69. La loi (JORT n° 104 des 28-31 décembre 2007, p. 4337-4356, articles 1 à 49) ne porte pas de clause d'application pour ces articles : l'article 31 ne fixe une date (1er janvier 2009) que pour ses articles 27 à 29, et l'article 49 ne contient que la formule d'exécution. La note commune n° 29/2008 (@dgi-nc-29-2008) rappelle le régime « en vigueur au 31 décembre 2007 » sans dire la date de la réduction. La date d'exécution de droit commun (cinq jours après le dépôt du fascicule au siège du gouvernorat de Tunis, loi n° 93-64, art. 2) exige la date de dépôt du JORT n° 104 de 2007, non relevée : la case du tableau reste « non établie ». -->
 
 <!-- TODO (documentaliste) : le délai de visa applicable entre le 1er janvier 1998 (alinéa récrit sans délai par l'art. 41 de la LF 1998) et le 1er janvier 2002 (CDPF, art. 32) n'est pas établi ; voir docs/notes/fiscalite-tva-deductions-documentation.md, § 6, point 5. -->
 
@@ -916,9 +940,9 @@ from figures import tva as fig_tva
 import figtools
 figtools.figure_tabs(
     fig_tva.fig_rendement(), fig_tva.table(),
-    "recettes-fiscales-composition", "irpp-ratios",
+    *fig_tva.SERIES_RENDEMENT,
     slug="fig_tva_rendement",
-    caption="Rendement de la taxe sur la valeur ajoutée rapporté au PIB et aux dépenses de l'État, 1986-2025",
+    caption="Rendement de la taxe sur la valeur ajoutée rapporté au PIB de chaque base des comptes nationaux et aux dépenses de l'État, 1986-2025",
     note_lecture=(
         "**La zone grisée, à gauche de 1988, ne mesure pas la TVA.** La rubrique « TVA » du "
         "ministère des Finances est continue depuis 1986 — l'intitulé est le sien —, mais la "
@@ -927,27 +951,62 @@ figtools.figure_tabs(
         "segments ne se comparent donc pas. Les années suivantes elles-mêmes ne sont pas "
         "homogènes : l'exercice 1988 n'est taxé qu'au second semestre, et le champ des "
         "assujettis s'élargit jusqu'en 1996. "
-        "La courbe **verte** (échelle de gauche) rapporte la taxe au **PIB**, la courbe "
-        "**rouge** (échelle de droite) aux **dépenses totales de l'État**, qui ne sont "
-        "publiées qu'à partir de 1990 : les exercices 1988 et 1989 n'ont donc que le premier "
-        "des deux rapports. "
-        "**Le PIB retenu est celui du ministère des Finances**, celui sur lequel il calcule "
-        "lui-même ses ratios ; l'onglet « Données » donne à côté le PIB des comptes "
-        "nationaux, qui ne s'en écarte que pour 2012, 2013 et 2014."
+        "**Le PIB est celui de chacune des trois bases des comptes nationaux, 1983, 1997 et "
+        "2015, tracées séparément.** Aucun raccord n'est calculé, l'écart entre deux bases "
+        "n'étant pas constant : une année publiée dans deux bases porte deux points (1997 à "
+        "2009 : bases 1983 et 1997 ; 2010 à 2017 : bases 1997 et 2015), chacun rapporté au "
+        "PIB de sa base. Un trait vertical pointillé marque l'année où la série passe à une "
+        "base plus récente (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "Un marqueur plein est un PIB publié dans sa base, ou dont la source ne dit pas s'il "
+        "est recalculé pour le passé (base 1983) ; un marqueur creux, un PIB que "
+        "l'Institut national de la statistique a recalculé pour le passé. De 1986 à 1991, le "
+        "PIB est présumé de base 1983, aucune série de base connue n'existant avant 1992 "
+        "(points pâles). Les losanges gris sont des valeurs du ministère des Finances, pour "
+        "2002 à 2004 et pour 2025, que la source ne rattache à aucune base. "
+        "La courbe **rouge** (échelle de droite) rapporte la taxe aux **dépenses totales de "
+        "l'État**, publiées à partir de 1990 : aucun PIB n'y intervient, et elle traverse les "
+        "changements de base sans rupture. Les quatre bandes claires, R1 à R4, sont les "
+        "réformes de 1995-1996, de 1998-1999, de 2007 et de 2016-2018 (@sec-tva-reformes)."
     ),
     generated="{{< meta date >}}",
 )
 ```
 
-Après la montée initiale, le rendement rapporté au PIB reste dans une bande relativement étroite : 6,5 % en 1988, 5,1 % en 1997, 7,3 % en 2022 et 6,8 % en 2025. Rapportée aux recettes fiscales, la TVA représente entre 26 % et 32 % sur la période couverte par la figure.
+Rapporté au PIB de chaque base, le rendement reste dans une bande de moins de deux points. En base 1983, il va de 5,3 % en 1995 à 6,7 % en 2000 sur les années 1992 à 2009 ; de 1988 à 1991, sur un PIB présumé de cette base, il est compris entre 5,6 % et 6,5 %, le chiffre de 1988 portant sur un exercice taxé au second semestre seulement. En base 1997, de 1997 à 2017, il va de 5,1 % en 1997 à 6,3 % en 2017. En base 2015, de 2010 à 2025, il va de 5,4 % en 2016 à 7,3 % en 2022, et vaut 6,8 % en 2025. Une même recette change de part avec la base : celle de 1997, 1 169,6 millions de dinars (MD), est de 5,6 % du PIB en base 1983 et de 5,1 % en base 1997 ; celle de 2010, 3 749,8 MD, de 5,9 % en base 1997 et de 5,7 % en base 2015. Les écarts entre bases sont décrits dans l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ecarts). Rapportée aux recettes fiscales, la TVA représente entre 26 % et 32 % sur la période couverte par la figure.
 
-<!-- TODO (rédacteur) : la phrase qui précède et la figure rapportent la taxe au PIB du ministère des Finances sans dire sa base ; 1997 est une année de changement de niveau du PIB. À reprendre par segments de base, avec renvoi à l'annexe du site sur le PIB, et en marquant sur la figure la mise en place et les quatre réformes. Voir docs/notes/backlog-precis.md et docs/notes/fiscalite-tva-plan-architecte.md, § 6.1. -->
+Rapportée aux dépenses de l'État, qui ne dépendent d'aucune base, elle en couvre entre un cinquième et un peu plus d'un quart : 19,8 % en 1990, 27,0 % en 2000 et 22,3 % en 2025. En 2020, la taxe recule de 7 797 à 7 201 MD tandis que les dépenses de l'État augmentent : sa part des dépenses passe de 23,9 % à 19,1 %, et sa part du PIB de base 2015 de 6,3 % à 6,0 %.
 
-Rapportée aux dépenses de l'État, elle en couvre entre un cinquième et un peu plus d'un quart : 19,8 % en 1990, 27,0 % en 2000 et 22,3 % en 2025. En 2020, sa part du PIB se maintient à 6,0 % tandis que sa part des dépenses descend à 19,1 % : l'écart tient alors à l'augmentation du dénominateur que constituent les dépenses.
+**La place de la taxe parmi les recettes indirectes.** Rapportée à la somme de la TVA, des droits de douane, des droits de consommation et de la rubrique « autres impôts indirects » de l'État, la TVA fournit 35,6 % en 1990 et 43,9 % en 2000 ; de 2005 à 2025, sa part reste comprise entre 45,8 % (2007) et 49,9 % (2011). La part des droits de douane passe de 28,8 % en 1995 à 15,7 % en 2000 et à 7,4 % en 2010 (@sec-dd). Cette vue ne fait intervenir aucun PIB (@fig-tva-indirects).
+
+```{python}
+#| label: fig-tva-indirects
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tva as fig_tva
+import figtools
+figtools.figure_tabs(
+    fig_tva.fig_indirects(), fig_tva.table_indirects(),
+    "recettes-fiscales-composition",
+    slug="fig_tva_indirects",
+    caption="La TVA dans les recettes indirectes de l'État : part de chaque rubrique, 1986-2025",
+    note_lecture=(
+        "Les quatre bandes se somment à 100 % des recettes indirectes de l'État : la TVA, les "
+        "droits de douane, les droits de consommation et la rubrique « autres impôts indirects » du "
+        "ministère des Finances, dont les lignes sont les fonds spéciaux du Trésor, les fonds de "
+        "concours et « autres », que le classeur ne détaille pas. **La zone pâle, à gauche de 1988, ne "
+        "mesure pas la TVA :** la rubrique « TVA » du ministère porte alors les taxes sur le "
+        "chiffre d'affaires que le code de 1988 remplace, et l'exercice 1988 n'est taxé qu'au "
+        "second semestre. Les parts sont calculées sur les montants en dinars courants de "
+        "l'onglet « Données » ; aucune base de PIB n'intervient."
+    ),
+    generated="{{< meta date >}}",
+)
+```
 
 La série invite donc à distinguer l'évolution juridique de la taxe de celle de ses agrégats budgétaires.
 
-<!-- TODO (rédacteur) : trois vues prévues par le plan (§ 6.2, 6.3 et 6.6) ne sont pas écrites, faute de données versées ou de source — la place de la taxe dans la fiscalité indirecte (série des recettes par rubrique, à tracer) ; la taxe rapportée à la consommation privée (calcul du précis, à présenter comme tel, série à verser) ; le partage entre TVA intérieure et TVA à l'importation (aucune source identifiée ; piste au § 1.17 e de docs/notes/fiscalite-tva-objets-des-reformes.md). Reste aussi, pour « Ce qui échappe à la taxe », la décomposition des dépenses fiscales de TVA par forme (plan, § 6.4). -->
+<!-- TODO (rédacteur) : deux vues prévues par le plan (§ 6.3 et 6.6) ne sont pas écrites, faute de données versées ou de source — la taxe rapportée à la consommation privée (calcul du précis, à présenter comme tel, série à verser) ; le partage entre TVA intérieure et TVA à l'importation (aucune source identifiée ; piste au § 1.17 e de docs/notes/fiscalite-tva-objets-des-reformes.md). Reste aussi, pour « Ce qui échappe à la taxe », la décomposition des dépenses fiscales de TVA par forme (plan, § 6.4). -->
 
 ### Ce qui échappe à la taxe {#sec-tva-ce-qui-echappe}
 

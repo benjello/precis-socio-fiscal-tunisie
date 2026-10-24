@@ -1,27 +1,30 @@
 """Figure « ce que rapporte la TVA » du livre *Fiscalité*.
 
-LA RUPTURE DE SÉRIE EST LE SUJET, PAS UN DÉTAIL — comme pour l'impôt sur le revenu, mais
-deux ans plus tôt. La rubrique « 2.2 TVA » du ministère des Finances est continue depuis
-1986, et c'est le ministère lui-même qui l'intitule ainsi ; or la taxe sur la valeur
-ajoutée est créée par la loi n° 88-61 du 2 juin 1988 et n'entre en vigueur qu'au
-1er juillet 1988. Les exercices 1986 et 1987 portent donc les taxes sur le chiffre
-d'affaires que le code de 1988 remplace, non la TVA.
+TROIS BASES DU PIB, JAMAIS RACCORDÉES. La taxe est rapportée au PIB aux prix courants de
+chacune des trois bases des comptes nationaux — 1983, 1997, 2015 —, sur les années que
+chaque base porte (série `pib-courant-par-base`, annexe du site sur le PIB). Chaque base est
+une courbe distincte ; aucun coefficient de passage n'est calculé ; une année publiée dans
+deux bases (1997-2009, 2010-2017) porte deux points, chacun rapporté au PIB de sa base. Les
+années 1986-1991 reposent sur un PIB que la série dit « présumé » de base 1983 (aucune série
+de base connue avant 1992) : les points de 1988 à 1991 sont tracés en pâle. Les valeurs que
+le ministère des Finances publie sans les rattacher à une base (2002-2004 et 2025) sont des
+losanges gris, hors de toute courbe. Le marqueur plein dit un PIB publié dans sa base, ou dont la source ne dit pas s'il est
+rétropolé (base 1983) ; le marqueur creux, un PIB recalculé pour le passé par l'INS (rétropolé).
 
-La figure le montre au lieu de le taire : ces deux années sont tracées en pointillé gris,
-séparées du reste par une bande verticale, et la légende nomme ce qu'elles mesurent
-réellement.
+LA RUPTURE DE SÉRIE EST LE SUJET, PAS UN DÉTAIL. La rubrique « 2.2 TVA » du ministère des
+Finances est continue depuis 1986, et c'est le ministère lui-même qui l'intitule ainsi ; or la
+taxe sur la valeur ajoutée est créée par la loi n° 88-61 du 2 juin 1988 et n'entre en vigueur
+qu'au 1er juillet 1988. Les exercices 1986 et 1987 portent donc les taxes sur le chiffre
+d'affaires que le code de 1988 remplace, non la TVA : ils sont tracés en pointillé gris,
+séparés du reste par une bande verticale.
 
-DEUX RAPPORTS, DEUX AXES. L'axe gauche rapporte la taxe au produit intérieur brut, l'axe
-droit aux dépenses totales de l'État. Le second ne commence qu'en 1990 : le ministère ne
-publie pas les dépenses totales avant cette date. Les exercices 1988 et 1989 n'ont donc
-qu'un seul des deux ratios, et la courbe de droite ne pénètre jamais la zone grisée.
+UN RAPPORT QUI NE DÉPEND D'AUCUN PIB. L'axe droit rapporte la taxe aux dépenses totales de
+l'État, qui ne sont publiées qu'à partir de 1990 : la courbe de droite traverse les
+changements de base sans rupture, et ne pénètre jamais la zone grisée.
 
-DEUX DÉNOMINATEURS DE PIB, ET C'EST VOULU. Le PIB n'est publié par aucune des deux
-sources : il se déduit du fichier d'indicateurs du ministère (déficit en dinars ÷ déficit
-en points de PIB). Celui des comptes nationaux de l'INS, base 2015, ne coïncide pas pour
-2012-2014. La figure retient le PIB du ministère — c'est celui sur lequel il calcule
-lui-même ses ratios —, et le tableau conserve les deux colonnes côte à côte : le
-dénominateur d'un ratio se choisit, il ne se devine pas.
+LES RÉFORMES. Quatre bandes claires marquent les grandes réformes que le chapitre décrit
+(1995-1996, 1998-1999, 2007, 2016-2018) ; les années de changement de base sont des traits
+verticaux pointillés, avec le nom de la base.
 """
 from __future__ import annotations
 
@@ -31,6 +34,9 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
+from matplotlib.patches import Patch
+import pandas as pd
 
 _SCRIPTS = Path(__file__).resolve().parents[4] / "scripts"
 sys.path.insert(0, str(_SCRIPTS))
@@ -41,6 +47,8 @@ FIGDATA = HERE.parent / "figdata"
 
 SERIE_COMPOSITION = "recettes-fiscales-composition"
 SERIE_RATIOS = "irpp-ratios"
+SERIE_PIB = "pib-courant-par-base"
+SERIES_RENDEMENT = (SERIE_COMPOSITION, SERIE_RATIOS, SERIE_PIB)
 
 # Première année d'application de la TVA : le code promulgué par la loi n° 88-61 du
 # 2 juin 1988 s'applique à compter du 1er juillet 1988. L'exercice 1988 n'est donc taxé
@@ -52,127 +60,469 @@ ANNEE_TVA = 1988
 # droite commence donc deux ans après la création de la taxe.
 ANNEE_DEPENSES = 1990
 
+# Les quatre grandes réformes du chapitre (@sec-tva-reformes) : première et dernière année.
+REFORMES = (("R1", 1995, 1996), ("R2", 1998, 1999), ("R3", 2007, 2007), ("R4", 2016, 2018))
+
+# Une couleur par base, une forme par base : la courbe d'une base ne se confond jamais avec
+# celle d'une autre, même en noir et blanc.
+BASES = {
+    1983: {"couleur": "#1a7f37", "marque": "o"},
+    1997: {"couleur": "#8250df", "marque": "s"},
+    2015: {"couleur": "#0969da", "marque": "^"},
+}
+ROUGE, GRIS, OR = "#d1242f", "#57606a", "#bf8700"
+
 _L = {
     "lg_avant": {
-        "fr": "Taxes antérieures sur le chiffre d'affaires / PIB",
-        "ar": "الأداءات السابقة على رقم المعاملات / الناتج المحلي الإجمالي"},
-    "lg_pib": {
-        "fr": "TVA / PIB (éch. gauche)",
-        "ar": "الأداء على القيمة المضافة / الناتج المحلي الإجمالي (يسار)"},
+        "fr": "Taxes antérieures sur le chiffre d'affaires / PIB (base 1983 présumée)",
+        "ar": "الأداءات السابقة على رقم المعاملات / الناتج (أساس 1983 مفترض)"},
+    "lg_base": {
+        "fr": "TVA / PIB, base {b} (éch. gauche)",
+        "ar": "الأداء على القيمة المضافة / الناتج، أساس {b} (يسار)"},
+    "lg_presumee": {
+        "fr": "base 1983 présumée (1988-1991)",
+        "ar": "أساس 1983 مفترض (1988-1991)"},
+    "lg_minfin": {
+        "fr": "PIB du ministère non rattaché à une base (2002-2004, 2025)",
+        "ar": "ناتج الوزارة غير المرتبط بأساس (2002-2004، 2025)"},
     "lg_dep": {
-        "fr": "TVA / dépenses de l'État (éch. droite)",
-        "ar": "الأداء على القيمة المضافة / نفقات الدولة (يمين)"},
-    "y_pib": {"fr": "En % du PIB", "ar": "% من الناتج المحلي الإجمالي"},
+        "fr": "TVA / dépenses de l'État (éch. droite, sans PIB)",
+        "ar": "الأداء على القيمة المضافة / نفقات الدولة (يمين، دون ناتج)"},
+    "lg_reforme": {
+        "fr": "grande réforme (R1 à R4)",
+        "ar": "إصلاح كبير (R1 إلى R4)"},
+    "lg_plein": {
+        "fr": "plein : PIB publié dans sa base, ou rétropolation non précisée (base 1983) ; creux : PIB recalculé pour le passé",
+        "ar": "مملوء: ناتج منشور في أساسه أو إعادة احتساب غير محدّدة (أساس 1983)؛ مفرغ: ناتج أعيد احتسابه للماضي"},
+    "y_pib": {"fr": "En % du PIB de la base", "ar": "% من ناتج الأساس"},
     "y_dep": {"fr": "En % des dépenses de l'État", "ar": "% من نفقات الدولة"},
     "xlabel": {"fr": "Année", "ar": "السنة"},
     "title": {"fr": "Ce que rapporte la taxe sur la valeur ajoutée, 1986-2025",
               "ar": "مردود الأداء على القيمة المضافة، 1986-2025"},
     "rupture": {"fr": "création de la TVA\n(loi n° 88-61, 1er juillet 1988)",
                 "ar": "إحداث الأداء على القيمة المضافة\n(القانون عدد 88-61، 1 جويلية 1988)"},
+    "rup_pib": {"fr": "PIB : base {b}", "ar": "الناتج: أساس {b}"},
+    "ib_pib": {"fr": "PIB {pib} MD", "ar": "الناتج {pib} م.د"},
+    "ib_ratio": {"fr": "{a} · base {b} : {r} % du PIB ({pib} MD ; TVA {tva} MD)",
+                 "ar": "{a} · أساس {b} : {r} % من الناتج (الناتج {pib} م.د ؛ الأداء {tva} م.د)"},
+    "ib_minfin": {"fr": "{a} · PIB du ministère, base non rattachée : {r} % du PIB "
+                        "({pib} MD ; TVA {tva} MD)",
+                  "ar": "{a} · ناتج الوزارة، أساس غير مرتبط : {r} % من الناتج "
+                        "(الناتج {pib} م.د ؛ الأداء {tva} م.د)"},
+    "ib_dep": {"fr": "{a} · {r} % des dépenses de l'État", "ar": "{a} · {r} % من نفقات الدولة"},
+    "ib_reforme": {"fr": "{nom} : {debut}-{fin}, réforme décrite au chapitre",
+                   "ar": "{nom} : {debut}-{fin}، إصلاح موصوف في الفصل"},
     "col_annee": {"fr": "Année", "ar": "السنة"},
-    "col_pib": {"fr": "% du PIB (ministère des Finances)",
-                "ar": "% من الناتج المحلي الإجمالي (وزارة المالية)"},
-    "col_pib_cnat": {"fr": "% du PIB (comptes nationaux)",
-                     "ar": "% من الناتج المحلي الإجمالي (الحسابات القومية)"},
+    "col_base": {"fr": "Base du PIB", "ar": "أساس الناتج"},
+    "col_pib": {"fr": "PIB de cette base (MD courants)",
+                "ar": "ناتج هذا الأساس (م.د جارية)"},
+    "col_retro": {"fr": "PIB recalculé pour le passé", "ar": "ناتج أعيد احتسابه للماضي"},
+    "col_ratio": {"fr": "TVA en % du PIB de cette base", "ar": "الأداء % من ناتج هذا الأساس"},
     "col_dep": {"fr": "% des dépenses de l'État", "ar": "% من نفقات الدولة"},
     "col_rec": {"fr": "% des recettes fiscales", "ar": "% من المداخيل الجبائية"},
     "col_mdt": {"fr": "TVA (MDT)", "ar": "الأداء على القيمة المضافة (م.د)"},
+    "col_src": {"fr": "Source du PIB", "ar": "مصدر الناتج"},
+    "b_presumee": {"fr": "1983 (présumée)", "ar": "1983 (مفترض)"},
+    "b_minfin": {"fr": "non rattachée (ministère des Finances)",
+                 "ar": "غير مرتبط (وزارة المالية)"},
+    "r_oui": {"fr": "oui", "ar": "نعم"},
+    "r_non": {"fr": "non", "ar": "لا"},
+    "r_np": {"fr": "non précisé par la source", "ar": "غير محدّد في المصدر"},
 }
 
 
-def _lab(key: str) -> str:
-    return _L[key].get(figtools.lang(), _L[key]["fr"])
+def _lab(key: str, **kw) -> str:
+    texte = _L[key].get(figtools.lang(), _L[key]["fr"])
+    return texte.format(**kw) if kw else texte
 
 
 def _donnees():
-    """Les deux séries jointes sur l'année, avec les ratios au PIB et aux dépenses.
+    """Une ligne par (année, base du PIB) : la TVA rapportée au PIB de cette base.
 
     La composition des recettes porte le montant de TVA ; les ratios de l'impôt sur le
-    revenu portent les deux PIB et les dépenses totales. Aucune des deux ne porte tout.
+    revenu portent les dépenses totales ; la série des PIB par base porte, pour chaque
+    année, un PIB par base qui la publie. Une année publiée dans deux bases a deux lignes.
     """
-    comp = figtools.series(SERIE_COMPOSITION)
-    rat = figtools.series(SERIE_RATIOS)
-    d = comp[["annee", "tva_MDT", "tva_pct"]].merge(
-        rat[["annee", "pib_minfin_MDT", "pib_cnat_MDT", "depenses_totales_MDT"]],
-        on="annee", how="left")
-    d["tva_sur_pib_pct"] = 100 * d["tva_MDT"] / d["pib_minfin_MDT"]
-    d["tva_sur_pib_cnat_pct"] = 100 * d["tva_MDT"] / d["pib_cnat_MDT"]
+    comp = figtools.series(SERIE_COMPOSITION)[["annee", "tva_MDT", "tva_pct"]]
+    dep = figtools.series(SERIE_RATIOS)[["annee", "depenses_totales_MDT"]]
+    pib = figtools.series(SERIE_PIB).copy()
+    texte = pib["base"].str
+    pib["base_num"] = texte.extract(r"(1983|1997|2015)", expand=False).astype("Int64")
+    pib["presumee"] = texte.contains("présumée")
+    pib["minfin"] = texte.startswith("non rattachée")
+    d = pib.merge(comp, on="annee", how="inner").merge(dep, on="annee", how="left")
+    d["tva_sur_pib_pct"] = 100 * d["tva_MDT"] / d["pib_MD"]
     d["tva_sur_depenses_pct"] = 100 * d["tva_MDT"] / d["depenses_totales_MDT"]
-    return d
+    return d.sort_values(["annee", "base_num"], na_position="last").reset_index(drop=True)
+
+
+def _depenses():
+    """TVA en % des dépenses de l'État, une ligne par année : aucun PIB n'y intervient."""
+    comp = figtools.series(SERIE_COMPOSITION)[["annee", "tva_MDT"]]
+    dep = figtools.series(SERIE_RATIOS)[["annee", "depenses_totales_MDT"]]
+    d = comp.merge(dep, on="annee")
+    d = d[d["annee"] >= ANNEE_DEPENSES].dropna(subset=["depenses_totales_MDT"])
+    return d.assign(pct=100 * d["tva_MDT"] / d["depenses_totales_MDT"])
+
+
+def _nom_base(r) -> str:
+    if r.minfin:
+        return _lab("b_minfin")
+    if r.presumee:
+        return _lab("b_presumee")
+    return str(int(r.base_num))
+
+
+def _retro(valeur: str) -> str:
+    cle = {"oui": "r_oui", "non": "r_non"}.get(str(valeur), "r_np")
+    return _lab(cle)
 
 
 def table():
     d = _donnees()
-    cols = ["annee", "tva_sur_pib_pct", "tva_sur_depenses_pct",
-            "tva_sur_pib_cnat_pct", "tva_pct", "tva_MDT"]
-    w = d[cols].copy()
-    for c in ("tva_sur_pib_pct", "tva_sur_depenses_pct",
-              "tva_sur_pib_cnat_pct", "tva_pct"):
-        w[c] = w[c].round(2)
-    return w.rename(columns={
-        "annee": _lab("col_annee"),
-        "tva_sur_pib_pct": _lab("col_pib"),
-        "tva_sur_depenses_pct": _lab("col_dep"),
-        "tva_sur_pib_cnat_pct": _lab("col_pib_cnat"),
-        "tva_pct": _lab("col_rec"),
-        "tva_MDT": _lab("col_mdt"),
-    })
+    rec = figtools.series(SERIE_COMPOSITION).set_index("annee")["tva_pct"]
+    dep = _depenses().set_index("annee")["pct"]
+    lignes = []
+    for r in d.itertuples(index=False):
+        lignes.append({
+            _lab("col_annee"): int(r.annee),
+            _lab("col_base"): _nom_base(r),
+            _lab("col_pib"): round(r.pib_MD, 1),
+            _lab("col_retro"): _retro(r.retropole),
+            _lab("col_mdt"): r.tva_MDT,
+            _lab("col_ratio"): round(r.tva_sur_pib_pct, 2),
+            _lab("col_dep"): round(dep[r.annee], 2) if r.annee in dep.index else None,
+            _lab("col_rec"): round(rec[r.annee], 2),
+            _lab("col_src"): r.publication,
+        })
+    return pd.DataFrame(lignes)
 
 
 def prepare(generated: str | None = None):
-    d = _donnees()
     figtools.write_figdata(
-        table(), FIGDATA / "fig_tva_rendement.csv", SERIE_COMPOSITION, SERIE_RATIOS,
-        note=("rendement de la TVA en points de PIB et en part des dépenses de l'État, "
-              "1986-2025 ; rupture de série en 1988, les exercices antérieurs portant les "
-              "taxes sur le chiffre d'affaires remplacées par le code de 1988 ; les "
-              "dépenses totales ne sont publiées qu'à partir de 1990"),
+        table(), FIGDATA / "fig_tva_rendement.csv", *SERIES_RENDEMENT,
+        note=("rendement de la TVA en points du PIB de chaque base (1983, 1997, 2015), jamais "
+              "raccordées, et en part des dépenses de l'État, 1986-2025 ; rupture de série en "
+              "1988, les exercices antérieurs portant les taxes sur le chiffre d'affaires "
+              "remplacées par le code de 1988 ; les dépenses totales ne sont publiées qu'à "
+              "partir de 1990"),
         generated=generated)
-    return d
+    return _donnees()
 
 
 def fig_rendement():
     figtools.apply_lang_font()
     ft = figtools.fig_text
     d = _donnees()
-    avant = d[d["annee"] < ANNEE_TVA]
-    apres = d[d["annee"] >= ANNEE_TVA]
-    depenses = d[d["annee"] >= ANNEE_DEPENSES]
+    dep = _depenses()
+    annees = list(d["annee"].astype(int))
+    x0, x1 = min(annees), max(annees)
 
-    fig, ax1 = plt.subplots(figsize=(9.5, 5.2))
+    fig, ax1 = plt.subplots(figsize=(9.5, 6.0))
     ax2 = ax1.twinx()
 
     # La bande grise couvre les années où la rubrique mesure autre chose que la TVA.
-    ax1.axvspan(d["annee"].min() - 0.5, ANNEE_TVA - 0.5, color="#8b949e", alpha=0.13, lw=0)
-    ax1.axvline(ANNEE_TVA - 0.5, color="#57606a", lw=1.2, ls="--")
+    ax1.axvspan(x0 - 0.5, ANNEE_TVA - 0.5, color="#8b949e", alpha=0.13, lw=0)
+    ax1.axvline(ANNEE_TVA - 0.5, color=GRIS, lw=1.2, ls="--")
 
-    l0, = ax1.plot(avant["annee"], avant["tva_sur_pib_pct"], "o:", color="#57606a",
-                   lw=1.6, ms=4, label=ft(_lab("lg_avant")))
-    # Le vert est celui de la bande « TVA » de la figure de composition du chapitre : une
-    # même couleur pour un même impôt, d'une figure à l'autre. Le rouge de l'axe droit
-    # reprend la convention de la figure de l'impôt sur le revenu, où il porte déjà le
-    # rapport aux dépenses de l'État.
-    l1, = ax1.plot(apres["annee"], apres["tva_sur_pib_pct"], "o-", color="#2da44e",
-                   lw=2, ms=4, label=ft(_lab("lg_pib")))
-    l2, = ax2.plot(depenses["annee"], depenses["tva_sur_depenses_pct"], "s--",
-                   color="#d1242f", lw=1.8, ms=3, label=ft(_lab("lg_dep")))
+    # Les quatre grandes réformes : des bandes claires, sous les courbes.
+    for nom, debut, fin in REFORMES:
+        bande = ax1.axvspan(debut - 0.5, fin + 0.5, color=OR, alpha=0.12, lw=0, zorder=0)
+        figtools.infobulle(bande, _lab("ib_reforme", nom=nom, debut=debut, fin=fin))
+        ax1.annotate(nom, xy=((debut + fin) / 2, 1), xycoords=("data", "axes fraction"),
+                     xytext=(0, -3), textcoords="offset points", ha="center", va="top",
+                     fontsize=7.5, color=OR)
 
-    # L'annotation se place dans la moitié basse du cadre de gauche : les deux courbes
-    # occupent le haut sur toute la fin de période.
+    # Les courbes, base par base : un point par appel pour porter son infobulle.
+    ratio = {}
+    for base, st in BASES.items():
+        g = d[(d["base_num"] == base) & (d["annee"] >= ANNEE_TVA)]
+        ax1.plot(g["annee"], g["tva_sur_pib_pct"], color=st["couleur"], lw=1.8, zorder=2)
+        for r in g.itertuples(index=False):
+            pale = r.presumee
+            creux = str(r.retropole) == "oui"
+            p, = ax1.plot([r.annee], [r.tva_sur_pib_pct], st["marque"], ms=5,
+                          color=st["couleur"], alpha=0.4 if pale else 1.0,
+                          mfc="white" if creux else st["couleur"], mew=1.2, zorder=3)
+            figtools.infobulle(p, _lab("ib_ratio", a=int(r.annee), b=_nom_base(r),
+                                       r=f"{r.tva_sur_pib_pct:.2f}".replace(".", ","),
+                                       pib=f"{r.pib_MD:,.0f}".replace(",", " "),
+                                       tva=f"{r.tva_MDT:,.0f}".replace(",", " ")))
+        ratio[base] = g
+
+    # Avant la TVA : les taxes sur le chiffre d'affaires, en pointillé gris (base 1983 présumée).
+    avant = d[(d["base_num"] == 1983) & (d["annee"] < ANNEE_TVA)]
+    ax1.plot(avant["annee"], avant["tva_sur_pib_pct"], "o:", color=GRIS, lw=1.6, ms=4,
+             zorder=2)
+    for r in avant.itertuples(index=False):
+        p, = ax1.plot([r.annee], [r.tva_sur_pib_pct], "o", ms=4, color=GRIS, zorder=3)
+        figtools.infobulle(p, _lab("ib_ratio", a=int(r.annee), b=_nom_base(r),
+                                   r=f"{r.tva_sur_pib_pct:.2f}".replace(".", ","),
+                                   pib=f"{r.pib_MD:,.0f}".replace(",", " "),
+                                   tva=f"{r.tva_MDT:,.0f}".replace(",", " ")))
+
+    # Les valeurs du ministère non rattachées à une base : des losanges gris, seuls.
+    for r in d[d["minfin"]].itertuples(index=False):
+        p, = ax1.plot([r.annee], [r.tva_sur_pib_pct], "D", ms=5, mfc="white", mec=GRIS,
+                      mew=1.2, zorder=3)
+        figtools.infobulle(p, _lab("ib_minfin", a=int(r.annee),
+                                   r=f"{r.tva_sur_pib_pct:.2f}".replace(".", ","),
+                                   pib=f"{r.pib_MD:,.0f}".replace(",", " "),
+                                   tva=f"{r.tva_MDT:,.0f}".replace(",", " ")))
+
+    # Le rapport aux dépenses : aucune base, une seule courbe.
+    ax2.plot(dep["annee"], dep["pct"], "--", color=ROUGE, lw=1.6, zorder=2)
+    for r in dep.itertuples(index=False):
+        p, = ax2.plot([r.annee], [r.pct], "x", ms=4, color=ROUGE, zorder=3)
+        figtools.infobulle(p, _lab("ib_dep", a=int(r.annee),
+                                   r=f"{r.pct:.2f}".replace(".", ",")))
+
+    # Les changements de base : un trait vertical à la première année de la base suivante.
+    for annee, base in ((1997, 1997), (2010, 2015)):
+        figtools.marque_rupture(ax1, annee)
+        ax1.annotate(figtools.fig_text(_lab("rup_pib", b=base)), xy=(annee - 0.5, 0),
+                     xycoords=("data", "axes fraction"), xytext=(-4, 4),
+                     textcoords="offset points", ha="right", va="bottom", fontsize=7,
+                     color=GRIS)
+
     bas, haut = ax1.get_ylim()
-    y_texte = bas + 0.15 * (haut - bas)
+    y_texte = bas + 0.86 * (haut - bas)
     ax1.annotate(ft(_lab("rupture")), xy=(ANNEE_TVA - 0.5, y_texte),
-                 xytext=(ANNEE_TVA + 2.0, y_texte),
-                 fontsize=8, color="#57606a", va="center",
-                 arrowprops=dict(arrowstyle="->", color="#57606a", lw=1))
+                 xytext=(ANNEE_TVA + 1.0, y_texte), fontsize=8, color=GRIS, va="center",
+                 arrowprops=dict(arrowstyle="->", color=GRIS, lw=1))
 
-    ax1.set_ylabel(ft(_lab("y_pib")), color="#2da44e")
-    ax2.set_ylabel(ft(_lab("y_dep")), color="#d1242f")
+    ax1.set_ylabel(ft(_lab("y_pib")))
+    ax2.set_ylabel(ft(_lab("y_dep")), color=ROUGE)
     ax1.set_xlabel(ft(_lab("xlabel")))
+    ax1.set_xlim(x0 - 0.8, x1 + 0.8)
     ax1.set_title(ft(_lab("title")))
     ax1.grid(True, alpha=0.3)
-    ax1.legend(handles=[l0, l1, l2], loc="lower right", fontsize=8.5)
-    fig.tight_layout()
+
+    poignees = [Line2D([], [], color=st["couleur"], marker=st["marque"], ms=5, lw=1.8,
+                       label=ft(_lab("lg_base", b=base))) for base, st in BASES.items()]
+    poignees.append(Line2D([], [], color=BASES[1983]["couleur"], marker="o", ms=5, lw=0,
+                           alpha=0.4, label=ft(_lab("lg_presumee"))))
+    poignees.append(Line2D([], [], color=GRIS, marker="o", ms=4, lw=1.6, ls=":",
+                           label=ft(_lab("lg_avant"))))
+    poignees.append(Line2D([], [], color=GRIS, marker="D", mfc="white", ms=5, lw=0,
+                           label=ft(_lab("lg_minfin"))))
+    poignees.append(Line2D([], [], color=ROUGE, marker="x", ms=4, lw=1.6, ls="--",
+                           label=ft(_lab("lg_dep"))))
+    poignees.append(Patch(facecolor=OR, alpha=0.25, label=ft(_lab("lg_reforme"))))
+    poignees.append(Line2D([], [], color=GRIS, marker="o", mfc="white", ms=5, lw=0,
+                           label=ft(_lab("lg_plein"))))
+    fig.tight_layout(rect=(0, 0.2, 1, 1))
+    fig.legend(handles=poignees, loc="lower center", ncol=2, fontsize=7.5, frameon=False)
+    return fig
+
+
+# --- La frise des réformes ----------------------------------------------------------------------
+#
+# DES JALONS, PAS UN CALENDRIER COMPLET. Une ligne par règle de base ou par dispositif ; sur
+# chaque ligne, les ruptures que le registre du chapitre désigne ainsi (cercle plein) et la
+# naissance du dispositif dans le code de 1988 (carré). Un losange creux dit une loi dont la
+# date d'effet n'est pas établie (posée à l'année de la loi) ; un cercle creux, une rupture
+# dont le classement attend confirmation. Le relevé est tenu à la main, ligne à ligne, d'après
+# les registres du chapitre : `tva/frise-reformes.csv`.
+RELEVES = HERE.parent / "tva"
+FRISE = "tva-frise-reformes"
+PISTES_FRISE = ["Champ et taux", "Réductions et suspensions par décret", "Forfaits",
+                "Droit à déduction", "Crédit et restitution", "Régime suspensif",
+                "Retenue à la source", "Déclaration et facture"]
+FIN_FRISE = 2026
+
+
+def _sources_frise() -> list[str]:
+    import yaml
+    return list(yaml.safe_load(
+        (RELEVES / "frise-reformes.csv.yml").read_text(encoding="utf-8"))["sources"])
+
+
+figtools.register_provenance(
+    FRISE, titre="Les réformes de la TVA, 1988-2026 : jalons des registres du chapitre",
+    sources=_sources_frise(), unite="dates d'effet",
+    perimetre=("règles de base et dispositifs du chapitre : naissance dans le code de 1988 et "
+               "ruptures que les registres désignent"),
+    caveats=("Les jalons reprennent les registres du chapitre ; les étapes et les ajustements "
+             "n'y figurent pas. Deux lois ont une date d'effet non établie (forfaits de 1993, "
+             "retrait du tableau B prévu en 1996) : elles sont posées à l'année de la loi. Le "
+             "classement en rupture de 2014 (achats en espèces) et de 2016 (facture "
+             "électronique) attend confirmation."))
+_L.update({
+    "f_title": {"fr": "Les réformes de la TVA, 1988-2026", "ar": "إصلاحات الأداء على القيمة المضافة، 1988-2026"},
+    "f_periodes": {"fr": "Périodes du chapitre", "ar": "فترات الفصل"},
+    "f_naissance": {"fr": "naissance du dispositif dans le code de 1988",
+                    "ar": "نشأة الآلية في مجلة 1988"},
+    "f_rupture": {"fr": "rupture désignée par le registre", "ar": "قطيعة يعيّنها السجل"},
+    "f_non_etablie": {"fr": "date d'effet non établie (année de la loi)",
+                      "ar": "تاريخ النفاذ غير ثابت (سنة القانون)"},
+    "f_confirmer": {"fr": "rupture, classement à confirmer", "ar": "قطيعة، تصنيف قيد التأكيد"},
+})
+
+
+def _frise():
+    d = pd.read_csv(RELEVES / "frise-reformes.csv")
+    return d
+
+
+def table_frise():
+    d = _frise()
+    return pd.DataFrame({
+        "Ligne": d["piste"], "Nature": d["nature"], "État": d["etat"],
+        "Date d'effet": d["date"].fillna(d["debut"].astype("Int64").astype(str) + "-"
+                                         + d["fin"].astype("Int64").astype(str)),
+        "Libellé": d["etiquette"], "Ce que dit le registre": d["libelle"],
+        "Ancre du registre": d["ancre"], "Texte": d["texte"].fillna(""),
+        "Article": d["localisateur"].fillna("")})
+
+
+def fig_frise():
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    d = _frise()
+    n = len(PISTES_FRISE)
+    fig, ax = plt.subplots(figsize=(10.5, 5.6))
+    # Les périodes, en tête.
+    for k, r in enumerate(d[d["nature"] == "periode"].itertuples()):
+        x0, x1 = r.debut, r.fin + 1
+        bande = ax.barh([n], [x1 - x0], left=[x0], height=0.7, color=OR, alpha=0.30 + 0.1 * (k % 2),
+                        edgecolor="white", lw=1, zorder=2)
+        figtools.infobulle(bande[0], f"{r.etiquette} · {r.debut}-{r.fin} · {r.libelle}")
+        ax.text((x0 + x1) / 2, n, ft(r.etiquette if len(r.etiquette) < 4 else
+                                      r.etiquette.replace("mise en place", "mise en\nplace")),
+                ha="center", va="center", fontsize=7.5 if len(r.etiquette) < 4 else 6.8,
+                color="#1f2328", zorder=3)
+        # Une bande légère traverse la frise : la période se lit sur chaque ligne.
+        ax.axvspan(x0, x1, color=OR, alpha=0.06, lw=0, zorder=0)
+    ax.text(1987.1, n + 0.62, ft(_lab("f_periodes")), ha="left", va="center", fontsize=7.6, color=GRIS)
+    # Les jalons.
+    couleur = {"naissance": "#57606a", "rupture": "#bc4c00"}
+    haut = {}
+    for r in d[d["nature"] != "periode"].itertuples():
+        y = n - 1 - PISTES_FRISE.index(r.piste)
+        x = figtools.abscisse_date(r.date) if "-" in str(r.date) else float(r.date) + 0.5
+        marque = "s" if r.nature == "naissance" else "o"
+        style = dict(ms=7, color=couleur[r.nature], zorder=4, mew=1.4)
+        if r.etat == "date non établie":
+            marque, style["mfc"] = "D", "white"
+        elif r.etat == "classement à confirmer":
+            style["mfc"] = "white"
+        p, = ax.plot([x], [y], marque, **style)
+        figtools.infobulle(p, f"{str(r.date)[:4]} · {r.piste} · {r.etiquette} · {r.libelle} "
+                              f"({r.etat}) · {r.texte}, {r.localisateur}")
+        # Le libellé est posé une fois sur deux au-dessus et au-dessous, pour ne pas se chevaucher.
+        k = haut.get(y, 0)
+        haut[y] = k + 1
+        ax.annotate(ft(r.etiquette), xy=(x, y), xytext=(0, 8 if k % 2 == 0 else -9),
+                    textcoords="offset points", ha="center",
+                    va="bottom" if k % 2 == 0 else "top", fontsize=6.6, color="#1f2328")
+    ax.axvline(ANNEE_TVA + 0.5, color=GRIS, lw=0.8, ls=(0, (2, 2)), zorder=1)
+    ax.set_yticks(range(n))
+    ax.set_yticklabels([ft(p.replace("Réductions et suspensions par décret", "Réductions et suspensions\npar décret"))
+                        for p in reversed(PISTES_FRISE)], fontsize=7.6)
+    ax.tick_params(axis="y", length=0)
+    ax.set_xlim(1987, FIN_FRISE + 1)
+    ax.set_ylim(-0.7, n + 0.7)
+    ax.set_xticks(list(range(1990, 2030, 5)))
+    ax.grid(True, axis="x", alpha=0.3, zorder=0)
+    for cote in ("top", "right", "left"):
+        ax.spines[cote].set_visible(False)
+    ax.set_title(ft(_lab("f_title")), fontsize=10)
+    fig.subplots_adjust(left=0.22, right=0.985, top=0.93, bottom=0.2)
+    fig.legend(handles=[
+        Line2D([], [], marker="s", color="#57606a", ls="", ms=7, label=ft(_lab("f_naissance"))),
+        Line2D([], [], marker="o", color="#bc4c00", ls="", ms=7, label=ft(_lab("f_rupture"))),
+        Line2D([], [], marker="D", color="#bc4c00", mfc="white", ls="", ms=7,
+               label=ft(_lab("f_non_etablie"))),
+        Line2D([], [], marker="o", color="#bc4c00", mfc="white", ls="", ms=7,
+               label=ft(_lab("f_confirmer"))),
+    ], loc="lower center", ncol=2, fontsize=7.6, frameon=False)
+    return fig
+
+
+# --- La TVA dans les recettes indirectes de l'État --------------------------------------------
+#
+# AUCUN PIB. Quatre rubriques du ministère des Finances — TVA, droits de douane, droits de
+# consommation, « autres impôts indirects » — rapportées à leur somme. La rubrique « TVA » de
+# 1986 et 1987 porte les taxes sur le chiffre d'affaires que le code de 1988 remplace (bande
+# grise, comme pour le rendement). La rubrique 2.4 « Autres impôts indirects » du classeur a
+# trois lignes — fonds spéciaux du Trésor, fonds de concours, autres — que le classeur ne détaille
+# pas : son contenu n'est pas décrit ici.
+_INDIRECTS = (
+    ("tva_MDT", "i_tva", "#1a7f37"),
+    ("douanes_MDT", "i_douanes", "#bc4c00"),
+    ("consommation_MDT", "i_conso", "#8250df"),
+    ("autres_indirects_MDT", "i_autres", "#8b949e"),
+)
+
+_L.update({
+    "i_tva": {"fr": "TVA", "ar": "الأداء على القيمة المضافة"},
+    "i_douanes": {"fr": "Droits de douane", "ar": "المعاليم الديوانية"},
+    "i_conso": {"fr": "Droits de consommation", "ar": "المعلوم على الاستهلاك"},
+    "i_autres": {"fr": "Autres impôts indirects (rubrique du ministère : fonds spéciaux du Trésor, fonds de concours, autres)",
+                 "ar": "أداءات غير مباشرة أخرى (باب الوزارة: صناديق الخزينة الخاصة، صناديق المساهمة، أخرى)"},
+    "i_title": {"fr": "La TVA dans les recettes indirectes de l'État, 1986-2025",
+                "ar": "الأداء على القيمة المضافة ضمن المداخيل غير المباشرة للدولة، 1986-2025"},
+    "i_y": {"fr": "En % des recettes indirectes", "ar": "% من المداخيل غير المباشرة"},
+    "i_total": {"fr": "Recettes indirectes (MDT)", "ar": "المداخيل غير المباشرة (م.د)"},
+    "i_ib": {"fr": "{a} · {nom} : {r} % des recettes indirectes ({v} MD sur {t} MD)",
+             "ar": "{a} · {nom} : {r} % من المداخيل غير المباشرة ({v} م.د من {t} م.د)"},
+})
+
+
+def _indirects():
+    d = figtools.series(SERIE_COMPOSITION).copy()
+    cols = [c for c, _, _ in _INDIRECTS]
+    d["indirects_MDT"] = d[cols].sum(axis=1)
+    for c in cols:
+        d[c.replace("_MDT", "_part")] = 100 * d[c] / d["indirects_MDT"]
+    return d
+
+
+def table_indirects():
+    d = _indirects()
+    sortie = {_lab("col_annee"): d["annee"].astype(int)}
+    for c, cle, _ in _INDIRECTS:
+        sortie[f"{_lab(cle)} (%)"] = d[c.replace("_MDT", "_part")].round(2)
+    sortie[_lab("i_total")] = d["indirects_MDT"].round(1)
+    return pd.DataFrame(sortie)
+
+
+def fig_indirects():
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    d = _indirects()
+    fig, ax = plt.subplots(figsize=(9.5, 5.0))
+    annees = d["annee"].astype(int).tolist()
+    bas = [0.0] * len(d)
+    for c, cle, couleur in _INDIRECTS:
+        part = d[c.replace("_MDT", "_part")].tolist()
+        haut = [b + p for b, p in zip(bas, part)]
+        ax.fill_between(annees, bas, haut, color=couleur, alpha=0.85, lw=0.6,
+                        edgecolor="white", label=ft(_lab(cle)), zorder=2)
+        # Un point par année, sur le bord supérieur de la bande, pour porter l'infobulle.
+        for a, b, h, p, v, t in zip(annees, bas, haut, part, d[c], d["indirects_MDT"]):
+            m, = ax.plot([a], [(b + h) / 2], "o", ms=3.5, alpha=0, zorder=3)
+            figtools.infobulle(m, _lab("i_ib", a=a, nom=_lab(cle),
+                                       r=f"{p:.1f}".replace(".", ","),
+                                       v=f"{v:,.0f}".replace(",", " "),
+                                       t=f"{t:,.0f}".replace(",", " ")))
+        bas = haut
+    ax.axvspan(annees[0] - 0.5, ANNEE_TVA - 0.5, color="white", alpha=0.55, lw=0, zorder=4)
+    ax.axvline(ANNEE_TVA - 0.5, color=GRIS, lw=1.2, ls="--", zorder=5)
+    ax.annotate(ft(_lab("rupture")), xy=(ANNEE_TVA - 0.5, 50), xytext=(ANNEE_TVA + 0.8, 50),
+                fontsize=8, color="black", va="center", zorder=6,
+                bbox=dict(boxstyle="round,pad=0.25", fc="white", ec="none", alpha=0.8),
+                arrowprops=dict(arrowstyle="->", color=GRIS, lw=1))
+    ax.set_xlim(annees[0], annees[-1])
+    ax.set_ylim(0, 100)
+    ax.set_ylabel(ft(_lab("i_y")))
+    ax.set_xlabel(ft(_lab("xlabel")))
+    ax.set_title(ft(_lab("i_title")))
+    ax.grid(True, axis="y", alpha=0.3, zorder=0)
+    fig.tight_layout(rect=(0, 0.17, 1, 1))
+    fig.legend(*ax.get_legend_handles_labels(), loc="lower center", ncol=2, fontsize=8,
+               frameon=False)
     return fig
 
 

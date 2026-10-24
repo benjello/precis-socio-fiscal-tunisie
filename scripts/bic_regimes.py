@@ -6,8 +6,10 @@ Il compare, pour un chiffre d'affaires donné, trois façons d'être imposé :
   - le RÉGIME FORFAITAIRE : un impôt lu sur le chiffre d'affaires seul. Ce n'est PAS un
     barème par tranche (`taux_bareme.montant_du`) : l'annexe II du code (1990-2010) fixe un
     MONTANT FORFAITAIRE pour la tranche où tombe le chiffre d'affaires, sans fraction par
-    tranche ; les articles 44 *ter* (depuis 2011) fixent un taux avec plancher, puis un montant
-    fixe jusqu'à 10 000 D et un taux au-delà ;
+    tranche ; l'article 44 *ter* fixe, de 2011 à 2015, un taux avec plancher, puis, depuis 2016,
+    un montant fixe jusqu'à 10 000 D de chiffre d'affaires et, au-delà, ce montant augmenté de
+    3 % de la FRACTION du chiffre d'affaires qui dépasse 10 000 D (note commune n° 27/2016,
+    p. 5 et exemples p. 11-12) ;
   - l'IMPÔT FORFAITAIRE OPTIONNEL : un montant fixe (1 500 D de 1999 à 2010 ; 4 000 ou 5 000 D
     selon la classe depuis 2026) ;
   - le RÉGIME RÉEL : le barème de l'impôt sur le revenu appliqué au bénéfice, sans que l'impôt
@@ -16,9 +18,11 @@ Il compare, pour un chiffre d'affaires donné, trois façons d'être imposé :
 
 Un forfait est une liste de MORCEAUX `(bas, haut, montant, taux, plancher)` : pour un chiffre
 d'affaires `ca` tel que `bas < ca <= haut` (comme les tableaux du précis : « 3 000 à 6 000 »,
-la tranche s'ouvre à 3 000,001), l'impôt est `montant` si `taux` est vide, sinon
-`max(plancher, taux × ca)`. Au-delà du dernier `haut`, le régime n'est plus ouvert :
-`None`, jamais 0.
+la tranche s'ouvre à 3 000,001), l'impôt est `montant` si `taux` est vide ; si `taux` est
+donné sans `montant`, `max(plancher, taux × ca)` ; si `montant` et `taux` sont donnés, le
+montant fixe du premier étage augmenté du taux sur la fraction du chiffre d'affaires au-dessus
+de `bas` : `montant + taux × (ca − bas)`. Au-delà du dernier `haut`, le régime n'est plus
+ouvert : `None`, jamais 0.
 
 Un minimum d'impôt est `(forme, taux, montant)` :
   - « plafonne » (1990-2005) : `min(taux × ca, montant)` — le texte dit que le minimum « ne peut
@@ -52,6 +56,8 @@ def impot_forfait(morceaux: list[Morceau], ca: float) -> float | None:
         if bas < ca <= haut:
             if _vide(taux):
                 return float(montant)
+            if not _vide(montant):  # montant fixe, puis taux sur la fraction au-delà de `bas`
+                return float(montant) + float(taux) * (ca - bas)
             return max(0.0 if _vide(plancher) else float(plancher), float(taux) * ca)
     return None
 

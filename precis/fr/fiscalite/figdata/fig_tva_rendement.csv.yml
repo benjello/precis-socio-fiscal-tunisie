@@ -1,5 +1,5 @@
-series: [recettes-fiscales-composition, irpp-ratios]
-sources: [minfin-recettes-fiscales, minfin-indicateurs-fp]
-fiches: [sources/minfinances-recettes-fiscales.md]
-caveats: [sources/minfinances-recettes-fiscales.md]
-generated: 2026-09-15
+series: [recettes-fiscales-composition, irpp-ratios, pib-courant-par-base]
+sources: [minfin-recettes-fiscales, minfin-indicateurs-fp, ins-cnat-2015, ins-pib-base-2015-2010-2020, undata-sna]
+fiches: [sources/minfinances-recettes-fiscales.md, docs/pib-courant-par-base.md]
+caveats: [sources/minfinances-recettes-fiscales.md, TROIS BASES, JAMAIS RACCORDÉES : filtrer `base`, ne jamais tracer d'un trait d'une base à l'autre. L'écart entre bases n'est pas constant (voir `pib-courant-recouvrements`). `retropole` : oui pour la base 2015 en 2010-2014 et la base 1997 en 1997-2004, non pour une année publiée dans une édition de sa base, « non précisé par la source » pour la base 1983 et le ministère. Aucune base dite avant 1992 ; rien en base 1997 après 2017 ni en base 2015 avant 2010. Le classeur de l'INS est hors git. Voir docs/pib-courant-par-base.md.]
+generated: 2026-10-24

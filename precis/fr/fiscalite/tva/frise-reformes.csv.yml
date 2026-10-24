@@ -1,0 +1,57 @@
+# Manifeste du relevé « frise des réformes de la TVA, 1988-2026 ».
+#
+# Fichier TENU À LA MAIN, lu par figures/tva.py (figure `fig-tva-frise` de la « Vue d'ensemble »
+# du chapitre « La taxe sur la valeur ajoutée »).
+#
+# D'OÙ VIENNENT LES VALEURS. Des registres du chapitre (_tva.qmd), dont chaque jalon reprend
+# une ligne, désignée par son ancre `r-tva-…` dans la colonne `ancre` ; les périodes sont celles
+# des sections du chapitre (`sec-tva-…`). Rien n'y est ajouté : ni date, ni texte, ni portée
+# qu'un registre ne porte déjà. RÈGLE DE SÉLECTION : une rupture par dispositif et par date — les
+# lignes que le registre d'un dispositif classe « rupture », une seule quand plusieurs lignes
+# jumelles disent la même loi à la même date (restitution de 1999 fondue dans le gel de 1998 ;
+# exonérations de 2016 dans le champ de 2016 ; article 40 de la loi de finances pour 1996 sur la
+# ligne des réductions) — et la naissance de chaque dispositif dans le code de 1988. Le registre
+# des régimes par catégorie n'est pas repris ; les étapes et les ajustements restent aux
+# registres.
+#
+# CE QUE LES COLONNES DISENT.
+#   - `nature` : periode (bande), naissance (le dispositif existe dans le code de 1988) ou
+#     rupture (classée ainsi par le registre) ;
+#   - `etat` : « établi » (date d'effet donnée par le texte) ; « date non établie » (la loi
+#     est connue, sa date d'effet ne l'est pas : le jalon est posé à l'année de la loi, d'un
+#     signe distinct) ; « classement à confirmer » (le registre classe le jalon en rupture,
+#     classement que la relecture n'a pas encore confirmé : la figure le montre d'un signe
+#     distinct) ;
+#   - `debut` et `fin` : années, pour les périodes ; `date` : date d'effet ISO, ou année seule
+#     quand la date n'est pas établie.
+
+format: long
+cle_de_ligne: [piste, nature, etiquette]
+
+colonnes:
+  piste: ligne de la frise (périodes du chapitre, ou règle de base, ou dispositif)
+  nature: periode, naissance ou rupture
+  etat: établi, date non établie, ou classement à confirmer
+  debut: première année de la période
+  fin: dernière année de la période
+  date: date d'effet (AAAA-MM-JJ) ou année
+  etiquette: libellé court porté sur la frise
+  libelle: ce que le registre dit du changement, avant → après
+  ancre: ancre de la ligne de registre (ou de la section, pour une période)
+  texte: clé de citation (résout dans precis/fr/fiscalite/references.json)
+  localisateur: article du texte
+
+sources:
+  - loi-88-61-tva
+  - lf-1993
+  - lf-1995
+  - lf-1996
+  - lf-1998
+  - lf-1999
+  - lf-2010
+  - lf-2014
+  - lf-2015
+  - lf-2016
+  - loi-2006-80-reduction-taux
+  - loi-avantages-fiscaux-2017
+  - dl2021-21-lf2022

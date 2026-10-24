@@ -52,14 +52,26 @@ repliés au lieu de deux. Reste à trancher ou à faire :
   logement et des médicaments, numéro 48 du tableau A) est en cinq puces sous le tableau, et son
   registre (`tbl-tva-trajectoires-textes`, 19 ancres) est déplacé sous lui, inchangé. « Les
   dispositifs qui aménagent la taxe » n'a plus que deux sous-sections ;
-- **frise des réformes** (`TODO (rédacteur)` dans « En bref ») : demande une petite série de
-  jalons à verser (plan, § 6.0) ;
-- **quatre clés à verser par le bibliographe** (entrées CSL au § 6 de la note des objets) :
-  `minfin-plf-2018` (exposés des motifs du projet de loi de finances pour 2018 — le paragraphe
-  de la réforme de 2016-2018 est écrit, attribué, sans appel de citation ; la prévision de
-  313 MD par an n'est pas écrite), `dgelf-nc-2023-05` (note commune n° 5/2023, professions non
-  commerciales), `rectificatif-lf-1993` (JORT n° 33 du 4 mai 1993), `minfin-plf-2014`
-  (exposé des motifs sur les paiements en espèces : à relire à l'image, non écrit) ;
+- **frise des réformes : faite le 24 octobre 2026** (`#fig-tva-frise`, « Vue d'ensemble » ;
+  `figures/tva.py`, relevé tenu à la main `tva/frise-reformes.csv` avec son manifeste). Jalons : les
+  six périodes du chapitre, la naissance de six dispositifs dans le code de 1988 et 15 ruptures
+  retenues selon une règle (une par dispositif et par date, lignes jumelles fondues, registre des
+  catégories écarté ; règle au manifeste), chacune avec son ancre `r-tva-…`, son texte et son article. Deux lois
+  à date d'effet non établie (forfaits de 1993, retrait du tableau B de 1996) : losange creux,
+  posées à l'année de la loi ; 2014 (achats en espèces) et 2016 (facture électronique) : cercle
+  creux, classement à confirmer. Reste : libellés arabes de la frise (relecteur-ar), étapes et
+  ajustements non tracés (ils restent aux registres) ;
+- **quatre clés versées le 24 octobre 2026** (`precis/{fr,ar}/fiscalite/references.json`, pièces
+  relues ; `docs/notes/biblio-a-rapatrier.md`) : `minfin-plf-2018` (exposés des motifs des art. 28 et 45
+  du projet, lus à l'image p. 91-92 et 146-149 ; cité au paragraphe de la réforme de 2016-2018,
+  avec les taux des pays voisins que l'exposé donne ; la prévision de 313 MD par an reste non
+  écrite : chiffre sans vue d'évolution, `TODO (rédacteur)` maintenu), `dgi-nc-5-2023` (note
+  commune n° 5/2023 ; la note préparatoire la nommait `dgelf-nc-2023-05`, la clé suit la forme des
+  autres notes communes ; citée p. 1, 2 et 4, avec `dgelf-code-tva-2021`, art. 7, numéro 3, p. 23, pour
+  la liste des professions), `rectificatif-lf-1993` (JORT n° 33 du 4 mai 1993, p. 579, lu à l'image en
+  français et en arabe ; cité à la ligne de 1993 du registre des forfaits), `minfin-plf-2014`
+  (exposé des motifs des art. 34 et 35 du projet, lu à l'image, p. 77 imprimée ; une phrase au
+  paragraphe des achats en espèces). Reste : les verser dans Zotero ;
 - **classements à confirmer** : 2014 (achats en espèces) et 2016 (facture électronique) sont
   portés « rupture » dans leurs registres, que le plan donnait pour « possibles » ;
   `tbl-tva-suspension-sectorielle` garde sa forme d'origine, sans colonne « Portée » ;
@@ -75,9 +87,15 @@ repliés au lieu de deux. Reste à trancher ou à faire :
   catégorie et tableaux annexés » ; contenu des art. 46 et 47 de la loi de finances pour 2026 à
   détailler au registre `tbl-tva-taux-perimetre` (relevé en annexe, bloc de la loi de finances
   pour 2026) ;
-- **longue période** : aucune figure nouvelle ; restent la figure du rendement par segments de
-  base du PIB avec les réformes marquées, la place dans la fiscalité indirecte, la taxe
-  rapportée à la consommation privée, le partage intérieur/importation (plan, § 6.1 à 6.6) ;
+- **longue période : faite en partie le 24 octobre 2026.** `#fig-tva-rendement` est tracée base par
+  base (1983, 1997, 2015, série `pib-courant-par-base`, jamais raccordées ; années à deux points ;
+  1988-1991 en base 1983 présumée ; valeurs du ministère non rattachées en losanges ; changements
+  de base marqués ; quatre réformes en bandes ; rapport aux dépenses de l'État inchangé) et le
+  texte dit la base de chaque pourcentage ; `#fig-tva-indirects` (part de la TVA, des droits de
+  douane, des droits de consommation et des autres recettes indirectes, 1986-2025, sans PIB).
+  Restent : la taxe rapportée à la consommation privée (série à verser), le partage
+  intérieur/importation (aucune source identifiée), la décomposition des dépenses fiscales de TVA
+  par forme (plan, § 6.3, 6.4 et 6.6) ;
 - **domicile unique des références étendu à tout le chapitre** (7 octobre 2026, branche de test
   `chantier/citations-domicile-unique`, non commité) : `.domicile-unique` sur le titre du chapitre ;
   176 appels juridiques retirés du fil, remplacés par 164 liens `#r-tva-…` vers les lignes de
@@ -147,7 +165,7 @@ mais que la couche texte testée est vide. Un texte absent du JORT en français 
 
 - **Figure du taux d'imposition des BIC selon le régime : faite (19 octobre 2026), `#sec-irpp-forfait-taux`.** Dix panneaux (1990 à 2026), chiffres d'affaires en dinars de 2025, forfait, impôt forfaitaire optionnel (1999-2010, 2026) et régime réel à τ = 25 % et 10 %. Séries écrites par `scripts/generate_forfait_bic_series.py` dans `precis/_seriescache/` (`bic-forfait-tarifs`, `bic-minimum-impot`, `bic-hypotheses-benefice`), figure `precis/fr/fiscalite/figures/bic_regimes.py`, calcul testé `tests/test_bic_regimes.py`. Reste :
   - **paramètres du forfait en amont** (openfisca-tunisia#476) : remplacer le générateur par une lecture de l'arbre (TODO modéliste dans la section) ;
-  - **3 % de l'art. 44 *ter* (LF 2016, art. 17)** lus sur le chiffre d'affaires entier ; à confirmer par la note commune n° 27/2016, absente du corpus local (documentaliste) ;
+  - **3 % de l'art. 44 *ter* (LF 2016, art. 17) : corrigé le 24 octobre 2026.** La note commune n° 27/2016 est au corpus local (`dgi-nc-27-2016`, URL jibaya.tn vérifiée, SHA-256 identique) : le 3 % s'applique à la seule fraction du chiffre d'affaires au-dessus de 10 000 D, en plus du montant fixe (exemples p. 11-12 : 150 + 3 % × 75 500 = 2 415 D ; 75 + 3 % × 60 000 = 1 875 D). Le calcul de la figure comptait 3 % du chiffre entier : il est corrigé (`scripts/bic_regimes.py`, `generate_forfait_bic_series.py`, `tests/test_bic_regimes.py`), la série `bic-forfait-tarifs` régénérée (huit lignes), les deux paragraphes et le tableau des états du droit repris (2026 : option comparée au forfait à 50 000 et 100 000 D, croisements à 80 000 et 86 667 D) ;
   - **plafond d'accès de l'option de 1 500 D (LF 1999, art. 61)** : le texte donne 100 000 D comme seuil de relèvement ; tracé jusqu'à 100 000 D, usage de l'administration à vérifier ;
   - **indice des prix de 2026 non publié** : panneau 2026 au niveau de 2025 ; à reprendre à la publication de l'indice ;
   - **activités et zones** : une courbe par activité en 1990 et 2011-2015, tireté pour les zones communales ; le plafond des services (12 000 D en 1993, 50 000 D en 2011-2015) est un point ; les annexes III (forfait simplifié 1992-1998), assises sur des indices d'emplois et de zones, ne sont pas tracées ;
@@ -187,7 +205,7 @@ ouverts, avec l'état des sources :
 - **dates d'effet à relire au fascicule** : lois de finances pour 1991, 1992, 1993 et 1994
   (art. 50, 66, 68, 114, 31-32 : scans locaux, à relire à l'image — seule la mensualisation
   de 1994 est écrite au chapitre, sans date ni citation littérale), loi n° 2007-69 (art. 10
-  et 11 : article final à lire, JORT n° 104 de 2007, présent sur pist.tn), loi de finances
+  et 11 : lue le 24 octobre 2026 à l'image et par OCR, JORT n° 104 de 2007, p. 4337-4356 — aucune clause d'application pour ces articles, l'art. 31 ne datant que les art. 27 à 29 et l'art. 49 portant la seule formule d'exécution ; reste la date de dépôt du fascicule au gouvernorat de Tunis, non relevée), loi de finances
   complémentaire pour 2014 (art. 27) ;
 - **délai de visa de la restitution entre 1998 et 2001** : l'art. 41 de la LF 1998 récrit
   l'alinéa sans délai, le CDPF ne fixe 90 et 30 jours qu'au 1^er^ janvier 2002 ; droit
@@ -302,12 +320,12 @@ droit à des dates repères** (`ot.ecrire_dates_reperes` → `tables/<nom>_dates
 `_seriescache/<nom>.csv` qu'écrit `ot.ecrire_serie_parametres`), avec une lecture en dinars
 constants pour les montants (indice `ipc-longue-periode`, jusqu'en 2023). Appliqués au volume
 fiscal : la figure des taux de la TVA passe par le composant, image inchangée, et son tableau
-aux dates repères est engendré (`tva_taux_dates_reperes.md`) mais **pas encore inséré** dans
-`_tva.qmd`, en réécriture sur une autre branche ; les déductions pour charges de famille de
+aux dates repères est engendré (`tva_taux_dates_reperes.md`) et inséré dans `_tva.qmd`
+(`@tbl-tva-taux-reperes`) ; les déductions pour charges de famille de
 l'impôt sur le revenu ont les deux (`@tbl-charges-famille-reperes`,
 `@fig-irpp-deductions-famille`). Restent :
 
-- **insérer** `tva_taux_dates_reperes.md` dans `_tva.qmd` quand sa réécriture est fusionnée ;
+- *(fait : `tva_taux_dates_reperes.md` est inséré dans `_tva.qmd`, `@tbl-tva-taux-reperes` ; vérifié le 24 octobre 2026)* ;
 - **droits de consommation** : le tarif pétrolier n'a reçu ni l'un ni l'autre. Sa série de
   1988, 1991 et 1999 a des trous que le chapitre connaît — décret n° 94-816, date d'effet non
   établie ; décret n° 98-952, au 6 mai 1998 ; changements postérieurs à 1999, non datés — :
@@ -4292,7 +4310,12 @@ généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_pa
 13 non conformes. À mettre en conformité **dans des PR distinctes, une par volume** ; rien n'a
 été touché dans les volumes ici.
 
-- **Fiscalité — 8 emplois non conformes.** Les quatre figures de rendement (`figures/irpp.py`,
+- **Fiscalité — 6 emplois non conformes sur 8 depuis le 24 octobre 2026** (la figure de rendement de
+  la TVA est tracée base par base, `#fig-tva-rendement`, et sa phrase chiffrée reprise ; reste le
+  même travail pour les figures de `irpp.py`, `impot_societes.py` et `droits_consommation.py` et
+  les phrases de `_impot_revenu.qmd`, `_impot_societes.qmd` et `_droits_consommation.qmd`, sur le
+  modèle de `figures/tva.py`). Texte
+  de l'inventaire d'origine : les quatre figures de rendement (`figures/irpp.py`,
   `impot_societes.py`, `tva.py`, `droits_consommation.py`) rapportent les recettes au PIB du
   ministère des Finances sans dire sa base ni tracer ses changements de niveau (1997, 2002, 2005,
   2010) ; la légende de l'impôt sur les sociétés présente l'écart de 5 % de 2012-2014 entre ses
@@ -4505,7 +4528,7 @@ matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
   (art. 45) et 2021 (art. 20) portent les lignes 22-03 à 22-08 dans le tableau de la loi
   n° 88-62 : texte lisible dans le corpus (LF 2016 : édition française pp. 3150-3151 et édition arabe p. 3609 ; LF 2018
   pp. 4282-4283 et LF 2021 p. 3130, éditions françaises). Les deux éditions de la LF 2016 diffèrent pour les
-  vins mousseux classés (4,000 D français, 24,000 arabe) : à confirmer. Reste à lire la doctrine administrative (notes communes sur
+  vins mousseux classés (4,000 D français, 24,000 arabe) : l'édition 2019 du code (française, p. 79 et 98, citée au chapitre) donne 24,000 D, mais reprend le tableau consolidé et non le fascicule ; seul un second exemplaire du JORT n° 104 de 2015 en français (absent du corpus local, non servi par pist.tn) trancherait la coquille. Reste à lire la doctrine administrative (notes communes sur
   les art. 44 de la LF 2016 et 45 de la LF 2018) pour savoir si l'annexe du décret de 2015 est
   abrogée, sans objet ou laissée en coexistence. TODO au chapitre.
 - **Lois de finances 2022 à 2026.** Rubriques des textes indexés (`jort_cache`) : aucune ne

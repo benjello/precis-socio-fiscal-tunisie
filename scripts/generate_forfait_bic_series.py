@@ -129,8 +129,10 @@ def _lignes_tarifs() -> list[dict]:
         L.append(dict(etat=etat, regime="forfait", activite="toutes", zone=zone, bas=0.0,
                       haut=10_000.0, montant=fixe, taux=None, plancher=None,
                       plafond_services=None, texte=texte, cle=cle))
+        # Deuxième étage : le montant fixe, augmenté de 3 % de la fraction au-dessus de 10 000 D
+        # (note commune n° 27/2016, p. 5 et exemples p. 11-12).
         L.append(dict(etat=etat, regime="forfait", activite="toutes", zone=zone, bas=10_000.0,
-                      haut=100_000.0, montant=None, taux=0.03, plancher=None,
+                      haut=100_000.0, montant=fixe, taux=0.03, plancher=None,
                       plafond_services=None, texte=texte, cle=cle))
 
     def option_fixe(etat, zone, montant_bas, montant_haut, texte, cle):
@@ -165,7 +167,8 @@ def _lignes_tarifs() -> list[dict]:
                           CLE[etat])
             taux_plancher(etat, "autres", zone, 0.025, plancher, 100_000.0, texte, CLE[etat],
                           plafond_services=50_000.0)
-    # 2016, 2018, 2023 : montant fixe jusqu'à 10 000 D, 3 % au-delà, plafond de 100 000 D.
+    # 2016, 2018, 2023 : montant fixe jusqu'à 10 000 D, puis ce montant plus 3 % de la fraction
+    # au-dessus de 10 000 D, plafond de 100 000 D.
     for etat, (hors, communale), texte in ((2016, (75.0, 150.0), T_2016),
                                           (2018, (100.0, 200.0), T_2018),
                                           (2023, (200.0, 400.0), T_2023)):

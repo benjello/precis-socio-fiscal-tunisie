@@ -1,8 +1,8 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-19
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-24
 # séries (tunisia_data) : bic-forfait-tarifs, bic-minimum-impot, bic-hypotheses-benefice, irpp-bareme, ipc-longue-periode, bct-ipc-base2015
 # sources (citation) : @code-irpp-is-1990, @lf-1993, @lf-1999, @lf-2006, @lf-2011, @lf-2014, @lf-2016, @lf-2018, @lf-2023, @lf-2026, @lf-1998, @lf-2017, @lf-2025, @bct-ra, @ins-annuaire
 # fiches : sources/bct-archives.md
-# méthode/hypothèses : Le tarif de 2016 à 2023 est lu comme 3 % du chiffre d'affaires entier au-dessus de 10 000 D, d'après le texte de l'article 17 de la loi de finances pour 2016., Le taux de 0,2 % de 2014 vise le chiffre d'affaires local ; les exonérations (entreprises nouvelles, zones de développement régional) ne sont pas reprises., Le taux de 10 % n'est fixé par aucun texte., Le taux moyen est celui du barème, barème appliqué par tranche, avant déductions pour charges de famille, minimum d'impôt et régimes dérogatoires., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# méthode/hypothèses : Le tarif de 2016 à 2026 est lu comme le montant fixe, augmenté de 3 % de la fraction du chiffre d'affaires au-dessus de 10 000 D, comme l'applique la note commune n° 27/2016 (p. 5 ; exemples p. 11-12). Cette note ne commente que le tarif de 2016 : les lois de 2018 et de 2023 ne modifient que le montant fixe, et l'application du même mode de calcul à ces états prolonge la note., Le taux de 0,2 % de 2014 vise le chiffre d'affaires local ; les exonérations (entreprises nouvelles, zones de développement régional) ne sont pas reprises., Le taux de 10 % n'est fixé par aucun texte., Le taux moyen est celui du barème, barème appliqué par tranche, avant déductions pour charges de famille, minimum d'impôt et régimes dérogatoires., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
 # note : Bénéfices industriels et commerciaux : impôt rapporté au chiffre d'affaires selon le régime, en fonction du chiffre d'affaires en dinars de 2025, état du droit de 1990 à 2026
 Réforme,Régime,Chiffre d'affaires (D de 2025),Chiffre d'affaires (D courants),Impôt (D courants),Impôt (D de 2025),Impôt rapporté au chiffre d'affaires (%)
 1990,"forfait, consommation sur place",5000.0,973,0.0,0.0,0.0
@@ -231,20 +231,20 @@ Réforme,Régime,Chiffre d'affaires (D de 2025),Chiffre d'affaires (D courants),
 2014,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,76623,1057.46,2070.12,1.38
 2016,"forfait, hors zones communales",5000.0,2774,75.0,135.17,2.7
 2016,"forfait, hors zones communales",10000.0,5549,75.0,135.17,1.35
-2016,"forfait, hors zones communales",20000.0,11098,332.93,600.0,3.0
-2016,"forfait, hors zones communales",30000.0,16646,499.39,900.0,3.0
-2016,"forfait, hors zones communales",50000.0,27744,832.31,1500.0,3.0
-2016,"forfait, hors zones communales",75000.0,41616,1248.47,2250.0,3.0
-2016,"forfait, hors zones communales",100000.0,55488,1664.63,3000.0,3.0
-2016,"forfait, hors zones communales",150000.0,83231,2496.94,4500.0,3.0
+2016,"forfait, hors zones communales",20000.0,11098,107.93,194.5,0.97
+2016,"forfait, hors zones communales",30000.0,16646,274.39,494.5,1.65
+2016,"forfait, hors zones communales",50000.0,27744,607.31,1094.5,2.19
+2016,"forfait, hors zones communales",75000.0,41616,1023.47,1844.5,2.46
+2016,"forfait, hors zones communales",100000.0,55488,1439.63,2594.5,2.59
+2016,"forfait, hors zones communales",150000.0,83231,2271.94,4094.5,2.73
 2016,"forfait, zones communales",5000.0,2774,150.0,270.33,5.41
 2016,"forfait, zones communales",10000.0,5549,150.0,270.33,2.7
-2016,"forfait, zones communales",20000.0,11098,332.93,600.0,3.0
-2016,"forfait, zones communales",30000.0,16646,499.39,900.0,3.0
-2016,"forfait, zones communales",50000.0,27744,832.31,1500.0,3.0
-2016,"forfait, zones communales",75000.0,41616,1248.47,2250.0,3.0
-2016,"forfait, zones communales",100000.0,55488,1664.63,3000.0,3.0
-2016,"forfait, zones communales",150000.0,83231,2496.94,4500.0,3.0
+2016,"forfait, zones communales",20000.0,11098,182.93,329.67,1.65
+2016,"forfait, zones communales",30000.0,16646,349.39,629.67,2.1
+2016,"forfait, zones communales",50000.0,27744,682.31,1229.67,2.46
+2016,"forfait, zones communales",75000.0,41616,1098.47,1979.67,2.64
+2016,"forfait, zones communales",100000.0,55488,1514.63,2729.67,2.73
+2016,"forfait, zones communales",150000.0,83231,2346.94,4229.67,2.82
 2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,2774,300.0,540.66,10.81
 2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,5549,300.0,540.66,5.41
 2016,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,11098,300.0,540.66,2.7
@@ -263,20 +263,20 @@ Réforme,Régime,Chiffre d'affaires (D de 2025),Chiffre d'affaires (D courants),
 2016,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,83231,1189.63,2143.95,1.43
 2018,"forfait, hors zones communales",5000.0,3140,100.0,159.24,3.18
 2018,"forfait, hors zones communales",10000.0,6280,100.0,159.24,1.59
-2018,"forfait, hors zones communales",20000.0,12560,376.79,600.0,3.0
-2018,"forfait, hors zones communales",30000.0,18840,565.19,900.0,3.0
-2018,"forfait, hors zones communales",50000.0,31399,941.98,1500.0,3.0
-2018,"forfait, hors zones communales",75000.0,47099,1412.97,2250.0,3.0
-2018,"forfait, hors zones communales",100000.0,62799,1883.96,3000.0,3.0
-2018,"forfait, hors zones communales",150000.0,94198,2825.94,4500.0,3.0
+2018,"forfait, hors zones communales",20000.0,12560,176.79,281.52,1.41
+2018,"forfait, hors zones communales",30000.0,18840,365.19,581.52,1.94
+2018,"forfait, hors zones communales",50000.0,31399,741.98,1181.52,2.36
+2018,"forfait, hors zones communales",75000.0,47099,1212.97,1931.52,2.58
+2018,"forfait, hors zones communales",100000.0,62799,1683.96,2681.52,2.68
+2018,"forfait, hors zones communales",150000.0,94198,2625.94,4181.52,2.79
 2018,"forfait, zones communales",5000.0,3140,200.0,318.48,6.37
 2018,"forfait, zones communales",10000.0,6280,200.0,318.48,3.18
-2018,"forfait, zones communales",20000.0,12560,376.79,600.0,3.0
-2018,"forfait, zones communales",30000.0,18840,565.19,900.0,3.0
-2018,"forfait, zones communales",50000.0,31399,941.98,1500.0,3.0
-2018,"forfait, zones communales",75000.0,47099,1412.97,2250.0,3.0
-2018,"forfait, zones communales",100000.0,62799,1883.96,3000.0,3.0
-2018,"forfait, zones communales",150000.0,94198,2825.94,4500.0,3.0
+2018,"forfait, zones communales",20000.0,12560,276.79,440.76,2.2
+2018,"forfait, zones communales",30000.0,18840,465.19,740.76,2.47
+2018,"forfait, zones communales",50000.0,31399,841.98,1340.76,2.68
+2018,"forfait, zones communales",75000.0,47099,1312.97,2090.76,2.79
+2018,"forfait, zones communales",100000.0,62799,1783.96,2840.76,2.84
+2018,"forfait, zones communales",150000.0,94198,2725.94,4340.76,2.89
 2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,3140,300.0,477.72,9.55
 2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,6280,300.0,477.72,4.78
 2018,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",20000.0,12560,300.0,477.72,2.39
@@ -295,19 +295,19 @@ Réforme,Régime,Chiffre d'affaires (D de 2025),Chiffre d'affaires (D courants),
 2018,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,94198,1149.15,1829.89,1.22
 2023,"forfait, hors zones communales",5000.0,4434,200.0,225.54,4.51
 2023,"forfait, hors zones communales",10000.0,8867,200.0,225.54,2.26
-2023,"forfait, hors zones communales",20000.0,17735,532.05,600.0,3.0
-2023,"forfait, hors zones communales",30000.0,26602,798.07,900.0,3.0
-2023,"forfait, hors zones communales",50000.0,44337,1330.11,1500.0,3.0
-2023,"forfait, hors zones communales",75000.0,66506,1995.17,2250.0,3.0
-2023,"forfait, hors zones communales",100000.0,88674,2660.23,3000.0,3.0
+2023,"forfait, hors zones communales",20000.0,17735,432.05,487.23,2.44
+2023,"forfait, hors zones communales",30000.0,26602,698.07,787.23,2.62
+2023,"forfait, hors zones communales",50000.0,44337,1230.11,1387.23,2.77
+2023,"forfait, hors zones communales",75000.0,66506,1895.17,2137.23,2.85
+2023,"forfait, hors zones communales",100000.0,88674,2560.23,2887.23,2.89
 2023,"forfait, hors zones communales",150000.0,133011,,,
 2023,"forfait, zones communales",5000.0,4434,400.0,451.09,9.02
 2023,"forfait, zones communales",10000.0,8867,400.0,451.09,4.51
-2023,"forfait, zones communales",20000.0,17735,532.05,600.0,3.0
-2023,"forfait, zones communales",30000.0,26602,798.07,900.0,3.0
-2023,"forfait, zones communales",50000.0,44337,1330.11,1500.0,3.0
-2023,"forfait, zones communales",75000.0,66506,1995.17,2250.0,3.0
-2023,"forfait, zones communales",100000.0,88674,2660.23,3000.0,3.0
+2023,"forfait, zones communales",20000.0,17735,632.05,712.77,3.56
+2023,"forfait, zones communales",30000.0,26602,898.07,1012.77,3.38
+2023,"forfait, zones communales",50000.0,44337,1430.11,1612.77,3.23
+2023,"forfait, zones communales",75000.0,66506,2095.17,2362.77,3.15
+2023,"forfait, zones communales",100000.0,88674,2760.23,3112.77,3.11
 2023,"forfait, zones communales",150000.0,133011,,,
 2023,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",5000.0,4434,300.0,338.32,6.77
 2023,"régime réel, bénéfice égal à 25 % du chiffre d'affaires",10000.0,8867,300.0,338.32,3.38
@@ -327,19 +327,19 @@ Réforme,Régime,Chiffre d'affaires (D de 2025),Chiffre d'affaires (D courants),
 2023,"régime réel, bénéfice égal à 10 % du chiffre d'affaires",150000.0,133011,2158.29,2433.96,1.62
 2026,"forfait, hors zones communales",,5000,200.0,,4.0
 2026,"forfait, hors zones communales",,10000,200.0,,2.0
-2026,"forfait, hors zones communales",,20000,600.0,,3.0
-2026,"forfait, hors zones communales",,30000,900.0,,3.0
-2026,"forfait, hors zones communales",,50000,1500.0,,3.0
-2026,"forfait, hors zones communales",,75000,2250.0,,3.0
-2026,"forfait, hors zones communales",,100000,3000.0,,3.0
+2026,"forfait, hors zones communales",,20000,500.0,,2.5
+2026,"forfait, hors zones communales",,30000,800.0,,2.67
+2026,"forfait, hors zones communales",,50000,1400.0,,2.8
+2026,"forfait, hors zones communales",,75000,2150.0,,2.87
+2026,"forfait, hors zones communales",,100000,2900.0,,2.9
 2026,"forfait, hors zones communales",,150000,,,
 2026,"forfait, zones communales",,5000,400.0,,8.0
 2026,"forfait, zones communales",,10000,400.0,,4.0
-2026,"forfait, zones communales",,20000,600.0,,3.0
-2026,"forfait, zones communales",,30000,900.0,,3.0
-2026,"forfait, zones communales",,50000,1500.0,,3.0
-2026,"forfait, zones communales",,75000,2250.0,,3.0
-2026,"forfait, zones communales",,100000,3000.0,,3.0
+2026,"forfait, zones communales",,20000,700.0,,3.5
+2026,"forfait, zones communales",,30000,1000.0,,3.33
+2026,"forfait, zones communales",,50000,1600.0,,3.2
+2026,"forfait, zones communales",,75000,2350.0,,3.13
+2026,"forfait, zones communales",,100000,3100.0,,3.1
 2026,"forfait, zones communales",,150000,,,
 2026,impôt forfaitaire optionnel,,5000,4000.0,,80.0
 2026,impôt forfaitaire optionnel,,10000,4000.0,,40.0
