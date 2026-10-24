@@ -166,7 +166,8 @@ Le tableau suivant croise, pour chaque composante, son statut juridique, son sta
 | Composante | Statut juridique | Statut économique (SNA / GFSM) | Chapitre |
 |---|---|---|---|
 | État, collectivités locales, EPA | Fonction publique (loi 83-112) | Administrations publiques | Régime indiciaire |
-| Magistrats, militaires, sécurité intérieure | Statuts spéciaux | Administrations publiques | Régime statutaire autonome |
+| Magistrats, militaires, sécurité intérieure, douanes | Statuts propres : exclus du statut général de 1983, ou dotés d'un statut général propre (douanes, loi 95-46) | Administrations publiques | Régime statutaire autonome |
+| Membres du gouvernement, gouverneurs, parlementaires | Fonctions politiques, rémunérées par loi, décret ou arrêté propres | Administrations publiques | Les fonctions politiques |
 | Offices, EPIC, sociétés à capital public (non financières) | EPNA (offices, EPIC) / sociétés à capital public ; lois 85-78, 89-9 | Entreprises publiques non financières | Régime conventionnel public |
 | Caisses sociales (CNSS, CNRPS, CNAM) | EPNA | Administrations publiques (fonds de sécurité sociale) | Régime conventionnel public (sous-section dédiée aux caisses) |
 | Banques publiques, filiales financières | Sociétés à capital public (loi 89-9) | Entreprises publiques financières | Régime de marché contrôlé |
@@ -175,13 +176,45 @@ Pour le **périmètre d'administration centrale** — qui recouvre, parmi les li
 
 Le cas des **caisses de sécurité sociale** illustre l'intérêt du double angle : juridiquement des EPNA dotés de la personnalité civile et de l'autonomie financière, sous tutelle du ministère des Affaires sociales, mais économiquement rattachés aux administrations publiques en tant que fonds de sécurité sociale. Un statut de leur personnel avait été approuvé en 1999 [@decret-statut-caisses-1999]. Le décret présidentiel n° 2022-76 approuve un nouveau statut particulier pour le personnel des organismes de sécurité sociale **et du centre de recherches et d'études sociales**, et abroge expressément le décret de 1999 [@decret-statut-caisses-2022, art. 1-2]. La forme de la grille de rémunération de ce nouveau statut reste à établir. Ce personnel est traité dans une [sous-section dédiée](#sec-caisses-sociales) du chapitre « Le régime conventionnel public ».
 
+### Les effectifs autorisés par mission, 2021-2026 {#sec-remu-effectifs-autorises}
+
+Depuis la loi de finances pour 2021, le budget de l'État fixe chaque année l'[effectif autorisé](#g-effectif-autorise) des ministères, par [mission](#g-mission-budgetaire) ; la loi organique du budget de 2019 l'impose, et rend la règle applicable « au plus tard à la fin de l'année 2020 » [@loi-org-2019-15-lob, art. 45 et 70]. L'effectif autorisé est une autorisation votée, non un effectif observé. Il couvre les services centraux et régionaux des ministères et les établissements publics administratifs dont le budget est rattaché pour ordre à celui de l'État. Il passe de 644 872 agents en 2021 à 687 000 en 2026 ; hors effectif non réparti, de 644 872 à 674 005 (@tbl-remu-effectifs-autorises).
+
+| Mission | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
+|---|---:|---:|---:|---:|---:|---:|
+| Éducation | 208 402 | 206 653 | 206 303 | 202 626 | 204 574 | 220 254 |
+| Intérieur | 98 362 | 104 709 | 102 299 | 102 453 | 99 486 | 98 419 |
+| Défense nationale | 91 365 | 96 849 | 98 861 | 101 416 | 103 678 | 106 893 |
+| Santé | 86 095 | 78 213 | 78 020 | 78 651 | 78 137 | 79 360 |
+| Enseignement supérieur<br>et recherche | 36 060 | 37 646 | 39 903 | 40 051 | 39 703 | 40 606 |
+| Justice | 18 878 | 19 352 | 19 637 | 19 216 | 18 761 | 19 544 |
+| Finances | 18 636 | 18 890 | 18 781 | 19 636 | 19 860 | 19 905 |
+| Affaires étrangères | 1 090 | 1 862 | 1 825 | 1 811 | 1 857 | 1 913 |
+| Cour des comptes | 489 | 389 | 418 | 410 | 408 | 402 |
+| Conseil supérieur<br>de la magistrature | 9 | 9 | 9 | 8 | 6 | 14 |
+| Autres missions<br>(calcul) | 85 486 | 84 350 | 86 855 | 84 683 | 85 287 | 86 695 |
+| Effectif non réparti | — | 6 000 | 6 000 | 6 000 | 12 000 | 12 995 |
+| **Total** | **644 872** | **654 922** | **658 911** | **656 961** | **663 757** | **687 000** |
+
+: Effectif global autorisé par la loi de finances, par mission, 2021-2026 (agents) {#tbl-remu-effectifs-autorises}
+
+Sources : lois de finances, article 9 et tableau des effectifs par mission [@lf-2021, art. 9; @dl2021-21-lf2022, art. 9; @lf-2023, art. 9; @lf-2024, art. 9; @lf-2025, art. 9; @lf-2026, art. 9]. La ligne « Autres missions » est la différence entre le total et les missions détaillées. L'« effectif non réparti » est une réserve pour les tranches de régularisation des ouvriers de chantier, qui n'appartient à aucune mission [@minfin-rapport-budget-2024, p. 72; @minfin-rapport-budget-2025, p. 74].
+
+- **Une mission n'est pas un corps.** Les missions de la Défense, de l'Intérieur et de la Justice réunissent les corps à statut propre et des personnels civils (@sec-statutaire-budget).
+- **Une variation peut être un reclassement.** En 2021, les affaires locales forment avec l'environnement une mission propre (1 023 agents), et passent sous la mission Intérieur en 2022. La Santé passe de 86 095 à 78 213 agents de 2021 à 2022 sans que la loi de finances l'explique.
+
+<!-- TODO (documentaliste) : en 2021, l'article 9 renvoie au « tableau D », qui est celui des crédits d'engagement ; le tableau des effectifs est intitulé « F » (JORT n° 128 du 25 décembre 2020, pp. 3125 et 3223). Tableaux 2023-2026 lus dans l'édition arabe (tableau « ح »). Lire les autres missions, qui forment la ligne « Autres missions » (docs/notes/regimes-speciaux-recrutement-departs-effectifs-2026-10-23.md, § 4.1). -->
+<!-- TODO (rédacteur) : figure de l'effectif autorisé par mission, 2021-2026, une fois la série versée dans tunisia-data. -->
+
 ## Les chapitres par régime de rémunération
 
 Le précis se déploie ensuite en quatre chapitres, un par régime :
 
-- **[Le régime indiciaire](_regime_indiciaire.qmd)** — héritier du modèle français de carrière, il concerne l'État, les collectivités locales et les EPA (loi n°83-112 [@loi83-112]). À chaque grade et échelon correspond aujourd'hui un traitement de base directement exprimé en dinars ; la conversion d'un indice par une valeur du point appartient au système antérieur à 1998.
-- **[Le régime statutaire autonome](_regime_statutaire_autonome.qmd)** — il regroupe les corps dotés d'un statut propre détaché du statut commun : magistrats (loi n°67-29 du 14 juillet 1967 [@loi67-29]), militaires (loi n°67-20 du 31 mai 1967 [@loi67-20]) et forces de sécurité intérieure (loi n°82-70 du 6 août 1982 [@loi82-70]).
+- **[Le régime indiciaire](_regime_indiciaire.qmd)** — héritier du modèle français de carrière, il concerne l'État, les collectivités locales et les EPA (loi n°83-112 [@loi83-112]). À chaque grade et échelon correspond aujourd'hui un traitement de base directement exprimé en dinars ; la conversion d'un indice par une valeur du point appartient au système antérieur à 1998. Le chapitre traite aussi des corps soumis au statut général qui ont des indemnités propres — diplomates, enseignants-chercheurs, emplois fonctionnels et cabinets ministériels — et des règles de recrutement et de départ des agents.
+- **[Le régime statutaire autonome](_regime_statutaire_autonome.qmd)** — il regroupe les corps dotés d'un statut propre détaché du statut commun : magistrats (loi n°67-29 du 14 juillet 1967 [@loi67-29]), militaires (loi n°67-20 du 31 mai 1967 [@loi67-20]), forces de sécurité intérieure (loi n°82-70 du 6 août 1982 [@loi82-70]) et agents des douanes, dotés d'un statut général propre (loi n°95-46 du 15 mai 1995 [@loi95-46]).
 - **[Le régime conventionnel public](_regime_conventionnel.qmd)** — catégorie de lecture des entreprises publiques non financières (offices, EPIC, sociétés à capital public ; lois n°85-78 [@loi85-78] et n°89-9 [@loi89-9]). La loi de 1985 prévoit des statuts particuliers approuvés par décret pour son champ principal et une option transitoire entre statut et convention sectorielle pour certaines sociétés à capital partiellement public. Le chapitre accueille également la sous-section consacrée aux dirigeants d'entreprises publiques, dont le régime de rémunération est fixé par décret gouvernemental, et celle des organismes de sécurité sociale.
 - **[Le régime de marché contrôlé](_regime_marche_controle.qmd)** — catégorie retenue pour les banques publiques : leurs agents sont couverts par la convention collective sectorielle commune aux banques publiques et privées, tandis que la rémunération de leurs directeurs généraux relève d'un décret gouvernemental qui en confie l'approbation au conseil d'administration.
+
+Un chapitre court, **[Les fonctions politiques](_fonctions_politiques.qmd)**, rassemble enfin ceux dont la rémunération ne relève d'aucun de ces régimes : membres du gouvernement, gouverneurs et parlementaires, qui ne forment pas un corps et dont l'indemnité est fixée, selon les époques, par la loi, par décret ou par arrêté du président de l'assemblée.
 
 Pour chaque régime sont décrits les sous-secteurs juridiques couverts, les composantes du salaire (traitement de base, système indiciaire, indemnités et primes), les prélèvements (cotisations sociales, retenue à la source de l'IRPP, contribution sociale de solidarité), ainsi que les repères historiques et budgétaires propres à la catégorie.

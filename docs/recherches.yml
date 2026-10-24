@@ -4203,3 +4203,250 @@
   a_faire:
   - lire les décrets de réduction des droits de douane publiés fin décembre de chaque année 1995-2007 (ex. décrets n° 96-2471 à 96-2477, JORT n° 105 de 1996)
   - jouer le plein texte sur « produits originaires » et « annexe 3 »/« annexe 4 »
+
+- id: r-magistrats-majorations-indemnite
+  objet: décret majorant l'indemnité de magistrature des magistrats de l'ordre judiciaire (seul ou avec le Tribunal administratif et la Cour des comptes), publié entre le décret n° 2012-3554 et le décret n° 2026-65, autre que 2015-463, 2016-742, 2017-1364, 2019-210, 2019-285, 2019-1132, 2020-768 et 2022-798 ; en particulier pour 2014 et 2021
+  ou: [precis/fr/remunerations_publiques/_regime_statutaire_autonome.qmd#sec-statutaire-magistrats-niveau]
+  requetes:
+    titres_fts: [magistrat* OR magistrature]
+    titres_like: ['%indemnite de magistrature%', '%augmentation des salaires%magistrats%']
+    iort_ar: [منحة القضاء, الزيادة في الأجور لفائدة القضاة, القضاة من الصنف العدلي]
+    depuis: 2013-01-11
+  periode:
+    jusqu_au: 2026-04-30
+    motif: le décret n° 2026-65 (JORT n° 44 du 30 avril 2026) ouvre le cycle 2026-2028
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, iort, web, corpus_local]
+    couverture: 'jort_cache (titres FR, FTS « magistrat* OR magistrature » ; titres AR, LIKE « القضاة », « القضاء » croisés avec « منحة », « أجور », « الزيادة ») : répondent 2011-2093, 2011-2094, 2011-3290, 2012-3552 à 3554, 2015-463, 2016-742, 2017-1361, 2017-1362, 2017-1364, 2018-73, 2019-210, 2019-285, 2019-1132, 2026-65, tous lus au fascicule ou au miroir. 2020-768 et 2022-798, absents de l''index, trouvés par le web et lus au fascicule (JORT n° 94/2020, n° 120/2022). Plein texte : sommaires (trois premières pages) des fascicules français du corpus 2013-2026 : répondent seulement 2012-3552 à 3554, 2015-463, 2016-742, 2017-1361, 2017-1362, 2019-285, 2019-1132, 2020-768, 2022-798, 2026-65. Non couverts : fascicules dont le fichier « fr » est l''arabe (dont n° 103/2017, n° 8/2018, n° 20/2019), fascicules absents du corpus ou inconnus de jort_cache.'
+    couvert_jusqu_au: 2026-04-30
+    resultat: aucun
+  a_faire:
+  - relancer avec --sonder-pist pour les fascicules inconnus de jort_cache
+  - balayer le plein texte des fascicules arabes 2015-2019 (« منحة القضاء »)
+
+- id: r-mil-traitement-base-1997
+  objet: barème du décret du 16 septembre 1997 (cité « 97-130 », daté du 18 septembre par le décret n° 2009-3034) fixant le traitement de base des militaires et des forces de sécurité intérieure (police, garde nationale, protection civile, sous-corps en tenue des prisons), visé par les décrets de concordance n° 99-1208 et 2000-1009 à 2000-1019, et ses modificatifs (décret du 10 novembre 1997 « 97-147 », indemnités compensatrices ; décret n° 2007-100 du 12 février 2007 ; décret du 4 mars 2008 cité « 2008-103 »)
+  ou:
+  - precis/fr/remunerations_publiques/_regime_statutaire_autonome.qmd#sec-statutaire-1997
+  - precis/fr/remunerations_publiques/_regime_statutaire_autonome.qmd#sec-statutaire-fsi
+  requetes:
+    titres_fts: []
+    titres_like: []
+    iort_ar:
+    - 130 لسنة 1997
+    - 147 لسنة 1997
+    - 100 لسنة 2007
+    - 103 لسنة 2008
+    - أجور العسكريين
+    - الأجر الأساسي للعسكريين
+    - المرتب الأساسي للعسكريين
+    - المرتب الأساسي للعسكريين وقوات الأمن الداخلي
+    - الغرامات التعويضية المسندة إلى العسكريين وقوات الأمن الداخلي
+    plein_texte: [traitement de base des militaires]
+    depuis: 1997-09-16
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, corpus_local, visas]
+    couverture: 'jort_cache : numero in (97-130, 97-147, 2007-100, 2008-103) — seul 2008-103 répond, pour un autre texte (16 janvier 2008, agence de lutte contre le dopage) ; dates 1997-09-16, 1997-09-18, 1997-11-10, 2007-02-12, 2008-03-04 filtrées sur milit/armee/securite interieure/traitement de base/indemnite/عسكري/الأمن الداخلي : seuls les homologues civils (97-1832, 97-2127, 2007-267, 2007-268). Plein texte (couche texte décodée) des JORT FR 1997 n° 76, 77 et 93 et 2007 n° 14 : aucune occurrence. LIKE sur les titres et objets (arabes compris) pour les termes iort_ar, dont « المرتب الأساسي للعسكريين » : aucun. Fascicules arabes et mars 2008 non parcourus. Requêtes par numéro et par date, hors des champs titres_* : à rejouer à la main.'
+    couvert_jusqu_au: 2008-03-04
+    resultat: aucun
+  a_faire: [parcourir les fascicules arabes de septembre-novembre 1997 et de mars 2008]
+
+- id: r-mil-solde-79-96-1982-1985
+  objet: décrets modifiant le décret n° 79-96 du 11 janvier 1979 (solde des militaires non classés) entre 1979 et 1987, cités sans numéro par les décrets n° 87-878 et 88-909 (16 mars 1982, 18 juin 1983, 2 août 1983, 4 juillet 1985)
+  ou: [precis/fr/remunerations_publiques/_regime_statutaire_autonome.qmd#sec-statutaire-militaires]
+  requetes:
+    titres_fts:
+    - militaires AND (solde OR remuneration OR indemnite OR indemnites OR traitement OR prime OR grille OR echelonnement OR classement)
+    titres_like: ['%79-96%', '%solde des militaires%']
+    iort_ar: [96 لسنة 1979]
+    plein_texte: []
+    depuis: 1979-01-16
+  periode:
+    jusqu_au: 1987-06-26
+    motif: textes antérieurs au décret n° 87-878
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache : FTS et LIKE sur les titres ; dates de signature 1982-03-16, 1983-06-17, 1983-06-18, 1983-08-02, 1985-07-04 filtrées sur milit/armee/solde/indemnite : aucun texte militaire. Fascicules 1982-1985 en image : plein texte non joué. Le décret n° 88-907 (JORT n° 33 de 1988, p. 742) qualifie de « non publiable » un décret militaire du 17 juin 1983.'
+    couvert_jusqu_au: 1987-06-26
+    resultat: aucun
+  a_faire:
+  - lire à l'image les fascicules de mars 1982
+  - juin-août 1983 et juillet 1985 (rubrique Défense nationale)
+
+- id: r-mil-charges-militaires-2011
+  objet: décret n° 2011-225 du 22 octobre 2011 modifiant les décrets n° 67-158, 68-385 et 68-389 (indemnité pour charges militaires), cité par le décret n° 2013-3797
+  ou: [precis/fr/remunerations_publiques/_regime_statutaire_autonome.qmd#sec-statutaire-militaires]
+  requetes:
+    titres_fts: []
+    titres_like: ['%charges militaires%', '%risque militaire%']
+    iort_ar: [225 لسنة 2011, الأعباء العسكرية, عسكري]
+    plein_texte: []
+    depuis: 2011-10-22
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache : numero = 2011-225 ; date 2011-10-22 avec titre milit/عسكري ; LIKE « charges militaires », « risque militaire », « الأعباء العسكرية », « 225 لسنة 2011 » : aucun (seul 2013-3797 répond sur « charges militaires »). Miroir iort : pas de fichier dec_2011_225. Le numéro est hors de la série principale (index : décrets n° 2011-3159 du 20 octobre et 2011-3310 du 27 octobre). Plein texte des fascicules d''octobre-décembre 2011 non joué.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte des JORT FR et AR d'octobre à décembre 2011, décrets à petit numéro compris]
+
+- id: r-fsi-indemnites-1992
+  objet: décret du 1er février 1992 portant attribution de l'indemnité de charge de sécurité, de l'indemnité de risque, de l'indemnité de commandement et de responsabilité et de l'indemnité de logement des forces de sécurité intérieure, et ses modificatifs cités par les décrets n° 2004-1335 et 2005-3168 (« décret n° 98-73 du 13 juillet 1998 » ; « décret n° 2002-245 du 25 novembre 2002 », augmentation 2002-2004 et première tranche ; deuxième tranche 2003)
+  ou: [precis/fr/remunerations_publiques/_regime_statutaire_autonome.qmd#sec-statutaire-fsi]
+  requetes:
+    titres_fts:
+    - titre:(tranche AND (securite OR prisons OR douan*))
+    - titre:(logement AND ("securite interieure" OR police OR "garde nationale"))
+    titres_like: ['%charge de securite%', '%charges de securite%']
+    iort_ar: [التكاليف الأمنية, منحة الخطر, منحة القيادة والمسؤولية, 73 لسنة 1998, 245 لسنة 2002]
+    plein_texte: []
+    depuis: 1992-02-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, visas, iort]
+    couverture: 'jort_cache : numero in (98-73, 2002-245, 2004-245) — 98-73 désigne la loi du 4 août 1998 (procédures fiscales), les deux autres absents ; dates de signature 1992-02-01, 1998-07-13, 2002-11-25 filtrées sur securite/indemnit : seuls des décrets civils (98-1422 à 98-1438 ; 2002-3062, 2002-3063). FTS « tranche » × sécurité : seuls 2004-1335 et 2005-3168 (forces de sécurité intérieure du ministère de la Justice). LIKE « charge de securite » : les mêmes ; LIKE arabes sur titres et objets : 0. Passe 2011-2026 sur les intitulés arabes (منح, أجر, مرتب × الأمن, الحرس, الحماية المدنية, السجون) : aucune majoration indemnitaire. Plein texte des fascicules de février-mars 1992, juillet 1998 et novembre 2002 non joué.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire à l'image les fascicules de février-mars 1992 (rubrique Intérieur)
+  - plein texte des JORT FR et AR de juillet-août 1998 et de novembre-décembre 2002
+
+- id: r-douanes-indemnites-1997
+  objet: décret du 20 janvier 1997 portant détermination des indemnités mensuelles fixes attribuées aux agents des services douaniers, et son modificatif du 15 octobre 2009, cités sans numéro par le décret n° 2013-3798
+  ou: [precis/fr/remunerations_publiques/_regime_statutaire_autonome.qmd#sec-statutaire-douanes]
+  requetes:
+    titres_fts: ['titre:("indemnites mensuelles fixes")']
+    titres_like: []
+    iort_ar: [المنح الشهرية القارة]
+    plein_texte: []
+    depuis: 1997-01-20
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, visas, iort]
+    couverture: 'jort_cache : date de signature 1997-01-20 avec douan* : décrets n° 97-104 (École nationale des douanes) et 97-105 (emplois fonctionnels des douanes) seulement ; FTS « indemnites mensuelles fixes » : seul 2013-3798 ; LIKE arabe « المنح الشهرية القارة » sur titres et objets : 0. Fascicules de janvier-février 1997 et d''octobre-novembre 2009 non lus en plein texte.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte des JORT FR de janvier-février 1997 et d'octobre-novembre 2009]
+
+- id: r-remuneration-membres-gouvernement
+  objet: décret (publié ou non) fixant le traitement, les indemnités et les avantages des membres du gouvernement (ministres, secrétaires d'État), et ses modificatifs
+  ou: [precis/fr/remunerations_publiques/_fonctions_politiques.qmd#sec-fp-gouvernement]
+  requetes:
+    titres_fts:
+    - titre:(remuneration OR traitement OR indemnite OR indemnites OR avantages) AND titre:(ministres OR gouvernement OR "secretaires d etat" OR "chef de cabinet" OR "emplois fonctionnels" OR "emplois superieurs" OR gouverneurs)
+    - (membres NEAR gouvernement) NOT signature NOT gouverneurs NOT deleguer NOT serment NOT declaration
+    - titre:(remuneration OR indemnite OR indemnites OR avantages OR traitement) AND titre:(ministres OR "membres du gouvernement" OR "secretaires d etat")
+    - titre:("president de la republique" OR "premier ministre" OR "premiers ministres" OR "chef du gouvernement" OR "anciens ministres") AND titre:(avantages OR remuneration OR indemnite OR indemnites OR retraite OR pension OR traitement OR dotation)
+    titres_like: ['%membres du gouvernement%', '%secretaires d''etat%']
+    iort_ar: [أعضاء الحكومة, كتاب الدولة]
+    depuis: 1956-03-20
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'titres et objets de jort_cache (FTS et LIKE ; LIKE arabe : « أعضاء الحكومة », « كاتب دولة », « كتاب الدولة », « الوزير » croisés avec « منحة/منح/امتيازات/تأجير/الأجر »), 1956 au 2 octobre 2026 : aucun texte de rémunération ; seuls délégation de signature, serment, déclaration de biens, retraite (loi n° 83-31, DL n° 2011-48). Le décret visé par le décret n° 2015-658 (« الأمر المؤرخ في 15 أوت 1998 », président de la République) n''est pas indexé (date_signature = 1998-08-15 : 0 ligne), comme le décret du 29 octobre 1991 visé par le décret n° 2020-769 pour les gouverneurs. Plein texte non parcouru. Fascicules de 2024-2026 inconnus de jort_cache (outillage § 1 f) non parcourus ; --sonder-pist non lancé.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - plein texte des fascicules
+  - sources parlementaires (débats budgétaires
+  - mission « Présidence du gouvernement »)
+
+- id: r-indemnite-parlementaire-decret
+  objet: décret fixant les indemnités mensuelles du président et des membres de la Chambre des députés en application de l'art. 72 de la loi de finances pour 1989 (loi n° 88-145), puis textes fixant l'indemnité des membres de la Chambre des conseillers (loi n° 2005-54), de l'Assemblée des représentants du peuple (2014-2021) et des assemblées élues en 2022-2024
+  ou: [precis/fr/remunerations_publiques/_fonctions_politiques.qmd#sec-fp-parlementaires]
+  requetes:
+    titres_fts:
+    - titre:(deputes OR parlementaire OR parlementaires OR "assemblee nationale" OR conseillers OR "chambre des deputes" OR constituante OR "representants du peuple") AND titre:(indemnite OR indemnites OR remuneration OR avantages OR retraite OR traitement OR statut)
+    titres_like: ['%indemnite parlementaire%']
+    iort_ar: [المنحة النيابية]
+    depuis: 1988-12-31
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, presse]
+    couverture: 'titres de jort_cache, 31 décembre 1988 au 2 octobre 2026 (FTS français ; LIKE arabe « مجلس نواب الشعب », « المجلس الوطني التأسيسي », « النواب », « المجلس الوطني للجهات » croisés avec « منح/جراي/امتياز/تقاعد/النظام الأساسي » ; « المنحة النيابية », « منحة نيابية ») : aucun décret pris pour l''art. 72 de la LF 1989 ; trouvés seulement les arrêtés du président de l''ANC du 21 juillet et du 15 août 2012, et pour l''ARP les seuls décrets d''« indemnité de travail parlementaire » des agents (2016-589, 2019-342). La presse de 2012 (Business News, 17 août 2012) dit l''indemnité fixée par décret non publié. Plein texte non parcouru ; publications propres des assemblées non parcourues. Fascicules de 2024-2026 inconnus de jort_cache non parcourus ; --sonder-pist non lancé.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - plein texte des fascicules
+  - site et rapports de l'ARP
+  - décisions du bureau
+  - budget de la mission « Assemblée »
+
+- id: r-gouverneurs-decret-1991
+  objet: décret du 29 octobre 1991 fixant le salaire mensuel et les avantages accordés aux gouverneurs, et ses modificatifs dont celui visé comme « décret gouvernemental n° 2016-251 du 23 décembre 2016 » (visas du décret gouvernemental n° 2020-769)
+  ou: [precis/fr/remunerations_publiques/_fonctions_politiques.qmd#sec-fp-gouverneurs]
+  requetes:
+    titres_fts: ['titre:(remuneration OR traitement OR indemnite OR indemnites OR avantages) AND titre:(gouverneurs)']
+    titres_like: ['%gouverneurs%']
+    iort_ar: [251 لسنة 2016, الولاة]
+    depuis: 1991-10-29
+  periode:
+    jusqu_au: 2020-09-22
+    motif: le décret gouvernemental n° 2020-769 (JORT n° 95 du 22 septembre 2020) abroge le décret du 29 octobre 1991 (art. 9)
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache, visas]
+    couverture: 'jort_cache au 2 octobre 2026 : aucun texte du 29 octobre 1991 sur les gouverneurs (cinq arrêtés de ce jour, sans rapport) ; le décret gouvernemental n° 2016-251 de l''index est du 16 février 2016 et porte sur l''inspection pédagogique ; un seul décret du 23 décembre 2016 indexé (n° 2016-1396, huile d''olive). Plein texte non parcouru. Fascicules inconnus de jort_cache non parcourus ; --sonder-pist non lancé.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-diplomates-indemnite-poste-apres-1998
+  objet: texte transposant à la grille en dinars (décret n° 97-1832, concordance n° 99-2358) les tranches d'« indice » de l'indemnité de poste (décret n° 73-168, art. 2) et de l'indemnité de perte de change (décret n° 73-167, art. 11-12) ; arrêtés de classement zonal des postes postérieurs à 1985
+  ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-ri-diplomates]
+  requetes:
+    titres_fts:
+    - titre:(diplomatique OR consulaire OR diplomatiques OR consulaires OR "affaires etrangeres" OR "a l etranger" OR ambassadeurs) AND titre:(statut OR remuneration OR indemnite OR indemnites OR allocations OR avantages OR traitement OR residence)
+    titres_like: ['%73-168%', '%73-167%']
+    iort_ar: [167 لسنة 1973, 168 لسنة 1973]
+    depuis: 1997-09-16
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'titres de jort_cache, 1956 au 2 octobre 2026 : modificatifs du décret n° 73-167 jusqu''au décret n° 2008-3481 (aucun ne touche l''art. 2 du décret n° 73-168 d''après les intitulés ; 2004-1772 et 2008-3481 lus : bagages, enseignement des enfants) ; pour le décret n° 73-168, seul l''arrêté du 1er mars 1985. Arrêtés de classement zonal non indexés sous ces termes. Plein texte non parcouru ; les arrêtés peuvent ne pas être publiés. Fascicules de 2024-2026 inconnus de jort_cache non parcourus ; --sonder-pist non lancé.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [lire les décrets n° 85-1183, 89-842, 90-721 (1985-1990, scans), plein texte]
+
+- id: r-loi2020-38-decrets-application
+  objet: décrets gouvernementaux d'application des art. 1 à 3 de la loi n° 2020-38 (recrutement direct des chômeurs diplômés de longue durée)
+  ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-ri-recrutement]
+  requetes:
+    titres_fts: ['"2020-38" OR "2021-27" OR "2025-18" OR chantiers OR "longue duree"']
+    titres_like: ['%2020-38%', '%dix ans et plus%', '%chomage de longue%']
+    iort_ar: [38 لسنة 2020, طالت بطالتهم]
+    depuis: 2020-08-19
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'intitulés de jort_cache du 19 août 2020 au 2 octobre 2026 ; seul trouvé : LF 2021 art. 12 (crédits pour 10 000 recrutements) ; aucun décret d''application ; plein texte non parcouru ; fascicules inconnus de jort_cache non examinés.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-loi2025-18-application
+  objet: décret ou arrêté d'application de la loi n° 2025-18 (plateforme, tranches de recrutement des diplômés chômeurs de longue durée)
+  ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-ri-recrutement]
+  requetes:
+    titres_like: ['%2025-18%', '%chomage de longue%', '%recrutement%']
+    iort_ar: [طالت بطالتهم, 18 لسنة 2025]
+    depuis: 2025-12-23
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'intitulés de jort_cache du 1er décembre 2025 au 2 octobre 2026, hors arrêtés (nombreux arrêtés d''ouverture de concours non filtrés) ; seul texte voisin : décret 2026-12 (santé militaire) ; plein texte non parcouru ; fascicules 2026 inconnus de la base (n° 4, 8, 20, 32, 38, 66, 69, 85) non examinés.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun

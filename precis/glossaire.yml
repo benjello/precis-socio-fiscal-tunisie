@@ -249,8 +249,11 @@ entries:
         Catégorie retenue dans ce précis pour les corps régis par un statut
         propre, distinct du statut général de la fonction publique : magistrats,
         militaires, forces de sécurité intérieure et agents des douanes. Chaque
-        corps reçoit un traitement ou une solde de base, complété d'indemnités,
-        sur des grilles qui lui sont propres. Pour les trois premiers, le
+        corps reçoit un traitement ou une solde de base, placé depuis 1999-2000
+        sur une grille de niveaux de rémunération — la grille des agents de
+        l'État pour les magistrats et les douanes, une grille propre aux
+        militaires et aux forces de sécurité intérieure —, et des indemnités
+        fixées corps par corps. Pour les trois premiers, le
         détachement procède d'une clause d'exclusion de champ, et non d'une
         sortie progressive : l'article premier de la loi n°83-112 portant statut
         général les écarte de son champ d'application et les renvoie à leurs
@@ -264,8 +267,10 @@ entries:
       definition: >
         فئة معتمدة في هذا الملخّص للأسلاك الخاضعة لنظام أساسي خاصّ بها، متميّز
         عن النظام الأساسي العام للوظيفة العمومية: القضاة والعسكريون وقوات الأمن
-        الداخلي وأعوان الديوانة. ويتقاضى كلّ سلك مرتّبًا أساسيًا تُضاف إليه منح،
-        وفق شبكات خاصّة به. وبالنسبة إلى الأسلاك الثلاثة الأولى، ينتج هذا
+        الداخلي وأعوان الديوانة. ويتقاضى كلّ سلك مرتّبًا أساسيًا أو أجرًا أساسيًا،
+        مرتّبًا منذ سنتي 1999 و2000 على شبكة مستويات تأجير — شبكة أجور أعوان
+        الدولة بالنسبة إلى القضاة وأعوان الديوانة، وشبكة خاصّة بالعسكريين وبأعوان
+        قوات الأمن الداخلي —، تُضاف إليه منح تُضبط سلكًا سلكًا. وبالنسبة إلى الأسلاك الثلاثة الأولى، ينتج هذا
         الانفصال عن بند استثناء من مجال التطبيق، لا عن خروج تدريجي: فالفصل
         الأول من القانون عدد 83-112 المتعلّق بالنظام الأساسي العام يُخرجها من
         مجال تطبيقه ويحيلها إلى نصوصها الخاصّة — القانون عدد 67-29 (القضاة
@@ -289,8 +294,10 @@ entries:
         statuts distincts : les magistrats de l'ordre judiciaire (loi n°67-29 du
         14 juillet 1967), les magistrats du Tribunal administratif (loi n°72-40
         du 1ᵉʳ juin 1972) et les membres de la Cour des comptes (décret-loi
-        n°70-6 du 26 septembre 1970). Le barème de rémunération de chaque corps
-        relève de ses dispositions statutaires propres.
+        n°70-6 du 26 septembre 1970). Depuis 1999, leurs échelons correspondent
+        aux niveaux de rémunération de la sous-catégorie A1 de la grille des
+        agents de l'État ; ce qui leur est propre tient à leurs indemnités, dont
+        l'indemnité de magistrature.
       synonymes: []
     ar:
       terme: القاضي
@@ -300,38 +307,51 @@ entries:
         أساسية متمايزة: قضاة القضاء العدلي (القانون عدد 67-29 المؤرّخ في 14
         جويلية 1967)، وقضاة المحكمة الإدارية (القانون عدد 72-40 المؤرّخ في غرّة
         جوان 1972)، وأعضاء دائرة المحاسبات (المرسوم عدد 70-6 المؤرّخ في 26
-        سبتمبر 1970). ويخضع سُلَّم تأجير كلّ سلك لأحكامه الأساسية الخاصّة.
+        سبتمبر 1970). ومنذ سنة 1999، تطابق درجاتهم مستويات التأجير في الصنف
+        الفرعي أ1 من شبكة أجور أعوان الدولة؛ وما يختصّون به هو منحهم، ومنها منحة
+        القضاء.
       synonymes: []
 
   - id: solde-militaire
     acronyme: null
-    statut: provisoire  # équivalent AR à valider par un locuteur — cf. issue #53
-
-    references: [decret-79-96, decret-67-158]
+    statut: valide
+    # AR (arbitrage de la passe 2, 23/10/2026 ; cf. issue #53) : « أجور العسكريين », intitulé
+    # arabe du décret n° 79-96 (miroir iort) et visa arabe du décret n° 2011-626, qui rendent
+    # « solde des militaires ». « المرتّب العسكري » abandonné : au JORT, المرتب rend
+    # « traitement » (المرتب الأساسي, décret n° 97-1832 ; décret n° 2007-268, art. 10). Les
+    # modificatifs rendent « solde spéciale » / « solde journalière » par الراتب الخاص /
+    # الراتب اليومي (décrets n° 2010-2935 et 2011-626).
+    references: [decret-79-96, decret-75-590, decret-99-1208, decret2011-626, decret2023-740, decret-67-158]
     source_definition: {ref: decret-79-96}
-    voir_aussi: [regime-statutaire-autonome, traitement-de-base, regime-indiciaire]
+    source_traduction: {ref: decret-79-96}
+    voir_aussi: [regime-statutaire-autonome, traitement-de-base, regime-indiciaire, indemnite-charges-militaires]
     fr:
       terme: Solde (militaire)
       definition: >
-        Rémunération de base des militaires, équivalent du traitement de base de
-        la fonction publique mais établi hors de la grille de droit commun. Le
-        décret n°79-96 du 11 janvier 1979 fixe la solde des militaires non
-        classés dans la grille de la fonction publique, ainsi que le régime de
-        l'alimentation dans l'armée ; il est modifié à plusieurs reprises, de
-        1987 à 2010. À cette solde s'ajoutent des indemnités liées aux
-        sujétions du service ; celles des personnels de l'armée de terre sont
-        fixées par le décret n°67-158 du 31 mai 1967.
+        Rémunération des militaires. Les officiers, sous-officiers et caporaux
+        perçoivent une solde de base placée sur une grille : indiciaire jusqu'en
+        1997, puis, depuis 1999, une grille de niveaux de rémunération propre
+        aux militaires et aux forces de sécurité intérieure. Les militaires non
+        classés dans la grille de la fonction publique — soldats servant
+        au-delà de la durée légale et appelés — ont reçu une solde journalière
+        fixée par décret (décret n° 75-590, puis décret n° 79-96 du 11 janvier
+        1979) : les appelés jusqu'en 2011, où elle devient une indemnité
+        mensuelle ; les soldats engagés et les soldats de 1re classe jusqu'en
+        2023, où ils entrent dans la grille. À la solde s'ajoutent des
+        indemnités, dont l'indemnité pour charges militaires.
       synonymes: []
     ar:
-      terme: المرتّب العسكري
+      terme: أجور العسكريين
       definition: >
-        الأجر الأساسي للعسكريين، المقابل للمرتّب الأساسي في الوظيفة العمومية لكن
-        المضبوط خارج شبكة القانون العام. يضبط الأمر عدد 79-96 المؤرّخ في 11
-        جانفي 1979 مرتّب العسكريين غير المصنّفين في شبكة الوظيفة العمومية،
-        وكذلك نظام التغذية في الجيش؛ وقد نُقّح عدّة مرّات، من سنة 1987 إلى سنة
-        2010. وتُضاف إلى هذا المرتّب منحٌ مرتبطة بأعباء الخدمة؛ ويضبط الأمر عدد
-        67-158 المؤرّخ في 31 ماي 1967 منح أعوان جيش البرّ.
-      synonymes: []
+        أجور العسكريين. يتقاضى الضباط وضباط الصف والعرفاء أجرًا أساسيًا مرتّبًا
+        على شبكة: استدلالية إلى سنة 1997، ثمّ، منذ سنة 1999، شبكة مستويات تأجير
+        خاصّة بالعسكريين وبأعوان قوات الأمن الداخلي. أمّا العسكريون الذين لا تُدفع
+        أجورهم حسب شبكة الوظيفة العمومية — الجنود الذين يواصلون الخدمة بعد المدّة
+        القانونية والمجنّدون — فقد تقاضوا راتبًا يوميًا يُضبط بأمر (الأمر عدد 590
+        لسنة 1975، ثمّ الأمر عدد 96 لسنة 1979 المؤرخ في 11 جانفي 1979): المجنّدون
+        إلى سنة 2011، حين عُوّض بمنحة شهرية، والجنود إلى سنة 2023، حين أُدرجوا في
+        الشبكة. وتُضاف إلى هذه الأجور منح، منها منحة الكلف العسكرية.
+      synonymes: [الراتب]
 
   - id: pensions-civiles-militaires
     acronyme: null
@@ -405,7 +425,7 @@ entries:
     statut: provisoire
     references: [loi82-70]
     source_definition: {ref: loi82-70}
-    voir_aussi: [regime-statutaire-autonome, statut-particulier, pensions-civiles-militaires]
+    voir_aussi: [regime-statutaire-autonome, statut-particulier, pensions-civiles-militaires, agents-des-douanes]
     fr:
       terme: Forces de sécurité intérieure
       definition: >
@@ -16127,6 +16147,891 @@ entries:
       synonymes: []
     ar:
       terme: المعلوم للمحافظة على البيئة
+      definition: ""
+      synonymes: []
+
+  # --- Régimes spéciaux de rémunération du secteur public (passe 1, 23/10/2026) ---
+  # Termes et sources seulement ; définitions en passe 2. Statut provisoire partout.
+
+  - id: enseignant-chercheur
+    acronyme: null
+    statut: valide
+    references: [decret-99-1804, decret-85-1405]
+    # AR : « سلك المدرسين الباحثين » (intitulé arabe du décret n° 93-1825, miroir iort) ; singulier « المدرس الباحث » relevé au JORT (loi organique n° 2016-34, décret n° 2015-710).
+    source_definition: {ref: decret-93-1825, locator: "art. 2"}
+    source_traduction: {ref: decret-93-1825}
+    voir_aussi: [statut-particulier, indemnite-encadrement-recherche]
+    fr:
+      terme: Enseignant-chercheur
+      definition: >
+        Membre du corps des enseignants chercheurs des universités, régi par un
+        statut particulier pris en application du statut général de la fonction
+        publique (décret n° 93-1825 du 6 septembre 1993). Le corps compte quatre
+        grades permanents : professeur de l'enseignement supérieur, maître de
+        conférences, maître assistant et assistant. Depuis 1999, les échelons de
+        ces grades correspondent aux niveaux de rémunération de la sous-catégorie
+        A1 de la grille des agents de l'État (décret n° 99-1804). La rémunération
+        comprend en outre des indemnités propres au corps, dont l'indemnité
+        d'encadrement et de recherche.
+      synonymes: [Enseignants chercheurs des universités]
+    ar:
+      terme: المدرس الباحث
+      definition: >
+        عضو في سلك المدرسين الباحثين التابعين للجامعات، الخاضع لنظام أساسي خصوصي
+        ضُبط تطبيقًا للنظام الأساسي العام للوظيفة العمومية (الأمر عدد 1825 لسنة
+        1993 المؤرخ في 6 سبتمبر 1993). ويضمّ السلك أربع رتب قارّة: أستاذ التعليم
+        العالي، وأستاذ محاضر، وأستاذ مساعد، ومساعد. ومنذ سنة 1999، تطابق درجات
+        هذه الرتب مستويات التأجير في الصنف الفرعي أ1 من شبكة أجور أعوان الدولة
+        (الأمر عدد 1804 لسنة 1999). ويشمل التأجير كذلك منحًا خاصّة بالسلك، منها
+        منحة التأطير والبحث.
+      synonymes: [سلك المدرسين الباحثين]
+
+  - id: indemnite-encadrement-recherche
+    acronyme: null
+    statut: valide
+    references: []
+    # AR : « منحة التأطير والبحث », intitulés arabes du JORT (décret n° 2011-3325 et suivants, miroir iort) ; clé du décret n° 2011-3325 absente de la bibliographie, d'où l'absence de source_traduction.
+    source_definition: {ref: decret-85-1405}
+    voir_aussi: [enseignant-chercheur]
+    fr:
+      terme: "Indemnité d'encadrement et de recherche"
+      definition: >
+        Indemnité instituée au profit du corps de l'enseignement supérieur par le
+        décret n° 85-1405 du 8 novembre 1985, et servie aux enseignants
+        chercheurs des universités selon leur grade. Ses taux sont augmentés par
+        des décrets successifs, notamment en 2011 et de 2020 à 2021 ;
+        l'augmentation générale des salaires de 2026 à 2028 est servie aux
+        enseignants chercheurs par son intermédiaire.
+      synonymes: []
+    ar:
+      terme: منحة التأطير والبحث
+      definition: >
+        منحة أُحدثت لفائدة سلك التعليم العالي بمقتضى الأمر عدد 1405 لسنة 1985
+        المؤرخ في 8 نوفمبر 1985، وتُصرف للمدرسين الباحثين التابعين للجامعات حسب
+        رتبهم. ويُرفَّع في مقاديرها بأوامر متتالية، منها سنة 2011 ومن 2020 إلى
+        2021؛ وتُصرف الزيادة العامة في الأجور لسنوات 2026 إلى 2028 للمدرسين
+        الباحثين عن طريقها.
+      synonymes: []
+
+  - id: prime-de-rentree-universitaire
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : intitulé arabe du décret gouvernemental n° 2018-904.
+    source_definition: {ref: decret-gouv-2018-904-prime-rentree-universitaire, locator: "art. 1er"}
+    source_traduction: {ref: decret-gouv-2018-904-prime-rentree-universitaire}
+    voir_aussi: [enseignant-chercheur]
+    fr:
+      terme: Prime de rentrée universitaire
+      definition: ""
+      synonymes: []
+    ar:
+      terme: منحة العودة الجامعية
+      definition: ""
+      synonymes: []
+
+  - id: niveau-de-remuneration
+    acronyme: null
+    statut: valide
+    references: [decret-99-1804, decret-99-2358, decret-99-1208]
+    # AR : « مستوى التأجير » au texte arabe du décret n° 2007-268 (art. 10, miroir iort) ; pluriel « مستويات التأجير » à l'intitulé arabe du décret n° 99-1804.
+    source_definition: {ref: decret-97-1832}
+    source_traduction: {ref: decret-2007-268, locator: "art. 10"}
+    voir_aussi: [grille-des-salaires, grade]
+    fr:
+      terme: Niveau de rémunération
+      definition: >
+        Rang de la grille des salaires des agents de l'État établie en 1997, à
+        laquelle correspond, dans chaque catégorie ou sous-catégorie de grades,
+        un traitement de base en dinars. Des décrets de concordance, pris corps
+        par corps en 1999 et 2000, font correspondre chaque échelon de chaque
+        grade à un niveau de rémunération et remplacent les classements
+        indiciaires antérieurs. L'agent promu à un grade de la catégorie
+        immédiatement supérieure est reclassé au niveau dont le traitement de
+        base est immédiatement supérieur à celui qu'il percevait (décret
+        n° 97-1832, art. 10, rédaction du décret n° 2007-268). Les militaires et
+        les forces de sécurité intérieure ont une grille de niveaux qui leur est
+        propre.
+      synonymes: [Niveaux de rémunération]
+    ar:
+      terme: مستوى التأجير
+      definition: >
+        مرتبة في شبكة أجور أعوان الدولة المضبوطة سنة 1997، يقابلها، في كلّ صنف
+        أو صنف فرعي من الرتب، مرتب أساسي بالدينار. وتضبط أوامر المطابقة، الصادرة
+        سلكًا سلكًا سنتي 1999 و2000، مستوى التأجير الموافق لكلّ درجة من درجات
+        كلّ رتبة، وتعوّض الترتيب الاستدلالي السابق. ويُعاد ترتيب العون المرقّى
+        إلى رتبة تنتمي إلى الصنف الأعلى مباشرة في مستوى التأجير الموافق للمرتب
+        الأساسي الذي يفوق مباشرة ما كان يتقاضاه (الأمر عدد 1832 لسنة 1997،
+        الفصل 10، كما نُقّح بالأمر عدد 268 لسنة 2007). وللعسكريين ولأعوان قوات
+        الأمن الداخلي شبكة مستويات خاصّة بهم.
+      synonymes: [مستويات التأجير]
+
+  - id: corps-diplomatique
+    acronyme: null
+    statut: valide
+    references: [decret-99-2358, decret-73-167]
+    # AR : graphie du texte arabe du décret n° 91-1077 (« السلك الدبلوماسي »).
+    source_definition: {ref: decret-91-1077, locator: "art. 23"}
+    source_traduction: {ref: decret-91-1077}
+    voir_aussi: [indemnite-de-poste, indemnite-de-representation]
+    fr:
+      terme: Corps diplomatique
+      definition: >
+        Corps des agents diplomatiques du ministère des affaires étrangères,
+        régi par un statut particulier (décret n° 91-1077 du 22 juillet 1991) et,
+        en ce qui n'y est pas dérogé, par le statut général de la fonction
+        publique. Il compte quatre grades, trois en sous-catégorie A1 et un en
+        A2. Depuis 1999, leurs échelons correspondent aux niveaux de rémunération
+        de la grille des agents de l'État (décret n° 99-2358). En poste à
+        l'étranger, les agents perçoivent en outre une rémunération propre au
+        service à l'étranger (décret n° 73-167).
+      synonymes: []
+    ar:
+      terme: السلك الدبلوماسي
+      definition: >
+        سلك الأعوان الدبلوماسيين لوزارة الشؤون الخارجية، الخاضع لنظام أساسي خصوصي
+        (الأمر عدد 1077 لسنة 1991 المؤرخ في 22 جويلية 1991)، وللنظام الأساسي
+        العام للوظيفة العمومية في ما لم يقع استثناؤه. ويضمّ أربع رتب، ثلاث منها
+        في الصنف الفرعي أ1 وواحدة في الصنف الفرعي أ2. ومنذ سنة 1999، تطابق درجات
+        هذه الرتب مستويات التأجير في شبكة أجور أعوان الدولة (الأمر عدد 2358 لسنة
+        1999). ويتقاضى الأعوان المباشرون بالخارج، زيادة على ذلك، تأجيرًا خاصًّا
+        بالعمل بالخارج (الأمر عدد 167 لسنة 1973).
+      synonymes: []
+
+  - id: indemnite-de-poste
+    acronyme: null
+    statut: provisoire
+    references: [decret-73-168]
+    # AR : intitulé arabe d'un texte fixant les zones et taux de « منحة المركز » des agents du ministère des affaires étrangères (miroir iort) ; non relevé sur l'édition arabe du décret n° 73-167.
+    source_definition: {ref: decret-73-167, locator: "art. 5"}
+    voir_aussi: [corps-diplomatique, indemnite-de-representation]
+    fr:
+      terme: Indemnité de poste
+      definition: >
+        Indemnité versée aux agents du ministère des affaires étrangères en
+        service à l'étranger, en sus des émoluments de leur grade (décret
+        n° 73-167 du 6 avril 1973). Son taux dépend de la zone du poste, parmi
+        trois zones, et de la tranche d'indice de l'agent (décret n° 73-168 du
+        6 avril 1973).
+      synonymes: []
+    ar:
+      terme: منحة المركز
+      definition: >
+        منحة تُصرف لأعوان وزارة الشؤون الخارجية المباشرين بالخارج، زيادة على
+        تأجير رتبهم (الأمر عدد 167 لسنة 1973 المؤرخ في 6 أفريل 1973). ويتوقّف
+        مقدارها على منطقة المركز، من بين ثلاث مناطق، وعلى شريحة الرقم
+        الاستدلالي للعون (الأمر عدد 168 لسنة 1973 المؤرخ في 6 أفريل 1973).
+      synonymes: []
+
+  - id: indemnite-de-representation
+    acronyme: null
+    statut: provisoire
+    references: [arrete-1973-04-06-representation]
+    # AR : « منحة التمثيل », relevé dans plusieurs textes du miroir iort ; non relevé sur l'édition arabe du décret n° 73-167.
+    source_definition: {ref: decret-73-167, locator: "art. 7"}
+    voir_aussi: [corps-diplomatique, indemnite-de-poste]
+    fr:
+      terme: Indemnité de représentation
+      definition: >
+        Indemnité annuelle allouée aux agents du ministère des affaires
+        étrangères qui dirigent une mission à l'étranger : ambassadeur chef de
+        mission, consul général ou chargé d'affaires dirigeant une mission
+        diplomatique, consul dirigeant un consulat (décret n° 73-167 du 6 avril
+        1973). Son montant, fonction de la qualité du chef de mission, est fixé
+        par arrêté du Premier ministre.
+      synonymes: []
+    ar:
+      terme: منحة التمثيل
+      definition: >
+        منحة سنوية تُسند لأعوان وزارة الشؤون الخارجية الذين يرأسون بعثة بالخارج:
+        السفير رئيس البعثة، والقنصل العام أو القائم بالأعمال الذي يرأس بعثة
+        دبلوماسية، والقنصل الذي يرأس قنصلية (الأمر عدد 167 لسنة 1973 المؤرخ في
+        6 أفريل 1973). ويُضبط مبلغها، حسب صفة رئيس البعثة، بقرار من الوزير الأول.
+      synonymes: []
+
+  - id: indemnite-parlementaire
+    acronyme: null
+    statut: provisoire
+    references: [loi88-145-lf1989, loi2005-54]
+    # AR : « المنحة البرلمانية », intitulé arabe du décret-loi n° 60-9 (miroir iort) : attesté ; « المنحة النيابية », relevé dans un autre texte du miroir, gardé en synonyme. Statut laissé provisoire sur consigne (passe 2, 23/10/2026) : validable.
+    source_definition: {ref: decret-loi-60-9}
+    source_traduction: {ref: decret-loi-60-9}
+    voir_aussi: []
+    fr:
+      terme: Indemnité parlementaire
+      definition: >
+        Indemnité mensuelle versée au président et aux membres de l'assemblée
+        parlementaire pendant leur mandat. Le décret-loi n° 60-9 du 18 février
+        1960 l'institue et en fixe le montant forfaitaire ; le fonctionnaire élu
+        ne la cumule pas avec son traitement. De 1960 à 1988, la loi fixe son
+        montant ; depuis la loi de finances pour 1989 (art. 72 à 74), un décret
+        le fixe, et l'indemnité peut, à la demande du parlementaire, être
+        calculée sur la base des salaires et indemnités de son grade d'origine
+        dans la fonction publique ou les entreprises publiques. La règle est
+        étendue aux membres de la Chambre des conseillers en 2005.
+      synonymes: []
+    ar:
+      terme: المنحة البرلمانية
+      definition: >
+        منحة شهرية تُصرف لرئيس المجلس النيابي ولأعضائه طيلة نيابتهم. أحدثها
+        المرسوم عدد 9 لسنة 1960 المؤرخ في 18 فيفري 1960 وضبط مبلغها الجزافي، ولا
+        يجمع الموظف المنتخب بينها وبين مرتّبه. ومن 1960 إلى 1988، يضبط القانون
+        مبلغها؛ ومنذ قانون المالية لسنة 1989 (الفصول 72 إلى 74)، يُضبط بأمر،
+        ويمكن، بطلب من النائب، أن تُضبط المنحة على أساس أجور ومنح رتبته الأصلية
+        في الوظيفة العمومية أو المنشآت العمومية. ووُسّع هذا الحكم سنة 2005 إلى
+        أعضاء مجلس المستشارين.
+      synonymes: [المنحة النيابية]
+
+  - id: indemnite-de-magistrature
+    acronyme: null
+    statut: valide
+    references: []
+    # AR : « منحة قضاء لفائدة القضاة » au texte arabe du décret n° 85-814 (miroir iort) ; « منحة القضاء » dans les visas arabes des décrets relatifs au Tribunal administratif (décret n° 2010-1749 et suivants).
+    source_definition: {ref: decret85-814}
+    source_traduction: {ref: decret85-814}
+    voir_aussi: [magistrat, indemnite-de-permanence-magistrats]
+    fr:
+      terme: Indemnité de magistrature
+      definition: >
+        Indemnité attribuée aux magistrats selon leur grade, qui s'ajoute au
+        traitement de base. Le décret n° 85-814 du 7 juin 1985 l'attribue aux
+        magistrats de l'ordre judiciaire ; les magistrats du Tribunal
+        administratif et de la Cour des comptes ont la leur. Depuis 1999, le
+        traitement de base des magistrats suit la grille des agents de l'État :
+        l'indemnité de magistrature et les avantages d'un emploi fonctionnel
+        attachés au grade sont ce qui distingue leur rémunération.
+      synonymes: []
+    ar:
+      terme: منحة القضاء
+      definition: >
+        منحة تُسند إلى القضاة حسب رتبهم، وتُضاف إلى المرتب الأساسي. ويسندها الأمر
+        عدد 814 لسنة 1985 المؤرخ في 7 جوان 1985 إلى القضاة من الصنف العدلي؛
+        ولقضاة المحكمة الإدارية ولأعضاء دائرة المحاسبات منحتهم. ومنذ سنة 1999،
+        يتبع المرتب الأساسي للقضاة شبكة أجور أعوان الدولة، فتكون منحة القضاء
+        وامتيازات الخطة الوظيفية المرتبطة بالرتبة هي ما يميّز تأجيرهم.
+      synonymes: []
+
+  - id: conseil-superieur-magistrature
+    acronyme: null
+    statut: valide
+    references: [decret-loi2022-11]
+    # AR : loi organique n° 2016-34, art. 1er (texte arabe, miroir iort).
+    source_definition: {ref: loi-org-2016-34, locator: "art. 1er"}
+    source_traduction: {ref: loi-org-2016-34, locator: "art. 1er"}
+    voir_aussi: [magistrat]
+    fr:
+      terme: Conseil supérieur de la magistrature
+      definition: >
+        Institution constitutionnelle garante, dans le cadre de ses
+        attributions, du bon fonctionnement de la justice et de l'indépendance
+        de l'autorité judiciaire (loi organique n° 2016-34, art. 1er). Il se
+        compose de quatre organes : les conseils de la magistrature judiciaire,
+        administrative et financière, et l'assemblée plénière des trois conseils
+        (art. 8). Chaque conseil statue sur la carrière des magistrats qui
+        relèvent de lui — nomination, promotion, mutation — et sur leur
+        détachement ou leur mise à la retraite anticipée (art. 45) ; il ne fixe
+        pas leur barème de rémunération. En 2022, un Conseil supérieur
+        provisoire de la magistrature le remplace (décret-loi n° 2022-11).
+      synonymes: []
+    ar:
+      terme: المجلس الأعلى للقضاء
+      definition: >
+        مؤسسة دستورية ضامنة في نطاق صلاحياتها حسن سير القضاء واستقلالية السلطة
+        القضائية (القانون الأساسي عدد 34 لسنة 2016، الفصل الأول). ويتكوّن من
+        أربعة هياكل: مجلس القضاء العدلي ومجلس القضاء الإداري ومجلس القضاء المالي
+        والجلسة العامة للمجالس القضائية الثلاثة (الفصل 8). ويبتّ كلّ مجلس قضائي
+        في المسار المهني للقضاة الراجعين إليه بالنظر من تسمية وترقية ونقلة، وفي
+        مطالب الإلحاق والإحالة على التقاعد المبكّر (الفصل 45)؛ ولا يضبط سلّم
+        تأجيرهم. وفي سنة 2022، عُوّض بمجلس أعلى مؤقت للقضاء (المرسوم عدد 11
+        لسنة 2022).
+      synonymes: []
+
+  - id: institut-superieur-magistrature
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : dénomination arabe courante au JORT ; à confirmer sur l'édition arabe de la loi n° 85-80.
+    source_definition: {ref: loi85-80}
+    voir_aussi: [magistrat, auditeur-de-justice]
+    fr:
+      terme: Institut supérieur de la magistrature
+      definition: ""
+      synonymes: []
+    ar:
+      terme: المعهد الأعلى للقضاء
+      definition: ""
+      synonymes: []
+
+  - id: auditeur-de-justice
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : « الملحق القضائي » / « الملحقين القضائيين », relevés dans le miroir iort ; à confirmer sur le texte arabe de la loi organique n° 85-79.
+    source_definition: {ref: loi-org-85-79, locator: "art. 29 (nouveau)"}
+    voir_aussi: [magistrat, institut-superieur-magistrature]
+    fr:
+      terme: Auditeur de justice
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الملحق القضائي
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-de-permanence-magistrats
+    acronyme: null
+    statut: valide
+    references: []
+    # Paire lue dans les deux versions du décret n° 2001-2125 (miroir iort) : « indemnité spécifique appelée indemnité de permanence » / « منحة خصوصية تسمّى منحة الاستمرار ».
+    source_definition: {ref: decret2001-2125, locator: "art. 1er à 3"}
+    source_traduction: {ref: decret2001-2125, locator: "art. 1er"}
+    voir_aussi: [magistrat, indemnite-de-magistrature]
+    fr:
+      terme: "Indemnité de permanence (magistrats)"
+      definition: >
+        Indemnité spécifique instituée au profit des magistrats de l'ordre
+        judiciaire (décret n° 2001-2125, art. 1er), en contrepartie des séances
+        de permanence qu'ils assurent en dehors de l'horaire administratif
+        (art. 2). Servie mensuellement depuis le 1er janvier 2002, selon le
+        grade, elle est soumise à l'impôt sur le revenu et aux retenues au titre
+        de la retraite, de la prévoyance sociale et du capital décès (art. 3).
+      synonymes: []
+    ar:
+      terme: منحة الاستمرار
+      definition: >
+        منحة خصوصية أُحدثت لفائدة القضاة من الصنف العدلي (الأمر عدد 2125 لسنة
+        2001، الفصل الأول)، مقابل حصص الاستمرار التي يؤمّنونها خارج أوقات العمل
+        الإداري (الفصل 2). وتُصرف شهريًا منذ غرّة جانفي 2002، حسب الرتبة، وتخضع
+        للضريبة على الدخل وللحجز بعنوان المساهمة في نظام التقاعد والحيطة
+        الاجتماعية ورأس المال عند الوفاة (الفصل 3).
+      synonymes: []
+
+  - id: indemnite-charges-militaires
+    acronyme: null
+    statut: valide
+    references: [decret2013-3797]
+    # AR : « منحة الكلف العسكرية » au texte arabe du décret n° 2013-3797, art. 1er (miroir iort).
+    source_definition: {ref: decret-67-158, locator: "art. 1er"}
+    source_traduction: {ref: decret2013-3797, locator: "art. 1er"}
+    voir_aussi: [solde-militaire]
+    fr:
+      terme: Indemnité pour charges militaires
+      definition: >
+        Indemnité servie aux officiers, sous-officiers et hommes de troupe des
+        armées de terre, de l'air et de la mer. Instituée pour l'armée de terre
+        par le décret n° 67-158 du 31 mai 1967, puis pour les deux autres armées
+        en 1968, elle est annuelle et son taux dépend du grade et de la
+        situation de famille. Depuis le 1er octobre 2013, elle est majorée d'un
+        montant mensuel uniforme pour tous les grades (décret n° 2013-3797).
+      synonymes: []
+    ar:
+      terme: منحة الكلف العسكرية
+      definition: >
+        منحة مخوّلة للضباط وضباط الصف ورجال الجيش التابعين لجيوش البرّ والطيران
+        والبحر. أُحدثت لجيش البرّ بمقتضى الأمر عدد 158 لسنة 1967 المؤرخ في 31
+        ماي 1967، ثمّ للجيشين الآخرين سنة 1968، وهي سنوية ويتوقّف مقدارها على
+        الرتبة وعلى الوضعية العائلية. ومنذ غرّة أكتوبر 2013، يُرفَّع فيها بمبلغ
+        شهري موحّد بالنسبة إلى كافة الرتب (الأمر عدد 3797 لسنة 2013).
+      synonymes: []
+
+  - id: service-national
+    acronyme: null
+    statut: valide
+    references: [loi67-19]
+    # AR : loi n° 2004-1, art. 1er à 4 (texte arabe, miroir iort).
+    source_definition: {ref: loi2004-1, locator: "art. 1er à 4"}
+    source_traduction: {ref: loi2004-1, locator: "art. 1er"}
+    voir_aussi: [appele, solde-militaire]
+    fr:
+      terme: Service national
+      definition: >
+        Obligation de tout citoyen âgé de vingt ans, qui y demeure tenu jusqu'à
+        trente-cinq ans, ayant pour but la préparation du citoyen à la défense
+        de la patrie et sa participation au développement global du pays (loi
+        n° 2004-1, art. 1er et 2). Il revêt l'une de deux formes : le service
+        militaire actif, ou le service national en dehors des unités des forces
+        armées, auprès des forces de sécurité intérieure, par affectation
+        individuelle dans les administrations et les entreprises ou dans la
+        coopération technique (art. 3 et 4). Il succède au service militaire de
+        la loi n° 67-19.
+      synonymes: []
+    ar:
+      terme: الخدمة الوطنية
+      definition: >
+        واجب محمول على كلّ مواطن بلغ من العمر عشرين عامًا، ويبقى ملزمًا بأدائه
+        إلى حين بلوغه سنّ الخامسة والثلاثين، ويهدف إلى إعداد المواطن للدفاع عن
+        حوزة الوطن وإلى المشاركة في التنمية الشاملة للبلاد (القانون عدد 1 لسنة
+        2004، الفصلان الأول و2). وتتخذ الخدمة الوطنية أحد شكلين: خدمة عسكرية
+        مباشرة، أو خدمة وطنية خارج وحدات القوات المسلحة، لدى وحدات قوات الأمن
+        الداخلي أو في نطاق التعيينات الفردية بالإدارات والمؤسسات أو في إطار
+        التعاون الفني (الفصلان 3 و4). وقد خلفت الخدمة العسكرية التي نظّمها
+        القانون عدد 19 لسنة 1967.
+      synonymes: []
+
+  - id: appele
+    acronyme: null
+    statut: provisoire
+    references: []
+    # AR : pluriel « المجندين » dans les intitulés JORT (décret gouvernemental n° 2016-808 et textes sur le service national) ; singulier à confirmer.
+    source_definition: {ref: loi67-19, locator: "art. 2"}
+    voir_aussi: [service-national, solde-militaire]
+    fr:
+      terme: Appelé
+      definition: ""
+      synonymes: []
+    ar:
+      terme: المجنّد
+      definition: ""
+      synonymes: []
+
+  - id: indemnite-provisoire-complementaire
+    acronyme: null
+    statut: valide
+    references: []
+    # AR : intitulé arabe du décret n° 82-515 (« منحة وقتية تكميلية لفائدة الأعوان العسكريين… », miroir iort). À ne pas confondre avec l'indemnité complémentaire provisoire du SMIG (décret n° 81-437, « المنحة الإضافية المؤقتة »).
+    source_definition: {ref: decret82-515}
+    source_traduction: {ref: decret82-515}
+    voir_aussi: [solde-militaire, forces-de-securite-interieure, indemnite-complementaire-provisoire]
+    fr:
+      terme: "Indemnité provisoire complémentaire (militaires et forces de sécurité intérieure)"
+      definition: >
+        Indemnité instituée en 1982 au profit des personnels militaires et des
+        personnels de la police nationale, de la sûreté nationale, de la garde
+        nationale, de la protection civile et des services pénitentiaires et du
+        travail rééducatif (décret n° 82-515 du 16 mars 1982). Elle est commune
+        aux militaires et aux corps de sécurité intérieure, et ne se confond pas
+        avec l'indemnité complémentaire provisoire servie aux agents civils.
+      synonymes: []
+    ar:
+      terme: المنحة الوقتية التكميلية
+      definition: >
+        منحة أُحدثت سنة 1982 لفائدة الأعوان العسكريين وأعوان الشرطة الوطنية
+        والأمن الوطني والحرس الوطني وأعوان الحماية المدنية وأعوان مصالح السجون
+        والتشغيل الإصلاحي (الأمر عدد 515 لسنة 1982 المؤرخ في 16 مارس 1982). وهي
+        مشتركة بين العسكريين وأسلاك الأمن الداخلي، ولا تختلط بالمنحة الإضافية
+        المؤقتة المسندة للأعوان المدنيين.
+      synonymes: []
+
+  - id: agents-des-douanes
+    acronyme: null
+    statut: valide
+    references: [decret2013-3798]
+    # AR : intitulé arabe de la loi n° 95-46 (« النظام الأساسي العام لأعوان الديوانة », miroir iort) et visas arabes de l'arrêté du 25 novembre 2019.
+    source_definition: {ref: loi95-46, locator: "art. 1er"}
+    source_traduction: {ref: loi95-46}
+    voir_aussi: [forces-de-securite-interieure, prime-de-risque]
+    fr:
+      terme: Agents des douanes
+      definition: >
+        Agents des divers corps des douanes, régis par un statut général propre
+        (loi n° 95-46 du 15 mai 1995), distinct du statut général de la fonction
+        publique, et par des statuts particuliers pris par décret. Ils portent
+        des grades de type militaire, mais sont payés sur la grille des salaires
+        des agents de l'État ; leurs indemnités propres comprennent une prime de
+        risque et une part du produit des amendes et confiscations.
+      synonymes: []
+    ar:
+      terme: أعوان الديوانة
+      definition: >
+        أعوان مختلف أسلاك الديوانة، الخاضعون لنظام أساسي عام خاصّ بهم (القانون
+        عدد 46 لسنة 1995 المؤرخ في 15 ماي 1995)، متميّز عن النظام الأساسي العام
+        للوظيفة العمومية، ولأنظمة أساسية خصوصية تُضبط بأمر. ويحملون رتبًا ذات
+        طابع عسكري، غير أنّ أجورهم تُضبط حسب شبكة أجور أعوان الدولة؛ ومن المنح
+        الخاصّة بهم منحة الخطر ونصيب من محصول الخطايا والمصادرات.
+      synonymes: []
+
+  - id: indemnite-charge-securite
+    acronyme: null
+    statut: valide
+    references: [decret2005-3168]
+    # AR : décret n° 2004-1335, art. 1er (texte arabe, miroir iort). Le décret du 1er février 1992 qui attribue l'indemnité, cité en visa sans numéro, n'est pas identifié.
+    source_definition: {ref: decret2004-1335}
+    source_traduction: {ref: decret2004-1335, locator: "art. 1er"}
+    voir_aussi: [forces-de-securite-interieure]
+    fr:
+      terme: Indemnité de charge de sécurité
+      definition: >
+        Indemnité propre aux agents des forces de sécurité intérieure, attribuée
+        par un décret du 1er février 1992 avec trois autres indemnités du même
+        corps : l'indemnité de risque, l'indemnité de commandement et de
+        responsabilité et l'indemnité de logement. Pour les agents relevant du
+        ministère de la justice, ses montants sont augmentés par tranches en
+        2004, puis de 2005 à 2007 (décrets n° 2004-1335 et 2005-3168).
+      synonymes: []
+    ar:
+      terme: منحة التكاليف الأمنية
+      definition: >
+        منحة خاصّة بأعوان قوات الأمن الداخلي، أُسندت بأمر مؤرخ في غرّة فيفري
+        1992 مع ثلاث منح أخرى خاصّة بهذه الأسلاك. وبالنسبة إلى أعوان قوات الأمن
+        الداخلي التابعين لوزارة العدل، يُرفَّع في مقاديرها على أقساط سنة 2004،
+        ثمّ من 2005 إلى 2007 (الأمر عدد 1335 لسنة 2004 والأمر عدد 3168 لسنة
+        2005).
+      synonymes: []
+
+  - id: prime-de-risque
+    acronyme: null
+    statut: valide
+    references: []
+    # AR : décret n° 2013-3798, art. 1er (texte arabe, miroir iort) : « منحة الخطر المسندة لأعوان سلك المصالح الديوانية ».
+    source_definition: {ref: decret2013-3798, locator: "art. 1er"}
+    source_traduction: {ref: decret2013-3798, locator: "art. 1er"}
+    voir_aussi: [agents-des-douanes, forces-de-securite-interieure]
+    fr:
+      terme: Prime de risque
+      definition: >
+        Prime mensuelle attribuée aux agents des services douaniers. Depuis le
+        1er septembre 2013, son montant est le même pour tous les grades, des
+        sous-catégories A1, A2 et A3 aux catégories B, C et D (décret
+        n° 2013-3798, art. 1er) ; il remplace les taux par grade fixés en 1997.
+        Les militaires et les forces de sécurité intérieure perçoivent une
+        indemnité de risque qui leur est propre.
+      synonymes: []
+    ar:
+      terme: منحة الخطر
+      definition: >
+        منحة شهرية تُسند لأعوان سلك المصالح الديوانية. ومنذ غرّة سبتمبر 2013،
+        يُضبط مقدارها بصفة موحّدة بالنسبة إلى كافة الرتب، من الأصناف الفرعية أ1
+        وأ2 وأ3 إلى الأصناف ب وج ود (الأمر عدد 3798 لسنة 2013، الفصل الأول)؛
+        ويعوّض هذا المقدار النسب المضبوطة حسب الرتبة سنة 1997. وللعسكريين ولأعوان
+        قوات الأمن الداخلي منحة خطر خاصّة بهم.
+      synonymes: []
+
+  - id: gratification-exceptionnelle
+    acronyme: null
+    statut: valide
+    references: [loi82-70]
+    # AR : « مكافأة استثنائية لأعوان قوات الأمن الداخلي » au texte arabe de la loi n° 2000-58 (miroir iort).
+    source_definition: {ref: loi2000-58, locator: "art. 25 quater"}
+    source_traduction: {ref: loi2000-58}
+    voir_aussi: [forces-de-securite-interieure]
+    fr:
+      terme: Gratification exceptionnelle
+      definition: >
+        Gratification qui peut être accordée aux agents des forces de sécurité
+        intérieure, sous forme de promotion à un grade supérieur, d'avancement
+        d'un ou de plusieurs échelons ou d'une prime globale, à ceux qui ont
+        amélioré la qualité des services, évité à l'administration des dégâts
+        graves ou se sont distingués par un haut degré de perfection dans leurs
+        fonctions (loi n° 82-70, art. 25 quater, ajouté par la loi n° 2000-58).
+        Elle est accordée directement par le Président de la République, ou sur
+        proposition du ministre de l'intérieur après avis du conseil d'honneur
+        du corps ; le ministre peut lui-même l'accorder, sous forme de promotion
+        ou d'avancement, pour courage ou blessure grave en service.
+      synonymes: []
+    ar:
+      terme: مكافأة استثنائية
+      definition: >
+        مكافأة يمكن أن تُمنح لأعوان قوات الأمن الداخلي في شكل ترقية إلى رتبة
+        أعلى أو تدرّج بدرجة أو عدّة درجات أو في شكل منحة جملية، للأعوان الذين
+        أنجزوا طريقة عمل ترتّب عنها تحسّن في نوعية الخدمات، أو جنّبوا الإدارة
+        أضرارًا فادحة، أو تميّزوا بدرجة عالية من الإتقان في أداء مهامهم
+        (القانون عدد 70 لسنة 1982، الفصل 25 رابعا، المضاف بالقانون عدد 58 لسنة
+        2000). وتُسند مباشرة من قبل رئيس الجمهورية، أو باقتراح من وزير الداخلية
+        بعد أخذ رأي مجلس الشرف للسلك؛ ويمكن لوزير الداخلية أن يمنحها في شكل
+        ترقية أو تدرّج للأعوان الذين يتميّزون بشجاعتهم أو يصابون بجروح خطيرة
+        أثناء مباشرتهم لوظيفتهم.
+      synonymes: []
+
+  - id: depart-volontaire
+    acronyme: null
+    statut: valide
+    references: [decret2018-205]
+    # AR : intitulé et art. 7 du texte arabe de la loi n° 2018-5 (« المغادرة الاختيارية », miroir iort).
+    source_definition: {ref: loi2018-5, locator: "art. 1er"}
+    source_traduction: {ref: loi2018-5}
+    voir_aussi: [prime-de-depart-volontaire, retraite-anticipee-volontaire, mise-a-la-retraite-avant-age-legal]
+    fr:
+      terme: "Départ volontaire (agents publics)"
+      definition: >
+        Cessation définitive de fonctions qu'un agent public soumis à l'un des
+        statuts généraux peut demander, à titre exceptionnel, en contrepartie
+        d'une indemnité de départ (loi n° 2018-5, art. 1er et 7). L'agent doit
+        compter cinq ans au moins de travail effectif soumis à retenue pour la
+        retraite, et une commission spéciale statue sur sa demande (art. 2 à 4).
+        Il ne peut plus être recruté, à quelque titre que ce soit, par l'État,
+        les collectivités locales et les établissements et entreprises publics
+        (art. 7), et garde ses droits à pension de retraite ou à allocation de
+        vieillesse selon la législation en vigueur (art. 8).
+      synonymes: []
+    ar:
+      terme: المغادرة الاختيارية
+      definition: >
+        انقطاع نهائي عن الوظيف يمكن للعون العمومي الخاضع لأحد الأنظمة الأساسية
+        العامة أن يطلبه بصفة استثنائية مقابل الحصول على منحة مغادرة (القانون عدد
+        5 لسنة 2018، الفصلان الأول و7). ويُشترط ألّا تقلّ فترة العمل الفعلي
+        الخاضعة للحجز بعنوان التقاعد عن خمس سنوات، وتبتّ لجنة خاصّة في المطلب
+        (الفصول 2 إلى 4). ويُمنع إعادة انتداب العون المغادر بأيّ صفة كانت بمصالح
+        الدولة والجماعات المحلية والمؤسسات والمنشآت العمومية (الفصل 7)، ويحتفظ
+        بحقوقه في التقاعد طبقًا للتشريع الجاري به العمل (الفصل 8).
+      synonymes: []
+
+  - id: prime-de-depart-volontaire
+    acronyme: null
+    statut: valide
+    references: []
+    # AR : « منحة مغادرة جزافية » / « منحة المغادرة الاختيارية », loi n° 2018-5, art. 5 (texte arabe, miroir iort). Le texte français de la loi dit « indemnité (forfaitaire) de départ » ; « prime de départ volontaire » est le terme du chapitre.
+    source_definition: {ref: loi2018-5, locator: "art. 5"}
+    source_traduction: {ref: loi2018-5, locator: "art. 5"}
+    voir_aussi: [depart-volontaire]
+    fr:
+      terme: Prime de départ volontaire
+      definition: >
+        Indemnité forfaitaire de départ que l'employeur d'origine verse, en une
+        seule fois et immédiatement, à l'agent public dont la demande de départ
+        volontaire est acceptée (loi n° 2018-5, art. 5). Elle est égale à
+        trente-six salaires mensuels nets, calculés sur le dernier salaire
+        mensuel net perçu, et ne peut dépasser 50 % des salaires nets que
+        l'agent aurait perçus jusqu'à l'âge légal de mise à la retraite. Elle
+        est exonérée de l'impôt sur le revenu et de la retenue à la source.
+      synonymes: [Indemnité de départ, Indemnité forfaitaire de départ]
+    ar:
+      terme: منحة المغادرة
+      definition: >
+        منحة مغادرة جزافية يتكفّل المشغّل الأصلي بدفعها دفعة واحدة وبصفة فورية
+        للعون العمومي الذي قُبل مطلب مغادرته الاختيارية (القانون عدد 5 لسنة
+        2018، الفصل 5). وتساوي ستة وثلاثين أجرًا شهريًا صافيًا، باعتماد الأجر
+        الشهري الصافي الأخير أجرًا مرجعيًا، ولا يمكن أن تفوق 50% من الأجور
+        الصافية التي كان سيتقاضاها العون إلى تاريخ بلوغه السنّ القانونية للإحالة
+        على التقاعد. وتُعفى من الضريبة على الدخل ومن الخصم من المورد.
+      synonymes: [منحة المغادرة الاختيارية]
+
+  - id: effectif-autorise
+    acronyme: null
+    statut: valide
+    references: []
+    # AR : loi organique n° 2019-15, art. 1er (« العدد الجملي لأعوان الدولة والمؤسسات العمومية ») et art. 45 et 48 (« العدد الجملي للأعوان المرخص فيهم »), texte arabe, miroir iort.
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 1er"}
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 45"}
+    voir_aussi: [masse-salariale, mission-budgetaire]
+    fr:
+      terme: Effectif global du personnel autorisé
+      definition: >
+        Nombre de personnels autorisé au titre de l'année budgétaire au profit
+        des ministères, y compris leurs services centraux et régionaux, et des
+        établissements publics dont les budgets sont rattachés pour ordre au
+        budget de l'État (loi organique du budget n° 2019-15, art. 1er). La loi
+        de finances le fixe par mission, et il fait l'objet d'un vote global
+        (art. 45 et 48) ; ces dispositions s'appliquent au plus tard à la fin de
+        l'année 2020 (art. 70). C'est une autorisation votée, non un effectif
+        observé.
+      synonymes: [Effectif autorisé, Effectif global du personnel de l'État et des établissements publics]
+    ar:
+      terme: العدد الجملي للأعوان المرخص فيهم
+      definition: >
+        عدد الأعوان المرخص فيهم بعنوان السنة المالية لفائدة الوزارات بما في ذلك
+        مصالحها المركزية والجهوية، وأعوان المؤسسات العمومية الملحقة ميزانياتها
+        ترتيبيا بميزانية الدولة (القانون الأساسي للميزانية عدد 15 لسنة 2019،
+        الفصل الأول). ويضبطه قانون المالية حسب المهمة، ويجري التصويت عليه بصفة
+        جملية (الفصلان 45 و48)؛ وتدخل هذه الأحكام حيّز النفاذ في أجل أقصاه نهاية
+        سنة 2020 (الفصل 70). وهو ترخيص مصادق عليه، لا عدد فعلي للأعوان.
+      synonymes: [العدد الجملي لأعوان الدولة والمؤسسات العمومية]
+
+  - id: recrutement-direct
+    acronyme: null
+    statut: valide
+    references: [loi2020-38]
+    # AR : « الانتدابات المباشرة » (loi n° 2012-4, art. 3) et « الانتداب المباشر » (loi n° 2020-38, art. 1er à 3), textes arabes, miroir iort.
+    source_definition: {ref: loi2012-4, locator: "art. 3"}
+    source_traduction: {ref: loi2020-38, locator: "art. 1er"}
+    voir_aussi: [concours-externe-sur-dossiers]
+    fr:
+      terme: Recrutement direct
+      definition: >
+        Recrutement dans le secteur public sans concours, par dérogation au
+        concours externe sur dossiers et sur épreuves. La loi n° 2012-4 (art. 3)
+        le réserve à un membre de chaque famille des martyrs de la révolution,
+        aux blessés de la révolution et aux bénéficiaires de l'amnistie
+        générale, ou, en cas d'empêchement, à un membre de leur famille. La loi
+        n° 2020-38 le prévoit, par tranches annuelles consécutives, pour les
+        diplômés du supérieur au chômage depuis dix ans et plus, les diplômés
+        chômeurs de 35 ans et plus et un membre de chaque famille dont tous les
+        membres sont au chômage (art. 1er à 3).
+      synonymes: []
+    ar:
+      terme: الانتداب المباشر
+      definition: >
+        انتداب في القطاع العمومي دون مناظرة، استثناءً من صيغة المناظرة الخارجية
+        بالملفات والاختبارات. ويخصّصه القانون عدد 4 لسنة 2012 (الفصل 3) لفرد واحد
+        من كلّ عائلة من عائلات شهداء الثورة، ولمصابي الثورة وللمنتفعين بالعفو
+        العام، أو عند التعذّر لفرد من عائلاتهم. وينصّ عليه القانون عدد 38 لسنة
+        2020، على دفعات سنوية متتالية، لفائدة العاطلين عن العمل من أصحاب الشهائد
+        العليا منذ عشر سنوات فأكثر، ولأصحاب الشهائد العليا الذين بلغوا 35 سنة
+        فأكثر، ولفرد من كلّ عائلة جميع أفرادها عاطلون عن العمل (الفصول 1 إلى 3).
+      synonymes: [الانتدابات المباشرة]
+
+  - id: concours-externe-sur-dossiers
+    acronyme: null
+    statut: valide
+    references: [loi2012-4]
+    # AR : « مناظرات خارجية بالملفات », décret-loi n° 2011-32, art. 2 (texte arabe, miroir iort).
+    source_definition: {ref: decretloi2011-32, locator: "art. 2"}
+    source_traduction: {ref: decretloi2011-32, locator: "art. 2"}
+    voir_aussi: [recrutement-direct]
+    fr:
+      terme: Concours externe sur dossiers
+      definition: >
+        Concours de recrutement dans le secteur public où les candidats sont
+        classés sur dossier, selon des critères que fixe le texte. Le
+        décret-loi n° 2011-32 en fait, à titre dérogatoire, la voie des
+        recrutements autorisés pour 2011 (art. 1er et 2) : un jury classe les
+        candidats sur la base de l'année d'obtention du diplôme, de l'âge, de la
+        situation familiale, de la mention du diplôme et des stages de formation
+        (art. 3). La loi n° 2012-4 lui substitue le concours externe sur
+        dossiers et sur épreuves.
+      synonymes: []
+    ar:
+      terme: مناظرة خارجية بالملفات
+      definition: >
+        مناظرة انتداب في القطاع العمومي يُرتَّب فيها المترشحون على أساس ملفاتهم،
+        وفق مقاييس يضبطها النص. وقد جعلها المرسوم عدد 32 لسنة 2011، بصفة
+        استثنائية، صيغة تنفيذ برنامج الانتدابات المرخص فيها بعنوان سنة 2011
+        (الفصلان الأول و2): تتولّى لجنة ترتيب المترشحين على أساس سنة التخرّج وسنّ
+        المترشح والوضعية العائلية وملاحظة الشهادة العلمية والتربصات التكوينية
+        (الفصل 3). وعوّضها القانون عدد 4 لسنة 2012 بالمناظرة الخارجية بالملفات
+        والاختبارات.
+      synonymes: []
+
+  - id: conge-creation-entreprise
+    acronyme: null
+    statut: valide
+    references: [loi83-112]
+    # AR : « عطلة لبعث مؤسسة », art. 50 bis nouveau de la loi n° 83-112, dans la rédaction de l'art. 15 de la loi de finances pour 2022 (texte arabe, miroir iort). L'article 15 remplace un article 50 bis existant.
+    source_definition: {ref: dl2021-21-lf2022, locator: "art. 15"}
+    source_traduction: {ref: dl2021-21-lf2022, locator: "art. 15"}
+    voir_aussi: [depart-volontaire]
+    fr:
+      terme: "Congé pour création d'entreprise"
+      definition: >
+        Congé qui peut être accordé au fonctionnaire titulaire pour créer une
+        entreprise, pour trois ans au plus, renouvelable une fois, par arrêté du
+        chef de l'administration ou décision du chef de l'établissement (statut
+        général de la fonction publique, art. 50 bis, dans sa rédaction issue de
+        la loi de finances pour 2022, art. 15). Pendant les trois premières
+        années, le fonctionnaire garde sa couverture sociale, sans droit à
+        l'avancement ni à la promotion : il verse ses cotisations de retraite,
+        d'assurance maladie et de capital décès, et l'administration la part de
+        l'employeur. Il perçoit la moitié de son traitement la première année,
+        ou les deux premières années si l'entreprise est créée dans une zone de
+        développement régional.
+      synonymes: []
+    ar:
+      terme: عطلة لبعث مؤسسة
+      definition: >
+        عطلة يمكن أن تُمنح للموظف المترسم لبعث مؤسسة، لمدّة أقصاها ثلاث سنوات
+        قابلة للتجديد مرّة واحدة، بقرار من رئيس الإدارة أو بمقرّر من رئيس
+        المؤسسة (النظام الأساسي العام للوظيفة العمومية، الفصل 50 مكرر، كما نُقّح
+        بالفصل 15 من قانون المالية لسنة 2022). ويواصل الموظف الانتفاع بالتغطية
+        الاجتماعية خلال الثلاث سنوات الأولى من العطلة دون أن يكون له الحق في
+        التدرّج والترقية، ويدفع مساهمته بعنوان التقاعد والتأمين على المرض ورأس
+        المال عند الوفاة، في حين تتكفّل الإدارة بالمساهمات المحمولة على المشغّل.
+        ويتمتّع بنصف المرتب خلال السنة الأولى من العطلة، أو لمدّة سنتين في صورة
+        بعث مؤسسة بمناطق التنمية الجهوية.
+      synonymes: []
+
+  - id: prime-salariale-publique
+    acronyme: null
+    statut: provisoire
+    references: []
+    # Notion analytique, sans terme officiel : AR non attesté.
+    source_definition: {ref: fmi-2016-government-compensation}
+    voir_aussi: [masse-salariale, difference-compensatrice]
+    fr:
+      terme: Prime salariale du secteur public
+      definition: ""
+      synonymes: []
+    ar:
+      terme: علاوة الأجر في القطاع العمومي
+      definition: ""
+      synonymes: []
+
+  - id: salaire-d-efficience
+    acronyme: null
+    statut: provisoire
+    references: []
+    # Notion analytique, sans terme officiel : AR non attesté.
+    source_definition: {ref: vanrijckeghem-weder-2001-corruption}
+    voir_aussi: [prime-salariale-publique]
+    fr:
+      terme: "Salaire d'efficience"
+      definition: >
+        Salaire fixé au-dessus de celui qui suffirait à pourvoir l'emploi, pour
+        accroître l'effort ou l'intégrité de l'agent : plus le salaire est
+        élevé, plus l'agent perd s'il est révoqué, et plus une faute ou un
+        pot-de-vin lui coûte. L'effet dépend de la probabilité de détection et
+        de la sanction ; quand la détection est rare ou les pots-de-vin élevés,
+        le salaire qui élimine la corruption devient très élevé.
+      synonymes: []
+    ar:
+      terme: أجر الكفاءة
+      definition: >
+        أجر يُضبط فوق الأجر الذي يكفي لسدّ الوظيفة، قصد الرفع من جهد العون أو
+        نزاهته: فكلّما ارتفع الأجر، ارتفع ما يخسره العون في صورة عزله، وارتفعت
+        كلفة الخطأ أو الرشوة بالنسبة إليه. ويتوقّف هذا الأثر على احتمال الكشف
+        وعلى العقوبة؛ فإذا كان الكشف نادرًا أو كانت الرشاوى مرتفعة، أصبح الأجر
+        الكفيل بالقضاء على الفساد مرتفعًا جدًّا.
+      synonymes: []
+
+  - id: difference-compensatrice
+    acronyme: null
+    statut: provisoire
+    references: [finan-olken-pande-2017-personnel-economics]
+    # Notion analytique (compensating differential), sans terme officiel : AR non attesté. Distincte de l'indemnité compensatrice (« المنحة التعويضية »).
+    source_definition: {ref: dalbo-finan-rossi-2013-state-capabilities}
+    voir_aussi: [prime-salariale-publique, elasticite-offre-travail]
+    fr:
+      terme: Différence compensatrice
+      definition: >
+        Écart de salaire qui compense les désavantages d'un emploi — danger,
+        éloignement, pénibilité — pour que des candidats de même qualification
+        l'acceptent. Notion de l'analyse économique, distincte de l'indemnité
+        compensatrice, élément de rémunération prévu par les textes.
+      synonymes: [Différentiel compensateur]
+    ar:
+      terme: الفارق التعويضي في الأجر
+      definition: >
+        فارق في الأجر يعوّض مساوئ الوظيفة — الخطر أو البعد أو المشقّة — حتى يقبلها
+        مترشحون من المؤهلات نفسها. وهو مفهوم من التحليل الاقتصادي، يختلف عن
+        المنحة التعويضية التي تنصّ عليها النصوص بوصفها عنصرًا من عناصر التأجير.
+      synonymes: []
+
+  - id: elasticite-offre-travail
+    acronyme: null
+    statut: provisoire
+    references: [warner-asch-2001-all-volunteer]
+    # Notion analytique, sans terme officiel : AR non attesté.
+    source_definition: {ref: dalbo-finan-rossi-2013-state-capabilities}
+    voir_aussi: [difference-compensatrice]
+    fr:
+      terme: "Élasticité de l'offre de travail"
+      definition: >
+        Rapport entre la variation relative de la quantité de travail offerte —
+        nombre de candidats, d'engagements ou d'heures — et la variation
+        relative du salaire qui la provoque. Pour un employeur public, elle
+        mesure de combien un relèvement du salaire relatif accroît le nombre de
+        candidats ou d'engagés.
+      synonymes: []
+    ar:
+      terme: مرونة عرض العمل
+      definition: >
+        النسبة بين التغيّر النسبي في كمية العمل المعروضة — عدد المترشحين أو
+        الانتدابات أو ساعات العمل — والتغيّر النسبي في الأجر الذي أحدثه. وهي
+        تقيس، بالنسبة إلى مشغّل عمومي، مقدار ارتفاع عدد المترشحين أو المنتدَبين
+        عند الترفيع في الأجر النسبي.
+      synonymes: []
+
+  - id: selection-adverse
+    acronyme: null
+    statut: provisoire
+    references: []
+    # Notion analytique, sans terme officiel : AR non attesté.
+    source_definition: {ref: rama-1997-downsizing}
+    voir_aussi: [depart-volontaire]
+    fr:
+      terme: "Sélection adverse (départs volontaires)"
+      definition: ""
+      synonymes: []
+    ar:
+      terme: الانتقاء العكسي
       definition: ""
       synonymes: []
 

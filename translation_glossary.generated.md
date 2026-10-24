@@ -22,6 +22,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
 | Agence tunisienne de la formation professionnelle | الوكالة التونسية للتكوين المهني | ATFP |
 | Agent temporaire | العون الوقتي |  |
+| Agents des douanes | أعوان الديوانة |  |
 | Agrément d'une convention collective | المصادقة على الاتفاقية المشتركة |  |
 | Aide à la personne | الدعم الموجّه إلى الأسر |  |
 | Aide à la pierre | الدعم الموجّه إلى البناء |  |
@@ -34,6 +35,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Animateur des jardins d'enfants | منشط رياض الأطفال |  |
 | Année préparatoire | السنة التحضيرية |  |
 | Annuité liquidable | السنة القابلة للتصفية |  |
+| Appelé | المجنّد |  |
 | Apprentissage | التدريب المهني |  |
 | Appui financier occasionnel | الدعم المادي الظرفي |  |
 | Arrêté interne | قرار داخلي |  |
@@ -44,6 +46,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Assujetti partiel | الخاضع جزئيا للأداء على القيمة المضافة |  |
 | Assurance qualité | ضمان الجودة |  |
 | Assuré social | المضمون الاجتماعي |  |
+| Auditeur de justice | الملحق القضائي |  |
 | Augmentation générale des salaires | الزيادة العامة في الأجور |  |
 | Augmentation optionnelle de l'âge de mise à la retraite | الترفيع الاختياري في سنّ الإحالة على التقاعد |  |
 | Autonomie budgétaire | الاستقلالية في الميزانية |  |
@@ -134,13 +137,16 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Compte épargne pour l'investissement | حساب الادخار للاستثمار | CEI |
 | Compte financier | الحساب المالي |  |
 | Comptes spéciaux d'épargne | الحسابات الخاصة للادخار |  |
+| Concours externe sur dossiers | مناظرة خارجية بالملفات |  |
 | Condition de ressources | شرط الموارد |  |
 | Congé (titre de circulation) | سند إعفاء |  |
 | Congé annuel payé | الرخصة السنوية الخالصة الأجر |  |
 | Congé de paternité | عطلة الأبوة |  |
+| Congé pour création d'entreprise | عطلة لبعث مؤسسة |  |
 | Conseil local | المجلس المحلي |  |
 | Conseil supérieur de l'éducation | المجلس الأعلى للتربية |  |
 | Conseil supérieur de l'éducation et de l'enseignement | المجلس الأعلى للتربية والتعليم |  |
+| Conseil supérieur de la magistrature | المجلس الأعلى للقضاء |  |
 | Conseil supérieur des collectivités locales | المجلس الأعلى للجماعات المحلية |  |
 | Conservation de la propriété foncière | إدارة الملكية العقارية |  |
 | Contrat à durée déterminée | عقد شغل لمدة معينة | CDD |
@@ -168,6 +174,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Convention collective sectorielle des assurances | الاتفاقية المشتركة القطاعية للتأمين |  |
 | Convention collective sectorielle des banques et établissements financiers | الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية |  |
 | Coordination des régimes | التنسيق بين أنظمة الضمان الاجتماعي |  |
+| Corps diplomatique | السلك الدبلوماسي |  |
 | Cotisation de l'assuré | اشتراك المضمون |  |
 | Cotisation supplémentaire | الاشتراك الإضافي |  |
 | Cotisations sociales | المساهمات الاجتماعية |  |
@@ -192,6 +199,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Délégation spéciale | النيابة الخصوصية |  |
 | Démantèlement tarifaire | تفكيك المعاليم الديوانية |  |
 | Demi-décime | نصف العشر الإضافي |  |
+| Départ volontaire (agents publics) | المغادرة الاختيارية |  |
 | Dépenses de développement | نفقات التنمية |  |
 | Dépenses de gestion | نفقات التصرف |  |
 | Dépenses fiscales | النفقات الجبائية |  |
@@ -199,6 +207,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Déséquilibre vertical | الاختلال العمودي |  |
 | Détournement et création de commerce | تحويل التجارة وإنشاء التجارة |  |
 | Dévolution de compétences | إسناد الصلاحيات الذاتية |  |
+| Différence compensatrice | الفارق التعويضي في الأجر |  |
 | Diplôme de fin de l'enseignement de base | شهادة ختم التعليم الأساسي |  |
 | Discipline budgétaire | الانضباط في الميزانية |  |
 | District | الإقليم |  |
@@ -227,10 +236,12 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | École préparatoire | المدرسة الإعدادية |  |
 | Éducation préscolaire | التربية قبل المدرسية |  |
+| Effectif global du personnel autorisé | العدد الجملي للأعوان المرخص فيهم |  |
 | Effet cascade | الأثر التراكمي |  |
 | Effet de verrouillage | أثر التجميد |  |
 | Effort fiscal | المجهود الجبائي |  |
 | Élasticité de l'offre de logement | مرونة عرض المساكن |  |
+| Élasticité de l'offre de travail | مرونة عرض العمل |  |
 | Élément de subvention d'un prêt bonifié | عنصر المنحة في القرض الميسّر |  |
 | Éléments permanents de la rémunération | العناصر القارة للمرتب |  |
 | Émoluments de base | المرتبات الأساسية |  |
@@ -241,6 +252,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Employés de maison | عمال المنازل |  |
 | Emprunt | الاقتراض |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
+| Enseignant-chercheur | المدرس الباحث |  |
 | Enseignement de base | التعليم الأساسي |  |
 | Enseignement moyen | التعليم المتوسط |  |
 | Enseignement secondaire | التعليم الثانوي |  |
@@ -295,6 +307,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Gestion financière distincte | التصرّف المالي المستقلّ |  |
 | Grade | الرتبة |  |
 | Gratification de fin de service | مكافأة نهاية الخدمة |  |
+| Gratification exceptionnelle | مكافأة استثنائية |  |
 | Gratuité de l'enseignement | مجانية التعليم |  |
 | Grille de salaires conventionnelle | جدول الأجور |  |
 | Grille des salaires | شبكة الأجور |  |
@@ -326,15 +339,25 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Indemnité complémentaire de responsabilité | المنحة التكميلية بعنوان المسؤولية |  |
 | Indemnité complémentaire provisoire | المنحة الإضافية المؤقتة | ICP |
 | Indemnité d'apprentissage | منحة التدريب |  |
+| Indemnité d'encadrement et de recherche | منحة التأطير والبحث |  |
+| Indemnité de charge de sécurité | منحة التكاليف الأمنية |  |
 | Indemnité de cherté de vie | منحة لغلو المعاش |  |
 | Indemnité de décès | منحة الوفاة |  |
 | Indemnité de gestion et d'exécution | منحة التصرف والتنفيذ |  |
+| Indemnité de magistrature | منحة القضاء |  |
+| Indemnité de permanence (magistrats) | منحة الاستمرار |  |
+| Indemnité de poste | منحة المركز |  |
+| Indemnité de représentation | منحة التمثيل |  |
 | Indemnité de responsabilité | منحة المسؤولية |  |
 | Indemnité de revenu unique | منحة الدخل الوحيد |  |
 | Indemnité de stage | منحة التربص |  |
 | Indemnité journalière | التعويض اليومي |  |
+| Indemnité parlementaire | المنحة البرلمانية |  |
+| Indemnité pour charges militaires | منحة الكلف العسكرية |  |
+| Indemnité provisoire complémentaire (militaires et forces de sécurité intérieure) | المنحة الوقتية التكميلية |  |
 | Indemnité spécifique | المنحة الخصوصية |  |
 | Instance nationale de l'évaluation, de l'assurance-qualité et de l'accréditation | الهيئة الوطنية للتقييم وضمان الجودة والاعتماد |  |
+| Institut supérieur de la magistrature | المعهد الأعلى للقضاء |  |
 | Institut supérieur des études technologiques | المعهد العالي للدراسات التكنولوجية | ISET |
 | Interventions publiques | التدخل العمومي |  |
 | Jardin d'enfants | روضة الأطفال |  |
@@ -383,6 +406,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Moueddeb | المؤدب |  |
 | Moyenne annuelle | المعدل السنوي |  |
 | Moyens des services | وسائل المصالح |  |
+| Niveau de rémunération | مستوى التأجير |  |
 | Nomenclature budgétaire | تبويب الميزانية |  |
 | Obligation scolaire | إجبارية التعليم الأساسي |  |
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
@@ -429,7 +453,11 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prestations familiales | المنح العائلية |  |
 | Prêt universitaire | القرض الجامعي |  |
 | Prime d'investissement | منحة الاستثمار |  |
+| Prime de départ volontaire | منحة المغادرة |  |
 | Prime de rendement | منحة المردودية |  |
+| Prime de rentrée universitaire | منحة العودة الجامعية |  |
+| Prime de risque | منحة الخطر |  |
+| Prime salariale du secteur public | علاوة الأجر في القطاع العمومي |  |
 | Priorité de réembauchage | حق الأولوية في التشغيل |  |
 | Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale | تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي |  |
 | Prix de cession préférentiel | السعر التفاضلي |  |
@@ -455,6 +483,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Rachat (examen) | الإسعاف |  |
 | Rapport annuel de performance | التقرير السنوي للأداء | RAP |
 | Recettes fiscales | المداخيل الجبائية |  |
+| Recrutement direct | الانتداب المباشر |  |
 | Redevance d'utilisation | معلوم الاستعمال |  |
 | Redevance de compensation | أتاوة الدعم |  |
 | Redevance de prestations douanières | الأتاوة على الخدمات الديوانية |  |
@@ -512,6 +541,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Revenus fonciers | المداخيل العقارية |  |
 | Salaire brut | الأجر الخام |  |
 | Salaire conventionnel | الأجر التعاقدي |  |
+| Salaire d'efficience | أجر الكفاءة |  |
 | Salaire d'entrée d'une grille conventionnelle | أدنى أجر في جدول الأجور |  |
 | Salaire de base (grilles conventionnelles) | الأجر الأساسي |  |
 | Salaire déclaré | الأجر المصرّح به |  |
@@ -528,8 +558,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Score d'éligibilité | أنموذج التنقيط |  |
 | Secteur public | القطاع العام |  |
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
+| Sélection adverse (départs volontaires) | الانتقاء العكسي |  |
 | Séparation des opérations de commercialisation des hydrocarbures | فصل عمليات تسويق المحروقات |  |
 | Service fait | قاعدة الخدمة المنجزة |  |
+| Service national | الخدمة الوطنية |  |
 | Session de contrôle | دورة المراقبة |  |
 | Session principale | الدورة الرئيسية |  |
 | Seuil à changement de taux | عتبة تغيّر النسبة |  |
@@ -540,7 +572,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
-| Solde (militaire) | المرتّب العسكري |  |
+| Solde (militaire) | أجور العسكريين |  |
 | Solde de réforme | منحة الإصلاح |  |
 | Sous-déclaration | التصريح بأقلّ من القيمة الحقيقية |  |
 | Sous-traitance de main-d'œuvre | مناولة اليد العاملة |  |
