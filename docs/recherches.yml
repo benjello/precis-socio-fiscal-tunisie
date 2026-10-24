@@ -1025,10 +1025,35 @@
     couverture: 'Archives du web et presse en ligne, avant toute demande à l''administration. Trouvé, sans texte normatif : (1) L''Économiste maghrébin, 13 janvier 2018, annonce du ministre des affaires sociales en conseil ministériel restreint, passage de 150 à 180 dinars, 210 dinars selon le nombre d''enfants, 20 % de hausse, 100 MD ; aucun texte cité, aucune date d''effet ; (2) Webmanagercenter (arabe), 29 octobre 2017, projet de loi de finances pour 2018 : allocation de 150 dinars par mois pour 250 000 familles, 10 dinars par enfant d''âge scolaire, hausse de 4 % des aides, et la mention d''une hausse de 120 à 150 dinars en 2015 ; (3) Maghreb Émergent, 6 mai 2017, rapportant l''étude CRES-BAD : transfert mensuel moyen par famille de 58 dinars en 2010 et de 150 dinars en 2015, 108 900 puis 230 000 familles (moyennes d''enquête, non des paliers) ; (4) projet BAD-CRES rangé dans tunisia-data (afdb_2016_evaluation_performance_assistance_sociale.pdf) : « de l''ordre de 70 dinars » mensuels, 210 000 familles, sans date de palier. Ces sources de presse et d''étude confirment les paliers de 150 dinars (2015) et de 180 dinars (annonce de janvier 2018) et rejoignent le palier de 70 dinars de 2011 ; elles ne datent ni ne fondent les neuf autres. Non cherché : circulaires du ministère (1987 à 2018), documents du budget économique, rapports de la Cour des comptes, archives de pm.gov.tn et social.gov.tn par la Wayback Machine ; l''étude CRES-BAD complète est à récupérer avant d''être citée.'
     couvert_jusqu_au: 2026-10-24
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [web]
+    couverture: 'Deux recherches web (arabe : منحة قارة العائلات المعوزة, 100 دinar, 2012-2013 ; français : PNAFN allocation 100 et 120 dinars 2012-2013) : résultats postérieurs à 2021 seulement (180 D porté à 200 D par la loi de finances pour 2022 selon une annonce du ministère des finances ; 280 D en 2026), aucun texte ni document daté pour 2012-2013. Wayback Machine (API de disponibilité, social.gov.tn et pnafn.gov.tn) : réponse 429 (trop de requêtes), sondage non abouti, à rejouer.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [web, presse, jort_cache]
+    couverture: 'Corpus JORT local (jort_cache.db, recherche en titres et objets, termes français et arabes) : aucun texte publié ne fixe un montant de l''allocation ; seuls figurent l''arrêté du 6 janvier 1987 (contribution de la caisse nationale de retraite pour 1986), la loi n° 86-83, la loi n° 87-83, le décret n° 2014-1526 (unité de gestion par objectifs) et le décret gouvernemental n° 2018-626. Documents obtenus et rangés dans tunisia-data : (1) Banque mondiale pour le ministère des Affaires sociales, rapport technique de ciblage, 2021, encadré 2, p. 50 : 7,7 D en 1987, 36,3 en 2000, 56,7 en 2010, 115 en 2014, 150 en 2014, 180 en février 2018 ; (2) BAD et CRES, version provisoire du 30 mars 2013, p. 12 : 100 D par mois en 2012, 10 D par enfant scolarisé ; annexe VII : circulaire conjointe Intérieur n° 12 et Affaires sociales n° 3 du 27 mai 2011 ; (3) UNICEF 2019, note 4 : 180 D en janvier 2018. Presse (L''Économiste maghrébin, 15 janvier 2018) : 70 D jusqu''en 2010, 150 D en 2017, 180 D ordonné, dates contradictoires avec les autres sources. Wayback Machine : une capture de 2023 du rapport de la BAD récupérée ; l''API de disponibilité répond 429 puis le service est hors ligne, aucun sondage de social.gov.tn ni de pm.gov.tn n''a abouti. Budgets économiques 2012-2018 et circulaires de montant : non trouvés en ligne (deux recherches web), pas de document finances.gov.tn indexé.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: partiel
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [web]
+    couverture: 'Seconde passe du 24 octobre 2026. Wayback Machine : l''API de disponibilité répond (capture de social.gov.tn du 17 octobre 2026), l''API d''index (CDX) est hors ligne, donc aucune liste de pages archivées de social.gov.tn, de pnafn.gov.tn ni de pm.gov.tn. Page du ministère sur les transferts monétaires, édition arabe (téléchargée le 24 octobre 2026) : elle cite le « منشور مشترك » n° 3 du 27 mai 2011 (Intérieur et Affaires sociales) sans lien ni fichier, et ne cite aucun texte de montant. Une recherche web sur le numéro et la date de la circulaire ne renvoie aucun document tunisien. Le texte de la circulaire n''est pas en ligne sous les adresses essayées.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [web]
+    couverture: 'Documents du ministère des Finances rangés dans tunisia-data (portail ancien, rubrique lois_finances), texte lu par la couche texte : rapport sur le projet de budget actualisé pour 2012 (avril 2012), rapport sur le projet de budget pour 2013 (novembre 2012), note d''actualisation du budget de 2013 (septembre 2013), projet de budget pour 2014 (octobre 2013). Seul le rapport d''avril 2012 parle des familles nécessiteuses : relèvement de 50 000 du nombre de familles (35 MD) et 106 MD de transferts supplémentaires ; aucun montant mensuel. Les budgets citoyens de 2014, 2015, 2017 et 2018 n''ont pas de couche texte (scans) et ne sont pas lus ; le rapport de 2016 est lu sans résultat. Budgets économiques et rapports sur les budgets de 2015 à 2018 non rangés dans tunisia-data.'
+    couvert_jusqu_au: 2013-10-31
+    resultat: aucun
   a_faire:
-  - récupérer l'étude CRES-BAD de 2016 complète
-  - lire les exposés des motifs et les tableaux des budgets économiques 2012-2018
-  - sonder la Wayback Machine sur social.gov.tn et pm.gov.tn
+  - obtenir le texte de la circulaire conjointe n° 12 (Intérieur) et n° 3 (Affaires sociales) du 27 mai 2011 auprès du ministère ou d'une bibliothèque administrative
+  - rejouer le sondage de la Wayback Machine sur social.gov.tn, pm.gov.tn et pnafn.gov.tn
+  - dater les neuf paliers 53,3 ; 56,7 (début) ; 63,3 ; 70 ; 100 ; 110 ; 120 ; 150 ; 180 par un texte ou un communiqué du ministère
+  - budgets économiques et rapports sur les projets de budget de 2015 à 2018 (non rangés dans tunisia-data) ; budgets citoyens de 2014 à 2018 à océriser
 
 - id: r-lf2025-art15-decret
   objet: décret fixant les modalités de fonctionnement du fonds de protection sociale des travailleuses agricoles et les conditions de ses interventions (loi n° 2024-48, loi de finances pour 2025, art. 15, 1), al. 2)
@@ -4752,3 +4777,94 @@
   - décrets de suspension du prélèvement de 1998 à 2002 et d'après 2007 (intitulés « suspension … du prélèvement » dans jort_cache)
   - suite du tarif du décret n° 95-1212 (JORT n° 57 de 1995, p. 1534)
   - produit annuel des prélèvements (loi de règlement, rapports de la BCT)
+
+- id: r-foprolos-prelevements-lf
+  objet: article de loi de finances, autre que ceux de 1987-1990, de 2011, de 2012 et de 2013, prélevant sur les ressources du fonds de promotion du logement pour les salariés
+  ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-previsions]
+  requetes:
+    plein_texte: [logement pour les salariés, logements pour les salariés, promotion du logement]
+    depuis: 1986-01-01
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Plein texte du fascicule JORT n° 1 du 3 janvier 2012 (loi n° 2011-7 du 31 décembre 2011, loi de finances pour 2012, édition française) : le fonds n''y figure que dans la liste des fonds spéciaux du Trésor, sans article de prélèvement. La note logement-social-foprolos-2026-10-23, § 1.4, porte le relevé des lois de finances et des lois de finances complémentaires de 2012 à 2026 ; ce relevé n''a pas été rejoué ici. Lois de finances de 1991 à 2010 : non parcourues.'
+    couvert_jusqu_au: 2012-01-03
+    resultat: aucun
+  a_faire: [rejouer le plein texte des lois de finances de 1991 à 2010 et de 2014 à 2026]
+
+- id: r-foprolos-convention-gestion
+  objet: convention de gestion du fonds de promotion du logement pour les salariés entre le ministre des Finances et un organisme de crédit (loi n° 77-54, art. 9)
+  ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-reformes]
+  requetes:
+    titres_fts:
+    - convention AND gestion AND (logement OR logements) AND salaries
+    - '"banque de l habitat"'
+    - caisse AND epargne AND logement AND (banque OR denomination OR transformation)
+    iort_ar: [بنك الإسكان, اتفاقية النهوض بالمسكن]
+    depuis: 1977-08-05
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: intitulés jort_cache jusqu'au 2 octobre 2026 ; aucune convention ni texte de transformation de la CNEL en Banque de l'Habitat ; plein texte non parcouru ; rapports annuels de la BH non consultés
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'jort_cache (intitulés, 1986-2011) et miroir iort local (plein texte des textes de 1980 à 1999 : aucune occurrence de « Banque de l''Habitat » avant 2003). Le texte de transformation de la caisse nationale d''épargne-logement en banque est identifié : loi n° 89-18 du 22 février 1989, art. 1er à 3 (JORT n° 16 du 3 mars 1989, p. 339), qui ne nomme pas la banque et la charge de gérer le régime d''épargne-logement par convention avec le ministère des Finances. Aucune convention de gestion du fonds de promotion du logement pour les salariés n''est publiée au Journal officiel.'
+    couvert_jusqu_au: 2011-12-31
+    resultat: aucun
+  a_faire:
+  - rapports annuels de la Banque de l'Habitat
+  - dénomination de la banque issue de la caisse nationale d'épargne-logement (texte ou document de la banque)
+
+- id: r-foprolos-programme-emploi
+  objet: arrêtés fixant le programme d'emploi des ressources du fonds (décret n° 77-965, art. 12 ; décret gouvernemental n° 2016-1126, art. 10)
+  ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-reformes]
+  requetes:
+    titres_fts:
+    - programme AND emploi AND ressources AND (logement OR logements)
+    - (logement OR logements) AND (salaries OR salarie) AND (fonds OR promotion)
+    iort_ar: [صندوق النهوض بالمسكن لفائدة الأجراء]
+    depuis: 1977-11-29
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'intitulés jort_cache jusqu''au 2 octobre 2026 : seuls un arrêté du 5 janvier 1987 (prévisions 1986) et quatre arrêtés de prix (2007, 2009, 2013, 2014) répondent ; plein texte non parcouru'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-psls-arretes-subvention-credit
+  objet: arrêté du ministre de l'Habitat fixant la méthode de calcul de la subvention (décret n° 2012-1224, art. 22) et arrêté conjoint Habitat-Finances fixant les conditions du crédit complémentaire (art. 23)
+  ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-psls]
+  requetes:
+    titres_fts:
+    - (subvention OR credit OR credits) AND "logement social"
+    - '"logement social" OR "logements sociaux" OR "habitat social"'
+    iort_ar: [البرنامج الخصوصي للسكن الاجتماعي, السكن الاجتماعي]
+    depuis: 2012-08-17
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'intitulés jort_cache jusqu''au 2 octobre 2026 : répondent les arrêtés du 11 janvier 2016 et du 13 octobre 2023 (abandon d''intérêts), aucun arrêté de subvention ni de crédit ; plein texte non parcouru ; modificatifs n° 2013-3289, 2014-4251, 2015-460 et 2023-538 lus le 24 octobre 2026 : ils renvoient les arrêtés sans les citer'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+
+- id: r-foprolos-ligne-lf-2021
+  objet: prévision de recettes du fonds dans les lois de finances depuis 2021 (ligne du tableau des comptes spéciaux du Trésor présente jusqu'à la LF 2020)
+  ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-previsions]
+  requetes:
+    plein_texte: [promotion du logement pour les salariés, promotion des logements pour les salariés, النهوض بالمسكن]
+    depuis: 2020-12-01
+  passes:
+  - date: 2026-10-23
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'plein texte FR et AR des LF pour 2021 à 2026 (JORT n° 128/2020, 119/2021, 141/2022, 144/2023, 149/2024, 148/2025) : aucune ligne chiffrée du fonds ; annexes budgétaires (missions, programmes, comptes spéciaux) non consultées'
+    couvert_jusqu_au: 2025-12-12
+    resultat: aucun
+  a_faire: [budget de la mission Équipement et Habitat, annexe des comptes spéciaux du Trésor (finances.gov.tn)]
