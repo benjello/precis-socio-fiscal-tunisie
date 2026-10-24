@@ -737,6 +737,17 @@ liste qui suit le tableau, citations comprises. Restent :
 
 ## Retraites
 
+- **Tableaux et figure engendrés depuis les paramètres (24 octobre 2026)** (`_secteur_public.qmd`) : la retenue
+  des députés et la contribution de l'État (`tbl-cnrps-deputes-retenue`, `fig-cnrps-deputes-retenue`, série
+  `retraites-deputes-retenue`), les limites d'âge du Tribunal administratif et de la Cour des comptes
+  (`tbl-cnrps-magistrats-ta-cc`, sans les colonnes « Portée » et « Membres » du tableau écrit à la main : les fonctions
+  visées passent dans la phrase d'introduction) et le seuil du différentiel complémentaire (`tbl-cnrps-differentiel`) ne
+  sont plus écrits à la main ; valeurs et dates identiques à celles du chapitre. **Reste à engendrer** dans la même
+  section : le tableau des trois régimes spéciaux (`tbl-regimes-speciaux`, règles d'ouverture, de calcul et de jouissance,
+  que l'arbre ne porte pas) et les taux du gouvernement et des gouverneurs (nœud `gouvernement_deputes_gouverneurs`
+  non chargé, `docs/notes/backlog-modele.md`). **Reste** pour les textes arabes des trois tableaux : relecture de
+  « الفارق التكميلي » et des intitulés de colonnes par le relecteur-ar.
+
 - **Taux d'équilibre et figures du RSNA prolongés à 2018 (5 octobre 2026).**
   L'annuaire CNSS 2018 français transmis par l'utilisateur est lisible dans sa
   couche texte (PDF 16, 43-44) : salaires et pensions de 2018 ajoutés à la série

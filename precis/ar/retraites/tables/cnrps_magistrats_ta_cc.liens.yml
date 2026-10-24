@@ -1,0 +1,6 @@
+- libelle: المحكمة الإدارية
+  parametre: parameters/retraite/cnrps/age_legal/civil/magistrats_tribunal_administratif.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.civil.magistrats_tribunal_administratif/table/
+- libelle: دائرة المحاسبات
+  parametre: parameters/retraite/cnrps/age_legal/civil/magistrats_cour_des_comptes.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.cnrps.age_legal.civil.magistrats_cour_des_comptes/table/

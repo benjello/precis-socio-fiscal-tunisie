@@ -172,7 +172,17 @@ PAQUETS = {
         # des montants du gluten, des tarifs des alcools et des quatre tableaux du volume
         # « Santé » ne pourraient être engendrés. Aucun chemin déjà lu ne bouge. La borne
         # passe à la 0.147.
-        "version_minimale": (0, 147),
+        # La 0.151 verse la retenue des députés et la contribution de l'État de l'article 5
+        # de la loi n° 85-16 (PR #511, `prelevements_sociaux/cotisations_sociales/
+        # secteur_public/regimes_speciaux/deputes/`), la 0.152 la limite d'âge de 65 ans des
+        # membres du Tribunal administratif et de la Cour des comptes (PR #512,
+        # `retraite/cnrps/age_legal/civil/magistrats_*`), la 0.153 le seuil de 180 dinars du
+        # différentiel complémentaire des petites pensions (PR #513, `retraite/
+        # differentiel_petites_pensions/`) : en deçà, les tableaux de la retenue des députés,
+        # des limites d'âge des magistrats et du seuil du différentiel, et la figure de la
+        # retenue des députés, ne pourraient être engendrés. Aucun chemin déjà lu ne bouge. La
+        # borne passe à la 0.153.
+        "version_minimale": (0, 153),
     },
 }
 

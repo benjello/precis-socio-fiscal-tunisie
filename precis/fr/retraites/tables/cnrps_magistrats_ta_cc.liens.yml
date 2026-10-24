@@ -1,0 +1,6 @@
+- libelle: Tribunal administratif
+  parametre: parameters/retraite/cnrps/age_legal/civil/magistrats_tribunal_administratif.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.age_legal.civil.magistrats_tribunal_administratif/table/
+- libelle: Cour des comptes
+  parametre: parameters/retraite/cnrps/age_legal/civil/magistrats_cour_des_comptes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.cnrps.age_legal.civil.magistrats_cour_des_comptes/table/
