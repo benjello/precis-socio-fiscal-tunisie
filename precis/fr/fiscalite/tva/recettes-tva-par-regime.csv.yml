@@ -1,0 +1,64 @@
+# Manifeste du relevé « TVA : prévisions des lois de finances par régime, 2001-2026 ».
+#
+# Fichier TENU À LA MAIN, lu par figures/tva_regimes.py (figure `fig-tva-regimes-recettes`
+# de la section « Ce que la taxe rapporte »).
+#
+# D'OÙ VIENNENT LES VALEURS. Tableau A (recettes du budget de l'État) de chaque loi de
+# finances initiale : deux lignes, TVA à l'importation (« régime importation », puis « régime
+# douanier » dans la nomenclature de 2020) et TVA du régime intérieur. 2001-2010 et 2021-2022 :
+# lues à l'image du fascicule français ; 2011-2020 : couche texte du fascicule (ou du PDF de
+# la loi) ; 2023-2026 : lues à l'image de l'édition arabe du tableau A. Chaque somme des deux
+# lignes a été comparée au total que le tableau imprime.
+#
+# PRÉVISIONS SEULES. Aucune réalisation par régime n'a été identifiée ; les rapports de la Cour
+# des comptes consultés donnent la TVA en total.
+#
+# DEUX LIGNES IMPRIMÉES UN RANG TROP HAUT. En 2020 et en 2022, le tableau imprime la valeur
+# du régime d'importation en regard du titre « Taxe sur la valeur ajoutée », celle du régime
+# intérieur en regard de la ligne 14-01, et le total en regard de 14-02 : c'est la seule
+# lecture où les deux valeurs somment au total imprimé. Les années 2020 et 2022 portent donc
+# l'attribution décalée, dite en `remarque`.
+#
+# CHANGEMENT DE NOMENCLATURE EN 2020. Les articles 22-01 et 22-02 deviennent 14-01 et 14-02 ;
+# les lignes portent le même objet, et la série est continue.
+
+format: long
+cle_de_ligne: [annee, regime]
+
+colonnes:
+  annee: exercice budgétaire
+  regime: importation ou interieur
+  code_article: article du tableau A
+  libelle_source: libellé imprimé, dans sa langue
+  valeur_md: millions de dinars courants (prévision de la loi de finances initiale)
+  source: clé de citation
+  localisateur: emplacement dans la loi
+  remarque: remarque de la documentaliste
+
+sources:
+  - lf-2001
+  - loi2001-123-lf2002
+  - lf-2003
+  - lf-2004
+  - lf-2005
+  - lf-2006
+  - lf-2007
+  - loi-2007-70-lf-2008
+  - lf-2009
+  - lf-2010
+  - lf-2011
+  - lf-2012
+  - lf-2013
+  - lf-2014
+  - lf-2015
+  - lf-2016
+  - lf-2017
+  - lf-2018
+  - loi2018-56-lf2019
+  - lf-2020
+  - lf-2021
+  - dl2021-21-lf2022
+  - lf-2023
+  - lf-2024
+  - lf-2025
+  - lf-2026

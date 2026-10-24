@@ -4150,8 +4150,14 @@
     couverture: 'Plein texte des rapports de la Cour des comptes de tunisia-data (lois de règlement 2018 à 2022, rapports de la série 18, 82 et autres, couche texte française) : aucune série de restitutions de TVA. Rapports annuels de la direction générale des impôts sur 2013 et 2014 (portail ancien du ministère) : texte arabe à police non Unicode, non cherchable ; non lus à l image. Recherche web : seules des déclarations ponctuelles du ministère (remboursements de 2020, demandes non éligibles de 2021, restitutions de début 2023), sans série annuelle. Lacunes : lois de règlement antérieures à 2018, rapports annuels de performance de la mission Finances, rapports annuels de la direction générale des impôts postérieurs à 2014.'
     couvert_jusqu_au: 2026-10-24
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Rapport annuel de la direction générale des impôts sur 2014 (portail ancien du ministère, 40 pages, arabe) : 16 pages sur 40 parcourues à l''image (plan d''action, contrôle fiscal, contentieux, formation, moyens) : rapport d''activité administrative, aucune série de crédit ou de restitution de TVA. Rapport sur 2013 non parcouru à l''image. Lacunes : 24 pages du rapport de 2014 et tout le rapport de 2013 non vues ; rapports postérieurs à 2014 absents du corpus local.'
+    couvert_jusqu_au: 2014-12-31
+    resultat: aucun
   a_faire:
-  - lire à l'image les rapports annuels de la direction générale des impôts sur 2013 et 2014
+  - parcourir à l'image les 24 pages restantes du rapport de la direction générale des impôts sur 2014 et le rapport sur 2013
   - chercher les rapports annuels de la direction générale des impôts postérieurs à 2014
   - parcourir les rapports annuels de performance de la mission Finances
 
