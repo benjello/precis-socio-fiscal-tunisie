@@ -1,0 +1,34 @@
+# Manifeste du relevé « TVA : colonnes LF, LFC et réalisation du classeur des recettes fiscales ».
+#
+# Fichier TENU À LA MAIN, lu par scripts/generate_tva_ecart.py et par tests/test_tva_ecart.py.
+#
+# D'OÙ VIENNENT LES VALEURS. La ligne « 2.2 TVA » du classeur « Série Recettes fiscales » du
+# ministère des Finances (copie : tunisia-data, data/raw/minfinances/recettes_fiscales.xls,
+# feuille « Rec Fiscales », ligne 31), colonnes de prévision (LF, LFC) et de réalisation, en
+# millions de dinars courants. Le classeur ne porte les colonnes LF et LFC qu'à partir de 2013
+# (2014 pour la LF) ; avant, il ne donne que la réalisation, que le précis lit dans la série
+# `recettes-fiscales-composition`.
+#
+# USAGE. (1) Contrôle de périmètre : les colonnes LF de 2014 à 2026 égalent, à la décimale, la
+# somme des deux lignes de TVA du tableau A de chaque loi de finances initiale
+# (`recettes-tva-par-regime.csv`) ; le test le vérifie. (2) La colonne LFC donne, quand elle
+# existe, la prévision de la loi de finances complémentaire, que la figure ne trace pas et
+# signale. Les réalisations égalent la série `recettes-fiscales-composition`.
+#
+# ATTRIBUTION PAR POSITION. Les colonnes LF et LFC de 2013 à 2016 n'ont pas de libellé d'année
+# dans le classeur ; elles se placent chaque fois entre la réalisation de l'année précédente et
+# celle de l'année : LFC 2013, LF et LFC 2014, 2015 et 2016.
+
+format: long
+cle_de_ligne: [annee]
+
+colonnes:
+  annee: exercice budgétaire
+  lf_MD: prévision de la loi de finances initiale, colonne LF du classeur
+  lfc_MD: prévision de la loi de finances complémentaire, colonne LFC du classeur
+  realise_MD: réalisation, rubrique TVA du classeur
+  source: clé de citation
+  remarque: remarque de la documentaliste
+
+sources:
+  - minfin-recettes-fiscales
