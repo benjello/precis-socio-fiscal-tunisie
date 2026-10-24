@@ -26,6 +26,7 @@ import matplotlib.pyplot as plt
 _SCRIPTS = Path(__file__).resolve().parents[4] / "scripts"
 sys.path.insert(0, str(_SCRIPTS))
 import figtools  # noqa: E402
+from figures import rendement_bases as rb  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 FIGDATA = HERE.parent / "figdata"
@@ -133,69 +134,22 @@ def _lab(key: str) -> str:
     return _L[key].get(figtools.lang(), _L[key]["fr"])
 
 
+NOM = {"fr": "IRPP", "ar": "الضريبة على الدخل"}
+SERIES_RENDEMENT = rb.SERIES
+
+
+def _nom() -> str:
+    return NOM.get(figtools.lang(), NOM["fr"])
+
+
 def table():
-    """Onglet « Données » : le montant et les trois ratios, plus la part des salaires."""
-    df = figtools.series(SERIE)
-    cols = ["annee", "irpp_MDT", "irpp_sur_pib_pct", "irpp_sur_depenses_totales_pct",
-            "irpp_sur_recettes_fiscales_pct", "part_salaires_dans_irpp_pct"]
-    w = df[[c for c in cols if c in df.columns]].copy()
-    return w.rename(columns={
-        "annee": _lab("col_annee"),
-        "irpp_MDT": _lab("col_mdt"),
-        "irpp_sur_pib_pct": _lab("col_pib"),
-        "irpp_sur_depenses_totales_pct": _lab("col_dep"),
-        "irpp_sur_recettes_fiscales_pct": _lab("col_rec"),
-        "part_salaires_dans_irpp_pct": _lab("col_sal"),
-    })
-
-
-def prepare(generated: str | None = None):
-    df = figtools.series(SERIE)
-    figtools.write_figdata(
-        table(), FIGDATA / "fig_irpp_rendement.csv", SERIE,
-        note="rendement de l'impôt sur le revenu, 1986-2025 ; rupture de série en 1990",
-        generated=generated)
-    return df
+    """Onglet « Données » : le montant et le ratio au PIB de chaque base."""
+    return rb.tableau("irpp_MDT", "irpp_pct", _nom())
 
 
 def fig_rendement():
-    figtools.apply_lang_font()
-    ft = figtools.fig_text
-    df = figtools.series(SERIE)
-    avant = df[df["annee"] < ANNEE_IRPP]
-    apres = df[df["annee"] >= ANNEE_IRPP]
-
-    fig, ax1 = plt.subplots(figsize=(9.5, 5.2))
-    ax2 = ax1.twinx()
-
-    # La bande grise couvre les années où la rubrique mesure autre chose que l'IRPP.
-    ax1.axvspan(df["annee"].min() - 0.5, ANNEE_IRPP - 0.5, color="#8b949e", alpha=0.13, lw=0)
-    ax1.axvline(ANNEE_IRPP - 0.5, color="#57606a", lw=1.2, ls="--")
-
-    l0, = ax1.plot(avant["annee"], avant["irpp_sur_pib_pct"], "o:", color="#57606a",
-                   lw=1.6, ms=4, label=ft(_lab("lg_pib_avant")))
-    l1, = ax1.plot(apres["annee"], apres["irpp_sur_pib_pct"], "o-", color="#1f6feb",
-                   lw=2, ms=4, label=ft(_lab("lg_pib")))
-    l2, = ax2.plot(apres["annee"], apres["irpp_sur_depenses_totales_pct"], "s--",
-                   color="#d1242f", lw=1.8, ms=3, label=ft(_lab("lg_dep")))
-
-    # L'annotation se place sous la légende, dans la zone vide que laisse la montée des
-    # courbes : au-dessus, elle passerait derrière la légende — vérifié au rendu.
-    bas, haut = ax1.get_ylim()
-    y_texte = bas + 0.62 * (haut - bas)
-    ax1.annotate(ft(_lab("rupture")), xy=(ANNEE_IRPP - 0.5, y_texte),
-                 xytext=(ANNEE_IRPP + 1.5, y_texte),
-                 fontsize=8, color="#57606a", va="center",
-                 arrowprops=dict(arrowstyle="->", color="#57606a", lw=1))
-
-    ax1.set_ylabel(ft(_lab("y_pib")), color="#1f6feb")
-    ax2.set_ylabel(ft(_lab("y_dep")), color="#d1242f")
-    ax1.set_xlabel(ft(_lab("xlabel")))
-    ax1.set_title(ft(_lab("title")))
-    ax1.grid(True, alpha=0.3)
-    ax1.legend(handles=[l0, l1, l2], loc="upper left", fontsize=8.5)
-    fig.tight_layout()
-    return fig
+    return rb.figure("irpp_MDT", "irpp_pct", nom=_nom(), annee_debut=ANNEE_IRPP,
+                     titre=_lab("title"), rupture=_lab("rupture"), y_rupture=0.62)
 
 
 # --- Les déductions pour charges de famille dans le temps, revenus 1990-2026 -----------------

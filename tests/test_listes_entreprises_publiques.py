@@ -75,10 +75,21 @@ def test_sorties_rapprochees_du_recueil():
     assert positions == {"entre les deux listes": 15, "avant la première liste": 2}
 
 
+def _plafond_serie():
+    """Le plafond, lu dans le cache de la série `jort-lf-plafond-garanties` de tunisia-data,
+    sous les noms de colonnes de l'ancien relevé."""
+    cache = LISTES.parents[2] / "_seriescache/jort-lf-plafond-garanties.csv"
+    with open(cache, encoding="utf-8", newline="") as f:
+        lignes = list(csv.DictReader(f))
+    for l in lignes:
+        l["plafond_md"], l["plafond_avant_md"] = l["valeur_md"], l["valeur_avant_md"]
+    return lignes
+
+
 def test_plafond_de_la_garantie_est_continu():
     """Un relèvement en cours de gestion porte le montant d'avant, qui est celui que la loi de
     finances de l'année avait fixé ; les gestions se suivent de 1959-60 à 2015, sauf 1960."""
-    lignes = _lire("plafond-garanties-lois-de-finances")
+    lignes = _plafond_serie()
     fixe = {}
     for l in lignes:
         if l["nature"] == "fixation" and l["plafond_md"]:
@@ -120,7 +131,7 @@ def test_budget_ordinaire_vote_recettes_et_credits_egaux():
     assert par["1961"] == 55.8 and par["1969"] == 131.35 and par["1977"] == 441.5
     assert par["1983"] == 1420.0 and par["1986"] == 1970.0
     # chaque loi du relevé du budget est une loi du relevé du plafond, même numéro et même date
-    plafond = {(l["gestion"], l["loi"]): l["date"] for l in _lire("plafond-garanties-lois-de-finances")
+    plafond = {(l["gestion"], l["loi"]): l["date"] for l in _plafond_serie()
                if l["nature"] == "fixation"}
     for l in lignes:
         assert plafond[(l["gestion"], l["loi"])] == l["date"], l["gestion"]
@@ -216,3 +227,26 @@ def test_figure_des_dettes_et_creances_croisees_recoupe_le_tableau():
     for a in t.index:
         for col in ("Dettes envers l'État (MD)", "Créances sur l'État (MD)"):
             assert ep._n(t.loc[a, col]) in sortie.getvalue()
+
+
+def test_budget_d_equipement_et_total_de_l_etat():
+    """Voies et moyens = crédits de paiement ; le total de l'État est le budget ordinaire plus les
+    crédits de paiement moins la contribution ; celui de 1983 est établi par la loi ; le budget
+    ordinaire repris est celui du relevé du budget ordinaire."""
+    ordinaire = {l["gestion"]: l["credits_md"] or l["recettes_md"]
+                 for l in _lire("budget-ordinaire-lois-de-finances")}
+    lignes = _lire("budget-equipement-lois-de-finances")
+    assert len([l for l in lignes if l["voies_moyens_md"]]) == 25
+    for l in lignes:
+        if not l["voies_moyens_md"]:
+            continue
+        assert float(l["voies_moyens_md"]) == float(l["credits_paiement_md"]), l["gestion"]
+        if l["total_etat_calcule_md"]:
+            assert l["budget_ordinaire_md"] and l["gestion"] in ordinaire
+            assert float(l["budget_ordinaire_md"]) == float(ordinaire[l["gestion"]]), l["gestion"]
+            attendu = (float(l["budget_ordinaire_md"]) + float(l["credits_paiement_md"])
+                       - float(l["contribution_budget_ordinaire_md"]))
+            assert abs(float(l["total_etat_calcule_md"]) - attendu) < 0.01, l["gestion"]
+    par = {l["gestion"]: l for l in lignes}
+    assert par["1983"]["total_etat_etabli_md"] == "1753" == par["1983"]["total_etat_calcule_md"]
+    assert not par["1962"]["total_etat_calcule_md"] and not par["1962-1964"]["total_etat_calcule_md"]

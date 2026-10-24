@@ -1,0 +1,207 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-24
+# séries (tunisia_data) : timbre-montants-dates, ipc-longue-periode, bct-ipc-base2015
+# sources (citation) : @loi-93-53-cdet, @lf-1969, @lf-1977, @loi81-100-lf1982, @lf-1983, @loi85-109-lf1986, @loi-89-115-lf-1990, @lf-1997, @lf-1999, @lf-2001, @lf-2003, @lf-2004, @lf-2005, @lf-2006, @lfc-2012, @lf-2013, @lfc-2014, @lf-2017, @lf-2018, @dl2021-21-lf2022, @lf-2023, @lf-2026, @bct-ra, @ins-annuaire
+# fiches : sources/bct-archives.md
+# méthode/hypothèses : Les montants sont ceux des textes, lus dans les registres du chapitre ; les dates sans clause d'effet sont celles où le texte devient exécutoire. Le 25 mai 2012 est la date retenue par l'administration fiscale pour la loi de finances complémentaire. Le timbre du téléphone depuis 2012 est un taux par dinar : l'équivalent pour 5 D est un calcul, distingué dans la colonne famille. Avant le 6 500 D du passeport de 1983, la date du montant de 6,500 D n'est pas établie., DEUX INDICES RACCORDÉS EN 1970 : l'indice du coût de la vie en base 100 en 1962 (131,6 en 1970) est ramené à la base 1970. Les valeurs 1962-1975 sont RELEVÉES À LA MAIN dans les rapports de la BCT, dont la couche texte est une océrisation abîmée (« 12S,O » pour 125,0) ; chacune est recoupée par la variation énoncée en prose, et la source de chaque valeur est dans la colonne `source`. L'annuaire 1995-2001 imprime 108,2 pour 1985 au lieu de 288,0 : ligne écartée, valeur prise dans l'annuaire 1998-2002. Le plus récent annuaire fait foi (2001 : 640,5 au lieu de 645,4 provisoire). Au-delà de 2003, employer `bct-ipc-base2015`., EXTRAIT DU RAPPORT ANNUEL, ET NON DU BULLETIN : l'intitulé du BSF (« base 100 en 2010 ») est périmé et ses valeurs récentes sont en base 2015 — voir docs/tables-a-extraire-pdf.md §1. L'ANNÉE DE BASE 2015 = 100 EST POSÉE PAR DÉFINITION, non lue : aucun rapport ne tabule son année de base, tous ne publiant que les millésimes récents. Série RECONSTITUÉE en recollant huit rapports, de 2018 à 2025 (ceux de 2021 et de 2025 coupent le libellé sur trois lignes ; ils sont lus depuis le 2026-10-08), chacun n'en publiant que trois millésimes ; toutes les années communes concordent, et le script LÈVE en cas de divergence — un indice de prix ne se révise pas d'une publication à l'autre, contrairement aux effectifs. La colonne `rapports_concordants` compte les rapports qui impriment la valeur : 2025 (186,3) n'en a qu'UN, le Rapport annuel 2025 (tableau 2-1, p. 57), qui reprend 2024 (176,8) sans le réviser. ÉCART AU TAUX IMPRIMÉ EN 2025 : 186,3 ÷ 176,8 donne +5,37 %, soit 5,4 au dixième, quand le même rapport imprime 5,3 % d'inflation moyenne ; l'arrondi des deux indices permet 5,32 à 5,43 %, et un taux imprimé 5,3 recouvre 5,25 à 5,35 % : les deux ne se rejoignent qu'à la limite (5,32 à 5,35). Le rapport ne dit pas comment il calcule le taux moyen ; écart signalé, non expliqué, rien n'est corrigé. S'ARRÊTE EN 2025 : aucune déflation n'est possible au-delà, ce qui laisse sans équivalent réel les tranches d'augmentation programmées jusqu'en 2028. Déflater une date en cours d'année par l'indice ANNUEL MOYEN est une approximation.
+# note : Minimum de perception des droits d'enregistrement, des actes et des jugements par juridiction, 1969-2026, en dinars courants et en dinars de 2025
+Grandeur,Année,"Montant en vigueur, moyenne de l'année (dinars courants)",Indice des prix à la consommation,Montant en dinars de 2025
+"Minimum de perception, actes et mutations",1970,0.14,100.0,2.93
+"Minimum de perception, actes et mutations",1971,0.14,106.0,2.76
+"Minimum de perception, actes et mutations",1972,0.14,108.0,2.71
+"Minimum de perception, actes et mutations",1973,0.14,113.1,2.59
+"Minimum de perception, actes et mutations",1974,0.14,117.7,2.49
+"Minimum de perception, actes et mutations",1975,0.14,128.9,2.27
+"Minimum de perception, actes et mutations",1976,0.14,135.8,2.16
+"Minimum de perception, actes et mutations",1977,0.928,144.9,13.41
+"Minimum de perception, actes et mutations",1978,1.0,153.0,13.68
+"Minimum de perception, actes et mutations",1979,1.0,165.9,12.61
+"Minimum de perception, actes et mutations",1980,1.0,180.7,11.58
+"Minimum de perception, actes et mutations",1981,1.0,197.5,10.6
+"Minimum de perception, actes et mutations",1982,1.0,225.3,9.29
+"Minimum de perception, actes et mutations",1983,2.833,246.8,24.02
+"Minimum de perception, actes et mutations",1984,3.0,268.0,23.43
+"Minimum de perception, actes et mutations",1985,3.0,288.0,21.8
+"Minimum de perception, actes et mutations",1986,3.0,306.0,20.52
+"Minimum de perception, actes et mutations",1987,3.0,330.9,18.97
+"Minimum de perception, actes et mutations",1988,3.0,354.8,17.69
+"Minimum de perception, actes et mutations",1989,3.0,382.2,16.43
+"Minimum de perception, actes et mutations",1990,3.0,407.4,15.41
+"Minimum de perception, actes et mutations",1991,3.0,439.0,14.3
+"Minimum de perception, actes et mutations",1992,3.0,463.4,13.55
+"Minimum de perception, actes et mutations",1993,4.167,482.9,18.06
+"Minimum de perception, actes et mutations",1994,5.0,504.5,20.74
+"Minimum de perception, actes et mutations",1995,5.0,536.0,19.52
+"Minimum de perception, actes et mutations",1996,5.0,555.9,18.82
+"Minimum de perception, actes et mutations",1997,5.0,576.5,18.15
+"Minimum de perception, actes et mutations",1998,5.0,594.5,17.6
+"Minimum de perception, actes et mutations",1999,5.0,610.5,17.14
+"Minimum de perception, actes et mutations",2000,5.0,628.3,16.65
+"Minimum de perception, actes et mutations",2001,5.0,640.5,16.34
+"Minimum de perception, actes et mutations",2002,5.0,658.6,15.89
+"Minimum de perception, actes et mutations",2003,10.0,676.5,30.93
+"Minimum de perception, actes et mutations",2004,10.0,701.0,29.85
+"Minimum de perception, actes et mutations",2005,10.0,715.3,29.26
+"Minimum de perception, actes et mutations",2006,15.0,745.0,42.14
+"Minimum de perception, actes et mutations",2007,15.0,770.6,40.74
+"Minimum de perception, actes et mutations",2008,15.0,808.4,38.83
+"Minimum de perception, actes et mutations",2009,15.0,837.0,37.5
+"Minimum de perception, actes et mutations",2010,15.0,873.9,35.92
+"Minimum de perception, actes et mutations",2011,15.0,904.8,34.69
+"Minimum de perception, actes et mutations",2012,17.917,955.1,39.26
+"Minimum de perception, actes et mutations",2013,20.0,1013.5,41.3
+"Minimum de perception, actes et mutations",2014,20.0,1069.0,39.15
+"Minimum de perception, actes et mutations",2015,20.0,1119.5,37.39
+"Minimum de perception, actes et mutations",2016,20.0,1161.2,36.04
+"Minimum de perception, actes et mutations",2017,40.0,1223.0,68.45
+"Minimum de perception, actes et mutations",2018,40.0,1314.2,63.7
+"Minimum de perception, actes et mutations",2019,40.0,1403.5,59.64
+"Minimum de perception, actes et mutations",2020,40.0,1482.6,56.46
+"Minimum de perception, actes et mutations",2021,40.0,1567.2,53.41
+"Minimum de perception, actes et mutations",2022,40.0,1697.4,49.32
+"Minimum de perception, actes et mutations",2023,40.0,1855.7,45.11
+"Minimum de perception, actes et mutations",2024,40.0,1986.0,42.15
+"Minimum de perception, actes et mutations",2025,40.0,2092.7,40.0
+Jugements des tribunaux cantonaux,1978,1.0,153.0,13.68
+Jugements des tribunaux cantonaux,1979,1.0,165.9,12.61
+Jugements des tribunaux cantonaux,1980,1.0,180.7,11.58
+Jugements des tribunaux cantonaux,1981,1.0,197.5,10.6
+Jugements des tribunaux cantonaux,1982,1.0,225.3,9.29
+Jugements des tribunaux cantonaux,1983,4.667,246.8,39.57
+Jugements des tribunaux cantonaux,1984,5.0,268.0,39.04
+Jugements des tribunaux cantonaux,1985,5.0,288.0,36.33
+Jugements des tribunaux cantonaux,1986,5.0,306.0,34.19
+Jugements des tribunaux cantonaux,1987,5.0,330.9,31.62
+Jugements des tribunaux cantonaux,1988,5.0,354.8,29.49
+Jugements des tribunaux cantonaux,1989,5.0,382.2,27.38
+Jugements des tribunaux cantonaux,1990,5.0,407.4,25.68
+Jugements des tribunaux cantonaux,1991,5.0,439.0,23.84
+Jugements des tribunaux cantonaux,1992,5.0,463.4,22.58
+Jugements des tribunaux cantonaux,1993,5.0,482.9,21.67
+Jugements des tribunaux cantonaux,1994,5.0,504.5,20.74
+Jugements des tribunaux cantonaux,1995,5.0,536.0,19.52
+Jugements des tribunaux cantonaux,1996,5.0,555.9,18.82
+Jugements des tribunaux cantonaux,1997,5.0,576.5,18.15
+Jugements des tribunaux cantonaux,1998,5.0,594.5,17.6
+Jugements des tribunaux cantonaux,1999,5.0,610.5,17.14
+Jugements des tribunaux cantonaux,2000,5.0,628.3,16.65
+Jugements des tribunaux cantonaux,2001,5.0,640.5,16.34
+Jugements des tribunaux cantonaux,2002,5.0,658.6,15.89
+Jugements des tribunaux cantonaux,2003,10.0,676.5,30.93
+Jugements des tribunaux cantonaux,2004,10.0,701.0,29.85
+Jugements des tribunaux cantonaux,2005,10.0,715.3,29.26
+Jugements des tribunaux cantonaux,2006,15.0,745.0,42.14
+Jugements des tribunaux cantonaux,2007,15.0,770.6,40.74
+Jugements des tribunaux cantonaux,2008,15.0,808.4,38.83
+Jugements des tribunaux cantonaux,2009,15.0,837.0,37.5
+Jugements des tribunaux cantonaux,2010,15.0,873.9,35.92
+Jugements des tribunaux cantonaux,2011,15.0,904.8,34.69
+Jugements des tribunaux cantonaux,2012,17.917,955.1,39.26
+Jugements des tribunaux cantonaux,2013,20.0,1013.5,41.3
+Jugements des tribunaux cantonaux,2014,20.0,1069.0,39.15
+Jugements des tribunaux cantonaux,2015,20.0,1119.5,37.39
+Jugements des tribunaux cantonaux,2016,20.0,1161.2,36.04
+Jugements des tribunaux cantonaux,2017,40.0,1223.0,68.45
+Jugements des tribunaux cantonaux,2018,40.0,1314.2,63.7
+Jugements des tribunaux cantonaux,2019,40.0,1403.5,59.64
+Jugements des tribunaux cantonaux,2020,40.0,1482.6,56.46
+Jugements des tribunaux cantonaux,2021,40.0,1567.2,53.41
+Jugements des tribunaux cantonaux,2022,40.0,1697.4,49.32
+Jugements des tribunaux cantonaux,2023,40.0,1855.7,45.11
+Jugements des tribunaux cantonaux,2024,40.0,1986.0,42.15
+Jugements des tribunaux cantonaux,2025,40.0,2092.7,40.0
+Jugements de première instance,1978,2.0,153.0,27.36
+Jugements de première instance,1979,2.0,165.9,25.23
+Jugements de première instance,1980,2.0,180.7,23.16
+Jugements de première instance,1981,2.0,197.5,21.19
+Jugements de première instance,1982,2.0,225.3,18.58
+Jugements de première instance,1983,9.333,246.8,79.14
+Jugements de première instance,1984,10.0,268.0,78.09
+Jugements de première instance,1985,10.0,288.0,72.66
+Jugements de première instance,1986,10.0,306.0,68.39
+Jugements de première instance,1987,10.0,330.9,63.24
+Jugements de première instance,1988,10.0,354.8,58.98
+Jugements de première instance,1989,10.0,382.2,54.75
+Jugements de première instance,1990,10.0,407.4,51.37
+Jugements de première instance,1991,10.0,439.0,47.67
+Jugements de première instance,1992,10.0,463.4,45.16
+Jugements de première instance,1993,10.0,482.9,43.34
+Jugements de première instance,1994,10.0,504.5,41.48
+Jugements de première instance,1995,10.0,536.0,39.04
+Jugements de première instance,1996,10.0,555.9,37.65
+Jugements de première instance,1997,10.0,576.5,36.3
+Jugements de première instance,1998,10.0,594.5,35.2
+Jugements de première instance,1999,10.0,610.5,34.28
+Jugements de première instance,2000,10.0,628.3,33.31
+Jugements de première instance,2001,10.0,640.5,32.67
+Jugements de première instance,2002,10.0,658.6,31.78
+Jugements de première instance,2003,20.0,676.5,61.87
+Jugements de première instance,2004,20.0,701.0,59.71
+Jugements de première instance,2005,20.0,715.3,58.51
+Jugements de première instance,2006,30.0,745.0,84.27
+Jugements de première instance,2007,30.0,770.6,81.47
+Jugements de première instance,2008,30.0,808.4,77.66
+Jugements de première instance,2009,30.0,837.0,75.01
+Jugements de première instance,2010,30.0,873.9,71.84
+Jugements de première instance,2011,30.0,904.8,69.39
+Jugements de première instance,2012,35.833,955.1,78.51
+Jugements de première instance,2013,40.0,1013.5,82.59
+Jugements de première instance,2014,40.0,1069.0,78.31
+Jugements de première instance,2015,40.0,1119.5,74.77
+Jugements de première instance,2016,40.0,1161.2,72.09
+Jugements de première instance,2017,40.0,1223.0,68.45
+Jugements de première instance,2018,40.0,1314.2,63.7
+Jugements de première instance,2019,40.0,1403.5,59.64
+Jugements de première instance,2020,40.0,1482.6,56.46
+Jugements de première instance,2021,40.0,1567.2,53.41
+Jugements de première instance,2022,40.0,1697.4,49.32
+Jugements de première instance,2023,40.0,1855.7,45.11
+Jugements de première instance,2024,40.0,1986.0,42.15
+Jugements de première instance,2025,40.0,2092.7,40.0
+"Arrêts d'appel et de cassation, tribunal administratif",1978,3.0,153.0,41.03
+"Arrêts d'appel et de cassation, tribunal administratif",1979,3.0,165.9,37.84
+"Arrêts d'appel et de cassation, tribunal administratif",1980,3.0,180.7,34.74
+"Arrêts d'appel et de cassation, tribunal administratif",1981,3.0,197.5,31.79
+"Arrêts d'appel et de cassation, tribunal administratif",1982,3.0,225.3,27.87
+"Arrêts d'appel et de cassation, tribunal administratif",1983,18.583,246.8,157.58
+"Arrêts d'appel et de cassation, tribunal administratif",1984,20.0,268.0,156.17
+"Arrêts d'appel et de cassation, tribunal administratif",1985,20.0,288.0,145.33
+"Arrêts d'appel et de cassation, tribunal administratif",1986,20.0,306.0,136.78
+"Arrêts d'appel et de cassation, tribunal administratif",1987,20.0,330.9,126.49
+"Arrêts d'appel et de cassation, tribunal administratif",1988,20.0,354.8,117.97
+"Arrêts d'appel et de cassation, tribunal administratif",1989,20.0,382.2,109.51
+"Arrêts d'appel et de cassation, tribunal administratif",1990,20.0,407.4,102.74
+"Arrêts d'appel et de cassation, tribunal administratif",1991,20.0,439.0,95.34
+"Arrêts d'appel et de cassation, tribunal administratif",1992,20.0,463.4,90.32
+"Arrêts d'appel et de cassation, tribunal administratif",1993,20.0,482.9,86.67
+"Arrêts d'appel et de cassation, tribunal administratif",1994,20.0,504.5,82.96
+"Arrêts d'appel et de cassation, tribunal administratif",1995,20.0,536.0,78.09
+"Arrêts d'appel et de cassation, tribunal administratif",1996,20.0,555.9,75.29
+"Arrêts d'appel et de cassation, tribunal administratif",1997,20.0,576.5,72.6
+"Arrêts d'appel et de cassation, tribunal administratif",1998,20.0,594.5,70.4
+"Arrêts d'appel et de cassation, tribunal administratif",1999,20.0,610.5,68.56
+"Arrêts d'appel et de cassation, tribunal administratif",2000,20.0,628.3,66.62
+"Arrêts d'appel et de cassation, tribunal administratif",2001,20.0,640.5,65.35
+"Arrêts d'appel et de cassation, tribunal administratif",2002,20.0,658.6,63.55
+"Arrêts d'appel et de cassation, tribunal administratif",2003,40.0,676.5,123.74
+"Arrêts d'appel et de cassation, tribunal administratif",2004,40.0,701.0,119.41
+"Arrêts d'appel et de cassation, tribunal administratif",2005,40.0,715.3,117.03
+"Arrêts d'appel et de cassation, tribunal administratif",2006,60.0,745.0,168.54
+"Arrêts d'appel et de cassation, tribunal administratif",2007,60.0,770.6,162.94
+"Arrêts d'appel et de cassation, tribunal administratif",2008,60.0,808.4,155.32
+"Arrêts d'appel et de cassation, tribunal administratif",2009,60.0,837.0,150.02
+"Arrêts d'appel et de cassation, tribunal administratif",2010,60.0,873.9,143.68
+"Arrêts d'appel et de cassation, tribunal administratif",2011,60.0,904.8,138.77
+"Arrêts d'appel et de cassation, tribunal administratif",2012,68.75,955.1,150.64
+"Arrêts d'appel et de cassation, tribunal administratif",2013,75.0,1013.5,154.86
+"Arrêts d'appel et de cassation, tribunal administratif",2014,75.0,1069.0,146.82
+"Arrêts d'appel et de cassation, tribunal administratif",2015,75.0,1119.5,140.2
+"Arrêts d'appel et de cassation, tribunal administratif",2016,75.0,1161.2,135.17
+"Arrêts d'appel et de cassation, tribunal administratif",2017,40.0,1223.0,68.45
+"Arrêts d'appel et de cassation, tribunal administratif",2018,40.0,1314.2,63.7
+"Arrêts d'appel et de cassation, tribunal administratif",2019,40.0,1403.5,59.64
+"Arrêts d'appel et de cassation, tribunal administratif",2020,40.0,1482.6,56.46
+"Arrêts d'appel et de cassation, tribunal administratif",2021,40.0,1567.2,53.41
+"Arrêts d'appel et de cassation, tribunal administratif",2022,40.0,1697.4,49.32
+"Arrêts d'appel et de cassation, tribunal administratif",2023,40.0,1855.7,45.11
+"Arrêts d'appel et de cassation, tribunal administratif",2024,40.0,1986.0,42.15
+"Arrêts d'appel et de cassation, tribunal administratif",2025,40.0,2092.7,40.0

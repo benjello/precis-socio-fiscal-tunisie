@@ -56,9 +56,9 @@ repliés au lieu de deux. Reste à trancher ou à faire :
   `figures/tva.py`, relevé tenu à la main `tva/frise-reformes.csv` avec son manifeste). Jalons : les
   six périodes du chapitre, la naissance de six dispositifs dans le code de 1988 et 15 ruptures
   retenues selon une règle (une par dispositif et par date, lignes jumelles fondues, registre des
-  catégories écarté ; règle au manifeste), chacune avec son ancre `r-tva-…`, son texte et son article. Deux lois
-  à date d'effet non établie (forfaits de 1993, retrait du tableau B de 1996) : losange creux,
-  posées à l'année de la loi ; 2014 (achats en espèces) et 2016 (facture électronique) : cercle
+  catégories écarté ; règle au manifeste), chacune avec son ancre `r-tva-…`, son texte et son article. Une loi
+  à date d'effet non établie (forfaits de 1993 ; le retrait du tableau B de 1996 est daté du 16 juillet 1997 depuis le 24 octobre 2026) : losange creux,
+  posée à l'année de la loi ; 2014 (achats en espèces) et 2016 (facture électronique) : cercle
   creux, classement à confirmer. Reste : libellés arabes de la frise (relecteur-ar), étapes et
   ajustements non tracés (ils restent aux registres) ;
 - **quatre clés versées le 24 octobre 2026** (`precis/{fr,ar}/fiscalite/references.json`, pièces
@@ -78,9 +78,16 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 - **registres bornés à ce que le chapitre établissait** : les lignes que seules les notes
   `fiscalite-tva-reformes.md` et `fiscalite-tva-deductions-documentation.md` connaissent (plan,
   § 5 : colonnes « N2 », « N3 ») ne sont pas versées — retouches des tableaux A, B et C de
-  1989 à 1994, lois de finances pour 1997, 2019, 2021 (art. 26), 2024 (art. 50), quatre lignes
-  de la restitution, retouches de l'article 9 connues par le seul code consolidé. Texte présent
-  au corpus pour la plupart ; lectures à confirmer à l'image avant versement ;
+  1989 à 1994 (versées le 24 octobre 2026 aux registres des taux, des exonérations et des dates,
+  lues à l'image : LF 1989 art. 21 à 25, LF 1991 art. 33 à 36 et 60, LF 1992 art. 35 à 42, LF 1993
+  art. 79 à 94, LF 1994 art. 50 à 54, 60 et 61 ; numéros d'alinéas de la LF 1989 relevés dans l'édition du code de 2008 ; LF 1995 art. 76, 81, 82, 84, 86 et 88 et LF 2014 art. 31-33, 64-65 versées le 24 octobre 2026 ; LF 2016 art. 75 § 4 (art. 13 quater, p. 3160), LF 2019 art. 64 et 79, LF 2021 art. 26, LF 2024 art. 39 et 50, LF 2025 art. 59 et LF 2026 art. 46-47 versées), lois de finances pour 1997 (art. 19, texte non retrouvé dans l'extraction), quatre lignes de la restitution, retouches de l'article 9 connues par le seul code
+  consolidé. Texte présent au corpus pour la plupart ; lectures à confirmer à l'image avant
+  versement ;
+- **décret n° 97-1339 du 14 juillet 1997 : trouvé le 24 octobre 2026** (JORT n° 57 du 18 juillet 1997,
+  p. 1274, absent de `jort_cache` ; clé `decret-97-1339-tva-carburants`). Il fixe au 16 juillet 1997
+  l'entrée en vigueur de l'art. 40 de la LF 1996 (hors électricité basse tension domestique) et le
+  taux de 10 % sur l'essence, le gasoil, le fuel-oil domestique et le gaz de pétrole ; écrit aux
+  registres des réductions annuelles, des taux et des catégories et à la frise (date établie) ;
 - **état du droit des règles de base en 2026** : la grille est établie ; le tableau A et le
   tableau B en vigueur sont donnés en annexe (`_tva_tableaux.qmd`), d'après l'édition du code à
   jour au 1er janvier 2025 et la loi de finances pour 2026 — voir l'entrée « TVA — régimes par
@@ -93,9 +100,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
   de base marqués ; quatre réformes en bandes ; rapport aux dépenses de l'État inchangé) et le
   texte dit la base de chaque pourcentage ; `#fig-tva-indirects` (part de la TVA, des droits de
   douane, des droits de consommation et des autres recettes indirectes, 1986-2025, sans PIB).
-  Restent : la taxe rapportée à la consommation privée (série à verser), le partage
-  intérieur/importation (aucune source identifiée), la décomposition des dépenses fiscales de TVA
-  par forme (plan, § 6.3, 6.4 et 6.6) ;
+  Partage importation/intérieur : fait le 24 octobre 2026 (`#fig-tva-regimes-recettes`, relevé `tva/recettes-tva-par-regime.csv`, prévisions du tableau A des lois de finances 2001-2026 ; 2001-2010 et 2021-2022 lues à l'image, 2023-2026 sur l'édition arabe, 2020 et 2022 imprimées un rang au-dessus de leur libellé) ; réalisations par régime non identifiées. Restent : la taxe rapportée à la consommation privée (série à verser), la décomposition des dépenses fiscales de TVA par forme (plan, § 6.3 et 6.4) ;
 - **domicile unique des références étendu à tout le chapitre** (7 octobre 2026, branche de test
   `chantier/citations-domicile-unique`, non commité) : `.domicile-unique` sur le titre du chapitre ;
   176 appels juridiques retirés du fil, remplacés par 164 liens `#r-tva-…` vers les lignes de
@@ -129,7 +134,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
 | Marché du travail | Volume VIII : institutions, notions, salaire minimum, conventions collectives, négociations, politiques de l'emploi, annexe des conventions branche par branche (8-9 octobre 2026 ; grilles tracées depuis le modèle, 193 cases illisibles sur les fascicules) | Décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire), fascicules au corpus ; grilles du textile 1983-1993 et du bâtiment 1991-1992 : scans français au corpus, OCR à lancer |
 | Compensation | Volume IX, huit chapitres réécrits le 6 octobre 2026 (institution, réformes, dépense, carburants, électricité et gaz, transport, rapports extérieurs, incidence) ; montant versé de la dotation de la Caisse inconnu pour dix années, dont cinq (2003, 2006, 2008, 2009, 2011) ont une ligne budgétaire d'ordre de grandeur (subvention prévue 1987-1994 et ligne 2003-2011 versées le 24 octobre 2026) ; tarifs MT/HT et gaz 1994-2003 versés le 24 octobre 2026, grille d'octobre 1993 non publiée | Lois de règlement 1988 et 1989 (scans à lire à l'image), budget économique, lois de finances complémentaires et tableaux des fonds spéciaux 1995-2010 (dotation) ; décrets de suspension du prélèvement à l'importation (n° 97-2509 à 2007-1199) ; produit annuel des prélèvements ; décret n° 93-1187 et modifications de 2002, 2009 et 2015 du décret n° 91-1391 lus le 24 octobre 2026 |
-| Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, avec une section « effectifs et masse salariale », français seul ; inscrit à l'accueil le 20 octobre 2026 (partie V) ; séries budgétaires 2016-2024 et 1987-2009 ; rien de budgétaire entre 2010 et 2016 ni avant 1987 ; forme (volume ou chapitre) à trancher par la revue | Articles « octroi de la garantie de l'État » des lois de finances de 1995 à 2015, fascicules locaux : suite de la série légale du plafond (1959-60 à 1994 rédigée le 23 octobre 2026) ; totaux des budgets de 1959-60 à 1985, scans à océriser |
+| Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, avec une section « effectifs et masse salariale », français seul ; inscrit à l'accueil le 20 octobre 2026 (partie V) ; séries budgétaires 2016-2024 et 1987-2009 ; quatre flux de clôture du budget pour 2010-2016 (24 octobre 2026) ; ni transferts par entreprise avant 2016, ni encours de la dette garantie, ni série avant 1987 ; forme (volume ou chapitre) à trancher par la revue (note dans la section du volume) | Lois de finances de 2016 à 2024 (articles sur la garantie) ; transferts par entreprise 2010-2015 ; totaux des budgets de 1959-60 à 1985 (voir la section du volume) |
 | Santé | Volume X, première rédaction le 12 octobre 2026, français seul : histoire, couverture, hôpital, médecine de ville ; dépenses du département 2018-2023 et comptes de la CNAM 2016-2021 intégrés, comptes 2011-2015 lus à l'image le 15 octobre ; les prestations en espèces restent dans « Prestations sociales » | Statistiques de prestations de la CNAM, lisibles en couche texte dans le corpus ; ventilation de la dépense par prestation à obtenir hors JORT |
 | Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense ; lectures des 18 et 19 octobre à relire à la revue ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001, arrêté de 1982 : fascicules au corpus, à lire à l'image (§ 9 du plan) |
 
@@ -143,9 +148,9 @@ mais que la couche texte testée est vide. Un texte absent du JORT en français 
 ## Fiscalité — cinq impôts ouverts, des lectures et des mécanismes à compléter
 
 - **Droit de timbre et droits d'enregistrement hors mutations : chapitre rédigé le 23 octobre 2026** (`_timbre_enregistrement.qmd`, `#sec-te`, après `_patrimoine_immobilier.qmd` dans le `_quarto.yml` français). Sources : `docs/notes/fiscalite-timbre-enregistrement-documentation.md` (note N), ses deux CSV, `docs/notes/fiscalite-timbre-enregistrement-plan-architecte.md` (plan), `docs/notes/eco-timbre-enregistrement.md` (fiche économiste). Fait : vue d'ensemble à cinq dates ; mise en place (décrets n° 65-222, 68-3, 68-104, LF 1969, loi n° 87-73, LF 1990, code de 1993) ; réformes de 1997 (taxe unique sur les assurances), 2006 (téléphone), 2022 (tickets), 2026 (affectation aux caisses) ; état du droit au 1^er^ janvier 2026 ; dix dispositifs avec registres repliés (`r-te-…`) ; figure `fig-te-rendement` (prévisions du tableau A 2001-2026, réalisations de la Cour des comptes 2018-2023, dinars courants et de 2025), lue dans le relevé tenu à la main `precis/fr/fiscalite/timbre/rendement-timbre-enregistrement.csv` par `figures/timbre_enregistrement.py` ; « Ce qu'en dit l'économie » ; fiche de recherche `r-timbre-decret-1912`. Corrigé dans `_patrimoine_immobilier.qmd` : fonds de commerce en 1987 (18,80 % au tarif de 1969, non 14,60 %), minimum de perception 15 → 20 D en 2012, renvoi `@sec-te-droit-fixe`, décret n° 68-104 cité. Restent ouverts :
-  - **lu le 24 octobre 2026** (section « 1977 à 1989 : le droit fixe harmonisé et le timbre relevé par les lois de finances », `#sec-te-1977-1989`, registre `#r-te-ant-1974` à `-1989`, relevé `fiscalite-timbre-enregistrement-textes-lus.csv`) : LF 1974 (art. 26-28), 1975 (art. 32), 1977 (art. 46-47) et loi n° 77-60, LF 1978 (art. 12), 1982 (art. 19, 22-23, 26) et LFC 1982, LF 1983 (art. 43-51), 1985 (art. 36-42), 1986 (art. 29), 1987 (art. 22-23), 1989 (art. 46, 66) ; restes : LF 1980 (art. 37 seul lu), LF 1983 art. 44 et 49 à recouper avec le tarif de 1912, loi n° 83-81 (LFC 1983, art. 14, marchés), taux des fonds de commerce de 1969 à 1987, suppression du droit d'apport proportionnel (loi n° 62-81, art. 8), timbre des effets de 1986 imprimé « 9 % » (lu ‰), clause générale d'effet de chaque loi de finances ; la **taxe unique sur les assurances** existe avant 1997 (LF 1974, art. 29, qui modifie le tarif fixé par le décret n° 69-114 du 29 mars 1969) : corriger l'ordre des réformes du chapitre (« la taxe unique sur les assurances en 1997 ») après lecture du décret n° 69-114 ; **lisible dans le corpus local** : clause générale d'effet de la LF 1990 ; prorogations du 5 % de 1989 à 1992 pour les fonds de commerce ; LF 1996, art. 48 (services rendus par l'État) ; LF 2001, art. 64 (titre de crédit) ; LF 2005, art. 59 (souscription unifiée), art. 37-40, et LF 2007, art. 17-18 (fusions) ; LF 2011, art. 22-23 (sociétés par actions, date d'effet) ; LF 2018, art. 33 (marchés) ; LF 2022, art. 37, 40, 42 ; LF 2013, art. 49 (carte de séjour, renouvellement de la carte d'identité, visite technique) ; intermédiaires de 1994 à 2012 du timbre des actes (2 → 3 D), des effets et de la carte d'identité ; LF 1998, art. 86-87, LF 2002, art. 76-77, LF 2004, art. 93-97, LF 2020, art. 23, LF 2022 (art. 128 *quater*) pour le paiement du timbre (registre `r-te-mp-` à écrire) ; LF 2001, art. 45, LF 2008, art. 27, LF 2020, art. 15-16 (exonérations de la taxe unique) ; tableau A des LF 1970-2000 et totaux de 2002-2007 ; rapports sur les projets de budget 2008, 2013, 2014, 2015 et diaporama LF 2016 (`tunisia-data`) pour le contexte et les sauts de prévision de 2008 et 2015 ;
+  - **lu le 24 octobre 2026** (section « 1977 à 1989 : le droit fixe harmonisé et le timbre relevé par les lois de finances », `#sec-te-1977-1989`, registre `#r-te-ant-1974` à `-1989`, relevé `fiscalite-timbre-enregistrement-textes-lus.csv`) : LF 1974 (art. 26-28), 1975 (art. 32), 1977 (art. 46-47) et loi n° 77-60, LF 1978 (art. 12), 1982 (art. 19, 22-23, 26) et LFC 1982, LF 1983 (art. 43-51), 1985 (art. 36-42), 1986 (art. 29), 1987 (art. 22-23), 1989 (art. 46, 66) ; restes : LF 1980 (art. 37 seul lu), LF 1983 art. 44 et 49 à recouper avec le tarif de 1912, loi n° 83-81 (LFC 1983, art. 14, marchés), taux des fonds de commerce de 1969 à 1987, suppression du droit d'apport proportionnel (loi n° 62-81, art. 8), timbre des effets de 1986 imprimé « 9 % » (lu ‰), clause générale d'effet de chaque loi de finances ; la **taxe unique sur les assurances** existe avant 1997 (LF 1974, art. 29, qui modifie le tarif fixé par le décret n° 69-114 du 29 mars 1969) : corriger l'ordre des réformes du chapitre (« la taxe unique sur les assurances en 1997 ») après lecture du décret n° 69-114 ; **lisible dans le corpus local** : clause générale d'effet de la LF 1990 ; prorogations du 5 % de 1989 à 1992 pour les fonds de commerce ; LF 2001, art. 64 (titre de crédit) ; LF 2005, art. 59 (souscription unifiée), art. 37-40, et LF 2007, art. 17-18 (fusions) ; LF 2011, art. 22-23 (sociétés par actions, date d'effet) ; LF 2018, art. 33 (marchés) ; LF 2022, art. 37, 40, 42 ; LF 2013, art. 49 (carte de séjour, renouvellement de la carte d'identité, visite technique) ; intermédiaires de 1994 à 2012 du timbre des actes (2 → 3 D), des effets et de la carte d'identité ; **écrits le 24 octobre 2026** : LF 1996 art. 48 et LF 1998 art. 84-85 (registre des documents administratifs), paiement du timbre (LF 1998 art. 86-87, LF 2002 art. 76-77, LF 2004 art. 93-97, LF 2020 art. 23, LF 2022 art. 44 ; registre `r-te-mp-`), taxe unique sur les assurances (LF 2001 art. 45, LF 2020 art. 15-16) ; seconde passe : LF 2008 art. 27 (écrit, p. 4360 : le fascicule français a bien une couche texte), LF 1994 art. 57 (déjà au chapitre) et art. 64 (formules de la Marine marchande, écrit), arrêtés du 4 juin 2003, du 2 août 2013, du 4 juillet 2017, du 23 mai 2022, du 16 janvier 2023 et du 6 janvier 2026 (écrits au registre du paiement) ; restent les arrêtés d'application des art. 128 *bis* et 128 *quinquies* (fiche `r-te-arretes-machines-a-timbrer`) et la date de dépôt du JORT n° 55 de 2017 ; tableau A des LF 1970-2000 et totaux de 2002-2007 ; rapports sur les projets de budget 2008, 2013, 2014, 2015 et diaporama LF 2016 (`tunisia-data`) pour le contexte et les sauts de prévision de 2008 et 2015 ;
   - **lecture au fascicule (scan)** : jour de publication des décrets n° 65-222, 68-3 et 68-104 (dates d'effet au mois près) ; réalisations de 2017 (`loireg2018.pdf`, sans couche texte exploitable) ; aucun OCR indispensable ;
-  - **à obtenir** : décrets organiques des 19 et 20 avril 1912 et modificatifs de 1957 (Gallica, ancienne série absente du corpus) ; date de dépôt au gouvernorat de Tunis du JORT n° 39/2012 et n° 68/2014 (le chapitre retient le 25 mai 2012, date de la note commune n° 14/2012, et le 27 août 2014, avec `#r-pi-a-2014`, qui traite le 22 août comme jour du dépôt alors que la note N y voit la publication) ; édition arabe du tableau A 2021-2022 (permutation probable 18-03 / 18-04) ; décret n° 93-1148 (timbre d'avocat) ; débats du 11 mai 1993 ; régime fiscal des assurances du décret du 27 mars 1947 ;
+  - **à obtenir** : décrets organiques des 19 et 20 avril 1912 et modificatifs de 1957 (Gallica, ancienne série absente du corpus) ; date de dépôt au gouvernorat de Tunis du JORT n° 39/2012 (le chapitre retient le 25 mai 2012, date de la note commune n° 14/2012) ; JORT n° 68/2014 : déposé le 22 août 2014 (mention de dernière page, relevée le 24 octobre 2026), donc 27 août 2014, établi ; édition arabe du tableau A 2021-2022 (permutation probable 18-03 / 18-04) ; décret n° 93-1148 (timbre d'avocat) ; débats du 11 mai 1993 ; régime fiscal des assurances du décret du 27 mars 1947 ;
   - **contexte des réformes** : 1993, 1997, 2006, 2026 (`TODO (documentaliste)` dans le chapitre) ; population couverte de l'état du droit (actes par nature, contrats d'assurance, factures, recharges) ; ligne 13-02 du tableau A (« mutations des biens mobiliers ») à rattacher à un article et à relever 2020-2026 ; sous-total des seuls impôts du tableau A ;
   - **tableaux à engendrer** : tous les tableaux du chapitre sont faits main (`TODO (rédacteur)`) ; droit fixe, minimum de perception, timbre des factures, timbre téléphonique, passeport et taxe unique à verser en amont (voir `docs/notes/backlog-modele.md`), puis figure en escalier du droit fixe et du minimum ;
   - **économiste** : écart entre *Doing Business 2020* (0,400 TND en 2018) et le timbre de 0,600 D au 1^er^ janvier 2018 ;
@@ -154,6 +159,7 @@ mais que la couche texte testée est vide. Un texte absent du JORT en français 
   - **arabe** : à la livraison de la traduction, ajouter `_timbre_enregistrement.qmd` au `_quarto.yml` arabe et copier le relevé `timbre/rendement-timbre-enregistrement.csv` (et son manifeste) sous `precis/ar/fiscalite/timbre/` ; clé arabe de l'entrée de glossaire `minimum-perception-enregistrement` à vérifier ; traduction des rubriques arabes citées (LF 2023, LF 2026) dans les `TODO` et les registres ; l'attribut `titre` des blocs repliés à traduire ;
   - **taille** : le fichier compte 16 900 mots (wc, 23/10/2026), sous le seuil d'environ 25 000.
 
+- **Timbre et enregistrement : figures du 24 octobre 2026.** `#fig-te-rendement` a quatre vues : dinars courants ; part des dépenses de l'État (série `denominateurs-depenses-etat-pib`, dépenses hors service de la dette, réalisations du ministère des Finances, 1986-2025, une seule série ; numérateur voté ou réalisé, dénominateur réalisé) ; part du PIB, une courbe par base (1983, 1997, 2015, série `pib-courant-par-base`, sans raccord, valeurs « non rattachées » 2002-2004 et 2025 dans l'onglet Données seulement) ; dinars de 2025 (IPC de l'INS base 1970, seul raccord 2024-2025 par l'indice base 2015 de la BCT). Huit figures en escalier (`figures/timbre_montants.py`, série `timbre-montants-dates`, 78 lignes, 14 grandeurs, courant et dinars de 2025) : droit fixe par page (5 dates), minimum de perception des actes (8) et des jugements par juridiction (6), timbre des factures (6), des effets domiciliés (7) et des autres effets (4), du titre de crédit (4), d'une carte (4) et d'une recharge (5) de téléphone de 5 D, passeport (7) et passeport des étudiants (6), renouvellement de la carte pour perte (4). **Écartés, à trois dates ou moins** : timbre des actes par feuille (3 : 1993, 2013, 2018), timbre de dimension (3 : 1969, 1981-1982, 1986 ; 1965 et 1968 sans jour établi), carte d'identité (3), carte de séjour (3), droit fixe des marchés (3 et fin en 2013), actes de sociétés (2), visite technique (2 datés), débits de boissons (3), services rendus par l'État sans redevance (3 dont une date non établie), renouvellement du passeport pour perte (3). Les montants par dinar ou en pour cent (téléphone depuis 2012, taxe unique, droits proportionnels) sont des taux : seul l'équivalent pour 5 D du téléphone est tracé, calculé. Pages corrigées le 24 octobre 2026 sur fascicule : la page d'un article est le numéro imprimé sur la page du fichier qui porte son texte, non le dernier numéro rencontré dans l'extraction du texte (écart d'un rang constaté pour la loi de finances pour 1997, la loi de finances complémentaire pour 2014, les lois de finances pour 2017 et 2018, et vérifié pour les références ajoutées ce jour) ; corrections de fond : marchés des n° 13 à 15 de l'art. 23 au droit fixe de 10 D dès 1993, tribunal administratif au minimum des jugements (20 D en 1993, 75 D en 2012), marchés à 20 D du 25 mai au 31 décembre 2012.
 - **Fiscalité de l'épargne et du capital : rédigée le 20 octobre 2026, section `#sec-irpp-epargne` du chapitre de l'IRPP** (`_impot_revenu.qmd`, décision du propriétaire du 20 octobre 2026 : ni chapitre neuf ni scission). Sources : `docs/notes/fiscalite-epargne-capital.md` (note, § 14 réponses), `docs/notes/fiscalite-epargne-capital-plan-architecte.md` (plan), `docs/notes/eco-epargne-capital.md` (fiche économiste). Vue d'ensemble des taux 1990-2026, mise en place, cinq réformes (1992, 1999, 2004, 2014, 2020-2022), trois registres (intérêts, revenus distribués, plus-values), état du droit au 1^er^ janvier 2026, sept dispositifs (comptes spéciaux, épargne exonérée, assurance-vie, CEA, CEI, fonds, non-résidents), coût des déductions 2017-2023 (`#fig-irpp-epargne-depenses-fiscales`, module `figures/epargne_capital.py`), « Ce qu'en dit l'économie ». `#tbl-epargne` et le plafond de l'assurance-vie ont quitté `#sec-irpp-deductions` pour la section. **Taille : le fichier compte 38 096 mots (wc, 20/10/2026), contre 26 285 avant, au-delà du seuil d'environ 25 000** ; options de scission au § 9 du plan de l'architecte, non appliquées. Restent ouverts :
   - **bibliographe** : pages des art. 30-31 de la LF 2002 (CEA, p. 4253-4254 du JORT n° 104 de 2001) à confirmer à l'image, puis à citer par `lf-2002` ;
   - **à lire au fascicule** (corpus local) : LF 2002, art. 21-28 (OPCVM), connus par la NC 45/2002 ; LF 2003, art. 23 (CEI ; art. 21, 22 et 87 lus), arrêté du 24 avril 2003 ; décret-loi n° 2011-100 ; loi n° 2005-59 (art. 39 *ter*) ; LF 2019, art. 35-4 (lu en arabe, à porter au registre des non-résidents) ; LF 2000, art. 57, et décret n° 2007-1870 ; décrets n° 99-2773 (CEA) et 99-1923 (comptes d'études) ; LF 2007, art. 32 (page 4387 à confirmer à l'image) ;
@@ -194,7 +200,7 @@ chiffres se relèvent encore à l'image avant citation. Le code fiscal du JORT n
 6 octobre 2026)** d'après `docs/notes/fiscalite-tva-deductions-documentation.md`. Restent
 ouverts, avec l'état des sources :
 
-- **séries budgétaires après 2014 et avant 2010** (stock de crédit, restitutions, retenue à
+- **séries budgétaires après 2014 et avant 2010** (24 octobre 2026 : lois de règlement 2018-2022 et rapports de la Cour des comptes locaux sans série de restitutions ; rapports annuels de la DGI 2013-2014 en police non Unicode, à lire à l'image ; recherche web : déclarations ponctuelles seulement ; fiche `r-tva-credit-series-apres-2014`) (stock de crédit, restitutions, retenue à
   la source) : les rapports annuels de la DGI de 2013 et 2014 sont dans `tunisia-data` mais
   leur texte arabe n'est pas exploitable par recherche — **à lire à l'image**, puis chercher
   les millésimes suivants ; lois de règlement, rapports de la Cour des comptes et rapports
@@ -202,12 +208,8 @@ ouverts, avec l'état des sources :
   (2009-2014) sont versées dans `tunisia-data` (`tva-credit-restitutions-sources`) et tracées
   par `@fig-tva-credit-restitutions`, toutes sources côte à côte ; quand la série sera prolongée, élargir les
   axes des vues (bornes fixées dans `figures/tva.py`) et la légende « 2009-2014 » ;
-- **dates d'effet à relire au fascicule** : lois de finances pour 1991, 1992, 1993 et 1994
-  (art. 50, 66, 68, 114, 31-32 : scans locaux, à relire à l'image — seule la mensualisation
-  de 1994 est écrite au chapitre, sans date ni citation littérale), loi n° 2007-69 (art. 10
-  et 11 : lue le 24 octobre 2026 à l'image et par OCR, JORT n° 104 de 2007, p. 4337-4356 — aucune clause d'application pour ces articles, l'art. 31 ne datant que les art. 27 à 29 et l'art. 49 portant la seule formule d'exécution ; reste la date de dépôt du fascicule au gouvernorat de Tunis, non relevée), loi de finances
-  complémentaire pour 2014 (art. 27) ;
-- **délai de visa de la restitution entre 1998 et 2001** : l'art. 41 de la LF 1998 récrit
+- **dates d'effet** : lois de finances pour 1989 à 1993 : aucune clause spéciale d'application ; dates calculées le 24 octobre 2026 selon la règle d'avant 1993 (un jour franc après la publication du 31 décembre), soit le 2 janvier, comme aux chapitres du timbre et des droits de douane (rubriques de taux, d'exonérations et de catégories ; forfaits de 1990 et de 1993 laissés non établis, leur application dépendant d'un texte d'application ou de l'année de revenus) ; art. 31 et 32 de la loi de finances pour 1994 : lus à l'image le 24 octobre 2026 (JORT n° 100 du 31 décembre 1993, p. 2197), aucune clause propre, application au 1^er^ janvier 1994 par l'art. 77 (« les dispositions de la présente loi sont applicables à compter du 1^er^ janvier 1994 »), écrite au chapitre (`r-tva-declaration-1994`) ; art. 50 (LF 1991), 66 et 68 (LF 1992) et 114 (LF 1993), non repris au chapitre ; loi n° 2007-69 (art. 10 et 11 : lue le 24 octobre 2026 à l'image et par OCR, JORT n° 104 de 2007, p. 4337-4356 — aucune clause d'application pour ces articles, l'art. 31 ne datant que les art. 27 à 29 et l'art. 49 portant la seule formule d'exécution ; fascicule déposé le 31 décembre 2007 (dernière page), exécutoire le 5 janvier 2008, écrit au registre) ; loi de finances complémentaire pour 2014, art. 27 (article 13 *bis* du code) : lu le 24 octobre 2026 (JORT n° 68 du 22 août 2014, p. 2103), aucune clause d'application propre ; fascicule déposé le 22 août 2014 (mention de dernière page), exécutoire le 27 août 2014, écrit au registre ;
+- **délai de visa de la restitution entre 1998 et 2001** (relu le 24 octobre 2026 : l'art. 41 de la LF 1998, lu à la lettre, ne porte aucun délai, et la LF 1999 n'en fixe pas non plus (elle relève le taux de restitution à 50 %) ; note commune n° 11/1999 absente du corpus) : l'art. 41 de la LF 1998 récrit
   l'alinéa sans délai, le CDPF ne fixe 90 et 30 jours qu'au 1^er^ janvier 2002 ; droit
   applicable dans l'intervalle non établi (note commune n° 11/1999 à obtenir) ;
 - **relèvement de la limite de 20 % antérieur à 1996** : le mot « également » de l'art. 41 de
@@ -232,7 +234,7 @@ son § 8 énumère ce qui reste non établi, et qui n'est donc pas écrit au cha
 d'effet des lois de finances pour 1989 à 1993 (lues à l'image, muettes sur une date
 spéciale), tableaux annexés « L », « M », « M bis », « P » et annexe 5 de la LF 2016 (non lus ;
 leur présence et leur lisibilité au corpus restent à vérifier fascicule par fascicule), articles 23 à 26 de la LF 1989 (OCR en colonnes entrelacées, à relire à
-l'image), décret n° 97-1339 du 14 juillet 1997 (à obtenir : absent de `jort_cache`), et les
+l'image), et les
 144 décrets de l'article 8 signés de 1988 à 1997, connus par leur seul intitulé. La fiche
 `r-tva-mise-en-application-post-1989` reste ouverte.
 
@@ -769,24 +771,45 @@ liste qui suit le tableau, citations comprises. Restent :
     pour des motifs économiques ; recettes prévues du compte (tableaux « B » 2009-2013) et excédents transférés au budget
     (lois de règlement, gestions 2015-2018) ; page de l'avis n° 27-2009 : non relevée (TODO conservé).
   - **Reste, lisible au corpus ou à océriser** : pourcentages d'affectation de 2009, 2011 et 2012 (fiche
-    `r-cnrps-fonds-retraite-avant-age-2009-taux` : une quinzaine de fascicules français sans couche texte complète à océriser,
-    fascicules arabes de 2013 à 2016) ; dépenses du compte (fiche `r-cnrps-compte-retraite-avant-age-2009-depenses` : annexes des
-    lois de règlement) ; relecture à l'image des art. 9 à 13 du décret n° 2022-542 ; ligne « 2009-39 » du guide statistique 2000-2010
+    `r-cnrps-fonds-retraite-avant-age-2009-taux` : les quinze fascicules français sans couche texte ont été océrisés le 24 octobre
+    2026, aucun décret de pourcentages ; les sommaires de 362 fascicules arabes (n° 50 de 2009 au n° 103 de 2012) ont été océrisés en arabe le 24 octobre 2026 :
+    seul le décret n° 2011-932 ressort ; reste le corps des fascicules arabes de 2009 à 2012 ; les lois de finances 2011, 2012 et le décret-loi n° 2011-56 ne portent que le tableau B) ; dépenses du compte (fiche `r-cnrps-compte-retraite-avant-age-2009-depenses` : annexes des
+    lois de règlement) ; relecture à l'image des art. 9 à 13 du décret n° 2022-542 (faite le 24 octobre 2026 sur le fascicule français : art. 9, 11 et 13 précisés au chapitre) ; ligne « 2009-39 » du guide statistique 2000-2010
     et page de la valeur 2 686 du guide 2010-2014 ; rectificatifs du décret n° 82-1030 et de la loi n° 81-6 (scans locaux, pages à identifier).
   - **Reste, à obtenir** : exposé des motifs et débats des chambres (30 juin et 4 juillet 2009 ; 3 mars 1987) ; convention entre
-    le ministre des finances et la CNRPS (décret n° 2009-2085, art. 8) et convention du décret n° 2017-825 (art. 8) ; arrêté du
+    le ministre des finances et la CNRPS (décret n° 2009-2085, art. 8) et convention du décret n° 2017-825 (art. 8) (fiche
+    `r-cnrps-convention-retraite-avant-age-2009` : aucune approbation par décret au JORT, sommaires arabes 2009-2012 compris ; à demander
+    à la CNRPS ou au ministère des finances) ; arrêté du
     Premier ministre fixant le contingent de 1987 ; nombre de départs de 2017-2021 et de 2022-2025 ; décision sur la bonification
     et le plafond du taux de liquidation (question de droit non tranchée par les textes).
 - **Magistrats de l'ordre judiciaire : limite d'âge (24 octobre 2026)** (`#sec-cnrps-magistrats`) : décret n° 85-614 (JORT n° 32, p. 599),
   loi organique n° 85-79, art. 43 nouveau (JORT n° 59, p. 1024), loi organique n° 88-73 (JORT n° 47, p. 1019), d'après
   `docs/notes/regimes-speciaux-magistrats-2026-10-23.md` ; loi n° 2019-37 relue en entier : aucune disposition propre aux
-  magistrats. **Reste** : sort du décret n° 85-614 après 1988 ; texte en vigueur de l'art. 42 de la loi n° 67-29 depuis la loi
-  organique n° 2016-34 ; limites d'âge du Tribunal administratif (décret n° 73-459) et de la Cour des comptes (décret n° 74-820).
-- **Reste à porter au livre (hors de la liste de cette passe)** : LF 1988 art. 60-61 et loi n° 2005-55 (anciens présidents, Premiers
-  ministres, présidents des chambres), LF 1989 art. 75-76, loi n° 2015-39 ; décret-loi n° 2011-48 (contribution de l'employeur des
-  membres du gouvernement et des gouverneurs) ; décret-loi n° 2020-30 du 10 juin 2020.
+  magistrats. **Fait le 24 octobre 2026** : limites d'âge du Tribunal administratif
+  (décret n° 73-459, JORT n° 37/1973, p. 1532) et de la Cour des comptes (décret n° 74-820, JORT n° 55/1974, p. 1919), lues à l'image,
+  65 ans ; loi organique n° 2016-34 (art. 53, 78, 80) ; les lois organiques n° 91-9, 2005-81 et 2012-13 ne touchent pas l'art. 42 de
+  la loi n° 67-29. **Reste** : sort du décret n° 85-614 après 1988 (fiche `r-decret-85-614-sort` : plein texte lu de 1997 à 2026, zéro
+  occurrence ; fascicules de 1988 à 1996 à océriser) ; texte consolidé de l'art. 42 ; limites d'âge propres éventuelles de la loi organique n° 72-67 et du décret-loi n° 70-6 ;
+  pensions des magistrats.
+- **Régimes spéciaux (députés, gouvernement, gouverneurs, Constituante) : portés au livre le 24 octobre 2026** (`#sec-cnrps-regimes-speciaux`) :
+  LF 1989 art. 75-76 (JORT n° 87/1988, p. 1800, lue à l'image), loi n° 2005-54, loi n° 2015-39 (membres de l'Assemblée constituante, JORT
+  n° 79/2015, pp. 2371-2372), décret-loi n° 2011-48 (contribution de l'employeur, +1 point au 1er juillet 2011), LF 2026 art. 102-103
+  (nouveaux art. 3 et 5 de la loi n° 85-16, effet au 13 mars 2023, p. 4257 de l'édition arabe), loi n° 83-31 art. 8 à 10 et loi n° 88-16 art. 6
+  (lues à l'image) ; loi n° 88-101 (lue à l'image, JORT n° 55/1988, p. 1156) ; chaîne des taux de la retenue et de la contribution de
+  l'art. 5 de la loi n° 85-16, 1985-2023 (tableau `tbl-cnrps-deputes-retenue` : loi n° 85-16, loi n° 94-71, LF 2002, loi n° 2007-43, LF 2026).
+  **Reste** : application aux députés du relèvement d'un point du décret-loi n° 2011-48 (le texte ne nomme pas la loi n° 85-16) ; LF 1988 art. 60-61 et loi n° 2005-55 (anciens présidents, Premiers ministres,
+  présidents des chambres : avantages en nature, relevant plutôt du livre « Rémunérations publiques » où `loi2005-55` existe) ;
+  régime des assemblées postérieures à 2014 (aucun texte identifié, fiche
+  `r-indemnite-parlementaire-decret`).
   Les rectificatifs du décret n° 82-1030 et de la loi n° 81-6 restent à relire sur les scans locaux après identification exacte
   des pages : un numéro peut avoir des homonymes.
+- **RSNA, RTNS et régime public : lacunes de lecture closes le 24 octobre 2026** : date d'effet du décret n° 2002-3018 (dépôt du 30 novembre 2002,
+  exécutoire le 5 décembre) ; date d'effet du décret n° 94-1477 (dépôt du 18 juillet 1994, exécutoire le 23 juillet) ; loi n° 88-38, art. 1 à 4
+  (ni vieillesse ni retraite) ; décret n° 90-1455, art. 3, 14, 30, 32, 43 et 54 (lus à l'image, ajoutés au tableau des textes) ; décret n° 80-103,
+  art. 11 bis (18 mois de cotisations au cours des trois premières années, édition arabe, p. 252) ; décret n° 2026-229 du 2 octobre 2026 (liste
+  du décret n° 85-1176, Instance supérieure indépendante pour les élections). Relances des fiches `r-dec74-499-modificatifs`, `r-rsna-age-relevement`,
+  `r-dl2024-4-art33` et `r-rsna-bareme-annees-manquantes` jusqu'au JORT n° 97 de 2026 : rien de nouveau (un arrêté conjoint du n° 80 de 2026 cite
+  le décret n° 2007-2148 comme dernier modificatif du décret n° 74-499). **Reste** : méthode de calcul du barème d'actualisation, hors du JORT.
 - **Barème d'actualisation — coefficients relevés.** Les 31 arrêtés de 1994 à 2024
   et leurs **1 488 coefficients** ont été relevés et contrôlés, y compris les images des
   tableaux de 1997 et 2024 ; voir `_secteur_prive.qmd#sec-rsna-bareme`. Les questions
@@ -823,8 +846,6 @@ liste qui suit le tableau, citations comprises. Restent :
   | article 32 de la loi n° 85-12 | repère de 60 → 62 ans exécutoire le 5 mai 2019 ; les autres distinctions entre colonnes restent des règles |
 
   Les conditions d'âge, d'études et de ressources de la pension d'orphelin restent à la main.
-- **Régimes spéciaux** : le décret-loi n° 2011-48 relève aussi la contribution de
-  l'employeur pour les membres du gouvernement et les gouverneurs ; le chapitre ne le dit pas.
 
 - **Tableaux de paramètres engendrés (recension du 2 octobre, lots 1a à 1c) — fait le
   3 octobre 2026** : trois tableaux faits main remplacés par des tableaux mixtes engendrés
@@ -870,8 +891,9 @@ liste qui suit le tableau, citations comprises. Restent :
     (`r-amg-cartes-quotas`) ; édition arabe de l'arrêté du 31 août 2020 à relire à l'image (début
     p. 2249 ou 2250) ; le sigle « P2P » (fiche `r-covid-2020-p2p` proposée par la note, non créée :
     le chapitre n'en a pas besoin).
-  - **reste, pour la relecture** : le décret-loi n° 2020-30 du 10 juin 2020 (complément portant les
-    pensions à 180 D) est à signaler au volume « Retraites ».
+  - **fait le 24 octobre 2026** : le décret-loi n° 2020-30 du 10 juin 2020 (complément portant les
+    pensions à 180 D, art. 1) est exposé au volume « Retraites » (`_secteur_public.qmd`, section « La péréquation cotisée »). Reste :
+    prolongation ou relèvement éventuel du seuil de 180 D, conventions de gestion, bénéficiaires et coût.
 
 - **Relecture à l'image du 24 octobre 2026** (`_autres_risques.qmd`, protection des travailleurs ayant cessé leur travail) :
   - *fait* : loi n° 2002-24 (JORT n° 18 du 1er mars 2002, p. 515, art. 1 et 2, sans clause d'effet, dépôt le
@@ -2067,7 +2089,7 @@ Notes : `docs/notes/fiscalite-droits-douane-documentation.md` (textes), `fiscali
 - **À obtenir** : *Journal officiel tunisien* de 1955 et textes douaniers du Protectorat, *Bulletin économique et social de la Tunisie* ; fascicules du tarif hors JORT (n° 59-5 de 1959, éditions de 1973 et 1989) et tarif consolidé au 1^er^ janvier 2026 (direction générale des douanes) ; fascicule annexé au JORT n° 49 de 1998 ; notice d'entrée en vigueur de l'accord d'association au JOCE (le 1^er^ mars 1998 n'est écrit qu'en TODO, d'après la page du SEAE) ; textes et dates d'entrée en vigueur des autres accords ; version consolidée du code des douanes ; contexte de 1987-1988, 1990, 1997, 2018 et 2022 (sources de l'époque) ; définition des régimes « général » et « off shore » de l'annuaire de l'INS ; importations 2024-2025 ; réalisations avant 2018 (Cour des comptes, lois de règlement) ; Jbili et Enders (1996), Havrylyshyn (1996) (`biblio-a-rapatrier.md`).
 - **Tableaux à engendrer** : redevance, minimum de perception, tables de correspondance, bandes et registres des taux sont faits main ou imprimés depuis un relevé (`TODO (rédacteur)`) ; aucun nœud douane dans l'arbre des paramètres (voir `docs/notes/backlog-modele.md`).
 - **Figures** : frise de tête `fig-dd-frise` ; `fig-dd-parts` marque 1988, 1997, 2016, 2018 et la nomenclature de 2020, non 1990 ni 2022 (plan : les cinq grandes réformes) — à trancher.
-- **Autres chapitres** : `_contributions_conjoncturelles.qmd`, registre du prélèvement conjoncturel à l'importation (`#r-ccj-1991-importation`) : ajouter sa fin (LF 1994, art. 71, incorporation aux droits de douane, et art. 74, abrogation ; pp. 2201-2202) ; `_depenses_fiscales.qmd`, TODO de la répartition par impôt : droits de douane relevés dans `fiscalite-droits-douane-chiffres.md`, § 8. `index.qmd` mis à jour (carte à sept impôts, renvois vers `@sec-dd`, `@fig-dd-parts`, `@sec-dd-etudes`) ; tableau de voisinage du livre à créer (prélèvements affectés à la Caisse générale de compensation → compensation ; agents des douanes → rémunérations publiques). `_quarto.yml` arabe : ajouter `_droits_douane.qmd` à la livraison de la traduction.
+- **Autres chapitres** : `_contributions_conjoncturelles.qmd`, registre du prélèvement conjoncturel à l'importation (`#r-ccj-1991-importation`) : fin écrite le 24 octobre 2026 (LF 1992 art. 47, prorogation pour 1992 ; LF 1994 art. 71 et 74, incorporation aux droits de douane et abrogation, p. 2202) ; 1993 : prorogé par la LF 1993, art. 118 (déjà au chapitre des droits de douane), reporté au registre le 24 octobre 2026 ; `_depenses_fiscales.qmd`, TODO de la répartition par impôt : droits de douane relevés dans `fiscalite-droits-douane-chiffres.md`, § 8. `index.qmd` mis à jour (carte à sept impôts, renvois vers `@sec-dd`, `@fig-dd-parts`, `@sec-dd-etudes`) ; tableau de voisinage du livre à créer (prélèvements affectés à la Caisse générale de compensation → compensation ; agents des douanes → rémunérations publiques). `_quarto.yml` arabe : ajouter `_droits_douane.qmd` à la livraison de la traduction.
 - **Bibliographie** : doublon `lf-1988` / `loi-87-83-lf-1988` (le chapitre cite le second, comme le relevé des tarifs) ; `.gitignore` racine de `tunisia-data` : ajouter `data/raw/droits-douane/`.
 
 **Social et secteur public**
@@ -3535,16 +3557,27 @@ les dinars constants sont retirés du volume.
 
 Ce qui reste :
 
-- **2010-2016 : aucune série budgétaire.** Le rapport de l'Unité de suivi (Présidence du
-  gouvernement) que cite le Livre blanc donnerait 2010-2014, peut-être 2010-2016 ; non obtenu
-  (fiche `r-ep-rapport-unite-suivi-2010-2014`). À chercher dans les archives du web avant toute
-  demande à l'administration.
-- **Avant 1987, et avant 2016 pour les transferts et la dette garantie** : rien (fiche
-  `r-ep-series-budgetaires-avant-2016`). Pistes non ouvertes : rapports annuels de la Banque
-  centrale, lois de règlement, Cour des comptes (dette publique extérieure, 2018), plans de
-  développement. Le plafond des garanties est lu de 1958-59 à 1994 (voir le point « Plafond
-  légal » plus bas) ; de 1995 à 2015, fascicules **lisibles** dans le corpus, articles à lire.
-  Recettes de cession après 2009 : aucune série.
+- **2010-2016 : quatre flux de clôture, versés le 24 octobre 2026** (série `cdc-cloture-entreprises-publiques`
+  de `tunisia-data`, section `#sec-ep-lp-cloture`, figure `fig-ep-cdc`, trois tableaux repliés) : versements au budget
+  (« transferts des entreprises publiques et profits du Trésor », total et lignes), principal et intérêts de la
+  dette garantie payés par l'État, remboursements de prêts reçus, recettes de privatisation inscrites au budget,
+  d'après les rapports de la Cour des comptes sur la clôture du budget des gestions 2011 à 2016 (chacun avec la
+  gestion précédente). **Ce que la série n'est pas** : ni transferts du budget aux entreprises (les rapports
+  ventilent par ministère et par nature), ni encours de la dette garantie (la Cour écrit chaque année que le
+  compte général ne porte pas la situation des prêts rétrocédés ni des prêts garantis). **Restent** : transferts
+  par entreprise 2010-2015 (rapports sur les transferts et les garanties annexés aux lois de finances d'avant
+  2020, lois de règlement, rapports annuels de la Banque centrale) ; rapport de clôture de la gestion 2010
+  absent du catalogue de la Cour ; fonds de restructuration du capital des entreprises à participation publique
+  et recapitalisations des banques publiques en réalisation (tableaux des fonds spéciaux de chaque rapport) ;
+  intérêts de 2012 à 2014 lus à la couche texte (recoupés d'un rapport à l'autre) ; rapport de l'Unité de suivi
+  (Présidence du gouvernement) que cite le Livre blanc, non obtenu (fiche `r-ep-rapport-unite-suivi-2010-2014`).
+  PIB : base 2015, rétropolée par l'INS pour 2010-2014, dite sous la figure.
+- **Avant 1987, et avant 2016 pour les transferts par entreprise et l'encours de la dette garantie** : rien
+  (fiche `r-ep-series-budgetaires-avant-2016`, passe du 24 octobre 2026, résultat partiel). Pistes non
+  ouvertes : rapports annuels de la Banque centrale, lois de règlement du Journal officiel, Cour des comptes
+  (dette publique extérieure, 2018), plans de développement. Le plafond des garanties est lu de 1958-59 à 2015
+  (voir le point « Plafond légal » plus bas). Recettes de cession : 1987-2009 (Direction générale de la
+  privatisation) et 2010-2016 (clôture) ; rien depuis 2017.
 - **Annexes du projet de loi de finances pour 2026** : non obtenues (fiche
   `r-ep-annexes-plf-2026`).
 - **« Hors compensation, hors caisses » non calculé** : le total des transferts (annexe 8)
@@ -3577,8 +3610,9 @@ Ce qui reste :
 - **Plafond légal de la garantie, 1958-59 à 2015 — fait le 23 octobre 2026**
   (`docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md`, §§ 1 à 6, section
   `#sec-ep-garanties-plafond-legal`, figure `fig-ep-plafond-legal`, registre `tbl-ep-plafond-registre`
-  et `tbl-ep-garanties-commission` repliés, relevé `listes/plafond-garanties-lois-de-finances.csv`
-  contrôlé par `tests/test_listes_entreprises_publiques.py`). Soixante et une lois et textes lus aux
+  et `tbl-ep-garanties-commission` repliés ; série `jort-lf-plafond-garanties` de `tunisia-data`, lue par
+  `figures/listes.py` depuis le cache du précis le 24 octobre 2026, contrôlée par
+  `tests/test_listes_entreprises_publiques.py`). Soixante et une lois et textes lus aux
   fascicules français du corpus : trente-huit de 1958-59 à 1994 (reconnaissance de caractères) ;
   vingt-trois de 1995 à 2015 (couche texte ; polices codées de 1999 à 2004 déchiffrées), dont deux
   relèvements en cours de gestion — loi n° 2002-90 (2002 : de 950 à 1 800 MD) et décret-loi
@@ -3593,7 +3627,7 @@ Ce qui reste :
   de l'Office national de l'huile (loi de finances pour 1997, art. 17, 980 MD), lue et non versée ;
   article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin) ; acte de la
   commission d'instruction ; prêts du Trésor aux entreprises publiques (article voisin de chaque loi,
-  40 MD de 1995 à 2005 et 100 MD de 2013 à 2015, montants vus, pas en série) ; budgets d'équipement et de développement de 1961 à 1985 et réalisation du budget avant 1986
+  40 MD de 1995 à 2005 et 100 MD de 2013 à 2015, montants vus, pas en série) ; lois modifiant un budget de capital en cours d'année et réalisation du budget avant 1986
   (fiche `r-ep-budget-etat-1959-1985`) ; PIB de 1959-60 et de 1960 ; libellés arabes de la figure ; alias arabe transitoire `lf-1978` à retirer après la
   retraduction (`docs/notes/biblio-a-rapatrier.md`). **Dénominateurs d'avant 1986 (§ 7 de la note)** : établi le budget ordinaire voté (titre I ;
   recettes ordinaires = crédits des dépenses de gestion ou courantes) de 1959-60 à 1986 (les crédits de
@@ -3601,9 +3635,7 @@ Ce qui reste :
   vue en part du budget de la figure sur deux segments séparés en 1986 (budget ordinaire voté, puis dépenses
   réalisées hors service de la dette) ; aucun total de l'État (budget d'équipement non lu, contribution du
   budget ordinaire à compter une fois). Notion « budget ordinaire » non versée au glossaire, faute de terme
-  arabe attesté par un texte lu. **À reporter dans `tunisia-data`** (signalé, non versé) : la série du plafond
-  légal (montant fixé, montant en vigueur à la fin de la gestion), 1959-60 à 2015, et la série du budget
-  ordinaire voté, 1959-60 à 1986.
+  arabe attesté par un texte lu. **Versé dans `tunisia-data`** : séries `jort-lf-plafond-garanties` (montant fixé, montant en vigueur à la fin de la gestion, 1958-59 à 2015) et `jort-lf-budget-ordinaire` (1959-60 à 1986) ; le relevé du plafond du livre est retiré, celui du budget ordinaire reste dans le livre pour ses colonnes d'article et de page (la série porte la localisation en une colonne).
 - **Second passage de la note** (son § 8) : ventilation par nature de 2023 (écart imprimé de
   23,0 MD) ; encours des prêts rétrocédés (rapport sur la dette publique, pages repérées) ;
   rapports sur la dette publique des éditions LF 2021 et LF 2024 ; page « bilan global » de la
@@ -3644,6 +3676,47 @@ Ce qui reste :
 - **Intégration du volume** : livre arabe et `_quarto.yml` arabe, page d'accueil, comptes de
   livres (`AGENTS.md`, README), collection Zotero dans `sync_biblio.py`, libellés arabes des
   figures (`figures/entreprises_publiques.py`, table `LIB`).
+- **Budget d'équipement et total de l'État avant 1986 — fait le 24 octobre 2026** (relevé
+  `listes/budget-equipement-lois-de-finances.csv` et manifeste, test
+  `test_budget_d_equipement_et_total_de_l_etat`, tableau replié `tbl-ep-budget-etat` dans la section du plafond ;
+  seize clés de lois neuves dans `entreprises_publiques/references.json`, à promouvoir au fonds commun). Vingt-cinq
+  textes lus à l'image, 1961 à 1986 : voies et moyens égaux aux crédits de paiement partout ; total de l'État =
+  budget ordinaire + crédits de paiement − contribution du budget ordinaire, **établi par la loi pour 1983 seule**
+  (1 753 MD), calculé selon le même mécanisme pour les autres gestions ; vide pour 1962 (montant provisoire
+  abrogé), 1962-1964 (montant triennal), 1963 et 1964. Avant 1985 les voies et moyens comprennent les budgets annexes
+  (le raccord 1984-1985 n'est pas à périmètre égal). **Restent** : lois modificatives et complémentaires (n° 70-59,
+  71-58, 74-76, 84-3, 81-70, 82-27, 83-81) ; gestions 1959-60, 1963, 1964 sans montant annuel ; réalisation avant
+  1986 ; reversement du total dans `tunisia-data` (relevé versionné dans le livre pour l'instant) ; la figure du
+  plafond garde le budget ordinaire pour dénominateur (le total calculé n'y est pas encore substitué). Correction :
+  la contribution du budget ordinaire en 1961 est de 0,6 MD (les 3 MD de la note du 23 octobre sont les emprunts).
+- **Gestions 2010-2016, lois de finances 2016-2024** : voir les points « 2010-2016 » et « Plafond légal » ci-dessus ;
+  le plafond de 2016 à 2024 vient des annexes du ministère (série `garanties-etat`), les articles des lois de
+  finances de 2016 à 2024 restent à lire pour que la série légale rejoigne les annexes.
+- **Forme du livre : volume ou chapitre — décision laissée à la revue.** Éléments : (a) le livre n'a qu'un chapitre
+  (`_relation_financiere.qmd`, environ 1 200 lignes) et une annexe ; (b) ses figures, ses séries et son plan
+  (mise en place, réformes, état du droit, longue période) sont ceux d'un chapitre de partie V ; (c) le volume
+  n'existe qu'en français et n'est pas lié depuis l'accueil comme les autres ; (d) la matière s'est étendue
+  (garanties, dettes croisées, dividendes, cessions, effectifs, 2010-2016, budget avant 1986) au point que la
+  scission du chapitre selon le critère de `docs/conventions-redaction.md` § 4 est plausible : relation financière,
+  garanties et dette garantie, cessions, effectifs. Un volume suppose un livre arabe et un `_quarto.yml` arabe
+  tenus à la main ; un chapitre de la partie V évite cette charge mais allonge un volume déjà chargé. Aucune
+  décision prise ici.
+- **État chiffré des lacunes restantes du volume (24 octobre 2026)** :
+
+  | Lacune | État | Raison |
+  |---|---|---|
+  | Transferts du budget aux entreprises, par entreprise, 2010-2015 | 0 année sur 6 | rapports de clôture sans ventilation ; annexes d'avant 2020 non ouvertes |
+  | Encours de la dette garantie avant 2016 | 0 année sur 6 | la Cour écrit que le compte général ne le porte pas |
+  | Rapport de clôture de la gestion 2010 | 1 sur 7 gestions absent du catalogue | valeurs de 2010 prises à la comparaison du rapport 2011 (3 flux sur 4) |
+  | Intérêts de la dette garantie 2012-2014 | 3 sur 7 années lues à la couche texte | recoupées d'un rapport à l'autre, non relues à l'image |
+  | Articles de garantie des lois de finances 2016-2024 | 8 lois sur 9 non lues (la loi de 2020 l'est) | plafond tiré des annexes ; seule la loi de 2020 lue |
+  | Lois modificatives des budgets de capital 1970-1984 | 7 lois non lues | montants du vote initial |
+  | Budget de l'État avant 1986 : total calculé | 23 gestions sur 26 (1961 à 1986) ; établi par la loi pour 1983 | sans total : 1962 (provisoire), 1963 et 1964 (triennal 1962-1964) ; 1959-60 sans budget d'équipement |
+  | Réalisation du budget avant 1986 | 0 année sur 27 | lois de règlement et rapports de la Banque centrale non ouverts |
+  | Recettes de cession depuis 2017 | 0 année | aucune source ouverte |
+  | Fonds de restructuration du capital, recapitalisations en réalisation | 0 année | tableaux des fonds spéciaux non lus |
+  | Rapport de l'Unité de suivi 2010-2014 | 1 document | non obtenu (fiche `r-ep-rapport-unite-suivi-2010-2014`) |
+
 ### Le transport public (`_transport.qmd`, 11 octobre 2026)
 
 Chapitre nouveau, écrit sur `docs/notes/compensation-transport-2026-10-11.md` et sur les sept
@@ -4417,20 +4490,8 @@ généraliser : `finances_locales/figures/finances_locales.py` (`_pib`, `_pib_pa
 13 non conformes. À mettre en conformité **dans des PR distinctes, une par volume** ; rien n'a
 été touché dans les volumes ici.
 
-- **Fiscalité — 6 emplois non conformes sur 8 depuis le 24 octobre 2026** (la figure de rendement de
-  la TVA est tracée base par base, `#fig-tva-rendement`, et sa phrase chiffrée reprise ; reste le
-  même travail pour les figures de `irpp.py`, `impot_societes.py` et `droits_consommation.py` et
-  les phrases de `_impot_revenu.qmd`, `_impot_societes.qmd` et `_droits_consommation.qmd`, sur le
-  modèle de `figures/tva.py`). Texte
-  de l'inventaire d'origine : les quatre figures de rendement (`figures/irpp.py`,
-  `impot_societes.py`, `tva.py`, `droits_consommation.py`) rapportent les recettes au PIB du
-  ministère des Finances sans dire sa base ni tracer ses changements de niveau (1997, 2002, 2005,
-  2010) ; la légende de l'impôt sur les sociétés présente l'écart de 5 % de 2012-2014 entre ses
-  deux colonnes de PIB sans dire que c'est un écart de base. Quatre phrases chiffrées à reprendre :
-  `_impot_revenu.qmd` (« de 1,9 % à plus de 6 % », 1990-2016), `_impot_societes.qmd` (« 1,86 % …
-  3,77 % »), `_tva.qmd` (« 6,5 % en 1988, 5,1 % en 1997… » : 1997 est l'année du changement de
-  niveau de 9,8 %), `_droits_consommation.qmd` (maximum de 1994 en base 1983 comparé à la suite en
-  base 1997).
+- **Fiscalité — mis en conformité le 24 octobre 2026 (branche `lacunes-fiscalite`).** Les quatre figures de rendement (impôt sur le revenu, impôt sur les sociétés, TVA, droits de consommation) rapportent l'impôt au PIB de chacune des trois bases (1983, 1997, 2015), jamais raccordées, d'après la série `pib-courant-par-base` ; composant commun `figures/rendement_bases.py` (modèle : `figures/tva.py`), onglet « Données » à une ligne par année et par base. Les phrases chiffrées de `_impot_revenu.qmd`, `_impot_societes.qmd` et `_droits_consommation.qmd` disent la base de chaque pourcentage ; le rapport aux dépenses de l'État et aux recettes fiscales n'en dépend pas. Reste : libellés arabes des légendes (relecteur-ar) et rendu arabe des trois figures.
+
 - **Rémunérations publiques — 5 emplois non conformes.** `fig-masse-salariale-ratios` (et sa
   reprise dans `_demo_figure_onglets.qmd`) annonce un « PIB en base 2015 » alors que 1990-1996
   n'est pas dans cette base, que 2002-2004 ne se rattache à aucune base et que **2012-2014 sont
@@ -4638,13 +4699,15 @@ matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
   vins mousseux classés (4,000 D français, 24,000 arabe) : l'édition 2019 du code (française, p. 79 et 98, citée au chapitre) donne 24,000 D, mais reprend le tableau consolidé et non le fascicule ; seul un second exemplaire du JORT n° 104 de 2015 en français (absent du corpus local, non servi par pist.tn) trancherait la coquille. Reste à lire la doctrine administrative (notes communes sur
   les art. 44 de la LF 2016 et 45 de la LF 2018) pour savoir si l'annexe du décret de 2015 est
   abrogée, sans objet ou laissée en coexistence. TODO au chapitre.
-- **Lois de finances 2022 à 2026.** Rubriques des textes indexés (`jort_cache`) : aucune ne
+- **Lois de finances 2022 à 2026.** *(24 octobre 2026 : LF 2022, art. 59 et LF 2023, art. 62 lus et écrits dans « Deux prélèvements propres aux boissons alcoolisées », `#sec-dc-boissons-autres`.)* Rubriques des textes indexés (`jort_cache`) : aucune ne
   porte sur les positions 22-03 à 22-08 ; le tableau consolidé de 2023 (`tbl-dc-en-vigueur`)
   porte les valeurs de 2021. À confronter, ligne à ligne, au texte des lois de finances 2024 à
   2026 (fascicules français de 2023 et 2024 absents du corpus ; éditions arabes présentes).
-- **Lois de finances 1998 à 2017.** Non dépouillées pour les positions 22-05, 22-06 et Ex 22-08
-  (la LF 1998, art. 47, modifie le tableau pour un contenu non lu) : les valeurs de 1997 à 2015
-  de ces lignes reposent sur la chaîne des décrets (« sans modification » en 2002 et en 2013).
+- **Lois de finances 1998 à 2017.** Plein texte des 31 fascicules à couche texte (fiche
+  `r-dc-alcools-lois-de-finances-1998-2017`, 24 octobre 2026) : aucune occurrence des positions 22-03
+  à 22-08 dans un article avant la LF 2018 ; la LF 1998, art. 47, vise les voitures de tourisme et
+  les motocycles (lu, écrit). *Seconde passe du 24 octobre 2026* : numéros tarifaires à quatre et six chiffres, désignations et éditions arabes 2022-2025 : aucune ligne des positions 22-03 à 22-08 hors LF 2018 ; les modifications du droit de consommation des LF 2023 à 2026 portent sur la position 87-03. Reste : tableaux des LF 2000 à 2004 (couche texte décalée), à relire à l'image. Les valeurs de 1997 à 2015 de ces lignes reposent sur la chaîne des décrets (« sans
+  modification » en 2002 et en 2013).
 - **Habilitation de l'article 86 (LF 1989).** Elle vise les positions 22-03 et 22-05 à 22-09, sans
   22-04, alors que les décrets de 1993 et de 1997 fixent des tarifs pour Ex 22-04 (vins dans la
   nomenclature actuelle). Piste : la loi de décembre 1988 précède le tarif harmonisé (loi n° 89-113) ;
@@ -4656,9 +4719,9 @@ matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
   par OCR (colonne gauche à contrôler à l'image).
 - **Contexte de 1997.** Le décret n'a pas d'exposé des motifs ; budget de 1997 et IXe plan non
   consultés.
-- **Loi de finances 2022, art. 33 et 59 ; loi de finances 2023, art. 62.** TVA du commerce de
-  détail des boissons alcoolisées, tarif du droit sur la vente à emporter, avance sur les
-  ventes : régime des boissons non repris dans la section ; à rédiger.
+- **Loi de finances 2022, art. 33 et 59 ; loi de finances 2023, art. 62.** *Écrit le 24 octobre
+  2026* : redevance sur le commerce à emporter (lois n° 98-14 et 2004-76, LF 2022 art. 59), avance de 5 %
+  sur les ventes des producteurs ; TVA du détail (art. 33) au registre des exonérations. Dates d'effet calculées le 24 octobre 2026 sur la date de dépôt relevée à la dernière page des fascicules (1^er^ mars 1998 ; 12 août 2004). Restent : arrêtés du 4 juin 1998 et du 14 décembre 2006 (conditions d'octroi de l'autorisation), non lus.
 - **Fascicules scannés 2016-2026.** Recherche du motif 97-1368 sur la couche texte seulement :
   fiche `r-modificatifs-decret-97-1368` (`a_faire`).
 - **Tableaux.** `alcools-tarifs` est engendré depuis le 23 octobre 2026
