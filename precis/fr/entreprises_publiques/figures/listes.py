@@ -42,7 +42,8 @@ ENSEMBLE = "entreprises-publiques-listes"
 ETABLISSEMENTS = "etablissements-entreprises-publiques"
 SORTIES = "sorties-recueil-privatisation"
 RECUEIL = "privatisation-recueil-operations"
-PLAFOND = "plafond-garanties-lois-de-finances"
+PLAFOND = "jort-lf-plafond-garanties"
+FICHIER_PLAFOND = "plafond-garanties-lois-de-finances"  # relevé versionné
 
 BLEU, ORANGE, VERT, GRIS = "#0969da", "#bc4c00", "#1a7f37", "#57606a"
 # Année de la liste -> libellé de colonne
@@ -278,7 +279,7 @@ def tableau_sorties(caption: str, tbl_id: str = "tbl-ep-liste-sorties-recueil") 
 
 figtools.register_provenance(
     PLAFOND, titre="Plafond de la garantie de l'État fixé par la loi de finances, 1958-59 à 2015",
-    sources=_sources(PLAFOND), unite="millions de dinars courants",
+    sources=_sources(FICHIER_PLAFOND), unite="millions de dinars courants",
     perimetre=("article « octroi de la garantie de l'État » de chaque loi de finances, et lois "
                "qui en modifient le montant en cours de gestion ; montant maximal dans la limite "
                "duquel le ministre chargé des finances est autorisé à accorder la garantie du "
@@ -314,10 +315,11 @@ figtools.register_provenance(
              "réalisées ensuite."))
 
 RUPTURES_PIB = (1992, 1997, 2010)  # années où le PIB change de série (base) : trait interrompu
-BUDGET = "budget-ordinaire-lois-de-finances"
+BUDGET = "jort-lf-budget-ordinaire"
+FICHIER_BUDGET = "budget-ordinaire-lois-de-finances"  # relevé versionné
 figtools.register_provenance(
     BUDGET, titre="Budget ordinaire de l'État voté par la loi de finances, 1959-60 à 1986",
-    sources=_sources(BUDGET), unite="millions de dinars courants",
+    sources=_sources(FICHIER_BUDGET), unite="millions de dinars courants",
     perimetre=("montant des recettes ordinaires du budget de l'État (article 1er) et montant "
                "maximum des crédits des dépenses de gestion ou courantes (article 3 ou 6), égaux "
                "chaque année, tels que la loi de finances les fixe ; budgets annexes, "
@@ -336,7 +338,7 @@ MESURES = {"md": "Millions de dinars courants", "pib": "En % du PIB",
 def plafond() -> pd.DataFrame:
     """Relevé enrichi : une ligne par montant fixé ou modifié, avec le montant de la gestion
     précédente (dernier montant en vigueur) pour les lois de finances de l'année."""
-    d = _lire(PLAFOND)
+    d = _lire(FICHIER_PLAFOND)
     d["plafond"] = pd.to_numeric(d["plafond_md"], errors="coerce")
     d["avant"] = pd.to_numeric(d["plafond_avant_md"], errors="coerce")
     precedent = None
@@ -352,7 +354,7 @@ def plafond() -> pd.DataFrame:
 def budget() -> pd.DataFrame:
     """Budget ordinaire voté : une ligne par gestion, `budget_md` = crédits, ou recettes quand
     le chiffre des crédits n'est pas lu (1959-60)."""
-    d = _lire(BUDGET)
+    d = _lire(FICHIER_BUDGET)
     d["recettes"] = pd.to_numeric(d["recettes_md"], errors="coerce")
     d["credits"] = pd.to_numeric(d["credits_md"], errors="coerce")
     d["budget_md"] = d["credits"].fillna(d["recettes"])
