@@ -11475,6 +11475,289 @@ entries:
         وهي من المنتفعين بباب «المحروقات» في الميزانية.
       synonymes: []
 
+  # --- Compensation, volume IX : passe « définitions » du 24 octobre 2026 (compte de
+  # la Caisse, prix des carburants avant 1993, tarifs de l'électricité et du gaz).
+  # Les définitions arabes des entrées `valide` sont du terminologue : à relire par un
+  # arabophone. Les entrées `provisoire` n'ont qu'un terme arabe, non attesté.
+
+  - id: redevance-compensatrice
+    acronyme: null
+    statut: provisoire
+    references: [arrete-1957-02-05-redevance-hydrocarbures, arrete-1956-04-07-redevance-huiles, arrete-1956-12-27-redevance-sucres, decret67-99]
+    source_definition: {ref: arrete-1957-02-05-redevance-hydrocarbures, locator: "art. 1"}
+    # AR non lu : l'édition arabe de l'arrêté du 5 février 1957 n'est pas dépouillée.
+    # « الأتاوة التعويضية » est une proposition du terminologue, distincte de
+    # « أتاوة الدعم » (redevance de compensation de 2013) ; pas de `source_traduction`.
+    voir_aussi: [perequation-des-prix, taxe-unique-compensation-carburants, redevance-compensation]
+    fr:
+      terme: Redevance compensatrice
+      definition: >
+        Prélèvement institué, avant la Caisse générale de 1970, au profit de la Caisse
+        de compensation sur un produit pour en soutenir un autre ou pour égaliser un
+        prix d'importation et un prix intérieur : sur les huiles alimentaires autres
+        que l'huile d'olive et sur les sucres importés en 1956, sur l'essence, le
+        pétrole lampant et le gas-oil en 1957, sur les produits du chapitre 73 du
+        tarif des douanes en 1967. Celle de 1957, de 300 francs par hectolitre,
+        finance une ristourne aux distributeurs de fuel. À distinguer de la redevance
+        de compensation créée en 2013.
+      synonymes: []
+    ar:
+      terme: الأتاوة التعويضية
+      definition: ""
+      synonymes: []
+
+  - id: compte-caisse-compensation
+    acronyme: null
+    statut: provisoire
+    references: [lf-1971, bct-ra-1985, bct-ra-1987]
+    source_definition: {ref: lf-1971, locator: "art. 48"}
+    # AR non attesté : « حساب الصندوق العام للتعويض » est construit sur le nom de la
+    # Caisse (loi n° 70-26, art. 3, éd. arabe). Le terme français ne reprend pas
+    # « recettes propres », déjà synonyme de `ressources-propres` (collectivités).
+    voir_aussi: [caisse-generale-compensation, dotation-budgetaire, fonds-special-tresor, produits-de-base]
+    fr:
+      terme: Compte de la Caisse générale de compensation
+      definition: >
+        Compte du fonds spécial du Trésor que constitue la Caisse générale de
+        compensation depuis la loi de finances pour 1971 (art. 48). Il porte en
+        charges les subventions dues au titre de l'année aux produits de base ; en
+        ressources, les recettes propres ou affectées — taxes et redevances que la loi
+        attribue à la Caisse —, la dotation du budget de l'État, des prélèvements sur
+        d'autres fonds et des prêts du Trésor. Un solde déficitaire devient un arriéré
+        de la Caisse envers les offices. Avec la loi de finances pour 1987, les
+        recettes fiscales et parafiscales destinées à la Caisse sont intégrées au
+        budget de l'État et cessent d'être individualisées.
+      synonymes: []
+    ar:
+      terme: حساب الصندوق العام للتعويض
+      definition: ""
+      synonymes: []
+
+  - id: dotation-budgetaire
+    acronyme: null
+    statut: provisoire
+    references: [bct-ra-1987]
+    source_definition: {ref: bct-ra-1987, locator: "p. 71"}
+    # AR non attesté : proposition du terminologue ; le rapport de la BCT n'est lu
+    # qu'en français. Le terme français est qualifié pour que la table de traduction
+    # n'impose pas ce terme arabe aux autres dotations budgétaires (fiscalité).
+    voir_aussi: [compte-caisse-compensation, caisse-generale-compensation]
+    fr:
+      terme: Dotation budgétaire de la Caisse générale de compensation
+      definition: >
+        Somme que le budget de l'État alloue à la Caisse générale de compensation, à
+        côté de ses recettes propres. C'est la dotation, et non la charge de la
+        Caisse, qui pèse sur le budget de l'État. À partir de 1987, la loi de finances
+        intégrant au budget les recettes jusque-là affectées à la Caisse, la dotation
+        en devient la ressource principale.
+      synonymes: []
+    ar:
+      terme: منحة الميزانية للصندوق العام للتعويض
+      definition: ""
+      synonymes: []
+
+  - id: prix-limite-vente
+    acronyme: null
+    statut: provisoire
+    references: [arrete-1964-09-28-prix-petroliers, arrete-1968-12-09-prix-carburants, arrete-1992-07-10-prix-petroliers, arrete-1993-10-26-prix-petroliers]
+    source_definition: {ref: arrete-1992-07-10-prix-petroliers}
+    # AR non lu (éditions arabes des arrêtés de prix 1964-1993 non dépouillées) :
+    # proposition du terminologue.
+    voir_aussi: [structure-des-prix, compensation-carburants]
+    fr:
+      terme: Prix limite de vente
+      definition: >
+        Prix de vente au détail des carburants « dans les postes de ravitaillement
+        routier », en millimes par litre, que fixent les arrêtés de prix publiés au
+        Journal officiel de 1964 à 1993 ; le gaz de pétrole liquéfié y est donné par
+        charge, en dinars. Jusqu'en 1966, le prix publié est celui de la zone de Tunis
+        et de sa banlieue ; l'arrêté du 9 décembre 1968 le rend uniforme sur le
+        territoire.
+      synonymes: [Prix limite de vente à la pompe]
+    ar:
+      terme: السعر الأقصى للبيع
+      definition: ""
+      synonymes: []
+
+  - id: base-caisse
+    acronyme: null
+    statut: provisoire
+    references: []
+    # Pas de `source_definition` : le chapitre emploie la notion sans citer de texte
+    # qui la définisse. AR non attesté : proposition du terminologue.
+    voir_aussi: [compensation-des-prix]
+    fr:
+      terme: Base caisse
+      definition: >
+        Règle de tenue des comptes qui rattache une dépense ou une recette à l'année
+        où elle est payée ou encaissée, et non à celle où elle est due. Dans une
+        série budgétaire tenue en base caisse, les arriérés et les régularisations
+        entre l'État et les entreprises déplacent la charge d'une année à l'autre.
+      synonymes: []
+    ar:
+      terme: أساس الخزينة
+      definition: ""
+      synonymes: []
+
+  - id: tranche-economique
+    acronyme: null
+    statut: valide
+    references: [arrete-1984-06-04-tarifs-electricite-gaz, loi2018-56-lf2019, lf-2024]
+    source_definition: {ref: arrete-1984-06-04-tarifs-electricite-gaz, locator: "annexe III"}
+    # AR : « القسط الاقتصادي » dans l'édition arabe de l'arrêté du 4 juin 1984 (JORT,
+    # éd. arabe, p. 1492, lu à l'image par le documentaliste) ; « الشريحة الاقتصادية »
+    # dans la loi de finances pour 2019, art. 68 (éd. arabe seule, lue à l'image), et
+    # dans celle pour 2024. Le terme retenu est celui de la loi en vigueur ; à trancher.
+    source_traduction: {ref: loi2018-56-lf2019, locator: "art. 68"}
+    voir_aussi: [tranche-normale, fonds-transition-energetique, steg]
+    fr:
+      terme: Tranche économique
+      definition: >
+        Première tranche du tarif de l'électricité en basse tension, créée par
+        l'arrêté du 4 juin 1984 à compter du 31 mai 1984 : les cinquante premiers
+        kilowattheures consommés chaque mois par les abonnements de 1 ou 2 kVA,
+        facturés à un prix inférieur à celui de la tranche normale. Les abonnés de la
+        basse tension en tranche économique dont la consommation ne dépasse pas 100
+        kWh par mois sont exonérés de la taxe au profit du Fonds de transition
+        énergétique (loi de finances pour 2019, art. 68).
+      synonymes: []
+    ar:
+      terme: الشريحة الاقتصادية
+      definition: >
+        أولى شرائح تعريفة الكهرباء ذات الجهد المنخفض، أحدثها القرار المؤرخ في 4 جوان
+        1984 بداية من 31 ماي 1984: وهي الخمسون كيلواط-ساعة الأولى التي يستهلكها كلّ
+        شهر المشتركون في قوّة 1 أو 2 كيلوفولط-أمبير، بسعر دون سعر القسط العادي.
+        ويُعفى من المعلوم لفائدة صندوق الانتقال الطاقي المشتركون في شبكة الجهد
+        المنخفض في الشريحة الاقتصادية الذين لا يتجاوز استهلاكهم الشهري 100 كيلواط-ساعة
+        (قانون المالية لسنة 2019، الفصل 68).
+      synonymes: [القسط الاقتصادي]
+
+  - id: tranche-normale
+    acronyme: null
+    statut: valide
+    references: [arrete-1984-06-04-tarifs-electricite-gaz]
+    source_definition: {ref: arrete-1984-06-04-tarifs-electricite-gaz, locator: "annexe III"}
+    # AR : « القسط العادي » (édition arabe de l'arrêté du 4 juin 1984, p. 1492, lu à
+    # l'image par le documentaliste). Seule forme attestée.
+    source_traduction: {ref: arrete-1984-06-04-tarifs-electricite-gaz, locator: "annexe III"}
+    voir_aussi: [tranche-economique, steg]
+    fr:
+      terme: Tranche normale
+      definition: >
+        Seconde tranche du tarif de l'électricité en basse tension créé par l'arrêté
+        du 4 juin 1984 : la consommation au-delà de cinquante kilowattheures par mois
+        des abonnements de 1 ou 2 kVA, et toute la consommation des abonnements de
+        plus de 2 kVA.
+      synonymes: []
+    ar:
+      terme: القسط العادي
+      definition: >
+        ثاني أقساط تعريفة الكهرباء ذات الجهد المنخفض التي أحدثها القرار المؤرخ في 4
+        جوان 1984: وهو الاستهلاك الذي يفوق خمسين كيلواط-ساعة في الشهر بالنسبة إلى
+        المشتركين في قوّة 1 أو 2 كيلوفولط-أمبير، وكامل استهلاك المشتركين في قوّة تفوق 2
+        كيلوفولط-أمبير.
+      synonymes: []
+
+  - id: fonds-transition-energetique
+    acronyme: null
+    statut: valide
+    references: [lf-2014, loi2018-56-lf2019, lf-2024]
+    source_definition: {ref: lf-2014, locator: "art. 67-68"}
+    # AR : « صندوق الانتقال الطاقي » (loi de finances pour 2019, art. 68, édition arabe
+    # seule, JORT n° 104 de 2018, p. 5462, lue à l'image par le documentaliste).
+    source_traduction: {ref: loi2018-56-lf2019, locator: "art. 68"}
+    voir_aussi: [tranche-economique, steg]
+    fr:
+      terme: Fonds de transition énergétique
+      definition: >
+        Fonds « destiné à l'incitation à l'investissement dans le domaine de la
+        maîtrise de l'énergie », nom que la loi de finances pour 2014 (art. 67) donne
+        au fonds de la maîtrise de l'énergie de la loi n° 2005-106 ; son article 68
+        l'alimente par une taxe due sur les produits énergétiques consommés, dont il
+        renvoie la liste et le taux à un décret. La loi de finances pour 2019 (art.
+        68) fixe cette liste et ces montants, dont 1 millime par kWh d'électricité et
+        0,25 millime par thermie de gaz naturel ; la loi de finances pour 2024 (art.
+        51) les porte à 5 et 1,25 millimes.
+      synonymes: [Fonds de la transition énergétique]
+    ar:
+      terme: صندوق الانتقال الطاقي
+      definition: >
+        صندوق يرمي إلى تشجيع الاستثمار في مجال التحكم في الطاقة، وهو الاسم الذي أعطاه
+        قانون المالية لسنة 2014 (الفصل 67) لصندوق التحكم في الطاقة المنصوص عليه بالفصل 12
+        من القانون عدد 106 لسنة 2005؛ ويموّله الفصل 68 من القانون نفسه بمعلوم موظف على المنتجات الطاقية
+        المستهلكة، يُضبط بأمر قائمة المنتجات الخاضعة له ونسبته. وضبط قانون المالية لسنة
+        2019 (الفصل 68) هذه القائمة والمبالغ، ومنها 1 مليم للكيلواط-ساعة من الكهرباء
+        و0,25 مليم للوحدة الحرارية من الغاز الطبيعي، ورفعها قانون المالية لسنة 2024
+        (الفصل 51) إلى 5 مليمات و1,25 مليم.
+      synonymes: []
+
+  - id: homologation-des-prix
+    acronyme: null
+    statut: valide
+    references: [decret91-1996, decret95-1142, loi70-26]
+    source_definition: {ref: decret91-1996, locator: "art. 2"}
+    # AR : « نظام المصادقة الادارية : ويعني التحديد المسبق من قبل الادارة لمستوى
+    # الاسعار أو لتغيرها » (art. 2) ; « تخضع لنظام المصادقة الادارية على الاسعار »
+    # (art. 3) ; tableau « أ » : « قائمة المنتوجات والخدمات الخاضعة للمصادقة الادارية
+    # للاسعار في كل المراحل » (JORT n° 88 du 24 décembre 1991, éd. arabe, p. 1764 et
+    # 1766, lu à l'image par le terminologue le 24 octobre 2026). Dans cette édition
+    # d'origine, le tableau A porte les carburants au n° 7 et « الكهرباء والماء والغاز »
+    # au n° 8. « Auto-homologation » s'y dit « المصادقة الذاتية ».
+    source_traduction: {ref: decret91-1996, locator: "art. 2"}
+    voir_aussi: [decision-ministerielle, structure-des-prix]
+    fr:
+      terme: Homologation des prix
+      definition: >
+        Régime de prix que le décret n° 91-1996 du 23 décembre 1991 (art. 2) définit
+        comme « la fixation préalable par l'administration du niveau des prix ou de
+        leurs variations », pour les biens et services que la loi n° 91-64 du 29
+        juillet 1991 exclut de la liberté des prix. Elle s'applique à tous les stades
+        de la production et de la distribution aux produits du tableau A du décret —
+        dont les carburants et l'électricité, l'eau et le gaz —, au seul stade de la
+        production à ceux du tableau B (art. 3). La loi n° 70-26 du 19 mai 1970
+        comptait déjà l'homologation parmi ses cinq régimes de prix.
+      synonymes: [Homologation administrative]
+    ar:
+      terme: المصادقة الإدارية على الأسعار
+      definition: >
+        نظام أسعار عرّفه الأمر عدد 1996 لسنة 1991 المؤرخ في 23 ديسمبر 1991 (الفصل 2)
+        بأنّه «التحديد المسبق من قبل الإدارة لمستوى الأسعار أو لتغيرها»، ويخصّ المواد
+        والمنتوجات والخدمات المستثناة من نظام حرية الأسعار بمقتضى القانون عدد 64 لسنة
+        1991 المؤرخ في 29 جويلية 1991. ويُطبَّق في كلّ مراحل الإنتاج والتوزيع على
+        المنتوجات والخدمات المدرجة بالجدول «أ»، ومنها المحروقات والكهرباء والماء
+        والغاز، وفي طور الإنتاج فقط على المدرجة بالجدول «ب» (الفصل 3). وكان القانون
+        عدد 26 لسنة 1970 المؤرخ في 19 ماي 1970 قد عدّه من أنظمة الأسعار الخمسة.
+      synonymes: [المصادقة الإدارية]
+
+  - id: decision-ministerielle
+    acronyme: null
+    statut: valide
+    references: [decision-1992-08-11-tarifs-electricite-gaz]
+    source_definition: {ref: decision-1992-08-11-tarifs-electricite-gaz, locator: "art. 1"}
+    # AR : « مقرر لوزير الاقتصاد الوطني مؤرخ في 11 أوت 1992 » (éd. arabe, rubrique
+    # « الإعلانات والإرشادات », lu à l'image par le documentaliste). Au Journal officiel,
+    # « قرار » désigne l'arrêté (voir `arrete-interne`). Le terme français est qualifié
+    # pour que la table de traduction n'impose pas « مقرر » aux autres « décisions ».
+    source_traduction: {ref: decision-1992-08-11-tarifs-electricite-gaz}
+    voir_aussi: [homologation-des-prix, arrete-interne]
+    fr:
+      terme: Décision ministérielle
+      definition: >
+        Acte d'un ministre que le Journal officiel distingue de l'arrêté : son
+        édition arabe nomme la décision « مقرر » et l'arrêté « قرار ». Les prix de
+        vente hors taxe de l'électricité et du gaz applicables au 1^er^ août 1992 sont
+        fixés par une décision du ministre de l'économie nationale du 11 août 1992,
+        publiée à la rubrique des avis et communications.
+      synonymes: []
+    ar:
+      terme: مقرر
+      definition: >
+        عمل يصدره الوزير ويميّزه الرائد الرسمي عن القرار: فنسخته العربية تسمّي هذا
+        العمل «مقرر» وتسمّي القرار الوزاري «قرار». وقد ضُبطت أسعار بيع الكهرباء والغاز
+        دون اعتبار الأداءات المطبّقة بداية من غرة أوت 1992 بمقرر لوزير الاقتصاد الوطني
+        مؤرخ في 11 أوت 1992، نُشر تحت عنوان «الإعلانات والإرشادات».
+      synonymes: []
+
   # Notions analytiques : aucun terme arabe lu sur un texte officiel. Traduction du
   # terminologue, à faire confirmer par un arabophone ou par une publication arabe
   # de l'INS ; pas de `source_traduction`.

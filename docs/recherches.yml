@@ -987,6 +987,25 @@
     resultat: aucun
   a_faire: [rejouer avec les formes accentuées, lire le décret n° 75-952 et la circulaire n° 42]
 
+- id: r-pnafn-montants-historiques
+  objet: texte ou document administratif daté qui fixe le montant mensuel de l'allocation du programme national d'aide aux familles nécessiteuses à chacun de ses paliers de 1987 à 2018 (7,7 ; 36,3 ; 53,3 ; 56,7 ; 63,3 ; 70 ; 100 ; 110 ; 120 ; 150 ; 180 dinars)
+  ou: [precis/fr/prestations_sociales/_non_contributives.qmd#sec-nc-vue-ensemble]
+  requetes:
+    titres_fts: [necessiteuses, PNAFN]
+    iort_ar: [العائلات المعوزة, المنحة القارة]
+    depuis: 1986-01-01
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [web, presse]
+    couverture: 'Archives du web et presse en ligne, avant toute demande à l''administration. Trouvé, sans texte normatif : (1) L''Économiste maghrébin, 13 janvier 2018, annonce du ministre des affaires sociales en conseil ministériel restreint, passage de 150 à 180 dinars, 210 dinars selon le nombre d''enfants, 20 % de hausse, 100 MD ; aucun texte cité, aucune date d''effet ; (2) Webmanagercenter (arabe), 29 octobre 2017, projet de loi de finances pour 2018 : allocation de 150 dinars par mois pour 250 000 familles, 10 dinars par enfant d''âge scolaire, hausse de 4 % des aides, et la mention d''une hausse de 120 à 150 dinars en 2015 ; (3) Maghreb Émergent, 6 mai 2017, rapportant l''étude CRES-BAD : transfert mensuel moyen par famille de 58 dinars en 2010 et de 150 dinars en 2015, 108 900 puis 230 000 familles (moyennes d''enquête, non des paliers) ; (4) projet BAD-CRES rangé dans tunisia-data (afdb_2016_evaluation_performance_assistance_sociale.pdf) : « de l''ordre de 70 dinars » mensuels, 210 000 familles, sans date de palier. Ces sources de presse et d''étude confirment les paliers de 150 dinars (2015) et de 180 dinars (annonce de janvier 2018) et rejoignent le palier de 70 dinars de 2011 ; elles ne datent ni ne fondent les neuf autres. Non cherché : circulaires du ministère (1987 à 2018), documents du budget économique, rapports de la Cour des comptes, archives de pm.gov.tn et social.gov.tn par la Wayback Machine ; l''étude CRES-BAD complète est à récupérer avant d''être citée.'
+    couvert_jusqu_au: 2026-10-24
+    resultat: aucun
+  a_faire:
+  - récupérer l'étude CRES-BAD de 2016 complète
+  - lire les exposés des motifs et les tableaux des budgets économiques 2012-2018
+  - sonder la Wayback Machine sur social.gov.tn et pm.gov.tn
+
 - id: r-lf2025-art15-decret
   objet: décret fixant les modalités de fonctionnement du fonds de protection sociale des travailleuses agricoles et les conditions de ses interventions (loi n° 2024-48, loi de finances pour 2025, art. 15, 1), al. 2)
   ou: [precis/fr/retraites/_secteur_prive.qmd#sec-travailleuses-agricoles]
@@ -1882,6 +1901,12 @@
     couverture: 'jort_cache seul (FTS, LIKE sans accents depuis 1986, intitulé arabe dans les titres) : aucun intitulé ne nomme la CGC entre l''arrêté du 7 juillet 1992 et l''article 63 de la loi n° 2012-27. Lacunes : aucune loi de finances de 1993 à 2003 ouverte ; les fascicules 2000-2006 à couche texte décalée ne sont pas testés.'
     couvert_jusqu_au: 2005-12-31
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Lois de finances initiales lues à l''image, tableaux des fonds spéciaux : 1987 (tableau L, p. 1677), 1988 (L, p. 1694), 1989 (L, p. 1870), 1990 (L, p. 2239), 1991 (K, p. 2163), 1992 (K, p. 2197), 1993 (K, p. 1770), 1994 (K, p. 2294) : la Caisse figure chaque année avec une subvention du budget et des recettes propres. Article 92 de la loi n° 86-106 (JORT n° 78 de 1986, p. 1623) : recettes affectées aux fonds listés reversées au budget général. Lois de finances pour 2011 (tableau B, p. 3482) et 2012 (tableau B, p. 16) : la Caisse figure encore dans la liste des fonds spéciaux, sans montant. Lacunes : tableaux des fonds spéciaux des lois de finances 1995 à 2010 non ouverts ; lois de finances complémentaires non lues.'
+    couvert_jusqu_au: 2012-01-03
+    resultat: aucun
   a_faire:
   - 'lire les tableaux des fonds spéciaux du Trésor des lois de finances 1993 à 2003 : dernière année où la CGC y figure pour sa dépense entière'
   - rapports annuels de la BCT 1992-2003, chapitre finances publiques
@@ -2065,6 +2090,12 @@
     couverture: 'Décret n° 2015-307 lu (JORT n° 46 du 9 juin 2015, p. 1134, édition française) : il ne modifie que le dernier paragraphe de l''art. 5 du décret n° 91-1996 et ne touche pas au tableau A, dont la version en vigueur est celle du décret n° 95-1142 (n° 9, « Electricité eau et gaz »), lu à l''image. Loi n° 2015-36, art. 78 : les textes d''application de la loi n° 91-64 restent en vigueur. Aucun texte signé le 5 mars 2013 (décision citée par la grille du tarif interruptible de la STEG) ni le 10 août 2000 dans jort_cache. Documents de la STEG du 1er mai 2014 (basse tension à 90 ppp, les autres à 60 ppp, copies dans tunisia-data) : aucune référence d''acte lisible. Lacunes : avis et communications de 1993 non lus à l''image ; plein texte 2013-2026 non balayé ; édition arabe non parcourue au plein texte ; documents de 2014 à relire à plus haute résolution.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Sommaires et textes énergétiques des JORT n° 75 à 86 de 1993 (5 octobre au 12 novembre), édition française, lus à l''image : aucun tarif de l''électricité ou du gaz ; seul l''arrêté du 26 octobre 1993 sur les prix des produits pétroliers (n° 84, p. 1864-1865). Étude de l''ANER d''avril 2000 (92 pages) lue au texte : elle ne donne que des prix de vente moyens du kWh par niveau de tension pour 1996-1998, en graphique sans valeurs, et renvoie à des annexes de tarifs absentes du fichier. Rapports d''achèvement de la BAD sur Électricité VI : rapports de prix et de coût seulement. Lacunes : édition arabe ; annexes 2 et 3 de l''étude de l''ANER.'
+    couvert_jusqu_au: 1993-11-12
+    resultat: aucun
   a_faire:
   - lire à l'image les « avis et communications » des JORT n° 75 à 86 de 1993 (5 octobre-12 novembre)
   - demander à la STEG la nature et la référence de l'acte qui homologue chaque grille depuis 1992
@@ -2093,6 +2124,12 @@
     couverture: 'Seconde passe du 6 octobre 2026, résultat partiel : cinq grilles basse tension établies hors Journal officiel (octobre 1993 : 59 / 79 et 1er août 2001 : 63 / 90, par le rapport ESMAP n° 307/05, « Source : STEG » ; juin 1994 : 61 / 83, 15 août 2000 : 62 / 87 et 1er avril 2003 : 65 / 94, par les pages archivées de la FIPA, de l''APIA et de l''API), dates d''effet de 2000 à 2004 par la Banque africaine de développement. Journal officiel : 1993, n° 66 à 100, océrisés en entier, aucun texte tarifaire ; 1994 à 2006, 1 356 fascicules à couche texte décodée, aucun motif tarifaire (kWh absent de tous). Restent : le jour d''effet d''octobre 1993 et de juin 1994 ; la moyenne et la haute tension et le gaz d''octobre 1993 ; les grilles du gaz de 2001 à 2003 ; la contradiction de 2003 (90 sur la page de la STEG, 94 sur celle de la FIPA). Lacunes : édition arabe non ouverte ; 1993 n° 1 à 65 ; fascicules à couche faible listés dans docs/notes/compensation-tarifs-1993-2004.md.'
     couvert_jusqu_au: 2004-05-01
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Sommaires et textes énergétiques des JORT n° 75 à 86 de 1993 (5 octobre au 12 novembre), édition française, lus à l''image : aucun tarif de l''électricité ou du gaz ; seul l''arrêté du 26 octobre 1993 sur les prix des produits pétroliers (n° 84, p. 1864-1865). Étude de l''ANER d''avril 2000 (92 pages) lue au texte : elle ne donne que des prix de vente moyens du kWh par niveau de tension pour 1996-1998, en graphique sans valeurs, et renvoie à des annexes de tarifs absentes du fichier. Rapports d''achèvement de la BAD sur Électricité VI : rapports de prix et de coût seulement. Lacunes : édition arabe ; annexes 2 et 3 de l''étude de l''ANER.'
+    couvert_jusqu_au: 1993-11-12
+    resultat: aucun
   a_faire:
   - lire l'étude de l'ANER de 2000 sur l'impact des prix de l'énergie
   - demander à la STEG l'historique des grilles de 1993 à 2003, avec leurs dates d'effet
@@ -2118,6 +2155,12 @@
     sources: [jort_cache, corpus_local, web]
     couverture: 'Rapport de contrôle de 2014, p. 42, § 65 (lu à l''image) : l''« art. 8 » du contrat avec la SONATRACH donne deux formules de prix selon le seuil de 27,3 $ le baril, alors que les états financiers de la STEG 2014 (note 11, p. 23) parlent d''un prix fixe de 90,800 DT ; piste ajoutée sur l''acte de 1993. jort_cache, titre LIKE gaz et (prix, tarif ou cession), toutes années : rien en 1993.'
     couvert_jusqu_au: 1994-12-31
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Sommaires (Avis et communications) et textes énergétiques des JORT n° 75 à 86 de 1993 (5 octobre au 12 novembre), édition française, lus à l''image : aucun avis ni communication n''a pour objet le prix de cession du gaz ou un tarif de la STEG (les avis sont ceux de la Caisse d''épargne nationale, de la Banque centrale, de la loterie nationale et du ministère de l''intérieur). Seul acte énergétique : l''arrêté du ministre de l''économie nationale du 26 octobre 1993 fixant les prix des produits pétroliers (n° 84, p. 1864-1865). Le décret n° 93-2115 (n° 83, p. 1856) institue un prélèvement sur le beurre et l''huile acide, sans rapport avec le gaz. Lacunes : édition arabe non ouverte ; annexe 10 du rapport de contrôle de 2014 non reproduite.'
+    couvert_jusqu_au: 1993-11-12
     resultat: aucun
   a_faire:
   - lire à l'image les « avis et communications » des JORT n° 75 à 86 de 1993
@@ -4477,3 +4520,43 @@
     couverture: 'intitulés de jort_cache du 1er décembre 2025 au 2 octobre 2026, hors arrêtés (nombreux arrêtés d''ouverture de concours non filtrés) ; seul texte voisin : décret 2026-12 (santé militaire) ; plein texte non parcouru ; fascicules 2026 inconnus de la base (n° 4, 8, 20, 32, 38, 66, 69, 85) non examinés.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+
+- id: r-cgc-dotation-annees-manquantes
+  objet: montant de la dotation versée par le budget à la Caisse générale de compensation en 1988, 1989, 1990, 2000, 2001, 2003, 2006, 2008, 2009 et 2011
+  ou: [precis/fr/compensation/_institution.qmd#sec-compensation-dotation-poids]
+  requetes:
+    titres_fts: ['"caisse generale de compensation" OR "dotation budgetaire"']
+    titres_like: ['%caisse generale de compensation%']
+    plein_texte: [dotation budgétaire]
+    depuis: 1988-01-01
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local, web]
+    couverture: 'Rapports annuels de la BCT 1987 à 2013 (texte intégral, mot « dotation » et « compensation » parcourus) : aucun montant pour ces années ; 2008 et 2009 disent seulement un financement total par subventions du budget ; note sur 70 MD de la dotation de 2007 dépensés en 2008 ; 2010 : 730 MD dont 146 MD reportés sur 2011 ; 2011 : 96,7 MD reportés sur 2012. Lois de finances initiales : subvention prévue 188, 188 et 300 MD pour 1988-1990 (tableaux L) ; crédits d''interventions du ministère du commerce 248,9 (2000), 235,2 (2001), 251,2 (2002) et 722,4 MD (2011), non désignés comme la dotation. Recherche en ligne (kapitalis, leconomistemaghrebin, businessnews) : rien avant 2012. Lacunes : lois de règlement ; rapports de la Cour des comptes ; budget économique ; lois de finances complémentaires ; tableaux des fonds spéciaux 1995-2010 ; rapports du FMI.'
+    couvert_jusqu_au: 2013-12-31
+    resultat: aucun
+  a_faire:
+  - lois de règlement du budget de l'État, gestions 1988 à 2011
+  - budget économique et rapports sur le budget de l'État du ministère du plan, 1989-2012
+  - lois de finances complémentaires 2000, 2001, 2003, 2006, 2008, 2009, 2011
+  - tableaux des fonds spéciaux des lois de finances 1995 à 2010 (subvention du budget à la Caisse)
+
+- id: r-prelevements-importation-cgc
+  objet: décrets instituant ou modifiant des prélèvements à l'importation au profit de la Caisse générale de compensation après le décret n° 93-2116 du 25 octobre 1993
+  ou: [precis/fr/compensation/_institution.qmd#sec-compensation-prelevements-importation]
+  requetes:
+    titres_fts: [prelevement AND importation]
+    titres_like: ['%prelevement%importation%']
+    iort_ar: [مجبى عند التوريد, الصندوق العام للتعويض]
+    depuis: 1993-11-03
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: 'jort_cache, intitulés contenant prélèvement et importation : décrets n° 97-2509, 2002-2227, 2003-2048, 2004-2314, 2005-213, 2005-2931, 2006-1, 2006-4, 2006-1835, 2007-8, 2007-10, 2007-1199, 2009-2293 et 2015-50, dont seuls les n° 2002-2227, 2009-2293 et 2015-50 modifient le décret n° 91-1391 ; aucun n''est lu. Lacunes : décret n° 93-1187 du 24 mai 1993 absent des intitulés ; édition arabe ; montants annuels des prélèvements.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire les décrets n° 2002-2227, 2009-2293 et 2015-50 (modifications du décret n° 91-1391)
+  - retrouver le décret n° 93-1187 du 24 mai 1993 (modification du décret n° 90-1193)
