@@ -315,7 +315,7 @@ Le gaz se lit de la même façon : une redevance d'abonnement, une redevance de 
 
 ### La moyenne tension
 
-De juin 1994 à octobre 2022, le kilowattheure de jour de la moyenne tension passe de 47 à 290 millimes hors taxes et celui de nuit de 30 à 222, sur trois familles de postes horaires qui ne se raccordent pas. Le @fig-compensation-eg-tarifs-mt trace chaque poste à chaque date d'effet ; les trois tableaux de la moyenne tension de 1994 à 2022 sont repliés sous la figure.
+De juin 1994 à octobre 2022, le kilowattheure de jour de la moyenne tension passe de 47 à 290 millimes hors taxes et celui de nuit de 30 à 222, sur trois familles de postes horaires qui ne se raccordent pas. En monnaie de 2026 (valeurs calculées, non observées), le jour passe d'environ 205 à 377 millimes et la nuit d'environ 131 à 288 : la hausse du prix courant est en grande partie celle des prix. Le @fig-compensation-eg-tarifs-mt trace chaque poste à chaque date d'effet, en millimes courants ou en millimes de 2026 ; les trois tableaux de la moyenne tension de 1994 à 2022 sont repliés sous la figure.
 
 ```{python}
 #| label: fig-compensation-eg-tarifs-mt
@@ -327,7 +327,8 @@ el.figure(
     "tarifs_mt",
     caption=(
         "Le tarif de l'électricité en moyenne tension, juin 1994 - octobre 2022, par poste horaire "
-        "et à chaque date d'effet (millimes courants par kWh, hors taxes)"),
+        "et à chaque date d'effet (millimes courants, puis millimes de 2026 calculés, par kWh, "
+        "hors taxes)"),
     note_lecture=(
         "Chaque courbe est un poste horaire, en escalier : le prix vaut du jour d'effet de la grille "
         "à celui de la suivante. Trois familles de postes se succèdent et aucune ne se raccorde à la "
@@ -341,8 +342,10 @@ el.figure(
         "grille du 1er août 2001 et reprennent le 1er avril 2003. Le tarif uniforme, défini de la même "
         "façon sur toute la période, est tracé d'un seul trait. Le tarif de secours de 1994 à 2003 et "
         "la prime de puissance (en millimes par kW et par mois) sont dans l'onglet « Données ». La "
-        "dernière grille établie est celle du 1er octobre 2022. Millimes courants, sans rapport au "
-        "PIB."))
+        "dernière grille établie est celle du 1er octobre 2022. Deux vues : millimes courants, ou "
+        "millimes de 2026, calculés ; la colonne valeur_2026 de l'onglet « Données » donne la valeur "
+        "en monnaie de 2026 de chaque ligne. Sans rapport au PIB."
+        "\n\n" + el.regle_2026()))
 ```
 
 Du 1^er^ mai 2004 au 1^er^ octobre 2022, le kilowattheure de jour passe de 58 à 290 millimes, celui de nuit de 40 à 222, et la prime de puissance de 3 000 à 11 000 millimes. La hausse la plus forte en une fois est celle du 1^er^ septembre 2018 : le kilowattheure de jour passe de 173 à 215 millimes et la prime de 8 000 à 11 000.
@@ -503,7 +506,7 @@ La STEG prélève son gaz de deux origines : le gaz algérien — la redevance e
 
 Le prix d'achat n'a pas une seule définition. Jusqu'en 2014, la STEG reçoit le gaz algérien et la redevance à un [prix de cession préférentiel](#g-prix-de-cession-preferentiel) de 90,8 dinars la tep, que le rapport de contrôle de 2014 rattache à une décision du ministre de l'économie nationale du 8 octobre 1993 [@minfin-compensation-carburants-2014, p. 7, 22 et 178] ; l'étude de l'Agence nationale des énergies renouvelables de 2000 donne la même valeur [@aner-2000-impact-prix-energie, p. 29]. Le rapport de contrôle calcule en outre un « prix moyen d'achat de la tep » de 2007 à 2013 [@minfin-compensation-carburants-2014, p. 72], et les états financiers de la STEG publient le leur de 2013 à 2023 : les achats de combustibles divisés par le total des achats de gaz, toutes sources confondues.
 
-Deux ruptures coupent ces séries. À partir de 2007, la STEG enregistre encore ses achats de gaz de la SOTUGAT et de l'ETAP au prix fixe de 90,800 dinars, qui « ne reflète pas la valeur économique du produit », et comptabilise en subvention d'exploitation la subvention que l'État lui accorde sous forme de prix bonifié [@steg-ef-2014, p. 23]. En 2015, le prix de cession prend fin et la STEG achète son gaz au prix mondial (@sec-compensation-eg-2015). Le @fig-compensation-eg-prix-achat-gaz trace les trois séries, sans les raccorder.
+Deux ruptures coupent ces séries. À partir de 2007, la STEG enregistre encore ses achats de gaz de la SOTUGAT et de l'ETAP au prix fixe de 90,800 dinars, qui « ne reflète pas la valeur économique du produit », et comptabilise en subvention d'exploitation la subvention que l'État lui accorde sous forme de prix bonifié [@steg-ef-2014, p. 23]. En 2015, le prix de cession prend fin et la STEG achète son gaz au prix mondial (@sec-compensation-eg-2015). Le @fig-compensation-eg-prix-achat-gaz trace les trois séries, sans les raccorder, en dinars courants ou en dinars de 2026 (valeurs calculées).
 
 ```{python}
 #| label: fig-compensation-eg-prix-achat-gaz
@@ -516,7 +519,7 @@ el.figure(
     caption=(
         "Le prix d'achat de la tonne équivalent pétrole de gaz par la STEG, 1993-2023 : prix de "
         "cession administré, prix moyen d'achat du rapport de contrôle de 2014 et des états "
-        "financiers de la STEG (dinars courants par tep)"),
+        "financiers de la STEG (dinars courants, puis dinars de 2026 calculés, par tep)"),
     note_lecture=(
         "Trois séries, qui ne se raccordent pas. Le trait bleu est le prix de cession : le prix "
         "administré auquel la STEG reçoit le gaz algérien et la redevance, 90,8 dinars la tonne "
@@ -531,8 +534,10 @@ el.figure(
         "Deux repères triangulaires marquent les ruptures, dont l'infobulle porte le texte. En 2007, "
         "la STEG comptabilise le gaz à sa valeur économique et la différence avec le prix de 90,8 en "
         "subvention d'exploitation (note 11 des états financiers de 2014, p. 23). En 2015, le prix de "
-        "cession prend fin et la subvention devient budgétaire. Montants en dinars courants, sans "
-        "rapport au PIB."))
+        "cession prend fin et la subvention devient budgétaire. Deux vues : dinars courants, ou dinars "
+        "de 2026, calculés ; la colonne valeur_2026 de l'onglet « Données » donne la valeur en "
+        "monnaie de 2026 de chaque ligne. Sans rapport au PIB."
+        "\n\n" + el.regle_2026()))
 ```
 
 La facture des combustibles de la STEG, rapportée au PIB nominal, passe de 5,60 points de PIB en 2013 à 2,20 en 2016, puis à 5,78 en 2022 et à 5,05 en 2023. Le @fig-compensation-eg-gaz-pib décompose chacune de ces variations, ainsi que celle de 2013 à 2023, en trois effets : celui du prix moyen d'achat, celui de la quantité achetée et celui de la croissance du PIB nominal.

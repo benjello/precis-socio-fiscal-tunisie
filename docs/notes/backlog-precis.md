@@ -3209,6 +3209,13 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     tableaux par `scripts/serie_tarifs_mt.py`, test `tests/test_serie_tarifs_mt.py`). Une courbe par
     poste, trois familles sans raccord ; le tarif de secours et la prime sont dans l'onglet
     « Données » ; libellés arabes à verser (traduction différée) ; haute tension et gaz non tracés.
+  - **Vue en monnaie de 2026** (24 octobre 2026) sur `fig-compensation-eg-tarifs-mt` et
+    `fig-compensation-eg-prix-achat-gaz` : valeurs calculées au dernier indice mensuel publié
+    (juillet 2026, 196,2, base 2015, bulletin de l'INS du 8 septembre 2026,
+    `precis/_seriescache/ins-ipc-mensuel-base2015.csv`) ; colonne `valeur_2026` de l'onglet
+    « Données » ; règle sous la figure et dans l'onglet « Sources » (`scripts/dinars_constants.py`,
+    `coefficient_dernier_mois`). À refaire quand l'indice annuel moyen de 2026 sera publié, ou
+    à chaque nouveau bulletin si l'on veut suivre le dernier mois.
   - **Snapshots** : refaits le 6 octobre 2026 depuis `main` de `tunisia-data` (neuf séries
     `compensation-*` et `prix-carburants*`). Les notes de lecture disent la base du PIB d'après
     `segment_pib`, `pib_retropole` et `rupture_pib` (2010-2024 : INS, base 2015, rétropolée
