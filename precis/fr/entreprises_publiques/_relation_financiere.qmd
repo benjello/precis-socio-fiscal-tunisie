@@ -256,7 +256,7 @@ ep.figure(
 )
 ```
 
-- **Le plafond.** 3 000 MD de 2016 à 2018 ; 4 790 MD en 2019, après une loi de finances initiale à 4 500 MD ; 7 000 MD de 2020 à 2022 ; 8 000 MD en 2023 et en 2024. Pour 2020, la loi de finances initiale fixait 5 000 MD ; [la loi de finances rectificative du 14 décembre 2020](#r-ep-lfr-2020) porte le plafond à 7 000 MD. La traduction française d'une édition du rapport imprime 7 500 MD [@minfin-transferts-2021, p. 5] ; ses éditions arabes impriment 7 000 MD, comme la loi [@minfin-transferts-2022, p. 8]. De 1959 à 1994, le plafond fixé par la loi de finances passe de 12 MD à 950 MD (@sec-ep-garanties-plafond-legal).
+- **Le plafond.** 3 000 MD de 2016 à 2018 ; 4 790 MD en 2019, après une loi de finances initiale à 4 500 MD ; 7 000 MD de 2020 à 2022 ; 8 000 MD en 2023 et en 2024. Pour 2020, la loi de finances initiale fixait 5 000 MD ; [la loi de finances rectificative du 14 décembre 2020](#r-ep-lfr-2020) porte le plafond à 7 000 MD. La traduction française d'une édition du rapport imprime 7 500 MD [@minfin-transferts-2021, p. 5] ; ses éditions arabes impriment 7 000 MD, comme la loi [@minfin-transferts-2022, p. 8]. De 1959 à 2015, le plafond fixé par la loi de finances passe de 12 MD à 3 000 MD, avec 4 000 MD en 2011 et en 2012 (@sec-ep-garanties-plafond-legal) ; ces 3 000 MD sont aussi le plafond de 2015.
 - **Les garanties accordées.** De 2,4 à 5,2 milliards de dinars par an de 2016 à 2023, soit de 1,8 % à 3,9 % du PIB (@tbl-ep-garanties).
 - **À quoi servent les garanties intérieures.** En 2023, sur 3 055,7 MD : 1 550,4 MD au titre de l'audit complet des banques publiques, 1 215,2 MD pour financer l'importation de produits de base — pétrole, gaz, céréales, engrais, sucre, café —, 141,0 MD de rééchelonnements, 124,0 MD d'autres opérations d'exploitation, 25,1 MD d'investissement [@minfin-dette-2025, p. 64]. Les importations de produits de base faisaient 188,2 MD en 2021 et 956,1 MD en 2022 (@tbl-ep-garanties-objet).
 - **Qui prête.** L'encours garanti dû à des prêteurs intérieurs passe de 2,0 milliards de dinars fin 2016 à 8,8 milliards fin 2023 ; l'encours extérieur, de 9,3 à 12,5 milliards (@fig-ep-encours).
@@ -334,15 +334,15 @@ ep.tableau_audit_banques(
 
 **Le cadre.** La loi de finances de l'année fixe le plafond par un article. Depuis [un arrêté du 3 avril 1993](#r-ep-arrete-1993-commission), l'octroi de la garantie est subordonné au paiement d'une commission (@sec-ep-garanties-plafond-legal). Selon le rapport sur la dette publique, la garantie d'un prêt extérieur joue dès la défaillance de l'emprunteur, celle d'un prêt intérieur après épuisement des poursuites contre lui [@minfin-dette-2025, p. 61].
 
-<!-- TODO (documentaliste) : lire l'article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin donnée par le Trésor) et, dans le rapport sur les transferts et les garanties (édition LF 2020, p. 38), le passage qui renvoie à l'arrêté du 3 avril 1993 ; dépouiller les articles sur la garantie des lois de finances de 1995 à 2015, puis les suivantes, pour prolonger la série légale du plafond (fiche r-ep-plafond-garantie-1995-2015) ; dépouiller les rapports sur la dette publique des éditions LF 2021 et LF 2024 (recoupement de l'encours) et leurs pages sur les prêts rétrocédés. -->
+<!-- TODO (documentaliste) : lire l'article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin donnée par le Trésor) et, dans le rapport sur les transferts et les garanties (édition LF 2020, p. 38), le passage qui renvoie à l'arrêté du 3 avril 1993 ; dépouiller les articles sur la garantie des lois de finances de 2016 et suivantes, pour que la série légale rejoigne les annexes du ministère (fiche r-ep-plafond-garantie-1995-2015) ; dépouiller les rapports sur la dette publique des éditions LF 2021 et LF 2024 (recoupement de l'encours) et leurs pages sur les prêts rétrocédés. -->
 
 ::::
 
-## Le plafond des garanties fixé par la loi de finances, 1958-1994 {#sec-ep-garanties-plafond-legal}
+## Le plafond des garanties fixé par la loi de finances, 1958-2015 {#sec-ep-garanties-plafond-legal}
 
-De 1958 à 1994, chaque loi de finances comporte un article « octroi de la garantie de l'État » : il fixe le montant maximal dans la limite duquel le ministre chargé des finances peut accorder la [garantie de l'État](#g-garantie-etat) « en vertu des textes et conventions en vigueur ». Ce plafond passe de 12 millions de dinars (MD) pour l'année financière 1959-60 à 950 MD pour 1994 (@fig-ep-plafond-legal).
+De 1958 à 2015, chaque loi de finances comporte un article qui fixe le montant maximal dans la limite duquel le ministre chargé des finances peut accorder la [garantie de l'État](#g-garantie-etat) « en vertu des textes et conventions en vigueur », puis, depuis la loi de finances pour 1996, « en vertu de la législation en vigueur ». Ce plafond passe de 12 millions de dinars (MD) pour l'année financière 1959-60 à 950 MD pour 1994 ; il reste à 950 MD jusqu'en 2010, sauf en 2003 (1 200 MD), puis est de 1 800 MD en 2011, de 4 000 MD en 2012 et de 3 000 MD de 2013 à 2015 (@fig-ep-plafond-legal).
 
-<!-- RECHERCHE r-ep-plafond-garantie-1995-2015 : article sur la garantie des lois de finances de 1995 à 2015, et textes de 1957-58 et 1960 (voir docs/recherches.yml) -->
+<!-- RECHERCHE r-ep-plafond-garantie-1995-2015 : article sur la garantie des lois de finances de 2016 et suivantes, textes de 1957-58 et de 1960, lois de finances complémentaires de 1969 à 1991 (voir docs/recherches.yml) -->
 
 ```{python}
 #| label: fig-ep-plafond-legal
@@ -352,29 +352,32 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import listes as ls
 ls.figure_plafond(
     caption=("Plafond de la garantie de l'État fixé par la loi de finances, en millions de "
-             "dinars courants, en % du PIB et en % des dépenses de l'État, 1959-60 à 1994"),
+             "dinars courants, en % du PIB et en % du budget de l'État, 1959-60 à 2015"),
     note_lecture=(
         "Chaque point est le montant que la loi de finances de la gestion fixe pour l'année ; la flèche et le losange orange sont le montant auquel une loi postérieure porte ce plafond au cours de la même gestion. "
         "Dans la première vue, l'axe vertical est logarithmique : un même écart de hauteur est un même rapport de montants. "
         "L'année financière 1958-59, imprimée à 7 milliards de francs, n'est pas tracée. "
-        "Dans les deux autres vues, le plafond de la gestion N est rapporté au PIB de l'année N et, de 1986 à 1994, aux dépenses de l'État de l'année N hors service de la dette, dans leur réalisation. "
+        "Dans les deux autres vues, le plafond de la gestion N est rapporté au PIB de l'année N et au budget de l'État de la même gestion. "
+        "Le budget de l'État a deux dénominateurs qui ne se raccordent pas, séparés par un trait vertical en 1986 : de 1959-60 à 1986, le budget ordinaire voté par la loi de finances (recettes ordinaires, égales aux crédits des dépenses de gestion ou courantes, budget d'équipement exclu) ; de 1986 à 2015, les dépenses de l'État de l'année hors service de la dette, dans leur réalisation. L'année 1986 porte les deux. "
+        "Pour 1959-60, la part du budget ordinaire est celle des recettes ordinaires, le montant des crédits n'étant pas lisible. "
         "L'année financière 1959-60 n'a pas de PIB annuel correspondant et n'a donc aucune part. "
-        "Le PIB de 1961 à 1991 est celui de la Banque mondiale, dans une base que la source ne dit pas ; celui de 1992 à 1994 est celui de l'Institut national de la statistique, en base 1983. "
-        "Le trait vertical de 1992 marque ce changement de série : aucune conversion n'est faite entre les deux, et le niveau de la rupture n'est pas connu (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "Le PIB de 1961 à 1991 est celui de la Banque mondiale, dans une base que la source ne dit pas ; celui de 1992 à 2015 est celui de l'Institut national de la statistique : en base 1983 de 1992 à 1996, en base 1997 de 1997 à 2009 (recalculée par l'Institut de 1997 à 2004) et en base 2015 de 2010 à 2015 (recalculée par l'Institut de 2010 à 2014). "
+        "Les traits verticaux de 1992, de 1997 et de 2010 marquent ces changements de série : aucune conversion n'est faite d'une série à l'autre, et le niveau de la rupture de 1992 n'est pas connu (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
         "Le plafond est un montant voté, les dépenses un montant réalisé : les parts sont des ordres de grandeur. "
         "Le plafond est un maximum légal : il ne dit ni les garanties accordées ni l'encours."),
 )
 ```
 
-<!-- TODO (documentaliste) : dépenses de l'État de 1959-60 à 1985 (totaux des budgets des lois de finances, ou lois de règlement et rapports annuels de la Banque centrale), pour prolonger la vue en part des dépenses de l'État, qui ne commence qu'en 1986 ; PIB de 1959-60 et de 1960 et base du PIB d'avant 1992 (annexe PIB, lacunes L1 à L3) ; voir docs/notes/backlog-precis.md. -->
+<!-- TODO (documentaliste) : budgets d'équipement et de développement de 1961 à 1985 (structure différente d'une loi à l'autre), lois de règlement ou rapports annuels de la Banque centrale pour une réalisation avant 1986, budget ordinaire de 1958-59 (en francs, décret du 29 juin 1957) et crédits de 1959-60 (chiffre effacé à l'image) ; PIB de 1959-60 et de 1960 et base du PIB d'avant 1992 (annexe PIB, lacunes L1 à L3) ; voir docs/notes/backlog-precis.md et la fiche r-ep-budget-etat-1959-1985. -->
+<!-- RECHERCHE r-ep-budget-etat-1959-1985 : budgets d'équipement et de développement des lois de finances de 1961 à 1985, réalisation du budget de l'État avant 1986, budget de 1958-59 (voir docs/recherches.yml) -->
 
-- **Des paliers de longue durée.** Le plafond est de 12 MD pour 1959-60, 1961 et 1962, de 16 MD de [1963](#r-ep-pl-1963) à 1966, de 20 MD en [1967](#r-ep-pl-1967), de 25 MD de [1968](#r-ep-pl-1968) à 1973, de 50 MD de 1974 à 1976, de 200 MD de [1977](#r-ep-pl-1977) à 1987, de 300 MD de 1988 à 1991. Il est multiplié par quatre en 1977 (de 50 à 200 MD). Après 300 MD en 1991, il est de 250 MD en [1992](#r-ep-pl-1992), de 500 MD en [1993](#r-ep-pl-1993) et de 950 MD en [1994](#r-ep-pl-1994).
-- **En part du PIB.** Le plafond vaut de 1,6 % à 3,9 % du PIB de 1961 à 1976, puis 9,1 % en 1977, après son passage de 50 à 200 MD, et il redescend à 2,5 % en 1987 et en 1991 ; pour 1992 à 1994, avec le PIB de l'Institut national de la statistique, il est de 1,8 %, 3,4 % puis 6,0 % du PIB (deuxième vue de @fig-ep-plafond-legal). Le PIB change de série en 1992 : la hausse de 1992 à 1994 se lit dans la seule série de l'Institut. Rapporté aux dépenses de l'État hors service de la dette (troisième vue, 1986 à 1994), il est de 8,4 % en 1986 et de 8,5 % en 1991, puis de 6,8 %, 12,5 % et 22,2 % de 1992 à 1994. Ces parts sont celles du plafond fixé par la loi de finances de la gestion, avant les relèvements de 1992 et de 1993.
-- **Quatre relèvements en cours de gestion.** [La loi n° 74-75 du 3 août 1974](#r-ep-pl-1974-2) porte le plafond de 1974 de 25 à 50 MD. [La loi de finances pour 1989](#r-ep-pl-1988-2) fixe 300 MD « pour l'année 1988 et l'année 1989 », alors que celle de 1988 avait fixé 200 MD. [La loi de finances pour 1993](#r-ep-pl-1992-2) modifie le plafond de 1992, de 250 à 530 MD, sous la rubrique « régularisation de la garantie de l'Etat pour la gestion 1992 ». [La loi n° 93-111 du 8 novembre 1993](#r-ep-pl-1993-2), « portant augmentation du montant annuel d'octroi de la garantie de l'Etat », porte celui de 1993 de 500 à 900 MD.
+- **Des paliers de longue durée.** Le plafond est de 12 MD pour 1959-60, 1961 et 1962, de 16 MD de [1963](#r-ep-pl-1963) à 1966, de 20 MD en [1967](#r-ep-pl-1967), de 25 MD de [1968](#r-ep-pl-1968) à 1973, de 50 MD de 1974 à 1976, de 200 MD de [1977](#r-ep-pl-1977) à 1987, de 300 MD de 1988 à 1991. Il est multiplié par quatre en 1977 (de 50 à 200 MD). Après 300 MD en 1991, il est de 250 MD en [1992](#r-ep-pl-1992), de 500 MD en [1993](#r-ep-pl-1993) et de 950 MD en [1994](#r-ep-pl-1994), montant qu'il garde jusqu'en [2010](#r-ep-pl-2010), sauf en [2003](#r-ep-pl-2003) (1 200 MD). Il est ensuite de 1 800 MD en [2011](#r-ep-pl-2011), de 4 000 MD en [2012](#r-ep-pl-2012) et de 3 000 MD de [2013](#r-ep-pl-2013) à 2015.
+- **En part du PIB.** Le plafond vaut de 1,6 % à 3,9 % du PIB de 1961 à 1976, puis 9,1 % en 1977, après son passage de 50 à 200 MD, et il redescend à 2,5 % en 1987 et en 1991 ; pour 1992 à 1994, avec le PIB de l'Institut national de la statistique en base 1983, il est de 1,8 %, 3,4 % puis 6,0 % du PIB (deuxième vue de @fig-ep-plafond-legal), puis de 5,6 % en 1995 et 5,0 % en 1996. Avec la base 1997, il passe de 4,1 % en 1997 à 1,6 % en 2009 ; avec la base 2015, il est de 1,4 % en 2010, 2,7 % en 2011, 5,4 % en 2012, puis 3,8 %, 3,5 % et 3,3 % de 2013 à 2015. Le PIB change de série en 1992, en 1997 et en 2010 : chaque segment se lit dans sa propre série. Rapporté au budget ordinaire voté (troisième vue, 1959-60 à 1986), il est de 24,7 % en 1959-60, de 12,0 % en 1973, de 10,1 % en 1974 avant le relèvement de la gestion (20,2 % après), de 13,0 % en 1976, de 45,3 % en 1977, après le passage de 50 à 200 MD, puis il baisse chaque année jusqu'à 10,2 % en 1986. Rapporté aux dépenses de l'État hors service de la dette (troisième vue, 1986 à 2015), il est de 8,4 % en 1986 et de 8,5 % en 1991, puis de 6,8 %, 12,5 % et 22,2 % de 1992 à 1994, de 20,7 % en 1995, de 6,7 % en 2009 et en 2010, de 10,5 % en 2011, de 20,9 % en 2012 et de 13,5 % en 2015. Ces parts sont celles du plafond fixé par la loi de finances de la gestion, avant les relèvements de 1992, de 1993, de 2002 et de 2011 ; avec le montant relevé, la part des dépenses est de 14,5 % en 1992, de 22,4 % en 1993, de 24,0 % en 2002 et de 23,3 % en 2011.
+- **Six relèvements en cours de gestion.** [La loi n° 74-75 du 3 août 1974](#r-ep-pl-1974-2) porte le plafond de 1974 de 25 à 50 MD. [La loi de finances pour 1989](#r-ep-pl-1988-2) fixe 300 MD « pour l'année 1988 et l'année 1989 », alors que celle de 1988 avait fixé 200 MD. [La loi de finances pour 1993](#r-ep-pl-1992-2) modifie le plafond de 1992, de 250 à 530 MD, sous la rubrique « régularisation de la garantie de l'Etat pour la gestion 1992 ». [La loi n° 93-111 du 8 novembre 1993](#r-ep-pl-1993-2), « portant augmentation du montant annuel d'octroi de la garantie de l'Etat », porte celui de 1993 de 500 à 900 MD. [La loi n° 2002-90 du 29 octobre 2002](#r-ep-pl-2002-2), « portant augmentation du montant annuel d'octroi de la garantie de l'Etat au cours de l'année 2002 », porte celui de 2002 de 950 à 1 800 MD. [Le décret-loi n° 2011-56 du 25 juin 2011](#r-ep-pl-2011-2), loi de finances complémentaire pour 2011, porte celui de 2011 de 1 800 à 4 000 MD.
 - **Une commission depuis 1993.** [L'arrêté du 3 avril 1993](#r-ep-arrete-1993-commission) subordonne l'octroi de la garantie au paiement d'une commission de 0,5 % du principal du crédit garanti pour une institution financière et de 1,5 % pour une institution non financière, versée au fonds d'amortissement de la garantie de bonne fin donnée par le Trésor.
-- **Un libellé qui change.** Jusqu'à la loi de finances pour 1983, le corps de l'article autorise la « garantie du Trésor » ; [celle de 1984](#r-ep-pl-1984) écrit « garantie de l'État ».
+- **Un libellé qui change.** Jusqu'à la loi de finances pour 1983, le corps de l'article autorise la « garantie du Trésor » ; [celle de 1984](#r-ep-pl-1984) écrit « garantie de l'État ». [La loi de finances pour 1996](#r-ep-pl-1996) écrit « en vertu de la législation en vigueur » au lieu de « en vertu des textes et conventions en vigueur ». [Celle de 2013](#r-ep-pl-2013) vise la garantie accordée « pour la conclusion des prêts ou émissions des sukuk islamiques », libellé que reprennent les lois de 2014 et de 2015.
 
-:::: {.chronologie-repliable titre="Plafond de la garantie de l'État : montant fixé ou modifié par chaque loi de finances, 1958-59 à 1994, avec le texte, l'article et la page, et arrêté du 3 avril 1993 sur la commission de garantie"}
+:::: {.chronologie-repliable titre="Plafond de la garantie de l'État : montant fixé ou modifié par chaque loi de finances, 1958-59 à 2015, avec le texte, l'article et la page, et arrêté du 3 avril 1993 sur la commission de garantie"}
 
 <!-- TODO (rédacteur) : tableau copié de `ls.tableau_plafond` (relevé listes/plafond-garanties-lois-de-finances.csv) pour que les ancres r-ep-pl-… soient lisibles par check_domicile_references.py ; tests/test_listes_entreprises_publiques.py contrôle l'identité des deux, à remplacer par l'appel quand le contrôle saura lire les ancres engendrées -->
 
@@ -420,14 +423,55 @@ ls.figure_plafond(
 | []{#r-ep-pl-1993}gestion 1993 | [@lf-1993, art. 20, p. 1669] | plafond ramené de 530 MD à 500 MD par rapport à la gestion précédente | ajustement |
 | []{#r-ep-pl-1993-2}gestion 1993 | [@loi93-111-garantie-1993, art. unique, p. 1900] | plafond porté de 500 MD à 900 MD (relèvement en cours de gestion) | ajustement |
 | []{#r-ep-pl-1994}gestion 1994 | [@lf-1994, art. 18, p. 2195] | plafond porté de 900 MD à 950 MD par rapport à la gestion précédente | ajustement |
+| []{#r-ep-pl-1995}gestion 1995 | [@lf-1995, art. 13, p. 2042] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-1996}gestion 1996 | [@lf-1996, art. 13, p. 2369] | plafond reconduit à 950 MD ; le texte écrit « en vertu de la législation en vigueur » au lieu de « en vertu des textes et conventions en vigueur » | ajustement |
+| []{#r-ep-pl-1997}gestion 1997 | [@lf-1997, art. 16, p. 2579] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-1998}gestion 1998 | [@lf-1998, art. 16, p. 2436] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-1999}gestion 1999 | [@lf-1999, art. 11, p. 2501] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-2000}gestion 2000 | [@lf-2000, art. 11, p. 2740] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-2001}gestion 2001 | [@lf-2001, art. 11, p. 3172] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-2002}gestion 2002 | [@loi2001-123-lf2002, art. 11, p. 4252] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-2002-2}gestion 2002 | [@loi2002-90-garantie-2002, art. unique, p. 2535] | plafond porté de 950 MD à 1 800 MD (relèvement en cours de gestion) | ajustement |
+| []{#r-ep-pl-2003}gestion 2003 | [@lf-2003, art. 11, p. 2876] | plafond ramené de 1 800 MD à 1 200 MD par rapport à la gestion précédente | ajustement |
+| []{#r-ep-pl-2004}gestion 2004 | [@lf-2004, art. 11, p. 3722] | plafond ramené de 1 200 MD à 950 MD par rapport à la gestion précédente | ajustement |
+| []{#r-ep-pl-2005}gestion 2005 | [@lf-2005, art. 9, p. 3433] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-2006}gestion 2006 | [@lf-2006, art. 9, p. 3597] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-2007}gestion 2007 | [@lf-2007, art. 9, p. 4381] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-2008}gestion 2008 | [@loi-2007-70-lf-2008, art. 9, p. 4358] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-2009}gestion 2009 | [@lf-2009, art. 9, p. 4275] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-2010}gestion 2010 | [@lf-2010, art. 9, p. 3912] | plafond reconduit à 950 MD | ajustement |
+| []{#r-ep-pl-2011}gestion 2011 | [@lf-2011, art. 9, p. 3462] | plafond porté de 950 MD à 1 800 MD par rapport à la gestion précédente | ajustement |
+| []{#r-ep-pl-2011-2}gestion 2011 | [@dl-2011-56-lfc-2011, art. 1er, p. 1013] | plafond porté de 1 800 MD à 4 000 MD (relèvement en cours de gestion) ; décret-loi portant loi de finances complémentaire, article 9 nouveau de la loi de finances pour 2011 | ajustement |
+| []{#r-ep-pl-2012}gestion 2012 | [@lf-2012, art. 9, p. 5] | plafond reconduit à 4 000 MD | ajustement |
+| []{#r-ep-pl-2013}gestion 2013 | [@lf-2013, art. 9, p. 5] | plafond ramené de 4 000 MD à 3 000 MD par rapport à la gestion précédente ; la garantie est celle accordée « pour la conclusion des prêts ou émissions des sukuk islamiques en vertu de la législation en vigueur » ; même libellé en 2014 et en 2015 | ajustement |
+| []{#r-ep-pl-2014}gestion 2014 | [@lf-2014, art. 9, p. 3668] | plafond reconduit à 3 000 MD | ajustement |
+| []{#r-ep-pl-2015}gestion 2015 | [@lf-2015, art. 9, p. 3463] | plafond reconduit à 3 000 MD | ajustement |
 
-: Plafond de la garantie de l'État : article de chaque loi de finances qui le fixe, et loi qui le modifie en cours de gestion, 1958-59 à 1994. Le montant de 1958-59 est imprimé en francs ; les autres sont en millions de dinars courants (MD). Source : *Journal officiel*, édition française {#tbl-ep-plafond-registre}
+: Plafond de la garantie de l'État : article de chaque loi de finances qui le fixe, et loi qui le modifie en cours de gestion, 1958-59 à 2015. Le montant de 1958-59 est imprimé en francs ; les autres sont en millions de dinars courants (MD). Source : *Journal officiel*, édition française {#tbl-ep-plafond-registre}
 
 | Date d'effet | Texte, article et page | Ce que le texte change | Portée |
 |---|---|---|---|
 | []{#r-ep-arrete-1993-commission}sans clause d'effet | arrêté du ministre des finances du 3 avril 1993 [@arrete1993-04-03-commission-garantie, art. 1^er^ à 4, p. 507] | l'octroi de la garantie de l'État est subordonné au paiement d'une commission de garantie, sur le montant du crédit garanti : 0,5 % pour une institution financière, 1,5 % pour une institution non financière (art. 2) ; versée au « fonds d'amortissement de la garantie de bonne fin donnée par le trésor » au plus tard à la date de la première utilisation du crédit (art. 3) ; autorisation de débit d'office du compte de l'emprunteur (art. 4) | ajustement |
 
 : Commission due au titre de l'octroi de la garantie de l'État : l'arrêté du 3 avril 1993 {#tbl-ep-garanties-commission}
+
+::::
+
+:::: {.chronologie-repliable titre="Budget ordinaire de l'État voté par la loi de finances, 1959-60 à 1986 : recettes ordinaires et crédits des dépenses de gestion ou courantes, avec le texte, l'article et la page"}
+
+```{python}
+#| label: ep-budget-ordinaire-registre
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import listes as ls
+ls.tableau_budget(
+    caption=("Budget ordinaire de l'État voté par la loi de finances, 1959-60 à 1986, en millions "
+             "de dinars courants (MD). Les recettes ordinaires et les crédits sont égaux chaque "
+             "année ; les budgets annexes, les établissements rattachés et le budget "
+             "d'équipement ou de développement ne sont pas compris. Source : *Journal "
+             "officiel*, édition française"))
+```
 
 ::::
 
