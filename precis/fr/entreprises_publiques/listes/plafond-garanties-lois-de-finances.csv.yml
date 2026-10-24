@@ -1,5 +1,5 @@
 # Manifeste du relevé « plafond de la garantie de l'État fixé par la loi de finances,
-# 1958-59 à 1994 ».
+# 1958-59 à 2015 ».
 #
 # Fichier lu par figures/listes.py. Il transcrit, pour chaque loi de finances, l'article
 # « octroi de la garantie de l'État » (montant maximal dans la limite duquel le ministre chargé
@@ -7,19 +7,33 @@
 # modifient ce montant en cours de gestion. Source de la transcription :
 # docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md.
 #
-# LECTURE du fascicule français du corpus local (édition française du Journal officiel) pour les
-# trente-huit lois : reconnaissance de caractères sur la page de l'article, relue à l'image pour
-# les gestions 1963, 1966, 1969, 1975, 1979 et 1985. La page est celle où l'article est imprimé,
+# LECTURE du fascicule français du corpus local (édition française du Journal officiel) : pour les
+# trente-huit lois de 1958-59 à 1994, reconnaissance de caractères sur la page de l'article, relue à
+# l'image pour les gestions 1963, 1966, 1969, 1975, 1979 et 1985 ; pour les vingt-trois textes de
+# 1995 à 2015, couche texte du fascicule (déchiffrée pour les fascicules de 1999 à 2004, dont la
+# police est codée), numéros de page lus sur le pied de page de la page de l'article (page prise sur la page
+# du fascicule qui porte l'article ; contrôle à l'image pour la gestion 2003). La page est celle où l'article est imprimé,
 # relevée sur l'en-tête ou le pied de la page, ou déduite des pages voisines du même fascicule.
 # GESTION 1985 : le numéro de l'article est mal imprimé (« 51 » ou « 54 » à l'image) ; 54 d'après
 # la suite des articles 53 et 55.
 # UNE LIGNE PAR MONTANT FIXÉ : la loi de finances de l'année, puis la loi qui change ce montant
 # (plafond_avant_md porte alors le montant remplacé). L'article 18 de la loi n° 88-145 fixe un
 # montant unique « pour l'année 1988 et l'année 1989 » : il a donc deux lignes.
+# PRECISION : changement de libellé de l'article que le montant seul ne dit pas (1996 : « législation
+# en vigueur » remplace « textes et conventions en vigueur » ; 2013 : la garantie est celle des prêts
+# ou émissions de sukuk). La loi n° 2012-1 (loi de finances complémentaire pour 2012, art. 9 nouveau,
+# p. 921) réécrit l'article au même montant, 4 000 MD : elle n'a pas de ligne, aucun montant ne change.
+# La loi de finances pour 1997 (art. 17, p. 2580) ouvre en outre, « nonobstant » l'article 16, une
+# garantie propre aux dettes de l'Office des céréales et de l'Office national de l'huile à la Banque
+# nationale agricole, dans la limite de 980 000 000 dinars : elle n'entre pas dans cette série.
 # PLAFOND_IMPRIME : 1958-59 est imprimé en francs ; la ligne est donnée telle qu'imprimée et n'entre pas dans la figure, qui est en millions de dinars.
 # NON LUS : l'arrêté ou décret de 1957-58 (fascicule absent du corpus local) ; gestion 1960 ;
-# lois de finances complémentaires dont l'index ne détaille pas les articles (n° 69-60,
-# 73-72, 80-1, 82-27, 83-81, 84-2, 86-83, 88-60, 89-88, 91-23) : lues par leur seul index.
+# lois de finances complémentaires de 1969 à 1991 dont l'index ne détaille pas les articles (n° 69-60,
+# 73-72, 80-1, 82-27, 83-81, 84-2, 86-83, 88-60, 89-88, 91-23) : lues par leur seul index. Lois de
+# finances complémentaires de 1995 à 2015 : recherche de l'article sur la garantie dans le texte (ou à
+# l'image pour 2002, 2004 et 2006) pour les lois n° 2002-100, 2004-87, 2005-103, 2006-70, 2007-64,
+# 2008-76, 2009-40, 2013-51 et 2014-54, aucune ne modifie le plafond ; aucune loi de finances
+# complémentaire pour 2015 n'est indexée.
 
 format: long
 cle_de_ligne: [gestion, loi, article]
@@ -34,6 +48,7 @@ colonnes:
   plafond_md: montant maximal fixé, en millions de dinars courants
   plafond_avant_md: montant remplacé, pour une loi qui modifie un montant déjà fixé
   plafond_imprime: montant tel qu'imprimé quand il n'est pas en dinars
+  precision: changement de libellé ou de portée de l'article que le montant ne dit pas
   nature: fixation par la loi de finances de l'année, ou modification du montant
   cle: clé de citation de la loi
 
@@ -76,3 +91,26 @@ sources:
   - lf-1993
   - loi93-111-garantie-1993
   - lf-1994
+  - lf-1995
+  - lf-1996
+  - lf-1997
+  - lf-1998
+  - lf-1999
+  - lf-2000
+  - lf-2001
+  - loi2001-123-lf2002
+  - loi2002-90-garantie-2002
+  - lf-2003
+  - lf-2004
+  - lf-2005
+  - lf-2006
+  - lf-2007
+  - loi-2007-70-lf-2008
+  - lf-2009
+  - lf-2010
+  - lf-2011
+  - dl-2011-56-lfc-2011
+  - lf-2012
+  - lf-2013
+  - lf-2014
+  - lf-2015

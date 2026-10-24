@@ -1,0 +1,76 @@
+# Manifeste du relevé « budget ordinaire de l'État voté par la loi de finances, 1959-60 à 1986 ».
+#
+# Fichier lu par figures/listes.py. Il transcrit, pour chaque loi de finances de 1959-60 à 1986,
+# les deux montants que la loi fixe pour le budget ordinaire (« dépenses de gestion » de 1961 à
+# 1967, « dépenses courantes » depuis 1968) : article 1er, la perception au profit du budget de
+# l'État des impôts, taxes, produits et revenus du tableau « A » (recettes), et l'article « montant
+# maximum des crédits afférents aux dépenses de gestion (ou courantes) de l'État » (crédits). Les
+# recettes et les crédits sont égaux chaque année : l'égalité sert de contrôle de lecture.
+#
+# CE QUE LE MONTANT EST. Un montant VOTÉ du budget ordinaire (titre I). Les voies et moyens du budget
+# d'équipement comprennent une « contribution du budget ordinaire » (3 MD en 1961, art. 23 de la loi
+# n° 60-38) : le montant n'est donc pas celui des seules dépenses courantes, et la loi ne dit pas, à
+# ces articles, s'il comprend le service de la dette. Il n'est ni un budget total (le budget
+# d'équipement, puis de développement, est à part), ni une réalisation. Il ne se raccorde pas à la
+# série « dépenses de l'État hors service de la dette, réalisation » (1986 à 2015) : la ligne de 1986
+# porte les deux montants, pour que l'écart se lise.
+# Budgets annexes, établissements publics rattachés pour ordre et fonds spéciaux du Trésor sont
+# exclus. La loi de finances pour 1983 fixe en outre un budget général (articles 1 et 2, p. 2876) :
+# 1 753 MD, dont 954 MD de dépenses courantes et 799 MD de dépenses d'investissement (crédits de
+# paiement) ; il n'a pas d'équivalent les années voisines et n'est pas versé dans la série.
+# LECTURE : fascicules français du corpus local, scannés, sans couche texte ; reconnaissance de
+# caractères à 250 dpi, puis relecture de l'image de l'article. « image » : montants lus sur l'image
+# du fascicule ; « ocr concordant » : recettes et crédits lus par la reconnaissance de caractères,
+# identiques. Les numéros de page sont ceux de l'en-tête ou du pied de la page, ou la page du
+# fascicule déduite du décalage lu sur les en-têtes des pages voisines.
+# NON LUS : le budget ordinaire de 1958-59 (loi n° 58-45, en francs ; budget fixé par décret du 29 juin
+# 1957, fascicule absent du corpus local) ; gestion 1960 (aucune notice) ; budgets d'équipement et de
+# développement de 1961 à 1985, dont la structure change d'une loi à l'autre ; lois de finances
+# complémentaires. 1959-60 : le chiffre des crédits est effacé à l'image, seules les recettes sont lues.
+
+format: long
+cle_de_ligne: [gestion]
+
+colonnes:
+  gestion: gestion budgétaire (« année financière » 1959-60 ; gestion 1961 et suivantes)
+  loi: numéro de la loi de finances
+  date: date de la loi (jort_cache)
+  jort_numero: numéro du fascicule du Journal officiel
+  article_recettes: article qui fixe les recettes ordinaires (tableau « A »)
+  page_recettes: page du Journal officiel, édition française
+  recettes_md: recettes ordinaires du budget de l'État, en millions de dinars courants
+  article_credits: article qui fixe le montant maximum des crédits des dépenses de gestion ou courantes
+  page_credits: page du Journal officiel, édition française
+  credits_md: montant maximum des crédits des dépenses de gestion ou courantes, en millions de dinars courants
+  lecture: comment les montants ont été lus
+  remarque: précision propre à la loi
+  cle: clé de citation de la loi
+
+sources:
+  - loi59-42-lf1959
+  - loi60-38-lf1961
+  - loi61-65-lf1962
+  - loi62-82-lf1963
+  - loi63-58-lf1964
+  - loi64-59-lf1965
+  - loi65-46-lf1966
+  - loi66-79-lf1967
+  - loi67-57-lf1968
+  - lf-1969
+  - lf-1970
+  - lf-1971
+  - loi71-59-lf1972
+  - lf-1973
+  - loi73-82-lf1974
+  - loi74-101-lf1975
+  - loi75-83-lf1976
+  - lf-1977
+  - loi77-81-lf1978
+  - loi78-59-lf1979
+  - loi79-66-lf1980
+  - lf-1981
+  - loi81-100-lf1982
+  - lf-1983
+  - lf-1984
+  - loi84-84-lf1985
+  - loi85-109-lf1986

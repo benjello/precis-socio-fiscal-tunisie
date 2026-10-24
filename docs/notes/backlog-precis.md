@@ -3449,20 +3449,36 @@ Ce qui reste :
   lue dans le corpus ; fiche `r-garantie-etat-plafond-2020-lfr` résolue). Les 7 500 MD de la
   traduction française du rapport ne sont pas dans la loi. À reporter dans `tunisia-data`, dont
   la série `garanties-etat` garde les deux valeurs et dit le point « non tranché ».
-- **Plafond légal de la garantie, 1958-59 à 1994 — fait le 23 octobre 2026**
-  (`docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md`, section
+- **Plafond légal de la garantie, 1958-59 à 2015 — fait le 23 octobre 2026**
+  (`docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md`, §§ 1 à 6, section
   `#sec-ep-garanties-plafond-legal`, figure `fig-ep-plafond-legal`, registre `tbl-ep-plafond-registre`
   et `tbl-ep-garanties-commission` repliés, relevé `listes/plafond-garanties-lois-de-finances.csv`
-  contrôlé par `tests/test_listes_entreprises_publiques.py`). Trente-huit lois lues aux fascicules
-  français du corpus ; arrêté du 3 avril 1993 sur la commission de garantie lu (le chapitre
-  l'attribuait à une commission d'instruction : corrigé). **Restent** : plafond de 1995 à 2015
-  (fiche `r-ep-plafond-garantie-1995-2015`, fascicules du corpus à lire) ; gestion 1960 et décret du
-  29 juin 1957 (fascicule absent du corpus local, à obtenir sur pist.tn) ; lois de finances
-  complémentaires de 1969 à 1991 à lire en entier ; article 36 de la loi n° 77-81 (fonds
-  d'amortissement de la garantie de bonne fin) ; acte de la commission d'instruction ; prêts du
-  Trésor aux entreprises publiques (article voisin, montants vus, pas en série) ; parts du budget
-  et du PIB avant 1986 (aucun dénominateur) ; libellés arabes de la figure ; `lf-1978` de
-  `compensation` à fondre avec `loi77-81-lf1978` (`docs/notes/biblio-a-rapatrier.md`).
+  contrôlé par `tests/test_listes_entreprises_publiques.py`). Soixante et une lois et textes lus aux
+  fascicules français du corpus : trente-huit de 1958-59 à 1994 (reconnaissance de caractères) ;
+  vingt-trois de 1995 à 2015 (couche texte ; polices codées de 1999 à 2004 déchiffrées), dont deux
+  relèvements en cours de gestion — loi n° 2002-90 (2002 : de 950 à 1 800 MD) et décret-loi
+  n° 2011-56 (2011 : de 1 800 à 4 000 MD). Le plafond est de 950 MD de 1994 à 2010 sauf 1 200 MD en
+  2003, puis 1 800, 4 000 et 3 000 MD (2013-2015). Parts du PIB en quatre segments de base (1961-91,
+  1992-96, 1997-2009, 2010-15), traits interrompus aux ruptures ; parts des dépenses de l'État de 1986
+  à 2015. Arrêté du 3 avril 1993 sur la commission de garantie lu (le chapitre l'attribuait à une
+  commission d'instruction : corrigé). **Restent** : gestion 1960 et décret du 29 juin 1957
+  (fascicule absent du corpus local, à obtenir sur pist.tn) ; lois de finances complémentaires de
+  1969 à 1991 à lire en entier ; lois de finances de 2016 à 2024 (le plafond vient des annexes du
+  ministère ; seule la loi de 2020 est lue) ; garantie propre aux dettes de l'Office des céréales et
+  de l'Office national de l'huile (loi de finances pour 1997, art. 17, 980 MD), lue et non versée ;
+  article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin) ; acte de la
+  commission d'instruction ; prêts du Trésor aux entreprises publiques (article voisin de chaque loi,
+  40 MD de 1995 à 2005 et 100 MD de 2013 à 2015, montants vus, pas en série) ; budgets d'équipement et de développement de 1961 à 1985 et réalisation du budget avant 1986
+  (fiche `r-ep-budget-etat-1959-1985`) ; PIB de 1959-60 et de 1960 ; libellés arabes de la figure ; alias arabe transitoire `lf-1978` à retirer après la
+  retraduction (`docs/notes/biblio-a-rapatrier.md`). **Dénominateurs d'avant 1986 (§ 7 de la note)** : établi le budget ordinaire voté (titre I ;
+  recettes ordinaires = crédits des dépenses de gestion ou courantes) de 1959-60 à 1986 (les crédits de
+  1959-60 sont effacés à l'image), lu aux fascicules scannés ; relevé `listes/budget-ordinaire-lois-de-finances.csv`,
+  vue en part du budget de la figure sur deux segments séparés en 1986 (budget ordinaire voté, puis dépenses
+  réalisées hors service de la dette) ; aucun total de l'État (budget d'équipement non lu, contribution du
+  budget ordinaire à compter une fois). Notion « budget ordinaire » non versée au glossaire, faute de terme
+  arabe attesté par un texte lu. **À reporter dans `tunisia-data`** (signalé, non versé) : la série du plafond
+  légal (montant fixé, montant en vigueur à la fin de la gestion), 1959-60 à 2015, et la série du budget
+  ordinaire voté, 1959-60 à 1986.
 - **Second passage de la note** (son § 8) : ventilation par nature de 2023 (écart imprimé de
   23,0 MD) ; encours des prêts rétrocédés (rapport sur la dette publique, pages repérées) ;
   rapports sur la dette publique des éditions LF 2021 et LF 2024 ; page « bilan global » de la
