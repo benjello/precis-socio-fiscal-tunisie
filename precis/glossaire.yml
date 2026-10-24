@@ -4114,7 +4114,7 @@ entries:
   - id: mise-a-la-retraite-avant-age-legal
     acronyme: null
     statut: provisoire  # équivalent AR : intitulé de la loi n° 2009-39 (JORT, éd. ar.)
-    references: [decret2009-2085, lfc-2009, avis-cc-27-2009, decret2011-932]
+    references: [decret2009-2085, lfc-2009, avis-cc-27-2009, decret2011-932, loi2017-51, lf-2025]
     source_definition: {ref: loi2009-39}
     source_traduction: {ref: loi2009-39}
     voir_aussi: [retraite-anticipee-volontaire, bonification, jouissance-differee, fonds-special-tresor]
@@ -4128,7 +4128,9 @@ entries:
         spéciale du Premier ministère statue, dans la limite de 7 000 agents ; la
         pension est immédiate, bonifiée de la période restant à courir jusqu'à l'âge
         légal, et les pensions et contributions de cette période sont à la charge de
-        l'employeur. Le terme désigne aussi des programmes ultérieurs de même schéma.
+        l'employeur. Le terme désigne aussi les programmes ultérieurs de même schéma : celui de
+        la loi n° 2017-51 du 28 juin 2017 (âge légal atteint du 1er janvier 2018 au 1er janvier
+        2021) et le programme de 2022 à 2028.
       synonymes: []
     ar:
       terme: الإحالة على التقاعد قبل بلوغ السن القانونية
@@ -4139,7 +4141,9 @@ entries:
         بلوغها، متى كانت لهم 15 سنة نشاط خضعت للاقتطاعات. وتبتّ في الطلبات لجنة خاصة
         بالوزارة الأولى في حدود 7000 عون؛ وتُصرف الجراية فورًا مع تنفيل يساوي المدة
         المتبقية لبلوغ السن القانونية، ويتحمّل المشغّل الجرايات والمساهمات الاجتماعية
-        طيلة هذه المدة. ويُطلق المصطلح أيضًا على برامج لاحقة على المنوال نفسه.
+        طيلة هذه المدة. ويُطلق المصطلح أيضًا على البرامج اللاحقة على المنوال نفسه: برنامج القانون عدد 51 لسنة 2017
+        المؤرخ في 28 جوان 2017 (بلوغ السن القانونية من غرة جانفي 2018 إلى غرة جانفي 2021)
+        وبرنامج 2022-2028.
       synonymes: []
 
   - id: solde-de-reforme

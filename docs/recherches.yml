@@ -3931,6 +3931,33 @@
     couverture: 'jort_cache (dernière notice publiée le 2026-10-02), intitulés français (LIKE, FTS) et arabes (LIKE sur titre), toutes années : seul le décret n° 2011-932 (JORT n° 52/2011, p. 1252, lu) ; « التقاعد قبل » rend la loi n° 2017-51, le décret gouvernemental n° 2017-825, la LF 2022 (art. 14) et la LF 2025 (art. 14), hors objet. Miroir iort non interrogé ; plein texte non cherché.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'miroir iort (textes/md), termes arabes « الإجراءات الاستثنائية للإحالة », « تمويل الإجراءات الاستثنائية » : lois de finances et de règlement, aucun décret ; plein texte des fascicules français 2009-2017 du corpus local, expression « mesures exceptionnelles de (la) mise (à|en) la retraite » : lois de finances (tableau B), décret n° 2011-932, aucun autre décret ; plein texte arabe 2013-2016 (829 fascicules arabes de 2009 à 2016 parcourus après normalisation des formes de présentation) : occurrences dans les seuls tableaux des lois de finances, aucun décret ; plein texte arabe 2009-2012 : le même parcours ne retrouve ni le décret n° 2011-932 ni les tableaux des lois de finances, dont les fascicules ne portent pas de couche texte arabe exploitable, de sorte que cette recherche ne vaut rien pour ces années ; quatre fascicules arabes de 2015 (n° 53, 57, 64, 67) sans texte. Non couverts : une quinzaine de fascicules français de 2009-2014 de moins de 20 Ko sans couche texte complète (JORT 2009 n° 101 ; 2011 n° 8 à 11, 24 ; 2012 n° 4, 7, 11, 13, 14, 22, 34 ; 2013 n° 104 ; 2014 n° 59), fascicules arabes de 2009 à 2012, années 2018-2024 en plein texte.'
+    couvert_jusqu_au: 2017-12-31
+    resultat: aucun
+  a_faire:
+  - océriser les fascicules français sans couche texte listés ci-dessus et les fascicules arabes de 2009 à 2012 ; parcourir le plein texte de 2018 à 2024
+
+- id: r-cnrps-compte-retraite-avant-age-2009-depenses
+  objet: dépenses et exécution du compte de financement des mesures exceptionnelles de mise à la retraite (loi n° 2009-40, art. 2 à 4), pensions et contributions imputées, de 2009 à son abrogation par la loi de finances pour 2025
+  ou: [precis/fr/retraites/_secteur_public.qmd#sec-cnrps-retraite-avant-age-2009]
+  requetes:
+    iort_ar: [تمويل الإجراءات الاستثنائية, الإجراءات الاستثنائية للإحالة]
+    depuis: 2010-01-01
+  periode:
+    jusqu_au: 2025-12-31
+    motif: les lois de règlement des gestions 2017 à 2020 ne sont publiées qu'en mars 2024
+  passes:
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [iort, corpus_local]
+    couverture: 'miroir iort : le compte apparaît dans les lois de finances (tableau B, recettes prévues 2009-2012 ; ligne sans montant ensuite) et, aux gestions 2015, 2016, 2017 et 2018, dans la liste des excédents transférés au budget (art. 5 des lois n° 2018-41, 2018-49, 2024-18 et 2024-19, lus à l''image) ; aucune dépense de pensions du compte dans les fascicules lus. Les lois de règlement des gestions 2009 à 2014, 2019 et 2020 (lois n° 2013-6, 2010-6 et 2010-56 pour 2007-2008, 2016-23 à 2016-25, 2018-39, 2018-40, 2024-20, 2024-21) ne portent pas la ligne du compte dans le texte du miroir. Les tableaux annexés des lois de règlement (tableaux 2 et 2-1, dépenses des fonds spéciaux) ne figurent pas dans les textes lus.'
+    couvert_jusqu_au: 2024-03-07
+    resultat: aucun
+  a_faire:
+  - chercher les annexes des lois de règlement (tableaux des dépenses des fonds spéciaux) hors du JORT ; rapports de la Cour des comptes sur les lois de règlement 2009-2020 ; archives du ministère des finances (comptes de fin d'année)
 
 - id: r-banque-donnees-2014-1526-suite
   objet: texte prolongeant à nouveau, modifiant ou abrogeant le décret n° 2014-1526 (unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité) après le décret gouvernemental n° 2018-626, dont la prolongation d'un an court jusque vers mai 2019
