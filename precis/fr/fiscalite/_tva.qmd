@@ -1028,6 +1028,36 @@ La série invite donc à distinguer l'évolution juridique de la taxe de celle d
 
 **Le partage entre le régime d'importation et le régime intérieur.** Le tableau A des lois de finances prévoit la taxe en deux lignes : la taxe due à l'importation, qu'il nomme « régime importation » puis « régime douanier » à partir de 2020, et la taxe du régime intérieur (@fig-tva-regimes-recettes). La prévision passe de 850 millions de dinars à l'importation et 1 069 à l'intérieur en 2001 à 6 460 et 6 426 en 2026. La part du régime d'importation reste comprise entre 44,3 % en 2001 et 54,0 % en 2014 : elle atteint ou dépasse 50 % de 2011 à 2015, puis revient à 47-48 % de 2016 à 2018 et se tient entre 45,6 % et 52,4 % de 2019 à 2026. Ces valeurs sont des prévisions de loi de finances ; aucune réalisation par régime n'est établie, et le rapport au PIB n'est pas calculé.
 
+**Les prévisions face aux recettes constatées.** La rubrique « TVA » des recettes de l'État, que publie le ministère des Finances et dont le rendement est ci-dessus (@fig-tva-rendement), donne la recette constatée de chaque année. Rapprochée de la somme des deux lignes du tableau A de la loi de finances initiale, elle mesure l'écart entre ce que la loi prévoit et ce que l'État encaisse (@fig-tva-prevu-realise). De 2001 à 2025, la recette dépasse la prévision douze années et lui reste inférieure treize ; l'écart moyen, en valeur absolue, est de 6,5 %, et la recette cumulée des vingt-cinq années est inférieure de 1,4 % à la prévision cumulée. Les écarts ne se compensent pas dans le temps : la recette dépasse la prévision cinq années de suite de 2008 à 2012, de 0,6 % en 2011 à 12,7 % en 2008, puis lui reste inférieure en 2013, en 2015 et en 2016, en 2019 et en 2020, et de 2023 à 2025. Les deux plus grands écarts sont ceux de 2020 et de 2021 : 7 201 millions de dinars encaissés pour 8 975 prévus en 2020, soit 19,8 % de moins, puis 8 765 pour 7 553 prévus en 2021, soit 16,0 % de plus : la loi de finances de 2021 prévoit moins que celle de 2020, et la recette de 2021 la dépasse de 1 212 millions de dinars. Les prévisions retenues sont celles des lois de finances initiales : les lois de finances complémentaires, qui les révisent parfois, n'y figurent pas.
+
+```{python}
+#| label: fig-tva-prevu-realise
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tva_regimes as fig_tvar
+import figtools
+figtools.figure_tabs(
+    fig_tvar.fig_prevu_realise(), fig_tvar.table_prevu_realise(), *fig_tvar.SERIES_PREVU_REALISE,
+    slug="fig_tva_prevu_realise",
+    caption="Taxe sur la valeur ajoutée : prévision de la loi de finances initiale et recette constatée, 2001-2026, en millions de dinars courants et écart en %",
+    note_lecture=(
+        "La première vue place, pour chaque exercice, la prévision de la loi de finances initiale "
+        "(gris : somme des deux lignes de TVA du tableau A, ci-dessus) à côté de la recette "
+        "constatée (bleu : rubrique « TVA » des recettes fiscales de l'État du ministère des "
+        "Finances, celle de la figure du rendement). 2026 n'a que sa prévision. La seconde vue "
+        "donne l'écart de la recette à la prévision, en % de la prévision : bleu quand la "
+        "recette la dépasse, rouge quand elle lui reste inférieure ; les écarts d'au moins 10 % "
+        "sont chiffrés. Les deux grandeurs sont en dinars courants : aucun PIB n'intervient. "
+        "Les prévisions sont celles des lois de finances initiales, non révisées par les lois "
+        "de finances complémentaires."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+<!-- TODO (rédacteur) : vérifier que la rubrique « TVA » des recettes de l'État du ministère des Finances et les deux lignes de TVA du tableau A ont le même périmètre (TVA brute ou nette des restitutions, parts affectées) ; rapprocher aussi les prévisions des lois de finances complémentaires quand elles existent (2011, 2012, 2020 au moins). Écarts du 24 octobre 2026, sur la série de composition des recettes fiscales 1986-2025. -->
+
 ```{python}
 #| label: fig-tva-regimes-recettes
 #| echo: false

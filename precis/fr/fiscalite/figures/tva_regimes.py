@@ -146,3 +146,95 @@ def table() -> pd.DataFrame:
     df.columns = [_l(k) for k in ("col_annee", "col_regime", "col_code", "col_lib", "col_md",
                                   "col_part", "col_src", "col_page", "col_rem")]
     return df.fillna("")
+
+
+# --- Les prévisions face aux recettes constatées ------------------------------------------------
+#
+# La recette est la rubrique « TVA » des recettes fiscales de l'État du ministère des Finances
+# (série `recettes-fiscales-composition`, la même que la figure du rendement de la taxe) ; la
+# prévision est la somme des deux lignes du tableau A de la loi de finances initiale. Millions de
+# dinars courants des deux côtés : aucun PIB. 2026 n'a que sa prévision.
+
+SERIE_RECETTES = "recettes-fiscales-composition"
+SERIES_PREVU_REALISE = (SERIE, SERIE_RECETTES)
+BLEU, GRIS_CLAIR = "#0969da", "#8c959f"
+
+_L.update({
+    "prevu": {"fr": "Prévision de la loi de finances initiale (tableau A)",
+              "ar": "تقديرات قانون المالية الأصلي (الجدول أ)"},
+    "realise": {"fr": "Recette constatée (rubrique « TVA » du ministère des Finances)",
+                "ar": "المقبوضات المسجلة (باب الأداء على القيمة المضافة، وزارة المالية)"},
+    "y_courants": {"fr": "Millions de dinars courants", "ar": "ملايين الدنانير الجارية"},
+    "y_ecart": {"fr": "Recette constatée par rapport à la prévision, en %",
+                "ar": "المقبوضات المسجلة مقارنة بالتقديرات، %"},
+    "vue_prevu": {"fr": "Prévision et recette, millions de dinars courants",
+                  "ar": "التقديرات والمقبوضات، ملايين الدنانير الجارية"},
+    "vue_ecart": {"fr": "Écart de la recette à la prévision", "ar": "فارق المقبوضات عن التقديرات"},
+    "col_prevu": {"fr": "Prévision (millions de dinars courants)",
+                  "ar": "التقديرات (ملايين الدنانير الجارية)"},
+    "col_realise": {"fr": "Recette constatée (millions de dinars courants)",
+                    "ar": "المقبوضات المسجلة (ملايين الدنانير الجارية)"},
+    "col_ecart_md": {"fr": "Écart (millions de dinars courants)",
+                     "ar": "الفارق (ملايين الدنانير الجارية)"},
+    "col_ecart": {"fr": "Écart (%)", "ar": "الفارق (%)"},
+})
+
+
+def _prevu_realise() -> pd.DataFrame:
+    prevu = _large()["total"].rename("prevu")
+    realise = (figtools.series(SERIE_RECETTES).set_index("annee")["tva_MDT"].rename("realise"))
+    d = pd.concat([prevu, realise], axis=1).loc[prevu.index]
+    d["ecart_md"] = d["realise"] - d["prevu"]
+    d["ecart"] = 100 * d["ecart_md"] / d["prevu"]
+    return d
+
+
+def _vue_prevu_realise():
+    figtools.apply_lang_font()
+    d = _prevu_realise()
+    fig, ax = plt.subplots(figsize=(9, 5.2))
+    l = 0.38
+    ax.bar(d.index - l / 2, d["prevu"], width=l, color=GRIS_CLAIR,
+           label=figtools.fig_text(_l("prevu")))
+    ax.bar(d.index + l / 2, d["realise"], width=l, color=BLEU,
+           label=figtools.fig_text(_l("realise")))
+    ax.set_xlim(2000.4, 2026.6)
+    ax.set_xlabel(figtools.fig_text(_l("xlabel")))
+    ax.set_ylabel(figtools.fig_text(_l("y_courants")))
+    ax.grid(axis="y", color="#d0d7de", lw=0.6)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=1, fontsize=8, frameon=False)
+    fig.tight_layout()
+    return fig
+
+
+def _vue_ecart():
+    figtools.apply_lang_font()
+    d = _prevu_realise().dropna(subset=["ecart"])
+    fig, ax = plt.subplots(figsize=(9, 5.2))
+    ax.bar(d.index, d["ecart"], width=0.7,
+           color=[BLEU if v >= 0 else ROUGE for v in d["ecart"]])
+    for a, v in d["ecart"].items():
+        if abs(v) >= 10:
+            ax.annotate(f"{v:+.1f}".replace(".", ","), (a, v), textcoords="offset points",
+                        xytext=(0, 4 if v >= 0 else -10), ha="center", fontsize=8)
+    ax.axhline(0, color="#24292f", lw=0.8)
+    ax.set_xlim(2000.4, 2026.6)
+    ax.set_xlabel(figtools.fig_text(_l("xlabel")))
+    ax.set_ylabel(figtools.fig_text(_l("y_ecart")))
+    ax.grid(axis="y", color="#d0d7de", lw=0.6)
+    ax.spines[["top", "right"]].set_visible(False)
+    fig.tight_layout()
+    return fig
+
+
+def fig_prevu_realise():
+    return [(_l("vue_prevu"), _vue_prevu_realise()), (_l("vue_ecart"), _vue_ecart())]
+
+
+def table_prevu_realise() -> pd.DataFrame:
+    d = _prevu_realise().round({"prevu": 1, "realise": 1, "ecart_md": 1, "ecart": 1})
+    d = d.reset_index()
+    d.columns = [_l(k) for k in ("col_annee", "col_prevu", "col_realise", "col_ecart_md",
+                                 "col_ecart")]
+    return d.fillna("")
