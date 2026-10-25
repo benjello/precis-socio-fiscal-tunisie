@@ -4749,11 +4749,21 @@
   - retrouver le décret n° 93-1187 du 24 mai 1993 (modification du décret n° 90-1193)
 
 - id: r-foprolos-prelevements-lf
-  objet: article de loi de finances, autre que ceux de 1987-1990, de 2011, de 2012 et de 2013, prélevant sur les ressources du fonds de promotion du logement pour les salariés
+  objet: disposition d'une loi de finances, initiale ou complémentaire, de 1987 à 2026, qui prélève ou transfère des ressources du fonds de promotion du logement pour les salariés
   ou: [precis/fr/prestations_sociales/_logement_social.qmd#sec-log-previsions]
   requetes:
-    plein_texte: [logement pour les salariés, logements pour les salariés, promotion du logement]
-    depuis: 1986-01-01
+    plein_texte:
+    - logement pour les salariés
+    - logements pour les salariés
+    - promotion du logement
+    - promotion des logements
+    - FOPROLOS
+    - prélèvement
+    - disponibilités
+    - fonds spéciaux
+    - النهوض بالمسكن
+    - اقتطاع
+    depuis: 1987-01-01
   passes:
   - date: 2026-10-24
     role: documentaliste
@@ -4761,7 +4771,15 @@
     couverture: 'Plein texte du fascicule JORT n° 1 du 3 janvier 2012 (loi n° 2011-7 du 31 décembre 2011, loi de finances pour 2012, édition française) : le fonds n''y figure que dans la liste des fonds spéciaux du Trésor, sans article de prélèvement. La note logement-social-foprolos-2026-10-23, § 1.4, porte le relevé des lois de finances et des lois de finances complémentaires de 2012 à 2026 ; ce relevé n''a pas été rejoué ici. Lois de finances de 1991 à 2010 : non parcourues.'
     couvert_jusqu_au: 2012-01-03
     resultat: aucun
-  a_faire: [rejouer le plein texte des lois de finances de 1991 à 2010 et de 2014 à 2026]
+  - date: 2026-10-25
+    role: documentaliste
+    sources: [corpus_local, iort, pist]
+    couverture: 'Lois de finances initiales et complémentaires de 1987 à 2026, lues année par année. Image des fascicules (OCR à 200 dpi, 1991 à 1994) : JORT n° 86/1990, 90/1991, 88/1992, 100/1993 (texte des lois, pp. 2049-2062, 2082-2093, 1668-1679, 2194-2202), loi n° 91-23 (LFC 1991), lois n° 88-60 (LFC 1988) et 89-88 (LFC 1989). Couche texte des fascicules français : lois de finances de 1995 à 2000 (pages du texte de la loi), loi de finances complémentaire de 2005, lois de 2011 à 2013 et de 2021 à 2023 (loi n° 2023-12). Texte français du miroir de l''IORT : lois de 2001 à 2022 et de 2026, lois de finances complémentaires de 2002, 2004, 2007 à 2009, 2013 à 2019 et décrets-lois de 2021 et 2022. Lois de finances pour 2023, 2024 et 2025 (JORT n° 141/2022, 144/2023, 149/2024) : édition arabe seule disponible (édition française absente du corpus et de pist.tn), couche texte lue sur les termes en arabe du fonds et du prélèvement. Termes cherchés : nom du fonds, FOPROLOS, prélèvement, disponibilités, soldes, excédents, fonds spéciaux du Trésor. Trouvé : prélèvements de 1987 à 1990, 2011, 2012 et 2013 ; transfert de 29 MD en 2002 (loi n° 2002-100, art. 3) ; liste de l''article 92 de la loi n° 86-106 (1987) et son retrait par la loi n° 94-127, art. 36 (1995) ; quatre transferts globaux de recettes de tous les fonds spéciaux du Trésor sans désignation du fonds (2004, 2007, 2008, 2013). Aucune loi de finances complémentaire pour 2020 n''est identifiée dans l''index ni dans le miroir. La loi n° 99-94 (modification de la loi de finances pour 1999) est lue sans résultat ; les lois de finances complémentaires de 1986 et antérieures ne sont pas lues.'
+    couvert_jusqu_au: 2025-12-30
+    resultat: partiel
+  a_faire:
+  - lois de finances pour 2023, 2024 et 2025 dans l'édition française, si elle est publiée
+  - vérifier si le fonds est compris dans les transferts globaux de 2004, 2007, 2008 et 2013 (lois de règlement ou comptes spéciaux du Trésor)
 
 - id: r-foprolos-convention-gestion
   objet: convention de gestion du fonds de promotion du logement pour les salariés entre le ministre des Finances et un organisme de crédit (loi n° 77-54, art. 9)
