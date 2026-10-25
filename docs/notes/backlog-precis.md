@@ -816,7 +816,7 @@ liste qui suit le tableau, citations comprises. Restent :
   des pages : un numéro peut avoir des homonymes.
 - **RSNA, RTNS et régime public : lacunes de lecture closes le 24 octobre 2026** : date d'effet du décret n° 2002-3018 (dépôt du 30 novembre 2002,
   exécutoire le 5 décembre) ; date d'effet du décret n° 94-1477 (dépôt du 18 juillet 1994, exécutoire le 23 juillet) ; loi n° 88-38, art. 1 à 4
-  (ni vieillesse ni retraite) ; décret n° 90-1455, art. 3, 14, 30, 32, 43 et 54 (lus à l'image, ajoutés au tableau des textes) ; décret n° 80-103,
+  (ni vieillesse ni retraite) ; décret n° 90-1455, art. 3, 14, 30, 32, 43 et 54 (lus à l'image, ajoutés au tableau des textes) ; art. 30 et 32 relus le 25 octobre 2026 contre les art. 30 et 32 de 1974 (JORT n° 30 de 1974, p. 917) : le tableau des textes ne porte plus qu'une ligne par article (deux lignes en doublon, contraires, retirées) et la section « Les droits dérivés » dit les deux états datés (1974, 1990). Aucune modification postérieure de l'art. 32 n'est identifiée (décrets n° 97-291, 97-1927, 2007-2148 : art. 29, 33, 38, 42, 53) ; décret n° 80-103,
   art. 11 bis (18 mois de cotisations au cours des trois premières années, édition arabe, p. 252) ; décret n° 2026-229 du 2 octobre 2026 (liste
   du décret n° 85-1176, Instance supérieure indépendante pour les élections). Relances des fiches `r-dec74-499-modificatifs`, `r-rsna-age-relevement`,
   `r-dl2024-4-art33` et `r-rsna-bareme-annees-manquantes` jusqu'au JORT n° 97 de 2026 : rien de nouveau (un arrêté conjoint du n° 80 de 2026 cite
