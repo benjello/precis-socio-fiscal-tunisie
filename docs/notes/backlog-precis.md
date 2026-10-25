@@ -852,7 +852,7 @@ liste qui suit le tableau, citations comprises. Restent :
   | Tableau | Ce que le versement a changé |
   |---|---|
   | âges militaires | **engendré depuis le 20 septembre 2026.** Cinq grades, deux dates, tout est dans l'arbre |
-  | survivants du RSNA | la branche existe, mais trois des six lignes sont des **règles** — remariage, plafond de cumul, cumul invalidité/survivant |
+  | survivants du RSNA | la branche existe ; l'âge de 55 ans du remariage (1990) est **engendré depuis le 25 octobre 2026** ; restent des **règles** — état de 1974 du remariage (suppression à tout âge), plafond de cumul, cumul invalidité/survivant |
   | départs anticipés du RSNA | les durées et les taux sont versés ; les **conditions** de chaque cas ne sont pas des valeurs datées |
   | article 32 de la loi n° 85-12 | repère de 60 → 62 ans exécutoire le 5 mai 2019 ; les autres distinctions entre colonnes restent des règles |
 
