@@ -4,6 +4,9 @@
 - libelle: Taux majoré de la pension de réversion
   parametre: parameters/retraite/rsna/survivants/taux_conjoint_majore.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.survivants.taux_conjoint_majore/table/
+- libelle: Âge avant lequel le remariage suspend la réversion
+  parametre: parameters/retraite/rsna/survivants/age_remariage_suspensif.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.survivants.age_remariage_suspensif/table/
 - libelle: Taux de la pension d'orphelin
   parametre: parameters/retraite/rsna/survivants/taux_orphelin.yaml
   url: https://parameters.tn.tax-benefit.org/parameters/retraite.rsna.survivants.taux_orphelin/table/

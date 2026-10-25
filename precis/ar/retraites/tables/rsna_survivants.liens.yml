@@ -4,6 +4,9 @@
 - libelle: النسبة المرفّعة لجراية القرين الباقي على قيد الحياة
   parametre: parameters/retraite/rsna/survivants/taux_conjoint_majore.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.survivants.taux_conjoint_majore/table/
+- libelle: السنّ التي يوقف قبلها الزواج من جديد جراية القرين
+  parametre: parameters/retraite/rsna/survivants/age_remariage_suspensif.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.survivants.age_remariage_suspensif/table/
 - libelle: نسبة جراية اليتيم
   parametre: parameters/retraite/rsna/survivants/taux_orphelin.yaml
   url: https://parameters.tn.tax-benefit.org/ar/parameters/retraite.rsna.survivants.taux_orphelin/table/

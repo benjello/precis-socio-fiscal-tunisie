@@ -1206,7 +1206,7 @@ def tableaux_lot_a(langue):
         def lu(nom, chemin, d, formateur="taux"):
             return L(f"{sv}/{chemin}.yaml", d, formateur, _lien(nom))
 
-        d74, d81, d97 = "1974-01-01", "1981-02-19", "1997-05-01"
+        d74, d81, d90, d97 = "1974-01-01", "1981-02-19", "1990-09-23", "1997-05-01"
         lignes = [
             [{"fr": "Bénéficiaire et taux de la réversion",
               "ar": "المستفيد ونسبة جراية القرين الباقي على قيد الحياة"},
@@ -1223,12 +1223,18 @@ def tableaux_lot_a(langue):
             [{"fr": "Remariage", "ar": "الزواج من جديد"},
              {"fr": "suppression au premier jour du trimestre civil suivant",
               "ar": "الإلغاء في اليوم الأول من الثلاثي المدني التالي"},
-             {"fr": "1990 : rétablissement, revalorisé, au décès du nouveau conjoint ; cumul de "
-                    "pensions de conjoint survivant au titre de mariages successifs interdit "
-                    "(décret n° 90-1455)",
-              "ar": "1990: إعادة التأسيس، مع إعادة تقييم، عند وفاة القرين الجديد؛ منع الجمع بين "
-                    "جرايات القرين الباقي على قيد الحياة بموجب زيجات متتالية (الأمر عدد "
-                    "90-1455)"}],
+             g({"fr": "{d} : suspension du paiement seulement en cas de remariage avant {r} ans ; "
+                      "service de la pension, revalorisée, rétabli au décès du nouveau conjoint "
+                      "ou à la dissolution du mariage ; cumul de pensions de conjoint survivant "
+                      "au titre de mariages successifs interdit, la plus élevée étant servie "
+                      "(décret n° 90-1455)",
+                "ar": "{d}: تعليق دفع الجراية فقط في حال الزواج من جديد قبل سن {r}؛ استئناف "
+                      "صرف الجراية، مع تعديل، عند وفاة القرين الجديد أو حل الزواج؛ منع الجمع "
+                      "بين جرايات القرين الباقي على قيد الحياة بموجب زيجات متتالية، وتُصرف "
+                      "الجراية الأعلى (الأمر عدد 90-1455)"},
+               d=L(f"{sv}/age_remariage_suspensif.yaml", d90,
+                   lambda _v, lg: ot.formate_date(d90, lg), _lien("remariage")),
+               r=lu("remariage", "age_remariage_suspensif", d90, _entier))],
             [{"fr": "Taux d'orphelin", "ar": "نسبة اليتيم"},
              g({"fr": "{o}, porté à {pm} pour l'orphelin de père et de mère",
                 "ar": "{o}، ترفع إلى {pm} ليتيم الأب والأم"},

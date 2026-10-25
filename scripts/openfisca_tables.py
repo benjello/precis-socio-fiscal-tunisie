@@ -187,7 +187,12 @@ PAQUETS = {
         # des limites d'âge des magistrats et du seuil du différentiel, et la figure de la
         # retenue des députés, ne pourraient être engendrés. Aucun chemin déjà lu ne bouge. La
         # borne passe à la 0.153.
-        "version_minimale": (0, 153),
+        # La 0.154 verse l'âge de 55 ans avant lequel le remariage suspend la pension du
+        # conjoint survivant du régime non agricole, au 23 septembre 1990
+        # (`retraite/rsna/survivants/age_remariage_suspensif`, PR #514) : en deçà, le tableau
+        # des survivants du RSNA ne trouverait pas ce chemin et ne pourrait être engendré.
+        # La borne passe à la 0.154, publiée le 25 octobre 2026.
+        "version_minimale": (0, 154),
     },
 }
 
