@@ -1074,25 +1074,6 @@
       "note": "citation-key: loi83-111\nJORT n° 81 de 1983, pp. 3207-3208 (notice de jort_cache.db, recid 114849, champ pdf_fr)."
     },
     {
-      "id": "loi93-11",
-      "type": "legislation",
-      "title": "Loi n° 93-11 du 17 février 1993, portant création de l'Agence tunisienne de l'emploi et de l'Agence tunisienne de la formation professionnelle",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "14",
-      "page": "256-257",
-      "issued": {
-        "date-parts": [
-          [
-            1993,
-            2,
-            17
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1993/1993F/Jo01493.pdf",
-      "note": "citation-key: loi93-11\nJORT n° 14 de 1993, pp. 256-257 (notice de jort_cache.db, recid 113087, champ pdf_fr)."
-    },
-    {
       "id": "decret2003-564",
       "type": "legislation",
       "title": "Décret n° 2003-564 du 17 mars 2003, portant changement d'appellation de l'Agence tunisienne de l'emploi et des bureaux de l'emploi qui en relèvent",
@@ -1450,25 +1431,6 @@
       },
       "URL": "https://www.pist.tn/jort/2023/2023F/Jo0602023.pdf",
       "note": "citation-key: decret2023-461\nJORT n° 60 de 2023, pp. 1552 (notice de jort_cache.db, recid 172316, champ pdf_fr). Numéro du décret : 2023-461 (suivi du fascicule) ; la notice de jort_cache.db porte à tort « 2023-060 ». Page 1552 d'après la notice, à confirmer."
-    },
-    {
-      "id": "decret2021-436",
-      "type": "legislation",
-      "title": "Décret gouvernemental n° 2021-436 du 17 juin 2021, relatif à la cessation d'application du mécanisme de l'emploi des ouvriers des chantiers régionaux et des chantiers agricoles hors chantier",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "52",
-      "page": "1546",
-      "issued": {
-        "date-parts": [
-          [
-            2021,
-            6,
-            17
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2021/2021F/Jo0522021.pdf",
-      "note": "citation-key: decret2021-436\nJORT n° 52 de 2021, pp. 1546 (notice de jort_cache.db, recid 162058, champ pdf_fr). Page 1546 d'après la notice de jort_cache.db."
     },
     {
       "id": "oneq-suivi-pae-2012",
@@ -1936,24 +1898,6 @@
       "note": "citation-key: loi2018-49\nJORT n° 70 de 2018 (notice de jort_cache.db, recid 108644). L'édition française de ce fascicule n'est pas disponible dans la base (champ pdf_fr vide) : entrée française sans URL ; l'intitulé français est une traduction de l'intitulé arabe de la notice (« يتعلق بغلق ميزانية الدولة لسنة 2016 »). Pas de pages dans la notice."
     },
     {
-      "id": "loi2024-18",
-      "type": "legislation",
-      "title": "Loi n° 2024-18 du 5 mars 2024, portant règlement du budget de l'État de l'année 2017",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "35",
-      "issued": {
-        "date-parts": [
-          [
-            2024,
-            3,
-            5
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2024/2024F/Jo0352024.pdf",
-      "note": "citation-key: loi2024-18\nJORT n° 35 de 2024 (notice de jort_cache.db, recid 185133, champ pdf_fr). Pages de la notice (800) non confirmées : champ omis ; art. 5 cité par la note documentaire (JORT n° 35, 7 mars 2024, p. 801 environ)."
-    },
-    {
       "id": "loi2024-19",
       "type": "legislation",
       "title": "Loi n° 2024-19 du 5 mars 2024, portant règlement du budget de l'État de l'année 2018",
@@ -1970,98 +1914,6 @@
       },
       "URL": "https://www.pist.tn/jort/2024/2024F/Jo0352024.pdf",
       "note": "citation-key: loi2024-19\nJORT n° 35 de 2024 (notice de jort_cache.db, recid 185134, champ pdf_fr). Pages de la notice (800-815) non confirmées : champ omis."
-    },
-    {
-      "id": "minfin-rapport-budget-2022",
-      "type": "report",
-      "title": "تقرير حول مشروع ميزانية الدولة لسنة 2022 (Rapport sur le projet de budget de l'État pour 2022)",
-      "title-short": "Rapport sur le projet de budget de l'État pour 2022",
-      "author": [
-        {
-          "literal": "Ministère des Finances"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2021,
-            12
-          ]
-        ]
-      },
-      "accessed": {
-        "date-parts": [
-          [
-            2026,
-            10,
-            6
-          ]
-        ]
-      },
-      "note": "citation-key: minfin-rapport-budget-2022\nÉdition arabe, datée de décembre 2021 ; 124 pages ; section emploi et formation professionnelle, pp. 115-116 du PDF, lues en couche texte. Adresse d'origine non consignée dans le catalogue de tunisia-data : entrée sans URL. Copie locale : tunisia-data, data/raw/banque-mondiale-rapports/minfin_2021-12_rapport_budget_etat_2022_ar.pdf."
-    },
-    {
-      "id": "minfin-rapport-budget-2024",
-      "type": "report",
-      "title": "تقرير حول مشروع ميزانية الدولة لسنة 2024 (Rapport sur le projet de budget de l'État pour 2024)",
-      "title-short": "Rapport sur le projet de budget de l'État pour 2024",
-      "author": [
-        {
-          "literal": "Ministère des Finances"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2023,
-            10
-          ]
-        ]
-      },
-      "accessed": {
-        "date-parts": [
-          [
-            2026,
-            10,
-            6
-          ]
-        ]
-      },
-      "note": "citation-key: minfin-rapport-budget-2024\nÉdition arabe, datée de octobre 2023 ; 170 pages ; pp. 159-160 du PDF, lues en couche texte. Adresse d'origine non consignée dans le catalogue de tunisia-data : entrée sans URL. Copie locale : tunisia-data, data/raw/banque-mondiale-rapports/minfin_2023-10_rapport_budget_etat_2024_ar.pdf."
-    },
-    {
-      "id": "minfin-rapport-budget-2025",
-      "type": "report",
-      "title": "تقرير حول مشروع ميزانية الدولة لسنة 2025 (Rapport sur le projet de budget de l'État pour 2025)",
-      "title-short": "Rapport sur le projet de budget de l'État pour 2025",
-      "author": [
-        {
-          "literal": "Ministère des Finances"
-        }
-      ],
-      "publisher": "Ministère des finances",
-      "publisher-place": "Tunis",
-      "issued": {
-        "date-parts": [
-          [
-            2024
-          ]
-        ]
-      },
-      "accessed": {
-        "date-parts": [
-          [
-            2026,
-            10,
-            6
-          ]
-        ]
-      },
-      "note": "citation-key: minfin-rapport-budget-2025\nÉdition arabe, datée de année 2024 (pas de mois imprimé à la couverture ; fichier créé le 14/10/2024) ; 174 pages ; pp. 165-167 du PDF, lues en couche texte. Adresse d'origine non consignée dans le catalogue de tunisia-data : entrée sans URL. Copie locale : tunisia-data, data/raw/banque-mondiale-rapports/minfin_2025_annexe1_rapport_budget_etat_2025_ar.pdf."
     },
     {
       "id": "gbo-pap-emploi-2024",
@@ -3833,36 +3685,6 @@
       "title-short": "Loi n° 2007-19 du 2 avril 2007"
     },
     {
-      "id": "decret2002-887",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: decret2002-887\nissue: 34\nevent-date: 2002-04-22\nJORT n° 34, p. 1030-1032 de l'édition française. Art. 1er : nouvel intitulé du décret n° 97-1926 (le texte imprime « Décret n° 2002-886 » dans cet intitulé). Art. 2 : articles 1 à 7 nouveaux — champ étendu à la fermeture définitive et inopinée ; mêmes trois cas d'intervention ; jugement ayant acquis la force de la chose jugée (art. 3 et 5) ; éléments pris en charge : salaires et accessoires impayés, congés payés non réglés, préavis, gratification de fin de service (art. 4) ; impossibilité de recouvrement constatée par huissier notaire (art. 5) ; versement dans le mois du dépôt du dossier, après déduction des aides du décret n° 97-1925 (art. 7). Aucune clause d'effet ; fascicule déposé le 27 avril 2002. Lu par le rédacteur le 10 octobre 2026, hors de la note documentaire ; couche texte à police décalée, décodée : à relire à l'image. Adresses pist.tn des deux éditions vérifiées le 10 octobre 2026 (réponse 206 à une requête partielle). Copie de l'entrée du volume « Prestations sociales » ; recid jort_cache.db 86907 (champ pdf_fr).",
-      "page": "1030-1032",
-      "title": "Décret n° 2002-887 du 22 avril 2002, modifiant le décret n° 97-1926 du 29 septembre 1997, relatif à la détermination des conditions et des modalités de la prise en charge des indemnités dues aux travailleurs ayant quitté leur emploi pour des raisons économiques ou technologiques",
-      "URL": "https://www.pist.tn/jort/2002/2002F/Jo0342002.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            2002,
-            4,
-            26
-          ]
-        ]
-      },
-      "issue": "34",
-      "authority": "République tunisienne",
-      "event-date": {
-        "date-parts": [
-          [
-            2002,
-            4,
-            22
-          ]
-        ]
-      },
-      "title-short": "Décret n° 2002-887 du 22 avril 2002"
-    },
-    {
       "id": "decret-1957-05-06-quarante-heures",
       "type": "legislation",
       "title": "Décret du 6 mai 1957, modifiant temporairement le décret du 4 août 1936 instituant la semaine de quarante heures dans les établissements industriels et commerciaux",
@@ -4171,26 +3993,6 @@
         ]
       },
       "note": "citation-key: oit-ilostat-heures-travaillees\nHeures effectivement travaillées dans l'emploi principal, semaine de référence ; traitement des microdonnées nationales par l'OIT. 2019 : enquête nationale sur la population et l'emploi, deuxième trimestre ; 2021 : enquête nationale sur le budget et la consommation des ménages (changement de source, non comparable) ; 2014 (sous-emploi seulement) : Labor Market Panel Survey, rupture de série signalée. Fichiers rangés le 20/10/2026 dans tunisia-data (data/raw/oit/ilostat/), catalogue sources/marche-travail-temps-travail-urls.csv. Date d'édition de la base non relevée."
-    },
-    {
-      "id": "loi2024-44",
-      "type": "legislation",
-      "container-title": "Journal officiel de la République tunisienne",
-      "note": "citation-key: loi2024-44\nissue: 99\nJORT n° 99 du 12 août 2024, p. 2215 (pagination à confirmer, deux éditions coexistent). Art. 1 : agents CNRPS et salariés ET non-salariés du privé affiliés à la CNSS. Congé prénatal 15 jours, postnatal 3 mois (4 en cas de naissances multiples, handicap, prématurité ; 1 mois si enfant mort-né), paternité 7 jours (10 dans les cas aggravés, 3 si mort-né), congé d'accouchement 1 à 4 mois à demi-traitement, repos et congé d'allaitement. Plein traitement dans le public, indemnité dans le privé calculée « conformément à la législation en vigueur » (art. 9), c'est-à-dire l'art. 82 de la loi n° 60-30. Aucun article d'entrée en vigueur, aucun décret d'application prévu. Texte français intégral sur le miroir iort.tn. URL vérifiée (HTTP 200). Complément du 10 octobre 2026 : p. 2215-2216 de l'édition française (art. 1er : p. 2215 ; art. 11, abrogation des dispositions contraires : p. 2216). Onze articles, aucune clause d'effet ; fascicule déposé le 12 août 2024 : exécutoire le 17 août 2024 (loi n° 93-64, art. 2).",
-      "page": "2215-2216",
-      "title": "Loi n° 2024-44 du 12 août 2024, relative à l'organisation des congés de maternité et de paternité dans la fonction publique et les secteurs public et privé",
-      "URL": "https://www.pist.tn/jort/2024/2024F/Jo0992024.pdf",
-      "issued": {
-        "date-parts": [
-          [
-            2024,
-            8,
-            12
-          ]
-        ]
-      },
-      "issue": "99",
-      "title-short": "Loi n° 2024-44 du 12 août 2024"
     },
     {
       "id": "brown-hamermesh-2019-wages-hours-laws",
@@ -4510,6 +4312,25 @@
         ]
       },
       "note": "citation-key: oit-2022-working-time\nBureau international du Travail, 2022 ; ISBN de la version web (la version imprimée porte 978-92-2-037941-7). Section 2.4 (emploi informel) et section 4.3.4 (productivité) lues le 20/10/2026 (tunisia-data/data/raw/emploi/etudes/eco-temps-travail/oit_2022_working_time_work_life_balance.pdf, SHA-256 4f317aaeb4deaf89f39f2bf4f165e3bbff1014fdf9fec12c16e51f545ab69dbe). Étude extérieure : à citer avec sa méthode, à part du budgétaire."
+    },
+    {
+      "id": "decret2021-436",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2021-436 du 17 juin 2021, relatif à la cessation d'application du mécanisme de l'emploi des ouvriers des chantiers régionaux et des chantiers agricoles hors chantier",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "52",
+      "page": "1546",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            17
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2021/2021F/Jo0522021.pdf",
+      "note": "citation-key: decret2021-436\nJORT n° 52 de 2021, pp. 1546 (notice de jort_cache.db, recid 162058, champ pdf_fr). Page 1546 d'après la notice de jort_cache.db."
     }
   ]
 }
