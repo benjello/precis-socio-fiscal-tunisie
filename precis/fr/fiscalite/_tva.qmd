@@ -1026,7 +1026,57 @@ figtools.figure_tabs(
 
 La série invite donc à distinguer l'évolution juridique de la taxe de celle de ses agrégats budgétaires.
 
-**Le partage entre le régime d'importation et le régime intérieur.** Le tableau A des lois de finances prévoit la taxe en deux lignes : la taxe due à l'importation, qu'il nomme « régime importation » puis « régime douanier » à partir de 2020, et la taxe du régime intérieur (@fig-tva-regimes-recettes). La prévision passe de 850 millions de dinars à l'importation et 1 069 à l'intérieur en 2001 à 6 460 et 6 426 en 2026. La part du régime d'importation reste comprise entre 44,3 % en 2001 et 54,0 % en 2014 : elle atteint ou dépasse 50 % de 2011 à 2015, puis revient à 47-48 % de 2016 à 2018 et se tient entre 45,6 % et 52,4 % de 2019 à 2026. Ces valeurs sont des prévisions de loi de finances ; aucune réalisation par régime n'est établie, et le rapport au PIB n'est pas calculé.
+**Le partage entre le régime d'importation et le régime intérieur.** Le tableau A des lois de finances prévoit la taxe en deux lignes : la taxe due à l'importation, qu'il nomme « régime importation » puis « régime douanier » à partir de 2020, et la taxe du régime intérieur (@fig-tva-regimes-recettes). La prévision passe de 850 millions de dinars à l'importation et 1 069 à l'intérieur en 2001 à 6 460 et 6 426 en 2026. La part du régime d'importation reste comprise entre 44,3 % en 2001 et 54,0 % en 2014 : elle atteint ou dépasse 50 % de 2011 à 2015, puis revient à 47-48 % de 2016 à 2018 et se tient entre 45,6 % et 52,4 % de 2019 à 2026. Ces valeurs sont des prévisions de loi de finances ; aucune réalisation par régime n'est établie. Rapportée au PIB et aux dépenses totales de l'État de l'année, la prévision passe de 6,0 % du PIB et 26,6 % des dépenses en 2001 à 7,0 % du PIB et 22,9 % des dépenses en 2025.
+
+**Les prévisions face aux recettes constatées.** La rubrique « TVA » des recettes de l'État, que publie le ministère des Finances et dont le rendement est ci-dessus (@fig-tva-rendement), donne la recette constatée de chaque année. Rapprochée de la somme des deux lignes du tableau A de la loi de finances initiale, elle mesure l'écart entre ce que la loi prévoit et ce que l'État encaisse (@fig-tva-prevu-realise). De 2001 à 2025, la recette dépasse la prévision douze années et lui reste inférieure treize ; l'écart moyen, en valeur absolue, est de 6,5 %, et la recette cumulée des vingt-cinq années est inférieure de 1,4 % à la prévision cumulée. Les écarts ne se compensent pas dans le temps : la recette dépasse la prévision cinq années de suite de 2008 à 2012, de 0,6 % en 2011 à 12,7 % en 2008, puis lui reste inférieure en 2013, en 2015 et en 2016, en 2019 et en 2020, et de 2023 à 2025. Les deux plus grands écarts sont ceux de 2020 et de 2021 : 7 201 millions de dinars encaissés pour 8 975 prévus en 2020, soit 19,8 % de moins, puis 8 765 pour 7 553 prévus en 2021, soit 16,0 % de plus : la loi de finances de 2021 prévoit moins que celle de 2020, et la recette de 2021 la dépasse de 1 212 millions de dinars. En millions de dinars, l'écart va de −1 774 en 2020 à +1 212 en 2021 ; en part du PIB de chaque base, de −0,62 % en 2002 à +0,67 % en 2008 en base 1997, et de −1,48 % en 2020 à +0,92 % en 2021 en base 2015, les bases ne se raccordant pas (@fig-tva-prevu-realise ; voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Quand une loi de finances complémentaire a révisé la prévision, le classeur du ministère la donne : 6 773 millions de dinars en 2020 contre 8 975 à la loi initiale, et 8 700 en 2021 contre 7 553. Rapportée au PIB, la recette va de 5,3 % en 2007 à 7,3 % en 2022 ; rapportée aux dépenses totales de l'État, de 26,8 % en 2001 à 19,1 % en 2020. La prévision va de 5,1 % du PIB en 2010 à 7,5 % en 2023. Le PIB du ministère des Finances change de base en 2010, et la rupture est marquée sur les vues en part du PIB. Les prévisions retenues sont celles des lois de finances initiales : les lois de finances complémentaires, qui les révisent parfois, n'y figurent pas.
+
+```{python}
+#| label: fig-tva-prevu-realise
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import tva_regimes as fig_tvar
+import figtools
+figtools.figure_tabs(
+    fig_tvar.fig_prevu_realise(), fig_tvar.table_prevu_realise(), *fig_tvar.SERIES_PREVU_REALISE,
+    slug="fig_tva_prevu_realise",
+    caption="Taxe sur la valeur ajoutée : prévision de la loi de finances initiale et recette constatée, 2001-2026, en millions de dinars courants, en part du PIB et des dépenses de l'État, et écart de la recette à la prévision en millions de dinars, en % de la prévision et en % du PIB de chaque base",
+    note_lecture=(
+        "La première vue place, pour chaque exercice, la prévision de la loi de finances initiale "
+        "(gris : somme des deux lignes de TVA du tableau A, ci-dessus) à côté de la recette "
+        "constatée (bleu : rubrique « TVA » des recettes fiscales de l'État du ministère des "
+        "Finances, celle de la figure du rendement). 2026 n'a que sa prévision. Les deuxième "
+        "et troisième vues rapportent la prévision et la recette au PIB et aux dépenses totales "
+        "de l'État de la même année, pour 2001 à 2025 ; le PIB est celui du ministère des "
+        "Finances, dont la base passe de 1997 à 2015 en 2010 (trait vertical pointillé). La "
+        "trois dernières vues donnent l'écart de la recette à la prévision, recette moins "
+        "prévision : en millions de dinars courants ; en % de la prévision, qui ne dépend d'aucun "
+        "dénominateur ; en % du PIB, une courbe par base des comptes nationaux (1983, 1997, "
+        "2015), jamais raccordées : une année publiée dans deux bases porte deux points, chacun "
+        "rapporté au PIB de sa base, et le trait pointillé marque l'année où la série passe à la "
+        "base 2015 (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)) ; la valeur "
+        "du ministère que la source ne rattache à aucune base (2002 à 2004 et 2025) n'est pas "
+        "tracée, l'onglet « Données » la donne. Bleu quand la recette dépasse la prévision, rouge "
+        "quand elle lui reste inférieure ; les écarts d'au moins 500 millions de dinars, ou de "
+        "10 %, sont chiffrés. "
+        "La prévision est celle de la loi de finances initiale, jamais celle de la loi de "
+        "finances complémentaire, que l'onglet « Données » donne quand le classeur du ministère "
+        "la porte (2013 à 2023) : en 2020, la loi de finances initiale prévoit 8 975 millions de "
+        "dinars avant la crise sanitaire, la complémentaire 6 773. La recette est celle du "
+        "ministère des Finances, rubrique « TVA » des recettes fiscales de l'État, par exercice. "
+        "Contrôles : la colonne « loi de finances » du classeur égale la somme des deux lignes du "
+        "tableau A de 2014 à 2026 ; les recettes de 2009 et 2010 égalent celles du bulletin "
+        "d'exécution du budget de mars 2013, celle de 2011 s'en écarte de 0,8 % (3 848,4 dans le "
+        "classeur, 3 818,2 au bulletin). Le périmètre exact de la rubrique n'est pas décrit par la "
+        "source : les deux séries portent la même rubrique « TVA » du budget de l'État, sans que "
+        "leur identité de périmètre soit établie. Les valeurs de l'écart sont recalculées par un "
+        "test à partir des sources."
+    ),
+    generated="{{< meta date >}}",
+)
+```
+
+<!-- TODO (documentaliste) : périmètre exact de la rubrique « TVA » du classeur (TVA brute ou nette des restitutions, parts affectées) ; contrôle contre une loi de règlement ou un rapport de la Cour des comptes (aucune ligne de TVA dans les textes locaux lus) ; LFC 2011 et 2012 (4 154,0 MD pour la LFC 2012 au bulletin de mars 2013) absentes du classeur ; colonne « LF 2012 » du bulletin (4 515,5 MD) différente du tableau A (3 929 MD). -->
 
 ```{python}
 #| label: fig-tva-regimes-recettes
@@ -1038,7 +1088,7 @@ import figtools
 figtools.figure_tabs(
     fig_tvar.fig_regimes(), fig_tvar.table(), *fig_tvar.SERIES,
     slug="fig_tva_regimes_recettes",
-    caption="Taxe sur la valeur ajoutée : prévisions des lois de finances initiales par régime, importation et intérieur, 2001-2026, en millions de dinars courants et en part du régime d'importation",
+    caption="Taxe sur la valeur ajoutée : prévisions des lois de finances initiales par régime, importation et intérieur, 2001-2026, en millions de dinars courants, en part du PIB et des dépenses de l'État, et part du régime d'importation",
     note_lecture=(
         "Chaque barre est la prévision d'une loi de finances initiale, lue au tableau A : le "
         "régime d'importation (bleu) et le régime intérieur (vert) s'empilent. La seconde vue "
@@ -1047,7 +1097,11 @@ figtools.figure_tabs(
         "articles (22-01 et 22-02 deviennent 14-01 et 14-02) : les lignes ont le même objet. "
         "En 2020 et en 2022, le tableau imprime chaque valeur un rang au-dessus de son libellé ; "
         "l'attribution retenue est la seule où les deux valeurs somment au total imprimé. "
-        "Ce sont des prévisions, non des recettes encaissées ; aucun PIB n'intervient."
+        "Les deuxième et troisième vues rapportent les mêmes prévisions au PIB et aux dépenses "
+        "totales de l'État de l'année, pour 2001 à 2025 (2026 n'a pas encore de dénominateur) : "
+        "le PIB est celui du ministère des Finances, dont la base passe de 1997 à 2015 en 2010, "
+        "rupture que la vue en part du PIB marque par un trait vertical pointillé. "
+        "Ce sont des prévisions, non des recettes encaissées."
     ),
     generated="{{< meta date >}}",
 )

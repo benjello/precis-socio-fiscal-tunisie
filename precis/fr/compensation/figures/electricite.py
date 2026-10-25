@@ -6,8 +6,14 @@
     el.figure("subvention", caption=…, note_lecture=…)
     el.figure("gaz_sources", caption=…, note_lecture=…)
     el.figure("gaz_pib", caption=…, note_lecture=…)
+    el.figure("tarifs_mt", caption=…, note_lecture=…)
 
-D'OÙ VIENNENT LES DONNÉES. Cinq séries de `tunisia-data` (la cinquième, la facture des combustibles,
+LA FIGURE `tarifs_mt` lit une sixième série, `steg-tarifs-moyenne-tension`, versionnée dans
+`precis/_seriescache/` : la transcription valeur par valeur des trois tableaux du chapitre sur la
+moyenne tension (`scripts/serie_tarifs_mt.py`, qui la compare aux tableaux, dans les deux sens). Elle
+n'est pas dans l'entrepôt : sa provenance est déclarée ici.
+
+D'OÙ VIENNENT LES AUTRES DONNÉES. Cinq séries de `tunisia-data` (la cinquième, la facture des combustibles,
 ne sert qu'à la figure en points de PIB), lues par `figtools.series()` — donc
 depuis le snapshot `precis/_seriescache/` quand l'entrepôt est absent :
 
@@ -56,6 +62,7 @@ from matplotlib.ticker import FuncFormatter  # noqa: E402
 import pandas as pd  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
+import dinars_constants  # noqa: E402
 import figtools  # noqa: E402
 
 PRIX = "steg-prix-achat-gaz"
@@ -64,6 +71,7 @@ SUBV = "steg-subvention-exploitation"
 GAZ = "steg-prelevements-gaz"
 FACTURE = "steg-facture-combustibles"
 PIB = "pib-courant-par-base"
+TARIFS_MT = "steg-tarifs-moyenne-tension"
 PARTS = "compensation-parts"  # dénominateurs : PIB et dépenses de l'État hors service de la dette
 
 BLEU, BLEU_CLAIR, ORANGE, VERT, VIOLET, ROUGE, GRIS, BRUN, NOIR, ROSE, TEAL = (
@@ -186,6 +194,54 @@ PROVENANCE = {
                  "gaz » de 2019-2024 vient d'un autre tableau et n'est pas le total des "
                  "prélèvements. Quantités en ktep, pouvoir calorifique supérieur.")),
 }
+PROVENANCE[TARIFS_MT] = dict(
+    titre=("Le tarif de l'électricité en moyenne tension, 1994-2022 : prix du kilowattheure par "
+           "poste horaire, tarif uniforme et tarif de secours, prime de puissance, à chaque date "
+           "d'effet"),
+    perimetre=("grilles de la moyenne tension de la STEG à chaque date d'effet : relais des "
+               "agences publiques de promotion (FIPA, API) et tableau 6.2 de l'ESMAP pour juin 1994, "
+               "août 2000, août 2001 et avril 2003 ; grilles de la STEG, pages archivées de son site "
+               "et documents de l'entreprise, du 1er mai 2004 au 1er octobre 2022. Prix hors taxes, "
+               "en millimes courants par kWh ; prime en millimes par kW et par mois (par kVA pour le "
+               "tarif uniforme de 1994 à 2003)"),
+    caveats=("Les familles de postes ne se raccordent pas : trois postes (juin 1994 à août 2000), "
+             "quatre postes (août 2000 à mai 2014), quatre postes redéfinis (depuis le 1er mai "
+             "2014). Le jour du passage de trois à quatre postes n'est pas établi, ni le jour "
+             "d'effet de la grille de juin 1994. Le soir et la nuit du tarif à postes horaires et "
+             "du tarif de secours du 1er août 2001 ne sont pas donnés par la source. Le tarif de "
+             "secours n'est pas relevé après 2003. Aucune grille postérieure au 1er octobre 2022 "
+             "n'est établie."),
+    source_ligne=("grilles de la moyenne tension de la STEG, 2004-2022 ; relais des agences "
+                  "publiques et de l'ESMAP, 1994-2003 (toutes les références : onglet « Sources »)"),
+)
+def _regle_2025() -> str:
+    """La règle de la monnaie de 2025, écrite sous les figures et dans l'onglet « Sources »."""
+    ipc = dinars_constants.ipc()
+    return (
+        "Monnaie de 2025 : valeurs calculées, non observées. La référence est l'indice annuel moyen "
+        "de 2025, le dernier indice annuel publié (base 100 en 2015, 186,3, que relaie la Banque "
+        "centrale) ; elle sera actualisée à la publication de l'indice annuel suivant. Le coefficient "
+        "d'une année est l'indice annuel moyen de 2025 divisé par celui de cette année ; une date "
+        "d'effet en cours d'année est ramenée par l'indice annuel moyen de son année d'effet, et une "
+        "grille qui dure plusieurs années est ramenée année par année (la valeur de la grille baisse "
+        "en monnaie de 2025 tant qu'elle ne change pas). Les indices annuels sont ceux de l'INS en "
+        "base 1970 jusqu'en 2023, prolongés pour 2024 et 2025 par la variation de l'indice en base "
+        f"2015 que relaie la Banque centrale (indice de 2025 : {_nb(ipc[2025])} en base 1970, par ce "
+        "raccord) ; sur 2015-2023, où les deux bases sont publiées, leur rapport varie de 0,3 %. Les "
+        "familles et les ruptures de la figure ne sont pas raccordées par ce changement d'unité.")
+
+
+regle_2025 = _regle_2025
+
+
+def _coeff(annee: int) -> float:
+    """Coefficient qui ramène un montant de l'année `annee` à la monnaie de 2025 (indice annuel)."""
+    indice = dinars_constants.ipc()
+    return indice[dinars_constants.ANNEE_BASE] / indice[int(annee)]
+
+
+figtools.register_provenance(TARIFS_MT, titre=PROVENANCE[TARIFS_MT]["titre"], sources=[],
+                             unite="millimes courants par kWh, hors taxes")
 _ORIGINE: dict[str, dict] = {}
 
 
@@ -200,6 +256,8 @@ def _declarer(series_id: str, cles=None, surcharge: dict | None = None) -> None:
     champs = {k: v for k, v in origine.items() if k != "id" and not k.endswith("_ar")}
     champs["sources"] = [k for k in cles if k in connues]
     champs.update(PROVENANCE.get(series_id, {}))
+    if series_id in (TARIFS_MT, PRIX) and "caveats" in champs:
+        champs["caveats"] = f"{champs['caveats']} {_regle_2025()}"
     champs.update(surcharge or {})
     figtools.register_provenance(series_id, **champs)
 
@@ -216,17 +274,41 @@ FAM_PRIX = (
 )
 
 
-def fig_prix_achat_gaz():
+def _prix_2025(d):
+    """Ajoute le coefficient et la valeur en monnaie de 2025 (calculée) à chaque ligne annuelle."""
+    d = d.copy()
+    d["coefficient_2025"] = [_coeff(a) for a in d["annee"]]
+    d["valeur_2025"] = d["valeur"] * d["coefficient_2025"]
+    return d
+
+
+def fig_prix_achat_gaz(constants: bool = False):
     figtools.apply_lang_font()
     d = figtools.series(PRIX)
+    if constants:
+        d = _prix_2025(d)
+        d["valeur_courante"] = d["valeur"]
+        d["valeur"] = d["valeur_2025"]
     fig, ax = plt.subplots(figsize=(9.5, 4.9))
     for fam, etiquette, couleur, marque, ls in FAM_PRIX:
         df = d[d["famille"] == fam]
-        _trace_famille(
-            ax, df, "valeur", couleur, marque, ls=ls,
-            texte=lambda r, e=etiquette: f"{r.annee} · {e} : {_nb(r.valeur)} dinars par tep "
-                                         f"({r.source}, {r.page})")
-        if fam != "prix_de_cession":
+        if constants:
+            texte = lambda r, e=etiquette: (
+                f"{r.annee} · {e} : {_nb(r.valeur)} dinars de 2025 par tep, valeur calculée "
+                f"({_nb(r.valeur_courante)} dinars courants × {_nb(r.coefficient_2025, 3)} ; "
+                f"{r.source}, {r.page})")
+        else:
+            texte = lambda r, e=etiquette: (
+                f"{r.annee} · {e} : {_nb(r.valeur)} dinars par tep ({r.source}, {r.page})")
+        _trace_famille(ax, df, "valeur", couleur, marque, ls=ls, texte=texte)
+        if constants:
+            v = df.sort_values("annee")
+            for k, dec, ha in ((0, (0, 7), "center") if fam != "etats_financiers_steg"
+                               else (0, (8, 4), "left"), (-1, (0, 7), "center")):
+                r = v.iloc[k]
+                ax.annotate(_v(round(r["valeur"])), xy=(r["annee"], r["valeur"]), xytext=dec,
+                            textcoords="offset points", ha=ha, fontsize=7, color=couleur)
+        elif fam != "prix_de_cession":
             etiq = {"rapport_de_controle_2014": ((0, (0, 7)), (-1, (-3, 8, "right"))),
                     "etats_financiers_steg": ((0, (7, -14, "left")), (-1, (-6, -13, "right")))}
             for i, (dx, dy, *ha) in ((i, (o[0], o[1], *o[2:])) for i, o in etiq[fam]):
@@ -235,16 +317,20 @@ def fig_prix_achat_gaz():
                             textcoords="offset points", ha=ha[0] if ha else "center",
                             fontsize=7, color=couleur)
     haut = d[d["famille"] == "etats_financiers_steg"].sort_values("valeur").iloc[-1]
-    ax.annotate(_v(haut["valeur"]), xy=(haut["annee"], haut["valeur"]), xytext=(0, 7),
-                textcoords="offset points", ha="center", fontsize=7, color=VERT)
-    ax.annotate("90,8", xy=(2003, 90.8), xytext=(0, 7), textcoords="offset points", ha="center",
-                fontsize=7.5, color=BLEU)
+    if not constants:
+        ax.annotate(_v(haut["valeur"]), xy=(haut["annee"], haut["valeur"]), xytext=(0, 7),
+                    textcoords="offset points", ha="center", fontsize=7, color=VERT)
+        ax.annotate("90,8", xy=(2003, 90.8), xytext=(0, 7), textcoords="offset points",
+                    ha="center", fontsize=7.5, color=BLEU)
     for r in d[d["rupture"].fillna("") != ""].itertuples(index=False):
         _repere(ax, int(r.rupture_annee), f"{int(r.rupture_annee)} · {r.rupture}")
-    _cadre(ax, "Dinars courants par tonne équivalent pétrole")
+    _cadre(ax, "Dinars de 2025 par tep (calculés)" if constants
+           else "Dinars courants par tonne équivalent pétrole")
     ax.set_xlim(1992.3, 2023.7)
     ax.set_xticks(range(1993, 2024, 2))
-    ax.set_ylim(0, 1650)
+    ax.set_ylim(0, 1650 if not constants
+                else 50 * math.ceil(d[d["famille"] != "observatoire_import_gaz_algerien"]
+                                    ["valeur"].max() * 1.1 / 50))
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0)))
     poignees = [Line2D([0], [0], color=c, marker=m, ls=ls, lw=1.5, ms=5,
                        label=figtools.fig_text(e)) for _, e, c, m, ls in FAM_PRIX]
@@ -258,16 +344,24 @@ def fig_prix_achat_gaz():
 def _figure_prix_achat_gaz():
     d = figtools.series(PRIX)
     d = d[d["famille"] != "observatoire_import_gaz_algerien"].sort_values(["famille", "annee"])
-    noms = {f: e.split(",")[0] for f, e, *_ in FAM_PRIX}
+    d = _prix_2025(d)
     noms = {"prix_de_cession": "prix de cession administré",
             "rapport_de_controle_2014": "prix moyen d'achat, rapport de contrôle de 2014",
             "etats_financiers_steg": "prix moyen d'achat, états financiers de la STEG"}
-    table = d[["famille", "annee", "valeur", "etat", "source", "page", "lecture", "rupture"]].copy()
+    table = d[["famille", "annee", "valeur", "coefficient_2025", "valeur_2025", "etat", "source",
+               "page", "lecture", "rupture"]].copy()
     table["famille"] = table["famille"].map(noms)
-    table.columns = ["Famille", "Année", "Dinars courants par tep", "État", "Source", "Page",
+    table["coefficient_2025"] = table["coefficient_2025"].round(4)
+    table["valeur_2025"] = table["valeur_2025"].round(1)
+    table.columns = ["Famille", "Année", "Dinars courants par tep", "Coefficient de 2025 (calculé)",
+                     "valeur_2025 : dinars de 2025 par tep (calculée)", "État", "Source", "Page",
                      "Lecture", "Rupture"]
-    return ([(None, fig_prix_achat_gaz())], table.reset_index(drop=True),
-            {PRIX: _cles(d)}, "fig_compensation_eg_prix_achat_gaz")
+    vues = [("Dinars courants", fig_prix_achat_gaz()),
+            ("Dinars de 2025 (calculés)", fig_prix_achat_gaz(constants=True))]
+    return (vues, table.reset_index(drop=True),
+            {PRIX: _cles(d), dinars_constants.SERIE_IPC: None,
+             dinars_constants.SERIE_IPC_RECENT: None},
+            "fig_compensation_eg_prix_achat_gaz")
 
 
 # --- 2. Le coût de revient et le prix de vente moyen du kilowattheure ------------------------
@@ -723,6 +817,177 @@ def _figure_gaz_pib():
     return ([(None, fig_gaz_pib())], table, cles, "fig_compensation_eg_gaz_pib")
 
 
+
+# --- 6. Le tarif de la moyenne tension, 1994-2022 -------------------------------------------------
+
+# Un poste a une couleur ; la famille de postes (trois, quatre, quatre redéfinis) dit seulement où
+# la courbe commence et finit. Aucune courbe ne traverse une rupture.
+POSTES_MT = (
+    ("jour", "jour", BLEU), ("pointe", "pointe", ROUGE), ("pointe_matin_ete", "pointe", ROUGE),
+    ("soir", "soir", ORANGE), ("pointe_soir", "soir", ORANGE), ("nuit", "nuit", VERT),
+)
+NOM_POSTE_MT = {
+    "jour": "jour", "pointe": "pointe", "soir": "soir", "nuit": "nuit",
+    "pointe_matin_ete": "pointe du matin en été", "pointe_soir": "pointe du soir",
+    "prix_unique": "prix unique", "prime_puissance": "prime de puissance"}
+NOM_FAMILLE_MT = {"trois_postes": "trois postes", "quatre_postes": "quatre postes",
+                  "quatre_postes_2014": "quatre postes redéfinis", "uniforme": "tarif uniforme"}
+NOM_TARIF_MT = {"postes_horaires": "postes horaires", "uniforme": "uniforme",
+                "secours": "secours"}
+FIN_MT = 2023.0  # le 31 décembre 2022 : la dernière grille établie est celle du 1er octobre 2022
+
+
+def _repere_date(ax, date, texte):
+    """Trait vertical pointillé à la date d'effet et triangle porteur de l'infobulle."""
+    x = figtools.abscisse_date(date)
+    ax.axvline(x, color="#57606a", ls=(0, (2, 2)), lw=1, zorder=1)
+    p, = ax.plot([x], [1], marker=7, ms=6, color=GRIS_FONCE, clip_on=False, zorder=5,
+                 transform=ax.get_xaxis_transform())
+    figtools.infobulle(p, texte)
+
+
+def _courbe_escalier_mt(ax, d, nom, couleur, ls="-", lw=2.0, etiquette=True, constants=False):
+    """Une courbe en escalier : un niveau par grille, du jour d'effet à la grille suivante.
+
+    `d` : lignes d'une famille et d'un poste, triées par date. La grille suivante est celle de la
+    série entière (`dates`) : un niveau sans valeur à la grille suivante s'arrête à elle et laisse
+    un blanc, le trait ne se prolonge pas sur une valeur inconnue.
+
+    `constants` : montants en monnaie de 2025 (calculés). Le point est la valeur de la grille à son
+    année d'effet (indice annuel moyen de cette année) ; le niveau, lui, est ramené année par année,
+    car une grille qui ne change pas perd de sa valeur réelle d'une année à l'autre.
+    """
+    dates = sorted(set(d.attrs["dates"]))
+    lignes = list(d.itertuples(index=False))
+    pts = []
+    for i, r in enumerate(lignes):
+        x = figtools.abscisse_date(r.date_effet)
+        suivante = [t for t in dates if t > r.date_effet]
+        fin = figtools.abscisse_date(suivante[0]) if suivante else FIN_MT
+        if r.valeur != r.valeur:  # case vide : rien à tracer
+            continue
+        if i + 1 == len(lignes) and suivante:
+            fin -= 0.4  # fin de famille : le trait s'arrête avant la rupture, il ne la traverse pas
+        incertain = "" if r.jour_etabli == "oui" else " (jour d'effet non établi)"
+        if constants:
+            for a in range(int(x), math.ceil(fin)):
+                ax.plot([max(x, a), min(fin, a + 1)], [r.valeur * _coeff(a)] * 2, color=couleur,
+                        ls=ls, lw=lw, solid_capstyle="butt", zorder=3)
+            coef = _coeff(int(x))
+            y = r.valeur * coef
+            texte = (f"{r.date_effet}{incertain} · {nom} : {_nb(y, 0)} millimes de 2025 par kWh, "
+                     f"valeur calculée ({_nb(r.valeur, 0)} millimes courants × {_nb(coef, 3)} ; "
+                     f"{r.portee} ; {r.source})")
+        else:
+            ax.plot([x, fin], [r.valeur, r.valeur], color=couleur, ls=ls, lw=lw,
+                    solid_capstyle="butt", zorder=3)
+            if i + 1 < len(lignes) and lignes[i + 1].valeur == lignes[i + 1].valeur \
+                    and abs(figtools.abscisse_date(lignes[i + 1].date_effet) - fin) < 1e-9:
+                ax.plot([fin, fin], [r.valeur, lignes[i + 1].valeur], color=couleur, lw=1.0,
+                        zorder=2)
+            y = r.valeur
+            texte = (f"{r.date_effet}{incertain} · {nom} : {_nb(r.valeur, 0)} millimes par kWh "
+                     f"({r.portee} ; {r.source})")
+        p, = ax.plot([x], [y], "o", color=couleur, ms=4.5, zorder=4)
+        figtools.infobulle(p, texte)
+        pts.append((x, y))
+    if etiquette and pts:
+        for k in (0, -1):
+            x, y = pts[k]
+            ax.annotate(_nb(y, 0), xy=(x, y), xytext=(3, 4), textcoords="offset points",
+                        fontsize=7, color=couleur)
+
+
+def _donnees_mt():
+    d = figtools.series(TARIFS_MT)
+    d["date_effet"] = d["date_effet"].astype(str)
+    return d
+
+
+def _tracees_mt(d):
+    """Les lignes tracées : tarif à postes horaires hors prime, et prix du tarif uniforme."""
+    return d[((d["tarif"] == "postes_horaires") & (d["poste"] != "prime_puissance"))
+             | ((d["tarif"] == "uniforme") & (d["poste"] == "prix_unique"))]
+
+
+def fig_tarifs_mt(constants: bool = False):
+    figtools.apply_lang_font()
+    d = _donnees_mt()
+    fig, ax = plt.subplots(figsize=(9.5, 5.4))
+    dates = d[d["tarif"] == "postes_horaires"]["date_effet"].tolist()
+    uni = d[(d["tarif"] == "uniforme") & (d["poste"] == "prix_unique")].sort_values("date_effet")
+    uni.attrs["dates"] = dates
+    _courbe_escalier_mt(ax, uni, "tarif uniforme", GRIS_FONCE, ls=(0, (4, 2)), lw=1.6,
+                        etiquette=False, constants=constants)
+    for fam in ("trois_postes", "quatre_postes", "quatre_postes_2014"):
+        for poste, _, couleur in POSTES_MT:
+            s = d[(d["tarif"] == "postes_horaires") & (d["famille"] == fam)
+                  & (d["poste"] == poste)].sort_values("date_effet")
+            if s.empty:
+                continue
+            s.attrs["dates"] = dates
+            _courbe_escalier_mt(ax, s, f"{NOM_POSTE_MT[poste]} ({NOM_FAMILLE_MT[fam]})", couleur,
+                                constants=constants)
+    for r in d[d["rupture"].fillna("") != ""].drop_duplicates("date_effet").itertuples(index=False):
+        _repere_date(ax, r.date_effet, f"{r.date_effet[:4]} · {r.rupture}")
+    haut = 650 if constants else 450
+    for nom, a, b in (("trois postes", "1994-06-01", "2000-08-15"),
+                      ("quatre postes", "2000-08-15", "2014-05-01"),
+                      ("quatre postes redéfinis", "2014-05-01", None)):
+        x0 = figtools.abscisse_date(a)
+        x1 = figtools.abscisse_date(b) if b else FIN_MT
+        ax.annotate(figtools.fig_text(nom), xy=((x0 + x1) / 2, 0.985), xycoords=("data", "axes fraction"),
+                    ha="center", va="top", fontsize=7.5, color=GRIS_FONCE)
+    _cadre(ax, "Millimes de 2025 par kWh, hors taxes (calculés)" if constants
+           else "Millimes courants par kWh, hors taxes")
+    ax.set_xlim(1993.6, FIN_MT + 0.4)
+    ax.set_xticks(range(1994, 2024, 2))
+    ax.set_ylim(0, haut)
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _nb(v, 0)))
+    poignees = [Line2D([0], [0], color=BLEU, lw=2, marker="o", ms=4.5, label=figtools.fig_text("Jour")),
+                Line2D([0], [0], color=ROUGE, lw=2, marker="o", ms=4.5,
+                       label=figtools.fig_text("Pointe (depuis 2014 : pointe du matin en été)")),
+                Line2D([0], [0], color=ORANGE, lw=2, marker="o", ms=4.5,
+                       label=figtools.fig_text("Soir (depuis 2014 : pointe du soir)")),
+                Line2D([0], [0], color=VERT, lw=2, marker="o", ms=4.5,
+                       label=figtools.fig_text("Nuit")),
+                Line2D([0], [0], color=GRIS_FONCE, lw=1.6, ls=(0, (4, 2)),
+                       label=figtools.fig_text("Tarif uniforme")),
+                Line2D([0], [0], marker=7, color=GRIS_FONCE, ls="none", ms=6,
+                       label=figtools.fig_text("rupture de série (infobulle sur le triangle)"))]
+    _legende(ax, poignees, ncol=2, y=-0.14)
+    fig.tight_layout()
+    return fig
+
+
+def _figure_tarifs_mt():
+    d = _donnees_mt()
+    tracee = _tracees_mt(d)
+    d = d.assign(tracee=["oui" if i in tracee.index and v == v else "non"
+                         for i, v in zip(d.index, d["valeur"])])
+    d["coefficient_2025"] = [_coeff(int(a[:4])) for a in d["date_effet"]]
+    d["valeur_2025"] = d["valeur"] * d["coefficient_2025"]
+    table = d[["tarif", "famille", "poste", "date_effet", "jour_etabli", "valeur", "unite",
+               "coefficient_2025", "valeur_2025", "etat", "tracee", "portee", "source", "page",
+               "rupture", "remarque"]].copy()
+    table["tarif"] = table["tarif"].map(NOM_TARIF_MT)
+    table["famille"] = table["famille"].map(NOM_FAMILLE_MT)
+    table["poste"] = table["poste"].map(NOM_POSTE_MT)
+    table["etat"] = table["etat"].map({"lu": "lu", "non_etabli": "non établi"})
+    table["coefficient_2025"] = table["coefficient_2025"].round(4)
+    table["valeur_2025"] = table["valeur_2025"].round(1)
+    table.columns = ["Tarif", "Famille de postes", "Poste", "Date d'effet", "Jour d'effet établi",
+                     "Valeur courante", "Unité", "Coefficient de 2025 (calculé)",
+                     "valeur_2025 : valeur en monnaie de 2025 (calculée)", "État", "Tracée",
+                     "Portée", "Source", "Page", "Rupture", "Remarque"]
+    vues = [("Millimes courants", fig_tarifs_mt()),
+            ("Millimes de 2025 (calculés)", fig_tarifs_mt(constants=True))]
+    return (vues, table.reset_index(drop=True),
+            {TARIFS_MT: _cles(d.assign(cle=d["source"])),
+             dinars_constants.SERIE_IPC: None, dinars_constants.SERIE_IPC_RECENT: None},
+            "fig_compensation_eg_tarifs_mt")
+
+
 # --- registre ---------------------------------------------------------------------------------
 
 FIGURES = {
@@ -731,8 +996,9 @@ FIGURES = {
     "subvention": _figure_subvention,
     "gaz_sources": _figure_gaz_sources,
     "gaz_pib": _figure_gaz_pib,
+    "tarifs_mt": _figure_tarifs_mt,
 }
-NON_MONETAIRES = {"gaz_sources"}
+NON_MONETAIRES = {"gaz_sources", "tarifs_mt", "prix_achat_gaz"}
 
 
 def figure(nom: str, caption: str, note_lecture: str | None = None) -> None:

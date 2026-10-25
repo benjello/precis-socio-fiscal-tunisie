@@ -282,9 +282,9 @@ cm.tableau_recettes_affectees(
              "(voir l'[annexe sur le PIB](../annexe-pib.html#pib-base-2015))."))
 ```
 
-<!-- TODO (documentaliste) : produit annuel de la redevance de compensation depuis 2013 ; arrêté du 10 mai 2024 (JORT n° 61, p. 1428) qui atteste que la redevance existe encore en 2024, à verser par le bibliographe avant citation. Opérateurs par lesquels passe la compensation (Office des céréales, Office du commerce, sociétés de transport) et entrées et sorties de produits dans le temps : établis par aucun texte — docs/notes/compensation.md, § 6, points 6 et 7. -->
+<!-- TODO (documentaliste) : produit annuel de la redevance de compensation depuis 2013 . Opérateurs par lesquels passe la compensation (Office des céréales, Office du commerce, sociétés de transport) et entrées et sorties de produits dans le temps : établis par aucun texte — docs/notes/compensation.md, § 6, points 6 et 7. -->
 
-<!-- TODO (bibliographe) : verser la loi de finances pour 1981 (prêt du Trésor de 95 MD), la loi n° 91-98 (LF 1992, art. 77 : nouveau prêt du Trésor à la CGC) et les arrêtés des 11 octobre 1990 et 7 juillet 1992 (relèvement des prévisions du fonds spécial), connus par leur seul intitulé ou par la BCT ; puis les citer ici. -->
+Le Trésor prête aussi à la Caisse. La loi de finances pour 1981 autorise un prêt de 95 MD, destiné à rembourser 90 MD à l'Office des céréales et 5 MD à l'Office national de l'huile, sans intérêts, par tranches annuelles sur vingt ans à compter du 31 décembre 1982 [@lf-1981, art. 58, p. 3282] ; elle supprime la taxe spéciale de compensation due à l'importation de certains produits, que le décret n° 78-315 du 23 mars 1978 avait instituée [@lf-1981, art. 33, p. 3279]. La loi de finances pour 1992 autorise en 1992 un prêt de 73 MD, qui régularise les avances du Trésor à l'Office des céréales jusqu'en 1985, sans intérêt et remboursable en annuités égales sur vingt ans à partir de 1993 [@loi91-98-lf1992, art. 77, p. 2090].
 
 ## 1987 : les recettes de la Caisse entrent au budget {#sec-compensation-1987}
 
@@ -315,7 +315,7 @@ La subvention prévue passe de 188 MD en 1987-1989 à 300 MD en 1990, puis décr
 
 <!-- RECHERCHE r-cgc-budgetisation-1992-2003 : texte transférant la dépense de la CGC des fonds spéciaux du Trésor au budget général, entre 1992 et 2003 (voir docs/recherches.yml) -->
 
-## Les prélèvements à l'importation affectés à la Caisse, 1990-1993 {#sec-compensation-prelevements-importation}
+## Les prélèvements à l'importation affectés à la Caisse, 1990-2007 {#sec-compensation-prelevements-importation}
 
 Après 1987, la Caisse garde des recettes propres : de 1991 à 1999, le compte en porte de 2 à 39 MD (@tbl-compensation-compte-caisse). Le rapport de la Banque centrale pour 1992 les rattache aux « taxes perçues à l'importation de la viande bovine et de la poudre de lait » [@bct-ra-1992, p. 83]. Ce sont des prélèvements que des décrets instituent « au profit de la caisse générale de compensation », perçus au stade de l'importation, sur le fondement de l'article 48 de la loi de finances pour 1971 [@lf-1971, art. 48]. Les décrets de 1990 et de 1991 visent aussi l'article 3 de la loi n° 70-26 sur les prix [@loi70-26] ; ceux de 1993, la loi n° 91-64 sur la concurrence et les prix [@loi91-64]. Chaque décret fixe le montant par kilogramme, révisable chaque année ou en cas de besoin d'après l'évolution des prix internationaux non subventionnés ; le prélèvement n'entre pas dans la liquidation des droits et taxes.
 
@@ -325,6 +325,7 @@ Après 1987, la Caisse garde des recettes propres : de 1991 à 1999, le compte e
 | 12 juillet 1990 | poudre de lait à 26 % et à 0 % de matière grasse | 102 et 245 millimes par kg | mise en place | [@decret90-1194, art. 1 et 2, p. 921] |
 | 23 septembre 1991 | poudre de lait à 26 % et à 0 % | 368 et 735 millimes par kg | ajustement | [@decret91-1391, art. 2, p. 1670] |
 | 20 juillet 1992 | viande bovine, et bovins vivants de plus de 300 kg destinés à la boucherie | 1 200 millimes par kg la viande, 670 millimes par kg les bovins | extension | [@decret92-1340, art. 1 et 2, p. 983] |
+| 24 mai 1993 | bovins vivants de plus de 300 kg destinés à la boucherie, et viande bovine fraîche, réfrigérée ou congelée (n° 02.01 et 02.02) | 670 millimes par kg les bovins, 1 200 millimes par kg la viande | rédaction nouvelle des articles 1 et 2, mêmes montants qu'en 1992 | [@decret93-1187, art. 1, p. 797] |
 | 26 juillet 1993 | viande bovine congelée du n° 02-02, importée durant « l'année 1992 » | prélèvement suspendu | étape | [@decret93-1605, art. 1, p. 1219] |
 | 20 septembre 1993 | viande ovine (n° 02.04) | 1,200 dinar par kg | extension | [@decret93-1924, art. 1 et 2, p. 1671] |
 | 25 octobre 1993 | beurre, en vrac ou conditionné ; huile acide | 350 millimes par kg ; 30 dinars par tonne | extension | [@decret93-2115, art. 1 et 2, p. 1856-1857] |
@@ -334,7 +335,50 @@ Après 1987, la Caisse garde des recettes propres : de 1991 à 1999, le compte e
 
 Le prélèvement sur la poudre de lait à 26 % de matière grasse passe de 102 millimes par kilogramme en 1990 à 368 en 1991 puis 680 en 1993 ; celui sur la poudre à 0 % de 245 à 735 puis 800. Le prélèvement sur la viande bovine passe de 880 à 1 200 millimes par kilogramme en 1992, et la viande ovine, le beurre et l'huile acide s'y ajoutent en 1993.
 
-<!-- TODO (documentaliste) : lire le décret n° 93-1187 du 24 mai 1993 (modifie le décret n° 90-1193) et les modifications du décret n° 91-1391 par les décrets n° 2002-2227, 2009-2293 et 2015-50, connus par leur intitulé ; produit annuel des prélèvements : voir docs/recherches.yml, fiche r-prelevements-importation-cgc. -->
+Après 1993, les décrets lus modifient, pour la poudre de lait, le seul montant, et ne disent pas au profit de qui le prélèvement est perçu :
+
+| Décret | Produit | Prélèvement | Portée | Texte |
+|---|---|---|---|---|
+| 7 octobre 2002 | poudre de lait à 26 % de matière grasse | 680 dinars par tonne | ajustement | [@decret2002-2227, art. 1, p. 2413] |
+| 7 octobre 2002 | poudre de lait à 0 %, destinée aux nourrissons, aux malades ou à l'alimentation animale | 800 dinars par tonne | ajustement | [@decret2002-2227, art. 1, p. 2413] |
+| 7 octobre 2002 | poudre de lait à 0 %, autre | 4 450 dinars par tonne moins la somme du prix à l'importation (coût, assurance, fret) et des droits de douane | étape | [@decret2002-2227, art. 1, p. 2413] |
+| 31 juillet 2009 | poudre de lait à 0 %, autre | 680 dinars par tonne | ajustement | [@decret2009-2293, art. 1, p. 2284-2285] |
+| 2 janvier 2015 | poudre de lait à 26 % et à 0 %, autre | 1 500 dinars par tonne | ajustement | [@decret2015-50, art. 1, p. 247-248] |
+
+: Les prélèvements à l'importation sur la poudre de lait après 1993, d'après les décrets modificatifs du décret n° 91-1391 (dinars courants par tonne). Le tarif de 2015 laisse inchangé le prélèvement de 800 dinars par tonne sur la poudre à 0 % destinée aux nourrissons, aux malades ou à l'alimentation animale. Le texte de 2002 ne porte pas de clause d'effet. {#tbl-compensation-prelevements-lait}
+
+D'après ces décrets, le prélèvement sur la poudre de lait à 26 % de matière grasse est de 680 dinars la tonne, soit 680 millimes le kilogramme, de 1993 à 2014, puis de 1 500 dinars la tonne en 2015. Pour la poudre à 0 %, le prélèvement de 800 millimes le kilogramme de 1993 reste celui de la poudre destinée aux nourrissons, aux malades ou à l'alimentation animale ; pour les autres usages, il devient en 2002 la différence entre 4 450 dinars la tonne et la somme du prix à l'importation et des droits de douane, puis 680 dinars la tonne en 2009 et 1 500 en 2015.
+
+**1995 : un tarif nouveau pour la viande bovine, et les fruits.** Le décret n° 95-851 du 8 mai 1995 institue « au profit de la caisse générale de compensation » un prélèvement sur les bovins vivants et la viande bovine, et abroge les décrets n° 90-1193, 92-1340 et 93-1187 [@decret95-851, art. 1 et 3, p. 1132-1133]. Le décret n° 95-1212 du 10 juillet 1995 institue, aussi au profit de la Caisse, un prélèvement sur les fruits frais et secs soumis à la taxe sur la valeur ajoutée [@decret95-1212, art. 1, p. 1533].
+
+| Décret | Produit | Prélèvement | Portée | Texte |
+|---|---|---|---|---|
+| 8 mai 1995 | bovins vivants de plus de 300 kg destinés à la boucherie | 670 millimes par kg | refonte | [@decret95-851, art. 1, p. 1132] |
+| 8 mai 1995 | viande bovine fraîche, réfrigérée ou congelée, en carcasses, demi-carcasses et morceaux non désossés | 1 200 millimes par kg | refonte | [@decret95-851, art. 1, p. 1132] |
+| 8 mai 1995 | viande bovine désossée, fraîche, réfrigérée ou congelée | 1 700 millimes par kg | extension | [@decret95-851, art. 1, p. 1132] |
+| 10 juillet 1995 | fruits frais et secs (noix de coco, amandes, noisettes, noix, châtaignes, pistaches, bananes, figues sèches, ananas : première page du tarif) | de 0,200 à 1,000 dinar par kg ; bananes fraîches 0,500 dinar par kg | mise en place | [@decret95-1212, art. 1, p. 1533] |
+
+: Les prélèvements à l'importation institués au profit de la Caisse générale de compensation en 1995 (dinars et millimes courants). La suite du tarif des fruits, à la page suivante du *Journal officiel*, n'est pas reprise. {#tbl-compensation-prelevements-1995}
+
+**Suspensions et réductions, 1998-2007.** De 1998 à 2007, des décrets annuels ou semestriels suspendent le prélèvement sur des viandes, sur le beurre ou sur les veaux, dans la limite de contingents, ou le réduisent sur les bananes.
+
+| Décret | Période d'application | Prélèvement suspendu ou réduit | Produits et contingent | Texte |
+|---|---|---|---|---|
+| 29 décembre 1997 | du 1^er^ janvier au 31 décembre 1998 | suspendu (décret n° 95-851) | veaux : 4 000 veaux | [@decret97-2509, art. 1 et 2, p. 3] |
+| 6 octobre 2003 | jusqu'au 31 décembre 2003 | suspendu (décret n° 95-851) | viande bovine congelée : 500 tonnes | [@decret2003-2048, art. 1 et 4, p. 2923] |
+| 27 septembre 2004 | jusqu'au 31 décembre 2004 | suspendu (décrets n° 95-851, 93-1924 et 93-2115) | viande bovine réfrigérée : 6 500 tonnes ; congelée : 100 tonnes ; viande ovine réfrigérée : 50 000 carcasses ; beurre : 1 000 tonnes | [@decret2004-2314, art. 1, 2, 3, 14 et 15, p. 2827-2828] |
+| 7 février 2005 | du 1^er^ janvier au 31 décembre 2005 | réduit à 0,250 dinar par kg (décret n° 95-1212) | bananes fraîches | [@decret2005-213, art. 1 et 2, p. 372] |
+| 1^er^ novembre 2005 | jusqu'au 31 décembre 2005 | suspendu (décrets n° 93-1924, 95-851 et 93-2115) | viande ovine congelée : 20 000 carcasses ; réfrigérée : 30 000 carcasses ; viande bovine réfrigérée : 3 200 tonnes ; congelée : 400 tonnes ; beurre : 1 400 tonnes | [@decret2005-2931, art. 1 à 6 et 13, p. 2982-2983] |
+| 3 janvier 2006 | du 1^er^ janvier au 31 décembre 2006 | réduit à 0,250 dinar par kg (décret n° 95-1212) | bananes fraîches | [@decret2006-1, art. 1 et 2, p. 9] |
+| 3 janvier 2006 | du 1^er^ janvier au 31 décembre 2006 | suspendu (décret n° 95-851) | viande bovine réfrigérée : 1 700 tonnes | [@decret2006-4, art. 3 et 26, p. 11] |
+| 3 juillet 2006 | jusqu'au 31 décembre 2006 | suspendu (décrets n° 93-1924 et 95-851) | viande ovine congelée : 350 tonnes ; réfrigérée : 38 tonnes ; viande bovine réfrigérée : 3 500 tonnes ; congelée : 1 800 tonnes | [@decret2006-1835, art. 1 à 4 et 8, p. 1835] |
+| 3 janvier 2007 | du 1^er^ janvier au 31 décembre 2007 | réduit à 0,250 dinar par kg (décret n° 95-1212) | bananes fraîches | [@decret2007-8, art. 1 et 2, p. 35] |
+| 3 janvier 2007 | du 1^er^ janvier au 31 décembre 2007 | suspendu (décret n° 93-1924) | viande ovine réfrigérée : 20 000 carcasses ; congelée : 150 tonnes | [@decret2007-10, art. 5, 6 et 31] |
+| 14 mai 2007 | jusqu'au 31 décembre 2007 | suspendu (décrets n° 93-1924 et 95-851) | viande ovine congelée : 500 tonnes ; viande bovine réfrigérée : 2 500 tonnes ; congelée : 2 000 tonnes | [@decret2007-1199, art. 1 à 3 et 7, p. 1700] |
+
+: Les décrets qui suspendent ou réduisent un prélèvement à l'importation, 1998-2007. Ces décrets suspendent aussi, selon les articles, des droits de douane et la taxe sur la valeur ajoutée, non repris ici. Les décrets n° 2006-4 et 2007-10 comptent chacun plus de vingt articles, dont seuls ceux qui portent sur un prélèvement sont lus. Les décrets de ce genre des années 1999 à 2002 et d'après 2007 ne sont pas lus ici. {#tbl-compensation-prelevements-suspensions}
+
+<!-- TODO (documentaliste) : décrets de suspension du prélèvement de 1998 à 2002 et d'après 2007 ; suite du tarif du décret n° 95-1212 (p. 1534) ; décrets modifiant les décrets n° 95-851 et 95-1212 ; produit annuel des prélèvements : voir docs/recherches.yml, fiche r-prelevements-importation-cgc. -->
 
 <!-- RECHERCHE r-prelevements-importation-cgc : décrets instituant ou modifiant les prélèvements à l'importation au profit de la Caisse générale de compensation après 1993 (voir docs/recherches.yml) -->
 
@@ -347,7 +391,7 @@ Rapportée aux dépenses de l'État hors service de la dette, la dotation à la 
 - un reflux continu ensuite, à 4,7 % en 1995 et 1996, 3,8 % en 1999, **3,1 % en 2002** et 2,4 % en 2004, coupé par le relèvement de la dotation à 320 MD en 1997 et 1998 (6,1 % puis 5,7 %) après les déficits de 1993 à 1996 ;
 - une remontée avec les cours mondiaux, à 5,4 % en 2007 et **5,1 % en 2010**.
 
-Le montant versé n'est pas identifié ici pour dix années : 1988, 1989 et 1990, 2000 et 2001, 2003, 2006, 2008, 2009 et 2011. Pour 1988, 1989 et 1990, la loi de finances initiale prévoit une subvention du budget de 188, 188 et 300 MD (@tbl-compensation-lf-caisse). Pour 2008 et 2009, les rapports de la Banque centrale disent seulement que les charges sont financées en totalité par des subventions du budget, sans en donner le montant [@bct-ra-2008, p. 109 ; @bct-ra-2009, p. 112] ; ils ajoutent qu'une dotation de 70 MD du budget de 2007, bloquée à la Trésorerie générale au profit de l'Office des céréales, a été dépensée en 2008 pour les charges de novembre et décembre et n'est pas comptée dans les charges de l'année [@bct-ra-2009, p. 112]. Aucune dotation n'est ici déduite des charges.
+Le montant versé n'est pas identifié ici pour dix années : 1988, 1989 et 1990, 2000 et 2001, 2003, 2006, 2008, 2009 et 2011. Pour 1988, 1989 et 1990, la loi de finances initiale prévoit une subvention du budget de 188, 188 et 300 MD (@tbl-compensation-lf-caisse) ; en cours de gestion, l'arrêté du 11 octobre 1990 porte les prévisions de recettes et de dépenses du fonds de 302 à 320 MD, par un prélèvement de 18 MD sur le solde disponible de la Caisse au 31 décembre 1989 [@arrete-1990-10-11-cgc, p. 1525], et l'arrêté du 7 juillet 1992 celles de 1992 de 270 à 348 MD [@arrete-1992-07-07-cgc, p. 911]. Pour 2008 et 2009, les rapports de la Banque centrale disent seulement que les charges sont financées en totalité par des subventions du budget, sans en donner le montant [@bct-ra-2008, p. 109 ; @bct-ra-2009, p. 112] ; ils ajoutent qu'une dotation de 70 MD du budget de 2007, bloquée à la Trésorerie générale au profit de l'Office des céréales, a été dépensée en 2008 pour les charges de novembre et décembre et n'est pas comptée dans les charges de l'année [@bct-ra-2009, p. 112]. Aucune dotation n'est ici déduite des charges. Pour 2003, 2006, 2008, 2009 et 2011, le ministère des Finances publie la ligne « compensation » du budget du ministère du commerce, qui est le poste des produits de base de la dépense budgétaire (@tbl-compensation-2003-2011) : 217,8 MD en 2003, 287 en 2006, 1 048 en 2008, 800,0 en 2009 et 1 100,0 en 2011. Cette ligne n'est pas la dotation que relaie la Banque centrale : elle lui est égale en 2004 (200 MD) et en 2010 (730 MD), et la dépasse de 14 MD en 2005 (244 contre 230) et de 70 MD en 2007 (668 contre 598). Elle donne l'ordre de grandeur de la dotation de ces cinq années, non son montant. Les lois de finances complémentaires de 2008 et de 2009 portent les crédits d'interventions du ministère du commerce à 1 064,4 et à 833,5 MD (@tbl-compensation-lf-commerce), au voisinage de la ligne de 1 048 et de 800 MD.
 
 Après 1994, la loi de finances ne nomme plus la Caisse dans ses crédits : le budget de l'État ouvre des crédits d'interventions publiques par ministère. Le tableau ci-dessous donne ceux du ministère chargé du commerce, qui ne se confondent pas avec la dotation : en 2002, le crédit de 251,2 MD dépasse de 16 MD la dotation de 235 MD que la Banque centrale relaie.
 
@@ -356,9 +400,11 @@ Après 1994, la loi de finances ne nomme plus la Caisse dans ses crédits : le b
 | 2000 | 248,9 | | [@lf-2000, tableau B, p. 2756] |
 | 2001 | 235,2 | | [@lf-2001, tableau B, p. 3187] |
 | 2002 | 251,2 | 235,0 | [@loi2001-123-lf2002, tableau B, p. 4266] |
+| 2008 (loi de finances complémentaire) | 1 064,4 | | [@lfc-2008, tableau C, p. 4172] |
+| 2009 (loi de finances complémentaire) | 833,5 | | [@lfc-2009, tableau C, p. 1830] |
 | 2011 | 722,4, dont 700,0 d'interventions dans le domaine social | | [@lf-2011, tableau C, p. 3483 et p. 3718] |
 
-: Les crédits d'interventions publiques du chapitre du ministère chargé du commerce, lois de finances initiales (millions de dinars courants, crédits de paiement, titre premier). La loi ne désigne pas la Caisse dans ces lignes. Le chapitre est celui du ministère du commerce en 2000-2002, du commerce et de l'artisanat en 2011. {#tbl-compensation-lf-commerce}
+: Les crédits d'interventions publiques du chapitre du ministère chargé du commerce, lois de finances initiales, sauf mention (millions de dinars courants, crédits de paiement, titre premier). La loi ne désigne pas la Caisse dans ces lignes. Le chapitre est celui du ministère du commerce en 2000-2002, du commerce et de l'artisanat en 2011. {#tbl-compensation-lf-commerce}
 
 <!-- RECHERCHE r-cgc-dotation-annees-manquantes : dotation versée à la Caisse générale de compensation en 1988-1990, 2000, 2001, 2003, 2006, 2008, 2009 et 2011 (voir docs/recherches.yml) -->
 

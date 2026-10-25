@@ -1,0 +1,6 @@
+- libelle: Retenue sur l'indemnité du député
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_public/regimes_speciaux/deputes/retenue.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_public.regimes_speciaux.deputes.retenue/table/
+- libelle: Contribution de l'État
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_public/regimes_speciaux/deputes/contribution_etat.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/prelevements_sociaux.cotisations_sociales.secteur_public.regimes_speciaux.deputes.contribution_etat/table/

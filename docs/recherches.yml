@@ -2179,10 +2179,16 @@
     couverture: 'Sommaires et textes énergétiques des JORT n° 75 à 86 de 1993 (5 octobre au 12 novembre), édition française, lus à l''image : aucun tarif de l''électricité ou du gaz ; seul l''arrêté du 26 octobre 1993 sur les prix des produits pétroliers (n° 84, p. 1864-1865). Étude de l''ANER d''avril 2000 (92 pages) lue au texte : elle ne donne que des prix de vente moyens du kWh par niveau de tension pour 1996-1998, en graphique sans valeurs, et renvoie à des annexes de tarifs absentes du fichier. Rapports d''achèvement de la BAD sur Électricité VI : rapports de prix et de coût seulement. Lacunes : édition arabe ; annexes 2 et 3 de l''étude de l''ANER.'
     couvert_jusqu_au: 1993-11-12
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local, web]
+    couverture: 'Pages archivées des agences publiques relues dans les octets bruts des captures le 24 octobre 2026 : FIPA, captures 20010222023543, 20010527014743, 20020617012142, 20030805143433 et 20030805143656 ; FIPA, 19990506083603 ; APIA, 19980123081720 ; API, 20030430011557. Tableau 6.2 de l''ESMAP n° 307 relu au texte du PDF (p. 36). Étude de l''ANER d''avril 2000 relue (formule de la haute pression). Résultat : les grilles de la moyenne et de la haute tension de juin 1994, d''août 2000, d''août 2001 (soir et nuit de la moyenne tension absents du tableau) et d''avril 2003, et les prix du gaz de 1994 à 2003, sont versées au volume. Restent : le jour d''effet de juin 1994, la grille de la moyenne et de la haute tension et du gaz d''octobre 1993, la formule de la haute pression de 1992 à avril 2000, et les actes eux-mêmes.'
+    couvert_jusqu_au: 2004-05-01
+    resultat: partiel
   a_faire:
-  - lire l'étude de l'ANER de 2000 sur l'impact des prix de l'énergie
   - demander à la STEG l'historique des grilles de 1993 à 2003, avec leurs dates d'effet
   - annuaires statistiques de l'INS, prix de l'électricité
+  - grille de la moyenne et de la haute tension et du gaz d'octobre 1993
 
 - id: r-decision-1993-10-08-prix-cession-gaz
   objet: acte du ministre de l'économie nationale du 8 octobre 1993 (« قرار » selon le rapport de contrôle de 2014, p. 7 et 22, annexe 10), nature non établie, fixant à 90,800 D/tep le prix de cession à la STEG du gaz algérien et du gaz de la redevance
@@ -4723,8 +4729,19 @@
     couverture: 'Rapports annuels de la BCT 1987 à 2013 (texte intégral, mot « dotation » et « compensation » parcourus) : aucun montant pour ces années ; 2008 et 2009 disent seulement un financement total par subventions du budget ; note sur 70 MD de la dotation de 2007 dépensés en 2008 ; 2010 : 730 MD dont 146 MD reportés sur 2011 ; 2011 : 96,7 MD reportés sur 2012. Lois de finances initiales : subvention prévue 188, 188 et 300 MD pour 1988-1990 (tableaux L) ; crédits d''interventions du ministère du commerce 248,9 (2000), 235,2 (2001), 251,2 (2002) et 722,4 MD (2011), non désignés comme la dotation. Recherche en ligne (kapitalis, leconomistemaghrebin, businessnews) : rien avant 2012. Lacunes : lois de règlement ; rapports de la Cour des comptes ; budget économique ; lois de finances complémentaires ; tableaux des fonds spéciaux 1995-2010 ; rapports du FMI.'
     couvert_jusqu_au: 2013-12-31
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Lois de règlement des gestions 1988, 1989 et 1990 (lois n° 92-10, 93-49 et 94-63) et des gestions 2000, 2001, 2003, 2006, 2008 et 2009 (lois n° 2002-102, 2003-57, 2005-61, 2008-69, 2010-56 et 2013-6), fascicules français du corpus local : la loi de la gestion 1990 (JORT n° 48 de 1994, p. 1040-1046) lue en entier ne donne les fonds spéciaux du Trésor que par un total (tableau n° 6) ; les fascicules de 1992 et de 1993 n''ont pas de couche texte et n''ont pas été lus à l''image ; les couches texte de 2002 à 2013 ne portent pas la chaîne « compensation ». Rapports du ministère des Finances sur les finances publiques de 2005 à 2011 (copies dans tunisia-data, data/raw/minfinances/portail_ancien/rapports_finances_publiques/ ; texte arabe en formes de présentation, normalisé avant recherche) : la ligne « ministère du commerce (compensation) » du budget est lue, mais elle n''est pas désignée comme la dotation à la Caisse ; elle égale la dotation relayée par la BCT en 2004 et 2010 et s''en écarte en 2005 et 2007. Lacunes : lois de règlement 1988 et 1989 à l''image ; budget économique ; lois de finances complémentaires ; rapports de la Cour des comptes ; rapports du FMI.'
+    couvert_jusqu_au: 2013-12-31
+    resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Seconde passe du 24 octobre 2026. Lois de règlement des gestions 1988 (loi n° 92-10, JORT n° 7 de 1992) et 1989 (loi n° 93-49, JORT n° 35 de 1993), fascicules sans couche texte lus par reconnaissance de caractères : les fonds spéciaux du Trésor n''y figurent que par un total (460,2 MD pour 1988, 659,82 MD pour 1989), sans détail par fonds. Lois de finances de 1995 à 2011 (fascicules français du corpus local, couches texte chiffrées décodées) : aucune occurrence de « Caisse générale de compensation » dans un tableau de fonds spéciaux avant la loi de finances pour 2011 ; les lois de finances complémentaires n° 2008-76 et 2009-40 donnent les crédits du ministère du commerce (lignes versées au volume), celle de 2007 a ses tableaux en images non lues, celles de 2000, 2001, 2003 et 2006 ne sont pas indexées. Budgets économiques : hors du corpus local.'
+    couvert_jusqu_au: 2013-12-31
+    resultat: aucun
   a_faire:
-  - lois de règlement du budget de l'État, gestions 1988 à 2011
   - budget économique et rapports sur le budget de l'État du ministère du plan, 1989-2012
   - lois de finances complémentaires 2000, 2001, 2003, 2006, 2008, 2009, 2011
   - tableaux des fonds spéciaux des lois de finances 1995 à 2010 (subvention du budget à la Caisse)
@@ -4744,9 +4761,22 @@
     couverture: 'jort_cache, intitulés contenant prélèvement et importation : décrets n° 97-2509, 2002-2227, 2003-2048, 2004-2314, 2005-213, 2005-2931, 2006-1, 2006-4, 2006-1835, 2007-8, 2007-10, 2007-1199, 2009-2293 et 2015-50, dont seuls les n° 2002-2227, 2009-2293 et 2015-50 modifient le décret n° 91-1391 ; aucun n''est lu. Lacunes : décret n° 93-1187 du 24 mai 1993 absent des intitulés ; édition arabe ; montants annuels des prélèvements.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, numéro de décret (le décret n° 93-1187 est indexé sous « prelevement sur la viande bovine importee », JORT n° 42 de 1993, p. 797). Les quatre décrets sont lus : n° 93-1187 à l''image (fascicule sans couche texte) ; n° 2002-2227 à l''image de la page, la couche texte du fascicule étant chiffrée ; n° 2009-2293 et n° 2015-50 à la couche texte. Ils sont versés au volume. Non lus : les décrets de suspension ou de réduction du prélèvement n° 97-2509, 2003-2048, 2004-2314, 2005-213, 2005-2931, 2006-1, 2006-4, 2006-1835, 2007-8, 2007-10 et 2007-1199 ; édition arabe ; produit annuel des prélèvements.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: partiel
+  - date: 2026-10-24
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Seconde passe du 24 octobre 2026. Lus : les onze décrets de suspension ou de réduction n° 97-2509, 2003-2048, 2004-2314, 2005-213, 2005-2931, 2006-1, 2006-4 (articles sur le prélèvement seuls), 2006-1835, 2007-8, 2007-10 (articles sur le prélèvement seuls) et 2007-1199, à l''image ou à la couche texte ; les décrets n° 95-851 du 8 mai 1995 (tarif des bovins et de la viande bovine au profit de la Caisse, qui abroge les décrets n° 90-1193, 92-1340 et 93-1187) et n° 95-1212 du 10 juillet 1995 (fruits frais et secs, au profit de la Caisse, première page du tarif seule), cités par les précédents. Versés au volume. Lacunes : décrets de suspension de 1998 à 2002 et d''après 2007 (non cherchés par intitulé complet), suite du tarif du décret n° 95-1212, produit annuel des prélèvements, édition arabe.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: partiel
   a_faire:
-  - lire les décrets n° 2002-2227, 2009-2293 et 2015-50 (modifications du décret n° 91-1391)
-  - retrouver le décret n° 93-1187 du 24 mai 1993 (modification du décret n° 90-1193)
+  - décrets de suspension du prélèvement de 1998 à 2002 et d'après 2007 (intitulés « suspension … du prélèvement » dans jort_cache)
+  - suite du tarif du décret n° 95-1212 (JORT n° 57 de 1995, p. 1534)
+  - produit annuel des prélèvements (loi de règlement, rapports de la BCT)
 
 - id: r-foprolos-prelevements-lf
   objet: disposition d'une loi de finances, initiale ou complémentaire, de 1987 à 2026, qui prélève ou transfère des ressources du fonds de promotion du logement pour les salariés

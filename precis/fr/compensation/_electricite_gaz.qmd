@@ -274,6 +274,7 @@ Le gaz des ménages est le gaz naturel distribué en basse pression ; son tarif 
 | 16 juin 1987 | ajustement | 14 | [@arrete-1987-06-08-tarifs-electricite-gaz] |
 | 1^er^ janvier 1991 | ajustement | 13,7 | [@arrete-1990-12-19-tarifs-electricite-gaz] |
 | 1^er^ août 1992 | ajustement | 15,1 | [@decision-1992-08-11-tarifs-electricite-gaz] |
+| juin 1994 (jour non établi) | ajustement | 17,1 | [@fipa-1999-production ; @fipa-2001-02-electricite-eng ; @fipa-2003-08-gaz] |
 | 1^er^ septembre 2008 | étape (de la réforme de 1984) | trois tranches : 22,09 ; 25,10 ; 26,30 | [@steg-grille-2008-09-01] |
 | 1^er^ juin 2010 | ajustement | 22,40 ; 25,60 ; 27,00 | [@steg-grille-2010-06-01] |
 | 1^er^ mai 2014 | étape (de la réforme de 2014) | quatre tranches : 23,5 ; 29,5 ; 36,0 ; 42,2 | [@steg-grille-2014-05-01] |
@@ -282,9 +283,9 @@ Le gaz des ménages est le gaz naturel distribué en basse pression ; son tarif 
 | 1^er^ juin 2019 | ajustement | ménages : 24,3 ; 35,8 ; 47,0 ; 58,6 | [@steg-grille-2019-06-01] |
 | 1^er^ mai 2022 | ajustement | ménages : 24,3 ; 38,7 ; 58,5 ; 86,7 | [@steg-grille-2022-05-01] |
 
-: Le tarif du gaz naturel en basse pression, 1987-2022, à chaque date d'effet connue (millimes par thermie). Sources : *Journal officiel* jusqu'en 1992 (taxe à la production comprise en 1987) ; grilles de la STEG ensuite, hors taxes, transcrites des documents de l'entreprise comme au @tbl-compensation-eg-grilles-steg. Les grilles de 2004 et de 2006, exprimées par mètre cube, et celle de mars 2013 ne sont pas reprises. À partir de 2018, les grilles distinguent les ménages des autres abonnés. {#tbl-compensation-eg-gaz}
+: Le tarif du gaz naturel en basse pression, 1987-2022, à chaque date d'effet connue (millimes par thermie). Sources : *Journal officiel* jusqu'en 1992 (taxe à la production comprise en 1987) ; grilles de la STEG ensuite, hors taxes, transcrites des documents de l'entreprise comme au @tbl-compensation-eg-grilles-steg. Les grilles de 2004 et de 2006, exprimées par mètre cube, et celle de mars 2013 ne sont pas reprises. À partir de 2018, les grilles distinguent les ménages des autres abonnés. Le prix de 17,1 millimes est relayé sans date d'effet par les pages des agences publiques, de 1999 à 2003 ; il est rattaché à juin 1994 par un calcul fait ici, non par une lecture : la Banque mondiale date de 1993 et de juin 1994 des hausses de 8,6 % et de 4,7 % du gaz des ménages [@bm-1998-icr-17374, § 31], et 15,1 × 1,086 × 1,047 donne 17,2. La même page de 2003 porte encore 17,1 : aucune grille propre du gaz n'est établie en 2000, 2001 et 2003. {#tbl-compensation-eg-gaz}
 
-<!-- TODO (documentaliste) : grilles du gaz basse pression de 2008 à 2019 à confronter aux documents de la STEG ; grilles du gaz de 2001 à 2003 — docs/notes/compensation-tarifs-1993-2004.md et compensation-tarifs-mt-ht-gaz.md, § 10. -->
+<!-- TODO (documentaliste) : grilles du gaz basse pression de 2008 à 2019 à confronter aux documents de la STEG  — docs/notes/compensation-tarifs-1993-2004.md et compensation-tarifs-mt-ht-gaz.md, § 10. -->
 
 ::::
 
@@ -314,11 +315,44 @@ Le gaz se lit de la même façon : une redevance d'abonnement, une redevance de 
 
 ### La moyenne tension
 
+De juin 1994 à octobre 2022, le kilowattheure de jour de la moyenne tension passe de 47 à 290 millimes hors taxes et celui de nuit de 30 à 222, sur trois familles de postes horaires qui ne se raccordent pas. En monnaie de 2025 (valeurs calculées, non observées), le jour passe d'environ 195 à 358 millimes et la nuit d'environ 124 à 274 : la hausse du prix courant est en grande partie celle des prix. Le @fig-compensation-eg-tarifs-mt trace chaque poste à chaque date d'effet, en millimes courants ou en millimes de 2025 ; les trois tableaux de la moyenne tension de 1994 à 2022 sont repliés sous la figure.
+
+```{python}
+#| label: fig-compensation-eg-tarifs-mt
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import electricite as el
+el.figure(
+    "tarifs_mt",
+    caption=(
+        "Le tarif de l'électricité en moyenne tension, juin 1994 - octobre 2022, par poste horaire "
+        "et à chaque date d'effet (millimes courants, puis millimes de 2025 calculés, par kWh, "
+        "hors taxes)"),
+    note_lecture=(
+        "Chaque courbe est un poste horaire, en escalier : le prix vaut du jour d'effet de la grille "
+        "à celui de la suivante. Trois familles de postes se succèdent et aucune ne se raccorde à la "
+        "précédente : trois postes (jour, pointe, nuit) de juin 1994 à août 2000 ; quatre postes (jour, "
+        "pointe, soir, nuit) du 15 août 2000 au 1er mai 2014 ; quatre postes redéfinis (jour, pointe du "
+        "matin en été, pointe du soir, nuit) depuis le 1er mai 2014, après la réforme de 2014. Les deux "
+        "repères triangulaires marquent ces ruptures ; le jour du passage de trois à quatre postes "
+        "n'est pas établi ; chaque courbe s'arrête avant la rupture, qu'elle ne traverse pas. "
+        "Le mois de la grille de juin 1994 vient d'un rapport extérieur, et son jour n'est pas établi. "
+        "En 2001, la source ne donne ni le soir ni la nuit : ces deux courbes s'interrompent à la "
+        "grille du 1er août 2001 et reprennent le 1er avril 2003. Le tarif uniforme, défini de la même "
+        "façon sur toute la période, est tracé d'un seul trait. Le tarif de secours de 1994 à 2003 et "
+        "la prime de puissance (en millimes par kW et par mois) sont dans l'onglet « Données ». La "
+        "dernière grille établie est celle du 1er octobre 2022. Deux vues : millimes courants, ou "
+        "millimes de 2025, calculés ; la colonne valeur_2025 de l'onglet « Données » donne la valeur "
+        "en monnaie de 2025 de chaque ligne. Sans rapport au PIB."
+        "\n\n" + el.regle_2025()))
+```
+
 Du 1^er^ mai 2004 au 1^er^ octobre 2022, le kilowattheure de jour passe de 58 à 290 millimes, celui de nuit de 40 à 222, et la prime de puissance de 3 000 à 11 000 millimes. La hausse la plus forte en une fois est celle du 1^er^ septembre 2018 : le kilowattheure de jour passe de 173 à 215 millimes et la prime de 8 000 à 11 000.
 
 :::: {.chronologie-repliable titre="Tarif de l'électricité en moyenne tension, grille par grille, 1975-2022 : prix par poste horaire, prime de puissance et tarif uniforme"}
 
-Les tableaux qui suivent passent de 1992 à 2004 : pour 1994 à 2003, les tarifs de la moyenne et de la haute tension et du gaz sont connus par les mêmes agences publiques et par l'ESMAP que ceux des ménages (@tbl-compensation-eg-grilles-relais), et ne sont pas repris ici.
+Trois tableaux se suivent : les arrêtés et la décision publiés au *Journal officiel* jusqu'en 1992, les grilles que relaient les agences publiques et l'ESMAP de 1994 à 2003 (les mêmes sources que pour les ménages, @tbl-compensation-eg-grilles-relais), puis les grilles de la STEG depuis 2004.
 
 | Date d'effet | Portée | Jour | Pointe | Nuit | Prime de puissance (millimes par kW et par mois) | Tarif uniforme | Texte |
 |---|---|---:|---:|---:|---:|---|---|
@@ -333,6 +367,23 @@ Les tableaux qui suivent passent de 1992 à 2004 : pour 1994 à 2003, les tarifs
 
 : Le tarif de l'électricité en moyenne tension, 1975-1992, à trois postes horaires (millimes par kWh). Source : arrêtés et décision publiés au *Journal officiel*. Les prix sont taxes comprises jusqu'en 1987 et hors taxe sur la valeur ajoutée à partir de 1991. Seule la grille de 1992 a été établie deux fois sur le texte ; les valeurs de 1975 à 1990 viennent d'une première transcription des arrêtés. La prime est en millimes par kilowatt et par mois, unité établie sur le texte pour 1984 ; de 1975 à 1982, l'unité reste à vérifier sur les textes. {#tbl-compensation-eg-mt-jo}
 
+| Date d'effet | Portée | Tarif | Jour, ou prix unique du tarif uniforme | Pointe | Soir | Nuit | Prime de puissance (millimes par kW et par mois ; par kVA pour le tarif uniforme) | Source |
+|---|---|---|---:|---:|---:|---:|---:|---|
+| juin 1994 (jour non établi) | ajustement | postes horaires | 47 | 92 | | 30 | 3 000 | [@fipa-2001-02-electricite-eng ; @fipa-1999-production] |
+| juin 1994 (jour non établi) | ajustement | uniforme | 60 | | | | 300 | [@fipa-2001-02-electricite-eng] |
+| juin 1994 (jour non établi) | ajustement | secours | 58 | 98 | | 31 | 1 500 | [@fipa-2001-02-electricite-eng] |
+| 15 août 2000 | ajustement | postes horaires | 49 | 93 | 71 | 31 | 3 000 | [@fipa-2001-05-electricite ; @api-2003-04-couts-energie] |
+| 15 août 2000 | ajustement | uniforme | 64 | | | | 300 | [@fipa-2001-05-electricite ; @api-2003-04-couts-energie] |
+| 15 août 2000 | ajustement | secours | 62 | 101 | 78 | 34 | 1 500 | [@fipa-2001-05-electricite ; @api-2003-04-couts-energie] |
+| 1^er^ août 2001 | ajustement | postes horaires | 50 | 94 | | | 3 000 | [@esmap-2005-307-electrification-rurale, tableau 6.2, p. 36] |
+| 1^er^ août 2001 | ajustement | uniforme | 65 | | | | 300 | [@esmap-2005-307-electrification-rurale, tableau 6.2, p. 36] |
+| 1^er^ août 2001 | ajustement | secours | 63 | 102 | | | 1 500 | [@esmap-2005-307-electrification-rurale, tableau 6.2, p. 36] |
+| 1^er^ avril 2003 | ajustement | postes horaires | 54 | 97 | 76 | 37 | 3 000 | [@fipa-2003-08-electricite-avril-2003] |
+| 1^er^ avril 2003 | ajustement | uniforme | 69 | | | | 300 | [@fipa-2003-08-electricite-avril-2003] |
+| 1^er^ avril 2003 | ajustement | secours | 65 | 105 | 83 | 40 | 1 500 | [@fipa-2003-08-electricite-avril-2003] |
+
+: Le tarif de l'électricité en moyenne tension, 1994-2003 (millimes par kWh, hors taxes). Sources : pages des agences publiques de promotion de l'investissement et de l'industrie, conservées aux archives du web, qui relaient la grille de la STEG ; pour 2001, le tableau de l'ESMAP, qui donne la STEG pour source et ne porte pas le soir ni la nuit du tarif à postes horaires et du tarif de secours. La page de la FIPA qui donne la grille de 1994 porte la mention « au 28 février 1999 » : le mois de juin 1994 vient de la Banque mondiale [@bm-1998-icr-17374, § 28], et la grille ne change pas de 1994 à août 2000 [@bad-2006-rap-electricite-vi, § 4.3.15]. La date d'effet du 15 août 2000 (décision du 10 août 2000), du 1^er^ août 2001 et du 1^er^ avril 2003 vient de la Banque africaine de développement, qui liste les barèmes successifs [@bad-2006-rap-electricite-vi]. Les usages agricoles ne sont pas repris. Le tarif à postes horaires compte trois postes en 1994 et quatre en août 2000 ; le jour du changement n'est pas établi. {#tbl-compensation-eg-mt-1994}
+
 | Date d'effet | Portée | Jour | Pointe | Soir | Nuit | Prime de puissance | Tarif uniforme | Grille |
 |---|---|---:|---:|---:|---:|---:|---:|---|
 | 1^er^ mai 2004 | ajustement de structure | 58 | 102 | 80 | 40 | 3 000 | 73 | [@steg-grille-2004-05-01] |
@@ -342,7 +393,7 @@ Les tableaux qui suivent passent de 1992 à 2004 : pour 1994 à 2003, les tarifs
 | 1^er^ septembre 2012 | ajustement | 123 | 185 | 147 | 94 | 4 000 | 137 | [@steg-grille-2012-09-01] |
 | 1^er^ mars 2013 | ajustement | 132 | 197 | 154 | 100 | 5 000 | 143 | [@steg-grille-2013-03-01] |
 
-: Le tarif de l'électricité en moyenne tension, 2004-2013, à quatre postes horaires (millimes par kWh, hors taxes ; prime en millimes par kW et par mois). Source : STEG. Les grilles de 2010 et de 2012 sont établies sur les documents de la STEG ; les autres d'après les pages de son site conservées aux archives du web, où elles portent leur date d'effet. La date du passage de trois à quatre postes horaires, entre 1992 et 2004, n'est pas établie. {#tbl-compensation-eg-mt-2004}
+: Le tarif de l'électricité en moyenne tension, 2004-2013, à quatre postes horaires (millimes par kWh, hors taxes ; prime en millimes par kW et par mois). Source : STEG. Les grilles de 2010 et de 2012 sont établies sur les documents de la STEG ; les autres d'après les pages de son site conservées aux archives du web, où elles portent leur date d'effet. Le passage de trois à quatre postes horaires a lieu entre la grille de 1994 et celle du 15 août 2000 (@tbl-compensation-eg-mt-1994). {#tbl-compensation-eg-mt-2004}
 
 | Date d'effet | Portée | Jour | Pointe du matin en été | Pointe du soir | Nuit | Prime de puissance | Tarif uniforme | Grille |
 |---|---|---:|---:|---:|---:|---:|---:|---|
@@ -378,6 +429,22 @@ Deux singularités, que les pièces donnent telles quelles.
 
 : Le tarif de l'électricité en haute tension, 1978-1992, à trois postes horaires (millimes par kWh). Source : arrêtés et décision publiés au *Journal officiel*. Mêmes réserves qu'au @tbl-compensation-eg-mt-jo : seule la grille de 1992 a été établie deux fois sur le texte. {#tbl-compensation-eg-ht-jo}
 
+| Date d'effet | Portée | Tarif | Jour | Pointe | Soir | Nuit | Prime de puissance (millimes par kW et par mois) | Source |
+|---|---|---|---:|---:|---:|---:|---:|---|
+| juin 1994 (jour non établi) | ajustement | général, trois postes | 40 | 80 | | 27 | 2 500 | [@fipa-2001-02-electricite-eng ; @fipa-1999-production] |
+| juin 1994 (jour non établi) | ajustement | secours | 47 | 88 | | 28 | 1 000 | [@fipa-2001-02-electricite-eng] |
+| 15 août 2000 | ajustement | général, quatre postes | 41 | 81 | 62 | 28 | 2 500 | [@fipa-2001-05-electricite ; @api-2003-04-couts-energie] |
+| 15 août 2000 | ajustement | général, trois postes | 43 | 79 | | 29 | 2 500 | [@fipa-2002-06-electricite-aout-2000] |
+| 15 août 2000 | ajustement | secours | 52 | 94 | 67 | 30 | 1 000 | [@fipa-2001-05-electricite ; @api-2003-04-couts-energie] |
+| 1^er^ août 2001 | ajustement | général, quatre postes | 42 | 82 | 63 | 29 | 2 500 | [@esmap-2005-307-electrification-rurale, tableau 6.2, p. 36] |
+| 1^er^ août 2001 | ajustement | général, trois postes | 44 | 80 | | 30 | 2 500 | [@esmap-2005-307-electrification-rurale, tableau 6.2, p. 36] |
+| 1^er^ août 2001 | ajustement | secours | 53 | 95 | 68 | 31 | 1 000 | [@esmap-2005-307-electrification-rurale, tableau 6.2, p. 36] |
+| 1^er^ avril 2003 | ajustement | général, trois postes | 48 | 82 | | 35 | 2 500 | [@fipa-2003-08-electricite-avril-2003] |
+| 1^er^ avril 2003 | ajustement | général, quatre postes | 44 | 84 | 65 | 35 | 2 500 | [@fipa-2003-08-electricite-avril-2003] |
+| 1^er^ avril 2003 | ajustement | secours | 55 | 97 | 70 | 37 | 1 000 | [@fipa-2003-08-electricite-avril-2003] |
+
+: Le tarif de l'électricité en haute tension, 1994-2003 (millimes par kWh, hors taxes). Mêmes sources et mêmes réserves de date qu'au @tbl-compensation-eg-mt-1994. Le tarif général à quatre postes s'applique du 1^er^ juin au 31 août, celui à trois postes du 1^er^ septembre au 31 mai, d'après les pages de la FIPA de 2002 et de 2003 ; l'ESMAP ne donne pas la saison. Le tarif général compte trois postes seulement en 1994. {#tbl-compensation-eg-ht-1994}
+
 | Date d'effet | Portée | Jour | Pointe, puis pointe du matin en été à partir de 2014 | Soir, puis pointe du soir à partir de 2014 | Nuit | Prime de puissance | Grille |
 |---|---|---:|---:|---:|---:|---:|---|
 | 1^er^ mai 2004 | ajustement | 48 | 89 | 69 | 38 | 2 500 | [@steg-grille-2004-05-01] |
@@ -408,6 +475,9 @@ De juin 2010 à mai 2022, le prix du gaz en moyenne pression passe de 25,30 à 7
 | 16 juin 1987 | point de départ | 11,3 | 0,1 F − 0,67 | | | [@arrete-1987-06-08-tarifs-electricite-gaz] |
 | 1^er^ janvier 1991 | ajustement | 11,1 | 0,1 F − 0,67 | | | [@arrete-1990-12-19-tarifs-electricite-gaz] |
 | []{#r-eg-gaz-hp-1992}1^er^ août 1992 | ajustement | 12,3 | 0,1 F − 0,67 | | | [@decision-1992-08-11-tarifs-electricite-gaz] |
+| juin 1994 (jour non établi) | ajustement | 14 | | | | [@fipa-1999-production ; @fipa-2001-02-electricite-eng] |
+| en vigueur en avril 2000 | formule de la haute pression seule | | 0,1 F + 0,37 | | | [@aner-2000-impact-prix-energie, p. 21] |
+| 15 août 2000 | ajustement de la haute pression | 14 | 0,1 F − 0,4 | | | [@api-2003-04-couts-energie] |
 | 1^er^ mai 2004 ; 1^er^ août 2004 pour la moyenne pression | ajustement | 15,76 ; 15,19 | 0,1 F − 1,2475 | | | [@steg-grille-2004-05-01] |
 | 1^er^ janvier 2006 | ajustement | 16,57 ; 16,00 | 0,1 F − 7,8932 | | | [@steg-grille-2006-01-01] |
 | 1^er^ septembre 2008 | ajustement de structure | 23,60 ; 23,00 | 24,00 | 24,00 | 0,1 F − 4,3571 | [@steg-grille-2008-09-01] |
@@ -420,9 +490,9 @@ De juin 2010 à mai 2022, le prix du gaz en moyenne pression passe de 25,30 à 7
 | 1^er^ septembre 2018 | ajustement | 54,5 ; 53,8 | 52,2 | 58,0 | 70,0 | [@steg-grille-2018-09-01] |
 | 1^er^ mai 2022 | ajustement | 71,1 ; 70,5 | 60,4 | 67,1 | 81,3 | [@steg-grille-2022-05-01] |
 
-: Le tarif du gaz naturel en moyenne et haute pression, 1987-2022 (millimes par thermie, hors taxes ; taxe à la production comprise en 1987). Sources : arrêtés et décision publiés au *Journal officiel* jusqu'en 1992 ; STEG ensuite, d'après ses documents pour les grilles de 2010, 2014, 2017, mai 2018 et 2022, d'après les pages archivées de son site pour les autres. F est le prix hors taxe de la tonne de fuel lourd n° 2. La formule disparaît le 1^er^ mai 2014, remplacée par un prix fixe. Une case vide est une grille qui n'est pas établie ou une ligne qui n'existe pas à cette date. Les grilles de la moyenne pression de septembre 2012 et de mars 2013 ne sont pas établies. {#tbl-compensation-eg-gaz-mp-hp}
+: Le tarif du gaz naturel en moyenne et haute pression, 1987-2022 (millimes par thermie, hors taxes ; taxe à la production comprise en 1987). Sources : arrêtés et décision publiés au *Journal officiel* jusqu'en 1992 ; STEG ensuite, d'après ses documents pour les grilles de 2010, 2014, 2017, mai 2018 et 2022, d'après les pages archivées de son site pour les autres. F est le prix hors taxe de la tonne de fuel lourd n° 2. La formule disparaît le 1^er^ mai 2014, remplacée par un prix fixe. Une case vide est une grille qui n'est pas établie ou une ligne qui n'existe pas à cette date. Les grilles de la moyenne pression de septembre 2012 et de mars 2013 ne sont pas établies. De 1994 à 2003, le prix de la moyenne pression, 14 millimes, est celui des pages des agences publiques [@fipa-1999-production ; @fipa-2003-08-gaz ; @api-2003-04-couts-energie], sans date d'effet : le même rattachement à juin 1994 que pour la basse pression s'applique, et 12,3 × 1,086 × 1,047 donne 14,0. La formule de la haute pression d'avril 2000 est celle que l'étude de l'ANER donne pour le tarif alors en vigueur ; celle du 15 août 2000 est citée par l'API d'après la décision du 10 août 2000. {#tbl-compensation-eg-gaz-mp-hp}
 
-<!-- TODO (documentaliste) : grilles de la moyenne et de la haute tension et du gaz de juin 1994, d'août 2000, d'août 2001 et d'avril 2003, établies par les notes et non reprises ; grille du gaz dite « Mai 2004 » de la FIPA, dont la formule de la haute pression (0,1 F − 1,3406) diffère de celle de la page de la STEG (0,1 F − 1,2475) — docs/notes/compensation-tarifs-1993-2004.md et compensation-tarifs-mt-ht-gaz.md, § 10. -->
+<!-- TODO (documentaliste) : grille de la moyenne et de la haute tension et du gaz d'octobre 1993 ; formule de la haute pression de 1992 à avril 2000 (une seule lecture, celle de l'étude de l'ANER) ; soir et nuit du tarif de la moyenne tension en août 2001 ; grille du gaz dite « Mai 2004 » de la FIPA, dont la formule de la haute pression (0,1 F − 1,3406) diffère de celle de la page de la STEG (0,1 F − 1,2475) — docs/notes/compensation-tarifs-1993-2004.md et compensation-tarifs-mt-ht-gaz.md, § 10. -->
 
 ::::
 
@@ -436,7 +506,7 @@ La STEG prélève son gaz de deux origines : le gaz algérien — la redevance e
 
 Le prix d'achat n'a pas une seule définition. Jusqu'en 2014, la STEG reçoit le gaz algérien et la redevance à un [prix de cession préférentiel](#g-prix-de-cession-preferentiel) de 90,8 dinars la tep, que le rapport de contrôle de 2014 rattache à une décision du ministre de l'économie nationale du 8 octobre 1993 [@minfin-compensation-carburants-2014, p. 7, 22 et 178] ; l'étude de l'Agence nationale des énergies renouvelables de 2000 donne la même valeur [@aner-2000-impact-prix-energie, p. 29]. Le rapport de contrôle calcule en outre un « prix moyen d'achat de la tep » de 2007 à 2013 [@minfin-compensation-carburants-2014, p. 72], et les états financiers de la STEG publient le leur de 2013 à 2023 : les achats de combustibles divisés par le total des achats de gaz, toutes sources confondues.
 
-Deux ruptures coupent ces séries. À partir de 2007, la STEG enregistre encore ses achats de gaz de la SOTUGAT et de l'ETAP au prix fixe de 90,800 dinars, qui « ne reflète pas la valeur économique du produit », et comptabilise en subvention d'exploitation la subvention que l'État lui accorde sous forme de prix bonifié [@steg-ef-2014, p. 23]. En 2015, le prix de cession prend fin et la STEG achète son gaz au prix mondial (@sec-compensation-eg-2015). Le @fig-compensation-eg-prix-achat-gaz trace les trois séries, sans les raccorder.
+Deux ruptures coupent ces séries. À partir de 2007, la STEG enregistre encore ses achats de gaz de la SOTUGAT et de l'ETAP au prix fixe de 90,800 dinars, qui « ne reflète pas la valeur économique du produit », et comptabilise en subvention d'exploitation la subvention que l'État lui accorde sous forme de prix bonifié [@steg-ef-2014, p. 23]. En 2015, le prix de cession prend fin et la STEG achète son gaz au prix mondial (@sec-compensation-eg-2015). Le @fig-compensation-eg-prix-achat-gaz trace les trois séries, sans les raccorder, en dinars courants ou en dinars de 2025 (valeurs calculées).
 
 ```{python}
 #| label: fig-compensation-eg-prix-achat-gaz
@@ -449,7 +519,7 @@ el.figure(
     caption=(
         "Le prix d'achat de la tonne équivalent pétrole de gaz par la STEG, 1993-2023 : prix de "
         "cession administré, prix moyen d'achat du rapport de contrôle de 2014 et des états "
-        "financiers de la STEG (dinars courants par tep)"),
+        "financiers de la STEG (dinars courants, puis dinars de 2025 calculés, par tep)"),
     note_lecture=(
         "Trois séries, qui ne se raccordent pas. Le trait bleu est le prix de cession : le prix "
         "administré auquel la STEG reçoit le gaz algérien et la redevance, 90,8 dinars la tonne "
@@ -464,8 +534,10 @@ el.figure(
         "Deux repères triangulaires marquent les ruptures, dont l'infobulle porte le texte. En 2007, "
         "la STEG comptabilise le gaz à sa valeur économique et la différence avec le prix de 90,8 en "
         "subvention d'exploitation (note 11 des états financiers de 2014, p. 23). En 2015, le prix de "
-        "cession prend fin et la subvention devient budgétaire. Montants en dinars courants, sans "
-        "rapport au PIB."))
+        "cession prend fin et la subvention devient budgétaire. Deux vues : dinars courants, ou dinars "
+        "de 2025, calculés ; la colonne valeur_2025 de l'onglet « Données » donne la valeur en "
+        "monnaie de 2025 de chaque ligne. Sans rapport au PIB."
+        "\n\n" + el.regle_2025()))
 ```
 
 La facture des combustibles de la STEG, rapportée au PIB nominal, passe de 5,60 points de PIB en 2013 à 2,20 en 2016, puis à 5,78 en 2022 et à 5,05 en 2023. Le @fig-compensation-eg-gaz-pib décompose chacune de ces variations, ainsi que celle de 2013 à 2023, en trois effets : celui du prix moyen d'achat, celui de la quantité achetée et celui de la croissance du PIB nominal.

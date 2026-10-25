@@ -51,3 +51,4 @@ def en_dinars_constants(montant: float, annee: int, indice: dict[int, float] | N
     """Un montant de l'année `annee` en dinars de l'année de base."""
     indice = indice or ipc()
     return montant * indice[base] / indice[annee]
+

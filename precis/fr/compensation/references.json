@@ -41,26 +41,6 @@
       "note": "citation-key: decret84-259\nJORT n° 19 des 20-23 mars 1984 (« Répartition des crédits »). LU À L'IMAGE le 6 octobre 2026 (édition française) : intitulé et visas p. 699 ; art. 1 : « Le tableau A : Budget des Dépenses annexé au décret susvisé n° 83-1254 du 30 décembre 1983 est modifié comme suit » ; tableau A, gestion 1984, chapitre IX (Ministère de l'Économie nationale), section II « Caisse Générale de Compensation », article 64 « Subvention à la Caisse Générale de Compensation » : 98 000 000 D (p. 702). Ce montant est celui du tableau tel que modifié ; il n'est pas présenté comme un accroissement. Recoupé par le rapport d'activité 1984 de la BCT (bct-ra-1984, p. 153 imprimée) : 106 MD de subventions à la CGC, dont 98 MD à la charge du budget ordinaire et 8 MD prélevés sur la contribution exceptionnelle de solidarité (loi n° 84-2, art. 28). La notice jort_cache.db donne les pages 699-707 ; la fin du décret n'a pas été lue. Rectifie la note documentaire, qui plaçait ce chiffre dans le « tableau annexé » à la loi n° 84-2."
     },
     {
-      "id": "lfc-1989",
-      "type": "legislation",
-      "title": "Loi n° 89-88 du 3 novembre 1989, portant loi de finances complémentaire pour la gestion 1989",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "73",
-      "page": "1717-1724",
-      "issued": {
-        "date-parts": [
-          [
-            1989,
-            11,
-            3
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/1989/1989F/Jo07389.pdf",
-      "title-short": "Loi n° 89-88 du 3 novembre 1989",
-      "note": "citation-key: lfc-1989\nJORT n° 73 du 3 novembre 1989. Art. 3 à 8 (p. 1718) : contribution au profit de la CGC au titre de 1989 ; art. 8 : prêt du Trésor de 20 millions de dinars. Lus par le documentaliste (docs/notes/compensation.md, § 1.1, niveau « texte lu ») ; non relus à l'image le 6 octobre 2026. Pages 1717-1724 : étendue d'après les enregistrements de jort_cache.db."
-    },
-    {
       "id": "arrete-2016-07-15-prix-petroliers",
       "type": "legislation",
       "title": "Arrêté du ministre de l'énergie et des mines et du ministre des finances du 15 juillet 2016, fixant la composition et le fonctionnement de la commission chargée de fixer et de suivre les prix de vente des produits pétroliers finis importés et ceux raffinés localement",
@@ -1600,7 +1580,7 @@
       "title-short": "Arrêté du 18 août 1992 (prix du GPL)",
       "page": "1125",
       "URL": "https://www.pist.tn/jort/1992/1992F/Jo05792.pdf",
-      "note": "citation-key: arrete-1992-08-18-prix-petroliers\nJORT n° 57. Bouteille de 13 kg : 3,800 D, effet le 4 août 1992 ; valeur lue par OCR seul, non relue à l'image, confirmée par l'arrêté de 1993. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
+      "note": "citation-key: arrete-1992-08-18-prix-petroliers\nJORT n° 57. Bouteille de 13 kg : 3,800 D, effet le 4 août 1992 ; valeur lue à l'image le 24 octobre 2026 (p. 1125) : charges de 3 kg 0,900 D, 5 kg 1,470 D, 13 kg 3,800 D, 25 kg 7,300 D, 35 kg 10,230 D ; prix limite de 292,308 D la tonne, marge des détaillants 20,500 D la tonne ; confirmée par l'arrêté de 1993. Preuve : image lue pour le contenu (note documentaire du 6 octobre 2026) ; intitulé lu au sommaire du fascicule (OCR)."
     },
     {
       "id": "arrete-1993-10-26-prix-petroliers",
@@ -1813,39 +1793,6 @@
       "URL": "https://www.imf.org/external/pubs/ft/scr/2014/cr14362.pdf",
       "title-short": "FMI, Country Report n° 14/362",
       "note": "citation-key: fmi-2014-cr14362\nIMF Country Report n° 14/362. Page de titre lue le 6 octobre 2026 : « IMF Country Report No. 14/362, TUNISIA, December 2014 » ; 85 pages. imf.org répond 403 aux téléchargements automatiques mais sert le document à un lecteur : l'URL reste celle de l'éditeur. Copie de vérification : capture Wayback du 12/04/2026 (horodatage 20260412133725 lu dans le CDX), https://web.archive.org/web/20260412133725/https://www.imf.org/external/pubs/ft/scr/2014/cr14362.pdf, téléchargée le 6 octobre 2026 sous tunisia-data/data/raw/banque-mondiale-rapports/imf_2014_362_sba_fifth_review_tunisia.pdf (1 546 961 octets, SHA-256 4ad1b992164436206e64c47a8eccd3ecd2123ffcacd7fee3585e895b9902577b), ignoré par git ; trois captures (2015, 2022, 2026) donnent le même fichier. Mémorandum de politique économique des autorités, § 26, p. 59 du PDF (couche texte) : audit du secteur de l'énergie annoncé pour décembre 2014."
-    },
-    {
-      "type": "report",
-      "author": [
-        {
-          "literal": "International Monetary Fund"
-        }
-      ],
-      "collection-title": "IMF Country Report",
-      "publisher": "International Monetary Fund",
-      "publisher-place": "Washington, D.C.",
-      "accessed": {
-        "date-parts": [
-          [
-            2026,
-            10,
-            6
-          ]
-        ]
-      },
-      "id": "fmi-2016-cr16138",
-      "title": "Tunisia: Request for an Extended Arrangement Under the Extended Fund Facility — Press Release; Staff Report; and Statement by the Executive Director for Tunisia",
-      "issued": {
-        "date-parts": [
-          [
-            2016,
-            6
-          ]
-        ]
-      },
-      "URL": "https://www.imf.org/external/pubs/ft/scr/2016/cr16138.pdf",
-      "title-short": "FMI, Country Report n° 16/138",
-      "note": "citation-key: fmi-2016-cr16138\nIMF Country Report n° 16/138. Page de titre lue le 6 octobre 2026 : « IMF Country Report No. 16/138, TUNISIA, June 2016 » (Conseil d'administration du 20 mai 2016) ; 106 pages. Copie locale préexistante de tunisia-data : tunisia-data/data/raw/banque-mondiale-rapports/imf_2016_138_eff_request_tunisia.pdf (2 185 231 octets, SHA-256 274e4edd312a3c852064f553c4055cca092fcd9e100dfec287efdd80b5532ecc), ignorée par git. Tableaux 4a et 4b, pp. 40-41 du PDF (couche texte) : série brute de la subvention à l'énergie reconstituée par les services du FMI (2012-2014 : 2 689 ; 4 434 ; 3 112 MD)."
     },
     {
       "id": "plan-2016-2020-vol1",
@@ -3960,6 +3907,54 @@
       "note": "citation-key: fipa-2003-08-electricite-avril-2003\nFamille : source officielle tunisienne (agence publique ou entreprise relayant la grille). Page archivée (niveau P : page HTML capturée, lue) ; le site d'origine ne sert plus cette page (vérification sommaire le 6 octobre 2026) ; consultée dans la capture (horodatage 20030805143433 lu dans le CDX le 6 octobre 2026). Contenu : grille du 1er avril 2003 pour l'électricité ; la date d'effet au jour vient de la BAD. Octets bruts de la capture (variante id_) conservés dans le scratchpad de la collecte, hors entrepôt : fipa/v_a050701_20030805143433.htm, SHA-256 32317007abe84da2dd393d9a026e7148cb2e05ced7ee03bcb0103ed4eb1065fb. "
     },
     {
+      "id": "fipa-2002-06-electricite-aout-2000",
+      "type": "webpage",
+      "title": "Guide de l'investisseur : électricité (tarifs en hors taxes, août 2000)",
+      "author": [
+        {
+          "literal": "Agence de promotion de l'investissement extérieur"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20020617012142/http://www.investintunisia.com:80/fre/poleA/a050701.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            24
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.investintunisia.com:80/fre/poleA/a050701.htm",
+      "title-short": "Guide de l'investisseur : électricité (août 2000)",
+      "note": "citation-key: fipa-2002-06-electricite-aout-2000\nFamille : source officielle tunisienne (agence publique relayant la grille). Page archivée lue dans la capture 20020617012142 (variante id_, relue le 24 octobre 2026). Contenu : grille du 15 août 2000 de la haute tension à trois et à quatre postes horaires, de la moyenne et de la basse tension ; la date d'effet vient de la BAD."
+    },
+    {
+      "id": "fipa-2003-08-gaz",
+      "type": "webpage",
+      "title": "Guide de l'investisseur : gaz naturel (tarifs en hors taxes)",
+      "author": [
+        {
+          "literal": "Agence de promotion de l'investissement extérieur"
+        }
+      ],
+      "URL": "https://web.archive.org/web/20030805143656/http://www.investintunisia.com:80/fre/poleA/a050702.htm",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            24
+          ]
+        ]
+      },
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.investintunisia.com:80/fre/poleA/a050702.htm",
+      "title-short": "Guide de l'investisseur : gaz naturel",
+      "note": "citation-key: fipa-2003-08-gaz\nFamille : source officielle tunisienne (agence publique relayant la grille). Page archivée lue dans la capture 20030805143656 (variante id_, relue le 24 octobre 2026). Contenu : prix de l'énergie du gaz, hors taxes : haute pression 13,2, moyenne pression 14, basse pression 17,1 millimes par thermie, sans date d'effet."
+    },
+    {
       "id": "fipa-2004-11-gaz-mai-2004",
       "type": "webpage",
       "title": "Guide de l'investisseur : gaz naturel (tarifs en hors taxes, « mai 2004 »)",
@@ -4202,53 +4197,6 @@
       "archive_location": "http://www.steg.com.tn:80/fr/clients_ind/regime_horaire.html",
       "title-short": "STEG, Régime horaire (2017)",
       "note": "citation-key: steg-regime-horaire-2017\nPage non datée de la STEG, capture du 21 avril 2017 (horodatage 20170421225223 lu dans le CDX le 6 octobre 2026) ; l'image HtMt_L.jpg de la page donne les heures des postes horaires, lue le 6 octobre 2026 (niveau I). Les heures des postes de 2004 à 2013 ne sont pas établies (l'image du régime de 2012 n'est pas archivée). Famille : source officielle tunisienne. Document en français."
-    },
-    {
-      "id": "jouini-lustig-moummi-shimeles-2017-ceq38",
-      "type": "report",
-      "title": "Fiscal Policy, Income Redistribution and Poverty Reduction: Evidence from Tunisia",
-      "author": [
-        {
-          "family": "Jouini",
-          "given": "Nizar"
-        },
-        {
-          "family": "Lustig",
-          "given": "Nora"
-        },
-        {
-          "family": "Moummi",
-          "given": "Ahmed"
-        },
-        {
-          "family": "Shimeles",
-          "given": "Abebe"
-        }
-      ],
-      "collection-title": "CEQ Working Paper",
-      "publisher": "CEQ Institute, Tulane University",
-      "issued": {
-        "date-parts": [
-          [
-            2017,
-            6
-          ]
-        ]
-      },
-      "URL": "https://web.archive.org/web/20180413124145/http://www.commitmentoequity.org:80/wp-content/uploads/2017/08/CEQ_WP38_Jouini-Lustig-Moummi-Shimeles_June2017.pdf",
-      "accessed": {
-        "date-parts": [
-          [
-            2026,
-            10,
-            6
-          ]
-        ]
-      },
-      "archive": "Internet Archive (Wayback Machine)",
-      "archive_location": "http://www.commitmentoequity.org:80/wp-content/uploads/2017/08/CEQ_WP38_Jouini-Lustig-Moummi-Shimeles_June2017.pdf",
-      "title-short": "Jouini et al. (2017), CEQ WP 38",
-      "note": "citation-key: jouini-lustig-moummi-shimeles-2017-ceq38\nCEQ Working Paper n° 38, mai 2016, révisé en juin 2017, 26 p. (page de titre lue ; titre courant : « Fiscal Incidence and Poverty Reduction: Evidence from Tunisia ») ; chapitre 18 du Commitment to Equity Handbook (Lustig éd., 2018) ; l'article de revue (Review of Income and Wealth, 2018) n'est pas collecté. Famille : rapport extérieur. Le site d'origine n'a pas servi le fichier le 6 octobre 2026 (délai de connexion dépassé) : PDF téléchargé dans la capture (horodatage 20180413124145 lu dans le CDX le 6 octobre 2026). Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/ceq_2017_wp38_jouini_lustig_moummi_shimeles_tunisia.pdf (994 762 octets, 26 pages, SHA-256 066ae1ee6c006db2291e6bb1558094bedad2f54652e2e48447f36f1309ba939a), ignorée par git. Enquête de l'INS de 2010 : 23 764 individus, 5 456 ménages (p. 14) ; ce document ne donne AUCUNE répartition par produit : subventions = un seul agrégat (produits de base, énergie, transport) : 2,4 % du PIB en 2010 (1,2 alimentation, 1 énergie, 0,3 transport ; p. 12), 6,9 % en 2013 ; parts par décile, tableau 18-8, p. 21 (alignement des colonnes à contrôler à l'image) ; incohérence : « 2,3 percent of government spending » (p. 21) contre « 2.4 percent of the GDP » (p. 12). Preuve : couche texte."
     },
     {
       "id": "loi63-13",
@@ -5667,6 +5615,447 @@
       "note": "citation-key: decret93-2116\nJORT n° 83 du 2 novembre 1993. Art. 2 du décret n° 91-1391 refait : 800 millimes par kilogramme pour la poudre de lait à 0 % de matière grasse, 680 millimes par kilogramme pour la poudre à 26 %. Lecture faite sur l'édition française (image), le 24 octobre 2026.",
       "volume": "136",
       "page": "1857"
+    },
+    {
+      "id": "decret93-1187",
+      "type": "legislation",
+      "title": "Décret n° 93-1187 du 24 mai 1993, modifiant le décret n° 90-1193 du 12 juillet 1990 relatif à l'institution d'un prélèvement sur la viande bovine importée",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "42",
+      "issued": {
+        "date-parts": [
+          [
+            1993,
+            5,
+            24
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1993/1993F/Jo04293.pdf",
+      "title-short": "Décret n° 93-1187 du 24 mai 1993",
+      "note": "citation-key: decret93-1187\nJORT n° 42 du 8 juin 1993. Art. 1 (nouveau) : prélèvement « au profit de la caisse générale de compensation » de 670 millimes par kilogramme sur les bovins vivants de plus de 300 kg destinés à la boucherie (n° 0102909 du tarif douanier) et de 1 200 millimes par kilogramme sur la viande bovine des positions 02.01 (fraîche ou réfrigérée) et 02.02 (congelée), en carcasses, morceaux non désossés et désossés ; art. 2 (nouveau) : prélèvements perçus à l'importation, révisés chaque année ou en cas de besoin d'après l'évolution des prix internationaux non subventionnés, non pris en compte dans la liquidation des autres droits et taxes. Lecture faite sur l'édition française (image), le 24 octobre 2026.",
+      "volume": "136",
+      "page": "797"
+    },
+    {
+      "id": "decret2002-2227",
+      "type": "legislation",
+      "title": "Décret n° 2002-2227 du 7 octobre 2002, modifiant le décret n° 91-1391 du 23 septembre 1991, relatif à l'institution d'un prélèvement à l'importation de la poudre de lait",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "84",
+      "issued": {
+        "date-parts": [
+          [
+            2002,
+            10,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2002/2002F/Jo0842002.pdf",
+      "title-short": "Décret n° 2002-2227 du 7 octobre 2002",
+      "note": "citation-key: decret2002-2227\nJORT n° 84 du 15 octobre 2002. Art. 1 : premier et deuxième tirets de l'art. 2 du décret n° 91-1391 refaits (poudre à 26 % de matière grasse : 680 dinars par tonne ; poudre à 0 % destinée aux nourrissons, aux malades ou à l'alimentation animale : 800 dinars par tonne) et troisième tiret rédigé ainsi (poudre à 0 % : prélèvement en dinars par tonne = 4 450 D moins la somme du prix à l'importation C.I.F. et des droits de douane). Le texte ne dit pas au profit de qui le prélèvement est perçu. Couche texte du fascicule chiffrée ; lecture faite sur l'image de la page, le 24 octobre 2026.",
+      "volume": "145",
+      "page": "2413"
+    },
+    {
+      "id": "decret2009-2293",
+      "type": "legislation",
+      "title": "Décret n° 2009-2293 du 31 juillet 2009, portant modification du décret n° 91-1391 du 23 septembre 1991 relatif à l'institution de prélèvements à l'importation de la poudre de lait",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "64",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            7,
+            31
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009F/Jo0642009.pdf",
+      "title-short": "Décret n° 2009-2293 du 31 juillet 2009",
+      "note": "citation-key: decret2009-2293\nJORT n° 64 du 11 août 2009. Art. 1 : troisième tiret de l'art. 2 du décret n° 91-1391 abrogé et remplacé : poudre de lait à 0 % de matière grasse : 680 dinars par tonne (au lieu de la formule de 2002). Le texte ne dit pas au profit de qui le prélèvement est perçu. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026.",
+      "volume": "152",
+      "page": "2284-2285"
+    },
+    {
+      "id": "decret2015-50",
+      "type": "legislation",
+      "title": "Décret n° 2015-50 du 2 janvier 2015, portant modification du décret n° 91-1391 du 23 septembre 1991 relatif à l'institution d'un prélèvement à l'importation sur la poudre de lait",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "8",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            1,
+            2
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2015/2015F/Jo0082015.pdf",
+      "title-short": "Décret n° 2015-50 du 2 janvier 2015",
+      "note": "citation-key: decret2015-50\nJORT n° 8 du 27 janvier 2015. Art. 1 : premier et troisième tirets de l'art. 2 du décret n° 91-1391 abrogés et remplacés : poudre de lait à 26 % de matière grasse : 1 500 dinars par tonne ; poudre de lait à 0 % : 1 500 dinars par tonne. Le deuxième tiret (800 dinars par tonne, nourrissons, malades, alimentation animale) n'est pas modifié. Le texte ne dit pas au profit de qui le prélèvement est perçu. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026.",
+      "volume": "158",
+      "page": "247-248"
+    },
+    {
+      "id": "arrete-1990-10-11-cgc",
+      "type": "legislation",
+      "title": "Arrêté du ministre de l'économie et des finances du 11 octobre 1990, portant augmentation des prévisions de recettes et de dépenses du fonds spécial du trésor intitulé « caisse générale de compensation » pour la gestion 1990",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "68",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            10,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo06890.pdf",
+      "title-short": "Arrêté du ministre de l'économie et des finances du 11 octobre 1990",
+      "note": "citation-key: arrete-1990-10-11-cgc\nJORT n° 68 des 23-26 octobre 1990. Article unique : les prévisions de recettes et de dépenses du fonds spécial du Trésor « caisse générale de compensation » pour 1990 passent de 302 000 000 à 320 000 000 dinars ; les visas notent que la loi de finances pour 1990 les fixait à 302 MD et que le prélèvement complémentaire de 18 MD est permis par le solde disponible de la caisse au 31 décembre 1989. Lecture faite sur l'image de l'édition française, le 24 octobre 2026.",
+      "volume": "133",
+      "page": "1525"
+    },
+    {
+      "id": "arrete-1992-07-07-cgc",
+      "type": "legislation",
+      "title": "Arrêté du ministre des finances du 7 juillet 1992, portant augmentation des prévisions de recettes et de dépenses du fonds spécial du trésor intitulé « Caisse Générale de Compensation » pour la gestion 1992",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "47",
+      "issued": {
+        "date-parts": [
+          [
+            1992,
+            7,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1992/1992F/Jo04792.pdf",
+      "title-short": "Arrêté du ministre des finances du 7 juillet 1992",
+      "note": "citation-key: arrete-1992-07-07-cgc\nJORT n° 47 du 17 juillet 1992. Article unique : les prévisions de recettes et de dépenses du fonds spécial du Trésor « Caisse Générale de Compensation » pour 1992 passent de 270 000 000 à 348 000 000 dinars. Visas : loi n° 91-98 (tableau K) et loi n° 70-66 (art. 48). Lecture faite sur l'image de l'édition française, le 24 octobre 2026.",
+      "volume": "135",
+      "page": "911"
+    },
+    {
+      "id": "arrete-2024-05-10-redevance-patisseries",
+      "type": "legislation",
+      "title": "Arrêté de la ministre des finances du 10 mai 2024, relatif à la fixation de la liste des pâtisseries traditionnelles populaires exclues de l'application de la redevance de compensation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "61",
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            10
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2024/2024F/Jo0612024.pdf",
+      "title-short": "Arrêté de la ministre des finances du 10 mai 2024",
+      "note": "citation-key: arrete-2024-05-10-redevance-patisseries\nJORT n° 61 du 14 mai 2024. Art. 1 : liste des pâtisseries traditionnelles populaires exclues de la redevance de compensation instaurée par l'article 63 de la loi n° 2012-27, en application de l'article 45 de la loi n° 2023-13 du 11 décembre 2023 (loi de finances pour 2024) ; art. 2 : sont exclus les pâtissiers qui produisent exclusivement makroudh et corne de gazelle, zlabia et mkharak, ghrayba, bachkoutou, youyou et beignets sucrés, hrissa sucrée, debla, grewech et chbebek el janna, brika sucrée et maasem. L'article 45 de la loi de finances pour 2024 n'est pas lu (fascicule absent du corpus local). Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026.",
+      "volume": "167",
+      "page": "1428"
+    },
+    {
+      "id": "decret95-851",
+      "type": "legislation",
+      "title": "Décret n° 95-851 du 8 mai 1995, relatif à l'institution d'un prélèvement sur les bovins vivants et la viande bovine",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "40",
+      "issued": {
+        "date-parts": [
+          [
+            1995,
+            5,
+            8
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1995/1995F/Jo04095.pdf",
+      "title-short": "Décret n° 95-851 du 8 mai 1995",
+      "note": "citation-key: decret95-851\nJORT n° 40 du 19 mai 1995. Art. 1 : prélèvement « au profit de la caisse générale de compensation » sur les bovins vivants de plus de 300 kg destinés à la boucherie (670 millimes par kg) et sur la viande bovine fraîche, réfrigérée ou congelée, des positions 02.01 et 02.02 (1 200 millimes par kg en carcasses, demi-carcasses et morceaux non désossés ; 1 700 millimes par kg désossée) ; art. 2 : exigible et perçu, contrôlé et réprimé comme en matière de taxe sur la valeur ajoutée, non pris en considération dans la liquidation des autres droits et taxes ; art. 3 : abroge les décrets n° 90-1193, 92-1340 et 93-1187. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026.",
+      "volume": "138",
+      "page": "1132-1133"
+    },
+    {
+      "id": "decret95-1212",
+      "type": "legislation",
+      "title": "Décret n° 95-1212 du 10 juillet 1995, portant institution d'un prélèvement sur les fruits frais et les fruits secs",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "57",
+      "issued": {
+        "date-parts": [
+          [
+            1995,
+            7,
+            10
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1995/1995F/Jo05795.pdf",
+      "title-short": "Décret n° 95-1212 du 10 juillet 1995",
+      "note": "citation-key: decret95-1212\nJORT n° 57 du 18 juillet 1995. Art. 1 : prélèvement « au profit de la caisse générale de compensation » sur les fruits frais et secs soumis à la taxe sur la valeur ajoutée, selon un tarif en dinars par kilogramme ; première page du tarif lue (p. 1533) : de 0,200 à 1,000 dinar par kg (noix de coco, amandes, noisettes, noix, châtaignes, pistaches, 0,500 pour les bananes fraîches, 1,000 pour les bananes sèches, figues sèches 0,200, ananas 0,500). Suite du tarif (p. 1534) non lue. Lecture faite sur l'image de l'édition française, le 24 octobre 2026.",
+      "volume": "138",
+      "page": "1533-1534"
+    },
+    {
+      "id": "decret97-2509",
+      "type": "legislation",
+      "title": "Décret n° 97-2509 du 29 décembre 1997, portant suspension des droits de douanes, de la taxe sur la valeur ajoutée et du prélèvement sur les bovins vivants dus à l'importation des veaux",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "1",
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            12,
+            29
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1998/1998F/Jo00198.pdf",
+      "title-short": "Décret n° 97-2509 du 29 décembre 1997",
+      "note": "citation-key: decret97-2509\nJORT n° 1 du 2 janvier 1998. Art. 1 : suspension des droits de douane, de la taxe sur la valeur ajoutée et du prélèvement institué par le décret n° 95-851 sur les veaux du n° 0102909 du tarif douanier, dans la limite d'un contingent global de 4 000 veaux ; art. 2 : du 1er janvier au 31 décembre 1998. Lecture faite sur l'image (fascicule sans couche texte, caractères abîmés), le 24 octobre 2026.",
+      "volume": "141",
+      "page": "3"
+    },
+    {
+      "id": "decret2003-2048",
+      "type": "legislation",
+      "title": "Décret n° 2003-2048 du 6 octobre 2003, portant suspension ou réduction des droits de douane et suspension du prélèvement dus à l'importation de certains produits agricoles",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "81",
+      "issued": {
+        "date-parts": [
+          [
+            2003,
+            10,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2003/2003F/Jo0812003.pdf",
+      "title-short": "Décret n° 2003-2048 du 6 octobre 2003",
+      "note": "citation-key: decret2003-2048\nJORT n° 81 du 10 octobre 2003. Art. 1 : suspension du prélèvement institué par le décret n° 95-851 sur les viandes bovines congelées des n° 020230100 à 020230900 du tarif douanier, dans la limite de 500 tonnes ; art. 4 : jusqu'au 31 décembre 2003. Lecture faite sur l'image (couche texte chiffrée), le 24 octobre 2026.",
+      "volume": "146",
+      "page": "2923"
+    },
+    {
+      "id": "decret2004-2314",
+      "type": "legislation",
+      "title": "Décret n° 2004-2314 du 27 septembre 2004, portant suspension ou réduction des droits de douane, suspension de la taxe sur la valeur ajoutée ou du prélèvement dus à l'importation de certains produits agricoles, produits agro-alimentaires et articles destinés à l'usage agricole",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "80",
+      "issued": {
+        "date-parts": [
+          [
+            2004,
+            9,
+            27
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2004/2004F/Jo0802004.pdf",
+      "title-short": "Décret n° 2004-2314 du 27 septembre 2004",
+      "note": "citation-key: decret2004-2314\nJORT n° 80 du 5 octobre 2004. Art. 1 : suspension du prélèvement institué par le décret n° 95-851 sur les viandes bovines réfrigérées (n° 020110000 à 020120900), 6 500 tonnes ; art. 2 : sur les viandes bovines congelées (n° 020230100 à 020230900), 100 tonnes ; art. 3 : suspension des droits de douane, de la taxe sur la valeur ajoutée et du prélèvement institué par le décret n° 93-1924 sur les viandes ovines réfrigérées (n° 020410000 et 020421000), 50 000 carcasses ; art. 14 : droits de douane réduits à 27 % et prélèvement institué par le décret n° 93-2115 suspendu sur le beurre du n° 040510190, 1 000 tonnes ; art. 15 : jusqu'au 31 décembre 2004. Lecture faite sur l'image (couche texte chiffrée), le 24 octobre 2026.",
+      "volume": "147",
+      "page": "2827-2828"
+    },
+    {
+      "id": "decret2005-213",
+      "type": "legislation",
+      "title": "Décret n° 2005-213 du 7 février 2005, portant réduction des droits de douane et du prélèvement dû à l'importation des bananes fraîches",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "13",
+      "issued": {
+        "date-parts": [
+          [
+            2005,
+            2,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2005/2005F/Jo0132005.pdf",
+      "title-short": "Décret n° 2005-213 du 7 février 2005",
+      "note": "citation-key: decret2005-213\nJORT n° 13 du 15 février 2005. Art. 1 : droits de douane réduits à 50 % et prélèvement institué par le décret n° 95-1212 réduit à 0,250 dinar par kilogramme sur les bananes fraîches du n° 080300190 ; art. 2 : du 1er janvier au 31 décembre 2005. Lecture faite sur l'image (couche texte chiffrée), le 24 octobre 2026.",
+      "volume": "148",
+      "page": "372"
+    },
+    {
+      "id": "decret2005-2931",
+      "type": "legislation",
+      "title": "Décret n° 2005-2931 du 1er novembre 2005, portant suspension des droits de douane et des prélèvements dus à l'importation de certains produits et suspension ou réduction de la taxe sur la valeur ajoutée dus sur ces produits",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "90",
+      "issued": {
+        "date-parts": [
+          [
+            2005,
+            11,
+            1
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2005/2005F/Jo0902005.pdf",
+      "title-short": "Décret n° 2005-2931 du 1er novembre 2005",
+      "note": "citation-key: decret2005-2931\nJORT n° 90 du 11 novembre 2005. Art. 1 et 2 : suspension du prélèvement institué par le décret n° 93-1924 sur les viandes ovines congelées (20 000 carcasses) et réfrigérées (30 000 carcasses) ; art. 3 et 4 : du prélèvement institué par le décret n° 95-851 sur les viandes bovines réfrigérées (3 200 tonnes) et congelées (400 tonnes) ; art. 6 : du prélèvement institué par le décret n° 93-2115 sur le beurre du n° 040510190 (1 400 tonnes) ; art. 13 : jusqu'au 31 décembre 2005. Lecture faite sur l'image (couche texte chiffrée), le 24 octobre 2026.",
+      "volume": "148",
+      "page": "2982-2983"
+    },
+    {
+      "id": "decret2006-1",
+      "type": "legislation",
+      "title": "Décret n° 2006-1 du 3 janvier 2006, portant réduction des droits de douane et du prélèvement dû à l'importation des bananes fraîches",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "1",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            1,
+            3
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0012006.pdf",
+      "title-short": "Décret n° 2006-1 du 3 janvier 2006",
+      "note": "citation-key: decret2006-1\nJORT n° 1 du 3 janvier 2006. Art. 1 : droits de douane réduits à 50 % et prélèvement institué par le décret n° 95-1212 réduit à 0,250 dinar par kilogramme sur les bananes fraîches du n° 080300190 ; art. 2 : du 1er janvier au 31 décembre 2006. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026.",
+      "volume": "149",
+      "page": "9"
+    },
+    {
+      "id": "decret2006-4",
+      "type": "legislation",
+      "title": "Décret n° 2006-4 du 3 janvier 2006, portant suspension ou réduction des droits de douane et suspension du prélèvement à l'importation de certains produits agricoles et agroalimentaires et autres produits et suspension de la taxe sur la valeur ajoutée dus sur ces produits",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "1",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            1,
+            3
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0012006.pdf",
+      "title-short": "Décret n° 2006-4 du 3 janvier 2006",
+      "note": "citation-key: decret2006-4\nJORT n° 1 du 3 janvier 2006. Art. 3 : suspension des droits de douane et du prélèvement institué par le décret n° 95-851 sur les viandes bovines réfrigérées (n° 020110000 à 020120900), 1 700 tonnes ; art. 26 : du 1er janvier au 31 décembre 2006. Seuls les articles sur le prélèvement sont lus ici ; le décret compte 27 articles. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026.",
+      "volume": "149",
+      "page": "11-41"
+    },
+    {
+      "id": "decret2006-1835",
+      "type": "legislation",
+      "title": "Décret n° 2006-1835 du 3 juillet 2006, portant suspension des droits de douane, de la taxe sur la valeur ajoutée et du prélèvement dus à l'importation de certains produits",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "54",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            7,
+            3
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0542006.pdf",
+      "title-short": "Décret n° 2006-1835 du 3 juillet 2006",
+      "note": "citation-key: decret2006-1835\nJORT n° 54 du 7 juillet 2006. Art. 1 et 2 : suspension du prélèvement institué par le décret n° 93-1924 sur les viandes ovines congelées (350 tonnes) et réfrigérées (38 tonnes) ; art. 3 et 4 : du prélèvement institué par le décret n° 95-851 sur les viandes bovines réfrigérées (3 500 tonnes) et congelées (1 800 tonnes) ; art. 8 : jusqu'au 31 décembre 2006. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026.",
+      "volume": "149",
+      "page": "1834-1835"
+    },
+    {
+      "id": "decret2007-8",
+      "type": "legislation",
+      "title": "Décret n° 2007-8 du 3 janvier 2007, portant réduction des droits de douane et du prélèvement dûs à l'importation des bananes fraîches",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "2",
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            1,
+            3
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2007/2007F/Jo0022007.pdf",
+      "title-short": "Décret n° 2007-8 du 3 janvier 2007",
+      "note": "citation-key: decret2007-8\nJORT n° 2 du 5 janvier 2007. Art. 1 : droits de douane réduits à 50 % et prélèvement institué par le décret n° 95-1212 réduit à 0,250 dinar par kilogramme sur les bananes fraîches du n° 080300190 ; art. 2 : du 1er janvier au 31 décembre 2007. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026.",
+      "volume": "150",
+      "page": "34-35"
+    },
+    {
+      "id": "decret2007-10",
+      "type": "legislation",
+      "title": "Décret n° 2007-10 du 3 janvier 2007, portant suspension ou réduction des droits de douane et de la taxe sur la valeur ajoutée et suspension du prélèvement à l'importation de certains produits agricoles et agro-alimentaires et autres produits",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "2",
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            1,
+            3
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2007/2007F/Jo0022007.pdf",
+      "title-short": "Décret n° 2007-10 du 3 janvier 2007",
+      "note": "citation-key: decret2007-10\nJORT n° 2 du 5 janvier 2007. Art. 5 : suspension des droits de douane, de la taxe sur la valeur ajoutée et du prélèvement institué par le décret n° 93-1924 sur les viandes ovines réfrigérées (n° 020410000 et 020421000), 20 000 carcasses ; art. 6 : des droits de douane et du prélèvement sur les viandes ovines congelées (n° 020430000 et 020441000), 150 tonnes ; art. 31 : du 1er janvier au 31 décembre 2007. Seuls les articles sur le prélèvement sont lus ici. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026.",
+      "volume": "150",
+      "page": "36-64"
+    },
+    {
+      "id": "decret2007-1199",
+      "type": "legislation",
+      "title": "Décret n° 2007-1199 du 14 mai 2007, portant suspension des droits de douanes, de la taxe sur la valeur ajoutée et du prélèvement dus à l'importation de certains produits",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "40",
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            5,
+            14
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2007/2007F/Jo0402007.pdf",
+      "title-short": "Décret n° 2007-1199 du 14 mai 2007",
+      "note": "citation-key: decret2007-1199\nJORT n° 40 du 18 mai 2007. Art. 1 : suspension des droits de douane et du prélèvement institué par le décret n° 93-1924 sur les viandes ovines congelées (500 tonnes) ; art. 2 et 3 : du prélèvement institué par le décret n° 95-851 sur les viandes bovines réfrigérées (2 500 tonnes) et congelées (2 000 tonnes) ; art. 7 : jusqu'au 31 décembre 2007. Lecture faite sur la couche texte de l'édition française, le 24 octobre 2026.",
+      "volume": "150",
+      "page": "1700"
+    },
+    {
+      "id": "lfc-2008",
+      "type": "legislation",
+      "title": "Loi n° 2008-76 du 15 décembre 2008, portant loi de finances complémentaire pour l'année 2008",
+      "title-short": "LFC 2008",
+      "issued": {
+        "date-parts": [
+          [
+            2008,
+            12,
+            15
+          ]
+        ]
+      },
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "101",
+      "volume": "151",
+      "URL": "https://www.pist.tn/jort/2008/2008F/Jo1012008.pdf",
+      "note": "citation-key: lfc-2008\nJORT n° 101 du 16 décembre 2008. Tableau C (dépenses du budget de l'État, crédits de paiement), p. 4172 de l'édition française : crédits du chapitre 15, ministère du commerce et de l'artisanat, lus le 24 octobre 2026.\nJORT n° 101 du 16 décembre 2008 (pp. 4165-4177 selon jort_cache.db).",
+      "page": "4165-4177"
     }
   ]
 }
