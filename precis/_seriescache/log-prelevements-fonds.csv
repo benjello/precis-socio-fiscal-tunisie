@@ -1,9 +1,43 @@
-annee,montant_MD,beneficiaire,part_MD,texte,page
-1987,5,programme national de résorption des logements rudimentaires,5,loi n° 86-106 (LF 1987) art. 96,1624
-1988,5,programme national de résorption des logements rudimentaires,5,loi n° 87-83 (LF 1988) art. 76,1635
-1989,15,programme national de résorption des logements rudimentaires,15,loi n° 88-145 (LF 1989) art. 68,1800
-1990,15,programme national de résorption des logements rudimentaires,15,loi n° 89-115 (LF 1990) art. 46,2151
-2011,40,Fonds national d'amélioration de l'habitat,20,décret-loi n° 2011-56 (LFC 2011) art. 3,1013
-2011,40,Compte national de solidarité sociale,20,décret-loi n° 2011-56 (LFC 2011) art. 3,1013
-2012,60,Fonds national d'amélioration de l'habitat,60,loi n° 2012-1 (LFC 2012) art. 36,927
-2013,60,Fonds national d'amélioration de l'habitat,60,loi n° 2012-27 (LF 2013) art. 11,5
+annee,statut,beneficiaire,part_MD,montant_MD,texte,source,article,page,edition,remarque
+1987,prelevement,programme national de résorption des logements rudimentaires,5,5,loi n° 86-106 (LF 1987),loi86-106-lf1987,art. 96,1624,"fr, OCR de l'image",
+1988,prelevement,programme national de résorption des logements rudimentaires,5,5,loi n° 87-83 (LF 1988),loi-87-83-lf-1988,art. 76,1635,"fr, OCR de l'image",
+1989,prelevement,programme national de résorption des logements rudimentaires,15,15,loi n° 88-145 (LF 1989),loi88-145-lf1989,art. 68,1800,"fr, OCR de l'image",
+1990,prelevement,programme national de résorption des logements rudimentaires,15,15,loi n° 89-115 (LF 1990),loi-89-115-lf-1990,art. 46,2151,"fr, OCR de l'image",
+1991,aucun,,0,0,loi n° 90-111 (LF 1991) ; loi n° 91-23 (LFC 1991),lf-1991;lfc-1991,,"JORT n° 86/1990, pp. 2049-2062 ; JORT n° 23/1991, pp. 498-499","fr, OCR de l'image",le fonds figure à la liste de l'article 92 de la loi n° 86-106 : ses recettes fiscales reviennent au budget de l'État
+1992,aucun,,0,0,loi n° 91-98 (LF 1992),lf-1992,,"JORT n° 90/1991, pp. 2082-2093","fr, OCR de l'image",fonds inscrit à la liste de l'article 92 de la loi n° 86-106
+1993,aucun,,0,0,loi n° 92-122 (LF 1993),lf-1993,,"JORT n° 88/1992, pp. 1668-1679","fr, OCR de l'image",l'art. 34 change l'ordonnateur du fonds ; fonds inscrit à la liste de l'article 92 de la loi n° 86-106
+1994,aucun,,0,0,loi n° 93-125 (LF 1994),lf-1994,,"JORT n° 100/1993, pp. 2194-2202","fr, OCR de l'image",l'art. 3 de la loi n° 77-54 est modifié pour le dépôt de la déclaration de contribution ; fonds inscrit à la liste de l'article 92 de la loi n° 86-106
+1995,aucun,,0,0,loi n° 94-127 (LF 1995),lf-1995,,"JORT n° 103/1994, pp. 2042-2051","fr, couche texte du JORT",l'art. 36 retire le fonds de la liste de l'article 92 de la loi n° 86-106
+1996,aucun,,0,0,loi n° 95-109 (LF 1996),lf-1996,,"JORT n° 104/1995, pp. 2368-2374","fr, couche texte du JORT",
+1997,aucun,,0,0,loi n° 96-113 (LF 1997),lf-1997,,"JORT n° 105/1996, pp. 2578-2582","fr, couche texte du JORT",
+1998,aucun,,0,0,loi n° 97-88 (LF 1998),lf-1998,,"JORT n° 104/1997, pp. 2435-2442","fr, couche texte du JORT",
+1999,aucun,,0,0,loi n° 98-111 (LF 1999),lf-1999,,"JORT n° 104/1998, pp. 2500-2508","fr, couche texte du JORT",
+2000,aucun,,0,0,loi n° 99-101 (LF 2000),lf-2000,,"JORT n° 105/1999, pp. 2739-2750","fr, couche texte du JORT",
+2001,aucun,,0,0,loi n° 2000-98 (LF 2001),lf-2001,,"JORT n° 104/2000, pp. 3171-3181","fr, texte du miroir de l'IORT",
+2002,prelevement,Budget de l'État (titre I),29,29,loi n° 2002-100 (LFC 2002),lfc-2002,art. 3,2796,"fr, texte du miroir de l'IORT","transfert de recettes fiscales affectées au fonds aux recettes du titre I du budget de l'État, non un prélèvement sur ses disponibilités"
+2003,aucun,,0,0,loi n° 2002-101 (LF 2003),lf-2003,,"JORT n° 102/2002, pp. 2875-2887","fr, texte du miroir de l'IORT",
+2004,transfert_global,,,110.4,loi n° 2004-87 (LFC 2004),lfc-2004,art. 3,3399,"fr, texte du miroir de l'IORT",transfert au titre I de recettes affectées à l'ensemble des fonds spéciaux du Trésor ; part du fonds non identifiée
+2005,aucun,,0,0,loi n° 2004-90 (LF 2005) ; loi n° 2005-103 (LFC 2005),lf-2005;lfc-2005,,"JORT n° 105/2004, pp. 3432-3444 ; JORT n° 100/2005, pp. 3518-3528","fr, texte du miroir de l'IORT ; fr, couche texte du JORT",
+2006,aucun,,0,0,loi n° 2005-106 (LF 2006),lf-2006,,"JORT n° 101/2005, pp. 3596-3603","fr, texte du miroir de l'IORT",
+2007,transfert_global,,,120,loi n° 2007-64 (LFC 2007),lfc-2007,art. 3,4236,"fr, texte du miroir de l'IORT",transfert au titre I de recettes de l'ensemble des fonds spéciaux du Trésor ; part du fonds non identifiée
+2008,transfert_global,,,150,loi n° 2008-76 (LFC 2008),lfc-2008,art. 2,4165,"fr, texte du miroir de l'IORT",transfert au titre I de recettes de l'ensemble des fonds spéciaux du Trésor ; part du fonds non identifiée
+2009,aucun,,0,0,loi n° 2008-77 (LF 2009) ; loi n° 2009-40 (LFC 2009),lf-2009;lfc-2009,,"JORT n° 104/2008, pp. 4274-4279 ; JORT n° 55/2009, pp. 1822-1843","fr, texte du miroir de l'IORT",
+2010,aucun,,0,0,loi n° 2009-71 (LF 2010),lf-2010,,"JORT n° 102/2009, pp. 3911-3922","fr, texte du miroir de l'IORT",
+2011,prelevement,Fonds national d'amélioration de l'habitat,20,40,décret-loi n° 2011-56 (LFC 2011),dl-2011-56-lfc-2011,art. 3,1013,"fr, couche texte du JORT","40 MD, dont 20 MD au FNAH et 20 MD au Compte national de solidarité sociale ; la loi de finances pour 2011 (loi n° 2010-58) n'en porte pas"
+2011,prelevement,Compte national de solidarité sociale,20,40,décret-loi n° 2011-56 (LFC 2011),dl-2011-56-lfc-2011,art. 3,1013,"fr, couche texte du JORT","40 MD, dont 20 MD au FNAH et 20 MD au Compte national de solidarité sociale ; la loi de finances pour 2011 (loi n° 2010-58) n'en porte pas"
+2012,prelevement,Fonds national d'amélioration de l'habitat,60,60,loi n° 2012-1 (LFC 2012),lfc-2012,art. 36,927,"fr, couche texte du JORT","la loi de finances pour 2012 (loi n° 2011-7, JORT n° 1/2012) n'en porte pas"
+2013,prelevement,Fonds national d'amélioration de l'habitat,60,60,loi n° 2012-27 (LF 2013),lf-2013,art. 11,5,"fr, couche texte du JORT",art. 11 de la loi de finances pour 2013
+2013,transfert_global,,,636,loi n° 2013-51 (LFC 2013),lfc-2013,art. 3,3563,"fr, texte du miroir de l'IORT",prélèvement sur les soldes de l'ensemble des fonds spéciaux du Trésor au profit du titre I ; part du fonds non identifiée ; la même loi ramène à 0 la prévision de recettes du fonds
+2014,aucun,,0,0,loi n° 2013-54 (LF 2014) ; loi n° 2014-54 (LFC 2014),lf-2014;lfc-2014,,"JORT n° 105/2013 ; JORT n° 68/2014, pp. 2183-2232","fr, texte du miroir de l'IORT",
+2015,aucun,,0,0,loi n° 2014-59 (LF 2015) ; loi n° 2015-30 (LFC 2015),lf-2015;lfc-2015,,JORT n° 105/2014 ; JORT n° 67/2015,"fr, texte du miroir de l'IORT",
+2016,aucun,,0,0,loi n° 2015-53 (LF 2016) ; loi n° 2017-1 (LFC 2016),lf-2016;lfc-2016,,JORT n° 2/2017,"fr, texte du miroir de l'IORT",
+2017,aucun,,0,0,loi n° 2016-78 (LF 2017) ; loi n° 2017-63 (LFC 2017),lf-2017;lfc-2017,,JORT n° 92/2017,"fr, texte du miroir de l'IORT",
+2018,aucun,,0,0,loi n° 2017-66 (LF 2018) ; loi n° 2018-55 (LFC 2018),lf-2018;lfc-2018,,,"fr, texte du miroir de l'IORT",
+2019,aucun,,0,0,loi n° 2018-56 (LF 2019) ; loi n° 2019-77 (LFC 2019),loi2018-56-lf2019;lfc-2019,,"JORT n° 100/2019, pp. 4266-4274","fr, texte du miroir de l'IORT",
+2020,aucun,,0,0,loi n° 2019-78 (LF 2020),lf-2020,,,"fr, texte du miroir de l'IORT",
+2021,aucun,,0,0,loi n° 2020-46 (LF 2021) ; décret-loi n° 2021-3 (LFR 2021),lf-2021;lfr-2021,,"JORT n° 128/2020 ; JORT n° 105/2021, pp. 2559-2573","fr, texte du miroir de l'IORT",
+2022,aucun,,0,0,décret-loi n° 2021-21 (LF 2022) ; décret-loi n° 2022-69 (LFR 2022),dl2021-21-lf2022;lfr-2022,,"JORT n° 119/2021 ; JORT n° 127/2022, p. 3163","fr, texte du miroir de l'IORT",
+2023,aucun,,0,0,décret-loi n° 2022-79 (LF 2023) ; loi n° 2023-12 (LFR 2023),lf-2023;lfc-2023,,"JORT n° 141/2022 ; JORT n° 136/2023, p. 3128","ar, couche texte du JORT ; fr, couche texte du JORT","loi de finances lue dans son édition arabe, l'édition française n'étant ni au corpus ni sur pist.tn ; elle ajoute une précision à l'art. 3 de la loi n° 77-54 (contribution), sans prélèvement"
+2024,aucun,,0,0,loi n° 2023-13 (LF 2024),lf-2024,,JORT n° 144/2023,"ar, couche texte du JORT","loi de finances lue dans son édition arabe, l'édition française n'étant ni au corpus ni sur pist.tn"
+2025,aucun,,0,0,loi n° 2024-48 (LF 2025),lf-2025,,JORT n° 149/2024,"ar, couche texte du JORT","loi de finances lue dans son édition arabe, l'édition française n'étant ni au corpus ni sur pist.tn"
+2026,aucun,,0,0,loi n° 2025-17 (LF 2026),lf-2026,,,"fr, texte du miroir de l'IORT","l'art. 21 ajoute un alinéa à l'art. 5 de la loi n° 77-54 (financement de projets des opérateurs), sans prélèvement"
