@@ -1,0 +1,27 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-24
+# séries (tunisia_data) : retraites-deputes-retenue
+# sources (citation) : @loi85-16, @loi94-71, @loi2001-123-lf2002, @loi2007-43, @lf-2026
+# fiches : 
+# méthode/hypothèses : la série commence à la loi n° 85-16 ; le dernier palier, celui du 13 mars 2023, est prolongé jusqu'en 2026
+# note : Retenue sur l'indemnité du député et contribution de l'État, taux de l'article 5 de la loi n° 85-16 à leurs dates d'effet, 1985-2026 (valeurs et textes au @tbl-cnrps-deputes-retenue)
+Grandeur,Date d'effet,Valeur,Ce que fait le texte,Texte,Journal officiel
+Retenue sur l'indemnité du député,1985-03-17,10.0,fixe la valeur,"Loi n° 85-16 du 8 mars 1985, fixant le régime de retraite des députés, article 5",https://www.pist.tn/jort/1985/1985F/Jo02185.pdf
+Retenue sur l'indemnité du député,1994-07-01,11.0,change la valeur,"Loi n° 94-71 du 27 juin 1994, relative à la révision des taux de la contribution aux régimes de retraite dans le secteur public, article unique",https://www.pist.tn/jort/1994/1994F/Jo05094.pdf
+Retenue sur l'indemnité du député,2002-07-01,11.5,change la valeur,"Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85",https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+Retenue sur l'indemnité du député,2003-07-01,11.75,change la valeur,"Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85",https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+Retenue sur l'indemnité du député,2004-07-01,12.0,change la valeur,"Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85",https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+Retenue sur l'indemnité du député,2007-07-01,12.4,change la valeur,"Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d'invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux, article premier",https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+Retenue sur l'indemnité du député,2008-07-01,12.8,change la valeur,"Loi n° 2007-43 du 25 juin 2007, article premier",https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+Retenue sur l'indemnité du député,2009-07-01,13.2,change la valeur,"Loi n° 2007-43 du 25 juin 2007, article premier",https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+Retenue sur l'indemnité du député,2023-03-13,13.25,change la valeur,"Loi n° 2025-17 du 12 décembre 2025, portant loi de finances pour l'année 2026, articles 102 et 103 (article 5 nouveau de la loi n° 85-16)",https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf
+Contribution de l'État,1985-03-17,15.0,fixe la valeur,"Loi n° 85-16 du 8 mars 1985, fixant le régime de retraite des députés, article 5",https://www.pist.tn/jort/1985/1985F/Jo02185.pdf
+Contribution de l'État,1995-07-01,16.2,change la valeur,"Loi n° 94-71 du 27 juin 1994, relative à la révision des taux de la contribution aux régimes de retraite dans le secteur public, article unique",https://www.pist.tn/jort/1994/1994F/Jo05094.pdf
+Contribution de l'État,2002-07-01,16.7,change la valeur,"Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85",https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+Contribution de l'État,2003-07-01,16.95,change la valeur,"Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85",https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+Contribution de l'État,2004-07-01,17.2,change la valeur,"Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85",https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+Contribution de l'État,2005-07-01,17.45,change la valeur,"Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85",https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+Contribution de l'État,2006-07-01,17.7,change la valeur,"Loi n° 2001-123 du 28 décembre 2001, portant loi de finances pour l'année 2002, article 85",https://www.pist.tn/jort/2001/2001F/Jo1042001.pdf
+Contribution de l'État,2007-01-01,18.3,change la valeur,"Loi n° 2007-43 du 25 juin 2007, modifiant et complétant les lois régissant les pensions servies au titre des régimes de retraite, d'invalidité et de survivants dans les secteurs public et privé et des régimes spéciaux, article premier",https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+Contribution de l'État,2008-01-01,18.9,change la valeur,"Loi n° 2007-43 du 25 juin 2007, article premier",https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+Contribution de l'État,2009-01-01,19.5,change la valeur,"Loi n° 2007-43 du 25 juin 2007, article premier",https://www.pist.tn/jort/2007/2007F/Jo0512007.pdf
+Contribution de l'État,2023-03-13,20.5,change la valeur,"Loi n° 2025-17 du 12 décembre 2025, portant loi de finances pour l'année 2026, articles 102 et 103 (article 5 nouveau de la loi n° 85-16)",https://www.pist.tn/jort/2025/2025A/Ja1482025.pdf

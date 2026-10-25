@@ -89,6 +89,9 @@ ot.utiliser_paquet("openfisca_tunisia")
 
 PAQUET = "openfisca_tunisia"
 CNRPS = "parameters/retraite/cnrps"
+DEPUTES = ("parameters/prelevements_sociaux/cotisations_sociales/secteur_public/"
+           "regimes_speciaux/deputes")
+DIFFERENTIEL = "parameters/retraite/differentiel_petites_pensions"
 RSNA = "parameters/retraite/rsna"
 RACINE = Path(__file__).parent.parent / "precis"
 LANGUES = ("fr", "ar")
@@ -99,6 +102,11 @@ MOTS = {
     "fr": {
         "effet": "Effet",
         "texte": "Texte",
+        "deputes_retenue": "Retenue sur l'indemnité du député",
+        "deputes_contribution": "Contribution de l'État",
+        "magistrats_ta": "Tribunal administratif",
+        "magistrats_cc": "Cour des comptes",
+        "differentiel_seuil": "Seuil de la pension mensuelle nette",
         # Les en-têtes portent l'ancre du glossaire, comme le faisaient les cellules du
         # tableau écrit à la main : l'ancre `#g-<id>` est commune aux deux langues.
         "cadre_commun": "Cadre commun (art. 24)",
@@ -161,6 +169,11 @@ MOTS = {
     "ar": {
         "effet": "بداية السريان",
         "texte": "النصّ",
+        "deputes_retenue": "الاقتطاع من منحة النائب",
+        "deputes_contribution": "مساهمة الدولة",
+        "magistrats_ta": "المحكمة الإدارية",
+        "magistrats_cc": "دائرة المحاسبات",
+        "differentiel_seuil": "سقف الجراية الشهرية الصافية",
         "cadre_commun": "الإطار العام (الفصل 24)",
         "penibles": "[الأشغال الشاقّة وغير الصحّية](#g-travaux-penibles-insalubres) (الفصل 27)",
         "astreignantes": "[الوظائف المرهقة](#g-fonctions-astreignantes) (الفصل 28)",
@@ -232,6 +245,28 @@ CLES_AGES = {
     "2009-04-19": "loi2009-20, art. 2",
     "2019-07-01": "loi2019-37, art. 5",
     "2020-01-01": "loi2019-37, art. 1 et 5",
+}
+# Retenue des députés et contribution de l'État, art. 5 de la loi n° 85-16 : le texte de chaque
+# date d'effet, avec l'article et la page que le paramètre cite.
+_LF2002 = "loi2001-123-lf2002, art. 85, p. 4260"
+_L2007 = "loi2007-43, art. 1, p. 2198"
+CLES_DEPUTES = {
+    "1985-03-17": "loi85-16, art. 5, p. 376",
+    "1994-07-01": "loi94-71, art. unique, p. 1086",
+    "1995-07-01": "loi94-71, art. unique, p. 1086",
+    **{f"{a}-07-01": _LF2002 for a in range(2002, 2007)},
+    **{f"{a}-01-01": _L2007 for a in (2007, 2008, 2009)},
+    **{f"{a}-07-01": _L2007 for a in (2007, 2008, 2009)},
+    "2023-03-13": "lf-2026, art. 102 et 103",
+}
+# Limites d'âge du Tribunal administratif (décret n° 73-459) et de la Cour des comptes
+# (décret n° 74-820).
+CLES_MAGISTRATS = {
+    "1973-10-07": "decret73-459, art. 1, p. 1532",
+    "1974-09-01": "decret74-820, art. 1, p. 1919",
+}
+CLES_DIFFERENTIEL = {
+    "2020-06-10": "decret-loi-2020-30, art. 1",
 }
 CLES_MILITAIRES = {
     "1985-09-12": "loi85-12, art. 61",
@@ -857,6 +892,7 @@ def _fraction(v):
 
 def tableaux_lot_a(langue):
     m = MOTS_LOT_A[langue]
+    mm = MOTS[langue]
     f = ot.formateurs(langue)
     mois, trimestres = f.duree("mois"), f.duree("trimestres")
     fiche = dict(entetes=(m["grandeur"], m["valeur"], m["texte"]), langue=langue)
@@ -1383,6 +1419,34 @@ def tableaux_lot_a(langue):
         "raci.md": raci,
         "cnrps_departs_anticipes.md": cnrps_departs,
         "cnrps_survivants.md": cnrps_survivants,
+        # Deux taux qui s'appliquent à la même assiette, relevés par quatre textes : le
+        # tableau suit les paramètres tels qu'ils sont datés, une ligne par date d'effet de
+        # l'un ou de l'autre.
+        "cnrps_deputes_retenue.md": lambda: ot.tableau_evolution_datee(
+            [
+                (f"{DEPUTES}/retenue.yaml", mm["deputes_retenue"], f.taux),
+                (f"{DEPUTES}/contribution_etat.yaml", mm["deputes_contribution"], f.taux),
+            ],
+            cles=CLES_DEPUTES, **datee,
+        ),
+        # Les deux décrets visent les mêmes fonctions ; avant sa date, chaque cour relève de
+        # la limite commune des civils, qui n'est pas un état de ces paramètres : la case
+        # reste vide.
+        "cnrps_magistrats_ta_cc.md": lambda: ot.tableau_evolution_datee(
+            [
+                (f"{CNRPS}/age_legal/civil/magistrats_tribunal_administratif.yaml",
+                 mm["magistrats_ta"], f.age),
+                (f"{CNRPS}/age_legal/civil/magistrats_cour_des_comptes.yaml",
+                 mm["magistrats_cc"], f.age),
+            ],
+            cles=CLES_MAGISTRATS, **datee,
+        ),
+        # Une seule date d'effet : le décret-loi ne fixe pas de terme et aucun texte ne
+        # relève le seuil.
+        "cnrps_differentiel.md": lambda: ot.tableau_evolution_datee(
+            [(f"{DIFFERENTIEL}/seuil.yaml", mm["differentiel_seuil"], f.dinars)],
+            cles=CLES_DIFFERENTIEL, **datee,
+        ),
     }
 
 
@@ -1450,6 +1514,7 @@ def main() -> int:
         serie_avec_liens("rsna-actualisation-salaires", serie_actualisation),
         serie_avec_liens("retraites-taux-liquidation", serie_taux_liquidation),
         serie_avec_liens("retraites-smig-planchers", serie_smig_planchers),
+        serie_deputes(),
     ]
     return max(codes)
 
@@ -1746,6 +1811,28 @@ def serie_smig_planchers() -> int:
     print(f"✓ série retraites-smig-planchers : {len(df)} dates, "
           f"{df['date'].iloc[0]} → {df['date'].iloc[-1]}")
     return 0
+
+
+SERIE_DEPUTES = "retraites-deputes-retenue"
+
+
+def serie_deputes() -> int:
+    """Émet la série longue de la retenue et de la contribution de l'État des députés.
+
+    Une ligne par grandeur et par date d'effet, avec le texte et son lien au Journal
+    officiel : la figure en escalier du chapitre la lit par `figtools.series()`.
+    """
+    parametres = [
+        ot.ParametreDate(
+            "retenue", f"{DEPUTES}/retenue.yaml",
+            {"fr": "Retenue pour pension sur l'indemnité parlementaire des députés",
+             "ar": "الاقتطاع للجراية من المنحة البرلمانية للنواب"}),
+        ot.ParametreDate(
+            "contribution_etat", f"{DEPUTES}/contribution_etat.yaml",
+            {"fr": "Contribution de l'État au régime de retraite des députés",
+             "ar": "مساهمة الدولة في نظام تقاعد النواب"}),
+    ]
+    return ot.ecrire_serie_parametres(SERIE_DEPUTES, parametres, CACHE)
 
 
 if __name__ == "__main__":

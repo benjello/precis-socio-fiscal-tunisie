@@ -1,0 +1,6 @@
+- libelle: الاقتطاع للجراية من المنحة البرلمانية للنواب
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_public/regimes_speciaux/deputes/retenue.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_public.regimes_speciaux.deputes.retenue/table/
+- libelle: مساهمة الدولة في نظام تقاعد النواب
+  parametre: parameters/prelevements_sociaux/cotisations_sociales/secteur_public/regimes_speciaux/deputes/contribution_etat.yaml
+  url: https://parameters.tn.tax-benefit.org/ar/parameters/prelevements_sociaux.cotisations_sociales.secteur_public.regimes_speciaux.deputes.contribution_etat/table/
