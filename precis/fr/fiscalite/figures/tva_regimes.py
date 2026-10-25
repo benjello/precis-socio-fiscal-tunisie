@@ -205,7 +205,8 @@ def table() -> pd.DataFrame:
 # dinars courants des deux côtés : aucun PIB. 2026 n'a que sa prévision.
 
 SERIE_RECETTES = "recettes-fiscales-composition"
-SERIES_PREVU_REALISE = (SERIE, SERIE_RECETTES, SERIE_RATIOS)
+SERIES_PREVU_REALISE = (SERIE, SERIE_RECETTES, SERIE_RATIOS, "tva-ecart-prevision-realise",
+                        "pib-courant-par-base")
 BLEU, GRIS_CLAIR = "#0969da", "#8c959f"
 
 _L.update({
@@ -285,16 +286,26 @@ def _vue_ecart():
 
 
 def fig_prevu_realise():
+    """Prévision et recette (trois mesures), puis l'écart de la recette à la prévision : en
+    millions de dinars, en % de la prévision, en % du PIB de chaque base (`figures/tva_ecart.py`,
+    série `tva-ecart-prevision-realise`)."""
+    from figures import tva_ecart
     return [(_l("vue_prevu"), _vue_prevu_realise()), (_l("vue_pib"), _vue_prevu_realise("pib")),
-            (_l("vue_dep"), _vue_prevu_realise("dep")), (_l("vue_ecart"), _vue_ecart())]
+            (_l("vue_dep"), _vue_prevu_realise("dep"))] + tva_ecart.vues()
 
 
 def table_prevu_realise() -> pd.DataFrame:
-    d = _prevu_realise()
+    """Une ligne par exercice : prévision, recette, parts du PIB et des dépenses, puis l'écart
+    (millions de dinars, % de la prévision, % du PIB de chaque base) et la prévision de la loi de
+    finances complémentaire quand elle existe."""
+    from figures import tva_ecart
+    d = _prevu_realise().drop(columns=["ecart_md", "ecart"])
     for m, nom in (("pib", "pct_pib"), ("dep", "pct_dep")):
         d[nom + "_prevu"] = _rapporte(d["prevu"], m).round(3)
         d[nom + "_realise"] = _rapporte(d["realise"].dropna(), m).round(3)
-    d = d.round({"prevu": 1, "realise": 1, "ecart_md": 1, "ecart": 1}).reset_index()
-    d.columns = [_l(k) for k in ("col_annee", "col_prevu", "col_realise", "col_ecart_md",
-                                 "col_ecart", "col_pp", "col_pr", "col_dp", "col_dr")]
+    d = d.round({"prevu": 1, "realise": 1})
+    d.columns = [_l(k) for k in ("col_prevu", "col_realise", "col_pp", "col_pr", "col_dp",
+                                 "col_dr")]
+    d = d.join(tva_ecart.colonnes_table()).reset_index()
+    d = d.rename(columns={"annee": _l("col_annee")})
     return d.fillna("")
