@@ -3571,7 +3571,7 @@ TODO de l'annexe) ; contradiction sur l'Agence tunisienne d'Internet (Cour des c
 forme et participation par entreprise ; périmètre d'ensemble avant 1998 (aucune liste publiée) ;
 tableau de tutelle après 2010 et classement de l'Office national des postes frontaliers
 terrestres (fiches `r-ep-tutelle-modificatifs-apres-2010`, `r-onpft-classement-entreprise-publique`) ;
-noms arabes des listes ; lois n° 2004-30 et n° 2007-33 à lire ; libellés arabes de la figure. Dix figures et trente tableaux, tous engendrés depuis les séries sauf quatre
+noms arabes des listes ; libellés arabes de la figure. Dix figures et trente tableaux, tous engendrés depuis les séries sauf quatre
 (les réformes ; les deux registres de textes ; les six éditions du rapport). Depuis le
 11 octobre 2026 (retouche), chaque figure a trois vues — dinars courants, % des dépenses de
 l'État hors service de la dette, % du PIB — et les tableaux de premier plan les mêmes colonnes ;
@@ -3620,14 +3620,30 @@ Ce qui reste :
   l'image, puis à verser dans `tunisia-data`. De même les classements par charges de
   personnel et par produits d'exploitation, et l'effectif total (non publié par le rapport :
   INS, emploi par secteur institutionnel, non cherché).
-- **Textes d'après 2011** : aucun modificatif de la loi n° 89-9 identifié après 2006 (fiche
-  `r-loi89-9-modificatifs-apres-2006`, plein texte du corpus non rejoué) ; liste des
-  établissements : rien après 2007 (fiche `r-epna-liste-modificatifs-apres-2007`, un seul terme
-  arabe essayé). Connus par leur seul intitulé : loi n° 93-124, décrets n° 2002-2197,
-  2006-1555, 2009-2965, 2013-4953, décrets gouvernementaux n° 2016-510, 2018-618 et 2020-1061.
-- **Dates d'effet non calculées** : lois n° 96-74, 99-38, 2001-33, 2006-36 (date de dépôt du
-  *Journal officiel* à relever) ; lois n° 69-50 et 85-72 données en fourchette (fascicules
-  datés de plusieurs jours).
+- **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
+  `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
+  fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la
+  française étant absente du corpus et de pist.tn) — loi n° 85-74 et ses modificatifs n° 87-34 et 88-54 ; loi
+  organique n° 2019-41 (art. 111, 164-166 : la Cour des comptes reprend les fautes de gestion au 1er janvier 2020) ;
+  loi de finances pour 1993, art. 123, et loi n° 93-124 (régime transitoire de l'article 9 prorogé au 31 décembre
+  1993 puis 1994) ; loi n° 96-74 relue (article 22 bis : l'édition française imprime « 12 (bis) », l'édition arabe,
+  p. 1940, dit 22 bis) ; décret n° 2002-2197 et décret gouvernemental n° 2016-510 ; loi n° 2004-30 ; loi n° 2006-36 et
+  ses quatre décrets d'application (n° 2006-1555, 2009-2965, 2013-4953, 2020-1061 — champs distincts, aucun
+  n'abroge l'autre) ; loi n° 2007-33 ; décret gouvernemental n° 2018-618 ; décrets n° 2020-314, 2020-1052, 2022-303
+  et arrêté du 18 août 2022 (administrateurs) ; décrets n° 2014-12 et 2015-2217 (rémunération des dirigeants :
+  une phrase et un lien vers « Les rémunérations publiques », qui en est le domicile) ; décrets n° 2023-591 et
+  2024-86 (audit des recrutements 2011-2021, tout le secteur public : ce ne sont pas les comités d'audit des
+  conseils). **Dates d'effet** calculées par la mention de dépôt au gouvernorat de Tunis imprimée en dernière page
+  de chaque fascicule (lois n° 93-124, 96-74, 99-38, 2001-33, décrets n° 97-564, 2002-2197, 2004-2265, loi
+  n° 2006-36, et tous les textes neufs). **Restent** : aucun modificatif de la loi n° 89-9 après 2006 (fiche
+  `r-loi89-9-modificatifs-apres-2006`, plein texte du corpus non rejoué) ; liste des établissements : rien
+  après 2007 (fiche `r-epna-liste-modificatifs-apres-2007`) ; décret n° 97-565 (tutelle, 1997), que le décret de
+  2002 abroge, non lu (lisible au corpus, JORT n° 27 de 1997, p. 565-567) ; rapports annuels de la Cour de
+  discipline financière publiés au JORT de 1990 à 2010 (couche texte ou image selon l'année) et article 67 de la
+  loi de finances pour 1986, non lus ; application du calendrier de 2022 (nominations par concours) non suivie ;
+  lois n° 69-50 et 85-72 toujours en fourchette (fascicules datés de plusieurs jours). Le décret n° 2014-12 prend
+  effet le 25 janvier 2014 (dépôt le 20 janvier) : à reporter dans le registre des « Rémunérations publiques »
+  (TODO de `_regime_conventionnel.qmd`).
 - **Pages arabes** : la loi n° 89-9 et ses modificatifs n'ont été lus qu'en français ; les
   termes arabes du glossaire viennent des rapports du ministère et du relevé de la Direction
   générale de la privatisation.
