@@ -344,9 +344,12 @@ moment de leur conversion, pas avant.
 - Plus tard : le transport ; l'éducation ; le logement ; l'environnement.
 
 **V. Les institutions**
-- Les entreprises publiques : présentation ; la relation financière (13 600 mots, à découper
-  par dispositif quand le brouillon sera relu) ; rapports et études : le Livre blanc de 2018
-  (à extraire) ; annexes : liste 1997-2021, glossaire.
+- Les entreprises publiques : présentation ; la relation financière (19 000 mots au 27 octobre 2026),
+  à scinder en quatorze chapitres répartis en six parties : le statut, l'État et les entreprises
+  (transferts, garanties, recettes, cessions, restructurations), les entreprises par secteur, l'emploi et
+  les comptes, la longue période, les rapports et études ; annexes : liste 1997-2021, registre des textes,
+  glossaire. Plan, table de correspondance, sources et ordre de remplissage :
+  `docs/notes/chantier-decoupage-entreprises-publiques.md`.
 
 **VI. La synthèse**
 - Le cadre des finances publiques (à écrire) : périmètre et nomenclatures ; recettes et

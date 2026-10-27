@@ -3714,15 +3714,16 @@ Ce qui reste :
 - **Gestions 2010-2016, lois de finances 2016-2024** : voir les points « 2010-2016 » et « Plafond légal » ci-dessus ;
   le plafond de 2016 à 2024 vient des annexes du ministère (série `garanties-etat`), les articles des lois de
   finances de 2016 à 2024 restent à lire pour que la série légale rejoigne les annexes.
-- **Forme du livre : volume ou chapitre — décision laissée à la revue.** Éléments : (a) le livre n'a qu'un chapitre
-  (`_relation_financiere.qmd`, environ 1 200 lignes) et une annexe ; (b) ses figures, ses séries et son plan
-  (mise en place, réformes, état du droit, longue période) sont ceux d'un chapitre de partie V ; (c) le volume
-  n'existe qu'en français et n'est pas lié depuis l'accueil comme les autres ; (d) la matière s'est étendue
-  (garanties, dettes croisées, dividendes, cessions, effectifs, 2010-2016, budget avant 1986) au point que la
-  scission du chapitre selon le critère de `docs/conventions-redaction.md` § 4 est plausible : relation financière,
-  garanties et dette garantie, cessions, effectifs. Un volume suppose un livre arabe et un `_quarto.yml` arabe
-  tenus à la main ; un chapitre de la partie V évite cette charge mais allonge un volume déjà chargé. Aucune
-  décision prise ici.
+- **Forme du livre : un volume, à segmenter en quatorze chapitres (27 octobre 2026).** La demande d'une
+  segmentation de premier niveau plus fine tranche la question « volume ou chapitre » en faveur du volume ;
+  à confirmer par la revue humaine. Le plan, la table de correspondance des sections actuelles, les liens
+  entrants à préserver, les sources par chapitre (en série, à portée, à obtenir), les pièges de domicile
+  (compensation, caisses, Banque centrale, sociétés confisquées depuis 2011, concessions) et l'ordre de
+  remplissage sont dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. La scission est mécanique,
+  sans contenu nouveau, et vient après la relecture de la passe sur les années récentes (branche
+  `ep/cloture-2017-2024`). Quatre arbitrages attendent l'humain (§ 8 de la note) : chapitres sectoriels ou
+  « grandes entreprises » ; domicile des sociétés confisquées ; chapitre « gouvernance » séparé ou fondu ;
+  ordre des parties.
 - **État chiffré des lacunes restantes du volume (24 octobre 2026)** :
 
   | Lacune | État | Raison |
