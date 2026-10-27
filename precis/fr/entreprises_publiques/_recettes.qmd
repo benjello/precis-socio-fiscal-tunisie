@@ -1,6 +1,6 @@
 # Les dividendes et les versements au budget {#sec-ep-dividendes .domicile-unique}
 
-L'État reçoit de ses entreprises deux choses que le rapport sur les entreprises publiques tient séparées : sa part dans leurs bénéfices, et l'ensemble de leurs versements au budget, qui sont d'abord des impôts.
+L'État reçoit de ses entreprises deux choses que le rapport sur les entreprises publiques tient séparées : sa part dans leurs bénéfices, et l'ensemble de leurs versements au budget, qui sont d'abord des impôts. Le budget, lui, inscrit chaque année une recette qui réunit les bénéfices des entreprises et la part de l'État dans les profits de la Banque centrale ; la dernière section la donne de 2003 à 2024 (@sec-ep-versements).
 
 ## La part de l'État dans les bénéfices {#sec-ep-dividendes-part}
 
@@ -93,3 +93,72 @@ ep.tableau_flux(
 ::::
 
 L'édition LF 2025 ne donne plus ces flux : elle les remplace par les encours croisés (@sec-ep-croisees).
+
+
+## Les versements au budget depuis 2003 {#sec-ep-versements}
+
+Les gestions 2010 à 2024 sont détaillées dans la longue période (@sec-ep-lp-cloture) ; cette section remonte à 2003. Chaque année, le budget de l'État inscrit une recette « transferts des entreprises publiques et profits du Trésor » : la part du budget dans les profits de la Banque centrale, les excédents des entreprises publiques, les bénéfices des sociétés et d'autres profits du Trésor. De 2003 à 2009, elle va de 353,4 MD (2005) à 1 005,5 MD (2008), soit de 0,84 % à 1,82 % du PIB (PIB du ministère des Finances en base 1997 pour ces deux années) ; la part de la Banque centrale en fait 0 % en 2005 et en 2009, et 62,8 % en 2006.
+
+```{python}
+#| label: fig-ep-versements
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "versements",
+    caption=("Versements des entreprises publiques et de la Banque centrale au budget de "
+             "l'État, par ligne, gestions 2003 à 2024, en dinars courants, en % des dépenses de "
+             "l'État hors service de la dette et en % du PIB"),
+    note_lecture=(
+        "Chaque barre est la recette « transferts des entreprises publiques et profits du Trésor » d'une gestion, telle que le budget l'inscrit, d'après les rapports de la Cour des comptes sur la clôture du budget. Les gestions 2003 à 2009 viennent des rapports sur les gestions 2005, 2006, 2007 et 2009, qui donnent chacun la gestion et les deux précédentes ; 2008 vient du rapport 2009. Les gestions 2010 à 2024 viennent des rapports 2011 à 2024 (@sec-ep-lp-cloture). C'est le même tableau, sous les mêmes lignes, jusqu'à 2019 ; depuis 2020, la Cour n'imprime plus de total et la hauteur des barres est la somme des lignes imprimées, ce que marque le trait pointillé. "
+        "La part de la Banque centrale est absente en 2005, 2009 et 2010 et réunit plusieurs exercices en 2006 et en 2011 : le budget inscrit la part d'un exercice l'année suivante, parfois plus tard (tableau replié). "
+        "Le PIB est celui du ministère des Finances pour 2003 et 2004, sans base indiquée, puis en base 1997 de 2005 à 2009, et celui de l'Institut national de la statistique en base 2015 depuis 2010, rétropolé par l'INS pour 2010 à 2014 : chaque changement de source ou de base est une rupture du dénominateur, marquée au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
+)
+```
+
+- **De 2003 à 2009, de 536,5 MD à 846,8 MD.** La recette fait 536,5 MD en 2003, 610,9 MD en 2004, 353,4 MD en 2005, 594,9 en 2006, 616,1 en 2007, 1 005,5 MD en 2008 et 846,8 MD en 2009, soit de 3,85 % à 7,86 % des dépenses de l'État hors service de la dette [@cdc-cloture-2005, p. 51 ; @cdc-cloture-2006, p. 44 ; @cdc-cloture-2007, p. 21 ; @cdc-cloture-2009, p. 23].
+- **Le budget inscrit la part de la Banque centrale avec un an de décalage, et parfois plus.** La part de l'exercice 2004, 148,4 MD, est gardée dans un compte d'attente du Trésor au lieu d'entrer au budget de 2005 ; le budget de 2006 l'inscrit avec celle de 2005, soit 373,6 MD [@cdc-cloture-2005, p. 49 ; @cdc-cloture-2006, p. 44]. En 2009, le ministère des Finances n'appelle pas la part de l'exercice 2008, 432 MD, qui reste dans les comptes de la Banque centrale ; les budgets de 2009 et de 2010 n'inscrivent rien à ce titre, celui de 2011 inscrit 874 MD pour les exercices 2008, 2009 et 2010 [@cdc-cloture-2009, p. 23-24 ; @bct-ra-2009, p. 289 ; @cdc-cloture-2011, p. 40].
+- **Le montant inscrit n'est pas toujours la part arrêtée par la Banque centrale.** Le budget inscrit 120 MD pour les 125 MD de l'exercice 2002, 100 MD pour les 104,5 MD de 2003, dont 4,5 MD vont au Fonds de péréquation des changes, 340,4 MD pour les 350,4 MD de 2006, 425 MD pour les 435 MD de 2007, et 874 MD pour les 910,7 MD des exercices 2008 à 2010 [@bct-ra-2002, p. 248 ; @bct-ra-2003, p. 258 ; @bct-ra-2004, p. 170 ; @bct-ra-2006, p. 292 ; @bct-ra-2008, p. 218 et 298 ; @bct-ra-2009, p. 299 ; @bct-ra-2010, p. 123].<!-- TODO (documentaliste) : les écarts de 2002, 2006, 2007 et 2008-2010 entre la part arrêtée par la Banque centrale et le montant inscrit au budget ne sont expliqués par aucun texte lu ; chercher l'affectation du reste (Fonds de péréquation des changes, comme en 2003 ?) dans les rapports annuels 2003, 2007, 2008 et 2011 et dans les lois de règlement. -->
+- **Les bénéfices des sociétés non pétrolières passent de 96,2 MD en 2003 à 508,1 MD en 2009.** Une partie des bénéfices de 2008 n'entre pas au budget de 2009 : la part de l'État dans ceux de la Compagnie des phosphates de Gafsa (617 MD) et du Groupe chimique tunisien (194 MD) reste au compte d'attente du Trésor en 2009 [@cdc-cloture-2009, p. 24].
+
+:::: {.chronologie-repliable titre="Versements au budget, gestions 2003 à 2009, par ligne ; part de l'État dans le résultat de la Banque centrale, exercices 2002 à 2010, et ligne du budget de l'année suivante"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_versements_anciens(
+    caption=("Versements des entreprises publiques et de la Banque centrale au budget de l'État "
+             "(transferts des entreprises publiques et profits du Trésor), gestions 2003 à 2009, "
+             "en millions de dinars courants, en % du PIB et en % des dépenses de l'État hors "
+             "service de la dette. Les excédents réunissent ceux des entreprises publiques "
+             "non pétrolières et, en 2003 seulement, 45 MD d'entreprises pétrolières ; un tiret "
+             "marque une ligne vide. Une gestion donnée par deux ou trois rapports a les mêmes "
+             "valeurs dans chacun. Sources : Cour des comptes [@cdc-cloture-2005, p. 51 ; "
+             "@cdc-cloture-2006, p. 44 ; @cdc-cloture-2007, p. 21 ; @cdc-cloture-2009, p. 23]. "
+             "PIB : ministère des Finances [@minfin-indicateurs-fp], base dite à chaque ligne ; "
+             "dépenses de l'État hors service de la dette [@minfin-remunerations]"))
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_bct_parts(
+    caption=("Part revenant à l'État dans le résultat de la Banque centrale, par exercice, "
+             "exercices 2002 à 2010, en millions de dinars courants, et part du budget dans les "
+             "profits de la Banque centrale inscrite au budget de la gestion suivante. Le "
+             "versement cité est le montant, arrondi, que le rapport de la Banque centrale dit "
+             "encaissé par le Trésor ; pour l'exercice 2007, le rapport n'imprime pas la "
+             "répartition du résultat. Sources : Banque centrale de Tunisie [@bct-ra-2002, "
+             "p. 248 ; @bct-ra-2003, p. 201 et 258 ; @bct-ra-2004, p. 170 et 264 ; "
+             "@bct-ra-2005, p. 288 ; @bct-ra-2006, p. 292 ; @bct-ra-2007, p. 229 ; "
+             "@bct-ra-2008, p. 218 et 298 ; @bct-ra-2009, p. 299 ; @bct-ra-2010, p. 123] ; "
+             "Cour des comptes [@cdc-cloture-2005, p. 51 ; @cdc-cloture-2006, p. 44 ; "
+             "@cdc-cloture-2007, p. 21 ; @cdc-cloture-2009, p. 23 ; @cdc-cloture-2011, p. 39]"))
+```
+
+::::
