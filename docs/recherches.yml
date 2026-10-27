@@ -2727,7 +2727,7 @@
   - dépouiller le rapport de la Cour des comptes sur la dette publique extérieure (2018)
 
 - id: r-ep-plafond-garantie-1995-2015
-  objet: article de chaque loi de finances qui fixe le plafond de la garantie de l'État (1995 à 2015, lus le 23 octobre 2026 ; 2016 et suivantes à lire), article de la loi de finances pour 1960 et texte de 1957-58, et lois de finances complémentaires de 1969 à 1991 dont l'index ne détaille pas les articles
+  objet: article de chaque loi de finances qui fixe le plafond de la garantie de l'État (1995 à 2015 lus le 23 octobre 2026, 2016 à 2026 le 27 octobre 2026), article de la loi de finances pour 1960 et texte de 1957-58, et lois de finances complémentaires de 1969 à 1991 dont l'index ne détaille pas les articles
   ou: [precis/fr/entreprises_publiques/_relation_financiere.qmd#sec-ep-garanties-plafond-legal]
   requetes:
     titres_like: ['%garantie de l''Etat%', '%octroi de la garantie%']
@@ -2746,10 +2746,17 @@
     couverture: 'jort_cache, titres (« garantie de l''Etat », « montant annuel d''octroi », « loi de finances complementaire ») et fascicules français du corpus local, 1995 à 2015 : article sur la garantie lu, dans la couche texte du fascicule (déchiffrée pour 1999 à 2004), pour les lois de finances n° 94-127 à 2014-59 (gestions 1995 à 2015), avec la loi n° 2002-90 du 29 octobre 2002 (gestion 2002 portée de 950 à 1 800 MD) et le décret-loi n° 2011-56 du 25 juin 2011 (gestion 2011 portée de 1 800 à 4 000 MD). Lois de finances complémentaires dont le texte ne porte aucune modification du plafond, par recherche de « limite duquel » dans le texte, ou à l''image pour 2002, 2004 et 2006 : n° 2002-100, 2004-87, 2005-103, 2006-70, 2007-64, 2008-76, 2009-40, 2013-51 et 2014-54 ; la loi n° 2012-1 réécrit l''article 9 au même montant (4 000 MD). Aucune loi de finances complémentaire pour 2015 n''est indexée. Reste hors couverture : gestion 1960, décret du 29 juin 1957, lois de finances complémentaires de 1969 à 1991, lois de finances de 2016 et suivantes. Note : docs/notes/entreprises-publiques-plafond-garanties-2026-10-23.md, § 6.'
     couvert_jusqu_au: 2026-10-23
     resultat: partiel
+  - date: 2026-10-27
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Lois de finances pour 2016 à 2026 et lois rectificatives ou complémentaires de 2016 à 2023, articles « garantie de l''État » et « prêts du Trésor » lus à l''image : fascicules français du corpus pour 2016 (JORT n° 105 de 2016, lire : n° 104 de 2015 absent, extrait du texte au pied de page du Journal officiel), 2017 (n° 105), 2018 (n° 101), 2020 (n° 104 de 2019, extrait), 2021 (n° 128 de 2020), 2022 (n° 119 de 2021), 2024 et 2025 (extraits), rectificatives n° 2019-77, 2020-45, 2021-3 et 2023-12 ; édition arabe pour la loi de finances pour 2023 (n° 141 de 2022, fascicule français absent et extrait illisible) et pour 2026 (n° 148 de 2025). Les éditions françaises des JORT n° 104 de 2015, 104 de 2018, 104 de 2019, 141 de 2022, 144 de 2023 et 149 de 2024 sont absentes du corpus et répondent 404 sur pist.tn. Aucune loi de finances complémentaire indexée pour 2024 ni 2025 ; la rectificative de 2022 (décret-loi n° 2022-69) et la complémentaire de 2018 (loi n° 2018-55) ne touchent pas ces articles. Séries de tunisia-data : jort-lf-plafond-garanties (1958-59 à 2026) et jort-lf-plafond-prets-tresor (2016-2026).'
+    couvert_jusqu_au: 2026-10-27
+    resultat: partiel
   a_faire:
   - lire en entier les lois de finances complémentaires de 1969 à 1991 pour y chercher une modification du plafond
   - chercher la gestion 1960 et le décret du 29 juin 1957 (fascicule à obtenir sur pist.tn)
-  - lire l'article sur la garantie des lois de finances de 2016 à 2024, pour que la série légale rejoigne les annexes du ministère des Finances
+  - obtenir les éditions françaises des JORT n° 104 de 2015, 104 de 2018, 104 de 2019, 141 de 2022, 144 de 2023 et 149 de 2024 (absentes de pist.tn le 27 octobre 2026) pour citer la page française de la loi de finances pour 2023
+  - verser les plafonds des prêts du Trésor antérieurs à 2016 (article présent depuis au moins 1995)
 
 - id: r-ep-budget-etat-1959-1985
   objet: 'budget de l''État avant 1986 : budgets d''équipement et de développement des lois de finances de 1961 à 1985, réalisation du budget (lois de règlement, rapports annuels de la Banque centrale), budget ordinaire de 1958-59 (décret du 29 juin 1957) et crédits de 1959-60'

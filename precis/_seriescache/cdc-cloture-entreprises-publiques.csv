@@ -1,195 +1,455 @@
 rubrique,poste,gestion,valeur_md,valeur_dinars,rapport,page_imprimee,page_pdf,lecture,libelle_imprime,divergence_entre_rapports,remarque
-garantie_interets_payes,interets_dette_garantie,2010,1.980596,1980596,cdc-2011,74,74,image,فائدة الدين المضمون من طرف الدولة,False,
-garantie_interets_payes,interets_dette_garantie,2011,1.908,1908000,cdc-2011,74,74,image,فائدة الدين المضمون من طرف الدولة,False,
-garantie_interets_payes,interets_dette_garantie,2011,1.908,1908000,cdc-2012,89,90,texte,فائدة الدين المضمون من طرف الدولة,False,
-garantie_interets_payes,interets_dette_garantie,2012,0.240214,240214,cdc-2012,89,90,texte,فائدة الدين المضمون من طرف الدولة,False,
-garantie_interets_payes,interets_dette_garantie,2012,0.240214,240214,cdc-2013,78,78,texte,فائدة الدين المضمون من طرف الدولة,False,
-garantie_interets_payes,interets_dette_garantie,2013,33.164241,33164241,cdc-2013,78,78,texte,فائدة الدين المضمون من طرف الدولة,False,
-garantie_interets_payes,interets_dette_garantie,2013,33.164241,33164241,cdc-2014,82,82,texte,فائدة الدين المضمون من طرف الدولة,False,
-garantie_interets_payes,interets_dette_garantie,2014,22.541125,22541125,cdc-2014,82,82,texte,فائدة الدين المضمون من طرف الدولة,False,
-garantie_interets_payes,interets_dette_garantie,2015,13.812152,13812152,cdc-2016,86,86,image,فائدة الدين المضمون من طرف الدولة,False,
-garantie_interets_payes,interets_dette_garantie,2016,4.363555,4363555,cdc-2016,86,86,image,فائدة الدين المضمون من طرف الدولة,False,
-garantie_principal_paye,art24_lf1999,2010,3.782525,3782525,cdc-2011,92,92,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2011,2.434825,2434825,cdc-2011,92,92,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2011,2.434825,2434825,cdc-2012,103,104,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2012,2.234963,2234963,cdc-2012,103,104,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2012,2.234963,2234963,cdc-2013,95,95,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2013,2.211123,2211123,cdc-2013,95,95,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2013,2.211123,2211123,cdc-2014,99,99,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2014,2.455546,2455546,cdc-2014,99,99,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2014,2.455546,2455546,cdc-2015,91,91,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2015,2.935606,2935606,cdc-2015,91,91,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2015,2.935606,2935606,cdc-2016,100,100,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,art24_lf1999,2016,2.765374,2765374,cdc-2016,100,100,image,الفصل 24 من قانون المالية لسنة 1999,False,
-garantie_principal_paye,ateliers_sncft,2015,0.163059,163059,cdc-2015,91,91,image,ضمان شركة أشغال السكك الحديدية,False,
-garantie_principal_paye,ateliers_sncft,2015,0.163059,163059,cdc-2016,100,100,image,ضمان شركة أشغال السكك الحديدية,False,
-garantie_principal_paye,bna_agricole,2010,19.88286,19882860,cdc-2011,92,92,image,قروض البنك الوطني الفلاحي,False,
-garantie_principal_paye,dette_agricole_loi65_1999,2010,1.202542,1202542,cdc-2011,92,92,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2011,1.154379,1154379,cdc-2011,92,92,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2011,1.154379,1154379,cdc-2012,103,104,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2012,1.202542,1202542,cdc-2012,103,104,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2012,1.202542,1202542,cdc-2013,95,95,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2013,1.202542,1202542,cdc-2013,95,95,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2013,1.202542,1202542,cdc-2014,99,99,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2014,1.202542,1202542,cdc-2014,99,99,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2014,1.202542,1202542,cdc-2015,91,91,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2015,1.202542,1202542,cdc-2015,91,91,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2015,1.202542,1202542,cdc-2016,100,100,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,dette_agricole_loi65_1999,2016,0.0,0,cdc-2016,100,100,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
-garantie_principal_paye,fouladh,2013,47.0,47000000,cdc-2014,99,99,image,ضمان الشركة التونسية لصناعة الحديد (الفولاذ),True,le rapport de 2013 écrit « قروض الشركة التونسية للبنك » (STB) pour ce même montant de 47 000 000 dinars ; le rapport de 2014 écrit « الشركة التونسية لصناعة الحديد »
-garantie_principal_paye,fouladh,2014,23.8225,23822500,cdc-2014,99,99,image,ضمان الشركة التونسية لصناعة الحديد (الفولاذ),False,
-garantie_principal_paye,fouladh,2014,23.8225,23822500,cdc-2015,91,91,image,ضمان الشركة التونسية لصناعة الحديد (الفولاذ),False,
-garantie_principal_paye,fouladh,2015,23.8225,23822500,cdc-2015,91,91,image,ضمان الشركة التونسية لصناعة الحديد (الفولاذ),False,
-garantie_principal_paye,fouladh,2015,23.8225,23822500,cdc-2016,100,100,image,ضمان الشركة التونسية لصناعة الحديد (الفولاذ),False,
-garantie_principal_paye,fpcl,2010,0.65431,654310,cdc-2011,92,92,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2011,0.615175,615175,cdc-2011,92,92,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2011,0.615175,615175,cdc-2012,103,104,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2012,0.448322,448322,cdc-2012,103,104,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2012,0.448322,448322,cdc-2013,95,95,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2013,0.448322,448322,cdc-2013,95,95,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2013,0.448322,448322,cdc-2014,99,99,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2014,0.35936,359360,cdc-2014,99,99,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2014,0.35936,359360,cdc-2015,91,91,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2015,0.393157,393157,cdc-2015,91,91,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2015,0.393157,393157,cdc-2016,100,100,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,fpcl,2016,0.230376,230376,cdc-2016,100,100,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
-garantie_principal_paye,office_cereales,2010,15.0,15000000,cdc-2011,92,92,image,القرض الرقاعي : ديوان الحبوب,False,
-garantie_principal_paye,office_cereales,2011,15.0,15000000,cdc-2011,92,92,image,القرض الرقاعي : ديوان الحبوب,False,
-garantie_principal_paye,office_cereales,2011,15.0,15000000,cdc-2012,103,104,image,القرض الرقاعي : ديوان الحبوب,False,
-garantie_principal_paye,office_huile,2013,7.669183,7669183,cdc-2013,95,95,image,قرض الديوان الوطني للزيت,False,
-garantie_principal_paye,office_huile,2013,7.669183,7669183,cdc-2014,99,99,image,قرض الديوان الوطني للزيت,False,
-garantie_principal_paye,office_huile,2014,11.357366,11357366,cdc-2014,99,99,image,قرض الديوان الوطني للزيت,False,
-garantie_principal_paye,office_huile,2014,11.357366,11357366,cdc-2015,91,91,image,قرض الديوان الوطني للزيت,False,
-garantie_principal_paye,office_huile,2015,7.688184,7688184,cdc-2015,91,91,image,قرض الديوان الوطني للزيت,False,
-garantie_principal_paye,office_huile,2015,7.688184,7688184,cdc-2016,100,100,image,قرض الديوان الوطني للزيت,False,
-garantie_principal_paye,office_huile,2016,7.688183,7688183,cdc-2016,100,100,image,قرض الديوان الوطني للزيت,False,
-garantie_principal_paye,pate_alfa,2012,1.272993,1272993,cdc-2012,103,104,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
-garantie_principal_paye,pate_alfa,2012,1.272993,1272993,cdc-2013,95,95,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
-garantie_principal_paye,pate_alfa,2014,12.544808,12544808,cdc-2014,99,99,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
-garantie_principal_paye,pate_alfa,2014,12.544808,12544808,cdc-2015,91,91,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
-garantie_principal_paye,pate_alfa,2015,3.486908,3486908,cdc-2015,91,91,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
-garantie_principal_paye,pate_alfa,2015,3.486908,3486908,cdc-2016,100,100,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
-garantie_principal_paye,pate_alfa,2016,2.416462,2416462,cdc-2016,100,100,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2010,20.771721,20771721,cdc-2011,92,92,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2011,20.771721,20771721,cdc-2011,92,92,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2011,20.771721,20771721,cdc-2012,103,104,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2012,20.771721,20771721,cdc-2012,103,104,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2012,20.771721,20771721,cdc-2013,95,95,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2013,20.771721,20771721,cdc-2013,95,95,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2013,20.771721,20771721,cdc-2014,99,99,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2014,20.771721,20771721,cdc-2014,99,99,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2014,20.771721,20771721,cdc-2015,91,91,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2015,20.771721,20771721,cdc-2015,91,91,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2015,20.771721,20771721,cdc-2016,100,100,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
-garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2016,21.974264,21974264,cdc-2016,100,100,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,21 974 264 imprimé en 2016 contre 20 771 721 les années précédentes
-garantie_principal_paye,stb,2012,70.0,70000000,cdc-2012,103,104,image,قروض الشركة التونسية للبنك,False,
-garantie_principal_paye,stb,2012,70.0,70000000,cdc-2013,95,95,image,قروض الشركة التونسية للبنك,False,
-garantie_principal_paye,stb,2013,47.0,47000000,cdc-2013,95,95,image,قروض الشركة التونسية للبنك,True,
-garantie_principal_paye,stir,2013,101.840556,101840556,cdc-2013,95,95,image,ضمان الشركة التونسية لصناعة التكرير,False,
-garantie_principal_paye,stir,2013,101.840556,101840556,cdc-2014,99,99,image,ضمان الشركة التونسية لصناعة التكرير,False,
-garantie_principal_paye,stir,2014,123.592085,123592085,cdc-2014,99,99,image,ضمان الشركة التونسية لصناعة التكرير,False,
-garantie_principal_paye,stir,2014,123.592085,123592085,cdc-2015,91,91,image,ضمان الشركة التونسية لصناعة التكرير,False,
-garantie_principal_paye,stir,2015,124.277871,124277871,cdc-2015,91,91,image,ضمان الشركة التونسية لصناعة التكرير,False,
-garantie_principal_paye,stir,2015,124.277871,124277871,cdc-2016,100,100,image,ضمان الشركة التونسية لصناعة التكرير,False,
-garantie_principal_paye,stir,2016,76.746471,76746471,cdc-2016,100,100,image,ضمان الشركة التونسية لصناعة التكرير,False,
-garantie_principal_paye,total,2010,39.319695,39319695,cdc-2011,92,92,image,تسديد أصل الدين المضمون من طرف الدولة,False,
-garantie_principal_paye,total,2011,18.05,18050000,cdc-2011,92,92,image,تسديد أصل الدين المضمون من طرف الدولة,False,
-garantie_principal_paye,total,2011,18.05,18050000,cdc-2012,103,104,image,تسديد أصل الدين المضمون من طرف الدولة,False,
-garantie_principal_paye,total,2012,73.956278,73956278,cdc-2012,103,104,image,تسديد أصل الدين المضمون من طرف الدولة,False,
-garantie_principal_paye,total,2012,73.956278,73956278,cdc-2013,95,95,image,تسديد أصل الدين المضمون من طرف الدولة,False,
-garantie_principal_paye,total,2013,159.169184,159169184,cdc-2013,95,95,image,تسديد أصل الدين المضمون من طرف الدولة,False,
-garantie_principal_paye,total,2013,159.169184,159169184,cdc-2014,99,99,image,تسديد أصل الدين المضمون من طرف الدولة,False,
-garantie_principal_paye,total,2014,174.131165,174131165,cdc-2014,99,99,image,تسديد أصل الدين المضمون من طرف الدولة,False,total imprimé 174 131 165 ; la somme des lignes imprimées est 174 131 665 (écart de 500 dinars)
-garantie_principal_paye,total,2014,174.131165,174131165,cdc-2015,91,91,image,تسديد أصل الدين المضمون من طرف الدولة,False,total imprimé 174 131 165 ; la somme des lignes imprimées est 174 131 665 (écart de 500 dinars)
-garantie_principal_paye,total,2015,162.767285,162767285,cdc-2015,91,91,image,تسديد أصل الدين المضمون من طرف الدولة,False,
-garantie_principal_paye,total,2015,162.767285,162767285,cdc-2016,100,100,image,تسديد أصل الدين المضمون من طرف الدولة,False,
-garantie_principal_paye,total,2016,89.846866,89846866,cdc-2016,100,100,image,تسديد أصل الدين المضمون من طرف الدولة,False,
-recettes_privatisation_budget,total,2010,0.0,0,cdc-2011,42,42,image,مداخيل التخصيص,False,aucune recette de privatisation inscrite au budget en 2010 ni en 2011 (« pour la deuxième année consécutive » en 2011)
-recettes_privatisation_budget,total,2011,0.0,0,cdc-2011,42,42,image,مداخيل التخصيص,False,idem
-recettes_privatisation_budget,total,2012,1105.0,1105000000,cdc-2012,27,28,image,مداخيل التخصيص,False,"table du déficit structurel, « موارد التخصيص » ; montant imprimé en millions de dinars, à trois décimales"
-recettes_privatisation_budget,total,2012,1105.0,1105000000,cdc-2013,46,46,texte,مداخيل التخصيص,False,rappelé comme terme de comparaison
-recettes_privatisation_budget,total,2013,1070.402,1070402000,cdc-2013,46,46,image,مداخيل التخصيص,False,"« مداخيل التخصيص », 100 % des prévisions ; 1 000 MD sont le solde reversé par la Banque centrale (cession de 35 % de Tunisie Télécom)"
-recettes_privatisation_budget,total,2014,4.251,4251000,cdc-2014,53,53,texte,مداخيل التخصيص,False,"« مداخيل التخصيص » ; 99,60 % de moins qu'en 2013"
-recettes_privatisation_budget,total,2015,0.0,0,cdc-2015,46,46,image,مداخيل التخصيص,False,aucune recette de privatisation enregistrée en 2015
-recettes_privatisation_budget,total,2016,396.9,396900000,cdc-2016,54,54,image,مداخيل التخصيص,False,dernier versement de la cession partielle de 35 % de Tunisie Télécom ; la licence du téléphone mobile de quatrième génération (471 MD prévus) est une recette distincte
-recettes_privatisation_budget,tunisie_telecom,2006,429.357,429357000,cdc-2016,54,54,image,التفويت الجزئي في رأس مال اتصالات تونس,False,idem
-recettes_privatisation_budget,tunisie_telecom,2007,341.275,341275000,cdc-2016,54,54,image,التفويت الجزئي في رأس مال اتصالات تونس,False,idem
-recettes_privatisation_budget,tunisie_telecom,2012,900.0,900000000,cdc-2016,54,54,image,التفويت الجزئي في رأس مال اتصالات تونس,False,table « إدراج مداخيل التفويت الجزئي بنسبة 35 % من رأس مال شركة اتصالات تونس بميزانية الدولة »
-recettes_privatisation_budget,tunisie_telecom,2013,1000.0,1000000000,cdc-2016,54,54,image,التفويت الجزئي في رأس مال اتصالات تونس,False,idem
-recettes_privatisation_budget,tunisie_telecom,2016,396.9,396900000,cdc-2016,54,54,image,التفويت الجزئي في رأس مال اتصالات تونس,False,idem
-remboursements_prets_recus,prets_titre2_ep,2015,3.815,3815000,cdc-2015,46,46,image,استرجاع القروض المسندة على العنوان الثاني لفائدة المنشآت العمومية,False,imprimé en millions de dinars à trois décimales
-remboursements_prets_recus,prets_titre2_ep,2016,3.801,3801000,cdc-2016,54,54,image,استرجاع القروض المسندة على العنوان الثاني لفائدة المنشآت العمومية,False,imprimé en millions de dinars à trois décimales
-remboursements_prets_recus,retroces_exterieurs,2013,118.495,118495000,cdc-2013,47,47,texte,استرجاع القروض الخارجية المعاد إقراضها,False,imprimé en millions de dinars à trois décimales
-remboursements_prets_recus,retroces_exterieurs,2014,125.002,125002000,cdc-2014,52,52,texte,استرجاع القروض الخارجية المعاد إقراضها,False,imprimé en millions de dinars à trois décimales
-remboursements_prets_recus,retroces_exterieurs,2015,111.542,111542000,cdc-2015,46,46,image,استرجاع القروض الخارجية المعاد إقراضها,False,imprimé en millions de dinars à trois décimales
-remboursements_prets_recus,retroces_exterieurs,2016,114.34,114340000,cdc-2016,54,54,image,استرجاع القروض الخارجية المعاد إقراضها,False,imprimé en millions de dinars à trois décimales
-remboursements_prets_recus,total,2011,254.38,254380000,cdc-2011,42,42,image,مداخيل استرجاع أصل القروض,False,imprimé en millions de dinars à trois décimales
-remboursements_prets_recus,total,2012,141.18649,141186490,cdc-2013,46,46,image,مداخيل استرجاع أصل القروض,False,
-remboursements_prets_recus,total,2013,119.348084,119348084,cdc-2013,46,46,image,مداخيل استرجاع أصل القروض,False,
-remboursements_prets_recus,total,2014,132.79,132790000,cdc-2014,52,52,texte,مداخيل استرجاع أصل القروض,False,imprimé en millions de dinars à trois décimales
-remboursements_prets_recus,total,2015,115.357,115357000,cdc-2016,53,53,image,مداخيل استرجاع أصل القروض,False,imprimé en millions de dinars à trois décimales
-remboursements_prets_recus,total,2016,118.141,118141000,cdc-2016,53,53,image,مداخيل استرجاع أصل القروض,False,imprimé en millions de dinars à trois décimales
-transferts_ep_profits_tresor,autres_profits_tresor,2010,16.74764,16747640,cdc-2011,39,39,image,المرابيح الأخرى للخزينة,False,
-transferts_ep_profits_tresor,autres_profits_tresor,2011,28.740311,28740311,cdc-2011,39,39,image,المرابيح الأخرى للخزينة,False,
-transferts_ep_profits_tresor,autres_profits_tresor,2012,53.007103,53007103,cdc-2013,44,44,image,المرابيح الأخرى للخزينة,False,
-transferts_ep_profits_tresor,autres_profits_tresor,2013,47.413885,47413885,cdc-2013,44,44,image,المرابيح الأخرى للخزينة,False,
-transferts_ep_profits_tresor,autres_profits_tresor,2013,47.413885,47413885,cdc-2014,49,49,image,المرابيح الأخرى للخزينة,False,
-transferts_ep_profits_tresor,autres_profits_tresor,2014,79.79723,79797230,cdc-2014,49,49,image,المرابيح الأخرى للخزينة,False,
-transferts_ep_profits_tresor,autres_profits_tresor,2014,79.79723,79797230,cdc-2015,42,42,image,المرابيح الأخرى للخزينة,False,
-transferts_ep_profits_tresor,autres_profits_tresor,2015,47.642035,47642035,cdc-2015,42,42,image,المرابيح الأخرى للخزينة,False,
-transferts_ep_profits_tresor,autres_profits_tresor,2015,47.642035,47642035,cdc-2016,50,50,image,المرابيح الأخرى للخزينة,False,
-transferts_ep_profits_tresor,autres_profits_tresor,2016,76.513394,76513394,cdc-2016,50,50,image,المرابيح الأخرى للخزينة,False,
-transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2010,371.722299,371722299,cdc-2011,39,39,image,أرباح الشركات غير البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2011,558.292663,558292663,cdc-2011,39,39,image,أرباح الشركات غير البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2012,422.152077,422152077,cdc-2013,44,44,image,أرباح الشركات غير البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2013,761.917534,761917534,cdc-2013,44,44,image,أرباح الشركات غير البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2013,761.917534,761917534,cdc-2014,49,49,image,أرباح الشركات غير البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2014,272.6347,272634700,cdc-2014,49,49,image,أرباح الشركات غير البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2014,272.6347,272634700,cdc-2015,42,42,image,أرباح الشركات غير البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2015,240.608203,240608203,cdc-2015,42,42,image,أرباح الشركات غير البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2015,240.608203,240608203,cdc-2016,50,50,image,أرباح الشركات غير البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2016,15.490129,15490129,cdc-2016,50,50,image,أرباح الشركات غير البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_petrolieres,2010,12.091295,12091295,cdc-2011,39,39,image,أرباح الشركات البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_petrolieres,2011,41.734564,41734564,cdc-2011,39,39,image,أرباح الشركات البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_petrolieres,2012,0.0,0,cdc-2013,44,44,image,أرباح الشركات البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_petrolieres,2013,98.484497,98484497,cdc-2013,44,44,image,أرباح الشركات البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_petrolieres,2013,98.484497,98484497,cdc-2014,49,49,image,أرباح الشركات البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_petrolieres,2014,13.898404,13898404,cdc-2014,49,49,image,أرباح الشركات البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_petrolieres,2014,13.898404,13898404,cdc-2015,42,42,image,أرباح الشركات البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_petrolieres,2015,0.0,0,cdc-2015,42,42,image,أرباح الشركات البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_petrolieres,2015,0.0,0,cdc-2016,50,50,image,أرباح الشركات البترولية,False,
-transferts_ep_profits_tresor,benefices_societes_petrolieres,2016,192.820374,192820374,cdc-2016,50,50,image,أرباح الشركات البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2010,412.161036,412161036,cdc-2011,39,39,image,فوائض المؤسسات العمومية غير البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2011,92.804815,92804815,cdc-2011,39,39,image,فوائض المؤسسات العمومية غير البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2012,70.0,70000000,cdc-2013,44,44,image,فوائض المؤسسات العمومية غير البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2013,19.0,19000000,cdc-2013,44,44,image,فوائض المؤسسات العمومية غير البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2013,19.0,19000000,cdc-2014,49,49,image,فوائض المؤسسات العمومية غير البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2014,40.1,40100000,cdc-2014,49,49,image,فوائض المؤسسات العمومية غير البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2014,40.1,40100000,cdc-2015,42,42,image,فوائض المؤسسات العمومية غير البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2015,18.85,18850000,cdc-2015,42,42,image,فوائض المؤسسات العمومية غير البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2015,18.85,18850000,cdc-2016,50,50,image,فوائض المؤسسات العمومية غير البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2016,24.5,24500000,cdc-2016,50,50,image,فوائض المؤسسات العمومية غير البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_petrolieres,2015,0.0,0,cdc-2016,50,50,image,فوائض مرابيح المنشآت العمومية البترولية,False,
-transferts_ep_profits_tresor,excedents_ep_petrolieres,2016,20.0,20000000,cdc-2016,50,50,image,فوائض مرابيح المنشآت العمومية البترولية,False,
-transferts_ep_profits_tresor,profits_bct,2010,0.0,0,cdc-2011,39,39,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
-transferts_ep_profits_tresor,profits_bct,2011,874.0,874000000,cdc-2011,39,39,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
-transferts_ep_profits_tresor,profits_bct,2012,265.3,265300000,cdc-2013,44,44,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
-transferts_ep_profits_tresor,profits_bct,2013,190.6,190600000,cdc-2013,44,44,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
-transferts_ep_profits_tresor,profits_bct,2013,190.6,190600000,cdc-2014,49,49,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
-transferts_ep_profits_tresor,profits_bct,2014,176.8,176800000,cdc-2014,49,49,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
-transferts_ep_profits_tresor,profits_bct,2014,176.8,176800000,cdc-2015,42,42,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
-transferts_ep_profits_tresor,profits_bct,2015,170.1,170100000,cdc-2015,42,42,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
-transferts_ep_profits_tresor,profits_bct,2015,170.1,170100000,cdc-2016,50,50,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
-transferts_ep_profits_tresor,profits_bct,2016,194.0,194000000,cdc-2016,50,50,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
-transferts_ep_profits_tresor,total,2010,812.72227,812722270,cdc-2011,39,39,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2011,1595.572353,1595572353,cdc-2011,39,39,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2011,1595.572353,1595572353,cdc-2012,62,63,texte,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2012,810.45918,810459180,cdc-2012,62,63,texte,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2012,810.45918,810459180,cdc-2013,44,44,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2013,1117.415916,1117415916,cdc-2013,44,44,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2013,1117.415916,1117415916,cdc-2014,49,49,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2014,583.230334,583230334,cdc-2014,49,49,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2014,583.230334,583230334,cdc-2015,42,42,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2015,477.200238,477200238,cdc-2015,42,42,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2015,477.200238,477200238,cdc-2016,50,50,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
-transferts_ep_profits_tresor,total,2016,523.323897,523323897,cdc-2016,50,50,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+dette_garantie_encours,exterieur,2017,11302.0,11302000000.0,cdc-2018,108,108,image,الدين المضمون الخارجي,False,"encours en fin de gestion, imprimé en millions de dinars; valeur de comparaison ; total non imprimé ; source citée en note 85 : Direction générale de la gestion de la dette et de la coopération financière (الإدارة العامة للتصرف في الدين والتعاون المالي) du ministère des Finances"
+dette_garantie_encours,exterieur,2018,13719.2,13719200000.0,cdc-2018,108,108,image,الدين المضمون الخارجي,False,"encours en fin de gestion, imprimé en millions de dinars; source citée en note 85 : Direction générale de la gestion de la dette et de la coopération financière (الإدارة العامة للتصرف في الدين والتعاون المالي) du ministère des Finances"
+dette_garantie_encours,exterieur,2019,12714.5,12714500000.0,cdc-2019,113,113,image,الدين المضمون الخارجي,False,"encours en fin de gestion, imprimé en millions de dinars; source citée en note 71 : rapport sur la dette publique de 2019, p. 66"
+dette_garantie_encours,exterieur,2021,12209.3,12209300000.0,cdc-2021,106,109,image,الدين المضمون الخارجي,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+dette_garantie_encours,exterieur,2022,11770.6,11770600000.0,cdc-2022,90,93,texte,الدين المضمون الخارجي,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+dette_garantie_encours,exterieur,2023,12539.8,12539800000.0,cdc-2023,87,90,texte,الدين المضمون الخارجي,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+dette_garantie_encours,interieur,2017,1950.0,1950000000.0,cdc-2018,108,108,image,الدين المضمون الداخلي,False,"encours en fin de gestion, imprimé en millions de dinars; valeur de comparaison ; total non imprimé ; source citée en note 85 : Direction générale de la gestion de la dette et de la coopération financière (الإدارة العامة للتصرف في الدين والتعاون المالي) du ministère des Finances"
+dette_garantie_encours,interieur,2018,2751.8,2751800000.0,cdc-2018,108,108,image,الدين المضمون الداخلي,False,"encours en fin de gestion, imprimé en millions de dinars; source citée en note 85 : Direction générale de la gestion de la dette et de la coopération financière (الإدارة العامة للتصرف في الدين والتعاون المالي) du ministère des Finances"
+dette_garantie_encours,interieur,2019,3987.5,3987500000.0,cdc-2019,113,113,image,الدين المضمون الداخلي,False,"encours en fin de gestion, imprimé en millions de dinars; source citée en note 71 : rapport sur la dette publique de 2019, p. 66"
+dette_garantie_encours,interieur,2021,6532.7,6532700000.0,cdc-2021,106,109,image,الدين المضمون الداخلي,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+dette_garantie_encours,interieur,2022,8592.5,8592500000.0,cdc-2022,91,94,texte,الدين المضمون الداخلي,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+dette_garantie_encours,interieur,2023,8843.5,8843500000.0,cdc-2023,87,90,texte,الدين المضمون الداخلي,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+dette_garantie_encours,total,2018,16471.0,16471000000.0,cdc-2018,108,108,image,الديون العمومية المضمونة,True,"encours en fin de gestion, imprimé en millions de dinars; part du PIB imprimée : 15,6 % ; source citée en note 85 : Direction générale de la gestion de la dette et de la coopération financière (الإدارة العامة للتصرف في الدين والتعاون المالي) du ministère des Finances"
+dette_garantie_encours,total,2018,16713.4,16713400000.0,cdc-2019,113,113,image,الديون العمومية المضمونة,True,"encours en fin de gestion, imprimé en millions de dinars; part du PIB imprimée : 15,84 % ; révisé : le rapport 2018 imprimait 16 471 MD ; source citée en note 71 : rapport sur la dette publique de 2019, p. 66"
+dette_garantie_encours,total,2019,16702.0,16702000000.0,cdc-2019,113,113,image,الديون العمومية المضمونة,False,"encours en fin de gestion, imprimé en millions de dinars; part du PIB imprimée : 14,67 % ; source citée en note 71 : rapport sur la dette publique de 2019, p. 66"
+dette_garantie_encours,total,2021,18742.0,18742000000.0,cdc-2021,106,109,image,حجم الدين المضمون من طرف الدولة,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+dette_garantie_encours,total,2021,18742.0,18742000000.0,cdc-2022,90,93,texte,حجم الدين المضمون من طرف الدولة,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+dette_garantie_encours,total,2022,20363.1,20363100000.0,cdc-2022,90,93,texte,حجم الدين المضمون من طرف الدولة,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+dette_garantie_encours,total,2022,20363.1,20363100000.0,cdc-2023,87,90,texte,إجمالي رصيد الدين المضمون من طرف الدولة,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+dette_garantie_encours,total,2023,21383.3,21383300000.0,cdc-2023,87,90,texte,إجمالي رصيد الدين المضمون من طرف الدولة,False,"encours en fin de gestion, imprimé en millions de dinars; aucune source citée sur la phrase"
+garantie_interets_payes,interets_dette_garantie,2010,1.980596,1980596.0,cdc-2011,74,74,image,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2011,1.908,1908000.0,cdc-2011,74,74,image,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2011,1.908,1908000.0,cdc-2012,89,90,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2012,0.240214,240214.0,cdc-2012,89,90,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2012,0.240214,240214.0,cdc-2013,78,78,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2013,33.164241,33164241.0,cdc-2013,78,78,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2013,33.164241,33164241.0,cdc-2014,82,82,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2014,22.541125,22541125.0,cdc-2014,82,82,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2015,13.812152,13812152.0,cdc-2016,86,86,image,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2016,4.363555,4363555.0,cdc-2016,86,86,image,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2017,1.983918,1983918.0,cdc-2018,92,92,image,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2018,2.167429,2167429.0,cdc-2018,92,92,image,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2018,2.167429,2167429.0,cdc-2019,95,95,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2019,2.290522,2290522.0,cdc-2019,95,95,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2019,2.290522,2290522.0,cdc-2020,89,89,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2020,1.814177,1814177.0,cdc-2020,89,89,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2020,1.814177,1814177.0,cdc-2021,101,104,texte,فوائد الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2021,1.24174,1241740.0,cdc-2021,101,104,texte,فوائد الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2021,1.24174,1241740.0,cdc-2022,85,88,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2022,0.936833,936833.0,cdc-2022,85,88,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2022,0.936833,936833.0,cdc-2023,82,85,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2023,0.392978,392978.0,cdc-2023,82,85,texte,فائدة الدين المضمون من طرف الدولة,False,
+garantie_interets_payes,interets_dette_garantie,2023,0.392978,392978.0,cdc-2024,83,83,image,فائدة الدين المضمون من طرف الدولة,False,"392 977,836 imprimé, arrondi au dinar"
+garantie_interets_payes,interets_dette_garantie,2024,0.0,0.0,cdc-2024,83,83,image,فائدة الدين المضمون من طرف الدولة,False,"0,000 imprimé ; le texte dit qu'aucun intérêt n'est enregistré"
+garantie_principal_paye,art24_lf1999,2010,3.782525,3782525.0,cdc-2011,92,92,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2011,2.434825,2434825.0,cdc-2011,92,92,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2011,2.434825,2434825.0,cdc-2012,103,104,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2012,2.234963,2234963.0,cdc-2012,103,104,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2012,2.234963,2234963.0,cdc-2013,95,95,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2013,2.211123,2211123.0,cdc-2013,95,95,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2013,2.211123,2211123.0,cdc-2014,99,99,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2014,2.455546,2455546.0,cdc-2014,99,99,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2014,2.455546,2455546.0,cdc-2015,91,91,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2015,2.935606,2935606.0,cdc-2015,91,91,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2015,2.935606,2935606.0,cdc-2016,100,100,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2016,2.765374,2765374.0,cdc-2016,100,100,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2017,0.502374,502374.0,cdc-2018,107,107,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2018,0.188502,188502.0,cdc-2018,107,107,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2018,0.188502,188502.0,cdc-2019,111,111,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2019,1.013454,1013454.0,cdc-2019,111,111,image,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2019,1.013454,1013454.0,cdc-2020,92,92,texte,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2020,0.317177,317177.0,cdc-2020,92,92,texte,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2020,0.317177,317177.0,cdc-2021,104,107,texte,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2021,0.317177,317177.0,cdc-2021,104,107,texte,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2021,0.317177,317177.0,cdc-2022,88,91,texte,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2022,0.188502,188502.0,cdc-2022,88,91,texte,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2022,0.188502,188502.0,cdc-2023,85,88,texte,الفصل 24 من قانون المالية لسنة 1999,False,
+garantie_principal_paye,art24_lf1999,2023,0.0,0.0,cdc-2023,85,88,texte,الفصل 24 من قانون المالية لسنة 1999,False,"0,000 imprimé"
+garantie_principal_paye,ateliers_sncft,2015,0.163059,163059.0,cdc-2015,91,91,image,ضمان شركة أشغال السكك الحديدية,False,
+garantie_principal_paye,ateliers_sncft,2015,0.163059,163059.0,cdc-2016,100,100,image,ضمان شركة أشغال السكك الحديدية,False,
+garantie_principal_paye,bna_agricole,2010,19.88286,19882860.0,cdc-2011,92,92,image,قروض البنك الوطني الفلاحي,False,
+garantie_principal_paye,credits_agricoles_lf2014,2020,0.0,0.0,cdc-2021,104,107,texte,تحمل الدولة للديون البنكية بعنوان ضمان القروض الفلاحية (قانون المالية لسنة 2014),False,tiret imprimé
+garantie_principal_paye,credits_agricoles_lf2014,2021,0.483475,483475.0,cdc-2021,104,107,texte,تحمل الدولة للديون البنكية بعنوان ضمان القروض الفلاحية (قانون المالية لسنة 2014),False,ligne nouvelle en 2021 ; le rapport 2023 (p. 87) nomme la Banque tunisienne de solidarité
+garantie_principal_paye,credits_agricoles_lf2014,2021,0.483475,483475.0,cdc-2022,88,91,texte,تحمل الدولة للديون البنكية بعنوان ضمان القروض الفلاحية (قانون المالية لسنة 2014),False,ligne nouvelle en 2021 ; le rapport 2023 (p. 87) nomme la Banque tunisienne de solidarité
+garantie_principal_paye,credits_agricoles_lf2014,2022,0.483475,483475.0,cdc-2022,88,91,texte,تحمل الدولة للديون البنكية بعنوان ضمان القروض الفلاحية (قانون المالية لسنة 2014),False,
+garantie_principal_paye,credits_agricoles_lf2014,2022,0.483475,483475.0,cdc-2023,85,88,texte,تحمل الدولة للديون البنكية بعنوان ضمان القروض الفلاحية (قانون المالية لسنة 2014),False,
+garantie_principal_paye,credits_agricoles_lf2014,2023,0.483475,483475.0,cdc-2023,85,88,texte,تحمل الدولة للديون البنكية بعنوان ضمان القروض الفلاحية (قانون المالية لسنة 2014),False,
+garantie_principal_paye,credits_agricoles_lf2014,2023,0.483475,483475.0,cdc-2024,90,90,image,تحمل الدولة الديون البنكية بعنوان ضمان القروض الفلاحية (الفصل 79 من قانون المالية لسنة 2014),False,
+garantie_principal_paye,credits_agricoles_lf2014,2024,0.483475,483475.0,cdc-2024,90,90,image,تحمل الدولة الديون البنكية بعنوان ضمان القروض الفلاحية (الفصل 79 من قانون المالية لسنة 2014),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2010,1.202542,1202542.0,cdc-2011,92,92,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2011,1.154379,1154379.0,cdc-2011,92,92,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2011,1.154379,1154379.0,cdc-2012,103,104,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2012,1.202542,1202542.0,cdc-2012,103,104,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2012,1.202542,1202542.0,cdc-2013,95,95,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2013,1.202542,1202542.0,cdc-2013,95,95,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2013,1.202542,1202542.0,cdc-2014,99,99,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2014,1.202542,1202542.0,cdc-2014,99,99,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2014,1.202542,1202542.0,cdc-2015,91,91,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2015,1.202542,1202542.0,cdc-2015,91,91,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2015,1.202542,1202542.0,cdc-2016,100,100,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,dette_agricole_loi65_1999,2016,0.0,0.0,cdc-2016,100,100,image,معالجة مديونية القطاع الفلاحي (القانون عدد 65 لسنة 1999),False,
+garantie_principal_paye,fouladh,2013,47.0,47000000.0,cdc-2014,99,99,image,ضمان الشركة التونسية لصناعة الحديد (الفولاذ),True,le rapport de 2013 écrit « قروض الشركة التونسية للبنك » (STB) pour ce même montant de 47 000 000 dinars ; le rapport de 2014 écrit « الشركة التونسية لصناعة الحديد »
+garantie_principal_paye,fouladh,2014,23.8225,23822500.0,cdc-2014,99,99,image,ضمان الشركة التونسية لصناعة الحديد (الفولاذ),False,
+garantie_principal_paye,fouladh,2014,23.8225,23822500.0,cdc-2015,91,91,image,ضمان الشركة التونسية لصناعة الحديد (الفولاذ),False,
+garantie_principal_paye,fouladh,2015,23.8225,23822500.0,cdc-2015,91,91,image,ضمان الشركة التونسية لصناعة الحديد (الفولاذ),False,
+garantie_principal_paye,fouladh,2015,23.8225,23822500.0,cdc-2016,100,100,image,ضمان الشركة التونسية لصناعة الحديد (الفولاذ),False,
+garantie_principal_paye,fpcl,2010,0.65431,654310.0,cdc-2011,92,92,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2011,0.615175,615175.0,cdc-2011,92,92,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2011,0.615175,615175.0,cdc-2012,103,104,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2012,0.448322,448322.0,cdc-2012,103,104,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2012,0.448322,448322.0,cdc-2013,95,95,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2013,0.448322,448322.0,cdc-2013,95,95,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2013,0.448322,448322.0,cdc-2014,99,99,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2014,0.35936,359360.0,cdc-2014,99,99,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2014,0.35936,359360.0,cdc-2015,91,91,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2015,0.393157,393157.0,cdc-2015,91,91,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2015,0.393157,393157.0,cdc-2016,100,100,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2016,0.230376,230376.0,cdc-2016,100,100,image,قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2017,0.393157,393157.0,cdc-2018,107,107,image,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2018,0.35998,359980.0,cdc-2018,107,107,image,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2018,0.35998,359980.0,cdc-2019,111,111,image,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2019,0.424309,424309.0,cdc-2019,111,111,image,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2019,0.424309,424309.0,cdc-2020,92,92,texte,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2020,0.067595,67595.0,cdc-2020,92,92,texte,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2020,0.067595,67595.0,cdc-2021,104,107,texte,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2021,0.067595,67595.0,cdc-2021,104,107,texte,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2021,0.067595,67595.0,cdc-2022,88,91,texte,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2022,0.067595,67595.0,cdc-2022,88,91,texte,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2022,0.067595,67595.0,cdc-2023,85,88,texte,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2023,0.033798,33798.0,cdc-2023,85,88,texte,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2023,0.033798,33798.0,cdc-2024,90,90,image,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,
+garantie_principal_paye,fpcl,2024,0.0,0.0,cdc-2024,90,90,image,ضمان قرض صندوق القروض ومساعدة الجماعات المحلية,False,tiret imprimé
+garantie_principal_paye,fpcl_avance_tresor_2018,2019,0.033177,33177.0,cdc-2019,111,111,image,تسوية تسبقة الخزينة سنة 2018 (قرض تسبقة الدعم المؤسساتي 2018 لصندوق القروض ومساعدة الجماعات المحلية),False,ligne nouvelle en 2019 ; tiret imprimé pour 2018 et 2020
+garantie_principal_paye,fpcl_avance_tresor_2018,2019,0.033177,33177.0,cdc-2020,92,92,texte,تسوية تسبقة الخزينة سنة 2018 (قرض تسبقة الدعم المؤسساتي 2018 لصندوق القروض ومساعدة الجماعات المحلية),False,ligne nouvelle en 2019 ; tiret imprimé pour 2018 et 2020
+garantie_principal_paye,fpcl_avance_tresor_2018,2020,0.0,0.0,cdc-2020,92,92,texte,تسوية تسبقة الخزينة سنة 2018 (قرض تسبقة الدعم المؤسساتي 2018 لصندوق القروض ومساعدة الجماعات المحلية),False,tiret imprimé
+garantie_principal_paye,office_cereales,2010,15.0,15000000.0,cdc-2011,92,92,image,القرض الرقاعي : ديوان الحبوب,False,
+garantie_principal_paye,office_cereales,2011,15.0,15000000.0,cdc-2011,92,92,image,القرض الرقاعي : ديوان الحبوب,False,
+garantie_principal_paye,office_cereales,2011,15.0,15000000.0,cdc-2012,103,104,image,القرض الرقاعي : ديوان الحبوب,False,
+garantie_principal_paye,office_huile,2013,7.669183,7669183.0,cdc-2013,95,95,image,قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2013,7.669183,7669183.0,cdc-2014,99,99,image,قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2014,11.357366,11357366.0,cdc-2014,99,99,image,قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2014,11.357366,11357366.0,cdc-2015,91,91,image,قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2015,7.688184,7688184.0,cdc-2015,91,91,image,قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2015,7.688184,7688184.0,cdc-2016,100,100,image,قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2016,7.688183,7688183.0,cdc-2016,100,100,image,قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2017,7.688174,7688174.0,cdc-2018,107,107,image,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2018,5.151519,5151519.0,cdc-2018,107,107,image,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2018,5.151519,5151519.0,cdc-2019,111,111,image,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2019,5.151519,5151519.0,cdc-2019,111,111,image,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2019,5.151519,5151519.0,cdc-2020,92,92,texte,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2020,5.151519,5151519.0,cdc-2020,92,92,texte,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2020,5.151519,5151519.0,cdc-2021,104,107,texte,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2021,5.151519,5151519.0,cdc-2021,104,107,texte,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2021,5.151519,5151519.0,cdc-2022,88,91,texte,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2022,5.151519,5151519.0,cdc-2022,88,91,texte,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2022,5.151519,5151519.0,cdc-2023,85,88,texte,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2023,2.575759,2575759.0,cdc-2023,85,88,texte,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2023,2.575759,2575759.0,cdc-2024,90,90,image,ضمان قرض الديوان الوطني للزيت,False,
+garantie_principal_paye,office_huile,2024,0.0,0.0,cdc-2024,90,90,image,ضمان قرض الديوان الوطني للزيت,False,tiret imprimé
+garantie_principal_paye,pate_alfa,2012,1.272993,1272993.0,cdc-2012,103,104,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
+garantie_principal_paye,pate_alfa,2012,1.272993,1272993.0,cdc-2013,95,95,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
+garantie_principal_paye,pate_alfa,2014,12.544808,12544808.0,cdc-2014,99,99,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
+garantie_principal_paye,pate_alfa,2014,12.544808,12544808.0,cdc-2015,91,91,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
+garantie_principal_paye,pate_alfa,2015,3.486908,3486908.0,cdc-2015,91,91,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
+garantie_principal_paye,pate_alfa,2015,3.486908,3486908.0,cdc-2016,100,100,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
+garantie_principal_paye,pate_alfa,2016,2.416462,2416462.0,cdc-2016,100,100,image,ضمان الشركة الوطنية لعجين الحلفاء والورق,False,
+garantie_principal_paye,pate_alfa,2017,0.709962,709962.0,cdc-2018,107,107,image,ضمان الشركة الوطنية لعجين الحلفاء,False,
+garantie_principal_paye,pate_alfa,2018,0.0,0.0,cdc-2018,107,107,image,ضمان الشركة الوطنية لعجين الحلفاء,False,"0,000 imprimé ; le texte p. 108 écrit « 709,962 م.د » pour 709 962 dinars"
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2010,20.771721,20771721.0,cdc-2011,92,92,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2011,20.771721,20771721.0,cdc-2011,92,92,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2011,20.771721,20771721.0,cdc-2012,103,104,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2012,20.771721,20771721.0,cdc-2012,103,104,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2012,20.771721,20771721.0,cdc-2013,95,95,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2013,20.771721,20771721.0,cdc-2013,95,95,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2013,20.771721,20771721.0,cdc-2014,99,99,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2014,20.771721,20771721.0,cdc-2014,99,99,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2014,20.771721,20771721.0,cdc-2015,91,91,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2015,20.771721,20771721.0,cdc-2015,91,91,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2015,20.771721,20771721.0,cdc-2016,100,100,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2016,21.974264,21974264.0,cdc-2016,100,100,image,تحمّل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,21 974 264 imprimé en 2016 contre 20 771 721 les années précédentes
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2017,21.974263,21974263.0,cdc-2018,107,107,image,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,ligne du tableau placée hors de l'aval de l'État
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2018,21.974263,21974263.0,cdc-2018,107,107,image,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2018,21.974263,21974263.0,cdc-2019,111,111,image,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2019,21.974276,21974276.0,cdc-2019,111,111,image,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2019,21.974276,21974276.0,cdc-2020,92,92,texte,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2020,20.771721,20771721.0,cdc-2020,92,92,texte,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2020,20.771721,20771721.0,cdc-2021,104,107,texte,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2021,20.771721,20771721.0,cdc-2021,104,107,texte,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2021,20.771721,20771721.0,cdc-2022,88,91,texte,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2022,20.771721,20771721.0,cdc-2022,88,91,texte,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2022,20.771721,20771721.0,cdc-2023,85,88,texte,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2023,0.0,0.0,cdc-2023,85,88,texte,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,"0,000 imprimé"
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2023,0.0,0.0,cdc-2024,90,90,image,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,tiret imprimé
+garantie_principal_paye,reprise_dettes_bancaires_art25_lf1999,2024,41.543443,41543443.0,cdc-2024,90,90,image,تحمل الدولة للديون البنكية (الفصل 25 من قانون المالية 1999),False,"ligne nouvelle de 41 543,443 milliers de dinars"
+garantie_principal_paye,stb,2012,70.0,70000000.0,cdc-2012,103,104,image,قروض الشركة التونسية للبنك,False,
+garantie_principal_paye,stb,2012,70.0,70000000.0,cdc-2013,95,95,image,قروض الشركة التونسية للبنك,False,
+garantie_principal_paye,stb,2013,47.0,47000000.0,cdc-2013,95,95,image,قروض الشركة التونسية للبنك,True,
+garantie_principal_paye,stir,2013,101.840556,101840556.0,cdc-2013,95,95,image,ضمان الشركة التونسية لصناعة التكرير,False,
+garantie_principal_paye,stir,2013,101.840556,101840556.0,cdc-2014,99,99,image,ضمان الشركة التونسية لصناعة التكرير,False,
+garantie_principal_paye,stir,2014,123.592085,123592085.0,cdc-2014,99,99,image,ضمان الشركة التونسية لصناعة التكرير,False,
+garantie_principal_paye,stir,2014,123.592085,123592085.0,cdc-2015,91,91,image,ضمان الشركة التونسية لصناعة التكرير,False,
+garantie_principal_paye,stir,2015,124.277871,124277871.0,cdc-2015,91,91,image,ضمان الشركة التونسية لصناعة التكرير,False,
+garantie_principal_paye,stir,2015,124.277871,124277871.0,cdc-2016,100,100,image,ضمان الشركة التونسية لصناعة التكرير,False,
+garantie_principal_paye,stir,2016,76.746471,76746471.0,cdc-2016,100,100,image,ضمان الشركة التونسية لصناعة التكرير,False,
+garantie_principal_paye,total,2010,39.319695,39319695.0,cdc-2011,92,92,image,تسديد أصل الدين المضمون من طرف الدولة,False,
+garantie_principal_paye,total,2011,18.05,18050000.0,cdc-2011,92,92,image,تسديد أصل الدين المضمون من طرف الدولة,False,
+garantie_principal_paye,total,2011,18.05,18050000.0,cdc-2012,103,104,image,تسديد أصل الدين المضمون من طرف الدولة,False,
+garantie_principal_paye,total,2012,73.956278,73956278.0,cdc-2012,103,104,image,تسديد أصل الدين المضمون من طرف الدولة,False,
+garantie_principal_paye,total,2012,73.956278,73956278.0,cdc-2013,95,95,image,تسديد أصل الدين المضمون من طرف الدولة,False,
+garantie_principal_paye,total,2013,159.169184,159169184.0,cdc-2013,95,95,image,تسديد أصل الدين المضمون من طرف الدولة,False,
+garantie_principal_paye,total,2013,159.169184,159169184.0,cdc-2014,99,99,image,تسديد أصل الدين المضمون من طرف الدولة,False,
+garantie_principal_paye,total,2014,174.131165,174131165.0,cdc-2014,99,99,image,تسديد أصل الدين المضمون من طرف الدولة,False,total imprimé 174 131 165 ; la somme des lignes imprimées est 174 131 665 (écart de 500 dinars)
+garantie_principal_paye,total,2014,174.131165,174131165.0,cdc-2015,91,91,image,تسديد أصل الدين المضمون من طرف الدولة,False,total imprimé 174 131 165 ; la somme des lignes imprimées est 174 131 665 (écart de 500 dinars)
+garantie_principal_paye,total,2015,162.767285,162767285.0,cdc-2015,91,91,image,تسديد أصل الدين المضمون من طرف الدولة,False,
+garantie_principal_paye,total,2015,162.767285,162767285.0,cdc-2016,100,100,image,تسديد أصل الدين المضمون من طرف الدولة,False,
+garantie_principal_paye,total,2016,89.846866,89846866.0,cdc-2016,100,100,image,تسديد أصل الدين المضمون من طرف الدولة,False,
+garantie_principal_paye,total,2017,9.293668,9293668.0,cdc-2018,107,107,image,تسديد أصل الدين المضمون من طرف الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers) ; lignes 9 293 667 : écart d'un dinar
+garantie_principal_paye,total,2018,5.7,5700000.0,cdc-2018,107,107,image,تسديد أصل الدين المضمون من طرف الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers) ; lignes 5 700 001 : écart d'un dinar
+garantie_principal_paye,total,2018,5.7,5700000.0,cdc-2019,111,111,image,أصل الدين المضمون من طرف الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers) ; lignes 5 700 001 : écart d'un dinar
+garantie_principal_paye,total,2019,6.622459,6622459.0,cdc-2019,111,111,image,أصل الدين المضمون من طرف الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers)
+garantie_principal_paye,total,2019,6.622459,6622459.0,cdc-2020,92,92,texte,أصل الدين المضمون من طرف الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers)
+garantie_principal_paye,total,2020,5.536291,5536291.0,cdc-2020,92,92,texte,أصل الدين المضمون من طرف الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers)
+garantie_principal_paye,total,2020,5.536291,5536291.0,cdc-2021,104,107,texte,أصل الدين المضمون من طرف الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers)
+garantie_principal_paye,total,2021,6.019766,6019766.0,cdc-2021,104,107,texte,أصل الدين المضمون من طرف الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers)
+garantie_principal_paye,total,2021,6.019766,6019766.0,cdc-2022,88,91,texte,أصل الدين المضمون من طرف الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers)
+garantie_principal_paye,total,2022,5.891091,5891091.0,cdc-2022,88,91,texte,أصل الدين المضمون من طرف الدولة,False,"imprimé en milliers de dinars à trois décimales (soit en dinars entiers) ; le texte p. 90 écrit « 5.891,091م.د » pour 5 891 091 dinars"
+garantie_principal_paye,total,2022,5.891091,5891091.0,cdc-2023,85,88,texte,أصل الدين المضمون من طرف الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers)
+garantie_principal_paye,total,2023,3.093032,3093032.0,cdc-2023,85,88,texte,أصل الدين المضمون من طرف الدولة,False,"imprimé en milliers de dinars à trois décimales (soit en dinars entiers) ; le texte p. 87 écrit « 3.093,032م.د » pour 3 093 032 dinars"
+garantie_principal_paye,total,2023,3.093032,3093032.0,cdc-2024,90,90,image,أصل الدين المضمون من الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers) ; la ligne « الفصل 24 » n'est plus au tableau
+garantie_principal_paye,total,2024,0.483475,483475.0,cdc-2024,90,90,image,أصل الدين المضمون من الدولة,False,imprimé en milliers de dinars à trois décimales (soit en dinars entiers) ; la ligne « الفصل 24 » n'est plus au tableau
+recettes_privatisation_budget,total,2010,0.0,0.0,cdc-2011,42,42,image,مداخيل التخصيص,False,aucune recette de privatisation inscrite au budget en 2010 ni en 2011 (« pour la deuxième année consécutive » en 2011)
+recettes_privatisation_budget,total,2011,0.0,0.0,cdc-2011,42,42,image,مداخيل التخصيص,False,idem
+recettes_privatisation_budget,total,2012,1105.0,1105000000.0,cdc-2012,27,28,image,مداخيل التخصيص,False,"table du déficit structurel, « موارد التخصيص » ; montant imprimé en millions de dinars, à trois décimales"
+recettes_privatisation_budget,total,2012,1105.0,1105000000.0,cdc-2013,46,46,texte,مداخيل التخصيص,False,rappelé comme terme de comparaison
+recettes_privatisation_budget,total,2013,1070.402,1070402000.0,cdc-2013,46,46,image,مداخيل التخصيص,False,"« مداخيل التخصيص », 100 % des prévisions ; 1 000 MD sont le solde reversé par la Banque centrale (cession de 35 % de Tunisie Télécom)"
+recettes_privatisation_budget,total,2014,4.251,4251000.0,cdc-2014,53,53,texte,مداخيل التخصيص,False,"« مداخيل التخصيص » ; 99,60 % de moins qu'en 2013"
+recettes_privatisation_budget,total,2015,0.0,0.0,cdc-2015,46,46,image,مداخيل التخصيص,False,aucune recette de privatisation enregistrée en 2015
+recettes_privatisation_budget,total,2016,396.9,396900000.0,cdc-2016,54,54,image,مداخيل التخصيص,False,dernier versement de la cession partielle de 35 % de Tunisie Télécom ; la licence du téléphone mobile de quatrième génération (471 MD prévus) est une recette distincte
+recettes_privatisation_budget,total,2017,,,cdc-2018,62,62,texte,,False,"aucun montant de privatisation imprimé ; les autres recettes extraordinaires (331,867 MD en 2017, 361,647 MD en 2018) sont égales aux dons plus les confiscations (186,867 + 145 ; 227,147 + 134,500 MD), rapport 2018 p. 62"
+recettes_privatisation_budget,total,2018,,,cdc-2018,62,62,texte,,False,"aucun montant de privatisation imprimé ; les autres recettes extraordinaires (331,867 MD en 2017, 361,647 MD en 2018) sont égales aux dons plus les confiscations (186,867 + 145 ; 227,147 + 134,500 MD), rapport 2018 p. 62"
+recettes_privatisation_budget,total,2019,,,cdc-2019,63,63,texte,,False,aucun montant de privatisation imprimé ; la partie sur les autres recettes extraordinaires ne cite que les confiscations et un don de l'Union européenne
+recettes_privatisation_budget,total,2020,,,cdc-2020,53,53,texte,,False,aucun montant de privatisation imprimé ; le tableau des recettes non fiscales n'a aucune ligne de privatisation ou de cession
+recettes_privatisation_budget,total,2021,,,cdc-2021,63,66,texte,,False,aucun montant de privatisation imprimé ; le tableau des recettes non fiscales n'a aucune ligne de privatisation ou de cession
+recettes_privatisation_budget,total,2022,,,cdc-2022,52,55,texte,,False,aucun montant de privatisation imprimé ; le tableau des recettes non fiscales n'a aucune ligne de privatisation ou de cession
+recettes_privatisation_budget,total,2023,,,cdc-2023,47,50,texte,,False,aucun montant de privatisation imprimé ; le tableau des recettes non fiscales n'a aucune ligne de privatisation ou de cession
+recettes_privatisation_budget,total,2024,,,cdc-2024,43,43,texte,,False,aucun montant de privatisation imprimé ; le tableau des recettes non fiscales n'a aucune ligne de privatisation ou de cession
+recettes_privatisation_budget,tunisie_telecom,2006,429.357,429357000.0,cdc-2016,54,54,image,التفويت الجزئي في رأس مال اتصالات تونس,False,idem
+recettes_privatisation_budget,tunisie_telecom,2007,341.275,341275000.0,cdc-2016,54,54,image,التفويت الجزئي في رأس مال اتصالات تونس,False,idem
+recettes_privatisation_budget,tunisie_telecom,2012,900.0,900000000.0,cdc-2016,54,54,image,التفويت الجزئي في رأس مال اتصالات تونس,False,table « إدراج مداخيل التفويت الجزئي بنسبة 35 % من رأس مال شركة اتصالات تونس بميزانية الدولة »
+recettes_privatisation_budget,tunisie_telecom,2013,1000.0,1000000000.0,cdc-2016,54,54,image,التفويت الجزئي في رأس مال اتصالات تونس,False,idem
+recettes_privatisation_budget,tunisie_telecom,2016,396.9,396900000.0,cdc-2016,54,54,image,التفويت الجزئي في رأس مال اتصالات تونس,False,idem
+remboursements_prets_recus,prets_budget_titre2,2020,0.95,950000.0,cdc-2020,53,53,texte,مداخيل إسترجاع القروض (العنوان الثاني),False,"imprimé en millions de dinars à trois décimales (texte) ; depuis 2020, recettes budgétaires de remboursement de prêts du titre II seulement ; le texte du rapport 2020 les range sous « مبالغ أخرى راجعة للدولة ومقابيض بعناوين شتى » et les compare à 155,482 MD de 2019, qui comprenaient les prêts extérieurs rétrocédés"
+remboursements_prets_recus,prets_budget_titre2,2020,0.95,950000.0,cdc-2021,63,66,texte,مداخيل إسترجاع القروض (العنوان الثاني),False,tableau en dinars
+remboursements_prets_recus,prets_budget_titre2,2021,1.35,1350000.0,cdc-2021,63,66,texte,مداخيل إسترجاع القروض (العنوان الثاني),False,tableau en dinars
+remboursements_prets_recus,prets_budget_titre2,2021,1.35,1350000.0,cdc-2022,52,55,texte,مداخيل إسترجاع القروض (العنوان الثاني),False,tableau en dinars
+remboursements_prets_recus,prets_budget_titre2,2022,3.468383,3468383.0,cdc-2022,52,55,texte,مداخيل إسترجاع القروض (العنوان الثاني),False,tableau en dinars
+remboursements_prets_recus,prets_budget_titre2,2022,3.468383,3468383.0,cdc-2023,47,50,texte,مداخيل إسترجاع القروض (العنوان الثاني),False,tableau en dinars
+remboursements_prets_recus,prets_budget_titre2,2023,45.350843,45350843.0,cdc-2023,47,50,texte,مداخيل إسترجاع القروض (العنوان الثاني),False,tableau en dinars
+remboursements_prets_recus,prets_budget_titre2,2023,45.350843,45350843.0,cdc-2024,43,43,image,مداخيل إسترجاع القروض (العنوان الثاني),False,tableau en dinars
+remboursements_prets_recus,prets_budget_titre2,2024,44.906457,44906457.0,cdc-2024,43,43,image,مداخيل إسترجاع القروض (العنوان الثاني),False,tableau en dinars
+remboursements_prets_recus,prets_titre2_ep,2015,3.815,3815000.0,cdc-2015,46,46,image,استرجاع القروض المسندة على العنوان الثاني لفائدة المنشآت العمومية,False,imprimé en millions de dinars à trois décimales
+remboursements_prets_recus,prets_titre2_ep,2016,3.801,3801000.0,cdc-2016,54,54,image,استرجاع القروض المسندة على العنوان الثاني لفائدة المنشآت العمومية,False,imprimé en millions de dinars à trois décimales
+remboursements_prets_recus,prets_titre2_ep,2018,4.35,4350000.0,cdc-2018,61,61,image,مداخيل استرجاع القروض المسندة في إطار العنوان الثاني للميزانية,False,imprimé en millions de dinars à trois décimales (texte)
+remboursements_prets_recus,prets_titre2_ep,2019,2.744,2744000.0,cdc-2019,63,63,texte,مداخيل استرجاع القروض المسندة في إطار العنوان الثاني للميزانية,False,imprimé en millions de dinars à trois décimales (texte)
+remboursements_prets_recus,retroces_exterieurs,2013,118.495,118495000.0,cdc-2013,47,47,texte,استرجاع القروض الخارجية المعاد إقراضها,False,imprimé en millions de dinars à trois décimales
+remboursements_prets_recus,retroces_exterieurs,2014,125.002,125002000.0,cdc-2014,52,52,texte,استرجاع القروض الخارجية المعاد إقراضها,False,imprimé en millions de dinars à trois décimales
+remboursements_prets_recus,retroces_exterieurs,2015,111.542,111542000.0,cdc-2015,46,46,image,استرجاع القروض الخارجية المعاد إقراضها,False,imprimé en millions de dinars à trois décimales
+remboursements_prets_recus,retroces_exterieurs,2016,114.34,114340000.0,cdc-2016,54,54,image,استرجاع القروض الخارجية المعاد إقراضها,False,imprimé en millions de dinars à trois décimales
+remboursements_prets_recus,retroces_exterieurs,2018,181.657,181657000.0,cdc-2018,61,61,image,مداخيل استرجاع القروض الخارجية المعاد إسنادها,False,imprimé en millions de dinars à trois décimales (texte)
+remboursements_prets_recus,retroces_exterieurs,2019,152.738,152738000.0,cdc-2019,63,63,texte,مداخيل استرجاع القروض الخارجية المعاد إسنادها,False,imprimé en millions de dinars à trois décimales (texte)
+remboursements_prets_recus,retroces_exterieurs,2020,140.615,140615000.0,cdc-2020,60,60,image,موارد استرجاع القروض الخارجية المعاد إقراضها,False,"depuis 2020, classé parmi les ressources d'emprunt extérieur (موارد الاقتراض الخارجي) et non plus parmi les recettes extraordinaires ; imprimé en millions de dinars à trois décimales (graphique)"
+remboursements_prets_recus,retroces_exterieurs,2020,140.615,140615000.0,cdc-2021,75,78,texte,موارد استخلاص القروض الخارجية المعاد إقراضها,False,"depuis 2020, classé parmi les ressources d'emprunt extérieur (موارد الاقتراض الخارجي) et non plus parmi les recettes extraordinaires ; imprimé en millions de dinars à trois décimales"
+remboursements_prets_recus,retroces_exterieurs,2021,323.885,323885000.0,cdc-2021,75,78,texte,موارد استخلاص القروض الخارجية المعاد إقراضها,False,"depuis 2020, classé parmi les ressources d'emprunt extérieur (موارد الاقتراض الخارجي) et non plus parmi les recettes extraordinaires ; imprimé en millions de dinars à trois décimales"
+remboursements_prets_recus,retroces_exterieurs,2022,219.798,219798000.0,cdc-2022,61,64,texte,موارد استخلاص القروض الخارجية المعاد إقراضها,False,"depuis 2020, classé parmi les ressources d'emprunt extérieur (موارد الاقتراض الخارجي) et non plus parmi les recettes extraordinaires ; imprimé en millions de dinars à trois décimales"
+remboursements_prets_recus,retroces_exterieurs,2023,257.006,257006000.0,cdc-2023,53,56,texte,موارد استخلاص القروض الخارجية المعاد إقراضها,False,"depuis 2020, classé parmi les ressources d'emprunt extérieur (موارد الاقتراض الخارجي) et non plus parmi les recettes extraordinaires ; imprimé en millions de dinars à trois décimales ; p. 58 le rapport 2023 reprend les chiffres du rapport 2022 pour la variation (104,087 MD, 32,14 %)"
+remboursements_prets_recus,retroces_exterieurs,2024,302.956,302956000.0,cdc-2024,52,52,image,موارد استخلاص القروض الخارجية المعاد إقراضها,False,"depuis 2020, classé parmi les ressources d'emprunt extérieur (موارد الاقتراض الخارجي) et non plus parmi les recettes extraordinaires ; imprimé en millions de dinars à trois décimales ; texte p. 50 et p. 52"
+remboursements_prets_recus,total,2011,254.38,254380000.0,cdc-2011,42,42,image,مداخيل استرجاع أصل القروض,False,imprimé en millions de dinars à trois décimales
+remboursements_prets_recus,total,2012,141.18649,141186490.0,cdc-2013,46,46,image,مداخيل استرجاع أصل القروض,False,
+remboursements_prets_recus,total,2013,119.348084,119348084.0,cdc-2013,46,46,image,مداخيل استرجاع أصل القروض,False,
+remboursements_prets_recus,total,2014,132.79,132790000.0,cdc-2014,52,52,texte,مداخيل استرجاع أصل القروض,False,imprimé en millions de dinars à trois décimales
+remboursements_prets_recus,total,2015,115.357,115357000.0,cdc-2016,53,53,image,مداخيل استرجاع أصل القروض,False,imprimé en millions de dinars à trois décimales
+remboursements_prets_recus,total,2016,118.141,118141000.0,cdc-2016,53,53,image,مداخيل استرجاع أصل القروض,False,imprimé en millions de dinars à trois décimales
+remboursements_prets_recus,total,2017,133.058109,133058109.0,cdc-2018,61,61,image,مداخيل استرجاع أصل القروض,False,tableau en dinars ; ventilation de 2017 non imprimée
+remboursements_prets_recus,total,2018,186.006443,186006443.0,cdc-2018,61,61,image,مداخيل استرجاع أصل القروض,False,tableau en dinars
+remboursements_prets_recus,total,2018,186.006443,186006443.0,cdc-2019,62,62,texte,مداخيل استرجاع أصل القروض,False,tableau en dinars
+remboursements_prets_recus,total,2019,155.481743,155481743.0,cdc-2019,62,62,texte,مداخيل استرجاع أصل القروض,False,"imprimé 155 481 743,473 (dinars et millimes), arrondi au dinar"
+transferts_ep_profits_tresor,autres_profits_tresor,2010,16.74764,16747640.0,cdc-2011,39,39,image,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2011,28.740311,28740311.0,cdc-2011,39,39,image,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2012,53.007103,53007103.0,cdc-2013,44,44,image,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2013,47.413885,47413885.0,cdc-2013,44,44,image,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2013,47.413885,47413885.0,cdc-2014,49,49,image,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2014,79.79723,79797230.0,cdc-2014,49,49,image,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2014,79.79723,79797230.0,cdc-2015,42,42,image,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2015,47.642035,47642035.0,cdc-2015,42,42,image,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2015,47.642035,47642035.0,cdc-2016,50,50,image,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2016,76.513394,76513394.0,cdc-2016,50,50,image,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2017,50.416727,50416727.0,cdc-2018,58,58,texte,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2018,55.279277,55279277.0,cdc-2018,58,58,texte,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2018,55.279277,55279277.0,cdc-2019,60,60,texte,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,autres_profits_tresor,2019,63.57511,63575110.0,cdc-2019,60,60,texte,المرابيح الأخرى للخزينة,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2010,371.722299,371722299.0,cdc-2011,39,39,image,أرباح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2011,558.292663,558292663.0,cdc-2011,39,39,image,أرباح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2012,422.152077,422152077.0,cdc-2013,44,44,image,أرباح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2013,761.917534,761917534.0,cdc-2013,44,44,image,أرباح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2013,761.917534,761917534.0,cdc-2014,49,49,image,أرباح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2014,272.6347,272634700.0,cdc-2014,49,49,image,أرباح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2014,272.6347,272634700.0,cdc-2015,42,42,image,أرباح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2015,240.608203,240608203.0,cdc-2015,42,42,image,أرباح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2015,240.608203,240608203.0,cdc-2016,50,50,image,أرباح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2016,15.490129,15490129.0,cdc-2016,50,50,image,أرباح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2017,19.061218,19061218.0,cdc-2018,58,58,texte,حصص مرابيح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2018,32.886576,32886576.0,cdc-2018,58,58,texte,حصص مرابيح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2018,32.886576,32886576.0,cdc-2019,59,59,texte,حصص مرابيح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2019,49.976003,49976003.0,cdc-2019,59,59,texte,حصص مرابيح الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2019,49.976003,49976003.0,cdc-2020,49,49,image,حصص المرابيح على الشركات غير البترولية,False,"l'annexe du rapport 2020 (p. 11 de l'annexe, p. 146 du fichier) intervertit les deux lignes de dividendes pour 2019 et 2020 ; le tableau du corps du texte, le rapport 2019 et le rapport 2021 donnent le sens retenu ici"
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2020,146.501,146501000.0,cdc-2020,49,49,image,حصص المرابيح على الشركات غير البترولية,False,"l'annexe du rapport 2020 (p. 11 de l'annexe, p. 146 du fichier) intervertit les deux lignes de dividendes pour 2019 et 2020 ; le tableau du corps du texte, le rapport 2019 et le rapport 2021 donnent le sens retenu ici"
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2020,146.501,146501000.0,cdc-2021,59,62,texte,حصص المرابيح على الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2021,4.403336,4403336.0,cdc-2021,59,62,texte,حصص المرابيح على الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2021,4.403336,4403336.0,cdc-2022,48,51,texte,حصص المرابيح على الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2022,1.403034,1403034.0,cdc-2022,48,51,texte,حصص المرابيح على الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2022,1.403034,1403034.0,cdc-2023,43,46,image,حصص المرابيح على الشركات غير البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2023,20.0,20000000.0,cdc-2023,43,46,image,حصص المرابيح على الشركات غير البترولية,True,le rapport 2024 imprime les mêmes montants de 2023 sous les libellés inverses
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2023,110.111693,110111693.0,cdc-2024,39,39,image,حصص المرابيح على الشركات غير البترولية,True,"libellés des deux lignes inversés par rapport au rapport 2023 pour les mêmes montants de 2023 (110 111 693 et 20 000 000) : montants transcrits sous les libellés imprimés dans le rapport 2024, sans arbitrage"
+transferts_ep_profits_tresor,benefices_societes_non_petrolieres,2024,223.343357,223343357.0,cdc-2024,39,39,image,حصص المرابيح على الشركات غير البترولية,False,"libellés des deux lignes inversés par rapport au rapport 2023 pour les mêmes montants de 2023 (110 111 693 et 20 000 000) : montants transcrits sous les libellés imprimés dans le rapport 2024, sans arbitrage"
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2010,12.091295,12091295.0,cdc-2011,39,39,image,أرباح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2011,41.734564,41734564.0,cdc-2011,39,39,image,أرباح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2012,0.0,0.0,cdc-2013,44,44,image,أرباح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2013,98.484497,98484497.0,cdc-2013,44,44,image,أرباح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2013,98.484497,98484497.0,cdc-2014,49,49,image,أرباح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2014,13.898404,13898404.0,cdc-2014,49,49,image,أرباح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2014,13.898404,13898404.0,cdc-2015,42,42,image,أرباح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2015,0.0,0.0,cdc-2015,42,42,image,أرباح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2015,0.0,0.0,cdc-2016,50,50,image,أرباح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2016,192.820374,192820374.0,cdc-2016,50,50,image,أرباح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2017,17.987993,17987993.0,cdc-2018,58,58,texte,حصص مرابيح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2018,115.495217,115495217.0,cdc-2018,58,58,texte,حصص مرابيح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2018,115.495217,115495217.0,cdc-2019,59,59,texte,حصص مرابيح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2019,297.634142,297634142.0,cdc-2019,59,59,texte,حصص مرابيح الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2019,297.634142,297634142.0,cdc-2020,49,49,image,حصص المرابيح على الشركات البترولية,False,"l'annexe du rapport 2020 (p. 11 de l'annexe, p. 146 du fichier) intervertit les deux lignes de dividendes pour 2019 et 2020 ; le tableau du corps du texte, le rapport 2019 et le rapport 2021 donnent le sens retenu ici"
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2020,43.429948,43429948.0,cdc-2020,49,49,image,حصص المرابيح على الشركات البترولية,False,"l'annexe du rapport 2020 (p. 11 de l'annexe, p. 146 du fichier) intervertit les deux lignes de dividendes pour 2019 et 2020 ; le tableau du corps du texte, le rapport 2019 et le rapport 2021 donnent le sens retenu ici"
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2020,43.429948,43429948.0,cdc-2021,59,62,texte,حصص المرابيح على الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2021,74.746328,74746328.0,cdc-2021,59,62,texte,حصص المرابيح على الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2021,74.746328,74746328.0,cdc-2022,48,51,texte,حصص المرابيح على الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2022,105.040111,105040111.0,cdc-2022,48,51,texte,حصص المرابيح على الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2022,105.040111,105040111.0,cdc-2023,43,46,image,حصص المرابيح على الشركات البترولية,False,
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2023,110.111693,110111693.0,cdc-2023,43,46,image,حصص المرابيح على الشركات البترولية,True,le rapport 2024 imprime les mêmes montants de 2023 sous les libellés inverses
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2023,20.0,20000000.0,cdc-2024,39,39,image,حصص المرابيح على الشركات البترولية,True,"libellés des deux lignes inversés par rapport au rapport 2023 pour les mêmes montants de 2023 (110 111 693 et 20 000 000) : montants transcrits sous les libellés imprimés dans le rapport 2024, sans arbitrage"
+transferts_ep_profits_tresor,benefices_societes_petrolieres,2024,12.33839,12338390.0,cdc-2024,39,39,image,حصص المرابيح على الشركات البترولية,False,"libellés des deux lignes inversés par rapport au rapport 2023 pour les mêmes montants de 2023 (110 111 693 et 20 000 000) : montants transcrits sous les libellés imprimés dans le rapport 2024, sans arbitrage"
+transferts_ep_profits_tresor,excedents_ep_industriels_commerciaux,2023,72.008018,72008018.0,cdc-2024,39,39,image,فوائض مرابيح المنشآت العمومية الصناعية والتجارية,False,"depuis le rapport 2024 la ligne ne précise plus « غير البترولية » ; en 2024 elle somme les entreprises pétrolières (285 MD) et non pétrolières (164,350 MD), d'après le texte p. 40"
+transferts_ep_profits_tresor,excedents_ep_industriels_commerciaux,2024,449.35,449350000.0,cdc-2024,39,39,image,فوائض مرابيح المنشآت العمومية الصناعية والتجارية,False,"depuis le rapport 2024 la ligne ne précise plus « غير البترولية » ; en 2024 elle somme les entreprises pétrolières (285 MD) et non pétrolières (164,350 MD), d'après le texte p. 40"
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2010,412.161036,412161036.0,cdc-2011,39,39,image,فوائض المؤسسات العمومية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2011,92.804815,92804815.0,cdc-2011,39,39,image,فوائض المؤسسات العمومية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2012,70.0,70000000.0,cdc-2013,44,44,image,فوائض المؤسسات العمومية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2013,19.0,19000000.0,cdc-2013,44,44,image,فوائض المؤسسات العمومية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2013,19.0,19000000.0,cdc-2014,49,49,image,فوائض المؤسسات العمومية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2014,40.1,40100000.0,cdc-2014,49,49,image,فوائض المؤسسات العمومية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2014,40.1,40100000.0,cdc-2015,42,42,image,فوائض المؤسسات العمومية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2015,18.85,18850000.0,cdc-2015,42,42,image,فوائض المؤسسات العمومية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2015,18.85,18850000.0,cdc-2016,50,50,image,فوائض المؤسسات العمومية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2016,24.5,24500000.0,cdc-2016,50,50,image,فوائض المؤسسات العمومية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2017,3.15,3150000.0,cdc-2018,58,58,texte,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2018,97.8,97800000.0,cdc-2018,58,58,texte,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2018,97.8,97800000.0,cdc-2019,59,59,texte,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2019,43.794045,43794045.0,cdc-2019,59,59,texte,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2019,43.794045,43794045.0,cdc-2020,49,49,image,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2020,37.0,37000000.0,cdc-2020,49,49,image,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2020,37.0,37000000.0,cdc-2021,59,62,texte,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2021,161.3,161300000.0,cdc-2021,59,62,texte,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2021,161.3,161300000.0,cdc-2022,48,51,texte,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2022,157.75,157750000.0,cdc-2022,48,51,texte,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2022,157.75,157750000.0,cdc-2023,43,46,image,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2023,72.008018,72008018.0,cdc-2023,43,46,image,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_non_petrolieres,2024,164.35,164350000.0,cdc-2024,40,40,image,فوائض مرابيح المنشآت العمومية الصناعية والتجارية غير البترولية,False,"montant du texte, imprimé en millions de dinars (285 ; 164,350) ; le tableau imprime la somme 449 350 000"
+transferts_ep_profits_tresor,excedents_ep_petrolieres,2015,0.0,0.0,cdc-2016,50,50,image,فوائض مرابيح المنشآت العمومية البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_petrolieres,2016,20.0,20000000.0,cdc-2016,50,50,image,فوائض مرابيح المنشآت العمومية البترولية,False,
+transferts_ep_profits_tresor,excedents_ep_petrolieres,2024,285.0,285000000.0,cdc-2024,40,40,image,فوائض مرابيح المنشآت العمومية الصناعية والتجارية البترولية,False,"montant du texte, imprimé en millions de dinars (285 ; 164,350) ; le tableau imprime la somme 449 350 000"
+transferts_ep_profits_tresor,profits_bct,2010,0.0,0.0,cdc-2011,39,39,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2011,874.0,874000000.0,cdc-2011,39,39,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2012,265.3,265300000.0,cdc-2013,44,44,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2013,190.6,190600000.0,cdc-2013,44,44,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2013,190.6,190600000.0,cdc-2014,49,49,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2014,176.8,176800000.0,cdc-2014,49,49,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2014,176.8,176800000.0,cdc-2015,42,42,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2015,170.1,170100000.0,cdc-2015,42,42,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2015,170.1,170100000.0,cdc-2016,50,50,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2016,194.0,194000000.0,cdc-2016,50,50,image,حصة الميزانية من أرباح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2017,221.6,221600000.0,cdc-2018,58,58,texte,حصص مرابيح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2018,383.893416,383893416.0,cdc-2018,58,58,texte,حصص مرابيح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2018,383.893416,383893416.0,cdc-2019,59,59,texte,حصص مرابيح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2019,676.320531,676320531.0,cdc-2019,59,59,texte,حصص مرابيح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2019,676.320531,676320531.0,cdc-2020,49,49,image,مرابيح البنك المركزي,False,
+transferts_ep_profits_tresor,profits_bct,2020,704.156251,704156251.0,cdc-2020,49,49,image,مرابيح البنك المركزي,False,
+transferts_ep_profits_tresor,profits_bct,2020,704.156251,704156251.0,cdc-2021,59,62,texte,مرابيح البنك المركزي,False,
+transferts_ep_profits_tresor,profits_bct,2021,567.704337,567704337.0,cdc-2021,59,62,texte,مرابيح البنك المركزي,False,
+transferts_ep_profits_tresor,profits_bct,2021,567.704337,567704337.0,cdc-2022,48,51,texte,مرابيح البنك المركزي,False,
+transferts_ep_profits_tresor,profits_bct,2022,360.723864,360723864.0,cdc-2022,48,51,texte,مرابيح البنك المركزي,False,
+transferts_ep_profits_tresor,profits_bct,2022,360.723864,360723864.0,cdc-2023,43,46,image,مرابيح البنك المركزي,False,
+transferts_ep_profits_tresor,profits_bct,2023,406.726292,406726292.0,cdc-2023,43,46,image,مرابيح البنك المركزي,False,
+transferts_ep_profits_tresor,profits_bct,2023,406.726292,406726292.0,cdc-2024,39,39,image,مرابيح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_bct,2024,1056.762107,1056762107.0,cdc-2024,39,39,image,مرابيح البنك المركزي التونسي,False,
+transferts_ep_profits_tresor,profits_tresor_change,2020,0.0,0.0,cdc-2021,58,61,image,مرابيح الخزينة نتيجة تحويل العملة,False,chiffres imprimés avec les groupes de trois chiffres dans l'ordre inverse (« 828 14 173 » pour 14 173 828) ; lus avec le rapport 2022 et l'annexe du rapport 2020
+transferts_ep_profits_tresor,profits_tresor_change,2021,0.000205,205.0,cdc-2021,58,61,image,مرابيح الخزينة نتيجة تحويل العملة,False,chiffres imprimés avec les groupes de trois chiffres dans l'ordre inverse (« 828 14 173 » pour 14 173 828) ; lus avec le rapport 2022 et l'annexe du rapport 2020
+transferts_ep_profits_tresor,profits_tresor_change,2021,0.000205,205.0,cdc-2022,47,50,texte,مرابيح الخزينة نتيجة تحويل العملة,False,
+transferts_ep_profits_tresor,profits_tresor_change,2022,68.274513,68274513.0,cdc-2022,47,50,texte,مرابيح الخزينة نتيجة تحويل العملة,False,2022 : 68 274 513 dinars de « مرابيح الخزينة نتيجة تحويل العملة » (205 dinars en 2021)
+transferts_ep_profits_tresor,profits_tresor_change,2022,68.274513,68274513.0,cdc-2023,42,45,texte,مرابيح الخزينة نتيجة تحويل العملة,False,
+transferts_ep_profits_tresor,profits_tresor_change,2023,71.856828,71856828.0,cdc-2023,42,45,texte,مرابيح الخزينة نتيجة تحويل العملة,False,
+transferts_ep_profits_tresor,profits_tresor_divers,2019,51.607671,51607671.0,cdc-2020,annexe 11,146,image,مرابيح الخزينة بعناوين مختلفة,False,"montant imprimé au millime, arrondi au dinar"
+transferts_ep_profits_tresor,profits_tresor_divers,2020,65.160887,65160887.0,cdc-2020,annexe 11,146,image,مرابيح الخزينة بعناوين مختلفة,False,"montant imprimé au millime, arrondi au dinar"
+transferts_ep_profits_tresor,profits_tresor_divers,2020,65.160887,65160887.0,cdc-2021,58,61,image,مرابيح الخزينة بعناوين مختلفة,False,chiffres imprimés avec les groupes de trois chiffres dans l'ordre inverse (« 828 14 173 » pour 14 173 828) ; lus avec le rapport 2022 et l'annexe du rapport 2020
+transferts_ep_profits_tresor,profits_tresor_divers,2021,108.20742,108207420.0,cdc-2021,58,61,image,مرابيح الخزينة بعناوين مختلفة,False,chiffres imprimés avec les groupes de trois chiffres dans l'ordre inverse (« 828 14 173 » pour 14 173 828) ; lus avec le rapport 2022 et l'annexe du rapport 2020
+transferts_ep_profits_tresor,profits_tresor_divers,2021,108.20742,108207420.0,cdc-2022,47,50,texte,مرابيح الخزينة بعناوين مختلفة,False,
+transferts_ep_profits_tresor,profits_tresor_divers,2022,0.036205,36205.0,cdc-2022,47,50,texte,مرابيح الخزينة بعناوين مختلفة,False,
+transferts_ep_profits_tresor,profits_tresor_divers,2022,0.036205,36205.0,cdc-2023,42,45,texte,مرابيح الخزينة بعناوين مختلفة,False,
+transferts_ep_profits_tresor,profits_tresor_divers,2023,0.0,0.0,cdc-2023,42,45,texte,مرابيح الخزينة بعناوين مختلفة,False,tiret imprimé pour 2023
+transferts_ep_profits_tresor,profits_tresor_divers_et_change,2023,71.856828,71856828.0,cdc-2024,38,38,image,مرابيح الخزينة بعناوين مختلفة,False,"le rapport 2024 n'a plus de ligne « تحويل العملة » : 71 856 828 en 2023 y figure sous « بعناوين مختلفة », où le rapport 2023 les classe en « نتيجة تحويل العملة »"
+transferts_ep_profits_tresor,profits_tresor_divers_et_change,2024,62.644773,62644773.0,cdc-2024,38,38,image,مرابيح الخزينة بعناوين مختلفة,False,"le rapport 2024 n'a plus de ligne « تحويل العملة » : 71 856 828 en 2023 y figure sous « بعناوين مختلفة », où le rapport 2023 les classe en « نتيجة تحويل العملة »"
+transferts_ep_profits_tresor,profits_tresor_emission_bons,2019,0.000522,522.0,cdc-2020,annexe 11,146,image,مرابيح على اصدار رقاع خزينة,False,"montant imprimé au millime, arrondi au dinar; ligne présente dans l'annexe seulement"
+transferts_ep_profits_tresor,profits_tresor_emission_bons,2020,0.0,0.0,cdc-2020,annexe 11,146,image,مرابيح على اصدار رقاع خزينة,False,tiret imprimé pour 2020 ; ligne présente dans l'annexe seulement
+transferts_ep_profits_tresor,profits_tresor_titres_garantis,2019,11.966917,11966917.0,cdc-2020,annexe 11,146,image,مرابيح الخزينة فوائد السندات المضمونة,False,"montant imprimé au millime, arrondi au dinar"
+transferts_ep_profits_tresor,profits_tresor_titres_garantis,2020,14.203151,14203151.0,cdc-2020,annexe 11,146,image,مرابيح الخزينة فوائد السندات المضمونة,False,"montant imprimé au millime, arrondi au dinar"
+transferts_ep_profits_tresor,profits_tresor_titres_garantis,2020,14.203151,14203151.0,cdc-2021,58,61,image,مرابيح الخزينة فوائد السندات المضمونة,False,chiffres imprimés avec les groupes de trois chiffres dans l'ordre inverse (« 828 14 173 » pour 14 173 828) ; lus avec le rapport 2022 et l'annexe du rapport 2020
+transferts_ep_profits_tresor,profits_tresor_titres_garantis,2021,14.173828,14173828.0,cdc-2021,58,61,image,مرابيح الخزينة فوائد السندات المضمونة,False,chiffres imprimés avec les groupes de trois chiffres dans l'ordre inverse (« 828 14 173 » pour 14 173 828) ; lus avec le rapport 2022 et l'annexe du rapport 2020
+transferts_ep_profits_tresor,profits_tresor_titres_garantis,2021,14.173828,14173828.0,cdc-2022,47,50,texte,مرابيح الخزينة فوائد السندات المضمونة,False,
+transferts_ep_profits_tresor,profits_tresor_titres_garantis,2022,20.247909,20247909.0,cdc-2022,47,50,texte,مرابيح الخزينة فوائد السندات المضمونة,False,
+transferts_ep_profits_tresor,profits_tresor_titres_garantis,2022,20.247909,20247909.0,cdc-2023,42,45,texte,مرابيح الخزينة فوائد السندات المضمونة,False,
+transferts_ep_profits_tresor,profits_tresor_titres_garantis,2023,24.862284,24862284.0,cdc-2023,42,45,texte,مرابيح الخزينة فوائد السندات المضمونة,False,
+transferts_ep_profits_tresor,profits_tresor_titres_garantis,2023,24.862284,24862284.0,cdc-2024,38,38,image,مرابيح الخزينة فوائد السندات المضمونة,False,
+transferts_ep_profits_tresor,profits_tresor_titres_garantis,2024,18.641308,18641308.0,cdc-2024,38,38,image,مرابيح الخزينة فوائد السندات المضمونة,False,
+transferts_ep_profits_tresor,total,2010,812.72227,812722270.0,cdc-2011,39,39,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2011,1595.572353,1595572353.0,cdc-2011,39,39,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2011,1595.572353,1595572353.0,cdc-2012,62,63,texte,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2012,810.45918,810459180.0,cdc-2012,62,63,texte,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2012,810.45918,810459180.0,cdc-2013,44,44,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2013,1117.415916,1117415916.0,cdc-2013,44,44,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2013,1117.415916,1117415916.0,cdc-2014,49,49,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2014,583.230334,583230334.0,cdc-2014,49,49,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2014,583.230334,583230334.0,cdc-2015,42,42,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2015,477.200238,477200238.0,cdc-2015,42,42,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2015,477.200238,477200238.0,cdc-2016,50,50,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2016,523.323897,523323897.0,cdc-2016,50,50,image,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2017,312.215938,312215938.0,cdc-2018,58,58,texte,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2018,685.354486,685354486.0,cdc-2018,58,58,texte,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2018,685.354486,685354486.0,cdc-2019,60,60,texte,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total,2019,1131.299831,1131299831.0,cdc-2019,60,60,texte,تحويلات المنشآت العمومية ومرابيح الخزينة,False,
+transferts_ep_profits_tresor,total_dividendes,2019,347.610145,347610145.0,cdc-2020,49,49,image,الجملة,False,sous-total imprimé : dividendes (حصص المرابيح)
+transferts_ep_profits_tresor,total_dividendes,2020,189.930948,189930948.0,cdc-2020,49,49,image,الجملة,False,sous-total imprimé : dividendes (حصص المرابيح)
+transferts_ep_profits_tresor,total_dividendes,2020,189.930948,189930948.0,cdc-2021,59,62,texte,جملة حصص المرابيح,False,sous-total imprimé : dividendes (حصص المرابيح)
+transferts_ep_profits_tresor,total_dividendes,2021,79.149664,79149664.0,cdc-2021,59,62,texte,جملة حصص المرابيح,False,sous-total imprimé : dividendes (حصص المرابيح)
+transferts_ep_profits_tresor,total_dividendes,2021,79.149664,79149664.0,cdc-2022,48,51,texte,جملة حصص المرابيح,False,sous-total imprimé : dividendes (حصص المرابيح)
+transferts_ep_profits_tresor,total_dividendes,2022,106.443145,106443145.0,cdc-2022,48,51,texte,جملة حصص المرابيح,False,sous-total imprimé : dividendes (حصص المرابيح)
+transferts_ep_profits_tresor,total_dividendes,2022,106.443145,106443145.0,cdc-2023,43,46,image,جملة حصص المرابيح,False,sous-total imprimé : dividendes (حصص المرابيح)
+transferts_ep_profits_tresor,total_dividendes,2023,130.111693,130111693.0,cdc-2023,43,46,image,جملة حصص المرابيح,False,sous-total imprimé : dividendes (حصص المرابيح)
+transferts_ep_profits_tresor,total_dividendes,2023,130.111693,130111693.0,cdc-2024,39,39,image,جملة حصص المرابيح,False,sous-total imprimé : dividendes
+transferts_ep_profits_tresor,total_dividendes,2024,235.681747,235681747.0,cdc-2024,39,39,image,جملة حصص المرابيح,False,sous-total imprimé : dividendes
+transferts_ep_profits_tresor,total_excedents_ep,2019,720.114576,720114576.0,cdc-2020,49,49,image,جملة فوائض مرابيح المنشآت العمومية,False,sous-total imprimé : Banque centrale et excédents des entreprises publiques industrielles et commerciales
+transferts_ep_profits_tresor,total_excedents_ep,2020,741.156251,741156251.0,cdc-2020,49,49,image,جملة فوائض مرابيح المنشآت العمومية,False,sous-total imprimé : Banque centrale et excédents des entreprises publiques industrielles et commerciales
+transferts_ep_profits_tresor,total_excedents_ep,2020,741.156251,741156251.0,cdc-2021,59,62,texte,جملة فوائض مرابيح المنشآت العمومية,False,sous-total imprimé : Banque centrale et excédents des entreprises publiques industrielles et commerciales
+transferts_ep_profits_tresor,total_excedents_ep,2021,729.004337,729004337.0,cdc-2021,59,62,texte,جملة فوائض مرابيح المنشآت العمومية,False,sous-total imprimé : Banque centrale et excédents des entreprises publiques industrielles et commerciales
+transferts_ep_profits_tresor,total_excedents_ep,2021,729.004337,729004337.0,cdc-2022,48,51,texte,جملة فوائض مرابيح المنشآت العمومية,False,sous-total imprimé : Banque centrale et excédents des entreprises publiques industrielles et commerciales
+transferts_ep_profits_tresor,total_excedents_ep,2022,518.473864,518473864.0,cdc-2022,48,51,texte,جملة فوائض مرابيح المنشآت العمومية,False,sous-total imprimé : Banque centrale et excédents des entreprises publiques industrielles et commerciales
+transferts_ep_profits_tresor,total_excedents_ep,2022,518.473864,518473864.0,cdc-2023,43,46,image,جملة فوائض مرابيح المنشآت العمومية,False,sous-total imprimé : Banque centrale et excédents des entreprises publiques industrielles et commerciales
+transferts_ep_profits_tresor,total_excedents_ep,2023,478.73431,478734310.0,cdc-2023,43,46,image,جملة فوائض مرابيح المنشآت العمومية,False,sous-total imprimé : Banque centrale et excédents des entreprises publiques industrielles et commerciales
+transferts_ep_profits_tresor,total_excedents_ep,2023,478.73431,478734310.0,cdc-2024,40,40,image,جملة فوائض مرابيح المنشآت العمومية,False,sous-total imprimé
+transferts_ep_profits_tresor,total_excedents_ep,2024,1506.112107,1506112107.0,cdc-2024,40,40,image,جملة فوائض مرابيح المنشآت العمومية,False,sous-total imprimé

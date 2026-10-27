@@ -5029,8 +5029,9 @@
   fiche: sources/ins-emploi-2019-duree-travail.md
 - id: cdc-cloture-entreprises-publiques
   titre: 'Rapports de la Cour des comptes sur la clôture du budget de l''État, gestions
-    2010 à 2016 : transferts des entreprises publiques et profits du Trésor, dette
-    garantie remboursée par l''État, remboursements de prêts, recettes de privatisation'
+    2010 à 2024 : transferts des entreprises publiques et profits du Trésor, dette
+    garantie remboursée par l''État et encours de la dette garantie, remboursements
+    de prêts, recettes de privatisation'
   sources:
   - cdc-cloture-2011
   - cdc-cloture-2012
@@ -5038,61 +5039,114 @@
   - cdc-cloture-2014
   - cdc-cloture-2015
   - cdc-cloture-2016
+  - cdc-cloture-2018
+  - cdc-cloture-2019
+  - cdc-cloture-2020
+  - cdc-cloture-2021
+  - cdc-cloture-2022
+  - cdc-cloture-2023
+  - cdc-cloture-2024
   build: uv run python scripts/build_cdc_cloture_entreprises_publiques.py
   raw:
-  - sources/transcriptions/cdc-cloture-entreprises-publiques-2010-2016.csv
-  output: data/processed/entreprises-publiques/cour_des_comptes_cloture_ep_2010_2016.csv
+  - sources/transcriptions/cdc-cloture-entreprises-publiques-2010-2024.csv
+  output: data/processed/entreprises-publiques/cour_des_comptes_cloture_ep_2010_2024.csv
   unite: dinars courants (colonne valeur_dinars, entiers) et millions de dinars courants
     (valeur_md)
   perimetre: 'rapports de la Cour des comptes sur la clôture du budget de l''État
-    pour les gestions 2011, 2012, 2013, 2014, 2015 et 2016 (éditions arabes), chacun
-    avec la gestion précédente en comparaison, d''où les gestions 2010 à 2016 : recettes
-    « transferts des entreprises publiques et profits du Trésor » (total et cinq ou
-    six lignes : part du budget dans les profits de la Banque centrale, excédents
-    des entreprises publiques non pétrolières et pétrolières, bénéfices des sociétés
-    non pétrolières et pétrolières, autres profits du Trésor) ; principal de la dette
-    garantie payé par l''État, ligne par ligne, avec la prise en charge de dettes
-    bancaires (art. 25 de la loi de finances de 1999) et la dette du secteur agricole
-    (loi n° 65 de 1999) ; intérêts de la dette garantie payés par l''État ; remboursements
-    de prêts reçus (total, prêts extérieurs rétrocédés, prêts du titre II aux entreprises
-    publiques) ; recettes de privatisation inscrites au budget ; une ligne par (rubrique,
-    poste, gestion, rapport)'
-  caveats: 'CE NE SONT NI DES TRANSFERTS DU BUDGET AUX ENTREPRISES PUBLIQUES (les
+    pour les gestions 2011 à 2016 et 2018 à 2024 (éditions arabes), chacun avec la
+    gestion précédente en comparaison, d''où les gestions 2010 à 2024 (la gestion
+    2017 vient de la colonne de comparaison du rapport 2018) : recettes « transferts
+    des entreprises publiques et profits du Trésor » (total et cinq ou six lignes
+    : part du budget dans les profits de la Banque centrale, excédents des entreprises
+    publiques non pétrolières et pétrolières, bénéfices des sociétés non pétrolières
+    et pétrolières, autres profits du Trésor) jusqu''à la gestion 2019 ; depuis 2020,
+    les mêmes lignes sous la nomenclature des recettes de propriété (sous-totaux imprimés
+    des dividendes et des excédents des entreprises publiques, lignes de profits du
+    Trésor tirées de la ligne des intérêts) ; principal de la dette garantie payé
+    par l''État, ligne par ligne, avec la prise en charge de dettes bancaires (art.
+    25 de la loi de finances de 1999) et la dette du secteur agricole (loi n° 65 de
+    1999, puis loi de finances de 2014) ; intérêts de la dette garantie payés par
+    l''État ; remboursements de prêts reçus (total et ventilation jusqu''à 2019 ;
+    depuis 2020 prêts du titre II et prêts extérieurs rétrocédés, sans total) ; recettes
+    de privatisation inscrites au budget (montants de 2010 à 2016, lignes vides de
+    2017 à 2024) ; encours de la dette garantie en fin de gestion (2017 à 2019, 2021
+    à 2023, d''après le ministère des Finances) ; une ligne par (rubrique, poste,
+    gestion, rapport)'
+  caveats: 'CE NE SONT PAS DES TRANSFERTS DU BUDGET AUX ENTREPRISES PUBLIQUES (les
     rapports de clôture ne ventilent pas la dépense par entreprise bénéficiaire ;
-    voir l''annexe 8 des lois de finances depuis 2016), NI UN ENCOURS DE DETTE GARANTIE
-    (la Cour écrit chaque année que le compte général ne porte pas la situation des
-    prêts rétrocédés ni des prêts garantis). `transferts_ep_profits_tresor` est un
-    FLUX DES ENTREPRISES VERS LE BUDGET, qui comprend la part du budget dans les profits
-    de la Banque centrale et les autres profits du Trésor. `garantie_principal_paye`
+    voir l''annexe 8 des lois de finances depuis 2016). AUCUN ENCOURS AVANT 2017 :
+    la Cour écrit chaque année jusqu''au rapport 2016 que le compte général ne porte
+    pas la situation des prêts rétrocédés ni des prêts garantis ; depuis le rapport
+    2018 elle imprime un encours de la dette garantie en fin de gestion (rubrique
+    dette_garantie_encours), d''après le ministère des Finances (Direction générale
+    de la gestion de la dette et de la coopération financière pour 2018 ; rapport
+    sur la dette publique pour 2019 ; sans source citée pour 2021 à 2023) ; aucun
+    encours imprimé pour 2020 ni pour 2024 ; la part du PIB imprimée est dans la remarque
+    (15,6 % en 2018, 14,67 % en 2019) ; fin 2018 : 16 471 MD (rapport 2018) puis 16
+    713,4 MD (rapport 2019), les deux gardés ; 2017 : extérieur et intérieur seulement.
+    `transferts_ep_profits_tresor` est un FLUX DES ENTREPRISES VERS LE BUDGET, qui
+    comprend la part du budget dans les profits de la Banque centrale et les autres
+    profits du Trésor. RUPTURE DE NOMENCLATURE EN 2020 : les rapports 2020 à 2024
+    n''impriment plus le total « تحويلات المنشآت العمومية ومرابيح الخزينة » ; aucun
+    total n''est recalculé, les sous-totaux imprimés (`total_dividendes`, `total_excedents_ep`)
+    et les lignes `profits_tresor_*` sont des postes à part (pour 2019, les trois
+    lignes `profits_tresor_*` du rapport 2020 somment les 63 575 110 « autres profits
+    du Trésor » du rapport 2019) ; en 2024 la ligne des excédents ne précise plus
+    « غير البترولية » (449,350 MD = 285 MD pétrolières + 164,350 MD non pétrolières,
+    d''après le texte). Dividendes de 2023 : le rapport 2024 imprime sous les libellés
+    inverses les montants (110 111 693 et 20 000 000) que le rapport 2023 attribue
+    au pétrole et au non-pétrole ; les deux transcriptions sont gardées (`divergence_entre_rapports`),
+    le sens des dividendes de 2024 suit les libellés imprimés dans le rapport 2024
+    ; l''annexe du rapport 2020 intervertit aussi les deux lignes. `garantie_principal_paye`
     est la dette garantie REMBOURSÉE PAR L''ÉTAT : ses lignes ne sont pas toutes des
     entreprises publiques (art. 24 de la loi de finances de 1999, Caisse des prêts
-    et de soutien des collectivités locales, crédits agricoles, Office des céréales).
-    Écart imprimé déclaré : 2014, lignes 174 131 665 contre un total imprimé de 174
-    131 165 (rapports 2014 et 2015). Libellé divergent : le montant de 47 000 000
-    dinars de 2013 est celui de la Société tunisienne de banque dans le rapport 2013
-    et celui de la société tunisienne de sidérurgie dans le rapport 2014. Recettes
-    de privatisation 2012 : 1 105 MD (table du déficit structurel, rapport 2012) et
-    900 MD pour la seule cession de 35 % de Tunisie Télécom (rapport 2016) ; 2013
-    : 1 070,402 MD et 1 000 MD ; la licence mobile de 2016 est une recette distincte.
-    Gestion 2010 : le rapport de clôture de 2010 n''est pas au catalogue de la Cour
-    ; les valeurs de 2010 viennent de la colonne de comparaison du rapport 2011. Les
-    intérêts de 2012 à 2014 sont lus à la couche texte, recoupés d''un rapport à l''autre.
-    Montants courants ; aucune part du PIB dans la série (le précis les calcule avec
-    les dénominateurs de la compensation, PIB en base 2015 pour 2010-2016).'
-  titre_ar: 'تقارير دائرة المحاسبات عن غلق ميزانية الدولة، التصرفات 2010 إلى 2016:
-    تحويلات المنشآت العمومية ومرابيح الخزينة، الدين المضمون المسدَّد من قبل الدولة،
-    استرجاع القروض، مداخيل التخصيص'
+    et de soutien des collectivités locales, crédits agricoles, Office des céréales,
+    Office national de l''huile) ; depuis 2017 imprimée en milliers de dinars à trois
+    décimales. Écarts imprimés déclarés : 2014, lignes 174 131 665 contre un total
+    imprimé de 174 131 165 (rapports 2014 et 2015) ; 2017 (−1 dinar, rapport 2018),
+    2018 (+1 dinar, rapports 2018 et 2019). Prêts : somme des lignes (texte, millions
+    de dinars à trois décimales) moins total (tableau, dinars) = +557 dinars en 2018
+    et +257 en 2019. Libellé divergent : le montant de 47 000 000 dinars de 2013 est
+    celui de la Société tunisienne de banque dans le rapport 2013 et celui de la société
+    tunisienne de sidérurgie dans le rapport 2014. Remboursements de prêts : depuis
+    2020 les prêts extérieurs rétrocédés sont dans les ressources d''emprunt extérieur
+    et les recettes budgétaires ne portent que les prêts du titre II (quelques millions
+    de dinars) : pas de total, et la baisse de 155 MD (2019) à 0,95 MD (2020) est
+    un changement de classement. Recettes de privatisation 2012 : 1 105 MD (table
+    du déficit structurel, rapport 2012) et 900 MD pour la seule cession de 35 % de
+    Tunisie Télécom (rapport 2016) ; 2013 : 1 070,402 MD et 1 000 MD ; la licence
+    mobile de 2016 est une recette distincte ; LIGNES DE PRIVATISATION VIDES DEPUIS
+    2017 (valeur vide, remarque) : les rapports 2018 à 2024 n''impriment aucun montant
+    (en 2017 et 2018 les autres recettes extraordinaires sont égales aux dons plus
+    les confiscations ; de 2020 à 2024 le tableau des recettes non fiscales n''a aucune
+    ligne de privatisation) ; la cession de la société pharmaceutique de 45 MD en
+    2022 est une confiscation. Gestion 2010 : le rapport de clôture de 2010 n''est
+    pas au catalogue de la Cour ; les valeurs de 2010 viennent de la colonne de comparaison
+    du rapport 2011. Les intérêts de 2012 à 2014 sont lus à la couche texte, recoupés
+    d''un rapport à l''autre. Le rapport 2021 imprime à l''envers les groupes de chiffres
+    du tableau des intérêts (« 828 14 173 » pour 14 173 828) : lus avec l''annexe
+    du rapport 2020 et le rapport 2022. Pages : celles du pied de page, avec les pages
+    du fichier ; décalage de trois pages dans les rapports 2021 à 2023. Montants courants
+    ; aucune part du PIB dans la série, hors la remarque de l''encours (le précis
+    calcule les siennes avec les dénominateurs de la compensation, PIB en base 2015
+    pour 2010-2016).'
+  titre_ar: 'تقارير دائرة المحاسبات عن غلق ميزانية الدولة، التصرفات 2010 إلى 2024:
+    تحويلات المنشآت العمومية ومرابيح الخزينة، الدين المضمون المسدَّد من قبل الدولة
+    وحجم الدين المضمون، استرجاع القروض، مداخيل التخصيص'
   unite_ar: بالدينار الجاري (قيم صحيحة) وبملايين الدنانير الجارية
   perimetre_ar: تقارير دائرة المحاسبات عن غلق ميزانية الدولة للتصرفات 2011 إلى 2016
-    مع سنة المقارنة السابقة لكل تقرير
-  caveats_ar: ليست تحويلات من الميزانية إلى المنشآت العمومية ولا حجم دين مضمون. تحويلات
-    المنشآت العمومية تدفق نحو الميزانية. الدين المضمون المسدَّد من الدولة ليس كله
-    لمنشآت عمومية. فارق مطبوع مصرَّح به في 2014. لا تقرير لغلق ميزانية 2010 في فهرس
-    الدائرة.
+    و2018 إلى 2024 مع سنة المقارنة السابقة لكل تقرير (تصرف 2017 من تقرير 2018)
+  caveats_ar: 'ليست تحويلات من الميزانية إلى المنشآت العمومية. لا حجم دين مضمون قبل
+    2017: تطبع الدائرة هذا الحجم منذ تقرير 2018 نقلا عن وزارة المالية، وهو غير مطبوع
+    لسنتي 2020 و2024. تحويلات المنشآت العمومية تدفق نحو الميزانية، ولم يعد جدولها
+    ومجموعها مطبوعين منذ تقرير 2020 (تغيير التبويب). الدين المضمون المسدَّد من الدولة
+    ليس كله لمنشآت عمومية. فوارق مطبوعة مصرَّح بها في 2014 و2017 و2018. منذ 2020 تُصنَّف
+    القروض الخارجية المعاد إقراضها ضمن موارد الاقتراض الخارجي. لا تقرير لغلق ميزانية
+    2010 في فهرس الدائرة. مداخيل التخصيص منذ 2017: سطور فارغة لعدم طباعة أي مبلغ.'
   fiche: sources/cdc-cloture-entreprises-publiques.md
 - id: jort-lf-plafond-garanties
   titre: Plafond de la garantie de l'État fixé par les lois de finances, 1958-59 à
-    2015 (montant fixé et modifications en cours de gestion)
+    2026 (montant fixé et modifications en cours de gestion)
   sources:
   - loi58-45-lf1958
   - loi59-42-lf1959
@@ -5155,10 +5209,24 @@
   - lf-2013
   - lf-2014
   - lf-2015
+  - lf-2016
+  - lf-2017
+  - lf-2018
+  - loi2018-56-lf2019
+  - lfc-2019
+  - lf-2020
+  - loi2020-45-lfr
+  - lf-2021
+  - dl2021-21-lf2022
+  - lf-2023
+  - lfc-2023
+  - lf-2024
+  - lf-2025
+  - lf-2026
   build: uv run python scripts/build_jort_lf_plafond_garanties.py
   raw:
   - sources/transcriptions/plafond-garanties-lois-de-finances.csv
-  output: data/processed/entreprises-publiques/plafond_garantie_lois_de_finances_1958_2015.csv
+  output: data/processed/entreprises-publiques/plafond_garantie_lois_de_finances_1958_2026.csv
   unite: 'millions de dinars courants (1958-59 : imprimé en francs, colonne valeur_imprimee)'
   perimetre: 'article « octroi de la garantie de l''État » de chaque loi de finances
     (JORT, édition française) : montant maximal dans la limite duquel le ministre
@@ -5179,17 +5247,25 @@
     garantie propre aux dettes des offices des céréales et de l''huile de 1997 (980
     MD, art. 17) n''entre pas dans la série. Lecture à l''image ou par océrisation
     (fascicules scannés), couche texte déchiffrée pour 1999-2004. Gestion 1985 : numéro
-    d''article mal imprimé, 54 retenu. Plafond de 2016 à 2024 : série garanties-etat
-    (annexes du ministère des Finances), jamais chaînée à celle-ci. Les parts du PIB
+    d''article mal imprimé, 54 retenu. La série légale couvre 1958-59 à 2026 ; elle
+    n''est pas raccordée à garanties-etat (autres sources, autres définitions), mais
+    les deux peuvent être comparées année par année. 2016 à 2026 : lecture à l''image
+    de l''article de chaque loi ; fascicules français absents du corpus pour 2016,
+    2019, 2020, 2023, 2024, 2025 (n° 104 de 2015, 104 de 2018, 104 de 2019, 141 de
+    2022, 144 de 2023, 149 de 2024) : pages de l''extrait français du corpus Lois_de_Finances
+    pour 2016, 2019, 2020, 2024, 2025, de l''édition arabe pour 2023 et 2026 (colonne
+    remarque). Relèvements en cours de gestion en 2019 (4 500 à 4 790 MD), 2020 (5
+    000 à 7 000) et 2023 (7 000 à 8 000) ; les lois complémentaires ou rectificatives
+    de 2016, 2017, 2018, 2021 et 2022 ne modifient pas l''article. Les parts du PIB
     et des dépenses de l''État sont calculées par le précis (dénominateurs : denominateurs-depenses-etat-pib
     depuis 1986).'
-  titre_ar: سقف ضمان الدولة المحدّد بقوانين المالية، 1958-59 إلى 2015
+  titre_ar: سقف ضمان الدولة المحدّد بقوانين المالية، 1958-59 إلى 2026
   unite_ar: 'بملايين الدنانير الجارية (1958-59: مطبوع بالفرنك)'
   perimetre_ar: فصل «منح ضمان الدولة» في كلّ قانون مالية بالرائد الرسمي، والقوانين
     التي تعدّل المبلغ أثناء التصرّف
   caveats_ar: سقف مصادق عليه وليس مبلغ ضمانات ممنوحة ولا رصيد دين. 1958-59 مطبوع بالفرنك.
     لا سطر لتصرّف 1960. قوانين المالية التكميلية من 1969 إلى 1991 قُرئت من فهرسها
-    فقط. لا تُربط هذه السلسلة بسلسلة 2016-2024.
+    فقط. لا تُربط هذه السلسلة بسلسلة garanties-etat لكن يمكن مقارنتهما سنة بسنة.
   fiche: sources/jort-lf-plafond-garanties.md
 - id: jort-lf-budget-ordinaire
   titre: Budget ordinaire de l'État voté par la loi de finances, 1959-60 à 1986 (recettes
@@ -5254,3 +5330,54 @@
     عليه وليس إنجازًا. لا يُربط بنفقات الدولة المنجزة منذ 1986. اعتمادات 1959-60 غير
     مقروءة؛ الموارد وحدها مقروءة.'
   fiche: sources/jort-lf-budget-ordinaire.md
+- id: jort-lf-plafond-prets-tresor
+  titre: Plafond des prêts du Trésor aux établissements publics fixé par les lois
+    de finances, 2016 à 2026 (montant fixé et modifications en cours de gestion)
+  sources:
+  - lf-2016
+  - lfc-2016
+  - lf-2017
+  - lfc-2017
+  - lf-2018
+  - loi2018-56-lf2019
+  - lf-2020
+  - loi2020-45-lfr
+  - lf-2021
+  - lfr-2021
+  - dl2021-21-lf2022
+  - lf-2023
+  - lfc-2023
+  - lf-2024
+  - lf-2025
+  - lf-2026
+  build: uv run python scripts/build_jort_lf_plafond_prets_tresor.py
+  raw:
+  - sources/transcriptions/plafond-prets-tresor-lois-de-finances.csv
+  output: data/processed/entreprises-publiques/plafond_prets_tresor_lois_de_finances_2016_2026.csv
+  unite: millions de dinars courants
+  perimetre: 'article « prêts du Trésor aux établissements publics » de chaque loi
+    de finances (JORT) : montant maximal dans la limite duquel le ministre chargé
+    des finances est autorisé à accorder des prêts du Trésor aux établissements publics
+    en vertu de l''article 62 du code de la comptabilité publique ; une ligne par
+    montant fixé (fixation) ou modifié en cours de gestion (relèvement, abaissement)
+    avec le montant remplacé ; colonne en_vigueur_fin_gestion_md pour le dernier montant
+    de la gestion'
+  caveats: 'Série incomplète : états antérieurs à 2016 non versés (article présent
+    dans les lois de finances depuis au moins 1995 : 40 MD de 1995 à 2005, 100 MD
+    de 2013 à 2015, vus, non versés). UN PLAFOND VOTÉ, NON UN MONTANT DE PRÊTS ACCORDÉS
+    NI UN ENCOURS. Modifications en cours de gestion : relèvements en 2016 (100 à
+    125 MD, loi complémentaire promulguée le 3 janvier 2017, après la fin de la gestion),
+    2017 (100 à 125), 2020 (125 à 550), 2021 (125 à 175) ; abaissement en 2023 (325
+    à 200). Les lois complémentaires ou rectificatives de 2018, 2019 et 2022 ne modifient
+    pas l''article. Fascicules français absents du corpus pour 2016, 2019, 2020, 2023,
+    2024, 2025 : pages de l''extrait français du corpus Lois_de_Finances pour 2016,
+    2019, 2020, 2024, 2025, de l''édition arabe pour 2023 et 2026 (colonne remarque).
+    La loi de finances pour 2019 dit « entreprises publiques » en français, « المؤسسات
+    العمومية » en arabe.'
+  titre_ar: سقف قروض الخزينة للمؤسسات العمومية المحدّد بقوانين المالية، 2016 إلى 2026
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: فصل «قروض الخزينة للمؤسسات العمومية» (الفصل 62 من مجلة المحاسبة العمومية)
+    في كلّ قانون مالية بالرائد الرسمي، والقوانين التي تعدّل المبلغ أثناء التصرّف
+  caveats_ar: 'سلسلة غير كاملة: الحالات السابقة لسنة 2016 غير مدرجة. سقف مصادق عليه
+    وليس مبلغ قروض ممنوحة.'
+  fiche: sources/jort-lf-plafond-prets-tresor.md
