@@ -4323,7 +4323,7 @@
     du « Recueil des opérations depuis 1998 » : société, année de cession, mode, produit,
     acquéreur, 1998-2008'
   sources:
-  - dgpv-recueil-operations-depuis-1998
+  - dgpv-recueil-operations
   build: uv run python scripts/build_privatisation_recueil.py
   raw:
   - sources/transcriptions/privatisation-recueil-operations.csv
@@ -5388,7 +5388,7 @@
   titre: 'Opérations du recueil de la privatisation, 1998-2008, par nature de l''acte
     : lignes, sociétés, produit'
   sources:
-  - dgpv-recueil-operations-depuis-1998
+  - dgpv-recueil-operations
   build: uv run python scripts/build_privatisation_recueil.py
   raw:
   - sources/transcriptions/privatisation-recueil-operations.csv
@@ -5421,7 +5421,7 @@
   titre: Opérations du recueil de la privatisation par année de cession et par nature
     de l'acte, 1998-2008
   sources:
-  - dgpv-recueil-operations-depuis-1998
+  - dgpv-recueil-operations
   build: uv run python scripts/build_privatisation_recueil.py
   raw:
   - sources/transcriptions/privatisation-recueil-operations.csv
@@ -5447,7 +5447,7 @@
   titre: Produit des opérations du recueil par année, 1998-2008, en regard des deux
     éditions du classeur des recettes annuelles
   sources:
-  - dgpv-recueil-operations-depuis-1998
+  - dgpv-recueil-operations
   - dgpv-recettes-annuelles-1987-2009
   - dgpv-recettes-annuelles-1987-2005
   build: uv run python scripts/build_privatisation_recueil.py
