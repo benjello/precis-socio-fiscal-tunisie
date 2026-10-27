@@ -5595,3 +5595,49 @@
   caveats_ar: 'حسب السنة المحاسبية للبنك لا حسب سنة الميزانية: يُدرج مناب السنة ن
     في ميزانية ن+1 أو بعدها.'
   fiche: sources/bct-part-etat-benefices.md
+- id: entreprises-publiques-transferts-par-etablissement
+  titre: Transferts du budget aux caisses de sécurité sociale, à la STIR et à la STEG,
+    aux offices du ministère du Commerce, et total moins ces bénéficiaires, 2017-2024,
+    par édition
+  sources:
+  - minfin-transferts-garanties
+  build: uv run python scripts/build_minfin_transferts_etablissements.py
+  raw:
+  - sources/transcriptions/minfin-transferts-par-etablissement.csv
+  output: data/processed/entreprises-publiques/transferts_budget_hors_caisses_carburants_cereales_2017_2024.csv
+  unite: milliers de dinars courants ; valeur_md en millions de dinars
+  perimetre: 'ministère des Finances, rapport sur les transferts et les garanties
+    (annexe 8), tableau 3.1 « chiffres par établissement » (total transféré à chaque
+    établissement, toutes natures), éditions LF 2021 (traduction française) et LF
+    2022 à LF 2025 (arabe) : blocs entiers des ministères des Affaires sociales et
+    du Commerce, STIR et STEG et ligne du ministère de l''Industrie, lignes des secteurs
+    social et économique quand elles sont sur les pages lues (sortie transferts_budget_par_etablissement_2017_2024.csv,
+    une ligne par édition, année, entité) ; décomposition, pour l''édition que le
+    précis retient pour chaque année : total imprimé, caisses (CNRPS, CNSS, CNAM,
+    contribution de l''État aux caisses sociales en 2024), STIR et STEG, Office des
+    céréales et Office national de l''huile du ministère du Commerce, reste'
+  caveats: 'LE RESTE N''EST PAS « HORS COMPENSATION » : il contient le transport public
+    (dont la subvention de transport de la dépense de compensation), et l''Office
+    des céréales et l''Office de l''huile reçoivent moins que le poste « produits
+    de base » de la compensation (écart de 190 à 775 MD par an, 2018-2024) ; l''Office
+    de l''huile reçoit aussi autre chose que la subvention. STIR + STEG égale exactement
+    le poste « carburants » de la dépense de compensation, 2017-2024 (recoupement
+    entre familles, constaté par un test). AUCUN CHAÎNAGE : chaque soustraction vient
+    du tableau de l''édition dont vient le total de l''année. 2017 SANS BLOC DU COMMERCE
+    (traduction LF 2021 lacunaire) : pas de reste en 2017. 2016 (ancien périmètre,
+    édition LF 2020) non transcrit. Écarts imprimés déclarés : ligne du ministère
+    des Affaires sociales 2017 supérieure de 9 000 milliers à la somme de ses entités
+    (LF 2021) ; secteur social 2017 du tableau 3.1 supérieur de 400 milliers à celui
+    du résumé (LF 2021). Divergences entre éditions gardées : secteur social 2019
+    (2 049 770 ou 2 049 896) et 2020 (2 932 391 ou 2 930 991). 2024 : loi de finances.
+    LU À L''IMAGE.'
+  titre_ar: تحويلات الميزانية لفائدة الصناديق الاجتماعية والشركة التونسية لصناعات
+    التكرير والشركة التونسية للكهرباء والغاز ودواوين وزارة التجارة، والمجموع دونها،
+    2017-2024
+  unite_ar: بحساب ألف دينار جارٍ؛ وبملايين الدنانير في عمود valeur_md
+  perimetre_ar: وزارة المالية، التقرير حول التحويلات والضمانات (الملحق عدد 8)، الجدول
+    3.1 «الأرقام حسب المؤسسات»، طبعات قوانين المالية 2021 إلى 2025
+  caveats_ar: 'الباقي ليس «دون الدعم»: يشمل النقل العمومي، وديوان الحبوب والديوان
+    الوطني للزيت لا يتلقيان كامل دعم المواد الأساسية. لا ربط بين الطبعات. لا يوجد
+    قسم وزارة التجارة في الترجمة الفرنسية لطبعة 2021. قُرئت من الصورة.'
+  fiche: sources/minfin-transferts-par-etablissement.md
