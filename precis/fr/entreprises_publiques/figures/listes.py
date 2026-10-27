@@ -276,22 +276,22 @@ def tableau_sorties(caption: str, tbl_id: str = "tbl-ep-liste-sorties-recueil") 
     print("\n".join(out) + f"\n\n: {caption} {{#{tbl_id}}}\n")
 
 
-# --- plafond légal de la garantie de l'État, 1958-2015 -------------------------------------------
+# --- plafond légal de la garantie de l'État, 1958-2026 -------------------------------------------
 
 PLAFOND_DEN = "plafond-garantie-denominateurs"
 figtools.register_provenance(
     PLAFOND_DEN,
-    titre=("Dénominateurs des parts du plafond de la garantie : PIB aux prix courants, 1961-2015, "
-           "et dépenses de l'État hors service de la dette, 1986-2015"),
+    titre=("Dénominateurs des parts du plafond de la garantie : PIB aux prix courants, 1961-2025, "
+           "et dépenses de l'État hors service de la dette, 1986-2025"),
     sources=["wb-wdi", "undata-sna", "ins-cnat-2015", "ins-pib-base-2015-2010-2020",
              "minfin-remunerations"],
     unite="millions de dinars courants",
     perimetre=("PIB aux prix courants, un par année, jamais raccordé : Banque mondiale de 1961 à "
                "1991, dans une base que la source ne dit pas ; Institut national de la "
                "statistique, en base 1983 de 1992 à 1996, en base 1997 de 1997 à 2009 et en base "
-               "2015 de 2010 à 2015. "
+               "2015 de 2010 à 2025. "
                "Dépenses du budget de l'État hors service de la dette, colonnes de réalisation "
-               "de la répartition économique des dépenses du ministère des Finances, 1986-2015"),
+               "de la répartition économique des dépenses du ministère des Finances, 1986-2025"),
     caveats=("Le PIB d'avant 1992 n'a pas de base dite ; les passages de 1991 à 1992, de 1996 à "
              "1997 et de 2009 à 2010 sont des ruptures de série, et aucune conversion n'est faite "
              "(voir l'annexe sur le PIB) ; la base 1997 est recalculée par l'INS de 1997 à 2004, la "
@@ -446,7 +446,7 @@ def _legende_plafond(ax, ft, dep: bool = False) -> None:
     ax.legend(handles=carre + [
         Line2D([], [], color=BLEU, marker="o", lw=1.8, ms=4.5,
                label=ft("plafond fixé, en % des dépenses de l'État hors service de la dette, "
-                        "réalisation (1986 à 2015)" if dep
+                        "réalisation (1986 à 2025)" if dep
                         else "plafond fixé par la loi de finances de la gestion")),
         Line2D([], [], color=ORANGE, marker="D", lw=0, ms=5,
                label=ft("montant porté en cours de gestion par une loi postérieure"))],
@@ -454,8 +454,8 @@ def _legende_plafond(ax, ft, dep: bool = False) -> None:
 
 
 def _cadre_plafond(ax) -> None:
-    ax.set_xlim(1958.5, 2016.5)
-    ax.set_xticks(list(range(1960, 2016, 5)))
+    ax.set_xlim(1958.5, 2027.5)
+    ax.set_xticks(list(range(1960, 2027, 5)))
     ax.grid(axis="y", color="#d0d7de", lw=0.6)
     ax.set_axisbelow(True)
     for cote in ("top", "right"):
@@ -465,7 +465,7 @@ def _cadre_plafond(ax) -> None:
 def fig_plafond(mesure: str = "md"):
     """Une vue du plafond : `md` (millions de dinars courants, échelle logarithmique), `pib`
     (en % du PIB de l'année, par segment de base) ou `dep` (en % des dépenses de l'État hors
-    service de la dette, 1986-2015)."""
+    service de la dette, 1986-2025)."""
     figtools.apply_lang_font()
     ft = figtools.fig_text
     g = _parts(_gestions())
@@ -475,9 +475,10 @@ def fig_plafond(mesure: str = "md"):
     if mesure == "md":
         _trace_gestions(ax, g, "fixe_md", "fin_md")
         ax.set_yscale("log")
-        ax.set_ylim(8, 7000)
-        ax.set_yticks([10, 25, 50, 100, 200, 500, 1000, 2000, 4000])
-        ax.set_yticklabels(["10", "25", "50", "100", "200", "500", "1 000", "2 000", "4 000"])
+        ax.set_ylim(8, 14000)
+        ax.set_yticks([10, 25, 50, 100, 200, 500, 1000, 2000, 4000, 8000])
+        ax.set_yticklabels(["10", "25", "50", "100", "200", "500", "1 000", "2 000", "4 000",
+                            "8 000"])
         ax.minorticks_off()
         for annee, y, texte, dx, dy in ((1959, 12, "12", 0, -13), (1963, 16, "16", 0, -13),
                                         (1967, 20, "20", 0, -13), (1968, 25, "25", 0, -13),
@@ -485,7 +486,9 @@ def fig_plafond(mesure: str = "md"):
                                         (1988, 300, "300", 0, -13), (1992, 250, "250", 0, -13),
                                         (1993, 500, "500", 0, -13), (1994, 950, "950", 0, -13),
                                         (2003, 1200, "1 200", 14, -3), (2012, 4000, "4 000", 0, 7),
-                                        (2013, 3000, "3 000", 0, -13)):
+                                        (2013, 3000, "3 000", 0, -13),
+                                        (2019, 4500, "4 500", -10, -13), (2020, 5000, "5 000", 14, -4),
+                                        (2021, 7000, "7 000", 0, 7), (2024, 8000, "8 000", 0, 7)):
             ax.annotate(texte, xy=(annee, y), xytext=(dx, dy), textcoords="offset points",
                         ha="center", fontsize=7.5)
         ax.set_ylabel(ft("Millions de dinars courants (échelle logarithmique)"))
@@ -505,7 +508,7 @@ def fig_plafond(mesure: str = "md"):
                 figtools.marque_rupture(ax, rupture)
             for x, texte in ((1976, "PIB 1961-1991 : Banque mondiale, base non dite"),
                              (1994, "INS, base 1983"), (2003.5, "INS, base 1997"),
-                             (2013.2, "INS, base 2015")):
+                             (2018, "INS, base 2015")):
                 ax.annotate(texte, xy=(x, 1), xycoords=("data", "axes fraction"),
                             xytext=(0, 5), textcoords="offset points",
                             ha="center", va="bottom", fontsize=7,
@@ -513,7 +516,7 @@ def fig_plafond(mesure: str = "md"):
         else:
             figtools.marque_rupture(ax, 1986)
             for x, texte in ((1972, "budget ordinaire voté (loi de finances)"),
-                             (2001, "dépenses de l'État hors service de la dette, réalisation")):
+                             (2006, "dépenses de l'État hors service de la dette, réalisation")):
                 ax.annotate(ft(texte), xy=(x, 1), xycoords=("data", "axes fraction"),
                             xytext=(0, 5), textcoords="offset points", ha="center",
                             va="bottom", fontsize=7, color=GRIS, annotation_clip=False)
@@ -597,6 +600,45 @@ def tableau_plafond(caption: str, tbl_id: str = "tbl-ep-plafond-registre") -> No
             change += f" ; {r['precision']}"
         g = r["gestion"]
         lignes.append([f"[]{{#{ancre}}}gestion {g}", texte, change, "ajustement"])
+    entete = ["Date d'effet", "Texte, article et page", "Ce que le texte change", "Portée"]
+    out = ["| " + " | ".join(entete) + " |", "|---|---|---|---|"]
+    out += ["| " + " | ".join(l) + " |" for l in lignes]
+    print("\n".join(out) + f"\n\n: {caption} {{#{tbl_id}}}\n")
+
+
+PRETS_TRESOR = "jort-lf-plafond-prets-tresor"  # série de tunisia-data, 2016-2026
+
+
+def tableau_prets_tresor(caption: str, tbl_id: str = "tbl-ep-prets-tresor-registre") -> None:
+    """Registre du plafond des prêts du Trésor aux établissements et entreprises publics, fixé
+    par l'article voisin de celui de la garantie dans chaque loi de finances depuis 2016 : une
+    ligne par montant, ancre `r-ep-pt-<gestion>[-n]`."""
+    d = _releve_serie(PRETS_TRESOR, {"valeur_md": "plafond_md", "valeur_avant_md": "plafond_avant_md",
+                                     "remarque": "precision"})
+    d["plafond"] = pd.to_numeric(d["plafond_md"], errors="coerce")
+    d["avant"] = pd.to_numeric(d["plafond_avant_md"], errors="coerce")
+    vus: dict[str, int] = {}
+    lignes = []
+    precedent = None
+    for _, r in d.iterrows():
+        n = vus[r["gestion"]] = vus.get(r["gestion"], 0) + 1
+        ancre = "r-ep-pt-" + r["gestion"] + ("" if n == 1 else f"-{n}")
+        texte = f"[@{r['cle']}, art. {r['article']}, p. {r['page']}]"
+        if r["nature"] != "fixation":
+            sens = "porté" if r["plafond"] > r["avant"] else "ramené"
+            change = f"plafond {sens} de {_mnt(r['avant'])} MD à {_mnt(r['plafond'])} MD ({r['nature']})"
+        elif precedent is None:
+            change = f"plafond des prêts du Trésor fixé à {_mnt(r['plafond'])} MD"
+        elif r["plafond"] == precedent:
+            change = f"plafond reconduit à {_mnt(r['plafond'])} MD"
+        else:
+            sens = "porté" if r["plafond"] > precedent else "ramené"
+            change = (f"plafond {sens} de {_mnt(precedent)} MD à {_mnt(r['plafond'])} MD "
+                      "par rapport à la gestion précédente")
+        if r["precision"]:
+            change += f" ; {r['precision']}"
+        precedent = r["plafond"]
+        lignes.append([f"[]{{#{ancre}}}gestion {r['gestion']}", texte, change, "ajustement"])
     entete = ["Date d'effet", "Texte, article et page", "Ce que le texte change", "Portée"]
     out = ["| " + " | ".join(entete) + " |", "|---|---|---|---|"]
     out += ["| " + " | ".join(l) + " |" for l in lignes]
