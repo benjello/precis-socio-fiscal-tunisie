@@ -131,6 +131,130 @@ Mots par section au 27 octobre 2026 (hors blocs de code).
 | 15. Longue période | cessions 1987-2024, clôture 2010-2024, annexes 2016-2024 | budget de l'État 1986-2026 et budgets d'équipement 1961-1986 (rangés), plans de développement | réalisation du budget avant 1986 ; PIB de 1959-60 et de 1960 |
 | 16. Études | Livre blanc, Banque mondiale 2014 et 2020, FMI 2021, ITCEQ 2010 | OCDE, Cour des comptes (dette publique extérieure, 2018, téléchargée) | |
 
+## 4 bis. Le détail des sections de chaque chapitre
+
+Ordre de chaque chapitre : vue d'ensemble, mise en place, grandes réformes, état du droit, sections
+secondaires, longue période, « Ce qu'en dit l'économie ». Entre parenthèses : l'ancre actuelle, ou
+« nouveau » pour une section à écrire.
+
+**Présentation (`index.qmd`)**
+
+- La carte des institutions : texte fondateur, date, chapitre où lire (nouveau, à partir de `sec-ep-vue-ensemble`).
+- La frise de 1948 à 2020 (§ 7).
+- Ce que pèse l'ensemble : effectifs, transferts, garanties.
+- Le voisinage avec les autres livres (`tbl-ep-voisinage`, fait).
+- Les définitions des termes : entreprise publique, établissement public, participation.
+
+**1. Ce qu'est une entreprise publique**
+
+- Vue d'ensemble : trois périmètres successifs (1969, 1985, 1989), puis la liste (nouveau, 150 mots).
+- Avant 1969 : offices et régies du Protectorat, nationalisations de 1956-1964 (nouveau, couche du passé).
+- 1969 : la tutelle étendue aux filiales (`sec-ep-1969`).
+- 1985 : le seuil de 34 % et les contrats-programmes (`sec-ep-1985`).
+- 1989 : le seuil de 50 % (`sec-ep-1989`, partie périmètre).
+- 1994-2001 : banques, assurances, établissements sur liste (`sec-ep-1994-2001`).
+- 2006 : l'ouverture à la concurrence, loi n° 2007-33 (nouveau ; textes dans `jort_cache.db`).
+- Les listes d'établissements 1997-2021 (annexe).
+- L'état du droit au 1ᵉʳ janvier 2026 (`sec-ep-etat-du-droit`).
+
+**2. Le contrôle et la gouvernance** (provisoire : fondu dans le 1 tant que la matière manque)
+
+- Le contrôle financier de 1948 et de 1969, les contrôleurs d'État (nouveau).
+- Les fautes de gestion, 1985-1988 (nouveau ; loi n° 85-74 à lire).
+- Depuis 2011 : la stratégie de réforme de 2015-2018 (`sec-ep-apres-2011`).
+- La rémunération des dirigeants, décret n° 2014-12 (nouveau).
+- Le rapport annuel de 2019 (`sec-ep-2019`).
+- Les comités d'audit de 2023-2024 et la composition des conseils de 2022 (nouveau).
+- Ce qu'en dit l'économie : gouvernance (fiche à écrire).
+
+**3. Les transferts du budget**
+
+- Ce que recouvrent les transferts : subventions d'exploitation, dotations en capital, interventions (`sec-ep-transferts`).
+- 2016-2024 par secteur et par nature (`sec-ep-transferts`, figure).
+- La régularisation de 2020 (même section).
+- 2010-2015 et avant : annexes 8, lois de règlement, rapports de la Banque centrale (nouveau).
+- Ce qu'en dit l'économie : contrainte budgétaire molle.
+
+**4. Les garanties, les prêts et les arriérés**
+
+- Vue d'ensemble : l'encours garanti et son plafond (nouveau, court).
+- Le plafond de la garantie fixé par la loi de finances, 1958-2026 (`sec-ep-garanties-plafond-legal`).
+- La commission de garantie de 1993 et la loi organique de 2019 (nouveau, extrait de `sec-ep-garanties`).
+- Les garanties accordées et l'encours, 2016-2024 (`sec-ep-garanties`).
+- Les prêts du Trésor : plafond 2016-2026, registre (`sec-ep-garanties`).
+- Les prêts rétrocédés (nouveau ; rapports sur la dette publique).
+- Les dettes et créances croisées, 2021-2023 (`sec-ep-croisees`).
+- Les garanties de la clôture 2010-2024 (extraites de `sec-ep-lp-cloture`).
+- Ce qu'en dit l'économie : passifs éventuels.
+
+**5. Ce que l'État reçoit**
+
+- Première phrase : la Banque centrale n'est pas une entreprise publique et pèse 58 % des versements en 2024.
+- La part de l'État dans les bénéfices (`sec-ep-dividendes-part`).
+- Les versements et les transferts reçus, sur un échantillon (`sec-ep-flux`).
+- Les versements 2010-2024 d'après la clôture (extraits de `sec-ep-lp-cloture`).
+- Les règles de répartition des bénéfices (nouveau ; source à obtenir).
+
+**6. Céder**
+
+- Vue d'ensemble : 114 privatisations totales, 29 partielles, 10 offres publiques, 5 concessions, 41 liquidations (recueil de la Direction générale de la privatisation).
+- 1987 : la cession autorisée (`sec-ep-1987`).
+- 1989 : l'organisation de la cession (`sec-ep-1989`).
+- 1994 : l'action spécifique (`sec-ep-1994-2001`).
+- 1999 : la liquidation, loi n° 99-38 (nouveau).
+- Les recettes de cession 1987-2009 (`sec-ep-lp-cessions`).
+- Les recettes budgétaires 2010-2024 (`sec-ep-cessions`, `sec-ep-lp-cloture`).
+- Une section par secteur du recueil (nouveau ; seize pages à dépouiller).
+- Les sociétés confisquées depuis 2011 : une ligne tant que la question de domicile (§ 5) n'est pas tranchée.
+- Ce qu'en dit l'économie : effets des privatisations.
+
+**7. Restructurer**
+
+- Les contrats-programmes de 1985 (`sec-ep-1985`, partie contrats).
+- Le fonds de restructuration du capital, 1986-2003 (nouveau ; lois de finances).
+- La commission d'assainissement de 1997 (nouveau).
+- Les banques publiques, 2012-2015 : articles 14 à 16 des lois de finances de 2014 et 2015 (nouveau).
+- Les contrats de performance de 2018 (`sec-ep-apres-2011`).
+- La reprise de dettes : Tunisair, 165 MD autorisés en 2014 (nouveau).
+- Ce qu'en dit l'économie : recapitalisation bancaire.
+
+**8 à 13. Les entreprises** (aucun écrit ; plan commun)
+
+- Naissance et statut de l'entreprise.
+- Les comptes : résultats, total des passifs.
+- La dette et les garanties dont elle bénéficie.
+- La subvention d'exploitation et les transferts reçus.
+- L'emploi.
+- La longue période.
+
+Secteurs : énergie (STEG, STIR, ETAP) ; mines et chimie (CPG, Groupe chimique) ; offices et monopoles ;
+transports ; eau et communications ; secteur financier public. Matériau existant : `sec-ep-lp-entreprises`
+et la subvention de la STEG. La subvention et son partage entre les ménages restent dans « La compensation ».
+
+**14. L'emploi et la masse salariale**
+
+- Les effectifs 2016-2023 pour 50 entités et les charges de personnel (`sec-ep-effectifs`).
+- Les six éditions du rapport et leurs échantillons (`sec-ep-lp-editions`).
+- Les résultats agrégés par édition, 2017-2022 (`sec-ep-lp-resultats`).
+- La dizaine d'entreprises les plus lourdes (`sec-ep-lp-entreprises`), jusqu'à l'ouverture des chapitres 8 à 13.
+- Les agrégats de l'INS et les 117 416 employés de 2010 (Banque mondiale), rapprochés sans chaînage.
+
+**15. La relation financière, 1960-2024**
+
+- Transferts, garanties, recettes et cessions côte à côte, par plan de développement (nouveau ; figure d'ensemble).
+- Le tableau des ruptures de série : 2020, la privatisation absente 2017-2024, les sources non chaînées.
+- Les années sans série budgétaire (`sec-ep-lp-lacunes`).
+- Le PIB : base 2015, jamais chaînée, avec renvoi à l'annexe PIB.
+
+**16. Le Livre blanc et les études extérieures** (écrit ; déplacé tel quel)
+
+- Le Livre blanc de 2018 (`sec-ep-livre-blanc`).
+- Banque mondiale 2014 et 2020 (`sec-ep-banque-mondiale-2014`, `sec-ep-banque-mondiale`).
+- FMI 2021 (`sec-ep-fmi`).
+- ITCEQ 2010 (`sec-ep-itceq`).
+
+**Annexes** : la liste des entreprises 1997-2021 (inchangée) ; le registre des textes, réparti par chapitre ; le glossaire.
+
 ## 5. Les pièges de domicile, à trancher avant la scission
 
 - **Ce qui reste dans la compensation.** Le statut, les comptes, la dette, l'emploi d'une entreprise qui
