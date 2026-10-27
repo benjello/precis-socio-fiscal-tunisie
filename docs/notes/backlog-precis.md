@@ -3682,9 +3682,9 @@ Ce qui reste :
   arabe attesté par un texte lu. **Versé dans `tunisia-data`** : séries `jort-lf-plafond-garanties` (montant fixé, montant en vigueur à la fin de la gestion, 1958-59 à 2015) et `jort-lf-budget-ordinaire` (1959-60 à 1986) ; le relevé du plafond du livre est retiré, celui du budget ordinaire reste dans le livre pour ses colonnes d'article et de page (la série porte la localisation en une colonne).
 - **Second passage de la note** (son § 8) : ventilation par nature de 2023 (écart imprimé de
   23,0 MD) ; encours des prêts rétrocédés (rapport sur la dette publique, pages repérées) ;
-  rapports sur la dette publique des éditions LF 2021 et LF 2024 ; page « bilan global » de la
-  privatisation (opérations par mode) et grandes cessions opération par opération ; rapports
-  de la Cour des comptes par entreprise ; OCDE.
+  rapports sur la dette publique des éditions LF 2021 et LF 2024 ; rapports
+  de la Cour des comptes par entreprise ; OCDE. (Bilan global de la privatisation et opérations
+  une à une : faits le 27 octobre 2026, voir le point « Céder ».)
 - **Glossaire** : deux entrées neuves, provisoires, sans définition arabe —
   `garantie-etat` (ضمان الدولة) et `participation-publique` (مساهمة عمومية). Non versées,
   faute de terme arabe attesté par un texte lu ou de définition légale : entreprise-mère et
@@ -3756,6 +3756,24 @@ Ce qui reste :
   novembre). **Restent** : éditions françaises des JORT n° 104 de 2015, 104 de 2018, 104 de 2019, 141 de 2022,
   144 de 2023 et 149 de 2024, absentes du corpus et de pist.tn (la loi de finances pour 2023 et celle pour 2026 sont
   citées à la page de l'édition arabe) ; prêts du Trésor avant 2016 ; libellés arabes du registre des prêts.
+- **Céder (`_cessions.qmd`) — complété le 27 octobre 2026** (branche `ep/cessions-complement` ; tunisia-data,
+  branche `donnees/privatisation-modes-operations`). Fait : section `#sec-ep-cessions-modes` (bilan global, 217
+  entreprises par mode, 1987-2009, série `privatisation-bilan-global-par-mode`) ; section `#sec-ep-1999`
+  (commission et comité technique, décrets n° 97-410 et n° 98-1440 ; liquidation à l'amiable, loi n° 99-38 ;
+  liquidateurs, décret n° 2000-2280 — lus dans le corpus, dates d'effet calculées sur la date de dépôt imprimée au
+  fascicule) ; section `#sec-ep-cessions-operations` (recueil 1998-2008 par année et nature de l'acte, 162 lignes en
+  bloc replié ; séries `privatisation-recueil-par-annee-nature`, `-par-nature`, `-recoupement-annuel`, colonne
+  `nature` au recueil) ; une ligne sur les biens confisqués (décret-loi n° 2011-13, art. 1er, lu). **Restent** :
+  écarts gardés et non expliqués — 6 sociétés concédées au recueil contre 5 concessions au bilan ; recueil moins
+  relevé annuel de − 33,5 MD (1998), + 19,6 (1999), − 148,6 (2008) — à chercher dans des rapports annuels de la
+  Direction générale de la privatisation (**à obtenir**) ; tableaux I à V des plafonds de rémunération des
+  liquidateurs (décret n° 2000-2280, p. 2484-2488, **lisibles dans le corpus**, non transcrits) ; décret n° 89-377
+  (composition de 1989) et décret n° 96-1225 (création du comité technique) — **lisibles dans le corpus** ;
+  sociétés confisquées : domicile, décret-loi n° 2011-68, cession de 45 MD au rapport de clôture de 2022 ; textes
+  de la seconde licence de téléphonie mobile et de l'ouverture du capital de Tunisie Télécom ; cessions depuis
+  2009 opération par opération. Clé `dgpv-recueil-operations` du précis = `dgpv-recueil-operations-depuis-1998`
+  de tunisia-data (deux noms pour une source). Cinq notices neuves dans `references.json`, à verser dans Zotero :
+  `decret97-410`, `decret98-1440`, `decret2000-2280`, `dl2011-13`, `dgpv-bilan-global`.
 - **Forme du livre : tranchée le 27 octobre 2026 — volume de six parties.** Le chapitre unique
   `_relation_financiere.qmd` est scindé en neuf chapitres (`_statut`, `_transferts`, `_garanties`, `_recettes`,
   `_cessions`, `_grandes_entreprises`, `_emploi_comptes`, `_longue_periode`, `_etudes`), sans contenu nouveau ;
