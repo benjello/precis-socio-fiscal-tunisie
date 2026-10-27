@@ -4899,3 +4899,48 @@
     couvert_jusqu_au: 2025-12-12
     resultat: aucun
   a_faire: [budget de la mission Équipement et Habitat, annexe des comptes spéciaux du Trésor (finances.gov.tn)]
+
+- id: r-ep-fonds-modernisation-bancaire-decret
+  objet: décret fixant les interventions et les modalités de fonctionnement du « fonds de restructuration et de modernisation du secteur bancaire » (loi n° 2014-59, art. 15)
+  ou: [precis/fr/entreprises_publiques/_restructuration.qmd#sec-ep-banques-publiques]
+  requetes:
+    titres_fts: [modernisation AND bancaire, '"secteur bancaire"']
+    titres_like: ['%modernisation du secteur bancaire%']
+    iort_ar: [عصرنة القطاع البنكي, إعادة هيكلة وعصرنة, عصرنة]
+    plein_texte: [modernisation du secteur bancaire, عصرنة القطاع البنكي]
+    depuis: 2015-01-05
+  passes:
+  - date: 2026-10-27
+    role: documentaliste
+    sources: [jort_cache]
+    couverture: LIKE sur titres (français et arabe) et FTS (« modernisation AND bancaire », « عصرنة ») de jort_cache, 2015 à la dernière notice indexée (2 octobre 2026) ; seule réponse, l'article 15 de la loi n° 2014-59 ; plein texte du corpus non parcouru
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - plein texte du corpus 2015-2026 (fascicules à intitulé arabe, 2015-2019 surtout)
+  - lois de finances 2016-2026 (article sur le fonds)
+
+- id: r-ep-fonds-restructuration-prelevements
+  objet: prélèvements au profit du fonds de restructuration du capital des entreprises publiques pour les gestions 2004, 2006 et 2011 (formule des lois de finances de 2003 et de 2005 à 2010)
+  ou: [precis/fr/entreprises_publiques/_restructuration.qmd#sec-ep-fonds-restructuration]
+  requetes:
+    titres_fts: ['"restructuration du capital"', complementaire]
+    titres_like:
+    - '%compte d''emploi des frais de controle financier%'
+    - '%restructuration du capital%'
+    - '%finances complementaire%'
+    iort_ar: [مصاريف المراقبة ومكافآت الحضور, هيكلة رأس مال المؤسسات]
+    plein_texte: [jetons de présence et tantièmes, fonds de restructuration du capital]
+    depuis: 2003-12-01
+  periode:
+    jusqu_au: 2011-12-31
+    motif: gestions 2004, 2006 et 2011, autorisées par les lois de finances et complémentaires de ces années
+  passes:
+  - date: 2026-10-27
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: LIKE et FTS sur les titres de jort_cache, 2003-2011 ; prélèvements trouvés et lus pour 2003, 2005 (loi n° 2004-90, art. 10, et loi n° 2005-103, art. 10 nouveau), 2007 à 2010 ; rien dans les intitulés pour 2004, 2006 et 2011 ; loi de finances complémentaire pour 2004 (n° 2004-87) repérée, non lue ; lois n° 2003-80, 2005-106 et 2010-58 non lues en plein texte
+    couvert_jusqu_au: 2011-12-31
+    resultat: aucun
+  a_faire:
+  - lire la loi n° 2004-87 (JORT n° 103 de 2004, p. 3399-3406) et, en plein texte, les lois de finances pour 2004, 2006 et 2011
