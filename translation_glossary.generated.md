@@ -105,6 +105,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Centimes additionnels | صانتيمات إضافية |  |
 | Certificat d'aptitude professionnelle | شهادة الكفاءة المهنية | CAP |
 | Certificat de compétence | شهادة مهارة |  |
+| Cession des participations publiques | التفويت في المساهمات العمومية |  |
 | Chèque-formation | صك التكوين |  |
 | Chiffre d'affaires imposable | رقم المعاملات الخاضع |  |
 | Chiffre indiciaire | الرقم القياسي |  |
@@ -381,6 +382,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Licenciement abusif | الطرد التعسفي |  |
 | Licenciement ou mise en chômage pour raisons économiques ou technologiques | الطرد أو الإيقاف عن العمل لأسباب اقتصادية أو فنية |  |
 | Limite de calcul des prestations | الحدّ الأقصى لاحتساب المنافع |  |
+| Liquidation à l'amiable | التصفية الرضائية |  |
 | Liquidité | السيولة |  |
 | Livraison à soi-même | التسليم للنفس |  |
 | Livre foncier | السجل العقاري |  |
@@ -459,6 +461,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prestation non monétaire | المنفعة غير النقدية |  |
 | Prestations familiales | المنح العائلية |  |
 | Prêt universitaire | القرض الجامعي |  |
+| Prêts du Trésor | قروض الخزينة |  |
+| Prêts rétrocédés | القروض المعاد إقراضها |  |
 | Prime d'investissement | منحة الاستثمار |  |
 | Prime de départ volontaire | منحة المغادرة |  |
 | Prime de rendement | منحة المردودية |  |
@@ -467,6 +471,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Prime salariale du secteur public | علاوة الأجر في القطاع العمومي |  |
 | Priorité de réembauchage | حق الأولوية في التشغيل |  |
 | Prise en charge par le Fonds national de l'emploi de la contribution patronale au régime légal de sécurité sociale | تكفل الصندوق الوطني للتشغيل بمساهمة الأعراف في النظام القانوني للضمان الاجتماعي |  |
+| Privatisation | التخصيص |  |
 | Prix de cession préférentiel | السعر التفاضلي |  |
 | Prix de référence du mètre carré couvert | الثمن المرجعي للمتر المربع المبني |  |
 | Prix limite de vente | السعر الأقصى للبيع |  |

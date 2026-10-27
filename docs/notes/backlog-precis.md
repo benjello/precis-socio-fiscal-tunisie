@@ -3840,9 +3840,37 @@ Ce qui reste :
 - **Forme du livre : tranchée le 27 octobre 2026 — volume de six parties.** Le chapitre unique
   `_relation_financiere.qmd` est scindé en neuf chapitres (`_statut`, `_transferts`, `_garanties`, `_recettes`,
   `_cessions`, `_grandes_entreprises`, `_emploi_comptes`, `_longue_periode`, `_etudes`), sans contenu nouveau ;
-  plan et décisions dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. Restent : éclater les sections
-  mixtes (1989, 1994-2001, clôture 2010-2024) entre chapitres, ouvrir « Restructurer » et la gouvernance quand
-  ils ont leur matière, définir les notions dans la présentation.
+  plan et décisions dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. Restent : ouvrir
+  « Restructurer » et la gouvernance quand ils ont leur matière.
+- **Les notions — fait le 27 octobre 2026** (branche `ep/eclatement`, après relecture) : pas de liste dans la
+  présentation ; chaque notion est liée au glossaire à sa première occurrence utile dans le chapitre qui la traite
+  (`_statut` : entreprise publique, établissement public non administratif, participation publique,
+  contrat-programme ; `_garanties` : garantie, prêts du Trésor, prêts rétrocédés ; `_cessions` : cession,
+  privatisation, liquidation à l'amiable). Cinq entrées neuves au glossaire, `provisoire`, sans définition arabe :
+  `prets-tresor` (قروض الخزينة, édition arabe de la loi organique du budget, couche texte), `prets-retrocedes`
+  (القروض المعاد إقراضها, rapports arabes de clôture 2021 et 2024), `liquidation-amiable` (التصفية الرضائية, lue à
+  l'image de l'édition arabe de la loi n° 99-38, JORT n° 37 de 1999, p. 848), `privatisation` (التخصيص, relevé
+  arabe de la Direction générale de la privatisation), `cession-participations-publiques` (التفويت في المساهمات
+  العمومية, assemblée à partir du même relevé). **Restent** : lire l'édition arabe de la loi n° 89-9 (JORT n° 9 de
+  1989, **OCR** : la couche texte du corpus est illisible) pour confirmer l'expression de la cession et la
+  traduction de « participation publique » ; définitions arabes des cinq entrées et de `garantie-etat` ; la
+  définition de `contrat-programme`, écrite pour les caisses, ne dit pas l'usage de la loi de 1985.
+- **Sections mixtes éclatées — fait le 27 octobre 2026** (branche `ep/eclatement`), sans fait nouveau. 1989 et
+  1994-2001 : le périmètre reste dans `_statut` (`#sec-ep-1989`, `#sec-ep-1994-2001`) ; la cession organisée et
+  l'action spécifique passent dans `_cessions` (`#sec-ep-1989-cession`, `#sec-ep-1994-cession`), avec les lignes de
+  registre `r-ep-1989` et `r-ep-1994` recopiées. Clôture 2010-2024 : versements au budget dans `_recettes`
+  (`#sec-ep-versements-cloture`, `tbl-ep-cdc-recettes`) ; principal garanti remboursé, prêts remboursés et encours
+  selon la Cour dans `_garanties` (`#sec-ep-garanties-cloture`, `tbl-ep-cdc-garantie`, `tbl-ep-cdc-autres` réduit
+  aux prêts) ; recettes de privatisation dans `_cessions` (puce de `#sec-ep-lp-cessions`, `tbl-ep-cdc-privatisation`)
+  ; `_longue_periode` ne garde que `fig-ep-cdc`, ce que les flux montrent de la relation financière, et la
+  description des rapports en note de méthode repliée (`tbl-ep-cdc-flux`). Après relecture, les séries des
+  sections de clôture passent de la prose aux figures et aux tableaux repliés : figure neuve `fig-ep-cdc-garanties`
+  (principal garanti remboursé, prêts remboursés, encours selon la Cour), `fig-ep-versements` et `fig-ep-cessions`
+  pour les deux autres. **Restent** :
+  pages des rapports de clôture du tableau des prêts (`tbl-ep-cdc-autres`), dont la liste couvre encore aussi les
+  pages de la privatisation ; « depuis la gestion 2017 » (introduction de `#sec-ep-lp-cloture`) et « depuis le
+  rapport sur la gestion 2018 » (encours) à accorder ; « en trois années » de `#sec-ep-lp-cessions` alors que 2014
+  porte 4,3 MD.
 - *(historique)* **Forme du livre : volume ou chapitre — décision laissée à la revue.** Éléments : (a) le livre n'a qu'un chapitre
   (`_relation_financiere.qmd`, environ 1 200 lignes) et une annexe ; (b) ses figures, ses séries et son plan
   (mise en place, réformes, état du droit, longue période) sont ceux d'un chapitre de partie V ; (c) le volume
