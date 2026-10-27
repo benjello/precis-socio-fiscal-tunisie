@@ -1,6 +1,7 @@
 # Le Livre blanc de 2018 et les études extérieures {#sec-ep-etudes .domicile-unique}
 
 Cinq documents donnent des chiffres d'ensemble que les rapports du ministère des Finances ne donnent pas, ou donnent autrement. Ils ne sont pas du même rang que les séries budgétaires : un rapport officiel de réforme, trois rapports d'institutions internationales, une étude d'un institut public. Chacun est présenté avec sa méthode ; aucun de ses chiffres n'est raccordé aux séries des sections précédentes. Toute part du PIB est donnée telle que le document l'imprime ; aucun ne précise la base des comptes nationaux qu'il emploie (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
+
 ## Le Livre blanc de la Présidence du gouvernement, 2018 {#sec-ep-livre-blanc}
 
 **Qui, quoi.** La Présidence du gouvernement publie en mars 2018 un rapport de synthèse sur la réforme de la gouvernance des entreprises publiques [@pm-livre-blanc-ep-2018]. **Données.** Il cite le « Rapport annuel sur les résultats des établissements publics durant la période 2010-2014 » de l'Unité de suivi du système de productivité des établissements et entreprises publics, et dit s'appuyer sur les données de 2014. **Calcul.** Aucun calcul n'est exposé ; la base du PIB n'est pas précisée.
@@ -18,6 +19,7 @@ ep.tableau_etude(
 ```
 
 Le Livre blanc compte 102 entreprises publiques en 2018 et « environ 190 » au milieu des années 1980 [@pm-livre-blanc-ep-2018, p. 7]. Selon lui, les subventions de 2013 et de 2014 profitent « essentiellement à 9 entreprises », dont la STEG, la STIR, l'Office des céréales et les sociétés de transport.
+
 ## La Banque mondiale, gouvernance des entreprises publiques, 2014 {#sec-ep-banque-mondiale-2014}
 
 **Qui, quoi.** La Banque mondiale publie en mars 2014 un rapport sur la gouvernance des entreprises publiques en Tunisie [@wb-tunisia-gouvernance-ep-2014]. **Données.** Son tableau 1 est repris de l'Unité de suivi de l'organisation des entreprises publiques, à la Présidence du gouvernement. **Périmètre.** 104 entreprises, banques et caisses de sécurité sociale comprises, réparties par ministère de tutelle. **Calcul.** Le tableau réunit trois dates — les entreprises sont comptées en 2013, les employés en 2010, le chiffre d'affaires en 2007 — ; la façon de compter les employés n'est pas dite.
@@ -35,6 +37,7 @@ ep.tableau_bm_2014(
 ```
 
 Les 117 416 employés de 2010 ne se comparent pas aux quatre totaux du ministère des Finances (@tbl-ep-effectifs) : ceux-ci excluent les banques, la Poste et les caisses de sécurité sociale, et portent sur 84 à 88 entreprises. Le même rapport écrit que les entreprises publiques « rassemblent environ 5% de l'ensemble des salariés à l'échelle nationale », sans date [@wb-tunisia-gouvernance-ep-2014, p. 3].
+
 ## La Banque mondiale, revue des dépenses publiques, 2020 {#sec-ep-banque-mondiale}
 
 **Qui, quoi.** La Banque mondiale publie en 2020 le rapport de synthèse d'une revue des dépenses publiques [@wb-tunisia-per-2020]. **Données.** Des données budgétaires détaillées, complétées par une collecte d'un an auprès des principales entreprises publiques ; exercices 2015 et 2016. **Périmètre et calcul.** Les agrégats portent sur les vingt plus grandes entreprises ; la base du PIB n'est pas précisée.
@@ -54,6 +57,7 @@ ep.tableau_etude(
 <!-- TODO (documentaliste) : dans le tableau de la Banque mondiale, la page « 11 » est le rang de la page dans le fichier (résumé exécutif, sans numéro imprimé relevé) et non un numéro imprimé ; relever le numéro imprimé, ou citer par section du rapport (« Executive Summary »). La page 42 est imprimée. -->
 
 La part des entreprises publiques dans le PIB — « between 9 and 10 percent of GDP » — est, selon la Banque mondiale, une estimation du gouvernement, qu'elle rapporte sans en donner la méthode.
+
 ## Le Fonds monétaire international, consultation de 2021 {#sec-ep-fmi}
 
 **Qui, quoi.** Les services du FMI consacrent une annexe à la réforme des entreprises publiques dans leur rapport de février 2021 [@imf-tunisia-art4-2020]. **Données.** Les informations financières de 30 entreprises — le rapport écrit que des données complètes sur toutes les entreprises publiques ne sont pas disponibles —, le budget des autorités et les calculs des services. **Calcul.** Addition des dettes des 30 entreprises ; la base du PIB n'est pas précisée.
@@ -71,6 +75,7 @@ ep.tableau_etude(
 ```
 
 Le FMI estime à fin juin 2020 les arriérés des entreprises envers l'État à 6,2 milliards de dinars et ceux de l'État envers elles à 8,8 milliards. Le rapport du ministère des Finances donne, fin 2021 et pour 42 entreprises hors banques, 8,4 milliards de dettes envers l'État et 9,9 milliards de créances sur lui (@tbl-ep-croisees) : les deux mesures n'ont ni la même date, ni le même périmètre, ni la même définition — des arriérés d'un côté, des dettes et créances de l'autre.
+
 ## L'Institut tunisien de la compétitivité et des études quantitatives, 2010 {#sec-ep-itceq}
 
 **Qui, quoi.** L'Institut tunisien de la compétitivité et des études quantitatives (ITCEQ) publie en décembre 2010 un rapport d'étape sur la privatisation et le développement du secteur privé [@itceq-privatisation-2010]. **Données.** Des recoupements entre l'Institut national de la statistique, le ministère du Développement et la Direction générale de la privatisation. **Calcul.** Un bilan descriptif des cessions et un suivi des entreprises privatisées.

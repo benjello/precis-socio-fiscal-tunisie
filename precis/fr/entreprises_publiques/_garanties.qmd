@@ -1,5 +1,7 @@
 # Les garanties, les prêts et les arriérés {#sec-ep-garanties-prets .domicile-unique}
+
 Ce chapitre donne ce que l'État garantit de la dette des entreprises publiques, le plafond que la loi de finances fixe, et les dettes et créances croisées entre l'État et elles.
+
 ## Les garanties de l'État et la dette garantie {#sec-ep-garanties}
 
 Par la [garantie de l'État](#g-garantie-etat), l'État s'engage à payer à la place d'une entreprise ou d'un établissement public qui n'honorerait pas un prêt. Trois grandeurs se distinguent : le plafond que la loi de finances fixe pour l'année ; les garanties accordées dans l'année ; l'encours de la dette garantie en fin d'année. Fin 2023, cet encours est de 21,4 milliards de dinars, soit 14,3 % du PIB de l'année, contre 11,3 milliards et 11,8 % fin 2016.
@@ -104,6 +106,7 @@ ep.tableau_audit_banques(
 <!-- TODO (documentaliste) : lire l'article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin donnée par le Trésor) et, dans le rapport sur les transferts et les garanties (édition LF 2020, p. 38), le passage qui renvoie à l'arrêté du 3 avril 1993 ; dépouiller les rapports sur la dette publique des éditions LF 2021 et LF 2024 (recoupement de l'encours) et leurs pages sur les prêts rétrocédés. -->
 
 ::::
+
 ## Le plafond des garanties et des prêts du Trésor fixé par la loi de finances, 1958-2026 {#sec-ep-garanties-plafond-legal}
 
 Depuis 1958, chaque loi de finances comporte un article qui fixe le montant maximal dans la limite duquel le ministre chargé des finances peut accorder la [garantie de l'État](#g-garantie-etat) « en vertu des textes et conventions en vigueur », puis, depuis la loi de finances pour 1996, « en vertu de la législation en vigueur » ; un article voisin fixe, de la même façon, le montant des prêts du Trésor aux établissements et entreprises publics. Le plafond de la garantie passe de 12 millions de dinars (MD) pour l'année financière 1959-60 à 950 MD pour 1994 ; il reste à 950 MD jusqu'en 2010, sauf en 2003 (1 200 MD), puis est de 1 800 MD en 2011, de 4 000 MD en 2012, de 3 000 MD de 2013 à 2018, de 4 500 puis 4 790 MD en 2019, de 7 000 MD de 2020 à 2022, de 8 000 MD de 2023 à 2025 et de 7 000 MD en 2026 (@fig-ep-plafond-legal).
@@ -299,6 +302,7 @@ ls.tableau_budget_etat(
 ```
 
 ::::
+
 ## Les dettes et créances croisées {#sec-ep-croisees}
 
 Fin 2023, 42 entreprises publiques déclarent 11 960,7 MD de créances sur l'État et 11 246,3 MD de dettes envers lui, soit 8,0 % et 7,5 % du PIB de l'année : l'État leur doit 714,4 MD de plus qu'elles ne lui doivent. Ces montants sont ceux des entreprises : le ministère des Finances écrit que les données lui sont pour l'essentiel fournies par elles et qu'il n'en garantit pas la fiabilité [@minfin-ep-2025, p. 124]. Les banques publiques ne sont pas dans cet échantillon ; les caisses de sécurité sociale y sont.

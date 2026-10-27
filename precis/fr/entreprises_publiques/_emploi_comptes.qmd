@@ -1,5 +1,7 @@
 # L'emploi, la masse salariale et les résultats {#sec-ep-emploi-comptes .domicile-unique}
+
 Ce chapitre donne les effectifs et la masse salariale des entreprises publiques, puis leurs résultats agrégés, par édition du rapport.
+
 ## Les effectifs et la masse salariale {#sec-ep-effectifs}
 
 Les entreprises publiques dont le ministère des Finances reçoit les comptes emploient de 96 000 à 100 000 agents de 2018 à 2022, hors secteur financier et hors caisses de sécurité sociale, pour des charges de personnel de 3,6 à 4,3 milliards de dinars. Les statuts, les grilles de salaires et les augmentations de ces agents sont dans le volume [« Les rémunérations publiques »](../remunerations_publiques/index.html) ; les agents de la fonction publique sont un autre ensemble, qui ne s'ajoute ni ne se compare à celui-ci.
@@ -110,6 +112,7 @@ ep.tableau_effectifs_entreprises(
 ::::
 
 <!-- TODO (documentaliste) : effectif total de 2021 et d'avant 2018 (l'édition LF 2020 ne donne qu'une part, l'édition LF 2021 n'a pas le tableau) ; fiches des sociétés régionales de transport autres que Sfax et Bizerte ; statistique publique de l'emploi des entreprises publiques non trouvée (enquêtes de l'INS, fiches sur la Banque centrale et la Cour des comptes) ; les numéros de page cités pour les éditions LF 2022 à LF 2024 sont les numéros imprimés de la série (page_imprimee), à contrôler. -->
+
 ## Les six éditions du rapport et leurs échantillons {#sec-ep-lp-editions}
 
 Le rapport sur les entreprises publiques ne porte jamais deux fois sur le même ensemble : aucune de ses séries ne se chaîne d'une édition à l'autre.
@@ -128,6 +131,7 @@ Le rapport sur les entreprises publiques ne porte jamais deux fois sur le même 
 <!-- TODO (rédacteur) : remplacer ce tableau fait main par un tableau engendré quand le recensement par édition sera versé dans tunisia-data. -->
 
 Les agrégats de résultats excluent toujours les sept entreprises du secteur financier, les trois caisses de sécurité sociale, une entreprise à l'arrêt et celles qui n'ont pas transmis leurs comptes — 12 à 19 selon l'édition. Les banques et les caisses sont en revanche dans l'échantillon des flux avec l'État.
+
 ## Les résultats agrégés, par édition, 2017-2022 {#sec-ep-lp-resultats}
 
 Le résultat net agrégé des entreprises publiques, hors banques et hors caisses de sécurité sociale, est négatif pour chacun des six exercices publiés et dans chaque édition : de −177,9 MD (exercice 2019, 81 entreprises) à −4 187,1 MD (exercice 2018, 78 entreprises), soit de −0,1 % à −3,7 % du PIB.
