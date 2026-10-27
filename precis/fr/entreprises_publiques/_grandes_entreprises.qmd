@@ -77,7 +77,7 @@ from figures import grandes_entreprises as ge
 ge.tableau_steg_comptes(
     caption=("Comptes publiés de la STEG, exercices 2013-2023, en millions de dinars courants : "
              "chaque exercice est lu dans les états financiers de l'exercice, 2013 dans la "
-             "colonne de comparaison de ceux de 2014. « — » : ligne non imprimée. Les passifs "
+             "colonne de comparaison de ceux de 2014. « — » : ligne non imprimée. Jusqu'en 2014, la subvention d'exploitation comprend la subvention indirecte sur le gaz : rupture de définition en 2015. Les passifs "
              "sont hors capitaux propres. Source : STEG, états financiers [@steg-ef-2014, "
              "p. 11 et 13 ; @steg-ef-2015, p. 13 et 15 ; @steg-ef-2016, p. 11 et 13 ; "
              "@steg-ef-2017, p. 13 et 15 ; @steg-ef-2018, p. 13 et 16 ; @steg-ef-2019, p. 9 "
@@ -87,9 +87,9 @@ ge.tableau_steg_comptes(
 ```
 
 - **Ce que la loi lui confie.** [Le décret-loi de 1962](#r-ep-steg-1962) nationalise la production, le transport, la distribution, l'importation et l'exportation de l'électricité et du gaz combustible ; la production, le transport, l'importation et l'exportation du gaz naturel et le gaz liquéfié en sont exclus. Il en confie la gestion à la STEG, établissement public à caractère industriel et commercial. Ses tarifs sont établis pour lui permettre « de faire face à toutes ses charges d'exploitation » et de contribuer aux dépenses d'extension du réseau.
-- **Une subvention d'exploitation inscrite à ses comptes.** L'état de résultat de la STEG porte une subvention d'exploitation : 2 323,1 MD en 2014, aucune en 2016, 1 200,0 MD en 2018, 4 707,4 MD en 2022 et 4 030,1 MD en 2023. Ce que cette subvention compense, et sa répartition entre les consommateurs, sont exposés dans le volume [« La compensation »](../compensation/_electricite_gaz.html#sec-compensation-eg-lien).
+- **Une subvention d'exploitation inscrite à ses comptes.** L'état de résultat de la STEG porte une subvention d'exploitation : 2 323,1 MD en 2014, aucune en 2016, 1 200,0 MD en 2018, 4 707,4 MD en 2022 et 4 030,1 MD en 2023. Les montants d'avant 2015 ne se comparent pas aux suivants : jusqu'en 2014, la ligne comprend la subvention indirecte, le gaz que la STEG reçoit à un prix de cession administré étant porté en produit ; à partir de 2015, elle achète son gaz au prix mondial ([« La compensation », 2015](../compensation/_electricite_gaz.html#sec-compensation-eg-2015)). Ce que cette subvention compense, et sa répartition entre les consommateurs, sont exposés dans le volume [« La compensation »](../compensation/_electricite_gaz.html#sec-compensation-eg-lien).
 - **Les modifications comptables de 2021 et de 2022.** Le résultat net de 2021 est de −42,7 MD ; après les « effets des modifications comptables », il est de +3 469,6 MD, et les capitaux propres redeviennent positifs, à 1 201,9 MD. En 2022, le résultat après modifications est de −2 716,1 MD, pour un résultat net de −381,2 MD.
-- **Une dette surtout bancaire.** D'après la fiche du ministère des Finances, la dette de la STEG est de 12 900,1 MD fin 2020, dont 8 701,8 MD envers les banques, 955,2 MD envers d'autres entreprises publiques et 145,5 MD envers l'État. L'effectif passe de 12 031 agents en 2018 à 13 979 en 2023, chiffre provisoire (@tbl-ep-steg-fiches).
+- **Une dette surtout bancaire.** D'après la fiche du ministère des Finances, la dette de la STEG est de 12 900,1 MD fin 2020, dont 8 701,8 MD envers les banques, 955,2 MD envers d'autres entreprises publiques et 145,5 MD envers l'État (@tbl-ep-steg-fiche-a). L'effectif passe de 12 031 agents en 2018 à 13 979 en 2023, chiffre provisoire (@tbl-ep-steg-fiches).
 
 :::: {.chronologie-repliable titre="STEG : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et texte fondateur de 1962"}
 
@@ -140,7 +140,7 @@ from figures import grandes_entreprises as ge
 ge.tableau_etap_rapports(
     caption=("Comptes de l'ETAP d'après ses rapports annuels, exercices 2004-2024, en millions "
              "de dinars courants : chaque exercice est lu dans le rapport de l'exercice ; 2004 "
-             "dans le rapport de 2005 et 2020, faute de rapport, dans celui de 2021 (« RA » : "
+             "dans le rapport de 2005 et 2020 dans celui de 2021 (« RA » : "
              "rapport annuel). Les revenus sont la ligne de l'état de résultat, les produits "
              "d'exploitation leur total. Le rapport de 2019 ne contient pas d'états financiers. "
              "Source : ETAP, rapports annuels [@etap-ra-2005, p. 7 et 55 ; @etap-ra-2006, p. 55 "
@@ -209,14 +209,14 @@ ge.tableau_fiche_court("sncft",
              "avec le statut du chiffre. « – » : case laissée vide par l'édition. La dette "
              "totale n'est imprimée que par l'édition LF 2022, le total des passifs que par les "
              "éditions LF 2024 et LF 2025 ; le résultat net est celui d'avant modifications "
-             "comptables. Source : ministère des Finances [@minfin-ep-2022, p. 55 ; "
+             "comptables ; pour 2019, le classement des dix premières pertes de la même édition donne −113,78 MD (@tbl-ep-resultats-entreprises). Source : ministère des Finances [@minfin-ep-2022, p. 55 ; "
              "@minfin-ep-2024, p. 84 ; @minfin-ep-2025, p. 60]"),
     tbl_id="tbl-ep-sncft-fiches")
 ```
 
 - **Ce que ses statuts lui confient.** [Le décret du 27 décembre 1956](#r-ep-sncft-1956) approuve les statuts de la SNCFT, entreprise à caractère commercial régie par la législation des sociétés anonymes, qui a pour objet l'exploitation du réseau des chemins de fer tunisiens. L'État lui concède l'exploitation de son réseau ferré à compter du 1^er^ janvier 1957 et lui apporte le matériel, les approvisionnements et les fonds du réseau.
 - **Une subvention d'exploitation de 65 à 105 MD.** La subvention d'exploitation inscrite à la fiche est de 65 MD par an de 2018 à 2020 dans l'édition LF 2022 ; l'édition LF 2024 donne 105 MD pour 2020 et 84,5 MD pour 2021, l'édition LF 2025 70 MD pour 2022 et 95 MD pour 2023, chiffre probable. La subvention du transport public est exposée dans le volume [« La compensation »](../compensation/_transport.html#sec-compensation-transport).
-- **Une dette bancaire.** Fin 2019, la dette de la SNCFT est de 1 478,7 MD, dont 894 MD envers les banques, 161,7 MD envers les caisses sociales et 46 MD envers l'État ; la somme des créanciers imprimés est inférieure de 161,9 MD au total imprimé (110,9 MD fin 2018). L'édition ne donne pas la dette de 2020.
+- **Une dette bancaire.** Fin 2019, la dette de la SNCFT est de 1 478,7 MD, dont 894 MD envers les banques, 161,7 MD envers les caisses sociales et 46 MD envers l'État ; la somme des créanciers imprimés est inférieure de 161,9 MD au total imprimé (110,9 MD fin 2018). L'édition ne donne pas la dette de 2020 (@tbl-ep-sncft-fiche-a).
 - **L'emploi.** L'effectif est de 4 612 agents en 2018, de 4 790 en 2021 et de 4 539 en 2023, chiffre probable ; les charges de personnel passent de 118,9 à 140,7 MD.
 
 :::: {.chronologie-repliable titre="SNCFT : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et statuts de 1956"}
