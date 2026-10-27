@@ -3610,18 +3610,13 @@ Ce qui reste :
   2024, tableaux repliés `tbl-ep-versements-anciens` et `tbl-ep-bct-parts`). Rapports de clôture des gestions 2005,
   2006, 2007 et 2009 (chacun avec les deux gestions précédentes ; 2008 par le rapport 2009), lus à l'image ; aucune
   révision d'un rapport à l'autre. Rapports annuels de la Banque centrale 2002-2010, répartition du résultat lue à
-  l'image. **Restent** : (1) écarts entre la part arrêtée par la Banque centrale et le montant inscrit au budget
-  (5 MD pour l'exercice 2002, 10,4 pour 2004-2005, 10 pour 2006, 10 pour 2007, 36,7 pour 2008-2010 ; seul celui de 2003 est expliqué :
-  Fonds de péréquation des changes, rapport annuel 2004, p. 170) — rapports annuels 2003, 2007, 2008 et 2011 et lois
-  de règlement, lisibles dans `tunisia-data` (couche texte propre) ; TODO dans la section ; (2) répartition du
-  résultat de l'exercice 2007, non imprimée dans le rapport 2007 (montant encaissé de 435 MD seulement, rapport
-  2008, p. 218) ; (3) dans les rapports de clôture 2005-2009 : principal et intérêts de la dette garantie,
+  l'image. Contre-lecture indépendante du 27 octobre 2026 (`docs/notes/recettes-2003-2009-contre-lecture-2026-10-28.md`) : aucune erreur de lecture ; exercice 2007 lu dans les états financiers de la Banque centrale publiés au *Journal officiel* (n° 33 du 22 avril 2008, p. 1294 : part de l'État 435 MD) ; base légale de la retenue au profit du Fonds de péréquation des changes (loi n° 2000-98, art. 34), attestée pour 1999-2001 et 2003 ; écart 2008-2010 décomposé (882 MD virés en 2011, 28,7 MD en 2012 ; 874 MD selon la Cour contre 882 selon le ministère des Finances) ; ventilation excédents / bénéfices de la Cour gardée et dite (48,0 et 136,7 MD d'écart au ministère en 2008 et 2009). **Restent** : (1) montant de la retenue pour l'exercice 2002 et les exercices 2004 à 2007 (écarts de 5, 10,4, 10 et 10 MD, compatibles avec la retenue, sans montant lu) et 8 MD de divergence sur 2011 — fiche `r-bct-retenue-fpc-2002-2011` ; comptes généraux de l'administration des finances 2008 et 2009 et rapport du ministère sur les finances publiques 2005, **à océriser** (tunisia-data, `minfinances/portail_ancien`) ; TODO dans la section ; (2) 811 MD de bénéfices 2008 de la CPG et du GCT gardés hors budget selon la Cour : la Banque centrale ne confirme qu'au moins 605 et 211 MD reçus en 2009, et le ministère inscrit au budget de 2009 59 MD de la CPG et 225 MD du GCT ; rapport de clôture de la gestion 2010 **à obtenir** (absent du catalogue de la Cour) ; (3) dans les rapports de clôture 2005-2009 : principal et intérêts de la dette garantie,
   remboursements de prêts, recettes de privatisation, fonds spéciaux — lisibles (couche texte des rapports 2005,
   2006 et 2009 propre ; rapport 2007 à lire à l'image, couche texte aux chiffres décalés) ; (4) gestions 2008 (sauf
   la recette des transferts, par le rapport 2009) et antérieures à 2003 : aucun rapport de clôture au catalogue de
   la Cour ; (5) « revenus des participations » de la Banque centrale (rapports annuels, chapitre des finances
-  publiques) : égaux au total de la Cour moins les autres profits du Trésor pour 2003-2008, 803,8 MD contre
-  788,6 MD pour 2009 ; donnent 1999-2002 (rapports 2001 et 2003, couche texte) et sans doute plus tôt (rapports
+  publiques) et du ministère des Finances : égaux au total de la Cour moins les autres profits du Trésor pour 2003-2010
+  (803,8 MD imprimés pour 2009 dans le rapport 2009 : réalisation provisoire, 788,6 MD ensuite) ; donnent 1999-2002 (rapports 2001 et 2003, couche texte) et sans doute plus tôt (rapports
   1979-2000 à océriser) : série à part, à verser sans la chaîner à celle de la Cour ; (6) part de l'État dans le
   résultat de la Banque centrale avant 2002 (répartition 1999-2001 imprimée dans le rapport 2002 ; rapports
   1959-1978 en couche texte, 1979-2000 à océriser) et de 2011 à 2024 (rapports 2011-2014 et 2015-2025 dans

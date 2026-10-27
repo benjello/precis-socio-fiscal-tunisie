@@ -3,7 +3,11 @@
 Objet : la section `#sec-ep-versements` de `precis/fr/entreprises_publiques/_recettes.qmd` (PR #549), ses
 tableaux `tbl-ep-versements-anciens` et `tbl-ep-bct-parts`, la figure `fig-ep-versements`, et les deux séries
 de `tunisia-data` qui les alimentent (`cdc-cloture-entreprises-publiques-2003-2009`, `bct-part-etat-benefices`).
-Note de contrôle : aucun chapitre, aucune donnée n'est modifié. Les corrections sont proposées en fin de note.
+Les corrections proposées en fin de note (§ 5 et 6) ont été appliquées le 27 octobre 2026 : branche
+`ep/contrelecture` du précis (section, références, registre du Fonds de péréquation des changes, fiche
+`r-bct-retenue-fpc-2002-2011`, backlog) et branche `donnees/bct-cdc-corrections` de `tunisia-data`
+(transcriptions, script, tests, fiches, catalogue). La ventilation excédents / bénéfices de la Cour est gardée
+et dite ; le 811 MD est donné comme constat de la Cour.
 
 ## 1. Méthode
 

@@ -4899,3 +4899,27 @@
     couvert_jusqu_au: 2025-12-12
     resultat: aucun
   a_faire: [budget de la mission Équipement et Habitat, annexe des comptes spéciaux du Trésor (finances.gov.tn)]
+
+- id: r-bct-retenue-fpc-2002-2011
+  objet: décision du ministre des Finances fixant la retenue sur les bénéfices de la Banque centrale au profit du Fonds de péréquation des changes (loi n° 2000-98, art. 34), exercices 2002 et 2004 à 2007 ; affectation des 8 MD qui séparent, pour le budget de 2011, la Cour des comptes (874 MD) du ministère des Finances et de la Banque centrale (882 MD)
+  ou: [precis/fr/entreprises_publiques/_recettes.qmd#sec-ep-versements]
+  requetes:
+    titres_fts: ['"perequation des changes"', '"risques de change" AND fonds', '"banque centrale" AND benefices']
+    titres_like: ['%perequation des changes%', '%benefices de la banque centrale%']
+    iort_ar: [صندوق تغطية مخاطر الصرف, تغطية مخاطر الصرف, أرباح البنك المركزي]
+    plein_texte: [péréquation des changes, صندوق تغطية مخاطر الصرف, retenue sur les bénéfices]
+    depuis: 2000-12-29
+  periode:
+    jusqu_au: 2012-12-31
+    motif: parts de l'État dans les bénéfices des exercices 2002 à 2010 de la Banque centrale, toutes versées au Trésor au plus tard en 2012 (rapport annuel 2012 de la Banque centrale, p. 154)
+  passes:
+  - date: 2026-10-27
+    role: documentaliste
+    sources: [jort_cache, corpus_local, web]
+    couverture: 'jort_cache, FTS sur titres et objets de 1985 à 2014 : textes fondateurs seulement (arrêté du 27 avril 1985, circulaire n° 85-25, loi n° 98-111 art. 18, décret n° 99-1649, loi n° 2000-98 art. 34) et lois de règlement des gestions 1976 à 2009, qui ne donnent que les totaux par titre et celui des fonds spéciaux. Corpus local, JORT édition française 2003-2012 : états financiers de la Banque centrale trouvés aux n° 33/2008, 40/2009, 29/2010, 32/2011 et 33/2012, sans ligne pour le Fonds ; 2003-2007 non trouvés (couche texte décalée dans les fascicules 2003 à 2005). Hors JORT, lus : rapports annuels de la Banque centrale 2002 à 2012, rapports de clôture de la Cour des comptes 2005, 2006, 2007, 2009, 2011 et 2012, rapports du ministère des Finances sur les finances publiques 2006, 2007, 2008, 2010 et 2011 ; retenue chiffrée pour les seuls exercices 1999 à 2001 et 2003. Web : une requête, sans résultat. Note : docs/notes/recettes-2003-2009-contre-lecture-2026-10-28.md.'
+    couvert_jusqu_au: 2012-12-31
+    resultat: aucun
+  a_faire:
+  - 'rapports de clôture des gestions 2008 et 2010, absents du catalogue de la Cour des comptes'
+  - 'comptes du Fonds de péréquation des changes : compte général de l''administration des finances 2008 et 2009 (tunisia-data, minfinances/portail_ancien, 2008_rapport_cga_ar.pdf et 2009_rapport_cga_ar.pdf, sans couche texte : OCR)'
+  - 'rapport du ministère sur les finances publiques 2005 (couche texte vide : OCR)'
