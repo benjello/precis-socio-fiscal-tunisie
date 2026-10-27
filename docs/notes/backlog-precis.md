@@ -3630,7 +3630,13 @@ Ce qui reste :
   nouvelle `bct-ra-revenus-participations` : ligne « revenus des participations » des recettes non fiscales et
   versement de la Banque centrale, années budgétaires 1983-1988 et 1993-2016 (rapports 1985, 1988, 1995-2006,
   2008-2016, lus à l'image) ; section `#sec-ep-versements-bct`, figure `fig-ep-bct-ra`, tableau replié
-  `tbl-ep-bct-ra`. **Restent** : (1) écarts entre la part arrêtée par la Banque centrale et la ligne du budget de la
+  `tbl-ep-bct-ra`. Contre-lecture indépendante du 27 octobre 2026 (`docs/notes/recettes-2003-2009-contre-lecture-2026-10-28.md`,
+  corrections appliquées, `tunisia-data` #82) : aucune erreur de lecture ; exercice 2007 lu dans les états financiers de
+  la Banque centrale publiés au *Journal officiel* (n° 33 du 22 avril 2008, p. 1294 : part de l'État 435 MD) ; base
+  légale de la retenue au profit du Fonds de péréquation des changes (loi n° 2000-98, art. 34), attestée pour 1999-2001
+  et 2003 ; 882 MD inscrits au budget de 2011 selon le ministère des Finances aussi (rapport sur les finances publiques
+  2011, annexe 5) ; ventilation excédents / bénéfices de la Cour gardée et dite (48,0 et 136,7 MD d'écart au ministère
+  en 2008 et 2009) ; registre `tbl-ep-fpc-registre`. **Restent** : (1) écarts entre la part arrêtée par la Banque centrale et la ligne du budget de la
   gestion suivante — 5 MD (exercice 2002), 10,4 (2004-2005), 10 (2006), 10 (2007), 8 MD entre les 882 MDT budgétisés
   selon la Banque centrale et les 874 MD de la Cour pour 2011, +13,7 (exercice 2011, gestion 2012), -15 (2012),
   -10 (2013), -10 (2015) ; l'écart de 36,7 MD de 2008-2010 se décompose en 28,7 MDT de reliquat de l'exercice 2010,
@@ -3642,8 +3648,13 @@ Ce qui reste :
   que le Fonds de péréquation des changes (1999-2001, 2003). Lois de règlement : recettes par
   titre seulement au *Journal officiel* (loi n° 2010-6, gestion 2007, lue à l'image ; les autres non ouvertes, même
   forme présumée). Pistes : rapports de clôture de la Cour (comptes du Trésor), états financiers de la Banque
-  centrale (affectation au Fonds de péréquation après 2003) ; TODO dans la section ; (2) répartition du résultat de
-  l'exercice 2007, non imprimée dans le rapport 2007 (montant encaissé de 435 MD seulement, rapport 2008, p. 218) ;
+  centrale (affectation au Fonds de péréquation après 2003 ; publiés au *Journal officiel* depuis l'exercice 2007,
+  sans ligne pour le fonds), comptes généraux de l'administration des finances 2008 et 2009 et rapport du ministère sur
+  les finances publiques 2005, **à océriser** (`tunisia-data`, `minfinances/portail_ancien`) ; fiche
+  `r-bct-retenue-fpc-2002-2011` ; TODO dans la section ; (2) 811 MD de bénéfices 2008 de la CPG et du GCT gardés hors
+  budget selon la Cour : la Banque centrale ne confirme qu'au moins 605 et 211 MD reçus en 2009, et le ministère inscrit
+  au budget de 2009 59 MD de la CPG et 225 MD du GCT ; rapport de clôture de la gestion 2010 **à obtenir** (absent du
+  catalogue de la Cour) ;
   (3) dans les rapports de clôture 2005-2009 : principal et intérêts de la dette garantie, remboursements de prêts,
   recettes de privatisation, fonds spéciaux — lisibles (couche texte des rapports 2005, 2006 et 2009 propre ;
   rapport 2007 à lire à l'image, couche texte aux chiffres décalés) ; (4) gestions 2008 (sauf la recette des
