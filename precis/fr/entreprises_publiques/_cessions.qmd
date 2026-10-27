@@ -1,6 +1,25 @@
 # Céder : les cessions de participations et leurs recettes {#sec-ep-ceder .domicile-unique}
 
-Ce chapitre donne les textes qui autorisent et organisent la cession des participations de l'État, et ce que l'État en a tiré.
+Ce chapitre donne les textes qui autorisent et organisent la cession des participations de l'État et la liquidation de ses entreprises, les opérations de cession une à une depuis 1998, et ce que l'État en a tiré de 1987 à 2024.
+
+## Vue d'ensemble : 217 entreprises, six modes {#sec-ep-cessions-modes}
+
+Du 31 décembre 1987 au 31 janvier 2009, l'État privatise ou restructure 217 entreprises : il cède en totalité sa participation dans 114 d'entre elles et en liquide 41 [@dgpv-bilan-global].
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cessions_modes(
+    caption=("Entreprises privatisées ou restructurées, par mode, du 31 décembre 1987 au "
+             "31 janvier 2009 ; parts imprimées à l'unité. Source : Direction générale de la "
+             "privatisation [@dgpv-bilan-global]"))
+```
+
+- **Une entreprise, un mode.** Le bilan range chaque entreprise sous un seul mode, et ne donne pas le produit de chaque mode ; le produit de l'ensemble est de 5 963 MD.
+- **Cession et liquidation.** La privatisation, totale ou partielle, et l'ouverture du capital en bourse concernent 153 entreprises ; la liquidation, 41 ; la concession, 5.
+- **Dans le temps.** Les recettes se concentrent sur le X^e^ Plan (2002-2006), et l'année 2006 en fait la moitié (@sec-ep-cessions) ; le recueil des opérations, une à une, commence en 1998 (@sec-ep-cessions-operations).
 
 ## 1987 : l'État autorisé à céder ses participations {#sec-ep-1987}
 
@@ -10,6 +29,77 @@ En 1987, pour la première fois, une loi autorise de façon générale la cessio
 - **Qui décide.** Une commission de restructuration évalue les entreprises et propose les conditions de cession.
 - **Ce que l'État abandonne.** L'acquéreur peut payer jusqu'à la moitié du prix en bons d'équipement ; il est exonéré d'impôt sur les bénéfices pendant cinq ans. L'État peut renoncer au privilège du Trésor, rééchelonner ses créances sur l'entreprise ou en abandonner une partie.
 - **Les premières recettes.** 6,8 MD en 1987, 27,0 MD en 1988, 50,6 MD en 1989 (@tbl-ep-cessions).
+
+## 1997-2000 : la commission, le comité technique et la liquidation à l'amiable {#sec-ep-1999}
+
+Depuis le 12 mai 1999, une entreprise ou un établissement public dont la liquidation est décidée après avis de la commission d'assainissement et de restructuration des entreprises à participations publiques est liquidé à l'amiable, sous un régime qui écarte en partie le droit commun des entreprises commerciales ; un comité technique de privatisation en suit le déroulement.
+
+| Instance | Composition | Rôle | Texte |
+|---|---|---|---|
+| Commission d'assainissement et de restructuration des entreprises à participations publiques | le Premier ministre, président ; sept ministres, le secrétaire général du gouvernement, le secrétaire d'État chargé des participations publiques, le gouverneur de la Banque centrale, le président du Conseil du marché financier ; secrétariat : Direction générale de la privatisation | examine les dossiers que lui soumettent le Premier ministre ou le ministre du Développement économique | [décret de 1997](#r-ep-1997-commission) |
+| Comité technique de privatisation | le secrétaire d'État chargé des participations publiques, président ; six représentants, au rang de directeur général ou de directeur, du Premier ministère, de trois ministères, de la Banque centrale et du Conseil du marché financier ; secrétariat : Direction générale de la privatisation | donne son avis avant la commission ; depuis 1998, statue seul sur les petites opérations et suit les liquidations | [décrets de 1997](#r-ep-1997-commission) et [de 1998](#r-ep-1998-comite) |
+| Liquidateur | choisi sur appel d'offres, ou agent public nommé directement | établit le programme de liquidation, cède les actifs, recouvre les créances | [loi de 1999](#r-ep-1999), [décret de 2000](#r-ep-2000-liquidateurs) |
+
+: Les instances de la cession et de la liquidation, 1997-2000 {#tbl-ep-instances-liquidation}
+
+- **La commission et son comité, 1997.** [Le décret du 21 février 1997](#r-ep-1997-commission) recompose la commission instituée en 1989 et fixe la composition du comité technique de privatisation, créé en 1996 par le décret qui fixe les attributions du ministère du Développement économique, qui examine chaque dossier avant elle. La Direction générale de la privatisation tient le secrétariat des deux.
+- **Le comité statue seul sur les petites opérations, 1998.** Depuis le [1^er^ août 1998](#r-ep-1998-comite), le comité décide sans la commission de la reprise d'un appel d'offres resté sans soumission, de la vente d'éléments d'actif estimés à 100 000 dinars au plus, à un prix d'au moins 70 % de l'évaluation, et de la cession des participations d'entreprises publiques, hors banques, dans la limite de 10 % du capital, tant que l'ensemble des participations publiques ne dépasse pas 34 %. Il suit les liquidations décidées après avis de la commission et lui en rend compte.
+- **La liquidation à l'amiable, 1999.** [La loi du 3 mai 1999](#r-ep-1999) ajoute à la loi de 1989 un titre « de la liquidation à l'amiable ». Les dettes nées après l'approbation du programme de liquidation et nécessaires à l'opération sont payées avant les créances antérieures, même privilégiées ; seules passent devant elles les créances que le code des droits réels et le code du travail dotent d'un superprivilège. Les poursuites et les délais de prescription des créances antérieures sont suspendus, pour trois ans au plus. Un commissaire aux comptes certifie les états financiers du liquidateur.
+- **Les liquidateurs, 2000.** Depuis le [23 octobre 2000](#r-ep-2000-liquidateurs), le liquidateur est choisi sur appel d'offres, sur un cahier des charges soumis au comité technique ; il ne peut être le dirigeant de l'entreprise. Sa rémunération suit des plafonds fixés par catégorie d'actifs, selon la difficulté de leur réalisation ; il en reçoit au plus 70 % en avances, le solde après le quitus. Un agent public nommé directement reçoit une indemnité mensuelle d'au plus 30 % de son salaire brut. Le programme de liquidation est soumis au comité dans le mois qui suit la nomination.
+
+## Les opérations de 1998 à 2008 {#sec-ep-cessions-operations}
+
+De 1998 à 2008, la Direction générale de la privatisation recense 162 opérations sur 132 sociétés, pour 5 409,9 MD, dont 4 460,6 MD de cessions de titres ; trois opérations en font les trois quarts : l'ouverture de 35 % du capital de Tunisie Télécom en 2006 (3 052 MD), la concession de la seconde licence de téléphonie mobile en 2002 (680 MD) et la vente de la Société Ciment de Gabès en 2000 (311,1 MD) [@dgpv-recueil-operations].
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cessions_annees(
+    caption=("Produit des opérations de privatisation et de restructuration, par année de "
+             "cession et par nature de l'acte, 1998-2008, en millions de dinars courants, et "
+             "recettes de l'année au relevé annuel arrêté à 2009. Titres : actions, part du "
+             "capital, participations ; bourse : offre publique de vente ou de retrait, vente à "
+             "la criée ; actifs : usine, hôtel, terrain, matériel, fonds de commerce ; actifs en "
+             "liquidation : actifs d'une entreprise en liquidation. La nature est classée ici "
+             "d'après l'intitulé du mode. Les quatre lignes qui portent plusieurs années sont "
+             "comptées à part, sans répartition. Écart : produit du recueil moins relevé annuel. "
+             "Sources : Direction générale de la privatisation [@dgpv-recueil-operations ; "
+             "@dgpv-recettes-annuelles-1987-2009]"))
+```
+
+- **Nature de l'acte.** Le recueil donne, pour chaque opération, un intitulé du mode : « Vente d'actions (99,772 % du capital) », « OPV », « Concession », « Vente d'éléments d'actif (Liquidation en cours) ». Le tableau le range en cinq natures. Elles ne recoupent pas les modes du bilan global (@sec-ep-cessions-modes) : le recueil ne dit ni la part de l'État avant et après l'opération, ni si la société quitte le secteur public, et il range aussi des ventes d'actifs par des entreprises qui restent publiques.
+- **Les cimenteries, 1998-2000.** La vente de trois cimenteries fait 720,4 MD : Ciment Jebel Ouest (241,3 MD) et Ciment d'Enfidha (168,0 MD) en 1998, Ciment de Gabès (311,1 MD) en 2000.
+- **Le recueil et le relevé annuel.** De 2000 à 2007, le produit des opérations d'une année s'écarte de moins de 5 MD des recettes du relevé annuel. Il est inférieur de 33,5 MD en 1998 et de 148,6 MD en 2008 ; il est supérieur de 19,6 MD en 1999, et proche alors du relevé arrêté à 2005 (68,9 MD) plutôt que de celui arrêté à 2009 (43,5 MD).
+- **Deux décomptes des concessions.** Le recueil compte six sociétés concédées de 1998 à 2008 ; le bilan global, cinq concessions de 1987 à 2009.
+
+<!-- TODO (documentaliste) : écart du recueil et du bilan global sur les concessions (6 sociétés au recueil 1998-2008 contre 5 au bilan 1987-2009) et écarts annuels 1998, 1999 et 2008 avec le relevé annuel — rapports annuels de la Direction générale de la privatisation, s'ils existent, ou demande à la Direction. -->
+
+:::: {.chronologie-repliable titre="Opérations de privatisation et de restructuration, 1998-2008 : les 162 lignes du recueil, par secteur, avec l'année, la nature de l'acte, l'intitulé du mode et le produit ; sociétés et produit par nature"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cessions_natures(
+    caption=("Opérations de 1998 à 2008 par nature de l'acte : lignes du recueil, sociétés "
+             "concernées et produit. Une société qui a des opérations de plusieurs natures est "
+             "comptée dans chacune : les sociétés ne s'additionnent pas. La somme des lignes "
+             "(5 409,9 MD) est inférieure de 3 MD au total imprimé (5 412,9 MD), écart qui vient "
+             "du secteur du tourisme et de l'artisanat. Source : Direction générale de la "
+             "privatisation [@dgpv-recueil-operations]"))
+ep.tableau_cessions_operations(
+    caption=("Les opérations de privatisation et de restructuration de 1998 à 2008, une ligne "
+             "par ligne du recueil, par secteur ; une ligne sans nom de société est une autre "
+             "opération de la société du dessus ; une ligne peut réunir plusieurs opérations. "
+             "Produit en milliers de dinars courants. Nature de l'acte classée ici d'après "
+             "l'intitulé du mode. Source : Direction générale de la privatisation "
+             "[@dgpv-recueil-operations]"))
+```
+
+::::
 
 ## 1987-2009 : les cessions {#sec-ep-reformes-cessions}
 
@@ -34,10 +124,11 @@ ep.tableau_cessions_plans(
 ```
 
 - **Une concentration dans le temps.** Le X^e^ Plan (2002-2006) fait 4 071 MD sur 5 963 ; l'année 2006, 3 110,5 MD à elle seule (@tbl-ep-cessions).
-- **Aucun détail par opération.** Les relevés de la Direction générale de la privatisation donnent des recettes par année et par période, non par entreprise cédée.
+- **Le détail par opération, depuis 1998.** Les relevés annuels et par période ne nomment pas les entreprises cédées ; le recueil des opérations le fait depuis 1998 (@sec-ep-cessions-operations).
 - **Après 2009.** Les recettes de privatisation inscrites au budget de 2010 à 2016 font 2 576,6 MD, dont 1 105 MD en 2012, 1 070,4 MD en 2013 et 396,9 MD en 2016, pour l'essentiel la cession de 35 % de Tunisie Télécom ; de 2017 à 2024, les recettes du budget n'ont aucune ligne de privatisation (@sec-ep-lp-cloture, @fig-ep-cessions).
+- **Les biens confisqués, depuis 2011.** Depuis le [18 mars 2011](#r-ep-2011-confiscation), les biens meubles et immeubles et les droits acquis après le 7 novembre 1987 par l'ancien président de la République, son épouse, les personnes nommées en annexe du décret-loi et celles qui les ont obtenus par leurs relations avec elles sont confisqués au profit de l'État.
 
-<!-- TODO (documentaliste) : la page « bilan global » de la Direction générale de la privatisation donne les opérations par mode (114 privatisations totales, 29 partielles, 10 offres publiques de vente, 5 concessions, 41 liquidations, 18 autres) : à verser dans tunisia-data avec sa clé de bibliographie avant de la publier ; documenter les grandes cessions opération par opération (cimenteries, seconde licence de téléphonie, Tunisie Télécom). -->
+<!-- TODO (documentaliste) : sociétés confisquées depuis 2011 — sont-elles des entreprises publiques au sens de la loi n° 89-9 ? domicile à trancher (note de chantier du découpage, § 5) ; cession de 45 MD d'une société pharmaceutique rangée parmi les recettes de confiscation au rapport de clôture de 2022, à lire ; décret-loi n° 2011-68 (commission nationale de gestion des avoirs). Seconde licence de téléphonie mobile et Tunisie Télécom : textes d'autorisation à lire. -->
 
 ## Les recettes de cession, 1987-2024 {#sec-ep-lp-cessions}
 
@@ -91,12 +182,17 @@ ep.tableau_cessions(
 
 ::::
 
-:::: {.chronologie-repliable titre="Textes de loi cités dans ce chapitre : date d'effet, article, page, portée"}
+:::: {.chronologie-repliable titre="Textes de la cession, de la liquidation et de la confiscation cités dans ce chapitre, 1987-2011 : date d'effet, article, page, portée"}
 
 | Date d'effet | Texte, article et page | Ce que le texte change | Portée |
 |---|---|---|---|
 | []{#r-ep-1987}[16 août 1987]{.insecable} | loi n° 87-47 du 2 août 1987 [@loi87-47, art. 1 à 6 et 11 à 13, p. 958-959] | cession autorisée (art. 1^er^) ; liste par décret (art. 2) ; commission de restructuration (art. 4 à 6) ; avantages aux acquéreurs (art. 11) ; paiement à 50 % en bons d'équipement (art. 12) ; renonciation au privilège du Trésor, rééchelonnement ou abandon partiel de créances (art. 13). Aucune clause d'effet : publiée le 14 août 1987, exécutoire un jour franc après | mise en place |
+| []{#r-ep-1997-commission}[8 mars 1997]{.insecable} | décret n° 97-410 du 21 février 1997 [@decret97-410, art. 1^er^ à 7, p. 366] | commission d'assainissement et de restructuration des entreprises à participations publiques : le Premier ministre, président, et onze membres — ministres de l'Intérieur, de la Coopération internationale et de l'Investissement extérieur, des Finances, du Développement économique, des Domaines de l'État et des Affaires foncières, des Affaires sociales, de la Formation professionnelle et de l'Emploi, secrétaire général du gouvernement, secrétaire d'État chargé des participations publiques, gouverneur de la Banque centrale, président du Conseil du marché financier ; secrétariat : Direction générale de la privatisation (art. 1^er^) ; comité technique de privatisation, présidé par le secrétaire d'État, avis avant la commission (art. 4 et 5) ; abroge le décret n° 89-377 du 15 mars 1989 et ses modificatifs (art. 7). Aucune clause d'effet : *Journal officiel* déposé au gouvernorat de Tunis le 3 mars 1997, exécutoire cinq jours plus tard | étape |
+| []{#r-ep-1998-comite}[1^er^ août 1998]{.insecable} | décret n° 98-1440 du 13 juillet 1998 [@decret98-1440, art. 1^er^, p. 1636] | art. 5 nouveau : le comité technique statue sur la reprise des appels d'offres sans soumission, la vente d'éléments d'actif estimés à 100 000 dinars au plus à 70 % au moins de l'évaluation, la cession des participations des entreprises publiques hors banques dans la limite de 10 % du capital si l'ensemble des participations publiques ne dépasse pas 34 % ; art. 5 bis : il suit les liquidations décidées après avis de la commission. Aucune clause d'effet : *Journal officiel* déposé le 27 juillet 1998, exécutoire cinq jours plus tard | ajustement |
+| []{#r-ep-1999}[12 mai 1999]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 7 mai 1999, plus cinq jours, jour du dépôt non compté | loi n° 99-38 du 3 mai 1999 [@loi99-38, art. 1^er^ (art. 34 à 41) et 2, p. 684-685] | liquidation à l'amiable des entreprises et établissements publics : priorité aux dettes nées après l'approbation du programme de liquidation, suspension des poursuites, durée de trois ans au plus | ajustement |
+| []{#r-ep-2000-liquidateurs}[23 octobre 2000]{.insecable} | décret n° 2000-2280 du 10 octobre 2000 [@decret2000-2280, art. 1^er^ à 17, p. 2481-2483] | liquidateur nommé par l'assemblée générale ou le ministre chargé des participations publiques (art. 2), sur appel d'offres et cahier des charges soumis au comité technique (art. 3 et 4), ou directement parmi les agents publics de dix ans de service (art. 6) ; le dirigeant de l'entreprise exclu (art. 7) ; actifs classés en trois catégories, plafonds de rémunération aux tableaux annexés (art. 8 et 13) ; avances de 70 % au plus, solde de 30 % après quitus (art. 12) ; agent public : indemnité mensuelle de 30 % au plus du salaire brut (art. 14) ; programme de liquidation soumis au comité dans le mois (art. 15). Aucune clause d'effet : *Journal officiel* déposé le 18 octobre 2000, exécutoire cinq jours plus tard | étape |
+| []{#r-ep-2011-confiscation}[18 mars 2011]{.insecable} | décret-loi n° 2011-13 du 14 mars 2011 [@dl2011-13, art. 1^er^, p. 338] | confiscation au profit de l'État des biens meubles et immeubles et droits acquis après le 7 novembre 1987 par l'ancien président de la République, son épouse, les personnes de la liste annexée et celles qui les ont obtenus par leurs relations avec elles, « à partir de la date de sa publication » (art. 1^er^) | mise en place |
 
-: Textes de loi cités dans ce chapitre et inscrits au registre d'un autre chapitre
+: Textes de la cession, de la liquidation et de la confiscation cités dans ce chapitre, 1987-2011 ; les lignes de 1987 et de 1999 sont aussi au registre du statut des entreprises publiques {#tbl-ep-registre-cessions}
 
 ::::
