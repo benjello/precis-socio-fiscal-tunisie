@@ -5563,7 +5563,7 @@
   fiche: sources/cdc-cloture-entreprises-publiques-2003-2009.md
 - id: bct-part-etat-benefices
   titre: 'Banque centrale de Tunisie : part revenant à l''État dans le résultat de
-    l''exercice, 2002-2010, et versements au Trésor cités'
+    l''exercice, 1999-2025, et versements au Trésor cités'
   sources:
   - bct-ra-2002
   - bct-ra-2003
@@ -5574,37 +5574,59 @@
   - bct-ra-2008
   - bct-ra-2009
   - bct-ra-2010
+  - bct-ra-2011
+  - bct-ra-2012
+  - bct-ra-2013
+  - bct-ra-2014
+  - bct-ra-2015
+  - bct-ra-2016
+  - bct-ra-2017
+  - bct-ra-2018
+  - bct-ra-2019
+  - bct-ra-2020
+  - bct-ra-2021
+  - bct-ra-2022
+  - bct-ra-2023
+  - bct-ra-2024
+  - bct-ra-2025
   - bct-etats-financiers-2007
   build: uv run python scripts/build_versements_budget_2003_2009.py
   raw:
-  - sources/transcriptions/bct-part-etat-benefices-2002-2010.csv
-  output: data/processed/bct-archives/part_etat_benefices_bct_2002_2010.csv
+  - sources/transcriptions/bct-part-etat-benefices.csv
+  output: data/processed/bct-archives/part_etat_benefices_bct.csv
   unite: dinars courants (colonne valeur_dinars, entiers) et millions de dinars courants
     (valeur_md)
   perimetre: répartition du résultat de l'exercice approuvée par le Conseil d'administration
     de la Banque centrale (résultat de l'exercice, part revenant à l'État), rapports
-    annuels 2002 à 2006 et 2008 à 2010, et états financiers de l'exercice 2007 publiés
-    au Journal officiel (n° 33 du 22 avril 2008) ; partage de la part de l'exercice
-    2003 entre le budget (100 MDT) et le Fonds de péréquation des changes (4,5 MDT)
-    ; versements au Trésor cités dans le texte avec leur année (exercices 2002, 2006
-    et 2007) ; une ligne par (exercice, poste)
+    annuels 2002 à 2006 et 2008 à 2025 (exercices 2002-2006 et 2008-2025), états financiers
+    de l'exercice 2007 publiés au Journal officiel (n° 33 du 22 avril 2008) ; partage
+    des exercices 1999 à 2001 (rapport 2002) et 2003 (rapport 2004) entre le budget
+    et le Fonds de péréquation des changes ; versements au Trésor cités dans le texte
+    avec leur année (exercices 2002, 2006, 2007 et 2010) ; reliquat de l'exercice
+    2010 resté en compte d'ordre fin 2011 ; une ligne par (exercice, poste)
   caveats: 'PAR EXERCICE, NON PAR ANNÉE BUDGÉTAIRE : la part de l''exercice N entre
     au budget en N+1, parfois plus tard (exercices 2004 et 2005 en 2006 ; 2008, 2009
     et 2010 en 2011) et pas toujours en entier (budget 2003 : 120 MD pour 125 ; 2004
     : 100 pour 104,5, le reste au Fonds de péréquation des changes ; 2006 : 373,6
     pour 148,4 + 235,6 ; 2007 : 340,38 pour 350,38 ; 2008 : 425 pour 435 ; 2011 :
-    874 selon la Cour, 882 selon le ministère des Finances et la Banque centrale,
-    pour 432 + 250 + 228,7 = 910,7, dont 28,7 MD versés en 2012). Retenue au profit
-    du Fonds de péréquation des changes (loi n° 2000-98, art. 34) attestée pour les
-    exercices 1999-2001 et 2003 ; les autres écarts de 2002-2007 lui sont compatibles,
-    sans montant lu. Exercice 2007 : répartition absente du rapport 2007, lue dans
-    les états financiers publiés au Journal officiel. Montants cités dans le texte
-    arrondis au million de dinars.'
+    874 selon la Cour pour 432 + 250 + 228,7 = 910,7, dont 28,7 restés en compte d''ordre
+    fin 2011 et 882 budgétisés selon la Banque centrale et le ministère des Finances,
+    8 MD de divergence sans texte ; 2012 : 265,3 pour 251,6 ; 2013 : 190,6 pour 205,6
+    ; 2014 : 176,8 pour 186,8 ; 2016 : 194 pour 204). Égalité entre la part de l''exercice
+    N et la ligne de la Cour pour la gestion N+1 en 2015 et de 2017 à 2024 (à un dinar
+    près en 2018 et 2020). Exercices 1999-2001 : seul le partage budget / Fonds de
+    péréquation est imprimé, pas le résultat. Retenue au profit du Fonds de péréquation
+    des changes (loi n° 2000-98, art. 34 : montant fixé par le ministre des Finances)
+    attestée pour les exercices 1999-2001 et 2003 ; les écarts de 2002 et 2004-2007
+    lui sont compatibles, sans montant lu. Exercice 2007 : répartition absente du
+    rapport 2007, lue dans les états financiers publiés au Journal officiel (n° 33
+    du 22 avril 2008, p. 1294), égale au montant encaissé cité par le rapport 2008.
+    Montants cités dans le texte arrondis au million de dinars.'
   titre_ar: 'البنك المركزي التونسي: المناب الراجع للدولة من نتيجة السنة المحاسبية،
-    2002-2010'
+    1999-2025'
   unite_ar: بالدينار الجاري وبملايين الدنانير الجارية
   perimetre_ar: توزيع نتيجة السنة المحاسبية كما صادق عليه مجلس إدارة البنك المركزي،
-    التقارير السنوية 2002-2006 و2008-2010، والقوائم المالية لسنة 2007 المنشورة بالرائد
+    التقارير السنوية 2002-2006 و2008-2025، والقوائم المالية لسنة 2007 المنشورة بالرائد
     الرسمي
   caveats_ar: 'حسب السنة المحاسبية للبنك لا حسب سنة الميزانية: يُدرج مناب السنة ن
     في ميزانية ن+1 أو بعدها.'
@@ -5655,3 +5677,229 @@
     الوطني للزيت لا يتلقيان كامل دعم المواد الأساسية. لا ربط بين الطبعات. لا يوجد
     قسم وزارة التجارة في الترجمة الفرنسية لطبعة 2021. قُرئت من الصورة.'
   fiche: sources/minfin-transferts-par-etablissement.md
+- id: bct-ra-revenus-participations
+  titre: 'Banque centrale de Tunisie, rapports annuels : revenus des participations
+    du budget de l''État et versement de la Banque centrale, années budgétaires 1983-2016'
+  sources:
+  - bct-ra-1985
+  - bct-ra-1988
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-ra-1997
+  - bct-ra-1998
+  - bct-ra-1999
+  - bct-ra-2000
+  - bct-ra-2001
+  - bct-ra-2002
+  - bct-ra-2003
+  - bct-ra-2004
+  - bct-ra-2005
+  - bct-ra-2006
+  - bct-ra-2008
+  - bct-ra-2009
+  - bct-ra-2010
+  - bct-ra-2011
+  - bct-ra-2012
+  - bct-ra-2013
+  - bct-ra-2014
+  - bct-ra-2015
+  - bct-ra-2016
+  build: uv run python scripts/build_versements_budget_2003_2009.py
+  raw:
+  - sources/transcriptions/bct-ra-revenus-participations.csv
+  output: data/processed/bct-archives/revenus_participations_budget_bct_ra.csv
+  unite: millions de dinars courants, tels qu'imprimés (une décimale ; au million
+    pour le rapport 1999 et les montants cités dans le texte)
+  perimetre: 'chapitre des finances publiques des rapports annuels 1985, 1988, 1995
+    à 2006 et 2008 à 2016 : ligne des recettes non fiscales qui porte les revenus
+    des participations de l''État (réalisations, non les prévisions des lois de finances)
+    et versement de la Banque centrale au budget quand le rapport l''isole (tableau
+    ou texte) ; une ligne par (rapport, année, poste)'
+  caveats: 'RUPTURE DE PÉRIMÈTRE, NON CHAÎNÉE : 1983-1988, « recettes des participations
+    financières » / « revenus des participations » qui comprennent les revenus pétroliers
+    ; 1993-2016, revenus pétroliers sur une ligne à part. Changements de libellé sans
+    changement de valeur : « revenus des participations et (des) EPIC » (rapports
+    1995-2000), « revenus des participations » (rapports 2001-2016 ; 1999 et 2000
+    lus dans les rapports 2000 et 2001 : 167,0 / 167,1 et 273,8 / 273,8), « excédents
+    » (rapport 2008). Rapport 2007 : ligne « excédent + recouvrement prêts », non
+    versée. Rapports 1986, 1987, 1989 à 1994 non exploités (couche texte chiffrée,
+    tableau non localisé). Révisions d''un rapport à l''autre gardées (1999 : 167,0
+    puis 167,1 ; 2009 : 803,8 puis 788,6 ; 2012 : 767,8 puis 757,5 ; 2013 : 1 070,7
+    provisoire puis 1 070,0). De 2003 à 2016 sauf 2011, la dernière lecture égale
+    le total de la Cour des comptes moins les autres profits du Trésor ; 2011 : 1
+    457,5 contre 1 566,8. Versement de la Banque centrale : par année budgétaire,
+    à ne pas confondre avec la part par exercice (bct-part-etat-benefices).'
+  titre_ar: 'البنك المركزي التونسي، التقارير السنوية: مداخيل المساهمات في ميزانية
+    الدولة ودفوعات البنك المركزي، 1983-2016'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'فصل المالية العمومية من التقارير السنوية: سطر مداخيل المساهمات ضمن
+    المداخيل غير الجبائية، الإنجازات'
+  caveats_ar: 'تغيّر التسمية والمحيط عبر الفترات: لا تُوصل السلسلة دون إشارة.'
+  fiche: sources/bct-ra-revenus-participations.md
+- id: entreprises-publiques-fiches-entreprises
+  titre: 'Entreprises publiques : fiches par entreprise du rapport annexé à la loi
+    de finances (STEG, ETAP, SNCFT), bilan, résultat, dette, subvention d''exploitation
+    et emploi, exercices 2018-2023, par édition'
+  sources:
+  - minfin-ep-2022
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: uv run python scripts/build_ep_fiches_entreprises.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-fiches.csv
+  output: data/processed/entreprises-publiques/fiches_entreprises_2018_2023.csv
+  unite: millions de dinars courants (colonne valeur), sauf l'effectif en agents (colonne
+    unite)
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
+    9), fiches par entreprise de trois éditions arabes : LF 2022 (exercices 2018-2020
+    ; mise en page « dette par créancier » : dette totale et ses cinq créanciers —
+    État, banques, entreprises publiques, caisses sociales, autres —, subventions
+    d''investissement, investissements, fonds propres, résultats reportés, résultat
+    net, charges financières nettes, résultat, charges et produits d''exploitation,
+    subvention d''exploitation, charges de personnel, effectif) ; LF 2024 (2020-2022)
+    et LF 2025 (2021-2023) (mise en page « bilan et résultat » : total des passifs
+    hors fonds propres, concours bancaires, autres passifs courants, fournisseurs,
+    emprunts à plus d''un an, fonds propres avant affectation, résultats reportés,
+    total des actifs, liquidités, clients, immobilisations nettes, résultat net avant
+    et après modifications comptables, produits des placements, charges financières
+    nettes, résultat, charges et produits d''exploitation, autres produits, subvention
+    d''exploitation, recettes, charges de personnel, effectif) ; trois entreprises
+    : STEG, ETAP, SNCFT ; une ligne par (édition, entreprise, exercice, grandeur),
+    avec le statut du chiffre'
+  caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
+    se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
+    signale 150 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
+    4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
+    même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
+    65 en LF 2022, 105 en LF 2024). `statut` : le dernier exercice de chaque édition
+    est provisoire, estimé ou probable. « - » imprimé est une case vide (`case_vide`),
+    distincte d''un zéro imprimé. EN-TÊTES DÉCALÉS DANS L''ÉDITION LF 2024 (colonnes
+    6 à 8) : l''attribution suit l''ordre de l''édition LF 2025, prouvée par l''identité
+    du bilan. ÉCARTS IMPRIMÉS DÉCLARÉS (`ecart_identite`) : dette de la SNCFT, LF
+    2022, somme des créanciers inférieure au total de 110,9 (2018) et 161,9 (2019)
+    ; ETAP 2020, 0,6 ; STEG 2022 en LF 2024, 15 753 au passif et à l''actif pour 37
+    de fonds propres ; SNCFT en LF 2025, colonne « recettes » qui ne boucle pas avec
+    le total des produits (2021 : 89,8 quand LF 2024 imprime 35,8, qui boucle). RÉSULTAT
+    NET : les classements des dix premières retiennent le résultat avant modifications
+    comptables (STEG 2021 : −42,7 ; 3 469,6 après) ; SNCFT 2019 : −119,8 sur la fiche,
+    −113,78 dans le classement de la même édition. La subvention d''exploitation est
+    une ligne comptable de l''entreprise : elle ne concorde pas avec les transferts
+    du budget par entreprise. PREUVES DE LECTURE : identités du bilan, des produits
+    et du résultat d''exploitation ; effectif et charges de personnel identiques,
+    ligne à ligne (54), à la série entreprises-publiques-effectifs-par-entreprise
+    lue sur les mêmes pages ; chaque ligne recoupée avec la couche texte de la page.
+    LU À L''IMAGE à 170 dpi le 27 octobre 2026.'
+  titre_ar: 'المنشآت العمومية: جذاذات المنشآت (الشركة التونسية للكهرباء والغاز، المؤسسة
+    التونسية للأنشطة البترولية، الشركة الوطنية للسكك الحديدية التونسية)، 2018-2023،
+    حسب طبعة التقرير المرفق بقانون المالية'
+  unite_ar: ملايين الدنانير الجارية؛ عون
+  perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جذاذات
+    المنشآت في طبعات قانون المالية لسنوات 2022 و2024 و2025
+  caveats_ar: لا ربط بين الطبعات. أرقام السنة الأخيرة من كلّ طبعة وقتية أو تقديرية
+    أو محتملة. قُرئت من الصورة.
+  fiche: sources/entreprises-publiques.md
+- id: steg-etats-financiers
+  titre: 'STEG : bilan et état de résultat publiés, exercices 2013-2023'
+  sources:
+  - steg-ef-2014
+  - steg-ef-2015
+  - steg-ef-2016
+  - steg-ef-2017
+  - steg-ef-2018
+  - steg-ef-2019
+  - steg-ef-2020
+  - steg-ef-2021
+  - steg-ef-2022
+  - steg-ef-2023
+  build: uv run python scripts/build_ep_fiches_entreprises.py
+  raw:
+  - sources/transcriptions/steg-etats-financiers.csv
+  output: data/processed/entreprises-publiques/steg_etats_financiers_2013_2023.csv
+  unite: millions de dinars courants (lus en dinars)
+  perimetre: 'états financiers de la Société tunisienne de l''électricité et du gaz,
+    exercices 2014 à 2023, chaque fichier imprimant l''exercice et l''exercice précédent
+    (2013 par le fichier de 2014) : total des actifs, capitaux propres avant affectation
+    et avant résultat, total des passifs, emprunts non courants, concours bancaires,
+    revenus, subvention d''exploitation, résultat d''exploitation, résultat net, et,
+    quand il est imprimé, résultat après modifications comptables ; une ligne par
+    (fichier, exercice, colonne, grandeur)'
+  caveats: 'COMPTES DE L''ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE : jamais raccordés
+    aux fiches du ministère des Finances, même quand les deux impriment la même valeur
+    (subvention d''exploitation de 2018, 2020, 2021, 2022 : identique). `fichier_du_meme_exercice`
+    marque la colonne de l''exercice ; la colonne de comparaison du fichier suivant
+    peut différer (`divergence_entre_fichiers`, 12 lignes : 2018 relu en 2019, actifs
+    9 563,8 puis 9 483,9 ; 2019 « retraité » dans le fichier de 2020 pour la surtaxe
+    municipale ; écarts d''un dinar). ÉCART IMPRIMÉ : colonne 2017 du fichier de 2018,
+    actifs ≠ capitaux propres + passifs de 15 453 DT, déclaré. L''état de résultat
+    ne donne ni total des produits, ni total des charges d''exploitation, ni charges
+    de personnel. Résultat après modifications comptables : 2015, 2017, 2021 (+3 469,6),
+    2022 (−2 716,1), 2023. LECTURE : couche texte et image ; 2015 et 2020 à l''image
+    seulement ; 2019 et 2022 sur la couche texte, recoupées avec l''annexe 9 du ministère.'
+  titre_ar: 'الشركة التونسية للكهرباء والغاز: الموازنة وقائمة النتائج المنشورة، 2013-2023'
+  unite_ar: ملايين الدنانير الجارية
+  perimetre_ar: القوائم المالية المنشورة للشركة التونسية للكهرباء والغاز، السنوات
+    المحاسبية 2014-2023 مع سنة المقارنة
+  caveats_ar: حسابات المنشأة وليست مصدرا ميزانيّا؛ لا ربط مع جذاذات وزارة المالية.
+  fiche: sources/entreprises-publiques.md
+- id: etap-rapports-annuels
+  titre: 'ETAP : effectif, produits d''exploitation, revenus et résultat net d''après
+    ses rapports annuels, exercices 2004-2024'
+  sources:
+  - etap-ra-2005
+  - etap-ra-2006
+  - etap-ra-2007
+  - etap-ra-2008
+  - etap-ra-2009
+  - etap-ra-2010
+  - etap-ra-2011
+  - etap-ra-2012
+  - etap-ra-2013
+  - etap-ra-2014
+  - etap-ra-2015
+  - etap-ra-2016
+  - etap-ra-2017
+  - etap-ra-2018
+  - etap-ra-2019
+  - etap-ra-2021
+  - etap-ra-2022
+  - etap-ra-2023
+  - etap-ra-2024
+  build: uv run python scripts/build_ep_fiches_entreprises.py
+  raw:
+  - sources/transcriptions/etap-rapports-annuels.csv
+  output: data/processed/entreprises-publiques/etap_rapports_annuels_2004_2024.csv
+  unite: millions de dinars courants ; agents pour l'effectif (colonne unite)
+  perimetre: 'rapports annuels de l''Entreprise tunisienne d''activités pétrolières,
+    2005 à 2024 sauf 2020 (aucun rapport dans le fonds), chacun donnant l''exercice
+    et, le plus souvent, l''exercice précédent : effectif total en fin d''année, total
+    des produits d''exploitation (`produits_exploitation`), ligne « revenus » de l''état
+    de résultat ou du détail des revenus (`revenus`), résultat net de l''exercice,
+    et la seule contribution au budget de l''État imprimée (contribution conjoncturelle
+    de la loi de finances pour 2017, 20,6 MD sur le résultat de 2016) ; une ligne
+    par (rapport, exercice, grandeur)'
+  caveats: 'COMPTES DE L''ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE : jamais raccordés
+    aux fiches du ministère des Finances, avec lesquelles ils concordent pour 2018,
+    2020, 2021 et 2022 (résultat, produits, effectif). `rapport_du_meme_exercice`
+    marque la lecture dans le rapport de l''exercice ; 2004 vient du rapport de 2005,
+    2020 du rapport de 2021. DIVERGENCES ENTRE RAPPORTS (`divergence_entre_rapports`)
+    : 2006, les trois montants diffèrent entre les rapports de 2006 et de 2007 (résultat
+    net 190,3 puis 194,5) ; 2023, colonne « retraité » du rapport de 2024 (résultat
+    392,0 puis 401,6). DANS UN MÊME RAPPORT : 2008, effectif 684 (p. 43) et 682 (p.
+    4) ; 2010, résultat net 146,2 (état) et 155 (indicateurs) — la ligne retenue est
+    celle de l''état, l''autre en remarque. 2014 : « résultat des activités ordinaires
+    après impôts », le rapport de 2015 imprimant la même valeur comme résultat net.
+    2024 : résultat après modifications comptables de 272,8 MD, non retenu. 2019 :
+    effectif seul (aucun état financier dans le rapport). 2016 : total des produits
+    d''après la page des indicateurs, arrondi au million, et d''après le rapport de
+    2017. COUVERTURE : le fichier etap_ra_2015.pdf porte en page 1 deux couvertures
+    (« 2015 » et « RAPPORT ANNUEL 2016 ») ; le corps couvre 2015. Les impôts et redevances
+    versés ne sont pas relevés. LECTURE : couche texte et image ; rapports de 2006
+    et 2015 (scans) et états de 2014, 2017, 2018, 2021 et 2023 à l''image seulement.'
+  titre_ar: 'المؤسسة التونسية للأنشطة البترولية: عدد الأعوان والإيرادات والنتيجة الصافية
+    حسب تقاريرها السنوية، 2004-2024'
+  unite_ar: ملايين الدنانير الجارية؛ عون
+  perimetre_ar: التقارير السنوية للمؤسسة التونسية للأنشطة البترولية، 2005-2024 باستثناء
+    2020
+  caveats_ar: حسابات المنشأة وليست مصدرا ميزانيّا؛ لا ربط مع جذاذات وزارة المالية.
+  fiche: sources/entreprises-publiques.md

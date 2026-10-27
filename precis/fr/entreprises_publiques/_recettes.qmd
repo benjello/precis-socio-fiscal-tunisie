@@ -97,7 +97,7 @@ L'édition LF 2025 ne donne plus ces flux : elle les remplace par les encours cr
 
 ## Les versements au budget depuis 2003 {#sec-ep-versements}
 
-Les gestions 2010 à 2024 sont détaillées dans la longue période (@sec-ep-lp-cloture) ; cette section remonte à 2003. Chaque année, le budget de l'État inscrit une recette « transferts des entreprises publiques et profits du Trésor » : la part du budget dans les profits de la Banque centrale, les excédents des entreprises publiques, les bénéfices des sociétés et d'autres profits du Trésor. De 2003 à 2009, elle va de 353,4 MD (2005) à 1 005,5 MD (2008), soit de 0,84 % à 1,82 % du PIB (PIB du ministère des Finances en base 1997 pour ces deux années) ; la part de la Banque centrale en fait 0 % en 2005 et en 2009, et 62,8 % en 2006.
+Les gestions 2010 à 2024 sont détaillées à la section sur la clôture (@sec-ep-versements-cloture) ; cette section remonte à 2003, et la section @sec-ep-versements-bct, de 1983 à 2016, d'après les rapports de la Banque centrale. Chaque année, le budget de l'État inscrit une recette « transferts des entreprises publiques et profits du Trésor » : la part du budget dans les profits de la Banque centrale, les excédents des entreprises publiques, les bénéfices des sociétés et d'autres profits du Trésor. De 2003 à 2009, elle va de 353,4 MD (2005) à 1 005,5 MD (2008), soit de 0,84 % à 1,82 % du PIB (PIB du ministère des Finances en base 1997 pour ces deux années) ; la part de la Banque centrale en fait 0 % en 2005 et en 2009, et 62,8 % en 2006.
 
 ```{python}
 #| label: fig-ep-versements
@@ -111,7 +111,7 @@ ep.figure(
              "l'État, par ligne, gestions 2003 à 2024, en dinars courants, en % des dépenses de "
              "l'État hors service de la dette et en % du PIB"),
     note_lecture=(
-        "Chaque barre est la recette « transferts des entreprises publiques et profits du Trésor » d'une gestion, telle que le budget l'inscrit, d'après les rapports de la Cour des comptes sur la clôture du budget. Les gestions 2003 à 2009 viennent des rapports sur les gestions 2005, 2006, 2007 et 2009, qui donnent chacun la gestion et les deux précédentes ; 2008 vient du rapport 2009. Les gestions 2010 à 2024 viennent des rapports 2011 à 2024 (@sec-ep-lp-cloture). C'est le même tableau, sous les mêmes lignes, jusqu'à 2019 ; depuis 2020, la Cour n'imprime plus de total et la hauteur des barres est la somme des lignes imprimées, ce que marque le trait pointillé. "
+        "Chaque barre est la recette « transferts des entreprises publiques et profits du Trésor » d'une gestion, telle que le budget l'inscrit, d'après les rapports de la Cour des comptes sur la clôture du budget. Les gestions 2003 à 2009 viennent des rapports sur les gestions 2005, 2006, 2007 et 2009, qui donnent chacun la gestion et les deux précédentes ; 2008 vient du rapport 2009. Les gestions 2010 à 2024 viennent des rapports 2011 à 2024 (@sec-ep-versements-cloture). C'est le même tableau, sous les mêmes lignes, jusqu'à 2019 ; depuis 2020, la Cour n'imprime plus de total et la hauteur des barres est la somme des lignes imprimées, ce que marque le trait pointillé. "
         "La part de la Banque centrale est absente en 2005, 2009 et 2010 et réunit plusieurs exercices en 2006 et en 2011 : le budget inscrit la part d'un exercice l'année suivante, parfois plus tard (tableau replié). "
         "Le PIB est celui du ministère des Finances pour 2003 et 2004, sans base indiquée, puis en base 1997 de 2005 à 2009, et celui de l'Institut national de la statistique en base 2015 depuis 2010, rétropolé par l'INS pour 2010 à 2014 : chaque changement de source ou de base est une rupture du dénominateur, marquée au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
 )
@@ -119,11 +119,11 @@ ep.figure(
 
 - **De 2003 à 2009, de 536,5 MD à 846,8 MD.** La recette fait 536,5 MD en 2003, 610,9 MD en 2004, 353,4 MD en 2005, 594,9 en 2006, 616,1 en 2007, 1 005,5 MD en 2008 et 846,8 MD en 2009, soit de 3,85 % à 7,86 % des dépenses de l'État hors service de la dette [@cdc-cloture-2005, p. 51 ; @cdc-cloture-2006, p. 44 ; @cdc-cloture-2007, p. 21 ; @cdc-cloture-2009, p. 23].
 - **Le budget inscrit la part de la Banque centrale avec un an de décalage, et parfois plus.** La part de l'exercice 2004, 148,4 MD, est gardée dans un compte d'attente du Trésor au lieu d'entrer au budget de 2005 ; le budget de 2006 inscrit 373,6 MD pour les exercices 2004 et 2005, dont les parts arrêtées par la Banque centrale font 148,4 et 235,6 MD [@cdc-cloture-2005, p. 49 ; @cdc-cloture-2006, p. 44]. En 2009, le ministère des Finances n'appelle pas la part de l'exercice 2008, 432 MD, qui reste dans les comptes de la Banque centrale ; les budgets de 2009 et de 2010 n'inscrivent rien à ce titre ; les parts des exercices 2008, 2009 et 2010 arrivent au Trésor en 2011 et en 2012 (point suivant) [@cdc-cloture-2009, p. 23-24 ; @bct-ra-2009, p. 289].
-- **Le montant inscrit n'est pas toujours la part arrêtée par la Banque centrale.** Une retenue sur les bénéfices de la Banque centrale alimente le Fonds de péréquation des changes, créé par [la loi de finances pour 1999](#r-ep-fpc-1999) pour couvrir les pertes de change des banques sur le remboursement de leurs emprunts extérieurs ; depuis [la loi de finances pour 2001](#r-ep-fpc-2001), le ministre des Finances en fixe le montant. Elle est de 5 MD pour les exercices 1999 et 2000, de 15 MD pour 2001 et de 4,5 MD pour 2003 : le budget de 2004 inscrit 100 MD des 104,5 MD de l'exercice 2003 [@bct-ra-2002, p. 169 ; @bct-ra-2004, p. 170]. Pour l'exercice 2002 et les exercices 2004 à 2007, le montant de la retenue n'est pas identifié ici ; l'écart entre la part arrêtée et le montant inscrit est du même ordre : 120 MD pour les 125 MD de l'exercice 2002, 373,6 MD pour les 384,0 MD des exercices 2004 et 2005, 340,4 MD pour les 350,4 MD de 2006, 425 MD pour les 435 MD de 2007 [@bct-ra-2002, p. 248 ; @bct-ra-2003, p. 258 ; @bct-ra-2004, p. 264 ; @bct-ra-2005, p. 288 ; @bct-ra-2006, p. 292 ; @bct-ra-2008, p. 218]. Pour 2006 et 2007, le Trésor reçoit de la Banque centrale 350 et 435 MD, et le budget en inscrit 10 MD de moins [@bct-ra-2007, p. 229 ; @bct-ra-2008, p. 218].<!-- RECHERCHE r-bct-retenue-fpc-2002-2011 : montant de la retenue au profit du Fonds de péréquation des changes, exercices 2002 et 2004-2007, et 8 MD de 2011 (voir docs/recherches.yml) --><!-- TODO (documentaliste) : écarts de 5 MD (exercice 2002), 10,4 (2004-2005), 10 (2006) et 10 (2007) entre la part arrêtée et le budget : compatibles avec la retenue de la loi n° 2000-98, art. 34, sans montant lu ; le rapport du ministère sur les finances publiques 2006 (p. 25) range 143 MD des 373,6 MD de 2006 sous la « gestion 2005 », lecture possible 143 MD pour l'exercice 2004 et 230,6 MD pour 2005, non établie. Voir docs/notes/recettes-2003-2009-contre-lecture-2026-10-28.md. -->
-- **Les parts des exercices 2008 à 2010 arrivent au Trésor en 2011 et en 2012.** Elles font 910,7 MD (432, 250 et 228,7 MD). La Banque centrale en vire 882 MD au Trésor en 2011, 682 MD pour 2008 et 2009 et 200 MD pour 2010, et garde fin 2011 les 28,7 MD restants, qui ne sont plus dans ses comptes fin 2012 [@bct-ra-2010, p. 123 ; @bct-ra-2011, p. 64, 144 et 153 ; @bct-ra-2012, p. 154]. Le budget de 2011 inscrit à ce titre 874 MD selon la Cour des comptes et 882 MD selon le ministère des Finances [@cdc-cloture-2011, p. 40 ; @minfin-finances-publiques-2011, p. 67].<!-- TODO (documentaliste) : 8 MD de divergence sur la part de la Banque centrale au budget de 2011, Cour des comptes (874 MD) contre ministère des Finances et Banque centrale (882 MD), non expliqués ; fiche r-bct-retenue-fpc-2002-2011. -->
+- **Le montant inscrit n'est pas toujours la part arrêtée par la Banque centrale.** Une retenue sur les bénéfices de la Banque centrale alimente le Fonds de péréquation des changes, créé par [la loi de finances pour 1999](#r-ep-fpc-1999) pour couvrir les pertes de change des banques sur le remboursement de leurs emprunts extérieurs ; depuis [la loi de finances pour 2001](#r-ep-fpc-2001), le ministre des Finances en fixe le montant. Elle est de 5 MD pour les exercices 1999 et 2000, de 15 MD pour 2001, le budget recevant 155, 160 et 235 MD, et de 4,5 MD pour 2003 : le budget de 2004 inscrit 100 MD des 104,5 MD de l'exercice 2003 [@bct-ra-2002, p. 169 ; @bct-ra-2004, p. 170]. Pour l'exercice 2002 et les exercices 2004 à 2007, le montant de la retenue n'est pas identifié ici ; l'écart entre la part arrêtée et le montant inscrit est du même ordre : 120 MD pour les 125 MD de l'exercice 2002, 373,6 MD pour les 384,0 MD des exercices 2004 et 2005, 340,4 MD pour les 350,4 MD de 2006, 425 MD pour les 435 MD de 2007 [@bct-ra-2002, p. 248 ; @bct-ra-2003, p. 258 ; @bct-ra-2004, p. 264 ; @bct-ra-2005, p. 288 ; @bct-ra-2006, p. 292 ; @bct-ra-2008, p. 218]. Pour 2006 et 2007, le Trésor reçoit de la Banque centrale 350 et 435 MD, et le budget en inscrit 10 MD de moins [@bct-ra-2007, p. 229 ; @bct-ra-2008, p. 218]. Depuis la gestion 2017, la ligne du budget est la part de l'exercice précédent, au dinar près (tableau replié).<!-- RECHERCHE r-bct-retenue-fpc-2002-2011 : montant de la retenue au profit du Fonds de péréquation des changes, exercices 2002 et 2004-2007, et 8 MD de 2011 (voir docs/recherches.yml) --><!-- TODO (documentaliste) : écarts de 5 MD (exercice 2002), 10,4 (2004-2005), 10 (2006) et 10 (2007) entre la part arrêtée et le budget : compatibles avec la retenue de la loi n° 2000-98, art. 34, sans montant lu ; le rapport du ministère sur les finances publiques 2006 (p. 25) range 143 MD des 373,6 MD de 2006 sous la « gestion 2005 », lecture possible 143 MD pour l'exercice 2004 et 230,6 MD pour 2005, non établie. Voir docs/notes/recettes-2003-2009-contre-lecture-2026-10-28.md. Autres écarts sans texte : +13,7 MD (exercice 2011, gestion 2012), -15 MD (2012), -10 MD (2013), -10 MD (2015). Lu le 27 octobre 2026 : chapitre des finances publiques des rapports annuels 2001 à 2016 (tableaux à l'image, texte en couche texte) ; couches texte des rapports 2003 à 2012 cherchées (« reliquat », « péréquation », « compte d'attente ») ; notes des comptes d'ordre au passif des rapports 2011, 2012, 2013 et 2015 lues à l'image (« autres comptes d'ordre » de 2,1 à 4,9 MDT de fin 2012 à fin 2015, sans ligne de reliquat ; rapport 2016 en couche texte seulement, 2,8 MDT fin 2016). Les lois de règlement du Journal officiel ne donnent les recettes que par titre (loi n° 2010-6, gestion 2007, JORT n° 9 de 2010, p. 250-253). Pistes : rapports de clôture de la Cour (comptes du Trésor), comptes de la Banque centrale (affectation au Fonds de péréquation des changes après 2003). -->
+- **Les parts des exercices 2008 à 2010 arrivent au Trésor en 2011 et en 2012.** Elles font 910,7 MD (432, 250 et 228,7 MD). La Banque centrale en vire 882 MD au Trésor en 2011, 682 MD pour 2008 et 2009 et 200 MD pour 2010, évalue à 882 MD les bénéfices budgétisés en 2011, et garde fin 2011 les 28,7 MD restants, qui ne sont plus dans ses comptes fin 2012 [@bct-ra-2010, p. 123 ; @bct-ra-2011, p. 35, 64, 144 et 153 ; @bct-ra-2012, p. 154]. Le budget de 2011 inscrit à ce titre 874 MD selon la Cour des comptes et 882 MD selon le ministère des Finances [@cdc-cloture-2011, p. 40 ; @minfin-finances-publiques-2011, p. 67].<!-- TODO (documentaliste) : 8 MD de divergence sur la part de la Banque centrale au budget de 2011, Cour des comptes (874 MD) contre ministère des Finances et Banque centrale (882 MD), non expliqués ; fiche r-bct-retenue-fpc-2002-2011. -->
 - **Les bénéfices des sociétés non pétrolières passent de 96,2 MD en 2003 à 508,1 MD en 2009**, dans la ventilation de la Cour des comptes (tableau replié). Selon la Cour, la part de l'État dans les bénéfices de 2008 de la Compagnie des phosphates de Gafsa (617 MD) et du Groupe chimique tunisien (194 MD) reste en 2009 au compte d'attente du Trésor, hors budget [@cdc-cloture-2009, p. 24]. La Banque centrale cite, au titre de l'exercice 2008, au moins 605 MD de la première et 211 MD du second reçus par le Trésor en 2009 [@bct-ra-2009, p. 222, 223 et 226].
 
-:::: {.chronologie-repliable titre="Versements au budget, gestions 2003 à 2009, par ligne ; part de l'État dans le résultat de la Banque centrale, exercices 2002 à 2010, et ligne du budget de l'année suivante ; Fonds de péréquation des changes : lois de finances pour 1999 et 2001"}
+:::: {.chronologie-repliable titre="Versements au budget, gestions 2003 à 2009, par ligne ; part de l'État dans le résultat de la Banque centrale, exercices 1999 à 2025, et ligne du budget de l'année suivante ; Fonds de péréquation des changes : lois de finances pour 1999 et 2001"}
 
 ```{python}
 #| echo: false
@@ -154,17 +154,24 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import entreprises_publiques as ep
 ep.tableau_bct_parts(
     caption=("Part revenant à l'État dans le résultat de la Banque centrale, par exercice, "
-             "exercices 2002 à 2010, en millions de dinars courants, et part du budget dans les "
-             "profits de la Banque centrale inscrite au budget de la gestion suivante. Le "
-             "versement cité est le montant, arrondi, que le rapport de la Banque centrale dit "
-             "encaissé par le Trésor. La répartition du résultat de l'exercice 2007, absente du "
-             "rapport annuel, vient des états financiers de la Banque publiés au *Journal officiel* "
-             "[@bct-etats-financiers-2007, p. 1294]. Sources : Banque centrale de Tunisie [@bct-ra-2002, "
-             "p. 248 ; @bct-ra-2003, p. 201 et 258 ; @bct-ra-2004, p. 170 et 264 ; "
-             "@bct-ra-2005, p. 288 ; @bct-ra-2006, p. 292 ; @bct-ra-2007, p. 229 ; "
-             "@bct-ra-2008, p. 218 et 298 ; @bct-ra-2009, p. 299 ; @bct-ra-2010, p. 123] ; "
-             "Cour des comptes [@cdc-cloture-2005, p. 51 ; @cdc-cloture-2006, p. 44 ; "
-             "@cdc-cloture-2007, p. 21 ; @cdc-cloture-2009, p. 23 ; @cdc-cloture-2011, p. 39]"))
+             "exercices 1999 à 2025, en millions de dinars courants, et part du budget dans les "
+             "profits de la Banque centrale inscrite au budget de la gestion suivante. Pour les "
+             "exercices 1999 à 2001, le rapport 2002 n'imprime que le partage entre le budget et "
+             "le Fonds de péréquation des changes. Le versement cité est le montant, arrondi, que "
+             "le rapport de la Banque centrale dit encaissé ou viré au Trésor. La répartition du "
+             "résultat de l'exercice 2007, absente du rapport annuel, vient des états financiers "
+             "de la Banque publiés au *Journal officiel* [@bct-etats-financiers-2007, p. 1294]. "
+             "Sources : Banque centrale de Tunisie [@bct-ra-2002, p. 169 et 248 ; @bct-ra-2003, p. 201 et 258 ; "
+             "@bct-ra-2004, p. 170 et 264 ; @bct-ra-2005, p. 288 ; @bct-ra-2006, p. 292 ; "
+             "@bct-ra-2007, p. 229 ; @bct-ra-2008, p. 218 et 298 ; @bct-ra-2009, p. 299 ; "
+             "@bct-ra-2010, p. 123 ; @bct-ra-2011, p. 144, 153 et 157 ; @bct-ra-2012, p. 158 ; "
+             "@bct-ra-2013, p. 175 ; @bct-ra-2014, p. 201 ; @bct-ra-2015, p. 252 ; "
+             "@bct-ra-2016, p. 236 ; @bct-ra-2017, p. 236 ; @bct-ra-2018, p. 257 ; "
+             "@bct-ra-2019, p. 222 ; @bct-ra-2020, p. 225 ; @bct-ra-2021, p. 216 ; "
+             "@bct-ra-2022, p. 226 ; @bct-ra-2023, p. 230 ; @bct-ra-2024, p. 232 ; "
+             "@bct-ra-2025, p. 235] ; Cour des comptes [@cdc-cloture-2005, p. 51 ; "
+             "@cdc-cloture-2006, p. 44 ; @cdc-cloture-2007, p. 21 ; @cdc-cloture-2009, p. 23 ; "
+             "@cdc-cloture-2011, p. 39] et rapports suivants (@sec-ep-lp-cloture)"))
 ```
 
 | Date d'effet | Texte, article et page | Ce que le texte change | Portée |
@@ -173,5 +180,99 @@ ep.tableau_bct_parts(
 | []{#r-ep-fpc-2001}gestion 2001 | [@lf-2001, art. 34, p. 3178] | cinquième tiret ajouté au deuxième paragraphe de l'article 18 de la loi de finances pour 1999 : le fonds est aussi alimenté « par une retenue sur les bénéfices de la Banque Centrale de Tunisie dont le montant est fixé par le ministre des finances » | étape |
 
 : Fonds de péréquation des changes : texte qui le crée et texte qui l'alimente par une retenue sur les bénéfices de la Banque centrale, 1999-2001. Source : *Journal officiel*, édition française {#tbl-ep-fpc-registre}
+
+::::
+
+
+## Les revenus des participations du budget, 1983-2016, d'après la Banque centrale {#sec-ep-versements-bct}
+
+Le chapitre des finances publiques des rapports annuels de la Banque centrale reprend, d'après le ministère des Finances, la ligne du budget qui reçoit les bénéfices des entreprises et établissements publics et la part de la Banque centrale : les « revenus des participations ». Elle fait 342,0 MD en 1983 et 446,8 MD en 2016 ; rapportée au PIB, elle passe de 6,0 % en 1983, revenus pétroliers compris, à 1,9 % en 1993 et à 0,5 % en 2016, revenus pétroliers à part.
+
+```{python}
+#| label: fig-ep-bct-ra
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "bct_ra",
+    caption=("Revenus des participations du budget de l'État et versement de la Banque centrale, "
+             "années budgétaires 1983 à 2016, d'après les rapports annuels de la Banque centrale, "
+             "en dinars courants, en % des dépenses de l'État hors service de la dette et en % du PIB"),
+    note_lecture=(
+        "Chaque point est la réalisation de l'année telle que l'imprime le rapport le plus récent qui la donne ; la figure n'a pas de point pour 1986 ni pour 1989 à 1992. "
+        "Deux périmètres, non raccordés (trait vertical en 1992-1993) : jusqu'en 1988, la ligne réunit les bénéfices de trésorerie et les revenus pétroliers ; depuis 1993, les revenus pétroliers sont sur une ligne à part. Le libellé « revenus des participations et des EPIC » des rapports 1995 à 2000 devient « revenus des participations » en 2001 sans qu'aucune valeur change. "
+        "Les barres grises sont le versement de la Banque centrale quand le chapitre des finances publiques du rapport l'isole, dans un tableau ou dans le texte ; une année sans barre n'est pas un versement nul (voir, par exercice, le tableau replié de la section précédente, @tbl-ep-bct-parts) ; la barre de 2011 réunit les exercices 2008 à 2010. "
+        "Le PIB est celui de la Banque mondiale pour 1983-1985 (bases accolées), puis celui du ministère des Finances (base 1983 présumée, base 1983, base 1997 rétropolée, sans base pour 2002-2004, base 1997) et celui de l'Institut national de la statistique en base 2015 depuis 2010, rétropolé pour 2010-2014 ; pour 1983-1996 et 2002-2004, la source ne dit pas si le PIB est rétropolé : chaque changement est une rupture du dénominateur, marquée au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Les dépenses de l'État manquent pour 1983-1985 et 1988. "),
+)
+```
+
+- **Jusqu'en 1988, les revenus pétroliers dominent la ligne.** Elle fait 342,0 MD en 1983 et 478,1 MD en 1988, dont 388,4 MD de revenus pétroliers en 1988 ; la Banque centrale verse 45 MD en 1983, 75 MD en 1984 et en 1985, 70 MD en 1987 et en 1988 [@bct-ra-1985, p. 132 ; @bct-ra-1988, p. 121]. Le versement de 1985 réunit 51,4 MD du bénéfice de l'exercice 1984 et 23,6 MD de la revalorisation des avoirs en devises [@bct-ra-1985, p. 132].
+- **De 1993 à 2016, les revenus pétroliers à part, la ligne va de 153,1 MD (1998) à 1 457,5 MD (2011).** Elle fait 281,6 MD en 1993, 273,8 MD en 2000, 976,7 MD en 2008, 1 457,5 MD en 2011, puis 503,4 MD en 2014 et 446,8 MD en 2016 [@bct-ra-1995, p. 130 ; @bct-ra-1998, p. 183 ; @bct-ra-2002, p. 167 ; @bct-ra-2009, p. 189 ; @bct-ra-2012, p. 39 ; @bct-ra-2015, p. 42 ; @bct-ra-2016, p. 43]. La Banque centrale y verse 65 MD en 1999, 155 MD en 2000, 160 MD en 2001 et 235 MD en 2002 [@bct-ra-2000, p. 167 ; @bct-ra-2002, p. 169].
+- **De 2003 à 2016, sauf en 2011, c'est la recette de la Cour des comptes sans les autres profits du Trésor.** Les deux sources donnent le même montant au dixième de million près ; en 2009, le rapport de la Banque centrale de l'année imprime une réalisation provisoire de 803,8 MD ; celui de l'année suivante donne 788,6 MD, le montant de la Cour, que donne aussi le ministère des Finances [@bct-ra-2009, p. 189 ; @bct-ra-2010, p. 31 ; @minfin-finances-publiques-2011, p. 67]. En 2011, la Banque centrale imprime 1 457,5 MD, la Cour 1 566,8 MD [@bct-ra-2012, p. 39 ; @cdc-cloture-2011, p. 39].<!-- TODO (documentaliste) : écart de 109,3 MD en 2011 entre les revenus des participations de la Banque centrale (1 457,5 MD, rapports 2011 et 2012) et le total de la Cour moins les autres profits du Trésor (1 566,8 MD) ; chercher la ventilation dans le rapport de clôture de la gestion 2011 (lignes des excédents) et dans le rapport « Finances publiques » du ministère. Rapports de la Banque centrale de 1986, 1987 et 1989 à 1994 : couche texte chiffrée, tableau des recettes non fiscales à localiser à l'image. -->
+
+:::: {.chronologie-repliable titre="Revenus des participations, années 1983 à 2016 : chaque lecture des rapports de la Banque centrale, versement de la Banque centrale et recoupement avec la Cour des comptes"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_bct_ra(
+    caption=("Revenus des participations du budget de l'État et versement de la Banque centrale, "
+             "années budgétaires 1983 à 2016, en millions de dinars courants, d'après les rapports "
+             "annuels de la Banque centrale (entre parenthèses, l'année du rapport). La valeur "
+             "retenue est celle du rapport le plus récent ; le rapport 1999, imprimé au million, "
+             "ne l'emporte pas sur une lecture au dixième. 1983-1988 : bénéfices de trésorerie "
+             "et revenus pétroliers ; depuis 1993 : revenus pétroliers à part. Dernière "
+             "colonne : total « transferts des entreprises publiques et profits du Trésor » de la "
+             "Cour des comptes moins la ligne « autres profits du Trésor » (@sec-ep-versements, "
+             "@sec-ep-lp-cloture). Sources : Banque centrale de Tunisie [@bct-ra-1985, p. 132 ; "
+             "@bct-ra-1988, p. 121 ; @bct-ra-1995, p. 130 ; @bct-ra-1996, p. 159 ; "
+             "@bct-ra-1997, p. 148 ; @bct-ra-1998, p. 183 ; @bct-ra-1999, p. 166 ; "
+             "@bct-ra-2000, p. 167 ; @bct-ra-2001, p. 165 ; @bct-ra-2002, p. 167 et 169 ; "
+             "@bct-ra-2003, p. 177 ; @bct-ra-2004, p. 170 ; @bct-ra-2005, p. 184 ; "
+             "@bct-ra-2006, p. 173 ; @bct-ra-2008, p. 185 ; @bct-ra-2009, p. 189 ; "
+             "@bct-ra-2010, p. 31 ; @bct-ra-2011, p. 35 ; @bct-ra-2012, p. 39 ; "
+             "@bct-ra-2013, p. 37 ; @bct-ra-2014, p. 37 ; @bct-ra-2015, p. 42 ; "
+             "@bct-ra-2016, p. 43]"))
+```
+
+::::
+
+## Les versements au budget, gestions 2010 à 2024 {#sec-ep-versements-cloture}
+
+De 2010 à 2024, les versements des entreprises publiques et de la Banque centrale au budget sont au plus bas de 2014 à 2017, puis remontent ; depuis 2017, la part du budget dans les profits de la Banque centrale en fait plus de la moitié (@fig-ep-versements). La figure d'ensemble des flux de clôture qui touchent les entreprises publiques est à la longue période (@fig-ep-cdc).
+
+- **La baisse de 2014 à 2017 vient des sociétés non pétrolières.** Leurs bénéfices versés au budget s'effondrent de 2013 à 2016 ; la Cour des comptes l'attribue en 2014 au recul des résultats de la plupart des entreprises, notamment de la Compagnie des phosphates de Gafsa [@cdc-cloture-2014, p. 50]. Ils restent faibles ensuite, sauf en 2020 et en 2024.
+- **La remontée tient d'abord à la Banque centrale.** La part du budget dans ses profits est vide en 2010, réunit trois exercices en 2011, puis croît de 2017 à 2020 et atteint son plus haut niveau en 2024 ; les excédents des entreprises publiques industrielles et commerciales, dont celles du pétrole, en sont la deuxième ligne en 2024.
+- **Depuis la gestion 2020, la Cour n'imprime plus de total.** Elle donne les lignes, réparties entre les recettes de propriété et les profits du Trésor ; le total tracé est la somme des lignes imprimées.
+
+:::: {.chronologie-repliable titre="Versements au budget, gestions 2010 à 2024, par ligne"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cdc_recettes(
+    caption=("Versements des entreprises publiques et de la Banque centrale au budget de l'État "
+             "(transferts des entreprises publiques et profits du Trésor), gestions 2010 à 2024, "
+             "en millions de dinars courants et en % du PIB. Les excédents réunissent ceux des "
+             "entreprises non pétrolières et pétrolières ; un tiret marque une ligne vide. "
+             "Jusqu'en 2019, le total est celui que la Cour imprime ; depuis 2020, elle n'en "
+             "imprime plus et la somme des lignes imprimées est donnée entre parenthèses ; les "
+             "« autres profits du Trésor » réunissent alors les lignes de profits du Trésor "
+             "(intérêts des titres garantis, produits divers, résultat de change). "
+             "Sources : Cour des comptes [@cdc-cloture-2011, p. 39 ; @cdc-cloture-2013, p. 44 ; "
+             "@cdc-cloture-2014, p. 49 ; @cdc-cloture-2015, p. 42 ; @cdc-cloture-2016, p. 50 ; "
+             "@cdc-cloture-2018, p. 58 ; @cdc-cloture-2019, p. 59-60 ; @cdc-cloture-2020, p. 49 ; "
+             "@cdc-cloture-2021, p. 58-59 ; @cdc-cloture-2022, p. 47-48 ; @cdc-cloture-2023, p. 42-43 ; "
+             "@cdc-cloture-2024, p. 38-40]. "
+             "PIB : Institut national de la statistique "
+             "[@ins-cnat-2015], base dite à chaque ligne"))
+```
+
+*Note de lecture.* Chaque rapport de la Cour des comptes sur la clôture du budget donne sa gestion et la précédente ; les gestions 2010 et 2017 ne sont connues que par cette colonne de comparaison. Les excédents des entreprises publiques font 449,4 MD en 2024, dont 285 MD d'entreprises pétrolières ; la ligne des bénéfices des sociétés pétrolières porte le nom d'une seule société. Le PIB est celui de l'Institut national de la statistique, en base 2015, rétropolé par l'INS pour 2010-2014 : il n'y a pas de rupture de base sur la période (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
 
 ::::

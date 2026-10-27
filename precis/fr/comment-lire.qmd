@@ -1,0 +1,28 @@
+---
+title: "Comment lire ce précis"
+subtitle: "Le rangement des volumes et les règles de lecture"
+format:
+  html:
+    include-in-header: ../accueil.html
+---
+
+[← Retour à l'accueil](index.html)
+
+## Le rangement des volumes
+
+Le précis range ses volumes selon ce que leur texte documente : les revenus que la loi fixe, ce qu'elle prélève, ce qu'elle sert en espèces, les politiques d'un secteur, les institutions<!-- , puis l'ensemble -->.
+
+Un dispositif vit dans un seul volume, et les autres y renvoient. Ce qui est prélevé (taux, assiette, ventilation entre branches), l'organisme qui le gère et ses comptes se lisent dans les volumes des cotisations et des caisses de sécurité sociale. Ce qui est servi en espèces (pension, allocation, indemnité) se lit dans les retraites ou les prestations sociales ; les soins, dans la santé ; un prix ou un tarif administré, dans la compensation ; une règle de salaire, dans le marché du travail ou les rémunérations publiques ; le statut et les comptes d'une entreprise publique, dans les entreprises publiques. Un dispositif qui n'existe que pour un secteur vit dans le volume de ce secteur ; un cas d'un instrument général vit dans le volume de l'instrument.
+
+## Les règles de lecture
+
+::: {.lecture-precis}
+
+- Chaque règle est rattachée au texte qui la fixe ; la bibliographie lie les textes à leur publication au *Journal officiel de la République tunisienne*, sur `pist.tn`.
+- Les tableaux de paramètres donnent des valeurs datées ; leur onglet « Base législative » mène, pour chaque grandeur, à toutes ses valeurs datées et à leurs références.
+- Chaque volume se clôt sur un glossaire bilingue, français et arabe.
+- En Tunisie, le droit fait foi dans sa version arabe : les lois, décrets-lois, décrets et arrêtés sont publiés au *Journal officiel* en langue arabe, et leur publication dans une autre langue ne vaut qu'à titre d'information ([loi n° 93-64 du 5 juillet 1993, art. 1er](https://www.pist.tn/jort/1993/1993F/Jo05093.pdf)). Pour appliquer une règle, c'est donc le texte arabe qu'il faut lire.
+- Le précis, lui, est rédigé en français, puis traduit en arabe automatiquement et contrôlé : entre ses deux versions, c'est le texte français du précis qui sert de référence. Une traduction peut comporter des erreurs ; signalez-les (voir [À propos et contribuer](a-propos.html)).
+- Une grandeur rapportée au produit intérieur brut dépend de la base des comptes nationaux dans laquelle ce PIB est établi : l'annexe [Le PIB et ses changements de base](annexe-pib.html) dit quelles bases se sont succédé, de combien elles s'écartent, et comment le précis signale une rupture de série.
+
+:::

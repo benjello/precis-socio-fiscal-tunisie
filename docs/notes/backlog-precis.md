@@ -3605,29 +3605,70 @@ Ce qui reste :
   PIB : base 2015, rétropolée par l'INS pour 2010-2014, dite sous la figure.
 - **2003-2009 : versements au budget ; part de l'État dans le résultat de la Banque centrale, 2002-2010 — versés
   le 27 octobre 2026** (séries `cdc-cloture-entreprises-publiques-2003-2009` et `bct-part-etat-benefices` de
-  `tunisia-data`, branche `donnees/cdc-cloture-2003-2009`, empilée sur `donnees/cdc-cloture-2017-2024` ; section
+  `tunisia-data`, branche `donnees/cdc-cloture-2003-2009`, fusionnée ; section
   `#sec-ep-versements` du chapitre « Ce que l'État reçoit » (`_recettes.qmd`), figure `fig-ep-versements` de 2003 à
   2024, tableaux repliés `tbl-ep-versements-anciens` et `tbl-ep-bct-parts`). Rapports de clôture des gestions 2005,
   2006, 2007 et 2009 (chacun avec les deux gestions précédentes ; 2008 par le rapport 2009), lus à l'image ; aucune
-  révision d'un rapport à l'autre. Rapports annuels de la Banque centrale 2002-2010, répartition du résultat lue à
-  l'image. Contre-lecture indépendante du 27 octobre 2026 (`docs/notes/recettes-2003-2009-contre-lecture-2026-10-28.md`) : aucune erreur de lecture ; exercice 2007 lu dans les états financiers de la Banque centrale publiés au *Journal officiel* (n° 33 du 22 avril 2008, p. 1294 : part de l'État 435 MD) ; base légale de la retenue au profit du Fonds de péréquation des changes (loi n° 2000-98, art. 34), attestée pour 1999-2001 et 2003 ; écart 2008-2010 décomposé (882 MD virés en 2011, 28,7 MD en 2012 ; 874 MD selon la Cour contre 882 selon le ministère des Finances) ; ventilation excédents / bénéfices de la Cour gardée et dite (48,0 et 136,7 MD d'écart au ministère en 2008 et 2009). **Restent** : (1) montant de la retenue pour l'exercice 2002 et les exercices 2004 à 2007 (écarts de 5, 10,4, 10 et 10 MD, compatibles avec la retenue, sans montant lu) et 8 MD de divergence sur 2011 — fiche `r-bct-retenue-fpc-2002-2011` ; comptes généraux de l'administration des finances 2008 et 2009 et rapport du ministère sur les finances publiques 2005, **à océriser** (tunisia-data, `minfinances/portail_ancien`) ; TODO dans la section ; (2) 811 MD de bénéfices 2008 de la CPG et du GCT gardés hors budget selon la Cour : la Banque centrale ne confirme qu'au moins 605 et 211 MD reçus en 2009, et le ministère inscrit au budget de 2009 59 MD de la CPG et 225 MD du GCT ; rapport de clôture de la gestion 2010 **à obtenir** (absent du catalogue de la Cour) ; (3) dans les rapports de clôture 2005-2009 : principal et intérêts de la dette garantie,
-  remboursements de prêts, recettes de privatisation, fonds spéciaux — lisibles (couche texte des rapports 2005,
-  2006 et 2009 propre ; rapport 2007 à lire à l'image, couche texte aux chiffres décalés) ; (4) gestions 2008 (sauf
-  la recette des transferts, par le rapport 2009) et antérieures à 2003 : aucun rapport de clôture au catalogue de
-  la Cour ; (5) « revenus des participations » de la Banque centrale (rapports annuels, chapitre des finances
-  publiques) et du ministère des Finances : égaux au total de la Cour moins les autres profits du Trésor pour 2003-2010
-  (803,8 MD imprimés pour 2009 dans le rapport 2009 : réalisation provisoire, 788,6 MD ensuite) ; donnent 1999-2002 (rapports 2001 et 2003, couche texte) et sans doute plus tôt (rapports
-  1979-2000 à océriser) : série à part, à verser sans la chaîner à celle de la Cour ; (6) part de l'État dans le
-  résultat de la Banque centrale avant 2002 (répartition 1999-2001 imprimée dans le rapport 2002 ; rapports
-  1959-1978 en couche texte, 1979-2000 à océriser) et de 2011 à 2024 (rapports 2011-2014 et 2015-2025 dans
-  l'archive). PIB du ministère des Finances (2003-2004 sans base, 2005-2009 base 1997) puis INS base 2015, ruptures
-  marquées sur la figure.
+  révision d'un rapport à l'autre. **Prolongé le 27 octobre 2026 (soir)**, branche `donnees/bct-passe-participations`
+  de `tunisia-data` : part de l'État par exercice 2011-2025 (répartition du résultat, rapports 2011-2025, lue à
+  l'image), partage budget / Fonds de péréquation des changes des exercices 1999-2001 (rapport 2002, p. 169),
+  virements de 2011 (rapport 2011, p. 35, 144, 153) ; `tbl-ep-bct-parts` couvre les exercices 1999 à 2025. Série
+  nouvelle `bct-ra-revenus-participations` : ligne « revenus des participations » des recettes non fiscales et
+  versement de la Banque centrale, années budgétaires 1983-1988 et 1993-2016 (rapports 1985, 1988, 1995-2006,
+  2008-2016, lus à l'image) ; section `#sec-ep-versements-bct`, figure `fig-ep-bct-ra`, tableau replié
+  `tbl-ep-bct-ra`. Contre-lecture indépendante du 27 octobre 2026 (`docs/notes/recettes-2003-2009-contre-lecture-2026-10-28.md`,
+  corrections appliquées, `tunisia-data` #82) : aucune erreur de lecture ; exercice 2007 lu dans les états financiers de
+  la Banque centrale publiés au *Journal officiel* (n° 33 du 22 avril 2008, p. 1294 : part de l'État 435 MD) ; base
+  légale de la retenue au profit du Fonds de péréquation des changes (loi n° 2000-98, art. 34), attestée pour 1999-2001
+  et 2003 ; 882 MD inscrits au budget de 2011 selon le ministère des Finances aussi (rapport sur les finances publiques
+  2011, annexe 5) ; ventilation excédents / bénéfices de la Cour gardée et dite (48,0 et 136,7 MD d'écart au ministère
+  en 2008 et 2009) ; registre `tbl-ep-fpc-registre`. **Restent** : (1) écarts entre la part arrêtée par la Banque centrale et la ligne du budget de la
+  gestion suivante — 5 MD (exercice 2002), 10,4 (2004-2005), 10 (2006), 10 (2007), 8 MD entre les 882 MDT budgétisés
+  selon la Banque centrale et les 874 MD de la Cour pour 2011, +13,7 (exercice 2011, gestion 2012), -15 (2012),
+  -10 (2013), -10 (2015) ; l'écart de 36,7 MD de 2008-2010 se décompose en 28,7 MDT de reliquat de l'exercice 2010,
+  resté en compte d'ordre fin 2011 et soldé en 2012 (rapports 2011, p. 153 ; 2012, p. 154), et ces 8 MD ; égalité au
+  dinar près depuis l'exercice 2016. Lu : chapitre des finances publiques des rapports 2001-2016 (tableaux à l'image) ;
+  couches texte 2003-2012 cherchées (« reliquat », « péréquation », « compte d'attente ») ; notes des comptes d'ordre
+  au passif des rapports 2011, 2012, 2013 et 2015, à l'image (« autres comptes d'ordre » de 2,1 à 4,9 MDT de fin
+  2012 à fin 2015, sans ligne de reliquat ; rapport 2016 en couche texte seulement, 2,8 MDT fin 2016) ; rien d'autre
+  que le Fonds de péréquation des changes (1999-2001, 2003). Lois de règlement : recettes par
+  titre seulement au *Journal officiel* (loi n° 2010-6, gestion 2007, lue à l'image ; les autres non ouvertes, même
+  forme présumée). Pistes : rapports de clôture de la Cour (comptes du Trésor), états financiers de la Banque
+  centrale (affectation au Fonds de péréquation après 2003 ; publiés au *Journal officiel* depuis l'exercice 2007,
+  sans ligne pour le fonds), comptes généraux de l'administration des finances 2008 et 2009 et rapport du ministère sur
+  les finances publiques 2005, **à océriser** (`tunisia-data`, `minfinances/portail_ancien`) ; fiche
+  `r-bct-retenue-fpc-2002-2011` ; TODO dans la section ; (2) 811 MD de bénéfices 2008 de la CPG et du GCT gardés hors
+  budget selon la Cour : la Banque centrale ne confirme qu'au moins 605 et 211 MD reçus en 2009, et le ministère inscrit
+  au budget de 2009 59 MD de la CPG et 225 MD du GCT ; rapport de clôture de la gestion 2010 **à obtenir** (absent du
+  catalogue de la Cour) ;
+  (3) dans les rapports de clôture 2005-2009 : principal et intérêts de la dette garantie, remboursements de prêts,
+  recettes de privatisation, fonds spéciaux — lisibles (couche texte des rapports 2005, 2006 et 2009 propre ;
+  rapport 2007 à lire à l'image, couche texte aux chiffres décalés) ; (4) gestions 2008 (sauf la recette des
+  transferts, par le rapport 2009) et antérieures à 2003 : aucun rapport de clôture au catalogue de la Cour ;
+  (5) « revenus des participations » : écart de 2009 expliqué (803,8 MD dans le rapport 2009, révisé à 788,6 MD,
+  montant de la Cour, dans le rapport 2010) ; écart de 109,3 MD en 2011 (1 457,5 contre 1 566,8) non expliqué ;
+  rapports 1986, 1987 et 1989 à 1994 de la Banque centrale : couche texte chiffrée, tableau des recettes non
+  fiscales à localiser à l'image (pages du chapitre des finances publiques, OCR ou lecture directe) ; rapport 1998,
+  p. 184 : « la Banque Centrale de Tunisie dont le bénéfice est revenu de 104 MDT en 1997 à 60 MDT en 1998 »
+  (bénéfice ou versement ? non versé) ; rapport 2007 : ligne « excédent + recouvrement prêts », non versée ;
+  (6) part de l'État dans le résultat de la Banque centrale avant 1999 : les rapports antérieurs à 2001 n'impriment
+  pas les états financiers de la Banque ; versements au budget seulement (1983-1985, 1987-1988, 1999-2004, dans
+  `bct-ra-revenus-participations`) ; rapports 1959-1984 à lire pour la même ligne. PIB du ministère des Finances
+  (2003-2004 sans base, 2005-2009 base 1997) puis INS base 2015, ruptures marquées sur la figure ; 1983-1985 : PIB
+  de la Banque mondiale (bases accolées).
 - **Avant 1987, et avant 2016 pour les transferts par entreprise et l'encours de la dette garantie** : rien
   (fiche `r-ep-series-budgetaires-avant-2016`, passe du 24 octobre 2026, résultat partiel). Pistes non
   ouvertes : lois de règlement du Journal officiel, Cour des comptes (dette publique extérieure, 2018), plans
   de développement ; rapports annuels de la Banque centrale ouverts le 27 octobre 2026 pour sa seule part de
   l'État (2002-2010) et, pour les transferts, 2010-2016 avec le rapport « Finances publiques » du ministère pour
   2010 : classement par nature et par ministère, aucun total par bénéficiaire (fiche, passe du 27 octobre 2026).
+  Passe du 27 octobre 2026 (soir) sur les rapports annuels 1985-2015 de la Banque centrale : une seule expression
+  régulière sur les couches texte (celles de 1985-2000 déchiffrées par décalage de caractères), « subvention,
+  transfert, dotation, intervention » près de « entreprises publiques, établissements publics, offices » et d'un
+  montant : aucun résultat ; les tableaux à l'image n'ont pas été feuilletés. Piste non lue : ligne « Subventions aux
+  établissements publics » avec montants dans les rapports 1976 à 1978 (périmètre à établir : établissements
+  administratifs ou entreprises publiques) ; côté recettes, revenus des participations 1983-1985 et 1987-1988 versés
+  (`#sec-ep-versements-bct`). Rapports 1986, 1987, 1989-1994 : couche texte illisible, à lire à l'image.
   Le plafond des garanties est lu de 1958-59 à 2015
   (voir le point « Plafond légal » plus bas). Recettes de cession : 1987-2009 (Direction générale de la
   privatisation) et 2010-2016 (clôture) ; rien depuis 2017.
@@ -3646,13 +3687,30 @@ Ce qui reste :
   l'écart de 191 à 307 MD par an entre le poste « produits de base » et l'Office des céréales et
   l'Office de l'huile ; la nature des transferts à l'Office de l'huile (subvention ou financement des
   achats d'huile d'olive).
-- **Fiches par entreprise non relues, donc non publiées** : dette, effectifs, charges de
-  personnel, subvention d'exploitation, total des passifs (STEG, STIR, Tunisair, Transtu,
-  SNCFT, SONEDE, ETAP, Groupe chimique, CPG, Office des céréales, RNTA, Office du commerce).
-  Éditions arabes : tableaux tournés d'un quart de tour, à rendre à 170 dpi et à relire à
-  l'image, puis à verser dans `tunisia-data`. De même les classements par charges de
-  personnel et par produits d'exploitation, et l'effectif total (non publié par le rapport :
-  INS, emploi par secteur institutionnel, non cherché).
+- **Fiches par entreprise : STEG, ETAP et SNCFT versées le 27 octobre 2026** (chapitre
+  `_grandes_entreprises.qmd`, sections `#sec-ep-steg`, `#sec-ep-etap`, `#sec-ep-sncft` ; séries
+  `entreprises-publiques-fiches-entreprises`, `steg-etats-financiers` et `etap-rapports-annuels`
+  de `tunisia-data`, branche `donnees/ep-fiches-entreprises`). Éditions LF 2022 (dette par
+  créancier, 2018-2020), LF 2024 et LF 2025 (bilan et résultat, 2020-2023), lues à l'image ;
+  comptes publiés de la STEG 2013-2023 ; rapports annuels de l'ETAP 2004-2024 (sans 2020 ; 2019
+  sans états financiers) ; textes fondateurs lus au corpus local (décret-loi n° 62-8, loi
+  n° 72-22, décret du 27 décembre 1956). **Reste** :
+  - les autres grandes entreprises (STIR, Tunisair, Transtu, Office des céréales, Office national de
+    l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du
+    commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
+    le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
+    `jort_cache.db` ;
+  - SNCFT : statuts de 1969 (loi n° 69-31, JORT n° 19 de 1969, p. 581-584, dans le corpus local,
+    non lus) ; comptes avant 2018 (rapports annuels de la société, à obtenir) ;
+  - STEG : bilan avant 2013 (rapports annuels 2006-2016 déjà rangés dans `tunisia-data`,
+    `data/raw/minenergie/steg/rapports-annuels/`) ; notes des états financiers de 2022 sur le
+    « complément de subvention à recevoir » (p. 27), non dépouillées ;
+  - ETAP : redevances et impôts versés à l'État (lignes « impôts et taxes » de chaque état),
+    non relevés ;
+  - éditions françaises LF 2020 et LF 2021 et édition LF 2023 : comptes dans la prose, non
+    versés ; classements par charges de personnel et par produits d'exploitation, non versés ;
+  - seuil de scission : trois entreprises de l'énergie (STEG, ETAP, STIR) ouvriraient un
+    chapitre « L'énergie » quand la STIR aura sa fiche (note de chantier, § 9).
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la
@@ -3810,9 +3868,37 @@ Ce qui reste :
 - **Forme du livre : tranchée le 27 octobre 2026 — volume de six parties.** Le chapitre unique
   `_relation_financiere.qmd` est scindé en neuf chapitres (`_statut`, `_transferts`, `_garanties`, `_recettes`,
   `_cessions`, `_grandes_entreprises`, `_emploi_comptes`, `_longue_periode`, `_etudes`), sans contenu nouveau ;
-  plan et décisions dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. Restent : éclater les sections
-  mixtes (1989, 1994-2001, clôture 2010-2024) entre chapitres, ouvrir « Restructurer » et la gouvernance quand
-  ils ont leur matière, définir les notions dans la présentation.
+  plan et décisions dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. Restent : ouvrir
+  « Restructurer » et la gouvernance quand ils ont leur matière.
+- **Les notions — fait le 27 octobre 2026** (branche `ep/eclatement`, après relecture) : pas de liste dans la
+  présentation ; chaque notion est liée au glossaire à sa première occurrence utile dans le chapitre qui la traite
+  (`_statut` : entreprise publique, établissement public non administratif, participation publique,
+  contrat-programme ; `_garanties` : garantie, prêts du Trésor, prêts rétrocédés ; `_cessions` : cession,
+  privatisation, liquidation à l'amiable). Cinq entrées neuves au glossaire, `provisoire`, sans définition arabe :
+  `prets-tresor` (قروض الخزينة, édition arabe de la loi organique du budget, couche texte), `prets-retrocedes`
+  (القروض المعاد إقراضها, rapports arabes de clôture 2021 et 2024), `liquidation-amiable` (التصفية الرضائية, lue à
+  l'image de l'édition arabe de la loi n° 99-38, JORT n° 37 de 1999, p. 848), `privatisation` (التخصيص, relevé
+  arabe de la Direction générale de la privatisation), `cession-participations-publiques` (التفويت في المساهمات
+  العمومية, assemblée à partir du même relevé). **Restent** : lire l'édition arabe de la loi n° 89-9 (JORT n° 9 de
+  1989, **OCR** : la couche texte du corpus est illisible) pour confirmer l'expression de la cession et la
+  traduction de « participation publique » ; définitions arabes des cinq entrées et de `garantie-etat` ; la
+  définition de `contrat-programme`, écrite pour les caisses, ne dit pas l'usage de la loi de 1985.
+- **Sections mixtes éclatées — fait le 27 octobre 2026** (branche `ep/eclatement`), sans fait nouveau. 1989 et
+  1994-2001 : le périmètre reste dans `_statut` (`#sec-ep-1989`, `#sec-ep-1994-2001`) ; la cession organisée et
+  l'action spécifique passent dans `_cessions` (`#sec-ep-1989-cession`, `#sec-ep-1994-cession`), avec les lignes de
+  registre `r-ep-1989` et `r-ep-1994` recopiées. Clôture 2010-2024 : versements au budget dans `_recettes`
+  (`#sec-ep-versements-cloture`, `tbl-ep-cdc-recettes`) ; principal garanti remboursé, prêts remboursés et encours
+  selon la Cour dans `_garanties` (`#sec-ep-garanties-cloture`, `tbl-ep-cdc-garantie`, `tbl-ep-cdc-autres` réduit
+  aux prêts) ; recettes de privatisation dans `_cessions` (puce de `#sec-ep-lp-cessions`, `tbl-ep-cdc-privatisation`)
+  ; `_longue_periode` ne garde que `fig-ep-cdc`, ce que les flux montrent de la relation financière, et la
+  description des rapports en note de méthode repliée (`tbl-ep-cdc-flux`). Après relecture, les séries des
+  sections de clôture passent de la prose aux figures et aux tableaux repliés : figure neuve `fig-ep-cdc-garanties`
+  (principal garanti remboursé, prêts remboursés, encours selon la Cour), `fig-ep-versements` et `fig-ep-cessions`
+  pour les deux autres. **Restent** :
+  pages des rapports de clôture du tableau des prêts (`tbl-ep-cdc-autres`), dont la liste couvre encore aussi les
+  pages de la privatisation ; « depuis la gestion 2017 » (introduction de `#sec-ep-lp-cloture`) et « depuis le
+  rapport sur la gestion 2018 » (encours) à accorder ; « en trois années » de `#sec-ep-lp-cessions` alors que 2014
+  porte 4,3 MD.
 - *(historique)* **Forme du livre : volume ou chapitre — décision laissée à la revue.** Éléments : (a) le livre n'a qu'un chapitre
   (`_relation_financiere.qmd`, environ 1 200 lignes) et une annexe ; (b) ses figures, ses séries et son plan
   (mise en place, réformes, état du droit, longue période) sont ceux d'un chapitre de partie V ; (c) le volume

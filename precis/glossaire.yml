@@ -12222,6 +12222,118 @@ entries:
       definition: ""
       synonymes: [المساهمات العمومية]
 
+  # ── Entreprises publiques : notions de la présentation (27 octobre 2026) ─────
+  # Formes arabes lues : « قروض الخزينة » dans la couche texte de l'édition arabe de la loi
+  # organique du budget de 2019 ; « القروض (الخارجية) المعاد إقراضها » dans les rapports arabes
+  # de la Cour des comptes sur la clôture du budget (gestions 2021 et 2024) ; « التصفية الرضائية »
+  # à l'image de l'édition arabe de la loi n° 99-38 (JORT n° 37 du 7 mai 1999, p. 848, titre VI) ;
+  # « التخصيص » (« عمليات التخصيص », « الإدارة العامة للتخصيص ») et « طريقة التفويت » dans le relevé
+  # arabe de la Direction générale de la privatisation. « التفويت في المساهمات العمومية » assemble
+  # ces deux dernières formes : expression à confirmer dans l'édition arabe de la loi n° 89-9.
+  # Définitions arabes à écrire par le terminologue.
+  - id: prets-tresor
+    acronyme: null
+    statut: provisoire
+    references: [loi-org-2019-15-lob]
+    source_definition: {ref: loi-org-2019-15-lob, locator: "art. 45"}
+    source_traduction: {ref: loi-org-2019-15-lob, locator: "art. 45, édition arabe"}
+    voir_aussi: [garantie-etat, prets-retrocedes, entreprises-publiques]
+    fr:
+      terme: Prêts du Trésor
+      definition: >
+        Prêts que l'État accorde aux établissements et entreprises publics. Comme
+        pour la garantie de l'État, la loi de finances en fixe chaque année le
+        montant maximal (loi organique du budget n° 2019-15, article 45).
+      synonymes: [Prêt du Trésor]
+    ar:
+      terme: قروض الخزينة
+      definition: ""
+      synonymes: []
+
+  - id: prets-retrocedes
+    acronyme: null
+    statut: provisoire
+    references: [cdc-cloture-2024, cdc-cloture-2021]
+    source_definition: {ref: cdc-cloture-2024, locator: "p. 50 et 52"}
+    source_traduction: {ref: cdc-cloture-2024, locator: "p. 52"}
+    voir_aussi: [prets-tresor, garantie-etat, entreprises-publiques]
+    fr:
+      terme: Prêts rétrocédés
+      definition: >
+        Prêts extérieurs que l'État reprête à une entreprise ou à un
+        établissement public, qui les lui rembourse. Les rapports de la Cour
+        des comptes sur la clôture du budget en donnent les remboursements, et
+        les classent depuis la gestion 2020 parmi les ressources d'emprunt.
+      synonymes: [Prêts extérieurs rétrocédés, Prêt rétrocédé]
+    ar:
+      terme: القروض المعاد إقراضها
+      definition: ""
+      synonymes: [القروض الخارجية المعاد إقراضها]
+
+  - id: cession-participations-publiques
+    acronyme: null
+    statut: provisoire
+    references: [loi87-47, loi89-9, loi94-102]
+    source_definition: {ref: loi89-9, locator: "art. 23"}
+    source_traduction: {ref: dgpv-recettes-annuelles-1987-2009}
+    voir_aussi: [participation-publique, privatisation, liquidation-amiable]
+    fr:
+      terme: Cession des participations publiques
+      definition: >
+        Vente par l'État de tout ou partie de ses participations directes ou
+        indirectes dans une société. Autorisée de façon générale en 1987 (loi
+        n° 87-47), organisée en 1989 (loi n° 89-9) : décision du Premier
+        ministre après avis d'une commission ; la loi n° 94-102 y ajoute
+        l'action spécifique et la vente de blocs d'actions par appel d'offres.
+      synonymes: [Cession]
+    ar:
+      terme: التفويت في المساهمات العمومية
+      definition: ""
+      synonymes: [التفويت]
+
+  - id: privatisation
+    acronyme: null
+    statut: provisoire
+    references: [dgpv-bilan-global, dgpv-recettes-annuelles-1987-2009]
+    source_definition: {ref: dgpv-bilan-global}
+    source_traduction: {ref: dgpv-recettes-annuelles-1987-2009}
+    voir_aussi: [cession-participations-publiques, liquidation-amiable, participation-publique]
+    fr:
+      terme: Privatisation
+      definition: >
+        Nom que la Direction générale de la privatisation donne à ses opérations
+        sur les entreprises à participations publiques : privatisation totale ou
+        partielle, ouverture du capital en bourse, concession, liquidation. Le
+        budget de l'État inscrit des « recettes de privatisation » sur une ligne
+        propre.
+      synonymes: []
+    ar:
+      terme: التخصيص
+      definition: ""
+      synonymes: []
+
+  - id: liquidation-amiable
+    acronyme: null
+    statut: provisoire
+    references: [loi99-38]
+    source_definition: {ref: loi99-38, locator: "art. 1er (art. 34 à 41 de la loi n° 89-9)"}
+    source_traduction: {ref: loi99-38, locator: "édition arabe, p. 848"}
+    voir_aussi: [cession-participations-publiques, privatisation, entreprises-publiques]
+    fr:
+      terme: Liquidation à l'amiable
+      definition: >
+        Liquidation d'une entreprise ou d'un établissement public, décidée après
+        avis de la commission d'assainissement et de restructuration des
+        entreprises à participations publiques, sous un régime propre ajouté en
+        1999 à la loi n° 89-9 : les dettes nées de la liquidation passent avant
+        les créances antérieures, et les poursuites sont suspendues trois ans au
+        plus.
+      synonymes: []
+    ar:
+      terme: التصفية الرضائية
+      definition: ""
+      synonymes: []
+
   # ── Éducation (passe 1 du terminologue, 17 octobre 2026) ─────────────────────
   # Notions des notes docs/notes/education-*-2026-10-17.md. Passe 2 (même jour) :
   # `valide` les notions ancrées dont l'arabe est lu au JORT, avec définition arabe ;

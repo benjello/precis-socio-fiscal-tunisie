@@ -1,0 +1,35 @@
+---
+title: "Comment ce précis est constitué"
+subtitle: "Les sources, l'entrepôt de données, le recours à l'intelligence artificielle"
+format:
+  html:
+    include-in-header: ../accueil.html
+---
+
+[← Retour à l'accueil](index.html)
+
+## Un travail fait avec l'intelligence artificielle
+
+Le précis est écrit avec un recours massif à l'intelligence artificielle : elle sert à retrouver les textes au *Journal officiel*, à rassembler les données, et à rédiger. L'auteur oriente ce travail, le relit et le valide ; il en répond. Chaque affirmation renvoie au texte qui la fonde, pour que le lecteur puisse la vérifier lui-même. C'est un texte en évolution, corrigé et complété en continu : il n'a pas l'autorité d'une publication officielle.
+
+Le travail est divisé en rôles, chacun confié à un agent d'intelligence artificielle dont la consigne est publique : le documentaliste rassemble les textes et les sources ; le bibliographe verse les références ; le terminologue tient le glossaire bilingue ; l'architecte arrête le plan d'un chapitre ; le rédacteur l'écrit ; l'économiste établit l'état des connaissances ; le relecteur de l'arabe contrôle la version arabe. La chaîne s'arrête chaque fois pour une relecture humaine avant publication. Les consignes de chaque rôle sont dans le [dossier des agents](https://github.com/benjello/precis-socio-fiscal-tunisie/tree/master/docs/agents) du dépôt du précis.
+
+## Les sources
+
+Les textes de loi sont lus au *Journal officiel de la République tunisienne*, dans l'édition de la langue du texte qui les cite, et chacun est renvoyé à sa publication sur `pist.tn`. Les chiffres viennent de publications officielles, citées avec leur page : rapports du ministère des Finances annexés aux lois de finances, rapports de la Cour des comptes, rapports annuels de la Banque centrale, annuaires et enquêtes de l'Institut national de la statistique, rapports des caisses de sécurité sociale. Les études extérieures sont tenues à part des chiffres budgétaires et citées avec leur méthode.
+
+## L'entrepôt de données
+
+Les séries chiffrées du précis ne sont pas saisies dans les chapitres : elles viennent d'un entrepôt de données, tenu à part, que les chapitres lisent. Il compte aujourd'hui plus de deux cents séries. Pour chacune, il garde :
+
+- la **source brute**, telle qu'elle a été publiée (rapport en PDF, classeur, page web archivée) ;
+- sa **transcription figée**, quand la source est un document imprimé ou scanné, avec la page d'où vient chaque valeur ;
+- le **programme** qui construit la série à partir de la transcription ;
+- une **fiche** qui dit ce que la série mesure : unité, périmètre, ruptures de nomenclature, écarts non expliqués ;
+- des **tests** qui contrôlent les totaux, les identités comptables et la concordance entre éditions.
+
+Il rassemble des publications de l'Institut national de la statistique (comptes nationaux, emploi, salaires et effectifs de la fonction publique), de la Banque centrale, du ministère des Finances, de la Cour des comptes, des caisses de sécurité sociale, de la Banque mondiale, de l'Organisation internationale du Travail, de l'Organisation mondiale de la santé et des Nations unies, sur des sujets aussi divers que les droits de douane, les finances locales, l'emploi, la justice, la défense, l'énergie, l'habitat, les entreprises publiques. Une série n'est jamais prolongée par une autre source sans que la rupture soit dite.
+
+## Les tableaux de paramètres
+
+Les tableaux de paramètres du précis sont engendrés depuis la base de données législative d'[OpenFisca-Tunisia](https://github.com/openfisca/openfisca-tunisia), le modèle de microsimulation du système socio-fiscal tunisien : chaque valeur y est datée et rattachée au texte qui la fonde. Les sources du précis et les programmes qui le produisent sont publics, sur [la page du projet](https://github.com/benjello/precis-socio-fiscal-tunisie).

@@ -8,6 +8,7 @@
     ep.figure("resultats", …)                            # résultats agrégés, par édition
     ep.figure("cessions", …)                             # recettes de cession, 1987-2009
     ep.figure("versements", …)                           # versements au budget, 2003-2024
+    ep.figure("bct_ra", …)                               # revenus des participations, 1983-2016
     ep.tableau_transferts(caption=…) …                   # tableaux, tous lus dans les séries
 
 D'OÙ VIENNENT LES DONNÉES. Douze séries de `tunisia-data`, lues par `figtools.series()`
@@ -1876,6 +1877,45 @@ def _garantie_cdc():
     return p
 
 
+def _panneau_garantie_cdc(ax, mesure: str) -> None:
+    """Principal et intérêts de la dette garantie payés par l'État, par gestion."""
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
+    g = _garantie_cdc()
+    for a in g.index:
+        vp = _part(g.at[a, "total"], a, mesure)
+        vi = _part(g.at[a, "interets"], a, mesure)
+        if vp is not None:
+            b = ax.bar(a, vp, color=BLEU, width=0.72)
+            figtools.infobulle(b[0], f"{a} — principal : {_n(vp, dec)} {unite}")
+        if vi is not None and vp is not None:
+            b = ax.bar(a, vi, bottom=vp, color=ORANGE, width=0.72)
+            figtools.infobulle(b[0], f"{a} — intérêts : {_n(vi, dec)} {unite}")
+    ax.legend(handles=[Patch(color=BLEU, label="principal"), Patch(color=ORANGE, label="intérêts")],
+              fontsize=7, frameon=False, loc="upper right")
+    ax.set_title("Ce que l'État rembourse au titre de dettes garanties,\nprincipal et intérêts",
+                 fontsize=8.5, loc="left")
+
+
+def _panneau_prets_cdc(ax, mesure: str) -> None:
+    """Remboursements de prêts reçus : total imprimé, puis prêts rétrocédés et prêts du titre II."""
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
+    p = _prets_cdc()
+    x, y = _xy(p.index, p["total"], mesure)
+    ax.plot(x, y, color=VERT, marker="o", lw=2, ms=4.5, label="total imprimé (jusqu'en 2019)")
+    for cle, nom, coul, marque in (("retroces_exterieurs", "prêts extérieurs rétrocédés", BLEU, "s"),
+                                   ("titre2", "prêts du titre II", ORANGE, "^")):
+        if cle in p.columns:
+            xs, ys = _xy(p.index, p[cle], mesure)
+            pts = ax.plot(xs, ys, color=coul, marker=marque, ls="", ms=4.5, mfc="white", label=nom)
+            for a, v in zip(xs, ys):
+                figtools.infobulle(pts[0], f"{a} — {nom} : {_n(v, dec)} {unite}")
+    ax.legend(fontsize=6, frameon=False, loc="upper left")
+    ax.set_title("Ce que l'État reçoit en remboursement de prêts :\ntotal, puis lignes",
+                 fontsize=8.5, loc="left")
+
+
 def _fig_cdc(mesure: str):
     figtools.apply_lang_font()
     fig, axes = plt.subplots(2, 2, figsize=(9.6, 6.8))
@@ -1903,36 +1943,9 @@ def _fig_cdc(mesure: str):
     ax.set_title("Ce que les entreprises et la Banque centrale versent au budget,\npar ligne",
                  fontsize=8.5, loc="left")
     # 2. Dette garantie remboursée par l'État : principal et intérêts
-    ax = axes[0][1]
-    g = _garantie_cdc()
-    for a in g.index:
-        vp = _part(g.at[a, "total"], a, mesure)
-        vi = _part(g.at[a, "interets"], a, mesure)
-        if vp is not None:
-            b = ax.bar(a, vp, color=BLEU, width=0.72)
-            figtools.infobulle(b[0], f"{a} — principal : {_n(vp, dec)} {unite}")
-        if vi is not None and vp is not None:
-            b = ax.bar(a, vi, bottom=vp, color=ORANGE, width=0.72)
-            figtools.infobulle(b[0], f"{a} — intérêts : {_n(vi, dec)} {unite}")
-    ax.legend(handles=[Patch(color=BLEU, label="principal"), Patch(color=ORANGE, label="intérêts")],
-              fontsize=7, frameon=False, loc="upper right")
-    ax.set_title("Ce que l'État rembourse au titre de dettes garanties,\nprincipal et intérêts",
-                 fontsize=8.5, loc="left")
+    _panneau_garantie_cdc(axes[0][1], mesure)
     # 3. Remboursements de prêts reçus
-    ax = axes[1][0]
-    p = _prets_cdc()
-    x, y = _xy(p.index, p["total"], mesure)
-    ax.plot(x, y, color=VERT, marker="o", lw=2, ms=4.5, label="total imprimé (jusqu'en 2019)")
-    for cle, nom, coul, marque in (("retroces_exterieurs", "prêts extérieurs rétrocédés", BLEU, "s"),
-                                   ("titre2", "prêts du titre II", ORANGE, "^")):
-        if cle in p.columns:
-            xs, ys = _xy(p.index, p[cle], mesure)
-            pts = ax.plot(xs, ys, color=coul, marker=marque, ls="", ms=4.5, mfc="white", label=nom)
-            for a, v in zip(xs, ys):
-                figtools.infobulle(pts[0], f"{a} — {nom} : {_n(v, dec)} {unite}")
-    ax.legend(fontsize=6, frameon=False, loc="upper left")
-    ax.set_title("Ce que l'État reçoit en remboursement de prêts :\ntotal, puis lignes",
-                 fontsize=8.5, loc="left")
+    _panneau_prets_cdc(axes[1][0], mesure)
     # 4. Recettes de privatisation inscrites au budget
     ax = axes[1][1]
     v = _cdc("recettes_privatisation_budget").reindex(_gestions_cdc())["total"]
@@ -2010,6 +2023,89 @@ def table_cdc():
     return t
 
 
+def _panneau_encours_cdc(ax, mesure: str) -> None:
+    """Encours de la dette garantie en fin de gestion selon la Cour des comptes : extérieur et
+    intérieur empilés ; gestions sans encours imprimé laissées vides."""
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
+    c = _cdc_encours()
+    if c is None:
+        return
+    e = _cdc("dette_garantie_encours").reindex(_gestions_cdc())
+    for a in e.index:
+        bas = 0.0
+        for cle, nom, coul in (("exterieur", "extérieur", BLEU), ("interieur", "intérieur", ORANGE)):
+            v = _part(e.at[a, cle], a, mesure) if cle in e.columns else None
+            if v is None:
+                continue
+            b = ax.bar(a, v, bottom=bas, color=coul, width=0.72)
+            figtools.infobulle(b[0], f"{a} — encours {nom} : {_n(v, dec)} {unite}")
+            bas += v
+    vides = [a for a in e.index if not (e.loc[a, ["exterieur", "interieur"]] == e.loc[a, ["exterieur", "interieur"]]).any()]
+    avant = [a for a in vides if a < 2017]
+    if avant:
+        ax.axvspan(min(avant) - 0.5, max(avant) + 0.5, color="#eaeef2", zorder=0)
+        ax.annotate("encours non imprimé\npar la Cour", xy=((min(avant) + max(avant)) / 2, 0.5),
+                    xycoords=("data", "axes fraction"), ha="center", va="center", fontsize=6.5,
+                    color=GRIS)
+    ax.legend(handles=[Patch(color=BLEU, label="dette extérieure"),
+                       Patch(color=ORANGE, label="dette intérieure")],
+              fontsize=6.5, frameon=False, loc="upper left")
+    ax.set_title("Encours de la dette garantie en fin d'année,\nselon la Cour des comptes",
+                 fontsize=8.5, loc="left")
+
+
+def _fig_cdc_garanties(mesure: str):
+    figtools.apply_lang_font()
+    fig, axes = plt.subplots(1, 3, figsize=(10.4, 3.9))
+    _panneau_garantie_cdc(axes[0], mesure)
+    _panneau_prets_cdc(axes[1], mesure)
+    figtools.marque_rupture(axes[1], RUPTURE_CDC, "nomenclature\nde 2020")
+    _panneau_encours_cdc(axes[2], mesure)
+    gestions = _gestions_cdc()
+    for ax in axes:
+        _style(ax)
+        ax.set_xlim(gestions[0] - 0.6, gestions[-1] + 0.6)
+        ax.set_xticks(gestions[::2])
+        ax.tick_params(labelsize=7)
+        ax.set_ylim(bottom=0, top=ax.get_ylim()[1] * 1.15)
+        _axe(ax, mesure, milliards=False)
+        ax.yaxis.label.set_size(7.5)
+        if mesure == "pib":
+            _marque_pib(ax, gestions[0], gestions[-1], dedans=True)
+    fig.tight_layout()
+    return fig
+
+
+def fig_cdc_garanties():
+    return _trois_vues(_fig_cdc_garanties)
+
+
+def table_cdc_garanties():
+    g = _garantie_cdc()
+    p = _prets_cdc()
+    e = _cdc("dette_garantie_encours").reindex(_gestions_cdc())
+    for c in ("exterieur", "interieur"):
+        if c not in e.columns:
+            e[c] = float("nan")
+    t = pd.DataFrame({
+        "Année": _gestions_cdc(),
+        "Principal garanti remboursé (MD courants)": list(g["total"]),
+        "Intérêts de la dette garantie (MD courants)": list(g["interets"]),
+        "Remboursements de prêts reçus, total imprimé (MD courants)": list(p["total"]),
+        "Prêts extérieurs rétrocédés remboursés (MD courants)": list(p["retroces_exterieurs"]),
+        "Prêts du titre II remboursés (MD courants)": list(p["titre2"]),
+        "Encours garanti extérieur en fin d'année, selon la Cour (MD courants)": list(e["exterieur"]),
+        "Encours garanti intérieur en fin d'année, selon la Cour (MD courants)": list(e["interieur"])})
+    for col in list(t.columns[1:]):
+        nom = col.split(" (")[0]
+        t[f"{nom}, % du PIB"] = [_arrondi(_part(x, a, "pib")) for x, a in zip(t[col], t["Année"])]
+        t[f"{nom}, % des dépenses de l'État"] = [_arrondi(_part(x, a, "dep"))
+                                                  for x, a in zip(t[col], t["Année"])]
+    t["Base du PIB"] = [_base_courte(a) for a in t["Année"]]
+    return t
+
+
 def _cdc_ligne_pib(valeur, annee, mesure="pib"):
     x = _part(valeur, annee, mesure)
     return "" if x is None else _n(x, 2)
@@ -2055,7 +2151,12 @@ def tableau_cdc_garantie(caption: str, tbl_id: str = "tbl-ep-cdc-garantie") -> N
     _md(entete, "g" + "d" * (len(postes) + 3), lignes, caption, tbl_id)
 
 
-def tableau_cdc_autres(caption: str, tbl_id: str = "tbl-ep-cdc-autres") -> None:
+def tableau_cdc_autres(caption: str, tbl_id: str = "tbl-ep-cdc-autres",
+                       partie: str = "tout") -> None:
+    """Remboursements de prêts et recettes de privatisation des rapports de clôture.
+
+    `partie` : « prets » (trois colonnes de remboursements), « privatisation » (deux colonnes
+    de recettes de privatisation) ou « tout » (les cinq)."""
     p = _prets_cdc()
     v = _cdc("recettes_privatisation_budget").reindex(_gestions_cdc())
     cols = {k: (p[k] if k in p.columns else pd.Series(dtype=float)) for k in
@@ -2066,11 +2167,16 @@ def tableau_cdc_autres(caption: str, tbl_id: str = "tbl-ep-cdc-autres") -> None:
             x = s.get(a, float("nan")) if len(s) else float("nan")
             return _n(x, dec) if x == x else ""
         tt = v["tunisie_telecom"] if "tunisie_telecom" in v.columns else pd.Series(dtype=float)
-        lignes.append([str(a), c(cols["total"], 3), c(cols["retroces_exterieurs"], 3),
-                       c(cols["titre2"], 3), c(v["total"], 3), c(tt, 3)])
-    _md(["Gestion", "Remboursements de prêts,<br>total imprimé<br>(jusqu'en 2019)",
-         "prêts extérieurs<br>rétrocédés", "prêts du titre II", "Recettes de privatisation,<br>total",
-         "dont cession de 35 %<br>de Tunisie Télécom"], "gddddd", lignes, caption, tbl_id)
+        prets = [c(cols["total"], 3), c(cols["retroces_exterieurs"], 3), c(cols["titre2"], 3)]
+        priv = [c(v["total"], 3), c(tt, 3)]
+        lignes.append([str(a)] + (prets if partie != "privatisation" else [])
+                      + (priv if partie != "prets" else []))
+    entete_prets = ["Remboursements de prêts,<br>total imprimé<br>(jusqu'en 2019)",
+                    "prêts extérieurs<br>rétrocédés", "prêts du titre II"]
+    entete_priv = ["Recettes de privatisation,<br>total", "dont cession de 35 %<br>de Tunisie Télécom"]
+    entete = (["Gestion"] + (entete_prets if partie != "privatisation" else [])
+              + (entete_priv if partie != "prets" else []))
+    _md(entete, "g" + "d" * (len(entete) - 1), lignes, caption, tbl_id)
 
 
 # --- versements au budget depuis 2003 (Cour des comptes) et part de la Banque centrale -------------
@@ -2176,7 +2282,8 @@ def tableau_versements_anciens(caption: str, tbl_id: str = "tbl-ep-versements-an
 
 def tableau_bct_parts(caption: str, tbl_id: str = "tbl-ep-bct-parts") -> None:
     """Part de l'État dans le résultat de la Banque centrale, par exercice, à côté de la ligne que le
-    budget de l'année suivante inscrit (Cour des comptes)."""
+    budget de l'année suivante inscrit (Cour des comptes). Exercices 1999-2001 : seul le partage
+    entre le budget et le Fonds de péréquation des changes est imprimé."""
     b = _s(S_BCT_PART)
     r = _recettes_depuis_2003()
     lignes = []
@@ -2186,15 +2293,21 @@ def tableau_bct_parts(caption: str, tbl_id: str = "tbl-ep-bct-parts") -> None:
         def v(poste, dec=1):
             return _n(e.at[poste, "valeur_md"], dec) if poste in e.index else ""
 
+        def an(poste):
+            a = e.at[poste, "annee_versement"]
+            return "" if a != a or str(a) == "" else f"{int(a)} : "
+
         verse = []
         if "part_etat_versee" in e.index:
-            verse.append(f"{int(e.at['part_etat_versee', 'annee_versement'])} : "
-                         f"{_n(e.at['part_etat_versee', 'valeur_md'], 0)}")
+            verse.append(f"{an('part_etat_versee')}{_n(e.at['part_etat_versee', 'valeur_md'], 0)}")
         if "part_budget_etat" in e.index:
-            verse.append(f"{int(e.at['part_budget_etat', 'annee_versement'])} : "
+            verse.append(f"{an('part_budget_etat')}"
                          f"{_n(e.at['part_budget_etat', 'valeur_md'], 1)} au budget, "
                          f"{_n(e.at['fonds_perequation_changes', 'valeur_md'], 1)} au Fonds de "
                          "péréquation des changes")
+        if "reliquat_compte_ordre" in e.index:
+            verse.append(f"reliquat en compte d'ordre fin {int(e.at['reliquat_compte_ordre', 'annee_versement'])} : "
+                         f"{_n(e.at['reliquat_compte_ordre', 'valeur_md'], 1)}")
         suiv = ex + 1
         budget = (("—" if r.at[suiv, "profits_bct"] == 0 else _n(r.at[suiv, "profits_bct"], 2))
                   if suiv in r.index and r.at[suiv, "profits_bct"] == r.at[suiv, "profits_bct"] else "")
@@ -2204,6 +2317,152 @@ def tableau_bct_parts(caption: str, tbl_id: str = "tbl-ep-bct-parts") -> None:
          "Part revenant à l'État<br>(Banque centrale)", "Versement cité<br>(année : MD)",
          "Gestion suivante", "Part du budget dans les profits<br>de la Banque centrale, gestion suivante<br>(Cour des comptes)"],
         "gddggd", lignes, caption, tbl_id)
+
+
+# --- revenus des participations dans les rapports de la Banque centrale, 1983-2016 -----------------
+
+S_BCT_RA = "bct-ra-revenus-participations"
+# Deux périmètres, jamais raccordés : (première année, dernière année, libellé, couleur). Le
+# passage de « revenus des participations et des EPIC » (rapports 1995-2000) à « revenus des
+# participations » (rapports 2001-2016) ne change aucune valeur : 1999 et 2000 lus dans les rapports
+# 2000 et 2001 donnent 167,0 / 167,1 et 273,8 / 273,8.
+SEGMENTS_RA = [
+    (1983, 1988, "recettes des participations financières, revenus pétroliers compris", VIOLET),
+    (1993, 2016, "revenus des participations (et des EPIC, rapports 1995-2000), "
+                 "revenus pétroliers à part", BLEU),
+]
+
+
+def _lectures_ra(poste: str):
+    """Lectures d'un poste, une par (rapport, année). La valeur retenue pour une année est celle du
+    rapport le plus récent ; le rapport 1999, arrondi au million, ne l'emporte pas sur une
+    lecture au dixième."""
+    d = _s(S_BCT_RA)
+    d = d[d.poste == poste].copy()
+    autres = set(d[d.rapport != "ra-1999"].annee)
+    d = d[(d.rapport != "ra-1999") | ~d.annee.isin(autres)].sort_values(["annee", "annee_rapport"])
+    return d
+
+
+def _retenue_ra(poste: str):
+    d = _lectures_ra(poste)
+    return d.groupby("annee").last()
+
+
+def _segment_ra(annee: int) -> int:
+    for i, (a0, a1, _, _) in enumerate(SEGMENTS_RA):
+        if a0 <= annee <= a1:
+            return i
+    raise ValueError(f"revenus des participations : année {annee} hors des segments")
+
+
+def _fig_bct_ra(mesure: str):
+    figtools.apply_lang_font()
+    fig, ax = plt.subplots(figsize=(9.6, 4.6))
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
+    rev = _retenue_ra("revenus_participations")
+    ver = _retenue_ra("versement_bct")
+    for a0, a1, nom, coul in SEGMENTS_RA:
+        blocs, courant = [], []
+        for a in range(a0, a1 + 1):
+            v = _part(rev.at[a, "valeur_md"], a, mesure) if a in rev.index else None
+            if v is None:
+                if courant:
+                    blocs.append(courant)
+                courant = []
+                continue
+            courant.append((a, v))
+        if courant:
+            blocs.append(courant)
+        for bloc in blocs:
+            xs, ys = [a for a, _ in bloc], [v for _, v in bloc]
+            ax.plot(xs, ys, color=coul, lw=1.6)
+            for x, y in bloc:
+                pt = ax.plot([x], [y], "o", color=coul, ms=3.5)[0]
+                figtools.infobulle(pt, f"{x} — {nom} : {_n(y, dec)} {unite}")
+    for a in ver.index:
+        v = _part(ver.at[a, "valeur_md"], a, mesure)
+        if v is None:
+            continue
+        b = ax.bar(a, v, color=GRIS, alpha=0.45, width=0.7)
+        figtools.infobulle(b[0], f"{a} — versement de la Banque centrale au budget : {_n(v, dec)} {unite}")
+    for a0, _, _, _ in SEGMENTS_RA[1:]:
+        figtools.marque_rupture(ax, a0 - 0.5)
+    poignees = [Line2D([0], [0], color=c, lw=1.6, marker="o", ms=3.5, label=n)
+                for _, _, n, c in SEGMENTS_RA]
+    poignees.append(Patch(color=GRIS, alpha=0.45, label="dont versement de la Banque centrale"))
+    ax.legend(handles=poignees, fontsize=6.5, frameon=False, loc="upper left")
+    _style(ax)
+    ax.set_xlim(1982.4, 2016.6)
+    ax.set_ylim(0, None)
+    ax.set_ylim(0, ax.get_ylim()[1] * 1.3)
+    _axe(ax, mesure, milliards=False)
+    if mesure == "pib":
+        # 1983-1985 : PIB de la Banque mondiale, bases accolées ; libellé court, pour ne pas
+        # chevaucher le segment suivant.
+        _marque_pib(ax, 1986, 2016)
+        figtools.marque_rupture(ax, 1986)
+        ax.annotate("Banque mondiale,\nbases accolées", xy=(1984, 1), xycoords=("data", "axes fraction"),
+                    xytext=(0, 5), textcoords="offset points", ha="center", va="bottom",
+                    fontsize=6.5, color=GRIS, annotation_clip=False)
+    fig.tight_layout()
+    return fig
+
+
+def fig_bct_ra():
+    return _trois_vues(_fig_bct_ra)
+
+
+def table_bct_ra():
+    rev = _retenue_ra("revenus_participations")
+    ver = _retenue_ra("versement_bct")
+    annees = sorted(set(rev.index) | set(ver.index))
+    t = pd.DataFrame({"Année budgétaire": annees})
+    t["Libellé du rapport"] = [rev.at[a, "libelle_imprime"] if a in rev.index else "" for a in annees]
+    t["Nomenclature"] = [SEGMENTS_RA[_segment_ra(a)][2] for a in annees]
+    t["Revenus des participations (MD courants)"] = [
+        rev.at[a, "valeur_md"] if a in rev.index else None for a in annees]
+    t["Rapport retenu"] = [rev.at[a, "rapport"].replace("ra-", "BCT ") if a in rev.index else ""
+                           for a in annees]
+    t["Versement de la Banque centrale (MD courants)"] = [
+        ver.at[a, "valeur_md"] if a in ver.index else None for a in annees]
+    t = _ajoute_parts(t, "Année budgétaire", "Revenus des participations (MD courants)",
+                      "revenus des participations")
+    t["Base du PIB"] = [_base_courte(a) for a in annees]
+    return t
+
+
+def tableau_bct_ra(caption: str, tbl_id: str = "tbl-ep-bct-ra") -> None:
+    """Toutes les lectures, année par année : valeur retenue, autres lectures, versement de la
+    Banque centrale, et pour 2003-2016 le total de la Cour moins les autres profits du Trésor."""
+    lec = _lectures_ra("revenus_participations")
+    tout = _s(S_BCT_RA)
+    rev = tout[tout.poste == "revenus_participations"]
+    ver = tout[tout.poste == "versement_bct"]
+    r = _recettes_depuis_2003()
+    lignes = []
+    for a in sorted(set(rev.annee) | set(ver.annee)):
+        g = rev[rev.annee == a].sort_values("annee_rapport")
+        ret = lec[lec.annee == a].sort_values("annee_rapport")
+        val = ret.iloc[-1] if len(ret) else None
+        autres = [f"{_n(x.valeur_md, 1 if x.rapport != 'ra-1999' else 0)} ({x.annee_rapport})"
+                  for x in g.itertuples() if val is None or x.rapport != val.rapport]
+        gv = ver[ver.annee == a].sort_values("annee_rapport")
+        vers = " ; ".join(f"{_n(x.valeur_md, 1 if x.valeur_md % 1 else 0)} ({x.annee_rapport})"
+                          for x in gv.itertuples())
+        cour = ""
+        if a in r.index and a <= 2016:
+            t = r.at[a, "total"] - r.at[a, "autres_profits_tresor"]
+            cour = _n(t, 1)
+        lignes.append([str(a),
+                       val.libelle_imprime.replace("*", "\\*").replace("&", " & ") if val is not None else "",
+                       f"**{_n(val.valeur_md, 1)}** ({val.annee_rapport})" if val is not None else "",
+                       ", ".join(autres), vers, cour])
+    _md(["Année", "Libellé imprimé", "Valeur retenue<br>(rapport)", "Autres lectures<br>(rapport)",
+         "Versement de la<br>Banque centrale (rapport)",
+         "Cour des comptes : total<br>moins autres profits du Trésor"],
+        "gggggd", lignes, caption, tbl_id)
 
 
 # --- point d'entrée ------------------------------------------------------------------------------------
@@ -2224,8 +2483,11 @@ FIGURES = {
                   "fig_ep_resultats"),
     "cessions": (fig_cessions, table_cessions, (S_CESSIONS, S_CDC, DENOMINATEURS), "fig_ep_cessions"),
     "cdc": (fig_cdc, table_cdc, (S_CDC, DENOMINATEURS), "fig_ep_cdc"),
+    "cdc_garanties": (fig_cdc_garanties, table_cdc_garanties, (S_CDC, DENOMINATEURS),
+                      "fig_ep_cdc_garanties"),
     "versements": (fig_versements, table_versements, (S_CDC_0309, S_CDC, DENOMINATEURS),
                    "fig_ep_versements"),
+    "bct_ra": (fig_bct_ra, table_bct_ra, (S_BCT_RA, DENOMINATEURS), "fig_ep_bct_ra"),
     "croisees": (fig_croisees, table_croisees, (S_CROISEES, DENOMINATEURS), "fig_ep_croisees"),
     "masse": (fig_masse, table_masse, (S_EFFECTIFS, S_AGREGATS, DENOMINATEURS), "fig_ep_masse"),
     "effectifs": (fig_effectifs, table_effectifs_ep, (S_EFFECTIFS_EP,), "fig_ep_effectifs"),
