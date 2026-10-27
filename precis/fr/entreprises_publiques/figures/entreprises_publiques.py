@@ -7,6 +7,7 @@
     ep.figure("flux", …)                                 # versements et transferts, échantillon
     ep.figure("resultats", …)                            # résultats agrégés, par édition
     ep.figure("cessions", …)                             # recettes de cession, 1987-2009
+    ep.figure("versements", …)                           # versements au budget, 2003-2024
     ep.tableau_transferts(caption=…) …                   # tableaux, tous lus dans les séries
 
 D'OÙ VIENNENT LES DONNÉES. Onze séries de `tunisia-data`, lues par `figtools.series()`
@@ -2021,6 +2022,139 @@ def tableau_cdc_autres(caption: str, tbl_id: str = "tbl-ep-cdc-autres") -> None:
          "dont cession de 35 %<br>de Tunisie Télécom"], "gddddd", lignes, caption, tbl_id)
 
 
+# --- versements au budget depuis 2003 (Cour des comptes) et part de la Banque centrale -------------
+
+S_CDC_0309 = "cdc-cloture-entreprises-publiques-2003-2009"
+S_BCT_PART = "bct-part-etat-benefices"
+
+
+def _recettes_depuis_2003():
+    """Versements au budget par ligne et par gestion, de 2003 à la dernière gestion : gestions
+    2003-2009 lues dans les rapports de clôture 2005 à 2009, gestions suivantes dans les rapports
+    2011 et suivants (`_recettes_cdc`). Même recette, même tableau, mêmes lignes jusqu'à 2019 ; les
+    deux séries ne se recouvrent pas (contrôlé ici)."""
+    d = _s(S_CDC_0309).drop_duplicates(["poste", "gestion"])
+    a = d.pivot(index="gestion", columns="poste", values="valeur_md")
+    for c in ("excedents_ep_non_petrolieres", "excedents_ep_petrolieres", "autres_profits_tresor",
+              "total"):
+        if c not in a.columns:
+            a[c] = float("nan")
+    a["excedents_ep"] = a["excedents_ep_non_petrolieres"].fillna(0) + a["excedents_ep_petrolieres"].fillna(0)
+    a["somme_lignes"] = a[[k for k, _, _ in LIGNES_RECETTES_CDC]].sum(axis=1, min_count=1)
+    b = _recettes_cdc()
+    if set(a.index) & set(b.index):
+        raise ValueError("versements : les deux séries de clôture se recouvrent")
+    cols = [k for k, _, _ in LIGNES_RECETTES_CDC] + ["total", "somme_lignes"]
+    return pd.concat([a[cols], b[cols]]).sort_index()
+
+
+def _hauteur(r, a):
+    """Total imprimé, à défaut somme des lignes imprimées (gestions 2020 et suivantes)."""
+    t = r.at[a, "total"]
+    return t if t == t else r.at[a, "somme_lignes"]
+
+
+def _fig_versements(mesure: str):
+    figtools.apply_lang_font()
+    fig, ax = plt.subplots(figsize=(9.6, 4.6))
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
+    r = _recettes_depuis_2003()
+    gestions = list(r.index)
+    bas = {a: 0.0 for a in gestions}
+    for cle, nom, coul in LIGNES_RECETTES_CDC:
+        for a in gestions:
+            v = _part(r.at[a, cle], a, mesure)
+            if v is None or v == 0:
+                continue
+            b = ax.bar(a, v, bottom=bas[a], color=coul, width=0.72, edgecolor="white", lw=0.5)
+            figtools.infobulle(b[0], f"{a} — {nom} : {_n(v, dec)} {unite}")
+            bas[a] += v
+    ax.legend(handles=[Patch(color=c, label=n) for _, n, c in LIGNES_RECETTES_CDC], fontsize=6.5,
+              frameon=False, loc="upper left", ncol=2)
+    ax.set_ylim(0, max(bas.values()) * 1.35)
+    ax.axvline(RUPTURE_CDC - 0.5, color=GRIS, lw=0.8, ls=":")
+    ax.annotate("depuis 2020 :\nsomme des lignes\nimprimées, sans total", xy=(RUPTURE_CDC - 0.4, 0.80),
+                xycoords=("data", "axes fraction"), fontsize=6, color=GRIS, va="top")
+    _style(ax)
+    ax.set_xlim(gestions[0] - 0.6, gestions[-1] + 0.6)
+    ax.set_xticks(gestions)
+    ax.tick_params(axis="x", labelsize=7, rotation=90)
+    _axe(ax, mesure, milliards=False)
+    if mesure == "pib":
+        _marque_pib(ax, gestions[0], gestions[-1])
+    fig.tight_layout()
+    return fig
+
+
+def fig_versements():
+    return _trois_vues(_fig_versements)
+
+
+def table_versements():
+    r = _recettes_depuis_2003()
+    t = pd.DataFrame({"Gestion": list(r.index)})
+    for cle, nom, _ in LIGNES_RECETTES_CDC:
+        t[f"{nom} (MD courants)"] = [_arrondi(x, 6) if x == x else None for x in r[cle]]
+    t["Total imprimé (MD courants)"] = [x if x == x else None for x in r["total"]]
+    t["Somme des lignes imprimées (MD courants)"] = list(r["somme_lignes"])
+    haut = [_hauteur(r, a) for a in r.index]
+    t["% des dépenses de l'État hors service de la dette"] = [
+        _arrondi(_part(x, a, "dep")) for x, a in zip(haut, r.index)]
+    t["% du PIB"] = [_arrondi(_part(x, a, "pib")) for x, a in zip(haut, r.index)]
+    t["Base du PIB"] = [_base_courte(a) for a in r.index]
+    t["Rapports de la Cour des comptes"] = ["gestions 2005 à 2009" if a < 2010 else "gestions 2011 à 2024"
+                                            for a in r.index]
+    return t
+
+
+def tableau_versements_anciens(caption: str, tbl_id: str = "tbl-ep-versements-anciens") -> None:
+    """Gestions 2003-2009, ligne par ligne, total imprimé, part du PIB et base."""
+    r = _recettes_depuis_2003()
+    lignes = []
+    for a in [g for g in r.index if g < 2010]:
+        c = [("—" if r.at[a, k] == 0 else _n(r.at[a, k], 1)) if r.at[a, k] == r.at[a, k] else ""
+             for k, _, _ in LIGNES_RECETTES_CDC]
+        tot = r.at[a, "total"]
+        lignes.append([str(a)] + c + [f"**{_n(tot, 1)}**", _cdc_ligne_pib(tot, a),
+                                      _cdc_ligne_pib(tot, a, "dep"), _base_courte(a)])
+    _md(["Gestion"] + [n.replace(" du budget dans les", " dans les") for _, n, _ in LIGNES_RECETTES_CDC]
+        + ["Total imprimé", "Total,<br>% du PIB", "Total, % des<br>dépenses de l'État", "Base du PIB"],
+        "g" + "d" * 8 + "g", lignes, caption, tbl_id)
+
+
+def tableau_bct_parts(caption: str, tbl_id: str = "tbl-ep-bct-parts") -> None:
+    """Part de l'État dans le résultat de la Banque centrale, par exercice, à côté de la ligne que le
+    budget de l'année suivante inscrit (Cour des comptes)."""
+    b = _s(S_BCT_PART)
+    r = _recettes_depuis_2003()
+    lignes = []
+    for ex in sorted(set(b["exercice"].astype(int))):
+        e = b[b["exercice"] == ex].set_index("poste")
+
+        def v(poste, dec=1):
+            return _n(e.at[poste, "valeur_md"], dec) if poste in e.index else ""
+
+        verse = []
+        if "part_etat_versee" in e.index:
+            verse.append(f"{int(e.at['part_etat_versee', 'annee_versement'])} : "
+                         f"{_n(e.at['part_etat_versee', 'valeur_md'], 0)}")
+        if "part_budget_etat" in e.index:
+            verse.append(f"{int(e.at['part_budget_etat', 'annee_versement'])} : "
+                         f"{_n(e.at['part_budget_etat', 'valeur_md'], 1)} au budget, "
+                         f"{_n(e.at['fonds_perequation_changes', 'valeur_md'], 1)} au Fonds de "
+                         "péréquation des changes")
+        suiv = ex + 1
+        budget = (("—" if r.at[suiv, "profits_bct"] == 0 else _n(r.at[suiv, "profits_bct"], 2))
+                  if suiv in r.index and r.at[suiv, "profits_bct"] == r.at[suiv, "profits_bct"] else "")
+        lignes.append([str(ex), v("resultat_exercice"), v("part_etat", 2), " ; ".join(verse),
+                       str(suiv), budget])
+    _md(["Exercice", "Résultat de l'exercice<br>(Banque centrale)",
+         "Part revenant à l'État<br>(Banque centrale)", "Versement cité<br>(année : MD)",
+         "Gestion suivante", "Part du budget dans les profits<br>de la Banque centrale, gestion suivante<br>(Cour des comptes)"],
+        "gddggd", lignes, caption, tbl_id)
+
+
 # --- point d'entrée ------------------------------------------------------------------------------------
 
 FIGURES = {
@@ -2039,6 +2173,8 @@ FIGURES = {
                   "fig_ep_resultats"),
     "cessions": (fig_cessions, table_cessions, (S_CESSIONS, S_CDC, DENOMINATEURS), "fig_ep_cessions"),
     "cdc": (fig_cdc, table_cdc, (S_CDC, DENOMINATEURS), "fig_ep_cdc"),
+    "versements": (fig_versements, table_versements, (S_CDC_0309, S_CDC, DENOMINATEURS),
+                   "fig_ep_versements"),
     "croisees": (fig_croisees, table_croisees, (S_CROISEES, DENOMINATEURS), "fig_ep_croisees"),
     "masse": (fig_masse, table_masse, (S_EFFECTIFS, S_AGREGATS, DENOMINATEURS), "fig_ep_masse"),
     "effectifs": (fig_effectifs, table_effectifs_ep, (S_EFFECTIFS_EP,), "fig_ep_effectifs"),
