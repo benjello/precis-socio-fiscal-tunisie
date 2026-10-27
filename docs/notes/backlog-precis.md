@@ -3717,6 +3717,19 @@ Ce qui reste :
   1986 ; reversement du total dans `tunisia-data` (relevé versionné dans le livre pour l'instant) ; la figure du
   plafond garde le budget ordinaire pour dénominateur (le total calculé n'y est pas encore substitué). Correction :
   la contribution du budget ordinaire en 1961 est de 0,6 MD (les 3 MD de la note du 23 octobre sont les emprunts).
+- **Gestions 2010-2016, lois de finances 2016-2024** : voir les points « 2010-2016 » et « Plafond légal » ci-dessus ;
+  le plafond de 2016 à 2024 vient des annexes du ministère (série `garanties-etat`), les articles des lois de
+  finances de 2016 à 2024 restent à lire pour que la série légale rejoigne les annexes.
+- **Forme du livre : un volume, à segmenter en quatorze chapitres (27 octobre 2026).** La demande d'une
+  segmentation de premier niveau plus fine tranche la question « volume ou chapitre » en faveur du volume ;
+  à confirmer par la revue humaine. Le plan, la table de correspondance des sections actuelles, les liens
+  entrants à préserver, les sources par chapitre (en série, à portée, à obtenir), les pièges de domicile
+  (compensation, caisses, Banque centrale, sociétés confisquées depuis 2011, concessions) et l'ordre de
+  remplissage sont dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. La scission est mécanique,
+  sans contenu nouveau, et vient après la relecture de la passe sur les années récentes (branche
+  `ep/cloture-2017-2024`). Quatre arbitrages attendent l'humain (§ 8 de la note) : chapitres sectoriels ou
+  « grandes entreprises » ; domicile des sociétés confisquées ; chapitre « gouvernance » séparé ou fondu ;
+  ordre des parties.
 - **Plafond légal 2016-2026 et prêts du Trésor — fait le 27 octobre 2026** (branche `donnees/lf-plafond-garanties-2016-2026`
   de tunisia-data ; section `#sec-ep-garanties-plafond-legal` prolongée, registre `tbl-ep-plafond-registre` recopié
   jusqu'en 2026, registre neuf `tbl-ep-prets-tresor-registre`). Articles « garantie de l'État » et « prêts du Trésor »
