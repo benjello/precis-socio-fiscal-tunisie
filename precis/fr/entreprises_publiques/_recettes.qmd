@@ -97,7 +97,7 @@ L'édition LF 2025 ne donne plus ces flux : elle les remplace par les encours cr
 
 ## Les versements au budget depuis 2003 {#sec-ep-versements}
 
-Les gestions 2010 à 2024 sont détaillées dans la longue période (@sec-ep-lp-cloture) ; cette section remonte à 2003. Chaque année, le budget de l'État inscrit une recette « transferts des entreprises publiques et profits du Trésor » : la part du budget dans les profits de la Banque centrale, les excédents des entreprises publiques, les bénéfices des sociétés et d'autres profits du Trésor. De 2003 à 2009, elle va de 353,4 MD (2005) à 1 005,5 MD (2008), soit de 0,84 % à 1,82 % du PIB (PIB du ministère des Finances en base 1997 pour ces deux années) ; la part de la Banque centrale en fait 0 % en 2005 et en 2009, et 62,8 % en 2006.
+Les gestions 2010 à 2024 sont détaillées à la section suivante (@sec-ep-versements-cloture) ; celle-ci remonte à 2003. Chaque année, le budget de l'État inscrit une recette « transferts des entreprises publiques et profits du Trésor » : la part du budget dans les profits de la Banque centrale, les excédents des entreprises publiques, les bénéfices des sociétés et d'autres profits du Trésor. De 2003 à 2009, elle va de 353,4 MD (2005) à 1 005,5 MD (2008), soit de 0,84 % à 1,82 % du PIB (PIB du ministère des Finances en base 1997 pour ces deux années) ; la part de la Banque centrale en fait 0 % en 2005 et en 2009, et 62,8 % en 2006.
 
 ```{python}
 #| label: fig-ep-versements
@@ -111,7 +111,7 @@ ep.figure(
              "l'État, par ligne, gestions 2003 à 2024, en dinars courants, en % des dépenses de "
              "l'État hors service de la dette et en % du PIB"),
     note_lecture=(
-        "Chaque barre est la recette « transferts des entreprises publiques et profits du Trésor » d'une gestion, telle que le budget l'inscrit, d'après les rapports de la Cour des comptes sur la clôture du budget. Les gestions 2003 à 2009 viennent des rapports sur les gestions 2005, 2006, 2007 et 2009, qui donnent chacun la gestion et les deux précédentes ; 2008 vient du rapport 2009. Les gestions 2010 à 2024 viennent des rapports 2011 à 2024 (@sec-ep-lp-cloture). C'est le même tableau, sous les mêmes lignes, jusqu'à 2019 ; depuis 2020, la Cour n'imprime plus de total et la hauteur des barres est la somme des lignes imprimées, ce que marque le trait pointillé. "
+        "Chaque barre est la recette « transferts des entreprises publiques et profits du Trésor » d'une gestion, telle que le budget l'inscrit, d'après les rapports de la Cour des comptes sur la clôture du budget. Les gestions 2003 à 2009 viennent des rapports sur les gestions 2005, 2006, 2007 et 2009, qui donnent chacun la gestion et les deux précédentes ; 2008 vient du rapport 2009. Les gestions 2010 à 2024 viennent des rapports 2011 à 2024 (@sec-ep-versements-cloture). C'est le même tableau, sous les mêmes lignes, jusqu'à 2019 ; depuis 2020, la Cour n'imprime plus de total et la hauteur des barres est la somme des lignes imprimées, ce que marque le trait pointillé. "
         "La part de la Banque centrale est absente en 2005, 2009 et 2010 et réunit plusieurs exercices en 2006 et en 2011 : le budget inscrit la part d'un exercice l'année suivante, parfois plus tard (tableau replié). "
         "Le PIB est celui du ministère des Finances pour 2003 et 2004, sans base indiquée, puis en base 1997 de 2005 à 2009, et celui de l'Institut national de la statistique en base 2015 depuis 2010, rétropolé par l'INS pour 2010 à 2014 : chaque changement de source ou de base est une rupture du dénominateur, marquée au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
 )
@@ -160,5 +160,42 @@ ep.tableau_bct_parts(
              "Cour des comptes [@cdc-cloture-2005, p. 51 ; @cdc-cloture-2006, p. 44 ; "
              "@cdc-cloture-2007, p. 21 ; @cdc-cloture-2009, p. 23 ; @cdc-cloture-2011, p. 39]"))
 ```
+
+::::
+
+## Les versements au budget, gestions 2010 à 2024 {#sec-ep-versements-cloture}
+
+De 2010 à 2024, les versements des entreprises publiques et de la Banque centrale au budget sont au plus bas de 2014 à 2017, puis remontent ; depuis 2017, la part du budget dans les profits de la Banque centrale en fait plus de la moitié (@fig-ep-versements). La figure d'ensemble des flux de clôture qui touchent les entreprises publiques est à la longue période (@fig-ep-cdc).
+
+- **La baisse de 2014 à 2017 vient des sociétés non pétrolières.** Leurs bénéfices versés au budget s'effondrent de 2013 à 2016 ; la Cour des comptes l'attribue en 2014 au recul des résultats de la plupart des entreprises, notamment de la Compagnie des phosphates de Gafsa [@cdc-cloture-2014, p. 50]. Ils restent faibles ensuite, sauf en 2020 et en 2024.
+- **La remontée tient d'abord à la Banque centrale.** La part du budget dans ses profits est vide en 2010, réunit trois exercices en 2011, puis croît de 2017 à 2020 et atteint son plus haut niveau en 2024 ; les excédents des entreprises publiques industrielles et commerciales, dont celles du pétrole, en sont la deuxième ligne en 2024.
+- **Depuis la gestion 2020, la Cour n'imprime plus de total.** Elle donne les lignes, réparties entre les recettes de propriété et les profits du Trésor ; le total tracé est la somme des lignes imprimées.
+
+:::: {.chronologie-repliable titre="Versements au budget, gestions 2010 à 2024, par ligne"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cdc_recettes(
+    caption=("Versements des entreprises publiques et de la Banque centrale au budget de l'État "
+             "(transferts des entreprises publiques et profits du Trésor), gestions 2010 à 2024, "
+             "en millions de dinars courants et en % du PIB. Les excédents réunissent ceux des "
+             "entreprises non pétrolières et pétrolières ; un tiret marque une ligne vide. "
+             "Jusqu'en 2019, le total est celui que la Cour imprime ; depuis 2020, elle n'en "
+             "imprime plus et la somme des lignes imprimées est donnée entre parenthèses ; les "
+             "« autres profits du Trésor » réunissent alors les lignes de profits du Trésor "
+             "(intérêts des titres garantis, produits divers, résultat de change). "
+             "Sources : Cour des comptes [@cdc-cloture-2011, p. 39 ; @cdc-cloture-2013, p. 44 ; "
+             "@cdc-cloture-2014, p. 49 ; @cdc-cloture-2015, p. 42 ; @cdc-cloture-2016, p. 50 ; "
+             "@cdc-cloture-2018, p. 58 ; @cdc-cloture-2019, p. 59-60 ; @cdc-cloture-2020, p. 49 ; "
+             "@cdc-cloture-2021, p. 58-59 ; @cdc-cloture-2022, p. 47-48 ; @cdc-cloture-2023, p. 42-43 ; "
+             "@cdc-cloture-2024, p. 38-40]. "
+             "PIB : Institut national de la statistique "
+             "[@ins-cnat-2015], base dite à chaque ligne"))
+```
+
+*Note de lecture.* Chaque rapport de la Cour des comptes sur la clôture du budget donne sa gestion et la précédente ; les gestions 2010 et 2017 ne sont connues que par cette colonne de comparaison. Les excédents des entreprises publiques font 449,4 MD en 2024, dont 285 MD d'entreprises pétrolières ; la ligne des bénéfices des sociétés pétrolières porte le nom d'une seule société. Le PIB est celui de l'Institut national de la statistique, en base 2015, rétropolé par l'INS pour 2010-2014 : il n'y a pas de rupture de base sur la période (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
 
 ::::

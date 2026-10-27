@@ -46,7 +46,7 @@ ep.tableau_garanties(
              "de l'INS en base 2015, non rétropolé pour ces années [@ins-cnat-2015]"))
 ```
 
-L'encours de la dette garantie augmente chaque année en dinars ; rapporté au PIB, il passe de 11,8 % fin 2016 à 14,8 % fin 2018, puis reste entre 13,6 % et 14,6 % (@fig-ep-encours). La Cour des comptes reprend cet encours dans ses rapports sur la clôture du budget depuis la gestion 2018 : ses montants sont ceux du ministère, au dinar près, pour fin 2019 et de fin 2021 à fin 2023 ; pour fin 2018, son rapport de 2018 imprime 16 471 MD, révisé l'année suivante au montant du ministère, 16 713,4 MD (@sec-ep-lp-cloture).
+L'encours de la dette garantie augmente chaque année en dinars ; rapporté au PIB, il passe de 11,8 % fin 2016 à 14,8 % fin 2018, puis reste entre 13,6 % et 14,6 % (@fig-ep-encours). La Cour des comptes reprend cet encours dans ses rapports sur la clôture du budget depuis la gestion 2018 : ses montants sont ceux du ministère, au dinar près, pour fin 2019 et de fin 2021 à fin 2023 ; pour fin 2018, son rapport de 2018 imprime 16 471 MD, révisé l'année suivante au montant du ministère, 16 713,4 MD (@sec-ep-garanties-cloture).
 
 ```{python}
 #| label: fig-ep-encours
@@ -109,7 +109,7 @@ ep.tableau_audit_banques(
 
 ## Le plafond des garanties et des prêts du Trésor fixé par la loi de finances, 1958-2026 {#sec-ep-garanties-plafond-legal}
 
-Depuis 1958, chaque loi de finances comporte un article qui fixe le montant maximal dans la limite duquel le ministre chargé des finances peut accorder la [garantie de l'État](#g-garantie-etat) « en vertu des textes et conventions en vigueur », puis, depuis la loi de finances pour 1996, « en vertu de la législation en vigueur » ; un article voisin fixe, de la même façon, le montant des prêts du Trésor aux établissements et entreprises publics. Le plafond de la garantie passe de 12 millions de dinars (MD) pour l'année financière 1959-60 à 950 MD pour 1994 ; il reste à 950 MD jusqu'en 2010, sauf en 2003 (1 200 MD), puis est de 1 800 MD en 2011, de 4 000 MD en 2012, de 3 000 MD de 2013 à 2018, de 4 500 puis 4 790 MD en 2019, de 7 000 MD de 2020 à 2022, de 8 000 MD de 2023 à 2025 et de 7 000 MD en 2026 (@fig-ep-plafond-legal).
+Depuis 1958, chaque loi de finances comporte un article qui fixe le montant maximal dans la limite duquel le ministre chargé des finances peut accorder la [garantie de l'État](#g-garantie-etat) « en vertu des textes et conventions en vigueur », puis, depuis la loi de finances pour 1996, « en vertu de la législation en vigueur » ; un article voisin fixe, de la même façon, le montant des [prêts du Trésor](#g-prets-tresor) aux établissements et entreprises publics. Le plafond de la garantie passe de 12 millions de dinars (MD) pour l'année financière 1959-60 à 950 MD pour 1994 ; il reste à 950 MD jusqu'en 2010, sauf en 2003 (1 200 MD), puis est de 1 800 MD en 2011, de 4 000 MD en 2012, de 3 000 MD de 2013 à 2018, de 4 500 puis 4 790 MD en 2019, de 7 000 MD de 2020 à 2022, de 8 000 MD de 2023 à 2025 et de 7 000 MD en 2026 (@fig-ep-plafond-legal).
 
 <!-- RECHERCHE r-ep-plafond-garantie-1995-2015 : article sur la garantie des lois de finances de 2016 et suivantes, textes de 1957-58 et de 1960, lois de finances complémentaires de 1969 à 1991 (voir docs/recherches.yml) -->
 
@@ -374,3 +374,79 @@ ep.tableau_croisees_entreprises(
 ::::
 
 Jusqu'à l'édition LF 2024, le rapport ne donnait pas ces encours, mais les flux de l'année entre le budget et un échantillon d'entreprises (@sec-ep-dividendes).
+
+## La dette garantie remboursée, les prêts remboursés et l'encours, gestions 2010 à 2024 {#sec-ep-garanties-cloture}
+
+De 2010 à 2024, ce que l'État paie à la place des entreprises dont il garantit la dette culmine de 2013 à 2015 puis devient marginal, tandis que les remboursements de prêts qu'il reçoit augmentent depuis 2021 (@fig-ep-cdc-garanties). La figure d'ensemble des flux de clôture qui touchent les entreprises publiques est à la longue période (@fig-ep-cdc).
+
+```{python}
+#| label: fig-ep-cdc-garanties
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "cdc_garanties",
+    caption=("Dette garantie remboursée par l'État, remboursements de prêts reçus et encours de "
+             "la dette garantie selon la Cour des comptes, gestions 2010 à 2024, en dinars "
+             "courants, en % des dépenses de l'État hors service de la dette et en % du PIB"),
+    note_lecture=(
+        "Trois panneaux, trois vues, d'après les rapports de la Cour des comptes sur la clôture du budget de l'État. Chaque rapport donne sa gestion et la précédente ; les gestions 2010 et 2017 ne sont connues que par cette colonne de comparaison. "
+        "À gauche, le principal et les intérêts de la dette garantie que l'État a payés à la place du débiteur ; les lignes du principal ne sont pas toutes des entreprises publiques, et la reprise de dettes bancaires de l'article 25 de la loi de finances de 1999 est hors du total (@tbl-ep-cdc-garantie). "
+        "Au centre, les remboursements de prêts reçus : le total imprimé jusqu'en 2019, puis, la Cour ne l'imprimant plus, ses deux lignes ; le trait pointillé marque la nomenclature de 2020, qui range les prêts extérieurs rétrocédés parmi les ressources d'emprunt. "
+        "À droite, l'encours de la dette garantie en fin d'année, extérieur et intérieur, que la Cour imprime d'après le ministère des Finances à partir du rapport sur la gestion 2018, qui donne aussi la fin de 2017 ; les rapports des gestions 2020 et 2024 n'en impriment pas. Pour la fin de 2018, le rapport de la gestion 2018 imprime 16 471 MD, révisé à 16 713,4 MD dans le rapport suivant ; la première valeur est tracée. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année ; un encours rapporté à un flux annuel se lit comme un ordre de grandeur. "
+        "Le PIB est celui de l'Institut national de la statistique, en base 2015, rétropolé par l'INS pour 2010-2014 : il n'y a pas de rupture de base sur la période (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures))."),
+)
+```
+
+- **Qui l'État remplace.** Ce sont d'abord des banques et des entreprises industrielles — la Société tunisienne de banque en 2012, la Société tunisienne des industries de raffinage de 2013 à 2016 — ; depuis 2017, aucune entreprise industrielle, et presque tout pour l'Office national de l'huile jusqu'en 2022.
+- **Les remboursements de prêts reçus sont presque tous des [prêts rétrocédés](#g-prets-retrocedes)** : des prêts extérieurs que l'État reprête à des entreprises et établissements publics. Depuis la gestion 2020, la Cour les classe parmi les ressources d'emprunt extérieur et n'imprime plus de total ; de 2021 à 2024, ils dépassent chaque année ceux de 2013 à 2019. Les prêts du titre II remboursés restent faibles jusqu'en 2022, puis augmentent en 2023 et en 2024.
+- **L'encours de la dette garantie n'apparaît qu'en 2017.** Jusqu'à la gestion 2016, la Cour écrit chaque année que le compte général de la gestion ne porte pas la situation des prêts rétrocédés ni celle des prêts garantis : le remboursement est connu, l'encours restant dû ne l'est pas [@cdc-cloture-2011, p. 42 ; @cdc-cloture-2016, p. 54]. L'encours qu'elle imprime ensuite est celui du ministère des Finances, qui augmente chaque année en dinars (@fig-ep-encours) [@cdc-cloture-2018, p. 108 ; @cdc-cloture-2019, p. 113 ; @cdc-cloture-2021, p. 106 ; @cdc-cloture-2022, p. 90-91 ; @cdc-cloture-2023, p. 87].
+
+:::: {.chronologie-repliable titre="Gestions 2010 à 2024 : principal de la dette garantie payé par l'État, par ligne, et remboursements de prêts reçus"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cdc_garantie(
+    caption=("Principal de la dette garantie payé par l'État, par ligne, et intérêts, gestions "
+             "2010 à 2024, en millions de dinars courants ; principal en % du PIB. Les lignes sont "
+             "celles du rapport : l'article 24 de la loi de finances de 1999, la Caisse des prêts "
+             "et de soutien des collectivités locales, les crédits agricoles et l'Office des "
+             "céréales ne sont pas des entreprises publiques au sens du rapport sur les "
+             "entreprises publiques ; la reprise de dettes bancaires de l'article 25 de la loi de "
+             "finances de 1999 est hors du total imprimé. En 2013, le rapport de 2013 attribue 47,0 MD à la Société "
+             "tunisienne de banque et celui de 2014 à la société de sidérurgie ; le montant est "
+             "porté dans la première colonne, entre parenthèses dans l'autre. En 2014, les lignes "
+             "imprimées font 500 dinars de plus que le total imprimé ; en 2017 et 2018, un dinar "
+             "d'écart. Sources : Cour des comptes "
+             "[@cdc-cloture-2011, p. 74 et 92 ; @cdc-cloture-2012, p. 89 et 103 ; "
+             "@cdc-cloture-2013, p. 78 et 95 ; @cdc-cloture-2014, p. 82 et 99 ; "
+             "@cdc-cloture-2015, p. 91 ; @cdc-cloture-2016, p. 86 et 100 ; @cdc-cloture-2018, p. 92 et 107 ; "
+             "@cdc-cloture-2019, p. 95 et 111 ; @cdc-cloture-2020, p. 89 et 92 ; @cdc-cloture-2021, p. 101 et 104 ; "
+             "@cdc-cloture-2022, p. 85 et 88 ; @cdc-cloture-2023, p. 82 et 85 ; @cdc-cloture-2024, p. 83 et 90]"))
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cdc_autres(
+    partie="prets",
+    caption=("Remboursements de prêts reçus par l'État, gestions 2010 à 2024, en millions de "
+             "dinars courants. La ventilation des remboursements ne figure qu'à partir de 2013 ; "
+             "depuis 2020, la Cour n'imprime plus de total et classe les prêts rétrocédés parmi "
+             "les ressources d'emprunt. Les recettes de privatisation des mêmes rapports sont au "
+             "chapitre des cessions. Sources : Cour des comptes "
+             "[@cdc-cloture-2011, p. 42 ; @cdc-cloture-2012, p. 27 ; @cdc-cloture-2013, p. 46-47 ; "
+             "@cdc-cloture-2014, p. 52-53 ; @cdc-cloture-2015, p. 46 ; @cdc-cloture-2016, p. 53-54 ; "
+             "@cdc-cloture-2018, p. 61-62 ; @cdc-cloture-2019, p. 62-63 ; @cdc-cloture-2020, p. 53 et 60 ; "
+             "@cdc-cloture-2021, p. 63 et 75 ; @cdc-cloture-2022, p. 52 et 61 ; @cdc-cloture-2023, p. 47 et 53 ; "
+             "@cdc-cloture-2024, p. 43, 50 et 52]"))
+```
+
+::::
