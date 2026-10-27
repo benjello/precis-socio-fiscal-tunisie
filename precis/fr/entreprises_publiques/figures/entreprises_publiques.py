@@ -57,6 +57,11 @@ S_TRANSFERTS_EP = "entreprises-publiques-transferts-par-entreprise"
 S_NETS_EP = "entreprises-publiques-resultats-nets-dix-premieres"
 S_CESSIONS = "privatisation-recettes-annuelles"
 S_PLANS = "privatisation-recettes-par-plan"
+S_BILAN = "privatisation-bilan-global-par-mode"
+S_RECUEIL = "privatisation-recueil-operations"
+S_NATURES = "privatisation-recueil-par-nature"
+S_ANNEES_NATURES = "privatisation-recueil-par-annee-nature"
+S_RECOUPEMENT = "privatisation-recueil-recoupement-annuel"
 S_ETUDES = "entreprises-publiques-etudes-rapportees"
 # Les dénominateurs sont ceux du volume « La compensation », lus dans sa série à tracer :
 # dépenses de l'État hors service de la dette (1986-1987, puis depuis 1991) et PIB par segment
@@ -816,6 +821,103 @@ def tableau_cessions_plans(caption: str, tbl_id: str = "tbl-ep-cessions-plans") 
     _md(["Période", "Recettes, page officielle<br>(MD)", "Somme du classeur, 2009 exclue<br>(MD)",
          "Somme du classeur, 2009 comprise<br>(MD)", "Entreprises", "Opérations"], "gddddd", lignes,
         caption, tbl_id)
+
+
+# --- opérations de cession : bilan global et recueil depuis 1998 -------------------------------------
+
+NATURES = {  # ordre et libellés courts ; la règle de classement est dans tunisia-data
+    "titres": "Cession de titres",
+    "bourse": "Offre publique ou vente en bourse",
+    "concession": "Concession",
+    "actifs": "Vente d'actifs",
+    "actifs_liquidation": "Vente d'actifs d'une entreprise en liquidation",
+}
+SECTEURS_RECUEIL = {
+    "agriculture": "Agriculture", "peche": "Pêche", "services_agricoles": "Services agricoles",
+    "agroalimentaire": "Industries agroalimentaires",
+    "imccv": "Matériaux de construction, céramique et verre",
+    "ime": "Industries mécaniques et électriques", "chimie": "Industries chimiques",
+    "cuir_textiles": "Cuir et textiles", "industries_diverses": "Autres industries",
+    "tourisme_artisanat": "Tourisme et artisanat", "commerce": "Commerce", "transport": "Transport",
+    "services_financiers": "Services financiers", "autres_services": "Autres services",
+}
+
+
+def tableau_cessions_modes(caption: str, tbl_id: str = "tbl-ep-cessions-modes") -> None:
+    """Entreprises par mode de privatisation ou de restructuration, 1987-2009 (bilan global)."""
+    b = _s(S_BILAN)
+    lignes = []
+    for r in b.itertuples(index=False):
+        gras = (lambda x: f"**{x}**") if r.mode == "total" else (lambda x: x)
+        lignes.append([gras(r.mode_imprime), gras(_n(r.entreprises, 0)), gras(_n(r.part_imprimee_pct, 0))])
+    _md(["Mode", "Entreprises", "% du total"], "gdd", lignes, caption, tbl_id)
+
+
+def tableau_cessions_natures(caption: str, tbl_id: str = "tbl-ep-cessions-natures") -> None:
+    """Lignes, sociétés et produit du recueil 1998-2008, par nature de l'acte."""
+    n = _s(S_NATURES).set_index("nature")
+    lignes = []
+    for code in list(NATURES) + ["ensemble"]:
+        r = n.loc[code]
+        nom = NATURES.get(code, "**Ensemble**")
+        g = (lambda x: f"**{x}**") if code == "ensemble" else (lambda x: x)
+        lignes.append([nom, g(_n(r.lignes_du_recueil, 0)), g(_n(r.societes, 0)), g(_n(r.produit_md, 1))])
+    _md(["Nature de l'acte", "Lignes du recueil", "Sociétés", "Produit (MD courants)"], "gddd",
+        lignes, caption, tbl_id)
+
+
+NATURES_COURTES = {"titres": "Titres", "bourse": "Bourse", "concession": "Concession",
+                   "actifs": "Actifs", "actifs_liquidation": "Actifs en liquidation"}
+
+
+def _md_petit(v_md: float) -> str:
+    """Millions de dinars à une décimale ; « < 0,1 » pour un produit positif plus petit."""
+    return "< 0,1" if 0 < v_md < 0.05 else _n(v_md, 1)
+
+
+def tableau_cessions_annees(caption: str, tbl_id: str = "tbl-ep-cessions-recueil-annees") -> None:
+    """Produit du recueil par année et nature, en regard du relevé annuel arrêté à 2009."""
+    a = _s(S_ANNEES_NATURES)
+    a["annee"] = a["annee"].astype(str)
+    rec = _s(S_RECOUPEMENT).set_index("annee")
+    lignes = []
+    for annee in list(dict.fromkeys(a["annee"])):
+        d = a[a["annee"] == annee].set_index("nature")
+        cases = [_md_petit(d.loc[c, "produit_milliers_dinars"] / 1000) if d.loc[c, "lignes_du_recueil"]
+                 else "" for c in NATURES]
+        ens = d.loc["ensemble"]
+        fin = ["", ""]
+        if annee.isdigit() and int(annee) in rec.index:
+            r = rec.loc[int(annee)]
+            e = r.ecart_recueil_moins_classeur_1987_2009_md
+            fin = [_n(r.classeur_1987_2009_md, 1), "0,0" if abs(e) < 0.05 else _n(e, 1, signe=True)]
+        lignes.append([annee] + cases + [f"**{_n(ens.produit_milliers_dinars / 1000, 1)}**",
+                                        _n(ens.lignes_du_recueil, 0)] + fin)
+    tot = a.groupby("nature")[["produit_milliers_dinars", "lignes_du_recueil"]].sum()
+    lignes.append(["**1998-2008**"] + [f"**{_n(tot.loc[c, 'produit_milliers_dinars'] / 1000, 1)}**"
+                                       for c in NATURES]
+                  + [f"**{_n(tot.loc['ensemble', 'produit_milliers_dinars'] / 1000, 1)}**",
+                     f"**{_n(tot.loc['ensemble', 'lignes_du_recueil'], 0)}**", "", ""])
+    _md(["Année"] + list(NATURES_COURTES.values())
+        + ["Ensemble", "Lignes", "Relevé annuel<br>arrêté à 2009", "Écart"],
+        "g" + "d" * (len(NATURES) + 4), lignes, caption, tbl_id)
+
+
+def tableau_cessions_operations(caption: str, tbl_id: str = "tbl-ep-cessions-operations") -> None:
+    """Les 162 lignes du recueil, par secteur : société, année, nature, libellé du mode, produit."""
+    op = _s(S_RECUEIL)
+    lignes = []
+    for code, nom in SECTEURS_RECUEIL.items():
+        d = op[op["secteur"] == code].sort_values("ordre")
+        for r in d.itertuples(index=False):
+            societe = "" if r.suite == "oui" else (
+                f"{r.societe} ({r.sigle})" if str(r.sigle) not in ("", "nan") and r.sigle != r.societe
+                else str(r.societe))
+            lignes.append([nom if r.ordre == 1 else "", societe, str(r.annee_imprimee),
+                           NATURES[r.nature], str(r.mode).replace("|", "/"),
+                           _n(r.produit_milliers_dinars, 0)])
+    _md(["Secteur", "Société", "Année", "Nature de l'acte", "Mode, tel qu'imprimé",
+         "Produit (milliers de dinars)"], "gggggd", lignes, caption, tbl_id)
 
 
 # --- études ------------------------------------------------------------------------------------------

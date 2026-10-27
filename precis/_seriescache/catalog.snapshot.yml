@@ -4344,7 +4344,10 @@
     avant 1998. Aucune capture aux archives du web : les pages enregistrées sont la
     seule copie. Les acquéreurs sont repris tels qu''imprimés. La page « Autres services
     » intitule sa troisième colonne « Nombre d''opérations » ; ses lignes portent
-    le produit puis l''année, comme les autres. LU PAR PROGRAMME.'
+    le produit puis l''année, comme les autres. LU PAR PROGRAMME. Colonne `nature`
+    (27 octobre 2026) : nature de l''acte, CLASSEMENT FAIT ICI d''après le libellé
+    du mode (voir privatisation-recueil-par-nature) ; le libellé imprimé reste dans
+    `mode`.'
   titre_ar: 'عمليات التخصيص وإعادة الهيكلة، سطر لكل عملية من «مجموعة العمليات منذ
     1998»: المنشأة، سنة التفويت، الطريقة، المحصول، المقتني، 1998-2008'
   unite_ar: بالألف دينار الجاري
@@ -5381,3 +5384,125 @@
   caveats_ar: 'سلسلة غير كاملة: الحالات السابقة لسنة 2016 غير مدرجة. سقف مصادق عليه
     وليس مبلغ قروض ممنوحة.'
   fiche: sources/jort-lf-plafond-prets-tresor.md
+- id: privatisation-recueil-par-nature
+  titre: 'Opérations du recueil de la privatisation, 1998-2008, par nature de l''acte
+    : lignes, sociétés, produit'
+  sources:
+  - dgpv-recueil-operations-depuis-1998
+  build: uv run python scripts/build_privatisation_recueil.py
+  raw:
+  - sources/transcriptions/privatisation-recueil-operations.csv
+  output: data/processed/entreprises-publiques/privatisation_recueil_par_nature.csv
+  unite: milliers de dinars courants ; millions de dinars (produit_md) ; nombre de
+    lignes du recueil ; nombre de sociétés
+  perimetre: 'Direction générale de la privatisation, « Recueil des opérations depuis
+    1998 », consulté le 13 octobre 2026 : 162 lignes, 132 sociétés ; cinq natures
+    de l''acte et l''ensemble'
+  caveats: 'CLASSEMENT FAIT ICI, PAS PAR LA SOURCE : la nature est tirée du libellé
+    imprimé du mode par une règle écrite et testée (concession ; offre publique ou
+    vente en bourse — OPV, OPR, vente à la criée ; vente d''actifs d''une entreprise
+    en liquidation — « Liquidation en cours », « Entreprise liquidée » ; cession de
+    titres — actions, part du capital, participations ; autres ventes d''actifs).
+    CE NE SONT PAS LES MODES DU BILAN GLOBAL (privatisation totale ou partielle…)
+    : le recueil ne donne ni la part de l''État avant et après l''opération, ni la
+    sortie du secteur public. Une société est comptée dans chaque nature où elle a
+    au moins une ligne : les sociétés ne s''additionnent pas d''une nature à l''autre
+    (132 au total). ÉCART AVEC LE BILAN GLOBAL, GARDÉ : 6 sociétés ont une ligne de
+    concession au recueil (1998-2008 ; dont la seconde licence de téléphonie mobile,
+    680 MD en 2002), le bilan (1987-2009) compte 5 concessions.'
+  titre_ar: 'عمليات التخصيص منذ 1998 حسب طبيعة العملية: الأسطر، المنشآت، المحصول'
+  unite_ar: بالألف دينار الجاري؛ عدد الأسطر؛ عدد المنشآت
+  perimetre_ar: 'الإدارة العامة للتخصيص، مجموعة العمليات منذ 1998: 162 سطراً لـ132
+    منشأة'
+  caveats_ar: تصنيف أُجري هنا انطلاقاً من نص طريقة التخصيص، وليس تصنيف المصدر، ولا
+    يطابق أنماط الحصيلة الجملية. تُحتسب المنشأة في كل طبيعة لها فيها سطر.
+  fiche: sources/entreprises-publiques.md
+- id: privatisation-recueil-par-annee-nature
+  titre: Opérations du recueil de la privatisation par année de cession et par nature
+    de l'acte, 1998-2008
+  sources:
+  - dgpv-recueil-operations-depuis-1998
+  build: uv run python scripts/build_privatisation_recueil.py
+  raw:
+  - sources/transcriptions/privatisation-recueil-operations.csv
+  output: data/processed/entreprises-publiques/privatisation_recueil_par_annee_nature.csv
+  unite: milliers de dinars courants ; nombre de lignes du recueil ; nombre de sociétés
+  perimetre: 'Direction générale de la privatisation, « Recueil des opérations depuis
+    1998 » : une ligne par (année de cession, nature de l''acte), nature « ensemble
+    » comprise ; années 1998 à 2008 et « plusieurs années »'
+  caveats: 'LES LIGNES PLURIANNUELLES NE SONT PAS RÉPARTIES : quatre lignes du recueil
+    portent plusieurs années (SONAM 1999-2001, ONH 2002-2004, EL ANABIB 1999-2000,
+    une ligne de 1999, 2000 et 2004) ; elles sont rangées sous « plusieurs années
+    » (13,1 MD). Une année n''est donc pas le produit de cette année au complet. Nature
+    de l''acte : classement fait ici (voir privatisation-recueil-par-nature). Le recueil
+    ne dit pas sa date d''arrêt : 2008 est incomplète au regard du classeur annuel
+    (voir privatisation-recueil-recoupement-annuel).'
+  titre_ar: عمليات التخصيص حسب سنة التفويت وطبيعة العملية، 1998-2008
+  unite_ar: بالألف دينار الجاري؛ عدد الأسطر؛ عدد المنشآت
+  perimetre_ar: الإدارة العامة للتخصيص، مجموعة العمليات منذ 1998، حسب السنة والطبيعة
+  caveats_ar: 'لا تُوزَّع الأسطر الممتدة على عدة سنوات: تُرتَّب تحت «عدة سنوات». طبيعة
+    العملية تصنيف أُجري هنا.'
+  fiche: sources/entreprises-publiques.md
+- id: privatisation-recueil-recoupement-annuel
+  titre: Produit des opérations du recueil par année, 1998-2008, en regard des deux
+    éditions du classeur des recettes annuelles
+  sources:
+  - dgpv-recueil-operations-depuis-1998
+  - dgpv-recettes-annuelles-1987-2009
+  - dgpv-recettes-annuelles-1987-2005
+  build: uv run python scripts/build_privatisation_recueil.py
+  raw:
+  - sources/transcriptions/privatisation-recueil-operations.csv
+  - sources/transcriptions/entreprises-publiques-privatisation.csv
+  output: data/processed/entreprises-publiques/privatisation_recueil_recoupement_annuel.csv
+  unite: millions de dinars courants ; nombre de lignes
+  perimetre: Somme des lignes d'une seule année du recueil, nombre de lignes pluriannuelles
+    qui couvrent l'année, et recettes de l'année aux classeurs arrêtés à 2009 et à
+    2005
+  caveats: 'RECOUPEMENT, PAS UNE SÉRIE. ÉCARTS GARDÉS, NON CORRIGÉS (recueil moins
+    classeur 2009, MD) : 1998, − 33,5 ; 1999, + 19,6 (le recueil, 63,1, est plus proche
+    du classeur de 2005, 68,9, que de celui de 2009, 43,5) ; 2008, − 148,6 (153,9
+    au recueil pour 302,6 au classeur : le recueil est incomplet pour 2008 ou d''un
+    périmètre plus étroit) ; ailleurs moins de 5 MD. Les lignes pluriannuelles ne
+    sont pas réparties : 1999 à 2004 en ont deux ou trois chacune. Le classeur compte
+    toutes les opérations de l''année depuis 1987, le recueil celles qu''il range
+    par société depuis 1998.'
+  titre_ar: محصول عمليات المجموعة حسب السنة، 1998-2008، مقارنة بطبعتي الجدول السنوي
+    للإيرادات
+  unite_ar: بملايين الدنانير الجارية؛ عدد الأسطر
+  perimetre_ar: مجموع أسطر السنة الواحدة في المجموعة، مقارنة بإيرادات السنة في جدولي
+    2009 و2005
+  caveats_ar: مقارنة لا سلسلة. تُحفظ الفوارق دون تصحيح، وأكبرها سنة 2008.
+  fiche: sources/entreprises-publiques.md
+- id: privatisation-bilan-global-par-mode
+  titre: 'Bilan global des privatisations, 31 décembre 1987 – 31 janvier 2009 : entreprises
+    par mode de privatisation ou de restructuration'
+  sources:
+  - dgpv-bilan-global
+  build: uv run python scripts/build_privatisation_recueil.py
+  raw:
+  - sources/transcriptions/privatisation-bilan-global.csv
+  output: data/processed/entreprises-publiques/privatisation_bilan_global_par_mode.csv
+  unite: nombre d'entreprises ; % du total (imprimé à l'unité, et recalculé) ; produit
+    total en millions de dinars courants
+  perimetre: 'Présidence du gouvernement, Direction générale de la privatisation,
+    page « Bilan global des privatisations », consultée le 11 octobre 2026 : résultats
+    du 31/12/1987 au 31/01/2009, 217 entreprises, produit total 5 963 MDT ; six modes
+    (privatisation totale, partielle, ouverture du capital par OPV, concession, liquidation,
+    autres) et le total'
+  caveats: 'UNE ENTREPRISE, UN MODE : la page ne dit pas comment est rangée une entreprise
+    qui a connu plusieurs opérations. Aucun produit par mode. Contrôles qui arrêtent
+    le script : les modes font le total imprimé (217) ; chaque part imprimée est l''arrondi
+    à l''unité de la part recalculée ; total et produit retrouvent la page « par période
+    » (privatisation-recettes-par-plan). PÉRIMÈTRE DIFFÉRENT DU RECUEIL (1998-2008,
+    132 sociétés, 5 412,9 MD) : rien ne se recoupe de l''un à l''autre ; le recueil
+    compte pourtant 6 sociétés à concession contre 5 au bilan. Aucune capture aux
+    archives du web : la page enregistrée est la seule copie. LU PAR PROGRAMME.'
+  titre_ar: 'الحصيلة الجملية للتخصيص، من 31 ديسمبر 1987 إلى 31 جانفي 2009: المنشآت
+    حسب طريقة التخصيص أو إعادة الهيكلة'
+  unite_ar: عدد المنشآت؛ النسبة من المجموع؛ المحصول الجملي بملايين الدنانير
+  perimetre_ar: 'رئاسة الحكومة، الإدارة العامة للتخصيص، صفحة الحصيلة الجملية: 217
+    منشأة و5963 م د'
+  caveats_ar: منشأة واحدة لطريقة واحدة؛ لا محصول حسب الطريقة. محيط مختلف عن مجموعة
+    العمليات منذ 1998.
+  fiche: sources/entreprises-publiques.md
