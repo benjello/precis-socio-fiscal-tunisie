@@ -3609,7 +3609,7 @@ Ce qui reste :
   2006, 2007 et 2009 (chacun avec les deux gestions précédentes ; 2008 par le rapport 2009), lus à l'image ; aucune
   révision d'un rapport à l'autre. Rapports annuels de la Banque centrale 2002-2010, répartition du résultat lue à
   l'image. **Restent** : (1) écarts entre la part arrêtée par la Banque centrale et le montant inscrit au budget
-  (5 MD pour l'exercice 2002, 10 pour 2006, 10 pour 2007, 36,7 pour 2008-2010 ; seul celui de 2003 est expliqué :
+  (5 MD pour l'exercice 2002, 10,4 pour 2004-2005, 10 pour 2006, 10 pour 2007, 36,7 pour 2008-2010 ; seul celui de 2003 est expliqué :
   Fonds de péréquation des changes, rapport annuel 2004, p. 170) — rapports annuels 2003, 2007, 2008 et 2011 et lois
   de règlement, lisibles dans `tunisia-data` (couche texte propre) ; TODO dans la section ; (2) répartition du
   résultat de l'exercice 2007, non imprimée dans le rapport 2007 (montant encaissé de 435 MD seulement, rapport
