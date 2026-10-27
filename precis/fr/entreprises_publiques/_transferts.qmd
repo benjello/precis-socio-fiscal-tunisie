@@ -1,6 +1,6 @@
 # Les transferts du budget {#sec-ep-transferts .domicile-unique}
 
-Le budget de l'État verse 17,1 milliards de dinars en 2023 à l'ensemble des entreprises publiques et des établissements publics non administratifs, contre 6,9 milliards en 2017 : 35,2 % de ses dépenses hors service de la dette, contre 25,1 %, et 11,4 % du PIB, contre 6,7 %. **Ce total contient les versements aux caisses de sécurité sociale, les subventions de compensation et les crédits des établissements d'enseignement et de culture ; le montant « hors compensation, hors caisses » n'est pas calculé.** La dépense de compensation est exposée dans le volume [« La compensation »](../compensation/index.html), les versements aux caisses dans [« Les caisses de sécurité sociale »](../caisses/index.html).
+Le budget de l'État verse 17,1 milliards de dinars en 2023 à l'ensemble des entreprises publiques et des établissements publics non administratifs, contre 6,9 milliards en 2017 : 35,2 % de ses dépenses hors service de la dette, contre 25,1 %, et 11,4 % du PIB, contre 6,7 %. **Ce total contient les versements aux caisses de sécurité sociale, les subventions de compensation et les crédits des établissements d'enseignement et de culture ; sans les caisses, la STIR et la STEG, l'Office des céréales et l'Office national de l'huile, il est de 4,2 milliards de dinars en 2023 (@tbl-ep-transferts-reste).** La dépense de compensation est exposée dans le volume [« La compensation »](../compensation/index.html), les versements aux caisses dans [« Les caisses de sécurité sociale »](../caisses/index.html).
 
 ```{python}
 #| label: fig-ep-transferts
@@ -45,7 +45,7 @@ ep.tableau_transferts(
              "années [@ins-cnat-2015]"))
 ```
 
-<!-- TODO (documentaliste) : dépouiller les annexes par établissement du rapport sur les transferts et les garanties (édition LF 2020 : p. 62-123 ; éditions arabes : seconde moitié du rapport) pour isoler le total « hors compensation, hors caisses » ; le bloc du ministère du Transport est déjà versé (série transport-transferts-par-entreprise). Les parts imprimées par le rapport — 7,1 % du PIB en 2017, 7,9 % en 2018, 7,7 % en 2019 ; 25,1 %, 28,1 % et 26,0 % du budget — ne disent pas la base du PIB et ne sont pas reprises ici. -->
+<!-- TODO (documentaliste) : les parts imprimées par le rapport — 7,1 % du PIB en 2017, 7,9 % en 2018, 7,7 % en 2019 ; 25,1 %, 28,1 % et 26,0 % du budget — ne disent pas la base du PIB et ne sont pas reprises ici. -->
 
 :::: {.chronologie-repliable titre="Transferts du budget aux entreprises et établissements publics : montants par nature de dépense, par source de financement et par édition du rapport, 2016-2024"}
 
@@ -76,4 +76,53 @@ ep.tableau_transferts_editions(
 
 ::::
 
-Par entreprise, les transferts ne sont connus que pour l'échantillon du rapport sur les entreprises publiques, qui n'est pas le périmètre de ce total (@sec-ep-lp-entreprises).
+Le rapport sur les entreprises publiques donne aussi les transferts reçus par entreprise, pour son échantillon, qui n'est pas le périmètre de ce total (@sec-ep-lp-entreprises).
+
+**Le total sans les caisses, la STIR, la STEG et les offices des céréales et de l'huile.** Sans les caisses de sécurité sociale, la STIR et la STEG, l'Office des céréales et l'Office national de l'huile, le budget de l'État verse 4,2 milliards de dinars en 2023 aux entreprises publiques et aux établissements publics non administratifs, contre 2,7 milliards en 2018 : 8,7 % de ses dépenses hors service de la dette, contre 9,0 %, et 2,8 % du PIB, contre 2,4 % (@tbl-ep-transferts-reste).
+
+- **Ce qui est retranché.** Le rapport sur les transferts et les garanties donne le montant versé à chaque établissement, toutes natures de dépense confondues. En 2023, les caisses de sécurité sociale reçoivent 2,3 milliards de dinars, la STIR et la STEG 7,0 milliards, l'Office des céréales et l'Office de l'huile, au titre du ministère du Commerce, 3,5 milliards : 12,9 milliards sur 17,1. Chaque montant retranché est lu dans l'édition du rapport qui donne le total de l'année.
+- **La STIR et la STEG.** Ce qu'elles reçoivent est, chaque année de 2017 à 2024, égal au poste « carburants » de la dépense de compensation exposée dans le volume [« La compensation »](../compensation/_depense.html#sec-compensation-par-poste) : 7,0 milliards de dinars en 2023.
+- **Le reste n'est pas un total hors compensation.** L'Office des céréales et l'Office de l'huile reçoivent de 191 à 307 millions de dinars de moins, selon l'année, que le poste « produits de base » de la compensation de 2018 à 2023. La subvention du transport public, de 450 à 640 millions de dinars sur ces années, reste dans le reste : le rapport la compte avec les autres concours aux sociétés de transport (@tbl-ep-transferts-compensation).
+- **Le saut de 2022 est hors du reste.** Le total passe de 10,8 à 17,1 milliards de dinars de 2021 à 2022 ; le reste est de 3,9 milliards les deux années. La hausse est dans ce que reçoivent la STIR et la STEG, de 3,3 à 7,6 milliards, et l'Office des céréales, de 1,7 à 3,2 milliards.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_transferts_reste(
+    caption=("Transferts du budget de l'État aux entreprises publiques et aux établissements "
+             "publics non administratifs : total, caisses de sécurité sociale (CNRPS, CNSS, CNAM "
+             "et, dans la loi de finances pour 2024, contribution de l'État aux caisses sociales "
+             "non ventilée), STIR et STEG, Office des céréales et Office national de l'huile "
+             "(lignes du ministère du Commerce), et reste, en millions de dinars courants, "
+             "2017-2024. Le tableau par établissement de l'édition LF 2021 ne porte pas les "
+             "établissements du ministère du Commerce : 2017 n'a pas de reste. Source : ministère "
+             "des Finances, rapport sur les transferts et les garanties, tableau des transferts "
+             "par établissement [@minfin-transferts-2021, p. 16 et 19 ; "
+             "@minfin-transferts-2022, p. 15, 17-18 ; @minfin-transferts-2023, p. 15, 17-18 ; "
+             "@minfin-transferts-2024, p. 16, 18-19 ; @minfin-transferts-2025, p. 16, 18-19] ; "
+             "total : même édition que le @tbl-ep-transferts. Parts calculées ici : dépenses de "
+             "l'État hors service de la dette [@minfin-remunerations] ; PIB de l'INS en base "
+             "2015, non rétropolé pour ces années [@ins-cnat-2015]"))
+```
+
+<!-- TODO (documentaliste) : 2017 — lire le tableau par établissement de l'original arabe de l'annexe 8 LF 2021 (gbo.tn), dont la traduction française omet le bloc du ministère du Commerce. Transport — séparer la subvention de transport des autres concours aux sociétés de transport (tableaux par établissement et par nature, seconde moitié de chaque édition ; bloc déjà versé : série transport-transferts-par-entreprise). Produits de base — identifier le bénéficiaire de l'écart entre le poste « produits de base » et ce que reçoivent l'Office des céréales et l'Office de l'huile. -->
+
+:::: {.chronologie-repliable titre="Ce que reçoivent la STIR, la STEG, l'Office des céréales et l'Office de l'huile, en regard des postes de la dépense de compensation, 2017-2024"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_transferts_compensation(
+    caption=("Montants retranchés du total des transferts et postes de la dépense de "
+             "compensation, en millions de dinars courants, 2017-2024. 2024 : loi de finances "
+             "pour les transferts. L'écart est ce que reçoivent l'Office des céréales et l'Office "
+             "de l'huile moins le poste « produits de base ». Sources : transferts, mêmes "
+             "rapports que le @tbl-ep-transferts-reste ; compensation, volume « La "
+             "compensation », décomposition par poste"))
+```
+
+::::

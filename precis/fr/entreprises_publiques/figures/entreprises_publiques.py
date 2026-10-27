@@ -10,7 +10,7 @@
     ep.figure("versements", …)                           # versements au budget, 2003-2024
     ep.tableau_transferts(caption=…) …                   # tableaux, tous lus dans les séries
 
-D'OÙ VIENNENT LES DONNÉES. Onze séries de `tunisia-data`, lues par `figtools.series()`
+D'OÙ VIENNENT LES DONNÉES. Douze séries de `tunisia-data`, lues par `figtools.series()`
 (l'entrepôt s'il est installé, sinon le cache `precis/_seriescache/`), et les dénominateurs
 de la série `compensation-parts`. Rien n'est saisi ici : ni valeur, ni page.
 
@@ -49,6 +49,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 import figtools  # noqa: E402
 
 S_TRANSFERTS = "entreprises-publiques-transferts-budget"
+S_TRANSFERTS_ETAB = "entreprises-publiques-transferts-par-etablissement"
+S_COMPENSATION = "compensation-parts"
 S_GARANTIES = "garanties-etat"
 S_DIVIDENDES = "entreprises-publiques-dividendes-etat"
 S_FLUX = "entreprises-publiques-versements-transferts"
@@ -377,6 +379,55 @@ def tableau_transferts_editions(caption: str, tbl_id: str = "tbl-ep-transferts-e
         lignes.append([str(a)] + cases)
     _md(["Année"] + [f"Édition {_ed(e)}<br>(MD)" for e in editions], "g" + "d" * len(editions),
         lignes, caption, tbl_id)
+
+
+def _decomposition():
+    """Total, caisses, STIR et STEG, Office des céréales et Office de l'huile, reste : une
+    ligne par année, dans l'édition retenue pour le total de l'année."""
+    d = _s(S_TRANSFERTS_ETAB)
+    t = d.pivot_table(index=["annee", "etat", "edition"], columns="grandeur",
+                      values="valeur_md").reset_index().sort_values("annee")
+    for c in ("caisses", "stir_steg", "office_cereales_office_huile", "reste"):
+        if c not in t:
+            t[c] = float("nan")
+    return t
+
+
+def tableau_transferts_reste(caption: str, tbl_id: str = "tbl-ep-transferts-reste") -> None:
+    lignes = []
+    for r in _decomposition().itertuples():
+        etat = "réalisé" if r.etat == "réalisations" else "loi de finances"
+        lignes.append([str(r.annee), etat, _ed(r.edition), _n(r.total), _n(r.caisses),
+                       _n(r.stir_steg), _n(r.office_cereales_office_huile), _n(r.reste),
+                       _n(_part(r.reste, r.annee, "dep")), _n(_part(r.reste, r.annee, "pib"))])
+    _md(["Année", "État de la valeur", "Édition", "Total<br>(MD)",
+         "Caisses de sécurité sociale<br>(MD)", "STIR et STEG<br>(MD)",
+         "Office des céréales et Office de l'huile<br>(MD)", "Reste<br>(MD)",
+         "Reste<br>(% des dépenses de l'État)", "Reste<br>(% du PIB)"],
+        "gggddddddd", lignes, caption, tbl_id)
+
+
+def tableau_transferts_compensation(caption: str,
+                                    tbl_id: str = "tbl-ep-transferts-compensation") -> None:
+    """Les lignes retranchées du total, en regard des postes de la dépense de compensation."""
+    c = _s(S_COMPENSATION)
+    c = c[c["famille"] == "budget"].pivot_table(index="annee", columns="poste",
+                                                values="valeur_MDT")
+    lignes = []
+    for r in _decomposition().itertuples():
+        a = int(r.annee)
+        comp = c.loc[a] if a in c.index else None
+        prod = None if comp is None else comp.get("produits_de_base")
+        ecart = (None if prod is None or r.office_cereales_office_huile != r.office_cereales_office_huile
+                 else r.office_cereales_office_huile - prod)
+        lignes.append([str(a), _n(r.stir_steg), _n(None if comp is None else comp.get("carburants")),
+                       _n(r.office_cereales_office_huile), _n(prod), _n(ecart),
+                       _n(None if comp is None else comp.get("transport"))])
+    _md(["Année", "STIR et STEG<br>(MD)", "Compensation des carburants<br>(MD)",
+         "Office des céréales et Office de l'huile<br>(MD)",
+         "Compensation des produits de base<br>(MD)", "Écart<br>(MD)",
+         "Compensation du transport, restée dans le reste<br>(MD)"],
+        "gdddddd", lignes, caption, tbl_id)
 
 
 # --- garanties ---------------------------------------------------------------------------------

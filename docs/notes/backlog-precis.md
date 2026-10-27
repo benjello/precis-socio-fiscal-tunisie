@@ -3593,8 +3593,10 @@ Ce qui reste :
   (chacun avec la gestion précédente ; 2010 et 2017 par la colonne de comparaison). **Ce que la série n'est
   pas** : ni transferts du budget aux entreprises (les rapports ventilent par ministère et par nature), ni encours
   avant 2017. **Restent** : transferts
-  par entreprise 2010-2015 (rapports sur les transferts et les garanties annexés aux lois de finances d'avant
-  2020, lois de règlement, rapports annuels de la Banque centrale) ; rapports de clôture des gestions 2010
+  par entreprise 2010-2015 (le rapport sur les transferts et les garanties commence avec l'édition LF 2020 ;
+  rapports annuels de la Banque centrale 2010-2016 et rapport « Finances publiques » du ministère pour 2010
+  ouverts le 27 octobre 2026 sans résultat, voir la fiche `r-ep-series-budgetaires-avant-2016` ; lois de
+  règlement du Journal officiel non ouvertes) ; rapports de clôture des gestions 2010
   (absent du catalogue de la Cour) et 2017 (au catalogue, sans fichier) ; encours des gestions 2020 et 2024 ;
   dividendes 2023 : libellés pétrolier et non pétrolier inversés entre les rapports 2023 et 2024, non arbitrés ; fonds de restructuration du capital des entreprises à participation publique
   et recapitalisations des banques publiques en réalisation (tableaux des fonds spéciaux de chaque rapport) ;
@@ -3627,16 +3629,28 @@ Ce qui reste :
   marquées sur la figure.
 - **Avant 1987, et avant 2016 pour les transferts par entreprise et l'encours de la dette garantie** : rien
   (fiche `r-ep-series-budgetaires-avant-2016`, passe du 24 octobre 2026, résultat partiel). Pistes non
-  ouvertes : rapports annuels de la Banque centrale (ouverts le 27 octobre 2026 pour sa seule part de l'État, 2002-2010), lois de règlement du Journal officiel, Cour des comptes
-  (dette publique extérieure, 2018), plans de développement. Le plafond des garanties est lu de 1958-59 à 2015
+  ouvertes : lois de règlement du Journal officiel, Cour des comptes (dette publique extérieure, 2018), plans
+  de développement ; rapports annuels de la Banque centrale ouverts le 27 octobre 2026 pour sa seule part de
+  l'État (2002-2010) et, pour les transferts, 2010-2016 avec le rapport « Finances publiques » du ministère pour
+  2010 : classement par nature et par ministère, aucun total par bénéficiaire (fiche, passe du 27 octobre 2026).
+  Le plafond des garanties est lu de 1958-59 à 2015
   (voir le point « Plafond légal » plus bas). Recettes de cession : 1987-2009 (Direction générale de la
   privatisation) et 2010-2016 (clôture) ; rien depuis 2017.
 - **Annexes du projet de loi de finances pour 2026** : non obtenues (fiche
   `r-ep-annexes-plf-2026`).
-- **« Hors compensation, hors caisses » non calculé** : le total des transferts (annexe 8)
-  contient les caisses, la compensation et les établissements d'enseignement ; le retrait
-  demande les annexes par établissement du rapport (édition LF 2020 : p. 62-123 ; éditions
-  arabes : seconde moitié), non dépouillées. Le chapitre le dit au premier plan.
+- **Total sans les caisses, la STIR, la STEG et les offices des céréales et de l'huile — fait le
+  27 octobre 2026** (chapitre `#sec-ep-transferts`, tableaux `tbl-ep-transferts-reste` et
+  `tbl-ep-transferts-compensation` ; série `entreprises-publiques-transferts-par-etablissement`,
+  branche `donnees/ep-transferts-par-etablissement` de `tunisia-data`, fiche
+  `sources/minfin-transferts-par-etablissement.md`) : tableau 3.1 « par établissement » des éditions
+  LF 2021 à LF 2025 lu à l'image, 2018-2023 et loi de finances 2024. STIR + STEG = poste « carburants »
+  de la compensation chaque année. **Restent** : 2017 (la traduction française de l'édition LF 2021
+  omet le bloc du ministère du Commerce ; original arabe sur gbo.tn, **à obtenir**) ; la subvention du
+  transport public, comptée avec les autres concours aux sociétés de transport (tableaux par
+  établissement et par nature, **lisibles dans le corpus de tunisia-data**) ; le bénéficiaire de
+  l'écart de 191 à 307 MD par an entre le poste « produits de base » et l'Office des céréales et
+  l'Office de l'huile ; la nature des transferts à l'Office de l'huile (subvention ou financement des
+  achats d'huile d'olive).
 - **Fiches par entreprise non relues, donc non publiées** : dette, effectifs, charges de
   personnel, subvention d'exploitation, total des passifs (STEG, STIR, Tunisair, Transtu,
   SNCFT, SONEDE, ETAP, Groupe chimique, CPG, Office des céréales, RNTA, Office du commerce).
