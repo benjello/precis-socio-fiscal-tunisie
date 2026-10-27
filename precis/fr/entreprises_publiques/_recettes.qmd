@@ -97,7 +97,7 @@ L'édition LF 2025 ne donne plus ces flux : elle les remplace par les encours cr
 
 ## Les versements au budget depuis 2003 {#sec-ep-versements}
 
-Les gestions 2010 à 2024 sont détaillées à la fin de cette section (@sec-ep-versements-cloture) ; elle remonte à 2003. Chaque année, le budget de l'État inscrit une recette « transferts des entreprises publiques et profits du Trésor » : la part du budget dans les profits de la Banque centrale, les excédents des entreprises publiques, les bénéfices des sociétés et d'autres profits du Trésor. De 2003 à 2009, elle va de 353,4 MD (2005) à 1 005,5 MD (2008), soit de 0,84 % à 1,82 % du PIB (PIB du ministère des Finances en base 1997 pour ces deux années) ; la part de la Banque centrale en fait 0 % en 2005 et en 2009, et 62,8 % en 2006.
+Les gestions 2010 à 2024 sont détaillées à la section suivante (@sec-ep-versements-cloture) ; celle-ci remonte à 2003. Chaque année, le budget de l'État inscrit une recette « transferts des entreprises publiques et profits du Trésor » : la part du budget dans les profits de la Banque centrale, les excédents des entreprises publiques, les bénéfices des sociétés et d'autres profits du Trésor. De 2003 à 2009, elle va de 353,4 MD (2005) à 1 005,5 MD (2008), soit de 0,84 % à 1,82 % du PIB (PIB du ministère des Finances en base 1997 pour ces deux années) ; la part de la Banque centrale en fait 0 % en 2005 et en 2009, et 62,8 % en 2006.
 
 ```{python}
 #| label: fig-ep-versements
@@ -163,7 +163,7 @@ ep.tableau_bct_parts(
 
 ::::
 
-### Les gestions 2010 à 2024 {#sec-ep-versements-cloture}
+## Les versements au budget, gestions 2010 à 2024 {#sec-ep-versements-cloture}
 
 De 2010 à 2024, les versements au budget baissent de 2014 à 2017, jusqu'à 312,2 MD, puis atteignent 1 823,1 MD en 2024, dont 58 % de la Banque centrale, d'après les rapports de la Cour des comptes sur la clôture du budget de l'État. La figure d'ensemble des flux de clôture qui touchent les entreprises publiques est à la longue période (@fig-ep-cdc). Chaque rapport donne sa gestion et la précédente ; les gestions 2010 et 2017 ne sont connues que par cette colonne de comparaison. Le PIB est celui de l'Institut national de la statistique, en base 2015, rétropolé par l'INS pour 2010-2014 : il n'y a pas de rupture de base sur la période.
 
