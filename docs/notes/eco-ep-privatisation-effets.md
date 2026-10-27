@@ -45,8 +45,8 @@ produit de cession est ponctuel et incertain ; le FMI le classe en financement, 
 
 ### 3.2 Tunisie et région
 
-- **Région, Égypte, Maroc, Tunisie, Turquie** (Ben Naceur, Ghazouani et Omran, rapport FEMISE
-  2006). 84 entreprises cédées par offre publique en bourse, dont 13 tunisiennes, cessions de 1990 à
+- **Région, Égypte, Maroc, Tunisie, Turquie** (Ben Naceur, Ghazouani et Omran 2007, lu dans le
+  rapport FEMISE du programme 2004-2005). 84 entreprises cédées par offre publique en bourse, dont 13 tunisiennes, cessions de 1990 à
   2000 (§ 5.1, p. 16-17 ; la conclusion écrit 1993-2001, p. 29) ; comparaison des médianes trois ans
   avant et trois ans après, sans groupe témoin. Sur l'échantillon entier, rentabilité et efficacité
   en hausse significative, emploi et endettement en baisse. Pour les 13 entreprises tunisiennes,
@@ -90,16 +90,15 @@ la position financière nette de l'État.
    tient à l'efficacité et à ce que l'État en récupère (Davis et al. 2000).
 3. **Le mode de cession compte autant que la cession.** Repreneur, concurrence, régulation (Estrin
    et al. ; Djankov et Murrell 2002).
-4. **Ce que les données tunisiennes ne permettent pas de trancher.** Il n'existe pas de suivi
-   public des entreprises cédées après la cession, ni de comparaison avec des entreprises restées
-   publiques ; l'emploi et les prix après cession ne sont pas mesurés dans les études du volume.
+4. **Ce que les données tunisiennes ne permettent pas de trancher.** L'ITCEQ suit 34 entreprises
+   cédées ; parmi les études du volume, aucune ne les compare à des entreprises restées publiques
+   ni ne mesure les prix payés par les consommateurs après la cession.
 
 Aucun résultat n'appelle un paramètre de comportement : rien n'est versé à `backlog-modele.md`.
 
 ## 6. Références
 
-Clé présente au volume : `itceq-privatisation-2010`. Références vérifiées sur Crossref le
-27 octobre 2026.
+Clé présente au volume : `itceq-privatisation-2010`. Articles vérifiés sur Crossref le 27 octobre 2026 ; rapports et livres vérifiés sur la page de titre de la copie détenue.
 
 | citation-key | type | Référence | Version lue |
 |---|---|---|---|

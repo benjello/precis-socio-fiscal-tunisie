@@ -38,7 +38,7 @@ Une troisième lecture, contracyclique, lui prête un rôle de stabilisation du 
 
 | Question | Étude, données | Résultat |
 |---|---|---|
-| Coût budgétaire des crises bancaires | Laeven et Valencia 2026, 164 crises bancaires systémiques, cas limites compris, 1970-2025 | coût budgétaire brut médian : 6,7 % du PIB dans les pays à revenu élevé, 7,5 % dans les pays à revenu faible et intermédiaire (p. 17) ; épisodes du tableau de 0 à 56,8 % du PIB (Indonésie, 1997-2001) (p. 25-29). Coût brut : apports en capital, frais des structures de défaisance, garanties appelées ; ni garanties non appelées ni soutien de liquidité ; dépenses rapportées au PIB de l'année et additionnées (p. 16) |
+| Coût budgétaire des crises bancaires | Laeven et Valencia 2026, 164 crises bancaires systémiques, cas limites compris, 1970-2025 | coût budgétaire brut médian : 6,7 % du PIB dans les pays à revenu élevé, 7,5 % dans les pays à revenu faible et intermédiaire (p. 17) ; jusqu'à 56,8 % du PIB (Indonésie, 1997-2001) (p. 27). Coût brut : apports en capital, frais des structures de défaisance, garanties appelées ; ni garanties non appelées ni soutien de liquidité ; dépenses rapportées au PIB de l'année et additionnées (p. 16) |
 | Région | même base | Jordanie 1989-1991 : 10,0 % du PIB ; Türkiye 2000-2001 : 32,0 % ; coût non renseigné pour l'Algérie, l'Égypte et le Maroc (tableau en annexe, p. 25-29) |
 | Ce qui fait monter le coût | Honohan et Klingebiel 2000, 40 épisodes dans 34 pays, 1970-2000 | coût moyen 12,8 % du PIB, 14,3 % dans les pays en développement, jusqu'à 40-55 % (Argentine, Chili, début des années 1980) (p. 3) ; garantie illimitée des dépôts, soutien de liquidité sans limite, recapitalisations répétées, renflouement des débiteurs et tolérance réglementaire augmentent le coût (résumé) ; autoriser des recapitalisations répétées ajoute au coût prévu 1,1 point de PIB si toutes les autres politiques sont strictes (cas de base 1,0 %), 5,2 points aux valeurs moyennes (cas de base 6,7 %) ; les interdire quand tout le reste est laxiste retire 33,1 points (cas de base 62,6 %) (tableau 4, p. 16) ; les deux cas extrêmes sont hors échantillon et à traiter « with caution » selon les auteurs (même page) |
 | Propriété publique des banques et croissance | La Porta et al., 92 pays, 1960-1995 et 1970-1995 | en 1995, l'État détient en moyenne 42 % du capital des dix premières banques ; propriété publique associée à un développement financier et une croissance plus lents, par la productivité (résumé et p. 6) |
@@ -86,13 +86,14 @@ Parmi les études du volume, aucune n'évalue le coût net ni l'effet des recapi
 
 ## 5. Ce que le praticien retient
 
-1. **Coût brut ou net.** Les bases internationales comptent des dépenses brutes ; la récupération
-   par cession ou dividende vient ensuite et se publie rarement (Laeven et Valencia 2026, p. 6).
+1. **Coût brut ou net.** Laeven et Valencia comptent des dépenses brutes, parce que les
+   récupérations mettent du temps à être enregistrées, et donnent le coût net quand il est
+   disponible (2026, p. 6).
 2. **Ordres de grandeur.** Coût médian d'une crise systémique de 6,7 à 7,5 % du PIB selon le
    revenu du pays (1970-2025) ; 3,0 % pour la Tunisie en 1991. À ne pas confondre avec une
    recapitalisation hors crise systémique.
-3. **La répétition se mesure.** Le nombre d'apports successifs à une même banque est une donnée
-   que la littérature associe au coût final (Honohan et Klingebiel 2000).
+3. **La répétition compte.** Dans les 40 épisodes de Honohan et Klingebiel (2000), le recours à
+   des recapitalisations répétées, codé oui ou non, va avec un coût budgétaire plus élevé.
 4. **Ce que les données tunisiennes ne permettent pas de trancher.** L'emploi des montants
    ordonnancés banque par banque n'est pas établi (chapitre) ; il n'y a pas de série publique des
    créances classées par banque publique avant et après recapitalisation dans les études du volume.
@@ -102,7 +103,7 @@ Aucun résultat n'appelle un paramètre de comportement : rien n'est versé à `
 ## 6. Références
 
 Clés présentes : `imf-tunisia-art4-2020` ; au volume : `wb-tunisia-gouvernance-ep-2014`.
-Références vérifiées sur Crossref le 27 octobre 2026.
+Articles vérifiés sur Crossref le 27 octobre 2026 ; rapports et livres vérifiés sur la page de titre de la copie détenue.
 
 | citation-key | type | Référence | Version lue |
 |---|---|---|---|

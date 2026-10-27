@@ -103,17 +103,18 @@ la part des transferts qui compense un prix administré de celle qui couvre une 
 3. **Ordres de grandeur étrangers, à ne pas transposer.** Ventes par salarié trois fois plus
    élevées dans le privé (109 pays, 1999-2017) ; soutien maximal de 16 % du PIB aux entreprises
    non financières dans une année.
-4. **Ce que les données tunisiennes ne permettent pas de trancher.** Il n'existe pas de comptes
-   consolidés et à jour de toutes les entreprises publiques (FMI 2021, p. 65) ; le coût des
-   missions imposées n'est pas publié entreprise par entreprise.
+4. **Ce que les données tunisiennes ne permettent pas de trancher.** En 2021, le FMI ne disposait
+   pas d'information financière consolidée et à jour sur toutes les entreprises publiques et
+   travaillait sur 30 d'entre elles (FMI 2021, p. 65) ; le rapport annexé à la loi de finances
+   en couvre 42, hors banques (chapitre, `#sec-ep-croisees`). Parmi les études du volume, aucune
+   ne chiffre le coût des missions imposées entreprise par entreprise.
 
 Aucun résultat n'appelle un paramètre de comportement : rien n'est versé à `backlog-modele.md`.
 
 ## 6. Références
 
 Clés présentes (`precis/fr/references.json`) : `pm-livre-blanc-ep-2018`,
-`imf-tunisia-art4-2020` ; au volume : `wb-tunisia-gouvernance-ep-2014`. Références vérifiées sur
-Crossref le 27 octobre 2026.
+`imf-tunisia-art4-2020` ; au volume : `wb-tunisia-gouvernance-ep-2014`. Articles vérifiés sur Crossref le 27 octobre 2026 ; rapports et livres vérifiés sur la page de titre de la copie détenue.
 
 | citation-key | type | Référence | Version lue |
 |---|---|---|---|
@@ -121,7 +122,7 @@ Crossref le 27 octobre 2026.
 | `djankov-murrell-2002-restructuring` | article-journal | S. Djankov, P. Murrell, « Enterprise Restructuring in Transition: A Quantitative Survey », *Journal of Economic Literature* 40(3), 2002, p. 739-792, doi 10.1257/jel.40.3.739 | publiée (copie econ.umd.edu) |
 | `imf-2020-fiscal-monitor-soe` | report | FMI, « State-Owned Enterprises: The Other Government », *Fiscal Monitor*, avril 2020, chap. 3, p. 47-74 | publiée |
 | `wb-2023-business-of-the-state` | book | Banque mondiale, *The Business of the State*, 2023, doi 10.1596/978-1-4648-1998-8, hdl 10986/40343 | *Overview* seul |
-| `ocde-2024-lignes-directrices-ep` | report | OCDE, *Lignes directrices de l'OCDE sur la gouvernance des entreprises publiques*, édition 2024, OECD/LEGAL/0414, doi 10.1787/18a24f43-en | texte de la recommandation, legalinstruments.oecd.org |
+| `ocde-2024-lignes-directrices-ep` | report | OCDE, *Lignes directrices de l'OCDE sur la gouvernance des entreprises publiques*, édition 2024, OECD/LEGAL/0414 ; doi de la publication 10.1787/18a24f43-en relevé sur la notice de l'OCDE, non vérifié sur la copie | texte de la recommandation (legalinstruments.oecd.org), non la publication |
 
 Cités de seconde main : Dewatripont et Maskin 1995 (*Review of Economic Studies* 62(4), p. 541-555,
 doi 10.2307/2298076, vérifié, non récupéré), rapporté par Kornai et al. ; Herrera Dappe et al.

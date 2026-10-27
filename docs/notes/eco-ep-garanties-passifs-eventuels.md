@@ -76,9 +76,10 @@ l'Égypte, la Jordanie et le Maroc y figurent.
   scénario, pas une estimation de probabilité.
 
 Les trois ratios ne mesurent pas la même chose (dette extérieure garantie ; garanties, prêts
-rétrocédés et prêts du Trésor ; garanties sur 30 entreprises) et ne forment pas une série. Aucune
-étude du volume n'estime la probabilité d'appel des garanties tunisiennes ni le coût budgétaire
-attendu.
+rétrocédés et prêts du Trésor ; garanties sur 30 entreprises) et ne forment pas une série. Le
+chapitre donne le principal de la dette garantie payé par l'État de 2010 à 2024
+(`#sec-ep-garanties-cloture`) ; parmi les études du volume, aucune ne le rapporte à l'encours
+garanti pour estimer une probabilité d'appel ou un coût budgétaire attendu.
 
 ## 4. Ce qui est établi, ce qui est débattu
 
@@ -89,8 +90,7 @@ attendu.
   dette d'entreprises non financières n'est pas mesurée.
 - **Débattu : comment enregistrer.** L'approche en droits constatés reconnaît le coût dès l'octroi
   ; le FMI la juge préférable mais trop exigeante pour les administrations à faible capacité, et
-  se rabat sur la publication (Saxena 2017, p. 12). Le seuil de 50 % d'IPSAS 19 laisse hors bilan
-  des garanties à probabilité d'appel élevée mais inférieure à ce seuil.
+  se rabat sur la publication (Saxena 2017, p. 12).
 - **Débattu : rôle des garanties en crise.** Le même FMI note que les garanties générales ont
   servi à rétablir la confiance des créanciers bancaires (Saxena 2017, p. 2) ; leur coût dépend
   alors de la résolution qui suit (fiche `eco-ep-restructuration-bancaire.md`).
@@ -105,16 +105,16 @@ attendu.
 3. **Garanti ou non, le renflouement peut venir.** La dette non garantie d'une entreprise
    publique est un passif implicite (Polackova 1998) ; les 40 % du PIB de dette des 30 entreprises
    suivies par le FMI dépassent de loin les 15 % garantis.
-4. **Ce que les données tunisiennes ne permettent pas de trancher.** Il n'y a pas d'historique
-   publié des appels de garantie rapportés à l'encours, qui permettrait d'estimer un taux d'appel ;
-   les périmètres des études divergent.
+4. **Ce que les données tunisiennes ne permettent pas de trancher.** Les paiements de l'État au
+   titre de la dette garantie sont connus par gestion (chapitre), mais aucune étude du volume ne
+   les rapporte à l'encours garanti par entreprise ; les périmètres des études divergent.
 
 Aucun résultat n'appelle un paramètre de comportement : rien n'est versé à `backlog-modele.md`.
 
 ## 6. Références
 
 Clés présentes : `pm-livre-blanc-ep-2018`, `wb-tunisia-per-2020`, `imf-tunisia-art4-2020` ; au
-volume : `wb-tunisia-gouvernance-ep-2014`. Références vérifiées sur Crossref le 27 octobre 2026.
+volume : `wb-tunisia-gouvernance-ep-2014`. Articles vérifiés sur Crossref le 27 octobre 2026 ; rapports et livres vérifiés sur la page de titre de la copie détenue.
 
 | citation-key | type | Référence | Version lue |
 |---|---|---|---|
