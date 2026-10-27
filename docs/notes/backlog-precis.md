@@ -3816,7 +3816,18 @@ Ce qui reste :
   `_relation_financiere.qmd` est scindé en neuf chapitres (`_statut`, `_transferts`, `_garanties`, `_recettes`,
   `_cessions`, `_grandes_entreprises`, `_emploi_comptes`, `_longue_periode`, `_etudes`), sans contenu nouveau ;
   plan et décisions dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. Restent : ouvrir
-  « Restructurer » et la gouvernance quand ils ont leur matière, définir les notions dans la présentation.
+  « Restructurer » et la gouvernance quand ils ont leur matière.
+- **Les notions dans la présentation — fait le 27 octobre 2026** (branche `ep/eclatement`) : section
+  `#sec-ep-notions` de `index.qmd`, dix notions définies sur les textes déjà cités dans le volume, chacune avec son
+  lien au glossaire et son chapitre. Cinq entrées neuves au glossaire, `provisoire`, sans définition arabe :
+  `prets-tresor` (قروض الخزينة, édition arabe de la loi organique du budget, couche texte), `prets-retrocedes`
+  (القروض المعاد إقراضها, rapports arabes de clôture 2021 et 2024), `liquidation-amiable` (التصفية الرضائية, lue à
+  l'image de l'édition arabe de la loi n° 99-38, JORT n° 37 de 1999, p. 848), `privatisation` (التخصيص, relevé
+  arabe de la Direction générale de la privatisation), `cession-participations-publiques` (التفويت في المساهمات
+  العمومية, assemblée à partir du même relevé). **Restent** : lire l'édition arabe de la loi n° 89-9 (JORT n° 9 de
+  1989, **OCR** : la couche texte du corpus est illisible) pour confirmer l'expression de la cession et la
+  traduction de « participation publique » ; définitions arabes des cinq entrées et de `garantie-etat` ; la
+  définition de `contrat-programme`, écrite pour les caisses, ne dit pas l'usage de la loi de 1985.
 - **Sections mixtes éclatées — fait le 27 octobre 2026** (branche `ep/eclatement`), sans fait nouveau. 1989 et
   1994-2001 : le périmètre reste dans `_statut` (`#sec-ep-1989`, `#sec-ep-1994-2001`) ; la cession organisée et
   l'action spécifique passent dans `_cessions` (`#sec-ep-1989-cession`, `#sec-ep-1994-cession`), avec les lignes de
