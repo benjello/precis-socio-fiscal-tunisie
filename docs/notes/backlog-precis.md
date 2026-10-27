@@ -3727,7 +3727,13 @@ Ce qui reste :
   novembre). **Restent** : éditions françaises des JORT n° 104 de 2015, 104 de 2018, 104 de 2019, 141 de 2022,
   144 de 2023 et 149 de 2024, absentes du corpus et de pist.tn (la loi de finances pour 2023 et celle pour 2026 sont
   citées à la page de l'édition arabe) ; prêts du Trésor avant 2016 ; libellés arabes du registre des prêts.
-- **Forme du livre : volume ou chapitre — décision laissée à la revue.** Éléments : (a) le livre n'a qu'un chapitre
+- **Forme du livre : tranchée le 27 octobre 2026 — volume de six parties.** Le chapitre unique
+  `_relation_financiere.qmd` est scindé en neuf chapitres (`_statut`, `_transferts`, `_garanties`, `_recettes`,
+  `_cessions`, `_grandes_entreprises`, `_emploi_comptes`, `_longue_periode`, `_etudes`), sans contenu nouveau ;
+  plan et décisions dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. Restent : éclater les sections
+  mixtes (1989, 1994-2001, clôture 2010-2024) entre chapitres, ouvrir « Restructurer » et la gouvernance quand
+  ils ont leur matière, définir les notions dans la présentation.
+- *(historique)* **Forme du livre : volume ou chapitre — décision laissée à la revue.** Éléments : (a) le livre n'a qu'un chapitre
   (`_relation_financiere.qmd`, environ 1 200 lignes) et une annexe ; (b) ses figures, ses séries et son plan
   (mise en place, réformes, état du droit, longue période) sont ceux d'un chapitre de partie V ; (c) le volume
   n'existe qu'en français et n'est pas lié depuis l'accueil comme les autres ; (d) la matière s'est étendue

@@ -1,0 +1,93 @@
+# Les dividendes et les versements au budget {#sec-ep-dividendes .domicile-unique}
+
+L'État reçoit de ses entreprises deux choses que le rapport sur les entreprises publiques tient séparées : sa part dans leurs bénéfices, et l'ensemble de leurs versements au budget, qui sont d'abord des impôts.
+## La part de l'État dans les bénéfices {#sec-ep-dividendes-part}
+
+La part de l'État dans les bénéfices et excédents des entreprises où il participe directement est de 204,6 MD au titre de l'exercice 2022 ; elle va de 98,3 MD (exercice 2020) à 333,0 MD (exercice 2018) sur les six exercices arrêtés, soit de 0,26 % à 1,12 % des dépenses de l'État hors service de la dette et de 0,08 % à 0,29 % du PIB.
+
+```{python}
+#| label: fig-ep-dividendes
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "dividendes",
+    caption=("Part de l'État dans les bénéfices et excédents des entreprises publiques à "
+             "participation directe, par exercice, en dinars courants, en % des dépenses de "
+             "l'État hors service de la dette et en % du PIB, 2017-2023"),
+    note_lecture=(
+        "Chaque point plein est le montant arrêté d'un exercice, dans la dernière édition du rapport qui le donne. Le rond creux de 2023 est un montant partiel, arrêté à la date du rapport : il n'est pas relié aux exercices arrêtés. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        "Le montant est rapporté aux dépenses et au PIB de l'exercice au titre duquel il est dû, non de l'année où il est encaissé. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_dividendes(
+    caption=("Part de l'État dans les bénéfices et excédents des entreprises publiques à "
+             "participation directe, par exercice et par édition du rapport, 2017-2023. "
+             "« Partiel » : montant versé ou arrêté à la date du rapport, que l'édition "
+             "suivante révise. Source : ministère des Finances [@minfin-ep, p. 150 ; "
+             "@minfin-ep-2022 ; @minfin-ep-2023 ; @minfin-ep-2024 ; @minfin-ep-2025, "
+             "p. 125-126]. Parts calculées ici, sur l'année de l'exercice : dépenses de "
+             "l'État hors service de la dette [@minfin-remunerations] ; PIB de l'INS en base "
+             "2015, non rétropolé pour ces années [@ins-cnat-2015]"))
+```
+
+- **Peu d'entreprises distribuent.** De 7 à 14 par exercice, sur 71 à participation directe.
+- **Une entreprise fait l'essentiel certaines années.** L'[ETAP](#g-etap) verse 295 MD sur 333 au titre de 2018, et 146,5 MD sur 263,8 au titre de 2019.
+- **De 2021 à 2023.** Sur trois exercices, 545,6 MD, dont 100 MD de la Poste, 64,6 MD de Tunisie Télécom, 58,6 MD de la Caisse des prêts et de soutien des collectivités locales et 57,2 MD de la Banque nationale agricole [@minfin-ep-2025, p. 126].
+- **Le dernier exercice de chaque édition est partiel.** L'exercice 2022 vaut 99,3 MD dans l'édition LF 2024 et 204,6 MD dans l'édition LF 2025 : les 195,6 MD de l'exercice 2023 ne se comparent pas aux exercices arrêtés.
+## Les versements au budget et les transferts reçus, sur un échantillon {#sec-ep-flux}
+
+De 2017 à 2022, le rapport met en regard ce qu'un échantillon de 33 à 50 entreprises verse au budget et ce qu'il en reçoit. L'échantillon comprend les banques publiques et les caisses de sécurité sociale ; il change à chaque édition.
+
+```{python}
+#| label: fig-ep-flux
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "flux",
+    caption=("Versements au budget de l'État et transferts reçus du budget, échantillon du "
+             "rapport sur les entreprises publiques, par édition, en dinars courants, en % des "
+             "dépenses de l'État hors service de la dette et en % du PIB, 2017-2022"),
+    note_lecture=(
+        "Chaque édition du rapport est un segment : elle relie les années qu'elle donne, sur son propre échantillon (33 entreprises pour l'édition LF 2021, 50 pour LF 2022, 48 pour LF 2023 et LF 2024), et n'est reliée à aucune autre. Une même année a donc plusieurs points. Les marques creuses sont des valeurs provisoires. Les transferts de 2020 valent 4,6 milliards de dinars dans l'édition LF 2023 et 6,5 milliards dans l'édition LF 2024, qui y ajoute les versements aux caisses de sécurité sociale. Pour 2022, l'édition LF 2024 imprime deux totaux de transferts, 14 506,6 et 14 560,6 MD ; le point tracé est le second, que redonnent la somme des composantes et le total par entreprise. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        "Les versements sont pour l'essentiel des recettes de l'État : les rapporter à ses dépenses donne une échelle commune aux deux flux, non une part. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
+)
+```
+
+- **Les versements sont d'abord des impôts.** Les versements fiscaux et douaniers font 6 384,1 MD sur 7 620,8 en 2022 ; les bénéfices transférés et les commissions de garantie, 167,0 MD (@tbl-ep-flux).
+- **Le solde se retourne.** Dans l'édition LF 2024, l'échantillon reçoit du budget plus qu'il ne lui verse : 274 MD de plus en 2020, 1 968,5 MD en 2021, 6 939,8 MD en 2022, valeur provisoire [@minfin-ep-2024, p. 149].
+- **Une rupture de définition en 2018.** L'édition LF 2021 et l'édition LF 2022 ne comptent pas les mêmes prélèvements : pour 2018, la Régie nationale des tabacs et des allumettes verse 1 559,2 MD selon la première et 910,1 MD selon la seconde [@minfin-ep, p. 147 ; @minfin-ep-2022, p. 102].
+- **Pourquoi 2020 et 2021 changent.** L'édition LF 2024 met à jour les transferts à la [CNSS](#g-cnss), absente de l'édition précédente, et à la [CNRPS](#g-cnrps) pour 2020, et ceux de l'Office des céréales et de la CNSS pour 2021 [@minfin-ep-2024, p. 155].
+
+:::: {.chronologie-repliable titre="Versements au budget et transferts reçus par l'échantillon du rapport sur les entreprises publiques : montants et composition, par année et par édition, 2017-2022"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_flux(
+    caption=("Versements au budget et transferts reçus, échantillon du rapport sur les "
+             "entreprises publiques, par année et par édition, 2017-2022 ; entre parenthèses, "
+             "le nombre d'entreprises de l'échantillon. Deux valeurs séparées par « ou » sont "
+             "imprimées par la même édition. Source : ministère des Finances [@minfin-ep, "
+             "p. 143-149 ; @minfin-ep-2022, p. 100-104 ; @minfin-ep-2023, p. 195-199 ; "
+             "@minfin-ep-2024, p. 149-153]"))
+```
+
+::::
+
+L'édition LF 2025 ne donne plus ces flux : elle les remplace par les encours croisés (@sec-ep-croisees).

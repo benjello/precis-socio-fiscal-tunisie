@@ -1,0 +1,176 @@
+# L'emploi, la masse salariale et les résultats {#sec-ep-emploi-comptes .domicile-unique}
+Ce chapitre donne les effectifs et la masse salariale des entreprises publiques, puis leurs résultats agrégés, par édition du rapport.
+## Les effectifs et la masse salariale {#sec-ep-effectifs}
+
+Les entreprises publiques dont le ministère des Finances reçoit les comptes emploient de 96 000 à 100 000 agents de 2018 à 2022, hors secteur financier et hors caisses de sécurité sociale, pour des charges de personnel de 3,6 à 4,3 milliards de dinars. Les statuts, les grilles de salaires et les augmentations de ces agents sont dans le volume [« Les rémunérations publiques »](../remunerations_publiques/index.html) ; les agents de la fonction publique sont un autre ensemble, qui ne s'ajoute ni ne se compare à celui-ci.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_effectifs(
+    caption=("Effectif et charges de personnel des entreprises publiques, hors secteur "
+             "financier et hors caisses de sécurité sociale : les quatre exercices publiés, "
+             "2018-2022. Chaque ligne porte sur un nombre d'entreprises différent. « Les 40 » : "
+             "l'échantillon que le rapport analyse entreprise par entreprise. Charges par "
+             "agent : calcul fait ici, pour les seuls exercices où les deux grandeurs portent "
+             "sur les mêmes entreprises. Source : ministère des Finances [@minfin-ep-2022, "
+             "p. 37 ; @minfin-ep-2023, p. 55 ; @minfin-ep-2024, p. 49 ; @minfin-ep-2025, p. 25]. "
+             "Parts calculées ici : dépenses de l'État hors service de la dette "
+             "[@minfin-remunerations] ; PIB de l'INS en base 2015, non rétropolé pour ces "
+             "années [@ins-cnat-2015]"))
+```
+
+- **Quatre points, quatre périmètres.** 99 836 agents pour 84 entreprises en 2018, 99 523 pour 86 en 2019, 96 305,5 pour 88 en 2020, 97 208 pour 85 en 2022 : le nombre d'entreprises change à chaque édition, et les quatre points ne forment pas une série. Le rapport ne donne aucun total pour 2021, ni avant 2018 ; il ne dit pas ce qu'il compte comme agent — permanent, contractuel ou équivalent temps plein.
+- **Le total de 2020.** Il est imprimé avec une demi-unité, et la somme des fiches des 40 entreprises de la même édition fait 86 182 agents là où le rapport imprime 81 889,5. Pour 2018, la somme des fiches fait 83 324 pour 85 287 imprimés ; pour 2019 et 2022, elle redonne le total.
+- **Une concentration forte.** Les 40 entreprises de l'échantillon font 85 à 86 % des agents. En 2022, les dix premières en emploient 61 629, soit 63 % du total, et la [STEG](#g-steg) à elle seule 13 473 (@fig-ep-effectifs).
+- **La masse salariale.** Les charges de personnel passent de 3 596,5 MD en 2018 à 4 279,3 MD en 2022 ; rapportées au PIB, elles restent entre 3,1 % et 3,4 %, et leur part dans les dépenses de l'État recule de 12,1 % à 9,3 % (@fig-ep-masse). Par agent, le calcul donne 39 600 D en 2019, 42 700 D en 2020 et 44 000 D en 2022 ; celui de 2020 repose sur le total d'agents le moins sûr des quatre.
+
+```{python}
+#| label: fig-ep-effectifs
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "effectifs",
+    caption=("Nombre d'agents des dix plus gros employeurs parmi les entreprises publiques, "
+             "hors secteur financier et hors caisses de sécurité sociale, par exercice et par "
+             "édition du rapport, 2016-2023"),
+    note_lecture=(
+        "Un cadre par entreprise, chacun à son échelle ; les dix entreprises sont rangées "
+        "selon leur effectif de 2022. Chaque couleur est une édition du rapport : elle relie "
+        "les exercices qu'elle donne et n'est reliée à aucune autre, de sorte qu'un même "
+        "exercice peut porter plusieurs points. Un point plein est une valeur que le rapport "
+        "dit réalisée, ou qu'il donne sans réserve ; un point creux, une valeur provisoire, "
+        "estimée, probable, ou tirée de comptes non approuvés. Pour l'Office des terres "
+        "domaniales, les éditions se contredisent : 3 892 agents en 2019 selon l'édition "
+        "LF 2021, 4 892 selon l'édition LF 2022 ; 4 001 en 2020 selon l'édition LF 2022, "
+        "5 177 selon l'édition LF 2024. La Poste, qui emploie 8 836 agents en 2022, est "
+        "classée par le rapport dans le secteur financier : elle n'est pas dans le total, et "
+        "figure au tableau complet."),
+)
+```
+
+- **Des mouvements contrastés.** L'effectif de la STEG passe de 12 031 agents en 2018 à 13 854 en 2021, puis 13 473 en 2022 et 13 979 en 2023, valeur provisoire. Celui de la Compagnie des phosphates de Gafsa passe de 6 098 en 2018 à 7 421 en 2019, puis baisse chaque année, jusqu'à 6 677 en 2023, valeur estimée. Celui du Groupe chimique tunisien baisse à chaque exercice, de 6 227 en 2017 à 4 726 en 2022, valeur provisoire.
+- **Des valeurs souvent sans comptes arrêtés.** Pour la Société des transports de Tunis, de 7 555 agents en 2018 à 6 791 en 2023, et pour Tunisair, de 3 781 à 3 107, le rapport ne donne que des valeurs provisoires, probables ou estimées.
+
+```{python}
+#| label: fig-ep-masse
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "masse",
+    caption=("Charges de personnel des entreprises publiques, hors secteur financier et hors "
+             "caisses de sécurité sociale, par édition du rapport, en dinars courants, en % des "
+             "dépenses de l'État hors service de la dette et en % du PIB, exercices 2017-2022"),
+    note_lecture=(
+        "Les traits sont les charges de personnel du tableau des agrégats : chaque édition "
+        "donne deux exercices sur un même ensemble d'entreprises, et n'est reliée à aucune "
+        "autre. Les losanges sont les charges que le rapport publie avec l'effectif total, "
+        "pour 82 à 88 entreprises selon l'exercice ; ils coïncident avec le tableau des "
+        "agrégats de la même édition pour 2020 et 2022. Les deux autres vues rapportent "
+        "chaque montant aux dépenses du budget de l'État hors service de la dette, puis au "
+        "PIB de la même année. Les charges de personnel des entreprises ne sont pas une "
+        "dépense de l'État : la part des dépenses donne une échelle, non une fraction du "
+        "budget. Le PIB est celui de l'Institut national de la statistique en base 2015, dans "
+        "sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est "
+        "écrite au-dessus du cadre (voir l'[annexe sur le "
+        "PIB](../annexe-pib.html#sec-pib-ruptures))."),
+)
+```
+
+:::: {.chronologie-repliable titre="Effectifs et charges de personnel de cinquante entreprises publiques, banques et caisses comprises : nombre d'agents et montants par exercice et par édition du rapport, 2016-2023"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_effectifs_entreprises(
+    caption=("Nombre d'agents de cinquante entreprises publiques, exercices 2016-2023 : les 40 "
+             "entreprises de l'échantillon, puis la Poste et la Caisse des prêts et de soutien "
+             "des collectivités locales, cinq banques et trois caisses de sécurité sociale. "
+             "Quand deux éditions donnent deux valeurs, toutes sont données et l'édition est "
+             "nommée. Un astérisque marque une valeur provisoire, estimée, probable, prévue ou "
+             "tirée de comptes non approuvés. Source : ministère des Finances "
+             "[@minfin-ep-2020 ; @minfin-ep ; @minfin-ep-2022 ; @minfin-ep-2024 ; "
+             "@minfin-ep-2025]"))
+ep.tableau_effectifs_entreprises(
+    col="charges_personnel_md",
+    caption=("Charges de personnel des mêmes entreprises, en millions de dinars courants, par "
+             "exercice ; mêmes conventions et mêmes sources que le "
+             "@tbl-ep-effectifs-entreprises"),
+    tbl_id="tbl-ep-charges-entreprises")
+```
+
+::::
+
+<!-- TODO (documentaliste) : effectif total de 2021 et d'avant 2018 (l'édition LF 2020 ne donne qu'une part, l'édition LF 2021 n'a pas le tableau) ; fiches des sociétés régionales de transport autres que Sfax et Bizerte ; statistique publique de l'emploi des entreprises publiques non trouvée (enquêtes de l'INS, fiches sur la Banque centrale et la Cour des comptes) ; les numéros de page cités pour les éditions LF 2022 à LF 2024 sont les numéros imprimés de la série (page_imprimee), à contrôler. -->
+## Les six éditions du rapport et leurs échantillons {#sec-ep-lp-editions}
+
+Le rapport sur les entreprises publiques ne porte jamais deux fois sur le même ensemble : aucune de ses séries ne se chaîne d'une édition à l'autre.
+
+| Édition | Entreprises recensées | Entreprises des agrégats de résultats | Entreprises de l'échantillon des flux avec l'État | Exercices des agrégats |
+|---|--:|--:|--:|---|
+| LF 2020 | 110 | aucun agrégat | 31 | — |
+| LF 2021 | 110 | 78 | 33 | 2017, 2018 |
+| LF 2022 | 111 | 77 | 50 | 2018, 2019 |
+| LF 2023 | 111 | 81 | 48 | 2019, 2020 |
+| LF 2024 | 114 | 88 | 48 | 2020, 2021 |
+| LF 2025 | 115 | 85 | 42, pour les dettes et créances croisées | 2021, 2022 |
+
+: Les six éditions du rapport sur les entreprises publiques : entreprises recensées, entreprises des agrégats, échantillon des flux avec l'État. Source : ministère des Finances [@minfin-ep-2020, p. 21 ; @minfin-ep, p. 7 et 20 ; @minfin-ep-2022, p. 13-14 ; @minfin-ep-2023, p. 21 ; @minfin-ep-2024, p. 23 ; @minfin-ep-2025, p. 13] {#tbl-ep-editions}
+
+<!-- TODO (rédacteur) : remplacer ce tableau fait main par un tableau engendré quand le recensement par édition sera versé dans tunisia-data. -->
+
+Les agrégats de résultats excluent toujours les sept entreprises du secteur financier, les trois caisses de sécurité sociale, une entreprise à l'arrêt et celles qui n'ont pas transmis leurs comptes — 12 à 19 selon l'édition. Les banques et les caisses sont en revanche dans l'échantillon des flux avec l'État.
+## Les résultats agrégés, par édition, 2017-2022 {#sec-ep-lp-resultats}
+
+Le résultat net agrégé des entreprises publiques, hors banques et hors caisses de sécurité sociale, est négatif pour chacun des six exercices publiés et dans chaque édition : de −177,9 MD (exercice 2019, 81 entreprises) à −4 187,1 MD (exercice 2018, 78 entreprises), soit de −0,1 % à −3,7 % du PIB.
+
+```{python}
+#| label: fig-ep-resultats
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "resultats",
+    caption=("Résultat net agrégé des entreprises publiques, hors secteur financier et hors "
+             "caisses de sécurité sociale, par édition du rapport, en dinars courants, en % des "
+             "dépenses de l'État hors service de la dette et en % du PIB, exercices 2017-2022"),
+    note_lecture=(
+        "Chaque édition du rapport donne deux exercices, sur un même ensemble d'entreprises : c'est un segment. La variation se lit à l'intérieur d'un segment, jamais d'un segment à l'autre : un même exercice a deux valeurs, celles de deux ensembles différents — le résultat de 2019 est de −0,7 milliard de dinars pour 77 entreprises et de −0,2 milliard pour 81. Le trait plein est le résultat net agrégé ; les pointillés sont la somme des résultats nets positifs (triangles vers le haut) et la somme des résultats négatifs (triangles vers le bas). "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        "Le résultat des entreprises n'est ni une dépense ni une recette de l'État : la part des dépenses donne une échelle. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
+)
+```
+
+- **Des pertes concentrées.** Pour l'exercice 2022, la somme des résultats négatifs est de 4 302,9 MD et celle des résultats positifs de 1 763,2 MD (@tbl-ep-resultats).
+- **Des produits qui contiennent les subventions.** Les produits d'exploitation comprennent les subventions d'exploitation : ils passent de 34,5 à 49,1 milliards de dinars entre 2021 et 2022, l'année où les transferts du budget augmentent de 6,3 milliards (@sec-ep-transferts). Le résultat d'exploitation positif de 2021 et de 2022 est un résultat après subventions.
+- **Des comptes en partie provisoires.** Pour l'exercice 2022, 62 des 85 entreprises ont des états financiers arrêtés ; pour les 23 autres, le rapport emploie des documents transmis par l'entreprise à défaut d'états financiers [@minfin-ep-2025, p. 13].
+
+:::: {.chronologie-repliable titre="Résultats agrégés des entreprises publiques : produits, charges, charges de personnel et résultats, montants par exercice et par édition, 2017-2022"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_resultats(
+    caption=("Résultats agrégés des entreprises publiques, hors secteur financier et hors "
+             "caisses de sécurité sociale, par exercice et par édition, 2017-2022 ; entre "
+             "parenthèses, le nombre d'entreprises. Dans l'édition LF 2022, le résultat "
+             "d'exploitation imprimé ne se déduit pas des autres lignes du tableau. Source : "
+             "ministère des Finances [@minfin-ep, p. 20 ; @minfin-ep-2022, p. 14 ; "
+             "@minfin-ep-2023, p. 21 ; @minfin-ep-2024, p. 23 ; @minfin-ep-2025, p. 13]"))
+```
+
+::::
+
+Les charges de personnel de ces entreprises vont de 3,4 milliards de dinars (exercice 2017, 78 entreprises) à 4,3 milliards (exercice 2022, 85 entreprises) ; elles sont exposées avec les effectifs (@sec-ep-effectifs).

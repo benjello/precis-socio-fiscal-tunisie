@@ -1,0 +1,79 @@
+# Les transferts du budget {#sec-ep-transferts .domicile-unique}
+
+Le budget de l'État verse 17,1 milliards de dinars en 2023 à l'ensemble des entreprises publiques et des établissements publics non administratifs, contre 6,9 milliards en 2017 : 35,2 % de ses dépenses hors service de la dette, contre 25,1 %, et 11,4 % du PIB, contre 6,7 %. **Ce total contient les versements aux caisses de sécurité sociale, les subventions de compensation et les crédits des établissements d'enseignement et de culture ; le montant « hors compensation, hors caisses » n'est pas calculé.** La dépense de compensation est exposée dans le volume [« La compensation »](../compensation/index.html), les versements aux caisses dans [« Les caisses de sécurité sociale »](../caisses/index.html).
+
+```{python}
+#| label: fig-ep-transferts
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "transferts",
+    caption=("Transferts du budget de l'État aux entreprises publiques et aux établissements "
+             "publics non administratifs, par secteur, en dinars courants, en % des dépenses de "
+             "l'État hors service de la dette et en % du PIB, 2016-2024"),
+    note_lecture=(
+        "Chaque barre est le total des transferts d'une année, dans la dernière édition du rapport qui la donne en réalisation. Les secteurs sont ceux du ministère qui porte le crédit : le secteur économique contient la subvention des produits alimentaires, des carburants, de l'électricité et du transport public, parce que les entreprises qui la reçoivent relèvent de ministères classés économiques ; le secteur social contient les caisses de sécurité sociale. La barre pointillée de 2016 est dans l'ancien périmètre, que le ministère révise à l'édition suivante : le trait vertical marque la rupture, et 2016 ne se compare pas à 2017. La barre hachurée de 2024 est un montant de loi de finances. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        'Les transferts sont eux-mêmes une part de ces dépenses : la deuxième vue est une part au sens propre. '
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est écrite au-dessus du cadre (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "),
+)
+```
+
+- **Qui reçoit.** Le classement est celui du ministère qui porte le crédit. En 2023, le secteur économique reçoit 12,7 milliards de dinars, le secteur social 3,1 milliards, la souveraineté 0,7 milliard, le secteur éducatif et culturel 0,6 milliard (@tbl-ep-transferts). Le rapport avertit que « de nombreux transferts à caractère social » — subvention des produits alimentaires et du transport public — sont classés au secteur économique [@minfin-transferts-2021, p. 5 ; @minfin-transferts-2025, p. 8].
+- **Sous quelle forme.** Des interventions, pour 14,7 milliards de dinars sur 17,1 en 2023 ; la rémunération fait 1,2 milliard, l'investissement 0,7 milliard, le fonctionnement 0,4 milliard.
+- **Le saut de 2022.** De 10,8 milliards de dinars en 2021 à 17,1 milliards en 2022, de 26,8 % à 37,0 % des dépenses de l'État et de 8,2 % à 12,2 % du PIB : la hausse est tout entière dans les interventions du secteur économique, où se trouve la compensation.
+- **Voté et exécuté.** L'exécution dépasse la loi de finances quatre années de suite : 9,9 milliards de dinars réalisés en 2020 pour 8,2 votés, 10,8 pour 7,7 en 2021, 17,1 pour 12,4 en 2022, 17,1 pour 14,5 en 2023 (@tbl-ep-transferts-editions).
+- **Qui paie.** Les ressources propres du budget, pour 15,7 milliards de dinars sur 17,1 en 2023 ; les comptes spéciaux du Trésor, pour 1,4 milliard ; le reste vient de crédits extérieurs affectés (@tbl-ep-transferts-sources).
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_transferts(
+    caption=("Transferts du budget de l'État aux entreprises publiques et aux établissements "
+             "publics non administratifs, total et secteurs, 2016-2024. Le total contient les "
+             "caisses de sécurité sociale, la compensation et les établissements d'enseignement. "
+             "Source : ministère des Finances, rapport sur les transferts et les garanties, "
+             "éditions indiquées [@minfin-transferts-2020, p. 5-6 ; @minfin-transferts-2021, "
+             "p. 3-4 ; @minfin-transferts-2022, p. 7-8 ; @minfin-transferts-2023, p. 7-8 ; "
+             "@minfin-transferts-2024, p. 7-8 ; @minfin-transferts-2025, p. 7-8]. Parts "
+             "calculées ici : dépenses de l'État hors service de la dette "
+             "[@minfin-remunerations] ; PIB de l'INS en base 2015, non rétropolé pour ces "
+             "années [@ins-cnat-2015]"))
+```
+
+<!-- TODO (documentaliste) : dépouiller les annexes par établissement du rapport sur les transferts et les garanties (édition LF 2020 : p. 62-123 ; éditions arabes : seconde moitié du rapport) pour isoler le total « hors compensation, hors caisses » ; le bloc du ministère du Transport est déjà versé (série transport-transferts-par-entreprise). Les parts imprimées par le rapport — 7,1 % du PIB en 2017, 7,9 % en 2018, 7,7 % en 2019 ; 25,1 %, 28,1 % et 26,0 % du budget — ne disent pas la base du PIB et ne sont pas reprises ici. -->
+
+:::: {.chronologie-repliable titre="Transferts du budget aux entreprises et établissements publics : montants par nature de dépense, par source de financement et par édition du rapport, 2016-2024"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_transferts_ventilation(
+    "nature",
+    caption=("Transferts du budget par nature de dépense, 2016-2024. 2016 est dans l'ancien "
+             "périmètre. La dernière colonne donne l'écart entre le total imprimé et la somme "
+             "des quatre natures : en 2023, le rapport imprime un total supérieur de 23,0 MD à "
+             "cette somme. Source : mêmes rapports que le @tbl-ep-transferts"),
+    tbl_id="tbl-ep-transferts-nature")
+ep.tableau_transferts_ventilation(
+    "source",
+    caption=("Transferts du budget par source de financement, 2016-2024. Source : mêmes "
+             "rapports que le @tbl-ep-transferts"),
+    tbl_id="tbl-ep-transferts-sources")
+ep.tableau_transferts_editions(
+    caption=("Total des transferts d'une même année dans les éditions successives du rapport, "
+             "en MD ; « (LF) » : montant de la loi de finances, les autres sont des "
+             "réalisations. L'édition LF 2020 est dans l'ancien périmètre : ses montants de 2017 "
+             "et de 2018 sont inférieurs de 0,7 milliard de dinars à ceux des éditions "
+             "suivantes. Source : mêmes rapports que le @tbl-ep-transferts"))
+```
+
+::::
+
+Par entreprise, les transferts ne sont connus que pour l'échantillon du rapport sur les entreprises publiques, qui n'est pas le périmètre de ce total (@sec-ep-lp-entreprises).
