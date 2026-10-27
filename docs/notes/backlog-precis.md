@@ -3729,13 +3729,26 @@ Ce qui reste :
   2024-86 (audit des recrutements 2011-2021, tout le secteur public : ce ne sont pas les comités d'audit des
   conseils). **Dates d'effet** calculées par la mention de dépôt au gouvernorat de Tunis imprimée en dernière page
   de chaque fascicule (lois n° 93-124, 96-74, 99-38, 2001-33, décrets n° 97-564, 2002-2197, 2004-2265, loi
-  n° 2006-36, et tous les textes neufs). **Restent** : aucun modificatif de la loi n° 89-9 après 2006 (fiche
-  `r-loi89-9-modificatifs-apres-2006`, plein texte du corpus non rejoué) ; liste des établissements : rien
-  après 2007 (fiche `r-epna-liste-modificatifs-apres-2007`) ; décret n° 97-565 (tutelle, 1997), que le décret de
-  2002 abroge, non lu (lisible au corpus, JORT n° 27 de 1997, p. 565-567) ; rapports annuels de la Cour de
-  discipline financière publiés au JORT de 1990 à 2010 (couche texte ou image selon l'année) et article 67 de la
-  loi de finances pour 1986, non lus ; application du calendrier de 2022 (nominations par concours) non suivie ;
-  lois n° 69-50 et 85-72 toujours en fourchette (fascicules datés de plusieurs jours). Le décret n° 2014-12 prend
+  n° 2006-36, et tous les textes neufs). **Intégré le 28 octobre 2026** (note
+  `docs/notes/statut-textes-non-lus-2026-10-28.md`) : décrets n° 89-378 et 97-565 au registre
+  (`r-ep-1989-tutelle`, `r-ep-1997-tutelle`) et en colonnes 1989 et 1997 de `tbl-ep-administrateurs` ; ligne
+  `r-ep-2002` réécrite avant (1997) → après (2002), décret n° 2002-2197 relu à l'image contre celui de 1997 (ce
+  que 2002 change : mandat renouvelable deux fois, délais d'approbation des contrats-programmes et des budgets,
+  nomination par le seul ministre de tutelle, contrôleur d'État observateur, mandataire spécial nommé par le
+  Premier ministre, destinataires des documents) ; article 67 de la loi de finances pour 1986 (`r-ep-1986-fautes`) ;
+  activité de la Cour de discipline financière 1986-2009 (`tbl-ep-cdf`, détail replié `tbl-ep-cdf-detail`,
+  vingt et une notices `cdf-rapport-01` à `-21`) ; passes du 27 octobre versées aux fiches
+  `r-loi89-9-modificatifs-apres-2006` et `r-epna-liste-modificatifs-apres-2007` ; fiche
+  `r-cdf-rapports-apres-2009`. **Restent** : fascicules sans couche texte de 2022 (n° 35, 91) et 2025 (n° 67, 70),
+  à lire à l'image ou à océriser pour clore les deux recherches sur la loi n° 89-9 et la liste des établissements ;
+  fascicules arabes de 2008 à 2013 (liste) ; texte qui retire l'Agence tunisienne d'Internet de la liste (piste :
+  rapport de la Cour des comptes, JORT n° 93 de 2008, p. 3603) ; décrets n° 97-566 et 97-552 (établissements hors
+  liste), **lisibles au corpus** (JORT n° 27 de 1997), non lus ; rapports de la Cour de discipline financière
+  après 2009 : édition arabe de 2010 à 2016 à océriser ; condamnations touchant une entreprise publique de 1999 à
+  2009, à compter arrêt par arrêt ; application du calendrier de 2022 (nominations par concours) non suivie ;
+  lois n° 69-50 et 85-72 toujours en fourchette (fascicules datés de plusieurs jours). Notices neuves à verser
+  dans Zotero et dans `precis/ar/entreprises_publiques/references.json` : `decret89-378`, `decret97-565`,
+  `cdf-rapport-01` à `cdf-rapport-21`. Le décret n° 2014-12 prend
   effet le 25 janvier 2014 (dépôt le 20 janvier) : à reporter dans le registre des « Rémunérations publiques »
   (TODO de `_regime_conventionnel.qmd`).
 - **Pages arabes** : la loi n° 89-9 et ses modificatifs n'ont été lus qu'en français ; les
@@ -3857,10 +3870,18 @@ Ce qui reste :
   liquidateurs, décret n° 2000-2280 — lus dans le corpus, dates d'effet calculées sur la date de dépôt imprimée au
   fascicule) ; section `#sec-ep-cessions-operations` (recueil 1998-2008 par année et nature de l'acte, 162 lignes en
   bloc replié ; séries `privatisation-recueil-par-annee-nature`, `-par-nature`, `-recoupement-annuel`, colonne
-  `nature` au recueil) ; une ligne sur les biens confisqués (décret-loi n° 2011-13, art. 1er, lu). **Restent** :
-  écarts gardés et non expliqués — 6 sociétés concédées au recueil contre 5 concessions au bilan ; recueil moins
-  relevé annuel de − 33,5 MD (1998), + 19,6 (1999), − 148,6 (2008) — à chercher dans des rapports annuels de la
-  Direction générale de la privatisation (**à obtenir**) ; tableaux I à V des plafonds de rémunération des
+  `nature` au recueil) ; une ligne sur les biens confisqués (décret-loi n° 2011-13, art. 1er, lu). **Intégré le
+  28 octobre 2026** (note `docs/notes/privatisation-ecarts-archives-2026-10-28.md`) : écarts du recueil avec le
+  relevé annuel (1998, 1999, 2008, et 2000-2007) expliqués opération par opération par la liste arabe des
+  opérations 1986-2009 (capture du 7 septembre 2012), tableau replié `tbl-ep-cessions-ecarts` ; « 6 noms contre
+  5 entreprises » en concession : règle du plus gros montant reconstituée par le précis ; fiche
+  `r-ep-privatisation-ecarts-recueil` ; notices neuves `dgpv-operations-1986-2009-ar`, `dgpv-recettes-par-mode`,
+  `dgpv-recueil-index-2007` (à verser dans Zotero et dans le `references.json` arabe). **Restent** : total imprimé
+  du tourisme et de l'artisanat (3 MD de plus que ses lignes), seul écart non expliqué ; mode retenu par la
+  Direction pour l'ONP et la SOCOMENA (non énoncé) ; pistes : version française ou anglaise du recueil PDF aux
+  archives du web, pages arabes de 2007 des secteurs transport et services ; pages de la liste arabe à relire à
+  l'image avant toute citation à la page ; versement de la liste comme série par opération dans tunisia-data ;
+  tableaux I à V des plafonds de rémunération des
   liquidateurs (décret n° 2000-2280, p. 2484-2488, **lisibles dans le corpus**, non transcrits) ; décret n° 89-377
   (composition de 1989) et décret n° 96-1225 (création du comité technique) — **lisibles dans le corpus** ;
   sociétés confisquées : domicile, décret-loi n° 2011-68, cession de 45 MD au rapport de clôture de 2022 ; textes

@@ -2567,7 +2567,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/1985/1985F/Jo09185.pdf",
-      "note": "citation-key: loi85-109-lf1986\nJORT n° 91 du 31 décembre 1985."
+      "note": "citation-key: loi85-109-lf1986\nJORT n° 91 du 31 décembre 1985.\nArt. 67 (« Cour de discipline financière »), FR p. 1740, lu à l'image le 27 octobre 2026."
     },
     {
       "id": "arrete-1989-02-15-frc",
@@ -4368,6 +4368,623 @@
       },
       "title-short": "BCT, Rapport annuel 2014",
       "note": "citation-key: bct-ra-2014\nTitre : couverture lue à l'image (« Rapport annuel 2014 ») ; couche texte chiffrée, le 27 octobre 2026. Rapport n° 56 de la BCT (catalogue « Rapport Annuel, n° 56 »). Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/Rapport_annuel_francais2014.pdf (15956710 octets, 209 pages, SHA-256 d8a413218e7afe5758054386c9042e29c021258f6b8fe9328ba1a279e1b96d4f, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
+    },
+    {
+      "id": "decret97-565",
+      "type": "legislation",
+      "title": "Décret n° 97-565 du 31 mars 1997, relatif aux modalités d'exercice de la tutelle des entreprises publiques, à l'approbation de leurs actes de gestion, à la représentation des participants publics dans leurs organes de gestion et de délibération et à la fixation des obligations mises à leur charge",
+      "title-short": "Décret n° 97-565 du 31 mars 1997",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "27",
+      "page": "565-567",
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            3,
+            31
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1997/1997F/Jo02797.pdf",
+      "note": "citation-key: decret97-565\nJORT n° 27 du 4 avril 1997, édition française, couche texte lue le 27 octobre 2026. Dépôt au gouvernorat de Tunis le 8 avril 1997 (dernière page du fascicule). Abrogé par le décret n° 2002-2197 (art. 29)."
+    },
+    {
+      "id": "decret89-378",
+      "type": "legislation",
+      "title": "Décret n° 89-378 du 15 mars 1989, relatif à la représentation de l'État, des collectivités publiques locales, des établissements publics et des sociétés dont le capital est entièrement détenu par l'État, dans les organes de gestion et de délibération des entreprises publiques, et aux modalités d'exercice de la tutelle sur ces entreprises",
+      "title-short": "Décret n° 89-378 du 15 mars 1989",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "23",
+      "page": "628-629",
+      "issued": {
+        "date-parts": [
+          [
+            1989,
+            3,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1989/1989F/Jo02389.pdf",
+      "note": "citation-key: decret89-378\nJORT n° 23 du 31 mars 1989, édition française, lu à l'image le 27 octobre 2026. Abrogé par le décret n° 97-565 (art. 28)."
+    },
+    {
+      "id": "cdf-rapport-01",
+      "type": "report",
+      "title": "Premier rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "57",
+      "page": "1245-1252",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            9,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo05790.pdf",
+      "note": "citation-key: cdf-rapport-01\nActivité de 1986 à 1989. Séance d'adoption : 31 mars 1990. Chiffres p. 1249-1251, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-02",
+      "type": "report",
+      "title": "Deuxième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "69",
+      "page": "1696-1700",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            10,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo06991.pdf",
+      "note": "citation-key: cdf-rapport-02\nActivité de l'année 1990. Séance d'adoption : 2 mars 1991. Chiffres p. 1696, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-03",
+      "type": "report",
+      "title": "Troisième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "75",
+      "page": "1487-1491",
+      "issued": {
+        "date-parts": [
+          [
+            1992,
+            11,
+            10
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1992/1992F/Jo07592.pdf",
+      "note": "citation-key: cdf-rapport-03\nActivité de l'année 1991. Séance d'adoption : 25 avril 1992. Chiffres p. 1487, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-04",
+      "type": "report",
+      "title": "Quatrième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "92",
+      "page": "2047-2051",
+      "issued": {
+        "date-parts": [
+          [
+            1993,
+            12,
+            3
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1993/1993F/Jo09293.pdf",
+      "note": "citation-key: cdf-rapport-04\nActivité de l'année 1992. Séance d'adoption : 22 mai 1993. Chiffres p. 2048, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-05",
+      "type": "report",
+      "title": "Cinquième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "100",
+      "page": "2012-2016",
+      "issued": {
+        "date-parts": [
+          [
+            1994,
+            12,
+            20
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1994/1994F/Jo10094.pdf",
+      "note": "citation-key: cdf-rapport-05\nActivité de l'année 1993. Séance d'adoption : 17 juin 1994. Chiffres p. 2013, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-06",
+      "type": "report",
+      "title": "Sixième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "3",
+      "page": "42-47",
+      "issued": {
+        "date-parts": [
+          [
+            1996,
+            1,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1996/1996F/Jo00396.pdf",
+      "note": "citation-key: cdf-rapport-06\nActivité de l'année 1994. Séance d'adoption : 30 mai 1995. Chiffres p. 43, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-07",
+      "type": "report",
+      "title": "Septième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "13",
+      "page": "223-226",
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            2,
+            14
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1997/1997F/Jo01397.pdf",
+      "note": "citation-key: cdf-rapport-07\nActivité de l'année 1995. Séance d'adoption : 17 mai 1996. Chiffres p. 224, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-08",
+      "type": "report",
+      "title": "Huitième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "14",
+      "page": "360-365",
+      "issued": {
+        "date-parts": [
+          [
+            1998,
+            2,
+            17
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1998/1998F/Jo01498.pdf",
+      "note": "citation-key: cdf-rapport-08\nActivité de l'année 1996. Séance d'adoption : 16 mai 1997. Chiffres p. 361, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-09",
+      "type": "report",
+      "title": "Neuvième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "29",
+      "page": "552-556",
+      "issued": {
+        "date-parts": [
+          [
+            1999,
+            4,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1999/1999F/Jo02999.pdf",
+      "note": "citation-key: cdf-rapport-09\nActivité de l'année 1997. Séance d'adoption : imprimée « Vendredi 29 Mai 1997 ». Chiffres p. 553, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-10",
+      "type": "report",
+      "title": "Dixième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "16",
+      "page": "537-540",
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            2,
+            25
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2000/2000F/Jo0162000.pdf",
+      "note": "citation-key: cdf-rapport-10\nActivité de l'année 1998. Séance d'adoption : 4 juin 1999. Chiffres p. 538, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-11",
+      "type": "report",
+      "title": "Onzième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "61",
+      "page": "1966-1970",
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            7,
+            31
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2001/2001F/Jo0612001.pdf",
+      "note": "citation-key: cdf-rapport-11\nActivité de l'année 1999. Séance d'adoption : 5 mai 2000. Chiffres p. 1967, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-12",
+      "type": "report",
+      "title": "Douzième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "61",
+      "page": "1971-1974",
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            7,
+            31
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2001/2001F/Jo0612001.pdf",
+      "note": "citation-key: cdf-rapport-12\nActivité de l'année 2000. Séance d'adoption : 30 mars 2001. Chiffres p. 1972, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-13",
+      "type": "report",
+      "title": "Treizième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "79",
+      "page": "2291-2303",
+      "issued": {
+        "date-parts": [
+          [
+            2002,
+            9,
+            27
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2002/2002F/Jo0792002.pdf",
+      "note": "citation-key: cdf-rapport-13\nActivité de l'année 2001. Séance d'adoption : 2 avril 2002. Chiffres p. 2292, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-14",
+      "type": "report",
+      "title": "Quatorzième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "12",
+      "page": "300-332",
+      "issued": {
+        "date-parts": [
+          [
+            2004,
+            2,
+            10
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2004/2004F/Jo0122004.pdf",
+      "note": "citation-key: cdf-rapport-14\nActivité de l'année 2002. Séance d'adoption : 24 mars 2003. Chiffres p. 302-303, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-15",
+      "type": "report",
+      "title": "Quinzième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "75",
+      "page": "2730-2751",
+      "issued": {
+        "date-parts": [
+          [
+            2004,
+            9,
+            17
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2004/2004F/Jo0752004.pdf",
+      "note": "citation-key: cdf-rapport-15\nActivité de l'année 2003. Séance d'adoption : 16 avril 2004. Chiffres p. 2732, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-16",
+      "type": "report",
+      "title": "Seizième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "54",
+      "page": "1636-1651",
+      "issued": {
+        "date-parts": [
+          [
+            2005,
+            7,
+            8
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2005/2005F/Jo0542005.pdf",
+      "note": "citation-key: cdf-rapport-16\nActivité de l'année 2004. Séance d'adoption : imprimée « 16 Avril 2004 ». Chiffres p. 1637, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-17",
+      "type": "report",
+      "title": "Dix-septième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "53",
+      "page": "1774-1821",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            7,
+            4
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0532006.pdf",
+      "note": "citation-key: cdf-rapport-17\nActivité de l'année 2005. Séance d'adoption : 29 avril 2006. Chiffres p. 1777-1779, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-18",
+      "type": "report",
+      "title": "Dix-huitième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "58",
+      "page": "2515-2549",
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            7,
+            20
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2007/2007F/Jo0582007.pdf",
+      "note": "citation-key: cdf-rapport-18\nActivité de l'année 2006. Séance d'adoption : 24 février 2007. Chiffres p. 2518-2519, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-19",
+      "type": "report",
+      "title": "Dix-neuvième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "56",
+      "page": "2081-2096",
+      "issued": {
+        "date-parts": [
+          [
+            2008,
+            7,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2008/2008F/Jo0562008.pdf",
+      "note": "citation-key: cdf-rapport-19\nActivité de l'année 2007. Séance d'adoption : 9 mai 2008. Chiffres p. 2083, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-20",
+      "type": "report",
+      "title": "Vingtième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "59",
+      "page": "2046-2064",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            7,
+            24
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009F/Jo0592009.pdf",
+      "note": "citation-key: cdf-rapport-20\nActivité de l'année 2008. Séance d'adoption : 28 avril 2009. Chiffres p. 2048, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "cdf-rapport-21",
+      "type": "report",
+      "title": "Vingt et unième rapport annuel de la Cour de discipline financière",
+      "author": [
+        {
+          "literal": "Cour de discipline financière"
+        }
+      ],
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "56",
+      "page": "1956-1968",
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            7,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2010/2010F/Jo0562010.pdf",
+      "note": "citation-key: cdf-rapport-21\nActivité de l'année 2009. Séance d'adoption : 26 mars 2010. Chiffres p. 1958, lus à l'image le 27 octobre 2026."
+    },
+    {
+      "id": "dgpv-operations-1986-2009-ar",
+      "type": "report",
+      "title": "Opérations de cession réalisées dans le cadre de la privatisation et de la restructuration des entreprises à participations publiques, par secteur (1986-2009)",
+      "title-short": "Direction générale de la privatisation, liste des opérations 1986-2009",
+      "author": [
+        {
+          "literal": "Premier ministère, Direction générale de la privatisation"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            12
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20120907033523id_/http://www.privatisation.gov.tn:80/www/en/download/recueil_op_privatisation_ar.pdf",
+      "note": "citation-key: dgpv-operations-1986-2009-ar\nDocument en arabe (« عمليات التفويت في إطار عمليات تخصيص وإعادة هيكلة المنشآت ذات المساهمات العمومية موزّعة حسب القطاع (1986-2009) »), arrêté au 31 décembre 2009, 27 p. ; une ligne par opération (objet, montant en milliers de dinars, année, mode, acquéreur) ; total imprimé p. 27 : 5 976 376 mD, 427 opérations. Capture des archives du web du 7 septembre 2012 ; copie hors git dans tunisia-data (data/raw/entreprises-publiques/archives-web/dgpv_recueil_op_privatisation_ar_wb20120907.pdf). Intitulé français traduit. Note : docs/notes/privatisation-ecarts-archives-2026-10-28.md.",
+      "language": "ar"
+    },
+    {
+      "id": "dgpv-recettes-par-mode",
+      "type": "webpage",
+      "title": "Répartition du produit (recettes) des privatisations et restructurations par mode",
+      "title-short": "Direction générale de la privatisation, recettes par mode",
+      "author": [
+        {
+          "literal": "Présidence du gouvernement, Direction générale de la privatisation"
+        }
+      ],
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            27
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      },
+      "URL": "https://privatisation.pm.gov.tn/fr/repartition-du-produit-recettes-des-privatisations-et-restructurations-par-mode",
+      "note": "citation-key: dgpv-recettes-par-mode\nPage consultée le 27 octobre 2026 ; statistiques arrêtées au 31 janvier 2009 : vente d'actions 99 entreprises, 4 698 MD ; augmentation de capital 1, 132 MD ; vente d'éléments d'actif 112, 427 MD ; concession 5, 706 MD ; total 217, 5 963 MD. Copie hors git dans tunisia-data (data/raw/entreprises-publiques/archives-web/dgpv_repartition_par_mode_2026-10-27.html). Note : docs/notes/privatisation-ecarts-archives-2026-10-28.md, § 2.3."
+    },
+    {
+      "id": "dgpv-recueil-index-2007",
+      "type": "webpage",
+      "title": "Recueil des opérations : statistiques générales (depuis le 01/10/1998 au 31/10/2006)",
+      "title-short": "Direction générale de la privatisation, index du recueil des opérations, 2007",
+      "author": [
+        {
+          "literal": "Premier ministère, Direction générale de la privatisation"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            1,
+            8
+          ]
+        ]
+      },
+      "URL": "https://web.archive.org/web/20070108191747id_/http://www.privatisation.gov.tn:80/www/fr/doc.asp?mcat=1&mrub=49&msrub=7&dev=true",
+      "note": "citation-key: dgpv-recueil-index-2007\nPage de l'ancien site de la Direction, capture des archives du web du 8 janvier 2007 : « Statistiques générales (Depuis le 01/10/1998 au 31/10/2006) ». Copie hors git dans tunisia-data (data/raw/entreprises-publiques/archives-web/dgpv_old_recueil_index_wb20070108.html). Note : docs/notes/privatisation-ecarts-archives-2026-10-28.md, § 2.2."
     }
   ]
 }

@@ -2582,7 +2582,14 @@
     couverture: 'jort_cache jusqu''au 2 octobre 2026, titres seuls (LIKE français sans accents, LIKE arabe, FTS), lois et décrets-lois postérieurs au 1er juillet 2006 : aucune loi modifiant la loi n° 89-9 ; ne ressortent que des articles de lois de finances, la loi n° 2007-33 (audiovisuel), le décret-loi n° 2020-7 et les décrets d''application de l''article 22 ter (2006-1555, 2009-2965, 2013-4953, 2020-1061). Ni le corpus local en plein texte, ni iort, ni pist n''ont été parcourus ; les fascicules inconnus de la base (outillage-sources, § 1 f) non plus. Note : docs/notes/entreprises-publiques-2026-10-11.md, § 5.4.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire: ['rejouer en plein texte sur le corpus local depuis 2011 (« 89-9 », « 9 لسنة 1989 »)']
+  - date: 2026-10-27
+    role: documentaliste
+    sources: [corpus_local, visas]
+    couverture: 'Plein texte du corpus local, 4 585 fascicules français et arabes de 2006 à 2026 (pdftotext ; marques bidirectionnelles retirées), « 89-9 du 1er février 1989 » et « عدد 9 لسنة 1989 » : 350 fascicules français et 144 arabes citent la loi ; leurs visas ne nomment aucun texte postérieur à la loi n° 2006-36 (une coquille « loi n° 2011-33 du 29 mars 2001 », JORT n° 78 de 2012, pour la loi n° 2001-33). Visa explicite du décret n° 2024-184 (JORT n° 47 de 2024, p. 1188) : « dont le dernier en date la loi n° 2006-36 du 12 juin 2006 ». Fascicules absents du corpus : 404 sur pist.tn dans les deux éditions, sauf 2020 n° 86, 96, 97, 98, 102, 125 et 2023 n° 122 (arabe), téléchargés et parcourus sans résultat. Non lus : 36 fichiers sans couche texte, dont les deux éditions des n° 35 et 91 de 2022 et 67 et 70 de 2025 ; textes qui modifieraient la loi sans la viser par son numéro.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire:
+  - lire à l'image ou océriser les fascicules sans couche texte (2022 n° 35 et 91, 2025 n° 67 et 70, deux éditions)
 
 - id: r-epna-liste-modificatifs-apres-2007
   objet: décret modifiant ou remplaçant, après le décret n° 2007-2560 du 23 octobre 2007, la liste des établissements publics à caractère non administratif considérés comme entreprises publiques (décret n° 2004-2265 du 27 septembre 2004)
@@ -2611,9 +2618,51 @@
     couverture: 'jort_cache jusqu''au 10 avril 2026, titres (LIKE français et arabe, FTS) : aucun décret modifiant la liste après le n° 2007-2560. Plein texte français, 2 002 fascicules de 2008 à 2026 (17 sans couche texte), « 2004-2265 » et « considéré comme entreprise publique » : les visas ne citent comme modificatifs que les n° 2006-2579, 2007-1865, 2007-2560 et, une fois, le n° 2019-758. Plein texte arabe, 1 547 fascicules de 2014 à 2026 (51 sans couche exploitable), « يعتبر / تعتبر … منشأة عمومية ». Cinq décrets classent un établissement par leur propre article premier : n° 2019-758, 2023-452, 2024-5, 2024-184, 2024-500. Lacunes : fascicules arabes de 2008 à 2013 sans couche texte (période couverte par le français seul) ; autres formulations (« a le caractère d''entreprise publique », « est classé parmi ») non essayées ; aucune sortie n''est atteignable par cette voie.'
     couvert_jusqu_au: 2026-04-10
     resultat: aucun
+  - date: 2026-10-27
+    role: documentaliste
+    sources: [corpus_local, visas]
+    couverture: 'Plein texte du corpus local, 4 585 fascicules de 2006 à 2026 (français et arabes, marques bidirectionnelles retirées) : formules françaises « caractère d''entreprise publique », « parmi les entreprises publiques », « comme (une) entreprise(s) publique(s) » ; arabes « صبغة المنشأة العمومية », « تعتبر / يعتبر / تكتسي / تصنف … منشأة عمومية ». Visas du décret n° 2004-2265 : modificatifs nommés n° 2006-2579, 2007-1865, 2007-2560, aucun après. Classements par texte de création : n° 2019-758, 2023-452, 2024-5, 2024-184, 2024-500, déjà connus. Une sortie signalée par le rapport de la Cour des comptes (JORT n° 93 du 18 novembre 2008, p. 3603) : Agence tunisienne d''Internet. Fascicules absents du corpus : voir la passe de r-loi89-9-modificatifs-apres-2006 du même jour (404 sur pist.tn, sept fascicules téléchargés et parcourus sans résultat). Non lus : fascicules arabes de 2008 à 2013, 36 fichiers sans couche texte.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
-  - rejouer les formulations « a le caractère d'entreprise publique » et « est classé parmi les entreprises publiques » en plein texte
-  - 'chercher les sorties : décrets de dissolution, de fusion ou de transformation d''un établissement de la liste après 2007'
+  - 'chercher les sorties : décrets de dissolution, de fusion ou de transformation d''un établissement de la liste après 2007 ; piste : l''Agence tunisienne d''Internet, qui « n''est plus considérée comme entreprise publique » d''après le rapport de la Cour des comptes (JORT n° 93 du 18 novembre 2008, p. 3603)'
+  - lire à l'image ou océriser les fascicules sans couche texte (2022 n° 35 et 91, 2025 n° 67 et 70, deux éditions) et les fascicules arabes de 2008 à 2013
+
+- id: r-cdf-rapports-apres-2009
+  objet: rapports annuels de la Cour de discipline financière postérieurs au vingt et unième (activité 2009, JORT n° 56 du 13 juillet 2010), jusqu'à la reprise de ses attributions par la Cour des comptes au 1er janvier 2020
+  ou: [precis/fr/entreprises_publiques/_statut.qmd#sec-ep-fautes-gestion]
+  requetes:
+    titres_like: ['%discipline financiere%']
+    iort_ar: [دائرة الزجر المالي]
+    plein_texte: [discipline financière, rapport annuel de la cour de discipline, vingt-deuxième rapport, دائرة الزجر المالي]
+    depuis: 2010-07-14
+  passes:
+  - date: 2026-10-27
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache jusqu''au 2 octobre 2026, titres (LIKE et FTS) : vingt et un rapports de 1990 à 2010, aucun après (les 5e, 7e et 9e ne sont pas indexés sous ce titre et ont été retrouvés en plein texte : JORT n° 100 de 1994, n° 13 de 1997, n° 29 de 1999). Plein texte français 2010-2019 (« discipline financi », ordinaux « vingt-deuxième », « 22ème », « vingt-troisième ») : seulement des nominations, des renvois à la loi n° 85-74 et une mention d''affaires en cours (2019, n° 39). Édition arabe 2017-2019 (« دائرة الزجر المالي ») : nominations seulement ; elle couvre les numéros manquants en français en 2018 et 2019, sauf le n° 83 de 2019 (404 sur pist.tn). Lacunes : édition arabe 2010-2016 sans couche texte suffisante ; 2015 n° 36 français illisible.'
+    couvert_jusqu_au: 2019-12-31
+    resultat: aucun
+  a_faire:
+  - océriser l'édition arabe 2010-2016 ou parcourir les sommaires français de ces années pour confirmer l'absence
+
+- id: r-ep-privatisation-ecarts-recueil
+  objet: pièce de la Direction générale de la privatisation qui donne le total des opérations du tourisme et de l'artisanat (225 050,85 mD au recueil des opérations depuis 1998, 3 000 mD de plus que ses lignes) et le mode retenu au bilan global pour les entreprises mêlant concession et vente d'actifs (ONP, SOCOMENA)
+  ou: [precis/fr/entreprises_publiques/_cessions.qmd#sec-ep-cessions-operations]
+  requetes:
+    plein_texte: [الإدارة العامة للتخصيص, Direction générale de la privatisation]
+    depuis: 1998-10-01
+  passes:
+  - date: 2026-10-27
+    role: documentaliste
+    sources: [web]
+    couverture: 'web.archive.org, index CDX de privatisation.gov.tn* (620 URL, collapse urlkey) et de privatisation.pm.gov.tn* (442 URL) ; téléchargés : recueil arabe 1986-2009 (capture 2012-09-07), classeur top cession 2003 (2008-09-20), classeur 1987-2008 (2026-01-18), pages statistiques et recueil 2006-2007 de l''ancien site, pages actuelles par mode, par secteur et IDE (consultées le 2026-10-27). Lacunes : pages FR du recueil 2007 pour tourisme, commerce, transport et services non capturées ; pages AR 2007 transport, services financiers et autres services non téléchargées ; requête CDX ciblée sur recueil_op_privatisation_fr.pdf et _en.pdf non aboutie (Internet Archive hors service) ; rapports annuels BCT et lois de règlement non dépouillés ; plein_texte non joué sur le corpus JORT.'
+    couvert_jusqu_au: 2026-10-27
+    resultat: aucun
+  a_faire:
+  - rejouer le CDX sur recueil_op_privatisation_fr.pdf et _en.pdf
+  - télécharger ar/directdoc.asp docid 284 à 288 (captures 2007-09-15)
+  - jouer plein_texte sur le corpus JORT
 
 - id: r-ep-tutelle-modificatifs-apres-2010
   objet: décret modifiant ou remplaçant, après le décret n° 2010-3170 du 13 décembre 2010, le tableau de désignation de l'autorité de tutelle sur les entreprises publiques et les établissements publics à caractère non administratif (décret n° 2005-910 du 24 mars 2005)
