@@ -19,7 +19,9 @@ exercice,poste,valeur_md,valeur_dinars,rapport,page_imprimee,page_pdf,lecture,li
 2006,part_etat,350.38,350380000,ra-2006,292,314,image,Part revenant à l'Etat,,
 2006,part_etat_versee,350.0,350000000,ra-2007,229,252,image,"encaissement, en juillet, de la part revenant à l'Etat des bénéfices, au titre de l'exercice 2006, de la Banque centrale (350 MDT)",2007.0,arrondi au million de dinars
 2006,resultat_exercice,367.389191,367389191,ra-2006,292,314,image,Résultat de l'exercice,,
-2007,part_etat_versee,435.0,435000000,ra-2008,218,238,image,"encaissement de la part revenant à l'Etat des bénéfices réalisés, au titre de l'exercice 2007, par la Banque centrale de Tunisie (435 MDT)",2008.0,entre mars et septembre 2008 ; arrondi au million de dinars ; la répartition du résultat de l'exercice 2007 n'est pas imprimée dans le rapport 2007
+2007,part_etat,435.0,435000000,jort-2008-33,1294,31,image,Part revenant à l'Etat,,
+2007,part_etat_versee,435.0,435000000,ra-2008,218,238,image,"encaissement de la part revenant à l'Etat des bénéfices réalisés, au titre de l'exercice 2007, par la Banque centrale de Tunisie (435 MDT)",2008.0,"entre mars et septembre 2008 ; arrondi au million de dinars ; la répartition du résultat de l'exercice 2007, absente du rapport 2007, est lue dans les états financiers publiés au Journal officiel (lignes suivantes)"
+2007,resultat_exercice,446.721198,446721198,jort-2008-33,1294,31,image,Résultat de l'exercice,,"répartition approuvée par le Conseil d'administration le 28 février 2008, publiée avec les états financiers au Journal officiel (édition française) n° 33 du 22 avril 2008 ; le rapport annuel 2007 ne l'imprime pas"
 2008,part_etat,432.0,432000000,ra-2008,298,318,image,Part revenant à l'Etat,,"le rapport 2009 la porte encore fin 2009 parmi les comptes d'ordre et à régulariser, « en attendant l'appel de fonds par le Ministère des Finances » (p. 289, fichier p. 309 ; note 25, p. 297, fichier p. 317)"
 2008,resultat_exercice,446.862335,446862335,ra-2008,298,318,image,Résultat de l'exercice,,
 2009,part_etat,250.0,250000000,ra-2009,299,319,image,Part revenant à l'Etat,,
