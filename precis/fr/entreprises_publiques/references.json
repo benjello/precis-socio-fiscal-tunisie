@@ -2548,6 +2548,762 @@
       },
       "title-short": "BCT, Rapport annuel 2010",
       "note": "citation-key: bct-ra-2010\n52ème Rapport annuel : lettre introductive lue en couche texte (« 52ème Rapport annuel », « relatif à l'exercice 2010 ») ; le rapport couvre aussi sommairement le premier semestre 2011, le 6 octobre 2026. Rapport n° 52 de la BCT (catalogue « Rapport Annuel, n° 52 »). Aucune date de parution lue, d'où l'absence de date. Le PDF de bct.gov.tn (HTTP 200 le 6 octobre 2026, 5 678 102 octets, 132 pages) est identique en taille à la copie locale de tunisia-data (data/raw/bct-archives/109/rapport2010.pdf, SHA-256 b7ee0994745b5b5adc73f0fac95bc9a4e1fc257b7fc66ca13bd3b35998589db5, ignorée par git). Aucune page de ce rapport n'est citée par cette notice : les pages utilisées sont celles que portent les lignes de source des figures et le texte qui les cite. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 6 octobre 2026."
+    },
+    {
+      "id": "steg-ef-2014",
+      "type": "report",
+      "title": "États financiers de l'exercice 2014",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2014",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2014.pdf",
+      "note": "citation-key: steg-ef-2014\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2014.pdf (3 529 695 octets, 56 pages, SHA-256 fc038d1305f1b433edb64175d91cc5af4e2c6dbaa7473d7a44640ae55e5e7bcd), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : note 11 (p. 23), faits marquants (p. 7), note II-2 sur les subventions d'exploitation (p. 35). Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2016",
+      "type": "report",
+      "title": "États financiers de l'exercice 2016",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2016",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2016.pdf",
+      "note": "citation-key: steg-ef-2016\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2016.pdf (21 079 066 octets, 56 pages, SHA-256 9eb8bae1e7981edc5de3142038f63c3f1425ab400e2604e0b9a7098c814ac219), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 7), prix moyen d'achat de la tep de gaz, coût de revient et résultat par kWh de 2015 et 2016. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2018",
+      "type": "report",
+      "title": "États financiers de l'exercice 2018",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2018",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2018.pdf",
+      "note": "citation-key: steg-ef-2018\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2018.pdf (3 626 398 octets, 64 pages, SHA-256 a6f3aa2a26fc6548017a02e18fca3ded0b586f6e8921355fabd3cd4025eec4aa), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 8), prix moyen d'achat de la tep de gaz de 2017 et 2018. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2019",
+      "type": "report",
+      "title": "États financiers de l'exercice 2019",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2019",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2019.pdf",
+      "note": "citation-key: steg-ef-2019\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2019.pdf (3 628 617 octets, 56 pages, SHA-256 7559f7a1c4203364b82701074b622a2480593110223c815ccfd56e29bf7a8580), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 5), prix moyen d'achat de la tep de gaz de 2019. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2021",
+      "type": "report",
+      "title": "États financiers de l'exercice 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2021",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2021.pdf",
+      "note": "citation-key: steg-ef-2021\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2021.pdf (3 524 391 octets, 62 pages, SHA-256 b3561eba66053ee33376ab004237214140ab07e0f4bf10ca9b2328f4f025885e), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 7), prix moyen d'achat de la tep de gaz de 2020 et 2021. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2022",
+      "type": "report",
+      "title": "États financiers de l'exercice 2022",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2022",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2022.pdf",
+      "note": "citation-key: steg-ef-2022\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2022.pdf (1 496 309 octets, 48 pages, SHA-256 4b22509f8de495e601a451b209e13df7e568026900b4a73c4c9c69aaf3c6df41), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 3), prix moyen d'achat de la tep de gaz de 2022. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2023",
+      "type": "report",
+      "title": "États financiers de l'exercice 2023",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2023",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2023.pdf",
+      "note": "citation-key: steg-ef-2023\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2023.pdf (1 548 884 octets, 47 pages, SHA-256 c4da7e9734676cec50f04a5f34410893eb6e6d954d738ace8d295bd00aa46c9b), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : faits marquants (p. 3), prix moyen d'achat de la tep de gaz de 2023. Preuve : couche texte, relue le 17 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2015",
+      "type": "report",
+      "title": "États financiers de l'exercice 2015",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2015",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2015.pdf",
+      "note": "citation-key: steg-ef-2015\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2015.pdf (40 796 933 octets, 60 pages, SHA-256 1d1ccb8d770f903c22bb3a3a972f7a187970706dfb5a5770b83fe939bd5560fd), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : bilan (p. 12-13) et état de résultat (p. 15) ; lu à l'image, sans couche texte, le 27 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2017",
+      "type": "report",
+      "title": "États financiers de l'exercice 2017",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2017",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2017.pdf",
+      "note": "citation-key: steg-ef-2017\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2017.pdf (5 602 084 octets, 58 pages, SHA-256 4bc2bd7d94a4574e57090be9cdd9ce6d444cedf3b231f7cf258d2e57772919e4), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : bilan (p. 12-13) et état de résultat (p. 15) ; couche texte relue à l'image, le 27 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "steg-ef-2020",
+      "type": "report",
+      "title": "États financiers de l'exercice 2020",
+      "author": [
+        {
+          "literal": "Société tunisienne de l'électricité et du gaz"
+        }
+      ],
+      "publisher": "Société tunisienne de l'électricité et du gaz",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "STEG, états financiers 2020",
+      "URL": "https://www.steg.com.tn/system/files/pdf/etat_financier_2020.pdf",
+      "note": "citation-key: steg-ef-2020\nDocument en ligne sur le site de la STEG, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/minenergie/steg/etats-financiers/steg_ef_2020.pdf (15 702 920 octets, 57 pages, SHA-256 655f1f4b03fea8ae679d218dc52c73246f771ec7218dea5a7bb8e7e312fd27c9), ignorée par git ; catalogue sources/minenergie-steg-urls.csv. Cité pour : bilan (p. 18-19) et état de résultat (p. 21) ; lu à l'image, sans couche texte, le 27 octobre 2026. Document en français, aucune édition arabe cherchée."
+    },
+    {
+      "id": "dl62-8-steg",
+      "type": "legislation",
+      "title": "Décret-loi n° 62-8 du 3 avril 1962 (28 chaoual 1381), portant création et organisation de la Société tunisienne de l'électricité et du gaz",
+      "title-short": "Décret-loi n° 62-8 du 3 avril 1962",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "18",
+      "page": "363-367",
+      "issued": {
+        "date-parts": [
+          [
+            1962,
+            4,
+            3
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1962/1962F/Jo01862.pdf",
+      "note": "citation-key: dl62-8-steg\nJORT n° 18 du 3 avril 1962. Articles 1 à 6 lus à l'image le 27 octobre 2026 (p. 363-364)."
+    },
+    {
+      "id": "decret-1956-12-27-sncft",
+      "type": "legislation",
+      "title": "Décret du 27 décembre 1956 (24 djoumada I 1376), portant approbation des statuts de la Société nationale des chemins de fer tunisiens (S.N.C.F.T.)",
+      "title-short": "Décret du 27 décembre 1956 (SNCFT)",
+      "container-title": "Journal officiel tunisien",
+      "issue": "104",
+      "page": "1756-1761",
+      "issued": {
+        "date-parts": [
+          [
+            1956,
+            12,
+            27
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1956/1956F/Jo10456.pdf",
+      "note": "citation-key: decret-1956-12-27-sncft\nJournal officiel tunisien n° 104 du 28 décembre 1956. Décret et articles 1 à 6 des statuts lus à l'image le 27 octobre 2026 (p. 1756)."
+    },
+    {
+      "id": "loi72-22-etap",
+      "type": "legislation",
+      "title": "Loi n° 72-22 du 10 mars 1972, portant création de l'Entreprise tunisienne d'activités pétrolières",
+      "title-short": "Loi n° 72-22 du 10 mars 1972",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "11",
+      "page": "314",
+      "issued": {
+        "date-parts": [
+          [
+            1972,
+            3,
+            10
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1972/1972F/Jo01172.pdf",
+      "note": "citation-key: loi72-22-etap\nJORT n° 11 des 10-14 mars 1972. Articles 1 à 4 lus à l'image le 27 octobre 2026 (p. 314)."
+    },
+    {
+      "id": "etap-ra-2005",
+      "type": "report",
+      "title": "Rapport annuel 2005",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2005",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2005/RA-2005-fr.pdf",
+      "note": "citation-key: etap-ra-2005\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2005.pdf (1 563 154 octets, 58 pages, SHA-256 76216fd9de8a1751802ca649d7c082d4d1dcf6466913482db20d84e29ce791fb), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 7 et 55 (pages sans numéro imprimé : rang dans le fichier), lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2006",
+      "type": "report",
+      "title": "Rapport annuel 2006",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2006",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2006/RA-2006-fr.pdf",
+      "note": "citation-key: etap-ra-2006\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2006.pdf (32 844 480 octets, 66 pages, SHA-256 7a92faeeb402be87b59bf58981561dd2bfb723c1f11b5d8bed8d294826ff8bb1), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 55 et 66 (la seconde sans numéro imprimé : rang dans le fichier), lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2007",
+      "type": "report",
+      "title": "Rapport annuel 2007",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2007",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2007/RA-2007-fr.pdf",
+      "note": "citation-key: etap-ra-2007\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2007.pdf (316 542 767 octets, 61 pages, SHA-256 84e932ce9d1d267f55bbdff7af3126f3e5d27891f87c666cf3087e9211997a13), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 4 et 51, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2008",
+      "type": "report",
+      "title": "Rapport annuel 2008",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2008",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2008/RA-2008-fr.pdf",
+      "note": "citation-key: etap-ra-2008\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2008.pdf (45 016 221 octets, 60 pages, SHA-256 af5f64a954a5766a219948ad90ff06e0b41a412f20f3069031817c5764f4a7b8), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 43 et 51, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2009",
+      "type": "report",
+      "title": "Rapport annuel 2009",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2009",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2009/RA-2009-fr.pdf",
+      "note": "citation-key: etap-ra-2009\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2009.pdf (864 196 octets, 34 pages, SHA-256 8bd1bfbd1190c0460303c23c598f03f69606803d341b5aa5c5dc67b3dc19db3f), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 4 et 61, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2010",
+      "type": "report",
+      "title": "Rapport annuel 2010",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2010",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2010/RA-2010-fr.pdf",
+      "note": "citation-key: etap-ra-2010\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2010.pdf (5 076 302 octets, 80 pages, SHA-256 4df1b3c834d99fcff366c4aa916aa790088d2108962a30e37c2b7fe6f0553626), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 4 et 70, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2011",
+      "type": "report",
+      "title": "Rapport annuel 2011",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2011",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2011/RA-2011-fr.pdf",
+      "note": "citation-key: etap-ra-2011\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2011.pdf (3 425 776 octets, 73 pages, SHA-256 19923be94382fa5d6253044439b1cd8ede48dc45eb378b04936d86e09d3cdfec), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 4 et 63, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2012",
+      "type": "report",
+      "title": "Rapport annuel 2012",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2012",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2012/RA-2012-fr.pdf",
+      "note": "citation-key: etap-ra-2012\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2012.pdf (38 199 442 octets, 89 pages, SHA-256 834015ae7a147c60c58cdbf5368be8e337b9ff66dd71ee9916cf028fe9fa608a), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 2 et 78, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2013",
+      "type": "report",
+      "title": "Rapport annuel 2013",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2013",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2013/RA-2013-fr.pdf",
+      "note": "citation-key: etap-ra-2013\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2013.pdf (5 822 426 octets, 88 pages, SHA-256 cdf938e8d5a75b8adca0a263c584c21ebd36266377c0e9a409882d497e1b5256), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 4 et 79, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2014",
+      "type": "report",
+      "title": "Rapport annuel 2014",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2014",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2014/RA-2014-fr.pdf",
+      "note": "citation-key: etap-ra-2014\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2014.pdf (7 535 974 octets, 105 pages, SHA-256 2e4ea6ee93f670a87668c219b0af1b5a0cd80eb41fd3d64037a62fc3ee09d2fe), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 2 et 96, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2015",
+      "type": "report",
+      "title": "Rapport annuel 2015",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2015",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2015/RA-2015-fr.pdf",
+      "note": "citation-key: etap-ra-2015\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2015.pdf (114 389 032 octets, 114 pages, SHA-256 d9c73d130fb36f3e896fb81844d3e2d445a1b010b2b3fb008b0d338d03537cc7), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 83 et 96, lues le 27 octobre 2026. Document en français. La page 1 du fichier porte deux couvertures, « 2015 » et « RAPPORT ANNUEL 2016 » ; le corps couvre l'exercice 2015."
+    },
+    {
+      "id": "etap-ra-2016",
+      "type": "report",
+      "title": "Rapport annuel 2016",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2016",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2016/RA-2016-fr.pdf",
+      "note": "citation-key: etap-ra-2016\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2016.pdf (10 617 391 octets, 132 pages, SHA-256 ee1c1ddc0f425d3259f7c0c1876aa7fdaec431f121b1a0b874bed099e5d6162f), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 102, 112, 113 et 127, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2017",
+      "type": "report",
+      "title": "Rapport annuel 2017",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2017",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2017/RA-2017-fr.pdf",
+      "note": "citation-key: etap-ra-2017\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2017.pdf (36 825 325 octets, 121 pages, SHA-256 a24f785eae6ef378e40a71be43ef0a7f87a06a3ba2684a1f1ff18bbc0ca22c82), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 90 et 106, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2018",
+      "type": "report",
+      "title": "Rapport annuel 2018",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2018",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2018/RA-2018-fr.pdf",
+      "note": "citation-key: etap-ra-2018\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2018.pdf (16 431 724 octets, 143 pages, SHA-256 db3adc32787363f2ecf79e9fa3dfe5df48e2d831baaaa3bc231af5cdfb0c21ce), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 112 et 128, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2019",
+      "type": "report",
+      "title": "Rapport annuel 2019",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2019",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2019/RA-2019-fr.pdf",
+      "note": "citation-key: etap-ra-2019\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2019.pdf (16 149 188 octets, 137 pages, SHA-256 bf05538926d512359f5ed43d5a884f0eee6ee0dd91680b2033a58ca3a0e8fbb8), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 109, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2021",
+      "type": "report",
+      "title": "Rapport annuel 2021",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2021",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2021/RA-2021-fr.pdf",
+      "note": "citation-key: etap-ra-2021\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2021.pdf (17 319 810 octets, 130 pages, SHA-256 8b5a6e3d813fdba62968baeb4def977a027e54e8d725b2df3941cc4bfc6cfe11), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 94 et 116, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2022",
+      "type": "report",
+      "title": "Rapport annuel 2022",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2022",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2022/RA-2022-fr.pdf",
+      "note": "citation-key: etap-ra-2022\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2022.pdf (2 672 621 octets, 138 pages, SHA-256 f01c1e6616e7bf2b281fa9d10d6105e70fcb047376f4efec1c1b1079609d99cf), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 96 et 121, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2023",
+      "type": "report",
+      "title": "Rapport annuel 2023",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2023",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2023/RA-2023-fr.pdf",
+      "note": "citation-key: etap-ra-2023\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2023.pdf (8 572 480 octets, 134 pages, SHA-256 04007d54458def5acf06406d4494e4916e3a18b3aa0984db884fa18c17fda30a), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 87 et 115, lues le 27 octobre 2026. Document en français."
+    },
+    {
+      "id": "etap-ra-2024",
+      "type": "report",
+      "title": "Rapport annuel 2024",
+      "author": [
+        {
+          "literal": "Entreprise tunisienne d'activités pétrolières"
+        }
+      ],
+      "publisher": "Entreprise tunisienne d'activités pétrolières",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            17
+          ]
+        ]
+      },
+      "title-short": "ETAP, rapport annuel 2024",
+      "URL": "https://www.etap.com.tn/storage/downloads/annual%20reports/2024/RA-2024-fr.pdf",
+      "note": "citation-key: etap-ra-2024\nDocument en ligne sur le site de l'ETAP, récupéré le 17 octobre 2026. Copie locale : tunisia-data/data/raw/entreprises-publiques/etap/etap_ra_2024.pdf (14 939 740 octets, 110 pages, SHA-256 b7acbbd6662891864d98861bebf650c6ca61efc9f68174e0722009767156b55a), ignorée par git ; catalogue sources/entreprises-publiques-urls.csv. Cité pour : effectif, produits d'exploitation, revenus et résultat net, p. 81 et 94, lues le 27 octobre 2026. Document en français."
     }
   ]
 }

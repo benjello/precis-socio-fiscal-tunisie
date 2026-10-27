@@ -1,4 +1,10 @@
-# La dizaine d'entreprises les plus lourdes {#sec-ep-lp-entreprises .domicile-unique}
+# Les grandes entreprises {#sec-ep-lp-entreprises .domicile-unique}
+
+Ce chapitre présente les entreprises publiques qui pèsent le plus dans les comptes de l'État. Il donne d'abord les transferts du budget et les résultats nets d'une douzaine d'entre elles, puis une section par entreprise : la Société tunisienne de l'électricité et du gaz (STEG), l'Entreprise tunisienne d'activités pétrolières (ETAP) et la Société nationale des chemins de fer tunisiens (SNCFT). Chaque section dit la naissance et le statut de l'entreprise, ses comptes, sa dette, sa subvention d'exploitation, son emploi et sa longue période.
+
+Deux familles de sources sont lues, sans jamais être raccordées. La première est la fiche par entreprise du rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : exercices 2018 à 2023, en trois éditions. Le dernier exercice de chaque édition y est provisoire, estimé ou probable, et l'édition suivante le révise souvent. La seconde est faite des comptes que l'entreprise publie elle-même : états financiers de la STEG, rapports annuels de l'ETAP.
+
+## Transferts et résultats, 2017-2022 {#sec-ep-ge-ensemble}
 
 Trois entreprises reçoivent l'essentiel des transferts de l'échantillon : la STIR, l'Office des céréales et la STEG, soit 10,9 milliards de dinars sur 14,6 en 2022, valeur provisoire. Toutes trois portent la compensation — carburants, céréales, électricité et gaz.
 
@@ -37,9 +43,10 @@ ep.tableau_resultats_entreprises(
              "sncft", "office_commerce", "rnta", "pct"))
 ```
 
-- **Des pertes chaque année.** La Société des transports de Tunis (Transtu) et la Société nationale des chemins de fer tunisiens (SNCFT) sont en perte à chacun des six exercices ; l'Office des céréales, à chacun des cinq où il est classé.
+- **Des pertes chaque année.** La Société des transports de Tunis (Transtu) et la SNCFT sont en perte à chacun des six exercices ; l'Office des céréales, à chacun des cinq où il est classé.
 - **Des résultats révisés.** Le résultat de 2020 du Groupe chimique tunisien vaut −205,0 MD dans l'édition LF 2023 et −593,3 MD dans l'édition LF 2024.
 - **Des transferts révisés à la hausse.** Les transferts de 2019 à la STIR valent 1 296,0 MD dans l'édition LF 2021 et 1 905,3 MD dans l'édition LF 2023 : la subvention d'une année est soldée les années suivantes (@tbl-ep-transferts-revisions).
+- **Le résultat retenu par les classements** est le résultat net avant modifications comptables : −42,7 MD pour la STEG en 2021, quand sa fiche donne aussi 3 469,6 MD après ces modifications (@sec-ep-steg).
 
 :::: {.chronologie-repliable titre="Transferts du budget par entreprise : montants d'une même année dans les éditions successives du rapport, 2017-2022"}
 
@@ -58,4 +65,189 @@ ep.tableau_transferts_revisions(
 
 ::::
 
-<!-- TODO (documentaliste) : des fiches par entreprise du rapport, seuls les effectifs et les charges de personnel sont versés (section des effectifs) ; restent la dette, la subvention d'exploitation et le total des passifs (éditions arabes : tableaux tournés d'un quart de tour) : relire à l'image puis verser, pour STEG, STIR, Tunisair, Transtu, SNCFT, SONEDE, ETAP, Groupe chimique, CPG, Office des céréales, RNTA, Office du commerce. Les classements par charges de personnel et par produits d'exploitation restent aussi à verser. -->
+## La Société tunisienne de l'électricité et du gaz (STEG) {#sec-ep-steg}
+
+**La STEG, établissement public créé en 1962 pour gérer l'électricité et le gaz nationalisés, a des capitaux propres négatifs à la fin de chaque exercice depuis 2017, sauf 2021, et ses passifs passent de 6 624,0 MD fin 2013 à 17 994,5 MD fin 2023.**
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_steg_comptes(
+    caption=("Comptes publiés de la STEG, exercices 2013-2023, en millions de dinars courants : "
+             "chaque exercice est lu dans les états financiers de l'exercice, 2013 dans la "
+             "colonne de comparaison de ceux de 2014. « — » : ligne non imprimée. Les passifs "
+             "sont hors capitaux propres. Source : STEG, états financiers [@steg-ef-2014, "
+             "p. 11 et 13 ; @steg-ef-2015, p. 13 et 15 ; @steg-ef-2016, p. 11 et 13 ; "
+             "@steg-ef-2017, p. 13 et 15 ; @steg-ef-2018, p. 13 et 16 ; @steg-ef-2019, p. 9 "
+             "et 11 ; @steg-ef-2020, p. 19 et 21 ; @steg-ef-2021, p. 11 et 13 ; @steg-ef-2022, "
+             "p. 7 et 9 ; @steg-ef-2023, p. 7 et 9]"),
+    tbl_id="tbl-ep-steg-comptes")
+```
+
+- **Ce que la loi lui confie.** [Le décret-loi de 1962](#r-ep-steg-1962) nationalise la production, le transport, la distribution, l'importation et l'exportation de l'électricité et du gaz combustible ; la production, le transport, l'importation et l'exportation du gaz naturel et le gaz liquéfié en sont exclus. Il en confie la gestion à la STEG, établissement public à caractère industriel et commercial. Ses tarifs sont établis pour lui permettre « de faire face à toutes ses charges d'exploitation » et de contribuer aux dépenses d'extension du réseau.
+- **Une subvention d'exploitation inscrite à ses comptes.** L'état de résultat de la STEG porte une subvention d'exploitation : 2 323,1 MD en 2014, aucune en 2016, 1 200,0 MD en 2018, 4 707,4 MD en 2022 et 4 030,1 MD en 2023. Ce que cette subvention compense, et sa répartition entre les consommateurs, sont exposés dans le volume [« La compensation »](../compensation/_electricite_gaz.html#sec-compensation-eg-lien).
+- **Les modifications comptables de 2021 et de 2022.** Le résultat net de 2021 est de −42,7 MD ; après les « effets des modifications comptables », il est de +3 469,6 MD, et les capitaux propres redeviennent positifs, à 1 201,9 MD. En 2022, le résultat après modifications est de −2 716,1 MD, pour un résultat net de −381,2 MD.
+- **Une dette surtout bancaire.** D'après la fiche du ministère des Finances, la dette de la STEG est de 12 900,1 MD fin 2020, dont 8 701,8 MD envers les banques, 955,2 MD envers d'autres entreprises publiques et 145,5 MD envers l'État. L'effectif passe de 12 031 agents en 2018 à 13 979 en 2023, chiffre provisoire (@tbl-ep-steg-fiches).
+
+:::: {.chronologie-repliable titre="STEG : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et texte fondateur de 1962"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_court("steg",
+    caption=("STEG d'après le rapport sur les entreprises publiques, exercices 2018-2023 : "
+             "chaque exercice dans la dernière édition qui le donne, nommée en tête de colonne "
+             "avec le statut du chiffre. La dette totale n'est imprimée que par l'édition "
+             "LF 2022, le total des passifs que par les éditions LF 2024 et LF 2025 ; le résultat "
+             "net est celui d'avant modifications comptables. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 64 ; @minfin-ep-2024, p. 92 ; @minfin-ep-2025, p. 70]"),
+    tbl_id="tbl-ep-steg-fiches")
+ge.tableau_fiche_detail("steg", ("LF2022",),
+    caption=("STEG, édition LF 2022 : dette par créancier, fonds propres, investissements, "
+             "résultat et emploi, exercices 2018-2020. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 64]"),
+    tbl_id="tbl-ep-steg-fiche-a")
+ge.tableau_fiche_detail("steg", ("LF2024", "LF2025"),
+    caption=("STEG, éditions LF 2024 et LF 2025 : bilan et résultat, exercices 2020-2023. "
+             "L'édition LF 2024 imprime ses montants en millions de dinars entiers ; elle donne "
+             "pour 2022, chiffre provisoire, le même total de 15 753 MD au passif et à l'actif, "
+             "pour 37 MD de fonds propres. Source : ministère des Finances [@minfin-ep-2024, "
+             "p. 92 ; @minfin-ep-2025, p. 70]"),
+    tbl_id="tbl-ep-steg-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-steg-1962}[3 avril 1962]{.insecable} pour la nationalisation, « à dater de la promulgation » (art. 1^er^) ; [5 avril 1962]{.insecable} pour le reste : *Journal officiel* du 3 avril 1962, exécutoire un jour franc après sa parution | décret-loi n° 62-8 du 3 avril 1962 [@dl62-8-steg, art. 1^er^ à 4 et 6, p. 363-364] | production, transport, distribution, importation et exportation de l'électricité et du gaz combustible nationalisés (art. 1^er^), sauf la production, le transport, l'importation et l'exportation du gaz naturel, le gaz liquéfié et les installations des entreprises dont ce n'est pas l'activité principale (art. 2) ; gestion confiée à la « Société tunisienne de l'électricité et du gaz », établissement public à caractère industriel et commercial, soumise au droit commun en matière fiscale ; gestion conduite « de façon à lui permettre d'une part de faire face à toutes ses charges d'exploitation et d'autre part de contribuer dans une mesure raisonnable aux dépenses nécessitées par l'extension du réseau », tarifs établis en conséquence ; recours au crédit pour ses besoins courants (art. 3) ; objet : production, transport, distribution, importation et exportation de l'électricité et du gaz combustible, pour en assurer « à titre exclusif le développement dans l'intérêt National » (art. 4) ; apport par l'État des biens des entreprises nationalisées (art. 6) | mise en place |
+
+: Le texte fondateur de la STEG {#tbl-ep-registre-steg}
+
+::::
+
+## L'Entreprise tunisienne d'activités pétrolières (ETAP) {#sec-ep-etap}
+
+**L'ETAP, établissement public créé en 1972 pour les activités pétrolières, a un résultat net positif à chaque exercice que donnent ses rapports annuels de 2004 à 2024, sauf 2020 et 2021, et des produits d'exploitation qui passent de 372,6 MD en 2004 à 3 151,2 MD en 2022.**
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_etap_rapports(
+    caption=("Comptes de l'ETAP d'après ses rapports annuels, exercices 2004-2024, en millions "
+             "de dinars courants : chaque exercice est lu dans le rapport de l'exercice ; 2004 "
+             "dans le rapport de 2005 et 2020, faute de rapport, dans celui de 2021 (« RA » : "
+             "rapport annuel). Les revenus sont la ligne de l'état de résultat, les produits "
+             "d'exploitation leur total. Le rapport de 2019 ne contient pas d'états financiers. "
+             "Source : ETAP, rapports annuels [@etap-ra-2005, p. 7 et 55 ; @etap-ra-2006, p. 55 "
+             "et 66 ; @etap-ra-2007, p. 4 et 51 ; @etap-ra-2008, p. 43 et 51 ; @etap-ra-2009, "
+             "p. 4 et 61 ; @etap-ra-2010, p. 4 et 70 ; @etap-ra-2011, p. 4 et 63 ; "
+             "@etap-ra-2012, p. 2 et 78 ; @etap-ra-2013, p. 4 et 79 ; @etap-ra-2014, p. 2 et "
+             "96 ; @etap-ra-2015, p. 83 et 96 ; @etap-ra-2016, p. 102, 112, 113 et 127 ; "
+             "@etap-ra-2017, p. 90 et 106 ; @etap-ra-2018, p. 112 et 128 ; @etap-ra-2019, "
+             "p. 109 ; @etap-ra-2021, p. 94 et 116 ; @etap-ra-2022, p. 96 et 121 ; "
+             "@etap-ra-2023, p. 87 et 115 ; @etap-ra-2024, p. 81 et 94]"),
+    tbl_id="tbl-ep-etap-rapports")
+```
+
+- **Ce que la loi lui confie.** [La loi de 1972](#r-ep-etap-1972) crée l'Entreprise tunisienne d'activités pétrolières, établissement public à caractère industriel et commercial « réputée commerçante » dans ses relations avec les tiers, placée sous la tutelle du ministère de l'Économie nationale. Son objet est la conduite des études pétrolières, la formation de cadres tunisiens et l'intervention dans les opérations qui se rattachent aux hydrocarbures. L'État la dote de 100 000 dinars, prélevés sur son budget de capital. Sa fiche au rapport du ministère des Finances ne porte aucune subvention d'exploitation de 2018 à 2023 ; son rôle dans le circuit de la compensation des carburants est exposé dans le volume [« La compensation »](../compensation/_carburants.html#sec-compensation-circuit).
+- **Des résultats qui suivent les produits.** Le résultat net culmine à 542,4 MD en 2012 ; il tombe à 19,4 MD en 2016, puis à −407,1 MD en 2020 et −139,0 MD en 2021, avant de revenir à 352,2 MD en 2022 et 340,3 MD en 2024. Le rapport de 2016 impute sur le résultat de l'exercice une « contribution conjoncturelle au profit du budget de l'État » de 20,6 MD [@etap-ra-2016, p. 113].
+- **Une dette envers l'État.** D'après la fiche du ministère des Finances, la dette de l'ETAP est de 1 592,6 MD fin 2018, dont 854 MD envers les banques et 517,1 MD envers l'État, et de 1 094,3 MD fin 2020, dont 471,4 MD envers l'État (@tbl-ep-etap-fiche-a).
+- **L'emploi.** L'effectif passe de 588 agents fin 2004 à 833 fin 2022 et 759 fin 2024.
+
+:::: {.chronologie-repliable titre="ETAP : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, effectif), et loi de 1972"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_court("etap",
+    caption=("ETAP d'après le rapport sur les entreprises publiques, exercices 2018-2023 : "
+             "chaque exercice dans la dernière édition qui le donne, nommée en tête de colonne "
+             "avec le statut du chiffre. « – » : case laissée vide par l'édition. Le résultat "
+             "net de 2020 vaut −119,2 MD dans l'édition LF 2022, chiffre alors provisoire. "
+             "Source : ministère des Finances [@minfin-ep-2022, p. 62 ; @minfin-ep-2024, p. 96 ; "
+             "@minfin-ep-2025, p. 73]"),
+    tbl_id="tbl-ep-etap-fiches")
+ge.tableau_fiche_detail("etap", ("LF2022",),
+    caption=("ETAP, édition LF 2022 : dette par créancier, fonds propres, investissements, "
+             "résultat et emploi, exercices 2018-2020. La somme des créanciers de 2020 est "
+             "inférieure de 0,6 MD au total imprimé. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 62]"),
+    tbl_id="tbl-ep-etap-fiche-a")
+ge.tableau_fiche_detail("etap", ("LF2024", "LF2025"),
+    caption=("ETAP, éditions LF 2024 et LF 2025 : bilan et résultat, exercices 2020-2023. "
+             "Source : ministère des Finances [@minfin-ep-2024, p. 96 ; @minfin-ep-2025, p. 73]"),
+    tbl_id="tbl-ep-etap-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-etap-1972}entre le [12]{.insecable} et le [16 mars 1972]{.insecable} | loi n° 72-22 du 10 mars 1972 [@loi72-22-etap, art. 1^er^ à 4, p. 314] | création de l'« Entreprise tunisienne d'activités pétrolières », établissement public à caractère industriel et commercial doté de la personnalité civile et de l'autonomie financière, « réputée commerçante dans ses relations avec les tiers », sous la tutelle du ministère de l'Économie nationale (art. 1^er^) ; objet : conduite de toute étude à caractère pétrolier, formation de cadres tunisiens, intervention éventuelle dans les opérations industrielles, commerciales, financières, mobilières ou immobilières se rattachant aux hydrocarbures (art. 2) ; organisation fixée par décret (art. 3) ; dotation de 100 000 dinars prélevée sur le budget de capital de l'État (art. 4). Aucune clause d'effet : le *Journal officiel* est daté des 10-14 mars 1972, et la loi est exécutoire un jour franc après sa parution | mise en place |
+
+: La loi créant l'ETAP {#tbl-ep-registre-etap}
+
+::::
+
+## La Société nationale des chemins de fer tunisiens (SNCFT) {#sec-ep-sncft}
+
+**La SNCFT, société nationale qui exploite le réseau ferré depuis le 1^er^ janvier 1957, est en perte à chacun des exercices 2018 à 2023 dans chaque édition du rapport du ministère des Finances, et ses fonds propres passent de 772,7 MD fin 2021 à 630,7 MD fin 2022 dans l'édition LF 2025.**
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_court("sncft",
+    caption=("SNCFT d'après le rapport sur les entreprises publiques, exercices 2018-2023 : "
+             "chaque exercice dans la dernière édition qui le donne, nommée en tête de colonne "
+             "avec le statut du chiffre. « – » : case laissée vide par l'édition. La dette "
+             "totale n'est imprimée que par l'édition LF 2022, le total des passifs que par les "
+             "éditions LF 2024 et LF 2025 ; le résultat net est celui d'avant modifications "
+             "comptables. Source : ministère des Finances [@minfin-ep-2022, p. 55 ; "
+             "@minfin-ep-2024, p. 84 ; @minfin-ep-2025, p. 60]"),
+    tbl_id="tbl-ep-sncft-fiches")
+```
+
+- **Ce que ses statuts lui confient.** [Le décret du 27 décembre 1956](#r-ep-sncft-1956) approuve les statuts de la SNCFT, entreprise à caractère commercial régie par la législation des sociétés anonymes, qui a pour objet l'exploitation du réseau des chemins de fer tunisiens. L'État lui concède l'exploitation de son réseau ferré à compter du 1^er^ janvier 1957 et lui apporte le matériel, les approvisionnements et les fonds du réseau.
+- **Une subvention d'exploitation de 65 à 105 MD.** La subvention d'exploitation inscrite à la fiche est de 65 MD par an de 2018 à 2020 dans l'édition LF 2022 ; l'édition LF 2024 donne 105 MD pour 2020 et 84,5 MD pour 2021, l'édition LF 2025 70 MD pour 2022 et 95 MD pour 2023, chiffre probable. La subvention du transport public est exposée dans le volume [« La compensation »](../compensation/_transport.html#sec-compensation-transport).
+- **Une dette bancaire.** Fin 2019, la dette de la SNCFT est de 1 478,7 MD, dont 894 MD envers les banques, 161,7 MD envers les caisses sociales et 46 MD envers l'État ; la somme des créanciers imprimés est inférieure de 161,9 MD au total imprimé (110,9 MD fin 2018). L'édition ne donne pas la dette de 2020.
+- **L'emploi.** L'effectif est de 4 612 agents en 2018, de 4 790 en 2021 et de 4 539 en 2023, chiffre probable ; les charges de personnel passent de 118,9 à 140,7 MD.
+
+:::: {.chronologie-repliable titre="SNCFT : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et statuts de 1956"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("sncft", ("LF2022",),
+    caption=("SNCFT, édition LF 2022 : dette par créancier, fonds propres, investissements, "
+             "résultat et emploi, exercices 2018-2020 ; 2020 est provisoire, sans dette "
+             "imprimée. La somme des cinq créanciers est inférieure au total imprimé de "
+             "110,9 MD en 2018 et de 161,9 MD en 2019. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 55]"),
+    tbl_id="tbl-ep-sncft-fiche-a")
+ge.tableau_fiche_detail("sncft", ("LF2024", "LF2025"),
+    caption=("SNCFT, éditions LF 2024 et LF 2025 : bilan et résultat, exercices 2020-2023. "
+             "Dans l'édition LF 2025, les recettes, la subvention d'exploitation et les autres "
+             "produits ne redonnent pas le total des produits d'exploitation imprimé ; "
+             "l'édition LF 2024 le redonne. Source : ministère des Finances "
+             "[@minfin-ep-2024, p. 84 ; @minfin-ep-2025, p. 60]"),
+    tbl_id="tbl-ep-sncft-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-sncft-1956}[1^er^ janvier 1957]{.insecable}, date dite par le décret (art. 1^er^) | décret du 27 décembre 1956 [@decret-1956-12-27-sncft, art. 1^er^ du décret et art. 1^er^ à 6 des statuts, p. 1756] | statuts de la Société nationale des chemins de fer tunisiens approuvés : entreprise à caractère commercial régie par la législation relative aux sociétés anonymes dans la mesure où le statut n'y déroge pas (art. 1^er^) ; objet : exploitation du réseau des chemins de fer tunisiens et gestion des biens qui lui sont dévolus (art. 3) ; durée de 99 ans (art. 5) ; l'État concède l'exploitation de son réseau ferré pour la durée de la société à compter du 1^er^ janvier 1957, met à sa disposition le rail, la voie, les gares et les dépôts, et lui fait apport du matériel, des approvisionnements, des fonds et des créances du réseau, à charge des dettes, apport évalué forfaitairement à 3 milliards de francs (art. 6) | mise en place |
+
+: Les statuts de la SNCFT {#tbl-ep-registre-sncft}
+
+::::
+
+<!-- TODO (documentaliste) : fiches par entreprise des éditions LF 2022, LF 2024 et LF 2025 versées pour la STEG, l'ETAP et la SNCFT (série entreprises-publiques-fiches-entreprises). Restent à verser, mêmes pages de ces éditions (effectifs déjà versés, voir entreprises-publiques-effectifs.csv de tunisia-data pour les pages) : STIR, Tunisair, Transtu, Office des céréales, Office national de l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du commerce. Les éditions françaises LF 2020 et LF 2021 et l'édition LF 2023 donnent les comptes dans la prose, pas en tableau. Classements par charges de personnel et par produits d'exploitation : non versés. SNCFT : statuts de 1969 (loi n° 69-31 du 9 mai 1969, JORT n° 19, p. 581-584) non lus ; longue période avant 2018 à chercher (rapports annuels de la société, annexe 8 pour les transferts 2016-2024). STEG : rapports annuels 2006-2016 (subvention d'exploitation déjà versée dans la série steg-subvention-exploitation) à lire pour le bilan avant 2013. -->

@@ -3651,13 +3651,30 @@ Ce qui reste :
   l'écart de 191 à 307 MD par an entre le poste « produits de base » et l'Office des céréales et
   l'Office de l'huile ; la nature des transferts à l'Office de l'huile (subvention ou financement des
   achats d'huile d'olive).
-- **Fiches par entreprise non relues, donc non publiées** : dette, effectifs, charges de
-  personnel, subvention d'exploitation, total des passifs (STEG, STIR, Tunisair, Transtu,
-  SNCFT, SONEDE, ETAP, Groupe chimique, CPG, Office des céréales, RNTA, Office du commerce).
-  Éditions arabes : tableaux tournés d'un quart de tour, à rendre à 170 dpi et à relire à
-  l'image, puis à verser dans `tunisia-data`. De même les classements par charges de
-  personnel et par produits d'exploitation, et l'effectif total (non publié par le rapport :
-  INS, emploi par secteur institutionnel, non cherché).
+- **Fiches par entreprise : STEG, ETAP et SNCFT versées le 27 octobre 2026** (chapitre
+  `_grandes_entreprises.qmd`, sections `#sec-ep-steg`, `#sec-ep-etap`, `#sec-ep-sncft` ; séries
+  `entreprises-publiques-fiches-entreprises`, `steg-etats-financiers` et `etap-rapports-annuels`
+  de `tunisia-data`, branche `donnees/ep-fiches-entreprises`). Éditions LF 2022 (dette par
+  créancier, 2018-2020), LF 2024 et LF 2025 (bilan et résultat, 2020-2023), lues à l'image ;
+  comptes publiés de la STEG 2013-2023 ; rapports annuels de l'ETAP 2004-2024 (sans 2020 ; 2019
+  sans états financiers) ; textes fondateurs lus au corpus local (décret-loi n° 62-8, loi
+  n° 72-22, décret du 27 décembre 1956). **Reste** :
+  - les autres grandes entreprises (STIR, Tunisair, Transtu, Office des céréales, Office national de
+    l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du
+    commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
+    le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
+    `jort_cache.db` ;
+  - SNCFT : statuts de 1969 (loi n° 69-31, JORT n° 19 de 1969, p. 581-584, dans le corpus local,
+    non lus) ; comptes avant 2018 (rapports annuels de la société, à obtenir) ;
+  - STEG : bilan avant 2013 (rapports annuels 2006-2016 déjà rangés dans `tunisia-data`,
+    `data/raw/minenergie/steg/rapports-annuels/`) ; notes des états financiers de 2022 sur le
+    « complément de subvention à recevoir » (p. 27), non dépouillées ;
+  - ETAP : redevances et impôts versés à l'État (lignes « impôts et taxes » de chaque état),
+    non relevés ;
+  - éditions françaises LF 2020 et LF 2021 et édition LF 2023 : comptes dans la prose, non
+    versés ; classements par charges de personnel et par produits d'exploitation, non versés ;
+  - seuil de scission : trois entreprises de l'énergie (STEG, ETAP, STIR) ouvriraient un
+    chapitre « L'énergie » quand la STIR aura sa fiche (note de chantier, § 9).
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la
