@@ -5555,7 +5555,7 @@
   fiche: sources/cdc-cloture-entreprises-publiques-2003-2009.md
 - id: bct-part-etat-benefices
   titre: 'Banque centrale de Tunisie : part revenant à l''État dans le résultat de
-    l''exercice, 2002-2010, et versements au Trésor cités'
+    l''exercice, 1999-2025, et versements au Trésor cités'
   sources:
   - bct-ra-2002
   - bct-ra-2003
@@ -5566,32 +5566,53 @@
   - bct-ra-2008
   - bct-ra-2009
   - bct-ra-2010
+  - bct-ra-2011
+  - bct-ra-2012
+  - bct-ra-2013
+  - bct-ra-2014
+  - bct-ra-2015
+  - bct-ra-2016
+  - bct-ra-2017
+  - bct-ra-2018
+  - bct-ra-2019
+  - bct-ra-2020
+  - bct-ra-2021
+  - bct-ra-2022
+  - bct-ra-2023
+  - bct-ra-2024
+  - bct-ra-2025
   build: uv run python scripts/build_versements_budget_2003_2009.py
   raw:
-  - sources/transcriptions/bct-part-etat-benefices-2002-2010.csv
-  output: data/processed/bct-archives/part_etat_benefices_bct_2002_2010.csv
+  - sources/transcriptions/bct-part-etat-benefices.csv
+  output: data/processed/bct-archives/part_etat_benefices_bct.csv
   unite: dinars courants (colonne valeur_dinars, entiers) et millions de dinars courants
     (valeur_md)
   perimetre: répartition du résultat de l'exercice approuvée par le Conseil d'administration
     de la Banque centrale (résultat de l'exercice, part revenant à l'État), rapports
-    annuels 2002 à 2006 et 2008 à 2010 ; partage de la part de l'exercice 2003 entre
-    le budget (100 MDT) et le Fonds de péréquation des changes (4,5 MDT) ; versements
-    au Trésor cités dans le texte avec leur année (exercices 2002, 2006 et 2007) ;
-    une ligne par (exercice, poste)
+    annuels 2002 à 2006 et 2008 à 2025 (exercices 2002-2006 et 2008-2025) ; partage
+    des exercices 1999 à 2001 (rapport 2002) et 2003 (rapport 2004) entre le budget
+    et le Fonds de péréquation des changes ; versements au Trésor cités dans le texte
+    avec leur année (exercices 2002, 2006, 2007 et 2010) ; reliquat de l'exercice
+    2010 resté en compte d'ordre fin 2011 ; une ligne par (exercice, poste)
   caveats: 'PAR EXERCICE, NON PAR ANNÉE BUDGÉTAIRE : la part de l''exercice N entre
     au budget en N+1, parfois plus tard (exercices 2004 et 2005 en 2006 ; 2008, 2009
     et 2010 en 2011) et pas toujours en entier (budget 2003 : 120 MD pour 125 ; 2004
     : 100 pour 104,5, le reste au Fonds de péréquation des changes ; 2006 : 373,6
     pour 148,4 + 235,6 ; 2007 : 340,38 pour 350,38 ; 2008 : 425 pour 435 ; 2011 :
-    874 pour 432 + 250 + 228,7 = 910,7). Seul l''écart de l''exercice 2003 est expliqué
-    par un texte lu. Exercice 2007 : répartition non imprimée dans le rapport 2007
-    ; montant encaissé arrondi (435 MDT) cité par le rapport 2008. Montants cités
-    dans le texte arrondis au million de dinars.'
+    874 pour 432 + 250 + 228,7 = 910,7, dont 28,7 restés en compte d''ordre fin 2011
+    et 882 budgétisés selon la Banque centrale ; 2012 : 265,3 pour 251,6 ; 2013 :
+    190,6 pour 205,6 ; 2014 : 176,8 pour 186,8 ; 2016 : 194 pour 204). Égalité entre
+    la part de l''exercice N et la ligne de la Cour pour la gestion N+1 en 2015 et
+    de 2017 à 2024 (à un dinar près en 2018 et 2020). Exercices 1999-2001 : seul le
+    partage budget / Fonds de péréquation est imprimé, pas le résultat. Exercice 2007
+    : répartition non imprimée dans le rapport 2007 ; montant encaissé arrondi (435
+    MDT) cité par le rapport 2008. Montants cités dans le texte arrondis au million
+    de dinars.'
   titre_ar: 'البنك المركزي التونسي: المناب الراجع للدولة من نتيجة السنة المحاسبية،
-    2002-2010'
+    1999-2025'
   unite_ar: بالدينار الجاري وبملايين الدنانير الجارية
   perimetre_ar: توزيع نتيجة السنة المحاسبية كما صادق عليه مجلس إدارة البنك المركزي،
-    التقارير السنوية 2002-2006 و2008-2010
+    التقارير السنوية 2002-2006 و2008-2025
   caveats_ar: 'حسب السنة المحاسبية للبنك لا حسب سنة الميزانية: يُدرج مناب السنة ن
     في ميزانية ن+1 أو بعدها.'
   fiche: sources/bct-part-etat-benefices.md
@@ -5641,3 +5662,62 @@
     الوطني للزيت لا يتلقيان كامل دعم المواد الأساسية. لا ربط بين الطبعات. لا يوجد
     قسم وزارة التجارة في الترجمة الفرنسية لطبعة 2021. قُرئت من الصورة.'
   fiche: sources/minfin-transferts-par-etablissement.md
+- id: bct-ra-revenus-participations
+  titre: 'Banque centrale de Tunisie, rapports annuels : revenus des participations
+    du budget de l''État et versement de la Banque centrale, années budgétaires 1983-2016'
+  sources:
+  - bct-ra-1985
+  - bct-ra-1988
+  - bct-ra-1995
+  - bct-ra-1996
+  - bct-ra-1997
+  - bct-ra-1998
+  - bct-ra-1999
+  - bct-ra-2000
+  - bct-ra-2001
+  - bct-ra-2002
+  - bct-ra-2003
+  - bct-ra-2004
+  - bct-ra-2005
+  - bct-ra-2006
+  - bct-ra-2008
+  - bct-ra-2009
+  - bct-ra-2010
+  - bct-ra-2011
+  - bct-ra-2012
+  - bct-ra-2013
+  - bct-ra-2014
+  - bct-ra-2015
+  - bct-ra-2016
+  build: uv run python scripts/build_versements_budget_2003_2009.py
+  raw:
+  - sources/transcriptions/bct-ra-revenus-participations.csv
+  output: data/processed/bct-archives/revenus_participations_budget_bct_ra.csv
+  unite: millions de dinars courants, tels qu'imprimés (une décimale ; au million
+    pour le rapport 1999 et les montants cités dans le texte)
+  perimetre: 'chapitre des finances publiques des rapports annuels 1985, 1988, 1995
+    à 2006 et 2008 à 2016 : ligne des recettes non fiscales qui porte les revenus
+    des participations de l''État (réalisations, non les prévisions des lois de finances)
+    et versement de la Banque centrale au budget quand le rapport l''isole (tableau
+    ou texte) ; une ligne par (rapport, année, poste)'
+  caveats: 'RUPTURE DE PÉRIMÈTRE, NON CHAÎNÉE : 1983-1988, « recettes des participations
+    financières » / « revenus des participations » qui comprennent les revenus pétroliers
+    ; 1993-2016, revenus pétroliers sur une ligne à part. Changements de libellé sans
+    changement de valeur : « revenus des participations et (des) EPIC » (rapports
+    1995-2000), « revenus des participations » (rapports 2001-2016 ; 1999 et 2000
+    lus dans les rapports 2000 et 2001 : 167,0 / 167,1 et 273,8 / 273,8), « excédents
+    » (rapport 2008). Rapport 2007 : ligne « excédent + recouvrement prêts », non
+    versée. Rapports 1986, 1987, 1989 à 1994 non exploités (couche texte chiffrée,
+    tableau non localisé). Révisions d''un rapport à l''autre gardées (1999 : 167,0
+    puis 167,1 ; 2009 : 803,8 puis 788,6 ; 2012 : 767,8 puis 757,5 ; 2013 : 1 070,7
+    provisoire puis 1 070,0). De 2003 à 2016 sauf 2011, la dernière lecture égale
+    le total de la Cour des comptes moins les autres profits du Trésor ; 2011 : 1
+    457,5 contre 1 566,8. Versement de la Banque centrale : par année budgétaire,
+    à ne pas confondre avec la part par exercice (bct-part-etat-benefices).'
+  titre_ar: 'البنك المركزي التونسي، التقارير السنوية: مداخيل المساهمات في ميزانية
+    الدولة ودفوعات البنك المركزي، 1983-2016'
+  unite_ar: بملايين الدنانير الجارية
+  perimetre_ar: 'فصل المالية العمومية من التقارير السنوية: سطر مداخيل المساهمات ضمن
+    المداخيل غير الجبائية، الإنجازات'
+  caveats_ar: 'تغيّر التسمية والمحيط عبر الفترات: لا تُوصل السلسلة دون إشارة.'
+  fiche: sources/bct-ra-revenus-participations.md
