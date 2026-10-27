@@ -1,6 +1,7 @@
 # Ce qui reste à faire, livre par livre
 
-**Révisé le 6 octobre 2026.** Cette note rassemble les chantiers encore visibles dans les
+**Révisé le 25 octobre 2026** (passe de mise en accord avec les fusions du 19 au 23 octobre :
+états « non commité », « en cours », « à juger » rapportés à ce qui est sur `master`). Cette note rassemble les chantiers encore visibles dans les
 chapitres, les dossiers documentaires et les issues ; elle permet de choisir le prochain
 texte à lire. Une piste « faisable » signifie que le **support** est accessible, pas que
 son contenu a déjà été vérifié : seul l'article lu autorise à corriger le précis.
@@ -31,19 +32,24 @@ extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances
 Ouvert le 7 octobre 2026 ; note : `docs/notes/chantier-ruptures-au-premier-plan.md`. Prototype sur
 la restitution du crédit de TVA (`_tva.qmd`, `#sec-tva-credit-restitution`) : tableau des ruptures
 et de leur mise en œuvre, puis chronologie complète repliée (bloc `.chronologie-repliable`).
-À juger avant toute extension ; la liste de contrôle est dans la note. Ensuite : conventions de
-rédaction, consigne du rédacteur, rôle « architecte » à créer, reprise des autres chapitres.
+Le prototype a été jugé et étendu : les conventions de rédaction (§ 4), la consigne du rédacteur
+et le rôle « architecte » sont en place ; les finances locales (9 et 10 octobre), les prestations
+sociales (10 octobre), les incitations et dépenses fiscales (11 octobre) sont au format. Les
+chapitres écrits depuis (douane, timbre, boissons, épargne, rupture et durée du travail) y sont
+nés. Le format n'est pas encore appliqué aux chapitres antérieurs des retraites, des cotisations
+et des rémunérations publiques ; la table « Forme des chapitres » en bas de ce fichier dit où il
+ne s'applique pas.
 
-**Prototype étendu à tout le chapitre de la TVA (7 octobre 2026, non commité, en attente du
-jugement du propriétaire).** `_tva.qmd` est réécrit selon
+**Chapitre de la TVA au format « ruptures au premier plan » — sur `master` depuis le 12 octobre
+2026 (dernière retouche le 23 octobre 2026, fusion des clés en doublon, #512).** `_tva.qmd` est réécrit selon
 `docs/notes/fiscalite-tva-plan-architecte.md` (§ 2, corrigé par le § 11) et
 `docs/notes/fiscalite-tva-objets-des-reformes.md` : en bref ; mise en place 1988-1990 ; quatre
 grandes réformes et une clôture « depuis 2018 » ; bilan des taux et état du droit ; huit
 sections de dispositif, chacune avec son registre replié ; longue période. Réorganisation sans
 perte : les 62 clés, les 163 couples (clé, localisateur), les 38 ancres de glossaire, les
 15 identifiants, les 6 TODO et l'ancre RECHERCHE du départ sont tous à l'arrivée. Le texte
-passe de 11 000 à 22 300 mots, dont 13 000 au premier plan (8 300 au départ) : quatorze blocs
-repliés au lieu de deux. Reste à trancher ou à faire :
+passe de 11 000 à 22 300 mots, dont 13 000 au premier plan (8 300 au départ) : seize blocs
+repliés (`.chronologie-repliable`, compte du 25 octobre 2026). Reste à faire :
 
 - **trajectoires par opération : tranché le 7 octobre 2026** — le propriétaire garde le tableau
   (`@tbl-tva-trajectoires`, dans `#sec-tva-etat-du-droit`) et la matrice des régimes par
@@ -71,7 +77,7 @@ repliés au lieu de deux. Reste à trancher ou à faire :
   la liste des professions), `rectificatif-lf-1993` (JORT n° 33 du 4 mai 1993, p. 579, lu à l'image en
   français et en arabe ; cité à la ligne de 1993 du registre des forfaits), `minfin-plf-2014`
   (exposé des motifs des art. 34 et 35 du projet, lu à l'image, p. 77 imprimée ; une phrase au
-  paragraphe des achats en espèces). Reste : les verser dans Zotero ;
+  paragraphe des achats en espèces). Versées dans Zotero (absentes de la liste « à créer » du dry-run du 25 octobre 2026) ;
 - **classements à confirmer** : 2014 (achats en espèces) et 2016 (facture électronique) sont
   portés « rupture » dans leurs registres, que le plan donnait pour « possibles » ;
   `tbl-tva-suspension-sectorielle` garde sa forme d'origine, sans colonne « Portée » ;
@@ -101,42 +107,45 @@ repliés au lieu de deux. Reste à trancher ou à faire :
   texte dit la base de chaque pourcentage ; `#fig-tva-indirects` (part de la TVA, des droits de
   douane, des droits de consommation et des autres recettes indirectes, 1986-2025, sans PIB).
   Partage importation/intérieur : fait le 24 octobre 2026 (`#fig-tva-regimes-recettes`, relevé `tva/recettes-tva-par-regime.csv`, prévisions du tableau A des lois de finances 2001-2026 ; 2001-2010 et 2021-2022 lues à l'image, 2023-2026 sur l'édition arabe, 2020 et 2022 imprimées un rang au-dessus de leur libellé) ; réalisations par régime non identifiées. Restent : la taxe rapportée à la consommation privée (série à verser), la décomposition des dépenses fiscales de TVA par forme (plan, § 6.3 et 6.4) ;
-- **domicile unique des références étendu à tout le chapitre** (7 octobre 2026, branche de test
-  `chantier/citations-domicile-unique`, non commité) : `.domicile-unique` sur le titre du chapitre ;
+- **domicile unique des références étendu à tout le chapitre — sur `master`** (branche
+  `chantier/citations-domicile-unique` fusionnée) : `.domicile-unique` sur le titre du chapitre ;
   176 appels juridiques retirés du fil, remplacés par 164 liens `#r-tva-…` vers les lignes de
   registre (142 ancres) ; un registre nouveau pour les clauses de date d'application
   (`tbl-tva-dates-textes`) et la liste des six grilles devenue tableau (`tbl-tva-taux-textes`).
-  À juger :
+  Restent à juger à la revue :
   ancres des trajectoires posées dans la cellule de date ; `tbl-tva-reformes` sans liens ;
   attributs `titre` et libellés des liens à traduire en arabe ;
-- **relecture du propriétaire (7 octobre 2026, non commité)** : « En bref » devient « Vue d'ensemble » ;
+- **relecture du propriétaire (7 octobre 2026) — portée sur `master`** : « En bref » devient « Vue d'ensemble » ;
   le mot « cœur » ne paraît plus au chapitre (« règles de base », ou l'élément nommé) ; les renvois
   « traité ailleurs » sont en tête de section ; chaque section de dispositif s'ouvre sur une
   définition de son objet, avant sa place dans la chronologie ;
-- **texte principal autosuffisant (7 octobre 2026, non commité)** : notations T et D définies dans
+- **texte principal autosuffisant (7 octobre 2026) — porté sur `master`** : notations T et D définies dans
   chaque section qui les emploie ; règles du fait générateur, de l'option, du pourcentage de
   déduction et de la régularisation dites en clair hors des blocs repliés ; sigles développés et
   notions du glossaire ancrées dans chaque section de niveau 2 ; plus de tournure de lecture
-  linéaire. Reste : « DGCPR », cité tel que la source l'écrit, sans développement établi ;
-- **version arabe** : le chapitre arabe est structurellement en retard jusqu'à la passe de
-  traduction ; les attributs `titre` des douze nouveaux blocs repliés sont à traduire.
+  linéaire. Reste : « DGCPR », cité tel que la source l'écrit, sans développement établi
+  (toujours le cas au 25 octobre 2026, section du rapport du FMI de 2013) ;
+- **version arabe** : `precis/ar/fiscalite/_tva.qmd` est l'ancienne structure (aucun bloc
+  `.chronologie-repliable`, arabe du 4 octobre 2026) ; retraduction complète à la réouverture du
+  budget de traduction (décision du 6 octobre 2026, voir « Ce qui traverse les livres »), avec
+  les attributs `titre` des seize blocs repliés.
 
 ## Vue d'ensemble
 
 | Livre | État du texte | Première lecture faisable |
 |---|---|---|
-| Fiscalité | Cinq impôts ouverts (impôt sur la fortune ajouté le 4 octobre 2026) et deux chapitres transversaux — les régimes d'incitation à l'investissement et les dépenses fiscales (chapitre du 6 octobre 2026, scindé et converti au format « ruptures au premier plan » le 11 octobre 2026) ; TVA : réformes de 1988 à 2026 rédigées, chapitre réorganisé le 7 octobre 2026 en prototype du chantier « ruptures au premier plan » (à juger) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Boissons alcoolisées rédigées le 23 octobre 2026 (décrets n° 93-2090, 97-1368, 2002-627, 2007-1977, 2013-929, 2015-1768, 2022-545 et lois de finances 2016, 2018, 2021) ; lacunes ci-dessous |
+| Fiscalité | Douze chapitres au 23 octobre 2026 : IRPP (section « épargne et capital » du 20 octobre), IS, impôt sur la fortune, contributions conjoncturelles et taxes des fonds spéciaux (23 octobre), patrimoine immobilier, timbre et enregistrement (23 octobre, tableaux faits main), TVA, droits de consommation, droits de douane (23 octobre), régimes d'incitation et dépenses fiscales (format « ruptures au premier plan » depuis le 11 octobre) ; TVA : réformes de 1988 à 2026 rédigées, chapitre au format « ruptures au premier plan » sur `master` depuis le 12 octobre 2026 (restes ci-dessus) ; déduction, crédit et restitution, régime suspensif, déclaration et retenue à la source rédigés le 6 octobre 2026 (`@sec-tva-deduction`), séries budgétaires bornées à 2010-2014 | Boissons alcoolisées rédigées le 23 octobre 2026 (décrets n° 93-2090, 97-1368, 2002-627, 2007-1977, 2013-929, 2015-1768, 2022-545 et lois de finances 2016, 2018, 2021) ; lacunes ci-dessous |
 | Retraites | Deux chapitres développés ; coefficients des 31 barèmes relevés | Départs avant l'âge légal (1987, 2009, 2017, 2022-2028) et limite d'âge des magistrats exposés ; lacunes restantes : voir la section Retraites de ce fichier |
 | Prestations sociales | Dispositifs décrits ; Amen social à jour au 9 octobre 2026 (280 D, allocation des 6 à 18 ans — pilote sur don depuis 2022, décret de 2025 —, arrêté du 5 août 2026) ; PNAFN historique sans texte pour ses onze dates et montants (fiche `r-pnafn-montants-historiques`, passes du 24 octobre 2026 : trois études rangées dans tunisia-data confirment 7,7 D en 1987, 36,3 en 2000, 56,7 en 2010, 100 D en 2012, 150 D en 2014 ou 2015, 180 D en février 2018 ; la circulaire conjointe du 27 mai 2011 est identifiée, non lue ; aucune source ne date les neuf autres débuts de palier) ; figure `fig-pnafn-allocation` portant le 24 octobre 2026 tous les montants connus, en famille par document, avec la série `pnafn-montants-etudes` et sa fiche `docs/notes/provenance-pnafn-montants-etudes.md` ; figure `fig-nc-beneficiaires` portant toutes les valeurs du tableau des allocataires, série `amen-social-allocataires-tableau` contrôlée par `scripts/verifier_effectifs_tableau.py` ; libellés arabes des deux figures à verser ; volume entier au format « ruptures au premier plan » le 10 octobre 2026 (cinq chapitres ; la matrice des régimes porte aussi l'assistance) ; lectures du 10 octobre 2026 portées (dates d'effet, loi n° 96-101 dans sa rédaction du 7 mars 2002, frontière entre régimes et assistance, aides aux familles d'accueil) | Relecture à l'image des autres textes repris de la couche texte (liste dans la section « Prestations sociales ») ; budgets économiques 2012-2018 et circulaires de montant pour les paliers du PNAFN (non trouvés en ligne ; Wayback hors service le 24 octobre 2026, à rejouer) ; circulaire conjointe n° 12 (Intérieur) et n° 3 (Affaires sociales) du 27 mai 2011 à obtenir ; rédaction en vigueur de l'article 34 de la loi n° 60-30 (champ des salariés non agricoles), lu seulement dans sa rédaction de 1960 |
-| Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs ; régime de rémunération des dirigeants d'entreprises publiques rédigé le 23 octobre 2026 | Décret n° 78-885 et circulaire n° 78-45 (scans de 1978-1979 à océriser autrement) |
+| Rémunérations publiques | Régime indiciaire développé, trois autres chapitres brefs ; régime de rémunération des dirigeants d'entreprises publiques fusionné le 23 octobre 2026 (#499) | Décret n° 78-885 et circulaire n° 78-45 (scans de 1978-1979 à océriser autrement) |
 | Cotisations sociales | Régimes et branches décrits ; échelles AT/MP de 1995 et 1999 engendrées ; plusieurs assiettes et ventilations encore à établir | Article 4 du décret n° 2007-1406 dans le JORT n° 49 de 2007, texte local extractible |
 | Caisses de sécurité sociale | Livre créé le 4 octobre 2026 : présentation, histoire (rédigée le 4 octobre), statut-cadre, comptes par régime, état des caisses, comptes de la longue période, chronologie ; rétrospective CNSS 1990-2004 tracée ; statuts annexés du personnel et couverture des déficits agricoles à obtenir hors JORT | Loi n° 98-91 (JORT n° 89 de 1998), fascicule local lisible, pour les modificatifs du statut-cadre |
 | Finances locales | Neuf chapitres rédigés ; cinq convertis au format « ruptures au premier plan » le 9 octobre 2026 (budgets, immeubles, activité, taxes, transferts), le chapitre de la longue période fondu dans les autres ; notions resserrées le même jour (cinq blocs repliés) ; histoire et compétences converties le 10 octobre 2026 : les neuf chapitres sont au nouveau format ; présentation mise en accord le même jour | Dispositions finales du code des collectivités locales (loi organique n° 2018-29), édition arabe du JORT n° 39 de 2018, texte local extractible |
-| Marché du travail | Volume VIII : institutions, notions, salaire minimum, conventions collectives, négociations, politiques de l'emploi, annexe des conventions branche par branche (8-9 octobre 2026 ; grilles tracées depuis le modèle, 193 cases illisibles sur les fascicules) | Décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire), fascicules au corpus ; grilles du textile 1983-1993 et du bâtiment 1991-1992 : scans français au corpus, OCR à lancer |
+| Marché du travail | Volume VIII : institutions, notions, salaire minimum, conventions collectives, négociations, durée du travail et congés (22 octobre 2026), rupture du contrat (20 octobre 2026, tableaux engendrés le 23), politiques de l'emploi, annexe des conventions branche par branche (8-9 octobre 2026 ; grilles tracées depuis le modèle, 193 cases illisibles sur les fascicules) | Décrets n° 81-437 et n° 82-501 (indemnité complémentaire provisoire), fascicules au corpus ; grilles du textile 1983-1993 et du bâtiment 1991-1992 : scans français au corpus, OCR à lancer |
 | Compensation | Volume IX, huit chapitres réécrits le 6 octobre 2026 (institution, réformes, dépense, carburants, électricité et gaz, transport, rapports extérieurs, incidence) ; montant versé de la dotation de la Caisse inconnu pour dix années, dont cinq (2003, 2006, 2008, 2009, 2011) ont une ligne budgétaire d'ordre de grandeur (subvention prévue 1987-1994 et ligne 2003-2011 versées le 24 octobre 2026) ; tarifs MT/HT et gaz 1994-2003 versés le 24 octobre 2026, grille d'octobre 1993 non publiée | Lois de règlement 1988 et 1989 (scans à lire à l'image), budget économique, lois de finances complémentaires et tableaux des fonds spéciaux 1995-2010 (dotation) ; décrets de suspension du prélèvement à l'importation (n° 97-2509 à 2007-1199) ; produit annuel des prélèvements ; décret n° 93-1187 et modifications de 2002, 2009 et 2015 du décret n° 91-1391 lus le 24 octobre 2026 |
 | Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, avec une section « effectifs et masse salariale », français seul ; inscrit à l'accueil le 20 octobre 2026 (partie V) ; séries budgétaires 2016-2024 et 1987-2009 ; quatre flux de clôture du budget pour 2010-2016 (24 octobre 2026) ; ni transferts par entreprise avant 2016, ni encours de la dette garantie, ni série avant 1987 ; forme (volume ou chapitre) à trancher par la revue (note dans la section du volume) | Lois de finances de 2016 à 2024 (articles sur la garantie) ; transferts par entreprise 2010-2015 ; totaux des budgets de 1959-60 à 1985 (voir la section du volume) |
-| Santé | Volume X, première rédaction le 12 octobre 2026, français seul : histoire, couverture, hôpital, médecine de ville ; dépenses du département 2018-2023 et comptes de la CNAM 2016-2021 intégrés, comptes 2011-2015 lus à l'image le 15 octobre ; les prestations en espèces restent dans « Prestations sociales » | Statistiques de prestations de la CNAM, lisibles en couche texte dans le corpus ; ventilation de la dépense par prestation à obtenir hors JORT |
-| Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense ; lectures des 18 et 19 octobre à relire à la revue ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001, arrêté de 1982 : fascicules au corpus, à lire à l'image (§ 9 du plan) |
+| Santé | Volume X, première rédaction le 12 octobre 2026, français seul : histoire, couverture, hôpital, médecine de ville ; tarifs des malades payants et tarifs réduits de 1998 (23 octobre) ; numérotation des sections corrigée (#511) ; dépenses du département 2018-2023 et comptes de la CNAM 2016-2021 intégrés, comptes 2011-2015 lus à l'image le 15 octobre ; les prestations en espèces restent dans « Prestations sociales » | Statistiques de prestations de la CNAM, lisibles en couche texte dans le corpus ; ventilation de la dépense par prestation à obtenir hors JORT |
+| Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense (dépense des communes ajoutée le 23 octobre, séries 2022-2023) ; lectures des 18 et 19 octobre fusionnées ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001, arrêté de 1982 : fascicules au corpus, à lire à l'image (§ 9 du plan) |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -155,7 +164,7 @@ mais que la couche texte testée est vide. Un texte absent du JORT en français 
   - **tableaux à engendrer** : tous les tableaux du chapitre sont faits main (`TODO (rédacteur)`) ; droit fixe, minimum de perception, timbre des factures, timbre téléphonique, passeport et taxe unique à verser en amont (voir `docs/notes/backlog-modele.md`), puis figure en escalier du droit fixe et du minimum ;
   - **économiste** : écart entre *Doing Business 2020* (0,400 TND en 2018) et le timbre de 0,600 D au 1^er^ janvier 2018 ;
   - **figures** : frise de tête `fig-te-frise` ; libellés arabes de `figures/timbre_enregistrement.py` à relire (relecteur-ar) ;
-  - **livre des caisses** : ajouter à `../caisses/_etat_caisses.qmd#sec-caisses-financeur` une phrase et un lien vers `#sec-te-2026` sur l'affectation par la LF 2026, art. 20, § 7, d'une part du timbre (tickets, cahiers des charges, nouveaux tarifs des factures des grandes surfaces et des recharges) au compte « حساب تنويع مصادر الضمان الاجتماعي » ;
+  - **livre des caisses — fait le 25 octobre 2026** : phrase et lien dans `../caisses/_etat_caisses.qmd#sec-caisses-financeur` vers `#sec-te-2026` sur l'affectation par la LF 2026, art. 20, § 7, d'une part du timbre (tickets, cahiers des charges, nouveaux tarifs des factures des grandes surfaces et des recharges) au compte « حساب تنويع مصادر الضمان الاجتماعي » ;
   - **arabe** : à la livraison de la traduction, ajouter `_timbre_enregistrement.qmd` au `_quarto.yml` arabe et copier le relevé `timbre/rendement-timbre-enregistrement.csv` (et son manifeste) sous `precis/ar/fiscalite/timbre/` ; clé arabe de l'entrée de glossaire `minimum-perception-enregistrement` à vérifier ; traduction des rubriques arabes citées (LF 2023, LF 2026) dans les `TODO` et les registres ; l'attribut `titre` des blocs repliés à traduire ;
   - **taille** : le fichier compte 16 900 mots (wc, 23/10/2026), sous le seuil d'environ 25 000.
 
@@ -1213,7 +1222,7 @@ liste qui suit le tableau, citations comprises. Restent :
     gouvernemental n° 2018-626 ; les décrets n° 93-529, n° 94-1738 et n° 99-1372 ; le décompte
     « onze décrets de prorogation sur seize » de la note, non repris faute de lecture des
     quatre décrets de la chaîne de la carte de soins gratuits ;
-  - **retouches du 9 octobre 2026 après lecture du rendu (non commité, à relire)** :
+  - **retouches du 9 octobre 2026 après lecture du rendu — sur `master` depuis le 10 octobre 2026 (#429)** :
     `tbl-nc-rentree-scolaire` refait en trois dates d'effet (25 mai 2020, décembre 2022,
     1^er^ septembre 2024), montant et enfants visés, avec son registre replié
     (`r-nc-rs-2020/2022/2024`, arrêté, article, page) ; deux séries versées au cache
@@ -1315,8 +1324,8 @@ liste qui suit le tableau, citations comprises. Restent :
 
 ## Rémunérations publiques
 
-- **Rémunération des dirigeants d'entreprises publiques — rédigée le 23 octobre 2026 (commitée,
-  à relire ; branche `rediger/remuneration-dirigeants`).** Sous-section « Les dirigeants »
+- **Rémunération des dirigeants d'entreprises publiques — rédigée et fusionnée le 23 octobre 2026
+  (#499).** Sous-section « Les dirigeants »
   du régime conventionnel public (`#sec-conventionnel-dirigeants`, domicile unique), d'après
   `docs/notes/remunerations-decret-2015-2217.md` et
   `docs/notes/remunerations-publiques-dirigeants-plan-architecte.md` : grille de 2014 à 2015, deux
@@ -2044,10 +2053,10 @@ Revue de ce que les sept volumes ne couvrent pas (sujets à établir sur les tex
 
 **Prioritaires**
 
-1. **Prélèvements sur salaires autres que les cotisations** : taxe de formation professionnelle (TFP), contribution au FOPROLOS — assiette, taux, redevables, historique ; sans eux, le coin socio-fiscal des cotisations est incomplet. **En cours.**
-2. **Salaire minimum et salaires négociés du secteur privé** : histoire du SMIG et du SMAG (montants, régimes 40 h / 48 h, revalorisations, décrets) ; conventions collectives sectorielles et leurs grilles ; accords salariaux périodiques UGTT-UTICA (privé) et UGTT-gouvernement (public). **En cours.**
-3. Droit du travail déterminant les revenus : durée du travail, congés payés, heures supplémentaires, indemnités de licenciement, contrats précaires et sous-traitance, travail informel.
-4. Politiques actives de l'emploi : programmes de l'ANETI (stages d'insertion, contrats aidés), primes à l'embauche, prises en charge de cotisations patronales ; protection contre la perte d'emploi (aujourd'hui effleurée).
+1. **Prélèvements sur salaires autres que les cotisations** : taxe de formation professionnelle (TFP), contribution au FOPROLOS — assiette, taux, redevables, historique ; sans eux, le coin socio-fiscal des cotisations est incomplet. **Fait** : `cotisations_sociales/_prelevements_salaires.qmd` (5 octobre 2026) ; emploi du FOPROLOS au chapitre du logement social des « Prestations sociales » (23 octobre 2026, #506) ; lacunes à la rubrique « Cotisations sociales ».
+2. **Salaire minimum et salaires négociés du secteur privé** : histoire du SMIG et du SMAG (montants, régimes 40 h / 48 h, revalorisations, décrets) ; conventions collectives sectorielles et leurs grilles ; accords salariaux périodiques UGTT-UTICA (privé) et UGTT-gouvernement (public). **Fait** : volume VIII « Marché du travail » (`_salaire_minimum.qmd`, `_conventions.qmd`, `_negociations.qmd`, annexe branche par branche) ; lacunes à la rubrique « Le marché du travail ».
+3. Droit du travail déterminant les revenus : durée du travail, congés payés, heures supplémentaires, indemnités de licenciement, contrats précaires et sous-traitance, travail informel. **Fait pour l'essentiel** : `marche_travail/_rupture_contrat.qmd` (20 octobre 2026 : préavis, gratification, CDD, essai, licenciement économique, sous-traitance) et `_temps_travail.qmd` (22 octobre 2026 : durée, congés, heures supplémentaires) ; le travail informel n'a pas de section propre (mentions dans les notions et le temps de travail).
+4. Politiques actives de l'emploi : programmes de l'ANETI (stages d'insertion, contrats aidés), primes à l'embauche, prises en charge de cotisations patronales ; protection contre la perte d'emploi (aujourd'hui effleurée). **Chapitre `marche_travail/_politiques_emploi.qmd`** ; la protection contre la perte d'emploi est traitée au chapitre de la rupture du contrat.
 5. La compensation (Caisse générale de compensation : produits de base, carburants, électricité, transport) — **volume IX créé le 6 octobre 2026** (`precis/fr/compensation/`) ; lacunes à la rubrique « La compensation » ci-dessous.
 
 **Fiscalité**
@@ -2524,7 +2533,7 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   budgets, 2022-2023) engendrée par `figures/fig_educ_communes_donnees.py` depuis les fichiers bruts de la DGCT ; les séries par
   article sont encore à verser au catalogue de `tunisia-data`. Série 2018-2021 impossible : fichiers sans identifiant d'article. Le TODO du livre des finances locales sur l'annexe du décret n° 2020-52
   (`_budgets.qmd`, section de la nomenclature) est en partie levé : le modèle est lu, le contenu des articles 6101
-  et 8002 reste à lire ; `decret-gouv2020-439` est à ajouter aux références de ce livre.
+  et 8002 reste à lire ; `decret-gouv2020-439` est dans les références de ce livre (contrôle du 25 octobre 2026).
 - [ ] **Textes à lire à l'image** : liste au § 9 du plan (arrêtés de montants de bourses 1958-1978, textes de 1990 et
   1992, décret n° 80-1001, arrêté de 1982, fascicules d'avant 1990, décrets de répartition des crédits,
   budgets citoyens 2014-2018). Ticket proposé au § 9, à ouvrir par l'humain.
@@ -2533,8 +2542,9 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   confirmer à la revue.
 - [ ] **Références** : une quinzaine de textes connus par leur seul intitulé n'ont pas de clé
   (`docs/notes/biblio-a-rapatrier.md`, « Clôture du 17/10/2026 ») ; `budget-mesrs-2013-gbo` désigne le fichier
-  non-GBO (à renommer) ; `loi-2009-32-restauration-formation` à promouvoir au fonds commun ; double clé de la
-  loi de finances pour 2019.
+  non-GBO (clé **conservée**, décision de l'inbox du 17 octobre 2026 : citée dans le chapitre et dans une figure, et déjà dans
+  Zotero) ; `loi-2009-32-restauration-formation` est au fonds commun en français et, depuis le 25 octobre 2026, en arabe
+  (déplacée depuis `precis/ar/fiscalite/references.json`) ; double clé de la loi de finances pour 2019.
 - [ ] **Séries** : verser les 57 séries de `education-depense-series/` au catalogue de `tunisia-data`, puis repasser
   les figures de la dépense à `figtools.series()` ; copier les données de la Banque mondiale (UIS) et le
   communiqué de l'INS de `/tmp/education-ocr-D/` vers `tunisia-data` ; figures des boursiers et des
@@ -3532,8 +3542,8 @@ chapitre, `_relation_financiere.qmd` (`#sec-ep-relation`), écrit sur la note
 `docs/notes/entreprises-publiques-2026-10-11.md` et sur les onze séries versées dans
 `tunisia-data` (`sources/entreprises-publiques.md`) ; quand la note et une série divergent, la
 série fait foi. La forme — volume ou chapitre d'un autre volume — reste à trancher par la revue
-humaine. **Le livre n'existe qu'en français** : pas de dossier `precis/ar/entreprises_publiques/`,
-pas de lien depuis la page d'accueil ; il est inscrit dans `build.sh`, `build_glossary.py` et
+humaine. **Le livre n'existe qu'en français** : pas de dossier `precis/ar/entreprises_publiques/` ;
+il est lié depuis la page d'accueil (partie V, depuis le 20 octobre 2026) et inscrit dans `build.sh`, `build_glossary.py` et
 `verifier_livres.py`, qui sautent un livre arabe absent.
 
 Plan : vue d'ensemble (`#sec-ep-vue-ensemble`) ; mise en place 1969-1987 ; grandes réformes
@@ -4629,20 +4639,28 @@ verser par le terminologue quand un volume les emploiera.
   glossaire ajoutés — sont désormais rétablis par `translate_sync` avant le contrôle de parité
   (`restore_citation_keys`, `remove_extra_glossary_links`, `restore_locators` apparié par clé).
 
-- **Zotero** : le rangement a été corrigé le 29 septembre (535 références présentes,
-  aucun défaut restant alors). Depuis, deux nouvelles clés du livre « Prestations
-  sociales » — `loi2017-47` et `arrete-2025-07-10-appui-occasionnel` — et la clé
-  commune `cnss-retrospective-1990-2004` (3 octobre) attendent leur versement **après revue** ; elles sont recensées dans `biblio-a-rapatrier.md`.
-  Recontrôler la préservation des URL et notes par langue au diff de la descente.
+- **Zotero — à jour le 25 octobre 2026** : la poussée du 25 octobre (neuf lois de finances issues
+  de la fusion des doublons, puis rangement) laisse **0 clé absente de Zotero** et 0 à ranger
+  (contrôle de rangement, exécution 40222647086 ; détail dans `biblio-a-rapatrier.md`) ; les 72
+  clés citées par plusieurs livres mais rattachées à un livre ont été déclassées le même jour
+  (exécution 40223425216, 0 échec). Reste la **descente** (exécution 40222650564 : les 24
+  `references.json` réécrits, ordre et forme des champs pour l'essentiel), à relire dans sa PR
+  propre en contrôlant la préservation des URL et notes par langue.
 - **Titres arabes et glossaire** : des notices restent en français dans la bibliographie
   arabe et des notions sont encore à valider (issues #151, #77, #54, #53). Recompter
   avant de réutiliser les totaux anciens de 69 notices et 26 termes.
 - **Tableaux engendrés** : la règle est que tout tableau de paramètres vienne des dépôts
   openfisca par un générateur. Retraites et Prestations sociales y dérogent provisoirement.
 - **Version arabe** : produite par la CI ; rendre tout livre traduit avant de fusionner
-  la PR de traduction. `uv run python scripts/traduction_en_retard.py --detail` ne signale
-  **aucun fichier français en avance sur l'arabe** au 3 octobre, après le rattrapage des
-  rémunérations publiques (#340).
+  la PR de traduction. Au 3 octobre 2026, aucun fichier français n'était en avance sur l'arabe
+  (#340). **Au 25 octobre 2026, `uv run python scripts/traduction_en_retard.py --detail` compte
+  88 fichiers en retard** : les traductions sont différées depuis le 6 octobre 2026 (plafond de
+  dépense du traducteur) ; les arabes datent du 4 octobre, et quatre ensembles n'ont jamais été
+  traduits (`annexe-pib.qmd`, `retraites/_regard_banque_mondiale.qmd`, les volumes « Santé »,
+  « Éducation et formation » et « Entreprises publiques »). Ce n'est pas un blocage du travail en
+  français ; à la réouverture du budget, rattraper par livre, en commençant par ceux dont la
+  structure a changé (TVA, prestations sociales, finances locales), et déclarer les chapitres
+  nouveaux dans chaque `_quarto.yml` arabe.
 - **Garde-fou de troncature — CORRIGÉ le 20 septembre.** Il était enveloppé dans
   `if old_target_text:` et ne s'exécutait donc pas en retraduction complète, le mode où la
   troncature est la plus probable. Mesuré sur le vrai script : un chapitre arabe de 175 lignes
