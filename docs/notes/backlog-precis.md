@@ -3747,7 +3747,7 @@ Ce qui reste :
   que 2002 change : mandat renouvelable deux fois, délais d'approbation des contrats-programmes et des budgets,
   nomination par le seul ministre de tutelle, contrôleur d'État observateur, mandataire spécial nommé par le
   Premier ministre, destinataires des documents) ; article 67 de la loi de finances pour 1986 (`r-ep-1986-fautes`) ;
-  activité de la Cour de discipline financière 1986-2009 (`tbl-ep-cdf`, détail replié `tbl-ep-cdf-detail`,
+  activité de la Cour de discipline financière 1986-2009 (figure `fig-ep-cdf`, série `cdf-activite` de tunisia-data, branche `donnees/cdf-activite` ; tableaux repliés `tbl-ep-cdf` et `tbl-ep-cdf-detail`,
   vingt et une notices `cdf-rapport-01` à `-21`) ; passes du 27 octobre versées aux fiches
   `r-loi89-9-modificatifs-apres-2006` et `r-epna-liste-modificatifs-apres-2007` ; fiche
   `r-cdf-rapports-apres-2009`. **Restent** : fascicules sans couche texte de 2022 (n° 35, 91) et 2025 (n° 67, 70),

@@ -165,7 +165,32 @@ Depuis 1985, l'administrateur ou l'agent d'une entreprise publique qui commet un
 - **Les affaires de l'ancienne Cour de discipline budgétaire.** La loi de 1985 abroge la loi de 1970 sur la Cour de discipline budgétaire sans régler le sort des affaires pendantes. [La loi de finances pour 1986](#r-ep-1986-fautes) les confie à la Cour de discipline financière : les affaires en cours devant la Cour de discipline budgétaire au 20 juillet 1985, et les fautes commises sous la loi de 1970, sont jugées selon la procédure de 1985. En 1993, la Cour s'appuie sur cet article pour rejeter une objection tirée de ce que les faits sont antérieurs à sa création [@cdf-rapport-05, p. 2014].
 - **Depuis 2020, la Cour des comptes.** [La loi organique n° 2019-41](#r-ep-2019-cour-comptes) abroge la loi de 1985 et confie à la Cour des comptes la sanction des fautes de gestion, notamment celles des agents des entreprises publiques et des agents, administrateurs ou représentants des établissements dont l'État ou les collectivités locales détiennent au moins 50 % du capital. Les affaires pendantes devant la Cour de discipline financière lui sont transmises.
 
-Vingt et un rapports annuels de la Cour de discipline financière, publiés au *Journal officiel* de 1990 à 2010, donnent son activité de 1986 à 2009 : de 5 à 25 saisines par an à partir de 1990, de 1 à 15 condamnations à l'amende (@tbl-ep-cdf).
+Vingt et un rapports annuels de la Cour de discipline financière, publiés au *Journal officiel* de 1990 à 2010, donnent son activité de 1986 à 2009 : les affaires dont elle est saisie, celles qu'elle tranche, les condamnations à l'amende et les affaires en cours (@fig-ep-cdf).
+
+```{python}
+#| label: fig-ep-cdf
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "cdf",
+    nominal=False,
+    caption=("Activité de la Cour de discipline financière, 1986-2009 : saisines et affaires "
+             "tranchées, condamnations à l'amende, affaires en cours en fin d'année, en nombre "
+             "d'affaires, d'après ses vingt et un rapports annuels publiés au Journal officiel"),
+    note_lecture=(
+        "Premier panneau : les barres bleues sont les affaires dont la Cour est saisie dans l'année ; la ligne orange, les affaires tranchées, arrêts et classements. « n. d. » : le rapport ne donne pas les saisines (1986, 1992). Le premier rapport donne les affaires tranchées de 1986 à 1989 en un seul total, tracé en tireté sur ces quatre années : ce n'est pas un nombre annuel. Les classements de l'article 15 bis sont comptés parmi les affaires tranchées jusqu'en 2001, puis les rapports n'en parlent plus : le trait pointillé marque cette rupture, et la ligne ne se compare pas de part et d'autre. Deuxième panneau : les barres claires sont les condamnations à l'amende ; la partie foncée, celles qui portent sur la gestion d'une entreprise publique, comptées ici sur les résumés d'arrêts de 1986 à 1998, sociétés régionales de transport comprises ; à partir de 1999 (zone grise), les rapports ne nomment plus que des catégories de parties lésées. Troisième panneau : le compte des affaires en cours change deux fois de définition, en 2001 et en 2005 (traits pointillés) ; de 1990 à 2000 il comprend les affaires tranchées dans l'année, de 2001 à 2004 il ne retient que les affaires en instruction, de 2005 à 2009 il ajoute les affaires dont l'instruction est close. Les trois segments ne se chaînent pas."),
+)
+```
+
+<!-- RECHERCHE r-cdf-rapports-apres-2009 : rapports annuels de la Cour de discipline financière postérieurs au vingt et unième, activité 2009 (voir docs/recherches.yml) -->
+
+- **Le pic de 1987.** Sur les 67 affaires de 1987, 65 viennent du Premier président de la Cour des comptes, sur rapports des organes d'inspection : une circulaire du Premier ministre, n° 28 du 27 décembre 1986, l'invite à porter devant la Cour les rapports de contrôle qui font état de fautes de gestion. Le reflux de 1988, cinq affaires, suit la circulaire n° 71 du 7 septembre 1988, qui laisse aux ministres l'initiative de la saisine [@cdf-rapport-01, p. 1249].
+- **Les entreprises publiques parmi les condamnés.** De 1986 à 1998, les rapports résument chaque arrêt : 21 des 80 condamnations à l'amende portent sur la gestion d'une entreprise publique, en comptant parmi elles les sociétés régionales de transport. À partir de 1999, les rapports ne nomment plus que des catégories de parties lésées.
+- **2007, des plaintes retirées.** Douze des treize affaires tranchées en 2007 sont des retraits de la plainte par l'autorité qui avait saisi la Cour [@cdf-rapport-19, p. 2083].
+
+:::: {.chronologie-repliable titre="Cour de discipline financière, 1986-2009 : saisines, affaires tranchées et condamnations à l'amende année par année, avec la page de chaque rapport ; autres issues, affaires en cours en fin d'année, condamnations qui portent sur une entreprise publique"}
 
 | Activité | Saisines | Affaires tranchées | Condamnations à l'amende | Rapport |
 |---|---|---|---|---|
@@ -191,15 +216,7 @@ Vingt et un rapports annuels de la Cour de discipline financière, publiés au *
 | 2008 | 13 | 8 | 6 | [@cdf-rapport-20, p. 2048] |
 | 2009 | 7, et 2 demandes en révision | 7 | 1 | [@cdf-rapport-21, p. 1958] |
 
-: Activité de la Cour de discipline financière, 1986-2009 : affaires dont la Cour est saisie dans l'année, affaires tranchées (arrêts et classements) et condamnations à l'amende, d'après ses rapports annuels. Case vide : le rapport ne donne pas le nombre ; le premier rapport ne donne pas les saisines de 1986. Les classements de l'article 15 bis sont comptés parmi les affaires tranchées de 1988 à 2001, puis les rapports ne les mentionnent plus : les affaires tranchées de 2002 à 2009 ne se comparent pas à celles d'avant. 1990 : condamnations comptées sur les résumés d'arrêts du rapport. {#tbl-ep-cdf}
-
-<!-- RECHERCHE r-cdf-rapports-apres-2009 : rapports annuels de la Cour de discipline financière postérieurs au vingt et unième, activité 2009 (voir docs/recherches.yml) -->
-
-- **Le pic de 1987.** Sur les 67 affaires de 1987, 65 viennent du Premier président de la Cour des comptes, sur rapports des organes d'inspection : une circulaire du Premier ministre, n° 28 du 27 décembre 1986, l'invite à porter devant la Cour les rapports de contrôle qui font état de fautes de gestion. Le reflux de 1988, cinq affaires, suit la circulaire n° 71 du 7 septembre 1988, qui laisse aux ministres l'initiative de la saisine [@cdf-rapport-01, p. 1249].
-- **Les entreprises publiques parmi les condamnés.** De 1986 à 1998, les rapports résument chaque arrêt : 21 des 80 condamnations à l'amende portent sur la gestion d'une entreprise publique, en comptant parmi elles les sociétés régionales de transport. À partir de 1999, les rapports ne nomment plus que des catégories de parties lésées.
-- **2007, des plaintes retirées.** Douze des treize affaires tranchées en 2007 sont des retraits de la plainte par l'autorité qui avait saisi la Cour [@cdf-rapport-19, p. 2083].
-
-:::: {.chronologie-repliable titre="Cour de discipline financière, 1986-2009 : issues des affaires, affaires en cours en fin d'année, condamnations qui portent sur une entreprise publique, année par année"}
+: Activité de la Cour de discipline financière, 1986-2009 : affaires dont la Cour est saisie dans l'année, affaires tranchées (arrêts et classements) et condamnations à l'amende, d'après ses rapports annuels, avec la page de chaque rapport. Case vide : le rapport ne donne pas le nombre ; le premier rapport ne donne pas les saisines de 1986. Les classements de l'article 15 bis sont comptés parmi les affaires tranchées de 1988 à 2001, puis les rapports ne les mentionnent plus : les affaires tranchées de 2002 à 2009 ne se comparent pas à celles d'avant. 1990 : condamnations comptées sur les résumés d'arrêts du rapport. {#tbl-ep-cdf}
 
 | Activité | Autres issues que l'amende | Affaires en cours en fin d'année, telles que le rapport les donne | Condamnations à l'amende qui portent sur une entreprise publique |
 |---|---|---|---|
