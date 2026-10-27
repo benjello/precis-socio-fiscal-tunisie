@@ -1,30 +1,45 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-11
-# séries (tunisia_data) : privatisation-recettes-annuelles, entreprises-publiques-denominateurs
-# sources (citation) : @dgpv-recettes-annuelles-1987-2005, @dgpv-recettes-annuelles-1987-2009, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015
-# fiches : sources/entreprises-publiques.md
-# méthode/hypothèses : DEUX ÉDITIONS, LE FICHIER NE CHOISIT PAS : 1998 vaut 481 394 puis 456 650, 1999 vaut 68 859 puis 43 495,2 ; écarts de moins de 150 en 2004 et 2005 (`divergence_entre_editions`). Seule l'édition de 2010 retrouve la page officielle par plan (voir privatisation-recettes-par-plan). UNE OPÉRATION FAIT LA MOITIÉ DU TOTAL : 2006, 3 110,5 MD. Recettes en dinars courants, toutes natures de cession confondues (actions, actifs, concessions, offres publiques) ; le classeur ne donne AUCUN DÉTAIL PAR OPÉRATION. Rien après 2009. NON TRANSCRIT : les feuilles par mode de cession (1994-2003) et par secteur (1994-1998), d'un millésime antérieur qui contredit la feuille principale (2002 : 817 123 contre 817 531 ; 2003 : 36 826 contre 35 469). LU PAR PROGRAMME, cellule par cellule., Mêmes dénominateurs que le volume « La compensation ». Les bases du PIB ne sont pas raccordées : la part du PIB se lit par segment, chaque changement de base est une rupture du seul dénominateur. Dépenses de l'État non disponibles de 1988 à 1990. Un encours rapporté aux dépenses ou au PIB de l'année rapporte un stock à un flux.
-# note : Recettes des opérations de privatisation et de restructuration des entreprises à participations publiques, par année, en dinars courants, en % des dépenses de l'État hors service de la dette et en % du PIB, 1987-2009
-Année,Édition 1987-2005 (MD courants),Édition 1987-2009 (MD courants),% des dépenses de l'État hors service de la dette,% du PIB,Base du PIB
-1987,6.772,6.772,0.292,0.084,base 1983 présumée
-1988,26.992,26.992,,0.312,base 1983 présumée
-1989,50.644,50.644,,0.528,base 1983 présumée
-1990,16.581,16.581,,0.153,base 1983 présumée
-1991,24.939,24.939,0.71,0.207,base 1983 présumée
-1992,18.414,18.414,0.504,0.134,base 1983
-1993,22.319,22.319,0.556,0.152,base 1983
-1994,23.609,23.609,0.552,0.149,base 1983
-1995,68.413,68.413,1.492,0.401,base 1983
-1996,57.185,57.185,1.177,0.3,base 1983
-1997,80.621,80.621,1.523,0.351,"base 1997, rétropolée"
-1998,481.394,456.65,8.143,1.839,"base 1997, rétropolée"
-1999,68.859,43.4952,0.705,0.16,"base 1997, rétropolée"
-2000,433.237,433.237,6.527,1.472,"base 1997, rétropolée"
-2001,125.084,125.084,1.736,0.394,"base 1997, rétropolée"
-2002,817.531,817.531,10.877,2.546,"valeur du ministère des Finances, sans base"
-2003,35.469,35.4685,0.447,0.102,"valeur du ministère des Finances, sans base"
-2004,27.356,27.2272,0.319,0.072,"valeur du ministère des Finances, sans base"
-2005,80.353,80.4414,0.875,0.192,base 1997
-2006,,3110.4801,31.186,6.798,base 1997
-2007,,135.5686,1.214,0.272,base 1997
-2008,,302.5622,2.365,0.547,base 1997
-2009,,12.142,0.086,0.021,base 1997
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-27
+# séries (tunisia_data) : privatisation-recettes-annuelles, cdc-cloture-entreprises-publiques, entreprises-publiques-denominateurs
+# sources (citation) : @dgpv-recettes-annuelles-1987-2005, @dgpv-recettes-annuelles-1987-2009, @cdc-cloture-2011, @cdc-cloture-2012, @cdc-cloture-2013, @cdc-cloture-2014, @cdc-cloture-2015, @cdc-cloture-2016, @cdc-cloture-2018, @cdc-cloture-2019, @cdc-cloture-2020, @cdc-cloture-2021, @cdc-cloture-2022, @cdc-cloture-2023, @cdc-cloture-2024, @minfin-remunerations, @minfin-indicateurs-fp, @ins-cnat-2015
+# fiches : sources/entreprises-publiques.md, sources/cdc-cloture-entreprises-publiques.md
+# méthode/hypothèses : DEUX ÉDITIONS, LE FICHIER NE CHOISIT PAS : 1998 vaut 481 394 puis 456 650, 1999 vaut 68 859 puis 43 495,2 ; écarts de moins de 150 en 2004 et 2005 (`divergence_entre_editions`). Seule l'édition de 2010 retrouve la page officielle par plan (voir privatisation-recettes-par-plan). UNE OPÉRATION FAIT LA MOITIÉ DU TOTAL : 2006, 3 110,5 MD. Recettes en dinars courants, toutes natures de cession confondues (actions, actifs, concessions, offres publiques) ; le classeur ne donne AUCUN DÉTAIL PAR OPÉRATION. Rien après 2009. NON TRANSCRIT : les feuilles par mode de cession (1994-2003) et par secteur (1994-1998), d'un millésime antérieur qui contredit la feuille principale (2002 : 817 123 contre 817 531 ; 2003 : 36 826 contre 35 469). LU PAR PROGRAMME, cellule par cellule., CE NE SONT PAS DES TRANSFERTS DU BUDGET AUX ENTREPRISES PUBLIQUES (les rapports de clôture ne ventilent pas la dépense par entreprise bénéficiaire ; voir l'annexe 8 des lois de finances depuis 2016). AUCUN ENCOURS AVANT 2017 : la Cour écrit chaque année jusqu'au rapport 2016 que le compte général ne porte pas la situation des prêts rétrocédés ni des prêts garantis ; depuis le rapport 2018 elle imprime un encours de la dette garantie en fin de gestion (rubrique dette_garantie_encours), d'après le ministère des Finances (Direction générale de la gestion de la dette et de la coopération financière pour 2018 ; rapport sur la dette publique pour 2019 ; sans source citée pour 2021 à 2023) ; aucun encours imprimé pour 2020 ni pour 2024 ; la part du PIB imprimée est dans la remarque (15,6 % en 2018, 14,67 % en 2019) ; fin 2018 : 16 471 MD (rapport 2018) puis 16 713,4 MD (rapport 2019), les deux gardés ; 2017 : extérieur et intérieur seulement. `transferts_ep_profits_tresor` est un FLUX DES ENTREPRISES VERS LE BUDGET, qui comprend la part du budget dans les profits de la Banque centrale et les autres profits du Trésor. RUPTURE DE NOMENCLATURE EN 2020 : les rapports 2020 à 2024 n'impriment plus le total « تحويلات المنشآت العمومية ومرابيح الخزينة » ; aucun total n'est recalculé, les sous-totaux imprimés (`total_dividendes`, `total_excedents_ep`) et les lignes `profits_tresor_*` sont des postes à part (pour 2019, les trois lignes `profits_tresor_*` du rapport 2020 somment les 63 575 110 « autres profits du Trésor » du rapport 2019) ; en 2024 la ligne des excédents ne précise plus « غير البترولية » (449,350 MD = 285 MD pétrolières + 164,350 MD non pétrolières, d'après le texte). Dividendes de 2023 : le rapport 2024 imprime sous les libellés inverses les montants (110 111 693 et 20 000 000) que le rapport 2023 attribue au pétrole et au non-pétrole ; les deux transcriptions sont gardées (`divergence_entre_rapports`), le sens des dividendes de 2024 suit les libellés imprimés dans le rapport 2024 ; l'annexe du rapport 2020 intervertit aussi les deux lignes. `garantie_principal_paye` est la dette garantie REMBOURSÉE PAR L'ÉTAT : ses lignes ne sont pas toutes des entreprises publiques (art. 24 de la loi de finances de 1999, Caisse des prêts et de soutien des collectivités locales, crédits agricoles, Office des céréales, Office national de l'huile) ; depuis 2017 imprimée en milliers de dinars à trois décimales. Écarts imprimés déclarés : 2014, lignes 174 131 665 contre un total imprimé de 174 131 165 (rapports 2014 et 2015) ; 2017 (−1 dinar, rapport 2018), 2018 (+1 dinar, rapports 2018 et 2019). Prêts : somme des lignes (texte, millions de dinars à trois décimales) moins total (tableau, dinars) = +557 dinars en 2018 et +257 en 2019. Libellé divergent : le montant de 47 000 000 dinars de 2013 est celui de la Société tunisienne de banque dans le rapport 2013 et celui de la société tunisienne de sidérurgie dans le rapport 2014. Remboursements de prêts : depuis 2020 les prêts extérieurs rétrocédés sont dans les ressources d'emprunt extérieur et les recettes budgétaires ne portent que les prêts du titre II (quelques millions de dinars) : pas de total, et la baisse de 155 MD (2019) à 0,95 MD (2020) est un changement de classement. Recettes de privatisation 2012 : 1 105 MD (table du déficit structurel, rapport 2012) et 900 MD pour la seule cession de 35 % de Tunisie Télécom (rapport 2016) ; 2013 : 1 070,402 MD et 1 000 MD ; la licence mobile de 2016 est une recette distincte ; LIGNES DE PRIVATISATION VIDES DEPUIS 2017 (valeur vide, remarque) : les rapports 2018 à 2024 n'impriment aucun montant (en 2017 et 2018 les autres recettes extraordinaires sont égales aux dons plus les confiscations ; de 2020 à 2024 le tableau des recettes non fiscales n'a aucune ligne de privatisation) ; la cession de la société pharmaceutique de 45 MD en 2022 est une confiscation. Gestion 2010 : le rapport de clôture de 2010 n'est pas au catalogue de la Cour ; les valeurs de 2010 viennent de la colonne de comparaison du rapport 2011. Les intérêts de 2012 à 2014 sont lus à la couche texte, recoupés d'un rapport à l'autre. Le rapport 2021 imprime à l'envers les groupes de chiffres du tableau des intérêts (« 828 14 173 » pour 14 173 828) : lus avec l'annexe du rapport 2020 et le rapport 2022. Pages : celles du pied de page, avec les pages du fichier ; décalage de trois pages dans les rapports 2021 à 2023. Montants courants ; aucune part du PIB dans la série, hors la remarque de l'encours (le précis calcule les siennes avec les dénominateurs de la compensation, PIB en base 2015 pour 2010-2016)., Mêmes dénominateurs que le volume « La compensation ». Les bases du PIB ne sont pas raccordées : la part du PIB se lit par segment, chaque changement de base est une rupture du seul dénominateur. Dépenses de l'État non disponibles de 1988 à 1990. Un encours rapporté aux dépenses ou au PIB de l'année rapporte un stock à un flux.
+# note : Recettes de cession des participations publiques, par année, en dinars courants, en % des dépenses de l'État hors service de la dette et en % du PIB : produit des opérations selon la Direction générale de la privatisation, 1987-2009, puis recettes de privatisation inscrites au budget selon les rapports de clôture de la Cour des comptes, 2010-2024
+Année,Édition 1987-2005 (MD courants),Recettes (MD courants),% des dépenses de l'État hors service de la dette,% du PIB,Source,Base du PIB
+1987,6.772,6.772,0.292,0.084,"Direction générale de la privatisation, relevé arrêté à 2009",base 1983 présumée
+1988,26.992,26.992,,0.312,"Direction générale de la privatisation, relevé arrêté à 2009",base 1983 présumée
+1989,50.644,50.644,,0.528,"Direction générale de la privatisation, relevé arrêté à 2009",base 1983 présumée
+1990,16.581,16.581,,0.153,"Direction générale de la privatisation, relevé arrêté à 2009",base 1983 présumée
+1991,24.939,24.939,0.71,0.207,"Direction générale de la privatisation, relevé arrêté à 2009",base 1983 présumée
+1992,18.414,18.414,0.504,0.134,"Direction générale de la privatisation, relevé arrêté à 2009",base 1983
+1993,22.319,22.319,0.556,0.152,"Direction générale de la privatisation, relevé arrêté à 2009",base 1983
+1994,23.609,23.609,0.552,0.149,"Direction générale de la privatisation, relevé arrêté à 2009",base 1983
+1995,68.413,68.413,1.492,0.401,"Direction générale de la privatisation, relevé arrêté à 2009",base 1983
+1996,57.185,57.185,1.177,0.3,"Direction générale de la privatisation, relevé arrêté à 2009",base 1983
+1997,80.621,80.621,1.523,0.351,"Direction générale de la privatisation, relevé arrêté à 2009","base 1997, rétropolée"
+1998,481.394,456.65,8.143,1.839,"Direction générale de la privatisation, relevé arrêté à 2009","base 1997, rétropolée"
+1999,68.859,43.4952,0.705,0.16,"Direction générale de la privatisation, relevé arrêté à 2009","base 1997, rétropolée"
+2000,433.237,433.237,6.527,1.472,"Direction générale de la privatisation, relevé arrêté à 2009","base 1997, rétropolée"
+2001,125.084,125.084,1.736,0.394,"Direction générale de la privatisation, relevé arrêté à 2009","base 1997, rétropolée"
+2002,817.531,817.531,10.877,2.546,"Direction générale de la privatisation, relevé arrêté à 2009","valeur du ministère des Finances, sans base"
+2003,35.469,35.4685,0.447,0.102,"Direction générale de la privatisation, relevé arrêté à 2009","valeur du ministère des Finances, sans base"
+2004,27.356,27.2272,0.319,0.072,"Direction générale de la privatisation, relevé arrêté à 2009","valeur du ministère des Finances, sans base"
+2005,80.353,80.4414,0.875,0.192,"Direction générale de la privatisation, relevé arrêté à 2009",base 1997
+2006,,3110.4801,31.186,6.798,"Direction générale de la privatisation, relevé arrêté à 2009",base 1997
+2007,,135.5686,1.214,0.272,"Direction générale de la privatisation, relevé arrêté à 2009",base 1997
+2008,,302.5622,2.365,0.547,"Direction générale de la privatisation, relevé arrêté à 2009",base 1997
+2009,,12.142,0.086,0.021,"Direction générale de la privatisation, relevé arrêté à 2009",base 1997
+2010,,0.0,0.0,0.0,"recette inscrite au budget, rapport de clôture de la Cour des comptes","base 2015, rétropolée"
+2011,,0.0,0.0,0.0,"recette inscrite au budget, rapport de clôture de la Cour des comptes","base 2015, rétropolée"
+2012,,1105.0,5.773,1.495,"recette inscrite au budget, rapport de clôture de la Cour des comptes","base 2015, rétropolée"
+2013,,1070.402,4.863,1.353,"recette inscrite au budget, rapport de clôture de la Cour des comptes","base 2015, rétropolée"
+2014,,4.251,0.019,0.005,"recette inscrite au budget, rapport de clôture de la Cour des comptes","base 2015, rétropolée"
+2015,,0.0,0.0,0.0,"recette inscrite au budget, rapport de clôture de la Cour des comptes",base 2015
+2016,,396.9,1.646,0.417,"recette inscrite au budget, rapport de clôture de la Cour des comptes",base 2015
+2017,,,,,"recette inscrite au budget, rapport de clôture de la Cour des comptes",base 2015
+2018,,,,,"recette inscrite au budget, rapport de clôture de la Cour des comptes",base 2015
+2019,,,,,"recette inscrite au budget, rapport de clôture de la Cour des comptes",base 2015
+2020,,,,,"recette inscrite au budget, rapport de clôture de la Cour des comptes",base 2015
+2021,,,,,"recette inscrite au budget, rapport de clôture de la Cour des comptes",base 2015
+2022,,,,,"recette inscrite au budget, rapport de clôture de la Cour des comptes",base 2015
+2023,,,,,"recette inscrite au budget, rapport de clôture de la Cour des comptes",base 2015
+2024,,,,,"recette inscrite au budget, rapport de clôture de la Cour des comptes",base 2015

@@ -740,20 +740,40 @@ def _cessions():
     return t
 
 
+def _cessions_budget():
+    """Recettes de privatisation inscrites au budget de l'État, par gestion depuis 2010, d'après
+    les rapports de clôture de la Cour des comptes : colonnes `annee`, `budget` (MD), `dep`, `pib`.
+    Autre source, autre périmètre que le relevé de la Direction générale de la privatisation :
+    une recette inscrite au budget d'une gestion, non le produit d'une opération."""
+    v = _cdc("recettes_privatisation_budget")
+    if "total" not in v.columns:
+        return pd.DataFrame(columns=["annee", "budget", "dep", "pib"])
+    v = v["total"]
+    v = v[v.index.astype(int) >= 2010]
+    t = pd.DataFrame({"annee": v.index.astype(int), "budget": v.values})
+    t["dep"] = [_part(x, a, "dep") for x, a in zip(t["budget"], t["annee"])]
+    t["pib"] = [_part(x, a, "pib") for x, a in zip(t["budget"], t["annee"])]
+    return t.reset_index(drop=True)
+
+
 def fig_cessions():
     return _trois_vues(_fig_cessions)
 
 
 def table_cessions():
     t = _cessions().copy()
+    t["source"] = "Direction générale de la privatisation, relevé arrêté à 2009"
+    b = _cessions_budget().rename(columns={"budget": "classeur 1987-2009"})
+    b["source"] = "recette inscrite au budget, rapport de clôture de la Cour des comptes"
+    t = pd.concat([t, b], ignore_index=True, sort=False)
     t["dep"] = [_arrondi(x) for x in t["dep"]]
     t["pib"] = [_arrondi(x) for x in t["pib"]]
     t["Base du PIB"] = [_base_courte(a) for a in t["annee"]]
     return t.rename(columns={"annee": "Année",
                              "classeur 1987-2005": "Édition 1987-2005 (MD courants)",
-                             "classeur 1987-2009": "Édition 1987-2009 (MD courants)",
+                             "classeur 1987-2009": "Recettes (MD courants)",
                              "dep": "% des dépenses de l'État hors service de la dette",
-                             "pib": "% du PIB"})
+                             "pib": "% du PIB", "source": "Source"})
 
 
 def tableau_cessions(caption: str, tbl_id: str = "tbl-ep-cessions") -> None:
@@ -766,6 +786,19 @@ def tableau_cessions(caption: str, tbl_id: str = "tbl-ep-cessions") -> None:
                        _n(pib, 2), _base_courte(a), autre])
     tot = t["classeur 1987-2009"].sum()
     lignes.append(["**1987-2009**", f"**{_n(tot, 1)}**", "", "", "", ""])
+    b = _cessions_budget()
+    for r in b.itertuples(index=False):
+        if r.budget != r.budget:
+            lignes.append([f"{r.annee} (budget)", "aucune ligne", "", "", _base_courte(r.annee), ""])
+            continue
+        lignes.append([f"{r.annee} (budget)", _n(r.budget, 1),
+                       _n(r.dep, 2) if r.dep is not None and r.dep == r.dep else "",
+                       _n(r.pib, 2) if r.pib is not None and r.pib == r.pib else "",
+                       _base_courte(r.annee), ""])
+    if len(b):
+        bb = b[b.budget.notna()]
+        lignes.append([f"**{int(bb.annee.min())}-{int(bb.annee.max())} (budget)**",
+                       f"**{_n(bb.budget.sum(), 1)}**", "", "", "", ""])
     _md(["Année", "Recettes<br>(MD courants)", "Recettes<br>(% des dépenses de l'État)",
          "Recettes<br>(% du PIB)", "Base du PIB",
          "Édition 1987-2005,<br>si elle diffère<br>(MD courants)"], "gdddgd", lignes, caption,
@@ -1093,6 +1126,14 @@ def _fig_encours(mesure: str):
         ax.bar([2024], [ji["2024-06"]], bottom=[je["2024-06"]], color=ORANGE, width=0.7,
                alpha=0.45, hatch="//", edgecolor="white", label="fin juin 2024, estimation")
         ans = ans + [2024]
+    c = _cdc_encours()
+    if c is not None:
+        xc, yc = _xy(c.index, c["total"], mesure)
+        pts = ax.plot(xc, yc, color=NOIR, marker="D", ls="", ms=6, mfc="white", mew=1.2,
+                      label="encours selon la Cour des comptes, rapport de clôture de la gestion")
+        for a, v in zip(xc, yc):
+            figtools.infobulle(pts[0], f"fin {a}, Cour des comptes : {_n(v, 1 if mesure == 'md' else 2)} "
+                                       f"{'MD' if mesure == 'md' else '%'}")
     if mesure == "pib":
         g = _s(S_GARANTIES)
         g = g[(g["grandeur"] == "encours_pct_pib") & (g["portee"] == "année")]
@@ -1130,12 +1171,18 @@ def _lignes_encours():
 
 def table_encours():
     import pandas as pd
-    return pd.DataFrame(
+    t = pd.DataFrame(
         [(l[0], l[1], _arrondi(l[2]), _arrondi(l[3]), l[4], l[5]) for l in _lignes_encours()],
         columns=["Fin d'année", "Encours garanti (MD courants)",
                  "Encours garanti (% des dépenses de l'État hors service de la dette)",
                  "Encours garanti (% du PIB, base 2015, calculé)", "dont extérieur (MD)",
                  "dont intérieur (MD)"])
+    c = _cdc_encours()
+    if c is not None:
+        cour = {str(a): c.at[a, "total"] for a in c.index}
+        t["Encours selon la Cour des comptes, rapport de clôture (MD courants)"] = [
+            cour.get(x) for x in t["Fin d'année"]]
+    return t
 
 
 def _fig_dividendes(mesure: str):
@@ -1247,18 +1294,53 @@ def _fig_cessions(mesure: str):
     figtools.apply_lang_font()
     t = _cessions()
     col = {"md": "classeur 1987-2009", "dep": "dep", "pib": "pib"}[mesure]
-    fig, ax = plt.subplots(figsize=(9.2, 5.2))
+    fig, ax = plt.subplots(figsize=(9.6, 5.2))
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
     b = t[t[col].notna()]
     barres = ax.bar(b["annee"], b[col], color=BLEU, width=0.72)
+    poignees = [Patch(color=BLEU,
+                      label="produit des cessions, relevé de la Direction générale de la privatisation")]
     for barre, an, val in zip(barres, b["annee"], b[col]):
-        figtools.infobulle(barre, f"{an} : {_n(val, 1 if mesure == 'md' else 2)} "
-                                  f"{'MD' if mesure == 'md' else '%'}")
+        figtools.infobulle(barre, f"{an} : {_n(val, dec)} {unite}")
+    bud = _cessions_budget()
+    colb = {"md": "budget", "dep": "dep", "pib": "pib"}[mesure]
+    fin = 2009
+    if len(bud):
+        fin = int(bud["annee"].max())
+        ax.axvline(2009.5, color=GRIS, lw=0.8, ls=":")
+        nuls, sans = [], []
+        for r in bud.itertuples(index=False):
+            val = getattr(r, colb)
+            if r.budget != r.budget:
+                sans.append(int(r.annee))
+                continue
+            if val is None or val != val:
+                continue
+            if val <= 0:
+                nuls.append(int(r.annee))
+                continue
+            bb = ax.bar(r.annee, val, color=VIOLET, width=0.72)
+            figtools.infobulle(bb[0], f"{r.annee}, inscrit au budget : {_n(val, dec)} {unite}")
+        poignees.append(Patch(color=VIOLET, label="recette de privatisation inscrite au budget, "
+                                                  "rapport de clôture de la Cour des comptes"))
+        for a in nuls:
+            ax.annotate("0", xy=(a, 0), xycoords=("data", "axes fraction"), xytext=(0, 3),
+                        textcoords="offset points", ha="center", va="bottom", fontsize=7,
+                        color=VIOLET)
+        if sans:
+            ax.axvspan(min(sans) - 0.5, max(sans) + 0.5, color="#eaeef2", zorder=0)
+            ax.annotate("aucune ligne de privatisation\ndans les recettes du budget",
+                        xy=((min(sans) + max(sans)) / 2, 0.45), xycoords=("data", "axes fraction"),
+                        ha="center", va="center", fontsize=7, color=GRIS, rotation=90)
     if mesure == "md":
         div = t[(t["classeur 1987-2005"].notna()) &
                 ((t["classeur 1987-2005"] - t["classeur 1987-2009"]).abs() > 1)]
         ax.plot(div["annee"], div["classeur 1987-2005"], color=ROUGE, marker="D", ls="", ms=5,
-                mfc="white", label="valeur de l'édition 1987-2005, quand elle diffère")
-        ax.legend(fontsize=8, frameon=False, loc="upper left")
+                mfc="white")
+        poignees.append(Line2D([], [], color=ROUGE, marker="D", ls="", ms=5, mfc="white",
+                               label="valeur de l'édition 1987-2005, quand elle diffère"))
+    ax.legend(handles=poignees, fontsize=7.5, frameon=False, loc="upper left")
     if mesure == "dep":
         manquantes = [int(a) for a in t[t["dep"].isna()]["annee"]]
         if manquantes:
@@ -1276,10 +1358,12 @@ def _fig_cessions(mesure: str):
     if mesure == "dep":
         ax.set_ylabel("% des dépenses de l'État")
     ax.set_ylabel(ax.get_ylabel() + " (échelle logarithmique)")
-    ax.set_xlim(1986.3, 2009.7)
-    ax.set_xticks(list(t["annee"])[::2])
+    ax.set_xlim(1986.3, fin + 0.7)
+    ax.set_xticks(list(range(1987, fin + 1, 2)))
+    ax.tick_params(axis="x", labelsize=7.5)
+    ax.set_ylim(top=ax.get_ylim()[1] * 2.5)
     if mesure == "pib":
-        _marque_pib(ax, 1987, 2009)
+        _marque_pib(ax, 1987, fin)
     fig.tight_layout()
     return fig
 
@@ -1544,7 +1628,18 @@ def chiffres_effectifs() -> None:
 # --- clôture du budget, gestions 2010-2016 (Cour des comptes) ---------------------------------------
 
 S_CDC = "cdc-cloture-entreprises-publiques"
-GESTIONS_CDC = list(range(2010, 2017))
+
+
+def _gestions_cdc() -> list[int]:
+    """Les gestions couvertes par la série de clôture : de la première gestion dont les
+    versements au budget sont lus à la dernière gestion de la série (les recettes de
+    privatisation portent des années antérieures, rappelées par les rapports)."""
+    d = _s(S_CDC)
+    g = d["gestion"].astype(int)
+    debut = g[d["rubrique"] == "transferts_ep_profits_tresor"].min()
+    return list(range(int(debut), int(g.max()) + 1))
+
+
 LIGNES_RECETTES_CDC = [
     ("profits_bct", "Part du budget dans les profits de la Banque centrale", BLEU),
     ("excedents_ep", "Excédents des entreprises publiques", VERT),
@@ -1561,7 +1656,24 @@ LIGNES_GARANTIE_CDC = [
     ("bna_agricole", "Banque nationale agricole, crédits agricoles"),
     ("office_cereales", "Office des céréales, emprunt obligataire"),
     ("art24_lf1999", "Article 24 de la loi de finances de 1999"),
-    ("fpcl", "Caisse des prêts et de soutien des collectivités locales")]
+    ("fpcl", "Caisse des prêts et de soutien des collectivités locales"),
+    ("dette_agricole_loi65_1999", "Dette agricole, loi n° 99-65"),
+    ("reprise_dettes_bancaires_art25_lf1999", "Reprise de dettes bancaires, article 25 de la loi de finances de 1999")]
+COURT_GARANTIE_CDC = {
+    "stb": "STB", "fouladh": "Sidérurgie", "stir": "STIR", "pate_alfa": "Papier alfa",
+    "office_huile": "Huile", "ateliers_sncft": "Travaux ferroviaires", "bna_agricole": "BNA agricole",
+    "office_cereales": "Office des céréales", "art24_lf1999": "Art. 24 LF 1999", "fpcl": "CPSCL",
+    "dette_agricole_loi65_1999": "Dette agricole",
+    "reprise_dettes_bancaires_art25_lf1999": "Art. 25 LF 1999"}
+
+
+def _postes_garantie_cdc(p) -> list[str]:
+    """Les postes du principal garanti présents dans la série : les postes connus dans l'ordre
+    de `LIGNES_GARANTIE_CDC`, puis les autres par ordre alphabétique (un poste neuf de la série
+    apparaît ainsi sans modification du module)."""
+    connus = [k for k, _ in LIGNES_GARANTIE_CDC if k in p.columns]
+    autres = sorted(c for c in p.columns if c not in connus and c != "total")
+    return connus + autres
 
 
 def _cdc(rubrique: str):
@@ -1572,15 +1684,40 @@ def _cdc(rubrique: str):
     return d.pivot(index="gestion", columns="poste", values="valeur_md")
 
 
+def _cdc_encours():
+    """L'encours de la dette garantie en fin de gestion tel que la Cour des comptes l'imprime
+    dans ses rapports de clôture (depuis la gestion 2017) ; `None` si la série ne le porte pas."""
+    d = _s(S_CDC)
+    if "dette_garantie_encours" not in set(d["rubrique"]):
+        return None
+    t = _cdc("dette_garantie_encours")
+    return t if "total" in t.columns else None
+
+
+RUPTURE_CDC = 2020  # depuis la gestion 2020, la Cour n'imprime plus le total des versements
+
+
 def _recettes_cdc():
-    t = _cdc("transferts_ep_profits_tresor").reindex(GESTIONS_CDC)
+    """Versements des entreprises et de la Banque centrale au budget, par ligne et par gestion.
+    Jusqu'à 2019, la Cour imprime un total ; depuis 2020 elle n'imprime que des sous-totaux
+    (dividendes ; excédents et Banque centrale) et des lignes de profits du Trésor : la colonne
+    `total` reste vide, `somme_lignes` est la somme des lignes imprimées, calculée ici."""
+    t = _cdc("transferts_ep_profits_tresor").reindex(_gestions_cdc())
+    for c in ("excedents_ep_non_petrolieres", "excedents_ep_petrolieres", "autres_profits_tresor",
+              "total_dividendes", "total_excedents_ep", "total"):
+        if c not in t.columns:
+            t[c] = float("nan")
     t["excedents_ep"] = t["excedents_ep_non_petrolieres"].fillna(0) + t["excedents_ep_petrolieres"].fillna(0)
+    pt = [c for c in t.columns if c.startswith("profits_tresor_")]
+    divers = t[pt].sum(axis=1, min_count=1) if pt else float("nan")
+    t["autres_profits_tresor"] = t["autres_profits_tresor"].where(t["autres_profits_tresor"].notna(), divers)
+    t["somme_lignes"] = t[[k for k, _, _ in LIGNES_RECETTES_CDC]].sum(axis=1, min_count=1)
     return t
 
 
 def _garantie_cdc():
-    p = _cdc("garantie_principal_paye").reindex(GESTIONS_CDC)
-    i = _cdc("garantie_interets_payes").reindex(GESTIONS_CDC)["interets_dette_garantie"]
+    p = _cdc("garantie_principal_paye").reindex(_gestions_cdc())
+    i = _cdc("garantie_interets_payes").reindex(_gestions_cdc())["interets_dette_garantie"]
     p["interets"] = i
     return p
 
@@ -1602,8 +1739,13 @@ def _fig_cdc(mesure: str):
             b = ax.bar(a, v, bottom=bas[i], color=coul, width=0.72, edgecolor="white", lw=0.5)
             figtools.infobulle(b[0], f"{a} — {nom} : {_n(v, dec)} {unite}")
             bas[i] += v
-    ax.legend(handles=[Patch(color=c, label=n) for _, n, c in LIGNES_RECETTES_CDC], fontsize=6,
-              frameon=False, loc="upper right")
+    ax.legend(handles=[Patch(color=c, label=n) for _, n, c in LIGNES_RECETTES_CDC], fontsize=5.8,
+              frameon=False, loc="upper left", ncol=2)
+    ax.set_ylim(top=max(bas) * 1.42)
+    if r.index.max() >= RUPTURE_CDC:
+        ax.axvline(RUPTURE_CDC - 0.5, color=GRIS, lw=0.8, ls=":")
+        ax.annotate("depuis 2020 :\nlignes imprimées,\nsans total", xy=(RUPTURE_CDC - 0.4, 0.70),
+                    xycoords=("data", "axes fraction"), fontsize=6, color=GRIS, va="top")
     ax.set_title("Ce que les entreprises et la Banque centrale versent au budget,\npar ligne",
                  fontsize=8.5, loc="left")
     # 2. Dette garantie remboursée par l'État : principal et intérêts
@@ -1624,34 +1766,61 @@ def _fig_cdc(mesure: str):
                  fontsize=8.5, loc="left")
     # 3. Remboursements de prêts reçus
     ax = axes[1][0]
-    p = _cdc("remboursements_prets_recus").reindex(GESTIONS_CDC)
+    p = _prets_cdc()
     x, y = _xy(p.index, p["total"], mesure)
-    ax.plot(x, y, color=VERT, marker="o", lw=2, ms=4.5)
-    ax.set_title("Ce que l'État reçoit en remboursement de prêts,\ntotal",
+    ax.plot(x, y, color=VERT, marker="o", lw=2, ms=4.5, label="total imprimé (jusqu'en 2019)")
+    for cle, nom, coul, marque in (("retroces_exterieurs", "prêts extérieurs rétrocédés", BLEU, "s"),
+                                   ("titre2", "prêts du titre II", ORANGE, "^")):
+        if cle in p.columns:
+            xs, ys = _xy(p.index, p[cle], mesure)
+            pts = ax.plot(xs, ys, color=coul, marker=marque, ls="", ms=4.5, mfc="white", label=nom)
+            for a, v in zip(xs, ys):
+                figtools.infobulle(pts[0], f"{a} — {nom} : {_n(v, dec)} {unite}")
+    ax.legend(fontsize=6, frameon=False, loc="upper left")
+    ax.set_title("Ce que l'État reçoit en remboursement de prêts :\ntotal, puis lignes",
                  fontsize=8.5, loc="left")
     # 4. Recettes de privatisation inscrites au budget
     ax = axes[1][1]
-    v = _cdc("recettes_privatisation_budget").reindex(GESTIONS_CDC)["total"]
+    v = _cdc("recettes_privatisation_budget").reindex(_gestions_cdc())["total"]
     for a in v.index:
         vv = _part(v[a], a, mesure)
         if vv is None:
             continue
         b = ax.bar(a, vv, color=VIOLET, width=0.72)
         figtools.infobulle(b[0], f"{a} — recettes de privatisation : {_n(vv, dec)} {unite}")
+    sans = [int(a) for a in v.index if v[a] != v[a]]
+    if sans:
+        ax.axvspan(min(sans) - 0.5, max(sans) + 0.5, color="#eaeef2", zorder=0)
+        ax.annotate("aucune ligne de privatisation\ndans les recettes du budget",
+                    xy=((min(sans) + max(sans)) / 2, 0.5), xycoords=("data", "axes fraction"),
+                    ha="center", va="center", fontsize=6.5, color=GRIS)
     ax.set_title("Recettes de privatisation inscrites au budget", fontsize=8.5, loc="left")
+    gestions = _gestions_cdc()
     for ligne in axes:
         for ax in ligne:
             _style(ax)
-            ax.set_xlim(2009.4, 2016.6)
-            ax.set_xticks(GESTIONS_CDC)
-            ax.tick_params(labelsize=7.5)
-            ax.set_ylim(bottom=0)
+            ax.set_xlim(gestions[0] - 0.6, gestions[-1] + 0.6)
+            ax.set_xticks(gestions)
+            ax.tick_params(labelsize=7 if len(gestions) > 9 else 7.5)
+            ax.set_ylim(bottom=0, top=ax.get_ylim()[1])
             _axe(ax, mesure, milliards=False)
             ax.yaxis.label.set_size(7.5)
             if mesure == "pib":
-                _marque_pib(ax, 2010, 2016, dedans=True)
+                _marque_pib(ax, gestions[0], gestions[-1], dedans=True)
     fig.tight_layout()
     return fig
+
+
+def _prets_cdc():
+    """Remboursements de prêts reçus : total imprimé (jusqu'en 2019), prêts extérieurs rétrocédés
+    et prêts du titre II (`prets_titre2_ep` jusqu'en 2019, `prets_budget_titre2` depuis 2020,
+    réunis sous `titre2`)."""
+    p = _cdc("remboursements_prets_recus").reindex(_gestions_cdc())
+    for c in ("total", "retroces_exterieurs", "prets_titre2_ep", "prets_budget_titre2"):
+        if c not in p.columns:
+            p[c] = float("nan")
+    p["titre2"] = p["prets_titre2_ep"].where(p["prets_titre2_ep"].notna(), p["prets_budget_titre2"])
+    return p
 
 
 def fig_cdc():
@@ -1661,15 +1830,23 @@ def fig_cdc():
 def table_cdc():
     r = _recettes_cdc()
     g = _garantie_cdc()
-    p = _cdc("remboursements_prets_recus").reindex(GESTIONS_CDC)
-    v = _cdc("recettes_privatisation_budget").reindex(GESTIONS_CDC)
+    p = _prets_cdc()
+    v = _cdc("recettes_privatisation_budget").reindex(_gestions_cdc())
+    c = _cdc_encours()
+    enc = c["total"].reindex(_gestions_cdc()) if c is not None else [float("nan")] * len(_gestions_cdc())
     t = pd.DataFrame({
-        "Année": GESTIONS_CDC,
-        "Versements au budget, total (MD courants)": list(r["total"]),
+        "Année": _gestions_cdc(),
+        "Versements au budget, total imprimé (MD courants)": list(r["total"]),
+        "Versements au budget, somme des lignes imprimées (MD courants)": list(r["somme_lignes"]),
+        "Dividendes, sous-total imprimé depuis 2019 (MD courants)": list(r["total_dividendes"]),
+        "Excédents des entreprises et Banque centrale, sous-total imprimé depuis 2019 (MD courants)": list(r["total_excedents_ep"]),
         "Principal garanti remboursé (MD courants)": list(g["total"]),
         "Intérêts de la dette garantie (MD courants)": list(g["interets"]),
-        "Remboursements de prêts reçus (MD courants)": list(p["total"]),
-        "Recettes de privatisation (MD courants)": list(v["total"])})
+        "Remboursements de prêts reçus, total imprimé (MD courants)": list(p["total"]),
+        "Prêts extérieurs rétrocédés remboursés (MD courants)": list(p["retroces_exterieurs"]),
+        "Prêts du titre II remboursés (MD courants)": list(p["titre2"]),
+        "Recettes de privatisation (MD courants)": list(v["total"]),
+        "Encours de la dette garantie en fin de gestion, selon la Cour (MD courants)": list(enc)})
     for col in list(t.columns[1:]):
         nom = col.split(" (")[0]
         t[f"{nom}, % du PIB"] = [_arrondi(_part(x, a, "pib")) for x, a in zip(t[col], t["Année"])]
@@ -1687,22 +1864,29 @@ def _cdc_ligne_pib(valeur, annee, mesure="pib"):
 def tableau_cdc_recettes(caption: str, tbl_id: str = "tbl-ep-cdc-recettes") -> None:
     r = _recettes_cdc()
     lignes = []
-    for a in GESTIONS_CDC:
+    for a in _gestions_cdc():
         c = [("—" if r.at[a, k] == 0 else _n(r.at[a, k], 1)) if r.at[a, k] == r.at[a, k] else ""
              for k, _, _ in LIGNES_RECETTES_CDC]
-        lignes.append([str(a)] + c + [f"**{_n(r.at[a, 'total'], 1)}**",
-                                      _cdc_ligne_pib(r.at[a, "total"], a), _base_courte(a)])
+        tot = r.at[a, "total"]
+        if tot == tot:
+            cel_tot = f"**{_n(tot, 1)}**"
+        else:
+            tot = r.at[a, "somme_lignes"]
+            cel_tot = f"({_n(tot, 1)})" if tot == tot else ""
+        lignes.append([str(a)] + c + [cel_tot, _cdc_ligne_pib(tot, a), _base_courte(a)])
     _md(["Gestion"] + [n.replace(" du budget dans les", " dans les") for _, n, _ in LIGNES_RECETTES_CDC]
-        + ["Total", "Total,<br>% du PIB", "Base du PIB"], "g" + "d" * 6 + "dg", lignes, caption, tbl_id)
+        + ["Total imprimé<br>(entre parenthèses : somme<br>des lignes, sans total imprimé)",
+           "Total,<br>% du PIB", "Base du PIB"], "g" + "d" * 6 + "dg", lignes, caption, tbl_id)
 
 
 def tableau_cdc_garantie(caption: str, tbl_id: str = "tbl-ep-cdc-garantie") -> None:
-    p = _cdc("garantie_principal_paye").reindex(GESTIONS_CDC)
+    p = _cdc("garantie_principal_paye").reindex(_gestions_cdc())
     i = _garantie_cdc()["interets"]
+    postes = _postes_garantie_cdc(p)
     lignes = []
-    for a in GESTIONS_CDC:
+    for a in _gestions_cdc():
         cases = []
-        for cle, _ in LIGNES_GARANTIE_CDC:
+        for cle in postes:
             x = p.at[a, cle] if cle in p.columns else float("nan")
             if cle == "fouladh" and a == 2013:
                 cases.append("(47,0)")
@@ -1712,27 +1896,26 @@ def tableau_cdc_garantie(caption: str, tbl_id: str = "tbl-ep-cdc-garantie") -> N
                 cases.append("")
         lignes.append([str(a)] + cases + [f"**{_n(p.at[a, 'total'], 1)}**", _n(i[a], 1),
                                           _cdc_ligne_pib(p.at[a, "total"], a)])
-    entete = ["Gestion", "STB", "Sidérurgie", "STIR", "Papier alfa", "Huile", "Travaux ferroviaires",
-              "BNA agricole", "Office des céréales", "Art. 24 LF 1999", "CPSCL", "Principal, total",
-              "Intérêts", "Principal,<br>% du PIB"]
-    _md(entete, "g" + "d" * 13, lignes, caption, tbl_id)
+    entete = (["Gestion"] + [COURT_GARANTIE_CDC.get(k, k.replace("_", " ")) for k in postes]
+              + ["Principal, total", "Intérêts", "Principal,<br>% du PIB"])
+    _md(entete, "g" + "d" * (len(postes) + 3), lignes, caption, tbl_id)
 
 
 def tableau_cdc_autres(caption: str, tbl_id: str = "tbl-ep-cdc-autres") -> None:
-    p = _cdc("remboursements_prets_recus").reindex(GESTIONS_CDC)
-    v = _cdc("recettes_privatisation_budget").reindex(GESTIONS_CDC)
+    p = _prets_cdc()
+    v = _cdc("recettes_privatisation_budget").reindex(_gestions_cdc())
     cols = {k: (p[k] if k in p.columns else pd.Series(dtype=float)) for k in
-            ("total", "retroces_exterieurs", "prets_titre2_ep")}
+            ("total", "retroces_exterieurs", "titre2")}
     lignes = []
-    for a in GESTIONS_CDC:
+    for a in _gestions_cdc():
         def c(s, dec=1):
             x = s.get(a, float("nan")) if len(s) else float("nan")
             return _n(x, dec) if x == x else ""
         tt = v["tunisie_telecom"] if "tunisie_telecom" in v.columns else pd.Series(dtype=float)
         lignes.append([str(a), c(cols["total"], 3), c(cols["retroces_exterieurs"], 3),
-                       c(cols["prets_titre2_ep"], 3), c(v["total"], 3), c(tt, 3)])
-    _md(["Gestion", "Remboursements de prêts,<br>total", "dont prêts extérieurs<br>rétrocédés",
-         "dont prêts du titre II<br>aux entreprises", "Recettes de privatisation,<br>total",
+                       c(cols["titre2"], 3), c(v["total"], 3), c(tt, 3)])
+    _md(["Gestion", "Remboursements de prêts,<br>total imprimé<br>(jusqu'en 2019)",
+         "prêts extérieurs<br>rétrocédés", "prêts du titre II", "Recettes de privatisation,<br>total",
          "dont cession de 35 %<br>de Tunisie Télécom"], "gddddd", lignes, caption, tbl_id)
 
 
@@ -1752,7 +1935,7 @@ FIGURES = {
     "flux": (fig_flux, table_flux, (S_FLUX, DENOMINATEURS), "fig_ep_flux"),
     "resultats": (fig_resultats, table_resultats, (S_AGREGATS, DENOMINATEURS),
                   "fig_ep_resultats"),
-    "cessions": (fig_cessions, table_cessions, (S_CESSIONS, DENOMINATEURS), "fig_ep_cessions"),
+    "cessions": (fig_cessions, table_cessions, (S_CESSIONS, S_CDC, DENOMINATEURS), "fig_ep_cessions"),
     "cdc": (fig_cdc, table_cdc, (S_CDC, DENOMINATEURS), "fig_ep_cdc"),
     "croisees": (fig_croisees, table_croisees, (S_CROISEES, DENOMINATEURS), "fig_ep_croisees"),
     "masse": (fig_masse, table_masse, (S_EFFECTIFS, S_AGREGATS, DENOMINATEURS), "fig_ep_masse"),

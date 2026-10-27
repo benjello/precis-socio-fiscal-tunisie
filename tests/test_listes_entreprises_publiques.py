@@ -88,7 +88,7 @@ def _plafond_serie():
 
 def test_plafond_de_la_garantie_est_continu():
     """Un relèvement en cours de gestion porte le montant d'avant, qui est celui que la loi de
-    finances de l'année avait fixé ; les gestions se suivent de 1959-60 à 2015, sauf 1960."""
+    finances de l'année avait fixé ; les gestions se suivent de 1959-60 à 2026, sauf 1960."""
     lignes = _plafond_serie()
     fixe = {}
     for l in lignes:
@@ -99,16 +99,23 @@ def test_plafond_de_la_garantie_est_continu():
             assert float(l["plafond_avant_md"]) == fixe[l["gestion"]]
             assert float(l["plafond_md"]) > float(l["plafond_avant_md"])
     assert [l["gestion"] for l in lignes if l["nature"] == "fixation"] == [
-        "1958-59", "1959-60"] + [str(a) for a in range(1961, 2016)]
+        "1958-59", "1959-60"] + [str(a) for a in range(1961, 2027)]
     assert fixe["1977"] == 200.0 and fixe["1994"] == 950.0 and fixe["1992"] == 250.0
     # 1995-2015 : 950 MD jusqu'en 2010 sauf 2003 (1 200), 1 800 en 2011, 4 000 en 2012, 3 000 de 2013 à 2015
     assert all(fixe[str(a)] == 950.0 for a in range(1994, 2011) if a != 2003)
     assert fixe["2003"] == 1200.0 and fixe["2011"] == 1800.0 and fixe["2012"] == 4000.0
     assert {fixe[str(a)] for a in (2013, 2014, 2015)} == {3000.0}
-    # deux relèvements en cours de gestion depuis 1995 : 2002 (loi n° 2002-90) et 2011 (décret-loi n° 2011-56)
+    # relèvements en cours de gestion depuis 1995 : 2002 (loi n° 2002-90), 2011 (décret-loi n° 2011-56),
+    # 2019 (loi n° 2019-77), 2020 (loi n° 2020-45), 2023 (loi n° 2023-12)
     releves = {l["gestion"]: (float(l["plafond_avant_md"]), float(l["plafond_md"]))
                for l in lignes if l["plafond_avant_md"] and int(l["gestion"][:4]) >= 1995}
-    assert releves == {"2002": (950.0, 1800.0), "2011": (1800.0, 4000.0)}
+    assert releves == {"2002": (950.0, 1800.0), "2011": (1800.0, 4000.0), "2019": (4500.0, 4790.0),
+                       "2020": (5000.0, 7000.0), "2023": (7000.0, 8000.0)}
+    # 2016-2026 : 3 000 jusqu'en 2018, puis 4 500, 5 000, 7 000 (2021-2023), 8 000 (2024-2025), 7 000 (2026)
+    assert {fixe[str(a)] for a in (2016, 2017, 2018)} == {3000.0}
+    assert fixe["2019"] == 4500.0 and fixe["2020"] == 5000.0
+    assert {fixe[str(a)] for a in (2021, 2022, 2023)} == {7000.0}
+    assert fixe["2024"] == 8000.0 and fixe["2025"] == 8000.0 and fixe["2026"] == 7000.0
     # une ligne par montant : pas deux fois le même article pour la même gestion
     cles = [(l["gestion"], l["loi"], l["article"]) for l in lignes]
     assert len(cles) == len(set(cles))
@@ -250,3 +257,27 @@ def test_budget_d_equipement_et_total_de_l_etat():
     par = {l["gestion"]: l for l in lignes}
     assert par["1983"]["total_etat_etabli_md"] == "1753" == par["1983"]["total_etat_calcule_md"]
     assert not par["1962"]["total_etat_calcule_md"] and not par["1962-1964"]["total_etat_calcule_md"]
+
+
+def test_registre_des_prets_du_tresor_du_chapitre_est_celui_du_releve():
+    """Le registre des prêts du Trésor écrit dans le chapitre (ancres r-ep-pt-…) est la sortie de
+    `tableau_prets_tresor` : si la série change, le chapitre doit être recopié."""
+    import contextlib
+    import io
+    import sys
+
+    import pytest
+
+    pytest.importorskip("matplotlib")
+    racine = Path(__file__).resolve().parent.parent
+    sys.path.insert(0, str(racine / "precis/fr/entreprises_publiques"))
+    from figures import listes
+
+    sortie = io.StringIO()
+    with contextlib.redirect_stdout(sortie):
+        listes.tableau_prets_tresor("x")
+    attendu = [l for l in sortie.getvalue().splitlines() if "{#r-ep-pt-" in l]
+    chapitre = (racine / "precis/fr/entreprises_publiques/_relation_financiere.qmd").read_text(
+        encoding="utf-8")
+    ecrit = [l for l in chapitre.splitlines() if "{#r-ep-pt-" in l]
+    assert attendu and ecrit == attendu
