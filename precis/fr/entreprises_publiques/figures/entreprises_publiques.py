@@ -8,6 +8,7 @@
     ep.figure("resultats", …)                            # résultats agrégés, par édition
     ep.figure("cessions", …)                             # recettes de cession, 1987-2009
     ep.figure("versements", …)                           # versements au budget, 2003-2024
+    ep.figure("bct_ra", …)                               # revenus des participations, 1983-2016
     ep.tableau_transferts(caption=…) …                   # tableaux, tous lus dans les séries
 
 D'OÙ VIENNENT LES DONNÉES. Douze séries de `tunisia-data`, lues par `figtools.series()`
@@ -2281,7 +2282,8 @@ def tableau_versements_anciens(caption: str, tbl_id: str = "tbl-ep-versements-an
 
 def tableau_bct_parts(caption: str, tbl_id: str = "tbl-ep-bct-parts") -> None:
     """Part de l'État dans le résultat de la Banque centrale, par exercice, à côté de la ligne que le
-    budget de l'année suivante inscrit (Cour des comptes)."""
+    budget de l'année suivante inscrit (Cour des comptes). Exercices 1999-2001 : seul le partage
+    entre le budget et le Fonds de péréquation des changes est imprimé."""
     b = _s(S_BCT_PART)
     r = _recettes_depuis_2003()
     lignes = []
@@ -2291,15 +2293,21 @@ def tableau_bct_parts(caption: str, tbl_id: str = "tbl-ep-bct-parts") -> None:
         def v(poste, dec=1):
             return _n(e.at[poste, "valeur_md"], dec) if poste in e.index else ""
 
+        def an(poste):
+            a = e.at[poste, "annee_versement"]
+            return "" if a != a or str(a) == "" else f"{int(a)} : "
+
         verse = []
         if "part_etat_versee" in e.index:
-            verse.append(f"{int(e.at['part_etat_versee', 'annee_versement'])} : "
-                         f"{_n(e.at['part_etat_versee', 'valeur_md'], 0)}")
+            verse.append(f"{an('part_etat_versee')}{_n(e.at['part_etat_versee', 'valeur_md'], 0)}")
         if "part_budget_etat" in e.index:
-            verse.append(f"{int(e.at['part_budget_etat', 'annee_versement'])} : "
+            verse.append(f"{an('part_budget_etat')}"
                          f"{_n(e.at['part_budget_etat', 'valeur_md'], 1)} au budget, "
                          f"{_n(e.at['fonds_perequation_changes', 'valeur_md'], 1)} au Fonds de "
                          "péréquation des changes")
+        if "reliquat_compte_ordre" in e.index:
+            verse.append(f"reliquat en compte d'ordre fin {int(e.at['reliquat_compte_ordre', 'annee_versement'])} : "
+                         f"{_n(e.at['reliquat_compte_ordre', 'valeur_md'], 1)}")
         suiv = ex + 1
         budget = (("—" if r.at[suiv, "profits_bct"] == 0 else _n(r.at[suiv, "profits_bct"], 2))
                   if suiv in r.index and r.at[suiv, "profits_bct"] == r.at[suiv, "profits_bct"] else "")
@@ -2309,6 +2317,152 @@ def tableau_bct_parts(caption: str, tbl_id: str = "tbl-ep-bct-parts") -> None:
          "Part revenant à l'État<br>(Banque centrale)", "Versement cité<br>(année : MD)",
          "Gestion suivante", "Part du budget dans les profits<br>de la Banque centrale, gestion suivante<br>(Cour des comptes)"],
         "gddggd", lignes, caption, tbl_id)
+
+
+# --- revenus des participations dans les rapports de la Banque centrale, 1983-2016 -----------------
+
+S_BCT_RA = "bct-ra-revenus-participations"
+# Deux périmètres, jamais raccordés : (première année, dernière année, libellé, couleur). Le
+# passage de « revenus des participations et des EPIC » (rapports 1995-2000) à « revenus des
+# participations » (rapports 2001-2016) ne change aucune valeur : 1999 et 2000 lus dans les rapports
+# 2000 et 2001 donnent 167,0 / 167,1 et 273,8 / 273,8.
+SEGMENTS_RA = [
+    (1983, 1988, "recettes des participations financières, revenus pétroliers compris", VIOLET),
+    (1993, 2016, "revenus des participations (et des EPIC, rapports 1995-2000), "
+                 "revenus pétroliers à part", BLEU),
+]
+
+
+def _lectures_ra(poste: str):
+    """Lectures d'un poste, une par (rapport, année). La valeur retenue pour une année est celle du
+    rapport le plus récent ; le rapport 1999, arrondi au million, ne l'emporte pas sur une
+    lecture au dixième."""
+    d = _s(S_BCT_RA)
+    d = d[d.poste == poste].copy()
+    autres = set(d[d.rapport != "ra-1999"].annee)
+    d = d[(d.rapport != "ra-1999") | ~d.annee.isin(autres)].sort_values(["annee", "annee_rapport"])
+    return d
+
+
+def _retenue_ra(poste: str):
+    d = _lectures_ra(poste)
+    return d.groupby("annee").last()
+
+
+def _segment_ra(annee: int) -> int:
+    for i, (a0, a1, _, _) in enumerate(SEGMENTS_RA):
+        if a0 <= annee <= a1:
+            return i
+    raise ValueError(f"revenus des participations : année {annee} hors des segments")
+
+
+def _fig_bct_ra(mesure: str):
+    figtools.apply_lang_font()
+    fig, ax = plt.subplots(figsize=(9.6, 4.6))
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
+    rev = _retenue_ra("revenus_participations")
+    ver = _retenue_ra("versement_bct")
+    for a0, a1, nom, coul in SEGMENTS_RA:
+        blocs, courant = [], []
+        for a in range(a0, a1 + 1):
+            v = _part(rev.at[a, "valeur_md"], a, mesure) if a in rev.index else None
+            if v is None:
+                if courant:
+                    blocs.append(courant)
+                courant = []
+                continue
+            courant.append((a, v))
+        if courant:
+            blocs.append(courant)
+        for bloc in blocs:
+            xs, ys = [a for a, _ in bloc], [v for _, v in bloc]
+            ax.plot(xs, ys, color=coul, lw=1.6)
+            for x, y in bloc:
+                pt = ax.plot([x], [y], "o", color=coul, ms=3.5)[0]
+                figtools.infobulle(pt, f"{x} — {nom} : {_n(y, dec)} {unite}")
+    for a in ver.index:
+        v = _part(ver.at[a, "valeur_md"], a, mesure)
+        if v is None:
+            continue
+        b = ax.bar(a, v, color=GRIS, alpha=0.45, width=0.7)
+        figtools.infobulle(b[0], f"{a} — versement de la Banque centrale au budget : {_n(v, dec)} {unite}")
+    for a0, _, _, _ in SEGMENTS_RA[1:]:
+        figtools.marque_rupture(ax, a0 - 0.5)
+    poignees = [Line2D([0], [0], color=c, lw=1.6, marker="o", ms=3.5, label=n)
+                for _, _, n, c in SEGMENTS_RA]
+    poignees.append(Patch(color=GRIS, alpha=0.45, label="dont versement de la Banque centrale"))
+    ax.legend(handles=poignees, fontsize=6.5, frameon=False, loc="upper left")
+    _style(ax)
+    ax.set_xlim(1982.4, 2016.6)
+    ax.set_ylim(0, None)
+    ax.set_ylim(0, ax.get_ylim()[1] * 1.3)
+    _axe(ax, mesure, milliards=False)
+    if mesure == "pib":
+        # 1983-1985 : PIB de la Banque mondiale, bases accolées ; libellé court, pour ne pas
+        # chevaucher le segment suivant.
+        _marque_pib(ax, 1986, 2016)
+        figtools.marque_rupture(ax, 1986)
+        ax.annotate("Banque mondiale,\nbases accolées", xy=(1984, 1), xycoords=("data", "axes fraction"),
+                    xytext=(0, 5), textcoords="offset points", ha="center", va="bottom",
+                    fontsize=6.5, color=GRIS, annotation_clip=False)
+    fig.tight_layout()
+    return fig
+
+
+def fig_bct_ra():
+    return _trois_vues(_fig_bct_ra)
+
+
+def table_bct_ra():
+    rev = _retenue_ra("revenus_participations")
+    ver = _retenue_ra("versement_bct")
+    annees = sorted(set(rev.index) | set(ver.index))
+    t = pd.DataFrame({"Année budgétaire": annees})
+    t["Libellé du rapport"] = [rev.at[a, "libelle_imprime"] if a in rev.index else "" for a in annees]
+    t["Nomenclature"] = [SEGMENTS_RA[_segment_ra(a)][2] for a in annees]
+    t["Revenus des participations (MD courants)"] = [
+        rev.at[a, "valeur_md"] if a in rev.index else None for a in annees]
+    t["Rapport retenu"] = [rev.at[a, "rapport"].replace("ra-", "BCT ") if a in rev.index else ""
+                           for a in annees]
+    t["Versement de la Banque centrale (MD courants)"] = [
+        ver.at[a, "valeur_md"] if a in ver.index else None for a in annees]
+    t = _ajoute_parts(t, "Année budgétaire", "Revenus des participations (MD courants)",
+                      "revenus des participations")
+    t["Base du PIB"] = [_base_courte(a) for a in annees]
+    return t
+
+
+def tableau_bct_ra(caption: str, tbl_id: str = "tbl-ep-bct-ra") -> None:
+    """Toutes les lectures, année par année : valeur retenue, autres lectures, versement de la
+    Banque centrale, et pour 2003-2016 le total de la Cour moins les autres profits du Trésor."""
+    lec = _lectures_ra("revenus_participations")
+    tout = _s(S_BCT_RA)
+    rev = tout[tout.poste == "revenus_participations"]
+    ver = tout[tout.poste == "versement_bct"]
+    r = _recettes_depuis_2003()
+    lignes = []
+    for a in sorted(set(rev.annee) | set(ver.annee)):
+        g = rev[rev.annee == a].sort_values("annee_rapport")
+        ret = lec[lec.annee == a].sort_values("annee_rapport")
+        val = ret.iloc[-1] if len(ret) else None
+        autres = [f"{_n(x.valeur_md, 1 if x.rapport != 'ra-1999' else 0)} ({x.annee_rapport})"
+                  for x in g.itertuples() if val is None or x.rapport != val.rapport]
+        gv = ver[ver.annee == a].sort_values("annee_rapport")
+        vers = " ; ".join(f"{_n(x.valeur_md, 1 if x.valeur_md % 1 else 0)} ({x.annee_rapport})"
+                          for x in gv.itertuples())
+        cour = ""
+        if a in r.index and a <= 2016:
+            t = r.at[a, "total"] - r.at[a, "autres_profits_tresor"]
+            cour = _n(t, 1)
+        lignes.append([str(a),
+                       val.libelle_imprime.replace("*", "\\*").replace("&", " & ") if val is not None else "",
+                       f"**{_n(val.valeur_md, 1)}** ({val.annee_rapport})" if val is not None else "",
+                       ", ".join(autres), vers, cour])
+    _md(["Année", "Libellé imprimé", "Valeur retenue<br>(rapport)", "Autres lectures<br>(rapport)",
+         "Versement de la<br>Banque centrale (rapport)",
+         "Cour des comptes : total<br>moins autres profits du Trésor"],
+        "gggggd", lignes, caption, tbl_id)
 
 
 # --- point d'entrée ------------------------------------------------------------------------------------
@@ -2333,6 +2487,7 @@ FIGURES = {
                       "fig_ep_cdc_garanties"),
     "versements": (fig_versements, table_versements, (S_CDC_0309, S_CDC, DENOMINATEURS),
                    "fig_ep_versements"),
+    "bct_ra": (fig_bct_ra, table_bct_ra, (S_BCT_RA, DENOMINATEURS), "fig_ep_bct_ra"),
     "croisees": (fig_croisees, table_croisees, (S_CROISEES, DENOMINATEURS), "fig_ep_croisees"),
     "masse": (fig_masse, table_masse, (S_EFFECTIFS, S_AGREGATS, DENOMINATEURS), "fig_ep_masse"),
     "effectifs": (fig_effectifs, table_effectifs_ep, (S_EFFECTIFS_EP,), "fig_ep_effectifs"),
