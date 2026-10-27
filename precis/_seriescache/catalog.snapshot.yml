@@ -5641,3 +5641,170 @@
     الوطني للزيت لا يتلقيان كامل دعم المواد الأساسية. لا ربط بين الطبعات. لا يوجد
     قسم وزارة التجارة في الترجمة الفرنسية لطبعة 2021. قُرئت من الصورة.'
   fiche: sources/minfin-transferts-par-etablissement.md
+- id: entreprises-publiques-fiches-entreprises
+  titre: 'Entreprises publiques : fiches par entreprise du rapport annexé à la loi
+    de finances (STEG, ETAP, SNCFT), bilan, résultat, dette, subvention d''exploitation
+    et emploi, exercices 2018-2023, par édition'
+  sources:
+  - minfin-ep-2022
+  - minfin-ep-2024
+  - minfin-ep-2025
+  build: uv run python scripts/build_ep_fiches_entreprises.py
+  raw:
+  - sources/transcriptions/entreprises-publiques-fiches.csv
+  output: data/processed/entreprises-publiques/fiches_entreprises_2018_2023.csv
+  unite: millions de dinars courants (colonne valeur), sauf l'effectif en agents (colonne
+    unite)
+  perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
+    9), fiches par entreprise de trois éditions arabes : LF 2022 (exercices 2018-2020
+    ; mise en page « dette par créancier » : dette totale et ses cinq créanciers —
+    État, banques, entreprises publiques, caisses sociales, autres —, subventions
+    d''investissement, investissements, fonds propres, résultats reportés, résultat
+    net, charges financières nettes, résultat, charges et produits d''exploitation,
+    subvention d''exploitation, charges de personnel, effectif) ; LF 2024 (2020-2022)
+    et LF 2025 (2021-2023) (mise en page « bilan et résultat » : total des passifs
+    hors fonds propres, concours bancaires, autres passifs courants, fournisseurs,
+    emprunts à plus d''un an, fonds propres avant affectation, résultats reportés,
+    total des actifs, liquidités, clients, immobilisations nettes, résultat net avant
+    et après modifications comptables, produits des placements, charges financières
+    nettes, résultat, charges et produits d''exploitation, autres produits, subvention
+    d''exploitation, recettes, charges de personnel, effectif) ; trois entreprises
+    : STEG, ETAP, SNCFT ; une ligne par (édition, entreprise, exercice, grandeur),
+    avec le statut du chiffre'
+  caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
+    se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
+    signale 150 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
+    4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
+    même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
+    65 en LF 2022, 105 en LF 2024). `statut` : le dernier exercice de chaque édition
+    est provisoire, estimé ou probable. « - » imprimé est une case vide (`case_vide`),
+    distincte d''un zéro imprimé. EN-TÊTES DÉCALÉS DANS L''ÉDITION LF 2024 (colonnes
+    6 à 8) : l''attribution suit l''ordre de l''édition LF 2025, prouvée par l''identité
+    du bilan. ÉCARTS IMPRIMÉS DÉCLARÉS (`ecart_identite`) : dette de la SNCFT, LF
+    2022, somme des créanciers inférieure au total de 110,9 (2018) et 161,9 (2019)
+    ; ETAP 2020, 0,6 ; STEG 2022 en LF 2024, 15 753 au passif et à l''actif pour 37
+    de fonds propres ; SNCFT en LF 2025, colonne « recettes » qui ne boucle pas avec
+    le total des produits (2021 : 89,8 quand LF 2024 imprime 35,8, qui boucle). RÉSULTAT
+    NET : les classements des dix premières retiennent le résultat avant modifications
+    comptables (STEG 2021 : −42,7 ; 3 469,6 après) ; SNCFT 2019 : −119,8 sur la fiche,
+    −113,78 dans le classement de la même édition. La subvention d''exploitation est
+    une ligne comptable de l''entreprise : elle ne concorde pas avec les transferts
+    du budget par entreprise. PREUVES DE LECTURE : identités du bilan, des produits
+    et du résultat d''exploitation ; effectif et charges de personnel identiques,
+    ligne à ligne (54), à la série entreprises-publiques-effectifs-par-entreprise
+    lue sur les mêmes pages ; chaque ligne recoupée avec la couche texte de la page.
+    LU À L''IMAGE à 170 dpi le 27 octobre 2026.'
+  titre_ar: 'المنشآت العمومية: جذاذات المنشآت (الشركة التونسية للكهرباء والغاز، المؤسسة
+    التونسية للأنشطة البترولية، الشركة الوطنية للسكك الحديدية التونسية)، 2018-2023،
+    حسب طبعة التقرير المرفق بقانون المالية'
+  unite_ar: ملايين الدنانير الجارية؛ عون
+  perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جذاذات
+    المنشآت في طبعات قانون المالية لسنوات 2022 و2024 و2025
+  caveats_ar: لا ربط بين الطبعات. أرقام السنة الأخيرة من كلّ طبعة وقتية أو تقديرية
+    أو محتملة. قُرئت من الصورة.
+  fiche: sources/entreprises-publiques.md
+- id: steg-etats-financiers
+  titre: 'STEG : bilan et état de résultat publiés, exercices 2013-2023'
+  sources:
+  - steg-ef-2014
+  - steg-ef-2015
+  - steg-ef-2016
+  - steg-ef-2017
+  - steg-ef-2018
+  - steg-ef-2019
+  - steg-ef-2020
+  - steg-ef-2021
+  - steg-ef-2022
+  - steg-ef-2023
+  build: uv run python scripts/build_ep_fiches_entreprises.py
+  raw:
+  - sources/transcriptions/steg-etats-financiers.csv
+  output: data/processed/entreprises-publiques/steg_etats_financiers_2013_2023.csv
+  unite: millions de dinars courants (lus en dinars)
+  perimetre: 'états financiers de la Société tunisienne de l''électricité et du gaz,
+    exercices 2014 à 2023, chaque fichier imprimant l''exercice et l''exercice précédent
+    (2013 par le fichier de 2014) : total des actifs, capitaux propres avant affectation
+    et avant résultat, total des passifs, emprunts non courants, concours bancaires,
+    revenus, subvention d''exploitation, résultat d''exploitation, résultat net, et,
+    quand il est imprimé, résultat après modifications comptables ; une ligne par
+    (fichier, exercice, colonne, grandeur)'
+  caveats: 'COMPTES DE L''ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE : jamais raccordés
+    aux fiches du ministère des Finances, même quand les deux impriment la même valeur
+    (subvention d''exploitation de 2018, 2020, 2021, 2022 : identique). `fichier_du_meme_exercice`
+    marque la colonne de l''exercice ; la colonne de comparaison du fichier suivant
+    peut différer (`divergence_entre_fichiers`, 12 lignes : 2018 relu en 2019, actifs
+    9 563,8 puis 9 483,9 ; 2019 « retraité » dans le fichier de 2020 pour la surtaxe
+    municipale ; écarts d''un dinar). ÉCART IMPRIMÉ : colonne 2017 du fichier de 2018,
+    actifs ≠ capitaux propres + passifs de 15 453 DT, déclaré. L''état de résultat
+    ne donne ni total des produits, ni total des charges d''exploitation, ni charges
+    de personnel. Résultat après modifications comptables : 2015, 2017, 2021 (+3 469,6),
+    2022 (−2 716,1), 2023. LECTURE : couche texte et image ; 2015 et 2020 à l''image
+    seulement ; 2019 et 2022 sur la couche texte, recoupées avec l''annexe 9 du ministère.'
+  titre_ar: 'الشركة التونسية للكهرباء والغاز: الموازنة وقائمة النتائج المنشورة، 2013-2023'
+  unite_ar: ملايين الدنانير الجارية
+  perimetre_ar: القوائم المالية المنشورة للشركة التونسية للكهرباء والغاز، السنوات
+    المحاسبية 2014-2023 مع سنة المقارنة
+  caveats_ar: حسابات المنشأة وليست مصدرا ميزانيّا؛ لا ربط مع جذاذات وزارة المالية.
+  fiche: sources/entreprises-publiques.md
+- id: etap-rapports-annuels
+  titre: 'ETAP : effectif, produits d''exploitation, revenus et résultat net d''après
+    ses rapports annuels, exercices 2004-2024'
+  sources:
+  - etap-ra-2005
+  - etap-ra-2006
+  - etap-ra-2007
+  - etap-ra-2008
+  - etap-ra-2009
+  - etap-ra-2010
+  - etap-ra-2011
+  - etap-ra-2012
+  - etap-ra-2013
+  - etap-ra-2014
+  - etap-ra-2015
+  - etap-ra-2016
+  - etap-ra-2017
+  - etap-ra-2018
+  - etap-ra-2019
+  - etap-ra-2021
+  - etap-ra-2022
+  - etap-ra-2023
+  - etap-ra-2024
+  build: uv run python scripts/build_ep_fiches_entreprises.py
+  raw:
+  - sources/transcriptions/etap-rapports-annuels.csv
+  output: data/processed/entreprises-publiques/etap_rapports_annuels_2004_2024.csv
+  unite: millions de dinars courants ; agents pour l'effectif (colonne unite)
+  perimetre: 'rapports annuels de l''Entreprise tunisienne d''activités pétrolières,
+    2005 à 2024 sauf 2020 (aucun rapport dans le fonds), chacun donnant l''exercice
+    et, le plus souvent, l''exercice précédent : effectif total en fin d''année, total
+    des produits d''exploitation (`produits_exploitation`), ligne « revenus » de l''état
+    de résultat ou du détail des revenus (`revenus`), résultat net de l''exercice,
+    et la seule contribution au budget de l''État imprimée (contribution conjoncturelle
+    de la loi de finances pour 2017, 20,6 MD sur le résultat de 2016) ; une ligne
+    par (rapport, exercice, grandeur)'
+  caveats: 'COMPTES DE L''ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE : jamais raccordés
+    aux fiches du ministère des Finances, avec lesquelles ils concordent pour 2018,
+    2020, 2021 et 2022 (résultat, produits, effectif). `rapport_du_meme_exercice`
+    marque la lecture dans le rapport de l''exercice ; 2004 vient du rapport de 2005,
+    2020 du rapport de 2021. DIVERGENCES ENTRE RAPPORTS (`divergence_entre_rapports`)
+    : 2006, les trois montants diffèrent entre les rapports de 2006 et de 2007 (résultat
+    net 190,3 puis 194,5) ; 2023, colonne « retraité » du rapport de 2024 (résultat
+    392,0 puis 401,6). DANS UN MÊME RAPPORT : 2008, effectif 684 (p. 43) et 682 (p.
+    4) ; 2010, résultat net 146,2 (état) et 155 (indicateurs) — la ligne retenue est
+    celle de l''état, l''autre en remarque. 2014 : « résultat des activités ordinaires
+    après impôts », le rapport de 2015 imprimant la même valeur comme résultat net.
+    2024 : résultat après modifications comptables de 272,8 MD, non retenu. 2019 :
+    effectif seul (aucun état financier dans le rapport). 2016 : total des produits
+    d''après la page des indicateurs, arrondi au million, et d''après le rapport de
+    2017. COUVERTURE : le fichier etap_ra_2015.pdf porte en page 1 deux couvertures
+    (« 2015 » et « RAPPORT ANNUEL 2016 ») ; le corps couvre 2015. Les impôts et redevances
+    versés ne sont pas relevés. LECTURE : couche texte et image ; rapports de 2006
+    et 2015 (scans) et états de 2014, 2017, 2018, 2021 et 2023 à l''image seulement.'
+  titre_ar: 'المؤسسة التونسية للأنشطة البترولية: عدد الأعوان والإيرادات والنتيجة الصافية
+    حسب تقاريرها السنوية، 2004-2024'
+  unite_ar: ملايين الدنانير الجارية؛ عون
+  perimetre_ar: التقارير السنوية للمؤسسة التونسية للأنشطة البترولية، 2005-2024 باستثناء
+    2020
+  caveats_ar: حسابات المنشأة وليست مصدرا ميزانيّا؛ لا ربط مع جذاذات وزارة المالية.
+  fiche: sources/entreprises-publiques.md
