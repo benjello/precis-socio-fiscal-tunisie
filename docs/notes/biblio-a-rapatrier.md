@@ -6,6 +6,26 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Poussée Zotero du 25/10/2026 (neuf lois de finances issues de la fusion des doublons)
+
+Séquence `verifier` (local : 1868 entrées éprouvées, 0 perte) → `dry-run` (exécution 40222267791 :
+2198 références locales, 9 à créer) → `pousser-cles` (exécution 40222421252 : 9 créées, 0 en
+échec, artefact `cles-zotero-creees`) → `ranger` (exécution 40222527306 : 15 articles classés) →
+`controle-rangement` (exécution 40222647086 : 0 absente de Zotero, 0 à ranger, 72 à déclasser,
+148 sans citation) → `descendre` (exécution 40222650564, artefact `references-descendues`).
+- **Clés créées** : `lf-1991`, `lf-1992`, `lfc-2002`, `lfc-2004`, `lfc-2005`, `lfc-2007`,
+  `lfc-2023`, `lfr-2021`, `lfr-2022` (clés nées de la fusion des doublons, #512 et #535 ; textes
+  de `precis/fr/prestations_sociales/references.json` et du fonds commun).
+- **Constat** : les quatre clés de la TVA du 24/10/2026 (`minfin-plf-2018`, `dgi-nc-5-2023`,
+  `rectificatif-lf-1993`, `minfin-plf-2014`) n'étaient pas dans les 9 à créer : elles sont dans
+  Zotero.
+- **Déclassement fait le 25/10/2026** sur feu vert : `appliquer-rangement-blanc` (exécution
+  40223291901, 72 articles à reclasser) puis `appliquer-rangement` (exécution 40223425216 : 72
+  reclassés, 0 en échec) ; contrôle de rangement relancé ensuite.
+- **Reste** : la descente réécrit les 24
+  `references.json` (54 970 insertions, 53 037 suppressions, pour l'essentiel l'ordre et la forme
+  des champs) : PR à part, à relire avant de la commiter.
+
 ## Versement du 24/10/2026 (fiscalité, TVA, quatre clés des objets des réformes, bibliographe)
 
 Source : § 6 de `docs/notes/fiscalite-tva-objets-des-reformes.md` ; `precis/{fr,ar}/fiscalite/references.json`, à la main. Quatre notices créées, chacune relue sur la pièce le 24/10/2026.
