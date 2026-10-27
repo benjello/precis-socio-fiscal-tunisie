@@ -30,6 +30,18 @@ En 1987, pour la première fois, une loi autorise de façon générale la cessio
 - **Ce que l'État abandonne.** L'acquéreur peut payer jusqu'à la moitié du prix en bons d'équipement ; il est exonéré d'impôt sur les bénéfices pendant cinq ans. L'État peut renoncer au privilège du Trésor, rééchelonner ses créances sur l'entreprise ou en abandonner une partie.
 - **Les premières recettes.** 6,8 MD en 1987, 27,0 MD en 1988, 50,6 MD en 1989 (@tbl-ep-cessions).
 
+## 1989 : la cession organisée {#sec-ep-1989-cession}
+
+Depuis le 9 février 1989, la cession des participations de l'État relève de [la loi n° 89-9](#r-ep-1989), qui abroge la loi de 1987 et en reprend les facilités. Le périmètre des entreprises publiques, que la même loi fixe à plus de 50 % du capital, est au chapitre du statut (@sec-ep-1989).
+
+- **La cession.** « Le gouvernement est, dans ce cadre, autorisé à céder tout ou partie des participations de l'État. » Une commission d'assainissement et de restructuration des entreprises à participations publiques donne son avis ; le Premier ministre arrête les décisions. Les facilités de 1987 — paiement pour moitié en titres de l'État, renonciation au privilège du Trésor, rééchelonnement ou abandon partiel de créances — sont reprises.
+
+## 1994 : l'action spécifique et la vente de blocs d'actions {#sec-ep-1994-cession}
+
+Depuis le 15 août 1994, l'État peut garder une action spécifique dans la société qu'il cède, et vendre des blocs d'actions par appel d'offres ([loi n° 94-102](#r-ep-1994)). L'entrée des banques et des assurances dans le périmètre, que la même loi décide, est au chapitre du statut (@sec-ep-1994-2001).
+
+- **Les outils de la cession.** En 1994, l'État se donne l'action spécifique — une action qu'il conserve dans la société cédée, avec des droits de nomination, d'agrément et d'opposition — et la vente de blocs d'actions par appel d'offres sur cahier des charges.
+
 ## 1997-2000 : la commission, le comité technique et la liquidation à l'amiable {#sec-ep-1999}
 
 Depuis le 12 mai 1999, la liquidation à l'amiable d'une entreprise ou d'un établissement public, décidée après avis de la commission d'assainissement et de restructuration des entreprises à participations publiques, suit un régime propre, qui écarte en partie le droit commun des entreprises commerciales ; un comité technique de privatisation en suit le déroulement.
@@ -107,7 +119,7 @@ De 1987 à 2009, l'État cède tout ou partie de 217 entreprises, pour 5 963 MD 
 
 ## Les cessions {#sec-ep-cessions}
 
-De 1987 à 2009, la cession de participations publiques — vente d'actions ou d'actifs, ouverture du capital, concession, liquidation — rapporte 5 963 MD pour 217 entreprises et 425 opérations, selon la Direction générale de la privatisation, dont les statistiques s'arrêtent au 31 janvier 2009. Les règles de la cession sont celles des lois de 1987, 1989 et 1994 (@sec-ep-1987, @sec-ep-1989, @sec-ep-1994-2001) ; les recettes année par année sont à la longue période (@sec-ep-lp-cessions).
+De 1987 à 2009, la cession de participations publiques — vente d'actions ou d'actifs, ouverture du capital, concession, liquidation — rapporte 5 963 MD pour 217 entreprises et 425 opérations, selon la Direction générale de la privatisation, dont les statistiques s'arrêtent au 31 janvier 2009. Les règles de la cession sont celles des lois de 1987, 1989 et 1994 (@sec-ep-1987, @sec-ep-1989-cession, @sec-ep-1994-cession) ; les recettes année par année sont à la longue période (@sec-ep-lp-cessions).
 
 ```{python}
 #| echo: false
@@ -125,7 +137,7 @@ ep.tableau_cessions_plans(
 
 - **Une concentration dans le temps.** Le X^e^ Plan (2002-2006) fait 4 071 MD sur 5 963 ; l'année 2006, 3 110,5 MD à elle seule (@tbl-ep-cessions).
 - **Le détail par opération, depuis 1998.** Les relevés annuels et par période ne nomment pas les entreprises cédées ; le recueil des opérations le fait depuis 1998 (@sec-ep-cessions-operations).
-- **Après 2009.** Les recettes de privatisation inscrites au budget de 2010 à 2016 font 2 576,6 MD, dont 1 105 MD en 2012, 1 070,4 MD en 2013 et 396,9 MD en 2016, pour l'essentiel la cession de 35 % de Tunisie Télécom ; de 2017 à 2024, les recettes du budget n'ont aucune ligne de privatisation (@sec-ep-lp-cloture, @fig-ep-cessions).
+- **Après 2009.** Les recettes de privatisation inscrites au budget de 2010 à 2016 font 2 576,6 MD, dont 1 105 MD en 2012, 1 070,4 MD en 2013 et 396,9 MD en 2016, pour l'essentiel la cession de 35 % de Tunisie Télécom ; de 2017 à 2024, les recettes du budget n'ont aucune ligne de privatisation (@sec-ep-lp-cessions, @fig-ep-cessions).
 - **Les biens confisqués, depuis 2011.** Depuis le [18 mars 2011](#r-ep-2011-confiscation), les biens meubles et immeubles et les droits acquis après le 7 novembre 1987 par l'ancien président de la République, son épouse, les personnes nommées en annexe du décret-loi et celles qui les ont obtenus par leurs relations avec elles sont confisqués au profit de l'État.
 
 <!-- TODO (documentaliste) : sociétés confisquées depuis 2011 — sont-elles des entreprises publiques au sens de la loi n° 89-9 ? domicile à trancher (note de chantier du découpage, § 5) ; cession de 45 MD d'une société pharmaceutique rangée parmi les recettes de confiscation au rapport de clôture de 2022, à lire ; décret-loi n° 2011-68 (commission nationale de gestion des avoirs). Seconde licence de téléphonie mobile et Tunisie Télécom : textes d'autorisation à lire. -->
@@ -154,6 +166,7 @@ ep.figure(
 
 - **2006.** 3 110,5 MD, plus de la moitié du total, soit 6,8 % du PIB de l'année et l'équivalent de 31,2 % des dépenses de l'État hors service de la dette : c'est l'année de l'ouverture du capital de Tunisie Télécom, que l'ITCEQ chiffre à « de l'ordre de 3052 millions de dinars » (@sec-ep-itceq).
 - **Deux relevés, quatre années divergentes.** Le relevé arrêté à 2005 donne 481,4 MD pour 1998 et 68,9 MD pour 1999 ; celui arrêté à 2009, 456,6 MD et 43,5 MD. Le second est celui dont les sommes par plan redonnent la page officielle (@tbl-ep-cessions-plans) ; c'est lui que le tableau retient.
+- **2010-2024 : les recettes que le budget inscrit.** D'après les rapports de la Cour des comptes sur la clôture du budget, les recettes de privatisation sont nulles en 2010, 2011 et 2015 ; elles font 1 105 MD en 2012, 1 070,4 MD en 2013, 4,3 MD en 2014 et 396,9 MD en 2016. En 2012, en 2013 et en 2016, elles viennent pour l'essentiel de la cession de 35 % de Tunisie Télécom (@sec-ep-itceq) : le rapport de 2016 en attribue 900 MD à Tunisie Télécom pour 2012, et la gestion 2013 reprend 1 000 MD du solde que la Banque centrale détenait au titre de la cession de 2006. Ce sont des recettes inscrites, non les produits des opérations de l'année. De 2017 à 2024, les tableaux de recettes des rapports n'ont aucune ligne de privatisation ni de cession de participations. Les autres flux de clôture qui touchent les entreprises publiques sont réunis à la longue période (@sec-ep-lp-cloture).
 
 :::: {.chronologie-repliable titre="Recettes de cession des participations publiques : montants année par année, en dinars courants, en % des dépenses de l'État et en % du PIB, 1987-2009, et recettes de privatisation inscrites au budget, 2010-2024"}
 
@@ -180,6 +193,24 @@ ep.tableau_cessions(
              "[@minfin-indicateurs-fp]"))
 ```
 
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cdc_autres(
+    partie="privatisation",
+    tbl_id="tbl-ep-cdc-privatisation",
+    caption=("Recettes de privatisation inscrites au budget de l'État, gestions 2010 à 2024, en "
+             "millions de dinars courants, et part de la cession de 35 % de Tunisie Télécom. En "
+             "2012, la table du déficit structurel du rapport de 2012 donne 1 105 MD de recettes "
+             "de privatisation, dont 900 MD pour Tunisie Télécom selon le rapport de 2016 ; de "
+             "2017 à 2024, aucune ligne de privatisation. Sources : Cour des comptes "
+             "[@cdc-cloture-2011, p. 42 ; @cdc-cloture-2012, p. 27 ; @cdc-cloture-2013, p. 46 ; "
+             "@cdc-cloture-2014, p. 53 ; @cdc-cloture-2015, p. 46 ; @cdc-cloture-2016, p. 54 ; "
+             "@cdc-cloture-2018, p. 62 ; @cdc-cloture-2020, p. 53 ; @cdc-cloture-2024, p. 43]"))
+```
+
 ::::
 
 :::: {.chronologie-repliable titre="Textes de la cession, de la liquidation et de la confiscation cités dans ce chapitre, 1987-2011 : date d'effet, article, page, portée"}
@@ -187,12 +218,14 @@ ep.tableau_cessions(
 | Date d'effet | Texte, article et page | Ce que le texte change | Portée |
 |---|---|---|---|
 | []{#r-ep-1987}[16 août 1987]{.insecable} | loi n° 87-47 du 2 août 1987 [@loi87-47, art. 1 à 6 et 11 à 13, p. 958-959] | cession autorisée (art. 1^er^) ; liste par décret (art. 2) ; commission de restructuration (art. 4 à 6) ; avantages aux acquéreurs (art. 11) ; paiement à 50 % en bons d'équipement (art. 12) ; renonciation au privilège du Trésor, rééchelonnement ou abandon partiel de créances (art. 13). Aucune clause d'effet : publiée le 14 août 1987, exécutoire un jour franc après | mise en place |
+| []{#r-ep-1989}[9 février 1989]{.insecable} | loi n° 89-9 du 1^er^ février 1989 [@loi89-9, art. 7 à 10, 14 à 17, 23 à 32 et 34, p. 203-205] | contrôle général des organismes recevant un concours de l'État (art. 7) ; définition à plus de 50 % et participations publiques (art. 8) ; régime transitoire à 34 % jusqu'au 31 décembre 1991 (art. 9) ; contrats-programmes (art. 10) ; publication des comptes (art. 14) ; contrôleurs d'État (art. 15 à 17) ; cession (art. 23), commission (art. 24 à 26), décision du Premier ministre (art. 27), avantages (art. 29 et 30), paiement en titres (art. 31), créances de l'État (art. 32) ; abrogation des lois n° 85-72, n° 85-73 et n° 87-47 (art. 34). Aucune clause d'effet : publiée le 7 février 1989, exécutoire un jour franc après | rupture |
+| []{#r-ep-1994}[1^er^ janvier 1995]{.insecable} pour l'article 9 nouveau, date dite par le texte ; [15 août 1994]{.insecable} pour les autres articles : dépôt du *Journal officiel* au gouvernorat de Tunis le 10 août 1994, plus cinq jours | loi n° 94-102 du 1^er^ août 1994 [@loi94-102, art. 9 nouveau et 33-2 à 33-6, p. 1290-1291] | banques et sociétés d'assurance détenues à 34 % ou plus considérées entreprises publiques (art. 9 nouveau, à partir du 1^er^ janvier 1995, date dite par le texte) ; action spécifique (art. 33-2 et 33-3) ; vente de blocs d'actions par appel d'offres (art. 33-4 à 33-6) | rupture |
 | []{#r-ep-1997-commission}[8 mars 1997]{.insecable} | décret n° 97-410 du 21 février 1997 [@decret97-410, art. 1^er^ à 7, p. 366] | commission d'assainissement et de restructuration des entreprises à participations publiques : le Premier ministre, président, et onze membres — ministres de l'Intérieur, de la Coopération internationale et de l'Investissement extérieur, des Finances, du Développement économique, des Domaines de l'État et des Affaires foncières, des Affaires sociales, de la Formation professionnelle et de l'Emploi, secrétaire général du gouvernement, secrétaire d'État chargé des participations publiques, gouverneur de la Banque centrale, président du Conseil du marché financier ; secrétariat : Direction générale de la privatisation (art. 1^er^) ; comité technique de privatisation, présidé par le secrétaire d'État, avis avant la commission (art. 4 et 5) ; abroge le décret n° 89-377 du 15 mars 1989 et ses modificatifs (art. 7). Aucune clause d'effet : *Journal officiel* déposé au gouvernorat de Tunis le 3 mars 1997, exécutoire cinq jours plus tard | étape |
 | []{#r-ep-1998-comite}[1^er^ août 1998]{.insecable} | décret n° 98-1440 du 13 juillet 1998 [@decret98-1440, art. 1^er^, p. 1636] | art. 5 nouveau : le comité technique statue sur la reprise des appels d'offres sans soumission, la vente d'éléments d'actif estimés à 100 000 dinars au plus à 70 % au moins de l'évaluation, la cession des participations des entreprises publiques hors banques dans la limite de 10 % du capital si l'ensemble des participations publiques ne dépasse pas 34 % ; art. 5 bis : il suit les liquidations décidées après avis de la commission. Aucune clause d'effet : *Journal officiel* déposé le 27 juillet 1998, exécutoire cinq jours plus tard | ajustement |
 | []{#r-ep-1999}[12 mai 1999]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 7 mai 1999, plus cinq jours, jour du dépôt non compté | loi n° 99-38 du 3 mai 1999 [@loi99-38, art. 1^er^ (art. 34 à 41) et 2, p. 684-685] | liquidation à l'amiable des entreprises et établissements publics : priorité aux dettes nées après l'approbation du programme de liquidation, suspension des poursuites, durée de trois ans au plus | étape |
 | []{#r-ep-2000-liquidateurs}[23 octobre 2000]{.insecable} | décret n° 2000-2280 du 10 octobre 2000 [@decret2000-2280, art. 1^er^ à 17, p. 2481-2483] | liquidateur nommé par l'assemblée générale ou le ministre chargé des participations publiques (art. 2), sur appel d'offres et cahier des charges soumis au comité technique (art. 3 et 4), ou directement parmi les agents publics de dix ans de service (art. 6) ; le dirigeant de l'entreprise exclu (art. 7) ; actifs classés en trois catégories, plafonds de rémunération aux tableaux annexés (art. 8 et 13) ; avances de 70 % au plus, solde de 30 % après quitus (art. 12) ; agent public : indemnité mensuelle de 30 % au plus du salaire brut (art. 14) ; programme de liquidation soumis au comité dans le mois (art. 15). Aucune clause d'effet : *Journal officiel* déposé le 18 octobre 2000, exécutoire cinq jours plus tard | étape |
 | []{#r-ep-2011-confiscation}[18 mars 2011]{.insecable} | décret-loi n° 2011-13 du 14 mars 2011 [@dl2011-13, art. 1^er^, p. 338] | confiscation au profit de l'État des biens meubles et immeubles et droits acquis après le 7 novembre 1987 par l'ancien président de la République, son épouse, les personnes de la liste annexée et celles qui les ont obtenus par leurs relations avec elles, « à partir de la date de sa publication » (art. 1^er^) | mise en place |
 
-: Textes de la cession, de la liquidation et de la confiscation cités dans ce chapitre, 1987-2011 ; les lignes de 1987 et de 1999 sont aussi au registre du statut des entreprises publiques {#tbl-ep-registre-cessions}
+: Textes de la cession, de la liquidation et de la confiscation cités dans ce chapitre, 1987-2011 ; les lignes de 1987, 1989, 1994 et 1999 sont aussi au registre du statut des entreprises publiques {#tbl-ep-registre-cessions}
 
 ::::

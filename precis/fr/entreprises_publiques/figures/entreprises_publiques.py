@@ -2055,7 +2055,12 @@ def tableau_cdc_garantie(caption: str, tbl_id: str = "tbl-ep-cdc-garantie") -> N
     _md(entete, "g" + "d" * (len(postes) + 3), lignes, caption, tbl_id)
 
 
-def tableau_cdc_autres(caption: str, tbl_id: str = "tbl-ep-cdc-autres") -> None:
+def tableau_cdc_autres(caption: str, tbl_id: str = "tbl-ep-cdc-autres",
+                       partie: str = "tout") -> None:
+    """Remboursements de prêts et recettes de privatisation des rapports de clôture.
+
+    `partie` : « prets » (trois colonnes de remboursements), « privatisation » (deux colonnes
+    de recettes de privatisation) ou « tout » (les cinq)."""
     p = _prets_cdc()
     v = _cdc("recettes_privatisation_budget").reindex(_gestions_cdc())
     cols = {k: (p[k] if k in p.columns else pd.Series(dtype=float)) for k in
@@ -2066,11 +2071,16 @@ def tableau_cdc_autres(caption: str, tbl_id: str = "tbl-ep-cdc-autres") -> None:
             x = s.get(a, float("nan")) if len(s) else float("nan")
             return _n(x, dec) if x == x else ""
         tt = v["tunisie_telecom"] if "tunisie_telecom" in v.columns else pd.Series(dtype=float)
-        lignes.append([str(a), c(cols["total"], 3), c(cols["retroces_exterieurs"], 3),
-                       c(cols["titre2"], 3), c(v["total"], 3), c(tt, 3)])
-    _md(["Gestion", "Remboursements de prêts,<br>total imprimé<br>(jusqu'en 2019)",
-         "prêts extérieurs<br>rétrocédés", "prêts du titre II", "Recettes de privatisation,<br>total",
-         "dont cession de 35 %<br>de Tunisie Télécom"], "gddddd", lignes, caption, tbl_id)
+        prets = [c(cols["total"], 3), c(cols["retroces_exterieurs"], 3), c(cols["titre2"], 3)]
+        priv = [c(v["total"], 3), c(tt, 3)]
+        lignes.append([str(a)] + (prets if partie != "privatisation" else [])
+                      + (priv if partie != "prets" else []))
+    entete_prets = ["Remboursements de prêts,<br>total imprimé<br>(jusqu'en 2019)",
+                    "prêts extérieurs<br>rétrocédés", "prêts du titre II"]
+    entete_priv = ["Recettes de privatisation,<br>total", "dont cession de 35 %<br>de Tunisie Télécom"]
+    entete = (["Gestion"] + (entete_prets if partie != "privatisation" else [])
+              + (entete_priv if partie != "prets" else []))
+    _md(entete, "g" + "d" * (len(entete) - 1), lignes, caption, tbl_id)
 
 
 # --- versements au budget depuis 2003 (Cour des comptes) et part de la Banque centrale -------------

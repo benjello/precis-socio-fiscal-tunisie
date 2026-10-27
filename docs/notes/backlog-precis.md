@@ -3815,9 +3815,20 @@ Ce qui reste :
 - **Forme du livre : tranchée le 27 octobre 2026 — volume de six parties.** Le chapitre unique
   `_relation_financiere.qmd` est scindé en neuf chapitres (`_statut`, `_transferts`, `_garanties`, `_recettes`,
   `_cessions`, `_grandes_entreprises`, `_emploi_comptes`, `_longue_periode`, `_etudes`), sans contenu nouveau ;
-  plan et décisions dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. Restent : éclater les sections
-  mixtes (1989, 1994-2001, clôture 2010-2024) entre chapitres, ouvrir « Restructurer » et la gouvernance quand
-  ils ont leur matière, définir les notions dans la présentation.
+  plan et décisions dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. Restent : ouvrir
+  « Restructurer » et la gouvernance quand ils ont leur matière, définir les notions dans la présentation.
+- **Sections mixtes éclatées — fait le 27 octobre 2026** (branche `ep/eclatement`), sans fait nouveau. 1989 et
+  1994-2001 : le périmètre reste dans `_statut` (`#sec-ep-1989`, `#sec-ep-1994-2001`) ; la cession organisée et
+  l'action spécifique passent dans `_cessions` (`#sec-ep-1989-cession`, `#sec-ep-1994-cession`), avec les lignes de
+  registre `r-ep-1989` et `r-ep-1994` recopiées. Clôture 2010-2024 : versements au budget dans `_recettes`
+  (`#sec-ep-versements-cloture`, `tbl-ep-cdc-recettes`) ; principal garanti remboursé, prêts remboursés et encours
+  selon la Cour dans `_garanties` (`#sec-ep-garanties-cloture`, `tbl-ep-cdc-garantie`, `tbl-ep-cdc-autres` réduit
+  aux prêts) ; recettes de privatisation dans `_cessions` (puce de `#sec-ep-lp-cessions`, `tbl-ep-cdc-privatisation`)
+  ; `_longue_periode` ne garde que `fig-ep-cdc` et un tableau court des flux (`tbl-ep-cdc-flux`). **Restent** :
+  pages des rapports de clôture du tableau des prêts (`tbl-ep-cdc-autres`), dont la liste couvre encore aussi les
+  pages de la privatisation ; « depuis la gestion 2017 » (introduction de `#sec-ep-lp-cloture`) et « depuis le
+  rapport sur la gestion 2018 » (encours) à accorder ; « en trois années » de `#sec-ep-lp-cessions` alors que 2014
+  porte 4,3 MD.
 - *(historique)* **Forme du livre : volume ou chapitre — décision laissée à la revue.** Éléments : (a) le livre n'a qu'un chapitre
   (`_relation_financiere.qmd`, environ 1 200 lignes) et une annexe ; (b) ses figures, ses séries et son plan
   (mise en place, réformes, état du droit, longue période) sont ceux d'un chapitre de partie V ; (c) le volume
