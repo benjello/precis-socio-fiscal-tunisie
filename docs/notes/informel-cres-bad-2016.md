@@ -64,5 +64,5 @@ fiche de provenance : `tunisia-data/sources/cres-bad-2016-protection-sociale-inf
 - Corriger la mention « CRES, étude sur le secteur informel, 2016 » du chapitre des prestations non
   contributives (`_non_contributives.qmd`, liste des études) : l'étude est maintenant en main ; la
   référence sera `charmes-bencheikh2016-informel`.
-- Demander à N. Ben Cheikh son document interne CRES de 2014, cité en source du tableau 5 (voir
+- Demander à N. Ben Cheikh son document interne CRES de 2014, cité en source d'un tableau de l'étude, sur la couverture sociale par régime (voir
   message du 27/10/2026).
