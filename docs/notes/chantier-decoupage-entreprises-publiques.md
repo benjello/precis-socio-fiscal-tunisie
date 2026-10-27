@@ -324,7 +324,7 @@ nationalisations de 1956-1964) quand les chapitres 8 à 13 s'ouvriront.
 
 ## 9. Décisions de l'humain (27 octobre 2026)
 
-1. Seize chapitres, regroupés en six grandes sections (les six parties du § 2).
+1. Seize chapitres, regroupés en six parties (confirmé).
 2. Chapitre 2 (gouvernance) fondu dans le chapitre 1 jusqu'à ce qu'il ait sa matière.
 3. Partie III : **un seul chapitre « Les grandes entreprises »**, une section par entreprise ; scission par secteur
    quand trois entreprises du secteur ont leur fiche. Les chapitres 8 à 13 du § 2 sont donc des cibles, non des
@@ -332,7 +332,7 @@ nationalisations de 1956-1964) quand les chapitres 8 à 13 s'ouvriront.
 4. Les dispositifs d'abord (partie II avant la partie III) ; les notions sont précisées dès la présentation
    (entreprise publique, établissement public, participation, garantie, prêt rétrocédé, cession, privatisation).
 5. Sociétés confisquées : une ligne dans le chapitre 6, sans domicile propre.
-6. Moment de la scission : non tranché.
+6. Scission mécanique juste après la fusion de la PR #540, sans contenu nouveau.
 7. Les sections mixtes (1989, 1994-2001, clôture 2010-2024) sont éclatées entre les chapitres.
 8. Le registre des textes est réparti par chapitre.
 9. Ancres `sec-ep-*` et `r-ep-*` conservées.
