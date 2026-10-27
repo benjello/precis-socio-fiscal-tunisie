@@ -1,6 +1,6 @@
 # Céder : les cessions de participations et leurs recettes {#sec-ep-ceder .domicile-unique}
 
-Ce chapitre donne les textes qui autorisent et organisent la cession des participations de l'État et la liquidation de ses entreprises, les opérations de cession une à une depuis 1998, et ce que l'État en a tiré de 1987 à 2024.
+Ce chapitre donne les textes qui autorisent et organisent la [cession des participations](#g-cession-participations-publiques) de l'État et la liquidation de ses entreprises, les opérations de cession une à une depuis 1998, et ce que l'État en a tiré de 1987 à 2024.
 
 ## Vue d'ensemble : 217 entreprises, six modes {#sec-ep-cessions-modes}
 
@@ -18,7 +18,7 @@ ep.tableau_cessions_modes(
 ```
 
 - **Une entreprise, un mode.** Le bilan range chaque entreprise sous un seul mode, et ne donne pas le produit de chaque mode ; le produit de l'ensemble est de 5 963 MD.
-- **Cession et liquidation.** La privatisation, totale ou partielle, et l'ouverture du capital en bourse concernent 153 entreprises ; la liquidation, 41 ; la concession, 5.
+- **Cession et liquidation.** La [privatisation](#g-privatisation), totale ou partielle, et l'ouverture du capital en bourse concernent 153 entreprises ; la liquidation, 41 ; la concession, 5.
 - **Dans le temps.** Les recettes se concentrent sur le X^e^ Plan (2002-2006), et l'année 2006 en fait la moitié (@sec-ep-cessions) ; le recueil des opérations, une à une, commence en 1998 (@sec-ep-cessions-operations).
 
 ## 1987 : l'État autorisé à céder ses participations {#sec-ep-1987}
@@ -44,7 +44,7 @@ Depuis le 15 août 1994, l'État peut garder une action spécifique dans la soci
 
 ## 1997-2000 : la commission, le comité technique et la liquidation à l'amiable {#sec-ep-1999}
 
-Depuis le 12 mai 1999, la liquidation à l'amiable d'une entreprise ou d'un établissement public, décidée après avis de la commission d'assainissement et de restructuration des entreprises à participations publiques, suit un régime propre, qui écarte en partie le droit commun des entreprises commerciales ; un comité technique de privatisation en suit le déroulement.
+Depuis le 12 mai 1999, la [liquidation à l'amiable](#g-liquidation-amiable) d'une entreprise ou d'un établissement public, décidée après avis de la commission d'assainissement et de restructuration des entreprises à participations publiques, suit un régime propre, qui écarte en partie le droit commun des entreprises commerciales ; un comité technique de privatisation en suit le déroulement.
 
 | Instance | Composition | Rôle | Texte |
 |---|---|---|---|
@@ -166,7 +166,7 @@ ep.figure(
 
 - **2006.** 3 110,5 MD, plus de la moitié du total, soit 6,8 % du PIB de l'année et l'équivalent de 31,2 % des dépenses de l'État hors service de la dette : c'est l'année de l'ouverture du capital de Tunisie Télécom, que l'ITCEQ chiffre à « de l'ordre de 3052 millions de dinars » (@sec-ep-itceq).
 - **Deux relevés, quatre années divergentes.** Le relevé arrêté à 2005 donne 481,4 MD pour 1998 et 68,9 MD pour 1999 ; celui arrêté à 2009, 456,6 MD et 43,5 MD. Le second est celui dont les sommes par plan redonnent la page officielle (@tbl-ep-cessions-plans) ; c'est lui que le tableau retient.
-- **2010-2024 : les recettes que le budget inscrit.** D'après les rapports de la Cour des comptes sur la clôture du budget, les recettes de privatisation sont nulles en 2010, 2011 et 2015 ; elles font 1 105 MD en 2012, 1 070,4 MD en 2013, 4,3 MD en 2014 et 396,9 MD en 2016. En 2012, en 2013 et en 2016, elles viennent pour l'essentiel de la cession de 35 % de Tunisie Télécom (@sec-ep-itceq) : le rapport de 2016 en attribue 900 MD à Tunisie Télécom pour 2012, et la gestion 2013 reprend 1 000 MD du solde que la Banque centrale détenait au titre de la cession de 2006. Ce sont des recettes inscrites, non les produits des opérations de l'année. De 2017 à 2024, les tableaux de recettes des rapports n'ont aucune ligne de privatisation ni de cession de participations. Les autres flux de clôture qui touchent les entreprises publiques sont réunis à la longue période (@sec-ep-lp-cloture).
+- **2010-2024 : les recettes que le budget inscrit.** D'après les rapports de la Cour des comptes sur la clôture du budget, le budget inscrit des recettes de privatisation en 2012, 2013, 2014 et 2016, pour l'essentiel la cession de 35 % de Tunisie Télécom (@sec-ep-itceq) ; de 2017 à 2024, ses tableaux de recettes n'ont aucune ligne de privatisation ni de cession de participations (@tbl-ep-cdc-privatisation). Ce sont des recettes inscrites, non les produits des opérations de l'année : la gestion 2013 reprend le solde que la Banque centrale détenait au titre de la cession de 2006. Les autres flux de clôture qui touchent les entreprises publiques sont réunis à la longue période (@sec-ep-lp-cloture).
 
 :::: {.chronologie-repliable titre="Recettes de cession des participations publiques : montants année par année, en dinars courants, en % des dépenses de l'État et en % du PIB, 1987-2009, et recettes de privatisation inscrites au budget, 2010-2024"}
 

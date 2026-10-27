@@ -165,11 +165,11 @@ ep.tableau_bct_parts(
 
 ## Les versements au budget, gestions 2010 à 2024 {#sec-ep-versements-cloture}
 
-De 2010 à 2024, les versements au budget baissent de 2014 à 2017, jusqu'à 312,2 MD, puis atteignent 1 823,1 MD en 2024, dont 58 % de la Banque centrale, d'après les rapports de la Cour des comptes sur la clôture du budget de l'État. La figure d'ensemble des flux de clôture qui touchent les entreprises publiques est à la longue période (@fig-ep-cdc). Chaque rapport donne sa gestion et la précédente ; les gestions 2010 et 2017 ne sont connues que par cette colonne de comparaison. Le PIB est celui de l'Institut national de la statistique, en base 2015, rétropolé par l'INS pour 2010-2014 : il n'y a pas de rupture de base sur la période.
+De 2010 à 2024, les versements des entreprises publiques et de la Banque centrale au budget sont au plus bas de 2014 à 2017, puis remontent ; depuis 2017, la part du budget dans les profits de la Banque centrale en fait plus de la moitié (@fig-ep-versements). La figure d'ensemble des flux de clôture qui touchent les entreprises publiques est à la longue période (@fig-ep-cdc).
 
-- **Les versements au budget : un creux de 2014 à 2017, un niveau plus haut depuis 2019.** Ils font 812,7 MD en 2010, 1 595,6 MD en 2011, puis 810,5, 1 117,4, 583,2, 477,2 et 523,3 MD de 2012 à 2016, 312,2 MD en 2017, 685,4 MD en 2018 et 1 131,3 MD en 2019 : de 1,23 % du PIB en 2010 à 2,36 % en 2011, 0,31 % en 2017 et 0,92 % en 2019. Depuis 2020, la Cour n'imprime plus de total ; la somme des lignes qu'elle imprime fait 1 010,5 MD en 2020, 930,5 en 2021, 713,5 en 2022, 777,4 en 2023 et 1 823,1 MD en 2024, soit 0,85 %, 0,71 %, 0,51 %, 0,52 % puis 1,14 % du PIB.
-- **La Banque centrale fait plus de la moitié des versements depuis 2017.** La part du budget dans ses profits fait 874 MD en 2011 pour 190,6 MD en 2013 et 194 MD en 2016 ; la ligne est vide en 2010. Elle remonte à 221,6 MD en 2017, 383,9 en 2018, 676,3 en 2019 et 704,2 MD en 2020, redescend à 360,7 MD en 2022 et atteint 1 056,8 MD en 2024, soit 58 % de la somme des lignes de cette gestion.
-- **Les bénéfices des sociétés non pétrolières font l'essentiel de la baisse de 2014.** Ils passent de 761,9 MD en 2013 à 272,6 MD en 2014 puis à 15,5 MD en 2016 ; la Cour l'attribue en 2014 au recul des résultats de la plupart des entreprises, notamment de la Compagnie des phosphates de Gafsa [@cdc-cloture-2014, p. 50]. Ils restent sous 50 MD de 2016 à 2019 et de 2021 à 2023, avec 146,5 MD en 2020 et 223,3 MD en 2024. Les bénéfices des sociétés pétrolières font 192,8 MD en 2016 et 297,6 MD en 2019 ; la ligne porte le nom d'une seule société. Les excédents des entreprises publiques industrielles et commerciales font 97,8 MD en 2018, 161,3 MD en 2021 et 449,4 MD en 2024, dont 285 MD d'entreprises pétrolières.
+- **La baisse de 2014 à 2017 vient des sociétés non pétrolières.** Leurs bénéfices versés au budget s'effondrent de 2013 à 2016 ; la Cour des comptes l'attribue en 2014 au recul des résultats de la plupart des entreprises, notamment de la Compagnie des phosphates de Gafsa [@cdc-cloture-2014, p. 50]. Ils restent faibles ensuite, sauf en 2020 et en 2024.
+- **La remontée tient d'abord à la Banque centrale.** La part du budget dans ses profits est vide en 2010, réunit trois exercices en 2011, puis croît de 2017 à 2020 et atteint son plus haut niveau en 2024 ; les excédents des entreprises publiques industrielles et commerciales, dont celles du pétrole, en sont la deuxième ligne en 2024.
+- **Depuis la gestion 2020, la Cour n'imprime plus de total.** Elle donne les lignes, réparties entre les recettes de propriété et les profits du Trésor ; le total tracé est la somme des lignes imprimées.
 
 :::: {.chronologie-repliable titre="Versements au budget, gestions 2010 à 2024, par ligne"}
 
@@ -195,5 +195,7 @@ ep.tableau_cdc_recettes(
              "PIB : Institut national de la statistique "
              "[@ins-cnat-2015], base dite à chaque ligne"))
 ```
+
+*Note de lecture.* Chaque rapport de la Cour des comptes sur la clôture du budget donne sa gestion et la précédente ; les gestions 2010 et 2017 ne sont connues que par cette colonne de comparaison. Les excédents des entreprises publiques font 449,4 MD en 2024, dont 285 MD d'entreprises pétrolières ; la ligne des bénéfices des sociétés pétrolières porte le nom d'une seule société. Le PIB est celui de l'Institut national de la statistique, en base 2015, rétropolé par l'INS pour 2010-2014 : il n'y a pas de rupture de base sur la période (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)).
 
 ::::

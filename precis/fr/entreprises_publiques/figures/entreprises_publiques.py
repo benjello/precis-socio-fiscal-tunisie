@@ -1876,6 +1876,45 @@ def _garantie_cdc():
     return p
 
 
+def _panneau_garantie_cdc(ax, mesure: str) -> None:
+    """Principal et intérêts de la dette garantie payés par l'État, par gestion."""
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
+    g = _garantie_cdc()
+    for a in g.index:
+        vp = _part(g.at[a, "total"], a, mesure)
+        vi = _part(g.at[a, "interets"], a, mesure)
+        if vp is not None:
+            b = ax.bar(a, vp, color=BLEU, width=0.72)
+            figtools.infobulle(b[0], f"{a} — principal : {_n(vp, dec)} {unite}")
+        if vi is not None and vp is not None:
+            b = ax.bar(a, vi, bottom=vp, color=ORANGE, width=0.72)
+            figtools.infobulle(b[0], f"{a} — intérêts : {_n(vi, dec)} {unite}")
+    ax.legend(handles=[Patch(color=BLEU, label="principal"), Patch(color=ORANGE, label="intérêts")],
+              fontsize=7, frameon=False, loc="upper right")
+    ax.set_title("Ce que l'État rembourse au titre de dettes garanties,\nprincipal et intérêts",
+                 fontsize=8.5, loc="left")
+
+
+def _panneau_prets_cdc(ax, mesure: str) -> None:
+    """Remboursements de prêts reçus : total imprimé, puis prêts rétrocédés et prêts du titre II."""
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
+    p = _prets_cdc()
+    x, y = _xy(p.index, p["total"], mesure)
+    ax.plot(x, y, color=VERT, marker="o", lw=2, ms=4.5, label="total imprimé (jusqu'en 2019)")
+    for cle, nom, coul, marque in (("retroces_exterieurs", "prêts extérieurs rétrocédés", BLEU, "s"),
+                                   ("titre2", "prêts du titre II", ORANGE, "^")):
+        if cle in p.columns:
+            xs, ys = _xy(p.index, p[cle], mesure)
+            pts = ax.plot(xs, ys, color=coul, marker=marque, ls="", ms=4.5, mfc="white", label=nom)
+            for a, v in zip(xs, ys):
+                figtools.infobulle(pts[0], f"{a} — {nom} : {_n(v, dec)} {unite}")
+    ax.legend(fontsize=6, frameon=False, loc="upper left")
+    ax.set_title("Ce que l'État reçoit en remboursement de prêts :\ntotal, puis lignes",
+                 fontsize=8.5, loc="left")
+
+
 def _fig_cdc(mesure: str):
     figtools.apply_lang_font()
     fig, axes = plt.subplots(2, 2, figsize=(9.6, 6.8))
@@ -1903,36 +1942,9 @@ def _fig_cdc(mesure: str):
     ax.set_title("Ce que les entreprises et la Banque centrale versent au budget,\npar ligne",
                  fontsize=8.5, loc="left")
     # 2. Dette garantie remboursée par l'État : principal et intérêts
-    ax = axes[0][1]
-    g = _garantie_cdc()
-    for a in g.index:
-        vp = _part(g.at[a, "total"], a, mesure)
-        vi = _part(g.at[a, "interets"], a, mesure)
-        if vp is not None:
-            b = ax.bar(a, vp, color=BLEU, width=0.72)
-            figtools.infobulle(b[0], f"{a} — principal : {_n(vp, dec)} {unite}")
-        if vi is not None and vp is not None:
-            b = ax.bar(a, vi, bottom=vp, color=ORANGE, width=0.72)
-            figtools.infobulle(b[0], f"{a} — intérêts : {_n(vi, dec)} {unite}")
-    ax.legend(handles=[Patch(color=BLEU, label="principal"), Patch(color=ORANGE, label="intérêts")],
-              fontsize=7, frameon=False, loc="upper right")
-    ax.set_title("Ce que l'État rembourse au titre de dettes garanties,\nprincipal et intérêts",
-                 fontsize=8.5, loc="left")
+    _panneau_garantie_cdc(axes[0][1], mesure)
     # 3. Remboursements de prêts reçus
-    ax = axes[1][0]
-    p = _prets_cdc()
-    x, y = _xy(p.index, p["total"], mesure)
-    ax.plot(x, y, color=VERT, marker="o", lw=2, ms=4.5, label="total imprimé (jusqu'en 2019)")
-    for cle, nom, coul, marque in (("retroces_exterieurs", "prêts extérieurs rétrocédés", BLEU, "s"),
-                                   ("titre2", "prêts du titre II", ORANGE, "^")):
-        if cle in p.columns:
-            xs, ys = _xy(p.index, p[cle], mesure)
-            pts = ax.plot(xs, ys, color=coul, marker=marque, ls="", ms=4.5, mfc="white", label=nom)
-            for a, v in zip(xs, ys):
-                figtools.infobulle(pts[0], f"{a} — {nom} : {_n(v, dec)} {unite}")
-    ax.legend(fontsize=6, frameon=False, loc="upper left")
-    ax.set_title("Ce que l'État reçoit en remboursement de prêts :\ntotal, puis lignes",
-                 fontsize=8.5, loc="left")
+    _panneau_prets_cdc(axes[1][0], mesure)
     # 4. Recettes de privatisation inscrites au budget
     ax = axes[1][1]
     v = _cdc("recettes_privatisation_budget").reindex(_gestions_cdc())["total"]
@@ -2001,6 +2013,89 @@ def table_cdc():
         "Prêts du titre II remboursés (MD courants)": list(p["titre2"]),
         "Recettes de privatisation (MD courants)": list(v["total"]),
         "Encours de la dette garantie en fin de gestion, selon la Cour (MD courants)": list(enc)})
+    for col in list(t.columns[1:]):
+        nom = col.split(" (")[0]
+        t[f"{nom}, % du PIB"] = [_arrondi(_part(x, a, "pib")) for x, a in zip(t[col], t["Année"])]
+        t[f"{nom}, % des dépenses de l'État"] = [_arrondi(_part(x, a, "dep"))
+                                                  for x, a in zip(t[col], t["Année"])]
+    t["Base du PIB"] = [_base_courte(a) for a in t["Année"]]
+    return t
+
+
+def _panneau_encours_cdc(ax, mesure: str) -> None:
+    """Encours de la dette garantie en fin de gestion selon la Cour des comptes : extérieur et
+    intérieur empilés ; gestions sans encours imprimé laissées vides."""
+    unite = "MD" if mesure == "md" else "%"
+    dec = 1 if mesure == "md" else 2
+    c = _cdc_encours()
+    if c is None:
+        return
+    e = _cdc("dette_garantie_encours").reindex(_gestions_cdc())
+    for a in e.index:
+        bas = 0.0
+        for cle, nom, coul in (("exterieur", "extérieur", BLEU), ("interieur", "intérieur", ORANGE)):
+            v = _part(e.at[a, cle], a, mesure) if cle in e.columns else None
+            if v is None:
+                continue
+            b = ax.bar(a, v, bottom=bas, color=coul, width=0.72)
+            figtools.infobulle(b[0], f"{a} — encours {nom} : {_n(v, dec)} {unite}")
+            bas += v
+    vides = [a for a in e.index if not (e.loc[a, ["exterieur", "interieur"]] == e.loc[a, ["exterieur", "interieur"]]).any()]
+    avant = [a for a in vides if a < 2017]
+    if avant:
+        ax.axvspan(min(avant) - 0.5, max(avant) + 0.5, color="#eaeef2", zorder=0)
+        ax.annotate("encours non imprimé\npar la Cour", xy=((min(avant) + max(avant)) / 2, 0.5),
+                    xycoords=("data", "axes fraction"), ha="center", va="center", fontsize=6.5,
+                    color=GRIS)
+    ax.legend(handles=[Patch(color=BLEU, label="dette extérieure"),
+                       Patch(color=ORANGE, label="dette intérieure")],
+              fontsize=6.5, frameon=False, loc="upper left")
+    ax.set_title("Encours de la dette garantie en fin d'année,\nselon la Cour des comptes",
+                 fontsize=8.5, loc="left")
+
+
+def _fig_cdc_garanties(mesure: str):
+    figtools.apply_lang_font()
+    fig, axes = plt.subplots(1, 3, figsize=(10.4, 3.9))
+    _panneau_garantie_cdc(axes[0], mesure)
+    _panneau_prets_cdc(axes[1], mesure)
+    figtools.marque_rupture(axes[1], RUPTURE_CDC, "nomenclature\nde 2020")
+    _panneau_encours_cdc(axes[2], mesure)
+    gestions = _gestions_cdc()
+    for ax in axes:
+        _style(ax)
+        ax.set_xlim(gestions[0] - 0.6, gestions[-1] + 0.6)
+        ax.set_xticks(gestions[::2])
+        ax.tick_params(labelsize=7)
+        ax.set_ylim(bottom=0, top=ax.get_ylim()[1] * 1.15)
+        _axe(ax, mesure, milliards=False)
+        ax.yaxis.label.set_size(7.5)
+        if mesure == "pib":
+            _marque_pib(ax, gestions[0], gestions[-1], dedans=True)
+    fig.tight_layout()
+    return fig
+
+
+def fig_cdc_garanties():
+    return _trois_vues(_fig_cdc_garanties)
+
+
+def table_cdc_garanties():
+    g = _garantie_cdc()
+    p = _prets_cdc()
+    e = _cdc("dette_garantie_encours").reindex(_gestions_cdc())
+    for c in ("exterieur", "interieur"):
+        if c not in e.columns:
+            e[c] = float("nan")
+    t = pd.DataFrame({
+        "Année": _gestions_cdc(),
+        "Principal garanti remboursé (MD courants)": list(g["total"]),
+        "Intérêts de la dette garantie (MD courants)": list(g["interets"]),
+        "Remboursements de prêts reçus, total imprimé (MD courants)": list(p["total"]),
+        "Prêts extérieurs rétrocédés remboursés (MD courants)": list(p["retroces_exterieurs"]),
+        "Prêts du titre II remboursés (MD courants)": list(p["titre2"]),
+        "Encours garanti extérieur en fin d'année, selon la Cour (MD courants)": list(e["exterieur"]),
+        "Encours garanti intérieur en fin d'année, selon la Cour (MD courants)": list(e["interieur"])})
     for col in list(t.columns[1:]):
         nom = col.split(" (")[0]
         t[f"{nom}, % du PIB"] = [_arrondi(_part(x, a, "pib")) for x, a in zip(t[col], t["Année"])]
@@ -2234,6 +2329,8 @@ FIGURES = {
                   "fig_ep_resultats"),
     "cessions": (fig_cessions, table_cessions, (S_CESSIONS, S_CDC, DENOMINATEURS), "fig_ep_cessions"),
     "cdc": (fig_cdc, table_cdc, (S_CDC, DENOMINATEURS), "fig_ep_cdc"),
+    "cdc_garanties": (fig_cdc_garanties, table_cdc_garanties, (S_CDC, DENOMINATEURS),
+                      "fig_ep_cdc_garanties"),
     "versements": (fig_versements, table_versements, (S_CDC_0309, S_CDC, DENOMINATEURS),
                    "fig_ep_versements"),
     "croisees": (fig_croisees, table_croisees, (S_CROISEES, DENOMINATEURS), "fig_ep_croisees"),

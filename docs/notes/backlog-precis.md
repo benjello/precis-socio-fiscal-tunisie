@@ -3817,9 +3817,11 @@ Ce qui reste :
   `_cessions`, `_grandes_entreprises`, `_emploi_comptes`, `_longue_periode`, `_etudes`), sans contenu nouveau ;
   plan et décisions dans `docs/notes/chantier-decoupage-entreprises-publiques.md`. Restent : ouvrir
   « Restructurer » et la gouvernance quand ils ont leur matière.
-- **Les notions dans la présentation — fait le 27 octobre 2026** (branche `ep/eclatement`) : section
-  `#sec-ep-notions` de `index.qmd`, dix notions définies sur les textes déjà cités dans le volume, chacune avec son
-  lien au glossaire et son chapitre. Cinq entrées neuves au glossaire, `provisoire`, sans définition arabe :
+- **Les notions — fait le 27 octobre 2026** (branche `ep/eclatement`, après relecture) : pas de liste dans la
+  présentation ; chaque notion est liée au glossaire à sa première occurrence utile dans le chapitre qui la traite
+  (`_statut` : entreprise publique, établissement public non administratif, participation publique,
+  contrat-programme ; `_garanties` : garantie, prêts du Trésor, prêts rétrocédés ; `_cessions` : cession,
+  privatisation, liquidation à l'amiable). Cinq entrées neuves au glossaire, `provisoire`, sans définition arabe :
   `prets-tresor` (قروض الخزينة, édition arabe de la loi organique du budget, couche texte), `prets-retrocedes`
   (القروض المعاد إقراضها, rapports arabes de clôture 2021 et 2024), `liquidation-amiable` (التصفية الرضائية, lue à
   l'image de l'édition arabe de la loi n° 99-38, JORT n° 37 de 1999, p. 848), `privatisation` (التخصيص, relevé
@@ -3835,7 +3837,11 @@ Ce qui reste :
   (`#sec-ep-versements-cloture`, `tbl-ep-cdc-recettes`) ; principal garanti remboursé, prêts remboursés et encours
   selon la Cour dans `_garanties` (`#sec-ep-garanties-cloture`, `tbl-ep-cdc-garantie`, `tbl-ep-cdc-autres` réduit
   aux prêts) ; recettes de privatisation dans `_cessions` (puce de `#sec-ep-lp-cessions`, `tbl-ep-cdc-privatisation`)
-  ; `_longue_periode` ne garde que `fig-ep-cdc` et un tableau court des flux (`tbl-ep-cdc-flux`). **Restent** :
+  ; `_longue_periode` ne garde que `fig-ep-cdc`, ce que les flux montrent de la relation financière, et la
+  description des rapports en note de méthode repliée (`tbl-ep-cdc-flux`). Après relecture, les séries des
+  sections de clôture passent de la prose aux figures et aux tableaux repliés : figure neuve `fig-ep-cdc-garanties`
+  (principal garanti remboursé, prêts remboursés, encours selon la Cour), `fig-ep-versements` et `fig-ep-cessions`
+  pour les deux autres. **Restent** :
   pages des rapports de clôture du tableau des prêts (`tbl-ep-cdc-autres`), dont la liste couvre encore aussi les
   pages de la privatisation ; « depuis la gestion 2017 » (introduction de `#sec-ep-lp-cloture`) et « depuis le
   rapport sur la gestion 2018 » (encours) à accorder ; « en trois années » de `#sec-ep-lp-cessions` alors que 2014
