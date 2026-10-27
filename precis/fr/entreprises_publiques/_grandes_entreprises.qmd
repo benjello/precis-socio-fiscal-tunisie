@@ -1,0 +1,61 @@
+# La dizaine d'entreprises les plus lourdes {#sec-ep-lp-entreprises .domicile-unique}
+
+Trois entreprises reçoivent l'essentiel des transferts de l'échantillon : la STIR, l'Office des céréales et la STEG, soit 10,9 milliards de dinars sur 14,6 en 2022, valeur provisoire. Toutes trois portent la compensation — carburants, céréales, électricité et gaz.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ENTREPRISES = ("stir", "office_cereales", "steg", "cnss", "cnrps", "office_huile", "sonede",
+               "onas", "transtu", "sncft", "tunisie_autoroutes")
+ep.tableau_transferts_entreprises(
+    caption=("Transferts du budget reçus par onze entreprises de l'échantillon du rapport sur "
+             "les entreprises publiques, 2017-2022 ; pour chaque année, la dernière édition qui "
+             "la donne, nommée en tête de colonne. 2022 est provisoire. Source : ministère des "
+             "Finances [@minfin-ep, p. 149-150 ; @minfin-ep-2022, p. 105 ; @minfin-ep-2023, "
+             "p. 200 ; @minfin-ep-2024, p. 154]"),
+    entites=ENTREPRISES + ("total",))
+```
+
+Le résultat net de ces entreprises n'est publié que lorsqu'elles figurent parmi les dix premiers bénéfices ou les dix premières pertes de l'exercice : une case vide n'est pas un résultat nul.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_resultats_entreprises(
+    caption=("Résultat net de douze entreprises publiques, exercices 2017-2022, d'après les "
+             "classements des dix premiers résultats positifs et des dix premiers résultats "
+             "négatifs de chaque édition. « — » : l'entreprise n'est dans aucun classement de "
+             "l'exercice. Quand deux éditions donnent deux valeurs, l'édition est nommée. "
+             "Source : ministère des Finances [@minfin-ep, p. 28-29 ; @minfin-ep-2022, "
+             "p. 17-18 ; @minfin-ep-2023, p. 27-28 ; @minfin-ep-2024, p. 30 ; @minfin-ep-2025, "
+             "p. 20-21]"),
+    entites=("steg", "stir", "etap", "office_cereales", "cpg", "gct", "tunisair", "transtu",
+             "sncft", "office_commerce", "rnta", "pct"))
+```
+
+- **Des pertes chaque année.** La Société des transports de Tunis (Transtu) et la Société nationale des chemins de fer tunisiens (SNCFT) sont en perte à chacun des six exercices ; l'Office des céréales, à chacun des cinq où il est classé.
+- **Des résultats révisés.** Le résultat de 2020 du Groupe chimique tunisien vaut −205,0 MD dans l'édition LF 2023 et −593,3 MD dans l'édition LF 2024.
+- **Des transferts révisés à la hausse.** Les transferts de 2019 à la STIR valent 1 296,0 MD dans l'édition LF 2021 et 1 905,3 MD dans l'édition LF 2023 : la subvention d'une année est soldée les années suivantes (@tbl-ep-transferts-revisions).
+
+:::: {.chronologie-repliable titre="Transferts du budget par entreprise : montants d'une même année dans les éditions successives du rapport, 2017-2022"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_transferts_revisions(
+    caption=("Transferts du budget reçus par onze entreprises, 2017-2022 : toutes les valeurs "
+             "imprimées, l'édition étant nommée quand elles diffèrent. Les premières valeurs "
+             "de 2020 et de 2021 sont provisoires. Source : mêmes rapports que le "
+             "@tbl-ep-transferts-entreprises"),
+    entites=ENTREPRISES)
+```
+
+::::
+
+<!-- TODO (documentaliste) : des fiches par entreprise du rapport, seuls les effectifs et les charges de personnel sont versés (section des effectifs) ; restent la dette, la subvention d'exploitation et le total des passifs (éditions arabes : tableaux tournés d'un quart de tour) : relire à l'image puis verser, pour STEG, STIR, Tunisair, Transtu, SNCFT, SONEDE, ETAP, Groupe chimique, CPG, Office des céréales, RNTA, Office du commerce. Les classements par charges de personnel et par produits d'exploitation restent aussi à verser. -->

@@ -5,6 +5,7 @@ du ministère des Finances (docs/notes/entreprises-publiques-liste-2026-10-13.md
 si l'un ne revient pas, c'est la transcription qui est fausse.
 """
 import csv
+import re
 from pathlib import Path
 
 LISTES = Path(__file__).resolve().parent.parent / "precis/fr/entreprises_publiques/listes"
@@ -162,7 +163,7 @@ def test_registre_du_plafond_du_chapitre_est_celui_du_releve():
     with contextlib.redirect_stdout(sortie):
         listes.tableau_plafond("x")
     attendu = [l for l in sortie.getvalue().splitlines() if "{#r-ep-pl-" in l]
-    chapitre = (racine / "precis/fr/entreprises_publiques/_relation_financiere.qmd").read_text(
+    chapitre = (racine / "precis/fr/entreprises_publiques/_garanties.qmd").read_text(
         encoding="utf-8")
     ecrit = [l for l in chapitre.splitlines() if "{#r-ep-pl-" in l]
     assert attendu and ecrit == attendu
@@ -277,7 +278,22 @@ def test_registre_des_prets_du_tresor_du_chapitre_est_celui_du_releve():
     with contextlib.redirect_stdout(sortie):
         listes.tableau_prets_tresor("x")
     attendu = [l for l in sortie.getvalue().splitlines() if "{#r-ep-pt-" in l]
-    chapitre = (racine / "precis/fr/entreprises_publiques/_relation_financiere.qmd").read_text(
+    chapitre = (racine / "precis/fr/entreprises_publiques/_garanties.qmd").read_text(
         encoding="utf-8")
     ecrit = [l for l in chapitre.splitlines() if "{#r-ep-pt-" in l]
     assert attendu and ecrit == attendu
+
+
+def test_lignes_de_registre_reprises_identiques_entre_chapitres():
+    """Une ligne de registre citée par deux chapitres est recopiée telle quelle : l'infobulle
+    ne lit que la page où elle se trouve. Les copies ne doivent pas diverger de l'original."""
+    racine = Path(__file__).resolve().parent.parent
+    lignes: dict[str, set[str]] = {}
+    for fichier in sorted((racine / "precis/fr/entreprises_publiques").glob("_*.qmd")):
+        for ligne in fichier.read_text(encoding="utf-8").splitlines():
+            m = re.match(r"^\| \[\]\{#(r-[\w-]+)\}", ligne)
+            if m:
+                lignes.setdefault(m.group(1), set()).add(ligne)
+    assert lignes
+    divergentes = [a for a, v in lignes.items() if len(v) > 1]
+    assert not divergentes, divergentes

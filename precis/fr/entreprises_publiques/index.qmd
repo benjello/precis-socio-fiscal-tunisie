@@ -12,16 +12,45 @@ Aucun tableau ne réunit deux familles.
 **Les périmètres.** Aucune des séries budgétaires ne porte sur le même ensemble d'entreprises. Chaque tableau et chaque figure dit le sien : toutes les entreprises et tous les établissements publics non administratifs, ou un échantillon de 33 à 88 entreprises selon l'édition du rapport.
 :::
 
+## Vue d'ensemble {#sec-ep-vue-ensemble}
+En 2023, le budget de l'État verse 17,1 milliards de dinars à l'ensemble des entreprises et établissements publics non administratifs, et l'État garantit 21,4 milliards de leur dette. À la fin de la même année, 42 entreprises déclarent que l'État leur doit 12,0 milliards et qu'elles lui doivent 11,2 milliards. Au titre de l'exercice 2022, dernier exercice arrêté, l'État reçoit 0,2 milliard de dinars de dividendes (@fig-ep-ensemble).
+
+```{python}
+#| label: fig-ep-ensemble
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "ensemble",
+    caption=("Quatre grandeurs de la relation financière entre l'État et les entreprises "
+             "publiques, en dinars courants, en % des dépenses de l'État hors service de la "
+             "dette et en % du PIB, 2016-2024"),
+    note_lecture=(
+        "Les quatre cadres n'ont ni la même échelle ni le même périmètre, et ne s'additionnent pas. En haut à gauche, les transferts du budget à toutes les entreprises publiques et à tous les établissements publics non administratifs : ce total contient les versements aux caisses de sécurité sociale, les subventions de compensation et les crédits des établissements d'enseignement et de culture. Le carré creux de 2016 est dans un périmètre que le ministère a révisé ensuite : il n'est pas relié à 2017. Le rond creux de 2024 est un montant de loi de finances, non une réalisation. En haut à droite, l'encours en fin d'année des prêts que l'État garantit ; le rond creux est une estimation de fin juin 2024, donnée en dinars seulement. En bas à gauche, ce que 42 entreprises déclarent devoir à l'État et ce qu'elles déclarent qu'il leur doit, en fin d'année. En bas à droite, la part de l'État dans les bénéfices et excédents de chaque exercice, en millions de dinars dans la première vue ; le rond creux de 2023 est un montant partiel, arrêté à la date du rapport. "
+        "Les deux autres vues rapportent chaque montant aux dépenses du budget de l'État hors service de la dette, puis au PIB de la même année. "
+        "Le PIB est celui de l'Institut national de la statistique en base 2015, dans sa base d'origine pour ces années : aucune valeur n'est rétropolée, et la base est rappelée sur la figure (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). "
+        "Un encours rapporté aux dépenses ou au PIB de l'année rapporte un stock à un flux annuel : la part se lit comme un ordre de grandeur, non comme une fraction du budget. "
+        "La part de l'État dans les bénéfices est rapportée aux dépenses et au PIB de l'exercice au titre duquel elle est due."),
+)
+```
+Les montants sont en millions de dinars courants (MD) ou en milliards de dinars courants. Chaque série est aussi donnée en part des dépenses du budget de l'État hors service de la dette, et en part du PIB ; le PIB employé dit sa base, et une série en part du PIB se lit par segment de base (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures)). Trois rapports du ministère des Finances, annexés chaque année au projet de loi de finances, portent les séries : le rapport sur les entreprises publiques, le rapport sur les transferts et les garanties, le rapport sur la dette publique. Une « édition LF 2025 » est le rapport annexé au projet de loi de finances pour 2025.
+- **Ce que le budget verse.** De 6,9 milliards de dinars en 2017 à 17,1 milliards en 2022 et en 2023, à toutes les entreprises et tous les établissements publics non administratifs : 25,1 % des dépenses de l'État hors service de la dette en 2017, 35,2 % en 2023 ; 6,7 % puis 11,4 % du PIB. Ce total contient les caisses de sécurité sociale, la compensation et les établissements d'enseignement ; la part des seules entreprises, hors compensation et hors caisses, n'est pas calculée (@sec-ep-transferts).
+- **Ce que l'État garantit.** L'encours de la dette garantie passe de 11,3 milliards de dinars fin 2016 à 21,4 milliards fin 2023, soit de 11,8 % à 14,3 % du PIB de l'année ; la part due à des prêteurs intérieurs passe de 2,0 à 8,8 milliards (@sec-ep-garanties).
+- **Ce que l'État doit, et ce qui lui est dû.** Fin 2023, 42 entreprises déclarent 12,0 milliards de dinars de créances sur l'État, dont 7,0 milliards de subventions non réglées, et 11,2 milliards de dettes envers lui, dont 6,6 milliards d'impôts et taxes : 8,0 % et 7,5 % du PIB (@sec-ep-croisees).
+- **Qui y travaille.** De 96 000 à 100 000 agents de 2018 à 2022, hors secteur financier et hors caisses de sécurité sociale, sur 84 à 88 entreprises selon l'exercice ; leurs charges de personnel font 3,1 % à 3,4 % du PIB (@sec-ep-effectifs).
+- **Ce que l'État reçoit.** Sa part dans les bénéfices va de 98 à 333 millions de dinars par exercice de 2017 à 2022, soit de 0,08 % à 0,29 % du PIB (@sec-ep-dividendes). De 1987 à 2009, les cessions lui ont rapporté 6,0 milliards de dinars courants, dont 3,1 milliards en 2006 (@sec-ep-cessions).
+
 ## Le plan du volume {#sec-ep-plan}
 
-Le volume tient en un chapitre (@sec-ep-relation), dans cet ordre :
+Le volume compte neuf chapitres, regroupés ici en six parties, et deux annexes :
 
-1. la vue d'ensemble : quatre grandeurs de 2016 à 2024, et les réformes du périmètre ;
-2. la mise en place, de 1969 à 1987, puis les grandes réformes : 1989, 1994-2001, les cessions de 1987 à 2009, le rapport annuel depuis 2019 ;
-3. l'état du droit ;
-4. une section par disposition : les transferts du budget, les garanties et la dette garantie, avec le plafond que la loi de finances fixe de 1958 à 2026, les dettes et créances croisées, les dividendes et les versements au budget, les cessions ; puis les effectifs et la masse salariale ;
-5. la longue période : recettes de cession année par année de 1987 à 2024, résultats agrégés, résultats et transferts de la dizaine d'entreprises les plus lourdes, flux de clôture du budget de 2010 à 2024 ;
-6. le Livre blanc de 2018 et les études extérieures.
+- **I. Le statut.** Ce qu'est une entreprise publique, et la tutelle de l'État : le périmètre de 1969 à l'état du droit (@sec-ep-statut).
+- **II. L'État et les entreprises.** Les transferts du budget (@sec-ep-transferts) ; les garanties, les prêts et les arriérés, avec le plafond que la loi de finances fixe de 1958 à 2026 (@sec-ep-garanties-prets) ; les dividendes et les versements au budget (@sec-ep-dividendes) ; les cessions de participations (@sec-ep-ceder).
+- **III. Les entreprises.** La dizaine d'entreprises les plus lourdes (@sec-ep-lp-entreprises).
+- **IV. L'emploi et les comptes.** Les effectifs, la masse salariale et les résultats agrégés (@sec-ep-emploi-comptes).
+- **V. La longue période.** Les flux de clôture du budget de 2010 à 2024 et les années sans série budgétaire (@sec-ep-longue-periode).
+- **VI. Rapports et études.** Le Livre blanc de 2018 et les études extérieures (@sec-ep-etudes).
 
 ## Les sujets limitrophes et le volume où ils se lisent {#sec-ep-perimetre}
 

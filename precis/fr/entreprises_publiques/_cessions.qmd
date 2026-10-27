@@ -1,0 +1,102 @@
+# Céder : les cessions de participations et leurs recettes {#sec-ep-ceder .domicile-unique}
+
+Ce chapitre donne les textes qui autorisent et organisent la cession des participations de l'État, et ce que l'État en a tiré.
+
+## 1987 : l'État autorisé à céder ses participations {#sec-ep-1987}
+
+En 1987, pour la première fois, une loi autorise de façon générale la cession des participations de l'État.
+
+- **Ce que la loi cherche.** [La loi n° 87-47](#r-ep-1987) est « relative à la restructuration des entreprises publiques » : « L'État est, dans ce cadre, autorisé à céder tout ou partie de ses participations directes ou indirectes ». Un décret fixe la liste des entreprises à restructurer.
+- **Qui décide.** Une commission de restructuration évalue les entreprises et propose les conditions de cession.
+- **Ce que l'État abandonne.** L'acquéreur peut payer jusqu'à la moitié du prix en bons d'équipement ; il est exonéré d'impôt sur les bénéfices pendant cinq ans. L'État peut renoncer au privilège du Trésor, rééchelonner ses créances sur l'entreprise ou en abandonner une partie.
+- **Les premières recettes.** 6,8 MD en 1987, 27,0 MD en 1988, 50,6 MD en 1989 (@tbl-ep-cessions).
+
+## 1987-2009 : les cessions {#sec-ep-reformes-cessions}
+
+De 1987 à 2009, l'État cède tout ou partie de 217 entreprises, pour 5 963 MD selon la Direction générale de la privatisation. Plus des deux tiers de ces recettes viennent du X^e^ Plan (2002-2006), et la moitié de la seule année 2006. Les recettes par période et par année sont à la section des cessions (@sec-ep-cessions) et à la longue période (@sec-ep-lp-cessions).
+
+## Les cessions {#sec-ep-cessions}
+
+De 1987 à 2009, la cession de participations publiques — vente d'actions ou d'actifs, ouverture du capital, concession, liquidation — rapporte 5 963 MD pour 217 entreprises et 425 opérations, selon la Direction générale de la privatisation, dont les statistiques s'arrêtent au 31 janvier 2009. Les règles de la cession sont celles des lois de 1987, 1989 et 1994 (@sec-ep-1987, @sec-ep-1989, @sec-ep-1994-2001) ; les recettes année par année sont à la longue période (@sec-ep-lp-cessions).
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cessions_plans(
+    caption=("Recettes des privatisations et restructurations par plan de développement, "
+             "1987-2009, en millions de dinars courants : page de la Direction générale de la "
+             "privatisation, et sommes de son relevé annuel. La page s'arrête au 31 janvier "
+             "2009 ; le relevé annuel porte l'année 2009 entière. Source : Direction générale "
+             "de la privatisation [@dgpv-recettes-par-periode ; "
+             "@dgpv-recettes-annuelles-1987-2009]"))
+```
+
+- **Une concentration dans le temps.** Le X^e^ Plan (2002-2006) fait 4 071 MD sur 5 963 ; l'année 2006, 3 110,5 MD à elle seule (@tbl-ep-cessions).
+- **Aucun détail par opération.** Les relevés de la Direction générale de la privatisation donnent des recettes par année et par période, non par entreprise cédée.
+- **Après 2009.** Les recettes de privatisation inscrites au budget de 2010 à 2016 font 2 576,6 MD, dont 1 105 MD en 2012, 1 070,4 MD en 2013 et 396,9 MD en 2016, pour l'essentiel la cession de 35 % de Tunisie Télécom ; de 2017 à 2024, les recettes du budget n'ont aucune ligne de privatisation (@sec-ep-lp-cloture, @fig-ep-cessions).
+
+<!-- TODO (documentaliste) : la page « bilan global » de la Direction générale de la privatisation donne les opérations par mode (114 privatisations totales, 29 partielles, 10 offres publiques de vente, 5 concessions, 41 liquidations, 18 autres) : à verser dans tunisia-data avec sa clé de bibliographie avant de la publier ; documenter les grandes cessions opération par opération (cimenteries, seconde licence de téléphonie, Tunisie Télécom). -->
+
+## Les recettes de cession, 1987-2024 {#sec-ep-lp-cessions}
+
+De 1987 à 2009, les cessions rapportent 5 976,4 MD courants selon la Direction générale de la privatisation. Quatre années font plus de 400 MD courants et plus de 1 % du PIB : 1998, 2000, 2002 et 2006 ; les dix-neuf autres restent sous 0,6 % du PIB. De 2010 à 2016, le budget inscrit 2 576,6 MD de recettes de privatisation, en trois années (2012, 2013, 2016) ; de 2017 à 2024, il n'en inscrit aucune. Les deux séries n'ont ni la même source ni la même définition : le produit d'une opération d'un côté, une recette encaissée par le budget de l'autre.
+
+```{python}
+#| label: fig-ep-cessions
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.figure(
+    "cessions",
+    caption=("Recettes de cession des participations publiques, par année, en dinars courants, "
+             "en % des dépenses de l'État hors service de la dette et en % du PIB : produit des "
+             "opérations selon la Direction générale de la privatisation, 1987-2009, puis recettes "
+             "de privatisation inscrites au budget selon les rapports de clôture de la Cour des "
+             "comptes, 2010-2024"),
+    note_lecture=(
+        "L'échelle est logarithmique dans les trois vues : une graduation vaut dix fois la précédente, ce qui laisse lisibles les années à quelques dizaines de millions de dinars à côté de 2006 (3,1 milliards). Les barres bleues sont les recettes du relevé de la Direction générale de la privatisation, de 1987 à 2009 ; les barres violettes, à droite du trait pointillé, les recettes de privatisation inscrites au budget de l'État d'après les rapports de la Cour des comptes, de 2010 à 2016 : autre source, autre définition, les deux séries ne se chaînent pas. Un « 0 » marque une gestion où le budget inscrit une recette nulle ; la bande grise, de 2017 à 2024, les gestions où les tableaux de recettes n'ont aucune ligne de privatisation. Dans la première vue, les losanges creux sont les valeurs du relevé précédent, arrêté à 2005, quand elles diffèrent : 1998 et 1999, et, de moins de 0,2 million de dinars, 2004 et 2005. Deuxième vue : les recettes sont rapportées aux dépenses de l'État hors service de la dette, pour donner une échelle — une recette de cession n'est pas une dépense ; ces dépenses ne sont pas disponibles de 1988 à 1990, et la vue s'interrompt sur la bande grise. Troisième vue : le dénominateur est le PIB aux prix courants du ministère des Finances, dont la base change. Chaque changement est marqué d'un trait et la base de chaque segment est écrite au-dessus du cadre : base 1983 jusqu'en 1996, présumée avant 1992 ; base 1997, rétropolée, de 1997 à 2001 ; valeur propre au ministère, rattachée à aucune base, de 2002 à 2004 ; base 1997 de 2005 à 2009. Les segments ne sont pas raccordés : chaque trait est une rupture du seul dénominateur (voir l'[annexe sur le PIB](../annexe-pib.html#sec-pib-ruptures))."),
+)
+```
+
+- **2006.** 3 110,5 MD, plus de la moitié du total, soit 6,8 % du PIB de l'année et l'équivalent de 31,2 % des dépenses de l'État hors service de la dette : c'est l'année de l'ouverture du capital de Tunisie Télécom, que l'ITCEQ chiffre à « de l'ordre de 3052 millions de dinars » (@sec-ep-itceq).
+- **Deux relevés, quatre années divergentes.** Le relevé arrêté à 2005 donne 481,4 MD pour 1998 et 68,9 MD pour 1999 ; celui arrêté à 2009, 456,6 MD et 43,5 MD. Le second est celui dont les sommes par plan redonnent la page officielle (@tbl-ep-cessions-plans) ; c'est lui que le tableau retient.
+
+:::: {.chronologie-repliable titre="Recettes de cession des participations publiques : montants année par année, en dinars courants, en % des dépenses de l'État et en % du PIB, 1987-2009, et recettes de privatisation inscrites au budget, 2010-2024"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import entreprises_publiques as ep
+ep.tableau_cessions(
+    caption=("Recettes de cession des participations publiques, par année, 1987-2024. De 1987 "
+             "à 2009, relevé de la Direction générale de la privatisation arrêté à 2009 ; la "
+             "dernière colonne donne la valeur du relevé arrêté à 2005 quand elle diffère. De "
+             "2010 à 2024, lignes « (budget) » : recettes de privatisation inscrites au budget de "
+             "l'État d'après les rapports de clôture de la Cour des comptes ; « aucune ligne » "
+             "quand le tableau des recettes du rapport n'en porte pas. Sources : Direction "
+             "générale de la privatisation [@dgpv-recettes-annuelles-1987-2009 ; "
+             "@dgpv-recettes-annuelles-1987-2005] ; Cour des comptes [@cdc-cloture-2011, p. 42 ; "
+             "@cdc-cloture-2012, p. 27 ; @cdc-cloture-2013, p. 46 ; @cdc-cloture-2014, p. 53 ; "
+             "@cdc-cloture-2015, p. 46 ; @cdc-cloture-2016, p. 54 ; @cdc-cloture-2018, p. 62 ; "
+             "@cdc-cloture-2020, p. 53 ; @cdc-cloture-2024, p. 43]. Parts "
+             "calculées ici : dépenses de l'État hors service de la dette, non disponibles de "
+             "1988 à 1990 [@minfin-remunerations] ; PIB aux prix courants du ministère des "
+             "Finances, dans la base dite à chaque ligne, sans raccord entre les bases "
+             "[@minfin-indicateurs-fp]"))
+```
+
+::::
+
+:::: {.chronologie-repliable titre="Textes de loi cités dans ce chapitre : date d'effet, article, page, portée"}
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-1987}[16 août 1987]{.insecable} | loi n° 87-47 du 2 août 1987 [@loi87-47, art. 1 à 6 et 11 à 13, p. 958-959] | cession autorisée (art. 1^er^) ; liste par décret (art. 2) ; commission de restructuration (art. 4 à 6) ; avantages aux acquéreurs (art. 11) ; paiement à 50 % en bons d'équipement (art. 12) ; renonciation au privilège du Trésor, rééchelonnement ou abandon partiel de créances (art. 13). Aucune clause d'effet : publiée le 14 août 1987, exécutoire un jour franc après | mise en place |
+
+: Textes de loi cités dans ce chapitre et inscrits au registre d'un autre chapitre
+
+::::
