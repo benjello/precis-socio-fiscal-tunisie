@@ -4,7 +4,7 @@ Ce chapitre donne les textes qui autorisent et organisent la cession des partici
 
 ## Vue d'ensemble : 217 entreprises, six modes {#sec-ep-cessions-modes}
 
-Du 31 décembre 1987 au 31 janvier 2009, l'État privatise ou restructure 217 entreprises : il cède en totalité sa participation dans 114 d'entre elles et en liquide 41 [@dgpv-bilan-global].
+Du 31 décembre 1987 au 31 janvier 2009, l'État privatise ou restructure 217 entreprises : 114 d'entre elles relèvent d'une « privatisation totale » et 41 d'une liquidation [@dgpv-bilan-global].
 
 ```{python}
 #| echo: false
@@ -32,7 +32,7 @@ En 1987, pour la première fois, une loi autorise de façon générale la cessio
 
 ## 1997-2000 : la commission, le comité technique et la liquidation à l'amiable {#sec-ep-1999}
 
-Depuis le 12 mai 1999, une entreprise ou un établissement public dont la liquidation est décidée après avis de la commission d'assainissement et de restructuration des entreprises à participations publiques est liquidé à l'amiable, sous un régime qui écarte en partie le droit commun des entreprises commerciales ; un comité technique de privatisation en suit le déroulement.
+Depuis le 12 mai 1999, la liquidation à l'amiable d'une entreprise ou d'un établissement public, décidée après avis de la commission d'assainissement et de restructuration des entreprises à participations publiques, suit un régime propre, qui écarte en partie le droit commun des entreprises commerciales ; un comité technique de privatisation en suit le déroulement.
 
 | Instance | Composition | Rôle | Texte |
 |---|---|---|---|
@@ -44,12 +44,12 @@ Depuis le 12 mai 1999, une entreprise ou un établissement public dont la liquid
 
 - **La commission et son comité, 1997.** [Le décret du 21 février 1997](#r-ep-1997-commission) recompose la commission instituée en 1989 et fixe la composition du comité technique de privatisation, créé en 1996 par le décret qui fixe les attributions du ministère du Développement économique, qui examine chaque dossier avant elle. La Direction générale de la privatisation tient le secrétariat des deux.
 - **Le comité statue seul sur les petites opérations, 1998.** Depuis le [1^er^ août 1998](#r-ep-1998-comite), le comité décide sans la commission de la reprise d'un appel d'offres resté sans soumission, de la vente d'éléments d'actif estimés à 100 000 dinars au plus, à un prix d'au moins 70 % de l'évaluation, et de la cession des participations d'entreprises publiques, hors banques, dans la limite de 10 % du capital, tant que l'ensemble des participations publiques ne dépasse pas 34 %. Il suit les liquidations décidées après avis de la commission et lui en rend compte.
-- **La liquidation à l'amiable, 1999.** [La loi du 3 mai 1999](#r-ep-1999) ajoute à la loi de 1989 un titre « de la liquidation à l'amiable ». Les dettes nées après l'approbation du programme de liquidation et nécessaires à l'opération sont payées avant les créances antérieures, même privilégiées ; seules passent devant elles les créances que le code des droits réels et le code du travail dotent d'un superprivilège. Les poursuites et les délais de prescription des créances antérieures sont suspendus, pour trois ans au plus. Un commissaire aux comptes certifie les états financiers du liquidateur.
+- **La liquidation à l'amiable, 1999.** [La loi du 3 mai 1999](#r-ep-1999) ajoute à la loi de 1989 un titre « de la liquidation à l'amiable ». Les dettes nées après l'approbation du programme de liquidation et nécessaires à l'opération sont payées avant les créances antérieures, même privilégiées ; seules passent devant elles les créances visées à l'article 199 du code des droits réels et à l'article 151-2 du code du travail, auxquelles la loi donne un superprivilège. Les poursuites et les délais de prescription des créances antérieures sont suspendus, pour trois ans au plus. Un commissaire aux comptes certifie les états financiers du liquidateur.
 - **Les liquidateurs, 2000.** Depuis le [23 octobre 2000](#r-ep-2000-liquidateurs), le liquidateur est choisi sur appel d'offres, sur un cahier des charges soumis au comité technique ; il ne peut être le dirigeant de l'entreprise. Sa rémunération suit des plafonds fixés par catégorie d'actifs, selon la difficulté de leur réalisation ; il en reçoit au plus 70 % en avances, le solde après le quitus. Un agent public nommé directement reçoit une indemnité mensuelle d'au plus 30 % de son salaire brut. Le programme de liquidation est soumis au comité dans le mois qui suit la nomination.
 
 ## Les opérations de 1998 à 2008 {#sec-ep-cessions-operations}
 
-De 1998 à 2008, la Direction générale de la privatisation recense 162 opérations sur 132 sociétés, pour 5 409,9 MD, dont 4 460,6 MD de cessions de titres ; trois opérations en font les trois quarts : l'ouverture de 35 % du capital de Tunisie Télécom en 2006 (3 052 MD), la concession de la seconde licence de téléphonie mobile en 2002 (680 MD) et la vente de la Société Ciment de Gabès en 2000 (311,1 MD) [@dgpv-recueil-operations].
+De 1998 à 2008, le recueil de la Direction générale de la privatisation compte 162 lignes, qui réunissent parfois plusieurs opérations, sur 132 sociétés ; leurs produits font 5 409,9 MD (5 412,9 MD au total imprimé, l'écart de 3 MD venant du tourisme et de l'artisanat), dont 4 460,6 MD de cessions de titres ; trois opérations en font les trois quarts : l'ouverture de 35 % du capital de Tunisie Télécom en 2006 (3 052 MD), la concession de la seconde licence de téléphonie mobile en 2002 (680 MD) et la vente de la Société Ciment de Gabès en 2000 (311,1 MD) [@dgpv-recueil-operations].
 
 ```{python}
 #| echo: false
@@ -72,9 +72,9 @@ ep.tableau_cessions_annees(
 - **Nature de l'acte.** Le recueil donne, pour chaque opération, un intitulé du mode : « Vente d'actions (99,772 % du capital) », « OPV », « Concession », « Vente d'éléments d'actif (Liquidation en cours) ». Le tableau le range en cinq natures. Elles ne recoupent pas les modes du bilan global (@sec-ep-cessions-modes) : le recueil ne dit ni la part de l'État avant et après l'opération, ni si la société quitte le secteur public, et il range aussi des ventes d'actifs par des entreprises qui restent publiques.
 - **Les cimenteries, 1998-2000.** La vente de trois cimenteries fait 720,4 MD : Ciment Jebel Ouest (241,3 MD) et Ciment d'Enfidha (168,0 MD) en 1998, Ciment de Gabès (311,1 MD) en 2000.
 - **Le recueil et le relevé annuel.** De 2000 à 2007, le produit des opérations d'une année s'écarte de moins de 5 MD des recettes du relevé annuel. Il est inférieur de 33,5 MD en 1998 et de 148,6 MD en 2008 ; il est supérieur de 19,6 MD en 1999, et proche alors du relevé arrêté à 2005 (68,9 MD) plutôt que de celui arrêté à 2009 (43,5 MD).
-- **Deux décomptes des concessions.** Le recueil compte six sociétés concédées de 1998 à 2008 ; le bilan global, cinq concessions de 1987 à 2009.
+- **Deux décomptes des concessions.** De 1998 à 2008, le recueil range des concessions sous six noms : l'Office national des pêches (quatre lacs), Lac Nord, la SOCOMENA, le Parc La Soukra, Freeshop et la seconde licence de téléphonie mobile. Le bilan global compte cinq entreprises au mode « concession » de 1987 à 2009.
 
-<!-- TODO (documentaliste) : écart du recueil et du bilan global sur les concessions (6 sociétés au recueil 1998-2008 contre 5 au bilan 1987-2009) et écarts annuels 1998, 1999 et 2008 avec le relevé annuel — rapports annuels de la Direction générale de la privatisation, s'ils existent, ou demande à la Direction. -->
+<!-- TODO (documentaliste) : écart du recueil et du bilan global sur les concessions (6 sociétés au recueil 1998-2008 contre 5 au bilan 1987-2009) et écarts annuels 1998, 1999 et 2008 avec le relevé annuel — captures anciennes du site de la Direction générale de la privatisation (privatisation.gov.tn) aux archives du web, pour dater l'arrêt du recueil et expliquer l'écart de 2008, puis rapports annuels de la Direction. -->
 
 :::: {.chronologie-repliable titre="Opérations de privatisation et de restructuration, 1998-2008 : les 162 lignes du recueil, par secteur, avec l'année, la nature de l'acte, l'intitulé du mode et le produit ; sociétés et produit par nature"}
 
