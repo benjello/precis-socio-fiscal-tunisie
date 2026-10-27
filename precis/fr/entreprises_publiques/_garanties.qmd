@@ -121,7 +121,7 @@ import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import listes as ls
 ls.figure_plafond(
     caption=("Plafond de la garantie de l'État fixé par la loi de finances, en millions de "
-             "dinars courants, en % du PIB et en % du budget de l'État, 1959-60 à 2015"),
+             "dinars courants, en % du PIB et en % du budget de l'État"),
     note_lecture=(
         "Chaque point est le montant que la loi de finances de la gestion fixe pour l'année ; la flèche et le losange orange sont le montant auquel une loi postérieure porte ce plafond au cours de la même gestion. "
         "Dans la première vue, l'axe vertical est logarithmique : un même écart de hauteur est un même rapport de montants. "
