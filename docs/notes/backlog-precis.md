@@ -3579,6 +3579,20 @@ les dinars constants sont retirés du volume.
 
 Ce qui reste :
 
+- **Chapitre « Restructurer » (`_restructuration.qmd`, `#sec-ep-restructuration`), ouvert le 28 octobre 2026**
+  sur la note `docs/notes/restructuration-textes-2026-10-28.md` : fonds de restructuration du capital (1986-2010,
+  série 2004-2011 et extinction 2018-2024), reprise des dettes bancaires de 1999, banques publiques 2013-2019,
+  Tunisair et sociétés de transport 2014-2019 ; vingt textes lus au registre. **Restent** : réalisation du fonds
+  1986-2003 (rapports de clôture absents ; lois de règlement, rapports de la Banque centrale) ; recettes du fonds
+  2012-2016 (annexes de recettes non lues ; rapport 2012 à couche texte déformée, **à lire à l'image**) ; traitement
+  du prélèvement sur le compte des jetons de présence dans les recettes de 2007, 2008 et 2010 ; prélèvements de
+  2004, 2006 et 2011 (fiche `r-ep-fonds-restructuration-prelevements` ; loi n° 2004-87 **lisible dans le corpus**) ;
+  tableau « G » de la loi n° 98-111 (**lisible dans le corpus**) ; décret du fonds de modernisation du secteur
+  bancaire (fiche `r-ep-fonds-modernisation-bancaire-decret`) ; montants souscrits par banque et emploi des
+  133 MD non répartis en 2015 (rapport annexé aux lois de finances, rapports annuels de la STB et de la BH,
+  **à obtenir**) ; ligne « assainissement et restructuration » de 2016 (rapport de clôture de 2016, **à lire à
+  l'image**) ; pages du rapport de clôture de 2005, citées au fichier ; section « Ce qu'en dit l'économie »
+  (recapitalisation bancaire), pas encore écrite.
 - **2010-2024 : quatre flux de clôture et l'encours garanti, versés les 24 et 27 octobre 2026** (série
   `cdc-cloture-entreprises-publiques` de `tunisia-data`, prolongée le 27 octobre sur la branche
   `donnees/cdc-cloture-2017-2024` ; section `#sec-ep-lp-cloture`, figure `fig-ep-cdc`, trois tableaux repliés ;
