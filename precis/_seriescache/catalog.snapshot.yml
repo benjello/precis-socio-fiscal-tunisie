@@ -5536,14 +5536,22 @@
     DÉCALÉE : rien en 2005 (part de l''exercice 2004, 148,4 MD, gardée au compte de
     trésorerie « مقابيض للحفظ ») ; 373,6 MD en 2006 pour les exercices 2004 et 2005
     ; rien en 2009 (part de l''exercice 2008, 432 MD, non appelée et reportée au budget
-    de 2011) ; 811 MD de bénéfices de 2008 de la Compagnie des phosphates de Gafsa
-    et du Groupe chimique tunisien gardés hors budget en 2009 (rapport 2009, p. 24)
-    : les montants sont ceux que le budget inscrit, non les bénéfices de l''année.
-    Aucune révision entre rapports. Ligne des excédents pétroliers : 45 MD en 2003,
-    imprimée dans les rapports 2005 et 2006 seulement. Rapport 2005 sans folio sur
-    ces pages : page du fichier. Libellés des rapports 2005, 2006 et 2009 tirés de
-    la couche texte (police arabe non incorporée), chiffres lus à l''image. Rapport
-    de la gestion 2008 absent du catalogue de la Cour.'
+    de 2011) ; selon la Cour, 811 MD de bénéfices de 2008 de la Compagnie des phosphates
+    de Gafsa et du Groupe chimique tunisien gardés hors budget en 2009 (rapport 2009,
+    p. 24 ; la Banque centrale cite au moins 605 et 211 MD reçus par le Trésor en
+    2009 au titre de 2008) : les montants sont ceux que le budget inscrit, non les
+    bénéfices de l''année. Aucune révision entre rapports. VENTILATION DE LA COUR
+    : en 2008 et 2009, la Cour range parmi les bénéfices des sociétés non pétrolières
+    48,0 et 136,7 MD que le ministère des Finances (articles 30-013 et 30-015 du budget)
+    compte parmi les excédents des entreprises publiques ; sommes identiques ; la
+    série garde la ventilation de la Cour. Revenus des participations de la Banque
+    centrale et du ministère = total moins autres profits du Trésor, 2003-2010 (803,8
+    MD imprimés pour 2009 dans le rapport 2009 : réalisation provisoire, 788,6 ensuite).
+    Ligne des excédents pétroliers : 45 MD en 2003, imprimée dans les rapports 2005
+    et 2006 seulement. Rapport 2005 sans folio sur ces pages : page du fichier. Libellés
+    des rapports 2005, 2006 et 2009 tirés de la couche texte (police arabe non incorporée),
+    chiffres lus à l''image. Rapport de la gestion 2008 absent du catalogue de la
+    Cour.'
   titre_ar: 'تقارير دائرة المحاسبات عن غلق ميزانية الدولة، التصرفات 2005 إلى 2009:
     تحويلات المنشآت العمومية ومرابيح الخزينة، 2003-2009'
   unite_ar: بالدينار الجاري (قيم صحيحة) وبملايين الدنانير الجارية
@@ -5581,6 +5589,7 @@
   - bct-ra-2023
   - bct-ra-2024
   - bct-ra-2025
+  - bct-etats-financiers-2007
   build: uv run python scripts/build_versements_budget_2003_2009.py
   raw:
   - sources/transcriptions/bct-part-etat-benefices.csv
@@ -5589,7 +5598,8 @@
     (valeur_md)
   perimetre: répartition du résultat de l'exercice approuvée par le Conseil d'administration
     de la Banque centrale (résultat de l'exercice, part revenant à l'État), rapports
-    annuels 2002 à 2006 et 2008 à 2025 (exercices 2002-2006 et 2008-2025) ; partage
+    annuels 2002 à 2006 et 2008 à 2025 (exercices 2002-2006 et 2008-2025), états financiers
+    de l'exercice 2007 publiés au Journal officiel (n° 33 du 22 avril 2008) ; partage
     des exercices 1999 à 2001 (rapport 2002) et 2003 (rapport 2004) entre le budget
     et le Fonds de péréquation des changes ; versements au Trésor cités dans le texte
     avec leur année (exercices 2002, 2006, 2007 et 2010) ; reliquat de l'exercice
@@ -5599,20 +5609,25 @@
     et 2010 en 2011) et pas toujours en entier (budget 2003 : 120 MD pour 125 ; 2004
     : 100 pour 104,5, le reste au Fonds de péréquation des changes ; 2006 : 373,6
     pour 148,4 + 235,6 ; 2007 : 340,38 pour 350,38 ; 2008 : 425 pour 435 ; 2011 :
-    874 pour 432 + 250 + 228,7 = 910,7, dont 28,7 restés en compte d''ordre fin 2011
-    et 882 budgétisés selon la Banque centrale ; 2012 : 265,3 pour 251,6 ; 2013 :
-    190,6 pour 205,6 ; 2014 : 176,8 pour 186,8 ; 2016 : 194 pour 204). Égalité entre
-    la part de l''exercice N et la ligne de la Cour pour la gestion N+1 en 2015 et
-    de 2017 à 2024 (à un dinar près en 2018 et 2020). Exercices 1999-2001 : seul le
-    partage budget / Fonds de péréquation est imprimé, pas le résultat. Exercice 2007
-    : répartition non imprimée dans le rapport 2007 ; montant encaissé arrondi (435
-    MDT) cité par le rapport 2008. Montants cités dans le texte arrondis au million
-    de dinars.'
+    874 selon la Cour pour 432 + 250 + 228,7 = 910,7, dont 28,7 restés en compte d''ordre
+    fin 2011 et 882 budgétisés selon la Banque centrale et le ministère des Finances,
+    8 MD de divergence sans texte ; 2012 : 265,3 pour 251,6 ; 2013 : 190,6 pour 205,6
+    ; 2014 : 176,8 pour 186,8 ; 2016 : 194 pour 204). Égalité entre la part de l''exercice
+    N et la ligne de la Cour pour la gestion N+1 en 2015 et de 2017 à 2024 (à un dinar
+    près en 2018 et 2020). Exercices 1999-2001 : seul le partage budget / Fonds de
+    péréquation est imprimé, pas le résultat. Retenue au profit du Fonds de péréquation
+    des changes (loi n° 2000-98, art. 34 : montant fixé par le ministre des Finances)
+    attestée pour les exercices 1999-2001 et 2003 ; les écarts de 2002 et 2004-2007
+    lui sont compatibles, sans montant lu. Exercice 2007 : répartition absente du
+    rapport 2007, lue dans les états financiers publiés au Journal officiel (n° 33
+    du 22 avril 2008, p. 1294), égale au montant encaissé cité par le rapport 2008.
+    Montants cités dans le texte arrondis au million de dinars.'
   titre_ar: 'البنك المركزي التونسي: المناب الراجع للدولة من نتيجة السنة المحاسبية،
     1999-2025'
   unite_ar: بالدينار الجاري وبملايين الدنانير الجارية
   perimetre_ar: توزيع نتيجة السنة المحاسبية كما صادق عليه مجلس إدارة البنك المركزي،
-    التقارير السنوية 2002-2006 و2008-2025
+    التقارير السنوية 2002-2006 و2008-2025، والقوائم المالية لسنة 2007 المنشورة بالرائد
+    الرسمي
   caveats_ar: 'حسب السنة المحاسبية للبنك لا حسب سنة الميزانية: يُدرج مناب السنة ن
     في ميزانية ن+1 أو بعدها.'
   fiche: sources/bct-part-etat-benefices.md
