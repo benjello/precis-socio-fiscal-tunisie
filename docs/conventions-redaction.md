@@ -231,10 +231,10 @@ rôle applique.
 | Partie | Livres | Principe |
 |---|---|---|
 | I. Les revenus primaires | Le marché du travail ; les rémunérations publiques | flux |
-| II. Les prélèvements | La fiscalité ; les finances locales ; le financement et les caisses de la sécurité sociale | flux |
+| II. Les prélèvements | La fiscalité ; les finances locales ; les cotisations sociales | flux |
 | III. Les transferts en espèces | Les retraites ; les prestations sociales | flux |
 | IV. Les politiques sectorielles | La santé ; la compensation ; l'éducation ; plus tard le transport, le logement, l'environnement | secteur |
-| V. Les institutions | Les entreprises publiques | institution |
+| V. Les institutions | Les caisses de sécurité sociale ; les entreprises publiques | institution |
 | VI. La synthèse | Le cadre des finances publiques ; la redistribution | ensemble |
 
 **La règle de domicile entre livres.** Un dispositif vit dans un seul livre ; l'autre en reçoit

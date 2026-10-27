@@ -11,14 +11,14 @@ cesse de couper deux fois. Plan à lancer plus tard, phase par phase, une PR par
 | Partie | Livres | Principe |
 |---|---|---|
 | I. Les revenus primaires | Le marché du travail ; Les rémunérations publiques | flux |
-| II. Les prélèvements | La fiscalité ; Les finances locales ; Le financement et les caisses de la sécurité sociale | flux |
+| II. Les prélèvements | La fiscalité ; Les finances locales ; Les cotisations sociales | flux |
 | III. Les transferts en espèces | Les retraites ; Les prestations sociales | flux |
 | IV. Les politiques sectorielles | La santé ; La compensation (énergie et prix) ; L'éducation ; plus tard : le transport, le logement, l'environnement | secteur |
-| V. Les institutions | Les entreprises publiques | institution |
+| V. Les institutions | Les caisses de sécurité sociale ; Les entreprises publiques | institution |
 | VI. La synthèse | Le cadre des finances publiques ; La redistribution | ensemble |
 
-Le livre « Le financement et les caisses » est rangé en II parce que son objet premier est ce
-qui est prélevé ; il porte aussi les caisses comme institutions. Les finances locales restent
+Les cotisations sociales sont rangées en II parce que leur objet est ce qui est prélevé ; les caisses
+de sécurité sociale, qui sont des institutions, sont rangées en V (décision du 27 octobre 2026). Les finances locales restent
 en II, avec leurs chapitres sur les collectivités. La santé et la compensation sont des livres
 de politique sectorielle : ils tiennent ce qui n'existe que pour leur secteur et renvoient aux
 livres de flux pour les instruments généraux.

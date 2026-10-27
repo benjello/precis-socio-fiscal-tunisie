@@ -14,15 +14,15 @@ format:
 Ce précis analyse les politiques publiques de la Tunisie, principalement depuis l'indépendance, en 1956, sous quatre angles : leur histoire ; les textes qui les mettent en œuvre, chacun rattaché à sa source au *Journal officiel* ; les chiffres et les faits qui les caractérisent, quand des séries existent ; et ce qu'en disent les enseignements de l'économie publique. Il s'adresse aux juristes, aux économistes et aux responsables de politiques publiques.
 :::
 
-## Les six parties
+## Les parties
 
-Le précis range ses volumes selon ce que leur texte documente : les revenus que la loi fixe, ce qu'elle prélève, ce qu'elle sert en espèces, les politiques d'un secteur, les institutions, puis l'ensemble.
-
-Un dispositif vit dans un seul volume, et les autres y renvoient. Ce qui est prélevé (taux, assiette, ventilation entre branches), l'organisme qui le gère et ses comptes se lisent dans les volumes des cotisations et des caisses de sécurité sociale. Ce qui est servi en espèces (pension, allocation, indemnité) se lit dans les retraites ou les prestations sociales ; les soins, dans la santé ; un prix ou un tarif administré, dans la compensation ; une règle de salaire, dans le marché du travail ou les rémunérations publiques ; le statut et les comptes d'une entreprise publique, dans les entreprises publiques. Un dispositif qui n'existe que pour un secteur vit dans le volume de ce secteur ; un cas d'un instrument général vit dans le volume de l'instrument.
+Le précis est organisé en grandes parties, qui vont des revenus aux prélèvements, aux transferts, aux politiques sectorielles et aux institutions. Le rangement des volumes et les règles de lecture sont dans la page [Comment lire ce précis](comment-lire.html) ; les sources et la manière dont le précis est constitué, dans [Comment ce précis est constitué](comment-constitue.html).
 
 ::: {.sommaire-parties}
 
 ### I. Les revenus primaires
+
+Ce que gagnent ceux qui travaillent : le salaire minimum et la négociation salariale dans le secteur privé, la rémunération des agents de l'État.
 
 - [Le marché du travail](./marche_travail/)
 
@@ -33,6 +33,8 @@ Un dispositif vit dans un seul volume, et les autres y renvoient. Ce qui est pr�
   Le périmètre du secteur public, puis, régime par régime, la construction de la rémunération des agents et les prélèvements qui la frappent.
 
 ### II. Les prélèvements
+
+Ce que l'État et les collectivités prélèvent, et ce qui finance la protection sociale : les impôts, les budgets locaux, les cotisations.
 
 - [La fiscalité](./fiscalite/)
 
@@ -46,11 +48,9 @@ Un dispositif vit dans un seul volume, et les autres y renvoient. Ce qui est pr�
 
   Qui cotise, sur quelle assiette et à quel taux : le cadre commun, chaque branche des origines à l'état actuel, et ce qui distingue les régimes.
 
-- [Les caisses de sécurité sociale](./caisses/)
-
-  La CNSS, la CNRPS et la CNAM : les caisses dont elles procèdent depuis le Protectorat, leur statut commun, leurs comptes par régime et leurs relations avec l'État.
-
 ### III. Les transferts en espèces
+
+Ce que l'État sert en espèces aux ménages : les pensions et les prestations sociales.
 
 - [Les retraites](./retraites/)
 
@@ -61,6 +61,8 @@ Un dispositif vit dans un seul volume, et les autres y renvoient. Ce qui est pr�
   Les prestations autres que les pensions : celles que servent les caisses de sécurité sociale, et celles de l'assistance sociale, attribuées sous condition de ressources.
 
 ### IV. Les politiques sectorielles
+
+Les politiques d'un secteur : la santé, la compensation des prix, l'éducation et la formation.
 
 - [La santé](./sante/)
 
@@ -78,26 +80,22 @@ Un dispositif vit dans un seul volume, et les autres y renvoient. Ce qui est pr�
 
 ### V. Les institutions
 
+Les entités publiques elles-mêmes : les caisses de sécurité sociale et les entreprises publiques, leur statut, leurs comptes et leur relation financière avec l'État.
+
+- [Les caisses de sécurité sociale](./caisses/)
+
+  La CNSS, la CNRPS et la CNAM : les caisses dont elles procèdent depuis le Protectorat, leur statut commun, leurs comptes par régime et leurs relations avec l'État.
+
 - [Les entreprises publiques](./entreprises_publiques/)
 
   La relation financière entre l'État et les entreprises publiques : ce que le budget leur verse, ce que l'État garantit de leur dette, ce que l'État et elles se doivent, ce qu'elles lui versent, et ce que l'État a tiré de leur cession. Ce volume, un premier jet, n'existe pour l'instant qu'en français.
 
+<!-- TODO (rédacteur) : rétablir la partie VI quand ses volumes existent.
+
 ### VI. La synthèse
 
 - [Le cadre des finances publiques]{.a-venir} et [la redistribution]{.a-venir} : à venir.
-
-:::
-
-## Comment lire ce précis
-
-::: {.lecture-precis}
-
-- Chaque règle est rattachée au texte qui la fixe ; la bibliographie lie les textes à leur publication au *Journal officiel de la République tunisienne*, sur `pist.tn`.
-- Les tableaux de paramètres donnent des valeurs datées ; leur onglet « Base législative » mène, pour chaque grandeur, à toutes ses valeurs datées et à leurs références.
-- Chaque volume se clôt sur un glossaire bilingue, français et arabe.
-- En Tunisie, le droit fait foi dans sa version arabe : les lois, décrets-lois, décrets et arrêtés sont publiés au *Journal officiel* en langue arabe, et leur publication dans une autre langue ne vaut qu'à titre d'information ([loi n° 93-64 du 5 juillet 1993, art. 1er](https://www.pist.tn/jort/1993/1993F/Jo05093.pdf)). Pour appliquer une règle, c'est donc le texte arabe qu'il faut lire.
-- Le précis, lui, est rédigé en français, puis traduit en arabe automatiquement et contrôlé : entre ses deux versions, c'est le texte français du précis qui sert de référence. Une traduction peut comporter des erreurs ; signalez-les (voir ci-dessous).
-- Une grandeur rapportée au produit intérieur brut dépend de la base des comptes nationaux dans laquelle ce PIB est établi : l'annexe [Le PIB et ses changements de base](annexe-pib.html) dit quelles bases se sont succédé, de combien elles s'écartent, et comment le précis signale une rupture de série.
+-->
 
 :::
 
