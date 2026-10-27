@@ -3601,9 +3601,33 @@ Ce qui reste :
   intérêts de 2012 à 2014 lus à la couche texte (recoupés d'un rapport à l'autre) ; rapport de l'Unité de suivi
   (Présidence du gouvernement) que cite le Livre blanc, non obtenu (fiche `r-ep-rapport-unite-suivi-2010-2014`).
   PIB : base 2015, rétropolée par l'INS pour 2010-2014, dite sous la figure.
+- **2003-2009 : versements au budget ; part de l'État dans le résultat de la Banque centrale, 2002-2010 — versés
+  le 27 octobre 2026** (séries `cdc-cloture-entreprises-publiques-2003-2009` et `bct-part-etat-benefices` de
+  `tunisia-data`, branche `donnees/cdc-cloture-2003-2009`, empilée sur `donnees/cdc-cloture-2017-2024` ; section
+  `#sec-ep-versements` du chapitre « Ce que l'État reçoit » (`_recettes.qmd`), figure `fig-ep-versements` de 2003 à
+  2024, tableaux repliés `tbl-ep-versements-anciens` et `tbl-ep-bct-parts`). Rapports de clôture des gestions 2005,
+  2006, 2007 et 2009 (chacun avec les deux gestions précédentes ; 2008 par le rapport 2009), lus à l'image ; aucune
+  révision d'un rapport à l'autre. Rapports annuels de la Banque centrale 2002-2010, répartition du résultat lue à
+  l'image. **Restent** : (1) écarts entre la part arrêtée par la Banque centrale et le montant inscrit au budget
+  (5 MD pour l'exercice 2002, 10,4 pour 2004-2005, 10 pour 2006, 10 pour 2007, 36,7 pour 2008-2010 ; seul celui de 2003 est expliqué :
+  Fonds de péréquation des changes, rapport annuel 2004, p. 170) — rapports annuels 2003, 2007, 2008 et 2011 et lois
+  de règlement, lisibles dans `tunisia-data` (couche texte propre) ; TODO dans la section ; (2) répartition du
+  résultat de l'exercice 2007, non imprimée dans le rapport 2007 (montant encaissé de 435 MD seulement, rapport
+  2008, p. 218) ; (3) dans les rapports de clôture 2005-2009 : principal et intérêts de la dette garantie,
+  remboursements de prêts, recettes de privatisation, fonds spéciaux — lisibles (couche texte des rapports 2005,
+  2006 et 2009 propre ; rapport 2007 à lire à l'image, couche texte aux chiffres décalés) ; (4) gestions 2008 (sauf
+  la recette des transferts, par le rapport 2009) et antérieures à 2003 : aucun rapport de clôture au catalogue de
+  la Cour ; (5) « revenus des participations » de la Banque centrale (rapports annuels, chapitre des finances
+  publiques) : égaux au total de la Cour moins les autres profits du Trésor pour 2003-2008, 803,8 MD contre
+  788,6 MD pour 2009 ; donnent 1999-2002 (rapports 2001 et 2003, couche texte) et sans doute plus tôt (rapports
+  1979-2000 à océriser) : série à part, à verser sans la chaîner à celle de la Cour ; (6) part de l'État dans le
+  résultat de la Banque centrale avant 2002 (répartition 1999-2001 imprimée dans le rapport 2002 ; rapports
+  1959-1978 en couche texte, 1979-2000 à océriser) et de 2011 à 2024 (rapports 2011-2014 et 2015-2025 dans
+  l'archive). PIB du ministère des Finances (2003-2004 sans base, 2005-2009 base 1997) puis INS base 2015, ruptures
+  marquées sur la figure.
 - **Avant 1987, et avant 2016 pour les transferts par entreprise et l'encours de la dette garantie** : rien
   (fiche `r-ep-series-budgetaires-avant-2016`, passe du 24 octobre 2026, résultat partiel). Pistes non
-  ouvertes : rapports annuels de la Banque centrale, lois de règlement du Journal officiel, Cour des comptes
+  ouvertes : rapports annuels de la Banque centrale (ouverts le 27 octobre 2026 pour sa seule part de l'État, 2002-2010), lois de règlement du Journal officiel, Cour des comptes
   (dette publique extérieure, 2018), plans de développement. Le plafond des garanties est lu de 1958-59 à 2015
   (voir le point « Plafond légal » plus bas). Recettes de cession : 1987-2009 (Direction générale de la
   privatisation) et 2010-2016 (clôture) ; rien depuis 2017.
