@@ -6,6 +6,7 @@
     ge.figure("steg_comptes", …) ; ge.figure("etap_rapports", …)  # comptes publiés
     ge.figure("steg_fiches", …)                             # fiche du ministère, 2018-2023
     ge.figure("stir_budget", …)                             # STIR : transferts, résultat, emploi
+    ge.figure("stir_fiches", …)                             # STIR : fiche du ministère, 2018-2023
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -643,7 +644,7 @@ def _case_fiche(f, x, e, ind):
 def fig_fiche(entite: str):
     figtools.apply_lang_font()
     f = _fiches(entite)
-    nom = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT"}.get(entite, entite)
+    nom = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR"}.get(entite, entite)
     exercices = sorted(int(x) for x in f["exercice"].unique())
     der = {x: f[f["exercice"] == x]["edition"].max() for x in exercices}
     statut = {x: f[(f["exercice"] == x) & (f["edition"] == der[x])]["statut"].iloc[0]
@@ -899,6 +900,8 @@ FIGURES = {
                     "fig_ep_etap_fiches"),
     "sncft_fiches": (lambda: fig_fiche("sncft"), lambda: table_fiche("sncft"), (S_FICHES,),
                      "fig_ep_sncft_fiches"),
+    "stir_fiches": (lambda: fig_fiche("stir"), lambda: table_fiche("stir"), (S_FICHES,),
+                    "fig_ep_stir_fiches"),
     "stir_budget": (fig_stir_budget, table_stir_budget,
                     (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_stir_budget"),
 }
