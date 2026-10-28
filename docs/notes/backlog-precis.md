@@ -3699,8 +3699,11 @@ Ce qui reste :
   transport public, comptée avec les autres concours aux sociétés de transport (tableaux par
   établissement et par nature, **lisibles dans le corpus de tunisia-data**) ; le bénéficiaire de
   l'écart de 191 à 307 MD par an entre le poste « produits de base » et l'Office des céréales et
-  l'Office de l'huile ; la nature des transferts à l'Office de l'huile (subvention ou financement des
-  achats d'huile d'olive).
+  l'Office de l'huile ; la nature des transferts à l'Office de l'huile : en partie établie le
+  28 octobre 2026 (`#sec-ep-ge-onh` : subvention d'exploitation égale aux transferts en 2022,
+  inférieure de 10 à 39 MD de 2018 à 2021 ; approvisionnement en huile végétale subventionnée « pour
+  le compte de l'Etat », titre III du budget de l'Office depuis le décret n° 2000-2579) ; la part
+  des achats d'huile d'olive reste à établir.
 - **Fiches par entreprise : STEG, ETAP et SNCFT versées le 27 octobre 2026** (chapitres
   `_energie.qmd`, sections `#sec-ep-steg` et `#sec-ep-etap`, et `_grandes_entreprises.qmd`, section
   `#sec-ep-sncft` ; séries
@@ -3714,7 +3717,7 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Transtu, Office national de l'huile, CPG, Groupe chimique, Tunisie Télécom, Poste, Office du
+  - les autres grandes entreprises (Transtu, CPG, Groupe chimique, Tunisie Télécom, Poste, Office du
     commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
@@ -3873,6 +3876,36 @@ Ce qui reste :
     (annexe 8, bloc du ministère des Finances) ;
   - grandeurs d'activité des fiches (passagers, marchandises ; ventes et production de tabac) non
     relevées ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés.
+- **Office national de l'huile — section écrite le 28 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-onh`, après l'ONAS et avant la SNCFT, comme demandé ; l'intro du chapitre ne dit plus
+  que les entreprises sont rangées dans l'ordre des transferts, l'ONH recevant plus que la SONEDE et
+  l'ONAS). Figures `fig-ep-onh-budget` et `fig-ep-onh-fiches`, tableaux repliés `tbl-ep-onh-fiche-a`
+  et `-b`. **Fiche du ministère des Finances versée le 28 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-onh`, code
+  `office_huile`) : LF 2022 p. 75, LF 2024 p. 112, LF 2025 p. 89, lues à l'image (300 dpi) et
+  retrouvées dans la couche texte. 2022 provisoire dans les deux éditions, fortement révisé (actifs
+  280,0 puis 525,0 MD) ; bilan 2022 de l'édition LF 2024 déséquilibré de 145,0 MD (écart déclaré) ;
+  total des passifs 2023 en case vide (LF 2025). Principal de dette garantie payé par l'État 2013-2023
+  (Cour des comptes, 70,4 MD) dit à part. Registre `tbl-ep-registre-onh`, lu au corpus local :
+  décret-loi n° 62-24 (création, p. 1075-1077, image) ; loi n° 69-51 (dissolution, p. 912, image) ;
+  loi de finances pour 1970, art. 35 (reconstitution au 26 juillet 1969, p. 1503, image) ; décret-loi
+  n° 70-13 (monopole, p. 1348-1349, image) ; loi n° 94-37 (fin du monopole) ; décret n° 94-1166
+  (exportation libre hors quota de l'Union européenne) ; loi de finances pour 1995, art. 90 ; arrêté
+  du 8 janvier 1996 ; décret n° 2000-2579 (couche texte décalée, décodée) ; loi n° 2006-52 (prêt
+  GSM 102) ; décret n° 2011-4798 (édition arabe, image). Loi de finances pour 1997, art. 17 :
+  renvoi au registre de l'Office des céréales. Glossaire : `onh`.
+  **Reste** :
+  - prêt garanti dont l'État paie le principal de 2013 à 2023 : **non identifié** ;
+  - texte de la concession d'approvisionnement en huile végétale subventionnée : **non identifié** ;
+  - textes **dans le corpus local, non lus** : loi n° 62-61, décret n° 68-19, loi n° 70-53, décret
+    n° 71-337 et ses modificatifs, statut du personnel, organigramme, décret n° 2006-2455, décrets
+    sur l'exportation dans le quota de l'Union européenne (2011-2022), arrêté du 4 décembre 2023 ;
+  - éditions arabes 2012-2016 du JORT et environ la moitié de 2017-2026 sans couche texte : la
+    recherche des garanties et compensations après 2011 n'y a pas porté (**OCR à faire**) ;
+  - éditions françaises LF 2020 (p. 110-111) et LF 2021 (p. 106-107) : comptes et activité dans la
+    prose, non versés ; grandeurs d'activité des fiches (huile végétale subventionnée en MD et en
+    tonnes) non relevées ;
+  - comptes publiés et contrat-programme de l'Office : **à obtenir**.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la

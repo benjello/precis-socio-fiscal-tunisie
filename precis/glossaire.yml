@@ -18442,3 +18442,27 @@ entries:
         مؤسسة عمومية أُحدثت سنة 1964، تستغلّ لفائدة الدولة الاحتكار الجبائي للتبغ
         والوقيد وأوراق اللعب. وهي تحت إشراف وزارة المالية.
       synonymes: []
+  - id: onh
+    acronyme: ONH
+    statut: valide
+    references: [dl62-24-onh, dl70-13-onh, loi94-37-onh, minfin-ep-2024]
+    source_definition: {ref: dl70-13-onh, locator: "art. 1er et 2"}
+    # AR : intitulé « الديوان الوطني للزيت » de la fiche de l'Office dans le rapport sur les
+    # entreprises publiques, édition LF 2024, p. 112.
+    source_traduction: {ref: minfin-ep-2024, locator: "p. 112"}
+    voir_aussi: [office-cereales]
+    fr:
+      terme: Office national de l'huile
+      definition: >
+        Établissement public créé en 1962, qui achète, importe et vend l'huile végétale
+        subventionnée et intervient sur le marché de l'huile d'olive. Il a eu de 1970 à 1994
+        le monopole de l'achat de l'huile d'olive à la production, de son exportation et de
+        l'importation des huiles végétales comestibles.
+      synonymes: []
+    ar:
+      terme: الديوان الوطني للزيت
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 1962، تتولّى شراء الزيت النباتي المدعّم وتوريده وبيعه وتتدخّل
+        في سوق زيت الزيتون. وكان لها من سنة 1970 إلى سنة 1994 احتكار شراء زيت الزيتون من
+        المنتجين وتصديره وتوريد الزيوت النباتية الغذائية.
+      synonymes: []
