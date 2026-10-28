@@ -5051,6 +5051,7 @@ Note documentaire : `docs/notes/informel-sources-2026-10-28.md` (textes de la CI
 
 - Écrit : définitions (trois textes), six familles de mesure, estimations par groupe (enquête emploi, solde, valeur ajoutée, macroéconomie, Banque mondiale).
 - Thèse de Ben Cheikh (2021) lue (note `docs/notes/informel-these-ben-cheikh-2026-10-28.md`) : série 2005-2018 ajoutée au tableau du solde ; la thèse donne deux valeurs pour 2018 (25,2 % et 26,9 %) sans les départager ; ligne de catalogue de `tunisia-data` à inscrire (fichier rangé, SHA-256 519efb04…b06d).
+- Chapitre « La couverture sociale des informels » (`_couverture.qmd`, 28 octobre 2026) écrit d'après la thèse de Ben Cheikh, attribué à l'auteur ; références de loi rapportées par la thèse, à vérifier au JORT dans les volumes « Caisses » et « Cotisations » ; pas de figure (séries de couverture à six points).
 - Informel retiré du marché du travail le 28 octobre 2026 (section des notions, plan, renvoi du temps de travail).
 - À obtenir : Ben Cheikh et Moisseron 2021 (chapitre payant ; ses valeurs 25,2 % et 25,8 % sont dans la thèse) ; version française de la résolution de 2023 ; FMI DP/2022/011 et Medina-Schneider 2018 (serveur du FMI en 403) ; ITCEQ 2017 ; OCDE ECO WP 1486 ; enquête micro-entreprises postérieure à 2016 ; note INS du 2e trimestre 2020 sans couche texte.
 - À lire à l'image : figure 11 du rapport PNUD-OIT (étiquette de 2018) ; tableau 12 de CRES-BAD ; annexe de la 17e CIST.
