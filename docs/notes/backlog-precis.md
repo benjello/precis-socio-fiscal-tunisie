@@ -3717,7 +3717,7 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Tunisair, Transtu, CPG, Groupe chimique, Tunisie Télécom, Poste, RNTA, Office du
+  - les autres grandes entreprises (Transtu, CPG, Groupe chimique, Tunisie Télécom, Poste, Office du
     commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
@@ -3845,6 +3845,37 @@ Ce qui reste :
     comptes dans la prose, non versés ; grandeurs d'activité des fiches (eau facturée, redevances,
     raccordements) non relevées ;
   - comptes publiés et contrats-programmes des deux entreprises : **à obtenir**.
+- **Tunisair et RNTA — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-tunisair` et `#sec-ep-ge-rnta`, après l'ONAS et avant la SNCFT). La RNTA est la
+  Régie nationale des **tabacs et des allumettes** (code `rnta` de toutes les séries, ministère des
+  Finances), non une régie des transports. Figures `fig-ep-{tunisair,rnta}-budget` et
+  `fig-ep-{tunisair,rnta}-fiches`, tableaux repliés `tbl-ep-{tunisair,rnta}-fiche-a` et `-b`.
+  **Fiches du ministère des Finances versées le 28 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiches-tunisair-rnta`) :
+  Tunisair LF 2022 p. 54, LF 2024 p. 81, LF 2025 p. 56 ; RNTA p. 50, 73 et 50 ; lues à l'image et
+  retrouvées dans la couche texte. Tunisair : bilan non imprimé en LF 2024 et LF 2025 (comptes
+  2020-2023 non approuvés), aucun exercice dit réalisé. RNTA : écarts imprimés déclarés (LF 2022 ;
+  signes « − » omis en LF 2024 ; fonds propres hors résultat en LF 2025). Registres
+  `tbl-ep-registre-tunisair` (lois n° 61-49, 74-70, 76-39, 77-16, 84-59, image ; lois de garantie
+  n° 94-48, 94-49, 94-105, 94-106, 95-39, 95-107, 2001-121, 2002-88, 2015-27 à 2015-29 ; décret
+  n° 2009-2211) et `tbl-ep-registre-rnta` (loi n° 64-57, image ; loi n° 70-23, image ; loi de
+  finances pour 1971, art. 33, image ; loi de finances pour 1983, art. 37 et 38, image, qui abroge
+  les exonérations de 1964 ; décret n° 88-67, image ; décret n° 2011-4396, édition arabe, image). Glossaire : `tunisair`, `rnta`.
+  **Reste** :
+  - dates de dépôt des JORT n° 38 de 1994, n° 104 de 1995 et n° 93 de 2011 (arabe) : **à lire à
+    l'image** ;
+  - Tunisair : décret du 18 juillet 1957 (JORT n° 59 de 1957, **absent du corpus local**, à
+    obtenir) ; statuts, part de l'État au capital, introduction en bourse ; lois de garantie de 1971
+    à 1992 (une quinzaine, liste dans le commentaire du chapitre) : **dans le corpus local**,
+    scannées pour la plupart ; décrets n° 2015-154 à 2015-156 (édition arabe) ; Tunisair Express
+    (textes non identifiés) ; rapport de la Cour des comptes sur la flotte (2018, au catalogue) ;
+  - RNTA : loi n° 93-53 (son article de promulgation abroge à nouveau l'article 30 de la loi
+    n° 64-57 ; lu à l'OCR, **à relire à l'image**) ; décrets n° 70-291, 74-917, 84-859, 85-1236
+    et modificatifs, 2001-2123 ; organigrammes ; textes sur la quote-part des recettes versée au
+    budget : **dans le corpus local**, non lus ; objet des transferts du budget de 2020 et 2022
+    (annexe 8, bloc du ministère des Finances) ;
+  - grandeurs d'activité des fiches (passagers, marchandises ; ventes et production de tabac) non
+    relevées ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés.
 - **Office national de l'huile — section écrite le 28 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-onh`, après l'ONAS et avant la SNCFT, comme demandé ; l'intro du chapitre ne dit plus
   que les entreprises sont rangées dans l'ordre des transferts, l'ONH recevant plus que la SONEDE et

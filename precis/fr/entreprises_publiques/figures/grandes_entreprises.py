@@ -10,6 +10,7 @@
     ge.figure("stir_fiches", …)                             # STIR : fiche du ministère, 2018-2023
     ge.figure("oc_budget", …) ; ge.figure("oc_fiches", …)   # Office des céréales, mêmes vues
     ge.figure("sonede_budget", …) ; ge.figure("onas_fiches", …)  # SONEDE, ONAS, mêmes vues
+    ge.figure("tunisair_budget", …) ; ge.figure("rnta_fiches", …)  # Tunisair, RNTA, mêmes vues
     ge.figure("onh_budget", …) ; ge.figure("onh_fiches", …)  # Office national de l'huile
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
@@ -647,6 +648,7 @@ def _case_fiche(f, x, e, ind):
 
 NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "office_cereales": "Office des céréales", "sonede": "SONEDE", "onas": "ONAS",
+              "tunisair": "Tunisair", "rnta": "RNTA",
               "office_huile": "Office national de l'huile"}
 
 
@@ -930,6 +932,15 @@ FIGURES = {
                     "fig_ep_onas_fiches"),
     "onas_budget": (lambda: fig_budget("onas", ROUGE), lambda: table_budget("onas"),
                     (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_onas_budget"),
+    "tunisair_fiches": (lambda: fig_fiche("tunisair"), lambda: table_fiche("tunisair"),
+                        (S_FICHES,), "fig_ep_tunisair_fiches"),
+    "tunisair_budget": (lambda: fig_budget("tunisair", BLEU, "provisoire, estimé ou probable"),
+                        lambda: table_budget("tunisair"),
+                        (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_tunisair_budget"),
+    "rnta_fiches": (lambda: fig_fiche("rnta"), lambda: table_fiche("rnta"), (S_FICHES,),
+                    "fig_ep_rnta_fiches"),
+    "rnta_budget": (lambda: fig_budget("rnta", ORANGE), lambda: table_budget("rnta"),
+                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_rnta_budget"),
     "onh_fiches": (lambda: fig_fiche("office_huile"), lambda: table_fiche("office_huile"),
                    (S_FICHES,), "fig_ep_onh_fiches"),
     "onh_budget": (lambda: fig_budget("office_huile", COULEURS_TRANSFERTS["office_huile"]),

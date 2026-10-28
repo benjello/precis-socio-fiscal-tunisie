@@ -512,6 +512,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Redevance de compensation | أتاوة الدعم |  |
 | Redevance de prestations douanières | الأتاوة على الخدمات الديوانية |  |
 | Redoublement | الرسوب |  |
+| Régie nationale des tabacs et des allumettes | الوكالة الوطنية للتبغ والوقيد | RNTA |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
 | Régime complémentaire | النظام التكميلي |  |
 | Régime conventionnel d'entreprise | النظام التعاقدي (التغطية الصحية) |  |
@@ -690,6 +691,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Travailleuse agricole | العاملة الفلاحية |  |
 | Travaux pénibles et insalubres | الأشغال الشاقّة وغير الصحّية |  |
 | Tribunal immobilier | المحكمة العقارية |  |
+| Tunisair | شركة الخطوط التونسية |  |
 | Tutelle | سلطة الإشراف |  |
 | Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
