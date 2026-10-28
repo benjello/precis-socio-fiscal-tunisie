@@ -15,7 +15,7 @@ Les estimations publiées de l'informel en Tunisie ne se superposent pas : elles
 
 : Les estimations de l'emploi informel tirées de l'enquête emploi {#tbl-inf-est-enquete}
 
-Pour le 2e trimestre 2019, l'INS et l'OIT partent de la même enquête et obtiennent 44,9 % et 36,9 %. L'écart tient à la différence des critères appliqués aux salariés, sans que les deux organismes le chiffrent. Dans la note de l'INS de 2019, la part de l'emploi informel va de 30,2 % chez les salariés à 87,6 % chez les travailleurs pour compte propre et 100 % chez les aides familiaux ; elle atteint 85,6 % dans l'agriculture et la pêche, 69,2 % dans le bâtiment et 64,7 % dans le commerce [@ins-2020-emploi-informel-2019, p. 3 et 5].
+Pour le 2e trimestre 2019, l'INS et l'OIT partent de la même enquête et obtiennent 44,9 % et 36,9 %. L'écart tient à la différence des critères appliqués aux salariés, sans que les deux organismes le chiffrent. Dans la note de l'INS de 2019, la part de l'[emploi informel](#g-emploi-informel) va de 30,2 % chez les salariés à 87,6 % chez les travailleurs pour compte propre et 100 % chez les aides familiaux ; elle atteint 85,6 % dans l'agriculture et la pêche, 69,2 % dans le bâtiment et 64,7 % dans le commerce [@ins-2020-emploi-informel-2019, p. 3 et 5].
 
 D'autres enquêtes donnent des niveaux plus élevés ou plus bas, avec d'autres critères. L'enquête TLMPS de 2014, traitée par l'OIT, donne 58,8 % de l'emploi total ; l'enquête budget-consommation de 2015 donne 40,2 % d'occupés non affiliés à un régime de sécurité sociale, critère d'affiliation déclarée [@elmekkaoui-et-al2022-erf1576, p. 6].
 
@@ -23,7 +23,7 @@ D'autres enquêtes donnent des niveaux plus élevés ou plus bas, avec d'autres 
 
 ## L'emploi informel par la méthode du solde {#sec-inf-est-solde}
 
-Deux études appliquent à la Tunisie la méthode du solde entre l'emploi observé et les affiliés à la sécurité sociale (voir [les sources administratives](./_mesures.html#sec-inf-mes-administratives)). Elles sont du même auteur, Nidhal Ben Cheikh, et leurs séries diffèrent d'une publication à l'autre.
+Deux études appliquent à la Tunisie la [méthode du solde](#g-methode-residuelle) entre l'emploi observé et les affiliés à la sécurité sociale (voir [les sources administratives](./_mesures.html#sec-inf-mes-administratives)). Elles sont du même auteur, Nidhal Ben Cheikh, et leurs séries diffèrent d'une publication à l'autre.
 
 | Étude | 2005 | 2010 ou 2011 | 2015 | 2018 | 2020 | Dénominateur |
 |---|---|---|---|---|---|---|
@@ -49,7 +49,7 @@ L'étude de 2016 donne aussi l'emploi de l'économie informelle rapporté à l'e
 
 : Les estimations de l'informel en part de la valeur ajoutée {#tbl-inf-est-va}
 
-Les comptes nationaux de base 2015 situent l'économie informelle à 27,4 % des revenus créés en 2015. Elle représente plus de 89 % de la valeur ajoutée marchande de l'agriculture, 20,8 % de celle de l'industrie, un peu plus de 57 % de celle du bâtiment et environ 40 % de celle des services marchands [@ins-2021-scnt-base-2015, p. 2]. Le changement de base relève le PIB de 2015 de 6 % (p. 1). La baisse de 30,7 % à 28,5 % entre 2017 et 2020 franchit ce changement de base : elle n'est pas une évolution. Le tableau de l'étude de 2016 mêle aussi deux bases. Sur les ruptures de base, voir l'[annexe sur le PIB](../annexe-pib.html).
+Les comptes nationaux de base 2015 situent l'[économie informelle](#g-economie-informelle) à 27,4 % des revenus créés en 2015. Elle représente plus de 89 % de la valeur ajoutée marchande de l'agriculture, 20,8 % de celle de l'industrie, un peu plus de 57 % de celle du bâtiment et environ 40 % de celle des services marchands [@ins-2021-scnt-base-2015, p. 2]. Le changement de base relève le PIB de 2015 de 6 % (p. 1). La baisse de 30,7 % à 28,5 % entre 2017 et 2020 franchit ce changement de base : elle n'est pas une évolution. Le tableau de l'étude de 2016 mêle aussi deux bases. Sur les ruptures de base, voir l'[annexe sur le PIB](../annexe-pib.html).
 
 ## Les estimations macroéconomiques {#sec-inf-est-macro}
 
@@ -57,7 +57,7 @@ Ces estimations portent sur la production non déclarée, en part du PIB officie
 
 | Auteur | Méthode | Résultat pour la Tunisie | Source |
 |---|---|---|---|
-| Schneider, Buehn et Montenegro, 2010 | MIMIC | 38,7 % en 1999 ; 35,4 % en 2007 | [@schneider-buehn-montenegro2010-shadow, tableau 3.3.6, p. 29] |
+| Schneider, Buehn et Montenegro, 2010 | [MIMIC](#g-mimic) | 38,7 % en 1999 ; 35,4 % en 2007 | [@schneider-buehn-montenegro2010-shadow, tableau 3.3.6, p. 29] |
 | Banque mondiale, base de l'économie informelle | équilibre général dynamique | 37,9 % en 1990 ; 34,6 % en 2010 ; 33,0 % en 2019 | [@elgin-kose-ohnsorge-yu2021-informality] |
 | Banque mondiale, base de l'économie informelle | MIMIC | 39,5 % en 1993 ; 35,6 % en 2010 ; 36,8 % en 2019 | idem |
 | PNUD et OIT, 2022 | demande de monnaie | 44,2 % en 1986 ; 25,0 % en 2010 ; 29,3 % en 2017 ; 28,3 % en 2021 | [@pnud-oit2022-bencheikh-informel, tableau 13, p. 69] |

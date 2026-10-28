@@ -10207,12 +10207,18 @@ entries:
         لا يتعارض معه (الفصول 4 و11 و13 و14).
       synonymes: []
 
+  # AR : l'INS écrit « العمل غير المنظم » pour l'emploi informel (note de 2019, p. 6 ;
+  # note ENPE du 3e trim. 2020, bilingue, tableau 7, p. 10 : « occupés en emploi informel »
+  # = « المشتغلين في العمل غير المنظم »). Le terme antérieur du précis, « التشغيل غير المنظّم »,
+  # passe en synonyme. Pas de source_traduction ici : les deux notes de l'INS ne sont pas dans
+  # la bibliographie du livre « Le marché du travail », qui ancre cette notion.
+  # FR : « travail informel » n'est plus synonyme — la 21e CIST le distingue (§ 53 ; voir travail-informel).
   - id: emploi-informel
     acronyme: null
-    statut: provisoire
+    statut: valide  # AR attesté par l'INS (voir ci-dessus)
     references: []
     source_definition: {ref: oit-cist21-2023-informel, locator: "§ 56"}
-    voir_aussi: [cout-du-travail]
+    voir_aussi: [secteur-informel, travail-informel, economie-informelle, cout-du-travail]
     fr:
       terme: Emploi informel
       definition: >
@@ -10225,14 +10231,294 @@ entries:
         notamment les salariés dont la relation d'emploi n'est pas, en pratique,
         formellement reconnue par l'employeur ou ne donne pas un accès effectif à
         ces dispositifs.
-      synonymes: [travail informel]
+      synonymes: []
     ar:
-      terme: التشغيل غير المنظّم
+      terme: العمل غير المنظم
       definition: >
         كلّ نشاط يُمارَس لإنتاج سلع أو تقديم خدمات مقابل أجر أو ربح ولا تشمله،
         قانونًا أو فعلًا، الترتيبات الرسمية: القانون التجاري، والتصريح بالأنشطة
         الاقتصادية، والضريبة على الدخل، وتشريع الشغل، والضمان الاجتماعي (قرار
         المؤتمر الدولي الحادي والعشرين لخبراء إحصاءات العمل، 2023، الفقرة 56).
+      synonymes: [التشغيل غير المنظّم]
+
+  # --- Notions de l'informel (volume « L'informel : définitions et mesures » ;
+  # docs/notes/informel-sources-2026-10-28.md, § 6). La 21e CIST (2023) n'est en main qu'en
+  # anglais : les termes et définitions français qui en sont tirés sont des traductions du
+  # précis. AR : seuls « القطاع غير المنظم » et « القطاع غير الرسمي » sont attestés (INS) ;
+  # les autres termes AR sont proposés, non attestés. « العمل غير المنظم » est réservé à
+  # emploi-informel (usage de l'INS) : le travail informel reçoit un autre terme.
+
+  - id: secteur-informel
+    acronyme: null
+    statut: valide  # AR attesté : INS, note de 2019, p. 6
+    references: [oit-cist15-1993-secteur-informel, oit-cist17-2003-emploi-informel]
+    source_definition: {ref: oit-cist21-2023-informel, locator: "§ 40"}
+    source_traduction: {ref: ins-2020-emploi-informel-2019, locator: "p. 6"}
+    voir_aussi: [emploi-informel, economie-informelle, entreprise-individuelle-menage]
+    fr:
+      terme: Secteur informel
+      definition: >
+        Ensemble des unités économiques qui produisent des biens et des services
+        destinés principalement au marché, pour en tirer un revenu ou un profit,
+        sans être reconnues par les pouvoirs publics comme producteurs marchands
+        distincts. Ces entreprises individuelles de ménages cumulent cinq
+        caractères : elles ne sont ni détenues ni contrôlées par l'État, n'ont
+        pas de personnalité juridique distincte de leurs propriétaires, ne
+        tiennent pas une comptabilité complète à des fins fiscales, ne sont pas
+        inscrites à un registre public et n'emploient aucun salarié à emploi
+        formel (résolution de la 21e Conférence internationale des statisticiens
+        du travail, 2023, § 40). La résolution de 1993 retenait le
+        non-enregistrement ou une taille inférieure à un seuil d'emploi (§ 8 et
+        9). L'INS retient les unités qui produisent pour le marché sans
+        identifiant fiscal, ou avec un identifiant fiscal mais sans comptabilité
+        à déposer chaque année auprès des services fiscaux (note sur l'emploi
+        informel de 2019, p. 6).
+      synonymes: []
+    ar:
+      terme: القطاع غير المنظم
+      definition: >
+        مجموع الوحدات الاقتصادية التي تنتج سلعًا وخدمات موجّهة أساسًا إلى السوق
+        لتحقيق دخل أو ربح، دون أن تعترف بها السلطات العمومية منتجين متميّزين
+        للسوق. وتجمع هذه المؤسسات الفردية التابعة للأسر خمس صفات: لا تملكها
+        الدولة ولا تراقبها، وليست لها شخصية قانونية مستقلّة عن مالكيها، ولا
+        تمسك محاسبة كاملة لأغراض جبائية، وليست مسجّلة في سجلّ عمومي، ولا تشغّل
+        أيّ أجير في عمل منظّم (قرار المؤتمر الدولي الحادي والعشرين لخبراء
+        إحصاءات العمل، 2023، الفقرة 40). وكان قرار 1993 يعتمد عدم التسجيل أو
+        حجمًا دون عتبة معيّنة من المشتغلين (الفقرتان 8 و9). ويعتمد المعهد الوطني
+        للإحصاء الوحدات التي تنتج للسوق وليس لها معرّف جبائي، أو لها معرّف جبائي
+        دون محاسبة ملزمة بإيداعها سنويًا لدى المصالح الجبائية (مذكرة 2019، ص. 6).
+      synonymes: [القطاع غير الرسمي]
+
+  - id: economie-informelle
+    acronyme: null
+    statut: provisoire  # AR proposé, non attesté
+    references: []
+    source_definition: {ref: oit-cist21-2023-informel, locator: "§ 13-14"}
+    voir_aussi: [secteur-informel, emploi-informel, travail-informel, economie-non-observee]
+    fr:
+      terme: Économie informelle
+      definition: >
+        Ensemble des activités productives de personnes ou d'unités économiques
+        qui ne sont pas couvertes, en droit ou en pratique, par les dispositifs
+        formels, qu'elles soient exercées ou non contre rémunération ou profit
+        (résolution de la 21e Conférence internationale des statisticiens du
+        travail, 2023, § 10 et 13). Les activités dont les biens ou services sont
+        interdits par la loi en sont exclues ; une production en principe légale,
+        exercée sans l'autorisation requise, y reste incluse (§ 14).
+      synonymes: []
+    ar:
+      terme: الاقتصاد غير المنظم
+      definition: >
+        مجموع الأنشطة الإنتاجية للأشخاص أو للوحدات الاقتصادية التي لا تشملها،
+        قانونًا أو فعلًا، الترتيبات الرسمية، سواء مورست مقابل أجر أو ربح أم لا
+        (قرار المؤتمر الدولي الحادي والعشرين لخبراء إحصاءات العمل، 2023،
+        الفقرتان 10 و13). وتُستثنى منه الأنشطة التي يمنع القانون سلعها أو
+        خدماتها، ويبقى فيه الإنتاج المشروع مبدئيًا الذي يُمارَس دون الترخيص
+        المطلوب (الفقرة 14).
+      synonymes: []
+
+  - id: travail-informel
+    acronyme: null
+    statut: provisoire  # AR proposé, non attesté ; « العمل غير المنظم » est le terme de l'INS pour l'emploi informel
+    references: []
+    source_definition: {ref: oit-cist21-2023-informel, locator: "§ 53"}
+    voir_aussi: [emploi-informel, economie-informelle]
+    fr:
+      terme: Travail informel
+      definition: >
+        Activités productives de personnes qui ne sont pas couvertes, en droit
+        ou en pratique, par les dispositifs formels. Le travail informel
+        comprend l'emploi informel et, au-delà, la production pour usage final
+        propre, le bénévolat, le stage non rémunéré et les autres formes de
+        travail, lorsqu'elles échappent à ces dispositifs (résolution de la 21e
+        Conférence internationale des statisticiens du travail, 2023, § 53).
+      synonymes: []
+    ar:
+      terme: العمل غير المنظم بمفهومه الواسع
+      definition: >
+        الأنشطة الإنتاجية للأشخاص التي لا تشملها، قانونًا أو فعلًا، الترتيبات
+        الرسمية. ويشمل العمل غير المنظم والإنتاج للاستعمال النهائي الخاص
+        والعمل التطوعي والتربص غير المأجور وسائر أشكال العمل، متى كانت خارج هذه
+        الترتيبات (قرار المؤتمر الدولي الحادي والعشرين لخبراء إحصاءات العمل،
+        2023، الفقرة 53).
+      synonymes: []
+
+  - id: economie-non-observee
+    acronyme: ENO
+    statut: provisoire  # AR proposé, non attesté
+    references: []
+    source_definition: {ref: ocde-2002-noe-handbook, locator: "§ 1.9, p. 12"}
+    voir_aussi: [economie-souterraine, secteur-informel, economie-informelle]
+    fr:
+      terme: Économie non observée
+      definition: >
+        Ensemble des activités productives que les données de base des comptes
+        nationaux ne saisissent pas : activités souterraines, activités
+        illégales, activités du secteur informel, production des ménages pour
+        leur usage final propre, et activités omises par les lacunes de la
+        collecte statistique (manuel de l'OCDE, de l'OIT, du FMI et du CIS-STAT,
+        2002, § 1.9). La notion sert l'exhaustivité du produit intérieur brut ;
+        elle ne mesure pas l'informel à part.
+      synonymes: []
+    ar:
+      terme: الاقتصاد غير الملاحَظ
+      definition: >
+        مجموع الأنشطة الإنتاجية التي لا ترصدها البيانات الأساسية للحسابات
+        القومية: الأنشطة الخفية، والأنشطة غير المشروعة، وأنشطة القطاع غير
+        المنظم، وإنتاج الأسر لاستعمالها النهائي الخاص، والأنشطة التي تُغفلها
+        نقائص الجمع الإحصائي (دليل منظمة التعاون والتنمية الاقتصادية ومنظمة العمل
+        الدولية وصندوق النقد الدولي، 2002، الفقرة 1.9). ويخدم هذا المفهوم شمولية
+        الناتج المحلي الإجمالي ولا يقيس القطاع غير المنظم على حدة.
+      synonymes: []
+
+  - id: economie-souterraine
+    acronyme: null
+    statut: provisoire  # AR proposé, non attesté
+    references: [oit-cist15-1993-secteur-informel, schneider-buehn-montenegro2010-shadow]
+    source_definition: {ref: ocde-2002-noe-handbook, locator: "§ 3.6, p. 37"}
+    voir_aussi: [economie-non-observee, secteur-informel, mimic]
+    fr:
+      terme: Économie souterraine
+      definition: >
+        Production légale et productive au sens économique, mais délibérément
+        dissimulée aux pouvoirs publics pour éviter l'impôt sur le revenu, la
+        taxe sur la valeur ajoutée ou d'autres impôts, les cotisations de
+        sécurité sociale, les normes légales (salaire minimum, durée maximale
+        du travail, sécurité, santé) ou les formalités administratives
+        (Système de comptabilité nationale de 1993, § 6.34, cité par le manuel
+        de l'OCDE sur l'économie non observée, 2002, § 3.6). La résolution de
+        1993 sur le secteur informel la distingue de celui-ci, dont les
+        activités ne visent pas nécessairement à se soustraire à l'impôt ou aux
+        cotisations (§ 5).
+      synonymes: [production souterraine, économie dissimulée]
+    ar:
+      terme: الاقتصاد الخفي
+      definition: >
+        إنتاج مشروع ومنتج بالمعنى الاقتصادي، لكنه يُخفى عمدًا عن السلطات
+        العمومية لتفادي الضريبة على الدخل أو الأداء على القيمة المضافة أو غيرهما
+        من الأداءات، أو الاشتراكات في الضمان الاجتماعي، أو المعايير القانونية
+        (الأجر الأدنى، والمدة القصوى للعمل، والسلامة، والصحة)، أو الإجراءات
+        الإدارية (نظام الحسابات القومية لسنة 1993، الفقرة 6.34، كما يورده دليل
+        الاقتصاد غير الملاحَظ، 2002، الفقرة 3.6). ويميّزه قرار 1993 عن القطاع غير
+        المنظم الذي لا تهدف أنشطته بالضرورة إلى التهرّب من الأداءات أو الاشتراكات
+        (الفقرة 5).
+      synonymes: []
+
+  - id: entreprise-individuelle-menage
+    acronyme: null
+    statut: provisoire  # AR proposé, non attesté
+    references: [oit-cist21-2023-informel]
+    source_definition: {ref: oit-cist15-1993-secteur-informel, locator: "§ 7"}
+    voir_aussi: [secteur-informel]
+    fr:
+      terme: Entreprise individuelle de ménage
+      definition: >
+        Unité qui produit des biens ou des services sans constituer une personne
+        morale distincte du ménage ou des membres du ménage auxquels elle
+        appartient, et sans tenir un ensemble complet de comptes, bilan compris,
+        qui sépare ses activités de production des autres activités de ses
+        propriétaires (résolution de la 15e Conférence internationale des
+        statisticiens du travail, 1993, § 7, au sens du Système de
+        comptabilité nationale). Elle peut appartenir à un seul membre d'un
+        ménage, à plusieurs membres du même ménage ou à des membres de ménages
+        différents associés. Le secteur informel est formé de telles
+        entreprises.
+      synonymes: [entreprise individuelle, entreprise non constituée en société]
+    ar:
+      terme: المؤسسة الفردية التابعة للأسرة
+      definition: >
+        وحدة تنتج سلعًا أو خدمات دون أن تشكّل شخصًا معنويًا مستقلًا عن الأسرة أو
+        عن أفراد الأسرة الذين تعود إليهم، ودون أن تمسك مجموعة كاملة من الحسابات،
+        بما فيها الموازنة، تفصل أنشطتها الإنتاجية عن سائر أنشطة مالكيها (قرار
+        المؤتمر الدولي الخامس عشر لخبراء إحصاءات العمل، 1993، الفقرة 7). ويتكوّن
+        القطاع غير المنظم من مثل هذه المؤسسات.
+      synonymes: []
+
+  - id: enquete-mixte
+    acronyme: null
+    statut: provisoire  # AR proposé, non attesté
+    references: [oit-2013-measuring-informality, hammami-helel-torelli2019-informel]
+    source_definition: {ref: oit-cist15-1993-secteur-informel, locator: "§ 25"}
+    voir_aussi: [secteur-informel, entreprise-individuelle-menage]
+    fr:
+      terme: Enquête mixte ménages-entreprises
+      definition: >
+        Enquête en deux phases : une enquête auprès des ménages repère les
+        entreprises du secteur informel et leurs propriétaires ; une seconde
+        enquête interroge tout ou partie de ces propriétaires sur leur
+        entreprise. La première phase sert de base de sondage et couvre les
+        unités quels que soient leur taille, leur activité et leur lieu de
+        travail (résolution de la 15e Conférence internationale des
+        statisticiens du travail, 1993, § 25). Les enquêtes « 1-2-3 » en sont
+        une forme.
+      synonymes: [enquête 1-2-3]
+    ar:
+      terme: المسح المختلط للأسر والمؤسسات
+      definition: >
+        مسح على مرحلتين: يحدّد مسح لدى الأسر مؤسسات القطاع غير المنظم ومالكيها،
+        ثمّ يستجوب مسح ثانٍ كلّ هؤلاء المالكين أو عيّنة منهم بشأن مؤسساتهم. وتصلح
+        المرحلة الأولى قاعدةً للمعاينة وتشمل الوحدات أيًّا كان حجمها ونشاطها ومكان
+        عملها (قرار المؤتمر الدولي الخامس عشر لخبراء إحصاءات العمل، 1993، الفقرة
+        25).
+      synonymes: []
+
+  - id: methode-residuelle
+    acronyme: null
+    statut: provisoire  # AR proposé, non attesté
+    references: []
+    source_definition: {ref: oit-2013-measuring-informality, locator: "§ 3.45-3.48"}
+    voir_aussi: [emploi-informel, secteur-informel]
+    fr:
+      terme: Méthode du solde
+      definition: >
+        Estimation indirecte qui retranche de l'emploi total, mesuré par un
+        recensement ou une enquête auprès des ménages, l'emploi enregistré,
+        mesuré par les recensements ou enquêtes d'établissements, les
+        affiliations à la sécurité sociale ou les fichiers fiscaux. Le solde
+        approche l'emploi informel ou l'emploi dans le secteur informel selon
+        les catégories comparées ; il compte des emplois et non des personnes,
+        et varie avec le critère d'enregistrement retenu (manuel de l'OIT
+        *Measuring informality*, 2013, § 3.45 à 3.48).
+      synonymes: [méthode du solde résiduel, estimation par le solde]
+    ar:
+      terme: طريقة الرصيد المتبقّي
+      definition: >
+        تقدير غير مباشر يطرح من مجموع التشغيل، كما يقيسه تعداد أو مسح لدى
+        الأسر، التشغيلَ المسجَّل كما تقيسه تعدادات المؤسسات أو مسوحها أو
+        الانخراطات في الضمان الاجتماعي أو الملفات الجبائية. ويقارب الرصيد العمل
+        غير المنظم أو التشغيل في القطاع غير المنظم بحسب الفئات المقارنة، ويحصي
+        مواطن الشغل لا الأشخاص، ويتغيّر بتغيّر معيار التسجيل المعتمد (دليل منظمة
+        العمل الدولية، 2013، الفقرات 3.45 إلى 3.48).
+      synonymes: []
+
+  - id: mimic
+    acronyme: MIMIC
+    statut: provisoire  # AR proposé, non attesté
+    references: [elgin-kose-ohnsorge-yu2021-informality]
+    source_definition: {ref: schneider-buehn-montenegro2010-shadow, locator: "p. 6-10 et 13"}
+    voir_aussi: [economie-souterraine]
+    fr:
+      terme: Modèle à causes multiples et indicateurs multiples
+      definition: >
+        Modèle d'équations structurelles qui traite l'économie souterraine comme
+        une variable non observée : il la relie d'une part à des causes
+        observées (poids des impôts directs, taille de l'État, réglementation,
+        chômage…), d'autre part à des indicateurs observés (monnaie en
+        circulation, taux d'activité, croissance de la population active). Le
+        modèle ne donne
+        qu'un indice relatif ; un calage sur une estimation tirée d'une autre
+        méthode est nécessaire pour obtenir un niveau en part du PIB (Schneider,
+        Buehn et Montenegro, 2010, p. 6-10 et 13).
+      synonymes: [modèle MIMIC]
+    ar:
+      terme: نموذج الأسباب المتعدّدة والمؤشرات المتعدّدة
+      definition: >
+        نموذج معادلات هيكلية يعامل الاقتصاد الخفي متغيّرًا غير ملاحَظ: يربطه من
+        جهة بأسباب ملاحَظة (وزن الأداءات المباشرة، وحجم الدولة، والتنظيم،
+        والبطالة…) ومن جهة أخرى بمؤشرات ملاحَظة (النقد المتداول، ونسبة النشاط،
+        ونمو السكان النشيطين). ولا يعطي النموذج إلا مؤشرًا نسبيًا،
+        ويلزم معايرته على تقدير مأخوذ من طريقة أخرى للحصول على مستوى بنسبة من
+        الناتج المحلي الإجمالي (شنايدر وبوين ومونتينيغرو، 2010، ص. 6-10 و13).
       synonymes: []
 
   # --- Politiques de l'emploi (volume « Le marché du travail », chapitre « Les politiques
