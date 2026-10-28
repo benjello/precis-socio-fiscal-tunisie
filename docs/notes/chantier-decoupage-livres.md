@@ -42,9 +42,9 @@ dans `docs/conventions-redaction.md` :
   prélever, le livre de l'instrument suffit**, et la synthèse montre la composition des revenus.
   C'est pourquoi la partie I n'a pas de livre du capital : ses règles sont fiscales ;
 - **l'état du droit de chaque dispositif dit la population couverte et son complément**, avec
-  sa série. L'informel : décision du 28 octobre 2026 de l'ouvrir comme livre (définitions et
+  sa série. L'informel : décision du 28 octobre 2026 de l'ouvrir comme volume (définitions et
   mesures), en partie I ; il remplace la formule du 17 octobre (« L'informel n'est pas un livre »).
-  Le livre porte les notions et les mesures ; une colonne dans chaque état du droit, un chapitre
+  Le volume porte les notions et les mesures ; une colonne dans chaque état du droit, un chapitre
   de formalisation dans le marché du travail et un chapitre de couverture dans la synthèse
   restent à décider (voir les questions ouvertes de la PR).
 
