@@ -10,6 +10,7 @@
     ge.figure("stir_fiches", …)                             # STIR : fiche du ministère, 2018-2023
     ge.figure("oc_budget", …) ; ge.figure("oc_fiches", …)   # Office des céréales, mêmes vues
     ge.figure("sonede_budget", …) ; ge.figure("onas_fiches", …)  # SONEDE, ONAS, mêmes vues
+    ge.figure("onh_budget", …) ; ge.figure("onh_fiches", …)  # Office national de l'huile
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -645,7 +646,8 @@ def _case_fiche(f, x, e, ind):
 
 
 NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
-              "office_cereales": "Office des céréales", "sonede": "SONEDE", "onas": "ONAS"}
+              "office_cereales": "Office des céréales", "sonede": "SONEDE", "onas": "ONAS",
+              "office_huile": "Office national de l'huile"}
 
 
 def fig_fiche(entite: str):
@@ -928,6 +930,11 @@ FIGURES = {
                     "fig_ep_onas_fiches"),
     "onas_budget": (lambda: fig_budget("onas", ROUGE), lambda: table_budget("onas"),
                     (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_onas_budget"),
+    "onh_fiches": (lambda: fig_fiche("office_huile"), lambda: table_fiche("office_huile"),
+                   (S_FICHES,), "fig_ep_onh_fiches"),
+    "onh_budget": (lambda: fig_budget("office_huile", COULEURS_TRANSFERTS["office_huile"]),
+                   lambda: table_budget("office_huile"),
+                   (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_onh_budget"),
 }
 
 
