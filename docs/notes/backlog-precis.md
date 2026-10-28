@@ -3856,8 +3856,8 @@ Ce qui reste :
   `tbl-ep-registre-tunisair` (lois n° 61-49, 74-70, 76-39, 77-16, 84-59, image ; lois de garantie
   n° 94-48, 94-49, 94-105, 94-106, 95-39, 95-107, 2001-121, 2002-88, 2015-27 à 2015-29 ; décret
   n° 2009-2211) et `tbl-ep-registre-rnta` (loi n° 64-57, image ; loi n° 70-23, image ; loi de
-  finances pour 1971, art. 33, image ; décret n° 88-67, image ; décret n° 2011-4396, édition arabe,
-  image). Glossaire : `tunisair`, `rnta`.
+  finances pour 1971, art. 33, image ; loi de finances pour 1983, art. 37 et 38, image, qui abroge
+  les exonérations de 1964 ; décret n° 88-67, image ; décret n° 2011-4396, édition arabe, image). Glossaire : `tunisair`, `rnta`.
   **Reste** :
   - dates de dépôt des JORT n° 38 de 1994, n° 104 de 1995 et n° 93 de 2011 (arabe) : **à lire à
     l'image** ;
@@ -3866,7 +3866,8 @@ Ce qui reste :
     à 1992 (une quinzaine, liste dans le commentaire du chapitre) : **dans le corpus local**,
     scannées pour la plupart ; décrets n° 2015-154 à 2015-156 (édition arabe) ; Tunisair Express
     (textes non identifiés) ; rapport de la Cour des comptes sur la flotte (2018, au catalogue) ;
-  - RNTA : loi n° 93-53 (modifie la loi n° 64-57) ; décrets n° 70-291, 74-917, 84-859, 85-1236
+  - RNTA : loi n° 93-53 (son article de promulgation abroge à nouveau l'article 30 de la loi
+    n° 64-57 ; lu à l'OCR, **à relire à l'image**) ; décrets n° 70-291, 74-917, 84-859, 85-1236
     et modificatifs, 2001-2123 ; organigrammes ; textes sur la quote-part des recettes versée au
     budget : **dans le corpus local**, non lus ; objet des transferts du budget de 2020 et 2022
     (annexe 8, bloc du ministère des Finances) ;

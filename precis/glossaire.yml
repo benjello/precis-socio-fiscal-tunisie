@@ -18405,7 +18405,7 @@ entries:
     # AR : intitulé « شركة الخطوط التونسية » de la fiche de la société dans le rapport sur les
     # entreprises publiques, édition LF 2025, p. 56.
     source_traduction: {ref: minfin-ep-2025, locator: "p. 56"}
-    voir_aussi: [rnta]
+    voir_aussi: []
     fr:
       terme: Tunisair
       definition: >
@@ -18416,8 +18416,8 @@ entries:
     ar:
       terme: شركة الخطوط التونسية
       definition: >
-        الشركة التونسية للطيران، الناقل الجوي الوطني. اكتتبت الدولة في الترفيع في رأس
-        مالها وتضمن قروضا تبرمها مع بنوك أجنبية لاقتناء طائرات.
+        الناقل الجوي الوطني. اكتتبت الدولة في الترفيع في رأس مالها وتضمن قروضا
+        تبرمها مع بنوك أجنبية لاقتناء طائرات.
       synonymes: []
 
   - id: rnta
@@ -18428,7 +18428,7 @@ entries:
     # AR : intitulé « الوكالة الوطنية للتبغ والوقيد » de la fiche de la Régie dans le rapport
     # sur les entreprises publiques, édition LF 2025, p. 50.
     source_traduction: {ref: minfin-ep-2025, locator: "p. 50"}
-    voir_aussi: [tunisair]
+    voir_aussi: []
     fr:
       terme: Régie nationale des tabacs et des allumettes
       definition: >
