@@ -1,8 +1,8 @@
 tableau,ordre,position,produit,colonne,valeur,unite,date_effet,date_fin,texte,article,statut
-redevance,0,[2 janvier 1988]{.insecable},"1,5 % de la valeur en douane, sur toutes les déclarations en détail ; à l'exportation, sur une liste de produits",Minimum,1,D par article,1988-01-02,,loi-87-83-lf-1988,"art. 51, p. 1632",lu
+redevance,0,[2 janvier 1988]{.insecable},"1,5 % des droits et taxes liquidés, sur toutes les déclarations en détail ; à l'exportation d'une liste de produits, 1,5 % de la valeur en douane",Minimum,1,D par article,1988-01-02,,loi-87-83-lf-1988,"art. 51, p. 1632",lu
 redevance,1,[1er janvier 1994]{.insecable},"2 % des droits et taxes liquidés en douane, sur les déclarations d'importation ; 10 % du produit affectés aux dépenses spécifiques des agents des douanes",Minimum,5,D par article,1994-01-01,,lf-1994,"art. 75, p. 2202",lu
 redevance,2,[1er janvier 1998]{.insecable},3 % des droits et taxes liquidés,Minimum,5,D,1998-01-01,,lf-1998,"art. 43, p. 2439",lu
-redevance,3,[1er janvier 1999]{.insecable},"Importation : 3 % des droits et taxes liquidés ; exportation : pétrole brut seul, 1,5 % de la valeur",Minimum,5 D à l'importation ; 1,D à l'exportation,1999-01-01,,lf-1999,"art. 32, p. 2503",lu
+redevance,3,[1er janvier 1999]{.insecable},"Importation : 3 % des droits et taxes liquidés ; exportation : pétrole brut seul, 1,5 % de la valeur",Minimum,5 D à l'importation ; 1 D à l'exportation,1999-01-01,,lf-1999,"art. 32, p. 2503",lu
 redevance,4,[1er janvier 2013]{.insecable},Assiette et taux inchangés,Minimum,10,D,2013-01-01,,lf-2013,"art. 57, p. 17",lu
 redevance,5,[1er janvier 2014]{.insecable},Assiette et taux inchangés ; 100 D par déclaration de transit terrestre ; affectation de 10 % supprimée,Minimum,10,D,2014-01-01,,lf-2014,"art. 16, p. 3669",lu
 redevance,6,[1er janvier 2024]{.insecable},Assiette et taux inchangés,Minimum,20,D,2024-01-01,,lf-2024,art. 66,lu
