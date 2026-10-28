@@ -353,5 +353,8 @@ nationalisations de 1956-1964) quand les chapitres 8 à 13 s'ouvriront.
 3. Ce que cela change au plan à seize chapitres : la cible reste de seize chapitres ; le livre en compte
    douze. Les chapitres 9 à 13 restent des cibles, à ouvrir selon la décision 3 du § 9 ; une entreprise d'un
    secteur qui n'a pas trois fiches est traitée dans « Les autres entreprises » jusqu'à l'ouverture de son chapitre.
-4. Les deux chapitres lisent le même module de figures, `figures/grandes_entreprises.py`. Aucune ligne de
+4. Pas de vue d'ensemble ajoutée au chapitre « L'énergie » (décision de l'humain, 28 octobre 2026) : il garde
+   un chapeau et les trois sections. Une entreprise dont le secteur n'a pas trois fiches reste dans « Les autres
+   entreprises » jusqu'à l'ouverture de son chapitre (même décision).
+5. Les deux chapitres lisent le même module de figures, `figures/grandes_entreprises.py`. Aucune ligne de
    registre n'est citée depuis les deux chapitres : aucune n'est recopiée.
