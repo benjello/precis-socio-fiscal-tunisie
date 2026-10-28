@@ -192,7 +192,12 @@ PAQUETS = {
         # (`retraite/rsna/survivants/age_remariage_suspensif`, PR #514) : en deçà, le tableau
         # des survivants du RSNA ne trouverait pas ce chemin et ne pourrait être engendré.
         # La borne passe à la 0.154, publiée le 25 octobre 2026.
-        "version_minimale": (0, 154),
+        # La 0.156 verse la redevance de prestations douanières, le minimum de perception, le
+        # transit terrestre et la taxe de contrôle par scanner (PR #516,
+        # `fiscalite_indirecte/droits_douane/`) : en deçà, les tableaux de la redevance et du
+        # minimum de perception du chapitre « Droits de douane » ne pourraient être engendrés.
+        # Aucun chemin déjà lu ne bouge. La borne passe à la 0.156, publiée le 28 octobre 2026.
+        "version_minimale": (0, 156),
     },
 }
 
