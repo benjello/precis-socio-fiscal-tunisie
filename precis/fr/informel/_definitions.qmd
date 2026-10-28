@@ -1,0 +1,39 @@
+# Les définitions {#sec-inf-definitions}
+
+La statistique du travail distingue trois objets. Le **secteur informel** classe des unités de production, selon leur statut et la destination de leur production. L'**emploi informel** classe des postes de travail, selon l'accès effectif de la personne aux dispositifs formels. L'**économie informelle** réunit toutes les activités productives qui échappent, en droit ou en pratique, à ces dispositifs, qu'elles soient menées par des unités ou par des personnes. 
+
+## Les textes internationaux {#sec-inf-textes}
+
+Trois textes de la Conférence internationale des statisticiens du travail (CIST) fixent ces définitions : la résolution de la 15e CIST (1993) sur l'emploi dans le secteur informel, les lignes directrices de la 17e CIST (2003) sur la définition statistique de l'emploi informel, et la résolution de la 21e CIST (octobre 2023) sur les statistiques de l'économie informelle [@oit-cist21-2023-informel]. Le texte de 2023 donne les trois définitions ensemble et se substitue aux deux précédents.
+
+<!-- TODO (rédacteur) : sections « Le secteur informel (1993) » et « L'emploi informel (2003) », une fois les deux textes lus et rangés (voir `docs/notes/informel-sources-2026-10-28.md`) ; en faire un tableau qui compare les trois textes : objet, unité, critères, exclusions. -->
+
+## L'économie informelle selon la résolution de 2023 {#sec-inf-def-2023}
+
+**Activités productives informelles.** Ce sont les activités de personnes ou d'unités économiques qui ne sont pas couvertes, en droit ou en pratique, par les dispositifs formels [@oit-cist21-2023-informel, § 10]. Les dispositifs sont le droit commercial, les procédures de déclaration des activités (impôt, sécurité sociale), le droit du travail et l'accès aux marchés, aux aides publiques et aux banques (§ 11). La couverture s'entend d'un accès effectif : il ne suffit pas que la loi s'applique, la personne ou l'unité doit accomplir les formalités qu'elle prévoit (§ 12).
+
+**Économie informelle.** Elle comprend toutes les activités productives informelles, rémunérées ou non (§ 13). Les biens et services interdits par la loi en sont exclus. Un bien ou un service en principe légal, produit sans l'autorisation exigée, y reste inclus (§ 14).
+
+**Trois secteurs d'unités.** La résolution classe chaque unité économique selon deux critères : la destination de la production (surtout vers le marché, pour en tirer un revenu ou un profit, ou non) et le statut formel de l'unité (§ 22 à 26).
+
+- Le **secteur formel** regroupe les unités reconnues comme producteurs distincts : unités de l'État, personnes morales, unités qui tiennent une comptabilité complète à des fins fiscales, unités inscrites à un registre officiel, unités du marché qui emploient un salarié sous contrat formel (§ 26 a et § 28).
+- Le **secteur informel** regroupe les entreprises individuelles de ménages qui produisent surtout pour le marché mais ne sont pas reconnues comme producteurs distincts de la production pour usage propre du ménage de leur propriétaire (§ 26 b).
+- Le **secteur de la production des ménages pour usage propre et du secteur communautaire** regroupe les ménages qui produisent pour leur consommation ou pour celle d'autres ménages, et les organisations à but non lucratif non reconnues (§ 26 c).
+
+**Emploi informel.** Toute activité de personnes pour produire des biens ou fournir des services contre rémunération ou profit, qui n'est pas couverte, en droit ou en pratique, par les dispositifs formels [@oit-cist21-2023-informel, § 56]. Il comprend les postes tenus par quatre catégories de personnes : les travailleurs indépendants propriétaires d'une entreprise individuelle informelle ; les entrepreneurs dépendants sans statut formel ou dont l'activité n'est pas effectivement couverte ; les salariés dont la relation d'emploi n'est pas reconnue par l'employeur ou ne donne pas accès effectif aux dispositifs formels ; les travailleurs familiaux non rémunérés dont la relation de travail n'est pas reconnue (§ 56 a à d).
+
+Un poste informel peut être tenu dans une unité de chacun des trois secteurs (§ 63) ; un poste formel peut l'être dans une unité du secteur formel ou du secteur des ménages (§ 65). Le secteur et l'emploi sont donc deux classements indépendants, que le tableau suivant croise.
+
+| Unité économique ↓ / Poste → | Poste informel | Poste formel |
+|---|---|---|
+| Secteur formel | emploi informel dans le secteur formel | emploi formel |
+| Secteur informel | emploi dans le secteur informel (informel par définition) | — |
+| Secteur des ménages pour usage propre | emploi informel de ménage (aides domestiques sans accès effectif) | emploi formel de ménage (aides domestiques déclarées) |
+
+: Les secteurs d'unités et les postes de travail, d'après la résolution de 2023 {#tbl-inf-croisement}
+
+<!-- TODO (rédacteur) : relire le tableau croisé sur les paragraphes 63 à 65 (cases « — » et formulation) avant publication ; le comparer avec le tableau de 2003. -->
+
+**Marché informel.** La résolution isole aussi l'« économie de marché informelle » : toute la production pour la rémunération ou le profit dans le secteur informel, et les activités de personnes en emploi qui ne sont pas couvertes par les dispositifs formels (§ 18 à 21). C'est le noyau de la mesure : emploi informel et secteur informel.
+
+**Ce que la résolution laisse hors du champ.** Les activités illégales ou interdites (§ 14). La résolution traite en outre la production pour usage propre et le bénévolat comme des formes de travail informel autres que l'emploi (§ 53).

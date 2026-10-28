@@ -230,7 +230,7 @@ rôle applique.
 
 | Partie | Livres | Principe |
 |---|---|---|
-| I. Les revenus primaires | Le marché du travail ; les rémunérations publiques | flux |
+| I. Les revenus primaires | Le marché du travail ; les rémunérations publiques ; l'informel | flux |
 | II. Les prélèvements | La fiscalité ; les finances locales ; les cotisations sociales | flux |
 | III. Les transferts en espèces | Les retraites ; les prestations sociales | flux |
 | IV. Les politiques sectorielles | La santé ; la compensation ; l'éducation ; plus tard le transport, le logement, l'environnement | secteur |

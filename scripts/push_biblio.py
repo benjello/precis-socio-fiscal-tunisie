@@ -386,6 +386,7 @@ COLLECTIONS = {
     "entreprises_publiques": "Entreprises publiques",
     "sante": "Santé",
     "education": "Éducation et formation",
+    "informel": "Informel",
 }
 
 

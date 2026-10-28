@@ -57,6 +57,7 @@ COLLECTION_TO_BOOK = {
     "education": "education",
     "éducation et formation": "education",
     "education et formation": "education",
+    "informel": "informel",
 }
 
 
