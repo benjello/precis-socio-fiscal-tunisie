@@ -1,0 +1,109 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-28
+# séries (tunisia_data) : entreprises-publiques-resultats-nets-dix-premieres
+# sources (citation) : @minfin-ep, @minfin-ep-2022, @minfin-ep-2023, @minfin-ep-2024, @minfin-ep-2025
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : DES CLASSEMENTS, PAS DES SÉRIES : une entreprise absente du classement d'une année n'a pas de valeur — ce n'est ni zéro ni un manque de la transcription. Chaque exercice de 2018 à 2021 est donné par deux éditions, qui divergent parfois beaucoup : STIR 2018, − 1 159,5 puis − 813,4 ; Tunisair 2018, − 96,8 puis − 192,6 ; Groupe chimique 2020, − 205,0 puis − 593,3 ; CPG 2019, 637,6 puis 640,58. Signe porté par `sens` (les éditions LF 2023 et LF 2024 impriment les pertes sans signe). D'après la note documentaire du précis (fiches par entreprise de l'édition LF 2025, non relues ici) : la valeur de la STEG est son résultat avant « modifications comptables », et Tunisair comme la société des transports de Tunis n'ont pas d'états financiers approuvés pour 2021-2023. `doublon_imprime` : l'édition LF 2022 imprime deux fois la même société aux rangs 8 et 9 des bénéfices de 2019. Somme des dix = total imprimé (contrôlé ; quatre écarts de 0,1 à 0,3 déclarés). NON TRANSCRITS : les classements par produits, charges, charges de personnel et résultat d'exploitation ; les fiches par entreprise (dette, effectifs, subvention d'exploitation). LU À L'IMAGE.
+# note : Résultat net de douze entreprises publiques, exercices 2017-2022, en millions de dinars courants, d'après les classements des dix premiers résultats positifs et des dix premiers résultats négatifs de chaque édition. Source : ministère des Finances [@minfin-ep, p. 28-29 ; @minfin-ep-2022, p. 17-18 ; @minfin-ep-2023, p. 27-28 ; @minfin-ep-2024, p. 30 ; @minfin-ep-2025, p. 20-21]
+Entreprise,Exercice,Édition,Entreprises de l'échantillon,Classement,Rang,Résultat net (MD courants),Imprimé,Page imprimée
+CPG (phosphates),2017,LF 2021,78,dix premiers résultats négatifs,6,-128.9,"-128,9",29
+CPG (phosphates),2018,LF 2021,78,dix premiers résultats négatifs,5,-130.8,"-130,8",29
+CPG (phosphates),2018,LF 2022,77,dix premiers résultats négatifs,6,-131.94,"-131,94",19
+CPG (phosphates),2019,LF 2022,77,dix premiers résultats positifs,1,637.6,"637,6",18
+CPG (phosphates),2019,LF 2023,81,dix premiers résultats positifs,1,640.58,640.58,26
+CPG (phosphates),2020,LF 2023,81,dix premiers résultats négatifs,3,-293.25,"293,25",27
+CPG (phosphates),2020,LF 2024,88,dix premiers résultats négatifs,4,-293.2,"293,2",29
+CPG (phosphates),2021,LF 2024,88,dix premiers résultats positifs,4,47.0,47,29
+CPG (phosphates),2021,LF 2025,85,dix premiers résultats positifs,4,47.0,"47,0",20
+CPG (phosphates),2022,LF 2025,85,dix premiers résultats positifs,1,445.0,"445,0",20
+ETAP (activités pétrolières),2017,LF 2021,78,dix premiers résultats positifs,1,111.2,"111,2",28
+ETAP (activités pétrolières),2018,LF 2021,78,dix premiers résultats positifs,1,297.5,"297,5",28
+ETAP (activités pétrolières),2018,LF 2022,77,dix premiers résultats positifs,1,297.5,"297,5",18
+ETAP (activités pétrolières),2019,LF 2022,77,dix premiers résultats positifs,2,150.0,150,18
+ETAP (activités pétrolières),2019,LF 2023,81,dix premiers résultats positifs,2,150.0,"150,00",26
+ETAP (activités pétrolières),2020,LF 2023,81,dix premiers résultats négatifs,1,-407.07,"407,07",27
+ETAP (activités pétrolières),2020,LF 2024,88,dix premiers résultats négatifs,2,-407.1,"407,1",29
+ETAP (activités pétrolières),2021,LF 2024,88,dix premiers résultats négatifs,4,-139.0,139,29
+ETAP (activités pétrolières),2021,LF 2025,85,dix premiers résultats négatifs,5,-139.0,"-139,0",21
+ETAP (activités pétrolières),2022,LF 2025,85,dix premiers résultats positifs,2,352.2,"352,2",20
+Groupe chimique tunisien,2017,LF 2021,78,dix premiers résultats négatifs,7,-122.2,"-122,2",29
+Groupe chimique tunisien,2018,LF 2021,78,dix premiers résultats négatifs,6,-108.8,"-108,8",29
+Groupe chimique tunisien,2018,LF 2022,77,dix premiers résultats négatifs,7,-108.8,"-108,8",19
+Groupe chimique tunisien,2019,LF 2022,77,dix premiers résultats négatifs,4,-171.4,"-171,4",19
+Groupe chimique tunisien,2019,LF 2023,81,dix premiers résultats négatifs,1,-204.73,"204,73",27
+Groupe chimique tunisien,2020,LF 2023,81,dix premiers résultats négatifs,7,-205.0,"205,00",27
+Groupe chimique tunisien,2020,LF 2024,88,dix premiers résultats négatifs,1,-593.3,593.3,29
+Groupe chimique tunisien,2021,LF 2024,88,dix premiers résultats positifs,1,133.0,133,29
+Groupe chimique tunisien,2021,LF 2025,85,dix premiers résultats positifs,1,148.9,"148,9",20
+Groupe chimique tunisien,2022,LF 2025,85,dix premiers résultats positifs,6,63.1,"63,1",20
+Office des céréales,2018,LF 2021,78,dix premiers résultats négatifs,9,-76.0,"-76,0",29
+Office des céréales,2019,LF 2022,77,dix premiers résultats négatifs,3,-175.6,"-175,6",19
+Office des céréales,2019,LF 2023,81,dix premiers résultats négatifs,3,-175.65,"175,65",27
+Office des céréales,2020,LF 2023,81,dix premiers résultats négatifs,2,-340.59,"340,59",27
+Office des céréales,2020,LF 2024,88,dix premiers résultats négatifs,3,-340.6,"340,6",29
+Office des céréales,2021,LF 2024,88,dix premiers résultats négatifs,1,-477.2,"477,2",29
+Office des céréales,2021,LF 2025,85,dix premiers résultats négatifs,1,-477.2,"-477,2",21
+Office des céréales,2022,LF 2025,85,dix premiers résultats négatifs,2,-701.4,"-701,4",21
+Office du commerce,2020,LF 2023,81,dix premiers résultats positifs,5,8.38,"8,38",26
+Office du commerce,2020,LF 2024,88,dix premiers résultats positifs,5,8.4,"8,4",29
+Office du commerce,2021,LF 2024,88,dix premiers résultats négatifs,6,-120.2,"120,2",29
+Office du commerce,2021,LF 2025,85,dix premiers résultats négatifs,7,-128.2,"-128,2",21
+Office du commerce,2022,LF 2025,85,dix premiers résultats négatifs,3,-424.0,"-424,0",21
+Pharmacie centrale,2017,LF 2021,78,dix premiers résultats négatifs,5,-144.8,"-144,8",29
+Pharmacie centrale,2018,LF 2021,78,dix premiers résultats négatifs,3,-234.6,"-234,6",29
+Pharmacie centrale,2018,LF 2022,77,dix premiers résultats négatifs,3,-234.6,"-234,60",19
+Pharmacie centrale,2019,LF 2022,77,dix premiers résultats positifs,7,11.91,"11,91",18
+Pharmacie centrale,2019,LF 2023,81,dix premiers résultats positifs,7,11.92,"11,92",26
+Pharmacie centrale,2021,LF 2024,88,dix premiers résultats positifs,5,45.5,"45,5",29
+Pharmacie centrale,2021,LF 2025,85,dix premiers résultats positifs,5,46.4,"46,4",20
+RNTA (tabacs et allumettes),2017,LF 2021,78,dix premiers résultats négatifs,10,-49.6,"-49,6",29
+RNTA (tabacs et allumettes),2019,LF 2022,77,dix premiers résultats négatifs,8,-54.73,"-54,73",19
+RNTA (tabacs et allumettes),2019,LF 2023,81,dix premiers résultats négatifs,6,-54.73,"54,73",27
+RNTA (tabacs et allumettes),2020,LF 2023,81,dix premiers résultats positifs,4,12.03,"12,03",26
+RNTA (tabacs et allumettes),2020,LF 2024,88,dix premiers résultats positifs,4,12.0,12,29
+RNTA (tabacs et allumettes),2021,LF 2024,88,dix premiers résultats positifs,2,96.9,"96,9",29
+RNTA (tabacs et allumettes),2021,LF 2025,85,dix premiers résultats positifs,2,96.9,"96,9",20
+RNTA (tabacs et allumettes),2022,LF 2025,85,dix premiers résultats positifs,5,130.7,"130,7",20
+SNCFT (chemins de fer),2017,LF 2021,78,dix premiers résultats négatifs,8,-82.2,"-82,2",29
+SNCFT (chemins de fer),2018,LF 2021,78,dix premiers résultats négatifs,8,-91.1,"-91,1",29
+SNCFT (chemins de fer),2018,LF 2022,77,dix premiers résultats négatifs,9,-91.07,"-91,07",19
+SNCFT (chemins de fer),2019,LF 2022,77,dix premiers résultats négatifs,6,-113.78,"-113,78",19
+SNCFT (chemins de fer),2019,LF 2023,81,dix premiers résultats négatifs,5,-113.78,"113,78",27
+SNCFT (chemins de fer),2020,LF 2023,81,dix premiers résultats négatifs,9,-103.41,"103,41",27
+SNCFT (chemins de fer),2020,LF 2024,88,dix premiers résultats négatifs,9,-103.4,103.4,29
+SNCFT (chemins de fer),2021,LF 2024,88,dix premiers résultats négatifs,5,-137.3,137.3,29
+SNCFT (chemins de fer),2021,LF 2025,85,dix premiers résultats négatifs,6,-137.3,"-137,3",21
+SNCFT (chemins de fer),2022,LF 2025,85,dix premiers résultats négatifs,6,-199.8,"-199,8",21
+STEG (électricité et gaz),2017,LF 2021,78,dix premiers résultats négatifs,1,-1193.7,"-1193,7",29
+STEG (électricité et gaz),2018,LF 2021,78,dix premiers résultats négatifs,1,-2093.5,"-2093,5",29
+STEG (électricité et gaz),2018,LF 2022,77,dix premiers résultats négatifs,1,-2093.5,"-2093,5",19
+STEG (électricité et gaz),2019,LF 2022,77,dix premiers résultats positifs,3,106.4,"106,4",18
+STEG (électricité et gaz),2019,LF 2023,81,dix premiers résultats positifs,3,106.41,"106,41",26
+STEG (électricité et gaz),2020,LF 2023,81,dix premiers résultats négatifs,10,-60.17,"60,17",27
+STEG (électricité et gaz),2020,LF 2024,88,dix premiers résultats négatifs,10,-60.2,"60,2",29
+STEG (électricité et gaz),2021,LF 2024,88,dix premiers résultats négatifs,9,-42.7,"42,7",29
+STEG (électricité et gaz),2021,LF 2025,85,dix premiers résultats négatifs,10,-42.7,"-42,7",21
+STEG (électricité et gaz),2022,LF 2025,85,dix premiers résultats négatifs,4,-381.2,"-381,2",21
+STIR (raffinage),2017,LF 2021,78,dix premiers résultats négatifs,2,-429.9,"-429,9",29
+STIR (raffinage),2018,LF 2021,78,dix premiers résultats négatifs,2,-1159.5,"-1159,5",29
+STIR (raffinage),2018,LF 2022,77,dix premiers résultats négatifs,2,-813.4,"-813,4",19
+STIR (raffinage),2019,LF 2022,77,dix premiers résultats négatifs,1,-612.3,"-612,3",19
+STIR (raffinage),2020,LF 2023,81,dix premiers résultats positifs,1,59.1,"59,10",26
+STIR (raffinage),2020,LF 2024,88,dix premiers résultats positifs,1,59.1,"59,1",29
+STIR (raffinage),2022,LF 2025,85,dix premiers résultats négatifs,1,-1902.9,"-1902,9",21
+Transtu (transports de Tunis),2017,LF 2021,78,dix premiers résultats négatifs,4,-167.3,"-167,3",29
+Transtu (transports de Tunis),2018,LF 2021,78,dix premiers résultats négatifs,4,-187.5,"-187,5",29
+Transtu (transports de Tunis),2018,LF 2022,77,dix premiers résultats négatifs,5,-192.4,"-192,4",19
+Transtu (transports de Tunis),2019,LF 2022,77,dix premiers résultats négatifs,2,-204.34,"-204,34",19
+Transtu (transports de Tunis),2019,LF 2023,81,dix premiers résultats négatifs,2,-202.2,"202,20",27
+Transtu (transports de Tunis),2020,LF 2023,81,dix premiers résultats négatifs,6,-219.2,"219,20",27
+Transtu (transports de Tunis),2020,LF 2024,88,dix premiers résultats négatifs,7,-215.1,"215,1",29
+Transtu (transports de Tunis),2021,LF 2024,88,dix premiers résultats négatifs,2,-225.6,"225,6",29
+Transtu (transports de Tunis),2021,LF 2025,85,dix premiers résultats négatifs,3,-229.8,"-229,8",21
+Transtu (transports de Tunis),2022,LF 2025,85,dix premiers résultats négatifs,5,-226.5,"-226,5",21
+Tunisair,2017,LF 2021,78,dix premiers résultats négatifs,3,-206.6,"-206,6",29
+Tunisair,2018,LF 2021,78,dix premiers résultats négatifs,7,-96.8,"-96,8",29
+Tunisair,2018,LF 2022,77,dix premiers résultats négatifs,4,-192.6,"-192,6",19
+Tunisair,2020,LF 2023,81,dix premiers résultats négatifs,5,-233.97,"233,97",27
+Tunisair,2020,LF 2024,88,dix premiers résultats négatifs,6,-234.0,234,29
+Tunisair,2021,LF 2025,85,dix premiers résultats négatifs,2,-414.1,"-414,1",21
+Tunisair,2022,LF 2025,85,dix premiers résultats négatifs,7,-176.3,"-176,3",21

@@ -3708,7 +3708,11 @@ Ce qui reste :
   créancier, 2018-2020), LF 2024 et LF 2025 (bilan et résultat, 2020-2023), lues à l'image ;
   comptes publiés de la STEG 2013-2023 ; rapports annuels de l'ETAP 2004-2024 (sans 2020 ; 2019
   sans états financiers) ; textes fondateurs lus au corpus local (décret-loi n° 62-8, loi
-  n° 72-22, décret du 27 décembre 1956). **Reste** :
+  n° 72-22, décret du 27 décembre 1956). Tableaux de données mis en figures le 28 octobre 2026
+  (`fig-ep-transferts-entreprises`, `fig-ep-resultats-entreprises`, `fig-ep-transferts-revisions`,
+  `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
+  imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
+  **Reste** :
   - les autres grandes entreprises (Tunisair, Transtu, Office des céréales, Office national de
     l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du
     commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
@@ -3726,10 +3730,11 @@ Ce qui reste :
   - seuil de scission : trois entreprises de l'énergie (STEG, ETAP, STIR) ouvriraient un
     chapitre « L'énergie » quand la STIR aura sa fiche (note de chantier, § 9).
 - **STIR — section écrite le 28 octobre 2026, sans fiche** (`_grandes_entreprises.qmd`,
-  `#sec-ep-ge-stir`, tableau `tbl-ep-stir-budget` engendré par
-  `grandes_entreprises.tableau_entreprise_budget` depuis quatre séries déjà versées : principal de
-  dette garantie payé par l'État 2013-2016, `cdc-cloture-entreprises-publiques` ; transferts
-  2017-2022 ; résultats nets des classements ; effectifs et charges de personnel 2016-2023).
+  `#sec-ep-ge-stir`, figure `fig-ep-stir-budget` engendrée par `grandes_entreprises.figure
+  ("stir_budget")` depuis trois séries du rapport sur les entreprises publiques : transferts
+  2017-2022, résultats nets des classements, effectifs et charges de personnel 2016-2023 ; le
+  principal de dette garantie payé par l'État 2013-2016, `cdc-cloture-entreprises-publiques`, est
+  dit dans le texte avec ses pages et renvoie à `tbl-ep-cdc-garantie`).
   Registre `tbl-ep-registre-stir`, lu au corpus local : loi n° 60-11 (convention avec l'ANIC,
   p. 1005, image), loi n° 75-81 (rachat des actions du groupe ENI, p. 2852, image ; intitulé daté
   du 20 décembre, formule finale du 30 décembre 1975), décret n° 77-467 (nom, objet, tutelle,
@@ -3752,7 +3757,8 @@ Ce qui reste :
     et loi n° 61-44, loi n° 62-29) : **dans le corpus local, à l'image**, non lues ;
   - décrets n° 89-1197 et 91-178 (article 5 du décret n° 77-467, composition du conseil) : lus à
     l'OCR, non versés au registre ; décret n° 99-1304 (organigramme), non lu ;
-  - la figure : rien à tracer tant que la fiche n'est pas versée.
+  - la fiche, une fois versée : l'ajouter à `grandes_entreprises.FIGURES` sur le modèle de
+    `fig_fiche` (STEG, ETAP, SNCFT).
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la

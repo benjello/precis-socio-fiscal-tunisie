@@ -1,20 +1,27 @@
-"""Tableaux du chapitre « Les grandes entreprises » : une section par entreprise.
+"""Figures et tableaux du chapitre « Les grandes entreprises » : une section par entreprise.
 
     from figures import grandes_entreprises as ge
-    ge.tableau_fiche_court("steg", caption=…, tbl_id=…)     # premier plan, 2018-2023
-    ge.tableau_fiche_detail("steg", "LF2022", caption=…)    # détail replié, une édition
-    ge.tableau_steg_comptes(caption=…)                      # comptes publiés, 2013-2023
-    ge.tableau_etap_rapports(caption=…)                     # rapports annuels de l'ETAP
+    ge.figure("transferts", caption=…)                      # transferts de onze entreprises
+    ge.figure("resultats", …) ; ge.figure("revisions", …)   # résultats nets ; éditions successives
+    ge.figure("steg_comptes", …) ; ge.figure("etap_rapports", …)  # comptes publiés
+    ge.figure("steg_fiches", …)                             # fiche du ministère, 2018-2023
+    ge.figure("stir_budget", …)                             # STIR : transferts, résultat, emploi
+    ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
-D'OÙ VIENNENT LES DONNÉES. Trois séries de `tunisia-data`, lues par `figtools.series()` :
+D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
 `entreprises-publiques-fiches-entreprises` (fiches du rapport annexé à la loi de finances,
-famille budgétaire), `steg-etats-financiers` et `etap-rapports-annuels` (comptes publiés par
-l'entreprise). Rien n'est saisi ici : ni valeur, ni page.
+famille budgétaire), `entreprises-publiques-transferts-par-entreprise`,
+`entreprises-publiques-resultats-nets-dix-premieres` et
+`entreprises-publiques-effectifs-par-entreprise` (même rapport) ; `steg-etats-financiers` et
+`etap-rapports-annuels` (comptes publiés par l'entreprise). Rien n'est saisi ici : ni valeur,
+ni page.
 
-RÈGLES. Les deux familles ne se mêlent pas : un tableau lit une seule série. Dans le tableau
-court, un exercice est donné dans la dernière édition qui le porte, nommée en tête de colonne
-avec le statut du chiffre ; aucune valeur n'est raccordée d'une édition à l'autre. « — » : la
-case n'existe pas dans l'édition ; case vide imprimée « - » : « – ».
+RÈGLES. Les deux familles ne se mêlent pas : une figure lit une seule famille. Un exercice est
+donné dans la dernière édition qui le porte, nommée sous l'année ; aucune valeur n'est
+raccordée d'une édition à l'autre (barres ou points, jamais de trait entre deux éditions).
+Une valeur provisoire, estimée ou probable est hachurée, ou tracée en marque creuse. Une case
+que la source laisse vide n'est pas tracée : elle n'est pas un zéro. Le tableau des fiches
+imprimées garde « — » (la case n'existe pas dans l'édition) et « – » (case vide imprimée).
 """
 from __future__ import annotations
 
@@ -24,13 +31,24 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 import figtools  # noqa: E402
 
-from figures.entreprises_publiques import _md, _n  # noqa: E402
+import matplotlib  # noqa: E402
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt  # noqa: E402
+import pandas as pd  # noqa: E402
+from matplotlib.colors import to_rgb  # noqa: E402
+from matplotlib.lines import Line2D  # noqa: E402
+from matplotlib.patches import Patch  # noqa: E402
+from matplotlib.ticker import FuncFormatter, MaxNLocator  # noqa: E402
+
+from figures.entreprises_publiques import (  # noqa: E402
+    BLEU, COULEUR_EDITION, COURT as NOMS, GRIS, NOIR, ORANGE, ROUGE, STATUTS_FERMES, VERT, VIOLET,
+    _md, _n, _style)
 
 S_FICHES = "entreprises-publiques-fiches-entreprises"
 S_STEG = "steg-etats-financiers"
 S_ETAP = "etap-rapports-annuels"
 
-# Le tableau court rapproche, pour la lecture, deux mises en page : ces paires désignent la même
+# La figure de la fiche rapproche, pour la lecture, deux mises en page : ces paires désignent la même
 # ligne comptable sous deux libellés (fonds propres ; résultat net avant modifications).
 COURT = [
     ("produits_exploitation", "produits_exploitation", "Produits d'exploitation", False),
@@ -106,30 +124,6 @@ def _fiches(entite: str):
     return f[f["entite"] == entite]
 
 
-def tableau_fiche_court(entite: str, caption: str, tbl_id: str) -> None:
-    """Huit lignes, exercices 2018-2023, dernière édition de chaque exercice."""
-    f = _fiches(entite)
-    exercices = sorted(f["exercice"].unique())
-    der = {x: f[f["exercice"] == x]["edition"].max() for x in exercices}
-    entetes = []
-    for x in exercices:
-        st = f[(f["exercice"] == x) & (f["edition"] == der[x])]["statut"].iloc[0]
-        st = STATUT.get(st, st)
-        entetes.append(f"{x}<br>({_ed(der[x])}{', ' + st if st else ''})")
-    lignes = []
-    for ind_a, ind_b, lib, signe in COURT:
-        cases = []
-        for x in exercices:
-            ind = ind_a if der[x] == "LF2022" else ind_b
-            if ind is None:
-                cases.append("—")
-                continue
-            r = f[(f["exercice"] == x) & (f["edition"] == der[x]) & (f["indicateur"] == ind)]
-            cases.append(_case(r.iloc[0] if len(r) else None, ind, signe))
-        lignes.append([lib] + cases)
-    _md(["Millions de dinars"] + entetes, "g" + "d" * len(exercices), lignes, caption, tbl_id)
-
-
 def tableau_fiche_detail(entite: str, editions: tuple[str, ...], caption: str,
                          tbl_id: str) -> None:
     """Toutes les grandeurs imprimées par une mise en page, une colonne par (exercice, édition)."""
@@ -152,111 +146,767 @@ def tableau_fiche_detail(entite: str, editions: tuple[str, ...], caption: str,
     _md(["Millions de dinars"] + ent, "g" + "d" * len(cols), lignes, caption, tbl_id)
 
 
-STEG_COLS = [("revenus", "Revenus"), ("subvention_exploitation", "Subvention d'exploitation"),
-             ("resultat_exploitation", "Résultat d'exploitation"),
-             ("resultat_net", "Résultat net"),
-             ("resultat_net_apres_modifications", "Résultat après modifications comptables"),
-             ("capitaux_propres", "Capitaux propres avant affectation"),
-             ("total_passifs", "Total des passifs"),
-             ("emprunts_non_courants", "dont emprunts non courants"),
-             ("concours_bancaires", "dont concours bancaires")]
 
 
-def tableau_steg_comptes(caption: str, tbl_id: str) -> None:
-    """Comptes publiés de la STEG : un exercice par ligne, lu dans le fichier de l'exercice
-    (2013 : colonne de comparaison du fichier de 2014)."""
-    s = figtools.series(S_STEG)
-    m = s[s["fichier_du_meme_exercice"].astype(bool)
-          | ((s["exercice"] == 2013) & (s["document"] == "steg_ef_2014.pdf"))]
-    lignes = []
-    for x in sorted(m["exercice"].unique()):
-        b = m[m["exercice"] == x]
-        cases = []
-        for g, _ in STEG_COLS:
-            r = b[(b["grandeur"] == g) & (b["colonne"].isin(["exercice", "exercice précédent"]))]
-            signe = g.startswith("resultat")
-            cases.append("—" if r.empty else _n(r.iloc[0]["valeur_md"], 1, signe))
-        lignes.append([str(x)] + cases)
-    _md(["Exercice"] + [l for _, l in STEG_COLS], "g" + "d" * len(STEG_COLS), lignes,
-        caption, tbl_id)
+# === Figures ======================================================================================
 
-
-ETAP_COLS = [("revenus", "Revenus"), ("produits_exploitation", "Produits d'exploitation"),
-             ("resultat_net", "Résultat net"), ("effectif", "Effectif en fin d'année (agents)")]
-
-
-def tableau_etap_rapports(caption: str, tbl_id: str) -> None:
-    """Rapports annuels de l'ETAP : un exercice par ligne, lu dans le rapport de l'exercice,
-    à défaut dans le rapport suivant (colonne de l'exercice précédent), nommé en note."""
-    s = figtools.series(S_ETAP)
-    lignes = []
-    for x in sorted(s["exercice"].unique()):
-        b = s[s["exercice"] == x]
-        cases = []
-        for g, _ in ETAP_COLS:
-            r = b[b["grandeur"] == g]
-            if r.empty:
-                cases.append("—")
-                continue
-            propre = r[r["exercice_couverture"] == x]
-            r = (propre if len(propre) else r.sort_values("exercice_couverture")).iloc[0]
-            dec = 0 if g == "effectif" else 1
-            txt = _n(r["valeur"], dec, g == "resultat_net")
-            if r["exercice_couverture"] != x:
-                txt += f" (RA {int(r['exercice_couverture'])})"
-            cases.append(txt)
-        lignes.append([str(x)] + cases)
-    _md(["Exercice"] + [l for _, l in ETAP_COLS], "g" + "d" * len(ETAP_COLS), lignes,
-        caption, tbl_id)
-
-
-# --- Entreprise sans fiche versée : quatre séries budgétaires, une colonne chacune ----------------
-
-S_CDC = "cdc-cloture-entreprises-publiques"
 S_TRANSFERTS_EP = "entreprises-publiques-transferts-par-entreprise"
 S_NETS_EP = "entreprises-publiques-resultats-nets-dix-premieres"
 S_EFFECTIFS_EP = "entreprises-publiques-effectifs-par-entreprise"
-MARQUE = {"provisoire": " (prov.)", "estimé": " (est.)", "probable": " (prob.)"}
+HACHURE = "////"
+ENTREPRISES_TRANSFERTS = ("stir", "office_cereales", "steg", "cnss", "cnrps", "office_huile",
+                          "sonede", "onas", "transtu", "sncft", "tunisie_autoroutes")
+ENTREPRISES_RESULTATS = ("steg", "stir", "etap", "office_cereales", "cpg", "gct", "tunisair",
+                         "transtu", "sncft", "office_commerce", "rnta", "pct")
 
 
-def _derniere(df, col_annee: str, entite: str) -> dict:
-    """Pour chaque année, la ligne de la dernière édition qui la donne."""
-    b = df[df["entite"] == entite]
-    return {int(a): g.sort_values("edition").iloc[-1] for a, g in b.groupby(col_annee)}
+def _clair(couleur: str, part: float) -> tuple:
+    """La couleur mêlée de blanc : `part` = 1 la garde, 0 donne du blanc (pas de transparence,
+    pour que deux barres empilées ne se mélangent pas)."""
+    r, g, b = to_rgb(couleur)
+    return (1 - part * (1 - r), 1 - part * (1 - g), 1 - part * (1 - b))
 
 
-def tableau_entreprise_budget(entite: str, poste_cdc: str, caption: str, tbl_id: str) -> None:
-    """Un exercice par ligne : principal de dette garantie payé par l'État (Cour des comptes,
-    par gestion), transferts du budget, résultat net des classements, effectif et charges de
-    personnel (rapport sur les entreprises publiques, dernière édition de chaque exercice).
-    Aucune valeur n'est raccordée d'une série à l'autre : chaque colonne lit sa série."""
-    c = figtools.series(S_CDC)
-    c = c[(c["rubrique"] == "garantie_principal_paye") & (c["poste"] == poste_cdc)]
-    garantie = {int(r.gestion): float(r.valeur_md)
-                for r in c.drop_duplicates("gestion").itertuples(index=False)}
-    transferts = _derniere(figtools.series(S_TRANSFERTS_EP), "annee", entite)
+COULEURS_TRANSFERTS = {
+    "stir": ORANGE, "office_cereales": VERT, "steg": BLEU, "cnss": VIOLET,
+    "cnrps": _clair(VIOLET, 0.5), "office_huile": ROUGE, "sonede": _clair(BLEU, 0.45),
+    "onas": _clair(VERT, 0.45), "transtu": _clair(ORANGE, 0.45), "sncft": _clair(ROUGE, 0.45),
+    "tunisie_autoroutes": _clair(GRIS, 0.55)}
+
+
+def _ferme(statut) -> bool:
+    return statut in STATUTS_FERMES
+
+
+def _barre(ax, x, h, couleur, *, bas=0.0, largeur=0.7, ferme=True, texte=None):
+    """Une barre ; hachurée sur fond clair quand la valeur n'est pas une réalisation."""
+    if ferme:
+        b = ax.bar(x, h, width=largeur, bottom=bas, color=couleur, lw=0)
+    else:
+        b = ax.bar(x, h, width=largeur, bottom=bas, facecolor=_clair(couleur, 0.3),
+                   edgecolor=couleur, hatch=HACHURE, lw=0)
+    if texte:
+        figtools.infobulle(b[0], texte)
+    return b[0]
+
+
+def _point(ax, x, y, couleur, *, ferme=True, texte=None, ms=5.0, marque="o"):
+    pt, = ax.plot([x], [y], marque, color=couleur, ms=ms, mfc=couleur if ferme else "white",
+                  mew=1.2, ls="")
+    if texte:
+        figtools.infobulle(pt, texte)
+    return pt
+
+
+def _axe_md(ax, unite: str = "MD") -> None:
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _n(v, 0)))
+    ax.set_ylabel(unite, fontsize=7.5)
+    ax.tick_params(labelsize=7)
+
+
+def _hors_source(ax, x, texte="n. d.", couleur=GRIS) -> None:
+    """Annotation d'une case que la source ne donne pas, au pied du cadre (pas sur le zéro)."""
+    ax.annotate(texte, xy=(x, 0.02), xycoords=("data", "axes fraction"), ha="center",
+                va="bottom", fontsize=7, color=couleur)
+
+
+def _zero(ax, x) -> None:
+    """Un zéro imprimé par la source : la barre est invisible, la valeur s'écrit."""
+    ax.annotate("0", xy=(x, 0), xytext=(0, 2), textcoords="offset points", ha="center",
+                va="bottom", fontsize=6.5, color=NOIR)
+
+
+def _marges(ax, haut=0.3) -> None:
+    """Place pour la légende au-dessus, et sous le zéro quand des valeurs sont négatives."""
+    lo, hi = ax.get_ylim()
+    lo, hi = min(lo, 0), max(hi, 0)
+    e = hi - lo
+    ax.set_ylim(lo - (0.05 * e if lo < 0 else 0), hi + haut * e)
+
+
+def _poignee_hachure(libelle="provisoire, estimé ou probable") -> Patch:
+    return Patch(facecolor=_clair(GRIS, 0.3), edgecolor=GRIS, hatch=HACHURE, lw=0,
+                 label=libelle)
+
+
+def _derniere_edition(df: pd.DataFrame, cles: list[str]) -> pd.DataFrame:
+    return df.sort_values("edition").groupby(cles, as_index=False).tail(1)
+
+
+# --- 1. Transferts du budget à onze entreprises, dernière édition de chaque année ----------------
+
+def _transferts_ep() -> pd.DataFrame:
+    t = figtools.series(S_TRANSFERTS_EP)
+    return t[t["entite"].isin(ENTREPRISES_TRANSFERTS + ("total",))]
+
+
+def fig_transferts():
+    figtools.apply_lang_font()
+    t = _transferts_ep()
+    d = _derniere_edition(t, ["entite", "annee"])
+    annees = sorted(int(a) for a in d["annee"].unique())
+    fig, ax = plt.subplots(figsize=(9.6, 5.6))
+    etiquettes = []
+    for a in annees:
+        bas = 0.0
+        for ent in ENTREPRISES_TRANSFERTS:
+            r = d[(d["entite"] == ent) & (d["annee"] == a)]
+            if r.empty:
+                continue
+            r = r.iloc[0]
+            v = float(r["valeur_md"])
+            ferme = r["statut"] == "réalisé"
+            _barre(ax, a, v, COULEURS_TRANSFERTS[ent], bas=bas, ferme=ferme,
+                   texte=f"{a} — {NOMS[ent]} : {_n(v)} MD, édition {_ed(r['edition'])}"
+                         + ("" if ferme else ", provisoire"))
+            bas += v
+        tot = d[(d["entite"] == "total") & (d["annee"] == a)].iloc[0]
+        trait, = ax.plot([a - 0.42, a + 0.42], [tot["valeur_md"]] * 2, color=NOIR, lw=1.8)
+        figtools.infobulle(trait, f"{a} — total imprimé de l'échantillon de l'édition "
+                                  f"{_ed(tot['edition'])} ({int(tot['echantillon'])} entreprises)"
+                                  f" : {_n(tot['valeur_md'])} MD")
+        ax.annotate(_n(tot["valeur_md"]), xy=(a, tot["valeur_md"]), xytext=(0, 3),
+                    textcoords="offset points", ha="center", va="bottom", fontsize=7)
+        st = "" if tot["statut"] == "réalisé" else ", prov."
+        etiquettes.append(f"{a}\n{_ed(tot['edition'])}{st}\n({int(tot['echantillon'])} entr.)")
+    ax.set_xticks(annees, etiquettes)
+    _style(ax)
+    _axe_md(ax, "millions de dinars courants")
+    ax.set_ylim(0, ax.get_ylim()[1] * 1.06)
+    poignees = [Patch(color=COULEURS_TRANSFERTS[e], label=NOMS[e])
+                for e in reversed(ENTREPRISES_TRANSFERTS)]
+    poignees += [Line2D([], [], color=NOIR, lw=1.8,
+                        label="total imprimé de l'échantillon\n(toutes ses entreprises)"),
+                 _poignee_hachure("provisoire (2022)")]
+    ax.legend(handles=poignees, fontsize=7, frameon=False, loc="upper left",
+              bbox_to_anchor=(1.01, 1))
+    fig.tight_layout()
+    return fig
+
+
+def _table_transferts_ep(t: pd.DataFrame) -> pd.DataFrame:
+    t = t.sort_values(["entite", "annee", "edition"])
+    return pd.DataFrame({
+        "Entreprise": [("Total de l'échantillon, imprimé" if e == "total" else NOMS.get(e, l))
+                       for e, l in zip(t["entite"], t["libelle"])],
+        "Année": t["annee"], "Édition": [_ed(e) for e in t["edition"]],
+        "Entreprises de l'échantillon": t["echantillon"], "Statut": t["statut"],
+        "Transferts (MD courants)": t["valeur_md"], "Imprimé": t["imprime"],
+        "Dernière édition de l'année": t["derniere_edition"], "Tableau": t["tableau"],
+        "Page du fichier": t["page_pdf"]})
+
+
+def table_transferts():
+    return _table_transferts_ep(_transferts_ep())
+
+
+# --- 2. Résultats nets des classements --------------------------------------------------------
+
+def _nets() -> pd.DataFrame:
     n = figtools.series(S_NETS_EP)
-    nets = _derniere(n.drop_duplicates(["exercice", "edition", "entite"]), "exercice", entite)
+    n = n[~n["doublon_imprime"].astype(bool) | ~n.duplicated(["exercice", "edition", "entite"])]
+    return n.drop_duplicates(["exercice", "edition", "entite"])
+
+
+def _valeurs_distinctes(bloc: pd.DataFrame, col: str, dec: int = 1):
+    """[(valeur, [éditions qui la donnent])], dans l'ordre des éditions."""
+    out: dict[float, list[str]] = {}
+    for r in bloc.sort_values("edition").itertuples():
+        v = getattr(r, col)
+        if v != v:
+            continue
+        out.setdefault(round(float(v), dec), []).append(r.edition)
+    return list(out.items())
+
+
+def _sucettes(ax, x, valeurs, nom: str, dec: int = 1, unite: str = "MD", statuts=None):
+    """Une marque par valeur distincte, à la couleur de la dernière édition qui la donne ;
+    tige depuis zéro. Deux valeurs d'un même exercice sont décalées de part et d'autre."""
+    k = len(valeurs)
+    for i, (v, eds) in enumerate(valeurs):
+        xi = x + (i - (k - 1) / 2) * 0.24
+        coul = COULEUR_EDITION.get(eds[-1], NOIR)
+        ferme = True if statuts is None else _ferme(statuts.get(eds[-1]))
+        ax.plot([xi, xi], [0, v], color=coul, lw=1.1)
+        _point(ax, xi, v, coul, ferme=ferme,
+               texte=f"{nom}, {x} : {_n(v, dec, True)} {unite} — édition"
+                     f"{'s' if len(eds) > 1 else ''} " + ", ".join(_ed(e) for e in eds))
+
+
+def fig_resultats():
+    figtools.apply_lang_font()
+    n = _nets()
+    exercices = sorted(int(x) for x in n["exercice"].unique())
+    fig, axes = plt.subplots(3, 4, figsize=(11.5, 7.6), sharex=True)
+    for ax, ent in zip(axes.flat, ENTREPRISES_RESULTATS):
+        b = n[n["entite"] == ent]
+        nom = NOMS[ent].split(" (")[0]
+        for x in exercices:
+            vals = _valeurs_distinctes(b[b["exercice"] == x], "valeur_md")
+            if vals:
+                _sucettes(ax, x, vals, nom)
+        ax.axhline(0, color=NOIR, lw=0.7)
+        lo, hi = ax.get_ylim()
+        ax.set_ylim(min(lo, 0) - 0.08 * (hi - lo), max(hi, 0) + 0.05 * (hi - lo))
+        for x in exercices:
+            if b[b["exercice"] == x].empty:
+                _hors_source(ax, x, "n. c.")
+        ax.set_title(NOMS[ent], fontsize=8, loc="left")
+        _style(ax)
+        _axe_md(ax, "")
+        ax.set_xticks(exercices)
+    editions = sorted(n["edition"].unique())
+    poignees = [Line2D([], [], color=COULEUR_EDITION[e], marker="o", lw=1.1,
+                       label=f"édition {_ed(e)}") for e in editions]
+    poignees.append(Line2D([], [], color="none", label="n. c. : hors des deux classements"))
+    fig.legend(handles=poignees, fontsize=8, frameon=False, loc="lower center",
+               ncol=len(poignees))
+    fig.supylabel("résultat net, millions de dinars courants", fontsize=8)
+    fig.tight_layout(rect=(0.01, 0.04, 1, 1))
+    return fig
+
+
+def table_resultats():
+    n = _nets()
+    n = n[n["entite"].isin(ENTREPRISES_RESULTATS)].sort_values(["entite", "exercice", "edition"])
+    return pd.DataFrame({
+        "Entreprise": [NOMS[e] for e in n["entite"]], "Exercice": n["exercice"],
+        "Édition": [_ed(e) for e in n["edition"]],
+        "Entreprises de l'échantillon": n["echantillon"],
+        "Classement": n["sens"].map({"positifs": "dix premiers résultats positifs",
+                                     "negatifs": "dix premiers résultats négatifs"}),
+        "Rang": n["rang"], "Résultat net (MD courants)": n["valeur_md"],
+        "Imprimé": n["imprime"], "Page imprimée": n["page_imprimee"]})
+
+
+# --- 3. Transferts d'une même année dans les éditions successives ----------------------------
+
+def fig_revisions():
+    figtools.apply_lang_font()
+    t = _transferts_ep()
+    annees = sorted(int(a) for a in t["annee"].unique())
+    fig, axes = plt.subplots(3, 4, figsize=(11.5, 7.6), sharex=True)
+    for ax, ent in zip(axes.flat, ENTREPRISES_TRANSFERTS):
+        b = t[t["entite"] == ent]
+        nom = NOMS[ent].split(" (")[0]
+        for a in annees:
+            g = b[b["annee"] == a].sort_values("edition")
+            k = len(g)
+            if k > 1:
+                ax.plot([a, a], [g["valeur_md"].min(), g["valeur_md"].max()], color=GRIS,
+                        lw=0.8, alpha=0.6)
+            for i, r in enumerate(g.itertuples()):
+                xi = a + (i - (k - 1) / 2) * 0.17
+                coul = COULEUR_EDITION.get(r.edition, NOIR)
+                _point(ax, xi, r.valeur_md, coul, ferme=r.statut == "réalisé", ms=4.5,
+                       texte=f"{nom}, {a} : {_n(r.valeur_md)} MD — édition {_ed(r.edition)}, "
+                             f"{r.statut}")
+        ax.set_title(NOMS[ent], fontsize=8, loc="left")
+        _style(ax)
+        _axe_md(ax, "")
+        ax.set_ylim(bottom=0, top=ax.get_ylim()[1] * 1.08)
+        ax.set_xticks(annees)
+    leg = axes.flat[-1]
+    leg.axis("off")
+    editions = sorted(t["edition"].unique())
+    poignees = [Line2D([], [], color=COULEUR_EDITION[e], marker="o", ls="",
+                       label=f"édition {_ed(e)}") for e in editions]
+    poignees += [Line2D([], [], color=GRIS, marker="o", mfc="white", ls="",
+                        label="valeur provisoire"),
+                 Line2D([], [], color=GRIS, lw=0.8, label="écart entre éditions")]
+    leg.legend(handles=poignees, fontsize=8, frameon=False, loc="center")
+    fig.supylabel("transferts du budget, millions de dinars courants", fontsize=8)
+    fig.tight_layout()
+    return fig
+
+
+def table_revisions():
+    t = _transferts_ep()
+    return _table_transferts_ep(t[t["entite"] != "total"])
+
+
+# --- 4. Comptes publiés de la STEG, 2013-2023 ----------------------------------------------------
+
+STEG_LIB = {"revenus": "Revenus", "subvention_exploitation": "Subvention d'exploitation",
+            "resultat_exploitation": "Résultat d'exploitation", "resultat_net": "Résultat net",
+            "resultat_net_apres_modifications": "Résultat après modifications comptables",
+            "capitaux_propres": "Capitaux propres avant affectation",
+            "total_passifs": "Total des passifs, hors capitaux propres",
+            "emprunts_non_courants": "dont emprunts non courants",
+            "concours_bancaires": "dont concours bancaires"}
+
+
+def _steg() -> pd.DataFrame:
+    """Chaque exercice lu dans les états financiers de l'exercice ; 2013 dans la colonne de
+    comparaison de ceux de 2014."""
+    s = figtools.series(S_STEG)
+    m = s[s["fichier_du_meme_exercice"].astype(bool)
+          | ((s["exercice"] == 2013) & (s["document"] == "steg_ef_2014.pdf"))]
+    m = m[m["colonne"].isin(["exercice", "exercice précédent"]) & m["grandeur"].isin(STEG_LIB)]
+    return m.drop_duplicates(["exercice", "grandeur"])
+
+
+def fig_steg_comptes():
+    figtools.apply_lang_font()
+    m = _steg()
+    v = {(int(r.exercice), r.grandeur): float(r.valeur_md) for r in m.itertuples()}
+    ans = sorted({a for a, _ in v})
+    fig, axes = plt.subplots(3, 1, figsize=(9.6, 9.4), sharex=True)
+
+    def barres(ax, cles_couleurs, largeur=0.36):
+        k = len(cles_couleurs)
+        for i, (cle, coul) in enumerate(cles_couleurs):
+            for a in ans:
+                if (a, cle) in v:
+                    x = a + (i - (k - 1) / 2) * largeur
+                    _barre(ax, x, v[a, cle], coul, largeur=largeur,
+                           texte=f"{a} — {STEG_LIB[cle]} : {_n(v[a, cle], 1, cle.startswith('resultat'))} MD")
+                    if v[a, cle] == 0:
+                        _zero(ax, x)
+
+    ax = axes[0]
+    barres(ax, [("revenus", BLEU), ("subvention_exploitation", ORANGE)])
+    figtools.marque_rupture(ax, 2015, "subvention indirecte sur le gaz\ncomprise jusqu'en 2014")
+    ax.set_title("Revenus et subvention d'exploitation", fontsize=9, loc="left")
+    ax.legend(handles=[Patch(color=BLEU, label=STEG_LIB["revenus"]),
+                       Patch(color=ORANGE, label=STEG_LIB["subvention_exploitation"])],
+              fontsize=7, frameon=False, loc="upper left")
+
+    ax = axes[1]
+    barres(ax, [("resultat_exploitation", _clair(VERT, 0.55)), ("resultat_net", VERT)])
+    for a in ans:
+        if (a, "resultat_net_apres_modifications") in v:
+            _point(ax, a, v[a, "resultat_net_apres_modifications"], VIOLET, marque="D", ms=5,
+                   texte=f"{a} — résultat après modifications comptables : "
+                         f"{_n(v[a, 'resultat_net_apres_modifications'], 1, True)} MD")
+    ax.axhline(0, color=NOIR, lw=0.7)
+    ax.set_title("Résultats", fontsize=9, loc="left")
+    ax.legend(handles=[Patch(color=_clair(VERT, 0.55), label=STEG_LIB["resultat_exploitation"]),
+                       Patch(color=VERT, label=STEG_LIB["resultat_net"]),
+                       Line2D([], [], color=VIOLET, marker="D", ls="",
+                              label="résultat après modifications comptables\n(imprimé "
+                                    "certaines années seulement)")],
+              fontsize=7, frameon=False, loc="lower left")
+
+    ax = axes[2]
+    for a in ans:
+        if (a, "total_passifs") in v:
+            tp = v[a, "total_passifs"]
+            _barre(ax, a + 0.18, tp, _clair(ROUGE, 0.25), largeur=0.36,
+                   texte=f"{a} — {STEG_LIB['total_passifs']} : {_n(tp)} MD")
+            bas = 0.0
+            for cle, coul in (("emprunts_non_courants", ROUGE),
+                              ("concours_bancaires", _clair(ROUGE, 0.6))):
+                if (a, cle) in v:
+                    _barre(ax, a + 0.18, v[a, cle], coul, bas=bas, largeur=0.36,
+                           texte=f"{a} — {STEG_LIB[cle]} : {_n(v[a, cle])} MD")
+                    bas += v[a, cle]
+        if (a, "capitaux_propres") in v:
+            _barre(ax, a - 0.18, v[a, "capitaux_propres"], VIOLET, largeur=0.36,
+                   texte=f"{a} — {STEG_LIB['capitaux_propres']} : "
+                         f"{_n(v[a, 'capitaux_propres'], 1, True)} MD")
+    ax.axhline(0, color=NOIR, lw=0.7)
+    ax.set_title("Capitaux propres et passifs en fin d'exercice", fontsize=9, loc="left")
+    ax.legend(handles=[Patch(color=VIOLET, label=STEG_LIB["capitaux_propres"]),
+                       Patch(color=_clair(ROUGE, 0.25), label=STEG_LIB["total_passifs"]),
+                       Patch(color=ROUGE, label=STEG_LIB["emprunts_non_courants"]),
+                       Patch(color=_clair(ROUGE, 0.6), label=STEG_LIB["concours_bancaires"])],
+              fontsize=7, frameon=False, loc="upper left")
+    for ax in axes:
+        _style(ax)
+        _axe_md(ax, "millions de dinars courants")
+    axes[0].set_ylim(0, axes[0].get_ylim()[1] * 1.12)
+    axes[2].set_ylim(axes[2].get_ylim()[0], axes[2].get_ylim()[1] * 1.05)
+    axes[-1].set_xticks(ans)
+    fig.tight_layout()
+    return fig
+
+
+def table_steg_comptes():
+    m = _steg().sort_values(["exercice", "grandeur"])
+    return pd.DataFrame({
+        "Exercice": m["exercice"], "Grandeur": m["grandeur"].map(STEG_LIB),
+        "Libellé imprimé": m["libelle_imprime"], "Montant (MD courants)": m["valeur_md"].round(3),
+        "Imprimé (dinars)": m["imprime"], "États financiers": m["document"],
+        "Colonne": m["colonne"], "Page du fichier": m["page_pdf"]})
+
+
+# --- 5. Rapports annuels de l'ETAP, 2004-2024 ----------------------------------------------------
+
+def _etap_retenu() -> pd.DataFrame:
+    """Un exercice lu dans le rapport de l'exercice, à défaut dans le premier rapport suivant."""
+    s = figtools.series(S_ETAP)
+    s = s.assign(_propre=(s["exercice_couverture"] == s["exercice"]).astype(int))
+    s = s.sort_values(["exercice", "grandeur", "_propre", "exercice_couverture"],
+                      ascending=[True, True, False, True])
+    return s.groupby(["exercice", "grandeur"], as_index=False).head(1).drop(columns="_propre")
+
+
+def fig_etap_rapports():
+    figtools.apply_lang_font()
+    r = _etap_retenu()
+    v = {(int(x.exercice), x.grandeur): (float(x.valeur), int(x.exercice_couverture))
+         for x in r.itertuples()}
+    ans = list(range(min(a for a, _ in v), max(a for a, _ in v) + 1))
+    fig, axes = plt.subplots(3, 1, figsize=(9.6, 8.6), sharex=True,
+                             gridspec_kw={"height_ratios": [1.2, 1, 0.8]})
+
+    def rapport(a, g):
+        ra = v[a, g][1]
+        return "" if ra == a else f" — lu dans le rapport de {ra}"
+
+    ax = axes[0]
+    for a in ans:
+        if (a, "produits_exploitation") in v:
+            p = v[a, "produits_exploitation"][0]
+            _barre(ax, a, p, _clair(BLEU, 0.35),
+                   texte=f"{a} — produits d'exploitation : {_n(p)} MD{rapport(a, 'produits_exploitation')}")
+        if (a, "revenus") in v:
+            rv = v[a, "revenus"][0]
+            _barre(ax, a, rv, BLEU, largeur=0.42,
+                   texte=f"{a} — revenus : {_n(rv)} MD{rapport(a, 'revenus')}")
+    ax.set_title("Produits d'exploitation et revenus", fontsize=9, loc="left")
+    ax.legend(handles=[Patch(color=_clair(BLEU, 0.35), label="produits d'exploitation (total)"),
+                       Patch(color=BLEU, label="dont revenus")],
+              fontsize=7, frameon=False, loc="upper left")
+
+    ax = axes[1]
+    for a in ans:
+        if (a, "resultat_net") in v:
+            rn = v[a, "resultat_net"][0]
+            _barre(ax, a, rn, VERT if rn >= 0 else ROUGE,
+                   texte=f"{a} — résultat net : {_n(rn, 1, True)} MD{rapport(a, 'resultat_net')}")
+    ax.axhline(0, color=NOIR, lw=0.7)
+    ax.set_title("Résultat net", fontsize=9, loc="left")
+
+    ax = axes[2]
+    for a in ans:
+        if (a, "effectif") in v:
+            e = v[a, "effectif"][0]
+            _barre(ax, a, e, _clair(VIOLET, 0.7),
+                   texte=f"{a} — effectif en fin d'année : {_n(e, 0)} agents{rapport(a, 'effectif')}")
+    ax.set_title("Effectif en fin d'année", fontsize=9, loc="left")
+    ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+
+    for ax, unite in zip(axes, ("millions de dinars courants", "millions de dinars courants",
+                                "agents")):
+        _style(ax)
+        _axe_md(ax, unite)
+    for ax, g in zip(axes, ("produits_exploitation", "resultat_net", "effectif")):
+        for a in ans:
+            if (a, g) not in v:
+                _hors_source(ax, a, "n. d.")
+            elif v[a, g][1] != a:
+                ax.annotate(f"RA\n{v[a, g][1]}", xy=(a, max(v[a, g][0], 0)), xytext=(0, 2),
+                            textcoords="offset points", ha="center", va="bottom", fontsize=6,
+                            color=GRIS)
+    axes[0].set_ylim(0, axes[0].get_ylim()[1] * 1.15)
+    axes[1].set_ylim(axes[1].get_ylim()[0], axes[1].get_ylim()[1] * 1.12)
+    axes[2].set_ylim(0, axes[2].get_ylim()[1] * 1.2)
+    axes[-1].set_xticks(ans[::2])
+    fig.tight_layout()
+    return fig
+
+
+def table_etap_rapports():
+    s = figtools.series(S_ETAP)
+    r = _etap_retenu()
+    retenu = set(zip(r["exercice"], r["grandeur"], r["exercice_couverture"]))
+    s = s.sort_values(["exercice", "grandeur", "exercice_couverture"])
+    return pd.DataFrame({
+        "Exercice": s["exercice"], "Grandeur": s["grandeur"], "Valeur": s["valeur"],
+        "Unité": s["unite"], "Rapport annuel de": s["exercice_couverture"],
+        "Retenue dans la figure": [(a, g, c) in retenu for a, g, c in
+                                   zip(s["exercice"], s["grandeur"], s["exercice_couverture"])],
+        "Libellé imprimé": s["libelle_imprime"], "Imprimé": s["imprime"],
+        "Page imprimée": s["page_imprimee"], "Page du fichier": s["page_pdf"]})
+
+
+# --- 6. Fiche du ministère des Finances, par entreprise, 2018-2023 -------------------------------
+
+CREANCIERS = [("dette_etat", "État", VIOLET), ("dette_banques", "banques", BLEU),
+              ("dette_entreprises_publiques", "entreprises publiques", ORANGE),
+              ("dette_caisses_sociales", "caisses sociales", VERT),
+              ("dette_autres", "autres", _clair(GRIS, 0.45))]
+
+
+def _case_fiche(f, x, e, ind):
+    """(valeur, statut, case vide) d'une case de la fiche, ou None si elle n'existe pas."""
+    r = f[(f["exercice"] == x) & (f["edition"] == e) & (f["indicateur"] == ind)]
+    if r.empty:
+        return None
+    r = r.iloc[0]
+    vide = r["case_vide"] in (True, "True")
+    return (None if vide else float(r["valeur"]), r["statut"], vide)
+
+
+def fig_fiche(entite: str):
+    figtools.apply_lang_font()
+    f = _fiches(entite)
+    nom = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT"}.get(entite, entite)
+    exercices = sorted(int(x) for x in f["exercice"].unique())
+    der = {x: f[f["exercice"] == x]["edition"].max() for x in exercices}
+    statut = {x: f[(f["exercice"] == x) & (f["edition"] == der[x])]["statut"].iloc[0]
+              for x in exercices}
+
+    def court(x, ind_a, ind_b):
+        ind = ind_a if der[x] == "LF2022" else ind_b
+        return None if ind is None else _case_fiche(f, x, der[x], ind)
+
+    fig = plt.figure(figsize=(11.0, 9.6))
+    gs = fig.add_gridspec(3, 2, height_ratios=[1, 1, 1])
+    ax_p, ax_r = fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1])
+    ax_b, ax_d = fig.add_subplot(gs[1, 0]), fig.add_subplot(gs[1, 1])
+    ax_e, ax_l = fig.add_subplot(gs[2, 0]), fig.add_subplot(gs[2, 1])
+    vides = []
+
+    def groupe(ax, series, titre, signe=False):
+        k = len(series)
+        larg = 0.8 / k
+        for i, (ind_a, ind_b, lib, coul) in enumerate(series):
+            for x in exercices:
+                c = court(x, ind_a, ind_b)
+                xi = x + (i - (k - 1) / 2) * larg
+                if c is None:
+                    continue
+                val, st, vide = c
+                if vide:
+                    _hors_source(ax, xi, "–")
+                    vides.append(f"{lib} {x}")
+                    continue
+                _barre(ax, xi, val, coul, largeur=larg, ferme=_ferme(st),
+                       texte=f"{nom}, {x} — {lib} : {_n(val, 1, signe)} MD, édition "
+                             f"{_ed(der[x])}, {st}")
+                if val == 0:
+                    _zero(ax, xi)
+        ax.set_title(titre, fontsize=9, loc="left")
+        ax.legend(handles=[Patch(color=c, label=l) for _, _, l, c in series], fontsize=7,
+                  frameon=False, loc="upper left")
+
+    groupe(ax_p, [("produits_exploitation", "produits_exploitation", "produits d'exploitation",
+                   BLEU),
+                  ("subventions_exploitation", "subventions_exploitation",
+                   "dont subvention d'exploitation", ORANGE)],
+           "Produits et subvention d'exploitation")
+    groupe(ax_r, [("resultat_exploitation", "resultat_exploitation", "résultat d'exploitation",
+                   _clair(VERT, 0.55)),
+                  ("resultat_net", "resultat_net_avant_modifications",
+                   "résultat net (avant modifications comptables)", VERT)],
+           "Résultats", signe=True)
+    groupe(ax_b, [("capitaux_propres", "capitaux_propres_avant_affectation", "fonds propres",
+                   VIOLET),
+                  ("dette_totale", None, "dette totale (édition LF 2022)", ROUGE),
+                  (None, "total_passifs", "total des passifs, hors fonds propres\n"
+                                          "(éditions LF 2024 et LF 2025)", _clair(ROUGE, 0.45))],
+           "Fonds propres, dette et passifs en fin d'exercice", signe=True)
+
+    # Effectif
+    for x in exercices:
+        c = court(x, "effectif", "effectif")
+        if c is None:
+            continue
+        val, st, vide = c
+        if vide:
+            _hors_source(ax_e, x, "–")
+            continue
+        _barre(ax_e, x, val, _clair(VIOLET, 0.7), ferme=_ferme(st),
+               texte=f"{nom}, {x} — effectif : {_n(val, 0)} agents, édition {_ed(der[x])}, {st}")
+        ax_e.annotate(_n(val, 0), xy=(x, val), xytext=(0, 2), textcoords="offset points",
+                      ha="center", va="bottom", fontsize=6.5)
+    ax_e.set_title("Effectif (agents)", fontsize=9, loc="left")
+
+    # Dette par créancier, édition LF 2022
+    d22 = sorted(int(x) for x in f[f["edition"] == "LF2022"]["exercice"].unique())
+    for x in d22:
+        tot = _case_fiche(f, x, "LF2022", "dette_totale")
+        if tot is None:
+            continue
+        if tot[2]:
+            ax_d.annotate("non imprimée", xy=(x, 0.02), xycoords=("data", "axes fraction"),
+                          ha="center", va="bottom", fontsize=6.5, color=GRIS)
+            continue
+        bas = 0.0
+        for ind, lib, coul in CREANCIERS:
+            c = _case_fiche(f, x, "LF2022", ind)
+            if c is None or c[2] or c[0] == 0:
+                continue
+            _barre(ax_d, x, c[0], coul, bas=bas, ferme=_ferme(c[1]), largeur=0.55,
+                   texte=f"{nom}, fin {x} — dette envers {lib} : {_n(c[0])} MD")
+            bas += c[0]
+        trait, = ax_d.plot([x - 0.36, x + 0.36], [tot[0]] * 2, color=NOIR, lw=1.6)
+        figtools.infobulle(trait, f"{nom}, fin {x} — dette totale imprimée : {_n(tot[0])} MD")
+        ecart = tot[0] - bas
+        txt = _n(tot[0])
+        if abs(ecart) >= 0.05:
+            txt += f"\n(créanciers : {_n(bas)})"
+        ax_d.annotate(txt, xy=(x, tot[0]), xytext=(0, 3), textcoords="offset points",
+                      ha="center", va="bottom", fontsize=6.5)
+    ax_d.set_xticks(d22, [f"fin {x}\n{STATUT.get(statut_ed, statut_ed) or ''}".strip()
+                          for x, statut_ed in
+                          ((x, f[(f['exercice'] == x) & (f['edition'] == 'LF2022')]['statut'].iloc[0])
+                           for x in d22)])
+    ax_d.set_xlim(min(d22) - 0.6, max(d22) + 0.6)
+    ax_d.set_title("Dette par créancier, édition LF 2022", fontsize=9, loc="left")
+
+    etiquettes = [f"{x}\n{_ed(der[x])}" + (f"\n{STATUT[statut[x]]}" if STATUT.get(statut[x]) else "")
+                  for x in exercices]
+    for ax in (ax_p, ax_r, ax_b, ax_e, ax_d):
+        _style(ax)
+        _axe_md(ax, "agents" if ax is ax_e else "MD courants")
+        _marges(ax, 0.45 if ax in (ax_b, ax_d) else 0.3)
+        if ax is not ax_d:
+            ax.set_xticks(exercices, etiquettes)
+            ax.set_xlim(min(exercices) - 0.6, max(exercices) + 0.6)
+        ax.axhline(0, color=NOIR, lw=0.6)
+    ax_l.axis("off")
+    leg = ax_l.legend(handles=[Patch(color=c, label=l) for _, l, c in CREANCIERS]
+                      + [Line2D([], [], color=NOIR, lw=1.6, label="dette totale imprimée")],
+                      title="Dette par créancier", title_fontsize=7.5, fontsize=7.5,
+                      frameon=False, loc="upper left", ncol=2, alignment="left")
+    ax_l.add_artist(leg)
+    ax_l.legend(handles=[_poignee_hachure(), Line2D([], [], color="none",
+                         label="« – » : case laissée vide par l'édition"),
+                         Line2D([], [], color="none",
+                                label="sous l'année : édition retenue et statut du chiffre")],
+                fontsize=7.5, frameon=False, loc="lower left")
+    fig.tight_layout()
+    return fig
+
+
+def table_fiche(entite: str):
+    f = _fiches(entite).sort_values(["exercice", "edition", "rang_colonne"])
+    return pd.DataFrame({
+        "Exercice": f["exercice"], "Édition": [_ed(e) for e in f["edition"]],
+        "Statut": f["statut"], "Grandeur": f["indicateur"].map(LIB).fillna(f["indicateur"]),
+        "Valeur": f["valeur"], "Unité": f["unite"], "Imprimé": f["imprime"],
+        "Case laissée vide": f["case_vide"], "Libellé arabe": f["libelle_ar"],
+        "Page imprimée": f["page_imprimee"], "Page du fichier": f["page_pdf"]})
+
+
+# --- 7. STIR : ce que le rapport sur les entreprises publiques en dit ---------------------------
+
+def _stir():
+    t = figtools.series(S_TRANSFERTS_EP)
+    t = t[t["entite"] == "stir"]
+    n = _nets()
+    n = n[n["entite"] == "stir"]
     e = figtools.series(S_EFFECTIFS_EP)
-    effectifs = _derniere(e[e["effectif"].notna()], "exercice", entite)
-    annees = sorted(set(garantie) | set(transferts) | set(nets) | set(effectifs))
+    e = e[e["entite"] == "stir"]
+    return t, n, e
 
-    def case(d: dict, a: int, col: str, dec: int = 1, signe: bool = False,
-             statut: bool = True) -> str:
-        if a not in d:
-            return "—"
-        r = d[a]
-        v = r[col]
-        if v is None or v != v:
-            return "—"
-        return _n(v, dec, signe) + (MARQUE.get(r["statut"], "") if statut else "")
 
-    lignes = [[str(a),
-               _n(garantie[a], 1) if a in garantie else "—",
-               case(transferts, a, "valeur_md"),
-               case(nets, a, "valeur_md", signe=True, statut=False),
-               case(effectifs, a, "effectif", dec=0),
-               case(effectifs, a, "charges_personnel_md")] for a in annees]
-    _md(["Exercice", "Principal de dette garantie payé par l'État<br>(MD)",
-         "Transferts du budget<br>(MD)", "Résultat net<br>(MD)", "Effectif<br>(agents)",
-         "Charges de personnel<br>(MD)"], "gddddd", lignes, caption, tbl_id)
+def fig_stir_budget():
+    figtools.apply_lang_font()
+    t, n, e = _stir()
+    fig, axes = plt.subplots(2, 2, figsize=(10.6, 7.0), sharex=True)
+    ans = list(range(2016, 2024))
+
+    ax = axes[0, 0]
+    for r in _derniere_edition(t, ["annee"]).itertuples():
+        ferme = r.statut == "réalisé"
+        _barre(ax, r.annee, r.valeur_md, ORANGE, ferme=ferme,
+               texte=f"STIR, {r.annee} — transferts du budget : {_n(r.valeur_md)} MD, édition "
+                     f"{_ed(r.edition)}, {r.statut}")
+        ax.annotate(_n(r.valeur_md), xy=(r.annee, r.valeur_md), xytext=(0, 2),
+                    textcoords="offset points", ha="center", va="bottom", fontsize=6.5)
+        ax.annotate(_ed(r.edition), xy=(r.annee, 0.02), xycoords=("data", "axes fraction"),
+                    ha="center", va="bottom", fontsize=5.8, color="white" if ferme else GRIS)
+    ax.set_title("Transferts du budget (dernière édition de chaque année)", fontsize=9, loc="left")
+    _axe_md(ax, "MD courants")
+
+    ax = axes[0, 1]
+    for x in range(2017, 2023):
+        vals = _valeurs_distinctes(n[n["exercice"] == x], "valeur_md")
+        if vals:
+            _sucettes(ax, x, vals, "STIR")
+    ax.axhline(0, color=NOIR, lw=0.7)
+    lo, hi = ax.get_ylim()
+    ax.set_ylim(lo - 0.08 * (hi - lo), max(hi, 0) + 0.1 * (hi - lo))
+    for x in range(2017, 2023):
+        if n[n["exercice"] == x].empty:
+            _hors_source(ax, x, "n. c.")
+    ax.set_title("Résultat net (classements des dix premiers résultats)", fontsize=9, loc="left")
+    ax.legend(handles=[Line2D([], [], color=COULEUR_EDITION[ed], marker="o", lw=1.1,
+                              label=f"édition {_ed(ed)}") for ed in sorted(n["edition"].unique())]
+              + [Line2D([], [], color="none", label="n. c. : hors des deux classements")],
+              fontsize=6.5, frameon=False, loc="lower left")
+    _axe_md(ax, "MD courants")
+
+    for ax, col, titre, dec, unite in ((axes[1, 0], "effectif", "Effectif", 0, "agents"),
+                                       (axes[1, 1], "charges_personnel_md",
+                                        "Charges de personnel", 1, "MD courants")):
+        b = _derniere_edition(e[e[col].notna()], ["exercice"])
+        for r in b.itertuples():
+            val = getattr(r, col)
+            ferme = _ferme(r.statut)
+            _barre(ax, r.exercice, val, _clair(VIOLET, 0.7), ferme=ferme,
+                   texte=f"STIR, {r.exercice} — {titre.lower()} : {_n(val, dec)} {unite}, "
+                         f"édition {_ed(r.edition)}, {r.statut}")
+            ax.annotate(_n(val, dec), xy=(r.exercice, val), xytext=(0, 2),
+                        textcoords="offset points", ha="center", va="bottom", fontsize=6.5)
+        for x in ans:
+            if x not in set(int(v) for v in b["exercice"]):
+                _hors_source(ax, x, "n. d.")
+        ax.set_title(titre, fontsize=9, loc="left")
+        _axe_md(ax, unite)
+        ax.set_ylim(0, ax.get_ylim()[1] * 1.15)
+    for ax in axes.flat:
+        _style(ax)
+        ax.set_xlim(2015.4, 2023.6)
+        ax.set_xticks(ans)
+    axes[0, 0].set_ylim(0, axes[0, 0].get_ylim()[1] * 1.1)
+    fig.legend(handles=[_poignee_hachure("provisoire"),
+                        Line2D([], [], color="none", label="n. d. : non donné par le rapport")],
+               fontsize=7.5, frameon=False, loc="lower center", ncol=2)
+    fig.tight_layout(rect=(0, 0.04, 1, 1))
+    return fig
+
+
+def table_stir_budget():
+    t, n, e = _stir()
+    lignes = []
+    for r in t.sort_values(["annee", "edition"]).itertuples():
+        lignes.append(("Transferts du budget", r.annee, _ed(r.edition), r.statut, r.valeur_md,
+                       "MD courants", r.imprime, f"{r.tableau}, page du fichier {r.page_pdf}"))
+    for r in n.sort_values(["exercice", "edition"]).itertuples():
+        lignes.append(("Résultat net (classement)", r.exercice, _ed(r.edition), "non dit",
+                       r.valeur_md, "MD courants", r.imprime, f"p. {r.page_imprimee}"))
+    for r in e.sort_values(["exercice", "edition"]).itertuples():
+        page = f"p. {int(r.page_imprimee)}" if r.page_imprimee == r.page_imprimee else \
+            f"page du fichier {r.page_pdf}"
+        lignes.append(("Effectif", r.exercice, _ed(r.edition), r.statut, r.effectif, "agents",
+                       r.effectif_imprime, page))
+        if r.charges_personnel_md == r.charges_personnel_md:
+            lignes.append(("Charges de personnel", r.exercice, _ed(r.edition), r.statut,
+                           r.charges_personnel_md, "MD courants", r.charges_personnel_imprime,
+                           page))
+    return pd.DataFrame(lignes, columns=["Grandeur", "Exercice", "Édition", "Statut", "Valeur",
+                                         "Unité", "Imprimé", "Localisation"])
+
+
+# --- point d'entrée ------------------------------------------------------------------------------
+
+FIGURES = {
+    "transferts": (fig_transferts, table_transferts, (S_TRANSFERTS_EP,),
+                   "fig_ep_ge_transferts"),
+    "resultats": (fig_resultats, table_resultats, (S_NETS_EP,), "fig_ep_ge_resultats"),
+    "revisions": (fig_revisions, table_revisions, (S_TRANSFERTS_EP,), "fig_ep_ge_revisions"),
+    "steg_comptes": (fig_steg_comptes, table_steg_comptes, (S_STEG,), "fig_ep_steg_comptes"),
+    "etap_rapports": (fig_etap_rapports, table_etap_rapports, (S_ETAP,), "fig_ep_etap_rapports"),
+    "steg_fiches": (lambda: fig_fiche("steg"), lambda: table_fiche("steg"), (S_FICHES,),
+                    "fig_ep_steg_fiches"),
+    "etap_fiches": (lambda: fig_fiche("etap"), lambda: table_fiche("etap"), (S_FICHES,),
+                    "fig_ep_etap_fiches"),
+    "sncft_fiches": (lambda: fig_fiche("sncft"), lambda: table_fiche("sncft"), (S_FICHES,),
+                     "fig_ep_sncft_fiches"),
+    "stir_budget": (fig_stir_budget, table_stir_budget,
+                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_stir_budget"),
+}
+
+
+def figure(nom: str, caption: str, note_lecture: str | None = None) -> None:
+    """Trace la figure `nom` en onglets (chunk `output: asis`, étiqueté `fig-…`)."""
+    trace, table, series, slug = FIGURES[nom]
+    figtools.figure_tabs(trace(), table(), *series, slug=slug, caption=caption,
+                         note_lecture=note_lecture)
+    plt.close("all")

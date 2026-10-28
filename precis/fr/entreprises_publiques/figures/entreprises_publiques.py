@@ -58,8 +58,6 @@ S_DIVIDENDES = "entreprises-publiques-dividendes-etat"
 S_FLUX = "entreprises-publiques-versements-transferts"
 S_AGREGATS = "entreprises-publiques-resultats-agreges"
 S_CROISEES = "entreprises-publiques-dettes-creances-croisees"
-S_TRANSFERTS_EP = "entreprises-publiques-transferts-par-entreprise"
-S_NETS_EP = "entreprises-publiques-resultats-nets-dix-premieres"
 S_CESSIONS = "privatisation-recettes-annuelles"
 S_PLANS = "privatisation-recettes-par-plan"
 S_BILAN = "privatisation-bilan-global-par-mode"
@@ -720,73 +718,6 @@ def tableau_resultats(caption: str, tbl_id: str = "tbl-ep-resultats") -> None:
               [_n(getattr(r, c)) for c in cols] for r in a.itertuples()]
     _md(["Exercice", "Édition<br>(entreprises)"] + [f"{LIB[c]}<br>(MD)" for c in cols],
         "gg" + "d" * len(cols), lignes, caption, tbl_id)
-
-
-# --- par entreprise -------------------------------------------------------------------------------
-
-def _cases_par_edition(bloc, col_valeur="valeur_md", signe=False) -> str:
-    """Une valeur par édition ; l'édition est nommée quand elles diffèrent."""
-    if bloc.empty:
-        return "—"
-    b = bloc.sort_values("edition")
-    valeurs = [(r["edition"], float(r[col_valeur])) for _, r in b.iterrows()]
-    if len({round(v, 1) for _, v in valeurs}) == 1:
-        return _n(valeurs[-1][1], 1, signe)
-    distinctes, vus = [], set()
-    for e, v in valeurs:
-        if round(v, 1) not in vus:
-            vus.add(round(v, 1))
-            distinctes.append(f"{_n(v, 1, signe)} ({_ed(e)})")
-    return " ; ".join(distinctes)
-
-
-def tableau_transferts_entreprises(caption: str, entites: tuple[str, ...],
-                                   tbl_id: str = "tbl-ep-transferts-entreprises") -> None:
-    t = _s(S_TRANSFERTS_EP)
-    annees = sorted(t["annee"].unique())
-    lignes = []
-    for ent in entites:
-        b = t[t["entite"] == ent]
-        nom = COURT.get(ent, b["libelle"].iloc[0] if len(b) else ent)
-        if ent == "total":
-            nom = "**Total de l'échantillon, imprimé**"
-        cases = []
-        for a in annees:
-            x = b[b["annee"] == a]
-            x = x[x["edition"] == x["edition"].max()] if len(x) else x
-            cases.append("—" if x.empty else _n(x.iloc[0]["valeur_md"]))
-        lignes.append([nom] + cases)
-    der = {a: t[t["annee"] == a]["edition"].max() for a in annees}
-    _md(["Entreprise"] + [f"{a}<br>({_ed(der[a])}, MD)" for a in annees], "g" + "d" * len(annees),
-        lignes, caption, tbl_id)
-
-
-def tableau_transferts_revisions(caption: str, entites: tuple[str, ...],
-                                 tbl_id: str = "tbl-ep-transferts-revisions") -> None:
-    t = _s(S_TRANSFERTS_EP)
-    annees = sorted(t["annee"].unique())
-    lignes = []
-    for ent in entites:
-        b = t[t["entite"] == ent]
-        nom = COURT.get(ent, b["libelle"].iloc[0] if len(b) else ent)
-        lignes.append([nom] + [_cases_par_edition(b[b["annee"] == a]) for a in annees])
-    _md(["Entreprise"] + [f"{a}<br>(MD)" for a in annees], "g" + "g" * len(annees), lignes,
-        caption, tbl_id)
-
-
-def tableau_resultats_entreprises(caption: str, entites: tuple[str, ...],
-                                  tbl_id: str = "tbl-ep-resultats-entreprises") -> None:
-    n = _s(S_NETS_EP)
-    n = n[~n["doublon_imprime"].astype(bool) | ~n.duplicated(["exercice", "edition", "entite"])]
-    exercices = sorted(n["exercice"].unique())
-    lignes = []
-    for ent in entites:
-        b = n[n["entite"] == ent].drop_duplicates(["exercice", "edition"])
-        nom = COURT.get(ent, b["libelle"].iloc[0] if len(b) else ent)
-        lignes.append([nom] + [_cases_par_edition(b[b["exercice"] == x], signe=True)
-                               for x in exercices])
-    _md(["Entreprise"] + [f"{x}<br>(MD)" for x in exercices], "g" + "g" * len(exercices), lignes,
-        caption, tbl_id)
 
 
 # --- cessions --------------------------------------------------------------------------------------
