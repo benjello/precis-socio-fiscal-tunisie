@@ -1,0 +1,6 @@
+- libelle: Minimum de perception
+  parametre: parameters/fiscalite_indirecte/droits_douane/minimum_perception/taux_general.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_douane.minimum_perception.taux_general/table/
+- libelle: Biens d'équipement
+  parametre: parameters/fiscalite_indirecte/droits_douane/minimum_perception/biens_equipement.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_douane.minimum_perception.biens_equipement/table/

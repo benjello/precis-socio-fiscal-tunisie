@@ -1,0 +1,147 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-28
+# séries (tunisia_data) : entreprises-publiques-transferts-par-entreprise
+# sources (citation) : @minfin-ep, @minfin-ep-2022, @minfin-ep-2023, @minfin-ep-2024
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : LES ÉDITIONS SE CONTREDISENT ET LE FICHIER NE CHOISIT PAS : STIR 2019, 1 296 (LF 2021, LF 2022) puis 1 905,3 (LF 2023) ; STIR 2018, 1 500 puis 1 846,1 ; Office des céréales 2019, 1 324,1 puis 1 800,2 ; 2021, 213,5 (provisoire) puis 1 687,5 ; ONAS 2018, 59,4 puis 155,9. Les révisions vont presque toutes à la hausse : la subvention d'une année est soldée les années suivantes. La CPSCL figure en 2017-2020 (LF 2021, LF 2022) puis est ramenée à zéro (LF 2023 : financements destinés aux collectivités, non une subvention de l'État). La CNSS, absente de la LF 2023, entre en LF 2024 (1 321,6 en 2020). LIGNES NULLES NON TRANSCRITES (banques, ETAP, etc.) : une entité absente d'une édition y est imprimée à zéro ou n'est pas dans l'échantillon — consulter le rapport avant de conclure. `statut` provisoire pour la dernière année de chaque édition. Contenu de la ligne non détaillé : elle ne concorde ni avec la subvention d'exploitation des comptes, ni avec les interventions de l'annexe 8 (transport-transferts-par-entreprise) — AUCUN RACCORD. Somme des lignes = total imprimé (contrôlé, écarts d'un dixième déclarés) ; le total de 2022 est 14 560,6, quand le tableau d'ensemble imprime 14 506,6. Mêmes identifiants d'entité que la série du transport (transtu, sncft). LU À L'IMAGE.
+# note : Transferts du budget reçus par onze entreprises, 2017-2022 : toutes les valeurs imprimées par les éditions successives du rapport sur les entreprises publiques, en millions de dinars courants. Source : mêmes rapports que la @fig-ep-transferts-entreprises
+Entreprise,Année,Édition,Entreprises de l'échantillon,Statut,Transferts (MD courants),Imprimé,Dernière édition de l'année,Tableau,Page du fichier
+CNRPS,2017,LF 2021,33,réalisé,500.0,500,True,tableau 31,149-150
+CNRPS,2018,LF 2021,33,réalisé,200.0,200,False,tableau 31,149-150
+CNRPS,2018,LF 2022,50,réalisé,200.0,200,True,tableau 38,104-105
+CNRPS,2019,LF 2021,33,réalisé,450.0,450,False,tableau 31,149-150
+CNRPS,2019,LF 2022,50,réalisé,450.0,450,False,tableau 38,104-105
+CNRPS,2019,LF 2023,48,réalisé,450.0,"450,0",True,tableau 40,201-202
+CNRPS,2020,LF 2021,33,provisoire,0.0,0,False,tableau 31,149-150
+CNRPS,2020,LF 2022,50,provisoire,460.0,460,False,tableau 38,104-105
+CNRPS,2020,LF 2023,48,réalisé,460.0,"460,0",False,tableau 40,201-202
+CNRPS,2020,LF 2024,48,réalisé,970.6,"970,6",True,tableau 45,155-156
+CNRPS,2021,LF 2023,48,provisoire,500.0,"500,0",False,tableau 40,201-202
+CNRPS,2021,LF 2024,48,réalisé,762.3,"762,3",True,tableau 45,155-156
+CNRPS,2022,LF 2024,48,provisoire,579.5,"579,5",True,tableau 45,155-156
+CNSS,2017,LF 2021,33,réalisé,0.0,0,True,tableau 31,149-150
+CNSS,2018,LF 2021,33,réalisé,0.0,0,False,tableau 31,149-150
+CNSS,2018,LF 2022,50,réalisé,0.0,0,True,tableau 38,104-105
+CNSS,2019,LF 2021,33,réalisé,0.0,0,False,tableau 31,149-150
+CNSS,2019,LF 2022,50,réalisé,0.0,0,True,tableau 38,104-105
+CNSS,2020,LF 2021,33,provisoire,25.0,25,False,tableau 31,149-150
+CNSS,2020,LF 2022,50,provisoire,40.0,40,False,tableau 38,104-105
+CNSS,2020,LF 2024,48,réalisé,1321.6,"1321,6",True,tableau 45,155-156
+CNSS,2021,LF 2024,48,réalisé,842.0,"842,0",True,tableau 45,155-156
+CNSS,2022,LF 2024,48,provisoire,943.5,"943,5",True,tableau 45,155-156
+Office des céréales,2017,LF 2021,33,réalisé,980.2,"980,2",True,tableau 31,149-150
+Office des céréales,2018,LF 2021,33,réalisé,1320.3,"1320,3",False,tableau 31,149-150
+Office des céréales,2018,LF 2022,50,réalisé,1403.5,"1403,5",True,tableau 38,104-105
+Office des céréales,2019,LF 2021,33,réalisé,1324.1,"1324,1",False,tableau 31,149-150
+Office des céréales,2019,LF 2022,50,réalisé,1800.2,"1800,2",False,tableau 38,104-105
+Office des céréales,2019,LF 2023,48,réalisé,1800.2,"1800,2",True,tableau 40,201-202
+Office des céréales,2020,LF 2021,33,provisoire,3.0,3,False,tableau 31,149-150
+Office des céréales,2020,LF 2022,50,provisoire,1745.0,1745,False,tableau 38,104-105
+Office des céréales,2020,LF 2023,48,réalisé,1745.0,"1745,0",False,tableau 40,201-202
+Office des céréales,2020,LF 2024,48,réalisé,1726.5,"1726,5",True,tableau 45,155-156
+Office des céréales,2021,LF 2023,48,provisoire,213.5,"213,5",False,tableau 40,201-202
+Office des céréales,2021,LF 2024,48,réalisé,1687.5,"1687,5",True,tableau 45,155-156
+Office des céréales,2022,LF 2024,48,provisoire,3237.4,"3237,4",True,tableau 45,155-156
+Office national de l'huile,2017,LF 2021,33,réalisé,286.468,"286,468",True,tableau 31,149-150
+Office national de l'huile,2018,LF 2021,33,réalisé,305.279,"305,279",False,tableau 31,149-150
+Office national de l'huile,2018,LF 2022,50,réalisé,304.999,"304,999",True,tableau 38,104-105
+Office national de l'huile,2019,LF 2021,33,réalisé,273.15,"273,15",False,tableau 31,149-150
+Office national de l'huile,2019,LF 2022,50,réalisé,292.369,"292,369",False,tableau 38,104-105
+Office national de l'huile,2019,LF 2023,48,réalisé,292.4,"292,4",True,tableau 40,201-202
+Office national de l'huile,2020,LF 2021,33,provisoire,323.0,323,False,tableau 31,149-150
+Office national de l'huile,2020,LF 2022,50,provisoire,315.137,"315,137",False,tableau 38,104-105
+Office national de l'huile,2020,LF 2023,48,réalisé,310.1,"310,1",False,tableau 40,201-202
+Office national de l'huile,2020,LF 2024,48,réalisé,310.1,"310,1",True,tableau 45,155-156
+Office national de l'huile,2021,LF 2023,48,provisoire,322.9,"322,9",False,tableau 40,201-202
+Office national de l'huile,2021,LF 2024,48,réalisé,322.9,"322,9",True,tableau 45,155-156
+Office national de l'huile,2022,LF 2024,48,provisoire,345.3,"345,3",True,tableau 45,155-156
+ONAS (assainissement),2017,LF 2021,33,réalisé,58.0,58,True,tableau 31,149-150
+ONAS (assainissement),2018,LF 2021,33,réalisé,59.4,"59,4",False,tableau 31,149-150
+ONAS (assainissement),2018,LF 2022,50,réalisé,155.9,"155,9",True,tableau 38,104-105
+ONAS (assainissement),2019,LF 2021,33,réalisé,97.7,"97,7",False,tableau 31,149-150
+ONAS (assainissement),2019,LF 2022,50,réalisé,210.7,"210,7",False,tableau 38,104-105
+ONAS (assainissement),2019,LF 2023,48,réalisé,210.7,"210,7",True,tableau 40,201-202
+ONAS (assainissement),2020,LF 2021,33,provisoire,95.0,95,False,tableau 31,149-150
+ONAS (assainissement),2020,LF 2022,50,provisoire,218.3,"218,3",False,tableau 38,104-105
+ONAS (assainissement),2020,LF 2023,48,réalisé,201.3,"201,3",False,tableau 40,201-202
+ONAS (assainissement),2020,LF 2024,48,réalisé,201.3,"201,3",True,tableau 45,155-156
+ONAS (assainissement),2021,LF 2023,48,provisoire,230.1,"230,1",False,tableau 40,201-202
+ONAS (assainissement),2021,LF 2024,48,réalisé,222.5,"222,5",True,tableau 45,155-156
+ONAS (assainissement),2022,LF 2024,48,provisoire,185.5,"185,5",True,tableau 45,155-156
+SNCFT (chemins de fer),2017,LF 2021,33,réalisé,104.56,"104,56",True,tableau 31,149-150
+SNCFT (chemins de fer),2018,LF 2021,33,réalisé,96.16,"96,16",False,tableau 31,149-150
+SNCFT (chemins de fer),2018,LF 2022,50,réalisé,86.636,"86,636",True,tableau 38,104-105
+SNCFT (chemins de fer),2019,LF 2021,33,réalisé,93.24,"93,24",False,tableau 31,149-150
+SNCFT (chemins de fer),2019,LF 2022,50,réalisé,93.247,"93,247",False,tableau 38,104-105
+SNCFT (chemins de fer),2019,LF 2023,48,réalisé,93.2,"93,2",True,tableau 40,201-202
+SNCFT (chemins de fer),2020,LF 2021,33,provisoire,141.2,"141,2",False,tableau 31,149-150
+SNCFT (chemins de fer),2020,LF 2022,50,provisoire,152.924,"152,924",False,tableau 38,104-105
+SNCFT (chemins de fer),2020,LF 2023,48,réalisé,152.9,"152,9",False,tableau 40,201-202
+SNCFT (chemins de fer),2020,LF 2024,48,réalisé,152.9,"152,9",True,tableau 45,155-156
+SNCFT (chemins de fer),2021,LF 2023,48,provisoire,139.4,"139,4",False,tableau 40,201-202
+SNCFT (chemins de fer),2021,LF 2024,48,réalisé,135.4,"135,4",True,tableau 45,155-156
+SNCFT (chemins de fer),2022,LF 2024,48,provisoire,129.8,"129,8",True,tableau 45,155-156
+SONEDE (eau),2017,LF 2021,33,réalisé,180.7,"180,7",True,tableau 31,149-150
+SONEDE (eau),2018,LF 2021,33,réalisé,156.0,156,False,tableau 31,149-150
+SONEDE (eau),2018,LF 2022,50,réalisé,156.0,156,True,tableau 38,104-105
+SONEDE (eau),2019,LF 2021,33,réalisé,169.6,"169,6",False,tableau 31,149-150
+SONEDE (eau),2019,LF 2022,50,réalisé,169.6,"169,6",False,tableau 38,104-105
+SONEDE (eau),2019,LF 2023,48,réalisé,169.9,"169,9",True,tableau 40,201-202
+SONEDE (eau),2020,LF 2021,33,provisoire,189.3,"189,3",False,tableau 31,149-150
+SONEDE (eau),2020,LF 2022,50,provisoire,193.3,"193,3",False,tableau 38,104-105
+SONEDE (eau),2020,LF 2023,48,réalisé,348.2,"348,2",False,tableau 40,201-202
+SONEDE (eau),2020,LF 2024,48,réalisé,378.8,"378,8",True,tableau 45,155-156
+SONEDE (eau),2021,LF 2023,48,provisoire,244.8,"244,8",False,tableau 40,201-202
+SONEDE (eau),2021,LF 2024,48,réalisé,366.1,"366,1",True,tableau 45,155-156
+SONEDE (eau),2022,LF 2024,48,provisoire,369.1,"369,1",True,tableau 45,155-156
+STEG (électricité et gaz),2017,LF 2021,33,réalisé,914.6,"914,6",True,tableau 31,149-150
+STEG (électricité et gaz),2018,LF 2021,33,réalisé,1200.0,1200,False,tableau 31,149-150
+STEG (électricité et gaz),2018,LF 2022,50,réalisé,1200.0,1200,True,tableau 38,104-105
+STEG (électricité et gaz),2019,LF 2021,33,réalisé,1242.0,1242,False,tableau 31,149-150
+STEG (électricité et gaz),2019,LF 2022,50,réalisé,1242.0,1242,False,tableau 38,104-105
+STEG (électricité et gaz),2019,LF 2023,48,réalisé,1242.0,"1242,0",True,tableau 40,201-202
+STEG (électricité et gaz),2020,LF 2021,33,provisoire,340.0,340,False,tableau 31,149-150
+STEG (électricité et gaz),2020,LF 2022,50,provisoire,100.0,100,False,tableau 38,104-105
+STEG (électricité et gaz),2020,LF 2023,48,réalisé,100.0,"100,0",False,tableau 40,201-202
+STEG (électricité et gaz),2020,LF 2024,48,réalisé,100.0,"100,0",True,tableau 45,155-156
+STEG (électricité et gaz),2021,LF 2023,48,provisoire,1034.0,"1034,0",False,tableau 40,201-202
+STEG (électricité et gaz),2021,LF 2024,48,réalisé,1034.0,"1034,0",True,tableau 45,155-156
+STEG (électricité et gaz),2022,LF 2024,48,provisoire,3307.0,"3307,0",True,tableau 45,155-156
+STIR (raffinage),2017,LF 2021,33,réalisé,869.4,"869,4",True,tableau 31,149-150
+STIR (raffinage),2018,LF 2021,33,réalisé,1500.0,1500,False,tableau 31,149-150
+STIR (raffinage),2018,LF 2022,50,réalisé,1846.1,"1846,1",True,tableau 38,104-105
+STIR (raffinage),2019,LF 2021,33,réalisé,1296.0,1296,False,tableau 31,149-150
+STIR (raffinage),2019,LF 2022,50,réalisé,1296.0,1296,False,tableau 38,104-105
+STIR (raffinage),2019,LF 2023,48,réalisé,1905.3,"1905,3",True,tableau 40,201-202
+STIR (raffinage),2020,LF 2021,33,provisoire,940.0,940,False,tableau 31,149-150
+STIR (raffinage),2020,LF 2022,50,provisoire,594.0,594,False,tableau 38,104-105
+STIR (raffinage),2020,LF 2023,48,réalisé,594.0,"594,0",False,tableau 40,201-202
+STIR (raffinage),2020,LF 2024,48,réalisé,594.0,"594,0",True,tableau 45,155-156
+STIR (raffinage),2021,LF 2023,48,provisoire,2697.2,"2697,2",False,tableau 40,201-202
+STIR (raffinage),2021,LF 2024,48,réalisé,2293.0,"2293,0",True,tableau 45,155-156
+STIR (raffinage),2022,LF 2024,48,provisoire,4321.0,"4321,0",True,tableau 45,155-156
+Transtu (transports de Tunis),2017,LF 2021,33,réalisé,154.4,"154,4",True,tableau 31,149-150
+Transtu (transports de Tunis),2018,LF 2021,33,réalisé,144.2,"144,2",False,tableau 31,149-150
+Transtu (transports de Tunis),2018,LF 2022,50,réalisé,144.2,"144,2",True,tableau 38,104-105
+Transtu (transports de Tunis),2019,LF 2021,33,réalisé,139.2,"139,2",False,tableau 31,149-150
+Transtu (transports de Tunis),2019,LF 2022,50,réalisé,138.6,"138,6",False,tableau 38,104-105
+Transtu (transports de Tunis),2019,LF 2023,48,réalisé,138.6,"138,6",True,tableau 40,201-202
+Transtu (transports de Tunis),2020,LF 2021,33,provisoire,172.4,"172,4",False,tableau 31,149-150
+Transtu (transports de Tunis),2020,LF 2022,50,provisoire,172.5,"172,5",False,tableau 38,104-105
+Transtu (transports de Tunis),2020,LF 2023,48,réalisé,172.5,"172,5",False,tableau 40,201-202
+Transtu (transports de Tunis),2020,LF 2024,48,réalisé,179.3,"179,3",True,tableau 45,155-156
+Transtu (transports de Tunis),2021,LF 2023,48,provisoire,159.9,"159,9",False,tableau 40,201-202
+Transtu (transports de Tunis),2021,LF 2024,48,réalisé,161.9,"161,9",True,tableau 45,155-156
+Transtu (transports de Tunis),2022,LF 2024,48,provisoire,147.5,"147,5",True,tableau 45,155-156
+Tunisie Autoroutes,2017,LF 2021,33,réalisé,0.0,0,True,tableau 31,149-150
+Tunisie Autoroutes,2018,LF 2021,33,réalisé,0.0,0,False,tableau 31,149-150
+Tunisie Autoroutes,2018,LF 2022,50,réalisé,0.0,0,True,tableau 38,104-105
+Tunisie Autoroutes,2019,LF 2021,33,réalisé,180.0,180,False,tableau 31,149-150
+Tunisie Autoroutes,2019,LF 2022,50,réalisé,180.0,180,False,tableau 38,104-105
+Tunisie Autoroutes,2019,LF 2023,48,réalisé,180.0,"180,0",True,tableau 40,201-202
+Tunisie Autoroutes,2020,LF 2021,33,provisoire,170.0,170,False,tableau 31,149-150
+Tunisie Autoroutes,2020,LF 2022,50,provisoire,163.4,"163,4",False,tableau 38,104-105
+Tunisie Autoroutes,2020,LF 2023,48,réalisé,163.4,"163,4",False,tableau 40,201-202
+Tunisie Autoroutes,2020,LF 2024,48,réalisé,163.4,"163,4",True,tableau 45,155-156
+Tunisie Autoroutes,2021,LF 2023,48,provisoire,350.0,"350,0",False,tableau 40,201-202
+Tunisie Autoroutes,2021,LF 2024,48,réalisé,180.9,"180,9",True,tableau 45,155-156
+Tunisie Autoroutes,2022,LF 2024,48,provisoire,170.0,"170,0",True,tableau 45,155-156
