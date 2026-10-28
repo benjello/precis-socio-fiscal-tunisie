@@ -5001,3 +5001,14 @@ matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
 - **Arabe.** Termes retenus sur l'édition arabe du décret de 1997 (lue à l'image, pp. 1366 et
   1370) : وصل ضمان, سند إعفاء, حسابية المواد ; à faire relire par le relecteur-ar.
 - Alias arabes transitoires (23/10/2026) : les clés fondues restent dans `precis/ar/references.json` (note « TRANSITOIRE ») tant que les `.qmd` arabes les citent ; à retirer, clé par clé, après la retraduction du chapitre qui les cite (liste dans `docs/notes/biblio-a-rapatrier.md`, § « Fusion des clés en doublon »).
+
+## Informel (volume XIII, ébauche du 28 octobre 2026)
+
+Note documentaire : `docs/notes/informel-sources-2026-10-28.md` (textes de la CIST de 1993, 2003 et 2023 lus ; estimations classées par objet).
+
+- Écrit : définitions (trois textes), six familles de mesure, estimations par groupe (enquête emploi, solde, valeur ajoutée, macroéconomie, Banque mondiale).
+- À obtenir : Ben Cheikh et Moisseron 2021 (chapitre payant, le 25,2 % n'est pas repris) ; version française de la résolution de 2023 ; FMI DP/2022/011 et Medina-Schneider 2018 (serveur du FMI en 403) ; ITCEQ 2017 ; OCDE ECO WP 1486 ; enquête micro-entreprises postérieure à 2016 ; note INS du 2e trimestre 2020 sans couche texte.
+- À lire à l'image : figure 11 du rapport PNUD-OIT (étiquette de 2018) ; tableau 12 de CRES-BAD ; annexe de la 17e CIST.
+- À demander : table de passage OIT-INS pour l'écart de 2019 (36,9 % contre 44,9 %).
+- À créer au glossaire : secteur informel, économie informelle, travail informel, économie non observée, économie souterraine, enquête mixte, méthode du solde, MIMIC ; corriger le synonyme « travail informel » de `emploi-informel` et le terme arabe (التشغيل غير المنظّم / العمل غير المنظم).
+- À inscrire au catalogue de `tunisia-data` : 26 fichiers (lignes dans § 7 de la note).

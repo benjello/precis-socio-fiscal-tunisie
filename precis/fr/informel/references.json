@@ -72,6 +72,619 @@
       },
       "language": "fr",
       "note": "citation-key: charmes-bencheikh2016-informel\nTableau 12 p. 64 (emploi informel 2005-2015) ; définition p. 9 ; copie archivée dans tunisia-data (data/raw/caisses/cres/, SHA-256 cf8ded41a04d37e0d1014777d1318af9468f0d99a38f3aac1201120a02443161). Chiffres de 2015 provisoires."
+    },
+    {
+      "id": "oit-cist15-1993-secteur-informel",
+      "type": "report",
+      "title": "Résolution concernant les statistiques de l'emploi dans le secteur informel, adoptée par la quinzième Conférence internationale des statisticiens du travail (janvier 1993)",
+      "author": [
+        {
+          "literal": "Organisation internationale du Travail"
+        }
+      ],
+      "publisher": "Bureau international du Travail",
+      "publisher-place": "Genève",
+      "issued": {
+        "date-parts": [
+          [
+            1993,
+            1,
+            28
+          ]
+        ]
+      },
+      "URL": "https://webapps.ilo.org/public/french/bureau/stat/download/res/infsec.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: oit-cist15-1993-secteur-informel\nCiter par paragraphe (§ 5 à 21). Version anglaise : wcms_087484. Copies : tunisia-data data/raw/oit/oit_cist15_1993_*."
+    },
+    {
+      "id": "oit-cist17-2003-emploi-informel",
+      "type": "report",
+      "title": "Directives concernant une définition statistique de l'emploi informel, approuvées par la dix-septième Conférence internationale des statisticiens du travail (novembre-décembre 2003)",
+      "author": [
+        {
+          "literal": "Organisation internationale du Travail"
+        }
+      ],
+      "publisher": "Bureau international du Travail",
+      "publisher-place": "Genève",
+      "issued": {
+        "date-parts": [
+          [
+            2003,
+            12
+          ]
+        ]
+      },
+      "URL": "https://webapps.ilo.org/public/french/bureau/stat/download/guidelines/defempl.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: oit-cist17-2003-emploi-informel\nMatrice en annexe (cellules 1 à 10). Version anglaise : wcms_087622."
+    },
+    {
+      "id": "oit-2013-measuring-informality",
+      "type": "book",
+      "title": "Measuring informality: A statistical manual on the informal sector and informal employment",
+      "author": [
+        {
+          "literal": "Organisation internationale du Travail"
+        }
+      ],
+      "publisher": "International Labour Office",
+      "publisher-place": "Genève",
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "ISBN": "978-92-2-127389-9",
+      "number-of-pages": "340",
+      "URL": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40dgreports/%40dcomm/%40publ/documents/publication/wcms_222979.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "en",
+      "note": "citation-key: oit-2013-measuring-informality\nMéthodes indirectes § 3.44-3.53, pp. 72-75 ; tableau 3.2 p. 76."
+    },
+    {
+      "id": "oit-2018-women-men-informal",
+      "type": "book",
+      "title": "Women and Men in the Informal Economy: A Statistical Picture (3e éd.)",
+      "author": [
+        {
+          "literal": "Organisation internationale du Travail"
+        }
+      ],
+      "publisher": "International Labour Office",
+      "publisher-place": "Genève",
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "URL": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40dgreports/%40dcomm/documents/publication/wcms_626831.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "en",
+      "note": "citation-key: oit-2018-women-men-informal\nCritères harmonisés pp. 10-11 ; Tunisie (TLMPS 2014) tableau B.1 p. 85."
+    },
+    {
+      "id": "ocde-2002-noe-handbook",
+      "type": "book",
+      "title": "Measuring the Non-Observed Economy: A Handbook",
+      "author": [
+        {
+          "literal": "OCDE"
+        },
+        {
+          "literal": "FMI"
+        },
+        {
+          "literal": "OIT"
+        },
+        {
+          "literal": "Comité statistique de la CEI"
+        }
+      ],
+      "publisher": "OCDE",
+      "publisher-place": "Paris",
+      "issued": {
+        "date-parts": [
+          [
+            2002
+          ]
+        ]
+      },
+      "number-of-pages": "233",
+      "DOI": "10.1787/9789264175358-en",
+      "URL": "https://www.oecd.org/sdd/na/1963116.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "en",
+      "note": "citation-key: ocde-2002-noe-handbook\nENO § 1.9 p. 12 ; souterrain § 3.6 p. 37 ; méthodes macro chap. 12 p. 187. Copie récupérée sur le miroir geostat.ge (l'adresse OCDE répond 403)."
+    },
+    {
+      "id": "ins-2020-emploi-informel-2019",
+      "type": "report",
+      "title": "مؤشرات حول العمل غير المنظم لسنة 2019 (Indicateurs sur l'emploi informel 2019)",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/Note%2520emploi%2520informel%25202019.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "ar",
+      "note": "citation-key: ins-2020-emploi-informel-2019\nDéfinitions p. 6 ; tableaux 1-7 pp. 1-5. SHA-256 2e1d5733…e908."
+    },
+    {
+      "id": "ins-2020-enpe-t3",
+      "type": "report",
+      "title": "Indicateurs de l'emploi et du chômage, troisième trimestre 2020",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp1/files/publication/pdf/Note_ENPE_3T2020.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: ins-2020-enpe-t3\nEmploi informel tableaux 5-6 p. 8."
+    },
+    {
+      "id": "ins-2026-note-methodo-emploi",
+      "type": "report",
+      "title": "Note méthodologique de l'Enquête nationale sur l'emploi",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            8
+          ]
+        ]
+      },
+      "URL": "https://ins.tn/sites/default/files-ftp3/files/publication/pdf/Note%20M%C3%A9thodologique%20Enquete%20emploi%20Tunisie.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: ins-2026-note-methodo-emploi\n§ II.4.2 p. 9 (emploi informel, 2017)."
+    },
+    {
+      "id": "ins-2021-scnt-base-2015",
+      "type": "report",
+      "title": "Les Comptes Nationaux changent de base (document de synthèse, base 2015)",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp1/files/publication/pdf/15082021%20SCNT%20Base%202015%20Document%20synthese.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: ins-2021-scnt-base-2015\nÉconomie informelle 27,4 % en 2015 p. 2 ; définition p. 4."
+    },
+    {
+      "id": "hammami-helel-torelli2019-informel",
+      "type": "article-journal",
+      "title": "Vers une meilleure mesure du secteur informel en Tunisie",
+      "author": [
+        {
+          "family": "Hammami",
+          "given": "Mohamed"
+        },
+        {
+          "family": "Helel",
+          "given": "Yamen"
+        },
+        {
+          "family": "Torelli",
+          "given": "Constance"
+        }
+      ],
+      "container-title": "Statéco",
+      "issue": "113",
+      "page": "33-40",
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "URL": "https://www.insee.fr/fr/statistiques/fichier/4295002/5-ST113.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: hammami-helel-torelli2019-informel"
+    },
+    {
+      "id": "frigui-muller2019-base",
+      "type": "article-journal",
+      "title": "Le changement de base des comptes nationaux de la Tunisie : un projet ambitieux mais exigeant",
+      "author": [
+        {
+          "family": "Frigui",
+          "given": "M."
+        },
+        {
+          "family": "Muller",
+          "given": "P."
+        }
+      ],
+      "container-title": "Statéco",
+      "issue": "113",
+      "page": "9-32",
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "URL": "https://www.insee.fr/fr/statistiques/fichier/4295002/4-ST113.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: frigui-muller2019-base\nInformel ≈ 30 % du PIB en base 1997, p. 13."
+    },
+    {
+      "id": "pnud-oit2022-bencheikh-informel",
+      "type": "report",
+      "title": "L'économie informelle en Tunisie : définitions, analyse exploratoire et esquisse d'une stratégie intégrée",
+      "author": [
+        {
+          "family": "Bencheikh",
+          "given": "Nidhal"
+        }
+      ],
+      "publisher": "Programme des Nations unies pour le développement ; Organisation internationale du Travail",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "number-of-pages": "127",
+      "URL": "https://www.undp.org/sites/g/files/zskgke326/files/2023-03/Etude%20sur%20l%27e%CC%81conomie%20informelle%20en%20Tunisie.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: pnud-oit2022-bencheikh-informel\nVA informelle tableau 5 p. 52 ; emploi résiduel pp. 55-58 ; ENO demande de monnaie pp. 65-69."
+    },
+    {
+      "id": "bm-2020-tem-automne",
+      "type": "report",
+      "title": "Tunisia Economic Monitor: Rebuilding the Potential of Tunisian Firms (Fall 2020)",
+      "author": [
+        {
+          "literal": "Banque mondiale"
+        }
+      ],
+      "publisher": "World Bank",
+      "publisher-place": "Washington",
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            12
+          ]
+        ]
+      },
+      "URL": "https://documents1.worldbank.org/curated/en/194331608565600726/pdf/Tunisia-Economic-Monitor-Rebuilding-the-Potential-of-Tunisian-Firms-Fall-2020.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "en",
+      "note": "citation-key: bm-2020-tem-automne\n« 46 percent of the workforce », p. 3, sans définition."
+    },
+    {
+      "id": "ranzani2022-jobs-landscape",
+      "type": "report",
+      "title": "Tunisia's Jobs Landscape",
+      "author": [
+        {
+          "family": "Ranzani",
+          "given": "Marco"
+        }
+      ],
+      "publisher": "World Bank",
+      "publisher-place": "Washington",
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            6
+          ]
+        ]
+      },
+      "URL": "https://documents1.worldbank.org/curated/en/099230012052296892/pdf/P1763220c8d6a107a0ba0304218af3660f6.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "en",
+      "note": "citation-key: ranzani2022-jobs-landscape\nURL = aperçu (Overview) : 43,9 % p. 5, encadré O.1 p. vii. Rapport complet : https://documents1.worldbank.org/curated/en/099230112052280062/pdf/P1763220b9e65b06c0bea806f33a3f3998b.pdf, encadré 2.1 p. 33. Auteur à vérifier sur la page de titre."
+    },
+    {
+      "id": "schneider-buehn-montenegro2010-shadow",
+      "type": "report",
+      "title": "Shadow Economies All over the World: New Estimates for 162 Countries from 1999 to 2007",
+      "author": [
+        {
+          "family": "Schneider",
+          "given": "Friedrich"
+        },
+        {
+          "family": "Buehn",
+          "given": "Andreas"
+        },
+        {
+          "family": "Montenegro",
+          "given": "Claudio E."
+        }
+      ],
+      "publisher": "World Bank",
+      "publisher-place": "Washington",
+      "collection-title": "Policy Research Working Paper n° 5356",
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            7
+          ]
+        ]
+      },
+      "URL": "https://documents1.worldbank.org/curated/en/311991468037132740/pdf/WPS5356.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "en",
+      "note": "citation-key: schneider-buehn-montenegro2010-shadow\nDéfinition p. 5 ; Tunisie tableau 3.3.6 p. 29."
+    },
+    {
+      "id": "elgin-kose-ohnsorge-yu2021-informality",
+      "type": "report",
+      "title": "Understanding Informality",
+      "author": [
+        {
+          "family": "Elgin",
+          "given": "Ceyhun"
+        },
+        {
+          "family": "Kose",
+          "given": "M. Ayhan"
+        },
+        {
+          "family": "Ohnsorge",
+          "given": "Franziska"
+        },
+        {
+          "family": "Yu",
+          "given": "Shu"
+        }
+      ],
+      "publisher": "Centre for Economic Policy Research",
+      "publisher-place": "Londres",
+      "collection-title": "CEPR Discussion Paper n° 16497",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "URL": "https://mpra.ub.uni-muenchen.de/109490/1/MPRA_paper_109490.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "en",
+      "note": "citation-key: elgin-kose-ohnsorge-yu2021-informality\nVersion lue : MPRA 109490 (30 août 2021). Base de données : https://thedocs.worldbank.org/en/doc/37511318c092e6fd4ca3c60f0af0bea3-0350012021/related/informal-economy-database.xlsx"
+    },
+    {
+      "id": "elmekkaoui-et-al2022-erf1576",
+      "type": "report",
+      "title": "Social Security Coverage and Informal Workers in Tunisia",
+      "author": [
+        {
+          "family": "El Mekkaoui",
+          "given": "Najat"
+        },
+        {
+          "family": "Forouheshfar",
+          "given": "Yeganeh"
+        },
+        {
+          "family": "Benhassen",
+          "given": "Asma"
+        },
+        {
+          "family": "Ben Cheikh",
+          "given": "Nidhal"
+        },
+        {
+          "family": "Emont",
+          "given": "Jacob"
+        }
+      ],
+      "publisher": "Economic Research Forum",
+      "publisher-place": "Le Caire",
+      "collection-title": "ERF Working Paper n° 1576",
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            9
+          ]
+        ]
+      },
+      "URL": "https://erf.org.eg/app/uploads/2022/09/1663583965_351_2453952_1576.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            28
+          ]
+        ]
+      },
+      "language": "en",
+      "note": "citation-key: elmekkaoui-et-al2022-erf1576\nEBCNV 2015, 40,2 % non affiliés ; note 2 p. 6."
     }
   ]
 }

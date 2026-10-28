@@ -1,5 +1,73 @@
 # Les estimations pour la Tunisie {#sec-inf-estimations}
 
-Les estimations publiées de l'informel en Tunisie ne se superposent pas : elles diffèrent par la définition, par la source et par l'année. Ce chapitre les présente une à une, avec ces trois éléments, avant de dire lesquelles se comparent.
+Les estimations publiées de l'informel en Tunisie ne se superposent pas : elles portent sur des objets différents (emploi, valeur ajoutée, production non déclarée), emploient des critères différents et rapportent à des dénominateurs différents. Ce chapitre les présente par groupe. Les chiffres ne se comparent qu'à l'intérieur d'un groupe, et les groupes ne figurent jamais sur un même axe. Chaque tableau distingue la statistique publique tunisienne, les rapports d'organisations extérieures et les études d'auteurs.
 
-<!-- TODO (rédacteur) : tableau des estimations (colonnes : étude, définition, enquête ou méthode, année, résultat, page) une fois les sources lues et rangées. Candidates connues par l'étude CRES-BAD 2016 : emploi informel de 34 % en 2005 à 32 % en 2015 (provisoire) [tableau 12, p. 64] ; Ben Cheikh et Moisseron 2021 (25,2 %) ; Banque mondiale 2020 (45 %). Les deux dernières ne sont citées qu'après récupération et lecture des documents. Ne pas aligner ces chiffres sur un même graphique sans avoir comparé leurs définitions. -->
+## L'emploi informel d'après l'enquête emploi {#sec-inf-est-enquete}
+
+| Auteur | Période | Part de l'emploi informel | Dénominateur | Critère des salariés | Source |
+|---|---|---|---|---|---|
+| INS | 2e trimestre 2019 | 44,9 % | emploi total | sans protection sociale, ou sans congé annuel, ou sans congé de maladie payé | [@ins-2020-emploi-informel-2019] |
+| INS | 3e trimestre 2019 | 44,8 % | emploi total | idem | [@ins-2020-emploi-informel-2019] |
+| INS | 4e trimestre 2019 | 44,8 % (38,3 % hors agriculture et pêche) | emploi total | idem | [@ins-2020-emploi-informel-2019, p. 1] |
+| INS | 3e trimestre 2020 | 46,4 % (39,9 % hors agriculture et pêche) | emploi total | idem | [@ins-2020-enpe-t3, p. 8] |
+| OIT (base ILOSTAT, microdonnées de l'enquête emploi) | 2e trimestre 2019 | 36,9 % | emploi total | cotisation de l'employeur ; congés payés seulement si l'information manque | ILOSTAT, indicateur `EMP_NIFL_SEX_RT_A` |
+| Banque mondiale | 2019 | 43,9 % | emploi du secteur privé | cotisation de l'employeur, à défaut congés payés | [@ranzani2022-jobs-landscape, encadré 2.1, p. 33] |
+
+: Les estimations de l'emploi informel tirées de l'enquête emploi {#tbl-inf-est-enquete}
+
+Pour le 2e trimestre 2019, l'INS et l'OIT partent de la même enquête et obtiennent 44,9 % et 36,9 %. L'écart tient à la différence des critères appliqués aux salariés, sans que les deux organismes le chiffrent. Dans la note de l'INS de 2019, la part de l'emploi informel va de 30,2 % chez les salariés à 87,6 % chez les travailleurs pour compte propre et 100 % chez les aides familiaux ; elle atteint 85,6 % dans l'agriculture et la pêche, 69,2 % dans le bâtiment et 64,7 % dans le commerce [@ins-2020-emploi-informel-2019, p. 3 et 5].
+
+D'autres enquêtes donnent des niveaux plus élevés ou plus bas, avec d'autres critères. L'enquête TLMPS de 2014, traitée par l'OIT, donne 58,8 % de l'emploi total ; l'enquête budget-consommation de 2015 donne 40,2 % d'occupés non affiliés à un régime de sécurité sociale, critère d'affiliation déclarée [@elmekkaoui-et-al2022-erf1576, p. 6].
+
+<!-- TODO (rédacteur) : ILOSTAT ne publie pas sa table de passage entre critère OIT et critère INS ; demander à l'OIT ou à l'INS si l'écart de 8 points au 2e trimestre 2019 doit être expliqué chiffre en main. Le chiffre de 25,2 % de Ben Cheikh et Moisseron (2021) n'est pas repris : le chapitre n'est pas encore en main. -->
+
+## L'emploi informel par la méthode du solde {#sec-inf-est-solde}
+
+Deux études appliquent à la Tunisie la méthode du solde entre l'emploi observé et les affiliés à la sécurité sociale (voir [les sources administratives](./_mesures.html#sec-inf-mes-administratives)). Elles sont du même auteur, Nidhal Ben Cheikh, et leurs séries diffèrent d'une publication à l'autre.
+
+| Étude | 2005 | 2010 ou 2011 | 2015 | 2018 | 2020 | Dénominateur |
+|---|---|---|---|---|---|---|
+| CRES et BAD, 2016 | 34 % | 24 % (2011) | 32 % (provisoire) | — | — | emploi total |
+| PNUD et OIT, 2022 | 34,4 % | 27,5 % (2010) | 29,4 % | 26,9 % | 26,8 % | emploi total |
+
+: Les estimations de l'emploi informel par la méthode du solde {#tbl-inf-est-solde}
+
+Sources : [@charmes-bencheikh2016-informel, tableau 12, p. 64] ; [@pnud-oit2022-bencheikh-informel, p. 58]. Le niveau de 2015 est de 32 % dans la première étude et de 29,4 % dans la seconde. La même méthode donne des niveaux inférieurs à ceux de l'INS : un salarié qui cotise une fois dans l'année est formel ici, alors qu'il est informel chez l'INS s'il n'a pas de congé payé. L'étude de 2022 le dit pour les indépendants : les taux d'informalité de l'INS sont « de loin plus élevés » que ceux de l'approche du solde (p. 64).
+
+L'étude de 2016 donne aussi l'emploi de l'économie informelle rapporté à l'emploi **non agricole**, par la même logique de solde : 40,3 % en 1997, 34,3 % en 2002, 36,8 % en 2007 et 33,9 % en 2012 [@charmes-bencheikh2016-informel, tableau 6, p. 44]. Ce dénominateur diffère de celui du tableau ci-dessus.
+
+## La part de la valeur ajoutée {#sec-inf-est-va}
+
+| Auteur | Année et base des comptes | Résultat | Champ | Source |
+|---|---|---|---|---|
+| INS | 2015, base 2015 | 27,4 % | total des revenus créés | [@ins-2021-scnt-base-2015, p. 2] |
+| INS (Frigui et Muller) | base 1997, année non précisée | environ 30 % | PIB | [@frigui-muller2019-base, p. 13] |
+| CRES et BAD, 2016 | 1997 et 2002 (base 1983) | 28,3 % ; 25,2 % | valeur ajoutée brute non agricole | [@charmes-bencheikh2016-informel, tableau 5, p. 41] |
+| CRES et BAD, 2016 | 2007 et 2012 (base 1997) | 20,3 % ; 23,8 % | valeur ajoutée brute non agricole | idem |
+| PNUD et OIT, 2022 | 2017 (base 1997) | 30,7 % (36,4 % avec l'agriculture) | valeur ajoutée brute non agricole | [@pnud-oit2022-bencheikh-informel, tableau 5, p. 52] |
+| PNUD et OIT, 2022 | 2020 (base 2015, provisoire) | 28,5 % (35,2 % avec l'agriculture) | valeur ajoutée brute non agricole | idem |
+
+: Les estimations de l'informel en part de la valeur ajoutée {#tbl-inf-est-va}
+
+Les comptes nationaux de base 2015 situent l'économie informelle à 27,4 % des revenus créés en 2015. Elle représente plus de 89 % de la valeur ajoutée marchande de l'agriculture, 20,8 % de celle de l'industrie, un peu plus de 57 % de celle du bâtiment et environ 40 % de celle des services marchands [@ins-2021-scnt-base-2015, p. 2]. Le changement de base relève le PIB de 2015 de 6 % (p. 1). La baisse de 30,7 % à 28,5 % entre 2017 et 2020 franchit ce changement de base : elle n'est pas une évolution. Le tableau de l'étude de 2016 mêle aussi deux bases. Sur les ruptures de base, voir l'[annexe sur le PIB](../annexe-pib.html).
+
+## Les estimations macroéconomiques {#sec-inf-est-macro}
+
+Ces estimations portent sur la production non déclarée, en part du PIB officiel, et non sur l'emploi.
+
+| Auteur | Méthode | Résultat pour la Tunisie | Source |
+|---|---|---|---|
+| Schneider, Buehn et Montenegro, 2010 | MIMIC | 38,7 % en 1999 ; 35,4 % en 2007 | [@schneider-buehn-montenegro2010-shadow, tableau 3.3.6, p. 29] |
+| Banque mondiale, base de l'économie informelle | équilibre général dynamique | 37,9 % en 1990 ; 34,6 % en 2010 ; 33,0 % en 2019 | [@elgin-kose-ohnsorge-yu2021-informality] |
+| Banque mondiale, base de l'économie informelle | MIMIC | 39,5 % en 1993 ; 35,6 % en 2010 ; 36,8 % en 2019 | idem |
+| PNUD et OIT, 2022 | demande de monnaie | 44,2 % en 1986 ; 25,0 % en 2010 ; 29,3 % en 2017 ; 28,3 % en 2021 | [@pnud-oit2022-bencheikh-informel, tableau 13, p. 69] |
+
+: Les estimations macroéconomiques de la production non déclarée, en part du PIB {#tbl-inf-est-macro}
+
+Les deux modèles de la Banque mondiale exigent chacun une estimation de départ tirée d'une autre étude : ils sont calés sur les valeurs de l'an 2000 de Schneider ou de Schneider et ses coauteurs [@elgin-kose-ohnsorge-yu2021-informality]. Le MIMIC retient six causes (consommation publique, part des impôts directs, indices de liberté fiscale et de liberté d'entreprise, chômage et PIB par habitant, efficacité de l'État) et trois indicateurs (croissance du PIB par habitant, taux d'activité, monnaie). Le modèle d'équilibre général répartit le temps d'un ménage représentatif entre une technologie formelle taxée et une technologie informelle. Les limites de ces méthodes sont données au [chapitre précédent](./_mesures.html#sec-inf-mes-macro).
+
+## Les chiffres de la Banque mondiale {#sec-inf-est-bm}
+
+La Banque mondiale publie trois chiffres de nature différente. Le *Tunisia Economic Monitor* de l'automne 2020 écrit que les travailleurs informels représentent 46 % de la main-d'œuvre ; le passage ne donne ni définition, ni source, ni année [@bm-2020-tem-automne, p. 3]. L'étude sur l'emploi de 2022 donne 43,9 % de l'emploi du secteur privé en 2019, avec la définition du tableau de l'enquête emploi (voir plus haut). La base de l'économie informelle donne 33,0 % et 36,8 % du PIB pour 2019, par deux modèles. Ces trois grandeurs ne se comparent pas : la première est une part de la main-d'œuvre, la deuxième une part de l'emploi privé, les deux dernières une part du PIB.
+
+<!-- TODO (rédacteur) : le chiffre de 45 % attribué à la Banque mondiale (2020) dans les travaux de l'ERF vient de la note 2 du document de travail n° 1576 (p. 6) ; le Tunisia Economic Monitor donne 46 %. Le rapprochement avec la note de l'INS de septembre 2020 n'est pas établi par les sources. -->
