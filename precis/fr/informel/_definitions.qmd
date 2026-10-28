@@ -1,0 +1,58 @@
+# Les définitions {#sec-inf-definitions}
+
+La statistique du travail distingue trois objets. Le **[secteur informel](#g-secteur-informel)** classe des unités de production, selon leur statut et la destination de leur production. L'**[emploi informel](#g-emploi-informel)** classe des postes de travail, selon l'accès effectif de la personne aux dispositifs formels. L'**[économie informelle](#g-economie-informelle)** réunit toutes les activités productives qui échappent, en droit ou en pratique, à ces dispositifs, qu'elles soient menées par des unités ou par des personnes.
+
+## Les textes internationaux {#sec-inf-textes}
+
+Trois textes de la Conférence internationale des statisticiens du travail (CIST) fixent ces définitions. La résolution de la 15e CIST (janvier 1993) définit le secteur informel [@oit-cist15-1993-secteur-informel]. Les directives de la 17e CIST (2003) définissent l'emploi informel [@oit-cist17-2003-emploi-informel]. La résolution de la 21e CIST (octobre 2023) définit l'économie informelle et se substitue aux deux premiers textes [@oit-cist21-2023-informel]. Le tableau suivant compare leurs critères.
+
+| | 1993 | 2003 | 2023 |
+|---|---|---|---|
+| Objet | unités de production (secteur) | postes de travail (emploi) | activités, unités et postes (économie) |
+| Critère des unités | non-enregistrement ou taille sous un seuil (§ 8 et 9) | repris de 1993 | statut formel : cinq critères cumulés, pas de critère de taille (§ 40) |
+| Critère des salariés | aucun emploi informel défini ; le salarié « déclaré » sert à classer l'entreprise (§ 9) | relation d'emploi non soumise à la législation du travail, à l'impôt sur le revenu, à la protection sociale ou à certains avantages (§ 3) | absence de cotisation de l'employeur à l'assurance sociale obligatoire (§ 78) |
+| Agriculture | exclusion possible (§ 16) | à définir par le pays (§ 7) | incluse (§ 43) |
+| Production pour usage final propre | exclue (§ 14) | cellule 9 si la personne est occupée | travail informel, hors emploi (§ 53) |
+| Économie souterraine, activités illégales | souterrain distinct du secteur informel (§ 5) | renvoi au cadre de l'économie non observée | activités interdites exclues ; biens légaux produits sans autorisation inclus (§ 14) |
+
+: Les trois textes de la CIST sur l'informel {#tbl-inf-textes}
+
+## Le secteur informel selon la résolution de 1993 {#sec-inf-def-1993}
+
+La résolution de 1993 prend pour objet l'**unité de production** : un ensemble d'unités qui font partie du secteur des ménages en tant qu'[entreprises individuelles](#g-entreprise-individuelle-menage), sans personnalité morale distincte du ménage et sans comptabilité complète (§ 6 et 7). Elle distingue deux composantes. Les entreprises de personnes qui travaillent pour leur propre compte, sans salarié permanent, sont informelles si elles ne sont pas enregistrées selon la législation nationale ; l'enregistrement peut relever de la réglementation commerciale ou industrielle, des lois fiscales ou de la sécurité sociale (§ 8). Les entreprises d'employeurs sont informelles quand leur taille est inférieure à un seuil d'emploi fixé par chaque pays, ou quand l'entreprise ou ses salariés ne sont pas enregistrés (§ 9).
+
+Le texte écarte l'[économie souterraine](#g-economie-souterraine). Les activités informelles ne sont pas nécessairement menées pour échapper à l'impôt ou aux cotisations, et le concept doit rester distinct de celui d'activité dissimulée (§ 5). Il écarte aussi la production non marchande pour usage final propre (§ 14). Les pays peuvent exclure l'agriculture (§ 16) et décider du traitement des travailleurs domestiques (§ 19).
+
+## L'emploi informel selon les directives de 2003 {#sec-inf-def-2003}
+
+Les directives de 2003 prennent pour objet le **poste de travail** : le secteur informel a pour unité d'observation l'unité de production, l'emploi informel a pour unité l'emploi (§ 1). Un salarié a un emploi informel quand sa relation d'emploi n'est pas soumise, en droit ou en pratique, à la législation du travail, à l'impôt sur le revenu, à la protection sociale ou à certains avantages (préavis, indemnité de licenciement, congés annuels ou de maladie payés) ; chaque pays fixe ses critères opérationnels (§ 3). Un indépendant a un emploi informel si son entreprise appartient au secteur informel. Les aides familiaux ont toujours un emploi informel.
+
+La matrice annexée croise le type d'unité et la situation dans la profession. Les cellules numérotées 1 à 6 et 8 à 10 sont de l'emploi informel ; la cellule 7, salarié à emploi formel dans une entreprise du secteur informel, est exclue.
+
+| Unité de production | Compte propre et employeurs | Aides familiaux | Salariés | Membres de coopératives |
+|---|---|---|---|---|
+| Secteur formel | emploi formel | informel (1) | informel (2) ou formel | formel |
+| Secteur informel | informel (3 et 4) | informel (5) | informel (6) ou formel (7) | informel (8) |
+| Ménages | informel (9) | — | informel (10) ou formel | — |
+
+: La matrice des directives de 2003 : les postes informels portent le numéro de leur cellule {#tbl-inf-matrice-2003}
+
+Le texte nomme ainsi trois ensembles : l'**emploi informel** (cellules 1 à 6 et 8 à 10), l'**emploi dans le secteur informel** (cellules 3 à 8) et l'**emploi informel en dehors du secteur informel** (cellules 1, 2, 9 et 10).
+
+## L'économie informelle selon la résolution de 2023 {#sec-inf-def-2023}
+
+**Activités productives informelles.** Ce sont les activités de personnes ou d'unités économiques qui ne sont pas couvertes, en droit ou en pratique, par les dispositifs formels [@oit-cist21-2023-informel, § 10]. Les dispositifs sont le droit commercial, les procédures de déclaration des activités (impôt, sécurité sociale), le droit du travail et l'accès aux marchés, aux aides publiques et aux banques (§ 11). La couverture s'entend d'un accès effectif : il ne suffit pas que la loi s'applique, la personne ou l'unité doit accomplir les formalités qu'elle prévoit (§ 12).
+
+**Économie informelle.** Elle comprend toutes les activités productives informelles, rémunérées ou non (§ 13). Les biens et services interdits par la loi en sont exclus. Un bien ou un service en principe légal, produit sans l'autorisation exigée, y reste inclus (§ 14).
+
+**Trois secteurs d'unités.** La résolution classe chaque unité économique selon la destination de sa production et son statut formel (§ 22 à 26).
+
+- Le **secteur formel** regroupe les unités reconnues comme producteurs distincts : unités de l'État, personnes morales, unités qui tiennent une comptabilité complète à des fins fiscales, unités inscrites à un registre officiel, unités du marché qui emploient un salarié sous contrat formel (§ 28).
+- Le **secteur informel** regroupe les entreprises individuelles de ménages qui produisent surtout pour le marché mais ne sont pas reconnues comme producteurs distincts de la production pour usage propre du ménage de leur propriétaire (§ 26 et 40). Le critère de taille de 1993 disparaît, et l'agriculture est incluse (§ 43).
+- Le **secteur de la production des ménages pour usage propre et du secteur communautaire** regroupe les ménages qui produisent pour leur consommation ou pour celle d'autres ménages, et les organisations à but non lucratif non reconnues (§ 26).
+
+**Emploi informel.** Toute activité de personnes pour produire des biens ou fournir des services contre rémunération ou profit, qui n'est pas couverte, en droit ou en pratique, par les dispositifs formels [@oit-cist21-2023-informel, § 56]. Il comprend les postes tenus par quatre catégories de personnes : les travailleurs indépendants propriétaires d'une entreprise individuelle informelle ; les entrepreneurs dépendants sans statut formel ou dont l'activité n'est pas effectivement couverte ; les salariés dont la relation d'emploi n'est pas reconnue par l'employeur ou ne donne pas accès effectif aux dispositifs formels ; les travailleurs familiaux dont la relation de travail n'est pas reconnue (§ 56 a à d). Pour les salariés, la caractéristique qui définit l'informalité est l'absence de cotisation de l'employeur à l'assurance sociale obligatoire, de préférence à la pension (§ 78) ; les congés annuels et de maladie payés servent de critères additionnels (§ 79).
+
+Un salarié à emploi formel ne peut pas se trouver dans le secteur informel : une unité qui emploie un tel salarié est formelle (§ 28 et 36). La cellule 7 de la matrice de 2003 n'existe donc plus.
+
+**Marché informel et travail informel.** La résolution isole l'« économie de marché informelle » : la production pour rémunération ou profit du secteur informel, et les activités des personnes en emploi qui ne sont pas couvertes par les dispositifs formels (§ 18 à 21). Elle distingue l'emploi informel du **[travail informel](#g-travail-informel)**, qui comprend aussi la production pour usage propre, le bénévolat et le stage non rémunéré (§ 53).

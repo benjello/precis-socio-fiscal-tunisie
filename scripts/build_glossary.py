@@ -51,6 +51,7 @@ BOOKS = [
     "entreprises_publiques",
     "sante",
     "education",
+    "informel",
 ]
 
 LANGS = ("fr", "ar")

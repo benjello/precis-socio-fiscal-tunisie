@@ -240,6 +240,9 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Échelon | الدرجة |  |
 | Échelonnement indiciaire | التدرّج القياسي |  |
 | École préparatoire | المدرسة الإعدادية |  |
+| Économie informelle | الاقتصاد غير المنظم |  |
+| Économie non observée | الاقتصاد غير الملاحَظ | ENO |
+| Économie souterraine | الاقتصاد الخفي |  |
 | Éducation préscolaire | التربية قبل المدرسية |  |
 | Effectif global du personnel autorisé | العدد الجملي للأعوان المرخص فيهم |  |
 | Effet cascade | الأثر التراكمي |  |
@@ -252,17 +255,19 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Émoluments de base | المرتبات الأساسية |  |
 | Émoluments globaux indiciaires | المرتبات الجملية التابعة للرقم القياسي المعين |  |
 | Emploi fonctionnel | الخطة الوظيفية |  |
-| Emploi informel | التشغيل غير المنظّم |  |
+| Emploi informel | العمل غير المنظم |  |
 | Emploi public | التشغيل العمومي |  |
 | Employés de maison | عمال المنازل |  |
 | Emprunt | الاقتراض |  |
 | Enfant à charge | الطفل المتكفَّل به |  |
+| Enquête mixte ménages-entreprises | المسح المختلط للأسر والمؤسسات |  |
 | Enseignant-chercheur | المدرس الباحث |  |
 | Enseignement de base | التعليم الأساسي |  |
 | Enseignement moyen | التعليم المتوسط |  |
 | Enseignement secondaire | التعليم الثانوي |  |
 | Entrepositaire | أرباب المخازن |  |
 | Entreprise de prestation de services ou de fourniture de travaux | مؤسسة لإسداء خدمات أو للقيام بأشغال |  |
+| Entreprise individuelle de ménage | المؤسسة الفردية التابعة للأسرة |  |
 | Entreprise tunisienne d'activités pétrolières | المؤسسة التونسية للأنشطة البترولية | ETAP |
 | Entreprises publiques | المنشآت العمومية |  |
 | Entreprises totalement exportatrices | المؤسسات المصدرة كليا |  |
@@ -404,6 +409,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Mastère professionnel | الماجستير المهني |  |
 | Mécanisme d'ajustement automatique des prix des carburants | آلية التعديل الأوتوماتيكي لأسعار المحروقات |  |
 | Melk | الملك |  |
+| Méthode du solde | طريقة الرصيد المتبقّي |  |
 | Micro-entreprise | مؤسسة صغرى |  |
 | Minimum d'impôt | الضريبة الدنيا |  |
 | Minimum d'impôt sur le chiffre d'affaires | الضريبة الدنيا |  |
@@ -412,6 +418,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Mise à la retraite avant l'âge légal | الإحالة على التقاعد قبل بلوغ السن القانونية |  |
 | Mise à la retraite d'office | الإحالة الوجوبية على التقاعد |  |
 | Mission budgétaire | المهمة |  |
+| Modèle à causes multiples et indicateurs multiples | نموذج الأسباب المتعدّدة والمؤشرات المتعدّدة | MIMIC |
 | Moueddeb | المؤدب |  |
 | Moyenne annuelle | المعدل السنوي |  |
 | Moyens des services | وسائل المصالح |  |
@@ -570,6 +577,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Salaire net | الأجر الصافي |  |
 | Salarié permanent | أجير قارّ |  |
 | Score d'éligibilité | أنموذج التنقيط |  |
+| Secteur informel | القطاع غير المنظم |  |
 | Secteur public | القطاع العام |  |
 | Sécurité sociale des pêcheurs | الضمان الاجتماعي للصيادين البحريين |  |
 | Sélection adverse (départs volontaires) | الانتقاء العكسي |  |
@@ -674,6 +682,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Travail à temps partiel | العمل لوقت جزئي |  |
 | Travail de nuit | العمل الليلي |  |
 | Travail domestique | العمل المنزلي |  |
+| Travail informel | العمل غير المنظم بمفهومه الواسع |  |
 | Travailleuse agricole | العاملة الفلاحية |  |
 | Travaux pénibles et insalubres | الأشغال الشاقّة وغير الصحّية |  |
 | Tribunal immobilier | المحكمة العقارية |  |
