@@ -1,0 +1,31 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-27
+# séries (tunisia_data) : cdf-activite
+# sources (citation) : @cdf-rapport-01, @cdf-rapport-02, @cdf-rapport-03, @cdf-rapport-04, @cdf-rapport-05, @cdf-rapport-06, @cdf-rapport-07, @cdf-rapport-08, @cdf-rapport-09, @cdf-rapport-10, @cdf-rapport-11, @cdf-rapport-12, @cdf-rapport-13, @cdf-rapport-14, @cdf-rapport-15, @cdf-rapport-16, @cdf-rapport-17, @cdf-rapport-18, @cdf-rapport-19, @cdf-rapport-20, @cdf-rapport-21
+# fiches : sources/cdf-activite.md
+# méthode/hypothèses : LE PREMIER RAPPORT DONNE 1986-1989 EN UN BLOC pour les affaires tranchées (20) et les condamnations (6) ; ses saisines sont données par année (1987 : 67 ; 1988 : 5 ; 1989 : 12), 1986 non dite. Saisines de 1992 non dites. LES AFFAIRES EN COURS CHANGENT DEUX FOIS DE DÉFINITION (colonne definition) : 1990-2000, charge totale de fin d'année, affaires tranchées dans l'année comprises ; 2001-2004, affaires en instruction ; 2005-2009, affaires en instruction et affaires instruites (somme calculée). Les trois segments ne se chaînent pas. LES AFFAIRES TRANCHÉES ne se comparent pas de part et d'autre de 2001 : les classements de l'article 15 bis sont comptés de 1988 à 2001, puis les rapports n'en parlent plus. Condamnations d'entreprises publiques : décompte fait sur les résumés d'arrêts, 1986-1998 seulement, qui range parmi elles les sociétés régionales de transport ; de 1999 à 2009 les rapports ne donnent que des catégories de parties lésées. Aucun rapport n'est connu après le vingt et unième (activité 2009) ; la Cour des comptes reprend les fautes de gestion au 1er janvier 2020. LU À L'IMAGE (pages de chiffres).
+# note : Activité de la Cour de discipline financière, 1986-2009 : saisines et affaires tranchées, condamnations à l'amende, affaires en cours en fin d'année, en nombre d'affaires, d'après ses vingt et un rapports annuels publiés au Journal officiel
+Période,Saisines,Affaires tranchées,Condamnations à l'amende,dont sur une entreprise publique,Affaires en cours en fin d'année,Définition des affaires en cours,Rapport
+1986-1989,,20.0,6.0,3.0,,,"cdf-rapport-01, JORT n° 57 du 1990-09-11, p. 1249-1251"
+1987,67.0,,,,,,"cdf-rapport-01, JORT n° 57 du 1990-09-11, p. 1249-1251"
+1988,5.0,,,,,,"cdf-rapport-01, JORT n° 57 du 1990-09-11, p. 1249-1251"
+1989,12.0,,,,,,"cdf-rapport-01, JORT n° 57 du 1990-09-11, p. 1249-1251"
+1990,10.0,22.0,12.0,4.0,66.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-02, JORT n° 69 du 1991-10-15, p. 1696"
+1991,10.0,18.0,9.0,5.0,67.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-03, JORT n° 75 du 1992-11-10, p. 1487"
+1992,,20.0,15.0,2.0,55.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-04, JORT n° 92 du 1993-12-03, p. 2048"
+1993,6.0,20.0,8.0,2.0,41.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-05, JORT n° 100 du 1994-12-20, p. 2013"
+1994,11.0,9.0,7.0,2.0,32.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-06, JORT n° 3 du 1996-01-09, p. 43"
+1995,20.0,6.0,4.0,1.0,43.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-07, JORT n° 13 du 1997-02-14, p. 224"
+1996,13.0,13.0,12.0,1.0,50.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-08, JORT n° 14 du 1998-02-17, p. 361"
+1997,12.0,8.0,5.0,1.0,49.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-09, JORT n° 29 du 1999-04-09, p. 553"
+1998,8.0,8.0,2.0,0.0,49.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-10, JORT n° 16 du 2000-02-25, p. 538"
+1999,5.0,11.0,2.0,,46.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-11, JORT n° 61 du 2001-07-31, p. 1967"
+2000,12.0,11.0,4.0,,47.0,"charge totale de fin d'année, affaires tranchées dans l'année comprises","cdf-rapport-12, JORT n° 61 du 2001-07-31, p. 1972"
+2001,9.0,31.0,12.0,,14.0,affaires en instruction,"cdf-rapport-13, JORT n° 79 du 2002-09-27, p. 2292"
+2002,22.0,14.0,5.0,,22.0,affaires en instruction,"cdf-rapport-14, JORT n° 12 du 2004-02-10, p. 302-303"
+2003,15.0,22.0,6.0,,15.0,affaires en instruction,"cdf-rapport-15, JORT n° 75 du 2004-09-17, p. 2732"
+2004,25.0,21.0,7.0,,19.0,affaires en instruction,"cdf-rapport-16, JORT n° 54 du 2005-07-08, p. 1637"
+2005,18.0,8.0,6.0,,29.0,affaires en instruction et affaires instruites (encours du début de l'année suivante),"cdf-rapport-17, JORT n° 53 du 2006-07-04, p. 1777-1779"
+2006,10.0,6.0,5.0,,33.0,affaires en instruction et affaires instruites (encours du début de l'année suivante),"cdf-rapport-18, JORT n° 58 du 2007-07-20, p. 2518-2519"
+2007,16.0,13.0,1.0,,36.0,affaires en instruction et affaires instruites (encours du début de l'année suivante),"cdf-rapport-19, JORT n° 56 du 2008-07-11, p. 2083"
+2008,13.0,8.0,6.0,,41.0,affaires en instruction et affaires instruites (encours du début de l'année suivante),"cdf-rapport-20, JORT n° 59 du 2009-07-24, p. 2048"
+2009,7.0,7.0,1.0,,41.0,affaires en instruction et affaires instruites (encours du début de l'année suivante),"cdf-rapport-21, JORT n° 56 du 2010-07-13, p. 1958"

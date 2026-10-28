@@ -9,6 +9,7 @@
     ep.figure("cessions", …)                             # recettes de cession, 1987-2009
     ep.figure("versements", …)                           # versements au budget, 2003-2024
     ep.figure("bct_ra", …)                               # revenus des participations, 1983-2016
+    ep.figure("cdf", …, nominal=False)                   # Cour de discipline financière, 1986-2009
     ep.tableau_transferts(caption=…) …                   # tableaux, tous lus dans les séries
 
 D'OÙ VIENNENT LES DONNÉES. Douze séries de `tunisia-data`, lues par `figtools.series()`
@@ -44,7 +45,7 @@ import matplotlib.pyplot as plt
 import pandas as pd  # noqa: E402
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
-from matplotlib.ticker import FuncFormatter
+from matplotlib.ticker import FuncFormatter, MaxNLocator
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "scripts"))
 import figtools  # noqa: E402
@@ -2467,6 +2468,138 @@ def tableau_bct_ra(caption: str, tbl_id: str = "tbl-ep-bct-ra") -> None:
 
 # --- point d'entrée ------------------------------------------------------------------------------------
 
+# --- Cour de discipline financière, 1986-2009 ---------------------------------------------------
+
+S_CDF = "cdf-activite"
+# Les trois définitions des affaires en cours de fin d'année, telles que les rapports les donnent :
+# (première année, dernière année, libellé court, couleur). Les segments ne se chaînent pas.
+SEGMENTS_CDF = [
+    (1990, 2000, "1990-2000 : charge totale, affaires tranchées dans l'année comprises", BLEU),
+    (2001, 2004, "2001-2004 : affaires en instruction", VERT),
+    (2005, 2009, "2005-2009 : affaires en instruction et affaires instruites", VIOLET),
+]
+
+
+def _cdf() -> pd.DataFrame:
+    return _s(S_CDF).astype({"periode": str})
+
+
+def _cdf_annuel(d: pd.DataFrame, grandeur: str) -> dict[int, int]:
+    b = d[(d["grandeur"] == grandeur) & (d["annee_debut"] == d["annee_fin"])]
+    return {int(a): int(v) for a, v in zip(b["annee_debut"], b["valeur"])}
+
+
+def _cdf_bloc(d: pd.DataFrame, grandeur: str) -> int | None:
+    b = d[(d["grandeur"] == grandeur) & (d["periode"] == "1986-1989")]
+    return None if b.empty else int(b["valeur"].iloc[0])
+
+
+def fig_cdf():
+    figtools.apply_lang_font()
+    d = _cdf()
+    fig, axes = plt.subplots(3, 1, figsize=(9.6, 9.0), sharex=True)
+    annees = range(1986, 2010)
+
+    # 1. Saisines et affaires tranchées
+    ax = axes[0]
+    sai = _cdf_annuel(d, "saisines")
+    tra = _cdf_annuel(d, "affaires_tranchees")
+    for a, v in sai.items():
+        b = ax.bar(a, v, color=BLEU, alpha=0.55, width=0.7)
+        figtools.infobulle(b[0], f"{a} : {v} saisines")
+    for a in (1986, 1992):
+        ax.annotate("n. d.", xy=(a, 0), xytext=(0, 2), textcoords="offset points",
+                    ha="center", va="bottom", fontsize=6.5, color=GRIS)
+    for a0, a1 in ((1990, 2001), (2002, 2009)):
+        xs = [a for a in range(a0, a1 + 1) if a in tra]
+        ax.plot(xs, [tra[a] for a in xs], color=ORANGE, lw=1.6)
+        for a in xs:
+            pt = ax.plot([a], [tra[a]], "o", color=ORANGE, ms=3.5)[0]
+            figtools.infobulle(pt, f"{a} : {tra[a]} affaires tranchées")
+    bloc = _cdf_bloc(d, "affaires_tranchees")
+    ax.plot([1985.65, 1989.35], [bloc, bloc], color=ORANGE, lw=1.2, ls=(0, (3, 2)))
+    ax.annotate(f"1986-1989 : {bloc} au total", xy=(1987.5, bloc), xytext=(0, 3),
+                textcoords="offset points", ha="center", va="bottom", fontsize=6.5, color=ORANGE)
+    figtools.marque_rupture(ax, 2002, "classements de l'art. 15 bis\nplus comptés")
+    ax.set_title("Saisines et affaires tranchées", fontsize=9, loc="left")
+    ax.legend(handles=[Patch(color=BLEU, alpha=0.55, label="saisines de l'année"),
+                       Line2D([0], [0], color=ORANGE, lw=1.6, marker="o", ms=3.5,
+                              label="affaires tranchées (arrêts et classements)")],
+              fontsize=7, frameon=False, loc="upper left", bbox_to_anchor=(0.16, 1))
+
+    # 2. Condamnations à l'amende
+    ax = axes[1]
+    am = _cdf_annuel(d, "condamnations_amende")
+    ep_ = _cdf_annuel(d, "condamnations_amende_entreprise_publique")
+    for a, v in am.items():
+        b = ax.bar(a, v, color=ROUGE, alpha=0.3, width=0.7)
+        txt = f"{a} : {v} condamnations à l'amende"
+        if a in ep_:
+            txt += f", dont {ep_[a]} sur une entreprise publique"
+        figtools.infobulle(b[0], txt)
+    for a, v in ep_.items():
+        if v:
+            ax.bar(a, v, color=ROUGE, width=0.7)
+    bloc, bloc_ep = _cdf_bloc(d, "condamnations_amende"), _cdf_bloc(
+        d, "condamnations_amende_entreprise_publique")
+    ax.annotate(f"1986-1989 : {bloc} au total,\ndont {bloc_ep} sur une entreprise publique",
+                xy=(1987.5, 0), xytext=(0, 3), textcoords="offset points", ha="center",
+                va="bottom", fontsize=6.5, color=ROUGE)
+    ax.axvspan(1998.5, 2009.5, color=GRIS, alpha=0.07, lw=0)
+    ax.annotate("entreprises publiques non comptées", xy=(2004, 1), xycoords=("data", "axes fraction"),
+                xytext=(0, -4), textcoords="offset points", ha="center", va="top",
+                fontsize=6.5, color=GRIS)
+    ax.set_title("Condamnations à l'amende", fontsize=9, loc="left")
+    ax.legend(handles=[Patch(color=ROUGE, alpha=0.3, label="condamnations à l'amende"),
+                       Patch(color=ROUGE, label="dont sur une entreprise publique (1986-1998)")],
+              fontsize=7, frameon=False, loc="upper left", bbox_to_anchor=(0.12, 1))
+
+    # 3. Affaires en cours en fin d'année, trois définitions
+    ax = axes[2]
+    enc = _cdf_annuel(d, "affaires_en_cours_fin_annee")
+    for a0, a1, nom, coul in SEGMENTS_CDF:
+        xs = [a for a in range(a0, a1 + 1) if a in enc]
+        ax.plot(xs, [enc[a] for a in xs], color=coul, lw=1.6, label=nom)
+        for a in xs:
+            pt = ax.plot([a], [enc[a]], "o", color=coul, ms=3.5)[0]
+            figtools.infobulle(pt, f"{a} : {enc[a]} affaires en cours — {nom}")
+    for a0, _, _, _ in SEGMENTS_CDF[1:]:
+        figtools.marque_rupture(ax, a0, "changement\nde définition")
+    ax.set_title("Affaires en cours en fin d'année, selon la définition du rapport",
+                 fontsize=9, loc="left")
+    ax.legend(fontsize=7, frameon=False, loc="lower left")
+
+    for ax in axes:
+        _style(ax)
+        ax.set_ylim(0, ax.get_ylim()[1] * 1.15)
+        ax.set_ylabel("affaires", fontsize=8)
+        ax.tick_params(labelsize=7)
+        ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+    axes[-1].set_xlim(1985.4, 2009.6)
+    axes[-1].set_xticks(range(1986, 2010, 2))
+    fig.tight_layout()
+    return fig
+
+
+def table_cdf():
+    d = _cdf()
+    noms = {"saisines": "Saisines", "affaires_tranchees": "Affaires tranchées",
+            "condamnations_amende": "Condamnations à l'amende",
+            "condamnations_amende_entreprise_publique": "dont sur une entreprise publique",
+            "affaires_en_cours_fin_annee": "Affaires en cours en fin d'année"}
+    t = d[d["grandeur"].isin(noms)].pivot_table(index="periode", columns="grandeur",
+                                                 values="valeur", aggfunc="first")
+    t = t.reindex(columns=list(noms)).rename(columns=noms)
+    defs = d[d["grandeur"] == "affaires_en_cours_fin_annee"].set_index("periode")["definition"]
+    loc = d.groupby("periode")["localisateur"].first()
+    cle = d.groupby("periode")["cle"].first()
+    t["Définition des affaires en cours"] = defs
+    t["Rapport"] = [f"{cle[p]}, {loc[p]}" for p in t.index]
+    t = t.reset_index().rename(columns={"periode": "Période"})
+    t["_o"] = [int(str(p)[:4]) * 10 + (0 if "-" in str(p) else 1) for p in t["Période"]]
+    return t.sort_values("_o").drop(columns="_o")
+
+
 FIGURES = {
     "ensemble": (fig_ensemble, table_ensemble,
                  (S_TRANSFERTS, S_GARANTIES, S_CROISEES, S_DIVIDENDES, DENOMINATEURS),
@@ -2491,12 +2624,17 @@ FIGURES = {
     "croisees": (fig_croisees, table_croisees, (S_CROISEES, DENOMINATEURS), "fig_ep_croisees"),
     "masse": (fig_masse, table_masse, (S_EFFECTIFS, S_AGREGATS, DENOMINATEURS), "fig_ep_masse"),
     "effectifs": (fig_effectifs, table_effectifs_ep, (S_EFFECTIFS_EP,), "fig_ep_effectifs"),
+    "cdf": (fig_cdf, table_cdf, (S_CDF,), "fig_ep_cdf"),
 }
 
 
-def figure(nom: str, caption: str, note_lecture: str | None = None) -> None:
-    """Trace la figure `nom` en onglets (chunk `output: asis`, étiqueté `fig-…`)."""
+def figure(nom: str, caption: str, note_lecture: str | None = None,
+           nominal: bool = True) -> None:
+    """Trace la figure `nom` en onglets (chunk `output: asis`, étiqueté `fig-…`).
+
+    `nominal=False` pour une figure qui ne compte pas des dinars (des affaires, des agents) :
+    la ligne « Source » ne dit alors pas « valeurs courantes »."""
     trace, table, series, slug = FIGURES[nom]
     figtools.figure_tabs(trace(), table(), *series, slug=slug, caption=caption,
-                         note_lecture=note_lecture)
+                         note_lecture=note_lecture, nominal=nominal)
     plt.close("all")
