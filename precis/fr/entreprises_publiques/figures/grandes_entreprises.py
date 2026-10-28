@@ -208,3 +208,55 @@ def tableau_etap_rapports(caption: str, tbl_id: str) -> None:
         lignes.append([str(x)] + cases)
     _md(["Exercice"] + [l for _, l in ETAP_COLS], "g" + "d" * len(ETAP_COLS), lignes,
         caption, tbl_id)
+
+
+# --- Entreprise sans fiche versée : quatre séries budgétaires, une colonne chacune ----------------
+
+S_CDC = "cdc-cloture-entreprises-publiques"
+S_TRANSFERTS_EP = "entreprises-publiques-transferts-par-entreprise"
+S_NETS_EP = "entreprises-publiques-resultats-nets-dix-premieres"
+S_EFFECTIFS_EP = "entreprises-publiques-effectifs-par-entreprise"
+MARQUE = {"provisoire": " (prov.)", "estimé": " (est.)", "probable": " (prob.)"}
+
+
+def _derniere(df, col_annee: str, entite: str) -> dict:
+    """Pour chaque année, la ligne de la dernière édition qui la donne."""
+    b = df[df["entite"] == entite]
+    return {int(a): g.sort_values("edition").iloc[-1] for a, g in b.groupby(col_annee)}
+
+
+def tableau_entreprise_budget(entite: str, poste_cdc: str, caption: str, tbl_id: str) -> None:
+    """Un exercice par ligne : principal de dette garantie payé par l'État (Cour des comptes,
+    par gestion), transferts du budget, résultat net des classements, effectif et charges de
+    personnel (rapport sur les entreprises publiques, dernière édition de chaque exercice).
+    Aucune valeur n'est raccordée d'une série à l'autre : chaque colonne lit sa série."""
+    c = figtools.series(S_CDC)
+    c = c[(c["rubrique"] == "garantie_principal_paye") & (c["poste"] == poste_cdc)]
+    garantie = {int(r.gestion): float(r.valeur_md)
+                for r in c.drop_duplicates("gestion").itertuples(index=False)}
+    transferts = _derniere(figtools.series(S_TRANSFERTS_EP), "annee", entite)
+    n = figtools.series(S_NETS_EP)
+    nets = _derniere(n.drop_duplicates(["exercice", "edition", "entite"]), "exercice", entite)
+    e = figtools.series(S_EFFECTIFS_EP)
+    effectifs = _derniere(e[e["effectif"].notna()], "exercice", entite)
+    annees = sorted(set(garantie) | set(transferts) | set(nets) | set(effectifs))
+
+    def case(d: dict, a: int, col: str, dec: int = 1, signe: bool = False,
+             statut: bool = True) -> str:
+        if a not in d:
+            return "—"
+        r = d[a]
+        v = r[col]
+        if v is None or v != v:
+            return "—"
+        return _n(v, dec, signe) + (MARQUE.get(r["statut"], "") if statut else "")
+
+    lignes = [[str(a),
+               _n(garantie[a], 1) if a in garantie else "—",
+               case(transferts, a, "valeur_md"),
+               case(nets, a, "valeur_md", signe=True, statut=False),
+               case(effectifs, a, "effectif", dec=0),
+               case(effectifs, a, "charges_personnel_md")] for a in annees]
+    _md(["Exercice", "Principal de dette garantie payé par l'État<br>(MD)",
+         "Transferts du budget<br>(MD)", "Résultat net<br>(MD)", "Effectif<br>(agents)",
+         "Charges de personnel<br>(MD)"], "gddddd", lignes, caption, tbl_id)

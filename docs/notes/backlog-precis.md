@@ -3709,7 +3709,7 @@ Ce qui reste :
   comptes publiés de la STEG 2013-2023 ; rapports annuels de l'ETAP 2004-2024 (sans 2020 ; 2019
   sans états financiers) ; textes fondateurs lus au corpus local (décret-loi n° 62-8, loi
   n° 72-22, décret du 27 décembre 1956). **Reste** :
-  - les autres grandes entreprises (STIR, Tunisair, Transtu, Office des céréales, Office national de
+  - les autres grandes entreprises (Tunisair, Transtu, Office des céréales, Office national de
     l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du
     commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
@@ -3725,6 +3725,34 @@ Ce qui reste :
     versés ; classements par charges de personnel et par produits d'exploitation, non versés ;
   - seuil de scission : trois entreprises de l'énergie (STEG, ETAP, STIR) ouvriraient un
     chapitre « L'énergie » quand la STIR aura sa fiche (note de chantier, § 9).
+- **STIR — section écrite le 28 octobre 2026, sans fiche** (`_grandes_entreprises.qmd`,
+  `#sec-ep-ge-stir`, tableau `tbl-ep-stir-budget` engendré par
+  `grandes_entreprises.tableau_entreprise_budget` depuis quatre séries déjà versées : principal de
+  dette garantie payé par l'État 2013-2016, `cdc-cloture-entreprises-publiques` ; transferts
+  2017-2022 ; résultats nets des classements ; effectifs et charges de personnel 2016-2023).
+  Registre `tbl-ep-registre-stir`, lu au corpus local : loi n° 60-11 (convention avec l'ANIC,
+  p. 1005, image), loi n° 75-81 (rachat des actions du groupe ENI, p. 2852, image ; intitulé daté
+  du 20 décembre, formule finale du 30 décembre 1975), décret n° 77-467 (nom, objet, tutelle,
+  p. 1279-1281, image), lois n° 2015-9, 2017-12, 2020-10 et décret-loi n° 2023-19 (garanties et
+  convention cadre avec la Société internationale islamique de financement du commerce ; 2023 à
+  l'édition arabe, p. 764, l'édition française étant absente du corpus et de pist.tn), décret
+  gouvernemental n° 2016-1393 (compensation des créances réciproques, 152,0 MD, p. 3797).
+  Plein texte du corpus 1994-2026, éditions française et arabe : aucune autre convention de
+  garantie au profit de la STIR ; 384 fascicules de 1994-2012 sans couche texte exploitable.
+  **Reste** :
+  - la fiche de la STIR au rapport sur les entreprises publiques (bilan, résultat, dette par
+    créancier, subvention d'exploitation), **non versée** dans `entreprises-publiques-fiches-entreprises` :
+    LF 2022 p. 62 imprimée (page 61 de `annexe9_2022.pdf`, avec l'ETAP), LF 2024 p. 95 (page 96
+    de `rapport_ep_LF2024.pdf`), LF 2025 p. 70 (avec la STEG) ; tableaux arabes tournés, **à lire
+    à l'image** dans le corpus de `tunisia-data` ; éditions LF 2020 (p. 88) et LF 2021 (p. 79) :
+    comptes de la STIR dans la prose ;
+  - comptes publiés par la STIR (rapports annuels, états financiers) : **à obtenir** ;
+  - le prêt garanti dont l'État paie le principal de 2013 à 2016 : non identifié ;
+  - augmentations de capital de la société tuniso-italienne (loi n° 61-35, décret-loi n° 61-11
+    et loi n° 61-44, loi n° 62-29) : **dans le corpus local, à l'image**, non lues ;
+  - décrets n° 89-1197 et 91-178 (article 5 du décret n° 77-467, composition du conseil) : lus à
+    l'OCR, non versés au registre ; décret n° 99-1304 (organigramme), non lu ;
+  - la figure : rien à tracer tant que la fiche n'est pas versée.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la
