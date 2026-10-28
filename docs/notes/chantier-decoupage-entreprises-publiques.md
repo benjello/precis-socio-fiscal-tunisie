@@ -344,9 +344,8 @@ nationalisations de 1956-1964) quand les chapitres 8 à 13 s'ouvriront.
 1. Le chapitre 8, « L'énergie » (`_energie.qmd`, `#sec-ep-energie`), est ouvert. Il reçoit les sections de la
    STEG (`#sec-ep-steg`), de l'ETAP (`#sec-ep-etap`) et de la STIR (`#sec-ep-ge-stir`), déplacées de
    `_grandes_entreprises.qmd` sans changement de texte, avec leurs figures, leurs tableaux de fiches et leurs
-   registres (`tbl-ep-registre-steg`, `-etap`, `-stir`). Les ancres sont conservées. La STEG et l'ETAP ont leur
-   fiche au rapport sur les entreprises publiques ; la STIR a sa section, sa fiche reste à verser
-   (`docs/notes/backlog-precis.md`). Le chapitre s'ouvre sur cette décision, sans attendre la fiche de la STIR.
+   registres (`tbl-ep-registre-steg`, `-etap`, `-stir`). Les ancres sont conservées. La STEG, l'ETAP et la STIR ont
+   chacune leur fiche au rapport sur les entreprises publiques (celle de la STIR est versée le 28 octobre 2026).
 2. Ordre dans la partie III : « L'énergie », puis « Les grandes entreprises », comme le chapitre 8 précède
    les chapitres 9 à 13 dans le plan du § 2.
 3. Ce que cela change au plan à seize chapitres : la cible reste de seize chapitres ; le livre en compte
