@@ -11743,6 +11743,29 @@ entries:
         المعتمد سنة 2015 صارت تحوّل إلى الخزينة محصول بيع النفط الراجع للدولة.
       synonymes: []
 
+  - id: office-cereales
+    acronyme: null
+    statut: valide
+    references: [dl62-10-oc, dl70-7-oc, minfin-ep-2024, minfin-ep-2025]
+    source_definition: {ref: dl70-7-oc, locator: "art. 1er et 2"}
+    # AR : intitulé « ديوان الحبوب » de la fiche de l'Office dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 89.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 89"}
+    voir_aussi: [stir, steg]
+    fr:
+      terme: Office des céréales
+      definition: >
+        Établissement public créé en 1962, qui a le monopole des importations et des
+        exportations de céréales et achète les céréales à la production. Il reçoit du
+        budget la subvention d'achat des céréales importées et locales.
+      synonymes: ["Office des céréales, légumineuses alimentaires et autres produits agricoles"]
+    ar:
+      terme: ديوان الحبوب
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 1962، لها احتكار توريد الحبوب وتصديرها وشراء الحبوب من
+        المنتجين. وتتلقّى من الميزانية منحة شراء الحبوب المورّدة والمحلية.
+      synonymes: []
+
   - id: stir
     acronyme: STIR
     statut: valide
