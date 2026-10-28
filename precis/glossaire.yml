@@ -10215,7 +10215,7 @@ entries:
   # FR : « travail informel » n'est plus synonyme — la 21e CIST le distingue (§ 53 ; voir travail-informel).
   - id: emploi-informel
     acronyme: null
-    statut: valide  # AR attesté par l'INS (voir ci-dessus)
+    statut: provisoire  # AR attesté par l'INS (note de 2019, p. 6) ; source_traduction à renseigner
     references: []
     source_definition: {ref: oit-cist21-2023-informel, locator: "§ 56"}
     voir_aussi: [secteur-informel, travail-informel, economie-informelle, cout-du-travail]
