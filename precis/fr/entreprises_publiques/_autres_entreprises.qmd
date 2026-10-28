@@ -1,0 +1,76 @@
+# Les autres entreprises {#sec-ep-autres-entreprises .domicile-unique}
+
+Ce chapitre présente, une par une, les entreprises publiques qui ne relèvent pas du chapitre « L'énergie » (@sec-ep-energie) : pour l'instant la Société nationale des chemins de fer tunisiens (SNCFT), avec sa naissance et son statut, ses comptes, sa dette, sa subvention d'exploitation et son emploi. Les transferts et les résultats de l'ensemble des entreprises sont au chapitre « Les grandes entreprises » (@sec-ep-lp-entreprises).
+
+## La source {#sec-ep-autres-source}
+
+La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : pour la SNCFT, sa fiche, exercices 2018 à 2023, en trois éditions. Le dernier exercice de chaque édition y est provisoire, estimé ou probable, et l'édition suivante le révise souvent.
+
+## La Société nationale des chemins de fer tunisiens (SNCFT) {#sec-ep-sncft}
+
+**La SNCFT, société nationale qui exploite le réseau ferré depuis le 1^er^ janvier 1957, est en perte à chacun des exercices 2018 à 2023 dans chaque édition du rapport du ministère des Finances, et ses fonds propres passent de 772,7 MD fin 2021 à 630,7 MD fin 2022 dans l'édition LF 2025.**
+
+```{python}
+#| label: fig-ep-sncft-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "sncft_fiches",
+    caption=("SNCFT d'après le rapport sur les entreprises publiques, exercices 2018-2023, en "
+             "millions de dinars courants et en agents : chaque exercice dans la dernière "
+             "édition qui le donne ; dette par créancier de l'édition LF 2022. Source : "
+             "ministère des Finances [@minfin-ep-2022, p. 55 ; @minfin-ep-2024, p. 84 ; "
+             "@minfin-ep-2025, p. 60]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2023 est "
+        "probable (hachures). « – » : case laissée vide par l'édition, ainsi les fonds propres "
+        "et les passifs de 2023. La dette totale n'est imprimée que par l'édition LF 2022, le "
+        "total des passifs que par les éditions LF 2024 et LF 2025 ; l'édition LF 2022 "
+        "n'imprime pas la dette de 2020, chiffre provisoire. La somme des cinq créanciers est "
+        "inférieure au total imprimé de 110,9 MD en 2018 et de 161,9 MD en 2019. Le résultat "
+        "net est celui d'avant modifications comptables ; pour 2019, le classement des dix "
+        "premières pertes de la même édition donne −113,78 MD (@fig-ep-resultats-entreprises). "
+        "Toutes les valeurs imprimées, édition par édition, sont dans les tableaux repliés "
+        "sous la section."),
+)
+```
+
+- **Ce que ses statuts lui confient.** [Le décret du 27 décembre 1956](#r-ep-sncft-1956) approuve les statuts de la SNCFT, entreprise à caractère commercial régie par la législation des sociétés anonymes, qui a pour objet l'exploitation du réseau des chemins de fer tunisiens. L'État lui concède l'exploitation de son réseau ferré à compter du 1^er^ janvier 1957 et lui apporte le matériel, les approvisionnements et les fonds du réseau.
+- **Une subvention d'exploitation de 65 à 105 MD.** La subvention d'exploitation inscrite à la fiche est de 65 MD par an de 2018 à 2020 dans l'édition LF 2022 ; l'édition LF 2024 donne 105 MD pour 2020 et 84,5 MD pour 2021, l'édition LF 2025 70 MD pour 2022 et 95 MD pour 2023, chiffre probable. La subvention du transport public est exposée dans le volume [« La compensation »](../compensation/_transport.html#sec-compensation-transport).
+- **Une dette bancaire.** Fin 2019, la dette de la SNCFT est de 1 478,7 MD, dont 894 MD envers les banques, 161,7 MD envers les caisses sociales et 46 MD envers l'État ; la somme des créanciers imprimés est inférieure de 161,9 MD au total imprimé (110,9 MD fin 2018). L'édition ne donne pas la dette de 2020 (@fig-ep-sncft-fiches).
+- **L'emploi.** L'effectif est de 4 612 agents en 2018, de 4 790 en 2021 et de 4 539 en 2023, chiffre probable ; les charges de personnel passent de 118,9 à 140,7 MD.
+
+:::: {.chronologie-repliable titre="SNCFT : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et statuts de 1956"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("sncft", ("LF2022",),
+    caption=("SNCFT, édition LF 2022 : dette par créancier, fonds propres, investissements, "
+             "résultat et emploi, exercices 2018-2020 ; 2020 est provisoire, sans dette "
+             "imprimée. La somme des cinq créanciers est inférieure au total imprimé de "
+             "110,9 MD en 2018 et de 161,9 MD en 2019. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 55]"),
+    tbl_id="tbl-ep-sncft-fiche-a")
+ge.tableau_fiche_detail("sncft", ("LF2024", "LF2025"),
+    caption=("SNCFT, éditions LF 2024 et LF 2025 : bilan et résultat, exercices 2020-2023. "
+             "Dans l'édition LF 2025, les recettes, la subvention d'exploitation et les autres "
+             "produits ne redonnent pas le total des produits d'exploitation imprimé ; "
+             "l'édition LF 2024 le redonne. Source : ministère des Finances "
+             "[@minfin-ep-2024, p. 84 ; @minfin-ep-2025, p. 60]"),
+    tbl_id="tbl-ep-sncft-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-sncft-1956}[1^er^ janvier 1957]{.insecable}, date dite par le décret (art. 1^er^) | décret du 27 décembre 1956 [@decret-1956-12-27-sncft, art. 1^er^ du décret et art. 1^er^ à 6 des statuts, p. 1756] | statuts de la Société nationale des chemins de fer tunisiens approuvés : entreprise à caractère commercial régie par la législation relative aux sociétés anonymes dans la mesure où le statut n'y déroge pas (art. 1^er^) ; objet : exploitation du réseau des chemins de fer tunisiens et gestion des biens qui lui sont dévolus (art. 3) ; durée de 99 ans (art. 5) ; l'État concède l'exploitation de son réseau ferré pour la durée de la société à compter du 1^er^ janvier 1957, met à sa disposition le rail, la voie, les gares et les dépôts, et lui fait apport du matériel, des approvisionnements, des fonds et des créances du réseau, à charge des dettes, apport évalué forfaitairement à 3 milliards de francs (art. 6) | mise en place |
+
+: Les statuts de la SNCFT {#tbl-ep-registre-sncft}
+
+::::
+
+<!-- TODO (documentaliste) : fiches par entreprise des éditions LF 2022, LF 2024 et LF 2025 versées pour la STEG, l'ETAP, la SNCFT et la STIR (série entreprises-publiques-fiches-entreprises). Restent à verser, mêmes pages de ces éditions (effectifs déjà versés, voir entreprises-publiques-effectifs.csv de tunisia-data pour les pages) : STIR (pages au TODO de sa section, chapitre « L'énergie »), Tunisair, Transtu, Office des céréales, Office national de l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du commerce. Les éditions françaises LF 2020 et LF 2021 et l'édition LF 2023 donnent les comptes dans la prose, pas en tableau. Classements par charges de personnel et par produits d'exploitation : non versés. SNCFT : statuts de 1969 (loi n° 69-31 du 9 mai 1969, JORT n° 19, p. 581-584) non lus ; longue période avant 2018 à chercher (rapports annuels de la société, annexe 8 pour les transferts 2016-2024). -->
