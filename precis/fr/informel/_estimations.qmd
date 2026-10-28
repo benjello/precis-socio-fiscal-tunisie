@@ -19,20 +19,23 @@ Pour le 2e trimestre 2019, l'INS et l'OIT partent de la même enquête et obtien
 
 D'autres enquêtes donnent des niveaux plus élevés ou plus bas, avec d'autres critères. L'enquête TLMPS de 2014, traitée par l'OIT, donne 58,8 % de l'emploi total ; l'enquête budget-consommation de 2015 donne 40,2 % d'occupés non affiliés à un régime de sécurité sociale, critère d'affiliation déclarée [@elmekkaoui-et-al2022-erf1576, p. 6].
 
-<!-- TODO (rédacteur) : ILOSTAT ne publie pas sa table de passage entre critère OIT et critère INS ; demander à l'OIT ou à l'INS si l'écart de 8 points au 2e trimestre 2019 doit être expliqué chiffre en main. Le chiffre de 25,2 % de Ben Cheikh et Moisseron (2021) n'est pas repris : le chapitre n'est pas encore en main. -->
+<!-- TODO (rédacteur) : ILOSTAT ne publie pas sa table de passage entre critère OIT et critère INS ; demander à l'OIT ou à l'INS si l'écart de 8 points au 2e trimestre 2019 doit être expliqué chiffre en main. Le chapitre de Ben Cheikh et Moisseron (2021), auquel les travaux de l'ERF attribuent 25,2 % pour 2018 et 25,8 % pour 2014, n'est pas en main ; les deux valeurs se trouvent dans la thèse (tableaux 16 et 15) mais la thèse ne cite pas le chapitre dans son texte. -->
 
 ## L'emploi informel par la méthode du solde {#sec-inf-est-solde}
 
-Deux études appliquent à la Tunisie la [méthode du solde](#g-methode-residuelle) entre l'emploi observé et les affiliés à la sécurité sociale (voir [les sources administratives](./_mesures.html#sec-inf-mes-administratives)). Elles sont du même auteur, Nidhal Ben Cheikh, et leurs séries diffèrent d'une publication à l'autre.
+Trois publications appliquent à la Tunisie la méthode du solde entre l'emploi observé et les affiliés à la sécurité sociale (voir [les sources administratives](./_mesures.html#sec-inf-mes-administratives)). Elles sont du même auteur, Nidhal Ben Cheikh, avec des coauteurs pour la première et la troisième. Leurs séries diffèrent d'une publication à l'autre.
 
 | Étude | 2005 | 2010 ou 2011 | 2015 | 2018 | 2020 | Dénominateur |
 |---|---|---|---|---|---|---|
 | CRES et BAD, 2016 | 34 % | 24 % (2011) | 32 % (provisoire) | — | — | emploi total |
+| Thèse de Ben Cheikh, 2021 | 34,4 % | 27,5 % (2010) ; 23,5 % (2011) | 29,4 % | 25,2 % ou 26,9 % | — | emploi total |
 | PNUD et OIT, 2022 | 34,4 % | 27,5 % (2010) | 29,4 % | 26,9 % | 26,8 % | emploi total |
 
 : Les estimations de l'emploi informel par la méthode du solde {#tbl-inf-est-solde}
 
-Sources : [@charmes-bencheikh2016-informel, tableau 12, p. 64] ; [@pnud-oit2022-bencheikh-informel, p. 58]. Le niveau de 2015 est de 32 % dans la première étude et de 29,4 % dans la seconde. La même méthode donne des niveaux inférieurs à ceux de l'INS : un salarié qui cotise une fois dans l'année est formel ici, alors qu'il est informel chez l'INS s'il n'a pas de congé payé. L'étude de 2022 le dit pour les indépendants : les taux d'informalité de l'INS sont « de loin plus élevés » que ceux de l'approche du solde (p. 64).
+Sources : [@charmes-bencheikh2016-informel, tableau 12, p. 64] ; [@bencheikh2021-these-informalite, tableau 16, p. 129] ; [@pnud-oit2022-bencheikh-informel, p. 58]. La thèse donne deux valeurs pour 2018 et n'explique pas l'écart : 881,9 milliers, soit 25,2 %, au tableau 16, confirmés par les tableaux 12 et 14 ; 941,9 milliers, soit 26,9 %, dans le texte (p. 122-123). Le niveau de 2015 est de 32 % dans l'étude de 2016 et de 29,4 % dans les deux suivantes. La thèse définit l'emploi formel par la cotisation à la CNSS pendant au moins un trimestre de l'année, ajoutée aux actifs de la CNRPS, et s'écarte à dessein de la méthode de 2003 pour les indépendants qui cotisent (p. 116-124). La même méthode donne des niveaux inférieurs à ceux de l'INS : un salarié qui cotise une fois dans l'année est formel ici, alors qu'il est informel chez l'INS s'il n'a pas de congé payé. L'étude de 2022 le dit pour les indépendants : les taux d'informalité de l'INS sont « de loin plus élevés » que ceux de l'approche du solde (p. 64).
+
+La thèse rapporte par ailleurs 25,8 % pour 2014, tiré du recensement de la population de 2014 (tableau 15, p. 126), alors que la série de l'enquête emploi donne 28,4 % pour la même année : ce sont deux sources distinctes, qui ne vont pas dans la même série. Pour l'enquête sur le budget et la consommation des ménages de 2015, la thèse est la source primaire des 40,3 % d'occupés non affiliés à un régime de sécurité sociale (tableau 22, p. 142).
 
 L'étude de 2016 donne aussi l'emploi de l'économie informelle rapporté à l'emploi **non agricole**, par la même logique de solde : 40,3 % en 1997, 34,3 % en 2002, 36,8 % en 2007 et 33,9 % en 2012 [@charmes-bencheikh2016-informel, tableau 6, p. 44]. Ce dénominateur diffère de celui du tableau ci-dessus.
 
