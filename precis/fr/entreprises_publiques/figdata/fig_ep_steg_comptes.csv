@@ -1,0 +1,100 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-28
+# séries (tunisia_data) : steg-etats-financiers
+# sources (citation) : @steg-ef-2014, @steg-ef-2015, @steg-ef-2016, @steg-ef-2017, @steg-ef-2018, @steg-ef-2019, @steg-ef-2020, @steg-ef-2021, @steg-ef-2022, @steg-ef-2023
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : COMPTES DE L'ENTREPRISE, PAS UNE SOURCE BUDGÉTAIRE : jamais raccordés aux fiches du ministère des Finances, même quand les deux impriment la même valeur (subvention d'exploitation de 2018, 2020, 2021, 2022 : identique). `fichier_du_meme_exercice` marque la colonne de l'exercice ; la colonne de comparaison du fichier suivant peut différer (`divergence_entre_fichiers`, 12 lignes : 2018 relu en 2019, actifs 9 563,8 puis 9 483,9 ; 2019 « retraité » dans le fichier de 2020 pour la surtaxe municipale ; écarts d'un dinar). ÉCART IMPRIMÉ : colonne 2017 du fichier de 2018, actifs ≠ capitaux propres + passifs de 15 453 DT, déclaré. L'état de résultat ne donne ni total des produits, ni total des charges d'exploitation, ni charges de personnel. Résultat après modifications comptables : 2015, 2017, 2021 (+3 469,6), 2022 (−2 716,1), 2023. LECTURE : couche texte et image ; 2015 et 2020 à l'image seulement ; 2019 et 2022 sur la couche texte, recoupées avec l'annexe 9 du ministère.
+# note : Comptes publiés de la STEG, exercices 2013-2023, en millions de dinars courants. Source : STEG, états financiers [@steg-ef-2014, p. 11 et 13 ; @steg-ef-2015, p. 13 et 15 ; @steg-ef-2016, p. 11 et 13 ; @steg-ef-2017, p. 13 et 15 ; @steg-ef-2018, p. 13 et 16 ; @steg-ef-2019, p. 9 et 11 ; @steg-ef-2020, p. 19 et 21 ; @steg-ef-2021, p. 11 et 13 ; @steg-ef-2022, p. 7 et 9 ; @steg-ef-2023, p. 7 et 9]
+Exercice,Grandeur,Libellé imprimé,Montant (MD courants),Imprimé (dinars),États financiers,Colonne,Page du fichier
+2013,Capitaux propres avant affectation,Total des capitaux propres avant affectation,1110.889,1 110 889 487,steg_ef_2014.pdf,exercice précédent,11
+2013,dont concours bancaires,Concours bancaires et autres passifs financiers,294.082,294 082 275,steg_ef_2014.pdf,exercice précédent,11
+2013,dont emprunts non courants,Emprunts (Passifs non courants),4018.858,4 018 857 680,steg_ef_2014.pdf,exercice précédent,11
+2013,Résultat d'exploitation,RESULTAT D'EXPLOITATION,284.046,284 046 460,steg_ef_2014.pdf,exercice précédent,13
+2013,Résultat net,RESULTAT NET DE L’EXERCICE,-252.006,- 252 005 828,steg_ef_2014.pdf,exercice précédent,13
+2013,Revenus,REVENUS,2968.623,2 968 623 250,steg_ef_2014.pdf,exercice précédent,13
+2013,Subvention d'exploitation,Subvention d'exploitation,2768.794,2 768 794 154,steg_ef_2014.pdf,exercice précédent,13
+2013,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,6623.963,6 623 962 780,steg_ef_2014.pdf,exercice précédent,11
+2014,Capitaux propres avant affectation,Total des capitaux propres avant affectation,1156.877,1 156 877 049,steg_ef_2014.pdf,exercice,11
+2014,dont concours bancaires,Concours bancaires et autres passifs financiers,297.696,297 696 379,steg_ef_2014.pdf,exercice,11
+2014,dont emprunts non courants,Emprunts (Passifs non courants),4292.152,4 292 151 503,steg_ef_2014.pdf,exercice,11
+2014,Résultat d'exploitation,RESULTAT D'EXPLOITATION,257.471,257 471 285,steg_ef_2014.pdf,exercice,13
+2014,Résultat net,RESULTAT NET DE L’EXERCICE,-1.733,- 1 732 919,steg_ef_2014.pdf,exercice,13
+2014,Revenus,REVENUS,3736.002,3 736 001 807,steg_ef_2014.pdf,exercice,13
+2014,Subvention d'exploitation,Subvention d'exploitation,2323.093,2 323 093 080,steg_ef_2014.pdf,exercice,13
+2014,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,6776.727,6 776 727 358,steg_ef_2014.pdf,exercice,11
+2015,Capitaux propres avant affectation,Total des capitaux propres avant affectation,1181.105,1 181 105 404,steg_ef_2015.pdf,exercice,13
+2015,dont concours bancaires,Concours bancaires et autres passifs financiers,556.659,556 659 239,steg_ef_2015.pdf,exercice,13
+2015,dont emprunts non courants,Emprunts (Passifs non courants),4123.18,4 123 179 901,steg_ef_2015.pdf,exercice,13
+2015,Résultat d'exploitation,RESULTAT D'EXPLOITATION,129.056,129 056 049,steg_ef_2015.pdf,exercice,15
+2015,Résultat net,RESULTAT NET DE L'EXERCICE,-23.834,- 23 833 753,steg_ef_2015.pdf,exercice,15
+2015,Résultat après modifications comptables,Résultat après modifications comptables,-4.559,-4559 188,steg_ef_2015.pdf,exercice,15
+2015,Revenus,REVENUS,3814.442,3 814 442 416,steg_ef_2015.pdf,exercice,15
+2015,Subvention d'exploitation,Subvention d'exploitation,858.0,858 000 000,steg_ef_2015.pdf,exercice,15
+2015,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,7118.48,7 118 480 111,steg_ef_2015.pdf,exercice,13
+2016,Capitaux propres avant affectation,Total des capitaux propres avant affectation,854.923,854 923 268,steg_ef_2016.pdf,exercice,11
+2016,dont concours bancaires,Concours bancaires et autres passifs financiers,624.717,624 716 638,steg_ef_2016.pdf,exercice,11
+2016,dont emprunts non courants,Emprunts (Passifs non courants),4413.526,4 413 525 662,steg_ef_2016.pdf,exercice,11
+2016,Résultat d'exploitation,RESULTAT D'EXPLOITATION,310.631,310 631 040,steg_ef_2016.pdf,exercice,13
+2016,Résultat net,RESULTAT NET DE L'EXERCICE,-354.423,- 354 423 375,steg_ef_2016.pdf,exercice,13
+2016,Revenus,REVENUS,3751.547,3 751 546 915,steg_ef_2016.pdf,exercice,13
+2016,Subvention d'exploitation,Subvention d'exploitation,0.0,0,steg_ef_2016.pdf,exercice,13
+2016,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,7404.351,7 404 350 674,steg_ef_2016.pdf,exercice,11
+2017,Capitaux propres avant affectation,Total des capitaux propres avant affectation,-276.093,-276 093 270,steg_ef_2017.pdf,exercice,13
+2017,dont concours bancaires,Concours bancaires et autres passifs financiers,1065.913,1 065 913 184,steg_ef_2017.pdf,exercice,13
+2017,dont emprunts non courants,Emprunts (Passifs non courants),5371.939,5 371 938 853,steg_ef_2017.pdf,exercice,13
+2017,Résultat d'exploitation,RESULTAT D'EXPLOITATION,-151.076,- 151 075 636,steg_ef_2017.pdf,exercice,15
+2017,Résultat net,RESULTAT NET,-1193.681,-1 193 680 714,steg_ef_2017.pdf,exercice,15
+2017,Résultat après modifications comptables,Résultat après modifications comptables,-1169.847,-1 169 846 961,steg_ef_2017.pdf,exercice,15
+2017,Revenus,REVENUS,4067.791,4 067 791 442,steg_ef_2017.pdf,exercice,15
+2017,Subvention d'exploitation,Subvention d'exploitation,593.166,593 166 247,steg_ef_2017.pdf,exercice,15
+2017,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,9254.431,9 254 430 641,steg_ef_2017.pdf,exercice,13
+2018,Capitaux propres avant affectation,Total des capitaux propres avant affectation,-2341.812,-2 341 811 916,steg_ef_2018.pdf,exercice,13
+2018,dont concours bancaires,Concours bancaires et autres passifs financiers,1761.64,1 761 639 899,steg_ef_2018.pdf,exercice,13
+2018,dont emprunts non courants,Emprunts (Passifs non courants),6533.247,6 533 247 267,steg_ef_2018.pdf,exercice,13
+2018,Résultat d'exploitation,RESULTAT D'EXPLOITATION,-552.802,- 552 802 402,steg_ef_2018.pdf,exercice,16
+2018,Résultat net,RESULTAT NET,-2093.505,-2 093 505 085,steg_ef_2018.pdf,exercice,16
+2018,Revenus,REVENUS,4534.263,4 534 263 470,steg_ef_2018.pdf,exercice,16
+2018,Subvention d'exploitation,Subvention d'exploitation,1200.0,1 200 000 000,steg_ef_2018.pdf,exercice,16
+2018,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,11905.565,11 905 565 200,steg_ef_2018.pdf,exercice,13
+2019,Capitaux propres avant affectation,Total des capitaux propres avant affectation,-2219.766,-2 219 765 868,steg_ef_2019.pdf,exercice,9
+2019,dont concours bancaires,Concours bancaires et autres passifs financiers,1553.037,1 553 036 886,steg_ef_2019.pdf,exercice,9
+2019,dont emprunts non courants,Emprunts (Passifs non courants),6345.901,6 345 901 310,steg_ef_2019.pdf,exercice,9
+2019,Résultat d'exploitation,RESULTAT D'EXPLOITATION,-544.08,- 544 079 699,steg_ef_2019.pdf,exercice,11
+2019,Résultat net,RESULTAT NET,106.41,106 409 910,steg_ef_2019.pdf,exercice,11
+2019,Revenus,REVENUS,5473.688,5 473 687 548,steg_ef_2019.pdf,exercice,11
+2019,Subvention d'exploitation,Subvention d'exploitation,1242.0,1 242 000 000,steg_ef_2019.pdf,exercice,11
+2019,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,12553.113,12 553 113 210,steg_ef_2019.pdf,exercice,9
+2020,Capitaux propres avant affectation,Total des capitaux propres avant affectation,-2279.099,-2 279 099 383,steg_ef_2020.pdf,exercice,19
+2020,dont concours bancaires,Concours bancaires et autres passifs financiers,1726.779,1 726 778 740,steg_ef_2020.pdf,exercice,19
+2020,dont emprunts non courants,Emprunts (Passifs non courants),6995.836,6 995 835 634,steg_ef_2020.pdf,exercice,19
+2020,Résultat d'exploitation,RESULTAT D'EXPLOITATION,133.605,133 604 611,steg_ef_2020.pdf,exercice,21
+2020,Résultat net,RESULTAT NET,-60.17,-60 170 126,steg_ef_2020.pdf,exercice,21
+2020,Revenus,REVENUS,5281.722,5 281 721 967,steg_ef_2020.pdf,exercice,21
+2020,Subvention d'exploitation,Subvention d'exploitation,100.0,100 000 000,steg_ef_2020.pdf,exercice,21
+2020,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,13174.233,13 174 233 167,steg_ef_2020.pdf,exercice,19
+2021,Capitaux propres avant affectation,Total des capitaux propres avant affectation,1201.873,1 201 873 314,steg_ef_2021.pdf,exercice,11
+2021,dont concours bancaires,Concours bancaires et autres passifs financiers,1590.367,1 590 367 235,steg_ef_2021.pdf,exercice,11
+2021,dont emprunts non courants,Emprunts (Passifs non courants),6342.877,6 342 877 428,steg_ef_2021.pdf,exercice,11
+2021,Résultat d'exploitation,RESULTAT D'EXPLOITATION,304.439,304 439 330,steg_ef_2021.pdf,exercice,13
+2021,Résultat net,RESULTAT NET,-42.663,-42 662 730,steg_ef_2021.pdf,exercice,13
+2021,Résultat après modifications comptables,Résultat après modifications comptables,3469.625,3 469 624 752,steg_ef_2021.pdf,exercice,13
+2021,Revenus,REVENUS,5425.284,5 425 283 749,steg_ef_2021.pdf,exercice,13
+2021,Subvention d'exploitation,Subvention d'exploitation,1368.777,1 368 776 684,steg_ef_2021.pdf,exercice,13
+2021,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,13838.561,13 838 561 159,steg_ef_2021.pdf,exercice,11
+2022,Capitaux propres avant affectation,Total des capitaux propres avant affectation,-1507.875,-1 507 875 290,steg_ef_2022.pdf,exercice,7
+2022,dont concours bancaires,Concours bancaires et autres passifs financiers,1459.444,1 459 444 320,steg_ef_2022.pdf,exercice,7
+2022,dont emprunts non courants,Emprunts (Passifs non courants),6423.629,6 423 628 637,steg_ef_2022.pdf,exercice,7
+2022,Résultat d'exploitation,RESULTAT D'EXPLOITATION,142.669,142 668 668,steg_ef_2022.pdf,exercice,9
+2022,Résultat net,RESULTAT NET,-381.169,- 381 168 911,steg_ef_2022.pdf,exercice,9
+2022,Résultat après modifications comptables,Résultat après modifications comptables,-2716.084,-2 716 084 077,steg_ef_2022.pdf,exercice,9
+2022,Revenus,REVENUS,5970.204,5 970 204 495,steg_ef_2022.pdf,exercice,9
+2022,Subvention d'exploitation,Subvention d'exploitation,4707.381,4 707 380 643,steg_ef_2022.pdf,exercice,9
+2022,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,16441.798,16 441 798 473,steg_ef_2022.pdf,exercice,7
+2023,Capitaux propres avant affectation,Total des capitaux propres avant affectation,-1591.62,-1 591 619 609,steg_ef_2023.pdf,exercice,7
+2023,dont concours bancaires,Concours bancaires et autres passifs financiers,1355.626,1 355 626 122,steg_ef_2023.pdf,exercice,7
+2023,dont emprunts non courants,Emprunts (Passifs non courants),6218.959,6 218 958 946,steg_ef_2023.pdf,exercice,7
+2023,Résultat d'exploitation,RESULTAT D'EXPLOITATION,-224.69,-224 689 925,steg_ef_2023.pdf,exercice,9
+2023,Résultat net,RESULTAT NET,-489.567,-489 567 274,steg_ef_2023.pdf,exercice,9
+2023,Résultat après modifications comptables,Résultat après modifications comptables,-489.567,-489 567 274,steg_ef_2023.pdf,exercice,9
+2023,Revenus,Revenus,6129.773,6 129 773 431,steg_ef_2023.pdf,exercice,9
+2023,Subvention d'exploitation,Subvention d'exploitation,4030.141,4 030 141 381,steg_ef_2023.pdf,exercice,9
+2023,"Total des passifs, hors capitaux propres",TOTAL DES PASSIFS,17994.491,17 994 491 225,steg_ef_2023.pdf,exercice,7
