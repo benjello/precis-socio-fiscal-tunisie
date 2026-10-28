@@ -1,4 +1,5 @@
-"""Figures et tableaux du chapitre « Les grandes entreprises » : une section par entreprise.
+"""Figures et tableaux des chapitres « L'énergie » (STEG, ETAP, STIR) et « Les grandes entreprises »
+(ensemble de l'échantillon, SNCFT) : une section par entreprise. Les deux chapitres importent ce module.
 
     from figures import grandes_entreprises as ge
     ge.figure("transferts", caption=…)                      # transferts de onze entreprises

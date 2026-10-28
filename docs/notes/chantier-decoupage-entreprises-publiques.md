@@ -52,7 +52,7 @@ Remarques sur le plan :
   annuel (dette, subvention d'exploitation, total des passifs) ne sont pas versées, ils n'ont pas de
   matière. Départ : une seule section « les dix entreprises les plus lourdes » dans le chapitre 14, déjà
   écrite (`#sec-ep-lp-entreprises`) ; un chapitre sectoriel s'ouvre quand trois entreprises du secteur ont
-  leur fiche.
+  leur fiche. Le chapitre 8, « L'énergie », est ouvert le 28 octobre 2026 (§ 10).
 - **Le chapitre 2 est provisoire.** Aujourd'hui il tient en la section « Depuis 2011 » (1 200 mots) et en
   celle de 2019. Il reste au chapitre 1 tant qu'il n'a pas lu au moins la loi de 1985 sur les fautes de
   gestion, le décret de 2014 sur la rémunération des dirigeants et les textes de contrôle de 2002-2016.
@@ -218,7 +218,7 @@ secondaires, longue période, « Ce qu'en dit l'économie ». Entre parenthèses
 - La reprise de dettes : Tunisair, 165 MD autorisés en 2014 (nouveau).
 - Ce qu'en dit l'économie : recapitalisation bancaire.
 
-**8 à 13. Les entreprises** (aucun écrit ; plan commun)
+**8 à 13. Les entreprises** (8 ouvert le 28 octobre 2026, `_energie.qmd` ; 9 à 13 non écrits ; plan commun)
 
 - Naissance et statut de l'entreprise.
 - Les comptes : résultats, total des passifs.
@@ -236,7 +236,8 @@ et la subvention de la STEG. La subvention et son partage entre les ménages res
 - Les effectifs 2016-2023 pour 50 entités et les charges de personnel (`sec-ep-effectifs`).
 - Les six éditions du rapport et leurs échantillons (`sec-ep-lp-editions`).
 - Les résultats agrégés par édition, 2017-2022 (`sec-ep-lp-resultats`).
-- La dizaine d'entreprises les plus lourdes (`sec-ep-lp-entreprises`), jusqu'à l'ouverture des chapitres 8 à 13.
+- La dizaine d'entreprises les plus lourdes (`sec-ep-lp-entreprises`), jusqu'à l'ouverture des chapitres 8 à 13 ;
+  la STEG, l'ETAP et la STIR en sont sorties le 28 octobre 2026 pour le chapitre 8.
 - Les agrégats de l'INS et les 117 416 employés de 2010 (Banque mondiale), rapprochés sans chaînage.
 
 **15. La relation financière, 1960-2024**
@@ -337,3 +338,23 @@ nationalisations de 1956-1964) quand les chapitres 8 à 13 s'ouvriront.
 8. Le registre des textes est réparti par chapitre.
 9. Ancres `sec-ep-*` et `r-ep-*` conservées.
 10. Français seulement ; `precis/ar/` non touché.
+
+## 10. Le chapitre « L'énergie » (décision de l'humain, 28 octobre 2026)
+
+1. Le chapitre 8, « L'énergie » (`_energie.qmd`, `#sec-ep-energie`), est ouvert. Il reçoit les sections de la
+   STEG (`#sec-ep-steg`), de l'ETAP (`#sec-ep-etap`) et de la STIR (`#sec-ep-ge-stir`), déplacées de
+   `_grandes_entreprises.qmd` sans changement de texte, avec leurs figures, leurs tableaux de fiches et leurs
+   registres (`tbl-ep-registre-steg`, `-etap`, `-stir`). Les ancres sont conservées. La STEG, l'ETAP et la STIR ont
+   chacune leur fiche au rapport sur les entreprises publiques (celle de la STIR est versée le 28 octobre 2026).
+2. Ordre dans la partie III (décision de l'humain, 28 octobre 2026, après l'ouverture) : « Les grandes entreprises »
+   (début de l'ancien chapitre : transferts et résultats 2017-2022, `#sec-ep-lp-entreprises`), puis « L'énergie »,
+   puis « Les autres entreprises » (`_autres_entreprises.qmd`, `#sec-ep-autres-entreprises`), qui reçoit la SNCFT
+   (`#sec-ep-sncft`) et les entreprises à venir.
+3. Ce que cela change au plan à seize chapitres : la cible reste de seize chapitres ; le livre en compte
+   douze. Les chapitres 9 à 13 restent des cibles, à ouvrir selon la décision 3 du § 9 ; une entreprise d'un
+   secteur qui n'a pas trois fiches est traitée dans « Les autres entreprises » jusqu'à l'ouverture de son chapitre.
+4. Pas de vue d'ensemble ajoutée au chapitre « L'énergie » (décision de l'humain, 28 octobre 2026) : il garde
+   un chapeau et les trois sections. Une entreprise dont le secteur n'a pas trois fiches reste dans « Les autres
+   entreprises » jusqu'à l'ouverture de son chapitre (même décision).
+5. Les deux chapitres lisent le même module de figures, `figures/grandes_entreprises.py`. Aucune ligne de
+   registre n'est citée depuis les deux chapitres : aucune n'est recopiée.
