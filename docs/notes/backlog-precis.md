@@ -3714,7 +3714,7 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Tunisair, Transtu, Office national de l'huile, CPG, Groupe chimique, Tunisie Télécom, Poste, RNTA, Office du
+  - les autres grandes entreprises (Tunisair, Transtu, Office national de l'huile, Tunisie Télécom, Poste, RNTA, Office du
     commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
@@ -3842,6 +3842,42 @@ Ce qui reste :
     comptes dans la prose, non versés ; grandeurs d'activité des fiches (eau facturée, redevances,
     raccordements) non relevées ;
   - comptes publiés et contrats-programmes des deux entreprises : **à obtenir**.
+- **CPG et GCT — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-cpg` et `#sec-ep-ge-gct`, après l'ONAS et avant la SNCFT ; deux entreprises du
+  phosphate ne font pas un chapitre, note de chantier, § 10). Figures `fig-ep-{cpg,gct}-fiches`
+  (pas de figure du budget : le tableau des transferts de l'édition LF 2022, p. 106, leur donne 0
+  de 2018 à 2020), tableaux repliés `tbl-ep-{cpg,gct}-fiche-a` et `-b`. **Fiches du ministère des
+  Finances versées le 28 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiches-cpg-gct`) : LF 2022 p. 63 (les deux), LF 2024 p. 97
+  (les deux), LF 2025 p. 71 (CPG) et 72 (GCT) ; lues à l'image (300 dpi), chaque ligne retrouvée
+  entière dans la couche texte. GCT : exercice 2023 remplacé par une note dans l'édition LF 2025.
+  Écarts imprimés déclarés : CPG 2019 (dette totale à 0,32 près), GCT en LF 2022 (montants entiers,
+  écarts d'une unité). Lus sur les pages, sans série : contribution aux ressources propres de
+  l'État (LF 2022 p. 103 ; LF 2024 p. 151, CPG seule), dettes et créances croisées de fin 2023
+  (LF 2025 p. 118-123), part de l'État dans les bénéfices 2021-2023 (CPG, 50 MD, p. 126).
+  Registres `tbl-ep-registre-cpg` (décret-loi n° 60-25, image ; loi n° 93-68, image ; loi
+  n° 96-31 ; loi n° 2000-13, image ; loi n° 2005-109 ; lois de finances pour 2021, art. 40, et
+  pour 2026, art. 40, édition arabe ; loi n° 2026-17) et `tbl-ep-registre-gct` (loi n° 93-79,
+  image ; décret n° 97-1840 ; loi n° 99-84, image ; décret n° 2000-2947, image ; lois n° 2009-45,
+  2012-15, 2014-2, 2017-17, 2017-18, 2021-30 ; décret-loi n° 2023-20, édition arabe ; lois
+  n° 2026-18 et 2026-19). Recherche par les intitulés français et arabes de `jort_cache.db`.
+  Glossaire : `cpg`, `gct`.
+  **Reste** :
+  - CPG : convention de 1897 et textes antérieurs à 1956 (**hors du corpus local**) ; décret
+    beylical du 1er janvier 1953 sur les mines (article 87) ; forme juridique, capital et part de
+    l'État ; augmentations de capital de 1970 à 1992 et garanties de 1974 à 1990 (**dans le
+    corpus, image**, liste dans le commentaire de la section) ;
+  - GCT : texte de constitution du Groupe (regroupement de sociétés, dont la SIAPE et la SAEPA)
+    **non identifié** par les intitulés ; lois de capital des sociétés du groupe, 1972-1990 (**dans
+    le corpus, image**) ;
+  - séries à verser dans `tunisia-data` : contribution aux ressources propres de l'État par
+    entreprise (tableau 35 de LF 2022, tableau 42 de LF 2024), dettes et créances croisées de fin
+    2022 (LF 2024, tableaux 38 et 39) et de fin 2023 au-delà des dix premières ;
+  - grandeurs d'activité des fiches (production et ventes en millions de tonnes) non relevées ;
+    éditions françaises LF 2020 (CPG p. 78, GCT p. 80) et LF 2021 (p. 89 et 92) non versées ;
+  - prêts à l'État pour les lignes ferroviaires du phosphate (lois n° 2024-31, 2025-12, 2026-7) :
+    non lus, à rattacher à la SNCFT ou aux transports ;
+  - comptes publiés et rapports annuels des deux entreprises : **à obtenir**.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la

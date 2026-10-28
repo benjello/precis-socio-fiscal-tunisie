@@ -18396,3 +18396,48 @@ entries:
         البلاد التونسية التي تصرّح بها البلدان الشريكة وواردات المنتجات نفسها
         المصرّح بها لدى الديوانة.
       synonymes: []
+
+  - id: cpg
+    acronyme: CPG
+    statut: valide
+    references: [decret-loi60-25-cpg, loi2005-109-cpg, minfin-ep-2025]
+    source_definition: {ref: loi2005-109-cpg, locator: "article unique"}
+    # AR : intitulé « شركة فسفاط قفصة » de la fiche de la compagnie dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 71.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 71"}
+    voir_aussi: [gct]
+    fr:
+      terme: Compagnie des phosphates de Gafsa
+      definition: >
+        Entreprise publique qui extrait le phosphate dans la région de Gafsa. L'État est
+        autorisé à souscrire à son capital en 1960.
+      synonymes: []
+    ar:
+      terme: شركة فسفاط قفصة
+      definition: >
+        منشأة عمومية تستخرج الفسفاط بجهة قفصة. رُخّص للدولة في الاكتتاب في رأس مالها
+        سنة 1960.
+      synonymes: []
+
+  - id: gct
+    acronyme: GCT
+    statut: valide
+    references: [decret2000-2947-gct, loi2012-15-gct, minfin-ep-2025]
+    source_definition: {ref: loi2012-15-gct, locator: "article unique"}
+    # AR : intitulé « المجمع الكيميائي التونسي » de la fiche du groupe dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 72.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 72"}
+    voir_aussi: [cpg]
+    fr:
+      terme: Groupe chimique tunisien
+      definition: >
+        Entreprise publique qui produit des engrais phosphatés, dont le triple
+        superphosphate. Ses emprunts d'investissement et le financement de ses importations
+        d'ammoniac, de soufre et d'engrais bénéficient de la garantie de l'État.
+      synonymes: []
+    ar:
+      terme: المجمع الكيميائي التونسي
+      definition: >
+        منشأة عمومية تنتج الأسمدة الفسفاطية، ومنها الفسفاط الثلاثي الرفيع. وتنتفع قروضها
+        الاستثمارية وتمويل وارداتها من الأمونيا والكبريت والأسمدة بضمان الدولة.
+      synonymes: []

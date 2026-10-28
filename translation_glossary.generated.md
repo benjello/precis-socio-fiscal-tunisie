@@ -125,6 +125,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Commission de contrôle du licenciement | لجنة مراقبة الطرد |  |
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
 | Commission régionale des bourses scolaires | اللجنة الجهوية للمنح المدرسية |  |
+| Compagnie des phosphates de Gafsa | شركة فسفاط قفصة | CPG |
 | Compensation des carburants | دعم المحروقات |  |
 | Compensation des prix | الدعم |  |
 | Compensation du transport | دعم النقل |  |
@@ -323,6 +324,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Gratuité de l'enseignement | مجانية التعليم |  |
 | Grille de salaires conventionnelle | جدول الأجور |  |
 | Grille des salaires | شبكة الأجور |  |
+| Groupe chimique tunisien | المجمع الكيميائي التونسي | GCT |
 | Habitation principale | المسكن الرئيسي |  |
 | Habous | الأحباس |  |
 | Haute instance des finances locales | الهيئة العليا للمالية المحلية |  |
