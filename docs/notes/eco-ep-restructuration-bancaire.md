@@ -67,6 +67,18 @@ dans la fiche `eco-ep-garanties-passifs-eventuels.md` (Bova et al. 2016).
   (p. 10). Le test de résistance du FMI suppose 3 % du PIB de besoins de recapitalisation (p. 46,
   voir fiche des garanties).
 
+- **La crise de 2008-2009 n'a pas touché les banques.** Le FMI (consultation 2010, p. 5) écrit que
+  les banques ne dépendent pas de financements extérieurs, que leurs dépôts ont crû de 13 % en
+  2009 et qu'elles prêtaient peu aux secteurs exportateurs les plus touchés. Les créances classées
+  baissent chaque année de 2003 à 2009 : 15,5 % en 2008 et 13,2 % en 2009 pour l'ensemble, 15,9 %
+  puis 14,1 % pour les banques publiques (§ 29, p. 15-16). La croissance du crédit à l'économie
+  ralentit de 14,0 % en 2008 à 10,3 % en 2009 puis remonte à 11,3 % en 2010 (estimation, tableau 1,
+  p. 20) ; le FMI la dit « solide et stable ». Une note de la Banque mondiale de décembre 2009 sur
+  le financement des PME décrit la crise comme un choc de demande venu d'Europe et ne mesure aucun
+  rationnement du crédit ; son obstacle principal est la garantie exigée, jusqu'à 167 % du prêt
+  (données de 2008). La part du ralentissement de 2009 qui vient de l'offre ou de la demande
+  n'est établie par aucune étude retrouvée.
+
 Parmi les études du volume, aucune n'évalue le coût net ni l'effet des recapitalisations de
 2013-2019 sur le crédit, le recouvrement ou la rentabilité de la STB, de la BH et de la BNA.
 
@@ -113,9 +125,11 @@ Articles vérifiés sur Crossref le 27 octobre 2026 ; rapports et livres vérifi
 | `laporta-et-al-2002-government-banks` | article-journal | R. La Porta, F. Lopez-de-Silanes, A. Shleifer, « Government Ownership of Banks », *Journal of Finance* 57(1), 2002, p. 265-301, doi 10.1111/1540-6261.00422 | NBER Working Paper 7620, mars 2000 |
 | `andrianova-et-al-2012-government-banks` | article-journal | S. Andrianova, P. Demetriades, A. Shortland, « Government Ownership of Banks, Institutions and Economic Growth », *Economica* 79(315), 2012, p. 449-469, doi 10.1111/j.1468-0335.2011.00904.x | Brunel University, Working Paper 09-20, mai 2009, « Is Government Ownership of Banks Really Harmful to Growth? » |
 | `bertay-et-al-2015-state-banks` | article-journal | A. C. Bertay, A. Demirgüç-Kunt, H. Huizinga, « Bank Ownership and Credit over the Business Cycle: Is Lending by State Banks Less Procyclical? », *Journal of Banking & Finance* 50, 2015, p. 326-339, doi 10.1016/j.jbankfin.2014.03.012 | Banque mondiale, Policy Research Working Paper 6110, juin 2012 |
+| `wb-2009-tunisia-sme-finance` | report | Banque mondiale, *Policy Note on SMEs Access to Finance in Tunisia*, décembre 2009 | publiée |
+| `imf-tunisia-art4-2010` | report | FMI, *Tunisia: 2010 Article IV Consultation*, Country Report n° 10/282, août 2010 | publiée |
 
 **Copies.** `tunisia-data/data/raw/entreprises-publiques/eco-ep/` (hors git), catalogue
-`sources/eco-ep-urls.csv`. Non cités faute de copie : Sapienza 2004 (*Journal of Financial
+`sources/eco-ep-urls.csv` (la note de la Banque mondiale de 2009 reste à y inscrire). Non cités faute de copie : Sapienza 2004 (*Journal of Financial
 Economics* 72(2), crédit des banques publiques italiennes), Shleifer et Vishny 1994 (*Quarterly
 Journal of Economics* 109(4)), références vérifiées sur Crossref.
 
