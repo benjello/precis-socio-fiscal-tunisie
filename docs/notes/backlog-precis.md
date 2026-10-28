@@ -3701,8 +3701,9 @@ Ce qui reste :
   l'écart de 191 à 307 MD par an entre le poste « produits de base » et l'Office des céréales et
   l'Office de l'huile ; la nature des transferts à l'Office de l'huile (subvention ou financement des
   achats d'huile d'olive).
-- **Fiches par entreprise : STEG, ETAP et SNCFT versées le 27 octobre 2026** (chapitre
-  `_grandes_entreprises.qmd`, sections `#sec-ep-steg`, `#sec-ep-etap`, `#sec-ep-sncft` ; séries
+- **Fiches par entreprise : STEG, ETAP et SNCFT versées le 27 octobre 2026** (chapitres
+  `_energie.qmd`, sections `#sec-ep-steg` et `#sec-ep-etap`, et `_grandes_entreprises.qmd`, section
+  `#sec-ep-sncft` ; séries
   `entreprises-publiques-fiches-entreprises`, `steg-etats-financiers` et `etap-rapports-annuels`
   de `tunisia-data`, branche `donnees/ep-fiches-entreprises`). Éditions LF 2022 (dette par
   créancier, 2018-2020), LF 2024 et LF 2025 (bilan et résultat, 2020-2023), lues à l'image ;
@@ -3727,10 +3728,12 @@ Ce qui reste :
     non relevés ;
   - éditions françaises LF 2020 et LF 2021 et édition LF 2023 : comptes dans la prose, non
     versés ; classements par charges de personnel et par produits d'exploitation, non versés ;
-  - seuil de scission : trois entreprises de l'énergie (STEG, ETAP, STIR) ouvriraient un
-    chapitre « L'énergie » quand la STIR aura sa fiche (note de chantier, § 9).
-- **STIR — section écrite le 28 octobre 2026, sans fiche** (`_grandes_entreprises.qmd`,
-  `#sec-ep-ge-stir`, figure `fig-ep-stir-budget` engendrée par `grandes_entreprises.figure
+  - chapitre « L'énergie » ouvert le 28 octobre 2026 (`_energie.qmd`, `#sec-ep-energie`, sur
+    décision de l'humain, sans attendre la fiche de la STIR ; note de chantier, § 10) : les sections
+    de la STEG, de l'ETAP et de la STIR y sont déplacées sans changement de texte. La SNCFT et la
+    section d'ensemble restent dans `_grandes_entreprises.qmd`.
+- **STIR — section écrite le 28 octobre 2026, sans fiche** (`_energie.qmd` depuis l'ouverture du
+  chapitre « L'énergie », même jour ; `#sec-ep-ge-stir`, figure `fig-ep-stir-budget` engendrée par `grandes_entreprises.figure
   ("stir_budget")` depuis trois séries du rapport sur les entreprises publiques : transferts
   2017-2022, résultats nets des classements, effectifs et charges de personnel 2016-2023 ; le
   principal de dette garantie payé par l'État 2013-2016, `cdc-cloture-entreprises-publiques`, est
