@@ -3802,8 +3802,9 @@ Ce qui reste :
     2019-339), loi n° 82-10 (prêt de la BIRD pour le stockage des céréales) ;
   - l'emprunt obligataire dont l'État paie le principal en 2010 et 2011 : texte non identifié ;
   - garanties dans les lois de finances : parcourues en plein texte les lois de finances de type
-    « loi » 1993-2026 (édition française) ; restent les lois de finances prises par décret-loi
-    (2022, 2023), les lois de finances complémentaires et les fascicules sans couche texte ;
+    « loi » 1993-2026 (édition française) et les lois de finances pour 2022 et 2023 (décrets-lois,
+    édition arabe) ; restent les décrets-lois de finances rectificatives, la loi de finances
+    rectificative n° 2023-12 et les fascicules sans couche texte ;
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la
