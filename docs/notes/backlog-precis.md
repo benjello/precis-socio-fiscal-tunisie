@@ -5119,3 +5119,17 @@ matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
 - **Arabe.** Termes retenus sur l'édition arabe du décret de 1997 (lue à l'image, pp. 1366 et
   1370) : وصل ضمان, سند إعفاء, حسابية المواد ; à faire relire par le relecteur-ar.
 - Alias arabes transitoires (23/10/2026) : les clés fondues restent dans `precis/ar/references.json` (note « TRANSITOIRE ») tant que les `.qmd` arabes les citent ; à retirer, clé par clé, après la retraduction du chapitre qui les cite (liste dans `docs/notes/biblio-a-rapatrier.md`, § « Fusion des clés en doublon »).
+
+## Informel (volume XIII, ébauche du 28 octobre 2026)
+
+Note documentaire : `docs/notes/informel-sources-2026-10-28.md` (textes de la CIST de 1993, 2003 et 2023 lus ; estimations classées par objet).
+
+- Écrit : définitions (trois textes), six familles de mesure, estimations par groupe (enquête emploi, solde, valeur ajoutée, macroéconomie, Banque mondiale).
+- Thèse de Ben Cheikh (2021) lue (note `docs/notes/informel-these-ben-cheikh-2026-10-28.md`) : série 2005-2018 ajoutée au tableau du solde ; la thèse donne deux valeurs pour 2018 (25,2 % et 26,9 %) sans les départager ; ligne de catalogue de `tunisia-data` à inscrire (fichier rangé, SHA-256 519efb04…b06d).
+- Chapitre « La couverture sociale des informels » (`_couverture.qmd`, 28 octobre 2026) écrit d'après la thèse de Ben Cheikh, attribué à l'auteur ; références de loi rapportées par la thèse, à vérifier au JORT dans les volumes « Caisses » et « Cotisations » ; pas de figure (séries de couverture à six points).
+- Informel retiré du marché du travail le 28 octobre 2026 (section des notions, plan, renvoi du temps de travail).
+- À obtenir : Ben Cheikh et Moisseron 2021 (chapitre payant ; ses valeurs 25,2 % et 25,8 % sont dans la thèse) ; version française de la résolution de 2023 ; FMI DP/2022/011 et Medina-Schneider 2018 (serveur du FMI en 403) ; ITCEQ 2017 ; OCDE ECO WP 1486 ; enquête micro-entreprises postérieure à 2016 ; note INS du 2e trimestre 2020 sans couche texte.
+- À lire à l'image : figure 11 du rapport PNUD-OIT (étiquette de 2018) ; tableau 12 de CRES-BAD ; annexe de la 17e CIST.
+- À demander : table de passage OIT-INS pour l'écart de 2019 (36,9 % contre 44,9 %).
+- Glossaire (28 octobre 2026) : neuf notions versées et ancrées dans le texte ; `emploi-informel` prend le terme arabe de l'INS (العمل غير المنظم), « travail informel » n'en est plus synonyme. Reste : termes arabes non attestés (économie informelle, travail informel, économie non observée, économie souterraine, entreprise individuelle, enquête mixte, méthode du solde, MIMIC) à confirmer sur la version arabe des résolutions de la CIST, non disponible dans le corpus ; version française de la résolution de 2023 à obtenir (définitions du glossaire traduites de l'anglais).
+- À inscrire au catalogue de `tunisia-data` : 26 fichiers (lignes dans § 7 de la note).
