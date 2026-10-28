@@ -3728,13 +3728,22 @@ Ce qui reste :
   - éditions françaises LF 2020 et LF 2021 et édition LF 2023 : comptes dans la prose, non
     versés ; classements par charges de personnel et par produits d'exploitation, non versés ;
   - seuil de scission : trois entreprises de l'énergie (STEG, ETAP, STIR) ouvriraient un
-    chapitre « L'énergie » quand la STIR aura sa fiche (note de chantier, § 9).
-- **STIR — section écrite le 28 octobre 2026, sans fiche** (`_grandes_entreprises.qmd`,
+    chapitre « L'énergie » quand la STIR aura sa fiche (note de chantier, § 9) ; la fiche est
+    versée le 28 octobre 2026 : le seuil est à examiner.
+- **STIR — section écrite le 28 octobre 2026** (`_grandes_entreprises.qmd`,
   `#sec-ep-ge-stir`, figure `fig-ep-stir-budget` engendrée par `grandes_entreprises.figure
   ("stir_budget")` depuis trois séries du rapport sur les entreprises publiques : transferts
   2017-2022, résultats nets des classements, effectifs et charges de personnel 2016-2023 ; le
   principal de dette garantie payé par l'État 2013-2016, `cdc-cloture-entreprises-publiques`, est
   dit dans le texte avec ses pages et renvoie à `tbl-ep-cdc-garantie`).
+  **Fiche du ministère des Finances versée le 28 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-stir`) :
+  LF 2022 p. 62, LF 2024 p. 95, LF 2025 p. 70, lues à l'image et recoupées avec la couche texte ;
+  figure `fig-ep-stir-fiches` et tableaux `tbl-ep-stir-fiche-a` et `-b`, repliés ; texte : subvention
+  d'exploitation, fonds propres et passifs, dette par créancier. Écarts imprimés : dette totale
+  de l'édition LF 2022 inférieure de 50,0 MD à la somme des créanciers, les trois années ;
+  fonds propres de fin 2020 à −1 282,9 MD (LF 2022) et 171,2 MD (LF 2024) ; renvoi de l'édition
+  LF 2024 sur les 624,5 MD de recettes du stock de réserve (2021).
   Registre `tbl-ep-registre-stir`, lu au corpus local : loi n° 60-11 (convention avec l'ANIC,
   p. 1005, image), loi n° 75-81 (rachat des actions du groupe ENI, p. 2852, image ; intitulé daté
   du 20 décembre, formule finale du 30 décembre 1975), décret n° 77-467 (nom, objet, tutelle,
@@ -3745,20 +3754,17 @@ Ce qui reste :
   Plein texte du corpus 1994-2026, éditions française et arabe : aucune autre convention de
   garantie au profit de la STIR ; 384 fascicules de 1994-2012 sans couche texte exploitable.
   **Reste** :
-  - la fiche de la STIR au rapport sur les entreprises publiques (bilan, résultat, dette par
-    créancier, subvention d'exploitation), **non versée** dans `entreprises-publiques-fiches-entreprises` :
-    LF 2022 p. 62 imprimée (page 61 de `annexe9_2022.pdf`, avec l'ETAP), LF 2024 p. 95 (page 96
-    de `rapport_ep_LF2024.pdf`), LF 2025 p. 70 (avec la STEG) ; tableaux arabes tournés, **à lire
-    à l'image** dans le corpus de `tunisia-data` ; éditions LF 2020 (p. 88) et LF 2021 (p. 79) :
-    comptes de la STIR dans la prose ;
+  - éditions LF 2020 (p. 88) et LF 2021 (p. 79) : comptes de la STIR dans la prose, non versés
+    (même règle que pour les autres entreprises ; **lisibles dans le corpus de `tunisia-data`**) ;
+  - fonds propres de fin 2020 : l'écart entre l'édition LF 2022 (−1 282,9 MD) et l'édition
+    LF 2024 (171,2 MD) n'est pas expliqué par le rapport ; les comptes publiés de la STIR le
+    trancheraient ;
   - comptes publiés par la STIR (rapports annuels, états financiers) : **à obtenir** ;
   - le prêt garanti dont l'État paie le principal de 2013 à 2016 : non identifié ;
   - augmentations de capital de la société tuniso-italienne (loi n° 61-35, décret-loi n° 61-11
     et loi n° 61-44, loi n° 62-29) : **dans le corpus local, à l'image**, non lues ;
   - décrets n° 89-1197 et 91-178 (article 5 du décret n° 77-467, composition du conseil) : lus à
     l'OCR, non versés au registre ; décret n° 99-1304 (organigramme), non lu ;
-  - la fiche, une fois versée : l'ajouter à `grandes_entreprises.FIGURES` sur le modèle de
-    `fig_fiche` (STEG, ETAP, SNCFT).
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la
