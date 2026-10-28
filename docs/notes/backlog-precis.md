@@ -3708,8 +3708,12 @@ Ce qui reste :
   créancier, 2018-2020), LF 2024 et LF 2025 (bilan et résultat, 2020-2023), lues à l'image ;
   comptes publiés de la STEG 2013-2023 ; rapports annuels de l'ETAP 2004-2024 (sans 2020 ; 2019
   sans états financiers) ; textes fondateurs lus au corpus local (décret-loi n° 62-8, loi
-  n° 72-22, décret du 27 décembre 1956). **Reste** :
-  - les autres grandes entreprises (STIR, Tunisair, Transtu, Office des céréales, Office national de
+  n° 72-22, décret du 27 décembre 1956). Tableaux de données mis en figures le 28 octobre 2026
+  (`fig-ep-transferts-entreprises`, `fig-ep-resultats-entreprises`, `fig-ep-transferts-revisions`,
+  `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
+  imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
+  **Reste** :
+  - les autres grandes entreprises (Tunisair, Transtu, Office des céréales, Office national de
     l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du
     commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
@@ -3724,7 +3728,43 @@ Ce qui reste :
   - éditions françaises LF 2020 et LF 2021 et édition LF 2023 : comptes dans la prose, non
     versés ; classements par charges de personnel et par produits d'exploitation, non versés ;
   - seuil de scission : trois entreprises de l'énergie (STEG, ETAP, STIR) ouvriraient un
-    chapitre « L'énergie » quand la STIR aura sa fiche (note de chantier, § 9).
+    chapitre « L'énergie » quand la STIR aura sa fiche (note de chantier, § 9) ; la fiche est
+    versée le 28 octobre 2026 : le seuil est à examiner.
+- **STIR — section écrite le 28 octobre 2026** (`_grandes_entreprises.qmd`,
+  `#sec-ep-ge-stir`, figure `fig-ep-stir-budget` engendrée par `grandes_entreprises.figure
+  ("stir_budget")` depuis trois séries du rapport sur les entreprises publiques : transferts
+  2017-2022, résultats nets des classements, effectifs et charges de personnel 2016-2023 ; le
+  principal de dette garantie payé par l'État 2013-2016, `cdc-cloture-entreprises-publiques`, est
+  dit dans le texte avec ses pages et renvoie à `tbl-ep-cdc-garantie`).
+  **Fiche du ministère des Finances versée le 28 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-stir`) :
+  LF 2022 p. 62, LF 2024 p. 95, LF 2025 p. 70, lues à l'image et recoupées avec la couche texte ;
+  figure `fig-ep-stir-fiches` et tableaux `tbl-ep-stir-fiche-a` et `-b`, repliés ; texte : subvention
+  d'exploitation, fonds propres et passifs, dette par créancier. Écarts imprimés : dette totale
+  de l'édition LF 2022 inférieure de 50,0 MD à la somme des créanciers, les trois années ;
+  fonds propres de fin 2020 à −1 282,9 MD (LF 2022) et 171,2 MD (LF 2024) ; renvoi de l'édition
+  LF 2024 sur les 624,5 MD de recettes du stock de réserve (2021).
+  Registre `tbl-ep-registre-stir`, lu au corpus local : loi n° 60-11 (convention avec l'ANIC,
+  p. 1005, image), loi n° 75-81 (rachat des actions du groupe ENI, p. 2852, image ; intitulé daté
+  du 20 décembre, formule finale du 30 décembre 1975), décret n° 77-467 (nom, objet, tutelle,
+  p. 1279-1281, image), lois n° 2015-9, 2017-12, 2020-10 et décret-loi n° 2023-19 (garanties et
+  convention cadre avec la Société internationale islamique de financement du commerce ; 2023 à
+  l'édition arabe, p. 764, l'édition française étant absente du corpus et de pist.tn), décret
+  gouvernemental n° 2016-1393 (compensation des créances réciproques, 152,0 MD, p. 3797).
+  Plein texte du corpus 1994-2026, éditions française et arabe : aucune autre convention de
+  garantie au profit de la STIR ; 384 fascicules de 1994-2012 sans couche texte exploitable.
+  **Reste** :
+  - éditions LF 2020 (p. 88) et LF 2021 (p. 79) : comptes de la STIR dans la prose, non versés
+    (même règle que pour les autres entreprises ; **lisibles dans le corpus de `tunisia-data`**) ;
+  - fonds propres de fin 2020 : l'écart entre l'édition LF 2022 (−1 282,9 MD) et l'édition
+    LF 2024 (171,2 MD) n'est pas expliqué par le rapport ; les comptes publiés de la STIR le
+    trancheraient ;
+  - comptes publiés par la STIR (rapports annuels, états financiers) : **à obtenir** ;
+  - le prêt garanti dont l'État paie le principal de 2013 à 2016 : non identifié ;
+  - augmentations de capital de la société tuniso-italienne (loi n° 61-35, décret-loi n° 61-11
+    et loi n° 61-44, loi n° 62-29) : **dans le corpus local, à l'image**, non lues ;
+  - décrets n° 89-1197 et 91-178 (article 5 du décret n° 77-467, composition du conseil) : lus à
+    l'OCR, non versés au registre ; décret n° 99-1304 (organigramme), non lu ;
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la

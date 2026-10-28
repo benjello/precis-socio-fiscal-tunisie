@@ -1,66 +1,87 @@
 # Les grandes entreprises {#sec-ep-lp-entreprises .domicile-unique}
 
-Ce chapitre présente les entreprises publiques qui pèsent le plus dans les comptes de l'État. Il donne d'abord les transferts du budget et les résultats nets d'une douzaine d'entre elles, puis une section par entreprise : la Société tunisienne de l'électricité et du gaz (STEG), l'Entreprise tunisienne d'activités pétrolières (ETAP) et la Société nationale des chemins de fer tunisiens (SNCFT). Chaque section dit la naissance et le statut de l'entreprise, ses comptes, sa dette, sa subvention d'exploitation, son emploi et sa longue période.
+Ce chapitre présente les entreprises publiques qui pèsent le plus dans les comptes de l'État. Il donne d'abord les transferts du budget et les résultats nets d'une douzaine d'entre elles, puis une section par entreprise : la Société tunisienne de l'électricité et du gaz (STEG), l'Entreprise tunisienne d'activités pétrolières (ETAP), la Société tunisienne des industries de raffinage (STIR) et la Société nationale des chemins de fer tunisiens (SNCFT). Chaque section dit la naissance et le statut de l'entreprise, ses résultats et son emploi ; pour la STEG, l'ETAP et la SNCFT, ses comptes, sa dette et sa subvention d'exploitation ; pour la STIR, ce que l'État lui verse et ce qu'il garantit pour elle.
 
-Deux familles de sources sont lues, sans jamais être raccordées. La première est la fiche par entreprise du rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : exercices 2018 à 2023, en trois éditions. Le dernier exercice de chaque édition y est provisoire, estimé ou probable, et l'édition suivante le révise souvent. La seconde est faite des comptes que l'entreprise publie elle-même : états financiers de la STEG, rapports annuels de l'ETAP.
+Deux familles de sources sont lues, sans jamais être raccordées. La première est la fiche par entreprise du rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : exercices 2018 à 2023, en trois éditions. Le dernier exercice de chaque édition y est provisoire, estimé ou probable, et l'édition suivante le révise souvent. La seconde est faite des comptes que l'entreprise publie elle-même : états financiers de la STEG, rapports annuels de l'ETAP. La section de la STIR lit aussi les rapports de la Cour des comptes sur la clôture du budget de l'État, pour ce que l'État paie au titre de la dette qu'il garantit pour elle.
 
 ## Transferts et résultats, 2017-2022 {#sec-ep-ge-ensemble}
 
 Trois entreprises reçoivent l'essentiel des transferts de l'échantillon : la STIR, l'Office des céréales et la STEG, soit 10,9 milliards de dinars sur 14,6 en 2022, valeur provisoire. Toutes trois portent la compensation — carburants, céréales, électricité et gaz.
 
 ```{python}
+#| label: fig-ep-transferts-entreprises
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import entreprises_publiques as ep
-ENTREPRISES = ("stir", "office_cereales", "steg", "cnss", "cnrps", "office_huile", "sonede",
-               "onas", "transtu", "sncft", "tunisie_autoroutes")
-ep.tableau_transferts_entreprises(
-    caption=("Transferts du budget reçus par onze entreprises de l'échantillon du rapport sur "
-             "les entreprises publiques, 2017-2022 ; pour chaque année, la dernière édition qui "
-             "la donne, nommée en tête de colonne. 2022 est provisoire. Source : ministère des "
-             "Finances [@minfin-ep, p. 149-150 ; @minfin-ep-2022, p. 105 ; @minfin-ep-2023, "
-             "p. 200 ; @minfin-ep-2024, p. 154]"),
-    entites=ENTREPRISES + ("total",))
+from figures import grandes_entreprises as ge
+ge.figure(
+    "transferts",
+    caption=("Transferts du budget reçus par onze entreprises de l'échantillon du rapport sur les "
+             "entreprises publiques, 2017-2022, en millions de dinars courants : pour chaque "
+             "année, la dernière édition qui la donne. Source : ministère des Finances "
+             "[@minfin-ep, p. 149-150 ; @minfin-ep-2022, p. 105 ; @minfin-ep-2023, p. 200 ; "
+             "@minfin-ep-2024, p. 154]"),
+    note_lecture=(
+        "Chaque barre empile les transferts des onze entreprises ; le trait noir est le total "
+        "que l'édition imprime pour tout son échantillon (33 à 50 entreprises, nombre écrit sous "
+        "l'année), d'où l'écart entre le haut de la barre et le trait. L'édition retenue est "
+        "nommée sous l'année ; deux années voisines ne viennent pas forcément de la même "
+        "édition. 2022 est provisoire (hachures). La CNSS ne reçoit rien de 2017 à 2019 ni "
+        "Tunisie Autoroutes en 2017 et en 2018 : la source imprime un zéro. Les montants "
+        "d'une même année dans les éditions successives sont à la @fig-ep-transferts-revisions."),
+)
 ```
 
 Le résultat net de ces entreprises n'est publié que lorsqu'elles figurent parmi les dix premiers bénéfices ou les dix premières pertes de l'exercice : une case vide n'est pas un résultat nul.
 
 ```{python}
+#| label: fig-ep-resultats-entreprises
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import entreprises_publiques as ep
-ep.tableau_resultats_entreprises(
-    caption=("Résultat net de douze entreprises publiques, exercices 2017-2022, d'après les "
-             "classements des dix premiers résultats positifs et des dix premiers résultats "
-             "négatifs de chaque édition. « — » : l'entreprise n'est dans aucun classement de "
-             "l'exercice. Quand deux éditions donnent deux valeurs, l'édition est nommée. "
-             "Source : ministère des Finances [@minfin-ep, p. 28-29 ; @minfin-ep-2022, "
-             "p. 17-18 ; @minfin-ep-2023, p. 27-28 ; @minfin-ep-2024, p. 30 ; @minfin-ep-2025, "
-             "p. 20-21]"),
-    entites=("steg", "stir", "etap", "office_cereales", "cpg", "gct", "tunisair", "transtu",
-             "sncft", "office_commerce", "rnta", "pct"))
+from figures import grandes_entreprises as ge
+ge.figure(
+    "resultats",
+    caption=("Résultat net de douze entreprises publiques, exercices 2017-2022, en millions de "
+             "dinars courants, d'après les classements des dix premiers résultats positifs et "
+             "des dix premiers résultats négatifs de chaque édition. Source : ministère des "
+             "Finances [@minfin-ep, p. 28-29 ; @minfin-ep-2022, p. 17-18 ; @minfin-ep-2023, "
+             "p. 27-28 ; @minfin-ep-2024, p. 30 ; @minfin-ep-2025, p. 20-21]"),
+    note_lecture=(
+        "Une marque par valeur publiée, à la couleur de l'édition qui la donne ; quand deux "
+        "éditions donnent deux valeurs pour le même exercice, les deux marques sont côte à "
+        "côte. Une même valeur donnée par deux éditions est à la couleur de la plus récente. "
+        "« n. c. » : l'entreprise n'est dans aucun des deux classements de l'exercice ; ce "
+        "n'est pas un résultat nul. Les classements ne disent pas si le chiffre est "
+        "provisoire. Chaque panneau a sa propre échelle."),
+)
 ```
 
 - **Des pertes chaque année.** La Société des transports de Tunis (Transtu) et la SNCFT sont en perte à chacun des six exercices ; l'Office des céréales, à chacun des cinq où il est classé.
 - **Des résultats révisés.** Le résultat de 2020 du Groupe chimique tunisien vaut −205,0 MD dans l'édition LF 2023 et −593,3 MD dans l'édition LF 2024.
-- **Des transferts révisés à la hausse.** Les transferts de 2019 à la STIR valent 1 296,0 MD dans l'édition LF 2021 et 1 905,3 MD dans l'édition LF 2023 : la subvention d'une année est soldée les années suivantes (@tbl-ep-transferts-revisions).
+- **Des transferts révisés à la hausse.** Les transferts de 2019 à la STIR valent 1 296,0 MD dans l'édition LF 2021 et 1 905,3 MD dans l'édition LF 2023 : la subvention d'une année est soldée les années suivantes (@fig-ep-transferts-revisions).
 - **Le résultat retenu par les classements** est le résultat net avant modifications comptables : −42,7 MD pour la STEG en 2021, quand sa fiche donne aussi 3 469,6 MD après ces modifications (@sec-ep-steg).
 
 :::: {.chronologie-repliable titre="Transferts du budget par entreprise : montants d'une même année dans les éditions successives du rapport, 2017-2022"}
 
 ```{python}
+#| label: fig-ep-transferts-revisions
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
-from figures import entreprises_publiques as ep
-ep.tableau_transferts_revisions(
+from figures import grandes_entreprises as ge
+ge.figure(
+    "revisions",
     caption=("Transferts du budget reçus par onze entreprises, 2017-2022 : toutes les valeurs "
-             "imprimées, l'édition étant nommée quand elles diffèrent. Les premières valeurs "
-             "de 2020 et de 2021 sont provisoires. Source : mêmes rapports que le "
-             "@tbl-ep-transferts-entreprises"),
-    entites=ENTREPRISES)
+             "imprimées par les éditions successives du rapport sur les entreprises publiques, "
+             "en millions de dinars courants. Source : mêmes rapports que la "
+             "@fig-ep-transferts-entreprises"),
+    note_lecture=(
+        "Pour chaque année, une marque par édition qui la donne, de la plus ancienne à gauche "
+        "à la plus récente à droite ; le trait gris vertical relie la plus petite et la plus "
+        "grande valeur. Une marque creuse est une valeur provisoire : les premières valeurs "
+        "de 2020 et de 2021, et la seule valeur de 2022. Chaque panneau a sa propre échelle."),
+)
 ```
 
 ::::
@@ -70,42 +91,65 @@ ep.tableau_transferts_revisions(
 **La STEG, établissement public créé en 1962 pour gérer l'électricité et le gaz nationalisés, a des capitaux propres négatifs à la fin de chaque exercice depuis 2017, sauf 2021, et ses passifs passent de 6 624,0 MD fin 2013 à 17 994,5 MD fin 2023.**
 
 ```{python}
+#| label: fig-ep-steg-comptes
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import grandes_entreprises as ge
-ge.tableau_steg_comptes(
-    caption=("Comptes publiés de la STEG, exercices 2013-2023, en millions de dinars courants : "
-             "chaque exercice est lu dans les états financiers de l'exercice, 2013 dans la "
-             "colonne de comparaison de ceux de 2014. « — » : ligne non imprimée. Jusqu'en 2014, la subvention d'exploitation comprend la subvention indirecte sur le gaz : rupture de définition en 2015. Les passifs "
-             "sont hors capitaux propres. Source : STEG, états financiers [@steg-ef-2014, "
-             "p. 11 et 13 ; @steg-ef-2015, p. 13 et 15 ; @steg-ef-2016, p. 11 et 13 ; "
-             "@steg-ef-2017, p. 13 et 15 ; @steg-ef-2018, p. 13 et 16 ; @steg-ef-2019, p. 9 "
-             "et 11 ; @steg-ef-2020, p. 19 et 21 ; @steg-ef-2021, p. 11 et 13 ; @steg-ef-2022, "
-             "p. 7 et 9 ; @steg-ef-2023, p. 7 et 9]"),
-    tbl_id="tbl-ep-steg-comptes")
+ge.figure(
+    "steg_comptes",
+    caption=("Comptes publiés de la STEG, exercices 2013-2023, en millions de dinars courants. "
+             "Source : STEG, états financiers [@steg-ef-2014, p. 11 et 13 ; @steg-ef-2015, "
+             "p. 13 et 15 ; @steg-ef-2016, p. 11 et 13 ; @steg-ef-2017, p. 13 et 15 ; "
+             "@steg-ef-2018, p. 13 et 16 ; @steg-ef-2019, p. 9 et 11 ; @steg-ef-2020, p. 19 et "
+             "21 ; @steg-ef-2021, p. 11 et 13 ; @steg-ef-2022, p. 7 et 9 ; @steg-ef-2023, p. 7 "
+             "et 9]"),
+    note_lecture=(
+        "Chaque exercice est lu dans les états financiers de l'exercice, 2013 dans la colonne "
+        "de comparaison de ceux de 2014. Jusqu'en 2014, la subvention d'exploitation comprend "
+        "la subvention indirecte sur le gaz (trait pointillé) ; elle est nulle en 2016. Le "
+        "résultat après modifications comptables (losange) n'est imprimé que pour 2015, 2017 "
+        "et 2021 à 2023. Les passifs sont hors capitaux propres ; leurs deux composantes "
+        "tracées sont les emprunts non courants et les concours bancaires, le reste de la "
+        "barre étant les autres passifs."),
+)
 ```
 
 - **Ce que la loi lui confie.** [Le décret-loi de 1962](#r-ep-steg-1962) nationalise la production, le transport, la distribution, l'importation et l'exportation de l'électricité et du gaz combustible ; la production, le transport, l'importation et l'exportation du gaz naturel et le gaz liquéfié en sont exclus. Il en confie la gestion à la STEG, établissement public à caractère industriel et commercial. Ses tarifs sont établis pour lui permettre « de faire face à toutes ses charges d'exploitation » et de contribuer aux dépenses d'extension du réseau.
 - **Une subvention d'exploitation inscrite à ses comptes.** L'état de résultat de la STEG porte une subvention d'exploitation : 2 323,1 MD en 2014, aucune en 2016, 1 200,0 MD en 2018, 4 707,4 MD en 2022 et 4 030,1 MD en 2023. Les montants d'avant 2015 ne se comparent pas aux suivants : jusqu'en 2014, la ligne comprend la subvention indirecte, le gaz que la STEG reçoit à un prix de cession administré étant porté en produit ; à partir de 2015, elle achète son gaz au prix mondial ([« La compensation », 2015](../compensation/_electricite_gaz.html#sec-compensation-eg-2015)). Ce que cette subvention compense, et sa répartition entre les consommateurs, sont exposés dans le volume [« La compensation »](../compensation/_electricite_gaz.html#sec-compensation-eg-lien).
 - **Les modifications comptables de 2021 et de 2022.** Le résultat net de 2021 est de −42,7 MD ; après les « effets des modifications comptables », il est de +3 469,6 MD, et les capitaux propres redeviennent positifs, à 1 201,9 MD. En 2022, le résultat après modifications est de −2 716,1 MD, pour un résultat net de −381,2 MD.
-- **Une dette surtout bancaire.** D'après la fiche du ministère des Finances, la dette de la STEG est de 12 900,1 MD fin 2020, dont 8 701,8 MD envers les banques, 955,2 MD envers d'autres entreprises publiques et 145,5 MD envers l'État (@tbl-ep-steg-fiche-a). L'effectif passe de 12 031 agents en 2018 à 13 979 en 2023, chiffre provisoire (@tbl-ep-steg-fiches).
+- **Une dette surtout bancaire.** D'après la fiche du ministère des Finances, la dette de la STEG est de 12 900,1 MD fin 2020, dont 8 701,8 MD envers les banques, 955,2 MD envers d'autres entreprises publiques et 145,5 MD envers l'État. L'effectif passe de 12 031 agents en 2018 à 13 979 en 2023, chiffre provisoire (@fig-ep-steg-fiches).
 
 :::: {.chronologie-repliable titre="STEG : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et texte fondateur de 1962"}
+
+```{python}
+#| label: fig-ep-steg-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "steg_fiches",
+    caption=("STEG d'après le rapport sur les entreprises publiques, exercices 2018-2023, en "
+             "millions de dinars courants et en agents : chaque exercice dans la dernière "
+             "édition qui le donne ; dette par créancier de l'édition LF 2022. Source : "
+             "ministère des Finances [@minfin-ep-2022, p. 64 ; @minfin-ep-2024, p. 92 ; "
+             "@minfin-ep-2025, p. 70]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2023 est "
+        "provisoire (hachures). La dette totale n'est imprimée que par l'édition LF 2022, le "
+        "total des passifs que par les éditions LF 2024 et LF 2025 : ce sont deux grandeurs "
+        "différentes. Le résultat net est celui d'avant modifications comptables. L'édition "
+        "LF 2024 imprime ses montants en millions de dinars entiers. Toutes les valeurs "
+        "imprimées, édition par édition, sont dans les tableaux qui suivent."),
+)
+```
 
 ```{python}
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import grandes_entreprises as ge
-ge.tableau_fiche_court("steg",
-    caption=("STEG d'après le rapport sur les entreprises publiques, exercices 2018-2023 : "
-             "chaque exercice dans la dernière édition qui le donne, nommée en tête de colonne "
-             "avec le statut du chiffre. La dette totale n'est imprimée que par l'édition "
-             "LF 2022, le total des passifs que par les éditions LF 2024 et LF 2025 ; le résultat "
-             "net est celui d'avant modifications comptables. Source : ministère des Finances "
-             "[@minfin-ep-2022, p. 64 ; @minfin-ep-2024, p. 92 ; @minfin-ep-2025, p. 70]"),
-    tbl_id="tbl-ep-steg-fiches")
 ge.tableau_fiche_detail("steg", ("LF2022",),
     caption=("STEG, édition LF 2022 : dette par créancier, fonds propres, investissements, "
              "résultat et emploi, exercices 2018-2020. Source : ministère des Finances "
@@ -133,47 +177,66 @@ ge.tableau_fiche_detail("steg", ("LF2024", "LF2025"),
 **L'ETAP, établissement public créé en 1972 pour les activités pétrolières, a un résultat net positif à chaque exercice que donnent ses rapports annuels de 2004 à 2024, sauf 2020 et 2021, et des produits d'exploitation qui passent de 372,6 MD en 2004 à 3 151,2 MD en 2022.**
 
 ```{python}
+#| label: fig-ep-etap-rapports
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import grandes_entreprises as ge
-ge.tableau_etap_rapports(
+ge.figure(
+    "etap_rapports",
     caption=("Comptes de l'ETAP d'après ses rapports annuels, exercices 2004-2024, en millions "
-             "de dinars courants : chaque exercice est lu dans le rapport de l'exercice ; 2004 "
-             "dans le rapport de 2005 et 2020 dans celui de 2021 (« RA » : "
-             "rapport annuel). Les revenus sont la ligne de l'état de résultat, les produits "
-             "d'exploitation leur total. Le rapport de 2019 ne contient pas d'états financiers. "
-             "Source : ETAP, rapports annuels [@etap-ra-2005, p. 7 et 55 ; @etap-ra-2006, p. 55 "
-             "et 66 ; @etap-ra-2007, p. 4 et 51 ; @etap-ra-2008, p. 43 et 51 ; @etap-ra-2009, "
-             "p. 4 et 61 ; @etap-ra-2010, p. 4 et 70 ; @etap-ra-2011, p. 4 et 63 ; "
-             "@etap-ra-2012, p. 2 et 78 ; @etap-ra-2013, p. 4 et 79 ; @etap-ra-2014, p. 2 et "
-             "96 ; @etap-ra-2015, p. 83 et 96 ; @etap-ra-2016, p. 102, 112, 113 et 127 ; "
-             "@etap-ra-2017, p. 90 et 106 ; @etap-ra-2018, p. 112 et 128 ; @etap-ra-2019, "
-             "p. 109 ; @etap-ra-2021, p. 94 et 116 ; @etap-ra-2022, p. 96 et 121 ; "
-             "@etap-ra-2023, p. 87 et 115 ; @etap-ra-2024, p. 81 et 94]"),
-    tbl_id="tbl-ep-etap-rapports")
+             "de dinars courants et en agents. Source : ETAP, rapports annuels [@etap-ra-2005, "
+             "p. 7 et 55 ; @etap-ra-2006, p. 55 et 66 ; @etap-ra-2007, p. 4 et 51 ; "
+             "@etap-ra-2008, p. 43 et 51 ; @etap-ra-2009, p. 4 et 61 ; @etap-ra-2010, p. 4 et "
+             "70 ; @etap-ra-2011, p. 4 et 63 ; @etap-ra-2012, p. 2 et 78 ; @etap-ra-2013, p. 4 "
+             "et 79 ; @etap-ra-2014, p. 2 et 96 ; @etap-ra-2015, p. 83 et 96 ; @etap-ra-2016, "
+             "p. 102, 112, 113 et 127 ; @etap-ra-2017, p. 90 et 106 ; @etap-ra-2018, p. 112 et "
+             "128 ; @etap-ra-2019, p. 109 ; @etap-ra-2021, p. 94 et 116 ; @etap-ra-2022, p. 96 "
+             "et 121 ; @etap-ra-2023, p. 87 et 115 ; @etap-ra-2024, p. 81 et 94]"),
+    note_lecture=(
+        "Chaque exercice est lu dans le rapport de l'exercice ; 2004 est lu dans le rapport "
+        "de 2005 et 2020 dans celui de 2021 (« RA » : rapport annuel). Les revenus sont une "
+        "ligne de l'état de résultat, les produits d'exploitation leur total. « n. d. » : le "
+        "rapport de 2019 ne contient pas d'états financiers."),
+)
 ```
 
 - **Ce que la loi lui confie.** [La loi de 1972](#r-ep-etap-1972) crée l'Entreprise tunisienne d'activités pétrolières, établissement public à caractère industriel et commercial « réputée commerçante » dans ses relations avec les tiers, placée sous la tutelle du ministère de l'Économie nationale. Son objet est la conduite des études pétrolières, la formation de cadres tunisiens et l'intervention dans les opérations qui se rattachent aux hydrocarbures. L'État la dote de 100 000 dinars, prélevés sur son budget de capital. Sa fiche au rapport du ministère des Finances ne porte aucune subvention d'exploitation de 2018 à 2023 ; son rôle dans le circuit de la compensation des carburants est exposé dans le volume [« La compensation »](../compensation/_carburants.html#sec-compensation-circuit).
 - **Des résultats qui suivent les produits.** Le résultat net culmine à 542,4 MD en 2012 ; il tombe à 19,4 MD en 2016, puis à −407,1 MD en 2020 et −139,0 MD en 2021, avant de revenir à 352,2 MD en 2022 et 340,3 MD en 2024. Le rapport de 2016 impute sur le résultat de l'exercice une « contribution conjoncturelle au profit du budget de l'État » de 20,6 MD [@etap-ra-2016, p. 113].
-- **Une dette envers l'État.** D'après la fiche du ministère des Finances, la dette de l'ETAP est de 1 592,6 MD fin 2018, dont 854 MD envers les banques et 517,1 MD envers l'État, et de 1 094,3 MD fin 2020, dont 471,4 MD envers l'État (@tbl-ep-etap-fiche-a).
+- **Une dette envers l'État.** D'après la fiche du ministère des Finances, la dette de l'ETAP est de 1 592,6 MD fin 2018, dont 854 MD envers les banques et 517,1 MD envers l'État, et de 1 094,3 MD fin 2020, dont 471,4 MD envers l'État (@fig-ep-etap-fiches).
 - **L'emploi.** L'effectif passe de 588 agents fin 2004 à 833 fin 2022 et 759 fin 2024.
 
 :::: {.chronologie-repliable titre="ETAP : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, effectif), et loi de 1972"}
+
+```{python}
+#| label: fig-ep-etap-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "etap_fiches",
+    caption=("ETAP d'après le rapport sur les entreprises publiques, exercices 2018-2023, en "
+             "millions de dinars courants et en agents : chaque exercice dans la dernière "
+             "édition qui le donne ; dette par créancier de l'édition LF 2022. Source : "
+             "ministère des Finances [@minfin-ep-2022, p. 62 ; @minfin-ep-2024, p. 96 ; "
+             "@minfin-ep-2025, p. 73]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2023 est "
+        "provisoire (hachures). Dans les éditions retenues, la subvention d'exploitation est "
+        "imprimée nulle, sauf pour 2020, case laissée vide par l'édition LF 2024 (« – »). Le résultat net de 2020 vaut "
+        "−119,2 MD dans l'édition LF 2022. La dette totale n'est "
+        "imprimée que par l'édition LF 2022, le total des passifs que par les éditions LF 2024 "
+        "et LF 2025. Toutes les valeurs imprimées, édition par édition, sont dans les "
+        "tableaux qui suivent."),
+)
+```
 
 ```{python}
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import grandes_entreprises as ge
-ge.tableau_fiche_court("etap",
-    caption=("ETAP d'après le rapport sur les entreprises publiques, exercices 2018-2023 : "
-             "chaque exercice dans la dernière édition qui le donne, nommée en tête de colonne "
-             "avec le statut du chiffre. « – » : case laissée vide par l'édition. Le résultat "
-             "net de 2020 vaut −119,2 MD dans l'édition LF 2022, chiffre alors provisoire. "
-             "Source : ministère des Finances [@minfin-ep-2022, p. 62 ; @minfin-ep-2024, p. 96 ; "
-             "@minfin-ep-2025, p. 73]"),
-    tbl_id="tbl-ep-etap-fiches")
 ge.tableau_fiche_detail("etap", ("LF2022",),
     caption=("ETAP, édition LF 2022 : dette par créancier, fonds propres, investissements, "
              "résultat et emploi, exercices 2018-2020. La somme des créanciers de 2020 est "
@@ -194,29 +257,147 @@ ge.tableau_fiche_detail("etap", ("LF2024", "LF2025"),
 
 ::::
 
-## La Société nationale des chemins de fer tunisiens (SNCFT) {#sec-ep-sncft}
+## La Société tunisienne des industries de raffinage (STIR) {#sec-ep-ge-stir}
 
-**La SNCFT, société nationale qui exploite le réseau ferré depuis le 1^er^ janvier 1957, est en perte à chacun des exercices 2018 à 2023 dans chaque édition du rapport du ministère des Finances, et ses fonds propres passent de 772,7 MD fin 2021 à 630,7 MD fin 2022 dans l'édition LF 2025.**
+Le prix auquel la STIR reçoit son pétrole brut jusqu'en 2014, la subvention des carburants et ce que l'ETAP, la STEG et la STIR en reçoivent chacune sont exposés dans le volume [« La compensation »](../compensation/_carburants.html#sec-compensation-circuit).
+
+**La [STIR](#g-stir), société de raffinage du pétrole issue d'une convention passée en 1960 avec une société italienne, et dont l'État rachète en 1975 les actions du groupe italien, reçoit du budget 869,4 MD en 2017 et 4 321,0 MD en 2022, chiffre provisoire ; elle est en perte à quatre des cinq exercices de 2017 à 2022 où les classements du ministère des Finances la retiennent.**
+
+```{python}
+#| label: fig-ep-stir-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "stir_budget",
+    caption=("STIR : transferts du budget, résultat net, effectif et charges de personnel, "
+             "exercices 2016-2023, d'après le rapport sur les entreprises publiques. Source : "
+             "ministère des Finances [@minfin-ep-2020, p. 88 ; @minfin-ep, p. 29, 79 et "
+             "149-150 ; @minfin-ep-2022, p. 19, 62 et 105 ; @minfin-ep-2023, p. 200 ; "
+             "@minfin-ep-2024, p. 29, 95 et 154 ; @minfin-ep-2025, p. 21 et 70]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire. Le résultat net est celui des classements des dix premiers résultats "
+        "positifs et négatifs de chaque édition, qui ne disent pas le statut du chiffre ; "
+        "pour 2018, deux éditions donnent deux valeurs. « n. c. » : la STIR n'est dans aucun "
+        "classement de l'exercice ; « n. d. » : le rapport ne donne pas la grandeur. Ni l'un "
+        "ni l'autre n'est un zéro."),
+)
+```
+
+- **Ce que la loi lui confie.** [La loi de 1960](#r-ep-stir-1960) approuve la convention du 10 juin 1960 relative à « l'installation, en Tunisie, d'une entreprise de raffinage de pétrole », qui fixe les droits et obligations de la société italienne ANIC. [En 1975](#r-ep-stir-1975), l'État rachète les actions que les sociétés du groupe ENI, ANIC et AGIP, détiennent dans le capital de la Société tuniso-italienne de raffinage. [En 1977](#r-ep-stir-1977), elle prend le nom de Société tunisienne des industries de raffinage ; son objet est le raffinage du pétrole brut en Tunisie pour produire des carburants, combustibles, gaz liquéfiés et lubrifiants « destinés à satisfaire en priorité les besoins intérieurs du marché tunisien », leur vente aux sociétés de distribution et l'exportation du surplus. Le ministère de l'Économie nationale approuve ses décisions sur le statut et la rémunération du personnel, ses emprunts, ses comptes prévisionnels et son bilan ; un contrôleur financier nommé par le ministre des Finances siège à son conseil d'administration.
+- **Ce que l'État verse.** Les transferts du budget à la STIR passent de 869,4 MD en 2017 à 1 905,3 MD en 2019, reviennent à 594,0 MD en 2020, puis montent à 2 293,0 MD en 2021 et à 4 321,0 MD en 2022, chiffre provisoire. Ce que la STIR et la STEG reçoivent ensemble du budget est, chaque année de 2017 à 2024, égal au poste « carburants » de la dépense de compensation (@sec-ep-transferts). Le montant d'une même année est révisé d'une édition du rapport à l'autre : 1 296,0 MD puis 1 905,3 MD pour 2019 (@fig-ep-transferts-revisions). La fiche du ministère porte aussi une subvention d'exploitation, ligne des comptes de la STIR : dans l'édition LF 2022, elle est égale aux transferts de la même édition, 1 846,1 MD en 2018, 1 296 MD en 2019 et 594 MD en 2020 ; pour 2021 et 2022, elle est inférieure de 220 MD aux transferts de la dernière édition qui donne chacun des deux montants, 2 073,0 MD contre 2 293,0 MD, puis 4 101,0 MD contre 4 321,0 MD, chiffres provisoires pour 2022. Elle passe de 12 % des produits d'exploitation en 2020 à 37 % en 2022, et elle est de 2 840,1 MD en 2023, chiffre provisoire (@fig-ep-stir-budget, @fig-ep-stir-fiches).
+- **Des créances réciproques.** En décembre 2016, l'État autorise la compensation, dans la limite de 152,0 MD, entre ce que la STIR lui doit au titre des reliquats des subventions budgétaires de 2012 et de 2013 et ce qu'il lui doit au titre de son « déficit consolidé » des exercices 2013 et 2014 ([décret de 2016](#r-ep-stir-2016)). Fin 2023, la STIR déclare sur l'État une créance de 762,0 MD de subventions non réglées, troisième montant après ceux de la STEG et de l'Office des céréales ; le ministère des Finances reprend ces montants tels que les entreprises les déclarent [@minfin-ep-2025, p. 121] ; les dettes et créances croisées de l'ensemble des entreprises sont exposées à la @sec-ep-croisees.
+- **Ce que l'État garantit.** De 2013 à 2016, l'État paie à la place de la STIR le principal d'une dette qu'il garantit : 101,8 MD en 2013, 123,6 MD en 2014, 124,3 MD en 2015, puis 76,7 MD en 2016 [@cdc-cloture-2013, p. 95 ; @cdc-cloture-2014, p. 99 ; @cdc-cloture-2015, p. 91 ; @cdc-cloture-2016, p. 100] ; aucune ligne de la STIR n'apparaît ensuite jusqu'en 2024 (@tbl-ep-cdc-garantie). L'État garantit aussi les financements que la Société internationale islamique de financement du commerce accorde à la STIR, par des conventions de « Mourabaha », pour importer du pétrole brut et des produits pétroliers : 150 millions de dollars pour la convention de 2014 ([loi de 2015](#r-ep-stir-2015)), 136 millions pour celle de 2019 ([loi de 2020](#r-ep-stir-2020)) et 100 millions pour celle de 2023 ([décret-loi de 2023](#r-ep-stir-2023)). Entre-temps, la convention cadre de 2016 entre l'État et la même société plafonne à 150 millions de dollars le financement des importations de la STIR ([loi de 2017](#r-ep-stir-2017)).
+- **Des pertes et un effectif stable.** Le résultat net est de −429,9 MD en 2017, −813,4 MD en 2018 (−1 159,5 MD dans l'édition LF 2021), −612,3 MD en 2019 et −1 902,9 MD en 2022, première perte de l'échantillon cette année-là ; en 2020, il est de +59,1 MD, premier bénéfice de l'échantillon (@fig-ep-stir-budget). L'effectif passe de 644 agents en 2016 à 538 en 2021, puis à 598 en 2023, chiffre provisoire ; les charges de personnel, de 32,2 MD en 2018 à 40,8 MD en 2023 (@tbl-ep-effectifs-entreprises).
+- **Des fonds propres négatifs et une dette envers les banques et les entreprises publiques.** Dans l'édition LF 2022, les fonds propres de la STIR sont de −701,3 MD fin 2018, −1 313,7 MD fin 2019 et −1 282,9 MD fin 2020 ; sa dette est de 3 414,6 MD fin 2019, dont 1 298,3 MD envers les banques, 1 117 MD envers d'autres entreprises publiques, 952,8 MD envers d'autres créanciers, fournisseurs compris, et 93,1 MD envers l'État, puis de 2 340,3 MD fin 2020, dont 1 102,8 MD envers les banques et 690,2 MD envers les entreprises publiques ; chaque année de 2018 à 2020, la somme des créanciers imprimés dépasse de 50,0 MD le total imprimé. Pour fin 2020, l'édition LF 2024 donne des fonds propres de 171,2 MD ; l'édition LF 2025 donne 175,1 MD fin 2021, puis −1 728,9 MD fin 2022, chiffre provisoire, après une perte de 1 902,9 MD. Fin 2022, le total des passifs, hors fonds propres, est de 4 716,8 MD pour 2 987,9 MD d'actifs ; les fournisseurs en représentent 2 853,8 MD, les emprunts à plus d'un an 855,3 MD (@fig-ep-stir-fiches).
+- **Des éditions qui ne concordent pas.** Trois écarts séparent les éditions du rapport. La dette totale de l'édition LF 2022 est inférieure de 50,0 MD à la somme des cinq créanciers, chacune des trois années, soit 1,8 % de la dette de fin 2018 (2 740,9 MD contre 2 790,9 MD) : l'écart est faible. Les fonds propres de fin 2020 valent −1 282,9 MD dans l'édition LF 2022 et 171,2 MD dans l'édition LF 2024, soit 1 454,1 MD d'écart et un changement de signe : l'écart est grand, et le rapport ne l'explique pas. Le résultat net de 2020 vaut 30,7 MD dans l'édition LF 2022 et 59,1 MD dans l'édition LF 2024 : l'écart, 28,4 MD, est modeste en valeur mais représente près de la moitié du chiffre le plus élevé.
+
+:::: {.chronologie-repliable titre="STIR : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et textes de création, de statut, de garantie de ses financements et de compensation de ses créances avec l'État, 1960-2023"}
+
+```{python}
+#| label: fig-ep-stir-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "stir_fiches",
+    caption=("STIR d'après le rapport sur les entreprises publiques, exercices 2018-2023, en "
+             "millions de dinars courants et en agents : chaque exercice dans la dernière "
+             "édition qui le donne ; dette par créancier de l'édition LF 2022. Source : "
+             "ministère des Finances [@minfin-ep-2022, p. 62 ; @minfin-ep-2024, p. 95 ; "
+             "@minfin-ep-2025, p. 70]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2022 et 2023 "
+        "sont provisoires (hachures). Les fonds propres de 2018 et 2019 viennent de l'édition "
+        "LF 2022, ceux des années suivantes des éditions LF 2024 et LF 2025 : pour fin 2020, "
+        "l'édition LF 2022 donne −1 282,9 MD, l'édition LF 2024 171,2 MD. La dette totale "
+        "n'est imprimée que par l'édition LF 2022, le total des passifs que par les éditions "
+        "LF 2024 et LF 2025 ; « – » : l'édition LF 2025 laisse vide le total des passifs de "
+        "2023. La somme des cinq créanciers dépasse de 50,0 MD le total imprimé chaque année. "
+        "Le résultat net est celui d'avant modifications comptables. Toutes les valeurs "
+        "imprimées, édition par édition, sont dans les tableaux qui suivent."),
+)
+```
 
 ```{python}
 #| echo: false
 #| output: asis
 import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
 from figures import grandes_entreprises as ge
-ge.tableau_fiche_court("sncft",
-    caption=("SNCFT d'après le rapport sur les entreprises publiques, exercices 2018-2023 : "
-             "chaque exercice dans la dernière édition qui le donne, nommée en tête de colonne "
-             "avec le statut du chiffre. « – » : case laissée vide par l'édition. La dette "
-             "totale n'est imprimée que par l'édition LF 2022, le total des passifs que par les "
-             "éditions LF 2024 et LF 2025 ; le résultat net est celui d'avant modifications "
-             "comptables ; pour 2019, le classement des dix premières pertes de la même édition donne −113,78 MD (@tbl-ep-resultats-entreprises). Source : ministère des Finances [@minfin-ep-2022, p. 55 ; "
-             "@minfin-ep-2024, p. 84 ; @minfin-ep-2025, p. 60]"),
-    tbl_id="tbl-ep-sncft-fiches")
+ge.tableau_fiche_detail("stir", ("LF2022",),
+    caption=("STIR, édition LF 2022 : dette par créancier, fonds propres, investissements, "
+             "résultat et emploi, exercices 2018-2020. La somme des cinq créanciers dépasse "
+             "de 50,0 MD le total imprimé, chaque année. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 62]"),
+    tbl_id="tbl-ep-stir-fiche-a")
+ge.tableau_fiche_detail("stir", ("LF2024", "LF2025"),
+    caption=("STIR, éditions LF 2024 et LF 2025 : bilan et résultat, exercices 2020-2023. "
+             "Dans l'édition LF 2024, les autres produits d'exploitation de 2021 (660,4 MD) "
+             "renvoient à une note : la subvention des carburants de 2021 tient compte de "
+             "624,5 MD de recettes du stock de réserve réaffectées aux produits d'exploitation, "
+             "en cours de régularisation ; l'édition LF 2025 donne 35,8 MD dans la même case et "
+             "5 550,2 MD de recettes, contre 4 920,6 MD. Pour 2022, chiffre provisoire, "
+             "l'édition LF 2024 donne un actif inférieur de 0,8 MD à la somme des passifs et "
+             "des fonds propres. Source : ministère des Finances [@minfin-ep-2024, p. 95 ; "
+             "@minfin-ep-2025, p. 70]"),
+    tbl_id="tbl-ep-stir-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-stir-1960}entre le [31 juillet]{.insecable} et le [4 août 1960]{.insecable} | loi n° 60-11 du 26 juillet 1960 [@loi60-11-stir, article unique, p. 1005] | approbation des clauses et conditions de la convention conclue le 10 juin 1960 et de son annexe, « fixant les droits et obligations de l'A.N.I.C. », relative à l'installation en Tunisie d'une entreprise de raffinage de pétrole ; le texte de la convention n'est pas publié au *Journal officiel*. Aucune clause d'effet : le *Journal officiel* est daté des 29 juillet-2 août 1960, et la loi est exécutoire un jour franc après sa parution | mise en place |
+| []{#r-ep-stir-1975}entre le [1^er^]{.insecable} et le [2 janvier 1976]{.insecable} | loi n° 75-81 du 20 décembre 1975 [@loi75-81-stir, art. 1^er^ et 2, p. 2852] | ratification de l'accord conclu à Tunis le 7 août 1975 entre l'État tunisien et les sociétés du groupe ENI, ANIC Spa et AGIP Spa, portant rachat des actions détenues par ces sociétés dans le capital de la Société tuniso-italienne de raffinage (STIR) et de la société AGIP-Tunis (art. 1^er^) ; un décret fixe les nouvelles modalités d'organisation administrative et financière des deux sociétés (art. 2). L'intitulé date la loi du 20 décembre, la formule finale du 30 décembre 1975. Aucune clause d'effet : le *Journal officiel* est daté des 30-31 décembre 1975, et la loi est exécutoire un jour franc après sa parution | rupture |
+| []{#r-ep-stir-1977}[19 mai 1977]{.insecable} : *Journal officiel* du 17 mai 1977, exécutoire un jour franc après sa parution | décret n° 77-467 du 11 mai 1977 [@decret77-467-stir, art. 1^er^ à 6 et 10 à 15, p. 1279-1281] | la Société tuniso-italienne de raffinage prend le nom de « Société tunisienne des industries de raffinage » (art. 1^er^) ; objet : raffinage en Tunisie du pétrole brut et opérations industrielles de production de carburants, combustibles liquides, gaz liquéfiés et lubrifiants « destinés à satisfaire en priorité les besoins intérieurs du marché tunisien », vente aux sociétés de distribution, exportation du surplus (art. 2) ; reprise de l'actif et du passif de la société tuniso-italienne à leurs valeurs comptables au 31 décembre 1975 (art. 4) ; conseil d'administration de huit membres représentant le Premier ministère, le ministère de l'Économie nationale, celui des Finances et celui du Plan, ou choisis pour leur compétence dans le domaine pétrolier ; président-directeur général nommé par décret (art. 5) ; comptabilité tenue selon le plan comptable tunisien applicable aux entreprises privées (art. 10) ; approbation du ministère de l'Économie nationale pour les décisions relatives au statut et à la rémunération du personnel, à la création d'entreprises et aux prises de participation, aux emprunts, aux comptes prévisionnels, au bilan et aux comptes de résultat (art. 12) ; contrôleur financier nommé par le ministre des Finances, avec voix consultative au conseil (art. 13) ; marchés non soumis à la législation des marchés publics (art. 15) | mise en place |
+| []{#r-ep-stir-2015}[7 mai 2015]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 2 mai 2015, plus cinq jours, jour du dépôt non compté | loi n° 2015-9 du 27 avril 2015 [@loi2015-9-stir, article unique, p. 879] | approbation de la convention conclue à Jeddah le 20 novembre 2014 entre le gouvernement et la Société internationale islamique de financement du commerce, relative à l'octroi de la garantie de l'État, pour un montant ne dépassant pas 150 millions de dollars, au titre de la convention de Mourabaha conclue le même jour entre la STIR et cette société pour le financement des importations de pétrole brut et de produits pétroliers | étape |
+| []{#r-ep-stir-2016}[31 décembre 2016]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 26 décembre 2016, plus cinq jours, jour du dépôt non compté | décret gouvernemental n° 2016-1393 du 19 décembre 2016 [@decret2016-1393-stir, art. 1^er^, p. 3797] | compensation autorisée entre les créances de l'État, au titre des reliquats sur les subventions budgétaires accordées à la STIR en 2012 et en 2013, et les créances de la STIR au titre du déficit consolidé des exercices 2013 et 2014, dans la limite de 152 034 304 dinars | ajustement |
+| []{#r-ep-stir-2017}[23 mars 2017]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 18 mars 2017, plus cinq jours, jour du dépôt non compté | loi n° 2017-12 du 13 mars 2017 [@loi2017-12-stir, article unique, p. 1011] | approbation de la convention cadre conclue le 4 octobre 2016 entre le gouvernement et la Société internationale islamique de financement du commerce, relative au financement des importations de pétrole brut et de produits pétroliers de la STIR, pour un montant ne dépassant pas 150 millions de dollars, et de gaz naturel de la STEG, pour un montant ne dépassant pas 160 millions de dollars | étape |
+| []{#r-ep-stir-2020}[14 mars 2020]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 9 mars 2020, plus cinq jours, jour du dépôt non compté | loi n° 2020-10 du 25 février 2020 [@loi2020-10-stir, article unique, p. 643] | approbation de la convention de garantie conclue à Tunis le 16 septembre 2019 entre la République tunisienne et la Société internationale islamique de financement du commerce, relative à la convention de Mourabaha conclue le 26 juin 2019 entre la STIR et cette société, d'un montant n'excédant pas 136 millions de dollars, pour le financement des importations de pétrole brut et de produits pétroliers | étape |
+| []{#r-ep-stir-2023}[16 mars 2023]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 11 mars 2023, plus cinq jours, jour du dépôt non compté | décret-loi n° 2023-19 du 11 mars 2023 [@dl2023-19-stir, art. 1^er^, p. 764 de l'édition arabe] | approbation de la convention de garantie conclue à Tunis le 3 mars 2023 entre la République tunisienne et la Société internationale islamique de financement du commerce, relative à la convention de Mourabaha conclue le même jour entre la STIR et cette société, pour un montant ne dépassant pas 100 millions de dollars, en contribution au financement des importations de produits pétroliers | étape |
+
+: Les textes de la STIR : création, rachat, statut, garanties et compensation des créances {#tbl-ep-registre-stir}
+
+::::
+
+<!-- TODO (documentaliste) : fiche de la STIR des éditions LF 2022, LF 2024 et LF 2025 versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (28 octobre 2026). Les éditions françaises LF 2020 (p. 88) et LF 2021 (p. 79) donnent les comptes de la STIR dans la prose : non versées, comme pour les autres entreprises. Rapports annuels et états financiers publiés par la STIR : à obtenir. Garanties : le prêt dont l'État paie le principal de 2013 à 2016 n'est pas identifié dans les textes lus ; le plein texte du corpus local (1994-2026, éditions française et arabe) ne donne pas d'autre convention de garantie au profit de la STIR que celles du registre, mais 384 fascicules de 1994-2012 n'ont pas de couche texte exploitable. Textes de 1961 et 1962 sur les augmentations du capital de la Société tuniso-italienne de raffinage (loi n° 61-35, décret-loi n° 61-11 ratifié par la loi n° 61-44, loi n° 62-29) : dans le corpus local, à l'image, non lus. Décrets n° 89-1197 et 91-178 : ils remplacent l'article 5 du décret n° 77-467 (composition du conseil d'administration), lus à l'OCR, non versés au registre. -->
+
+## La Société nationale des chemins de fer tunisiens (SNCFT) {#sec-ep-sncft}
+
+**La SNCFT, société nationale qui exploite le réseau ferré depuis le 1^er^ janvier 1957, est en perte à chacun des exercices 2018 à 2023 dans chaque édition du rapport du ministère des Finances, et ses fonds propres passent de 772,7 MD fin 2021 à 630,7 MD fin 2022 dans l'édition LF 2025.**
+
+```{python}
+#| label: fig-ep-sncft-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "sncft_fiches",
+    caption=("SNCFT d'après le rapport sur les entreprises publiques, exercices 2018-2023, en "
+             "millions de dinars courants et en agents : chaque exercice dans la dernière "
+             "édition qui le donne ; dette par créancier de l'édition LF 2022. Source : "
+             "ministère des Finances [@minfin-ep-2022, p. 55 ; @minfin-ep-2024, p. 84 ; "
+             "@minfin-ep-2025, p. 60]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2023 est "
+        "probable (hachures). « – » : case laissée vide par l'édition, ainsi les fonds propres "
+        "et les passifs de 2023. La dette totale n'est imprimée que par l'édition LF 2022, le "
+        "total des passifs que par les éditions LF 2024 et LF 2025 ; l'édition LF 2022 "
+        "n'imprime pas la dette de 2020, chiffre provisoire. La somme des cinq créanciers est "
+        "inférieure au total imprimé de 110,9 MD en 2018 et de 161,9 MD en 2019. Le résultat "
+        "net est celui d'avant modifications comptables ; pour 2019, le classement des dix "
+        "premières pertes de la même édition donne −113,78 MD (@fig-ep-resultats-entreprises). "
+        "Toutes les valeurs imprimées, édition par édition, sont dans les tableaux repliés "
+        "sous la section."),
+)
 ```
 
 - **Ce que ses statuts lui confient.** [Le décret du 27 décembre 1956](#r-ep-sncft-1956) approuve les statuts de la SNCFT, entreprise à caractère commercial régie par la législation des sociétés anonymes, qui a pour objet l'exploitation du réseau des chemins de fer tunisiens. L'État lui concède l'exploitation de son réseau ferré à compter du 1^er^ janvier 1957 et lui apporte le matériel, les approvisionnements et les fonds du réseau.
 - **Une subvention d'exploitation de 65 à 105 MD.** La subvention d'exploitation inscrite à la fiche est de 65 MD par an de 2018 à 2020 dans l'édition LF 2022 ; l'édition LF 2024 donne 105 MD pour 2020 et 84,5 MD pour 2021, l'édition LF 2025 70 MD pour 2022 et 95 MD pour 2023, chiffre probable. La subvention du transport public est exposée dans le volume [« La compensation »](../compensation/_transport.html#sec-compensation-transport).
-- **Une dette bancaire.** Fin 2019, la dette de la SNCFT est de 1 478,7 MD, dont 894 MD envers les banques, 161,7 MD envers les caisses sociales et 46 MD envers l'État ; la somme des créanciers imprimés est inférieure de 161,9 MD au total imprimé (110,9 MD fin 2018). L'édition ne donne pas la dette de 2020 (@tbl-ep-sncft-fiche-a).
+- **Une dette bancaire.** Fin 2019, la dette de la SNCFT est de 1 478,7 MD, dont 894 MD envers les banques, 161,7 MD envers les caisses sociales et 46 MD envers l'État ; la somme des créanciers imprimés est inférieure de 161,9 MD au total imprimé (110,9 MD fin 2018). L'édition ne donne pas la dette de 2020 (@fig-ep-sncft-fiches).
 - **L'emploi.** L'effectif est de 4 612 agents en 2018, de 4 790 en 2021 et de 4 539 en 2023, chiffre probable ; les charges de personnel passent de 118,9 à 140,7 MD.
 
 :::: {.chronologie-repliable titre="SNCFT : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et statuts de 1956"}
@@ -250,4 +431,4 @@ ge.tableau_fiche_detail("sncft", ("LF2024", "LF2025"),
 
 ::::
 
-<!-- TODO (documentaliste) : fiches par entreprise des éditions LF 2022, LF 2024 et LF 2025 versées pour la STEG, l'ETAP et la SNCFT (série entreprises-publiques-fiches-entreprises). Restent à verser, mêmes pages de ces éditions (effectifs déjà versés, voir entreprises-publiques-effectifs.csv de tunisia-data pour les pages) : STIR, Tunisair, Transtu, Office des céréales, Office national de l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du commerce. Les éditions françaises LF 2020 et LF 2021 et l'édition LF 2023 donnent les comptes dans la prose, pas en tableau. Classements par charges de personnel et par produits d'exploitation : non versés. SNCFT : statuts de 1969 (loi n° 69-31 du 9 mai 1969, JORT n° 19, p. 581-584) non lus ; longue période avant 2018 à chercher (rapports annuels de la société, annexe 8 pour les transferts 2016-2024). STEG : rapports annuels 2006-2016 (subvention d'exploitation déjà versée dans la série steg-subvention-exploitation) à lire pour le bilan avant 2013. -->
+<!-- TODO (documentaliste) : fiches par entreprise des éditions LF 2022, LF 2024 et LF 2025 versées pour la STEG, l'ETAP, la SNCFT et la STIR (série entreprises-publiques-fiches-entreprises). Restent à verser, mêmes pages de ces éditions (effectifs déjà versés, voir entreprises-publiques-effectifs.csv de tunisia-data pour les pages) : Tunisair, Transtu, Office des céréales, Office national de l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du commerce. Les éditions françaises LF 2020 et LF 2021 et l'édition LF 2023 donnent les comptes dans la prose, pas en tableau. Classements par charges de personnel et par produits d'exploitation : non versés. SNCFT : statuts de 1969 (loi n° 69-31 du 9 mai 1969, JORT n° 19, p. 581-584) non lus ; longue période avant 2018 à chercher (rapports annuels de la société, annexe 8 pour les transferts 2016-2024). STEG : rapports annuels 2006-2016 (subvention d'exploitation déjà versée dans la série steg-subvention-exploitation) à lire pour le bilan avant 2013. -->
