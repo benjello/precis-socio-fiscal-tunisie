@@ -28,8 +28,9 @@ book:
         - _restructuration.qmd
     - part: "III. Les entreprises"
       chapters:
-        - _energie.qmd
         - _grandes_entreprises.qmd
+        - _energie.qmd
+        - _autres_entreprises.qmd
     - part: "IV. L'emploi et les comptes"
       chapters:
         - _emploi_comptes.qmd

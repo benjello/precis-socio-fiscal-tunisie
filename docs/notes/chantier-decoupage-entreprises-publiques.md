@@ -346,11 +346,12 @@ nationalisations de 1956-1964) quand les chapitres 8 à 13 s'ouvriront.
    `_grandes_entreprises.qmd` sans changement de texte, avec leurs figures, leurs tableaux de fiches et leurs
    registres (`tbl-ep-registre-steg`, `-etap`, `-stir`). Les ancres sont conservées. La STEG, l'ETAP et la STIR ont
    chacune leur fiche au rapport sur les entreprises publiques (celle de la STIR est versée le 28 octobre 2026).
-2. Ordre dans la partie III : « L'énergie », puis « Les grandes entreprises », comme le chapitre 8 précède
-   les chapitres 9 à 13 dans le plan du § 2.
+2. Ordre dans la partie III (décision de l'humain, 28 octobre 2026, après l'ouverture) : « Les grandes entreprises »
+   (début de l'ancien chapitre : transferts et résultats 2017-2022, `#sec-ep-lp-entreprises`), puis « L'énergie »,
+   puis « Les autres entreprises » (`_autres_entreprises.qmd`, `#sec-ep-autres-entreprises`), qui reçoit la SNCFT
+   (`#sec-ep-sncft`) et les entreprises à venir.
 3. Ce que cela change au plan à seize chapitres : la cible reste de seize chapitres ; le livre en compte
-   onze. « Les grandes entreprises » garde la section d'ensemble (transferts et résultats 2017-2022) et la
-   SNCFT, dont la cible est le chapitre 11, « Les transports ».
-   Les chapitres 9 à 13 restent des cibles, à ouvrir selon la décision 3 du § 9.
+   douze. Les chapitres 9 à 13 restent des cibles, à ouvrir selon la décision 3 du § 9 ; une entreprise d'un
+   secteur qui n'a pas trois fiches est traitée dans « Les autres entreprises » jusqu'à l'ouverture de son chapitre.
 4. Les deux chapitres lisent le même module de figures, `figures/grandes_entreprises.py`. Aucune ligne de
    registre n'est citée depuis les deux chapitres : aucune n'est recopiée.

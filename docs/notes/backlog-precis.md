@@ -3730,8 +3730,9 @@ Ce qui reste :
     versés ; classements par charges de personnel et par produits d'exploitation, non versés ;
   - chapitre « L'énergie » ouvert le 28 octobre 2026 (`_energie.qmd`, `#sec-ep-energie`, sur
     décision de l'humain ; la fiche de la STIR est versée le même jour ; note de chantier, § 10) : les sections
-    de la STEG, de l'ETAP et de la STIR y sont déplacées sans changement de texte. La SNCFT et la
-    section d'ensemble restent dans `_grandes_entreprises.qmd`.
+    de la STEG, de l'ETAP et de la STIR y sont déplacées sans changement de texte. La section
+    d'ensemble reste dans `_grandes_entreprises.qmd` (ouvre la partie III) ; la SNCFT passe dans
+    `_autres_entreprises.qmd` (`#sec-ep-autres-entreprises`).
 - **STIR — section écrite le 28 octobre 2026** (`_energie.qmd` depuis l'ouverture du
   chapitre « L'énergie », même jour ; `#sec-ep-ge-stir`, figure `fig-ep-stir-budget` engendrée par `grandes_entreprises.figure
   ("stir_budget")` depuis trois séries du rapport sur les entreprises publiques : transferts
