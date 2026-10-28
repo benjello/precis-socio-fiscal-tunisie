@@ -44,7 +44,8 @@ FAMILLES = {
     "secu": "Droit de la sécurité sociale",
     "assistance": "Droit de l'assistance",
     "travail": "Droit du travail et de la fonction publique",
-    "publiques": "Finances publiques, entreprises publiques, collectivités et enseignement",
+    "publiques": "Finances publiques, entreprises publiques et collectivités",
+    "enseignement": "Enseignement et formation",
     "prix": "Prix administrés",
 }
 
