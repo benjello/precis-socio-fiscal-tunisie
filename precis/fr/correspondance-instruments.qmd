@@ -1,0 +1,95 @@
+---
+title: "Ébauche — Instruments, institutions et textes"
+subtitle: "Table de correspondance pour un lecteur juriste : version de travail, à relire. Document du 28 octobre 2026, non publié."
+lang: fr
+format:
+  html:
+    toc: false
+    page-layout: full
+    embed-resources: true
+    css: ebauche-table.css
+bibliography:
+  - references.json
+  - caisses/references.json
+  - compensation/references.json
+  - cotisations_sociales/references.json
+  - education/references.json
+  - entreprises_publiques/references.json
+  - finances_locales/references.json
+  - fiscalite/references.json
+  - informel/references.json
+  - marche_travail/references.json
+  - prestations_sociales/references.json
+  - remunerations_publiques/references.json
+  - retraites/references.json
+  - sante/references.json
+csl: precis.csl
+---
+
+**Ébauche à relire.** Cette page n'est pas publiée. Elle montre à quoi ressemblerait la table si l'on retenait les choix suivants : une ligne par instrument ; un classement par famille de droit ; le texte fondateur et les principaux modificatifs ; le statut du texte fondateur seulement quand il est abrogé ; la catégorie juridique et le texte d'application principal ; les instruments déjà décrits dans les livres en ligne. Chaque choix est à confirmer ou à changer.
+
+**Légende.** *Instrument* : le dispositif, nommé comme dans le chapitre. *Catégorie* : cotisation, impôt, prestation contributive ou non contributive, prix administré, ou cadre juridique. *Institution* : l'organisme que nomme le chapitre ; « à établir » signale qu'aucun chapitre ne la nomme. *Texte fondateur*, *principaux modificatifs*, *texte d'application* : références prises dans les chapitres, avec leur numéro et leur date ; les références complètes, avec la page du *Journal officiel* et le lien, sont en fin de document ; « — » signale qu'aucun texte n'est relevé à cet endroit. *Statut* : renseigné seulement quand le texte fondateur est abrogé. *Chapitre* : le chapitre du précis où l'instrument se lit.
+
+La table ne recopie rien des chapitres. Elle ne dit pas où les caisses de sécurité sociale se rangent dans l'ordre des parties.
+
+## Droit fiscal et douanier
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../scripts")
+import correspondance
+correspondance.imprime("fiscal")
+```
+
+## Droit de la sécurité sociale
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../scripts")
+import correspondance
+correspondance.imprime("secu")
+```
+
+## Droit de l'assistance
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../scripts")
+import correspondance
+correspondance.imprime("assistance")
+```
+
+## Droit du travail et de la fonction publique
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../scripts")
+import correspondance
+correspondance.imprime("travail")
+```
+
+## Finances publiques, entreprises publiques, collectivités et enseignement
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../scripts")
+import correspondance
+correspondance.imprime("publiques")
+```
+
+## Prix administrés
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "../../scripts")
+import correspondance
+correspondance.imprime("prix")
+```
+
+<!-- TODO (documentaliste) : institution à établir pour l'impôt sur les sociétés, les droits de consommation, l'impôt sur la fortune, les régimes d'incitation, l'assistance médicale gratuite, le programme AMEN SOCIAL, le programme national d'aide aux familles nécessiteuses, le code du travail, le statut général, les entreprises publiques et l'enseignement (aucun chapitre ne la nomme). Modificatifs et textes d'application « — » : à relever dans les chapitres quand l'ébauche est validée ; pour les impôts, les modifications annuelles sont les lois de finances. Références incomplètes dans references.json (fascicule ou page absents) : loi83-112, loi89-9, loi-org-2018-29-ccl, loi2004-71 (fascicule), lf-2023, loi95-56. Enseignement : famille « finances publiques… » par défaut, famille à décider. loi91-65 (système éducatif) placée en modificatif de la loi de 1958 sans que le chapitre en dise le statut : à vérifier. -->

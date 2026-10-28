@@ -1,0 +1,10 @@
+@page { size: A4 landscape; margin: 10mm; }
+body { font-family: "DejaVu Serif", Georgia, serif; font-size: 8.5pt; max-width: none; margin: 0; padding: 0; }
+h1.title { font-size: 16pt; margin: 0 0 2pt 0; }
+p.subtitle { font-size: 9pt; margin: 0 0 8pt 0; color: #444; }
+h2 { font-size: 11pt; margin: 12pt 0 4pt 0; page-break-after: avoid; }
+table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 7pt; }
+th, td { border: 1px solid #999; padding: 2pt 3pt; vertical-align: top; word-wrap: break-word; overflow-wrap: anywhere; }
+th { background: #eee; }
+tr { page-break-inside: avoid; }
+a { color: #1a3d7a; text-decoration: none; }
