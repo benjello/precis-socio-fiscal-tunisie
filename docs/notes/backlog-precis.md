@@ -3845,7 +3845,7 @@ Ce qui reste :
 - **CPG et GCT — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-cpg` et `#sec-ep-ge-gct`, après l'ONAS et avant la SNCFT ; deux entreprises du
   phosphate ne font pas un chapitre, note de chantier, § 10). Figures `fig-ep-{cpg,gct}-fiches`
-  (pas de figure du budget : le tableau des transferts de l'édition LF 2022, p. 106, leur donne 0
+  (pas de figure du budget : le tableau des transferts de l'édition LF 2022, p. 105-106, leur donne 0
   de 2018 à 2020), tableaux repliés `tbl-ep-{cpg,gct}-fiche-a` et `-b`. **Fiches du ministère des
   Finances versées le 28 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
   (`tunisia-data`, branche `donnees/fiches-cpg-gct`) : LF 2022 p. 63 (les deux), LF 2024 p. 97
