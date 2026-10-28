@@ -258,7 +258,7 @@ présentations), et la carte là où elle manque. — *standard*, relu par le pr
   consommation et à la production (compensation) ; la rémunération réglementée de l'épargne
   (fiscalité, ou livre « L'épargne et le patrimoine » en partie I s'il grossit).
 - Ordre des politiques sectorielles : le cadre des finances publiques d'abord ; puis
-  l'éducation ; le transport (qui réorganise plus qu'il n'ajoute) ; l'environnement en dernier.
+  l'éducation ; le transport (qui réorganise plus qu'il n'ajoute) ; le logement ; l'environnement en dernier.
 
 - Le livre de synthèse sur la redistribution (partie V), quand `ceq-tunisie` donnera des
   séries sourcées.
@@ -341,7 +341,8 @@ moment de leur conversion, pas avant.
   les produits de base, prix à la consommation et à la production (à écrire) ; la dépense
   budgétaire (longue période) ; rapports et études : incidence et rapports extérieurs réunis
   (fusion) ; glossaire.
-- Plus tard : le transport ; l'éducation ; le logement ; l'environnement.
+- L'éducation : premier jet en ligne en français (histoire, aides, dépense, enseignement scolaire et supérieur, formation professionnelle).
+- Plus tard, dans cet ordre : le transport ; le logement ; l'environnement (retour d'une lectrice du 28/10/2026 : l'éducation passe avant le transport et le logement).
 
 **V. Les institutions**
 - Les entreprises publiques : présentation ; la relation financière (19 000 mots au 27 octobre 2026),
