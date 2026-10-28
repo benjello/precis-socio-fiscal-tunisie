@@ -3817,12 +3817,14 @@ Ce qui reste :
   (LF 2025) remplacé par une note ; 2019 de l'édition LF 2022 en comptes non approuvés. Écarts
   imprimés déclarés : ONAS 2018 (charges d'exploitation imprimées négatives), SONEDE 2022 en
   LF 2024 (produits à 0,2 près). Registres `tbl-ep-registre-sonede` (loi n° 68-22, image ; loi
-  n° 72-37, image ; décret n° 73-227, image ; loi n° 76-21, image ; lois n° 2018-3, édition arabe,
-  2021-15, 2021-17, 2021-33 ; arrêté du 28 février 2024 sur le prix de l'eau) et
+  n° 72-37, image ; décret n° 73-227, image ; loi n° 76-21, image ; loi n° 2019-48, fonds de
+  dotation ; lois n° 2018-3, édition arabe, 2021-15, 2021-17, 2021-33 ; arrêté du 28 février 2024 sur le prix de l'eau) et
   `tbl-ep-registre-onas` (loi n° 74-73, image ; décret n° 75-201, image ; loi n° 93-41, image ;
   décret n° 95-1139 ; décret n° 2001-2001, OCR ; décret n° 2002-524, OCR ; loi n° 2004-70, OCR ;
-  loi n° 2007-35 ; arrêté du 12 octobre 2022 sur les redevances ; lois n° 2016-2, 2017-32, 2017-33,
-  2023-10, 2024-36). Glossaire : `sonede`, `onas`.
+  loi n° 2007-35 ; arrêté du 12 octobre 2022 sur les redevances ; lois n° 2016-2, 2017-22, 2017-32,
+  2017-33, 2019-57 et 2019-58, édition arabe, 2023-10, 2024-36). Recherche des garanties et des
+  compensations : intitulés français et arabes de `jort_cache.db` (aucune compensation de créances
+  pour les deux entreprises). Glossaire : `sonede`, `onas`.
   **Reste** :
   - séries du prix de l'eau par tranche (arrêtés de 1968 à 2022) et des redevances
     d'assainissement (arrêtés de 1982 à 2018) : **dans le corpus local** (texte pour les années
