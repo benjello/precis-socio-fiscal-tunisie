@@ -421,6 +421,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Office des céréales | ديوان الحبوب |  |
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |
+| Office national de l'assainissement | الديوان الوطني للتطهير | ONAS |
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ordonnateur | آمر قبض وصرف |  |
 | Organisme de placement collectif en valeurs mobilières | مؤسسة التوظيف الجماعي في الأوراق المالية | OPCVM |
@@ -584,6 +585,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | SMIG de référence de la CNSS | الأجر الأدنى المرجعي المعتمد لدى الصندوق الوطني للضمان الاجتماعي |  |
 | Société de prévoyance des fonctionnaires et employés tunisiens | الجمعية الاحتياطية للموظفين والمستخدمين التونسيين |  |
 | Société de promotion des logements sociaux | شركة النهوض بالمساكن الاجتماعية | SPROLS |
+| Société nationale d'exploitation et de distribution des eaux | الشركة الوطنية لاستغلال وتوزيع المياه | SONEDE |
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |

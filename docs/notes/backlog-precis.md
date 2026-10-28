@@ -3714,7 +3714,7 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Tunisair, Transtu, Office national de l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du
+  - les autres grandes entreprises (Tunisair, Transtu, Office national de l'huile, CPG, Groupe chimique, Tunisie Télécom, Poste, RNTA, Office du
     commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
@@ -3805,6 +3805,41 @@ Ce qui reste :
     « loi » 1993-2026 (édition française) et les lois de finances pour 2022 et 2023 (décrets-lois,
     édition arabe) ; restent les décrets-lois de finances rectificatives, la loi de finances
     rectificative n° 2023-12 et les fascicules sans couche texte ;
+- **SONEDE et ONAS — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-sonede` et `#sec-ep-ge-onas`, après l'Office des céréales et avant la SNCFT, dans
+  l'ordre des transferts de 2022 ; restent dans « Les autres entreprises » : deux entreprises ne
+  font pas un chapitre « L'eau », note de chantier, § 10). Figures `fig-ep-{sonede,onas}-budget`
+  et `fig-ep-{sonede,onas}-fiches`, tableaux repliés `tbl-ep-{sonede,onas}-fiche-a` et `-b`.
+  **Fiches du ministère des Finances versées le 28 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiches-sonede-onas`) :
+  SONEDE LF 2022 p. 75, LF 2024 p. 113, LF 2025 p. 88 ; ONAS p. 85, 126 et 103 ; lues à l'image
+  (300 dpi) et retrouvées dans la couche texte. SONEDE : bilan de 2022 (LF 2024) et de 2023
+  (LF 2025) remplacé par une note ; 2019 de l'édition LF 2022 en comptes non approuvés. Écarts
+  imprimés déclarés : ONAS 2018 (charges d'exploitation imprimées négatives), SONEDE 2022 en
+  LF 2024 (produits à 0,2 près). Registres `tbl-ep-registre-sonede` (loi n° 68-22, image ; loi
+  n° 72-37, image ; décret n° 73-227, image ; loi n° 76-21, image ; lois n° 2018-3, édition arabe,
+  2021-15, 2021-17, 2021-33 ; arrêté du 28 février 2024 sur le prix de l'eau) et
+  `tbl-ep-registre-onas` (loi n° 74-73, image ; décret n° 75-201, image ; loi n° 93-41, image ;
+  décret n° 95-1139 ; décret n° 2001-2001, OCR ; décret n° 2002-524, OCR ; loi n° 2004-70, OCR ;
+  loi n° 2007-35 ; arrêté du 12 octobre 2022 sur les redevances ; lois n° 2016-2, 2017-32, 2017-33,
+  2023-10, 2024-36). Glossaire : `sonede`, `onas`.
+  **Reste** :
+  - séries du prix de l'eau par tranche (arrêtés de 1968 à 2022) et des redevances
+    d'assainissement (arrêtés de 1982 à 2018) : **dans le corpus local** (texte pour les années
+    récentes, image avant 1995), à établir, puis à verser dans `openfisca-tunisia` si le modèle
+    doit les porter ;
+  - nature des transferts du budget à la SONEDE et à l'ONAS (investissement ou exploitation) :
+    le tableau des transferts ne le dit pas ; lois de finances, budget du ministère de
+    l'Agriculture et du ministère de l'Environnement ;
+  - décret n° 75-492 (perception des redevances par la SONEDE, 1975 n° 52, p. 1596) : **scan peu
+    lisible**, connu par le décret n° 2002-524 ; loi n° 2001-14 (modification de la loi n° 93-41) :
+    dans le corpus, non lue ;
+  - garanties antérieures à 2016-2018 (une vingtaine de textes par entreprise, liste dans les
+    commentaires du chapitre) : dans le corpus, non lues ;
+  - éditions françaises LF 2020 (SONEDE p. 116, ONAS p. 125) et LF 2021 (p. 109-111 et 118) :
+    comptes dans la prose, non versés ; grandeurs d'activité des fiches (eau facturée, redevances,
+    raccordements) non relevées ;
+  - comptes publiés et contrats-programmes des deux entreprises : **à obtenir**.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la

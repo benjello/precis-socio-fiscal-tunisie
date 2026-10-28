@@ -9,6 +9,7 @@
     ge.figure("stir_budget", …)                             # STIR : transferts, résultat, emploi
     ge.figure("stir_fiches", …)                             # STIR : fiche du ministère, 2018-2023
     ge.figure("oc_budget", …) ; ge.figure("oc_fiches", …)   # Office des céréales, mêmes vues
+    ge.figure("sonede_budget", …) ; ge.figure("onas_fiches", …)  # SONEDE, ONAS, mêmes vues
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -104,7 +105,7 @@ ORDRE_B = ["total_actifs", "immobilisations_nettes", "clients", "liquidites",
            "resultat_net_avant_modifications", "resultat_net_apres_modifications",
            "charges_personnel", "effectif"]
 STATUT = {"réalisé": "", "non dit": "", "provisoire": "provisoire", "estimé": "estimé",
-          "probable": "probable"}
+          "probable": "probable", "comptes non approuvés": "comptes non approuvés"}
 
 
 def _ed(edition: str) -> str:
@@ -644,7 +645,7 @@ def _case_fiche(f, x, e, ind):
 
 
 NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
-              "office_cereales": "Office des céréales"}
+              "office_cereales": "Office des céréales", "sonede": "SONEDE", "onas": "ONAS"}
 
 
 def fig_fiche(entite: str):
@@ -802,7 +803,7 @@ def _entite(entite: str):
     return t, n, e
 
 
-def fig_budget(entite: str, couleur):
+def fig_budget(entite: str, couleur, hachure: str = "provisoire"):
     """Transferts du budget, résultat net des classements, effectif et charges de personnel."""
     figtools.apply_lang_font()
     t, n, e = _entite(entite)
@@ -864,7 +865,7 @@ def fig_budget(entite: str, couleur):
         ax.set_xlim(2015.4, 2023.6)
         ax.set_xticks(ans)
     axes[0, 0].set_ylim(0, axes[0, 0].get_ylim()[1] * 1.1)
-    fig.legend(handles=[_poignee_hachure("provisoire"),
+    fig.legend(handles=[_poignee_hachure(hachure),
                         Line2D([], [], color="none", label="n. d. : non donné par le rapport")],
                fontsize=7.5, frameon=False, loc="lower center", ncol=2)
     fig.tight_layout(rect=(0, 0.04, 1, 1))
@@ -917,6 +918,16 @@ FIGURES = {
     "oc_budget": (lambda: fig_budget("office_cereales", VERT),
                   lambda: table_budget("office_cereales"),
                   (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_oc_budget"),
+    "sonede_fiches": (lambda: fig_fiche("sonede"), lambda: table_fiche("sonede"), (S_FICHES,),
+                      "fig_ep_sonede_fiches"),
+    "sonede_budget": (lambda: fig_budget("sonede", BLEU,
+                                         "provisoire, estimé ou comptes non approuvés"),
+                      lambda: table_budget("sonede"),
+                      (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_sonede_budget"),
+    "onas_fiches": (lambda: fig_fiche("onas"), lambda: table_fiche("onas"), (S_FICHES,),
+                    "fig_ep_onas_fiches"),
+    "onas_budget": (lambda: fig_budget("onas", ROUGE), lambda: table_budget("onas"),
+                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_onas_budget"),
 }
 
 
