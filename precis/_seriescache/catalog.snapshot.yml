@@ -5738,9 +5738,9 @@
   fiche: sources/bct-ra-revenus-participations.md
 - id: entreprises-publiques-fiches-entreprises
   titre: 'Entreprises publiques : fiches par entreprise du rapport annexé à la loi
-    de finances (STEG, ETAP, SNCFT, STIR, Office des céréales, SONEDE, ONAS), bilan,
-    résultat, dette, subvention d''exploitation et emploi, exercices 2018-2023, par
-    édition'
+    de finances (STEG, ETAP, SNCFT, STIR, Office des céréales, SONEDE, ONAS, Tunisair,
+    RNTA), bilan, résultat, dette, subvention d''exploitation et emploi, exercices
+    2018-2023, par édition'
   sources:
   - minfin-ep-2022
   - minfin-ep-2024
@@ -5764,15 +5764,16 @@
     total des actifs, liquidités, clients, immobilisations nettes, résultat net avant
     et après modifications comptables, produits des placements, charges financières
     nettes, résultat, charges et produits d''exploitation, autres produits, subvention
-    d''exploitation, recettes, charges de personnel, effectif) ; sept entreprises
+    d''exploitation, recettes, charges de personnel, effectif) ; neuf entreprises
     : STEG, ETAP, SNCFT, STIR (Société tunisienne des industries de raffinage, ajoutée
     le 28 octobre 2026), Office des céréales (ajouté le 28 octobre 2026), SONEDE (Société
-    nationale d''exploitation et de distribution des eaux) et ONAS (Office national
-    de l''assainissement) (ajoutés le 28 octobre 2026) ; une ligne par (édition, entreprise,
-    exercice, grandeur), avec le statut du chiffre'
+    nationale d''exploitation et de distribution des eaux), ONAS (Office national
+    de l''assainissement) (ajoutés le 28 octobre 2026), Tunisair et RNTA (Régie nationale
+    des tabacs et des allumettes) (ajoutées le 28 octobre 2026) ; une ligne par (édition,
+    entreprise, exercice, grandeur), avec le statut du chiffre'
   caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
     se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
-    signale 358 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    signale 442 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
     15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
     4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
     même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
@@ -5802,28 +5803,37 @@
     des créanciers les trois années ; STIR 2022 en LF 2024, bilan à 0,8 près ; ONAS
     2018 en LF 2022, charges d''exploitation imprimées « -283,4 », avec le signe (résultat
     d''exploitation 56,27 = 339,7 − 283,4) ; SONEDE 2022 en LF 2024, produits 663,3
-    pour une somme de 663,1. SONEDE, BILAN NON PUBLIÉ : 2022 dans l''édition LF 2024
-    et 2023 dans l''édition LF 2025, les onze cases du bilan sont remplacées par une
-    note (états financiers non transmis, puis non approuvés) ; aucune ligne, ce ne
-    sont pas des cases vides. SONEDE 2019 dans l''édition LF 2022 : « * », états financiers
-    non approuvés (`statut` = comptes non approuvés). STIR, LF 2024 : « *660,4 » (autres
-    produits d''exploitation 2021), appel de la note « منحة دعم المحروقات لسنة 2021
-    باعتبار إعادة توظيف عائدات عنصر الخزن الاحتياطي بقيمة 624,5 م دينار ضمن إيرادات
-    الاستغلال (بصدد التسوية) » ; LF 2025 imprime 35,8 pour la même case. STIR 2023
-    (LF 2025) : total des passifs et immobilisations nettes en case vide. RÉSULTAT
-    NET : les classements des dix premières retiennent le résultat avant modifications
-    comptables (STEG 2021 : −42,7 ; 3 469,6 après) ; SNCFT 2019 : −119,8 sur la fiche,
-    −113,78 dans le classement de la même édition. La subvention d''exploitation est
-    une ligne comptable de l''entreprise : elle ne concorde pas avec les transferts
-    du budget par entreprise. PREUVES DE LECTURE : identités du bilan, des produits
-    et du résultat d''exploitation ; effectif et charges de personnel identiques,
-    ligne à ligne (126), à la série entreprises-publiques-effectifs-par-entreprise
+    pour une somme de 663,1 ; RNTA, LF 2022, dette totale 2018 de 535,76 pour 535,59
+    de créanciers et résultat d''exploitation 2019 de −68,1 pour −61,2 ; RNTA, LF
+    2024, fonds propres et résultats reportés imprimés sans le signe « − » (281,1
+    pour 2021, −281,1 en LF 2025 ; la ligne des variations de la page confirme le
+    signe), bilan qui ne boucle pas ; RNTA, LF 2025, actifs − passifs − fonds propres
+    = résultat net de l''exercice (96,9 ; 130,7 ; 116,2). TUNISAIR, BILAN NON PUBLIÉ
+    : 2020-2022 (LF 2024) et 2021-2023 (LF 2025), cases du bilan remplacées par une
+    note (états financiers non approuvés) ; aucune ligne. Tunisair, statuts LF 2022
+    : « * » provisoire (2018, 2019), « ** » probable (2020). SONEDE, BILAN NON PUBLIÉ
+    : 2022 dans l''édition LF 2024 et 2023 dans l''édition LF 2025, les onze cases
+    du bilan sont remplacées par une note (états financiers non transmis, puis non
+    approuvés) ; aucune ligne, ce ne sont pas des cases vides. SONEDE 2019 dans l''édition
+    LF 2022 : « * », états financiers non approuvés (`statut` = comptes non approuvés).
+    STIR, LF 2024 : « *660,4 » (autres produits d''exploitation 2021), appel de la
+    note « منحة دعم المحروقات لسنة 2021 باعتبار إعادة توظيف عائدات عنصر الخزن الاحتياطي
+    بقيمة 624,5 م دينار ضمن إيرادات الاستغلال (بصدد التسوية) » ; LF 2025 imprime 35,8
+    pour la même case. STIR 2023 (LF 2025) : total des passifs et immobilisations
+    nettes en case vide. RÉSULTAT NET : les classements des dix premières retiennent
+    le résultat avant modifications comptables (STEG 2021 : −42,7 ; 3 469,6 après)
+    ; SNCFT 2019 : −119,8 sur la fiche, −113,78 dans le classement de la même édition.
+    La subvention d''exploitation est une ligne comptable de l''entreprise : elle
+    ne concorde pas avec les transferts du budget par entreprise. PREUVES DE LECTURE
+    : identités du bilan, des produits et du résultat d''exploitation ; effectif et
+    charges de personnel identiques, ligne à ligne (162), à la série entreprises-publiques-effectifs-par-entreprise
     lue sur les mêmes pages ; chaque ligne recoupée avec la couche texte de la page.
     LU À L''IMAGE à 170 dpi le 27 octobre 2026.'
   titre_ar: 'المنشآت العمومية: جذاذات المنشآت (الشركة التونسية للكهرباء والغاز، المؤسسة
     التونسية للأنشطة البترولية، الشركة الوطنية للسكك الحديدية التونسية، الشركة التونسية
     لصناعات التكرير، ديوان الحبوب، الشركة الوطنية لاستغلال وتوزيع المياه، الديوان
-    الوطني للتطهير)، 2018-2023، حسب طبعة التقرير المرفق بقانون المالية'
+    الوطني للتطهير، الخطوط التونسية، الوكالة الوطنية للتبغ والوقيد)، 2018-2023، حسب
+    طبعة التقرير المرفق بقانون المالية'
   unite_ar: ملايين الدنانير الجارية؛ عون
   perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جذاذات
     المنشآت في طبعات قانون المالية لسنوات 2022 و2024 و2025
