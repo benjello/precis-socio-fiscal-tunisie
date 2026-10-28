@@ -8,6 +8,7 @@
     ge.figure("steg_fiches", …)                             # fiche du ministère, 2018-2023
     ge.figure("stir_budget", …)                             # STIR : transferts, résultat, emploi
     ge.figure("stir_fiches", …)                             # STIR : fiche du ministère, 2018-2023
+    ge.figure("oc_budget", …) ; ge.figure("oc_fiches", …)   # Office des céréales, mêmes vues
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -642,10 +643,14 @@ def _case_fiche(f, x, e, ind):
     return (None if vide else float(r["valeur"]), r["statut"], vide)
 
 
+NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
+              "office_cereales": "Office des céréales"}
+
+
 def fig_fiche(entite: str):
     figtools.apply_lang_font()
     f = _fiches(entite)
-    nom = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR"}.get(entite, entite)
+    nom = NOMS_FICHE.get(entite, entite)
     exercices = sorted(int(x) for x in f["exercice"].unique())
     der = {x: f[f["exercice"] == x]["edition"].max() for x in exercices}
     statut = {x: f[(f["exercice"] == x) & (f["edition"] == der[x])]["statut"].iloc[0]
@@ -785,29 +790,31 @@ def table_fiche(entite: str):
         "Page imprimée": f["page_imprimee"], "Page du fichier": f["page_pdf"]})
 
 
-# --- 7. STIR : ce que le rapport sur les entreprises publiques en dit ---------------------------
+# --- 7. STIR, Office des céréales : ce que le rapport sur les entreprises publiques en dit -------
 
-def _stir():
+def _entite(entite: str):
     t = figtools.series(S_TRANSFERTS_EP)
-    t = t[t["entite"] == "stir"]
+    t = t[t["entite"] == entite]
     n = _nets()
-    n = n[n["entite"] == "stir"]
+    n = n[n["entite"] == entite]
     e = figtools.series(S_EFFECTIFS_EP)
-    e = e[e["entite"] == "stir"]
+    e = e[e["entite"] == entite]
     return t, n, e
 
 
-def fig_stir_budget():
+def fig_budget(entite: str, couleur):
+    """Transferts du budget, résultat net des classements, effectif et charges de personnel."""
     figtools.apply_lang_font()
-    t, n, e = _stir()
+    t, n, e = _entite(entite)
+    nom = NOMS_FICHE.get(entite, entite)
     fig, axes = plt.subplots(2, 2, figsize=(10.6, 7.0), sharex=True)
     ans = list(range(2016, 2024))
 
     ax = axes[0, 0]
     for r in _derniere_edition(t, ["annee"]).itertuples():
         ferme = r.statut == "réalisé"
-        _barre(ax, r.annee, r.valeur_md, ORANGE, ferme=ferme,
-               texte=f"STIR, {r.annee} — transferts du budget : {_n(r.valeur_md)} MD, édition "
+        _barre(ax, r.annee, r.valeur_md, couleur, ferme=ferme,
+               texte=f"{nom}, {r.annee} — transferts du budget : {_n(r.valeur_md)} MD, édition "
                      f"{_ed(r.edition)}, {r.statut}")
         ax.annotate(_n(r.valeur_md), xy=(r.annee, r.valeur_md), xytext=(0, 2),
                     textcoords="offset points", ha="center", va="bottom", fontsize=6.5)
@@ -820,7 +827,7 @@ def fig_stir_budget():
     for x in range(2017, 2023):
         vals = _valeurs_distinctes(n[n["exercice"] == x], "valeur_md")
         if vals:
-            _sucettes(ax, x, vals, "STIR")
+            _sucettes(ax, x, vals, nom)
     ax.axhline(0, color=NOIR, lw=0.7)
     lo, hi = ax.get_ylim()
     ax.set_ylim(lo - 0.08 * (hi - lo), max(hi, 0) + 0.1 * (hi - lo))
@@ -842,7 +849,7 @@ def fig_stir_budget():
             val = getattr(r, col)
             ferme = _ferme(r.statut)
             _barre(ax, r.exercice, val, _clair(VIOLET, 0.7), ferme=ferme,
-                   texte=f"STIR, {r.exercice} — {titre.lower()} : {_n(val, dec)} {unite}, "
+                   texte=f"{nom}, {r.exercice} — {titre.lower()} : {_n(val, dec)} {unite}, "
                          f"édition {_ed(r.edition)}, {r.statut}")
             ax.annotate(_n(val, dec), xy=(r.exercice, val), xytext=(0, 2),
                         textcoords="offset points", ha="center", va="bottom", fontsize=6.5)
@@ -864,8 +871,8 @@ def fig_stir_budget():
     return fig
 
 
-def table_stir_budget():
-    t, n, e = _stir()
+def table_budget(entite: str):
+    t, n, e = _entite(entite)
     lignes = []
     for r in t.sort_values(["annee", "edition"]).itertuples():
         lignes.append(("Transferts du budget", r.annee, _ed(r.edition), r.statut, r.valeur_md,
@@ -903,8 +910,13 @@ FIGURES = {
                      "fig_ep_sncft_fiches"),
     "stir_fiches": (lambda: fig_fiche("stir"), lambda: table_fiche("stir"), (S_FICHES,),
                     "fig_ep_stir_fiches"),
-    "stir_budget": (fig_stir_budget, table_stir_budget,
+    "stir_budget": (lambda: fig_budget("stir", ORANGE), lambda: table_budget("stir"),
                     (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_stir_budget"),
+    "oc_fiches": (lambda: fig_fiche("office_cereales"), lambda: table_fiche("office_cereales"),
+                  (S_FICHES,), "fig_ep_oc_fiches"),
+    "oc_budget": (lambda: fig_budget("office_cereales", VERT),
+                  lambda: table_budget("office_cereales"),
+                  (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_oc_budget"),
 }
 
 

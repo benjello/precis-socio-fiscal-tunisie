@@ -3714,8 +3714,7 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Tunisair, Transtu, Office des céréales, Office national de
-    l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du
+  - les autres grandes entreprises (Tunisair, Transtu, Office national de l'huile, CPG, Groupe chimique, SONEDE, ONAS, Tunisie Télécom, Poste, RNTA, Office du
     commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
@@ -3768,6 +3767,43 @@ Ce qui reste :
     et loi n° 61-44, loi n° 62-29) : **dans le corpus local, à l'image**, non lues ;
   - décrets n° 89-1197 et 91-178 (article 5 du décret n° 77-467, composition du conseil) : lus à
     l'OCR, non versés au registre ; décret n° 99-1304 (organigramme), non lu ;
+- **Office des céréales — section écrite le 28 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-oc`, avant la SNCFT : l'Office est le deuxième bénéficiaire des transferts après la
+  STIR). Figures `fig-ep-oc-budget` (`grandes_entreprises.figure("oc_budget")` : transferts
+  2017-2022, résultats nets des classements, effectifs et charges de personnel 2016-2023) et
+  `fig-ep-oc-fiches` ; tableaux repliés `tbl-ep-oc-fiche-a` et `-b`. **Fiche du ministère des
+  Finances versée le 28 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-office-cereales`) : LF 2022 p. 75, LF 2024 p. 111,
+  LF 2025 p. 89, lues à l'image et recoupées avec la couche texte ; identités sans écart à
+  déclarer. Écarts entre éditions dits dans le texte : transferts provisoires très révisés (2020 :
+  3 MD puis 1 745 et 1 726,5 MD ; 2021 : 213,5 puis 1 687,5 MD) ; comptes de 2022, « réalisés »
+  dans les deux éditions, révisés de 3 à 6 % au bilan. Principal de l'emprunt obligataire payé par
+  l'État en 2010 et 2011 (15,0 MD par an, Cour des comptes) dit à part. Registre
+  `tbl-ep-registre-oc`, lu au corpus local : décret-loi n° 62-10 (création, monopole, subvention
+  du compte des importations, p. 371-373, image), décret-loi n° 70-7 (nom, monopole des
+  importations et de l'achat à la production, p. 1267, image), loi n° 86-67 (conseil
+  d'administration, p. 788, image), loi de finances pour 1997, art. 17 (garantie de 980 MD des
+  dettes des offices des céréales et de l'huile envers la BNA, p. 2580), décret n° 2000-2578
+  (organisation, tutelle, p. 2907-2909, OCR), décrets-lois n° 2022-64 (garantie BERD, 150,5 M€,
+  p. 2711) et 2023-4 (garantie BEI, 150 M€, p. 273 ; mention de dépôt fautive dans l'édition
+  française, date de l'édition arabe retenue), décret n° 2023-35 (compensation des créances
+  réciproques, 690,9 MD, p. 160-161), décret-loi n° 2025-2 (prix fixés par arrêté conjoint,
+  p. 2420). Glossaire : `office-cereales`.
+  **Reste** :
+  - éditions françaises LF 2020 (p. 107) et LF 2021 (p. 104) : comptes dans la prose, non versés
+    (**lisibles dans le corpus de `tunisia-data`**) ; grandeurs d'activité des fiches (ventes et
+    achats de céréales) non relevées ;
+  - comptes publiés par l'Office (rapports annuels, états financiers) : **à obtenir** ;
+  - textes **dans le corpus local, non lus** : loi n° 62-18 (ratification, 1962 n° 27, p. 619),
+    décret n° 63-378 (monopole des pommes de terre), arrêté du 27 avril 1964 (visa du contrôleur
+    financier), loi n° 70-47, décrets n° 87-102 (conseil) et 87-978 (exercice comptable,
+    1987 n° 53, p. 938), décrets de ratification n° 2022-729 et 2023-126, statut du personnel
+    (décrets n° 74-4, 2000-2356, 2009-2650, 2013-4706), organigramme (décrets n° 2002-1197 et
+    2019-339), loi n° 82-10 (prêt de la BIRD pour le stockage des céréales) ;
+  - l'emprunt obligataire dont l'État paie le principal en 2010 et 2011 : texte non identifié ;
+  - garanties dans les lois de finances : parcourues en plein texte les lois de finances de type
+    « loi » 1993-2026 (édition française) ; restent les lois de finances prises par décret-loi
+    (2022, 2023), les lois de finances complémentaires et les fascicules sans couche texte ;
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la
@@ -3829,7 +3865,8 @@ Ce qui reste :
   commission d'instruction : corrigé). **Restent** : gestion 1960 et décret du 29 juin 1957
   (fascicule absent du corpus local, à obtenir sur pist.tn) ; lois de finances complémentaires de
   1969 à 1991 à lire en entier ; garantie propre aux dettes de l'Office des céréales et
-  de l'Office national de l'huile (loi de finances pour 1997, art. 17, 980 MD), lue et non versée ;
+  de l'Office national de l'huile (loi de finances pour 1997, art. 17, 980 MD), lue et versée au
+  registre de l'Office des céréales (`tbl-ep-registre-oc`) le 28 octobre 2026, pas au chapitre des garanties ;
   article 36 de la loi n° 77-81 (fonds d'amortissement de la garantie de bonne fin) ; acte de la
   commission d'instruction ; prêts du Trésor aux entreprises publiques avant 2016 (article voisin de chaque loi,
   40 MD de 1995 à 2005 et 100 MD de 2013 à 2015, montants vus, pas en série ; la série commence en 2016) ; lois modifiant un budget de capital en cours d'année et réalisation du budget avant 1986
