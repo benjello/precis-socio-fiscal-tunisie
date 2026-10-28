@@ -42,10 +42,15 @@ class NumerotationTest(unittest.TestCase):
         self.assertEqual(len(self.ecarts("book:\n  chapters: [index.qmd]\n",
                                          {"index.qmd": "# Présentation {.unnumbered #sec-p}\n"})), 1)
 
-    def test_toute_partie_est_refusee(self):
+    def test_partie_sans_numero_romain_est_refusee(self):
         e = self.ecarts("book:\n  chapters:\n    - index.qmd\n    - part: \"P\"\n      chapters: [a.qmd]\n",
                         {"index.qmd": "# P\n", "a.qmd": "# A\n"})
         self.assertTrue(any("partie" in x for x in e))
+
+    def test_partie_qui_porte_son_numero_romain_est_acceptee(self):
+        e = self.ecarts("book:\n  chapters:\n    - index.qmd\n    - part: \"I. Le statut\"\n      chapters: [a.qmd]\n",
+                        {"index.qmd": "# P\n", "a.qmd": "# A\n"})
+        self.assertFalse(any("partie" in x for x in e))
 
     def test_saut_de_niveau(self):
         e = self.ecarts("book:\n  chapters: [index.qmd]\n" + PROFONDEUR_4,

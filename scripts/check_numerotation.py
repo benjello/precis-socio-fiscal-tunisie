@@ -6,10 +6,12 @@ cette numérotation ou la rend illisible :
 1. un `{.unnumbered}` posé sur le titre d'un chapitre : le chapitre sort de la
    numérotation, et un renvoi `@sec-…` vers l'une de ses sections s'affiche « Section 1 »,
    un numéro qui ne désigne rien (constaté le 4 octobre 2026) ;
-2. une partie (`part:`) : en HTML, Quarto ne numérote jamais les parties, qui s'intercalent
-   sans numéro entre des chapitres numérotés. Les volumes n'en ont donc pas : les chapitres
-   se suivent à plat, et l'introduction du volume annonce leurs regroupements (décision
-   du 4 octobre 2026) ;
+2. une partie (`part:`) dont le titre ne commence pas par son numéro en chiffres romains :
+   en HTML, Quarto ne numérote jamais les parties, qui s'intercalent sans numéro entre des
+   chapitres numérotés. Une partie ne se lit sans trou que si son titre porte lui-même son
+   numéro (« I. Le statut ») ; les chapitres gardent la numérotation continue de Quarto
+   (décision du 4 octobre 2026, assouplie le 27 octobre 2026 pour que les parties se
+   lisent dans la table des matières) ;
 3. un saut de niveau (`###` directement sous `#`) : la numérotation continue dans la
    sous-section sans que la section qui devrait la contenir soit comptée ;
 4. un titre plus profond que `number-depth` : il reste sans numéro au milieu de sections
@@ -32,6 +34,7 @@ from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent
 RE_TITRE = re.compile(r"^(#{1,6}) +(.*)$")
+RE_PARTIE = re.compile(r"^[IVX]+\. ")
 RE_INCLUDE = re.compile(r"^\{\{<\s*include\s+(\S+)\s*>\}\}\s*$")
 
 
@@ -41,8 +44,10 @@ def _fichiers(entrees: list | None, livre: Path, ecarts: list[str]) -> list[Path
         if isinstance(e, str):
             fichiers.append(livre / e)
         elif isinstance(e, dict) and "part" in e:
-            ecarts.append(f"{livre.name} : partie « {e['part']} » — Quarto ne la numérote pas ; "
-                          "mettre ses chapitres à plat et annoncer le regroupement dans l'introduction")
+            if not RE_PARTIE.match(str(e["part"])):
+                ecarts.append(f"{livre.name} : partie « {e['part']} » — Quarto ne la numérote pas ; "
+                              "son titre doit commencer par son numéro en chiffres romains (« I. … »), "
+                              "ou les chapitres se suivent à plat")
             fichiers += _fichiers(e.get("chapters"), livre, ecarts)
     return fichiers
 
