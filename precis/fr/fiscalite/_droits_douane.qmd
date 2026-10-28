@@ -185,7 +185,7 @@ Après 2022, les lois de finances pour 2023 à 2026 modifient les droits de prod
 
 <!-- TODO (documentaliste) : LF 2010, art. 22, et LF 2011, art. 11 (tableaux « G ») ; LF 2012 (loi n° 2011-7), art. 16-17 ; lecture complète des sections douanières des LF 2015 à 2017 et 2019 à 2026 ; annexes 2 et 3 de la LF 2016 et 1 et 2 de la LF 2018 ; tableau de la LF 2019, art. 81, lu en partie ; LF 2021 (suspension de la TVA et des droits de douane sur certains produits, intitulé seul) ; LF 2024, art. 40 (panneaux solaires, intitulé seul). Lisibles dans le corpus. -->
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré -->
+<!-- TODO (rédacteur) : remplacer par un tableau engendré ; reste à la main — registre des taux du tarif : aucun paramètre du tarif (openfisca-tunisia#517). -->
 
 ::::
 
@@ -201,7 +201,7 @@ import tarifs
 tarifs.imprime("douane/tarifs-releves-droits-douane.csv", "correspondances")
 ```
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres -->
+<!-- TODO (rédacteur) : remplacer par un tableau engendré ; reste à la main — tables de correspondance des taux de 1987, 1988 et 1994 : pas de paramètre (openfisca-tunisia#517). -->
 
 ::::
 
@@ -217,23 +217,22 @@ import tarifs
 tarifs.imprime("douane/tarifs-releves-droits-douane.csv", "bandes")
 ```
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres -->
+<!-- TODO (rédacteur) : remplacer par un tableau engendré ; reste à la main — bandes du tarif de 2004 à 2022 : pas de paramètre (openfisca-tunisia#517). -->
 
 ::::
 
 :::: {.chronologie-repliable titre="Minimum de perception des droits de douane en tarif minimum ad valorem, 1987 et 1988 : taux"}
 
-: Le minimum de perception des droits de douane en tarif minimum *ad valorem* et le taux des biens d'équipement, 1987 et 1988. {#tbl-dd-minimum .sm tbl-colwidths="[18,28,22,32]"}
-
 ```{python}
 #| echo: false
 #| output: asis
-import sys; sys.path.insert(0, "../../../scripts")
-import tarifs
-tarifs.imprime("douane/tarifs-releves-droits-douane.csv", "minimum-perception")
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "droits_douane_minimum_perception.md",
+                               "Le minimum de perception des droits de douane en tarif minimum *ad valorem* et le taux des biens d'équipement, 1987 et 1988.", "tbl-dd-minimum", colonnes='.sm tbl-colwidths="[18,28,22,32]"'))
 ```
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres -->
 
 ::::
 
@@ -265,7 +264,7 @@ Le tableau des taux du tarif n'est pas publié au *Journal officiel*, et le tari
 
 :::
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré -->
+<!-- TODO (rédacteur) : remplacer par un tableau engendré ; reste à la main — état du droit au 1er janvier 2026 : le tarif n'est pas un paramètre (openfisca-tunisia#517) ; la redevance et le scanner de ce tableau le seront avec lui. -->
 
 <!-- TODO (documentaliste) : tarif en vigueur au 1er janvier 2026 (site de la direction générale des douanes) : taux maximal, nombre de taux, répartition des positions par taux ; ne pas reprendre au tableau les « 11 taux » de l'OMC (2025), rapport extérieur. Taux sur les produits agricoles des chapitres de la LF 2005 après 2009. Rattachement à l'article 1.5 % à l'exportation du pétrole brut (art. 51 de la LF 1988, rédaction de 1999) : vérifier qu'aucun texte postérieur ne le modifie. -->
 
@@ -287,7 +286,7 @@ Le tableau des taux du tarif n'est pas publié au *Journal officiel*, et le tari
 
 <!-- TODO (documentaliste) : LF 2023, art. 63 (friperie, positions 6309 et 6310 : tableau lu en partie) ; LF 2025, tableau du lait en poudre (040210, 040221, 36 %, contingent de 2 000 t ; rattachement à l'art. 40 à confirmer) ; LF 2022, art. 70 (abandon des redevances inscrites aux registres des receveurs des douanes, intitulé seul) ; LF 2024, art. 40 (panneaux solaires, taux à relever) ; LF 2022, art. 31 : page à relever. Exonérations par bénéficiaire des LF 2025 et 2026 (Office de la famille, Pharmacie centrale, Office du commerce, ONAS, Compagnie des phosphates de Gafsa) : domicile à décider (dépenses fiscales). -->
 
-<!-- TODO (rédacteur) : remplacer par un tableau engendré -->
+<!-- TODO (rédacteur) : remplacer par un tableau engendré ; reste à la main — registre des lois de finances de 2022 à 2026 : taux par produit, pas de paramètre (openfisca-tunisia#517). -->
 
 ::::
 
@@ -301,17 +300,16 @@ La redevance de prestations douanières est un prélèvement que la douane perç
 - **1994 : 2 % et un minimum de 5 D.** À l'importation, l'assiette ne change pas ; la redevance devient « 2 % du montant des droits et taxes liquidés en douane sur toutes les déclarations en douane à l'importation avec un minimum de perception de cinq dinars par article » ; 10 % de son produit vont aux dépenses spécifiques des agents des douanes ([loi de finances pour 1994](#r-dd-red-1994)).
 - **De 1998 à 2024 : des étapes.** Le taux passe à 3 % en [1998](#r-dd-red-1998). En [1999](#r-dd-red-1999), la redevance à l'exportation ne vise plus que le pétrole brut, à 1,5 % de sa valeur. Le minimum passe à 10 D en [2013](#r-dd-red-2013). En [2014](#r-dd-red-2014), une redevance de 100 D frappe chaque déclaration de transit terrestre, et l'affectation de 10 % prend fin : tout le produit va au budget de l'État. Le minimum passe à 20 D en [2024](#r-dd-red-2024).
 
-: La redevance de prestations douanières : assiette, taux et minimum de perception, 1988-2024. {#tbl-dd-redevance .sm tbl-colwidths="[16,46,16,22]"}
-
 ```{python}
 #| echo: false
 #| output: asis
-import sys; sys.path.insert(0, "../../../scripts")
-import tarifs
-tarifs.imprime("douane/tarifs-releves-droits-douane.csv", "redevance")
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parents[2] / "scripts"))
+import openfisca_tables as ot
+print(ot.markdown_avec_legende(Path.cwd() / "tables" / "droits_douane_redevance.md",
+                               "La redevance de prestations douanières : assiette, taux et minimum de perception, 1988-2024.", "tbl-dd-redevance", colonnes='.sm tbl-colwidths="[16,46,16,22]"'))
 ```
-
-<!-- TODO (rédacteur) : remplacer par un tableau engendré depuis les paramètres -->
 
 <!-- TODO (documentaliste) : taxe de formalités douanières de 1971 à 1987 (LF 1971, art. 27 ; LF 1977, art. 38 ; LF 1981, art. 20 et 25 ; LF 1982, art. 42 ; affectation de 40 % : LF 1983, art. 86 ; LF 1985, art. 48 ; LF 1986, art. 78) : taux et assiette, lisibles dans le corpus. Décrets de suspension de la redevance à l'exportation n° 98-1870 et 98-1983 (intitulés seuls). -->
 
@@ -321,7 +319,7 @@ tarifs.imprime("douane/tarifs-releves-droits-douane.csv", "redevance")
 |---|---|---|---|
 | []{#r-dd-red-1984}[1^er^ janvier 1984]{.insecable} | antécédent | loi n° 83-113, loi de finances pour 1984 [@lf-1984, art. 48 et 53 à 55, pp. 3378-3380] | « Reconduction du prélèvement de 40 % du produit de la Taxe de Formalités Douanières » : « Est transféré à concurrence de 40 % le produit de la taxe de formalités douanières à l'importation pour la gestion 1984 au profit de la Caisse Générale de Compensation » (art. 48) ; exemptions (livres, pétrole brut en entrepôt) et assiette au poids brut à l'exportation (art. 53-55) |
 | []{#r-dd-red-1988}[2 janvier 1988]{.insecable} | **rupture** (naissance) | loi n° 87-83, loi de finances pour 1988 [@loi-87-83-lf-1988, art. 48 et 51, p. 1632] | « Suppression de la taxe et de la redevance sur les formalités douanières à l'importation et à l'exportation » : taxe de formalités douanières instituée par le décret du 24 décembre 1936 et redevance compensatrice sur les déclarations détaillées (LF 1981, art. 25) supprimées (art. 48) ; « Institution d'une redevance de prestation douanière » : 1,5 % de la valeur en douane à l'exportation des produits d'un tableau, 1,5 % du montant des droits et taxes liquidés sur toutes les autres déclarations, minimum 1 D par article dans les deux cas (art. 51) ; exécutoire un jour franc après la publication du 31 décembre 1987 |
-| []{#r-dd-red-1994}[1^er^ janvier 1994]{.insecable} | **rupture** | loi n° 93-125, loi de finances pour 1994 [@lf-1994, art. 75, p. 2202] | 1,5 % → « 2 % du montant des droits et taxes liquidés en douane sur toutes les déclarations en douane à l'importation avec un minimum de perception de cinq dinars par article » ; 10 % du produit affectés aux dépenses spécifiques des agents des douanes |
+| []{#r-dd-red-1994}[1^er^ janvier 1994]{.insecable} | étape | loi n° 93-125, loi de finances pour 1994 [@lf-1994, art. 75, p. 2202] | 1,5 % → « 2 % du montant des droits et taxes liquidés en douane sur toutes les déclarations en douane à l'importation avec un minimum de perception de cinq dinars par article » ; 10 % du produit affectés aux dépenses spécifiques des agents des douanes |
 | []{#r-dd-red-1998}[1^er^ janvier 1998]{.insecable} | étape (de la réforme de 1994) | loi n° 97-88, loi de finances pour 1998 [@lf-1998, art. 43, p. 2439] | « Relèvement du taux de la redevance de prestations douanières à l'importation » : 2 → 3 % des droits et taxes liquidés, minimum de cinq dinars par article de déclaration |
 | []{#r-dd-red-1999}[1^er^ janvier 1999]{.insecable} | étape (de la réforme de 1994) | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 32, p. 2503] | « Suppression de la redevance de prestations douanières applicable à certains produits à l'exportation… » : art. 51 de la LF 1988 récrit ; exportation : pétrole brut (27-09) seul, 1,5 % de la valeur en douane, minimum 1 D ; importation : 3 % des droits et taxes liquidés, minimum 5 D ; 10 % affectés |
 | []{#r-dd-red-2013}[1^er^ janvier 2013]{.insecable} | étape (de la réforme de 1994) | loi n° 2012-27, loi de finances pour 2013 [@lf-2013, art. 57, p. 17] | « Mise à jour du montant de la redevance de prestations douanières à l'importation » : minimum « cinq » → « dix » dinars |

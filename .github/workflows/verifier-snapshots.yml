@@ -37,6 +37,9 @@ on:
       # valeurs doivent concorder avec le modèle : le contrôle rejoue quand l'un ou
       # l'autre bouge.
       - 'precis/fr/fiscalite/tarifs/**'
+      # Le relevé des droits de douane : la redevance et le minimum de perception en sont
+      # engendrés, avec lui pour garde-fou.
+      - 'precis/fr/fiscalite/douane/**'
       - 'scripts/check_tarifs_openfisca.py'
       # Les tableaux de l'IS et du droit de consommation sont engendrés en partie depuis
       # ces relevés, lus par `tarifs.py`.
@@ -85,6 +88,7 @@ jobs:
           uv run python scripts/generate_prestations_tables.py
           uv run python scripts/generate_cotisations_tables.py
           uv run python scripts/generate_droit_consommation_tables.py
+          uv run python scripts/generate_douane_tables.py
           # Le livre « Retraites » n'était pas régénéré ici : ses tableaux n'ont jamais été
           # gardés contre une dérive du modèle. Ils le sont depuis la fusion des dépôts.
           uv run python scripts/generate_retraites_tables.py
@@ -145,6 +149,8 @@ jobs:
             echo '    uv run python scripts/generate_cotisations_tables.py'
             echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
             echo '    uv run python scripts/generate_droit_consommation_tables.py'
+            echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
+            echo '    uv run python scripts/generate_douane_tables.py'
             echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
             echo '    uv run python scripts/generate_retraites_tables.py'
             echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'

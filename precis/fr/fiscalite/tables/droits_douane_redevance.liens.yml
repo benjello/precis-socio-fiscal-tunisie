@@ -1,0 +1,15 @@
+- libelle: Redevance de prestations douanières — taux à l'importation
+  parametre: parameters/fiscalite_indirecte/droits_douane/redevance_prestations_douanieres/importation/taux_sur_droits_et_taxes.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_douane.redevance_prestations_douanieres.importation.taux_sur_droits_et_taxes/table/
+- libelle: Redevance de prestations douanières — minimum par article à l'importation
+  parametre: parameters/fiscalite_indirecte/droits_douane/redevance_prestations_douanieres/importation/minimum_par_article.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_douane.redevance_prestations_douanieres.importation.minimum_par_article/table/
+- libelle: Redevance de prestations douanières — taux à l'exportation
+  parametre: parameters/fiscalite_indirecte/droits_douane/redevance_prestations_douanieres/exportation/taux_sur_valeur_en_douane.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_douane.redevance_prestations_douanieres.exportation.taux_sur_valeur_en_douane/table/
+- libelle: Redevance de prestations douanières — minimum par article à l'exportation
+  parametre: parameters/fiscalite_indirecte/droits_douane/redevance_prestations_douanieres/exportation/minimum_par_article.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_douane.redevance_prestations_douanieres.exportation.minimum_par_article/table/
+- libelle: Redevance de prestations douanières — transit terrestre
+  parametre: parameters/fiscalite_indirecte/droits_douane/redevance_prestations_douanieres/transit_terrestre/par_declaration.yaml
+  url: https://parameters.tn.tax-benefit.org/parameters/fiscalite_indirecte.droits_douane.redevance_prestations_douanieres.transit_terrestre.par_declaration/table/
