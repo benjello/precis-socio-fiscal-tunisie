@@ -130,6 +130,15 @@ repliés (`.chronologie-repliable`, compte du 25 octobre 2026). Reste à faire :
   budget de traduction (décision du 6 octobre 2026, voir « Ce qui traverse les livres »), avec
   les attributs `titre` des seize blocs repliés.
 
+## Table de correspondance instrument / institution / législation (28 octobre 2026)
+
+Page du site `precis/fr/correspondance-instruments.qmd`, tirée de `precis/fr/correspondance-instruments.csv` par `scripts/correspondance.py` : 27 instruments, une institution, le ou les textes fondateurs (citations de `references.json`), les chapitres. Demandée par une lectrice de la doctrine (28/10/2026) pour que le découpage par flux serve aux juristes. Neutre sur la place des caisses et sur les titres de livres. Reste :
+
+- **Institution à établir** (case vide) : impôt sur les sociétés, droits de consommation, impôt sur la fortune, régimes d'incitation, assistance médicale gratuite, AMEN SOCIAL, programme national d'aide aux familles nécessiteuses, code du travail, statut général, entreprises publiques, enseignement. Aucun chapitre ne la nomme : à lire dans les textes avant de remplir.
+- **Instruments à ajouter** : régime de prévoyance des agents publics (décret du 12 avril 1951, loi n° 59-45), retraite complémentaire, conventions collectives, santé publique, formation professionnelle, transport, logement (quand leurs chapitres existent).
+- **Références incomplètes dans `references.json`** (fascicule ou page absents) : `loi83-112`, `loi89-9`, `loi-org-2018-29-ccl` (fascicule et page), `loi2004-71` (fascicule), `lf-2023` et `loi95-56` (page).
+- **Arabe** : la page n'a pas de version arabe ; elle part avec la traduction automatique après fusion.
+
 ## Vue d'ensemble
 
 | Livre | État du texte | Première lecture faisable |
