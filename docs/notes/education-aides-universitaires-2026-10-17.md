@@ -1022,14 +1022,16 @@ nationale.** Même fascicule, p. 3-4, pages 3-4 du fichier. recid 73258.
   d'entretien de 100 D par an au plus ; bourse de spécialisation de 50 à 70 D par mois (futurs
   cadres de l'Université et chefs de service des hôpitaux).
 - Art. 5 : internes à l'étranger : 10 D (France), 15 D (Allemagne, Italie) par mois.
-- Art. 6 : dispositions contraires abrogées. Date exécutoire : 9 ou 10 janvier 1963.
+- Art. 6 : dispositions contraires abrogées. Aucune clause d'effet (relu à l'image, p. 3-4). Date
+  exécutoire : 9 ou 10 janvier 1963 ; les montants valent dès cette date.
 
 **Arrêté du 8 mai 1963 modifiant l'arrêté du 2 janvier 1963.** JORT n° 23 des 10-14 mai 1963,
 p. 652, page 2 du fichier. `https://www.pist.tn/jort/1963/1963F/Jo02363.pdf`. recid 73148.
 
 - Art. 1er nouveau : la bourse est payée sur les crédits du budget du secrétariat d'État à la
   présidence, et non plus sur ceux des départements intéressés.
-- Art. 2 : « en vigueur à compter de l'année universitaire 1963-64 ».
+- Art. 2 : « en vigueur à compter de l'année universitaire 1963-64 » ; la clause ne vaut que pour ce
+  changement d'imputation.
 
 **Arrêté du 7 décembre 1964 fixant les montants et les modalités d'attribution de la bourse
 nationale.** JORT n° 60 du 8 décembre 1964, p. 1422-1423, pages 2-3 du fichier.
@@ -1087,6 +1089,9 @@ nationale.** JORT n° 8 du 28 février-4 mars 1969, p. 245-246, pages 7-8 du fic
 **Décret n° 72-51 du 19 février 1972 modifiant le décret n° 71-361.** JORT n° 8 des 22-25 février
 1972, p. 230, page 8 du fichier. `https://www.pist.tn/jort/1972/1972F/Jo00872.pdf`. recid 103229.
 
+- Rédaction d'origine du décret n° 71-361 (p. 1368, relue le 29 octobre 2026) : art. 6, bourses accordées par
+  décision du ministre de l'Éducation nationale sur propositions d'un jury national ; art. 9, conditions
+  fixées par arrêté du même ministre ; art. 8, bourses possibles pour des étudiants étrangers en Tunisie.
 - Art. 4, 6, 9 et 10 nouveaux : bourse aux bacheliers des premier et deuxième cycles en Tunisie,
   « exceptionnellement » à l'étranger ; décision du ministre de l'Agriculture ou de l'Éducation
   nationale, chacun pour les établissements qui relèvent de lui ; montant et modalités fixés par
@@ -1235,7 +1240,7 @@ recid 47751.
 | Date d'effet | Montant | Durée | Texte | État |
 |---|---:|---|---|---|
 | 25-28 décembre 1958 (fourchette) | 25,000 D | 10 mois | arrêté du 10 décembre 1958, art. 1er | lu (image) |
-| année universitaire 1963-64 | 25,000 D | 10 mois | arrêtés du 2 janvier et du 8 mai 1963, art. 4 | lu (image) |
+| 9-10 janvier 1963 (sans clause d'effet) | 25,000 D | 10 mois | arrêté du 2 janvier 1963, art. 4 (l'arrêté du 8 mai, pour 1963-64, ne change que l'imputation) | lu (image) |
 | année universitaire 1964-65 | 25,000 D | 10 mois | arrêté du 7 décembre 1964, art. 4 | lu (image) |
 | année universitaire 1965-1966 | 25,000 D | 10 mois | arrêté du 7 décembre 1965, art. 4 nouveau | lu (image) |
 | 1er janvier 1969 | 30 D (1er cycle) ; 35 D (2e) ; 45 D (3e) ; taux spécial 35, 40, 45 D | 10 mois | arrêté du 1er mars 1969, art. 4 et 10 | lu (image) |

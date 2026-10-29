@@ -70,6 +70,7 @@ LIGNES = [
     ("office", "ressources propres", "2020", 2020, 5.600, "MD", "lf-2020, annexe, p. 4783 (édition arabe)"),
     ("office", "total", "2020", 2020, 75.581, "MD", "lf-2020, annexe, p. 4783 (édition arabe)"),
     # Bourse nationale en Tunisie, montant mensuel
+    ("bourse", "premier niveau (taux général, inchangé)", "1er octobre 1977", 1977, 30, "D/mois", "arrete-1971-11-15-bourses-montants, art. unique ; arrete-1978-01-05-bourses-montants, visas et art. 1"),
     ("bourse", "premier niveau", "1er janvier 1988", 1988, 40, "D/mois", "arrete-1988-03-31-bourses-montants, art. 1 et 2, p. 548-549"),
     ("bourse", "troisième cycle", "1er janvier 1988", 1988, 70, "D/mois", "arrete-1988-03-31-bourses-montants, art. 1, p. 548-549"),
     ("bourse", "premier niveau", "année universitaire 1991-1992", 1991, 40, "D/mois", "arrete-1992-03-07-bourses-montants, art. 1, p. 360"),
