@@ -367,3 +367,16 @@ nationalisations de 1956-1964) quand les chapitres 8 à 13 s'ouvriront.
    déplacées sans changement de texte, avec leurs figures, tableaux de fiches et registres. Les ancres sont conservées.
 2. Le volume compte treize chapitres. Le module de figures reste `figures/grandes_entreprises.py`.
 3. Tunisie Autoroutes relève du ministère de l'Équipement ; « La source » du chapitre le dit.
+
+## 12. Les chapitres « Les offices et les monopoles » et « L'eau et les communications » (29 octobre 2026)
+
+1. Ouverture par application de la règle du § 9, point 3 (un chapitre s'ouvre quand trois entreprises du secteur ont leur
+   fiche), à confirmer à la revue. Le chapitre « Les offices et les monopoles » (`_offices.qmd`, `#sec-ep-offices`) reçoit
+   l'Office des céréales (`#sec-ep-ge-oc`), l'Office national de l'huile (`#sec-ep-ge-onh`), la RNTA (`#sec-ep-ge-rnta`) et
+   l'Office du commerce de la Tunisie (`#sec-ep-ge-otc`). Le chapitre « L'eau et les communications »
+   (`_eau_communications.qmd`, `#sec-ep-eau-communications`) reçoit la SONEDE (`#sec-ep-ge-sonede`), l'ONAS
+   (`#sec-ep-ge-onas`), Tunisie Télécom (`#sec-ep-ge-tt`) et La Poste (`#sec-ep-ge-poste`). Sections déplacées sans changement
+   de texte, avec leurs figures, tableaux de fiches et registres ; les ancres sont conservées.
+2. Ordre dans la partie III : « Les grandes entreprises », « L'énergie », « Les transports », « Les offices et les
+   monopoles », « L'eau et les communications », « Les autres entreprises » (la CPG et le GCT).
+3. Le volume compte quinze chapitres. Le plan cible est inchangé. Le module de figures reste `figures/grandes_entreprises.py`.

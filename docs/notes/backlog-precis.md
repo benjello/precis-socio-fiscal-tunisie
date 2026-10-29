@@ -3758,6 +3758,11 @@ Ce qui reste :
     de la STEG, de l'ETAP et de la STIR y sont déplacées sans changement de texte. La section
     d'ensemble reste dans `_grandes_entreprises.qmd` (ouvre la partie III) ; la SNCFT passe dans
     `_autres_entreprises.qmd` (`#sec-ep-autres-entreprises`).
+  - chapitres « Les offices et les monopoles » (`_offices.qmd`, `#sec-ep-offices`) et « L'eau et les communications »
+    (`_eau_communications.qmd`, `#sec-ep-eau-communications`) ouverts le 29 octobre 2026, par application de la règle
+    de la note de chantier (§ 9, point 3 ; § 12), à confirmer à la revue : Office des céréales, ONH, RNTA et Office
+    du commerce d'un côté ; SONEDE, ONAS, Tunisie Télécom et La Poste de l'autre, déplacées sans changement de texte,
+    ancres conservées. « Les autres entreprises » garde la CPG et le GCT (`#sec-ep-autres-entreprises`).
 - **STIR — section écrite le 28 octobre 2026** (`_energie.qmd` depuis l'ouverture du
   chapitre « L'énergie », même jour ; `#sec-ep-ge-stir`, figure `fig-ep-stir-budget` engendrée par `grandes_entreprises.figure
   ("stir_budget")` depuis trois séries du rapport sur les entreprises publiques : transferts
@@ -3793,7 +3798,7 @@ Ce qui reste :
     et loi n° 61-44, loi n° 62-29) : **dans le corpus local, à l'image**, non lues ;
   - décrets n° 89-1197 et 91-178 (article 5 du décret n° 77-467, composition du conseil) : lus à
     l'OCR, non versés au registre ; décret n° 99-1304 (organigramme), non lu ;
-- **Office des céréales — section écrite le 28 octobre 2026** (`_autres_entreprises.qmd`,
+- **Office des céréales — section écrite le 28 octobre 2026** (`_offices.qmd`,
   `#sec-ep-ge-oc`, avant la SNCFT : l'Office est le deuxième bénéficiaire des transferts après la
   STIR). Figures `fig-ep-oc-budget` (`grandes_entreprises.figure("oc_budget")` : transferts
   2017-2022, résultats nets des classements, effectifs et charges de personnel 2016-2023) et
@@ -3831,7 +3836,7 @@ Ce qui reste :
     « loi » 1993-2026 (édition française) et les lois de finances pour 2022 et 2023 (décrets-lois,
     édition arabe) ; restent les décrets-lois de finances rectificatives, la loi de finances
     rectificative n° 2023-12 et les fascicules sans couche texte ;
-- **SONEDE et ONAS — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
+- **SONEDE et ONAS — sections écrites le 28 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-sonede` et `#sec-ep-ge-onas`, après l'Office des céréales et avant la SNCFT, dans
   l'ordre des transferts de 2022 ; restent dans « Les autres entreprises » : deux entreprises ne
   font pas un chapitre « L'eau », note de chantier, § 10). Figures `fig-ep-{sonede,onas}-budget`
@@ -3943,7 +3948,7 @@ Ce qui reste :
   - éditions françaises LF 2020 et LF 2021 : comptes des deux entreprises dans la prose, non
     versés ; grandeurs d'activité (voyageurs, trafic) non relevées ; comptes publiés des deux
     entreprises : **à obtenir**.
-- **Tunisair et RNTA — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
+- **Tunisair et RNTA — sections écrites le 28 octobre 2026** (`_transports.qmd` pour Tunisair, `_offices.qmd` pour la RNTA`,
   `#sec-ep-ge-tunisair` et `#sec-ep-ge-rnta`, après l'ONAS et avant la SNCFT). La RNTA est la
   Régie nationale des **tabacs et des allumettes** (code `rnta` de toutes les séries, ministère des
   Finances), non une régie des transports. Figures `fig-ep-{tunisair,rnta}-budget` et
@@ -3974,7 +3979,7 @@ Ce qui reste :
     (annexe 8, bloc du ministère des Finances) ;
   - grandeurs d'activité des fiches (passagers, marchandises ; ventes et production de tabac) non
     relevées ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés.
-- **Office national de l'huile — section écrite le 28 octobre 2026** (`_autres_entreprises.qmd`,
+- **Office national de l'huile — section écrite le 28 octobre 2026** (`_offices.qmd`,
   `#sec-ep-ge-onh`, après l'ONAS et avant la SNCFT, comme demandé ; l'intro du chapitre ne dit plus
   que les entreprises sont rangées dans l'ordre des transferts, l'ONH recevant plus que la SONEDE et
   l'ONAS). Figures `fig-ep-onh-budget` et `fig-ep-onh-fiches`, tableaux repliés `tbl-ep-onh-fiche-a`
@@ -4004,7 +4009,7 @@ Ce qui reste :
     prose, non versés ; grandeurs d'activité des fiches (huile végétale subventionnée en MD et en
     tonnes) non relevées ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
-- **Office du commerce de la Tunisie — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+- **Office du commerce de la Tunisie — section écrite le 29 octobre 2026** (`_offices.qmd`,
   `#sec-ep-ge-otc`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
   `fig-ep-otc-budget` et `fig-ep-otc-fiches`, tableaux repliés `tbl-ep-otc-fiche-a` et `-b`.
   **Fiche du ministère des Finances versée le 29 octobre 2026** dans
@@ -4030,7 +4035,7 @@ Ce qui reste :
   - grandeurs d'activité des fiches (achats et ventes de produits de base) citées, non versées dans
     une série ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
-- **Office national des postes — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+- **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche
   de la Poste dans la suite des fiches d'entreprises : ses comptes sont au tableau des « autres
@@ -4067,7 +4072,7 @@ Ce qui reste :
   - grandeurs d'activité du tableau (cartes de paiement, comptes et encours de l'épargne postale)
     non versées ; édition LF 2022 absente de la série des effectifs ; éditions françaises LF 2020
     (p. 32) et LF 2021 (p. 42) : comptes dans la prose, non versés.
-- **Tunisie Télécom — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+- **Tunisie Télécom — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-tt`, en fin de chapitre, après le GCT). Figure `fig-ep-tt-fiches` (pas de figure du
   budget : transferts nuls, LF 2022 p. 106 et LF 2024 p. 155), tableaux repliés
   `tbl-ep-tt-fiche-a` et `-b`. **Fiche du ministère des Finances versée le 29 octobre 2026** dans
