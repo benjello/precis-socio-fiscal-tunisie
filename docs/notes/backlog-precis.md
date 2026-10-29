@@ -3931,7 +3931,7 @@ Ce qui reste :
   avec l'édition arabe p. 1432 ; décret n° 2003-2407 ; loi n° 2005-73, image ; loi n° 2020-40 ;
   décret-loi n° 2023-13, édition arabe). Glossaire : `tunisie-autoroutes`, `transtu`.
   **Reste** :
-  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports, la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ;
+  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. L'ATTT y est ajoutée le 29 octobre 2026 (voir l'entrée ATTT). Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports, la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ;
   - Tunisie Autoroutes : acte de constitution (13 mai 1992 d'après le rapport LF 2020, p. 121) non
     identifié au JORT ; décrets de concession des autres sections (n° 2000-645, 2002-537,
     2004-1073, 2004-1074, 2016-256, 2019-661 à 2019-663) et de péage des autres sections (n° 97-1003,
@@ -3979,6 +3979,37 @@ Ce qui reste :
     (annexe 8, bloc du ministère des Finances) ;
   - grandeurs d'activité des fiches (passagers, marchandises ; ventes et production de tabac) non
     relevées ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés.
+- **Agence technique des transports terrestres (ATTT) — section écrite le 29 octobre 2026**
+  (`_transports.qmd`, `#sec-ep-ge-attt`, en fin de chapitre, après Tunisair). Figure
+  `fig-ep-attt-fiches` (pas de figure du budget : transferts nuls, LF 2022 p. 106, LF 2023 p. 201,
+  LF 2024 p. 155), tableaux repliés `tbl-ep-attt-fiche-a` et `-b`. **Fiche du ministère des
+  Finances versée le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-attt`, code `attt`) : LF 2022 p. 55, LF 2024 p. 85,
+  LF 2025 p. 59, lues à l'image (300 dpi) et retrouvées dans la couche texte. Écarts imprimés
+  déclarés : bilans de 2022 (LF 2024, −6,7 MD) et de 2023 (LF 2025, +5,6 MD) déséquilibrés ;
+  virgule arabe lue comme décimale (LF 2022). Lus sur les pages, sans série : contribution aux
+  ressources propres de l'État (LF 2022 p. 102, LF 2023 p. 197, LF 2024 p. 151), dettes et
+  créances croisées (LF 2023 p. 190 et 194, LF 2024 p. 142 et 146, LF 2025 p. 119 et 123).
+  Registre `tbl-ep-registre-attt` : loi n° 95-61, décret n° 98-1375, loi n° 98-108, décrets
+  n° 99-2048 (image des p. 1751-1752), 2000-166, 2000-2406, 2000-2782 et 2007-704 (fascicules
+  français ; couche texte à police décalée décodée pour 1999 et 2000). Glossaire : `attt`.
+  L'axe des montants des figures de fiches affiche une décimale pour une graduation non entière
+  (`_axe_md`), ce qui ne change que les petits montants.
+  **Reste** :
+  - date de dépôt du JORT n° 104 de 1998 (loi n° 98-108, et lois n° 98-109 et 98-110 du même
+    numéro) : **à lire à l'image** (absente de la couche texte et de la dernière page ;
+    édition arabe sans couche texte) ;
+  - ce que couvre la « contribution aux ressources propres de l'État » de l'agence (redevances,
+    impôts et taxes collectés pour l'État) : **non établi** ; nature des « autres produits »
+    d'exploitation, supérieurs aux recettes : états financiers de l'agence **à obtenir** ;
+  - régime fiscal après l'abrogation de l'article 9 de la loi n° 95-61, article 38 de la loi de
+    finances pour 1978 : **non lus** ; barème des redevances après 2007 : aucun modificatif
+    identifié par les intitulés, à chercher en plein texte ;
+  - textes **dans le corpus local, non lus** : décrets n° 95-2037, 97-789, 2000-148 et
+    modificatifs (2005-1497, 2007-705, 2007-4102, 2021-82), 2002-1672, 2004-2191, 2011-4625
+    (édition arabe) ; arrêtés du 8 juin 1999, du 7 septembre 2018 et du 27 mars 2023 ;
+  - grandeurs d'activité des fiches (visites techniques, examens du permis, immatriculations)
+    et ratio de couverture des charges (LF 2024 p. 165) non relevés.
 - **Office national de l'huile — section écrite le 28 octobre 2026** (`_offices.qmd`,
   `#sec-ep-ge-onh`, après l'ONAS et avant la SNCFT, comme demandé ; l'intro du chapitre ne dit plus
   que les entreprises sont rangées dans l'ordre des transferts, l'ONH recevant plus que la SONEDE et

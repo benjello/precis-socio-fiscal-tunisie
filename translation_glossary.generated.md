@@ -20,6 +20,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Adoul | عدل إشهاد |  |
 | Agence foncière d'habitation | الوكالة العقارية للسكنى | AFH |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
+| Agence technique des transports terrestres | الوكالة الفنية للنقل البري | ATTT |
 | Agence tunisienne de la formation professionnelle | الوكالة التونسية للتكوين المهني | ATFP |
 | Agent temporaire | العون الوقتي |  |
 | Agents des douanes | أعوان الديوانة |  |
