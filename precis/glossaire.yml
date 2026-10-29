@@ -18464,6 +18464,30 @@ entries:
         المدرفل والأسلاك المسحوبة والهياكل المعدنية. وتحمّلت الدولة سنة 2013 جزءا من ديونها
         البنكية.
       synonymes: [الفولاذ]
+
+  - id: ciments-bizerte
+    statut: valide
+    references: [arrete1959-10-10-cimbiz, loi75-30-cimbiz, minfin-ep-2025]
+    source_definition: {ref: loi75-30-cimbiz, locator: "article unique"}
+    # AR : intitulé « شركة اسمنت بنزرت » de la fiche de la société dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 69.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 69"}
+    fr:
+      terme: Ciments de Bizerte
+      definition: >
+        Société qui produit du clinker et du ciment à Bizerte. L'État gère la cimenterie
+        de Bizerte de 1959 à 1974 ; en 1975, la loi l'autorise à souscrire au capital de la
+        Société des Ciments Portland de Bizerte par le rachat d'actions détenues par des
+        actionnaires français.
+      synonymes: [Société des Ciments de Bizerte]
+    ar:
+      terme: شركة اسمنت بنزرت
+      definition: >
+        شركة تنتج الكلنكر والإسمنت ببنزرت. تولّت الدولة التصرّف في مصنع الإسمنت ببنزرت من
+        1959 إلى 1974، ورُخّص لها سنة 1975 في الاكتتاب في رأس مال شركة إسمنت بورتلاند ببنزرت
+        بشراء أسهم يملكها مساهمون فرنسيون.
+      synonymes: []
+
   - id: tunisie-telecom
     statut: valide
     references: [loi95-36-tt, loi2004-30, minfin-ep-2025]

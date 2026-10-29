@@ -4002,6 +4002,35 @@ Ce qui reste :
     `entreprises-publiques-transferts-par-entreprise` ;
   - grandeurs d'activité (production et ventes en tonnes) non versées ; éditions françaises
     LF 2020 (p. 97) et LF 2021 (p. 96) non versées ;
+- **Ciments de Bizerte — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-cimbiz`, en fin de chapitre). Figures `fig-ep-cimbiz-budget` (transferts de
+  0,068 à 0,1 MD de 2018 à 2020, LF 2022 p. 105, LF 2023 p. 200, LF 2024 p. 155) et
+  `fig-ep-cimbiz-fiches`, tableaux repliés `tbl-ep-cimbiz-fiche-a` et `-b`. **Fiche du ministère
+  des Finances versée le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-cimbiz`) : LF 2022 p. 63, LF 2024 p. 93, LF 2025 p. 69 ;
+  lue à l'image (300 dpi), chaque ligne retrouvée entière dans la couche texte. Écart imprimé
+  déclaré : charges d'exploitation imprimées négatives dans l'édition LF 2024 ; signe « − »
+  imprimé après le nombre dans l'édition LF 2025 (2023), que le script de `tunisia-data` lit
+  désormais. Registre `tbl-ep-registre-cimbiz` (arrêtés du 10 octobre 1959 et du 22 août 1974,
+  image ; lois n° 75-30 et 76-40, image ; loi n° 2002-91, couche texte décodée). Recherche par
+  les intitulés de `jort_cache.db` et en plein texte des fascicules français de 2007 à 2026.
+  Glossaire : `ciments-bizerte`. Module de figures : graduations décimales de `_axe_md` quand
+  l'axe est court ou la graduation non entière (vaut pour toutes les figures du module).
+  **Reste** :
+  - textes antérieurs à 1956 (convention du 20 mars 1950, décret du 23 mars 1950, cahier des
+    charges du 30 novembre 1950, création de la Société des Ciments Portland de Bizerte) : **hors
+    du corpus local** ;
+  - loi n° 59-132 (comité de gestion de la Caisse de compensation des ciments), décret-loi de 1973
+    sur la taxe compensatrice sur le ciment, décrets d'expropriation (n° 79-310, 88-1756,
+    2006-1548), statut du personnel (n° 99-1944), organigramme (n° 2005-1611), emplois
+    fonctionnels (n° 2006-396), textes de 2015 et 2023 sur la dépollution du lac de Bizerte :
+    **dans le corpus**, non lus ;
+  - continuité entre la Société des Ciments Portland de Bizerte (1975) et la société des Ciments
+    de Bizerte (1976) : texte à identifier ; part de l'État dans le capital, forme juridique,
+    cotation : non établies ; hausse des fonds
+    propres de fin 2020 à fin 2021 (30,6 à 85,9 MD) à expliquer ;
+  - grandeurs d'activité des fiches (clinker et ciment en tonnes, revenus de LF 2022) non
+    relevées ; éditions françaises LF 2020 et LF 2021 non versées ;
   - comptes publiés et rapports annuels de la société : **à obtenir**.
 - **Tunisie Autoroutes et Transtu — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-autoroutes` et `#sec-ep-ge-transtu`, après l'ONAS et avant la SNCFT, dans l'ordre des
