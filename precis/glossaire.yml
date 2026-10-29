@@ -7399,28 +7399,30 @@ entries:
 
   - id: afh
     acronyme: AFH
-    statut: provisoire  # statut et missions (décrets n° 74-33 et 2021-327, non versés) non lus : la définition se borne aux rôles que donnent la LFC 2012 et la LF 2026 ; AR relevé dans les intitulés AR du JORT, sans clé pour l'éd. AR
-    references: [lfc-2012, decret2026-123]
-    source_definition: {ref: lf-2026, locator: "art. 21"}
-    voir_aussi: [snit, sprols, fonds-foprolos]
+    statut: valide  # AR : intitulé « الوكالة العقارية للسكنى » de la fiche de l'agence (rapport sur les entreprises publiques, LF 2025, p. 93) et des intitulés AR du JORT
+    references: [decret-gouv2021-327, lfc-2012, lf-2026, minfin-ep-2025]
+    source_definition: {ref: decret-gouv2021-327, locator: "art. 1er et 2"}
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 93"}
+    voir_aussi: [snit, sprols, fonds-foprolos, afi]
     fr:
       terme: Agence foncière d'habitation
       definition: >
-        Organisme public du logement qui compte parmi les réalisateurs du
-        programme spécifique pour le logement social créé en 2012. Depuis le
-        1er janvier 2026, le fonds de promotion du logement pour les salariés
-        contribue au financement des logements et des lots sociaux qu'elle
-        réalise, jusqu'à la totalité du coût et sans intérêt depuis le
-        20 juin 2026.
-      synonymes: []
+        Établissement public créé en 1973, à caractère non administratif depuis 2021, qui
+        acquiert, aménage et cède des terrains destinés à l'habitat et exerce la promotion
+        immobilière, sous la tutelle du ministère chargé de l'habitat. Elle compte parmi
+        les réalisateurs du programme spécifique pour le logement social créé en 2012 ;
+        depuis le 1er janvier 2026, le fonds de promotion du logement pour les salariés
+        contribue au financement des logements et des lots sociaux qu'elle réalise.
+      synonymes: [Agence foncière de l'habitation]
     ar:
       terme: الوكالة العقارية للسكنى
       definition: >
-        هيكل عمومي في مجال السكن، من بين الهياكل المكلّفة بإنجاز البرنامج
-        الخصوصي للسكن الاجتماعي المحدث سنة 2012. ومنذ غرّة جانفي 2026، يساهم
-        صندوق النهوض بالمسكن لفائدة الأجراء في تمويل المساكن والمقاسم
-        الاجتماعية التي تنجزها، بنسبة قد تبلغ كامل الكلفة ودون فائدة منذ
-        20 جوان 2026.
+        مؤسسة عمومية أُحدثت سنة 1973، وأصبحت منذ سنة 2021 مؤسسة عمومية لا تكتسي صبغة
+        إدارية، تتولّى اقتناء الأراضي المعدّة للسكن وتهيئتها والتفويت فيها وتمارس نشاط
+        الباعث العقاري، تحت إشراف الوزارة المكلّفة بالإسكان. وهي من بين الهياكل المكلّفة
+        بإنجاز البرنامج الخصوصي للسكن الاجتماعي المحدث سنة 2012؛ ومنذ غرّة جانفي 2026،
+        يساهم صندوق النهوض بالمسكن لفائدة الأجراء في تمويل المساكن والمقاسم الاجتماعية
+        التي تنجزها.
       synonymes: []
 
   - id: fnah
