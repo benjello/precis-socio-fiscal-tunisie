@@ -666,6 +666,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "tunisie_telecom": "Tunisie Télécom",
               "office_commerce": "Office du commerce de la Tunisie",
               "attt": "ATTT"}
+              "oaca": "OACA"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -999,6 +1000,8 @@ FIGURES = {
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_otc_budget"),
     "attt_fiches": (lambda: fig_fiche("attt"), lambda: table_fiche("attt"), (S_FICHES,),
                     "fig_ep_attt_fiches"),
+    "oaca_fiches": (lambda: fig_fiche("oaca"), lambda: table_fiche("oaca"), (S_FICHES,),
+                    "fig_ep_oaca_fiches"),
 }
 
 

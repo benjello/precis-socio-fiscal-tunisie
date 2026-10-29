@@ -428,6 +428,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Niveau de rémunération | مستوى التأجير |  |
 | Nomenclature budgétaire | تبويب الميزانية |  |
 | Obligation scolaire | إجبارية التعليم الأساسي |  |
+| Office de l'aviation civile et des aéroports | ديوان الطيران المدني والمطارات | OACA |
 | Office des céréales | ديوان الحبوب |  |
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |

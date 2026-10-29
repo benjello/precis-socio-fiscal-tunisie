@@ -18649,4 +18649,27 @@ entries:
         1995 للفحص الفني للعربات وتغيّرت تسميتها سنة 1998. تتولّى الإجراءات والعمليات الفنية
         المتعلقة بالعربات ورخص السياقة والمحطات البرية، وتستخلص لفائدتها المعاليم المتعلقة
         بهذه الخدمات.
+  - id: oaca
+    acronyme: OACA
+    statut: valide
+    references: [loi70-30-oaca, decret98-1374-oaca, loi98-110-oaca, minfin-ep-2025]
+    source_definition: {ref: loi98-110-oaca, locator: "art. 1er à 4"}
+    # AR : intitulé « ديوان الطيران المدني والمطارات » de la fiche de l'Office dans le rapport
+    # sur les entreprises publiques, édition LF 2025, p. 59.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 59"}
+    voir_aussi: [tunisair]
+    fr:
+      terme: Office de l'aviation civile et des aéroports
+      definition: >
+        Établissement public à caractère industriel et commercial, créé en 1970 sous le nom
+        d'Office des ports aériens de Tunisie et renommé en 1998. Il exploite les aéroports,
+        assure le contrôle de la navigation aérienne et perçoit à son profit les redevances
+        de ses prestations.
+      synonymes: [Office des ports aériens de Tunisie]
+    ar:
+      terme: ديوان الطيران المدني والمطارات
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1970 وغُيّرت تسميتها سنة 1998.
+        تتولّى استغلال المطارات ومراقبة الملاحة الجوية، وتستخلص لفائدتها المعاليم المتعلقة
+        بالخدمات التي تسديها.
       synonymes: []

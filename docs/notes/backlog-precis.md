@@ -3932,6 +3932,7 @@ Ce qui reste :
   décret-loi n° 2023-13, édition arabe). Glossaire : `tunisie-autoroutes`, `transtu`.
   **Reste** :
   - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. L'ATTT y est ajoutée le 29 octobre 2026 (voir l'entrée ATTT). Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports, la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ;
+  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ; l'Office de l'aviation civile et des aéroports a sa section depuis le 29 octobre 2026 (entrée ci-dessous) ;
   - Tunisie Autoroutes : acte de constitution (13 mai 1992 d'après le rapport LF 2020, p. 121) non
     identifié au JORT ; décrets de concession des autres sections (n° 2000-645, 2002-537,
     2004-1073, 2004-1074, 2016-256, 2019-661 à 2019-663) et de péage des autres sections (n° 97-1003,
@@ -4010,6 +4011,36 @@ Ce qui reste :
     (édition arabe) ; arrêtés du 8 juin 1999, du 7 septembre 2018 et du 27 mars 2023 ;
   - grandeurs d'activité des fiches (visites techniques, examens du permis, immatriculations)
     et ratio de couverture des charges (LF 2024 p. 165) non relevés.
+- **Office de l'aviation civile et des aéroports (OACA) — section écrite le 29 octobre 2026**
+  (`_transports.qmd`, `#sec-ep-ge-oaca`, en fin de chapitre, avant le commentaire de la SNCFT).
+  Figure `fig-ep-oaca-fiches` (pas de figure budget : transferts nuls de 2018 à 2022), tableaux
+  repliés `tbl-ep-oaca-fiche-a` et `-b`, registre `tbl-ep-registre-oaca`. **Fiche du ministère des
+  Finances versée le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-oaca`, code `oaca`) : LF 2022 p. 54 (tableau 25), LF 2024
+  p. 82, LF 2025 p. 59, lues à l'image (300 dpi) et retrouvées dans la couche texte. Écarts imprimés
+  déclarés : dette totale de l'édition LF 2022 supérieure à la somme des créanciers (17,2 ; 18,7 ;
+  29,2 MD) ; résultat d'exploitation 2020 à 0,9 près. Édition LF 2024 : subvention d'exploitation
+  en case blanche, deux signes « − » absents (résultat après modifications 2020, reportés 2022).
+  Registre : lois n° 70-30, 74-19, 77-11, 93-59 et 93-60 (image), décret n° 93-1154 (image, art. 1er
+  à 8 et 18 à 28), décret n° 98-1374, loi n° 98-110 (dépôt lu sur l'édition arabe), décrets
+  d'exonération des vols intérieurs n° 2001-1400, 2004-572, 2009-371, 2014-2235 et 2020-778, loi
+  n° 2004-41, décrets n° 2007-1216 et 2007-1316 (concession TAV), loi n° 2009-51. Glossaire :
+  `oaca`. Transferts (LF 2022 p. 106, LF 2024 p. 155), dividendes (LF 2025 p. 125-126), dettes
+  envers l'État (LF 2025 p. 118) : lus sur les pages.
+  **Reste** :
+  - **dans le corpus local, non lus** : loi n° 74-34 (rectificatif, image) ; loi n° 66-79 (Régie
+    des ports aériens) ; décrets n° 70-590, 72-264, 74-599, 99-1941, 2000-2926 ; décret n° 93-1154,
+    art. 9 à 17, et modificatifs n° 95-1326, 2008-101, 2021-81 ; exonérations propres à des
+    aéroports (décrets n° 97-230, 2000-947, 2002-3264, 2005-3239, 2008-3903, 2017-342, 2024-5) ;
+    décret n° 2004-1342 et avenants d'Enfidha (n° 2013-1328, 2020-556, 2020-557) ; décret
+    n° 2007-1686 ; code de l'aéronautique civile (loi n° 99-58) ;
+  - exonération des vols intérieurs après 2023, compensation éventuelle par l'État, régime fiscal
+    de l'Office (requête arabe à faire) : non établis ;
+  - grandeurs d'activité (passagers, mouvements d'avions, fret) non relevées ; éditions françaises
+    LF 2020 et LF 2021 : comptes dans la prose, non versés ; rapports annuels de l'Office : **à
+    obtenir** ;
+  - à trancher : `_annexe_liste.qmd` dit que les listes ne disent pas que l'OACA succède à l'Office
+    des ports aériens ; le décret n° 98-1374 le dit (changement de dénomination).
 - **Office national de l'huile — section écrite le 28 octobre 2026** (`_offices.qmd`,
   `#sec-ep-ge-onh`, après l'ONAS et avant la SNCFT, comme demandé ; l'intro du chapitre ne dit plus
   que les entreprises sont rangées dans l'ordre des transferts, l'ONH recevant plus que la SONEDE et
