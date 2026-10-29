@@ -3718,8 +3718,8 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Tunisie Télécom, Poste, Office du
-    commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
+  - les autres grandes entreprises (Poste, Office du commerce ; Tunisie Télécom versée le
+    29 octobre 2026, `#sec-ep-ge-tt`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
   - SNCFT : statuts de 1969 (loi n° 69-31, JORT n° 19 de 1969, p. 581-584, dans le corpus local,
@@ -3982,6 +3982,44 @@ Ce qui reste :
     prose, non versés ; grandeurs d'activité des fiches (huile végétale subventionnée en MD et en
     tonnes) non relevées ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Tunisie Télécom — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-tt`, en fin de chapitre, après le GCT). Figure `fig-ep-tt-fiches` (pas de figure du
+  budget : transferts nuls, LF 2022 p. 106 et LF 2024 p. 155), tableaux repliés
+  `tbl-ep-tt-fiche-a` et `-b`. **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-tt`) : LF 2022
+  p. 87 (tableau 30, mise en page verticale), LF 2024 p. 128 (tableau 35), LF 2025 p. 105 ; lues à
+  l'image (300 dpi), chaque ligne retrouvée entière dans la couche texte. Tous les exercices des
+  éditions LF 2024 et LF 2025 dits réalisés. Écarts imprimés déclarés : produits d'exploitation
+  supérieurs à recettes + autres produits (60,5 ; 50,7 ; 27,7 ; 30,1 MD, 2020-2023). Lus sur les
+  pages, sans série : contribution aux ressources propres de l'État (LF 2022 p. 102 ; LF 2024
+  p. 151), dettes et créances croisées de fin 2022 (LF 2024 p. 142 et 146) et de fin 2023 (LF 2025
+  p. 118-123), part de l'État dans les bénéfices 2021-2023 (64,6 MD, p. 126). Registre
+  `tbl-ep-registre-tt` : lois n° 95-36, 97-67, 98-86, loi de finances pour 1999 (art. 21, 22 et 68),
+  lois n° 2002-39, 2002-40, 2002-60, 2002-89, 2003-40, 2004-12, 2004-86, décret n° 2006-398, loi
+  n° 2014-48, décret gouvernemental n° 2020-422, décret présidentiel n° 2022-307 (fascicules
+  français ; couche texte à police décalée décodée pour certains fascicules de 2002 à 2004). La loi n° 2004-30 et le décret n° 2006-1555 restent
+  au registre de `_statut.qmd` (renvoi par `@tbl-ep-registre` et `@tbl-ep-22ter`, les liens
+  `#r-` ne traversant pas les fichiers). Acquéreur de 2006 nommé d'après le recueil de la
+  Direction générale de la privatisation. Glossaire : `tunisie-telecom`.
+  **Reste** :
+  - `_statut.qmd`, tableau `tbl-ep-22ter` : la ligne de 2006 (« Ce qui reste ») ne dit pas que le
+    décret gouvernemental n° 2020-422 remplace les articles 2, 4 et 5 du décret n° 2006-1555 et
+    ajoute un article 2 bis : **à mettre à jour** (décision humaine, chapitre d'un autre domicile) ;
+  - ouverture du capital de 2006 : texte d'autorisation **non identifié** ; part actuelle de
+    l'État et cotation éventuelle **non établies** ;
+  - redevance sur les télécommunications (15 % du chiffre d'affaires, loi n° 95-36, art. 10) :
+    sort après 1999 **non établi** (aucun modificatif trouvé par les intitulés ; le code des
+    télécommunications ne la mentionne pas) ;
+  - textes **dans le corpus local, non lus** : décrets n° 95-2031 et 2003-1510 (organisation),
+    99-2844 et 2010-2989 (statut du personnel), 2000-323 (organigramme), 2001-1248 (emplois
+    fonctionnels), 2015-85 (application de la loi n° 2014-48), décrets de ratification
+    n° 2002-2063, 2002-3040 et 2003-1554, code des télécommunications et ses modificatifs, loi de
+    finances pour 2002, art. 66 à 70 ; licences 3G et 4G (décrets n° 2016-438 et 2017-64,
+    **édition arabe**) ; annexe du décret n° 2022-307 (p. 901-945) ;
+  - séries à verser dans `tunisia-data` : contribution aux ressources propres, transferts nuls et
+    dettes et créances croisées (voir l'entrée CPG et GCT) ; grandeurs d'activité des fiches
+    (abonnés, lignes) non relevées ; édition française LF 2021 (p. 130) non versée ;
+  - comptes publiés et rapports annuels de la société : **à obtenir**.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la
