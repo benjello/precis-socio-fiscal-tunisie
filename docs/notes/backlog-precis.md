@@ -3903,11 +3903,7 @@ Ce qui reste :
   avec l'édition arabe p. 1432 ; décret n° 2003-2407 ; loi n° 2005-73, image ; loi n° 2020-40 ;
   décret-loi n° 2023-13, édition arabe). Glossaire : `tunisie-autoroutes`, `transtu`.
   **Reste** :
-  - **chapitre « Les transports » à proposer à l'humain** (note de chantier, § 9, décision 3 :
-    scission par secteur quand trois entreprises ont leur fiche) : la SNCFT, la Transtu et Tunisie
-    Autoroutes ont désormais leur fiche. Non créé. À trancher : Tunisie Autoroutes relève du
-    ministère de l'Équipement, non du ministère du Transport ; Tunisair, l'Office de l'aviation
-    civile et des aéroports, la CTN et l'OMMP sont au tableau du ministère du Transport ;
+  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports, la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ;
   - Tunisie Autoroutes : acte de constitution (13 mai 1992 d'après le rapport LF 2020, p. 121) non
     identifié au JORT ; décrets de concession des autres sections (n° 2000-645, 2002-537,
     2004-1073, 2004-1074, 2016-256, 2019-661 à 2019-663) et de péage des autres sections (n° 97-1003,
