@@ -4373,13 +4373,12 @@ Ce qui reste :
   **Glossaire corrigé** : « 14 février 2026 » → « 18 février 2026 » dans `sprols`, `snit`,
   `location-vente` et `vente-a-temperament` (FR et AR) : dépôt du JORT n° 19 de 2026 le 13 février,
   plus cinq jours (loi n° 93-64), les lois n° 2026-1 et 2026-2 ne portant pas de clause d'effet.
-  **À reprendre dans `prestations_sociales/_logement_social.qmd`** (non modifié ici) : registre de la
-  SPROLS daté par la publication brute (`r-log-sprols-decret-1977`, `-1992`, `-1993`, `-2017`) ou au
-  14 février 2026 (`r-log-op-2026-1`, `r-log-op-2026-2`) ; dates d'effet calculées dans
-  `tbl-ep-registre-sprols` (20 novembre 1977, 29 octobre 1992, 29 juillet 1993, 7 août 2017,
-  18 février 2026) ; ligne de 1993 et § des opérateurs (« réservé en 1993 à la CNRPS et à la CAVIS »)
-  à corriger par le rectificatif de novembre 1993 (CNSS, CNRPS et CAVIS) ; clé `decret2010-3170`
-  citée sans notice dans ce livre (notice versée dans `entreprises_publiques/references.json`).
+  Même correction dans `prestations_sociales/_logement_social.qmd` (§ des opérateurs, lignes
+  `r-log-op-2026-1` et `r-log-op-2026-2`). **À reprendre dans ce chapitre** : registre de la SPROLS
+  daté par la publication brute (`r-log-sprols-decret-1977`, `-1992`, `-1993`, `-2017`) ; dates
+  d'effet calculées dans `tbl-ep-registre-sprols` (20 novembre 1977, 29 octobre 1992, 29 juillet
+  1993, 7 août 2017) ; ligne de 1993 et § des opérateurs (« réservé en 1993 à la CNRPS et à la
+  CAVIS ») à corriger par le rectificatif de novembre 1993 (CNSS, CNRPS et CAVIS).
   **Reste** :
   - textes **dans le corpus local, non lus** : décret n° 2005-910 et ses modificatifs antérieurs à
     2010 (tutelle avant 2010) ; arrêté du 17 avril 2006 (conservation des documents) ; décret
