@@ -2566,8 +2566,8 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
 - [ ] **Séries** : les 79 relevés de `education-depense-series/` sont au catalogue de `tunisia-data` (onze séries
   `education-*`, 29 octobre 2026) et les figures de la dépense lisent `figtools.series()`. Reste : les réponses de
   l'API de la Banque mondiale (UIS) et le communiqué de l'INS téléchargés pour la note étaient dans
-  `/tmp/education-ocr-D/`, disparu — à retélécharger dans `data/raw/` de `tunisia-data` ; figures des boursiers et
-  des effectifs (F2, F3) à produire (effectifs : série `education-effectifs-annuaire`, déjà au snapshot).
+  `/tmp/education-ocr-D/`, disparu — à retélécharger dans `data/raw/` de `tunisia-data` ; figure des effectifs F2 (`fig-educ-eleves`, `figures/fig_educ_eleves.py`, 29 octobre 2026) faite ;
+  figure des boursiers (F3) à produire (table de la note U § 5.1, pas de CSV).
 - [ ] **Recherche exclue de la dépense** (décision du 17 octobre 2026) : fondue dans l'enseignement supérieur en
   gestion en 2002-2004 et depuis 2019 ; réserve de périmètre dite dans le texte, pas d'estimation ; la
   fiche de plan § 4 et la note `education-depense` § 2.4 comptent encore la recherche dans le périmètre et
