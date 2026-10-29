@@ -213,7 +213,15 @@ def _point(ax, x, y, couleur, *, ferme=True, texte=None, ms=5.0, marque="o"):
 
 
 def _axe_md(ax, unite: str = "MD") -> None:
-    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _n(v, 0)))
+    # Décimales selon l'étendue de l'axe : des transferts de quelques centièmes de MD (Ciments de
+    # Bizerte) ne s'écrivent pas « 0 » à chaque graduation.
+    def _fmt(v, _):
+        lo, hi = ax.get_ylim()
+        if hi - lo < 0.5:
+            return _n(v, 2)
+        # Graduation non entière (2,5 ; 7,5 ; 12,5) : une décimale, pas un arrondi trompeur.
+        return _n(v, 0 if abs(v - round(v)) < 1e-9 else 1)
+    ax.yaxis.set_major_formatter(FuncFormatter(_fmt))
     ax.set_ylabel(unite, fontsize=7.5)
     ax.tick_params(labelsize=7)
 
@@ -662,7 +670,8 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "office_huile": "Office national de l'huile",
               "poste": "Office national des postes",
               "tunisie_telecom": "Tunisie Télécom",
-              "office_commerce": "Office du commerce de la Tunisie"}
+              "office_commerce": "Office du commerce de la Tunisie",
+              "ciments_bizerte": "Ciments de Bizerte"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -838,9 +847,12 @@ def fig_budget(entite: str, couleur, hachure: str = "provisoire"):
     for r in _derniere_edition(t, ["annee"]).itertuples():
         ferme = r.statut == "réalisé"
         _barre(ax, r.annee, r.valeur_md, couleur, ferme=ferme,
-               texte=f"{nom}, {r.annee} — transferts du budget : {_n(r.valeur_md)} MD, édition "
+               texte=f"{nom}, {r.annee} — transferts du budget : "
+                     f"{_n(r.valeur_md, 3 if 0 < abs(r.valeur_md) < 0.1 else 1)} MD, édition "
                      f"{_ed(r.edition)}, {r.statut}")
-        ax.annotate(_n(r.valeur_md), xy=(r.annee, r.valeur_md), xytext=(0, 2),
+        # Montant de moins de 0,1 MD : écrit avec les décimales imprimées (0,068), pas arrondi.
+        dec = 3 if 0 < abs(r.valeur_md) < 0.1 else 1
+        ax.annotate(_n(r.valeur_md, dec), xy=(r.annee, r.valeur_md), xytext=(0, 2),
                     textcoords="offset points", ha="center", va="bottom", fontsize=6.5)
         ax.annotate(_ed(r.edition), xy=(r.annee, 0.02), xycoords=("data", "axes fraction"),
                     ha="center", va="bottom", fontsize=5.8, color="white" if ferme else GRIS)
@@ -994,6 +1006,11 @@ FIGURES = {
                    (S_FICHES,), "fig_ep_otc_fiches"),
     "otc_budget": (lambda: fig_budget("office_commerce", VERT), lambda: table_budget("office_commerce"),
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_otc_budget"),
+    "cimbiz_fiches": (lambda: fig_fiche("ciments_bizerte"), lambda: table_fiche("ciments_bizerte"),
+                      (S_FICHES,), "fig_ep_cimbiz_fiches"),
+    "cimbiz_budget": (lambda: fig_budget("ciments_bizerte", BLEU),
+                      lambda: table_budget("ciments_bizerte"),
+                      (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_cimbiz_budget"),
 }
 
 
