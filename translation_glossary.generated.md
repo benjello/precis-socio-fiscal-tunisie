@@ -605,6 +605,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Société des transports de Tunis | شركة النقل بتونس | Transtu |
 | Société nationale d'exploitation et de distribution des eaux | الشركة الوطنية لاستغلال وتوزيع المياه | SONEDE |
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
+| société régionale de transport | الشركة الجهوية للنقل |  |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
 | Solde (militaire) | أجور العسكريين |  |
