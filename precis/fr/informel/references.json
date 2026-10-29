@@ -746,6 +746,38 @@
       "note": "citation-key: charmes2021-gender-maghreb\nVersion d'avril 2021. Enquêtes de 1975 et 1981 p. 6 ; part des femmes dans les micro-entreprises p. 13 ; salaires moyens par sexe, tableau 3, p. 21.",
       "publisher": "Colloque « The informal economy and gender inequalities », Faculté des sciences économiques, commerciales et des sciences de gestion de Béjaïa",
       "publisher-place": "Béjaïa"
+    },
+    {
+      "id": "ins-2018-micro-entreprises-2016",
+      "type": "report",
+      "title": "Le secteur des micro-entreprises en Tunisie 2016",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/micro-entreprises%202016.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "language": "fr",
+      "number-of-pages": "175",
+      "note": "citation-key: ins-2018-micro-entreprises-2016\nTableaux 1 et 7. SHA-256 5017c97d… (copie dans tunisia-data, sources/ins-micro-entreprises.md)."
     }
   ]
 }
