@@ -18624,3 +18624,28 @@ entries:
         البريدي وتُسدي الخدمات المالية لصندوق الادخار القومي التونسي والحسابات الجارية
         البريدية.
       synonymes: [البريد التونسي]
+  - id: sotrapil
+    acronyme: SOTRAPIL
+    statut: valide
+    references: [minfin-ep, minfin-ep-2024, decret2022-492-sotrapil, dgpv-recueil-operations]
+    source_definition: {ref: minfin-ep-2024, locator: "p. 95 et 103-104"}
+    # Forme de société anonyme et structure du capital : rapport de la LF 2021, p. 14 (tableau
+    # des participations de l'État, « Sociétés anonymes »). AR : intitulé « شركة النقل بواسطة
+    # الأنابيب » du décret présidentiel n° 2022-492 et de la fiche de la société, édition LF 2024,
+    # p. 95.
+    source_traduction: {ref: decret2022-492-sotrapil, locator: "art. 1er"}
+    voir_aussi: [stir]
+    fr:
+      terme: Société de transport des hydrocarbures par pipelines
+      definition: >
+        Société anonyme à participation publique qui transporte des hydrocarbures par deux
+        oléoducs, de Bizerte à Radès et de Radès à l'aéroport de Tunis-Carthage, ce dernier
+        pour le carburant d'aviation. Une partie de son capital est vendue en Bourse en 2001.
+      synonymes: [Société de transport par pipelines]
+    ar:
+      terme: شركة النقل بواسطة الأنابيب
+      definition: >
+        شركة خفية الاسم ذات مساهمات عمومية تنقل المحروقات عبر أنبوبين، من بنزرت إلى رادس ومن
+        رادس إلى مطار تونس قرطاج، والثاني لوقود الطائرات. بيع جزء من رأس مالها في البورصة سنة
+        2001.
+      synonymes: []

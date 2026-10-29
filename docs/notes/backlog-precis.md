@@ -4107,6 +4107,43 @@ Ce qui reste :
     dettes et créances croisées (voir l'entrée CPG et GCT) ; grandeurs d'activité des fiches
     (abonnés, lignes) non relevées ; édition française LF 2021 (p. 130) non versée ;
   - comptes publiés et rapports annuels de la société : **à obtenir**.
+- **SOTRAPIL — section écrite le 29 octobre 2026** (`_energie.qmd`, `#sec-ep-ge-sotrapil`, en fin
+  de chapitre, après la STIR). Figure `fig-ep-sotrapil-fiches` (pas de figure du budget : la
+  société n'est dans aucun tableau des transferts des éditions lues), tableaux repliés
+  `tbl-ep-sotrapil-fiche-a` et `-b`. **Fiche du ministère des Finances versée le 29 octobre 2026**
+  dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-sotrapil`) : LF 2022 p. 64 (fichier 63), LF 2024 p. 95 (fichier 96), LF 2025
+  p. 69 ; lues à l'image (300 dpi), chaque ligne retrouvée entière dans la couche texte ; toutes
+  les identités tiennent, aucun écart déclaré ; tous les exercices des éditions LF 2024 et
+  LF 2025 dits réalisés. Lus sur les pages, sans série : prose des éditions LF 2024 (p. 103-104 :
+  covid-19 et carburant d'aviation en 2020, gasoil en 2022) et LF 2025 (p. 77) ; structure du
+  capital, édition LF 2021 p. 14 (État 0 %, autres publics 52,951 %, autres 47,050 %) ;
+  classements des résultats (série `entreprises-publiques-resultats-nets-dix-premieres`). Offre publique de
+  vente de 2001 (30,39 %, 9 876 mD) d'après le recueil de la Direction générale de la
+  privatisation. Registre `tbl-ep-registre-sotrapil` : décrets n° 2000-2371 (intitulé seul en
+  français), 2001-240, 2001-1568 (lus à l'image), 2013-1393, décrets gouvernementaux
+  n° 2016-1183 et 2019-38 (réquisitions), décret présidentiel n° 2022-492 (édition arabe) ;
+  dates de dépôt lues en dernière page des éditions arabes. Arrêté du 18 août 2022 (calendrier
+  des conseils, 2023) renvoyé à `tbl-ep-registre-gouvernance`. Glossaire : `sotrapil`.
+  Figure : graduations fractionnaires de l'axe des montants désormais écrites avec leur
+  décimale (`_axe_md`, sans effet sur les graduations entières des autres figures).
+  **Reste** :
+  - textes de création, de transformation (dénominations successives : « Société de stockage
+    d'hydrocarbure et de transport par pipe-line » en 1998, « Société de transport d'hydrocarbures
+    par pipe-line » en 2016 et 2020, « Société tunisienne de transport par pipes lines » dans
+    l'édition LF 2021), d'introduction en Bourse et de concession des deux oléoducs : **non
+    identifiés** dans `jort_cache.db` ni dans le plein texte du corpus ; fascicules français de
+    1997 à 2001 à couche texte chiffrée (décalage de 29), à décoder ou océriser ;
+  - texte arabe du statut du personnel (décret n° 2000-2371, JORT n° 86 de 2000, édition
+    arabe) : **dans le corpus local**, non lu ; schémas et annexes des organigrammes de 2001 et
+    de 2022, non lus ;
+  - régime général : loi n° 82-60 (canalisations d'intérêt public, modifiée par la loi
+    n° 95-50) et code des hydrocarbures (art. 75 à 83) : **dans le corpus local**, non lus ;
+  - visas des décrets de 2001 et 2022 : loi n° 85-78 (sociétés à capital entièrement public),
+    à rapprocher de la structure du capital de l'édition LF 2021 ;
+  - grandeurs d'activité (quantités transportées par les deux oléoducs, trois éditions, unités
+    à concilier) : non versées ;
+  - comptes publiés de la société et communications à la Bourse : **à obtenir**.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la

@@ -213,7 +213,9 @@ def _point(ax, x, y, couleur, *, ferme=True, texte=None, ms=5.0, marque="o"):
 
 
 def _axe_md(ax, unite: str = "MD") -> None:
-    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: _n(v, 0)))
+    # Graduations fractionnaires (petits montants : 0,5 ; 1,5…) écrites avec leur décimale.
+    ax.yaxis.set_major_formatter(FuncFormatter(
+        lambda v, _: _n(v, 0 if float(v).is_integer() else 1)))
     ax.set_ylabel(unite, fontsize=7.5)
     ax.tick_params(labelsize=7)
 
@@ -662,7 +664,8 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "office_huile": "Office national de l'huile",
               "poste": "Office national des postes",
               "tunisie_telecom": "Tunisie Télécom",
-              "office_commerce": "Office du commerce de la Tunisie"}
+              "office_commerce": "Office du commerce de la Tunisie",
+              "sotrapil": "SOTRAPIL"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -994,6 +997,8 @@ FIGURES = {
                    (S_FICHES,), "fig_ep_otc_fiches"),
     "otc_budget": (lambda: fig_budget("office_commerce", VERT), lambda: table_budget("office_commerce"),
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_otc_budget"),
+    "sotrapil_fiches": (lambda: fig_fiche("sotrapil"), lambda: table_fiche("sotrapil"),
+                        (S_FICHES,), "fig_ep_sotrapil_fiches"),
 }
 
 
