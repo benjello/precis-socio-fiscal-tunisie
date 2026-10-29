@@ -3763,6 +3763,33 @@ Ce qui reste :
     de la note de chantier (§ 9, point 3 ; § 12), à confirmer à la revue : Office des céréales, ONH, RNTA et Office
     du commerce d'un côté ; SONEDE, ONAS, Tunisie Télécom et La Poste de l'autre, déplacées sans changement de texte,
     ancres conservées. « Les autres entreprises » garde la CPG et le GCT (`#sec-ep-autres-entreprises`).
+- **CTF — section écrite le 29 octobre 2026** (`_energie.qmd`, en fin de chapitre ;
+  `#sec-ep-ge-ctf`, figure `fig-ep-ctf-fiches` engendrée par `grandes_entreprises.figure
+  ("ctf_fiches")`, tableaux repliés `tbl-ep-ctf-fiche-a` et `-b`, registre `tbl-ep-registre-ctf`).
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-ctf`) :
+  LF 2022 p. 62, LF 2024 p. 94, LF 2025 p. 68, lues à l'image à 300 dpi et recoupées avec la
+  couche texte ; toutes les identités bouclent ; seule divergence entre éditions, le signe des
+  charges financières nettes (LF 2024 négatif, LF 2022 et LF 2025 positif). Lus sur les pages de
+  l'édition LF 2021, non versés dans une série : structure du capital (p. 15 : 10,5 MD, État 0 %,
+  autres actionnaires publics 98,0 %), besoins de fonds propres de 2018 (p. 152-153, tableau 32),
+  rang du résultat de 2018 (p. 28). Pas de figure budget : la CTF n'est pas dans la série des
+  transferts par entreprise. Registre lu au corpus local (couche texte) : décrets n° 98-1172
+  (tutelle), 89-876 (marchés, lu à l'image), 2005-3396 et 2017-653 (organigrammes), 2006-1002, 2009-3048 et 2018-790 (emplois
+  fonctionnels), 2007-1330 (marchés), 2020-183 (tutelle du ministère de l'Énergie), 2020-1061
+  (article 22 ter, articles 18 à 22 et 11 bis), arrêté du 18 août 2022 (calendrier des conseils).
+  **Reste** :
+  - texte de création de la société et garanties de l'État : non identifiés dans `jort_cache.db` ;
+    plein texte du corpus 1994-2026, éditions française et arabe, parcouru le 29 octobre 2026
+    (seuls les textes du registre, des nominations et des listes générales nomment la société) ; fascicules d'avant 1994 **sans couche texte, à l'image** ;
+  - actionnaires publics de la CTF (l'édition LF 2021 ne les nomme pas) et contradiction entre les
+    visas de la loi n° 85-78 (capital entièrement public) et les 2,0 % d'autres actionnaires ;
+  - statut particulier du personnel (décret n° 99-2643, JORT n° 96 de 1999, p. 2533) : **publié
+    en arabe seulement, édition arabe du corpus à lire** ; décrets n° 92-713 et 98-28, qui modifient
+    le décret n° 89-876 : **dans le corpus local, à l'image**, non lus ;
+  - transferts du budget à la CTF : annexe 8 et tableaux de transferts du rapport, à vérifier ;
+  - jours de forage (grandeurs d'activité des fiches) : non relevés ; comptes publiés par la
+    société : **à obtenir**.
 - **STIR — section écrite le 28 octobre 2026** (`_energie.qmd` depuis l'ouverture du
   chapitre « L'énergie », même jour ; `#sec-ep-ge-stir`, figure `fig-ep-stir-budget` engendrée par `grandes_entreprises.figure
   ("stir_budget")` depuis trois séries du rapport sur les entreprises publiques : transferts

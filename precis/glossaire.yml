@@ -18603,6 +18603,28 @@ entries:
         ضبط قرار صادر سنة 1989 قائمتها.
       synonymes: []
       synonymes: []
+  - id: ctf
+    acronyme: CTF
+    statut: valide
+    references: [minfin-ep, minfin-ep-2022, decret2020-183]
+    source_definition: {ref: minfin-ep, locator: "p. 10 et 15"}
+    # AR : intitulé « الشركة التونسية للتنقيب » de la fiche de la société dans le rapport sur
+    # les entreprises publiques, éditions LF 2022 (p. 62), LF 2024 (p. 94) et LF 2025 (p. 68).
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 68"}
+    voir_aussi: [etap]
+    fr:
+      terme: Compagnie tunisienne de forage
+      definition: >
+        Société anonyme du secteur de l'énergie, qui fore et entretient des puits. Son
+        capital est détenu presque entièrement par des actionnaires publics autres que
+        l'État, et elle est placée sous la tutelle du ministère chargé de l'énergie.
+      synonymes: []
+    ar:
+      terme: الشركة التونسية للتنقيب
+      definition: >
+        شركة خفية الاسم من قطاع الطاقة، تتولّى حفر الآبار وصيانتها. يملك رأس مالها،
+        في جلّه، مساهمون عموميون غير الدولة، وهي تحت إشراف الوزارة المكلّفة بالطاقة.
+      synonymes: []
   - id: onp
     statut: valide
     references: [decret98-1305-poste, loi98-38-poste, minfin-ep-2024]
