@@ -753,6 +753,8 @@ les notes de la première version (`education-histoire`, `education-aides-univer
    1992, p. 464) ; décret n° 80-1001 (organisation de l'ONOU, JORT n° 47 de 1980) ; page 1449 du règlement
    de 1974 ; arrêté du 20 août 1982 (fascicules français de 1982 à partir du n° 59 ; fiche
    `r-bourse-montants-1982`). Statut juridique exact des offices (Q7).
+   **Lu le 29 octobre 2026** (note `education-aides-universitaires`, § 2.9), sauf l'arrêté du 20 août 1982, absent
+   de l'édition française de 1982 (édition arabe à lire).
 2. **Histoire.** Fascicules d'avant 1990 cités en « lisible » (1960, 1961, 1962, 1969, 1976, 1986) :
    probablement des scans ; texte annoncé par l'art. 2 de la loi de 1958 (obligation de six à douze ans) ;
    texte qui a institué le LMD et organisé la rentrée de 2006-2007 ; décrets n° 2012-1227 (mastère) et

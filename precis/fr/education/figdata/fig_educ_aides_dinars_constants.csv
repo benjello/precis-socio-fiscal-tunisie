@@ -1,4 +1,4 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-17
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-29
 # séries (tunisia_data) : educ-aides-montants-du-droit, ipc-longue-periode, bct-ipc-base2015, marche-travail-smig-smag
 # sources (citation) : @bct-ra, @ins-annuaire
 # fiches : sources/bct-archives.md
@@ -39,6 +39,7 @@ office,total,2019,2019,77.573,MD,1403.5,1855.7,102.567,"loi2018-56-lf2019, annex
 office,subvention de l'État,2020,2020,69.981,MD,1482.6,1855.7,87.592,"lf-2020, annexe, p. 4783 (édition arabe)"
 office,ressources propres,2020,2020,5.6,MD,1482.6,1855.7,7.009,"lf-2020, annexe, p. 4783 (édition arabe)"
 office,total,2020,2020,75.581,MD,1482.6,1855.7,94.601,"lf-2020, annexe, p. 4783 (édition arabe)"
+bourse,"premier niveau (taux général, inchangé)",1er octobre 1977,1977,30.0,D/mois,144.9,1855.7,384.203,"arrete-1971-11-15-bourses-montants, art. unique ; arrete-1978-01-05-bourses-montants, visas et art. 1"
 bourse,premier niveau,1er janvier 1988,1988,40.0,D/mois,354.8,1855.7,209.211,"arrete-1988-03-31-bourses-montants, art. 1 et 2, p. 548-549"
 bourse,troisième cycle,1er janvier 1988,1988,70.0,D/mois,354.8,1855.7,366.119,"arrete-1988-03-31-bourses-montants, art. 1, p. 548-549"
 bourse,premier niveau,année universitaire 1991-1992,1991,40.0,D/mois,439.0,1855.7,169.084,"arrete-1992-03-07-bourses-montants, art. 1, p. 360"
@@ -80,6 +81,8 @@ plafond,"SMIG annuel, régime de 48 heures",1er septembre 2009,2009,3127.488,D/a
 plafond,"SMIG annuel, régime de 40 heures",1er septembre 2009,2009,2701.92,D/an,837.0,1855.7,5990.386,"arrete-2009-10-26-bourses-prets, art. 4, p. 3304-3308 ; SMIG : marche-travail-smig-smag"
 plafond,"SMIG annuel, régime de 48 heures",année universitaire 2011-2012,2011,3432.0,D/an,904.8,1855.7,7038.862,"arrete-2012-10-09-bourses-conditions, art. 4 nouveau, p. 2563-2566 ; SMIG : marche-travail-smig-smag"
 plafond,"SMIG annuel, régime de 40 heures",année universitaire 2011-2012,2011,2955.672,D/an,904.8,1855.7,6061.937,"arrete-2012-10-09-bourses-conditions, art. 4 nouveau, p. 2563-2566 ; SMIG : marche-travail-smig-smag"
+pret,premier niveau,année universitaire 1988-1989,1988,400.0,D/an,354.8,1855.7,2092.108,"arrete-1990-02-28-prets-montants, art. 1 et 3, p. 360"
+pret,troisième cycle,année universitaire 1988-1989,1988,700.0,D/an,354.8,1855.7,3661.189,"arrete-1990-02-28-prets-montants, art. 1 et 3, p. 360"
 pret,premier niveau,année universitaire 1989-1990,1989,400.0,D/an,382.2,1855.7,1942.125,"arrete-1990-04-17-prets-montants, art. 1, p. 542-543"
 pret,troisième cycle,année universitaire 1989-1990,1989,700.0,D/an,382.2,1855.7,3398.718,"arrete-1990-04-17-prets-montants, art. 1, p. 542-543"
 pret,premier niveau,année universitaire 1991-1992,1991,400.0,D/an,439.0,1855.7,1690.843,"arrete-1992-03-17-prets-montants, p. 399"
@@ -95,6 +98,12 @@ pret,premier niveau,1er octobre 2011,2011,600.0,D/an,904.8,1855.7,1230.57,"arret
 pret,second niveau,1er octobre 2011,2011,800.0,D/an,904.8,1855.7,1640.76,"arrete-2012-10-09-prets-montants, art. 2, p. 2567"
 pret,"mastère, 1re année",1er octobre 2011,2011,1000.0,D/an,904.8,1855.7,2050.95,"arrete-2012-10-09-prets-montants, art. 2, p. 2567"
 pret,"mastère, 2e année",1er octobre 2011,2011,1400.0,D/an,904.8,1855.7,2871.331,"arrete-2012-10-09-prets-montants, art. 2, p. 2567"
+etranger,"bourse, Angleterre, Allemagne, Belgique, Canada, Italie, Suisse, États-Unis",1er octobre 1977,1977,72.5,D/mois,144.9,1855.7,928.49,"arrete-1978-01-05-bourses-montants, art. 1 et 3, p. 106-107"
+etranger,"bourse, France",1er octobre 1977,1977,70.0,D/mois,144.9,1855.7,896.473,"arrete-1978-01-05-bourses-montants, art. 1 et 3, p. 106-107"
+etranger,"bourse, pays arabes du Moyen-Orient, Europe de l'Est et autres pays",1er octobre 1977,1977,60.0,D/mois,144.9,1855.7,768.406,"arrete-1978-01-05-bourses-montants, art. 1 et 3, p. 106-107"
+etranger,"prêt, Europe de l'Ouest",année universitaire 1988-1989,1988,1200.0,D/an,354.8,1855.7,6276.325,"arrete-1990-02-28-prets-montants, art. 1 et 3, p. 360"
+etranger,"prêt, États-Unis, Canada",année universitaire 1988-1989,1988,2200.0,D/an,354.8,1855.7,11506.595,"arrete-1990-02-28-prets-montants, art. 1 et 3, p. 360"
+etranger,"prêt, Europe de l'Est, Maghreb, Machrek, pays africains",année universitaire 1988-1989,1988,600.0,D/an,354.8,1855.7,3138.162,"arrete-1990-02-28-prets-montants, art. 1 et 3, p. 360"
 etranger,"prêt, Europe de l'Ouest",année universitaire 1989-1990,1989,1500.0,D/an,382.2,1855.7,7282.967,"arrete-1990-04-17-prets-montants, art. 1, p. 542-543"
 etranger,"prêt, États-Unis, Canada",année universitaire 1989-1990,1989,3000.0,D/an,382.2,1855.7,14565.934,"arrete-1990-04-17-prets-montants, art. 1, p. 542-543"
 etranger,"prêt, Maghreb et Machrek",année universitaire 1989-1990,1989,600.0,D/an,382.2,1855.7,2913.187,"arrete-1990-04-17-prets-montants, art. 1, p. 542-543"

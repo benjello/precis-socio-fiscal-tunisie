@@ -145,7 +145,7 @@ repliés (`.chronologie-repliable`, compte du 25 octobre 2026). Reste à faire :
 | Compensation | Volume IX, huit chapitres réécrits le 6 octobre 2026 (institution, réformes, dépense, carburants, électricité et gaz, transport, rapports extérieurs, incidence) ; montant versé de la dotation de la Caisse inconnu pour dix années, dont cinq (2003, 2006, 2008, 2009, 2011) ont une ligne budgétaire d'ordre de grandeur (subvention prévue 1987-1994 et ligne 2003-2011 versées le 24 octobre 2026) ; tarifs MT/HT et gaz 1994-2003 versés le 24 octobre 2026, grille d'octobre 1993 non publiée | Lois de règlement 1988 et 1989 (scans à lire à l'image), budget économique, lois de finances complémentaires et tableaux des fonds spéciaux 1995-2010 (dotation) ; décrets de suspension du prélèvement à l'importation (n° 97-2509 à 2007-1199) ; produit annuel des prélèvements ; décret n° 93-1187 et modifications de 2002, 2009 et 2015 du décret n° 91-1391 lus le 24 octobre 2026 |
 | Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, avec une section « effectifs et masse salariale », français seul ; inscrit à l'accueil le 20 octobre 2026 (partie V) ; séries budgétaires 2016-2024 et 1987-2009 ; quatre flux de clôture du budget pour 2010-2016 (24 octobre 2026) ; ni transferts par entreprise avant 2016, ni encours de la dette garantie, ni série avant 1987 ; forme (volume ou chapitre) à trancher par la revue (note dans la section du volume) | Lois de finances de 2016 à 2024 (articles sur la garantie) ; transferts par entreprise 2010-2015 ; totaux des budgets de 1959-60 à 1985 (voir la section du volume) |
 | Santé | Volume X, première rédaction le 12 octobre 2026, français seul : histoire, couverture, hôpital, médecine de ville ; tarifs des malades payants et tarifs réduits de 1998 (23 octobre) ; numérotation des sections corrigée (#511) ; dépenses du département 2018-2023 et comptes de la CNAM 2016-2021 intégrés, comptes 2011-2015 lus à l'image le 15 octobre ; les prestations en espèces restent dans « Prestations sociales » | Statistiques de prestations de la CNAM, lisibles en couche texte dans le corpus ; ventilation de la dépense par prestation à obtenir hors JORT |
-| Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense (dépense des communes ajoutée le 23 octobre, séries 2022-2023) ; lectures des 18 et 19 octobre fusionnées ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001, arrêté de 1982 : fascicules au corpus, à lire à l'image (§ 9 du plan) |
+| Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense (dépense des communes ajoutée le 23 octobre, séries 2022-2023) ; lectures des 18 et 19 octobre fusionnées ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001 : lus le 29 octobre 2026 ; arrêté du 20 août 1982 non retrouvé en français (édition arabe à lire) ; § 9 du plan, points 2 et 3, à lire à l'image |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -2534,9 +2534,27 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   article sont encore à verser au catalogue de `tunisia-data`. Série 2018-2021 impossible : fichiers sans identifiant d'article. Le TODO du livre des finances locales sur l'annexe du décret n° 2020-52
   (`_budgets.qmd`, section de la nomenclature) est en partie levé : le modèle est lu, le contenu des articles 6101
   et 8002 reste à lire ; `decret-gouv2020-439` est dans les références de ce livre (contrôle du 25 octobre 2026).
-- [ ] **Textes à lire à l'image** : liste au § 9 du plan (arrêtés de montants de bourses 1958-1978, textes de 1990 et
-  1992, décret n° 80-1001, arrêté de 1982, fascicules d'avant 1990, décrets de répartition des crédits,
-  budgets citoyens 2014-2018). Ticket proposé au § 9, à ouvrir par l'humain.
+- [ ] **Textes à lire à l'image** : § 9 du plan, points 2 et 3 (fascicules d'avant 1990 de l'histoire, décrets de
+  répartition des crédits, budgets citoyens 2014-2018). Ticket proposé au § 9, à ouvrir par l'humain.
+- [ ] **§ 9, point 1 (aides universitaires), lu à l'image le 29 octobre 2026** (branche `educ/textes-aides`, note
+  `education-aides-universitaires` § 2.9) : arrêtés de montants de 1958, 1959, 1962, 1963 (deux), 1964, 1965, 1969,
+  15 novembre 1971, 1974 et 1978 ; décret n° 63-2 ; décret n° 72-51 ; arrêtés du 28 février 1990 et du 7 avril 1992 ;
+  décret n° 80-1001 ; p. 1449 du règlement de 1974 ; avis du Conseil constitutionnel n° D-L 02-2006 (statut des
+  offices, ancienne Q7). Versés au chapitre 5 (tableaux du montant, des niveaux, du prêt, de l'étranger et du
+  renouvellement ; registres de la bourse et des œuvres). Corrections faites au rendu : engagement de servir dix
+  ans et concours sur titres dès 1963 (et non 1971) ; premier prêt chiffré en 1988-1989 (et non 1989-1990). À la
+  revue : la baisse de 30 D (premier cycle, 1969) à 25 D (taux général, octobre 1971), corrigée le 18 novembre 1971.
+  Restent :
+  - arrêté du 20 août 1982 : non retrouvé dans l'édition française de 1982 (sommaires n° 59 à 83 lus à l'image ;
+    n° 84 par l'index) ; reste l'édition arabe de 1982 (corpus) et 1983-1987 ; montant en Tunisie non établi entre
+    1977 et 1988 ;
+  - décret n° 58-189 (JORT n° 58 de 1958, p. 760), décrets n° 59-212, 61-421 et 62-312 (attribution de la bourse) :
+    au corpus, scans, à lire ;
+  - décret n° 85-173 (modifie le décret n° 80-1001 ; JORT n° 10 de 1985) : au corpus, scan, à lire ;
+  - décisions de majoration de 1958-1959 et arrêtés du 5 février 1962 (études à l'étranger), visés en 1963 : absents
+    de l'index, à chercher ;
+  - arrêtés de bourses des écoles du ministère de l'Agriculture (1972, 1973, 1975, 1980) : au corpus ; celui de 1972
+    est lu (35 D et 30 D).
 - [ ] **Classement des réformes** (rupture, étape) : classement provisoire, avec l'autre lecture écrite
   (2002, 2017, 2008 en formation initiale). LMD = rupture ; 1989 = étape (décision du 17 octobre 2026) ; à
   confirmer à la revue.
