@@ -110,6 +110,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Chiffre d'affaires imposable | رقم المعاملات الخاضع |  |
 | Chiffre indiciaire | الرقم القياسي |  |
 | Ciblage | الاستهداف |  |
+| Ciments d'Oum El Kélil | شركة اسمنت أم الكليل |  |
 | Classe de revenus | شريحة الدخل |  |
 | Classification nationale des qualifications | السلم الوطني للمهارات |  |
 | Code d'incitations aux investissements | مجلة تشجيع الاستثمارات |  |

@@ -662,7 +662,8 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "office_huile": "Office national de l'huile",
               "poste": "Office national des postes",
               "tunisie_telecom": "Tunisie Télécom",
-              "office_commerce": "Office du commerce de la Tunisie"}
+              "office_commerce": "Office du commerce de la Tunisie",
+              "ciments_oum_el_kelil": "Ciments d'Oum El Kélil"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -994,6 +995,9 @@ FIGURES = {
                    (S_FICHES,), "fig_ep_otc_fiches"),
     "otc_budget": (lambda: fig_budget("office_commerce", VERT), lambda: table_budget("office_commerce"),
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_otc_budget"),
+    "cimoek_fiches": (lambda: fig_fiche("ciments_oum_el_kelil"),
+                      lambda: table_fiche("ciments_oum_el_kelil"), (S_FICHES,),
+                      "fig_ep_cimoek_fiches"),
 }
 
 
