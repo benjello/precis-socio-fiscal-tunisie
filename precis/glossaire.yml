@@ -18624,3 +18624,27 @@ entries:
         البريدي وتُسدي الخدمات المالية لصندوق الادخار القومي التونسي والحسابات الجارية
         البريدية.
       synonymes: [البريد التونسي]
+  - id: ctn
+    acronyme: CTN
+    statut: valide
+    references: [loi59-34-ctn, loi96-72-ctn, minfin-ep-2020, minfin-ep-2025]
+    source_definition: {ref: minfin-ep-2020, locator: "p. 64"}
+    # AR : intitulé « الشركة التونسية للملاحة » de la fiche de la société dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 57.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 57"}
+    voir_aussi: []
+    fr:
+      terme: Compagnie tunisienne de navigation
+      definition: >
+        Société anonyme créée en 1959, dont l'État détient la majorité du capital. Elle assure
+        des liaisons maritimes régulières de passagers et de véhicules entre la Tunisie et des
+        ports européens, et transporte des marchandises. L'État a souscrit à ses augmentations
+        de capital et garantit des emprunts qu'elle contracte pour acheter des navires.
+      synonymes: [CTN]
+    ar:
+      terme: الشركة التونسية للملاحة
+      definition: >
+        شركة خفية الاسم أُحدثت سنة 1959 وتملك الدولة أغلبية رأس مالها. تؤمّن خطوطا بحرية منتظمة
+        لنقل المسافرين والعربات بين تونس وموانئ أوروبية، وتنقل البضائع. واكتتبت الدولة في
+        الترفيع في رأس مالها وتضمن قروضا تبرمها لاقتناء سفن.
+      synonymes: []
