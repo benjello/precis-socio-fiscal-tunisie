@@ -1,5 +1,5 @@
-series: []
+series: [education-uis-depense, education-depense-ministeres]
 sources: [wb-wdi, ins-annuaire-statistique]
-fiches: [docs/notes/education-depense-2026-10-17.md]
-caveats: [SÉRIES HORS CATALOGUE : valeurs relevées dans les sources citées, non encore versées au catalogue de données ; chaque ligne garde sa source et sa page. UNESCO-UIS par les World Development Indicators de la Banque mondiale (API consultée le 17 octobre 2026, mise à jour du 8 octobre 2026) : dépense des administrations publiques (centrales, régionales, locales), courante, en capital et en transferts, y compris les transferts reçus de l'étranger ; base du PIB non précisée par la source. zéros de SE.XPD.TOTL.GB.ZS pour 1981-1986, 1990 et 1991 (absence de donnée) exclus. valeurs UIS arrondies au centième. la part budgétaire superposée est celle de l'Éducation et Enseignement supérieur, recherche hors total (comprise dans la gestion du supérieur depuis 2019, non isolable), PIB en base 2015 (2010-2014 rétropolés par l'INS) ; périmètres différents, familles distinctes]
-generated: 2026-10-17
+fiches: [docs/notes/education-depense-2026-10-17.md, sources/education-depense-series.md]
+caveats: [UNESCO-UIS par les World Development Indicators de la Banque mondiale (API consultée le 17 octobre 2026, mise à jour du 8 octobre 2026) : dépense des administrations publiques (centrales, régionales, locales), courante, en capital et en transferts, y compris les transferts reçus de l'étranger ; base du PIB non précisée par la source. zéros de SE.XPD.TOTL.GB.ZS pour 1981-1986, 1990 et 1991 (absence de donnée) exclus. valeurs UIS arrondies au centième. la part budgétaire superposée est celle de l'Éducation et Enseignement supérieur, recherche hors total (comprise dans la gestion du supérieur depuis 2019, non isolable), PIB en base 2015 (2010-2014 rétropolés par l'INS) ; périmètres différents, familles distinctes]
+generated: 2026-10-29
