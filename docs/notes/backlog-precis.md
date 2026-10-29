@@ -2545,10 +2545,11 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   non-GBO (clé **conservée**, décision de l'inbox du 17 octobre 2026 : citée dans le chapitre et dans une figure, et déjà dans
   Zotero) ; `loi-2009-32-restauration-formation` est au fonds commun en français et, depuis le 25 octobre 2026, en arabe
   (déplacée depuis `precis/ar/fiscalite/references.json`) ; double clé de la loi de finances pour 2019.
-- [ ] **Séries** : verser les 57 séries de `education-depense-series/` au catalogue de `tunisia-data`, puis repasser
-  les figures de la dépense à `figtools.series()` ; copier les données de la Banque mondiale (UIS) et le
-  communiqué de l'INS de `/tmp/education-ocr-D/` vers `tunisia-data` ; figures des boursiers et des
-  effectifs (F2, F3) à produire quand les séries existent.
+- [ ] **Séries** : les 79 relevés de `education-depense-series/` sont au catalogue de `tunisia-data` (onze séries
+  `education-*`, 29 octobre 2026) et les figures de la dépense lisent `figtools.series()`. Reste : les réponses de
+  l'API de la Banque mondiale (UIS) et le communiqué de l'INS téléchargés pour la note étaient dans
+  `/tmp/education-ocr-D/`, disparu — à retélécharger dans `data/raw/` de `tunisia-data` ; figures des boursiers et
+  des effectifs (F2, F3) à produire (effectifs : série `education-effectifs-annuaire`, déjà au snapshot).
 - [ ] **Recherche exclue de la dépense** (décision du 17 octobre 2026) : fondue dans l'enseignement supérieur en
   gestion en 2002-2004 et depuis 2019 ; réserve de périmètre dite dans le texte, pas d'estimation ; la
   fiche de plan § 4 et la note `education-depense` § 2.4 comptent encore la recherche dans le périmètre et
