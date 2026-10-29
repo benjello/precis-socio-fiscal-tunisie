@@ -5741,8 +5741,9 @@
     de finances (STEG, ETAP, SNCFT, STIR, Office des céréales, SONEDE, ONAS, CPG,
     GCT, Transtu, Tunisie Autoroutes, Tunisair, RNTA, Office national de l''huile,
     Tunisie Télécom, Office national des postes, Office du commerce de la Tunisie,
-    Agence technique des transports terrestres), bilan, résultat, dette, subvention
-    d''exploitation et emploi, exercices 2018-2023, par édition'
+    Agence technique des transports terrestres, OACA, OMMP, CTN, sociétés régionales
+    de transport de Sfax et de Bizerte), bilan, résultat, dette, subvention d''exploitation
+    et emploi, exercices 2018-2023, par édition'
   sources:
   - minfin-ep-2022
   - minfin-ep-2024
@@ -5766,7 +5767,7 @@
     total des actifs, liquidités, clients, immobilisations nettes, résultat net avant
     et après modifications comptables, produits des placements, charges financières
     nettes, résultat, charges et produits d''exploitation, autres produits, subvention
-    d''exploitation, recettes, charges de personnel, effectif) ; dix-huit entreprises
+    d''exploitation, recettes, charges de personnel, effectif) ; quinze entreprises
     : STEG, ETAP, SNCFT, STIR (Société tunisienne des industries de raffinage, ajoutée
     le 28 octobre 2026), Office des céréales (ajouté le 28 octobre 2026), SONEDE (Société
     nationale d''exploitation et de distribution des eaux) et ONAS (Office national
@@ -5781,7 +5782,7 @@
     avec le statut du chiffre'
   caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
     se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
-    signale 934 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    signale 1124 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
     15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
     4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
     même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation

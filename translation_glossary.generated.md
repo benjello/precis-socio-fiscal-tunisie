@@ -430,6 +430,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Nomenclature budgétaire | تبويب الميزانية |  |
 | Obligation scolaire | إجبارية التعليم الأساسي |  |
 | Office de l'aviation civile et des aéroports | ديوان الطيران المدني والمطارات | OACA |
+| Office de la marine marchande et des ports | ديوان البحرية التجارية والموانئ | OMMP |
 | Office des céréales | ديوان الحبوب |  |
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |

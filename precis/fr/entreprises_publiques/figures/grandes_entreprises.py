@@ -666,10 +666,10 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "poste": "Office national des postes",
               "tunisie_telecom": "Tunisie Télécom",
               "office_commerce": "Office du commerce de la Tunisie",
-              "attt": "ATTT"}
-              "oaca": "OACA"}
-              "ommp": "OMMP"}
-              "ctn": "CTN"}
+              "attt": "ATTT",
+              "oaca": "OACA",
+              "ommp": "OMMP",
+              "ctn": "CTN",
               "srt_sfax": "Société régionale de transport de Sfax",
               "srt_bizerte": "Société régionale de transport de Bizerte"}
 
