@@ -432,6 +432,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |
 | Office national de l'assainissement | الديوان الوطني للتطهير | ONAS |
 | Office national de l'huile | الديوان الوطني للزيت | ONH |
+| Office national des postes | الديوان الوطني للبريد |  |
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ordonnateur | آمر قبض وصرف |  |
 | Organisme de placement collectif en valeurs mobilières | مؤسسة التوظيف الجماعي في الأوراق المالية | OPCVM |
