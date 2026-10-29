@@ -5743,8 +5743,9 @@
     Tunisie Télécom, Office national des postes, Office du commerce de la Tunisie,
     Agence technique des transports terrestres, OACA, OMMP, CTN, sociétés régionales
     de transport de Sfax et de Bizerte, Compagnie tunisienne de forage, SNDP, SOTRAPIL,
-    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI), bilan, résultat,
-    dette, subvention d''exploitation et emploi, exercices 2018-2023, par édition'
+    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI, Régie des
+    alcools, Manufacture des tabacs de Kairouan), bilan, résultat, dette, subvention
+    d''exploitation et emploi, exercices 2018-2023, par édition'
   sources:
   - minfin-ep-2022
   - minfin-ep-2024
@@ -5780,11 +5781,12 @@
     octobre 2026, tableau du secteur quasi financier), Office du commerce de la Tunisie
     (ajouté le 29 octobre 2026), Agence technique des transports terrestres (ATTT,
     ajoutée le 29 octobre 2026), Compagnie tunisienne de forage (CTF, ajoutée le 29
-    octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur), avec
-    le statut du chiffre'
+    octobre 2026), Régie des alcools et Manufacture des tabacs de Kairouan (MTK) (ajoutées
+    le 29 octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur),
+    avec le statut du chiffre'
   caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
     se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
-    signale 1380 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    signale 1452 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
     15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
     4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
     même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
@@ -5830,7 +5832,14 @@
     et résultats reportés imprimés sans le signe « − » (281,1 pour 2021, −281,1 en
     LF 2025 ; la ligne des variations de la page confirme le signe), bilan qui ne
     boucle pas ; RNTA, LF 2025, actifs − passifs − fonds propres = résultat net de
-    l''exercice (96,9 ; 130,7 ; 116,2). TUNISAIR, BILAN NON PUBLIÉ : 2020-2022 (LF
+    l''exercice (96,9 ; 130,7 ; 116,2). RÉGIE DES ALCOOLS : LF 2024, « total des passifs
+    » imprimé égal au total des actifs (écart déclaré, opposé des fonds propres :
+    4,0 ; 8,5 ; −3,5), LF 2025 boucle ; 2022 provisoire puis réalisé, résultat net
+    12,1 puis −2,5 ; liquidités 2021 de 13,2 en LF 2025 (3,3 en LF 2024) pour 13,1
+    d''actifs, confirmées par la variation imprimée. MANUFACTURE DES TABACS DE KAIROUAN
+    : LF 2024, fonds propres et résultats reportés de 2020 imprimés sans le signe
+    « − » (227,4 ; 260,9 ; écart déclaré −454,8 ; LF 2022 −226,8 et −260,8) ; LF 2025,
+    bilan de 2023 à 0,2 près, déclaré. TUNISAIR, BILAN NON PUBLIÉ : 2020-2022 (LF
     2024) et 2021-2023 (LF 2025), cases du bilan remplacées par une note (états financiers
     non approuvés) ; aucune ligne. Tunisair, statuts LF 2022 : « * » provisoire (2018,
     2019), « ** » probable (2020). Tunisie Télécom, LF 2024 et LF 2025 : produits
@@ -5906,8 +5915,8 @@
     الوطني للتطهير، شركة فسفاط قفصة، المجمع الكيميائي التونسي، شركة نقل تونس، شركة
     تونس للطرقات السيارة، الخطوط التونسية، الوكالة الوطنية للتبغ والوقيد، الديوان
     الوطني للزيت، اتصالات تونس، الديوان الوطني للبريد، ديوان التجارة التونسي، الوكالة
-    الفنية للنقل البري، الشركة التونسية للتنقيب)، 2018-2023، حسب طبعة التقرير المرفق
-    بقانون المالية'
+    الفنية للنقل البري، الشركة التونسية للتنقيب، وكالة الكحول، مصنع التبغ بالقيروان)،
+    2018-2023، حسب طبعة التقرير المرفق بقانون المالية'
   unite_ar: ملايين الدنانير الجارية؛ عون
   perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جذاذات
     المنشآت في طبعات قانون المالية لسنوات 2022 و2024 و2025

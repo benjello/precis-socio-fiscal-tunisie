@@ -411,6 +411,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |
 | Malade payant | المريض الخاضع لدفع مقابل |  |
 | Maladie professionnelle | مرض مهني |  |
+| Manufacture des tabacs de Kairouan | مصنع التبغ بالقيروان | MTK |
 | Masse salariale | كتلة الأجور |  |
 | Mastère | الماجستير |  |
 | Mastère de recherche | ماجستير البحث |  |
@@ -524,6 +525,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Redevance de compensation | أتاوة الدعم |  |
 | Redevance de prestations douanières | الأتاوة على الخدمات الديوانية |  |
 | Redoublement | الرسوب |  |
+| Régie des alcools | وكالة الكحول |  |
 | Régie nationale des tabacs et des allumettes | الوكالة الوطنية للتبغ والوقيد | RNTA |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
 | Régime complémentaire | النظام التكميلي |  |

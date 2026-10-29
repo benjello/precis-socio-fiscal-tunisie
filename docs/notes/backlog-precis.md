@@ -4326,6 +4326,33 @@ Ce qui reste :
   - grandeurs d'activité des fiches (achats et ventes de produits de base) citées, non versées dans
     une série ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Régie des alcools et Manufacture des tabacs de Kairouan — sections écrites le 29 octobre 2026**
+  (`_offices.qmd`, `#sec-ep-ge-ra` et `#sec-ep-ge-mtk`, en fin de chapitre ; intro et « La source » du
+  chapitre mises à jour). Figures `fig-ep-ra-budget`, `fig-ep-ra-fiches`, `fig-ep-mtk-budget`,
+  `fig-ep-mtk-fiches`, tableaux repliés `tbl-ep-{ra,mtk}-fiche-a` et `-b`. **Fiches du ministère des
+  Finances versées le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`,
+  branche `donnees/fiche-ra`, codes `regie_alcools` et `mtk`) : LF 2022 p. 50 (les deux), LF 2024 p. 74
+  (Régie) et 73 (MTK), LF 2025 p. 49 et 51, lues à l'image (300 dpi) et retrouvées dans la couche texte.
+  Écarts déclarés : Régie, LF 2024, « total des passifs » égal au total des actifs (case de 2020 non
+  tracée) ; MTK, LF 2024, fonds propres et reportés de 2020 sans le signe « − » ; MTK 2023, bilan à
+  0,2 près. Explications des révisions citées d'après la prose de l'édition LF 2025 (p. 52 et 55).
+  Registres `tbl-ep-registre-ra` et `tbl-ep-registre-mtk`, lus au corpus local à l'image : loi de
+  finances pour 1975 (art. 43 à 46 et 82), décrets n° 75-65 et 88-68 ; loi n° 81-14, décret n° 81-526,
+  loi de finances pour 1982 (art. 85), décret-loi n° 2011-108 (couche texte), décret n° 2011-4395
+  (édition arabe), loi de finances complémentaire pour 2014 (art. 46). Glossaire : `regie-alcools`, `mtk`.
+  **Reste** :
+  - textes **dans le corpus local, non lus** : Régie, décrets n° 75-594, 77-503 et 2007-843, arrêtés
+    des prix de cession des alcools (dernier : 18 novembre 2025, JORT n° 137, p. 3123) ; MTK, décrets
+    n° 82-1168, 85-1568, 87-1199, 89-598, 93-114 et 98-1802, décrets n° 2000-1934 et 2008-2398 (achats
+    de tabacs bruts), article 69 de la loi de finances pour 2025 ;
+  - **demandent l'OCR ou la lecture à l'image** (fascicules sans couche texte) : décret du 20 novembre
+    1927 sur le régime de l'alcool (antérieur au corpus), loi n° 59-113 et décret-loi n° 60-5 ;
+  - date de dépôt au gouvernorat du JORT n° 93 de 2011 (décret n° 2011-4395), comme pour la RNTA ;
+  - objet des transferts du budget (Régie 2021 ; MTK 2017, 2020, 2022, sans subvention d'exploitation
+    sur la fiche) : tableaux par établissement de l'annexe 8 ;
+  - grandeurs d'activité (hectolitres vendus ; paquets produits et vendus, colonnes à attribuer) :
+    non versées ;
+  - comptes publiés des deux établissements : **à obtenir**.
 - **Agence foncière industrielle — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-afi`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
   `fig-ep-afi-budget` et `fig-ep-afi-fiches`, tableaux repliés `tbl-ep-afi-fiche-a` et `-b`.

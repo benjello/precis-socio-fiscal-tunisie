@@ -22,6 +22,7 @@
     ge.figure("sndp_fiches", …)                              # SNDP : fiche seule
     ge.figure("sncpa_budget", …) ; ge.figure("sncpa_fiches", …)  # SNCPA (cellulose, papier alfa)
     ge.figure("afi_budget", …) ; ge.figure("afi_fiches", …)  # Agence foncière industrielle
+    ge.figure("ra_budget", …) ; ge.figure("mtk_fiches", …)   # Régie des alcools, MTK
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -696,11 +697,13 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "ciments_bizerte": "Ciments de Bizerte",
               "ciments_oum_el_kelil": "Ciments d'Oum El Kélil",
               "sncpa": "SNCPA",
-              "afi": "Agence foncière industrielle"}
+              "afi": "Agence foncière industrielle",
+              "regie_alcools": "Régie des alcools",
+              "mtk": "Manufacture des tabacs de Kairouan"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
-PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024")}
+PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024"), ("regie_alcools", "LF2024")}
 
 
 def fig_fiche(entite: str):
@@ -1086,6 +1089,14 @@ FIGURES = {
                    "fig_ep_afi_fiches"),
     "afi_budget": (lambda: fig_budget("afi", BLEU), lambda: table_budget("afi"),
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_afi_budget"),
+    "ra_fiches": (lambda: fig_fiche("regie_alcools"), lambda: table_fiche("regie_alcools"),
+                  (S_FICHES,), "fig_ep_ra_fiches"),
+    "ra_budget": (lambda: fig_budget("regie_alcools", VIOLET), lambda: table_budget("regie_alcools"),
+                  (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_ra_budget"),
+    "mtk_fiches": (lambda: fig_fiche("mtk"), lambda: table_fiche("mtk"), (S_FICHES,),
+                   "fig_ep_mtk_fiches"),
+    "mtk_budget": (lambda: fig_budget("mtk", ORANGE), lambda: table_budget("mtk"),
+                   (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_mtk_budget"),
 }
 
 

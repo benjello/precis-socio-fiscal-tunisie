@@ -18921,3 +18921,47 @@ entries:
         منشأة عمومية تنتج عجين الحلفاء والورق. اكتتبت الدولة في الزيادة في رأس مالها سنتي
         1984 و1985، ثم سنة 1988 في إطار تطهيرها.
       synonymes: []
+  - id: regie-alcools
+    acronyme: null
+    statut: valide
+    references: [loi74-101-lf1975, decret88-68-regie-alcools, minfin-ep-2025]
+    source_definition: {ref: loi74-101-lf1975, locator: "art. 43 et 44"}
+    # AR : intitulé « وكالة الكحول » de la fiche de la Régie dans le rapport sur les entreprises
+    # publiques, édition LF 2025, p. 49, et du décret n° 88-68 au miroir iort.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 49"}
+    voir_aussi: [rnta, mtk]
+    fr:
+      terme: Régie des alcools
+      definition: >
+        Établissement public à caractère industriel et commercial créé par la loi de finances
+        pour 1975, qui exploite au profit de l'État le monopole des alcools. Il est placé sous la
+        tutelle du ministère des Finances.
+      synonymes: []
+    ar:
+      terme: وكالة الكحول
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت بقانون المالية لسنة 1975، تستغلّ لفائدة
+        الدولة احتكار الكحول. وهي تحت إشراف وزارة المالية.
+      synonymes: []
+  - id: mtk
+    acronyme: MTK
+    statut: valide
+    references: [loi81-14-mtk, decret81-526-mtk, minfin-ep-2025]
+    source_definition: {ref: loi81-14-mtk, locator: "art. 1er et 2"}
+    # AR : intitulé « مصنع التبغ بالقيروان » de la fiche de la Manufacture dans le rapport sur
+    # les entreprises publiques, édition LF 2025, p. 51, et de la loi n° 81-14 au miroir iort.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 51"}
+    voir_aussi: [rnta, regie-alcools]
+    fr:
+      terme: Manufacture des tabacs de Kairouan
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1981, qui exploite au
+        profit de l'État, au même titre que la Régie nationale des tabacs et des allumettes, le
+        monopole fiscal des tabacs, des allumettes et des cartes à jouer.
+      synonymes: [MTK]
+    ar:
+      terme: مصنع التبغ بالقيروان
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1981، تستغلّ لفائدة الدولة، على غرار
+        الوكالة الوطنية للتبغ والوقيد، الاحتكار الجبائي للتبغ والوقيد وأوراق اللعب.
+      synonymes: []
