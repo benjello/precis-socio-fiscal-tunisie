@@ -16,6 +16,7 @@
     ge.figure("onh_budget", …) ; ge.figure("onh_fiches", …)  # Office national de l'huile
     ge.figure("poste_budget", …) ; ge.figure("poste_fiches", …)  # Office national des postes
     ge.figure("tt_fiches", …)                                # Tunisie Télécom : fiche seule
+    ge.figure("otc_budget", …) ; ge.figure("otc_fiches", …)  # Office du commerce de la Tunisie
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -96,6 +97,7 @@ LIB = {
     "produits_placements": "Produits des placements",
     "autres_produits_exploitation": "dont autres produits d'exploitation",
     "revenus": "dont recettes",
+    "stocks": "Stocks nets",
 }
 ORDRE_A = ["dette_totale", "dette_etat", "dette_banques", "dette_entreprises_publiques",
            "dette_caisses_sociales", "dette_autres", "capitaux_propres", "resultats_reportes",
@@ -141,6 +143,8 @@ def tableau_fiche_detail(entite: str, editions: tuple[str, ...], caption: str,
     f = f[f["edition"].isin(editions)]
     cols = sorted({(x, e) for x, e in zip(f["exercice"], f["edition"])})
     ordre = ORDRE_A if editions == ("LF2022",) else ORDRE_B
+    if "stocks" in set(f["indicateur"]):  # ligne propre à la fiche LF 2024 de l'Office du commerce
+        ordre = ordre[:ordre.index("liquidites") + 1] + ["stocks"] + ordre[ordre.index("liquidites") + 1:]
     lignes = []
     for ind in ordre:
         cases = []
@@ -657,7 +661,12 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "tunisair": "Tunisair", "rnta": "RNTA",
               "office_huile": "Office national de l'huile",
               "poste": "Office national des postes",
-              "tunisie_telecom": "Tunisie Télécom"}
+              "tunisie_telecom": "Tunisie Télécom",
+              "office_commerce": "Office du commerce de la Tunisie"}
+
+# Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
+# des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
+PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024")}
 
 
 def fig_fiche(entite: str):
@@ -671,6 +680,8 @@ def fig_fiche(entite: str):
 
     def court(x, ind_a, ind_b):
         ind = ind_a if der[x] == "LF2022" else ind_b
+        if ind == "total_passifs" and (entite, der[x]) in PASSIFS_AVEC_FONDS_PROPRES:
+            return None
         return None if ind is None else _case_fiche(f, x, der[x], ind)
 
     fig = plt.figure(figsize=(11.0, 9.6))
@@ -979,6 +990,10 @@ FIGURES = {
                      (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_poste_budget"),
     "tt_fiches": (lambda: fig_fiche("tunisie_telecom"), lambda: table_fiche("tunisie_telecom"),
                   (S_FICHES,), "fig_ep_tt_fiches"),
+    "otc_fiches": (lambda: fig_fiche("office_commerce"), lambda: table_fiche("office_commerce"),
+                   (S_FICHES,), "fig_ep_otc_fiches"),
+    "otc_budget": (lambda: fig_budget("office_commerce", VERT), lambda: table_budget("office_commerce"),
+                   (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_otc_budget"),
 }
 
 

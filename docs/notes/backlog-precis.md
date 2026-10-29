@@ -3736,8 +3736,8 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Office du commerce ; Tunisie Télécom et Poste versées le
-    29 octobre 2026, `#sec-ep-ge-tt` et `#sec-ep-ge-poste`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
+  - les autres grandes entreprises (Tunisie Télécom, Poste et Office du commerce versées le
+    29 octobre 2026, `#sec-ep-ge-tt`, `#sec-ep-ge-poste`, `#sec-ep-ge-otc`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
   - SNCFT : statuts de 1969 (loi n° 69-31, JORT n° 19 de 1969, p. 581-584, dans le corpus local,
@@ -3999,6 +3999,32 @@ Ce qui reste :
   - éditions françaises LF 2020 (p. 110-111) et LF 2021 (p. 106-107) : comptes et activité dans la
     prose, non versés ; grandeurs d'activité des fiches (huile végétale subventionnée en MD et en
     tonnes) non relevées ;
+  - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Office du commerce de la Tunisie — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-otc`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
+  `fig-ep-otc-budget` et `fig-ep-otc-fiches`, tableaux repliés `tbl-ep-otc-fiche-a` et `-b`.
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-commerce`, code
+  `office_commerce`) : LF 2022 p. 89, LF 2024 p. 130-131, LF 2025 p. 107, lues à l'image (300 dpi) et
+  retrouvées dans la couche texte. Édition LF 2024 : colonne 2022 de l'état de résultat qui reproduit
+  les variations 2021/2020 (imprimé tel quel, dit dans le texte et les légendes) ; « total des
+  passifs » égal au total des actifs (écart déclaré ; la case de 2020 n'est pas tracée). Annexe 8
+  (rapport sur les transferts) citée à part de l'annexe 9. Registre `tbl-ep-registre-otc`, lu au corpus
+  local : décret-loi n° 62-6 et son rectificatif (image) ; loi n° 67-32 (image) ; loi n° 78-8 (crédit
+  Citibank garanti, image) ; arrêté du 30 août 1989 (liste des produits de base, image) ; loi n° 90-1
+  (image) ; décret n° 99-227 ; décrets n° 2017-346 (édition arabe) et 2018-178 (zone de Ben Guerdane) ;
+  lois de finances pour 2021 (art. 23), 2024 (art. 21), 2025 (art. 35) et 2026 (art. 41), éditions
+  arabes pour les trois dernières. Glossaire : `office-commerce`.
+  **Reste** :
+  - texte qui confie à l'Office l'importation des produits de base avant 1989 et fondement d'une
+    exclusivité d'importation (sucre, café, thé) : **non identifié** sous les intitulés de jort_cache ;
+    aucun statut de 1970-1971 sous ces intitulés ; recherche à mener dans les lois de finances, les
+    textes du commerce extérieur et de la compensation ;
+  - textes **dans le corpus local, non lus** : loi n° 62-14 (ratification ; dates de jort_cache
+    incohérentes), décrets n° 65-335 et 74-184 et arrêtés de 1974 et 1976 (personnel), décrets
+    n° 88-885 et 89-1647 (organisation), n° 99-1920, 2001-719, 2005-2456 ;
+  - grandeurs d'activité des fiches (achats et ventes de produits de base) citées, non versées dans
+    une série ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et

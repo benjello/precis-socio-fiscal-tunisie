@@ -18579,6 +18579,30 @@ entries:
         في سوق زيت الزيتون. وكان لها من سنة 1970 إلى سنة 1994 احتكار شراء زيت الزيتون من
         المنتجين وتصديره وتوريد الزيوت النباتية الغذائية.
       synonymes: []
+  - id: office-commerce
+    acronyme: OCT
+    statut: valide
+    references: [dl62-6-otc, arrete1989-08-30-otc, minfin-ep-2024]
+    source_definition: {ref: dl62-6-otc, locator: "art. 1er et 2"}
+    # AR : intitulé « الديوان التونسي للتجارة » de la fiche de l'Office dans le rapport sur les
+    # entreprises publiques, édition LF 2024, p. 130.
+    source_traduction: {ref: minfin-ep-2024, locator: "p. 130"}
+    voir_aussi: [office-cereales, onh]
+    fr:
+      terme: Office du commerce de la Tunisie
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1962 pour développer
+        les échanges avec l'étranger, en particulier les exportations. Il importe les produits
+        de base dont un arrêté de 1989 fixe la liste, parmi lesquels le sucre, le café et le thé.
+      synonymes: [Office du commerce]
+    ar:
+      terme: الديوان التونسي للتجارة
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1962 لتنمية المبادلات مع الخارج،
+        ولا سيما الصادرات. ويتولّى توريد المواد الأساسية، ومنها السكر والقهوة والشاي، التي
+        ضبط قرار صادر سنة 1989 قائمتها.
+      synonymes: []
+      synonymes: []
   - id: onp
     statut: valide
     references: [decret98-1305-poste, loi98-38-poste, minfin-ep-2024]
