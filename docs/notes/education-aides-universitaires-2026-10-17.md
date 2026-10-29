@@ -6,7 +6,8 @@ de ticket. Aucun fichier du précis n'est modifié. Les fiches de recherche sont
 `docs/notes/education-recherches-A.yml` ; elles ont depuis été fusionnées dans `docs/recherches.yml`, seul registre tenu à jour (passes du
 29 octobre 2026 comprises).
 
-Complétée le 29 octobre 2026 (lectures à l'image du plan, § 9, point 1) : § 2.9.
+Complétée le 29 octobre 2026 (lectures à l'image du plan, § 9, point 1) : § 2.9 ; seconde passe le
+même jour : § 2.9 e.
 
 ## 0. Conventions de cette note
 
@@ -206,10 +207,9 @@ n° 72-51 et arrêté du ministre de l'Agriculture du 19 février 1972 ; arrêt�
 5 janvier 1978. Lectures au § 2.9. Une conséquence pour l'arrêté du 7 octobre 1971 ci-dessus : son
 art. 3 (25 D) est réécrit dès le 15 novembre 1971 (30 D, taux spécial 35 D).
 
-**Restent à l'index** (fascicules présents dans le corpus, scans) : décret n° 58-189 du 21 juillet
-1958 relatif à la bourse nationale (JORT n° 58 de 1958, p. 760, recid 107531), visé en 1958 et 1959
-comme modifiant le décret n° 57-78 ; décrets d'attribution n° 59-212 (1959/37, p. 747), 61-421
-(1961/53, p. 1553-1554) et 62-312 (1962/49, p. 1140) ; décisions de majoration pour les études en
+**Lus à l'image le 29 octobre 2026 (seconde passe), § 2.9 e** : décret n° 58-189 et décrets
+d'attribution n° 59-212, 61-421 et 62-312 (attribution sans concours, année par année) ; arrêté du
+23 mai 1963 (jury national). **Restent à l'index** (fascicules présents dans le corpus, scans) : décisions de majoration pour les études en
 Suisse, en Angleterre, en Belgique et au Liban (7 octobre 1958, 7 novembre 1958, 3 février 1959) et
 arrêtés du 5 février 1962 (Allemagne, Italie), visés par l'arrêté du 2 janvier 1963 et non
 retrouvés à l'index ; arrêtés du ministre de l'Agriculture de 1973, 1975 et 1980 (bourses de ses
@@ -945,7 +945,6 @@ offices des œuvres universitaires.** JORT n° 92 du 14 novembre 2014, p. 3051-3
 
 | Texte | recid |
 |---|---|
-| Décret n° 85-173 (modifie le décret n° 80-1001) | 96077 |
 | Décret n° 90-1122 (office du Nord) et décrets n° 95-1953, 95-1954 (Centre, Sud) | 93348, 90762, 90763 |
 | Décret n° 95-2281 du 13 novembre 1995, attributions et organisation des établissements des œuvres universitaires, modifié par les décrets n° 2009-2448 et 2015-1765/1768 | — |
 | Lois de finances qui créent et suppriment les cités et restaurants (1970-1997) | — |
@@ -1211,7 +1210,7 @@ fichier. `https://www.pist.tn/jort/1980/1980F/Jo04780.pdf`. recid 98651.
   culturelles et médico-sociales.
 - Art. 20 : dispositions antérieures contraires abrogées.
 - Aucune clause d'effet. Date exécutoire : du 21 au 24 août 1980 (fourchette).
-- Le décret n° 85-173 qui le modifie (1985/10, p. 195, recid 96077) reste à lire.
+- Modifié par le décret n° 85-173 (rang du directeur), lu le 29 octobre 2026 : § 2.9 e.
 
 **Arrêté du 20 juin 1974, p. 1449** : lu, voir § 2.8 (droit d'entrée de 500 millimes, barème fixé
 par l'Administration, retenue sur la bourse).
@@ -1230,6 +1229,131 @@ recid 47751.
 - Avis : les dispositions de l'art. 1er de la loi n° 88-135 « sont des dispositions de nature
   réglementaire ». Délibéré le 13 juillet 2006.
 - Effet : le décret n° 2006-2245 (même fascicule) peut réécrire l'art. 1er de la loi.
+
+#### e. Attribution sans concours (1958-1962), jury de 1963, décret n° 85-173
+
+Seconde passe du 29 octobre 2026, même méthode (pdftoppm à 200 dpi, lecture de l'image). URL de
+l'édition française sur pist.tn vérifiées le 29 octobre 2026 (requête HEAD : 200, `application/pdf`,
+taille égale au fichier local).
+
+**Décret n° 58-189 du 21 juillet 1958 (4 moharem 1378), relatif à la bourse nationale.** JORT n° 58-59
+des 22-25 juillet 1958, p. 760, page 8 du fichier. `https://www.pist.tn/jort/1958/1958F/Jo05858.pdf`.
+recid 107531. Rubrique « Bourses nationales d'enseignement supérieur » du secrétariat d'État à
+l'Éducation nationale, à la Jeunesse et aux Sports.
+
+- Visa : décret n° 57-78 du 12 octobre 1957.
+- Art. 1er : « A titre exceptionnel et par dérogation aux dispositions du décret du 12 octobre 1958
+  [sic] (17 rabia I 1377), la Bourse Nationale est attribuée pour l'année scolaire 1958-59, sans
+  concours, par décision du Secrétaire d'Etat à la Présidence, sur proposition du Secrétaire d'Etat à
+  l'Education Nationale, à la Jeunesse et aux Sports et après avis des Secrétaires d'Etat intéressés,
+  compte tenu des besoins impérieux du pays et au vu des titres détenus par les candidats. » La date
+  hégirienne (17 rabia I 1377) est celle du 12 octobre 1957 : « 1958 » est une coquille du Journal
+  officiel.
+- Art. 2 : exécution (Présidence, Finances, Éducation nationale).
+- Avant → après : concours unique annuel (décret n° 57-78, art. 1er), écarté pour la seule année
+  1957-1958 (art. 9) → attribution sans concours en 1958-1959, par décision du secrétaire d'État à la
+  présidence. Le décret n° 59-212 le vise comme « prorogeant, pour l'année scolaire 1958-59, le
+  régime transitoire permettant l'attribution, sans concours, de la bourse nationale ». Le décret
+  n° 57-78 n'est pas réécrit : c'est une dérogation pour une année. L'arrêté du 10 décembre 1958
+  (§ 2.9 a) vise le décret n° 57-78 « tel qu'il a été modifié par le décret n° 58-189 ».
+- Aucune clause d'effet. Date exécutoire : du 24 au 27 juillet 1958 (fourchette).
+
+**Décret n° 59-212 du 9 juillet 1959 (3 moharem 1379), relatif à l'attribution de la bourse
+nationale.** JORT n° 37 des 10-14 juillet 1959, p. 747, page 11 du fichier.
+`https://www.pist.tn/jort/1959/1959F/Jo03759.pdf`. recid 107277.
+
+- Visas : décret n° 57-78 ; décret n° 58-189 (cité ci-dessus) ; avis du secrétaire d'État à
+  l'Éducation nationale.
+- Art. 1er : même dérogation, « pour l'année scolaire 1959-1960 », mêmes autorité et critères
+  (« besoins impérieux du pays », « titres détenus par les candidats »).
+- Art. 2 : exécution (Présidence, Éducation nationale).
+- Aucune clause d'effet. Date exécutoire : du 12 au 16 juillet 1959 (fourchette).
+
+**Décret n° 61-421 du 30 novembre 1961 (22 joumada II 1381), relatif à l'attribution de la bourse
+nationale.** JORT n° 53 du 1er décembre 1961, p. 1553-1554, pages 5-6 du fichier.
+`https://www.pist.tn/jort/1961/1961F/Jo05361.pdf`. recid 106344.
+
+- Visas : décret n° 57-78 ; avis des secrétaires d'État à l'Éducation nationale et au Plan et aux
+  Finances.
+- Art. 1er : même dérogation, « pour l'année scolaire 1961-1962 ».
+- Art. 2 (p. 1554) : exécution (Présidence, Éducation nationale, Plan et Finances).
+- Aucune clause d'effet. Date exécutoire : 3 décembre 1961. Le décret paraît après la rentrée de
+  1961 et vaut pour l'année en cours.
+
+**Décret n° 62-312 du 19 septembre 1962 (20 rabia II 1382), relatif à l'attribution de la bourse
+nationale.** JORT n° 49 des 21-25 septembre 1962, p. 1140, page 4 du fichier.
+`https://www.pist.tn/jort/1962/1962F/Jo04962.pdf`. recid 106086.
+
+- Visas : décret n° 57-78 ; avis des secrétaires d'État à l'Éducation nationale et au Plan et aux
+  Finances.
+- Art. 1er : même dérogation, « pour l'année scolaire 1962-1963 ».
+- Art. 2 : exécution (Présidence, Éducation nationale, Plan et Finances).
+- Aucune clause d'effet. Date exécutoire : du 23 au 27 septembre 1962 (fourchette).
+- Le décret n° 63-2 du 2 janvier 1963 abroge le décret n° 57-78 trois mois plus tard et pose le
+  concours sur titres (§ 2.9 a).
+
+**Conséquence.** Le concours unique du décret n° 57-78 est écarté pour 1957-1958 (art. 9), 1958-1959,
+1959-1960, 1961-1962 et 1962-1963. Pour 1960-1961, aucun décret n'est identifié (ci-dessous) : on ne
+sait pas si le concours a eu lieu. Aucun des quatre décrets ne touche au montant. Versé au registre
+de la bourse nationale du chapitre (ligne `r-educ-a-bn-1958-sans-concours`, portée « ajustement
+(condition) ») ; l'« avant » de la ligne de 1963 est précisé en conséquence.
+
+**Année 1960-1961 : passe du 29 octobre 2026.**
+
+- jort_cache, 1957-1964 : LIKE « %bourse% » et FTS « bourse nationale » ; 1960 : FTS « bourse OR
+  bourses OR concours ». Seules notices de bourses en 1960 : décret-loi n° 60-16 (bourse oléicole) et
+  arrêté de la Présidence du 12 novembre 1960 (élèves du Centre de formation administrative et
+  politique).
+- Corpus local, édition française de 1960 : première page (sommaire) des fascicules n° 30
+  (21 juin) à n° 56 (6 décembre) lue à l'image (110 dpi). Rubrique de l'Éducation nationale :
+  nominations, décret n° 60-260 (remises de principe), décret n° 60-318 (École normale supérieure),
+  décret n° 60-355 (heures supplémentaires), décret n° 60-359 (licence et capacité en droit) ;
+  aucun décret sur la bourse nationale.
+- Lacunes : la suite du sommaire en page 2 n'est pas lue quand le sommaire déborde (n° 36, 44, 46,
+  au moins) ; fascicules n° 57 à 60 de 1960 et de janvier à juin 1961 non lus (le décret n° 61-421
+  montre qu'un tel décret peut paraître après la rentrée) ; édition arabe non lue.
+- Fiche proposée : § 9 (`r-bourse-sans-concours-1960`).
+
+**Arrêté du secrétaire d'État à la présidence du 23 mai 1963 (30 doul hijja 1382), relatif à la
+bourse nationale.** JORT n° 26 des 24-28-31 mai 1963, p. 757, page 19 du fichier.
+`https://www.pist.tn/jort/1963/1963F/Jo02663.pdf`. recid 73136. Texte de procédure, non versé au
+chapitre.
+
+- Visas : décret du 6 octobre 1955 (jury des examens) ; décret n° 63-2 ; arrêté du 2 janvier 1963.
+- Art. 1er : bourse attribuée par décision du secrétaire d'État à la présidence sur proposition d'un
+  jury national.
+- Art. 2 : composition (secrétaire d'État à l'Éducation nationale, président ; chefs de service de
+  plusieurs départements ; deux représentants de l'Université de Tunis ; un représentant du
+  Néo-Destour ; un représentant de l'Union générale des étudiants de Tunisie).
+- Art. 3 : quatre commissions (Santé ; Éducation et Culture ; carrières techniques ; carrières
+  juridiques et économiques) ; séance plénière pour les cas litigieux, « notamment ceux nécessitant
+  une réorientation des étudiants et élèves, soit par suite des inaptitudes des candidats au métier
+  choisi, soit pour pourvoir à des secteurs essentiels, n'ayant pas suscité un nombre suffisant de
+  candidatures ».
+- Art. 4 : secrétariat du jury au secrétariat d'État à l'Éducation nationale (offres de bourses,
+  candidatures, projet d'attribution, contrôle des résultats et de l'assiduité, « surveillance du
+  respect des engagements des boursiers »).
+- Art. 5 : dispositions contraires abrogées. Aucune clause d'effet. Date exécutoire : entre le
+  26 mai et le 2 juin 1963 (fourchette ; fascicule daté des 24-28-31 mai).
+
+**Décret n° 85-173 du 25 janvier 1985 portant modification du décret n° 80-1001 du 6 août 1980.**
+JORT n° 10 du 5 février 1985, p. 195, page 7 du fichier.
+`https://www.pist.tn/jort/1985/1985F/Jo01085.pdf`. recid 96077.
+
+- Visas : loi n° 67-53 (loi organique du budget) ; loi n° 83-112 (statut général) ; loi n° 70-9
+  (création de l'ONOU) ; loi n° 73-81 (Code de la comptabilité publique) ; loi n° 83-113 (loi de
+  finances pour 1984) ; décret n° 71-384 (emplois fonctionnels) ; décret n° 80-1001 ; décret
+  n° 81-846 (organisation du ministère) ; avis du ministre des Finances et du Tribunal administratif.
+- Art. 1er, art. 5 nouveau du décret n° 80-1001 : « l'Office National des Oeuvres Universitaires est
+  dirigé par un Directeur nommé par décret. Il a rang et prérogatives de Directeur Général
+  d'Administration Centrale. (le reste sans changement) ».
+- Avant → après (art. 5, 1er alinéa, relu p. 2070 du JORT de 1980) : le directeur « a rang et
+  prérogatives de Directeur d'Administration Centrale » → « de Directeur Général d'Administration
+  Centrale ». Le comité qui assiste le directeur (alinéas suivants) est inchangé.
+- Aucune clause d'effet. Date exécutoire : 7 février 1985.
+- Ne touche ni montant, ni niveau, ni condition des aides : non versé au registre du chapitre
+  (choix à confirmer à la revue ; le registre des œuvres porte le décret n° 80-1001 comme texte
+  d'organisation).
 
 ---
 
@@ -1584,6 +1708,12 @@ d'édition arabe) : `arrete-1958-12-10-bourse-montant`, `arrete-1959-11-29-bours
 `arrete-1978-01-05-bourses-montants`, `decret80-1001-onou`, `arrete-1990-02-28-prets-montants`,
 `arrete-1992-04-07-plafond-pret-etranger`, `avis-cc-dl-02-2006-oou-nord`.
 
+**Versées le 29 octobre 2026, seconde passe** (§ 2.9 e) : `decret58-189-bourse-nationale` (JORT n° 58,
+p. 760), `decret59-212-bourse-nationale` (n° 37, p. 747), `decret61-421-bourse-nationale` (n° 53,
+p. 1553-1554), `decret62-312-bourse-nationale` (n° 49, p. 1140). Clé non créée, texte non cité au
+chapitre : arrêté du 23 mai 1963 (jury national, n° 26 de 1963, p. 757) ; décret n° 85-173 (n° 10 de
+1985, p. 195).
+
 ## 7. Notions à glossaire
 
 Les formes arabes sont celles lues dans les textes arabes cités.
@@ -1632,9 +1762,9 @@ Les formes arabes sont celles lues dans les textes arabes cités.
 
 Les textes de cette liste au 17 octobre 2026 sont lus (§ 2.9). Restent :
 
-- décret n° 58-189 du 21 juillet 1958 (JORT n° 58 de 1958, p. 760) ; décrets n° 59-212, 61-421
-  et 62-312 (attribution de la bourse nationale) ;
-- décret n° 85-173 (modifie le décret n° 80-1001 ; JORT n° 10 de 1985, p. 195) ;
+- année universitaire 1960-1961 : aucun décret d'attribution sans concours identifié ; suites de
+  sommaire en page 2 des fascicules français de juillet à décembre 1960, n° 57 de 1960 à juin 1961,
+  et édition arabe de 1960 (§ 2.9 e) ;
 - arrêté du 20 août 1982 : sommaires de l'édition arabe de 1982 ; éditions de 1983 à 1987 (fiche
   `r-bourse-montants-1982`) ;
 - décisions de majoration de 1958-1959 et arrêtés du 5 février 1962 pour les études à l'étranger
@@ -1679,6 +1809,31 @@ Une fusion avant la rédaction de `_aides.qmd` ferait échouer la CI.
 
 Aucune de ces passes n'a interrogé le plein texte par `recherches.py relancer` ni pist.tn. Un
 `relancer <id>` après fusion parcourra le corpus local.
+
+**Fiche proposée le 29 octobre 2026** (non inscrite à `docs/recherches.yml` : le chapitre ne dit
+rien de 1960-1961 et ne porte donc pas d'ancre ; à inscrire si la rédaction en parle) :
+
+```yaml
+- id: r-bourse-sans-concours-1960
+  objet: décret dérogeant au concours de la bourse nationale (décret n° 57-78, art. 1er) pour l'année universitaire 1960-1961, sur le modèle des décrets n° 58-189, 59-212, 61-421 et 62-312, ou texte ouvrant le concours de 1960
+  ou: [precis/fr/education/_aides.qmd#sec-educ-bourse-nationale]
+  requetes:
+    titres_fts: [bourse OR bourses OR concours]
+    titres_like: ['%bourse%']
+    depuis: 1960-01-01
+  periode:
+    jusqu_au: 1961-06-30
+    motif: fin de l'année universitaire 1960-1961
+  passes:
+  - date: 2026-10-29
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache : LIKE « %bourse% » et FTS « bourse nationale » sur 1957-1964, FTS « bourse OR bourses OR concours » sur 1960 : aucun texte ; corpus local, édition française : première page (sommaire) des fascicules n° 30 à 56 de 1960 lue à l''image : rien. Lacunes : suites de sommaire en page 2 (n° 36, 44, 46 au moins), n° 57 à 60 de 1960 et janvier-juin 1961 non lus ; édition arabe non lue'
+    couvert_jusqu_au: 1960-12-06
+    resultat: aucun
+  a_faire:
+  - lire les suites de sommaire des n° 30 à 56 de 1960 et les sommaires des n° 57 de 1960 à juin 1961
+```
 
 ---
 

@@ -2548,9 +2548,13 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   - arrêté du 20 août 1982 : non retrouvé dans l'édition française de 1982 (sommaires n° 59 à 83 lus à l'image ;
     n° 84 par l'index) ; reste l'édition arabe de 1982 (corpus) et 1983-1987 ; montant en Tunisie non établi entre
     1977 et 1988 ;
-  - décret n° 58-189 (JORT n° 58 de 1958, p. 760), décrets n° 59-212, 61-421 et 62-312 (attribution de la bourse) :
-    au corpus, scans, à lire ;
-  - décret n° 85-173 (modifie le décret n° 80-1001 ; JORT n° 10 de 1985) : au corpus, scan, à lire ;
+  - année universitaire 1960-1961 : les décrets n° 58-189, 59-212, 61-421 et 62-312 (lus le 29 octobre 2026, note
+    § 2.9 e ; ligne « attribution sans concours » au registre) écartent le concours pour 1958-1959, 1959-1960,
+    1961-1962 et 1962-1963 ; aucun texte pour 1960-1961 (sommaires page 1 des n° 30 à 56 de 1960 lus) ; restent
+    les suites de sommaire en page 2, les n° 57 de 1960 à juin 1961 et l'édition arabe (corpus) ; fiche
+    `r-bourse-sans-concours-1960` proposée dans la note (§ 9), à inscrire si le texte rendu en parle ;
+  - à la revue : le décret n° 85-173 (lu, note § 2.9 e) ne change que le rang du directeur de l'ONOU ; non versé
+    au registre des œuvres (ni montant, ni niveau, ni condition) ;
   - décisions de majoration de 1958-1959 et arrêtés du 5 février 1962 (études à l'étranger), visés en 1963 : absents
     de l'index, à chercher ;
   - arrêtés de bourses des écoles du ministère de l'Agriculture (1972, 1973, 1975, 1980) : au corpus ; celui de 1972
