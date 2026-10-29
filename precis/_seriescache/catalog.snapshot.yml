@@ -5743,8 +5743,9 @@
     Tunisie Télécom, Office national des postes, Office du commerce de la Tunisie,
     Agence technique des transports terrestres, OACA, OMMP, CTN, sociétés régionales
     de transport de Sfax et de Bizerte, Compagnie tunisienne de forage, SNDP, SOTRAPIL,
-    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI), bilan, résultat,
-    dette, subvention d''exploitation et emploi, exercices 2018-2023, par édition'
+    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI ; banques
+    BNA, BFPME, BTS), bilan, résultat, dette, subvention d''exploitation, indicateurs
+    bancaires et emploi, exercices 2018-2023, par édition'
   sources:
   - minfin-ep-2022
   - minfin-ep-2024
@@ -5753,7 +5754,8 @@
   raw:
   - sources/transcriptions/entreprises-publiques-fiches.csv
   output: data/processed/entreprises-publiques/fiches_entreprises_2018_2023.csv
-  unite: millions de dinars courants (colonne valeur), sauf l'effectif en agents (colonne
+  unite: millions de dinars courants (colonne valeur), sauf l'effectif en agents,
+    les ratios bancaires en pour cent et le dividende par action en dinars (colonne
     unite)
   perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
     9), fiches par entreprise de trois éditions arabes : LF 2022 (exercices 2018-2020
@@ -5780,11 +5782,16 @@
     octobre 2026, tableau du secteur quasi financier), Office du commerce de la Tunisie
     (ajouté le 29 octobre 2026), Agence technique des transports terrestres (ATTT,
     ajoutée le 29 octobre 2026), Compagnie tunisienne de forage (CTF, ajoutée le 29
-    octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur), avec
-    le statut du chiffre'
+    octobre 2026) ; banques publiques BNA, BFPME et BTS (ajoutées le 29 octobre 2026),
+    tableau des banques publiques (mise en page « banques publiques », codes `bq_`
+    communs avec la STB et la BH : effectif, charges de personnel, total des actifs,
+    engagements et dépôts de la clientèle, produit net bancaire, résultat d''exploitation,
+    provisions nettes, résultat net, dividende par action et part de l''État, ratios
+    prudentiels et d''exploitation) ; une ligne par (édition, entreprise, exercice,
+    grandeur), avec le statut du chiffre'
   caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
     se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
-    signale 1380 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    signale 1460 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
     15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
     4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
     même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
@@ -5897,9 +5904,15 @@
     −3,4 puis −5,4. PREUVES DE LECTURE : identités du bilan, des produits et du résultat
     d''exploitation ; effectif et charges de personnel identiques, ligne à ligne (424),
     à la série entreprises-publiques-effectifs-par-entreprise lue sur les mêmes pages
-    ; chaque ligne recoupée avec la couche texte de la page. LU À L''IMAGE à 170 dpi
-    le 27 octobre 2026 (300 dpi le 28 octobre pour les ajouts, le 29 octobre pour
-    Tunisie Télécom, l''Office national des postes et l''ATTT).'
+    ; chaque ligne recoupée avec la couche texte de la page. BANQUES PUBLIQUES (BNA,
+    BFPME, BTS) : aucune identité comptable contrôlée ; ratios en pour cent et dividende
+    par action en dinars (colonne unite) ; BTS, engagements et dépôts de 2021 et 2022
+    reclassés entre les éditions LF 2024 et LF 2025 (dépôts 2021 : 1 460 puis 28,5,
+    note de la page) ; BTS 2021, LF 2024, engagements imprimés 1 135 pour 1 351 d''après
+    les variations de la page, imprimé tel quel ; BFPME, LF 2022, ligne « juin 2020
+    » imprimée « - » partout. LU À L''IMAGE à 170 dpi le 27 octobre 2026 (300 dpi
+    le 28 octobre pour les ajouts, le 29 octobre pour Tunisie Télécom, l''Office national
+    des postes et l''ATTT).'
   titre_ar: 'المنشآت العمومية: جذاذات المنشآت (الشركة التونسية للكهرباء والغاز، المؤسسة
     التونسية للأنشطة البترولية، الشركة الوطنية للسكك الحديدية التونسية، الشركة التونسية
     لصناعات التكرير، ديوان الحبوب، الشركة الوطنية لاستغلال وتوزيع المياه، الديوان
