@@ -18921,3 +18921,27 @@ entries:
         منشأة عمومية تنتج عجين الحلفاء والورق. اكتتبت الدولة في الزيادة في رأس مالها سنتي
         1984 و1985، ثم سنة 1988 في إطار تطهيرها.
       synonymes: []
+  - id: otd
+    acronyme: OTD
+    statut: valide
+    references: [dl61-15-otd, loi73-26-otd, loi2004-17-otd, minfin-ep-2025]
+    source_definition: {ref: dl61-15-otd, locator: "art. 1er à 4"}
+    # AR : intitulé « ديوان الأراضي الدولية » de la fiche de l'Office dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 88.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 88"}
+    voir_aussi: [office-cereales]
+    fr:
+      terme: Office des terres domaniales
+      definition: >
+        Établissement public créé en 1961, réputé commerçant, qui gère et met en valeur les
+        terres agricoles du domaine de l'État que celui-ci lui affecte, au moyen de complexes
+        agricoles et d'unités industrielles et alimentaires. En 2004, l'État abandonne
+        135,4 MD de ses créances sur l'Office.
+      synonymes: []
+    ar:
+      terme: ديوان الأراضي الدولية
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 1961، تُعتبر تاجرة، تتولّى التصرّف في الأراضي الفلاحية الدولية
+        التي تخصّصها لها الدولة وإحياءها، عبر مركّبات فلاحية ووحدات صناعية وغذائية. سنة 2004،
+        تخلّت الدولة عن 135,4 م د من مستحقاتها على الديوان.
+      synonymes: []
