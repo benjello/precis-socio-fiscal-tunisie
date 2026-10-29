@@ -1,0 +1,105 @@
+---
+title: "Index par institution"
+subtitle: "Où chaque caisse, chaque fonds et chaque entreprise publique est traité, livre par livre"
+format:
+  html:
+    include-in-header: ../accueil.html
+    toc: true
+    toc-depth: 2
+    toc-title: "Sommaire"
+---
+
+Le précis range ses chapitres par flux d'argent : une institution y apparaît donc dans plusieurs livres, selon ce qu'elle prélève, sert ou gère. Cette page renvoie chaque institution aux chapitres où elle est traitée. Elle ne résume rien : chaque lien mène au chapitre.
+
+Une institution n'est indexée que dans les chapitres où elle est un objet d'étude, et non partout où son nom est cité.
+
+<!-- TODO (rédacteur) : étendre l'index aux autres institutions (ministères, offices, banques publiques, Trésor) et à l'arabe ; vérifier à la relecture de chaque livre que les sigles ci-dessous renvoient aux bons chapitres. -->
+
+
+## Caisse nationale de sécurité sociale (CNSS)
+
+- [Des caisses du Protectorat aux caisses nationales](caisses/_histoire.html#sec-caisses-panorama), dans « Les caisses de sécurité sociale »
+- [Trois caisses, un même statut](caisses/_statut_cadre.html#sec-caisses-statut), dans « Les caisses de sécurité sociale »
+- [Une comptabilité par régime](caisses/_comptes_regimes.html#sec-caisses-regimes), dans « Les caisses de sécurité sociale »
+- [La longue période](caisses/_comptes_longue_periode.html#sec-caisses-longue-periode), dans « Les caisses de sécurité sociale »
+- [Les accidents du travail et les maladies professionnelles](cotisations_sociales/_accidents_travail.html#sec-cot-at), dans « Les cotisations sociales »
+- [Recouvrement, rendement, vue d'ensemble](cotisations_sociales/_bilan.html#sec-cot-bilan), dans « Les cotisations sociales »
+- [Le secteur privé : la CNSS](retraites/_secteur_prive.html#sec-secteur-prive), dans « Les retraites »
+- [Maladie, maternité, décès, accidents du travail, cessation d'activité pour raisons économiques](prestations_sociales/_autres_risques.html#sec-prest-autres-risques), dans « Les prestations sociales »
+- [Des protections distinctes à l'assurance maladie, 1951-2004](sante/_histoire.html#sec-soins-histoire), dans « La santé »
+- [La couverture des soins](sante/_couverture.html#sec-sante-couverture), dans « La santé »
+
+## Caisse nationale de retraite et de prévoyance sociale (CNRPS)
+
+- [Des caisses du Protectorat aux caisses nationales](caisses/_histoire.html#sec-caisses-panorama), dans « Les caisses de sécurité sociale »
+- [Trois caisses, un même statut](caisses/_statut_cadre.html#sec-caisses-statut), dans « Les caisses de sécurité sociale »
+- [L'État et les caisses](caisses/_etat_caisses.html#sec-caisses-etat), dans « Les caisses de sécurité sociale »
+- [Une comptabilité par régime](caisses/_comptes_regimes.html#sec-caisses-regimes), dans « Les caisses de sécurité sociale »
+- [Le secteur public : la CNRPS](retraites/_secteur_public.html#sec-secteur-public), dans « Les retraites »
+- [Un regard extérieur : la Banque mondiale](retraites/_regard_banque_mondiale.html#sec-banque-mondiale), dans « Les retraites »
+- [Le régime indiciaire](remunerations_publiques/_regime_indiciaire.html#sec-regime-indiciaire), dans « Les rémunérations publiques »
+- [Le régime conventionnel public](remunerations_publiques/_regime_conventionnel.html#sec-regime-conventionnel), dans « Les rémunérations publiques »
+- [Maladie, maternité, décès, accidents du travail, cessation d'activité pour raisons économiques](prestations_sociales/_autres_risques.html#sec-prest-autres-risques), dans « Les prestations sociales »
+- [Des protections distinctes à l'assurance maladie, 1951-2004](sante/_histoire.html#sec-soins-histoire), dans « La santé »
+- [La couverture des soins](sante/_couverture.html#sec-sante-couverture), dans « La santé »
+
+## Caisse nationale d'assurance maladie (CNAM)
+
+- [Trois caisses, un même statut](caisses/_statut_cadre.html#sec-caisses-statut), dans « Les caisses de sécurité sociale »
+- [Une comptabilité par régime](caisses/_comptes_regimes.html#sec-caisses-regimes), dans « Les caisses de sécurité sociale »
+- [Les accidents du travail et les maladies professionnelles](cotisations_sociales/_accidents_travail.html#sec-cot-at), dans « Les cotisations sociales »
+- [Maladie, maternité, décès, accidents du travail, cessation d'activité pour raisons économiques](prestations_sociales/_autres_risques.html#sec-prest-autres-risques), dans « Les prestations sociales »
+- [Des protections distinctes à l'assurance maladie, 1951-2004](sante/_histoire.html#sec-soins-histoire), dans « La santé »
+- [La couverture des soins](sante/_couverture.html#sec-sante-couverture), dans « La santé »
+- [L'hôpital public : soins, financement et personnels](sante/_hopital.html#sec-sante-hopital), dans « La santé »
+- [La médecine de ville : consultations et honoraires](sante/_medecine_ville.html#sec-sante-ville), dans « La santé »
+
+## Caisse générale de compensation (CGC)
+
+- [La Caisse](compensation/_institution.html#sec-compensation-caisse), dans « La compensation »
+- [Les réformes, texte par texte](compensation/_reformes.html#sec-compensation-reformes), dans « La compensation »
+- [La dépense budgétaire](compensation/_depense.html#sec-compensation-longue-periode), dans « La compensation »
+- [Ce qu'en disent les rapports extérieurs](compensation/_exterieurs.html#sec-compensation-sources-exterieures), dans « La compensation »
+
+## Caisse des prêts et de soutien des collectivités locales (CPSCL)
+
+- [Les compétences : qui fait quoi, qui décide](finances_locales/_competences.html#sec-fl-competences), dans « Les finances locales »
+- [Les transferts de l'État](finances_locales/_transferts.html#sec-fl-transferts), dans « Les finances locales »
+
+## Fonds national de l'emploi (FNE)
+
+- [Les politiques de l'emploi](marche_travail/_politiques_emploi.html#sec-mt-politiques-emploi), dans « Le marché du travail »
+
+## Société tunisienne de l'électricité et du gaz (STEG)
+
+- [L'électricité et le gaz](compensation/_electricite_gaz.html#sec-compensation-electricite-gaz), dans « La compensation »
+- [Les carburants](compensation/_carburants.html#sec-compensation-carburants-chapitre), dans « La compensation »
+- [Les grandes entreprises](entreprises_publiques/_grandes_entreprises.html#sec-ep-lp-entreprises), dans « Les entreprises publiques »
+- [Les transferts du budget](entreprises_publiques/_transferts.html#sec-ep-transferts), dans « Les entreprises publiques »
+- [Les garanties, les prêts et les arriérés](entreprises_publiques/_garanties.html#sec-ep-garanties-prets), dans « Les entreprises publiques »
+
+## Entreprise tunisienne d'activités pétrolières (ETAP)
+
+- [Les carburants](compensation/_carburants.html#sec-compensation-carburants-chapitre), dans « La compensation »
+- [Les grandes entreprises](entreprises_publiques/_grandes_entreprises.html#sec-ep-lp-entreprises), dans « Les entreprises publiques »
+
+## Société tunisienne des industries de raffinage (STIR)
+
+- [Les carburants](compensation/_carburants.html#sec-compensation-carburants-chapitre), dans « La compensation »
+- [Les grandes entreprises](entreprises_publiques/_grandes_entreprises.html#sec-ep-lp-entreprises), dans « Les entreprises publiques »
+- [Les transferts du budget](entreprises_publiques/_transferts.html#sec-ep-transferts), dans « Les entreprises publiques »
+
+## Société nationale des chemins de fer tunisiens (SNCFT)
+
+- [Le transport public](compensation/_transport.html#sec-compensation-transport), dans « La compensation »
+- [Les grandes entreprises](entreprises_publiques/_grandes_entreprises.html#sec-ep-lp-entreprises), dans « Les entreprises publiques »
+
+## Tunisair
+
+- [Restructurer : le fonds de 1986, les dettes reprises et les banques publiques](entreprises_publiques/_restructuration.html#sec-ep-restructuration), dans « Les entreprises publiques »
+- [Ce qu'est une entreprise publique, et la tutelle de l'État](entreprises_publiques/_statut.html#sec-ep-statut), dans « Les entreprises publiques »
+- [Le transport public](compensation/_transport.html#sec-compensation-transport), dans « La compensation »
+
+## Office national de l'assainissement (ONAS)
+
+- [Les transferts de l'État](finances_locales/_transferts.html#sec-fl-transferts), dans « Les finances locales »
