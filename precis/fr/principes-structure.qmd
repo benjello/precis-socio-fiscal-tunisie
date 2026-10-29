@@ -1,0 +1,93 @@
+---
+title: "Principes et structure"
+subtitle: "Les règles qui gouvernent le découpage du précis et son écriture : un travail en cours, soumis à vos retours"
+format:
+  html:
+    include-in-header: ../accueil.html
+---
+
+[← Retour à l'accueil](index.html)
+
+::: {.lecture-precis}
+**Un travail en cours.** Cette page expose les principes et la structure du précis. Ils sont encore à l'état d'ébauche, et nous cherchons des retours : ce qui vous paraît mal placé, ce qui manque, les références et les données que vous conseillez. Voir [Les retours que nous attendons](#sec-ps-retours).
+:::
+
+## L'ouvrage
+
+Le précis documente, texte par texte, les politiques publiques de la Tunisie depuis l'indépendance, en commençant par la législation sociale et fiscale, et rattache chaque règle à sa source au *Journal officiel*. Il est en ligne, en accès libre, en français et, pour une partie des volumes, en arabe. Il est publié sous licence libre (CC BY-SA 4.0).
+
+Trois choix le caractérisent.
+
+- **Tout est sourcé.** Chaque taux, chaque plafond, chaque condition est daté et renvoie à l'article du texte qui le fixe ; chaque chiffre renvoie à la page de la publication d'où il vient. Aucune valeur n'est retenue sans source vérifiée ; une case laissée vide signale ce qui reste à établir.
+- **L'économique passe avant le juridique.** Le précis cherche l'effet des dispositifs sur les revenus, le budget et la distribution, sur le temps long, plus que leur détail administratif.
+- **Il est fait pour servir.** Les tableaux de paramètres sont engendrés depuis une base de données législative datée, qui sert aussi à simuler une réforme sur les règles documentées.
+
+Le recours à l'intelligence artificielle et la manière dont le précis est constitué sont décrits dans [Comment ce précis est constitué](comment-constitue.html).
+
+## Les neuf principes {#sec-ps-principes}
+
+Neuf règles gouvernent le découpage et l'écriture. Elles valent pour tous les volumes.
+
+1. **Suivre l'argent.** Les volumes sont rangés par flux, du revenu primaire au revenu disponible : ce qui est gagné, ce qui est prélevé, ce qui est servi, puis les politiques sectorielles, les institutions, et la synthèse où tout se compose.
+2. **Un fait a un seul domicile.** Ce qui est prélevé, et l'organisme qui le gère, vit dans le volume du financement ; ce qui est servi en espèces, dans les retraites ou les prestations sociales ; les soins, dans la santé ; un prix administré, dans la compensation ; une règle de salaire, dans les revenus du travail. L'autre volume reçoit une phrase et un lien, ou une figure tirée des mêmes données, jamais la prose recopiée. Un dispositif qui n'existe que pour un secteur vit dans le volume sectoriel ; un cas d'un instrument général vit dans le volume de l'instrument.
+3. **La loi là où elle fixe un revenu ou un droit.** Là où elle ne fait que prélever, le volume de l'instrument suffit, et la synthèse montre la composition des revenus. C'est pourquoi il n'y a pas de volume du capital : ses règles sont fiscales.
+4. **Les ruptures au premier plan, le détail replié.** Chaque chapitre dit d'abord les ruptures de politique publique, ce que la loi cherche dans ses propres mots, et leur mise en œuvre ; le long tableau des textes se lit dessous, replié, avec pour chaque ligne sa portée : rupture, étape ou ajustement.
+5. **Aucun chiffre isolé.** Toute valeur vient avec sa vue d'évolution datée. Le budgétaire se présente d'abord, en entonnoir ; les rapports extérieurs et les évaluations ensuite, titrés comme tels, chacun avec sa méthode. Tout PIB dit sa base.
+6. **L'état du droit dit qui est couvert et qui ne l'est pas**, avec la série qui le mesure. L'informel est une colonne de chaque état du droit, un chapitre de formalisation dans le marché du travail, un chapitre de couverture dans la synthèse.
+7. **Ce qu'en dit l'économie, à part et daté.** Chaque chapitre de dispositif se termine par une page sur l'état des connaissances économiques : la question, la théorie, l'empirique, ce que le praticien retient. Elle ne se mêle ni au droit ni au budgétaire, ne recommande rien, et porte la date à laquelle la littérature a été arrêtée.
+8. **Un cadre commun.** Un volume du cadre des finances publiques (périmètre des administrations, recettes par nature, dépense par fonction, comptes des ménages) donne à chaque volume son dénominateur, et sert de contrôle de cohérence et de carte des manques.
+9. **Rien ne naît ex nihilo.** Chaque dispositif est présenté à partir de ce qui le précédait, Protectorat compris, et chaque réforme avec son contexte, dit avec les mots des sources de l'époque (exposé des motifs, plan de développement, rapports contemporains), jamais en interprétation. Chaque volume s'ouvre sur une frise de ses dates clés et de la filiation de ses régimes ; le cadre des finances publiques donne la périodisation commune (Protectorat, indépendance, expérience collectiviste, années 1970, ajustement de 1986, années 1990-2000, 2011 et après) contre laquelle toutes les chronologies se lisent.
+
+## Trois angles à ajouter {#sec-ps-angles}
+
+Ces principes sont encore à l'état d'ébauche. Trois angles, que le précis traite peu aujourd'hui, doivent y être ajoutés.
+
+- **Un angle budgétaire** : comment chaque règle se lit dans le budget de l'État (recettes, dépenses, soldes, arbitrages entre lois de finances).
+- **Un angle de comptabilité nationale** : comment les flux se classent et se mesurent dans les comptes (secteurs institutionnels, périmètre des administrations publiques, traitement des entreprises publiques, des garanties et de la dette).
+- **Un angle d'analyse économique, fondé sur l'état de l'art en économie publique** : ce que la littérature dit des effets des politiques décrites, et la place de ces effets dans chaque chapitre. Le principe 7 n'en couvre aujourd'hui qu'une partie.
+
+## La structure : six parties {#sec-ps-structure}
+
+| Partie | Volumes | Ce qui les réunit |
+|---|---|---|
+| I. Les revenus primaires | Le marché du travail ; Les rémunérations dans le secteur public ; L'informel | ce que la loi fixe du revenu avant tout prélèvement |
+| II. Les prélèvements | La fiscalité ; Les finances locales ; Les cotisations sociales | ce qui est prélevé, et qui le gère |
+| III. Les transferts en espèces | Les retraites ; Les prestations sociales | ce qui est servi en argent |
+| IV. Les politiques sectorielles | La santé ; La compensation ; L'éducation et la formation ; plus tard le transport, le logement, l'environnement | ce qui n'existe que pour un secteur : soins, prix administrés, programmes |
+| V. Les institutions | Les caisses de sécurité sociale ; Les entreprises publiques | le statut et les comptes des organismes |
+| VI. La synthèse | Le cadre des finances publiques ; La redistribution | où les instruments se rencontrent |
+
+Le rangement en ligne est celui de la [page d'accueil](index.html). Deux points de cette structure sont ouverts.
+
+- **Les caisses de sécurité sociale.** Elles sont aujourd'hui avec les entreprises publiques dans la partie V. Les cotisations et les caisses se renvoient l'une à l'autre : on envisage de les réunir en un seul volume du financement, dans la partie II, et de réserver la partie V aux entreprises et établissements publics.
+- **La partie VI** est à écrire.
+
+<!-- TODO (rédacteur) : dire le choix retenu pour les caisses (partie II ou partie V) et le titre de la partie V quand il sera arrêté. -->
+
+## Comment un chapitre est écrit {#sec-ps-chapitre}
+
+Un chapitre de dispositif suit toujours le même plan, pour que le lecteur s'y retrouve d'un volume à l'autre.
+
+1. **Vue d'ensemble** : l'essentiel en une phrase, une figure ou un tableau court, deux à quatre points.
+2. **La mise en place** : ce qui existait avant, puis le texte fondateur, ce qu'il reprend, ce qu'il écarte, ce qu'il crée.
+3. **Les grandes réformes**, dans l'ordre des dates : pour chacune, ce que la loi cherche dans ses propres mots, l'état avant et après, la mise en œuvre étape par étape. Une rupture est l'arrivée d'un nouveau dispositif, d'un nouveau public ou d'un nouvel objectif ; un changement de niveau d'un paramètre n'en est pas une.
+4. **L'état du droit à sa date** : les règles en vigueur, la population couverte et son complément.
+5. **Une section par disposition secondaire**, qui définit son objet avant d'en suivre l'évolution.
+6. **La longue période** : les séries budgétaires, rapportées au cadre des finances publiques.
+7. **Ce qu'en dit l'économie** : une page, datée.
+
+Sous chaque section, le tableau complet des textes se lit replié : date d'effet, texte et article, ce qui change, portée. Les références de loi ne sont pas dans le fil de la prose : un signal sur le mot ouvre une infobulle qui donne le texte, l'article et la page, avec un lien vers le *Journal officiel*.
+
+Un volume compte cinq types de chapitres, reconnaissables à leur titre : le dispositif (le plan ci-dessus) ; l'institution (naissance, statut, ce qu'elle sert, comptes, longue période) ; le cadre (les notions, un seul par volume) ; la longue période du volume (budgétaire seulement) ; les rapports et études (chaque étude avec sa méthode : qui, quelles données, quel périmètre, quel calcul). Un chapitre suit une seule chronologie de réformes ; au-delà d'environ 25 000 mots, il se scinde.
+
+La page « Ce qu'en dit l'économie » répond à quatre questions : ce que le dispositif cherche selon l'économiste, qui n'est pas toujours ce que dit la loi ; ce que dit la théorie, en deux ou trois résultats avec leurs hypothèses ; ce que mesure l'empirique, d'abord les synthèses internationales avec leurs plages d'estimation, puis les travaux sur la Tunisie, souvent minces ; ce que le praticien retient, ce qui est établi, ce qui est débattu, ce que les données tunisiennes ne permettent pas de trancher. Aucun chiffre sans sa plage, son pays et sa période ; aucune recommandation.
+
+## Les retours que nous attendons {#sec-ps-retours}
+
+Nous cherchons des retours à trois niveaux.
+
+- **Sur la structure** : l'ordre des parties, la frontière entre les transferts en espèces et les politiques sectorielles, la place des caisses, ce qui manque ou est mal rangé.
+- **Sur les trois angles** : ce qu'un lecteur du budget, des comptes nationaux ou de l'économie publique attend de trouver, et les références ou les données conseillées pour chacun. Quelques lignes ou quelques titres suffisent.
+- **Sur le contenu des volumes** : une inexactitude, un texte ou un document absent, une lecture d'un texte ambigu à trancher.
+
+Pour réagir : répondre au message de l'auteur si vous en avez reçu un, ou ouvrir un formulaire sur le dépôt du projet ([donner son avis sur la forme](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/new?template=forme.yml), [signaler une erreur](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/new?template=erratum.yml), [signaler ou transmettre un document](https://github.com/benjello/precis-socio-fiscal-tunisie/issues/new?template=document.yml)). Aucune compétence technique n'est nécessaire ; la page [À propos et contribuer](a-propos.html) détaille les démarches. Toute contribution est sourcée et datée ; rien n'est publié sous le nom d'une personne sans son accord.
