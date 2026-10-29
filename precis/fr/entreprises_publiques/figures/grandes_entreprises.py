@@ -668,6 +668,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "attt": "ATTT"}
               "oaca": "OACA"}
               "ommp": "OMMP"}
+              "ctn": "CTN"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -1011,6 +1012,11 @@ FIGURES = {
                     "fig_ep_oaca_fiches"),
     "ommp_fiches": (lambda: fig_fiche("ommp"), lambda: table_fiche("ommp"), (S_FICHES,),
                     "fig_ep_ommp_fiches"),
+    "ctn_fiches": (lambda: fig_fiche("ctn"), lambda: table_fiche("ctn"), (S_FICHES,),
+                   "fig_ep_ctn_fiches"),
+    "ctn_budget": (lambda: fig_budget("ctn", BLEU, "provisoire, estimé ou probable"),
+                   lambda: table_budget("ctn"),
+                   (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_ctn_budget"),
 }
 
 

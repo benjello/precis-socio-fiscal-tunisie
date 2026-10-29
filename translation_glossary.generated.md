@@ -127,6 +127,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
 | Commission régionale des bourses scolaires | اللجنة الجهوية للمنح المدرسية |  |
 | Compagnie des phosphates de Gafsa | شركة فسفاط قفصة | CPG |
+| Compagnie tunisienne de navigation | الشركة التونسية للملاحة | CTN |
 | Compensation des carburants | دعم المحروقات |  |
 | Compensation des prix | الدعم |  |
 | Compensation du transport | دعم النقل |  |

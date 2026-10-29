@@ -3934,6 +3934,7 @@ Ce qui reste :
   - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. L'ATTT y est ajoutée le 29 octobre 2026 (voir l'entrée ATTT). Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports, la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ;
   - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ; l'Office de l'aviation civile et des aéroports a sa section depuis le 29 octobre 2026 (entrée ci-dessous) ;
   - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports et la CTN, au tableau du ministère du Transport, n'ont pas de fiche versée ; l'OMMP a la sienne depuis le 29 octobre 2026 (entrée suivante) ;
+  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ; la CTN a sa section depuis le 29 octobre 2026 (ci-dessous) ;
   - Tunisie Autoroutes : acte de constitution (13 mai 1992 d'après le rapport LF 2020, p. 121) non
     identifié au JORT ; décrets de concession des autres sections (n° 2000-645, 2002-537,
     2004-1073, 2004-1074, 2016-256, 2019-661 à 2019-663) et de péage des autres sections (n° 97-1003,
@@ -3978,6 +3979,29 @@ Ce qui reste :
     est versé) ; transferts éventuels du budget, à chercher dans l'annexe 8 ; grandeurs d'activité
     (marchandises, passagers) non relevées ; éditions françaises LF 2020 et LF 2021 (prose) non
     versées ; régime fiscal propre : aucun texte identifié par les intitulés.
+- **CTN — section écrite le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-ge-ctn`, en fin de
+  chapitre). Figures `fig-ep-ctn-budget` et `fig-ep-ctn-fiches`, tableaux repliés
+  `tbl-ep-ctn-fiche-a` et `-b`, registre `tbl-ep-registre-ctn` (loi n° 59-34, image ; lois n° 75-29,
+  77-35, 78-29, 80-87, 83-75, 84-60, capital, image ; décret-loi n° 76-3 et loi n° 76-88, lois
+  n° 77-9 et 78-13, emprunts, image ; lois n° 96-72 et 98-27 (image), décret-loi n° 2011-74,
+  garanties ; arrêté du 4 avril 2017, redevances portuaires ; loi de finances pour 2024, art. 42,
+  édition arabe, suspension de TVA). Glossaire : `ctn`. **Fiche du ministère des Finances versée
+  le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-ctn`) : LF 2022 p. 54, LF 2024 p. 82, LF 2025 p. 57 ; bilan non imprimé pour
+  2021-2023 (comptes non approuvés) ; écart imprimé des produits de 2022 (LF 2024, 20,0) déclaré.
+  **Reste** :
+  - effectifs de l'édition LF 2022 (734 ; 698 ; 700) inférieurs d'environ 400 à ceux des autres
+    éditions : cause à établir ;
+  - capital de 126 MD (rapport LF 2020) pour 18,9 MD de souscriptions de l'État lues (1959-1984) :
+    augmentations postérieures à 1984 non identifiées dans jort_cache.db ; statuts de 1959 visés,
+    non publiés ;
+  - date d'effet de la loi n° 98-27 : mention de dépôt du JORT n° 30 de 1998 à relever dans
+    l'édition arabe ;
+  - textes **dans le corpus local, non lus** : décrets n° 95-2435, 99-2046, 99-2047, 2000-2903,
+    2002-1606, 2015-241, 2018-430 ; arrêtés de 1994, 1995, 2003, 2013 ;
+  - prorogation de l'art. 42 de la loi de finances pour 2024 au-delà de 2026 : à vérifier ;
+  - éditions françaises LF 2020 (p. 64-66) et LF 2021 : comptes dans la prose, non versés ;
+    grandeurs d'activité (passagers, remorques) non relevées ; comptes publiés : **à obtenir**.
 - **Tunisair et RNTA — sections écrites le 28 octobre 2026** (`_transports.qmd` pour Tunisair, `_offices.qmd` pour la RNTA`,
   `#sec-ep-ge-tunisair` et `#sec-ep-ge-rnta`, après l'ONAS et avant la SNCFT). La RNTA est la
   Régie nationale des **tabacs et des allumettes** (code `rnta` de toutes les séries, ministère des

@@ -471,3 +471,119 @@ ge.tableau_fiche_detail("attt", ("LF2024", "LF2025"),
 <!-- TODO (documentaliste) : fiche de l'Agence technique des transports terrestres des éditions LF 2022 (p. 55), LF 2024 (p. 85) et LF 2025 (p. 59) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-attt) ; bilans de 2022 (LF 2024) et de 2023 (LF 2025) déséquilibrés, écarts déclarés. Lus sur les pages, sans série : transferts nuls (LF 2022 p. 106, LF 2023 p. 201, LF 2024 p. 155), contribution aux ressources propres de l'État (LF 2022 p. 102, LF 2023 p. 197, LF 2024 p. 151 ; dans l'édition LF 2025, aucune page ne nomme l'agence hors de la fiche, des pages d'analyse et des dettes et créances croisées) ; ce que couvre cette contribution (redevances, impôts et taxes collectés pour l'État ?) n'est pas dit par le rapport : à établir avant toute comparaison avec les produits de l'agence, dettes et créances croisées (LF 2023 p. 190 et 194, LF 2024 p. 142 et 146, LF 2025 p. 119 et 123) ; ratio de couverture des charges (LF 2024 p. 165) non relevé. Grandeurs d'activité non relevées : immatriculations, permis, visites techniques. « Autres produits » d'exploitation supérieurs aux recettes : nature à établir (états financiers de l'agence, à obtenir). Date de dépôt du JORT n° 104 de 1998 (loi n° 98-108) : absente de la couche texte et de la dernière page, édition arabe sans couche texte ; à lire à l'image, puis ajouter cinq jours. Article 38 de la loi de finances pour 1978 (loi n° 77-81), abrogé par la loi n° 95-61 : non lu. Régime fiscal de l'agence après l'abrogation de l'article 9 de la loi n° 95-61 : non établi. Barème des redevances en vigueur après le décret n° 2007-704 : aucun texte modificatif identifié par les intitulés de jort_cache.db ; à vérifier dans les lois de finances et le plein texte. Textes repérés, non lus : loi n° 95-60 (code de la route, visite technique) ; décret n° 95-2037 (organisation de l'agence de visite technique des véhicules) ; décret n° 97-789 (techniciens) ; décret n° 2000-148 (périodicité de la visite technique) et ses modificatifs n° 2005-1497, 2007-705, 2007-4102, 2021-82 ; décret n° 2002-1672 (statut particulier du personnel) ; décret n° 2004-2191 (organigramme) ; décret n° 2011-4625 (déclaration des biens, édition arabe) ; arrêtés du 8 juin 1999 (gares routières), du 7 septembre 2018 (conservation des documents) et du 27 mars 2023 (informations des services fiscaux et du recouvrement). Garanties de l'État, capital, contrat-programme : aucun texte repéré par les intitulés. -->
 
 <!-- TODO (documentaliste) : SNCFT : statuts de 1969 (loi n° 69-31 du 9 mai 1969, JORT n° 19, p. 581-584) non lus ; longue période avant 2018 à chercher (rapports annuels de la société, annexe 8 pour les transferts 2016-2024). -->
+
+## La Compagnie tunisienne de navigation (CTN) {#sec-ep-ge-ctn}
+
+La garantie de l'État et la dette garantie de l'ensemble des entreprises sont exposées au chapitre « Les garanties, les prêts et les arriérés » (@sec-ep-garanties).
+
+**La [Compagnie tunisienne de navigation](#g-ctn), société de transport maritime de passagers, de véhicules et de marchandises créée en 1959, dont l'État a souscrit le capital de 1959 à 1984 et garanti des emprunts d'achat de navires, reçoit du budget 22,0 MD en 2020 et aucun transfert les autres années de 2017 à 2022 ; en perte de 2018 à 2020, elle dégage un résultat positif de 2021 à 2023, chiffres estimés pour 2022 et 2023.**
+
+```{python}
+#| label: fig-ep-ctn-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "ctn_budget",
+    caption=("Compagnie tunisienne de navigation (CTN) : transferts du budget, résultat net, "
+             "effectif et charges de personnel, exercices 2016-2023, d'après le rapport sur les "
+             "entreprises publiques. Source : ministère des Finances [@minfin-ep-2020, p. 65 ; "
+             "@minfin-ep, p. 65-66 et 149-150 ; @minfin-ep-2022, p. 54 et 105 ; "
+             "@minfin-ep-2023, p. 200 ; @minfin-ep-2024, p. 29, 82 et 154 ; "
+             "@minfin-ep-2025, p. 20 et 57]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire, estimé ou probable. Les transferts de 2017 à 2019, de 2021 et de 2022 sont "
+        "des zéros imprimés. L'effectif de 2018 et de 2019 est celui de l'édition LF 2022 "
+        "(734 et 698 agents) ; les éditions LF 2020 et LF 2021 donnent 1 195 et 1 156 agents "
+        "pour les mêmes années. Le résultat net est celui des classements des dix premiers "
+        "résultats positifs et négatifs de chaque édition, qui ne disent pas le statut du "
+        "chiffre : la CTN n'y figure qu'en 2021, pour 16,4 MD dans les éditions LF 2024 et "
+        "LF 2025, quand la fiche de l'édition LF 2025 donne 29,8 MD, chiffre réalisé. "
+        "« n. c. » : la société n'est dans aucun classement de l'exercice ; « n. d. » : le "
+        "rapport ne donne pas la grandeur. Ni l'un ni l'autre n'est un zéro."),
+)
+```
+
+- **Ce que l'État lui confie.** Selon le rapport du ministère des Finances annexé au projet de loi de finances pour 2020, la CTN est une société anonyme créée en 1959, au capital de 126 MD, dont l'État détient 86,2 % ; elle assure des liaisons régulières entre la Tunisie et les ports de Marseille et de Gênes pour les passagers et les véhicules, et transporte des marchandises en remorques, en conteneurs et à bord de navires rouliers, avec six navires en propriété et deux navires affrétés [@minfin-ep-2020, p. 64]. Les tableaux du rapport la rangent parmi les entreprises sous tutelle du ministère du Transport.
+- **Ce que l'État apporte au capital.** [En 1959](#r-ep-ctn-1959), la loi approuve les statuts de la compagnie et autorise l'État à souscrire 70 000 dinars à son capital, prélevés sur le Fonds d'industrialisation et de développement. Six lois autorisent ensuite l'État à souscrire à ses augmentations de capital : 1 150 000 dinars [en 1975](#r-ep-ctn-1975), 2 550 000 dinars [en 1977](#r-ep-ctn-1977-capital) et autant [en 1978](#r-ep-ctn-1978-capital), 1 500 000 dinars [en 1980](#r-ep-ctn-1980), 3 918 750 dinars [en 1983](#r-ep-ctn-1983), par conversion de prêts accordés par l'État, et 7 143 750 dinars [en 1984](#r-ep-ctn-1984).
+- **Ce que l'État garantit.** De 1976 à 2011, la loi approuve les emprunts de la compagnie pour acheter des navires, puis la garantie que l'État leur accorde : une convention de crédit avec la Bank of America [en 1976](#r-ep-ctn-1976) ; deux prêts du chantier naval japonais Naikai Shipbuilding [en 1977](#r-ep-ctn-1977-pret) ; un prêt du Japon à l'État pour renforcer les moyens de transport de la compagnie [en 1978](#r-ep-ctn-1978-japon) ; la garantie de l'État à 191,7 millions de deutsche marks de la Kreditanstalt für Wiederaufbau pour deux navires rouliers transbordeurs [en 1996](#r-ep-ctn-1996), à 801,9 millions de francs français d'Eksportfinans et de la Banque nationale de Paris pour un car-ferry [en 1998](#r-ep-ctn-1998) et à 160,5 millions d'euros de la Société générale et de BNP Paribas pour un navire à passagers [en 2011](#r-ep-ctn-2011). De 2010 à 2024, aucune ligne de la CTN n'apparaît parmi les paiements de dette garantie que la Cour des comptes relève dans ses rapports sur la clôture du budget (@tbl-ep-cdc-garantie).
+- **Ce que l'État verse, et ce dont il la dispense.** Le rapport porte des transferts du budget nuls de 2017 à 2019, de 22,0 MD en 2020, nuls en 2021 et en 2022, chiffre provisoire [@minfin-ep, p. 149-150 ; @minfin-ep-2022, p. 105 ; @minfin-ep-2023, p. 200 ; @minfin-ep-2024, p. 154]. La fiche de la société ne porte aucune subvention d'exploitation de 2018 à 2023 : 0 imprimé dans les éditions LF 2022 et LF 2024, case laissée vide dans l'édition LF 2025 (@fig-ep-ctn-fiches). [Du 1^er^ janvier 2024 au 31 décembre 2026](#r-ep-ctn-2024), la loi de finances suspend la taxe sur la valeur ajoutée sur les importations et les achats locaux d'équipements, de matériel, de pièces de rechange, de matières et de services nécessaires à son activité. [En 2017](#r-ep-ctn-2017), un arrêté réduit de 25 %, pour six mois à partir du 31 octobre 2016, les redevances portuaires d'abri et de stationnement de ses navires sur la ligne Sfax–Novorossiisk par Istanbul.
+- **Des pertes jusqu'en 2020, un bénéfice ensuite.** Les produits d'exploitation sont de 455,5 MD en 2018 et de 481,4 MD en 2019 ; ils tombent à 360,4 MD en 2020, puis passent à 513,7 MD en 2021, à 621,6 MD en 2022 et à 666,2 MD en 2023, chiffres estimés pour les deux dernières années. Le résultat d'exploitation est de 4,1 MD en 2018 et de −3,7 MD en 2019 ; il est de −27,0 MD en 2020, chiffre estimé de l'édition LF 2024 (−38,1 MD dans l'édition LF 2022, chiffre probable), puis de 46,3 MD en 2021, 22,3 MD en 2022 et 54,0 MD en 2023. Le résultat net est de −52,9 MD en 2018, −8,6 MD en 2019 et −50,7 MD en 2020 avant modifications comptables (−58,2 MD après), puis de 29,8 MD en 2021, 11,5 MD en 2022 et 35,4 MD en 2023, chiffres estimés pour les deux dernières années (@fig-ep-ctn-fiches). L'effectif est de 1 059 agents en 2021, 1 075 en 2022 et 988 en 2023, chiffre estimé ; les charges de personnel passent de 62,1 MD en 2018 à 74,3 MD en 2023 (@fig-ep-ctn-budget, @tbl-ep-effectifs-entreprises).
+- **Des fonds propres qui deviennent négatifs, une dette envers les banques et les entreprises publiques.** Les fonds propres sont de 7,5 MD fin 2018 et de −2,4 MD fin 2019 dans l'édition LF 2022, de −71,7 MD fin 2020 dans l'édition LF 2024 et de −43,0 MD fin 2021 dans l'édition LF 2025. Dans l'édition LF 2022, la dette passe de 346,0 MD fin 2018 à 409,2 MD fin 2019 et à 387,3 MD fin 2020, dont 208,0, 195,2 puis 173,1 MD envers les banques et 73,0, 137,8 puis 190,5 MD envers les entreprises publiques. Le total des passifs, hors fonds propres, est de 517,8 MD fin 2020 et de 469,5 MD fin 2021, dont 273,5 puis 294,6 MD envers les fournisseurs. Les éditions LF 2024 et LF 2025 n'impriment pas le bilan des exercices suivants : à la date de chacune, la société n'a pas approuvé ses états financiers, de 2021 et 2022 pour la première, de 2022 et 2023 pour la seconde.
+- **Des éditions qui ne concordent pas.** L'effectif de l'édition LF 2022 est inférieur d'environ 400 agents à celui des autres éditions : 734 agents en 2018 contre 1 195 dans l'édition LF 2020, chiffre probable [@minfin-ep-2020, p. 65] ; 700 en 2020 contre 1 096 dans l'édition LF 2024, chiffre estimé. Le résultat net de 2018 est de −31,3 MD dans l'édition LF 2020, chiffre estimé [@minfin-ep-2020, p. 66], et de −52,9 MD dans l'édition LF 2022. Celui de 2021 passe de 16,4 MD (LF 2024, estimé) à 29,8 MD (LF 2025, réalisé), et les charges d'exploitation de 486,0 à 467,4 MD. Dans l'édition LF 2024, enfin, les produits d'exploitation de 2022 (621,6 MD) dépassent de 20,0 MD la somme des recettes (576,4 MD) et des autres produits (25,2 MD) ; l'édition LF 2025 imprime 596,4 MD de recettes pour le même total et boucle.
+
+:::: {.chronologie-repliable titre="Compagnie tunisienne de navigation : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et textes de capital, de garantie et d'avantage fiscal, 1959-2023"}
+
+```{python}
+#| label: fig-ep-ctn-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "ctn_fiches",
+    caption=("Compagnie tunisienne de navigation (CTN) d'après le rapport sur les entreprises "
+             "publiques, exercices 2018-2023, en millions de dinars courants et en agents : chaque "
+             "exercice dans la dernière édition qui le donne ; dette par créancier de l'édition "
+             "LF 2022. Source : ministère des Finances [@minfin-ep-2022, p. 54 ; "
+             "@minfin-ep-2024, p. 82 ; @minfin-ep-2025, p. 57]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; seuls 2018 et "
+        "2021 ne sont pas hachurés. « 0 » : zéro imprimé ; « – » : case laissée vide, ainsi la "
+        "subvention d'exploitation de 2021 à 2023 dans l'édition LF 2025. La dette totale n'est "
+        "imprimée que par l'édition LF 2022, le total des passifs que par les éditions LF 2024 "
+        "et LF 2025, pour 2020 et 2021 seulement : le bilan de 2022 et de 2023 n'est pas "
+        "imprimé. Le résultat net tracé est celui d'avant modifications comptables. L'effectif "
+        "de 2018 et de 2019 est celui de l'édition LF 2022, inférieur d'environ 400 agents à "
+        "celui des autres éditions. Toutes les valeurs imprimées, édition par édition, sont "
+        "dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("ctn", ("LF2022",),
+    caption=("Compagnie tunisienne de navigation, édition LF 2022 : dette par créancier, fonds "
+             "propres, investissements, résultat et emploi, exercices 2018-2020 ; 2019 marqué "
+             "« * » (provisoire), 2020 « ** » (probable) ; fonds propres et résultats reportés de "
+             "2020 laissés vides. Source : ministère des Finances [@minfin-ep-2022, p. 54]"),
+    tbl_id="tbl-ep-ctn-fiche-a")
+ge.tableau_fiche_detail("ctn", ("LF2024", "LF2025"),
+    caption=("Compagnie tunisienne de navigation, éditions LF 2024 et LF 2025 : bilan et "
+             "résultat, exercices 2020-2023 ; les cases du bilan sont remplacées par une note pour "
+             "2021 et 2022, puis pour 2022 et 2023 : la société n'a pas approuvé ses états "
+             "financiers. Dans l'édition LF 2024, les produits d'exploitation de 2022 dépassent "
+             "de 20,0 la somme des recettes et des autres produits. Source : ministère des "
+             "Finances [@minfin-ep-2024, p. 82 ; @minfin-ep-2025, p. 57]"),
+    tbl_id="tbl-ep-ctn-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-ctn-1959}entre le [19]{.insecable} et le [22 mars 1959]{.insecable} : *Journal officiel* des 17-20 mars 1959, exécutoire un jour franc après sa parution | loi n° 59-34 du 16 mars 1959 [@loi59-34-ctn, art. 1^er^, p. 224] | le secrétaire d'État aux Finances et au Commerce, pour le compte de l'État, est autorisé à souscrire au capital de la « Compagnie tunisienne de navigation » à concurrence de 70 000 dinars, prélevés sur les disponibilités du Fonds d'industrialisation et de développement créé par le décret du 29 juin 1957 ; la loi vise les statuts de la compagnie, qu'elle ne publie pas | mise en place |
+| []{#r-ep-ctn-1975}[1^er^ mai 1975]{.insecable} : *Journal officiel* du 29 avril 1975, exécutoire un jour franc après sa parution | loi n° 75-29 du 28 avril 1975 [@loi75-29-ctn, article unique, p. 844] | le ministre délégué auprès du Premier ministre, chargé du Plan, pour le compte de l'État, est autorisé à souscrire à l'augmentation du capital de la compagnie à concurrence de 1 150 000 dinars | étape |
+| []{#r-ep-ctn-1976}[17 octobre 1976]{.insecable} : *Journal officiel* du 15 octobre 1976, exécutoire un jour franc après sa parution | décret-loi n° 76-3 du 12 octobre 1976 [@dl76-3-ctn, art. 1^er^, p. 2410], ratifié par la loi n° 76-88 du 4 novembre 1976 [@loi76-88-ctn, article unique, p. 2698] | approbation de la convention de crédit conclue le 1^er^ octobre 1976 entre la compagnie et la Bank of America ; le montant est dans la convention annexée, non publiée | étape |
+| []{#r-ep-ctn-1977-pret}entre le [9]{.insecable} et le [10 mars 1977]{.insecable} : *Journal officiel* des 1^er^, 4 et 8 mars 1977, exécutoire un jour franc après sa parution, la loi étant signée le 7 mars | loi n° 77-9 du 7 mars 1977 [@loi77-9-ctn, article unique, p. 514] | ratification des deux contrats de prêt signés le 16 avril 1976 entre la compagnie et la compagnie japonaise Naikai Shipbuilding et Engineering Co. Ltd, et de leurs amendements du 27 octobre 1976 ; montants dans les contrats annexés, non publiés | étape |
+| []{#r-ep-ctn-1977-capital}[29 mai 1977]{.insecable} : *Journal officiel* du 27 mai 1977, exécutoire un jour franc après sa parution | loi n° 77-35 du 25 mai 1977 [@loi77-35-ctn, article unique, p. 1402] | même autorisation, à concurrence de 2 550 000 dinars | étape |
+| []{#r-ep-ctn-1978-japon}[5 mars 1978]{.insecable} : *Journal officiel* du 3 mars 1978, exécutoire un jour franc après sa parution | loi n° 78-13 du 1^er^ mars 1978 [@loi78-13-ctn, article unique, p. 571] | ratification de l'échange de lettres signé à Tunis le 20 décembre 1977 entre le gouvernement de la République tunisienne et le gouvernement du Japon, relatif à l'octroi d'un prêt pour le renforcement des moyens de transport de la compagnie ; montant dans l'échange de lettres annexé, non publié | étape |
+| []{#r-ep-ctn-1978-capital}[9 avril 1978]{.insecable} : *Journal officiel* du 7 avril 1978, exécutoire un jour franc après sa parution | loi n° 78-29 du 5 avril 1978 [@loi78-29-ctn, article unique, p. 996] | même autorisation, à concurrence de 2 550 000 dinars | étape |
+| []{#r-ep-ctn-1980}[2 janvier 1981]{.insecable} : *Journal officiel* des 30-31 décembre 1980, paru au plus tôt le 31 décembre, jour de la signature de la loi, exécutoire un jour franc après sa parution | loi n° 80-87 du 31 décembre 1980 [@loi80-87-ctn, article unique, p. 3274] | le ministre du Plan et des Finances est autorisé à souscrire à l'augmentation du capital de la compagnie à concurrence de 1 500 000 dinars | étape |
+| []{#r-ep-ctn-1983}entre le [28]{.insecable} et le [31 juillet 1983]{.insecable} : *Journal officiel* des 26-29 juillet 1983, exécutoire un jour franc après sa parution | loi n° 83-75 du 21 juillet 1983 [@loi83-75-ctn, article unique, p. 2023] | le ministre du Plan est autorisé à souscrire à l'augmentation du capital de la compagnie à concurrence de 3 918 750 dinars, par conversion de prêts accordés par l'État | étape |
+| []{#r-ep-ctn-1984}entre le [9]{.insecable} et le [12 août 1984]{.insecable} : *Journal officiel* des 7-10 août 1984, exécutoire un jour franc après sa parution | loi n° 84-60 du 1^er^ août 1984 [@loi84-60-ctn, article unique, p. 1708] | même autorisation, à concurrence de 7 143 750 dinars | étape |
+| []{#r-ep-ctn-1996}[17 août 1996]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 12 août 1996, plus cinq jours, jour du dépôt non compté | loi n° 96-72 du 29 juillet 1996 [@loi96-72-ctn, article unique, p. 1637] | approbation du document du 23 mars 1996 portant garantie de l'État au crédit de 191 700 000 deutsche marks accordé à la compagnie par la Kreditanstalt für Wiederaufbau (contrat du 15 janvier 1996), pour la construction et la livraison de deux navires rouliers transbordeurs, et de la convention d'arbitrage | étape |
+| []{#r-ep-ctn-1998}*Journal officiel* du [14 avril 1998]{.insecable}, exécutoire cinq jours après son dépôt au gouvernorat de Tunis | loi n° 98-27 du 6 avril 1998 [@loi98-27-ctn, article unique, p. 735] | octroi de la garantie de l'État, par le document du 16 février 1998, au prêt de 801 867 900 francs français accordé à la compagnie par Eksportfinans ASA et la Banque nationale de Paris (Oslo) (accord du 13 février 1998), pour la construction d'un car-ferry | étape |
+| []{#r-ep-ctn-2011}[13 août 2011]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 8 août 2011, plus cinq jours, jour du dépôt non compté | décret-loi n° 2011-74 du 5 août 2011 [@dl2011-74-ctn, art. 1^er^, p. 1385] | ratification autorisée de la lettre de garantie à première demande du 1^er^ août 2011, relative au contrat de financement signé le 18 juillet 2011 entre la compagnie et la Société générale et BNP Paribas, d'un montant ne dépassant pas 160 477 939 euros, pour la construction d'un nouveau navire à passagers | étape |
+| []{#r-ep-ctn-2017}[31 octobre 2016]{.insecable}, date dite par l'arrêté (art. 1^er^), pour six mois | arrêté de la ministre des finances et du ministre du transport du 4 avril 2017 [@arrete2017-04-04-ctn, art. 1^er^, p. 1375-1376] | réduction de 25 % des redevances d'abri et de stationnement applicables aux navires exploités par la compagnie sur la nouvelle ligne régulière entre le port de Sfax-Sidi Youssef et Novorossiisk, en Russie, par Istanbul | ajustement |
+| []{#r-ep-ctn-2024}[1^er^ janvier 2024]{.insecable}, date dite par la loi (art. 42), jusqu'au 31 décembre 2026 | loi n° 2023-13 du 11 décembre 2023, loi de finances pour 2024 [@loi2023-13-lf2024, art. 42, p. 6446 de l'édition arabe] | suspension de la taxe sur la valeur ajoutée sur les importations et les achats locaux d'équipements, de matériel, de pièces de rechange, de matières et de services nécessaires à l'activité de la compagnie, du 1^er^ janvier 2024 au 31 décembre 2026 ; pour les achats locaux, sur attestation de suspension délivrée par le service fiscal compétent | ajustement |
+
+: Les textes de la Compagnie tunisienne de navigation : capital, emprunts et garanties, avantages fiscal et portuaire {#tbl-ep-registre-ctn}
+
+::::
+
+<!-- TODO (documentaliste) : fiche de la CTN des éditions LF 2022 (p. 54, tableau 25), LF 2024 (p. 82) et LF 2025 (p. 57) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-ctn) ; lue à l'image et retrouvée dans la couche texte. Effectifs de l'édition LF 2022 (734, 698, 700) inférieurs d'environ 400 agents à ceux des éditions LF 2020, LF 2021 et LF 2024 : cause non dite par le rapport (périmètre du personnel ?), à vérifier. Grandeurs d'activité non relevées : passagers et équivalents remorques (LF 2022 à LF 2025 ; LF 2025 donne 584,8 milliers de passagers pour 2021, l'édition LF 2024 231,7). Éditions françaises LF 2020 (p. 64-66) et LF 2021 (p. 65-66) : comptes dans la prose, non versés. Capital : l'État souscrit 18,9 millions de dinars de 1959 à 1984 d'après les lois lues, le rapport LF 2020 donne un capital de 126 MD dont 86,2 % à l'État : augmentations de capital postérieures à 1984 non identifiées dans jort_cache.db (requêtes LIKE et FTS sur « Compagnie tunisienne de navigation », « COTUNAV », « CTN » et « الشركة التونسية للملاحة ») ; statuts de 1959 visés par la loi n° 59-34, non publiés au Journal officiel ; actes de transformation éventuels à chercher. Date d'effet de la loi n° 98-27 : la mention de dépôt au gouvernorat de Tunis n'est ni dans la couche texte ni sur la dernière page du JORT n° 30 de 1998 ; à relever dans l'édition arabe, puis ajouter cinq jours (loi n° 93-64). Textes repérés, non lus : arrêtés du 6 janvier 1994 et du 3 octobre 1995 (mutuelles du personnel navigant et sédentaire) ; décret n° 95-2435 (marchés d'affrètement) ; décrets n° 99-2046 et 99-2047 (statuts particuliers du personnel sédentaire et navigant) ; décret n° 2000-2903 (organigramme) ; décret n° 2002-1606 (emplois fonctionnels) ; arrêté du 28 mars 2003 (calendrier de conservation des documents) ; arrêté du 4 juin 2013 (exonération des droits d'embarquement et de débarquement à Sfax, escale du navire « El Habib » du 28 février 2011) ; décret n° 2015-241 et décret gouvernemental n° 2018-430 (réquisition d'agents de la société, édition arabe). Prorogation de l'article 42 de la loi de finances pour 2024 au-delà de 2026 : à vérifier dans les lois de finances pour 2025 et 2026. Rapports annuels et états financiers publiés par la société : à obtenir. -->
