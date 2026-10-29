@@ -18,6 +18,10 @@
     ge.figure("tt_fiches", …)                                # Tunisie Télécom : fiche seule
     ge.figure("otc_budget", …) ; ge.figure("otc_fiches", …)  # Office du commerce de la Tunisie
     ge.figure("srt_sfax_budget", …) ; ge.figure("srt_bizerte_fiches", …)  # sociétés régionales
+    ge.figure("ctf_fiches", …)                               # Compagnie tunisienne de forage
+    ge.figure("sndp_fiches", …)                              # SNDP : fiche seule
+    ge.figure("sncpa_budget", …) ; ge.figure("sncpa_fiches", …)  # SNCPA (cellulose, papier alfa)
+    ge.figure("afi_budget", …) ; ge.figure("afi_fiches", …)  # Agence foncière industrielle
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -114,7 +118,8 @@ ORDRE_B = ["total_actifs", "immobilisations_nettes", "clients", "liquidites",
            "resultat_net_avant_modifications", "resultat_net_apres_modifications",
            "charges_personnel", "effectif"]
 STATUT = {"réalisé": "", "non dit": "", "provisoire": "provisoire", "estimé": "estimé",
-          "probable": "probable", "comptes non approuvés": "comptes non approuvés"}
+          "probable": "probable", "comptes non approuvés": "comptes non approuvés",
+          "prévu": "prévu"}
 
 
 def _ed(edition: str) -> str:
@@ -217,6 +222,18 @@ def _axe_md(ax, unite: str = "MD") -> None:
     # Une décimale pour une graduation non entière (petits montants : −2,5 et non −2).
     ax.yaxis.set_major_formatter(
         FuncFormatter(lambda v, _: _n(v, 0 if abs(v - round(v)) < 1e-9 else 1)))
+    # Graduations fractionnaires (petits montants : 0,5 ; 1,5…) écrites avec leur décimale.
+    ax.yaxis.set_major_formatter(FuncFormatter(
+        lambda v, _: _n(v, 0 if float(v).is_integer() else 1)))
+    # Décimales selon l'étendue de l'axe : des transferts de quelques centièmes de MD (Ciments de
+    # Bizerte) ne s'écrivent pas « 0 » à chaque graduation.
+    def _fmt(v, _):
+        lo, hi = ax.get_ylim()
+        if hi - lo < 0.5:
+            return _n(v, 2)
+        # Graduation non entière (2,5 ; 7,5 ; 12,5) : une décimale, pas un arrondi trompeur.
+        return _n(v, 0 if abs(v - round(v)) < 1e-9 else 1)
+    ax.yaxis.set_major_formatter(FuncFormatter(_fmt))
     ax.set_ylabel(unite, fontsize=7.5)
     ax.tick_params(labelsize=7)
 
@@ -671,7 +688,15 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "ommp": "OMMP",
               "ctn": "CTN",
               "srt_sfax": "Société régionale de transport de Sfax",
-              "srt_bizerte": "Société régionale de transport de Bizerte"}
+              "srt_bizerte": "Société régionale de transport de Bizerte",
+              "ctf": "CTF",
+              "sndp": "SNDP",
+              "sotrapil": "SOTRAPIL",
+              "el_fouladh": "El Fouladh",
+              "ciments_bizerte": "Ciments de Bizerte",
+              "ciments_oum_el_kelil": "Ciments d'Oum El Kélil",
+              "sncpa": "SNCPA",
+              "afi": "Agence foncière industrielle"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -853,9 +878,12 @@ def fig_budget(entite: str, couleur, hachure: str = "provisoire"):
     for r in _derniere_edition(t, ["annee"]).itertuples():
         ferme = r.statut == "réalisé"
         _barre(ax, r.annee, r.valeur_md, couleur, ferme=ferme,
-               texte=f"{nom}, {r.annee} — transferts du budget : {_n(r.valeur_md)} MD, édition "
+               texte=f"{nom}, {r.annee} — transferts du budget : "
+                     f"{_n(r.valeur_md, 3 if 0 < abs(r.valeur_md) < 0.1 else 1)} MD, édition "
                      f"{_ed(r.edition)}, {r.statut}")
-        ax.annotate(_n(r.valeur_md), xy=(r.annee, r.valeur_md), xytext=(0, 2),
+        # Montant de moins de 0,1 MD : écrit avec les décimales imprimées (0,068), pas arrondi.
+        dec = 3 if 0 < abs(r.valeur_md) < 0.1 else 1
+        ax.annotate(_n(r.valeur_md, dec), xy=(r.annee, r.valeur_md), xytext=(0, 2),
                     textcoords="offset points", ha="center", va="bottom", fontsize=6.5)
         ax.annotate(_ed(r.edition), xy=(r.annee, 0.02), xycoords=("data", "axes fraction"),
                     ha="center", va="bottom", fontsize=5.8, color="white" if ferme else GRIS)
@@ -1030,6 +1058,34 @@ FIGURES = {
                            lambda: table_budget("srt_bizerte"),
                            (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP),
                            "fig_ep_srt_bizerte_budget"),
+    "ctf_fiches": (lambda: fig_fiche("ctf"), lambda: table_fiche("ctf"), (S_FICHES,),
+                   "fig_ep_ctf_fiches"),
+    "sndp_fiches": (lambda: fig_fiche("sndp"), lambda: table_fiche("sndp"), (S_FICHES,),
+                    "fig_ep_sndp_fiches"),
+    "sotrapil_fiches": (lambda: fig_fiche("sotrapil"), lambda: table_fiche("sotrapil"),
+                        (S_FICHES,), "fig_ep_sotrapil_fiches"),
+    "fouladh_fiches": (lambda: fig_fiche("el_fouladh"), lambda: table_fiche("el_fouladh"),
+                       (S_FICHES,), "fig_ep_fouladh_fiches"),
+    "fouladh_budget": (lambda: fig_budget("el_fouladh", ORANGE, "provisoire ou probable"),
+                       lambda: table_budget("el_fouladh"),
+                       (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_fouladh_budget"),
+    "cimbiz_fiches": (lambda: fig_fiche("ciments_bizerte"), lambda: table_fiche("ciments_bizerte"),
+                      (S_FICHES,), "fig_ep_cimbiz_fiches"),
+    "cimbiz_budget": (lambda: fig_budget("ciments_bizerte", BLEU),
+                      lambda: table_budget("ciments_bizerte"),
+                      (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_cimbiz_budget"),
+    "cimoek_fiches": (lambda: fig_fiche("ciments_oum_el_kelil"),
+                      lambda: table_fiche("ciments_oum_el_kelil"), (S_FICHES,),
+                      "fig_ep_cimoek_fiches"),
+    "sncpa_fiches": (lambda: fig_fiche("sncpa"), lambda: table_fiche("sncpa"), (S_FICHES,),
+                     "fig_ep_sncpa_fiches"),
+    "sncpa_budget": (lambda: fig_budget("sncpa", VERT, "provisoire ou probable"),
+                     lambda: table_budget("sncpa"),
+                     (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_sncpa_budget"),
+    "afi_fiches": (lambda: fig_fiche("afi"), lambda: table_fiche("afi"), (S_FICHES,),
+                   "fig_ep_afi_fiches"),
+    "afi_budget": (lambda: fig_budget("afi", BLEU), lambda: table_budget("afi"),
+                   (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_afi_budget"),
 }
 
 

@@ -19,6 +19,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Admission temporaire | القبول المؤقت |  |
 | Adoul | عدل إشهاد |  |
 | Agence foncière d'habitation | الوكالة العقارية للسكنى | AFH |
+| Agence foncière industrielle | الوكالة العقارية الصناعية | AFI |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
 | Agence technique des transports terrestres | الوكالة الفنية للنقل البري | ATTT |
 | Agence tunisienne de la formation professionnelle | الوكالة التونسية للتكوين المهني | ATFP |
@@ -111,6 +112,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Chiffre d'affaires imposable | رقم المعاملات الخاضع |  |
 | Chiffre indiciaire | الرقم القياسي |  |
 | Ciblage | الاستهداف |  |
+| Ciments d'Oum El Kélil | شركة اسمنت أم الكليل |  |
+| Ciments de Bizerte | شركة اسمنت بنزرت |  |
 | Classe de revenus | شريحة الدخل |  |
 | Classification nationale des qualifications | السلم الوطني للمهارات |  |
 | Code d'incitations aux investissements | مجلة تشجيع الاستثمارات |  |
@@ -127,6 +130,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
 | Commission régionale des bourses scolaires | اللجنة الجهوية للمنح المدرسية |  |
 | Compagnie des phosphates de Gafsa | شركة فسفاط قفصة | CPG |
+| Compagnie tunisienne de forage | الشركة التونسية للتنقيب | CTF |
 | Compagnie tunisienne de navigation | الشركة التونسية للملاحة | CTN |
 | Compensation des carburants | دعم المحروقات |  |
 | Compensation des prix | الدعم |  |
@@ -603,11 +607,15 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | SMIG de référence de la CNSS | الأجر الأدنى المرجعي المعتمد لدى الصندوق الوطني للضمان الاجتماعي |  |
 | Société de prévoyance des fonctionnaires et employés tunisiens | الجمعية الاحتياطية للموظفين والمستخدمين التونسيين |  |
 | Société de promotion des logements sociaux | شركة النهوض بالمساكن الاجتماعية | SPROLS |
+| Société de transport des hydrocarbures par pipelines | شركة النقل بواسطة الأنابيب | SOTRAPIL |
 | Société des transports de Tunis | شركة النقل بتونس | Transtu |
 | Société nationale d'exploitation et de distribution des eaux | الشركة الوطنية لاستغلال وتوزيع المياه | SONEDE |
+| Société nationale de cellulose et de papier alfa | الشركة الوطنية لعجين الحلفاء والورق | SNCPA |
+| Société nationale de distribution des pétroles | الشركة الوطنية لتوزيع البترول | SNDP |
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
 | société régionale de transport | الشركة الجهوية للنقل |  |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
+| Société tunisienne de sidérurgie El Fouladh | الشركة التونسية لصناعة الحديد «الفولاذ» |  |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
 | Solde (militaire) | أجور العسكريين |  |
 | Solde de réforme | منحة الإصلاح |  |

@@ -18441,6 +18441,99 @@ entries:
         منشأة عمومية تنتج الأسمدة الفسفاطية، ومنها الفسفاط الثلاثي الرفيع. وتنتفع قروضها
         الاستثمارية وتمويل وارداتها من الأمونيا والكبريت والأسمدة بضمان الدولة.
       synonymes: []
+  - id: el-fouladh
+    statut: valide
+    references: [decret-loi62-22-fouladh, lf-2013, minfin-ep-2025]
+    source_definition: {ref: decret-loi62-22-fouladh, locator: "art. 1er"}
+    # AR : intitulé « الشركة التونسية لصناعة الحديد "الفولاذ" » de la fiche de la société dans le
+    # rapport sur les entreprises publiques, édition LF 2025, p. 71, où se lisent aussi ses
+    # activités (production de fer laminé, de fils tréfilés et de structures métalliques).
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 71"}
+    voir_aussi: [gct]
+    fr:
+      terme: Société tunisienne de sidérurgie El Fouladh
+      definition: >
+        Entreprise publique de sidérurgie, au capital de laquelle l'État souscrit depuis 1962,
+        qui produit du fer laminé, des fils tréfilés et des structures métalliques. L'État a
+        pris en charge en 2013 une partie de ses dettes bancaires.
+      synonymes: [El Fouladh]
+    ar:
+      terme: الشركة التونسية لصناعة الحديد «الفولاذ»
+      definition: >
+        منشأة عمومية لصناعة الحديد تكتتب الدولة في رأس مالها منذ سنة 1962، وتنتج الحديد
+        المدرفل والأسلاك المسحوبة والهياكل المعدنية. وتحمّلت الدولة سنة 2013 جزءا من ديونها
+        البنكية.
+      synonymes: [الفولاذ]
+
+  - id: ciments-bizerte
+    statut: valide
+    references: [arrete1959-10-10-cimbiz, loi75-30-cimbiz, minfin-ep-2025]
+    source_definition: {ref: loi75-30-cimbiz, locator: "article unique"}
+    # AR : intitulé « شركة اسمنت بنزرت » de la fiche de la société dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 69.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 69"}
+    fr:
+      terme: Ciments de Bizerte
+      definition: >
+        Société qui produit du clinker et du ciment à Bizerte. L'État gère la cimenterie
+        de Bizerte de 1959 à 1974 ; en 1975, la loi l'autorise à souscrire au capital de la
+        Société des Ciments Portland de Bizerte par le rachat d'actions détenues par des
+        actionnaires français.
+      synonymes: [Société des Ciments de Bizerte]
+    ar:
+      terme: شركة اسمنت بنزرت
+      definition: >
+        شركة تنتج الكلنكر والإسمنت ببنزرت. تولّت الدولة التصرّف في مصنع الإسمنت ببنزرت من
+        1959 إلى 1974، ورُخّص لها سنة 1975 في الاكتتاب في رأس مال شركة إسمنت بورتلاند ببنزرت
+        بشراء أسهم يملكها مساهمون فرنسيون.
+      synonymes: []
+
+
+  - id: cimoek
+    statut: valide
+    references: [arrete1978-ligne-cimoek, loi2000-36-cimoek, minfin-ep-2024]
+    source_definition: {ref: loi2000-36-cimoek, locator: "art. 2"}
+    # AR : intitulé « شركة اسمنت أم الكليل » de la fiche de la société dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 74.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 74"}
+    voir_aussi: []
+    fr:
+      terme: Ciments d'Oum El Kélil
+      definition: >
+        Entreprise publique qui produit du ciment et de la chaux artificielle à Tajérouine,
+        au gouvernorat du Kef. En 2000, l'État convertit en capital près de 34 MD de ses créances
+        sur la société et abandonne le reste de ses dettes fiscales.
+      synonymes: [Société des ciments d'Oum El Kélil]
+    ar:
+      terme: شركة اسمنت أم الكليل
+      definition: >
+        منشأة عمومية تنتج الإسمنت والجير الاصطناعي بتاجروين من ولاية الكاف. سنة 2000، أدمجت
+        الدولة في رأس مال الشركة قرابة 34 م د من مستحقاتها عليها، وتخلّت عن بقية ديونها الجبائية.
+  - id: afi
+    acronyme: AFI
+    statut: valide
+    references: [loi73-21-afi, loi91-37-afi, decret2022-501-afi, minfin-ep-2025]
+    source_definition: {ref: loi91-37-afi, locator: "art. 1er et 2"}
+    # AR : intitulé « الوكالة العقارية الصناعية » de la fiche de l'agence dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 72.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 72"}
+    voir_aussi: [afh]
+    fr:
+      terme: Agence foncière industrielle
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1973 et recréé en
+        1991, qui étudie, aménage et équipe les zones industrielles, artisanales et de services
+        pour en céder ou en louer les terrains aux promoteurs. Depuis 2022, l'État peut lui
+        vendre au dinar symbolique des terrains de son domaine privé à vocation industrielle.
+      synonymes: []
+    ar:
+      terme: الوكالة العقارية الصناعية
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1973 وأُعيد إحداثها سنة 1991، تتولّى
+        دراسة المناطق الصناعية والحرفية ومناطق الخدمات وتهيئتها وتجهيزها لبيع مقاسمها أو كرائها
+        للباعثين. ومنذ سنة 2022، يمكن للدولة أن تبيعها بالدينار الرمزي عقارات من ملكها الخاص
+        ذات صبغة صناعية.
+      synonymes: []
   - id: tunisie-telecom
     statut: valide
     references: [loi95-36-tt, loi2004-30, minfin-ep-2025]
@@ -18603,6 +18696,50 @@ entries:
         ضبط قرار صادر سنة 1989 قائمتها.
       synonymes: []
       synonymes: []
+  - id: ctf
+    acronyme: CTF
+    statut: valide
+    references: [minfin-ep, minfin-ep-2022, decret2020-183]
+    source_definition: {ref: minfin-ep, locator: "p. 10 et 15"}
+    # AR : intitulé « الشركة التونسية للتنقيب » de la fiche de la société dans le rapport sur
+    # les entreprises publiques, éditions LF 2022 (p. 62), LF 2024 (p. 94) et LF 2025 (p. 68).
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 68"}
+    voir_aussi: [etap]
+    fr:
+      terme: Compagnie tunisienne de forage
+      definition: >
+        Société anonyme du secteur de l'énergie, qui fore et entretient des puits. Son
+        capital est détenu presque entièrement par des actionnaires publics autres que
+        l'État, et elle est placée sous la tutelle du ministère chargé de l'énergie.
+      synonymes: []
+    ar:
+      terme: الشركة التونسية للتنقيب
+      definition: >
+        شركة خفية الاسم من قطاع الطاقة، تتولّى حفر الآبار وصيانتها. يملك رأس مالها،
+        في جلّه، مساهمون عموميون غير الدولة، وهي تحت إشراف الوزارة المكلّفة بالطاقة.
+  - id: sndp
+    acronyme: SNDP
+    statut: valide
+    references: [dl63-4-sndp, decret77-466-sndp, minfin-ep-2025]
+    source_definition: {ref: decret77-466-sndp, locator: "art. 1er, 2 et 4"}
+    # AR : intitulé « الشركة الوطنية لتوزيع البترول » de la fiche de la société dans le rapport
+    # sur les entreprises publiques, édition LF 2025, p. 68.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 68"}
+    voir_aussi: [stir, etap]
+    fr:
+      terme: Société nationale de distribution des pétroles
+      definition: >
+        Société publique qui distribue en Tunisie les carburants, les combustibles et les
+        lubrifiants. Elle prend ce nom en 1977 et reprend alors l'actif et le passif de la
+        société AGIP S.A. Tunis, dont l'État souscrit la moitié du capital en 1963.
+      synonymes: []
+    ar:
+      terme: الشركة الوطنية لتوزيع البترول
+      definition: >
+        شركة عمومية توزّع في تونس المحروقات والوقود وزيوت التشحيم. اتّخذت هذا الاسم سنة
+        1977 وتولّت عندئذ أصول شركة «أجيب تونس» وخصومها، وقد اكتتبت الدولة نصف رأس مالها
+        سنة 1963.
+      synonymes: []
   - id: onp
     statut: valide
     references: [decret98-1305-poste, loi98-38-poste, minfin-ep-2024]
@@ -18738,4 +18875,49 @@ entries:
       definition: >
         منشأة عمومية للنقل بولاية أو بجهة، تحت إشراف وزارة النقل. تخلّت الدولة عن
         ديونها تجاه هذه الشركات بمقتضى قوانين صدرت سنوات 1989 و1999 و2005.
+  - id: sotrapil
+    acronyme: SOTRAPIL
+    statut: valide
+    references: [minfin-ep, minfin-ep-2024, decret2022-492-sotrapil, dgpv-recueil-operations]
+    source_definition: {ref: minfin-ep-2024, locator: "p. 95 et 103-104"}
+    # Forme de société anonyme et structure du capital : rapport de la LF 2021, p. 14 (tableau
+    # des participations de l'État, « Sociétés anonymes »). AR : intitulé « شركة النقل بواسطة
+    # الأنابيب » du décret présidentiel n° 2022-492 et de la fiche de la société, édition LF 2024,
+    # p. 95.
+    source_traduction: {ref: decret2022-492-sotrapil, locator: "art. 1er"}
+    voir_aussi: [stir]
+    fr:
+      terme: Société de transport des hydrocarbures par pipelines
+      definition: >
+        Société anonyme à participation publique qui transporte des hydrocarbures par deux
+        oléoducs, de Bizerte à Radès et de Radès à l'aéroport de Tunis-Carthage, ce dernier
+        pour le carburant d'aviation. Une partie de son capital est vendue en Bourse en 2001.
+      synonymes: [Société de transport par pipelines]
+    ar:
+      terme: شركة النقل بواسطة الأنابيب
+      definition: >
+        شركة خفية الاسم ذات مساهمات عمومية تنقل المحروقات عبر أنبوبين، من بنزرت إلى رادس ومن
+        رادس إلى مطار تونس قرطاج، والثاني لوقود الطائرات. بيع جزء من رأس مالها في البورصة سنة
+        2001.
+  - id: sncpa
+    acronyme: SNCPA
+    statut: valide
+    references: [loi84-19-sncpa, loi88-86-sncpa, minfin-ep-2025]
+    source_definition: {ref: loi88-86-sncpa, locator: "art. 1er"}
+    # AR : intitulé « الشركة الوطنية لعجين الحلفاء والورق » de la fiche de la société dans le
+    # rapport sur les entreprises publiques, édition LF 2025, p. 73.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 73"}
+    voir_aussi: [cpg, gct]
+    fr:
+      terme: Société nationale de cellulose et de papier alfa
+      definition: >
+        Entreprise publique qui produit de la pâte d'alfa et du papier. L'État souscrit à
+        l'augmentation de son capital en 1984 et en 1985, puis de nouveau en 1988, dans le
+        cadre de son assainissement.
+      synonymes: []
+    ar:
+      terme: الشركة الوطنية لعجين الحلفاء والورق
+      definition: >
+        منشأة عمومية تنتج عجين الحلفاء والورق. اكتتبت الدولة في الزيادة في رأس مالها سنتي
+        1984 و1985، ثم سنة 1988 في إطار تطهيرها.
       synonymes: []

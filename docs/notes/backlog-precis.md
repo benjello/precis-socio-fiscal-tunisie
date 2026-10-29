@@ -3740,8 +3740,8 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Tunisie Télécom, Poste et Office du commerce versées le
-    29 octobre 2026, `#sec-ep-ge-tt`, `#sec-ep-ge-poste`, `#sec-ep-ge-otc`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
+  - les autres grandes entreprises (Tunisie Télécom, Poste, Office du commerce et SNDP versées le
+    29 octobre 2026, `#sec-ep-ge-tt`, `#sec-ep-ge-poste`, `#sec-ep-ge-otc`, `#sec-ep-ge-sndp`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
   - SNCFT : statuts de 1969 (loi n° 69-31, JORT n° 19 de 1969, p. 581-584, dans le corpus local,
@@ -3763,6 +3763,33 @@ Ce qui reste :
     de la note de chantier (§ 9, point 3 ; § 12), à confirmer à la revue : Office des céréales, ONH, RNTA et Office
     du commerce d'un côté ; SONEDE, ONAS, Tunisie Télécom et La Poste de l'autre, déplacées sans changement de texte,
     ancres conservées. « Les autres entreprises » garde la CPG et le GCT (`#sec-ep-autres-entreprises`).
+- **CTF — section écrite le 29 octobre 2026** (`_energie.qmd`, en fin de chapitre ;
+  `#sec-ep-ge-ctf`, figure `fig-ep-ctf-fiches` engendrée par `grandes_entreprises.figure
+  ("ctf_fiches")`, tableaux repliés `tbl-ep-ctf-fiche-a` et `-b`, registre `tbl-ep-registre-ctf`).
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-ctf`) :
+  LF 2022 p. 62, LF 2024 p. 94, LF 2025 p. 68, lues à l'image à 300 dpi et recoupées avec la
+  couche texte ; toutes les identités bouclent ; seule divergence entre éditions, le signe des
+  charges financières nettes (LF 2024 négatif, LF 2022 et LF 2025 positif). Lus sur les pages de
+  l'édition LF 2021, non versés dans une série : structure du capital (p. 15 : 10,5 MD, État 0 %,
+  autres actionnaires publics 98,0 %), besoins de fonds propres de 2018 (p. 152-153, tableau 32),
+  rang du résultat de 2018 (p. 28). Pas de figure budget : la CTF n'est pas dans la série des
+  transferts par entreprise. Registre lu au corpus local (couche texte) : décrets n° 98-1172
+  (tutelle), 89-876 (marchés, lu à l'image), 2005-3396 et 2017-653 (organigrammes), 2006-1002, 2009-3048 et 2018-790 (emplois
+  fonctionnels), 2007-1330 (marchés), 2020-183 (tutelle du ministère de l'Énergie), 2020-1061
+  (article 22 ter, articles 18 à 22 et 11 bis), arrêté du 18 août 2022 (calendrier des conseils).
+  **Reste** :
+  - texte de création de la société et garanties de l'État : non identifiés dans `jort_cache.db` ;
+    plein texte du corpus 1994-2026, éditions française et arabe, parcouru le 29 octobre 2026
+    (seuls les textes du registre, des nominations et des listes générales nomment la société) ; fascicules d'avant 1994 **sans couche texte, à l'image** ;
+  - actionnaires publics de la CTF (l'édition LF 2021 ne les nomme pas) et contradiction entre les
+    visas de la loi n° 85-78 (capital entièrement public) et les 2,0 % d'autres actionnaires ;
+  - statut particulier du personnel (décret n° 99-2643, JORT n° 96 de 1999, p. 2533) : **publié
+    en arabe seulement, édition arabe du corpus à lire** ; décrets n° 92-713 et 98-28, qui modifient
+    le décret n° 89-876 : **dans le corpus local, à l'image**, non lus ;
+  - transferts du budget à la CTF : annexe 8 et tableaux de transferts du rapport, à vérifier ;
+  - jours de forage (grandeurs d'activité des fiches) : non relevés ; comptes publiés par la
+    société : **à obtenir**.
 - **STIR — section écrite le 28 octobre 2026** (`_energie.qmd` depuis l'ouverture du
   chapitre « L'énergie », même jour ; `#sec-ep-ge-stir`, figure `fig-ep-stir-budget` engendrée par `grandes_entreprises.figure
   ("stir_budget")` depuis trois séries du rapport sur les entreprises publiques : transferts
@@ -3798,6 +3825,44 @@ Ce qui reste :
     et loi n° 61-44, loi n° 62-29) : **dans le corpus local, à l'image**, non lues ;
   - décrets n° 89-1197 et 91-178 (article 5 du décret n° 77-467, composition du conseil) : lus à
     l'OCR, non versés au registre ; décret n° 99-1304 (organigramme), non lu ;
+- **SNDP — section écrite le 29 octobre 2026** (`_energie.qmd`, `#sec-ep-ge-sndp`, après la
+  STIR et son TODO ; aucune ligne de la SNDP dans les séries des transferts du budget : figure
+  de la fiche seule). **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-sndp`) :
+  LF 2022 p. 62 (page du fichier 61, tableau 26, sous la STIR), LF 2024 p. 96 (fichier 97),
+  LF 2025 p. 68, lues à l'image à 300 dpi et recoupées avec la couche texte ; figure
+  `fig-ep-sndp-fiches` et tableaux `tbl-ep-sndp-fiche-a` et `-b`, repliés. Écarts imprimés
+  déclarés : LF 2024, résultat d'exploitation 2020 (−30,6 pour −31,0) ; LF 2025, produits
+  d'exploitation 2022 (−0,5) et bilan 2023 provisoire (actifs 1 930 pour 1 709,0 de passifs et
+  de fonds propres, +221,0). Écarts entre éditions dits dans le texte : résultat net 2019
+  (−5,9 MD dans la fiche LF 2022, +7,9 MD dans le classement LF 2023), effectif 2020 (1 133 en
+  LF 2022, 1 151 en LF 2024).
+  Registre `tbl-ep-registre-sndp`, lu au corpus local : décrets-lois n° 63-4 (convention avec
+  l'AGIP, constitution d'AGIP S.A. Tunis à parité, p. 212, image) et n° 63-5 (75 000 dinars,
+  p. 214, image), loi n° 69-20 (425 000 dinars, p. 344, image), décret n° 77-466 (nom, objet,
+  tutelle, p. 1277-1279, image), loi n° 82-59 (5 MD, p. 1489, image), décret n° 85-775
+  (règlement des consommations de carburants des administrations, p. 813-814, image), décret
+  n° 89-1196 (conseil d'administration, p. 1348, image), décret n° 2001-372 (abrogation du
+  décret n° 77-466, p. 247, couche décalée décodée), décrets n° 2005-2753 et 2011-719
+  (article 52 du code d'incitation aux investissements, GPL à Radès et à Ghannouch). Le rachat
+  de 1975 renvoie à la ligne `r-ep-stir-1975` du registre de la STIR (loi n° 75-81).
+  Plein texte des fascicules français 1994-2012, couche décalée décodée : aucune garantie de
+  l'État au profit de la SNDP ; 7 fascicules sur 1 962 sans couche texte exploitable, non parcourus.
+  **Reste** :
+  - éditions LF 2020 (p. 91) et LF 2021 (p. 82) : comptes de la SNDP dans la prose, non versés
+    (**lisibles dans le corpus de `tunisia-data`**) ; ventes de produits pétroliers des fiches,
+    non relevées ;
+  - comptes publiés par la SNDP (rapports annuels, états financiers) : **à obtenir** ; ils
+    trancheraient le signe du résultat net de 2019 ;
+  - lois n° 63-5 et 63-6 (ratification des décrets-lois de 1963, JORT n° 19 de 1963, p. 505),
+    décret n° 80-165 (statut du personnel, JORT n° 17 de 1980, p. 849) : **dans le corpus local,
+    à l'image**, non lus ; décret n° 99-2645 (statut particulier) : publié en arabe seulement,
+    **édition arabe du JORT n° 96 de 1999 à lire** ; organigrammes et emplois fonctionnels
+    (n° 2001-370, 2001-371, 2007-448, 2008-3909, 2009-3085, 2021-278), non lus ;
+  - loi n° 2005-72 (dettes de la SNCFT envers la SNDP, 21,75 MD au 31 décembre 2001, converties
+    en fonds de dotation de la SNCFT) : lue, à verser à la section de la SNCFT ;
+  - garanties : les fascicules d'avant 1994 (sans couche texte) n'ont été parcourus que par
+    leurs intitulés ; les éditions arabes et 2013-2026, par le seul cache plein texte.
 - **Office des céréales — section écrite le 28 octobre 2026** (`_offices.qmd`,
   `#sec-ep-ge-oc`, avant la SNCFT : l'Office est le deuxième bénéficiaire des transferts après la
   STIR). Figures `fig-ep-oc-budget` (`grandes_entreprises.figure("oc_budget")` : transferts
@@ -3909,6 +3974,117 @@ Ce qui reste :
   - prêts à l'État pour les lignes ferroviaires du phosphate (lois n° 2024-31, 2025-12, 2026-7) :
     non lus, à rattacher à la SNCFT ou aux transports ;
   - comptes publiés et rapports annuels des deux entreprises : **à obtenir**.
+- **El Fouladh — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-fouladh`, en fin de chapitre). Figures `fig-ep-fouladh-budget` (transferts du budget
+  des éditions LF 2021 à LF 2023 : 10,0 MD en 2019, 150 MD pour 2020 dans l'édition LF 2021 ramenés
+  à 0 ensuite) et `fig-ep-fouladh-fiches`, tableaux repliés `tbl-ep-fouladh-fiche-a` et `-b`.
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-elfouladh`) :
+  LF 2022 p. 63, LF 2024 p. 92 (tableau 31 ; 2022 « متوقع », prévu), LF 2025 p. 71 ; lue à l'image
+  (300 dpi), chaque ligne retrouvée entière dans la couche texte. Écarts imprimés déclarés :
+  produits d'exploitation de 2021 et 2022 en LF 2024 (0,2 près). Lus sur les pages, sans série :
+  dettes et créances croisées de fin 2023 (LF 2025 p. 118-123). Paiements de dette garantie par
+  la Cour des comptes (gestions 2013-2015) repris de la série `cdc-cloture-entreprises-publiques`.
+  Registre `tbl-ep-registre-fouladh` (décret-loi n° 62-22 et loi n° 62-59, lois n° 65-42, 72-75
+  et 83-77, toutes à l'image ; loi de finances pour 2013, art. 16 ; loi n° 2015-5 ; lois de
+  finances pour 2020, art. 50, et pour 2025, art. 61, extraits français du corpus ; décret
+  n° 2025-423). Glossaire : `el-fouladh`.
+  **Reste** :
+  - statuts et acte de constitution (1962), forme juridique, capital actuel et part de l'État :
+    non lus ;
+  - décrets n° 88-1988 (commission d'achat), 2002-2862 (statut du personnel), 2013-1289
+    (organigramme), 2015-1127 (emplois fonctionnels), décret de ratification n° 2015-64, décret
+    n° 2003-188 : **dans le corpus** (2002, 2013, 2015 avec couche texte ; 1988 et 2003 à vérifier),
+    non lus ;
+  - texte instituant la taxe à l'exportation des déchets de fer (270 D la tonne d'après l'édition
+    LF 2021, p. 96) : à identifier ;
+  - série des transferts : ligne d'El Fouladh de l'édition LF 2024 (p. 155, 0,0) absente de
+    `entreprises-publiques-transferts-par-entreprise` ;
+  - grandeurs d'activité (production et ventes en tonnes) non versées ; éditions françaises
+    LF 2020 (p. 97) et LF 2021 (p. 96) non versées ;
+- **Ciments de Bizerte — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-cimbiz`, en fin de chapitre). Figures `fig-ep-cimbiz-budget` (transferts de
+  0,068 à 0,1 MD de 2018 à 2020, LF 2022 p. 105, LF 2023 p. 200, LF 2024 p. 155) et
+  `fig-ep-cimbiz-fiches`, tableaux repliés `tbl-ep-cimbiz-fiche-a` et `-b`. **Fiche du ministère
+  des Finances versée le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-cimbiz`) : LF 2022 p. 63, LF 2024 p. 93, LF 2025 p. 69 ;
+  lue à l'image (300 dpi), chaque ligne retrouvée entière dans la couche texte. Écart imprimé
+  déclaré : charges d'exploitation imprimées négatives dans l'édition LF 2024 ; signe « − »
+  imprimé après le nombre dans l'édition LF 2025 (2023), que le script de `tunisia-data` lit
+  désormais. Registre `tbl-ep-registre-cimbiz` (arrêtés du 10 octobre 1959 et du 22 août 1974,
+  image ; lois n° 75-30 et 76-40, image ; loi n° 2002-91, couche texte décodée). Recherche par
+  les intitulés de `jort_cache.db` et en plein texte des fascicules français de 2007 à 2026.
+  Glossaire : `ciments-bizerte`. Module de figures : graduations décimales de `_axe_md` quand
+  l'axe est court ou la graduation non entière (vaut pour toutes les figures du module).
+  **Reste** :
+  - textes antérieurs à 1956 (convention du 20 mars 1950, décret du 23 mars 1950, cahier des
+    charges du 30 novembre 1950, création de la Société des Ciments Portland de Bizerte) : **hors
+    du corpus local** ;
+  - loi n° 59-132 (comité de gestion de la Caisse de compensation des ciments), décret-loi de 1973
+    sur la taxe compensatrice sur le ciment, décrets d'expropriation (n° 79-310, 88-1756,
+    2006-1548), statut du personnel (n° 99-1944), organigramme (n° 2005-1611), emplois
+    fonctionnels (n° 2006-396), textes de 2015 et 2023 sur la dépollution du lac de Bizerte :
+    **dans le corpus**, non lus ;
+  - continuité entre la Société des Ciments Portland de Bizerte (1975) et la société des Ciments
+    de Bizerte (1976) : texte à identifier ; part de l'État dans le capital, forme juridique,
+    cotation : non établies ; hausse des fonds
+    propres de fin 2020 à fin 2021 (30,6 à 85,9 MD) à expliquer ;
+  - grandeurs d'activité des fiches (clinker et ciment en tonnes, revenus de LF 2022) non
+    relevées ; éditions françaises LF 2020 et LF 2021 non versées ;
+- **Les Ciments d'Oum El Kélil — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-cimoek`, en fin de chapitre, après le GCT). Figure `fig-ep-cimoek-fiches` (pas de
+  figure du budget : les tableaux des transferts lui donnent 0, LF 2022 p. 106 pour 2018-2020 et
+  LF 2024 p. 155 pour 2020-2022), tableaux repliés `tbl-ep-cimoek-fiche-a` et `-b`. **Fiches du
+  ministère des Finances versées le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-cimoek`, à fusionner avant ce chapitre) : LF 2022 p. 63,
+  LF 2024 p. 94, LF 2025 p. 74 ; lues à l'image (300 dpi) et retrouvées dans la couche texte.
+  Écarts imprimés déclarés : dette totale de LF 2022 supérieure à la somme des créanciers (22,1 et
+  17,7 MD). Cases vides : dette de fin 2020 (LF 2022), total des passifs 2022-2023 (LF 2025). Lus sur
+  les pages, sans série : contribution aux ressources propres de l'État (LF 2022 p. 103 ; LF 2024
+  p. 152), dettes et créances croisées de fin 2022, nulles (LF 2024 p. 142 et 146), commentaire du
+  rapport (LF 2024 p. 101-102 ; LF 2025 p. 87), tutelle (LF 2024 p. 183). Registre
+  `tbl-ep-registre-cimoek` : arrêté du 12 septembre 1978 (ligne de 90 kV, image) ; loi
+  n° 2000-36 (assainissement financier, couche texte décodée ; dépôt au gouvernorat le 24 mars
+  2000). Décret gouvernemental n° 2020-1061 (article 22 ter) : renvoi à `@tbl-ep-22ter`. Recherche
+  par les intitulés français et arabes de `jort_cache.db` et le plein texte du miroir iort.
+  Glossaire : `cimoek`.
+  **Reste** :
+  - texte de constitution de la société, forme juridique, capital et part de l'État **non
+    identifiés** ; loi n° 79-24 (« Société des Ciments Tunisiens », lue à l'image, JORT n° 31 de
+    1979, p. 1300) : ne nomme pas la cimenterie, rattachement à établir ;
+  - textes **dans le corpus local, non lus** : décrets n° 99-1739 (statut du personnel), 2009-3047
+    (organigramme), 2010-2066 (emplois fonctionnels), arrêté du 17 juin 2015 (conservation des
+    documents, intitulé arabe) ;
+  - séries à verser dans `tunisia-data` : contribution aux ressources propres et dettes et
+    créances croisées (voir l'entrée CPG et GCT) ; grandeurs d'activité des fiches (production de
+    ciment et de chaux) non relevées ; classement des résultats d'exploitation négatifs de LF 2025
+    (p. 20) non repris ; éditions françaises LF 2020 et LF 2021 non versées ;
+  - comptes publiés et rapports annuels de la société : **à obtenir**.
+- **SNCPA — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`, `#sec-ep-ge-sncpa`,
+  après le GCT). Figures `fig-ep-sncpa-budget` (transferts 2017-2022, résultat net des
+  classements, effectif et charges de personnel) et `fig-ep-sncpa-fiches`, tableaux repliés
+  `tbl-ep-sncpa-fiche-a` et `-b`. **Fiche du ministère des Finances versée le 29 octobre 2026**
+  dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-sncpa`,
+  code `sncpa`) : LF 2022 p. 63, LF 2024 p. 93, LF 2025 p. 73 ; lues à l'image (300 dpi) et
+  retrouvées dans la couche texte. LF 2025 : bilan de 2022-2023 et résultat de 2023 sous une note,
+  seul l'effectif de 2023 imprimé. Écart imprimé déclaré : résultat d'exploitation 2019 (LF 2022).
+  Lus sur les pages, sans série nouvelle : dettes envers l'État de fin 2023 (320,0 MD, LF 2025
+  p. 118), paiements de dette garantie de la Cour des comptes (série déjà versée, 2012-2018).
+  Registre `tbl-ep-registre-sncpa` (décret du 8 janvier 1957, fascicule téléchargé de pist.tn,
+  absent du corpus local ; arrêté du 29 juillet 1959 ; lois n° 60-3, 84-19, 85-30, 88-86 ; décret
+  n° 80-780 avec l'édition arabe ; tous à l'image ; loi n° 95-86 ; loi de finances pour 2026,
+  art. 64, édition arabe). Glossaire : `sncpa`.
+  **Reste** :
+  - création de la Société nationale tunisienne de cellulose et de la Société tunisienne de papier
+    alfa, et leur réunion en SNCPA (entre 1980 et 1984) : textes **non identifiés** par les
+    intitulés de `jort_cache.db` ; forme juridique, capital et part de l'État : non lus ;
+  - arrêté du 31 janvier 1981 (JORT n° 8, p. 240-245), décret n° 88-283 (JORT n° 18 de 1988,
+    p. 383-384), décret n° 2000-2366 (JORT n° 86 de 2000, p. 2606) : **dans le corpus, non lus** ;
+  - objet des transferts de l'annexe 9 (9,3 à 35,0 MD) : l'annexe 8, bloc du ministère du
+    Commerce, ne donne que 0,061 à 3,555 MD ; Cour des comptes, gestion 2018 : 0 au tableau,
+    709 962 dinars dans le texte ;
+  - grandeurs d'activité des fiches (production et ventes en tonnes) non relevées ; éditions
+    françaises LF 2020 (p. 100) et LF 2021 (p. 99) non versées ; comptes publiés : **à obtenir**.
 - **Tunisie Autoroutes et Transtu — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-autoroutes` et `#sec-ep-ge-transtu`, après l'ONAS et avant la SNCFT, dans l'ordre des
   transferts de 2022 : Tunisie Autoroutes 170,0 MD, Transtu 147,5 MD, SNCFT 129,8 MD). Figures
@@ -4150,6 +4326,36 @@ Ce qui reste :
   - grandeurs d'activité des fiches (achats et ventes de produits de base) citées, non versées dans
     une série ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Agence foncière industrielle — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-afi`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
+  `fig-ep-afi-budget` et `fig-ep-afi-fiches`, tableaux repliés `tbl-ep-afi-fiche-a` et `-b`.
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-afi`, code `afi`) :
+  LF 2022 p. 64, LF 2024 p. 98, LF 2025 p. 72, lues à l'image (300 dpi) et retrouvées dans la couche
+  texte. Écart déclaré : 2023 (LF 2025), fonds propres hors résultat de l'exercice (+4,2). Édition
+  LF 2024 : note « (1) » sans appel (comptes non approuvés par le conseil), dite dans le texte et la
+  légende. Registre `tbl-ep-registre-afi`, lu au corpus local : loi n° 73-21 (image ; fascicule à
+  double date, effet en fourchette), loi n° 78-27 (prêt garanti, image), loi n° 87-50 (art. 1er,
+  image), loi n° 91-37 (image), loi n° 97-31, loi n° 2000-59 (couche décalée, décodée), loi
+  n° 2009-34, décret n° 2013-2272, loi de finances pour 2016 (art. 84, extrait français local),
+  décret présidentiel n° 2022-501. Glossaire : `afi`.
+  **Reste** :
+  - textes **dans le corpus local, non lus** : décret n° 73-598 et ses modificatifs n° 74-85 et
+    85-1602 ; suite de la loi n° 87-50 (p. 962) et loi n° 91-38 ; décrets d'organisation n° 92-127,
+    98-22 et 2010-3012 ; personnel, organigramme et emplois fonctionnels (décrets n° 77-545,
+    98-1174, 98-1175, 2001-2442, 2012-2027, 2013-3109) ; décrets gouvernementaux n° 2016-413, 2016-822
+    et 2016-1391 (article 52 bis du code d'incitation aux investissements, **intitulés arabes**) ;
+    arrêté du 5 mai 2014 (réserves foncières industrielles) ; décrets d'approbation des ventes au
+    dinar symbolique de 2023 à 2026 (n° 2023-613, 2023-614, 2023-659, 2023-660, 2023-771, 2023-772,
+    2024-40, 2026-6, 2026-8) ; décret n° 2026-127 (Sidi Thabet) ; article 23, IV, du code des droits
+    d'enregistrement et de timbre ;
+  - grandeurs d'activité des fiches (surfaces aménagées) : unités incompatibles entre éditions
+    (m², « hectare », milliers de m²), non versées ; classements des dettes et créances envers
+    l'État (LF 2024 et LF 2025), liquidités placées (LF 2022) et couverture des charges (LF 2024) :
+    cités d'après les pages, non versés dans une série ;
+  - page exacte de la ligne de l'agence dans les tableaux des transferts par entreprise (LF 2022 à
+    LF 2024) : non relevée ; objet des transferts à confirmer dans l'annexe 8 ;
+  - comptes publiés et rapports annuels de l'agence : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche
@@ -4256,6 +4462,43 @@ Ce qui reste :
   - grandeurs d'activité des fiches (voyageurs, kilomètres) non relevées ; objet des transferts
     du budget (compensation, subvention d'équilibre) à rapprocher du volume « La compensation »
     et de l'annexe 8.
+- **SOTRAPIL — section écrite le 29 octobre 2026** (`_energie.qmd`, `#sec-ep-ge-sotrapil`, en fin
+  de chapitre, après la STIR). Figure `fig-ep-sotrapil-fiches` (pas de figure du budget : la
+  société n'est dans aucun tableau des transferts des éditions lues), tableaux repliés
+  `tbl-ep-sotrapil-fiche-a` et `-b`. **Fiche du ministère des Finances versée le 29 octobre 2026**
+  dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-sotrapil`) : LF 2022 p. 64 (fichier 63), LF 2024 p. 95 (fichier 96), LF 2025
+  p. 69 ; lues à l'image (300 dpi), chaque ligne retrouvée entière dans la couche texte ; toutes
+  les identités tiennent, aucun écart déclaré ; tous les exercices des éditions LF 2024 et
+  LF 2025 dits réalisés. Lus sur les pages, sans série : prose des éditions LF 2024 (p. 103-104 :
+  covid-19 et carburant d'aviation en 2020, gasoil en 2022) et LF 2025 (p. 77) ; structure du
+  capital, édition LF 2021 p. 14 (État 0 %, autres publics 52,951 %, autres 47,050 %) ;
+  classements des résultats (série `entreprises-publiques-resultats-nets-dix-premieres`). Offre publique de
+  vente de 2001 (30,39 %, 9 876 mD) d'après le recueil de la Direction générale de la
+  privatisation. Registre `tbl-ep-registre-sotrapil` : décrets n° 2000-2371 (intitulé seul en
+  français), 2001-240, 2001-1568 (lus à l'image), 2013-1393, décrets gouvernementaux
+  n° 2016-1183 et 2019-38 (réquisitions), décret présidentiel n° 2022-492 (édition arabe) ;
+  dates de dépôt lues en dernière page des éditions arabes. Arrêté du 18 août 2022 (calendrier
+  des conseils, 2023) renvoyé à `tbl-ep-registre-gouvernance`. Glossaire : `sotrapil`.
+  Figure : graduations fractionnaires de l'axe des montants désormais écrites avec leur
+  décimale (`_axe_md`, sans effet sur les graduations entières des autres figures).
+  **Reste** :
+  - textes de création, de transformation (dénominations successives : « Société de stockage
+    d'hydrocarbure et de transport par pipe-line » en 1998, « Société de transport d'hydrocarbures
+    par pipe-line » en 2016 et 2020, « Société tunisienne de transport par pipes lines » dans
+    l'édition LF 2021), d'introduction en Bourse et de concession des deux oléoducs : **non
+    identifiés** dans `jort_cache.db` ni dans le plein texte du corpus ; fascicules français de
+    1997 à 2001 à couche texte chiffrée (décalage de 29), à décoder ou océriser ;
+  - texte arabe du statut du personnel (décret n° 2000-2371, JORT n° 86 de 2000, édition
+    arabe) : **dans le corpus local**, non lu ; schémas et annexes des organigrammes de 2001 et
+    de 2022, non lus ;
+  - régime général : loi n° 82-60 (canalisations d'intérêt public, modifiée par la loi
+    n° 95-50) et code des hydrocarbures (art. 75 à 83) : **dans le corpus local**, non lus ;
+  - visas des décrets de 2001 et 2022 : loi n° 85-78 (sociétés à capital entièrement public),
+    à rapprocher de la structure du capital de l'édition LF 2021 ;
+  - grandeurs d'activité (quantités transportées par les deux oléoducs, trois éditions, unités
+    à concilier) : non versées ;
+  - comptes publiés de la société et communications à la Bourse : **à obtenir**.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la
