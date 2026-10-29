@@ -4083,9 +4083,6 @@ Ce qui reste :
   `#r-` ne traversant pas les fichiers). Acquéreur de 2006 nommé d'après le recueil de la
   Direction générale de la privatisation. Glossaire : `tunisie-telecom`.
   **Reste** :
-  - `_statut.qmd`, tableau `tbl-ep-22ter` : la ligne de 2006 (« Ce qui reste ») ne dit pas que le
-    décret gouvernemental n° 2020-422 remplace les articles 2, 4 et 5 du décret n° 2006-1555 et
-    ajoute un article 2 bis : **à mettre à jour** (décision humaine, chapitre d'un autre domicile) ;
   - ouverture du capital de 2006 : texte d'autorisation **non identifié** ; part actuelle de
     l'État et cotation éventuelle **non établies** ;
   - redevance sur les télécommunications (15 % du chiffre d'affaires, loi n° 95-36, art. 10) :
