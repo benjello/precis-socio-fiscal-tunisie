@@ -15,6 +15,7 @@
     ge.figure("tunisair_budget", …) ; ge.figure("rnta_fiches", …)  # Tunisair, RNTA, mêmes vues
     ge.figure("onh_budget", …) ; ge.figure("onh_fiches", …)  # Office national de l'huile
     ge.figure("poste_budget", …) ; ge.figure("poste_fiches", …)  # Office national des postes
+    ge.figure("tt_fiches", …)                                # Tunisie Télécom : fiche seule
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -655,7 +656,8 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "transtu": "Transtu", "tunisie_autoroutes": "Tunisie Autoroutes",
               "tunisair": "Tunisair", "rnta": "RNTA",
               "office_huile": "Office national de l'huile",
-              "poste": "Office national des postes"}
+              "poste": "Office national des postes",
+              "tunisie_telecom": "Tunisie Télécom"}
 
 
 def fig_fiche(entite: str):
@@ -975,6 +977,8 @@ FIGURES = {
                      "fig_ep_poste_fiches"),
     "poste_budget": (lambda: fig_budget("poste", VIOLET), lambda: table_budget("poste"),
                      (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_poste_budget"),
+    "tt_fiches": (lambda: fig_fiche("tunisie_telecom"), lambda: table_fiche("tunisie_telecom"),
+                  (S_FICHES,), "fig_ep_tt_fiches"),
 }
 
 

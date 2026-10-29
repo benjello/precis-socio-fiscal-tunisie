@@ -697,6 +697,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tribunal immobilier | المحكمة العقارية |  |
 | Tunisair | شركة الخطوط التونسية |  |
 | Tunisie Autoroutes | شركة تونس الطرقات السيارة |  |
+| Tunisie Télécom | اتصالات تونس |  |
 | Tutelle | سلطة الإشراف |  |
 | Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
