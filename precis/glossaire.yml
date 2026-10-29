@@ -18509,6 +18509,30 @@ entries:
       definition: >
         منشأة عمومية تنتج الإسمنت والجير الاصطناعي بتاجروين من ولاية الكاف. سنة 2000، أدمجت
         الدولة في رأس مال الشركة قرابة 34 م د من مستحقاتها عليها، وتخلّت عن بقية ديونها الجبائية.
+  - id: afi
+    acronyme: AFI
+    statut: valide
+    references: [loi73-21-afi, loi91-37-afi, decret2022-501-afi, minfin-ep-2025]
+    source_definition: {ref: loi91-37-afi, locator: "art. 1er et 2"}
+    # AR : intitulé « الوكالة العقارية الصناعية » de la fiche de l'agence dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 72.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 72"}
+    voir_aussi: [afh]
+    fr:
+      terme: Agence foncière industrielle
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1973 et recréé en
+        1991, qui étudie, aménage et équipe les zones industrielles, artisanales et de services
+        pour en céder ou en louer les terrains aux promoteurs. Depuis 2022, l'État peut lui
+        vendre au dinar symbolique des terrains de son domaine privé à vocation industrielle.
+      synonymes: []
+    ar:
+      terme: الوكالة العقارية الصناعية
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1973 وأُعيد إحداثها سنة 1991، تتولّى
+        دراسة المناطق الصناعية والحرفية ومناطق الخدمات وتهيئتها وتجهيزها لبيع مقاسمها أو كرائها
+        للباعثين. ومنذ سنة 2022، يمكن للدولة أن تبيعها بالدينار الرمزي عقارات من ملكها الخاص
+        ذات صبغة صناعية.
       synonymes: []
   - id: tunisie-telecom
     statut: valide

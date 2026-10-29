@@ -4326,6 +4326,36 @@ Ce qui reste :
   - grandeurs d'activité des fiches (achats et ventes de produits de base) citées, non versées dans
     une série ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Agence foncière industrielle — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-afi`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
+  `fig-ep-afi-budget` et `fig-ep-afi-fiches`, tableaux repliés `tbl-ep-afi-fiche-a` et `-b`.
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-afi`, code `afi`) :
+  LF 2022 p. 64, LF 2024 p. 98, LF 2025 p. 72, lues à l'image (300 dpi) et retrouvées dans la couche
+  texte. Écart déclaré : 2023 (LF 2025), fonds propres hors résultat de l'exercice (+4,2). Édition
+  LF 2024 : note « (1) » sans appel (comptes non approuvés par le conseil), dite dans le texte et la
+  légende. Registre `tbl-ep-registre-afi`, lu au corpus local : loi n° 73-21 (image ; fascicule à
+  double date, effet en fourchette), loi n° 78-27 (prêt garanti, image), loi n° 87-50 (art. 1er,
+  image), loi n° 91-37 (image), loi n° 97-31, loi n° 2000-59 (couche décalée, décodée), loi
+  n° 2009-34, décret n° 2013-2272, loi de finances pour 2016 (art. 84, extrait français local),
+  décret présidentiel n° 2022-501. Glossaire : `afi`.
+  **Reste** :
+  - textes **dans le corpus local, non lus** : décret n° 73-598 et ses modificatifs n° 74-85 et
+    85-1602 ; suite de la loi n° 87-50 (p. 962) et loi n° 91-38 ; décrets d'organisation n° 92-127,
+    98-22 et 2010-3012 ; personnel, organigramme et emplois fonctionnels (décrets n° 77-545,
+    98-1174, 98-1175, 2001-2442, 2012-2027, 2013-3109) ; décrets gouvernementaux n° 2016-413, 2016-822
+    et 2016-1391 (article 52 bis du code d'incitation aux investissements, **intitulés arabes**) ;
+    arrêté du 5 mai 2014 (réserves foncières industrielles) ; décrets d'approbation des ventes au
+    dinar symbolique de 2023 à 2026 (n° 2023-613, 2023-614, 2023-659, 2023-660, 2023-771, 2023-772,
+    2024-40, 2026-6, 2026-8) ; décret n° 2026-127 (Sidi Thabet) ; article 23, IV, du code des droits
+    d'enregistrement et de timbre ;
+  - grandeurs d'activité des fiches (surfaces aménagées) : unités incompatibles entre éditions
+    (m², « hectare », milliers de m²), non versées ; classements des dettes et créances envers
+    l'État (LF 2024 et LF 2025), liquidités placées (LF 2022) et couverture des charges (LF 2024) :
+    cités d'après les pages, non versés dans une série ;
+  - page exacte de la ligne de l'agence dans les tableaux des transferts par entreprise (LF 2022 à
+    LF 2024) : non relevée ; objet des transferts à confirmer dans l'annexe 8 ;
+  - comptes publiés et rapports annuels de l'agence : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche
