@@ -18441,3 +18441,120 @@ entries:
         منشأة عمومية تنتج الأسمدة الفسفاطية، ومنها الفسفاط الثلاثي الرفيع. وتنتفع قروضها
         الاستثمارية وتمويل وارداتها من الأمونيا والكبريت والأسمدة بضمان الدولة.
       synonymes: []
+  - id: tunisie-autoroutes
+    statut: valide
+    references: [minfin-ep-2020, decret95-720-autoroutes]
+    source_definition: {ref: minfin-ep-2020, locator: "p. 121"}
+    # AR : intitulé « شركة تونس الطرقات السيارة » de la loi n° 2019-75, édition arabe du JORT,
+    # p. 2565 (le rapport sur les entreprises publiques, édition LF 2025, p. 95, écrit « شركة
+    # تونس للطرقات السيارة »).
+    source_traduction: {ref: loi2019-75-autoroutes, locator: "p. 2565"}
+    voir_aussi: [transtu]
+    fr:
+      terme: Tunisie Autoroutes
+      definition: >
+        Société anonyme créée en 1992, dont l'État détient la quasi-totalité du capital. Elle
+        exploite par le péage les autoroutes que l'État lui concède, les entretient et en
+        construit de nouvelles sections.
+      synonymes: []
+    ar:
+      terme: شركة تونس الطرقات السيارة
+      definition: >
+        شركة خفية الاسم أُحدثت سنة 1992 وتمتلك الدولة تقريبا كامل رأس مالها. تستغلّ عبر
+        معلوم المرور الطرقات السيارة التي تمنحها إياها الدولة بلزمة، وتتولّى صيانتها وإنجاز
+        أقسام جديدة منها.
+      synonymes: []
+
+  - id: transtu
+    acronyme: Transtu
+    statut: valide
+    references: [loi2003-33-transtu, decret2003-2407-transtu]
+    source_definition: {ref: loi2003-33-transtu, locator: "art. 1er, 2 et 5"}
+    # AR : nom « شركة النقل بتونس » de l'article 1er de la loi n° 2003-33, édition arabe du JORT
+    # n° 34 de 2003, p. 1432 (la traduction française imprime « Transport du Grand Tunis »).
+    source_traduction: {ref: loi2003-33-transtu, locator: "art. 1er"}
+    voir_aussi: [tunisie-autoroutes]
+    fr:
+      terme: Société des transports de Tunis
+      definition: >
+        Établissement public créé en 2003 par la fusion de la Société nationale des transports
+        et de la Société du métro léger de Tunis. Il assure le transport public de personnes à
+        Tunis et dans ses banlieues et reçoit de l'État des compensations pour les tarifs
+        préférentiels et le transport gratuit de certaines catégories de voyageurs.
+      synonymes: []
+    ar:
+      terme: شركة النقل بتونس
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 2003 بإدماج الشركة الوطنية للنقل وشركة المترو الخفيف لمدينة
+        تونس. تؤمّن النقل العمومي للأشخاص بتونس وضواحيها، وتتلقّى من الدولة تعويضات عن
+        التعريفات التفاضلية وعن النقل المجاني لبعض أصناف المسافرين.
+      synonymes: []
+  - id: tunisair
+    acronyme: null
+    statut: valide
+    references: [loi74-70-tunisair, loi2015-27-tunisair, minfin-ep-2025]
+    source_definition: {ref: loi74-70-tunisair, locator: "article unique"}
+    # AR : intitulé « شركة الخطوط التونسية » de la fiche de la société dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 56.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 56"}
+    voir_aussi: []
+    fr:
+      terme: Tunisair
+      definition: >
+        Société tunisienne de l'air, compagnie aérienne nationale. L'État a souscrit à
+        ses augmentations de capital et garantit des emprunts qu'elle contracte auprès de
+        banques étrangères pour acheter des avions.
+      synonymes: [Société tunisienne de l'air, Tunis-Air]
+    ar:
+      terme: شركة الخطوط التونسية
+      definition: >
+        الناقل الجوي الوطني. اكتتبت الدولة في الترفيع في رأس مالها وتضمن قروضا
+        تبرمها مع بنوك أجنبية لاقتناء طائرات.
+      synonymes: []
+
+  - id: rnta
+    acronyme: RNTA
+    statut: valide
+    references: [loi64-57-rnta, decret88-67-rnta, minfin-ep-2025]
+    source_definition: {ref: loi64-57-rnta, locator: "art. 1er et 2"}
+    # AR : intitulé « الوكالة الوطنية للتبغ والوقيد » de la fiche de la Régie dans le rapport
+    # sur les entreprises publiques, édition LF 2025, p. 50.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 50"}
+    voir_aussi: []
+    fr:
+      terme: Régie nationale des tabacs et des allumettes
+      definition: >
+        Établissement public créé en 1964, qui exploite au profit de l'État le monopole
+        fiscal des tabacs, des allumettes et des cartes à jouer. Il est placé sous la
+        tutelle du ministère des Finances.
+      synonymes: []
+    ar:
+      terme: الوكالة الوطنية للتبغ والوقيد
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 1964، تستغلّ لفائدة الدولة الاحتكار الجبائي للتبغ
+        والوقيد وأوراق اللعب. وهي تحت إشراف وزارة المالية.
+      synonymes: []
+  - id: onh
+    acronyme: ONH
+    statut: valide
+    references: [dl62-24-onh, dl70-13-onh, loi94-37-onh, minfin-ep-2024]
+    source_definition: {ref: dl70-13-onh, locator: "art. 1er et 2"}
+    # AR : intitulé « الديوان الوطني للزيت » de la fiche de l'Office dans le rapport sur les
+    # entreprises publiques, édition LF 2024, p. 112.
+    source_traduction: {ref: minfin-ep-2024, locator: "p. 112"}
+    voir_aussi: [office-cereales]
+    fr:
+      terme: Office national de l'huile
+      definition: >
+        Établissement public créé en 1962, qui achète, importe et vend l'huile végétale
+        subventionnée et intervient sur le marché de l'huile d'olive. Il a eu de 1970 à 1994
+        le monopole de l'achat de l'huile d'olive à la production, de son exportation et de
+        l'importation des huiles végétales comestibles.
+      synonymes: []
+    ar:
+      terme: الديوان الوطني للزيت
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 1962، تتولّى شراء الزيت النباتي المدعّم وتوريده وبيعه وتتدخّل
+        في سوق زيت الزيتون. وكان لها من سنة 1970 إلى سنة 1994 احتكار شراء زيت الزيتون من
+        المنتجين وتصديره وتوريد الزيوت النباتية الغذائية.
+      synonymes: []

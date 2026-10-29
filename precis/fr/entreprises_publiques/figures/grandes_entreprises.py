@@ -11,6 +11,9 @@
     ge.figure("oc_budget", …) ; ge.figure("oc_fiches", …)   # Office des céréales, mêmes vues
     ge.figure("sonede_budget", …) ; ge.figure("onas_fiches", …)  # SONEDE, ONAS, mêmes vues
     ge.figure("cpg_fiches", …) ; ge.figure("gct_fiches", …)    # CPG, GCT : fiche seule
+    ge.figure("transtu_budget", …) ; ge.figure("autoroutes_fiches", …)  # Transtu, Tunisie Autoroutes
+    ge.figure("tunisair_budget", …) ; ge.figure("rnta_fiches", …)  # Tunisair, RNTA, mêmes vues
+    ge.figure("onh_budget", …) ; ge.figure("onh_fiches", …)  # Office national de l'huile
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -647,7 +650,10 @@ def _case_fiche(f, x, e, ind):
 
 NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "office_cereales": "Office des céréales", "sonede": "SONEDE", "onas": "ONAS",
-              "cpg": "CPG", "gct": "GCT"}
+              "cpg": "CPG", "gct": "GCT",
+              "transtu": "Transtu", "tunisie_autoroutes": "Tunisie Autoroutes",
+              "tunisair": "Tunisair", "rnta": "RNTA",
+              "office_huile": "Office national de l'huile"}
 
 
 def fig_fiche(entite: str):
@@ -934,6 +940,31 @@ FIGURES = {
                    "fig_ep_cpg_fiches"),
     "gct_fiches": (lambda: fig_fiche("gct"), lambda: table_fiche("gct"), (S_FICHES,),
                    "fig_ep_gct_fiches"),
+    "transtu_fiches": (lambda: fig_fiche("transtu"), lambda: table_fiche("transtu"),
+                       (S_FICHES,), "fig_ep_transtu_fiches"),
+    "transtu_budget": (lambda: fig_budget("transtu", ORANGE, "provisoire ou probable"),
+                       lambda: table_budget("transtu"),
+                       (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_transtu_budget"),
+    "autoroutes_fiches": (lambda: fig_fiche("tunisie_autoroutes"),
+                          lambda: table_fiche("tunisie_autoroutes"), (S_FICHES,),
+                          "fig_ep_autoroutes_fiches"),
+    "autoroutes_budget": (lambda: fig_budget("tunisie_autoroutes", BLEU),
+                          lambda: table_budget("tunisie_autoroutes"),
+                          (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_autoroutes_budget"),
+    "tunisair_fiches": (lambda: fig_fiche("tunisair"), lambda: table_fiche("tunisair"),
+                        (S_FICHES,), "fig_ep_tunisair_fiches"),
+    "tunisair_budget": (lambda: fig_budget("tunisair", BLEU, "provisoire, estimé ou probable"),
+                        lambda: table_budget("tunisair"),
+                        (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_tunisair_budget"),
+    "rnta_fiches": (lambda: fig_fiche("rnta"), lambda: table_fiche("rnta"), (S_FICHES,),
+                    "fig_ep_rnta_fiches"),
+    "rnta_budget": (lambda: fig_budget("rnta", ORANGE), lambda: table_budget("rnta"),
+                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_rnta_budget"),
+    "onh_fiches": (lambda: fig_fiche("office_huile"), lambda: table_fiche("office_huile"),
+                   (S_FICHES,), "fig_ep_onh_fiches"),
+    "onh_budget": (lambda: fig_budget("office_huile", COULEURS_TRANSFERTS["office_huile"]),
+                   lambda: table_budget("office_huile"),
+                   (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_onh_budget"),
 }
 
 

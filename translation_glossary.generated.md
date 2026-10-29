@@ -431,6 +431,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |
 | Office national de l'assainissement | الديوان الوطني للتطهير | ONAS |
+| Office national de l'huile | الديوان الوطني للزيت | ONH |
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ordonnateur | آمر قبض وصرف |  |
 | Organisme de placement collectif en valeurs mobilières | مؤسسة التوظيف الجماعي في الأوراق المالية | OPCVM |
@@ -513,6 +514,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Redevance de compensation | أتاوة الدعم |  |
 | Redevance de prestations douanières | الأتاوة على الخدمات الديوانية |  |
 | Redoublement | الرسوب |  |
+| Régie nationale des tabacs et des allumettes | الوكالة الوطنية للتبغ والوقيد | RNTA |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
 | Régime complémentaire | النظام التكميلي |  |
 | Régime conventionnel d'entreprise | النظام التعاقدي (التغطية الصحية) |  |
@@ -595,6 +597,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | SMIG de référence de la CNSS | الأجر الأدنى المرجعي المعتمد لدى الصندوق الوطني للضمان الاجتماعي |  |
 | Société de prévoyance des fonctionnaires et employés tunisiens | الجمعية الاحتياطية للموظفين والمستخدمين التونسيين |  |
 | Société de promotion des logements sociaux | شركة النهوض بالمساكن الاجتماعية | SPROLS |
+| Société des transports de Tunis | شركة النقل بتونس | Transtu |
 | Société nationale d'exploitation et de distribution des eaux | الشركة الوطنية لاستغلال وتوزيع المياه | SONEDE |
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
@@ -691,6 +694,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Travailleuse agricole | العاملة الفلاحية |  |
 | Travaux pénibles et insalubres | الأشغال الشاقّة وغير الصحّية |  |
 | Tribunal immobilier | المحكمة العقارية |  |
+| Tunisair | شركة الخطوط التونسية |  |
+| Tunisie Autoroutes | شركة تونس الطرقات السيارة |  |
 | Tutelle | سلطة الإشراف |  |
 | Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |

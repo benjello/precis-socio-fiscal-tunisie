@@ -1,0 +1,52 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-28
+# séries (tunisia_data) : entreprises-publiques-transferts-par-entreprise, entreprises-publiques-resultats-nets-dix-premieres, entreprises-publiques-effectifs-par-entreprise
+# sources (citation) : @minfin-ep, @minfin-ep-2022, @minfin-ep-2023, @minfin-ep-2024, @minfin-ep-2025, @minfin-ep-2020
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : LES ÉDITIONS SE CONTREDISENT ET LE FICHIER NE CHOISIT PAS : STIR 2019, 1 296 (LF 2021, LF 2022) puis 1 905,3 (LF 2023) ; STIR 2018, 1 500 puis 1 846,1 ; Office des céréales 2019, 1 324,1 puis 1 800,2 ; 2021, 213,5 (provisoire) puis 1 687,5 ; ONAS 2018, 59,4 puis 155,9. Les révisions vont presque toutes à la hausse : la subvention d'une année est soldée les années suivantes. La CPSCL figure en 2017-2020 (LF 2021, LF 2022) puis est ramenée à zéro (LF 2023 : financements destinés aux collectivités, non une subvention de l'État). La CNSS, absente de la LF 2023, entre en LF 2024 (1 321,6 en 2020). LIGNES NULLES NON TRANSCRITES (banques, ETAP, etc.) : une entité absente d'une édition y est imprimée à zéro ou n'est pas dans l'échantillon — consulter le rapport avant de conclure. `statut` provisoire pour la dernière année de chaque édition. Contenu de la ligne non détaillé : elle ne concorde ni avec la subvention d'exploitation des comptes, ni avec les interventions de l'annexe 8 (transport-transferts-par-entreprise) — AUCUN RACCORD. Somme des lignes = total imprimé (contrôlé, écarts d'un dixième déclarés) ; le total de 2022 est 14 560,6, quand le tableau d'ensemble imprime 14 506,6. Mêmes identifiants d'entité que la série du transport (transtu, sncft). LU À L'IMAGE., DES CLASSEMENTS, PAS DES SÉRIES : une entreprise absente du classement d'une année n'a pas de valeur — ce n'est ni zéro ni un manque de la transcription. Chaque exercice de 2018 à 2021 est donné par deux éditions, qui divergent parfois beaucoup : STIR 2018, − 1 159,5 puis − 813,4 ; Tunisair 2018, − 96,8 puis − 192,6 ; Groupe chimique 2020, − 205,0 puis − 593,3 ; CPG 2019, 637,6 puis 640,58. Signe porté par `sens` (les éditions LF 2023 et LF 2024 impriment les pertes sans signe). D'après la note documentaire du précis (fiches par entreprise de l'édition LF 2025, non relues ici) : la valeur de la STEG est son résultat avant « modifications comptables », et Tunisair comme la société des transports de Tunis n'ont pas d'états financiers approuvés pour 2021-2023. `doublon_imprime` : l'édition LF 2022 imprime deux fois la même société aux rangs 8 et 9 des bénéfices de 2019. Somme des dix = total imprimé (contrôlé ; quatre écarts de 0,1 à 0,3 déclarés). NON TRANSCRITS : les classements par produits, charges, charges de personnel et résultat d'exploitation ; les fiches par entreprise (dette, effectifs, subvention d'exploitation). LU À L'IMAGE., AUCUN RACCORD : un exercice figure dans une à quatre éditions ; toutes les valeurs sont gardées, `divergence_effectif_entre_editions` signale les 90 lignes qui diffèrent (Société générale d'entreprises de matériel et de travaux, SOMATRA-GET, en 2020 : 212 puis 1 194 agents ; Tunisair en 2017 : 3 765 puis 3 565 ; RNTA en 2018 : 1 336 puis 1 130 ; CTN en 2018 : 1 195 puis 734). `statut` : le dernier exercice de chaque édition est le plus souvent provisoire, estimé ou probable — NE PAS le tracer comme une réalisation ; Tunisair n'a que des chiffres provisoires pour 2021-2023, la Transtu des chiffres probables. LES BANQUES, LE SECTEUR FINANCIER ET LES CAISSES SOCIALES NE SONT PAS DANS L'ÉCHANTILLON DES 40 : filtrer sur `categorie` avant toute somme. Le nombre d'agents n'est pas défini par le rapport (permanents, contractuels, équivalents temps plein : non dit) ; la hausse de la CPG en 2019 (6 098 puis 7 421) y est attribuée au programme de recrutement. PREUVES DE LECTURE : 391 variations imprimées d'un exercice à l'autre (éditions LF 2024 et LF 2025) redonnent la différence des niveaux, douze écarts d'arrondi ou d'impression déclarés (dont Groupe chimique, LF 2024 : −278 imprimé pour −287) ; la somme des 40 fiches redonne exactement la ligne « total des 40 » pour 2019 et 2022. ÉDITION LF 2023 NON DÉPOUILLÉE (exercices 2019-2021, déjà couverts par deux autres éditions) ; charges de personnel des éditions françaises non reprises ; édition arabe de la LF 2020 non relue. LU À L'IMAGE (pages rendues à 150 dpi et tournées), valeurs recoupées avec la couche texte.
+# note : Transtu : transferts du budget, résultat net, effectif et charges de personnel, exercices 2016-2023, d'après le rapport sur les entreprises publiques. Source : ministère des Finances [@minfin-ep-2020, p. 71 ; @minfin-ep, p. 29, 70 et 149-150 ; @minfin-ep-2022, p. 19, 55 et 105 ; @minfin-ep-2023, p. 27 et 200 ; @minfin-ep-2024, p. 29, 83 et 154 ; @minfin-ep-2025, p. 21 et 60]
+Grandeur,Exercice,Édition,Statut,Valeur,Unité,Imprimé,Localisation
+Transferts du budget,2017,LF 2021,réalisé,154.4,MD courants,"154,4","tableau 31, page du fichier 149-150"
+Transferts du budget,2018,LF 2021,réalisé,144.2,MD courants,"144,2","tableau 31, page du fichier 149-150"
+Transferts du budget,2018,LF 2022,réalisé,144.2,MD courants,"144,2","tableau 38, page du fichier 104-105"
+Transferts du budget,2019,LF 2021,réalisé,139.2,MD courants,"139,2","tableau 31, page du fichier 149-150"
+Transferts du budget,2019,LF 2022,réalisé,138.6,MD courants,"138,6","tableau 38, page du fichier 104-105"
+Transferts du budget,2019,LF 2023,réalisé,138.6,MD courants,"138,6","tableau 40, page du fichier 201-202"
+Transferts du budget,2020,LF 2021,provisoire,172.4,MD courants,"172,4","tableau 31, page du fichier 149-150"
+Transferts du budget,2020,LF 2022,provisoire,172.5,MD courants,"172,5","tableau 38, page du fichier 104-105"
+Transferts du budget,2020,LF 2023,réalisé,172.5,MD courants,"172,5","tableau 40, page du fichier 201-202"
+Transferts du budget,2020,LF 2024,réalisé,179.3,MD courants,"179,3","tableau 45, page du fichier 155-156"
+Transferts du budget,2021,LF 2023,provisoire,159.9,MD courants,"159,9","tableau 40, page du fichier 201-202"
+Transferts du budget,2021,LF 2024,réalisé,161.9,MD courants,"161,9","tableau 45, page du fichier 155-156"
+Transferts du budget,2022,LF 2024,provisoire,147.5,MD courants,"147,5","tableau 45, page du fichier 155-156"
+Résultat net (classement),2017,LF 2021,non dit,-167.3,MD courants,"-167,3",p. 29
+Résultat net (classement),2018,LF 2021,non dit,-187.5,MD courants,"-187,5",p. 29
+Résultat net (classement),2018,LF 2022,non dit,-192.4,MD courants,"-192,4",p. 19
+Résultat net (classement),2019,LF 2022,non dit,-204.34,MD courants,"-204,34",p. 19
+Résultat net (classement),2019,LF 2023,non dit,-202.2,MD courants,"202,20",p. 27
+Résultat net (classement),2020,LF 2023,non dit,-219.2,MD courants,"219,20",p. 27
+Résultat net (classement),2020,LF 2024,non dit,-215.1,MD courants,"215,1",p. 29
+Résultat net (classement),2021,LF 2024,non dit,-225.6,MD courants,"225,6",p. 29
+Résultat net (classement),2021,LF 2025,non dit,-229.8,MD courants,"-229,8",p. 21
+Résultat net (classement),2022,LF 2025,non dit,-226.5,MD courants,"-226,5",p. 21
+Effectif,2017,LF 2020,non dit,7529.0,agents,7529,page du fichier 71
+Effectif,2018,LF 2020,probable,7555.0,agents,7555,page du fichier 71
+Effectif,2018,LF 2021,non dit,7555.0,agents,7555,p. 70
+Effectif,2018,LF 2022,provisoire,7555.0,agents,7555,p. 55
+Charges de personnel,2018,LF 2022,provisoire,255.1,MD courants,"255,1",p. 55
+Effectif,2019,LF 2021,probable,7454.0,agents,7454,p. 70
+Effectif,2019,LF 2022,probable,7454.0,agents,7454,p. 55
+Charges de personnel,2019,LF 2022,probable,268.7,MD courants,"268,7",p. 55
+Effectif,2020,LF 2022,probable,7381.0,agents,7381,p. 55
+Charges de personnel,2020,LF 2022,probable,281.7,MD courants,"281,7",p. 55
+Effectif,2020,LF 2024,probable,7381.0,agents,7381,p. 83
+Charges de personnel,2020,LF 2024,probable,281.7,MD courants,"281,7",p. 83
+Effectif,2021,LF 2024,probable,7350.0,agents,7350,p. 83
+Charges de personnel,2021,LF 2024,probable,290.3,MD courants,"290,3",p. 83
+Effectif,2021,LF 2025,provisoire,7350.0,agents,7 350,p. 60
+Charges de personnel,2021,LF 2025,provisoire,287.0,MD courants,"287,0",p. 60
+Effectif,2022,LF 2024,probable,7089.0,agents,7089,p. 83
+Charges de personnel,2022,LF 2024,probable,296.6,MD courants,"296,6",p. 83
+Effectif,2022,LF 2025,probable,7089.0,agents,7 089,p. 60
+Charges de personnel,2022,LF 2025,probable,293.1,MD courants,"293,1",p. 60
+Effectif,2023,LF 2025,probable,6791.0,agents,6 791,p. 60
+Charges de personnel,2023,LF 2025,probable,301.7,MD courants,"301,7",p. 60
