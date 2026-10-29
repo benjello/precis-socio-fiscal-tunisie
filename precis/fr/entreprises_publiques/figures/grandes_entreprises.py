@@ -17,6 +17,7 @@
     ge.figure("poste_budget", …) ; ge.figure("poste_fiches", …)  # Office national des postes
     ge.figure("tt_fiches", …)                                # Tunisie Télécom : fiche seule
     ge.figure("otc_budget", …) ; ge.figure("otc_fiches", …)  # Office du commerce de la Tunisie
+    ge.figure("srt_sfax_budget", …) ; ge.figure("srt_bizerte_fiches", …)  # sociétés régionales
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -662,7 +663,9 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "office_huile": "Office national de l'huile",
               "poste": "Office national des postes",
               "tunisie_telecom": "Tunisie Télécom",
-              "office_commerce": "Office du commerce de la Tunisie"}
+              "office_commerce": "Office du commerce de la Tunisie",
+              "srt_sfax": "Société régionale de transport de Sfax",
+              "srt_bizerte": "Société régionale de transport de Bizerte"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -994,6 +997,16 @@ FIGURES = {
                    (S_FICHES,), "fig_ep_otc_fiches"),
     "otc_budget": (lambda: fig_budget("office_commerce", VERT), lambda: table_budget("office_commerce"),
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_otc_budget"),
+    "srt_sfax_fiches": (lambda: fig_fiche("srt_sfax"), lambda: table_fiche("srt_sfax"),
+                        (S_FICHES,), "fig_ep_srt_sfax_fiches"),
+    "srt_sfax_budget": (lambda: fig_budget("srt_sfax", BLEU), lambda: table_budget("srt_sfax"),
+                        (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_srt_sfax_budget"),
+    "srt_bizerte_fiches": (lambda: fig_fiche("srt_bizerte"), lambda: table_fiche("srt_bizerte"),
+                           (S_FICHES,), "fig_ep_srt_bizerte_fiches"),
+    "srt_bizerte_budget": (lambda: fig_budget("srt_bizerte", VERT),
+                           lambda: table_budget("srt_bizerte"),
+                           (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP),
+                           "fig_ep_srt_bizerte_budget"),
 }
 
 

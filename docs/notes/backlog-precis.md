@@ -4107,6 +4107,40 @@ Ce qui reste :
     dettes et créances croisées (voir l'entrée CPG et GCT) ; grandeurs d'activité des fiches
     (abonnés, lignes) non relevées ; édition française LF 2021 (p. 130) non versée ;
   - comptes publiés et rapports annuels de la société : **à obtenir**.
+- **Sociétés régionales de transport de Sfax et de Bizerte — section écrite le 29 octobre 2026**
+  (`_transports.qmd`, `#sec-ep-ge-srt`, en fin de chapitre, avant le TODO de la SNCFT ; une
+  section, deux sous-sections `#sec-ep-ge-srt-sfax` et `#sec-ep-ge-srt-bizerte`). Figures
+  `fig-ep-srt-{sfax,bizerte}-budget` et `fig-ep-srt-{sfax,bizerte}-fiches`, tableaux repliés
+  `tbl-ep-srt-{sfax,bizerte}-fiche-a` et `-b`, tableau `tbl-ep-srt-abandons` (lois d'abandon de
+  créances de 1989, 1999 et 2005, en dinars), registres `tbl-ep-registre-srt` (les trois lois,
+  communes aux deux sociétés), `tbl-ep-registre-srt-sfax` (décret n° 60-68, décrets n° 63-154 à
+  63-158, arrêté du 24 avril 1969, loi n° 74-71, décret n° 2001-663, décret n° 2015-5) et
+  `tbl-ep-registre-srt-bizerte` (arrêté du 14 juillet 1973, décret n° 2015-6). Fascicules de 1960
+  à 1989 lus à l'image (sans couche texte) ; 1999, 2001 et 2005 dans la couche texte à police
+  décalée, décodée ; 2015 dans la couche texte. Loi n° 89-74 : les deuxième et troisième colonnes
+  du tableau sont en millimes (la somme redonne le total imprimé). **Fiches du ministère des
+  Finances versées le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-srt`) : LF 2022 p. 55 (les deux sociétés), LF 2024
+  p. 84 (Sfax) et 85 (Bizerte), LF 2025 p. 57 et 58. Écarts imprimés déclarés : dette totale de
+  l'édition LF 2022 qui ne vaut pas la somme des créanciers (Sfax +13,2 ; +16,3 ; +11,2 ; Bizerte
+  −6,4 ; −10,4) ; fonds propres 2020 de Sfax imprimés positifs en LF 2024 (96,4 ; bilan juste
+  avec le signe « − », ligne des variations de la page calculée sur +96,4) ; colonne des fonds
+  propres de Bizerte en LF 2024 (1,9 ; 1,4 ; 4,7) qui ne boucle pas ; autres produits de Bizerte
+  2020-2021 (LF 2024) qui comprennent la subvention. Glossaire : `srt`.
+  **Reste** :
+  - textes de création et statuts des deux sociétés (sociétés anonymes : statuts hors du
+    *Journal officiel*) : **à obtenir** ; société de Bizerte : aucun texte antérieur à 1973
+    relevé par les intitulés français de `jort_cache.db` ; intitulés arabes et fascicules de
+    1958-1973 à interroger ; société « de transport » de la commune de Sfax en 1960 : à
+    identifier ;
+  - part de l'État et des communes dans le capital aujourd'hui : **non établie** ;
+  - textes **dans le corpus local, non lus** : schéma et annexe du décret n° 2001-663 ; arrêtés du
+    25 novembre 2008 (Bizerte), du 19 août 2011 (Sfax) et du 11 octobre 2018 (calendriers de
+    conservation des documents) ; décrets de 1963 sur les autres sociétés régionales
+    (métadonnées seules) ;
+  - grandeurs d'activité des fiches (voyageurs, kilomètres) non relevées ; objet des transferts
+    du budget (compensation, subvention d'équilibre) à rapprocher du volume « La compensation »
+    et de l'annexe 8.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la

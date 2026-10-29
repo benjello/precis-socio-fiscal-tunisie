@@ -18624,3 +18624,23 @@ entries:
         البريدي وتُسدي الخدمات المالية لصندوق الادخار القومي التونسي والحسابات الجارية
         البريدية.
       synonymes: [البريد التونسي]
+  - id: srt
+    statut: valide
+    references: [loi89-74-srt, loi99-76-srt, loi2005-74-srt, minfin-ep-2025]
+    source_definition: {ref: loi89-74-srt, locator: "article unique"}
+    # AR : intitulés « الشركة الجهوية للنقل بولاية صفاقس » et « الشركة الجهوية للنقل ببنزرت »
+    # des fiches du rapport sur les entreprises publiques, édition LF 2025, p. 57 et 58.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 57-58"}
+    fr:
+      terme: société régionale de transport
+      definition: >
+        Entreprise publique de transport d'un gouvernorat ou d'une région, sous
+        la tutelle du ministère du Transport. L'État a abandonné ses créances sur ces sociétés
+        par des lois de 1989, 1999 et 2005.
+      synonymes: []
+    ar:
+      terme: الشركة الجهوية للنقل
+      definition: >
+        منشأة عمومية للنقل بولاية أو بجهة، تحت إشراف وزارة النقل. تخلّت الدولة عن
+        ديونها تجاه هذه الشركات بمقتضى قوانين صدرت سنوات 1989 و1999 و2005.
+      synonymes: []
