@@ -3931,7 +3931,7 @@ Ce qui reste :
   avec l'édition arabe p. 1432 ; décret n° 2003-2407 ; loi n° 2005-73, image ; loi n° 2020-40 ;
   décret-loi n° 2023-13, édition arabe). Glossaire : `tunisie-autoroutes`, `transtu`.
   **Reste** :
-  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports, la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ;
+  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports et la CTN, au tableau du ministère du Transport, n'ont pas de fiche versée ; l'OMMP a la sienne depuis le 29 octobre 2026 (entrée suivante) ;
   - Tunisie Autoroutes : acte de constitution (13 mai 1992 d'après le rapport LF 2020, p. 121) non
     identifié au JORT ; décrets de concession des autres sections (n° 2000-645, 2002-537,
     2004-1073, 2004-1074, 2016-256, 2019-661 à 2019-663) et de péage des autres sections (n° 97-1003,
@@ -3948,6 +3948,34 @@ Ce qui reste :
   - éditions françaises LF 2020 et LF 2021 : comptes des deux entreprises dans la prose, non
     versés ; grandeurs d'activité (voyageurs, trafic) non relevées ; comptes publiés des deux
     entreprises : **à obtenir**.
+- **Office de la marine marchande et des ports (OMMP) — section écrite le 29 octobre 2026**
+  (`_transports.qmd`, `#sec-ep-ge-ommp`, en fin de chapitre). Figure `fig-ep-ommp-fiches` (pas de
+  figure du budget : l'Office n'est dans aucun tableau des transferts par entreprise du rapport) ;
+  tableaux repliés `tbl-ep-ommp-fiche-a` et `-b`. **Fiche du ministère des Finances versée le
+  29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-ommp`, à fusionner avant la PR du précis) : LF 2022 p. 54 (tableau 25 du ministère
+  du Transport), LF 2024 p. 83, LF 2025 p. 58 ; lues à l'image et retrouvées dans la couche texte.
+  Dette imprimée « 0 » envers chaque créancier (LF 2022) ; bilan non imprimé de 2021 à 2023 (états
+  financiers non approuvés) ; écart imprimé déclaré (LF 2025, 2023, résultat d'exploitation −0,8).
+  Registre `tbl-ep-registre-ommp` : lois n° 65-2 (image, et son rectificatif), 72-5, 80-34, 83-76,
+  84-61 (image) ; décret n° 98-1385 ; loi n° 98-83 ; loi n° 98-109 (date de dépôt lue dans l'édition
+  arabe du même numéro) ; décret n° 2000-2407 (police décalée, décodée) ; décret-loi n° 2021-10 et
+  décret présidentiel n° 2021-248. `figures/grandes_entreprises.py` : `fig_fiche` fixe l'échelle du
+  panneau de la dette quand la dette totale imprimée est nulle chaque année. Glossaire : `ommp`.
+  **Reste** :
+  - loi n° 91-94 (prêt de la KfW, JORT n° 82 de 1991, **scanné, à lire à l'image**) ; tarifs et
+    redevances portuaires (décrets n° 70-588, 82-1386, 88-229, arrêtés de 1982 à 2007), statut du
+    personnel (décrets n° 73-383, 99-1731), affiliation à la CNR (décret n° 72-263), conseil
+    d'administration (décret n° 72-242), services concédables (décret n° 2002-135), organigramme
+    (décret n° 2004-1029), code des ports maritimes (loi n° 99-25), protocoles de 2014 : **dans le
+    corpus local, non lus** ;
+  - loi n° 80-34 : montant du prêt de la BIRD non imprimé ; date de l'accord (8 février dans
+    l'intitulé, 6 février dans l'article, à l'image) ; garantie de l'AFD datée du 3 juin 2021 par le
+    décret-loi et du 3 juin 2020 par le décret de ratification : **édition arabe à lire** ;
+  - part de l'État dans les bénéfices de l'Office par exercice (seul le cumul 2021-2023, 50 MD,
+    est versé) ; transferts éventuels du budget, à chercher dans l'annexe 8 ; grandeurs d'activité
+    (marchandises, passagers) non relevées ; éditions françaises LF 2020 et LF 2021 (prose) non
+    versées ; régime fiscal propre : aucun texte identifié par les intitulés.
 - **Tunisair et RNTA — sections écrites le 28 octobre 2026** (`_transports.qmd` pour Tunisair, `_offices.qmd` pour la RNTA`,
   `#sec-ep-ge-tunisair` et `#sec-ep-ge-rnta`, après l'ONAS et avant la SNCFT). La RNTA est la
   Régie nationale des **tabacs et des allumettes** (code `rnta` de toutes les séries, ministère des
