@@ -5743,8 +5743,9 @@
     Tunisie Télécom, Office national des postes, Office du commerce de la Tunisie,
     Agence technique des transports terrestres, OACA, OMMP, CTN, sociétés régionales
     de transport de Sfax et de Bizerte, Compagnie tunisienne de forage, SNDP, SOTRAPIL,
-    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI), bilan, résultat,
-    dette, subvention d''exploitation et emploi, exercices 2018-2023, par édition'
+    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI, SNIT), bilan,
+    résultat, dette, subvention d''exploitation et emploi, exercices 2018-2023, par
+    édition'
   sources:
   - minfin-ep-2022
   - minfin-ep-2024
@@ -5780,11 +5781,12 @@
     octobre 2026, tableau du secteur quasi financier), Office du commerce de la Tunisie
     (ajouté le 29 octobre 2026), Agence technique des transports terrestres (ATTT,
     ajoutée le 29 octobre 2026), Compagnie tunisienne de forage (CTF, ajoutée le 29
-    octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur), avec
-    le statut du chiffre'
+    octobre 2026), Société nationale immobilière de Tunisie (SNIT, ajoutée le 29 octobre
+    2026) ; une ligne par (édition, entreprise, exercice, grandeur), avec le statut
+    du chiffre'
   caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
     se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
-    signale 1380 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    signale 1416 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
     15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
     4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
     même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
