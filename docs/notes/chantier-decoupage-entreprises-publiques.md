@@ -358,3 +358,12 @@ nationalisations de 1956-1964) quand les chapitres 8 à 13 s'ouvriront.
    entreprises » jusqu'à l'ouverture de son chapitre (même décision).
 5. Les deux chapitres lisent le même module de figures, `figures/grandes_entreprises.py`. Aucune ligne de
    registre n'est citée depuis les deux chapitres : aucune n'est recopiée.
+
+## 11. Le chapitre « Les transports » (décision de l'humain, 29 octobre 2026)
+
+1. Le chapitre 9, « Les transports » (`_transports.qmd`, `#sec-ep-transports`), est ouvert, après « L'énergie » et avant
+   « Les autres entreprises ». Il reçoit Tunisie Autoroutes (`#sec-ep-ge-autoroutes`), la Transtu
+   (`#sec-ep-ge-transtu`), la SNCFT (`#sec-ep-sncft`) et Tunisair (`#sec-ep-ge-tunisair`, ajoutée sur demande de l'humain),
+   déplacées sans changement de texte, avec leurs figures, tableaux de fiches et registres. Les ancres sont conservées.
+2. Le volume compte treize chapitres. Le module de figures reste `figures/grandes_entreprises.py`.
+3. Tunisie Autoroutes relève du ministère de l'Équipement ; « La source » du chapitre le dit.

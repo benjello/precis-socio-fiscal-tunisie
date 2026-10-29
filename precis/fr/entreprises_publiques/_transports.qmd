@@ -1,0 +1,388 @@
+# Les transports {#sec-ep-transports .domicile-unique}
+
+Ce chapitre présente, une par une, les entreprises publiques de transport : Tunisie Autoroutes, qui exploite les autoroutes à péage, la Société des transports de Tunis (Transtu), la Société nationale des chemins de fer tunisiens (SNCFT) et Tunisair, avec, pour chacune, sa naissance et son statut, ses comptes, sa dette, sa subvention d'exploitation et son emploi. Ce que l'État paie pour les tarifs réduits du transport public est au volume « La compensation » ([le poste transport](../compensation/_transport.html)). Les transferts et les résultats de l'ensemble des entreprises sont au chapitre « Les grandes entreprises » (@sec-ep-lp-entreprises).
+
+## La source {#sec-ep-transports-source}
+
+La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : pour chaque entreprise du chapitre, sa fiche, exercices 2018 à 2023, en trois éditions ; pour Tunisie Autoroutes, la Transtu et Tunisair, aussi les transferts du budget, les classements des résultats et les effectifs des éditions LF 2020 à LF 2025, et les dettes et créances croisées avec l'État de l'édition LF 2025. Les tableaux du ministère du Transport portent la Transtu, la SNCFT et Tunisair ; Tunisie Autoroutes relève du ministère de l'Équipement. Le dernier exercice de chaque édition y est le plus souvent provisoire, estimé ou probable, et l'édition suivante le révise souvent. Pour Tunisair, les éditions LF 2024 et LF 2025 n'impriment aucun bilan, et ses fiches ne disent réalisé aucun exercice. Pour la Transtu, l'édition LF 2024 n'imprime que le bilan de 2020, et l'édition LF 2025, du bilan, que les résultats reportés ; un second rapport du ministère des Finances annexé au projet de loi de finances, le rapport sur les transferts et les garanties, donne aussi ses transferts du budget par nature, et ses totaux ne concordent pas toujours avec ceux du rapport sur les entreprises publiques. Ce que l'État paie à la place de ces entreprises au titre de leur dette garantie vient d'une autre source, les rapports de la Cour des comptes sur la clôture du budget, cités à part.
+
+## Tunisie Autoroutes {#sec-ep-ge-autoroutes}
+
+**[Tunisie Autoroutes](#g-tunisie-autoroutes), société anonyme créée en 1992 qui exploite les autoroutes à péage que l'État lui concède, reçoit du budget 180,0 MD en 2019 et 170,0 MD en 2022, chiffre provisoire ; en perte de 2018 à 2021, elle dégage un résultat positif en 2022, l'année où ses comptes portent une subvention d'exploitation de 320,2 MD.**
+
+```{python}
+#| label: fig-ep-autoroutes-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "autoroutes_budget",
+    caption=("Tunisie Autoroutes : transferts du budget, résultat net, effectif et charges de "
+             "personnel, exercices 2016-2023, d'après le rapport sur les entreprises publiques. "
+             "Source : ministère des Finances [@minfin-ep-2020, p. 122 ; @minfin-ep, p. 29, 121 "
+             "et 149-150 ; @minfin-ep-2022, p. 19, 80 et 105 ; @minfin-ep-2023, p. 27 et 200 ; "
+             "@minfin-ep-2024, p. 29, 120 et 154 ; @minfin-ep-2025, p. 20, 21 et 95]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire. Les transferts de 2017 et de 2018 sont des zéros imprimés. Le résultat net "
+        "est celui des classements des dix premiers résultats positifs et négatifs de chaque "
+        "édition, qui ne disent pas le statut du chiffre ; pour 2018, les éditions LF 2021 et "
+        "LF 2022 donnent −73,1 et −76,1 MD, pour 2021, les éditions LF 2024 et LF 2025 donnent "
+        "−54,5 et −87,9 MD. « n. c. » : la société n'est dans aucun classement de l'exercice ; "
+        "« n. d. » : le rapport ne donne pas la grandeur. Ni l'un ni l'autre n'est un zéro."),
+)
+```
+
+- **Ce que l'État lui confie.** Selon le rapport du ministère des Finances annexé au projet de loi de finances pour 2020, Tunisie Autoroutes est une société anonyme créée le 13 mai 1992, au capital de 999,5 MD, dont l'État détient 98,9 % ; elle exploite par le péage les autoroutes que lui concèdent les contrats de concession conclus avec l'État, les entretient et en construit de nouvelles sections [@minfin-ep-2020, p. 121]. Le même rapport la range parmi les entreprises sous tutelle du ministère de l'Équipement. [En 1995](#r-ep-autoroutes-1995), l'État approuve la concession de l'exploitation de l'autoroute Hammam-Lif–M'saken, signée le 30 décembre 1994 ; [en 2025](#r-ep-autoroutes-2025), il en approuve un avenant de prorogation. Entre ces deux dates, l'État souscrit cinq fois à l'augmentation du capital de la société : 70 MD [en 1999](#r-ep-autoroutes-1999), 100 MD [en 2002](#r-ep-autoroutes-2002-capital), 87 MD [en 2006](#r-ep-autoroutes-2006), 729 MD [en 2010](#r-ep-autoroutes-2010-capital) et 180 MD [en 2019](#r-ep-autoroutes-2019-capital).
+- **Le péage.** Il est fixé par décret, section par section. Sur l'autoroute Hammam-Lif–M'saken, le péage s'applique [depuis le 10 décembre 1996](#r-ep-autoroutes-1996-peage) à trois catégories de véhicules et se paie à chaque barrière ; la société le perçoit. Pour une voiture de la première catégorie, le trajet de Hammam-Lif à M'saken coûte 2,800 dinars en 1996, 3,300 dinars [à partir du 26 mai 2003](#r-ep-autoroutes-2003-peage) et 3,900 dinars [à partir du 30 novembre 2014](#r-ep-autoroutes-2014-peage), taxe sur la valeur ajoutée comprise. [De 1999 à 2018](#r-ep-autoroutes-1999-fonds), un compte spécial du Trésor, le fonds de développement des autoroutes, finance les projets autoroutiers sur les recettes de privatisation de l'État ; [la loi de finances pour 2019](#r-ep-autoroutes-2019-fonds) le supprime et verse ses reliquats au budget de l'État.
+- **Ce que l'État verse.** Les transferts du budget à la société sont nuls en 2017 et en 2018, puis de 180,0 MD en 2019, 163,4 MD en 2020, 180,9 MD en 2021 et 170,0 MD en 2022, chiffre provisoire [@minfin-ep, p. 149-150 ; @minfin-ep-2022, p. 105 ; @minfin-ep-2023, p. 200 ; @minfin-ep-2024, p. 154]. Pour 2019, la loi autorise l'État à souscrire 180 MD à l'augmentation du capital ([loi de 2019](#r-ep-autoroutes-2019-capital)), et l'édition LF 2022 du rapport inscrit 180 MD de subventions d'investissement à la fiche de la société [@minfin-ep-2022, p. 80]. La fiche ne porte aucune subvention d'exploitation de 2018 à 2022 dans les éditions LF 2022 et LF 2024 ; l'édition LF 2025 en inscrit 320,2 MD en 2022 et 180,0 MD en 2023, chiffre provisoire. Une note de cette édition précise que les 320,2 MD sont des avances de l'État à la société pour payer les échéances de prêts extérieurs de 2021 et de 2022, traitées comme une subvention de l'État et inscrites en subvention d'exploitation dans les états financiers de 2022 [@minfin-ep-2025, p. 95].
+- **Ce que l'État garantit.** De 2010 à 2024, aucune ligne de Tunisie Autoroutes n'apparaît parmi les paiements de dette garantie que la Cour des comptes relève dans ses rapports sur la clôture du budget (@tbl-ep-cdc-garantie). De 1999 à 2012, la loi approuve huit garanties de l'État à des prêts accordés à la société pour construire des autoroutes : 24 millions de dinars koweïtiens du Fonds arabe de développement économique et social pour Tunis–Bizerte ([loi de 1999](#r-ep-autoroutes-1999)) ; 25 millions de dinars koweïtiens du même fonds pour Tunis–Medjez El Bab ([loi de 2001](#r-ep-autoroutes-2001)) ; 12,501 milliards de yens de la Banque japonaise pour la coopération internationale pour El Jem–Sfax ([loi de 2002](#r-ep-autoroutes-2002-garantie)) ; 120 millions d'euros de la Banque européenne d'investissement pour M'saken–Sfax ([loi de 2003](#r-ep-autoroutes-2003-garantie)) ; 234 millions d'euros de la même banque pour Sfax–Gabès ([loi de janvier 2010](#r-ep-autoroutes-2010-garantie)) ; 38 millions de dinars koweïtiens du Fonds arabe pour Oued Zarga–Boussalem ([décret-loi de juin 2011](#r-ep-autoroutes-2011-fades)) ; 137,34 millions d'euros de la Banque africaine de développement pour Médenine–Ras Jedir ([décret-loi d'octobre 2011](#r-ep-autoroutes-2011-bad)) ; 15,084 milliards de yens de l'Agence japonaise de coopération internationale pour Gabès–Médenine ([loi de 2012](#r-ep-autoroutes-2012)).
+- **Des résultats faibles, puis un bénéfice en 2022.** De 2018 à 2021, le résultat d'exploitation va de −40,4 MD en 2021 à 3,2 MD en 2019, et les charges financières nettes de 6,5 à 68,6 MD par an selon l'année et l'édition ; avec la subvention de 2022, il est de 258,8 MD en 2022 et de 60,1 MD en 2023, chiffre provisoire. Le résultat net est de −76,1 MD en 2018, −36,6 MD en 2019, −26,5 MD en 2020 et −87,9 MD en 2021 avant modifications comptables (−158,3 MD après), puis de 195,1 MD en 2022 avant modifications comptables (91,3 MD après) et de 10,7 MD en 2023, chiffre provisoire (@fig-ep-autoroutes-fiches). L'effectif passe de 1 469 agents en 2016 à 1 405 en 2019, puis à 1 494 en 2022 et à 1 343 en 2023, chiffre provisoire ; les charges de personnel passent de 34,4 MD en 2018 à 42,8 MD en 2023 (@fig-ep-autoroutes-budget, @tbl-ep-effectifs-entreprises).
+- **Des fonds propres positifs et des emprunts à long terme.** Les fonds propres sont de 830,1 MD fin 2018 dans l'édition LF 2022 et de 1 156,0 MD fin 2023, chiffre provisoire, dans l'édition LF 2025. Dans l'édition LF 2022, la dette passe de 325,7 MD fin 2018 à 429,0 MD fin 2020, dont 175,1 puis 232,8 MD envers les banques et 28,5 puis 69,2 MD envers l'État. Dans l'édition LF 2025, le total des passifs, hors fonds propres, est de 2 211,0 MD fin 2021, de 1 697,8 MD fin 2022 et de 1 607,3 MD fin 2023, chiffre provisoire, dont 1 507,0, 1 424,9 et 1 276,6 MD d'emprunts à plus d'un an ; les immobilisations nettes sont de 2 413,1 à 2 478,8 MD.
+- **Des éditions qui ne concordent pas.** Cinq écarts séparent les éditions du rapport. Pour 2018, l'édition LF 2020 compte 1 707,2 MD de dette envers les bailleurs de fonds internationaux, chiffre estimé [@minfin-ep-2020, p. 122], quand l'édition LF 2022 donne une dette totale de 325,7 MD : les deux éditions ne mesurent pas la même dette. Les transferts de 2021 sont de 350,0 MD dans l'édition LF 2023, chiffre provisoire, puis de 180,9 MD dans l'édition LF 2024 : le chiffre provisoire fait presque le double du montant suivant (@fig-ep-transferts-revisions). Les comptes de 2021 sont retraités entre l'édition LF 2024 et l'édition LF 2025, qui le note : fonds propres de 882,6 puis 778,8 MD, charges d'exploitation de 90,8 puis 119,6 MD, résultat net de −54,5 puis −87,9 MD avant modifications comptables, soit un écart de 12 % sur les fonds propres et de 61 % sur le résultat. Les comptes de 2022 passent de provisoires à réalisés : la subvention d'exploitation passe de 0 à 320,2 MD et le résultat net de −117 à 195,1 MD. Dans l'édition LF 2024, enfin, les produits d'exploitation dépassent de 1,9 à 3,5 MD la somme des recettes, de la subvention et des autres produits ; l'édition LF 2025 range la production immobilisée dans les autres produits et boucle.
+
+:::: {.chronologie-repliable titre="Tunisie Autoroutes : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et textes de concession, de péage, de capital et de garantie, 1995-2025"}
+
+```{python}
+#| label: fig-ep-autoroutes-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "autoroutes_fiches",
+    caption=("Tunisie Autoroutes d'après le rapport sur les entreprises publiques, exercices "
+             "2018-2023, en millions de dinars courants et en agents : chaque exercice dans la "
+             "dernière édition qui le donne ; dette par créancier de l'édition LF 2022. Source : "
+             "ministère des Finances [@minfin-ep-2022, p. 80 ; @minfin-ep-2024, p. 120 ; "
+             "@minfin-ep-2025, p. 95]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2023 est "
+        "provisoire (hachures). « 0 » : zéro imprimé ; « – » : case laissée vide, ainsi la "
+        "subvention d'exploitation de 2021 dans l'édition LF 2025. La dette totale n'est "
+        "imprimée que par l'édition LF 2022, le total des passifs que par les éditions LF 2024 "
+        "et LF 2025. Le résultat net tracé est celui d'avant modifications comptables ; après "
+        "modifications, il est de −158,3 MD en 2021 et de 91,3 MD en 2022. Toutes les valeurs "
+        "imprimées, édition par édition, sont dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("tunisie_autoroutes", ("LF2022",),
+    caption=("Tunisie Autoroutes, édition LF 2022 : dette par créancier, fonds propres, "
+             "investissements, résultat et emploi, exercices 2018-2020. Source : ministère des "
+             "Finances [@minfin-ep-2022, p. 80]"),
+    tbl_id="tbl-ep-autoroutes-fiche-a")
+ge.tableau_fiche_detail("tunisie_autoroutes", ("LF2024", "LF2025"),
+    caption=("Tunisie Autoroutes, éditions LF 2024 et LF 2025 : bilan et résultat, exercices "
+             "2020-2023. Dans l'édition LF 2024, les produits d'exploitation dépassent la somme "
+             "des recettes, de la subvention et des autres produits de 3,5 (2020), 3,3 (2021) et "
+             "1,9 (2022), et le bilan de 2021 ne boucle qu'à 0,4 près ; l'édition LF 2025 "
+             "retraite 2021. Source : ministère des Finances "
+             "[@minfin-ep-2024, p. 120 ; @minfin-ep-2025, p. 95]"),
+    tbl_id="tbl-ep-autoroutes-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-autoroutes-1995}[2 mai 1995]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 27 avril 1995, plus cinq jours, jour du dépôt non compté | décret n° 95-720 du 17 avril 1995 [@decret95-720-autoroutes, art. 1^er^, p. 819] | approbation de la convention de concession de l'exploitation de l'autoroute Hammam-Lif–M'saken et du cahier des charges, signés à Tunis le 30 décembre 1994 entre l'État et la société Tunisie Autoroutes ; le décret vise l'article 34 de la loi n° 86-17 du 7 mars 1986 sur le domaine public routier | mise en place |
+| []{#r-ep-autoroutes-1996-peage}[10 décembre 1996]{.insecable}, date dite par le décret (art. 1^er^) | décret n° 96-2263 du 4 décembre 1996 [@decret96-2263-peage, art. 1^er^ à 7, p. 2426-2428] | droit de péage sur l'autoroute A1 Hammam-Lif–M'saken à partir du 10 décembre 1996 (art. 1^er^) ; trois catégories de véhicules (art. 2) ; tarifs par barrière, de 0,300 à 1,400 dinar en première catégorie (art. 3) ; tarifs de trajet, de Hammam-Lif à M'saken : 2,800, 4,500 et 6,400 dinars selon la catégorie (art. 4) ; paiement à chaque barrière (art. 5) ; abonnements et réductions accordés par la société avec l'accord de la tutelle, aux conditions les plus favorables pour les transports publics (art. 6) ; recouvrement par la société Tunisie Autoroutes (art. 7). L'intitulé imprimé date le décret du 2 décembre, sa signature du 4 décembre 1996 ; les décrets de 2003 et de 2014 le citent au 4 décembre | mise en place |
+| []{#r-ep-autoroutes-1999-fonds}gestion 1999 | loi n° 98-111 du 28 décembre 1998, loi de finances pour 1999 [@loi98-111-lf1999, art. 16 et 17, p. 2502] | compte spécial du Trésor « Fonds de développement des autoroutes », qui finance les dépenses de réalisation des projets autoroutiers, ordonnancé par le ministre chargé de l'équipement (art. 16), alimenté par les ressources des opérations de privatisation revenant à l'État (art. 17) | étape |
+| []{#r-ep-autoroutes-1999}[6 juin 1999]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 1^er^ juin 1999, plus cinq jours, jour du dépôt non compté | loi n° 99-47 du 31 mai 1999 [@loi99-47-autoroutes, article unique, p. 828] et loi n° 99-50 du 31 mai 1999 [@loi99-50-autoroutes, article unique, p. 829] | approbation de l'accord de garantie conclu le 3 mai 1999 avec le Fonds arabe de développement économique et social, relatif au prêt de 24 000 000 dinars koweïtiens accordé à la société pour l'autoroute Tunis–Bizerte ; le ministre des finances est autorisé à souscrire, pour l'État, à l'augmentation du capital de la société pour 70 000 000 dinars | étape |
+| []{#r-ep-autoroutes-2001}[26 avril 2001]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 21 avril 2001, plus cinq jours, jour du dépôt non compté | loi n° 2001-40 du 18 avril 2001 [@loi2001-40-autoroutes, article unique, p. 903] | approbation de l'accord de garantie conclu le 5 février 2001 avec le Fonds arabe de développement économique et social, relatif au prêt de 25 000 000 dinars koweïtiens accordé à la société pour l'autoroute Tunis–Medjez El Bab | étape |
+| []{#r-ep-autoroutes-2002-garantie}[1^er^ août 2002]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 27 juillet 2002, plus cinq jours, jour du dépôt non compté | loi n° 2002-72 du 23 juillet 2002 [@loi2002-72-autoroutes, article unique, p. 1714] | approbation de l'échange de lettres du 11 mars 2002 avec le gouvernement du Japon et de l'acte de garantie relatifs au prêt de 12 501 000 000 yens accordé à la société par la Banque japonaise pour la coopération internationale, en vertu de l'accord conclu à Tokyo le 25 mars 2002, pour l'autoroute El Jem–Sfax | étape |
+| []{#r-ep-autoroutes-2002-capital}[14 novembre 2002]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 9 novembre 2002, plus cinq jours, jour du dépôt non compté | loi n° 2002-96 du 4 novembre 2002 [@loi2002-96-autoroutes, article unique, p. 2601] | le ministre des finances est autorisé à souscrire, pour l'État, à l'augmentation du capital de la société pour 100 000 000 dinars | étape |
+| []{#r-ep-autoroutes-2003-garantie}[23 janvier 2003]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 18 janvier 2003, plus cinq jours, jour du dépôt non compté | loi n° 2003-4 du 14 janvier 2003 [@loi2003-4-autoroutes, article unique, p. 145] | approbation du contrat de cautionnement conclu le 7 octobre 2002 avec la Banque européenne d'investissement, relatif au prêt de 120 000 000 euros accordé à la société pour l'autoroute du Sud M'saken–Sfax | étape |
+| []{#r-ep-autoroutes-2003-peage}[26 mai 2003]{.insecable}, date dite par le décret (art. 2) | décret n° 2003-1118 du 19 mai 2003 [@decret2003-1118-peage, art. 1^er^ et 2, p. 1671-1673] | articles 3 et 4 nouveaux du décret n° 96-2263 : nouveaux tarifs par barrière et par trajet ; de Hammam-Lif à M'saken, 2,800 → 3,300 dinars en première catégorie, 4,500 → 5,300 en deuxième, 6,400 → 7,500 en troisième | ajustement |
+| []{#r-ep-autoroutes-2006}[19 janvier 2006]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 14 janvier 2006, plus cinq jours, jour du dépôt non compté | loi n° 2006-3 du 9 janvier 2006 [@loi2006-3-autoroutes, article unique, p. 99] | le ministre des finances est autorisé à souscrire, pour l'État, à l'augmentation du capital de la société pour 87 000 000 dinars | étape |
+| []{#r-ep-autoroutes-2010-garantie}[28 janvier 2010]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 23 janvier 2010, plus cinq jours, jour du dépôt non compté | loi n° 2010-5 du 20 janvier 2010 [@loi2010-5-autoroutes, article unique, p. 220] | approbation du contrat de cautionnement conclu le 11 décembre 2009 avec la Banque européenne d'investissement, relatif au prêt de 234 000 000 euros accordé à la société pour l'autoroute Sfax–Gabès | étape |
+| []{#r-ep-autoroutes-2010-capital}[9 décembre 2010]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 4 décembre 2010, plus cinq jours, jour du dépôt non compté | loi n° 2010-57 du 1^er^ décembre 2010 [@loi2010-57-autoroutes, article unique, p. 3286] | le ministre des finances est autorisé à souscrire, pour l'État, à l'augmentation du capital de la société pour 729 000 000 dinars | étape |
+| []{#r-ep-autoroutes-2011-fades}[7 juillet 2011]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 2 juillet 2011, plus cinq jours, jour du dépôt non compté | décret-loi n° 2011-65 du 29 juin 2011 [@dl2011-65-autoroutes, art. 1^er^, p. 1111] | ratification autorisée de la convention de garantie conclue le 9 mai 2011 avec le Fonds arabe de développement économique et social, relative au prêt de 38 000 000 dinars koweïtiens accordé à la société pour l'autoroute Oued Zarga–Boussalem | étape |
+| []{#r-ep-autoroutes-2011-bad}[3 novembre 2011]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 29 octobre 2011, plus cinq jours, jour du dépôt non compté | décret-loi n° 2011-111 du 24 octobre 2011 [@dl2011-111-autoroutes, art. 1^er^, p. 2331] | ratification autorisée de l'accord de garantie conclu le 19 septembre 2011 avec la Banque africaine de développement, relatif au prêt de 137 340 000 euros accordé à la société pour la liaison autoroutière Gabès–Médenine–Ras Jedir (tronçon Médenine–Ras Jedir) | étape |
+| []{#r-ep-autoroutes-2012}[2 juillet 2012]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 27 juin 2012, plus cinq jours, jour du dépôt non compté | loi n° 2012-6 du 22 juin 2012 [@loi2012-6-autoroutes, article unique, p. 1532-1533] | ratification de l'échange de lettres du 25 janvier 2012 avec le gouvernement du Japon et de deux lettres de garantie du 25 avril 2012, dont celle du prêt de 15 084 000 000 yens accordé à la société par l'Agence japonaise de coopération internationale pour l'autoroute A1 Gabès–Médenine (l'autre garantit un prêt à la SONEDE) | étape |
+| []{#r-ep-autoroutes-2014-peage}[30 novembre 2014]{.insecable}, date dite par le décret (art. 1^er^) | décret n° 2014-4203 du 4 novembre 2014 [@decret2014-4203-peage, art. 1^er^, p. 3064-3065] | articles 1^er^, 3 et 4 nouveaux du décret n° 96-2263 : péage appliqué à compter du 30 novembre 2014 ; barrière d'Enfidha Aéroport ajoutée ; de Hammam-Lif à M'saken, 3,300 → 3,900 dinars en première catégorie, 5,300 → 6,200 en deuxième, 7,500 → 8,700 en troisième ; redevance taxe sur la valeur ajoutée comprise | ajustement |
+| []{#r-ep-autoroutes-2019-fonds}gestion 2019 | loi n° 2018-56 du 27 décembre 2018, loi de finances pour 2019 [@loi2018-56-lf2019, art. 10, p. 5439 de l'édition arabe] | suppression du compte spécial du Trésor « Fonds de développement des autoroutes », dont les reliquats sont versés au budget de l'État ; abrogation des articles 16 et 17 de la loi de finances pour 1999 | ajustement |
+| []{#r-ep-autoroutes-2019-capital}[24 août 2019]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 19 août 2019, plus cinq jours, jour du dépôt non compté | loi n° 2019-75 du 14 août 2019 [@loi2019-75-autoroutes, article unique, p. 2565 de l'édition arabe] | le ministre des finances est autorisé à souscrire, pour l'État, à l'augmentation du capital de la société pour 180 000 000 dinars | étape |
+| []{#r-ep-autoroutes-2025}[4 mai 2025]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 29 avril 2025, plus cinq jours, jour du dépôt non compté | décret n° 2025-218 du 28 avril 2025 [@decret2025-218-autoroutes, art. 1^er^, p. 1120] | approbation de l'avenant de prorogation de la convention de concession de l'exploitation de l'autoroute Hammam-Lif–M'saken, conclu le 16 avril 2025 entre l'État et la société ; le décret vise l'article 18 du décret-loi n° 2020-24 sur la prorogation des contrats de concession | ajustement |
+
+: Les textes de Tunisie Autoroutes : concession, péage, fonds de développement des autoroutes, capital et garanties {#tbl-ep-registre-autoroutes}
+
+::::
+
+<!-- TODO (documentaliste) : fiche de Tunisie Autoroutes des éditions LF 2022 (p. 80), LF 2024 (p. 120) et LF 2025 (p. 95) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (28 octobre 2026, branche donnees/fiches-transtu-autoroutes). Grandeurs d'activité non relevées : trafic journalier moyen par tronçon (LF 2022) et sur les réseaux ouvert et fermé (LF 2024, LF 2025). Éditions françaises LF 2020 (p. 121-122) et LF 2021 (p. 121) : comptes dans la prose et en tableau, non versés. Acte de constitution de la société (13 mai 1992, d'après le rapport LF 2020) : non identifié au Journal officiel ; les visas des décrets n° 95-720, 96-2263 et 2017-992 ne citent aucun texte de création. Durée de la concession Hammam-Lif–M'saken et durée de sa prorogation : la convention et l'avenant sont annexés aux décrets et non publiés. Textes repérés, non lus : décrets d'approbation des concessions n° 2000-645 (Tunis–Bizerte, JORT n° 27 de 2000, p. 794), 2002-537 (A3 Tunis–Medjez El Bab–Oued Zarga, n° 20 de 2002, p. 584), 2004-1073 et 2004-1074 (A1 M'saken–El Jem et El Jem–Sfax, n° 40 de 2004, p. 1300-1301), décret gouvernemental n° 2016-256 (A1 Sfax–Gabès, n° 17 de 2016, p. 591-592), décrets gouvernementaux n° 2019-661 à 2019-663 (n° 63 de 2019, p. 2497-2500, édition arabe) ; décrets de péage n° 97-1003, 2003-1119 (A4), 2009-383 (A3), 2010-3222 (A1 M'saken–Sfax), 2014-4201, 2014-4202 et 2014-4204, décrets gouvernementaux n° 2019-977 (A3 Oued Zarga–Bou Salem) et 2019-1066 (A1 M'saken–Gabès), modifié par les décrets n° 2020-405, 2021-487 et 2022-56 : une série du péage par section reste à établir ; décret n° 2003-1540 (avantages fiscaux) ; décret gouvernemental n° 2016-675 (organigramme) ; arrêté du 4 septembre 1997 (supplément de tarif des louages sur l'autoroute). Lois n° 2018-16 et 2018-22 : prêts du FADES et de la BEI à l'État pour les autoroutes Tunis–Jelma et du Centre, non des garanties à la société. Prêts de l'État rétrocédés à la société et subventions d'investissement avant 2019 : à chercher dans les lois de finances (budget d'équipement du ministère de l'Équipement). -->
+
+## La Transtu {#sec-ep-ge-transtu}
+
+La subvention du transport public par société, les tarifs et l'abonnement scolaire et universitaire sont exposés dans le volume « La compensation » ([le transport public](../compensation/_transport.html#sec-compensation-transport)).
+
+**La [Transtu](#g-transtu), établissement public créé en 2003 par la fusion de la Société nationale des transports et de la Société du métro léger de Tunis, assure le transport public de personnes à Tunis et dans ses banlieues par autobus, métro léger et la ligne TGM ; elle reçoit du budget de 138,6 à 179,3 MD par an de 2017 à 2022, et son résultat net est de −187 à −230 MD par an de 2018 à 2023 dans chaque édition du rapport du ministère des Finances.**
+
+```{python}
+#| label: fig-ep-transtu-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "transtu_budget",
+    caption=("Transtu : transferts du budget, résultat net, effectif et charges de personnel, "
+             "exercices 2016-2023, d'après le rapport sur les entreprises publiques. Source : "
+             "ministère des Finances [@minfin-ep-2020, p. 71 ; @minfin-ep, p. 29, 70 et "
+             "149-150 ; @minfin-ep-2022, p. 19, 55 et 105 ; @minfin-ep-2023, p. 27 et 200 ; "
+             "@minfin-ep-2024, p. 29, 83 et 154 ; @minfin-ep-2025, p. 21 et 60]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire ou probable. Le résultat net est celui des classements des dix premiers "
+        "résultats négatifs de chaque édition, qui ne disent pas le statut du chiffre ; pour "
+        "2018, les éditions LF 2021 et LF 2022 donnent −187,5 et −192,4 MD. « n. d. » : le "
+        "rapport ne donne pas la grandeur ; ce n'est pas un zéro."),
+)
+```
+
+- **Ce que la loi lui confie.** [En 1963](#r-ep-transtu-1963), l'État crée la Société nationale des transports, établissement public à caractère industriel et commercial chargé des transports routiers de voyageurs et de marchandises. Il lui apporte les biens de la branche des transports urbains et suburbains de la Compagnie tunisienne d'électricité et de transports, de la Tunisienne Automobile Transports et de la Société tunisienne des transports automobiles du Sahel, qu'il nationalise. Pour les transports gratuits ou à tarif réduit qu'une loi ou un règlement lui imposait, l'État lui versait les sommes qui en couvraient la charge, fixées chaque année avant le 1^er^ décembre et payées par douzièmes. [En 2003](#r-ep-transtu-2003), la Société nationale des transports et la Société du métro léger de Tunis fusionnent en un établissement public à caractère non administratif, « شركة النقل بتونس » dans l'édition arabe du *Journal officiel*, « Transport du Grand Tunis » dans sa traduction française, qui assure le transport public de personnes à Tunis et dans ses banlieues sous la tutelle du ministère chargé du transport. L'État lui concède le domaine public des chemins de fer nécessaire à ses missions. Un cahier des charges approuvé par décret fixe les modalités de ce service et les conditions du concours financier de l'État, pour les investissements et pour les compensations des obligations de service public, des tarifs préférentiels et du transport gratuit de certaines catégories de voyageurs. [Le décret de 2003](#r-ep-transtu-2003-organisation) range ces compensations parmi les recettes de son budget de fonctionnement et soumet à l'autorisation du ministère ses emprunts garantis. Selon le rapport du ministère des Finances annexé au projet de loi de finances pour 2020, la société assure environ 80 % du transport public régulier du Grand Tunis, avec, en 2017, 1 263 autobus, 18 locomotives sur la ligne TGM et 189 voitures de métro [@minfin-ep-2020, p. 70].
+- **Ce que l'État verse.** Les transferts du budget à la société sont de 154,4 MD en 2017, 144,2 MD en 2018, 138,6 MD en 2019, 179,3 MD en 2020, 161,9 MD en 2021 et 147,5 MD en 2022, chiffre provisoire [@minfin-ep, p. 149-150 ; @minfin-ep-2022, p. 105 ; @minfin-ep-2023, p. 200 ; @minfin-ep-2024, p. 154]. La subvention d'exploitation inscrite à sa fiche est de 130 MD en 2018, 131 MD en 2019, 135 MD en 2020 et en 2021, 140 MD en 2022 et 141 MD en 2023, chiffre probable, soit de 63 à 72 % de ses produits d'exploitation (@fig-ep-transtu-fiches). Le rapport sur les transferts et les garanties, autre annexe du projet de loi de finances, donne pour 2021, 2022 et 2023 des transferts de 146,9, 147,5 et 150,1 MD, dont 135,0, 140,0 et 141,0 MD d'interventions, égales à la subvention d'exploitation de la fiche [@minfin-transferts-garanties, p. 76, 86 et 98 ; @minfin-ep-2025, p. 60]. Les deux annexes ne donnent pas toujours le même total : 161,9 MD pour 2021 dans le rapport sur les entreprises publiques, 146,9 MD dans celui sur les transferts. Pour 2017, le rapport sur les entreprises publiques ajoute à la subvention d'exploitation de 130 MD une prise en charge par l'État de 10,6 MD de dettes de la société envers la société AGIL [@minfin-ep-2020, p. 72].
+- **Une dette envers l'État, des dettes reprises.** [En 1995](#r-ep-transtu-1995), l'État convertit en fonds de dotation de la Société nationale des transports 34,0 MD de ses dettes publiques au 31 décembre 1992, dont 21,2 MD de dettes fiscales. [En 2005](#r-ep-transtu-2005), il abandonne 31,8 MD de créances fiscales sur la Société nationale des transports, convertit en fonds de dotation de la Société du métro léger 143,6 MD inscrits à son compte d'opérations avec l'État, qui résorbent 103,1 MD de pertes cumulées et 12,7 MD de pertes de partage, et convertit en fonds de dotation, à leur échéance, 57,4 MD de prêts rétrocédés pour le matériel du métro léger. En 2017, l'État prend en charge les dettes de la société envers la Société nationale de distribution des pétroles, 145,3 MD au 30 juin 2017 [@minfin-ep-2020, p. 73]. Fin 2023, la société déclare 1 509,3 MD de dettes envers l'État, troisième montant après ceux de la CNRPS et de l'Office des céréales, et 365,2 MD de créances sur l'État ; le ministère des Finances reprend ces montants tels que les entreprises les déclarent [@minfin-ep-2025, p. 118 et 122]. Les dettes et créances croisées de l'ensemble des entreprises sont exposées à la @sec-ep-croisees.
+- **Ce que l'État garantit.** De 2010 à 2024, aucune ligne de la Transtu n'apparaît parmi les paiements de dette garantie que la Cour des comptes relève dans ses rapports sur la clôture du budget (@tbl-ep-cdc-garantie). Le rapport du ministère des Finances donne des garanties de l'État à la société de 53,6 MD en 2016 et de 146,4 MD en 2017 [@minfin-ep-2020, p. 73]. Pour renouveler le matériel roulant de la ligne TGM (Tunis–La Goulette–La Marsa), l'État garantit deux prêts de 45 millions d'euros chacun : de la Banque européenne pour la reconstruction et le développement ([loi de 2020](#r-ep-transtu-2020)) et de la Banque européenne d'investissement ([décret-loi de 2023](#r-ep-transtu-2023)).
+- **Des pertes d'exploitation.** Les charges d'exploitation, de 369,6 MD en 2018 à 405,7 MD en 2022, font environ le double des produits d'exploitation, de 191 à 205 MD par an ; le résultat d'exploitation va de −164,7 MD en 2018 à −213,3 MD en 2021. Les charges de personnel passent de 255,1 MD en 2018 à 301,7 MD en 2023, chiffre probable ; dans l'édition LF 2025, elles font de 5,5 à 5,9 fois les recettes de la société, de 51,4 à 52,6 MD par an de 2021 à 2023. Le résultat net passe de −192,4 MD en 2018 à −225,4 MD en 2023, chiffre probable (@fig-ep-transtu-fiches). L'effectif baisse de 7 529 agents en 2017 à 7 089 en 2022 et à 6 791 en 2023, chiffre probable (@fig-ep-transtu-budget, @tbl-ep-effectifs-entreprises).
+- **Des fonds propres négatifs et une dette envers l'État.** Les fonds propres de la société sont de −545 MD fin 2016 et de −571,5 MD fin 2017 [@minfin-ep-2020, p. 72], puis de −713,5 MD fin 2018 dans l'édition LF 2022. Ses résultats reportés passent de −1 227 MD fin 2018 à −2 077,5 MD fin 2023, chiffre probable, dans l'édition LF 2025, qui n'imprime pas le reste du bilan. Dans l'édition LF 2022, sa dette passe de 981 MD fin 2018 à 1 308 MD fin 2020, chiffre probable, dont 640 puis 830 MD envers l'État et 209 puis 328 MD envers les caisses sociales.
+- **Des éditions incomplètes et qui ne concordent pas.** Les éditions LF 2024 et LF 2025 sont incomplètes, et deux écarts séparent les éditions du rapport. Le bilan de 2021 et de 2022 n'est pas imprimé : l'édition LF 2024 note que la société n'a pas approuvé ses états financiers de 2020 à 2022, et l'édition LF 2025 n'imprime que les résultats reportés [@minfin-ep-2024, p. 83 ; @minfin-ep-2025, p. 60]. Le seul bilan de l'édition LF 2024, celui de 2020, porte des fonds propres de 1 110 MD, positifs, qu'aucun total des actifs ni des passifs ne permet de contrôler, quand l'édition LF 2022 donne −713,5 MD fin 2018. Les comptes de 2021 diffèrent entre l'édition LF 2024, chiffres probables, et l'édition LF 2025, chiffres provisoires : recettes de 59,4 puis 52,6 MD, produits d'exploitation de 198,6 puis 191,3 MD, résultat net de −225,6 puis −229,8 MD ; l'écart est de 11 % sur les recettes et de 2 % sur le résultat. Dans l'édition LF 2022, enfin, la dette totale de fin 2018 est imprimée à 981 MD pour 982 MD de créanciers.
+
+:::: {.chronologie-repliable titre="Transtu : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et textes de création, de fusion, d'organisation, d'assainissement financier et de garantie, 1963-2023"}
+
+```{python}
+#| label: fig-ep-transtu-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "transtu_fiches",
+    caption=("Transtu d'après le rapport sur les entreprises publiques, exercices 2018-2023, en "
+             "millions de dinars courants et en agents : chaque exercice dans la dernière "
+             "édition qui le donne ; dette par créancier de l'édition LF 2022. Source : "
+             "ministère des Finances [@minfin-ep-2022, p. 55 ; @minfin-ep-2024, p. 83 ; "
+             "@minfin-ep-2025, p. 60]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; tous les "
+        "exercices sont provisoires ou probables (hachures). « – » : case laissée vide par "
+        "l'édition, ainsi les fonds propres de 2019. Fonds propres et passifs ne sont pas "
+        "tracés pour 2021 à 2023 : ni l'édition LF 2024 ni l'édition LF 2025 ne les impriment. "
+        "Les fonds propres de 2020 (1 110 MD, édition LF 2024) ne se contrôlent par aucun "
+        "total du bilan. Le résultat net est celui d'avant modifications comptables, égal à "
+        "celui d'après chaque année. Toutes les valeurs imprimées, édition par édition, sont "
+        "dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("transtu", ("LF2022",),
+    caption=("Transtu, édition LF 2022 : dette par créancier, fonds propres, investissements, "
+             "résultat et emploi, exercices 2018-2020 ; 2018 est provisoire, 2019 et 2020 "
+             "probables. La dette totale de 2018 (981) est inférieure de 1 à la somme des "
+             "créanciers. Source : ministère des Finances [@minfin-ep-2022, p. 55]"),
+    tbl_id="tbl-ep-transtu-fiche-a")
+ge.tableau_fiche_detail("transtu", ("LF2024", "LF2025"),
+    caption=("Transtu, éditions LF 2024 et LF 2025 : bilan et résultat, exercices 2020-2023. "
+             "« — » : le bilan de 2021 et de 2022 (LF 2024) et celui de 2021 à 2023, hors "
+             "résultats reportés (LF 2025), sont remplacés par une note. Les fonds propres de "
+             "2020 sont lus dans l'ordre des colonnes de l'édition LF 2025, l'en-tête de "
+             "l'édition LF 2024 étant décalé. Source : ministère des Finances "
+             "[@minfin-ep-2024, p. 83 ; @minfin-ep-2025, p. 60]"),
+    tbl_id="tbl-ep-transtu-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-transtu-1963}[1^er^ janvier 1963]{.insecable} : date fixée par l'article 40, *Journal officiel* des 15-19 mars 1963 | décret-loi n° 63-8 du 14 mars 1963 [@dl63-8-snt, art. 1^er^, 3 à 6, 23, 30 à 33, p. 320-323] | création de la Société nationale des transports, établissement public à caractère industriel et commercial, doté de la personnalité civile et de l'autonomie financière, réputé commerçant et régi par la législation commerciale (art. 1^er^) ; objet : toutes opérations de transports routiers de voyageurs et de marchandises (art. 3) ; apport par l'État des biens de la branche « Transports urbains et suburbains » de la Compagnie tunisienne d'électricité et transports, de la Tunisienne Automobile Transports et de la Société tunisienne des transports automobiles du Sahel, sociétés nationalisées à dater de leur reprise provisoire par l'État (art. 4) ; inventaire par une commission (art. 5) ; conseil d'administration de huit membres (art. 6) ; pour les transports gratuits ou à tarif réduit imposés par voie législative ou réglementaire, l'État verse les sommes destinées à en couvrir les charges, fixées avant le 1^er^ décembre pour l'exercice suivant et versées par douzièmes (art. 23) ; emprunts approuvés par les secrétaires d'État au Plan et aux Finances et aux Travaux publics et à l'Habitat, garantie de l'État dans la limite du plafond annuel de la loi de finances (art. 30) ; approbation des mêmes secrétaires d'État pour les budgets, les statuts et rémunérations du personnel, les tarifs et les emprunts (art. 31) ; cahier des charges approuvé par décret avant le 1^er^ janvier 1964 (art. 32) ; contrôleurs financier et technique (art. 33) | mise en place |
+| []{#r-ep-transtu-1995}[9 janvier 1995]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 4 janvier 1995, plus cinq jours, jour du dépôt non compté | loi n° 95-3 du 2 janvier 1995 [@loi95-3-snt, article unique, p. 3] | le ministre des finances est autorisé à convertir en fonds de dotation de la Société nationale des transports ses dettes publiques au 31 décembre 1992, 34 003 874,311 dinars : dettes fiscales, 21 162 656,372 ; crédit du budget (titre II), 434 000 ; crédit rétrocédé, 8 985 603,539 ; taxe unique de compensation, 3 421 614,400 | étape |
+| []{#r-ep-transtu-2003}[5 mai 2003]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 30 avril 2003, plus cinq jours, jour du dépôt non compté | loi n° 2003-33 du 28 avril 2003 [@loi2003-33-transtu, art. 1^er^ à 7, p. 1290] | fusion de la Société nationale des transports et de la Société du métro léger de Tunis dans un établissement public à caractère non administratif, doté de la personnalité civile et de l'autonomie financière, siège à Tunis, nommé « شركة النقل بتونس » dans l'édition arabe et « Transport du Grand Tunis » dans la traduction française ; transfert de l'universalité de leur patrimoine ; établissement réputé commerçant (art. 1^er^) ; mission : notamment le transport public de personnes à Tunis et ses banlieues (art. 2) ; concession du domaine public des chemins de fer nécessaire à ses missions, par convention approuvée par décret (art. 3) ; tutelle du ministère chargé du transport, organisation fixée par décret (art. 4) ; cahier des charges approuvé par décret, qui fixe les modalités du service et le cadre de la relation avec l'État, dont les conditions du concours financier de l'État au titre des investissements et des compensations des obligations de service public, des tarifs préférentiels et du transport gratuit (art. 5) ; abrogation des dispositions contraires, sauf l'article 5 du décret-loi n° 63-8, jusqu'à la fin des travaux de sa commission (art. 7) | rupture |
+| []{#r-ep-transtu-2003-organisation}[4 décembre 2003]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 29 novembre 2003, plus cinq jours, jour du dépôt non compté | décret n° 2003-2407 du 17 novembre 2003 [@decret2003-2407-transtu, art. 1^er^ à 3, 10, 12 et 16, p. 3471-3475] | conseil d'administration présidé par un président-directeur général désigné par décret sur proposition du ministre chargé du transport (art. 1^er^), avec des représentants de huit ministères, de la municipalité de Tunis et deux représentants du personnel (art. 2) ; le conseil arrête les budgets, les états financiers et les contrats-programmes (art. 3) ; recettes du budget de fonctionnement : revenus des services, montants compensatoires accordés par l'État pour les obligations de service public, la tarification préférentielle et le transport gratuit de certaines catégories de voyageurs, revenus du domaine concédé ; dépenses : dont la redevance de concession du domaine public des chemins de fer ; recettes d'investissement : dont les dotations et subventions de l'État ; emprunts avec garantie et emprunts obligataires soumis à l'autorisation du ministère chargé du transport (art. 10) ; contrats-programmes, budgets et états financiers communiqués au ministère de tutelle (art. 12) ; contrôleur d'État (art. 16) | étape |
+| []{#r-ep-transtu-2005}[11 août 2005]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 6 août 2005, plus cinq jours, jour du dépôt non compté | loi n° 2005-73 du 4 août 2005 [@loi2005-73-transtu, art. 1^er^ à 5, p. 1975] | assainissement de la situation financière au 31 décembre 2004 des deux sociétés fusionnées (art. 1^er^) ; abandon de 31 843 165,627 dinars de créances fiscales sur la Société nationale des transports, amendes et frais de poursuite compris, et exonération d'impôt sur les sociétés des bénéfices de l'opération, dont la prise en charge de dettes de la société par le fonds de restructuration du capital des entreprises publiques (art. 2) ; conversion en fonds de dotation de la Société du métro léger de Tunis de 143 622 574,869 dinars inscrits au compte « opérations particulières avec l'État » (art. 3), qui résorbent 103 082 405,363 dinars de pertes cumulées et 12 682 512,321 dinars de pertes de l'opération de partage au 31 décembre 2002 (art. 4) ; conversion en fonds de dotation, à leur échéance, de 57 354 545,787 dinars de prêts rétrocédés pour l'acquisition du matériel du métro léger, et des intérêts et différences de change y afférents (art. 5) | étape |
+| []{#r-ep-transtu-2020}[26 août 2020]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 21 août 2020, plus cinq jours, jour du dépôt non compté | loi n° 2020-40 du 13 août 2020 [@loi2020-40-transtu, article unique, p. 1775] | approbation de l'accord de garantie conclu le 12 décembre 2019 avec la Banque européenne pour la reconstruction et le développement, relatif au prêt de 45 000 000 euros accordé à la société pour le renouvellement de la flotte ferroviaire de la ligne TGM | étape |
+| []{#r-ep-transtu-2023}[16 mars 2023]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 11 mars 2023, plus cinq jours, jour du dépôt non compté | décret-loi n° 2023-13 du 10 mars 2023 [@dl2023-13-transtu, art. 1^er^, p. 758 de l'édition arabe] | approbation de l'accord de garantie conclu à Tunis le 16 décembre 2022 avec la Banque européenne d'investissement, relatif au prêt de 45 000 000 euros accordé à la société pour le renouvellement du parc de voitures de la ligne Tunis–La Goulette–La Marsa | étape |
+
+: Les textes de la Transtu : création de la Société nationale des transports, fusion, organisation, assainissement financier et garanties {#tbl-ep-registre-transtu}
+
+::::
+
+<!-- TODO (documentaliste) : fiche de la Transtu des éditions LF 2022 (p. 55), LF 2024 (p. 83) et LF 2025 (p. 60) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (28 octobre 2026, branche donnees/fiches-transtu-autoroutes). Fonds propres de 2020 dans l'édition LF 2024 (1 110 MD) : attribution par l'ordre des colonnes de l'édition LF 2025 (en-tête décalé, comme pour la STEG et l'Office des céréales ; l'Office de la marine marchande et des ports, sur la même page, boucle dans cet ordre), sans total pour la contrôler ; à confronter aux états financiers de la société. Grandeurs d'activité non relevées : voyageurs (LF 2022, LF 2024, LF 2025), recettes des billets et abonnements (LF 2024). Éditions françaises LF 2020 (p. 70-73) et LF 2021 (p. 70) : comptes dans la prose, non versés. Transferts : deux annexes du projet de loi de finances (rapport sur les entreprises publiques ; rapport sur les transferts et les garanties, série transport-transferts-par-entreprise) ne donnent pas les mêmes totaux (2017 : 154,4 contre 287,8 MD ; 2018 : 144,2 contre 179,9 ; 2020 : 179,3 contre 169,7) ; écart non expliqué. Textes non lus : loi n° 63-9 (ratification) ; décret n° 73-255 (statut du personnel) ; loi n° 73-52 (indemnisation des actionnaires des sociétés nationalisées) ; lois d'augmentation du capital de la SNT n° 74-43, 78-43, 79-33, 80-49, 82-43 et décrets-lois n° 77-5 ; décret-loi n° 81-20 (article 3 du décret-loi n° 63-8) ; loi n° 81-22 (contrat de prêt et d'exécution du métro léger entre l'État et la SNT) ; création de la Société du métro léger de Tunis : texte non identifié ; décret n° 2001-2123 (nom arabe) ; décret n° 2006-433 (convention de concession du domaine public des chemins de fer, 2005) ; cahier des charges prévu par l'article 5 de la loi n° 2003-33 : non identifié au Journal officiel ; décret n° 2005-703 (organigramme) ; décrets de réquisition (2014, 2015) ; décret n° 2023-226 (ratification du décret-loi n° 2023-13) ; lois de financement du métro léger (n° 2001-26, 2004-83, 2006-47, 2008-40, 2010-52 : prêts à l'État). Prise en charge des dettes envers la SNDP en 2017 et envers AGIL : texte non identifié dans les lois de finances de 2017 et 2018 (édition française). -->
+
+## La Société nationale des chemins de fer tunisiens (SNCFT) {#sec-ep-sncft}
+
+**La SNCFT, société nationale qui exploite le réseau ferré depuis le 1^er^ janvier 1957, est en perte à chacun des exercices 2018 à 2023 dans chaque édition du rapport du ministère des Finances, et ses fonds propres passent de 772,7 MD fin 2021 à 630,7 MD fin 2022 dans l'édition LF 2025.**
+
+```{python}
+#| label: fig-ep-sncft-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "sncft_fiches",
+    caption=("SNCFT d'après le rapport sur les entreprises publiques, exercices 2018-2023, en "
+             "millions de dinars courants et en agents : chaque exercice dans la dernière "
+             "édition qui le donne ; dette par créancier de l'édition LF 2022. Source : "
+             "ministère des Finances [@minfin-ep-2022, p. 55 ; @minfin-ep-2024, p. 84 ; "
+             "@minfin-ep-2025, p. 60]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2023 est "
+        "probable (hachures). « – » : case laissée vide par l'édition, ainsi les fonds propres "
+        "et les passifs de 2023. La dette totale n'est imprimée que par l'édition LF 2022, le "
+        "total des passifs que par les éditions LF 2024 et LF 2025 ; l'édition LF 2022 "
+        "n'imprime pas la dette de 2020, chiffre provisoire. La somme des cinq créanciers est "
+        "inférieure au total imprimé de 110,9 MD en 2018 et de 161,9 MD en 2019. Le résultat "
+        "net est celui d'avant modifications comptables ; pour 2019, le classement des dix "
+        "premières pertes de la même édition donne −113,78 MD (@fig-ep-resultats-entreprises). "
+        "Toutes les valeurs imprimées, édition par édition, sont dans les tableaux repliés "
+        "sous la section."),
+)
+```
+
+- **Ce que ses statuts lui confient.** [Le décret du 27 décembre 1956](#r-ep-sncft-1956) approuve les statuts de la SNCFT, entreprise à caractère commercial régie par la législation des sociétés anonymes, qui a pour objet l'exploitation du réseau des chemins de fer tunisiens. L'État lui concède l'exploitation de son réseau ferré à compter du 1^er^ janvier 1957 et lui apporte le matériel, les approvisionnements et les fonds du réseau.
+- **Une subvention d'exploitation de 65 à 105 MD.** La subvention d'exploitation inscrite à la fiche est de 65 MD par an de 2018 à 2020 dans l'édition LF 2022 ; l'édition LF 2024 donne 105 MD pour 2020 et 84,5 MD pour 2021, l'édition LF 2025 70 MD pour 2022 et 95 MD pour 2023, chiffre probable. La subvention du transport public est exposée dans le volume [« La compensation »](../compensation/_transport.html#sec-compensation-transport).
+- **Une dette bancaire.** Fin 2019, la dette de la SNCFT est de 1 478,7 MD, dont 894 MD envers les banques, 161,7 MD envers les caisses sociales et 46 MD envers l'État ; la somme des créanciers imprimés est inférieure de 161,9 MD au total imprimé (110,9 MD fin 2018). L'édition ne donne pas la dette de 2020 (@fig-ep-sncft-fiches).
+- **L'emploi.** L'effectif est de 4 612 agents en 2018, de 4 790 en 2021 et de 4 539 en 2023, chiffre probable ; les charges de personnel passent de 118,9 à 140,7 MD.
+
+:::: {.chronologie-repliable titre="SNCFT : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et statuts de 1956"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("sncft", ("LF2022",),
+    caption=("SNCFT, édition LF 2022 : dette par créancier, fonds propres, investissements, "
+             "résultat et emploi, exercices 2018-2020 ; 2020 est provisoire, sans dette "
+             "imprimée. La somme des cinq créanciers est inférieure au total imprimé de "
+             "110,9 MD en 2018 et de 161,9 MD en 2019. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 55]"),
+    tbl_id="tbl-ep-sncft-fiche-a")
+ge.tableau_fiche_detail("sncft", ("LF2024", "LF2025"),
+    caption=("SNCFT, éditions LF 2024 et LF 2025 : bilan et résultat, exercices 2020-2023. "
+             "Dans l'édition LF 2025, les recettes, la subvention d'exploitation et les autres "
+             "produits ne redonnent pas le total des produits d'exploitation imprimé ; "
+             "l'édition LF 2024 le redonne. Source : ministère des Finances "
+             "[@minfin-ep-2024, p. 84 ; @minfin-ep-2025, p. 60]"),
+    tbl_id="tbl-ep-sncft-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-sncft-1956}[1^er^ janvier 1957]{.insecable}, date dite par le décret (art. 1^er^) | décret du 27 décembre 1956 [@decret-1956-12-27-sncft, art. 1^er^ du décret et art. 1^er^ à 6 des statuts, p. 1756] | statuts de la Société nationale des chemins de fer tunisiens approuvés : entreprise à caractère commercial régie par la législation relative aux sociétés anonymes dans la mesure où le statut n'y déroge pas (art. 1^er^) ; objet : exploitation du réseau des chemins de fer tunisiens et gestion des biens qui lui sont dévolus (art. 3) ; durée de 99 ans (art. 5) ; l'État concède l'exploitation de son réseau ferré pour la durée de la société à compter du 1^er^ janvier 1957, met à sa disposition le rail, la voie, les gares et les dépôts, et lui fait apport du matériel, des approvisionnements, des fonds et des créances du réseau, à charge des dettes, apport évalué forfaitairement à 3 milliards de francs (art. 6) | mise en place |
+
+: Les statuts de la SNCFT {#tbl-ep-registre-sncft}
+
+::::
+
+## Tunisair {#sec-ep-ge-tunisair}
+
+La reprise par l'État, en 2014, des dettes de Tunisair envers l'Office de l'aviation civile et des aéroports, et les crédits du budget de 2014 et 2015 qui la concernent, sont exposés au chapitre « Restructurer » (@sec-ep-restr-transport) ; les garanties de l'État et la dette garantie de l'ensemble des entreprises, au chapitre « Les garanties, les prêts et les arriérés » (@sec-ep-garanties).
+
+**[Tunisair](#g-tunisair), la compagnie aérienne nationale, dont l'État a souscrit les augmentations de capital de 1961 à 1984 et garantit des emprunts d'achat d'avions, ne reçoit pas de subvention d'exploitation ; le budget lui verse 35,4 MD en 2020 et 41,2 MD en 2021, et elle est en perte à chacun des exercices 2018 à 2023 dans chaque édition du rapport du ministère des Finances, dont les fiches ne donnent pour elle que des chiffres provisoires, estimés ou probables.**
+
+```{python}
+#| label: fig-ep-tunisair-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "tunisair_budget",
+    caption=("Tunisair : transferts du budget, résultat net, effectif et charges de personnel, "
+             "exercices 2016-2023, d'après le rapport sur les entreprises publiques. Source : "
+             "ministère des Finances [@minfin-ep-2020, p. 59 ; @minfin-ep, p. 29, 61-62 et "
+             "149-150 ; @minfin-ep-2022, p. 19, 54 et 105 ; @minfin-ep-2023, p. 27 et 200 ; "
+             "@minfin-ep-2024, p. 29, 81 et 154 ; @minfin-ep-2025, p. 21 et 56]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire, estimé ou probable. Le résultat net est celui des classements des dix "
+        "premiers résultats positifs et négatifs de chaque édition, qui ne disent pas le statut "
+        "du chiffre ; pour 2018, les éditions LF 2021 et LF 2022 donnent −96,8 et −192,6 MD. "
+        "« n. c. » : Tunisair n'est dans aucun classement de l'exercice ; « n. d. » : le rapport "
+        "ne donne pas la grandeur. Ni l'un ni l'autre n'est un zéro."),
+)
+```
+
+- **Ce que l'État apporte au capital.** Les lois la nomment « Tunis-Air », puis « Société tunisienne de l'air ». De 1961 à 1984, cinq lois autorisent l'État à souscrire aux augmentations de son capital : 229 500 dinars [en 1961](#r-ep-tunisair-1961), 765 000 dinars [en 1974](#r-ep-tunisair-1974), 612 000 dinars [en 1976](#r-ep-tunisair-1976), 1 836 000 dinars [en 1977](#r-ep-tunisair-1977) et 5 076 000 dinars [en 1984](#r-ep-tunisair-1984). [En 2009](#r-ep-tunisair-2009), un décret exonère la société de l'impôt sur les sociétés sur ses bénéfices de 2009 à 2013, à condition de les porter à une réserve spéciale et de les investir dans la société.
+- **Ce que l'État garantit.** De 1994 à 2015, la loi approuve la garantie de l'État aux prêts que la société contracte auprès de banques étrangères pour acheter des avions : en 1994, trois prêts, dont 12,1 millions de dollars ([mai](#r-ep-tunisair-1994-mai), [octobre](#r-ep-tunisair-1994-octobre)), et la même année, une convention de prêt de 23,5 millions de dollars pour un Boeing 737-500, conclue par la société et l'État ensemble ([octobre](#r-ep-tunisair-1994-octobre)) ; en 1995, 43,7 puis 28,6 millions de dollars ([avril](#r-ep-tunisair-1995-avril), [décembre](#r-ep-tunisair-1995-decembre)) ; 37,4 millions de dollars [en 2001](#r-ep-tunisair-2001) et 43,9 millions [en 2002](#r-ep-tunisair-2002) ; 242,3 millions de dollars [en 2015](#r-ep-tunisair-2015), pour deux Airbus A330-200 et un Airbus A320-214. Fin 2023, Tunisair déclare devoir 232,4 MD à l'État [@minfin-ep-2025, p. 118].
+- **Ce que l'État verse.** Le rapport ne porte aucun transfert du budget à Tunisair de 2017 à 2019 ; il porte 35,4 MD pour 2020 (8,8 MD dans l'édition LF 2021, chiffre provisoire), 41,2 MD pour 2021 et 0,0 MD pour 2022, chiffre provisoire. La subvention d'exploitation de la fiche est nulle de 2018 à 2022 dans les éditions LF 2022 et LF 2024, et laissée vide pour 2021 à 2023 dans l'édition LF 2025 (@fig-ep-tunisair-fiches). Tunisair Express, société distincte, reçoit du budget 2 MD en 2016, 3 MD par an de 2017 à 2019 et 10 MD par an de 2020 à 2023, d'après le rapport du ministère des Finances sur les transferts et les garanties, autre source [@minfin-transferts-garanties].
+- **Des pertes, et une activité qui reprend après 2020.** Les produits d'exploitation sont de 1 718,2 MD en 2018 et de 1 795,4 MD en 2019 ; ils tombent à 570,7 MD en 2020 et 588,7 MD en 2021, puis remontent à 1 413,7 MD en 2022 et 1 716,5 MD en 2023, chiffres provisoires. Le résultat d'exploitation est négatif chaque année sauf 2019 (+8,6 MD), de −123,4 MD en 2018 à −363,3 MD en 2021. Le résultat net va de −18,9 MD en 2019 à −414,1 MD en 2021 ; il est de −176,3 MD en 2022 et de −211,1 MD en 2023, chiffres provisoires. L'effectif baisse de 3 781 agents en 2018 à 3 107 en 2023 ; les charges de personnel passent de 239,0 MD à 259,7 MD (@fig-ep-tunisair-budget, @tbl-ep-effectifs-entreprises).
+- **Des fonds propres négatifs et une dette envers les entreprises publiques.** Dans l'édition LF 2022, les fonds propres sont de −580 MD fin 2018, −599 MD fin 2019 et −936 MD fin 2020, chiffre probable. La dette passe de 1 948,7 MD fin 2018 à 2 142,6 MD fin 2020 : 1 076,2 puis 956,1 MD envers les banques, 784,3 puis 996,8 MD envers les entreprises publiques, 25,0 puis 112,7 MD envers l'État. Les éditions LF 2024 et LF 2025 n'impriment pas le bilan : à la date de chacune, la société n'a pas approuvé ses états financiers, de 2020 à 2022 pour la première, de 2021 à 2023 pour la seconde.
+- **Des éditions qui ne concordent pas.** Aucun exercice de Tunisair n'est dit réalisé dans les fiches. Le résultat net de 2018 est de −96,8 MD dans le classement de l'édition LF 2021, de −192,6 MD dans celui de l'édition LF 2022 et de −225,8 MD dans la fiche de la même édition : 129 MD séparent la première et la dernière valeur. Celui de 2020 est de −336,7 MD dans l'édition LF 2022 (probable) et de −234,0 MD dans l'édition LF 2024 (estimé). Celui de 2022 passe de −218,5 MD (LF 2024, estimé) à −176,3 MD (LF 2025, provisoire), et les produits d'exploitation de 1 358,4 à 1 413,7 MD : des écarts de 4 à 19 %.
+
+:::: {.chronologie-repliable titre="Tunisair : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, résultat, produits, effectif), et textes de capital, de garantie et d'avantage fiscal, 1961-2015"}
+
+```{python}
+#| label: fig-ep-tunisair-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "tunisair_fiches",
+    caption=("Tunisair d'après le rapport sur les entreprises publiques, exercices 2018-2023, en "
+             "millions de dinars courants et en agents : chaque exercice dans la dernière édition "
+             "qui le donne ; dette par créancier de l'édition LF 2022. Source : ministère des "
+             "Finances [@minfin-ep-2022, p. 54 ; @minfin-ep-2024, p. 81 ; @minfin-ep-2025, p. 56]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; aucun exercice "
+        "n'est dit réalisé (hachures partout). Les éditions LF 2024 et LF 2025 n'impriment pas "
+        "le bilan : les fonds propres et la dette ne sont tracés que pour 2018 et 2019, et pour "
+        "2020 dans le panneau de la dette par créancier (édition LF 2022 : fonds propres de "
+        "−936 MD fin 2020). Le résultat net est celui d'avant modifications comptables, égal à "
+        "celui d'après chaque année. Toutes les valeurs imprimées, édition par édition, sont "
+        "dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("tunisair", ("LF2022",),
+    caption=("Tunisair, édition LF 2022 : dette par créancier, fonds propres, investissements, "
+             "résultat et emploi, exercices 2018-2020 ; 2018 et 2019 marqués « * » (provisoire), "
+             "2020 « ** » (probable). Source : ministère des Finances [@minfin-ep-2022, p. 54]"),
+    tbl_id="tbl-ep-tunisair-fiche-a")
+ge.tableau_fiche_detail("tunisair", ("LF2024", "LF2025"),
+    caption=("Tunisair, éditions LF 2024 et LF 2025 : résultat et emploi, exercices 2020-2023 ; "
+             "les cases du bilan sont remplacées par une note : la société n'a pas approuvé ses "
+             "états financiers de 2020 à 2022, puis de 2021 à 2023. Source : ministère des "
+             "Finances [@minfin-ep-2024, p. 81 ; @minfin-ep-2025, p. 56]"),
+    tbl_id="tbl-ep-tunisair-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-tunisair-1961}[30 novembre 1961]{.insecable} : *Journal officiel* du 28 novembre 1961, exécutoire un jour franc après sa parution | loi n° 61-49 du 24 novembre 1961 [@loi61-49-tunisair, article unique, p. 1528] | le secrétaire d'État au Plan et aux Finances, pour le compte de l'État, est autorisé à souscrire à concurrence de 229 500 dinars à l'augmentation du capital de la société « Tunis-Air » | étape |
+| []{#r-ep-tunisair-1974}entre le [4]{.insecable} et le [8 août 1974]{.insecable} : *Journal officiel* des 2-6 août 1974, exécutoire un jour franc après sa parution | loi n° 74-70 du 3 août 1974 [@loi74-70-tunisair, article unique, p. 1741] | le ministre du Plan, pour le compte de l'État, est autorisé à souscrire à concurrence de 765 000 dinars à l'augmentation du capital de la Société tunisienne de l'air « Tunis-Air » | étape |
+| []{#r-ep-tunisair-1976}entre le [11]{.insecable} et le [15 avril 1976]{.insecable} : *Journal officiel* des 9-13 avril 1976, exécutoire un jour franc après sa parution | loi n° 76-39 du 8 avril 1976 [@loi76-39-tunisair, article unique, p. 861] | le ministre délégué auprès du Premier ministre, chargé du Plan, est autorisé à souscrire à concurrence de 612 000 dinars à l'augmentation du capital de la société | étape |
+| []{#r-ep-tunisair-1977}[20 mars 1977]{.insecable} : *Journal officiel* du 18 mars 1977, exécutoire un jour franc après sa parution | loi n° 77-16 du 16 mars 1977 [@loi77-16-tunisair, article unique, p. 650] | même autorisation, à concurrence de 1 836 000 dinars | étape |
+| []{#r-ep-tunisair-1984}entre le [9]{.insecable} et le [12 août 1984]{.insecable} : *Journal officiel* des 7-10 août 1984, exécutoire un jour franc après sa parution | loi n° 84-59 du 1^er^ août 1984 [@loi84-59-tunisair, article unique, p. 1707] | le ministre du Plan est autorisé à souscrire à concurrence de 5 076 000 dinars à l'augmentation du capital de la société | étape |
+| []{#r-ep-tunisair-1994-mai}*Journal officiel* du [17 mai 1994]{.insecable}, exécutoire cinq jours après son dépôt au gouvernorat de Tunis | lois n° 94-48 et 94-49 du 9 mai 1994 [@loi94-48-tunisair, article unique, p. 801 ; @loi94-49-tunisair, article unique, p. 801] | approbation de la garantie de l'État à deux prêts accordés à la société par un groupe de banques étrangères par conventions du 7 janvier 1994 : crédit export de 68 489 771, sans unité monétaire dans l'édition française ; crédit financier de 12 086 430 dollars | étape |
+| []{#r-ep-tunisair-1994-octobre}[24 octobre 1994]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 19 octobre 1994, plus cinq jours, jour du dépôt non compté | lois n° 94-105 et 94-106 du 14 octobre 1994 [@loi94-105-tunisair, article unique, p. 1691 ; @loi94-106-tunisair, article unique, p. 1691] | approbation de la convention du 27 juillet 1994 entre la société et l'État d'une part, la Banque nationale de Paris, le Crédit foncier de France et l'Export-Import Bank of the United States d'autre part : prêt de 23 518 101 dollars pour l'acquisition d'un Boeing 737-500 ; approbation de la garantie de l'État à un crédit financier de 4 068 875,70 dollars (convention du 9 novembre 1993 et avenants) | étape |
+| []{#r-ep-tunisair-1995-avril}[10 mai 1995]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 5 mai 1995, plus cinq jours, jour du dépôt non compté | loi n° 95-39 du 24 avril 1995 [@loi95-39-tunisair, article unique, p. 975] | approbation de la garantie de l'État à un crédit financier de 6 555 000 dollars et à un crédit acheteur de 37 145 000 dollars (conventions du 19 décembre 1994) pour l'acquisition d'un Airbus A320-200 | étape |
+| []{#r-ep-tunisair-1995-decembre}*Journal officiel* des [29-31 décembre 1995]{.insecable}, exécutoire cinq jours après son dépôt au gouvernorat de Tunis | loi n° 95-107 du 25 décembre 1995 [@loi95-107-tunisair, article unique, p. 2367] | approbation de la garantie de l'État à deux prêts de 4 143 511 et 24 419 092 dollars de la Société générale (New York) et de l'Export-Import Bank des États-Unis (accords du 21 juillet 1995) | étape |
+| []{#r-ep-tunisair-2001}[29 décembre 2001]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 24 décembre 2001, plus cinq jours, jour du dépôt non compté | loi n° 2001-121 du 20 décembre 2001 [@loi2001-121-tunisair, article unique, p. 4172] | approbation de la garantie de l'État à un prêt d'exportation et à un prêt commercial de 37 410 714,20 dollars au total (conventions du 22 octobre 2001) pour l'acquisition d'un avion | étape |
+| []{#r-ep-tunisair-2002}[7 novembre 2002]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 2 novembre 2002, plus cinq jours, jour du dépôt non compté | loi n° 2002-88 du 29 octobre 2002 [@loi2002-88-tunisair, article unique, p. 2535] | approbation de la garantie de l'État à un prêt d'exportation et à un prêt commercial de 43 929 749 dollars au total (contrats du 28 juin 2002) pour l'acquisition d'un avion | étape |
+| []{#r-ep-tunisair-2009}[3 août 2009]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 29 juillet 2009, plus cinq jours, jour du dépôt non compté | décret n° 2009-2211 du 20 juillet 2009 [@decret2009-2211-tunisair, art. 1^er^ à 3, p. 2075] | exonération de l'impôt sur les sociétés pendant cinq ans, sur les bénéfices du 1^er^ janvier 2009 au 31 décembre 2013 (art. 1^er^), au titre de l'article 52 du code d'incitation aux investissements ; bénéfices exonérés inscrits à un compte de réserve spéciale et employés à des investissements dans la société (art. 2) ; à défaut, impôt dû avec pénalités de retard (art. 3) | ajustement |
+| []{#r-ep-tunisair-2015}[23 août 2015]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 18 août 2015, plus cinq jours, jour du dépôt non compté | lois n° 2015-27, 2015-28 et 2015-29 du 18 août 2015 [@loi2015-27-tunisair, article unique, p. 1862 ; @loi2015-28-tunisair, article unique, p. 1862 ; @loi2015-29-tunisair, article unique, p. 1863] | approbation des lettres de garantie de l'État du 15 mai 2015 à trois prêts, en euros, de banques étrangères : l'équivalent de 97 866 420,65 dollars pour un Airbus A330-200, de 46 709 170,07 dollars pour un Airbus A320-214 et de 97 700 534,08 dollars pour un Airbus A330-200 | étape |
+
+: Les textes de Tunisair : capital, garanties de l'État et avantage fiscal {#tbl-ep-registre-tunisair}
+
+::::
+
+<!-- TODO (documentaliste) : fiche de Tunisair des éditions LF 2022 (p. 54), LF 2024 (p. 81) et LF 2025 (p. 56) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (28 octobre 2026, branche donnees/fiches-tunisair-rnta). Grandeurs d'activité non relevées : passagers et marchandises transportés. Dates d'effet des lois n° 94-48, 94-49 et 95-107 : la mention de dépôt au gouvernorat de Tunis n'est pas dans la couche texte des JORT n° 38 et 104 de 1994 et 1995 ni sur leur dernière page ; à relever à l'image, puis ajouter cinq jours (loi n° 93-64). Textes non lus : décret du 18 juillet 1957 autorisant l'État à acquérir des actions de la société d'économie mixte Tunis-air (JORT n° 59 de 1957, p. 885 ; fascicule absent du corpus local, à obtenir) ; statuts de la société, part de l'État dans le capital, introduction en bourse ; lois de garantie de 1971 à 1992 (décret-loi n° 71-2 et loi n° 71-50, lois n° 76-79, 77-32, 80-17, 81-44, décret-loi n° 81-25 et loi n° 81-98, loi n° 90-64, décrets-lois n° 92-1 et 92-3 et lois n° 92-99, 92-100 et 92-108 ; corpus local, fascicules scannés pour la plupart) ; décret n° 2002-3008 (ratification de la garantie de 2002) ; décrets n° 2015-154 à 2015-156 (édition arabe, JORT n° 68 de 2015) ; décret n° 99-2743 (statut du personnel au sol) ; décret n° 71-117 (marchés). Tunisair Express : textes de création et de rattachement, non identifiés dans jort_cache.db par les intitulés français et arabes interrogés. Rapports annuels et états financiers publiés par la société, rapport de la Cour des comptes sur la flotte (2018, au catalogue) : à exploiter. Ce que l'État paie à la place de Tunisair au titre de sa dette garantie : à chercher dans les rapports de la Cour des comptes sur la clôture du budget. -->
