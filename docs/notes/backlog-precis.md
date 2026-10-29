@@ -3736,8 +3736,8 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Poste, Office du commerce ; Tunisie Télécom versée le
-    29 octobre 2026, `#sec-ep-ge-tt`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
+  - les autres grandes entreprises (Office du commerce ; Tunisie Télécom et Poste versées le
+    29 octobre 2026, `#sec-ep-ge-tt` et `#sec-ep-ge-poste`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
   - SNCFT : statuts de 1969 (loi n° 69-31, JORT n° 19 de 1969, p. 581-584, dans le corpus local,
@@ -4000,6 +4000,43 @@ Ce qui reste :
     prose, non versés ; grandeurs d'activité des fiches (huile végétale subventionnée en MD et en
     tonnes) non relevées ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Office national des postes — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
+  `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche
+  de la Poste dans la suite des fiches d'entreprises : ses comptes sont au tableau des « autres
+  entreprises publiques du secteur quasi financier », même mise en page (LF 2022 p. 44, tableau 22 ;
+  LF 2024 p. 63, tableau 27 ; LF 2025 p. 40). **Versés le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-poste`, code
+  `poste`), lus à l'image (300 dpi) et retrouvés dans la couche texte ; aucun écart d'identité ;
+  charges financières nettes de signe opposé entre LF 2024 et LF 2025. Transferts du budget (20 MD
+  en 2018, 21 MD en 2020, 11 MD en 2021) lus aux pages par entreprise des éditions LF 2022 (p. 106),
+  LF 2023 (p. 200) et LF 2024 (p. 154). Commentaires du rapport lus : LF 2024 p. 64-65, LF 2025
+  p. 42. Registre `tbl-ep-registre-poste`, lu au corpus local : loi n° 90-97 (comptes courants
+  postaux, p. 1636, image) ; loi n° 98-38 (code de la poste) ; décret n° 98-1305 (création) ; loi
+  n° 98-87 (transfert des biens et du personnel) ; loi de finances pour 1999, art. 67 et 68 ;
+  décret n° 2003-1536 (couche texte décalée, décodée) ; loi de finances pour 2004, art. 39 à 42
+  (couche décalée) ; décret n° 2007-1394 ; loi n° 2007-40 ; décret gouvernemental n° 2016-681.
+  Dates de dépôt au gouvernorat lues à l'image sur la dernière page des éditions arabes (1998,
+  2003, 2007) et dans l'édition française (2016). Glossaire : `onp`. Dans `grandes_entreprises.py`,
+  le panneau « résultat net » de `fig_budget` n'a plus d'échelle quand l'entreprise n'est dans
+  aucun classement (cas de la Poste, absente des classements des dix premiers résultats).
+  **Reste** :
+  - nature du total des passifs (12 à 15 milliards de dinars, dont 647 à 784 MD dans les rubriques
+    détaillées) : la fiche ne la dit pas ; états financiers de l'Office : **à obtenir** ;
+  - objet des transferts de 2018, 2020 et 2021 (annexe 8, tableaux par établissement, **lisibles
+    dans le corpus de `tunisia-data`**) et application à l'Office, depuis 1998, de l'article 8 de la
+    loi n° 90-97 (intérêts et rémunération de 1,5 % des avoirs des comptes courants postaux) ;
+  - garantie de l'État à des emprunts de l'Office : aucune par les intitulés de `jort_cache.db`
+    (français, arabe, FTS) ; plein texte non parcouru ;
+  - textes **dans le corpus local, non lus** : décret du 28 août 1956 (Caisse d'épargne nationale
+    tunisienne) et ses modificatifs, décrets sur les taux de l'épargne et des comptes courants
+    postaux (1967-1988), lois de finances pour 1978, 1987, 1988, 2003 (art. 82), 2015 (art. 43,
+    seuil antérieur non lu), 2019 (art. 53 et 54) et 2026 (art. 100), organigramme, statut du
+    personnel, emplois fonctionnels, arrêtés de 2004, 2019 et 2021, circulaire de la Banque
+    centrale n° 2022-11 ;
+  - grandeurs d'activité du tableau (cartes de paiement, comptes et encours de l'épargne postale)
+    non versées ; édition LF 2022 absente de la série des effectifs ; éditions françaises LF 2020
+    (p. 32) et LF 2021 (p. 42) : comptes dans la prose, non versés.
 - **Tunisie Télécom — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-tt`, en fin de chapitre, après le GCT). Figure `fig-ep-tt-fiches` (pas de figure du
   budget : transferts nuls, LF 2022 p. 106 et LF 2024 p. 155), tableaux repliés

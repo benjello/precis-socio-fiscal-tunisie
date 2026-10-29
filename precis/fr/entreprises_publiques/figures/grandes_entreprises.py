@@ -14,6 +14,7 @@
     ge.figure("transtu_budget", …) ; ge.figure("autoroutes_fiches", …)  # Transtu, Tunisie Autoroutes
     ge.figure("tunisair_budget", …) ; ge.figure("rnta_fiches", …)  # Tunisair, RNTA, mêmes vues
     ge.figure("onh_budget", …) ; ge.figure("onh_fiches", …)  # Office national de l'huile
+    ge.figure("poste_budget", …) ; ge.figure("poste_fiches", …)  # Office national des postes
     ge.figure("tt_fiches", …)                                # Tunisie Télécom : fiche seule
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
@@ -655,6 +656,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "transtu": "Transtu", "tunisie_autoroutes": "Tunisie Autoroutes",
               "tunisair": "Tunisair", "rnta": "RNTA",
               "office_huile": "Office national de l'huile",
+              "poste": "Office national des postes",
               "tunisie_telecom": "Tunisie Télécom"}
 
 
@@ -840,8 +842,12 @@ def fig_budget(entite: str, couleur, hachure: str = "provisoire"):
         if vals:
             _sucettes(ax, x, vals, nom)
     ax.axhline(0, color=NOIR, lw=0.7)
-    lo, hi = ax.get_ylim()
-    ax.set_ylim(lo - 0.08 * (hi - lo), max(hi, 0) + 0.1 * (hi - lo))
+    if n.empty:  # l'entreprise n'est dans aucun classement : pas d'échelle à tracer
+        ax.set_ylim(-1, 1)
+        ax.set_yticks([])
+    else:
+        lo, hi = ax.get_ylim()
+        ax.set_ylim(lo - 0.08 * (hi - lo), max(hi, 0) + 0.1 * (hi - lo))
     for x in range(2017, 2023):
         if n[n["exercice"] == x].empty:
             _hors_source(ax, x, "n. c.")
@@ -849,7 +855,7 @@ def fig_budget(entite: str, couleur, hachure: str = "provisoire"):
     ax.legend(handles=[Line2D([], [], color=COULEUR_EDITION[ed], marker="o", lw=1.1,
                               label=f"édition {_ed(ed)}") for ed in sorted(n["edition"].unique())]
               + [Line2D([], [], color="none", label="n. c. : hors des deux classements")],
-              fontsize=6.5, frameon=False, loc="lower left")
+              fontsize=6.5, frameon=False, loc="upper left" if n.empty else "lower left")
     _axe_md(ax, "MD courants")
 
     for ax, col, titre, dec, unite in ((axes[1, 0], "effectif", "Effectif", 0, "agents"),
@@ -967,6 +973,10 @@ FIGURES = {
     "onh_budget": (lambda: fig_budget("office_huile", COULEURS_TRANSFERTS["office_huile"]),
                    lambda: table_budget("office_huile"),
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_onh_budget"),
+    "poste_fiches": (lambda: fig_fiche("poste"), lambda: table_fiche("poste"), (S_FICHES,),
+                     "fig_ep_poste_fiches"),
+    "poste_budget": (lambda: fig_budget("poste", VIOLET), lambda: table_budget("poste"),
+                     (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_poste_budget"),
     "tt_fiches": (lambda: fig_fiche("tunisie_telecom"), lambda: table_fiche("tunisie_telecom"),
                   (S_FICHES,), "fig_ep_tt_fiches"),
 }
