@@ -17,6 +17,7 @@
     ge.figure("poste_budget", …) ; ge.figure("poste_fiches", …)  # Office national des postes
     ge.figure("tt_fiches", …)                                # Tunisie Télécom : fiche seule
     ge.figure("otc_budget", …) ; ge.figure("otc_fiches", …)  # Office du commerce de la Tunisie
+    ge.figure("sncpa_budget", …) ; ge.figure("sncpa_fiches", …)  # SNCPA (cellulose, papier alfa)
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -662,7 +663,8 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "office_huile": "Office national de l'huile",
               "poste": "Office national des postes",
               "tunisie_telecom": "Tunisie Télécom",
-              "office_commerce": "Office du commerce de la Tunisie"}
+              "office_commerce": "Office du commerce de la Tunisie",
+              "sncpa": "SNCPA"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -994,6 +996,11 @@ FIGURES = {
                    (S_FICHES,), "fig_ep_otc_fiches"),
     "otc_budget": (lambda: fig_budget("office_commerce", VERT), lambda: table_budget("office_commerce"),
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_otc_budget"),
+    "sncpa_fiches": (lambda: fig_fiche("sncpa"), lambda: table_fiche("sncpa"), (S_FICHES,),
+                     "fig_ep_sncpa_fiches"),
+    "sncpa_budget": (lambda: fig_budget("sncpa", VERT, "provisoire ou probable"),
+                     lambda: table_budget("sncpa"),
+                     (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_sncpa_budget"),
 }
 
 
