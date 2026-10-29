@@ -147,7 +147,26 @@ Après 2011, aucun texte du *Journal officiel* organisant une consultation natio
 
 Les enseignants et les personnels de l'éducation sont exposés au chapitre de la dépense ([les personnels](./_depense.html#sec-educ-depense-personnels)).
 
-Le nombre d'élèves du premier cycle de l'école de base baisse jusqu'en 2008-2009, puis remonte. Celui du second cycle de la base et du secondaire croît jusqu'en 2006-2007, baisse jusqu'au milieu des années 2010, puis remonte. Le nombre d'étudiants triple de 1995-1996 à 2008-2009, puis recule jusqu'en 2020-2021. Les chiffres sont ceux de l'*Annuaire statistique de la Tunisie* de l'Institut national de la statistique (INS), qui cite le ministère de l'Éducation et celui de l'Enseignement supérieur [@ins-annuaire-statistique].
+Le nombre d'élèves du premier cycle de l'école de base baisse jusqu'en 2008-2009, puis remonte. Celui du second cycle de la base et du secondaire croît jusqu'en 2006-2007, baisse jusqu'au milieu des années 2010, puis remonte. Le nombre d'étudiants triple de 1995-1996 à 2008-2009, puis recule jusqu'en 2020-2021. Les chiffres sont ceux de l'*Annuaire statistique de la Tunisie* de l'Institut national de la statistique (INS), qui cite le ministère de l'Éducation et celui de l'Enseignement supérieur [@ins-annuaire-statistique] (@fig-educ-eleves).
+
+```{python}
+#| label: fig-educ-eleves
+#| fig-cap: "Élèves du premier cycle de la base, du second cycle et du secondaire, et étudiants, 1995-1996 à 2023-2024."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import fig_educ_depense as fd, fig_educ_eleves as fe
+fd.onglets(
+    fe.vues(), "fig_educ_eleves",
+    caption=("Élèves du premier cycle de la base, du second cycle de la base et du secondaire "
+             "(public et privé), et étudiants, 1995-1996 à 2023-2024"),
+    source=("Source : [@ins-annuaire-statistique], chapitre « Enseignement et culture », tableau des "
+            "données générales de l'enseignement"),
+    note_lecture=("Chaque courbe additionne le public et le privé ; l'onglet « Part du privé » donne "
+                  "la part du privé dans chaque cycle. Les écoles de qualification technique ne sont "
+                  "pas comprises. Les étudiants sont comptés en « étudiants réguliers » à partir de "
+                  "2006-2007 : le trait ne relie pas 2005-2006 à 2006-2007."))
+```
 
 | Année scolaire | Premier cycle de la base<br>(élèves) | dont privé<br>(élèves) | Second cycle de la base et secondaire<br>(élèves) | dont privé<br>(élèves) | Étudiants<br>(effectif) |
 |---|---:|---:|---:|---:|---:|
@@ -164,8 +183,6 @@ Le nombre d'élèves du premier cycle de l'école de base baisse jusqu'en 2008-2
 | 2023-2024 | 1 334 153 | 128 513 | 1 143 106 | 108 591 | 266 837 |
 
 : Élèves et étudiants, public et privé, 1995-1996 à 2023-2024 : une année sur cinq, les années de réforme et la dernière année {#tbl-educ-eleves-court}
-
-<!-- TODO (rédacteur) : remplacer par la figure engendrée fig-educ-eleves (fiche de plan § 2.5, F2), depuis la série education-effectifs-annuaire du catalogue (figtools.series ; snapshot présent) ; marques : 2003-2004, 2006-2007, 2011-2012. -->
 
 - **Le privé au premier cycle.** Les élèves du privé passent de 8 897 en 1995-1996 à 128 513 en 2023-2024 ; leur part dans le premier cycle passe de moins de 1 % à près de 10 %.
 - **Les réformes dans les effectifs.** Le secondaire passe en 1 + 3 à la rentrée 2003-2004 (@sec-educ-2002) ; la licence du système [LMD](#g-lmd) s'applique dès 2006-2007, et l'ancien régime des études s'éteint à la fin de 2011-2012 (@sec-educ-superieur). Les années de ces réformes figurent au tableau.
