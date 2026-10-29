@@ -19,6 +19,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Admission temporaire | القبول المؤقت |  |
 | Adoul | عدل إشهاد |  |
 | Agence foncière d'habitation | الوكالة العقارية للسكنى | AFH |
+| Agence foncière industrielle | الوكالة العقارية الصناعية | AFI |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
 | Agence tunisienne de la formation professionnelle | الوكالة التونسية للتكوين المهني | ATFP |
 | Agent temporaire | العون الوقتي |  |
