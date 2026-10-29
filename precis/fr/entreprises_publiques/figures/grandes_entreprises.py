@@ -219,6 +219,9 @@ def _axe_md(ax, unite: str = "MD") -> None:
     # Une décimale pour une graduation non entière (petits montants : −2,5 et non −2).
     ax.yaxis.set_major_formatter(
         FuncFormatter(lambda v, _: _n(v, 0 if abs(v - round(v)) < 1e-9 else 1)))
+    # Graduations fractionnaires (petits montants : 0,5 ; 1,5…) écrites avec leur décimale.
+    ax.yaxis.set_major_formatter(FuncFormatter(
+        lambda v, _: _n(v, 0 if float(v).is_integer() else 1)))
     ax.set_ylabel(unite, fontsize=7.5)
     ax.tick_params(labelsize=7)
 
@@ -676,6 +679,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "srt_bizerte": "Société régionale de transport de Bizerte"}
               "ctf": "CTF"}
               "sndp": "SNDP"}
+              "sotrapil": "SOTRAPIL"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -1038,6 +1042,8 @@ FIGURES = {
                    "fig_ep_ctf_fiches"),
     "sndp_fiches": (lambda: fig_fiche("sndp"), lambda: table_fiche("sndp"), (S_FICHES,),
                     "fig_ep_sndp_fiches"),
+    "sotrapil_fiches": (lambda: fig_fiche("sotrapil"), lambda: table_fiche("sotrapil"),
+                        (S_FICHES,), "fig_ep_sotrapil_fiches"),
 }
 
 

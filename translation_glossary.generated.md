@@ -603,6 +603,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | SMIG de référence de la CNSS | الأجر الأدنى المرجعي المعتمد لدى الصندوق الوطني للضمان الاجتماعي |  |
 | Société de prévoyance des fonctionnaires et employés tunisiens | الجمعية الاحتياطية للموظفين والمستخدمين التونسيين |  |
 | Société de promotion des logements sociaux | شركة النهوض بالمساكن الاجتماعية | SPROLS |
+| Société de transport des hydrocarbures par pipelines | شركة النقل بواسطة الأنابيب | SOTRAPIL |
 | Société des transports de Tunis | شركة النقل بتونس | Transtu |
 | Société nationale d'exploitation et de distribution des eaux | الشركة الوطنية لاستغلال وتوزيع المياه | SONEDE |
 | Société nationale de distribution des pétroles | الشركة الوطنية لتوزيع البترول | SNDP |
