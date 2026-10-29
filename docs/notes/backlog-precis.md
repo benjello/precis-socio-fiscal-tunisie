@@ -4383,6 +4383,8 @@ Ce qui reste :
     n° 2001-2430 et 2001-2431, n° 84-1036 et 2013-2628 (réquisition), lois n° 75-45 et 82-72 (crédits
     où l'emprunteur est l'État), lois n° 70-25 et 72-36 (cession des terres domaniales) ; plein texte
     des lois de finances (garanties, abandons, dotations) non parcouru ;
+  - découvert bancaire de l'Office (LF 2024, tableaux 18 et 19, p. 43-44 : 88,9 et 117,5 MD) : non lu à
+    l'image, non versé ;
   - grandeurs d'activité des fiches (céréales en quintaux, huile d'olive en tonnes) citées, non versées ;
     éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
