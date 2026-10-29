@@ -4356,6 +4356,46 @@ Ce qui reste :
   - page exacte de la ligne de l'agence dans les tableaux des transferts par entreprise (LF 2022 à
     LF 2024) : non relevée ; objet des transferts à confirmer dans l'annexe 8 ;
   - comptes publiés et rapports annuels de l'agence : **à obtenir**.
+- **Société tunisienne de banque, Banque de l'habitat, Caisse des prêts et de soutien des
+  collectivités locales — sections écrites le 30 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-stb`, `#sec-ep-ge-bh`, `#sec-ep-ge-cpscl`, en fin de chapitre, à déplacer dans un
+  chapitre « Le secteur financier public » ; intro et « La source » mises à jour). Figures
+  `fig-ep-stb-fiches`, `fig-ep-bh-budget`, `fig-ep-bh-fiches`, `fig-ep-cpscl-budget`,
+  `fig-ep-cpscl-fiches` ; tableaux repliés `tbl-ep-{stb,bh,cpscl}-fiche-a` et `-b` ; nouvelles
+  fonctions `fig_banque`, `table_banque`, `tableau_banque_detail` (figures/grandes_entreprises.py),
+  à rapprocher de celles qu'écrit en parallèle la branche BNA/BFPME/BTS. **Versés le 29 octobre
+  2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-stbbh`) : STB et BH depuis le tableau des banques publiques (LF 2022 p. 39,
+  tableau 21 ; LF 2024 p. 53-54, tableau 26 ; LF 2025 p. 29), mise en page `banques` et codes `bq_`
+  de la branche BNA/BFPME/BTS ; CPSCL depuis le tableau du secteur quasi financier (LF 2022 p. 44 ;
+  LF 2024 p. 63 ; LF 2025 p. 40), codes de la Poste, écarts déclarés (LF 2024, passifs y compris
+  fonds propres ; LF 2025, 2023, bilan à 104,2 près). Les recapitalisations de 2013-2015 restent au
+  chapitre « Restructurer » (renvoi en tête des sections). Registres lus au corpus local :
+  STB — décret du 20 décembre 1956 (océrisation), loi n° 57-15 (image), loi n° 61-64
+  (océrisation), décret-loi n° 81-29 (image), loi n° 92-55 (océrisation), loi n° 2012-17 ; BH —
+  loi n° 73-24 (océrisation), décret n° 74-224 (art. 1er et 2, océrisation), loi n° 89-18
+  (image), loi n° 2007-31, loi n° 2018-8 ; CPSCL — loi n° 2001-56 (couche décalée, décodée), loi
+  n° 2015-19 ; la loi n° 75-37 reste au volume des finances locales (renvoi). Glossaire : `stb`,
+  `bh` (le terme `cpscl` existait).
+  **Reste** :
+  - textes **dans le corpus local, non lus** : loi n° 82-6 (ratification du décret-loi n° 81-29) ;
+    conventions STB-État de 1959 à 1967 (lois n° 59-57, 59-102, 59-104, 59-144, 61-5, 61-34,
+    67-44) ; organigrammes et emplois fonctionnels de la STB (n° 2001-715, 2001-1251, 2007-894)
+    et de la BH (n° 2005-965, 2006-1806) ; rectificatif de la loi n° 73-24, décret n° 74-223 et
+    modificatifs, suite du décret n° 74-224 et décrets n° 76-271 et 76-1000, loi n° 75-83 (LF
+    1976, exonérations de la caisse), lois n° 76-53, 77-63, 79-58, 93-117 (prêts garantis de la
+    caisse), n° 92-34, 2002-70, 2003-72, 2009-78 (BH) ; pour la CPSCL, lois n° 97-78, 2003-19,
+    2003-39, 2005-53 et décrets du personnel, de l'organigramme et des agences régionales ;
+  - **à identifier** : filiation entre la Société tunisienne de banque populaire (décret de 1956) et
+    la STB ; acte de constitution de la STB ; texte de la fusion de 2000 avec la BNDT et la BDET ;
+    date effective de la transformation de la caisse en BH ;
+  - écart entre les 117 MD de garantie mise en jeu (loi n° 2012-17) et les 70,0 MD relevés par la
+    Cour des comptes pour 2012 ; écart entre les parts de l'État dans les dividendes de la BH du
+    tableau des banques (46,87 MD sur 2021-2023) et le tableau des dividendes (46,7 MD) ;
+  - CPSCL : « dette envers les banques » de l'édition LF 2022 à rapprocher de la note de
+    l'édition LF 2025 ; objet des subventions d'investissement ; indicateurs d'activité non versés ;
+  - montants souscrits en application de la loi n° 2015-31 et part de l'État dans le capital des
+    deux banques ; comptes publiés et rapports annuels : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche

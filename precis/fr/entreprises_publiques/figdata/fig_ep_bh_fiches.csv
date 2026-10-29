@@ -1,0 +1,151 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-30
+# séries (tunisia_data) : entreprises-publiques-fiches-entreprises
+# sources (citation) : @minfin-ep-2022, @minfin-ep-2024, @minfin-ep-2025
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne se compare d'une édition à l'autre que sous le même code (`indicateur`) ; `divergence_entre_editions` signale 1436 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs 15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d'exploitation 3 307 puis 4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une même année d'une édition à l'autre (SNCFT 2020 : subvention d'exploitation 65 en LF 2022, 105 en LF 2024 ; STIR 2020 : résultat net 30,7 en LF 2022, 59,1 en LF 2024 ; STIR 2022 : subvention d'exploitation 4 197,8 en LF 2024, 4 101,0 en LF 2025, résultat net −2 374,3 puis −1 902,9 ; Office des céréales 2022, « réalisé » dans les deux éditions : passifs 8 335,7 en LF 2024, 8 054,1 en LF 2025, actifs 5 684,4 puis 5 402,2, concours bancaires 6 564,9 puis 6 201,5, subvention d'exploitation 3 692,6 puis 3 653,1 ; SONEDE 2022, probable puis réalisé : résultat net −86,7 puis −21,1 ; ONAS 2022, provisoire puis réalisé : résultat net avant modifications comptables −97,8 puis 2,0 ; Office national de l'huile 2022, provisoire dans les deux éditions : passifs 789,7 puis 899,7, actifs 280,0 puis 525,0, résultat net −32,1 puis −41,4). OFFICE DES CÉRÉALES, RÉSULTATS REPORTÉS : l'édition LF 2024 imprime les résultats reportés augmentés du résultat de l'exercice (2021 : −1 511,2 − 477,2 = −1 988,4), soit ce que l'édition LF 2025 donne à l'exercice suivant, à la révision du résultat de 2022 près (2022 : −2 689,2 en LF 2024, −2 689,8 pour 2023 en LF 2025) ; imprimé tel quel. `statut` : le dernier exercice de chaque édition est en général provisoire, estimé ou probable ; exception : l'Office des céréales, dont l'édition LF 2024 imprime 2022 « منجز » (réalisé), que l'édition LF 2025 révise en le disant aussi réalisé, et Tunisie Télécom, dont tous les exercices des éditions LF 2024 et LF 2025 sont imprimés « منجز ». « - » imprimé est une case vide (`case_vide`), distincte d'un zéro imprimé. EN-TÊTES DÉCALÉS DANS L'ÉDITION LF 2024 (colonnes 6 à 8) : l'attribution suit l'ordre de l'édition LF 2025, prouvée par l'identité du bilan. ÉCARTS IMPRIMÉS DÉCLARÉS (`ecart_identite`) : dette de la SNCFT, LF 2022, somme des créanciers inférieure au total de 110,9 (2018) et 161,9 (2019) ; ETAP 2020, 0,6 ; STEG 2022 en LF 2024, 15 753 au passif et à l'actif pour 37 de fonds propres ; SNCFT en LF 2025, colonne « recettes » qui ne boucle pas avec le total des produits (2021 : 89,8 quand LF 2024 imprime 35,8, qui boucle) ; STIR, LF 2022, dette totale inférieure de 50,0 à la somme des créanciers les trois années ; STIR 2022 en LF 2024, bilan à 0,8 près ; ONAS 2018 en LF 2022, charges d'exploitation imprimées « -283,4 », avec le signe (résultat d'exploitation 56,27 = 339,7 − 283,4) ; SONEDE 2022 en LF 2024, produits 663,3 pour une somme de 663,1 ; CPG 2019 en LF 2022, dette totale 288,95 pour une somme des créanciers de 288,63 ; GCT, LF 2022, montants entiers, écart d'une unité (dette 2018 et 2019, résultat d'exploitation 2020) ; Office national de l'huile 2022 en LF 2024, 280,0 d'actifs pour 789,7 de passifs et −364,7 de fonds propres (écart −145,0, les variations imprimées confirmant les trois cases ; LF 2025 boucle). OFFICE NATIONAL DE L'HUILE 2023 (LF 2025) : total des passifs en case vide ; la variation imprimée « 2023-2022 » (−54,9) donnerait 844,8, qui ne boucle pas avec 526,0 d'actifs et −416,0 de fonds propres : non reporté ; RNTA, LF 2022, dette totale 2018 de 535,76 pour 535,59 de créanciers et résultat d'exploitation 2019 de −68,1 pour −61,2 ; RNTA, LF 2024, fonds propres et résultats reportés imprimés sans le signe « − » (281,1 pour 2021, −281,1 en LF 2025 ; la ligne des variations de la page confirme le signe), bilan qui ne boucle pas ; RNTA, LF 2025, actifs − passifs − fonds propres = résultat net de l'exercice (96,9 ; 130,7 ; 116,2). TUNISAIR, BILAN NON PUBLIÉ : 2020-2022 (LF 2024) et 2021-2023 (LF 2025), cases du bilan remplacées par une note (états financiers non approuvés) ; aucune ligne. Tunisair, statuts LF 2022 : « * » provisoire (2018, 2019), « ** » probable (2020). Tunisie Télécom, LF 2024 et LF 2025 : produits d'exploitation supérieurs à recettes + autres produits de 60,5 (2020), 50,7 (2021), 27,7 (2022) et 30,1 (2023), sans ligne qui porte la différence. SONEDE, BILAN NON PUBLIÉ : 2022 dans l'édition LF 2024 et 2023 dans l'édition LF 2025, les onze cases du bilan sont remplacées par une note (états financiers non transmis, puis non approuvés) ; aucune ligne, ce ne sont pas des cases vides. GCT 2023 dans l'édition LF 2025 : ligne remplacée par une note (comptes de 2022 en cours de clôture) ; aucune ligne. CPG et GCT : aucune subvention d'exploitation (0 en LF 2022, « - » ensuite). GCT 2022, estimé (LF 2024) puis provisoire (LF 2025) : résultat net 296,0 puis 63,1. SONEDE 2019 dans l'édition LF 2022 : « * », états financiers non approuvés (`statut` = comptes non approuvés). STIR, LF 2024 : « *660,4 » (autres produits d'exploitation 2021), appel de la note « منحة دعم المحروقات لسنة 2021 باعتبار إعادة توظيف عائدات عنصر الخزن الاحتياطي بقيمة 624,5 م دينار ضمن إيرادات الاستغلال (بصدد التسوية) » ; LF 2025 imprime 35,8 pour la même case. STIR 2023 (LF 2025) : total des passifs et immobilisations nettes en case vide. RÉSULTAT NET : les classements des dix premières retiennent le résultat avant modifications comptables (STEG 2021 : −42,7 ; 3 469,6 après) ; SNCFT 2019 : −119,8 sur la fiche, −113,78 dans le classement de la même édition. La subvention d'exploitation est une ligne comptable de l'entreprise : elle ne concorde pas avec les transferts du budget par entreprise. TRANSTU : bilan non publié (LF 2024 : 2021 et 2022 remplacés par une note, états financiers 2020-2022 non approuvés ; LF 2025 : seuls les résultats reportés sont imprimés) ; aucune ligne pour ces cases. LF 2024 p. 83, en-têtes décalés : fonds propres 2020 lus 1 110 (positifs ; −713,5 fin 2018 en LF 2022), résultats reportés −1 621 (= ce que LF 2025 donne pour 2021). Dette totale 2018 (LF 2022) 981 pour 982 de créanciers, écart déclaré. TUNISIE AUTOROUTES : LF 2024, produits supérieurs à leurs composantes de 3,5, 3,3 et 1,9 (production immobilisée, que LF 2025 range dans les autres produits), bilan 2021 à 0,4 près, déclarés ; LF 2025, subvention d'exploitation 2022 de 320,2 = avances de l'État pour les échéances de prêts extérieurs de 2021 et 2022, comptées en subvention (note imprimée) ; 2021 retraité (modifications comptables) : fonds propres 882,6 en LF 2024, 778,8 en LF 2025. OFFICE NATIONAL DES POSTES : comptes imprimés dans le tableau des autres entreprises publiques du secteur quasi financier (LF 2022 p. 44, tableau 22 ; LF 2024 p. 63, tableau 27 ; LF 2025 p. 40), même mise en page que les fiches ; aucune subvention d'exploitation (0 en LF 2022, « - » ensuite) ; charges financières nettes de signe opposé d'une édition à l'autre (2021 : 23,4 en LF 2024, −23,4 en LF 2025 ; produits financiers nets), imprimées telles quelles ; résultat net 2022 provisoire 85,3 (LF 2024), réalisé 106,9 (LF 2025) ; indicateurs d'activité du même tableau (cartes de paiement, comptes et encours de l'épargne postale) non versés. OFFICE DU COMMERCE DE LA TUNISIE, ÉDITION LF 2024 : la colonne 2022 du bloc « résultat » (quatorze lignes, de « recettes » à « liquidités ») imprime les variations 2021/2020 (recettes 17,9 ; charges d'exploitation 144,2 ; résultat net −128,6) et non les niveaux de 2022 (LF 2025 : 739,6 ; 1 249,4 ; −424,0) ; imprimé tel quel, les identités tenant entre variations — NE PAS lire ces cases comme 2022. « Total des passifs » imprimé égal au total des actifs (total des passifs et des fonds propres) : écart déclaré, égal à l'opposé des fonds propres (241,7 ; 369,9 ; 794,2) ; LF 2025 boucle. Ligne des stocks nets (`stocks`) propre à cette fiche ; pas de ligne de subventions d'investissement en LF 2022. Charges financières nettes de signes opposés d'une édition à l'autre (LF 2024 −20,2, LF 2025 19,9 pour 2021). TUNISIE TÉLÉCOM : LF 2022, mise en page en colonnes par exercice, dette par créancier qui boucle ; LF 2024, ligne de 2020 sans exercice imprimé (cellule fusionnée avec le nom de la société), attribuée par les variations imprimées et l'effectif ; 2022 (LF 2024) et 2023 (LF 2025) imprimés « منجز » (réalisé) ; résultats reportés 0,0 en 2022 et 2023 ; immobilisations nettes 2021 : 2 247,5 en LF 2024, 2 247,6 en LF 2025. AGENCE TECHNIQUE DES TRANSPORTS TERRESTRES (ATTT) : ni dette financière ni subvention d'exploitation (zéros imprimés) ; LF 2022, capitaux propres 2018 et 2019 imprimés avec la virgule arabe (51،3 ; 48،8), produits 2020 avec un point (134.3) ; bilan qui ne boucle pas, écarts déclarés : 2022 en LF 2024 (provisoire), 73,0 d'actifs pour 45,1 de passifs et 34,6 de fonds propres (−6,7 ; LF 2025 boucle, 85,1 ; 44,4 ; 40,8), 2023 en LF 2025 (provisoire), 86,6 pour 47,0 et 34,0 (+5,6) ; charges financières nettes de signe opposé (2021 : 0,3 en LF 2024, −0,3 en LF 2025) ; 2022 provisoire puis réalisé : résultat net −3,4 puis −5,4. BANQUES PUBLIQUES (STB, BH) : tableau d'indicateurs, aucune identité comptable ; grandeurs `bq_` propres aux banques ; STB 2020, actifs 12 349 (LF 2022) puis 12 249 (LF 2024) ; variations imprimées discordantes non versées (STB, LF 2024, résultat d'exploitation 2022-2021 ; BH, LF 2025, LCR 2022-2021). CPSCL : LF 2024, total des passifs égal au total des actifs (écart = −fonds propres) ; LF 2025, 2023, bilan à 104,2 près ; la ligne « concours bancaires » porte les aides de l'État et les dons extérieurs non transférés aux communes (note de la page LF 2025), pas des crédits bancaires. PREUVES DE LECTURE : identités du bilan, des produits et du résultat d'exploitation ; effectif et charges de personnel identiques, ligne à ligne (597), à la série entreprises-publiques-effectifs-par-entreprise lue sur les mêmes pages ; chaque ligne recoupée avec la couche texte de la page. LU À L'IMAGE à 170 dpi le 27 octobre 2026 (300 dpi le 28 octobre pour les ajouts, le 29 octobre pour Tunisie Télécom, l'Office national des postes et l'ATTT).
+# note : Banque de l'habitat d'après le tableau des banques publiques du rapport sur les entreprises publiques, exercices 2018-2023 : produit net bancaire et résultats, bilan, ratios réglementaires, créances classées, liquidité et effectif ; chaque exercice dans la dernière édition qui le donne. Source : ministère des Finances [@minfin-ep-2022, p. 39 ; @minfin-ep-2024, p. 54 ; @minfin-ep-2025, p. 29]
+Exercice,Édition,Statut,Grandeur,Valeur,Unité,Imprimé,Case laissée vide,Libellé arabe,Page imprimée,Page du fichier
+2018,LF 2022,non dit,"Ratio de liquidité LCR (%, minimum 90 en 2018, 100 depuis 2019)",101.6,pour cent,"101,6",False,LCR (نسبة دنيا 90 % في 2018 و100 % بداية من 2019),39,38
+2018,LF 2022,non dit,"Ratio Tier 1 (%, minimum 7)",7.6,pour cent,"7,6",False,TIER 1 (نسبة دنيا 7 %),39,38
+2018,LF 2022,non dit,"Ratio de solvabilité (%, minimum 10)",10.5,pour cent,"10,5",False,نسبة الملاءة المالية (نسبة دنيا 10 %),39,38
+2018,LF 2022,non dit,Couverture des créances classées par les provisions (%),77.8,pour cent,"77,8",False,تغطية الديون المصنفة بالمدخرات,39,38
+2018,LF 2022,non dit,"Créances classées, en part des engagements (%)",11.4,pour cent,"11,4",False,نسبة الديون المصنفة,39,38
+2018,LF 2022,non dit,Coefficient d'exploitation (%),41.5,pour cent,"41,5",False,مؤشر الاستغلال,39,38
+2018,LF 2022,non dit,Résultat net (MD),136.0,millions de dinars courants,136,False,النتيجة الصافية,39,38
+2018,LF 2022,non dit,Provisions nettes sur engagements (MD),70.9,millions de dinars courants,"70,9",False,مدخرات صافية على التعهدات,39,38
+2018,LF 2022,non dit,Produit net bancaire (MD),456.0,millions de dinars courants,456,False,الناتج البنكي الصافي,39,38
+2018,LF 2022,non dit,Dépôts et avoirs de la clientèle (MD),6551.0,millions de dinars courants,6551,False,الودائع,39,38
+2018,LF 2022,non dit,Engagements sur la clientèle (MD),9118.0,millions de dinars courants,9118,False,التعهدات,39,38
+2018,LF 2022,non dit,Total des actifs (MD),11912.0,millions de dinars courants,11912,False,مجموع الأصول,39,38
+2018,LF 2022,non dit,Charges de personnel (MD),125.3,millions de dinars courants,"125,3",False,أعباء الأعوان,39,38
+2018,LF 2022,non dit,Effectif (agents),1753.0,agents,1753,False,عدد الأعوان,39,38
+2019,LF 2022,non dit,"Ratio de liquidité LCR (%, minimum 90 en 2018, 100 depuis 2019)",100.4,pour cent,"100,4",False,LCR (نسبة دنيا 90 % في 2018 و100 % بداية من 2019),39,38
+2019,LF 2022,non dit,"Ratio Tier 1 (%, minimum 7)",8.5,pour cent,"8,5",False,TIER 1 (نسبة دنيا 7 %),39,38
+2019,LF 2022,non dit,"Ratio de solvabilité (%, minimum 10)",11.14,pour cent,"11,14",False,نسبة الملاءة المالية (نسبة دنيا 10 %),39,38
+2019,LF 2022,non dit,Couverture des créances classées par les provisions (%),76.4,pour cent,"76,4",False,تغطية الديون المصنفة بالمدخرات,39,38
+2019,LF 2022,non dit,"Créances classées, en part des engagements (%)",12.5,pour cent,"12,5",False,نسبة الديون المصنفة,39,38
+2019,LF 2022,non dit,Coefficient d'exploitation (%),41.9,pour cent,"41,9",False,مؤشر الاستغلال,39,38
+2019,LF 2022,non dit,Résultat net (MD),142.0,millions de dinars courants,142,False,النتيجة الصافية,39,38
+2019,LF 2022,non dit,Provisions nettes sur engagements (MD),68.5,millions de dinars courants,"68,5",False,مدخرات صافية على التعهدات,39,38
+2019,LF 2022,non dit,Produit net bancaire (MD),493.0,millions de dinars courants,493,False,الناتج البنكي الصافي,39,38
+2019,LF 2022,non dit,Dépôts et avoirs de la clientèle (MD),6879.0,millions de dinars courants,6879,False,الودائع,39,38
+2019,LF 2022,non dit,Engagements sur la clientèle (MD),9647.0,millions de dinars courants,9647,False,التعهدات,39,38
+2019,LF 2022,non dit,Total des actifs (MD),12208.0,millions de dinars courants,12208,False,مجموع الأصول,39,38
+2019,LF 2022,non dit,Charges de personnel (MD),133.8,millions de dinars courants,"133,8",False,أعباء الأعوان,39,38
+2019,LF 2022,non dit,Effectif (agents),1691.0,agents,1691,False,عدد الأعوان,39,38
+2020,LF 2022,non dit,"Ratio de liquidité LCR (%, minimum 90 en 2018, 100 depuis 2019)",107.9,pour cent,"107,9",False,LCR (نسبة دنيا 90 % في 2018 و100 % بداية من 2019),39,38
+2020,LF 2022,non dit,"Ratio Tier 1 (%, minimum 7)",9.5,pour cent,"9,5",False,TIER 1 (نسبة دنيا 7 %),39,38
+2020,LF 2022,non dit,"Ratio de solvabilité (%, minimum 10)",11.8,pour cent,"11,8",False,نسبة الملاءة المالية (نسبة دنيا 10 %),39,38
+2020,LF 2022,non dit,Couverture des créances classées par les provisions (%),70.5,pour cent,"70,5",False,تغطية الديون المصنفة بالمدخرات,39,38
+2020,LF 2022,non dit,"Créances classées, en part des engagements (%)",15.3,pour cent,"15,3",False,نسبة الديون المصنفة,39,38
+2020,LF 2022,non dit,Coefficient d'exploitation (%),38.5,pour cent,"38,5",False,مؤشر الاستغلال,39,38
+2020,LF 2022,non dit,Résultat net (MD),73.0,millions de dinars courants,73,False,النتيجة الصافية,39,38
+2020,LF 2022,non dit,Provisions nettes sur engagements (MD),171.6,millions de dinars courants,"171,6",False,مدخرات صافية على التعهدات,39,38
+2020,LF 2022,non dit,Produit net bancaire (MD),507.0,millions de dinars courants,507,False,الناتج البنكي الصافي,39,38
+2020,LF 2022,non dit,Dépôts et avoirs de la clientèle (MD),7234.0,millions de dinars courants,7234,False,الودائع,39,38
+2020,LF 2022,non dit,Engagements sur la clientèle (MD),9832.0,millions de dinars courants,9832,False,التعهدات,39,38
+2020,LF 2022,non dit,Total des actifs (MD),12243.0,millions de dinars courants,12243,False,مجموع الأصول,39,38
+2020,LF 2022,non dit,Charges de personnel (MD),124.6,millions de dinars courants,"124,6",False,أعباء الأعوان,39,38
+2020,LF 2022,non dit,Effectif (agents),1688.0,agents,1688,False,عدد الأعوان,39,38
+2020,LF 2024,non dit,"Ratio de liquidité LCR (%, minimum 90 en 2018, 100 depuis 2019)",107.9,pour cent,"107,9",False,LCR (نسبة دنيا 90 % في 2018 و100 % بداية من 2019),54,55
+2020,LF 2024,non dit,"Ratio Tier 1 (%, minimum 7)",9.5,pour cent,"9,5",False,TIER 1 (نسبة دنيا 7 %),54,55
+2020,LF 2024,non dit,"Ratio de solvabilité (%, minimum 10)",11.8,pour cent,"11,8",False,نسبة الملاءة المالية (نسبة دنيا 10 %),54,55
+2020,LF 2024,non dit,Couverture des créances classées par les provisions (%),70.5,pour cent,"70,5",False,تغطية الديون المصنفة بالمدخرات,54,55
+2020,LF 2024,non dit,"Créances classées, en part des engagements (%)",15.3,pour cent,"15,3",False,نسبة الديون المصنفة,54,55
+2020,LF 2024,non dit,Coefficient d'exploitation (%),38.5,pour cent,"38,5",False,مؤشر الاستغلال,54,55
+2020,LF 2024,non dit,Part de l'État dans les dividendes (MD),9.5,millions de dinars courants,"9,5",False,حصة الدولة الجملية,54,55
+2020,LF 2024,non dit,Dividende par action (dinars),0.6,dinars,"0,6",False,حصة السهم الواحد,54,55
+2020,LF 2024,non dit,Résultat net (MD),72.9,millions de dinars courants,"72,9",False,النتيجة الصافية,54,55
+2020,LF 2024,non dit,Provisions nettes sur engagements (MD),171.6,millions de dinars courants,"171,6",False,مدخرات صافية على التعهدات,54,55
+2020,LF 2024,non dit,Résultat d'exploitation (MD),140.4,millions de dinars courants,"140,4",False,نتيجة الاستغلال,54,55
+2020,LF 2024,non dit,Produit net bancaire (MD),507.0,millions de dinars courants,507,False,الناتج البنكي الصافي,54,55
+2020,LF 2024,non dit,Dépôts et avoirs de la clientèle (MD),7234.0,millions de dinars courants,7234,False,ودائع وأموال الحرفاء,54,55
+2020,LF 2024,non dit,Engagements sur la clientèle (MD),9832.0,millions de dinars courants,9832,False,التعهدات على الحرفاء,54,55
+2020,LF 2024,non dit,Total des actifs (MD),12243.0,millions de dinars courants,12243,False,مجموع الأصول,54,55
+2020,LF 2024,non dit,Charges de personnel (MD),124.6,millions de dinars courants,"124,6",False,أعباء الأعوان,54,55
+2020,LF 2024,non dit,Effectif (agents),1688.0,agents,1688,False,عدد الأعوان,54,55
+2021,LF 2024,non dit,"Ratio de liquidité LCR (%, minimum 90 en 2018, 100 depuis 2019)",123.5,pour cent,"123,5",False,LCR (نسبة دنيا 90 % في 2018 و100 % بداية من 2019),54,55
+2021,LF 2024,non dit,"Ratio Tier 1 (%, minimum 7)",10.8,pour cent,"10,8",False,TIER 1 (نسبة دنيا 7 %),54,55
+2021,LF 2024,non dit,"Ratio de solvabilité (%, minimum 10)",14.0,pour cent,14,False,نسبة الملاءة المالية (نسبة دنيا 10 %),54,55
+2021,LF 2024,non dit,Couverture des créances classées par les provisions (%),71.3,pour cent,"71,3",False,تغطية الديون المصنفة بالمدخرات,54,55
+2021,LF 2024,non dit,"Créances classées, en part des engagements (%)",15.9,pour cent,"15,9",False,نسبة الديون المصنفة,54,55
+2021,LF 2024,non dit,Coefficient d'exploitation (%),39.2,pour cent,"39,2",False,مؤشر الاستغلال,54,55
+2021,LF 2024,non dit,Part de l'État dans les dividendes (MD),15.1,millions de dinars courants,"15,1",False,حصة الدولة الجملية,54,55
+2021,LF 2024,non dit,Dividende par action (dinars),0.95,dinars,"0,95",False,حصة السهم الواحد,54,55
+2021,LF 2024,non dit,Résultat net (MD),134.7,millions de dinars courants,"134,7",False,النتيجة الصافية,54,55
+2021,LF 2024,non dit,Provisions nettes sur engagements (MD),126.2,millions de dinars courants,"126,2",False,مدخرات صافية على التعهدات,54,55
+2021,LF 2024,non dit,Résultat d'exploitation (MD),231.8,millions de dinars courants,"231,8",False,نتيجة الاستغلال,54,55
+2021,LF 2024,non dit,Produit net bancaire (MD),570.0,millions de dinars courants,570,False,الناتج البنكي الصافي,54,55
+2021,LF 2024,non dit,Dépôts et avoirs de la clientèle (MD),7782.0,millions de dinars courants,7782,False,ودائع وأموال الحرفاء,54,55
+2021,LF 2024,non dit,Engagements sur la clientèle (MD),9818.0,millions de dinars courants,9818,False,التعهدات على الحرفاء,54,55
+2021,LF 2024,non dit,Total des actifs (MD),12405.0,millions de dinars courants,12405,False,مجموع الأصول,54,55
+2021,LF 2024,non dit,Charges de personnel (MD),150.3,millions de dinars courants,"150,3",False,أعباء الأعوان,54,55
+2021,LF 2024,non dit,Effectif (agents),1691.0,agents,1691,False,عدد الأعوان,54,55
+2021,LF 2025,réalisé,"Ratio de liquidité LCR (%, minimum 90 en 2018, 100 depuis 2019)",123.5,pour cent,"123,5",False,LCR (نسبة دنيا 100),29,29
+2021,LF 2025,réalisé,"Ratio Tier 1 (%, minimum 7)",10.8,pour cent,"10,8",False,TIER 1 (نسبة دنيا 7),29,29
+2021,LF 2025,réalisé,"Ratio de solvabilité (%, minimum 10)",14.0,pour cent,14,False,نسبة الملاءة المالية (نسبة دنيا 10),29,29
+2021,LF 2025,réalisé,Couverture des créances classées par les provisions (%),71.3,pour cent,"71,3",False,تغطية الديون المصنفة بالمدخرات,29,29
+2021,LF 2025,réalisé,"Créances classées, en part des engagements (%)",15.9,pour cent,"15,9",False,نسبة الديون المصنفة,29,29
+2021,LF 2025,réalisé,Coefficient d'exploitation (%),39.2,pour cent,"39,2",False,مؤشر الاستغلال,29,29
+2021,LF 2025,réalisé,Part de l'État dans les dividendes (MD),15.1,millions de dinars courants,"15,1",False,حصة الدولة الجملية,29,29
+2021,LF 2025,réalisé,Dividende par action (dinars),0.95,dinars,"0,95",False,حصة السهم الواحد,29,29
+2021,LF 2025,réalisé,Résultat net (MD),134.7,millions de dinars courants,"134,7",False,النتيجة الصافية,29,29
+2021,LF 2025,réalisé,Provisions nettes sur engagements (MD),126.2,millions de dinars courants,"126,2",False,مدخرات صافية على التعهدات,29,29
+2021,LF 2025,réalisé,Résultat d'exploitation (MD),231.8,millions de dinars courants,"231,8",False,نتيجة الاستغلال,29,29
+2021,LF 2025,réalisé,Produit net bancaire (MD),570.0,millions de dinars courants,570,False,الناتج البنكي الصافي,29,29
+2021,LF 2025,réalisé,Dépôts et avoirs de la clientèle (MD),7782.0,millions de dinars courants,7782,False,ودائع وأموال الحرفاء,29,29
+2021,LF 2025,réalisé,Engagements sur la clientèle (MD),9818.0,millions de dinars courants,9818,False,التعهدات على الحرفاء,29,29
+2021,LF 2025,réalisé,Total des actifs (MD),12405.0,millions de dinars courants,12405,False,مجموع الأصول,29,29
+2021,LF 2025,réalisé,Charges de personnel (MD),150.3,millions de dinars courants,"150,3",False,أعباء الأعوان,29,29
+2021,LF 2025,réalisé,Effectif (agents),1691.0,agents,1691,False,عدد الأعوان,29,29
+2022,LF 2024,non dit,"Ratio de liquidité LCR (%, minimum 90 en 2018, 100 depuis 2019)",128.3,pour cent,"128,3",False,LCR (نسبة دنيا 90 % في 2018 و100 % بداية من 2019),54,55
+2022,LF 2024,non dit,"Ratio Tier 1 (%, minimum 7)",11.6,pour cent,"11,6",False,TIER 1 (نسبة دنيا 7 %),54,55
+2022,LF 2024,non dit,"Ratio de solvabilité (%, minimum 10)",14.3,pour cent,"14,3",False,نسبة الملاءة المالية (نسبة دنيا 10 %),54,55
+2022,LF 2024,non dit,Couverture des créances classées par les provisions (%),69.4,pour cent,"69,4",False,تغطية الديون المصنفة بالمدخرات,54,55
+2022,LF 2024,non dit,"Créances classées, en part des engagements (%)",15.8,pour cent,"15,8",False,نسبة الديون المصنفة,54,55
+2022,LF 2024,non dit,Coefficient d'exploitation (%),40.4,pour cent,"40,4",False,مؤشر الاستغلال,54,55
+2022,LF 2024,non dit,Part de l'État dans les dividendes (MD),14.3,millions de dinars courants,"14,3",False,حصة الدولة الجملية,54,55
+2022,LF 2024,non dit,Dividende par action (dinars),0.9,dinars,"0,9",False,حصة السهم الواحد,54,55
+2022,LF 2024,non dit,Résultat net (MD),118.7,millions de dinars courants,"118,7",False,النتيجة الصافية,54,55
+2022,LF 2024,non dit,Provisions nettes sur engagements (MD),177.9,millions de dinars courants,"177,9",False,مدخرات صافية على التعهدات,54,55
+2022,LF 2024,non dit,Résultat d'exploitation (MD),199.1,millions de dinars courants,"199, 1",False,نتيجة الاستغلال,54,55
+2022,LF 2024,non dit,Produit net bancaire (MD),623.0,millions de dinars courants,623,False,الناتج البنكي الصافي,54,55
+2022,LF 2024,non dit,Dépôts et avoirs de la clientèle (MD),8550.0,millions de dinars courants,8550,False,ودائع وأموال الحرفاء,54,55
+2022,LF 2024,non dit,Engagements sur la clientèle (MD),10687.0,millions de dinars courants,10687,False,التعهدات على الحرفاء,54,55
+2022,LF 2024,non dit,Total des actifs (MD),13625.0,millions de dinars courants,13625,False,مجموع الأصول,54,55
+2022,LF 2024,non dit,Charges de personnel (MD),167.8,millions de dinars courants,"167,8",False,أعباء الأعوان,54,55
+2022,LF 2024,non dit,Effectif (agents),1673.0,agents,1673,False,عدد الأعوان,54,55
+2022,LF 2025,réalisé,"Ratio de liquidité LCR (%, minimum 90 en 2018, 100 depuis 2019)",127.8,pour cent,"127,8",False,LCR (نسبة دنيا 100),29,29
+2022,LF 2025,réalisé,"Ratio Tier 1 (%, minimum 7)",11.6,pour cent,"11,6",False,TIER 1 (نسبة دنيا 7),29,29
+2022,LF 2025,réalisé,"Ratio de solvabilité (%, minimum 10)",14.3,pour cent,"14,3",False,نسبة الملاءة المالية (نسبة دنيا 10),29,29
+2022,LF 2025,réalisé,Couverture des créances classées par les provisions (%),69.4,pour cent,"69,4",False,تغطية الديون المصنفة بالمدخرات,29,29
+2022,LF 2025,réalisé,"Créances classées, en part des engagements (%)",15.8,pour cent,"15,8",False,نسبة الديون المصنفة,29,29
+2022,LF 2025,réalisé,Coefficient d'exploitation (%),40.4,pour cent,"40,4",False,مؤشر الاستغلال,29,29
+2022,LF 2025,réalisé,Part de l'État dans les dividendes (MD),14.3,millions de dinars courants,"14,3",False,حصة الدولة الجملية,29,29
+2022,LF 2025,réalisé,Dividende par action (dinars),0.9,dinars,"0,9",False,حصة السهم الواحد,29,29
+2022,LF 2025,réalisé,Résultat net (MD),118.7,millions de dinars courants,"118,7",False,النتيجة الصافية,29,29
+2022,LF 2025,réalisé,Provisions nettes sur engagements (MD),177.9,millions de dinars courants,"177,9",False,مدخرات صافية على التعهدات,29,29
+2022,LF 2025,réalisé,Résultat d'exploitation (MD),199.1,millions de dinars courants,"199 ,1",False,نتيجة الاستغلال,29,29
+2022,LF 2025,réalisé,Produit net bancaire (MD),623.0,millions de dinars courants,623,False,الناتج البنكي الصافي,29,29
+2022,LF 2025,réalisé,Dépôts et avoirs de la clientèle (MD),8550.0,millions de dinars courants,8550,False,ودائع وأموال الحرفاء,29,29
+2022,LF 2025,réalisé,Engagements sur la clientèle (MD),10687.0,millions de dinars courants,10687,False,التعهدات على الحرفاء,29,29
+2022,LF 2025,réalisé,Total des actifs (MD),13626.0,millions de dinars courants,13626,False,مجموع الأصول,29,29
+2022,LF 2025,réalisé,Charges de personnel (MD),167.8,millions de dinars courants,"167,8",False,أعباء الأعوان,29,29
+2022,LF 2025,réalisé,Effectif (agents),1672.0,agents,1672,False,عدد الأعوان,29,29
+2023,LF 2025,réalisé,"Ratio de liquidité LCR (%, minimum 90 en 2018, 100 depuis 2019)",125.1,pour cent,"125,1",False,LCR (نسبة دنيا 100),29,29
+2023,LF 2025,réalisé,"Ratio Tier 1 (%, minimum 7)",13.0,pour cent,"13,0",False,TIER 1 (نسبة دنيا 7),29,29
+2023,LF 2025,réalisé,"Ratio de solvabilité (%, minimum 10)",15.4,pour cent,"15,4",False,نسبة الملاءة المالية (نسبة دنيا 10),29,29
+2023,LF 2025,réalisé,Couverture des créances classées par les provisions (%),67.1,pour cent,"67,1",False,تغطية الديون المصنفة بالمدخرات,29,29
+2023,LF 2025,réalisé,"Créances classées, en part des engagements (%)",15.9,pour cent,"15,9",False,نسبة الديون المصنفة,29,29
+2023,LF 2025,réalisé,Coefficient d'exploitation (%),39.5,pour cent,"39,5",False,مؤشر الاستغلال,29,29
+2023,LF 2025,réalisé,Part de l'État dans les dividendes (MD),17.47,millions de dinars courants,"17,470",False,حصة الدولة الجملية,29,29
+2023,LF 2025,réalisé,Dividende par action (dinars),1.1,dinars,"1,1",False,حصة السهم الواحد,29,29
+2023,LF 2025,réalisé,Résultat net (MD),140.0,millions de dinars courants,"140,0",False,النتيجة الصافية,29,29
+2023,LF 2025,réalisé,Provisions nettes sur engagements (MD),159.9,millions de dinars courants,"159,9",False,مدخرات صافية على التعهدات,29,29
+2023,LF 2025,réalisé,Résultat d'exploitation (MD),250.4,millions de dinars courants,"250,4",False,نتيجة الاستغلال,29,29
+2023,LF 2025,réalisé,Produit net bancaire (MD),665.0,millions de dinars courants,665,False,الناتج البنكي الصافي,29,29
+2023,LF 2025,réalisé,Dépôts et avoirs de la clientèle (MD),8752.0,millions de dinars courants,8752,False,ودائع وأموال الحرفاء,29,29
+2023,LF 2025,réalisé,Engagements sur la clientèle (MD),10211.0,millions de dinars courants,10211,False,التعهدات على الحرفاء,29,29
+2023,LF 2025,réalisé,Total des actifs (MD),13515.0,millions de dinars courants,13515,False,مجموع الأصول,29,29
+2023,LF 2025,réalisé,Charges de personnel (MD),176.4,millions de dinars courants,"176,4",False,أعباء الأعوان,29,29
+2023,LF 2025,réalisé,Effectif (agents),1664.0,agents,1664,False,عدد الأعوان,29,29

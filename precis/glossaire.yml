@@ -18534,6 +18534,55 @@ entries:
         للباعثين. ومنذ سنة 2022، يمكن للدولة أن تبيعها بالدينار الرمزي عقارات من ملكها الخاص
         ذات صبغة صناعية.
       synonymes: []
+
+  - id: stb
+    acronyme: STB
+    statut: valide
+    references: [loi57-15-stb, loi2012-17-stb, minfin-ep-2025]
+    source_definition: {ref: loi57-15-stb, locator: "art. 1er"}
+    # AR : intitulé « الشركة التونسية للبنك » du tableau des banques publiques du rapport sur les
+    # entreprises publiques, édition LF 2025, p. 29.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 29"}
+    voir_aussi: [bh]
+    fr:
+      terme: Société tunisienne de banque
+      definition: >
+        Banque publique au capital de laquelle l'État souscrit depuis 1957. En 2012, l'État a
+        mis en jeu sa garantie pour des emprunts extérieurs de la banque et inscrit le montant
+        dans ses capitaux propres comme dotation non remboursable ; de 2013 à 2015, il a
+        souscrit à l'augmentation de son capital.
+      synonymes: [STB]
+    ar:
+      terme: الشركة التونسية للبنك
+      definition: >
+        بنك عمومي تكتتب الدولة في رأس ماله منذ سنة 1957. وفي سنة 2012، فعّلت الدولة ضمانها
+        لقروض خارجية للبنك وأدرجت المبلغ في أمواله الذاتية بعنوان مخصّصات غير قابلة للاسترجاع،
+        واكتتبت من 2013 إلى 2015 في الترفيع في رأس ماله.
+      synonymes: []
+
+  - id: bh
+    acronyme: BH
+    statut: valide
+    references: [loi73-24-cnel, loi89-18-bh, minfin-ep-2025]
+    source_definition: {ref: loi89-18-bh, locator: "art. 1er à 3"}
+    # AR : intitulé « بنك الإسكان » du tableau des banques publiques du rapport sur les entreprises
+    # publiques, édition LF 2022, p. 39 (« BH بنك » dans l'édition LF 2025, p. 29).
+    source_traduction: {ref: minfin-ep-2022, locator: "p. 39"}
+    voir_aussi: [stb]
+    fr:
+      terme: Banque de l'habitat
+      definition: >
+        Banque publique issue en 1989 de la transformation de la Caisse nationale
+        d'épargne-logement, établissement public créé en 1973 ; elle gère le régime
+        d'épargne-logement par convention avec le ministère des Finances.
+      synonymes: [BH]
+    ar:
+      terme: بنك الإسكان
+      definition: >
+        بنك عمومي نتج سنة 1989 عن تحويل الصندوق القومي للادخار السكني، وهو مؤسسة عمومية
+        أُحدثت سنة 1973، ويتولّى التصرّف في نظام الادخار السكني بمقتضى اتفاقية مع وزارة
+        المالية.
+      synonymes: [BH بنك]
   - id: tunisie-telecom
     statut: valide
     references: [loi95-36-tt, loi2004-30, minfin-ep-2025]

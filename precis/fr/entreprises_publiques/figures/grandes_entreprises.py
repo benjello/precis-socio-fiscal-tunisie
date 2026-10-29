@@ -22,6 +22,9 @@
     ge.figure("sndp_fiches", …)                              # SNDP : fiche seule
     ge.figure("sncpa_budget", …) ; ge.figure("sncpa_fiches", …)  # SNCPA (cellulose, papier alfa)
     ge.figure("afi_budget", …) ; ge.figure("afi_fiches", …)  # Agence foncière industrielle
+    ge.figure("stb_fiches", …) ; ge.figure("bh_budget", …)   # banques publiques : STB, BH
+    ge.figure("cpscl_budget", …) ; ge.figure("cpscl_fiches", …)  # Caisse des prêts (CPSCL)
+    ge.tableau_banque_detail("stb", ("LF2022",), caption=…, tbl_id=…)  # tableau des banques
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -696,11 +699,14 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "ciments_bizerte": "Ciments de Bizerte",
               "ciments_oum_el_kelil": "Ciments d'Oum El Kélil",
               "sncpa": "SNCPA",
-              "afi": "Agence foncière industrielle"}
+              "afi": "Agence foncière industrielle",
+              "stb": "STB",
+              "bh": "BH",
+              "cpscl": "CPSCL"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
-PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024")}
+PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024"), ("cpscl", "LF2024")}
 
 
 def fig_fiche(entite: str):
@@ -964,6 +970,174 @@ def table_budget(entite: str):
                                          "Unité", "Imprimé", "Localisation"])
 
 
+# --- 8. Banques publiques : tableau des indicateurs du rapport (mise en page « banques ») -------
+
+LIB_BQ = {
+    "total_actifs": "Total des actifs (MD)",
+    "bq_engagements_clientele": "Engagements sur la clientèle (MD)",
+    "bq_depots_clientele": "Dépôts et avoirs de la clientèle (MD)",
+    "bq_produit_net_bancaire": "Produit net bancaire (MD)",
+    "bq_resultat_exploitation": "Résultat d'exploitation (MD)",
+    "bq_provisions_nettes": "Provisions nettes sur engagements (MD)",
+    "resultat_net": "Résultat net (MD)",
+    "bq_dividende_par_action": "Dividende par action (dinars)",
+    "bq_dividendes_etat": "Part de l'État dans les dividendes (MD)",
+    "bq_coefficient_exploitation": "Coefficient d'exploitation (%)",
+    "bq_taux_creances_classees": "Créances classées, en part des engagements (%)",
+    "bq_couverture_creances_classees": "Couverture des créances classées par les provisions (%)",
+    "bq_ratio_solvabilite": "Ratio de solvabilité (%, minimum 10)",
+    "bq_ratio_tier1": "Ratio Tier 1 (%, minimum 7)",
+    "bq_ratio_lcr": "Ratio de liquidité LCR (%, minimum 90 en 2018, 100 depuis 2019)",
+    "charges_personnel": "Charges de personnel (MD)",
+    "effectif": "Effectif (agents)",
+}
+ORDRE_BQ = list(LIB_BQ)
+
+
+def tableau_banque_detail(entite: str, editions: tuple[str, ...], caption: str,
+                          tbl_id: str) -> None:
+    """Le tableau des banques publiques, une colonne par (exercice, édition) ; unité par ligne."""
+    f = _fiches(entite)
+    f = f[f["edition"].isin(editions)]
+    cols = sorted({(x, e) for x, e in zip(f["exercice"], f["edition"])})
+    lignes = []
+    for ind in ORDRE_BQ:
+        if ind not in set(f["indicateur"]):
+            continue
+        cases = []
+        for x, e in cols:
+            r = f[(f["exercice"] == x) & (f["edition"] == e) & (f["indicateur"] == ind)]
+            if r.empty:
+                cases.append("—")
+                continue
+            r = r.iloc[0]
+            if r["case_vide"] in (True, "True"):
+                cases.append("–")
+                continue
+            imp = str(r["imprime"]).replace(" ", "")
+            dec = len(imp.split(",")[1]) if "," in imp else 0
+            cases.append(_n(r["valeur"], dec))
+        lignes.append([LIB_BQ[ind]] + cases)
+    ent = []
+    for x, e in cols:
+        st = f[(f["exercice"] == x) & (f["edition"] == e)]["statut"].iloc[0]
+        st = STATUT.get(st, st)
+        ent.append(f"{x}<br>({_ed(e)}{', ' + st if st else ''})")
+    _md(["Grandeur (unité)"] + ent, "g" + "d" * len(cols), lignes, caption, tbl_id)
+
+
+def fig_banque(entite: str):
+    """Une banque publique d'après le tableau des indicateurs du rapport : chaque exercice dans
+    la dernière édition qui le donne ; ratios avec les minimums imprimés en tête de colonne."""
+    figtools.apply_lang_font()
+    f = _fiches(entite)
+    nom = NOMS_FICHE.get(entite, entite)
+    exercices = sorted(int(x) for x in f["exercice"].unique())
+    der = {x: f[f["exercice"] == x]["edition"].max() for x in exercices}
+    statut = {x: f[(f["exercice"] == x) & (f["edition"] == der[x])]["statut"].iloc[0]
+              for x in exercices}
+
+    def case(x, ind):
+        return _case_fiche(f, x, der[x], ind)
+
+    fig = plt.figure(figsize=(11.0, 9.6))
+    gs = fig.add_gridspec(3, 2)
+    ax_r, ax_b = fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1])
+    ax_s, ax_c = fig.add_subplot(gs[1, 0]), fig.add_subplot(gs[1, 1])
+    ax_l, ax_e = fig.add_subplot(gs[2, 0]), fig.add_subplot(gs[2, 1])
+
+    def groupe(ax, series, unite, ecrire=False, dec=1):
+        k = len(series)
+        larg = 0.8 / k
+        for i, (ind, lib, coul) in enumerate(series):
+            for x in exercices:
+                c = case(x, ind)
+                if c is None:
+                    continue
+                xi = x + (i - (k - 1) / 2) * larg
+                val, st, vide = c
+                if vide:
+                    _hors_source(ax, xi, "–")
+                    continue
+                _barre(ax, xi, val, coul, largeur=larg, ferme=_ferme(st),
+                       texte=f"{nom}, {x} — {lib} : {_n(val, dec)} {unite}, édition "
+                             f"{_ed(der[x])}")
+                if ecrire:
+                    ax.annotate(_n(val, dec), xy=(xi, val), xytext=(0, 2),
+                                textcoords="offset points", ha="center",
+                                va="bottom" if val >= 0 else "top", fontsize=6)
+                if val == 0:
+                    _zero(ax, xi)
+        ax.legend(handles=[Patch(color=c, label=l) for _, l, c in series], fontsize=7,
+                  frameon=False, loc="upper left")
+
+    groupe(ax_r, [("bq_produit_net_bancaire", "produit net bancaire", BLEU),
+                  ("bq_resultat_exploitation", "résultat d'exploitation (LF 2024 et LF 2025)",
+                   _clair(VERT, 0.55)),
+                  ("resultat_net", "résultat net", VERT)], "MD", ecrire=True, dec=0)
+    ax_r.set_title("Produit net bancaire et résultats", fontsize=9, loc="left")
+    groupe(ax_b, [("total_actifs", "total des actifs", GRIS),
+                  ("bq_engagements_clientele", "engagements sur la clientèle", ORANGE),
+                  ("bq_depots_clientele", "dépôts de la clientèle", VIOLET)], "MD", dec=0)
+    ax_b.set_title("Bilan : actifs, engagements et dépôts de la clientèle", fontsize=9,
+                   loc="left")
+    groupe(ax_s, [("bq_ratio_solvabilite", "solvabilité", BLEU),
+                  ("bq_ratio_tier1", "Tier 1", _clair(BLEU, 0.5))], "%", ecrire=True)
+    ax_s.axhline(10, color=ROUGE, lw=0.8, ls="--")
+    ax_s.axhline(7, color=ROUGE, lw=0.8, ls=":")
+    ax_s.legend(handles=[Patch(color=BLEU, label="solvabilité"),
+                         Patch(color=_clair(BLEU, 0.5), label="Tier 1"),
+                         Line2D([], [], color=ROUGE, lw=0.8, ls="--",
+                                label="minimum de solvabilité : 10 %"),
+                         Line2D([], [], color=ROUGE, lw=0.8, ls=":",
+                                label="minimum Tier 1 : 7 %")],
+                fontsize=7, frameon=False, loc="upper left", ncol=2)
+    ax_s.set_title("Fonds propres réglementaires", fontsize=9, loc="left")
+    groupe(ax_c, [("bq_taux_creances_classees", "créances classées / engagements", ROUGE),
+                  ("bq_couverture_creances_classees", "couverture par les provisions",
+                   _clair(ROUGE, 0.45))], "%", ecrire=True)
+    ax_c.set_title("Créances classées", fontsize=9, loc="left")
+    groupe(ax_l, [("bq_ratio_lcr", "LCR", _clair(VERT, 0.7))], "%", ecrire=True)
+    ax_l.plot([2017.6, 2018.4], [90, 90], color=ROUGE, lw=0.8, ls="--")
+    ax_l.plot([2018.6, max(exercices) + 0.4], [100, 100], color=ROUGE, lw=0.8, ls="--")
+    ax_l.legend(handles=[Patch(color=_clair(VERT, 0.7), label="LCR"),
+                         Line2D([], [], color=ROUGE, lw=0.8, ls="--",
+                                label="minimum : 90 % en 2018, 100 % depuis 2019")],
+                fontsize=7, frameon=False, loc="upper left")
+    ax_l.set_title("Liquidité (LCR)", fontsize=9, loc="left")
+    groupe(ax_e, [("effectif", "effectif", _clair(VIOLET, 0.7))], "agents", ecrire=True, dec=0)
+    ax_e.get_legend().remove()
+    ax_e.set_title("Effectif (agents)", fontsize=9, loc="left")
+
+    etiquettes = [f"{x}\n{_ed(der[x])}" + (f"\n{STATUT[statut[x]]}" if STATUT.get(statut[x]) else "")
+                  for x in exercices]
+    for ax, unite in ((ax_r, "MD courants"), (ax_b, "MD courants"), (ax_s, "%"), (ax_c, "%"),
+                      (ax_l, "%"), (ax_e, "agents")):
+        _style(ax)
+        _axe_md(ax, unite)
+        _marges(ax, 0.35)
+        ax.set_xticks(exercices, etiquettes)
+        ax.set_xlim(min(exercices) - 0.6, max(exercices) + 0.6)
+        ax.axhline(0, color=NOIR, lw=0.6)
+    fig.legend(handles=[_poignee_hachure(),
+                        Line2D([], [], color="none",
+                               label="sous l'année : édition retenue (la dernière qui donne "
+                                     "l'exercice)")],
+               fontsize=7.5, frameon=False, loc="lower center", ncol=2)
+    fig.tight_layout(rect=(0, 0.03, 1, 1))
+    return fig
+
+
+def table_banque(entite: str):
+    f = _fiches(entite).sort_values(["exercice", "edition", "rang_colonne"])
+    return pd.DataFrame({
+        "Exercice": f["exercice"], "Édition": [_ed(e) for e in f["edition"]],
+        "Statut": f["statut"], "Grandeur": f["indicateur"].map(LIB_BQ).fillna(f["indicateur"]),
+        "Valeur": f["valeur"], "Unité": f["unite"], "Imprimé": f["imprime"],
+        "Case laissée vide": f["case_vide"], "Libellé arabe": f["libelle_ar"],
+        "Page imprimée": f["page_imprimee"], "Page du fichier": f["page_pdf"]})
+
+
 # --- point d'entrée ------------------------------------------------------------------------------
 
 FIGURES = {
@@ -1086,6 +1260,16 @@ FIGURES = {
                    "fig_ep_afi_fiches"),
     "afi_budget": (lambda: fig_budget("afi", BLEU), lambda: table_budget("afi"),
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_afi_budget"),
+    "stb_fiches": (lambda: fig_banque("stb"), lambda: table_banque("stb"), (S_FICHES,),
+                   "fig_ep_stb_fiches"),
+    "bh_fiches": (lambda: fig_banque("bh"), lambda: table_banque("bh"), (S_FICHES,),
+                  "fig_ep_bh_fiches"),
+    "bh_budget": (lambda: fig_budget("bh", BLEU), lambda: table_budget("bh"),
+                  (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_bh_budget"),
+    "cpscl_fiches": (lambda: fig_fiche("cpscl"), lambda: table_fiche("cpscl"), (S_FICHES,),
+                     "fig_ep_cpscl_fiches"),
+    "cpscl_budget": (lambda: fig_budget("cpscl", VERT), lambda: table_budget("cpscl"),
+                     (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_cpscl_budget"),
 }
 
 
