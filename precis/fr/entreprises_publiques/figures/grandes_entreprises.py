@@ -22,6 +22,7 @@
     ge.figure("sndp_fiches", …)                              # SNDP : fiche seule
     ge.figure("sncpa_budget", …) ; ge.figure("sncpa_fiches", …)  # SNCPA (cellulose, papier alfa)
     ge.figure("afi_budget", …) ; ge.figure("afi_fiches", …)  # Agence foncière industrielle
+    ge.figure("pct_budget", …) ; ge.figure("pct_fiches", …)  # Pharmacie centrale de Tunisie
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -696,7 +697,8 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "ciments_bizerte": "Ciments de Bizerte",
               "ciments_oum_el_kelil": "Ciments d'Oum El Kélil",
               "sncpa": "SNCPA",
-              "afi": "Agence foncière industrielle"}
+              "afi": "Agence foncière industrielle",
+              "pct": "Pharmacie centrale de Tunisie"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -1086,6 +1088,10 @@ FIGURES = {
                    "fig_ep_afi_fiches"),
     "afi_budget": (lambda: fig_budget("afi", BLEU), lambda: table_budget("afi"),
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_afi_budget"),
+    "pct_fiches": (lambda: fig_fiche("pct"), lambda: table_fiche("pct"), (S_FICHES,),
+                   "fig_ep_pct_fiches"),
+    "pct_budget": (lambda: fig_budget("pct", VERT), lambda: table_budget("pct"),
+                   (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_pct_budget"),
 }
 
 

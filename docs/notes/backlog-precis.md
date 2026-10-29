@@ -4326,6 +4326,40 @@ Ce qui reste :
   - grandeurs d'activité des fiches (achats et ventes de produits de base) citées, non versées dans
     une série ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Pharmacie centrale de Tunisie — section écrite le 30 octobre 2026** (`_offices.qmd`,
+  `#sec-ep-ge-pct`, en fin de chapitre ; intro, « La source » et TODO final du chapitre mis à jour).
+  Figures `fig-ep-pct-budget` et `fig-ep-pct-fiches`, tableaux repliés `tbl-ep-pct-fiche-a` et `-b`.
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-pct`, code `pct`) :
+  LF 2022 p. 91, LF 2024 p. 133, LF 2025 p. 109, lues à l'image (300 dpi) et retrouvées dans la couche
+  texte. Écart déclaré : 2022 (LF 2024), bilan +0,6. Subvention d'exploitation de 2020 : 29,7 (LF 2022),
+  case vide et 29,8 aux autres produits (LF 2024) ; charges financières nettes de signes opposés entre
+  éditions ; dits dans le texte et les légendes. Prose du rapport citée : LF 2022 p. 92, LF 2024 p. 134
+  (avance du Trésor de 199,1 MD pour les vaccins contre la Covid-19), LF 2025 p. 110 (dettes des
+  structures sanitaires prises en charge par l'État). Registre `tbl-ep-registre-pct`, lu au corpus local :
+  décret-loi n° 61-2 (image), décret n° 87-228 (image), lois n° 90-104 et 90-105 (image), décret
+  n° 91-555 (art. 1er à 13, image), arrêtés du 25 octobre 1994, du 4 septembre 1995 et du 25 novembre
+  2020 (monopole d'importation), loi n° 2005-75 (vaccins, couche décalée, image), lois de finances pour
+  2022 (art. 62), 2025 (art. 34, édition arabe) et 2026 (art. 79, édition arabe). Glossaire :
+  `pharmacie-centrale`.
+  **Reste** :
+  - **renvoi au volume « La santé »** : aucun chapitre ne traite des médicaments ni des achats de la
+    Pharmacie centrale au 30 octobre 2026 ; TODO (rédacteur) laissé en tête de section ;
+  - 192 MD de la loi de finances complémentaire pour 2021 (décret-loi n° 2021-3, JORT n° 105 de 2021,
+    **sans couche texte, OCR à faire**) et 200 MD par an des lois de finances pour 2022 et 2023 : texte et
+    ligne budgétaire **non identifiés** ; prêt du Fonds arabe de 26 MD (2022) : ratification non
+    identifiée ;
+  - subventions d'équipement « au profit de la pharmacie centrale » des lois de finances pour 2018 et
+    2019 (repérées dans le miroir iort, **lisibles au corpus**, non lues) face à des transferts nuls dans
+    le rapport : à rapprocher ;
+  - arrêté du 25 novembre 2020 : annexe (p. 2866-2867) **lisible au corpus**, non lue ; décret
+    n° 91-555 : suite au-delà de l'article 13 non repérée ;
+  - textes **dans le corpus local, non lus** : décret et arrêté du 31 mars 1956, lois n° 58-28 et 58-29,
+    arrêté du 18 mars 1958, décret n° 58-149, loi n° 61-24 (ratification), arrêtés de 1963, 1969 et 1981,
+    décrets n° 72-233, 76-732, 99-1886, arrêtés de 1977, 1991 (commission d'achat), 2000 et 2020
+    (conservation des documents), décret gouvernemental n° 2019-1013 ;
+  - volume des ventes (édition française LF 2020, p. 119) non versé ; comptes publiés de
+    l'établissement : **à obtenir**.
 - **Agence foncière industrielle — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-afi`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
   `fig-ep-afi-budget` et `fig-ep-afi-fiches`, tableaux repliés `tbl-ep-afi-fiche-a` et `-b`.

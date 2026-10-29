@@ -467,6 +467,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation financière | التعديل المالي |  |
 | Période d'essai | فترة التجربة |  |
 | Perte sèche | الخسارة الصافية في الرفاه |  |
+| Pharmacie centrale de Tunisie | الصيدلية المركزية للبلاد التونسية | PCT |
 | Plus-value de cession de titres | القيمة الزائدة المتأتية من التفويت في السندات |  |
 | Plus-value immobilière | القيمة الزائدة العقارية |  |
 | Plus-value nominale | القيمة الزائدة الاسمية |  |
