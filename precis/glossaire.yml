@@ -18624,3 +18624,118 @@ entries:
         البريدي وتُسدي الخدمات المالية لصندوق الادخار القومي التونسي والحسابات الجارية
         البريدية.
       synonymes: [البريد التونسي]
+  - id: attt
+    acronyme: ATTT
+    statut: valide
+    references: [loi95-61-attt, decret98-1375-attt, loi98-108-attt, minfin-ep-2025]
+    source_definition: {ref: loi98-108-attt, locator: "art. 1er et 4"}
+    # AR : intitulé « الوكالة الفنية للنقل البري » de la fiche de l'agence dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 59.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 59"}
+    voir_aussi: []
+    fr:
+      terme: Agence technique des transports terrestres
+      definition: >
+        Établissement public à caractère industriel et commercial, sous la tutelle du
+        ministère chargé du transport, créé en 1995 pour la visite technique des véhicules et
+        renommé en 1998. Il est chargé des formalités et des opérations techniques relatives
+        aux véhicules, des permis de conduire et des gares routières, et perçoit à son profit
+        les redevances de ces prestations.
+      synonymes: [agence de visite technique des véhicules]
+    ar:
+      terme: الوكالة الفنية للنقل البري
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية تحت إشراف الوزارة المكلّفة بالنقل، أُحدثت سنة
+        1995 للفحص الفني للعربات وتغيّرت تسميتها سنة 1998. تتولّى الإجراءات والعمليات الفنية
+        المتعلقة بالعربات ورخص السياقة والمحطات البرية، وتستخلص لفائدتها المعاليم المتعلقة
+        بهذه الخدمات.
+  - id: oaca
+    acronyme: OACA
+    statut: valide
+    references: [loi70-30-oaca, decret98-1374-oaca, loi98-110-oaca, minfin-ep-2025]
+    source_definition: {ref: loi98-110-oaca, locator: "art. 1er à 4"}
+    # AR : intitulé « ديوان الطيران المدني والمطارات » de la fiche de l'Office dans le rapport
+    # sur les entreprises publiques, édition LF 2025, p. 59.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 59"}
+    voir_aussi: [tunisair]
+    fr:
+      terme: Office de l'aviation civile et des aéroports
+      definition: >
+        Établissement public à caractère industriel et commercial, créé en 1970 sous le nom
+        d'Office des ports aériens de Tunisie et renommé en 1998. Il exploite les aéroports,
+        assure le contrôle de la navigation aérienne et perçoit à son profit les redevances
+        de ses prestations.
+      synonymes: [Office des ports aériens de Tunisie]
+    ar:
+      terme: ديوان الطيران المدني والمطارات
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1970 وغُيّرت تسميتها سنة 1998.
+        تتولّى استغلال المطارات ومراقبة الملاحة الجوية، وتستخلص لفائدتها المعاليم المتعلقة
+        بالخدمات التي تسديها.
+
+  - id: ommp
+    acronyme: OMMP
+    statut: valide
+    references: [loi65-2-ommp, decret98-1385-ommp, loi98-109-ommp, minfin-ep-2025]
+    source_definition: {ref: loi98-109-ommp, locator: "art. 1er"}
+    # AR : intitulé « ديوان البحرية التجارية والموانئ » de la fiche de l'Office dans le rapport
+    # sur les entreprises publiques, édition LF 2025, p. 58.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 58"}
+    voir_aussi: [tunisair]
+    fr:
+      terme: Office de la marine marchande et des ports
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1965 sous le nom
+        d'Office des ports nationaux et renommé en 1998. Il exerce les attributions de
+        l'autorité maritime et de l'autorité portuaire, assure la police portuaire et exploite
+        les ports maritimes de commerce.
+      synonymes: [Office des ports nationaux]
+    ar:
+      terme: ديوان البحرية التجارية والموانئ
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1965 وتغيّرت تسميتها سنة 1998.
+        تمارس صلاحيات السلطة البحرية والسلطة المينائية، وتتولّى
+        الشرطة المينائية واستغلال الموانئ البحرية التجارية.
+  - id: ctn
+    acronyme: CTN
+    statut: valide
+    references: [loi59-34-ctn, loi96-72-ctn, minfin-ep-2020, minfin-ep-2025]
+    source_definition: {ref: minfin-ep-2020, locator: "p. 64"}
+    # AR : intitulé « الشركة التونسية للملاحة » de la fiche de la société dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 57.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 57"}
+    voir_aussi: []
+    fr:
+      terme: Compagnie tunisienne de navigation
+      definition: >
+        Société anonyme créée en 1959, dont l'État détient la majorité du capital. Elle assure
+        des liaisons maritimes régulières de passagers et de véhicules entre la Tunisie et des
+        ports européens, et transporte des marchandises. L'État a souscrit à ses augmentations
+        de capital et garantit des emprunts qu'elle contracte pour acheter des navires.
+      synonymes: [CTN]
+    ar:
+      terme: الشركة التونسية للملاحة
+      definition: >
+        شركة خفية الاسم أُحدثت سنة 1959 وتملك الدولة أغلبية رأس مالها. تؤمّن خطوطا بحرية منتظمة
+        لنقل المسافرين والعربات بين تونس وموانئ أوروبية، وتنقل البضائع. واكتتبت الدولة في
+        الترفيع في رأس مالها وتضمن قروضا تبرمها لاقتناء سفن.
+  - id: srt
+    statut: valide
+    references: [loi89-74-srt, loi99-76-srt, loi2005-74-srt, minfin-ep-2025]
+    source_definition: {ref: loi89-74-srt, locator: "article unique"}
+    # AR : intitulés « الشركة الجهوية للنقل بولاية صفاقس » et « الشركة الجهوية للنقل ببنزرت »
+    # des fiches du rapport sur les entreprises publiques, édition LF 2025, p. 57 et 58.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 57-58"}
+    fr:
+      terme: société régionale de transport
+      definition: >
+        Entreprise publique de transport d'un gouvernorat ou d'une région, sous
+        la tutelle du ministère du Transport. L'État a abandonné ses créances sur ces sociétés
+        par des lois de 1989, 1999 et 2005.
+      synonymes: []
+    ar:
+      terme: الشركة الجهوية للنقل
+      definition: >
+        منشأة عمومية للنقل بولاية أو بجهة، تحت إشراف وزارة النقل. تخلّت الدولة عن
+        ديونها تجاه هذه الشركات بمقتضى قوانين صدرت سنوات 1989 و1999 و2005.
+      synonymes: []

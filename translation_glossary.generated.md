@@ -20,6 +20,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Adoul | عدل إشهاد |  |
 | Agence foncière d'habitation | الوكالة العقارية للسكنى | AFH |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
+| Agence technique des transports terrestres | الوكالة الفنية للنقل البري | ATTT |
 | Agence tunisienne de la formation professionnelle | الوكالة التونسية للتكوين المهني | ATFP |
 | Agent temporaire | العون الوقتي |  |
 | Agents des douanes | أعوان الديوانة |  |
@@ -126,6 +127,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
 | Commission régionale des bourses scolaires | اللجنة الجهوية للمنح المدرسية |  |
 | Compagnie des phosphates de Gafsa | شركة فسفاط قفصة | CPG |
+| Compagnie tunisienne de navigation | الشركة التونسية للملاحة | CTN |
 | Compensation des carburants | دعم المحروقات |  |
 | Compensation des prix | الدعم |  |
 | Compensation du transport | دعم النقل |  |
@@ -427,6 +429,8 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Niveau de rémunération | مستوى التأجير |  |
 | Nomenclature budgétaire | تبويب الميزانية |  |
 | Obligation scolaire | إجبارية التعليم الأساسي |  |
+| Office de l'aviation civile et des aéroports | ديوان الطيران المدني والمطارات | OACA |
+| Office de la marine marchande et des ports | ديوان البحرية التجارية والموانئ | OMMP |
 | Office des céréales | ديوان الحبوب |  |
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |
@@ -602,6 +606,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Société des transports de Tunis | شركة النقل بتونس | Transtu |
 | Société nationale d'exploitation et de distribution des eaux | الشركة الوطنية لاستغلال وتوزيع المياه | SONEDE |
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
+| société régionale de transport | الشركة الجهوية للنقل |  |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
 | Solde (militaire) | أجور العسكريين |  |

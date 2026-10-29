@@ -3931,7 +3931,10 @@ Ce qui reste :
   avec l'édition arabe p. 1432 ; décret n° 2003-2407 ; loi n° 2005-73, image ; loi n° 2020-40 ;
   décret-loi n° 2023-13, édition arabe). Glossaire : `tunisie-autoroutes`, `transtu`.
   **Reste** :
-  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports, la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ;
+  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. L'ATTT y est ajoutée le 29 octobre 2026 (voir l'entrée ATTT). Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports, la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ;
+  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; la CTN et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ; l'Office de l'aviation civile et des aéroports a sa section depuis le 29 octobre 2026 (entrée ci-dessous) ;
+  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports et la CTN, au tableau du ministère du Transport, n'ont pas de fiche versée ; l'OMMP a la sienne depuis le 29 octobre 2026 (entrée suivante) ;
+  - **chapitre « Les transports » ouvert le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-transports`) : Tunisie Autoroutes, Transtu, SNCFT et Tunisair, déplacées de « Les autres entreprises » sans changement de texte ; ancres conservées. Reste dans « Les autres entreprises » : Tunisie Autoroutes relève du ministère de l'Équipement (dit dans « La source » du chapitre) ; l'Office de l'aviation civile et des aéroports et l'OMMP, au tableau du ministère du Transport, n'ont pas de fiche versée ; la CTN a sa section depuis le 29 octobre 2026 (ci-dessous) ;
   - Tunisie Autoroutes : acte de constitution (13 mai 1992 d'après le rapport LF 2020, p. 121) non
     identifié au JORT ; décrets de concession des autres sections (n° 2000-645, 2002-537,
     2004-1073, 2004-1074, 2016-256, 2019-661 à 2019-663) et de péage des autres sections (n° 97-1003,
@@ -3948,6 +3951,57 @@ Ce qui reste :
   - éditions françaises LF 2020 et LF 2021 : comptes des deux entreprises dans la prose, non
     versés ; grandeurs d'activité (voyageurs, trafic) non relevées ; comptes publiés des deux
     entreprises : **à obtenir**.
+- **Office de la marine marchande et des ports (OMMP) — section écrite le 29 octobre 2026**
+  (`_transports.qmd`, `#sec-ep-ge-ommp`, en fin de chapitre). Figure `fig-ep-ommp-fiches` (pas de
+  figure du budget : l'Office n'est dans aucun tableau des transferts par entreprise du rapport) ;
+  tableaux repliés `tbl-ep-ommp-fiche-a` et `-b`. **Fiche du ministère des Finances versée le
+  29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-ommp`, à fusionner avant la PR du précis) : LF 2022 p. 54 (tableau 25 du ministère
+  du Transport), LF 2024 p. 83, LF 2025 p. 58 ; lues à l'image et retrouvées dans la couche texte.
+  Dette imprimée « 0 » envers chaque créancier (LF 2022) ; bilan non imprimé de 2021 à 2023 (états
+  financiers non approuvés) ; écart imprimé déclaré (LF 2025, 2023, résultat d'exploitation −0,8).
+  Registre `tbl-ep-registre-ommp` : lois n° 65-2 (image, et son rectificatif), 72-5, 80-34, 83-76,
+  84-61 (image) ; décret n° 98-1385 ; loi n° 98-83 ; loi n° 98-109 (date de dépôt lue dans l'édition
+  arabe du même numéro) ; décret n° 2000-2407 (police décalée, décodée) ; décret-loi n° 2021-10 et
+  décret présidentiel n° 2021-248. `figures/grandes_entreprises.py` : `fig_fiche` fixe l'échelle du
+  panneau de la dette quand la dette totale imprimée est nulle chaque année. Glossaire : `ommp`.
+  **Reste** :
+  - loi n° 91-94 (prêt de la KfW, JORT n° 82 de 1991, **scanné, à lire à l'image**) ; tarifs et
+    redevances portuaires (décrets n° 70-588, 82-1386, 88-229, arrêtés de 1982 à 2007), statut du
+    personnel (décrets n° 73-383, 99-1731), affiliation à la CNR (décret n° 72-263), conseil
+    d'administration (décret n° 72-242), services concédables (décret n° 2002-135), organigramme
+    (décret n° 2004-1029), code des ports maritimes (loi n° 99-25), protocoles de 2014 : **dans le
+    corpus local, non lus** ;
+  - loi n° 80-34 : montant du prêt de la BIRD non imprimé ; date de l'accord (8 février dans
+    l'intitulé, 6 février dans l'article, à l'image) ; garantie de l'AFD datée du 3 juin 2021 par le
+    décret-loi et du 3 juin 2020 par le décret de ratification : **édition arabe à lire** ;
+  - part de l'État dans les bénéfices de l'Office par exercice (seul le cumul 2021-2023, 50 MD,
+    est versé) ; transferts éventuels du budget, à chercher dans l'annexe 8 ; grandeurs d'activité
+    (marchandises, passagers) non relevées ; éditions françaises LF 2020 et LF 2021 (prose) non
+    versées ; régime fiscal propre : aucun texte identifié par les intitulés.
+- **CTN — section écrite le 29 octobre 2026** (`_transports.qmd`, `#sec-ep-ge-ctn`, en fin de
+  chapitre). Figures `fig-ep-ctn-budget` et `fig-ep-ctn-fiches`, tableaux repliés
+  `tbl-ep-ctn-fiche-a` et `-b`, registre `tbl-ep-registre-ctn` (loi n° 59-34, image ; lois n° 75-29,
+  77-35, 78-29, 80-87, 83-75, 84-60, capital, image ; décret-loi n° 76-3 et loi n° 76-88, lois
+  n° 77-9 et 78-13, emprunts, image ; lois n° 96-72 et 98-27 (image), décret-loi n° 2011-74,
+  garanties ; arrêté du 4 avril 2017, redevances portuaires ; loi de finances pour 2024, art. 42,
+  édition arabe, suspension de TVA). Glossaire : `ctn`. **Fiche du ministère des Finances versée
+  le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-ctn`) : LF 2022 p. 54, LF 2024 p. 82, LF 2025 p. 57 ; bilan non imprimé pour
+  2021-2023 (comptes non approuvés) ; écart imprimé des produits de 2022 (LF 2024, 20,0) déclaré.
+  **Reste** :
+  - effectifs de l'édition LF 2022 (734 ; 698 ; 700) inférieurs d'environ 400 à ceux des autres
+    éditions : cause à établir ;
+  - capital de 126 MD (rapport LF 2020) pour 18,9 MD de souscriptions de l'État lues (1959-1984) :
+    augmentations postérieures à 1984 non identifiées dans jort_cache.db ; statuts de 1959 visés,
+    non publiés ;
+  - date d'effet de la loi n° 98-27 : mention de dépôt du JORT n° 30 de 1998 à relever dans
+    l'édition arabe ;
+  - textes **dans le corpus local, non lus** : décrets n° 95-2435, 99-2046, 99-2047, 2000-2903,
+    2002-1606, 2015-241, 2018-430 ; arrêtés de 1994, 1995, 2003, 2013 ;
+  - prorogation de l'art. 42 de la loi de finances pour 2024 au-delà de 2026 : à vérifier ;
+  - éditions françaises LF 2020 (p. 64-66) et LF 2021 : comptes dans la prose, non versés ;
+    grandeurs d'activité (passagers, remorques) non relevées ; comptes publiés : **à obtenir**.
 - **Tunisair et RNTA — sections écrites le 28 octobre 2026** (`_transports.qmd` pour Tunisair, `_offices.qmd` pour la RNTA`,
   `#sec-ep-ge-tunisair` et `#sec-ep-ge-rnta`, après l'ONAS et avant la SNCFT). La RNTA est la
   Régie nationale des **tabacs et des allumettes** (code `rnta` de toutes les séries, ministère des
@@ -3979,6 +4033,67 @@ Ce qui reste :
     (annexe 8, bloc du ministère des Finances) ;
   - grandeurs d'activité des fiches (passagers, marchandises ; ventes et production de tabac) non
     relevées ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés.
+- **Agence technique des transports terrestres (ATTT) — section écrite le 29 octobre 2026**
+  (`_transports.qmd`, `#sec-ep-ge-attt`, en fin de chapitre, après Tunisair). Figure
+  `fig-ep-attt-fiches` (pas de figure du budget : transferts nuls, LF 2022 p. 106, LF 2023 p. 201,
+  LF 2024 p. 155), tableaux repliés `tbl-ep-attt-fiche-a` et `-b`. **Fiche du ministère des
+  Finances versée le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-attt`, code `attt`) : LF 2022 p. 55, LF 2024 p. 85,
+  LF 2025 p. 59, lues à l'image (300 dpi) et retrouvées dans la couche texte. Écarts imprimés
+  déclarés : bilans de 2022 (LF 2024, −6,7 MD) et de 2023 (LF 2025, +5,6 MD) déséquilibrés ;
+  virgule arabe lue comme décimale (LF 2022). Lus sur les pages, sans série : contribution aux
+  ressources propres de l'État (LF 2022 p. 102, LF 2023 p. 197, LF 2024 p. 151), dettes et
+  créances croisées (LF 2023 p. 190 et 194, LF 2024 p. 142 et 146, LF 2025 p. 119 et 123).
+  Registre `tbl-ep-registre-attt` : loi n° 95-61, décret n° 98-1375, loi n° 98-108, décrets
+  n° 99-2048 (image des p. 1751-1752), 2000-166, 2000-2406, 2000-2782 et 2007-704 (fascicules
+  français ; couche texte à police décalée décodée pour 1999 et 2000). Glossaire : `attt`.
+  L'axe des montants des figures de fiches affiche une décimale pour une graduation non entière
+  (`_axe_md`), ce qui ne change que les petits montants.
+  **Reste** :
+  - date de dépôt du JORT n° 104 de 1998 (loi n° 98-108, et lois n° 98-109 et 98-110 du même
+    numéro) : **à lire à l'image** (absente de la couche texte et de la dernière page ;
+    édition arabe sans couche texte) ;
+  - ce que couvre la « contribution aux ressources propres de l'État » de l'agence (redevances,
+    impôts et taxes collectés pour l'État) : **non établi** ; nature des « autres produits »
+    d'exploitation, supérieurs aux recettes : états financiers de l'agence **à obtenir** ;
+  - régime fiscal après l'abrogation de l'article 9 de la loi n° 95-61, article 38 de la loi de
+    finances pour 1978 : **non lus** ; barème des redevances après 2007 : aucun modificatif
+    identifié par les intitulés, à chercher en plein texte ;
+  - textes **dans le corpus local, non lus** : décrets n° 95-2037, 97-789, 2000-148 et
+    modificatifs (2005-1497, 2007-705, 2007-4102, 2021-82), 2002-1672, 2004-2191, 2011-4625
+    (édition arabe) ; arrêtés du 8 juin 1999, du 7 septembre 2018 et du 27 mars 2023 ;
+  - grandeurs d'activité des fiches (visites techniques, examens du permis, immatriculations)
+    et ratio de couverture des charges (LF 2024 p. 165) non relevés.
+- **Office de l'aviation civile et des aéroports (OACA) — section écrite le 29 octobre 2026**
+  (`_transports.qmd`, `#sec-ep-ge-oaca`, en fin de chapitre, avant le commentaire de la SNCFT).
+  Figure `fig-ep-oaca-fiches` (pas de figure budget : transferts nuls de 2018 à 2022), tableaux
+  repliés `tbl-ep-oaca-fiche-a` et `-b`, registre `tbl-ep-registre-oaca`. **Fiche du ministère des
+  Finances versée le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-oaca`, code `oaca`) : LF 2022 p. 54 (tableau 25), LF 2024
+  p. 82, LF 2025 p. 59, lues à l'image (300 dpi) et retrouvées dans la couche texte. Écarts imprimés
+  déclarés : dette totale de l'édition LF 2022 supérieure à la somme des créanciers (17,2 ; 18,7 ;
+  29,2 MD) ; résultat d'exploitation 2020 à 0,9 près. Édition LF 2024 : subvention d'exploitation
+  en case blanche, deux signes « − » absents (résultat après modifications 2020, reportés 2022).
+  Registre : lois n° 70-30, 74-19, 77-11, 93-59 et 93-60 (image), décret n° 93-1154 (image, art. 1er
+  à 8 et 18 à 28), décret n° 98-1374, loi n° 98-110 (dépôt lu sur l'édition arabe), décrets
+  d'exonération des vols intérieurs n° 2001-1400, 2004-572, 2009-371, 2014-2235 et 2020-778, loi
+  n° 2004-41, décrets n° 2007-1216 et 2007-1316 (concession TAV), loi n° 2009-51. Glossaire :
+  `oaca`. Transferts (LF 2022 p. 106, LF 2024 p. 155), dividendes (LF 2025 p. 125-126), dettes
+  envers l'État (LF 2025 p. 118) : lus sur les pages.
+  **Reste** :
+  - **dans le corpus local, non lus** : loi n° 74-34 (rectificatif, image) ; loi n° 66-79 (Régie
+    des ports aériens) ; décrets n° 70-590, 72-264, 74-599, 99-1941, 2000-2926 ; décret n° 93-1154,
+    art. 9 à 17, et modificatifs n° 95-1326, 2008-101, 2021-81 ; exonérations propres à des
+    aéroports (décrets n° 97-230, 2000-947, 2002-3264, 2005-3239, 2008-3903, 2017-342, 2024-5) ;
+    décret n° 2004-1342 et avenants d'Enfidha (n° 2013-1328, 2020-556, 2020-557) ; décret
+    n° 2007-1686 ; code de l'aéronautique civile (loi n° 99-58) ;
+  - exonération des vols intérieurs après 2023, compensation éventuelle par l'État, régime fiscal
+    de l'Office (requête arabe à faire) : non établis ;
+  - grandeurs d'activité (passagers, mouvements d'avions, fret) non relevées ; éditions françaises
+    LF 2020 et LF 2021 : comptes dans la prose, non versés ; rapports annuels de l'Office : **à
+    obtenir** ;
+  - à trancher : `_annexe_liste.qmd` dit que les listes ne disent pas que l'OACA succède à l'Office
+    des ports aériens ; le décret n° 98-1374 le dit (changement de dénomination).
 - **Office national de l'huile — section écrite le 28 octobre 2026** (`_offices.qmd`,
   `#sec-ep-ge-onh`, après l'ONAS et avant la SNCFT, comme demandé ; l'intro du chapitre ne dit plus
   que les entreprises sont rangées dans l'ordre des transferts, l'ONH recevant plus que la SONEDE et
@@ -4107,6 +4222,40 @@ Ce qui reste :
     dettes et créances croisées (voir l'entrée CPG et GCT) ; grandeurs d'activité des fiches
     (abonnés, lignes) non relevées ; édition française LF 2021 (p. 130) non versée ;
   - comptes publiés et rapports annuels de la société : **à obtenir**.
+- **Sociétés régionales de transport de Sfax et de Bizerte — section écrite le 29 octobre 2026**
+  (`_transports.qmd`, `#sec-ep-ge-srt`, en fin de chapitre, avant le TODO de la SNCFT ; une
+  section, deux sous-sections `#sec-ep-ge-srt-sfax` et `#sec-ep-ge-srt-bizerte`). Figures
+  `fig-ep-srt-{sfax,bizerte}-budget` et `fig-ep-srt-{sfax,bizerte}-fiches`, tableaux repliés
+  `tbl-ep-srt-{sfax,bizerte}-fiche-a` et `-b`, tableau `tbl-ep-srt-abandons` (lois d'abandon de
+  créances de 1989, 1999 et 2005, en dinars), registres `tbl-ep-registre-srt` (les trois lois,
+  communes aux deux sociétés), `tbl-ep-registre-srt-sfax` (décret n° 60-68, décrets n° 63-154 à
+  63-158, arrêté du 24 avril 1969, loi n° 74-71, décret n° 2001-663, décret n° 2015-5) et
+  `tbl-ep-registre-srt-bizerte` (arrêté du 14 juillet 1973, décret n° 2015-6). Fascicules de 1960
+  à 1989 lus à l'image (sans couche texte) ; 1999, 2001 et 2005 dans la couche texte à police
+  décalée, décodée ; 2015 dans la couche texte. Loi n° 89-74 : les deuxième et troisième colonnes
+  du tableau sont en millimes (la somme redonne le total imprimé). **Fiches du ministère des
+  Finances versées le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-srt`) : LF 2022 p. 55 (les deux sociétés), LF 2024
+  p. 84 (Sfax) et 85 (Bizerte), LF 2025 p. 57 et 58. Écarts imprimés déclarés : dette totale de
+  l'édition LF 2022 qui ne vaut pas la somme des créanciers (Sfax +13,2 ; +16,3 ; +11,2 ; Bizerte
+  −6,4 ; −10,4) ; fonds propres 2020 de Sfax imprimés positifs en LF 2024 (96,4 ; bilan juste
+  avec le signe « − », ligne des variations de la page calculée sur +96,4) ; colonne des fonds
+  propres de Bizerte en LF 2024 (1,9 ; 1,4 ; 4,7) qui ne boucle pas ; autres produits de Bizerte
+  2020-2021 (LF 2024) qui comprennent la subvention. Glossaire : `srt`.
+  **Reste** :
+  - textes de création et statuts des deux sociétés (sociétés anonymes : statuts hors du
+    *Journal officiel*) : **à obtenir** ; société de Bizerte : aucun texte antérieur à 1973
+    relevé par les intitulés français de `jort_cache.db` ; intitulés arabes et fascicules de
+    1958-1973 à interroger ; société « de transport » de la commune de Sfax en 1960 : à
+    identifier ;
+  - part de l'État et des communes dans le capital aujourd'hui : **non établie** ;
+  - textes **dans le corpus local, non lus** : schéma et annexe du décret n° 2001-663 ; arrêtés du
+    25 novembre 2008 (Bizerte), du 19 août 2011 (Sfax) et du 11 octobre 2018 (calendriers de
+    conservation des documents) ; décrets de 1963 sur les autres sociétés régionales
+    (métadonnées seules) ;
+  - grandeurs d'activité des fiches (voyageurs, kilomètres) non relevées ; objet des transferts
+    du budget (compensation, subvention d'équilibre) à rapprocher du volume « La compensation »
+    et de l'annexe 8.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la

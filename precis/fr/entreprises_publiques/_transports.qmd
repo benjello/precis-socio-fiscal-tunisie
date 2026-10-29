@@ -1,10 +1,10 @@
 # Les transports {#sec-ep-transports .domicile-unique}
 
-Ce chapitre présente, une par une, les entreprises publiques de transport : Tunisie Autoroutes, qui exploite les autoroutes à péage, la Société des transports de Tunis (Transtu), la Société nationale des chemins de fer tunisiens (SNCFT) et Tunisair, avec, pour chacune, sa naissance et son statut, ses comptes, sa dette, sa subvention d'exploitation et son emploi. Ce que l'État paie pour les tarifs réduits du transport public est au volume « La compensation » ([le poste transport](../compensation/_transport.html)). Les transferts et les résultats de l'ensemble des entreprises sont au chapitre « Les grandes entreprises » (@sec-ep-lp-entreprises).
+Ce chapitre présente, une par une, les entreprises publiques de transport : Tunisie Autoroutes, qui exploite les autoroutes à péage, la Société des transports de Tunis (Transtu), la Société nationale des chemins de fer tunisiens (SNCFT), Tunisair, l'Agence technique des transports terrestres (ATTT), l'Office de l'aviation civile et des aéroports (OACA), qui exploite les aéroports, l'Office de la marine marchande et des ports (OMMP), qui exploite les ports maritimes de commerce, la Compagnie tunisienne de navigation (CTN) et les sociétés régionales de transport de Sfax et de Bizerte, avec, pour chacune, sa naissance et son statut, ses comptes, sa dette, sa subvention d'exploitation et son emploi. Ce que l'État paie pour les tarifs réduits du transport public est au volume « La compensation » ([le poste transport](../compensation/_transport.html)). Les transferts et les résultats de l'ensemble des entreprises sont au chapitre « Les grandes entreprises » (@sec-ep-lp-entreprises).
 
 ## La source {#sec-ep-transports-source}
 
-La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : pour chaque entreprise du chapitre, sa fiche, exercices 2018 à 2023, en trois éditions ; pour Tunisie Autoroutes, la Transtu et Tunisair, aussi les transferts du budget, les classements des résultats et les effectifs des éditions LF 2020 à LF 2025, et les dettes et créances croisées avec l'État de l'édition LF 2025. Les tableaux du ministère du Transport portent la Transtu, la SNCFT et Tunisair ; Tunisie Autoroutes relève du ministère de l'Équipement. Le dernier exercice de chaque édition y est le plus souvent provisoire, estimé ou probable, et l'édition suivante le révise souvent. Pour Tunisair, les éditions LF 2024 et LF 2025 n'impriment aucun bilan, et ses fiches ne disent réalisé aucun exercice. Pour la Transtu, l'édition LF 2024 n'imprime que le bilan de 2020, et l'édition LF 2025, du bilan, que les résultats reportés ; un second rapport du ministère des Finances annexé au projet de loi de finances, le rapport sur les transferts et les garanties, donne aussi ses transferts du budget par nature, et ses totaux ne concordent pas toujours avec ceux du rapport sur les entreprises publiques. Ce que l'État paie à la place de ces entreprises au titre de leur dette garantie vient d'une autre source, les rapports de la Cour des comptes sur la clôture du budget, cités à part.
+La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : pour chaque entreprise du chapitre, sa fiche, exercices 2018 à 2023, en trois éditions ; pour Tunisie Autoroutes, la Transtu, Tunisair et la CTN, aussi les transferts du budget, les classements des résultats et les effectifs des éditions LF 2020 à LF 2025, et les dettes et créances croisées avec l'État de l'édition LF 2025. Pour l'ATTT, le rapport donne aussi les transferts du budget, nuls, sa contribution aux ressources propres de l'État et ses dettes et créances envers l'État. Pour l'OACA, la source donne aussi les tableaux des transferts du budget des éditions LF 2022 et LF 2024, le classement des résultats et la part de l'État dans les bénéfices de l'édition LF 2025, et ses dettes envers l'État fin 2023. Pour l'OMMP, elle donne aussi les classements des résultats des éditions LF 2021 à LF 2025 et la part de l'État dans ses bénéfices de l'édition LF 2025. Pour les sociétés régionales de transport de Sfax et de Bizerte, elle donne aussi les transferts du budget des éditions LF 2022 à LF 2024 et les effectifs. Les tableaux du ministère du Transport portent la Transtu, la SNCFT, Tunisair, l'ATTT, l'OACA, l'OMMP, la CTN et les sociétés régionales de transport ; Tunisie Autoroutes relève du ministère de l'Équipement. Le dernier exercice de chaque édition y est le plus souvent provisoire, estimé ou probable, et l'édition suivante le révise souvent. Pour Tunisair, les éditions LF 2024 et LF 2025 n'impriment aucun bilan, et ses fiches ne disent réalisé aucun exercice ; pour l'OMMP, elles n'impriment que le bilan de 2020, et pour la CTN, que ceux de 2020 et de 2021. Pour la Transtu, l'édition LF 2024 n'imprime que le bilan de 2020, et l'édition LF 2025, du bilan, que les résultats reportés ; un second rapport du ministère des Finances annexé au projet de loi de finances, le rapport sur les transferts et les garanties, donne aussi ses transferts du budget par nature, et ses totaux ne concordent pas toujours avec ceux du rapport sur les entreprises publiques. Ce que l'État paie à la place de ces entreprises au titre de leur dette garantie vient d'une autre source, les rapports de la Cour des comptes sur la clôture du budget, cités à part.
 
 ## Tunisie Autoroutes {#sec-ep-ge-autoroutes}
 
@@ -386,5 +386,588 @@ ge.tableau_fiche_detail("tunisair", ("LF2024", "LF2025"),
 ::::
 
 <!-- TODO (documentaliste) : fiche de Tunisair des éditions LF 2022 (p. 54), LF 2024 (p. 81) et LF 2025 (p. 56) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (28 octobre 2026, branche donnees/fiches-tunisair-rnta). Grandeurs d'activité non relevées : passagers et marchandises transportés. Dates d'effet des lois n° 94-48, 94-49 et 95-107 : la mention de dépôt au gouvernorat de Tunis n'est pas dans la couche texte des JORT n° 38 et 104 de 1994 et 1995 ni sur leur dernière page ; à relever à l'image, puis ajouter cinq jours (loi n° 93-64). Textes non lus : décret du 18 juillet 1957 autorisant l'État à acquérir des actions de la société d'économie mixte Tunis-air (JORT n° 59 de 1957, p. 885 ; fascicule absent du corpus local, à obtenir) ; statuts de la société, part de l'État dans le capital, introduction en bourse ; lois de garantie de 1971 à 1992 (décret-loi n° 71-2 et loi n° 71-50, lois n° 76-79, 77-32, 80-17, 81-44, décret-loi n° 81-25 et loi n° 81-98, loi n° 90-64, décrets-lois n° 92-1 et 92-3 et lois n° 92-99, 92-100 et 92-108 ; corpus local, fascicules scannés pour la plupart) ; décret n° 2002-3008 (ratification de la garantie de 2002) ; décrets n° 2015-154 à 2015-156 (édition arabe, JORT n° 68 de 2015) ; décret n° 99-2743 (statut du personnel au sol) ; décret n° 71-117 (marchés). Tunisair Express : textes de création et de rattachement, non identifiés dans jort_cache.db par les intitulés français et arabes interrogés. Rapports annuels et états financiers publiés par la société, rapport de la Cour des comptes sur la flotte (2018, au catalogue) : à exploiter. Ce que l'État paie à la place de Tunisair au titre de sa dette garantie : à chercher dans les rapports de la Cour des comptes sur la clôture du budget. -->
+
+## L'Agence technique des transports terrestres (ATTT) {#sec-ep-ge-attt}
+
+L'inscription de l'agence, en 1999, sur la liste des établissements publics considérés comme entreprises publiques est au chapitre « La liste des entreprises publiques » (@sec-ep-liste).
+
+**L'[Agence technique des transports terrestres](#g-attt), établissement public à caractère industriel et commercial créé en 1995 pour la visite technique des véhicules, chargé depuis 1998 aussi de leur immatriculation et des permis de conduire, vit des redevances de ses prestations : le budget ne lui verse rien de 2018 à 2022, elle n'a pas de subvention d'exploitation et presque pas de dette, et ses versements aux ressources propres de l'État, tels que le rapport du ministère des Finances les classe, vont de 95,6 à 115,3 MD par an de 2019 à 2022.**
+
+```{python}
+#| label: fig-ep-attt-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "attt_fiches",
+    caption=("Agence technique des transports terrestres d'après le rapport sur les entreprises "
+             "publiques, exercices 2018-2023, en millions de dinars courants et en agents : chaque "
+             "exercice dans la dernière édition qui le donne ; dette par créancier de l'édition "
+             "LF 2022. Source : ministère des Finances [@minfin-ep-2022, p. 55 ; @minfin-ep-2024, "
+             "p. 85 ; @minfin-ep-2025, p. 59]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2023 est "
+        "provisoire (hachures). La subvention d'exploitation est nulle (« 0 » imprimé) dans les "
+        "trois éditions. La dette par créancier de l'édition LF 2022 est nulle fin 2018 et fin "
+        "2020, et de 0,81 MD fin 2019, envers des entreprises publiques. Les « autres produits » "
+        "d'exploitation imprimés dépassent les recettes chaque année de 2020 à 2023 (97,1 contre "
+        "69,8 MD en 2021) ; la fiche n'en donne pas le détail. Le bilan de 2023 (édition LF 2025, "
+        "provisoire) ne s'équilibre pas : 86,6 MD d'actifs pour 47,0 MD de passifs et 34,0 MD de "
+        "fonds propres. Les charges financières nettes de 2021 et 2022 sont de signe opposé d'une "
+        "édition à l'autre (0,3 et 0,2 MD dans l'édition LF 2024, −0,3 et −0,2 MD dans l'édition "
+        "LF 2025). Le résultat net tracé est celui d'avant modifications comptables, égal à celui "
+        "d'après chaque année. Toutes les valeurs imprimées, édition par édition, sont dans les "
+        "tableaux repliés."),
+)
+```
+
+- **Ce que la loi lui confie.** [La loi de 1995](#r-ep-attt-1995) crée l'agence de visite technique des véhicules, établissement public à caractère industriel et commercial doté de la personnalité civile et de l'autonomie financière, régi par la législation commerciale et placé sous la tutelle du ministère chargé du transport. Elle procède à la visite technique des véhicules et délivre les certificats ; elle reçoit en pleine propriété les biens de l'État nécessaires à sa mission et intègre le personnel du ministère affecté aux centres de visite technique. Son personnel relève alors du statut général du personnel de l'État, des collectivités locales et des établissements publics à caractère administratif, et « le régime fiscal des entreprises publiques à caractère administratif » lui est applicable. [En juin 1998](#r-ep-attt-1998-nom), elle devient l'Agence technique des transports terrestres. [La loi de décembre 1998](#r-ep-attt-1998-loi) la charge des formalités et des opérations techniques relatives aux véhicules, des formalités et des opérations relatives aux permis de conduire, et de la création et de l'exploitation des gares routières ; elle y intègre les agents du ministère du Transport chargés de ces missions et abroge les deux articles de la loi de 1995 sur le statut du personnel et sur le régime fiscal. L'agence peut concéder certains services, jamais ceux du permis de conduire ; [depuis 2000](#r-ep-attt-2000-concession), l'exploitation des gares routières peut l'être.
+- **Une tutelle du ministère du Transport.** [Depuis novembre 2000](#r-ep-attt-2000-organisation), l'agence est dirigée par un président-directeur général désigné par décret, qui préside son conseil d'administration. Elle tient une comptabilité commerciale. Le ministre du Transport approuve son budget prévisionnel et ses états financiers, et signe avec elle un contrat-programme ; un contrôleur d'État siège au conseil avec voix consultative.
+- **Des redevances fixées par décret.** L'agence perçoit à son profit les redevances de ses prestations, fixées par décret ([loi de 1998](#r-ep-attt-1998-loi), art. 4). [En 1999](#r-ep-attt-1999), un décret les fixe, taxe sur la valeur ajoutée comprise : 12 dinars pour la visite technique d'une voiture particulière ou d'un motocycle, 18 dinars pour les autres véhicules ; 21 dinars pour l'immatriculation d'une voiture jusqu'à 5 CV, plus 2 dinars par cheval au-dessus ; 12 dinars pour chaque examen, théorique ou pratique, du permis de conduire, et 12,480 dinars pour sa délivrance. [En 2000](#r-ep-attt-2000-redevances), les frais de déplacement d'une identification hors des centres sont réduits de moitié pour les taxis, les louages et le transport rural ; [en 2007](#r-ep-attt-2007), les véhicules soumis à la visite technique tous les trois mois paient la moitié de la redevance.
+- **Ce que le budget verse et ce qu'elle verse à l'État.** Les tableaux des transferts de l'État aux entreprises publiques donnent 0 pour l'agence de 2018 à 2020 [@minfin-ep-2022, p. 106], de 2019 à 2021 [@minfin-ep-2023, p. 201] et de 2020 à 2022 [@minfin-ep-2024, p. 155]. Sa contribution aux ressources propres de l'État, telle que le rapport la classe, est de 102,8 MD en 2018 et en 2019 et de 95,4 MD en 2020, chiffre provisoire [@minfin-ep-2022, p. 102] ; l'édition suivante donne 102,9 MD pour 2019, 95,6 MD pour 2020 et 115,3 MD pour 2021, chiffre provisoire [@minfin-ep-2023, p. 197], et l'édition LF 2024 garde 95,6 et 115,3 MD et donne 109,1 MD pour 2022, chiffre provisoire [@minfin-ep-2024, p. 151].
+- **Des dettes envers l'État plus fortes que ses créances sur lui.** L'agence déclare devoir à l'État 13,4 MD fin 2021, 15,5 MD fin 2022 et 12,7 MD fin 2023, et détenir sur lui des créances de 3,3 MD, 5,2 MD et 5,3 MD [@minfin-ep-2023, p. 190 et 194 ; @minfin-ep-2024, p. 142 et 146 ; @minfin-ep-2025, p. 119 et 123].
+- **Des comptes proches de l'équilibre, un effectif qui baisse.** Les produits d'exploitation sont de 146,1 MD en 2018, 144,6 MD en 2019 et 134,6 MD en 2020, puis de 166,9 MD en 2021, 160,1 MD en 2022 et 168,5 MD en 2023, chiffre provisoire. Le résultat net va de +2,5 MD en 2018 à −10,2 MD en 2020 ; il est à peu près nul en 2021, de −5,4 MD en 2022 et de −0,8 MD en 2023, chiffre provisoire. Les fonds propres passent de 51,3 MD fin 2018 à 37,9 MD fin 2020, 40,8 MD fin 2022 et 34,0 MD fin 2023. L'effectif baisse de 1 640 agents en 2018 à 1 515 en 2022 et 1 431 en 2023, chiffre provisoire ; les charges de personnel passent de 45,8 MD à 55,5 MD, soit 31 % puis 33 % des produits d'exploitation (@fig-ep-attt-fiches, @tbl-ep-effectifs-entreprises).
+- **Des éditions qui ne concordent pas tout à fait.** Les comptes de 2022, provisoires dans l'édition LF 2024 et réalisés dans l'édition LF 2025, passent d'un total des actifs de 73,0 à 85,1 MD, de fonds propres de 34,6 à 40,8 MD et d'un résultat net de −3,4 à −5,4 MD ; dans l'édition LF 2024, le bilan de 2022 ne s'équilibre pas (73,0 MD d'actifs pour 45,1 MD de passifs et 34,6 MD de fonds propres). Pour 2020, l'édition LF 2022 (provisoire) donne un résultat net de −9,3 MD, l'édition LF 2024 (réalisé) −10,2 MD.
+
+:::: {.chronologie-repliable titre="Agence technique des transports terrestres : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, effectif), et textes de création, de statut, d'organisation et de redevances, 1995-2007"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("attt", ("LF2022",),
+    caption=("Agence technique des transports terrestres, édition LF 2022 : dette par créancier, "
+             "fonds propres, investissements, résultat et emploi, exercices 2018-2020 ; 2020 "
+             "marqué « * » (provisoire). Les fonds propres de 2018 et 2019 sont imprimés avec la "
+             "virgule arabe, les produits d'exploitation de 2020 avec un point. Source : "
+             "ministère des Finances [@minfin-ep-2022, p. 55]"),
+    tbl_id="tbl-ep-attt-fiche-a")
+ge.tableau_fiche_detail("attt", ("LF2024", "LF2025"),
+    caption=("Agence technique des transports terrestres, éditions LF 2024 et LF 2025 : bilan et "
+             "résultat, exercices 2020-2023. 2021 et 2022 sont provisoires dans l'édition LF 2024 "
+             "et réalisés dans l'édition LF 2025 ; 2023 est provisoire. Le bilan de 2022 (LF 2024) "
+             "et celui de 2023 (LF 2025) ne s'équilibrent pas. Source : ministère des Finances "
+             "[@minfin-ep-2024, p. 85 ; @minfin-ep-2025, p. 59]"),
+    tbl_id="tbl-ep-attt-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-attt-1995}[19 juillet 1995]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 14 juillet 1995, plus cinq jours, jour du dépôt non compté ; [1^er^ janvier 1996]{.insecable}, date dite par la loi, pour l'abrogation de l'article 38 de la loi de finances pour 1978 (art. 11) | loi n° 95-61 du 3 juillet 1995 [@loi95-61-attt, art. 1^er^ à 11, p. 1484-1485] | création de l'agence de visite technique des véhicules, établissement public à caractère industriel et commercial doté de la personnalité civile et de l'autonomie financière, régi par la législation commerciale, sous la tutelle du ministère chargé du transport (art. 1^er^) ; mission : visite technique des véhicules (art. 2), délivrance des certificats (art. 4) ; transfert en pleine propriété des biens de l'État nécessaires (art. 5) ; intégration du personnel du ministère affecté aux centres de visite technique (art. 6) ; personnel régi par la loi n° 83-112, statut général du personnel de l'État et des établissements publics à caractère administratif (art. 7) ; recettes : droits de visite technique, emprunts, ventes de biens, excédents placés, dons, legs et subventions (art. 8) ; régime fiscal des entreprises publiques à caractère administratif (art. 9) ; abrogation de l'article 38 de la loi n° 77-81 à partir du 1^er^ janvier 1996 (art. 11) | rupture |
+| []{#r-ep-attt-1998-nom}[16 juillet 1998]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 11 juillet 1998, plus cinq jours, jour du dépôt non compté | décret n° 98-1375 du 30 juin 1998 [@decret98-1375-attt, art. 1^er^, p. 1444] | dénomination « agence de visite technique des véhicules » → « agence technique des transports terrestres » | ajustement |
+| []{#r-ep-attt-1998-loi}*Journal officiel* des [29-31 décembre 1998]{.insecable}, exécutoire cinq jours après son dépôt au gouvernorat de Tunis | loi n° 98-108 du 28 décembre 1998 [@loi98-108-attt, art. 1^er^ à 6, p. 2499] | missions : formalités et opérations techniques relatives aux véhicules, formalités et opérations relatives aux permis de conduire, création, aménagement, entretien, équipement et exploitation des gares routières dont la liste est fixée par arrêté (art. 1^er^) ; concession de biens et de services possible, sauf pour le permis de conduire (art. 2) ; transfert des biens du domaine privé de l'État nécessaires (art. 3) ; redevances des prestations perçues à son profit, fixées par décret (art. 4) ; intégration des agents du ministère du Transport chargés de ces missions (art. 5) ; abrogation des articles 7 (statut du personnel) et 9 (régime fiscal) de la loi n° 95-61 (art. 6) | rupture |
+| []{#r-ep-attt-1999}[30 septembre 1999]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 25 septembre 1999, plus cinq jours, jour du dépôt non compté | décret n° 99-2048 du 13 septembre 1999 [@decret99-2048-attt, art. 1^er^, p. 1751-1752] | barème des redevances, taxe sur la valeur ajoutée comprise : visite technique 12 dinars (voitures particulières et motocycles), 18 dinars (autres véhicules) ; identification 6 dinars ; réception 41 dinars à titre isolé, 600 dinars par type ; immatriculation, réimmatriculation ou mutation d'une voiture 21 dinars jusqu'à 5 CV, plus 2 dinars par cheval au-dessus ; redevance additionnelle de première immatriculation dans une série tunisienne 35 dinars jusqu'à 5 CV, plus 3,500 dinars par cheval au-dessus ; examen d'enseignement de la conduite 60 dinars ; examen théorique ou pratique du permis 12 dinars, délivrance ou renouvellement 12,480 dinars, duplicata 24,480 dinars ; accès au quai des gares routières 50 millimes, accès d'un autocar 1 dinar | étape |
+| []{#r-ep-attt-2000-concession}[10 février 2000]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 5 février 2000, plus cinq jours, jour du dépôt non compté | décret n° 2000-166 du 24 janvier 2000 [@decret2000-166-attt, art. 1^er^, p. 350] | service pouvant être concédé : l'exploitation des gares routières | ajustement |
+| []{#r-ep-attt-2000-organisation}[4 novembre 2000]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 30 octobre 2000, plus cinq jours, jour du dépôt non compté | décret n° 2000-2406 du 17 octobre 2000 [@decret2000-2406-attt, art. 1^er^, 9 à 13, 16 et 17, p. 2607-2610] | conseil d'administration présidé par un président-directeur général désigné par décret (art. 1^er^) ; comptabilité commerciale, exercice de l'année civile (art. 9) ; approbation par le ministère du Transport des contrats-programmes, budgets prévisionnels, états financiers, statut du personnel, régime de rémunération et organigramme (art. 10) ; contrat-programme signé par le ministre du Transport (art. 11) ; budget prévisionnel et états financiers approuvés par décision du ministre (art. 12 et 13) ; contrôleur d'État, avec voix consultative au conseil (art. 16) | étape |
+| []{#r-ep-attt-2000-redevances}[4 décembre 2000]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 29 novembre 2000, plus cinq jours, jour du dépôt non compté | décret n° 2000-2782 du 20 novembre 2000 [@decret2000-2782-attt, art. 1^er^, p. 2999] | ajout au paragraphe B de l'article 1^er^ du décret n° 99-2048 : redevances supplémentaires de transport et d'hébergement réduites de 50 % pour une identification hors des centres nécessaire à l'autorisation de taxi, de louage ou de transport public rural | ajustement |
+| []{#r-ep-attt-2007}[9 avril 2007]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 4 avril 2007, plus cinq jours, jour du dépôt non compté | décret n° 2007-704 du 22 mars 2007 [@decret2007-704-attt, art. 1^er^, p. 1083-1084] | ajout au point 1-A de l'article 1^er^ du décret n° 99-2048 : véhicules dont la visite technique est trimestrielle assujettis à la moitié de la redevance | ajustement |
+
+: Les textes de l'Agence technique des transports terrestres : création, statut, organisation et redevances {#tbl-ep-registre-attt}
+
+::::
+
+<!-- TODO (documentaliste) : fiche de l'Agence technique des transports terrestres des éditions LF 2022 (p. 55), LF 2024 (p. 85) et LF 2025 (p. 59) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-attt) ; bilans de 2022 (LF 2024) et de 2023 (LF 2025) déséquilibrés, écarts déclarés. Lus sur les pages, sans série : transferts nuls (LF 2022 p. 106, LF 2023 p. 201, LF 2024 p. 155), contribution aux ressources propres de l'État (LF 2022 p. 102, LF 2023 p. 197, LF 2024 p. 151 ; dans l'édition LF 2025, aucune page ne nomme l'agence hors de la fiche, des pages d'analyse et des dettes et créances croisées) ; ce que couvre cette contribution (redevances, impôts et taxes collectés pour l'État ?) n'est pas dit par le rapport : à établir avant toute comparaison avec les produits de l'agence, dettes et créances croisées (LF 2023 p. 190 et 194, LF 2024 p. 142 et 146, LF 2025 p. 119 et 123) ; ratio de couverture des charges (LF 2024 p. 165) non relevé. Grandeurs d'activité non relevées : immatriculations, permis, visites techniques. « Autres produits » d'exploitation supérieurs aux recettes : nature à établir (états financiers de l'agence, à obtenir). Date de dépôt du JORT n° 104 de 1998 (loi n° 98-108) : absente de la couche texte et de la dernière page, édition arabe sans couche texte ; à lire à l'image, puis ajouter cinq jours. Article 38 de la loi de finances pour 1978 (loi n° 77-81), abrogé par la loi n° 95-61 : non lu. Régime fiscal de l'agence après l'abrogation de l'article 9 de la loi n° 95-61 : non établi. Barème des redevances en vigueur après le décret n° 2007-704 : aucun texte modificatif identifié par les intitulés de jort_cache.db ; à vérifier dans les lois de finances et le plein texte. Textes repérés, non lus : loi n° 95-60 (code de la route, visite technique) ; décret n° 95-2037 (organisation de l'agence de visite technique des véhicules) ; décret n° 97-789 (techniciens) ; décret n° 2000-148 (périodicité de la visite technique) et ses modificatifs n° 2005-1497, 2007-705, 2007-4102, 2021-82 ; décret n° 2002-1672 (statut particulier du personnel) ; décret n° 2004-2191 (organigramme) ; décret n° 2011-4625 (déclaration des biens, édition arabe) ; arrêtés du 8 juin 1999 (gares routières), du 7 septembre 2018 (conservation des documents) et du 27 mars 2023 (informations des services fiscaux et du recouvrement). Garanties de l'État, capital, contrat-programme : aucun texte repéré par les intitulés. -->
+
+## L'Office de l'aviation civile et des aéroports (OACA) {#sec-ep-ge-oaca}
+
+La reprise par l'État, en 2014, des dettes de Tunisair envers l'Office est exposée au chapitre « Restructurer » (@sec-ep-restr-transport) ; la compagnie, à la @sec-ep-ge-tunisair ; la part de l'État dans les bénéfices des entreprises, à la @sec-ep-dividendes-part ; les dettes et créances croisées de l'ensemble des entreprises, à la @sec-ep-croisees.
+
+**L'[Office de l'aviation civile et des aéroports](#g-oaca), créé en 1970 sous le nom d'Office des ports aériens de Tunisie, exploite les aéroports et assure le contrôle de la navigation aérienne et perçoit à son profit les redevances de ses prestations ; il ne reçoit rien du budget de 2018 à 2022 et n'a pas de subvention d'exploitation ; son résultat net, positif en 2018 et 2019, est négatif en 2020 et 2021 avec la chute du trafic, puis redevient positif en 2022 et 2023.**
+
+```{python}
+#| label: fig-ep-oaca-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "oaca_fiches",
+    caption=("Office de l'aviation civile et des aéroports d'après le rapport sur les "
+             "entreprises publiques, exercices 2018-2023, en millions de dinars courants et en "
+             "agents : chaque exercice dans la dernière édition qui le donne ; dette par "
+             "créancier de l'édition LF 2022. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 54 ; @minfin-ep-2024, p. 82 ; @minfin-ep-2025, p. 59]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; seul 2023, "
+        "provisoire, est hachuré. La subvention d'exploitation est imprimée « 0 » dans les "
+        "éditions LF 2022 et LF 2025 ; l'édition LF 2024 laisse la case blanche, d'où l'absence "
+        "de marque pour 2020. La dette totale n'est imprimée que par l'édition LF 2022, le total "
+        "des passifs que par les éditions LF 2024 et LF 2025 ; dans l'édition LF 2022, la dette "
+        "totale dépasse la somme des cinq créanciers (380,1 MD pour 362,9 MD fin 2018). Le "
+        "résultat net tracé est celui d'avant modifications comptables. Toutes les valeurs "
+        "imprimées, édition par édition, sont dans les tableaux repliés."),
+)
+```
+
+- **Ce que la loi lui confie.** [La loi de 1970](#r-ep-oaca-1970) crée l'Office des ports aériens de Tunisie, établissement public à caractère industriel et commercial, réputé commerçant et régi par la législation commerciale, sous la tutelle du ministère des Travaux publics et des Communications. Il aménage, exploite et développe les aéroports internationaux, assure le contrôle régional et local de la navigation aérienne et les services aux voyageurs, aux marchandises et au courrier ; l'État lui affecte en pleine propriété les biens des aérodromes, qui constituent avec l'actif de la Régie des ports aériens, liquidée, son capital initial ; il perçoit à son profit les redevances d'usage des aérodromes, dont un décret fixe les tarifs. [En 1977](#r-ep-oaca-1977), l'État souscrit en numéraire 1,6 MD à l'augmentation de son capital. [En 1998](#r-ep-oaca-1998-nom), un décret le renomme Office de l'aviation civile et des aéroports, sous la tutelle du ministre du Transport ; [la loi de 1998](#r-ep-oaca-1998) lui ajoute la délivrance des documents du personnel aéronautique et des aéronefs, les contrôles et les autorisations de vol, et lui permet de concéder l'exploitation de ses biens et de certains services, hors contrôle, autorisation et police aéroportuaire.
+- **Des aéroports concédés.** [En 2004](#r-ep-oaca-2004), la loi réserve à l'État la concession de la création et de l'exploitation d'un aéroport civil, par contrat approuvé par décret, et ne soustrait plus aux concessions que le contrôle de la navigation aérienne. [En 2007](#r-ep-oaca-2007-liste), un décret ouvre à la concession l'assistance au sol, le fret et la poste aériens et l'exploitation d'aéroports ou de parties d'aéroports ; [la même année](#r-ep-oaca-2007-tav), sont approuvés deux contrats signés le 18 mai 2007 avec la société TAV Tunisie : la création et l'exploitation du nouvel aéroport du Centre-Est, concédées par l'État, et l'exploitation de l'aéroport de Monastir, concédée par l'Office.
+- **Des redevances fixées par l'État, et une exonération des vols intérieurs depuis 1999.** Depuis [1993](#r-ep-oaca-1993-redevances), les redevances d'atterrissage, de balisage lumineux et d'usage des services de navigation aérienne sont fixées en ECU par tranche de poids de l'avion, en quatre barèmes croissants appliqués de la parution du décret au 1er avril 1995, avec des taux plus bas pour le trafic intérieur et une réduction de 25 % de la redevance d'atterrissage à Tozeur-Nefta et Tabarka. [Depuis le 1er janvier 1999](#r-ep-oaca-exoneration), les passagers et les avions des vols commerciaux intérieurs sont exonérés des redevances d'atterrissage, de balisage, de route, de stationnement, d'embarquement et de sûreté, par périodes de cinq ans renouvelées sans interruption jusqu'à la fin de 2023.
+- **Ce que le budget verse et ce qu'il reçoit.** Les tableaux des transferts de l'État aux entreprises publiques donnent 0 pour l'Office de 2018 à 2020 [@minfin-ep-2022, p. 106] et de 2020 à 2022 [@minfin-ep-2024, p. 155]. L'Office distribue à l'État 25 MD au titre de 2022 [@minfin-ep-2025, p. 125] ; au titre des exercices 2021 à 2023, la part de l'État dans ses bénéfices est de 45,0 MD, 8,2 % des 545,6 MD que l'État reçoit de l'ensemble des entreprises [@minfin-ep-2025, p. 126]. Fin 2023, l'Office déclare 473,6 MD de dettes envers l'État, sixième montant des entreprises [@minfin-ep-2025, p. 118]. Dans l'édition LF 2022, l'État est déjà son premier créancier : 271,6 MD fin 2018, 341,0 MD fin 2019 et 326,0 MD fin 2020, sur une dette totale de 380,1 à 497,0 MD. De 1993 à 2009, la loi approuve trois garanties de l'État à des emprunts pour la navigation aérienne : 3,4 millions de francs français pour le centre de navigation de Tunis-Carthage et 7,9 millions de dollars pour des radars de contrôle ([1993](#r-ep-oaca-1993-garanties)), puis 11,7 millions d'euros pour la couverture radar de l'espace aérien ([2009](#r-ep-oaca-2009)).
+- **Des pertes en 2020 et 2021, des bénéfices avant et après.** Les produits d'exploitation sont de 513,2 MD en 2018 et de 562,2 MD en 2019 ; ils tombent à 298,8 MD en 2020 et 339,7 MD en 2021, puis remontent à 667,7 MD en 2022 et 601,7 MD en 2023, chiffre provisoire ; les recettes en font l'essentiel (287,8 MD en 2020, 592,4 MD en 2023). Le résultat net est de 45,3 MD en 2018 et 30,2 MD en 2019, de −245,9 MD en 2020 et −173,4 MD en 2021, de 248,0 MD en 2022, troisième bénéfice des entreprises du classement de l'édition LF 2025 [@minfin-ep-2025, p. 20], et de 101,7 MD en 2023, chiffre provisoire. Les fonds propres passent de 515,9 MD fin 2018 à 85,7 MD fin 2021, puis remontent à 229,6 MD fin 2023. L'effectif baisse chaque année, de 3 870 agents en 2018 à 3 598 en 2023, tandis que les charges de personnel passent de 187,8 MD à 244,2 MD (@fig-ep-oaca-fiches, @tbl-ep-effectifs-entreprises).
+- **Des éditions qui ne concordent pas tout à fait.** Pour 2020, l'édition LF 2022 donne des produits d'exploitation de 304,1 MD et un résultat d'exploitation de −249,0 MD, l'édition LF 2024 298,8 MD et −270,5 MD. Pour 2022, provisoire dans l'édition LF 2024 et réalisé dans l'édition LF 2025, les produits passent de 542,1 à 667,7 MD, dont les autres produits de 52,3 à 212,2 MD, et le résultat net avant modifications comptables de 123,7 à 248,0 MD ; après modifications comptables, il est de 42,1 MD dans l'édition LF 2025. Les charges financières nettes de 2021 et 2022 sont imprimées avec des signes opposés d'une édition à l'autre (−5,4 et 5,4 MD pour 2021). L'édition LF 2024 imprime sans le signe « − » le résultat après modifications comptables de 2020 (245,9 MD, pour une perte de 245,9 MD avant modifications) et les résultats reportés de fin 2022 (417,5 MD) ; les variations imprimées sur la même page donnent une perte et des résultats reportés négatifs.
+
+:::: {.chronologie-repliable titre="Office de l'aviation civile et des aéroports : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, effectif), et textes de création, de capital, de statut, de concession, de redevances et de garantie, 1970-2020"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("oaca", ("LF2022",),
+    caption=("Office de l'aviation civile et des aéroports, édition LF 2022 : dette par "
+             "créancier, fonds propres, investissements, résultat et emploi, exercices "
+             "2018-2020 ; 2020 marqué « * » (provisoire). La dette totale dépasse la somme des "
+             "créanciers de 17,2 MD (2018), 18,7 MD (2019) et 29,2 MD (2020). Source : ministère "
+             "des Finances [@minfin-ep-2022, p. 54]"),
+    tbl_id="tbl-ep-oaca-fiche-a")
+ge.tableau_fiche_detail("oaca", ("LF2024", "LF2025"),
+    caption=("Office de l'aviation civile et des aéroports, éditions LF 2024 et LF 2025 : bilan "
+             "et résultat, exercices 2020-2023. L'édition LF 2024 laisse blanche la case de la "
+             "subvention d'exploitation et imprime sans signe « − » le résultat après "
+             "modifications comptables de 2020 et les résultats reportés de 2022, valeurs "
+             "reprises telles qu'imprimées. Source : ministère des Finances "
+             "[@minfin-ep-2024, p. 82 ; @minfin-ep-2025, p. 59]"),
+    tbl_id="tbl-ep-oaca-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-oaca-1970}entre le [5]{.insecable} et le [9 juillet 1970]{.insecable} : *Journal officiel* des 3-7 juillet 1970, exécutoire un jour franc après sa parution | loi n° 70-30 du 3 juillet 1970 [@loi70-30-oaca, art. 1^er^ à 27, p. 866-869] | création de l'Office des ports aériens de Tunisie, établissement public à caractère industriel et commercial, réputé commerçant, sous la tutelle du ministère des Travaux publics et des Communications (art. 1^er^) ; missions : aéroports internationaux, contrôle régional et local de la navigation aérienne, services aux voyageurs, aux marchandises et au courrier ; concessions possibles, sauf le contrôle de la navigation aérienne (art. 2) ; biens des aérodromes affectés en pleine propriété, liquidation de la Régie des ports aériens, dont l'actif net est apporté à l'Office : capital initial (art. 3) ; recettes : redevances, produits du domaine, subventions éventuelles de l'État (art. 14) ; emprunts autorisés par arrêté conjoint, garantie de l'État possible dans la limite du plafond de la loi de finances (art. 18 et 19) ; reprise des emprunts de l'État pour les ouvrages remis à l'Office (art. 20) ; redevances d'usage perçues à son profit, tarifs fixés par décret (art. 23) ; marchés hors législation des marchés publics (art. 24) ; abrogation de la loi n° 66-79 portant création de la Régie des ports aériens (art. 27) | mise en place |
+| []{#r-ep-oaca-1974}[16 mai 1974]{.insecable} : *Journal officiel* du 14 mai 1974, exécutoire un jour franc après sa parution | loi n° 74-19 du 11 mai 1974 [@loi74-19-oaca, article unique, p. 1004] | article 20 nouveau : l'Office n'est pas subrogé à l'État pour les emprunts contractés pour l'infrastructure non amortissable ; les emprunts à sa charge bénéficient de la garantie de l'État | ajustement |
+| []{#r-ep-oaca-1977}[10 mars 1977]{.insecable} : *Journal officiel* des 1^er^-4-8 mars 1977, dont la loi, signée le 7 mars, ne peut être que dans la partie du 8 mars ; exécutoire un jour franc après sa parution | loi n° 77-11 du 7 mars 1977 [@loi77-11-oaca, article unique, p. 514] | le ministre délégué auprès du Premier ministre chargé du Plan est autorisé à souscrire en numéraire, pour le compte de l'État, à l'augmentation du capital de l'Office à concurrence de 1 600 000 dinars | étape |
+| []{#r-ep-oaca-1993-redevances}date de parution du décret (*Journal officiel* des 28 mai-1^er^ juin 1993) pour le barème n° 1, puis 1^er^ novembre 1993, 1^er^ avril 1994 et 1^er^ avril 1995, dates dites par le décret (art. 18) | décret n° 93-1154 du 17 mai 1993 [@decret93-1154-oaca, art. 1^er^ à 8 et 18 à 28, p. 758-762] | redevance d'atterrissage à la tonne de poids maximal au décollage, en ECU, en quatre barèmes : trafic international, de 2,25 ECU (barème n° 1) à 12,0 ECU (barème n° 4) selon le poids ; trafic commercial intérieur, de 1,00 à 5,60 ECU ; réduction de 25 % aux aéroports de Tozeur-Nefta et de Tabarka (art. 2) ; exonérations (art. 3) ; redevance de balisage lumineux, de 12 à 24 ECU (art. 5) ; redevance de route, de 30 à 420 ECU (art. 7) ; calendrier des barèmes : n° 1 de la parution au 31 octobre 1993, n° 4 à partir du 1^er^ avril 1995 pour le transport régulier et national (art. 18) ; redevances fret (art. 19 à 23) ; redevances perçues par l'Office, facturées au cours de l'ECU, payées en dinars entre résidents (art. 25) ; redevances liées aux passagers incorporées au prix du billet (art. 28) | étape |
+| []{#r-ep-oaca-1993-garanties}[20 juin 1993]{.insecable} : *Journal officiel* du 18 juin 1993, exécutoire un jour franc après sa parution | lois n° 93-59 et 93-60 du 15 juin 1993 [@loi93-59-oaca, article unique, p. 843 ; @loi93-60-oaca, article unique, p. 843] | approbation de la convention d'ouverture de crédit du 25 septembre 1992 entre l'Office et l'État, garant, d'une part, l'Union des banques arabes et françaises et l'Union tunisienne de banques d'autre part, de 3 421 459 francs français, pour l'équipement du centre de navigation aérienne de l'aéroport de Tunis-Carthage ; approbation de la convention de financement du 5 février 1993 entre l'Office et l'État, garant, d'une part, l'Export-Import Bank des États-Unis d'autre part, de 7 898 892 dollars, pour des équipements radar de contrôle de la navigation aérienne | étape |
+| []{#r-ep-oaca-1998-nom}[16 juillet 1998]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 11 juillet 1998, plus cinq jours, jour du dépôt non compté | décret n° 98-1374 du 30 juin 1998 [@decret98-1374-oaca, art. 1^er^ et 2, p. 1444] | la dénomination « Office des ports aériens de Tunisie » est remplacée par « Office de l'aviation civile et des aéroports » (art. 1^er^) ; tutelle du ministre du Transport (art. 2) | étape |
+| []{#r-ep-oaca-1998}[5 janvier 1999]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 31 décembre 1998, d'après la mention de l'édition arabe, plus cinq jours, jour du dépôt non compté | loi n° 98-110 du 28 décembre 1998 [@loi98-110-oaca, art. 1^er^ à 7, p. 2500] | missions : exploitation, aménagement et développement des aéroports ; contrôle régional et local de la navigation aérienne ; délivrance des documents du personnel aéronautique, des aéronefs et de la navigation aérienne ; contrôles ; autorisations de vol et de survol (art. 1^er^) ; concession de l'exploitation de ses biens et de certains services, à caractère administratif, hors contrôle, autorisation et police aéroportuaire, liste des services fixée par décret (art. 2) ; transfert en pleine propriété des biens du domaine privé de l'État nécessaires à ses missions ; patrimoine faisant retour à l'État en cas de dissolution (art. 3) ; redevances de ses prestations perçues à son profit, fixées par décret (art. 4) ; intégration des agents du ministère du Transport chargés de ces missions (art. 6) | étape |
+| []{#r-ep-oaca-exoneration}[1^er^ janvier 1999]{.insecable}, puis 1^er^ janvier 2004, 2009, 2014 et 2019, dates dites par chaque décret (art. 1^er^) | décrets n° 2001-1400 du 7 juin 2001 [@decret2001-1400-oaca, art. 1^er^, p. 1459], 2004-572 du 9 mars 2004 [@decret2004-572-oaca, art. 1^er^, p. 671], 2009-371 du 9 février 2009 [@decret2009-371-oaca, art. 1^er^, p. 533-534], 2014-2235 du 16 juin 2014 [@decret2014-2235-oaca, art. 1^er^, p. 1631-1632] et décret gouvernemental n° 2020-778 du 7 octobre 2020 [@decret2020-778-oaca, art. 1^er^, p. 2284-2285] | exonération des passagers et des avions des vols commerciaux intérieurs du paiement des redevances d'aéroport et de services de navigation aérienne du décret n° 93-1154 (atterrissage, balisage lumineux, installations et services de route, stationnement, embarquement et sûreté), pendant cinq ans à partir du 1^er^ janvier 1999, puis renouvelée pour cinq ans à partir du 1^er^ janvier 2004, 2009, 2014 et 2019 | étape |
+| []{#r-ep-oaca-2004}[13 mai 2004]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 8 mai 2004, plus cinq jours, jour du dépôt non compté | loi n° 2004-41 du 3 mai 2004 [@loi2004-41-oaca, art. 1^er^ à 3, p. 1220] | article 2, alinéa 2, nouveau de la loi n° 98-110 : les concessions ne portent pas sur le contrôle de la navigation aérienne (avant : contrôle, autorisation et police aéroportuaire) (art. 1^er^) ; la concession de la création et de l'exploitation d'un aéroport civil est octroyée par l'État, par contrat approuvé par décret (art. 2) ; abrogation des quatrième et dernier tirets de l'article 1^er^ (contrôles, autorisations de vol) (art. 3) | étape |
+| []{#r-ep-oaca-2007-liste}[24 mai 2007]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 19 mai 2007, plus cinq jours, jour du dépôt non compté | décret n° 2007-1216 du 14 mai 2007 [@decret2007-1216-oaca, art. 1^er^ et 2, p. 1708-1709] | services de l'Office pouvant être concédés : assistance au sol aux avions et aux passagers, poste et fret aériens, exploitation des aéroports ouverts à la circulation aérienne publique ou de parties de ces aéroports (art. 1^er^) ; concession attribuée après accord des ministres du Transport, de l'Intérieur et des Finances (art. 2) | étape |
+| []{#r-ep-oaca-2007-tav}[11 juin 2007]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 6 juin 2007, plus cinq jours, jour du dépôt non compté | décret n° 2007-1316 du 28 mai 2007 [@decret2007-1316-oaca, art. 1^er^, p. 1909-1910] | approbation du contrat de concession et du cahier des charges de la création et de l'exploitation du nouvel aéroport du Centre-Est, signés le 18 mai 2007 par l'État et la société TAV Tunisie, et du contrat de concession et du cahier des charges de l'exploitation de l'aéroport de Monastir, signés le même jour par l'Office et la même société | rupture |
+| []{#r-ep-oaca-2009}[27 juillet 2009]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 22 juillet 2009, plus cinq jours, jour du dépôt non compté | loi n° 2009-51 du 20 juillet 2009 [@loi2009-51-oaca, article unique, p. 1969-1970] | approbation de la lettre de garantie de l'État à la convention de crédit conclue le 27 février 2009 entre l'Office et Banco Santander, de 11 744 329 euros au plus, pour la couverture par radar de l'espace aérien | étape |
+
+: Les textes de l'Office de l'aviation civile et des aéroports : création, capital, redevances, garanties, statut et concessions {#tbl-ep-registre-oaca}
+
+::::
+
+<!-- TODO (documentaliste) : fiche de l'OACA des éditions LF 2022 (p. 54, tableau 25), LF 2024 (p. 82) et LF 2025 (p. 59) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-oaca) ; écarts imprimés déclarés (dette totale de l'édition LF 2022 ; résultat d'exploitation 2020) ; deux signes « − » absents dans l'édition LF 2024. Grandeurs d'activité non relevées : passagers, mouvements d'avions, marchandises. Transferts nuls (LF 2022 p. 106, tableau 38 ; LF 2024 p. 155, tableau 45), dividendes (LF 2025 p. 125-126) et dettes envers l'État (LF 2025 p. 118) : lus sur les pages ou dans les séries, non versés pour les transferts. Éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés. Textes non lus : loi n° 74-34 (rectificatif de la loi n° 74-19, JORT n° 36 de 1974, p. 1107, image) ; loi n° 66-79, loi de finances pour 1967, création de la Régie des ports aériens ; décret n° 70-590 (marchés) ; décret n° 72-264 (affiliation du personnel à la CNRPS) ; décrets n° 74-599 et 99-1941 (statut du personnel) ; décrets n° 93-1154, art. 9 à 17 (redevances de stationnement, de passagers, de sûreté, météorologie), et ses modificatifs n° 95-1326, 2008-101, 2021-81 ; exonérations de redevances propres à des aéroports (décrets n° 97-230, 2000-947, 2002-3264, 2005-3239, 2008-3903, 2017-342, 2024-5) ; décret n° 2000-2926 (organisation administrative et financière) ; décret n° 2004-1342 (procédure de concession de l'aéroport du Centre-Est) ; avenants à la concession d'Enfidha (décrets n° 2013-1328, 2020-556 et 2020-557) ; décret n° 2007-1686 (expropriation pour l'aéroport) ; code de l'aéronautique civile (loi n° 99-58) ; organigrammes (décrets n° 2000-2910, 2009-3385, 2021-256). Renouvellement de l'exonération des vols intérieurs après 2023 : non établi ici. Régime fiscal propre à l'Office : aucun texte identifié par les intitulés français ; à chercher en arabe. Compensation par l'État des redevances exonérées : non établie. Rapports annuels et états financiers de l'Office : à obtenir. -->
+
+## L'Office de la marine marchande et des ports (OMMP) {#sec-ep-ge-ommp}
+
+Ce que l'Office verse à l'État au titre de sa part dans les bénéfices est exposé au chapitre « Les dividendes et les versements au budget » (@sec-ep-dividendes-part) ; les garanties de l'État et la dette garantie de l'ensemble des entreprises, au chapitre « Les garanties, les prêts et les arriérés » (@sec-ep-garanties).
+
+**L'[Office de la marine marchande et des ports](#g-ommp), établissement public créé en 1965 sous le nom d'Office des ports nationaux, exploite les ports maritimes de commerce et y exerce l'autorité portuaire ; sa fiche ne porte ni dette ni subvention d'exploitation de 2018 à 2020, et son résultat net est positif à chacun des exercices 2017 à 2023 dans les éditions LF 2021 à LF 2025 du rapport du ministère des Finances.**
+
+```{python}
+#| label: fig-ep-ommp-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "ommp_fiches",
+    caption=("Office de la marine marchande et des ports d'après le rapport sur les entreprises "
+             "publiques, exercices 2018-2023, en millions de dinars courants et en agents : "
+             "chaque exercice dans la dernière édition qui le donne ; dette par créancier de "
+             "l'édition LF 2022. Source : ministère des Finances [@minfin-ep-2022, p. 54 ; "
+             "@minfin-ep-2024, p. 83 ; @minfin-ep-2025, p. 58]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2021 à 2023 "
+        "sont estimés (hachures). La dette par créancier de l'édition LF 2022 est imprimée "
+        "« 0 » pour chacun des cinq créanciers, fin 2018, fin 2019 et fin 2020. Les éditions "
+        "LF 2024 et LF 2025 n'impriment le bilan que pour 2020 : de 2021 à 2023, l'Office n'a "
+        "pas approuvé ses états financiers à la date de chacune, et les fonds propres et les "
+        "passifs ne sont pas tracés. La subvention d'exploitation est imprimée « 0 » jusqu'en "
+        "2022 dans les éditions LF 2022 et LF 2024, et laissée vide (« – ») dans l'édition "
+        "LF 2025. Le résultat net est celui d'avant modifications comptables. Toutes les "
+        "valeurs imprimées, édition par édition, sont dans les tableaux repliés sous la "
+        "section."),
+)
+```
+
+- **Ce que la loi lui confie.** [La loi de 1965](#r-ep-ommp-1965) crée l'Office des ports nationaux, établissement public à caractère industriel et commercial chargé du fonctionnement, de l'entretien et du développement des ports de Bizerte, Tunis, La Goulette, Sousse et Sfax, avec le pilotage, le remorquage et la police des quais ; elle supprime la Régie des ports de commerce, dont les installations et les biens forment son capital initial. [En 1972](#r-ep-ommp-1972), son siège passe à La Goulette et son objet s'étend au port de Menzel Bourguiba et à tout port de commerce qu'un décret lui rattache. [En 1998](#r-ep-ommp-1998-juillet), un décret le renomme Office de la marine marchande et des ports ; [la loi de décembre 1998](#r-ep-ommp-1998-decembre) lui confie les attributions de l'autorité et de l'administration maritimes et de l'autorité portuaire, la police portuaire et l'exploitation des ports maritimes de commerce, lui permet de concéder certains services et lui reconnaît les redevances de ses prestations, fixées par décret.
+- **Ce que l'État apporte et garantit.** La loi de 1965 prévoit qu'une insuffisance du compte d'exploitation est couverte par une subvention d'équilibre de l'État, que l'État peut consentir à l'Office des avances de trésorerie sans intérêts, et que sa garantie peut être accordée aux emprunts de l'Office dans la limite du plafond fixé chaque année par la loi de finances. La loi autorise l'État à souscrire aux augmentations de capital de l'Office pour 3 920 000 dinars [en 1983](#r-ep-ommp-1983), dont 1 180 000 dinars par conversion de prêts de l'État, et pour 1 400 000 dinars en numéraire [en 1984](#r-ep-ommp-1984). L'État garantit des prêts de la Banque internationale pour la reconstruction et le développement à l'Office, pour le troisième projet portuaire [en 1980](#r-ep-ommp-1980) et pour 78,2 millions de francs français au titre du projet sectoriel des transports [en 1998](#r-ep-ommp-1998-novembre), puis un prêt de 41 millions d'euros de l'Agence française de développement pour six remorqueurs [en 2021](#r-ep-ommp-2021).
+- **Ni dette ni subvention dans la fiche de l'édition LF 2022.** De fin 2018 à fin 2020, la dette de l'Office est imprimée « 0 » envers l'État, les banques, les entreprises publiques, les caisses sociales et les autres créanciers ; la subvention d'exploitation et la subvention d'investissement aussi. Les fonds propres sont de 486,4 MD fin 2018, 541,1 MD fin 2019 et 526,6 MD fin 2020, chiffre provisoire. Dans l'édition LF 2024, qui donne le bilan au lieu de la dette, l'Office a fin 2020 181,5 MD de passifs hors fonds propres, dont aucun emprunt à plus d'un an et 0,2 MD de concours bancaires, pour 475,4 MD de fonds propres et 657 MD d'actifs (@fig-ep-ommp-fiches).
+- **Des bénéfices.** Le résultat net est de 42,2 MD en 2017, 72,3 MD en 2018, 75,8 MD en 2019, 33,2 MD en 2020, 61,6 MD en 2021 et 56,0 MD en 2022 dans les classements des dix premiers résultats positifs de chaque édition [@minfin-ep, p. 28 ; @minfin-ep-2022, p. 18 ; @minfin-ep-2024, p. 29 ; @minfin-ep-2025, p. 20], et de 60,9 MD en 2023 dans la fiche, chiffre estimé. Les produits d'exploitation vont de 187,5 MD (2020) à 208,5 MD (2023, estimé). Au titre des exercices 2021 à 2023, l'Office verse 50 MD à l'État, sur 545,6 MD de part de l'État dans les bénéfices de l'ensemble des entreprises [@minfin-ep-2025, p. 126].
+- **L'emploi.** L'effectif est de 1 298 agents en 2018 et de 1 136 en 2023, chiffre estimé ; les charges de personnel passent de 56,7 à 69,8 MD (@fig-ep-ommp-fiches, @tbl-ep-effectifs-entreprises).
+- **Des comptes non approuvés et des éditions qui ne concordent pas.** L'Office arrête ses états financiers au conseil d'administration et le ministre du Transport les approuve ([décret de 2000](#r-ep-ommp-2000)) ; à la date des éditions LF 2024 et LF 2025, l'Office n'a pas approuvé ceux de 2021 à 2023, et ces éditions n'impriment pas le bilan de ces exercices. D'une édition à l'autre, les chiffres de 2020 changent : produits d'exploitation de 191,0 MD (LF 2022, provisoire) puis 187,5 MD (LF 2024, réalisé), résultats reportés de 110,3 MD puis −3,2 MD, résultat net de 39,1 MD dans la fiche de l'édition LF 2022, 48,6 MD dans le classement de l'édition LF 2023 [@minfin-ep-2023, p. 26] et 33,2 MD dans l'édition LF 2024. L'effectif estimé de 2022 passe de 1 258 agents (LF 2024) à 1 182 (LF 2025).
+
+:::: {.chronologie-repliable titre="Office de la marine marchande et des ports : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, effectif), et textes de création, de mission, de capital, d'organisation et de garantie, 1965-2021"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("ommp", ("LF2022",),
+    caption=("Office de la marine marchande et des ports, édition LF 2022 : dette par "
+             "créancier, fonds propres, investissements, résultat et emploi, exercices "
+             "2018-2020 ; 2020 marqué « * » (provisoire). Tableau des entreprises sous la "
+             "tutelle du ministère du Transport. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 54]"),
+    tbl_id="tbl-ep-ommp-fiche-a")
+ge.tableau_fiche_detail("ommp", ("LF2024", "LF2025"),
+    caption=("Office de la marine marchande et des ports, éditions LF 2024 et LF 2025 : bilan "
+             "de 2020, résultat et emploi, exercices 2020-2023 ; de 2021 à 2023, les cases du "
+             "bilan et du résultat net après modifications comptables sont remplacées par une "
+             "note : l'Office n'a pas approuvé ses états financiers. Dans l'édition LF 2025, le "
+             "résultat d'exploitation de 2023 est imprimé 51,4 MD pour 208,5 − 156,3 = 52,2 MD. "
+             "Source : ministère des Finances [@minfin-ep-2024, p. 83 ; @minfin-ep-2025, p. 58]"),
+    tbl_id="tbl-ep-ommp-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-ommp-1965}[18 février 1965]{.insecable} : *Journal officiel* du 16 février 1965, exécutoire un jour franc après sa parution | loi n° 65-2 du 12 février 1965 [@loi65-2-ommp, art. 1^er^ à 3, 15, 19, 20, 22, 23 et 30, p. 156-158] | création de l'Office des ports nationaux, établissement public à caractère industriel et commercial doté de la personnalité civile et de l'autonomie financière, réputé commerçant dans ses relations avec les tiers (art. 1^er^) ; objet : fonctionnement, entretien et développement des ports de Bizerte, Tunis, La Goulette, Sousse et Sfax, pilotage, remorquage, éclairage et balisage, police et surveillance des quais, exploitation des voies ferrées (art. 2) ; l'État lui affecte en pleine propriété les installations et biens de l'ancienne Régie des ports de commerce, qui constituent son capital initial ; subventions ou avances de l'État pour combler le déficit éventuel (art. 3) ; budget qui couvre les dépenses d'exploitation, l'amortissement et le service de la dette et dégage un surplus pour les extensions (art. 15) ; solde créditeur du compte d'exploitation au fonds de réserve et au compte d'investissement (art. 19) ; insuffisance couverte par une subvention d'équilibre de l'État (art. 20) ; emprunts autorisés par arrêté, garantie de l'État dans la limite du plafond annuel de la loi de finances (art. 22) ; avances de trésorerie de l'État non productives d'intérêts, contre dépôt au Trésor des fonds libres de l'Office (art. 23) ; Régie des ports de commerce supprimée (art. 30) | mise en place |
+| []{#r-ep-ommp-1972}entre le [17]{.insecable} et le [20 février 1972]{.insecable} : *Journal officiel* des 11-15-18 février 1972, loi du 15 février, exécutoire un jour franc après sa parution | loi n° 72-5 du 15 février 1972 [@loi72-5-ommp, art. 1^er^ à 3, p. 190-191] | siège à La Goulette (art. 1^er^) ; objet étendu au port de Menzel Bourguiba et à tout port de commerce rattaché par décret, et exploitation, pour le compte de l'État, de tout port de commerce dont la gestion lui est confiée par arrêté ; conseil d'administration de douze membres, dont cinq représentants de l'État ; président-directeur général nommé par décret (art. 2) ; articles 9, 12 et 13 de la loi n° 65-2 abrogés (art. 3) | étape |
+| []{#r-ep-ommp-1980}entre le [30 mai]{.insecable} et le [1^er^ juin 1980]{.insecable} : *Journal officiel* des 27-30 mai 1980, loi du 28 mai, exécutoire un jour franc après sa parution | loi n° 80-34 du 28 mai 1980 [@loi80-34-ommp, article unique, p. 1477-1478] | ratification de l'accord de prêt entre l'Office des ports nationaux tunisiens et la Banque internationale pour la reconstruction et le développement relatif au troisième projet portuaire, et de l'accord de garantie de l'État, conclus à Washington en février 1980 | étape |
+| []{#r-ep-ommp-1983}entre le [28]{.insecable} et le [31 juillet 1983]{.insecable} : *Journal officiel* des 26-29 juillet 1983, exécutoire un jour franc après sa parution | loi n° 83-76 du 21 juillet 1983 [@loi83-76-ommp, article unique, p. 2023] | le ministre du Plan, pour le compte de l'État, est autorisé à souscrire à l'augmentation du capital de l'Office des ports nationaux tunisiens à concurrence de 3 920 000 dinars : 1 180 000 dinars par conversion de prêts accordés par l'État, 2 740 000 dinars par apport en numéraire | étape |
+| []{#r-ep-ommp-1984}entre le [9]{.insecable} et le [12 août 1984]{.insecable} : *Journal officiel* des 7-10 août 1984, exécutoire un jour franc après sa parution | loi n° 84-61 du 1^er^ août 1984 [@loi84-61-ommp, article unique, p. 1708] | le ministre du Plan, pour le compte de l'État, est autorisé à souscrire en numéraire à l'augmentation du capital de l'Office à concurrence de 1 400 000 dinars | étape |
+| []{#r-ep-ommp-1998-juillet}[16 juillet 1998]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 11 juillet 1998, plus cinq jours, jour du dépôt non compté | décret n° 98-1385 du 30 juin 1998 [@decret98-1385-ommp, art. 1^er^ et 2, p. 1444] | la dénomination « Office des ports nationaux » est remplacée par « Office de la marine marchande et des ports » (art. 1^er^) ; l'Office est placé sous la tutelle du ministre du Transport (art. 2) | étape |
+| []{#r-ep-ommp-1998-novembre}[11 novembre 1998]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 6 novembre 1998, plus cinq jours, jour du dépôt non compté | loi n° 98-83 du 2 novembre 1998 [@loi98-83-ommp, art. 2, p. 2181-2182] | ratification des accords de prêt et de garantie conclus à Washington le 29 juin 1998 entre l'État et l'Office des ports nationaux de Tunisie d'une part, la Banque internationale pour la reconstruction et le développement d'autre part : prêt de 78 200 000 francs français à l'Office pour le projet sectoriel des transports | étape |
+| []{#r-ep-ommp-1998-decembre}[5 janvier 1999]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 31 décembre 1998 (mention de l'édition arabe du même numéro), plus cinq jours, jour du dépôt non compté | loi n° 98-109 du 28 décembre 1998 [@loi98-109-ommp, art. 1^er^ à 6, p. 2499-2500] | missions de l'Office : attributions de l'autorité et de l'administration maritimes et de l'autorité portuaire, contrôle des activités et police portuaire dans les ports maritimes de commerce, exploitation, entretien et développement de ces ports (art. 1^er^) ; concession possible de l'exploitation de ses biens et de certains services, hors contrôle, autorisation et police portuaire ; liste des services concédables fixée par décret (art. 2) ; transfert en pleine propriété des biens du domaine privé de l'État nécessaires à ses missions ; retour du patrimoine à l'État en cas de dissolution (art. 3) ; redevances de ses prestations perçues à son profit, fixées par décret (art. 4) ; agents du ministère du Transport chargés de ces missions intégrés à l'Office (art. 5) ; articles 11 et 12 de la loi de finances pour 1960 maintenus jusqu'au décret des redevances (art. 6) | rupture |
+| []{#r-ep-ommp-2000}[4 novembre 2000]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 30 octobre 2000, plus cinq jours, jour du dépôt non compté | décret n° 2000-2407 du 17 octobre 2000 [@decret2000-2407-ommp, art. 1^er^, 2, 3, 8, 9, 13 et 16, p. 2610-2613] | conseil d'administration présidé par un président-directeur général nommé par décret, avec huit représentants de ministères, et un représentant chacun de l'Union tunisienne de l'industrie, du commerce et de l'artisanat, de la chambre nationale des armateurs et de la chambre syndicale des acconiers (art. 1^er^ et 2) ; le conseil arrête les états financiers au plus tard trois mois après la clôture de l'exercice (art. 3) ; budget de fonctionnement dont les recettes comprennent les prestations, les redevances et les subventions d'exploitation, dotations et avances de l'État ; emprunts hypothécaires et obligataires soumis à l'autorisation du ministère du Transport (art. 8) ; comptabilité commerciale, exercice civil (art. 9) ; états financiers approuvés par décision du ministre du Transport sur rapport de l'auditeur externe (art. 13) ; contrôleur d'État (art. 16) | étape |
+| []{#r-ep-ommp-2021}[12 décembre 2021]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 7 décembre 2021, plus cinq jours, jour du dépôt non compté ; ratification au [29 décembre 2021]{.insecable} (dépôt le 24 décembre 2021) | décret-loi n° 2021-10 du 30 novembre 2021 [@dl2021-10-ommp, art. 1^er^, p. 2889] ; décret présidentiel n° 2021-248 du 22 décembre 2021 [@decret2021-248-ommp, art. 1^er^, p. 3050] | approbation, puis ratification, de la convention de garantie à première demande entre l'État et l'Agence française de développement relative au prêt de 41 000 000 euros accordé à l'Office pour l'acquisition de six remorqueurs neufs ; convention datée du 3 juin 2021 dans le décret-loi, du 3 juin 2020 dans le décret de ratification | étape |
+
+: Les textes de l'Office de la marine marchande et des ports : création, missions, capital, organisation et garanties de l'État {#tbl-ep-registre-ommp}
+
+::::
+
+<!-- TODO (documentaliste) : fiche de l'Office de la marine marchande et des ports des éditions LF 2022 (p. 54, tableau 25 du ministère du Transport), LF 2024 (p. 83) et LF 2025 (p. 58) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-ommp, à fusionner d'abord). Grandeurs d'activité non relevées : trafic de marchandises (millions de tonnes) et de passagers (millions). Éditions françaises LF 2020 et LF 2021 (page 68 de chaque fichier) : comptes dans la prose, non versés ; prose de l'édition LF 2022 (p. 58, rang 57 du fichier) : résultat net 2019 « 75 » MD contre 75,8 sur la fiche. Le budget ne figure pas dans les tableaux des transferts par entreprise du rapport : vérifier dans l'annexe 8 (transferts par établissement) avant de rien en dire. Loi n° 80-34 : l'intitulé date les accords du 8 février 1980, l'article unique l'accord de prêt du 6 février (lecture à l'image) ; montant du prêt non imprimé, à chercher dans l'accord ou les rapports de la BIRD. Convention de garantie de l'AFD datée du 3 juin 2021 (décret-loi n° 2021-10) et du 3 juin 2020 (décret présidentiel n° 2021-248) : à trancher par l'édition arabe. Textes repérés, non lus : loi n° 91-94 (contrat de prêt avec la KfW, JORT n° 82 de 1991, p. 1891, fascicule scanné) ; décrets n° 70-588 et 82-1386, arrêtés de 1982, 1992, 1998, 2002 et 2007 (tarifs et redevances portuaires) et décret n° 88-229 ; décret n° 72-242 (conseil d'administration) ; décret n° 72-263 (affiliation du personnel à la Caisse nationale de retraite) ; décret n° 73-383 et décret n° 99-1731 (statut du personnel) ; décret n° 70-589 (marchés) ; décrets n° 93-2118 et 94-554 (rattachement des ports de Zarzis et de Sidi Youssef) ; loi n° 99-25 (code des ports maritimes de commerce) et décret n° 2000-1001 (liste des ports) ; décret n° 2002-135 (services concédables) ; décret n° 2004-1029 (organigramme) ; lois n° 2014-24 et 2014-25 (protocoles financiers avec la France). Régime fiscal de l'Office : aucun texte propre identifié dans jort_cache.db par les intitulés interrogés. Part de l'État dans les bénéfices de l'Office par exercice : seul le cumul 2021-2023 (50 MD) est versé ; à chercher dans les éditions antérieures. -->
+
+## La Compagnie tunisienne de navigation (CTN) {#sec-ep-ge-ctn}
+
+La garantie de l'État et la dette garantie de l'ensemble des entreprises sont exposées au chapitre « Les garanties, les prêts et les arriérés » (@sec-ep-garanties).
+
+**La [Compagnie tunisienne de navigation](#g-ctn), société de transport maritime de passagers, de véhicules et de marchandises créée en 1959, dont l'État a souscrit le capital de 1959 à 1984 et garanti des emprunts d'achat de navires, reçoit du budget 22,0 MD en 2020 et aucun transfert les autres années de 2017 à 2022 ; en perte de 2018 à 2020, elle dégage un résultat positif de 2021 à 2023, chiffres estimés pour 2022 et 2023.**
+
+```{python}
+#| label: fig-ep-ctn-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "ctn_budget",
+    caption=("Compagnie tunisienne de navigation (CTN) : transferts du budget, résultat net, "
+             "effectif et charges de personnel, exercices 2016-2023, d'après le rapport sur les "
+             "entreprises publiques. Source : ministère des Finances [@minfin-ep-2020, p. 65 ; "
+             "@minfin-ep, p. 65-66 et 149-150 ; @minfin-ep-2022, p. 54 et 105 ; "
+             "@minfin-ep-2023, p. 200 ; @minfin-ep-2024, p. 29, 82 et 154 ; "
+             "@minfin-ep-2025, p. 20 et 57]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire, estimé ou probable. Les transferts de 2017 à 2019, de 2021 et de 2022 sont "
+        "des zéros imprimés. L'effectif de 2018 et de 2019 est celui de l'édition LF 2022 "
+        "(734 et 698 agents) ; les éditions LF 2020 et LF 2021 donnent 1 195 et 1 156 agents "
+        "pour les mêmes années. Le résultat net est celui des classements des dix premiers "
+        "résultats positifs et négatifs de chaque édition, qui ne disent pas le statut du "
+        "chiffre : la CTN n'y figure qu'en 2021, pour 16,4 MD dans les éditions LF 2024 et "
+        "LF 2025, quand la fiche de l'édition LF 2025 donne 29,8 MD, chiffre réalisé. "
+        "« n. c. » : la société n'est dans aucun classement de l'exercice ; « n. d. » : le "
+        "rapport ne donne pas la grandeur. Ni l'un ni l'autre n'est un zéro."),
+)
+```
+
+- **Ce que l'État lui confie.** Selon le rapport du ministère des Finances annexé au projet de loi de finances pour 2020, la CTN est une société anonyme créée en 1959, au capital de 126 MD, dont l'État détient 86,2 % ; elle assure des liaisons régulières entre la Tunisie et les ports de Marseille et de Gênes pour les passagers et les véhicules, et transporte des marchandises en remorques, en conteneurs et à bord de navires rouliers, avec six navires en propriété et deux navires affrétés [@minfin-ep-2020, p. 64]. Les tableaux du rapport la rangent parmi les entreprises sous tutelle du ministère du Transport.
+- **Ce que l'État apporte au capital.** [En 1959](#r-ep-ctn-1959), la loi approuve les statuts de la compagnie et autorise l'État à souscrire 70 000 dinars à son capital, prélevés sur le Fonds d'industrialisation et de développement. Six lois autorisent ensuite l'État à souscrire à ses augmentations de capital : 1 150 000 dinars [en 1975](#r-ep-ctn-1975), 2 550 000 dinars [en 1977](#r-ep-ctn-1977-capital) et autant [en 1978](#r-ep-ctn-1978-capital), 1 500 000 dinars [en 1980](#r-ep-ctn-1980), 3 918 750 dinars [en 1983](#r-ep-ctn-1983), par conversion de prêts accordés par l'État, et 7 143 750 dinars [en 1984](#r-ep-ctn-1984).
+- **Ce que l'État garantit.** De 1976 à 2011, la loi approuve les emprunts de la compagnie pour acheter des navires, puis la garantie que l'État leur accorde : une convention de crédit avec la Bank of America [en 1976](#r-ep-ctn-1976) ; deux prêts du chantier naval japonais Naikai Shipbuilding [en 1977](#r-ep-ctn-1977-pret) ; un prêt du Japon à l'État pour renforcer les moyens de transport de la compagnie [en 1978](#r-ep-ctn-1978-japon) ; la garantie de l'État à 191,7 millions de deutsche marks de la Kreditanstalt für Wiederaufbau pour deux navires rouliers transbordeurs [en 1996](#r-ep-ctn-1996), à 801,9 millions de francs français d'Eksportfinans et de la Banque nationale de Paris pour un car-ferry [en 1998](#r-ep-ctn-1998) et à 160,5 millions d'euros de la Société générale et de BNP Paribas pour un navire à passagers [en 2011](#r-ep-ctn-2011). De 2010 à 2024, aucune ligne de la CTN n'apparaît parmi les paiements de dette garantie que la Cour des comptes relève dans ses rapports sur la clôture du budget (@tbl-ep-cdc-garantie).
+- **Ce que l'État verse, et ce dont il la dispense.** Le rapport porte des transferts du budget nuls de 2017 à 2019, de 22,0 MD en 2020, nuls en 2021 et en 2022, chiffre provisoire [@minfin-ep, p. 149-150 ; @minfin-ep-2022, p. 105 ; @minfin-ep-2023, p. 200 ; @minfin-ep-2024, p. 154]. La fiche de la société ne porte aucune subvention d'exploitation de 2018 à 2023 : 0 imprimé dans les éditions LF 2022 et LF 2024, case laissée vide dans l'édition LF 2025 (@fig-ep-ctn-fiches). [Du 1^er^ janvier 2024 au 31 décembre 2026](#r-ep-ctn-2024), la loi de finances suspend la taxe sur la valeur ajoutée sur les importations et les achats locaux d'équipements, de matériel, de pièces de rechange, de matières et de services nécessaires à son activité. [En 2017](#r-ep-ctn-2017), un arrêté réduit de 25 %, pour six mois à partir du 31 octobre 2016, les redevances portuaires d'abri et de stationnement de ses navires sur la ligne Sfax–Novorossiisk par Istanbul.
+- **Des pertes jusqu'en 2020, un bénéfice ensuite.** Les produits d'exploitation sont de 455,5 MD en 2018 et de 481,4 MD en 2019 ; ils tombent à 360,4 MD en 2020, puis passent à 513,7 MD en 2021, à 621,6 MD en 2022 et à 666,2 MD en 2023, chiffres estimés pour les deux dernières années. Le résultat d'exploitation est de 4,1 MD en 2018 et de −3,7 MD en 2019 ; il est de −27,0 MD en 2020, chiffre estimé de l'édition LF 2024 (−38,1 MD dans l'édition LF 2022, chiffre probable), puis de 46,3 MD en 2021, 22,3 MD en 2022 et 54,0 MD en 2023. Le résultat net est de −52,9 MD en 2018, −8,6 MD en 2019 et −50,7 MD en 2020 avant modifications comptables (−58,2 MD après), puis de 29,8 MD en 2021, 11,5 MD en 2022 et 35,4 MD en 2023, chiffres estimés pour les deux dernières années (@fig-ep-ctn-fiches). L'effectif est de 1 059 agents en 2021, 1 075 en 2022 et 988 en 2023, chiffre estimé ; les charges de personnel passent de 62,1 MD en 2018 à 74,3 MD en 2023 (@fig-ep-ctn-budget, @tbl-ep-effectifs-entreprises).
+- **Des fonds propres qui deviennent négatifs, une dette envers les banques et les entreprises publiques.** Les fonds propres sont de 7,5 MD fin 2018 et de −2,4 MD fin 2019 dans l'édition LF 2022, de −71,7 MD fin 2020 dans l'édition LF 2024 et de −43,0 MD fin 2021 dans l'édition LF 2025. Dans l'édition LF 2022, la dette passe de 346,0 MD fin 2018 à 409,2 MD fin 2019 et à 387,3 MD fin 2020, dont 208,0, 195,2 puis 173,1 MD envers les banques et 73,0, 137,8 puis 190,5 MD envers les entreprises publiques. Le total des passifs, hors fonds propres, est de 517,8 MD fin 2020 et de 469,5 MD fin 2021, dont 273,5 puis 294,6 MD envers les fournisseurs. Les éditions LF 2024 et LF 2025 n'impriment pas le bilan des exercices suivants : à la date de chacune, la société n'a pas approuvé ses états financiers, de 2021 et 2022 pour la première, de 2022 et 2023 pour la seconde.
+- **Des éditions qui ne concordent pas.** L'effectif de l'édition LF 2022 est inférieur d'environ 400 agents à celui des autres éditions : 734 agents en 2018 contre 1 195 dans l'édition LF 2020, chiffre probable [@minfin-ep-2020, p. 65] ; 700 en 2020 contre 1 096 dans l'édition LF 2024, chiffre estimé. Le résultat net de 2018 est de −31,3 MD dans l'édition LF 2020, chiffre estimé [@minfin-ep-2020, p. 66], et de −52,9 MD dans l'édition LF 2022. Celui de 2021 passe de 16,4 MD (LF 2024, estimé) à 29,8 MD (LF 2025, réalisé), et les charges d'exploitation de 486,0 à 467,4 MD. Dans l'édition LF 2024, enfin, les produits d'exploitation de 2022 (621,6 MD) dépassent de 20,0 MD la somme des recettes (576,4 MD) et des autres produits (25,2 MD) ; l'édition LF 2025 imprime 596,4 MD de recettes pour le même total et boucle.
+
+:::: {.chronologie-repliable titre="Compagnie tunisienne de navigation : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et textes de capital, de garantie et d'avantage fiscal, 1959-2023"}
+
+```{python}
+#| label: fig-ep-ctn-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "ctn_fiches",
+    caption=("Compagnie tunisienne de navigation (CTN) d'après le rapport sur les entreprises "
+             "publiques, exercices 2018-2023, en millions de dinars courants et en agents : chaque "
+             "exercice dans la dernière édition qui le donne ; dette par créancier de l'édition "
+             "LF 2022. Source : ministère des Finances [@minfin-ep-2022, p. 54 ; "
+             "@minfin-ep-2024, p. 82 ; @minfin-ep-2025, p. 57]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; seuls 2018 et "
+        "2021 ne sont pas hachurés. « 0 » : zéro imprimé ; « – » : case laissée vide, ainsi la "
+        "subvention d'exploitation de 2021 à 2023 dans l'édition LF 2025. La dette totale n'est "
+        "imprimée que par l'édition LF 2022, le total des passifs que par les éditions LF 2024 "
+        "et LF 2025, pour 2020 et 2021 seulement : le bilan de 2022 et de 2023 n'est pas "
+        "imprimé. Le résultat net tracé est celui d'avant modifications comptables. L'effectif "
+        "de 2018 et de 2019 est celui de l'édition LF 2022, inférieur d'environ 400 agents à "
+        "celui des autres éditions. Toutes les valeurs imprimées, édition par édition, sont "
+        "dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("ctn", ("LF2022",),
+    caption=("Compagnie tunisienne de navigation, édition LF 2022 : dette par créancier, fonds "
+             "propres, investissements, résultat et emploi, exercices 2018-2020 ; 2019 marqué "
+             "« * » (provisoire), 2020 « ** » (probable) ; fonds propres et résultats reportés de "
+             "2020 laissés vides. Source : ministère des Finances [@minfin-ep-2022, p. 54]"),
+    tbl_id="tbl-ep-ctn-fiche-a")
+ge.tableau_fiche_detail("ctn", ("LF2024", "LF2025"),
+    caption=("Compagnie tunisienne de navigation, éditions LF 2024 et LF 2025 : bilan et "
+             "résultat, exercices 2020-2023 ; les cases du bilan sont remplacées par une note pour "
+             "2021 et 2022, puis pour 2022 et 2023 : la société n'a pas approuvé ses états "
+             "financiers. Dans l'édition LF 2024, les produits d'exploitation de 2022 dépassent "
+             "de 20,0 la somme des recettes et des autres produits. Source : ministère des "
+             "Finances [@minfin-ep-2024, p. 82 ; @minfin-ep-2025, p. 57]"),
+    tbl_id="tbl-ep-ctn-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-ctn-1959}entre le [19]{.insecable} et le [22 mars 1959]{.insecable} : *Journal officiel* des 17-20 mars 1959, exécutoire un jour franc après sa parution | loi n° 59-34 du 16 mars 1959 [@loi59-34-ctn, art. 1^er^, p. 224] | le secrétaire d'État aux Finances et au Commerce, pour le compte de l'État, est autorisé à souscrire au capital de la « Compagnie tunisienne de navigation » à concurrence de 70 000 dinars, prélevés sur les disponibilités du Fonds d'industrialisation et de développement créé par le décret du 29 juin 1957 ; la loi vise les statuts de la compagnie, qu'elle ne publie pas | mise en place |
+| []{#r-ep-ctn-1975}[1^er^ mai 1975]{.insecable} : *Journal officiel* du 29 avril 1975, exécutoire un jour franc après sa parution | loi n° 75-29 du 28 avril 1975 [@loi75-29-ctn, article unique, p. 844] | le ministre délégué auprès du Premier ministre, chargé du Plan, pour le compte de l'État, est autorisé à souscrire à l'augmentation du capital de la compagnie à concurrence de 1 150 000 dinars | étape |
+| []{#r-ep-ctn-1976}[17 octobre 1976]{.insecable} : *Journal officiel* du 15 octobre 1976, exécutoire un jour franc après sa parution | décret-loi n° 76-3 du 12 octobre 1976 [@dl76-3-ctn, art. 1^er^, p. 2410], ratifié par la loi n° 76-88 du 4 novembre 1976 [@loi76-88-ctn, article unique, p. 2698] | approbation de la convention de crédit conclue le 1^er^ octobre 1976 entre la compagnie et la Bank of America ; le montant est dans la convention annexée, non publiée | étape |
+| []{#r-ep-ctn-1977-pret}entre le [9]{.insecable} et le [10 mars 1977]{.insecable} : *Journal officiel* des 1^er^, 4 et 8 mars 1977, exécutoire un jour franc après sa parution, la loi étant signée le 7 mars | loi n° 77-9 du 7 mars 1977 [@loi77-9-ctn, article unique, p. 514] | ratification des deux contrats de prêt signés le 16 avril 1976 entre la compagnie et la compagnie japonaise Naikai Shipbuilding et Engineering Co. Ltd, et de leurs amendements du 27 octobre 1976 ; montants dans les contrats annexés, non publiés | étape |
+| []{#r-ep-ctn-1977-capital}[29 mai 1977]{.insecable} : *Journal officiel* du 27 mai 1977, exécutoire un jour franc après sa parution | loi n° 77-35 du 25 mai 1977 [@loi77-35-ctn, article unique, p. 1402] | même autorisation, à concurrence de 2 550 000 dinars | étape |
+| []{#r-ep-ctn-1978-japon}[5 mars 1978]{.insecable} : *Journal officiel* du 3 mars 1978, exécutoire un jour franc après sa parution | loi n° 78-13 du 1^er^ mars 1978 [@loi78-13-ctn, article unique, p. 571] | ratification de l'échange de lettres signé à Tunis le 20 décembre 1977 entre le gouvernement de la République tunisienne et le gouvernement du Japon, relatif à l'octroi d'un prêt pour le renforcement des moyens de transport de la compagnie ; montant dans l'échange de lettres annexé, non publié | étape |
+| []{#r-ep-ctn-1978-capital}[9 avril 1978]{.insecable} : *Journal officiel* du 7 avril 1978, exécutoire un jour franc après sa parution | loi n° 78-29 du 5 avril 1978 [@loi78-29-ctn, article unique, p. 996] | même autorisation, à concurrence de 2 550 000 dinars | étape |
+| []{#r-ep-ctn-1980}[2 janvier 1981]{.insecable} : *Journal officiel* des 30-31 décembre 1980, paru au plus tôt le 31 décembre, jour de la signature de la loi, exécutoire un jour franc après sa parution | loi n° 80-87 du 31 décembre 1980 [@loi80-87-ctn, article unique, p. 3274] | le ministre du Plan et des Finances est autorisé à souscrire à l'augmentation du capital de la compagnie à concurrence de 1 500 000 dinars | étape |
+| []{#r-ep-ctn-1983}entre le [28]{.insecable} et le [31 juillet 1983]{.insecable} : *Journal officiel* des 26-29 juillet 1983, exécutoire un jour franc après sa parution | loi n° 83-75 du 21 juillet 1983 [@loi83-75-ctn, article unique, p. 2023] | le ministre du Plan est autorisé à souscrire à l'augmentation du capital de la compagnie à concurrence de 3 918 750 dinars, par conversion de prêts accordés par l'État | étape |
+| []{#r-ep-ctn-1984}entre le [9]{.insecable} et le [12 août 1984]{.insecable} : *Journal officiel* des 7-10 août 1984, exécutoire un jour franc après sa parution | loi n° 84-60 du 1^er^ août 1984 [@loi84-60-ctn, article unique, p. 1708] | même autorisation, à concurrence de 7 143 750 dinars | étape |
+| []{#r-ep-ctn-1996}[17 août 1996]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 12 août 1996, plus cinq jours, jour du dépôt non compté | loi n° 96-72 du 29 juillet 1996 [@loi96-72-ctn, article unique, p. 1637] | approbation du document du 23 mars 1996 portant garantie de l'État au crédit de 191 700 000 deutsche marks accordé à la compagnie par la Kreditanstalt für Wiederaufbau (contrat du 15 janvier 1996), pour la construction et la livraison de deux navires rouliers transbordeurs, et de la convention d'arbitrage | étape |
+| []{#r-ep-ctn-1998}*Journal officiel* du [14 avril 1998]{.insecable}, exécutoire cinq jours après son dépôt au gouvernorat de Tunis | loi n° 98-27 du 6 avril 1998 [@loi98-27-ctn, article unique, p. 735] | octroi de la garantie de l'État, par le document du 16 février 1998, au prêt de 801 867 900 francs français accordé à la compagnie par Eksportfinans ASA et la Banque nationale de Paris (Oslo) (accord du 13 février 1998), pour la construction d'un car-ferry | étape |
+| []{#r-ep-ctn-2011}[13 août 2011]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 8 août 2011, plus cinq jours, jour du dépôt non compté | décret-loi n° 2011-74 du 5 août 2011 [@dl2011-74-ctn, art. 1^er^, p. 1385] | ratification autorisée de la lettre de garantie à première demande du 1^er^ août 2011, relative au contrat de financement signé le 18 juillet 2011 entre la compagnie et la Société générale et BNP Paribas, d'un montant ne dépassant pas 160 477 939 euros, pour la construction d'un nouveau navire à passagers | étape |
+| []{#r-ep-ctn-2017}[31 octobre 2016]{.insecable}, date dite par l'arrêté (art. 1^er^), pour six mois | arrêté de la ministre des finances et du ministre du transport du 4 avril 2017 [@arrete2017-04-04-ctn, art. 1^er^, p. 1375-1376] | réduction de 25 % des redevances d'abri et de stationnement applicables aux navires exploités par la compagnie sur la nouvelle ligne régulière entre le port de Sfax-Sidi Youssef et Novorossiisk, en Russie, par Istanbul | ajustement |
+| []{#r-ep-ctn-2024}[1^er^ janvier 2024]{.insecable}, date dite par la loi (art. 42), jusqu'au 31 décembre 2026 | loi n° 2023-13 du 11 décembre 2023, loi de finances pour 2024 [@loi2023-13-lf2024, art. 42, p. 6446 de l'édition arabe] | suspension de la taxe sur la valeur ajoutée sur les importations et les achats locaux d'équipements, de matériel, de pièces de rechange, de matières et de services nécessaires à l'activité de la compagnie, du 1^er^ janvier 2024 au 31 décembre 2026 ; pour les achats locaux, sur attestation de suspension délivrée par le service fiscal compétent | ajustement |
+
+: Les textes de la Compagnie tunisienne de navigation : capital, emprunts et garanties, avantages fiscal et portuaire {#tbl-ep-registre-ctn}
+
+::::
+
+<!-- TODO (documentaliste) : fiche de la CTN des éditions LF 2022 (p. 54, tableau 25), LF 2024 (p. 82) et LF 2025 (p. 57) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-ctn) ; lue à l'image et retrouvée dans la couche texte. Effectifs de l'édition LF 2022 (734, 698, 700) inférieurs d'environ 400 agents à ceux des éditions LF 2020, LF 2021 et LF 2024 : cause non dite par le rapport (périmètre du personnel ?), à vérifier. Grandeurs d'activité non relevées : passagers et équivalents remorques (LF 2022 à LF 2025 ; LF 2025 donne 584,8 milliers de passagers pour 2021, l'édition LF 2024 231,7). Éditions françaises LF 2020 (p. 64-66) et LF 2021 (p. 65-66) : comptes dans la prose, non versés. Capital : l'État souscrit 18,9 millions de dinars de 1959 à 1984 d'après les lois lues, le rapport LF 2020 donne un capital de 126 MD dont 86,2 % à l'État : augmentations de capital postérieures à 1984 non identifiées dans jort_cache.db (requêtes LIKE et FTS sur « Compagnie tunisienne de navigation », « COTUNAV », « CTN » et « الشركة التونسية للملاحة ») ; statuts de 1959 visés par la loi n° 59-34, non publiés au Journal officiel ; actes de transformation éventuels à chercher. Date d'effet de la loi n° 98-27 : la mention de dépôt au gouvernorat de Tunis n'est ni dans la couche texte ni sur la dernière page du JORT n° 30 de 1998 ; à relever dans l'édition arabe, puis ajouter cinq jours (loi n° 93-64). Textes repérés, non lus : arrêtés du 6 janvier 1994 et du 3 octobre 1995 (mutuelles du personnel navigant et sédentaire) ; décret n° 95-2435 (marchés d'affrètement) ; décrets n° 99-2046 et 99-2047 (statuts particuliers du personnel sédentaire et navigant) ; décret n° 2000-2903 (organigramme) ; décret n° 2002-1606 (emplois fonctionnels) ; arrêté du 28 mars 2003 (calendrier de conservation des documents) ; arrêté du 4 juin 2013 (exonération des droits d'embarquement et de débarquement à Sfax, escale du navire « El Habib » du 28 février 2011) ; décret n° 2015-241 et décret gouvernemental n° 2018-430 (réquisition d'agents de la société, édition arabe). Prorogation de l'article 42 de la loi de finances pour 2024 au-delà de 2026 : à vérifier dans les lois de finances pour 2025 et 2026. Rapports annuels et états financiers publiés par la société : à obtenir. -->
+
+## Les sociétés régionales de transport {#sec-ep-ge-srt}
+
+Ce que l'État verse aux sociétés régionales pour la gratuité et les tarifs réduits est au volume « La compensation » ([le poste transport](../compensation/_transport.html)) ; les transferts du budget à l'ensemble des entreprises, au chapitre « Les transferts du budget » (@sec-ep-transferts).
+
+**Les listes des entreprises publiques comptent, sous la tutelle du ministère du Transport, douze [sociétés régionales de transport](#g-srt) de 1998 à 2021 (@sec-ep-liste). Cette section présente celles de Sfax et de Bizerte, l'une après l'autre, d'après leur fiche dans le rapport du ministère des Finances. L'État abandonne des créances sur l'une et l'autre par trois lois, en 1989, 1999 et 2005.**
+
+- **Trois abandons de créances.** [La loi de 1989](#r-ep-srt-1989) abandonne, dans le cadre de « l'assainissement des sociétés régionales de transport », les créances de l'État arrêtées au 31 décembre 1987 sur onze sociétés, 34,6 MD au total : créances fiscales, droits revenant à la Caisse de compensation et de soutien des transports routiers, prêts et avances. [La loi de 1999](#r-ep-srt-1999) abandonne les créances arrêtées au 31 décembre 1998 sur dix sociétés, 18,9 MD, dettes fiscales, crédits rétrocédés et un crédit du titre II, et exonère de l'impôt sur les sociétés les bénéfices de l'opération. [La loi de 2005](#r-ep-srt-2005) abandonne les créances fiscales arrêtées au 31 décembre 2004 sur trois sociétés, Sfax, Bizerte et Le Kef, 4,6 MD, et exonère de l'impôt sur les sociétés les bénéfices du « schéma d'assainissement financier », qui comprend aussi la prise en charge de leurs dettes par le fonds de restructuration du capital des entreprises publiques (@tbl-ep-srt-abandons).
+- **Sfax et Bizerte dans les trois lois.** L'État abandonne 7,95 MD à la société de Sfax en 1989, 1,97 MD en 1999 et 1,84 MD en 2005 ; 0,71 MD à celle de Bizerte en 1989, 2,99 MD en 1999 et 2,63 MD en 2005. En 1989, l'essentiel de l'abandon consenti à Sfax est fiscal (6,82 MD) ; en 1999 et en 2005, les deux sociétés ne bénéficient que d'abandons de dettes fiscales et de pénalités.
+
+| Société | 1989 : créances au 31 décembre 1987 | 1999 : créances au 31 décembre 1998 | 2005 : créances fiscales au 31 décembre 2004 |
+|---|---:|---:|---:|
+| Société régionale de transport de Sfax | 7 948 439,442 : créances fiscales 6 818 650,724, droits de la Caisse de compensation et de soutien des transports routiers 562 000,000, prêts et avances 567 788,718 | 1 971 308,957 : principal 1 752 900,763, pénalités de retard 218 408,194 | 1 835 053,555 : principal 1 802 972,146, pénalités de contrôle 32 081,409 |
+| Société régionale de transport de Bizerte | 713 312,240 : créances fiscales 597 711,414, droits de la Caisse 115 600,826, prêts et avances « — » | 2 986 976,739 : principal 2 464 259,008, pénalités de retard 522 717,731 | 2 625 524,018 : principal 2 341 210,220, pénalités de contrôle 284 313,798 |
+| Ensemble des sociétés de la loi | 34 620 867,236 (onze sociétés) | 18 911 588,303 (dix sociétés) | 4 633 804,579 (trois sociétés) |
+
+: Créances abandonnées par l'État aux sociétés régionales de transport de Sfax et de Bizerte, en dinars, par les lois de 1989, 1999 et 2005. Totaux de Sfax et de Bizerte en 1989 et 1999 : somme des colonnes de la loi ; la loi de 2005 imprime le total par société. Source : [loi de 1989](#r-ep-srt-1989), [loi de 1999](#r-ep-srt-1999) et [loi de 2005](#r-ep-srt-2005) {#tbl-ep-srt-abandons}
+
+:::: {.chronologie-repliable titre="Sociétés régionales de transport : lois d'abandon de créances de l'État, 1989, 1999 et 2005"}
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-srt-1989}[7 septembre 1989]{.insecable} : *Journal officiel* du 5 septembre 1989, exécutoire un jour franc après sa parution | loi n° 89-74 du 2 septembre 1989 [@loi89-74-srt, article unique, p. 1340] | le ministre du plan et des finances est autorisé, « dans le cadre de l'assainissement des sociétés régionales de transport », à abandonner les créances de l'État au 31 décembre 1987 sur les sociétés régionales de transport de Béja, Bizerte, Gabès, Gafsa, Jendouba, Kairouan, Kasserine, Kef, Médenine, Sfax et Sahel, à hauteur de 34 620 867,236 dinars, détaillés par société en créances fiscales, droits revenant à la Caisse de compensation et de soutien des transports routiers, et prêts et avances | étape |
+| []{#r-ep-srt-1999}[8 août 1999]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 3 août 1999, plus cinq jours, jour du dépôt non compté | loi n° 99-76 du 26 juillet 1999 [@loi99-76-srt, article unique, p. 1263] | le ministre des finances est autorisé à abandonner les créances de l'État au 31 décembre 1998 sur les sociétés régionales de transport de Béja, Bizerte, Gabès, Gafsa, Jendouba, Kairouan, Kasserine, Kef, Sfax et du Sahel, jusqu'à 18 911 588,303 dinars, ainsi que les pénalités, frais de poursuite et intérêts exigibles, détaillés par société en dettes fiscales (principal, pénalités de retard), crédits rétrocédés et crédit du titre II ; exonération de l'impôt sur les sociétés des bénéfices de l'opération d'assainissement financier, pour l'année de la radiation | étape |
+| []{#r-ep-srt-2005}[11 août 2005]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 6 août 2005, plus cinq jours, jour du dépôt non compté | loi n° 2005-74 du 4 août 2005 [@loi2005-74-srt, art. 1^er^ et 2, p. 1975-1976] | le ministre des finances est autorisé à abandonner les créances fiscales de l'État sur les sociétés régionales de transport de Sfax, de Bizerte et du Kef au 31 décembre 2004, 4 633 804,579 dinars, ainsi que les amendes de retard et frais de poursuite, et les créances qui seraient constatées plus tard pour les mêmes années (art. 1^er^) ; exonération de l'impôt sur les sociétés des bénéfices du schéma d'assainissement financier, qui comprend l'abandon et la prise en charge des dettes de ces sociétés par le fonds de restructuration du capital des entreprises publiques (art. 2) | étape |
+
+: Les lois d'abandon de créances de l'État aux sociétés régionales de transport {#tbl-ep-registre-srt}
+
+::::
+
+### La Société régionale de transport de Sfax {#sec-ep-ge-srt-sfax}
+
+**La Société régionale de transport de Sfax, dont les communes du gouvernorat puis l'État souscrivent le capital (1963, 1974), exploite les autobus de Sfax ; le budget lui verse 48,9 MD en 2018 et 70,1 MD en 2022, chiffre provisoire, et sa subvention d'exploitation fait de 71 à 80 % de ses produits d'exploitation de 2018 à 2023. Elle est en perte chaque exercice de 2018 à 2023, dans la dernière édition du rapport du ministère des Finances qui donne chaque exercice.**
+
+```{python}
+#| label: fig-ep-srt-sfax-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "srt_sfax_budget",
+    caption=("Société régionale de transport de Sfax : transferts du budget, effectif et charges "
+             "de personnel, exercices 2016-2023, d'après le rapport sur les entreprises "
+             "publiques. Source : ministère des Finances [@minfin-ep-2022, p. 55 et 105 ; "
+             "@minfin-ep-2023, p. 200 ; @minfin-ep-2024, p. 84 et 154 ; @minfin-ep-2025, p. 57]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire. Les transferts de 2020 sont de 52,7 MD, chiffre provisoire, dans "
+        "l'édition LF 2022, et de 60,2 MD dans les éditions LF 2023 et LF 2024. La société "
+        "n'est dans aucun classement des dix premiers résultats positifs ou négatifs : le "
+        "panneau du résultat net ne porte que « n. c. » ; son résultat net est dans la figure "
+        "de la fiche, plus bas. « n. d. » : le rapport ne donne pas la grandeur. Ni l'un ni "
+        "l'autre n'est un zéro."),
+)
+```
+
+- **Ce que les textes établissent.** [En 1960](#r-ep-srt-sfax-1960), la commune de Sfax est autorisée à emprunter 75 000 dinars à la Caisse des prêts aux communes, sur vingt ans à 2 %, pour financer « sa participation à une société de transport », que le décret ne nomme pas. [En 1963](#r-ep-srt-sfax-1963), cinq communes du gouvernorat, Sfax (30 000 dinars), La Chebba (2 000), Djebeniana (3 000), Maharès (5 000) et Sakiet Ez-Zit (5 000), sont autorisées à emprunter à la même caisse, aux mêmes conditions, pour souscrire au capital de la Société régionale de transports de Sfax. [En 1974](#r-ep-srt-sfax-1974), l'État est autorisé à souscrire en numéraire 450 000 dinars à son capital. La société a un comité d'entreprise [depuis 1969](#r-ep-srt-sfax-1969), sous le nom de S.O.R.E.T.R.A.S. ; [en 2001](#r-ep-srt-sfax-2001), son organigramme est fixé par décret. [En janvier 2015](#r-ep-srt-sfax-2015), une partie de son personnel est réquisitionnée, au motif que l'arrêt du travail sur son réseau d'autobus « est de nature à nuire à un intérêt vital du pays ».
+- **Ce que l'État verse.** Les transferts du budget sont de 48,9 MD en 2018, 48,0 MD en 2019, 60,2 MD en 2020 et 55,7 MD en 2021 ; l'édition LF 2024 donne 70,1 MD pour 2022, chiffre provisoire. La fiche de la même source porte une subvention d'exploitation, ligne des comptes de la société : 47,6 MD en 2018, 48 MD en 2019, 58,7 MD en 2020, 52,5 MD en 2021, 64,3 MD en 2022 et 67,6 MD en 2023. Elle est égale aux transferts en 2019 (48 MD) et, dans l'édition LF 2022, en 2020 (52,7 MD, chiffre provisoire) ; elle leur est inférieure en 2018 et, dans les éditions suivantes, de 2020 à 2022 : 58,7 MD contre 60,2 MD, 52,5 contre 55,7 MD, 64,3 contre 70,1 MD. Les recettes de la société sont de 14,3 MD en 2021, 16,6 MD en 2022 et 17,4 MD en 2023 : la subvention en vaut près de quatre fois le montant (@fig-ep-srt-sfax-fiches).
+- **Des pertes chaque année.** Le résultat d'exploitation est négatif de 2018 à 2021, de −11,7 MD à −0,8 MD, et positif en 2022 et 2023 (4,3 et 7,2 MD) ; les charges financières nettes passent de 4,0 MD en 2018 à 21,3 MD en 2023. Le résultat net est de −15,6 MD en 2018, −18,2 MD en 2019, −9,5 MD en 2020, −16,3 MD en 2021, −4,9 MD en 2022 et −14,0 MD en 2023. L'effectif baisse de 1 322 agents en 2018 à 1 143 en 2023 ; les charges de personnel passent de 49,7 MD à 54,4 MD (@fig-ep-srt-sfax-budget, @tbl-ep-effectifs-entreprises).
+- **Des fonds propres négatifs qui se creusent.** Dans l'édition LF 2022, les fonds propres sont de −53,0 MD fin 2018, −69,5 MD fin 2019 et −88,3 MD fin 2020, chiffre provisoire, et la dette passe de 103,8 MD à 133,4 MD, dont 24,4 puis 40,1 MD envers l'État et 34,2 puis 57,7 MD envers les caisses sociales. Dans l'édition LF 2025, les fonds propres sont de −110,3 MD fin 2021, −110,0 MD fin 2022 et −124,7 MD fin 2023, et le total des passifs, hors fonds propres, passe de 140,9 MD à 178,4 MD, dont 105,1 puis 133,3 MD d'autres passifs courants, pour 30,7 puis 53,7 MD d'actifs.
+- **Des éditions qui ne concordent pas.** Dans l'édition LF 2022, la dette totale dépasse la somme des cinq créanciers de 13,2 MD en 2018, 16,3 MD en 2019 et 11,2 MD en 2020. L'édition LF 2024 imprime des fonds propres positifs pour 2020, 96,4 MD : le bilan n'est juste qu'avec le signe « − » (130,7 − 96,4 = 34,3 MD d'actifs), mais la ligne des variations de la même page calcule sur +96,4 MD ; l'édition LF 2022 donnait −88,3 MD, chiffre provisoire. Les comptes de 2020 sont révisés de l'édition LF 2022 à l'édition LF 2024 : subvention d'exploitation de 52,7 à 58,7 MD, produits d'exploitation de 66,9 à 73,0 MD, résultat d'exploitation de −6,6 à −0,8 MD. Les créances sur les clients de 2021 et 2022 sont de 16,1 et 15,3 MD dans l'édition LF 2024, de 2,8 et 2,0 MD dans l'édition LF 2025.
+
+:::: {.chronologie-repliable titre="Société régionale de transport de Sfax : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et textes de capital, d'organisation et de réquisition, 1960-2015"}
+
+```{python}
+#| label: fig-ep-srt-sfax-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "srt_sfax_fiches",
+    caption=("Société régionale de transport de Sfax d'après le rapport sur les entreprises "
+             "publiques, exercices 2018-2023, en millions de dinars courants et en agents : chaque "
+             "exercice dans la dernière édition qui le donne ; dette par créancier de l'édition "
+             "LF 2022. Source : ministère des Finances [@minfin-ep-2022, p. 55 ; "
+             "@minfin-ep-2024, p. 84 ; @minfin-ep-2025, p. 57]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; tous les "
+        "exercices 2020 à 2023 sont dits réalisés, 2018 et 2019 sans statut imprimé. Les fonds propres de 2020 sont ceux de "
+        "l'édition LF 2024, imprimés positifs (96,4 MD) : ils sont tracés tels quels, "
+        "au-dessus de zéro ; l'édition LF 2022 donne −88,3 MD pour la même fin d'année, "
+        "chiffre provisoire. La dette totale n'est imprimée que par l'édition LF 2022 ; elle "
+        "dépasse la somme des créanciers. Le total des passifs n'est imprimé que par les "
+        "éditions LF 2024 et LF 2025. Le résultat net est celui d'avant modifications "
+        "comptables, égal à celui d'après chaque année. Toutes les valeurs imprimées, édition "
+        "par édition, sont dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("srt_sfax", ("LF2022",),
+    caption=("Société régionale de transport de Sfax, édition LF 2022 : dette par créancier, "
+             "fonds propres, investissements, résultat et emploi, exercices 2018-2020. La dette "
+             "totale dépasse la somme des créanciers de 13,2 MD (2018), 16,3 MD (2019) et "
+             "11,2 MD (2020) ; 2020 est provisoire. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 55]"),
+    tbl_id="tbl-ep-srt-sfax-fiche-a")
+ge.tableau_fiche_detail("srt_sfax", ("LF2024", "LF2025"),
+    caption=("Société régionale de transport de Sfax, éditions LF 2024 et LF 2025 : bilan et "
+             "résultat, exercices 2020-2023. L'édition LF 2024 imprime les fonds propres de 2020 "
+             "positifs, laisse blanche la case des produits de placement de 2020 et imprime "
+             "« 13,4* » pour les recettes de 2020, sans note ; l'édition LF 2025 révise 2022, dit "
+             "provisoire dans la précédente. Source : ministère des Finances "
+             "[@minfin-ep-2024, p. 84 ; @minfin-ep-2025, p. 57]"),
+    tbl_id="tbl-ep-srt-sfax-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-srt-sfax-1960}[6 mars 1960]{.insecable} : *Journal officiel* du 4 mars 1960, exécutoire un jour franc après sa parution | décret n° 60-68 du 3 mars 1960 [@decret60-68-sfax, art. 1^er^ et 2, p. 288] | la commune de Sfax est autorisée à emprunter 75 000 dinars à la Caisse des prêts aux communes, amortissables en vingt ans au taux de 2 % (art. 1^er^), exclusivement affectés au financement de « sa participation à une société de transport », et gagés sur ses ressources ordinaires (art. 2) | antécédent |
+| []{#r-ep-srt-sfax-1963}entre le [5]{.insecable} et le [9 mai 1963]{.insecable} : *Journal officiel* des 3-7 mai 1963, exécutoire un jour franc après sa parution | décrets n° 63-154 à 63-158 du 26 avril 1963 [@decret63-154-srt-sfax, art. 1^er^ et 2, p. 619 ; @decret63-155-srt-sfax, p. 619 ; @decret63-156-srt-sfax, p. 620 ; @decret63-157-srt-sfax, p. 620 ; @decret63-158-srt-sfax, p. 620] | les communes de Sfax (30 000 dinars), La Chebba (2 000), Djebeniana (3 000), Maharès (5 000) et Sakiet Ez-Zit (5 000) sont autorisées à emprunter à la Caisse des prêts aux communes, sur vingt ans au taux de 2 % (art. 1^er^), exclusivement pour souscrire au capital de la Société régionale de transports de Sfax, sur leurs ressources ordinaires (art. 2) | mise en place |
+| []{#r-ep-srt-sfax-1969}[27 avril 1969]{.insecable} : *Journal officiel* du 25 avril 1969, exécutoire un jour franc après sa parution | arrêté du secrétaire d'État à la Jeunesse, aux Sports et aux Affaires sociales du 24 avril 1969 [@arrete-1969-04-24-comites-soretras, p. 482] | homologation des décisions de la commission prévue à l'article 157 du code du travail établissant un comité d'entreprise à la « Société Régionale de Transport (S.O.R.E.T.R.A.S.) à Sfax » | ajustement |
+| []{#r-ep-srt-sfax-1974}entre le [4]{.insecable} et le [8 août 1974]{.insecable} : *Journal officiel* des 2-6 août 1974, exécutoire un jour franc après sa parution | loi n° 74-71 du 3 août 1974 [@loi74-71-srt-sfax, article unique, p. 1741] | le ministre du Plan, pour le compte de l'État, est autorisé à souscrire en numéraire à la participation au capital de la Société régionale de transports du gouvernorat de Sfax, à concurrence de 450 000 dinars | étape |
+| []{#r-ep-srt-sfax-2001}[22 mars 2001]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 17 mars 2001, plus cinq jours, jour du dépôt non compté | décret n° 2001-663 du 8 mars 2001 [@decret2001-663-srt-sfax, art. 1^er^ à 3, p. 552-553] | organigramme de la société régionale de transport du gouvernorat de Sfax fixé par le schéma et l'annexe du décret (art. 1^er^) ; mise en application sur la base de fiches de fonctions, nomination aux emplois fonctionnels selon l'article 10 bis de la loi n° 89-9 du 1^er^ février 1989 (art. 2) ; manuel de procédures à établir (art. 3) | ajustement |
+| []{#r-ep-srt-sfax-2015}[13 janvier 2015]{.insecable} : « immédiatement exécutoire » (art. 2) | décret n° 2015-5 du 13 janvier 2015 [@decret2015-5-srt-sfax, art. 1^er^ à 4, p. 105] | réquisition, à partir du 13 janvier 2015, des personnels de la société désignés dans une liste annexée, au motif que l'arrêt du travail sur son réseau d'autobus est de nature à nuire à un intérêt vital du pays (art. 1^er^) ; les agents requis se présentent à leur poste habituel (art. 3) ; peines prévues par la législation pour qui n'exécute pas la réquisition (art. 4) | ajustement |
+
+: Les textes de la Société régionale de transport de Sfax : capital, organisation et réquisition {#tbl-ep-registre-srt-sfax}
+
+::::
+
+### La Société régionale de transport de Bizerte {#sec-ep-ge-srt-bizerte}
+
+**La Société régionale de transport de Bizerte exploite les autobus de Bizerte ; le budget lui verse de 25,0 à 31,9 MD par an de 2018 à 2022, chiffre provisoire pour la dernière année, et sa subvention d'exploitation fait de 48 à 63 % de ses produits d'exploitation de 2018 à 2023. Son résultat net va de −0,8 MD à +3,9 MD sur la période, dans la dernière édition du rapport du ministère des Finances qui donne chaque exercice.**
+
+```{python}
+#| label: fig-ep-srt-bizerte-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "srt_bizerte_budget",
+    caption=("Société régionale de transport de Bizerte : transferts du budget, effectif et "
+             "charges de personnel, exercices 2016-2023, d'après le rapport sur les entreprises "
+             "publiques. Source : ministère des Finances [@minfin-ep-2022, p. 55 et 105 ; "
+             "@minfin-ep-2023, p. 200 ; @minfin-ep-2024, p. 85 et 154 ; @minfin-ep-2025, p. 58]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire. Les transferts de 2019 sont de 24 MD dans l'édition LF 2022 et de "
+        "25,6 MD dans l'édition LF 2023 ; ceux de 2020, de 30 MD, chiffre provisoire, puis de "
+        "31,8 MD. La société n'est dans aucun classement des dix premiers résultats positifs "
+        "ou négatifs : le panneau du résultat net ne porte que « n. c. » ; son résultat net "
+        "est dans la figure de la fiche, plus bas. « n. d. » : le rapport ne donne pas la "
+        "grandeur. Ni l'un ni l'autre n'est un zéro."),
+)
+```
+
+- **Ce que les textes établissent.** La société a un comité d'entreprise [depuis 1973](#r-ep-srt-bizerte-1973). Elle reçoit les abandons de créances de l'État de 1989, 1999 et 2005 (@tbl-ep-srt-abandons). [En janvier 2015](#r-ep-srt-bizerte-2015), une partie de son personnel est réquisitionnée, au motif que l'arrêt du travail sur son réseau d'autobus « est de nature à nuire à un intérêt vital du pays ».
+- **Ce que l'État verse.** Les transferts du budget sont de 25,0 MD en 2018, 25,6 MD en 2019, 31,8 MD en 2020 et 27,8 MD en 2021 ; l'édition LF 2024 donne 31,9 MD pour 2022, chiffre provisoire. La subvention d'exploitation inscrite à la fiche est de 22 MD en 2018, 24,7 MD en 2019, 31 MD en 2020, 27,8 MD en 2021, 31,9 MD en 2022 et 33,6 MD en 2023, chiffre provisoire ; elle est égale aux transferts en 2021 et en 2022, et inférieure de 3,0 MD en 2018, 0,9 MD en 2019 et 0,8 MD en 2020 ; elle dépasse les recettes de la société, 20,1 MD en 2021, 21,6 MD en 2022 et 24,7 MD en 2023 (@fig-ep-srt-bizerte-fiches).
+- **Un résultat proche de l'équilibre.** Le résultat d'exploitation va de −4,2 MD en 2018 à +5,3 MD en 2023, chiffre provisoire ; le résultat net est de −0,4 MD en 2018, −0,8 MD en 2019, −0,1 MD en 2020, −0,6 MD en 2021, +0,9 MD en 2022 et +3,9 MD en 2023, chiffre provisoire. L'effectif baisse de 729 agents en 2018 à 623 en 2023, chiffre provisoire ; les charges de personnel passent de 29,3 MD à 32,4 MD (@fig-ep-srt-bizerte-budget, @tbl-ep-effectifs-entreprises).
+- **Des fonds propres négatifs.** Dans l'édition LF 2022, la dette est de 25,9 MD fin 2018 et 29,7 MD fin 2019, dont 16,7 puis 19,7 MD envers l'État ; pour 2020, seule la dette envers l'État est imprimée, 23 MD. Dans l'édition LF 2025, les fonds propres sont de −29,1 MD fin 2021, −24,9 MD fin 2022 et −21,9 MD fin 2023, chiffre provisoire, et le total des passifs, hors fonds propres, de 67,7, 71,3 et 67,0 MD, pour 38,6, 46,3 et 45,1 MD d'actifs.
+- **Des éditions qui ne concordent pas.** Dans l'édition LF 2022, la dette totale est inférieure à la somme des créanciers, de 6,4 MD en 2018 et de 10,4 MD en 2019 ; les fonds propres de 2018 sont imprimés positifs, 25,9 MD, le montant de la dette totale de la même ligne, puis −27,2 MD en 2019 ; les investissements des trois exercices et la dette de 2020, hors l'État, sont remplacés par une note disant que la donnée manque au document d'orientation de l'entreprise. Dans l'édition LF 2024, la colonne des fonds propres porte 1,9, 1,4 et 4,7 MD pour 2020 à 2022 et le bilan n'est pas juste (actifs − passifs = −28,1, −29,1 et −26,1 MD ; l'édition LF 2025 imprime −29,1 MD pour 2021) ; les autres produits d'exploitation de 2020 et 2021 (32 et 29 MD) comprennent la subvention (31 et 27,8 MD), l'édition LF 2025 imprimant 1,2 MD pour 2021. Les comptes de 2022, dits réalisés dans les deux éditions, diffèrent : actifs de 43,4 puis 46,3 MD, passifs de 69,5 puis 71,3 MD ; l'effectif de 2021 est de 635 agents dans l'édition LF 2024, de 626 dans l'édition LF 2025.
+
+:::: {.chronologie-repliable titre="Société régionale de transport de Bizerte : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et textes de comité d'entreprise et de réquisition, 1973-2015"}
+
+```{python}
+#| label: fig-ep-srt-bizerte-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "srt_bizerte_fiches",
+    caption=("Société régionale de transport de Bizerte d'après le rapport sur les entreprises "
+             "publiques, exercices 2018-2023, en millions de dinars courants et en agents : chaque "
+             "exercice dans la dernière édition qui le donne ; dette par créancier de l'édition "
+             "LF 2022. Source : ministère des Finances [@minfin-ep-2022, p. 55 ; "
+             "@minfin-ep-2024, p. 85 ; @minfin-ep-2025, p. 58]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2023 est "
+        "provisoire (hachures). Les fonds propres de 2018 (25,9 MD, édition LF 2022) et de "
+        "2020 (1,9 MD, édition LF 2024) sont tracés tels qu'imprimés, au-dessus de zéro. La "
+        "dette de 2020 n'est pas tracée : l'édition LF 2022 n'en imprime que la part de "
+        "l'État, 23 MD. Le total des passifs n'est imprimé que par les éditions LF 2024 et "
+        "LF 2025. Le résultat net est celui d'avant modifications comptables, égal à celui "
+        "d'après chaque année. Toutes les valeurs imprimées, édition par édition, sont dans "
+        "les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("srt_bizerte", ("LF2022",),
+    caption=("Société régionale de transport de Bizerte, édition LF 2022 : dette par créancier, "
+             "fonds propres, investissements, résultat et emploi, exercices 2018-2020. La dette "
+             "totale est inférieure à la somme des créanciers de 6,4 MD (2018) et 10,4 MD "
+             "(2019) ; les investissements, et la dette de 2020 hors l'État, sont remplacés par "
+             "une note. Source : ministère des Finances [@minfin-ep-2022, p. 55]"),
+    tbl_id="tbl-ep-srt-bizerte-fiche-a")
+ge.tableau_fiche_detail("srt_bizerte", ("LF2024", "LF2025"),
+    caption=("Société régionale de transport de Bizerte, éditions LF 2024 et LF 2025 : bilan et "
+             "résultat, exercices 2020-2023. Dans l'édition LF 2024, le bilan n'est pas juste et "
+             "les autres produits d'exploitation de 2020 et 2021 comprennent la subvention. "
+             "Source : ministère des Finances [@minfin-ep-2024, p. 85 ; @minfin-ep-2025, p. 58]"),
+    tbl_id="tbl-ep-srt-bizerte-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-srt-bizerte-1973}entre le [22]{.insecable} et le [29 juillet 1973]{.insecable} : *Journal officiel* des 20-27 juillet 1973, exécutoire un jour franc après sa parution | arrêté des ministres de l'Économie nationale et des Affaires sociales du 14 juillet 1973 [@arrete-1973-07-14-comites-srt-bizerte, p. 1148] | homologation des décisions de la commission supérieure prévue à l'article 157 du code du travail établissant un comité d'entreprise à la « Société Régionale de Transport - Bizerte » | ajustement |
+| []{#r-ep-srt-bizerte-2015}[13 janvier 2015]{.insecable} : « immédiatement exécutoire » (art. 2) | décret n° 2015-6 du 13 janvier 2015 [@decret2015-6-srt-bizerte, art. 1^er^ à 4, p. 106] | réquisition, à partir du 13 janvier 2015, des personnels de la société désignés dans une liste annexée, au motif que l'arrêt du travail sur son réseau d'autobus est de nature à nuire à un intérêt vital du pays (art. 1^er^) ; les agents requis se présentent à leur poste habituel (art. 3) ; peines prévues par la législation pour qui n'exécute pas la réquisition (art. 4) | ajustement |
+
+: Les textes de la Société régionale de transport de Bizerte : comité d'entreprise et réquisition {#tbl-ep-registre-srt-bizerte}
+
+::::
+
+<!-- TODO (documentaliste) : fiches des sociétés régionales de transport de Sfax et de Bizerte des éditions LF 2022 (p. 55), LF 2024 (p. 84 et 85) et LF 2025 (p. 57 et 58) versées dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-srt). Grandeurs d'activité non relevées : voyageurs et kilomètres parcourus. Textes de création et statuts des deux sociétés (sociétés anonymes : statuts hors du Journal officiel ; acte constitutif de la société de Sfax vers 1962-1963) : à obtenir. Société de Bizerte : aucun texte antérieur à l'arrêté de 1973 relevé dans jort_cache.db par les intitulés français (« transport », « Bizerte », « Menzel », « Mateur ») ; intitulés arabes et fascicules de 1958-1973 à interroger. Société « de transport » à laquelle la commune de Sfax participe en 1960 : à identifier. Textes non lus : décret n° 2001-663, schéma et annexe de l'organigramme ; arrêté du 25 novembre 2008 (calendrier de conservation des documents de la société de Bizerte, JORT n° 96 de 2008, p. 3999-4000), arrêté du 19 août 2011 (même objet, société de Sfax, JORT n° 63 de 2011) et arrêté du 11 octobre 2018 (sociétés régionales, JORT n° 85 de 2018, p. 3570) ; décrets de 1963 sur les autres sociétés régionales (Sousse, Kairouan, Béja, Le Kef, Souk-El-Arba, Gafsa, Cap-Bon), lus aux seules métadonnées. Part de l'État, des communes et des autres actionnaires dans le capital aujourd'hui : à chercher (rapport sur les entreprises publiques, registre du commerce). Objet des transferts du budget (compensation des tarifs réduits, subvention d'équilibre) : à rapprocher du volume « La compensation » et des tableaux par établissement de l'annexe 8. -->
 
 <!-- TODO (documentaliste) : SNCFT : statuts de 1969 (loi n° 69-31 du 9 mai 1969, JORT n° 19, p. 581-584) non lus ; longue période avant 2018 à chercher (rapports annuels de la société, annexe 8 pour les transferts 2016-2024). -->
