@@ -3740,8 +3740,8 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Tunisie Télécom, Poste et Office du commerce versées le
-    29 octobre 2026, `#sec-ep-ge-tt`, `#sec-ep-ge-poste`, `#sec-ep-ge-otc`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
+  - les autres grandes entreprises (Tunisie Télécom, Poste, Office du commerce et SNDP versées le
+    29 octobre 2026, `#sec-ep-ge-tt`, `#sec-ep-ge-poste`, `#sec-ep-ge-otc`, `#sec-ep-ge-sndp`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
   - SNCFT : statuts de 1969 (loi n° 69-31, JORT n° 19 de 1969, p. 581-584, dans le corpus local,
@@ -3825,6 +3825,44 @@ Ce qui reste :
     et loi n° 61-44, loi n° 62-29) : **dans le corpus local, à l'image**, non lues ;
   - décrets n° 89-1197 et 91-178 (article 5 du décret n° 77-467, composition du conseil) : lus à
     l'OCR, non versés au registre ; décret n° 99-1304 (organigramme), non lu ;
+- **SNDP — section écrite le 29 octobre 2026** (`_energie.qmd`, `#sec-ep-ge-sndp`, après la
+  STIR et son TODO ; aucune ligne de la SNDP dans les séries des transferts du budget : figure
+  de la fiche seule). **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-sndp`) :
+  LF 2022 p. 62 (page du fichier 61, tableau 26, sous la STIR), LF 2024 p. 96 (fichier 97),
+  LF 2025 p. 68, lues à l'image à 300 dpi et recoupées avec la couche texte ; figure
+  `fig-ep-sndp-fiches` et tableaux `tbl-ep-sndp-fiche-a` et `-b`, repliés. Écarts imprimés
+  déclarés : LF 2024, résultat d'exploitation 2020 (−30,6 pour −31,0) ; LF 2025, produits
+  d'exploitation 2022 (−0,5) et bilan 2023 provisoire (actifs 1 930 pour 1 709,0 de passifs et
+  de fonds propres, +221,0). Écarts entre éditions dits dans le texte : résultat net 2019
+  (−5,9 MD dans la fiche LF 2022, +7,9 MD dans le classement LF 2023), effectif 2020 (1 133 en
+  LF 2022, 1 151 en LF 2024).
+  Registre `tbl-ep-registre-sndp`, lu au corpus local : décrets-lois n° 63-4 (convention avec
+  l'AGIP, constitution d'AGIP S.A. Tunis à parité, p. 212, image) et n° 63-5 (75 000 dinars,
+  p. 214, image), loi n° 69-20 (425 000 dinars, p. 344, image), décret n° 77-466 (nom, objet,
+  tutelle, p. 1277-1279, image), loi n° 82-59 (5 MD, p. 1489, image), décret n° 85-775
+  (règlement des consommations de carburants des administrations, p. 813-814, image), décret
+  n° 89-1196 (conseil d'administration, p. 1348, image), décret n° 2001-372 (abrogation du
+  décret n° 77-466, p. 247, couche décalée décodée), décrets n° 2005-2753 et 2011-719
+  (article 52 du code d'incitation aux investissements, GPL à Radès et à Ghannouch). Le rachat
+  de 1975 renvoie à la ligne `r-ep-stir-1975` du registre de la STIR (loi n° 75-81).
+  Plein texte des fascicules français 1994-2012, couche décalée décodée : aucune garantie de
+  l'État au profit de la SNDP ; 7 fascicules sur 1 962 sans couche texte exploitable, non parcourus.
+  **Reste** :
+  - éditions LF 2020 (p. 91) et LF 2021 (p. 82) : comptes de la SNDP dans la prose, non versés
+    (**lisibles dans le corpus de `tunisia-data`**) ; ventes de produits pétroliers des fiches,
+    non relevées ;
+  - comptes publiés par la SNDP (rapports annuels, états financiers) : **à obtenir** ; ils
+    trancheraient le signe du résultat net de 2019 ;
+  - lois n° 63-5 et 63-6 (ratification des décrets-lois de 1963, JORT n° 19 de 1963, p. 505),
+    décret n° 80-165 (statut du personnel, JORT n° 17 de 1980, p. 849) : **dans le corpus local,
+    à l'image**, non lus ; décret n° 99-2645 (statut particulier) : publié en arabe seulement,
+    **édition arabe du JORT n° 96 de 1999 à lire** ; organigrammes et emplois fonctionnels
+    (n° 2001-370, 2001-371, 2007-448, 2008-3909, 2009-3085, 2021-278), non lus ;
+  - loi n° 2005-72 (dettes de la SNCFT envers la SNDP, 21,75 MD au 31 décembre 2001, converties
+    en fonds de dotation de la SNCFT) : lue, à verser à la section de la SNCFT ;
+  - garanties : les fascicules d'avant 1994 (sans couche texte) n'ont été parcourus que par
+    leurs intitulés ; les éditions arabes et 2013-2026, par le seul cache plein texte.
 - **Office des céréales — section écrite le 28 octobre 2026** (`_offices.qmd`,
   `#sec-ep-ge-oc`, avant la SNCFT : l'Office est le deuxième bénéficiaire des transferts après la
   STIR). Figures `fig-ep-oc-budget` (`grandes_entreprises.figure("oc_budget")` : transferts

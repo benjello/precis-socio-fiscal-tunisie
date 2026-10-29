@@ -19,6 +19,7 @@
     ge.figure("otc_budget", …) ; ge.figure("otc_fiches", …)  # Office du commerce de la Tunisie
     ge.figure("srt_sfax_budget", …) ; ge.figure("srt_bizerte_fiches", …)  # sociétés régionales
     ge.figure("ctf_fiches", …)                               # Compagnie tunisienne de forage
+    ge.figure("sndp_fiches", …)                              # SNDP : fiche seule
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -674,6 +675,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "srt_sfax": "Société régionale de transport de Sfax",
               "srt_bizerte": "Société régionale de transport de Bizerte"}
               "ctf": "CTF"}
+              "sndp": "SNDP"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -1034,6 +1036,8 @@ FIGURES = {
                            "fig_ep_srt_bizerte_budget"),
     "ctf_fiches": (lambda: fig_fiche("ctf"), lambda: table_fiche("ctf"), (S_FICHES,),
                    "fig_ep_ctf_fiches"),
+    "sndp_fiches": (lambda: fig_fiche("sndp"), lambda: table_fiche("sndp"), (S_FICHES,),
+                    "fig_ep_sndp_fiches"),
 }
 
 
