@@ -1,10 +1,10 @@
 # Les autres entreprises {#sec-ep-autres-entreprises .domicile-unique}
 
-Ce chapitre présente, une par une, les entreprises publiques qui ne relèvent d'aucun des chapitres de secteur : pour l'instant la Compagnie des phosphates de Gafsa (CPG) et le Groupe chimique tunisien (GCT), avec, pour chacune, sa naissance et son statut, ses comptes, sa dette, sa subvention d'exploitation et son emploi. Les entreprises d'énergie sont au chapitre « L'énergie » (@sec-ep-energie), celles du transport au chapitre « Les transports » (@sec-ep-transports), les offices et les monopoles au chapitre « Les offices et les monopoles » (@sec-ep-offices), celles de l'eau et des communications au chapitre « L'eau et les communications » (@sec-ep-eau-communications). Les transferts et les résultats de l'ensemble des entreprises sont au chapitre « Les grandes entreprises » (@sec-ep-lp-entreprises).
+Ce chapitre présente, une par une, les entreprises publiques qui ne relèvent d'aucun des chapitres de secteur : pour l'instant la Compagnie des phosphates de Gafsa (CPG), le Groupe chimique tunisien (GCT) et la Société tunisienne de sidérurgie El Fouladh, avec, pour chacune, sa naissance et son statut, ses comptes, sa dette, sa subvention d'exploitation et son emploi. Les entreprises d'énergie sont au chapitre « L'énergie » (@sec-ep-energie), celles du transport au chapitre « Les transports » (@sec-ep-transports), les offices et les monopoles au chapitre « Les offices et les monopoles » (@sec-ep-offices), celles de l'eau et des communications au chapitre « L'eau et les communications » (@sec-ep-eau-communications). Les transferts et les résultats de l'ensemble des entreprises sont au chapitre « Les grandes entreprises » (@sec-ep-lp-entreprises).
 
 ## La source {#sec-ep-autres-source}
 
-La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : pour chaque entreprise du chapitre, sa fiche, exercices 2018 à 2023, en trois éditions ; pour la CPG et le GCT, aussi la contribution de chaque entreprise aux ressources propres de l'État, des éditions LF 2022 et LF 2024, et les dettes et créances croisées avec l'État de l'édition LF 2025. Le dernier exercice de chaque édition y est le plus souvent provisoire, estimé ou probable, et l'édition suivante le révise souvent. Pour le GCT, l'édition LF 2025 n'imprime pas l'exercice 2023. Ce que l'État paie à la place de ces entreprises au titre de leur dette garantie vient d'une autre source, les rapports de la Cour des comptes sur la clôture du budget, cités à part.
+La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances : pour chaque entreprise du chapitre, sa fiche, exercices 2018 à 2023, en trois éditions ; pour la CPG et le GCT, aussi la contribution de chaque entreprise aux ressources propres de l'État, des éditions LF 2022 et LF 2024, et les dettes et créances croisées avec l'État de l'édition LF 2025. Le dernier exercice de chaque édition y est le plus souvent provisoire, estimé ou probable, et l'édition suivante le révise souvent. Pour le GCT, l'édition LF 2025 n'imprime pas l'exercice 2023. Pour El Fouladh, la même source donne aussi les transferts du budget, des éditions LF 2021 à LF 2023, et ses dettes et créances envers l'État de fin 2023, de l'édition LF 2025 ; l'édition LF 2024 dit l'exercice 2022 « prévu ». Ce que l'État paie à la place de ces entreprises au titre de leur dette garantie vient d'une autre source, les rapports de la Cour des comptes sur la clôture du budget, cités à part.
 
 ## La CPG {#sec-ep-ge-cpg}
 
@@ -162,4 +162,106 @@ ge.tableau_fiche_detail("gct", ("LF2024", "LF2025"),
 
 <!-- TODO (documentaliste) : fiche du GCT des éditions LF 2022 (p. 63), LF 2024 (p. 97) et LF 2025 (p. 72) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (28 octobre 2026, branche donnees/fiches-cpg-gct) ; exercice 2023 remplacé par une note dans l'édition LF 2025. Grandeur d'activité non relevée : ventes en millions de tonnes (LF 2022). Contribution aux ressources propres de l'État (LF 2022 p. 103) et dettes et créances croisées de fin 2022 (LF 2024, tableaux 38 et 39) : lues sur les pages, non versées dans une série ; le Groupe ne figure pas au tableau 42 de l'édition LF 2024 (p. 150-151). Éditions françaises LF 2020 (p. 80) et LF 2021 (p. 92) : comptes dans la prose, non versés. Texte de constitution du Groupe chimique tunisien (regroupement de sociétés, dont la SIAPE et la SAEPA, que le décret n° 2000-2947 rattache au Groupe) : non identifié dans jort_cache.db par les intitulés français et arabes ; forme juridique, capital et part de l'État : non lus. Textes non lus : augmentations de capital et participations de l'État dans la SIAPE, les Industries chimiques maghrébines, la SEPA/SAEPA, les Industries chimiques de Gafsa et la Société des industries chimiques du fluor (lois n° 72-60, 73-67 et décret-loi n° 73-12, 74-55, 75-22, 75-23, 76-101, 76-103, 78-48 et décret-loi n° 78-4, 79-34, 79-36, 80-7, 80-40, 80-47, 81-83 et décret-loi n° 81-4, 83-7, 84-43, 85-112, 86-99 et décret-loi n° 86-3, 88-65, 90-8) ; statut particulier du personnel (décrets n° 99-2646 et 2001-2620), organigramme (décret n° 2000-2909), emplois fonctionnels (décrets n° 2001-887 et 2016-585) ; concessions portuaires de Gabès et de Sfax (décrets n° 2007-367 et 2007-2345) ; décrets de ratification n° 2009-2506, 2017-50, 2017-51, 2021-54 (indexé 2021-53 dans jort_cache.db), 2023-236, 2026-194 et 2026-195. Comptes publiés et rapports annuels du Groupe : à obtenir. -->
 
-<!-- TODO (documentaliste) : fiches par entreprise des éditions LF 2022, LF 2024 et LF 2025 versées pour la CPG et le GCT (série entreprises-publiques-fiches-entreprises). Restent à verser, mêmes pages de ces éditions (effectifs déjà versés, voir entreprises-publiques-effectifs.csv de tunisia-data pour les pages) : Les éditions françaises LF 2020 et LF 2021 et l'édition LF 2023 donnent les comptes dans la prose, pas en tableau. Classements par charges de personnel et par produits d'exploitation : non versés. -->
+## El Fouladh {#sec-ep-ge-fouladh}
+
+Les paiements de l'État au titre de la dette garantie des entreprises publiques sont exposés à la @sec-ep-garanties-cloture ; les dettes et créances croisées de l'ensemble des entreprises, à la @sec-ep-croisees.
+
+**La [Société tunisienne de sidérurgie El Fouladh](#g-el-fouladh), au capital de laquelle l'État souscrit depuis 1962 et qui produit du fer laminé, des fils tréfilés et des structures métalliques, n'a pas de subvention d'exploitation ; le budget lui verse 10,0 MD en 2019 et rien les autres années de 2017 à 2021. Dans la dernière édition du rapport du ministère des Finances qui donne chaque exercice, elle est en perte chaque année de 2018 à 2023, et ses fonds propres, négatifs, passent de −235,2 MD fin 2018 à −395,8 MD fin 2023, chiffre probable.**
+
+```{python}
+#| label: fig-ep-fouladh-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "fouladh_budget",
+    caption=("El Fouladh : transferts du budget, effectif et charges de personnel, exercices "
+             "2016-2023, d'après le rapport sur les entreprises publiques. Source : ministère "
+             "des Finances [@minfin-ep-2020, p. 97 ; @minfin-ep, p. 96 et 150 ; "
+             "@minfin-ep-2022, p. 63 et 105 ; @minfin-ep-2023, p. 201 ; @minfin-ep-2024, "
+             "p. 92 ; @minfin-ep-2025, p. 71]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire ou probable. Pour 2020, l'édition LF 2021 donnait 150 MD de transferts, "
+        "chiffre provisoire ; les éditions LF 2022 et LF 2023 donnent 0. La société n'est dans "
+        "aucun classement des dix premiers résultats positifs ou négatifs de 2017 à 2022 "
+        "(« n. c. ») ; son résultat net est dans la figure des fiches, plus bas. Effectif de "
+        "2018 : 1 087 agents dans l'édition LF 2021, 1 046 dans les éditions LF 2020 et "
+        "LF 2022. « n. d. » : le rapport ne donne pas la grandeur ; ce n'est pas un zéro."),
+)
+```
+
+- **Ce que l'État apporte au capital.** [En 1962](#r-ep-fouladh-1962), l'État est autorisé à souscrire au capital de la société dans la limite de 1,7 MD. [En 1965](#r-ep-fouladh-1965), il souscrit à une augmentation de son capital de 0,9 MD, imputée sur le budget d'équipement du plan quadriennal 1965-1968. [En 1972](#r-ep-fouladh-1972), la loi régularise sa souscription de 2,8 MD à l'augmentation de capital décidée en 1968, l'autorise à réduire sa participation de 3,6 MD, « en vue de la contraction totale du capital », et à souscrire à une nouvelle augmentation de 2,4 MD. [En 1983](#r-ep-fouladh-1983), il souscrit 4,18 MD, dont 2,98 MD par conversion des crédits qu'il avait avancés en 1981 et 1982 et 1,2 MD en numéraire.
+- **Des dettes que l'État paie.** [En 2013](#r-ep-fouladh-2013), l'État prend en charge les dettes bancaires de la société nées des pertes de son activité commerciale d'importation de ronds à béton, dans la limite de 47,645 MD de principal et de 12,644 MD d'intérêts, envers la Banque nationale agricole, la Banque de l'habitat et la Société tunisienne de banque. Dans ses rapports sur la clôture du budget, la Cour des comptes relève un principal de dette garantie payé par l'État au titre de la société de 47,0 MD pour la gestion 2013, que son rapport de 2013 rattache à la Société tunisienne de banque, puis de 23,8 MD pour la gestion 2014 et de 23,8 MD pour la gestion 2015 [@cdc-cloture-2014, p. 99 ; @cdc-cloture-2015, p. 91 ; @cdc-cloture-2016, p. 100]. [En 2015](#r-ep-fouladh-2015), la loi approuve la garantie de l'État à une convention de « Mourabaha » de 20 millions de dollars au plus, conclue avec la Société internationale islamique de financement du commerce pour financer ses importations de matières premières.
+- **Ce que le budget verse.** Le rapport porte un transfert du budget de 10,0 MD pour 2019 et aucun pour 2017, 2018, 2020 et 2021 ; pour 2020, l'édition LF 2021 donnait 150 MD, chiffre provisoire, que les éditions suivantes ramènent à 0 (@fig-ep-fouladh-budget). Dans la fiche de la même source, la subvention d'exploitation est nulle de 2018 à 2023.
+- **Des exonérations liées à la ferraille.** [Pour 2020 et 2021](#r-ep-fouladh-2020), la société est exonérée de la taxe due à l'exportation des déchets et débris de fer, dans la limite de 100 000 tonnes. [Depuis 2025](#r-ep-fouladh-2025-lf), le matériel usé qui a bénéficié d'un avantage fiscal à l'importation ou d'un acquit à caution est exonéré des droits et taxes quand il est détruit et que le déchet ferreux est cédé gratuitement à la société. [Depuis 2025](#r-ep-fouladh-2025) aussi, les ministères, les collectivités locales, les établissements et les entreprises publics lui cèdent gratuitement leurs biens mobiliers réformés contenant du fer ; la société en assure le démontage et la découpe.
+- **Des pertes chaque année.** Les produits d'exploitation sont de 147,6 MD en 2018, 209,8 MD en 2019, 165,4 MD en 2020, 167,2 MD en 2021, 175,9 MD en 2022 et 153,0 MD en 2023, chiffre probable ; les recettes en font presque tout. Le résultat d'exploitation, négatif de 2018 à 2020 (−3,2 ; −1,7 ; −9,2 MD), est positif de 2021 à 2023 (14,4 ; 31,1 ; 21,2 MD). Le résultat net est de −32,5 MD en 2018, −27,1 MD en 2019, −44,8 MD en 2020, −25,9 MD en 2021, −4,8 MD en 2022 et −64,5 MD en 2023, chiffre probable (@fig-ep-fouladh-fiches).
+- **Fonds propres, dette et emploi.** Dans l'édition LF 2022, la dette passe de 477,3 MD fin 2018 à 524,0 MD fin 2020, dont 171,3 à 194,4 MD envers les banques, 101,7 à 123,4 MD envers d'autres entreprises publiques, 63,0 à 86,5 MD envers les caisses sociales et 65,0 à 72,3 MD envers l'État. Le total des passifs, hors fonds propres, passe de 520,1 MD fin 2020 à 621,6 MD fin 2023, chiffre probable, dont 246,5 puis 290,0 MD de concours bancaires. Fin 2023, la société déclare 67,9 MD de dettes envers l'État, vingt-cinquième montant du classement des entreprises, et 9,0 MD de créances sur lui, trentième montant [@minfin-ep-2025, p. 118-119 et 122-123]. L'effectif passe de 1 090 agents en 2016 à 866 en 2023, chiffre probable ; les charges de personnel, de 36,8 MD en 2018 à 42 MD en 2023 (@fig-ep-fouladh-budget, @tbl-ep-effectifs-entreprises).
+- **Des éditions qui ne concordent pas.** Pour 2022, prévu dans l'édition LF 2024 puis réalisé dans l'édition LF 2025, le résultat d'exploitation passe de 39 à 31,1 MD, le résultat net avant modifications comptables de 1,8 à −4,8 MD, et l'effectif de 984 à 953 agents. Pour 2020, l'effectif est de 951 agents dans l'édition LF 2022 et de 942 dans l'édition LF 2024. Dans l'édition LF 2024, les produits d'exploitation de 2021 et de 2022 diffèrent de 0,2 MD de la somme des recettes et des autres produits ; l'édition LF 2025 corrige les recettes de 2021 et boucle.
+
+:::: {.chronologie-repliable titre="El Fouladh : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, effectif), et textes de capital, de reprise de dettes, de garantie et de régime douanier, 1962-2025"}
+
+```{python}
+#| label: fig-ep-fouladh-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "fouladh_fiches",
+    caption=("El Fouladh d'après le rapport sur les entreprises publiques, exercices "
+             "2018-2023, en millions de dinars courants et en agents : chaque exercice dans la "
+             "dernière édition qui le donne ; dette par créancier de l'édition LF 2022. "
+             "Source : ministère des Finances [@minfin-ep-2022, p. 63 ; @minfin-ep-2024, p. 92 ; "
+             "@minfin-ep-2025, p. 71]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2023 est "
+        "probable (hachures). La subvention d'exploitation est nulle dans les trois éditions. "
+        "La dette totale n'est imprimée que par l'édition LF 2022, le total des passifs que "
+        "par les éditions LF 2024 et LF 2025. Le résultat net tracé est celui d'avant "
+        "modifications comptables ; pour 2022, celui d'après est de −6,6 MD. Toutes les "
+        "valeurs imprimées, édition par édition, sont dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("el_fouladh", ("LF2022",),
+    caption=("El Fouladh, édition LF 2022 : dette par créancier, fonds propres, "
+             "investissements, résultat et emploi, exercices 2018-2020. Source : ministère des "
+             "Finances [@minfin-ep-2022, p. 63]"),
+    tbl_id="tbl-ep-fouladh-fiche-a")
+ge.tableau_fiche_detail("el_fouladh", ("LF2024", "LF2025"),
+    caption=("El Fouladh, éditions LF 2024 et LF 2025 : bilan et résultat, exercices "
+             "2020-2023 ; 2022 prévu dans l'édition LF 2024, 2023 probable dans l'édition "
+             "LF 2025. Dans l'édition LF 2024, les produits d'exploitation de 2021 (167,2 MD) "
+             "et de 2022 (175,8 MD) diffèrent de 0,2 MD de la somme des recettes et des autres "
+             "produits. Source : ministère des Finances [@minfin-ep-2024, p. 92 ; "
+             "@minfin-ep-2025, p. 71]"),
+    tbl_id="tbl-ep-fouladh-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-fouladh-1962}[2 septembre 1962]{.insecable} au plus tôt : *Journal officiel* du 31 août-4 septembre 1962, exécutoire un jour franc après sa parution | décret-loi n° 62-22 du 30 août 1962 [@decret-loi62-22-fouladh, art. 1^er^ et 2, p. 1072-1073], ratifié par la loi n° 62-59 du 27 novembre 1962 [@loi62-59-fouladh, article unique, p. 1438] | le secrétaire d'État au Plan et aux Finances, agissant pour le compte de l'État, est autorisé à souscrire au capital de la Société tunisienne de sidérurgie « El Fouladh » à concurrence de 1 700 000 dinars (art. 1^er^) | mise en place |
+| []{#r-ep-fouladh-1965}[23 décembre 1965]{.insecable} au plus tôt : *Journal officiel* du 17-21 décembre 1965, loi signée le 21 décembre, exécutoire un jour franc après sa parution | loi n° 65-42 du 21 décembre 1965 [@loi65-42-fouladh, art. 1^er^ et 2, p. 1665] | souscription à l'augmentation du capital à concurrence de 900 000 dinars (art. 1^er^), imputée sur le crédit inscrit au budget d'équipement (titre II) au plan quadriennal 1965-1968 (art. 2) | étape |
+| []{#r-ep-fouladh-1972}[16 novembre 1972]{.insecable} : *Journal officiel* du 14 novembre 1972, exécutoire un jour franc après sa parution | loi n° 72-75 du 11 novembre 1972 [@loi72-75-fouladh, art. 1^er^ et 2, p. 1585] | souscription, à titre de régularisation, à l'augmentation du capital décidée par l'assemblée générale extraordinaire du 13 avril 1968, à concurrence de 2 800 000 dinars (art. 1^er^) ; réduction de la participation de l'État de 3 600 000 dinars, « en vue de la contraction totale du capital », et souscription à l'augmentation du capital à concurrence de 2 400 000 dinars (art. 2) | rupture |
+| []{#r-ep-fouladh-1983}[28 juillet 1983]{.insecable} au plus tôt : *Journal officiel* du 26-29 juillet 1983, exécutoire un jour franc après sa parution | loi n° 83-77 du 21 juillet 1983 [@loi83-77-fouladh, article unique, p. 2024] | souscription à l'augmentation du capital à concurrence de 4 180 000 dinars : conversion en capital des crédits avancés en 1981-1982, 2 980 000 dinars ; souscription en numéraire, 1 200 000 dinars | étape |
+| []{#r-ep-fouladh-2013}[1^er^ janvier 2013]{.insecable}, date dite par la loi (art. 79) | loi n° 2012-27 du 29 décembre 2012, loi de finances pour 2013 [@lf-2013, art. 16, p. 6] | rubrique « Prise en charge par l'État des dettes bancaires de la Société tunisienne de sidérurgie "Elfouledh" engendrées par son activité commerciale » : l'État prend en charge ses dettes bancaires au titre des pertes de son activité commerciale d'importation de ronds à béton, dans la limite de 47,645 MD de principal et de 12,644 MD d'intérêts au plus — Banque nationale agricole, 9,988 et 2,651 MD ; Banque de l'habitat, 19,238 et 5,105 MD ; Société tunisienne de banque, 18,419 et 4,888 MD ; règlement et montant définitif des intérêts fixés par conventions entre le ministère des Finances, les banques et la société | rupture |
+| []{#r-ep-fouladh-2015}[30 mars 2015]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 25 mars 2015, plus cinq jours, jour du dépôt non compté | loi n° 2015-5 du 16 mars 2015 [@loi2015-5-fouladh, article unique, p. 563] | approbation de la convention de garantie conclue à Djeddah le 26 juin 2014 avec la Société internationale islamique de financement du commerce, relative à la convention de Mourabaha conclue le même jour entre la société et cette institution, de 20 000 000 de dollars au plus, pour le financement des importations de matières premières | étape |
+| []{#r-ep-fouladh-2020}[1^er^ janvier 2020]{.insecable}, date dite par la loi (art. 58) | loi n° 2019-78 du 23 décembre 2019, loi de finances pour 2020 [@lf-2020, art. 50, p. 4438] | exonération de la société de la taxe due à l'exportation des déchets et débris de fer du numéro 72.04 du tarif des droits de douane, hors déchets et débris d'aciers alliés inoxydables (positions 72042110008 et 72042190000), dans la limite de 100 000 tonnes au titre des années 2020 et 2021 | ajustement |
+| []{#r-ep-fouladh-2025-lf}[1^er^ janvier 2025]{.insecable}, date dite par la loi (art. 84) | loi n° 2024-48 du 9 décembre 2024, loi de finances pour 2025 [@lf-2025, art. 61, p. 3449 de l'édition française] | les équipements et le matériel usés et obsolètes qui ont bénéficié d'un avantage fiscal à l'importation ou d'un acquit à caution sont exonérés des droits et taxes dus en cas de destruction, avec cession gratuite du déchet ferreux à la société, sur autorisation des services des douanes | ajustement |
+| []{#r-ep-fouladh-2025}[30 septembre 2025]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 25 septembre 2025, plus cinq jours, jour du dépôt non compté | décret n° 2025-423 du 24 septembre 2025 [@decret2025-423-fouladh, art. 1^er^ à 3, p. 2430] | les ministères, les collectivités locales, les établissements publics et les entreprises publiques (« structures publiques ») cèdent à titre gratuit à la société leurs biens mobiliers réformés contenant du fer ; la société se charge du démontage et de la découpe (art. 1^er^ et 2) ; inventaire exhaustif de ces biens en présence d'un représentant du ministère chargé des domaines de l'État, rapport transmis à ce ministère dans la semaine (art. 3) | ajustement |
+
+: Les textes d'El Fouladh : capital, reprise de dettes, garantie et régime douanier {#tbl-ep-registre-fouladh}
+
+::::
+
+<!-- TODO (documentaliste) : fiche d'El Fouladh des éditions LF 2022 (p. 63), LF 2024 (p. 92, tableau 31) et LF 2025 (p. 71) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-elfouladh). Grandeurs d'activité non versées : production et ventes de fer laminé, de fils tréfilés et de structures métalliques, en tonnes (LF 2025 : production 83 825 t en 2021 ; LF 2024 : 168 907 t pour la même année, sous un autre libellé — à éclaircir avant tout usage). Transferts du budget de l'édition LF 2024 (p. 155, tableau 45) : la ligne de la société (0,0) n'est pas dans la série entreprises-publiques-transferts-par-entreprise. Éditions françaises LF 2020 (p. 97) et LF 2021 (p. 96) : comptes dans la prose, non versés ; l'édition LF 2021 y rapporte une autorisation d'exporter de la ferraille en 2019-2021 avec une taxe de 270 D la tonne et 97 000 tonnes exportées (26 MD au Trésor) : à rapprocher de l'article 50 de la loi de finances pour 2020 après lecture du texte qui institue cette taxe. Textes non lus : statuts et acte de constitution de la société (1962), forme juridique, montant actuel du capital et part de l'État ; décret n° 88-1988 (commission d'achat), décret n° 2002-2862 (statut particulier du personnel), décret n° 2013-1289 (organigramme), décret n° 2015-1127 (emplois fonctionnels) ; décret présidentiel de ratification n° 2015-64 ; décret n° 2003-188 (expropriation pour la voie ferrée de l'usine de Menzel Bourguiba). Programme d'assainissement social financé par des prêts du Trésor (départs volontaires de 110 agents approuvés le 6 mars 2013, d'après l'édition LF 2021, p. 96) : texte à identifier. Comptes publiés et rapports annuels de la société : à obtenir. -->
+
+<!-- TODO (documentaliste) : fiches par entreprise des éditions LF 2022, LF 2024 et LF 2025 versées pour la CPG, le GCT et El Fouladh (série entreprises-publiques-fiches-entreprises). Restent à verser, mêmes pages de ces éditions (effectifs déjà versés, voir entreprises-publiques-effectifs.csv de tunisia-data pour les pages) : Les éditions françaises LF 2020 et LF 2021 et l'édition LF 2023 donnent les comptes dans la prose, pas en tableau. Classements par charges de personnel et par produits d'exploitation : non versés. -->

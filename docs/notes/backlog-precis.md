@@ -3909,6 +3909,35 @@ Ce qui reste :
   - prêts à l'État pour les lignes ferroviaires du phosphate (lois n° 2024-31, 2025-12, 2026-7) :
     non lus, à rattacher à la SNCFT ou aux transports ;
   - comptes publiés et rapports annuels des deux entreprises : **à obtenir**.
+- **El Fouladh — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-fouladh`, en fin de chapitre). Figures `fig-ep-fouladh-budget` (transferts du budget
+  des éditions LF 2021 à LF 2023 : 10,0 MD en 2019, 150 MD pour 2020 dans l'édition LF 2021 ramenés
+  à 0 ensuite) et `fig-ep-fouladh-fiches`, tableaux repliés `tbl-ep-fouladh-fiche-a` et `-b`.
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-elfouladh`) :
+  LF 2022 p. 63, LF 2024 p. 92 (tableau 31 ; 2022 « متوقع », prévu), LF 2025 p. 71 ; lue à l'image
+  (300 dpi), chaque ligne retrouvée entière dans la couche texte. Écarts imprimés déclarés :
+  produits d'exploitation de 2021 et 2022 en LF 2024 (0,2 près). Lus sur les pages, sans série :
+  dettes et créances croisées de fin 2023 (LF 2025 p. 118-123). Paiements de dette garantie par
+  la Cour des comptes (gestions 2013-2015) repris de la série `cdc-cloture-entreprises-publiques`.
+  Registre `tbl-ep-registre-fouladh` (décret-loi n° 62-22 et loi n° 62-59, lois n° 65-42, 72-75
+  et 83-77, toutes à l'image ; loi de finances pour 2013, art. 16 ; loi n° 2015-5 ; lois de
+  finances pour 2020, art. 50, et pour 2025, art. 61, extraits français du corpus ; décret
+  n° 2025-423). Glossaire : `el-fouladh`.
+  **Reste** :
+  - statuts et acte de constitution (1962), forme juridique, capital actuel et part de l'État :
+    non lus ;
+  - décrets n° 88-1988 (commission d'achat), 2002-2862 (statut du personnel), 2013-1289
+    (organigramme), 2015-1127 (emplois fonctionnels), décret de ratification n° 2015-64, décret
+    n° 2003-188 : **dans le corpus** (2002, 2013, 2015 avec couche texte ; 1988 et 2003 à vérifier),
+    non lus ;
+  - texte instituant la taxe à l'exportation des déchets de fer (270 D la tonne d'après l'édition
+    LF 2021, p. 96) : à identifier ;
+  - série des transferts : ligne d'El Fouladh de l'édition LF 2024 (p. 155, 0,0) absente de
+    `entreprises-publiques-transferts-par-entreprise` ;
+  - grandeurs d'activité (production et ventes en tonnes) non versées ; éditions françaises
+    LF 2020 (p. 97) et LF 2021 (p. 96) non versées ;
+  - comptes publiés et rapports annuels de la société : **à obtenir**.
 - **Tunisie Autoroutes et Transtu — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-autoroutes` et `#sec-ep-ge-transtu`, après l'ONAS et avant la SNCFT, dans l'ordre des
   transferts de 2022 : Tunisie Autoroutes 170,0 MD, Transtu 147,5 MD, SNCFT 129,8 MD). Figures

@@ -18441,6 +18441,29 @@ entries:
         منشأة عمومية تنتج الأسمدة الفسفاطية، ومنها الفسفاط الثلاثي الرفيع. وتنتفع قروضها
         الاستثمارية وتمويل وارداتها من الأمونيا والكبريت والأسمدة بضمان الدولة.
       synonymes: []
+  - id: el-fouladh
+    statut: valide
+    references: [decret-loi62-22-fouladh, lf-2013, minfin-ep-2025]
+    source_definition: {ref: decret-loi62-22-fouladh, locator: "art. 1er"}
+    # AR : intitulé « الشركة التونسية لصناعة الحديد "الفولاذ" » de la fiche de la société dans le
+    # rapport sur les entreprises publiques, édition LF 2025, p. 71, où se lisent aussi ses
+    # activités (production de fer laminé, de fils tréfilés et de structures métalliques).
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 71"}
+    voir_aussi: [gct]
+    fr:
+      terme: Société tunisienne de sidérurgie El Fouladh
+      definition: >
+        Entreprise publique de sidérurgie, au capital de laquelle l'État souscrit depuis 1962,
+        qui produit du fer laminé, des fils tréfilés et des structures métalliques. L'État a
+        pris en charge en 2013 une partie de ses dettes bancaires.
+      synonymes: [El Fouladh]
+    ar:
+      terme: الشركة التونسية لصناعة الحديد «الفولاذ»
+      definition: >
+        منشأة عمومية لصناعة الحديد تكتتب الدولة في رأس مالها منذ سنة 1962، وتنتج الحديد
+        المدرفل والأسلاك المسحوبة والهياكل المعدنية. وتحمّلت الدولة سنة 2013 جزءا من ديونها
+        البنكية.
+      synonymes: [الفولاذ]
   - id: tunisie-telecom
     statut: valide
     references: [loi95-36-tt, loi2004-30, minfin-ep-2025]
