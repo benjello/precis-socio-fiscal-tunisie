@@ -667,6 +667,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "office_commerce": "Office du commerce de la Tunisie",
               "attt": "ATTT"}
               "oaca": "OACA"}
+              "ommp": "OMMP"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -782,6 +783,12 @@ def fig_fiche(entite: str):
                            for x in d22)])
     ax_d.set_xlim(min(d22) - 0.6, max(d22) + 0.6)
     ax_d.set_title("Dette par créancier, édition LF 2022", fontsize=9, loc="left")
+    if max((abs(c[0]) for x in d22 if (c := _case_fiche(f, x, "LF2022", "dette_totale"))
+            and not c[2]), default=1) == 0:
+        # Dette totale imprimée « 0 » chaque année (OMMP) : échelle fixe, sans quoi l'axe
+        # dégénère sur un seul zéro.
+        ax_d.set_ylim(-1, 10)
+        ax_d.set_yticks([0])
 
     etiquettes = [f"{x}\n{_ed(der[x])}" + (f"\n{STATUT[statut[x]]}" if STATUT.get(statut[x]) else "")
                   for x in exercices]
@@ -1002,6 +1009,8 @@ FIGURES = {
                     "fig_ep_attt_fiches"),
     "oaca_fiches": (lambda: fig_fiche("oaca"), lambda: table_fiche("oaca"), (S_FICHES,),
                     "fig_ep_oaca_fiches"),
+    "ommp_fiches": (lambda: fig_fiche("ommp"), lambda: table_fiche("ommp"), (S_FICHES,),
+                    "fig_ep_ommp_fiches"),
 }
 
 

@@ -18672,4 +18672,28 @@ entries:
         مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1970 وغُيّرت تسميتها سنة 1998.
         تتولّى استغلال المطارات ومراقبة الملاحة الجوية، وتستخلص لفائدتها المعاليم المتعلقة
         بالخدمات التي تسديها.
+
+  - id: ommp
+    acronyme: OMMP
+    statut: valide
+    references: [loi65-2-ommp, decret98-1385-ommp, loi98-109-ommp, minfin-ep-2025]
+    source_definition: {ref: loi98-109-ommp, locator: "art. 1er"}
+    # AR : intitulé « ديوان البحرية التجارية والموانئ » de la fiche de l'Office dans le rapport
+    # sur les entreprises publiques, édition LF 2025, p. 58.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 58"}
+    voir_aussi: [tunisair]
+    fr:
+      terme: Office de la marine marchande et des ports
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1965 sous le nom
+        d'Office des ports nationaux et renommé en 1998. Il exerce les attributions de
+        l'autorité maritime et de l'autorité portuaire, assure la police portuaire et exploite
+        les ports maritimes de commerce.
+      synonymes: [Office des ports nationaux]
+    ar:
+      terme: ديوان البحرية التجارية والموانئ
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1965 وتغيّرت تسميتها سنة 1998.
+        تمارس صلاحيات السلطة البحرية والسلطة المينائية، وتتولّى
+        الشرطة المينائية واستغلال الموانئ البحرية التجارية.
       synonymes: []
