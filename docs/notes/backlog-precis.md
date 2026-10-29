@@ -3981,6 +3981,32 @@ Ce qui reste :
     prose, non versés ; grandeurs d'activité des fiches (huile végétale subventionnée en MD et en
     tonnes) non relevées ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Office du commerce de la Tunisie — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-otc`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
+  `fig-ep-otc-budget` et `fig-ep-otc-fiches`, tableaux repliés `tbl-ep-otc-fiche-a` et `-b`.
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-commerce`, code
+  `office_commerce`) : LF 2022 p. 89, LF 2024 p. 130-131, LF 2025 p. 107, lues à l'image (300 dpi) et
+  retrouvées dans la couche texte. Édition LF 2024 : colonne 2022 de l'état de résultat qui reproduit
+  les variations 2021/2020 (imprimé tel quel, dit dans le texte et les légendes) ; « total des
+  passifs » égal au total des actifs (écart déclaré ; la case de 2020 n'est pas tracée). Annexe 8
+  (rapport sur les transferts) citée à part de l'annexe 9. Registre `tbl-ep-registre-otc`, lu au corpus
+  local : décret-loi n° 62-6 et son rectificatif (image) ; loi n° 67-32 (image) ; loi n° 78-8 (crédit
+  Citibank garanti, image) ; arrêté du 30 août 1989 (liste des produits de base, image) ; loi n° 90-1
+  (image) ; décret n° 99-227 ; décrets n° 2017-346 (édition arabe) et 2018-178 (zone de Ben Guerdane) ;
+  lois de finances pour 2021 (art. 23), 2024 (art. 21), 2025 (art. 35) et 2026 (art. 41), éditions
+  arabes pour les trois dernières. Glossaire : `office-commerce`.
+  **Reste** :
+  - texte qui confie à l'Office l'importation des produits de base avant 1989 et fondement d'une
+    exclusivité d'importation (sucre, café, thé) : **non identifié** sous les intitulés de jort_cache ;
+    aucun statut de 1970-1971 sous ces intitulés ; recherche à mener dans les lois de finances, les
+    textes du commerce extérieur et de la compensation ;
+  - textes **dans le corpus local, non lus** : loi n° 62-14 (ratification ; dates de jort_cache
+    incohérentes), décrets n° 65-335 et 74-184 et arrêtés de 1974 et 1976 (personnel), décrets
+    n° 88-885 et 89-1647 (organisation), n° 99-1920, 2001-719, 2005-2456 ;
+  - grandeurs d'activité des fiches (achats et ventes de produits de base) citées, non versées dans
+    une série ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
+  - comptes publiés et contrat-programme de l'Office : **à obtenir**.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la

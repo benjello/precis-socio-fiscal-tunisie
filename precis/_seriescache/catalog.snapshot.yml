@@ -5739,8 +5739,8 @@
 - id: entreprises-publiques-fiches-entreprises
   titre: 'Entreprises publiques : fiches par entreprise du rapport annexé à la loi
     de finances (STEG, ETAP, SNCFT, STIR, Office des céréales, SONEDE, ONAS, Office
-    national de l''huile), bilan, résultat, dette, subvention d''exploitation et emploi,
-    exercices 2018-2023, par édition'
+    national de l''huile, Office du commerce de la Tunisie), bilan, résultat, dette,
+    subvention d''exploitation et emploi, exercices 2018-2023, par édition'
   sources:
   - minfin-ep-2022
   - minfin-ep-2024
@@ -5764,16 +5764,17 @@
     total des actifs, liquidités, clients, immobilisations nettes, résultat net avant
     et après modifications comptables, produits des placements, charges financières
     nettes, résultat, charges et produits d''exploitation, autres produits, subvention
-    d''exploitation, recettes, charges de personnel, effectif) ; huit entreprises
-    : STEG, ETAP, SNCFT, STIR (Société tunisienne des industries de raffinage, ajoutée
-    le 28 octobre 2026), Office des céréales (ajouté le 28 octobre 2026), SONEDE (Société
+    d''exploitation, recettes, charges de personnel, effectif) ; entreprises : STEG,
+    ETAP, SNCFT, STIR (Société tunisienne des industries de raffinage, ajoutée le
+    28 octobre 2026), Office des céréales (ajouté le 28 octobre 2026), SONEDE (Société
     nationale d''exploitation et de distribution des eaux) et ONAS (Office national
     de l''assainissement) (ajoutés le 28 octobre 2026), Office national de l''huile
-    (ajouté le 28 octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur),
-    avec le statut du chiffre'
+    (ajouté le 28 octobre 2026), Office du commerce de la Tunisie (ajouté le 29 octobre
+    2026) ; une ligne par (édition, entreprise, exercice, grandeur), avec le statut
+    du chiffre'
   caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
     se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
-    signale 450 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    signale 806 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
     15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
     4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
     même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
@@ -5810,8 +5811,18 @@
     imprimées confirmant les trois cases ; LF 2025 boucle). OFFICE NATIONAL DE L''HUILE
     2023 (LF 2025) : total des passifs en case vide ; la variation imprimée « 2023-2022
     » (−54,9) donnerait 844,8, qui ne boucle pas avec 526,0 d''actifs et −416,0 de
-    fonds propres : non reporté. SONEDE, BILAN NON PUBLIÉ : 2022 dans l''édition LF
-    2024 et 2023 dans l''édition LF 2025, les onze cases du bilan sont remplacées
+    fonds propres : non reporté. OFFICE DU COMMERCE DE LA TUNISIE, ÉDITION LF 2024
+    : la colonne 2022 du bloc « résultat » (quatorze lignes, de « recettes » à « liquidités
+    ») imprime les variations 2021/2020 (recettes 17,9 ; charges d''exploitation 144,2
+    ; résultat net −128,6) et non les niveaux de 2022 (LF 2025 : 739,6 ; 1 249,4 ;
+    −424,0) ; imprimé tel quel, les identités tenant entre variations — NE PAS lire
+    ces cases comme 2022. « Total des passifs » imprimé égal au total des actifs (total
+    des passifs et des fonds propres) : écart déclaré, égal à l''opposé des fonds
+    propres (241,7 ; 369,9 ; 794,2) ; LF 2025 boucle. Ligne des stocks nets (`stocks`)
+    propre à cette fiche ; pas de ligne de subventions d''investissement en LF 2022.
+    Charges financières nettes de signes opposés d''une édition à l''autre (LF 2024
+    −20,2, LF 2025 19,9 pour 2021). SONEDE, BILAN NON PUBLIÉ : 2022 dans l''édition
+    LF 2024 et 2023 dans l''édition LF 2025, les onze cases du bilan sont remplacées
     par une note (états financiers non transmis, puis non approuvés) ; aucune ligne,
     ce ne sont pas des cases vides. SONEDE 2019 dans l''édition LF 2022 : « * », états
     financiers non approuvés (`statut` = comptes non approuvés). STIR, LF 2024 : «
@@ -5825,14 +5836,14 @@
     est une ligne comptable de l''entreprise : elle ne concorde pas avec les transferts
     du budget par entreprise. PREUVES DE LECTURE : identités du bilan, des produits
     et du résultat d''exploitation ; effectif et charges de personnel identiques,
-    ligne à ligne (144), à la série entreprises-publiques-effectifs-par-entreprise
+    ligne à ligne (268), à la série entreprises-publiques-effectifs-par-entreprise
     lue sur les mêmes pages ; chaque ligne recoupée avec la couche texte de la page.
     LU À L''IMAGE à 170 dpi le 27 octobre 2026.'
   titre_ar: 'المنشآت العمومية: جذاذات المنشآت (الشركة التونسية للكهرباء والغاز، المؤسسة
     التونسية للأنشطة البترولية، الشركة الوطنية للسكك الحديدية التونسية، الشركة التونسية
     لصناعات التكرير، ديوان الحبوب، الشركة الوطنية لاستغلال وتوزيع المياه، الديوان
-    الوطني للتطهير، الديوان الوطني للزيت)، 2018-2023، حسب طبعة التقرير المرفق بقانون
-    المالية'
+    الوطني للتطهير، الديوان الوطني للزيت، الديوان التونسي للتجارة)، 2018-2023، حسب
+    طبعة التقرير المرفق بقانون المالية'
   unite_ar: ملايين الدنانير الجارية؛ عون
   perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جذاذات
     المنشآت في طبعات قانون المالية لسنوات 2022 و2024 و2025

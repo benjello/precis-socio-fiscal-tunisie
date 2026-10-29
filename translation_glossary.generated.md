@@ -430,6 +430,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Office des céréales | ديوان الحبوب |  |
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |
+| Office du commerce de la Tunisie | الديوان التونسي للتجارة | OCT |
 | Office national de l'assainissement | الديوان الوطني للتطهير | ONAS |
 | Office national de l'huile | الديوان الوطني للزيت | ONH |
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
