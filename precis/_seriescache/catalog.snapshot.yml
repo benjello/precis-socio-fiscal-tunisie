@@ -5743,8 +5743,10 @@
     Tunisie Télécom, Office national des postes, Office du commerce de la Tunisie,
     Agence technique des transports terrestres, OACA, OMMP, CTN, sociétés régionales
     de transport de Sfax et de Bizerte, Compagnie tunisienne de forage, SNDP, SOTRAPIL,
-    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI), bilan, résultat,
-    dette, subvention d''exploitation et emploi, exercices 2018-2023, par édition'
+    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI, Agence de
+    réhabilitation et de rénovation urbaine, Société générale d''entreprises de matériel
+    et de travaux), bilan, résultat, dette, subvention d''exploitation et emploi,
+    exercices 2018-2023, par édition'
   sources:
   - minfin-ep-2022
   - minfin-ep-2024
@@ -5780,11 +5782,13 @@
     octobre 2026, tableau du secteur quasi financier), Office du commerce de la Tunisie
     (ajouté le 29 octobre 2026), Agence technique des transports terrestres (ATTT,
     ajoutée le 29 octobre 2026), Compagnie tunisienne de forage (CTF, ajoutée le 29
-    octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur), avec
-    le statut du chiffre'
+    octobre 2026), Agence de réhabilitation et de rénovation urbaine (ARRU) et Société
+    générale d''entreprises de matériel et de travaux (SOGEMT) (ajoutées le 29 octobre
+    2026) ; une ligne par (édition, entreprise, exercice, grandeur), avec le statut
+    du chiffre'
   caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
     se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
-    signale 1380 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    signale 1438 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
     15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
     4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
     même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
@@ -5894,19 +5898,32 @@
     fonds propres (−6,7 ; LF 2025 boucle, 85,1 ; 44,4 ; 40,8), 2023 en LF 2025 (provisoire),
     86,6 pour 47,0 et 34,0 (+5,6) ; charges financières nettes de signe opposé (2021
     : 0,3 en LF 2024, −0,3 en LF 2025) ; 2022 provisoire puis réalisé : résultat net
-    −3,4 puis −5,4. PREUVES DE LECTURE : identités du bilan, des produits et du résultat
-    d''exploitation ; effectif et charges de personnel identiques, ligne à ligne (424),
-    à la série entreprises-publiques-effectifs-par-entreprise lue sur les mêmes pages
-    ; chaque ligne recoupée avec la couche texte de la page. LU À L''IMAGE à 170 dpi
-    le 27 octobre 2026 (300 dpi le 28 octobre pour les ajouts, le 29 octobre pour
-    Tunisie Télécom, l''Office national des postes et l''ATTT).'
+    −3,4 puis −5,4. ARRU (LF 2022 p. 80, LF 2024 p. 121, LF 2025 p. 96) : aucune subvention
+    d''exploitation (0 imprimé) ; passifs de 1 630 à 1 776 MD pour 37 à 58 MD de fonds
+    propres (LF 2024 et LF 2025), quand la dette de l''édition LF 2022 est de 1,0
+    à 1,4 MD ; tous les exercices des éditions LF 2024 et LF 2025 imprimés « منجز
+    », 2023 compris ; grandeurs d''activité (projets délégués, prospection foncière)
+    non versées. SOGEMT (LF 2022 p. 79, LF 2024 p. 118, LF 2025 p. 94) : LF 2022,
+    dette totale supérieure à la somme des cinq créanciers de 44,4 (2018), 53,8 (2019)
+    et 48,1 (2020), écarts déclarés ; effectif 232, 222 et 212 (LF 2022, 2018-2020)
+    pour 1 194 en 2020 dans l''édition LF 2024, à charges de personnel égales (19,7)
+    ; effectif 2021 : 1 062 (LF 2024), 1 194 (LF 2025), imprimés tels quels ; subvention
+    d''exploitation 2020 : 2,3 (LF 2022), 0 et 2,3 d''autres produits (LF 2024) ;
+    2022 provisoire puis réalisé : résultat net −18,0 puis −23,9, fonds propres −126,0
+    puis −131,9 ; chiffre d''affaires de la colonne d''activité non versé. PREUVES
+    DE LECTURE : identités du bilan, des produits et du résultat d''exploitation ;
+    effectif et charges de personnel identiques, ligne à ligne (585), à la série entreprises-publiques-effectifs-par-entreprise
+    lue sur les mêmes pages ; chaque ligne recoupée avec la couche texte de la page.
+    LU À L''IMAGE à 170 dpi le 27 octobre 2026 (300 dpi le 28 octobre pour les ajouts,
+    le 29 octobre pour Tunisie Télécom, l''Office national des postes et l''ATTT).'
   titre_ar: 'المنشآت العمومية: جذاذات المنشآت (الشركة التونسية للكهرباء والغاز، المؤسسة
     التونسية للأنشطة البترولية، الشركة الوطنية للسكك الحديدية التونسية، الشركة التونسية
     لصناعات التكرير، ديوان الحبوب، الشركة الوطنية لاستغلال وتوزيع المياه، الديوان
     الوطني للتطهير، شركة فسفاط قفصة، المجمع الكيميائي التونسي، شركة نقل تونس، شركة
     تونس للطرقات السيارة، الخطوط التونسية، الوكالة الوطنية للتبغ والوقيد، الديوان
     الوطني للزيت، اتصالات تونس، الديوان الوطني للبريد، ديوان التجارة التونسي، الوكالة
-    الفنية للنقل البري، الشركة التونسية للتنقيب)، 2018-2023، حسب طبعة التقرير المرفق
+    الفنية للنقل البري، الشركة التونسية للتنقيب، وكالة التهذيب والتجديد العمراني،
+    الشركة العامة للمقاولات والمعدات والأشغال)، 2018-2023، حسب طبعة التقرير المرفق
     بقانون المالية'
   unite_ar: ملايين الدنانير الجارية؛ عون
   perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جذاذات

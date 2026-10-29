@@ -18,6 +18,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Administrations publiques | الإدارات العمومية |  |
 | Admission temporaire | القبول المؤقت |  |
 | Adoul | عدل إشهاد |  |
+| Agence de réhabilitation et de rénovation urbaine | وكالة التهذيب والتجديد العمراني | ARRU |
 | Agence foncière d'habitation | الوكالة العقارية للسكنى | AFH |
 | Agence foncière industrielle | الوكالة العقارية الصناعية | AFI |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
@@ -609,6 +610,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Société de promotion des logements sociaux | شركة النهوض بالمساكن الاجتماعية | SPROLS |
 | Société de transport des hydrocarbures par pipelines | شركة النقل بواسطة الأنابيب | SOTRAPIL |
 | Société des transports de Tunis | شركة النقل بتونس | Transtu |
+| Société générale d'entreprises de matériel et de travaux | الشركة العامة للمقاولات والمعدات والأشغال | SOGEMT |
 | Société nationale d'exploitation et de distribution des eaux | الشركة الوطنية لاستغلال وتوزيع المياه | SONEDE |
 | Société nationale de cellulose et de papier alfa | الشركة الوطنية لعجين الحلفاء والورق | SNCPA |
 | Société nationale de distribution des pétroles | الشركة الوطنية لتوزيع البترول | SNDP |

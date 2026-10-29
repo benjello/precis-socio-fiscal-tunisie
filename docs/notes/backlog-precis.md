@@ -4356,6 +4356,48 @@ Ce qui reste :
   - page exacte de la ligne de l'agence dans les tableaux des transferts par entreprise (LF 2022 à
     LF 2024) : non relevée ; objet des transferts à confirmer dans l'annexe 8 ;
   - comptes publiés et rapports annuels de l'agence : **à obtenir**.
+- **Agence de réhabilitation et de rénovation urbaine (ARRU) — section écrite le 29 octobre 2026**
+  (`_autres_entreprises.qmd`, `#sec-ep-ge-arru`, en fin de chapitre, à déplacer dans un futur
+  chapitre « L'habitat et l'équipement » ; intro et « La source » du chapitre mises à jour). Figure
+  `fig-ep-arru-fiches` seule (l'agence n'est pas dans la série des transferts par entreprise),
+  tableaux repliés `tbl-ep-arru-fiche-a` et `-b`. **Fiche versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-arru`, code
+  `arru`) : LF 2022 p. 80, LF 2024 p. 121, LF 2025 p. 96, lues à l'image (300 dpi) et retrouvées
+  dans la couche texte ; aucun écart d'identité ; 2023 dit réalisé par l'édition LF 2025. Registre
+  `tbl-ep-registre-arru`, lu au corpus local : loi n° 81-69 (image), décret n° 81-1876 (image,
+  fascicule à double date, effet en fourchette), loi de finances complémentaire pour 2012
+  (art. 27 à 31, extrait français local), décret gouvernemental n° 2019-487. Glossaire : `arru`.
+  **Reste** :
+  - textes **dans le corpus local, non lus** : décret n° 2002-536 (sans couche texte, image) ;
+    décrets n° 84-645, 99-188, 2000-1231, 2001-1401, 2001-1402, 2015-538 ; arrêté du 20 avril
+    1985 ; décrets de périmètres d'intervention et d'expropriation ; loi n° 93-53 (effet sur
+    l'article 11 de la loi n° 81-69) ; conventions de prêt de l'AFD et de l'UE pour les programmes
+    de réhabilitation des quartiers populaires (prêts à l'État ; rôle de l'agence à établir) ;
+  - date de dépôt au gouvernorat des JORT n° 39 de 2012 et n° 45-46 de 2019 (dates d'effet données
+    « au plus tôt ») : **édition arabe à lire** ;
+  - composition du total des passifs (1 630 à 1 776 MD, moins de 350 MD détaillés) et transferts du
+    budget à l'agence (tableaux par entreprise, annexe 8) : **à établir** ; grandeurs d'activité
+    (projets délégués) citées d'après les pages, non versées ;
+  - comptes publiés et rapports annuels de l'agence : **à obtenir**.
+- **Société générale d'entreprises de matériel et de travaux (SOGEMT) — section écrite le 29 octobre
+  2026** (`_autres_entreprises.qmd`, `#sec-ep-ge-sogemt`, en fin de chapitre, même destination que
+  l'ARRU). Figures `fig-ep-sogemt-budget` et `fig-ep-sogemt-fiches`, tableaux repliés
+  `tbl-ep-sogemt-fiche-a` et `-b`. **Fiche versée le 29 octobre 2026** (même branche, code
+  `sogemt`) : LF 2022 p. 79, LF 2024 p. 118, LF 2025 p. 94 ; écarts déclarés : dette totale de
+  l'édition LF 2022 supérieure à la somme des créanciers (44,4 ; 53,8 ; 48,1). Effectifs
+  discordants entre éditions (212 agents en 2020 dans l'édition LF 2022, 1 194 dans l'édition
+  LF 2024, à charges de personnel égales ; 2021 : 1 062 et 1 194), dits dans le texte et les
+  légendes. Registre `tbl-ep-registre-sogemt` : décret n° 2007-1330 (marchés publics), loi de
+  finances pour 2024 (art. 43, p. 3478, extrait français local). Glossaire : `sogemt`.
+  **Reste** :
+  - texte de création, forme juridique, capital et part de l'État : **non identifiés** dans
+    jort_cache.db ; lois n° 70-29 (G.E.T., lue) et 71-2 (Société de matériel et de travaux publics,
+    corpus local, non lue) : continuité avec la SOGEMT à établir ; décret n° 89-876 et
+    modificatifs, décrets n° 2010-90 et 2010-3170 (tutelle) : corpus local, non lus ;
+  - effectif juste de 2018 à 2021 : **à établir** (comptes de la société, éditions françaises
+    LF 2020 et LF 2021) ; chiffre d'affaires de la colonne d'activité non versé ;
+  - date de dépôt au gouvernorat du JORT n° 46 de 2007 : **édition arabe à lire** ;
+  - comptes publiés et rapports annuels de la société : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche
