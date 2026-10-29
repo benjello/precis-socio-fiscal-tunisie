@@ -3908,13 +3908,6 @@ Ce qui reste :
     Autoroutes ont désormais leur fiche. Non créé. À trancher : Tunisie Autoroutes relève du
     ministère de l'Équipement, non du ministère du Transport ; Tunisair, l'Office de l'aviation
     civile et des aéroports, la CTN et l'OMMP sont au tableau du ministère du Transport ;
-  - **contradiction entre volumes** : l'article 23 du décret-loi n° 63-8 (1963) oblige l'État à
-    verser à la Société nationale des transports les sommes couvrant les transports gratuits ou
-    à tarif réduit ; `compensation/_transport.qmd` (§ « La mise en place », l. 88) écrit que la
-    compensation du transport « naît en 1984, et non en 1963 ». À reprendre dans le volume « La
-    compensation » (non modifié ici) ; la ligne `r-tr-2003` du même chapitre (« non établie »,
-    « seul l'intitulé de la loi est connu ») peut être datée du 5 mai 2003 et décrite d'après la
-    loi n° 2003-33, lue ;
   - Tunisie Autoroutes : acte de constitution (13 mai 1992 d'après le rapport LF 2020, p. 121) non
     identifié au JORT ; décrets de concession des autres sections (n° 2000-645, 2002-537,
     2004-1073, 2004-1074, 2016-256, 2019-661 à 2019-663) et de péage des autres sections (n° 97-1003,
