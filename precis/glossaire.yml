@@ -18603,6 +18603,29 @@ entries:
         ضبط قرار صادر سنة 1989 قائمتها.
       synonymes: []
       synonymes: []
+  - id: sndp
+    acronyme: SNDP
+    statut: valide
+    references: [dl63-4-sndp, decret77-466-sndp, minfin-ep-2025]
+    source_definition: {ref: decret77-466-sndp, locator: "art. 1er, 2 et 4"}
+    # AR : intitulé « الشركة الوطنية لتوزيع البترول » de la fiche de la société dans le rapport
+    # sur les entreprises publiques, édition LF 2025, p. 68.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 68"}
+    voir_aussi: [stir, etap]
+    fr:
+      terme: Société nationale de distribution des pétroles
+      definition: >
+        Société publique qui distribue en Tunisie les carburants, les combustibles et les
+        lubrifiants. Elle prend ce nom en 1977 et reprend alors l'actif et le passif de la
+        société AGIP S.A. Tunis, dont l'État souscrit la moitié du capital en 1963.
+      synonymes: []
+    ar:
+      terme: الشركة الوطنية لتوزيع البترول
+      definition: >
+        شركة عمومية توزّع في تونس المحروقات والوقود وزيوت التشحيم. اتّخذت هذا الاسم سنة
+        1977 وتولّت عندئذ أصول شركة «أجيب تونس» وخصومها، وقد اكتتبت الدولة نصف رأس مالها
+        سنة 1963.
+      synonymes: []
   - id: onp
     statut: valide
     references: [decret98-1305-poste, loi98-38-poste, minfin-ep-2024]
