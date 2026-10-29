@@ -4060,6 +4060,31 @@ Ce qui reste :
     ciment et de chaux) non relevées ; classement des résultats d'exploitation négatifs de LF 2025
     (p. 20) non repris ; éditions françaises LF 2020 et LF 2021 non versées ;
   - comptes publiés et rapports annuels de la société : **à obtenir**.
+- **SNCPA — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`, `#sec-ep-ge-sncpa`,
+  après le GCT). Figures `fig-ep-sncpa-budget` (transferts 2017-2022, résultat net des
+  classements, effectif et charges de personnel) et `fig-ep-sncpa-fiches`, tableaux repliés
+  `tbl-ep-sncpa-fiche-a` et `-b`. **Fiche du ministère des Finances versée le 29 octobre 2026**
+  dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-sncpa`,
+  code `sncpa`) : LF 2022 p. 63, LF 2024 p. 93, LF 2025 p. 73 ; lues à l'image (300 dpi) et
+  retrouvées dans la couche texte. LF 2025 : bilan de 2022-2023 et résultat de 2023 sous une note,
+  seul l'effectif de 2023 imprimé. Écart imprimé déclaré : résultat d'exploitation 2019 (LF 2022).
+  Lus sur les pages, sans série nouvelle : dettes envers l'État de fin 2023 (320,0 MD, LF 2025
+  p. 118), paiements de dette garantie de la Cour des comptes (série déjà versée, 2012-2018).
+  Registre `tbl-ep-registre-sncpa` (décret du 8 janvier 1957, fascicule téléchargé de pist.tn,
+  absent du corpus local ; arrêté du 29 juillet 1959 ; lois n° 60-3, 84-19, 85-30, 88-86 ; décret
+  n° 80-780 avec l'édition arabe ; tous à l'image ; loi n° 95-86 ; loi de finances pour 2026,
+  art. 64, édition arabe). Glossaire : `sncpa`.
+  **Reste** :
+  - création de la Société nationale tunisienne de cellulose et de la Société tunisienne de papier
+    alfa, et leur réunion en SNCPA (entre 1980 et 1984) : textes **non identifiés** par les
+    intitulés de `jort_cache.db` ; forme juridique, capital et part de l'État : non lus ;
+  - arrêté du 31 janvier 1981 (JORT n° 8, p. 240-245), décret n° 88-283 (JORT n° 18 de 1988,
+    p. 383-384), décret n° 2000-2366 (JORT n° 86 de 2000, p. 2606) : **dans le corpus, non lus** ;
+  - objet des transferts de l'annexe 9 (9,3 à 35,0 MD) : l'annexe 8, bloc du ministère du
+    Commerce, ne donne que 0,061 à 3,555 MD ; Cour des comptes, gestion 2018 : 0 au tableau,
+    709 962 dinars dans le texte ;
+  - grandeurs d'activité des fiches (production et ventes en tonnes) non relevées ; éditions
+    françaises LF 2020 (p. 100) et LF 2021 (p. 99) non versées ; comptes publiés : **à obtenir**.
 - **Tunisie Autoroutes et Transtu — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-autoroutes` et `#sec-ep-ge-transtu`, après l'ONAS et avant la SNCFT, dans l'ordre des
   transferts de 2022 : Tunisie Autoroutes 170,0 MD, Transtu 147,5 MD, SNCFT 129,8 MD). Figures

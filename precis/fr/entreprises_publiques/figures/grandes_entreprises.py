@@ -20,6 +20,7 @@
     ge.figure("srt_sfax_budget", …) ; ge.figure("srt_bizerte_fiches", …)  # sociétés régionales
     ge.figure("ctf_fiches", …)                               # Compagnie tunisienne de forage
     ge.figure("sndp_fiches", …)                              # SNDP : fiche seule
+    ge.figure("sncpa_budget", …) ; ge.figure("sncpa_fiches", …)  # SNCPA (cellulose, papier alfa)
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -693,6 +694,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "el_fouladh": "El Fouladh"}
               "ciments_bizerte": "Ciments de Bizerte"}
               "ciments_oum_el_kelil": "Ciments d'Oum El Kélil"}
+              "sncpa": "SNCPA"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -1073,6 +1075,11 @@ FIGURES = {
     "cimoek_fiches": (lambda: fig_fiche("ciments_oum_el_kelil"),
                       lambda: table_fiche("ciments_oum_el_kelil"), (S_FICHES,),
                       "fig_ep_cimoek_fiches"),
+    "sncpa_fiches": (lambda: fig_fiche("sncpa"), lambda: table_fiche("sncpa"), (S_FICHES,),
+                     "fig_ep_sncpa_fiches"),
+    "sncpa_budget": (lambda: fig_budget("sncpa", VERT, "provisoire ou probable"),
+                     lambda: table_budget("sncpa"),
+                     (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_sncpa_budget"),
 }
 
 
