@@ -116,7 +116,8 @@ ORDRE_B = ["total_actifs", "immobilisations_nettes", "clients", "liquidites",
            "resultat_net_avant_modifications", "resultat_net_apres_modifications",
            "charges_personnel", "effectif"]
 STATUT = {"réalisé": "", "non dit": "", "provisoire": "provisoire", "estimé": "estimé",
-          "probable": "probable", "comptes non approuvés": "comptes non approuvés"}
+          "probable": "probable", "comptes non approuvés": "comptes non approuvés",
+          "prévu": "prévu"}
 
 
 def _ed(edition: str) -> str:
@@ -680,6 +681,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "ctf": "CTF"}
               "sndp": "SNDP"}
               "sotrapil": "SOTRAPIL"}
+              "el_fouladh": "El Fouladh"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -1044,6 +1046,11 @@ FIGURES = {
                     "fig_ep_sndp_fiches"),
     "sotrapil_fiches": (lambda: fig_fiche("sotrapil"), lambda: table_fiche("sotrapil"),
                         (S_FICHES,), "fig_ep_sotrapil_fiches"),
+    "fouladh_fiches": (lambda: fig_fiche("el_fouladh"), lambda: table_fiche("el_fouladh"),
+                       (S_FICHES,), "fig_ep_fouladh_fiches"),
+    "fouladh_budget": (lambda: fig_budget("el_fouladh", ORANGE, "provisoire ou probable"),
+                       lambda: table_budget("el_fouladh"),
+                       (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_fouladh_budget"),
 }
 
 

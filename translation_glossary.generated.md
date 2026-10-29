@@ -610,6 +610,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
 | société régionale de transport | الشركة الجهوية للنقل |  |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
+| Société tunisienne de sidérurgie El Fouladh | الشركة التونسية لصناعة الحديد «الفولاذ» |  |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
 | Solde (militaire) | أجور العسكريين |  |
 | Solde de réforme | منحة الإصلاح |  |
