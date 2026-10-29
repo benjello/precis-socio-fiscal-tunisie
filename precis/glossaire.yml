@@ -18441,6 +18441,27 @@ entries:
         منشأة عمومية تنتج الأسمدة الفسفاطية، ومنها الفسفاط الثلاثي الرفيع. وتنتفع قروضها
         الاستثمارية وتمويل وارداتها من الأمونيا والكبريت والأسمدة بضمان الدولة.
       synonymes: []
+  - id: tunisie-telecom
+    statut: valide
+    references: [loi95-36-tt, loi2004-30, minfin-ep-2025]
+    source_definition: {ref: loi2004-30, locator: "art. 1er"}
+    # AR : intitulé « الشركة الوطنية للاتصالات "اتصالات تونس" » de la fiche de la société dans le
+    # rapport sur les entreprises publiques, édition LF 2025, p. 105.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 105"}
+    voir_aussi: []
+    fr:
+      terme: Tunisie Télécom
+      definition: >
+        Nom commercial de la Société nationale des télécommunications, société anonyme
+        issue en 2004 de l'Office national des télécommunications, créé en 1995 ; opérateur
+        public des réseaux de télécommunications.
+      synonymes: [Société nationale des télécommunications, Office national des télécommunications]
+    ar:
+      terme: اتصالات تونس
+      definition: >
+        الاسم التجاري للشركة الوطنية للاتصالات، وهي شركة خفية الاسم تحوّل إليها سنة 2004
+        الديوان الوطني للاتصالات المحدث سنة 1995؛ المشغّل العمومي لشبكات الاتصالات.
+      synonymes: [الشركة الوطنية للاتصالات]
   - id: tunisie-autoroutes
     statut: valide
     references: [minfin-ep-2020, decret95-720-autoroutes]
@@ -18581,3 +18602,25 @@ entries:
         ولا سيما الصادرات. ويتولّى توريد المواد الأساسية، ومنها السكر والقهوة والشاي، التي
         ضبط قرار صادر سنة 1989 قائمتها.
       synonymes: []
+      synonymes: []
+  - id: onp
+    statut: valide
+    references: [decret98-1305-poste, loi98-38-poste, minfin-ep-2024]
+    source_definition: {ref: decret98-1305-poste, locator: "art. 1er à 3"}
+    # AR : intitulé « الديوان الوطني للبريد » du tableau des entreprises publiques du secteur
+    # quasi financier, rapport sur les entreprises publiques, édition LF 2024, p. 63.
+    source_traduction: {ref: minfin-ep-2024, locator: "p. 63"}
+    fr:
+      terme: Office national des postes
+      definition: >
+        Établissement public créé en 1998 sous le nom commercial « La Poste tunisienne ».
+        Il exerce l'activité postale et fournit les services financiers de la Caisse
+        d'épargne nationale tunisienne et des comptes courants postaux.
+      synonymes: [La Poste tunisienne]
+    ar:
+      terme: الديوان الوطني للبريد
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 1998 تحت التسمية التجارية « البريد التونسي ». تتولّى النشاط
+        البريدي وتُسدي الخدمات المالية لصندوق الادخار القومي التونسي والحسابات الجارية
+        البريدية.
+      synonymes: [البريد التونسي]

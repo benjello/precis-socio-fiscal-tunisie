@@ -1,11 +1,12 @@
 """Figures du chapitre « La dépense d'éducation ».
 
 Les données sont les figdata `figdata/fig_educ_*.csv` du livre : des copies, ligne à ligne,
-des séries de la note documentaire (`docs/notes/education-depense-series/`), chaque ligne
-avec sa source et sa page. Ces séries ne sont pas encore au catalogue de `tunisia-data` :
-le module les lit donc dans le figdata, et ne le réécrit jamais (pas de `write_figdata`).
-Le jour où elles seront versées, les figures liront `figtools.series()` et le rendu
-réécrira les figdata comme ailleurs.
+des séries d'éducation du catalogue de `tunisia-data` (`education-depense-*`,
+`education-effectifs-annuaire`, `education-personnels-fonction-publique`,
+`education-uis-depense`), chaque ligne avec sa source et sa page. `fig_educ_depense_donnees.py`
+les écrit depuis `figtools.series()` ; ce module les lit dans le figdata et ne le réécrit
+jamais (pas de `write_figdata`), parce que l'en-tête de provenance et les réserves de chaque
+figdata sont propres au chapitre.
 
 Règles tenues ici :
   - une rupture de série se montre (trait vertical, segments non reliés), elle ne se
@@ -132,7 +133,7 @@ def _legende(ax, ncol: int = 2):
 def onglets(vues, slug: str, *, caption: str, note_lecture: str, source: str,
             colonnes_cachees=("Source",)) -> None:
     """Sortie en onglets Graphique / Données / Sources, comme `figtools.figure_tabs`,
-    mais sans réécrire le figdata : il est la copie sourcée des séries de la note."""
+    mais sans réécrire le figdata, qu'écrit `fig_educ_depense_donnees.py`."""
     from itables import to_html_datatable
 
     png = Path("_fig")

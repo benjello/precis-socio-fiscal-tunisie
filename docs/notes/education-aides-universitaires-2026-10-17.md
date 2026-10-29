@@ -3,7 +3,10 @@
 Note du 17 octobre 2026, rôle documentaliste, pour le livre « L'éducation », chapitre 5,
 sections 3 et 4 (`docs/notes/education-plan-2026-10-17.md`, § 3 et § 6, point 1). Le plan tient lieu
 de ticket. Aucun fichier du précis n'est modifié. Les fiches de recherche sont dans
-`docs/notes/education-recherches-A.yml` et restent à fusionner dans `docs/recherches.yml`.
+`docs/notes/education-recherches-A.yml` ; elles ont depuis été fusionnées dans `docs/recherches.yml`, seul registre tenu à jour (passes du
+29 octobre 2026 comprises).
+
+Complétée le 29 octobre 2026 (lectures à l'image du plan, § 9, point 1) : § 2.9.
 
 ## 0. Conventions de cette note
 
@@ -41,9 +44,13 @@ nominations voisines.
 
 ## 1. L'essentiel
 
-1. **Bourse nationale (1957-2026), quatre régimes.**
-   - 1957 : une bourse attribuée sur concours (le régime de 1963 n'est connu qu'à l'index).
-   - 1971 : un concours sur titres, avec un plafond de revenu et l'engagement de servir l'État dix ans.
+1. **Bourse nationale (1957-2026), cinq régimes** (lectures du 29 octobre 2026 au § 2.9).
+   - 1957 : une bourse attribuée sur concours unique, contre l'engagement de servir l'État.
+   - 1963 : un concours sur titres ; le jury classe selon les besoins de la planification des
+     cadres, le mérite et la situation matérielle de la famille, et peut n'accorder qu'une fraction
+     de bourse ; l'engagement de servir porte sur dix ans au moins (formule annexée à l'arrêté).
+   - 1971 : même concours sur titres, avec un plafond de revenu chiffré (450 D) et l'engagement de
+     dix ans ; seuls le plafond chiffré et le budget de l'Office sont nouveaux.
    - 1986 : bourse et prêt sous plafond de revenu, sans engagement de service.
    - 2009 : bourse sous plafond égal au SMIG annuel ; le prêt est réservé aux cycles supérieurs.
    - 2012 : le régime de 2009 est corrigé. Le plafond devient un revenu net après abattements, et un
@@ -53,7 +60,11 @@ nominations voisines.
 
    | Date | Montant |
    |---|---|
-   | 1971 | 25 D |
+   | 25-28 décembre 1958 | 25 D |
+   | 1er janvier 1969 | 30 D (1er cycle) ; 35 D (2e cycle) ; 45 D (3e cycle) |
+   | 14-17 octobre 1971 | 25 D (taux général, tous cycles) |
+   | 18 novembre 1971 | 30 D |
+   | 1972-1987 | 30 D au moins jusqu'au 1er octobre 1977 ; arrêté du 20 août 1982 non identifié |
    | 1er janvier 1988 | 40 D |
    | 1997-1998 | 50 D |
    | 2011-2012 | 60 D |
@@ -72,8 +83,8 @@ nominations voisines.
    - 2012 : le revenu net, après abattements, ne doit pas dépasser le SMIG annuel.
    - De 1991-1992 à 2004-2005, le plafond n'est pas identifié (fiche `r-bourse-seuils-revenu-1986-2005`).
 4. **Prêt universitaire de l'État en Tunisie.**
-   - Montant annuel : 400 D en 1989-1990 ; 500 D en 1997-1998 ; 600 à 1 400 D par niveau depuis le
-     1er octobre 2011.
+   - Montant annuel : 400 D dès 1988-1989 (arrêté du 28 février 1990), inchangé en 1989-1990 ;
+     500 D en 1997-1998 ; 600 à 1 400 D par niveau depuis le 1er octobre 2011.
    - Remboursement : sur dix ans, majoré de 2,5 % par an de frais de gestion (1986 et 2009).
    - Depuis 1999, les deux caisses de sécurité sociale prêtent aussi aux enfants de leurs affiliés.
      Le prêt égale la bourse et porte intérêt à 5 %, puis 3 % depuis 2017.
@@ -87,10 +98,19 @@ nominations voisines.
    - Lois du 3 décembre 1988 : trois offices, « établissements à caractère administratif », pour le
      Nord, le Centre et le Sud, qui gèrent bourses et prêts.
    - Depuis 2009 : les bourses sont payées sur le budget du ministère.
-   - Pour la question Q7 du plan, les lois de 1988 disent « établissement à caractère
-     administratif », sans le mot « public ». L'office du Nord est « établissement public à
-     caractère administratif » depuis le décret n° 2006-2245 ; le Centre et le Sud gardent la
-     rédaction de 1988 dans les textes lus.
+   - Statut (ancienne question Q7 du plan) :
+     - loi n° 70-9 : « établissement public doté de la personnalité civile et de l'autonomie
+       financière » ;
+     - décret n° 80-1001, art. 1er : l'ONOU est « un établissement public à caractère
+       administratif » ;
+     - lois de 1988 : « établissement à caractère administratif », sans le mot « public » ;
+     - avis du Conseil constitutionnel n° D-L 02-2006 : les trois offices forment la catégorie
+       des « établissements des œuvres universitaires », catégorie d'établissements publics ;
+       l'art. 1er de la loi n° 88-135 est « de nature réglementaire », d'où sa modification par
+       le décret n° 2006-2245, qui fait de l'office du Nord un « établissement public à caractère
+       administratif » ;
+     - le Centre et le Sud gardent la rédaction de 1988 dans les textes lus ; l'avis ne porte que
+       sur l'office du Nord et ne réécrit pas leurs lois.
 7. **Séries.**
    - Le budget du ministère de l'Enseignement supérieur donne le nombre de boursiers en Tunisie et
      leur part parmi les étudiants, de 2008-2009 à 2016-2017 (de 33,5 à 40 %), et les crédits des
@@ -146,7 +166,7 @@ supérieures.** JORT n° 44 du 12-15 octobre 1971, p. 1368. Lu (image), page 30 
   Nation ».
 - Art. 7 : « Chaque année les bourses mises au concours sont réparties entre les différents
   secteurs d'activité nationale […] dans le cadre des besoins des Plans de développement ».
-- Visa : décret n° 63-2 du 2 janvier 1963 (index). Le décret ne contient pas d'article
+- Visa : décret n° 63-2 du 2 janvier 1963 (lu, § 2.9). Le décret ne contient pas d'article
   d'abrogation dans la page lue.
 - Date exécutoire : du 14 au 17 octobre 1971 (fourchette).
 
@@ -179,19 +199,21 @@ d'études supérieures.** Même fascicule, p. 1371-1372. Lu (image), pages 33-34
   l'étranger.
 - Art. 8 : les redevances universitaires sont à la charge de l'État.
 
-**Textes de la même chaîne, à l'index seulement** (scans, OCR nécessaire) :
+**Textes de la même chaîne, lus à l'image le 29 octobre 2026** : arrêtés du 10 décembre 1958, du
+29 novembre 1959, du 4 avril 1962 ; décret n° 63-2 et arrêtés du 2 janvier et du 8 mai 1963 ;
+arrêtés du 7 décembre 1964, du 7 décembre 1965, du 1er mars 1969, du 15 novembre 1971 ; décret
+n° 72-51 et arrêté du ministre de l'Agriculture du 19 février 1972 ; arrêtés du 3 avril 1974 et du
+5 janvier 1978. Lectures au § 2.9. Une conséquence pour l'arrêté du 7 octobre 1971 ci-dessus : son
+art. 3 (25 D) est réécrit dès le 15 novembre 1971 (30 D, taux spécial 35 D).
 
-| Texte | Fascicule | recid |
-|---|---|---|
-| Décret n° 63-2 et arrêté du 2 janvier 1963 | 1963/1, p. 2-4 | 106007, 73258 |
-| Arrêté du 8 mai 1963 | 1963/23 | 73148 |
-| Arrêté du 10 décembre 1958 (montant mensuel en Tunisie) | 1958/102, p. 1242 | 74695 |
-| Arrêtés des 7 décembre 1964 et 7 décembre 1965 | 1964/60, 1965/62 | 72655, 72203 |
-| Arrêté du 1er mars 1969 | 1969/8 | 71402 |
-| Arrêté du 15 novembre 1971 | 1971/50 | 70687 |
-| Décret n° 72-51 du 19 février 1972 (modifie le n° 71-361) | 1972/8, p. 230 | 103229 |
-| Arrêté du 3 avril 1974 (modifie les montants de 1971) | 1974/25, p. 704 | 69834 |
-| Arrêté du 5 janvier 1978 (modifie les montants de 1971) | 1978/4, p. 106-107 | 68160 |
+**Restent à l'index** (fascicules présents dans le corpus, scans) : décret n° 58-189 du 21 juillet
+1958 relatif à la bourse nationale (JORT n° 58 de 1958, p. 760, recid 107531), visé en 1958 et 1959
+comme modifiant le décret n° 57-78 ; décrets d'attribution n° 59-212 (1959/37, p. 747), 61-421
+(1961/53, p. 1553-1554) et 62-312 (1962/49, p. 1140) ; décisions de majoration pour les études en
+Suisse, en Angleterre, en Belgique et au Liban (7 octobre 1958, 7 novembre 1958, 3 février 1959) et
+arrêtés du 5 février 1962 (Allemagne, Italie), visés par l'arrêté du 2 janvier 1963 et non
+retrouvés à l'index ; arrêtés du ministre de l'Agriculture de 1973, 1975 et 1980 (bourses de ses
+écoles).
 
 **L'arrêté du 20 août 1982** fixe les montants mensuels de la bourse des premier et deuxième cycles
 et de la bourse de spécialisation. Il est connu par un visa (§ 2.3) mais n'est pas identifié : fiche
@@ -325,8 +347,10 @@ p. 161. Lu (image), page 13 du fichier. recid 93532.
 
 - Art. 2 : 3 650 D aux États-Unis et au Canada sans exonération des frais d'inscription.
 - Clause : « prend effet à compter de l'année universitaire 1989-1990 ».
-- L'arrêté du 28 février 1990 sur le même objet (JORT n° 18 de 1990, p. 360, recid 63175) est
-  resté à l'index.
+- L'arrêté du 28 février 1990 sur le même objet (JORT n° 18 de 1990, p. 360, recid 63175) est lu
+  au § 2.9 : il fixait déjà 400 D pour 1988-1989. L'arrêté d'avril ne le vise pas ; son art. 3
+  abroge « toutes dispositions antérieures contraires ». Relu à l'image le 29 octobre 2026
+  (p. 542-543).
 
 **Arrêté du 21 août 1990 fixant le seuil des revenus annuels des parents des candidats pour
 l'obtention d'une bourse nationale ou d'un prêt universitaire au titre de l'année universitaire
@@ -846,13 +870,20 @@ JORT n° 13 du 6-10 mars 1970, p. 263. Lu (image, page 3 du fichier). recid 1168
 
 **Arrêté du 20 juin 1974 portant règlement intérieur des centres d'hébergement et de restauration
 universitaires.** JORT n° 44 du 25-27 juin 1974, p. 1447-1449. Lu (image, p. 1447-1448, pages 31-32
-du fichier ; p. 1449 non lue). recid 69770.
+du fichier ; p. 1449 lue le 29 octobre 2026, page 33 du fichier). recid 69770.
 
 - Art. 1er : les centres de l'ONOU « sont les locaux destinés à faciliter les conditions de logement
   et de restauration dans les villes où elles se révèlent difficiles ».
 - Art. 2 : réservés aux étudiants.
 - Règles de vie, discipline (art. 25 à 27).
-- Aucun tarif dans les pages lues.
+- Titre VI, redevances d'hébergement (p. 1449) :
+  - art. 29 : le résident se conforme au « barème tarifaire fixé par l'Administration » et verse
+    à l'admission un droit d'entrée de **cinq cents millimes** ;
+  - art. 30 : pour les boursiers de l'État, les redevances sont retenues sur la bourse ;
+  - art. 31 : les autres résidents paient dans les premiers jours de chaque mois.
+- Art. 32 : l'admission au logement ne vaut que pour l'année universitaire ; réadmission sur
+  demande.
+- Aucun montant de redevance : le barème est laissé à l'Administration.
 
 **Lois n° 88-135, 88-136 et 88-137 du 3 décembre 1988 portant création des offices des œuvres
 universitaires pour le Nord (Tunis), le Centre (Sousse) et le Sud (Sfax).** JORT n° 83 du 9-13
@@ -878,7 +909,7 @@ n° 88-135.** JORT n° 66 de 2006, p. 2420. Lu (texte). recid 84056.
   chargé des étudiants « relevant des universités du Nord ». La loi de 1988 disait « relevant des
   universités de Tunis ».
 - L'avis n° D-L 02-2006 du Conseil constitutionnel sur la nature juridique de cet article (même
-  fascicule, p. 2377-2379, recid 47751) est lisible dans le corpus et n'a pas été lu.
+  fascicule, p. 2377-2379, recid 47751) est lu au § 2.9.
 - Dépôt le 19 août 2006 ; date exécutoire : 24 août 2006.
 
 **Arrêté du 5 octobre 2009 fixant le règlement intérieur des établissements des œuvres
@@ -914,7 +945,6 @@ offices des œuvres universitaires.** JORT n° 92 du 14 novembre 2014, p. 3051-3
 
 | Texte | recid |
 |---|---|
-| Décret n° 80-1001 du 6 août 1980, organisation de l'ONOU | 98651 |
 | Décret n° 85-173 (modifie le décret n° 80-1001) | 96077 |
 | Décret n° 90-1122 (office du Nord) et décrets n° 95-1953, 95-1954 (Centre, Sud) | 93348, 90762, 90763 |
 | Décret n° 95-2281 du 13 novembre 1995, attributions et organisation des établissements des œuvres universitaires, modifié par les décrets n° 2009-2448 et 2015-1765/1768 | — |
@@ -922,6 +952,284 @@ offices des œuvres universitaires.** JORT n° 92 du 14 novembre 2014, p. 3051-3
 | Loi n° 97-88, loi de finances pour 1998, art. 55 à 58 : encouragement de l'investissement dans l'hébergement et la restauration universitaires, prolongé par les lois de finances de 2005 à 2009 | 112191 |
 | Arrêté de classement du 16 octobre 2012 et ses huit modificatifs (2013-2025) | 51833… |
 | Décrets de création et de suppression d'établissements | — |
+
+### 2.9 Lectures à l'image du 29 octobre 2026
+
+Lectures faites sur l'image des fascicules du corpus local (pdftoppm à 300 dpi, zoom sur les
+articles et les tableaux), sans OCR pour les valeurs. Les URL sont celles de l'édition française
+sur pist.tn, vérifiées le 29 octobre 2026 (200, taille égale au fichier local). Dates exécutoires :
+règle d'avant 1993 (un jour franc après la publication), en fourchette quand le fascicule couvre
+plusieurs jours ; dates d'effet énoncées par les textes reprises telles quelles. Les dates de
+publication de `jort_cache` pour 1963 et 1965 sont antérieures à la signature : elles ne servent pas.
+
+#### a. La bourse nationale, 1958-1978
+
+**Arrêté du secrétaire d'État à la présidence du 10 décembre 1958 fixant le montant mensuel de la
+bourse nationale** (études supérieures en Tunisie). JORT n° 102 du 23-26 décembre 1958, p. 1242,
+page 10 du fichier. `https://www.pist.tn/jort/1958/1958F/Jo10258.pdf`. recid 74695.
+
+- Visas : décret n° 57-78, « tel qu'il a été modifié par le décret n° 58-189 du 21 juillet 1958 » ;
+  arrêté du 12 octobre 1957.
+- Art. 1er : la bourse des étudiants et élèves des établissements universitaires et scolaires en
+  Tunisie « est fixé[e] à **25 dinars par mois** » ; frais d'inscription et droits d'examen à la
+  charge de l'État ; voyage aller-retour gratuit jusqu'à Tunis.
+- Art. 2 : pour le boursier interne d'un établissement public, la bourse est la prise en charge
+  des frais de pension, de scolarité et d'examen, plus une allocation mensuelle de **5 dinars**,
+  dix mois.
+- Aucune clause d'effet. Date exécutoire : du 25 au 28 décembre 1958 (fourchette).
+
+**Arrêté du 29 novembre 1959 modifiant le taux de la bourse nationale.** JORT n° 60 du 4 décembre
+1959, p. 1421, page 55 du fichier. `https://www.pist.tn/jort/1959/1959F/Jo06059.pdf`. recid 74370.
+
+- Article unique : le montant de l'art. 4 de l'arrêté du 12 octobre 1957 « est élevé de 30 Dinars
+  à 35 Dinars par mois » pour les boursiers en France. L'arrêté de 1957 disait 30 000 francs.
+- Rien sur la Tunisie. Date exécutoire : 6 décembre 1959.
+
+**Arrêté du 4 avril 1962 modifiant l'arrêté du 12 octobre 1957.** JORT n° 19 du 6-10 avril 1962,
+p. 395, page 7 du fichier. `https://www.pist.tn/jort/1962/1962F/Jo01962.pdf`. recid 73475.
+
+- Art. 4 nouveau : 35 D par mois en France ; de 50 à 70 D pour la préparation de l'agrégation,
+  du doctorat ou d'une spécialité de médecine ; coefficient de majoration selon le taux de change
+  dans les autres pays ; redevances et voyage à la charge de l'État.
+- Rien sur la Tunisie. Date exécutoire : du 8 au 12 avril 1962 (fourchette).
+
+**Décret n° 63-2 du 2 janvier 1963 fixant les conditions d'attribution d'une bourse nationale.**
+JORT n° 1 des 1er-4-8 janvier 1963, p. 2-3, pages 2-3 du fichier.
+`https://www.pist.tn/jort/1963/1963F/Jo00163.pdf`. recid 106007.
+
+- Art. 1er : « un concours sur titres » chaque année, pour constater l'aptitude des candidats.
+- Art. 4 : le jury classe d'après a) « les besoins du pays tels qu'ils sont définis chaque année
+  dans le cadre des exigences de la planification de la formation des cadres », b) le mérite,
+  c) « la situation matérielle de la famille ». Il peut orienter le boursier vers d'autres études
+  et, au regard du critère c), « n'accorder au candidat qu'une fraction de bourse ».
+- Art. 5 : renouvellement annuel après succès aux examens ; en cas d'échec, des fractions de
+  bourse peuvent être proposées « compte tenu de la situation matérielle de la famille ».
+- Art. 6 : montant fixé par arrêté « compte tenu du coût de la vie et du taux de change ».
+- Art. 7 : le décret n° 57-78 est abrogé.
+- Date exécutoire : la loi n° 63-1 du 7 janvier 1963 est imprimée à la même page ; le fascicule a
+  donc paru le 7 ou le 8 janvier, et le décret est exécutoire le 9 ou le 10 janvier 1963.
+
+**Arrêté du 2 janvier 1963 fixant les montants et les modalités d'attribution de la bourse
+nationale.** Même fascicule, p. 3-4, pages 3-4 du fichier. recid 73258.
+
+- Art. 1er : bourse servie dix mois, payée mensuellement sur les crédits des départements
+  intéressés.
+- Art. 3 : engagement écrit de servir l'État ; formule d'engagement annexée : servir « pendant une
+  durée minimum de dix ans » ; en cas de rupture, reverser la totalité de la bourse et des
+  émoluments perçus.
+- Art. 4, bourse complète, par mois : **Tunisie 25,000 D** ; France et pays arabes du Moyen-Orient
+  35,000 D ; Italie 45,000 D ; Suisse, Belgique, Allemagne et Angleterre 50,000 D. Allocation
+  d'entretien de 100 D par an au plus ; bourse de spécialisation de 50 à 70 D par mois (futurs
+  cadres de l'Université et chefs de service des hôpitaux).
+- Art. 5 : internes à l'étranger : 10 D (France), 15 D (Allemagne, Italie) par mois.
+- Art. 6 : dispositions contraires abrogées. Aucune clause d'effet (relu à l'image, p. 3-4). Date
+  exécutoire : 9 ou 10 janvier 1963 ; les montants valent dès cette date.
+
+**Arrêté du 8 mai 1963 modifiant l'arrêté du 2 janvier 1963.** JORT n° 23 des 10-14 mai 1963,
+p. 652, page 2 du fichier. `https://www.pist.tn/jort/1963/1963F/Jo02363.pdf`. recid 73148.
+
+- Art. 1er nouveau : la bourse est payée sur les crédits du budget du secrétariat d'État à la
+  présidence, et non plus sur ceux des départements intéressés.
+- Art. 2 : « en vigueur à compter de l'année universitaire 1963-64 » ; la clause ne vaut que pour ce
+  changement d'imputation.
+
+**Arrêté du 7 décembre 1964 fixant les montants et les modalités d'attribution de la bourse
+nationale.** JORT n° 60 du 8 décembre 1964, p. 1422-1423, pages 2-3 du fichier.
+`https://www.pist.tn/jort/1964/1964F/Jo06064.pdf`. recid 72655.
+
+- Art. 1er et 2 : bourse dix mois, payée par trimestre sur le budget du secrétariat d'État à la
+  présidence.
+- Art. 3 : engagement de servir ; formule annexée : dix ans au moins.
+- Art. 4, par mois : **Tunisie 25,000 D** ; Suisse, Belgique, Allemagne, Angleterre, Italie et
+  États-Unis 57,500 D ; France, pays arabes du Moyen-Orient, Europe de l'Est et autres pays
+  40,000 D.
+- Art. 5 et 6 : allocation d'entretien de 100 D par an au plus ; spécialisation de 50 à 70 D.
+- Art. 8 : « en vigueur à compter de l'année universitaire 1964-65 ».
+
+**Arrêté du 7 décembre 1965 modifiant l'arrêté du 7 décembre 1964.** JORT n° 62 des 3-7 décembre
+1965, p. 1582, page 2 du fichier. `https://www.pist.tn/jort/1965/1965F/Jo06265.pdf`. recid 72203.
+
+- Art. 4 nouveau : **Tunisie 25,000 D** ; Italie, Suisse, Belgique, Allemagne, Angleterre et
+  Amérique du Nord 62,500 D ; France et autres pays 44,000 D.
+- Art. 6 nouveau : spécialisation de 62,500 à 87,500 D.
+- Art. 3 : « en vigueur à compter de l'année universitaire 1965-1966 ».
+
+**Arrêté du 1er mars 1969 fixant les montants et les modalités d'attribution de la bourse
+nationale.** JORT n° 8 du 28 février-4 mars 1969, p. 245-246, pages 7-8 du fichier.
+`https://www.pist.tn/jort/1969/1969F/Jo00869.pdf`. recid 71402.
+
+- Art. 1er et 2 : dix mois, paiement mensuel sur le budget du secrétariat d'État à la présidence.
+- Art. 3 : engagement ; formule annexée : dix ans au moins.
+- Art. 4, Tunisie, par mois :
+
+  | Cycle | Taux général | Taux spécial |
+  |---|---:|---:|
+  | 1er cycle | 30 D | 35 D |
+  | 2e cycle | 35 D | 40 D |
+  | 3e cycle | 45 D | 45 D |
+
+  Le taux spécial va aux « disciplines prioritaires », dont la liste est arrêtée chaque année par
+  les secrétaires d'État au Plan et à l'Éducation nationale.
+- Art. 5 et 6 : France 50 D ; Suisse, Belgique, Allemagne, Angleterre, Italie, États-Unis, Canada
+  62,500 D ; pays arabes du Moyen-Orient, Europe de l'Est et autres 50 D.
+- Art. 7 et 8 : allocation d'entretien de 100 D par an au plus ; spécialisation à l'étranger de
+  62,500 à 90 D (aucun taux de spécialisation en Tunisie dans ce texte).
+- Art. 10 : « en vigueur à compter du 1er janvier 1969 », date antérieure à la signature.
+
+**Arrêté du 15 novembre 1971 modifiant l'arrêté du 7 octobre 1971.** JORT n° 50 du 16 novembre
+1971, p. 1508, page 6 du fichier. `https://www.pist.tn/jort/1971/1971F/Jo05071.pdf`. recid 70687.
+
+- Article unique, art. 3 nouveau : en Tunisie, **taux général 30,000 D** ; taux spécial, douze
+  mois, normaliens et étudiants de l'Institut national agronomique de Tunis **35,000 D**.
+- Aucune clause d'effet. Date exécutoire : 18 novembre 1971.
+- L'arrêté du 7 octobre 1971 (25 D, taux général sans distinction de cycle) n'a donc valu que du
+  14-17 octobre au 17 novembre 1971. Par rapport à 1969 (30 D au 1er cycle), le 25 D d'octobre 1971
+  est une baisse, aussitôt corrigée ; aucun texte lu n'en donne le motif.
+
+**Décret n° 72-51 du 19 février 1972 modifiant le décret n° 71-361.** JORT n° 8 des 22-25 février
+1972, p. 230, page 8 du fichier. `https://www.pist.tn/jort/1972/1972F/Jo00872.pdf`. recid 103229.
+
+- Rédaction d'origine du décret n° 71-361 (p. 1368, relue le 29 octobre 2026) : art. 6, bourses accordées par
+  décision du ministre de l'Éducation nationale sur propositions d'un jury national ; art. 9, conditions
+  fixées par arrêté du même ministre ; art. 8, bourses possibles pour des étudiants étrangers en Tunisie.
+- Art. 4, 6, 9 et 10 nouveaux : bourse aux bacheliers des premier et deuxième cycles en Tunisie,
+  « exceptionnellement » à l'étranger ; décision du ministre de l'Agriculture ou de l'Éducation
+  nationale, chacun pour les établissements qui relèvent de lui ; montant et modalités fixés par
+  arrêté de chacun.
+- Même page, arrêté du ministre de l'Agriculture du 19 février 1972 (recid 70589, p. 229-230) :
+  Institut national agronomique de Tunis, douze mois, 35 D par mois ; instituts techniques
+  spécialisés, dix mois, 30 D ; engagement de dix ans.
+- Date exécutoire : du 24 au 27 février 1972 (fourchette).
+
+**Arrêté du 3 avril 1974 modifiant l'arrêté du 7 octobre 1971.** JORT n° 25 des 5-9 avril 1974,
+p. 704, page 20 du fichier. `https://www.pist.tn/jort/1974/1974F/Jo02574.pdf`. recid 69834.
+
+- Visa : arrêté du 7 octobre 1971 « tel qu'il a été modifié par l'arrêté du 15 novembre 1971 ».
+- Art. 4 nouveau (étranger), par mois : Angleterre, Allemagne, Belgique, Canada, Italie, Suisse,
+  États-Unis, RFA 72,500 D ; France, pays arabes du Moyen-Orient, Europe de l'Est et autres 60 D.
+- Art. 7 nouveau (spécialisation) : Tunisie de 40 à 60 D (inchangé) ; étranger de 72,500 à 100 D.
+- « Le reste sans changement » : l'art. 3 (Tunisie, 30 D depuis novembre 1971) n'est pas touché.
+- Art. 2 : dépenses sur le budget de l'ONOU. Art. 3 : « prend effet à compter du 1er janvier
+  1974 ».
+
+**Arrêté du 5 janvier 1978 modifiant l'arrêté du 7 octobre 1971.** JORT n° 4 du 13 janvier 1978,
+p. 106-107, pages 6-7 du fichier. `https://www.pist.tn/jort/1978/1978F/Jo00478.pdf`. recid 68160.
+
+- Visa : arrêté du 7 octobre 1971 « tel qu'il a été modifié par l'arrêté du 15 novembre 1971 et
+  l'arrêté du 3 avril 1974 » : aucun autre modificatif entre 1974 et 1978.
+- Art. 4 nouveau (étranger) : 72,500 D (mêmes pays) ; France 70 D ; pays arabes du Moyen-Orient,
+  Europe de l'Est et autres 60 D.
+- Art. 2 : budget de l'ONOU. Art. 3 : « prend effet à compter du 1er octobre 1977 ».
+- L'art. 3 (Tunisie) n'est pas modifié : 30 D au taux général jusqu'au 1er octobre 1977 au moins.
+
+**Conséquences pour la série de la bourse en Tunisie** : 25 D de décembre 1958 à 1968 (1958, 1963,
+1964, 1965) ; au 1er janvier 1969, 30 D au 1er cycle, 35 D au 2e, 45 D au 3e ; 25 D en octobre
+1971 ; 30 D du 18 novembre 1971 jusqu'au 1er octobre 1977 au moins ; ensuite, rien n'est établi
+avant le 1er janvier 1988 (40 D) : l'arrêté du 20 août 1982 reste non identifié (§ 2.9 c).
+
+**Deux corrections au § 1 et au chapitre.** L'engagement de servir dix ans au moins date de 1963
+(formules annexées en 1963, 1964, 1969), et non de 1971. Le concours sur titres date aussi de 1963
+(décret n° 63-2, art. 1er), ainsi que le classement selon les besoins de la planification des cadres
+et les fractions de bourse.
+
+#### b. Prêts et plafonds, 1990 et 1992
+
+**Arrêté du 28 février 1990 fixant les montants des prêts universitaires.** JORT n° 18 du 9 mars
+1990, p. 360, page 28 du fichier. `https://www.pist.tn/jort/1990/1990F/Jo01890.pdf`. recid 63175.
+
+- Visas : loi n° 88-145, loi de finances pour 1989 ; décret n° 86-688 modifié par le décret
+  n° 90-219 ; arrêté du 28 juillet 1986.
+- Art. 1er, montant annuel (100 % / 80 %) :
+
+  | Études | À 100 % | À 80 % |
+  |---|---:|---:|
+  | Tunisie, 1er et 2e cycles | 400 D | 320 D |
+  | Tunisie, 3e cycle | 700 D | 560 D |
+  | Europe de l'Est, Maghreb, Machrek, pays africains | 600 D | 480 D |
+  | Europe de l'Ouest | 1 200 D | 960 D |
+  | États-Unis, Canada | 2 200 D | 1 760 D |
+
+- Art. 2 : 2 850 D aux États-Unis et au Canada sans exonération des frais d'inscription.
+- Art. 3 : « prend effet à compter de l'année universitaire 1988-1989 ».
+- Le premier montant de prêt lu date donc de 1988-1989, et non de 1989-1990. L'arrêté du 17 avril
+  1990 (1989-1990) garde les montants en Tunisie et relève l'étranger (1 500, 3 000, 600 D ;
+  3 650 D) ; les « pays africains » n'y figurent plus.
+
+**Arrêté du 7 avril 1992 fixant le montant des revenus annuels des parents des candidats pour
+l'obtention d'un prêt universitaire à l'étranger pour l'année universitaire 1991-1992.** JORT n° 23
+du 17 avril 1992, p. 464, page 8 du fichier (p. 463 imprimée en page 7).
+`https://www.pist.tn/jort/1992/1992F/Jo02392.pdf`. recid 62407.
+
+- Visas : loi n° 91-98, loi de finances pour 1992 ; décret n° 86-688, art. 9 ; arrêté du 28 juillet
+  1986, chapitre III ; arrêté du 21 août 1990 ; arrêté du 17 avril 1990.
+- Art. 1er : plafond des revenus annuels nets imposables des parents pour le prêt à l'étranger,
+  1991-1992 : **15 000 D**, après déduction des charges sociales de l'arrêté de 1986, art. 3.
+- Art. 2 : « prend effet à compter du 1er janvier 1992 ».
+- Le plafond de la bourse et du prêt en Tunisie pour 1991-1992 n'est pas dans ce texte.
+- Même page, arrêté du 7 avril 1992 (recid 62408) : complément de bourse de coopération en Chine,
+  l'équivalent de 115 dollars par mois.
+
+#### c. L'arrêté du 20 août 1982
+
+Toujours non identifié. Passe du 29 octobre 2026 consignée dans `docs/recherches.yml` (fiche
+`r-bourse-montants-1982`) :
+
+- sommaires des fascicules français n° 59 à 83 de 1982 lus à l'image : aucun arrêté de montant de
+  bourse (seuls des concours, nominations et décrets d'organisation pour l'Enseignement supérieur) ;
+- n° 84 (31 décembre 1982, loi de finances) : notices de `jort_cache` seulement, aucune sur les
+  bourses ;
+- avec la passe du 17 octobre (n° 55 à 58, OCR), toute l'édition française postérieure au 20 août
+  1982 est couverte. Le texte a pu paraître en arabe seulement, ou ne pas être publié.
+- Restent : sommaires de l'édition arabe de 1982 ; éditions de 1983 à 1987 (publication tardive).
+
+Conséquence pour la série : entre le 1er octobre 1977 (30 D au moins, § 2.9 a) et le 1er janvier
+1988 (40 D), le montant en Tunisie n'est pas établi.
+
+#### d. Les œuvres universitaires : décret de 1980, règlement de 1974, avis de 2006
+
+**Décret n° 80-1001 du 6 août 1980 portant organisation administrative et financière de l'Office
+national des œuvres universitaires.** JORT n° 47 des 19-22 août 1980, p. 2069-2071, pages 11-13 du
+fichier. `https://www.pist.tn/jort/1980/1980F/Jo04780.pdf`. recid 98651.
+
+- Art. 1er : l'ONOU « est un établissement public à caractère administratif doté de la
+  personnalité civile et de l'autonomie financière », sous la tutelle du ministère de
+  l'Enseignement supérieur et de la Recherche scientifique ; budget rattaché pour ordre au budget
+  de l'État.
+- Art. 2 : missions de la loi n° 70-9 (bourses, maisons d'étudiants et cités, aide médicale et
+  sociale) et « toutes autres œuvres en leur faveur ».
+- Art. 4 : gestion des bourses, exploitation des résidences et restaurants universitaires en
+  Tunisie et à l'étranger, activités socio-culturelles.
+- Art. 5 à 7 : un directeur nommé par décret, assisté d'un comité (ministères, Assemblée
+  nationale, Parti, organisations de jeunesse et de la famille) qui examine le budget et le
+  rapport d'activité.
+- Art. 10 à 13 : sous-directions des affaires administratives et financières, des œuvres
+  universitaires et de l'action sociale (hébergement et restauration), et des bourses (bourses
+  nationales en Tunisie et à l'étranger, bourses de coopération).
+- Art. 16, recettes : subventions de l'État, des collectivités locales et d'autres organismes
+  publics ; « les versements et contributions des étudiants à titre d'hébergement et repas
+  universitaires » ; dons et legs. Dépenses : personnel, « allocations aux étudiants », activités
+  culturelles et médico-sociales.
+- Art. 20 : dispositions antérieures contraires abrogées.
+- Aucune clause d'effet. Date exécutoire : du 21 au 24 août 1980 (fourchette).
+- Le décret n° 85-173 qui le modifie (1985/10, p. 195, recid 96077) reste à lire.
+
+**Arrêté du 20 juin 1974, p. 1449** : lu, voir § 2.8 (droit d'entrée de 500 millimes, barème fixé
+par l'Administration, retenue sur la bourse).
+
+**Avis n° D-L 02-2006 du Conseil constitutionnel sur la nature juridique des dispositions de
+l'article premier de la loi n° 88-135.** JORT n° 66 du 18 août 2006, p. 2377-2379, pages 17-19 du
+fichier (texte en image dans un fascicule à couche de texte). `https://www.pist.tn/jort/2006/2006F/Jo0662006.pdf`.
+recid 47751.
+
+- Saisine du Président de la République du 26 juin 2006 (Constitution, art. 35, § 1er).
+- Motifs : l'art. 1er de la loi n° 88-135 crée un établissement public ; l'art. 34 de la
+  Constitution réserve à la loi la création de « catégories d'établissements et d'entreprises
+  publics » ; par les lois n° 88-135, 88-136 et 88-137, le législateur a créé « une catégorie
+  d'établissements publics assurant des services en faveur des étudiants » ; l'office du Nord
+  « s'intègre dans la catégorie des établissements des œuvres universitaires ».
+- Avis : les dispositions de l'art. 1er de la loi n° 88-135 « sont des dispositions de nature
+  réglementaire ». Délibéré le 13 juillet 2006.
+- Effet : le décret n° 2006-2245 (même fascicule) peut réécrire l'art. 1er de la loi.
 
 ---
 
@@ -931,8 +1239,15 @@ offices des œuvres universitaires.** JORT n° 92 du 14 novembre 2014, p. 3051-3
 
 | Date d'effet | Montant | Durée | Texte | État |
 |---|---:|---|---|---|
+| 25-28 décembre 1958 (fourchette) | 25,000 D | 10 mois | arrêté du 10 décembre 1958, art. 1er | lu (image) |
+| 9-10 janvier 1963 (sans clause d'effet) | 25,000 D | 10 mois | arrêté du 2 janvier 1963, art. 4 (l'arrêté du 8 mai, pour 1963-64, ne change que l'imputation) | lu (image) |
+| année universitaire 1964-65 | 25,000 D | 10 mois | arrêté du 7 décembre 1964, art. 4 | lu (image) |
+| année universitaire 1965-1966 | 25,000 D | 10 mois | arrêté du 7 décembre 1965, art. 4 nouveau | lu (image) |
+| 1er janvier 1969 | 30 D (1er cycle) ; 35 D (2e) ; 45 D (3e) ; taux spécial 35, 40, 45 D | 10 mois | arrêté du 1er mars 1969, art. 4 et 10 | lu (image) |
 | 14-17 octobre 1971 (fourchette) | 25,000 D (taux général) | 10 mois | arrêté du 7 octobre 1971, art. 3 | lu (image) |
-| entre 1974 et 1986 | à lire | — | arrêtés du 3 avril 1974, du 5 janvier 1978, du 20 août 1982 | index ; 1982 non identifié |
+| 18 novembre 1971 | 30,000 D (taux spécial 35 D, douze mois) | 10 mois | arrêté du 15 novembre 1971 | lu (image) |
+| 1er janvier 1974 et 1er octobre 1977 | inchangé (30 D) : art. 3 non touché | — | arrêtés du 3 avril 1974 et du 5 janvier 1978 | lu (image) |
+| entre 1977 et 1987 | non établi | — | arrêté du 20 août 1982, non identifié | fiche `r-bourse-montants-1982` |
 | 1er janvier 1988 | 40,000 D | 10 mois | arrêté du 31 mars 1988, art. 1er et 2 | lu (image) |
 | année universitaire 1991-1992 | 40,000 D (inchangé) | 10 mois | arrêté du 7 mars 1992 | lu (image) |
 | année universitaire 1997/1998 | 50 D | 10 mois, plus une mensualité | arrêté du 18 août 1997 | lu (texte) |
@@ -969,7 +1284,8 @@ Pour exprimer le plafond « SMIG annuel » en dinars, le SMIG de chaque année e
 
 | Date d'effet | Premier niveau | Niveau supérieur | 3e cycle, mastère, doctorat | Texte |
 |---|---:|---:|---:|---|
-| 1986 → | « montant mensuel » par arrêté (art. 9) | — | — | décret n° 86-688 ; aucun arrêté de montant lu avant 1990 |
+| 1986 → | « montant mensuel » par arrêté (art. 9) | — | — | décret n° 86-688 |
+| année universitaire 1988-1989 | 400 D | — | 700 D | arrêté du 28 février 1990, art. 1er et 3 |
 | année universitaire 1989-1990 | 400 D | — | 700 D | arrêté du 17 avril 1990 |
 | année universitaire 1991-1992 | 400 D | spécialisation 700 D | doctorat 1 400 D | arrêté du 17 mars 1992 |
 | année universitaire 1997/1998 | 500 D | 700 D | 1 400 D | arrêté du 18 août 1997 |
@@ -1010,6 +1326,7 @@ Prix antérieurs à 2016 : fiche `r-oeuvres-prix-repas-lit-avant-2016`.
 
 | Date | Règle | Texte |
 |---|---|---|
+| 9-10 janvier 1963 | renouvellement après succès ; en cas d'échec, fractions de bourse selon la situation de la famille | décret n° 63-2, art. 5 |
 | 1971 | 80 % une seule fois si au moins 8 sur 20 | arrêté du 7 octobre 1971 (jury), art. 6 |
 | 1986 | renouvellement si la moyenne atteint au moins 12 sur 20 | décret n° 86-688, art. 4 ; arrêté de 1986, art. 12 |
 | 6 avril 1995 | 100 % en cas de passage ; 80 % une fois si au moins 8 sur 20 | décret n° 95-464 ; arrêté du 29 mars 1995 |
@@ -1021,7 +1338,10 @@ Prix antérieurs à 2016 : fiche `r-oeuvres-prix-repas-lit-avant-2016`.
 Les montants à l'étranger sont nombreux (un arrêté par pays de 1989 à 2010). Seuls les textes lus
 sont repris ici :
 
-- 1971 : 62,500 ou 50,000 D par mois ;
+- 1958-1962 : France 30 D (1957, 30 000 francs), puis 35 D au 6 décembre 1959 ;
+- 1963 : de 35 D (France, pays arabes du Moyen-Orient) à 50 D par mois ; 1964 : 40 et 57,500 D ;
+  1965 : 44 et 62,500 D ; 1969 : 50 et 62,500 D ;
+- 1971 : 62,500 ou 50,000 D par mois ; 1974 : 60 et 72,500 D ; 1977 : 60, 70 (France) et 72,500 D ;
 - 1990 : bourse en RFA, 230 D par mois ;
 - 1997 : enfants des familles résidentes à l'étranger, 300 dollars par mois ;
 - 2009 et 2012 : bourse spécifique dans l'Union européenne, 600 € plus 200 € de prêt ;
@@ -1038,6 +1358,8 @@ Prêts à l'étranger : 1990, 1997, 2010 et 2019 (§§ 2.3, 2.5 et 2.7). Les arr
 |---|---|
 | Décret n° 57-78, art. 9 | bourses attribuées « compte tenu des besoins impérieux du Pays » |
 | Arrêté du 12 octobre 1957, art. 3 | engagement « à servir au terme de ses études l'État Tunisien » |
+| Décret n° 63-2, art. 4 | classement selon « les besoins du pays tels qu'ils sont définis chaque année dans le cadre des exigences de la planification de la formation des cadres » |
+| Arrêté du 2 janvier 1963, formule d'engagement | servir l'État « pendant une durée minimum de dix ans » |
 | Loi n° 70-9, art. 2 | « assurer aux étudiants dans le cadre de la politique nationale en matière d'Œuvres Universitaires, de bonnes conditions de vie et d'études » |
 | Décret n° 71-361, art. 7 | bourses réparties « dans le cadre des besoins des Plans de développement » |
 | Arrêté du 7 octobre 1971, art. 2 | engagement « à servir […] l'État durant une période de dix ans » |
@@ -1045,7 +1367,8 @@ Prêts à l'étranger : 1990, 1997, 2010 et 2019 (§§ 2.3, 2.5 et 2.7). Les arr
 | Décret n° 86-688, art. 1er | une aide servie « soit sous forme de bourse nationale […] soit sous forme de prêt universitaire » |
 | Arrêté du 9 octobre 2012, art. 30 nouveau | prêt attribué « après le classement croissant du revenu net annuel des parents […] jusqu'à consommation des crédits » |
 
-Rupture à souligner pour l'architecte : l'**engagement de servir l'État** de 1957 et 1971 disparaît
+Rupture à souligner pour l'architecte : l'**engagement de servir l'État** de 1957, porté à dix ans au moins en 1963 et repris en
+1971, disparaît
 en 1986 au profit du **prêt**. L'arrêté de 1986 ne demande plus qu'un engagement sur la sincérité des
 revenus. L'obligation de servir ne survit que pour les bourses spécifiques à l'étranger (2001 : trois
 ans ; 2009 : engagement de retour).
@@ -1252,6 +1575,15 @@ Titres exacts et URL d'origine : `sources/minfinances-portail-ancien-urls.csv`.
 
 ---
 
+**Versées le 29 octobre 2026** dans `precis/fr/education/references.json` (le livre n'a pas
+d'édition arabe) : `arrete-1958-12-10-bourse-montant`, `arrete-1959-11-29-bourse-taux`,
+`arrete-1962-04-04-bourse`, `decret63-2-bourse-nationale`, `arrete-1963-01-02-bourses-montants`,
+`arrete-1963-05-08-bourses`, `arrete-1964-12-07-bourses-montants`,
+`arrete-1965-12-07-bourses-montants`, `arrete-1969-03-01-bourses-montants`,
+`arrete-1971-11-15-bourses-montants`, `decret72-51-bourses`, `arrete-1974-04-03-bourses-montants`,
+`arrete-1978-01-05-bourses-montants`, `decret80-1001-onou`, `arrete-1990-02-28-prets-montants`,
+`arrete-1992-04-07-plafond-pret-etranger`, `avis-cc-dl-02-2006-oou-nord`.
+
 ## 7. Notions à glossaire
 
 Les formes arabes sont celles lues dans les textes arabes cités.
@@ -1298,13 +1630,15 @@ Les formes arabes sont celles lues dans les textes arabes cités.
 
 ### OCR nécessaire (fascicule scanné présent dans le corpus local)
 
-- Arrêtés de montants de 1958, 1963 (deux), 1964, 1965, 1969, 1974, 1978 (§ 2.1, tableau).
-- Arrêté du 28 février 1990 (prêts, JORT n° 18 de 1990, p. 360).
-- Arrêté du 7 avril 1992 (revenus pour le prêt à l'étranger, JORT n° 23 de 1992, p. 464).
-- Décret n° 80-1001 (organisation de l'ONOU, JORT n° 47 de 1980).
-- Page 1449 du règlement de 1974.
-- Arrêté du 20 août 1982 : fascicules français de 1982 à partir du n° 59 (fiche
-  `r-bourse-montants-1982`).
+Les textes de cette liste au 17 octobre 2026 sont lus (§ 2.9). Restent :
+
+- décret n° 58-189 du 21 juillet 1958 (JORT n° 58 de 1958, p. 760) ; décrets n° 59-212, 61-421
+  et 62-312 (attribution de la bourse nationale) ;
+- décret n° 85-173 (modifie le décret n° 80-1001 ; JORT n° 10 de 1985, p. 195) ;
+- arrêté du 20 août 1982 : sommaires de l'édition arabe de 1982 ; éditions de 1983 à 1987 (fiche
+  `r-bourse-montants-1982`) ;
+- décisions de majoration de 1958-1959 et arrêtés du 5 février 1962 pour les études à l'étranger
+  (visés en 1963, absents de l'index).
 
 ### À obtenir (hors corpus ou hors Journal officiel)
 

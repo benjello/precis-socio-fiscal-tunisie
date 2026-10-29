@@ -70,6 +70,7 @@ LIGNES = [
     ("office", "ressources propres", "2020", 2020, 5.600, "MD", "lf-2020, annexe, p. 4783 (édition arabe)"),
     ("office", "total", "2020", 2020, 75.581, "MD", "lf-2020, annexe, p. 4783 (édition arabe)"),
     # Bourse nationale en Tunisie, montant mensuel
+    ("bourse", "premier niveau (taux général, inchangé)", "1er octobre 1977", 1977, 30, "D/mois", "arrete-1971-11-15-bourses-montants, art. unique ; arrete-1978-01-05-bourses-montants, visas et art. 1"),
     ("bourse", "premier niveau", "1er janvier 1988", 1988, 40, "D/mois", "arrete-1988-03-31-bourses-montants, art. 1 et 2, p. 548-549"),
     ("bourse", "troisième cycle", "1er janvier 1988", 1988, 70, "D/mois", "arrete-1988-03-31-bourses-montants, art. 1, p. 548-549"),
     ("bourse", "premier niveau", "année universitaire 1991-1992", 1991, 40, "D/mois", "arrete-1992-03-07-bourses-montants, art. 1, p. 360"),
@@ -116,6 +117,8 @@ LIGNES = [
     ("plafond", "SMIG annuel, régime de 48 heures", "année universitaire 2011-2012", 2011, "smig_48h_mensuel@2011-09-01", "D/an", "arrete-2012-10-09-bourses-conditions, art. 4 nouveau, p. 2563-2566 ; SMIG : marche-travail-smig-smag"),
     ("plafond", "SMIG annuel, régime de 40 heures", "année universitaire 2011-2012", 2011, "smig_40h_mensuel@2011-09-01", "D/an", "arrete-2012-10-09-bourses-conditions, art. 4 nouveau, p. 2563-2566 ; SMIG : marche-travail-smig-smag"),
     # Prêt universitaire de l'État en Tunisie, montant annuel à 100 %
+    ("pret", "premier niveau", "année universitaire 1988-1989", 1988, 400, "D/an", "arrete-1990-02-28-prets-montants, art. 1 et 3, p. 360"),
+    ("pret", "troisième cycle", "année universitaire 1988-1989", 1988, 700, "D/an", "arrete-1990-02-28-prets-montants, art. 1 et 3, p. 360"),
     ("pret", "premier niveau", "année universitaire 1989-1990", 1989, 400, "D/an", "arrete-1990-04-17-prets-montants, art. 1, p. 542-543"),
     ("pret", "troisième cycle", "année universitaire 1989-1990", 1989, 700, "D/an", "arrete-1990-04-17-prets-montants, art. 1, p. 542-543"),
     ("pret", "premier niveau", "année universitaire 1991-1992", 1991, 400, "D/an", "arrete-1992-03-17-prets-montants, p. 399"),
@@ -132,6 +135,12 @@ LIGNES = [
     ("pret", "mastère, 1re année", "1er octobre 2011", 2011, 1000, "D/an", "arrete-2012-10-09-prets-montants, art. 2, p. 2567"),
     ("pret", "mastère, 2e année", "1er octobre 2011", 2011, 1400, "D/an", "arrete-2012-10-09-prets-montants, art. 2, p. 2567"),
     # Prêt universitaire de l'État à l'étranger, montant annuel à 100 %
+    ("etranger", "bourse, Angleterre, Allemagne, Belgique, Canada, Italie, Suisse, États-Unis", "1er octobre 1977", 1977, 72.5, "D/mois", "arrete-1978-01-05-bourses-montants, art. 1 et 3, p. 106-107"),
+    ("etranger", "bourse, France", "1er octobre 1977", 1977, 70, "D/mois", "arrete-1978-01-05-bourses-montants, art. 1 et 3, p. 106-107"),
+    ("etranger", "bourse, pays arabes du Moyen-Orient, Europe de l'Est et autres pays", "1er octobre 1977", 1977, 60, "D/mois", "arrete-1978-01-05-bourses-montants, art. 1 et 3, p. 106-107"),
+    ("etranger", "prêt, Europe de l'Ouest", "année universitaire 1988-1989", 1988, 1200, "D/an", "arrete-1990-02-28-prets-montants, art. 1 et 3, p. 360"),
+    ("etranger", "prêt, États-Unis, Canada", "année universitaire 1988-1989", 1988, 2200, "D/an", "arrete-1990-02-28-prets-montants, art. 1 et 3, p. 360"),
+    ("etranger", "prêt, Europe de l'Est, Maghreb, Machrek, pays africains", "année universitaire 1988-1989", 1988, 600, "D/an", "arrete-1990-02-28-prets-montants, art. 1 et 3, p. 360"),
     ("etranger", "prêt, Europe de l'Ouest", "année universitaire 1989-1990", 1989, 1500, "D/an", "arrete-1990-04-17-prets-montants, art. 1, p. 542-543"),
     ("etranger", "prêt, États-Unis, Canada", "année universitaire 1989-1990", 1989, 3000, "D/an", "arrete-1990-04-17-prets-montants, art. 1, p. 542-543"),
     ("etranger", "prêt, Maghreb et Machrek", "année universitaire 1989-1990", 1989, 600, "D/an", "arrete-1990-04-17-prets-montants, art. 1, p. 542-543"),

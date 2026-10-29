@@ -1,22 +1,22 @@
 """Données des figures du chapitre « La dépense d'éducation » : copie sourcée des séries.
 
-Copie, ligne à ligne, les séries de la note documentaire
-(`docs/notes/education-depense-series/`, une ligne par valeur avec sa source et sa page) dans
-les figdata `figdata/fig_educ_depense_*.csv` du livre, avec leur en-tête de provenance et leur
-sidecar `.csv.yml`. Aucune valeur n'est saisie à la main ; seules s'ajoutent les conversions en
+Copie, ligne à ligne, les séries d'éducation du catalogue de `tunisia-data`, lues par
+`figtools.series()` (entrepôt s'il est installé, sinon snapshot `precis/_seriescache/`) — une
+ligne par valeur avec sa source et sa page, la colonne `serie` nommant le relevé d'origine de la
+note documentaire — dans les figdata `figdata/fig_educ_depense_*.csv` du livre, avec leur
+en-tête de provenance et leur sidecar `.csv.yml`. Aucune valeur n'est saisie à la main ; seules s'ajoutent les conversions en
 dinars de 2023 par l'indice `ipc-longue-periode` du catalogue, et les deux parts, recalculées
 HORS RECHERCHE (décision du 17 octobre 2026 : la recherche scientifique n'entre ni dans les
 totaux ni dans les ratios ; ses lignes identifiables sont copiées « hors total »). Les parts
 de la note, qui comprennent la recherche, ne servent plus que de contrôle de la copie. Les chunks du chapitre ne lancent PAS ce script : ils lisent les figdata qu'il a
-écrits (`fig_educ_depense.py`). Le relancer après une correction de la note :
+écrits (`fig_educ_depense.py`). Le relancer après une correction des séries (dans
+`tunisia-data`, puis `figtools.refresh_cache()`) :
 
     uv run python precis/fr/education/figures/fig_educ_depense_donnees.py [tableaux.md]
 
 L'argument facultatif reçoit les tableaux Markdown des blocs repliés du chapitre.
-
-À retirer quand les séries seront versées à `tunisia-data` : les figures liront alors
-`figtools.series()` et le rendu écrira les figdata.
 """
+import io
 import re
 import sys
 from pathlib import Path
@@ -24,12 +24,17 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[4]
-SER = ROOT / "docs/notes/education-depense-series"
+sys.path.insert(0, str(ROOT / "scripts"))
+import figtools  # noqa: E402
+
 OUT = ROOT / "precis/fr/education/figdata"
-DATE = "2026-10-17"
-FICHE = "docs/notes/education-depense-2026-10-17.md"
-HORS_CATALOGUE = ("SÉRIES HORS CATALOGUE : valeurs relevées dans les sources citées, non encore versées "
-                  "au catalogue de données ; chaque ligne garde sa source et sa page")
+DATE = "2026-10-29"
+FICHE = "docs/notes/education-depense-2026-10-17.md, sources/education-depense-series.md"
+# Séries d'éducation du catalogue lues ici ; la colonne `serie` nomme le relevé de la note.
+SERIES = ("education-depense-ministeres", "education-depense-nature", "education-depense-parts-calcul",
+          "education-depense-programmes", "education-personnels-fonction-publique",
+          "education-effectifs-annuaire", "education-depense-menages", "education-uis-depense")
+_RELEVES: dict[str, pd.DataFrame] = {}
 
 ipc = pd.read_csv(ROOT / "precis/_seriescache/ipc-longue-periode.csv").set_index("annee")["indice_base1970"]
 IPC23 = ipc[2023]
@@ -38,8 +43,30 @@ DENOM = pd.read_csv(ROOT / "precis/_seriescache/denominateurs-depenses-etat-pib.
 HORS_TOTAL = "hors total (recherche)"
 
 
+def _releves() -> dict[str, pd.DataFrame]:
+    """{relevé: lignes}, toutes séries du catalogue confondues, chargé une fois."""
+    if not _RELEVES:
+        for sid in SERIES:
+            for nom, d in figtools.series(sid).groupby("serie", sort=False):
+                _RELEVES[nom] = d.drop(columns="serie")
+    return _RELEVES
+
+
 def lire(nom):
-    return pd.read_csv(SER / f"{nom}.csv")
+    """Lignes d'un relevé, avec les types qu'aurait son fichier lu seul. Une série du catalogue
+    mêle des relevés aux colonnes de types différents : une colonne d'entiers y devient flottante
+    dès qu'un autre relevé porte une décimale ou une case vide. On la rend entière quand, pour ce
+    relevé, toutes ses valeurs le sont ; puis un aller-retour CSV refait l'inférence des types."""
+    d = _releves()[nom].reset_index(drop=True).copy()
+    for c in d.columns:
+        col = d[c]
+        if col.dtype == float and col.notna().all() and (col == col.round()).all():
+            d[c] = col.astype("int64")
+    return pd.read_csv(io.StringIO(d.to_csv(index=False)))
+
+
+def existe(nom):
+    return nom in _releves()
 
 
 def edition(s):
@@ -64,7 +91,7 @@ def stade(s):
 
 
 def ecrire(slug, df, sources, caveats, note, series=()):
-    caveats = [HORS_CATALOGUE] + list(caveats)
+    caveats = list(caveats)
     head = [
         f"# Figure-data du précis socio-fiscal tunisien — généré le {DATE}",
         f"# séries (tunisia_data) : {', '.join(series)}",
@@ -123,7 +150,7 @@ def main() -> None:
         "dinars de 2023 : indice des prix ipc-longue-periode (base 1970), rapport de l'indice 2023 à "
         "celui de l'année"],
         "Dépense de l'État par ministère, gestion et développement, 1997-2023, en milliers de dinars "
-        "courants et de 2023", series=["ipc-longue-periode"])
+        "courants et de 2023", series=["education-depense-ministeres", "ipc-longue-periode"])
 
     # tableau replié : large
     w = mins.pivot_table(index="Année", columns=["Ministère", "Titre"],
@@ -207,17 +234,17 @@ def main() -> None:
         "2017 provisoire (dernière année de l'édition 2013-2017, reprise par les éditions suivantes) : la "
         "baisse de 2017 à 2018 tient au stade du chiffre"],
         "Part de l'Éducation et de l'Enseignement supérieur, hors recherche, dans les dépenses de l'État "
-        "(2009-2023) et dans le PIB en base 2015 (2010-2023)", series=["denominateurs-depenses-etat-pib"])
+        "(2009-2023) et dans le PIB en base 2015 (2010-2023)", series=["education-depense-ministeres", "education-depense-parts-calcul",
+                                 "denominateurs-depenses-etat-pib"])
 
     # ---------------------------------------------------------------- 3. nature
     NAT = [("remunerations", "Rémunérations"), ("biens-et-services", "Biens et services"), ("autres-depenses", "Autres dépenses")]
     rows = []
     for cle, nom in MIN[:4]:
         for nc, nn in NAT:
-            f = SER / f"nature-{cle}-{nc}.csv"
-            if not f.exists():
+            if not existe(f"nature-{cle}-{nc}"):
                 continue
-            d = pd.read_csv(f)
+            d = lire(f"nature-{cle}-{nc}")
             for r in d.itertuples():
                 rows.append({"Année": int(r.annee), "Ministère": nom, "Libellé imprimé": libelle(r.source),
                              "Périmètre": HORS_TOTAL if cle == "recherche-scientifique" else "",
@@ -244,7 +271,7 @@ def main() -> None:
         "sauts sans commentaire de la source : autres dépenses de l'Éducation 2016-2017, biens et services "
         "2017-2020 ; reclassements possibles, non confirmés ; années absentes : 2002, 2013, 2018, 2019, 2021"],
         "Dépense de gestion par nature et par ministère, 2001-2023, en milliers de dinars courants et en "
-        "parts des trois natures")
+        "parts des trois natures", series=["education-depense-nature"])
 
     md.append("\n## Tableau nature (Éducation, ES)\n")
     for mn in ["Éducation", "Enseignement supérieur", "Recherche scientifique", "Formation professionnelle"]:
@@ -340,7 +367,8 @@ def main() -> None:
         "dinars de 2023 : indice des prix ipc-longue-periode (base 1970)"],
         "Enseignants du public par cycle (1995-1996 à 2023-2024), rémunérations des ministères "
         "(2001-2023), agents des ministères (2010-2025) et rémunération par agent (2010-2023)",
-        series=["ipc-longue-periode"])
+        series=["education-effectifs-annuaire", "education-depense-nature",
+                "education-personnels-fonction-publique", "ipc-longue-periode"])
 
     md.append("\n## Tableau enseignants\n")
     e1, e2, e3 = (lire(k).set_index("annee") for k in ("enseignants-public-premier-cycle-base",
@@ -386,7 +414,8 @@ def main() -> None:
         "Enseignement supérieur, recherche hors total (comprise dans la gestion du supérieur depuis 2019, "
         "non isolable), PIB en base 2015 (2010-2014 rétropolés par l'INS) ; périmètres différents, familles distinctes"],
         "Dépense publique d'éducation selon l'UNESCO-UIS, en part du PIB et des dépenses publiques, et "
-        "par élève en part du PIB par habitant, avec la part budgétaire superposée")
+        "par élève en part du PIB par habitant, avec la part budgétaire superposée",
+        series=["education-uis-depense", "education-depense-ministeres"])
 
     md.append("\n## Programmes\n")
     for cle, nom in (("programme-education-primaire", "P1 primaire"), ("programme-education-preparatoire-secondaire", "P2 prep-sec"),

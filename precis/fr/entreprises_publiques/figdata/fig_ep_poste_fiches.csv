@@ -1,0 +1,199 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-29
+# séries (tunisia_data) : entreprises-publiques-fiches-entreprises
+# sources (citation) : @minfin-ep-2022, @minfin-ep-2024, @minfin-ep-2025
+# fiches : sources/entreprises-publiques.md
+# méthode/hypothèses : AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne se compare d'une édition à l'autre que sous le même code (`indicateur`) ; `divergence_entre_editions` signale 870 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs 15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d'exploitation 3 307 puis 4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une même année d'une édition à l'autre (SNCFT 2020 : subvention d'exploitation 65 en LF 2022, 105 en LF 2024 ; STIR 2020 : résultat net 30,7 en LF 2022, 59,1 en LF 2024 ; STIR 2022 : subvention d'exploitation 4 197,8 en LF 2024, 4 101,0 en LF 2025, résultat net −2 374,3 puis −1 902,9 ; Office des céréales 2022, « réalisé » dans les deux éditions : passifs 8 335,7 en LF 2024, 8 054,1 en LF 2025, actifs 5 684,4 puis 5 402,2, concours bancaires 6 564,9 puis 6 201,5, subvention d'exploitation 3 692,6 puis 3 653,1 ; SONEDE 2022, probable puis réalisé : résultat net −86,7 puis −21,1 ; ONAS 2022, provisoire puis réalisé : résultat net avant modifications comptables −97,8 puis 2,0 ; Office national de l'huile 2022, provisoire dans les deux éditions : passifs 789,7 puis 899,7, actifs 280,0 puis 525,0, résultat net −32,1 puis −41,4). OFFICE DES CÉRÉALES, RÉSULTATS REPORTÉS : l'édition LF 2024 imprime les résultats reportés augmentés du résultat de l'exercice (2021 : −1 511,2 − 477,2 = −1 988,4), soit ce que l'édition LF 2025 donne à l'exercice suivant, à la révision du résultat de 2022 près (2022 : −2 689,2 en LF 2024, −2 689,8 pour 2023 en LF 2025) ; imprimé tel quel. `statut` : le dernier exercice de chaque édition est en général provisoire, estimé ou probable ; exception : l'Office des céréales, dont l'édition LF 2024 imprime 2022 « منجز » (réalisé), que l'édition LF 2025 révise en le disant aussi réalisé, et Tunisie Télécom, dont tous les exercices des éditions LF 2024 et LF 2025 sont imprimés « منجز ». « - » imprimé est une case vide (`case_vide`), distincte d'un zéro imprimé. EN-TÊTES DÉCALÉS DANS L'ÉDITION LF 2024 (colonnes 6 à 8) : l'attribution suit l'ordre de l'édition LF 2025, prouvée par l'identité du bilan. ÉCARTS IMPRIMÉS DÉCLARÉS (`ecart_identite`) : dette de la SNCFT, LF 2022, somme des créanciers inférieure au total de 110,9 (2018) et 161,9 (2019) ; ETAP 2020, 0,6 ; STEG 2022 en LF 2024, 15 753 au passif et à l'actif pour 37 de fonds propres ; SNCFT en LF 2025, colonne « recettes » qui ne boucle pas avec le total des produits (2021 : 89,8 quand LF 2024 imprime 35,8, qui boucle) ; STIR, LF 2022, dette totale inférieure de 50,0 à la somme des créanciers les trois années ; STIR 2022 en LF 2024, bilan à 0,8 près ; ONAS 2018 en LF 2022, charges d'exploitation imprimées « -283,4 », avec le signe (résultat d'exploitation 56,27 = 339,7 − 283,4) ; SONEDE 2022 en LF 2024, produits 663,3 pour une somme de 663,1 ; CPG 2019 en LF 2022, dette totale 288,95 pour une somme des créanciers de 288,63 ; GCT, LF 2022, montants entiers, écart d'une unité (dette 2018 et 2019, résultat d'exploitation 2020) ; Office national de l'huile 2022 en LF 2024, 280,0 d'actifs pour 789,7 de passifs et −364,7 de fonds propres (écart −145,0, les variations imprimées confirmant les trois cases ; LF 2025 boucle). OFFICE NATIONAL DE L'HUILE 2023 (LF 2025) : total des passifs en case vide ; la variation imprimée « 2023-2022 » (−54,9) donnerait 844,8, qui ne boucle pas avec 526,0 d'actifs et −416,0 de fonds propres : non reporté ; RNTA, LF 2022, dette totale 2018 de 535,76 pour 535,59 de créanciers et résultat d'exploitation 2019 de −68,1 pour −61,2 ; RNTA, LF 2024, fonds propres et résultats reportés imprimés sans le signe « − » (281,1 pour 2021, −281,1 en LF 2025 ; la ligne des variations de la page confirme le signe), bilan qui ne boucle pas ; RNTA, LF 2025, actifs − passifs − fonds propres = résultat net de l'exercice (96,9 ; 130,7 ; 116,2). TUNISAIR, BILAN NON PUBLIÉ : 2020-2022 (LF 2024) et 2021-2023 (LF 2025), cases du bilan remplacées par une note (états financiers non approuvés) ; aucune ligne. Tunisair, statuts LF 2022 : « * » provisoire (2018, 2019), « ** » probable (2020). Tunisie Télécom, LF 2024 et LF 2025 : produits d'exploitation supérieurs à recettes + autres produits de 60,5 (2020), 50,7 (2021), 27,7 (2022) et 30,1 (2023), sans ligne qui porte la différence. SONEDE, BILAN NON PUBLIÉ : 2022 dans l'édition LF 2024 et 2023 dans l'édition LF 2025, les onze cases du bilan sont remplacées par une note (états financiers non transmis, puis non approuvés) ; aucune ligne, ce ne sont pas des cases vides. GCT 2023 dans l'édition LF 2025 : ligne remplacée par une note (comptes de 2022 en cours de clôture) ; aucune ligne. CPG et GCT : aucune subvention d'exploitation (0 en LF 2022, « - » ensuite). GCT 2022, estimé (LF 2024) puis provisoire (LF 2025) : résultat net 296,0 puis 63,1. SONEDE 2019 dans l'édition LF 2022 : « * », états financiers non approuvés (`statut` = comptes non approuvés). STIR, LF 2024 : « *660,4 » (autres produits d'exploitation 2021), appel de la note « منحة دعم المحروقات لسنة 2021 باعتبار إعادة توظيف عائدات عنصر الخزن الاحتياطي بقيمة 624,5 م دينار ضمن إيرادات الاستغلال (بصدد التسوية) » ; LF 2025 imprime 35,8 pour la même case. STIR 2023 (LF 2025) : total des passifs et immobilisations nettes en case vide. RÉSULTAT NET : les classements des dix premières retiennent le résultat avant modifications comptables (STEG 2021 : −42,7 ; 3 469,6 après) ; SNCFT 2019 : −119,8 sur la fiche, −113,78 dans le classement de la même édition. La subvention d'exploitation est une ligne comptable de l'entreprise : elle ne concorde pas avec les transferts du budget par entreprise. TRANSTU : bilan non publié (LF 2024 : 2021 et 2022 remplacés par une note, états financiers 2020-2022 non approuvés ; LF 2025 : seuls les résultats reportés sont imprimés) ; aucune ligne pour ces cases. LF 2024 p. 83, en-têtes décalés : fonds propres 2020 lus 1 110 (positifs ; −713,5 fin 2018 en LF 2022), résultats reportés −1 621 (= ce que LF 2025 donne pour 2021). Dette totale 2018 (LF 2022) 981 pour 982 de créanciers, écart déclaré. TUNISIE AUTOROUTES : LF 2024, produits supérieurs à leurs composantes de 3,5, 3,3 et 1,9 (production immobilisée, que LF 2025 range dans les autres produits), bilan 2021 à 0,4 près, déclarés ; LF 2025, subvention d'exploitation 2022 de 320,2 = avances de l'État pour les échéances de prêts extérieurs de 2021 et 2022, comptées en subvention (note imprimée) ; 2021 retraité (modifications comptables) : fonds propres 882,6 en LF 2024, 778,8 en LF 2025. OFFICE NATIONAL DES POSTES : comptes imprimés dans le tableau des autres entreprises publiques du secteur quasi financier (LF 2022 p. 44, tableau 22 ; LF 2024 p. 63, tableau 27 ; LF 2025 p. 40), même mise en page que les fiches ; aucune subvention d'exploitation (0 en LF 2022, « - » ensuite) ; charges financières nettes de signe opposé d'une édition à l'autre (2021 : 23,4 en LF 2024, −23,4 en LF 2025 ; produits financiers nets), imprimées telles quelles ; résultat net 2022 provisoire 85,3 (LF 2024), réalisé 106,9 (LF 2025) ; indicateurs d'activité du même tableau (cartes de paiement, comptes et encours de l'épargne postale) non versés. OFFICE DU COMMERCE DE LA TUNISIE, ÉDITION LF 2024 : la colonne 2022 du bloc « résultat » (quatorze lignes, de « recettes » à « liquidités ») imprime les variations 2021/2020 (recettes 17,9 ; charges d'exploitation 144,2 ; résultat net −128,6) et non les niveaux de 2022 (LF 2025 : 739,6 ; 1 249,4 ; −424,0) ; imprimé tel quel, les identités tenant entre variations — NE PAS lire ces cases comme 2022. « Total des passifs » imprimé égal au total des actifs (total des passifs et des fonds propres) : écart déclaré, égal à l'opposé des fonds propres (241,7 ; 369,9 ; 794,2) ; LF 2025 boucle. Ligne des stocks nets (`stocks`) propre à cette fiche ; pas de ligne de subventions d'investissement en LF 2022. Charges financières nettes de signes opposés d'une édition à l'autre (LF 2024 −20,2, LF 2025 19,9 pour 2021). TUNISIE TÉLÉCOM : LF 2022, mise en page en colonnes par exercice, dette par créancier qui boucle ; LF 2024, ligne de 2020 sans exercice imprimé (cellule fusionnée avec le nom de la société), attribuée par les variations imprimées et l'effectif ; 2022 (LF 2024) et 2023 (LF 2025) imprimés « منجز » (réalisé) ; résultats reportés 0,0 en 2022 et 2023 ; immobilisations nettes 2021 : 2 247,5 en LF 2024, 2 247,6 en LF 2025. PREUVES DE LECTURE : identités du bilan, des produits et du résultat d'exploitation ; effectif et charges de personnel identiques, ligne à ligne (298), à la série entreprises-publiques-effectifs-par-entreprise lue sur les mêmes pages ; chaque ligne recoupée avec la couche texte de la page. LU À L'IMAGE à 170 dpi le 27 octobre 2026 (300 dpi le 28 octobre pour les ajouts, le 29 octobre pour Tunisie Télécom et l'Office national des postes).
+# note : Office national des postes d'après le rapport sur les entreprises publiques, exercices 2018-2023, en millions de dinars courants et en agents : chaque exercice dans la dernière édition qui le donne ; dette par créancier de l'édition LF 2022. Source : ministère des Finances [@minfin-ep-2022, p. 44 ; @minfin-ep-2024, p. 63 ; @minfin-ep-2025, p. 40]
+Exercice,Édition,Statut,Grandeur,Valeur,Unité,Imprimé,Case laissée vide,Libellé arabe,Page imprimée,Page du fichier
+2018,LF 2022,non dit,Dette totale,110.7,millions de dinars courants,"110,7",False,مجموع المديونية,44,43
+2018,LF 2022,non dit,dont autres,55.7,millions de dinars courants,"55,7",False,آخرون,44,43
+2018,LF 2022,non dit,dont caisses sociales,34.2,millions de dinars courants,"34,2",False,الصناديق الاجتماعية,44,43
+2018,LF 2022,non dit,dont entreprises publiques,0.7,millions de dinars courants,"0,7",False,المنشآت العمومية,44,43
+2018,LF 2022,non dit,dont banques,0.0,millions de dinars courants,"0,0",False,البنوك,44,43
+2018,LF 2022,non dit,dont État,20.1,millions de dinars courants,"20,1",False,الدولة,44,43
+2018,LF 2022,non dit,Subventions d'investissement,20.0,millions de dinars courants,"20,0",False,منح الاستثمار,44,43
+2018,LF 2022,non dit,Investissements,38.1,millions de dinars courants,"38,1",False,قيمة الاستثمارات,44,43
+2018,LF 2022,non dit,Fonds propres,202.3,millions de dinars courants,"202,3",False,الأموال الذاتية,44,43
+2018,LF 2022,non dit,Résultats reportés,-96.8,millions de dinars courants,"-96,8",False,النتائج المؤجلة,44,43
+2018,LF 2022,non dit,Résultat net,-4.9,millions de dinars courants,"-4,9",False,النتيجة الصافية,44,43
+2018,LF 2022,non dit,Charges financières nettes,9.8,millions de dinars courants,"9,8",False,الأعباء المالية الصافية,44,43
+2018,LF 2022,non dit,Résultat d'exploitation,-21.6,millions de dinars courants,"-21,6",False,نتيجة الاستغلال,44,43
+2018,LF 2022,non dit,Charges d'exploitation,442.2,millions de dinars courants,"442,2",False,أعباء الاستغلال,44,43
+2018,LF 2022,non dit,Subvention d'exploitation,0.0,millions de dinars courants,"0,0",False,منح الاستغلال,44,43
+2018,LF 2022,non dit,Produits d'exploitation,420.6,millions de dinars courants,"420,6",False,إيرادات الاستغلال,44,43
+2018,LF 2022,non dit,Charges de personnel,328.9,millions de dinars courants,"328,9",False,أعباء الأعوان,44,43
+2018,LF 2022,non dit,Effectif (agents),9326.0,agents,"9326,0",False,عدد الأعوان,44,43
+2019,LF 2022,provisoire,Dette totale,121.6,millions de dinars courants,"121,6",False,مجموع المديونية,44,43
+2019,LF 2022,provisoire,dont autres,54.0,millions de dinars courants,"54,0",False,آخرون,44,43
+2019,LF 2022,provisoire,dont caisses sociales,33.6,millions de dinars courants,"33,6",False,الصناديق الاجتماعية,44,43
+2019,LF 2022,provisoire,dont entreprises publiques,8.2,millions de dinars courants,"8,2",False,المنشآت العمومية,44,43
+2019,LF 2022,provisoire,dont banques,0.0,millions de dinars courants,"0,0",False,البنوك,44,43
+2019,LF 2022,provisoire,dont État,25.8,millions de dinars courants,"25,8",False,الدولة,44,43
+2019,LF 2022,provisoire,Subventions d'investissement,0.0,millions de dinars courants,"0,0",False,منح الاستثمار,44,43
+2019,LF 2022,provisoire,Investissements,25.0,millions de dinars courants,"25,0",False,قيمة الاستثمارات,44,43
+2019,LF 2022,provisoire,Fonds propres,171.6,millions de dinars courants,"171,6",False,الأموال الذاتية,44,43
+2019,LF 2022,provisoire,Résultats reportés,-101.6,millions de dinars courants,"-101,6",False,النتائج المؤجلة,44,43
+2019,LF 2022,provisoire,Résultat net,-20.2,millions de dinars courants,"-20,2",False,النتيجة الصافية,44,43
+2019,LF 2022,provisoire,Charges financières nettes,27.0,millions de dinars courants,"27,0",False,الأعباء المالية الصافية,44,43
+2019,LF 2022,provisoire,Résultat d'exploitation,-21.4,millions de dinars courants,"-21,4",False,نتيجة الاستغلال,44,43
+2019,LF 2022,provisoire,Charges d'exploitation,479.8,millions de dinars courants,"479,8",False,أعباء الاستغلال,44,43
+2019,LF 2022,provisoire,Subvention d'exploitation,0.0,millions de dinars courants,"0,0",False,منح الاستغلال,44,43
+2019,LF 2022,provisoire,Produits d'exploitation,458.4,millions de dinars courants,"458,4",False,إيرادات الاستغلال,44,43
+2019,LF 2022,provisoire,Charges de personnel,343.6,millions de dinars courants,"343,6",False,أعباء الأعوان,44,43
+2019,LF 2022,provisoire,Effectif (agents),9261.0,agents,"9261,0",False,عدد الأعوان,44,43
+2020,LF 2022,estimé,Dette totale,94.5,millions de dinars courants,"94,5",False,مجموع المديونية,44,43
+2020,LF 2022,estimé,dont autres,42.0,millions de dinars courants,"42,0",False,آخرون,44,43
+2020,LF 2022,estimé,dont caisses sociales,24.2,millions de dinars courants,"24,2",False,الصناديق الاجتماعية,44,43
+2020,LF 2022,estimé,dont entreprises publiques,8.6,millions de dinars courants,"8,6",False,المنشآت العمومية,44,43
+2020,LF 2022,estimé,dont banques,0.0,millions de dinars courants,"0,0",False,البنوك,44,43
+2020,LF 2022,estimé,dont État,19.7,millions de dinars courants,"19,7",False,الدولة,44,43
+2020,LF 2022,estimé,Subventions d'investissement,21.0,millions de dinars courants,"21,0",False,منح الاستثمار,44,43
+2020,LF 2022,estimé,Investissements,24.2,millions de dinars courants,"24,2",False,قيمة الاستثمارات,44,43
+2020,LF 2022,estimé,Fonds propres,144.4,millions de dinars courants,"144,4",False,الأموال الذاتية,44,43
+2020,LF 2022,estimé,Résultats reportés,-120.6,millions de dinars courants,"-120,6",False,النتائج المؤجلة,44,43
+2020,LF 2022,estimé,Résultat net,-7.9,millions de dinars courants,"-7,9",False,النتيجة الصافية,44,43
+2020,LF 2022,estimé,Charges financières nettes,23.5,millions de dinars courants,"23,5",False,الأعباء المالية الصافية,44,43
+2020,LF 2022,estimé,Résultat d'exploitation,-5.6,millions de dinars courants,"-5,6",False,نتيجة الاستغلال,44,43
+2020,LF 2022,estimé,Charges d'exploitation,492.1,millions de dinars courants,"492,1",False,أعباء الاستغلال,44,43
+2020,LF 2022,estimé,Subvention d'exploitation,0.0,millions de dinars courants,"0,0",False,منح الاستغلال,44,43
+2020,LF 2022,estimé,Produits d'exploitation,486.5,millions de dinars courants,"486,5",False,إيرادات الاستغلال,44,43
+2020,LF 2022,estimé,Charges de personnel,375.7,millions de dinars courants,"375,7",False,أعباء الأعوان,44,43
+2020,LF 2022,estimé,Effectif (agents),9048.0,agents,"9048,0",False,عدد الأعوان,44,43
+2020,LF 2024,réalisé,"Total des passifs, hors fonds propres",11357.8,millions de dinars courants,"11357,8",False,مجموع الخصوم,63,64
+2020,LF 2024,réalisé,dont concours bancaires et autres passifs financiers,0.1,millions de dinars courants,"0,1",False,مساعدات بنكية وغيرها من الخصوم المالية,63,64
+2020,LF 2024,réalisé,dont autres passifs courants,593.0,millions de dinars courants,"593,0",False,الخصوم الجارية الأخرى,63,64
+2020,LF 2024,réalisé,dont fournisseurs,49.0,millions de dinars courants,"49,0",False,المزودون والحسابات المتصلة بهم,63,64
+2020,LF 2024,réalisé,dont emprunts à plus d'un an,,millions de dinars courants,-,True,القروض الأكثر من سنة,63,64
+2020,LF 2024,réalisé,Fonds propres avant affectation,187.2,millions de dinars courants,"187,2",False,الأموال الذاتية قبل التخصيص,63,64
+2020,LF 2024,réalisé,Résultats reportés,-120.3,millions de dinars courants,"-120,3",False,النتائج المؤجلة,63,64
+2020,LF 2024,réalisé,Total des actifs,11544.9,millions de dinars courants,"11544,9",False,مجموع الأصول,63,64
+2020,LF 2024,réalisé,Liquidités,257.3,millions de dinars courants,"257,3",False,السيولة وما يعادل السيولة,63,64
+2020,LF 2024,réalisé,Clients,31.8,millions de dinars courants,"31,8",False,الحرفاء والحسابات المتصلة بهم الصافية,63,64
+2020,LF 2024,réalisé,Immobilisations nettes,427.5,millions de dinars courants,"427,5",False,مجموع الأصول الثابتة الصافية,63,64
+2020,LF 2024,réalisé,Résultat net après modifications comptables,2.8,millions de dinars courants,"2,8",False,النتيجة الصافية (بعد التعديلات المحاسبية),63,64
+2020,LF 2024,réalisé,Résultat net avant modifications comptables,2.8,millions de dinars courants,"2,8",False,النتيجة الصافية (قبل التعديلات المحاسبية),63,64
+2020,LF 2024,réalisé,Produits des placements,,millions de dinars courants,-,True,إيرادات التوظيفات,63,64
+2020,LF 2024,réalisé,Charges financières nettes,12.1,millions de dinars courants,"12,1",False,أعباء مالية صافية (+/-),63,64
+2020,LF 2024,réalisé,Résultat d'exploitation,-10.6,millions de dinars courants,"-10,6",False,نتيجة الاستغلال,63,64
+2020,LF 2024,réalisé,Charges d'exploitation,500.6,millions de dinars courants,"500,6",False,مجموع أعباء الاستغلال,63,64
+2020,LF 2024,réalisé,Produits d'exploitation,490.0,millions de dinars courants,"490,0",False,مجموع إيرادات الاستغلال,63,64
+2020,LF 2024,réalisé,dont autres produits d'exploitation,14.2,millions de dinars courants,"14,2",False,إيرادات الاستغلال الأخرى,63,64
+2020,LF 2024,réalisé,Subvention d'exploitation,,millions de dinars courants,-,True,منح الاستغلال,63,64
+2020,LF 2024,réalisé,dont recettes,475.8,millions de dinars courants,"475,8",False,مداخيل,63,64
+2020,LF 2024,réalisé,Charges de personnel,371.2,millions de dinars courants,"371,2",False,أعباء الأعوان,63,64
+2020,LF 2024,réalisé,Effectif (agents),9041.0,agents,9041,False,عدد الأعوان,63,64
+2021,LF 2024,réalisé,"Total des passifs, hors fonds propres",12055.4,millions de dinars courants,"12055,4",False,مجموع الخصوم,63,64
+2021,LF 2024,réalisé,dont concours bancaires et autres passifs financiers,1.0,millions de dinars courants,"1,0",False,مساعدات بنكية وغيرها من الخصوم المالية,63,64
+2021,LF 2024,réalisé,dont autres passifs courants,664.2,millions de dinars courants,"664,2",False,الخصوم الجارية الأخرى,63,64
+2021,LF 2024,réalisé,dont fournisseurs,44.7,millions de dinars courants,"44,7",False,المزودون والحسابات المتصلة بهم,63,64
+2021,LF 2024,réalisé,dont emprunts à plus d'un an,,millions de dinars courants,-,True,القروض الأكثر من سنة,63,64
+2021,LF 2024,réalisé,Fonds propres avant affectation,207.7,millions de dinars courants,"207,7",False,الأموال الذاتية قبل التخصيص,63,64
+2021,LF 2024,réalisé,Résultats reportés,-117.5,millions de dinars courants,"-117,5",False,النتائج المؤجلة,63,64
+2021,LF 2024,réalisé,Total des actifs,12263.0,millions de dinars courants,"12263,0",False,مجموع الأصول,63,64
+2021,LF 2024,réalisé,Liquidités,597.4,millions de dinars courants,"597,4",False,السيولة وما يعادل السيولة,63,64
+2021,LF 2024,réalisé,Clients,28.2,millions de dinars courants,"28,2",False,الحرفاء والحسابات المتصلة بهم الصافية,63,64
+2021,LF 2024,réalisé,Immobilisations nettes,579.4,millions de dinars courants,"579,4",False,مجموع الأصول الثابتة الصافية,63,64
+2021,LF 2024,réalisé,Résultat net après modifications comptables,20.5,millions de dinars courants,"20,5",False,النتيجة الصافية (بعد التعديلات المحاسبية),63,64
+2021,LF 2024,réalisé,Résultat net avant modifications comptables,20.5,millions de dinars courants,"20,5",False,النتيجة الصافية (قبل التعديلات المحاسبية),63,64
+2021,LF 2024,réalisé,Produits des placements,,millions de dinars courants,-,True,إيرادات التوظيفات,63,64
+2021,LF 2024,réalisé,Charges financières nettes,23.4,millions de dinars courants,"23,4",False,أعباء مالية صافية (+/-),63,64
+2021,LF 2024,réalisé,Résultat d'exploitation,-2.6,millions de dinars courants,"-2,6",False,نتيجة الاستغلال,63,64
+2021,LF 2024,réalisé,Charges d'exploitation,523.9,millions de dinars courants,"523,9",False,مجموع أعباء الاستغلال,63,64
+2021,LF 2024,réalisé,Produits d'exploitation,521.3,millions de dinars courants,"521,3",False,مجموع إيرادات الاستغلال,63,64
+2021,LF 2024,réalisé,dont autres produits d'exploitation,15.8,millions de dinars courants,"15,8",False,إيرادات الاستغلال الأخرى,63,64
+2021,LF 2024,réalisé,Subvention d'exploitation,,millions de dinars courants,-,True,منح الاستغلال,63,64
+2021,LF 2024,réalisé,dont recettes,505.5,millions de dinars courants,"505,5",False,مداخيل,63,64
+2021,LF 2024,réalisé,Charges de personnel,372.8,millions de dinars courants,"372,8",False,أعباء الأعوان,63,64
+2021,LF 2024,réalisé,Effectif (agents),8829.0,agents,8829,False,عدد الأعوان,63,64
+2021,LF 2025,réalisé,"Total des passifs, hors fonds propres",12055.4,millions de dinars courants,"12055,4",False,مجموع الخصوم,40,40
+2021,LF 2025,réalisé,dont concours bancaires et autres passifs financiers,1.0,millions de dinars courants,"1,0",False,مساعدات بنكية وغيرها من الخصوم المالية,40,40
+2021,LF 2025,réalisé,dont autres passifs courants,664.2,millions de dinars courants,"664,2",False,الخصوم الجارية الأخرى,40,40
+2021,LF 2025,réalisé,dont fournisseurs,44.7,millions de dinars courants,"44,7",False,المزودون والحسابات المتصلة بهم,40,40
+2021,LF 2025,réalisé,dont emprunts à plus d'un an,,millions de dinars courants,-,True,القروض الأكثر من سنة,40,40
+2021,LF 2025,réalisé,Fonds propres avant affectation,207.7,millions de dinars courants,"207,7",False,الأموال الذاتية قبل التخصيص,40,40
+2021,LF 2025,réalisé,Résultats reportés,-117.5,millions de dinars courants,"-117,5",False,النتائج المؤجلة,40,40
+2021,LF 2025,réalisé,Total des actifs,12263.0,millions de dinars courants,"12263,0",False,مجموع الأصول,40,40
+2021,LF 2025,réalisé,Liquidités,597.4,millions de dinars courants,"597,4",False,السيولة وما يعادل السيولة,40,40
+2021,LF 2025,réalisé,Clients,28.2,millions de dinars courants,"28,2",False,الحرفاء والحسابات المتصلة بهم الصافية,40,40
+2021,LF 2025,réalisé,Immobilisations nettes,579.2,millions de dinars courants,"579,2",False,مجموع الأصول الثابتة الصافية,40,40
+2021,LF 2025,réalisé,Résultat net après modifications comptables,20.5,millions de dinars courants,"20,5",False,النتيجة الصافية (بعد التعديلات المحاسبية),40,40
+2021,LF 2025,réalisé,Résultat net avant modifications comptables,20.5,millions de dinars courants,"20,5",False,النتيجة الصافية (قبل التعديلات المحاسبية),40,40
+2021,LF 2025,réalisé,Produits des placements,,millions de dinars courants,-,True,إيرادات التوظيفات,40,40
+2021,LF 2025,réalisé,Charges financières nettes,-23.4,millions de dinars courants,"-23,4",False,أعباء مالية صافية (+/-),40,40
+2021,LF 2025,réalisé,Résultat d'exploitation,-2.6,millions de dinars courants,"-2,6",False,نتيجة الاستغلال,40,40
+2021,LF 2025,réalisé,Charges d'exploitation,523.9,millions de dinars courants,"523,9",False,مجموع أعباء الاستغلال,40,40
+2021,LF 2025,réalisé,Produits d'exploitation,521.3,millions de dinars courants,"521,3",False,مجموع إيرادات الاستغلال,40,40
+2021,LF 2025,réalisé,dont autres produits d'exploitation,15.8,millions de dinars courants,"15,8",False,إيرادات الاستغلال الأخرى,40,40
+2021,LF 2025,réalisé,Subvention d'exploitation,,millions de dinars courants,-,True,منح الاستغلال,40,40
+2021,LF 2025,réalisé,dont recettes,505.5,millions de dinars courants,"505,5",False,مداخيل,40,40
+2021,LF 2025,réalisé,Charges de personnel,372.8,millions de dinars courants,"372,8",False,أعباء الأعوان,40,40
+2021,LF 2025,réalisé,Effectif (agents),8829.0,agents,8829,False,عدد الأعوان,40,40
+2022,LF 2024,provisoire,"Total des passifs, hors fonds propres",13231.7,millions de dinars courants,"13231,7",False,مجموع الخصوم,63,64
+2022,LF 2024,provisoire,dont concours bancaires et autres passifs financiers,258.8,millions de dinars courants,"258,8",False,مساعدات بنكية وغيرها من الخصوم المالية,63,64
+2022,LF 2024,provisoire,dont autres passifs courants,608.2,millions de dinars courants,"608,2",False,الخصوم الجارية الأخرى,63,64
+2022,LF 2024,provisoire,dont fournisseurs,67.4,millions de dinars courants,"67,4",False,المزودون والحسابات المتصلة بهم,63,64
+2022,LF 2024,provisoire,dont emprunts à plus d'un an,,millions de dinars courants,-,True,القروض الأكثر من سنة,63,64
+2022,LF 2024,provisoire,Fonds propres avant affectation,282.1,millions de dinars courants,"282,1",False,الأموال الذاتية قبل التخصيص,63,64
+2022,LF 2024,provisoire,Résultats reportés,-96.8,millions de dinars courants,"-96,8",False,النتائج المؤجلة,63,64
+2022,LF 2024,provisoire,Total des actifs,13513.7,millions de dinars courants,"13513,7",False,مجموع الأصول,63,64
+2022,LF 2024,provisoire,Liquidités,176.5,millions de dinars courants,"176,5",False,السيولة وما يعادل السيولة,63,64
+2022,LF 2024,provisoire,Clients,30.4,millions de dinars courants,"30,4",False,الحرفاء والحسابات المتصلة بهم الصافية,63,64
+2022,LF 2024,provisoire,Immobilisations nettes,628.9,millions de dinars courants,"628,9",False,مجموع الأصول الثابتة الصافية,63,64
+2022,LF 2024,provisoire,Résultat net après modifications comptables,85.3,millions de dinars courants,"85,3",False,النتيجة الصافية (بعد التعديلات المحاسبية),63,64
+2022,LF 2024,provisoire,Résultat net avant modifications comptables,85.3,millions de dinars courants,"85,3",False,النتيجة الصافية (قبل التعديلات المحاسبية),63,64
+2022,LF 2024,provisoire,Produits des placements,,millions de dinars courants,-,True,إيرادات التوظيفات,63,64
+2022,LF 2024,provisoire,Charges financières nettes,10.1,millions de dinars courants,"10,1",False,أعباء مالية صافية (+/-),63,64
+2022,LF 2024,provisoire,Résultat d'exploitation,94.2,millions de dinars courants,"94,2",False,نتيجة الاستغلال,63,64
+2022,LF 2024,provisoire,Charges d'exploitation,535.7,millions de dinars courants,"535,7",False,مجموع أعباء الاستغلال,63,64
+2022,LF 2024,provisoire,Produits d'exploitation,629.9,millions de dinars courants,"629,9",False,مجموع إيرادات الاستغلال,63,64
+2022,LF 2024,provisoire,dont autres produits d'exploitation,12.8,millions de dinars courants,"12,8",False,إيرادات الاستغلال الأخرى,63,64
+2022,LF 2024,provisoire,Subvention d'exploitation,,millions de dinars courants,-,True,منح الاستغلال,63,64
+2022,LF 2024,provisoire,dont recettes,617.0,millions de dinars courants,"617,0",False,مداخيل,63,64
+2022,LF 2024,provisoire,Charges de personnel,371.0,millions de dinars courants,"371,0",False,أعباء الأعوان,63,64
+2022,LF 2024,provisoire,Effectif (agents),8868.0,agents,8868,False,عدد الأعوان,63,64
+2022,LF 2025,réalisé,"Total des passifs, hors fonds propres",12985.7,millions de dinars courants,"12985,7",False,مجموع الخصوم,40,40
+2022,LF 2025,réalisé,dont concours bancaires et autres passifs financiers,0.0,millions de dinars courants,"0,0",False,مساعدات بنكية وغيرها من الخصوم المالية,40,40
+2022,LF 2025,réalisé,dont autres passifs courants,587.8,millions de dinars courants,"587,8",False,الخصوم الجارية الأخرى,40,40
+2022,LF 2025,réalisé,dont fournisseurs,59.2,millions de dinars courants,"59,2",False,المزودون والحسابات المتصلة بهم,40,40
+2022,LF 2025,réalisé,dont emprunts à plus d'un an,,millions de dinars courants,-,True,القروض الأكثر من سنة,40,40
+2022,LF 2025,réalisé,Fonds propres avant affectation,305.1,millions de dinars courants,"305,1",False,الأموال الذاتية قبل التخصيص,40,40
+2022,LF 2025,réalisé,Résultats reportés,-96.9,millions de dinars courants,"-96,9",False,النتائج المؤجلة,40,40
+2022,LF 2025,réalisé,Total des actifs,13290.8,millions de dinars courants,"13290,8",False,مجموع الأصول,40,40
+2022,LF 2025,réalisé,Liquidités,357.5,millions de dinars courants,"357,5",False,السيولة وما يعادل السيولة,40,40
+2022,LF 2025,réalisé,Clients,30.2,millions de dinars courants,"30,2",False,الحرفاء والحسابات المتصلة بهم الصافية,40,40
+2022,LF 2025,réalisé,Immobilisations nettes,853.7,millions de dinars courants,"853,7",False,مجموع الأصول الثابتة الصافية,40,40
+2022,LF 2025,réalisé,Résultat net après modifications comptables,106.9,millions de dinars courants,"106,9",False,النتيجة الصافية (بعد التعديلات المحاسبية),40,40
+2022,LF 2025,réalisé,Résultat net avant modifications comptables,106.9,millions de dinars courants,"106,9",False,النتيجة الصافية (قبل التعديلات المحاسبية),40,40
+2022,LF 2025,réalisé,Produits des placements,,millions de dinars courants,-,True,إيرادات التوظيفات,40,40
+2022,LF 2025,réalisé,Charges financières nettes,-31.8,millions de dinars courants,"-31,8",False,أعباء مالية صافية (+/-),40,40
+2022,LF 2025,réalisé,Résultat d'exploitation,88.9,millions de dinars courants,"88,9",False,نتيجة الاستغلال,40,40
+2022,LF 2025,réalisé,Charges d'exploitation,540.4,millions de dinars courants,"540,4",False,مجموع أعباء الاستغلال,40,40
+2022,LF 2025,réalisé,Produits d'exploitation,629.3,millions de dinars courants,"629,3",False,مجموع إيرادات الاستغلال,40,40
+2022,LF 2025,réalisé,dont autres produits d'exploitation,12.9,millions de dinars courants,"12,9",False,إيرادات الاستغلال الأخرى,40,40
+2022,LF 2025,réalisé,Subvention d'exploitation,,millions de dinars courants,-,True,منح الاستغلال,40,40
+2022,LF 2025,réalisé,dont recettes,616.4,millions de dinars courants,"616,4",False,مداخيل,40,40
+2022,LF 2025,réalisé,Charges de personnel,379.3,millions de dinars courants,"379,3",False,أعباء الأعوان,40,40
+2022,LF 2025,réalisé,Effectif (agents),8836.0,agents,8836,False,عدد الأعوان,40,40
+2023,LF 2025,provisoire,"Total des passifs, hors fonds propres",15172.1,millions de dinars courants,"15172,1",False,مجموع الخصوم,40,40
+2023,LF 2025,provisoire,dont concours bancaires et autres passifs financiers,3.4,millions de dinars courants,"3,4",False,مساعدات بنكية وغيرها من الخصوم المالية,40,40
+2023,LF 2025,provisoire,dont autres passifs courants,736.2,millions de dinars courants,"736,2",False,الخصوم الجارية الأخرى,40,40
+2023,LF 2025,provisoire,dont fournisseurs,44.0,millions de dinars courants,"44,0",False,المزودون والحسابات المتصلة بهم,40,40
+2023,LF 2025,provisoire,dont emprunts à plus d'un an,,millions de dinars courants,-,True,القروض الأكثر من سنة,40,40
+2023,LF 2025,provisoire,Fonds propres avant affectation,466.4,millions de dinars courants,"466,4",False,الأموال الذاتية قبل التخصيص,40,40
+2023,LF 2025,provisoire,Résultats reportés,9.9,millions de dinars courants,"9,9",False,النتائج المؤجلة,40,40
+2023,LF 2025,provisoire,Total des actifs,15638.4,millions de dinars courants,"15638,4",False,مجموع الأصول,40,40
+2023,LF 2025,provisoire,Liquidités,588.6,millions de dinars courants,"588,6",False,السيولة وما يعادل السيولة,40,40
+2023,LF 2025,provisoire,Clients,28.3,millions de dinars courants,"28,3",False,الحرفاء والحسابات المتصلة بهم الصافية,40,40
+2023,LF 2025,provisoire,Immobilisations nettes,1586.6,millions de dinars courants,"1586,6",False,مجموع الأصول الثابتة الصافية,40,40
+2023,LF 2025,provisoire,Résultat net après modifications comptables,171.0,millions de dinars courants,"171,0",False,النتيجة الصافية (بعد التعديلات المحاسبية),40,40
+2023,LF 2025,provisoire,Résultat net avant modifications comptables,171.0,millions de dinars courants,"171,0",False,النتيجة الصافية (قبل التعديلات المحاسبية),40,40
+2023,LF 2025,provisoire,Produits des placements,,millions de dinars courants,-,True,إيرادات التوظيفات,40,40
+2023,LF 2025,provisoire,Charges financières nettes,-3.6,millions de dinars courants,"-3,6",False,أعباء مالية صافية (+/-),40,40
+2023,LF 2025,provisoire,Résultat d'exploitation,200.0,millions de dinars courants,"200,0",False,نتيجة الاستغلال,40,40
+2023,LF 2025,provisoire,Charges d'exploitation,543.7,millions de dinars courants,"543,7",False,مجموع أعباء الاستغلال,40,40
+2023,LF 2025,provisoire,Produits d'exploitation,743.7,millions de dinars courants,"743,7",False,مجموع إيرادات الاستغلال,40,40
+2023,LF 2025,provisoire,dont autres produits d'exploitation,18.2,millions de dinars courants,"18,2",False,إيرادات الاستغلال الأخرى,40,40
+2023,LF 2025,provisoire,Subvention d'exploitation,,millions de dinars courants,-,True,منح الاستغلال,40,40
+2023,LF 2025,provisoire,dont recettes,725.5,millions de dinars courants,"725,5",False,مداخيل,40,40
+2023,LF 2025,provisoire,Charges de personnel,399.8,millions de dinars courants,"399,8",False,أعباء الأعوان,40,40
+2023,LF 2025,provisoire,Effectif (agents),8568.0,agents,8568,False,عدد الأعوان,40,40

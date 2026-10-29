@@ -145,7 +145,7 @@ repliés (`.chronologie-repliable`, compte du 25 octobre 2026). Reste à faire :
 | Compensation | Volume IX, huit chapitres réécrits le 6 octobre 2026 (institution, réformes, dépense, carburants, électricité et gaz, transport, rapports extérieurs, incidence) ; montant versé de la dotation de la Caisse inconnu pour dix années, dont cinq (2003, 2006, 2008, 2009, 2011) ont une ligne budgétaire d'ordre de grandeur (subvention prévue 1987-1994 et ligne 2003-2011 versées le 24 octobre 2026) ; tarifs MT/HT et gaz 1994-2003 versés le 24 octobre 2026, grille d'octobre 1993 non publiée | Lois de règlement 1988 et 1989 (scans à lire à l'image), budget économique, lois de finances complémentaires et tableaux des fonds spéciaux 1995-2010 (dotation) ; décrets de suspension du prélèvement à l'importation (n° 97-2509 à 2007-1199) ; produit annuel des prélèvements ; décret n° 93-1187 et modifications de 2002, 2009 et 2015 du décret n° 91-1391 lus le 24 octobre 2026 |
 | Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, avec une section « effectifs et masse salariale », français seul ; inscrit à l'accueil le 20 octobre 2026 (partie V) ; séries budgétaires 2016-2024 et 1987-2009 ; quatre flux de clôture du budget pour 2010-2016 (24 octobre 2026) ; ni transferts par entreprise avant 2016, ni encours de la dette garantie, ni série avant 1987 ; forme (volume ou chapitre) à trancher par la revue (note dans la section du volume) | Lois de finances de 2016 à 2024 (articles sur la garantie) ; transferts par entreprise 2010-2015 ; totaux des budgets de 1959-60 à 1985 (voir la section du volume) |
 | Santé | Volume X, première rédaction le 12 octobre 2026, français seul : histoire, couverture, hôpital, médecine de ville ; tarifs des malades payants et tarifs réduits de 1998 (23 octobre) ; numérotation des sections corrigée (#511) ; dépenses du département 2018-2023 et comptes de la CNAM 2016-2021 intégrés, comptes 2011-2015 lus à l'image le 15 octobre ; les prestations en espèces restent dans « Prestations sociales » | Statistiques de prestations de la CNAM, lisibles en couche texte dans le corpus ; ventilation de la dépense par prestation à obtenir hors JORT |
-| Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense (dépense des communes ajoutée le 23 octobre, séries 2022-2023) ; lectures des 18 et 19 octobre fusionnées ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001, arrêté de 1982 : fascicules au corpus, à lire à l'image (§ 9 du plan) |
+| Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense (dépense des communes ajoutée le 23 octobre, séries 2022-2023) ; lectures des 18 et 19 octobre fusionnées ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001 : lus le 29 octobre 2026 ; arrêté du 20 août 1982 non retrouvé en français (édition arabe à lire) ; § 9 du plan, points 2 et 3, à lire à l'image |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -2534,9 +2534,27 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   article sont encore à verser au catalogue de `tunisia-data`. Série 2018-2021 impossible : fichiers sans identifiant d'article. Le TODO du livre des finances locales sur l'annexe du décret n° 2020-52
   (`_budgets.qmd`, section de la nomenclature) est en partie levé : le modèle est lu, le contenu des articles 6101
   et 8002 reste à lire ; `decret-gouv2020-439` est dans les références de ce livre (contrôle du 25 octobre 2026).
-- [ ] **Textes à lire à l'image** : liste au § 9 du plan (arrêtés de montants de bourses 1958-1978, textes de 1990 et
-  1992, décret n° 80-1001, arrêté de 1982, fascicules d'avant 1990, décrets de répartition des crédits,
-  budgets citoyens 2014-2018). Ticket proposé au § 9, à ouvrir par l'humain.
+- [ ] **Textes à lire à l'image** : § 9 du plan, points 2 et 3 (fascicules d'avant 1990 de l'histoire, décrets de
+  répartition des crédits, budgets citoyens 2014-2018). Ticket proposé au § 9, à ouvrir par l'humain.
+- [ ] **§ 9, point 1 (aides universitaires), lu à l'image le 29 octobre 2026** (branche `educ/textes-aides`, note
+  `education-aides-universitaires` § 2.9) : arrêtés de montants de 1958, 1959, 1962, 1963 (deux), 1964, 1965, 1969,
+  15 novembre 1971, 1974 et 1978 ; décret n° 63-2 ; décret n° 72-51 ; arrêtés du 28 février 1990 et du 7 avril 1992 ;
+  décret n° 80-1001 ; p. 1449 du règlement de 1974 ; avis du Conseil constitutionnel n° D-L 02-2006 (statut des
+  offices, ancienne Q7). Versés au chapitre 5 (tableaux du montant, des niveaux, du prêt, de l'étranger et du
+  renouvellement ; registres de la bourse et des œuvres). Corrections faites au rendu : engagement de servir dix
+  ans et concours sur titres dès 1963 (et non 1971) ; premier prêt chiffré en 1988-1989 (et non 1989-1990). À la
+  revue : la baisse de 30 D (premier cycle, 1969) à 25 D (taux général, octobre 1971), corrigée le 18 novembre 1971.
+  Restent :
+  - arrêté du 20 août 1982 : non retrouvé dans l'édition française de 1982 (sommaires n° 59 à 83 lus à l'image ;
+    n° 84 par l'index) ; reste l'édition arabe de 1982 (corpus) et 1983-1987 ; montant en Tunisie non établi entre
+    1977 et 1988 ;
+  - décret n° 58-189 (JORT n° 58 de 1958, p. 760), décrets n° 59-212, 61-421 et 62-312 (attribution de la bourse) :
+    au corpus, scans, à lire ;
+  - décret n° 85-173 (modifie le décret n° 80-1001 ; JORT n° 10 de 1985) : au corpus, scan, à lire ;
+  - décisions de majoration de 1958-1959 et arrêtés du 5 février 1962 (études à l'étranger), visés en 1963 : absents
+    de l'index, à chercher ;
+  - arrêtés de bourses des écoles du ministère de l'Agriculture (1972, 1973, 1975, 1980) : au corpus ; celui de 1972
+    est lu (35 D et 30 D).
 - [ ] **Classement des réformes** (rupture, étape) : classement provisoire, avec l'autre lecture écrite
   (2002, 2017, 2008 en formation initiale). LMD = rupture ; 1989 = étape (décision du 17 octobre 2026) ; à
   confirmer à la revue.
@@ -2545,10 +2563,11 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   non-GBO (clé **conservée**, décision de l'inbox du 17 octobre 2026 : citée dans le chapitre et dans une figure, et déjà dans
   Zotero) ; `loi-2009-32-restauration-formation` est au fonds commun en français et, depuis le 25 octobre 2026, en arabe
   (déplacée depuis `precis/ar/fiscalite/references.json`) ; double clé de la loi de finances pour 2019.
-- [ ] **Séries** : verser les 57 séries de `education-depense-series/` au catalogue de `tunisia-data`, puis repasser
-  les figures de la dépense à `figtools.series()` ; copier les données de la Banque mondiale (UIS) et le
-  communiqué de l'INS de `/tmp/education-ocr-D/` vers `tunisia-data` ; figures des boursiers et des
-  effectifs (F2, F3) à produire quand les séries existent.
+- [ ] **Séries** : les 79 relevés de `education-depense-series/` sont au catalogue de `tunisia-data` (onze séries
+  `education-*`, 29 octobre 2026) et les figures de la dépense lisent `figtools.series()`. Reste : les réponses de
+  l'API de la Banque mondiale (UIS) et le communiqué de l'INS téléchargés pour la note étaient dans
+  `/tmp/education-ocr-D/`, disparu — à retélécharger dans `data/raw/` de `tunisia-data` ; figures des boursiers et
+  des effectifs (F2, F3) à produire (effectifs : série `education-effectifs-annuaire`, déjà au snapshot).
 - [ ] **Recherche exclue de la dépense** (décision du 17 octobre 2026) : fondue dans l'enseignement supérieur en
   gestion en 2002-2004 et depuis 2019 ; réserve de périmètre dite dans le texte, pas d'estimation ; la
   fiche de plan § 4 et la note `education-depense` § 2.4 comptent encore la recherche dans le périmètre et
@@ -3717,8 +3736,8 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Tunisie Télécom, Poste, Office du
-    commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
+  - les autres grandes entreprises (Tunisie Télécom, Poste et Office du commerce versées le
+    29 octobre 2026, `#sec-ep-ge-tt`, `#sec-ep-ge-poste`, `#sec-ep-ge-otc`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
   - SNCFT : statuts de 1969 (loi n° 69-31, JORT n° 19 de 1969, p. 581-584, dans le corpus local,
@@ -4007,6 +4026,81 @@ Ce qui reste :
   - grandeurs d'activité des fiches (achats et ventes de produits de base) citées, non versées dans
     une série ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Office national des postes — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
+  `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche
+  de la Poste dans la suite des fiches d'entreprises : ses comptes sont au tableau des « autres
+  entreprises publiques du secteur quasi financier », même mise en page (LF 2022 p. 44, tableau 22 ;
+  LF 2024 p. 63, tableau 27 ; LF 2025 p. 40). **Versés le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-poste`, code
+  `poste`), lus à l'image (300 dpi) et retrouvés dans la couche texte ; aucun écart d'identité ;
+  charges financières nettes de signe opposé entre LF 2024 et LF 2025. Transferts du budget (20 MD
+  en 2018, 21 MD en 2020, 11 MD en 2021) lus aux pages par entreprise des éditions LF 2022 (p. 106),
+  LF 2023 (p. 200) et LF 2024 (p. 154). Commentaires du rapport lus : LF 2024 p. 64-65, LF 2025
+  p. 42. Registre `tbl-ep-registre-poste`, lu au corpus local : loi n° 90-97 (comptes courants
+  postaux, p. 1636, image) ; loi n° 98-38 (code de la poste) ; décret n° 98-1305 (création) ; loi
+  n° 98-87 (transfert des biens et du personnel) ; loi de finances pour 1999, art. 67 et 68 ;
+  décret n° 2003-1536 (couche texte décalée, décodée) ; loi de finances pour 2004, art. 39 à 42
+  (couche décalée) ; décret n° 2007-1394 ; loi n° 2007-40 ; décret gouvernemental n° 2016-681.
+  Dates de dépôt au gouvernorat lues à l'image sur la dernière page des éditions arabes (1998,
+  2003, 2007) et dans l'édition française (2016). Glossaire : `onp`. Dans `grandes_entreprises.py`,
+  le panneau « résultat net » de `fig_budget` n'a plus d'échelle quand l'entreprise n'est dans
+  aucun classement (cas de la Poste, absente des classements des dix premiers résultats).
+  **Reste** :
+  - nature du total des passifs (12 à 15 milliards de dinars, dont 647 à 784 MD dans les rubriques
+    détaillées) : la fiche ne la dit pas ; états financiers de l'Office : **à obtenir** ;
+  - objet des transferts de 2018, 2020 et 2021 (annexe 8, tableaux par établissement, **lisibles
+    dans le corpus de `tunisia-data`**) et application à l'Office, depuis 1998, de l'article 8 de la
+    loi n° 90-97 (intérêts et rémunération de 1,5 % des avoirs des comptes courants postaux) ;
+  - garantie de l'État à des emprunts de l'Office : aucune par les intitulés de `jort_cache.db`
+    (français, arabe, FTS) ; plein texte non parcouru ;
+  - textes **dans le corpus local, non lus** : décret du 28 août 1956 (Caisse d'épargne nationale
+    tunisienne) et ses modificatifs, décrets sur les taux de l'épargne et des comptes courants
+    postaux (1967-1988), lois de finances pour 1978, 1987, 1988, 2003 (art. 82), 2015 (art. 43,
+    seuil antérieur non lu), 2019 (art. 53 et 54) et 2026 (art. 100), organigramme, statut du
+    personnel, emplois fonctionnels, arrêtés de 2004, 2019 et 2021, circulaire de la Banque
+    centrale n° 2022-11 ;
+  - grandeurs d'activité du tableau (cartes de paiement, comptes et encours de l'épargne postale)
+    non versées ; édition LF 2022 absente de la série des effectifs ; éditions françaises LF 2020
+    (p. 32) et LF 2021 (p. 42) : comptes dans la prose, non versés.
+- **Tunisie Télécom — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-tt`, en fin de chapitre, après le GCT). Figure `fig-ep-tt-fiches` (pas de figure du
+  budget : transferts nuls, LF 2022 p. 106 et LF 2024 p. 155), tableaux repliés
+  `tbl-ep-tt-fiche-a` et `-b`. **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-tt`) : LF 2022
+  p. 87 (tableau 30, mise en page verticale), LF 2024 p. 128 (tableau 35), LF 2025 p. 105 ; lues à
+  l'image (300 dpi), chaque ligne retrouvée entière dans la couche texte. Tous les exercices des
+  éditions LF 2024 et LF 2025 dits réalisés. Écarts imprimés déclarés : produits d'exploitation
+  supérieurs à recettes + autres produits (60,5 ; 50,7 ; 27,7 ; 30,1 MD, 2020-2023). Lus sur les
+  pages, sans série : contribution aux ressources propres de l'État (LF 2022 p. 102 ; LF 2024
+  p. 151), dettes et créances croisées de fin 2022 (LF 2024 p. 142 et 146) et de fin 2023 (LF 2025
+  p. 118-123), part de l'État dans les bénéfices 2021-2023 (64,6 MD, p. 126). Registre
+  `tbl-ep-registre-tt` : lois n° 95-36, 97-67, 98-86, loi de finances pour 1999 (art. 21, 22 et 68),
+  lois n° 2002-39, 2002-40, 2002-60, 2002-89, 2003-40, 2004-12, 2004-86, décret n° 2006-398, loi
+  n° 2014-48, décret gouvernemental n° 2020-422, décret présidentiel n° 2022-307 (fascicules
+  français ; couche texte à police décalée décodée pour certains fascicules de 2002 à 2004). La loi n° 2004-30 et le décret n° 2006-1555 restent
+  au registre de `_statut.qmd` (renvoi par `@tbl-ep-registre` et `@tbl-ep-22ter`, les liens
+  `#r-` ne traversant pas les fichiers). Acquéreur de 2006 nommé d'après le recueil de la
+  Direction générale de la privatisation. Glossaire : `tunisie-telecom`.
+  **Reste** :
+  - `_statut.qmd`, tableau `tbl-ep-22ter` : la ligne de 2006 (« Ce qui reste ») ne dit pas que le
+    décret gouvernemental n° 2020-422 remplace les articles 2, 4 et 5 du décret n° 2006-1555 et
+    ajoute un article 2 bis : **à mettre à jour** (décision humaine, chapitre d'un autre domicile) ;
+  - ouverture du capital de 2006 : texte d'autorisation **non identifié** ; part actuelle de
+    l'État et cotation éventuelle **non établies** ;
+  - redevance sur les télécommunications (15 % du chiffre d'affaires, loi n° 95-36, art. 10) :
+    sort après 1999 **non établi** (aucun modificatif trouvé par les intitulés ; le code des
+    télécommunications ne la mentionne pas) ;
+  - textes **dans le corpus local, non lus** : décrets n° 95-2031 et 2003-1510 (organisation),
+    99-2844 et 2010-2989 (statut du personnel), 2000-323 (organigramme), 2001-1248 (emplois
+    fonctionnels), 2015-85 (application de la loi n° 2014-48), décrets de ratification
+    n° 2002-2063, 2002-3040 et 2003-1554, code des télécommunications et ses modificatifs, loi de
+    finances pour 2002, art. 66 à 70 ; licences 3G et 4G (décrets n° 2016-438 et 2017-64,
+    **édition arabe**) ; annexe du décret n° 2022-307 (p. 901-945) ;
+  - séries à verser dans `tunisia-data` : contribution aux ressources propres, transferts nuls et
+    dettes et créances croisées (voir l'entrée CPG et GCT) ; grandeurs d'activité des fiches
+    (abonnés, lignes) non relevées ; édition française LF 2021 (p. 130) non versée ;
+  - comptes publiés et rapports annuels de la société : **à obtenir**.
 - **Statut, tutelle et gouvernance — lus le 27 octobre 2026** (`_statut.qmd`, sections `#sec-ep-2006` et
   `#sec-ep-gouvernance`, registres `tbl-ep-registre` et `tbl-ep-registre-gouvernance`) : lus au corpus local,
   fascicules français (image pour 1985-1993, couche texte ensuite ; décret n° 2023-591 à l'édition arabe, la

@@ -433,6 +433,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Office du commerce de la Tunisie | الديوان التونسي للتجارة | OCT |
 | Office national de l'assainissement | الديوان الوطني للتطهير | ONAS |
 | Office national de l'huile | الديوان الوطني للزيت | ONH |
+| Office national des postes | الديوان الوطني للبريد |  |
 | Option pour la qualité d'assujetti | الاختيار للخضوع للأداء |  |
 | Ordonnateur | آمر قبض وصرف |  |
 | Organisme de placement collectif en valeurs mobilières | مؤسسة التوظيف الجماعي في الأوراق المالية | OPCVM |
@@ -697,6 +698,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tribunal immobilier | المحكمة العقارية |  |
 | Tunisair | شركة الخطوط التونسية |  |
 | Tunisie Autoroutes | شركة تونس الطرقات السيارة |  |
+| Tunisie Télécom | اتصالات تونس |  |
 | Tutelle | سلطة الإشراف |  |
 | Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
