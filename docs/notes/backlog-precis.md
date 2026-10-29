@@ -4356,6 +4356,31 @@ Ce qui reste :
   - page exacte de la ligne de l'agence dans les tableaux des transferts par entreprise (LF 2022 à
     LF 2024) : non relevée ; objet des transferts à confirmer dans l'annexe 8 ;
   - comptes publiés et rapports annuels de l'agence : **à obtenir**.
+- **Tunisie Trade Net — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-ttn`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figure
+  `fig-ep-ttn-fiches` (pas de figure du budget : la société n'est dans aucun tableau des transferts
+  versé), tableaux repliés `tbl-ep-ttn-fiche-a` et `-b`. **Fiche du ministère des Finances versée
+  le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-ttn`, code `ttn`) : LF 2022 p. 50, LF 2024 p. 74, LF 2025 p. 50, lues à l'image
+  (300 dpi) et retrouvées dans la couche texte. Édition LF 2024 : « total des passifs » égal au
+  total des actifs (écart déclaré ; la case de 2020 n'est pas tracée, `PASSIFS_AVEC_FONDS_PROPRES`).
+  Capital et actionnariat d'après l'édition française LF 2021 (p. 13-14). Registre
+  `tbl-ep-registre-ttn`, lu au corpus local : décrets n° 2006-1807, 2006-1808 et 2009-3511.
+  Glossaire : `ttn`. Renvoi en tête de section vers « Les droits de douane » (`#sec-dd`).
+  **Reste** :
+  - rôle de la société dans le système intégré de traitement automatisé des formalités du
+    commerce extérieur : **aucun texte lu ne la nomme** ; décret n° 97-2470 (lu, couche texte) et
+    arrêté conjoint du 20 avril 2001 (lu, couche décalée décodée) parlent d'un « gestionnaire du
+    centre serveur » sans le nommer ; décret n° 2006-2620 (lu) ; texte de création et statuts :
+    **non identifiés** dans jort_cache.db (intitulés français et arabes) ;
+  - volume « La fiscalité », chapitre « Les droits de douane » : la liasse unique et ses textes
+    fiscaux n'y sont pas — loi de finances pour 2000, art. 71 (timbre, lu) et loi de finances pour
+    2003, art. 67 (paiement électronique, lu) ; à y verser, pas au volume des entreprises publiques ;
+  - schéma et annexe de l'organigramme de 2006 : dans le corpus local, **non lus** ;
+  - grandeur d'activité des fiches (dossiers, documents traités) citée en TODO, non versée ;
+    édition LF 2023 (p. 86) non versée ; tableaux 32 et 34 de l'édition LF 2021 (p. 152 et 157)
+    lus, non versés ; identité des « autres actionnaires publics » : **non établie** ;
+  - comptes publiés et rapports annuels de la société : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche

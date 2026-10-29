@@ -18921,3 +18921,25 @@ entries:
         منشأة عمومية تنتج عجين الحلفاء والورق. اكتتبت الدولة في الزيادة في رأس مالها سنتي
         1984 و1985، ثم سنة 1988 في إطار تطهيرها.
       synonymes: []
+  - id: ttn
+    acronyme: TTN
+    statut: valide
+    references: [decret2006-1807-ttn, decret2009-3511-ttn, minfin-ep, minfin-ep-2025]
+    source_definition: {ref: minfin-ep, locator: "p. 13-14"}
+    # AR : intitulé « شركة شبكة تونس للتجارة » de la fiche de la société dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 50.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 50"}
+    fr:
+      terme: Tunisie Trade Net
+      definition: >
+        Société anonyme sous la tutelle du ministère des Finances, au capital de 2 MD, détenu à
+        85,25 % par des actionnaires publics autres que l'État et sans participation directe de
+        celui-ci. Son organigramme et ses emplois fonctionnels sont fixés par décret depuis 2006.
+      synonymes: [Tunisie TradeNet]
+    ar:
+      terme: شركة شبكة تونس للتجارة
+      definition: >
+        شركة خفية الاسم تحت إشراف وزارة المالية، رأس مالها 2 م د، تعود نسبة 85,25 % منه إلى
+        مساهمين عموميين غير الدولة، ولا تساهم فيه الدولة مباشرة. يُضبط هيكلها التنظيمي وخططها
+        الوظيفية بأمر منذ سنة 2006.
+      synonymes: []
