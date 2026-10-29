@@ -6004,3 +6004,189 @@
     وبعدها (الحفظ حسب الفصل 15 مكرّر). أحكام المنشآت العمومية: عدّ على ملخّصات القرارات،
     1986-1998 فقط.'
   fiche: sources/cdf-activite.md
+- id: education-depense-ministeres
+  titre: Dépense de l'État par ministère de l'éducation, de la formation et de l'emploi,
+    gestion et développement, 1997-2023
+  sources:
+  - ins-annuaire-statistique
+  build: uv run python scripts/build_education_series.py
+  raw:
+  - sources/transcriptions/education-depense-series/
+  output: data/processed/education/education-depense-ministeres.csv
+  unite: milliers de dinars courants
+  perimetre: 'INS, Annuaire statistique de la Tunisie, chapitre 16, tableaux 16.8
+    (dépenses du titre I hors intérêts) et 16.10 (développement hors principal de
+    la dette), source citée : ministère des Finances. Lignes Éducation, Enseignement
+    supérieur, Recherche scientifique, Formation professionnelle, Emploi (fichiers
+    gestion-* et developpement-*), et totaux de l''État (etat-gestion-hors-interets,
+    etat-developpement-hors-principal). Pour chaque année, l''édition la plus récente
+    qui la contient ; stade dans la colonne source.'
+  caveats: 'STADE : l''année la plus récente d''une édition est provisoire, l''avant-dernière
+    intermédiaire, les plus anciennes des réalisations présumées ; 2017 provisoire
+    (dernière année de l''édition 2013-2017, reprise par les suivantes), au-dessus
+    du réalisé 2018. RUPTURES DE PÉRIMÈTRE, non corrigées : formation professionnelle
+    comprise dans l''Éducation de 2002 à 2008 et dans l''Emploi en gestion de 2014
+    à 2019 ; recherche comprise dans l''Enseignement supérieur en 2002-2004 et, en
+    gestion, depuis 2019 ; pas de ligne propre de la recherche de 1997 à 2001. DÉVELOPPEMENT
+    : changement de périmètre entre 2008 et 2009 dans toutes les lignes (2009 : 2
+    594 045 dans l''édition 2006-2010 contre 3 274 255 dans l''édition 2007-2011)
+    ; deux segments, jamais chaînés. Écart non expliqué de 637 en 2012 entre l''Annuaire
+    (Enseignement supérieur + Recherche) et les réalisations de gestion du PAP 2014.
+    Voir sources/education-depense-series.md.'
+  fiche: sources/education-depense-series.md
+- id: education-depense-nature
+  titre: Dépense de gestion des ministères de l'éducation, de la formation et de la
+    recherche par nature, 2001-2023
+  sources:
+  - ins-annuaire-statistique
+  - mineducation-pap-2014
+  build: uv run python scripts/build_education_series.py
+  raw:
+  - sources/transcriptions/education-depense-series/
+  output: data/processed/education/education-depense-nature.csv
+  unite: milliers de dinars courants
+  perimetre: 'INS, Annuaire statistique de la Tunisie, tableau 16.9 « Dépenses du
+    titre I par catégorie et département » : rémunérations, biens et services, autres
+    dépenses, pour l''Éducation, l''Enseignement supérieur, la Recherche scientifique
+    et la Formation professionnelle (fichiers nature-*). Seule l''année la plus récente
+    de chaque édition y figure.'
+  caveats: 'CHIFFRES PROVISOIRES (dernière année de chaque édition) ; années absentes
+    : 2002, 2013, 2018, 2019, 2021. En 2001, quatre colonnes (rémunération, biens
+    et services, subventions, autres) ; trois depuis 2003. Éducation : « Education
+    et Formation » de 2003 à 2010, formation professionnelle comprise ; Enseignement
+    supérieur : recherche comprise en 2003 et 2004 ; formation professionnelle fondue
+    dans l''Emploi en 2022 et 2023. Sauts sans commentaire de la source, non corrigés
+    : autres dépenses de l''Éducation 44 670 (2016) puis 338 570 (2017) ; biens et
+    services 100 044 (2017) puis 373 586 (2020). Biens et services = moyens des services
+    ; autres dépenses = interventions publiques (PAP 2014).'
+  fiche: sources/education-depense-series.md
+- id: education-depense-parts-calcul
+  titre: Part de l'Éducation, de l'Enseignement supérieur et de la Recherche dans
+    les dépenses de l'État et dans le PIB, 2009-2023 (calcul de la note)
+  sources:
+  - ins-annuaire-statistique
+  - ins-cnat-2015
+  - minfin-indicateurs-fp
+  build: uv run python scripts/build_education_series.py
+  raw:
+  - sources/transcriptions/education-depense-series/
+  output: data/processed/education/education-depense-parts-calcul.csv
+  unite: '% des dépenses de gestion et de développement de l''État hors dette ; %
+    du PIB aux prix courants (colonne unite)'
+  perimetre: 'CALCUL, non relevé : (gestion + développement) de l''Éducation, de l''Enseignement
+    supérieur et de la Recherche scientifique (education-depense-ministeres) ÷ dépenses
+    de gestion hors intérêts + développement hors principal (2009-2023), ou ÷ PIB
+    nominal de l''INS en base 2015, 2010-2014 rétropolés par l''INS (2010-2023).'
+  caveats: 'CALCUL DE LA NOTE DOCUMENTAIRE, RECHERCHE COMPRISE ; le précis publie
+    des parts recalculées hors recherche et ne garde celles-ci que comme contrôle.
+    Base du PIB : 2015, 2010-2014 rétropolés par l''INS ; 2009 non calculé (base 1997).
+    Gestion de la recherche sans ligne propre depuis 2019 (comprise dans l''Enseignement
+    supérieur).'
+  base_pib: 2015 (2010-2014 rétropolés par l'INS)
+  fiche: sources/education-depense-series.md
+- id: education-depense-programmes
+  titre: Dépense des missions Éducation, Enseignement supérieur et Formation professionnelle
+    par programme, 2012-2014
+  sources:
+  - mineducation-pap-2014
+  - mesrs-pap-2014
+  - mfpe-pap-2014
+  build: uv run python scripts/build_education_series.py
+  raw:
+  - sources/transcriptions/education-depense-series/
+  output: data/processed/education/education-depense-programmes.csv
+  unite: milliers de dinars courants
+  perimetre: 'Projets annuels de performance 2014 des missions Éducation, Enseignement
+    supérieur et recherche scientifique, Formation professionnelle et emploi : crédits
+    de paiement par programme : réalisations 2012, loi de finances 2013, propositions
+    2014 (fichiers programme-*). Stade dans la colonne source.'
+  caveats: TROIS ANNÉES SEULEMENT, de stades différents (réalisation, loi de finances,
+    propositions) ; nomenclature des programmes propre aux PAP de 2014.
+  fiche: sources/education-depense-series.md
+- id: education-personnels-fonction-publique
+  titre: Agents des ministères de l'Éducation et de l'Enseignement supérieur, corps
+    enseignants et salaire moyen, base INSAF, 2010-2025
+  sources:
+  - ins-fonction-publique-2021
+  - ins-fonction-publique-2025
+  build: uv run python scripts/build_education_series.py
+  raw:
+  - sources/transcriptions/education-depense-series/
+  output: data/processed/education/education-personnels-fonction-publique.csv
+  unite: agents ; dinars courants par mois (colonne unite)
+  perimetre: 'INS, base INSAF : agents de la fonction publique des deux ministères
+    (annexes annuelles de l''édition 2010-2021, effectif de l''année ; rapport d''août
+    2026, effectif de décembre, 2018-2025) ; corps enseignants du primaire, du secondaire
+    et du supérieur, tous ministères, 2015-2018 ; salaire moyen par ministère en 2020
+    (fichiers personnels-ins-*).'
+  caveats: 'DEUX SOURCES QUI SE RECOUVRENT EN 2018-2020, NON RACCORDÉES : l''Éducation
+    concorde à une unité près, l''Enseignement supérieur dépasse les annexes de 80
+    à 81 agents dans le rapport d''août 2026. Annexe 2019 écartée pour les corps (libellés
+    et valeurs décalés). Salaire moyen 2020 : plusieurs lignes la même année (ministère
+    et colonne dans la source).'
+  fiche: sources/education-depense-series.md
+- id: education-effectifs-annuaire
+  titre: Élèves, étudiants et enseignants du public par cycle, 1995-1996 à 2023-2024
+  sources:
+  - ins-annuaire-statistique
+  build: uv run python scripts/build_education_series.py
+  raw:
+  - sources/transcriptions/education-depense-series/
+  output: data/processed/education/education-effectifs-annuaire.csv
+  unite: élèves ; étudiants ; enseignants (colonne unite)
+  perimetre: 'INS, Annuaire statistique de la Tunisie, chapitre « Enseignement et
+    culture », tableau des données générales de l''enseignement et tableau du personnel
+    enseignant à plein temps du supérieur : élèves du public et du privé par cycle,
+    enseignants du public par cycle, enseignants du supérieur statutaires et contractuels,
+    étudiants (fichiers eleves-*, enseignants-*, personnels-ins-superieur-plein-temps-*,
+    etudiants-*). Année scolaire « AAAA-AAAA » ; édition la plus récente qui la contient.'
+  caveats: 'RÉVISIONS ENTRE ÉDITIONS, dernière retenue : enseignants du second cycle
+    2009-2010 (75 104 puis 72 194) ; enseignants du supérieur 2018-2019 à 2020-2021
+    (édition 2016-2020 décalée d''une année). ERREUR D''ADDITION DE LA SOURCE : l''édition
+    1995-2001 imprime 1 440 795 pour le total du premier cycle en 1999-2000, au lieu
+    de 1 413 795 (public + privé) ; seuls public et privé sont repris. Écoles de qualification
+    technique non reprises. Étudiants : changement de définition (« étudiants réguliers
+    ») à partir de 2006-2007, sans année commune ; toutes les lignes portent le libellé
+    « réguliers », à vérifier sur les éditions antérieures à 2006-2010.'
+  fiche: sources/education-depense-series.md
+- id: education-depense-menages
+  titre: Dépense des ménages pour l'enseignement, par personne et en coefficient budgétaire,
+    2015 et 2021
+  sources:
+  - ins-ebcnv-2021-communique
+  build: uv run python scripts/build_education_series.py
+  raw:
+  - sources/transcriptions/education-depense-series/
+  output: data/processed/education/education-depense-menages.csv
+  unite: dinars courants par personne et par an ; % de la dépense moyenne par personne
+    (colonne unite)
+  perimetre: INS, Enquête nationale sur le budget, la consommation et le niveau de
+    vie des ménages 2021, communiqué de presse, tableau « Structure de la dépense
+    moyenne par personne et par an 2015-2021 », ligne « Education, enseignement »
+    (COICOP).
+  caveats: DEUX POINTS D'ENQUÊTE. Ventilation par poste et par décile non publiée
+    dans le communiqué.
+  fiche: sources/education-depense-series.md
+- id: education-uis-depense
+  titre: 'Dépense publique d''éducation selon l''UNESCO-UIS : part du PIB, des dépenses
+    publiques et dépense par élève, 1980-2025'
+  sources:
+  - wb-wdi
+  build: uv run python scripts/build_education_series.py
+  raw:
+  - sources/transcriptions/education-depense-series/
+  output: data/processed/education/education-uis-depense.csv
+  unite: '% du PIB ; % des dépenses des administrations publiques ; % du PIB par habitant,
+    par élève (colonne unite)'
+  perimetre: Banque mondiale, World Development Indicators, indicateurs SE.XPD.TOTL.GD.ZS,
+    SE.XPD.TOTL.GB.ZS, SE.XPD.PRIM.PC.ZS, SE.XPD.SECO.PC.ZS, SE.XPD.TERT.PC.ZS, source
+    UNESCO-UIS ; API consultée le 17 octobre 2026 (mise à jour du 8 octobre 2026).
+    Dépense des administrations publiques (centrales, régionales, locales), courante,
+    en capital et en transferts.
+  caveats: 'RAPPORT EXTÉRIEUR : ne pas mettre sur le même plan que les séries budgétaires
+    (périmètre des administrations publiques, non des ministères). BASE DU PIB NON
+    PRÉCISÉE PAR LA SOURCE. Valeurs non arrondies, telles que livrées par l''API.
+    SE.XPD.TOTL.GB.ZS vaut 0 pour 1981-1986, 1990 et 1991 dans l''API (absence de
+    donnée) : ces zéros ne sont pas relevés.'
+  base_pib: non précisée par la source
+  fiche: sources/education-depense-series.md

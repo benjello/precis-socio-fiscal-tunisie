@@ -8,6 +8,11 @@ Les séries sont dans `docs/notes/education-depense-series/` : un CSV par série
 `annee, valeur, unite, source, page`. La colonne `source` donne l'édition, le tableau, la ligne
 imprimée et le stade comptable. La colonne `page` donne la page imprimée.
 
+Versement du 29 octobre 2026 : ces 79 fichiers sont copiés tels quels dans `tunisia-data`
+(`sources/transcriptions/education-depense-series/`) et rangés en onze séries du catalogue
+(`education-*`, fiche `sources/education-depense-series.md`). Les figures lisent le catalogue ;
+une correction se fait désormais dans `tunisia-data`, puis le snapshot du précis se rafraîchit.
+
 Chaque valeur budgétaire tirée de l'Annuaire a été recopiée depuis le texte extrait, puis
 **contrôlée par programme** : elle doit apparaître sur la ligne de son libellé, à la page citée. Le
 script de contrôle se trouve dans `/tmp/education-ocr-D/scripts/budget.py`, hors dépôt. Les pages
