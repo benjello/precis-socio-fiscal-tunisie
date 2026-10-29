@@ -3717,7 +3717,7 @@ Ce qui reste :
   `fig-ep-steg-comptes`, `fig-ep-etap-rapports`, `fig-ep-{steg,etap,sncft}-fiches`) ; les fiches
   imprimées détaillées restent en tableaux repliés (`tbl-ep-*-fiche-a`, `tbl-ep-*-fiche-b`).
   **Reste** :
-  - les autres grandes entreprises (Transtu, CPG, Groupe chimique, Tunisie Télécom, Poste, Office du
+  - les autres grandes entreprises (CPG, Groupe chimique, Tunisie Télécom, Poste, Office du
     commerce) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
@@ -3845,6 +3845,56 @@ Ce qui reste :
     comptes dans la prose, non versés ; grandeurs d'activité des fiches (eau facturée, redevances,
     raccordements) non relevées ;
   - comptes publiés et contrats-programmes des deux entreprises : **à obtenir**.
+- **Tunisie Autoroutes et Transtu — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-autoroutes` et `#sec-ep-ge-transtu`, après l'ONAS et avant la SNCFT, dans l'ordre des
+  transferts de 2022 : Tunisie Autoroutes 170,0 MD, Transtu 147,5 MD, SNCFT 129,8 MD). Figures
+  `fig-ep-{autoroutes,transtu}-budget` et `fig-ep-{autoroutes,transtu}-fiches`, tableaux repliés
+  `tbl-ep-{autoroutes,transtu}-fiche-a` et `-b`. **Fiches du ministère des Finances versées le
+  28 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiches-transtu-autoroutes`, à fusionner avant ce chapitre) : Transtu LF 2022 p. 55,
+  LF 2024 p. 83, LF 2025 p. 60 ; Tunisie Autoroutes p. 80, 120 et 95 ; lues à l'image (300 dpi) et
+  retrouvées dans la couche texte. Transtu : bilan de 2021-2022 (LF 2024) remplacé par une note
+  (états financiers 2020-2022 non approuvés), seuls les résultats reportés imprimés en LF 2025 ;
+  fonds propres de 2020 (1 110 MD, LF 2024) lus par l'ordre des colonnes de LF 2025, sans total
+  pour les contrôler. Tunisie Autoroutes : subvention d'exploitation de 320,2 MD en 2022 (avances
+  de l'État pour les échéances de prêts extérieurs de 2021 et 2022, note de LF 2025) ; 2021 retraité.
+  Registres `tbl-ep-registre-autoroutes` (décret n° 95-720, concession ; décrets n° 96-2263,
+  2003-1118 et 2014-4203, péage Hammam-Lif–M'saken ; loi de finances pour 1999, art. 16-17, et
+  pour 2019, art. 10, fonds de développement des autoroutes ; lois n° 99-50, 2002-96, 2006-3,
+  2010-57 et 2019-75 (édition arabe), capital ; lois n° 99-47, 2001-40, 2002-72, 2003-4, 2010-5,
+  2012-6 et décrets-lois n° 2011-65, 2011-111, garanties ; décret n° 2025-218, prorogation) et
+  `tbl-ep-registre-transtu` (décret-loi n° 63-8, image ; loi n° 95-3 ; loi n° 2003-33, image,
+  avec l'édition arabe p. 1432 ; décret n° 2003-2407 ; loi n° 2005-73, image ; loi n° 2020-40 ;
+  décret-loi n° 2023-13, édition arabe). Glossaire : `tunisie-autoroutes`, `transtu`.
+  **Reste** :
+  - **chapitre « Les transports » à proposer à l'humain** (note de chantier, § 9, décision 3 :
+    scission par secteur quand trois entreprises ont leur fiche) : la SNCFT, la Transtu et Tunisie
+    Autoroutes ont désormais leur fiche. Non créé. À trancher : Tunisie Autoroutes relève du
+    ministère de l'Équipement, non du ministère du Transport ; Tunisair, l'Office de l'aviation
+    civile et des aéroports, la CTN et l'OMMP sont au tableau du ministère du Transport ;
+  - **contradiction entre volumes** : l'article 23 du décret-loi n° 63-8 (1963) oblige l'État à
+    verser à la Société nationale des transports les sommes couvrant les transports gratuits ou
+    à tarif réduit ; `compensation/_transport.qmd` (§ « La mise en place », l. 88) écrit que la
+    compensation du transport « naît en 1984, et non en 1963 ». À reprendre dans le volume « La
+    compensation » (non modifié ici) ; la ligne `r-tr-2003` du même chapitre (« non établie »,
+    « seul l'intitulé de la loi est connu ») peut être datée du 5 mai 2003 et décrite d'après la
+    loi n° 2003-33, lue ;
+  - Tunisie Autoroutes : acte de constitution (13 mai 1992 d'après le rapport LF 2020, p. 121) non
+    identifié au JORT ; décrets de concession des autres sections (n° 2000-645, 2002-537,
+    2004-1073, 2004-1074, 2016-256, 2019-661 à 2019-663) et de péage des autres sections (n° 97-1003,
+    2003-1119, 2009-383, 2010-3222, 2014-4201, 2014-4202, 2014-4204, 2019-977, 2019-1066 et ses
+    modificatifs de 2020 à 2022) **dans le corpus local, non lus** : une série du péage par
+    section reste à établir ; écart entre la dette de LF 2020 (1 707,2 MD envers les bailleurs de
+    fonds, 2018) et celle de LF 2022 (325,7 MD) non expliqué ;
+  - Transtu : création de la Société du métro léger de Tunis, non identifiée ; lois d'augmentation
+    du capital de la SNT (1974-1982), décret n° 2006-433 (concession du domaine public
+    ferroviaire), cahier des charges de la loi n° 2003-33 : **dans le corpus local, non lus** ou
+    non identifiés ; prise en charge par l'État des dettes envers la SNDP (145,3 MD, 2017) et AGIL :
+    texte non identifié ; transferts du rapport sur les entreprises publiques et du rapport sur
+    les transferts et les garanties non concordants (2017 : 154,4 contre 287,8 MD) ;
+  - éditions françaises LF 2020 et LF 2021 : comptes des deux entreprises dans la prose, non
+    versés ; grandeurs d'activité (voyageurs, trafic) non relevées ; comptes publiés des deux
+    entreprises : **à obtenir**.
 - **Tunisair et RNTA — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-tunisair` et `#sec-ep-ge-rnta`, après l'ONAS et avant la SNCFT). La RNTA est la
   Régie nationale des **tabacs et des allumettes** (code `rnta` de toutes les séries, ministère des

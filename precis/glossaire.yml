@@ -18397,6 +18397,54 @@ entries:
         المصرّح بها لدى الديوانة.
       synonymes: []
 
+  - id: tunisie-autoroutes
+    statut: valide
+    references: [minfin-ep-2020, decret95-720-autoroutes]
+    source_definition: {ref: minfin-ep-2020, locator: "p. 121"}
+    # AR : intitulé « شركة تونس الطرقات السيارة » de la loi n° 2019-75, édition arabe du JORT,
+    # p. 2565 (le rapport sur les entreprises publiques, édition LF 2025, p. 95, écrit « شركة
+    # تونس للطرقات السيارة »).
+    source_traduction: {ref: loi2019-75-autoroutes, locator: "p. 2565"}
+    voir_aussi: [transtu]
+    fr:
+      terme: Tunisie Autoroutes
+      definition: >
+        Société anonyme créée en 1992, dont l'État détient la quasi-totalité du capital. Elle
+        exploite par le péage les autoroutes que l'État lui concède, les entretient et en
+        construit de nouvelles sections.
+      synonymes: []
+    ar:
+      terme: شركة تونس الطرقات السيارة
+      definition: >
+        شركة خفية الاسم أُحدثت سنة 1992 وتمتلك الدولة تقريبا كامل رأس مالها. تستغلّ عبر
+        معلوم المرور الطرقات السيارة التي تمنحها إياها الدولة بلزمة، وتتولّى صيانتها وإنجاز
+        أقسام جديدة منها.
+      synonymes: []
+
+  - id: transtu
+    acronyme: Transtu
+    statut: valide
+    references: [loi2003-33-transtu, decret2003-2407-transtu]
+    source_definition: {ref: loi2003-33-transtu, locator: "art. 1er, 2 et 5"}
+    # AR : nom « شركة النقل بتونس » de l'article 1er de la loi n° 2003-33, édition arabe du JORT
+    # n° 34 de 2003, p. 1432 (la traduction française imprime « Transport du Grand Tunis »).
+    source_traduction: {ref: loi2003-33-transtu, locator: "art. 1er"}
+    voir_aussi: [tunisie-autoroutes]
+    fr:
+      terme: Société des transports de Tunis
+      definition: >
+        Établissement public créé en 2003 par la fusion de la Société nationale des transports
+        et de la Société du métro léger de Tunis. Il assure le transport public de personnes à
+        Tunis et dans ses banlieues et reçoit de l'État des compensations pour les tarifs
+        préférentiels et le transport gratuit de certaines catégories de voyageurs.
+      synonymes: []
+    ar:
+      terme: شركة النقل بتونس
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 2003 بإدماج الشركة الوطنية للنقل وشركة المترو الخفيف لمدينة
+        تونس. تؤمّن النقل العمومي للأشخاص بتونس وضواحيها، وتتلقّى من الدولة تعويضات عن
+        التعريفات التفاضلية وعن النقل المجاني لبعض أصناف المسافرين.
+      synonymes: []
   - id: tunisair
     acronyme: null
     statut: valide

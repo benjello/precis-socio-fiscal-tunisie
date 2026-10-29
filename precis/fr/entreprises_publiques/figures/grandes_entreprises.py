@@ -10,6 +10,7 @@
     ge.figure("stir_fiches", …)                             # STIR : fiche du ministère, 2018-2023
     ge.figure("oc_budget", …) ; ge.figure("oc_fiches", …)   # Office des céréales, mêmes vues
     ge.figure("sonede_budget", …) ; ge.figure("onas_fiches", …)  # SONEDE, ONAS, mêmes vues
+    ge.figure("transtu_budget", …) ; ge.figure("autoroutes_fiches", …)  # Transtu, Tunisie Autoroutes
     ge.figure("tunisair_budget", …) ; ge.figure("rnta_fiches", …)  # Tunisair, RNTA, mêmes vues
     ge.figure("onh_budget", …) ; ge.figure("onh_fiches", …)  # Office national de l'huile
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
@@ -648,6 +649,7 @@ def _case_fiche(f, x, e, ind):
 
 NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "office_cereales": "Office des céréales", "sonede": "SONEDE", "onas": "ONAS",
+              "transtu": "Transtu", "tunisie_autoroutes": "Tunisie Autoroutes",
               "tunisair": "Tunisair", "rnta": "RNTA",
               "office_huile": "Office national de l'huile"}
 
@@ -932,6 +934,17 @@ FIGURES = {
                     "fig_ep_onas_fiches"),
     "onas_budget": (lambda: fig_budget("onas", ROUGE), lambda: table_budget("onas"),
                     (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_onas_budget"),
+    "transtu_fiches": (lambda: fig_fiche("transtu"), lambda: table_fiche("transtu"),
+                       (S_FICHES,), "fig_ep_transtu_fiches"),
+    "transtu_budget": (lambda: fig_budget("transtu", ORANGE, "provisoire ou probable"),
+                       lambda: table_budget("transtu"),
+                       (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_transtu_budget"),
+    "autoroutes_fiches": (lambda: fig_fiche("tunisie_autoroutes"),
+                          lambda: table_fiche("tunisie_autoroutes"), (S_FICHES,),
+                          "fig_ep_autoroutes_fiches"),
+    "autoroutes_budget": (lambda: fig_budget("tunisie_autoroutes", BLEU),
+                          lambda: table_budget("tunisie_autoroutes"),
+                          (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_autoroutes_budget"),
     "tunisair_fiches": (lambda: fig_fiche("tunisair"), lambda: table_fiche("tunisair"),
                         (S_FICHES,), "fig_ep_tunisair_fiches"),
     "tunisair_budget": (lambda: fig_budget("tunisair", BLEU, "provisoire, estimé ou probable"),
