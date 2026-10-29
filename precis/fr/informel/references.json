@@ -778,6 +778,61 @@
       "language": "fr",
       "number-of-pages": "175",
       "note": "citation-key: ins-2018-micro-entreprises-2016\nTableaux 1 et 7. SHA-256 5017c97d… (copie dans tunisia-data, sources/ins-micro-entreprises.md)."
+    },
+    {
+      "id": "ins-micro-entreprises-2007",
+      "type": "report",
+      "title": "Résultats de l'enquête auprès des micro-entreprises en 2007",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique",
+      "publisher-place": "Tunis",
+      "URL": "https://www.ins.tn/sites/default/files/publication/pdf/micro_entreprise%202007.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: ins-micro-entreprises-2007\nTableaux 1 (part des femmes) et 7 (salaires). SHA-256 47b6cd65… (copie dans tunisia-data, sources/ins-micro-entreprises.md).\nAnnée d'édition non indiquée dans le fichier."
+    },
+    {
+      "id": "ins-micro-entreprises-2012",
+      "type": "report",
+      "title": "Enquête sur les micro-entreprises en 2012",
+      "author": [
+        {
+          "literal": "Institut national de la statistique"
+        }
+      ],
+      "publisher": "Institut national de la statistique",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "URL": "https://www.ins.tn/sites/default/files-ftp3/files/publication/pdf/micro_entreprises%202012.pdf",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            8
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: ins-micro-entreprises-2012\nTableaux 1 (part des femmes) et 7 (salaires). SHA-256 b057f60d… (copie dans tunisia-data, sources/ins-micro-entreprises.md)."
     }
   ]
 }
