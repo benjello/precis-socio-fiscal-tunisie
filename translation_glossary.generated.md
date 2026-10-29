@@ -112,6 +112,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Chiffre d'affaires imposable | رقم المعاملات الخاضع |  |
 | Chiffre indiciaire | الرقم القياسي |  |
 | Ciblage | الاستهداف |  |
+| Ciments d'Oum El Kélil | شركة اسمنت أم الكليل |  |
 | Ciments de Bizerte | شركة اسمنت بنزرت |  |
 | Classe de revenus | شريحة الدخل |  |
 | Classification nationale des qualifications | السلم الوطني للمهارات |  |
@@ -129,6 +130,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Commission nationale du salaire minimum garanti | اللجنة الوطنية للأجر الأدنى المضمون |  |
 | Commission régionale des bourses scolaires | اللجنة الجهوية للمنح المدرسية |  |
 | Compagnie des phosphates de Gafsa | شركة فسفاط قفصة | CPG |
+| Compagnie tunisienne de forage | الشركة التونسية للتنقيب | CTF |
 | Compagnie tunisienne de navigation | الشركة التونسية للملاحة | CTN |
 | Compensation des carburants | دعم المحروقات |  |
 | Compensation des prix | الدعم |  |
@@ -608,6 +610,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Société de transport des hydrocarbures par pipelines | شركة النقل بواسطة الأنابيب | SOTRAPIL |
 | Société des transports de Tunis | شركة النقل بتونس | Transtu |
 | Société nationale d'exploitation et de distribution des eaux | الشركة الوطنية لاستغلال وتوزيع المياه | SONEDE |
+| Société nationale de cellulose et de papier alfa | الشركة الوطنية لعجين الحلفاء والورق | SNCPA |
 | Société nationale de distribution des pétroles | الشركة الوطنية لتوزيع البترول | SNDP |
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
 | société régionale de transport | الشركة الجهوية للنقل |  |

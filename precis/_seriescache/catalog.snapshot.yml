@@ -5742,8 +5742,9 @@
     GCT, Transtu, Tunisie Autoroutes, Tunisair, RNTA, Office national de l''huile,
     Tunisie Télécom, Office national des postes, Office du commerce de la Tunisie,
     Agence technique des transports terrestres, OACA, OMMP, CTN, sociétés régionales
-    de transport de Sfax et de Bizerte), bilan, résultat, dette, subvention d''exploitation
-    et emploi, exercices 2018-2023, par édition'
+    de transport de Sfax et de Bizerte, Compagnie tunisienne de forage, SNDP, SOTRAPIL,
+    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI), bilan, résultat,
+    dette, subvention d''exploitation et emploi, exercices 2018-2023, par édition'
   sources:
   - minfin-ep-2022
   - minfin-ep-2024
@@ -5778,11 +5779,12 @@
     Télécom (ajoutée le 29 octobre 2026), Office national des postes (ajouté le 29
     octobre 2026, tableau du secteur quasi financier), Office du commerce de la Tunisie
     (ajouté le 29 octobre 2026), Agence technique des transports terrestres (ATTT,
-    ajoutée le 29 octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur),
-    avec le statut du chiffre'
+    ajoutée le 29 octobre 2026), Compagnie tunisienne de forage (CTF, ajoutée le 29
+    octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur), avec
+    le statut du chiffre'
   caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
     se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
-    signale 1124 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    signale 1380 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
     15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
     4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
     même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
@@ -5795,11 +5797,9 @@
     net −86,7 puis −21,1 ; ONAS 2022, provisoire puis réalisé : résultat net avant
     modifications comptables −97,8 puis 2,0 ; Office national de l''huile 2022, provisoire
     dans les deux éditions : passifs 789,7 puis 899,7, actifs 280,0 puis 525,0, résultat
-    net −32,1 puis −41,4 ; SNDP 2022, provisoire (LF 2024) puis réalisé (LF 2025)
-    : résultat net 51,5 puis 46,1, clients 762,5 puis 789,2 ; SNDP 2020 : effectif
-    1 133 en LF 2022, 1 151 en LF 2024). OFFICE DES CÉRÉALES, RÉSULTATS REPORTÉS :
-    l''édition LF 2024 imprime les résultats reportés augmentés du résultat de l''exercice
-    (2021 : −1 511,2 − 477,2 = −1 988,4), soit ce que l''édition LF 2025 donne à l''exercice
+    net −32,1 puis −41,4). OFFICE DES CÉRÉALES, RÉSULTATS REPORTÉS : l''édition LF
+    2024 imprime les résultats reportés augmentés du résultat de l''exercice (2021
+    : −1 511,2 − 477,2 = −1 988,4), soit ce que l''édition LF 2025 donne à l''exercice
     suivant, à la révision du résultat de 2022 près (2022 : −2 689,2 en LF 2024, −2
     689,8 pour 2023 en LF 2025) ; imprimé tel quel. `statut` : le dernier exercice
     de chaque édition est en général provisoire, estimé ou probable ; exception :
@@ -5895,7 +5895,7 @@
     86,6 pour 47,0 et 34,0 (+5,6) ; charges financières nettes de signe opposé (2021
     : 0,3 en LF 2024, −0,3 en LF 2025) ; 2022 provisoire puis réalisé : résultat net
     −3,4 puis −5,4. PREUVES DE LECTURE : identités du bilan, des produits et du résultat
-    d''exploitation ; effectif et charges de personnel identiques, ligne à ligne (316),
+    d''exploitation ; effectif et charges de personnel identiques, ligne à ligne (424),
     à la série entreprises-publiques-effectifs-par-entreprise lue sur les mêmes pages
     ; chaque ligne recoupée avec la couche texte de la page. LU À L''IMAGE à 170 dpi
     le 27 octobre 2026 (300 dpi le 28 octobre pour les ajouts, le 29 octobre pour
@@ -5906,7 +5906,8 @@
     الوطني للتطهير، شركة فسفاط قفصة، المجمع الكيميائي التونسي، شركة نقل تونس، شركة
     تونس للطرقات السيارة، الخطوط التونسية، الوكالة الوطنية للتبغ والوقيد، الديوان
     الوطني للزيت، اتصالات تونس، الديوان الوطني للبريد، ديوان التجارة التونسي، الوكالة
-    الفنية للنقل البري)، 2018-2023، حسب طبعة التقرير المرفق بقانون المالية'
+    الفنية للنقل البري، الشركة التونسية للتنقيب)، 2018-2023، حسب طبعة التقرير المرفق
+    بقانون المالية'
   unite_ar: ملايين الدنانير الجارية؛ عون
   perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جذاذات
     المنشآت في طبعات قانون المالية لسنوات 2022 و2024 و2025

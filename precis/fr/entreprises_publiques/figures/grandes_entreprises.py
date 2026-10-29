@@ -688,14 +688,14 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "ommp": "OMMP",
               "ctn": "CTN",
               "srt_sfax": "Société régionale de transport de Sfax",
-              "srt_bizerte": "Société régionale de transport de Bizerte"}
-              "ctf": "CTF"}
-              "sndp": "SNDP"}
-              "sotrapil": "SOTRAPIL"}
-              "el_fouladh": "El Fouladh"}
-              "ciments_bizerte": "Ciments de Bizerte"}
-              "ciments_oum_el_kelil": "Ciments d'Oum El Kélil"}
-              "sncpa": "SNCPA"}
+              "srt_bizerte": "Société régionale de transport de Bizerte",
+              "ctf": "CTF",
+              "sndp": "SNDP",
+              "sotrapil": "SOTRAPIL",
+              "el_fouladh": "El Fouladh",
+              "ciments_bizerte": "Ciments de Bizerte",
+              "ciments_oum_el_kelil": "Ciments d'Oum El Kélil",
+              "sncpa": "SNCPA",
               "afi": "Agence foncière industrielle"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
