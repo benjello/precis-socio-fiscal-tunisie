@@ -5740,9 +5740,9 @@
   titre: 'Entreprises publiques : fiches par entreprise du rapport annexé à la loi
     de finances (STEG, ETAP, SNCFT, STIR, Office des céréales, SONEDE, ONAS, CPG,
     GCT, Transtu, Tunisie Autoroutes, Tunisair, RNTA, Office national de l''huile,
-    Tunisie Télécom, Office national des postes, Office du commerce de la Tunisie),
-    bilan, résultat, dette, subvention d''exploitation et emploi, exercices 2018-2023,
-    par édition'
+    Tunisie Télécom, Office national des postes, Office du commerce de la Tunisie,
+    Compagnie tunisienne de navigation), bilan, résultat, dette, subvention d''exploitation
+    et emploi, exercices 2018-2023, par édition'
   sources:
   - minfin-ep-2022
   - minfin-ep-2024
@@ -5776,11 +5776,12 @@
     des allumettes), Office national de l''huile (ajoutés le 28 octobre 2026), Tunisie
     Télécom (ajoutée le 29 octobre 2026), Office national des postes (ajouté le 29
     octobre 2026, tableau du secteur quasi financier), Office du commerce de la Tunisie
-    (ajouté le 29 octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur),
+    (ajouté le 29 octobre 2026), Compagnie tunisienne de navigation (CTN, ajoutée
+    le 29 octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur),
     avec le statut du chiffre'
   caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
     se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
-    signale 870 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    signale 910 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
     15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
     4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
     même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
@@ -5882,12 +5883,20 @@
     imprimé (cellule fusionnée avec le nom de la société), attribuée par les variations
     imprimées et l''effectif ; 2022 (LF 2024) et 2023 (LF 2025) imprimés « منجز »
     (réalisé) ; résultats reportés 0,0 en 2022 et 2023 ; immobilisations nettes 2021
-    : 2 247,5 en LF 2024, 2 247,6 en LF 2025. PREUVES DE LECTURE : identités du bilan,
-    des produits et du résultat d''exploitation ; effectif et charges de personnel
-    identiques, ligne à ligne (298), à la série entreprises-publiques-effectifs-par-entreprise
-    lue sur les mêmes pages ; chaque ligne recoupée avec la couche texte de la page.
-    LU À L''IMAGE à 170 dpi le 27 octobre 2026 (300 dpi le 28 octobre pour les ajouts,
-    le 29 octobre pour Tunisie Télécom et l''Office national des postes).'
+    : 2 247,5 en LF 2024, 2 247,6 en LF 2025. COMPAGNIE TUNISIENNE DE NAVIGATION (CTN)
+    : bilan non publié pour 2021-2022 (LF 2024) et 2022-2023 (LF 2025), cases remplacées
+    par une note (états financiers non approuvés) ; aucune ligne ; LF 2024, 2022 (estimé)
+    : produits d''exploitation 621,6 pour 576,4 de recettes + 25,2 d''autres produits,
+    écart de 20,0 déclaré (LF 2025 : 596,4 de recettes, boucle) ; LF 2022, 2020 :
+    fonds propres, résultats reportés et dette « autres » en case vide ; effectifs
+    de l''édition LF 2022 (734 ; 698 ; 700) inférieurs d''environ 400 à ceux des autres
+    éditions (2020 : 1 096 en LF 2024) ; 2021 estimé puis réalisé : résultat net 16,4
+    puis 29,8. PREUVES DE LECTURE : identités du bilan, des produits et du résultat
+    d''exploitation ; effectif et charges de personnel identiques, ligne à ligne (316),
+    à la série entreprises-publiques-effectifs-par-entreprise lue sur les mêmes pages
+    ; chaque ligne recoupée avec la couche texte de la page. LU À L''IMAGE à 170 dpi
+    le 27 octobre 2026 (300 dpi le 28 octobre pour les ajouts, le 29 octobre pour
+    Tunisie Télécom, l''Office national des postes et la CTN).'
   titre_ar: 'المنشآت العمومية: جذاذات المنشآت (الشركة التونسية للكهرباء والغاز، المؤسسة
     التونسية للأنشطة البترولية، الشركة الوطنية للسكك الحديدية التونسية، الشركة التونسية
     لصناعات التكرير، ديوان الحبوب، الشركة الوطنية لاستغلال وتوزيع المياه، الديوان
