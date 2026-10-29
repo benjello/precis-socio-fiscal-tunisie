@@ -692,6 +692,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "sotrapil": "SOTRAPIL"}
               "el_fouladh": "El Fouladh"}
               "ciments_bizerte": "Ciments de Bizerte"}
+              "ciments_oum_el_kelil": "Ciments d'Oum El Kélil"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -1069,6 +1070,9 @@ FIGURES = {
     "cimbiz_budget": (lambda: fig_budget("ciments_bizerte", BLEU),
                       lambda: table_budget("ciments_bizerte"),
                       (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_cimbiz_budget"),
+    "cimoek_fiches": (lambda: fig_fiche("ciments_oum_el_kelil"),
+                      lambda: table_fiche("ciments_oum_el_kelil"), (S_FICHES,),
+                      "fig_ep_cimoek_fiches"),
 }
 
 

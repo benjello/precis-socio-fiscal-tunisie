@@ -18488,6 +18488,28 @@ entries:
         بشراء أسهم يملكها مساهمون فرنسيون.
       synonymes: []
 
+
+  - id: cimoek
+    statut: valide
+    references: [arrete1978-ligne-cimoek, loi2000-36-cimoek, minfin-ep-2024]
+    source_definition: {ref: loi2000-36-cimoek, locator: "art. 2"}
+    # AR : intitulé « شركة اسمنت أم الكليل » de la fiche de la société dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 74.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 74"}
+    voir_aussi: []
+    fr:
+      terme: Ciments d'Oum El Kélil
+      definition: >
+        Entreprise publique qui produit du ciment et de la chaux artificielle à Tajérouine,
+        au gouvernorat du Kef. En 2000, l'État convertit en capital près de 34 MD de ses créances
+        sur la société et abandonne le reste de ses dettes fiscales.
+      synonymes: [Société des ciments d'Oum El Kélil]
+    ar:
+      terme: شركة اسمنت أم الكليل
+      definition: >
+        منشأة عمومية تنتج الإسمنت والجير الاصطناعي بتاجروين من ولاية الكاف. سنة 2000، أدمجت
+        الدولة في رأس مال الشركة قرابة 34 م د من مستحقاتها عليها، وتخلّت عن بقية ديونها الجبائية.
+      synonymes: []
   - id: tunisie-telecom
     statut: valide
     references: [loi95-36-tt, loi2004-30, minfin-ep-2025]

@@ -4031,6 +4031,34 @@ Ce qui reste :
     propres de fin 2020 à fin 2021 (30,6 à 85,9 MD) à expliquer ;
   - grandeurs d'activité des fiches (clinker et ciment en tonnes, revenus de LF 2022) non
     relevées ; éditions françaises LF 2020 et LF 2021 non versées ;
+- **Les Ciments d'Oum El Kélil — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-cimoek`, en fin de chapitre, après le GCT). Figure `fig-ep-cimoek-fiches` (pas de
+  figure du budget : les tableaux des transferts lui donnent 0, LF 2022 p. 106 pour 2018-2020 et
+  LF 2024 p. 155 pour 2020-2022), tableaux repliés `tbl-ep-cimoek-fiche-a` et `-b`. **Fiches du
+  ministère des Finances versées le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-cimoek`, à fusionner avant ce chapitre) : LF 2022 p. 63,
+  LF 2024 p. 94, LF 2025 p. 74 ; lues à l'image (300 dpi) et retrouvées dans la couche texte.
+  Écarts imprimés déclarés : dette totale de LF 2022 supérieure à la somme des créanciers (22,1 et
+  17,7 MD). Cases vides : dette de fin 2020 (LF 2022), total des passifs 2022-2023 (LF 2025). Lus sur
+  les pages, sans série : contribution aux ressources propres de l'État (LF 2022 p. 103 ; LF 2024
+  p. 152), dettes et créances croisées de fin 2022, nulles (LF 2024 p. 142 et 146), commentaire du
+  rapport (LF 2024 p. 101-102 ; LF 2025 p. 87), tutelle (LF 2024 p. 183). Registre
+  `tbl-ep-registre-cimoek` : arrêté du 12 septembre 1978 (ligne de 90 kV, image) ; loi
+  n° 2000-36 (assainissement financier, couche texte décodée ; dépôt au gouvernorat le 24 mars
+  2000). Décret gouvernemental n° 2020-1061 (article 22 ter) : renvoi à `@tbl-ep-22ter`. Recherche
+  par les intitulés français et arabes de `jort_cache.db` et le plein texte du miroir iort.
+  Glossaire : `cimoek`.
+  **Reste** :
+  - texte de constitution de la société, forme juridique, capital et part de l'État **non
+    identifiés** ; loi n° 79-24 (« Société des Ciments Tunisiens », lue à l'image, JORT n° 31 de
+    1979, p. 1300) : ne nomme pas la cimenterie, rattachement à établir ;
+  - textes **dans le corpus local, non lus** : décrets n° 99-1739 (statut du personnel), 2009-3047
+    (organigramme), 2010-2066 (emplois fonctionnels), arrêté du 17 juin 2015 (conservation des
+    documents, intitulé arabe) ;
+  - séries à verser dans `tunisia-data` : contribution aux ressources propres et dettes et
+    créances croisées (voir l'entrée CPG et GCT) ; grandeurs d'activité des fiches (production de
+    ciment et de chaux) non relevées ; classement des résultats d'exploitation négatifs de LF 2025
+    (p. 20) non repris ; éditions françaises LF 2020 et LF 2021 non versées ;
   - comptes publiés et rapports annuels de la société : **à obtenir**.
 - **Tunisie Autoroutes et Transtu — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-autoroutes` et `#sec-ep-ge-transtu`, après l'ONAS et avant la SNCFT, dans l'ordre des
