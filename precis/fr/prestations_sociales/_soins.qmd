@@ -1,0 +1,204 @@
+# Le droit aux soins : l'assurance maladie et l'assistance médicale {#sec-prest-soins .domicile-unique}
+
+Qui peut se faire soigner, dans quel circuit et à quel prix ? Le droit aux soins vient soit de l'affiliation à un régime de sécurité sociale, soit de l'assistance accordée selon la situation du ménage. Une couverture complémentaire peut s'ajouter à un régime de base. Les indemnités qui remplacent le salaire pendant un arrêt de maladie ou un congé de maternité relèvent du [chapitre des autres risques](../prestations_sociales/_autres_risques.html#sec-ar-maladie-maternite) ; les [accidents du travail](../prestations_sociales/_autres_risques.html#sec-ar-atmp) ont leurs propres règles de réparation.
+
+## Vue d'ensemble : par quelle voie les soins sont-ils payés ? {#sec-soins-vue}
+
+L'affiliation et l'assistance ouvrent des droits distincts. Une dépense de soins peut aussi laisser une somme à payer par la personne, même lorsqu'elle est assurée : le circuit de prise en charge et les limites de celle-ci importent autant que l'ouverture du droit.
+
+| Voie | Ouverture du droit | Soins et prise en charge | Où lire les règles |
+|---|---|---|---|
+| Assurance maladie de base | assuré des régimes entrés dans la loi de 2004 et ses ayants droit | soins publics et privés selon la filière ou le remboursement ; part des frais laissée à l'assuré suivant le soin | @sec-soins-base, @sec-soins-modalites, @sec-soins-cout |
+| Soins d'un régime distinct | droit ouvert par le texte du régime, sans entrée dans la CNAM établie pour tous | prestations de soins selon les règles propres à ce régime | @sec-soins-frontiere |
+| Assistance médicale et Amen social | catégorie attribuée selon les règles de l'assistance | soins publics gratuits ou à tarif réduit | @sec-soins-assistance, [aide médicale](../prestations_sociales/_non_contributives.html#sec-nc-aide-medicale) |
+| Couverture complémentaire | droit attaché à un régime facultatif, à une mutuelle ou à un contrat | garanties distinctes de celles du régime de base ; leur contenu dépend du dispositif | [les couvertures complémentaires](#sec-soins-complementaires) |
+
+: Les voies de prise en charge des soins, leur ouverture et le chapitre qui en expose le droit {#tbl-soins-voies}
+
+- **Une affiliation ne dit pas tout.** La [matrice des régimes](../prestations_sociales/_matrice.html#tbl-matrice-regimes) distingue le droit aux soins de l'entrée dans le régime de base de la CNAM. L'assuré et ses ayants droit ne sont couverts que selon le texte applicable à leur régime.
+- **La filière change la manière de payer.** La filière publique, la filière privée et le système de remboursement sont les trois modalités de prise en charge prévues par le décret de 2007 ; elles n'ouvrent pas trois assurances différentes (@sec-soins-modalites).
+- **Le coût pour le ménage dépend du soin.** Le [ticket modérateur](#g-ticket-moderateur) de la filière publique, le taux pris en charge pour un soin ambulatoire et le plafond annuel ne sont pas une même règle (@sec-soins-cout).
+
+## L'assurance maladie de base : de la loi de 2004 à sa mise en œuvre {#sec-soins-base}
+
+Ce régime prend la suite de trois voies d'accès aux soins nées séparément — la prévoyance des agents publics, les assurances sociales des salariés, l'assistance médicale — et d'une commission nationale de l'assurance maladie instituée en 1996 ; leur histoire, de 1951 à 2004, est l'objet du chapitre [« Des protections distinctes à l'assurance maladie, 1951-2004 »](../sante/_histoire.html#sec-soins-histoire), dans le livre de la santé.
+
+[La loi du 2 août 2004](#r-soins-base) institue un régime d'assurance maladie « au profit des [assurés sociaux](#g-assure-social) et de leurs ayants droit, fondé sur les principes de la solidarité et l'égalité des droits ». Elle distingue un régime de base obligatoire et des régimes complémentaires facultatifs. La Caisse nationale d'assurance maladie ([CNAM](#g-cnam)) gère le régime de base ; un [décret](#r-soins-base) détermine les catégories auxquelles la loi s'applique à compter du 1^er^ juillet 2007. La loi et le décret ne confondent donc pas l'institution du régime et l'entrée de chaque catégorie.
+
+La [loi](#r-soins-base) ouvre la prise en charge des soins des secteurs public et privé ; les frais consécutifs à un accident du travail ou à une maladie professionnelle relèvent de [leurs règles propres](../prestations_sociales/_autres_risques.html#sec-ar-atmp). Les catégories entrées en 2007 et les ayants droit sont détaillés dans le [tableau du régime de base](#tbl-ar-assurance-maladie). Les taux des cotisations, par régime et par période, sont au [volume « Cotisations sociales »](../cotisations_sociales/_maladie.html#sec-cot-maladie).
+
+:::: {.chronologie-repliable titre="Régime de base d'assurance maladie : loi du 2 août 2004 et décret d'application de 2007"}
+
+| Date | Texte et article | Changement concret | Portée |
+|---|---|---|---|
+| []{#r-soins-base}loi du 2 août 2004 ; application à compter du 1^er^ juillet 2007 | loi n° 2004-71 [@loi2004-71, art. 1-5 et 7] ; décret n° 2007-1366 [@decret2007-1366, art. 1-2] | régime de base obligatoire et régimes complémentaires facultatifs ; création de la CNAM ; entrée des régimes énumérés par le décret | rupture, puis mise en œuvre par étapes |
+
+::::
+
+## Trois modalités de prise en charge {#sec-soins-modalites}
+
+Le choix entre [filière publique](#g-filiere-publique), [filière privée](#g-filiere-privee) et [système de remboursement](#g-systeme-de-remboursement) détermine le circuit de soins et de paiement. À défaut de choix, [le décret de 2007](#r-soins-modalites) inscrit l'assuré à la filière publique ; il organise aussi le changement de modalité.
+
+| Modalité | Où et comment la dépense est prise en charge | Participation de l'assuré |
+|---|---|---|
+| Filière publique | soins dans les structures publiques | ticket modérateur fondé sur les tarifs réduits des soins, soumis à un plafond annuel |
+| Filière privée | recours préalable au médecin de famille choisi, qui oriente au besoin vers les autres prestataires ; la caisse paie directement les prestataires conventionnés (tiers payant), sauf en médecine dentaire | part non prise en charge selon la nature du soin |
+| Système de remboursement | l'assuré paie, puis demande la prise en charge | mêmes taux de prise en charge des soins ambulatoires que dans la filière privée |
+
+: Les trois modalités du régime de base instituées par le décret n° 2007-1367 {#tbl-soins-modalites}
+
+La [répartition annuelle des personnes inscrites](../sante/_couverture.html#sec-soins-effectifs-filieres) est présentée avec la longue période, en distinguant la rupture de définition de 2019.
+
+### La filière publique {#sec-soins-filiere-publique}
+
+Dans les structures publiques, le patient acquitte un ticket modérateur calculé selon les tarifs réduits de soins. [Le décret de 2007](#r-soins-modalites) plafonne cette participation, par an, à une mensualité et demie du salaire moyen, du revenu de la catégorie déclarée ou de la pension de l'assuré. Ce plafond porte sur la participation prévue pour cette filière : il ne se confond pas avec le plafond des montants que la caisse prend en charge pour certains soins ambulatoires des deux autres modalités.
+
+### La filière privée et le système de remboursement {#sec-soins-filiere-privee}
+
+Dans la filière privée, l'assuré s'engage à consulter d'abord le médecin de famille qu'il a choisi, qui l'oriente au besoin vers d'autres prestataires, dont il garde le libre choix ; [la caisse](#r-soins-modalites) paie directement les prestataires conventionnés, et l'assuré ne leur règle que le ticket modérateur — sauf en médecine dentaire, où il avance les frais et se fait rembourser. Les affections lourdes ou chroniques ne sont prises en charge directement qu'une fois la caisse informée du médecin traitant choisi. Le système de remboursement, lui, suppose que l'assuré avance les frais avant d'en demander la prise en charge. [Les taux de prise en charge des soins ambulatoires](#r-soins-modalites) sont communs à ces deux modalités. Les taux datés figurent au [tableau des soins ambulatoires](#tbl-ar-am-taux) : [les actes de médecine dentaire](#r-soins-dentaire) changent de taux en 2021, les autres catégories du tableau conservent alors les taux de 2007. <!-- TODO (documentaliste) : relire à l'image les décrets n° 2007-1367 et 2021-318, et rechercher les changements postérieurs avant de présenter les taux de 2021 comme l'état du droit actuel. -->
+
+## Le coût restant à la charge de l'assuré {#sec-soins-cout}
+
+Trois limites différentes déterminent la dépense du ménage : dans la filière publique, le ticket modérateur et son plafond ; dans la filière privée et le système de remboursement, la part que le taux applicable au soin laisse à l'assuré ; pour certains soins ambulatoires, le plafond annuel du montant pris en charge par la CNAM. Le [tableau daté du plafond fixé en 2008](#tbl-ar-am-plafond) donne son niveau selon les personnes à charge et les dépenses que [l'arrêté](#r-soins-plafond) en exclut. Son niveau après 2008 n'étant pas établi ici, ce tableau décrit **la règle fixée en 2008**, pas un montant garanti en 2026. <!-- TODO (documentaliste) : le RAP 2021 du ministère des Affaires sociales mentionne l'arrêté du 8 février 2021 modifiant celui du 3 juin 2008 ; jort_cache l'indexe au n° 14 du 9 février 2021, p. 412, mais les deux adresses pist du n° 14 (FR et AR) ont servi le n° 13 lors du contrôle du 13 octobre 2026. Obtenir le n° 14 authentique et lire les montants et la date d'effet avant de compléter le tableau. Lire aussi l'arrêté du 25 juin 2007 sur les affections lourdes ou chroniques ; le chapitre des autres risques porte la même lacune. -->
+
+:::: {.chronologie-repliable titre="Assurance maladie de base : choix de la filière, ticket modérateur, taux des soins ambulatoires et plafond, 2007-2021"}
+
+| Date | Texte et article | Changement concret | Portée |
+|---|---|---|---|
+| []{#r-soins-modalites}1^er^ juillet 2007 | décret n° 2007-1367 [@decret2007-1367, art. 4-20, p. 1983-1988] | choix entre filière publique, filière privée et remboursement ; inscription dans la filière publique à défaut de choix ; ticket modérateur plafonné pour celle-ci ; filière privée : recours préalable au médecin de famille (art. 11) et paiement direct des prestataires conventionnés, hors médecine dentaire (art. 12) ; taux de prise en charge des soins ambulatoires pour la filière privée et le remboursement | mise en œuvre du régime de base de 2004 |
+| []{#r-soins-plafond}1^er^ juillet 2008 | arrêté du 3 juin 2008 [@arrete-2008-06-03-plafond-soins-ambulatoires, art. 2-7] | fixe le plafond annuel des montants pris en charge selon les personnes à charge et les dépenses hors plafond | étape propre aux soins ambulatoires |
+| []{#r-soins-dentaire}16 mai 2021 | décret gouvernemental n° 2021-318 [@decret2021-318, art. 1] | modifie les taux de prise en charge des actes de médecine dentaire dans la filière privée et le système de remboursement | ajustement |
+
+::::
+
+## Entre l'assurance maladie et l'assistance {#sec-soins-frontiere}
+
+Le droit aux soins d'une personne affiliée ne prouve pas, à lui seul, son entrée dans le régime de base de la CNAM. [La loi de 2002](#r-soins-bas-revenus) ouvre des prestations de soins aux travailleurs de certaines catégories à faibles revenus, servies par la CNSS ; cette catégorie n'est pas dans la liste du décret d'entrée de 2007. La [matrice des régimes](../prestations_sociales/_matrice.html#sec-matrice-regimes) conserve cette distinction et la fiche de recherche sur son éventuelle extension.
+
+La [carte de soins à tarifs réduits](#g-amg2), réservée aux personnes qui ne sont pas affiliées à un régime de sécurité sociale, a servi à désigner une partie des bénéficiaires des [aides exceptionnelles de 2020](../prestations_sociales/_non_contributives.html#sec-nc-aide-2020) et de [2021](../prestations_sociales/_non_contributives.html#sec-nc-aide-2021) ; en 2021, les salariés et les travailleurs indépendants affiliés dont le salaire déclaré ne dépasse pas 300 dinars par mois forment une catégorie distincte de ces aides.
+
+:::: {.chronologie-repliable titre="Travailleurs à faibles revenus : droit aux soins de 2002 et catégories entrées dans l'assurance maladie en 2007"}
+
+| Date | Texte et article | Changement concret | Portée |
+|---|---|---|---|
+| []{#r-soins-bas-revenus}21 mars 2002 | loi n° 2002-32 [@loi2002-32, art. 10-11] | ouvre des prestations de soins servies par la CNSS aux catégories qu'elle vise | ouverture propre au régime |
+| []{#r-soins-regimes-2007}1^er^ juillet 2007 | décret n° 2007-1366 [@decret2007-1366, art. 1-2] | applique la loi de 2004 à la CNRPS et aux régimes de la CNSS qu'il énumère ; annonce une extension ultérieure par décret | mise en œuvre du régime de base |
+
+::::
+
+## Les soins ouverts par l'assistance {#sec-soins-assistance}
+
+Les familles admises à l'assistance accèdent aux soins publics par un titre distinct de l'assurance maladie : livrets à partir de 1988, cartes de soins gratuits ou à tarifs réduits depuis 1998, puis support électronique associé à l'Amen social depuis 2022. Les deux cartes de 1998 appliquent [la loi sanitaire de 1991](#r-soins-1991) : la [carte de soins gratuits](#g-amg1), son article 35, qui accorde la gratuité des soins et de l'hospitalisation à « tout tunisien indigent », à son conjoint et à ses enfants à charge ; la carte de soins à tarifs réduits, son article 36, qui renvoie à un décret les catégories admises aux tarifs réduits et ces tarifs ([décrets de 1998](#r-soins-1998)). L'histoire des conditions de ressources, des catégories et des tarifs est au [chapitre de l'assistance](../prestations_sociales/_non_contributives.html#sec-nc-aide-medicale). La [frontière entre affiliation et assistance](../prestations_sociales/_matrice.html#sec-matrice-frontiere) dépend de la prestation : on ne peut déduire du seul fait d'être affilié une exclusion générale de toutes les aides médicales.
+
+:::: {.chronologie-repliable titre="Cartes de soins de l'assistance : loi sanitaire de 1991 et décrets de 1998"}
+
+| Date | Texte et article | Changement concret | Portée |
+|---|---|---|---|
+| []{#r-soins-1991}[8 août 1991]{.insecable} | loi n° 91-63 du 29 juillet 1991 [@loi91-63, art. 35-37 et 63, p. 1391-1393] | gratuité des soins et de l'hospitalisation pour « tout tunisien indigent », son conjoint et ses enfants à charge (art. 35) ; tarifs réduits pour des catégories fixées par décret (art. 36) ; prise en charge des assurés sociaux par convention (art. 37) ; lois de 1969 et de 1987 abrogées, la seconde restant appliquée jusqu'au décret de l'art. 36 (art. 63) | rupture du fondement légal |
+| []{#r-soins-1998}[8 mars 1998]{.insecable} ; [5 octobre 1998]{.insecable} | décret n° 98-409 du 18 février 1998 [@decret-98-409-amg2] ; décret n° 98-1812 du 21 septembre 1998 [@decret-98-1812-amg1] | livret de 1987 → carte de soins à tarifs réduits, en application de l'art. 36 de la loi de 1991 ; carte de soins gratuits, en application de l'art. 35 | mise en œuvre ; détail au chapitre de l'assistance |
+
+::::
+
+## Les couvertures complémentaires {#sec-soins-complementaires}
+
+Une couverture complémentaire prend en charge tout ou partie de ce que le régime légal laisse à l'assuré. Avant 2004, elle passe par trois voies : l'assurance maladie facultative de la CNRPS, pour les agents publics qui gardent le régime de 1951 ([histoire de ce régime](../sante/_histoire.html#sec-soins-histoire-caisses)) ; le contrat d'assurance de groupe, souscrit par l'employeur ; la société mutualiste. Le [régime de 2004](../prestations_sociales/_soins.html#r-soins-base) prévoit à son tour, à côté du régime de base obligatoire, des régimes complémentaires facultatifs. Les contrats de groupe et la mutualité sont plus anciens que la sécurité sociale ([protections d'entreprise avant 1956](../sante/_histoire.html#sec-soins-histoire-1951)).
+
+- **Le contrat d'assurance de groupe.** Pratiqué dès avant l'indépendance [@bertrand-1953-securite-sociale-1, p. 65-70], il est défini par [le code des assurances de 1992](#r-soins-assurance-groupe) : c'est le contrat qu'une personne morale ou un chef d'entreprise souscrit pour un ensemble de personnes liées à lui de la même manière — ses salariés, par exemple — contre les risques de maladie, de maternité et d'atteinte à l'intégrité physique. L'adhérent ne peut en être exclu que s'il rompt ce lien ou ne paie pas sa prime, et il reçoit une notice des garanties. Les articles du code consacrés à ce contrat ne fixent pas de taux de prime.
+- **Les sociétés mutualistes.** Leurs statuts suivent des statuts types fixés [en 1961](#r-soins-mutualite) et modifiés [en 1984](#r-soins-mutualite-1984), qui imposent une assemblée générale de délégués élus aux mutuelles de plus de 500 adhérents et à celles dont une partie des membres réside hors du gouvernorat du siège. Ces statuts visent un décret du 18 février 1954 sur les sociétés mutualistes, connu ici par son seul intitulé. Aucun taux de cotisation commun aux mutuelles n'est fixé par un texte identifié ici. <!-- RECHERCHE r-assurance-groupe-mutuelles-taux : source des taux de cotisation des contrats de groupe et des mutuelles avant 2004, et texte du décret du 18 février 1954 (voir docs/recherches.yml) --> <!-- TODO (documentaliste) : relever le contenu des statuts types du 26 mai 1961 (garanties, cotisations) et des statuts approuvés, puis constituer les séries d'adhérents et de dépenses des mutuelles et des contrats de groupe avant d'en décrire les garanties. -->
+- **Le [régime conventionnel d'entreprise](#g-regime-conventionnel-soins) (depuis 1996).** Un contrat de groupe ou une mutuelle approuvée peut [se substituer en partie à la CNSS](#r-soins-conventionnel) : l'employeur qui couvre ainsi la maladie ordinaire et l'accouchement de ses salariés et de leurs ayants droit cotise deux points de moins, et la caisse ne garde que les interventions chirurgicales de plus de 50 points et les maladies de longue durée. L'employeur finance au moins la moitié du régime, et le salarié n'y supporte pas plus de 20 % des frais calculés sur les tarifs officiels. Avant 2004, c'est la seule règle chiffrée imposée à ces couvertures qui soit identifiée ici. <!-- TODO (documentaliste) : établir le sort du régime conventionnel de 1996-1997 après la loi de 2004 et l'entrée de la CNSS dans le régime de base en 2007 (abrogation, maintien, conversion en régime complémentaire). -->
+- **La médecine du travail ne couvre pas les soins.** Les services de médecine du travail, [organisés en 2000](#r-soins-medecine-travail), ont un rôle essentiellement préventif — examens d'embauche, périodiques et de reprise ; le médecin du travail n'exerce la médecine curative qu'en cas d'urgence.
+
+<!-- TODO (bibliographe) : verser les lois créant les mutuelles de corps (armée, loi n° 77-80 ; police, n° 82-68 ; garde nationale et protection civile, n° 82-69 ; douanes, n° 89-53 ; magistrats, n° 96-30), le décret n° 85-847 (mutuelle de la police, art. 11, 13 et 14 : cotisations proposées par le conseil d'administration, adhésion obligatoire ou volontaire, remboursement de la part des frais non couverte par le régime obligatoire ou la gratuité) et l'arrêté du 7 septembre 1993 approuvant les statuts de l'Union nationale des sociétés mutualistes, avant d'en faire état dans le texte. -->
+
+:::: {.chronologie-repliable titre="Couvertures complémentaires : sociétés mutualistes, contrat d'assurance de groupe, régime conventionnel d'entreprise et médecine du travail, textes de 1961 à 2000"}
+
+| Date | Texte et article | Changement concret | Portée |
+|---|---|---|---|
+| []{#r-soins-mutualite}1961 | arrêté du 26 mai 1961 [@arrete-1961-05-26-statuts-mutualistes, p. 723-727] | néant → statuts types des sociétés mutualistes ; vise le décret du 18 février 1954 | encadrement des mutuelles |
+| []{#r-soins-mutualite-1984}1984 | arrêté du 17 septembre 1984 [@arrete-1984-09-17-statuts-mutualistes, art. 1-3, p. 2131] | statuts types modifiés : assemblée générale de délégués élus par sections locales de vote, obligatoire au-delà de 500 adhérents ou lorsqu'une partie des membres réside hors du gouvernorat du siège ; vise les art. 5 et 9 du décret du 18 février 1954 | ajustement de la gouvernance |
+| []{#r-soins-assurance-groupe}1992 | loi n° 92-24 du 9 mars 1992, portant promulgation du code des assurances [@loi92-24-code-assurances, art. 31-32 du code, p. 318-319] | néant → définition du contrat d'assurance de groupe (maladie, maternité, atteintes à l'intégrité physique ; adhérents liés de la même manière au souscripteur) ; exclusion d'un adhérent limitée à la rupture du lien ou au non-paiement de la prime ; notice des garanties ; aucun taux | cadre légal du contrat de groupe |
+| []{#r-soins-conventionnel}[1^er^ octobre 1996]{.insecable} (réduction de cotisation) ; [14 septembre 1997]{.insecable} (décret) | loi n° 97-4 du 3 février 1997, art. 41 nouveau de la loi n° 60-30 [@loi97-4] ; décret n° 97-1645 du 25 août 1997 [@decret97-1645, art. 1-3, p. 1676-1677] | néant → taux global de cotisation réduit de deux points pour l'employeur qui couvre la maladie ordinaire et l'accouchement dans un régime conventionnel (contrat d'assurance de groupe ou mutuelle approuvée) ; CNSS limitée aux interventions de plus de 50 points et aux maladies de longue durée ; financement patronal de la moitié au moins ; participation du salarié limitée à 20 % des frais calculés sur les tarifs officiels de 1982, sauf prothèse dentaire et appareillage oculaire et auditif | rupture : la CNSS partage les soins de ses assurés avec l'entreprise |
+| []{#r-soins-medecine-travail}2000 | décret n° 2000-1985 du 12 septembre 2000 [@decret2000-1985, art. 7 et 28, p. 2250-2253] | services de médecine du travail : examens d'embauche, périodiques et de reprise ; rôle essentiellement préventif, médecine curative limitée aux cas urgents | organisation de la médecine du travail |
+
+::::
+
+## Ce que rapportent la Banque mondiale et une thèse sur les primes et les cotisations {#sec-soins-complementaires-etudes}
+
+Aucun texte identifié ne fixant ces taux, seuls des documents extérieurs en donnent un ordre de grandeur. Ils ne se recoupent qu'en partie, et aucun ne décrit sa méthode.
+
+- **L'étude du secteur de la santé de la Banque mondiale (2006).** Publiée en anglais et en français, elle décrit l'assurance privée d'entreprise sans citer sa source ; ses effectifs portent sur 1996, présentée comme la dernière année disponible. La prime y représente en moyenne de 4 à 7 % de la masse salariale, en grande partie subventionnée par l'employeur, surtout dans les grandes entreprises. L'étude ne donne pas de taux pour les mutuelles [@bm-2006-health-sector-study, p. 29 ; @bm-2006-etude-secteur-sante, p. 39].
+- **Un chapitre publié par la Banque mondiale (2008).** Il déclare adapter l'étude de 2006 et ne date pas ses données. Il reprend la prime de 4 à 7 % des contrats de groupe, cotisations de l'employeur et du salarié comprises, et donne pour les mutuelles des taux de 1 à 7 %, dont 2 % au plus pour le salarié ; ce dernier taux ne figure dans aucune des deux versions de l'étude de 2006 [@arfa-achouri-2008-tunisie, p. 402].
+- **Une thèse de doctorat en économie (2015).** Elle décrit le système d'avant 2007 d'après des sources de seconde main, un site d'information médicale et l'Ordre national des médecins, sans dater ses chiffres. Elle donne les mêmes fourchettes : de 4 à 7 % pour la prime des contrats de groupe, partagée entre l'employeur et le salarié ; de 1 à 7 % pour les cotisations des mutuelles, 2 % au plus pour le salarié [@ismail-2015-these, p. 37].
+
+## Les textes de l'assurance maladie {#sec-soins-textes}
+
+Les taux de la cotisation, régime par régime et palier par palier, sont au volume [« Les cotisations sociales »](../cotisations_sociales/_maladie.html#sec-cot-maladie).
+
+Depuis le [1^er^ juillet 2007]{.insecable}, un régime de base d'assurance maladie, commun aux affiliés des deux caisses, prend en charge les soins de l'[assuré social](#g-assure-social) et de ses ayants droit dans les secteurs public et privé ; il est géré par la CNAM et financé par une cotisation de 6,75 % du salaire ou du revenu. La loi qui l'institue date de 2004 ; un décret fixe les étapes de son application ([la réforme de 2007](./_autres_risques.html#sec-ar-reforme-2007)).
+
+| Question | Règle |
+|---|---|
+| [Qui est couvert](#r-ar-am-art4) | l'assuré social ; son conjoint non divorcé sans couverture propre ; ses enfants à charge ; les titulaires d'une pension de survivants sans couverture propre ; ses ascendants à charge |
+| [Quels soins](#r-ar-am-art5) | ceux des secteurs public et privé, sauf les frais consécutifs à un accident du travail ou à une maladie professionnelle |
+| [Quels régimes, au 1^er^ juillet 2007](#r-ar-am-2007) | les affiliés de la CNRPS ; à la CNSS, les salariés non agricoles, le secteur agricole, les artistes, créateurs et intellectuels, les travailleurs tunisiens à l'étranger, les travailleurs non salariés |
+| [Quelle cotisation](#r-ar-am-art15) | 6,75 % du salaire ou du revenu : 4 % à la charge de l'employeur, 2,75 % à celle du salarié ; la totalité à la charge de l'assuré travaillant pour son propre compte ; 4 % pour les pensionnés |
+| [Quelle caisse](#r-ar-am-art7) | la CNAM, qui gère aussi les régimes de réparation des accidents du travail et sert les indemnités de maladie et de couches |
+
+: Le régime de base d'assurance maladie : bénéficiaires, soins, régimes, cotisation, caisse {#tbl-ar-assurance-maladie}
+
+- **Une montée par paliers dans le secteur public.** Pour les agents de la CNRPS et ses pensionnés, les taux de 6,75 % et de 4 % sont atteints par paliers, de 2007 à 2010 : les tableaux datés sont au volume des cotisations, pour [les agents](../cotisations_sociales/_maladie.html#tbl-cnrps-maladie) et pour [les pensionnés](../cotisations_sociales/_regimes.html#tbl-prevoyance-pensionnes).
+- **Un régime hors de la liste de 2007.** Le régime des travailleurs à faibles revenus — employés de maison, agents publics non couverts, petits pêcheurs, petits agriculteurs, artisans à la pièce — ne figure pas dans la liste du décret. [La loi qui l'institue](#r-ar-am-2002) lui ouvre des prestations de soins servies par la CNSS. Le décret prévoit l'extension à d'autres catégories « dans une étape ultérieure » ; aucun texte d'extension à ce régime n'est identifié ici. <!-- RECHERCHE r-am-extension-loi2002-32 : décret étendant la loi n° 2004-71 au régime de la loi n° 2002-32, en application de l'art. 2 du décret n° 2007-1366 (voir docs/recherches.yml) -->
+- **Qui recouvre.** Depuis [une loi de 2017](#r-ar-am-2017), la CNRPS et la CNSS recouvrent les cotisations de leurs affiliés et les transfèrent à la CNAM.
+
+:::: {.chronologie-repliable titre="Assurance maladie : bénéficiaires un à un, calendrier d'entrée des régimes, cotisation, circuit de recouvrement, modalités de prise en charge, taux de prise en charge des soins ambulatoires et plafond annuel de 2008, article par article, 2004-2021"}
+
+| Objet | Texte et article | Ce que dit l'article |
+|---|---|---|
+| []{#r-ar-am-art1}Institution du régime | loi n° 2004-71 [@loi2004-71, art. 1-2] | un régime d'assurance maladie au profit des assurés sociaux et de leurs ayants droit, comportant un régime de base obligatoire et des régimes complémentaires facultatifs |
+| []{#r-ar-am-art3}Application par étapes | loi n° 2004-71 [@loi2004-71, art. 3] | les étapes d'application pour les différentes catégories d'assurés sont fixées par décret : la loi n'a aucune date d'effet propre |
+| []{#r-ar-am-art4}Bénéficiaires | loi n° 2004-71 [@loi2004-71, art. 4] | l'assuré social ; le conjoint non divorcé ne bénéficiant pas d'une couverture obligatoire au titre de son activité ; les descendants à charge — enfants mineurs non couverts par ailleurs, la fille quel que soit son âge tant que son obligation alimentaire n'incombe pas à son époux ou tant qu'elle ne dispose pas de source de revenu, les enfants handicapés incapables d'exercer une activité rémunérée ; les bénéficiaires d'une pension de survivants sans couverture propre ; les ascendants à charge non soumis à titre principal à une couverture obligatoire |
+| []{#r-ar-am-art5}Soins pris en charge | loi n° 2004-71 [@loi2004-71, art. 5] | soins des secteurs public et privé, à l'exception des frais consécutifs à un accident du travail ou à une maladie professionnelle, qui restent régis par les textes propres |
+| []{#r-ar-am-art7}Caisse | loi n° 2004-71 [@loi2004-71, art. 7 et 8] | création de la CNAM (article 7) ; elle gère aussi les régimes de réparation des accidents du travail et des maladies professionnelles des secteurs public et privé, et sert les indemnités de maladie et de couches prévues par les régimes de sécurité sociale (article 8) |
+| []{#r-ar-am-art15}Cotisation | loi n° 2004-71 [@loi2004-71, art. 15] | 6,75 % du salaire ou du revenu, dont 4 % à la charge de l'employeur et 2,75 % à celle du salarié ; intégralement à la charge de l'assuré travaillant pour son propre compte ; 4 % pour les pensionnés |
+| []{#r-ar-am-2007}Entrée des régimes, [1^er^ juillet 2007]{.insecable} | décret n° 2007-1366 [@decret2007-1366, art. 1-2] | à compter du 1^er^ juillet 2007, la loi s'applique aux affiliés de la CNRPS et, à la CNSS, aux régimes des salariés non agricoles, du secteur agricole tel que modifié par la loi n° 89-73, des artistes, créateurs et intellectuels, des travailleurs tunisiens à l'étranger et des travailleurs non salariés (article premier) ; extension à d'autres catégories « dans une étape ultérieure », par décret (article 2) |
+| []{#r-ar-am-2002}Travailleurs à faibles revenus | loi n° 2002-32 [@loi2002-32, art. 10-11] | prestations de soins servies par la CNSS ; la loi, sans clause d'effet, est exécutoire le 21 mars 2002 |
+| []{#r-ar-am-modalites}Modalités de prise en charge, [1^er^ juillet 2007]{.insecable} | décret n° 2007-1367 du 11 juin 2007 [@decret2007-1367, art. 4 à 20] ; décret n° 2008-756 du 24 mars 2008 [@decret2008-756] | trois modalités, au choix de l'assuré : la filière publique de soins, la filière privée de soins et le système de remboursement (article 4) ; à défaut de choix, inscription d'office à la filière publique (article 5) ; le changement prend effet au premier jour de l'année civile suivante (articles 6 et 11). Filière publique : soins dans les structures publiques, contre un ticket modérateur égal aux tarifs réduits de soins, plafonné par an à une mensualité et demie du salaire moyen, du revenu de la catégorie déclarée ou de la pension (articles 7 à 10). Filière privée : tiers payant (articles 11 à 16). Système de remboursement : mêmes taux que la filière privée (articles 17 à 20). Le décret de 2008 reporte au 30 avril 2008 la date limite du premier choix |
+| []{#r-ar-am-taux}Taux de prise en charge des soins ambulatoires | décret n° 2007-1367 [@decret2007-1367, art. 13 et 18] ; décret gouvernemental n° 2021-318 du 4 mai 2021 [@decret2021-318] | les neuf taux du tableau des taux ; le décret de 2021 remplace le premier paragraphe des articles 13 et 18 et ne change que le taux des actes de médecine dentaire. Dépôt du *Journal officiel* n° 41 le 11 mai 2021 : exécution le 16 mai 2021, cinq jours après, jour du dépôt non compté |
+| []{#r-ar-am-plafond}Plafond annuel des soins ambulatoires, [1^er^ juillet 2008]{.insecable} | arrêté du ministre des affaires sociales, de la solidarité et des Tunisiens à l'étranger du 3 juin 2008 [@arrete-2008-06-03-plafond-soins-ambulatoires, art. 2 à 7] | plafond annuel des montants pris en charge par la CNAM dans la filière privée et le système de remboursement, selon le nombre de personnes à charge (article 2), plus 50 D par ascendant à charge ; le dépassement est supporté par l'assuré (article 3) ; hors plafond : les affections lourdes ou chroniques, l'hospitalisation, le ticket modérateur et six actes nommés, dont le scanner, l'hémodialyse et les appareillages (article 6) ; effet au 1^er^ juillet 2008 (article 7) |
+| []{#r-ar-am-2017}Circuit des cotisations, 2017 | loi n° 2017-47 du 15 juin 2017 [@loi2017-47, art. 1-2] | article 16 nouveau de la loi de 2004 : la CNRPS recouvre les cotisations des pensionnés du secteur public et les transfère à la CNAM lors du paiement des pensions ; les cotisations des assurés actifs du secteur public sont transférées directement ; article 16 bis : la CNSS recouvre les cotisations du secteur privé et les transfère à la CNAM selon une convention entre les deux caisses. La loi, datée du 15 juin 2017 dans son intitulé et sa formule finale, est publiée au *Journal officiel* du 23 juin 2017 |
+
+: Assurance maladie : articles {#tbl-ar-assurance-maladie-textes}
+
+| Prestation | Au [1^er^ juillet 2007]{.insecable}<br>(%) | Au [16 mai 2021]{.insecable}<br>(%) |
+|---|---:|---:|
+| Consultations de médecins et de sages-femmes | 70 | 70 |
+| Actes médicaux et actes de sages-femmes | 80 | 80 |
+| Actes paramédicaux | 70 | 70 |
+| Actes de radiologie | 75 | 75 |
+| Analyses biologiques | 75 | 75 |
+| Actes de médecine dentaire | 50 | 60 ; 70 pour les enfants de 4 à 18 ans |
+| Médicaments vitaux | 100 | 100 |
+| Médicaments essentiels | 85 | 85 |
+| Médicaments intermédiaires | 40 | 40 |
+
+: Régime de base d'assurance maladie : [taux de prise en charge des soins ambulatoires](#r-ar-am-taux) dans la filière privée et le système de remboursement, en 2007 et en 2021 {#tbl-ar-am-taux}
+
+| Personnes à charge de l'assuré | Plafond annuel<br>(D) |
+|---|---:|
+| aucune | 200 |
+| une | 250 |
+| deux | 300 |
+| trois | 350 |
+| quatre ou plus | 400 |
+
+: Régime de base d'assurance maladie : [plafond annuel des soins ambulatoires](#r-ar-am-plafond) pris en charge, fixé au 1^er^ juillet 2008 {#tbl-ar-am-plafond}
+
+<!-- TODO (rédacteur) : remplacer ces deux tableaux par des tableaux engendrés, quand les taux de prise en charge et le
+plafond annuel seront portés en amont (docs/notes/backlog-modele.md). -->
+
+<!-- TODO (documentaliste) : le plafond annuel est celui de l'arrêté du 3 juin 2008 ; ses révisions ne sont pas
+cherchées, et il ne vaut donc pas état du droit en 2026. Décrets n° 2007-1367, n° 2008-756 et n° 2021-318 et arrêté du
+3 juin 2008 repris de la couche texte, sans guillemets : à relire à l'image (clause finale du décret n° 2021-318 non
+relue). Arrêté conjoint du 25 juin 2007 sur les affections lourdes ou chroniques : non lu. -->
+
+::::
