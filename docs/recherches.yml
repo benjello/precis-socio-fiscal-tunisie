@@ -3120,7 +3120,7 @@
 
 - id: r-assurance-groupe-mutuelles-taux
   objet: 'source primaire ou statistique des taux de cotisation des contrats d''assurance groupe (sources lues : 4 à 7 %) et des mutuelles (« 1 à 7 % »), avant 2004 ; texte du décret du 18 février 1954 sur les sociétés mutualistes'
-  ou: [precis/fr/sante/_couverture.qmd#sec-soins-complementaires]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-complementaires]
   requetes:
     titres_fts: [mutualiste, mutualistes, mutualite, '"regime complementaire"']
     titres_like: ['%mutuel%', '%mutual%', '%assurance%groupe%']
