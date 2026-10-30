@@ -2590,6 +2590,11 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   page) ; le lien ouvre bien la ligne. Limite connue du domicile unique entre fichiers.
 - [ ] **Chapitres suivants** : scolaire, formation professionnelle initiale, supérieur, résultats (scolarisation,
   examens, abandon), rapports et études ; « Ce qu'en dit l'économie » par dispositif ; version arabe.
+- [x] **Chapitre « L'enseignement scolaire » réordonné par parcours de l'élève (30 octobre 2026, branche
+  `educ/reorg-scolaire`)** : état du droit, préscolaire, cycles et langues (section neuve `#sec-educ-scolaire-cycles-langues`),
+  examens et orientation (sous-section neuve `#sec-educ-scolaire-pilotes`), passages et abandons, privé, cours particuliers et
+  vie scolaire, textes. Identifiants et lignes de registre conservés. Reste : le fil historique des langues d'enseignement
+  (1958-1995), à placer dans la section neuve quand les textes de 1973 à 1995 seront lus (PR #608).
 
 ## Allègement du juridique et de l'administratif — chantier, non urgent (5 octobre 2026)
 
