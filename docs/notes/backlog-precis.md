@@ -4383,6 +4383,38 @@ Ce qui reste :
   - page exacte de la ligne de l'agence dans les tableaux des transferts par entreprise (LF 2022 à
     LF 2024) : non relevée ; objet des transferts à confirmer dans l'annexe 8 ;
   - comptes publiés et rapports annuels de l'agence : **à obtenir**.
+- **Office des terres domaniales — section écrite le 29 octobre 2026** (`_offices.qmd`,
+  `#sec-ep-ge-otd`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
+  `fig-ep-otd-budget` et `fig-ep-otd-fiches`, tableaux repliés `tbl-ep-otd-fiche-a` et `-b`.
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-otd`, code `otd`) :
+  LF 2022 p. 75, LF 2024 p. 112, LF 2025 p. 88, lues à l'image (300 dpi) et retrouvées dans la couche
+  texte. Écarts déclarés : bilan de l'édition LF 2024 (trois exercices), produits d'exploitation de
+  2019 (LF 2022) et de 2021 (LF 2024, LF 2025) ; LF 2022, 2020 et LF 2025, 2023 sous une note.
+  Éditions discordantes sur l'effectif (2018 à 2020) et sur les transferts de 2020 (0,2 puis 8,0 MD) :
+  dites dans le texte et les légendes. Registre `tbl-ep-registre-otd`, lu au corpus local, à l'image :
+  décret-loi n° 61-15, loi n° 61-58, loi n° 62-2, loi n° 73-26, décret n° 2001-82 et loi n° 2004-17
+  (ces deux derniers à couche texte décalée). Commentaires du rapport lus : LF 2021 p. 111-113 (prose
+  française), LF 2024 p. 115 et 165. Glossaire : `otd`.
+  **Reste** :
+  - exercice comptable : année civile en 1961, 1er septembre-31 août en 2001 ; date du changement
+    (décrets n° 73-390 et 78-60, **dans le corpus local, sans couche texte, non lus**) et exercice que
+    désignent les fiches du ministère, à établir ;
+  - effectif : périmètre des chiffres des éditions LF 2022 et LF 2024 (écart de 1 176 agents sur 2020),
+    à éclaircir dans les rapports ; objet des transferts de 2020 à 2022 (annexe 8, à lire) ; tableau de
+    l'édition LF 2023 p. 198 (3,5 ; 3,9 ; 12,9 MD), nature non établie ;
+  - créance abandonnée en 2004 (135,375 MD) : origine non établie ;
+  - textes **dans le corpus local, non lus** : décret n° 64-129 (immeubles), n° 73-262 (retraite du
+    personnel), n° 73-390, 73-431, 78-60, 78-851, 92-2069 (organisation), n° 75-772 (marchés), statuts
+    du personnel et des ouvriers agricoles (n° 74-914 à 99-1855, décret gouvernemental n° 2017-1349),
+    n° 2001-2430 et 2001-2431, n° 84-1036 et 2013-2628 (réquisition), lois n° 75-45 et 82-72 (crédits
+    où l'emprunteur est l'État), lois n° 70-25 et 72-36 (cession des terres domaniales) ; plein texte
+    des lois de finances (garanties, abandons, dotations) non parcouru ;
+  - découvert bancaire de l'Office (LF 2024, tableaux 18 et 19, p. 43-44 : 88,9 et 117,5 MD) : non lu à
+    l'image, non versé ;
+  - grandeurs d'activité des fiches (céréales en quintaux, huile d'olive en tonnes) citées, non versées ;
+    éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
+  - comptes publiés et contrat-programme de l'Office : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche

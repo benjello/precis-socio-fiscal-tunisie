@@ -23,6 +23,7 @@
     ge.figure("sncpa_budget", …) ; ge.figure("sncpa_fiches", …)  # SNCPA (cellulose, papier alfa)
     ge.figure("afi_budget", …) ; ge.figure("afi_fiches", …)  # Agence foncière industrielle
     ge.figure("ra_budget", …) ; ge.figure("mtk_fiches", …)   # Régie des alcools, MTK
+    ge.figure("otd_budget", …) ; ge.figure("otd_fiches", …)  # Office des terres domaniales
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -700,6 +701,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "afi": "Agence foncière industrielle",
               "regie_alcools": "Régie des alcools",
               "mtk": "Manufacture des tabacs de Kairouan"}
+              "otd": "Office des terres domaniales"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -1097,6 +1099,10 @@ FIGURES = {
                    "fig_ep_mtk_fiches"),
     "mtk_budget": (lambda: fig_budget("mtk", ORANGE), lambda: table_budget("mtk"),
                    (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_mtk_budget"),
+    "otd_fiches": (lambda: fig_fiche("otd"), lambda: table_fiche("otd"), (S_FICHES,),
+                   "fig_ep_otd_fiches"),
+    "otd_budget": (lambda: fig_budget("otd", VERT), lambda: table_budget("otd"),
+                   (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_otd_budget"),
 }
 
 

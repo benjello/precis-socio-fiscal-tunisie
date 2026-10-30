@@ -438,6 +438,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Office de la marine marchande et des ports | ديوان البحرية التجارية والموانئ | OMMP |
 | Office des céréales | ديوان الحبوب |  |
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
+| Office des terres domaniales | ديوان الأراضي الدولية | OTD |
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |
 | Office du commerce de la Tunisie | الديوان التونسي للتجارة | OCT |
 | Office national de l'assainissement | الديوان الوطني للتطهير | ONAS |
