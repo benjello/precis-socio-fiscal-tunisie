@@ -22,7 +22,7 @@ Le tableau donne les dispositifs dans l'ordre de leur naissance. La colonne « F
 | [1^er^ octobre 1994]{.insecable} | contribution aux frais de crèche | enfants des mères salariées, sous plafond de salaire | cotisations | non monétaire : versée à la crèche | @sec-pf-creche |
 | [1^er^ janvier 1995]{.insecable} ; [1^er^ janvier 1996]{.insecable} au secteur public | réparation des accidents du travail et des maladies professionnelles par un régime légal | tous les travailleurs ou assimilés ; agents publics | cotisation propre au régime ; employeur public | mixte | @sec-ar-atmp |
 | loi du [18 novembre 1996]{.insecable} | protection sociale des travailleurs ayant cessé leur travail pour des raisons économiques ou technologiques | salariés licenciés pour ces raisons | cotisations | mixte | @sec-perte-emploi |
-| [1^er^ juillet 2007]{.insecable} | régime de base d'assurance maladie | assurés sociaux des deux secteurs et leurs ayants droit | cotisations | non monétaire | @sec-ar-assurance-maladie |
+| [1^er^ juillet 2007]{.insecable} | régime de base d'assurance maladie | assurés sociaux des deux secteurs et leurs ayants droit | cotisations | non monétaire | @sec-prest-soins |
 | mai 2012 | programme spécifique pour le logement social | familles sans logement jusqu'à 3 SMIG, salariées ou non | budget de l'État | mixte : subvention, crédit sans intérêt, logement | @sec-log-psls |
 | 2017 | programme du premier logement | familles sans logement de 4,5 à 10 SMIG | budget de l'État | monétaire : prêt bonifié | @sec-log-premier-logement |
 | [25 mai 2020]{.insecable} | Amen social : transfert monétaire mensuel, appui occasionnel, soins | catégories pauvres ; catégories à revenu limité pour les soins et les aides de rentrée | budget de l'État ; prêts et dons depuis 2021 | mixte | @sec-nc-amen-2019 |
@@ -63,11 +63,12 @@ La forme qualifie ce qui est servi au bénéficiaire, non son financement. La co
 
 ## Les chapitres du volume {#sec-prest-chapitres}
 
-Le volume compte six chapitres ; cinq suivent cette présentation.
+Le volume compte sept chapitres ; six suivent cette présentation.
 
 - **Qui est couvert : les régimes et les prestations** (@sec-matrice-regimes) : la matrice des régimes de sécurité sociale et de l'assistance sociale — qui reçoit quoi, à quel titre —, la frontière que les textes tracent entre les deux, et la manière dont un droit s'ouvre.
 - **Les prestations familiales** (@sec-prest-familiales) : les allocations familiales du secteur privé depuis 1961, la majoration pour salaire unique, la contribution aux frais de crèche et les indemnités à caractère familial du secteur public.
-- **Maladie, maternité, décès, accidents du travail, cessation d'activité pour raisons économiques** (@sec-prest-autres-risques) : pour chacun de ces risques, qui est couvert, à quelles conditions, pour quel montant et pendant combien de temps ; l'assurance maladie depuis 2007.
+- **Maladie, maternité, décès, accidents du travail, cessation d'activité pour raisons économiques** (@sec-prest-autres-risques) : pour chacun de ces risques, qui est couvert, à quelles conditions, pour quel montant et pendant combien de temps .
+- **Le droit aux soins : l'assurance maladie et l'assistance médicale** (@sec-prest-soins) : qui est couvert, par quelle voie (le régime de base de 2004, les soins d'un régime distinct, l'assistance médicale et l'Amen social), à quel prix, et les textes article par article.
 - **L'assistance sociale : du programme d'aide aux familles nécessiteuses à l'Amen social** (@sec-prest-non-contributives) : le transfert monétaire mensuel, l'aide médicale, les allocations pour enfants et les aides ponctuelles ; puis ce que l'administration constate — allocataires et crédits — et, à part, ce que les études estiment.
 - **Le logement social : le fonds de promotion du logement pour les salariés et les programmes publics** (@sec-logement-social) : les prêts du fonds aux salariés depuis 1977, la résorption des logements rudimentaires et le Fonds national d'amélioration de l'habitat, le programme spécifique pour le logement social, le premier logement, le financement des opérateurs publics et la location-vente ; puis les prévisions et le suivi des ressources du fonds et, à part, les estimations d'une étude.
 
