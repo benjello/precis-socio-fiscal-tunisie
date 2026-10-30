@@ -64,7 +64,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Ayant droit | ذو الحقّ |  |
 | Baccalauréat | البكالوريا |  |
 | Baccalauréat professionnel | البكالوريا المهنية |  |
+| Banque de financement des petites et moyennes entreprises | بنك تمويل المؤسسات الصغرى والمتوسطة | BFPME |
 | Banque de l'habitat | بنك الإسكان | BH |
+| Banque nationale agricole | البنك الوطني الفلاحي | BNA |
+| Banque tunisienne de solidarité | البنك التونسي للتضامن | BTS |
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
 | Base caisse | أساس الخزينة |  |
 | Bénéfice imposable | الربح الخاضع للضريبة |  |

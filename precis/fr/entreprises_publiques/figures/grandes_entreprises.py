@@ -22,20 +22,6 @@
     ge.figure("sndp_fiches", …)                              # SNDP : fiche seule
     ge.figure("sncpa_budget", …) ; ge.figure("sncpa_fiches", …)  # SNCPA (cellulose, papier alfa)
     ge.figure("afi_budget", …) ; ge.figure("afi_fiches", …)  # Agence foncière industrielle
-    ge.figure("ra_budget", …) ; ge.figure("mtk_fiches", …)   # Régie des alcools, MTK
-    ge.figure("otd_budget", …) ; ge.figure("otd_fiches", …)  # Office des terres domaniales
-    ge.figure("pct_budget", …) ; ge.figure("pct_fiches", …)  # Pharmacie centrale de Tunisie
-    ge.figure("stb_fiches", …) ; ge.figure("bh_budget", …)   # banques publiques : STB, BH
-    ge.figure("cpscl_budget", …) ; ge.figure("cpscl_fiches", …)  # Caisse des prêts (CPSCL)
-    ge.tableau_banque_detail("stb", ("LF2022",), caption=…, tbl_id=…)  # tableau des banques
-    ge.figure("bna_fiches", …) ; ge.figure("bfpme_budget", …)  # banques publiques (BNA, BFPME, BTS)
-    ge.tableau_fiche_banque("bts", ("LF2025",), caption=…, tbl_id=…)  # tableau des banques, replié
-    ge.figure("afh_fiches", …)                               # Agence foncière d'habitation
-    ge.figure("sprols_fiches", …)                            # SPROLS : fiche seule
-    ge.figure("snit_fiches", …)                              # SNIT : fiche seule
-    ge.figure("arru_fiches", …)                              # ARRU : fiche seule
-    ge.figure("sogemt_budget", …) ; ge.figure("sogemt_fiches", …)  # SOGEMT
-    ge.figure("ttn_fiches", …)                               # Tunisie Trade Net : fiche seule
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -688,11 +674,19 @@ def _case_fiche(f, x, e, ind):
     return (None if vide else float(r["valeur"]), r["statut"], vide)
 
 
-NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
-              "office_cereales": "Office des céréales", "sonede": "SONEDE", "onas": "ONAS",
-              "cpg": "CPG", "gct": "GCT",
-              "transtu": "Transtu", "tunisie_autoroutes": "Tunisie Autoroutes",
-              "tunisair": "Tunisair", "rnta": "RNTA",
+NOMS_FICHE = {"steg": "STEG",
+              "etap": "ETAP",
+              "sncft": "SNCFT",
+              "stir": "STIR",
+              "office_cereales": "Office des céréales",
+              "sonede": "SONEDE",
+              "onas": "ONAS",
+              "cpg": "CPG",
+              "gct": "GCT",
+              "transtu": "Transtu",
+              "tunisie_autoroutes": "Tunisie Autoroutes",
+              "tunisair": "Tunisair",
+              "rnta": "RNTA",
               "office_huile": "Office national de l'huile",
               "poste": "Office national des postes",
               "tunisie_telecom": "Tunisie Télécom",
@@ -712,32 +706,26 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "sncpa": "SNCPA",
               "afi": "Agence foncière industrielle",
               "regie_alcools": "Régie des alcools",
-              "mtk": "Manufacture des tabacs de Kairouan"}
-              "otd": "Office des terres domaniales"}
-              "pct": "Pharmacie centrale de Tunisie"}
-              # Banques publiques (BNA, BFPME, BTS)
-              "bna": "BNA", "bfpme": "BFPME", "bts": "BTS"}
-              "afh": "Agence foncière d'habitation"}
-              "sprols": "SPROLS"}
-              "snit": "SNIT"}
-              "arru": "ARRU",
-              "sogemt": "SOGEMT"}
-
-# Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
-# des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
-PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024"), ("regie_alcools", "LF2024")}
+              "mtk": "Manufacture des tabacs de Kairouan",
+              "otd": "Office des terres domaniales",
+              "pct": "Pharmacie centrale de Tunisie",
               "stb": "STB",
               "bh": "BH",
-              "cpscl": "CPSCL"}
-
-# Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
-# des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
-PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024"), ("cpscl", "LF2024")}
+              "cpscl": "CPSCL",
+              "bna": "BNA",
+              "bfpme": "BFPME",
+              "bts": "BTS",
+              "afh": "Agence foncière d'habitation",
+              "sprols": "SPROLS",
+              "snit": "SNIT",
+              "arru": "ARRU",
+              "sogemt": "SOGEMT",
               "ttn": "Tunisie Trade Net"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
-PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024"), ("ttn", "LF2024")}
+PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024"), ("regie_alcools", "LF2024"),
+                              ("cpscl", "LF2024"), ("ttn", "LF2024")}
 
 
 def fig_fiche(entite: str):
@@ -1001,7 +989,7 @@ def table_budget(entite: str):
                                          "Unité", "Imprimé", "Localisation"])
 
 
-# --- 8. Banques publiques : tableau des indicateurs du rapport (mise en page « banques ») -------
+# --- point d'entrée ------------------------------------------------------------------------------
 
 LIB_BQ = {
     "total_actifs": "Total des actifs (MD)",
@@ -1022,49 +1010,21 @@ LIB_BQ = {
     "charges_personnel": "Charges de personnel (MD)",
     "effectif": "Effectif (agents)",
 }
+
+
 ORDRE_BQ = list(LIB_BQ)
+
+
+BQ_DEC = {"bq_dividende_par_action": 3, "bq_dividendes_etat": 2}
+
+
+RUPTURE_DEPOTS = {"bts": "dépôts : définition de l'édition LF 2025,\nhors crédits et ressources "
+                         "spéciales"}
 
 
 def tableau_banque_detail(entite: str, editions: tuple[str, ...], caption: str,
                           tbl_id: str) -> None:
     """Le tableau des banques publiques, une colonne par (exercice, édition) ; unité par ligne."""
-# --- Banques publiques (BNA, BFPME, BTS) : début du bloc ----------------------------------------
-# Tableau des banques publiques du rapport sur les entreprises publiques (mise en page « banques
-# publiques », codes `bq_`) : ni bilan ni compte de résultat d'entreprise, d'où une figure et un
-# tableau propres. Une figure lit une seule famille (fiches du ministère des Finances).
-
-LIB.update({
-    "bq_total_actifs": "Total des actifs", "bq_engagements_clientele": "Engagements sur la clientèle",
-    "bq_depots_clientele": "Dépôts de la clientèle", "bq_produit_net_bancaire": "Produit net bancaire",
-    "bq_resultat_exploitation": "Résultat d'exploitation",
-    "bq_provisions_nettes_engagements": "Provisions nettes sur engagements",
-    "bq_resultat_net": "Résultat net", "bq_dividende_par_action": "Dividende par action (dinars)",
-    "bq_dividendes_etat": "Part de l'État dans les dividendes",
-    "bq_coefficient_exploitation": "Coefficient d'exploitation (%)",
-    "bq_taux_creances_classees": "Taux de créances classées (%)",
-    "bq_couverture_creances_classees": "Couverture des créances classées par les provisions (%)",
-    "bq_ratio_solvabilite": "Ratio de solvabilité (%, minimum 10)",
-    "bq_ratio_tier1": "Ratio Tier 1 (%, minimum 7)",
-    "bq_ratio_lcr": "Ratio de liquidité LCR (%, minimum 100)",
-})
-ORDRE_BQ = ["bq_total_actifs", "bq_engagements_clientele", "bq_depots_clientele",
-            "bq_produit_net_bancaire", "bq_resultat_exploitation",
-            "bq_provisions_nettes_engagements", "bq_resultat_net", "bq_dividende_par_action",
-            "bq_dividendes_etat", "bq_coefficient_exploitation", "bq_taux_creances_classees",
-            "bq_couverture_creances_classees", "bq_ratio_solvabilite", "bq_ratio_tier1",
-            "bq_ratio_lcr", "charges_personnel", "effectif"]
-BQ_DEC = {"bq_dividende_par_action": 3, "bq_dividendes_etat": 2}
-
-# Changement de définition entre deux éditions, d'après la note imprimée sous le tableau
-# (édition LF 2025, p. 30) : la BTS ne range plus les crédits et ressources spéciales dans les
-# dépôts. La figure marque la rupture au lieu de rapprocher les deux définitions.
-RUPTURE_DEPOTS = {"bts": "dépôts : définition de l'édition LF 2025,\nhors crédits et ressources "
-                         "spéciales"}
-
-
-def tableau_fiche_banque(entite: str, editions: tuple[str, ...], caption: str,
-                         tbl_id: str) -> None:
-    """Toutes les grandeurs imprimées du tableau des banques, une colonne par (exercice, édition)."""
     f = _fiches(entite)
     f = f[f["edition"].isin(editions)]
     cols = sorted({(x, e) for x, e in zip(f["exercice"], f["edition"])})
@@ -1086,6 +1046,29 @@ def tableau_fiche_banque(entite: str, editions: tuple[str, ...], caption: str,
             dec = len(imp.split(",")[1]) if "," in imp else 0
             cases.append(_n(r["valeur"], dec))
         lignes.append([LIB_BQ[ind]] + cases)
+    ent = []
+    for x, e in cols:
+        st = f[(f["exercice"] == x) & (f["edition"] == e)]["statut"].iloc[0]
+        st = STATUT.get(st, st)
+        ent.append(f"{x}<br>({_ed(e)}{', ' + st if st else ''})")
+    _md(["Grandeur (unité)"] + ent, "g" + "d" * len(cols), lignes, caption, tbl_id)
+
+
+def tableau_fiche_banque(entite: str, editions: tuple[str, ...], caption: str,
+                         tbl_id: str) -> None:
+    """Toutes les grandeurs imprimées du tableau des banques, une colonne par (exercice, édition)."""
+    f = _fiches(entite)
+    f = f[f["edition"].isin(editions)]
+    cols = sorted({(x, e) for x, e in zip(f["exercice"], f["edition"])})
+    lignes = []
+    for ind in ORDRE_BQ:
+        if ind not in set(f["indicateur"]):
+            continue
+        cases = []
+        for x, e in cols:
+            r = f[(f["exercice"] == x) & (f["edition"] == e) & (f["indicateur"] == ind)]
+            if r.empty:
+                cases.append("—")
             elif r.iloc[0]["case_vide"] in (True, "True"):
                 cases.append("–")
             else:
@@ -1093,13 +1076,14 @@ def tableau_fiche_banque(entite: str, editions: tuple[str, ...], caption: str,
                 dec = 0 if ind == "effectif" or ("," not in imp and "." not in imp) else \
                     BQ_DEC.get(ind, 1)
                 cases.append(_n(r.iloc[0]["valeur"], dec))
-        lignes.append([LIB[ind]] + cases)
+        lignes.append([LIB_BQ[ind]] + cases)
     ent = []
     for x, e in cols:
         st = f[(f["exercice"] == x) & (f["edition"] == e)]["statut"].iloc[0]
         st = STATUT.get(st, st)
         ent.append(f"{x}<br>({_ed(e)}{', ' + st if st else ''})")
-    _md(["Grandeur (unité)"] + ent, "g" + "d" * len(cols), lignes, caption, tbl_id)
+    _md(["Millions de dinars, sauf mention"] + ent, "g" + "d" * len(cols), lignes, caption,
+        tbl_id)
 
 
 def fig_banque(entite: str):
@@ -1123,28 +1107,6 @@ def fig_banque(entite: str):
     ax_l, ax_e = fig.add_subplot(gs[2, 0]), fig.add_subplot(gs[2, 1])
 
     def groupe(ax, series, unite, ecrire=False, dec=1):
-    _md(["Millions de dinars, sauf mention"] + ent, "g" + "d" * len(cols), lignes, caption,
-        tbl_id)
-
-
-def fig_fiche_banque(entite: str):
-    figtools.apply_lang_font()
-    f = _fiches(entite)
-    nom = NOMS_FICHE.get(entite, entite)
-    # Exercices dont la dernière édition imprime au moins une valeur (BFPME : la ligne « juin
-    # 2020 » de l'édition LF 2022, toute en « - », cède la place à l'édition LF 2024).
-    pleines = f[~f["case_vide"].isin([True, "True"])]
-    exercices = sorted(int(x) for x in pleines["exercice"].unique())
-    der = {x: pleines[pleines["exercice"] == x]["edition"].max() for x in exercices}
-    statut = {x: f[(f["exercice"] == x) & (f["edition"] == der[x])]["statut"].iloc[0]
-              for x in exercices}
-
-    fig = plt.figure(figsize=(11.0, 12.4))
-    gs = fig.add_gridspec(4, 2)
-    axes = [fig.add_subplot(gs[i, j]) for i in range(4) for j in range(2)]
-    ax_bil, ax_res, ax_prov, ax_solv, ax_qual, ax_lcr, ax_eff, ax_leg = axes
-
-    def barres(ax, series, titre, unite="MD", signe=False):
         k = len(series)
         larg = 0.8 / k
         for i, (ind, lib, coul) in enumerate(series):
@@ -1153,10 +1115,6 @@ def fig_fiche_banque(entite: str):
                 if c is None:
                     continue
                 xi = x + (i - (k - 1) / 2) * larg
-                c = _case_fiche(f, x, der[x], ind)
-                xi = x + (i - (k - 1) / 2) * larg
-                if c is None:
-                    continue
                 val, st, vide = c
                 if vide:
                     _hors_source(ax, xi, "–")
@@ -1230,14 +1188,37 @@ def fig_fiche_banque(entite: str):
     return fig
 
 
-def table_banque(entite: str):
-    f = _fiches(entite).sort_values(["exercice", "edition", "rang_colonne"])
-    return pd.DataFrame({
-        "Exercice": f["exercice"], "Édition": [_ed(e) for e in f["edition"]],
-        "Statut": f["statut"], "Grandeur": f["indicateur"].map(LIB_BQ).fillna(f["indicateur"]),
-        "Valeur": f["valeur"], "Unité": f["unite"], "Imprimé": f["imprime"],
-        "Case laissée vide": f["case_vide"], "Libellé arabe": f["libelle_ar"],
-        "Page imprimée": f["page_imprimee"], "Page du fichier": f["page_pdf"]})
+def fig_fiche_banque(entite: str):
+    figtools.apply_lang_font()
+    f = _fiches(entite)
+    nom = NOMS_FICHE.get(entite, entite)
+    # Exercices dont la dernière édition imprime au moins une valeur (BFPME : la ligne « juin
+    # 2020 » de l'édition LF 2022, toute en « - », cède la place à l'édition LF 2024).
+    pleines = f[~f["case_vide"].isin([True, "True"])]
+    exercices = sorted(int(x) for x in pleines["exercice"].unique())
+    der = {x: pleines[pleines["exercice"] == x]["edition"].max() for x in exercices}
+    statut = {x: f[(f["exercice"] == x) & (f["edition"] == der[x])]["statut"].iloc[0]
+              for x in exercices}
+
+    fig = plt.figure(figsize=(11.0, 12.4))
+    gs = fig.add_gridspec(4, 2)
+    axes = [fig.add_subplot(gs[i, j]) for i in range(4) for j in range(2)]
+    ax_bil, ax_res, ax_prov, ax_solv, ax_qual, ax_lcr, ax_eff, ax_leg = axes
+
+    def barres(ax, series, titre, unite="MD", signe=False):
+        k = len(series)
+        larg = 0.8 / k
+        for i, (ind, lib, coul) in enumerate(series):
+            for x in exercices:
+                c = _case_fiche(f, x, der[x], ind)
+                xi = x + (i - (k - 1) / 2) * larg
+                if c is None:
+                    continue
+                val, st, vide = c
+                if vide:
+                    _hors_source(ax, xi, "–")
+                    continue
+                _barre(ax, xi, val, coul, largeur=larg, ferme=_ferme(st),
                        texte=f"{nom}, {x} — {lib} : {_n(val, 1, signe)} {unite}, édition "
                              f"{_ed(der[x])}, {st}")
                 if val == 0:
@@ -1271,7 +1252,7 @@ def table_banque(entite: str):
                            for _, l, c, m in series], fontsize=7, frameon=False,
                   loc="upper left")
 
-    barres(ax_bil, [("bq_total_actifs", "total des actifs", _clair(BLEU, 0.45)),
+    barres(ax_bil, [("total_actifs", "total des actifs", _clair(BLEU, 0.45)),
                     ("bq_engagements_clientele", "engagements sur la clientèle", BLEU),
                     ("bq_depots_clientele", "dépôts de la clientèle", VERT)],
            "Bilan en fin d'exercice")
@@ -1285,9 +1266,9 @@ def table_banque(entite: str):
                             textcoords="offset points", ha="left", va="top", fontsize=6.3)
     barres(ax_res, [("bq_produit_net_bancaire", "produit net bancaire", BLEU),
                     ("bq_resultat_exploitation", "résultat d'exploitation", _clair(VERT, 0.55)),
-                    ("bq_resultat_net", "résultat net", VERT)],
+                    ("resultat_net", "résultat net", VERT)],
            "Produit net bancaire et résultats", signe=True)
-    barres(ax_prov, [("bq_provisions_nettes_engagements", "provisions nettes sur engagements",
+    barres(ax_prov, [("bq_provisions_nettes", "provisions nettes sur engagements",
                       ORANGE),
                      ("bq_dividendes_etat", "part de l'État dans les dividendes", VIOLET)],
            "Provisions et dividendes versés à l'État", signe=True)
@@ -1339,10 +1320,17 @@ def table_banque(entite: str):
                   fontsize=7.5, frameon=False, loc="upper left")
     fig.tight_layout()
     return fig
-# --- Banques publiques (BNA, BFPME, BTS) : fin du bloc ------------------------------------------
 
 
-# --- point d'entrée ------------------------------------------------------------------------------
+def table_banque(entite: str):
+    f = _fiches(entite).sort_values(["exercice", "edition", "rang_colonne"])
+    return pd.DataFrame({
+        "Exercice": f["exercice"], "Édition": [_ed(e) for e in f["edition"]],
+        "Statut": f["statut"], "Grandeur": f["indicateur"].map(LIB_BQ).fillna(f["indicateur"]),
+        "Valeur": f["valeur"], "Unité": f["unite"], "Imprimé": f["imprime"],
+        "Case laissée vide": f["case_vide"], "Libellé arabe": f["libelle_ar"],
+        "Page imprimée": f["page_imprimee"], "Page du fichier": f["page_pdf"]})
+
 
 FIGURES = {
     "transferts": (fig_transferts, table_transferts, (S_TRANSFERTS_EP,),
@@ -1490,7 +1478,6 @@ FIGURES = {
                      "fig_ep_cpscl_fiches"),
     "cpscl_budget": (lambda: fig_budget("cpscl", VERT), lambda: table_budget("cpscl"),
                      (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_cpscl_budget"),
-    # Banques publiques (BNA, BFPME, BTS)
     "bna_fiches": (lambda: fig_fiche_banque("bna"), lambda: table_fiche("bna"), (S_FICHES,),
                    "fig_ep_bna_fiches"),
     "bfpme_fiches": (lambda: fig_fiche_banque("bfpme"), lambda: table_fiche("bfpme"),

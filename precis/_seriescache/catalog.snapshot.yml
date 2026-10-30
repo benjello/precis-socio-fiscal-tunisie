@@ -5743,9 +5743,11 @@
     Tunisie Télécom, Office national des postes, Office du commerce de la Tunisie,
     Agence technique des transports terrestres, OACA, OMMP, CTN, sociétés régionales
     de transport de Sfax et de Bizerte, Compagnie tunisienne de forage, SNDP, SOTRAPIL,
-    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI, Régie des
-    alcools, Manufacture des tabacs de Kairouan), bilan, résultat, dette, subvention
-    d''exploitation et emploi, exercices 2018-2023, par édition'
+    El Fouladh, Ciments de Bizerte, Ciments d''Oum El Kélil, SNCPA, AFI, AFH, SPROLS,
+    SNIT, ARRU, SOGEMT, Régie des alcools, MTK, Pharmacie centrale, OTD, Tunisie Trade
+    Net, CPSCL ; indicateurs des banques publiques STB, BH, BNA, BFPME et BTS), bilan,
+    résultat, dette, subvention d''exploitation et emploi, exercices 2018-2023, par
+    édition'
   sources:
   - minfin-ep-2022
   - minfin-ep-2024
@@ -5754,8 +5756,7 @@
   raw:
   - sources/transcriptions/entreprises-publiques-fiches.csv
   output: data/processed/entreprises-publiques/fiches_entreprises_2018_2023.csv
-  unite: millions de dinars courants (colonne valeur), sauf l'effectif en agents,
-    les ratios bancaires en pour cent et le dividende par action en dinars (colonne
+  unite: millions de dinars courants (colonne valeur), sauf l'effectif en agents (colonne
     unite)
   perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
     9), fiches par entreprise de trois éditions arabes : LF 2022 (exercices 2018-2020
@@ -5782,12 +5783,21 @@
     octobre 2026, tableau du secteur quasi financier), Office du commerce de la Tunisie
     (ajouté le 29 octobre 2026), Agence technique des transports terrestres (ATTT,
     ajoutée le 29 octobre 2026), Compagnie tunisienne de forage (CTF, ajoutée le 29
-    octobre 2026), Régie des alcools et Manufacture des tabacs de Kairouan (MTK) (ajoutées
-    le 29 octobre 2026) ; une ligne par (édition, entreprise, exercice, grandeur),
-    avec le statut du chiffre'
+    octobre 2026) ; troisième mise en page, « banques publiques » (Société tunisienne
+    de banque et Banque de l''habitat, ajoutées le 29 octobre 2026 : LF 2022 p. 39,
+    tableau 21 ; LF 2024 p. 53-54, tableau 26 ; LF 2025 p. 29) : total des actifs,
+    engagements et dépôts de la clientèle, produit net bancaire, résultat d''exploitation,
+    provisions nettes, résultat net, dividende par action, part de l''État dans les
+    dividendes, coefficient d''exploitation, taux et couverture des créances classées,
+    ratios de solvabilité, Tier 1 et LCR (mise en page `banques`, codes de la BNA,
+    de la BFPME et de la BTS : total des actifs et résultat net sous les codes communs,
+    les autres préfixés `bq_`, ratios en pour cent), effectif et charges de personnel
+    ; Caisse des prêts et de soutien des collectivités locales (ajoutée le 29 octobre
+    2026, tableau du secteur quasi financier, codes de l''Office national des postes)
+    ; une ligne par (édition, entreprise, exercice, grandeur), avec le statut du chiffre'
   caveats: 'AUCUN RACCORD ENTRE ÉDITIONS NI ENTRE MISES EN PAGE : une grandeur ne
     se compare d''une édition à l''autre que sous le même code (`indicateur`) ; `divergence_entre_editions`
-    signale 1452 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
+    signale 1824 lignes, dont les comptes provisoires révisés (STEG 2022 : passifs
     15 753 en LF 2024, 16 441,8 en LF 2025 ; subvention d''exploitation 3 307 puis
     4 707,4 ; ETAP 2020, résultat net −119,2 en LF 2022, −407,1 en LF 2024) et une
     même année d''une édition à l''autre (SNCFT 2020 : subvention d''exploitation
@@ -5833,14 +5843,7 @@
     et résultats reportés imprimés sans le signe « − » (281,1 pour 2021, −281,1 en
     LF 2025 ; la ligne des variations de la page confirme le signe), bilan qui ne
     boucle pas ; RNTA, LF 2025, actifs − passifs − fonds propres = résultat net de
-    l''exercice (96,9 ; 130,7 ; 116,2). RÉGIE DES ALCOOLS : LF 2024, « total des passifs
-    » imprimé égal au total des actifs (écart déclaré, opposé des fonds propres :
-    4,0 ; 8,5 ; −3,5), LF 2025 boucle ; 2022 provisoire puis réalisé, résultat net
-    12,1 puis −2,5 ; liquidités 2021 de 13,2 en LF 2025 (3,3 en LF 2024) pour 13,1
-    d''actifs, confirmées par la variation imprimée. MANUFACTURE DES TABACS DE KAIROUAN
-    : LF 2024, fonds propres et résultats reportés de 2020 imprimés sans le signe
-    « − » (227,4 ; 260,9 ; écart déclaré −454,8 ; LF 2022 −226,8 et −260,8) ; LF 2025,
-    bilan de 2023 à 0,2 près, déclaré. TUNISAIR, BILAN NON PUBLIÉ : 2020-2022 (LF
+    l''exercice (96,9 ; 130,7 ; 116,2). TUNISAIR, BILAN NON PUBLIÉ : 2020-2022 (LF
     2024) et 2021-2023 (LF 2025), cases du bilan remplacées par une note (états financiers
     non approuvés) ; aucune ligne. Tunisair, statuts LF 2022 : « * » provisoire (2018,
     2019), « ** » probable (2020). Tunisie Télécom, LF 2024 et LF 2025 : produits
@@ -5904,15 +5907,16 @@
     fonds propres (−6,7 ; LF 2025 boucle, 85,1 ; 44,4 ; 40,8), 2023 en LF 2025 (provisoire),
     86,6 pour 47,0 et 34,0 (+5,6) ; charges financières nettes de signe opposé (2021
     : 0,3 en LF 2024, −0,3 en LF 2025) ; 2022 provisoire puis réalisé : résultat net
-    −3,4 puis −5,4. OFFICE DES TERRES DOMANIALES : LF 2022, 2020, six cases sous une
-    note (aucune ligne) ; LF 2024, bilan qui ne boucle dans aucun exercice (−42,38
-    ; −50,66 ; −39,87, écarts déclarés), en-têtes décalés prouvés par LF 2025 ; LF
-    2025, total des passifs « - », subvention d''exploitation en cellule blanche,
-    2023 sous une note ; produits d''exploitation de 2019 (LF 2022, +98,9) et de 2021
-    (+7,93 en LF 2024, +22,4 en LF 2025) qui ne bouclent pas ; effectif 2020 : 4 001
-    (LF 2022), 5 177 (LF 2024). PREUVES DE LECTURE : identités du bilan, des produits
-    et du résultat d''exploitation ; effectif et charges de personnel identiques,
-    ligne à ligne (565), à la série entreprises-publiques-effectifs-par-entreprise
+    −3,4 puis −5,4. BANQUES PUBLIQUES (STB, BH) : tableau d''indicateurs, aucune identité
+    comptable ; grandeurs `bq_` propres aux banques ; STB 2020, actifs 12 349 (LF
+    2022) puis 12 249 (LF 2024) ; variations imprimées discordantes non versées (STB,
+    LF 2024, résultat d''exploitation 2022-2021 ; BH, LF 2025, LCR 2022-2021). CPSCL
+    : LF 2024, total des passifs égal au total des actifs (écart = −fonds propres)
+    ; LF 2025, 2023, bilan à 104,2 près ; la ligne « concours bancaires » porte les
+    aides de l''État et les dons extérieurs non transférés aux communes (note de la
+    page LF 2025), pas des crédits bancaires. PREUVES DE LECTURE : identités du bilan,
+    des produits et du résultat d''exploitation ; effectif et charges de personnel
+    identiques, ligne à ligne (597), à la série entreprises-publiques-effectifs-par-entreprise
     lue sur les mêmes pages ; chaque ligne recoupée avec la couche texte de la page.
     LU À L''IMAGE à 170 dpi le 27 octobre 2026 (300 dpi le 28 octobre pour les ajouts,
     le 29 octobre pour Tunisie Télécom, l''Office national des postes et l''ATTT).'
@@ -5922,8 +5926,8 @@
     الوطني للتطهير، شركة فسفاط قفصة، المجمع الكيميائي التونسي، شركة نقل تونس، شركة
     تونس للطرقات السيارة، الخطوط التونسية، الوكالة الوطنية للتبغ والوقيد، الديوان
     الوطني للزيت، اتصالات تونس، الديوان الوطني للبريد، ديوان التجارة التونسي، الوكالة
-    الفنية للنقل البري، الشركة التونسية للتنقيب، وكالة الكحول، مصنع التبغ بالقيروان)،
-    2018-2023، حسب طبعة التقرير المرفق بقانون المالية'
+    الفنية للنقل البري، الشركة التونسية للتنقيب)، 2018-2023، حسب طبعة التقرير المرفق
+    بقانون المالية'
   unite_ar: ملايين الدنانير الجارية؛ عون
   perimetre_ar: وزارة المالية، التقرير حول المنشآت العمومية (الملحق عدد 9)، جذاذات
     المنشآت في طبعات قانون المالية لسنوات 2022 و2024 و2025
