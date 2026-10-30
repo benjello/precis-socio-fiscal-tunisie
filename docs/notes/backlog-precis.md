@@ -4606,6 +4606,39 @@ Ce qui reste :
     d'après les pages, non versés dans une série ; annexe 8 : société non trouvée dans la couche
     texte, à vérifier à l'image ;
   - grandeurs d'activité des fiches (chiffre d'affaires, ventes de logements) : non versées ;
+- **SNIT — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`, `#sec-ep-ge-snit`, en fin
+  de chapitre, à déplacer dans un chapitre « L'habitat et l'équipement » ; intro et « La source » du
+  chapitre mises à jour). Figure `fig-ep-snit-fiches` (pas de figure budgétaire : transferts nuls),
+  tableaux repliés `tbl-ep-snit-fiche-a` et `-b`. **Fiche du ministère des Finances versée le
+  29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-snit`, code `snit`) : LF 2022 p. 79, LF 2024 p. 119, LF 2025 p. 96, lues à l'image
+  (300 dpi) et retrouvées dans la couche texte. Écart déclaré : 2019 (LF 2022), dette totale
+  inférieure de 0,3 à la somme des créanciers. Lus sur les pages, cités sans série : transferts nuls
+  (LF 2022 p. 106, LF 2023 p. 201, LF 2024 p. 155), contribution aux ressources propres (LF 2022
+  p. 103, LF 2023 p. 198, LF 2024 p. 152 : trois séries qui ne concordent pas), dettes et créances
+  croisées (LF 2024 p. 142 et 146, LF 2025 p. 118-119 et 122-123 : 89,1 et 90,0 MD de dette envers
+  l'État quand la fiche de LF 2022 en donne zéro), couverture des charges (LF 2024 p. 166),
+  commentaire (LF 2025 p. 102). Registre `tbl-ep-registre-snit`, lu au corpus local : loi n° 57-19
+  et statut (OCR relu à l'image), lois n° 58-47 (image), 59-58 (OCR relu), 61-57 et son rectificatif
+  (OCR), 78-28 (OCR), loi de finances pour 1985 (art. 65, OCR ; jort_cache porte bien p. 2961),
+  décret n° 92-2235 (OCR, p. 63), décret n° 2025-204, loi de finances pour 2026 (art. 21, édition
+  arabe), loi n° 2026-1. Clés `loi57-19` et `loi2026-1` reprises du volume des prestations sociales
+  (même texte ; URL française ajoutée à `loi2026-1`). Glossaire : `snit` (entrée existante).
+  **Reste** :
+  - **date d'effet de la loi n° 2026-1 à corriger hors de ce volume** : dépôt au gouvernorat de
+    Tunis le 13 février 2026, effet le 18 février 2026 (cinq jours, jour du dépôt non compté) ; le
+    volume des prestations sociales (`_logement_social.qmd`, `r-log-op-2026-1`) et la définition
+    `snit` du glossaire portent le 14 février ;
+  - textes **dans le corpus local, non lus** : loi n° 57-22 (Compagnie immobilière de Tunisie) ;
+    lois n° 59-64 et 59-85 (conventions de 1959) ; décret-loi n° 61-7 et loi n° 61-29 (Caisse
+    mutuelle de crédit immobilier) ; arrêtés de 1959 et 1961 (seuil des transactions) ; décrets
+    n° 66-389, 67-119, 69-160, 78-642, 79-313, 85-790 (logements, sociétés d'HBM confiées) ;
+    personnel et organisation (décret n° 74-866, arrêté du 24 février 1979, décrets n° 2000-2493,
+    2009-13, 2010-834, 2010-1322) ; textes de création des sociétés régionales (Nord, Centre, Sud) ;
+    décrets d'expropriation (1962-1984) ; autres cessions au dinar symbolique (2019-2026, dont
+    n° 2025-205 et 2025-206) ; décret d'application de l'article 21 de la loi de finances pour 2026 ;
+  - grandeurs d'activité des fiches (chiffre d'affaires, logements réalisés et vendus) : non
+    versées ; la colonne « logements réalisés » de LF 2022 ne recoupe pas celles de LF 2024 ;
   - comptes publiés et rapports annuels de la société : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
