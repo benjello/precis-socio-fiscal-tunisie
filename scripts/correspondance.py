@@ -105,8 +105,8 @@ def cellule_vide(valeur: str) -> str:
 
 def tableau(famille: str, lignes: list[dict]) -> str:
     sortie = [
-        "| Instrument | Catégorie | Institution | Texte fondateur | Principaux modificatifs"
-        " | Texte d'application | Statut du fondateur | Chapitre |",
+        "| Instrument | Catégorie | Institution gestionnaire | Texte de référence | Principaux modificatifs"
+        " | Texte d'application | Statut du fondateur | Chapitre du précis |",
         "|---|---|---|---|---|---|---|---|",
     ]
     for ligne in lignes:
