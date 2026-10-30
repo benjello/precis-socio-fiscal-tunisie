@@ -250,11 +250,12 @@ ge.figure(
 ```
 
 - **Ce que ses statuts lui confient.** [Le décret du 27 décembre 1956](#r-ep-sncft-1956) approuve les statuts de la SNCFT, entreprise à caractère commercial régie par la législation des sociétés anonymes, qui a pour objet l'exploitation du réseau des chemins de fer tunisiens. L'État lui concède l'exploitation de son réseau ferré à compter du 1^er^ janvier 1957 et lui apporte le matériel, les approvisionnements et les fonds du réseau.
+- **Un assainissement en 2005.** [La loi du 4 août 2005](#r-ep-sncft-2005) convertit en fonds de dotation de la SNCFT 89,7 MD de ses dettes au 31 décembre 2001 mises à la charge du fonds de restructuration du capital des entreprises publiques : 21,75 MD envers la Société nationale de distribution des pétroles, 35,88 MD envers les banques et 32,1 MD envers les sociétés General Motors et Temoinsa ; la société réduit ensuite son fonds de dotation de 149,7 MD pour résorber ses pertes cumulées à la même date.
 - **Une subvention d'exploitation de 65 à 105 MD.** La subvention d'exploitation inscrite à la fiche est de 65 MD par an de 2018 à 2020 dans l'édition LF 2022 ; l'édition LF 2024 donne 105 MD pour 2020 et 84,5 MD pour 2021, l'édition LF 2025 70 MD pour 2022 et 95 MD pour 2023, chiffre probable. La subvention du transport public est exposée dans le volume [« La compensation »](../compensation/_transport.html#sec-compensation-transport).
 - **Une dette bancaire.** Fin 2019, la dette de la SNCFT est de 1 478,7 MD, dont 894 MD envers les banques, 161,7 MD envers les caisses sociales et 46 MD envers l'État ; la somme des créanciers imprimés est inférieure de 161,9 MD au total imprimé (110,9 MD fin 2018). L'édition ne donne pas la dette de 2020 (@fig-ep-sncft-fiches).
 - **L'emploi.** L'effectif est de 4 612 agents en 2018, de 4 790 en 2021 et de 4 539 en 2023, chiffre probable ; les charges de personnel passent de 118,9 à 140,7 MD.
 
-:::: {.chronologie-repliable titre="SNCFT : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), et statuts de 1956"}
+:::: {.chronologie-repliable titre="SNCFT : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, subvention d'exploitation, effectif), statuts de 1956 et assainissement de 2005"}
 
 ```{python}
 #| echo: false
@@ -280,8 +281,9 @@ ge.tableau_fiche_detail("sncft", ("LF2024", "LF2025"),
 | Date d'effet | Texte, article et page | Ce que le texte change | Portée |
 |---|---|---|---|
 | []{#r-ep-sncft-1956}[1^er^ janvier 1957]{.insecable}, date dite par le décret (art. 1^er^) | décret du 27 décembre 1956 [@decret-1956-12-27-sncft, art. 1^er^ du décret et art. 1^er^ à 6 des statuts, p. 1756] | statuts de la Société nationale des chemins de fer tunisiens approuvés : entreprise à caractère commercial régie par la législation relative aux sociétés anonymes dans la mesure où le statut n'y déroge pas (art. 1^er^) ; objet : exploitation du réseau des chemins de fer tunisiens et gestion des biens qui lui sont dévolus (art. 3) ; durée de 99 ans (art. 5) ; l'État concède l'exploitation de son réseau ferré pour la durée de la société à compter du 1^er^ janvier 1957, met à sa disposition le rail, la voie, les gares et les dépôts, et lui fait apport du matériel, des approvisionnements, des fonds et des créances du réseau, à charge des dettes, apport évalué forfaitairement à 3 milliards de francs (art. 6) | mise en place |
+| []{#r-ep-sncft-2005}[11 août 2005]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 6 août 2005, plus cinq jours, jour du dépôt non compté | loi n° 2005-72 du 4 août 2005 [@loi2005-72-sncft, art. 1^er^ et 2, p. 1974] | le ministre des finances est autorisé à convertir en fonds de dotation de la société les dettes à la charge du fonds de restructuration du capital des entreprises publiques, arrêtées au 31 décembre 2001, soit 89 719 355,234 dinars : 21 750 000 dinars de dettes envers la Société nationale de distribution des pétroles, 35 880 000 dinars de dettes bancaires, 32 089 355,234 dinars de dettes en principal envers les sociétés « Général Motors » et « Temoinsa » (art. 1^er^) ; la société est autorisée à réduire son fonds de dotation de 149 700 000 dinars pour résorber ses pertes cumulées arrêtées au 31 décembre 2001 (art. 2) | rupture |
 
-: Les statuts de la SNCFT {#tbl-ep-registre-sncft}
+: Les textes de la SNCFT : statuts et assainissement financier {#tbl-ep-registre-sncft}
 
 ::::
 
