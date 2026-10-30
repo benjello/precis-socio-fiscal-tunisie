@@ -76,6 +76,8 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      # Pour l'issue d'état « Traductions arabes : état » (scripts/etat_traduction.py).
+      issues: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -137,10 +139,18 @@ jobs:
           fi
           echo "files=$CHANGED" >> $GITHUB_OUTPUT
 
+      # DISJONCTEUR. Quand l'API refuse pour cause de limite de dépense (plafond mensuel
+      # du palier gratuit, 402, ou 429 qui ne cède pas), le script s'arrête au premier
+      # refus, SORT EN SUCCÈS et écrit `etat=suspendue` dans les sorties de cette étape
+      # et le bilan de la passe dans TRADUCTION_BILAN. Le retard n'est pas perdu : il se
+      # recalcule par dates de commit et sera repris au prochain passage planifié.
+      # Une autre panne (troncature, cellule altérée) fait toujours échouer l'étape.
       - name: Run translation script
+        id: traduction
         if: steps.changed-files.outputs.files != ''
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TRADUCTION_BILAN: /tmp/bilan_traduction.json
           TRADUCTION_COMPLETE: ${{ github.event.inputs.traduction_complete == 'true' && '1' || '0' }}
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ] \
@@ -346,7 +356,9 @@ jobs:
       # vérification est donc rapatriée ici, dans le job qui produit la
       # traduction, seul endroit où elle porte sur ce qui sera mergé.
       - name: Verify the generated translation
-        if: steps.open-pr.outputs.pr != ''
+        # Pas de Checker IA quand la limite de dépense est atteinte : il ferait un appel
+        # de plus, voué au même refus. Parité et rendu, eux, ont eu lieu.
+        if: steps.open-pr.outputs.pr != '' && steps.traduction.outputs.etat != 'suspendue'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -370,3 +382,16 @@ jobs:
                  "voir son rapport ci-dessus et le commentaire posté sur la PR."
           fi
           exit 1
+
+      # ISSUE D'ÉTAT. Toujours exécutée, succès, suspension ou échec : une issue unique,
+      # retrouvée par son marqueur caché, mise à jour et jamais recréée en double.
+      # `continue-on-error` : un incident sur l'issue ne doit pas rougir une passe qui a
+      # fait son travail. Voir scripts/etat_traduction.py.
+      - name: Update the status issue
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          uv run --no-project python scripts/etat_traduction.py publier \
+            --bilan /tmp/bilan_traduction.json

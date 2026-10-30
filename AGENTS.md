@@ -33,6 +33,13 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   toi-même au `_quarto.yml` arabe**, une fois sa traduction livrée — sans quoi il ne sera servi dans
   aucune des deux langues. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
   `rendre-les-livres.yml`, qui rend les livres disponibles sur chaque PR.
+- **La traduction se traite seule ; l'état se lit dans une issue.** Le palier gratuit de Gemini
+  plafonne par mois. Au premier refus de limite de dépense (plafond mensuel, 402, ou 429 qui ne
+  cède pas), `translate_sync` s'arrête, sort en succès et écrit son bilan ; le retard se recalcule
+  par dates de commit (`scripts/traduction_en_retard.py`) et est repris au passage suivant. Rien à
+  relancer à la main. L'issue épinglée « Traductions arabes : état » (marqueur HTML caché ;
+  `scripts/etat_traduction.py`, appelé par `translation-sync.yml`) dit le retard par livre, l'état,
+  le budget mensuel appris et la consommation du mois ; elle ne se ferme pas.
 - **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `_glossaire.infobulles.html`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
 - **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut
