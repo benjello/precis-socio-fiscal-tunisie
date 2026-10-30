@@ -15,6 +15,8 @@ on:
   pull_request:
     paths:
       - 'precis/**/*.qmd'
+      - 'precis/*/*/_quarto.yml'
+      - 'scripts/arabe_cablage.py'
       - 'precis/**/tables/**'
       - 'precis/glossaire.yml'
       - 'scripts/check_pas_de_modele.py'
@@ -103,3 +105,12 @@ jobs:
       # en silence, aucun autre gate ne le voit.
       - name: Les sous-agents Claude Code sont à jour
         run: uv run python scripts/sync_agents.py --verifier
+
+      # Le `_quarto.yml` arabe suit le français, et un chapitre sans traduction a sa
+      # page-relais : tout est engendré par `scripts/arabe_cablage.py`, jamais écrit à la
+      # main. Ce contrôle attrape un chapitre ajouté (ou retiré) côté français sans que le
+      # script ait été relancé. Sur les PR seulement : sur `master`, le câblage est posé
+      # par la PR du robot de traduction, et un rouge d'attente n'apprendrait rien.
+      - name: Le câblage des livres arabes est à jour
+        if: github.event_name == 'pull_request'
+        run: uv run python scripts/arabe_cablage.py --verifier

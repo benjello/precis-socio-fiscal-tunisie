@@ -4,6 +4,10 @@ import os
 import re
 import sys
 import subprocess
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from arabe_cablage import est_relais_texte  # noqa: E402
 # `google-genai` n'est PAS importé ici, mais dans `main()`. Ce module porte des
 # fonctions purement textuelles — `restore_locators`, `restore_urls` — qui
 # réécrivent du contenu publié et doivent donc être testables SANS le client du
@@ -1780,6 +1784,12 @@ def main():
         # Le prix est réel et assumé : les corrections faites à la main sur la seule
         # langue cible sont perdues. D'où le caractère explicite de l'option — jamais
         # de retraduction complète par défaut.
+        # Une page-relais (arabe_cablage.py) n'est pas une traduction : la mettre à jour
+        # reviendrait à « corriger » un avis de trois lignes. On traduit de zéro et on écrase.
+        if old_target_text and est_relais_texte(old_target_text):
+            print(f"  {target_path} : page-relais, remplacée par la traduction.")
+            old_target_text = ""
+
         if os.environ.get("TRADUCTION_COMPLETE") == "1":
             if old_target_text:
                 print(f"  {file_path} : retraduction complète demandée, "

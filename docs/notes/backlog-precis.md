@@ -6027,8 +6027,13 @@ verser par le terminologue quand un volume les emploiera.
   mensuel appris (moyenne des trois derniers mois où la limite a été atteinte ; 300 000
   caractères tant qu'aucun mois n'a été mesuré, constante `BUDGET_INITIAL` de
   `scripts/etat_traduction.py`) et la consommation du mois. Rattraper par livre, en commençant par ceux dont la
-  structure a changé (TVA, prestations sociales, finances locales), et déclarer les chapitres
-  nouveaux dans chaque `_quarto.yml` arabe.
+  structure a changé (TVA, prestations sociales, finances locales). **Câblage et pages-relais
+  (30 octobre 2026)** : `scripts/arabe_cablage.py` tient les listes de chapitres des `_quarto.yml`
+  arabes d'après le français et pose une page-relais (« هذا الفصل لم يُترجم بعد » et lien vers le
+  français) pour tout chapitre sans arabe, ainsi que pour les pages générales : plus de 404 arabe,
+  `prestations_sociales/_soins.qmd` et `_logement_social.qmd` compris. Le relais compte comme
+  « jamais traduit » et sera écrasé par la traduction. Reste : les trois livres sans `_quarto.yml`
+  arabe (éducation, entreprises publiques, informel), que le script ne crée pas.
 - **Garde-fou de troncature — CORRIGÉ le 20 septembre.** Il était enveloppé dans
   `if old_target_text:` et ne s'exécutait donc pas en retraduction complète, le mode où la
   troncature est la plus probable. Mesuré sur le vrai script : un chapitre arabe de 175 lignes

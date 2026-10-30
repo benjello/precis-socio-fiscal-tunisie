@@ -14,11 +14,11 @@ book:
   repo-actions: [edit, issue]
   downloads: [pdf]
   chapters:
-    # - index.qmd : à déclarer dès la livraison de la traduction
-    # - _histoire.qmd : à déclarer dès la livraison de la traduction
-    # - _couverture.qmd : à déclarer dès la livraison de la traduction
-    # - _hopital.qmd : à déclarer dès la livraison de la traduction
-    # - _medecine_ville.qmd : à déclarer dès la livraison de la traduction
+    - index.qmd
+    - _histoire.qmd
+    - _couverture.qmd
+    - _hopital.qmd
+    - _medecine_ville.qmd
   appendices:
     - _glossaire.qmd
 
