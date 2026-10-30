@@ -52,6 +52,12 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   traduction ouverte. `uv run python scripts/lot_traduction.py --dry-run` montre le lot sans
   réseau. Les chapitres de plus de 90 000 caractères sont traduits par morceaux (`decouper`).
   Réglages en `workflow_dispatch` : `livre`, `max_fichiers`, `max_caracteres`, `budget_mensuel`.
+  **Auto-fusion** : en fin de passage, `scripts/auto_fusion.py` active `gh pr merge --auto --merge`
+  sur la PR du robot si tous ses fichiers sont sous `precis/ar/` (ou le glossaire engendré) et si
+  parité, rendu des livres arabes touchés et vérification ont réussi ; sinon la PR reste ouverte,
+  commentée, et l'issue d'état la liste. Ne contourne jamais ce filtre pour une PR qui touche autre
+  chose que l'arabe. Le filet `deploiement-rattrapage.yml` relance `deploy.yml` si une fusion faite
+  par le robot n'a pas déclenché le déploiement.
 - **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `_glossaire.infobulles.html`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
 - **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut

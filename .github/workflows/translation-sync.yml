@@ -425,6 +425,7 @@ jobs:
       # vérification est donc rapatriée ici, dans le job qui produit la
       # traduction, seul endroit où elle porte sur ce qui sera mergé.
       - name: Verify the generated translation
+        id: verif
         # Pas de Checker IA quand la limite de dépense est atteinte : il ferait un appel
         # de plus, voué au même refus. Parité et rendu, eux, ont eu lieu.
         if: steps.open-pr.outputs.pr != '' && steps.traduction.outputs.etat != 'suspendue'
@@ -451,6 +452,25 @@ jobs:
                  "voir son rapport ci-dessus et le commentaire posté sur la PR."
           fi
           exit 1
+
+      # AUTO-FUSION. Ce job est le seul endroit où les contrôles de la PR ont tourné (une PR
+      # ouverte avec le GITHUB_TOKEN ne déclenche aucun workflow) : la décision se prend donc
+      # ici, sur leurs issues. `auto_fusion.py` n'active `gh pr merge --auto --merge` que si
+      # l'auteur est le robot, si tous les fichiers sont sous precis/ar/ (ou le glossaire
+      # engendré) et si parité, rendu et vérification ont RÉUSSI (sauté ≠ réussi). Sinon la PR
+      # reste ouverte, avec un commentaire, et l'issue d'état la liste. Réglages de dépôt
+      # nécessaires : voir AGENTS.md (« Allow auto-merge »). `continue-on-error` : un refus
+      # de GitHub ne doit pas rougir une passe qui a fait son travail.
+      - name: Enable auto-merge when eligible
+        if: always() && steps.open-pr.outputs.pr != ''
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          uv run --no-project python scripts/auto_fusion.py --pr "${{ steps.open-pr.outputs.pr }}" \
+            --parite "${{ steps.parity.outcome }}" \
+            --rendu "${{ steps.rendu.outcome }}" \
+            --verification "${{ steps.verif.outcome }}"
 
       # ISSUE D'ÉTAT. Toujours exécutée, succès, suspension ou échec : une issue unique,
       # retrouvée par son marqueur caché, mise à jour et jamais recréée en double.
