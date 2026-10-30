@@ -6100,3 +6100,26 @@
     وبعدها (الحفظ حسب الفصل 15 مكرّر). أحكام المنشآت العمومية: عدّ على ملخّصات القرارات،
     1986-1998 فقط.'
   fiche: sources/cdf-activite.md
+- id: education-boursiers-bourse-nationale
+  titre: Étudiants et boursiers de la bourse nationale en Tunisie, 2008-2009 à 2016-2017
+  sources:
+  - budget-mesrs-2016
+  - budget-mesrs-2017
+  build: uv run python scripts/build_education_boursiers.py
+  raw:
+  - sources/transcriptions/education-boursiers/
+  output: data/processed/education/education-boursiers-bourse-nationale.csv
+  unite: étudiants ; boursiers ; % des étudiants (colonne unite)
+  perimetre: 'Ministère de l''Enseignement supérieur et de la Recherche scientifique,
+    budget de l''État pour 2017 (p. 33), tableau de l''évolution du nombre d''étudiants
+    et de bourses universitaires en Tunisie, repris du budget de 2016 (p. 25) jusqu''en
+    2015-2016 : effectif des étudiants, effectif des boursiers, part des boursiers
+    imprimée. Année universitaire « AAAA-AAAA ».'
+  caveats: 'BUDGÉTAIRE. LA SOURCE NE DIT PAS SI LES ÉTUDIANTS SONT CEUX DU PUBLIC
+    SEUL, NI SI LES MASTÈRES ET DOCTORATS SONT COMPTÉS. 2016-2017 : chiffres ronds
+    (250 000 ; 84 000), absents du budget de 2016, vraisemblablement une prévision.
+    Régime de la bourse modifié à partir de 2011-2012 (arrêté de 2012). Autre compte
+    pour 2010 dans l''étude CEQ (98 533 boursiers), non réconcilié. Les étudiants
+    de cette série (320 920 en 2010-2011) ne sont pas ceux de `education-effectifs-annuaire`
+    (INS) : ne pas les mêler.'
+  fiche: sources/education-boursiers.md

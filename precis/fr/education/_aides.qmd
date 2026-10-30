@@ -697,7 +697,28 @@ Deux mesures aux noms voisins ne sont pas des aides aux élèves ni aux étudian
 
 ## Les boursiers et les crédits des aides {#sec-educ-aides-donnees}
 
-De 2008-2009 à 2015-2016, entre un tiers et deux cinquièmes des étudiants sont boursiers, selon les budgets du ministère de l'Enseignement supérieur. Dans les prévisions du budget de 2013, les bourses en Tunisie font 97,8 des 138,9 millions de dinars (MD) de l'article budgétaire qui porte les bourses et les prêts. Ces chiffres sont budgétaires ; ce sont, pour les crédits, des prévisions.
+De 2008-2009 à 2015-2016, entre un tiers et deux cinquièmes des étudiants sont boursiers, selon les budgets du ministère de l'Enseignement supérieur. Dans les prévisions du budget de 2013, les bourses en Tunisie font 97,8 des 138,9 millions de dinars (MD) de l'article budgétaire qui porte les bourses et les prêts. Ces chiffres sont budgétaires ; ce sont, pour les crédits, des prévisions. Les effectifs se lisent sur la figure (@fig-educ-boursiers), le tableau est replié dessous.
+
+```{python}
+#| label: fig-educ-boursiers
+#| fig-cap: "Étudiants et boursiers de la bourse nationale en Tunisie, 2008-2009 à 2016-2017."
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import fig_educ_depense as fd, fig_educ_boursiers as fb
+fd.onglets(
+    fb.vues(), "fig_educ_boursiers",
+    caption="Étudiants et boursiers de la bourse nationale en Tunisie, 2008-2009 à 2016-2017",
+    source=("Source : [@budget-mesrs-2017, p. 33] ; [@budget-mesrs-2016, p. 25] jusqu'en 2015-2016 "
+            "(tableau de l'évolution du nombre d'étudiants et de bourses universitaires en Tunisie)"),
+    note_lecture=("Les deux traits verticaux marquent deux ruptures. Le régime de la bourse de 2012 "
+                  "s'applique dès l'année universitaire 2011-2012. Les chiffres de 2016-2017 sont ronds "
+                  "(250 000 étudiants, 84 000 boursiers), absents du budget de 2016 : vraisemblablement "
+                  "une prévision, marquée d'un point creux. L'onglet « Part des boursiers » donne la part "
+                  "imprimée par la source."))
+```
+
+::::: {.chronologie-repliable titre="Étudiants et boursiers par année universitaire, 2008-2009 à 2016-2017 : tableau"}
 
 | Année universitaire | Étudiants | Boursiers | Part des boursiers |
 |---|---|---|---|
@@ -713,9 +734,9 @@ De 2008-2009 à 2015-2016, entre un tiers et deux cinquièmes des étudiants son
 
 : Étudiants et boursiers de la bourse nationale en Tunisie, 2008-2009 à 2016-2017 {#tbl-educ-boursiers}
 
-Source : budget de 2017 du ministère de l'Enseignement supérieur et de la Recherche scientifique, tableau de l'évolution du nombre d'étudiants et de bourses universitaires en Tunisie [@budget-mesrs-2017, p. 33] ; le budget de 2016 donne la même table jusqu'en 2015-2016 [@budget-mesrs-2016, p. 26]. \* Chiffres ronds, absents du budget de 2016 : probablement une prévision. Le régime de 2012, en vigueur à partir de l'année universitaire 2011-2012, s'applique rétroactivement à cette année-là (@sec-educ-bourse-nationale).
+Source : budget de 2017 du ministère de l'Enseignement supérieur et de la Recherche scientifique, tableau de l'évolution du nombre d'étudiants et de bourses universitaires en Tunisie [@budget-mesrs-2017, p. 33] ; le budget de 2016 donne la même table jusqu'en 2015-2016 [@budget-mesrs-2016, p. 25]. \* Chiffres ronds, absents du budget de 2016 : probablement une prévision. Le régime de 2012, en vigueur à partir de l'année universitaire 2011-2012, s'applique rétroactivement à cette année-là (@sec-educ-bourse-nationale).
 
-<!-- TODO (rédacteur) : remplacer par la figure engendrée fig-educ-boursiers (étudiants, boursiers et part des boursiers, ruptures marquées en 2011-2012 et prévision probable en 2016-2017), après versement de cette table à tunisia-data et inscription au catalogue. -->
+:::::
 
 - **Le périmètre.** La source ne dit pas si les étudiants comptés sont ceux du seul enseignement public.
 - **Une évaluation compte autrement.** Une étude d'incidence fondée sur l'enquête des ménages de 2010 retient un autre nombre de boursiers pour 2010 ; sa méthode et l'écart avec cette série sont exposés au [chapitre de la dépense](./_depense.html#sec-educ-depense-evaluations).

@@ -1509,7 +1509,8 @@ dans `sources/minfinances-portail-ancien-urls.csv`. Aucun PDF nouveau n'a été 
 
 **Étudiants et boursiers en Tunisie.** Source : budget 2017 du ministère (`2017_budget_enseignement_
 superieur_recherche_scientifique_ar_jd1173.pdf`), tableau « تطور عدد الطلبة وعدد المنح الجامعية
-بتونس », p. 33, lu à l'image. Le budget 2016 (`…_jd1039.pdf`, p. 26) donne la même table
+بتونس », p. 33 (page 43 du fichier), lu à l'image ; neuf lignes relues le 30 octobre 2026. Série versée à
+`tunisia-data` : `education-boursiers-bourse-nationale`. Le budget 2016 (`…_jd1039.pdf`, p. 25, page 34 du fichier) donne la même table
 jusqu'en 2015-2016.
 
 | Année universitaire | Étudiants | Boursiers | Part des boursiers |
@@ -1577,7 +1578,7 @@ p. 92, sont relevées dans l'extraction. La même p. 91 donne les subventions de
 
 - budget 2013, p. 14 : hausse de 50 à 60 D et de 70 à 80 D « à partir de 2012 », et bourse
   supplémentaire de 30 D aux non-hébergés « à partir de 2013 » ;
-- budgets 2016 et 2017, p. 26 et p. 33 : la même hausse est datée « à partir de 2013 ». L'arrêté du
+- budgets 2016 et 2017, p. 25 et p. 33 : la même hausse est datée « à partir de 2013 ». L'arrêté du
   9 octobre 2012 dit « année universitaire 2011-2012 » : le tableau de droit suit l'arrêté ;
 - les hausses « de 2016 » et « de 2017 » de ces documents correspondent aux colonnes 2015-2016 et
   2016-2017 de l'arrêté de 2015.
