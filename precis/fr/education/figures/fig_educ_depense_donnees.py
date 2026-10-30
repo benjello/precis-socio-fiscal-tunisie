@@ -33,7 +33,8 @@ FICHE = "docs/notes/education-depense-2026-10-17.md, sources/education-depense-s
 # Séries d'éducation du catalogue lues ici ; la colonne `serie` nomme le relevé de la note.
 SERIES = ("education-depense-ministeres", "education-depense-nature", "education-depense-parts-calcul",
           "education-depense-programmes", "education-personnels-fonction-publique",
-          "education-effectifs-annuaire", "education-depense-menages", "education-uis-depense")
+          "education-effectifs-annuaire", "education-depense-menages", "education-uis-depense",
+          "education-boursiers-bourse-nationale")
 _RELEVES: dict[str, pd.DataFrame] = {}
 
 ipc = pd.read_csv(ROOT / "precis/_seriescache/ipc-longue-periode.csv").set_index("annee")["indice_base1970"]

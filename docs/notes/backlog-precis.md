@@ -145,7 +145,7 @@ repliés (`.chronologie-repliable`, compte du 25 octobre 2026). Reste à faire :
 | Compensation | Volume IX, huit chapitres réécrits le 6 octobre 2026 (institution, réformes, dépense, carburants, électricité et gaz, transport, rapports extérieurs, incidence) ; montant versé de la dotation de la Caisse inconnu pour dix années, dont cinq (2003, 2006, 2008, 2009, 2011) ont une ligne budgétaire d'ordre de grandeur (subvention prévue 1987-1994 et ligne 2003-2011 versées le 24 octobre 2026) ; tarifs MT/HT et gaz 1994-2003 versés le 24 octobre 2026, grille d'octobre 1993 non publiée | Lois de règlement 1988 et 1989 (scans à lire à l'image), budget économique, lois de finances complémentaires et tableaux des fonds spéciaux 1995-2010 (dotation) ; décrets de suspension du prélèvement à l'importation (n° 97-2509 à 2007-1199) ; produit annuel des prélèvements ; décret n° 93-1187 et modifications de 2002, 2009 et 2015 du décret n° 91-1391 lus le 24 octobre 2026 |
 | Entreprises publiques | **Brouillon** du 11 octobre 2026 : un volume d'un seul chapitre, avec une section « effectifs et masse salariale », français seul ; inscrit à l'accueil le 20 octobre 2026 (partie V) ; séries budgétaires 2016-2024 et 1987-2009 ; quatre flux de clôture du budget pour 2010-2016 (24 octobre 2026) ; ni transferts par entreprise avant 2016, ni encours de la dette garantie, ni série avant 1987 ; forme (volume ou chapitre) à trancher par la revue (note dans la section du volume) | Lois de finances de 2016 à 2024 (articles sur la garantie) ; transferts par entreprise 2010-2015 ; totaux des budgets de 1959-60 à 1985 (voir la section du volume) |
 | Santé | Volume X, première rédaction le 12 octobre 2026, français seul : histoire, couverture, hôpital, médecine de ville ; tarifs des malades payants et tarifs réduits de 1998 (23 octobre) ; numérotation des sections corrigée (#511) ; dépenses du département 2018-2023 et comptes de la CNAM 2016-2021 intégrés, comptes 2011-2015 lus à l'image le 15 octobre ; les prestations en espèces restent dans « Prestations sociales » | Statistiques de prestations de la CNAM, lisibles en couche texte dans le corpus ; ventilation de la dépense par prestation à obtenir hors JORT |
-| Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense (dépense des communes ajoutée le 23 octobre, séries 2022-2023) ; lectures des 18 et 19 octobre fusionnées ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001 : lus le 29 octobre 2026 ; arrêté du 20 août 1982 non retrouvé en français (édition arabe à lire) ; § 9 du plan, points 2 et 3, à lire à l'image |
+| Éducation et formation | Volume XII, première rédaction le 17 octobre 2026, français seul : histoire, scolaire, formation professionnelle, supérieur, aides aux élèves et aux étudiants, dépense (dépense des communes ajoutée le 23 octobre, séries 2022-2023) ; lectures des 18 et 19 octobre fusionnées ; lignes de tableau sans contenu établi retirées et listées en TODO | Arrêtés de montants de bourses 1958-1978, décret n° 80-1001 : lus le 29 octobre 2026 ; arrêté du 20 août 1982 non retrouvé en français (édition arabe à lire) ; § 9 du plan, points 2 et 3, à lire à l'image ; supérieur réordonné par parcours de l'étudiant le 30 octobre 2026 (lois, accès et orientation, établissements, diplômes, formation pratique, textes), contribution des étudiants passée au chapitre des aides (même identifiant) ; TODO sur la langue d'enseignement ajouté |
 
 Les `TODO` des `.qmd` détaillent chaque lacune, y compris celles que ce tableau ne peut pas
 résumer. Ici, **lisible** veut dire que le fascicule est présent avec une couche texte
@@ -2568,10 +2568,10 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   Zotero) ; `loi-2009-32-restauration-formation` est au fonds commun en français et, depuis le 25 octobre 2026, en arabe
   (déplacée depuis `precis/ar/fiscalite/references.json`) ; double clé de la loi de finances pour 2019.
 - [ ] **Séries** : les 79 relevés de `education-depense-series/` sont au catalogue de `tunisia-data` (onze séries
-  `education-*`, 29 octobre 2026) et les figures de la dépense lisent `figtools.series()`. Reste : les réponses de
-  l'API de la Banque mondiale (UIS) et le communiqué de l'INS téléchargés pour la note étaient dans
-  `/tmp/education-ocr-D/`, disparu — à retélécharger dans `data/raw/` de `tunisia-data` ; figure des effectifs F2 (`fig-educ-eleves`, `figures/fig_educ_eleves.py`, 29 octobre 2026) faite ;
-  figure des boursiers (F3) à produire (table de la note U § 5.1, pas de CSV).
+  `education-*`, 29 octobre 2026) et les figures de la dépense lisent `figtools.series()`. Les réponses de l'API de la
+  Banque mondiale (UIS) et le communiqué de l'INS sont retéléchargés dans `data/raw/` de `tunisia-data` (30 octobre 2026) ;
+  figure des effectifs F2 (`fig-educ-eleves`, `figures/fig_educ_eleves.py`, 29 octobre 2026) et figure des boursiers F3
+  (`fig-educ-boursiers`, `figures/fig_educ_boursiers.py`, série `education-boursiers-bourse-nationale`, 30 octobre 2026) faites.
 - [ ] **Recherche exclue de la dépense** (décision du 17 octobre 2026) : fondue dans l'enseignement supérieur en
   gestion en 2002-2004 et depuis 2019 ; réserve de périmètre dite dans le texte, pas d'estimation ; la
   fiche de plan § 4 et la note `education-depense` § 2.4 comptent encore la recherche dans le périmètre et
@@ -2590,6 +2590,11 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   page) ; le lien ouvre bien la ligne. Limite connue du domicile unique entre fichiers.
 - [ ] **Chapitres suivants** : scolaire, formation professionnelle initiale, supérieur, résultats (scolarisation,
   examens, abandon), rapports et études ; « Ce qu'en dit l'économie » par dispositif ; version arabe.
+- [x] **Chapitre « L'enseignement scolaire » réordonné par parcours de l'élève (30 octobre 2026, branche
+  `educ/reorg-scolaire`)** : état du droit, préscolaire, cycles et langues (section neuve `#sec-educ-scolaire-cycles-langues`),
+  examens et orientation (sous-section neuve `#sec-educ-scolaire-pilotes`), passages et abandons, privé, cours particuliers et
+  vie scolaire, textes. Identifiants et lignes de registre conservés. Reste : le fil historique des langues d'enseignement
+  (1958-1995), à placer dans la section neuve quand les textes de 1973 à 1995 seront lus (PR #608).
 
 ## Allègement du juridique et de l'administratif — chantier, non urgent (5 octobre 2026)
 
