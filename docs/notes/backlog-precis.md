@@ -4326,6 +4326,67 @@ Ce qui reste :
   - grandeurs d'activité des fiches (achats et ventes de produits de base) citées, non versées dans
     une série ; éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
   - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Régie des alcools et Manufacture des tabacs de Kairouan — sections écrites le 29 octobre 2026**
+  (`_offices.qmd`, `#sec-ep-ge-ra` et `#sec-ep-ge-mtk`, en fin de chapitre ; intro et « La source » du
+  chapitre mises à jour). Figures `fig-ep-ra-budget`, `fig-ep-ra-fiches`, `fig-ep-mtk-budget`,
+  `fig-ep-mtk-fiches`, tableaux repliés `tbl-ep-{ra,mtk}-fiche-a` et `-b`. **Fiches du ministère des
+  Finances versées le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`,
+  branche `donnees/fiche-ra`, codes `regie_alcools` et `mtk`) : LF 2022 p. 50 (les deux), LF 2024 p. 74
+  (Régie) et 73 (MTK), LF 2025 p. 49 et 51, lues à l'image (300 dpi) et retrouvées dans la couche texte.
+  Écarts déclarés : Régie, LF 2024, « total des passifs » égal au total des actifs (case de 2020 non
+  tracée) ; MTK, LF 2024, fonds propres et reportés de 2020 sans le signe « − » ; MTK 2023, bilan à
+  0,2 près. Explications des révisions citées d'après la prose de l'édition LF 2025 (p. 52 et 55).
+  Registres `tbl-ep-registre-ra` et `tbl-ep-registre-mtk`, lus au corpus local à l'image : loi de
+  finances pour 1975 (art. 43 à 46 et 82), décrets n° 75-65 et 88-68 ; loi n° 81-14, décret n° 81-526,
+  loi de finances pour 1982 (art. 85), décret-loi n° 2011-108 (couche texte), décret n° 2011-4395
+  (édition arabe), loi de finances complémentaire pour 2014 (art. 46). Glossaire : `regie-alcools`, `mtk`.
+  **Reste** :
+  - textes **dans le corpus local, non lus** : Régie, décrets n° 75-594, 77-503 et 2007-843, arrêtés
+    des prix de cession des alcools (dernier : 18 novembre 2025, JORT n° 137, p. 3123) ; MTK, décrets
+    n° 82-1168, 85-1568, 87-1199, 89-598, 93-114 et 98-1802, décrets n° 2000-1934 et 2008-2398 (achats
+    de tabacs bruts), article 69 de la loi de finances pour 2025 ;
+  - **demandent l'OCR ou la lecture à l'image** (fascicules sans couche texte) : décret du 20 novembre
+    1927 sur le régime de l'alcool (antérieur au corpus), loi n° 59-113 et décret-loi n° 60-5 ;
+  - date de dépôt au gouvernorat du JORT n° 93 de 2011 (décret n° 2011-4395), comme pour la RNTA ;
+  - objet des transferts du budget (Régie 2021 ; MTK 2017, 2020, 2022, sans subvention d'exploitation
+    sur la fiche) : tableaux par établissement de l'annexe 8 ;
+  - grandeurs d'activité (hectolitres vendus ; paquets produits et vendus, colonnes à attribuer) :
+    non versées ;
+  - comptes publiés des deux établissements : **à obtenir**.
+- **Pharmacie centrale de Tunisie — section écrite le 30 octobre 2026** (`_offices.qmd`,
+  `#sec-ep-ge-pct`, en fin de chapitre ; intro, « La source » et TODO final du chapitre mis à jour).
+  Figures `fig-ep-pct-budget` et `fig-ep-pct-fiches`, tableaux repliés `tbl-ep-pct-fiche-a` et `-b`.
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-pct`, code `pct`) :
+  LF 2022 p. 91, LF 2024 p. 133, LF 2025 p. 109, lues à l'image (300 dpi) et retrouvées dans la couche
+  texte. Écart déclaré : 2022 (LF 2024), bilan +0,6. Subvention d'exploitation de 2020 : 29,7 (LF 2022),
+  case vide et 29,8 aux autres produits (LF 2024) ; charges financières nettes de signes opposés entre
+  éditions ; dits dans le texte et les légendes. Prose du rapport citée : LF 2022 p. 92, LF 2024 p. 134
+  (avance du Trésor de 199,1 MD pour les vaccins contre la Covid-19), LF 2025 p. 110 (dettes des
+  structures sanitaires prises en charge par l'État). Registre `tbl-ep-registre-pct`, lu au corpus local :
+  décret-loi n° 61-2 (image), décret n° 87-228 (image), lois n° 90-104 et 90-105 (image), décret
+  n° 91-555 (art. 1er à 13, image), arrêtés du 25 octobre 1994, du 4 septembre 1995 et du 25 novembre
+  2020 (monopole d'importation), loi n° 2005-75 (vaccins, couche décalée, image), lois de finances pour
+  2022 (art. 62), 2025 (art. 34, édition arabe) et 2026 (art. 79, édition arabe). Glossaire :
+  `pharmacie-centrale`.
+  **Reste** :
+  - **renvoi au volume « La santé »** : aucun chapitre ne traite des médicaments ni des achats de la
+    Pharmacie centrale au 30 octobre 2026 ; TODO (rédacteur) laissé en tête de section ;
+  - 192 MD de la loi de finances complémentaire pour 2021 (décret-loi n° 2021-3, JORT n° 105 de 2021,
+    **sans couche texte, OCR à faire**) et 200 MD par an des lois de finances pour 2022 et 2023 : texte et
+    ligne budgétaire **non identifiés** ; prêt du Fonds arabe de 26 MD (2022) : ratification non
+    identifiée ;
+  - subventions d'équipement « au profit de la pharmacie centrale » des lois de finances pour 2018 et
+    2019 (repérées dans le miroir iort, **lisibles au corpus**, non lues) face à des transferts nuls dans
+    le rapport : à rapprocher ;
+  - arrêté du 25 novembre 2020 : annexe (p. 2866-2867) **lisible au corpus**, non lue ; décret
+    n° 91-555 : suite au-delà de l'article 13 non repérée ;
+  - textes **dans le corpus local, non lus** : décret et arrêté du 31 mars 1956, lois n° 58-28 et 58-29,
+    arrêté du 18 mars 1958, décret n° 58-149, loi n° 61-24 (ratification), arrêtés de 1963, 1969 et 1981,
+    décrets n° 72-233, 76-732, 99-1886, arrêtés de 1977, 1991 (commission d'achat), 2000 et 2020
+    (conservation des documents), décret gouvernemental n° 2019-1013 ;
+  - volume des ventes (édition française LF 2020, p. 119) non versé ; comptes publiés de
+    l'établissement : **à obtenir**.
 - **Agence foncière industrielle — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
   `#sec-ep-ge-afi`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
   `fig-ep-afi-budget` et `fig-ep-afi-fiches`, tableaux repliés `tbl-ep-afi-fiche-a` et `-b`.
@@ -4356,6 +4417,294 @@ Ce qui reste :
   - page exacte de la ligne de l'agence dans les tableaux des transferts par entreprise (LF 2022 à
     LF 2024) : non relevée ; objet des transferts à confirmer dans l'annexe 8 ;
   - comptes publiés et rapports annuels de l'agence : **à obtenir**.
+- **Office des terres domaniales — section écrite le 29 octobre 2026** (`_offices.qmd`,
+  `#sec-ep-ge-otd`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
+  `fig-ep-otd-budget` et `fig-ep-otd-fiches`, tableaux repliés `tbl-ep-otd-fiche-a` et `-b`.
+  **Fiche du ministère des Finances versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-otd`, code `otd`) :
+  LF 2022 p. 75, LF 2024 p. 112, LF 2025 p. 88, lues à l'image (300 dpi) et retrouvées dans la couche
+  texte. Écarts déclarés : bilan de l'édition LF 2024 (trois exercices), produits d'exploitation de
+  2019 (LF 2022) et de 2021 (LF 2024, LF 2025) ; LF 2022, 2020 et LF 2025, 2023 sous une note.
+  Éditions discordantes sur l'effectif (2018 à 2020) et sur les transferts de 2020 (0,2 puis 8,0 MD) :
+  dites dans le texte et les légendes. Registre `tbl-ep-registre-otd`, lu au corpus local, à l'image :
+  décret-loi n° 61-15, loi n° 61-58, loi n° 62-2, loi n° 73-26, décret n° 2001-82 et loi n° 2004-17
+  (ces deux derniers à couche texte décalée). Commentaires du rapport lus : LF 2021 p. 111-113 (prose
+  française), LF 2024 p. 115 et 165. Glossaire : `otd`.
+  **Reste** :
+  - exercice comptable : année civile en 1961, 1er septembre-31 août en 2001 ; date du changement
+    (décrets n° 73-390 et 78-60, **dans le corpus local, sans couche texte, non lus**) et exercice que
+    désignent les fiches du ministère, à établir ;
+  - effectif : périmètre des chiffres des éditions LF 2022 et LF 2024 (écart de 1 176 agents sur 2020),
+    à éclaircir dans les rapports ; objet des transferts de 2020 à 2022 (annexe 8, à lire) ; tableau de
+    l'édition LF 2023 p. 198 (3,5 ; 3,9 ; 12,9 MD), nature non établie ;
+  - créance abandonnée en 2004 (135,375 MD) : origine non établie ;
+  - textes **dans le corpus local, non lus** : décret n° 64-129 (immeubles), n° 73-262 (retraite du
+    personnel), n° 73-390, 73-431, 78-60, 78-851, 92-2069 (organisation), n° 75-772 (marchés), statuts
+    du personnel et des ouvriers agricoles (n° 74-914 à 99-1855, décret gouvernemental n° 2017-1349),
+    n° 2001-2430 et 2001-2431, n° 84-1036 et 2013-2628 (réquisition), lois n° 75-45 et 82-72 (crédits
+    où l'emprunteur est l'État), lois n° 70-25 et 72-36 (cession des terres domaniales) ; plein texte
+    des lois de finances (garanties, abandons, dotations) non parcouru ;
+  - découvert bancaire de l'Office (LF 2024, tableaux 18 et 19, p. 43-44 : 88,9 et 117,5 MD) : non lu à
+    l'image, non versé ;
+  - grandeurs d'activité des fiches (céréales en quintaux, huile d'olive en tonnes) citées, non versées ;
+    éditions françaises LF 2020 et LF 2021 : comptes dans la prose, non versés ;
+  - comptes publiés et contrat-programme de l'Office : **à obtenir**.
+- **Société tunisienne de banque, Banque de l'habitat, Caisse des prêts et de soutien des
+  collectivités locales — sections écrites le 30 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-stb`, `#sec-ep-ge-bh`, `#sec-ep-ge-cpscl`, en fin de chapitre, à déplacer dans un
+  chapitre « Le secteur financier public » ; intro et « La source » mises à jour). Figures
+  `fig-ep-stb-fiches`, `fig-ep-bh-budget`, `fig-ep-bh-fiches`, `fig-ep-cpscl-budget`,
+  `fig-ep-cpscl-fiches` ; tableaux repliés `tbl-ep-{stb,bh,cpscl}-fiche-a` et `-b` ; nouvelles
+  fonctions `fig_banque`, `table_banque`, `tableau_banque_detail` (figures/grandes_entreprises.py),
+  à rapprocher de celles qu'écrit en parallèle la branche BNA/BFPME/BTS. **Versés le 29 octobre
+  2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-stbbh`) : STB et BH depuis le tableau des banques publiques (LF 2022 p. 39,
+  tableau 21 ; LF 2024 p. 53-54, tableau 26 ; LF 2025 p. 29), mise en page `banques` et codes `bq_`
+  de la branche BNA/BFPME/BTS ; CPSCL depuis le tableau du secteur quasi financier (LF 2022 p. 44 ;
+  LF 2024 p. 63 ; LF 2025 p. 40), codes de la Poste, écarts déclarés (LF 2024, passifs y compris
+  fonds propres ; LF 2025, 2023, bilan à 104,2 près). Les recapitalisations de 2013-2015 restent au
+  chapitre « Restructurer » (renvoi en tête des sections). Registres lus au corpus local :
+  STB — décret du 20 décembre 1956 (océrisation), loi n° 57-15 (image), loi n° 61-64
+  (océrisation), décret-loi n° 81-29 (image), loi n° 92-55 (océrisation), loi n° 2012-17 ; BH —
+  loi n° 73-24 (océrisation), décret n° 74-224 (art. 1er et 2, océrisation), loi n° 89-18
+  (image), loi n° 2007-31, loi n° 2018-8 ; CPSCL — loi n° 2001-56 (couche décalée, décodée), loi
+  n° 2015-19 ; la loi n° 75-37 reste au volume des finances locales (renvoi). Glossaire : `stb`,
+  `bh` (le terme `cpscl` existait).
+  **Reste** :
+  - textes **dans le corpus local, non lus** : loi n° 82-6 (ratification du décret-loi n° 81-29) ;
+    conventions STB-État de 1959 à 1967 (lois n° 59-57, 59-102, 59-104, 59-144, 61-5, 61-34,
+    67-44) ; organigrammes et emplois fonctionnels de la STB (n° 2001-715, 2001-1251, 2007-894)
+    et de la BH (n° 2005-965, 2006-1806) ; rectificatif de la loi n° 73-24, décret n° 74-223 et
+    modificatifs, suite du décret n° 74-224 et décrets n° 76-271 et 76-1000, loi n° 75-83 (LF
+    1976, exonérations de la caisse), lois n° 76-53, 77-63, 79-58, 93-117 (prêts garantis de la
+    caisse), n° 92-34, 2002-70, 2003-72, 2009-78 (BH) ; pour la CPSCL, lois n° 97-78, 2003-19,
+    2003-39, 2005-53 et décrets du personnel, de l'organigramme et des agences régionales ;
+  - **à identifier** : filiation entre la Société tunisienne de banque populaire (décret de 1956) et
+    la STB ; acte de constitution de la STB ; texte de la fusion de 2000 avec la BNDT et la BDET ;
+    date effective de la transformation de la caisse en BH ;
+  - écart entre les 117 MD de garantie mise en jeu (loi n° 2012-17) et les 70,0 MD relevés par la
+    Cour des comptes pour 2012 ; écart entre les parts de l'État dans les dividendes de la BH du
+    tableau des banques (46,87 MD sur 2021-2023) et le tableau des dividendes (46,7 MD) ;
+  - CPSCL : « dette envers les banques » de l'édition LF 2022 à rapprocher de la note de
+    l'édition LF 2025 ; objet des subventions d'investissement ; indicateurs d'activité non versés ;
+  - montants souscrits en application de la loi n° 2015-31 et part de l'État dans le capital des
+    deux banques ; comptes publiés et rapports annuels : **à obtenir**.
+- **BNA, BFPME et BTS — sections écrites le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-bna`, `#sec-ep-ge-bfpme`, `#sec-ep-ge-bts`, en fin de chapitre, à déplacer dans un
+  futur chapitre « Le secteur financier public » ; intro et « La source » du chapitre mises à
+  jour). Figures `fig-ep-bna-fiches`, `fig-ep-bfpme-budget`, `fig-ep-bfpme-fiches`,
+  `fig-ep-bts-fiches` (nouvelle fonction `fig_fiche_banque` et tableau `tableau_fiche_banque`
+  dans `figures/grandes_entreprises.py`, bloc délimité ; un agent parallèle a écrit pour la STB et
+  la BH des fonctions voisines, `fig_banque` et `tableau_banque_detail` : à unifier à la fusion).
+  Tableaux repliés `tbl-ep-<bna|bfpme|bts>-fiche-a` et `-b`. **Tableau des banques publiques versé
+  le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-bnabts`, codes `bna`, `bfpme`, `bts`, mise en page « banques publiques », codes
+  `bq_` communs avec la STB et la BH) : LF 2022 p. 39 (tableau 21), LF 2024 p. 53-54 (tableau 26),
+  LF 2025 p. 30 ; lus à l'image (300 dpi) et retrouvés dans la couche texte. Commentaires du rapport
+  lus pour le capital et la part de l'État (LF 2025 p. 34, 36, 37). La recapitalisation de 2013-2019
+  reste au chapitre « Restructurer », non répétée. Registres `tbl-ep-registre-bna` (lois n° 59-47 et
+  59-107, image ; loi n° 94-30 ; loi de finances pour 2004, art. 49-50 et décret n° 2004-751, couche
+  décalée lue à l'image ; loi n° 2009-27 ; loi de finances pour 2026, art. 89, arabe),
+  `tbl-ep-registre-bfpme` (lois de finances pour 2005, art. 23, et 2009, art. 15 ; pour 2024, art. 31,
+  pour 2025, art. 53, et pour 2026, art. 63, arabe) et `tbl-ep-registre-bts` (loi n° 97-87 ; loi
+  n° 2000-45, image ; lois de finances pour 2015, art. 38, pour 2018, art. 12, et pour 2026, art. 70,
+  arabe). Glossaire : `bna`, `bfpme`, `bts`.
+  **Reste** :
+  - textes **dans le corpus local, non lus** : loi n° 59-65 et décret n° 64-295 (BNA) ; suite de la
+    convention du 1er août 1959 ; décrets d'organigramme et d'emplois fonctionnels des trois banques
+    (n° 2001-982, 2003-1541, 2009-40, 2009-1740, 2008-3923, 2009-1741) ; décret n° 2001-886 (BTS) ;
+    lois de garantie de prêts rétrocédés (BNA : n° 93-94, 95-79, 99-60, 2002-34 ; BFPME : n° 2006-40,
+    2012-5, 2014-53, 2020-24, 2024-39 ; BTS : n° 2001-80) ; loi de finances pour 2024, art. 29 ; pour
+    2025, art. 50-51 ; pour 2026, art. 23, 25, 26, 27 ; décret-loi n° 2022-79, art. 18 ;
+  - loi de finances pour 2016, art. 77 à 79 (BTS, édition arabe) : fascicule **sans couche texte,
+    OCR ou lecture à l'image** ;
+  - fusion de la BNA et de la Banque nationale de développement agricole (loi n° 83-19 pour la
+    seconde) : texte **non identifié** ; statuts de la BFPME (2005) : **à identifier** ;
+  - objet des 22,7 MD de transferts à la BFPME en 2022 (LF 2024, tableau 45) ; part de l'État dans
+    les dividendes de la BNA à recouper avec les recettes du budget ; ligne de crédits de programmes
+    « autofinancement des projets de la BTS » (loi de finances pour 2015, tableau D) à suivre d'année
+    en année ;
+  - statut de la ligne « juin 2020 » de la BFPME (LF 2022) : « non dit » dans la série des fiches,
+    « provisoire » dans celle des effectifs ;
+  - comptes publiés et rapports annuels des trois banques : **à obtenir**.
+- **Agence foncière d'habitation — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-afh`, en fin de chapitre, à déplacer dans un futur chapitre « L'habitat et
+  l'équipement » ; intro, « La source » du chapitre et `index.qmd` mis à jour). Figure
+  `fig-ep-afh-fiches` (pas de figure budget : transferts du budget nuls, l'agence n'est pas dans la
+  série des transferts par entreprise), tableaux repliés `tbl-ep-afh-fiche-a` et `-b`. **Fiche du
+  ministère des Finances versée le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-afh`, code `afh`) : LF 2022 p. 79 (tableau 28 du ministère
+  de l'Équipement), LF 2024 p. 119, LF 2025 p. 93, lues à l'image (300 dpi) et retrouvées dans la
+  couche texte ; aucun écart d'identité ; « autres passifs courants » de deux définitions (LF 2024 :
+  36,9 ; LF 2025 : 491,2 pour 2021). Registre `tbl-ep-registre-afh`, lu au corpus local : loi de
+  finances pour 1974, art. 28 (image), décret n° 74-33 (image, art. 1er à 28), loi n° 87-28 (image),
+  décret gouvernemental n° 2021-327, décret n° 2023-584, arrêté conjoint du 8 avril 2025 ; création
+  par renvoi à la ligne `r-ep-afi-1973`. Glossaire : `afh` passé au statut valide, définition
+  réécrite en FR et AR (partagée avec « Les prestations sociales »), clé `decret-gouv2021-327`
+  ajoutée au `references.json` du volume. Pages citées sans série : transferts nuls (LF 2022 p. 106,
+  LF 2023 p. 201, LF 2024 p. 155), contribution aux ressources propres de l'État (LF 2022 p. 103,
+  LF 2023 p. 198, LF 2024 p. 152), dettes et créances croisées (LF 2024 p. 142 et 146, LF 2025
+  p. 119 et 123), couverture des charges (LF 2024 p. 165), commentaires (LF 2022 p. 83, LF 2024
+  p. 123, LF 2025 p. 98).
+  **Reste** :
+  - textes **dans le corpus local, non lus** : décrets n° 76-313, 76-781, 86-281, 93-60 (fascicules
+    scannés, image) et 2001-986 (couche décalée, lu en passant) modifiant le décret n° 74-33 ; décret
+    n° 74-34 (marchés) ; décrets n° 75-585, 99-2745, 76-685, arrêté du 28 mai 1977 (personnel,
+    retraite) ; décrets n° 2000-2830, 2000-2831, 2017-1048 (emplois fonctionnels, organigramme) ;
+    décrets de zones de préemption, de périmètres d'intervention foncière et de réserves foncières
+    (1974-2026, dont **intitulés arabes** seuls de 2011 à 2026) ; loi n° 73-21 relue pour l'AFH ;
+  - date d'effet du décret n° 2021-327 : 23 mai 2021 ici (dépôt le 18 mai, plus cinq jours), 19 mai
+    2021 au volume « Les prestations sociales » (`r-log-afh-2021`) : **à harmoniser** ;
+  - grandeurs d'activité des fiches (chiffre d'affaires de LF 2022, ventes de lots en hectares de
+    LF 2024) : non versées ;
+  - aucune garantie de l'État à un prêt de l'agence identifiée dans les intitulés de jort_cache.db ;
+  - comptes publiés et rapports annuels de l'agence : **à obtenir** ;
+  - **pour « Les prestations sociales », chapitre « Le logement social » (`#sec-log-operateurs`)** :
+    arrêté de la ministre de l'Équipement et de l'Habitat du 28 janvier 2025, conditions
+    d'attribution des lots destinés à l'habitat individuel par l'AFH (JORT n° 11, p. 236, dépôt le
+    29 janvier 2025, effet le 3 février 2025 ; lu, couche texte) : une seule demande et un seul lot
+    par ménage, classement par ancienneté de la demande (score N/M × 100), actualisation tous les
+    trois ans ; et condition sociale de l'arrêté conjoint du 8 avril 2025 (au moins 50 % des lots
+    réalisés sur les terrains acquis au prix préférentiel réservés aux ménages dont le revenu brut
+    mensuel ne dépasse pas trois fois le salaire minimum), à verser.
+- **Société de promotion des logements sociaux — section écrite le 29 octobre 2026**
+  (`_autres_entreprises.qmd`, `#sec-ep-ge-sprols`, en fin de chapitre, à déplacer dans un chapitre
+  « L'habitat et l'équipement » ; intro, « La source » et TODO final du chapitre mis à jour). Figure
+  `fig-ep-sprols-fiches` seule (aucun transfert du budget : 0 imprimé de 2018 à 2022), tableaux
+  repliés `tbl-ep-sprols-fiche-a` et `-b`. **Fiche du ministère des Finances versée le 29 octobre
+  2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-sprols`, code `sprols`) : LF 2022 p. 79, LF 2024 p. 118, LF 2025 p. 93, lues à
+  l'image (300 dpi) et retrouvées dans la couche texte ; aucun écart déclaré ; LF 2022 imprime
+  l'exercice 2020 « 200 », sans astérisque. Registre `tbl-ep-registre-sprols`, lu au corpus local :
+  loi n° 77-53 (image), décret n° 77-926 (image et OCR de lecture), décret n° 92-1818 (image), loi
+  n° 93-78 et son **rectificatif** (JORT n° 91 de 1993, p. 2005, image : l'article 4 nouveau réserve
+  le capital à la CNSS, à la CNRPS et à la CAVIS), décret n° 2010-3170, décret n° 2012-1224, décret
+  gouvernemental n° 2017-840, décret gouvernemental n° 2020-1034, loi n° 2026-2 ; dates de dépôt
+  lues dans la mention de la dernière page de chaque fascicule. Glossaire : `sprols` (existant).
+  **Glossaire corrigé** : « 14 février 2026 » → « 18 février 2026 » dans `sprols`, `snit`,
+  `location-vente` et `vente-a-temperament` (FR et AR) : dépôt du JORT n° 19 de 2026 le 13 février,
+  plus cinq jours (loi n° 93-64), les lois n° 2026-1 et 2026-2 ne portant pas de clause d'effet.
+  Même correction dans `prestations_sociales/_logement_social.qmd` (§ des opérateurs, lignes
+  `r-log-op-2026-1` et `r-log-op-2026-2`). **À reprendre dans ce chapitre** : registre de la SPROLS
+  daté par la publication brute (`r-log-sprols-decret-1977`, `-1992`, `-1993`, `-2017`) ; dates
+  d'effet calculées dans `tbl-ep-registre-sprols` (20 novembre 1977, 29 octobre 1992, 29 juillet
+  1993, 7 août 2017) ; ligne de 1993 et § des opérateurs (« réservé en 1993 à la CNRPS et à la
+  CAVIS ») à corriger par le rectificatif de novembre 1993 (CNSS, CNRPS et CAVIS).
+  **Reste** :
+  - textes **dans le corpus local, non lus** : décret n° 2005-910 et ses modificatifs antérieurs à
+    2010 (tutelle avant 2010) ; arrêté du 17 avril 2006 (conservation des documents) ; décret
+    n° 80-1504 (personnel), décrets n° 99-1105 et 2015-539 (organigramme), n° 2000-2576 (statut
+    particulier), n° 2007-2983 et 2015-540 (emplois fonctionnels) ; décrets de cession au dinar
+    symbolique n° 2016-145, 2016-146, 2019-484 et 2020-917 (intitulés arabes pour les deux
+    derniers) ; article 30 de la loi n° 2012-1 ;
+  - garanties : aucune identifiée ; bénéficiaire des prêts de l'AFD (lois n° 98-105, 2005-14), du
+    Fonds saoudien (loi n° 2013-42) et du don du Qatar (décret n° 2013-1422) à lire ;
+  - passifs hors fonds propres (215 à 224 MD) bien supérieurs à la dette de l'édition LF 2022 et aux
+    lignes détaillées (52 MD fin 2020) : nature du reste à établir ; dettes et créances envers l'État
+    de fin 2021 (LF 2023 : 9,5 et 0,2 MD) et de fin 2022 (LF 2024 : 0,3 et 10,5 MD), inversion
+    possible ; contribution aux ressources propres, transferts, couverture des charges : cités
+    d'après les pages, non versés dans une série ; annexe 8 : société non trouvée dans la couche
+    texte, à vérifier à l'image ;
+  - grandeurs d'activité des fiches (chiffre d'affaires, ventes de logements) : non versées ;
+- **SNIT — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`, `#sec-ep-ge-snit`, en fin
+  de chapitre, à déplacer dans un chapitre « L'habitat et l'équipement » ; intro et « La source » du
+  chapitre mises à jour). Figure `fig-ep-snit-fiches` (pas de figure budgétaire : transferts nuls),
+  tableaux repliés `tbl-ep-snit-fiche-a` et `-b`. **Fiche du ministère des Finances versée le
+  29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-snit`, code `snit`) : LF 2022 p. 79, LF 2024 p. 119, LF 2025 p. 96, lues à l'image
+  (300 dpi) et retrouvées dans la couche texte. Écart déclaré : 2019 (LF 2022), dette totale
+  inférieure de 0,3 à la somme des créanciers. Lus sur les pages, cités sans série : transferts nuls
+  (LF 2022 p. 106, LF 2023 p. 201, LF 2024 p. 155), contribution aux ressources propres (LF 2022
+  p. 103, LF 2023 p. 198, LF 2024 p. 152 : trois séries qui ne concordent pas), dettes et créances
+  croisées (LF 2024 p. 142 et 146, LF 2025 p. 118-119 et 122-123 : 89,1 et 90,0 MD de dette envers
+  l'État quand la fiche de LF 2022 en donne zéro), couverture des charges (LF 2024 p. 166),
+  commentaire (LF 2025 p. 102). Registre `tbl-ep-registre-snit`, lu au corpus local : loi n° 57-19
+  et statut (OCR relu à l'image), lois n° 58-47 (image), 59-58 (OCR relu), 61-57 et son rectificatif
+  (OCR), 78-28 (OCR), loi de finances pour 1985 (art. 65, OCR ; jort_cache porte bien p. 2961),
+  décret n° 92-2235 (OCR, p. 63), décret n° 2025-204, loi de finances pour 2026 (art. 21, édition
+  arabe), loi n° 2026-1. Clés `loi57-19` et `loi2026-1` reprises du volume des prestations sociales
+  (même texte ; URL française ajoutée à `loi2026-1`). Glossaire : `snit` (entrée existante).
+  **Reste** :
+  - **date d'effet de la loi n° 2026-1 à corriger hors de ce volume** : dépôt au gouvernorat de
+    Tunis le 13 février 2026, effet le 18 février 2026 (cinq jours, jour du dépôt non compté) ; le
+    volume des prestations sociales (`_logement_social.qmd`, `r-log-op-2026-1`) et la définition
+    `snit` du glossaire portent le 14 février ;
+  - textes **dans le corpus local, non lus** : loi n° 57-22 (Compagnie immobilière de Tunisie) ;
+    lois n° 59-64 et 59-85 (conventions de 1959) ; décret-loi n° 61-7 et loi n° 61-29 (Caisse
+    mutuelle de crédit immobilier) ; arrêtés de 1959 et 1961 (seuil des transactions) ; décrets
+    n° 66-389, 67-119, 69-160, 78-642, 79-313, 85-790 (logements, sociétés d'HBM confiées) ;
+    personnel et organisation (décret n° 74-866, arrêté du 24 février 1979, décrets n° 2000-2493,
+    2009-13, 2010-834, 2010-1322) ; textes de création des sociétés régionales (Nord, Centre, Sud) ;
+    décrets d'expropriation (1962-1984) ; autres cessions au dinar symbolique (2019-2026, dont
+    n° 2025-205 et 2025-206) ; décret d'application de l'article 21 de la loi de finances pour 2026 ;
+  - grandeurs d'activité des fiches (chiffre d'affaires, logements réalisés et vendus) : non
+    versées ; la colonne « logements réalisés » de LF 2022 ne recoupe pas celles de LF 2024 ;
+- **Agence de réhabilitation et de rénovation urbaine (ARRU) — section écrite le 29 octobre 2026**
+  (`_autres_entreprises.qmd`, `#sec-ep-ge-arru`, en fin de chapitre, à déplacer dans un futur
+  chapitre « L'habitat et l'équipement » ; intro et « La source » du chapitre mises à jour). Figure
+  `fig-ep-arru-fiches` seule (l'agence n'est pas dans la série des transferts par entreprise),
+  tableaux repliés `tbl-ep-arru-fiche-a` et `-b`. **Fiche versée le 29 octobre 2026** dans
+  `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche `donnees/fiche-arru`, code
+  `arru`) : LF 2022 p. 80, LF 2024 p. 121, LF 2025 p. 96, lues à l'image (300 dpi) et retrouvées
+  dans la couche texte ; aucun écart d'identité ; 2023 dit réalisé par l'édition LF 2025. Registre
+  `tbl-ep-registre-arru`, lu au corpus local : loi n° 81-69 (image), décret n° 81-1876 (image,
+  fascicule à double date, effet en fourchette), loi de finances complémentaire pour 2012
+  (art. 27 à 31, extrait français local), décret gouvernemental n° 2019-487. Glossaire : `arru`.
+  **Reste** :
+  - textes **dans le corpus local, non lus** : décret n° 2002-536 (sans couche texte, image) ;
+    décrets n° 84-645, 99-188, 2000-1231, 2001-1401, 2001-1402, 2015-538 ; arrêté du 20 avril
+    1985 ; décrets de périmètres d'intervention et d'expropriation ; loi n° 93-53 (effet sur
+    l'article 11 de la loi n° 81-69) ; conventions de prêt de l'AFD et de l'UE pour les programmes
+    de réhabilitation des quartiers populaires (prêts à l'État ; rôle de l'agence à établir) ;
+  - date de dépôt au gouvernorat des JORT n° 39 de 2012 et n° 45-46 de 2019 (dates d'effet données
+    « au plus tôt ») : **édition arabe à lire** ;
+  - composition du total des passifs (1 630 à 1 776 MD, moins de 350 MD détaillés) et transferts du
+    budget à l'agence (tableaux par entreprise, annexe 8) : **à établir** ; grandeurs d'activité
+    (projets délégués) citées d'après les pages, non versées ;
+  - comptes publiés et rapports annuels de l'agence : **à obtenir**.
+- **Société générale d'entreprises de matériel et de travaux (SOGEMT) — section écrite le 29 octobre
+  2026** (`_autres_entreprises.qmd`, `#sec-ep-ge-sogemt`, en fin de chapitre, même destination que
+  l'ARRU). Figures `fig-ep-sogemt-budget` et `fig-ep-sogemt-fiches`, tableaux repliés
+  `tbl-ep-sogemt-fiche-a` et `-b`. **Fiche versée le 29 octobre 2026** (même branche, code
+  `sogemt`) : LF 2022 p. 79, LF 2024 p. 118, LF 2025 p. 94 ; écarts déclarés : dette totale de
+  l'édition LF 2022 supérieure à la somme des créanciers (44,4 ; 53,8 ; 48,1). Effectifs
+  discordants entre éditions (212 agents en 2020 dans l'édition LF 2022, 1 194 dans l'édition
+  LF 2024, à charges de personnel égales ; 2021 : 1 062 et 1 194), dits dans le texte et les
+  légendes. Registre `tbl-ep-registre-sogemt` : décret n° 2007-1330 (marchés publics), loi de
+  finances pour 2024 (art. 43, p. 3478, extrait français local). Glossaire : `sogemt`.
+  **Reste** :
+  - texte de création, forme juridique, capital et part de l'État : **non identifiés** dans
+    jort_cache.db ; lois n° 70-29 (G.E.T., lue) et 71-2 (Société de matériel et de travaux publics,
+    corpus local, non lue) : continuité avec la SOGEMT à établir ; décret n° 89-876 et
+    modificatifs, décrets n° 2010-90 et 2010-3170 (tutelle) : corpus local, non lus ;
+  - effectif juste de 2018 à 2021 : **à établir** (comptes de la société, éditions françaises
+    LF 2020 et LF 2021) ; chiffre d'affaires de la colonne d'activité non versé ;
+  - date de dépôt au gouvernorat du JORT n° 46 de 2007 : **édition arabe à lire** ;
+- **Tunisie Trade Net — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-ttn`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figure
+  `fig-ep-ttn-fiches` (pas de figure du budget : la société n'est dans aucun tableau des transferts
+  versé), tableaux repliés `tbl-ep-ttn-fiche-a` et `-b`. **Fiche du ministère des Finances versée
+  le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-ttn`, code `ttn`) : LF 2022 p. 50, LF 2024 p. 74, LF 2025 p. 50, lues à l'image
+  (300 dpi) et retrouvées dans la couche texte. Édition LF 2024 : « total des passifs » égal au
+  total des actifs (écart déclaré ; la case de 2020 n'est pas tracée, `PASSIFS_AVEC_FONDS_PROPRES`).
+  Capital et actionnariat d'après l'édition française LF 2021 (p. 13-14). Registre
+  `tbl-ep-registre-ttn`, lu au corpus local : décrets n° 2006-1807, 2006-1808 et 2009-3511.
+  Glossaire : `ttn`. Renvoi en tête de section vers « Les droits de douane » (`#sec-dd`).
+  **Reste** :
+  - rôle de la société dans le système intégré de traitement automatisé des formalités du
+    commerce extérieur : **aucun texte lu ne la nomme** ; décret n° 97-2470 (lu, couche texte) et
+    arrêté conjoint du 20 avril 2001 (lu, couche décalée décodée) parlent d'un « gestionnaire du
+    centre serveur » sans le nommer ; décret n° 2006-2620 (lu) ; texte de création et statuts :
+    **non identifiés** dans jort_cache.db (intitulés français et arabes) ;
+  - volume « La fiscalité », chapitre « Les droits de douane » : la liasse unique et ses textes
+    fiscaux n'y sont pas — loi de finances pour 2000, art. 71 (timbre, lu) et loi de finances pour
+    2003, art. 67 (paiement électronique, lu) ; à y verser, pas au volume des entreprises publiques ;
+  - schéma et annexe de l'organigramme de 2006 : dans le corpus local, **non lus** ;
+  - grandeur d'activité des fiches (dossiers, documents traités) citée en TODO, non versée ;
+    édition LF 2023 (p. 86) non versée ; tableaux 32 et 34 de l'édition LF 2021 (p. 152 et 157)
+    lus, non versés ; identité des « autres actionnaires publics » : **non établie** ;
+  - comptes publiés et rapports annuels de la société : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche

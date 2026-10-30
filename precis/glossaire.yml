@@ -7347,7 +7347,7 @@ entries:
         sont en vigueur depuis le 1er septembre 1957. Elle réalise des
         opérations immobilières pour son compte, celui de l'État ou des
         collectivités, gère des immeubles et conduit des programmes de
-        construction. Depuis le 14 février 2026, elle et ses filiales peuvent
+        construction. Depuis le 18 février 2026, elle et ses filiales peuvent
         vendre les logements sociaux financés par le fonds de promotion du
         logement pour les salariés par paiement échelonné ou en location-vente.
       synonymes: []
@@ -7357,7 +7357,7 @@ entries:
         مؤسسة ذات صبغة تجارية تخضع لأحكام شركات المساهمة، تساهم الدولة برأس
         مالها، ودخل نظامها الأساسي حيّز التنفيذ بداية من غرّة سبتمبر 1957. تنجز
         عمليات عقارية لحسابها أو لحساب الدولة أو الجماعات، وتتصرّف في عقارات،
-        وتنجز برامج بناء. ومنذ 14 فيفري 2026، يمكنها هي وفروعها بيع المساكن
+        وتنجز برامج بناء. ومنذ 18 فيفري 2026، يمكنها هي وفروعها بيع المساكن
         الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن لفائدة الأجراء
         بالتقسيط أو بمقتضى عقود الكراء المملّك.
       synonymes: []
@@ -7379,7 +7379,7 @@ entries:
         la Caisse d'assurance vieillesse, invalidité et survivants, qui ont
         apporté son capital initial, et loue des logements aux assurés sociaux.
         Placée à l'origine sous la tutelle des Affaires sociales, elle relève
-        de l'Équipement depuis 2010. Depuis le 14 février 2026, elle peut
+        de l'Équipement depuis 2010. Depuis le 18 février 2026, elle peut
         vendre les logements sociaux financés par le fonds de promotion du
         logement pour les salariés par paiement échelonné ou en location-vente.
       synonymes: []
@@ -7392,35 +7392,37 @@ entries:
         ولصندوق تأمين الشيخوخة والعجز والباقين بقيد الحياة بعد وفاة المنتفع
         بجراية وتتصرّف فيها، وقد ساهم الصندوقان في رأس مالها الأصلي، وتؤجّر
         مساكن للمضمونين الاجتماعيين. كانت في الأصل تحت إشراف وزارة الشؤون
-        الاجتماعية، وأصبحت منذ 2010 تحت إشراف وزارة التجهيز. ومنذ 14 فيفري 2026،
+        الاجتماعية، وأصبحت منذ 2010 تحت إشراف وزارة التجهيز. ومنذ 18 فيفري 2026،
         يمكنها بيع المساكن الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن
         لفائدة الأجراء بالتقسيط أو بمقتضى عقود الكراء المملّك.
       synonymes: []
 
   - id: afh
     acronyme: AFH
-    statut: provisoire  # statut et missions (décrets n° 74-33 et 2021-327, non versés) non lus : la définition se borne aux rôles que donnent la LFC 2012 et la LF 2026 ; AR relevé dans les intitulés AR du JORT, sans clé pour l'éd. AR
-    references: [lfc-2012, decret2026-123]
-    source_definition: {ref: lf-2026, locator: "art. 21"}
-    voir_aussi: [snit, sprols, fonds-foprolos]
+    statut: valide  # AR : intitulé « الوكالة العقارية للسكنى » de la fiche de l'agence (rapport sur les entreprises publiques, LF 2025, p. 93) et des intitulés AR du JORT
+    references: [decret-gouv2021-327, lfc-2012, lf-2026, minfin-ep-2025]
+    source_definition: {ref: decret-gouv2021-327, locator: "art. 1er et 2"}
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 93"}
+    voir_aussi: [snit, sprols, fonds-foprolos, afi]
     fr:
       terme: Agence foncière d'habitation
       definition: >
-        Organisme public du logement qui compte parmi les réalisateurs du
-        programme spécifique pour le logement social créé en 2012. Depuis le
-        1er janvier 2026, le fonds de promotion du logement pour les salariés
-        contribue au financement des logements et des lots sociaux qu'elle
-        réalise, jusqu'à la totalité du coût et sans intérêt depuis le
-        20 juin 2026.
-      synonymes: []
+        Établissement public créé en 1973, à caractère non administratif depuis 2021, qui
+        acquiert, aménage et cède des terrains destinés à l'habitat et exerce la promotion
+        immobilière, sous la tutelle du ministère chargé de l'habitat. Elle compte parmi
+        les réalisateurs du programme spécifique pour le logement social créé en 2012 ;
+        depuis le 1er janvier 2026, le fonds de promotion du logement pour les salariés
+        contribue au financement des logements et des lots sociaux qu'elle réalise.
+      synonymes: [Agence foncière de l'habitation]
     ar:
       terme: الوكالة العقارية للسكنى
       definition: >
-        هيكل عمومي في مجال السكن، من بين الهياكل المكلّفة بإنجاز البرنامج
-        الخصوصي للسكن الاجتماعي المحدث سنة 2012. ومنذ غرّة جانفي 2026، يساهم
-        صندوق النهوض بالمسكن لفائدة الأجراء في تمويل المساكن والمقاسم
-        الاجتماعية التي تنجزها، بنسبة قد تبلغ كامل الكلفة ودون فائدة منذ
-        20 جوان 2026.
+        مؤسسة عمومية أُحدثت سنة 1973، وأصبحت منذ سنة 2021 مؤسسة عمومية لا تكتسي صبغة
+        إدارية، تتولّى اقتناء الأراضي المعدّة للسكن وتهيئتها والتفويت فيها وتمارس نشاط
+        الباعث العقاري، تحت إشراف الوزارة المكلّفة بالإسكان. وهي من بين الهياكل المكلّفة
+        بإنجاز البرنامج الخصوصي للسكن الاجتماعي المحدث سنة 2012؛ ومنذ غرّة جانفي 2026،
+        يساهم صندوق النهوض بالمسكن لفائدة الأجراء في تمويل المساكن والمقاسم الاجتماعية
+        التي تنجزها.
       synonymes: []
 
   - id: fnah
@@ -7597,7 +7599,7 @@ entries:
       terme: Location-vente
       definition: >
         Mode de cession d'un logement par contrat de location-vente. Depuis le
-        14 février 2026, la SNIT et ses filiales et la SPROLS peuvent céder
+        18 février 2026, la SNIT et ses filiales et la SPROLS peuvent céder
         ainsi les logements sociaux financés par le fonds de promotion du
         logement pour les salariés ; depuis le 20 juin 2026, le prix plafond
         au mètre carré des logements de promoteur ne s'applique pas à ces
@@ -7607,7 +7609,7 @@ entries:
     ar:
       terme: الكراء المملّك
       definition: >
-        طريقة لإحالة مسكن بمقتضى عقد كراء مملّك. ومنذ 14 فيفري 2026، يمكن
+        طريقة لإحالة مسكن بمقتضى عقد كراء مملّك. ومنذ 18 فيفري 2026، يمكن
         للشركة الوطنية العقارية للبلاد التونسية وفروعها ولشركة النهوض بالمساكن
         الاجتماعية إحالة المساكن الاجتماعية المموّلة من موارد صندوق النهوض
         بالمسكن لفائدة الأجراء على هذا النحو؛ ومنذ 20 جوان 2026، لا ينطبق السعر
@@ -7628,7 +7630,7 @@ entries:
       definition: >
         Vente dont le prix est payé par versements échelonnés ; les lois
         n° 2026-1 et 2026-2 du 13 février 2026 parlent de vente « par paiement
-        échelonné ». Depuis le 14 février 2026, la SNIT et ses filiales et la
+        échelonné ». Depuis le 18 février 2026, la SNIT et ses filiales et la
         SPROLS peuvent vendre ainsi les logements sociaux financés par le fonds
         de promotion du logement pour les salariés ; depuis le 20 juin 2026, le
         prix plafond au mètre carré des logements de promoteur ne s'applique
@@ -7639,7 +7641,7 @@ entries:
     ar:
       terme: البيع بالتقسيط
       definition: >
-        بيع يُدفع ثمنه على أقساط. ومنذ 14 فيفري 2026، يمكن للشركة الوطنية
+        بيع يُدفع ثمنه على أقساط. ومنذ 18 فيفري 2026، يمكن للشركة الوطنية
         العقارية للبلاد التونسية وفروعها ولشركة النهوض بالمساكن الاجتماعية بيع
         المساكن الاجتماعية المموّلة من موارد صندوق النهوض بالمسكن لفائدة الأجراء
         على هذا النحو؛ ومنذ 20 جوان 2026، لا ينطبق السعر الأقصى للمتر المربع
@@ -18534,6 +18536,104 @@ entries:
         للباعثين. ومنذ سنة 2022، يمكن للدولة أن تبيعها بالدينار الرمزي عقارات من ملكها الخاص
         ذات صبغة صناعية.
       synonymes: []
+
+  - id: stb
+    acronyme: STB
+    statut: valide
+    references: [loi57-15-stb, loi2012-17-stb, minfin-ep-2025]
+    source_definition: {ref: loi57-15-stb, locator: "art. 1er"}
+    # AR : intitulé « الشركة التونسية للبنك » du tableau des banques publiques du rapport sur les
+    # entreprises publiques, édition LF 2025, p. 29.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 29"}
+    voir_aussi: [bh]
+    fr:
+      terme: Société tunisienne de banque
+      definition: >
+        Banque publique au capital de laquelle l'État souscrit depuis 1957. En 2012, l'État a
+        mis en jeu sa garantie pour des emprunts extérieurs de la banque et inscrit le montant
+        dans ses capitaux propres comme dotation non remboursable ; de 2013 à 2015, il a
+        souscrit à l'augmentation de son capital.
+      synonymes: [STB]
+    ar:
+      terme: الشركة التونسية للبنك
+      definition: >
+        بنك عمومي تكتتب الدولة في رأس ماله منذ سنة 1957. وفي سنة 2012، فعّلت الدولة ضمانها
+        لقروض خارجية للبنك وأدرجت المبلغ في أمواله الذاتية بعنوان مخصّصات غير قابلة للاسترجاع،
+        واكتتبت من 2013 إلى 2015 في الترفيع في رأس ماله.
+      synonymes: []
+
+  - id: bh
+    acronyme: BH
+    statut: valide
+    references: [loi73-24-cnel, loi89-18-bh, minfin-ep-2025]
+    source_definition: {ref: loi89-18-bh, locator: "art. 1er à 3"}
+    # AR : intitulé « بنك الإسكان » du tableau des banques publiques du rapport sur les entreprises
+    # publiques, édition LF 2022, p. 39 (« BH بنك » dans l'édition LF 2025, p. 29).
+    source_traduction: {ref: minfin-ep-2022, locator: "p. 39"}
+    voir_aussi: [stb]
+    fr:
+      terme: Banque de l'habitat
+      definition: >
+        Banque publique issue en 1989 de la transformation de la Caisse nationale
+        d'épargne-logement, établissement public créé en 1973 ; elle gère le régime
+        d'épargne-logement par convention avec le ministère des Finances.
+      synonymes: [BH]
+    ar:
+      terme: بنك الإسكان
+      definition: >
+        بنك عمومي نتج سنة 1989 عن تحويل الصندوق القومي للادخار السكني، وهو مؤسسة عمومية
+        أُحدثت سنة 1973، ويتولّى التصرّف في نظام الادخار السكني بمقتضى اتفاقية مع وزارة
+        المالية.
+      synonymes: [BH بنك]
+  - id: arru
+    acronyme: ARRU
+    statut: valide
+    references: [loi81-69-arru, decret81-1876-arru, minfin-ep-2025]
+    source_definition: {ref: loi81-69-arru, locator: "art. 1er"}
+    # AR : intitulé « وكالة التهذيب والتجديد العمراني » de la fiche de l'agence dans le rapport
+    # sur les entreprises publiques, édition LF 2025, p. 96.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 96"}
+    fr:
+      terme: Agence de réhabilitation et de rénovation urbaine
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1981 pour les
+        opérations de réhabilitation et de rénovation urbaine : dans des périmètres fixés par
+        décret, il acquiert les terrains, réalise les équipements de base et collectifs,
+        restaure ou rénove les immeubles, construit des logements ou cède les terrains aménagés
+        aux promoteurs.
+      synonymes: []
+    ar:
+      terme: وكالة التهذيب والتجديد العمراني
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1981 للقيام بعمليات التهذيب والتجديد
+        العمراني: تقتني، داخل مناطق تدخّل تُضبط بأمر، الأراضي وتنجز التجهيزات الأساسية
+        والجماعية وترمّم البنايات أو تجدّدها وتبني المساكن أو تفوّت في الأراضي المهيّأة
+        للباعثين.
+      synonymes: []
+  - id: sogemt
+    acronyme: SOGEMT
+    statut: valide
+    references: [lf-2024, decret2007-1330-sogemt, minfin-ep-2024, minfin-ep-2025]
+    source_definition: {ref: minfin-ep-2024, locator: "p. 118, tableau 33"}
+    # AR : intitulé « الشركة العامة للمقاولات والمعدات والأشغال » de la loi de finances pour
+    # 2024 (art. 43) et de l'édition LF 2024 du rapport ; l'édition LF 2025, p. 94, écrit
+    # « الشركة العامة للمعدات والمقاولات والأشغال ».
+    source_traduction: {ref: lf-2024, locator: "art. 43"}
+    fr:
+      terme: Société générale d'entreprises de matériel et de travaux
+      definition: >
+        Entreprise publique de travaux sous la tutelle du ministère de l'Équipement, dont les
+        commandes de fournitures échappent depuis 2007 à la réglementation des marchés
+        publics. La loi de finances pour 2024 convertit en participation de l'État à son
+        capital le principal de ses dettes fiscales.
+      synonymes: []
+    ar:
+      terme: الشركة العامة للمقاولات والمعدات والأشغال
+      definition: >
+        منشأة عمومية للأشغال تحت إشراف وزارة التجهيز، لا تخضع طلباتها من التزوّدات منذ سنة
+        2007 لتراتيب الصفقات العمومية. ويحوّل قانون المالية لسنة 2024 أصل ديونها الجبائية إلى
+        مساهمة للدولة في رأس مالها.
+      synonymes: []
   - id: tunisie-telecom
     statut: valide
     references: [loi95-36-tt, loi2004-30, minfin-ep-2025]
@@ -18696,6 +18796,30 @@ entries:
         ضبط قرار صادر سنة 1989 قائمتها.
       synonymes: []
       synonymes: []
+  - id: pharmacie-centrale
+    acronyme: PCT
+    statut: valide
+    references: [dl61-2-pct, loi90-105-pct, arrete2020-11-25-pct, minfin-ep-2025]
+    source_definition: {ref: loi90-105-pct, locator: "art. 1er et 2"}
+    # AR : intitulé « الصيدلية المركزية للبلاد التونسية » de la fiche de l'établissement dans le
+    # rapport sur les entreprises publiques, édition LF 2025, p. 109.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 109"}
+    voir_aussi: [office-commerce]
+    fr:
+      terme: Pharmacie centrale de Tunisie
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1961, sous la tutelle
+        du ministère de la santé. Il a le monopole de l'importation des médicaments et des
+        produits qu'un arrêté conjoint énumère, et ravitaille les formations sanitaires
+        publiques, les répartiteurs et les officines.
+      synonymes: [Pharmacie centrale]
+    ar:
+      terme: الصيدلية المركزية للبلاد التونسية
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1961 تحت إشراف وزارة الصحة. تحتكر
+        توريد الأدوية والمنتجات التي يضبطها قرار مشترك، وتتولّى تزويد الهياكل الصحية
+        العمومية والموزعين بالجملة والصيدليات.
+      synonymes: [الصيدلية المركزية]
   - id: ctf
     acronyme: CTF
     statut: valide
@@ -18920,4 +19044,168 @@ entries:
       definition: >
         منشأة عمومية تنتج عجين الحلفاء والورق. اكتتبت الدولة في الزيادة في رأس مالها سنتي
         1984 و1985، ثم سنة 1988 في إطار تطهيرها.
+      synonymes: []
+  - id: regie-alcools
+    acronyme: null
+    statut: valide
+    references: [loi74-101-lf1975, decret88-68-regie-alcools, minfin-ep-2025]
+    source_definition: {ref: loi74-101-lf1975, locator: "art. 43 et 44"}
+    # AR : intitulé « وكالة الكحول » de la fiche de la Régie dans le rapport sur les entreprises
+    # publiques, édition LF 2025, p. 49, et du décret n° 88-68 au miroir iort.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 49"}
+    voir_aussi: [rnta, mtk]
+    fr:
+      terme: Régie des alcools
+      definition: >
+        Établissement public à caractère industriel et commercial créé par la loi de finances
+        pour 1975, qui exploite au profit de l'État le monopole des alcools. Il est placé sous la
+        tutelle du ministère des Finances.
+      synonymes: []
+    ar:
+      terme: وكالة الكحول
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت بقانون المالية لسنة 1975، تستغلّ لفائدة
+        الدولة احتكار الكحول. وهي تحت إشراف وزارة المالية.
+      synonymes: []
+  - id: mtk
+    acronyme: MTK
+    statut: valide
+    references: [loi81-14-mtk, decret81-526-mtk, minfin-ep-2025]
+    source_definition: {ref: loi81-14-mtk, locator: "art. 1er et 2"}
+    # AR : intitulé « مصنع التبغ بالقيروان » de la fiche de la Manufacture dans le rapport sur
+    # les entreprises publiques, édition LF 2025, p. 51, et de la loi n° 81-14 au miroir iort.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 51"}
+    voir_aussi: [rnta, regie-alcools]
+    fr:
+      terme: Manufacture des tabacs de Kairouan
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1981, qui exploite au
+        profit de l'État, au même titre que la Régie nationale des tabacs et des allumettes, le
+        monopole fiscal des tabacs, des allumettes et des cartes à jouer.
+      synonymes: [MTK]
+    ar:
+      terme: مصنع التبغ بالقيروان
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1981، تستغلّ لفائدة الدولة، على غرار
+        الوكالة الوطنية للتبغ والوقيد، الاحتكار الجبائي للتبغ والوقيد وأوراق اللعب.
+  - id: otd
+    acronyme: OTD
+    statut: valide
+    references: [dl61-15-otd, loi73-26-otd, decret2001-82-otd, loi2004-17-otd, minfin-ep-2025]
+    source_definition: {ref: dl61-15-otd, locator: "art. 1er à 4"}
+    # AR : intitulé « ديوان الأراضي الدولية » de la fiche de l'Office dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 88.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 88"}
+    voir_aussi: [office-cereales]
+    fr:
+      terme: Office des terres domaniales
+      definition: >
+        Établissement public créé en 1961, réputé commerçant, qui gère et met en valeur les
+        terres agricoles du domaine de l'État que celui-ci lui affecte, au moyen de complexes
+        agricoles et d'unités industrielles et alimentaires. En 2004, l'État abandonne
+        135,4 MD de ses créances sur l'Office.
+      synonymes: []
+    ar:
+      terme: ديوان الأراضي الدولية
+      definition: >
+        مؤسسة عمومية أُحدثت سنة 1961، تُعتبر تاجرة، تتولّى التصرّف في الأراضي الفلاحية الدولية
+        التي تخصّصها لها الدولة وإحياءها، عبر مركّبات فلاحية ووحدات صناعية وغذائية. سنة 2004،
+        تخلّت الدولة عن 135,4 م د من مستحقاتها على الديوان.
+  - id: bna
+    acronyme: BNA
+    statut: valide
+    references: [loi59-47-bna, loi94-30-bna, lf-2026, minfin-ep-2025]
+    source_definition: {ref: minfin-ep-2025, locator: "p. 34"}
+    # AR : intitulé « البنك الوطني الفلاحي » du tableau des banques publiques et du commentaire
+    # de la banque dans le rapport sur les entreprises publiques, édition LF 2025, p. 30 et 34.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 30 et 34"}
+    voir_aussi: [bfpme, bts]
+    fr:
+      terme: Banque nationale agricole
+      definition: >
+        Société anonyme bancaire créée en 1959, sous la tutelle du ministère des Finances, dont
+        l'État et les autres actionnaires publics détiennent 50,23 % du capital selon le rapport
+        sur les entreprises publiques joint à la loi de finances pour 2025. Elle
+        gère des crédits des comptes spéciaux agricoles de l'État et, depuis 2026, consacre au
+        moins 30 % de ses financements à l'investissement aux filières de production agricole.
+      synonymes: []
+    ar:
+      terme: البنك الوطني الفلاحي
+      definition: >
+        شركة خفية الاسم بنكية أُحدثت سنة 1959 وتخضع لإشراف وزارة المالية، وتساهم الدولة وبقية
+        المساهمين العموميين في رأس مالها بنسبة 50,23 % حسب التقرير حول المنشآت العمومية الملحق بقانون المالية لسنة 2025. يتصرّف في قروض الحسابات الخاصة
+        الفلاحية للدولة، ويخصّص منذ سنة 2026 نسبة لا تقل عن 30 % من تمويلاته الموجهة للاستثمار
+        لفائدة منظومات الإنتاج الفلاحي.
+      synonymes: []
+  - id: bfpme
+    acronyme: BFPME
+    statut: valide
+    references: [loi2004-90-lf2005, lf-2024, minfin-ep-2025]
+    source_definition: {ref: minfin-ep-2025, locator: "p. 36"}
+    # AR : intitulé « بنك تمويل المؤسسات الصغرى والمتوسطة » du rapport sur les entreprises
+    # publiques, édition LF 2025, p. 30 et 36.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 30 et 36"}
+    voir_aussi: [bna, bts]
+    fr:
+      terme: Banque de financement des petites et moyennes entreprises
+      definition: >
+        Société anonyme bancaire créée en 2005, sous la tutelle du ministère des Finances, dont
+        l'État et les autres actionnaires publics détiennent tout le capital. Elle finance les
+        petites et moyennes entreprises ; l'État a souscrit à son capital en 2005, en 2009 et en
+        2024.
+      synonymes: []
+    ar:
+      terme: بنك تمويل المؤسسات الصغرى والمتوسطة
+      definition: >
+        شركة خفية الاسم بنكية تأسست سنة 2005 وتخضع لإشراف وزارة المالية، وتساهم الدولة وبقية
+        المساهمين العموميين في كامل رأس مالها. يموّل المؤسسات الصغرى والمتوسطة، واكتتبت الدولة
+        في رأس ماله سنوات 2005 و2009 و2024.
+      synonymes: []
+  - id: bts
+    acronyme: BTS
+    statut: valide
+    references: [loi97-87-bts, loi2000-45-bts, lf-2018, minfin-ep-2025]
+    source_definition: {ref: minfin-ep-2025, locator: "p. 37"}
+    # AR : intitulé « البنك التونسي للتضامن » du rapport sur les entreprises publiques, édition
+    # LF 2025, p. 30 et 37.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 30 et 37"}
+    voir_aussi: [bna, bfpme]
+    fr:
+      terme: Banque tunisienne de solidarité
+      definition: >
+        Société anonyme bancaire créée en 1997, sous la tutelle du ministère des Finances, dont
+        l'État et les autres actionnaires publics détiennent 69,26 % du capital selon le rapport
+        sur les entreprises publiques joint à la loi de finances pour 2025. Banque
+        généraliste, elle finance surtout les petits projets et les associations de microcrédit ;
+        une partie de son capital vient de dotations du Fonds de solidarité nationale converties
+        en actions.
+      synonymes: []
+    ar:
+      terme: البنك التونسي للتضامن
+      definition: >
+        شركة خفية الاسم بنكية أُحدثت سنة 1997 وتخضع لإشراف وزارة المالية، وتساهم الدولة وبقية
+        المساهمين العموميين في رأس مالها بنسبة 69,26 % حسب التقرير حول المنشآت العمومية الملحق بقانون المالية لسنة 2025. بنك شمولي يختص في تمويل
+        المشاريع الصغرى وجمعيات القروض الصغيرة، وجاء جزء من رأس ماله من تحويل اعتمادات صندوق
+        التضامن الوطني إلى أسهم.
+  - id: ttn
+    acronyme: TTN
+    statut: valide
+    references: [decret2006-1807-ttn, decret2009-3511-ttn, minfin-ep, minfin-ep-2025]
+    source_definition: {ref: minfin-ep, locator: "p. 13-14"}
+    # AR : intitulé « شركة شبكة تونس للتجارة » de la fiche de la société dans le rapport sur les
+    # entreprises publiques, édition LF 2025, p. 50.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 50"}
+    fr:
+      terme: Tunisie Trade Net
+      definition: >
+        Société anonyme sous la tutelle du ministère des Finances, au capital de 2 MD, détenu à
+        85,25 % par des actionnaires publics autres que l'État et sans participation directe de
+        celui-ci. Son organigramme et ses emplois fonctionnels sont fixés par décret depuis 2006.
+      synonymes: [Tunisie TradeNet]
+    ar:
+      terme: شركة شبكة تونس للتجارة
+      definition: >
+        شركة خفية الاسم تحت إشراف وزارة المالية، رأس مالها 2 م د، تعود نسبة 85,25 % منه إلى
+        مساهمين عموميين غير الدولة، ولا تساهم فيه الدولة مباشرة. يُضبط هيكلها التنظيمي وخططها
+        الوظيفية بأمر منذ سنة 2006.
       synonymes: []

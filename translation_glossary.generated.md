@@ -18,6 +18,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Administrations publiques | الإدارات العمومية |  |
 | Admission temporaire | القبول المؤقت |  |
 | Adoul | عدل إشهاد |  |
+| Agence de réhabilitation et de rénovation urbaine | وكالة التهذيب والتجديد العمراني | ARRU |
 | Agence foncière d'habitation | الوكالة العقارية للسكنى | AFH |
 | Agence foncière industrielle | الوكالة العقارية الصناعية | AFI |
 | Agence nationale pour l'emploi et le travail indépendant | الوكالة الوطنية للتشغيل والعمل المستقل | ANETI |
@@ -63,6 +64,10 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Ayant droit | ذو الحقّ |  |
 | Baccalauréat | البكالوريا |  |
 | Baccalauréat professionnel | البكالوريا المهنية |  |
+| Banque de financement des petites et moyennes entreprises | بنك تمويل المؤسسات الصغرى والمتوسطة | BFPME |
+| Banque de l'habitat | بنك الإسكان | BH |
+| Banque nationale agricole | البنك الوطني الفلاحي | BNA |
+| Banque tunisienne de solidarité | البنك التونسي للتضامن | BTS |
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
 | Base caisse | أساس الخزينة |  |
 | Bénéfice imposable | الربح الخاضع للضريبة |  |
@@ -411,6 +416,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Majoration pour salaire unique | منحة الأجر الوحيد |  |
 | Malade payant | المريض الخاضع لدفع مقابل |  |
 | Maladie professionnelle | مرض مهني |  |
+| Manufacture des tabacs de Kairouan | مصنع التبغ بالقيروان | MTK |
 | Masse salariale | كتلة الأجور |  |
 | Mastère | الماجستير |  |
 | Mastère de recherche | ماجستير البحث |  |
@@ -437,6 +443,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Office de la marine marchande et des ports | ديوان البحرية التجارية والموانئ | OMMP |
 | Office des céréales | ديوان الحبوب |  |
 | Office des services scolaires | ديوان الخدمات المدرسية |  |
+| Office des terres domaniales | ديوان الأراضي الدولية | OTD |
 | Office des œuvres universitaires | ديوان الخدمات الجامعية |  |
 | Office du commerce de la Tunisie | الديوان التونسي للتجارة | OCT |
 | Office national de l'assainissement | الديوان الوطني للتطهير | ONAS |
@@ -467,6 +474,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Péréquation financière | التعديل المالي |  |
 | Période d'essai | فترة التجربة |  |
 | Perte sèche | الخسارة الصافية في الرفاه |  |
+| Pharmacie centrale de Tunisie | الصيدلية المركزية للبلاد التونسية | PCT |
 | Plus-value de cession de titres | القيمة الزائدة المتأتية من التفويت في السندات |  |
 | Plus-value immobilière | القيمة الزائدة العقارية |  |
 | Plus-value nominale | القيمة الزائدة الاسمية |  |
@@ -524,6 +532,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Redevance de compensation | أتاوة الدعم |  |
 | Redevance de prestations douanières | الأتاوة على الخدمات الديوانية |  |
 | Redoublement | الرسوب |  |
+| Régie des alcools | وكالة الكحول |  |
 | Régie nationale des tabacs et des allumettes | الوكالة الوطنية للتبغ والوقيد | RNTA |
 | Régime agricole amélioré | النظام الفلاحي المحسَّن | RSAA |
 | Régime complémentaire | النظام التكميلي |  |
@@ -609,11 +618,13 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Société de promotion des logements sociaux | شركة النهوض بالمساكن الاجتماعية | SPROLS |
 | Société de transport des hydrocarbures par pipelines | شركة النقل بواسطة الأنابيب | SOTRAPIL |
 | Société des transports de Tunis | شركة النقل بتونس | Transtu |
+| Société générale d'entreprises de matériel et de travaux | الشركة العامة للمقاولات والمعدات والأشغال | SOGEMT |
 | Société nationale d'exploitation et de distribution des eaux | الشركة الوطنية لاستغلال وتوزيع المياه | SONEDE |
 | Société nationale de cellulose et de papier alfa | الشركة الوطنية لعجين الحلفاء والورق | SNCPA |
 | Société nationale de distribution des pétroles | الشركة الوطنية لتوزيع البترول | SNDP |
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
 | société régionale de transport | الشركة الجهوية للنقل |  |
+| Société tunisienne de banque | الشركة التونسية للبنك | STB |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
 | Société tunisienne de sidérurgie El Fouladh | الشركة التونسية لصناعة الحديد «الفولاذ» |  |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
@@ -712,6 +723,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tunisair | شركة الخطوط التونسية |  |
 | Tunisie Autoroutes | شركة تونس الطرقات السيارة |  |
 | Tunisie Télécom | اتصالات تونس |  |
+| Tunisie Trade Net | شركة شبكة تونس للتجارة | TTN |
 | Tutelle | سلطة الإشراف |  |
 | Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |

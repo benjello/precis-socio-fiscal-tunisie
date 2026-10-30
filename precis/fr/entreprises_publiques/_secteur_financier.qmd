@@ -1,0 +1,494 @@
+# Le secteur financier public {#sec-ep-secteur-financier .domicile-unique}
+
+Ce chapitre présente, une par une, les entreprises publiques du secteur financier : cinq banques publiques, la Société tunisienne de banque (STB), la Banque de l'habitat (BH), la Banque nationale agricole (BNA), la Banque de financement des petites et moyennes entreprises (BFPME) et la Banque tunisienne de solidarité (BTS), avec leur capital, leurs comptes, leurs ratios prudentiels et leur emploi, puis la Caisse des prêts et de soutien des collectivités locales (CPSCL). La recapitalisation des banques publiques de 2013 à 2019 est au chapitre « Restructurer » (@sec-ep-banques-publiques). Les transferts et les résultats de l'ensemble des entreprises sont au chapitre « Les grandes entreprises » (@sec-ep-lp-entreprises).
+
+## La source {#sec-ep-secteur-financier-source}
+
+La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances, éditions LF 2022, LF 2024 et LF 2025. Pour chaque banque, ce n'est pas une fiche d'entreprise mais le tableau des banques publiques : bilan résumé, total des actifs, engagements et dépôts de la clientèle, produit net bancaire, résultats, provisions, dividendes, ratios de solvabilité, de liquidité et de créances classées, effectif ; l'édition LF 2022 n'y donne ni le résultat d'exploitation ni les dividendes, et, dans les éditions LF 2024 et LF 2025, le commentaire de chaque banque donne son capital et la part de l'État. L'édition LF 2025 change la définition des dépôts de la BTS. Pour la BFPME, le même rapport donne aussi les transferts du budget de l'édition LF 2024. Pour la CPSCL, il donne ses comptes dans le tableau des autres entreprises publiques du secteur quasi financier, avec ceux de l'Office national des postes, sous la même forme que les fiches ; il donne aussi les transferts du budget à la caisse, des éditions LF 2020 à LF 2022, et ses créances sur l'État de fin 2023, de l'édition LF 2025 ; une note de l'édition LF 2025 précise ce que portent deux de ses lignes.
+
+## La Société tunisienne de banque {#sec-ep-ge-stb}
+
+Les souscriptions de 2013 à 2015 au capital des banques publiques, dont 757 MD au plus pour la Société tunisienne de banque, sont exposées au chapitre « Restructurer » (@sec-ep-banques-publiques) ; les paiements de l'État au titre de la dette garantie, à la @sec-ep-garanties-cloture.
+
+**La [Société tunisienne de banque](#g-stb) (STB), au capital de laquelle l'État souscrit depuis 1957, est la plus grande des banques publiques par le total des actifs : 14 597 MD fin 2023, contre 10 520 MD fin 2018, selon le tableau des banques publiques du rapport du ministère des Finances. Son résultat net passe de 80,8 MD en 2018 à 157,3 MD en 2019, puis à 50,6 MD en 2023, et elle ne verse pas de dividende à l'État de 2020 à 2023.**
+
+```{python}
+#| label: fig-ep-stb-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "stb_fiches",
+    caption=("Société tunisienne de banque d'après le tableau des banques publiques du rapport "
+             "sur les entreprises publiques, exercices 2018-2023 : produit net bancaire et "
+             "résultats, bilan, ratios réglementaires, créances classées, liquidité et effectif ; "
+             "chaque exercice dans la dernière édition qui le donne. Source : ministère des "
+             "Finances [@minfin-ep-2022, p. 39 ; @minfin-ep-2024, p. 53 ; @minfin-ep-2025, p. 29]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année. L'édition LF 2022 (exercices 2018 à 2020) "
+        "ne donne ni le résultat d'exploitation ni les dividendes ; les éditions suivantes les "
+        "donnent. Les minimums réglementaires sont ceux qu'impriment les en-têtes du tableau. "
+        "Pour 2020, l'édition LF 2022 donnait 12 349 MD d'actifs, l'édition LF 2024 en donne "
+        "12 249. Toutes les valeurs imprimées, édition par édition, sont dans les tableaux "
+        "repliés plus bas."),
+)
+```
+
+- **Ce que l'État apporte au capital.** [En 1956](#r-ep-stb-1956), un décret autorise l'État à souscrire au capital de la Société tunisienne de banque populaire, à concurrence de dix millions de francs ; [la loi de 1957](#r-ep-stb-1957), qui vise ce décret, l'autorise à souscrire à l'augmentation du capital de la Société tunisienne de banque, à concurrence de 200 millions de francs. L'État souscrit ensuite aux augmentations de capital de [1961](#r-ep-stb-1961) (527 280 dinars), de [1981](#r-ep-stb-1981) (5 841 808 dinars) et de [1992](#r-ep-stb-1992) (3 405 000 dinars).
+- **2012 : capital et garantie.** [La loi de 2012](#r-ep-stb-2012) autorise l'État à souscrire 41 MD à l'augmentation du capital de la banque et à mettre en jeu sa garantie pour 117 MD, au titre d'emprunts extérieurs garantis par l'État. Ce montant est inscrit dans les capitaux propres de la banque, sous un poste « dotation de l'État non remboursable », jusqu'au rétablissement de son équilibre financier. Dans son rapport sur la clôture du budget de 2012, la Cour des comptes relève 70,0 MD de principal de dette garantie payés par l'État au titre de prêts de la banque [@cdc-cloture-2012, p. 103].
+- **Une banque qui grandit.** Le total des actifs passe de 10 520 MD fin 2018 à 14 688 MD fin 2022 et 14 597 MD fin 2023. Les dépôts de la clientèle passent de 6 357 à 10 177 MD, les engagements sur la clientèle de 7 133 à 10 860 MD fin 2022, puis 10 515 MD fin 2023. Le produit net bancaire passe de 473 MD en 2018 à 689 MD en 2022 et 685 MD en 2023 (@fig-ep-stb-fiches).
+- **Des résultats en baisse après 2021.** Le résultat net est de 80,8 MD en 2018, 157,3 MD en 2019, 72,2 MD en 2020, 115,4 MD en 2021, 93,1 MD en 2022 et 50,6 MD en 2023 ; les provisions nettes sur engagements passent de 138,2 MD en 2021 à 234,2 MD en 2023. Le coefficient d'exploitation, de 39,0 % en 2019, atteint 48,9 % en 2023. La part de l'État dans les dividendes est nulle chaque année de 2020 à 2023.
+- **Des ratios au-dessus des minimums.** Le ratio de solvabilité passe de 10,4 % en 2018 à 13,6 % en 2023, pour un minimum de 10 % ; le ratio Tier 1, de 7,5 % à 10,2 %, pour un minimum de 7 %. Les créances classées font 20,7 % des engagements en 2018, 13,5 % en 2021 et 2022, puis 18,1 % en 2023 ; leur couverture par les provisions tombe de 75,0 % en 2021 à 46,4 % en 2023. L'effectif est de 1 855 agents en 2018 et de 1 843 en 2023 ; les charges de personnel passent de 143,3 à 218,0 MD (@tbl-ep-effectifs-entreprises).
+
+:::: {.chronologie-repliable titre="Société tunisienne de banque : tableau des banques publiques du ministère des Finances, exercices 2018-2023 (bilan, produit net bancaire, résultats, dividendes, ratios, effectif), et textes de capital et de garantie, 1956-2012"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_banque_detail("stb", ("LF2022",),
+    caption=("Société tunisienne de banque, édition LF 2022 : indicateurs du tableau des "
+             "banques publiques, exercices 2018-2020. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 39]"),
+    tbl_id="tbl-ep-stb-fiche-a")
+ge.tableau_banque_detail("stb", ("LF2024", "LF2025"),
+    caption=("Société tunisienne de banque, éditions LF 2024 et LF 2025 : indicateurs du tableau "
+             "des banques publiques, exercices 2020-2023. L'édition LF 2024 imprime, pour le "
+             "résultat d'exploitation, une variation de 2022 sur 2021 de −68,5 MD, l'édition "
+             "LF 2025 de −58,6 MD, qui est la différence des deux niveaux. Source : ministère des "
+             "Finances [@minfin-ep-2024, p. 53 ; @minfin-ep-2025, p. 29]"),
+    tbl_id="tbl-ep-stb-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-stb-1956}[23 décembre 1956]{.insecable} : *Journal officiel* du 21 décembre 1956, exécutoire un jour franc après sa parution | décret du 20 décembre 1956 [@decret1956-12-20-stb, art. 1^er^ et 2, p. 1709] | le ministre des Finances, agissant pour le compte de l'État tunisien, est autorisé à souscrire au capital de la Société tunisienne de banque populaire, à concurrence de dix millions de francs (art. 1^er^) | mise en place |
+| []{#r-ep-stb-1957}entre le [18]{.insecable} et le [22 août 1957]{.insecable} : *Journal officiel* des 16-20 août 1957, exécutoire un jour franc après sa parution | loi n° 57-15 du 17 août 1957 [@loi57-15-stb, art. 1^er^ et 2, p. 64] | le secrétaire d'État aux Finances, agissant pour le compte de l'État tunisien, est autorisé à souscrire à l'augmentation du capital de la Société tunisienne de banque, à concurrence de deux cents millions de francs (art. 1^er^) ; la loi vise le décret du 20 décembre 1956 | mise en place |
+| []{#r-ep-stb-1961}[31 décembre 1961]{.insecable} : *Journal officiel* du 29 décembre 1961, exécutoire un jour franc après sa parution | loi n° 61-64 du 28 décembre 1961 [@loi61-64-stb, article unique, p. 1778] | souscription de l'État à l'augmentation du capital, à concurrence de 527 280 dinars | étape |
+| []{#r-ep-stb-1981}[8 novembre 1981]{.insecable} : *Journal officiel* du 6 novembre 1981, exécutoire un jour franc après sa parution | décret-loi n° 81-29 du 2 novembre 1981 [@decret-loi81-29-stb, art. 1^er^ et 2, p. 2572] | souscription de l'État à l'augmentation du capital de la Société tunisienne de banque « S.T.B. », à concurrence de 5 841 808 dinars (art. 1^er^) | étape |
+| []{#r-ep-stb-1992}[14 juin 1992]{.insecable} : *Journal officiel* du 12 juin 1992, exécutoire un jour franc après sa parution | loi n° 92-55 du 9 juin 1992 [@loi92-55-stb, article unique, p. 731] | participation de l'État à l'augmentation du capital, à concurrence de 3 405 000 dinars | étape |
+| []{#r-ep-stb-2012}[1^er^ octobre 2012]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 26 septembre 2012, plus cinq jours, jour du dépôt non compté | loi n° 2012-17 du 21 septembre 2012 [@loi2012-17-stb, art. 1^er^ et 2, p. 2220] | souscription de l'État à l'augmentation du capital, à concurrence de 41 000 000 dinars (art. 1^er^) ; mise en jeu de la garantie de l'État au profit de la banque, pour 117 000 000 dinars, au titre d'emprunts extérieurs garantis par l'État ; montant individualisé dans les capitaux propres de la banque sous un poste « dotation de l'État non remboursable » jusqu'au rétablissement de son équilibre financier ; conditions fixées par convention entre le ministre des Finances et la banque (art. 2) | rupture |
+
+: Les textes de la Société tunisienne de banque : capital et garantie, 1956-2012 {#tbl-ep-registre-stb}
+
+::::
+
+<!-- TODO (documentaliste) : tableau des banques publiques des éditions LF 2022 (p. 39, tableau 21), LF 2024 (p. 53, tableau 26) et LF 2025 (p. 29) versé pour la STB dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-stbbh), sous la mise en page « banques » et les codes de la BNA, de la BFPME et de la BTS. Lien entre la Société tunisienne de banque populaire du décret du 20 décembre 1956 et la Société tunisienne de banque : la loi n° 57-15 vise le décret, mais la filiation n'est pas établie ; acte de constitution et statuts de la banque (1957-1958) à identifier. Textes non lus : loi n° 82-6 du 3 février 1982 (ratification du décret-loi n° 81-29, JORT n° 8, p. 288) ; conventions avec l'État de 1959 à 1967 (lois n° 59-57, 59-104, 59-144, 61-5, 61-34, 67-44 : crédit à la construction, créances hypothécaires, magasins généraux) et emprunt obligataire de 1959 (loi n° 59-102) ; décrets n° 2001-715 et 2007-894 (organigramme) et 2001-1251 (emplois fonctionnels). Fusion de 2000 avec la Banque nationale de développement touristique et la Banque de développement économique de la Tunisie : texte à identifier. Montants souscrits par l'État en application de la loi n° 2015-31 et part de l'État dans le capital : à chercher dans les rapports annuels de la banque. Écart entre les 117 MD de garantie mise en jeu par la loi n° 2012-17 et les 70,0 MD de principal relevés par la Cour des comptes pour 2012 (puis 47,0 MD pour 2013, rattachés à El Fouladh dans le rapport suivant) : non expliqué. Transferts du budget : la banque n'est pas dans la série des transferts par entreprise ; l'absence de ligne dans les tableaux du rapport reste à vérifier. Variations imprimées discordantes (résultat d'exploitation 2022-2021 de l'édition LF 2024) : relevées dans la série, non versées. Classements des dettes et créances croisées : non relevés pour la banque. Comptes publiés et rapports annuels : à obtenir. -->
+
+## La Banque de l'habitat {#sec-ep-ge-bh}
+
+Les souscriptions de 2013 à 2015 au capital des banques publiques, dont 110 MD au plus pour la Banque de l'habitat, sont exposées au chapitre « Restructurer » (@sec-ep-banques-publiques) ; la part de l'État dans les bénéfices des entreprises publiques, au chapitre « Les dividendes et les versements au budget » (@sec-ep-dividendes-part).
+
+**La [Banque de l'habitat](#g-bh) (BH) est issue en 1989 de la transformation en banque de la Caisse nationale d'épargne-logement, établissement public créé en 1973 pour gérer le régime d'épargne-logement. Selon le tableau des banques publiques du rapport du ministère des Finances, son total des actifs passe de 11 912 MD fin 2018 à 13 515 MD fin 2023, son résultat net reste entre 72,9 et 142,0 MD par an, et la part de l'État dans ses dividendes passe de 9,5 MD sur l'exercice 2020 à 17,47 MD sur l'exercice 2023.**
+
+```{python}
+#| label: fig-ep-bh-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bh_budget",
+    caption=("Banque de l'habitat : transferts du budget, effectif et charges de personnel, "
+             "exercices 2016-2023, d'après le rapport sur les entreprises publiques. Source : "
+             "ministère des Finances [@minfin-ep, p. 149 ; @minfin-ep-2022, p. 39 ; "
+             "@minfin-ep-2024, p. 54 ; @minfin-ep-2025, p. 29]"),
+    note_lecture=(
+        "Transferts : édition LF 2021 seule, 2020 provisoire (hachures). Effectif et charges "
+        "de personnel : pour chaque exercice, la dernière édition qui le donne. La banque n'est "
+        "dans aucun classement des dix premiers résultats (« n. c. ») ; son résultat net est "
+        "dans la figure du tableau des banques, plus bas. « n. d. » : le rapport ne donne pas "
+        "la grandeur ; ce n'est pas un zéro."),
+)
+```
+
+- **De la caisse d'épargne-logement à la banque.** [La loi de 1973](#r-ep-bh-1973) institue un régime d'épargne-logement pour les personnes physiques qui veulent accéder à la propriété de leur logement, et une Caisse nationale d'épargne-logement chargée des opérations qui s'y rattachent ; les intérêts et la prime d'épargne versés aux épargnants sont exonérés de l'impôt sur le revenu. [En 1974](#r-ep-bh-1974), la caisse est un établissement public à caractère financier et commercial, qui reçoit les dépôts des épargnants, leur prête et participe au financement de logements. [La loi de 1989](#r-ep-bh-1989) autorise sa transformation en une banque régie par la loi bancaire de 1967 ; l'État participe au capital de la banque à concurrence de 15 MD, par apport du patrimoine de la caisse complété au besoin en numéraire, et la banque gère le régime d'épargne-logement par convention avec le ministère des Finances.
+- **Capital et garanties.** [En 2007](#r-ep-bh-2007), l'État souscrit 14,76 MD à l'augmentation du capital de la banque ; la loi du 21 août 2015 lui affecte 110 MD au plus des autorisations de 2013 et 2014 (@sec-ep-banques-publiques). [En 2018](#r-ep-bh-2018), la loi approuve la garantie de l'État à une ligne de crédit de 120 millions d'euros de la Banque européenne d'investissement à la banque, pour financer de très petites, petites et moyennes entreprises et des entreprises de taille intermédiaire. Le budget verse 34 MD à la banque en 2017 et rien de 2018 à 2020 (@fig-ep-bh-budget).
+- **Une banque qui grandit peu.** Le total des actifs passe de 11 912 MD fin 2018 à 12 405 MD fin 2021, puis à 13 626 MD fin 2022 et 13 515 MD fin 2023. Les dépôts de la clientèle passent de 6 551 à 8 752 MD ; les engagements sur la clientèle, de 9 118 MD fin 2018 à 10 687 MD fin 2022, puis 10 211 MD fin 2023. Le produit net bancaire passe de 456 MD en 2018 à 665 MD en 2023 (@fig-ep-bh-fiches).
+- **Des résultats et des dividendes.** Le résultat net est de 136,0 MD en 2018, 142,0 MD en 2019, 72,9 MD en 2020 — l'année où les provisions nettes sur engagements passent de 68,5 à 171,6 MD —, 134,7 MD en 2021, 118,7 MD en 2022 et 140,0 MD en 2023. Le dividende par action passe de 0,6 dinar sur l'exercice 2020 à 1,1 dinar sur l'exercice 2023 ; la part de l'État, de 9,5 à 17,47 MD.
+- **Des ratios qui se renforcent.** Le ratio de solvabilité passe de 10,5 % en 2018, pour un minimum de 10 %, à 15,4 % en 2023 ; le ratio Tier 1, de 7,6 % à 13,0 %, pour un minimum de 7 %. Les créances classées passent de 11,4 % des engagements en 2018 à 15,9 % en 2021 et en 2023, et leur couverture par les provisions de 77,8 % à 67,1 %. L'effectif passe de 1 753 agents en 2018 à 1 664 en 2023 ; les charges de personnel, de 125,3 à 176,4 MD (@tbl-ep-effectifs-entreprises).
+
+:::: {.chronologie-repliable titre="Banque de l'habitat : tableau des banques publiques du ministère des Finances, exercices 2018-2023 (bilan, produit net bancaire, résultats, dividendes, ratios, effectif), et textes de création, de transformation, de capital et de garantie, 1973-2018"}
+
+```{python}
+#| label: fig-ep-bh-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bh_fiches",
+    caption=("Banque de l'habitat d'après le tableau des banques publiques du rapport sur les "
+             "entreprises publiques, exercices 2018-2023 : produit net bancaire et résultats, "
+             "bilan, ratios réglementaires, créances classées, liquidité et effectif ; chaque "
+             "exercice dans la dernière édition qui le donne. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 39 ; @minfin-ep-2024, p. 54 ; @minfin-ep-2025, p. 29]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année. L'édition LF 2022 (exercices 2018 à 2020) "
+        "ne donne ni le résultat d'exploitation ni les dividendes. Les minimums réglementaires "
+        "sont ceux qu'impriment les en-têtes du tableau. Toutes les valeurs imprimées, édition "
+        "par édition, sont dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_banque_detail("bh", ("LF2022",),
+    caption=("Banque de l'habitat, édition LF 2022 : indicateurs du tableau des banques "
+             "publiques, exercices 2018-2020. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 39]"),
+    tbl_id="tbl-ep-bh-fiche-a")
+ge.tableau_banque_detail("bh", ("LF2024", "LF2025"),
+    caption=("Banque de l'habitat, éditions LF 2024 et LF 2025 : indicateurs du tableau des "
+             "banques publiques, exercices 2020-2023. L'édition LF 2025 imprime une variation "
+             "du ratio LCR de 2022 sur 2021 de 4,8 points, qui ne redonne pas ses niveaux (127,8 "
+             "et 123,5) ; l'édition LF 2024 imprime 128,3 pour 2022. Source : ministère des "
+             "Finances [@minfin-ep-2024, p. 54 ; @minfin-ep-2025, p. 29]"),
+    tbl_id="tbl-ep-bh-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-bh-1973}[10 mai 1973]{.insecable} : *Journal officiel* du 8 mai 1973, exécutoire un jour franc après sa parution | loi n° 73-24 du 7 mai 1973 [@loi73-24-cnel, art. 1^er^ à 8, p. 726] | régime d'épargne-logement au profit des personnes physiques qui veulent accéder à la propriété ou à la copropriété immobilière (art. 1^er^) ; prêts aux souscripteurs d'un contrat d'épargne-logement qui affectent les sommes épargnées et le prêt au financement de leur habitation principale ou de celle de leurs ascendants ou descendants (art. 2) ; « Caisse nationale d'épargne-logement » chargée de l'ensemble des opérations liées à l'épargne-logement, statuts définis par décret (art. 3) ; comptes ouverts auprès de la caisse ou, par délégation, de la Caisse d'épargne nationale tunisienne et d'autres organismes agréés (art. 5) ; prime d'épargne de l'État égale aux intérêts annuels de 2 % des dépôts (art. 6) ; intérêts et prime exonérés de l'impôt sur le revenu des personnes physiques (art. 7) | mise en place |
+| []{#r-ep-bh-1974}entre le [31 mars]{.insecable} et le [4 avril 1974]{.insecable} : *Journal officiel* des 29 mars-2 avril 1974, exécutoire un jour franc après sa parution | décret n° 74-224 du 28 mars 1974 [@decret74-224-cnel, art. 1^er^ et 2, p. 669] | la caisse est un établissement public à caractère financier et commercial, doté de la personnalité civile et de l'autonomie financière, dont le siège est à Tunis (art. 1^er^) ; objet : recevoir et gérer les dépôts des souscripteurs de contrats d'épargne-logement, conclure des conventions avec les institutions financières, prêter aux souscripteurs pour construire, agrandir ou acquérir un logement, participer au financement de logements pour les souscripteurs et prendre des participations dans les entreprises de promotion immobilière agréées (art. 2) | mise en place |
+| []{#r-ep-bh-1989}[5 mars 1989]{.insecable} : *Journal officiel* du 3 mars 1989, exécutoire un jour franc après sa parution | loi n° 89-18 du 22 février 1989 [@loi89-18-bh, art. 1^er^ à 6, p. 339] | le ministre des Finances est autorisé à transformer la caisse en une banque régie par la loi n° 67-51 du 7 décembre 1967 ; enregistrement au droit fixe de l'acte de transformation et de la première augmentation de capital (art. 1^er^) ; participation de l'État au capital à concurrence de 15 millions de dinars, par apport de l'ensemble du patrimoine de la caisse majoré au besoin d'un complément en numéraire ; la banque exécute les engagements de la caisse (art. 2) ; elle gère le régime d'épargne-logement par convention avec le ministère des Finances (art. 3) ; avantages fiscaux des épargnants : exonération des intérêts de tous impôts et taxes, enregistrement au droit fixe des contrats de prêt, inscription et radiation des hypothèques pour un droit d'un dinar au plus (art. 4), étendus aux contrats d'épargne souscrits auprès de tout organisme bancaire selon un modèle agréé (art. 5) ; articles 6 et 7 de la loi de 1973 abrogés (art. 6) | rupture |
+| []{#r-ep-bh-2007}[28 mai 2007]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 23 mai 2007, plus cinq jours, jour du dépôt non compté | loi n° 2007-31 du 21 mai 2007 [@loi2007-31-bh, article unique, p. 1724] | souscription de l'État à l'augmentation du capital de la banque de l'habitat, à concurrence de 14 760 000 dinars | étape |
+| []{#r-ep-bh-2018}[24 février 2018]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 19 février 2018, plus cinq jours, jour du dépôt non compté | loi n° 2018-8 du 12 février 2018 [@loi2018-8-bh, article unique, p. 396] | approbation du contrat de garantie à première demande conclu le 8 novembre 2017 entre la République tunisienne et la Banque européenne d'investissement, relatif à une ligne de crédit de 120 000 000 d'euros au profit de la banque, pour financer les projets des très petites entreprises, des petites et moyennes entreprises et des entreprises de taille intermédiaire | étape |
+
+: Les textes de la Banque de l'habitat : épargne-logement, transformation en banque, capital et garantie, 1973-2018 {#tbl-ep-registre-bh}
+
+::::
+
+<!-- TODO (documentaliste) : tableau des banques publiques des éditions LF 2022 (p. 39, tableau 21), LF 2024 (p. 54, tableau 26) et LF 2025 (p. 29) versé pour la BH dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-stbbh). Dividendes : la somme des parts de l'État imprimées dans le tableau des banques (15,1 + 14,3 + 17,47 = 46,87 MD pour 2021-2023) diffère du cumul de 46,7 MD du tableau des dividendes de la même édition (LF 2025, p. 126) : non tranché. Transferts du budget : la ligne de la banque n'est versée que pour l'édition LF 2021 (p. 149) ; objet des 34 MD de 2017 à identifier. Textes non lus : rectificatif de la loi n° 73-24 (JORT n° 23 du 8 juin 1973, p. 916) ; décret n° 74-223 (application du régime) et ses modificatifs ; suite du décret n° 74-224 (organisation administrative et financière) et décrets n° 76-271 et 76-1000 qui le modifient ; loi de finances pour 1976 (exonérations fiscales de la caisse, loi n° 75-83) ; lois de ratification des prêts extérieurs garantis à la caisse (n° 76-53, 77-63, 79-58, 93-117) et à la banque (n° 2002-70, 2003-72, 2009-78) ; loi n° 92-34 (modification de la loi n° 89-18) ; date effective de la transformation et acte de constitution de la banque ; décrets n° 2005-965 (organigramme) et 2006-1806 (emplois fonctionnels) ; décret de ratification de la garantie de 2018. Montants souscrits par l'État en application de la loi n° 2015-31 et part de l'État dans le capital : rapports annuels de la banque. Comptes publiés et rapports annuels : à obtenir. -->
+
+## La Banque nationale agricole {#sec-ep-ge-bna}
+
+La recapitalisation des banques publiques de 2013 à 2019, dont la souscription de l'État au capital de la BNA en 2019, est exposée au chapitre « Restructurer » (@sec-ep-banques-publiques).
+
+**La [Banque nationale agricole](#g-bna) (BNA), société anonyme bancaire créée en 1959 sous la tutelle du ministère des Finances, est la plus grande des trois banques publiques présentées ici : de fin 2018 à fin 2023, son total des actifs passe de 11 663 à 20 469 MD et son résultat net reste compris entre 102,3 et 190 MD ; la part de l'État dans les dividendes qu'elle distribue passe de 11,2 MD en 2020 à 20,3 MD en 2023.**
+
+- **Une banque créée avec l'apport de l'État.** [La loi de 1959](#r-ep-bna-1959) autorise l'État à participer au capital de la banque dans la limite de 200 000 dinars, en apports en nature ou en espèces prélevés sur le Fonds d'industrialisation et de développement. [La même année](#r-ep-bna-1959-convention), l'État lui donne mandat de liquider pour son compte le portefeuille de prêts agricoles de la Caisse foncière de Tunisie. [En 2009](#r-ep-bna-2009), l'État est autorisé à souscrire à l'augmentation de son capital jusqu'à 30 MD. Le capital est de 176 MD en 2018 et de 320 MD fin 2019, après la souscription de l'État par compensation ; l'État et les autres actionnaires publics en détiennent 50,23 % [@minfin-ep-2025, p. 34].
+- **Les crédits des comptes spéciaux agricoles.** La banque gère des crédits accordés sur les ressources de comptes spéciaux agricoles de l'État. [En 1994](#r-ep-bna-1994), l'État lui transfère 133 MD de ces crédits, inscrits à son passif en « dotation de l'État non remboursable » jusqu'au rétablissement de son équilibre financier, et garantit le recouvrement des montants échus. [En 2004](#r-ep-bna-2004), il lui en transfère 160 MD, restituables seulement lorsque la banque retrouve son équilibre financier, avec la garantie de l'État : la banque peut la mettre en jeu pour le principal échu et impayé depuis un an ; les crédits passés au contentieux avant le 31 décembre 2003 lui sont remboursés en quatre tranches annuelles à partir de 2004, et elle reverse au Trésor ce qu'elle recouvre au-delà ([décret de 2004](#r-ep-bna-2004-garantie)).
+- **Une obligation de financer l'agriculture.** [Depuis 2026](#r-ep-bna-2026), la banque consacre chaque année au moins 30 % de ses financements à l'investissement aux filières de production agricole, à des taux préférentiels fixés par la Banque centrale, et ouvre des lignes de crédit saisonnier à taux préférentiel ; si elle y manque, une amende, fixée par décret, est versée au fonds d'indemnisation des dommages agricoles causés par les calamités naturelles.
+- **Des comptes en croissance.** De fin 2018 à fin 2023, les engagements sur la clientèle passent de 9 322 à 13 793 MD et les dépôts de la clientèle de 7 800 à 11 887 MD ; le produit net bancaire passe de 553 à 980 MD. Le résultat net est de 175 MD en 2018, 123,4 MD en 2019, 102,3 MD en 2020, 163,1 MD en 2021, 159,2 MD en 2022 et 190 MD en 2023 ; les provisions nettes sur engagements passent de 82,7 à 293,6 MD (@fig-ep-bna-fiches). L'effectif baisse de 2 413 agents en 2018 à 2 107 en 2023.
+- **Des ratios au-dessus des minimums.** Le ratio de solvabilité passe de 14,7 % en 2018 à 21,4 % en 2023 et le ratio Tier 1 de 9,9 % à 17,8 %, pour des minimums de 10 % et de 7 % ; le ratio de liquidité à court terme reste au-dessus de 100 %, avec un point bas de 104,1 % en 2021. Les créances classées représentent de 15,4 % à 15,8 % des engagements de 2018 à 2022, puis 19,4 % en 2023, et les provisions en couvrent de 59,3 % à 69,8 %. Le coefficient d'exploitation baisse de 48 % à 38,5 %.
+
+:::: {.chronologie-repliable titre="Banque nationale agricole : tableau des banques publiques du ministère des Finances, exercices 2018-2023 (bilan, produit net bancaire, résultat, dividendes, ratios, effectif), et textes de capital, de transfert de créances, de garantie et de financement de l'agriculture, 1959-2026"}
+
+```{python}
+#| label: fig-ep-bna-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bna_fiches",
+    caption=("Banque nationale agricole d'après le tableau des banques publiques du rapport sur "
+             "les entreprises publiques, exercices 2018-2023, en millions de dinars courants, en "
+             "pour cent et en agents : chaque exercice dans la dernière édition qui le donne. "
+             "Source : ministère des Finances [@minfin-ep-2022, p. 39 ; @minfin-ep-2024, p. 53 ; "
+             "@minfin-ep-2025, p. 30]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année. L'édition LF 2022 ne donne ni le résultat "
+        "d'exploitation ni les dividendes : 2018 et 2019 n'ont pas ces barres. Les ratios sont "
+        "des points, sans trait d'une année à l'autre ; les tirets marquent les minimums "
+        "réglementaires imprimés en tête du tableau. Toutes les valeurs imprimées, édition par "
+        "édition, sont dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_banque("bna", ("LF2022",),
+    caption=("Banque nationale agricole, édition LF 2022 : tableau des banques publiques, "
+             "exercices 2018-2020. Source : ministère des Finances [@minfin-ep-2022, p. 39]"),
+    tbl_id="tbl-ep-bna-fiche-a")
+ge.tableau_fiche_banque("bna", ("LF2024", "LF2025"),
+    caption=("Banque nationale agricole, éditions LF 2024 et LF 2025 : tableau des banques "
+             "publiques, exercices 2020-2023 ; l'édition LF 2024 n'imprime pas de statut, "
+             "l'édition LF 2025 dit les trois exercices réalisés. Le dividende par action est "
+             "imprimé 0,850 dans l'édition LF 2024 et 0,8 dans l'édition LF 2025. Source : "
+             "ministère des Finances [@minfin-ep-2024, p. 53 ; @minfin-ep-2025, p. 30]"),
+    tbl_id="tbl-ep-bna-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-bna-1959}[30 avril 1959]{.insecable} : *Journal officiel* du 28 avril 1959, exécutoire un jour franc après sa parution | loi n° 59-47 du 28 avril 1959 [@loi59-47-bna, art. 1^er^, p. 419-420] | le secrétaire d'État aux finances et au commerce, pour le compte de l'État, est autorisé à participer au capital de la « Banque nationale agricole » dans la limite de 200 000 dinars, en apports en nature ou en souscription en espèces, prélevés sur les disponibilités du Fonds d'industrialisation et de développement créé par le décret du 29 juin 1957 | mise en place |
+| []{#r-ep-bna-1959-convention}entre le [25]{.insecable} et le [27 septembre 1959]{.insecable} : *Journal officiel* des 22-25 septembre 1959, exécutoire un jour franc après sa parution, la loi étant signée le 23 septembre | loi n° 59-107 du 23 septembre 1959 [@loi59-107-bna, art. 1^er^ de la loi et de la convention, p. 1018] | approbation de la convention du 1^er^ août 1959 entre l'État et la banque (art. 1^er^ de la loi) ; l'État donne mandat à la banque d'effectuer pour son compte la liquidation du portefeuille de prêts agricoles de la Caisse foncière de Tunisie (art. 1^er^ de la convention) | étape |
+| []{#r-ep-bna-1994}[1^er^ mars 1994]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 24 février 1994, plus cinq jours, jour du dépôt non compté | loi n° 94-30 du 21 février 1994 [@loi94-30-bna, art. 1^er^ et 2, p. 325] | transfert à la banque de 133 000 000 dinars de crédits consentis sur différents comptes spéciaux agricoles ouverts auprès d'elle par conventions avec l'État ; montant individualisé au passif sous la dénomination « Dotation de l'État non remboursable » jusqu'au rétablissement de l'équilibre financier de la banque (art. 1^er^) ; garantie de l'État pour le recouvrement des montants échus des crédits transférés (art. 2) | rupture |
+| []{#r-ep-bna-2004}[5 janvier 2004]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 31 décembre 2003, plus cinq jours, jour du dépôt non compté | loi n° 2003-80 du 29 décembre 2003, loi de finances pour 2004 [@lf-2004, art. 49 et 50, p. 3727-3728] | rubrique « Transfert au profit de la Banque Nationale Agricole de créances revenant à l'État » : transfert de 160 000 000 dinars de crédits accordés sur les ressources des comptes spéciaux agricoles, montant restituable seulement lorsque la banque retrouve son équilibre financier, modalités fixées par convention (art. 49) ; garantie de l'État pour le recouvrement des créances échues des crédits transférés, modalités fixées par décret (art. 50) | étape |
+| []{#r-ep-bna-2004-garantie}[1^er^ avril 2004]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 27 mars 2004, plus cinq jours, jour du dépôt non compté | décret n° 2004-751 du 22 mars 2004 [@decret2004-751-bna, art. 1^er^ à 5, p. 732] | garantie accordée dans la limite de 160 MD (art. 1^er^) ; mise en jeu pour le principal échu et impayé pendant un an, jamais pour un remboursement anticipé (art. 2) ; demande annuelle au ministère des finances avant fin mai, paiement l'année budgétaire suivante sur rapport du commissaire aux comptes (art. 3) ; crédits passés au contentieux avant le 31 décembre 2003 remboursés en quatre tranches annuelles égales à partir de 2004 (art. 4) ; la banque inscrit ces crédits à un compte spécial, poursuit le recouvrement et reverse sans délai à la Trésorerie générale ce qu'elle recouvre au-delà des montants garantis (art. 5) | ajustement |
+| []{#r-ep-bna-2009}[18 mai 2009]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 13 mai 2009, plus cinq jours, jour du dépôt non compté | loi n° 2009-27 du 11 mai 2009 [@loi2009-27-bna, article unique, p. 1270] | le ministre des finances, pour le compte de l'État, est autorisé à souscrire à l'augmentation du capital social de la banque jusqu'à 30 000 000 dinars | étape |
+| []{#r-ep-bna-2026}[1^er^ janvier 2026]{.insecable}, date dite par la loi (art. 110) | loi n° 2025-17 du 12 décembre 2025, loi de finances pour 2026 [@lf-2026, art. 89, p. 4255 de l'édition arabe] | la banque consacre chaque année au moins 30 % de ses financements destinés à l'investissement aux filières de production du secteur agricole, à des taux préférentiels fixés par la Banque centrale, et ouvre des lignes de crédit saisonnier à taux préférentiel pour les campagnes agricoles ; en cas de manquement, amende versée au « fonds d'indemnisation des dommages agricoles causés par les calamités naturelles », montant et procédure fixés par décret | rupture |
+
+: Les textes de la Banque nationale agricole : capital, transferts de créances de l'État, garantie et financement de l'agriculture. La souscription de 2019, par compensation, est au registre du chapitre « Restructurer » {#tbl-ep-registre-bna}
+
+::::
+
+<!-- TODO (documentaliste) : tableau des banques publiques de l'édition LF 2022 (p. 39, tableau 21), de l'édition LF 2024 (p. 53, tableau 26) et de l'édition LF 2025 (p. 30), lignes de la BNA versées dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-bnabts, mise en page « banques publiques », codes bq_). Tableaux de ratios et de variations de la prose de l'édition LF 2022 (p. 40-41) et commentaires des éditions LF 2024 (p. 57-58) et LF 2025 (p. 34-35) : lus pour le capital et la part de l'État, non versés. La BNA n'est pas dans la série des transferts du budget par entreprise ; la part de l'État dans les dividendes n'est pas recoupée avec les recettes du budget (titre des revenus des participations) : à faire. Date de création « 31 mai 1959 » donnée par l'édition LF 2025 (p. 34) : texte qui la fixe non lu. Fusion avec la Banque nationale de développement agricole (loi n° 83-19 du 28 février 1983, souscription de l'État au capital de cette banque, JORT n° 17 de 1983, p. 604) : aucun texte de fusion lu. Textes non lus : loi n° 59-65 du 19 juin 1959 (attributions de la Caisse mutuelle de crédit agricole en matière de céréales transférées à la banque, JORT n° 34 de 1959, p. 650) ; suite de la convention du 1er août 1959 (p. 1018 et suivantes) ; décret n° 64-295 du 17 septembre 1964 (convention et protocole avec l'État, JORT n° 44 de 1964, p. 1100-1102) ; convention prévue par l'article 49 de la loi de finances pour 2004 et liste des comptes spéciaux agricoles ; décrets n° 2001-982 (organigramme) et 2003-1541 (emplois fonctionnels) ; garanties de l'État à des prêts de la banque (lois n° 93-94, 95-79, 99-60, 2002-34) ; loi de finances pour 2026, articles 23 et 27 (lignes de financement dont la gestion peut revenir à la banque). Comptes publiés et rapports annuels de la banque : à obtenir. -->
+
+## La Banque de financement des petites et moyennes entreprises {#sec-ep-ge-bfpme}
+
+Ce que le budget verse à l'ensemble des entreprises est exposé au chapitre « Les transferts du budget » (@sec-ep-transferts).
+
+**La [Banque de financement des petites et moyennes entreprises](#g-bfpme) (BFPME), société anonyme bancaire créée en 2005 et détenue entièrement par l'État et les actionnaires publics, perd de l'argent chaque année de 2018 à 2023 : son résultat net passe de −1,9 MD à −15,8 MD, estimé, et ses fonds propres réglementaires deviennent négatifs à partir de 2020 ; l'édition LF 2024 du rapport donne des transferts du budget de 0,0 MD en 2020 et 2021 et de 22,7 MD en 2022, chiffre provisoire.**
+
+```{python}
+#| label: fig-ep-bfpme-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bfpme_budget",
+    caption=("Banque de financement des petites et moyennes entreprises : transferts du budget, "
+             "effectif et charges de personnel, exercices 2018-2023, d'après le rapport sur les "
+             "entreprises publiques. Source : ministère des Finances [@minfin-ep-2022, p. 39 ; "
+             "@minfin-ep-2024, p. 54 et 154-155 ; @minfin-ep-2025, p. 30]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire ou estimé. Les transferts à la banque viennent de l'édition LF 2024. La "
+        "banque ne figure dans aucun des classements des dix premiers résultats (« n. c. ») : "
+        "son résultat net est tracé, d'après le tableau des banques, dans la figure repliée plus "
+        "bas. « n. d. » : le rapport ne donne pas la grandeur. Ni l'un ni l'autre n'est un zéro."),
+)
+```
+
+- **Un capital apporté par l'État en trois fois.** [La loi de finances pour 2005](#r-ep-bfpme-2005) autorise l'État à souscrire au capital de la banque dans la limite de 30 MD, et [celle pour 2009](#r-ep-bfpme-2009) à l'augmentation de son capital dans la même limite. [En 2024](#r-ep-bfpme-2024), l'État souscrit à une nouvelle augmentation, de 59,06 MD au plus, libérée par compensation avec ce que la banque lui doit au titre d'une ligne de crédit japonaise qu'il lui a rétrocédée le 15 mars 2008, sans effet sur l'impôt sur les sociétés. Selon l'édition LF 2025 du rapport, le capital est de 100 MD, détenu à 100 % par l'État et les autres actionnaires publics [@minfin-ep-2025, p. 36].
+- **Ce que le budget verse.** L'édition LF 2024 du rapport donne des transferts du budget de 0,0 MD en 2020 et en 2021, au dixième, et de 22,7 MD en 2022, chiffre provisoire [@minfin-ep-2024, p. 154-155].
+- **Des créances difficiles à recouvrer.** Les créances classées représentent 77,3 % des engagements en 2018, 86,5 % en 2022, chiffre provisoire, et 87,4 % en 2023, chiffre estimé ; l'édition LF 2025 attribue la hausse de 2023 surtout aux créances sur des entreprises des industries agroalimentaires [@minfin-ep-2025, p. 37] ; les provisions en couvrent de 42,4 % à 60,5 %. [En 2025](#r-ep-bfpme-2025), les petites et moyennes entreprises débitrices de la banque peuvent obtenir, cas par cas, l'abandon de tout ou partie des intérêts de retard et le rééchelonnement du principal et des intérêts sur dix ans au plus. [En 2026](#r-ep-bfpme-2026), celles qui ont des difficultés conjoncturelles, ont suspendu leur activité ou ont des créances classées 4 et 5 obtiennent l'abandon de tous les intérêts de retard si elles paient le principal et les intérêts contractuels, ou de la moitié en cas de rééchelonnement sur sept ans, dont deux de grâce.
+- **Des pertes et des fonds propres négatifs.** Le total des actifs baisse de 300,8 MD fin 2018 à 269,9 MD fin 2023, estimé ; les dépôts de la clientèle restent de 11,3 à 15,7 MD, pour des engagements de 220 à 240 MD. Le produit net bancaire est de 5,1 à 9,0 MD par an ; de 2020 à 2023, il ne couvre pas les charges d'exploitation : le coefficient d'exploitation dépasse 100 % (308 % en 2023), et n'est pas imprimé pour 2018 et 2019. Le résultat net est de −1,9 MD en 2018, −4,1 MD en 2019, −12,3 MD en 2020, −5,9 MD en 2021, −12,8 MD en 2022 et −15,8 MD en 2023. Le ratio de solvabilité, de 1,8 % en 2018, devient négatif en 2020 et atteint −5,9 % en 2023, pour un minimum de 10 % ; le tableau n'imprime aucun ratio de liquidité pour la banque (@fig-ep-bfpme-fiches). L'effectif est de 122 à 127 agents.
+- **Des éditions qui ne concordent pas.** Pour 2022, l'édition LF 2024 donne des estimations et l'édition LF 2025 des chiffres provisoires tirés des états financiers arrêtés par le conseil d'administration le 5 juillet 2024 : le résultat net passe de −11,3 à −12,8 MD et le coefficient d'exploitation de 162 % à 170,9 %. Le coefficient d'exploitation de 2021 est de 187,4 % dans l'édition LF 2024 et de 188,4 % dans l'édition LF 2025, que l'édition LF 2025 explique par un chiffre transmis à nouveau par la banque [@minfin-ep-2025, p. 30]. Dans l'édition LF 2022, la ligne de 2020, « juin 2020 », est laissée vide à toutes les colonnes [@minfin-ep-2022, p. 39].
+
+:::: {.chronologie-repliable titre="Banque de financement des petites et moyennes entreprises : tableau des banques publiques du ministère des Finances, exercices 2018-2023 (bilan, produit net bancaire, résultat, ratios, effectif), et textes de capital et de règlement des dettes de ses clients, 2004-2026"}
+
+```{python}
+#| label: fig-ep-bfpme-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bfpme_fiches",
+    caption=("Banque de financement des petites et moyennes entreprises d'après le tableau des "
+             "banques publiques du rapport sur les entreprises publiques, exercices 2018-2023, en "
+             "millions de dinars courants, en pour cent et en agents : chaque exercice dans la "
+             "dernière édition qui le donne. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 39 ; @minfin-ep-2024, p. 54 ; @minfin-ep-2025, p. 30]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre : 2022 "
+        "provisoire, 2023 estimé (hachures, marques creuses). 2020 vient de l'édition LF 2024 : "
+        "l'édition LF 2022 laisse vide sa ligne « juin 2020 ». Les dividendes sont nuls ou "
+        "laissés vides ; le ratio de liquidité n'est imprimé pour aucun exercice. Toutes les "
+        "valeurs imprimées, édition par édition, sont dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_banque("bfpme", ("LF2022",),
+    caption=("Banque de financement des petites et moyennes entreprises, édition LF 2022 : "
+             "tableau des banques publiques, exercices 2018-2020 ; la ligne de 2020 est intitulée "
+             "« juin 2020 » et laissée vide. Source : ministère des Finances "
+             "[@minfin-ep-2022, p. 39]"),
+    tbl_id="tbl-ep-bfpme-fiche-a")
+ge.tableau_fiche_banque("bfpme", ("LF2024", "LF2025"),
+    caption=("Banque de financement des petites et moyennes entreprises, éditions LF 2024 et "
+             "LF 2025 : tableau des banques publiques, exercices 2020-2023 ; 2022 provisoire "
+             "dans les deux éditions, 2023 estimé. Source : ministère des Finances "
+             "[@minfin-ep-2024, p. 54 ; @minfin-ep-2025, p. 30]"),
+    tbl_id="tbl-ep-bfpme-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-bfpme-2005}année 2005 ; exécutoire le [5 janvier 2005]{.insecable} | loi n° 2004-90 du 31 décembre 2004, loi de finances pour 2005 [@loi2004-90-lf2005, art. 23, p. 3434] | rubrique « Souscription de l'État au capital de la Banque des Petites et Moyennes Entreprises » : le ministre des finances, au nom de l'État, est autorisé à souscrire au capital de la banque dans la limite de 30 millions de dinars | mise en place |
+| []{#r-ep-bfpme-2009}année 2009 ; exécutoire le [1^er^ janvier 2009]{.insecable} | loi n° 2008-77 du 22 décembre 2008, loi de finances pour 2009 [@loi2008-77-lf2009, art. 15, p. 4276] | le ministre des finances, pour le compte de l'État, est autorisé à souscrire à l'augmentation du capital de la banque dans la limite de 30 000 000 dinars | étape |
+| []{#r-ep-bfpme-2024}[1^er^ janvier 2024]{.insecable}, date dite par la loi (art. 70) | loi n° 2023-13 du 11 décembre 2023, loi de finances pour 2024 [@lf-2024, art. 31, p. 6443 de l'édition arabe] | rubrique « تدعيم الأسس المالية لبنك تمويل المؤسسات الصغرى والمتوسطة » (renforcement de l'assise financière de la banque) : le ministre chargé des finances est autorisé à souscrire à l'augmentation du capital de la banque dans la limite de 59 060 628,521 dinars, libérée par compensation avec l'ensemble des dettes de la banque envers l'État au titre de la ligne de crédit japonaise qui lui a été rétrocédée le 15 mars 2008, selon l'article 292 du code des sociétés commerciales ; l'opération n'a aucune conséquence fiscale au titre de l'impôt sur les sociétés | rupture |
+| []{#r-ep-bfpme-2025}[1^er^ janvier 2025]{.insecable}, date dite par la loi (art. 84) | loi n° 2024-48 du 9 décembre 2024, loi de finances pour 2025 [@lf-2025, art. 53, p. 6443 de l'édition arabe] | rubrique « تسوية وضعية المؤسسات الصغرى والمتوسطة تجاه بنك تمويل المؤسسات الصغرى والمتوسطة » : les petites et moyennes entreprises débitrices de la banque sont exemptées du paiement total ou partiel des intérêts de retard, et le principal et les intérêts sont rééchelonnés sur dix ans au plus au taux d'origine, cas par cas, selon une politique de recouvrement fixée par le conseil d'administration ; demandes au plus tard le 31 décembre 2025 | ajustement |
+| []{#r-ep-bfpme-2026}[1^er^ janvier 2026]{.insecable}, date dite par la loi (art. 110) | loi n° 2025-17 du 12 décembre 2025, loi de finances pour 2026 [@lf-2026, art. 63, p. 4247 de l'édition arabe] | petites et moyennes entreprises en difficulté conjoncturelle, en arrêt temporaire d'activité ou débitrices de créances classées 4 et 5 auprès de la banque : abandon de tous les intérêts de retard en cas de paiement intégral du principal et des intérêts contractuels, frais et honoraires de justice payés ; abandon limité à 50 % en cas de rééchelonnement du reste de la dette ; rééchelonnement sur sept ans, dont deux de grâce, au taux d'origine ; dettes arrêtées à fin 2025, demandes au plus tard fin décembre 2026 | ajustement |
+
+: Les textes de la Banque de financement des petites et moyennes entreprises : capital et règlement des dettes de ses clients {#tbl-ep-registre-bfpme}
+
+::::
+
+<!-- TODO (documentaliste) : tableau des banques publiques de l'édition LF 2022 (p. 39, tableau 21), de l'édition LF 2024 (p. 54, tableau 26) et de l'édition LF 2025 (p. 30), lignes de la BFPME versées dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-bnabts). Statut de la ligne « juin 2020 » de l'édition LF 2022 : « non dit » dans la série des fiches, « provisoire » dans la série des effectifs, aucune légende sur la page. Objet des 22,7 MD de transferts de 2022 (édition LF 2024, tableau 45) : non établi ; la série des transferts par entreprise n'a pas de ligne de la banque pour les éditions LF 2022, LF 2023 et LF 2025 : pages des transferts par entreprise de ces éditions (LF 2022 p. 105-106, LF 2023 p. 200-201) à relire pour la banque ; montants imprimés 0,0 au dixième en 2020 et 2021 : montant exact non établi ; un rapprochement avec la compensation de l'article 31 de la loi de finances pour 2024 n'est appuyé par aucune source. Capital de 100 MD en 2023 (LF 2025, p. 36) face aux souscriptions autorisées de 30, 30 et 59,06 MD : réductions ou imputations de pertes à chercher dans les comptes de la banque. L'édition LF 2025 (p. 37) évoque une « opération de radiation des créances » (شطب الديون) en 2022 : texte et montant non établis. Textes non lus : statuts et acte de constitution de la banque (2005), forme et date de création ; décrets n° 2009-40 (organigramme) et 2009-1740 (emplois fonctionnels) ; loi de finances pour 2024, article 29 (ligne de 10 MD sur le Fonds national de l'emploi gérée par la banque) ; loi de finances pour 2025, articles 50 et 51 ; loi de finances pour 2026, article 25 ; garanties de l'État aux prêts de la BAD et de la BEI rétrocédés aux petites et moyennes entreprises (lois n° 2006-40, 2012-5, 2014-53, 2020-24, 2024-39 ; décrets de ratification) ; décret gouvernemental n° 2019-1178 (prise en charge de la différence de taux). Comptes publiés et rapports annuels de la banque : à obtenir. -->
+
+## La Banque tunisienne de solidarité {#sec-ep-ge-bts}
+
+**La [Banque tunisienne de solidarité](#g-bts) (BTS), société anonyme bancaire créée en 1997, finance les petits projets et les associations de microcrédit ; selon l'édition LF 2025 du rapport, l'État et les actionnaires publics détiennent 69,26 % de son capital de 60 MD, apporté en partie par conversion de dotations du Fonds de solidarité nationale. Elle reste bénéficiaire de 2018 à 2023 (de 4,5 à 9,8 MD) et la part de l'État dans ses dividendes est nulle de 2020 à 2023 ; plus de la moitié de ses engagements sont des créances classées en 2021-2023.**
+
+- **Un capital apporté par l'État et le Fonds de solidarité nationale.** [La loi de 1997](#r-ep-bts-1997) autorise l'État à souscrire au capital de la banque dans la limite de 6 MD. [En 2000](#r-ep-bts-2000), puis [en 2018](#r-ep-bts-2018), l'État souscrit à l'augmentation de son capital en convertissant en actions les dotations accordées à la banque sur les ressources du Fonds de solidarité nationale, 10 MD puis 20 MD. Selon l'édition LF 2025 du rapport, le capital est de 60 MD, détenu à 69,26 % par l'État et les autres actionnaires publics ; la banque est généraliste, mais finance surtout les petits projets et les associations de microcrédit, et a une activité de finance islamique [@minfin-ep-2025, p. 37].
+- **Des prêts exonérés et des dettes réglées.** [Depuis 2015](#r-ep-bts-2015), les contrats de prêt de la banque sont exonérés du droit d'enregistrement. [En 2026](#r-ep-bts-2026), les clients endettés depuis plus de dix ans à fin 2025 obtiennent le rééchelonnement du principal et des intérêts contractuels sur sept ans au plus, au taux d'origine ; la banque prend à sa charge la moitié des intérêts de retard, s'ils remboursent avant fin 2026 au moins 10 % du principal dû.
+- **Des comptes bénéficiaires.** De fin 2018 à fin 2023, le total des actifs passe de 1 399,7 à 1 894 MD et les engagements sur la clientèle de 1 112,7 à 1 503 MD ; le produit net bancaire passe de 40,2 à 67,4 MD. Le résultat net est de 5,8 MD en 2018, 9,2 MD en 2019, 4,5 MD en 2020, 7 MD en 2021, 9,1 MD en 2022 et 9,8 MD en 2023 ; la part de l'État dans les dividendes est nulle de 2020 à 2023, l'édition LF 2022 ne donnant pas cette grandeur (@fig-ep-bts-fiches). L'effectif est de 283 agents en 2018 et de 304 en 2023.
+- **Des créances classées en hausse, des fonds propres élevés.** Les créances classées représentent 42 % des engagements en 2018, 44 % en 2020 et 51,2 % en 2023, et les provisions en couvrent 20,7 % en 2018 et 11,7 % en 2023. Le ratio de solvabilité reste entre 36,2 % et 46,5 %, et le ratio de liquidité à court terme entre 203,9 % et 580,9 %. Le coefficient d'exploitation passe de 58,6 % à 66,7 %.
+- **Des dépôts redéfinis d'une édition à l'autre.** Dans les éditions LF 2022 et LF 2024, les dépôts de la clientèle comprennent les montants des crédits et des ressources spéciales (1 219,9 MD en 2018, 1 380 MD en 2020) ; l'édition LF 2025 les en retire et révise 2021 et 2022 : les dépôts de 2021 passent de 1 460 à 28,5 MD et les engagements de 1 135 à 1 352 MD [@minfin-ep-2025, p. 30]. Dans l'édition LF 2024, les engagements de 2021 sont imprimés 1 135 MD alors que les variations imprimées sur la même page donnent 1 351 MD [@minfin-ep-2024, p. 54]. La figure marque la rupture entre 2020 et 2021.
+
+:::: {.chronologie-repliable titre="Banque tunisienne de solidarité : tableau des banques publiques du ministère des Finances, exercices 2018-2023 (bilan, produit net bancaire, résultat, ratios, effectif), et textes de capital, d'exonération et de règlement des dettes de ses clients, 1997-2026"}
+
+```{python}
+#| label: fig-ep-bts-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "bts_fiches",
+    caption=("Banque tunisienne de solidarité d'après le tableau des banques publiques du "
+             "rapport sur les entreprises publiques, exercices 2018-2023, en millions de dinars "
+             "courants, en pour cent et en agents : chaque exercice dans la dernière édition qui "
+             "le donne. Source : ministère des Finances [@minfin-ep-2022, p. 39 ; "
+             "@minfin-ep-2024, p. 54 ; @minfin-ep-2025, p. 30]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année. Le trait pointillé du premier panneau marque "
+        "le changement de définition des dépôts : jusqu'en 2020, ils comprennent les crédits et "
+        "ressources spéciales ; à partir de 2021, édition LF 2025, ils ne les comprennent plus. "
+        "L'édition LF 2022 ne donne ni le résultat d'exploitation ni les dividendes. Toutes les "
+        "valeurs imprimées, édition par édition, sont dans les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_banque("bts", ("LF2022",),
+    caption=("Banque tunisienne de solidarité, édition LF 2022 : tableau des banques publiques, "
+             "exercices 2018-2020. Source : ministère des Finances [@minfin-ep-2022, p. 39]"),
+    tbl_id="tbl-ep-bts-fiche-a")
+ge.tableau_fiche_banque("bts", ("LF2024", "LF2025"),
+    caption=("Banque tunisienne de solidarité, éditions LF 2024 et LF 2025 : tableau des banques "
+             "publiques, exercices 2020-2023. Les dépôts et les engagements de 2021 et 2022 ne "
+             "suivent pas la même définition dans les deux éditions. Source : ministère des "
+             "Finances [@minfin-ep-2024, p. 54 ; @minfin-ep-2025, p. 30]"),
+    tbl_id="tbl-ep-bts-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-bts-1997}[5 janvier 1998]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 31 décembre 1997, plus cinq jours, jour du dépôt non compté | loi n° 97-87 du 29 décembre 1997 [@loi97-87-bts, article unique, p. 2435] | le ministre des finances, pour le compte de l'État, est autorisé à souscrire au capital de la banque dans la limite de 6 000 000 dinars | mise en place |
+| []{#r-ep-bts-2000}[27 avril 2000]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 22 avril 2000, plus cinq jours, jour du dépôt non compté | loi n° 2000-45 du 17 avril 2000 [@loi2000-45-bts, article unique, p. 882] | le ministre des finances, pour le compte de l'État, est autorisé à souscrire à l'augmentation du capital de la banque par conversion de la dotation de 10 000 000 dinars accordée à la banque sur les ressources du Fonds de solidarité nationale | étape |
+| []{#r-ep-bts-2015}[5 janvier 2015]{.insecable} : dépôt le 31 décembre 2014, plus cinq jours | loi n° 2014-59 du 26 décembre 2014, loi de finances pour 2015 [@lf-2015, art. 38, p. 3470] | rubrique « Exonération des contrats de prêts accordés par la Banque Tunisienne de Solidarité du droit d'enregistrement » : au numéro 4 de l'article 25 du code des droits d'enregistrement et de timbre est ajoutée l'expression « et les contrats de prêts accordés par la Banque Tunisienne de Solidarité » | ajustement |
+| []{#r-ep-bts-2018}[1^er^ janvier 2018]{.insecable}, date dite par la loi (art. 67) | loi n° 2017-66 du 18 décembre 2017, loi de finances pour 2018 [@lf-2018, art. 12, p. 4270] | le ministre chargé des finances, pour le compte de l'État, est autorisé à souscrire à l'augmentation du capital de la banque par conversion de la dotation de 20 000 000 dinars accordée à la banque sur les ressources du Fonds de solidarité nationale | étape |
+| []{#r-ep-bts-2026}[1^er^ janvier 2026]{.insecable}, date dite par la loi (art. 110) | loi n° 2025-17 du 12 décembre 2025, loi de finances pour 2026 [@lf-2026, art. 70, p. 4249 de l'édition arabe] | clients de la banque débiteurs depuis plus de dix ans à fin décembre 2025 : rééchelonnement du principal et des intérêts contractuels sur sept ans au plus, dont six mois de grâce au plus, au taux d'origine ; la banque prend à sa charge 50 % des intérêts de retard, le client le reste ; condition : rembourser avant fin décembre 2026 au moins 10 % du principal dû à fin décembre 2025 ; dossiers traités cas par cas selon une politique de recouvrement fixée par le conseil d'administration ; demandes au plus tard le 31 décembre 2026 | ajustement |
+
+: Les textes de la Banque tunisienne de solidarité : capital, exonération et règlement des dettes de ses clients {#tbl-ep-registre-bts}
+
+::::
+
+<!-- TODO (documentaliste) : tableau des banques publiques de l'édition LF 2022 (p. 39, tableau 21), de l'édition LF 2024 (p. 54, tableau 26) et de l'édition LF 2025 (p. 30), lignes de la BTS versées dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-bnabts). Engagements de 2021 imprimés 1 135 dans l'édition LF 2024, 1 351 d'après les variations de la même page : imprimé tel quel dans la série. La BTS n'est pas dans la série des transferts du budget par entreprise ; le tableau des crédits de programmes de la loi de finances pour 2015 porte une ligne « Participation à l'autofinancement des projets de la Banque Tunisienne de solidarité » (35 MD, coût porté de 40 à 75 MD, JORT n° 105 de 2014) : série des crédits annuels de cette ligne et de la dotation sur le Fonds national de l'emploi à constituer à partir des lois de finances et de l'annexe des transferts. Date de création « 22 décembre 1997 » (LF 2025, p. 37) : texte qui la fixe non lu. Textes non lus : loi de finances pour 2016, articles 77 à 79 (exonération des écrits relatifs aux prêts de la banque des droits d'enregistrement et du droit de timbre, édition arabe, fascicule sans couche texte) ; décret-loi n° 2022-79, loi de finances pour 2023, article 18 (20 MD supplémentaires sur le Fonds national de l'emploi pour les petits projets des diplômés) ; loi de finances pour 2024, article sur l'autonomisation économique des catégories vulnérables (p. 6440) ; loi de finances pour 2026, articles 23 et 26 ; décret n° 2001-886 (grand prix du Président de la République au meilleur projet financé par la banque) ; décrets n° 2008-3923 (organigramme) et 2009-1741 (emplois fonctionnels) ; arrêté du 22 juin 2016 (conservation des documents) ; loi n° 2001-80 (garantie, Fonds arabe de développement économique et social). Comptes publiés et rapports annuels de la banque : à obtenir. -->
+
+## La Caisse des prêts et de soutien des collectivités locales {#sec-ep-ge-cpscl}
+
+L'institution de la caisse, ses ressources et ses emplois, ainsi que ses dotations, ses subventions et ses prêts de 2005 à 2024 d'après ses états financiers, sont exposés dans le volume [« Les finances locales », section « La caisse des prêts et de soutien des collectivités locales »](../finances_locales/_transferts.html#sec-fl-cpscl). Les dettes et les créances croisées de l'ensemble des entreprises avec l'État sont à la @sec-ep-croisees.
+
+**La [Caisse des prêts et de soutien des collectivités locales](#g-cpscl) (CPSCL) prête aux collectivités locales et subventionne leurs investissements ; le budget lui verse 59,2 MD en 2017, puis de 179,8 à 300,5 MD par an de 2018 à 2020. Dans le tableau du secteur quasi financier du rapport du ministère des Finances, elle n'a pas de subvention d'exploitation, son résultat net reste entre 30,9 et 49,8 MD par an de 2018 à 2023, et son total des actifs passe de 1 006,1 MD fin 2020 à 1 213,4 MD fin 2023, chiffre provisoire.**
+
+```{python}
+#| label: fig-ep-cpscl-budget
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "cpscl_budget",
+    caption=("Caisse des prêts et de soutien des collectivités locales : transferts du budget, "
+             "effectif et charges de personnel, exercices 2016-2023, d'après le rapport sur les "
+             "entreprises publiques. Source : ministère des Finances [@minfin-ep-2020, p. 34 ; "
+             "@minfin-ep, p. 149 ; @minfin-ep-2022, p. 105 ; @minfin-ep-2024, p. 63 ; "
+             "@minfin-ep-2025, p. 40]"),
+    note_lecture=(
+        "Transferts, effectif et charges de personnel : pour chaque exercice, la dernière "
+        "édition qui le donne, nommée au pied de la barre des transferts ; hachures : chiffre "
+        "provisoire ou probable. Pour 2020, l'édition LF 2021 donnait 257,1 MD de transferts, "
+        "l'édition LF 2022 en donne 300,5. La caisse n'est dans aucun classement des dix "
+        "premiers résultats (« n. c. ») ; son résultat net est dans la figure de ses comptes, "
+        "plus bas. L'effectif de 2018 à 2020 de l'édition LF 2022 (171, 169 et 176 agents) est "
+        "dans cette figure. « n. d. » : le rapport ne donne pas la grandeur ; ce n'est pas un "
+        "zéro."),
+)
+```
+
+- **Une caisse créée en 1975.** [La loi de 1975](../finances_locales/_transferts.html#sec-fl-cpscl-1975) transforme la caisse des prêts aux communes en caisse des prêts et de soutien des collectivités locales, dotée de la personnalité civile et de l'autonomie financière, au 1^er^ janvier 1976. [En 2001](#r-ep-cpscl-2001), la loi fixe son fonds de dotation à 86 161 053,521 dinars.
+- **Des prêts garantis.** [En 2015](#r-ep-cpscl-2015), la loi approuve la garantie de l'État à un prêt global de 50 millions d'euros de la Banque européenne d'investissement à la caisse, pour son programme d'investissement communal de 2014 à 2018.
+- **Ce que le budget verse.** Les transferts du budget à la caisse sont de 59,2 MD en 2017, 216,4 MD en 2018, 179,8 MD en 2019 et 300,5 MD en 2020, chiffre provisoire de l'édition LF 2022 (@fig-ep-cpscl-budget). La fiche de la caisse inscrit des subventions d'investissement de 182,2 MD en 2018, 150,9 MD en 2019 et 222,9 MD en 2020. Fin 2023, la caisse déclare 532,9 MD de créances sur l'État, parmi les dix premiers montants du classement des entreprises [@minfin-ep-2025, p. 122-123].
+- **Des comptes bénéficiaires.** Les produits d'exploitation sont de 30,6 MD en 2018, 34,3 MD en 2020, 46,1 MD en 2022 et 30,4 MD en 2023, chiffre provisoire, dont 27 à 32 MD de recettes ; la caisse perçoit en outre de 23,0 à 33,9 MD de produits des placements par an de 2020 à 2023. Le résultat net est de 31,4 MD en 2018, 44,3 MD en 2019, 46,4 MD en 2020, 36,3 MD en 2021, 49,8 MD en 2022 et 30,9 MD en 2023 (@fig-ep-cpscl-fiches). Sur les exercices 2021 à 2023, la part de l'État dans ses bénéfices est de 58,6 MD (@sec-ep-dividendes-part).
+- **Un bilan fait de fonds publics.** Les fonds propres passent de 361,8 MD fin 2018 à 454,8 MD fin 2023 ; les liquidités, de 488,4 MD fin 2020 à 738,9 MD fin 2023, et les prêts aux collectivités, comptés en créances sur les clients, restent entre 437,5 et 479,0 MD. Selon une note de l'édition LF 2025, la caisse ne reçoit pas de concours bancaires : la ligne « concours bancaires et autres passifs financiers » du tableau, qui passe de 365,6 MD fin 2020 à 623,9 MD fin 2023, porte les aides de l'État et les dons extérieurs non encore transférés aux communes [@minfin-ep-2025, p. 40]. L'effectif reste entre 169 et 178 agents de 2018 à 2023 ; les charges de personnel passent de 6,1 à 8,2 MD.
+- **Des éditions qui ne concordent pas.** Dans l'édition LF 2024, le total des passifs imprimé égale le total des actifs (1 092 MD pour 2021), fonds propres compris ; l'édition LF 2025 imprime 625,0 MD pour la même année, hors fonds propres. Pour 2023, l'édition LF 2025 imprime 1 213,4 MD d'actifs pour 654,4 MD de passifs et 454,8 MD de fonds propres. Pour 2022, provisoire puis réalisé, les produits d'exploitation passent de 44,9 à 46,1 MD et le résultat net de 50 à 49,8 MD.
+
+:::: {.chronologie-repliable titre="Caisse des prêts et de soutien des collectivités locales : fiches du ministère des Finances, exercices 2018-2023 (dette par créancier, bilan, résultat, effectif), et textes de dotation et de garantie, 2001-2015"}
+
+```{python}
+#| label: fig-ep-cpscl-fiches
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.figure(
+    "cpscl_fiches",
+    caption=("Caisse des prêts et de soutien des collectivités locales d'après le tableau du "
+             "secteur quasi financier du rapport sur les entreprises publiques, exercices "
+             "2018-2023, en millions de dinars courants et en agents : chaque exercice dans la "
+             "dernière édition qui le donne ; dette par créancier de l'édition LF 2022. Source : "
+             "ministère des Finances [@minfin-ep-2022, p. 44 ; @minfin-ep-2024, p. 63 ; "
+             "@minfin-ep-2025, p. 40]"),
+    note_lecture=(
+        "L'édition retenue est nommée sous l'année, avec le statut du chiffre ; 2023 est "
+        "provisoire (hachures) ; 2020 est, dans l'édition LF 2022, audité en attente de "
+        "l'approbation du conseil d'administration. La subvention d'exploitation est nulle dans "
+        "les trois éditions. La « dette envers les banques » de l'édition LF 2022 et les "
+        "« concours bancaires » des éditions suivantes ne sont pas des crédits bancaires (note "
+        "de l'édition LF 2025). Le total des passifs de l'édition LF 2024, qui comprend les fonds "
+        "propres, n'est pas tracé. Toutes les valeurs imprimées, édition par édition, sont dans "
+        "les tableaux qui suivent."),
+)
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import grandes_entreprises as ge
+ge.tableau_fiche_detail("cpscl", ("LF2022",),
+    caption=("Caisse des prêts et de soutien des collectivités locales, édition LF 2022 : dette "
+             "par créancier, fonds propres, investissements, résultat et emploi, exercices "
+             "2018-2020 ; 2020 audité, en attente de l'approbation du conseil d'administration. "
+             "Source : ministère des Finances [@minfin-ep-2022, p. 44]"),
+    tbl_id="tbl-ep-cpscl-fiche-a")
+ge.tableau_fiche_detail("cpscl", ("LF2024", "LF2025"),
+    caption=("Caisse des prêts et de soutien des collectivités locales, éditions LF 2024 et "
+             "LF 2025 : bilan et résultat, exercices 2020-2023 ; 2022 provisoire dans l'édition "
+             "LF 2024, 2023 provisoire dans l'édition LF 2025. Dans l'édition LF 2024, le total "
+             "des passifs comprend les fonds propres. Dans l'édition LF 2025, le bilan de 2023 ne "
+             "s'équilibre pas (écart de 104,2 MD). Les charges financières nettes de 2021 et de "
+             "2022 changent de signe d'une édition à l'autre. Source : ministère des Finances "
+             "[@minfin-ep-2024, p. 63 ; @minfin-ep-2025, p. 40]"),
+    tbl_id="tbl-ep-cpscl-fiche-b")
+```
+
+| Date d'effet | Texte, article et page | Ce que le texte change | Portée |
+|---|---|---|---|
+| []{#r-ep-cpscl-2001}[2 juin 2001]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 28 mai 2001, plus cinq jours, jour du dépôt non compté | loi n° 2001-56 du 22 mai 2001 [@loi2001-56-cpscl, article unique, p. 1200] | le fonds de dotation de la caisse est fixé à 86 161 053,521 dinars | étape |
+| []{#r-ep-cpscl-2015}[13 juin 2015]{.insecable} : dépôt du *Journal officiel* au gouvernorat de Tunis le 8 juin 2015, plus cinq jours, jour du dépôt non compté | loi n° 2015-19 du 2 juin 2015 [@loi2015-19-cpscl, article unique, p. 1104] | approbation du contrat de garantie à première demande conclu à Tunis le 19 décembre 2013 entre le gouvernement et la Banque européenne d'investissement, relatif au prêt global de 50 000 000 d'euros accordé à la caisse pour le programme d'investissement communal de la période 2014-2018 | étape |
+
+: Les textes de la Caisse des prêts et de soutien des collectivités locales : dotation et garantie, 2001-2015 {#tbl-ep-registre-cpscl}
+
+::::
+
+<!-- TODO (documentaliste) : fiche de la CPSCL des éditions LF 2022 (p. 44, tableau 22), LF 2024 (p. 63, tableau 27) et LF 2025 (p. 40) versée dans la série entreprises-publiques-fiches-entreprises de tunisia-data (29 octobre 2026, branche donnees/fiche-stbbh), sous les codes de l'Office national des postes. Indicateurs d'activité non versés : accords de principe et approbations définitives de financement de projets, en nombre et en MD (LF 2022 : 319, 416 et 348 accords pour 73,0, 205,9 et 101,9 MD). « Dette envers les banques » de l'édition LF 2022 (118,5 ; 159,0 ; 148,4 MD) : vraisemblablement les mêmes fonds de l'État et dons extérieurs que la ligne des concours bancaires des éditions suivantes ; à confirmer. Objet des subventions d'investissement de la fiche LF 2022 et lien avec les transferts du budget : à établir. Variation imprimée des passifs 2023-2022 (131,9 MD) qui ne redonne pas les niveaux : relevée dans la série. Textes non lus : loi n° 97-78 (garantie de l'État, deuxième projet de développement municipal, BIRD), lois n° 2003-19, 2003-39 et 2005-53 (garanties de prêts de la BIRD, de l'AFD et de la BEI) ; décret présidentiel de ratification de la garantie de 2015 ; décrets d'organisation et de conditions des prêts déjà listés dans le volume des finances locales (n° 77-212, 79-619, 92-688, 92-1092, 97-1135, 2014-3505, 2016-367) ; décrets n° 94-2378 et 99-2023 (statut du personnel), 2001-1910 et 2021-505 (organigramme), 2001-1911 (emplois fonctionnels) ; décrets gouvernementaux n° 2018-437 et 2018-438 (agences régionales de Kairouan et du Kef). -->
+
+<!-- TODO (documentaliste) : tableau des banques publiques des éditions LF 2022, LF 2024 et LF 2025 versé pour la STB, la BH, la BNA, la BFPME et la BTS, et fiche de la CPSCL des mêmes éditions (série entreprises-publiques-fiches-entreprises, mise en page « banques » pour les banques). Restent à verser : les éditions françaises LF 2020 et LF 2021 et l'édition LF 2023 donnent les comptes dans la prose, pas en tableau ; classements par charges de personnel et par produits d'exploitation : non versés. -->
