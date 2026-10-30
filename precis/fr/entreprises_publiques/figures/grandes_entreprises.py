@@ -35,6 +35,7 @@
     ge.figure("snit_fiches", …)                              # SNIT : fiche seule
     ge.figure("arru_fiches", …)                              # ARRU : fiche seule
     ge.figure("sogemt_budget", …) ; ge.figure("sogemt_fiches", …)  # SOGEMT
+    ge.figure("ttn_fiches", …)                               # Tunisie Trade Net : fiche seule
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -732,6 +733,11 @@ PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024"), ("regie_alcools", "
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
 PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024"), ("cpscl", "LF2024")}
+              "ttn": "Tunisie Trade Net"}
+
+# Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
+# des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
+PASSIFS_AVEC_FONDS_PROPRES = {("office_commerce", "LF2024"), ("ttn", "LF2024")}
 
 
 def fig_fiche(entite: str):
@@ -1505,6 +1511,8 @@ FIGURES = {
                       "fig_ep_sogemt_fiches"),
     "sogemt_budget": (lambda: fig_budget("sogemt", ORANGE), lambda: table_budget("sogemt"),
                       (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_sogemt_budget"),
+    "ttn_fiches": (lambda: fig_fiche("ttn"), lambda: table_fiche("ttn"), (S_FICHES,),
+                   "fig_ep_ttn_fiches"),
 }
 
 

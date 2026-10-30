@@ -720,6 +720,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Tunisair | شركة الخطوط التونسية |  |
 | Tunisie Autoroutes | شركة تونس الطرقات السيارة |  |
 | Tunisie Télécom | اتصالات تونس |  |
+| Tunisie Trade Net | شركة شبكة تونس للتجارة | TTN |
 | Tutelle | سلطة الإشراف |  |
 | Tuteur | الولي |  |
 | TVA sur la marge | احتساب الأداء على القيمة المضافة على الفارق بين ثمن البيع وثمن الشراء |  |
