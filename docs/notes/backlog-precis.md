@@ -4567,6 +4567,46 @@ Ce qui reste :
     trois ans ; et condition sociale de l'arrêté conjoint du 8 avril 2025 (au moins 50 % des lots
     réalisés sur les terrains acquis au prix préférentiel réservés aux ménages dont le revenu brut
     mensuel ne dépasse pas trois fois le salaire minimum), à verser.
+- **Société de promotion des logements sociaux — section écrite le 29 octobre 2026**
+  (`_autres_entreprises.qmd`, `#sec-ep-ge-sprols`, en fin de chapitre, à déplacer dans un chapitre
+  « L'habitat et l'équipement » ; intro, « La source » et TODO final du chapitre mis à jour). Figure
+  `fig-ep-sprols-fiches` seule (aucun transfert du budget : 0 imprimé de 2018 à 2022), tableaux
+  repliés `tbl-ep-sprols-fiche-a` et `-b`. **Fiche du ministère des Finances versée le 29 octobre
+  2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-sprols`, code `sprols`) : LF 2022 p. 79, LF 2024 p. 118, LF 2025 p. 93, lues à
+  l'image (300 dpi) et retrouvées dans la couche texte ; aucun écart déclaré ; LF 2022 imprime
+  l'exercice 2020 « 200 », sans astérisque. Registre `tbl-ep-registre-sprols`, lu au corpus local :
+  loi n° 77-53 (image), décret n° 77-926 (image et OCR de lecture), décret n° 92-1818 (image), loi
+  n° 93-78 et son **rectificatif** (JORT n° 91 de 1993, p. 2005, image : l'article 4 nouveau réserve
+  le capital à la CNSS, à la CNRPS et à la CAVIS), décret n° 2010-3170, décret n° 2012-1224, décret
+  gouvernemental n° 2017-840, décret gouvernemental n° 2020-1034, loi n° 2026-2 ; dates de dépôt
+  lues dans la mention de la dernière page de chaque fascicule. Glossaire : `sprols` (existant).
+  **Glossaire corrigé** : « 14 février 2026 » → « 18 février 2026 » dans `sprols`, `snit`,
+  `location-vente` et `vente-a-temperament` (FR et AR) : dépôt du JORT n° 19 de 2026 le 13 février,
+  plus cinq jours (loi n° 93-64), les lois n° 2026-1 et 2026-2 ne portant pas de clause d'effet.
+  Même correction dans `prestations_sociales/_logement_social.qmd` (§ des opérateurs, lignes
+  `r-log-op-2026-1` et `r-log-op-2026-2`). **À reprendre dans ce chapitre** : registre de la SPROLS
+  daté par la publication brute (`r-log-sprols-decret-1977`, `-1992`, `-1993`, `-2017`) ; dates
+  d'effet calculées dans `tbl-ep-registre-sprols` (20 novembre 1977, 29 octobre 1992, 29 juillet
+  1993, 7 août 2017) ; ligne de 1993 et § des opérateurs (« réservé en 1993 à la CNRPS et à la
+  CAVIS ») à corriger par le rectificatif de novembre 1993 (CNSS, CNRPS et CAVIS).
+  **Reste** :
+  - textes **dans le corpus local, non lus** : décret n° 2005-910 et ses modificatifs antérieurs à
+    2010 (tutelle avant 2010) ; arrêté du 17 avril 2006 (conservation des documents) ; décret
+    n° 80-1504 (personnel), décrets n° 99-1105 et 2015-539 (organigramme), n° 2000-2576 (statut
+    particulier), n° 2007-2983 et 2015-540 (emplois fonctionnels) ; décrets de cession au dinar
+    symbolique n° 2016-145, 2016-146, 2019-484 et 2020-917 (intitulés arabes pour les deux
+    derniers) ; article 30 de la loi n° 2012-1 ;
+  - garanties : aucune identifiée ; bénéficiaire des prêts de l'AFD (lois n° 98-105, 2005-14), du
+    Fonds saoudien (loi n° 2013-42) et du don du Qatar (décret n° 2013-1422) à lire ;
+  - passifs hors fonds propres (215 à 224 MD) bien supérieurs à la dette de l'édition LF 2022 et aux
+    lignes détaillées (52 MD fin 2020) : nature du reste à établir ; dettes et créances envers l'État
+    de fin 2021 (LF 2023 : 9,5 et 0,2 MD) et de fin 2022 (LF 2024 : 0,3 et 10,5 MD), inversion
+    possible ; contribution aux ressources propres, transferts, couverture des charges : cités
+    d'après les pages, non versés dans une série ; annexe 8 : société non trouvée dans la couche
+    texte, à vérifier à l'image ;
+  - grandeurs d'activité des fiches (chiffre d'affaires, ventes de logements) : non versées ;
+  - comptes publiés et rapports annuels de la société : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche

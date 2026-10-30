@@ -31,6 +31,7 @@
     ge.figure("bna_fiches", …) ; ge.figure("bfpme_budget", …)  # banques publiques (BNA, BFPME, BTS)
     ge.tableau_fiche_banque("bts", ("LF2025",), caption=…, tbl_id=…)  # tableau des banques, replié
     ge.figure("afh_fiches", …)                               # Agence foncière d'habitation
+    ge.figure("sprols_fiches", …)                            # SPROLS : fiche seule
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -713,6 +714,7 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               # Banques publiques (BNA, BFPME, BTS)
               "bna": "BNA", "bfpme": "BFPME", "bts": "BTS"}
               "afh": "Agence foncière d'habitation"}
+              "sprols": "SPROLS"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -1487,6 +1489,8 @@ FIGURES = {
                    "fig_ep_bts_fiches"),
     "afh_fiches": (lambda: fig_fiche("afh"), lambda: table_fiche("afh"), (S_FICHES,),
                    "fig_ep_afh_fiches"),
+    "sprols_fiches": (lambda: fig_fiche("sprols"), lambda: table_fiche("sprols"), (S_FICHES,),
+                      "fig_ep_sprols_fiches"),
 }
 
 
