@@ -2597,7 +2597,8 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
 - [ ] **Langues d'enseignement, 1958-1995 (30 octobre 2026, branche `educ/langues-textes`)** : lus et versés au registre
   (`#sec-educ-scolaire-cycles-langues`, tableau `tbl-educ-francais-bac`) : certificat de fin d'études primaires de 1959,
   arrêtés du baccalauréat de 1963, 1970, 1981, 1988, 1991 (et rectificatif), annexe de 1992, arrêtés du 12 et du 30 avril 1994,
-  décrets d'horaire n° 92-1180 et 96-681. Restent, connus des seuls rapports (note
+  décrets d'horaire n° 92-1180, 96-681 et 2000-2168. À lire au corpus : arrêté du 24 mai 1965 sur le baccalauréat
+  (JORT 1965/027, p. 613-614) ; décret gouvernemental n° 2019-1085 (horaire). Restent, connus des seuls rapports (note
   `education-langue-enseignement-histoire-2026-10-30.md`, PR #608) :
   - programmes et horaires du primaire de 1958 (70 h / 60 h), 1976 (80 h / 65 h), 1978 (calcul en arabe), 1986-1989
     (entrée du français) : aucun arrêté au titre dans `jort_cache` ; fascicules de 1958 à 1991 sans couche texte, OCR à faire
