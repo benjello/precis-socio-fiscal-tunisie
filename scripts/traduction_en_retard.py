@@ -36,6 +36,9 @@ import sys
 from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from arabe_cablage import est_relais  # noqa: E402
 
 
 def _horodatage(chemin: Path) -> int | None:
@@ -59,8 +62,9 @@ def en_retard() -> list[tuple[Path, int | None, int | None]]:
         d_fr = _horodatage(fr)
         if d_fr is None:
             continue
-        if not ar.exists():
-            # Jamais traduit : c'est le retard maximal.
+        if not ar.exists() or est_relais(ar):
+            # Jamais traduit : c'est le retard maximal. Une page-relais engendrée par
+            # `arabe_cablage.py` n'est pas une traduction, quelle que soit sa date.
             retard.append((fr, d_fr, None))
             continue
         d_ar = _horodatage(ar)

@@ -22,16 +22,21 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 
 - **Toujours `uv run`** pour Python — jamais `python3` ni `.venv/bin/python3`.
 - **Le français est la source de vérité.** N'écris jamais un `.qmd` sous `precis/ar/` : la version
-  arabe est produite par la CI. Les `references.json`, eux, se tiennent à la main dans les deux
-  langues — et les **`_quarto.yml` aussi**.
+  arabe est produite par la CI (traduction, et pages-relais engendrées par `scripts/arabe_cablage.py`). Les `references.json`, eux, se tiennent à la main dans les deux
+  langues ; les **`_quarto.yml` arabes** aussi, sauf leurs listes de chapitres (engendrées).
 - **Ne remets jamais les `_quarto.yml` dans la synchronisation de traduction.** Ils en sont exclus
   par le filtre du workflow *et* par `translate_sync.fichier_a_traduire()`. Motif : le fichier arabe
   porte des éléments qui n'ont **aucun original français** — `dir: rtl`, le bloc `language:` des
   libellés d'interface, les titres des parties du livre. Le traducteur ne peut pas les déduire du
   fichier français et les effaçait à chaque passage ; le livre arabe rendait alors 404 jusqu'au
-  rattrapage à la main. Conséquence pratique : **quand tu ajoutes un chapitre côté français, ajoute-le
-  toi-même au `_quarto.yml` arabe**, une fois sa traduction livrée — sans quoi il ne sera servi dans
-  aucune des deux langues. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
+  rattrapage à la main. Conséquence pratique : **quand tu ajoutes, retires ou renommes un chapitre côté
+  français, lance `uv run python scripts/arabe_cablage.py`** et commite le résultat. Le script
+  réécrit les seules listes `chapters:` et `appendices:` du `_quarto.yml` arabe d'après le français
+  (ce qui n'a pas d'original français est conservé) et pose une page-relais (avis « pas encore
+  traduit » et lien vers le français) pour tout chapitre sans arabe ; la CI le rejoue après chaque
+  passage de traduction, et `verifier-conventions.yml` le vérifie sur les PR (`--verifier`). Une
+  page-relais porte un commentaire HTML de tête ; ni `traduction_en_retard.py`, ni la parité ne la
+  prennent pour une traduction, et `translate_sync` l'écrase. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
   `rendre-les-livres.yml`, qui rend les livres disponibles sur chaque PR.
 - **La traduction se traite seule ; l'état se lit dans une issue.** Le palier gratuit de Gemini
   plafonne par mois. Au premier refus de limite de dépense (plafond mensuel, 402, ou 429 qui ne

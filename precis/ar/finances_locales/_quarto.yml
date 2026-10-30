@@ -16,14 +16,13 @@ book:
   chapters:
     - index.qmd
     - _notions.qmd
-    # Chapitres à déclarer quand leur traduction sera livrée :
-    # - _histoire.qmd
-    # - _competences.qmd
-    # - _budgets.qmd
-    # - _impots_immeubles.qmd
-    # - _impots_activite.qmd
-    # - _taxes_redevances.qmd
-    # - _transferts.qmd
+    - _histoire.qmd
+    - _competences.qmd
+    - _budgets.qmd
+    - _impots_immeubles.qmd
+    - _impots_activite.qmd
+    - _taxes_redevances.qmd
+    - _transferts.qmd
 
   appendices:
     - _glossaire.qmd

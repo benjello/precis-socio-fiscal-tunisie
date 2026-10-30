@@ -169,9 +169,25 @@ jobs:
           echo "Translating files: ${{ steps.changed-files.outputs.files }}"
           uv run --with google-genai python scripts/translate_sync.py $BASE_SHA $HEAD_SHA ${{ steps.changed-files.outputs.files }}
 
+      # CÂBLAGE DE L'ARABE. Déterministe, sans modèle ni réseau : les listes de chapitres
+      # des `_quarto.yml` arabes suivent les français, et tout chapitre sans traduction
+      # reçoit une page-relais (avis + lien vers le français), de sorte que le livre arabe
+      # n'a ni 404 ni chapitre oublié. Ce que le robot vient de traduire remplace le relais.
+      # Voir scripts/arabe_cablage.py. S'exécute même quand rien n'est à traduire (plafond
+      # atteint, liste vide) : le câblage ne coûte rien.
+      - name: Wire the Arabic books
+        id: cablage
+        run: |
+          uv run --no-project --with pyyaml python scripts/arabe_cablage.py
+          if [ -n "$(git status --porcelain precis/)" ]; then
+            echo "modifie=true" >> $GITHUB_OUTPUT
+          else
+            echo "modifie=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Open PR with translation changes
         id: open-pr
-        if: steps.changed-files.outputs.files != ''
+        if: steps.changed-files.outputs.files != '' || steps.cablage.outputs.modifie == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -259,9 +275,13 @@ jobs:
         run: |
           set +e
           uv sync
-          LIVRES=$(for f in ${{ steps.changed-files.outputs.files }}; do
-                     case "$f" in precis/fr/*/*) echo "$f" | cut -d/ -f3 ;; esac
-                   done | sort -u)
+          # Livres touchés : ceux des fichiers français traduits, plus ceux dont le commit de
+          # la PR modifie l'arabe (pages-relais et `_quarto.yml` du câblage compris).
+          LIVRES=$({ for f in ${{ steps.changed-files.outputs.files }}; do
+                       case "$f" in precis/fr/*/*) echo "$f" | cut -d/ -f3 ;; esac
+                     done
+                     git diff --name-only HEAD~1 HEAD | grep -E '^precis/ar/[^/]+/' | cut -d/ -f3
+                   } | sort -u)
           if [ -z "$LIVRES" ]; then
             echo "Aucun livre touché (CHANGELOG seul, par exemple) : rien à rendre."
             exit 0

@@ -20,8 +20,12 @@ book:
     - _salaire_minimum.qmd
     - _conventions.qmd
     - _negociations.qmd
+    - _temps_travail.qmd
+    - _rupture_contrat.qmd
+    - _politiques_emploi.qmd
 
   appendices:
+    - _annexe_conventions.qmd
     - _glossaire.qmd
 
 language:
