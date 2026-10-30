@@ -3744,7 +3744,8 @@ Ce qui reste :
     29 octobre 2026, `#sec-ep-ge-tt`, `#sec-ep-ge-poste`, `#sec-ep-ge-otc`, `#sec-ep-ge-sndp`) : mêmes trois éditions, pages connues par la série des effectifs ; lisibles dans
     le corpus de `tunisia-data`, à l'image ; leurs textes fondateurs, à chercher dans
     `jort_cache.db` ;
-  - SNCFT : statuts de 1969 (loi n° 69-31, JORT n° 19 de 1969, p. 581-584, dans le corpus local,
+  - SNCFT : loi n° 2005-72 (assainissement financier) lue et portée au registre le 30 octobre 2026
+    (`r-ep-sncft-2005`) ; statuts de 1969 (loi n° 69-31, JORT n° 19 de 1969, p. 581-584, dans le corpus local,
     non lus) ; comptes avant 2018 (rapports annuels de la société, à obtenir) ;
   - STEG : bilan avant 2013 (rapports annuels 2006-2016 déjà rangés dans `tunisia-data`,
     `data/raw/minenergie/steg/rapports-annuels/`) ; notes des états financiers de 2022 sur le
@@ -3859,8 +3860,6 @@ Ce qui reste :
     à l'image**, non lus ; décret n° 99-2645 (statut particulier) : publié en arabe seulement,
     **édition arabe du JORT n° 96 de 1999 à lire** ; organigrammes et emplois fonctionnels
     (n° 2001-370, 2001-371, 2007-448, 2008-3909, 2009-3085, 2021-278), non lus ;
-  - loi n° 2005-72 (dettes de la SNCFT envers la SNDP, 21,75 MD au 31 décembre 2001, converties
-    en fonds de dotation de la SNCFT) : lue, à verser à la section de la SNCFT ;
   - garanties : les fascicules d'avant 1994 (sans couche texte) n'ont été parcourus que par
     leurs intitulés ; les éditions arabes et 2013-2026, par le seul cache plein texte.
 - **Office des céréales — section écrite le 28 octobre 2026** (`_offices.qmd`,
@@ -4268,8 +4267,9 @@ Ce qui reste :
   - grandeurs d'activité (passagers, mouvements d'avions, fret) non relevées ; éditions françaises
     LF 2020 et LF 2021 : comptes dans la prose, non versés ; rapports annuels de l'Office : **à
     obtenir** ;
-  - à trancher : `_annexe_liste.qmd` dit que les listes ne disent pas que l'OACA succède à l'Office
-    des ports aériens ; le décret n° 98-1374 le dit (changement de dénomination).
+  - tranché le 30 octobre 2026 : décrets n° 98-1374 et 98-1385 (changements de dénomination de
+    l'Office des ports aériens et de l'Office des ports nationaux) lus et portés au registre de
+    `_annexe_liste.qmd` (`r-epl-1998-noms`), qui ne dit plus que la succession n'est pas établie.
 - **Office national de l'huile — section écrite le 28 octobre 2026** (`_offices.qmd`,
   `#sec-ep-ge-onh`, après l'ONAS et avant la SNCFT, comme demandé ; l'intro du chapitre ne dit plus
   que les entreprises sont rangées dans l'ordre des transferts, l'ONH recevant plus que la SONEDE et
@@ -4372,10 +4372,16 @@ Ce qui reste :
   **Reste** :
   - **renvoi au volume « La santé »** : aucun chapitre ne traite des médicaments ni des achats de la
     Pharmacie centrale au 30 octobre 2026 ; TODO (rédacteur) laissé en tête de section ;
-  - 192 MD de la loi de finances complémentaire pour 2021 (décret-loi n° 2021-3, JORT n° 105 de 2021,
-    **sans couche texte, OCR à faire**) et 200 MD par an des lois de finances pour 2022 et 2023 : texte et
-    ligne budgétaire **non identifiés** ; prêt du Fonds arabe de 26 MD (2022) : ratification non
-    identifiée ;
+  - 192 MD de la loi de finances complémentaire pour 2021 et 200 MD par an des lois de finances pour
+    2022 et 2023 (prise en charge par l'État de dettes des structures sanitaires publiques envers la
+    Pharmacie centrale, rapport LF 2025 p. 110) : **lu le 30 octobre 2026**, aucun article ni aucune
+    ligne ne les porte — décret-loi n° 2021-3 (articles en couche texte, tableaux A à D océrisés,
+    annexe de l'arrêté de répartition, mission de la santé p. 2632, lue à l'image), lois de finances
+    pour 2022 et 2023 (couche texte). Hausse de 193,0 MD des « autres dépenses » des programmes 1 à 3
+    de la mission de la santé, non rattachée. Fiche `r-ep-pct-dettes-structures-sanitaires` ; reste
+    **à obtenir** : documents budgétaires de la mission de la santé et rapport du projet de loi de
+    finances complémentaire ; tableaux de la mission de la santé pour 2022 et 2023 **lisibles au
+    corpus**, non lus ; prêt du Fonds arabe de 26 MD (2022) : ratification non identifiée ;
   - subventions d'équipement « au profit de la pharmacie centrale » des lois de finances pour 2018 et
     2019 (repérées dans le miroir iort, **lisibles au corpus**, non lues) face à des transferts nuls dans
     le rapport : à rapprocher ;
@@ -4508,7 +4514,8 @@ Ce qui reste :
   `tbl-ep-registre-bfpme` (lois de finances pour 2005, art. 23, et 2009, art. 15 ; pour 2024, art. 31,
   pour 2025, art. 53, et pour 2026, art. 63, arabe) et `tbl-ep-registre-bts` (loi n° 97-87 ; loi
   n° 2000-45, image ; lois de finances pour 2015, art. 38, pour 2018, art. 12, et pour 2026, art. 70,
-  arabe). Glossaire : `bna`, `bfpme`, `bts`.
+  arabe ; loi de finances pour 2016, art. 77 et 78, lue le 30 octobre 2026 dans l'extrait français et
+  l'édition arabe, en couche texte). Glossaire : `bna`, `bfpme`, `bts`.
   **Reste** :
   - textes **dans le corpus local, non lus** : loi n° 59-65 et décret n° 64-295 (BNA) ; suite de la
     convention du 1er août 1959 ; décrets d'organigramme et d'emplois fonctionnels des trois banques
@@ -4516,8 +4523,6 @@ Ce qui reste :
     lois de garantie de prêts rétrocédés (BNA : n° 93-94, 95-79, 99-60, 2002-34 ; BFPME : n° 2006-40,
     2012-5, 2014-53, 2020-24, 2024-39 ; BTS : n° 2001-80) ; loi de finances pour 2024, art. 29 ; pour
     2025, art. 50-51 ; pour 2026, art. 23, 25, 26, 27 ; décret-loi n° 2022-79, art. 18 ;
-  - loi de finances pour 2016, art. 77 à 79 (BTS, édition arabe) : fascicule **sans couche texte,
-    OCR ou lecture à l'image** ;
   - fusion de la BNA et de la Banque nationale de développement agricole (loi n° 83-19 pour la
     seconde) : texte **non identifié** ; statuts de la BFPME (2005) : **à identifier** ;
   - objet des 22,7 MD de transferts à la BFPME en 2022 (LF 2024, tableau 45) ; part de l'État dans

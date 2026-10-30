@@ -5027,3 +5027,26 @@
     resultat: aucun
   a_faire:
   - lire la loi n° 2004-87 (JORT n° 103 de 2004, p. 3399-3406) et, en plein texte, les lois de finances pour 2004, 2006 et 2011
+
+- id: r-ep-pct-dettes-structures-sanitaires
+  objet: article ou ligne budgétaire par lesquels l'État prend en charge une partie des dettes des structures sanitaires publiques envers la Pharmacie centrale de Tunisie, 192 MD au titre de la loi de finances complémentaire pour 2021 et jusqu'à 200 MD par an au titre des lois de finances pour 2022 et 2023 (rapport sur les entreprises publiques, édition LF 2025, p. 110)
+  ou: [precis/fr/entreprises_publiques/_offices.qmd#sec-ep-ge-pct]
+  requetes:
+    titres_fts: ['"pharmacie centrale"', '"2021-3"']
+    titres_like: ['%pharmacie centrale%', '%finances rectificative pour l''annee 2021%']
+    iort_ar: [الصيدلية المركزية, ديون الهياكل الصحية العمومية, قانون المالية التعديلي لسنة 2021]
+    plein_texte: [pharmacie centrale, الصيدلية المركزية, الهياكل الصحية العمومية]
+    depuis: 2021-11-01
+  periode:
+    jusqu_au: 2023-12-31
+    motif: loi de finances complémentaire pour 2021 et lois de finances pour 2022 et 2023
+  passes:
+  - date: 2026-10-30
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache, titres (LIKE français et arabe) : seuls répondent, pour 2021-2023, l''article 62 du décret-loi n° 2021-21 (régime douanier des médicaments importés par la Pharmacie centrale). Corpus local : décret-loi n° 2021-3 (JORT n° 105 de 2021, édition française) — articles 1er à 3 en couche texte, tableaux A à D océrisés (p. 2562-2573), annexe de l''arrêté de répartition du 15 novembre 2021, mission de la santé (p. 2632), lue à l''image et comparée à celle du 23 décembre 2020 (JORT n° 128 de 2020, p. 3292) ; décret-loi n° 2021-21 (JORT n° 119 de 2021, éditions française et arabe, couche texte) ; décret-loi n° 2022-79 (JORT n° 141 de 2022, édition arabe, couche texte). Aucun article ni aucune ligne ne nomme la Pharmacie centrale ni les dettes des structures sanitaires ; les tableaux s''arrêtent à la mission, au programme et à la nature de la dépense. Les « autres dépenses » de la ligne RPE des programmes 1 à 3 de la mission de la santé augmentent de 193,0 MD entre les deux arrêtés de répartition de 2021, sans rattachement établi aux 192 MD.'
+    couvert_jusqu_au: 2023-12-31
+    resultat: aucun
+  a_faire:
+  - rapport ou note de présentation du projet de loi de finances complémentaire pour 2021 (ministère des Finances) et documents budgétaires de la mission de la santé 2021-2023 (budget par programme, rapport annuel de performance)
+  - tableaux de la mission de la santé des arrêtés de répartition pour 2022 et 2023 (non lus)
