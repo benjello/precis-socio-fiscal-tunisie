@@ -99,6 +99,22 @@ def cellule_chapitres(valeur: str) -> str:
     return "<br>".join(f"[{libelle}]({cible})" for libelle, cible in chapitres(valeur))
 
 
+def marquer(contenu: str, classe: str) -> str:
+    """Enveloppe une cellule dans un span Pandoc pour la feuille de style."""
+    return f"[{contenu}]{{.{classe}}}"
+
+
+def signaler(contenu: str, brut: str) -> str:
+    """Colore les cases où l'on attend le retour de la relectrice (voir ebauche-table.css)."""
+    if not brut.strip():
+        return marquer(contenu, "vide")
+    if "*Proposition" in brut or "*À confirmer" in brut:
+        return marquer(contenu, "demande")
+    if "*Piste" in brut:
+        return marquer(contenu, "piste")
+    return contenu
+
+
 def cellule_vide(valeur: str) -> str:
     return valeur if valeur.strip() else "à établir"
 
@@ -116,10 +132,16 @@ def tableau(famille: str, lignes: list[dict]) -> str:
             "| {} | {} | {} | {} | {} | {} | {} | {} |".format(
                 ligne["instrument"],
                 ligne["categorie"],
-                cellule_vide(ligne["institution"]),
-                cellule_textes(ligne["fondateur"]),
-                cellule_textes(ligne["modificatifs"]) if ligne["modificatifs"].strip() else "—",
-                cellule_textes(ligne["application"]) if ligne["application"].strip() else "—",
+                signaler(cellule_vide(ligne["institution"]), ligne["institution"]),
+                signaler(cellule_textes(ligne["fondateur"]), ligne["fondateur"]),
+                signaler(
+                    cellule_textes(ligne["modificatifs"]) if ligne["modificatifs"].strip() else "—",
+                    ligne["modificatifs"],
+                ),
+                signaler(
+                    cellule_textes(ligne["application"]) if ligne["application"].strip() else "—",
+                    ligne["application"],
+                ),
                 ligne["statut"].strip() or "—",
                 cellule_chapitres(ligne["chapitres"]),
             )

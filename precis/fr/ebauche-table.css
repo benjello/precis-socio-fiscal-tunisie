@@ -8,3 +8,11 @@ th, td { border: 1px solid #999; padding: 2pt 3pt; vertical-align: top; word-wra
 th { background: #eee; }
 tr { page-break-inside: avoid; }
 a { color: #1a3d7a; text-decoration: none; }
+
+.demande { display: block; background: #ffd9a8; border-left: 3pt solid #d9730d; padding: 1pt 2pt; }
+.piste { display: block; background: #fff3a8; border-left: 3pt solid #c9a800; padding: 1pt 2pt; }
+.vide { display: block; background: #cfe3ff; border-left: 3pt solid #2f6fd0; padding: 1pt 2pt; }
+.legende-couleurs span { padding: 1pt 5pt; margin-right: 6pt; }
+.points-a-trancher { border: 1px solid #d9730d; background: #fff7ec; padding: 4pt 8pt; margin: 6pt 0 10pt 0; }
+.points-a-trancher h2 { margin-top: 0; }
+@media print { .demande, .piste, .vide { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
