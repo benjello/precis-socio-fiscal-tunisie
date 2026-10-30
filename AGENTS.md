@@ -45,6 +45,13 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   relancer à la main. L'issue épinglée « Traductions arabes : état » (marqueur HTML caché ;
   `scripts/etat_traduction.py`, appelé par `translation-sync.yml`) dit le retard par livre, l'état,
   le budget mensuel appris et la consommation du mois ; elle ne se ferme pas.
+  **Rattrapage par lots** : le lundi et le 1er du mois, `scripts/lot_traduction.py` choisit UN
+  livre (structure récemment changée d'abord : prestations sociales, fiscalité, finances locales),
+  borné en fichiers (8) et en caractères (35 % du budget estimé, jamais au-delà de 75 % du budget
+  du mois : le reste est la marge des fusions), sans les fichiers déjà portés par une PR de
+  traduction ouverte. `uv run python scripts/lot_traduction.py --dry-run` montre le lot sans
+  réseau. Les chapitres de plus de 90 000 caractères sont traduits par morceaux (`decouper`).
+  Réglages en `workflow_dispatch` : `livre`, `max_fichiers`, `max_caracteres`, `budget_mensuel`.
 - **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `_glossaire.infobulles.html`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
 - **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut

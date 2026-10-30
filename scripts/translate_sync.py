@@ -1106,13 +1106,21 @@ def get_git_diff(base_sha, head_sha, file_path):
 # source est apparié au morceau cible qui commence à la MÊME ancre : les ancres sont
 # recopiées verbatim, elles sont donc communes aux deux langues. Si elles ne le sont
 # pas, le fichier échoue explicitement plutôt que d'apparier de travers.
-SEUIL_DECOUPAGE = 140_000
-TAILLE_MORCEAU = 60_000
+# Seuils abaissés le 30 octobre 2026 (140 000 / 60 000 auparavant) : un lot interrompu par la
+# limite de dépense ne doit pas laisser un gros chapitre à moitié traduit, et les chapitres de
+# plus de 90 000 caractères ont déjà montré des troncatures. Réglables sans modifier le code,
+# par `TRADUCTION_SEUIL_DECOUPAGE` et `TRADUCTION_TAILLE_MORCEAU` (workflow_dispatch).
+SEUIL_DECOUPAGE = int(os.environ.get("TRADUCTION_SEUIL_DECOUPAGE") or 90_000)
+TAILLE_MORCEAU = int(os.environ.get("TRADUCTION_TAILLE_MORCEAU") or 45_000)
+TITRE_SANS_ANCRE_RE = re.compile(r"^#{2}\s+\S")
 TITRE_ANCRE_RE = re.compile(r"^#{2,3}\s.*\{#([\w:.-]+)[^}]*\}\s*$")
 
 
-def points_de_coupe(texte):
+def points_de_coupe(texte, sans_ancre=False):
     """[(position, ancre)] des titres `##` à ancre où l'on peut couper le texte.
+
+    `sans_ancre` : accepte aussi les titres `##` sans ancre (ancre None). Réservé à une
+    première traduction, où aucune ancienne traduction n'est à apparier.
 
     Ne coupe jamais dans un bloc de code, un commentaire HTML ni un bloc `:::` : un
     morceau qui ouvrirait l'un sans le fermer inviterait le modèle à le refermer.
@@ -1130,6 +1138,9 @@ def points_de_coupe(texte):
                 m = TITRE_ANCRE_RE.match(ligne.rstrip("\n"))
                 if m and profondeur_div == 0 and pos > 0:
                     points.append((pos, m.group(1)))
+                elif (sans_ancre and not m and profondeur_div == 0 and pos > 0
+                      and TITRE_SANS_ANCRE_RE.match(ligne)):
+                    points.append((pos, None))
                 if nue.startswith(":::"):
                     if re.match(r"^:::+\s*$", nue):
                         profondeur_div = max(0, profondeur_div - 1)
@@ -1144,7 +1155,7 @@ def points_de_coupe(texte):
     return points
 
 
-def decouper(texte, taille=TAILLE_MORCEAU, ancres_permises=None):
+def decouper(texte, taille=TAILLE_MORCEAU, ancres_permises=None, sans_ancre=False):
     """Découpe en morceaux d'environ `taille` caractères aux points de coupe.
 
     Rend [(ancre de début ou None pour le premier, morceau)]. Un morceau peut dépasser
@@ -1156,7 +1167,7 @@ def decouper(texte, taille=TAILLE_MORCEAU, ancres_permises=None):
     coupes = []
     debut = 0
     dernier_point = None
-    points = [(pos, ancre) for pos, ancre in points_de_coupe(texte)
+    points = [(pos, ancre) for pos, ancre in points_de_coupe(texte, sans_ancre)
               if ancres_permises is None or ancre in ancres_permises]
     for pos, ancre in points:
         if pos - debut > taille and dernier_point is not None:
@@ -1958,7 +1969,8 @@ Fichier à traduire :
             if len(prompt_source) > SEUIL_DECOUPAGE:
                 morceaux = decouper(prompt_source, ancres_permises=(
                     {a for _p, a in points_de_coupe(prompt_old_target)}
-                    if prompt_old_target else None))
+                    if prompt_old_target else None),
+                    sans_ancre=not prompt_old_target)
                 anciens = (apparier(morceaux, prompt_old_target) if prompt_old_target
                            else [""] * len(morceaux))
                 print(f"  {file_path} : {len(prompt_source)} caractères, traduit en "

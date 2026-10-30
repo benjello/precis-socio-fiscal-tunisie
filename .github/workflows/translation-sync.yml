@@ -54,8 +54,14 @@ on:
   #
   # GitHub n'exécute les `schedule` que sur la branche par défaut : ce passage ne voit
   # donc que `master`, jamais le travail en cours sur une branche.
+  #
+  # DEUX DÉCLENCHEURS. Le lundi, un lot borné. Le 1er de chaque mois, un lot de plus : le palier
+  # gratuit se renouvelle par mois, et le budget neuf se dépense sans attendre le lundi.
+  # Chaque passage traite UN livre et UN lot (scripts/lot_traduction.py) : le retard se
+  # recalcule par dates de commit, le passage suivant reprend où celui-ci s'est arrêté.
   schedule:
     - cron: '41 6 * * 1'
+    - cron: '41 6 1 * *'
   workflow_dispatch:
     # Re-synchro manuelle, utile quand un sync a échoué (ex. 503 Gemini) sans
     # nouveau commit FR.
@@ -64,6 +70,27 @@ on:
         description: "Fichiers FR à retraduire (séparés par des espaces). Vide = tous les .qmd FR (hors _glossaire, généré)."
         required: false
         default: ""
+      livre:
+        description: "Sans fichiers : forcer le livre du lot (dossier sous precis/fr, ex. fiscalite). Vide = ordre de priorité."
+        required: false
+        default: ""
+      max_fichiers:
+        description: "Sans fichiers : nombre maximal de fichiers du lot (défaut 8)."
+        required: false
+        default: ""
+      max_caracteres:
+        description: "Sans fichiers : borne du lot en caractères de source française (défaut : 35 % du budget mensuel estimé)."
+        required: false
+        default: ""
+      budget_mensuel:
+        description: "Forcer le budget mensuel estimé, en caractères (défaut : appris des mois où la limite a été atteinte)."
+        required: false
+        default: ""
+      tout:
+        description: "Sans fichiers : tous les .qmd FR d'un coup (ancien comportement, coûteux). Sinon, un lot borné."
+        required: false
+        type: boolean
+        default: false
       traduction_complete:
         description: "Repartir de zéro au lieu de mettre à jour la traduction existante. À n'employer que sur un fichier dont la traduction a trop décroché : les corrections faites à la main sur l'arabe seul seront perdues."
         required: false
@@ -96,18 +123,34 @@ jobs:
 
       - name: Get changed files
         id: changed-files
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOT_LIVRE: ${{ github.event.inputs.livre }}
+          LOT_MAX_FICHIERS: ${{ github.event.inputs.max_fichiers }}
+          LOT_MAX_CARACTERES: ${{ github.event.inputs.max_caracteres }}
+          LOT_BUDGET: ${{ github.event.inputs.budget_mensuel }}
         run: |
+          # Lot borné : un livre, des fichiers choisis selon le budget mensuel appris (issue
+          # d'état), hors fichiers déjà couverts par une PR de traduction ouverte. Sans réseau
+          # modèle ni clé ; lit seulement l'issue et les PR par `gh`. Liste vide = rien à faire.
+          lot() {
+            uv run --no-project --with pyyaml python scripts/lot_traduction.py --depuis-issue \
+              ${LOT_LIVRE:+--livre "$LOT_LIVRE"} \
+              ${LOT_MAX_FICHIERS:+--max-fichiers "$LOT_MAX_FICHIERS"} \
+              ${LOT_MAX_CARACTERES:+--max-caracteres "$LOT_MAX_CARACTERES"} \
+              ${LOT_BUDGET:+--budget "$LOT_BUDGET"}
+          }
           if [ "${{ github.event_name }}" == "schedule" ]; then
-            # Détection SANS réseau ni clé : les fichiers FR dont le dernier commit
-            # est plus récent que celui de leur homologue AR. Liste vide = arabe à
-            # jour = aucune étape suivante, donc zéro appel au modèle.
-            CHANGED=$(python3 scripts/traduction_en_retard.py)
-            echo "En retard : ${CHANGED:-aucun}"
+            CHANGED=$(lot)
+            echo "Lot : ${CHANGED:-aucun}"
           elif [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             INPUT_FILES="${{ github.event.inputs.files }}"
             if [ -n "$INPUT_FILES" ]; then
               # Re-synchro ciblée sur les fichiers fournis.
               CHANGED="$INPUT_FILES"
+            elif [ "${{ github.event.inputs.tout }}" != "true" ]; then
+              CHANGED=$(lot)
+              echo "Lot : ${CHANGED:-aucun}"
             else
               # Re-synchro totale : tous les .qmd FR, SAUF les _glossaire.qmd
               # (générés par build_glossary.py, pas traduits). Les `_quarto.yml`
@@ -208,6 +251,12 @@ jobs:
           # PR. Une PR créée via GITHUB_TOKEN ne re-déclenche aucun workflow
           # (pas de boucle de traduction) ; le merge humain déploie la version AR.
           BRANCH="auto-translate/${{ github.sha }}"
+          # Un passage planifié ou manuel peut avoir lieu plusieurs fois sur le même commit
+          # (lundi et 1er du mois, relances) : sans suffixe, le `push -f` ci-dessous écraserait
+          # la PR du lot précédent. Un push sur master a un commit unique, le suffixe est inutile.
+          if [ "${{ github.event_name }}" != "push" ]; then
+            BRANCH="$BRANCH-lot-${{ github.run_id }}"
+          fi
           git checkout -b "$BRANCH"
           # PAS de `[skip ci]`. Il visait la boucle de rétro-traduction, mais le
           # filtre `PATTERN` et les `paths` ci-dessus s'en chargent déjà — et il
@@ -413,5 +462,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          PROCHAIN=$(uv run --no-project --with pyyaml python scripts/lot_traduction.py \
+            --depuis-issue 2>/dev/null || true)
           uv run --no-project python scripts/etat_traduction.py publier \
-            --bilan /tmp/bilan_traduction.json
+            --bilan /tmp/bilan_traduction.json --prochain-lot "$PROCHAIN"
