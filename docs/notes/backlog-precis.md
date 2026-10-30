@@ -4527,6 +4527,46 @@ Ce qui reste :
   - statut de la ligne « juin 2020 » de la BFPME (LF 2022) : « non dit » dans la série des fiches,
     « provisoire » dans celle des effectifs ;
   - comptes publiés et rapports annuels des trois banques : **à obtenir**.
+- **Agence foncière d'habitation — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-afh`, en fin de chapitre, à déplacer dans un futur chapitre « L'habitat et
+  l'équipement » ; intro, « La source » du chapitre et `index.qmd` mis à jour). Figure
+  `fig-ep-afh-fiches` (pas de figure budget : transferts du budget nuls, l'agence n'est pas dans la
+  série des transferts par entreprise), tableaux repliés `tbl-ep-afh-fiche-a` et `-b`. **Fiche du
+  ministère des Finances versée le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises`
+  (`tunisia-data`, branche `donnees/fiche-afh`, code `afh`) : LF 2022 p. 79 (tableau 28 du ministère
+  de l'Équipement), LF 2024 p. 119, LF 2025 p. 93, lues à l'image (300 dpi) et retrouvées dans la
+  couche texte ; aucun écart d'identité ; « autres passifs courants » de deux définitions (LF 2024 :
+  36,9 ; LF 2025 : 491,2 pour 2021). Registre `tbl-ep-registre-afh`, lu au corpus local : loi de
+  finances pour 1974, art. 28 (image), décret n° 74-33 (image, art. 1er à 28), loi n° 87-28 (image),
+  décret gouvernemental n° 2021-327, décret n° 2023-584, arrêté conjoint du 8 avril 2025 ; création
+  par renvoi à la ligne `r-ep-afi-1973`. Glossaire : `afh` passé au statut valide, définition
+  réécrite en FR et AR (partagée avec « Les prestations sociales »), clé `decret-gouv2021-327`
+  ajoutée au `references.json` du volume. Pages citées sans série : transferts nuls (LF 2022 p. 106,
+  LF 2023 p. 201, LF 2024 p. 155), contribution aux ressources propres de l'État (LF 2022 p. 103,
+  LF 2023 p. 198, LF 2024 p. 152), dettes et créances croisées (LF 2024 p. 142 et 146, LF 2025
+  p. 119 et 123), couverture des charges (LF 2024 p. 165), commentaires (LF 2022 p. 83, LF 2024
+  p. 123, LF 2025 p. 98).
+  **Reste** :
+  - textes **dans le corpus local, non lus** : décrets n° 76-313, 76-781, 86-281, 93-60 (fascicules
+    scannés, image) et 2001-986 (couche décalée, lu en passant) modifiant le décret n° 74-33 ; décret
+    n° 74-34 (marchés) ; décrets n° 75-585, 99-2745, 76-685, arrêté du 28 mai 1977 (personnel,
+    retraite) ; décrets n° 2000-2830, 2000-2831, 2017-1048 (emplois fonctionnels, organigramme) ;
+    décrets de zones de préemption, de périmètres d'intervention foncière et de réserves foncières
+    (1974-2026, dont **intitulés arabes** seuls de 2011 à 2026) ; loi n° 73-21 relue pour l'AFH ;
+  - date d'effet du décret n° 2021-327 : 23 mai 2021 ici (dépôt le 18 mai, plus cinq jours), 19 mai
+    2021 au volume « Les prestations sociales » (`r-log-afh-2021`) : **à harmoniser** ;
+  - grandeurs d'activité des fiches (chiffre d'affaires de LF 2022, ventes de lots en hectares de
+    LF 2024) : non versées ;
+  - aucune garantie de l'État à un prêt de l'agence identifiée dans les intitulés de jort_cache.db ;
+  - comptes publiés et rapports annuels de l'agence : **à obtenir** ;
+  - **pour « Les prestations sociales », chapitre « Le logement social » (`#sec-log-operateurs`)** :
+    arrêté de la ministre de l'Équipement et de l'Habitat du 28 janvier 2025, conditions
+    d'attribution des lots destinés à l'habitat individuel par l'AFH (JORT n° 11, p. 236, dépôt le
+    29 janvier 2025, effet le 3 février 2025 ; lu, couche texte) : une seule demande et un seul lot
+    par ménage, classement par ancienneté de la demande (score N/M × 100), actualisation tous les
+    trois ans ; et condition sociale de l'arrêté conjoint du 8 avril 2025 (au moins 50 % des lots
+    réalisés sur les terrains acquis au prix préférentiel réservés aux ménages dont le revenu brut
+    mensuel ne dépasse pas trois fois le salaire minimum), à verser.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche
