@@ -926,7 +926,7 @@
 - id: r-am-extension-loi2002-32
   objet: décret étendant la loi n° 2004-71 (assurance maladie) au régime de la loi n° 2002-32, en application de l'art. 2 du décret n° 2007-1366
   ou:
-  - precis/fr/prestations_sociales/_autres_risques.qmd#sec-ar-assurance-maladie
+  - precis/fr/prestations_sociales/_soins.qmd#sec-soins-textes
   - precis/fr/prestations_sociales/_matrice.qmd#sec-matrice-lecture
   requetes:
     titres_like: ['%2004-71%', '%2002-32 %', '%2002-32,%', '%2007-1366%']
