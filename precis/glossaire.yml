@@ -18696,6 +18696,30 @@ entries:
         ضبط قرار صادر سنة 1989 قائمتها.
       synonymes: []
       synonymes: []
+  - id: pharmacie-centrale
+    acronyme: PCT
+    statut: valide
+    references: [dl61-2-pct, loi90-105-pct, arrete2020-11-25-pct, minfin-ep-2025]
+    source_definition: {ref: loi90-105-pct, locator: "art. 1er et 2"}
+    # AR : intitulé « الصيدلية المركزية للبلاد التونسية » de la fiche de l'établissement dans le
+    # rapport sur les entreprises publiques, édition LF 2025, p. 109.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 109"}
+    voir_aussi: [office-commerce]
+    fr:
+      terme: Pharmacie centrale de Tunisie
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1961, sous la tutelle
+        du ministère de la santé. Il a le monopole de l'importation des médicaments et des
+        produits qu'un arrêté conjoint énumère, et ravitaille les formations sanitaires
+        publiques, les répartiteurs et les officines.
+      synonymes: [Pharmacie centrale]
+    ar:
+      terme: الصيدلية المركزية للبلاد التونسية
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1961 تحت إشراف وزارة الصحة. تحتكر
+        توريد الأدوية والمنتجات التي يضبطها قرار مشترك، وتتولّى تزويد الهياكل الصحية
+        العمومية والموزعين بالجملة والصيدليات.
+      synonymes: [الصيدلية المركزية]
   - id: ctf
     acronyme: CTF
     statut: valide
