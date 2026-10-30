@@ -5050,6 +5050,7 @@
   a_faire:
   - rapport ou note de présentation du projet de loi de finances complémentaire pour 2021 (ministère des Finances) et documents budgétaires de la mission de la santé 2021-2023 (budget par programme, rapport annuel de performance)
   - tableaux de la mission de la santé des arrêtés de répartition pour 2022 et 2023 (non lus)
+
 - id: r-educ-horaires-primaire-1958-1992
   objet: arrêtés ou décisions fixant, entre la loi n° 58-118 et le décret n° 92-1180, les programmes et l'horaire de l'enseignement primaire, en particulier la répartition de l'horaire entre l'arabe et le français, l'année d'entrée du français (1958, 1976, 1986, 1988, 1989) et la langue du calcul (1978) ; l'art. 21 du décret n° 61-14 du 3 janvier 1961 renvoie ces programmes et horaires à des arrêtés du secrétaire d'État à l'éducation nationale
   ou: [precis/fr/education/_scolaire.qmd#sec-educ-scolaire-cycles-langues]
@@ -5067,7 +5068,17 @@
     - '%arabisation%'
     - '%langue francaise%'
     - '%fin d''etudes primaires%'
-    iort_ar: [توقيت الدراسة, برامج التعليم الابتدائي, التعليم الابتدائي, تعريب]
+    iort_ar:
+    - توقيت الدراسة
+    - برامج التعليم الابتدائي
+    - التعليم الابتدائي
+    - تعريب
+    - البرامج الرسمية
+    - توزيع الأوقات
+    - الجدول الأسبوعي للتدريس
+    - اللغة الفرنسية
+    - شهادة انتهاء الدروس الابتدائية
+    - قرار وزير التربية القومية
     depuis: 1958-11-07
   periode:
     jusqu_au: 1992-06-26
@@ -5079,10 +5090,16 @@
     couverture: 'jort_cache : FTS (titre, objet, mots-clés) et LIKE non accentués sur les titres, publications de 1956 à 1995 ; miroir iort : intitulés arabes des fichiers de 1972-1980, 1986-1989 et 1993 (le miroir ne porte que 232 arrêtés). Réponses : horaires et programmes du supérieur, examens professionnels, horaires de service des enseignants ; aucun arrêté de programmes ou d''horaire du primaire. Textes lus dans le corpus local (OCR, relu à l''image) : décret n° 61-14 du 3 janvier 1961 (JORT 1961/001, p. 22-24, art. 21 et 24) ; arrêté du 15 avril 1959 sur le certificat de fin d''études primaires (JORT 1959/022, p. 375-377), versé au registre ; arrêté du 31 mai 1963 sur le même certificat (JORT 1963/027, p. 806-807), art. 1er à 14 en OCR seulement, tableaux non relus. Le décret n° 92-1180 ne vise aucun texte d''horaire antérieur (art. 3 : « l''horaire actuel est maintenu pour les autres années »). Titres seuls hors de ces fascicules : pas de plein texte des fascicules de 1958 à 1993, sans couche texte.'
     couvert_jusqu_au: 1992-06-26
     resultat: aucun
+  - date: 2026-10-30
+    role: documentaliste
+    sources: [corpus_local, jort_cache, iort]
+    couverture: 'édition arabe du Journal officiel : océrisation (tesseract, modèle ara) des pages 1 et 2 — sommaire et premiers textes — de chacun des 1 251 fascicules de l''édition arabe du corpus local pour 1958-1959, 1972-1981 et 1986-1989, puis recherche des termes الباكالوريا، البكالوريا، الابتدائية، انتهاء الدروس، ختم الدروس، توقيت، توزيع الأوقات، البرامج، تعريب، اللغة الفرنسية، اللغة العربية، الرياضيات ; témoins retrouvés : arrêté du 15 avril 1959 (شهادة انتهاء الدروس الابتدائية, 1959/022), arrêtés du baccalauréat du 16 avril 1981 (1981/028) et du 27 août 1988 (1988/060). Aucun arrêté ni décision de programmes ou d''horaire du primaire, ni texte de 1978 sur la langue du calcul ; seul texte nouveau, sans rapport avec l''horaire : décret n° 86-681 (session exceptionnelle du baccalauréat, 1986/041, p. 798 de l''édition arabe), versé au registre. Lus à l''image dans l''édition française : arrêté du 31 mai 1963 (tableaux I et II, p. 806-807), versé ; arrêté du 25 janvier 1964 portant règlement scolaire des établissements d''enseignement primaire (JORT 1964/005, p. 96-99), dont l''art. 7 renvoie la répartition des horaires de classe à une « décision administrative » et l''art. 9 prescrit l''application des « programmes et horaires d''enseignement officiels », sans les fixer ; décret gouvernemental n° 2019-1085 (horaire de la base), versé. Non couverts : 1960-1971, 1982-1985, 1990-1991 (pages 1 et 2 non océrisées), et le corps des fascicules au-delà de la page 2.'
+    couvert_jusqu_au: 1992-06-26
+    resultat: aucun
   a_faire:
-  - lire à l'image les tableaux de l'arrêté du 31 mai 1963 sur le certificat de fin d'études primaires (JORT 1963/027, p. 806-807)
-  - chercher les arrêtés de concours d'entrée en première année du secondaire (épreuves d'arabe, de français, de calcul) de 1963 à 1994
-  - rejouer en plein texte après océrisation des fascicules du ministère de l'éducation de 1958 à 1991
+  - océriser les pages 1 et 2 de l'édition arabe de 1960-1971, 1982-1985 et 1990-1991 et y chercher les mêmes termes
+  - chercher les programmes et horaires officiels publiés par le ministère hors du Journal officiel (Centre national pédagogique, bulletins du ministère), que le règlement scolaire de 1964 désigne comme « programmes et horaires d'enseignement officiels »
+  - chercher les arrêtés de concours d'entrée en première année du secondaire (épreuves d'arabe, de français, de calcul) de 1964 à 1994
 
 - id: r-educ-bac-francais-1972-1981
   objet: texte qui, entre 1971 et 1981, retire au français le caractère d'épreuve obligatoire du baccalauréat ou le qualifie de langue étrangère (daté de 1973 par Bouhdiba, 2011)
@@ -5090,7 +5107,7 @@
   requetes:
     titres_fts: [baccalaureat, '"examen du baccalaureat"']
     titres_like: ['%baccalaureat%', '%langue etrangere%']
-    iort_ar: [الباكالوريا, البكالوريا]
+    iort_ar: [الباكالوريا, البكالوريا, امتحان الباكالوريا, لغة أجنبية, نصوص وزارة التربية القومية]
     depuis: 1971-05-04
   periode:
     jusqu_au: 1981-04-26
@@ -5102,9 +5119,15 @@
     couverture: 'jort_cache : FTS (titre, objet, mots-clés) et LIKE sur les titres, publications de 1956 à 1995 : aucun texte relatif au baccalauréat de l''enseignement secondaire publié entre l''arrêté du 24 avril 1971 (JORT 1971/020, p. 534) et l''arrêté du 16 avril 1981 (seul le baccalauréat agricole, 1974). Miroir iort, intitulés arabes de 1972-1980 : rien. Lus dans le corpus local (OCR relu à l''image) : arrêtés du 1er avril 1963, du 14 avril 1970 (et rectificatif, JORT 1970/022, p. 472), du 24 avril 1971, du 16 avril 1981 ; le français n''est plus épreuve écrite du baccalauréat dès l''arrêté de 1970. Titres seuls pour 1972-1980 : pas de plein texte, fascicules sans couche texte.'
     couvert_jusqu_au: 1981-04-26
     resultat: aucun
+  - date: 2026-10-30
+    role: documentaliste
+    sources: [corpus_local, jort_cache]
+    couverture: 'édition arabe du Journal officiel : océrisation (tesseract, modèle ara) des pages 1 et 2 — sommaire et premiers textes — de chacun des 1 251 fascicules de l''édition arabe du corpus local pour 1958-1959, 1972-1981 et 1986-1989, puis recherche des termes الباكالوريا، البكالوريا، الابتدائية، انتهاء الدروس، ختم الدروس، توقيت، توزيع الأوقات، البرامج، تعريب، اللغة الفرنسية، اللغة العربية، الرياضيات ; témoins retrouvés : arrêté du 15 avril 1959 (شهادة انتهاء الدروس الابتدائية, 1959/022), arrêtés du baccalauréat du 16 avril 1981 (1981/028) et du 27 août 1988 (1988/060). Pour 1972-1980, aucun texte relatif à l''examen du baccalauréat de l''enseignement secondaire dans les sommaires ; le premier est l''arrêté du 16 avril 1981. Lu à l''image dans l''édition française, en dehors de la période : arrêté du 24 mai 1965 (JORT 1965/027, p. 613-614), qui ne touche que les sciences physiques et la deuxième langue vivante étrangère, versé au registre.'
+    couvert_jusqu_au: 1981-04-26
+    resultat: aucun
   a_faire:
-  - océriser et parcourir les fascicules de mars à juin 1972 à 1980 (période de publication des arrêtés du baccalauréat)
-  - chercher une décision ou une circulaire ministérielle de 1973 citée par les rapports
+  - chercher une décision ou une circulaire ministérielle de 1973 citée par les rapports, hors du Journal officiel (bulletins du ministère, presse de 1973)
+  - parcourir le corps des fascicules de mars à juin 1972-1980 au-delà de la page 2, pour un texte non annoncé au sommaire
 
 - id: r-educ-arabisation-sciences-base-1995-1998
   objet: texte qui fait enseigner en arabe les mathématiques et les sciences en 7e, 8e et 9e années de l'enseignement de base, en 1995-1996, 1996-1997 et 1997-1998
@@ -5112,7 +5135,14 @@
   requetes:
     titres_fts: [programme* AND "enseignement de base", horaire* AND "enseignement de base", arabisation]
     titres_like: ['%programmes de l''enseignement de base%', '%horaire des etudes%', '%arabisation%']
-    iort_ar: [تعريب, برامج التعليم الأساسي, توقيت الدراسة بالتعليم الأساسي]
+    iort_ar:
+    - تعريب
+    - برامج التعليم الأساسي
+    - توقيت الدراسة بالتعليم الأساسي
+    - الرياضيات
+    - العلوم الطبيعية
+    - التربية التكنولوجية
+    - برامج الدراسة بالمرحلة الثانية من التعليم الأساسي
     depuis: 1995-01-01
   periode:
     jusqu_au: 1998-12-31
@@ -5124,6 +5154,12 @@
     couverture: 'jort_cache : FTS et LIKE sur les titres, publications de 1993 à 1998. Lus dans le corpus local (couche de texte, annexes à l''image) : décrets n° 93-670 (JORT 1993/026, p. 471), n° 95-1689 et 95-1690 (1995/075), n° 96-680 et 96-681 (1996/034), n° 96-2147 (1996/091), n° 97-1066 (1997/047), n° 97-1204 et 97-1205 (1997/051), n° 98-1280 (1998/049). Les décrets de programmes renvoient à des annexes par matière (n° 97-1205 : « Arabe : annexe I ; Français : annexe II »…) qui ne figurent pas dans les fascicules français, parcourus jusqu''à leur dernière page pour 1997/051 ; l''horaire de 1996 donne les heures par matière, pas la langue d''enseignement.'
     couvert_jusqu_au: 1998-12-31
     resultat: aucun
+  - date: 2026-10-30
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'édition arabe des mêmes fascicules, océrisée en entier (tesseract, modèle ara) et relue à l''image aux pages des décrets : 1993/026, 1995/075, 1996/034, 1996/091, 1997/047, 1997/051, 1998/049. Les annexes par matière manquent aussi dans l''édition arabe : le décret n° 93-670 (programmes de la base et du secondaire, annexes I à III) est suivi, sur la même page, des décrets individuels n° 93-671 et 93-672 ; le décret n° 96-2147 (programmes d''éducation civique, annexes 1 à 3) est suivi des textes du ministère des affaires sociales (صفحة 2574) ; le décret n° 97-1205 (une annexe par matière : arabe, français, anglais, mathématiques, sciences naturelles, histoire et géographie…) est suivi, sur la même page, des nominations du ministère du transport (صفحة 1224) ; le décret n° 98-1280 est suivi du décret n° 98-1283 (صفحة 1336). Aucun de ces décrets ne fixe la langue d''enseignement d''une matière.'
+    couvert_jusqu_au: 1998-12-31
+    resultat: aucun
   a_faire:
-  - chercher les annexes de programmes dans l'édition arabe des mêmes fascicules
-  - chercher les programmes officiels publiés par le ministère (Centre national pédagogique)
+  - chercher les programmes officiels publiés par le ministère (Centre national pédagogique), qui portent les annexes par matière
+  - chercher une circulaire ministérielle de 1995 à 1998 sur la langue d'enseignement des sciences au collège
