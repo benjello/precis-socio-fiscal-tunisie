@@ -33,6 +33,8 @@
     ge.figure("afh_fiches", …)                               # Agence foncière d'habitation
     ge.figure("sprols_fiches", …)                            # SPROLS : fiche seule
     ge.figure("snit_fiches", …)                              # SNIT : fiche seule
+    ge.figure("arru_fiches", …)                              # ARRU : fiche seule
+    ge.figure("sogemt_budget", …) ; ge.figure("sogemt_fiches", …)  # SOGEMT
     ge.tableau_fiche_detail("steg", ("LF2022",), caption=…, tbl_id=…)  # fiche imprimée, repliée
 
 D'OÙ VIENNENT LES DONNÉES. Séries de `tunisia-data`, lues par `figtools.series()` :
@@ -717,6 +719,8 @@ NOMS_FICHE = {"steg": "STEG", "etap": "ETAP", "sncft": "SNCFT", "stir": "STIR",
               "afh": "Agence foncière d'habitation"}
               "sprols": "SPROLS"}
               "snit": "SNIT"}
+              "arru": "ARRU",
+              "sogemt": "SOGEMT"}
 
 # Éditions dont le « total des passifs » imprimé comprend les fonds propres (il égale le total
 # des actifs) : la case n'est pas tracée sous le libellé « hors fonds propres ».
@@ -1495,6 +1499,12 @@ FIGURES = {
                       "fig_ep_sprols_fiches"),
     "snit_fiches": (lambda: fig_fiche("snit"), lambda: table_fiche("snit"), (S_FICHES,),
                     "fig_ep_snit_fiches"),
+    "arru_fiches": (lambda: fig_fiche("arru"), lambda: table_fiche("arru"), (S_FICHES,),
+                    "fig_ep_arru_fiches"),
+    "sogemt_fiches": (lambda: fig_fiche("sogemt"), lambda: table_fiche("sogemt"), (S_FICHES,),
+                      "fig_ep_sogemt_fiches"),
+    "sogemt_budget": (lambda: fig_budget("sogemt", ORANGE), lambda: table_budget("sogemt"),
+                      (S_TRANSFERTS_EP, S_NETS_EP, S_EFFECTIFS_EP), "fig_ep_sogemt_budget"),
 }
 
 

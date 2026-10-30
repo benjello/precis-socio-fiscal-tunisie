@@ -18585,6 +18585,55 @@ entries:
         أُحدثت سنة 1973، ويتولّى التصرّف في نظام الادخار السكني بمقتضى اتفاقية مع وزارة
         المالية.
       synonymes: [BH بنك]
+  - id: arru
+    acronyme: ARRU
+    statut: valide
+    references: [loi81-69-arru, decret81-1876-arru, minfin-ep-2025]
+    source_definition: {ref: loi81-69-arru, locator: "art. 1er"}
+    # AR : intitulé « وكالة التهذيب والتجديد العمراني » de la fiche de l'agence dans le rapport
+    # sur les entreprises publiques, édition LF 2025, p. 96.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 96"}
+    fr:
+      terme: Agence de réhabilitation et de rénovation urbaine
+      definition: >
+        Établissement public à caractère industriel et commercial créé en 1981 pour les
+        opérations de réhabilitation et de rénovation urbaine : dans des périmètres fixés par
+        décret, il acquiert les terrains, réalise les équipements de base et collectifs,
+        restaure ou rénove les immeubles, construit des logements ou cède les terrains aménagés
+        aux promoteurs.
+      synonymes: []
+    ar:
+      terme: وكالة التهذيب والتجديد العمراني
+      definition: >
+        مؤسسة عمومية ذات صبغة صناعية وتجارية أُحدثت سنة 1981 للقيام بعمليات التهذيب والتجديد
+        العمراني: تقتني، داخل مناطق تدخّل تُضبط بأمر، الأراضي وتنجز التجهيزات الأساسية
+        والجماعية وترمّم البنايات أو تجدّدها وتبني المساكن أو تفوّت في الأراضي المهيّأة
+        للباعثين.
+      synonymes: []
+  - id: sogemt
+    acronyme: SOGEMT
+    statut: valide
+    references: [lf-2024, decret2007-1330-sogemt, minfin-ep-2024, minfin-ep-2025]
+    source_definition: {ref: minfin-ep-2024, locator: "p. 118, tableau 33"}
+    # AR : intitulé « الشركة العامة للمقاولات والمعدات والأشغال » de la loi de finances pour
+    # 2024 (art. 43) et de l'édition LF 2024 du rapport ; l'édition LF 2025, p. 94, écrit
+    # « الشركة العامة للمعدات والمقاولات والأشغال ».
+    source_traduction: {ref: lf-2024, locator: "art. 43"}
+    fr:
+      terme: Société générale d'entreprises de matériel et de travaux
+      definition: >
+        Entreprise publique de travaux sous la tutelle du ministère de l'Équipement, dont les
+        commandes de fournitures échappent depuis 2007 à la réglementation des marchés
+        publics. La loi de finances pour 2024 convertit en participation de l'État à son
+        capital le principal de ses dettes fiscales.
+      synonymes: []
+    ar:
+      terme: الشركة العامة للمقاولات والمعدات والأشغال
+      definition: >
+        منشأة عمومية للأشغال تحت إشراف وزارة التجهيز، لا تخضع طلباتها من التزوّدات منذ سنة
+        2007 لتراتيب الصفقات العمومية. ويحوّل قانون المالية لسنة 2024 أصل ديونها الجبائية إلى
+        مساهمة للدولة في رأس مالها.
+      synonymes: []
   - id: tunisie-telecom
     statut: valide
     references: [loi95-36-tt, loi2004-30, minfin-ep-2025]
