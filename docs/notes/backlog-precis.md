@@ -3763,6 +3763,10 @@ Ce qui reste :
     de la note de chantier (§ 9, point 3 ; § 12), à confirmer à la revue : Office des céréales, ONH, RNTA et Office
     du commerce d'un côté ; SONEDE, ONAS, Tunisie Télécom et La Poste de l'autre, déplacées sans changement de texte,
     ancres conservées. « Les autres entreprises » garde la CPG et le GCT (`#sec-ep-autres-entreprises`).
+  - chapitre « L'industrie » (`_industrie.qmd`, `#sec-ep-industrie`) ouvert le 30 octobre 2026, par la même règle, à
+    confirmer à la revue : CPG, GCT, El Fouladh, Ciments de Bizerte, Ciments d'Oum El Kélil, SNCPA et AFI, déplacées sans
+    changement de texte, ancres conservées. « Les autres entreprises » garde Tunisie Trade Net
+    (`#sec-ep-autres-entreprises`).
 - **CTF — section écrite le 29 octobre 2026** (`_energie.qmd`, en fin de chapitre ;
   `#sec-ep-ge-ctf`, figure `fig-ep-ctf-fiches` engendrée par `grandes_entreprises.figure
   ("ctf_fiches")`, tableaux repliés `tbl-ep-ctf-fiche-a` et `-b`, registre `tbl-ep-registre-ctf`).
@@ -3938,7 +3942,7 @@ Ce qui reste :
     comptes dans la prose, non versés ; grandeurs d'activité des fiches (eau facturée, redevances,
     raccordements) non relevées ;
   - comptes publiés et contrats-programmes des deux entreprises : **à obtenir**.
-- **CPG et GCT — sections écrites le 28 octobre 2026** (`_autres_entreprises.qmd`,
+- **CPG et GCT — sections écrites le 28 octobre 2026** (`_industrie.qmd`,
   `#sec-ep-ge-cpg` et `#sec-ep-ge-gct`, après l'ONAS et avant la SNCFT ; deux entreprises du
   phosphate ne font pas un chapitre, note de chantier, § 10). Figures `fig-ep-{cpg,gct}-fiches`
   (pas de figure du budget : le tableau des transferts de l'édition LF 2022, p. 105-106, leur donne 0
@@ -3974,7 +3978,7 @@ Ce qui reste :
   - prêts à l'État pour les lignes ferroviaires du phosphate (lois n° 2024-31, 2025-12, 2026-7) :
     non lus, à rattacher à la SNCFT ou aux transports ;
   - comptes publiés et rapports annuels des deux entreprises : **à obtenir**.
-- **El Fouladh — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+- **El Fouladh — section écrite le 29 octobre 2026** (`_industrie.qmd`,
   `#sec-ep-ge-fouladh`, en fin de chapitre). Figures `fig-ep-fouladh-budget` (transferts du budget
   des éditions LF 2021 à LF 2023 : 10,0 MD en 2019, 150 MD pour 2020 dans l'édition LF 2021 ramenés
   à 0 ensuite) et `fig-ep-fouladh-fiches`, tableaux repliés `tbl-ep-fouladh-fiche-a` et `-b`.
@@ -4002,7 +4006,7 @@ Ce qui reste :
     `entreprises-publiques-transferts-par-entreprise` ;
   - grandeurs d'activité (production et ventes en tonnes) non versées ; éditions françaises
     LF 2020 (p. 97) et LF 2021 (p. 96) non versées ;
-- **Ciments de Bizerte — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+- **Ciments de Bizerte — section écrite le 29 octobre 2026** (`_industrie.qmd`,
   `#sec-ep-ge-cimbiz`, en fin de chapitre). Figures `fig-ep-cimbiz-budget` (transferts de
   0,068 à 0,1 MD de 2018 à 2020, LF 2022 p. 105, LF 2023 p. 200, LF 2024 p. 155) et
   `fig-ep-cimbiz-fiches`, tableaux repliés `tbl-ep-cimbiz-fiche-a` et `-b`. **Fiche du ministère
@@ -4031,7 +4035,7 @@ Ce qui reste :
     propres de fin 2020 à fin 2021 (30,6 à 85,9 MD) à expliquer ;
   - grandeurs d'activité des fiches (clinker et ciment en tonnes, revenus de LF 2022) non
     relevées ; éditions françaises LF 2020 et LF 2021 non versées ;
-- **Les Ciments d'Oum El Kélil — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+- **Les Ciments d'Oum El Kélil — section écrite le 29 octobre 2026** (`_industrie.qmd`,
   `#sec-ep-ge-cimoek`, en fin de chapitre, après le GCT). Figure `fig-ep-cimoek-fiches` (pas de
   figure du budget : les tableaux des transferts lui donnent 0, LF 2022 p. 106 pour 2018-2020 et
   LF 2024 p. 155 pour 2020-2022), tableaux repliés `tbl-ep-cimoek-fiche-a` et `-b`. **Fiches du
@@ -4060,7 +4064,7 @@ Ce qui reste :
     ciment et de chaux) non relevées ; classement des résultats d'exploitation négatifs de LF 2025
     (p. 20) non repris ; éditions françaises LF 2020 et LF 2021 non versées ;
   - comptes publiés et rapports annuels de la société : **à obtenir**.
-- **SNCPA — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`, `#sec-ep-ge-sncpa`,
+- **SNCPA — section écrite le 29 octobre 2026** (`_industrie.qmd`, `#sec-ep-ge-sncpa`,
   après le GCT). Figures `fig-ep-sncpa-budget` (transferts 2017-2022, résultat net des
   classements, effectif et charges de personnel) et `fig-ep-sncpa-fiches`, tableaux repliés
   `tbl-ep-sncpa-fiche-a` et `-b`. **Fiche du ministère des Finances versée le 29 octobre 2026**
@@ -4387,7 +4391,7 @@ Ce qui reste :
     (conservation des documents), décret gouvernemental n° 2019-1013 ;
   - volume des ventes (édition française LF 2020, p. 119) non versé ; comptes publiés de
     l'établissement : **à obtenir**.
-- **Agence foncière industrielle — section écrite le 29 octobre 2026** (`_autres_entreprises.qmd`,
+- **Agence foncière industrielle — section écrite le 29 octobre 2026** (`_industrie.qmd`,
   `#sec-ep-ge-afi`, en fin de chapitre ; intro et « La source » du chapitre mises à jour). Figures
   `fig-ep-afi-budget` et `fig-ep-afi-fiches`, tableaux repliés `tbl-ep-afi-fiche-a` et `-b`.
   **Fiche du ministère des Finances versée le 29 octobre 2026** dans
