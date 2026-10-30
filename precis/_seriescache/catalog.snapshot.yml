@@ -5754,7 +5754,8 @@
   raw:
   - sources/transcriptions/entreprises-publiques-fiches.csv
   output: data/processed/entreprises-publiques/fiches_entreprises_2018_2023.csv
-  unite: millions de dinars courants (colonne valeur), sauf l'effectif en agents (colonne
+  unite: millions de dinars courants (colonne valeur), sauf l'effectif en agents,
+    les ratios bancaires en pour cent et le dividende par action en dinars (colonne
     unite)
   perimetre: 'ministère des Finances, rapport sur les entreprises publiques (annexe
     9), fiches par entreprise de trois éditions arabes : LF 2022 (exercices 2018-2020

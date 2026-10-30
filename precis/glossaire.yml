@@ -19060,4 +19060,80 @@ entries:
         مؤسسة عمومية أُحدثت سنة 1961، تُعتبر تاجرة، تتولّى التصرّف في الأراضي الفلاحية الدولية
         التي تخصّصها لها الدولة وإحياءها، عبر مركّبات فلاحية ووحدات صناعية وغذائية. سنة 2004،
         تخلّت الدولة عن 135,4 م د من مستحقاتها على الديوان.
+  - id: bna
+    acronyme: BNA
+    statut: valide
+    references: [loi59-47-bna, loi94-30-bna, lf-2026, minfin-ep-2025]
+    source_definition: {ref: minfin-ep-2025, locator: "p. 34"}
+    # AR : intitulé « البنك الوطني الفلاحي » du tableau des banques publiques et du commentaire
+    # de la banque dans le rapport sur les entreprises publiques, édition LF 2025, p. 30 et 34.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 30 et 34"}
+    voir_aussi: [bfpme, bts]
+    fr:
+      terme: Banque nationale agricole
+      definition: >
+        Société anonyme bancaire créée en 1959, sous la tutelle du ministère des Finances, dont
+        l'État et les autres actionnaires publics détiennent 50,23 % du capital selon le rapport
+        sur les entreprises publiques joint à la loi de finances pour 2025. Elle
+        gère des crédits des comptes spéciaux agricoles de l'État et, depuis 2026, consacre au
+        moins 30 % de ses financements à l'investissement aux filières de production agricole.
+      synonymes: []
+    ar:
+      terme: البنك الوطني الفلاحي
+      definition: >
+        شركة خفية الاسم بنكية أُحدثت سنة 1959 وتخضع لإشراف وزارة المالية، وتساهم الدولة وبقية
+        المساهمين العموميين في رأس مالها بنسبة 50,23 % حسب التقرير حول المنشآت العمومية الملحق بقانون المالية لسنة 2025. يتصرّف في قروض الحسابات الخاصة
+        الفلاحية للدولة، ويخصّص منذ سنة 2026 نسبة لا تقل عن 30 % من تمويلاته الموجهة للاستثمار
+        لفائدة منظومات الإنتاج الفلاحي.
+      synonymes: []
+  - id: bfpme
+    acronyme: BFPME
+    statut: valide
+    references: [loi2004-90-lf2005, lf-2024, minfin-ep-2025]
+    source_definition: {ref: minfin-ep-2025, locator: "p. 36"}
+    # AR : intitulé « بنك تمويل المؤسسات الصغرى والمتوسطة » du rapport sur les entreprises
+    # publiques, édition LF 2025, p. 30 et 36.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 30 et 36"}
+    voir_aussi: [bna, bts]
+    fr:
+      terme: Banque de financement des petites et moyennes entreprises
+      definition: >
+        Société anonyme bancaire créée en 2005, sous la tutelle du ministère des Finances, dont
+        l'État et les autres actionnaires publics détiennent tout le capital. Elle finance les
+        petites et moyennes entreprises ; l'État a souscrit à son capital en 2005, en 2009 et en
+        2024.
+      synonymes: []
+    ar:
+      terme: بنك تمويل المؤسسات الصغرى والمتوسطة
+      definition: >
+        شركة خفية الاسم بنكية تأسست سنة 2005 وتخضع لإشراف وزارة المالية، وتساهم الدولة وبقية
+        المساهمين العموميين في كامل رأس مالها. يموّل المؤسسات الصغرى والمتوسطة، واكتتبت الدولة
+        في رأس ماله سنوات 2005 و2009 و2024.
+      synonymes: []
+  - id: bts
+    acronyme: BTS
+    statut: valide
+    references: [loi97-87-bts, loi2000-45-bts, lf-2018, minfin-ep-2025]
+    source_definition: {ref: minfin-ep-2025, locator: "p. 37"}
+    # AR : intitulé « البنك التونسي للتضامن » du rapport sur les entreprises publiques, édition
+    # LF 2025, p. 30 et 37.
+    source_traduction: {ref: minfin-ep-2025, locator: "p. 30 et 37"}
+    voir_aussi: [bna, bfpme]
+    fr:
+      terme: Banque tunisienne de solidarité
+      definition: >
+        Société anonyme bancaire créée en 1997, sous la tutelle du ministère des Finances, dont
+        l'État et les autres actionnaires publics détiennent 69,26 % du capital selon le rapport
+        sur les entreprises publiques joint à la loi de finances pour 2025. Banque
+        généraliste, elle finance surtout les petits projets et les associations de microcrédit ;
+        une partie de son capital vient de dotations du Fonds de solidarité nationale converties
+        en actions.
+      synonymes: []
+    ar:
+      terme: البنك التونسي للتضامن
+      definition: >
+        شركة خفية الاسم بنكية أُحدثت سنة 1997 وتخضع لإشراف وزارة المالية، وتساهم الدولة وبقية
+        المساهمين العموميين في رأس مالها بنسبة 69,26 % حسب التقرير حول المنشآت العمومية الملحق بقانون المالية لسنة 2025. بنك شمولي يختص في تمويل
+        المشاريع الصغرى وجمعيات القروض الصغيرة، وجاء جزء من رأس ماله من تحويل اعتمادات صندوق
+        التضامن الوطني إلى أسهم.
       synonymes: []

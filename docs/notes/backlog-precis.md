@@ -4489,6 +4489,44 @@ Ce qui reste :
     l'édition LF 2025 ; objet des subventions d'investissement ; indicateurs d'activité non versés ;
   - montants souscrits en application de la loi n° 2015-31 et part de l'État dans le capital des
     deux banques ; comptes publiés et rapports annuels : **à obtenir**.
+- **BNA, BFPME et BTS — sections écrites le 29 octobre 2026** (`_autres_entreprises.qmd`,
+  `#sec-ep-ge-bna`, `#sec-ep-ge-bfpme`, `#sec-ep-ge-bts`, en fin de chapitre, à déplacer dans un
+  futur chapitre « Le secteur financier public » ; intro et « La source » du chapitre mises à
+  jour). Figures `fig-ep-bna-fiches`, `fig-ep-bfpme-budget`, `fig-ep-bfpme-fiches`,
+  `fig-ep-bts-fiches` (nouvelle fonction `fig_fiche_banque` et tableau `tableau_fiche_banque`
+  dans `figures/grandes_entreprises.py`, bloc délimité ; un agent parallèle a écrit pour la STB et
+  la BH des fonctions voisines, `fig_banque` et `tableau_banque_detail` : à unifier à la fusion).
+  Tableaux repliés `tbl-ep-<bna|bfpme|bts>-fiche-a` et `-b`. **Tableau des banques publiques versé
+  le 29 octobre 2026** dans `entreprises-publiques-fiches-entreprises` (`tunisia-data`, branche
+  `donnees/fiche-bnabts`, codes `bna`, `bfpme`, `bts`, mise en page « banques publiques », codes
+  `bq_` communs avec la STB et la BH) : LF 2022 p. 39 (tableau 21), LF 2024 p. 53-54 (tableau 26),
+  LF 2025 p. 30 ; lus à l'image (300 dpi) et retrouvés dans la couche texte. Commentaires du rapport
+  lus pour le capital et la part de l'État (LF 2025 p. 34, 36, 37). La recapitalisation de 2013-2019
+  reste au chapitre « Restructurer », non répétée. Registres `tbl-ep-registre-bna` (lois n° 59-47 et
+  59-107, image ; loi n° 94-30 ; loi de finances pour 2004, art. 49-50 et décret n° 2004-751, couche
+  décalée lue à l'image ; loi n° 2009-27 ; loi de finances pour 2026, art. 89, arabe),
+  `tbl-ep-registre-bfpme` (lois de finances pour 2005, art. 23, et 2009, art. 15 ; pour 2024, art. 31,
+  pour 2025, art. 53, et pour 2026, art. 63, arabe) et `tbl-ep-registre-bts` (loi n° 97-87 ; loi
+  n° 2000-45, image ; lois de finances pour 2015, art. 38, pour 2018, art. 12, et pour 2026, art. 70,
+  arabe). Glossaire : `bna`, `bfpme`, `bts`.
+  **Reste** :
+  - textes **dans le corpus local, non lus** : loi n° 59-65 et décret n° 64-295 (BNA) ; suite de la
+    convention du 1er août 1959 ; décrets d'organigramme et d'emplois fonctionnels des trois banques
+    (n° 2001-982, 2003-1541, 2009-40, 2009-1740, 2008-3923, 2009-1741) ; décret n° 2001-886 (BTS) ;
+    lois de garantie de prêts rétrocédés (BNA : n° 93-94, 95-79, 99-60, 2002-34 ; BFPME : n° 2006-40,
+    2012-5, 2014-53, 2020-24, 2024-39 ; BTS : n° 2001-80) ; loi de finances pour 2024, art. 29 ; pour
+    2025, art. 50-51 ; pour 2026, art. 23, 25, 26, 27 ; décret-loi n° 2022-79, art. 18 ;
+  - loi de finances pour 2016, art. 77 à 79 (BTS, édition arabe) : fascicule **sans couche texte,
+    OCR ou lecture à l'image** ;
+  - fusion de la BNA et de la Banque nationale de développement agricole (loi n° 83-19 pour la
+    seconde) : texte **non identifié** ; statuts de la BFPME (2005) : **à identifier** ;
+  - objet des 22,7 MD de transferts à la BFPME en 2022 (LF 2024, tableau 45) ; part de l'État dans
+    les dividendes de la BNA à recouper avec les recettes du budget ; ligne de crédits de programmes
+    « autofinancement des projets de la BTS » (loi de finances pour 2015, tableau D) à suivre d'année
+    en année ;
+  - statut de la ligne « juin 2020 » de la BFPME (LF 2022) : « non dit » dans la série des fiches,
+    « provisoire » dans celle des effectifs ;
+  - comptes publiés et rapports annuels des trois banques : **à obtenir**.
 - **Office national des postes — section écrite le 29 octobre 2026** (`_eau_communications.qmd`,
   `#sec-ep-ge-poste`, en fin de chapitre, après le GCT). Figures `fig-ep-poste-budget` et
   `fig-ep-poste-fiches`, tableaux repliés `tbl-ep-poste-fiche-a` et `-b`. Le rapport n'a pas de fiche
