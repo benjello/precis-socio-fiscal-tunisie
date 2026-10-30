@@ -380,3 +380,15 @@ nationalisations de 1956-1964) quand les chapitres 8 à 13 s'ouvriront.
 2. Ordre dans la partie III : « Les grandes entreprises », « L'énergie », « Les transports », « Les offices et les
    monopoles », « L'eau et les communications », « Les autres entreprises » (la CPG et le GCT).
 3. Le volume compte quinze chapitres. Le plan cible est inchangé. Le module de figures reste `figures/grandes_entreprises.py`.
+
+## 13. Le chapitre « L'industrie » (30 octobre 2026)
+
+1. Ouverture par application de la règle du § 9, point 3, à confirmer à la revue. Le chapitre « L'industrie »
+   (`_industrie.qmd`, `#sec-ep-industrie`) reçoit la CPG (`#sec-ep-ge-cpg`), le GCT (`#sec-ep-ge-gct`), El Fouladh
+   (`#sec-ep-ge-fouladh`), les Ciments de Bizerte (`#sec-ep-ge-cimbiz`), les Ciments d'Oum El Kélil
+   (`#sec-ep-ge-cimoek`), la SNCPA (`#sec-ep-ge-sncpa`) et l'AFI (`#sec-ep-ge-afi`). Sections déplacées sans changement de
+   texte, avec leurs figures, tableaux de fiches et registres ; les ancres sont conservées.
+2. Ordre dans la partie III : « … », « L'eau et les communications », « Le secteur financier public », « L'habitat et
+   l'équipement », « L'industrie », « Les autres entreprises » (Tunisie Trade Net).
+3. Le volume compte dix-huit chapitres. Les renvois qui nomment le chapitre « Les autres entreprises » dans
+   `_offices.qmd`, `_transports.qmd` et `_secteur_financier.qmd` restent à compléter par « L'industrie ».
