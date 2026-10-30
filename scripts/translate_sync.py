@@ -30,7 +30,33 @@ ERREURS_PASSAGERES = (
 # ferait abandonner des appels qu'il fallait réessayer — le remède serait pire que le mal.
 ERREURS_DURES = (
     "spending cap", "spend cap", "billing", "exceeded its monthly",
+    "prepayment", "credits are depleted", "payment required",
 )
+
+# Natures de limite dure, pour l'issue d'état : on dit ce que l'on sait, pas davantage.
+PLAFOND_MENSUEL = "plafond_mensuel"    # le message parle de plafond de dépense mensuel
+CREDIT_PREPAYE = "credit_prepaye"      # 402 / crédits prépayés épuisés
+QUOTA_PERSISTANT = "quota_persistant"  # 429 qui ne cède pas après tous les réessais
+LIMITE_INCONNUE = "limite_inconnue"    # autre mention de facturation
+CODE_402_RE = re.compile(r"(?<![\d.])402(?![\d.])")
+
+
+def est_limite_dure(msg: str) -> bool:
+    """Dit si le refus relève d'une limite que l'attente ne lèvera pas (voir `ERREURS_DURES`)."""
+    return nature_limite(msg) is not None
+
+
+def nature_limite(msg: str):
+    """Nature de la limite dure annoncée par `msg`, ou None si le refus n'en est pas une."""
+    bas = msg.lower()
+    if "monthly" in bas and ("spend" in bas or "cap" in bas):
+        return PLAFOND_MENSUEL
+    if CODE_402_RE.search(msg) or any(
+            s in bas for s in ("prepayment", "credits are depleted", "payment required")):
+        return CREDIT_PREPAYE
+    if any(s in bas for s in ERREURS_DURES):
+        return PLAFOND_MENSUEL if ("spending cap" in bas or "spend cap" in bas) else LIMITE_INCONNUE
+    return None
 
 
 class LimiteDure(RuntimeError):
@@ -40,6 +66,23 @@ class LimiteDure(RuntimeError):
     puisqu'elle vaut pour tous les fichiers ; et, lorsqu'elle n'a laissé passer
     aucune traduction, elle vaut attente et non échec.
     """
+
+    def __init__(self, msg, nature=None):
+        super().__init__(msg)
+        self.nature = nature or nature_limite(msg) or QUOTA_PERSISTANT
+
+
+def ecrire_bilan(chemin, etat, nature, traduits, non_traduits, caracteres=0):
+    """Écrit le bilan de la passe en JSON, pour `etat_traduction.py` (sans réseau).
+
+    `etat` : « ok », « suspendue » ou « echec ». Sans `chemin`, ne fait rien.
+    """
+    import json
+    if not chemin:
+        return
+    with open(chemin, "w", encoding="utf-8") as f:
+        json.dump({"etat": etat, "nature": nature, "caracteres": caracteres, "traduits": list(traduits),
+                   "non_traduits": list(non_traduits)}, f, ensure_ascii=False, indent=2)
 
 
 def est_transitoire(msg: str) -> bool:
@@ -58,8 +101,7 @@ def est_transitoire(msg: str) -> bool:
     La limite dure l'emporte donc sur le code de statut : un message qui parle de
     plafond ou de facturation n'est pas transitoire, quel que soit le 429 qui l'escorte.
     """
-    bas = msg.lower()
-    if any(s in bas for s in ERREURS_DURES):
+    if est_limite_dure(msg):
         return False
     return any(s in msg for s in ERREURS_PASSAGERES)
 
@@ -1682,6 +1724,10 @@ def main():
     failures = []
     traduits = 0          # fichiers effectivement écrits
     echecs_plafond = 0    # échecs imputables au plafond, et à lui seul
+    ecrits = []           # chemins arabes effectivement écrits
+    caracteres_ecrits = 0  # caractères de source traduits avec succès (mesure du budget)
+    nature_plafond = None
+    bilan = os.environ.get("TRADUCTION_BILAN")
 
     for file_path in files_to_process:
         if not fichier_a_traduire(file_path):
@@ -1865,7 +1911,7 @@ Fichier à traduire :
                     if not est_transitoire(msg):
                         # Limite dure : on abandonne SANS attendre, et on dit pourquoi
                         # en clair — c'est la ligne que le journal doit donner d'emblée.
-                        if any(s in msg.lower() for s in ERREURS_DURES):
+                        if est_limite_dure(msg):
                             print(f"  {file_path}: LIMITE DURE, aucun réessai — {msg[:200]}")
                             # Le plafond vaut pour TOUTE la passe, pas pour ce
                             # fichier seul : continuer la boucle ne ferait que
@@ -1876,6 +1922,11 @@ Fichier à traduire :
                             raise LimiteDure(msg) from api_err
                         raise
                     if attempt == max_attempts:
+                        # Un 429 qui résiste à tous les réessais n'est plus un débit :
+                        # on le traite comme une limite dure, pour ne pas rougir la CI.
+                        if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                            print(f"  {file_path}: 429 persistant après {max_attempts} essais.")
+                            raise LimiteDure(msg, QUOTA_PERSISTANT) from api_err
                         raise
                     wait = min(60, 5 * (2 ** (attempt - 1)))  # 5,10,20,40,60s
                     print(f"  {file_path}: erreur transitoire ({msg[:60]}…), retry {attempt}/{max_attempts - 1} dans {wait}s")
@@ -1989,12 +2040,15 @@ Fichier à traduire :
                 f.write(texte_a_ecrire(translated_text))
             print(f"Succès : {target_path} mis à jour.")
             traduits += 1
+            ecrits.append(target_path)
+            caracteres_ecrits += len(new_source_text)
             time.sleep(5) # Éviter le Rate Limit (15 RPM)
             
         except LimiteDure as e:
             print(f"Erreur lors de la traduction de {file_path}: {e}")
             failures.append(f"{file_path} : {e}")
             echecs_plafond += 1
+            nature_plafond = e.nature
             restants = [
                 f for f in files_to_process[files_to_process.index(file_path) + 1:]
                 if fichier_a_traduire(f) and os.path.exists(f)
@@ -2033,25 +2087,43 @@ Fichier à traduire :
         # Neutre SEULEMENT si le plafond explique TOUT. Une seule panne d'une autre
         # nature — une troncature, par exemple — et l'échec reprend ses droits :
         # sans quoi le silence du plafond couvrirait une vraie régression.
-        if traduits == 0 and echecs_plafond == len(failures) and echecs_plafond:
+        #
+        # Même avec des fichiers déjà écrits : chacun est une traduction complète, qui a
+        # passé tous les garde-fous, et les autres restent en retard (la date de commit
+        # le dit) jusqu'au passage suivant. Rougir la CI n'y changerait rien.
+        if echecs_plafond == len(failures) and echecs_plafond:
             avis = (
-                "PLAFOND DE DÉPENSE MENSUEL ATTEINT — aucun fichier traduit, "
-                "aucune PR ouverte, rien de cassé.\n"
-                "L'arabe reste en retard sur le français jusqu'à la remise à zéro "
-                "du plafond ; scripts/traduction_en_retard.py dit lesquels.\n"
+                "LIMITE DE DÉPENSE ATTEINTE (plafond mensuel ou crédit épuisé) — "
+                + ("aucun fichier traduit, aucune PR ouverte, rien de cassé.\n"
+                   if not traduits else
+                   f"{traduits} fichier(s) traduit(s) avant l'arrêt, le reste est repris "
+                   "au prochain passage.\n")
+                + "L'arabe reste en retard sur le français jusqu'à la reprise ; "
+                "scripts/traduction_en_retard.py dit lesquels.\n"
                 "Aucune relance ne servira d'ici là : ce n'est pas un débit, c'est "
-                "un plafond."
+                "une limite de dépense."
             )
+            ecrire_bilan(bilan, "suspendue", nature_plafond, ecrits,
+                         [f.split(" : ")[0] for f in failures], caracteres_ecrits)
             print("\n" + avis)
+            sortie_gh = os.environ.get("GITHUB_OUTPUT")
+            if sortie_gh:
+                with open(sortie_gh, "a", encoding="utf-8") as f:
+                    f.write("etat=suspendue\n")
             resume = os.environ.get("GITHUB_STEP_SUMMARY")
             if resume:
                 with open(resume, "a", encoding="utf-8") as f:
                     f.write("### Traduction en attente\n\n" + avis.replace("\n", "\n\n") + "\n")
             return
 
+        ecrire_bilan(bilan, "echec", None, ecrits, [f.split(" : ")[0] for f in failures],
+                     caracteres_ecrits)
         print("\nSynchro incomplète : aucune PR ne doit être ouverte sur cet état. "
               "Relancer le workflow (workflow_dispatch) sur les fichiers concernés.")
         sys.exit(1)
+
+    ecrire_bilan(bilan, "ok", None, ecrits, [], caracteres_ecrits)
+
 
 if __name__ == "__main__":
     main()

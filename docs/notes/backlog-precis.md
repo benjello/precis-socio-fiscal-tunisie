@@ -6020,7 +6020,13 @@ verser par le terminologue quand un volume les emploiera.
   dépense du traducteur) ; les arabes datent du 4 octobre, et quatre ensembles n'ont jamais été
   traduits (`annexe-pib.qmd`, `retraites/_regard_banque_mondiale.qmd`, les volumes « Santé »,
   « Éducation et formation » et « Entreprises publiques »). Ce n'est pas un blocage du travail en
-  français ; à la réouverture du budget, rattraper par livre, en commençant par ceux dont la
+  français. **Disjoncteur et issue d'état (30 octobre 2026)** : une limite de dépense (plafond
+  mensuel du palier gratuit, 402, 429 persistant) ne fait plus rougir `translation-sync` ; le
+  passage sort en succès, sans courriel d'échec, et l'issue épinglée « Traductions arabes : état »
+  donne le retard par livre, la date de reprise estimée (1er du mois suivant, UTC), le budget
+  mensuel appris (moyenne des trois derniers mois où la limite a été atteinte ; 300 000
+  caractères tant qu'aucun mois n'a été mesuré, constante `BUDGET_INITIAL` de
+  `scripts/etat_traduction.py`) et la consommation du mois. Rattraper par livre, en commençant par ceux dont la
   structure a changé (TVA, prestations sociales, finances locales), et déclarer les chapitres
   nouveaux dans chaque `_quarto.yml` arabe.
 - **Garde-fou de troncature — CORRIGÉ le 20 septembre.** Il était enveloppé dans
