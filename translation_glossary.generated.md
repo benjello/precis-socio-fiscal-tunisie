@@ -63,6 +63,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Ayant droit | ذو الحقّ |  |
 | Baccalauréat | البكالوريا |  |
 | Baccalauréat professionnel | البكالوريا المهنية |  |
+| Banque de l'habitat | بنك الإسكان | BH |
 | Barème de l'impôt sur le revenu | جدول الضريبة على الدخل |  |
 | Base caisse | أساس الخزينة |  |
 | Bénéfice imposable | الربح الخاضع للضريبة |  |
@@ -618,6 +619,7 @@ doit utiliser exactement l'équivalent indiqué ci-dessous, sans variation.
 | Société nationale de distribution des pétroles | الشركة الوطنية لتوزيع البترول | SNDP |
 | Société nationale immobilière de Tunisie | الشركة الوطنية العقارية للبلاد التونسية | SNIT |
 | société régionale de transport | الشركة الجهوية للنقل |  |
+| Société tunisienne de banque | الشركة التونسية للبنك | STB |
 | Société tunisienne de l'électricité et du gaz | الشركة التونسية للكهرباء والغاز | STEG |
 | Société tunisienne de sidérurgie El Fouladh | الشركة التونسية لصناعة الحديد «الفولاذ» |  |
 | Société tunisienne des industries de raffinage | الشركة التونسية لصناعات التكرير | STIR |
