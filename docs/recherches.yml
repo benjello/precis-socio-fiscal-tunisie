@@ -5163,3 +5163,25 @@
   a_faire:
   - chercher les programmes officiels publiés par le ministère (Centre national pédagogique), qui portent les annexes par matière
   - chercher une circulaire ministérielle de 1995 à 1998 sur la langue d'enseignement des sciences au collège
+
+- id: r-educ-horaire-base-2000-2019
+  objet: texte qui modifie l'horaire du cycle primaire de l'enseignement de base entre le décret n° 2000-2168 du 25 septembre 2000 et le décret gouvernemental n° 2019-1085 du 19 novembre 2019 ; l'UNESCO-BIE (2012) donne pour 2010-2011 l'arabe à 11 h en 1re et 2e années, le français à 8 ou 9 h dès la 3e et l'anglais à 2 h dès la 6e, ce que ne portent ni le décret n° 96-681 ni sa modification de 2000
+  ou: [precis/fr/education/_scolaire.qmd#sec-educ-scolaire-cycles-langues]
+  requetes:
+    titres_fts: [horaire AND etudes AND base, '"enseignement de base" AND horaire*']
+    titres_like: ['%horaire des etudes%', '%96-681%']
+    iort_ar: [توقيت الدراسة, بتوقيت الدراسة بالتعليم الأساسي, 681 لسنة 1996, اللغة الأنقليزية]
+    depuis: 2000-10-03
+  periode:
+    jusqu_au: 2019-11-26
+    motif: le décret gouvernemental n° 2019-1085 (JORT n° 95 du 26 novembre 2019) fixe le nouvel horaire et abroge le décret n° 96-681 (art. 7)
+  passes:
+  - date: 2026-10-30
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache : LIKE sur les titres (« horaire des etudes », « 96-681 », « توقيت الدراسة », « 681 لسنة 1996 ») et FTS (horaire AND etudes AND base), publications de 2000 à 2019 : seuls le décret n° 2000-2168 et le décret gouvernemental n° 2019-1085. Lu dans le corpus local : décret gouvernemental n° 2019-1085 (JORT 2019/095, p. 4040-4051), dont les visas ne citent aucun texte modifiant le décret n° 96-681 et dont l''art. 7 abroge « toutes les dispositions antérieures et contraires », notamment les décrets n° 92-1183 et 96-681, sans nommer de modificatif.'
+    couvert_jusqu_au: 2019-11-26
+    resultat: aucun
+  a_faire:
+  - chercher un arrêté ou une circulaire du ministre de l'éducation sur l'anglais en 6e année du primaire (vers 2006-2010), hors des titres de jort_cache
+  - relire la source de la grille de l'UNESCO-BIE (2012) pour dater l'horaire qu'elle décrit

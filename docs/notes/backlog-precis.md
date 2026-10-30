@@ -2598,8 +2598,9 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
   (`#sec-educ-scolaire-cycles-langues`, tableau `tbl-educ-francais-bac`) : certificat de fin d'études primaires de 1959 et
   de 1963 (tableaux relus à l'image), arrêtés du baccalauréat de 1963, 1965, 1970, 1981, 1988, 1991 (et rectificatif),
   annexe de 1992, arrêtés du 12 et du 30 avril 1994, décrets d'horaire n° 92-1180, 96-681, 2000-2168 et 2019-1085 (le
-  français dès la 2e année en 2019), décret n° 86-681 (session exceptionnelle du baccalauréat de septembre 1986, lu dans
-  l'édition arabe, p. 798 : lecture à faire relire par un arabophone, pagination française à relever). Passe sur l'édition
+  français dès la 2e année en 2019), décret n° 86-681 (session exceptionnelle du baccalauréat de septembre 1986, p. 798, lu
+  dans les deux éditions). Texte modifiant l'horaire du primaire entre 2000 et 2019 non identifié (UNESCO-BIE 2012 :
+  anglais en 6e année en 2010-2011 ; fiche `r-educ-horaire-base-2000-2019`). Passe sur l'édition
   arabe du 30 octobre 2026 : sommaires (pages 1 et 2) des 1 251 fascicules de 1958-1959, 1972-1981 et 1986-1989 océrisés
   (tesseract `ara`) ; annexes des décrets de programmes de 1993 à 1998 absentes de l'édition arabe comme de la française.
   Restent, connus des seuls rapports (note `education-langue-enseignement-histoire-2026-10-30.md`, PR #608) :
