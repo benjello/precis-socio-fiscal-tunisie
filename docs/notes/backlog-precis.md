@@ -2593,8 +2593,22 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
 - [x] **Chapitre « L'enseignement scolaire » réordonné par parcours de l'élève (30 octobre 2026, branche
   `educ/reorg-scolaire`)** : état du droit, préscolaire, cycles et langues (section neuve `#sec-educ-scolaire-cycles-langues`),
   examens et orientation (sous-section neuve `#sec-educ-scolaire-pilotes`), passages et abandons, privé, cours particuliers et
-  vie scolaire, textes. Identifiants et lignes de registre conservés. Reste : le fil historique des langues d'enseignement
-  (1958-1995), à placer dans la section neuve quand les textes de 1973 à 1995 seront lus (PR #608).
+  vie scolaire, textes. Identifiants et lignes de registre conservés.
+- [ ] **Langues d'enseignement, 1958-1995 (30 octobre 2026, branche `educ/langues-textes`)** : lus et versés au registre
+  (`#sec-educ-scolaire-cycles-langues`, tableau `tbl-educ-francais-bac`) : certificat de fin d'études primaires de 1959,
+  arrêtés du baccalauréat de 1963, 1970, 1981, 1988, 1991 (et rectificatif), annexe de 1992, arrêtés du 12 et du 30 avril 1994,
+  décrets d'horaire n° 92-1180 et 96-681. Restent, connus des seuls rapports (note
+  `education-langue-enseignement-histoire-2026-10-30.md`, PR #608) :
+  - programmes et horaires du primaire de 1958 (70 h / 60 h), 1976 (80 h / 65 h), 1978 (calcul en arabe), 1986-1989
+    (entrée du français) : aucun arrêté au titre dans `jort_cache` ; fascicules de 1958 à 1991 sans couche texte, OCR à faire
+    (fiche `r-educ-horaires-primaire-1958-1992`) ; arrêté du 31 mai 1963 sur le certificat (JORT 1963/027, p. 806-807) au
+    corpus, tableaux à lire à l'image ;
+  - décision de 1973 sur le français au baccalauréat : aucun texte du baccalauréat publié entre 1971 et 1981 ; OCR des
+    fascicules de mars à juin 1972-1980 (fiche `r-educ-bac-francais-1972-1981`) ;
+  - arabisation des sciences de la 7e à la 9e année (1995-1998) : décrets de programmes lus, annexes absentes des
+    fascicules français ; édition arabe à lire (fiche `r-educ-arabisation-sciences-base-1995-1998`) ;
+  - divergence à trancher à la revue : Bouhdiba date de 1993 le français en 3e année, que le décret n° 92-1180 fixe dès
+    septembre 1992.
 
 ## Allègement du juridique et de l'administratif — chantier, non urgent (5 octobre 2026)
 
