@@ -6034,6 +6034,11 @@ verser par le terminologue quand un volume les emploiera.
   `prestations_sociales/_soins.qmd` et `_logement_social.qmd` compris. Le relais compte comme
   « jamais traduit » et sera écrasé par la traduction. Reste : les trois livres sans `_quarto.yml`
   arabe (éducation, entreprises publiques, informel), que le script ne crée pas.
+  **Rattrapage par lots (30 octobre 2026)** : lundi et 1er du mois, un livre à la fois
+  (`scripts/lot_traduction.py`), borné au budget mensuel appris ; mesure du 30 octobre : 33
+  fichiers périmés (1,97 million de caractères) et 84 jamais traduits (4,41 millions), dont les
+  quatre ensembles jamais traduits (34 fichiers, 1,79 million). Le délai de résorption s'affiche
+  dans l'issue d'état.
 - **Garde-fou de troncature — CORRIGÉ le 20 septembre.** Il était enveloppé dans
   `if old_target_text:` et ne s'exécutait donc pas en retraduction complète, le mode où la
   troncature est la plus probable. Mesuré sur le vrai script : un chapitre arabe de 175 lignes
