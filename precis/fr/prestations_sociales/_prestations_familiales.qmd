@@ -404,7 +404,9 @@ Sources : les décrets [de 1986](#r-pf-public-1986), [de 1988](#r-pf-public-1988
 - **Trois enfants depuis 1989, droits acquis réservés.** La limite de trois enfants « ne s'applique pas aux droits acquis antérieurement au 1^er^ janvier 1989 » : le quatrième enfant dont le droit était acquis conserve le taux de 4,700 D, porté à 4,880 D en 1996. Le décret de 1996 sert aussi 4,880 D par mois à l'enfant handicapé venant après le troisième rang.
 - **Le pouvoir d'achat.** L'indemnité du premier enfant vaut 48 D de 2025 par mois en 1987 et 7,3 D en 2025 ; le décret de 1996 l'a ramenée de 7,600 D à 7,320 D courants (@fig-pf-msu-creche-reel).
 
-Quatre décrets fixent successivement les taux ; les montants du premier, de 1975, ne sont pas connus ici, et le dernier identifié ici est celui de 1996.
+Quatre décrets fixent successivement les taux, de 1975 à 1996 : les [taux de 1976](#r-pf-public-1975) sont au registre ci-dessous, le tableau commence en 1986, et le dernier décret identifié ici est celui de 1996.
+
+<!-- TODO : le tableau engendré commence en 1986 ; la valeur du 1^er^ janvier 1976 (4,600 / 3,800 / 3,300 / 2,700 D) est à porter aux paramètres `retraite/cnrps/accessoires/indemnites_familiales` d'OpenFisca-Tunisie avant de l'y ajouter. -->
 
 <!-- RECHERCHE r-pf-taux-apres-1996 : décret fixant les taux des indemnités à caractère familial postérieur au décret n° 96-1906 (voir docs/recherches.yml) -->
 
@@ -412,7 +414,7 @@ Quatre décrets fixent successivement les taux ; les montants du premier, de 197
 
 | Date d'effet | Texte et article | Ce que dit le texte |
 |---|---|---|
-| []{#r-pf-public-1975}non établie ici | décret n° 75-952 du 30 décembre 1975, portant fixation du taux des indemnités à caractère familial [@decret75-952] | seul l'intitulé de ce texte est connu ici ; le décret de 1986 l'abroge [@decret86-611, art. 2] |
+| []{#r-pf-public-1975}[1^er^ janvier 1976]{.insecable} | décret n° 75-952 du 30 décembre 1975, portant fixation du taux des indemnités à caractère familial [@decret75-952, art. 1 et 2] | art. 1^er^ : le tableau « A » (indemnités familiales) de l'article 31 du décret du 30 juin 1956 est modifié ; fonctionnaires titulaires, agents temporaires et contractuels ; mariés sans enfant : néant ; taux mensuels par enfant à charge : 4,600 D, 3,800 D, 3,300 D et 2,700 D du premier au quatrième enfant. Art. 2 : effet au 1^er^ janvier 1976. Le décret de 1986 l'abroge [@decret86-611, art. 2] |
 | []{#r-pf-public-1986}[1^er^ mai 1986]{.insecable} | décret n° 86-611 du 3 juin 1986 [@decret86-611, art. 1 et 3] | taux mensuels : 7,600 D, 6,500 D, 5,600 D et 4,700 D du premier au quatrième enfant ; art. 3 : effet au 1^er^ mai 1986. Aucun montant distinct pour l'enfant handicapé |
 | []{#r-pf-public-loi-1988}[1^er^ janvier 1989]{.insecable} | loi n° 88-39 du 6 mai 1988 « relative à l'octroi des indemnités familiales dans le secteur public » [@loi88-39] | article unique : « L'indemnité familiale est servie aux agents de l'État, des collectivités publiques locales, des établissements publics des offices et des sociétés nationales autres que ceux soumis au régime de sécurité sociale institué par la loi n° 60-30 du 14 décembre 1960, dans les conditions et selon les modalités prévues par le décret du 22 novembre 1918 tel qu'amendé ou modifié par les textes subséquents, et dans la limite des trois premiers enfants. Le montant des indemnités est fixé par décret. Les dispositions de la présente loi ne s'appliquent pas aux droits acquis antérieurement au 1^er^ janvier 1989. » |
 | []{#r-pf-public-1988}[1^er^ janvier 1989]{.insecable} | décret n° 88-1136 du 11 juin 1988 [@decret88-1136, art. 1-2] | trois taux seulement — 7,600 D, 6,500 D, 5,600 D —, conformément à la limite de trois enfants ; art. 2 : effet au 1^er^ janvier 1989. Le décret n'abroge pas celui de 1986 : le quatrième enfant dont le droit était acquis avant 1989 conserve le taux de 4,700 D |
@@ -423,8 +425,7 @@ Quatre décrets fixent successivement les taux ; les montants du premier, de 197
 
 ::::
 
-<!-- TODO (documentaliste) : lire le décret n° 75-952 (JORT n° 87 de 1975, p. 2884) pour compléter
-la série en amont de 1986, et la circulaire n° 42 du 25 octobre 1996 (JORT n° 94 de 1996,
+<!-- TODO (documentaliste) : lire la circulaire n° 42 du 25 octobre 1996 (JORT n° 94 de 1996,
 pp. 2349-2364), seize pages, source la plus détaillée sur la gestion du dispositif. -->
 
 ## Longue période et données {#sec-pf-longue-periode}
