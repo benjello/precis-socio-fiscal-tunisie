@@ -4335,8 +4335,14 @@
     couverture: 'Mêmes fascicules, recherche élargie aux numéros tarifaires à quatre et six chiffres (22xx, 22xxxx), aux désignations (vins, bières, vermouths, whiskies, mousseux) et aux fascicules arabes de 2022 à 2025 (lois de finances pour 2023 à 2026, termes arabes du droit de consommation) : les tableaux annexés sont dans la couche texte ; aucune ligne des positions 22-03 à 22-08 hors de la LF 2018, art. 45, et du tarif douanier annexé aux LF 2013 et 2015 (22.07, 23.07). Les modifications du droit de consommation des LF 2023 à 2026 portent sur la position 87-03 ; la LF 2023, art. 62, porte une avance de 5 % sur les ventes de boissons alcoolisées. Lacunes : fascicules à couche texte décalée décodés sans les accents ; LF 2026 lue sur la seule édition arabe du JORT n° 148 de 2025.'
     couvert_jusqu_au: 2026-01-01
     resultat: aucun
+  - date: 2026-10-31
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Pages des fascicules de loi de finances 2001 à 2004 dont la couche texte (décalée de 29 rangs dans la table des caractères) porte « consommation », « boisson » ou « alcool » (2001 : p. 5 ; 2002 : p. 5-6 ; 2003 : p. 8 et 10 ; 2004 : p. 6, 10 et 11), relues à l''image (pdftoppm, tesseract) : aucune ligne des positions 22-03 à 22-08 ; les articles de droit de consommation de la LF 2004 portent sur les pneumatiques (art. 37), les voitures aménagées (art. 58) et le numéro Ex 87-03 (art. 67). Index du JORT, rubriques des lois n° 99-101, 2000-98, 2001-123, 2002-101 et 2003-80 : aucune ne vise les boissons. Le fichier Loi_de_finances_2000.pdf du dossier des lois de finances est la LF 2022 (JORT n° 119 de 2021) ; la LF 2000 (JORT n° 105 de 1999) est un scan sans couche texte, non relu. Lacunes : pages sans l''un de ces trois mots, tableaux annexés compris.'
+    couvert_jusqu_au: 2004-12-31
+    resultat: aucun
   a_faire:
-  - relire à l'image les tableaux annexés des lois de finances 2000 à 2004, dont la couche texte est décalée
+  - relire à l'image les pages des lois de finances 2001 à 2004 qui ne portent pas « consommation », « boisson » ou « alcool » dans leur couche texte (tableaux annexés), et la LF 2000 (JORT n° 105 de 1999, scan)
 
 - id: r-tva-credit-series-apres-2014
   objet: Séries annuelles du crédit de TVA, des restitutions et de la retenue à la source de TVA après l'exercice 2014 et avant 2009
@@ -5050,3 +5056,37 @@
   a_faire:
   - rapport ou note de présentation du projet de loi de finances complémentaire pour 2021 (ministère des Finances) et documents budgétaires de la mission de la santé 2021-2023 (budget par programme, rapport annuel de performance)
   - tableaux de la mission de la santé des arrêtés de répartition pour 2022 et 2023 (non lus)
+
+- id: r-lf2025-art23-decret-voitures-handicapes
+  objet: décret fixant les conditions et règles d'application de l'article 23 de la loi n° 2024-48 (loi de finances pour 2025), droit de consommation sur les voitures aménagées spécialement à l'usage des personnes handicapées
+  ou: [precis/fr/fiscalite/_droits_consommation.qmd#sec-dc-boissons-autres]
+  requetes:
+    titres_like: ['%2024-48%', '%handicap%', '%aménag%', '%droit de consommation%']
+    iort_ar: [المعاقين, الإعاقة, المعلوم على الاستهلاك]
+    depuis: 2024-12-10
+  passes:
+  - date: 2026-10-31
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache (dernière publication indexée le 29 octobre 2026), objets français et arabes depuis le 1er janvier 2025 : « voiture », « véhicule », « consommation », « handicap », « aménag », « المعاقين », « ذوي الإعاقة », « 48 لسنة 2024 », « الفصل 23 » ; plein texte des fascicules arabes du corpus local de 2025 et 2026 (258 fascicules, de 2025 au n° 105 de 2026) : « 48 لسنة 2024 » n''apparaît que dans des arrêtés de répartition de crédits et des visas sans rapport. Aucun décret ni décret gouvernemental d''application de l''article 23 ; l''article renvoie à un décret (p. 3426 de l''édition française du JORT n° 149 de 2024).'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire:
+  - lire les fascicules postérieurs au 29 octobre 2026 (corpus local, pist.tn)
+
+- id: r-lf2026-art55-arrete-voitures-familles
+  objet: arrêté conjoint des ministres des finances et du commerce fixant les modalités de l'avantage fiscal de l'article 55 de la loi n° 2025-17 (loi de finances pour 2026), voitures des familles tunisiennes résidentes
+  ou: [precis/fr/fiscalite/_droits_consommation.qmd#sec-dc-boissons-autres]
+  requetes:
+    titres_like: ['%2025-17%', '%voiture%', '%véhicule%', '%famille%']
+    iort_ar: [العائلة المقيمة, العائلات التونسية المقيمة, سيارة]
+    depuis: 2025-12-12
+  passes:
+  - date: 2026-10-31
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache (dernière publication indexée le 29 octobre 2026), objets français et arabes depuis le 12 décembre 2025 : « 2025-17 », « 17 لسنة 2025 », « voiture », « véhicule », « famille », « عائلة », « مقيم », « سيارة » ; plein texte des fascicules arabes du corpus local de 2026 : aucun arrêté conjoint des ministres des finances et du commerce sur l''avantage de l''article 55. L''article (JORT n° 148 de 2025, p. 4243, édition arabe) demande l''arrêté dans les trois mois de l''entrée en vigueur de la loi.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire:
+  - lire les fascicules postérieurs au 29 octobre 2026 (corpus local, pist.tn)
