@@ -257,7 +257,7 @@ print(ot.markdown_un_tableau_en_onglets([
 
 Depuis 1981, le SMIG se compose d'un salaire de base et d'une [indemnité complémentaire provisoire](#g-indemnite-complementaire-provisoire) ; depuis 1982, seul le salaire de base est relevé.
 
-- **L'indemnité complémentaire provisoire.** Elle est de 10 dinars par mois au [1^er^ avril 1981](#r-mt-sm-icp-1981), puis de 30,368 dinars dans le régime de 48 heures et de 30 dinars dans celui de 40 heures au [1^er^ février 1982](#r-mt-sm-icp-1982), soit 146 et 173 millimes l'heure. [À l'origine](#r-mt-sm-icp-assiette), elle n'entre pas dans l'assiette des cotisations sociales.
+- **L'indemnité complémentaire provisoire.** Elle est de 10 dinars par mois au [1^er^ avril 1981](#r-mt-sm-icp-1981), puis de 30,368 dinars dans le régime de 48 heures et de 30 dinars dans celui de 40 heures au [1^er^ février 1982](#r-mt-sm-icp-1982), soit 146 et 173 millimes l'heure. Ces montants sont ceux du salarié au minimum : les autres salariés perçoivent [un montant qui croît avec leur salaire](#r-mt-sm-icp-bareme-1981), de 10 à 20 dinars en 1981, [majoré de 20 dinars en 1982](#r-mt-sm-icp-hausse-1982). [À l'origine](#r-mt-sm-icp-assiette), elle n'entre pas dans l'assiette des cotisations sociales.
 - **Le salaire de base.** Les hausses suivantes maintiennent l'indemnité à ce montant et ne relèvent que le salaire de base ; chaque décret publie la décomposition du SMIG qu'il fixe, ainsi en [1992 et en 2000](#r-mt-sm-icp-decomposition). [Celui de 2026](#r-mt-sm-icp-2026) précise encore que le SMIG « comprend l'indemnité complémentaire provisoire ».
 - **Deux indemnités spéciales, de 1989 à 1992.** Elles sont servies en sus du SMIG et du SMAG, hors de l'assiette des cotisations, avant d'y être intégrées le 1^er^ mai 1992 (@tbl-mt-indemnites-speciales).
 
@@ -274,8 +274,11 @@ table("indemnites_speciales",
 | Effet | Portée | Texte et articles | Avant → après |
 |---|---|---|---|
 | []{#r-mt-sm-icp-1981}[1^er^ avril 1981]{.insecable} | **rupture** | décret n° 81-437 [@decret81-437, art. 3] | SMIG d'un seul tenant → salaire de base et indemnité complémentaire provisoire de 10 dinars par mois |
+| []{#r-mt-sm-icp-bareme-1981}[1^er^ avril 1981]{.insecable} | étape | décret n° 81-437 [@decret81-437, art. 1 et 2] | l'indemnité est servie à tous les salariés des secteurs non agricoles, selon leur salaire mensuel de base de mars 1981, hors primes : 10 dinars jusqu'à 54,704 dinars, 12,500 jusqu'à 82, 15 jusqu'à 110, 17,500 jusqu'à 140 et 20 au-delà |
+| []{#r-mt-sm-icp-horaire-1981}[1^er^ avril 1981]{.insecable} | étape | décret n° 81-437 [@decret81-437, art. 3] | salariés payés à l'heure, majoration horaire selon le salaire horaire. Régime de 40 heures : 58 millimes de 263 à 315, 72 de 316 à 473, 87 de 474 à 635, 100 de 636 à 808, 115 au-delà. Régime de 48 heures : 48 millimes à 263, 60 de 264 à 394, 72 de 395 à 529, 84 de 530 à 673, 96 au-delà |
 | []{#r-mt-sm-icp-assiette}[1^er^ avril 1981]{.insecable} | étape | décret n° 81-437 [@decret81-437, art. 7] | l'indemnité n'entre pas dans l'assiette des cotisations sociales |
 | []{#r-mt-sm-icp-1982}[1^er^ février 1982]{.insecable} | étape | décret n° 82-501 [@decret82-501, art. 1 et 3] | indemnité de 10 dinars par mois → 30,368 dinars (48 heures) et 30 dinars (40 heures), soit 146 et 173 millimes l'heure |
+| []{#r-mt-sm-icp-hausse-1982}[1^er^ février 1982]{.insecable} | étape | décret n° 82-501 [@decret82-501, art. 4] | salariés au-dessus du SMIG : majoration mensuelle de 20 dinars de l'indemnité, soit 96 millimes l'heure dans le régime de 48 heures et 115 dans celui de 40 heures |
 | []{#r-mt-sm-icp-decomposition}[1^er^ mai 1992]{.insecable}<br>[1^er^ mai 2000]{.insecable} | ajustements | décrets n° 92-1299 et n° 2000-949 [@decret92-1299, art. 2; @decret2000-949, art. 2] | indemnité maintenue à son montant de 1982 ; seul le salaire de base est relevé ; le décret publie la décomposition du SMIG |
 | []{#r-mt-sm-icp-2026}[1^er^ janvier 2026]{.insecable} | ajustement | décret n° 2026-67 [@decret2026-67, art. 1] | le SMIG « comprend l'indemnité complémentaire provisoire » |
 
