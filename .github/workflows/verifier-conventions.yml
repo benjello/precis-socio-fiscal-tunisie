@@ -15,11 +15,15 @@ on:
   pull_request:
     paths:
       - 'precis/**/*.qmd'
+      - 'precis/*/*/_quarto.yml'
+      - 'scripts/arabe_cablage.py'
       - 'precis/**/tables/**'
       - 'precis/glossaire.yml'
       - 'scripts/check_pas_de_modele.py'
       - 'scripts/check_jargon_depouillement.py'
       - 'scripts/check_domicile_references.py'
+      - 'scripts/check_backlog.py'
+      - 'docs/notes/backlog-precis.md'
       - 'scripts/recherches.py'
       - 'docs/recherches.yml'
       - 'scripts/build_glossary.py'
@@ -36,6 +40,8 @@ on:
       - 'scripts/check_pas_de_modele.py'
       - 'scripts/check_jargon_depouillement.py'
       - 'scripts/check_domicile_references.py'
+      - 'scripts/check_backlog.py'
+      - 'docs/notes/backlog-precis.md'
       - 'scripts/recherches.py'
       - 'docs/recherches.yml'
       - 'scripts/build_glossary.py'
@@ -78,6 +84,12 @@ jobs:
       - name: Les références de loi ont leur ligne de registre
         run: uv run python scripts/check_domicile_references.py
 
+      # Le backlog est tenu à la main par plusieurs agents : ce contrôle refuse ce qu'ils y
+      # laissent sans le voir — un marqueur de conflit, une date de lecture dans l'avenir,
+      # une clé de citation qui n'existe pas. Rôle `archiviste-backlog` pour le reste.
+      - name: Le backlog reste lisible
+        run: uv run python scripts/check_backlog.py
+
       # Le glossaire est ENGENDRÉ à partir de `precis/glossaire.yml`, et l'annexe de
       # chaque livre ne retient que les notions auxquelles il renvoie réellement — sa
       # prose ET ses tableaux engendrés. Deux chemins mènent au même symptôme, un lien
@@ -103,3 +115,12 @@ jobs:
       # en silence, aucun autre gate ne le voit.
       - name: Les sous-agents Claude Code sont à jour
         run: uv run python scripts/sync_agents.py --verifier
+
+      # Le `_quarto.yml` arabe suit le français, et un chapitre sans traduction a sa
+      # page-relais : tout est engendré par `scripts/arabe_cablage.py`, jamais écrit à la
+      # main. Ce contrôle attrape un chapitre ajouté (ou retiré) côté français sans que le
+      # script ait été relancé. Sur les PR seulement : sur `master`, le câblage est posé
+      # par la PR du robot de traduction, et un rouge d'attente n'apprendrait rien.
+      - name: Le câblage des livres arabes est à jour
+        if: github.event_name == 'pull_request'
+        run: uv run python scripts/arabe_cablage.py --verifier

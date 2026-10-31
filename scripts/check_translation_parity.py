@@ -58,6 +58,10 @@ import glob
 import os
 import re
 import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from arabe_cablage import est_relais  # noqa: E402
 
 # Les _glossaire.qmd sont générés depuis precis/glossaire.yml : les deux langues
 # sont produites ensemble, ce ne sont pas des traductions.
@@ -244,6 +248,10 @@ def pairs_for(paths: list[str], root: str = "") -> list[tuple[str, str]]:
             ar = p.replace("precis/fr/", "precis/ar/")
         if fr in seen or not (os.path.exists(os.path.join(root, fr))
                               and os.path.exists(os.path.join(root, ar))):
+            continue
+        # Une page-relais engendrée par `arabe_cablage.py` n'est pas une traduction : rien
+        # à comparer (elle n'a ni citations ni ancres, seulement l'ancre de son titre).
+        if est_relais(Path(root) / ar):
             continue
         seen.add(fr)
         out.append((fr, ar))

@@ -658,12 +658,12 @@ décret.
 |---|---|---|---|---|
 | 1998 | 98-384 art. 2 (**6 %**), puis 98-952 art. 1er (**10 %**) dès le 6 mai | 98-384 art. 1er (10 %) **jusqu'au 5 mai**, puis **droit de consommation** | JORT 1998 n° 15, 20 févr. 1998, p. 376 ; n° 35, 1er mai 1998, p. 923 | **lu** |
 | 1999 | 99-211 (10 %) | **aucun — droit de consommation** | JORT 1999 n° 11, 5 févr. 1999, p. 198 | **lu** |
-| 2000 | 2000-329 | *idem* | JORT 2000 n° 14, 18 févr. 2000, p. 497 | probable |
-| 2001 | 2001-401 | *idem* | JORT 2001 n° 13, 13 févr. 2001, p. 292 | probable |
-| 2002 | 2002-209 | *idem* | JORT 2002 n° 12, 8 févr. 2002, p. 330 | probable |
-| 2003 | 2003-133 | *idem* | JORT 2003 n° 6, 21 janv. 2003, p. 166 | probable |
-| 2004 | 2004-9 | **2004-1773** — reprise de la série, **à compter du 1er août 2004**, sans terme énoncé | JORT 2004 n° 3, p. 83 ; **n° 63, 6 août 2004, p. 2239-2240** | pétrole **lu** ; électricité non lu |
-| 2005 | 2004-2728 | 2004-2727 | JORT **2005** n° 1, 4 janv. 2005, p. 5-6 | probable |
+| 2000 | 2000-329 | *idem* | JORT 2000 n° 14, 18 févr. 2000, p. 497 | **lu** (image) |
+| 2001 | 2001-401 | *idem* | JORT 2001 n° 13, 13 févr. 2001, p. 292 | **lu** (image) |
+| 2002 | 2002-209 | *idem* | JORT 2002 n° 12, 8 févr. 2002, p. 330 | **lu** (image) |
+| 2003 | 2003-133 | *idem* | JORT 2003 n° 6, 21 janv. 2003, p. 166 | **lu** (image) |
+| 2004 | 2004-9 | **2004-1773** — reprise de la série, **à compter du 1er août 2004**, sans terme énoncé | JORT 2004 n° 3, p. 83 ; **n° 63, 6 août 2004, p. 2239-2240** | pétrole **lu** ; électricité **lu** (image) |
+| 2005 | 2004-2728 | 2004-2727 | JORT **2005** n° 1, 4 janv. 2005, p. 5-6 | **lu** (image) |
 | **2006** | **2005-3383** | **2005-3384** | JORT **2006** n° 1, 3 janv. 2006, p. 8-9 | **lu** |
 | 2007 | 2007-2 | 2007-1 | JORT 2007 n° 2, 5 janv. 2007, p. 30-31 | **lu** |
 | 2008 | 2008-2 | 2008-1 | JORT 2008 n° 2, 4 janv. 2008, p. 57-58 | **lu** (électricité) |
@@ -770,10 +770,7 @@ domestique** — cette dernière dans la limite fixée par la LF 2025 (au-delà 
    95-109) : **absent de `jort_cache.db`** — les textes signés ce jour-là qu'elle contient portent les
    numéros 97-1349 à 97-1372. Référence de publication non établie. C'est le pivot du § 4.1 : à
    chercher dans `PDFs/JORT/1997/fr/`, fascicules n° 57 à 61 (juillet-août 1997).
-2. **Clauses de durée non lues** pour les décrets marqués « probable » au tableau du § 4.3 (2000-329,
-   2001-401, 2002-209, 2003-133, 2004-9, 2004-2727, 2004-2728). Rien n'indique qu'elles s'écartent du
-   modèle, mais elles n'ont pas été lues. Le fascicule JORT 2004 n° 3 (`Jo0032004.pdf`) n'a pas de
-   couche texte exploitable : lecture à l'image nécessaire.
+2. **Clauses de durée** : lues le 31 octobre 2026 pour les décrets 2000-329, 2001-401, 2002-209, 2003-133, 2004-9, 2004-2727 et 2004-2728, à l'image (OCR) des fascicules JORT de 2000 à 2005, dont la couche texte est inexploitable. Chacune porte sur l'année civile (du 1er janvier au 31 décembre) ; aucune ne s'écarte du modèle. Les 22 décrets de la série ont maintenant une notice dans les `references.json` de la fiscalité (français et arabe) et une ligne au registre du chapitre TVA. Clause du décret 98-952 lue le 31 octobre 2026 (JORT n° 35, p. 923) : art. 1, taux de 10 % sur l'électricité basse tension domestique « jusqu'au 31 décembre 1998 » ; art. 3, application à compter du 6 mai 1998.
 3. **Entrée dans le champ des grossistes en alimentation générale** et **des forfaitaires**
    (articles 16 et 17 du code) : dates non établies, voir § 2.3.
 4. **Tableau B bis : lu et clos.** Son contenu d'origine (tableau « L » de la LF 2002, p. 4359) a été

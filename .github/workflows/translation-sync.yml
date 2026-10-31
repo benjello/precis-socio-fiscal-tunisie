@@ -54,8 +54,14 @@ on:
   #
   # GitHub n'exécute les `schedule` que sur la branche par défaut : ce passage ne voit
   # donc que `master`, jamais le travail en cours sur une branche.
+  #
+  # DEUX DÉCLENCHEURS. Le lundi, un lot borné. Le 1er de chaque mois, un lot de plus : le palier
+  # gratuit se renouvelle par mois, et le budget neuf se dépense sans attendre le lundi.
+  # Chaque passage traite UN livre et UN lot (scripts/lot_traduction.py) : le retard se
+  # recalcule par dates de commit, le passage suivant reprend où celui-ci s'est arrêté.
   schedule:
     - cron: '41 6 * * 1'
+    - cron: '41 6 1 * *'
   workflow_dispatch:
     # Re-synchro manuelle, utile quand un sync a échoué (ex. 503 Gemini) sans
     # nouveau commit FR.
@@ -64,6 +70,27 @@ on:
         description: "Fichiers FR à retraduire (séparés par des espaces). Vide = tous les .qmd FR (hors _glossaire, généré)."
         required: false
         default: ""
+      livre:
+        description: "Sans fichiers : forcer le livre du lot (dossier sous precis/fr, ex. fiscalite). Vide = ordre de priorité."
+        required: false
+        default: ""
+      max_fichiers:
+        description: "Sans fichiers : nombre maximal de fichiers du lot (défaut 8)."
+        required: false
+        default: ""
+      max_caracteres:
+        description: "Sans fichiers : borne du lot en caractères de source française (défaut : 35 % du budget mensuel estimé)."
+        required: false
+        default: ""
+      budget_mensuel:
+        description: "Forcer le budget mensuel estimé, en caractères (défaut : appris des mois où la limite a été atteinte)."
+        required: false
+        default: ""
+      tout:
+        description: "Sans fichiers : tous les .qmd FR d'un coup (ancien comportement, coûteux). Sinon, un lot borné."
+        required: false
+        type: boolean
+        default: false
       traduction_complete:
         description: "Repartir de zéro au lieu de mettre à jour la traduction existante. À n'employer que sur un fichier dont la traduction a trop décroché : les corrections faites à la main sur l'arabe seul seront perdues."
         required: false
@@ -76,6 +103,8 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      # Pour l'issue d'état « Traductions arabes : état » (scripts/etat_traduction.py).
+      issues: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -94,18 +123,34 @@ jobs:
 
       - name: Get changed files
         id: changed-files
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOT_LIVRE: ${{ github.event.inputs.livre }}
+          LOT_MAX_FICHIERS: ${{ github.event.inputs.max_fichiers }}
+          LOT_MAX_CARACTERES: ${{ github.event.inputs.max_caracteres }}
+          LOT_BUDGET: ${{ github.event.inputs.budget_mensuel }}
         run: |
+          # Lot borné : un livre, des fichiers choisis selon le budget mensuel appris (issue
+          # d'état), hors fichiers déjà couverts par une PR de traduction ouverte. Sans réseau
+          # modèle ni clé ; lit seulement l'issue et les PR par `gh`. Liste vide = rien à faire.
+          lot() {
+            uv run --no-project --with pyyaml python scripts/lot_traduction.py --depuis-issue \
+              ${LOT_LIVRE:+--livre "$LOT_LIVRE"} \
+              ${LOT_MAX_FICHIERS:+--max-fichiers "$LOT_MAX_FICHIERS"} \
+              ${LOT_MAX_CARACTERES:+--max-caracteres "$LOT_MAX_CARACTERES"} \
+              ${LOT_BUDGET:+--budget "$LOT_BUDGET"}
+          }
           if [ "${{ github.event_name }}" == "schedule" ]; then
-            # Détection SANS réseau ni clé : les fichiers FR dont le dernier commit
-            # est plus récent que celui de leur homologue AR. Liste vide = arabe à
-            # jour = aucune étape suivante, donc zéro appel au modèle.
-            CHANGED=$(python3 scripts/traduction_en_retard.py)
-            echo "En retard : ${CHANGED:-aucun}"
+            CHANGED=$(lot)
+            echo "Lot : ${CHANGED:-aucun}"
           elif [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             INPUT_FILES="${{ github.event.inputs.files }}"
             if [ -n "$INPUT_FILES" ]; then
               # Re-synchro ciblée sur les fichiers fournis.
               CHANGED="$INPUT_FILES"
+            elif [ "${{ github.event.inputs.tout }}" != "true" ]; then
+              CHANGED=$(lot)
+              echo "Lot : ${CHANGED:-aucun}"
             else
               # Re-synchro totale : tous les .qmd FR, SAUF les _glossaire.qmd
               # (générés par build_glossary.py, pas traduits). Les `_quarto.yml`
@@ -137,10 +182,18 @@ jobs:
           fi
           echo "files=$CHANGED" >> $GITHUB_OUTPUT
 
+      # DISJONCTEUR. Quand l'API refuse pour cause de limite de dépense (plafond mensuel
+      # du palier gratuit, 402, ou 429 qui ne cède pas), le script s'arrête au premier
+      # refus, SORT EN SUCCÈS et écrit `etat=suspendue` dans les sorties de cette étape
+      # et le bilan de la passe dans TRADUCTION_BILAN. Le retard n'est pas perdu : il se
+      # recalcule par dates de commit et sera repris au prochain passage planifié.
+      # Une autre panne (troncature, cellule altérée) fait toujours échouer l'étape.
       - name: Run translation script
+        id: traduction
         if: steps.changed-files.outputs.files != ''
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TRADUCTION_BILAN: /tmp/bilan_traduction.json
           TRADUCTION_COMPLETE: ${{ github.event.inputs.traduction_complete == 'true' && '1' || '0' }}
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ] \
@@ -159,9 +212,25 @@ jobs:
           echo "Translating files: ${{ steps.changed-files.outputs.files }}"
           uv run --with google-genai python scripts/translate_sync.py $BASE_SHA $HEAD_SHA ${{ steps.changed-files.outputs.files }}
 
+      # CÂBLAGE DE L'ARABE. Déterministe, sans modèle ni réseau : les listes de chapitres
+      # des `_quarto.yml` arabes suivent les français, et tout chapitre sans traduction
+      # reçoit une page-relais (avis + lien vers le français), de sorte que le livre arabe
+      # n'a ni 404 ni chapitre oublié. Ce que le robot vient de traduire remplace le relais.
+      # Voir scripts/arabe_cablage.py. S'exécute même quand rien n'est à traduire (plafond
+      # atteint, liste vide) : le câblage ne coûte rien.
+      - name: Wire the Arabic books
+        id: cablage
+        run: |
+          uv run --no-project --with pyyaml python scripts/arabe_cablage.py
+          if [ -n "$(git status --porcelain precis/)" ]; then
+            echo "modifie=true" >> $GITHUB_OUTPUT
+          else
+            echo "modifie=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Open PR with translation changes
         id: open-pr
-        if: steps.changed-files.outputs.files != ''
+        if: steps.changed-files.outputs.files != '' || steps.cablage.outputs.modifie == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -182,6 +251,12 @@ jobs:
           # PR. Une PR créée via GITHUB_TOKEN ne re-déclenche aucun workflow
           # (pas de boucle de traduction) ; le merge humain déploie la version AR.
           BRANCH="auto-translate/${{ github.sha }}"
+          # Un passage planifié ou manuel peut avoir lieu plusieurs fois sur le même commit
+          # (lundi et 1er du mois, relances) : sans suffixe, le `push -f` ci-dessous écraserait
+          # la PR du lot précédent. Un push sur master a un commit unique, le suffixe est inutile.
+          if [ "${{ github.event_name }}" != "push" ]; then
+            BRANCH="$BRANCH-lot-${{ github.run_id }}"
+          fi
           git checkout -b "$BRANCH"
           # PAS de `[skip ci]`. Il visait la boucle de rétro-traduction, mais le
           # filtre `PATTERN` et les `paths` ci-dessus s'en chargent déjà — et il
@@ -249,9 +324,13 @@ jobs:
         run: |
           set +e
           uv sync
-          LIVRES=$(for f in ${{ steps.changed-files.outputs.files }}; do
-                     case "$f" in precis/fr/*/*) echo "$f" | cut -d/ -f3 ;; esac
-                   done | sort -u)
+          # Livres touchés : ceux des fichiers français traduits, plus ceux dont le commit de
+          # la PR modifie l'arabe (pages-relais et `_quarto.yml` du câblage compris).
+          LIVRES=$({ for f in ${{ steps.changed-files.outputs.files }}; do
+                       case "$f" in precis/fr/*/*) echo "$f" | cut -d/ -f3 ;; esac
+                     done
+                     git diff --name-only HEAD~1 HEAD | grep -E '^precis/ar/[^/]+/' | cut -d/ -f3
+                   } | sort -u)
           if [ -z "$LIVRES" ]; then
             echo "Aucun livre touché (CHANGELOG seul, par exemple) : rien à rendre."
             exit 0
@@ -346,7 +425,9 @@ jobs:
       # vérification est donc rapatriée ici, dans le job qui produit la
       # traduction, seul endroit où elle porte sur ce qui sera mergé.
       - name: Verify the generated translation
-        if: steps.open-pr.outputs.pr != ''
+        # Pas de Checker IA quand la limite de dépense est atteinte : il ferait un appel
+        # de plus, voué au même refus. Parité et rendu, eux, ont eu lieu.
+        if: steps.open-pr.outputs.pr != '' && steps.traduction.outputs.etat != 'suspendue'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -370,3 +451,18 @@ jobs:
                  "voir son rapport ci-dessus et le commentaire posté sur la PR."
           fi
           exit 1
+
+      # ISSUE D'ÉTAT. Toujours exécutée, succès, suspension ou échec : une issue unique,
+      # retrouvée par son marqueur caché, mise à jour et jamais recréée en double.
+      # `continue-on-error` : un incident sur l'issue ne doit pas rougir une passe qui a
+      # fait son travail. Voir scripts/etat_traduction.py.
+      - name: Update the status issue
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PROCHAIN=$(uv run --no-project --with pyyaml python scripts/lot_traduction.py \
+            --depuis-issue 2>/dev/null || true)
+          uv run --no-project python scripts/etat_traduction.py publier \
+            --bilan /tmp/bilan_traduction.json --prochain-lot "$PROCHAIN"

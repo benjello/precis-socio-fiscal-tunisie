@@ -15,15 +15,14 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
-    # Chapitres à déclarer quand leur traduction sera livrée :
-    # - _institution.qmd
-    # - _reformes.qmd
-    # - _depense.qmd
-    # - _carburants.qmd
-    # - _electricite_gaz.qmd
-    # - _transport.qmd
-    # - _exterieurs.qmd
-    # - _incidence.qmd
+    - _institution.qmd
+    - _reformes.qmd
+    - _depense.qmd
+    - _carburants.qmd
+    - _electricite_gaz.qmd
+    - _transport.qmd
+    - _exterieurs.qmd
+    - _incidence.qmd
 
   appendices:
     - _glossaire.qmd

@@ -599,7 +599,36 @@ Pour les distributions faites à partir du 1^er^ janvier 2015, l'exonération g�
 
 Cette catégorie a changé de nature en cours de route. Dans le code de 1990, elle est **résiduelle et géographique** : « les autres revenus sont constitués des revenus de source étrangère n'ayant pas été soumis au paiement de l'impôt dans le pays d'origine » [@code-irpp-is-1990, art. 36], le revenu net étant constitué des « sommes effectivement perçues de l'étranger » (article 37). L'article 61 de la loi de finances pour 1998 y a ajouté un renvoi à l'article 26 pour les traitements, salaires, pensions et rentes viagères, et l'article 35 de la loi de finances pour 2007 la déduction de 80 % sur les pensions de source étrangère (@tbl-pensions-etrangeres).
 
-L'article 19 § 1 de la loi de finances pour 2016 lui donne un second visage [@lf-2016, art. 19] : y sont désormais rangés les revenus des **jeux de pari, de hasard et de loterie**, et les revenus déterminés selon les **dépenses personnelles ostensibles et notoires** et selon l'**accroissement du patrimoine**, conformément à l'article 43 du code, lorsque le contribuable ne réalise pas de revenus dans les catégories des bénéfices industriels et commerciaux, non commerciaux ou agricoles. Cette seconde branche est le **rattachement catégoriel de l'évaluation forfaitaire** : avant 2016, l'accroissement de fortune non justifié était réintégré sans catégorie de rattachement explicite. Elle se lit avec l'article 42, qui autorise l'évaluation d'après les éléments de train de vie selon le barème de l'annexe I du code, avec majoration lorsque plusieurs éléments sont réunis et sous condition d'une disproportion marquée avec le revenu net global déclaré — dispositions d'origine, jamais modifiées. L'article 19 n'énonçant pas de date d'effet propre, son application aux revenus de 2015 est **dérivée** de la règle générale de conversion. Depuis la loi de finances pour 2018, les sommes provenant des jeux de pari sur les courses de chevaux et des concours de pronostics sportifs organisés par des établissements publics sont exonérées [@lf-2018, art. 56].
+L'article 19 § 1 de la loi de finances pour 2016 lui donne un second visage [@lf-2016, art. 19] : y sont désormais rangés les revenus des **jeux de pari, de hasard et de loterie**, et les revenus déterminés selon les **dépenses personnelles ostensibles et notoires** et selon l'**accroissement du patrimoine**, conformément à l'article 43 du code, lorsque le contribuable ne réalise pas de revenus dans les catégories des bénéfices industriels et commerciaux, non commerciaux ou agricoles. Cette seconde branche est le **rattachement catégoriel de l'évaluation forfaitaire** : avant 2016, l'accroissement de fortune non justifié était réintégré sans catégorie de rattachement explicite. Elle se lit avec l'article 42, qui autorise l'évaluation d'après les éléments de train de vie (@sec-irpp-train-de-vie) selon le barème de l'annexe I du code, avec majoration lorsque plusieurs éléments sont réunis et sous condition d'une disproportion marquée avec le revenu net global déclaré — dispositions d'origine, jamais modifiées. L'article 19 n'énonçant pas de date d'effet propre, son application aux revenus de 2015 est **dérivée** de la règle générale de conversion. Depuis la loi de finances pour 2018, les sommes provenant des jeux de pari sur les courses de chevaux et des concours de pronostics sportifs organisés par des établissements publics sont exonérées [@lf-2018, art. 56].
+
+### L'évaluation d'après le train de vie {#sec-irpp-train-de-vie}
+
+Le code de 1990 prévoit, outre les régimes de détermination du revenu par catégorie, une évaluation forfaitaire du revenu global d'après le train de vie. Sauf justification contraire et en cas de disproportion marquée entre le train de vie du contribuable et les revenus qu'il déclare, le revenu global imposable ne peut être inférieur à une somme forfaitaire obtenue en appliquant à certains éléments de train de vie le barème de l'annexe I du code [@code-irpp-is-1990, art. 42 § I, p. 8]. La disproportion est « marquée » quand cette somme dépasse d'au moins 40 % le revenu net global déclaré, pour l'année d'imposition et l'année précédente. La valeur locative réelle se prouve par les baux écrits, les déclarations de locations verbales enregistrées, ou par comparaison avec d'autres locaux dont le loyer est constaté ou notoirement connu [@code-irpp-is-1990, art. 42 § I, p. 8].
+
+Les éléments retenus comprennent ceux des personnes à la charge du contribuable lorsqu'elles ne déclarent pas de revenu propre. Quand le contribuable réunit au moins trois éléments, le revenu forfaitaire correspondant est majoré de 25 % ; la majoration est de 40 % à partir de quatre éléments. Les revenus expressément exonérés et ceux du conjoint, en cas d'imposition forfaitaire, sont déduits de la base ainsi déterminée [@code-irpp-is-1990, art. 42 §§ II à IV, p. 8].
+
+: Barème de l'annexe I du code de 1990 : revenu forfaitaire selon les éléments du train de vie {#tbl-irpp-train-de-vie-1990}
+
+| Élément de train de vie | Revenu forfaitaire correspondant |
+|---|---|
+| Valeur locative de la résidence principale, déduction faite de celle des locaux à caractère professionnel | 3 fois la valeur locative réelle |
+| Valeur locative des résidences secondaires, en Tunisie et hors de Tunisie | 6 fois la valeur locative réelle |
+| Employés de maison et autres employés, le premier exclu : pour chaque personne de moins de 60 ans | 500 D |
+| Voiture destinée au transport de personnes, par cheval-vapeur : jusqu'à 6 CV | 150 D |
+| Idem : de 7 à 10 CV | 300 D |
+| Idem : de 11 à 15 CV | 450 D |
+| Idem : plus de 15 CV | 600 D |
+| Abattement sur le montant des voitures | un tiers pour les voitures de 5 à 10 ans ; deux tiers pour celles de 10 à 20 ans |
+| Yacht ou bateau de plaisance jaugeant au moins 3 tonneaux de jauge internationale : par tonneau | 500 D |
+| Avion de tourisme : par cheval-vapeur | 300 D |
+| Voyage d'agrément et de tourisme à l'étranger | 5 fois le prix du titre de transport, majoré de 5 fois l'allocation touristique autorisée par la Banque centrale de Tunisie |
+| Piscine | 5 000 D |
+
+Source : code de 1990, annexe I, p. 17 [@code-irpp-is-1990, annexe I, p. 17].
+
+L'article 19 § 1 de la loi de finances pour 2016 rattache à la catégorie des autres revenus les revenus déterminés selon les dépenses personnelles ostensibles et notoires et selon l'accroissement du patrimoine (@sec-irpp-autres).
+
+<!-- TODO : les modifications de l'article 42 et de l'annexe I après 1990 ne sont pas relevées ; la note documentaire de l'assiette les dit « jamais modifiées » sans citer de vérification au texte consolidé. Le renvoi de l'article 42 aux articles 43 et 61 (accroissement du patrimoine) n'est pas lu ici. -->
 
 ### Ce qui ne relève d'aucune catégorie : charges déductibles et plafonnement {#sec-irpp-deductions}
 
@@ -758,9 +787,96 @@ Le [régime forfaitaire](#g-regime-forfaitaire) substitue, pour les plus petites
 
 Le paragraphe IV de l'article 44 soumet au régime forfaitaire « les petits exploitants, artisans et commerçants lorsqu'il s'agit d'entreprises individuelles à établissement unique relevant de la catégorie des bénéfices industriels et commerciaux, non importatrices, non exportatrices et non soumises à la taxe sur la valeur ajoutée selon le régime réel » [@code-irpp-is-1990, art. 44]. Le plafond de chiffre d'affaires dépend de la nature de l'activité : 15 000 dinars pour les prestations de services, 20 000 dinars pour la consommation sur place, 30 000 dinars pour la production, la transformation et l'achat en vue de la revente, et 30 000 dinars au total lorsque plusieurs activités sont exercées dans le même établissement.
 
-**Le tarif est double.** Le droit commun est l'« impôt forfaitaire légal » de l'annexe II : un montant en dinars lu dans une grille, selon la tranche de chiffre d'affaires et la nature de l'activité — deux colonnes pour les prestations de services — consommation sur place, jusqu'à 500 dinars, et autres prestations, jusqu'à 600 dinars —, par tranches de 1 000 dinars ; une colonne pour les autres opérations, jusqu'à 700 dinars, par tranches de 2 000 dinars au-delà des deux premiers milliers [@code-irpp-is-1990, annexe II]. Pour l'alimentation générale, les cafés de première catégorie et les coiffeurs pour hommes, les annexes III-1 à III-3 fixent au contraire un « impôt forfaitaire simplifié » établi « d'après des indices professionnels spécifiques se basant sur les postes d'emplois et les zones d'activité » : une grille croisant le nombre d'employés et la zone, des communes de Tunis, Sousse et Sfax aux lieux situés hors des communes [@code-irpp-is-1990, annexes III-1 à III-3]. Aucune des annexes ne précise la période à laquelle se rapportent ses montants.
+**Le tarif est double.** Le droit commun est l'« impôt forfaitaire légal » de l'annexe II : un montant en dinars lu dans une grille, selon la tranche de chiffre d'affaires et la nature de l'activité — deux colonnes pour les prestations de services — consommation sur place, jusqu'à 500 dinars, et autres prestations, jusqu'à 600 dinars —, par tranches de 1 000 dinars ; une colonne pour les autres opérations, jusqu'à 700 dinars, par tranches de 2 000 dinars au-delà des deux premiers milliers [@code-irpp-is-1990, annexe II]. Pour l'alimentation générale, les cafés de première catégorie et les coiffeurs pour hommes, les annexes III-1 à III-3 fixent au contraire un « impôt forfaitaire simplifié » établi « d'après des indices professionnels spécifiques se basant sur les postes d'emplois et les zones d'activité » : une grille croisant le nombre d'employés et la zone, des communes de Tunis, Sousse et Sfax aux lieux situés hors des communes [@code-irpp-is-1990, annexes III-1 à III-3]. Aucune des annexes ne précise la période à laquelle se rapportent ses montants. Les grilles sont reproduites plus bas (@tbl-forfait-annexe-2-1990-services, @tbl-forfait-annexe-2-1990-autres, @tbl-forfait-annexe-3-1 à @tbl-forfait-annexe-3-3).
 
 **L'impôt forfaitaire est définitif ou n'est qu'une avance.** Il est définitif pour les personnes qui ne disposent pas d'autres catégories de revenus et n'ont pas été soumises au régime réel à la suite d'un contrôle fiscal ; pour les autres, comme pour celles qui ne remplissent plus les conditions, il constitue une avance à valoir sur l'impôt sur le revenu. Le régime réel reste ouvert sur option, exercée lors du dépôt de la déclaration [@code-irpp-is-1990, art. 44].
+
+Les deux grilles de l'annexe II du code sont reproduites ci-dessous : la seconde ne couvre que les opérations autres que les prestations de services, la première distingue la consommation sur place des autres prestations. Les tranches se lisent « de 1 000,001 à 2 000 » dans le texte, c'est-à-dire au millime près ; elles sont ici écrites sans les millimes.
+
+: Impôt forfaitaire légal de l'annexe II du code de 1990 : prestations de services (montants en dinars) {#tbl-forfait-annexe-2-1990-services}
+
+| Chiffre d'affaires (dinars) | Consommation sur place | Autres prestations |
+|---|---:|---:|
+| 0 à 1 000 | 0 | 0 |
+| 1 000 à 2 000 | 20 | 30 |
+| 2 000 à 3 000 | 30 | 45 |
+| 3 000 à 4 000 | 40 | 60 |
+| 4 000 à 5 000 | 50 | 100 |
+| 5 000 à 6 000 | 60 | 150 |
+| 6 000 à 7 000 | 70 | 200 |
+| 7 000 à 8 000 | 80 | 250 |
+| 8 000 à 9 000 | 90 | 300 |
+| 9 000 à 10 000 | 100 | 350 |
+| 10 000 à 11 000 | 140 | 400 |
+| 11 000 à 12 000 | 180 | 450 |
+| 12 000 à 13 000 | 220 | 500 |
+| 13 000 à 14 000 | 260 | 550 |
+| 14 000 à 15 000 | 300 | 600 |
+| 15 000 à 16 000 | 340 | — |
+| 16 000 à 17 000 | 380 | — |
+| 17 000 à 18 000 | 420 | — |
+| 18 000 à 19 000 | 460 | — |
+| 19 000 à 20 000 | 500 | — |
+
+: Impôt forfaitaire légal de l'annexe II du code de 1990 : les autres opérations (montants en dinars) {#tbl-forfait-annexe-2-1990-autres}
+
+| Chiffre d'affaires (dinars) | Impôt |
+|---|---:|
+| 0 à 1 000 | 0 |
+| 1 000 à 2 000 | 10 |
+| 2 000 à 4 000 | 20 |
+| 4 000 à 6 000 | 30 |
+| 6 000 à 8 000 | 60 |
+| 8 000 à 10 000 | 90 |
+| 10 000 à 12 000 | 150 |
+| 12 000 à 14 000 | 220 |
+| 14 000 à 16 000 | 280 |
+| 16 000 à 18 000 | 340 |
+| 18 000 à 20 000 | 400 |
+| 20 000 à 22 000 | 460 |
+| 22 000 à 24 000 | 520 |
+| 24 000 à 26 000 | 580 |
+| 26 000 à 28 000 | 640 |
+| 28 000 à 30 000 | 700 |
+
+Sources : code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, annexe II, p. 18 [@code-irpp-is-1990, annexe II, p. 18].
+
+L'impôt forfaitaire simplifié des annexes III-1 à III-3 se lit dans des grilles qui croisent la zone et le nombre d'employés. Les montants sont en dinars.
+
+: Impôt forfaitaire simplifié de l'annexe III-1 du code de 1990 : alimentation générale (montants en dinars) {#tbl-forfait-annexe-3-1}
+
+| Zone | Propriétaire sans employé | Propriétaire et 1 employé | Propriétaire et 2 employés | Propriétaire et 3 employés | Propriétaire et 4 employés |
+|---|---:|---:|---:|---:|---:|
+| 1. Communes de Tunis, Sousse, Sfax, Bizerte, Mahdia, Gabès et Ariana | 75 | 120 | 180 | 250 | 450 |
+| 2. Banlieues de Tunis, Sousse et Sfax ; chefs-lieux des gouvernorats de Béja, du Kef, de Médenine, de Ben Arous et de Monastir | 65 | 105 | 160 | 220 | 400 |
+| 3. Communes chefs-lieux des autres gouvernorats | 60 | 95 | 145 | 200 | 360 |
+| 4. Autres communes chefs-lieux de délégation | 55 | 90 | 135 | 185 | 330 |
+| 5. Autres communes | 40 | 65 | 100 | 140 | 240 |
+| 6. Autres lieux, hors des communes | 30 | 50 | 65 | 85 | 130 |
+
+: Impôt forfaitaire simplifié de l'annexe III-2 du code de 1990 : cafetiers de première catégorie, par employé de chaque équipe (montants en dinars) {#tbl-forfait-annexe-3-2}
+
+| Zone | 1 employé | 2 employés | 3 employés | 4 employés |
+|---|---:|---:|---:|---:|
+| 1. Communes de Tunis, Sousse et Sfax | 30 | 60 | 135 | 180 |
+| 2. Banlieues de Tunis, Sousse et Sfax et autres chefs-lieux des gouvernorats | 24 | 50 | 105 | 150 |
+| 3. Autres communes chefs-lieux de délégation | 18 | 45 | 75 | 120 |
+| 4. Autres communes | 15 | 30 | 60 | 90 |
+| 5. Autres lieux, hors des communes | 12 | 21 | 45 | 60 |
+
+: Impôt forfaitaire simplifié de l'annexe III-3 du code de 1990 : coiffeurs pour hommes (montants en dinars) {#tbl-forfait-annexe-3-3}
+
+| Zone | 1re catégorie, employeur et 3 employés | 1re catégorie, employeur et 2 employés | 1re catégorie, employeur et 1 employé | 1re catégorie, employeur seul | 2e catégorie, employeur et 3 employés | 2e catégorie, employeur et 2 employés | 2e catégorie, employeur et 1 employé | 2e catégorie, employeur seul |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1. Communes de Tunis, Sousse et Sfax | 88 | 68 | 50 | 32 | 112 | 86 | 58 | 38 |
+| 2. Banlieues de Tunis, Sousse et Sfax et autres chefs-lieux des gouvernorats | 78 | 62 | 44 | 30 | 92 | 72 | 52 | 34 |
+| 3. Autres communes chefs-lieux de délégation | 62 | 48 | 36 | 24 | 72 | 56 | 42 | 28 |
+| 4. Autres communes | 44 | 34 | 24 | 16 | 50 | 40 | 28 | 20 |
+| 5. Autres lieux, hors des communes | 30 | 24 | 16 | 10 | 34 | 28 | 18 | 14 |
+
+Sources : code de 1990, annexes III-1 et III-2, p. 19, et annexe III-3, p. 20 [@code-irpp-is-1990, annexes III-1 à III-3, p. 19-20].
+
+<!-- TODO : les annexes III n'indiquent pas ce que recouvre « chaque équipe » (cafetiers) ni la définition des catégories de cafés et de coiffeurs ; le texte de l'article 44 § IV renvoie aux annexes sans la préciser. À chercher dans le décret d'application ou la doctrine de 1990. -->
 
 ### De 1992 à 2010 : unification et resserrement
 
@@ -1066,7 +1182,7 @@ Dans son rapport pour 2000, la Banque centrale écrit qu'« aucune nouvelle admi
 
 - **Avant → après.** Aucune déduction liée au placement en actions → déduction de 50 % des dépôts sur un CEA, dans la limite de 5 000 D, sous blocage de cinq ans.
 
-<!-- TODO (documentaliste) : décret n° 99-2773 du 13 décembre 1999 (conditions d'ouverture des CEA) à lire et à citer ; année de revenus de la première déduction (revenus 1999 vraisemblables, non attestés). -->
+<!-- TODO (documentaliste) : année de revenus de la première déduction (revenus 1999 vraisemblables, non attestés). -->
 
 Entre-temps, en 2002, les fonds communs de placement en valeurs mobilières reçoivent un régime propre et le CEA s'ouvre aux organismes de placement collectif (@sec-irpp-epargne-fonds, @sec-irpp-epargne-cea) ; en 2003 naît le compte épargne pour l'investissement (@sec-irpp-epargne-cei). La Banque centrale range ces deux comptes parmi les mesures prises pour « concrétiser […] les objectifs du Xème Plan », par « la promotion de l'épargne longue destinée directement au financement des investissements par l'adoption de régimes fiscaux de faveur pour les titulaires de comptes épargne en actions et épargne pour l'investissement » [@bct-ra-2003].
 
@@ -1092,7 +1208,7 @@ La même loi récrit l'article 52 du code : à la lettre, la retenue de 20 % sur
 
 Entre-temps, en 2007, la plus-value d'apport de titres à une société holding qui s'engage à s'introduire en bourse est exonérée ([loi de finances pour 2007](#r-epargne-pv-2007)).
 
-<!-- TODO (documentaliste) : décret-loi n° 2011-100 du 21 octobre 2011, art. 6 à 13 (plus-value de cession de parts de fonds à partir de 2012, point 17 de l'art. 38 récrit, point 18 bis abrogé) : connu par les annotations du code consolidé, à lire au fascicule (JORT n° 81 de 2011) avant d'être porté au registre des plus-values. -->
+**2012 : les parts de fonds.** Pour les cessions et rétrocessions faites à partir du 1^er^ janvier 2012, le [décret-loi n° 2011-100](#r-epargne-pv-2012) range la plus-value de cession des parts de fonds parmi les revenus de valeurs mobilières (art. 31 *bis*), la détermine comme celle des titres (art. 33) et récrit le point 17 de l'article 38 : sont exonérées la plus-value des parts de fonds communs de placement en valeurs mobilières et des actions de sociétés d'investissement à capital variable, celle des parts de fonds d'amorçage, et celle des actions et parts cédées pour le compte de tiers par les sociétés d'investissement à capital risque. L'exonération des titres de capital risque est totale pour les souscriptions du III et du IV de l'article 39 *septies* ; elle est limitée à 50 % de la plus-value pour celles du I et du II, si la cession a lieu après la cinquième année.
 
 #### 2014 : imposer les dividendes {#sec-irpp-epargne-2014}
 
@@ -1186,6 +1302,7 @@ Les intérêts des bons du Trésor sont des revenus de capitaux mobiliers (« ef
 | []{#r-epargne-pv-2004}cessions à partir du [1^er^ janvier 2004]{.insecable} | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 61 à 63, p. 3730] | nouvel art. 31 *bis* : plus-value de cession d'actions et de parts sociales, revenu de valeurs mobilières ; art. 33 : prix de cession moins valeur d'acquisition, moins-values de l'année imputées ; 44-III-3 : 10 % ; 38-17 : actions cotées, introductions en bourse, actions de SICAV, cessions par les SICAR exonérées ; 38-18 : franchise de 10 000 D par an | taux proportionnel, hors barème | **rupture** (2004) |
 | []{#r-epargne-pv-2007}[1^er^ janvier 2007]{.insecable} | loi n° 2006-85, loi de finances pour 2007 [@lf-2007, art. 32, p. 4387] | 38-17 complété : plus-value d'apport d'actions et de parts sociales au capital d'une société mère ou holding qui s'engage à introduire ses actions en bourse avant la fin de l'année suivante, délai prorogeable d'un an, exonérée | — | ajustement |
 | []{#r-epargne-pv-2011}cessions à partir du [1^er^ janvier 2011]{.insecable} | loi n° 2010-58, loi de finances pour 2011 [@lf-2011, art. 41, p. 3474-3476] | « Rationalisation de l'exonération… » : exonération des actions cotées réservée à celles acquises ou souscrites avant le 1^er^ janvier 2011 et aux introductions en bourse ; actions cotées acquises depuis : exonérées si cédées après la fin de l'année suivant l'acquisition, sinon 10 % | taux proportionnel, hors barème | étape (réforme de 2004) |
+| []{#r-epargne-pv-2012}cessions et rétrocessions à partir du [1^er^ janvier 2012]{.insecable} | décret-loi n° 2011-100 du 21 octobre 2011 [@decret-loi-2011-100, art. 6 à 9, p. 2305-2306] | art. 6 : II *bis* de l'art. 29, revenus des parts de fonds communs de placement en valeurs mobilières et de fonds d'amorçage, hors plus-value ; art. 7 : plus-value de cession ou de rétrocession des parts de fonds dans l'art. 31 *bis* ; art. 8 : art. 33 ; art. 9 : point 17 de l'art. 38 récrit (actions cotées, actions de SICAV et parts de FCPVM, parts de fonds d'amorçage, titres de capital risque cédés pour le compte de tiers), point 18 *bis* abrogé | — | étape (de la réforme de 2004) |
 | []{#r-epargne-pv-2023}cessions à partir du [1^er^ janvier 2023]{.insecable} | décret-loi n° 2022-79, loi de finances pour 2023 [@lf-2023, art. 42, p. 4068] (édition arabe) ; [@dgi-nc-3-2023] | 44-III-3 : 10 % pour les actions cotées cédées avant la fin de l'année suivant l'acquisition et pour les autres actions, parts sociales et parts de fonds cédées après ; 15 % pour les actions non cotées, parts sociales et parts de fonds cédées avant ; franchise de l'art. 38-18 abrogée | taux proportionnel, libératoire | étape (réforme de 2004) |
 
 : Plus-value de cession de titres des personnes physiques résidentes : textes, 2004-2026 {#tbl-irpp-epargne-registre-plus-values}
@@ -1314,7 +1431,7 @@ Deux textes changent la nature de la déduction. Depuis les revenus de 2011, [la
 
 #### Le compte épargne en actions {#sec-irpp-epargne-cea}
 
-Les sommes déposées sur un [compte épargne en actions](#g-compte-epargne-actions) (CEA), bloquées cinq ans et placées en actions cotées et en bons du Trésor assimilables, sont déduites du revenu, dans la limite d'un plafond (article 39 § VIII du code). Le compte naît de la réforme de 1999 (@sec-irpp-epargne-1999) : la moitié des dépôts est alors déductible, dans la limite de 5 000 D. Le plafond est relevé ensuite par paliers.
+Les sommes déposées sur un [compte épargne en actions](#g-compte-epargne-actions) (CEA), bloquées cinq ans et placées en actions cotées et en bons du Trésor assimilables, sont déduites du revenu, dans la limite d'un plafond (article 39 § VIII du code). Le compte naît de la réforme de 1999 (@sec-irpp-epargne-1999) : la moitié des dépôts est alors déductible, dans la limite de 5 000 D. Le plafond est relevé ensuite par paliers. Le décret n° 99-2773 règle le compte : ouvert aux personnes physiques auprès des banques et des intermédiaires en bourse ; sommes affectées pour 80 % au moins à des titres de capital de sociétés cotées et pour le reste à des bons du Trésor assimilables, chaque dépôt devant être employé dans les 30 jours de bourse ; aucun intérêt ; retrait des seuls produits (dividendes, intérêts des bons, droits, plus-values) pendant la période de blocage ; transfert d'un établissement à l'autre ([décret du 13 décembre 1999](#r-epargne-cea-1999-decret)).
 
 ```{python}
 #| echo: false
@@ -1335,12 +1452,15 @@ La Banque centrale présente le relèvement de 2003 comme une harmonisation : «
 | Effet | Texte et articles | Avant → après | Portée |
 |---|---|---|---|
 | []{#r-epargne-cea-1999}[26 août 1999]{.insecable} | loi n° 99-92 du 17 août 1999 [@loi-99-92-relance-marche-financier, art. 1 à 4, p. 1463-1464] | art. 4 : création du CEA ; déduction de 50 % des dépôts, dans la limite de 5 000 D ; blocage de cinq ans ; actions cotées et bons du Trésor assimilables ; art. 1 à 3 : impôt sur les sociétés à 20 % pendant cinq ans pour les sociétés qui admettent au moins 30 % de leur capital à la cote ; exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, le 21 août 1999 | **rupture** (1999) |
-| []{#r-epargne-cea-2002}[1^er^ janvier 2002]{.insecable} | loi n° 2001-123, loi de finances pour 2002 [@loi2001-123-lf2002, art. 30 et 31] | placements admis élargis aux organismes de placement collectif investis en actions cotées et en bons du Trésor assimilables ; 5 000 D maintenus | étape (réforme de 1999) |
+| []{#r-epargne-cea-1999-decret}[21 décembre 1999]{.insecable}, date de publication, le décret ne disposant pas autrement | décret n° 99-2773 du 13 décembre 1999 [@decret99-2773-cea, art. 1 à 13, pp. 2667-2668] | conditions d'ouverture et de gestion : ouverture au profit des personnes physiques auprès des banques et des intermédiaires en bourse (art. 1) ; 80 % au moins en titres de capital de sociétés cotées, le reste en bons du Trésor assimilables, la condition étant réputée satisfaite si le solde inutilisé ne dépasse pas 100 D (art. 2) ; emploi dans les 30 jours de bourse du dépôt (art. 3) ; aucun intérêt (art. 4) ; convention approuvée par le conseil du marché financier (art. 5 et 8) ; relevé trimestriel (art. 6) ; retrait des sommes déposées ou des titres sur attestation de paiement de l'impôt et des pénalités pendant la période de blocage, les produits restant libres (art. 10 et 11) ; transfert d'un établissement à un autre (art. 12) | ajustement |
+| []{#r-epargne-cea-2002}[1^er^ janvier 2002]{.insecable} | loi n° 2001-123, loi de finances pour 2002 [@loi2001-123-lf2002, art. 30 et 31, p. 4254] | art. 30 : placements admis élargis aux actions ou parts des organismes de placement collectif en valeurs mobilières dont les actifs sont employés en actions cotées et en bons du Trésor assimilables ; 50 % des dépôts et 5 000 D maintenus ; art. 31 : pénalités de retard non exigibles en cas de retrait après la troisième année qui suit celle du dépôt ou pour un événement imprévisible, dont un arrêté conjoint fixe la liste | étape (réforme de 1999) |
 | []{#r-epargne-cea-2004}revenus 2003 | loi n° 2003-80, loi de finances pour 2004 [@lf-2004, art. 45 et 46] ; [@dgi-nc-16-2004] | 50 % et 5 000 D → dépôts dans la limite de 20 000 D, sans quote-part ; condition de comptabilité supprimée | étape (réforme de 1999) |
 | []{#r-epargne-cea-2011}[25 avril 2011]{.insecable} | décret-loi n° 2011-28 du 18 avril 2011 [@decret-loi-2011-28, art. 4, p. 488] | 20 000 D → 50 000 D ; exécutoire cinq jours après le dépôt du *Journal officiel* au siège du gouvernorat de Tunis, le 20 avril 2011 | étape (réforme de 1999) |
+| []{#r-epargne-cea-2011-opc}octobre 2011, date d'effet non établie (publication le 25 octobre 2011) | décret-loi n° 2011-100 du 21 octobre 2011 [@decret-loi-2011-100, art. 13, p. 2307] | art. 39-VIII : les placements admis sont les actions de sociétés d'investissement à capital variable et les parts de fonds communs de placement en valeurs mobilières de l'art. 10 du code des organismes de placement collectif, au lieu des « organismes de placement collectif en valeurs mobilières » | ajustement |
 | []{#r-epargne-cea-2021}revenus 2020 | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 16, p. 3129] ; [@dgi-nc-1-2021] | 50 000 D → 100 000 D | étape (réforme de 1999) |
 
-<!-- TODO (bibliographe) : LF 2002, art. 30-31 : à citer par la clé loi2001-123-lf2002 ; pages des art. 30-31 (p. 4253-4254 du fascicule n° 104 de 2001) à confirmer à l'image avant d'être citées. -->
+
+<!-- TODO (documentaliste) : date d'effet de l'art. 13 du décret-loi n° 2011-100 (date de dépôt du JORT n° 81 de 2011 au gouvernorat de Tunis non relevée) ; le décret-loi ne porte pas d'article d'application. -->
 
 ::::
 
@@ -1348,7 +1468,7 @@ La Banque centrale présente le relèvement de 2003 comme une harmonisation : «
 
 Les sommes déposées sur un [compte épargne pour l'investissement](#g-compte-epargne-investissement) (CEI), destinées à financer dans les cinq ans un projet d'investissement, sont déduites du revenu, et les intérêts du compte sont exonérés, dans deux limites (article 39 *bis* et article 38, point 15, du code). Selon l'administration, le compte, créé par la loi de finances pour 2003, ouvre une déduction de 20 000 D par an et une exonération des intérêts de 2 000 D [@dgi-nc-35-2003]. Pour les montants déposés et les intérêts réalisés à partir du 1^er^ janvier 2017, ces limites passent à 50 000 D et 4 000 D, et les bénéfices s'ajoutent aux revenus déposables ([loi de finances pour 2018](#r-epargne-cei-2018)). Le @tbl-irpp-epargne-cei donne les deux limites à chaque date.
 
-<!-- TODO (documentaliste) : arrêté du 24 avril 2003 (conditions d'ouverture du CEI), à lire au fascicule ; art. 23 de la LF 2003, cité par l'administration, non relu. -->
+Les dépôts et les intérêts sont bloqués : ils ne servent qu'à de nouveaux projets individuels du titulaire ou de ses enfants, éligibles aux avantages fiscaux, ou à la souscription au capital initial d'entreprises ouvrant droit à la déduction des revenus réinvestis, et doivent être employés au plus tard le 31 décembre de l'année qui suit la période d'épargne. Un retrait pour un autre motif, ou un projet réalisé après ce terme, entraîne le paiement de l'impôt éludé et des pénalités, qui ne sont pas dues en cas d'événement imprévisible ([loi de finances pour 2003](#r-epargne-cei-2003), art. 21). L'arrêté du ministre des finances du 24 avril 2003 en règle le fonctionnement : un seul compte par personne physique, ouvert auprès de la Caisse d'épargne nationale ou d'une banque ; dépôt minimal de 100 D, retrait minimal de 500 D ; compte jamais débiteur ; période d'épargne de cinq ans, le terme d'emploi étant le 31 décembre de l'année qui suit la cinquième année ; retrait pour un projet sur présentation d'une attestation des services du contrôle fiscal ([arrêté du 24 avril 2003](#r-epargne-cei-2003-arrete), art. 1 à 11).
 
 ```{python}
 #| echo: false
@@ -1363,13 +1483,14 @@ table("irpp_epargne_cei",
 | Effet | Texte et articles | Avant → après | Portée |
 |---|---|---|---|
 | []{#r-epargne-cei-2003}[1^er^ janvier 2003]{.insecable} | loi n° 2002-101, loi de finances pour 2003 [@lf-2003, art. 21, 22 et 87, p. 2877-2878 et 2888] ; [@dgi-nc-35-2003] | art. 21, nouvel art. 39 *bis* : dépôts déductibles jusqu'à 20 000 D par an ; art. 22, nouveau point 15 de l'art. 38 : intérêts exonérés jusqu'à 2 000 D par an | rupture propre |
+| []{#r-epargne-cei-2003-arrete}[2 mai 2003]{.insecable}, date de publication, l'arrêté ne disposant pas autrement (art. 12) | arrêté du ministre des finances du 24 avril 2003 [@arrete-2003-04-24-cei, art. 1 à 12, p. 1316-1317] | conditions d'ouverture et de fonctionnement du compte : un compte par personne physique ; dépôt minimal de 100 D, retrait minimal de 500 D ; intérêts au moins égaux au taux de rémunération de l'épargne fixé par la banque centrale, capitalisés au 31 décembre ; emploi au plus tard le 31 décembre de l'année qui suit la cinquième année de l'épargne (art. 9) ; retrait pour un projet sur attestation du contrôle fiscal (art. 10 et 11) | ajustement |
 | []{#r-epargne-cei-2018}[1^er^ janvier 2017]{.insecable} | loi n° 2017-66, loi de finances pour 2018 [@lf-2018, art. 27, p. 4275] ; [@dgi-nc-2-2018] | montants déposés et intérêts ou bénéfices réalisés à partir de cette date : dépôts déductibles 20 000 D → 50 000 D ; intérêts et bénéfices exonérés 2 000 D → 4 000 D | ajustement |
 
 ::::
 
 #### Les fonds et les organismes exonérés : la retenue définitive {#sec-irpp-epargne-fonds}
 
-Pour une personne morale qui ne paie pas l'impôt sur les sociétés, ou pour un fonds, la retenue sur les revenus de capitaux mobiliers est définitive et non restituable (article 52 § II-2 du code). La règle naît de la réforme de 1992 (@sec-irpp-epargne-1992). Selon l'administration, elle s'étend en 2002 aux fonds communs de placement en valeurs mobilières, dont les revenus supportent une retenue « définitive et libératoire » de 20 %, et les fonds communs de créances supportent une retenue de 20 % imputable sur celle que doivent leurs copropriétaires [@dgi-nc-45-2002]. Les parts de fonds communs de placement relèvent des revenus distribués (@sec-irpp-epargne-2014). La règle est abrogée en 2021, puis rétablie en 2022 et étendue aux fonds d'amorçage et aux fonds communs de placement à risque (@sec-irpp-epargne-2020). Les [organismes de placement collectif en valeurs mobilières](#g-opcvm) comprennent les SICAV et les fonds communs de placement.
+Pour une personne morale qui ne paie pas l'impôt sur les sociétés, ou pour un fonds, la retenue sur les revenus de capitaux mobiliers est définitive et non restituable (article 52 § II-2 du code). La règle naît de la réforme de 1992 (@sec-irpp-epargne-1992). Selon l'administration, elle s'étend en 2002 aux fonds communs de placement en valeurs mobilières, dont les revenus supportent une retenue « définitive et libératoire » de 20 %, et les fonds communs de créances supportent une retenue de 20 % imputable sur celle que doivent leurs copropriétaires [@dgi-nc-45-2002]. Les parts de fonds communs de placement relèvent des revenus distribués (@sec-irpp-epargne-2014). La loi n° 2005-59 étend la même retenue aux revenus de capitaux mobiliers des fonds d'amorçage et ouvre une déduction des revenus réinvestis dans l'acquisition de leurs parts, sous condition d'attestation du gestionnaire du fonds ([loi du 18 juillet 2005](#r-epargne-fonds-2005)). La règle est abrogée en 2021, puis rétablie en 2022 et étendue aux fonds d'amorçage et aux fonds communs de placement à risque (@sec-irpp-epargne-2020). Les [organismes de placement collectif en valeurs mobilières](#g-opcvm) comprennent les SICAV et les fonds communs de placement.
 
 ```{python}
 #| echo: false
@@ -1379,9 +1500,9 @@ table("irpp_epargne_fonds",
       "tbl-irpp-epargne-fonds")
 ```
 
-<!-- TODO (documentaliste) : le tableau ne porte pas l'extension de 2002 aux fonds communs de placement en valeurs mobilières (LF 2002, art. 21 à 28, selon la NC 45/2002, non relus au fascicule) : ligne à ajouter au registre et au tableau une fois les articles lus ; constat dans docs/notes/backlog-modele.md. -->
+<!-- TODO (documentaliste) : le tableau engendré ne porte pas l'extension de 2002 aux fonds communs de placement en valeurs mobilières (LF 2002, art. 21 à 28, lus le 31 octobre 2026) : ligne à ajouter au tableau, et au paramètre qui l'engendre, quand l'arbre des paramètres le portera ; constat dans docs/notes/backlog-modele.md. -->
 
-<!-- TODO (documentaliste) : régime fiscal des SICAV (la NC 45/2002 renvoie à un régime « en vigueur » antérieur) ; LF 2002, art. 21 à 28, à lire au fascicule ; déduction de l'art. 39 ter (loi n° 2005-59, art. 3) et décret-loi n° 2011-100, connus par les annotations du code consolidé seulement. -->
+<!-- TODO (documentaliste) : régime fiscal des SICAV (la NC 45/2002 renvoie à un régime « en vigueur » antérieur ; les art. 21 à 28 de la LF 2002 ne visent que les fonds communs, et le code des organismes de placement collectif, loi n° 2001-83, n'est pas lu)  ; date d'effet de la loi n° 2005-59 (dépôt du JORT n° 57 de 2005 au gouvernorat de Tunis non relevé). -->
 
 :::: {.chronologie-repliable titre="Retenue définitive des organismes exonérés et des fonds, 1992-2026 : textes"}
 
@@ -1389,7 +1510,8 @@ table("irpp_epargne_fonds",
 |---|---|---|---|
 | []{#r-epargne-fonds-1992}[2 janvier 1992]{.insecable} | loi n° 91-98, loi de finances pour 1992 [@loi91-98-lf1992, art. 31, p. 2085] | nouveau 52-II-2 : 20 % définitive et non restituable sur les revenus de capitaux mobiliers des personnes morales non soumises à l'impôt sur les sociétés ou totalement exonérées | mise en place (réforme de 1992) |
 | []{#r-epargne-fonds-1999}[1^er^ janvier 1999]{.insecable} | loi n° 98-111, loi de finances pour 1999 [@lf-1999, art. 43, p. 2505] | mention des banques non résidentes retirée de 52-II-2 | ajustement |
-| []{#r-epargne-fonds-2002}[1^er^ janvier 2002]{.insecable} | loi n° 2001-123, loi de finances pour 2002, art. 21 à 28, selon l'administration [@dgi-nc-45-2002] | 52-II-2 étendu aux fonds communs de placement en valeurs mobilières ; fonds communs de créances : 20 % imputable sur la retenue due aux copropriétaires | — |
+| []{#r-epargne-fonds-2002}[1^er^ janvier 2002]{.insecable} | loi n° 2001-123, loi de finances pour 2002 [@loi2001-123-lf2002, art. 21 à 28, p. 4253-4254] ; taux de 20 % : [@dgi-nc-45-2002] | art. 21 : 52-II-2 étendu aux revenus de capitaux mobiliers du fonds commun de placement en valeurs mobilières ; art. 22 à 24 : ses parts comptent parmi les revenus distribués ; art. 25 à 28 : les copropriétaires d'un fonds commun de créances sont imposés sur leur quote-part, la retenue subie par le fonds s'impute sur celle qu'il doit sur ce qu'il leur paie, et son gestionnaire dépose une déclaration annuelle | — |
+| []{#r-epargne-fonds-2005}juillet 2005, date d'effet non établie (publication le 19 juillet 2005) | loi n° 2005-59 du 18 juillet 2005 [@loi2005-59-fonds-amorcage, art. 3 et 5, p. 1752] | art. 5 : 52-II-2 applicable aux revenus de capitaux mobiliers des fonds d'amorçage ; art. 3 : nouvel art. 39 *ter*, déduction de l'assiette des revenus réinvestis dans l'acquisition de parts de fonds d'amorçage, nonobstant l'art. 12 *bis*, sous condition de comptabilité et d'attestation de souscription et de paiement ; le bénéficiaire répond solidairement avec le gestionnaire du non-emploi des actifs du fonds | ajustement |
 | []{#r-epargne-fonds-2021}[1^er^ janvier 2021]{.insecable} | loi n° 2020-46, loi de finances pour 2021 [@lf-2021, art. 17, p. 3130] | 52-II-2 abrogé ; la retenue de 20 % devient libératoire pour tous | étape (réforme de 2020-2022) |
 | []{#r-epargne-fonds-2022}[1^er^ janvier 2022]{.insecable} | décret-loi n° 2021-21, loi de finances pour 2022 [@dl2021-21-lf2022, art. 38, p. 3090] ; [@dgi-nc-1-2022] | 52-II-2 rétabli ; étendu aux fonds d'amorçage et aux FCPR ; hors devises | étape (réforme de 2020-2022) |
 

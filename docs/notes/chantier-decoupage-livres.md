@@ -12,7 +12,7 @@ cesse de couper deux fois. Plan à lancer plus tard, phase par phase, une PR par
 |---|---|---|
 | I. Les revenus primaires | Le marché du travail ; Les rémunérations publiques | flux |
 | II. Les prélèvements | La fiscalité ; Les finances locales ; Les cotisations sociales | flux |
-| III. Les transferts en espèces | Les retraites ; Les prestations sociales | flux |
+| III. Les transferts sociaux : prestations en espèces et prestations en nature | Les retraites ; Les prestations sociales | flux |
 | IV. Les politiques sectorielles | La santé ; La compensation (énergie et prix) ; L'éducation ; plus tard : le transport, le logement, l'environnement | secteur |
 | V. Les institutions | Les caisses de sécurité sociale ; Les entreprises publiques | institution |
 | VI. La synthèse | Le cadre des finances publiques ; La redistribution | ensemble |
@@ -324,7 +324,7 @@ moment de leur conversion, pas avant.
   période (déplacé) ; annexes : les textes dans l'ordre, notations, textes modificatifs,
   glossaire.
 
-**III. Les transferts en espèces**
+**III. Les transferts sociaux : prestations en espèces et prestations en nature**
 - Les retraites : présentation élargie (synthèse historique, vue des deux secteurs) ; partie
   « Le secteur privé » (scission) : salariés non agricoles, régimes agricoles, régime
   complémentaire, non-salariés et régimes particuliers ; partie « Le secteur public » :

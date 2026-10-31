@@ -22,17 +22,36 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
 
 - **Toujours `uv run`** pour Python — jamais `python3` ni `.venv/bin/python3`.
 - **Le français est la source de vérité.** N'écris jamais un `.qmd` sous `precis/ar/` : la version
-  arabe est produite par la CI. Les `references.json`, eux, se tiennent à la main dans les deux
-  langues — et les **`_quarto.yml` aussi**.
+  arabe est produite par la CI (traduction, et pages-relais engendrées par `scripts/arabe_cablage.py`). Les `references.json`, eux, se tiennent à la main dans les deux
+  langues ; les **`_quarto.yml` arabes** aussi, sauf leurs listes de chapitres (engendrées).
 - **Ne remets jamais les `_quarto.yml` dans la synchronisation de traduction.** Ils en sont exclus
   par le filtre du workflow *et* par `translate_sync.fichier_a_traduire()`. Motif : le fichier arabe
   porte des éléments qui n'ont **aucun original français** — `dir: rtl`, le bloc `language:` des
   libellés d'interface, les titres des parties du livre. Le traducteur ne peut pas les déduire du
   fichier français et les effaçait à chaque passage ; le livre arabe rendait alors 404 jusqu'au
-  rattrapage à la main. Conséquence pratique : **quand tu ajoutes un chapitre côté français, ajoute-le
-  toi-même au `_quarto.yml` arabe**, une fois sa traduction livrée — sans quoi il ne sera servi dans
-  aucune des deux langues. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
+  rattrapage à la main. Conséquence pratique : **quand tu ajoutes, retires ou renommes un chapitre côté
+  français, lance `uv run python scripts/arabe_cablage.py`** et commite le résultat. Le script
+  réécrit les seules listes `chapters:` et `appendices:` du `_quarto.yml` arabe d'après le français
+  (ce qui n'a pas d'original français est conservé) et pose une page-relais (avis « pas encore
+  traduit » et lien vers le français) pour tout chapitre sans arabe ; la CI le rejoue après chaque
+  passage de traduction, et `verifier-conventions.yml` le vérifie sur les PR (`--verifier`). Une
+  page-relais porte un commentaire HTML de tête ; ni `traduction_en_retard.py`, ni la parité ne la
+  prennent pour une traduction, et `translate_sync` l'écrase. Un fichier malformé ou des chapitres qui dérivent sont attrapés par
   `rendre-les-livres.yml`, qui rend les livres disponibles sur chaque PR.
+- **La traduction se traite seule ; l'état se lit dans une issue.** Le palier gratuit de Gemini
+  plafonne par mois. Au premier refus de limite de dépense (plafond mensuel, 402, ou 429 qui ne
+  cède pas), `translate_sync` s'arrête, sort en succès et écrit son bilan ; le retard se recalcule
+  par dates de commit (`scripts/traduction_en_retard.py`) et est repris au passage suivant. Rien à
+  relancer à la main. L'issue épinglée « Traductions arabes : état » (marqueur HTML caché ;
+  `scripts/etat_traduction.py`, appelé par `translation-sync.yml`) dit le retard par livre, l'état,
+  le budget mensuel appris et la consommation du mois ; elle ne se ferme pas.
+  **Rattrapage par lots** : le lundi et le 1er du mois, `scripts/lot_traduction.py` choisit UN
+  livre (structure récemment changée d'abord : prestations sociales, fiscalité, finances locales),
+  borné en fichiers (8) et en caractères (35 % du budget estimé, jamais au-delà de 75 % du budget
+  du mois : le reste est la marge des fusions), sans les fichiers déjà portés par une PR de
+  traduction ouverte. `uv run python scripts/lot_traduction.py --dry-run` montre le lot sans
+  réseau. Les chapitres de plus de 90 000 caractères sont traduits par morceaux (`decouper`).
+  Réglages en `workflow_dispatch` : `livre`, `max_fichiers`, `max_caracteres`, `budget_mensuel`.
 - **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `_glossaire.infobulles.html`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
 - **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut
@@ -79,6 +98,14 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   les chiffres et localisations d'un inventaire daté : `docs/notes/todo-localisation.md` est
   une photographie du 20 septembre 2026, pas un état du corpus en temps réel. La revue
   humaine contrôle que le backlog et le chapitre racontent le même état.
+  **Quand plusieurs chantiers tournent en parallèle**, n'écris pas dans le fichier : propose
+  tes lignes de backlog (points fermés, lacunes nouvelles, état « lisible / OCR / à obtenir »)
+  dans le corps de ta PR, sous un titre « Backlog ». Le rôle `archiviste-backlog` les applique
+  en une passe, après les fusions, et vérifie chaque point dans les chapitres : cela évite les
+  conflits sur ce fichier et les « restes » qui survivent à leur chantier. Les dates que tu
+  écris sont celles du jour (`date`), jamais une date future ; `scripts/check_backlog.py`
+  refuse les marqueurs de conflit, les dates futures proches et les clés de citation absentes
+  des `references.json`.
 
 - **Les volumes documentent la loi, jamais le modèle.** Ni `openfisca`, ni « le modèle », ni « les
   paramètres » dans le texte rendu d'un volume. La documentation générale — README, page
@@ -140,7 +167,7 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   sinon la ligne n'a rien à y faire.
 
 Les rôles éditoriaux — documentaliste, architecte, rédacteur, terminologue, bibliographe,
-relecteur-ar, modeliste, économiste — sont décrits dans `docs/agents/<role>.md`, en texte neutre, indépendant de l'outil et
+relecteur-ar, modeliste, économiste, archiviste-backlog — sont décrits dans `docs/agents/<role>.md`, en texte neutre, indépendant de l'outil et
 du fournisseur de LLM. La chaîne éditoriale va du premier au dernier, et s'arrête pour revue
 humaine. Voir « Économiser » pour le lien vers `.claude/agents/`.
 

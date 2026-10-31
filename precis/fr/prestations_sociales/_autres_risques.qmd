@@ -117,7 +117,7 @@ Le @tbl-ar-etat-2026 donne, pour chaque prestation en 2026, qui la reçoit, à q
 | [Réparation de l'accident du travail, secteur privé](#r-ar-at-art35) | tout travailleur ou assimilé | accident par le fait ou à l'occasion du travail, accident de trajet, maladie professionnelle | soins ; deux tiers du salaire quotidien ; rente | incapacité temporaire : toute sa durée, après trois jours de carence | cotisation propre au régime |
 | [Réparation de l'accident du travail, secteur public](#r-ar-atpub-art5) | agent affilié à la CNRPS, hors militaires et forces de sécurité intérieure | les mêmes | salaire maintenu ; soins ; indemnité compensatrice d'incapacité permanente | — | l'employeur |
 | [Protection des travailleurs ayant cessé leur travail](#r-ar-ce-art2) | salarié licencié pour raisons économiques ou technologiques, ou après la fermeture inopinée et définitive de l'entreprise | pour les indemnités : cessation de paiement de l'entreprise, et motif établi par un jugement passé en force de chose jugée ; pour les droits maintenus : motif constaté par l'inspection du travail | indemnités de licenciement et droits légaux dus ; soins ; allocations familiales et majoration pour salaire unique au taux plafond | quatre trimestres pour les soins et les prestations familiales | 0,4 % des salaires, pris sur le taux global |
-| [Soins du régime de base d'assurance maladie](#r-ar-am-art4) | assuré social et ses ayants droit | affiliation et déclaration à un régime entré dans la loi | prise en charge des soins | — | 6,75 % du salaire ou du revenu ; 4 % de la pension |
+| [Soins du régime de base d'assurance maladie](./_soins.html#r-ar-am-art4) | assuré social et ses ayants droit | affiliation et déclaration à un régime entré dans la loi | prise en charge des soins | — | 6,75 % du salaire ou du revenu ; 4 % de la pension |
 
 : Les prestations en 2026 : bénéficiaire, condition, montant, durée, financement {#tbl-ar-etat-2026}
 
@@ -503,76 +503,7 @@ de bibliographie dans ce volume. -->
 
 ## L'assurance maladie {#sec-ar-assurance-maladie}
 
-Les taux de la cotisation, régime par régime et palier par palier, sont au volume [« Les cotisations sociales »](../cotisations_sociales/_maladie.html#sec-cot-maladie).
-
-Depuis le [1^er^ juillet 2007]{.insecable}, un régime de base d'assurance maladie, commun aux affiliés des deux caisses, prend en charge les soins de l'[assuré social](#g-assure-social) et de ses ayants droit dans les secteurs public et privé ; il est géré par la CNAM et financé par une cotisation de 6,75 % du salaire ou du revenu. La loi qui l'institue date de 2004 ; un décret fixe les étapes de son application (@sec-ar-reforme-2007).
-
-| Question | Règle |
-|---|---|
-| [Qui est couvert](#r-ar-am-art4) | l'assuré social ; son conjoint non divorcé sans couverture propre ; ses enfants à charge ; les titulaires d'une pension de survivants sans couverture propre ; ses ascendants à charge |
-| [Quels soins](#r-ar-am-art5) | ceux des secteurs public et privé, sauf les frais consécutifs à un accident du travail ou à une maladie professionnelle |
-| [Quels régimes, au 1^er^ juillet 2007](#r-ar-am-2007) | les affiliés de la CNRPS ; à la CNSS, les salariés non agricoles, le secteur agricole, les artistes, créateurs et intellectuels, les travailleurs tunisiens à l'étranger, les travailleurs non salariés |
-| [Quelle cotisation](#r-ar-am-art15) | 6,75 % du salaire ou du revenu : 4 % à la charge de l'employeur, 2,75 % à celle du salarié ; la totalité à la charge de l'assuré travaillant pour son propre compte ; 4 % pour les pensionnés |
-| [Quelle caisse](#r-ar-am-art7) | la CNAM, qui gère aussi les régimes de réparation des accidents du travail et sert les indemnités de maladie et de couches |
-
-: Le régime de base d'assurance maladie : bénéficiaires, soins, régimes, cotisation, caisse {#tbl-ar-assurance-maladie}
-
-- **Une montée par paliers dans le secteur public.** Pour les agents de la CNRPS et ses pensionnés, les taux de 6,75 % et de 4 % sont atteints par paliers, de 2007 à 2010 : les tableaux datés sont au volume des cotisations, pour [les agents](../cotisations_sociales/_maladie.html#tbl-cnrps-maladie) et pour [les pensionnés](../cotisations_sociales/_regimes.html#tbl-prevoyance-pensionnes).
-- **Un régime hors de la liste de 2007.** Le régime des travailleurs à faibles revenus — employés de maison, agents publics non couverts, petits pêcheurs, petits agriculteurs, artisans à la pièce — ne figure pas dans la liste du décret. [La loi qui l'institue](#r-ar-am-2002) lui ouvre des prestations de soins servies par la CNSS. Le décret prévoit l'extension à d'autres catégories « dans une étape ultérieure » ; aucun texte d'extension à ce régime n'est identifié ici. <!-- RECHERCHE r-am-extension-loi2002-32 : décret étendant la loi n° 2004-71 au régime de la loi n° 2002-32, en application de l'art. 2 du décret n° 2007-1366 (voir docs/recherches.yml) -->
-- **Qui recouvre.** Depuis [une loi de 2017](#r-ar-am-2017), la CNRPS et la CNSS recouvrent les cotisations de leurs affiliés et les transfèrent à la CNAM.
-
-:::: {.chronologie-repliable titre="Assurance maladie : bénéficiaires un à un, calendrier d'entrée des régimes, cotisation, circuit de recouvrement, modalités de prise en charge, taux de prise en charge des soins ambulatoires et plafond annuel de 2008, article par article, 2004-2021"}
-
-| Objet | Texte et article | Ce que dit l'article |
-|---|---|---|
-| []{#r-ar-am-art1}Institution du régime | loi n° 2004-71 [@loi2004-71, art. 1-2] | un régime d'assurance maladie au profit des assurés sociaux et de leurs ayants droit, comportant un régime de base obligatoire et des régimes complémentaires facultatifs |
-| []{#r-ar-am-art3}Application par étapes | loi n° 2004-71 [@loi2004-71, art. 3] | les étapes d'application pour les différentes catégories d'assurés sont fixées par décret : la loi n'a aucune date d'effet propre |
-| []{#r-ar-am-art4}Bénéficiaires | loi n° 2004-71 [@loi2004-71, art. 4] | l'assuré social ; le conjoint non divorcé ne bénéficiant pas d'une couverture obligatoire au titre de son activité ; les descendants à charge — enfants mineurs non couverts par ailleurs, la fille quel que soit son âge tant que son obligation alimentaire n'incombe pas à son époux ou tant qu'elle ne dispose pas de source de revenu, les enfants handicapés incapables d'exercer une activité rémunérée ; les bénéficiaires d'une pension de survivants sans couverture propre ; les ascendants à charge non soumis à titre principal à une couverture obligatoire |
-| []{#r-ar-am-art5}Soins pris en charge | loi n° 2004-71 [@loi2004-71, art. 5] | soins des secteurs public et privé, à l'exception des frais consécutifs à un accident du travail ou à une maladie professionnelle, qui restent régis par les textes propres |
-| []{#r-ar-am-art7}Caisse | loi n° 2004-71 [@loi2004-71, art. 7 et 8] | création de la CNAM (article 7) ; elle gère aussi les régimes de réparation des accidents du travail et des maladies professionnelles des secteurs public et privé, et sert les indemnités de maladie et de couches prévues par les régimes de sécurité sociale (article 8) |
-| []{#r-ar-am-art15}Cotisation | loi n° 2004-71 [@loi2004-71, art. 15] | 6,75 % du salaire ou du revenu, dont 4 % à la charge de l'employeur et 2,75 % à celle du salarié ; intégralement à la charge de l'assuré travaillant pour son propre compte ; 4 % pour les pensionnés |
-| []{#r-ar-am-2007}Entrée des régimes, [1^er^ juillet 2007]{.insecable} | décret n° 2007-1366 [@decret2007-1366, art. 1-2] | à compter du 1^er^ juillet 2007, la loi s'applique aux affiliés de la CNRPS et, à la CNSS, aux régimes des salariés non agricoles, du secteur agricole tel que modifié par la loi n° 89-73, des artistes, créateurs et intellectuels, des travailleurs tunisiens à l'étranger et des travailleurs non salariés (article premier) ; extension à d'autres catégories « dans une étape ultérieure », par décret (article 2) |
-| []{#r-ar-am-2002}Travailleurs à faibles revenus | loi n° 2002-32 [@loi2002-32, art. 10-11] | prestations de soins servies par la CNSS ; la loi, sans clause d'effet, est exécutoire le 21 mars 2002 |
-| []{#r-ar-am-modalites}Modalités de prise en charge, [1^er^ juillet 2007]{.insecable} | décret n° 2007-1367 du 11 juin 2007 [@decret2007-1367, art. 4 à 20] ; décret n° 2008-756 du 24 mars 2008 [@decret2008-756] | trois modalités, au choix de l'assuré : la filière publique de soins, la filière privée de soins et le système de remboursement (article 4) ; à défaut de choix, inscription d'office à la filière publique (article 5) ; le changement prend effet au premier jour de l'année civile suivante (articles 6 et 11). Filière publique : soins dans les structures publiques, contre un ticket modérateur égal aux tarifs réduits de soins, plafonné par an à une mensualité et demie du salaire moyen, du revenu de la catégorie déclarée ou de la pension (articles 7 à 10). Filière privée : tiers payant (articles 11 à 16). Système de remboursement : mêmes taux que la filière privée (articles 17 à 20). Le décret de 2008 reporte au 30 avril 2008 la date limite du premier choix |
-| []{#r-ar-am-taux}Taux de prise en charge des soins ambulatoires | décret n° 2007-1367 [@decret2007-1367, art. 13 et 18] ; décret gouvernemental n° 2021-318 du 4 mai 2021 [@decret2021-318] | les neuf taux du tableau des taux ; le décret de 2021 remplace le premier paragraphe des articles 13 et 18 et ne change que le taux des actes de médecine dentaire. Dépôt du *Journal officiel* n° 41 le 11 mai 2021 : exécution le 16 mai 2021, cinq jours après, jour du dépôt non compté |
-| []{#r-ar-am-plafond}Plafond annuel des soins ambulatoires, [1^er^ juillet 2008]{.insecable} | arrêté du ministre des affaires sociales, de la solidarité et des Tunisiens à l'étranger du 3 juin 2008 [@arrete-2008-06-03-plafond-soins-ambulatoires, art. 2 à 7] | plafond annuel des montants pris en charge par la CNAM dans la filière privée et le système de remboursement, selon le nombre de personnes à charge (article 2), plus 50 D par ascendant à charge ; le dépassement est supporté par l'assuré (article 3) ; hors plafond : les affections lourdes ou chroniques, l'hospitalisation, le ticket modérateur et six actes nommés, dont le scanner, l'hémodialyse et les appareillages (article 6) ; effet au 1^er^ juillet 2008 (article 7) |
-| []{#r-ar-am-2017}Circuit des cotisations, 2017 | loi n° 2017-47 du 15 juin 2017 [@loi2017-47, art. 1-2] | article 16 nouveau de la loi de 2004 : la CNRPS recouvre les cotisations des pensionnés du secteur public et les transfère à la CNAM lors du paiement des pensions ; les cotisations des assurés actifs du secteur public sont transférées directement ; article 16 bis : la CNSS recouvre les cotisations du secteur privé et les transfère à la CNAM selon une convention entre les deux caisses. La loi, datée du 15 juin 2017 dans son intitulé et sa formule finale, est publiée au *Journal officiel* du 23 juin 2017 |
-
-: Assurance maladie : articles {#tbl-ar-assurance-maladie-textes}
-
-| Prestation | Au [1^er^ juillet 2007]{.insecable}<br>(%) | Au [16 mai 2021]{.insecable}<br>(%) |
-|---|---:|---:|
-| Consultations de médecins et de sages-femmes | 70 | 70 |
-| Actes médicaux et actes de sages-femmes | 80 | 80 |
-| Actes paramédicaux | 70 | 70 |
-| Actes de radiologie | 75 | 75 |
-| Analyses biologiques | 75 | 75 |
-| Actes de médecine dentaire | 50 | 60 ; 70 pour les enfants de 4 à 18 ans |
-| Médicaments vitaux | 100 | 100 |
-| Médicaments essentiels | 85 | 85 |
-| Médicaments intermédiaires | 40 | 40 |
-
-: Régime de base d'assurance maladie : [taux de prise en charge des soins ambulatoires](#r-ar-am-taux) dans la filière privée et le système de remboursement, en 2007 et en 2021 {#tbl-ar-am-taux}
-
-| Personnes à charge de l'assuré | Plafond annuel<br>(D) |
-|---|---:|
-| aucune | 200 |
-| une | 250 |
-| deux | 300 |
-| trois | 350 |
-| quatre ou plus | 400 |
-
-: Régime de base d'assurance maladie : [plafond annuel des soins ambulatoires](#r-ar-am-plafond) pris en charge, fixé au 1^er^ juillet 2008 {#tbl-ar-am-plafond}
-
-<!-- TODO (rédacteur) : remplacer ces deux tableaux par des tableaux engendrés, quand les taux de prise en charge et le
-plafond annuel seront portés en amont (docs/notes/backlog-modele.md). -->
-
-<!-- TODO (documentaliste) : le plafond annuel est celui de l'arrêté du 3 juin 2008 ; ses révisions ne sont pas
-cherchées, et il ne vaut donc pas état du droit en 2026. Décrets n° 2007-1367, n° 2008-756 et n° 2021-318 et arrêté du
-3 juin 2008 repris de la couche texte, sans guillemets : à relire à l'image (clause finale du décret n° 2021-318 non
-relue). Arrêté conjoint du 25 juin 2007 sur les affections lourdes ou chroniques : non lu. -->
-
-::::
+Le régime de base d'assurance maladie, institué par la loi de 2004 et appliqué depuis le 1^er^ juillet 2007, est exposé au chapitre [« Le droit aux soins »](./_soins.html#sec-prest-soins) : qui est couvert, par quelle voie, à quel prix, et les textes article par article ([tableau des articles](./_soins.html#tbl-ar-assurance-maladie-textes)). Les taux de la cotisation sont au volume [« Les cotisations sociales »](../cotisations_sociales/_maladie.html#sec-cot-maladie). Les indemnités de maladie et de couches sont à la [section qui précède](#sec-ar-maladie-maternite), et la réparation des accidents du travail à [la section sur les accidents](#sec-ar-atmp).
 
 ## La longue période : ce que la caisse a versé, 1990-2004 {#sec-ar-longue-periode}
 

@@ -14841,7 +14841,9 @@ entries:
     voir_aussi: [droits-enregistrement, immeubles-non-immatricules]
     fr:
       terme: Droit de mutation
-      definition: ""
+      definition: >
+        Droit d'enregistrement proportionnel au prix, que l'acquéreur acquitte quand un
+        immeuble change de mains ; d'autres droits s'y ajoutent.
       synonymes: [Droits de mutation]
     ar:
       terme: معلوم نقل الملكية
@@ -14920,7 +14922,9 @@ entries:
     voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
     fr:
       terme: Droit progressif (terrains d'habitat)
-      definition: ""
+      definition: >
+        Droit d'enregistrement sur les terrains d'habitat individuel : 1 %, 2 % et 3 %
+        jusqu'à 600 m², 5 % au-delà ; accordé une seule fois depuis 2024.
       synonymes: [Barème progressif des terrains d'habitat individuel]
     ar:
       terme: المعلوم التصاعدي
@@ -14940,7 +14944,10 @@ entries:
     voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
     fr:
       terme: Droit complémentaire
-      definition: ""
+      definition: >
+        Droit d'enregistrement qui s'ajoute, depuis la loi de finances pour 2017, aux
+        ventes et aux donations d'immeubles d'une valeur égale ou supérieure à 500 000 D :
+        2 % jusqu'à un million de dinars, 4 % au-delà, liquidé sur la valeur globale.
       synonymes: [Droit d'enregistrement complémentaire]
     ar:
       terme: معلوم التسجيل التكميلي
@@ -14957,7 +14964,10 @@ entries:
     voir_aussi: [droits-enregistrement, immeubles-non-immatricules]
     fr:
       terme: Défaut de mention de l'origine de propriété
-      definition: ""
+      definition: >
+        Droit dû quand l'acte ne mentionne pas l'origine de propriété de l'immeuble ;
+        institué par l'article 10 d'un décret du 26 décembre 1934, il est fixé à 3 % par
+        le code de 1993.
       synonymes: [Défaut d'origine, Droit d'origine]
     ar:
       terme: معلوم عدم بيان أصل الملكية
@@ -14976,7 +14986,9 @@ entries:
     voir_aussi: [conservation-propriete-fonciere, immatriculation-fonciere, droits-enregistrement]
     fr:
       terme: Droit d'inscription foncière
-      definition: ""
+      definition: >
+        Droit de 1 % dû depuis 1981 sur l'inscription d'un droit réel sur un immeuble
+        immatriculé, au profit de la Conservation de la propriété foncière.
       synonymes: [Droit de la Conservation de la propriété foncière]
     ar:
       terme: معلوم الترسيم العقاري
@@ -14995,7 +15007,9 @@ entries:
     voir_aussi: [immatriculation-fonciere, droit-mutation, titre-foncier]
     fr:
       terme: Immeubles non immatriculés
-      definition: ""
+      definition: >
+        Immeubles qui n'ont pas été immatriculés selon le régime de la loi foncière ; leur
+        mutation supporte depuis 2003 un droit de 1 %.
       synonymes: []
     ar:
       terme: العقارات غير المرسمة
@@ -15013,7 +15027,9 @@ entries:
     voir_aussi: [habitation-principale, revenus-fonciers]
     fr:
       terme: Plus-value immobilière
-      definition: ""
+      definition: >
+        Gain du cédant d'un immeuble, sur lequel il doit l'impôt sur le revenu à un taux
+        qui dépend de la durée de détention.
       synonymes: []
     ar:
       terme: القيمة الزائدة العقارية
@@ -15029,7 +15045,10 @@ entries:
     voir_aussi: [droits-enregistrement, habitation-principale]
     fr:
       terme: Abattement successoral
-      definition: ""
+      definition: >
+        Part de l'actif successoral exclue de l'assiette du droit : 5 000 D par héritier,
+        dans la limite de 30 000 D, et 10 000 D par héritier handicapé (code consolidé au
+        1er janvier 2025, art. 51).
       synonymes: []
     ar:
       terme: الطرح من التركة
@@ -15052,7 +15071,9 @@ entries:
     voir_aussi: [droits-enregistrement, droit-proportionnel-enregistrement]
     fr:
       terme: Minimum de perception
-      definition: ""
+      definition: >
+        Montant minimal de droit d'enregistrement perçu sur un acte ; le code de 1993 le
+        fixe à 5 D.
       synonymes: []
     ar:
       terme: الاستخلاص الأدنى
@@ -15383,7 +15404,11 @@ entries:
     voir_aussi: [titre-foncier, livre-foncier, conservation-propriete-fonciere, immeubles-non-immatricules]
     fr:
       terme: Immatriculation foncière
-      definition: ""
+      definition: >
+        Inscription d'un immeuble au régime de la loi foncière de 1885 : elle place
+        l'immeuble sous le régime de la loi et inscrit les droits réels existants sur un
+        titre de propriété. Facultative d'après la loi de 1885 (art. 22), elle est
+        obligatoire et progressive depuis le décret-loi n° 64-3 du 20 février 1964.
       synonymes: [Immatriculation]
     ar:
       terme: التسجيل العقاري
@@ -15401,7 +15426,9 @@ entries:
     voir_aussi: [immatriculation-fonciere, livre-foncier, titre-gele]
     fr:
       terme: Titre foncier
-      definition: ""
+      definition: >
+        Titre de propriété inscrit à la suite de l'immatriculation, point de départ unique
+        des droits réels ; seul le titre inscrit vaut à l'égard des tiers.
       synonymes: []
     ar:
       terme: الرسم العقاري
@@ -15418,7 +15445,9 @@ entries:
     voir_aussi: [titre-foncier, conservation-propriete-fonciere]
     fr:
       terme: Livre foncier
-      definition: ""
+      definition: >
+        Registre où s'inscrivent les droits réels et les mutations des immeubles
+        immatriculés ; leur non-inscription est le « gel » des titres.
       synonymes: [Registre foncier]
     ar:
       terme: السجل العقاري
@@ -15438,7 +15467,11 @@ entries:
     voir_aussi: [immatriculation-fonciere, livre-foncier, droit-inscription-fonciere]
     fr:
       terme: Conservation de la propriété foncière
-      definition: ""
+      definition: >
+        Administration instituée à Tunis par la loi foncière de 1885 (art. 21), chargée de
+        l'immatriculation, des titres et de l'inscription des droits ; rattachée en 1964
+        au secrétariat d'État à la Justice, elle devient un établissement public par la
+        loi de finances pour 1971.
       synonymes: []
     ar:
       terme: إدارة الملكية العقارية
@@ -15456,7 +15489,10 @@ entries:
     voir_aussi: [immatriculation-fonciere, titre-foncier]
     fr:
       terme: Tribunal immobilier
-      definition: ""
+      definition: >
+        Juridiction instituée avec la Conservation par le décret-loi n° 64-4 du 21 février
+        1964 (art. 21 nouveau de la loi foncière) ; le tribunal mixte de 1885 avait pris
+        en 1957 le nom de Tribunal immobilier de Tunisie.
       synonymes: [Tribunal mixte immobilier]
     ar:
       terme: المحكمة العقارية
@@ -15474,7 +15510,10 @@ entries:
     voir_aussi: [immatriculation-fonciere, titre-foncier]
     fr:
       terme: Code des droits réels
-      definition: ""
+      definition: >
+        Code promulgué par la loi n° 65-5 du 12 février 1965 : il remplace la loi foncière
+        de 1885, abrogée sauf trois articles, ainsi que le décret du 28 juin 1886, et
+        maintient le décret-loi sur l'immatriculation obligatoire.
       synonymes: []
     ar:
       terme: مجلة الحقوق العينية
@@ -15491,7 +15530,10 @@ entries:
     voir_aussi: [titre-foncier, livre-foncier]
     fr:
       terme: Titre gelé
-      definition: ""
+      definition: >
+        Titre de propriété dont les mutations ne sont pas inscrites au livre foncier ;
+        d'après le rapport provisoire de 2014 sur l'accès au foncier, le coût d'environ 6
+        % que représentent les droits d'une vente l'explique.
       synonymes: []
     ar:
       terme: الرسم العقاري المجمد
@@ -15511,7 +15553,11 @@ entries:
     voir_aussi: [djemaia-habous, melk, terres-collectives]
     fr:
       terme: Habous
-      definition: ""
+      definition: >
+        Immobilisation d'un fonds de sorte qu'il ne soit ni donné ni vendu et que ses
+        revenus reviennent à l'aumône : insaisissabilité, imprescriptibilité et
+        inaliénabilité du fonds. Il y a des habous publics et des habous privés ; le
+        décret du 18 juillet 1957 interdit et dissout les habous privés et mixtes.
       synonymes: [Habous publics, Habous privés, Habous mixtes]
     ar:
       terme: الأحباس
@@ -15526,7 +15572,9 @@ entries:
     voir_aussi: [habous]
     fr:
       terme: Djemaïa des habous
-      definition: ""
+      definition: >
+        Organisme qui administrait les habous publics, institué par un décret du 19 mars
+        1874.
       synonymes: []
     ar:
       terme: جمعية الأحباس
@@ -15542,7 +15590,9 @@ entries:
     voir_aussi: [habous, terres-collectives, adoul]
     fr:
       terme: Melk
-      definition: ""
+      definition: >
+        Terre de propriété privée, dont la propriété était sécurisée par des actes
+        notariés contractés chez le notaire musulman (adoul).
       synonymes: []
     ar:
       terme: الملك
@@ -15561,7 +15611,10 @@ entries:
     voir_aussi: [habous, melk]
     fr:
       terme: Terres collectives
-      definition: ""
+      definition: >
+        Terres possédées en commun par un groupement dont chaque membre n'a qu'un droit de
+        jouissance inaliénable : « bien insaisissable, inaliénable et imprescriptible »
+        (loi n° 57-16 du 28 septembre 1957, art. 1) ; dites arch.
       synonymes: [Terres arch]
     ar:
       terme: الأراضي الاشتراكية
@@ -15578,7 +15631,9 @@ entries:
     voir_aussi: [acte-notoriete, melk]
     fr:
       terme: Adoul
-      definition: ""
+      definition: >
+        Notaire musulman, chez qui étaient contractés les actes notariés de propriété des
+        terres melk.
       synonymes: [Notaire musulman]
     ar:
       terme: عدل إشهاد
@@ -15594,7 +15649,9 @@ entries:
     voir_aussi: [adoul, melk]
     fr:
       terme: Acte de notoriété
-      definition: ""
+      definition: >
+        Acte (outika) rédigé pour suppléer au titre absent ou perdu, d'après le rapport de
+        Paul Cambon présentant la loi foncière de 1885.
       synonymes: [Outika]
     ar:
       terme: الوثيقة
@@ -15611,7 +15668,9 @@ entries:
     voir_aussi: [habous]
     fr:
       terme: Enzel
-      definition: ""
+      definition: >
+        Location perpétuelle moyennant une redevance fixe, d'après le rapport de Paul
+        Cambon présentant la loi foncière de 1885.
       synonymes: []
     ar:
       terme: الإنزال
