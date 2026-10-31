@@ -2600,8 +2600,12 @@
     couverture: 'Plein texte du corpus local, 4 585 fascicules français et arabes de 2006 à 2026 (pdftotext ; marques bidirectionnelles retirées), « 89-9 du 1er février 1989 » et « عدد 9 لسنة 1989 » : 350 fascicules français et 144 arabes citent la loi ; leurs visas ne nomment aucun texte postérieur à la loi n° 2006-36 (une coquille « loi n° 2011-33 du 29 mars 2001 », JORT n° 78 de 2012, pour la loi n° 2001-33). Visa explicite du décret n° 2024-184 (JORT n° 47 de 2024, p. 1188) : « dont le dernier en date la loi n° 2006-36 du 12 juin 2006 ». Fascicules absents du corpus : 404 sur pist.tn dans les deux éditions, sauf 2020 n° 86, 96, 97, 98, 102, 125 et 2023 n° 122 (arabe), téléchargés et parcourus sans résultat. Non lus : 36 fichiers sans couche texte, dont les deux éditions des n° 35 et 91 de 2022 et 67 et 70 de 2025 ; textes qui modifieraient la loi sans la viser par son numéro.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire:
-  - lire à l'image ou océriser les fascicules sans couche texte (2022 n° 35 et 91, 2025 n° 67 et 70, deux éditions)
+  - date: 2026-10-31
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Les huit fichiers (éditions française et arabe) des JORT n° 35 et 91 de 2022 et n° 67 et 70 de 2025 ont une couche de texte ; ils ne sont pas des scans. Chacun compte deux pages : n° 35 de 2022, dissolution de l''Assemblée des représentants du peuple ; n° 91 de 2022, décret présidentiel promulguant la Constitution (le texte de la Constitution n''est pas dans le fichier) ; n° 67 et 70 de 2025, cessations de fonctions. Aucune mention de la loi n° 89-9, d''entreprise publique, de participation ou de leur équivalent arabe.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
 
 - id: r-epna-liste-modificatifs-apres-2007
   objet: décret modifiant ou remplaçant, après le décret n° 2007-2560 du 23 octobre 2007, la liste des établissements publics à caractère non administratif considérés comme entreprises publiques (décret n° 2004-2265 du 27 septembre 2004)
@@ -2636,9 +2640,15 @@
     couverture: 'Plein texte du corpus local, 4 585 fascicules de 2006 à 2026 (français et arabes, marques bidirectionnelles retirées) : formules françaises « caractère d''entreprise publique », « parmi les entreprises publiques », « comme (une) entreprise(s) publique(s) » ; arabes « صبغة المنشأة العمومية », « تعتبر / يعتبر / تكتسي / تصنف … منشأة عمومية ». Visas du décret n° 2004-2265 : modificatifs nommés n° 2006-2579, 2007-1865, 2007-2560, aucun après. Classements par texte de création : n° 2019-758, 2023-452, 2024-5, 2024-184, 2024-500, déjà connus. Une sortie signalée par le rapport de la Cour des comptes (JORT n° 93 du 18 novembre 2008, p. 3603) : Agence tunisienne d''Internet. Fascicules absents du corpus : voir la passe de r-loi89-9-modificatifs-apres-2006 du même jour (404 sur pist.tn, sept fascicules téléchargés et parcourus sans résultat). Non lus : fascicules arabes de 2008 à 2013, 36 fichiers sans couche texte.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-31
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Les huit fichiers (éditions française et arabe) des JORT n° 35 et 91 de 2022 et n° 67 et 70 de 2025 ont une couche de texte ; ils ne sont pas des scans. Chacun compte deux pages : n° 35 de 2022, dissolution de l''Assemblée des représentants du peuple ; n° 91 de 2022, décret présidentiel promulguant la Constitution (le texte de la Constitution n''est pas dans le fichier) ; n° 67 et 70 de 2025, cessations de fonctions. Aucune mention de la loi n° 89-9, d''entreprise publique, de participation ou de leur équivalent arabe.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
   - 'chercher les sorties : décrets de dissolution, de fusion ou de transformation d''un établissement de la liste après 2007 ; piste : l''Agence tunisienne d''Internet, qui « n''est plus considérée comme entreprise publique » d''après le rapport de la Cour des comptes (JORT n° 93 du 18 novembre 2008, p. 3603)'
-  - lire à l'image ou océriser les fascicules sans couche texte (2022 n° 35 et 91, 2025 n° 67 et 70, deux éditions) et les fascicules arabes de 2008 à 2013
+  - lire à l'image ou océriser les fascicules arabes de 2008 à 2013
 
 - id: r-cdf-rapports-apres-2009
   objet: rapports annuels de la Cour de discipline financière postérieurs au vingt et unième (activité 2009, JORT n° 56 du 13 juillet 2010), jusqu'à la reprise de ses attributions par la Cour des comptes au 1er janvier 2020
