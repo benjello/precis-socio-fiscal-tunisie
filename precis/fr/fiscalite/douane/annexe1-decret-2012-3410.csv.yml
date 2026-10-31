@@ -1,0 +1,31 @@
+# Relevé « annexe 1 du décret n° 2012-3410 » : liste des produits agricoles et agro-alimentaires et autres matières
+# et produits qui bénéficient de la réduction des droits de douane, une ligne par numéro du
+# système harmonisé et par taux.
+#
+# Transcrit le 1er novembre 2026 depuis la couche de texte de l'édition française du fascicule
+# (JORT n° 1 du 1er janvier 2013, pages 178 à 192), puis contrôlé : le nombre de lignes de taux du texte (223) est celui des
+# lignes du relevé, et les 96 positions du texte sont toutes présentes. La page de chaque ligne est celle
+# du pied de page imprimé : sur ces fascicules, l'en-tête imprimé suit le texte de la page
+# qu'il numérote.
+#
+# Lu par scripts/generate_douane_annexes.py, qui engendre le tableau du chapitre « Les droits de
+# douane » (`precis/fr/fiscalite/tables/`). Ne pas éditer le tableau engendré à la main.
+
+format: long
+cle_de_ligne: [position, numero, designation, taux]
+
+colonnes:
+  position: numéro de la position du tarif (quatre chiffres)
+  ex: « Ex » quand la ligne ne vise qu'une partie du numéro, comme dans le texte
+  numero: numéro du système harmonisé (six chiffres) ; une plage quand le texte en donne une
+  designation: désignation de la ligne telle que le texte la porte, les sous-lignes à « * » reprenant la ligne qui les précède
+  taux: taux du droit de douane, en %
+  page: page du Journal officiel (numéro imprimé)
+
+sources:
+  - decret2012-3410
+
+perimetre: >-
+  Annexe 1 du décret n° 2012-3410 du 31 décembre 2012 : chapitres 1 à 24 du système harmonisé, sauf les chapitres 2, 16 et 20 ; taux de 0, 7, 10, 15 et 27 %.
+caveats: >-
+  Les désignations sont celles de la couche de texte du fascicule ; les fautes d'impression du Journal officiel sont conservées. Les numéros suivent la nomenclature du système harmonisé en vigueur en 2013 : ils diffèrent de ceux de l'annexe du décret n° 2014-2 pour plusieurs dizaines de lignes.
