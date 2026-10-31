@@ -4257,7 +4257,13 @@
     couverture: 'jort_cache, notices de 2025 et 2026 publiées jusqu''au 2 octobre 2026 : FTS « glycemie », « diabetiques », « autistique », « autisme » sans résultat ; LIKE arabe sur les titres de l''index (« %التوحد% », « %السكري% », « %نسبة السكر% ») : seuls les articles 36, 71 et 81 de la loi n° 2025-17. Plein texte du corpus local 2026 jusqu''au n° 97 (2 octobre 2026) : 94 fascicules français (« glyc[ée]mie », « autisti », « spectre de l.autisme » ; manquent les n° 11, 13 et 58) et 95 arabes après NFKC (« طيف التوحد », « مرض السكري », « نسبة السكر » ; manquent les n° 3 et 58). Seul résultat hors de la loi : décret n° 2026-192 du 27 juillet 2026 (JORT n° 76, AR p. 1600), programme d''intégration des enfants autistes en jardin d''enfants, qui n''applique pas l''art. 81. Miroir iort non interrogé. Note : docs/notes/prestations-2018-626-lf2025-art26.md, § 6.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire: [rejouer les termes arabes sur le miroir iort ; lire les fascicules postérieurs au n° 97]
+  - date: 2026-10-31
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'plein texte des 105 fascicules arabes de 2026 du corpus local (n° 1 à 105, jusqu''au 28 octobre 2026), après NFKC, termes « طيف التوحد », « قيس السكري », « مرض السكري », « نسبة السكر » : seul le fascicule n° 76 (27 et 28 juillet 2026) correspond, pour le décret n° 2026-192 sur l''intégration des enfants autistes dans les jardins d''enfants, qui ne vise pas la loi de finances pour 2026 ; édition française du n° 76 absente (le fichier du répertoire fr contient l''arabe)'
+    couvert_jusqu_au: 2026-10-28
+    resultat: aucun
+  a_faire: [rejouer les termes arabes sur le miroir iort ; lire les fascicules postérieurs au n° 105]
 
 - id: r-dl2024-4-cotisations
   objet: décret fixant les modalités, conditions et procédures d'affiliation aux régimes du décret-loi n° 2024-4 (art. 19 et 22, CNSS) et la base de calcul et le paiement des cotisations de risques professionnels (art. 41, CNAM), ou tout texte fixant le taux ou l'assiette de leurs cotisations
