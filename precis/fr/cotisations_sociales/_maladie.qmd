@@ -50,7 +50,11 @@ Dans chaque régime, seule la part maladie est attestée par un texte, et elle n
 
 ## Le secteur public {#sec-cot-maladie-public}
 
-Les agents affiliés à la CNRPS cotisent au régime de base d'assurance maladie selon une montée en charge propre, de 3 % au 1^er^ juillet 2007 à 4,88 % au 1^er^ juillet 2008 et 6,75 % au 1^er^ juillet 2009, répartis entre l'employeur et l'agent [@decret2007-1406, art. 4] (@tbl-cnrps-maladie). Les pensionnés de la caisse cotisent sur leur pension, selon un calendrier distinct (@sec-cot-pensionnes).
+Les agents affiliés à la CNRPS cotisent au régime de base d'assurance maladie selon une montée en charge propre, de 3 % au 1^er^ juillet 2007 à 4,88 % au 1^er^ juillet 2008 et 6,75 % au 1^er^ juillet 2009 (@tbl-cnrps-maladie).
+
+Pour les agents en activité affiliés au régime obligatoire de prévoyance sociale, l'article 4 du décret fixe trois paliers [@decret2007-1406, art. 4, p. 2157]. Au 1^er^ juillet 2007, le taux est de 3 % : 2 % de cotisations déjà dues en application du décret n° 73-91, et 1 % de cotisation supplémentaire à la charge de l'employeur. Au 1^er^ juillet 2008, il est relevé à 4,88 % ; les 1,88 point ajoutés se répartissent entre 1 point à la charge de l'employeur et 0,88 point à la charge de l'agent. Au 1^er^ juillet 2009, il est relevé à 6,75 % ; les 1,87 point ajoutés se répartissent de la même façon, 1 point à la charge de l'employeur et 0,87 point à la charge de l'agent.
+
+Les agents en activité affiliés, à la date du décret, au régime facultatif d'assurance maladie de la loi n° 72-2 cotisaient 6,5 %, dont 2,5 % à la charge de l'employeur et 4 % à la charge de l'agent. L'article 5 les porte à 6,75 % selon le même calendrier : la part de l'employeur passe à 3 %, puis 3,5 %, puis 4 %, et la part de l'agent baisse à 3,75 %, puis 3,25 %, puis 2,75 % [@decret2007-1406, art. 5, p. 2157-2158]. Les deux voies aboutissent, au 1^er^ juillet 2009, au même partage : 4 % pour l'employeur et 2,75 % pour l'agent. Les pensionnés de la caisse cotisent sur leur pension, selon un calendrier distinct (@sec-cot-pensionnes).
 
 ```{python}
 #| echo: false
@@ -60,7 +64,7 @@ table("cnrps_maladie",
       "tbl-cnrps-maladie")
 ```
 
-<!-- TODO (documentaliste) : reporter la répartition employeur/agent de l'art. 4 du décret n° 2007-1406 (lu à l'image, p. 2157, d'après la note de la référence), et établir la cotisation maladie des agents publics avant 2007. -->
+<!-- TODO (documentaliste) : l'art. 4 du décret n° 2007-1406 (lu à l'image le 1er novembre 2026, p. 2157) ne dit pas qui supporte les 2 % antérieurs du décret n° 73-91 ; le tableau les compte 1 % pour l'employeur et 1 % pour l'agent (part de l'agent depuis 1973 ; part de l'employeur non rattachée à un texte). Établir aussi la cotisation maladie des agents publics avant 2007, et la part de l'art. 5 (régime facultatif de la loi n° 72-2) dans le tableau, qui ne reprend que l'art. 4. -->
 
 ## La réforme de 2004 {#sec-cot-maladie-2004}
 
