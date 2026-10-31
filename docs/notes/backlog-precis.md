@@ -6127,9 +6127,8 @@ matière : `docs/notes/fiscalite-decrets-97-1368-2015-1768.md`.
   (art. 45) et 2021 (art. 20) portent les lignes 22-03 à 22-08 dans le tableau de la loi
   n° 88-62 : texte lisible dans le corpus (LF 2016 : édition française pp. 3150-3151 et édition arabe p. 3609 ; LF 2018
   pp. 4282-4283 et LF 2021 p. 3130, éditions françaises). Les deux éditions de la LF 2016 diffèrent pour les
-  vins mousseux classés (4,000 D français, 24,000 arabe) : l'édition 2019 du code (française, p. 79 et 98, citée au chapitre) donne 24,000 D, mais reprend le tableau consolidé et non le fascicule ; seul un second exemplaire du JORT n° 104 de 2015 en français (absent du corpus local, non servi par pist.tn) trancherait la coquille. Reste à lire la doctrine administrative (notes communes sur
-  les art. 44 de la LF 2016 et 45 de la LF 2018) pour savoir si l'annexe du décret de 2015 est
-  abrogée, sans objet ou laissée en coexistence. TODO au chapitre.
+  vins mousseux classés (4,000 D français, 24,000 arabe) : l'édition 2019 du code (française, p. 79 et 98, citée au chapitre) donne 24,000 D, mais reprend le tableau consolidé et non le fascicule ; seul un second exemplaire du JORT n° 104 de 2015 en français (absent du corpus local, non servi par pist.tn) trancherait la coquille. Doctrine lue le 1er novembre 2026 (notes communes n° 7/2016 et n° 17/2018) : elle donne le tarif du tableau de la loi et ne mentionne pas l'annexe du décret de 2015 ; la question reste ouverte (TODO au chapitre).
+- **Lois de finances 2019 à 2026 (1er novembre 2026).** Les modifications du tableau par les LF 2019 à 2026 sont écrites dans le chapitre (sous-section « 2019 à 2026 ») et au registre ; restent non lus le décret d'application de l'art. 23 de la LF 2025 et l'arrêté conjoint de l'art. 55 de la LF 2026.
 - **Lois de finances 2022 à 2026.** *(24 octobre 2026 : LF 2022, art. 59 et LF 2023, art. 62 lus et écrits dans « Deux prélèvements propres aux boissons alcoolisées », `#sec-dc-boissons-autres`.)* Rubriques des textes indexés (`jort_cache`) : aucune ne
   porte sur les positions 22-03 à 22-08 ; le tableau consolidé de 2023 (`tbl-dc-en-vigueur`)
   porte les valeurs de 2021. À confronter, ligne à ligne, au texte des lois de finances 2024 à
