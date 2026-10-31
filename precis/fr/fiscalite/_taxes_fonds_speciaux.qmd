@@ -6,7 +6,7 @@ Certaines taxes ne vont pas au budget général de l'État : la loi en verse le 
 
 Les contributions conjoncturelles, versées au budget général, ont leur chapitre (@sec-contributions-conjoncturelles). La taxe de circulation sur les véhicules automobiles est elle aussi une recette du budget général : elle figure parmi les « droits sur les transports et autres produits » du [tableau des recettes du budget de l'État](#r-fst-circulation-2014), et non parmi les fonds spéciaux.
 
-<!-- TODO (rédacteur) : lier la taxe de circulation à sa section dans le chapitre des droits d'enregistrement et de timbre quand celui-ci sera écrit (plan, § 5). -->
+<!-- TODO (rédacteur) : lier la taxe de circulation à une section du chapitre des droits d'enregistrement et de timbre, qui n'en a pas : le chapitre écrit le 23 octobre 2026 ne traite pas la vignette (le décret du 31 mars 1955, art. 19 à 21, est hors corpus : voir le backlog de la fiscalité). -->
 
 Un [fonds spécial du Trésor](#g-fonds-special-tresor) est un compte ouvert dans les écritures du Trésor par une loi de finances, qui lui affecte des ressources et lui fixe des missions ; chaque loi de finances en arrête les prévisions de recettes et de dépenses dans un tableau annexé. La loi de finances complémentaire pour 2014 en énumère trente-deux, rangés par ministère (@tbl-fst-comptes-2014) ; tous ne sont pas alimentés par une taxe.
 
@@ -359,6 +359,7 @@ Les lois de finances prévoient pour le fonds de développement de la compétiti
 | [pour 1995](#r-fst-prev-1995) | 20,0 |
 | [pour 1997](#r-fst-prev-1997) | 26,0 |
 | [pour 2005](#r-fst-prev-2005) | 45,0 |
+| [complémentaire pour 2008](#r-fst-prev-lfc2008) | 67,0 |
 | [pour 2011](#r-fst-prev-2011) | 71,0 |
 | [pour 2012](#r-fst-prev-2012) | 74,0 |
 | [pour 2013](#r-fst-prev-2013) | 74,0 |
@@ -372,8 +373,8 @@ Les lois de finances prévoient pour le fonds de développement de la compétiti
 | [pour 2018](#r-fst-prev-2018) | 74,0 |
 | [pour 2019](#r-fst-prev-2019) | 74,0 |
 | [pour 2020](#r-fst-prev-2020) | 73,0 |
+| [complémentaire pour 2020](#r-fst-prev-lfc2020) | 73,0 |
 
-<!-- TODO (bibliographe) : créer les clés de la LFC 2008 (prévision de 67,0 MD, tableau « B », JORT n° 101 de 2008, p. 4171, page déduite) et de la LFC 2020 (loi n° 2020-45, 73,0 MD, AR p. 3179) ; les deux lignes seront ajoutées à ce tableau avec leur registre. -->
 <!-- TODO (documentaliste) : tableaux « B » 2021-2026 non ventilés par fonds dans la couche texte (à lire à l'image ou dans les annexes par mission) ; réalisations du fonds : lois de règlement à consulter ; page de la LF 2016 (AR p. 3628) déduite, à vérifier. Montants en dinars constants à ajouter. -->
 
 :::: {.chronologie-repliable titre="Prévisions de recettes du fonds de développement de la compétitivité, montants et pages des lois de finances, 1995-2020, et classement de la contribution sociale de solidarité en 2019"}
@@ -385,6 +386,7 @@ Les lois de finances prévoient pour le fonds de développement de la compétiti
 | []{#r-fst-prev-1995}pour 1995 | tableau « K » [@lf-1995, tableau « K », p. 2126] | fonds de développement de la compétitivité industrielle : recettes propres 20,0 MD, sans subvention du budget |
 | []{#r-fst-prev-1997}pour 1997 | tableau des fonds spéciaux [@lf-1997, tableau des fonds spéciaux du Trésor, p. 2624] | recettes du fonds : 26,0 MD |
 | []{#r-fst-prev-2005}pour 2005 | tableau « B » [@lf-2005, tableau « B », p. 3450] | recettes du fonds : 45,0 MD |
+| []{#r-fst-prev-lfc2008}complémentaire pour 2008 | tableau « B » [@lfc-2008, tableau « B », p. 4171] | recettes du fonds : 67,0 MD |
 | []{#r-fst-prev-2011}pour 2011 | tableau « B » [@lf-2011, tableau « B », p. 3482] | recettes du fonds : 71,0 MD |
 | []{#r-fst-prev-2012}pour 2012 | tableau « B » [@lf-2012, tableau « B », p. 16] | recettes du fonds : 74,0 MD |
 | []{#r-fst-prev-2013}pour 2013 | tableau « B » [@lf-2013, tableau « B », p. 33] | recettes du fonds : 74,0 MD |
@@ -398,6 +400,7 @@ Les lois de finances prévoient pour le fonds de développement de la compétiti
 | []{#r-fst-prev-2018}pour 2018 | tableau « B » [@lf-2018, tableau « B », p. 4297] | recettes du fonds : 74,0 MD |
 | []{#r-fst-prev-2019}pour 2019 | tableau « ب » [@loi2018-56-lf2019, tableau « ب », p. 5474 de l'édition arabe] | recettes du fonds : 74,0 MD |
 | []{#r-fst-prev-2020}pour 2020 | tableau « ب » [@lf-2020, tableau « ب », p. 4717 de l'édition arabe] | recettes du fonds : 73,0 MD |
+| []{#r-fst-prev-lfc2020}complémentaire pour 2020 | tableau « B » [@lfc-2020, tableau « B », p. 2937] | recettes du fonds : 73,0 MD |
 | []{#r-fst-css-2019}pour 2019 | tableau « أ » [@loi2018-56-lf2019, tableau « أ », p. 5470 de l'édition arabe] | la contribution sociale de solidarité figure parmi les impôts directs, ligne 13-08 |
 
 ::::
