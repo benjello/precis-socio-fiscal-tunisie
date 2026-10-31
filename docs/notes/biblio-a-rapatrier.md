@@ -6,6 +6,12 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Lot B de la fiscalité (31/10/2026) : clés de l'IRPP et décrets de TVA, bibliographe
+
+- **Vingt clés de l'IRPP** (passe du 07/09/2026) : contrôlées. Les onze textes législatifs (`lf-2005`, `lf-2007`, `lf-2010`, `lf-2016`, `lf-2018`, `lf-2020`, `lf-2021`, `lf-2023`, `lf-2024`, `dl2021-21-lf2022` qui remplace `lf-2022` depuis la fusion des doublons, et `loi-avantages-fiscaux-2017`) et les neuf notes communes sont présents dans les `references.json` français et arabe. Dans le fonds commun, l'entrée française de `lf-2005`, `lf-2007` et `lf-2010` porte la page de début de la loi (3432, 4380, 3911) et l'entrée arabe la page des articles cités (3440, 4387, 3919), qui est celle de l'édition française : les deux sont exactes, les citations du chapitre donnent leur propre page. `lf-2023` n'a pas de champ `page` (page de fin non relevée). Rien à recopier.
+- **Reste à faire** : verser ces vingt clés dans Zotero (collection « fiscalité », champ « Extra » `citation-key`). Rien n'est poussé ; feu vert humain requis.
+- **Vingt-deux notices neuves** dans `precis/{fr,ar}/fiscalite/references.json`, série annuelle des décrets de TVA sur l'électricité et les produits pétroliers (clés `decret-AAAA-N-tva-electricite` et `decret-AAAA-N-tva-petroliers`) : 99-211, 2000-329, 2001-401, 2002-209, 2003-133, 2004-9, 2004-2727, 2004-2728, 2005-3383, 2005-3384, 2008-1, 2008-2, 2008-3967, 2008-4113, 2009-3761, 2009-3762, 2010-3586, 2010-3587, 2012-6, 2012-9, 2013-5197, 2013-5198. Pages relevées à l'en-tête des fascicules du corpus local et confirmées par `jort_cache.db` ; clause de durée de l'article 2 lue dans chaque décret (à l'image pour 2000-2005). URL françaises et arabes lues dans `pdf_fr` et `pdf_ar` de `jort_cache.db`, non testées en ligne. Les huit autres décrets de la série (98-384, 98-952, 2004-1773, 2007-1, 2007-2, 2012-3413, 2012-3414, 97-1339) existaient déjà. À verser dans Zotero.
+
 ## Poussée Zotero du 25/10/2026 (neuf lois de finances issues de la fusion des doublons)
 
 Séquence `verifier` (local : 1868 entrées éprouvées, 0 perte) → `dry-run` (exécution 40222267791 :
