@@ -599,7 +599,36 @@ Pour les distributions faites à partir du 1^er^ janvier 2015, l'exonération g�
 
 Cette catégorie a changé de nature en cours de route. Dans le code de 1990, elle est **résiduelle et géographique** : « les autres revenus sont constitués des revenus de source étrangère n'ayant pas été soumis au paiement de l'impôt dans le pays d'origine » [@code-irpp-is-1990, art. 36], le revenu net étant constitué des « sommes effectivement perçues de l'étranger » (article 37). L'article 61 de la loi de finances pour 1998 y a ajouté un renvoi à l'article 26 pour les traitements, salaires, pensions et rentes viagères, et l'article 35 de la loi de finances pour 2007 la déduction de 80 % sur les pensions de source étrangère (@tbl-pensions-etrangeres).
 
-L'article 19 § 1 de la loi de finances pour 2016 lui donne un second visage [@lf-2016, art. 19] : y sont désormais rangés les revenus des **jeux de pari, de hasard et de loterie**, et les revenus déterminés selon les **dépenses personnelles ostensibles et notoires** et selon l'**accroissement du patrimoine**, conformément à l'article 43 du code, lorsque le contribuable ne réalise pas de revenus dans les catégories des bénéfices industriels et commerciaux, non commerciaux ou agricoles. Cette seconde branche est le **rattachement catégoriel de l'évaluation forfaitaire** : avant 2016, l'accroissement de fortune non justifié était réintégré sans catégorie de rattachement explicite. Elle se lit avec l'article 42, qui autorise l'évaluation d'après les éléments de train de vie selon le barème de l'annexe I du code, avec majoration lorsque plusieurs éléments sont réunis et sous condition d'une disproportion marquée avec le revenu net global déclaré — dispositions d'origine, jamais modifiées. L'article 19 n'énonçant pas de date d'effet propre, son application aux revenus de 2015 est **dérivée** de la règle générale de conversion. Depuis la loi de finances pour 2018, les sommes provenant des jeux de pari sur les courses de chevaux et des concours de pronostics sportifs organisés par des établissements publics sont exonérées [@lf-2018, art. 56].
+L'article 19 § 1 de la loi de finances pour 2016 lui donne un second visage [@lf-2016, art. 19] : y sont désormais rangés les revenus des **jeux de pari, de hasard et de loterie**, et les revenus déterminés selon les **dépenses personnelles ostensibles et notoires** et selon l'**accroissement du patrimoine**, conformément à l'article 43 du code, lorsque le contribuable ne réalise pas de revenus dans les catégories des bénéfices industriels et commerciaux, non commerciaux ou agricoles. Cette seconde branche est le **rattachement catégoriel de l'évaluation forfaitaire** : avant 2016, l'accroissement de fortune non justifié était réintégré sans catégorie de rattachement explicite. Elle se lit avec l'article 42, qui autorise l'évaluation d'après les éléments de train de vie (@sec-irpp-train-de-vie) selon le barème de l'annexe I du code, avec majoration lorsque plusieurs éléments sont réunis et sous condition d'une disproportion marquée avec le revenu net global déclaré — dispositions d'origine, jamais modifiées. L'article 19 n'énonçant pas de date d'effet propre, son application aux revenus de 2015 est **dérivée** de la règle générale de conversion. Depuis la loi de finances pour 2018, les sommes provenant des jeux de pari sur les courses de chevaux et des concours de pronostics sportifs organisés par des établissements publics sont exonérées [@lf-2018, art. 56].
+
+### L'évaluation d'après le train de vie {#sec-irpp-train-de-vie}
+
+Le code de 1990 prévoit, outre les régimes de détermination du revenu par catégorie, une évaluation forfaitaire du revenu global d'après le train de vie. Sauf justification contraire et en cas de disproportion marquée entre le train de vie du contribuable et les revenus qu'il déclare, le revenu global imposable ne peut être inférieur à une somme forfaitaire obtenue en appliquant à certains éléments de train de vie le barème de l'annexe I du code [@code-irpp-is-1990, art. 42 § I, p. 8]. La disproportion est « marquée » quand cette somme dépasse d'au moins 40 % le revenu net global déclaré, pour l'année d'imposition et l'année précédente. La valeur locative réelle se prouve par les baux écrits, les déclarations de locations verbales enregistrées, ou par comparaison avec d'autres locaux dont le loyer est constaté ou notoirement connu [@code-irpp-is-1990, art. 42 § I, p. 8].
+
+Les éléments retenus comprennent ceux des personnes à la charge du contribuable lorsqu'elles ne déclarent pas de revenu propre. Quand le contribuable réunit au moins trois éléments, le revenu forfaitaire correspondant est majoré de 25 % ; la majoration est de 40 % à partir de quatre éléments. Les revenus expressément exonérés et ceux du conjoint, en cas d'imposition forfaitaire, sont déduits de la base ainsi déterminée [@code-irpp-is-1990, art. 42 §§ II à IV, p. 8].
+
+: Barème de l'annexe I du code de 1990 : revenu forfaitaire selon les éléments du train de vie {#tbl-irpp-train-de-vie-1990}
+
+| Élément de train de vie | Revenu forfaitaire correspondant |
+|---|---|
+| Valeur locative de la résidence principale, déduction faite de celle des locaux à caractère professionnel | 3 fois la valeur locative réelle |
+| Valeur locative des résidences secondaires, en Tunisie et hors de Tunisie | 6 fois la valeur locative réelle |
+| Employés de maison et autres employés, le premier exclu : pour chaque personne de moins de 60 ans | 500 D |
+| Voiture destinée au transport de personnes, par cheval-vapeur : jusqu'à 6 CV | 150 D |
+| Idem : de 7 à 10 CV | 300 D |
+| Idem : de 11 à 15 CV | 450 D |
+| Idem : plus de 15 CV | 600 D |
+| Abattement sur le montant des voitures | un tiers pour les voitures de 5 à 10 ans ; deux tiers pour celles de 10 à 20 ans |
+| Yacht ou bateau de plaisance jaugeant au moins 3 tonneaux de jauge internationale : par tonneau | 500 D |
+| Avion de tourisme : par cheval-vapeur | 300 D |
+| Voyage d'agrément et de tourisme à l'étranger | 5 fois le prix du titre de transport, majoré de 5 fois l'allocation touristique autorisée par la Banque centrale de Tunisie |
+| Piscine | 5 000 D |
+
+Source : code de 1990, annexe I, p. 17 [@code-irpp-is-1990, annexe I, p. 17].
+
+L'article 19 § 1 de la loi de finances pour 2016 rattache à la catégorie des autres revenus les revenus déterminés selon les dépenses personnelles ostensibles et notoires et selon l'accroissement du patrimoine (@sec-irpp-autres).
+
+<!-- TODO : les modifications de l'article 42 et de l'annexe I après 1990 ne sont pas relevées ; la note documentaire de l'assiette les dit « jamais modifiées » sans citer de vérification au texte consolidé. Le renvoi de l'article 42 aux articles 43 et 61 (accroissement du patrimoine) n'est pas lu ici. -->
 
 ### Ce qui ne relève d'aucune catégorie : charges déductibles et plafonnement {#sec-irpp-deductions}
 
@@ -758,9 +787,96 @@ Le [régime forfaitaire](#g-regime-forfaitaire) substitue, pour les plus petites
 
 Le paragraphe IV de l'article 44 soumet au régime forfaitaire « les petits exploitants, artisans et commerçants lorsqu'il s'agit d'entreprises individuelles à établissement unique relevant de la catégorie des bénéfices industriels et commerciaux, non importatrices, non exportatrices et non soumises à la taxe sur la valeur ajoutée selon le régime réel » [@code-irpp-is-1990, art. 44]. Le plafond de chiffre d'affaires dépend de la nature de l'activité : 15 000 dinars pour les prestations de services, 20 000 dinars pour la consommation sur place, 30 000 dinars pour la production, la transformation et l'achat en vue de la revente, et 30 000 dinars au total lorsque plusieurs activités sont exercées dans le même établissement.
 
-**Le tarif est double.** Le droit commun est l'« impôt forfaitaire légal » de l'annexe II : un montant en dinars lu dans une grille, selon la tranche de chiffre d'affaires et la nature de l'activité — deux colonnes pour les prestations de services — consommation sur place, jusqu'à 500 dinars, et autres prestations, jusqu'à 600 dinars —, par tranches de 1 000 dinars ; une colonne pour les autres opérations, jusqu'à 700 dinars, par tranches de 2 000 dinars au-delà des deux premiers milliers [@code-irpp-is-1990, annexe II]. Pour l'alimentation générale, les cafés de première catégorie et les coiffeurs pour hommes, les annexes III-1 à III-3 fixent au contraire un « impôt forfaitaire simplifié » établi « d'après des indices professionnels spécifiques se basant sur les postes d'emplois et les zones d'activité » : une grille croisant le nombre d'employés et la zone, des communes de Tunis, Sousse et Sfax aux lieux situés hors des communes [@code-irpp-is-1990, annexes III-1 à III-3]. Aucune des annexes ne précise la période à laquelle se rapportent ses montants.
+**Le tarif est double.** Le droit commun est l'« impôt forfaitaire légal » de l'annexe II : un montant en dinars lu dans une grille, selon la tranche de chiffre d'affaires et la nature de l'activité — deux colonnes pour les prestations de services — consommation sur place, jusqu'à 500 dinars, et autres prestations, jusqu'à 600 dinars —, par tranches de 1 000 dinars ; une colonne pour les autres opérations, jusqu'à 700 dinars, par tranches de 2 000 dinars au-delà des deux premiers milliers [@code-irpp-is-1990, annexe II]. Pour l'alimentation générale, les cafés de première catégorie et les coiffeurs pour hommes, les annexes III-1 à III-3 fixent au contraire un « impôt forfaitaire simplifié » établi « d'après des indices professionnels spécifiques se basant sur les postes d'emplois et les zones d'activité » : une grille croisant le nombre d'employés et la zone, des communes de Tunis, Sousse et Sfax aux lieux situés hors des communes [@code-irpp-is-1990, annexes III-1 à III-3]. Aucune des annexes ne précise la période à laquelle se rapportent ses montants. Les grilles sont reproduites plus bas (@tbl-forfait-annexe-2-1990-services, @tbl-forfait-annexe-2-1990-autres, @tbl-forfait-annexe-3-1 à @tbl-forfait-annexe-3-3).
 
 **L'impôt forfaitaire est définitif ou n'est qu'une avance.** Il est définitif pour les personnes qui ne disposent pas d'autres catégories de revenus et n'ont pas été soumises au régime réel à la suite d'un contrôle fiscal ; pour les autres, comme pour celles qui ne remplissent plus les conditions, il constitue une avance à valoir sur l'impôt sur le revenu. Le régime réel reste ouvert sur option, exercée lors du dépôt de la déclaration [@code-irpp-is-1990, art. 44].
+
+Les deux grilles de l'annexe II du code sont reproduites ci-dessous : la seconde ne couvre que les opérations autres que les prestations de services, la première distingue la consommation sur place des autres prestations. Les tranches se lisent « de 1 000,001 à 2 000 » dans le texte, c'est-à-dire au millime près ; elles sont ici écrites sans les millimes.
+
+: Impôt forfaitaire légal de l'annexe II du code de 1990 : prestations de services (montants en dinars) {#tbl-forfait-annexe-2-1990-services}
+
+| Chiffre d'affaires (dinars) | Consommation sur place | Autres prestations |
+|---|---:|---:|
+| 0 à 1 000 | 0 | 0 |
+| 1 000 à 2 000 | 20 | 30 |
+| 2 000 à 3 000 | 30 | 45 |
+| 3 000 à 4 000 | 40 | 60 |
+| 4 000 à 5 000 | 50 | 100 |
+| 5 000 à 6 000 | 60 | 150 |
+| 6 000 à 7 000 | 70 | 200 |
+| 7 000 à 8 000 | 80 | 250 |
+| 8 000 à 9 000 | 90 | 300 |
+| 9 000 à 10 000 | 100 | 350 |
+| 10 000 à 11 000 | 140 | 400 |
+| 11 000 à 12 000 | 180 | 450 |
+| 12 000 à 13 000 | 220 | 500 |
+| 13 000 à 14 000 | 260 | 550 |
+| 14 000 à 15 000 | 300 | 600 |
+| 15 000 à 16 000 | 340 | — |
+| 16 000 à 17 000 | 380 | — |
+| 17 000 à 18 000 | 420 | — |
+| 18 000 à 19 000 | 460 | — |
+| 19 000 à 20 000 | 500 | — |
+
+: Impôt forfaitaire légal de l'annexe II du code de 1990 : les autres opérations (montants en dinars) {#tbl-forfait-annexe-2-1990-autres}
+
+| Chiffre d'affaires (dinars) | Impôt |
+|---|---:|
+| 0 à 1 000 | 0 |
+| 1 000 à 2 000 | 10 |
+| 2 000 à 4 000 | 20 |
+| 4 000 à 6 000 | 30 |
+| 6 000 à 8 000 | 60 |
+| 8 000 à 10 000 | 90 |
+| 10 000 à 12 000 | 150 |
+| 12 000 à 14 000 | 220 |
+| 14 000 à 16 000 | 280 |
+| 16 000 à 18 000 | 340 |
+| 18 000 à 20 000 | 400 |
+| 20 000 à 22 000 | 460 |
+| 22 000 à 24 000 | 520 |
+| 24 000 à 26 000 | 580 |
+| 26 000 à 28 000 | 640 |
+| 28 000 à 30 000 | 700 |
+
+Sources : code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés, annexe II, p. 18 [@code-irpp-is-1990, annexe II, p. 18].
+
+L'impôt forfaitaire simplifié des annexes III-1 à III-3 se lit dans des grilles qui croisent la zone et le nombre d'employés. Les montants sont en dinars.
+
+: Impôt forfaitaire simplifié de l'annexe III-1 du code de 1990 : alimentation générale (montants en dinars) {#tbl-forfait-annexe-3-1}
+
+| Zone | Propriétaire sans employé | Propriétaire et 1 employé | Propriétaire et 2 employés | Propriétaire et 3 employés | Propriétaire et 4 employés |
+|---|---:|---:|---:|---:|---:|
+| 1. Communes de Tunis, Sousse, Sfax, Bizerte, Mahdia, Gabès et Ariana | 75 | 120 | 180 | 250 | 450 |
+| 2. Banlieues de Tunis, Sousse et Sfax ; chefs-lieux des gouvernorats de Béja, du Kef, de Médenine, de Ben Arous et de Monastir | 65 | 105 | 160 | 220 | 400 |
+| 3. Communes chefs-lieux des autres gouvernorats | 60 | 95 | 145 | 200 | 360 |
+| 4. Autres communes chefs-lieux de délégation | 55 | 90 | 135 | 185 | 330 |
+| 5. Autres communes | 40 | 65 | 100 | 140 | 240 |
+| 6. Autres lieux, hors des communes | 30 | 50 | 65 | 85 | 130 |
+
+: Impôt forfaitaire simplifié de l'annexe III-2 du code de 1990 : cafetiers de première catégorie, par employé de chaque équipe (montants en dinars) {#tbl-forfait-annexe-3-2}
+
+| Zone | 1 employé | 2 employés | 3 employés | 4 employés |
+|---|---:|---:|---:|---:|
+| 1. Communes de Tunis, Sousse et Sfax | 30 | 60 | 135 | 180 |
+| 2. Banlieues de Tunis, Sousse et Sfax et autres chefs-lieux des gouvernorats | 24 | 50 | 105 | 150 |
+| 3. Autres communes chefs-lieux de délégation | 18 | 45 | 75 | 120 |
+| 4. Autres communes | 15 | 30 | 60 | 90 |
+| 5. Autres lieux, hors des communes | 12 | 21 | 45 | 60 |
+
+: Impôt forfaitaire simplifié de l'annexe III-3 du code de 1990 : coiffeurs pour hommes (montants en dinars) {#tbl-forfait-annexe-3-3}
+
+| Zone | 1re catégorie, employeur et 3 employés | 1re catégorie, employeur et 2 employés | 1re catégorie, employeur et 1 employé | 1re catégorie, employeur seul | 2e catégorie, employeur et 3 employés | 2e catégorie, employeur et 2 employés | 2e catégorie, employeur et 1 employé | 2e catégorie, employeur seul |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1. Communes de Tunis, Sousse et Sfax | 88 | 68 | 50 | 32 | 112 | 86 | 58 | 38 |
+| 2. Banlieues de Tunis, Sousse et Sfax et autres chefs-lieux des gouvernorats | 78 | 62 | 44 | 30 | 92 | 72 | 52 | 34 |
+| 3. Autres communes chefs-lieux de délégation | 62 | 48 | 36 | 24 | 72 | 56 | 42 | 28 |
+| 4. Autres communes | 44 | 34 | 24 | 16 | 50 | 40 | 28 | 20 |
+| 5. Autres lieux, hors des communes | 30 | 24 | 16 | 10 | 34 | 28 | 18 | 14 |
+
+Sources : code de 1990, annexes III-1 et III-2, p. 19, et annexe III-3, p. 20 [@code-irpp-is-1990, annexes III-1 à III-3, p. 19-20].
+
+<!-- TODO : les annexes III n'indiquent pas ce que recouvre « chaque équipe » (cafetiers) ni la définition des catégories de cafés et de coiffeurs ; le texte de l'article 44 § IV renvoie aux annexes sans la préciser. À chercher dans le décret d'application ou la doctrine de 1990. -->
 
 ### De 1992 à 2010 : unification et resserrement
 
