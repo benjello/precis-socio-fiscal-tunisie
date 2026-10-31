@@ -1867,8 +1867,14 @@
     couverture: 'jort_cache jusqu''au 18 septembre 2026, titres français (FTS et LIKE) et arabes (LIKE « الزيادة في الأجور ») : seuls répondent, après 2013-4159, les décrets de la fonction publique (2019-209, 2019-1133, 2020-767, 2022-797, 2026-63), des magistrats (2019-210) et le décret n° 2026-64. Plein texte des fascicules non parcouru ; les fascicules inconnus de jort_cache (outillage-sources.md, § 1 f) échappent à la requête.'
     couvert_jusqu_au: 2026-04-30
     resultat: aucun
+  - date: 2026-10-31
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'sommaire et douze premières pages de chaque fascicule français de 2014 à 2025 présent au corpus local, extraits à la couche texte (motif : augmentation ou majoration, salaires ou rémunérations, entreprises ou établissements publics) : seuls répondent les décrets de la fonction publique et leurs visas (2016-1, 2019-209, 2019-1133, 2020-767, 2022-797), aucun décret propre aux entreprises publiques. Les fascicules sans couche texte exploitable et le corps des fascicules au-delà de la douzième page ne sont pas lus.'
+    couvert_jusqu_au: 2025-12-31
+    resultat: aucun
   a_faire:
-  - parcourir le plein texte des fascicules de 2014 à 2025 (augmentation des salaires, entreprises publiques)
+  - lire à l'image les fascicules français de 2014 à 2025 sans couche texte, et parcourir le corps des fascicules au-delà des douze premières pages
   - relancer avec --sonder-pist pour les fascicules inconnus de jort_cache
 
 - id: r-ige-2011
