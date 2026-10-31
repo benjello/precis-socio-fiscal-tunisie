@@ -2079,7 +2079,7 @@ Notes : `docs/notes/fiscalite-taxes-affectees.md` (documentation), `plan-fiscali
   - arrêté fixant les cinq mois de 1991 de la contribution des salariés (LFC 1991, art. 3) : à identifier ; décret n° 2012-472 (contribution volontaire de 2012) : intitulé seul, JORT n° 44 de 2012, p. 1334, au corpus ;
   - 2026 : recherche `r-contribution-conjoncturelle-2026` (aucune reconduction trouvée dans la LF 2026) ; fascicules 2026 inconnus de `jort_cache` à parcourir ;
   - population couverte par chaque épisode : aucune source ; montants en dinars constants : à faire ;
-  - livre des caisses : la contribution de 1 % de 2019 au profit des caisses (LF 2019, art. 87-88, AR p. 5468, lisible) n'a pas de domicile ; abrogation (LF 2020, art. 39 § 5) à relire.
+  - livre des caisses : la contribution de 1 % de 2019 au profit des caisses (LF 2019, art. 87-88, p. 4555 de l'édition française, AR p. 5468) a son domicile depuis le 31 octobre 2026 dans `caisses/_etat_caisses.qmd#sec-caisses-financeur` ; son abrogation (LF 2020, art. 39 § 5, p. 4435) est lue ; reste à établir si le décret gouvernemental de répartition prévu par l'art. 87 a été pris (il n'était plus nécessaire après l'abrogation).
 - Taxes au profit des fonds spéciaux :
   - rubriques des LF 1996, 2000 et 2003 : à lire à l'image ; LF 2003, art. 58-59 (taxe pour la protection de l'environnement) : chiffres à relire à l'image, extensions 2005-2018 et LF 2007, art. 60 (tourisme) à lire ;
   - décret n° 2000-634 (liste des produits du FODEC, lisible au corpus), décrets n° 99-2741, 2008-4111 ; décret n° 2012-435 (édition arabe seule, à l'image) ; décret n° 95-2495 (lisible, pp. 2363-2364) ;
