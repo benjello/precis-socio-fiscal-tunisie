@@ -1118,7 +1118,7 @@ liste qui suit le tableau, citations comprises. Restent :
   n° 50 de 2017 : 15 juin 2017, publié le 23 juin, exécutoire le 3 juillet 2017.
 - **Décret n° 75-952** (`1975/fr/Jo08775.pdf`, p. 2884) : océrisé et lu à l'image le
   23 octobre 2026 (`docs/notes/ocr-cibles-2026-10-23.md`) : taux mensuels par enfant au
-  1er janvier 1976 relevés ; reste à les verser à la série des indemnités familiales antérieure à 1986. La circulaire n° 42 de 1996,
+  1er janvier 1976 relevés et versés le 1er novembre 2026 au registre des indemnités familiales du secteur public (livre « Prestations sociales ») ; reste à les porter aux paramètres d'OpenFisca-Tunisie pour que le tableau engendré remonte à 1976. La circulaire n° 42 de 1996,
   **textuelle et déjà locale** dans `1996/fr/Jo09496.pdf` (à partir de la p. 2349),
   peut être lue sans OCR pour établir les règles de gestion. Les arrêtés des quotas
   régionaux des cartes AMG et le décret d'application du fonds contre la perte
