@@ -22,6 +22,8 @@ on:
       - 'scripts/check_pas_de_modele.py'
       - 'scripts/check_jargon_depouillement.py'
       - 'scripts/check_domicile_references.py'
+      - 'scripts/check_backlog.py'
+      - 'docs/notes/backlog-precis.md'
       - 'scripts/recherches.py'
       - 'docs/recherches.yml'
       - 'scripts/build_glossary.py'
@@ -38,6 +40,8 @@ on:
       - 'scripts/check_pas_de_modele.py'
       - 'scripts/check_jargon_depouillement.py'
       - 'scripts/check_domicile_references.py'
+      - 'scripts/check_backlog.py'
+      - 'docs/notes/backlog-precis.md'
       - 'scripts/recherches.py'
       - 'docs/recherches.yml'
       - 'scripts/build_glossary.py'
@@ -79,6 +83,12 @@ jobs:
       # lien sans ancre, et une ligne de registre qui ne cite rien.
       - name: Les références de loi ont leur ligne de registre
         run: uv run python scripts/check_domicile_references.py
+
+      # Le backlog est tenu à la main par plusieurs agents : ce contrôle refuse ce qu'ils y
+      # laissent sans le voir — un marqueur de conflit, une date de lecture dans l'avenir,
+      # une clé de citation qui n'existe pas. Rôle `archiviste-backlog` pour le reste.
+      - name: Le backlog reste lisible
+        run: uv run python scripts/check_backlog.py
 
       # Le glossaire est ENGENDRÉ à partir de `precis/glossaire.yml`, et l'annexe de
       # chaque livre ne retient que les notions auxquelles il renvoie réellement — sa

@@ -98,6 +98,14 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   les chiffres et localisations d'un inventaire daté : `docs/notes/todo-localisation.md` est
   une photographie du 20 septembre 2026, pas un état du corpus en temps réel. La revue
   humaine contrôle que le backlog et le chapitre racontent le même état.
+  **Quand plusieurs chantiers tournent en parallèle**, n'écris pas dans le fichier : propose
+  tes lignes de backlog (points fermés, lacunes nouvelles, état « lisible / OCR / à obtenir »)
+  dans le corps de ta PR, sous un titre « Backlog ». Le rôle `archiviste-backlog` les applique
+  en une passe, après les fusions, et vérifie chaque point dans les chapitres : cela évite les
+  conflits sur ce fichier et les « restes » qui survivent à leur chantier. Les dates que tu
+  écris sont celles du jour (`date`), jamais une date future ; `scripts/check_backlog.py`
+  refuse les marqueurs de conflit, les dates futures proches et les clés de citation absentes
+  des `references.json`.
 
 - **Les volumes documentent la loi, jamais le modèle.** Ni `openfisca`, ni « le modèle », ni « les
   paramètres » dans le texte rendu d'un volume. La documentation générale — README, page
@@ -159,7 +167,7 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   sinon la ligne n'a rien à y faire.
 
 Les rôles éditoriaux — documentaliste, architecte, rédacteur, terminologue, bibliographe,
-relecteur-ar, modeliste, économiste — sont décrits dans `docs/agents/<role>.md`, en texte neutre, indépendant de l'outil et
+relecteur-ar, modeliste, économiste, archiviste-backlog — sont décrits dans `docs/agents/<role>.md`, en texte neutre, indépendant de l'outil et
 du fournisseur de LLM. La chaîne éditoriale va du premier au dernier, et s'arrête pour revue
 humaine. Voir « Économiser » pour le lien vers `.claude/agents/`.
 
