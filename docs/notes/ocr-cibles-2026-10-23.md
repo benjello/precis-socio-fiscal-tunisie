@@ -69,7 +69,7 @@ pour 4 D, 600). Toute valeur se relève à l'image.
   `docs/notes/fiscalite-regime-forfaitaire.md` (article 44 § IV en p. 9 ; annexes III en p. 19-20).
 - Le texte complet des pages 3 à 21 est maintenant interrogeable (grep) ; chaque chiffre cité
   reste à relever à l'image.
-- Exploité le 1er novembre 2026 dans `_impot_revenu.qmd` : annexes I (p. 17), II (p. 18) et III-1 à III-3 (p. 19-20) lues à l'image et reproduites en tableaux, article 42 (p. 8) en section `#sec-irpp-train-de-vie`.
+- Exploité le 31 octobre 2026 dans `_impot_revenu.qmd` : annexes I (p. 17), II (p. 18) et III-1 à III-3 (p. 19-20) lues à l'image et reproduites en tableaux, article 42 (p. 8) en section `#sec-irpp-train-de-vie`.
 
 ## 4. Code de la TVA de 1988 : réussie pour le texte, annexes lues par sondage
 
