@@ -1,0 +1,533 @@
+# Tâches de législation, par année de dispositif décroissante
+
+> État au 31 octobre 2026, avant les chantiers de 2024 à 2026 (PR #651 à #658 et suivantes). Les tâches de ces années qui y ont été traitées restent à marquer « faites » : c'est le travail de l'archiviste du backlog. Source : lecture du backlog, vérification de chaque candidat dans les chapitres. Les tâches qui exigent une source hors corpus ou un autre dépôt ne sont pas retenues.
+
+
+Établi le 31 octobre 2026 d’après le scan du backlog, vérifié dans les chapitres. Statuts : ouvert ou partiel. Année = dispositif juridique le plus récent visé.
+
+296 tâches ouvertes ou partielles ; 15 candidats déjà faits (à retirer du backlog) ; 10 incertains.
+
+
+## 2026
+
+- **[S] loi de finances 2026, art. 15 (registre #r-mt-sm-lf-2026)** — Renseigner la date d'effet de l'art. 15 dans le registre du SMIG (tiret). _(chapitre : marche_travail/_salaire_minimum.qmd ; source : lisible (LF 2026) ; statut : partiel)_
+- **[M] lois de finances 2022 à 2026 : LF 2024 art. 19 et 32 ; LF 2025 art. 21, 22, 24, 50, 51, 56, 67 ; LF 2026 art. 23 à 26 et 37** — Relire un par un les articles imputant des lignes de crédit sur le Fonds national de l'emploi et les ajouter à tbl-mt-pe-fne-lf. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lecture à l'image (tableaux des lois de finances) ; statut : ouvert)_
+- **[M] Décret-loi n° 2026-4 (conseils municipaux), art. 14-27, 35-48, 100-131 puis art. 57-99, JORT 96/2026 ar, p. 2058-2074** — Lire les art. 14-27, 35-48 et 100-131, puis relever les art. 57-99 (budget, équilibre, emprunt, exécution) pour le chapitre des budgets. _(chapitre : finances_locales ch. 3, 4, 5, 9 ; source : lisible (fascicule arabe au corpus, Ja0962026.pdf) ; statut : partiel)_
+- **[S] Lois de finances 2022-2026, tableaux du fonds commun, réserve et fonds d'appui à la décentralisation** — Lire (OCR) les tableaux des LF 2022 à 2026 pour les montants de la réserve et du fonds d'appui. _(chapitre : finances_locales ch. 9 ; source : OCR à lancer (fascicules sans couche texte) ; statut : ouvert)_
+- **[S] Décrets d'application du décret-loi n° 2024-4 (art. 19, 22, 33, 41) ; JORT n° 58/2026** — Chercher dans le JORT n° 58 de 2026 et les suivants les décrets fixant modalités d'affiliation, cotisations et risques professionnels des travailleuses agricoles, après rafraîchissement de jort_cache. _(chapitre : cotisations sociales, #sec-cot-travailleuses-agricoles ; source : lisible (texte du décret-loi lu) ; décrets d'application à chercher dans jort_cache ; statut : partiel)_
+- **[S] Loi de finances pour 2026, art. 15 ; décret gouvernemental n° 2016-1** — Relever l'article du décret 2016-1 qui fixe l'augmentation générale par catégorie et le contenu de l'art. 15 de la LF 2026, que le chapitre nomme sans le décrire. _(chapitre : rémunérations publiques, régime indiciaire (augmentations générales) ; source : lisible ; statut : ouvert)_
+- **[M] Loi de finances pour 2026, art. 90, 92 et 108 (arabe) ; loi n° 83-112, art. 17-20 (rédaction actuelle) ; décret n° 2024-86** — Lire les articles de la LF 2026 sur recrutements et titularisations et la rédaction actuelle des art. 17 à 20 de la loi 83-112. _(chapitre : rémunérations publiques, régime indiciaire (corps particuliers, recrutements) ; source : arabe seul pour la LF 2026 ; reste lisible ; statut : ouvert)_
+- **[S] Impôt sur la fortune : textes modifiant l'art. 23 du DL 2022-79 ou l'art. 88 de la loi 2025-17, postérieurs aux JORT n° 93 et n° 58 de 2026** — Lire les JORT postérieurs au n° 93 de 2026 et le n° 58 de 2026 pour tout modificatif ou texte d'application (fiche r-impot-fortune-modificatifs). _(chapitre : fiscalite/_impot_fortune.qmd ; source : lisible (jort_cache, présence à vérifier) ; statut : ouvert)_
+- **[S] Loi de finances pour 2026, art. 35, 71, 81, 96, 110 (édition arabe, p. 4238)** — Relire les articles à l'image dans le fascicule arabe (le répertoire 2026/fr contient en fait l'arabe). _(chapitre : prestations_sociales/_non_contributives.qmd ; source : arabe seul ; statut : partiel)_
+- **[M] Arrêtés d'application des art. 71 et 81 de la LF 2026 ; décret n° 2026-192 du 27 juillet 2026 (JORT n° 76, AR p. 1600, autisme, jardin d'enfants) ; articulation art. 26 (2025) / art. 35 (2026)** — Chercher les arrêtés des art. 71 et 81 dans les fascicules postérieurs au n° 97 de 2026 ; lire le décret n° 2026-192 (absent du chapitre) ; articulation des 30 D et 130 D : aucun texte lu, ne pas la déduire. L'arrêté de l'art. 35 (14 juillet 2026) est fait. _(chapitre : prestations_sociales/_non_contributives.qmd ; source : jort_cache et fascicules postérieurs au n° 97 (arabe) ; statut : partiel)_
+- **[M] Lois de finances 2007-2026, art. 52, 54 et 61 de la loi n° 60-30 (fiche r-pf-art61-apres-1988)** — Dépouiller les lois de finances article par article ; seuls les intitulés ont été passés. _(chapitre : prestations_sociales/_prestations_familiales.qmd ; source : jort_cache plein texte ; statut : ouvert)_
+- **[M] LF 2026 art. 23, 25, 26, 27, 100 ; LF 2025 art. 50-51 ; LF 2024 art. 29 ; LF 2019 art. 53-54 ; décret-loi 2022-79 art. 18** — Lire les articles de LF restants sur BNA, BFPME, BTS et Poste (LF 2024 art. 29, LF 2025 art. 51, LF 2026 art. 25-27 et 100, LF 2019 art. 53-54 pour la Poste). _(chapitre : entreprises_publiques/_secteur_financier (BNA, BFPME, BTS), _eau_communications (Poste) ; source : lisible + édition arabe ; statut : partiel)_
+- **[M] Décrets d'approbation de ventes au dinar symbolique : AFI 2023-613, 614, 659, 660, 771, 772, 2024-40, 2026-6, 2026-8 ; Sidi Thabet 2026-127** — Lire et verser les décrets de vente au dinar symbolique de l'AFI et le décret de périmètre de Sidi Thabet. _(chapitre : entreprises_publiques/_industrie (AFI) ; source : lisible, certains intitulés en arabe ; statut : ouvert)_
+- **[S] Lois n° 2024-31, 2025-12, 2026-7 et décrets n° 2024-402, 2026-55 (prêts de l'État, lignes ferroviaires du phosphate)** — Lire les trois lois de prêt et les deux décrets, et les rattacher à la section SNCFT ou transports. _(chapitre : entreprises_publiques (_transports, _industrie) ; source : lisible (corpus JORT local) ; statut : ouvert)_
+- **[M] JORT en édition arabe 2012-2016 et environ la moitié de 2017-2026 sans couche texte (garanties et compensations de l'ONH et de l'OC après 2011)** — Lancer l'OCR arabe sur ces fascicules et chercher garanties et compensations de l'ONH et de l'OC après 2011. _(chapitre : entreprises_publiques (_offices, ONH et OC) ; source : OCR arabe à lancer (lourd) ; statut : ouvert)_
+
+## 2025
+
+- **[M] projets annuels de performance 2024 et 2025 (clés gbo-pap-emploi-2024 et -2025, édition arabe)** — Dépouiller les tableaux des PAP 2024 et 2025 pour la dépense exécutée et les prévisions depuis 2021 du Fonds. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : arabe seul (récupérés) ; statut : ouvert)_
+- **[S] loi 2025-9 du 21 mai 2025, texte récrivant l'art. 94-2, al. 1** — Lire l'article de la loi 2025-9 qui récrit l'art. 94-2 et sa nouvelle rédaction. _(chapitre : marche_travail/_temps_travail.qmd ; source : lecture à l'image (JORT 2025) ; statut : partiel)_
+- **[S] LF 2019 art. 72, décret-loi de finances 2023 art. 59, LF 2024 art. 59, LF 2025 art. 76 (tarifs et prix de référence, immeubles)** — Relever les pages de l'édition française et confirmer les art. 59 (2024) et 76 (2025) avant de les verser au registre. _(chapitre : finances_locales ch. 6 ; source : lisible (corpus, éditions arabe et française) ; statut : partiel)_
+- **[M] Décrets approuvant les augmentations générales des entreprises publiques 2014-2025 (fiche r-augmentations-ep-2013-2025)** — Lire les décrets de 2014 à 2025 (plein texte) ; le chapitre dit qu'aucun n'est identifié entre 2013-4159 et 2026-64. _(chapitre : rémunérations publiques, régime conventionnel, #sec-augmentations-ep ; source : lisible (plein texte) ; statut : ouvert)_
+- **[S] Loi de finances pour 2025 (loi n° 2024-48), art. 17, édition française, JORT n° 149** — Relire à l'image le nom du fonds dans l'édition française (texte repris de la couche texte jibaya.tn) et relever l'adresse d'origine ; l'édition française du JORT n° 149 est absente de pist.tn. _(chapitre : prestations_sociales/_autres_risques.qmd ; source : lisible (couche texte jibaya.tn) ; édition française du fascicule peut manquer au corpus ; statut : partiel)_
+- **[S] Loi de finances pour 2025 (loi n° 2024-48), art. 26 (30 D), texte français jibaya.tn** — Relire à l'image les articles repris de la couche texte ; la p. 6425 de l'édition arabe est lue et concorde sur l'art. 26. _(chapitre : prestations_sociales/_non_contributives.qmd ; source : lisible ; statut : partiel)_
+- **[S] Décret n° 2025-426 du 2 octobre 2025 et arrêté conjoint du 3 novembre 2025 (allocation 6-18 ans)** — Les textes sont lus et écrits. Reste ce qui a été servi au titre de 2025 (institution au 1er janvier, exécutoire le 9 novembre 2025) et le relais du don par le budget. _(chapitre : prestations_sociales/_non_contributives.qmd ; source : lisible pour les textes ; servi en 2025 : documents Banque mondiale / ministère ; statut : partiel)_
+- **[S] Arrêté conjoint du 8 avril 2025 (prix de cession des terrains de l'AFH ; 50 % des lots aux revenus < 3 SMIG), JORT 2025 p. 856** — Verser la condition sociale (50 % des lots, 3 SMIG) dans le chapitre Logement social ; le registre AFH du livre entreprises la porte déjà. _(chapitre : prestations_sociales/_logement_social (#sec-log-operateurs) ; source : lisible (corpus, clé arrete2025-prix-afh) ; statut : partiel)_
+- **[S] Décrets SNIT n° 2025-205 et 2025-206 (cessions au dinar symbolique)** — Lire et verser les décrets 2025-205 et 206 de la SNIT ; seul le 2025-204 est au registre. _(chapitre : entreprises_publiques/_habitat (SNIT) ; source : lisible ; statut : ouvert)_
+- **[S] JORT 2025 n° 67 et 70 ; JORT 2022 n° 35 et 91** — Océriser ces quatre fascicules pour clore les recherches sur la loi n° 89-9 et la liste des établissements. _(chapitre : entreprises_publiques/_statut ; source : OCR à lancer ; statut : ouvert)_
+- **[S] Art. 69 de la LF 2025 (marché parallèle de produits du tabac) ; arrêté du 18 nov. 2025 sur les prix de cession des alcools (JORT n° 137, p. 3123)** — Lire l'art. 69 LF 2025 et l'arrêté de novembre 2025, puis les inscrire aux registres MTK, RNTA et Régie des alcools. _(chapitre : entreprises_publiques (_offices : MTK, RNTA, Régie des alcools) ; source : lisible (couche texte) ; statut : ouvert)_
+- **[M] Listes nominatives des rapports du ministère des Finances pour 2022 à 2025 (111, 111, 114, 115 entreprises)** — Dépouiller les quatre listes nominatives à l'image et les rapprocher de l'annexe. _(chapitre : entreprises_publiques (_annexe_liste) ; source : image ; statut : ouvert)_
+
+## 2024
+
+- **[S] décret 2024-182 du 4 avril 2024 (JORT 47) et arrêté conjoint du 16 août 2024 (JORT 100), modifiant le décret 2019-542** — Verser les clés, lire les deux textes et les écrire dans la chronologie de 2019. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lisible (jort_cache) ; statut : ouvert)_
+- **[S] LF 2016 art. 37, LF 2019 art. 42, LF 2023 art. 52 et 57, LF 2024 art. 67 et 69 (tarifs et prix de référence, activité)** — Relever les pages de l'édition française de ces articles et les verser aux registres. _(chapitre : finances_locales ch. 7 ; source : lisible (corpus) ; statut : partiel)_
+- **[M] Modificatifs du décret n° 2000-1690 (statut des infirmiers) de 2011, 2015 et 2024 ; statuts des sages-femmes, pharmaciens, paramédicaux ; majorations, primes, gardes** — Lire la chaîne des modificatifs du statut des infirmiers (2011, 2015, 2024) et des statuts propres des autres personnels, établir dates et valeurs en série avant tout tableau de salaires _(chapitre : sante/_hopital.qmd (rémunération des personnels, #tbl-hopital-remunerations) ; source : lisible (corpus + jort_cache) ; statut : ouvert)_
+- **[M] Lois de garantie 2024-39, 2020-24, 2015-19, 2014-53, 2012-5, 2009-78, 2006-40, 2005-53, 2003-19, 2003-39, 2002-34, 2002-70, 99-60, 97-78, 95-79, 94-30, 93-94, 93-117, 79-58, 77-63, 76-53 ; loi 82-6 ; conventions 1959-67** — Lire les lois de garantie, la loi 82-6 et les conventions 1959-67 de la STB, BH, BNA, BFPME, BTS et CPSCL. _(chapitre : entreprises_publiques/_secteur_financier ; source : lisible ; statut : ouvert)_
+- **[M] Annexe 8 et tableaux de transferts par établissement : OTD 2020-22, Poste 2018/2020/2021, BFPME 22,7 MD 2022, ARRU, AFI ; LF 2024 tableaux 18-19 p. 43-44 ; LF 2023 p. 198** — Relever les objets des transferts dans l'annexe 8 et les tableaux LF 2024 (découvert OTD) et LF 2023 p. 198. _(chapitre : entreprises_publiques/_offices, _autres_entreprises, _eau_communications ; source : corpus tunisia-data ; statut : ouvert)_
+- **[M] OACA : décrets 2024-5, 2021-81, 2020-556/557, 2017-342, 2013-1328, 2008-101, 2008-3903, 2007-1686, 2005-3239, 2004-1342, 2002-3264, 2000-947, 2000-2926, 99-1941 ; loi n° 99-58 (code de l'aéronautique civile) ; vols intérieurs après 2023** — Lire les décrets d'exonération, les avenants d'Enfidha et le code ; établir le renouvellement de l'exonération des vols intérieurs après 2023. _(chapitre : entreprises_publiques (_transports, OACA) ; source : lisible, éditions française et arabe ; statut : ouvert)_
+- **[M] Séries à verser dans tunisia-data : contribution aux ressources propres de l'État (tableau 35 LF 2022, tableau 42 LF 2024), dettes et créances croisées (tableaux 38 et 39 LF 2024 ; fin 2023 au-delà des dix premières), transferts du transport public, ligne El Fouladh de la LF 2024 (p. 155)** — Verser ces tableaux déjà lus dans des séries de tunisia-data. _(chapitre : entreprises_publiques (_transferts, _industrie, _transports) ; source : lisible (tableaux déjà lus) ; statut : ouvert)_
+
+## 2023
+
+- **[M] décret 2023-461 du 5 juin 2023, art. 11 ter à 11 sexies, 31, 41, 43 à 45, 48, 49, 52** — Lire et écrire indemnité et avantage de l'entreprise du contrat de réinsertion, et les articles récrits. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lisible (JORT 2023, couche texte fiable, p. 1552-1558) ; statut : ouvert)_
+- **[L] décrets de majoration des secteurs non couverts 1989-2023 (dont 2018-674) pour tbl-mt-non-couverts** — Lire les décrets de 1989 à 2023 et compléter le tableau, aujourd'hui limité à 2009, 2019 et 2026. _(chapitre : marche_travail/_negociations.qmd ; source : lisible pour 2000+ ; OCR probable pour 1989-1996 ; statut : partiel)_
+- **[S] Code de la fiscalité locale (loi 97-11), art. 19 § I (pénalité de retard), modificatifs depuis 2023** — Chercher les modificatifs de l'art. 19 § I après le décret-loi de finances 2022 / depuis 2023 et ouvrir la fiche de recherche. _(chapitre : finances_locales ch. 6 ; source : lisible (JORT, jort_cache, corpus) ; statut : ouvert)_
+- **[M] Décret n° 2023-592 (modifie le décret n° 2006-1245) ; décrets n° 71-364, 88-188, 91-802, 97-1321, 76-843** — Lire le régime d'attribution et de retrait des emplois fonctionnels et les textes de cabinets, créer les clés. _(chapitre : rémunérations publiques, régime indiciaire, #sec-ri-emplois-fonctionnels ; source : lisible pour 2023 ; OCR pour 71-364 et 76-843 ; statut : ouvert)_
+- **[S] Décret n° 2023-294 (art. 16, JORT n° 44/2023, p. 1413) ; décret gouvernemental n° 2017-985 (art. 4, JORT n° 71/2017, p. 2959)** — Verser les clés des deux décrets (édition arabe) et les citer dans le registre. _(chapitre : rémunérations publiques, régime conventionnel/dirigeants ; source : arabe seul ; statut : ouvert)_
+- **[S] LF 2023 (décret-loi 2022-?), art. 46 : art. 19 quinquies du code de la TVA** — Lire l'art. 46 au JORT et l'écrire au chapitre TVA (aucune mention de 19 quinquies). _(chapitre : fiscalite/_tva.qmd ; source : lisible (JORT 2022-2023 au corpus) ; statut : ouvert)_
+- **[M] Rapports PLF 2022 et 2023 sur les dépenses fiscales (périmètre, écart de 2021 : 7 745 contre 5 872 MD)** — Lire le périmètre et la cause de l'écart de 2021 ; relever la répartition par impôt. _(chapitre : fiscalite/_depenses_fiscales.qmd ; source : lisible (tunisia-data/data/raw/gbo) ; statut : partiel)_
+- **[S] Rapport de suivi et d'évaluation de l'Amen social du ministère, 2023 (allocation 6-18 ans), PDF 36-38** — Relire à l'image les PDF 36-38, lus sur la couche texte arabe seule (convention du 28 septembre 2022, 191/188/124,6 MD, effectifs de décembre 2023, phrase 20 D don + 10 D budget) ; PDF local, aucune OCR. _(chapitre : prestations_sociales/_non_contributives.qmd ; source : lisible (PDF local tunisia-data, relecture à l'image) ; statut : partiel)_
+- **[M] LF 2022 et LF 2023, mission de la santé (tableaux), 192 MD LFC 2021 et 200 MD par an, au titre de la Pharmacie centrale** — Lire les tableaux de la mission de la santé des LF 2022 et 2023 pour rattacher ou non les 200 MD par an à la Pharmacie centrale. _(chapitre : entreprises_publiques (_offices, Pharmacie centrale) ; source : lisible (corpus ; LF 2023 en édition arabe) ; statut : partiel)_
+- **[M] ATTT : décrets 2021-82, 2011-4625, 2007-705, 2007-4102, 2005-1497, 2004-2191, 2002-1672 ; arrêtés 2018 et 2023 ; barème des redevances après le décret 2007-704 ; art. 38 LF 1978 (loi n° 77-81) ; loi n° 98-108 (date de dépôt JORT n° 104/1998)** — Lire ces textes, chercher le barème des redevances après 2007 en plein texte, relire à l'image le dépôt du JORT n° 104 de 1998. _(chapitre : entreprises_publiques (_transports, ATTT) ; source : lisible ; 2011-4625 en arabe ; JORT 104/1998 à l'image ; statut : ouvert)_
+- **[M] Office des céréales et ONH : décrets 2022-729, 2023-126 (ratification), 2000-2356, 2002-1197, 87-102, 87-978, 74-4 ; lois 70-47, 82-10 ; ONH : décret 2006-2455, décrets du quota UE 2011-637 à 2022-448, arrêté du 4 déc. 2023, décret 71-337 et modificatifs, loi 70-53** — Lire ces textes et compléter les registres de l'OC et de l'ONH. _(chapitre : entreprises_publiques (_offices, OC et ONH) ; source : lisible (corpus local) ; statut : ouvert)_
+
+## 2022
+
+- **[M] Convention collective du secteur bancaire, révision de 2014 (fascicule arabe Ja0232014.pdf) et avenants** — Lire en arabe les articles, grilles et avenants de la convention bancaire ; citer articles et grilles. _(chapitre : rémunérations publiques, marché contrôlé (banques) ; source : arabe seul, pdftotext puis NFKC sans OCR ; statut : ouvert)_
+- **[S] LF 2022 (décret-loi 2021-21) et LF 2019 : déduction des stocks sans restitution (TVA)** — Lire les articles sur la déduction des stocks et les écrire au registre de la déduction. _(chapitre : fiscalite/_tva.qmd ; source : lisible ; statut : ouvert)_
+- **[S] LF 2022 art. 37, 40, 42 (n° 19 de l'art. 23 du code des droits d'enregistrement et de timbre récrit)** — Lire les articles et les verser au registre du chapitre timbre. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible (corpus LF) ; statut : ouvert)_
+- **[S] Décret n° 2022-715 du 27 septembre 2022 (JORT n° 106, p. 2702-2704), articles finaux** — Lire les articles finaux, vérifier la clause d'effet avant d'écrire une date d'effet, relire l'art. 6 à l'image. _(chapitre : prestations_sociales/_non_contributives.qmd ; source : lisible (corpus 2022) ; statut : ouvert)_
+- **[M] Tunisie Télécom : annexe du décret 2022-307 (p. 901-945) ; décrets 2016-438 et 2017-64 (licences 3G/4G) ; décret 2015-85 ; code des télécommunications ; LF 2002 art. 66-70** — Lire les textes non lus de Tunisie Télécom (licences 3G/4G en arabe, annexe 2022-307, décret 2015-85, LF 2002 art. 66-70). _(chapitre : entreprises_publiques/_eau_communications (Tunisie Télécom) ; source : lisible, licences en arabe ; statut : ouvert)_
+- **[M] Décrets n° 2019-661, 2019-662, 2019-663, 2019-977, 2019-1066 et modificatifs 2020-405, 2021-487, 2022-56 ; n° 2016-256 ; n° 2014-4201, 4202, 4204 ; n° 2000-645, 2002-537, 2004-1073/1074 (concessions et péages Tunisie Autoroutes)** — Lire les décrets de concession et de péage par section et établir la série du péage par section. _(chapitre : entreprises_publiques (_transports, Tunisie Autoroutes) ; source : lisible (couche texte ; 2019-661 à 663 en édition arabe) ; statut : ouvert)_
+- **[S] Arrêtés fixant le prix de l'eau 1968-2022 ; arrêtés des redevances d'assainissement 1982-2018 ; loi n° 2001-14 ; décret n° 75-492 (scan peu lisible)** — Établir la série du prix de l'eau par tranche et des redevances d'assainissement par tranche ; lire la loi 2001-14. _(chapitre : entreprises_publiques (_eau_communications, SONEDE et ONAS) ; source : lisible pour les années récentes, image avant 1995 ; statut : partiel)_
+
+## 2021
+
+- **[S] loi 2021-37 du 16 juillet 2021 (travail domestique), art. 29, effet 30 janvier 2022** — Confirmer le jour d'effet dérivé (six mois après la publication du 30 juillet 2021) et lever le TODO. _(chapitre : marche_travail/_temps_travail.qmd ; source : lisible (jort_cache) ; statut : partiel)_
+- **[S] Décret gouvernemental d'application de l'art. 13 § 4 de la LF 2021 (fonds d'appui) et arrêté modifiant celui du 22 juin 2018 après le 29 juin 2021** — Chercher et lire le décret du fonds d'appui à la décentralisation et l'arrêté de critères postérieur au 29 juin 2021. _(chapitre : finances_locales ch. 9 ; source : OCR à lancer (fascicules sans couche texte) ; statut : ouvert)_
+- **[M] LF 2013 art. 13-14 et 23-24, LF 2021 art. 13, LFC 2012 art. 50, code art. 35-45 (ar), décrets 2003-1345 et 2006-3360** — Relire l'édition arabe (couche texte à décoder ou image) de ces articles et décrets, et confronter les libellés arabes des tableaux engendrés. _(chapitre : finances_locales ch. 7 ; source : OCR à lancer / couche texte à décoder (corpus) ; statut : partiel)_
+- **[S] Rapports annuels de la STEG : subvention d'exploitation 2017-2021, coût de revient 2015** — Relire les états de résultat sur les PDF et verser la série. _(chapitre : compensation _electricite_gaz ; source : lisible (rapports annuels STEG locaux) ; statut : ouvert)_
+- **[M] Convention collective des assurances : grille de 2014 (n° 4 de 2015), avenant n° 16, 28 grilles** — Relever la page française de la grille de 2014, les intitulés arabes des 17 entrées et les 28 grilles pour le versement en paramètres. _(chapitre : rémunérations publiques, marché contrôlé, #sec-marche-controle-assurances ; source : lisible pour la grille 2014 ; image pour les 28 grilles ; statut : ouvert)_
+- **[M] LF 2021 art. 27 et 42 (dons, art. 9 IV-2) ; LF 2020 art. 28, 13 : articles TVA connus par les notes de l'édition du code** — Rapprocher du JORT les articles de 2019-2021 cités dans les tableaux annexés (r-tva-tab-2019) et préciser la règle d'art. 9 IV-2. _(chapitre : fiscalite/_tva.qmd, _tva_tableaux.qmd ; source : lisible ; statut : partiel)_
+- **[S] Décret gouvernemental n° 2021-318 du 4 mai 2021 (modifie art. 13 et 18 du décret 2007-1367) ; arrêté du 3 juin 2008 sur le plafond annuel des soins ambulatoires (JORT n° 41 de 2021, p. 1132)** — Relire à l'image la clause finale du décret 2021-318 et les textes repris de la couche texte, puis chercher les révisions du plafond annuel postérieures à l'arrêté de 2008, avant de dire que le tableau vaut état du droit _(chapitre : prestations_sociales/_soins.qmd (#tbl-ar-am-plafond, #r-soins-plafond, #r-soins-dentaire) ; prestations_sociales/_autres_risques.qmd (D13) ; source : lisible (corpus PDFs + jort_cache), relecture à l'image ; statut : partiel)_
+- **[M] Enquêtes INS sur les dépenses des ménages 2015 et 2021 (traitement des remboursements) ; comptes OMS de la santé** — Lire les méthodes INS 2015 et 2021 et celles de l'OMS pour ne pas assimiler les dépenses médicales au paiement direct net _(chapitre : sante/_couverture.qmd (note sur le montant par habitant) ; source : lisible (PDF à couche texte déjà dans tunisia-data) ; tableaux régionaux INS, RAP/PAP et Cour des comptes écartés (hors corpus probable) ; statut : ouvert)_
+- **[S] Décret n° 2021-318 (carte de soins, régime de base)** — Relire à l'image le décret, dont la clause finale n'est pas relue ; texte repris de la couche texte, sans guillemets. _(chapitre : prestations_sociales/_soins.qmd ; source : lisible ; statut : partiel)_
+- **[M] Décrets d'organigramme, d'emplois fonctionnels et de statut : OC (2019-339, 2013-4706, 2009-2650), SNDP (2021-278, 2009-3085, 2008-3909, 2007-448), El Fouladh (2015-1127, 2013-1289, 2002-2862), CIMOEK (2010-2066, 2009-3047, 99-1739), Ciments de Bizerte (2006-396, 2005-1611, 99-1944), STIR (99-1304)** — Lire ces décrets et compléter les registres des sections concernées (CTN, ATTT, OACA, RNTA sont aux lignes 6, 7 et 13). _(chapitre : entreprises_publiques (_offices, _energie, _industrie) ; source : lisible (corpus) ; statut : ouvert)_
+- **[S] OMMP : convention de garantie AFD (3 juin 2020 ou 2021), décret-loi n° 2021-10 et décret présidentiel n° 2021-248** — Trancher la date de la convention AFD par l'édition arabe. _(chapitre : entreprises_publiques (_transports, OMMP) ; source : arabe (corpus) ; statut : ouvert)_
+- **[M] Éditions françaises LF 2020 et LF 2021 du rapport sur les entreprises publiques : comptes dans la prose (STIR, SNDP, OC, ONH, SONEDE, ONAS, CPG, GCT, El Fouladh, Ciments, SNCPA, CTN, Tunisair, RNTA, OACA, etc.)** — Verser dans tunisia-data les comptes des éditions LF 2020 et LF 2021 si l'on juge qu'ils valent d'être versés. Les fiches de Tunisie Télécom et de la Poste sont déjà versées (à retirer de la ligne). _(chapitre : entreprises_publiques (toutes les sections de fiches) ; source : lisible (prose et tableaux, corpus tunisia-data) ; statut : ouvert)_
+
+## 2020
+
+- **[S] Décret gouvernemental 2020-52 (nomenclature budgétaire des communes), modèle annexé p. 368 s.** — Lire le modèle annexé (arabe) : lien entre articles budgétaires et prélèvements du code, contenu des art. 6101 et 8002. _(chapitre : finances_locales ch. 5, 8, 9 ; source : lisible (arabe seul, annexe publiée uniquement en arabe) ; statut : partiel)_
+- **[S] Décret n° 2014-12 ; décrets gouvernementaux n° 2017-1387 et n° 2020-422** — Établir les dates d'effet par le colophon des JORT et les reporter dans le registre et dans la colonne en dinars constants. _(chapitre : rémunérations publiques, régime conventionnel/dirigeants ; source : lisible (corpus JORT) ; statut : ouvert)_
+- **[S] Articles 6101 et 8002 du modèle de budget communal annexé au décret gouvernemental n° 2020-52 (JORT n° 9 de 2020, édition arabe, p. 368 s.)** — Lire le contenu des articles 6101 (gestion) et 8002 (investissement) : ce que recouvre la quote-part de la subvention annuelle dans les budgets de 2022-2023 _(chapitre : finances_locales/_budgets.qmd (l.343) et _transferts.qmd (l.465) ; renvoi education/_depense.qmd ; source : arabe seul (JORT édition arabe) ; corpus + jort_cache ; statut : partiel)_
+- **[S] Décret gouvernemental n° 2020-317, art. 5 et 7 (JORT n° 45, p. 1093 FR, p. 1248 AR), plafonds de ressources majorés** — Lecture D3 des alinéas lue à l'image dans les deux éditions ; reste la validation humaine (et dire si l'édition arabe fait foi pour « à charge »), puis engendrer les plafonds majorés. _(chapitre : prestations_sociales/_non_contributives.qmd ; source : lisible (2020/fr/Jo0452020.pdf p. 1093) ; statut : partiel)_
+- **[M] Décret gouvernemental n° 2019-1013 ; arrêté du 25 novembre 2020 (annexe p. 2866-2867) ; LF 2022 et 2023 mission santé ; LF 2018-2019 subventions d'équipement ; décrets 99-1886 et 91-555** — Lire les textes non lus de la Pharmacie centrale (2019-1013, arrêté de 2020 et annexe, 99-1886, suite du 91-555 après l'art. 13). _(chapitre : entreprises_publiques/_offices (Pharmacie centrale) ; source : lisible + miroir iort ; statut : ouvert)_
+- **[S] Arrêté du 25 nov. 2020 (monopole d'importation des produits pharmaceutiques), annexe p. 2866-2867** — Lire l'annexe de l'arrêté (le corps, p. 2865, est au registre). _(chapitre : entreprises_publiques (_offices, Pharmacie centrale) ; source : lisible (corpus) ; statut : partiel)_
+
+## 2019
+
+- **[S] décret gouvernemental 2019-542, art. 22 et 25 à 30 (indemnités de FORSATI)** — Lire à l'image les indemnités de FORSATI du décret de 2019 et les écrire. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lecture à l'image (colonnes entrelacées, édition arabe JORT 51/2019) ; statut : ouvert)_
+- **[M] Décrets n° 2009-2826, 2009-2791, 2009-2792 (JORT 80/2009) ; 2019-654 ; 2006-1379 ; 2000-1344** — Établir les montants de l'indemnité de permanence depuis 2009 et lire les décrets de prime de rendement et d'heures hors service. _(chapitre : rémunérations publiques, régime statutaire autonome (magistrats) ; source : lisible (corpus) ; statut : ouvert)_
+- **[M] Tableaux « ت » des lois de finances 2016-2019 (fonds de la formation professionnelle)** — Construire la série des prévisions du fonds et chercher les réalisations. _(chapitre : cotisations sociales, _prelevements_salaires ; source : arabe, couche texte ; statut : ouvert)_
+- **[S] LF 2019 art. 37 : rubrique sous laquelle la loi range l'abrogation des art. 67 à 69** — Relever la rubrique pour la colonne 'ce que la loi cherche' de la rupture 2019-2021. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible ; statut : ouvert)_
+- **[M] Décret n° 2014-1526 (banque de données), suite après le décret gouvernemental n° 2018-626 et mai 2019** — Parcourir le plein texte 2018-2020 de jort_cache pour une prolongation, modification ou abrogation. _(chapitre : prestations_sociales/_non_contributives.qmd ; source : jort_cache ; statut : ouvert)_
+- **[S] Décret n° 2019-1130 (et relecture du décret n° 2002-916)** — Décret n° 2019-1130 absent des chapitres : le lire et décider de son usage ; le décret n° 2002-916 est cité par articles, relecture à l'image seule. _(chapitre : prestations_sociales/_non_contributives.qmd, _matrice.qmd ; source : lisible (corpus 2019, couche texte) ; statut : ouvert)_
+- **[S] JORT n° 45-46 de 2019 (décret gouv. 2019-487) ; JORT n° 39 de 2012 (loi 2012-1) ; JORT n° 46 de 2007 (décret 2007-1330, SOGEMT)** — Lire l'édition arabe pour fixer les dates de dépôt (ARRU, SOGEMT) ; les dates d'effet sont encore « au plus tôt ». _(chapitre : entreprises_publiques/_habitat (ARRU, SOGEMT) ; source : arabe seul ; statut : ouvert)_
+- **[S] LF 2018 et LF 2019, subventions d'équipement « au profit de la pharmacie centrale » (10, 5 puis 7 MD)** — Lire les articles au JORT (repérés seulement dans le miroir iort) et les rapprocher du rapport qui ne porte aucun transfert ces années. _(chapitre : entreprises_publiques (_offices, Pharmacie centrale) ; source : miroir iort puis JORT, lisible ; statut : ouvert)_
+
+## 2018
+
+- **[M] Loi organique 2018-29 (code des collectivités locales), art. 146-151, 392, 156, 191, 9, JORT 39/2018 ar** — Lire en français les art. 146-151 et 392, chercher au plein texte les décrets des missions et programmes (art. 156) et du système comptable (art. 191), et le décret d'application de l'art. 9. _(chapitre : finances_locales ch. 4, 5, 9 ; source : lisible (édition arabe au corpus ; édition française absente) ; statut : partiel)_
+- **[M] Fiche r-ccl-2018-decrets-art391 : décret gouvernemental pris en vertu de l'art. 391 du code 2018 ou décret de tarifs postérieur à 2016-805 ; fascicules arabes 2016-2018** — Lire à l'image les 44 fascicules arabes pour trouver un décret de tarifs postérieur à 2016-805. _(chapitre : finances_locales ch. 8 ; source : lisible (44 fascicules arabes à lire à l'image) ; statut : ouvert)_
+- **[S] Décrets n° 2008-3707 et 2018-747 (organigrammes CNAM) ; décret n° 2002-583 (modifie le décret 96-1050)** — Lire les annexes d'organigramme CNAM et le décret 2002-583, noté « non lu ». _(chapitre : cotisations sociales, _accidents_travail, #sec-cot-at-modulation-caisses ; source : lisible (corpus) ; statut : ouvert)_
+- **[M] Code des collectivités locales, loi organique n° 2018-29 (édition arabe, 2018/ar/Ja0392018.pdf)** — Relever les dispositions sur les élus et les agents ; le code est lu pour les finances locales mais pas pour la rémunération. _(chapitre : rémunérations publiques, régime indiciaire (nouvelle section ou renvoi) ; source : arabe seul, pdftotext puis NFKC ; statut : ouvert)_
+- **[S] LF 2018 art. 33 : marchés et contrats assimilés (enregistrement)** — Lire l'art. 33 au JORT à la place du code consolidé 2025 qui sert de source à la ligne r-te-m-2018. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible ; statut : partiel)_
+- **[S] Note commune sur l'art. 16 de la LF 2018 (clé dgi-nc-lf2018-art16)** — Confirmer le numéro de la note commune (15/2018 d'après le nom du fichier) et renommer la clé. _(chapitre : fiscalite/_impot_revenu.qmd#sec-irpp-forfait ; source : lisible (pièce locale) ; statut : partiel)_
+- **[M] Dépenses du compte spécial de 2009 : lois de règlement des gestions 2009-2014 et 2019-2024 ; avis n° 27-2009 ; guides statistiques CNRPS 2000-2010 (« 2009-39 ») et 2010-2014 (valeur 2 686)** — Lire les annexes des lois de règlement (excédents 2015-2018 faits), relever la page arabe de l'avis n° 27-2009, la ligne « 2009-39 » du guide 2000-2010 et la page de la valeur 2 686. _(chapitre : retraites/_secteur_public.qmd ; source : corpus (lois de règlement) et tunisia-data (guides) ; statut : partiel)_
+- **[S] Arrêtés de conservation 2008, 2011, 2018 ; annexe du décret 2001-663 ; organigramme 2006 ; décret 2000-2371 (arabe) ; loi 82-60 mod. par 95-50 ; code des hydrocarbures art. 75-83** — Lire les textes non lus des SRT de Sfax et Bizerte, de la SOTRAPIL et de TTN. _(chapitre : entreprises_publiques/_transports, _energie, _autres_entreprises ; source : lisible, 2000-2371 en arabe ; statut : ouvert)_
+- **[M] Garanties anciennes des offices, SONEDE, ONAS, Tunisair : lois de garantie 1971-1992, lois 77-74 à 2014-15, décrets 2015-154 à 156 (JORT n° 68/2015, arabe) ; dates de dépôt des JORT n° 38/1994, 104/1995, 93/2011** — Lire les lois de garantie antérieures à 2016-2018 et les décrets 2015-154 à 156 ; relever à l'image les dates de dépôt. _(chapitre : entreprises_publiques (_eau_communications, _transports) ; source : OCR ou image ; arabe pour 2015-154 à 156 ; statut : ouvert)_
+- **[S] CTN : décrets 2018-430, 2015-241, 2002-1606, 2000-2903, 99-2046/2047, 95-2435 ; arrêtés 1994-2013 ; date d'effet de la loi n° 98-27 (JORT n° 30/1998)** — Lire les décrets et arrêtés de la CTN ; relever à l'image le dépôt du JORT n° 30 de 1998. _(chapitre : entreprises_publiques (_transports, CTN) ; source : lisible ; dépôt JORT 30/1998 à l'image (arabe) ; statut : ouvert)_
+
+## 2017
+
+- **[S] annuaires CNSS 2016 et 2017, pyramides trimestrielles en SMIG** — Extraire les pyramides trimestrielles en SMIG des éditions 2016 et 2017. _(chapitre : marche_travail/_salaire_minimum.qmd (#fig-mt-sp-pyramide) ; source : lisible (couche texte, tunisia-data) ; statut : ouvert)_
+- **[S] Fiche r-fccl-repartition-reserve-2014-2017 : décret répartissant la réserve du fonds commun** — Chercher les décrets ou arrêtés de répartition de la réserve pour 2014-2017. _(chapitre : finances_locales ch. 9 ; source : lisible (JORT, jort_cache) ; statut : ouvert)_
+- **[S] LF 2017 art. 34 : exclusions de l'art. 10-4 du code de la TVA (et texte qui a modifié l'art. 10 de la LF 2017)** — Lire l'art. 34 au JORT et l'écrire au chapitre TVA. _(chapitre : fiscalite/_tva.qmd ; source : lisible ; statut : ouvert)_
+- **[S] Arrêtés d'application des art. 128 bis et 128 quinquies du code des droits d'enregistrement et de timbre ; JORT n° 55 de 2017 (date de dépôt)** — Identifier les arrêtés dans le JORT 2017 et suivants et relever la date de dépôt du n° 55. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible (JORT 2017 et suivants) ; statut : ouvert)_
+- **[S] Arrêtés des familles d'accueil (arrêté du 5 juillet 2010 ; arrêté du 3 juin 2017)** — Relire à l'image les arrêtés repris de la couche texte ; relever la mention de dépôt du JORT n° 81 du 10 octobre 1997 et le numéro de la loi d'orientation de 2005 (art. 17). _(chapitre : prestations_sociales/_non_contributives.qmd ; source : lisible ; statut : partiel)_
+- **[M] Arrêtés des familles d'accueil postérieurs au 3 juin 2017 (personne handicapée)** — Chercher les arrêtés postérieurs à 2017 ; la série écrite ne vaut pas état du droit en 2026. _(chapitre : prestations_sociales/_non_contributives.qmd ; source : jort_cache ; statut : ouvert)_
+- **[L] Statuts du personnel, organigrammes, emplois fonctionnels : STB 2007-894 ; BH 2006-1806 ; AFI 2013-3109 ; AFH 2017-1048 ; SPROLS 2015-539/540 ; TT 2015-85 ; OTD 2017-1349 ; ARRU 2015-538 ; décrets 1977-2010** — Lire les décrets de statut du personnel, d'organigramme et d'emplois fonctionnels d'environ 15 entités (faible valeur pour le lecteur). _(chapitre : entreprises_publiques (sections de chaque entité) ; source : lisible ; statut : ouvert)_
+
+## 2016
+
+- **[S] décret gouvernemental 2016-904, art. 23 bis à 23 octies (indemnités de FORSATI : 100 D puis…)** — Lire à l'image les indemnités de FORSATI de 2016 et les écrire. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lecture à l'image (colonnes entrelacées, JORT 2016) ; statut : ouvert)_
+- **[M] Décret gouvernemental 2016-805 (annexe de tarifs) et décret 98-1428** — Transcrire l'annexe de tarifs de 2016 (arabe) et celle de 1998, pour un tableau daté à onglets. _(chapitre : finances_locales ch. 8 ; source : lisible (arabe ; annexe française de 1998 rognée) ; statut : ouvert)_
+- **[S] Décret gouvernemental n° 2016-512 (statut des douanes)** — Lire le décret et trancher la grille applicable aux douanes (97-130 ou 97-1832). _(chapitre : rémunérations publiques, régime statutaire autonome (douanes) ; source : lisible (corpus) ; statut : ouvert)_
+- **[M] LF 2016 : tableaux annexés L, M, M bis, P et annexe 5 (TVA)** — Lire les tableaux L, M, M bis, P ; l'annexe 5 est citée (p. 3331-3332) mais pas détaillée. _(chapitre : fiscalite/_tva_tableaux.qmd ; source : corpus (LF 2016 en extrait français) ; statut : partiel)_
+- **[M] Décrets n° 99-1514 (5 juillet 1999), n° 2016-1401 (27 décembre 2016), n° 93-529, n° 94-1738 (carte de soins)** — Lire ces décrets (seul l'intitulé du n° 2016-1401 est connu), créer les clés ; relire la rédaction d'origine de l'art. 24 du décret n° 98-409 ; relire à l'image la chaîne de la carte de soins gratuits. _(chapitre : prestations_sociales/_non_contributives.qmd ; source : lisible (corpus 1993-2016) ; statut : ouvert)_
+- **[S] Art. 42 de la loi n° 67-29 tel que complété par les lois organiques n° 88-73 et n° 2016-34 (texte consolidé)** — Lire l'article sur une version consolidée. _(chapitre : retraites/_secteur_public.qmd (§ magistrats) ; source : lisible (version consolidée à trouver) ; statut : ouvert)_
+- **[S] Rapports de la Cour de discipline financière 2010-2016 (édition arabe)** — Océriser les rapports de la CDF de 2010 à 2016 et clore la recherche r-cdf-rapports-apres-2009. _(chapitre : entreprises_publiques/_statut (fig-ep-cdf) ; source : arabe, OCR à lancer ; statut : ouvert)_
+- **[L] Versements de la Banque centrale au budget : écarts 2002-2015, rapports de la BCT 1986, 1987, 1989-1994, comptes généraux 2008-2009, rapport du ministère 2005, rapports de clôture 2005-2009, lois de règlement** — Expliquer les écarts de 2002 à 2015 (retenue du Fonds de péréquation des changes, 8 MD de 2011, 109,3 MD de 2011) ; lire à l'image les rapports de 1986 à 1994 et océriser les comptes généraux, rapports de clôture et lois de règlement. _(chapitre : entreprises_publiques (_recettes, #sec-ep-versements) ; source : image et OCR ; statut : partiel)_
+
+## 2015
+
+- **[S] Loi de finances 2014 art. 77-78 : volets de la redevance bornés à 2014 et 2015, prorogation** — Établir si une loi de finances ultérieure a prorogé les volets bornés à 2014-2015. _(chapitre : compensation _reformes ; source : lisible (LF 2015 et suivantes, corpus) ; statut : ouvert)_
+- **[S] Décrets n° 2013-4953 et n° 2015-968 ; circulaire n° 04 du 10 mars 2021** — Établir le régime des directeurs généraux des banques publiques avant le 15 août 2015 et la liste nominative des banques publiques. _(chapitre : rémunérations publiques, régime conventionnel/dirigeants et marché contrôlé ; source : lisible (corpus JORT) ; statut : ouvert)_
+- **[S] Décret n° 2015-658 du 3 juillet 2015 (intitulé arabe) ; décret du 15 août 1998** — Lire le décret (indemnités et avantages du président de la République) et créer la clé. _(chapitre : rémunérations publiques, fonctions politiques ; source : arabe seul ; statut : ouvert)_
+- **[S] Décret gouvernemental n° 2015-2217 (texte arabe)** — Comparer les textes arabe et français article par article ; chercher textes d'application, arrêtés de classement et date du décret 2006-242. _(chapitre : rémunérations publiques, régime conventionnel/dirigeants ; source : lisible et arabe ; statut : partiel)_
+- **[S] LF 2015 (loi 2014-59) art. 18, JORT n° 105 de 2014 p. 3463 : ventes locales 50 % en 2015** — Écrire la mesure au chapitre (lue, contrôlée, non reprise). _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible ; statut : partiel)_
+
+## 2014
+
+- **[S] LF 2014 (JORT n° 105 de 2013) art. 49-50 et 54 : taxe sur les établissements et redevances sur l'exportation** — Lire les articles et les écrire. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible ; statut : ouvert)_
+- **[M] Rapports annuels de la DGI 2013-2014 (crédit de TVA, restitutions)** — Lire à l'image les rapports 2013 et 2014 (police non Unicode) pour les séries de crédit. _(chapitre : fiscalite/_tva.qmd ; source : OCR / lecture à l'image ; statut : partiel)_
+- **[S] Annexe 4.2 du volume d'annexes de la Banque mondiale (p. 35) : échantillon, libellé des questions** — Relever la taille d'échantillon et le libellé des questions. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible (PDF en tunisia-data) ; statut : ouvert)_
+- **[S] Décret n° 2014-12 du 10 janvier 2014 (effet 25 janvier 2014)** — Reporter la date d'effet du 25 janvier 2014 dans le registre des Rémunérations publiques. _(chapitre : remunerations_publiques/_regime_conventionnel ; source : dépôts déjà lus (entreprises_publiques/_statut l.291) ; statut : ouvert)_
+
+## 2013
+
+- **[S] Décret 2013-2797 (fonds de coopération), LF 2013 art. 13-15** — Lire les art. 13-15 de la LF 2013 et le décret 2013-2797, verser sa clé. _(chapitre : finances_locales ch. 5 et 9 ; source : lisible (JORT, corpus) ; statut : ouvert)_
+- **[M] 22 décrets annuels de répartition de la réserve, n° 93-155 à 2013-1503** — Lire les 22 décrets (montant, bénéficiaires, parts). _(chapitre : finances_locales ch. 9 ; source : lisible (jort_cache) ; statut : ouvert)_
+- **[S] Loi 2012-27 art. 63 (redevance de compensation, revenu des personnes physiques), rédaction de 2013** — Relire à l'image l'art. 63 pour l'assiette et le plafond de 2 000 D en 2013. _(chapitre : compensation _reformes ; source : lisible (image, corpus) ; statut : ouvert)_
+- **[M] Décrets n° 2013-1470 et 2009-910 ; décret n° 85-1405 et majorations** — Dire si les montants de 2013-1470 sont des tranches cumulées ou successives et lire le décret 2009-910 (indemnité spécifique des enseignants). _(chapitre : rémunérations publiques, régime indiciaire (enseignants) ; source : OCR pour 85-1405 ; 2013 et 2009 lisibles ; statut : ouvert)_
+- **[S] LF 2013 art. 49 : timbre des services administratifs (carte de séjour, carte d'identité, visite technique)** — Relever les lignes manquantes de l'art. 49 (carte de séjour 15 D, visite technique 10 D, carte d'identité) et les inscrire. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible ; statut : partiel)_
+- **[M] Collection tunisia-data (diaporamas du ministère des Finances 2013) : forfait par tranche de chiffre d'affaires 2009-2011 (diap. 7-8), secteurs 2010 (diap. 6, 33), comparaison avec le réel (diap. 16)** — Relire à l'image et utiliser ou écarter. _(chapitre : fiscalite/_impot_revenu.qmd#sec-irpp-forfait ; source : lisible, à l'image ; statut : ouvert)_
+- **[M] Décrets OTD 73-390 et 78-60 (sans couche texte) ; 2001-2430, 2001-2431, 2013-2628, 92-2069, 84-1036 ; lois 82-72, 75-45, 70-25, 72-36** — Océriser 73-390 et 78-60 et lire les autres textes pour dater le changement d'exercice comptable de l'OTD. _(chapitre : entreprises_publiques/_offices (OTD) ; source : corpus local, OCR à lancer ; statut : ouvert)_
+
+## 2012
+
+- **[M] décrets d'augmentation du secteur public, 1993-1995 à 2011-2012** — Verser les clés et établir la chronologie des rounds du secteur public. _(chapitre : marche_travail/_negociations.qmd ; source : lisible (corpus) ; statut : ouvert)_
+- **[S] Concordances de 2012 (n° 2012-1334 à 1336, 2012-248) et de 2000 (n° 2000-1013, 1015, 1019) des corps de sécurité** — Lire les concordances des corps de sécurité (Garde nationale, prisons, protection civile). _(chapitre : rémunérations publiques, régime statutaire autonome ; source : image pour les scans ; lisible pour 2012 ; statut : ouvert)_
+- **[S] Arrêté du président de l'Assemblée nationale constituante du 15 août 2012** — Lire l'arrêté sur la rémunération de son président et créer la clé. _(chapitre : rémunérations publiques, fonctions politiques ; source : lisible (corpus) ; statut : ouvert)_
+- **[M] Avenants n° 1 à 7 de la convention des médecins de libre pratique (arrêté du 6 février 2007, JORT 2007-2012) et modificatifs suivants** — Lire les avenants 1 à 7 (annexes d'honoraires, dates d'effet, parcours coordonné, accès direct aux spécialistes) et les modificatifs suivants _(chapitre : sante/_medecine_ville.qmd (#r-ville-coordination) ; source : lisible (JORT 2007-2012 repérés par titre dans jort_cache, lisibilité à vérifier) ; statut : ouvert)_
+- **[L] Pourcentages d'affectation du compte spécial (loi n° 2009-40, art. 2 à 4) pour 2009, 2011, 2012 ; décret n° 2011-932 (2010)** — Seul le décret n° 2011-932 (année 2010) est écrit. Océriser le corps des fascicules arabes n° 50/2009 à n° 103/2012 (362) pour trouver les décrets des autres années. _(chapitre : retraites/_secteur_public.qmd ; source : OCR à lancer (arabe, 362 fascicules ; sommaires déjà océrisés) ; statut : partiel)_
+- **[M] Décret 2001-2621 ; loi 2004-33 (art. 6, 11, 12) ; loi 85-77 ; LF 1978 art. 37-38 ; loi 63-13 ; LF 1985 art. 26 ; lois 2012-26 et 2003-33 ; LFC 1985-94** — Relire les textes de tarifs et d'organisation du transport sur fascicules, citer littéralement, calculer les dates d'effet et lire les LFC 1985-94. _(chapitre : compensation/_transport ; source : lisible, lecture dégradée de 85-77, 63-13, LF 1978 ; statut : partiel)_
+
+## 2011
+
+- **[M] lois de finances 2000 à 2010 (tableaux E) et lois de règlement (images au corpus)** — Relever les prévisions du Fonds avant 2011 et les excédents/réalisations dans les lois de règlement. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lecture à l'image (corpus) ; statut : ouvert)_
+- **[M] décret-loi 2011-9 (JORT 14/2011), clé dl2011-9** — Lire le décret-loi et établir le terme du relais du maintien dans l'emploi. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lisible (corpus, clé versée) ; statut : ouvert)_
+- **[S] fascicule JORT n° 81 de 2011 (avenant du bâtiment)** — Établir la date du fascicule n° 81 de 2011. _(chapitre : marche_travail/_conventions.qmd ; source : lisible (corpus) ; statut : ouvert)_
+- **[M] Arrêtés d'approbation des normes comptables de 1999, 2000, 2001, 2003, 2007, 2008 et 2011** — Lire les arrêtés et dire si une norme sectorielle s'applique aux caisses. _(chapitre : caisses, _statut_cadre ; source : lisible (corpus) ; statut : ouvert)_
+- **[S] LF 2011 (loi 2010-58) art. 22-23 : droit réduit des sociétés par actions** — Établir la date d'effet et le montant du droit réduit au JORT. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible ; statut : partiel)_
+- **[S] Décret-loi 2011-100, art. 13 : date d'effet (dépôt du JORT n° 81 de 2011)** — Relever la date de dépôt de la dernière page du JORT n° 81. _(chapitre : fiscalite/_impot_revenu.qmd ; source : lisible, image ; statut : ouvert)_
+- **[S] Ghazouani (2011) : figure 2 (coût en MD), annexes statistiques, creux de 2004-2005** — Lire la figure 2 et les annexes. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible (PDF en tunisia-data) ; statut : ouvert)_
+- **[M] Décret-loi n° 2011-48, relèvement d'un point de la contribution de l'employeur, application aux députés (loi n° 85-16)** — Établir si le relèvement s'applique aux députés dès 2011 ; le texte ne nomme pas la loi n° 85-16. _(chapitre : retraites/_secteur_public.qmd ; source : corpus et jort_cache ; statut : ouvert)_
+- **[M] Fonds de restructuration du capital : prélèvements des gestions 2004, 2006 et 2011 (loi n° 2004-87 et LF concernées) ; rapport de clôture 2012 à lire à l'image** — Trouver les textes des prélèvements de 2004, 2006 et 2011 ; lire à l'image les recettes 2012-2016 du rapport 2012. _(chapitre : entreprises_publiques (_restructuration) ; source : lisible ; rapport 2012 à l'image ; statut : partiel)_
+
+## 2010
+
+- **[M] loi 2009-82 (JORT 1/2010), clé loi2009-82** — Lire la loi 2009-82 qui modifie la loi 2008-79. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lisible (corpus) ; statut : ouvert)_
+- **[M] Tableaux des fonds spéciaux des LF 1995-2010 (dotation à la Caisse)** — Ouvrir les tableaux des LF 1995-2010 pour dater la disparition de la subvention du tableau des fonds spéciaux. _(chapitre : compensation _institution ; source : lisible (corpus) ; statut : partiel)_
+- **[S] Arrêtés des familles d'accueil postérieurs au 5 juillet 2010 (personne âgée)** — Chercher les arrêtés postérieurs à 2010. _(chapitre : prestations_sociales/_non_contributives.qmd ; source : jort_cache ; statut : ouvert)_
+- **[M] Annexe de la liste : quinze sorties sans opération au recueil de la privatisation (textes de fusion, dissolution, cession), huit identités retenues sur le seul nom, décret de tutelle postérieur au décret n° 2010-3170 (r-ep-tutelle-modificatifs-apres-2010)** — Chercher dans le JORT les textes de fusion, dissolution ou cession des quinze sorties, établir les huit identités par un texte, et chercher le décret de tutelle après 2010. _(chapitre : entreprises_publiques (_annexe_liste) ; source : lisible (JORT, corpus tunisia-data) ; statut : ouvert)_
+
+## 2009
+
+- **[S] Loi 2009-32 art. 3 (TVA, restauration des étudiants, 30 bis)** — Lire la loi (citée d'après le recueil non officiel). _(chapitre : fiscalite/_tva_tableaux.qmd ; source : lisible ; statut : partiel)_
+- **[S] Fonds de promotion de la formation professionnelle et de l'apprentissage (LF 2000, art. 17-18) ; formation continue des salariés ; textes à identifier** — Identifier et lire les textes de la formation continue des salariés et combler la lacune dans la section du fonds de formation _(chapitre : marche_travail/_politiques_emploi.qmd (#sec-mt-pe-fonds-formation) ; education/_formation_professionnelle.qmd ; source : lisible (corpus + jort_cache), textes non encore identifiés ; statut : ouvert)_
+
+## 2008
+
+- **[S] loi 2008-79 du 30 décembre 2008 (contenu d'origine, sans clé)** — Verser la clé et lire le contenu d'origine de la loi. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lisible (corpus) ; statut : ouvert)_
+- **[M] Décrets n° 2008-173, 2003-1098, 99-1011, 96-341 (listes des avantages exclus de l'assiette AT/MP)** — Lire en arabe et à l'image les quatre décrets, créer les clés et les citer dans les chapitres assiette et accidents du travail. _(chapitre : cotisations sociales, _assiette et _accidents_travail ; source : français seul ; arabe à lire ; statut : ouvert)_
+- **[M] Décret n° 2008-3449 (statut hospitalo-sanitaire)** — Lire le statut hospitalo-sanitaire (décret 2008-3449) et en tirer les rémunérations et avantages des corps concernés _(chapitre : sante/_hopital.qmd ; source : lisible (corpus + jort_cache), présence du fascicule de 2008 à vérifier ; statut : ouvert)_
+- **[S] Arrêtés tarifaires de 2008, 2003, 1998 et 1993 (n° 10, pp. 201-202), décret n° 93-529, décret n° 98-409** — Relever les dates d'effet (dépôt des fascicules) des arrêtés de 1993, 1998, 2003 et 2008, et établir si le forfait d'hospitalisation de 1993 est par séjour ou par journée _(chapitre : sante/_hopital.qmd (#tbl-hopital-forfaits-actes) et sante/_histoire.qmd ; source : lisible (fascicules locaux) ; statut : ouvert)_
+- **[M] Arrêtés du 19 décembre 1996 et du 7 juillet 2008 (forfaits de scanner, lettres clés S)** — Établir si les forfaits de scanner de 1996 subsistent à côté des lettres clés S de 2008, qui n'abroge expressément que l'IRM, et rechercher les modifications de l'arrêté de 1996 après 2008 _(chapitre : sante/_hopital.qmd (#tbl-hopital-forfaits-actes) ; source : lisible (corpus) ; l'arrondi de l'art. 22 et la ligne « maître de conférence » (art. 17) demandent une circulaire, hors corpus, non retenus ; statut : ouvert)_
+- **[S] Arrêté du 31 mars 2008 (nomenclature des budgets des conseils régionaux) ; arrêtés de 1975 et de 2008 (nomenclature communale antérieure à 2020)** — Lire ces nomenclatures pour savoir si les articles 3303 et 4101 y existaient _(chapitre : education/_depense.qmd (#sec-educ-depense-collectivites) ; source : lisible (corpus + jort_cache) ; statut : ouvert)_
+- **[S] Décret n° 2008-756 et arrêté du 3 juin 2008 (plafond annuel des soins ambulatoires)** — Relire à l'image le décret et l'arrêté, repris de la couche texte sans guillemets. _(chapitre : prestations_sociales/_soins.qmd ; source : lisible ; statut : partiel)_
+- **[M] Révisions du plafond annuel des soins ambulatoires postérieures à l'arrêté du 3 juin 2008** — Chercher les révisions du plafond ; il ne vaut pas état du droit en 2026. _(chapitre : prestations_sociales/_soins.qmd ; source : jort_cache ; statut : ouvert)_
+- **[S] Régie des alcools et MTK : décrets 2008-2398, 2007-843, 2000-1934, 98-1802, 93-114, 89-598, 87-1199, 85-1568, 82-1168** — Lire ces décrets (statut, organigramme, achats de tabacs) et compléter les registres de la Régie et de la MTK. _(chapitre : entreprises_publiques (_offices, Régie et MTK) ; source : lisible (corpus local) ; statut : ouvert)_
+
+## 2007
+
+- **[S] Décrets de suspension des prélèvements à l'importation (1998-2002, après 2007) ; suite du tarif du décret 95-1212 (p. 1534)** — Lire les décrets de suspension et modificatifs des décrets 95-851 et 95-1212. _(chapitre : compensation _institution ; source : lisible (corpus JORT) ; statut : ouvert)_
+- **[M] Décrets n° 97-1832, 97-2127, 2007-267 et 2007-268 ; annexes des grilles de 1998 et 2007** — Relever intitulés, objet et dates d'effet des quatre décrets, puis les annexes des grilles pour engendrer tbl-ri-grille-reperes et le montant exact de l'inspecteur central. _(chapitre : rémunérations publiques, régime indiciaire ; source : lisible (fascicules 1997 et 2007) ; statut : ouvert)_
+- **[S] Décret n° 2007-1406, art. 5 (régime facultatif de la loi n° 72-2) ; décret n° 73-91 (2 % de 1973)** — Porter l'art. 5 dans tbl-cnrps-maladie et établir qui supporte les 2 % de 1973 (l'art. 4 est lu ; la date du 1er novembre 2026 du backlog est postérieure à aujourd'hui). _(chapitre : cotisations sociales, #sec-cot-maladie-public ; source : image (JORT p. 2157) ; statut : partiel)_
+- **[M] LF 2007 art. 17-18 et LF 2005 art. 37 à 40 : fusions, apports d'entreprises individuelles, transmission d'entreprises au droit fixe** — Lire ces articles et les inscrire au registre des sociétés. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible ; statut : ouvert)_
+- **[S] LF 2007 (loi 2006-85) art. 32 : plus-value d'apport à une holding** — Confirmer à l'image que le texte est à la p. 4387 et non 4386. _(chapitre : fiscalite/_impot_revenu.qmd#sec-irpp-epargne ; source : lisible, image ; statut : partiel)_
+- **[S] Décret 2007-1870 du 17 juillet 2007 (retenue sur titres d'emprunt négociables, NC 1/2008)** — Lire le décret et la NC 1/2008, les porter au registre de l'épargne. _(chapitre : fiscalite/_impot_revenu.qmd ; source : lisible ; statut : ouvert)_
+- **[S] Loi 2007-69 art. 41 (TVA, amarrage de croisière, 28 bis)** — Lire l'art. 41 (art. 10-11 déjà lus au JORT pour la restitution). _(chapitre : fiscalite/_tva_tableaux.qmd ; source : lisible ; statut : partiel)_
+- **[S] Arrêté conjoint du 25 juin 2007 sur les affections lourdes ou chroniques (JORT 2007)** — Identifier et lire l'arrêté conjoint du 25 juin 2007 sur les affections lourdes ou chroniques, puis renseigner la prise en charge directe de ces affections _(chapitre : prestations_sociales/_soins.qmd, _autres_risques.qmd ; source : lisible (corpus PDFs + jort_cache), à chercher dans l'index ; statut : ouvert)_
+- **[S] JORT arabe n° 59 de 2000 (Ja05900.pdf, décret 2000-1690), fascicules arabes de 1989 et 1991, convention des médecins de 2007** — Relever les pages arabes de ces fascicules et les porter aux références (URL déjà vérifiées) _(chapitre : sante/_hopital.qmd, sante/_medecine_ville.qmd, références AR ; source : arabe seul ; URL FR et AR vérifiées ; statut : ouvert)_
+- **[S] Décret n° 2007-1367 (modalités de l'assurance maladie)** — Relire à l'image le décret repris de la couche texte. _(chapitre : prestations_sociales/_soins.qmd ; source : lisible ; statut : partiel)_
+- **[S] Arrêté conjoint du 25 juin 2007 (affections lourdes ou chroniques)** — Lire l'arrêté, non lu. _(chapitre : prestations_sociales/_soins.qmd ; source : lisible (corpus 2007) ; statut : ouvert)_
+
+## 2006
+
+- **[S] décret 2006-2990 du 13 novembre 2006** — Lire le décret (stage d'initiation et d'adaptation pour création d'entreprise), dont seul l'intitulé est connu. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lisible (corpus) ; statut : partiel)_
+- **[S] annuaire CNSS 2006, pyramide (scan)** — Lire à l'image la pyramide de l'édition 2006. _(chapitre : marche_travail/_salaire_minimum.qmd (#fig-mt-sp-pyramide) ; source : lecture à l'image (scan) ; statut : ouvert)_
+- **[L] Décrets n° 2006-1160 à 2006-1168 (statuts de la Garde nationale, prisons, protection civile)** — Lire les statuts de 2006 sur l'image du JORT français. _(chapitre : rémunérations publiques, régime statutaire autonome ; source : image / OCR ; statut : ouvert)_
+- **[S] Loi 2006-80 art. 5-6 : rubrique** — Relever la rubrique des art. 5 et 6 (la colonne ne cite que l'intitulé de la loi). _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible ; statut : ouvert)_
+- **[S] Loi 2006-71 (TVA, transport et véhicules des handicapés, 28 f)** — Lire la loi (citée d'après le recueil non officiel). _(chapitre : fiscalite/_tva_tableaux.qmd ; source : lisible ; statut : partiel)_
+- **[S] Transtu : décret n° 2006-433 (concession du domaine public ferroviaire) ; cahier des charges de l'art. 5 de la loi n° 2003-33 ; lois de capital de la SNT 74-43, 78-43, 79-33, 80-49, 82-43, décret-loi 77-5** — Lire le décret 2006-433 et les lois de capital de la SNT ; chercher le cahier des charges (peut-être non publié). _(chapitre : entreprises_publiques (_transports, Transtu) ; source : lisible ; lois anciennes à l'image ; statut : ouvert)_
+
+## 2005
+
+- **[S] avenant n° 9 du textile (date d'effet du 15 juin 2005)** — Lire l'avenant (image au corpus) pour la raison de la date d'effet du 15 juin 2005. _(chapitre : marche_travail/_conventions.qmd ; source : lecture à l'image (corpus) ; statut : ouvert)_
+- **[M] Décrets n° 97-565, 2002-2197 et 2005-910 (tutelle des entreprises publiques, tableau de tutelle)** — Lire les trois décrets pour dire quel régime de tutelle s'applique à la CNRPS après 1997. _(chapitre : caisses, _statut_cadre ; source : lisible ; tableau de 2005 à l'image ; statut : ouvert)_
+- **[M] Loi 2005-59 (fonds d'amorçage) : date d'effet ; prorogations de la loi 99-92 après 2005 ; régime fiscal des SICAV** — Relever la date de dépôt du JORT n° 57 de 2005 ; lire les LF 2005 à 2009 sur les prorogations de la loi 99-92. _(chapitre : fiscalite/_impot_revenu.qmd, _impot_societes.qmd ; source : lisible ; statut : ouvert)_
+- **[S] LF 2005 art. 71 : retraits du tableau C de la TVA** — Océriser le fascicule et relever les retraits. _(chapitre : fiscalite/_tva_tableaux.qmd ; source : OCR à lancer (fascicule scanné) ; statut : ouvert)_
+- **[S] Loi n° 2005-55 (anciens présidents et Premiers ministres)** — Absente du chapitre ; relève plutôt du livre Rémunérations publiques où loi2005-55 existe. Décider du domicile puis lire. _(chapitre : retraites/_secteur_public.qmd ; source : corpus et jort_cache ; statut : ouvert)_
+- **[S] OTC : décrets 2005-2456, 2001-719, 99-1920, 89-1647, 88-885, 74-184 ; loi 62-14** — Lire ces textes et compléter le registre de l'OTC. _(chapitre : entreprises_publiques (_offices, OTC) ; source : lisible (corpus local) ; statut : ouvert)_
+
+## 2004
+
+- **[S] LF 2004 art. 57 : dons (déduction TVA, art. 9)** — Lire l'art. 57 de la LF 2004 et l'écrire au registre de la déduction. _(chapitre : fiscalite/_tva.qmd ; source : lisible ; statut : ouvert)_
+- **[S] Banque mondiale 2006, p. 62, note 45 : conseils des ministres des 16 février 1996, 15 février 2000 et 2 juin 2004 (fiche r-sante-am-preparation-1996-2004)** — Passe de la fiche de recherche : verser p. 62 note 45 (conseil des ministres de 2000 absent du texte) pour la préparation de l'assurance maladie 1996-2004 _(chapitre : sante/_histoire.qmd (« De la commission de 1996 au régime de base de 2004 ») ; source : lisible (PDF tunisia-data) ; statut : partiel)_
+- **[S] Décret n° 2004-1182 (Centre de formation et d'appui à la décentralisation, JORT n° 44 de 2004)** — Lire le décret 2004-1182 pour dire ce que finance la contribution du paragraphe 4 de l'article 03.303 _(chapitre : education/_depense.qmd (#sec-educ-depense-collectivites) ; source : lisible (corpus + jort_cache) ; statut : ouvert)_
+- **[S] Loi n° 2004-71, art. 1er (assurance maladie)** — Relire l'article 1er à l'image (couche texte décodée) pour pouvoir le citer entre guillemets ; le tableau ne donne que l'intitulé. _(chapitre : prestations_sociales/_autres_risques.qmd ; source : lisible (PDF local, relecture à l'image) ; statut : partiel)_
+- **[M] Résultat de la branche pensions 1990-2004 de la rétrospective CNSS : RSA, RSAA, RTNS, régime complémentaire** — Reproduire pour les autres régimes la figure du RSNA (fig-rsna-resultat-1990-2004) ; seule celle du RSNA existe. _(chapitre : retraites/_secteur_prive.qmd (figure) ; source : tunisia-data (série cnss-retrospective-ressources-emplois déjà au cache) ; statut : ouvert)_
+- **[S] OMMP : loi n° 91-94 (prêt KfW, JORT n° 82/1991), décrets 88-229, 82-1386, 70-588, 2004-1029, 2002-135, 99-1731, 73-383, 72-263, 72-242, loi 99-25, arrêtés de tarifs portuaires 1982-2007** — Lire ces textes (loi 91-94 à l'image) et compléter le registre de l'OMMP. _(chapitre : entreprises_publiques (_transports, OMMP) ; source : lisible ; loi 91-94 à l'image ; statut : ouvert)_
+
+## 2003
+
+- **[S] Code de la fiscalité locale (loi 97-11), art. 90 (parkings), modificatifs depuis la LF 2003 (art. 79)** — Chercher les modificatifs de l'art. 90 postérieurs à 2003 pour fermer le dernier palier du barème des parkings, et ouvrir la fiche. _(chapitre : finances_locales ch. 8 ; source : lisible (JORT, jort_cache, corpus) ; statut : ouvert)_
+- **[S] Loi de finances pour 2003 (date d'effet de la TFP)** — Établir la date d'effet (note commune n° 10/2003 : 1er janvier 2003). _(chapitre : cotisations sociales, _prelevements_salaires ; source : lisible ; statut : ouvert)_
+- **[S] LF 2003 art. 67 (JORT 102/2002 p. 2885) ; LF 2000 art. 71 (JORT 105/1999 p. 2750-2751)** — Verser les deux dispositions fiscales de TTN dans le chapitre Droits de douane du livre Fiscalité. _(chapitre : fiscalite/_droits_douane (#sec-dd) ; source : lus dans le corpus ; statut : ouvert)_
+
+## 2002
+
+- **[S] décret 2002-13 du 8 janvier 2002 (JORT 4/2002), modifie le décret 98-868** — Lire le décret et décrire ce qu'il modifie. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lisible (corpus, clé decret2002-13 versée) ; statut : partiel)_
+- **[S] Loi 2002-103 art. 4 (petites voitures de 4 chevaux, abrogation)** — Relire l'art. 4 sur le JORT (la ligne dit 'le recueil non officiel et les éditions officielles'). _(chapitre : fiscalite/_tva_tableaux.qmd ; source : lisible ; statut : partiel)_
+- **[M] Loi n° 2002-32 : entrée du régime des faibles revenus dans l'assurance maladie (décret d'extension, art. 2 du décret n° 2007-1366 ; fiche r-am-extension-loi2002-32)** — Chercher un décret d'extension ; aucun n'est identifié, recherche sur intitulés seulement. _(chapitre : prestations_sociales/_matrice.qmd, _soins.qmd ; source : jort_cache ; statut : partiel)_
+- **[S] Autres lectures de retraites : articles propres du RACI (loi n° 2002-104) et du RTTE (décret n° 89-107), départ anticipé du régime agricole, série du SMAG journalier 1980-2028** — Lire les articles propres du RACI et du RTTE, les textes de départ anticipé du régime agricole, établir la série du SMAG journalier sur le JORT ; les sections RACI et RTTE existent déjà, la revalorisation RTTE et le minimum de 200 D du RACI restent ouverts. _(chapitre : retraites/_secteur_prive.qmd ; source : corpus et jort_cache ; statut : partiel)_
+
+## 2001
+
+- **[S] loi 2001-76 du 17 juillet 2001 (JORT 58/2001) et textes sur les parcs d'activités ; art. 23 de la loi 92-81** — Lire le reste de la loi 2001-76 et les textes postérieurs pour établir le sort du CDD présumé, 2001-2025. _(chapitre : marche_travail/_rupture_contrat.qmd ; source : lisible (jort_cache) ; arabe à lire à l'image ; statut : partiel)_
+- **[S] décret 2001-1722 du 24 juillet 2001** — Lire le contenu du décret sur les contrats de formation aux fins de réinsertion. _(chapitre : marche_travail/_politiques_emploi.qmd ; source : lisible (corpus) ; statut : partiel)_
+- **[S] Lois de règlement et rapports BCT/ministère : dotation à la Caisse 1988-1990, 2000, 2001** — Trouver le montant versé en 1988-1990, 2000 et 2001 (lois de règlement lues, Caisse non nommée). _(chapitre : compensation _institution ; source : lisible (corpus) ; lois de règlement 1988-90 et 2000-2009 déjà lues sans résultat ; statut : partiel)_
+- **[S] LF 2001 (loi 2000-98) art. 64 : timbre du titre de crédit** — Établir le montant initial et la date d'effet du timbre du titre de crédit. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible ; statut : partiel)_
+- **[M] Loi 2001-83 (code des organismes de placement collectif), régime des SICAV** — Lire la loi et écrire le régime fiscal des SICAV. _(chapitre : fiscalite/_impot_revenu.qmd ; source : lisible ; statut : ouvert)_
+- **[S] Notification G/SCM/N/71/TUN du 1er juin 2001, section IX (pp. 14-15)** — Lire la section IX. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible (PDF en tunisia-data) ; statut : ouvert)_
+- **[S] RNTA : décrets 2001-2123, 85-1236, 84-859, 74-917, 70-291 ; art. 16 de la loi n° 64-57 ; loi n° 93-53 (art. 30 de la loi 64-57)** — Lire ces décrets et la quote-part versée au budget ; relire à l'image l'art. de promulgation de la loi 93-53 (JORT n° 39/1993, p. 716). _(chapitre : entreprises_publiques (_offices, RNTA) ; source : lisible ; loi 93-53 à l'image ; statut : ouvert)_
+
+## 2000
+
+- **[M] Décret 2000-1027 (formule du gaz national) et prix du gaz commercial des concessions** — Lire le décret 2000-1027 et chercher ses modificatifs et les conventions de prix du gaz des concessions. _(chapitre : compensation _electricite_gaz ; source : lisible (corpus JORT 2000) ; statut : ouvert)_
+- **[M] Rapports FMI 97/57 et 00/37 (reclassements de la masse salariale en 1996 et 2000)** — Identifier ce qui sort des rémunérations en 1996 et y revient en 2000 ; verser les clés FMI et citer le recoupement. _(chapitre : rémunérations publiques, index.qmd ; source : lisible (tunisia-data/data/raw/banque-mondiale-rapports/) ; statut : partiel)_
+- **[S] LF 2000 art. 57 (retenue, épargne)** — Lire l'art. 57 et le porter au registre. _(chapitre : fiscalite/_impot_revenu.qmd ; source : corpus (LF 2000 sans couche texte, JORT n° 105 de 1999 : OCR possible) ; statut : ouvert)_
+- **[S] Décret 2000-2280 (tableaux I à V, p. 2484-2488) ; décrets 89-377 et 96-1225** — Transcrire les tableaux I à V du décret 2000-2280 ; lire les décrets 89-377 (cité seulement comme abrogé) et 96-1225. _(chapitre : entreprises_publiques/_cessions ; source : lisible ; statut : partiel)_
+
+## 1999
+
+- **[S] Décret 99-1923 (comptes d'épargne pour les études)** — Lire le décret et l'inscrire au registre. _(chapitre : fiscalite/_impot_revenu.qmd ; source : lisible ; statut : ouvert)_
+- **[S] Loi 99-70 art. 2 (TVA, microcrédits, 39 f)** — Lire la loi (citée d'après le recueil non officiel). _(chapitre : fiscalite/_tva_tableaux.qmd ; source : lisible ; statut : partiel)_
+- **[S] LF 1999 art. 61 : plafond d'accès de l'impôt forfaitaire optionnel de 1 500 D** — Vérifier si 100 000 D est un plafond d'accès ou un seuil de relèvement. _(chapitre : fiscalite/_impot_revenu.qmd#sec-irpp-forfait ; source : lisible, notes communes DGI ; statut : partiel)_
+- **[S] Décret 99-486 (Jo02099) : primes de développement régional, date d'effet** — Lire à l'image la clause d'effet des art. 2 et suivants ; date calculée 14 mars 1999 sous réserve. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible, à l'image (police décalée) ; statut : partiel)_
+- **[S] CTF : décrets 92-713 et 98-28 (modifient le 89-876) ; décret 99-2643 (statut, arabe seul)** — Lire les deux modificatifs du décret 89-876 et le décret 99-2643 en arabe. _(chapitre : entreprises_publiques (_energie, CTF) ; source : lisible ; 99-2643 en arabe ; statut : ouvert)_
+
+## 1998
+
+- **[M] Loi n° 60-30, art. 34, rédaction en vigueur après les lois de 1988, 1996, 1997 et 1998** — Établir la rédaction en vigueur ; seule la rédaction de 1960 est lue (OCR p. 1605). _(chapitre : prestations_sociales/_matrice.qmd ; source : lisible (corpus 1988-1998) ; statut : ouvert)_
+- **[S] Loi n° 98-111 (LF 1999), tableau « G » (liste des entreprises), JORT n° 104/1998 après la p. 2503** — Lire le tableau « G » de la LF 1999. _(chapitre : entreprises_publiques (_restructuration) ; source : lisible (corpus) ou image ; statut : ouvert)_
+
+## 1997
+
+- **[S] Rectificatif à la loi n° 96-101, JORT n° 7 du 24 janvier 1997, p. 114** — Relire le rectificatif à l'image ; il est porté au chapitre (art. 3, 4, 7) d'après la couche texte, la clé loi96-101-rectificatif demande cette relecture avant citation littérale. _(chapitre : prestations_sociales/_autres_risques.qmd ; source : lisible (PDF local, relecture à l'image) ; statut : partiel)_
+- **[S] Loi n° 89-9 (JORT n° 9 de 1989, édition arabe) ; décrets 97-566 et 97-552 (JORT n° 27 de 1997)** — Océriser l'édition arabe de la loi 89-9 pour le terme de cession et « participation publique » ; lire les décrets 97-566 et 97-552. _(chapitre : entreprises_publiques/_statut, _glossaire ; source : OCR à lancer pour 89-9 ; 97-566/552 lisibles au corpus ; statut : ouvert)_
+
+## 1996
+
+- **[S] loi 96-62 (31 juillet 1996), registres #r-mt-sm-1996-duree et #r-mt-sm-1996-134** — Reporter la date d'effet 31 juillet 1996 dans les deux registres du SMIG qui portent encore un tiret. _(chapitre : marche_travail/_salaire_minimum.qmd ; source : lisible (JORT 59/1996, déjà lu) ; statut : ouvert)_
+- **[M] loi 96-62, art. 94-3 à 94-14 (temps partiel), Q14** — Lire le contenu des art. 94-3 à 94-14 du code du travail. _(chapitre : marche_travail/_temps_travail.qmd ; source : lecture à l'image (JORT 59/1996 et 2021) ; statut : ouvert)_
+- **[M] conventions collectives du commerce, de l'hôtellerie, de la mécanique et électricité, et avenants depuis 1996** — Lire les conventions d'origine (scans français) et les avenants arabes, dresser les grilles. _(chapitre : marche_travail/_annexe_conventions.qmd, _conventions.qmd ; source : OCR à lancer (scans français) ; arabe seul pour les avenants ; statut : ouvert)_
+- **[M] conventions de branche : préavis, indemnité de licenciement, départ à la retraite, diviseur du « jour de salaire » (Q4, Q11)** — Lire à l'image les clauses de rupture des conventions de branche. _(chapitre : marche_travail/_rupture_contrat.qmd ; source : lecture à l'image (scans tunisia-data) ; statut : ouvert)_
+- **[M] Décrets d'augmentation des autres corps (ingénieurs, enseignants, santé, greffes) depuis 1996** — Lire les décrets parallèles à ceux de l'indemnité de gestion et d'exécution. _(chapitre : rémunérations publiques, régime indiciaire ; source : lisible ; statut : ouvert)_
+- **[S] Lois n° 77-80, 82-68, 82-69, 89-53, 96-30 (mutuelles de corps) ; décret n° 85-847 ; arrêté du 7 septembre 1993 (Union nationale des sociétés mutualistes)** — Verser les clés et lire ces textes avant d'en faire état _(chapitre : prestations_sociales/_soins.qmd (régimes mutualistes) ; source : lisible (corpus) ; statut : ouvert)_
+- **[M] Décret fixant les indemnités familiales du secteur public postérieur au décret n° 96-1906 (fiche r-pf-taux-apres-1996)** — Chercher un décret de fixation postérieur à 1996 ; intitulés seuls passés. _(chapitre : prestations_sociales/_prestations_familiales.qmd ; source : jort_cache plein texte ; statut : ouvert)_
+- **[S] Circulaire n° 42 du 25 octobre 1996 (JORT n° 94, p. 2349-2364)** — Lire les seize pages, source la plus détaillée sur la gestion des indemnités familiales (lisible sans OCR). _(chapitre : prestations_sociales/_prestations_familiales.qmd ; source : lisible (1996/fr/Jo09496.pdf) ; statut : ouvert)_
+- **[M] Extension de la loi n° 96-101 aux régimes agricoles et aux contractuels publics (fiche r-loi96-101-extension)** — Recherche faite sur les intitulés (aucun texte d'extension identifié, aucun modificatif après 2006 jusqu'au 2 octobre 2026) ; plein texte non fait. _(chapitre : prestations_sociales/_matrice.qmd, _autres_risques.qmd ; source : jort_cache ; statut : partiel)_
+- **[M] Décret n° 85-614 après la loi organique n° 88-73 (fiche r-decret-85-614-sort)** — Océriser les fascicules 1988-1996 pour établir le sort du décret ; plein texte 1997-2026 sans occurrence. _(chapitre : retraites/_secteur_public.qmd (§ magistrats) ; source : OCR à lancer (corpus 1988-1996) ; statut : ouvert)_
+
+## 1995
+
+- **[M] convention du bâtiment, avenant n° 4 (JORT p. 1495-1497, 1993-1995), indemnité complémentaire provisoire comprise** — Transcrire les grilles du bâtiment 1993-1995 (pages pivotées de 90°). _(chapitre : marche_travail/_annexe_conventions.qmd ; source : OCR à lancer (scans français, pages pivotées) ; statut : partiel)_
+- **[S] Loi n° 95-101, art. 3 (dispense transitoire) et date exécutoire (loi n° 93-64, art. 2)** — Calculer la date exécutoire de la loi 95-101 et exposer le contenu de la dispense transitoire. _(chapitre : cotisations sociales, _accidents_travail ; source : lisible ; statut : ouvert)_
+- **[S] Décret n° 95-1166 du 3 juillet 1995 (sécurité sociale des travailleurs non salariés), branche soins** — Lire la branche soins du décret 95-1166 (extension des art. 68 à 98 de la loi 60-30) et l'inscrire à l'histoire de la couverture _(chapitre : sante/_histoire.qmd ; source : lisible (corpus, clé decret95-1166 existante) ; statut : ouvert)_
+- **[L] Textes de 1973 à 1995 sur les langues d'enseignement (fil historique 1958-1995)** — Lire les textes de 1973 à 1995 et écrire le fil historique des langues d'enseignement _(chapitre : education/_scolaire.qmd (#sec-educ-scolaire-cycles-langues) ; source : lisible (corpus + jort_cache), lecture à l'image possible ; statut : ouvert)_
+- **[S] Loi n° 95-101 du 27 novembre 1995, art. 2 (alinéa ajouté à l'art. 111 de la loi n° 60-30)** — Relire l'alinéa à l'image ; le contenu et la date d'exécution (10 décembre 1995) sont déjà écrits. _(chapitre : prestations_sociales/_autres_risques.qmd ; source : lisible ; statut : partiel)_
+- **[M] Loi n° 95-56 (accidents du travail du secteur public), art. 5 ; décret n° 95-2487 modifié** — Établir qui gère en 2026 la réparation (employeur, CNRPS, CNAM) et vérifier les décrets d'application. _(chapitre : prestations_sociales/_autres_risques.qmd ; source : lisible, mais question de droit non tranchée par les textes ; statut : ouvert)_
+
+## 1994
+
+- **[S] Décret n° 94-492 (industries manufacturières)** — Lire le décret qui définit les industries manufacturières pour la TFP. _(chapitre : cotisations sociales, _prelevements_salaires ; source : lisible ; statut : ouvert)_
+- **[S] Décret 94-816 (Jo03094) : taux du droit sur les hydrocarbures** — Lire le décret : le registre ne donne que l'intitulé et une date 'non établie'. _(chapitre : fiscalite/_droits_consommation.qmd ; source : lisible ; statut : partiel)_
+- **[S] Décrets 94-426 et 94-539 : JORT n° 21 de 1994 (Jo02194), mention de dépôt** — Lire la mention de dépôt en dernière page pour établir les dates d'effet. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible ; statut : ouvert)_
+- **[M] LF 1992 tableaux L et M ; LF 1993 art. 83, 84, 94, 109 ; LF 1994 art. 50-51 et tableau M (retraits du tableau C de la TVA)** — Océriser et relever les retraits (café, thé, bières, vins, tabacs, voitures). _(chapitre : fiscalite/_tva_tableaux.qmd ; source : OCR à lancer (fascicules scannés) ; statut : ouvert)_
+- **[M] Loi n° 94-28 du 21 février 1994, art. 39-43 et 48-53 (JORT n° 15, p. 311-313)** — Relire à l'image les articles sur les taux des rentes (repris de la note de lecture sans guillemets) avant toute citation littérale. _(chapitre : prestations_sociales/_autres_risques.qmd ; source : lisible (relecture à l'image) ; statut : partiel)_
+
+## 1993
+
+- **[M] convention du textile, avenant n° 4 (1993)** — Transcrire la grille du textile de 1993 (exclut l'ICP). _(chapitre : marche_travail/_annexe_conventions.qmd ; source : OCR à lancer (scans français) ; statut : partiel)_
+- **[S] Décret 93-59 du 11 janvier 1993, rétablissements des annexes du décret 91-1996 (JORT 1992 n° 11 et 30)** — Lire ces textes pour établir la version du tableau A de 1991 à 1995. _(chapitre : compensation _electricite_gaz ; source : lisible (corpus) ; statut : ouvert)_
+- **[M] Décrets n° 85-907, 85-908, 93-2453, 93-2581 (et 81-55, 81-56)** — Lire les textes de base de l'indemnité de magistrature du Tribunal administratif et de la Cour des comptes. _(chapitre : rémunérations publiques, régime statutaire autonome ; source : OCR / image pour les plus anciens ; statut : ouvert)_
+- **[M] Code d'incitation aux investissements de 1993 (Jo09993, p. 2179-2181, titres VII à X, date de dépôt du JORT n° 99)** — Océriser les p. 2179-2181, contrôler les intitulés et établir la date d'effet. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : OCR à lancer (couche texte vide) ; statut : partiel)_
+- **[S] LF 1993 art. 114 ; LF 1992 art. 66 et 68 ; LF 1991 art. 50 (TVA)** — Lire les articles et établir les dates d'effet. _(chapitre : fiscalite/_tva.qmd ; source : lisible ; statut : ouvert)_
+- **[M] Décret du 28 août 1956 ; LF 1978, 1987, 1988 ; lois 57-22, 59-64, 59-85, 61-29 ; décrets 66-389 à 85-790 ; décrets modifiant le 74-33 (76-313, 76-781, 86-281, 93-60)** — Lire les textes anciens sur la Poste, la SNIT, la BNA et l'AFH (la plupart à l'image). _(chapitre : entreprises_publiques/_eau_communications (Poste), _habitat (SNIT, AFH), _secteur_financier (BNA) ; source : corpus, lecture à l'image ; statut : ouvert)_
+
+## 1992
+
+- **[S] rectificatif de la loi 92-81, JORT 76/1992 p. 1494 ; pied de page du JORT 52/1992** — Relire à l'image le rectificatif qui récrit l'art. 23 et la date de publication du n° 52. _(chapitre : marche_travail/_rupture_contrat.qmd ; source : lecture à l'image (corpus) ; statut : ouvert)_
+- **[M] Décrets n° 73-167 (modificatifs 1985-92), 73-168, 71-364, 76-843** — Lire les modificatifs du statut des diplomates et du régime des cabinets (scans). _(chapitre : rémunérations publiques, régime indiciaire (corps particuliers) ; source : OCR / image ; statut : ouvert)_
+- **[L] Lois 1976-1992 d'incitation (Jo04676, Jo04481, Jo05482, Jo07385, Jo05687, Jo02388, Jo02190, Jo05292) : lois 76-63, 81-56, 82-67, 92-81, décret-loi 85-14, lois 87-51, 88-18, 90-21** — Océriser, commençant par 1985 et 1987, puis établir taux, durées, dates d'effet et abrogation de la loi 72-38. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : OCR à lancer (couche texte vide) ; statut : ouvert)_
+
+## 1991
+
+- **[L] Lois de finances 1971-1975 et 1991 (bons d'équipement)** — Lire les articles sur le placement des fonds en bons d'équipement. _(chapitre : caisses, _statut_cadre ; source : OCR ; statut : ouvert)_
+- **[S] Décrets n° 90-1001 et 91-803 (cycle 1990-1992)** — Lire les deux décrets (scans) et confirmer l'effet du décret 2015-462. _(chapitre : rémunérations publiques, régime indiciaire ; source : OCR / image ; statut : ouvert)_
+- **[S] Décret n° 91-487** — Lire le décret 91-487 et le verser à l'histoire de l'assurance maladie avant 2004 _(chapitre : sante/_histoire.qmd ; source : lisible (corpus), à l'image si besoin ; statut : ouvert)_
+- **[S] Arrêté du 30 mars 1991 modifiant l'art. 5 de l'arrêté du 1er avril 1982 (JORT n° 26 du 19 avril 1991, p. 894)** — Verser l'arrêté du 30 mars 1991 et lui donner sa propre ligne de registre _(chapitre : sante/_histoire.qmd (#r-hist-1982-thermal) ; source : lisible (corpus), à confirmer à l'image ; statut : ouvert)_
+- **[S] STIR : lois 61-35, 61-44, 62-29, décret-loi 61-11 ; décrets 89-1197 et 91-178** — Lire les textes fondateurs de la STIR et verser les décrets 89-1197 et 91-178 au registre. _(chapitre : entreprises_publiques (_energie, STIR) ; source : image ou OCR ; statut : ouvert)_
+
+## 1990
+
+- **[M] Textes de capital, garanties et statuts de la CPG (1970-1992), GCT (1972-1990), CTN (après 1984), Tunisair, Ciments de Bizerte (59-132, 79-310, 88-1756, taxe sur le ciment 1973), SNCPA (arrêté 31 janv. 1981, décrets 88-283, 2000-2366), CIMOEK (loi 79-24)** — Lire ces textes à l'image ou en OCR et combler les TODO de forme juridique et de capital. _(chapitre : entreprises_publiques (_industrie, _energie, _transports) ; source : image ou OCR ; statut : ouvert)_
+
+## 1989
+
+- **[M] convention du textile, avenant n° 2 (1989) ; bâtiment 1989** — Transcrire la grille du textile de 1989 (et celle du bâtiment 1989). _(chapitre : marche_travail/_annexe_conventions.qmd ; source : OCR à lancer (scans français) ; statut : partiel)_
+- **[S] LF 1984 art. 87 et tableau F, LFC 1989 (loi 89-88)** — Relire à l'image ces textes (déjà écrits au chapitre) pour confirmer les citations. _(chapitre : compensation _institution ; source : lisible (image, corpus) ; statut : partiel)_
+- **[S] LF 1989 art. 23-26 (TVA, OCR en colonnes)** — Relire à l'image l'art. 26 et les numéros d'alinéas ; art. 23 à 25 déjà cités. _(chapitre : fiscalite/_tva_tableaux.qmd, _tva.qmd ; source : OCR / image ; statut : partiel)_
+- **[M] Barème successoral 1984-1993 : LF 1987 (loi 86-106), LF 1988 hors art. 32 (loi 87-83), LF 1989 (loi 88-145)** — Lire en entier ces trois lois pour le barème et l'abattement handicapé. _(chapitre : fiscalite/_patrimoine_immobilier.qmd ; source : lisible (fascicules 1986 n° 82, 84, 86 absents) ; statut : partiel)_
+
+## 1988
+
+- **[S] décret de 1988 faisant entrer l'indemnité complémentaire provisoire dans l'assiette des cotisations ; sigle « MIT » de l'annuaire 2006** — Identifier le texte de 1988 et développer le sigle « MIT ». _(chapitre : marche_travail/_salaire_minimum.qmd ; source : lisible (corpus) ; statut : ouvert)_
+- **[S] Loi n° 88-38 (JORT 33/1988, Jo03388.pdf) ; loi n° 60-30, art. 42 et 46 (JORT 57/1960)** — Établir si l'art. 42 de la loi 60-30 a été modifié entre 1960 et 1995 et relire la rédaction de 1960 sur un exemplaire net. _(chapitre : cotisations sociales, _accidents_travail ; source : lisible ; impression pâle à relire à l'image ; statut : ouvert)_
+- **[M] Décrets n° 88-905 et n° 85-1405** — Lire le décret 88-905 (champ à établir) et le décret 85-1405 (indemnité d'encadrement) avant de citer leurs montants. _(chapitre : rémunérations publiques, régime statutaire autonome et indiciaire ; source : OCR / image ; statut : ouvert)_
+- **[S] Loi de finances 1988, art. 60-61 (avantages des anciens présidents et Premiers ministres)** — Lire les articles ; absents du chapitre. _(chapitre : retraites/_secteur_public.qmd ; source : corpus 1988 (OCR si pas de couche texte) ; statut : ouvert)_
+
+## 1987
+
+- **[M] Loi n° 85-72, décret n° 87-529, loi n° 68-8 (contrôle externe des caisses)** — Lire la loi 85-72 et le décret 87-529 (révision des comptes des EPIC) et la loi 68-8 sur la Cour des comptes. _(chapitre : caisses, _statut_cadre ; source : OCR ; statut : ouvert)_
+- **[M] Arrêtés et textes de bourses de 1983 à 1987 ; montant de la bourse nationale 1977-1988** — Chercher et lire les textes de 1983-1987 en édition arabe pour établir le montant de la bourse nationale de 1977 à 1988 _(chapitre : education/_aides.qmd (bourse nationale, chap. 5, tableau du montant) ; source : arabe seul (édition arabe du corpus) ; statut : ouvert)_
+
+## 1986
+
+- **[M] Décrets n° 75-775 et 86-454 (tutelle de la CNRPS)** — Lire les décrets de tutelle de 1975 et 1986. _(chapitre : caisses, _statut_cadre ; source : OCR ; statut : ouvert)_
+
+## 1985
+
+- **[S] Loi n° 85-12, art. 8-10 (JORT 76/1985)** — Océriser le fascicule et établir les branches financées par la CNRPS et la ventilation des taux. _(chapitre : rémunérations publiques, régime indiciaire (retenues CNRPS) ; source : OCR à lancer (scan) ; statut : ouvert)_
+- **[S] Décret n° 85-173 (rang du directeur de l'ONOU)** — Trancher si le décret 85-173 entre au registre des œuvres (il ne change que le rang du directeur de l'ONOU, sans montant ni condition) puis créer sa clé ou le laisser hors registre _(chapitre : education/_aides.qmd (registre des œuvres universitaires, chap. 5) ; source : lisible, déjà lu ; arbitrage, pas une lecture ; statut : ouvert)_
+
+## 1984
+
+- **[S] Arrêté du 4 juin 1984, éclairage public au-delà de 60 kWh (31 en français, 51 en arabe)** — Trancher l'article sur l'édition arabe et reprendre l'éclairage public au chapitre. _(chapitre : compensation _electricite_gaz ; source : lisible (JORT 1984, arabe) ; statut : ouvert)_
+- **[M] Décrets n° 84-751, 84-752, 84-754, 84-756 ; fascicules de 1992 et de 1982-85** — Lire les grilles de 1984 de la Garde nationale, des prisons et de la protection civile (scans) et créer les clés. _(chapitre : rémunérations publiques, régime statutaire autonome ; source : OCR / image ; statut : ouvert)_
+- **[M] Lois modificatives 70-59, 71-58, 74-76, 81-70, 82-27, 83-81, 84-3 ; art. 36 de la loi 77-81 ; LFC 1969-91** — Lire les lois modifiant les budgets de capital, l'art. 36 de la loi 77-81 et les LFC 1969-91 (plafond de garantie et budget avant 1986). _(chapitre : entreprises_publiques/_garanties ; source : lecture à l'image ; statut : ouvert)_
+
+## 1983
+
+- **[S] Décret n° 83-681 du 18 juillet 1983 (JORT 51/1983, p. 1994)** — Lire le décret sur l'exonération fiscale de l'indemnité parlementaire. _(chapitre : rémunérations publiques, fonctions politiques ; source : image ; statut : ouvert)_
+- **[S] LF 1983 art. 44 et 49 ; loi 83-81 (LFC 1983) art. 14 (marchés)** — Recouper art. 44 et 49 avec le tarif de 1912 ; lire l'art. 14 de la loi 83-81. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible ; statut : partiel)_
+
+## 1982
+
+- **[S] Loi n° 81-6 du 12 février 1981 ; décret n° 82-1360 du 21 octobre 1982** — Lire les dates d'effet de la loi 81-6 et du décret 82-1360 (reprises des notes des clés, non relues) pour dater le tableau des extensions autrement que par année _(chapitre : sante/_histoire.qmd (#r-hist-1981-agricoles, #r-hist-1982-agricoles) ; source : lisible (corpus) ; statut : ouvert)_
+- **[S] Arrêté du 20 août 1982 (montants mensuels de la bourse des premier et deuxième cycles et de spécialisation)** — Retrouver l'arrêté du 20 août 1982 (édition arabe), connu par le visa de l'arrêté du 23 août 1990, puis rétablir la ligne du tableau _(chapitre : education/_aides.qmd (tableau chronologique des bourses) ; source : arabe seul (non retrouvé dans l'édition française de 1982) ; statut : ouvert)_
+
+## 1981
+
+- **[S] Arrêtés d'application de la loi n° 81-12 du 2 mars 1981 (livrets de soins, liste des longues maladies)** — Lire les arrêtés d'application de la loi 81-12 (coefficient des opérations, liste des longues maladies) _(chapitre : sante/_histoire.qmd (#r-hist-1981) ; source : lisible (corpus) ; statut : ouvert)_
+- **[S] Rectificatif de la loi n° 81-6 (régime agricole)** — Identifier la page du rectificatif sur les scans locaux (homonymes possibles) ; aucune clé ni mention au chapitre. _(chapitre : retraites/_secteur_prive.qmd ; source : lisible (scans locaux 1981) ; statut : ouvert)_
+
+## 1980
+
+- **[S] LF 1980 : articles autres que l'art. 37 (timbre)** — Lire les autres articles. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible ; statut : partiel)_
+- **[S] Arrêtés de bourses des écoles du ministère de l'Agriculture de 1973, 1975 et 1980 (celui de 1972 est lu)** — Lire les arrêtés de 1973, 1975 et 1980 sur les bourses des écoles de l'Agriculture _(chapitre : education/_aides.qmd (#r-educ-a-bn-1972 et suivants) ; source : lisible (corpus) ; statut : ouvert)_
+- **[S] SNDP : lois n° 63-5 et 63-6 du 22 avril 1963 (ratification), décret n° 80-165** — Lire les lois de ratification de 1963 et le décret 80-165 (statut du personnel). _(chapitre : entreprises_publiques (_energie, SNDP) ; source : image ou OCR ; statut : ouvert)_
+
+## 1979
+
+- **[M] Décret n° 78-885 (JORT 68/1978, pp. 2844-2845) ; circulaire n° 78-45 (JORT 2/1979, pp. 89-91)** — Relire avec un autre réglage d'OCR, relever les montants de 1978 et établir le lien avec les décrets 2014-12 et 90-1855. _(chapitre : rémunérations publiques, régime conventionnel/dirigeants ; source : OCR avec autre réglage ; statut : ouvert)_
+- **[S] Arrêté du 2 avril 1979 (longue maladie)** — Lire l'arrêté du 2 avril 1979 sur la longue maladie et lui donner une clé et une ligne de registre _(chapitre : sante/_histoire.qmd (#r-hist-1979-ascendants et alentours) ; source : lisible (corpus) ; statut : ouvert)_
+
+## 1978
+
+- **[S] Tarifs de l'électricité 1975-1990 : décret 61-47, arrêtés de 1963, 1976, 1977, 1978** — Lire sur les fascicules les textes tarifaires connus par leur intitulé (haute et moyenne tension, unité de la prime). _(chapitre : compensation _electricite_gaz ; source : lisible (fascicules au corpus) ; statut : partiel)_
+
+## 1977
+
+- **[M] Décret n° 77-732 (statut hospitalo-universitaire)** — Vérifier la présence du décret 77-732 au corpus, le lire et verser sa clé pour le statut hospitalo-universitaire _(chapitre : sante/_hopital.qmd ; source : incertain : présence du fascicule de 1977 à vérifier ; statut : ouvert)_
+
+## 1975
+
+- **[S] Lois n° 67-56, 72-76 (ou 72-78), 72-86, 75-80 (indemnité parlementaire)** — Lire les scans pour les montants de 1967, 1972 et 1975 ; vérifier le numéro de la loi 72-76. _(chapitre : rémunérations publiques, fonctions politiques ; source : image ; statut : ouvert)_
+- **[S] Décret n° 75-952, taux au 1er janvier 1976 (4,600 / 3,800 / 3,300 / 2,700 D)** — Le décret est lu et les taux de 1976 sont au registre (r-pf-public-1975). Reste à les porter aux paramètres OpenFisca retraite/cnrps/accessoires/indemnites_familiales, puis au tableau engendré. _(chapitre : prestations_sociales/_prestations_familiales.qmd ; source : lisible ; travail côté OpenFisca-Tunisie ; statut : partiel)_
+
+## 1974
+
+- **[S] décret 74-493 du 20 avril 1974 (registre #r-mt-sm-1974-commission)** — Établir et reporter la date d'effet du décret 74-493 dans le registre du SMIG (tiret). _(chapitre : marche_travail/_salaire_minimum.qmd ; source : lisible (JORT 1974) ; statut : partiel)_
+- **[M] Loi 74-101 (LF 1975) art. 29 et 31 : donations ; art. 30 (p. 3221 arabe, impression tramée)** — Établir le tarif des donations 1975-1993 (art. 31) et confirmer l'art. 30 à l'image. _(chapitre : fiscalite/_patrimoine_immobilier.qmd ; source : arabe, image ; statut : partiel)_
+- **[S] Décret n° 74-899 du 5 octobre 1974 (convention du 10 octobre 1973 CPS - ministère de la Santé)** — Lire le texte de la convention de 1973 (forfait annuel) annexé au décret 74-899 ; le décret lui-même (art. 1-2) est déjà cité _(chapitre : sante/_histoire.qmd (#r-hist-convention-1973) ; source : lisible (corpus) ; statut : partiel)_
+
+## 1973
+
+- **[S] décret 73-247 du 26 mai 1973 (registre #r-mt-sm-1973)** — Établir et reporter la date d'effet du décret 73-247 dans le registre du SMIG (tiret). _(chapitre : marche_travail/_salaire_minimum.qmd ; source : lisible (JORT 1973) ; statut : partiel)_
+
+## 1972
+
+- **[S] Lois n° 72-40 du 1er juin 1972 et n° 72-67 du 1er août 1972** — Lire les deux lois sur le statut du Tribunal administratif et corriger le tableau et le registre ; créer la clé de la loi 72-67. _(chapitre : rémunérations publiques, régime statutaire autonome ; source : lisible (corpus) ; statut : ouvert)_
+- **[S] Décret n° 72-230 (statut particulier, Jo02972.pdf)** — Océriser et vérifier le décret avant d'en qualifier le champ. _(chapitre : rémunérations publiques, régime statutaire autonome ; source : OCR (scan) ; statut : ouvert)_
+- **[S] Loi organique n° 72-67 et décret-loi n° 70-6 (limites d'âge des magistrats)** — Lire les textes pour savoir s'ils portent une limite d'âge propre en plus des décrets de 1973 et 1974. _(chapitre : retraites/_secteur_public.qmd (§ magistrats) ; source : OCR à lancer (corpus 1970-1972) ; statut : ouvert)_
+
+## 1971
+
+- **[M] Arrêté du 20 juillet 1965, lois 59-66 et 63-13, tableau F de la LF 1970, LF 1971 art. 48, décret 70-622, redevances 1956, 1958, 1967** — Relire à l'image ces textes avant de publier des chiffres. _(chapitre : compensation _institution ; source : lisible (image, corpus) ; 1957 sur pist.tn seul ; statut : partiel)_
+
+## 1970
+
+- **[S] loi 70-20 (JORT 23/1970 p. 483) portant modification du code du travail** — Refaire l'OCR et établir l'objet de la loi. _(chapitre : marche_travail/_rupture_contrat.qmd ; source : OCR à lancer (texte illisible) ; statut : ouvert)_
+
+## 1969
+
+- **[M] Décret 69-114 (taxe unique sur les assurances) ; taux des fonds de commerce 1969-1987** — Lire le décret de 1969 et relever les taux des fonds de commerce. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible ; statut : partiel)_
+
+## 1966
+
+- **[S] loi 66-27 (code du travail), effet 1er mai 1966, registres #r-mt-sm-1966-duree et #r-mt-inst-1966-duree** — Reporter la date d'effet 1er mai 1966 dans #r-mt-sm-1966-duree (tiret) et la distinguer du 30 avril (promulgation) dans #r-mt-inst-1966-duree. _(chapitre : marche_travail/_salaire_minimum.qmd, _institutions.qmd ; source : lisible (JORT 20/1966 p. 716, déjà lu) ; statut : partiel)_
+- **[S] loi 66-27, code du travail, art. 31 à 52 (JORT 20/1966 pp. 720-721)** — Relire à l'image les art. 31 à 52 sur les conventions collectives. _(chapitre : marche_travail/_conventions.qmd ; source : lecture à l'image (corpus) ; statut : partiel)_
+- **[S] Code du travail de 1966, art. 364-365 (JORT 22/1966)** — Lire les articles pour l'assiette de la taxe avant 1989. _(chapitre : cotisations sociales, _prelevements_salaires ; source : image ; statut : ouvert)_
+
+## 1965
+
+- **[S] Règlement intérieur de la CNSS (arrêté du 4 octobre 1965), art. 102-107 ; loi n° 60-30, art. 5** — Lire les art. 102 à 107 du règlement intérieur (seuls 4 et 108-109 sont cités) et l'art. 5 de la loi 60-30 _(chapitre : sante/_histoire.qmd (#r-hist-1965-reglement) ; source : lisible (corpus), à l'image si besoin ; statut : partiel)_
+- **[S] Rectificatif au règlement intérieur de la CNSS (JORT n° 62 de 1965, p. 1592-1593)** — Verser et lire le rectificatif de 1965 _(chapitre : sante/_histoire.qmd (#r-hist-1965-reglement) ; source : lisible (corpus) ; statut : ouvert)_
+
+## 1962
+
+- **[S] Loi 62-81 art. 8 : suppression du droit d'apport proportionnel** — Lire l'art. 8 et dater la suppression. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible ; statut : ouvert)_
+- **[S] Décrets n° 57-39 et n° 62-350 du 19 octobre 1962** — Lire les décrets 57-39 et 62-350 (contribution antérieure à celle de 1969) _(chapitre : sante/_histoire.qmd (tableau des contributions) ; source : lisible (corpus) ; statut : ouvert)_
+- **[M] Bourses 1960-1961 : fascicules n° 57 de 1960 à juin 1961 (suites de sommaire en page 2, édition arabe) ; décisions de majoration de 1958-1959 ; arrêtés du 5 février 1962** — Lire les suites de sommaire et l'édition arabe pour établir s'il y a eu un concours en 1960-1961, et chercher dans l'index les majorations de 1958-1959 et les arrêtés du 5 fév. 1962 _(chapitre : education/_aides.qmd (aides universitaires, chap. 5) ; source : arabe seul (édition arabe) + corpus français ; statut : ouvert)_
+
+## 1960
+
+- **[S] Loi n° 60-30, art. 76-98 (JORT n° 57 de 1960, p. 1609-1610)** — Lire les pages 1609-1610 et relever les intitulés de subdivision ; non fait. _(chapitre : prestations_sociales/_autres_risques.qmd ; source : lisible (corpus 1960, OCR ou image) ; statut : ouvert)_
+
+## 1959
+
+- **[S] Lois n° 59-5 et n° 59-87** — Lire les deux lois (allocations familiales 1959 ; modification de la loi 58-130) ; la loi 61-9 est déjà lue. _(chapitre : caisses, _histoire ; source : image (OCR de Jo00359.pdf vide) ; statut : ouvert)_
+
+## 1958
+
+- **[S] loi 58-139 du 23 décembre 1958 (mines)** — Établir le sort de la loi après 1966 (abrogation non établie). _(chapitre : marche_travail/_rupture_contrat.qmd ; source : lisible (corpus) ; statut : partiel)_
+
+## 1956
+
+- **[S] arrêté et décret du 30 avril 1956 (JORT 35/1956), socle du SMAG** — Lire l'arrêté et le décret et les écrire comme socle du SMAG. _(chapitre : marche_travail/_salaire_minimum.qmd ; source : lisible ou OCR (corpus) ; statut : ouvert)_
+- **[S] Décret du 29 mars 1956 (JORT n° 27/1956, p. 499)** — Lire le décret qui intègre à la fonction publique les agents des fonds des accidents du travail. _(chapitre : caisses, _histoire ; source : image ; statut : ouvert)_
+
+## 1950
+
+- **[S] Décret du 6 avril 1950 (18 djoumada II 1369) fixant la période légale de couches (art. 79 de la loi n° 60-30)** — Trouver et lire le décret, créer sa clé de bibliographie ; l'arrêté de la liste des maladies de longue durée (art. 72) est dans le même cas. _(chapitre : prestations_sociales/_autres_risques.qmd ; source : à localiser (jort_cache / corpus 1950, couverture incertaine) ; statut : ouvert)_
+
+
+# Déjà faits (à retirer du backlog)
+
+- 2024 — Art. 42 de la loi n° 2023-13 (LF 2024), suspension de TVA de la CTN jusqu'au 31 déc. 2026 _(_transports.qmd:808 registre r-ep-ctn-2024 (art. 42, p. 6446 édition arabe, jusqu'au 31 déc. 2026))_
+- 2023 — Loi n° 2023-12 (LFC 2023, art. unique, JORT n° 136, p. 3129) : relèvement du plafond de garantie de 7 000 à 8 000 MD _(_garanties.qmd:229 registre r-ep-pl-2023-2 (@lfc-2023, art. unique, p. 3129))_
+- 2021 — décrets-lois 2020-1 et 2020-2 (JORT 2020/2021), règle de date d'effet _(_temps_travail.qmd l.216, l.326, l.436 (dl2020-1, decret-loi2020-2))_
+- 2019 — LF 2019 (loi 2018-56) art. 35 : régime fiscal privilégié, non-résidents (épargne) _(_impot_revenu.qmd l.1564 r-epargne-nr-2019, art. 35 pp. 5449-5450)_
+- 1998 — Loi n° 98-91 (JORT 89/1998) ; modificatifs de la loi n° 60-30 _(caisses/_comptes_longue_periode.qmd l.198-201 ; prestations_sociales/_autres_risques.qmd cite loi98-91)_
+- 1998 — Décret 98-952 (Jo03598) : tarif pétrolier au droit de consommation _(_droits_consommation.qmd l.419 ; tarif pétrolier 1999 décret 99-894 l.421 ; section 'tarif figé depuis 1999' l.450)_
+- 1996 — Loi n° 96-101 du 18 novembre 1996, dépôt du JORT n° 94 _(_autres_risques.qmd l. 50 : « dépôt du Journal officiel n° 94, le 26 novembre 1996 » ; backlog l. 1296 : dates levées)_
+- 1992 — Arrêté du 18 août 1992 : prix de la bouteille de gaz (3,800 D) _(_carburants.qmd:271 (ligne du 4 août 1992, 3,800 D, arrêté du 18 août, p. 1125) ; le backlog l. 3567 est périmé)_
+- 1990 — Décret n° 74-499 et décret n° 90-1455 : conditions d'orphelin (âge, études, ressources), règles de survivants du RSNA (remariage, cumul) _(_secteur_prive.qmd l. 514-531 (tbl-rsna-survivants engendré, sources decret90-1455 art. 1) ; backlog l. 872 « à la main » périmé)_
+- 1989 — Décrets n° 76-3 et n° 89-1890 (organisation de la CNRPS) _(caisses/references.json : decret76-3 « Lu à l'image » (art. 7, 9-15), decret89-1890 « Lu à l'image » ; cités _chronologie.qmd l.20 et l.31, _comptes_regimes.qmd l.13-21)_
+- 1982 — Rectificatif du décret n° 82-1030 (19 octobre 1982) _(_secteur_prive.qmd l. 1741 (rectificatif publié le 19 octobre 1982), l. 1783-1785 « Les rectificatifs des décrets n° 74-499 et 82-1030 sont lus »)_
+- 1975 — Modificatifs de la loi n° 60-30 avant 1996 (lois 61-9, 63-26, 64-31, 70-34, 75-82, 95-101) _(caisses/_statut_cadre.qmd l.27 ; _comptes_longue_periode.qmd l.198-200 ; restent les lois 80-36, 81-5, 82-71, 86-75, 88-38, 96-65)_
+- 1969 — SNCFT : loi n° 69-31 du 9 mai 1969 (statuts, JORT n° 19/1969, p. 581-584) _(_transports.qmd registre r-ep-sncft-1969 (loi 69-31, art. 1-3 et statuts art. 1-26, p. 581-584))_
+- 1968 — Décret 68-104 du 20 avril 1968 _(r-pi-a-1969 et r-te-s-1968 citent decret-68-104-taux pp. 417-420 ; TODO timbre l.51 sur le jour d'effet)_
+- 1965 — Loi n° 65-17 du 28 juin 1965 (étudiants) _(cotisations_sociales/_regimes.qmd l.217-241 : loi 65-17 rédigée ; backlog l.1920-1922)_
+
+
+# Incertains
+
+- 2023 — Décret-loi 2023-9 du 8 mars 2023 et sort de l'approbation depuis le 14 mars 2023 — Établir qui vote le budget communal et qui arrête un tarif depuis le décret-loi (circulaires, lois de finances). _(Décret-loi lu et daté (_histoire.qmd:350-362) ; TODO _budgets.qmd:242 et _taxes_redevances.qmd:216 ouverts)_
+- 2021 — Pages d'arrêtés de 1994, 2004, 2013 et 2021 de l'index jort_cache.db décalées d'une page ; fascicules n° 68 et n° 86 de 2004 à couche texte décalée — Décider si le décalage d'une page de jort_cache justifie une correction globale de l'index et corriger les pages citées _(mentionné seulement dans backlog-precis.md l.2513-2514 ; pas de TODO dans les .qmd ; relève de l'outillage, non vérifiable dans les chapitres)_
+- 2021 — Décret gouvernemental n° 2021-327 (23 ou 19 mai 2021) — Harmoniser la date d'effet du décret 2021-327 entre les chapitres. _(_habitat.qmd l.74 donne 23 mai 2021 (dépôt 18 mai + 5 jours) ; aucune autre date trouvée dans entreprises_publiques ; prestations_sociales non confrontée)_
+- 2020 — Décrets de cession à la SPROLS 2016-2020 — Vérifier et verser les décrets de cession au dinar symbolique à la SPROLS de 2016 à 2020. _(registre SPROLS l.143-152 a 2017 et 2020 ; je n'ai pas identifié lesquels sont des cessions symboliques)_
+- 2019 — Forfait : art. 16 de la LF 2019 (problème de lecture des éditions) — Lire l'art. 16 de la LF 2019 relatif au forfait (le chapitre ne cite que l'art. 16 pour le taux de 13,5 %). _(grep dans _impot_revenu.qmd : art. 16 LF 2019 n'apparaît que pour le taux de 13,5 % (l.763) ; aucun article forfait de 2019)_
+- 2017 — Fiche r-lob-cl-seuil-approbation-apres-2017 : seuil de l'art. 16 de la loi 75-35 postérieur au décret gouvernemental 2017-758 — Chercher le décret fixant le seuil d'approbation ministérielle des budgets après 2017. _(RECHERCHE ouverte _budgets.qmd:269)_
+- 2015 — Décret d'application de l'art. 15 de la loi n° 2014-59 (fonds de restructuration et de modernisation du secteur bancaire) — Chercher si le décret fixant les interventions du fonds a été publié. _(_restructuration.qmd:99 marqueur RECHERCHE r-ep-fonds-modernisation-bancaire-decret ; résultat inconnu)_
+- 2006 — Avis du Conseil constitutionnel n° 31-2006 et 53-2006 (JORT pp. 3872-3880) et loi 2006-69 — Vérifier que les avis ont été lus à l'image ; ils sont cités avec pages mais le backlog les dit non lus. _(ligne du 10 novembre 2006 (l.251) cite loi-2006-69 art. 2, 3, 5 p. 3869 et avis-cc-31-2006 p. 3874-3876, avis-cc-53-2006 p. 3877-3880 ; pas de TODO sur ces avis)_
+- 1993 — Garanties dans les décrets-lois de finances rectificatives ; prêts garantis de l'ONH, de l'OC et de la STIR dans des fascicules sans couche texte — Relire à l'image les fascicules sans couche texte pour les garanties de l'ONH, de l'OC et de la STIR, et vérifier les décrets-lois rectificatives. _(_garanties.qmd:114 RECHERCHE r-ep-plafond-garantie-1995-2015 ouverte ; tableau du plafond 1959-2026 écrit ; périmètre restant des décrets-lois rectificatives non établi)_
+- 1989 — Fascicules d'avant 1990 de l'histoire ; décrets annuels de répartition des crédits (seul celui du 21 décembre 2009 est cité) — Lire à l'image les fascicules d'avant 1990 de l'histoire et les décrets de répartition des crédits non encore lus (budgets citoyens 2014-2018 écartés, probablement hors corpus) _(ligne vague du backlog (l.2539-2540) ; _depense.qmd l.80-84 lit le décret de 2009 ; aucun TODO précis sur les fascicules d'avant 1990 ; ticket à ouvrir par l'humain)_
