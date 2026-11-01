@@ -9042,7 +9042,7 @@ entries:
 
   - id: district
     acronyme: null
-    statut: provisoire  # FR et AR : loi organique n° 2025-4, art. 1 (« conseils de districts », « مجالس الأقاليم ») ; CCL 2018 (AR), art. 2 et 356 (abrogé le 18 mars 2025) ; regroupement de gouvernorats : décret n° 2023-589, art. 1
+    statut: provisoire  # FR et AR : loi organique n° 2025-4, art. 1 (« conseils de districts », « مجالس الأقاليم ») ; CCL 2018 (AR), art. 2 et 356 (abrogé le 14 mars 2025) ; regroupement de gouvernorats : décret n° 2023-589, art. 1
     references: [loi-org-2018-29-ccl, decret2023-589]
     source_definition: {ref: decret2023-589, locator: "art. 1"}
     source_traduction: {ref: loi-org2025-4, locator: "art. 1"}
