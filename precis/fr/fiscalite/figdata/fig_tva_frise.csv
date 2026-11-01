@@ -1,8 +1,8 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-01
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-24
 # séries (tunisia_data) : tva-frise-reformes
-# sources (citation) : @loi-88-61-tva, @lf-1993, @lf-1995, @lf-1996, @decret-97-1339-tva-carburants, @lf-1998, @lf-1999, @lf-2010, @lf-2014, @lf-2015, @lf-2016, @loi-2006-80-reduction-taux, @loi-avantages-fiscaux-2017, @dl2021-21-lf2022
+# sources (citation) : @loi-88-61-tva, @lf-1993, @lf-1995, @lf-1996, @lf-1998, @lf-1999, @lf-2010, @lf-2014, @lf-2015, @lf-2016, @loi-2006-80-reduction-taux, @loi-avantages-fiscaux-2017, @dl2021-21-lf2022
 # fiches : 
-# méthode/hypothèses : Les jalons reprennent les registres du chapitre ; les étapes et les ajustements n'y figurent pas. Une loi a une date d'effet non établie (forfaits de 1993) : elle est posée à l'année de la loi. Le classement en rupture de 2014 (achats en espèces) et de 2016 (facture électronique) attend confirmation.
+# méthode/hypothèses : Les jalons reprennent les registres du chapitre ; les étapes et les ajustements n'y figurent pas. Deux lois ont une date d'effet non établie (forfaits de 1993, retrait du tableau B prévu en 1996) : elles sont posées à l'année de la loi. Le classement en rupture de 2014 (achats en espèces) et de 2016 (facture électronique) attend confirmation.
 # note : Les réformes de la TVA, 1988-2026 : périodes du chapitre, naissance des dispositifs et ruptures désignées par les registres
 Ligne,Nature,État,Date d'effet,Libellé,Ce que dit le registre,Ancre du registre,Texte,Article
 Périodes du chapitre,periode,établi,1988-1990,mise en place,code de la TVA de 1988 et entrée en vigueur par étapes,sec-tva-mise-en-place,,
@@ -16,7 +16,7 @@ Champ et taux,rupture,établi,1996-07-01,commerce de détail,commerce de détail
 Champ et taux,rupture,établi,2007-01-01,fin du taux de 29 %,taux de 29 % supprimé ; opérations à 10 % → 12 %,r-tva-perimetre-2007,loi-2006-80-reduction-taux,art. 13 17 et 19
 Champ et taux,rupture,établi,2016-01-01,champ élargi,plusieurs opérations exonérées → retirées du tableau A ; tableaux A B et B bis refondus,r-tva-champ-2016,lf-2016,art. 30 31 33 et 92
 Réductions et suspensions par décret,naissance,établi,1988-07-01,pouvoir de réduire,pouvoir de réduire ou de suspendre la taxe par décret pour l'année civile ; électricité gaz et huiles de pétrole à 6 %,r-tva-reductions-1988,loi-88-61-tva,art. 8 et tableau B
-Réductions et suspensions par décret,rupture,établi,1997-07-16,hors du taux réduit,électricité et produits pétroliers au tableau B → retrait du tableau à compter du 16 juillet 1997,r-tva-reductions-1996,decret-97-1339-tva-carburants,art. 1 et 2
+Réductions et suspensions par décret,rupture,date non établie,1996,hors du taux réduit,électricité et produits pétroliers au tableau B → retrait du tableau prévu à une date fixée par décret,r-tva-reductions-1996,lf-1996,art. 40
 Réductions et suspensions par décret,rupture,établi,2015-01-01,inscription au code,réductions reconduites chaque année → inscrites au tableau B bis à 12 %,r-tva-reductions-2015,lf-2015,art. 36 et 46
 Forfaits,rupture,date non établie,1993,impôt forfaitaire libératoire,taxe forfaitaire annuelle et droit forfaitaire simplifié → forfait unique dans l'impôt sur le revenu libératoire de la TVA,r-tva-forfaits-1993,lf-1993,art. 100 à 105
 Droit à déduction,naissance,établi,1988-07-01,déduction globale,déduction globale équipements et bâtiments compris ; exclusion des voitures de tourisme et des achats auprès des forfaitaires,r-tva-deduction-1988,loi-88-61-tva,art. 9 et 10
