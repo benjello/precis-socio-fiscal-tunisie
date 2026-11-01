@@ -2967,8 +2967,9 @@ en donnait trois.
     (loi n° 2025-9 au 24 mai 2025, art. 117) » (#482), non fusionnée à la rédaction de cette ligne ;
   - *références* : Chemin et Wasmer 2009 (fiche `eco-temps-de-travail.md`) sans clé ni PDF, non
     citée par la section « Ce qu'en dit l'économie » ;
-  - *date dérivée* : loi n° 2021-37 au 30 janvier 2022 (six mois après la publication du
-    30 juillet 2021, art. 29) : 30 janvier 2022 retenu de quantième à quantième, TODO levé le 1er novembre 2026 (PR #669) ; 31 janvier si le jour de la publication n'est pas compté, à arbitrer en revue ;
+  - *date dérivée* : loi n° 2021-37 au 30 janvier 2022, **tranché le 1er novembre 2026** : la clause
+    de l'art. 29 (« six mois à compter de sa publication », JORT n° 68 du 30 juillet 2021) se calcule
+    de quantième à quantième (`AGENTS.md`, « Dater », cas 1) ;
   - *textes non identifiés*, fiches versées à `docs/recherches.yml` le 20 octobre 2026 avec leurs
     ancres : `r-mt-duree-40h-decrets`, `r-mt-art107-jours-feries`,
     `r-mt-art121-cotisations-conges`, `r-mt-protectorat-duree-conges` ;

@@ -1550,9 +1550,15 @@
     couverture: 'titres de jort_cache jusqu''au 29 octobre 2026, dernière notice indexée : aucun candidat depuis le 2 octobre 2026 aux requêtes de la fiche (FTS, LIKE, arabe), rejouées par recherches.py relancer, et aucun décret d''application depuis le 25 décembre 2020. Plein texte, par le même script de circonstance (pdftotext, texte arabe normalisé, motifs fixes), sur les fascicules de 2026 n° 98 à 105 en FR et AR et n° 106 en FR (30 octobre 2026 ; n° 106 AR absent du corpus) : aucune réponse à « appui à la décentralisation », « دعم اللامركزية », « الدعم المالي السنوي », « subventions annuelles », « critères de répartition », « مقاييس توزيع » ni « الدعم السنوي ». Lacunes de la passe du 9 octobre closes : 2022 n° 35 et 91, 2024 n° 120 et 125, 2025 n° 67 et 70 sont des numéros de deux pages (une décision, un décret, des cessations de fonctions), lus sur leur couche texte sans réponse ; 2022 n° 92 (numéro spécial du 18 août 2022) : édition française de 20 pages lue sur sa couche texte, édition arabe de 50 pages océrisée en entier (tesseract ara, 150 dpi), sans réponse. Les tableaux « B » (comptes spéciaux du Trésor) des lois de finances pour 2022 à 2026 sont lus à l''image : aucune ligne pour le fonds. Le rapport du ministère des Finances sur les fonds spéciaux joint au projet de loi de finances pour 2022 (tunisia-data, 128 pages sans couche texte, océrisé en arabe, chiffres lus à l''image) donne le décret comme à prendre. Lacunes : numéros absents du corpus (2022 n° 132, 2023 n° 122, 2026 n° 58, 2026 n° 106 AR), existence non vérifiée sur pist.tn.'
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'plein texte (pdftotext, NFKC) des éditions française et arabe des fascicules de 2022 n° 132, de 2023 n° 122 (23 octobre 2023) et de 2026 n° 58 (8 juin 2026), présents au corpus local malgré la mention d''absence des passes précédentes, aux motifs « appui à la décentralisation », « péréquation », صندوق دعم اللامركزية et التعديل والتسوية : seul le n° 122 de 2023 répond, deux fois, pour la cessation de fonctions du directeur général du centre de formation et d''appui à la décentralisation (décrets n° 2023-668 et 2023-669), sans rapport avec le fonds. Le n° 106 de 2026 en arabe reste absent du corpus.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
   a_faire:
   - chercher les rapports sur les fonds spéciaux joints aux projets de loi de finances pour 2023 à 2026 (montant du fonds d'appui)
-  - relancer --sonder-pist pour 2022 n° 132 et 2023 n° 122 et 2026 n° 58 et 2026 n° 106 AR
+  - relancer --sonder-pist pour 2026 n° 106 AR
 
 - id: r-fl-loi-competences-partagees
   objet: loi fixant les conditions et procédures d'exercice des compétences partagées (code des collectivités locales, art. 13, al. 2) ou loi de transfert de compétences (art. 16)
