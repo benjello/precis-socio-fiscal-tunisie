@@ -481,11 +481,11 @@ MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août
 # Dates de droit : (abscisse, numéro, libellé). Elles situent les décomptes dans le temps du
 # droit ; elles n'établissent aucun lien de cause.
 DROIT = [
-    (2020 + (4 + 24 / 31) / 12, "1", "25 mai 2020 : prestations de l'Amen social ouvertes"),
+    (2020 + (4 + 20 / 31) / 12, "1", "21 mai 2020 : prestations de l'Amen social ouvertes"),
     (2022 + (3 + 7 / 30) / 12, "2", "8 avril 2022 : allocation des moins de six ans "
      "(arrêté publié) ; programme pilote des 6 à 18 ans la même année"),
     (2025.0, "3", "1er janvier 2025 : allocation des 6 à 18 ans instituée"),
-    (2025 + (10 + 8 / 30) / 12, "4", "9 novembre 2025 : montant de l'allocation des 6 à 18 ans "
+    (2025 + (10 + 4 / 30) / 12, "4", "5 novembre 2025 : montant de l'allocation des 6 à 18 ans "
      "exécutoire"),
 ]
 # Rupture de série : l'indicateur des 6 à 18 ans des rapports d'exécution est créé le
@@ -873,7 +873,7 @@ def _smig_mensuel(date_iso: str) -> tuple[float, float]:
     return float(derniere["smig_48h_mensuel"]), float(derniere["smig_40h_mensuel"])
 
 
-def markdown_plafonds_dinars(dates: tuple[str, ...] = ("2020-05-25", "2026-01-01")) -> str:
+def markdown_plafonds_dinars(dates: tuple[str, ...] = ("2020-05-21", "2026-01-01")) -> str:
     """Tableau Markdown : plafonds de ressources en dinars par mois, aux deux régimes du
     salaire minimum, à chaque date."""
     entete = ["Composition du ménage", "Plafond<br>(salaires minimums)"]
