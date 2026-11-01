@@ -652,8 +652,13 @@
     couverture: 'jort_cache, intitulés seuls, FR et AR : lois dont l''intitulé contient « 60-30 » ou « عدد 30 لسنة 1960 », signées depuis le 1er janvier 2007 : la seule loi n° 2007-51 du 23 juillet 2007 (art. 105 et 45, lue) ; intitulés depuis le 1er octobre 1996 sur les allocations familiales, la majoration pour salaire unique et les crèches : aucun texte de taux ni d''assiette après le décret n° 96-1906. Limites : une modification par une loi de finances ou par une loi dont l''intitulé ne nomme pas la loi n° 60-30 échappe à ces requêtes ; lois de finances de 2007 à 2026 non dépouillées. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 5.5.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Texte intégral des articles des lois de finances et des lois de finances rectificatives ou complémentaires de 2007 à 2026 (lois n° 2006-85 à n° 2025-17, y compris les décrets-lois de 2021 et 2022), cherché dans le corpus local (couche texte des fascicules et des recueils ; OCR de la fin des fascicules des lois de finances 2021 à 2023 et des lois rectificatives 2007, 2021 à 2023 à 200 dpi) : motifs « 60-30 », « 1960 », « régimes de sécurité sociale », « allocations familiales », « salaire unique », « crèche » et, pour la loi de finances 2026 (édition arabe seule), « المنح العائلية », « الأجر الوحيد », « تنظيم أنظمة الضمان الاجتماعي ». Aucun article ne cite la loi n° 60-30 ni ne touche les articles 52, 54 ou 61. Limites : les tableaux budgétaires en fin de fascicule ne sont pas lus ; les textes qui ne sont pas des lois de finances ne sont pas cherchés par ce motif ; une modification libellée sans nommer la loi ni ses intitulés échappe à la recherche.'
+    couvert_jusqu_au: 2025-12-31
+    resultat: aucun
   a_faire:
-  - prolonger le dépouillement des lois modifiant les articles 52, 54 et 61 de la loi n° 60-30 de 2007 à 2026 (D12)
   - 'requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir'
 
 - id: r-lf2025-art17-decret
@@ -920,7 +925,6 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
-  - lire le décret gouvernemental n° 2019-1130 (JORT n° 99 de 2019, p. 4532-4533)
   - rejouer la requête 60-30 depuis 1960 sur les décrets et arrêtés
 
 - id: r-am-extension-loi2002-32
@@ -4239,6 +4243,12 @@
     sources: [jort_cache]
     couverture: 'jort_cache, notices publiées de 2014 au 2 octobre 2026 ; LIKE sur titre et objet (« %1526%2014% »), LIKE sur titre (« %banque de donnees sur les familles% »), LIKE sur titre, deux conditions jointes par AND (« %unite de gestion par objectifs% » et « %affaires sociales% »), FTS « "banque de donnees" AND necessiteuses », LIKE arabe sur les titres de l''index (« %بنك معطيات% », « %العائلات المعوزة ومحدودة الدخل% », « %وحدة تصرف حسب الأهداف%الشؤون الاجتماعية% »), 2018-2026 pour ce dernier. Résultats : décrets n° 2014-1526 et 2018-626, décret n° 2018-400 (autre unité), art. 96 de la loi n° 2025-17 (fonds des orphelins). Miroir iort non interrogé ; plein texte des fascicules non parcouru ; fascicules inconnus de la base non sondés. Note : docs/notes/prestations-2018-626-lf2025-art26.md, § 1.4.'
     couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Texte intégral des fascicules français du Journal officiel de 2018, 2019 et 2020 du corpus local (couche texte) : motifs « 2014-1526 », « banque de données sur les familles » et « unité de gestion par objectifs au ministère des affaires sociales ». Seul le décret gouvernemental n° 2018-626 (JORT n° 63 de 2018) porte les deux premiers motifs ; le troisième ne renvoie qu''au décret gouvernemental n° 2018-400 (projet de réforme de la gestion du budget), sans rapport. Aucun texte postérieur ne prolonge, modifie ou abroge le décret n° 2014-1526. Limites : fascicules dont la couche texte est incomplète non rejoués à l''image ; les années 2021 à 2026 ne sont couvertes que par les intitulés (passe du 23 octobre 2026) ; éditions arabes non lues.'
+    couvert_jusqu_au: 2020-12-31
     resultat: aucun
   a_faire: [rejouer les termes arabes sur le miroir iort ; parcourir le plein texte 2018-2020]
 
