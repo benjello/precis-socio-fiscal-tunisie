@@ -16,7 +16,7 @@ Le chapitre couvre trois fonctions, qui relèvent de deux **sous-secteurs juridi
 
 - **Pas de corps, pas de grille.** Ces fonctions ne forment pas un corps : le décret de 2020 sur les gouverneurs envisage d'ailleurs, parmi d'autres, le cas du « gouverneur ayant la qualité d'agent public » ([2020, art. 8](#r-fp-gouv-2020)). La rémunération n'est donc pas lue sur la grille des salaires, sauf par référence : un indice en 1973 pour les gouverneurs, le grade d'origine pour le député qui le choisit depuis 1989.
 - **Des règles de non-cumul.** Le fonctionnaire élu député ne cumule pas son traitement et l'indemnité parlementaire ; le gouverneur dont la rémunération d'origine est plus élevée peut la conserver, sans cumul (@sec-fp-parlementaires ; @sec-fp-gouverneurs).
-- **Ce qui est servi après la fonction.** Les pensions des membres du gouvernement, des députés et des gouverneurs relèvent de régimes spéciaux exposés au livre « Retraites » ([Les régimes spéciaux](../retraites/_secteur_public.html#sec-cnrps-regimes-speciaux)).
+- **Ce qui est servi après la fonction.** Les pensions des membres du gouvernement, des députés et des gouverneurs relèvent de régimes spéciaux exposés au livre « Retraites » ([Les régimes spéciaux](../retraites/_secteur_public.html#sec-cnrps-regimes-speciaux)). Les avantages en nature des anciens Premiers ministres et des anciens présidents des chambres sont exposés à la section @sec-fp-anciens.
 
 <!-- TODO (architecte) : chapitre écrit sans plan propre (le plan des régimes spéciaux, § 1, renvoyait le plan de ce chapitre à une passe séparée) ; à revoir : chapitre court ou section du régime indiciaire (plan, § 9). Le _quarto.yml arabe recevra ce chapitre une fois sa traduction livrée. -->
 <!-- TODO (documentaliste) : aucune masse salariale ni aucun effectif publiés pour ces fonctions n'ont été collectés ; budget des missions « Assemblée » et « Présidence du gouvernement » dans les lois de finances. -->
@@ -123,7 +123,31 @@ Le texte qui fixe le traitement, les indemnités et les avantages des ministres 
 
 <!-- RECHERCHE r-remuneration-membres-gouvernement : décret, publié ou non, fixant le traitement, les indemnités et les avantages des membres du gouvernement, et ses modificatifs (voir docs/recherches.yml) -->
 
-<!-- TODO (documentaliste) : décret n° 2015-658 du 3 juillet 2015 (JORT n° 53 de 2015, édition arabe seule ; intitulé arabe seul), qui modifie un décret du 15 août 1998 fixant les indemnités et avantages du président de la République : le fichier local du fascicule arabe est corrompu (non ouvrable) et le miroir iort ne porte que l'intitulé ; à relire sur un exemplaire sain, puis clé à créer (bibliographe) ; loi n° 87-83 (loi de finances pour 1988), art. 60 et 61, et loi n° 2005-55 : indemnité viagère et avantages des anciens présidents de la République, des anciens Premiers ministres et des anciens présidents des chambres — à verser au livre « Retraites » (docs/notes/regimes-speciaux-gouvernement-diplomates-universitaires-2026-10-23.md, § 1.5 et § 5). -->
+<!-- TODO (documentaliste) : décret n° 2015-658 du 3 juillet 2015 (JORT n° 53 de 2015, édition arabe seule ; intitulé arabe seul), qui modifie un décret du 15 août 1998 fixant les indemnités et avantages du président de la République : le fichier local du fascicule arabe est corrompu (non ouvrable) et le miroir iort ne porte que l'intitulé ; à relire sur un exemplaire sain, puis clé à créer (bibliographe) ; loi n° 87-83 (loi de finances pour 1988), art. 60 et 61, et loi n° 2005-88 : indemnité viagère et avantages des anciens présidents de la République — à verser ici, section sec-fp-anciens, après lecture (docs/notes/regimes-speciaux-gouvernement-diplomates-universitaires-2026-10-23.md, § 1.5 et § 5) ; le domicile des avantages en nature des anciens titulaires est ce chapitre, non le livre « Retraites ». -->
+
+## Les anciens Premiers ministres et présidents des chambres {#sec-fp-anciens}
+
+Depuis la [loi du 18 juillet 2005](#r-fp-anciens-2005), les Premiers ministres, les présidents de la Chambre des députés et les présidents de la Chambre des conseillers reçoivent des avantages en nature dès leur mise à la retraite, à condition d'avoir exercé leurs fonctions au moins sept ans. Ces avantages ne sont pas une pension : ils relèvent des fonctions politiques, non des régimes spéciaux de retraite du livre « Retraites ».
+
+- **Les Premiers ministres.** Moyens de transport et sécurité.
+- **Les présidents des chambres.** Moyens de transport.
+- **Un contenu fixé par décret.** La loi renvoie à un décret pour la nature et l'étendue des avantages, dont la dépense est imputée sur les crédits du Premier ministère. Ce décret n'est pas identifié ici.
+- **Une suspension.** Les avantages sont suspendus si le bénéficiaire est nommé ou élu à une fonction publique, ou s'il est établi qu'il exerce une activité professionnelle lucrative.
+- **La loi de finances pour 1988.** L'[article 6](#r-fp-anciens-2005) remplace deux sous-paragraphes de chacun des articles 60 et 61 de cette loi : les moyens de transport indispensables, les chauffeurs, les gens de maison et le personnel de sécurité y sont désormais fixés par décret.
+
+<!-- RECHERCHE r-anciens-pm-avantages-decret : décret fixant les avantages en nature des anciens Premiers ministres et des anciens présidents des chambres, en application de l'art. 3 de la loi n° 2005-55 (voir docs/recherches.yml) -->
+
+:::: {.chronologie-repliable titre="Anciens Premiers ministres et présidents des chambres : texte et articles, 2005"}
+
+| Effet | Portée | Texte et articles | Ce que le texte dispose |
+|---|---|---|---|
+| []{#r-fp-anciens-2005}publiée le [19 juillet 2005]{.insecable} | texte fondateur | loi n° 2005-55 du 18 juillet 2005, publiée au *Journal officiel* n° 57 du 19 juillet 2005 [@loi2005-55, art. 1 à 6, p. 1750] | après sept ans de fonctions au moins : avantages en nature de transport et de sécurité pour les Premiers ministres, de transport pour les présidents de la Chambre des députés et de la Chambre des conseillers, dès la mise à la retraite (art. 1 et 2) ; fixés par décret (art. 3) ; dépenses sur les crédits du Premier ministère (art. 4) ; suspendus en cas de fonction publique ou d'activité lucrative (art. 5) ; articles 60 et 61 de la loi n° 87-83 modifiés (art. 6) |
+
+: Les avantages des anciens Premiers ministres et présidents des chambres, texte par texte, 2005 {#tbl-fp-anciens-textes}
+
+La loi n'énonce pas de date d'effet : la colonne « Effet » donne sa date de publication.
+
+::::
 
 ## Les prélèvements {#sec-fp-prelevements}
 
