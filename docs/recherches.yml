@@ -4781,6 +4781,24 @@
   - sources parlementaires (débats budgétaires
   - mission « Présidence du gouvernement »)
 
+- id: r-anciens-pm-avantages-decret
+  objet: décret fixant les avantages en nature des anciens Premiers ministres et des anciens présidents de la Chambre des députés et de la Chambre des conseillers, pris en application de l'art. 3 de la loi n° 2005-55 du 18 juillet 2005
+  ou: [precis/fr/remunerations_publiques/_fonctions_politiques.qmd#sec-fp-anciens]
+  requetes:
+    titres_fts:
+    - titre:(avantages) AND titre:("premiers ministres" OR "premier ministre" OR "chambre des deputes" OR "chambre des conseillers")
+    titres_like: ['%2005-55%']
+    iort_ar: [الوزراء الأولين, رؤساء مجلس النواب]
+    depuis: 2005-07-19
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'titres et objets de jort_cache, 19 juillet 2005 au 2 octobre 2026 (FTS français ; LIKE « 2005-55 » ; LIKE arabe « رؤساء مجلس النواب » sur le miroir iort) : seuls la loi n° 2005-55 et l''avis n° 33-2005 sur son projet ; aucun décret d''application. Plein texte, fascicules arabes et fascicules de 2024-2026 inconnus de jort_cache non parcourus ; --sonder-pist non lancé.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte des fascicules, décrets non publiés au JORT]
+
 - id: r-indemnite-parlementaire-decret
   objet: décret fixant les indemnités mensuelles du président et des membres de la Chambre des députés en application de l'art. 72 de la loi de finances pour 1989 (loi n° 88-145), puis textes fixant l'indemnité des membres de la Chambre des conseillers (loi n° 2005-54), de l'Assemblée des représentants du peuple (2014-2021) et des assemblées élues en 2022-2024
   ou: [precis/fr/remunerations_publiques/_fonctions_politiques.qmd#sec-fp-parlementaires]
