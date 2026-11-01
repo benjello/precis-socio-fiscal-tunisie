@@ -334,7 +334,7 @@
           ]
         ]
       },
-      "note": "citation-key: gbo-depenses-fiscales\nCinq millésimes de rapports annexés aux projets de loi de finances 2021 à 2025 (couvrant 2017-2023), dont trois exploités en série traitée : annexe n° 14 du PLF 2021, en français (texte lu), exercices 2017-2019 ; annexe n° 12 du PLF 2024, en arabe, exercices 2020-2022 ; annexe n° 12 du PLF 2025, en arabe, exercices 2021-2023. Les deux autres — PLF 2022 (annexe n° 12, exercices 2018-2020 à confirmer) et PLF 2023 (annexe n° 8 à confirmer, exercices 2019-2021 à confirmer) — ne sont lus qu'à leur introduction (p. 7, image) et ont leur propre clé : minfin-depenses-fiscales-plf2022 et minfin-depenses-fiscales-plf2023. Aucun rapport avant le PLF 2021 repéré sur le portail de la gestion budgétaire par objectifs (consulté le 5 octobre 2026). Le rapport annexé au PLF 2026 n'a pas été cherché. RÉSERVE DE PÉRIMÈTRE : les rapports 2024 et 2025 excluent les dépenses fiscales sur les médicaments et les engrais (note de bas de page, p. 7), que le rapport 2021 compte (274,5 + 249,9 MD en 2019) ; la couture 2019/2020 est une rupture de périmètre. Chaque rapport recense les dispositifs dérogatoires un par un — 347 en 2019, 349 en 2023 — avec un code à neuf chiffres, la forme de l'avantage, l'intitulé et le coût. Consulté le 9 septembre 2026."
+      "note": "citation-key: gbo-depenses-fiscales\nCinq millésimes de rapports annexés aux projets de loi de finances 2021 à 2025 (couvrant 2017-2023), dont trois exploités en série traitée : annexe n° 14 du PLF 2021, en français (texte lu), exercices 2017-2019 ; annexe n° 12 du PLF 2024, en arabe, exercices 2020-2022 ; annexe n° 12 du PLF 2025, en arabe, exercices 2021-2023. Les deux autres — PLF 2022 (annexe n° 12, exercices 2018-2020 à confirmer) et PLF 2023 (annexe n° 8 à confirmer, exercices 2019-2021 à confirmer) — ne sont lus qu'à leur introduction (p. 7, image) et ont leur propre clé : minfin-depenses-fiscales-plf2022 et minfin-depenses-fiscales-plf2023. Aucun rapport avant le PLF 2021 repéré sur le portail de la gestion budgétaire par objectifs (consulté le 5 octobre 2026). Le rapport annexé au PLF 2026 n'a pas été cherché. RÉSERVE DE PÉRIMÈTRE : les rapports 2024 et 2025 excluent les dépenses fiscales sur les médicaments et les engrais (note de bas de page, p. 7), que le rapport 2021 compte (274,5 + 249,9 MD en 2019) ; la couture 2019/2020 est une rupture de périmètre. Chaque rapport recense les dispositifs dérogatoires un par un — 347 en 2019, 349 en 2023 — avec un code à neuf chiffres, la forme de l'avantage, l'intitulé et le coût. Consulté le 9 septembre 2026.\nMise à jour du 1er novembre 2026 : les rapports PLF 2022 et PLF 2023 sont lus au-delà de l'introduction (couche texte arabe). Exercices couverts : 2019 et 2020 pour le premier, 2019 à 2021 pour le second. Ils comptent les médicaments ; le rapport PLF 2025 donne comme raison de leur exclusion « plus de précision dans les chiffres » (note de bas de page, p. 7). Voir les notes de leurs clés."
     },
     {
       "id": "lapresse2025",
@@ -2053,7 +2053,7 @@
         ]
       },
       "URL": "http://www.gbo.tn/sites/default/files/2022-01/ANNEXE_12%20D%C3%A9penses%20fiscales.pdf",
-      "note": "citation-key: minfin-depenses-fiscales-plf2022\nRapport non archivé dans tunisia-data ; URL ouverte le 5 octobre 2026 (HTTP 200, application/pdf), revérifiée le 6 octobre 2026. Rapport en arabe ; seule l'introduction (p. 7) a été lue, À L'IMAGE ; les agrégats en sont repris dans la note documentaire § 2.2. Année d'édition et exercices couverts à confirmer. 101 p. Exercice 2020 : 4 225 MD d'avantages fiscaux (3,6 % du PIB), 4 927 MD avec les avantages financiers.\nCOPIE LOCALE (6 octobre 2026) : tunisia-data/data/raw/gbo/depenses_fiscales_LF2022.pdf, 101 p., SHA-256 924a50d0476c163ca580a2479662b1df4e6eeb170347f5d92323c46bec45b5e3 ; PDF produit le 14 janvier 2022 ; numéro d'annexe (12) tiré du nom du fichier et de la liste du portail."
+      "note": "citation-key: minfin-depenses-fiscales-plf2022\nRapport non archivé dans tunisia-data ; URL ouverte le 5 octobre 2026 (HTTP 200, application/pdf), revérifiée le 6 octobre 2026. Rapport en arabe ; seule l'introduction (p. 7) a été lue, À L'IMAGE ; les agrégats en sont repris dans la note documentaire § 2.2. Année d'édition et exercices couverts à confirmer. 101 p. Exercice 2020 : 4 225 MD d'avantages fiscaux (3,6 % du PIB), 4 927 MD avec les avantages financiers.\nCOPIE LOCALE (6 octobre 2026) : tunisia-data/data/raw/gbo/depenses_fiscales_LF2022.pdf, 101 p., SHA-256 924a50d0476c163ca580a2479662b1df4e6eeb170347f5d92323c46bec45b5e3 ; PDF produit le 14 janvier 2022 ; numéro d'annexe (12) tiré du nom du fichier et de la liste du portail.\nRapport lu le 1er novembre 2026 dans la copie locale (couche texte arabe, glyphes à normaliser en NFKC ; numéro imprimé en pied de page). Exercices couverts : 2019 et 2020 (tableaux n° 1 et n° 2, p. 29). Norme de référence juridique (p. 18) ; chiffrage des dépenses existantes par l'augmentation des recettes finales du Trésor (p. 17). 243 dépenses chiffrées sur 347 (2019) et sur 349 (2020). Total par impôt : 2019, 4 970,2 MD ; 2020, 4 225,1 MD. Ligne des médicaments et articles paramédicaux : 274,5 MD (2019), 239,6 MD (2020) (tableau n° 8, p. 36). Le rapport attribue la baisse de 745 MD de 2019 à 2020 aux mesures contre la covid-19 (impôts indirects) et au report des déclarations de 2020 (impôts directs, 201 MD) (p. 30)."
     },
     {
       "id": "minfin-depenses-fiscales-plf2023",
@@ -2073,7 +2073,7 @@
         ]
       },
       "URL": "http://www.gbo.tn/sites/default/files/2023-01/DOC%20ANNE%208.pdf",
-      "note": "citation-key: minfin-depenses-fiscales-plf2023\nRapport non archivé dans tunisia-data ; URL ouverte le 5 octobre 2026 (HTTP 200, application/pdf), revérifiée le 6 octobre 2026. Rapport en arabe ; seule l'introduction (p. 7) a été lue, À L'IMAGE ; les agrégats en sont repris dans la note documentaire § 2.2. Année d'édition et exercices couverts à confirmer. 106 p. Numéro d'annexe (8 ?) tiré du nom du fichier, à confirmer. Exercice 2021 : 7 745 MD d'avantages fiscaux (5,92 % du PIB), contre 5 871,5 MD dans le rapport 2024 : écart non expliqué.\nCOPIE LOCALE (6 octobre 2026) : tunisia-data/data/raw/gbo/depenses_fiscales_LF2023.pdf, 106 p., SHA-256 bb38091de57c140e88ae163ca9d0bcab3b95ec305e2e1aa066ba2ce4b7e35505 ; PDF produit le 7 décembre 2022 ; numéro d'annexe (8) tiré du seul nom du fichier, non lu sur la couverture."
+      "note": "citation-key: minfin-depenses-fiscales-plf2023\nRapport non archivé dans tunisia-data ; URL ouverte le 5 octobre 2026 (HTTP 200, application/pdf), revérifiée le 6 octobre 2026. Rapport en arabe ; seule l'introduction (p. 7) a été lue, À L'IMAGE ; les agrégats en sont repris dans la note documentaire § 2.2. Année d'édition et exercices couverts à confirmer. 106 p. Numéro d'annexe (8 ?) tiré du nom du fichier, à confirmer. Exercice 2021 : 7 745 MD d'avantages fiscaux (5,92 % du PIB), contre 5 871,5 MD dans le rapport 2024 : écart non expliqué.\nCOPIE LOCALE (6 octobre 2026) : tunisia-data/data/raw/gbo/depenses_fiscales_LF2023.pdf, 106 p., SHA-256 bb38091de57c140e88ae163ca9d0bcab3b95ec305e2e1aa066ba2ce4b7e35505 ; PDF produit le 7 décembre 2022 ; numéro d'annexe (8) tiré du seul nom du fichier, non lu sur la couverture.\nRapport lu le 1er novembre 2026 dans la copie locale (couche texte arabe, glyphes à normaliser en NFKC ; numéro imprimé en pied de page, inférieur d'une unité au numéro de la page du fichier). Exercices couverts : 2019, 2020 et 2021 ; 2021 est un coût final attendu, calculé en multipliant le coût partiel de 2021 par le rapport du coût final au coût partiel de 2020 (p. 16-17). Norme de référence juridique (p. 19) ; chiffrage par l'augmentation des recettes finales du Trésor (p. 18). 243, 243 et 256 dépenses chiffrées sur 347, 349 et 339 (tableau n° 1, p. 30). Total par impôt (tableau n° 2, p. 31) : 6 560, 6 295 et 7 745 MD. Le rapport dit que ses totaux diffèrent de ceux des rapports précédents, par le nombre de dépenses chiffrées et par le retraitement des données (p. 30). Médicaments et articles paramédicaux : 1 078,2, 1 386,0 et 1 674,1 MD ; engrais et vernis : 111,7, 154,4 et 183,1 MD (tableau n° 8, p. 37-38). Numéro d'annexe non porté par la couverture. Le tableau n° 1 donne 4 558,9 MD pour 2019 au titre des dépenses supérieures à 100 000 D, alors que le total est de 6 560 MD."
     },
     {
       "id": "banquemondiale2014-revolution-inachevee",
@@ -6081,6 +6081,161 @@
       "language": "fr",
       "URL": "https://jibaya.tn/wp-content/uploads/2024/02/Note-Commune-N%C2%B005-1.pdf",
       "note": "citation-key: dgi-nc-5-2023\nNote commune de six pages, signée du directeur général des études et de la législation fiscales ; non datée dans le texte ; fichier PDF créé le 17/02/2023. Lue sur la copie locale PDFs-legislation-tunisie/PDFs/Notes_Communes/ (SHA-256 ffb47ee5a85f5a69852faa2356b5a198247cfab3c00fd01dff660bdb8ef60a83, identique au fichier de jibaya.tn, HTTP 200, application/pdf, 424 959 octets, le 24/10/2026). Relèvement de 13 % à 19 % pour les professions non commerciales énumérées et de 7 % à 19 % pour la médecine et la chirurgie esthétiques : p. 1 et 4 ; liste des professions : p. 2 et 4 ; objet prêté à la mesure (réduction du nombre des taux, suppression progressive du taux de 13 %) : p. 2 ; rappel de la série des taux des professions non commerciales (6 % à 10 % en 1996, 12 % en 2007, 13 % en 2018) : p. 3 ; date d'effet (1er janvier 2023, règles du fait générateur) : p. 5. Doctrine administrative. Clé nommée `dgelf-nc-2023-05` dans les notes préparatoires ; la forme `dgi-nc-N-AAAA` suit celle des autres notes communes du précis."
+    },
+    {
+      "id": "dgi-nc-2-2020",
+      "type": "report",
+      "title": "Note commune n° 2/2020 — Commentaire des dispositions de l'article 28 de la loi n° 2019-78 du 23 décembre 2019 portant loi de finances pour l'année 2020 relatives à la clarification des dispositions applicables aux dons en matière de la taxe sur la valeur ajoutée et des autres taxes et leur harmonisation avec les conventions internationales",
+      "title-short": "Note commune n° 2/2020",
+      "author": [
+        {
+          "literal": "Ministère des Finances, direction générale des études et de la législation fiscales"
+        }
+      ],
+      "publisher": "Ministère des Finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: dgi-nc-2-2020\nDoctrine administrative, jamais source du droit. Cachet du 5 février 2020. Lue le 1er novembre 2026 sur la copie locale PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_N02_…_2019-78_…pdf (image, océrisée en français). Confirme les cinq points de l'article 28 sur l'article 13 bis. URL non établie."
+    },
+    {
+      "id": "dgi-nc-4-2021",
+      "type": "report",
+      "title": "Note commune n° 4/2021 — Commentaire des dispositions de l'article 27 de la loi n° 2020-46 du 23 décembre 2020 portant loi de finances pour l'année 2021 relatives à l'octroi d'avantages fiscaux aux acquisitions financées par des dons accordés au profit de l'État, des collectivités locales, des entreprises et établissements publics et des associations",
+      "title-short": "Note commune n° 4/2021",
+      "author": [
+        {
+          "literal": "Ministère des Finances, direction générale des études et de la législation fiscales"
+        }
+      ],
+      "publisher": "Ministère des Finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: dgi-nc-4-2021\nDoctrine administrative, jamais source du droit. Sept pages, image océrisée en français. Lue le 1er novembre 2026 sur la copie locale PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_N4_…_2020-46_…pdf. Non-régularisation de la taxe (article 9, IV-2), état à remettre dans le mois qui suit la livraison, suspension dans la limite du montant du don. URL non établie."
+    },
+    {
+      "id": "dgi-nc-14-2019",
+      "type": "report",
+      "title": "Note commune n° 14/2019 — Commentaire des dispositions de l'article 79 de la loi n° 2018-56 du 27 décembre 2018 portant loi de finances pour l'année 2019 relatives à la clarification de la fiscalité du secteur de la promotion immobilière",
+      "title-short": "Note commune n° 14/2019",
+      "author": [
+        {
+          "literal": "Ministère des Finances, direction générale des études et de la législation fiscales"
+        }
+      ],
+      "publisher": "Ministère des Finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: dgi-nc-14-2019\nDoctrine administrative, jamais source du droit. Couche texte du corpus local (PDFs-legislation-tunisie/markdown_output/Notes_Communes/Note_Commune_N_14__…_article_79_…), lue le 1er novembre 2026. Crédit de départ sur les stocks au 31 décembre 2017, inventaire avant le 31 mars 2019. URL non établie."
+    },
+    {
+      "id": "dgi-nc-10-2022",
+      "type": "report",
+      "title": "Note commune n° 10/2022 — Commentaire des dispositions de l'article 33 du décret-loi n° 2021-21 du 28 décembre 2021 portant loi de finances pour l'année 2022 relatives à l'imposition à la taxe sur la valeur ajoutée du commerce de détail des boissons alcoolisées, vins et bières",
+      "title-short": "Note commune n° 10/2022",
+      "author": [
+        {
+          "literal": "Ministère des Finances, direction générale des études et de la législation fiscales"
+        }
+      ],
+      "publisher": "Ministère des Finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: dgi-nc-10-2022\nDoctrine administrative, jamais source du droit. Couche texte du corpus local (markdown_output/Notes_Communes/Note_Commune_N10__…_article_33_…), lue le 1er novembre 2026. Déduction sur les stocks du 31 décembre 2021, hors immobilisations. URL non établie."
+    },
+    {
+      "id": "dgi-nc-7-2022",
+      "type": "report",
+      "title": "Note commune n° 7/2022 — Commentaire des dispositions des articles 27, 28, 40, 42, 44, 49 et 53 de la loi de finances pour l'année 2022 relatives aux droits d'enregistrement et de timbre",
+      "title-short": "Note commune n° 7/2022",
+      "author": [
+        {
+          "literal": "Ministère des Finances, direction générale des études et de la législation fiscales"
+        }
+      ],
+      "publisher": "Ministère des Finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: dgi-nc-7-2022\nDoctrine administrative, jamais source du droit. Couche texte du corpus local (markdown_output/Notes_Communes/Note_Commune_N07__…), lue le 1er novembre 2026. Point 4 : actes de constitution et sociétés par actions. URL non établie."
+    },
+    {
+      "id": "dgi-nc-2-2023",
+      "type": "report",
+      "title": "Note commune n° 2/2023 — Commentaire des dispositions des articles 65 et 69 du décret-loi n° 2022-79 du 22 décembre 2022 portant loi de finances pour l'année 2023 relatives à la soumission obligatoire des mandats à la formalité de l'enregistrement, à l'actualisation du tarif du droit de timbre exigible sur les factures et à la soumission de certaines formules administratives au droit",
+      "title-short": "Note commune n° 2/2023",
+      "author": [
+        {
+          "literal": "Ministère des Finances, direction générale des études et de la législation fiscales"
+        }
+      ],
+      "publisher": "Ministère des Finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "language": "fr",
+      "note": "citation-key: dgi-nc-2-2023\nDoctrine administrative, jamais source du droit. Couche texte du corpus local (markdown_output/Notes_Communes/Note_Commune_N02Commentaire_…_articles_65_et_69_…), lue le 1er novembre 2026. URL non établie."
+    },
+    {
+      "id": "dgi-nc-14-2023",
+      "type": "report",
+      "title": "Note commune n° 14/2023 — Commentaire des dispositions des articles 45 et 46 de la loi de finances pour l'année 2023 relatives à la maîtrise du suivi des avantages fiscaux accordés en matière de la taxe sur la valeur ajoutée et des autres taxes dues sur le chiffre d'affaires",
+      "title-short": "Note commune n° 14/2023",
+      "author": [
+        {
+          "literal": "Ministère des Finances, direction générale des études et de la législation fiscales"
+        }
+      ],
+      "publisher": "Ministère des Finances",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "language": "fr",
+      "URL": "https://jibaya.tn/docs/note-commune-numero-note-commune-n14commentaire-des-dispositions-des-articles-45-et-46-de-la-loi-de-finances-pour-lannee-2023-relatives-a-la-maitrise-du-suivi-des-avantages/",
+      "note": "citation-key: dgi-nc-14-2023\nDoctrine administrative, jamais source du droit. Sept pages, image sans couche texte, océrisée en français le 1er novembre 2026 sur la copie locale PDFs-legislation-tunisie/PDFs/Notes_Communes/Note_Commune_N14Commentaire_des_dispositions_des_articles_45_et_46_….pdf ; non datée dans le texte ; signée du directeur général des études et de la législation fiscales. Page de la note sur jibaya.tn repérée le 1er novembre 2026 (le PDF n'a pas été téléchargé)."
     },
     {
       "id": "rectificatif-lf-1993",
