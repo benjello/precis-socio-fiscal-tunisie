@@ -1232,6 +1232,12 @@
     couverture: 'Intitulés seulement (requêtes FTS sur 1976-2026, 1976-1990 ; LIKE sur 1970-2000). Candidats non lus : décret n° 75-775 (attributions du ministère des affaires sociales, JORT n° 72/1975, p. 2340), décret n° 86-454 (attributions du ministère de la protection sociale, n° 25/1986, p. 531), postérieur à la période. Aucun plein texte des fascicules 1976-1985.'
     couvert_jusqu_au: 1986-01-07
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: Lecture à l'image du décret n° 75-775 (JORT n° 72 du 4 novembre 1975, p. 2340 ; art. 4 et 7) et du décret n° 86-454 (JORT n° 25 des 15-18 avril 1986, p. 531 ; art. 3 et 6). Tous deux posent la tutelle du ministère en termes généraux ; aucun ne nomme la CNRPS.
+    couvert_jusqu_au: 1986-01-07
+    resultat: aucun
   a_faire:
   - plein texte (OCR) des fascicules 1976-1985 sur « retraite et de prévoyance » + « tutelle » ou « rattach »
 
