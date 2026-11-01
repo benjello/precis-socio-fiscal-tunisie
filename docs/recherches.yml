@@ -5132,3 +5132,73 @@
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
   a_faire: ['lire les fascicules postérieurs au 29 octobre 2026 (corpus local, pist.tn)']
+
+- id: r-autoroutes-a1-msaken-gabes-peage-apres-2022
+  objet: texte postérieur au décret présidentiel n° 2022-56 qui modifie l'article 7 du décret gouvernemental n° 2019-1066 (date d'application du péage sur l'autoroute A1 M'saken-Gabès)
+  ou: [precis/fr/entreprises_publiques/_transports.qmd#sec-ep-ge-autoroutes]
+  requetes:
+    titres_like: ['%2019-1066%', '%péage%', '%autoroute A1%']
+    iort_ar: [معلوم المرور, الطريق السيارة أ1, 1066 لسنة 2019]
+    plein_texte: [2019-1066, 1066 لسنة 2019]
+    depuis: 2022-02-01
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026, textes publiés depuis le 1er février 2022 : jort_cache (dernière publication indexée le 29 octobre 2026, intitulés français et arabes), miroir iort, plein texte du corpus local des fascicules 2022 à 2026 (français et arabe ; absents : 2022 n° 55 et 105 en français, n° 203 de 2025 et n° 107 de 2026 mal numérotés dans jort_cache ; aucune liste des fascicules parus après le 29 octobre 2026). Seules occurrences de « 2019-1066 » et de « 1066 لسنة 2019 » : le décret présidentiel n° 2022-56 lui-même (JORT n° 12 de 2022). Aucun texte postérieur.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+
+- id: r-oaca-vols-interieurs-apres-2023
+  objet: décret renouvelant, après le 31 décembre 2023, l'exonération des passagers et des avions des vols commerciaux intérieurs des redevances d'aéroport et de services de navigation aérienne
+  ou: [precis/fr/entreprises_publiques/_transports.qmd#sec-ep-ge-oaca]
+  requetes:
+    titres_like: ['%vols commerciaux intérieurs%', '%2020-778%', '%renouvellement de l''exonération%']
+    iort_ar: [الرحلات التجارية الداخلية, معاليم المطارات, 778 لسنة 2020]
+    plein_texte: [2020-778, 778 لسنة 2020, الرحلات التجارية الداخلية]
+    depuis: 2023-06-01
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026, textes publiés depuis le 1er juin 2023 : jort_cache (dernière publication indexée le 29 octobre 2026, intitulés français et arabes), miroir iort, plein texte du corpus local des fascicules 2023 à 2026 (français et arabe ; fascicules lus en arabe seulement ou absents énumérés par la relance ; aucune liste des fascicules parus après le 29 octobre 2026). Le seul candidat, le décret n° 2024-5 du 5 janvier 2024, exonère quatre aéroports régionaux, non les vols intérieurs. Aucune occurrence de « 2020-778 » ni de « 778 لسنة 2020 » dans un texte postérieur.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+
+- id: r-oaca-exoneration-aeroports-regionaux-2012-2016
+  objet: décret prorogeant ou renouvelant, après le 31 décembre 2011 et avant le décret gouvernemental n° 2017-342, l'exonération des redevances d'aéroport et de navigation aérienne aux aéroports internationaux de Tabarka-7 novembre, de Tozeur-Nefta et de Gafsa-Ksar
+  ou: [precis/fr/entreprises_publiques/_transports.qmd#sec-ep-ge-oaca]
+  requetes:
+    titres_like: ['%redevances d''aéroport%', '%Tozeur-Nefta%', '%Tabarka%', '%Gafsa-Ksar%']
+    iort_ar: [معاليم المطارات, مطار توزر نفطة, مطار طبرقة]
+    plein_texte: [2008-3903, 3903 لسنة 2008]
+    depuis: 2011-12-01
+  periode:
+    jusqu_au: 2017-03-07
+    motif: le décret gouvernemental n° 2017-342 du 1er mars 2017 (JORT du 7 mars 2017) fixe une nouvelle exonération à partir du 1er janvier 2017
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026, textes publiés du 1er décembre 2011 au 7 mars 2017 : jort_cache (intitulés français et arabes, requêtes sur les aéroports de Tabarka, Tozeur-Nefta, Gafsa-Ksar et sur les redevances d''aéroport), miroir iort, plein texte du corpus local des fascicules 2011 à 2017 n° 19 (fascicules sans texte exploitable : 2015 n° 36 en français, n° 53, 57, 64 et 67 en arabe ; n° 59 de 2015 absent du corpus). Huit candidats de jort_cache, tous étrangers à l''objet (dissolution du conseil municipal de Tabarka, expropriations, plan d''aménagement) hors le décret n° 2014-2235, qui concerne les vols intérieurs. Aucune exonération des trois aéroports entre le 31 décembre 2011 et le 1er janvier 2017.'
+    couvert_jusqu_au: 2017-03-07
+    resultat: aucun
+
+- id: r-oaca-exoneration-aeroports-regionaux-2022-2023
+  objet: décret exonérant des redevances d'aéroport et de navigation aérienne les aéroports internationaux de Tozeur-Nafta, de Tabarka-Aïn Draham, de Gafsa-Ksar et de Gabès-Matmata entre le 1er janvier 2022 et le décret n° 2024-5 du 5 janvier 2024
+  ou: [precis/fr/entreprises_publiques/_transports.qmd#sec-ep-ge-oaca]
+  requetes:
+    titres_like: ['%redevances d''aéroport%', '%Tozeur-Nafta%', '%Gabès-Matmata%', '%Gafsa-Ksar%']
+    iort_ar: [معاليم المطارات, مطار توزر نفطة, مطار قفصة القصر, مطار قابس مطماطة]
+    plein_texte: [2017-342, 342 لسنة 2017]
+    depuis: 2021-12-01
+  periode:
+    jusqu_au: 2024-01-12
+    motif: le décret n° 2024-5 du 5 janvier 2024 (JORT du 12 janvier 2024) fixe une nouvelle exonération à partir de sa publication
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026, textes publiés du 1er décembre 2021 au 12 janvier 2024 : jort_cache (intitulés français et arabes ; seul candidat, le décret n° 2024-5 lui-même), miroir iort (même candidat), plein texte du corpus local des fascicules 2021 n° 112 à 120, 2022, 2023 et 2024 n° 1 à 6 (fascicules absents ou lus en arabe seulement énumérés par la relance). Les visas du décret n° 2024-5 citent le décret gouvernemental n° 2017-342 et aucun autre texte d''exonération des quatre aéroports.'
+    couvert_jusqu_au: 2024-01-12
+    resultat: aucun
