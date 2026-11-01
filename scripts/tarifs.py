@@ -62,9 +62,9 @@ TABLEAUX = {
     },
     "capsule-fiscale": {
         "champs": ["position", "produit", "Annexe IV de 1997", "13 août 2007",
-                   "29 juin 2022"],
+                   "25 juin 2022"],
         "entetes": ["Catégorie", "Vins et contenances", "Annexe IV de 1997",
-                    "Depuis le 13 août 2007", "Depuis le 29 juin 2022"],
+                    "Depuis le 13 août 2007", "Depuis le 25 juin 2022"],
     },
     # SIX COLONNES DE PÉRIODE, ET NON CINQ. Le taux de droit commun ne change que quatre
     # fois, ce qui suffirait à cinq colonnes ; mais le taux des petites et moyennes
