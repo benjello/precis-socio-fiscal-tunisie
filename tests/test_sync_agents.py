@@ -194,6 +194,7 @@ class DepotReelTest(unittest.TestCase):
         self.assertEqual(
             set(config["roles"]),
             {
+                "archiviste-backlog",
                 "architecte",
                 "bibliographe",
                 "documentaliste",
@@ -211,6 +212,7 @@ class DepotReelTest(unittest.TestCase):
         self.assertEqual(
             niveaux,
             {
+                "archiviste-backlog": "standard",
                 "architecte": "raisonnement",
                 "bibliographe": "standard",
                 "documentaliste": "raisonnement",
