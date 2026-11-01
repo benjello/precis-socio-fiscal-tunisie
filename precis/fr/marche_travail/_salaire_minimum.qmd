@@ -558,7 +558,9 @@ print("::: {.figure-source}\nSource : [@cnss-annuaire-2013, p. 26, 34, 35]\n:::\
 
 <!-- TODO (documentaliste) : la part des salariés au SMIG n'a qu'un point (2013). Restent à lire :
 la pyramide de l'édition 2006 (scan, à l'image) ; les pyramides trimestrielles en SMIG des éditions
-2016 et 2017 ; le tableau de 2013 en classes de SMIG (p. 36) a un défaut de sommation sur deux
+2016 (PDF 36) et 2017 (PDF 33), dont les exemplaires arabes sont dans data/raw/caisses/cnss/annuaires de tunisia-data
+(chiffres lisibles à la couche texte, libellés arabes de 2016 altérés, colonnes en ordre inverse) : extraction à faire dans
+tunisia-data, avec le script de la série cnss-pyramide-smig-2000-2018 ; le tableau de 2013 en classes de SMIG (p. 36) a un défaut de sommation sur deux
 lignes, décrit dans la fiche sources/cnss-annuaires.md de tunisia-data : non employé ici. -->
 
 ### Repères d'enquêtes, 2007-2022 {#sec-mt-sp-enquetes}
