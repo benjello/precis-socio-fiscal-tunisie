@@ -2596,8 +2596,29 @@ Notes documentaires : `education-histoire`, `education-aides-scolaires`, `educat
 - [x] **Chapitre « L'enseignement scolaire » réordonné par parcours de l'élève (30 octobre 2026, branche
   `educ/reorg-scolaire`)** : état du droit, préscolaire, cycles et langues (section neuve `#sec-educ-scolaire-cycles-langues`),
   examens et orientation (sous-section neuve `#sec-educ-scolaire-pilotes`), passages et abandons, privé, cours particuliers et
-  vie scolaire, textes. Identifiants et lignes de registre conservés. Reste : le fil historique des langues d'enseignement
-  (1958-1995), à placer dans la section neuve quand les textes de 1973 à 1995 seront lus (PR #608).
+  vie scolaire, textes. Identifiants et lignes de registre conservés.
+- [ ] **Langues d'enseignement, 1958-2019 (30 octobre 2026, branche `educ/langues-textes`)** : lus et versés au registre
+  (`#sec-educ-scolaire-cycles-langues`, tableau `tbl-educ-francais-bac`) : certificat de fin d'études primaires de 1959 et
+  de 1963 (tableaux relus à l'image), arrêtés du baccalauréat de 1963, 1965, 1970, 1981, 1988, 1991 (et rectificatif),
+  annexe de 1992, arrêtés du 12 et du 30 avril 1994, décrets d'horaire n° 92-1180, 96-681, 2000-2168 et 2019-1085 (le
+  français dès la 2e année en 2019), décret n° 86-681 (session exceptionnelle du baccalauréat de septembre 1986, p. 798, lu
+  dans les deux éditions). Texte modifiant l'horaire du primaire entre 2000 et 2019 non identifié (UNESCO-BIE 2012 :
+  anglais en 6e année en 2010-2011 ; fiche `r-educ-horaire-base-2000-2019`). Passe sur l'édition
+  arabe du 30 octobre 2026 : sommaires (pages 1 et 2) des 1 251 fascicules de 1958-1959, 1972-1981 et 1986-1989 océrisés
+  (tesseract `ara`) ; annexes des décrets de programmes de 1993 à 1998 absentes de l'édition arabe comme de la française.
+  Restent, connus des seuls rapports (note `education-langue-enseignement-histoire-2026-10-30.md`, PR #608) :
+  - programmes et horaires du primaire de 1958 (70 h / 60 h), 1976 (80 h / 65 h), 1978 (calcul en arabe), 1986-1989
+    (entrée du français) : aucun texte dans les sommaires arabes océrisés ; le règlement scolaire du 25 janvier 1964
+    renvoie aux « programmes et horaires d'enseignement officiels », à chercher hors du Journal officiel (Centre national
+    pédagogique) ; sommaires arabes de 1960-1971, 1982-1985 et 1990-1991 à océriser (fiche
+    `r-educ-horaires-primaire-1958-1992`) ;
+  - décision de 1973 sur le français au baccalauréat : aucun texte du baccalauréat publié entre 1971 et 1981, ni au
+    titre (`jort_cache`) ni au sommaire arabe ; circulaire ou presse de 1973 à chercher (fiche
+    `r-educ-bac-francais-1972-1981`) ;
+  - arabisation des sciences de la 7e à la 9e année (1995-1998) : programmes par matière à obtenir du ministère (fiche
+    `r-educ-arabisation-sciences-base-1995-1998`) ;
+  - divergence à trancher à la revue : Bouhdiba date de 1993 le français en 3e année, que le décret n° 92-1180 fixe dès
+    septembre 1992.
 
 ## Allègement du juridique et de l'administratif — chantier, non urgent (5 octobre 2026)
 
