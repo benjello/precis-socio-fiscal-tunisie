@@ -636,7 +636,7 @@
           ]
         ]
       },
-      "note": "citation-key: decret2017-670\nJORT n° 45 du 6 juin 2017, pp. 2047-2048. L'adresse de l'édition française de ce fascicule sur pist.tn (2017F/Jo0452017.pdf) sert l'édition arabe (vérifié sur le fichier du corpus local le 5 octobre 2026) : entrée française laissée sans URL.",
+      "note": "citation-key: decret2017-670\nJORT n° 45 du 6 juin 2017, pp. 2047-2048. L'adresse de l'édition française de ce fascicule sur pist.tn (2017F/Jo0452017.pdf) sert l'édition arabe (vérifié sur le fichier du corpus local le 5 octobre 2026) : entrée française laissée sans URL. Lu le 1er novembre 2026 sur l'édition arabe du fascicule (corpus local), pp. 1878-1879 : majoration horaire de 138 à 176 millimes (exécution, hors salariés au SMIG), 202 millimes (maîtrise), 264 millimes (cadres) ; effet le 1er août 2016 (art. 6) ; l'édition française n'est pas disponible ici.",
       "title-short": "Décret gouvernemental n° 2017-670 du 5 juin 2017"
     },
     {
@@ -1015,6 +1015,45 @@
         ]
       },
       "note": "citation-key: decret2019-456\nJORT n° 43 du 28 mai 2019, pp. 1587-1588 de l'édition française. Absent de jort_cache.db ; relu au fascicule français du corpus local le 5 octobre 2026 : majoration horaire de 155 à 199 millimes (exécution, hors salariés au SMIG), 228 millimes (maîtrise), 298 millimes (cadres) ; effet le 1er mai 2019. Sans URL."
+    },
+    {
+      "id": "decret2018-674",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2018-674 du 7 août 2018, portant majoration des salaires dans les secteurs non agricoles régis par le code du travail et non couverts par des conventions collectives sectorielles ou par des statuts particuliers",
+      "title-short": "Décret gouvernemental n° 2018-674 du 7 août 2018",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "64",
+      "page": "2686-2687",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2018/2018F/Jo0642018.pdf",
+      "note": "citation-key: decret2018-674\nJORT n° 64 du 10 août 2018, pp. 2686-2687 de l'édition française du corpus local (art. 1 et tableau p. 2686 ; art. 6, effet, p. 2687). La notice de jort_cache.db (recid 76807) porte un intitulé arabe. Majoration horaire de 146 à 187 millimes (exécution, hors salariés au SMIG), 214 millimes (maîtrise), 280 millimes (cadres) ; effet le 1er mai 2018. Le visa du décret de 2017 y est écrit « 2017-610 » pour 2017-670. Lu le 1er novembre 2026."
+    },
+    {
+      "id": "decret2019-1064",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2019-1064 du 4 novembre 2019, modifiant le décret gouvernemental n° 2019-542 du 28 mai 2019, fixant les programmes du fonds national de l'emploi, les conditions et les modalités de leur bénéfice",
+      "title-short": "Décret gouvernemental n° 2019-1064 du 4 novembre 2019",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "92",
+      "page": "3888-3890",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            4
+          ]
+        ]
+      },
+      "note": "citation-key: decret2019-1064\nJORT n° 92 du 15 novembre 2019, pp. 3888-3890 de la traduction française « pour information » du fascicule (corpus local), pp. 4122-4124 de l'édition arabe (notice de jort_cache.db, recid 128891, champ pdf_fr vide ; l'édition française est absente de pist.tn, 404 le 1er novembre 2026). Fascicule déposé au siège du gouvernorat de Tunis le 18 novembre 2019 : exécutoire le 23 novembre 2019 (loi n° 93-64, art. 2). Art. 1 : récrit l'art. 39 § 2, l'art. 44 § 4, l'art. 46 § 1, l'art. 54 § 1 et le dernier alinéa de l'art. 61 du décret n° 2019-542 ; le texte ne donne aucune rédaction nouvelle de l'art. 61. Lu le 1er novembre 2026 (couche texte)."
     },
     {
       "id": "loi67-11",
@@ -1411,7 +1450,7 @@
           ]
         ]
       },
-      "note": "citation-key: decret2019-542\nJORT n° 51 de 2019 (notice de jort_cache.db, recid 118716) ; pp. 2081-2091 de l'édition arabe. L'édition française de ce fascicule est absente de pist.tn (404 le 6 octobre 2026, champ pdf_fr vide) : entrée française sans URL ; l'intitulé français est une traduction de l'intitulé arabe (« أمر حكومي عدد 542 لسنة 2019 مؤرخ 28 ماي 2019 يتعلق بضبط برامج الصندوق الوطني للتشغيل وشروط وصيغ الانتفاع بها »)."
+      "note": "citation-key: decret2019-542\nJORT n° 51 de 2019 (notice de jort_cache.db, recid 118716) ; pp. 2081-2091 de l'édition arabe. L'édition française de ce fascicule est absente de pist.tn (404 le 6 octobre 2026, champ pdf_fr vide) : entrée française sans URL ; l'intitulé français est une traduction de l'intitulé arabe (« أمر حكومي عدد 542 لسنة 2019 مؤرخ 28 ماي 2019 يتعلق بضبط برامج الصندوق الوطني للتشغيل وشروط وصيغ الانتفاع بها »). Art. 11 et 17 à 57 lus le 1er novembre 2026 sur l'édition arabe, l'en-tête de page étant imprimé en bas : art. 17 (début) p. 2084 ; art. 17 (fin) à 26 (début) p. 2085 ; art. 26 (fin) à 31 p. 2086 ; art. 32 à 43 (début) p. 2087 ; art. 43 (fin) à 48 p. 2088 ; art. 49 à 57 p. 2089. Modifié par le décret gouvernemental n° 2019-1064 du 4 novembre 2019 (art. 39 § 2, 44 § 4, 46 § 1, 54 § 1), puis par le décret n° 2023-461."
     },
     {
       "id": "decret2023-461",
@@ -1419,7 +1458,7 @@
       "title": "Décret n° 2023-461 du 5 juin 2023, modifiant et complétant le décret gouvernemental n° 2019-542 du 28 mai 2019",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "60",
-      "page": "1552",
+      "page": "1552-1558",
       "issued": {
         "date-parts": [
           [
@@ -1430,7 +1469,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/2023/2023F/Jo0602023.pdf",
-      "note": "citation-key: decret2023-461\nJORT n° 60 de 2023, pp. 1552 (notice de jort_cache.db, recid 172316, champ pdf_fr). Numéro du décret : 2023-461 (suivi du fascicule) ; la notice de jort_cache.db porte à tort « 2023-060 ». Page 1552 d'après la notice, à confirmer."
+      "note": "citation-key: decret2023-461\nJORT n° 60 de 2023, pp. 1552-1558 (notice de jort_cache.db, recid 172316, champ pdf_fr). Numéro du décret : 2023-461 (suivi du fascicule) ; la notice de jort_cache.db porte à tort « 2023-060 ». Pages relevées le 1er novembre 2026 sur la couche texte du fascicule français du corpus local, l'en-tête de page étant imprimé en bas : début p. 1552 ; art. 1 p. 1554 ; art. 11 ter et 11 quinquies p. 1557 ; art. 11 sexies, 61 bis et 3 p. 1558."
     },
     {
       "id": "oneq-suivi-pae-2012",
