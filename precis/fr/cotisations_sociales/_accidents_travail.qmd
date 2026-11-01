@@ -221,6 +221,19 @@ Tous ces articles confient la décision à la « caisse nationale de sécurité 
 
 <!-- RECHERCHE r-atmp-commission-modulation : texte instituant une commission pour les décisions de majoration ou de réduction de la cotisation AT/MP (voir docs/recherches.yml) -->
 
+**Les organigrammes de la CNAM.** Le décret n° 2008-3707 fixe l'organigramme de la caisse « conformément au schéma et à l'annexe joints » [@decret2008-3707, art. 1^er^]. Le décret gouvernemental n° 2018-747 reprend la formule et abroge celui de 2008 [@decret2018-747, art. 1^er^ et 4]. Ni l'un ni l'autre ne porte de clause d'effet : le fascicule de 2008 est déposé le 11 décembre 2008 (exécution le 16 décembre 2008), celui des 11 et 14 septembre 2018 le 14 septembre 2018 (exécution le 19 septembre 2018). Le schéma et l'annexe ne figurent pas dans les deux éditions de ces fascicules, française et arabe : la structure interne de la caisse, et la place qu'y tient la prévention, ne se lisent donc pas dans ces textes. Un autre décret nomme une direction de la caisse, la « direction centrale de la gestion des risques professionnels », parmi les membres de la commission des prêts et primes [@decret2009-2344, art. 9 nouveau du décret n° 96-1050].
+
+<!-- TODO (documentaliste) : schéma et annexe des décrets n° 2008-3707 (JORT n° 99/2008) et n° 2018-747 (JORT n° 73-74/2018), absents des deux éditions du fascicule : chercher un exemplaire publié ailleurs (site de la CNAM, recueil de textes). -->
+
+**Les prêts et primes de prévention avant 2009.** Le décret n° 96-1050 permet à la caisse d'accorder aux entreprises des prêts et des primes d'investissement pour des projets de santé et de sécurité au travail [@decret96-1050, art. 1^er^]. Le décret n° 2002-583 réécrit ses articles 5 et 6 : une prime égale à 20 % du coût du projet approuvé par la commission, un prêt d'au plus 70 % de ce coût dans la limite de 300 000 dinars, un autofinancement de 30 % au moins, prime comprise. Pour garantir le remboursement, l'entreprise donne à la caisse une hypothèque de premier rang, ou de même rang qu'une banque ; elle peut présenter à la place une caution bancaire ou toute garantie qui permette de recouvrer le prêt en totalité [@decret2002-583, art. 1^er^]. Le décret n° 2009-2344 relève ensuite la prime et abaisse le plafond du prêt en proportion (@tbl-atmp-prets).
+
+| Date d'effet | Texte | Prime d'investissement | Prêt maximal | Autofinancement minimal |
+|---|---|---:|---:|---:|
+| [28 mars 2002]{.insecable} | décret n° 2002-583, art. 1^er^ [@decret2002-583] | 20 % du coût | 70 % du coût, dans la limite de 300 000 D | 30 % |
+| [27 août 2009]{.insecable} | décret n° 2009-2344, art. 1^er^ [@decret2009-2344] | 25 % du coût | 65 % du coût, dans la limite de 300 000 D | 35 % |
+
+: Prime et prêt pour les projets de santé et de sécurité au travail, décret n° 96-1050 : taux fixés en 2002 et en 2009. Aucun des deux décrets ne fixe sa date d'effet : dépôt du *Journal officiel* n° 24 le 23 mars 2002 et n° 67 le 22 août 2009, exécution cinq jours après, jour du dépôt non compté {#tbl-atmp-prets tbl-colwidths="[14,26,16,26,18]"}
+
 ### L'application, selon un diagnostic du ministère {#sec-cot-at-modulation-application}
 
 Deux documents publiés décrivent la pratique ; aucun n'est un texte. Le premier est un diagnostic : le « Profil national de la sécurité et de la santé au travail », établi en 2023 par le ministère des affaires sociales avec l'appui du Bureau international du travail, à partir d'un guide de recueil de données adressé aux institutions, de réunions avec elles et avec les partenaires sociaux, et d'entretiens en régions [@mas2023-profil-sst, p. 8]. Il nomme « bonus-malus » ce que les textes appellent réduction et majoration.
