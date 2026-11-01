@@ -80,7 +80,6 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
-  - 'lire le JORT n° 58 de 2026 : inconnu de jort_cache, absent du corpus local, et pist.tn répond 404 dans les deux éditions (24 septembre 2026) ; le n° 59 commence p. 1129'
   - 'lire les numéros postérieurs au n° 93 de 2026 : jort_cache s''arrête au 18 septembre 2026, et le n° 94 répond 404 sur pist.tn (24 septembre 2026)'
 
 - id: r-dec74-499-modificatifs
@@ -137,7 +136,6 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
-  - 'lire le JORT n° 58 de 2026 : inconnu de jort_cache, absent du corpus local, et pist.tn répond 404 dans les deux éditions (24 septembre 2026) ; le n° 59 commence p. 1129'
   - 'lire les numéros postérieurs au n° 93 de 2026 : jort_cache s''arrête au 18 septembre 2026, et le n° 94 répond 404 sur pist.tn (24 septembre 2026)'
   - 'fascicules parcourus dans aucune édition depuis 2007 (passe du 24 septembre 2026) : 2011 n° 62, 73, 90-99 ; 2012 n° 12, 41, 43, 100 ; 2013 n° 47 ; 2015 n° 53 ; 2019 n° 23 ; 2020 n° 23-29, 31-33 ; 2021 n° 45-46 ; 2022 n° 92, 132 ; 2026 n° 58 — à télécharger ou à océriser ; et vérifier l''existence des numéros ni dans le corpus local ni dans jort_cache, dont l''existence n''est donc pas établie : 2019 n° 83 ; 2020 n° 4, 30, 39, 86, 96-98, 102, 125 ; 2023 n° 122'
 
@@ -168,7 +166,6 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
-  - lire le JORT n° 58 de 2026 (pp. 1073-1127)
   - lire les numéros postérieurs au n° 93 de 2026
   - 'le même projet porterait de 50 à 55 ans l''âge minimum du départ pour raisons économiques ou techniques : source primaire non ouverte (rsna-histoire-reformes.md, § 4.3)'
 
@@ -336,7 +333,6 @@
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
   a_faire:
-  - 'lire le JORT n° 58 de 2026 : inconnu de jort_cache, absent du corpus local, et pist.tn répond 404 dans les deux éditions (24 septembre 2026) ; le n° 59 commence p. 1129'
   - 'lire les numéros postérieurs au n° 93 de 2026 : jort_cache s''arrête au 18 septembre 2026, et le n° 94 répond 404 sur pist.tn (24 septembre 2026)'
   - 'le plein texte ne couvre pas 1981-1993 (fascicules sans couche texte dans les deux éditions) ni, pour l''essentiel, les éditions arabes de 1994 à 2013 (sans texte ou codage illisible) : pour ces années, seuls les intitulés de jort_cache et du miroir iort et les visas couvrent la fiche ; océriser ou décoder pour étendre (passe du 24 septembre 2026)'
   - 'les éditions françaises de 1999 à 2005 (couche texte décalée de 29 caractères) n''ont été parcourues que par un décodage hors outil (passe du 24 septembre 2026) : à intégrer à recherches.py pour que la relance les couvre'
@@ -392,9 +388,7 @@
     couverture: 'jort_cache (FTS et LIKE, intitulés arabes « 1166 لسنة 1995 », « غير الأجراء ») jusqu''au 10 avril 2026 ; texte des fascicules FR et AR du corpus local de 2024 au n° 56 de 2026, 2025 en partie seulement ; n° 57 à 93 de 2026 depuis pist.tn, sauf le n° 58. Seconde voie : visas des arrêtés conjoints du 10 juillet 2020, du 29 août 2025 et du 5 août 2026, qui citent le décret n° 2008-172 comme dernier modificatif. Note : docs/notes/cnss-autres-regimes.md, § 12.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire:
-  - lire le JORT n° 58 de 2026 (pist.tn)
-  - 'fascicules absents du corpus local : voir la fiche r-dl2024-4-art33'
+  a_faire: ['fascicules absents du corpus local : voir la fiche r-dl2024-4-art33']
 
 - id: r-rtte-decret-art23
   objet: décret de révision des pensions du régime des Tunisiens à l'étranger pris en application de l'article 23 du décret n° 89-107
@@ -410,9 +404,7 @@
     couverture: 'jort_cache jusqu''au 10 avril 2026 (seul modificatif : décret n° 91-604) ; texte des fascicules FR et AR du corpus local de 2024 au n° 56 de 2026, 2025 en partie seulement ; n° 57 à 93 de 2026 depuis pist.tn, sauf le n° 58. Seconde voie : visas de l''arrêté conjoint du 10 juillet 2020 (« tel que modifié et complété par le décret n° 91-604 »). Note : docs/notes/cnss-autres-regimes.md, § 7 et 12.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire:
-  - lire le JORT n° 58 de 2026 (pist.tn)
-  - 'fascicules absents du corpus local : voir la fiche r-dl2024-4-art33'
+  a_faire: ['fascicules absents du corpus local : voir la fiche r-dl2024-4-art33']
 
 - id: r-raci-minimum-200
   objet: texte relevant le montant minimal de 200 dinars par mois des pensions du régime des artistes, créateurs et intellectuels (loi n° 2002-104, art. 13 et 15 ; décret n° 2003-894, art. 17)
@@ -428,9 +420,7 @@
     couverture: 'jort_cache jusqu''au 10 avril 2026 (seul modificatif du régime : loi n° 2007-43) ; rien dans les fascicules 2024-2026 du corpus local (2025 en partie seulement) ni dans les n° 57 à 93 de 2026, sauf le n° 58. Seconde voie par les visas incomplète : la loi n° 2002-104 n''est pas visée par les arrêtés conjoints de 2020 et de 2026. Note : docs/notes/cnss-autres-regimes.md, § 8 et 12.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire:
-  - lire le JORT n° 58 de 2026 (pist.tn)
-  - trouver un texte récent qui vise la loi n° 2002-104 (seconde voie)
+  a_faire: [trouver un texte récent qui vise la loi n° 2002-104 (seconde voie)]
 
 - id: r-cnrps-partie-active-avant-1967
   objet: décret classant des emplois dans la partie active (loi n° 59-18, art. 10) antérieur au décret n° 67-282 ; pour les douanes, antérieur au décret n° 81-1600
@@ -658,8 +648,7 @@
     couverture: 'Texte intégral des articles des lois de finances et des lois de finances rectificatives ou complémentaires de 2007 à 2026 (lois n° 2006-85 à n° 2025-17, y compris les décrets-lois de 2021 et 2022), cherché dans le corpus local (couche texte des fascicules et des recueils ; OCR de la fin des fascicules des lois de finances 2021 à 2023 et des lois rectificatives 2007, 2021 à 2023 à 200 dpi) : motifs « 60-30 », « 1960 », « régimes de sécurité sociale », « allocations familiales », « salaire unique », « crèche » et, pour la loi de finances 2026 (édition arabe seule), « المنح العائلية », « الأجر الوحيد », « تنظيم أنظمة الضمان الاجتماعي ». Aucun article ne cite la loi n° 60-30 ni ne touche les articles 52, 54 ou 61. Limites : les tableaux budgétaires en fin de fascicule ne sont pas lus ; les textes qui ne sont pas des lois de finances ne sont pas cherchés par ce motif ; une modification libellée sans nommer la loi ni ses intitulés échappe à la recherche.'
     couvert_jusqu_au: 2025-12-31
     resultat: aucun
-  a_faire:
-  - 'requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir'
+  a_faire: ['requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir']
 
 - id: r-lf2025-art17-decret
   objet: décret fixant les conditions et procédures de gestion du fonds d'assurance contre la perte de postes de travail pour raisons économiques (loi n° 2024-48, loi de finances pour 2025, art. 17)
@@ -924,8 +913,7 @@
     couverture: 'Intitulés FR et AR. Loi n° 60-30 : lois signées depuis le 1er janvier 2007 seulement (un résultat, loi n° 2007-51, lue : art. 105 et 45). Loi n° 94-28 : depuis le 1er mars 1994 (loi n° 95-103, lue : art. 7 ; décret gouvernemental n° 2019-1130, non lu). Décret n° 93-308 : aucun résultat. Lacunes : modifications de la loi n° 60-30 antérieures à 2007 non rejouées ici (registre du chapitre) ; textes dont l''intitulé ne nomme pas le texte modifié ; lois de finances non dépouillées. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 1.3.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire:
-  - rejouer la requête 60-30 depuis 1960 sur les décrets et arrêtés
+  a_faire: [rejouer la requête 60-30 depuis 1960 sur les décrets et arrêtés]
 
 - id: r-am-extension-loi2002-32
   objet: décret étendant la loi n° 2004-71 (assurance maladie) au régime de la loi n° 2002-32, en application de l'art. 2 du décret n° 2007-1366
@@ -1080,7 +1068,7 @@
     couverture: 'Objet relu au fascicule le 24 septembre 2026 : loi n° 2024-48, art. 15, 1), al. 2, JORT n° 149 du 10 décembre 2024, éd. ar. p. 6420 (« وتضبط طرق تسيير الصندوق وشروط تدخلاته بمقتضى أمر » : modalités de fonctionnement du fonds et conditions de ses interventions) ; l''édition française (pp. 3421-3422, lue sur la copie de PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2025.pdf, absente du corpus JORT local) porte, p. 3421, « Les conditions et les modalités d''intervention du fonds sont fixées par décret. » Terme français « travailleuses agricoles » ajouté au plein texte et rejoué depuis le 10 décembre 2024 : aucune occurrence dans les éditions françaises (témoin positif hors période : JORT n° 129/2024, éd. fr.) ; en arabe, seules les pp. 6420-6421 du n° 149/2024 (art. 15 et 16). jort_cache jusqu''au 18 septembre 2026 : les deux notices des art. 15 et 16. Miroir iort : le seul décret-loi n° 2024-4. Fascicules lus : 2024 n° 149-159 (ar), 150-159 (fr) ; 2025 n° 1-156 (ar), 1-156 sauf 29, 47 et 77 (fr) ; 2026 n° 1-93 (ar) sauf 3 et 58, 1-93 (fr) sauf 11, 13 et 58. Lacunes : n° 58 de 2026 dans les deux éditions ; éditions françaises 2024 n° 149, 2025 n° 29, 47 et 77, 2026 n° 11 et 13 ; éd. arabe 2026 n° 3 (ces numéros, hors le n° 58, ont été lus dans l''autre édition par la passe précédente) ; fichiers « français » identiques à l''édition arabe, où le terme français ne pouvait donc pas se trouver : 2025 n° 4, 88, 90, 95, 96, 148 ; 2026 n° 10, 62, 76 ; rien après le n° 93 de 2026. Aucun décret d''application.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire: [lire le JORT n° 58 de 2026, lire les numéros postérieurs au n° 93 de 2026]
+  a_faire: [lire les numéros postérieurs au n° 93 de 2026]
 
 - id: r-atmp-echelle-modificatifs
   objet: texte modifiant, après le décret n° 99-1010, l'échelle des taux de cotisation au régime de réparation des accidents du travail et des maladies professionnelles (articles 1er et 2 nouveaux du décret n° 95-538)
@@ -2369,6 +2357,12 @@
     role: documentaliste
     sources: [jort_cache, corpus_local, pist]
     couverture: 'intitulés de jort_cache, textes publiés après le 9 juin 2023, jusqu''au n° 97 du 2 octobre 2026 ; plein texte des fascicules du corpus local de 2023 à 2026 (522 fichiers français, 555 arabes, jusqu''au n° 97 de 2026), plus le n° 98 du 6 octobre 2026 pris sur pist.tn. Plein texte en deux passes : la première, ligne par ligne (« 2019-542 », « 542 *لسنة *2019 », « عدد *542 »), écartée — elle manquait les numéros coupés en fin de ligne et, en arabe, les marques bidirectionnelles ; la seconde, qui fait foi, sur le texte remis sur une ligne, par expressions régulières : « 2019 ?[-‐–]? ?542 » (fichiers français), « 542 *لسنة *2019 » ou « برامج *الصندوق *الوطني *للتشغيل » (fichiers arabes, marques bidirectionnelles retirées). Aucun modificatif. Candidats lus et écartés : lois de finances pour 2024, 2025 et 2026 (lignes de crédit ; art. 14 de la loi de finances pour 2026, qui modifie la loi de finances pour 2000 et non le décret) ; décret n° 2024-182 et arrêté conjoint du 16 août 2024 (simples visas). Lacunes : fascicules inconnus de la base (parcourus en plein texte seulement) ; faux fascicules français (parcourus par leur jumeau arabe) ; pages sans couche texte ; citation arabe coupée par un saut de ligne ; un texte qui remplacerait le décret sans le citer et sans nommer le Fonds dans son intitulé. Note : docs/notes/marche-travail-politiques-emploi-objets-des-reformes.md, § 6 et § 11.1.'
+    couvert_jusqu_au: 2026-10-06
+    resultat: aucun
+  - date: 2026-11-01
+    role: archiviste
+    sources: [corpus_local]
+    couverture: 'Passe du 1er novembre 2026. Le décret 2024-182 et l''arrêté du 16 août 2024 sont déjà au chapitre (ligne r-mt-pe-rg-2024, dates d''effet corrigées par la PR #669) ; leurs visas ne citent que le décret n° 2023-461. Plein texte du JORT n° 58 de 2026 (8 juin 2026, éditions française et arabe, maintenant au corpus local) avec les motifs « 2019 ?-? ?542 », « 542 لسنة 2019 », « Fonds national de l''emploi », « الصندوق الوطني للتشغيل » et « 2023-461 » : aucune occurrence. Le n° 58 ne contient que les états financiers 2025 de la Banque centrale de Tunisie et le rapport des commissaires aux comptes. Les numéros postérieurs au n° 98 de 2026 ne sont pas relus ici.'
     couvert_jusqu_au: 2026-10-06
     resultat: aucun
 
@@ -4315,7 +4309,7 @@
     couverture: 'Passe du 31 octobre 2026. jort_cache, dernière publication indexée le 29 octobre 2026 (JORT n° 105) : LIKE sur titres et objets (travailleuses agricoles, الفلاحيات, affiliation, risques professionnels, المخاطر المهنية) depuis le 2 octobre 2026, 0 candidat. Plein texte (pdftotext, NFKC pour l''arabe) du JORT n° 58 de 2026 (8 juin 2026, éditions française et arabe, maintenant au corpus local), des n° 94 à 105 en arabe et des n° 94 à 106 en français, avec les motifs « العاملات الفلاحيات », « عاملات الفلاحيات », « travailleuses agricoles », « femmes rurales », « 2024-4 », « 4 لسنة 2024 » : aucune occurrence. Le n° 58 ne contient que les états financiers 2025 de la Banque centrale de Tunisie. Lacunes : n° 106 en arabe absent du corpus local et de jort_cache ; décrets d''application des art. 19, 22, 33 et 41 non publiés à cette date.'
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
-  a_faire: [lire le JORT n° 58 de 2026, relancer après mise à jour de jort_cache au-delà du 2 octobre 2026]
+  a_faire: [relancer après mise à jour de jort_cache au-delà du 2 octobre 2026]
 
 - id: r-decret-2015-2217-application
   objet: textes d'application, modificatifs ou dérogations du décret gouvernemental n° 2015-2217 du 11 décembre 2015 (rémunération des chefs d'entreprises publiques) — en particulier le décret gouvernemental fixant la liste des entreprises classées en catégorie exceptionnelle (art. 2, dernier alinéa), les arrêtés de classement et l'arrêté sur la commission de classement
@@ -5218,6 +5212,7 @@
     couverture: 'Relance du 1er novembre 2026, textes publiés du 1er décembre 2021 au 12 janvier 2024 : jort_cache (intitulés français et arabes ; seul candidat, le décret n° 2024-5 lui-même), miroir iort (même candidat), plein texte du corpus local des fascicules 2021 n° 112 à 120, 2022, 2023 et 2024 n° 1 à 6 (fascicules absents ou lus en arabe seulement énumérés par la relance). Les visas du décret n° 2024-5 citent le décret gouvernemental n° 2017-342 et aucun autre texte d''exonération des quatre aéroports.'
     couvert_jusqu_au: 2024-01-12
     resultat: aucun
+
 - id: r-cfl-art19-penalite-apres-2023
   objet: texte modifiant le paragraphe I de l'article 19 du code de la fiscalité locale (pénalité de retard de la taxe sur les immeubles bâtis) après le décret-loi n° 2022-79 (art. 59, § 7), qui porte la pénalité à 1,25 % par mois
   ou: [precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-immeubles-penalite]
