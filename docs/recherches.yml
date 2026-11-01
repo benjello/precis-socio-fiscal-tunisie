@@ -4841,7 +4841,7 @@
     resultat: aucun
 
 - id: r-diplomates-indemnite-poste-apres-1998
-  objet: texte transposant à la grille en dinars (décret n° 97-1832, concordance n° 99-2358) les tranches d'« indice » de l'indemnité de poste (décret n° 73-168, art. 2) et de l'indemnité de perte de change (décret n° 73-167, art. 11-12) ; arrêtés de classement zonal des postes postérieurs à 1985
+  objet: texte rapportant à la grille en dinars (décret n° 97-1832, concordance n° 99-2358) les indices de référence du tableau de l'article 2 (nouveau) du décret n° 73-167, issu du décret n° 89-842, qui servent à l'impôt et aux retenues de retraite des agents en poste ; arrêtés annuels du Premier ministre fixant la rémunération par pays, fonction et grade
   ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-ri-diplomates]
   requetes:
     titres_fts:
@@ -4856,7 +4856,13 @@
     couverture: 'titres de jort_cache, 1956 au 2 octobre 2026 : modificatifs du décret n° 73-167 jusqu''au décret n° 2008-3481 (aucun ne touche l''art. 2 du décret n° 73-168 d''après les intitulés ; 2004-1772 et 2008-3481 lus : bagages, enseignement des enfants) ; pour le décret n° 73-168, seul l''arrêté du 1er mars 1985. Arrêtés de classement zonal non indexés sous ces termes. Plein texte non parcouru ; les arrêtés peuvent ne pas être publiés. Fascicules de 2024-2026 inconnus de jort_cache non parcourus ; --sonder-pist non lancé.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire: [lire les décrets n° 85-1183, 89-842, 90-721 (1985-1990, scans), plein texte]
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Décrets n° 85-1183, 89-842, 90-721, 91-664 (porté sous 91-666 par jort_cache) et 92-93 lus à l''image (corpus local, JORT n° 68 de 1985, n° 50 de 1989, n° 32 de 1990, n° 37 de 1991, n° 6 de 1992), ainsi que les articles 2 à 12 du décret n° 73-167 (JORT n° 14 de 1973, p. 588-592). Le décret n° 89-842 abroge les articles 5 (indemnité de poste), 6 (zones), 7 (représentation), 10 (logement à 50 %), 11 et 12 (perte de change) et remplace les articles 2, 4, 9, 25 et 27 : la rémunération devient un montant en dinars fixé chaque année par arrêté du Premier ministre, et un tableau d''indices de référence (155 à 800) sert à l''impôt et aux retenues de retraite. Aucun texte n''est trouvé qui rapporte ces indices à la grille de 1997 ; les arrêtés annuels ne sont pas indexés sous ces termes. Plein texte et fascicules arabes non parcourus.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte, arrêtés annuels du Premier ministre]
 
 - id: r-loi2020-38-decrets-application
   objet: décrets gouvernementaux d'application des art. 1 à 3 de la loi n° 2020-38 (recrutement direct des chômeurs diplômés de longue durée)
