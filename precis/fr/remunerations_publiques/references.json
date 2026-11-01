@@ -764,7 +764,7 @@
     {
       "id": "cc-banques-2014",
       "type": "legislation",
-      "note": "citation-key: cc-banques-2014\nJournal officiel n° 23 du 21 mars 2014, édition française (« traduction française pour information »), p. 718 : l'arrêté seul, le texte de la convention étant « publié uniquement en langue arabe ». Édition arabe : arrêté p. 694, convention pp. 695-715, grille des salaires au 1er mai 2012 p. 716 (https://www.pist.tn/jort/2014/2014A/Ja0232014.pdf). Convention signée le 29 novembre 2013, applicable depuis le 1er mai 2012 (art. 57). Fascicule déposé le 24 mars 2014.",
+      "note": "citation-key: cc-banques-2014\nJournal officiel n° 23 du 21 mars 2014, édition française (« traduction française pour information »), p. 718 : l'arrêté seul, le texte de la convention étant « publié uniquement en langue arabe ». Édition arabe : arrêté p. 694 (https://www.pist.tn/jort/2014/2014A/Ja0232014.pdf). Texte de la convention : clé cc-banques-texte-2014. Fascicule déposé le 24 mars 2014.",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "23",
       "page": "718",
@@ -780,6 +780,26 @@
         ]
       },
       "title-short": "Arrêté du ministre des affaires sociales du 17 février 2014"
+    },
+    {
+      "id": "cc-banques-texte-2014",
+      "type": "legislation",
+      "title": "Convention collective sectorielle du personnel des banques et des établissements financiers (révisée), signée le 29 novembre 2013",
+      "container-title": "Journal officiel de la République tunisienne (édition arabe)",
+      "issue": "23",
+      "page": "695-716",
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            11,
+            29
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2014/2014A/Ja0232014.pdf",
+      "title-short": "Convention collective des banques et établissements financiers (révisée), 29 novembre 2013",
+      "note": "citation-key: cc-banques-texte-2014\nJournal officiel n° 23 du 21 mars 2014, édition arabe seule (le texte n'est pas traduit dans l'édition française) : convention pp. 695-715, grille des salaires applicable à partir du 1er mai 2012 p. 716. Texte annexé à l'arrêté du 17 février 2014 (clé cc-banques-2014). Signée par l'Association professionnelle tunisienne des banques et des établissements financiers et la Fédération générale des banques et des établissements financiers de l'UGTT."
     },
     {
       "id": "decret-95-2487",
@@ -5074,7 +5094,7 @@
       },
       "URL": "https://www.pist.tn/jort/2023/2023F/Jo1082023.pdf",
       "title-short": "Décret n° 2023-592 du 21 septembre 2023",
-      "note": "citation-key: decret2023-592\nJournal officiel n° 108 du 22 septembre 2023, édition française (« traduction française pour information »), pp. 2402-2403 ; art. 1er p. 2403. Édition arabe : pp. 5290-5291 (https://www.pist.tn/jort/2023/2023A/Ja1082023.pdf). Fascicule déposé le 22 septembre 2023 : décret exécutoire le 27 septembre 2023 (loi n° 93-64, art. 2). Métadonnées jort_cache.db."
+      "note": "citation-key: decret2023-592\nJournal officiel n° 108 du 22 septembre 2023, édition française (« traduction française pour information »), pp. 2402-2403 ; art. 1er p. 2403. Édition arabe : début p. 5290 ; art. 1er sur la page suivante, numérotée 5291 d'après l'ordre des pages, le numéro n'étant pas imprimé sur cette page (https://www.pist.tn/jort/2023/2023A/Ja1082023.pdf). Fascicule déposé le 22 septembre 2023 : décret exécutoire le 27 septembre 2023 (loi n° 93-64, art. 2). Métadonnées jort_cache.db."
     },
     {
       "id": "minfin-rapport-budget-actualise-2012",

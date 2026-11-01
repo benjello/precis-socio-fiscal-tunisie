@@ -717,10 +717,10 @@
     {
       "id": "cc-banques-2014",
       "type": "legislation",
-      "note": "citation-key: cc-banques-2014\nJournal officiel n° 23 du 21 mars 2014, édition arabe : arrêté p. 694, convention pp. 695-715, grille des salaires au 1er mai 2012 p. 716.",
+      "note": "citation-key: cc-banques-2014\nJournal officiel n° 23 du 21 mars 2014, édition arabe : arrêté p. 694. Texte de la convention : clé cc-banques-texte-2014.",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "23",
-      "page": "694-716",
+      "page": "694",
       "title": "قرار من وزير الشؤون الاجتماعية مؤرخ في 17 فيفري 2014 يتعلق بالمصادقة على الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية (معدلة)",
       "URL": "https://www.pist.tn/jort/2014/2014A/Ja0232014.pdf",
       "issued": {
@@ -732,6 +732,25 @@
           ]
         ]
       }
+    },
+    {
+      "id": "cc-banques-texte-2014",
+      "type": "legislation",
+      "title": "الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية (معدلة)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "23",
+      "page": "695-716",
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            11,
+            29
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2014/2014A/Ja0232014.pdf",
+      "note": "citation-key: cc-banques-texte-2014\nJournal officiel n° 23 du 21 mars 2014, édition arabe : convention pp. 695-715, grille des salaires au 1er mai 2012 p. 716."
     },
     {
       "id": "decret-95-2487",
@@ -4795,7 +4814,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/2023/2023A/Ja1082023.pdf",
-      "note": "citation-key: decret2023-592\nJournal officiel n° 108 de 2023, édition arabe, pp. 5290-5291. Métadonnées jort_cache.db."
+      "note": "citation-key: decret2023-592\nJournal officiel n° 108 de 2023, édition arabe, début p. 5290 ; art. 1er sur la page suivante, numérotée 5291 d'après l'ordre des pages. Métadonnées jort_cache.db."
     },
     {
       "id": "minfin-rapport-budget-actualise-2012",
