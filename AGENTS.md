@@ -106,6 +106,14 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   écris sont celles du jour (`date`), jamais une date future ; `scripts/check_backlog.py`
   refuse les marqueurs de conflit, les dates futures proches et les clés de citation absentes
   des `references.json`.
+- **Une clé de références dit la même chose dans tous les livres.** Quand tu ajoutes ou corriges
+  une notice dans le `references.json` d'un livre, cherche la même clé dans les autres
+  (`grep -l '"id": "<clé>"' precis/*/references.json precis/*/*/references.json`) et aligne
+  type, titre, recueil, volume, numéro, pages, date et adresse. Une pagination dépend de
+  l'édition (française ou arabe) : si tu cites l'édition arabe, crée une clé distincte
+  (`<clé>-ar`) au lieu de modifier celle de l'édition française.
+  `scripts/check_references_coherentes.py` refuse deux définitions divergentes ; un cas non
+  résolu se déclare, daté et motivé, dans `scripts/references_tolerances.yml`.
 
 - **Les volumes documentent la loi, jamais le modèle.** Ni `openfisca`, ni « le modèle », ni « les
   paramètres » dans le texte rendu d'un volume. La documentation générale — README, page

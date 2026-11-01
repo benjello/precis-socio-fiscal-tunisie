@@ -844,7 +844,7 @@
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "2",
       "volume": "160",
-      "page": "60",
+      "page": "60-61",
       "issued": {
         "date-parts": [
           [
@@ -883,6 +883,7 @@
       "title": "Loi n° 2019-77 du 12 décembre 2019, portant loi de finances complémentaire pour l'année 2019",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "100",
+      "page": "4266-4274",
       "issued": {
         "date-parts": [
           [
@@ -2336,7 +2337,7 @@
     {
       "id": "bct-ra-2002",
       "type": "report",
-      "title": "44ème Rapport annuel. Exercice 2002",
+      "title": "44ème Rapport annuel. Année 2002",
       "author": [
         {
           "literal": "Banque centrale de Tunisie"
@@ -2355,7 +2356,7 @@
         ]
       },
       "title-short": "BCT, Rapport annuel 2002",
-      "note": "citation-key: bct-ra-2002\n44ème Rapport annuel : lettre introductive lue en couche texte (« 44ème Rapport annuel », « relatif à l'année 2002 »), le 27 octobre 2026. Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2002.pdf (3794313 octets, 258 pages, SHA-256 c0788cbf0e71359495d8c1dccd27fd12b383187d5b3f6161bf4e17db1c3d196d, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
+      "note": "citation-key: bct-ra-2002\n44ème Rapport annuel : lettre introductive lue en couche texte (« 44ème Rapport annuel », « relatif à l'année 2002 »), le 27 octobre 2026. Titre alignés sur la clé du fonds commun (couverture ou page de titre lue le 6 octobre 2026). Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2002.pdf (3794313 octets, 258 pages, SHA-256 c0788cbf0e71359495d8c1dccd27fd12b383187d5b3f6161bf4e17db1c3d196d, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
     },
     {
       "id": "bct-ra-2003",
@@ -2384,7 +2385,7 @@
     {
       "id": "bct-ra-2004",
       "type": "report",
-      "title": "46ème Rapport annuel. Exercice 2004",
+      "title": "46ème Rapport annuel. Année 2004",
       "author": [
         {
           "literal": "Banque centrale de Tunisie"
@@ -2403,7 +2404,7 @@
         ]
       },
       "title-short": "BCT, Rapport annuel 2004",
-      "note": "citation-key: bct-ra-2004\n46ème Rapport annuel : lettre introductive lue en couche texte (« 46ème Rapport annuel »), le 27 octobre 2026. Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2004.pdf (5284916 octets, 281 pages, SHA-256 6e6a23eb42235402f286a9cc542f37ccaea60ede08fc1ae7f4fb4644587eaa3e, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
+      "note": "citation-key: bct-ra-2004\n46ème Rapport annuel : lettre introductive lue en couche texte (« 46ème Rapport annuel »), le 27 octobre 2026. Titre alignés sur la clé du fonds commun (couverture ou page de titre lue le 6 octobre 2026). Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2004.pdf (5284916 octets, 281 pages, SHA-256 6e6a23eb42235402f286a9cc542f37ccaea60ede08fc1ae7f4fb4644587eaa3e, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
     },
     {
       "id": "bct-ra-2005",
@@ -2432,7 +2433,7 @@
     {
       "id": "bct-ra-2006",
       "type": "report",
-      "title": "48ème Rapport annuel. Exercice 2006",
+      "title": "Rapport annuel 2006",
       "author": [
         {
           "literal": "Banque centrale de Tunisie"
@@ -2451,12 +2452,20 @@
         ]
       },
       "title-short": "BCT, Rapport annuel 2006",
-      "note": "citation-key: bct-ra-2006\n48ème Rapport annuel : lettre introductive lue en couche texte (« 48ème Rapport annuel »), le 27 octobre 2026. Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2006.pdf (4876226 octets, 314 pages, SHA-256 4706db36f5fae30783be7db35f693d5b15d83eaaf655027017c535d08312ec12, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: bct-ra-2006\n48ème Rapport annuel : lettre introductive lue en couche texte (« 48ème Rapport annuel »), le 27 octobre 2026. Titre et date de parution alignés sur la clé du fonds commun (couverture ou page de titre lue le 6 octobre 2026). URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2006.pdf (4876226 octets, 314 pages, SHA-256 4706db36f5fae30783be7db35f693d5b15d83eaaf655027017c535d08312ec12, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
     },
     {
       "id": "bct-ra-2007",
       "type": "report",
-      "title": "49ème Rapport annuel. Exercice 2007",
+      "title": "Rapport annuel 2007",
       "author": [
         {
           "literal": "Banque centrale de Tunisie"
@@ -2475,12 +2484,20 @@
         ]
       },
       "title-short": "BCT, Rapport annuel 2007",
-      "note": "citation-key: bct-ra-2007\n49ème Rapport annuel : lettre introductive lue en couche texte (« 49ème Rapport annuel »), le 27 octobre 2026. Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2007.pdf (5357037 octets, 327 pages, SHA-256 f62e7386d8508bdb09fbd723c601831cf61a0237f96d2dc372471f3c7be17fa7, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
+      "issued": {
+        "date-parts": [
+          [
+            2008,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: bct-ra-2007\n49ème Rapport annuel : lettre introductive lue en couche texte (« 49ème Rapport annuel »), le 27 octobre 2026. Titre et date de parution alignés sur la clé du fonds commun (couverture ou page de titre lue le 6 octobre 2026). URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2007.pdf (5357037 octets, 327 pages, SHA-256 f62e7386d8508bdb09fbd723c601831cf61a0237f96d2dc372471f3c7be17fa7, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
     },
     {
       "id": "bct-ra-2008",
       "type": "report",
-      "title": "50ème Rapport annuel. Exercice 2008",
+      "title": "Rapport annuel 2008",
       "author": [
         {
           "literal": "Banque centrale de Tunisie"
@@ -2499,12 +2516,20 @@
         ]
       },
       "title-short": "BCT, Rapport annuel 2008",
-      "note": "citation-key: bct-ra-2008\n50ème Rapport annuel : lettre introductive lue en couche texte (« le cinquantième rapport », « exercice 2008 »), le 27 octobre 2026. Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2008.pdf (5549555 octets, 318 pages, SHA-256 6b34c56340373277f169f0d956f193bb625b32a8cd0bba2b254df285fec7b754, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            6
+          ]
+        ]
+      },
+      "note": "citation-key: bct-ra-2008\n50ème Rapport annuel : lettre introductive lue en couche texte (« le cinquantième rapport », « exercice 2008 »), le 27 octobre 2026. Titre et date de parution alignés sur la clé du fonds commun (couverture ou page de titre lue le 6 octobre 2026). URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2008.pdf (5549555 octets, 318 pages, SHA-256 6b34c56340373277f169f0d956f193bb625b32a8cd0bba2b254df285fec7b754, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
     },
     {
       "id": "bct-ra-2009",
       "type": "report",
-      "title": "51ème Rapport annuel. Exercice 2009",
+      "title": "51ème Rapport annuel. Année 2009",
       "author": [
         {
           "literal": "Banque centrale de Tunisie"
@@ -2523,7 +2548,7 @@
         ]
       },
       "title-short": "BCT, Rapport annuel 2009",
-      "note": "citation-key: bct-ra-2009\n51ème Rapport annuel : lettre introductive lue en couche texte (« 51ème Rapport annuel »), le 27 octobre 2026. Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2009.pdf (4260394 octets, 319 pages, SHA-256 31fa52154ab162dc4afb689620634bdf9f2732d3c78ff0ee4e47d74906ed0c90, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
+      "note": "citation-key: bct-ra-2009\n51ème Rapport annuel : lettre introductive lue en couche texte (« 51ème Rapport annuel »), le 27 octobre 2026. Titre alignés sur la clé du fonds commun (couverture ou page de titre lue le 6 octobre 2026). Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2009.pdf (4260394 octets, 319 pages, SHA-256 31fa52154ab162dc4afb689620634bdf9f2732d3c78ff0ee4e47d74906ed0c90, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
     },
     {
       "id": "bct-ra-2010",
@@ -2556,7 +2581,8 @@
       "title-short": "Loi n° 85-109 du 31 décembre 1985",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "91",
-      "page": "1730-1741",
+      "volume": "128",
+      "page": "1730-1773",
       "issued": {
         "date-parts": [
           [
@@ -2830,26 +2856,6 @@
       "note": "citation-key: loi2013-51-lfc2013\nJORT n° 102 du 24 décembre 2013, déposé le 26 décembre 2013."
     },
     {
-      "id": "loi2013-54-lf2014",
-      "type": "legislation",
-      "title": "Loi n° 2013-54 du 30 décembre 2013, portant loi de finances pour l'année 2014",
-      "title-short": "Loi n° 2013-54 du 30 décembre 2013",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "105",
-      "page": "3670",
-      "issued": {
-        "date-parts": [
-          [
-            2013,
-            12,
-            30
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2013/2013F/Jo1052013.pdf",
-      "note": "citation-key: loi2013-54-lf2014\nJORT n° 105 du 31 décembre 2013, déposé le 3 janvier 2014."
-    },
-    {
       "id": "loi2014-59-lf2015",
       "type": "legislation",
       "title": "Loi n° 2014-59 du 26 décembre 2014, portant loi de finances pour l'année 2015",
@@ -2908,26 +2914,6 @@
       },
       "URL": "https://www.pist.tn/jort/2018/2018F/Jo0532018.pdf",
       "note": "citation-key: loi2018-36\nJORT n° 53 du 3 juillet 2018, déposé le 10 juillet 2018."
-    },
-    {
-      "id": "loi2018-56-lf2019",
-      "type": "legislation",
-      "title": "Loi n° 2018-56 du 27 décembre 2018, portant loi de finances pour l'année 2019",
-      "title-short": "Loi n° 2018-56 du 27 décembre 2018",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "104",
-      "page": "5446",
-      "issued": {
-        "date-parts": [
-          [
-            2018,
-            12,
-            27
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2018/2018A/Ja1042018.pdf",
-      "note": "citation-key: loi2018-56-lf2019\nJORT n° 104 du 28 décembre 2018, édition arabe (édition française absente de pist.tn), déposé le 31 décembre 2018."
     },
     {
       "id": "lfc-2014",
@@ -3327,7 +3313,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/2015/2015F/Jo0042015.pdf",
-      "note": "citation-key: decret2015-5-req-sfax\nJORT n° 4 du 13 janvier 2015, déposé au gouvernorat de Tunis le 15 janvier 2015. Texte lu dans la couche texte du fascicule du corpus local (Jo0042015.pdf) le 31 octobre 2026 (traduction française pour information) ; page conforme au sommaire (en-tête de page imprimé en bas). Liste nominative annexée non lue."
+      "note": "citation-key: decret2015-5-req-sfax\nJORT n° 4 du 13 janvier 2015, déposé au gouvernorat de Tunis le 15 janvier 2015. Texte lu dans la couche texte du fascicule du corpus local (Jo0042015.pdf) le 31 octobre 2026 (traduction française pour information) ; page conforme au sommaire (en-tête de page imprimé en bas). Liste nominative annexée non lue.\nFiche fusionnée (ancienne clé decret2015-5-srt-sfax) : JORT n° 4 du 13 janvier 2015, déposé au gouvernorat de Tunis le 15 janvier 2015. Articles 1er à 5 lus le 29 octobre 2026 dans la couche texte ; « immédiatement exécutoire » (art. 2), réquisition à partir du 13 janvier 2015 (art. 1er) ; liste annexée non publiée. Métadonnées jort_cache.db (recid 78671)."
     },
     {
       "id": "decret2015-6-req-bizerte",
@@ -4428,7 +4414,7 @@
     {
       "id": "bct-ra-1999",
       "type": "report",
-      "title": "41ème Rapport annuel. Exercice 1999",
+      "title": "41ème Rapport d'activité. Exercice 1999",
       "author": [
         {
           "literal": "Banque centrale de Tunisie"
@@ -4447,7 +4433,7 @@
         ]
       },
       "title-short": "BCT, Rapport annuel 1999",
-      "note": "citation-key: bct-ra-1999\nTitre : Lettre introductive au 41ème Rapport annuel ; « Exercice 1999 », le 27 octobre 2026. Rapport n° 41 de la BCT (catalogue « Rapport Annuel, n° 41 »). Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/RA_fr_1999.pdf (15881746 octets, 248 pages, SHA-256 f668f9f444e0ba7ebe98531c6dcb3e42d27af1ef7397830de880a867b3f89161, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
+      "note": "citation-key: bct-ra-1999\nTitre : Lettre introductive au 41ème Rapport annuel ; « Exercice 1999 », le 27 octobre 2026. Rapport n° 41 de la BCT (catalogue « Rapport Annuel, n° 41 »). Titre alignés sur la clé du fonds commun (couverture ou page de titre lue le 6 octobre 2026). Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/RA_fr_1999.pdf (15881746 octets, 248 pages, SHA-256 f668f9f444e0ba7ebe98531c6dcb3e42d27af1ef7397830de880a867b3f89161, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
     },
     {
       "id": "bct-ra-2000",
@@ -4476,7 +4462,7 @@
     {
       "id": "bct-ra-2001",
       "type": "report",
-      "title": "43ème Rapport annuel. Exercice 2001",
+      "title": "43ème Rapport annuel. Année 2001",
       "author": [
         {
           "literal": "Banque centrale de Tunisie"
@@ -4495,7 +4481,7 @@
         ]
       },
       "title-short": "BCT, Rapport annuel 2001",
-      "note": "citation-key: bct-ra-2001\nTitre : Lettre introductive au 43ème Rapport annuel, le 27 octobre 2026. Rapport n° 43 de la BCT (catalogue « Rapport Annuel, n° 43 »). Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2001.pdf (3627844 octets, 252 pages, SHA-256 cbc39792599a985b4a65aa3af9f63147208a4f4cf600982afc02a5a6520e0bf1, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
+      "note": "citation-key: bct-ra-2001\nTitre : Lettre introductive au 43ème Rapport annuel, le 27 octobre 2026. Rapport n° 43 de la BCT (catalogue « Rapport Annuel, n° 43 »). Titre alignés sur la clé du fonds commun (couverture ou page de titre lue le 6 octobre 2026). Aucune date de parution lue, d'où l'absence de date. URL du catalogue de tunisia-data (sources/bct-archives-urls.csv) ; copie locale data/raw/bct-archives/109/rapport2001.pdf (3627844 octets, 252 pages, SHA-256 cbc39792599a985b4a65aa3af9f63147208a4f4cf600982afc02a5a6520e0bf1, ignorée par git). Les pages citées sont celles du pied de page. Distincte de bct-ra (jeu de données générique « Rapport Annuel 2024 »). Consulté le 27 octobre 2026."
     },
     {
       "id": "bct-ra-2012",
@@ -10467,26 +10453,6 @@
       "note": "citation-key: loi2005-74-srt\nJORT n° 62 du 5 août 2005, déposé au gouvernorat de Tunis le 6 août 2005. Articles 1er et 2 lus le 29 octobre 2026 dans la couche texte (police décalée, décodée). Métadonnées jort_cache.db (recid 110630)."
     },
     {
-      "id": "decret2015-5-srt-sfax",
-      "type": "legislation",
-      "title": "Décret n° 2015-5 du 13 janvier 2015, portant réquisition de certains personnels de la société régionale de transport de Sfax",
-      "title-short": "Décret n° 2015-5 du 13 janvier 2015",
-      "container-title": "Journal officiel de la République tunisienne",
-      "issue": "4",
-      "page": "105",
-      "issued": {
-        "date-parts": [
-          [
-            2015,
-            1,
-            13
-          ]
-        ]
-      },
-      "URL": "https://www.pist.tn/jort/2015/2015F/Jo0042015.pdf",
-      "note": "citation-key: decret2015-5-srt-sfax\nJORT n° 4 du 13 janvier 2015, déposé au gouvernorat de Tunis le 15 janvier 2015. Articles 1er à 5 lus le 29 octobre 2026 dans la couche texte ; « immédiatement exécutoire » (art. 2), réquisition à partir du 13 janvier 2015 (art. 1er) ; liste annexée non publiée. Métadonnées jort_cache.db (recid 78671)."
-    },
-    {
       "id": "decret2015-6-srt-bizerte",
       "type": "legislation",
       "title": "Décret n° 2015-6 du 13 janvier 2015, portant réquisition de certains personnels de la société régionale de transport de Bizerte",
@@ -12332,6 +12298,7 @@
       "title": "Décret-loi n° 61-15 du 30 septembre 1961, portant création d'un Office des terres domaniales",
       "title-short": "Décret-loi n° 61-15 du 30 septembre 1961",
       "container-title": "Journal officiel de la République tunisienne",
+      "volume": "104",
       "issue": "41",
       "page": "1282-1284",
       "issued": {
@@ -13317,7 +13284,7 @@
       "title-short": "Arrêté conjoint du 8 avril 2025",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "43",
-      "page": "856",
+      "page": "856-857",
       "issued": {
         "date-parts": [
           [
@@ -13543,7 +13510,7 @@
           [
             1957,
             9,
-            13
+            10
           ]
         ]
       },
