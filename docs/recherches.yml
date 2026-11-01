@@ -2472,6 +2472,12 @@
     couverture: 'titres de jort_cache jusqu''au n° 97 du 2 octobre 2026 ; plein texte des 581 fascicules arabes du corpus du n° 116/2022 au n° 97/2026 (2022 : 26 ; 2023 : 146 ; 2024 : 158 ; 2025 : 156 ; 2026 : 95) — la requête retrouve bien l''avenant n° 15 au n° 116/2022, seul résultat ; fascicules arabes absents du corpus, donc non parcourus : n° 130 et 132 de 2022, n° 45, 122 et 146 de 2023, n° 9 de 2024, n° 3 et 58 de 2026 (2025 complet jusqu''au n° 156 ; derniers numéros présents : 143, 149, 159, 156, 97) ; cinq fascicules à couche texte très courte non contrôlés à l''image (Ja0842024, Ja1252024, Ja0372025, Ja0672025, Ja0702025) ; grilles et pages numérisées sans couche texte hors d''atteinte de la requête ; page du tiers paie-tunisie.com (8 octobre 2026) : dernier document proposé = avenant n° 15'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache jusqu''au n° 107 du 29 octobre 2026 ; plein texte des fascicules français n° 98 à 106 et arabes n° 98 à 105 de 2026, depuis le 3 octobre : aucune occurrence ; fascicules au-delà du 29 octobre hors de portée (liste non connue localement)'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
 
 - id: r-ccl-2018-decrets-art391
   objet: décret gouvernemental pris en vertu de l'art. 391, al. 2, du code des collectivités locales (loi organique n° 2018-29), fixant, sur avis de la Haute instance des finances locales, le droit de licence sur les débits de boissons, la redevance de légalisation de signature, la redevance de certification conforme ou la délivrance de certificats et actes ; ou tout décret de tarifs postérieur au décret gouvernemental n° 2016-805

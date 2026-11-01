@@ -717,8 +717,11 @@
     {
       "id": "cc-banques-2014",
       "type": "legislation",
-      "note": "citation-key: cc-banques-2014",
-      "title": "قرار من وزير الشؤون الاجتماعية مؤرخ في 17 فيفري 2014 يتعلق بالمصادقة على الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية (المنقحة)",
+      "note": "citation-key: cc-banques-2014\nJournal officiel n° 23 du 21 mars 2014, édition arabe : arrêté p. 694. Texte de la convention : clé cc-banques-texte-2014.",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "23",
+      "page": "694",
+      "title": "قرار من وزير الشؤون الاجتماعية مؤرخ في 17 فيفري 2014 يتعلق بالمصادقة على الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية (معدلة)",
       "URL": "https://www.pist.tn/jort/2014/2014A/Ja0232014.pdf",
       "issued": {
         "date-parts": [
@@ -729,6 +732,25 @@
           ]
         ]
       }
+    },
+    {
+      "id": "cc-banques-texte-2014",
+      "type": "legislation",
+      "title": "الاتفاقية المشتركة القطاعية لأعوان البنوك والمؤسسات المالية (معدلة)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "23",
+      "page": "695-716",
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            11,
+            29
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2014/2014A/Ja0232014.pdf",
+      "note": "citation-key: cc-banques-texte-2014\nJournal officiel n° 23 du 21 mars 2014, édition arabe : convention pp. 695-715, grille des salaires au 1er mai 2012 p. 716."
     },
     {
       "id": "decret-95-2487",
@@ -4485,12 +4507,303 @@
       "note": "citation-key: decret-gouv2019-1129\nJournal officiel n° 99 de 2019, édition arabe, p. 4516-4517. Modifié par le décret gouvernemental n° 2021-370. Métadonnées jort_cache.db."
     },
     {
+      "id": "decret2001-2775",
+      "type": "legislation",
+      "title": "Décret n° 2001-2775 du 6 décembre 2001, portant institution d'une indemnité spécifique au profit des magistrats du tribunal administratif",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "100",
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            12,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2001/2001A/Ja1002001.pdf",
+      "note": "citation-key: decret2001-2775\nJournal officiel n° 100, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire. Métadonnées jort_cache.db."
+    },
+    {
+      "id": "decret2001-2776",
+      "type": "legislation",
+      "title": "Décret n° 2001-2776 du 6 décembre 2001, portant institution d'une indemnité spécifique au profit des magistrats de la cour des comptes",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "100",
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            12,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2001/2001A/Ja1002001.pdf",
+      "note": "citation-key: decret2001-2776\nJournal officiel n° 100, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire. Métadonnées jort_cache.db."
+    },
+    {
+      "id": "decret2009-2791",
+      "type": "legislation",
+      "title": "Décret n° 2009-2791 du 28 septembre 2009, modifiant le décret n° 2001-2775 du 6 décembre 2001 portant institution d'une indemnité spécifique au profit des magistrats du tribunal administratif",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "80",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            9,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009A/Ja0802009.pdf",
+      "note": "citation-key: decret2009-2791\nJournal officiel n° 80, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire. Métadonnées jort_cache.db."
+    },
+    {
+      "id": "decret2009-2792",
+      "type": "legislation",
+      "title": "Décret n° 2009-2792 du 28 septembre 2009, modifiant le décret n° 2001-2776 du 6 décembre 2001 portant institution d'une indemnité spécifique au profit des magistrats de la cour des comptes",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "80",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            9,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009A/Ja0802009.pdf",
+      "note": "citation-key: decret2009-2792\nJournal officiel n° 80, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire. Métadonnées jort_cache.db."
+    },
+    {
+      "id": "decret2009-2826",
+      "type": "legislation",
+      "title": "Décret n° 2009-2826 du 28 septembre 2009, portant modification du décret n° 2001-2125 du 10 septembre 2001, portant institution d'une indemnité spécifique au profit des magistrats de l'ordre judiciaire",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "80",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            9,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009A/Ja0802009.pdf",
+      "note": "citation-key: decret2009-2826\nJournal officiel n° 80, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire. Métadonnées jort_cache.db."
+    },
+    {
+      "id": "decret2019-654",
+      "type": "legislation",
+      "title": "أمر حكومي عدد 654 لسنة 2019 مؤرخ في 5 أوت 2019 يتعلق بضبط شروط كيفية التعويض لفائدة القضاة العاملين خارج أوقات عملهم العادية والمباشرين بالمحاكم من الصنف العدلي تطبيقا للقانون عدد 5 لسنة 2016 المؤرخ في 16 فيفري 2016 المتعلق بتنقيح وإتمام بعض أحكام مجلة الإجراءات الجزائية",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "63",
+      "page": "2453-2454",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            5
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2019/2019A/Ja0632019.pdf",
+      "note": "citation-key: decret2019-654\nJournal officiel n° 63 du 6 août 2019, édition arabe, pp. 2453-2454."
+    },
+    {
+      "id": "decret71-364",
+      "type": "legislation",
+      "title": "Décret n° 71-364 du 9 octobre 1971, règlementant l'attribution et la rémunération des emplois fonctionnels des administrations centrales",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "44",
+      "issued": {
+        "date-parts": [
+          [
+            1971,
+            10,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1971/1971A/Ja04471.pdf",
+      "note": "citation-key: decret71-364\nJournal officiel n° 44 des 12-15 octobre 1971, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire."
+    },
+    {
+      "id": "decret71-365",
+      "type": "legislation",
+      "title": "Décret n° 71-365 du 9 octobre 1971, fixant le taux de l'indemnité de fonction attribuée aux agents chargés d'un emploi fonctionnel",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "44",
+      "issued": {
+        "date-parts": [
+          [
+            1971,
+            10,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1971/1971A/Ja04471.pdf",
+      "note": "citation-key: decret71-365\nJournal officiel n° 44 des 12-15 octobre 1971, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire."
+    },
+    {
+      "id": "decret88-188",
+      "type": "legislation",
+      "title": "Décret n° 88-188 du 11 février 1988, réglementant les conditions d'attribution et de retrait des emplois fonctionnels de secrétaire général de ministère, de directeur général d'administration centrale, de directeur d'administration centrale, de sous-directeur d'administration centrale et de chef de service d'administration centrale",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "13",
+      "issued": {
+        "date-parts": [
+          [
+            1988,
+            2,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1988/1988A/Ja01388.pdf",
+      "note": "citation-key: decret88-188\nJournal officiel n° 13 des 16-19 février 1988, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire."
+    },
+    {
+      "id": "decret91-800",
+      "type": "legislation",
+      "title": "Décret n° 91-800 du 25 mai 1991, modifiant le décret n° 76-843 du 23 septembre 1976, fixant le régime applicable aux membres des cabinets ministériels",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "38",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            5,
+            25
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1991/1991A/Ja03891.pdf",
+      "note": "citation-key: decret91-800\nJournal officiel n° 38 du 30 mai 1991, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire."
+    },
+    {
+      "id": "decret91-801",
+      "type": "legislation",
+      "title": "Décret n° 91-801 du 25 mai 1991, modifiant le décret n° 83-576 du 17 juin 1983, fixant le taux de l'indemnité de fonction attribuée aux agents chargés d'un emploi fonctionnel",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "38",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            5,
+            25
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1991/1991A/Ja03891.pdf",
+      "note": "citation-key: decret91-801\nJournal officiel n° 38 du 30 mai 1991, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire."
+    },
+    {
+      "id": "decret97-1321",
+      "type": "legislation",
+      "title": "Décret n° 97-1321 du 7 juillet 1997, relatif à l'institution d'indemnités complémentaires aux indemnités spécifiques allouées à certains agents nantis d'emplois fonctionnels",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "57",
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            7,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1997/1997A/Ja05797.pdf",
+      "note": "citation-key: decret97-1321\nJournal officiel n° 57 du 18 juillet 1997, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire."
+    },
+    {
+      "id": "decret2006-1718",
+      "type": "legislation",
+      "title": "Décret n° 2006-1718 du 19 juin 2006, modifiant le décret n° 76-843 du 23 septembre 1976 fixant le régime applicable aux membres des cabinets ministériels",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "50",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            6,
+            19
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006A/Ja0502006.pdf",
+      "note": "citation-key: decret2006-1718\nJournal officiel n° 50 du 23 juin 2006, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire."
+    },
+    {
+      "id": "decret2006-1719",
+      "type": "legislation",
+      "title": "Décret n° 2006-1719 du 19 juin 2006, modifiant et complétant le décret n° 91-801 du 25 mai 1991, fixant le taux de l'indemnité de fonction attribuée aux agents chargés d'un emploi fonctionnel",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "50",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            6,
+            19
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006A/Ja0502006.pdf",
+      "note": "citation-key: decret2006-1719\nJournal officiel n° 50 du 23 juin 2006, édition arabe ; pagination de l'édition arabe non relevée. Intitulé arabe non relevé : intitulé français provisoire."
+    },
+    {
+      "id": "decret2017-985",
+      "type": "legislation",
+      "title": "أمر حكومي عدد 985 لسنة 2017 مؤرخ في 15 أوت 2017 يتعلق بتنقيح وإتمام الأمر عدد 4506 لسنة 2013 المؤرخ في 6 نوفمبر 2013 المتعلق بإحداث الوكالة الفنية للاتصالات وبضبط تنظيمها الإداري والمالي وطرق تسييرها",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "70-71",
+      "page": "2958-2964",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            8,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2017/2017A/Ja0712017.pdf",
+      "note": "citation-key: decret2017-985\nJournal officiel n° 70-71 des 1er et 5 septembre 2017, édition arabe, pp. 2958-2964 ; art. 4 (nouveau) p. 2960."
+    },
+    {
+      "id": "decret2023-294",
+      "type": "legislation",
+      "title": "أمر عدد 294 لسنة 2023 مؤرخ في 19 أفريل 2023 يتعلق بإحداث المستشفى العسكري الجامعي بصفاقس كمؤسسة عمومية للصحة وضبط تنظيمه الإداري والمالي وبالمصادقة على هيكله التنظيمي",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "44",
+      "page": "1410-1419",
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            19
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2023/2023A/Ja0442023.pdf",
+      "note": "citation-key: decret2023-294\nJournal officiel n° 44 du 2 mai 2023, édition arabe, pp. 1410-1419 ; art. 16 p. 1413."
+    },
+    {
       "id": "decret2023-592",
       "type": "legislation",
       "title": "أمر عدد 592 لسنة 2023 مؤرخ في 21 سبتمبر 2023 يتعلق بتنقيح الأمر عدد 1245 لسنة 2006 المؤرخ في 24 أفريل 2006 المتعلق بضبط نظام إسناد الخطط الوظيفية بالإدارة المركزية والإعفاء منها",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "108",
-      "page": "5288-5290",
+      "page": "5290-5291",
       "issued": {
         "date-parts": [
           [
@@ -4501,7 +4814,7 @@
         ]
       },
       "URL": "https://www.pist.tn/jort/2023/2023A/Ja1082023.pdf",
-      "note": "citation-key: decret2023-592\nJournal officiel n° 108 de 2023, édition arabe, p. 5288-5290. Métadonnées jort_cache.db."
+      "note": "citation-key: decret2023-592\nJournal officiel n° 108 de 2023, édition arabe, début p. 5290 ; art. 1er sur la page suivante, numérotée 5291 d'après l'ordre des pages. Métadonnées jort_cache.db."
     },
     {
       "id": "minfin-rapport-budget-actualise-2012",
