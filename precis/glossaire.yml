@@ -12565,7 +12565,7 @@ entries:
 
   - id: participation-publique
     acronyme: null
-    statut: provisoire  # AR : « المساهمات العمومية », intitulé du relevé arabe de la Direction générale de la privatisation ; édition arabe de la loi n° 89-9 à lire
+    statut: provisoire  # AR : « المساهمات العمومية », intitulé du relevé arabe de la Direction générale de la privatisation ; forme confirmée à l'OCR de l'édition arabe de la loi n° 89-9 (JORT n° 9 de 1989, art. 1er, 8 et 23 : « مساهمات عمومية », « المنشآت ذات المساهمات العمومية »), lu le 1er novembre 2026
     references: [loi89-9]
     source_definition: {ref: loi89-9, locator: "art. 8"}
     source_traduction: {ref: dgpv-recettes-annuelles-1987-2009}
@@ -12591,7 +12591,7 @@ entries:
   # à l'image de l'édition arabe de la loi n° 99-38 (JORT n° 37 du 7 mai 1999, p. 848, titre VI) ;
   # « التخصيص » (« عمليات التخصيص », « الإدارة العامة للتخصيص ») et « طريقة التفويت » dans le relevé
   # arabe de la Direction générale de la privatisation. « التفويت في المساهمات العمومية » assemble
-  # ces deux dernières formes : expression à confirmer dans l'édition arabe de la loi n° 89-9.
+  # ces deux dernières formes ; l'édition arabe de la loi n° 89-9 (OCR du 1er novembre 2026) donne « يرخص للحكومة التفويت كليا أو جزئيا في مساهمات الدولة » (art. 23) et « التفويت في أسهم تملكها الدولة » (art. 29) : « التفويت » est le verbe de la cession, l'assemblage exact n'y figure pas.
   # Définitions arabes à écrire par le terminologue.
   - id: prets-tresor
     acronyme: null

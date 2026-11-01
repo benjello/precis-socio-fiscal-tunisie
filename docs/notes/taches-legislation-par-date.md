@@ -233,7 +233,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 - **[S] Arrêté du 31 mars 2008 (nomenclature des budgets des conseils régionaux) ; arrêtés de 1975 et de 2008 (nomenclature communale antérieure à 2020)** — Lire ces nomenclatures pour savoir si les articles 3303 et 4101 y existaient _(chapitre : education/_depense.qmd (#sec-educ-depense-collectivites) ; source : lisible (corpus + jort_cache) ; statut : ouvert)_
 - **[S] Décret n° 2008-756 et arrêté du 3 juin 2008 (plafond annuel des soins ambulatoires)** — Relire à l'image le décret et l'arrêté, repris de la couche texte sans guillemets. _(chapitre : prestations_sociales/_soins.qmd ; source : lisible ; statut : partiel)_
 - **[M] Révisions du plafond annuel des soins ambulatoires postérieures à l'arrêté du 3 juin 2008** — Chercher les révisions du plafond ; il ne vaut pas état du droit en 2026. _(chapitre : prestations_sociales/_soins.qmd ; source : jort_cache ; statut : partiel (PR #665) : arrêtés de 2010, du 7 mai 2021 et de 2024 lus ; reste l'arrêté du 8 février 2021 (JORT n° 14 de 2021 à obtenir))_
-- **[S] Régie des alcools et MTK : décrets 2008-2398, 2007-843, 2000-1934, 98-1802, 93-114, 89-598, 87-1199, 85-1568, 82-1168** — Lire ces décrets (statut, organigramme, achats de tabacs) et compléter les registres de la Régie et de la MTK. _(chapitre : entreprises_publiques (_offices, Régie et MTK) ; source : lisible (corpus local) ; statut : ouvert)_
+- **[S] Régie des alcools et MTK : décrets 2008-2398, 2007-843, 2000-1934, 98-1802, 93-114, 89-598, 87-1199, 85-1568, 82-1168** — Lire ces décrets (statut, organigramme, achats de tabacs) et compléter les registres de la Régie et de la MTK. _(chapitre : entreprises_publiques (_offices, Régie et MTK) ; source : lisible (corpus local) ; statut : partiel au 1er novembre 2026 (PR du chantier t29-e-ep) : décrets 2008-2398, 2007-843, 2000-1934, 98-1802, 89-598, 87-1199, 85-1568, 82-1168 et 93-114 versés ; 93-114 hors Régie ; schémas d'organigramme non imprimés)_
 
 ## 2007
 
@@ -258,7 +258,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 - **[L] Décrets n° 2006-1160 à 2006-1168 (statuts de la Garde nationale, prisons, protection civile)** — Lire les statuts de 2006 sur l'image du JORT français. _(chapitre : rémunérations publiques, régime statutaire autonome ; source : image / OCR ; statut : ouvert)_
 - **[S] Loi 2006-80 art. 5-6 : rubrique** — Relever la rubrique des art. 5 et 6 (la colonne ne cite que l'intitulé de la loi). _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible ; statut : ouvert)_
 - **[S] Loi 2006-71 (TVA, transport et véhicules des handicapés, 28 f)** — Lire la loi (citée d'après le recueil non officiel). _(chapitre : fiscalite/_tva_tableaux.qmd ; source : lisible ; statut : partiel)_
-- **[S] Transtu : décret n° 2006-433 (concession du domaine public ferroviaire) ; cahier des charges de l'art. 5 de la loi n° 2003-33 ; lois de capital de la SNT 74-43, 78-43, 79-33, 80-49, 82-43, décret-loi 77-5** — Lire le décret 2006-433 et les lois de capital de la SNT ; chercher le cahier des charges (peut-être non publié). _(chapitre : entreprises_publiques (_transports, Transtu) ; source : lisible ; lois anciennes à l'image ; statut : ouvert)_
+- **[S] Transtu : décret n° 2006-433 (concession du domaine public ferroviaire) ; cahier des charges de l'art. 5 de la loi n° 2003-33 ; lois de capital de la SNT 74-43, 78-43, 79-33, 80-49, 82-43, décret-loi 77-5** — Lire le décret 2006-433 et les lois de capital de la SNT ; chercher le cahier des charges (peut-être non publié). _(chapitre : entreprises_publiques (_transports, Transtu) ; source : lisible ; lois anciennes à l'image ; statut : partiel au 1er novembre 2026 (PR du chantier t29-e-ep) : décret 2006-433 versé, cahier des charges de l'art. 5 non identifié (recherche refaite) ; lois de capital de la SNT non lues)_
 
 ## 2005
 
@@ -267,7 +267,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 - **[M] Loi 2005-59 (fonds d'amorçage) : date d'effet ; prorogations de la loi 99-92 après 2005 ; régime fiscal des SICAV** — Relever la date de dépôt du JORT n° 57 de 2005 ; lire les LF 2005 à 2009 sur les prorogations de la loi 99-92. _(chapitre : fiscalite/_impot_revenu.qmd, _impot_societes.qmd ; source : lisible ; statut : ouvert)_
 - **[S] LF 2005 art. 71 : retraits du tableau C de la TVA** — Océriser le fascicule et relever les retraits. _(chapitre : fiscalite/_tva_tableaux.qmd ; source : OCR à lancer (fascicule scanné) ; statut : ouvert)_
 - **[S] Loi n° 2005-55 (anciens présidents et Premiers ministres)** — Absente du chapitre ; relève plutôt du livre Rémunérations publiques où loi2005-55 existe. Décider du domicile puis lire. _(chapitre : retraites/_secteur_public.qmd ; source : corpus et jort_cache ; statut : ouvert)_
-- **[S] OTC : décrets 2005-2456, 2001-719, 99-1920, 89-1647, 88-885, 74-184 ; loi 62-14** — Lire ces textes et compléter le registre de l'OTC. _(chapitre : entreprises_publiques (_offices, OTC) ; source : lisible (corpus local) ; statut : ouvert)_
+- **[S] OTC : décrets 2005-2456, 2001-719, 99-1920, 89-1647, 88-885, 74-184 ; loi 62-14** — Lire ces textes et compléter le registre de l'OTC. _(chapitre : entreprises_publiques (_offices, OTC) ; source : lisible (corpus local) ; statut : fait le 1er novembre 2026 (PR du chantier t29-e-ep) : loi 62-14 et décrets 74-184, 88-885, 89-1647, 99-1920 (intitulé seul, statut en arabe), 2001-719 et 2005-2456 versés)_
 
 ## 2004
 
@@ -276,7 +276,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 - **[S] Décret n° 2004-1182 (Centre de formation et d'appui à la décentralisation, JORT n° 44 de 2004)** — Lire le décret 2004-1182 pour dire ce que finance la contribution du paragraphe 4 de l'article 03.303 _(chapitre : education/_depense.qmd (#sec-educ-depense-collectivites) ; source : lisible (corpus + jort_cache) ; statut : ouvert)_
 - **[S] Loi n° 2004-71, art. 1er (assurance maladie)** — Relire l'article 1er à l'image (couche texte décodée) pour pouvoir le citer entre guillemets ; le tableau ne donne que l'intitulé. _(chapitre : prestations_sociales/_autres_risques.qmd ; source : lisible (PDF local, relecture à l'image) ; statut : partiel)_
 - **[M] Résultat de la branche pensions 1990-2004 de la rétrospective CNSS : RSA, RSAA, RTNS, régime complémentaire** — Reproduire pour les autres régimes la figure du RSNA (fig-rsna-resultat-1990-2004) ; seule celle du RSNA existe. _(chapitre : retraites/_secteur_prive.qmd (figure) ; source : tunisia-data (série cnss-retrospective-ressources-emplois déjà au cache) ; statut : ouvert)_
-- **[S] OMMP : loi n° 91-94 (prêt KfW, JORT n° 82/1991), décrets 88-229, 82-1386, 70-588, 2004-1029, 2002-135, 99-1731, 73-383, 72-263, 72-242, loi 99-25, arrêtés de tarifs portuaires 1982-2007** — Lire ces textes (loi 91-94 à l'image) et compléter le registre de l'OMMP. _(chapitre : entreprises_publiques (_transports, OMMP) ; source : lisible ; loi 91-94 à l'image ; statut : ouvert)_
+- **[S] OMMP : loi n° 91-94 (prêt KfW, JORT n° 82/1991), décrets 88-229, 82-1386, 70-588, 2004-1029, 2002-135, 99-1731, 73-383, 72-263, 72-242, loi 99-25, arrêtés de tarifs portuaires 1982-2007** — Lire ces textes (loi 91-94 à l'image) et compléter le registre de l'OMMP. _(chapitre : entreprises_publiques (_transports, OMMP) ; source : lisible ; loi 91-94 à l'image ; statut : partiel au 1er novembre 2026 (PR du chantier t29-e-ep) : loi 91-94 et décrets 72-242, 72-263, 73-383, 88-229, 99-1731, 2002-135 et 2004-1029 versés ; tarifs 1982-2007, décrets 70-588 et 82-1386, loi 99-25 non lus)_
 
 ## 2003
 
@@ -300,7 +300,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 - **[S] LF 2001 (loi 2000-98) art. 64 : timbre du titre de crédit** — Établir le montant initial et la date d'effet du timbre du titre de crédit. _(chapitre : fiscalite/_timbre_enregistrement.qmd ; source : lisible ; statut : partiel)_
 - **[M] Loi 2001-83 (code des organismes de placement collectif), régime des SICAV** — Lire la loi et écrire le régime fiscal des SICAV. _(chapitre : fiscalite/_impot_revenu.qmd ; source : lisible ; statut : ouvert)_
 - **[S] Notification G/SCM/N/71/TUN du 1er juin 2001, section IX (pp. 14-15)** — Lire la section IX. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible (PDF en tunisia-data) ; statut : ouvert)_
-- **[S] RNTA : décrets 2001-2123, 85-1236, 84-859, 74-917, 70-291 ; art. 16 de la loi n° 64-57 ; loi n° 93-53 (art. 30 de la loi 64-57)** — Lire ces décrets et la quote-part versée au budget ; relire à l'image l'art. de promulgation de la loi 93-53 (JORT n° 39/1993, p. 716). _(chapitre : entreprises_publiques (_offices, RNTA) ; source : lisible ; loi 93-53 à l'image ; statut : ouvert)_
+- **[S] RNTA : décrets 2001-2123, 85-1236, 84-859, 74-917, 70-291 ; art. 16 de la loi n° 64-57 ; loi n° 93-53 (art. 30 de la loi 64-57)** — Lire ces décrets et la quote-part versée au budget ; relire à l'image l'art. de promulgation de la loi 93-53 (JORT n° 39/1993, p. 716). _(chapitre : entreprises_publiques (_offices, RNTA) ; source : lisible ; loi 93-53 à l'image ; statut : partiel au 1er novembre 2026 (PR du chantier t29-e-ep) : décrets 70-291, 74-917, 84-859, 85-1236 versés, 2001-2123 lu sans liste en français ; loi 93-53 non relue)_
 
 ## 2000
 
@@ -308,7 +308,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 - **[M] Décret 2000-1027 (formule du gaz national) et prix du gaz commercial des concessions** — Lire le décret 2000-1027 et chercher ses modificatifs et les conventions de prix du gaz des concessions. _(chapitre : compensation _electricite_gaz ; source : lisible (corpus JORT 2000) ; statut : ouvert)_
 - **[M] Rapports FMI 97/57 et 00/37 (reclassements de la masse salariale en 1996 et 2000)** — Identifier ce qui sort des rémunérations en 1996 et y revient en 2000 ; verser les clés FMI et citer le recoupement. _(chapitre : rémunérations publiques, index.qmd ; source : lisible (tunisia-data/data/raw/banque-mondiale-rapports/) ; statut : partiel)_
 - **[S] LF 2000 art. 57 (retenue, épargne)** — Lire l'art. 57 et le porter au registre. _(chapitre : fiscalite/_impot_revenu.qmd ; source : corpus (LF 2000 sans couche texte, JORT n° 105 de 1999 : OCR possible) ; statut : ouvert)_
-- **[S] Décret 2000-2280 (tableaux I à V, p. 2484-2488) ; décrets 89-377 et 96-1225** — Transcrire les tableaux I à V du décret 2000-2280 ; lire les décrets 89-377 (cité seulement comme abrogé) et 96-1225. _(chapitre : entreprises_publiques/_cessions ; source : lisible ; statut : partiel)_
+- **[S] Décret 2000-2280 (tableaux I à V, p. 2484-2488) ; décrets 89-377 et 96-1225** — Transcrire les tableaux I à V du décret 2000-2280 ; lire les décrets 89-377 (cité seulement comme abrogé) et 96-1225. _(chapitre : entreprises_publiques/_cessions ; source : lisible ; statut : fait pour les annexes I à V le 1er novembre 2026 (PR du chantier t29-e-ep, transcrites avec trois écarts d'impression) ; décrets 89-377 et 96-1225 non lus)_
 
 ## 1999
 
@@ -316,7 +316,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 - **[S] Loi 99-70 art. 2 (TVA, microcrédits, 39 f)** — Lire la loi (citée d'après le recueil non officiel). _(chapitre : fiscalite/_tva_tableaux.qmd ; source : lisible ; statut : partiel)_
 - **[S] LF 1999 art. 61 : plafond d'accès de l'impôt forfaitaire optionnel de 1 500 D** — Vérifier si 100 000 D est un plafond d'accès ou un seuil de relèvement. _(chapitre : fiscalite/_impot_revenu.qmd#sec-irpp-forfait ; source : lisible, notes communes DGI ; statut : partiel)_
 - **[S] Décret 99-486 (Jo02099) : primes de développement régional, date d'effet** — Lire à l'image la clause d'effet des art. 2 et suivants ; date calculée 14 mars 1999 sous réserve. _(chapitre : fiscalite/_regimes_incitation.qmd ; source : lisible, à l'image (police décalée) ; statut : partiel)_
-- **[S] CTF : décrets 92-713 et 98-28 (modifient le 89-876) ; décret 99-2643 (statut, arabe seul)** — Lire les deux modificatifs du décret 89-876 et le décret 99-2643 en arabe. _(chapitre : entreprises_publiques (_energie, CTF) ; source : lisible ; 99-2643 en arabe ; statut : ouvert)_
+- **[S] CTF : décrets 92-713 et 98-28 (modifient le 89-876) ; décret 99-2643 (statut, arabe seul)** — Lire les deux modificatifs du décret 89-876 et le décret 99-2643 en arabe. _(chapitre : entreprises_publiques (_energie, CTF) ; source : lisible ; 99-2643 en arabe ; statut : partiel au 1er novembre 2026 (PR du chantier t29-e-ep) : décrets 92-713 et 98-28 versés, 99-2643 en arabe non lu)_
 
 ## 1998
 
@@ -326,7 +326,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 ## 1997
 
 - **[S] Rectificatif à la loi n° 96-101, JORT n° 7 du 24 janvier 1997, p. 114** — Relire le rectificatif à l'image ; il est porté au chapitre (art. 3, 4, 7) d'après la couche texte, la clé loi96-101-rectificatif demande cette relecture avant citation littérale. _(chapitre : prestations_sociales/_autres_risques.qmd ; source : lisible (PDF local, relecture à l'image) ; statut : partiel)_
-- **[S] Loi n° 89-9 (JORT n° 9 de 1989, édition arabe) ; décrets 97-566 et 97-552 (JORT n° 27 de 1997)** — Océriser l'édition arabe de la loi 89-9 pour le terme de cession et « participation publique » ; lire les décrets 97-566 et 97-552. _(chapitre : entreprises_publiques/_statut, _glossaire ; source : OCR à lancer pour 89-9 ; 97-566/552 lisibles au corpus ; statut : ouvert)_
+- **[S] Loi n° 89-9 (JORT n° 9 de 1989, édition arabe) ; décrets 97-566 et 97-552 (JORT n° 27 de 1997)** — Océriser l'édition arabe de la loi 89-9 pour le terme de cession et « participation publique » ; lire les décrets 97-566 et 97-552. _(chapitre : entreprises_publiques/_statut, _glossaire ; source : OCR à lancer pour 89-9 ; 97-566/552 lisibles au corpus ; statut : fait le 1er novembre 2026 (PR du chantier t29-e-ep) : OCR de l'édition arabe de la loi 89-9 (art. 1, 8, 23, 29), décrets 97-552 et 97-566 versés)_
 
 ## 1996
 
@@ -379,7 +379,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 - **[S] Décrets n° 90-1001 et 91-803 (cycle 1990-1992)** — Lire les deux décrets (scans) et confirmer l'effet du décret 2015-462. _(chapitre : rémunérations publiques, régime indiciaire ; source : OCR / image ; statut : ouvert)_
 - **[S] Décret n° 91-487** — Lire le décret 91-487 et le verser à l'histoire de l'assurance maladie avant 2004 _(chapitre : sante/_histoire.qmd ; source : lisible (corpus), à l'image si besoin ; statut : ouvert)_
 - **[S] Arrêté du 30 mars 1991 modifiant l'art. 5 de l'arrêté du 1er avril 1982 (JORT n° 26 du 19 avril 1991, p. 894)** — Verser l'arrêté du 30 mars 1991 et lui donner sa propre ligne de registre _(chapitre : sante/_histoire.qmd (#r-hist-1982-thermal) ; source : lisible (corpus), à confirmer à l'image ; statut : ouvert)_
-- **[S] STIR : lois 61-35, 61-44, 62-29, décret-loi 61-11 ; décrets 89-1197 et 91-178** — Lire les textes fondateurs de la STIR et verser les décrets 89-1197 et 91-178 au registre. _(chapitre : entreprises_publiques (_energie, STIR) ; source : image ou OCR ; statut : ouvert)_
+- **[S] STIR : lois 61-35, 61-44, 62-29, décret-loi 61-11 ; décrets 89-1197 et 91-178** — Lire les textes fondateurs de la STIR et verser les décrets 89-1197 et 91-178 au registre. _(chapitre : entreprises_publiques (_energie, STIR) ; source : image ou OCR ; statut : fait le 1er novembre 2026 (PR du chantier t29-e-ep) : lois 61-35, 61-44, 62-29, décret-loi 61-11 et décrets 89-1197 et 91-178 versés)_
 
 ## 1990
 
