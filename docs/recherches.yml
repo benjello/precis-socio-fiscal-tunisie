@@ -1495,8 +1495,9 @@
   ou: [precis/fr/finances_locales/_transferts.qmd#sec-fl-fccl-reserve]
   requetes:
     titres_fts: ['"fonds commun"', reserve AND fonds AND commun]
-    titres_like: ['%fonds commun des collectivit%', '%المال المشترك%']
-    iort_ar: [المال المشترك]
+    titres_like: ['%fonds commun des collectivit%', '%المال المشترك%', '%المدخر%', '%reserve du fonds commun%']
+    iort_ar: [المال المشترك, المدخر]
+    plein_texte: [réserve du fonds commun, المال المشترك للجماعات المحلية]
     depuis: 2014-01-01
   passes:
   - date: 2026-10-04
@@ -1505,7 +1506,13 @@
     couverture: 'titres FR (FTS et LIKE) et AR (LIKE) de jort_cache jusqu''à la dernière publication indexée ; miroir iort (dec_, dec_gouv_, arr_, loi_). Dernier décret de répartition trouvé : n° 2013-1503. Lacunes : pas de plein texte dans les fascicules 2014-2017 ; « المدخر » non cherché dans les titres ; pist.tn non consulté. Note : docs/notes/finances-locales-transferts.md, § 5 et 12.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire: [elargir avec le terme المدخر (titres_like), plein texte 2014-2017]
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local, visas]
+    couverture: 'Relance du 1er novembre 2026, textes publiés depuis le 1er janvier 2014. jort_cache jusqu''au 29 octobre 2026 : titres français (FTS « fonds commun », LIKE « réserve du fonds commun », « fonds commun des collectivités ») et arabes (LIKE « المال المشترك », « المدخر ») : aucun décret ni arrêté de répartition ; le dernier est le n° 2013-1503 (JORT n° 39 du 14 mai 2013). Miroir iort, texte arabe de 2014 à 2026 (décrets, décrets gouvernementaux, arrêtés) : « المال المشترك » ne figure que dans le décret gouvernemental n° 2016-367 (taux et délais des prêts de la caisse) et « المدخر » n''y figure que dans des lois (lois de finances et loi n° 2016-48), au sens d''épargne ou de provision. Plein texte des fascicules du corpus local (français et arabe, 2014 à 2026) : « réserve du fonds commun » sans occurrence ; « المال المشترك للجماعات المحلية » en sept occurrences, toutes dans des visas ou des articles de textes de la caisse de prêts (n° 79 de 2014, n° 58, 69 et 104 de 2015, n° 23 de 2016) ou dans la suppression du compte (n° 101 de 2017). Lacunes : fascicules absents ou sans texte exploitable listés par la relance ; pist.tn non consulté. Note : docs/notes/finances-locales-transferts.md, § 5 et 12.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire: [pist.tn non consulté, fascicules arabes sans texte exploitable à océriser]
 
 - id: r-fl-criteres-subventions-apres-2021
   objet: arrêté modifiant ou remplaçant, après celui du 29 juin 2021, l'arrêté conjoint du 22 juin 2018 fixant les critères de répartition des subventions annuelles du budget de l'État entre les collectivités locales (loi de finances pour 2018, art. 11, § 3 ; loi de finances pour 2021, art. 13, § 5)
@@ -5245,5 +5252,26 @@
     role: documentaliste
     sources: [jort_cache, corpus_local, iort]
     couverture: 'jort_cache : titres FTS et LIKE, français et arabe, du 01/01/2023 au 29/10/2026 ; cinq notices répondent (LF 2024 art. 59 et 67, LF 2025 art. 39, 64 et 76), aucune ne touche l''art. 19. Miroir iort : aucun candidat. Plein texte FR et AR des fascicules du corpus local 2023-2026 : « مجلة الجباية المحلية » n''apparaît que dans les visas de deux décrets de 2023 et aux art. 67 (art. 40 § III) et 59 § 4 (art. 39 § II) de la LF 2024. Code consolidé au 1er janvier 2026 (DGELF) : le texte de l''art. 19 § I ne porte pas d''autre modification que l''art. 54 de la loi de finances pour 2007 et l''art. 59-7 du décret-loi n° 2022-79 (taux de 1,25 %), plus le plafond de l''art. 68-3 du décret-loi n° 2021-21. Lacunes : fascicules FR absents (2023 : 39, 41, 44, 71, 83, 100, 115, 142 ; 2024 : 8, 113, 118, 130, 145 ; 2025 : 4, 88, 90, 95-96, 148 ; 2026 : 10-11, 13, 62, 76, 96), lus en arabe ; fascicules postérieurs au 29/10/2026 non parcourus.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+
+- id: r-compensation-redevance-revenu-prorogation
+  objet: texte prorogeant, au-delà de l'année 2015, le volet de la redevance de compensation assis sur le revenu des personnes physiques (n° 4 du paragraphe I de l'article 63 de la loi n° 2012-27, borné aux années 2014 et 2015 par le paragraphe III, art. 78 de la loi n° 2013-54 et art. 40 de la loi n° 2014-54)
+  ou: [precis/fr/compensation/_reformes.qmd#sec-compensation-redevance]
+  requetes:
+    titres_fts: ['"redevance de compensation"']
+    titres_like: ['%redevance de compensation%', '%الصندوق العام للتعويض%']
+    iort_ar: [أتاوة الدعم, الفصل 63 من القانون عدد 27 لسنة 2012]
+    plein_texte:
+    - redevance de compensation
+    - article 63 de la loi n° 2012-27
+    - أتاوة الدعم
+    - الفصل 63 من القانون عدد 27 لسنة 2012
+    depuis: 2014-08-23
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026, textes publiés depuis le 23 août 2014 (lendemain de la loi n° 2014-54). jort_cache jusqu''au 29 octobre 2026 : titres français et arabes (FTS et LIKE « redevance de compensation », « أتاوة الدعم », « 27 لسنة 2012 ») : quatre notices, le décret-loi n° 2021-21 (art. 56), l''arrêté du 10 mai 2024 et deux lignes de la loi n° 2015-53 qui citent l''art. 17 de la loi n° 2012-27 sans rapport avec la redevance. Miroir iort, texte arabe de 2014 à 2026 : seul le décret-loi n° 2021-21 cite l''art. 63. Plein texte des fascicules du corpus local, français et arabe : l''art. 63 n''est cité qu''aux JORT n° 119 de 2021 (art. 56, taux de 3 %), n° 144 de 2023 (art. 45 et 69, § 6), n° 61 de 2024 (arrêté du 10 mai 2024) et n° 148 de 2025 (édition arabe, non lue) ; aucune occurrence de 2014 (après le 22 août) à 2020, donc aucune prorogation du n° 4 pour 2016 et les années suivantes. Les lois de finances de 2015 à 2017 (JORT n° 105 de 2014, n° 104 de 2015, n° 105 de 2016) cherchées dans le texte français : l''expression « redevance de compensation » n''y figure pas. Lacunes : fascicules absents ou sans texte exploitable listés par la relance (2015 ar n° 53, 57, 64, 67 ; 2015 fr n° 36 ; 2018 ar n° 26 ; 2018 fr n° 29, 33) ; pist.tn non consulté ; une prorogation qui ne cite ni l''article ni la redevance échappe à la recherche.'
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
