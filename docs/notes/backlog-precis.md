@@ -399,8 +399,9 @@ liste qui suit le tableau, citations comprises. Restent :
   - **rendement** : aucune série publiée (fiche `r-impot-fortune-rendement`) ; lois de
     règlement 2023-2024 et publications de la DGI à consulter ;
   - **modèle de déclaration 2026** : à obtenir (la NC 13/2026 n'a pas d'annexe) ;
-  - **modificatifs et textes d'application** : JORT postérieurs au n° 93 de 2026 et n° 58
-    de 2026 à lire (fiche `r-impot-fortune-modificatifs`) ;
+  - **modificatifs et textes d'application** : passe du 31 octobre 2026 (PR #651, fiche
+    `r-impot-fortune-modificatifs`), aucun modificatif jusqu'au JORT n° 105 ; JORT n° 58 de 2026
+    lu, sans texte législatif ;
   - **antécédents** avant 2014 (époque beylicale et coloniale, 1956-2013) non explorés ;
   - **glossaire** : `fonds-de-commerce` reste provisoire, terme français à confirmer dans un
     texte bilingue du JORT ;
@@ -958,7 +959,8 @@ liste qui suit le tableau, citations comprises. Restent :
     les intitulés. Dates d'exécution levées le 24 octobre 2026 (voir plus haut).
   - *Reste, lisible au corpus* : relecture à l'image des textes repris de la couche texte (loi n° 94-28 art. 42 à 53, décrets n° 2007-1367,
     n° 2008-756 et n° 2021-318, arrêté du 3 juin 2008, arrêtés des familles d'accueil, décret n° 2022-715
-    dont les articles finaux, lois de finances pour 2025 — texte français de jibaya.tn — et pour 2026 —
+    dont les articles finaux, loi de finances pour 2025 — texte français de jibaya.tn, art. 26 ; l'art. 17
+    est relu à l'image dans l'édition française du fascicule le 31 octobre 2026, PR #663 — et pour 2026 —
     arabe) ; art. 34 de la loi
     n° 60-30 ; décrets n° 99-1514, n° 2016-1401, n° 93-529, n° 94-1738, n° 2019-1130, n° 2002-916 ;
     décret n° 75-952 et circulaire n° 42 de 1996 ; décret du 6 avril 1950 ; loi n° 95-56 et gestion des
@@ -966,7 +968,9 @@ liste qui suit le tableau, citations comprises. Restent :
     chroniques).
   - *Reste, à dépouiller* : révisions du plafond annuel des soins ambulatoires après 2008 ; arrêtés des
     familles d'accueil après 2010 et 2017 ; arrêtés d'application des art. 35, 71 et 81 de la loi de
-    finances pour 2026 ; lois de finances de 2007 à 2026 pour les art. 52, 54 et 61 de la loi n° 60-30 ;
+    finances pour 2026 (passe du 31 octobre 2026 sur les 105 fascicules arabes de 2026, PR #663 :
+    aucun arrêté pour les art. 71 et 81) ; lois de finances de 2014 à 2026 pour les art. 52, 54 et 61 de
+    la loi n° 60-30 (balayage de 2007 à 2026 interrompu à 2014 le 31 octobre 2026) ;
     six fiches de recherche ouvertes le 10 octobre 2026 (`r-ar-etat-2026-modificatifs`,
     `r-am-extension-loi2002-32`, `r-amen-carte-arrete-cahier-des-charges`, `r-amen-cumul-af-contributive`,
     `r-loi96-101-extension`, `r-pf-taux-apres-1996`).
@@ -1058,8 +1062,8 @@ liste qui suit le tableau, citations comprises. Restent :
     par sa date : deux lois sont imprimées sous le n° 96-65) et de la loi n° 96-101 (1er décembre
     1996) ; loi n° 82-71 lue à l'image, clé `loi82-71`, ligne de registre `#r-pf-reg-1982`. Le décret n° 75-952,
     non lu à cette date, est lu depuis : effet au 1^er^ janvier 1976 (art. 2), versé le 31 octobre 2026 (PR #636) ;
-  - *à dépouiller* : les lois modifiant les articles 52, 54 et 61 de la loi n° 60-30 **de 2007 à
-    2026** (fiche `r-pf-art61-apres-1988` ; passe du 10 octobre 2026 sur les intitulés seuls, lois de
+  - *à dépouiller* : les lois modifiant les articles 52, 54 et 61 de la loi n° 60-30 **de 2014 à
+    2026** (balayage de 2007 à 2013 fait le 31 octobre 2026, PR #663 ; fiche `r-pf-art61-apres-1988` ; passe du 10 octobre 2026 sur les intitulés seuls, lois de
     finances non dépouillées) ; un éventuel décret de fixation des indemnités familiales du secteur
     public **postérieur à 1996** (fiche `r-pf-taux-apres-1996`, intitulés seuls) ;
   - *à obtenir* : le décret du 8 juin 1944 et ses modificatifs (hors de la couverture de
@@ -1105,9 +1109,12 @@ liste qui suit le tableau, citations comprises. Restent :
   - **arrêtés d'application des art. 71 et 81 de la loi de finances pour 2026** : non
     identifiés (fiche `r-lf2026-art71-81-arretes`, fascicules postérieurs au n° 97 à lire) ; le
     décret n° 2026-192 du 27 juillet 2026 (JORT n° 76, AR p. 1600, enfants autistes en jardin
-    d'enfants) est un programme distinct, non lu ;
-  - **données** : ni effectif de bénéficiaires ni dépense de ces aides (budget du ministère des
-    affaires sociales, rapports Amen social 2025 : non cherchés) ;
+    d'enfants) est un programme distinct, lu et versé le 31 octobre 2026 (PR #663,
+    `r-nc-ac-2026-autisme`) ; reste l'arrêté qui en fixe les montants (art. 3), non identifié
+    jusqu'au n° 105 ;
+  - **données** : allocation des 6 à 18 ans chiffrée par le document de la Banque mondiale (30 D par
+    mois, 450 000 enfants, versé le 31 octobre 2026, PR #663) ; ni effectif ni dépense des autres aides
+    (budget du ministère des affaires sociales, rapports Amen social 2025 : non cherchés) ;
   - **LF 2025, édition française** : absente de pist.tn ; seule source, la copie locale
     (corpus local, texte arabe concordant sur l'art. 26) ; la notice n'a pas d'URL française ;
   - **LF 2026, art. 35** : relu sur le fascicule arabe (p. 4238) ; relecture à l'image des
@@ -1392,9 +1399,9 @@ liste qui suit le tableau, citations comprises. Restent :
     décrets n° 97-1832, n° 97-2127, n° 2007-267, n° 2007-268 ; dates d'effet des lois n° 83-112
     et n° 97-83 (tiret au tableau de la vue d'ensemble) ; fascicules de 1997 et de 2007 au
     corpus, **texte lisible** ; celui de 1983 à vérifier ;
-  - **article du décret gouvernemental n° 2016-1** (Q0) : il décide si 2016 est une étape
-    (rangement actuel, sans ligne au tableau de la vue d'ensemble) ou une rupture ; relever
-    aussi ce que dispose l'article 15 de la loi de finances pour 2026, nommé sans contenu ;
+  - **classement 2016, étape ou rupture** (Q0) : les art. 2 à 5 du décret gouvernemental
+    n° 2016-1 et l'art. 15 de la LF 2026 sont lus (31 octobre 2026, PR #654, ligne
+    `r-ri-aug-2016`) ; le classement reste à trancher par l'architecte (TODO au chapitre) ;
   - **deux fiches de recherche créées** (`docs/recherches.yml`) : `r-epa-regime-propre`
     (établissement administratif à régime entièrement propre) et `r-indemnite-residence`
     (indemnité de résidence commune). Une seule passe chacune, **par les titres de
@@ -1546,7 +1553,11 @@ liste qui suit le tableau, citations comprises. Restent :
     **lecture à l'image**) ; fin du statut diplomatique de 1991 (pp. 1423-1425) ; décret
     n° 76-843 (cabinets) et n° 71-364 (emplois fonctionnels), scans ; textes postérieurs à 2009
     sur les emplois fonctionnels (décret n° 2023-592, intitulé arabe) ; rédaction actuelle des
-    art. 17 à 20 de la loi n° 83-112 ; LF 2026 art. 90, 92 et 108 (édition arabe) ;
+    art. 17 à 20 de la loi n° 83-112 (cinq lois modificatives à lire) ; décret
+    d'application de l'art. 109 de la LF 2026 ; LF 2026 art. 90, 92, 101, 107, 108 et 109 lus à
+    l'image le 31 octobre 2026 (PR #654, `tbl-ri-recruter-partir-textes`) et décret n° 2024-86
+    lu (`r-ri-rec-audit-2024`) ; notice arabe du décret n° 2024-86 (intitulé arabe à relever) ;
+    termes français de « آلية 16 » et « مساعد صحي » à établir ;
   - **OCR ou lecture à l'image** : décret n° 85-1405 et majorations de l'indemnité d'encadrement
     et de recherche (niveau non reconstitué ; tranches de 1996 à 2011) ; décret n° 2009-910
     (indemnité spécifique) et sens des montants du décret n° 2013-1470 (tranches ou montants
@@ -1585,8 +1596,8 @@ liste qui suit le tableau, citations comprises. Restent :
   - **pour le livre « Retraites »** : LF 1988 art. 60-61 et loi n° 2005-55 (anciens présidents,
     Premiers ministres, présidents des chambres), LF 1989 art. 75-76, loi n° 2015-39.
 - **Fiche `r-augmentations-ep-2013-2025`** : aucun décret des entreprises publiques n'a été
-  établi par la passe du 23 octobre 2026 ; la fiche n'est pas modifiée (TODO du
-  documentaliste, voir ci-dessus).
+  établi par les passes du 23 et du 31 octobre 2026 (PR #654) ; la fiche reste ouverte pour les
+  fascicules sans couche texte (TODO du documentaliste, voir ci-dessus).
 - **Présentation des trois chapitres courts — fait le 8 octobre 2026** (`_regime_statutaire_autonome`,
   `_regime_conventionnel`, `_regime_marche_controle`) : vue d'ensemble en tête, trame du volume
   conservée, section « Repères historiques » avec tableau des dates, registres repliés à colonne
@@ -1657,7 +1668,9 @@ liste qui suit le tableau, citations comprises. Restent :
     (fiche `r-montants-ep-commission`) : **à obtenir** hors JORT (rapports sur les
     entreprises publiques, communiqués conjoints de 1996 et 1999) ;
   - décrets des entreprises publiques entre 2013 et 2026 (fiche
-    `r-augmentations-ep-2013-2025`) : plein texte 2014-2025 **lisible**, non parcouru ;
+    `r-augmentations-ep-2013-2025`) : sommaire et douze premières pages des fascicules français
+    2014-2025 parcourus le 31 octobre 2026 (PR #654), aucun décret propre aux entreprises
+    publiques ; fascicules sans couche texte non lus ;
   - magistrats : décrets n° 2026-65 et 2019-1132 lus et cités au régime statutaire autonome
     (23 octobre 2026) ;
   - poids budgétaire par cycle : aucun texte ne le donne.
@@ -1905,8 +1918,8 @@ liste qui suit le tableau, citations comprises. Restent :
   (décret-loi n° 2020-1), reportée aux volumes cotisations, retraites et prestations sociales.
   Reste :
   - les décrets d'application (art. 19, 22, 33, 41) : fiches `r-dl2024-4-cotisations` et
-    `r-dl2024-4-art33`, couvertes jusqu'au 2 octobre 2026 ; JORT n° 58 de 2026 à lire, jort_cache
-    à rafraîchir ;
+    `r-dl2024-4-art33`, passe du 31 octobre 2026 (PR #651) : aucun décret publié jusqu'au JORT
+    n° 105 ; JORT n° 58 de 2026 lu (états financiers de la BCT seuls) ;
   - l'articulation avec le décret n° 2019-379 (RTFR) et avec la loi n° 81-6 : aucun article ne la
     règle ; l'application des trois ans à une activité antérieure à l'entrée en vigueur ;
   - folios des dernières pages (p. 2902 FR, 5297 AR) déduits, non lus à l'image ; décret
@@ -2309,11 +2322,21 @@ mesure ni les soins réalisés ni les revenus des médecins.
   2000, pp. 1778-1779 pour les art. 1-4, 8 et 11 ; fascicule local lisible à l'image,
   grades et niveaux de rémunération décrits sans valeur isolée. L'URL du JORT arabe
   est `Ja05900.pdf` (vérifiée) et non `Ja0592000.pdf` (404) ; pagination arabe à relever.
+  **Modificatifs lus le 31 octobre 2026 (PR #652, `_hopital.qmd`, `tbl-hopital-textes`)** :
+  décrets n° 2011-919, 2015-58, 2016-572 (concordances 2011-920, 2015-59, 2016-573), décrets
+  gouvernementaux n° 2015-60 et 2015-61, décret n° 2024-498 (extension aux agents civils de la
+  défense : il complète le décret n° 2000-2352 et ne modifie pas celui de 2000). Restent : titre
+  sept du décret de 2000, décret n° 2000-2352, décrets n° 2015-56 et 2015-57 (techniciens
+  supérieurs), grille des salaires (décret n° 97-1832), montants antérieurs de l'indemnité de
+  risque de contagion, contrats de vacations et de garde. **Correction à faire** : l'effet du
+  décret de 2000 (ligne `r-hopital-infirmiers-2000`) est donné à la date de signature ; à
+  recalculer sur le dépôt du JORT n° 59 de 2000, non relevé.
 - **À lire pour les personnels** : statut hospitalo-universitaire (décret n° 77-732),
   hospitalo-sanitaire (n° 2008-3449) et statuts propres des sages-femmes,
   pharmaciens et personnels techniques ; chaîne des majorations de traitement,
-  de la prime de rendement, de non-clientèle et des gardes ; modificatifs du statut
-  des infirmiers (2011, 2015, 2024). Les fascicules de 1977 et 2008 sont à vérifier
+  de la prime de rendement, de non-clientèle et des gardes (modificatifs du statut des
+  infirmiers : lus, voir ci-dessus ; statuts des sages-femmes et des pharmaciens non traités
+  faute de lieu naturel dans le livre). Les fascicules de 1977 et 2008 sont à vérifier
   au corpus avant reprise ; aucun montant actuel n'est imprimé.
 - **À lire pour la ville** : avenants n° 1 à 7 (2007-2012) et suites de la convention
   des médecins, leurs annexes d'honoraires et dates d'effet ; le texte de 2007 renvoie
@@ -2967,7 +2990,8 @@ en donnait trois.
     réformes de 1973, 1996 et 2021), Q10 (art. 11 et 28 et clause d'effet de la convention cadre
     agricole), Q11 (textile, art. 22 à 28 sur un meilleur exemplaire, articles exacts du jour
     férié travaillé et du congé de naissance), Q13 (limite de 9 heures par jour après 1996),
-    Q14 (art. 94-3 à 94-14 ; article de la loi n° 2025-9 qui récrit l'art. 94-2), Q15 (qui paie
+    Q14 (art. 94-3 à 94-14 ; l'art. 94-2, al. 1, de la loi n° 2025-9 est lu le 31 octobre 2026,
+    PR #655, et le chapitre corrigé : c'est l'alinéa 2, à 70 %, qui définit le temps partiel), Q15 (qui paie
     les sept jours de paternité), Q16 (effectifs de la colonne « population couverte ») ;
   - *séries* : la section des données ne trace que l'INS (trois trimestres de 2019, tableau 6,
     p. 5) ; snapshot `ins-emploi-duree-travail-2019` tiré d'une série de `tunisia-data` non
@@ -3034,7 +3058,8 @@ en donnait trois.
   trouvées), tableaux annexes des lois de règlement (images, au corpus, à dépouiller), Cour des
   comptes. Prévisions du Fonds avant 2011 et depuis 2021 : tableaux des lois de finances au
   corpus, à relire à l'image ; pages des tableaux 2012-2020 connues à une page près. PAP 2024 et
-  2025 (édition arabe) récupérés, tableaux à dépouiller.
+  2025 (édition arabe) dépouillés le 31 octobre 2026 (PR #655, programme « Emploi ») : seul chiffre
+  du Fonds, 309,3 MD (2023) → 310,0 MD (2024) ; la dépense exécutée n'y figure pas.
 - **Politiques de l'emploi — bénéficiaires** : années entières 2014 à 2022 absentes (rapports
   annuels de l'ANETI et de l'ONEQ non obtenus ; `emploi.tn` ne répond pas, captures d'archive
   partielles) ; seules des périodes partielles sont données (neuf mois 2016-2017, premier semestre
@@ -3059,9 +3084,10 @@ en donnait trois.
   leurs abrogations sont établis (lus à l'image, complément du 7 octobre 2026) ; seuls les chiffres
   restent à relire à l'image, au corpus. De même pour les indemnités de FORSATI (décret
   gouvernemental n° 2016-904, colonnes entrelacées ; décret n° 2019-542, art. 26 à 30), laissées
-  hors du texte. Les lignes de crédit imputées sur le Fonds par les lois de finances 2022 à 2026
-  ne sont connues que par les intitulés des notices : à relire avant d'être écrites (seul l'art. 14
-  de la loi de finances pour 2026, qui élargit l'objet du Fonds, est établi et écrit). Jour d'effet
+  hors du texte. Les lignes de crédit imputées sur le Fonds par les lois de finances 2023 à 2026
+  sont lues et versées le 31 octobre 2026 (PR #655, registre `r-mt-pe-fonds-2023` à
+  `r-mt-pe-fonds-2026-lignes` ; `tbl-mt-pe-fne-lf`, qui porte des prévisions, n'est pas modifié) ;
+  restent la LF 2022 et les conventions de gestion avec la BTS et la BFPME. Jour d'effet
   des deux textes de 1981 toujours non établi (fascicules datés de deux jours). **Clos** : date
   d'effet du décret gouvernemental n° 2019-542 (2 juillet 2019, dérivée du dépôt du 27 juin lu à
   l'édition arabe) ; pages du décret n° 2023-461 (1552-1558) ; fin du contrat emploi-formation
@@ -3103,16 +3129,17 @@ en donnait trois.
   (`r-sivp-bareme-1993-2009`) ; arrêtés des chèques de 2012 (`r-d2012-2369-arretes-cheques`) ;
   texte fondateur des chantiers (`r-chantiers-regionaux-texte-fondateur`) ; modificatif du décret
   gouvernemental n° 2019-542 postérieur à juin 2023 (`r-d2019-542-modificatifs-apres-2023`, fiche
-  versée le 7 octobre 2026, couverte jusqu'au 6 octobre 2026). Textes connus par leur
+  versée le 7 octobre 2026, couverte jusqu'au 6 octobre 2026 ; le décret n° 2024-182 et l'arrêté
+  conjoint du 16 août 2024, lus le 31 octobre 2026, ne le modifient pas ; passe à ajouter à la
+  fiche, non faite par la PR #655). Textes connus par leur
   seul intitulé : décret n° 2003-564 (ANETI), décret-loi n° 2022-78, arrêté du 8 août 2017,
   décret n° 2025-459, décrets n° 93-1354, 97-1938, 97-1930, 2001-1722, 2002-13, 2006-2990,
   2007-1237, 72-58 ; loi n° 2008-79. Les décrets n° 94-494 et n° 98-868 sont désormais lus (art. 1
   à 5 et 1 à 4) et cités au registre des prises en charge.
 - **Politiques de l'emploi — bibliographie** : pas de clé pour les éditions 1988-1990, 1997 et
   2000 du Rapport annuel de la BCT (la clé générique `bct-ra` les couvre dans la figure), ni pour
-  le décret n° 2000-2279, la loi n° 91-4, l'arrêté du 8 août 2017, le décret n° 2025-459, le
-  décret n° 2024-182 et l'arrêté conjoint du 16 août 2024 (qui visent le décret de 2019 modifié en
-  2023 : non écrits dans le chapitre faute de clé), les décrets n° 2006-2990 et n° 2005-1857, la
+  le décret n° 2000-2279, la loi n° 91-4, l'arrêté du 8 août 2017, le décret n° 2025-459,
+  les décrets n° 2006-2990 et n° 2005-1857, la
   loi n° 2008-79 ;
   `loi88-60-lfc1988` (restructuration des offices en 1988) n'existe qu'au volume « Les caisses » ;
   `loi74-101-lf1975` existe au fonds commun, mais son art. 57 (fonds d'intervention économique)
@@ -3597,8 +3624,10 @@ tableau complet et registre des décrets repliés. Deux relevés versionnés dan
 opérations depuis 1998 » de la Direction générale de la privatisation (série
 `privatisation-recueil-operations`, relevé `listes/sorties-recueil-privatisation.csv`).
 **Restent** : quinze sorties sans opération au recueil — texte de fusion, de dissolution ou de
-cession **à chercher au corpus du Journal officiel** ; listes nominatives des rapports du ministère pour 2022 à 2025 (**lisibles dans le
-corpus de tunisia-data**, à feuilleter à l'image) ; identités retenues sur le seul nom (huit cas,
+cession **à chercher au corpus du Journal officiel** ; nombres d'entreprises des rapports du ministère pour 2022 à 2025 relevés le 31 octobre 2026
+(111, 111, 114, 115 ; PR #653) ; listes nominatives de ces rapports (**lisibles dans le
+corpus de tunisia-data**, à feuilleter à l'image ; couche de texte arabe dégradée, identité avec
+un nom français à lire à l'image) ; identités retenues sur le seul nom (huit cas,
 TODO de l'annexe) ; contradiction sur l'Agence tunisienne d'Internet (Cour des comptes, 2008) ;
 forme et participation par entreprise ; périmètre d'ensemble avant 1998 (aucune liste publiée) ;
 tableau de tutelle après 2010 et classement de l'Office national des postes frontaliers
@@ -3983,8 +4012,11 @@ Ce qui reste :
     2022 (LF 2024, tableaux 38 et 39) et de fin 2023 au-delà des dix premières ;
   - grandeurs d'activité des fiches (production et ventes en millions de tonnes) non relevées ;
     éditions françaises LF 2020 (CPG p. 78, GCT p. 80) et LF 2021 (p. 89 et 92) non versées ;
-  - prêts à l'État pour les lignes ferroviaires du phosphate (lois n° 2024-31, 2025-12, 2026-7) :
-    non lus, à rattacher à la SNCFT ou aux transports ;
+  - prêts à l'État pour les lignes ferroviaires du phosphate : lois n° 2024-31, 2025-12, 2026-7 et
+    décrets n° 2024-402, 2025-361, 2026-55 lus et versés le 31 octobre 2026 (PR #658,
+    `_transports.qmd`, section SNCFT ; le texte ne nomme pas la SNCFT, l'emprunteur est l'État ;
+    loi 2025-12 et décret 2025-361 lus en arabe) ; restent les conventions annexées, le maître
+    d'ouvrage du projet et la part de la CPG ;
   - comptes publiés et rapports annuels des deux entreprises : **à obtenir**.
 - **El Fouladh — section écrite le 29 octobre 2026** (`_industrie.qmd`,
   `#sec-ep-ge-fouladh`, en fin de chapitre). Figures `fig-ep-fouladh-budget` (transferts du budget
@@ -4268,10 +4300,14 @@ Ce qui reste :
   **Reste** :
   - **dans le corpus local, non lus** : loi n° 74-34 (rectificatif, image) ; loi n° 66-79 (Régie
     des ports aériens) ; décrets n° 70-590, 72-264, 74-599, 99-1941, 2000-2926 ; décret n° 93-1154,
-    art. 9 à 17, et modificatifs n° 95-1326, 2008-101, 2021-81 ; exonérations propres à des
-    aéroports (décrets n° 97-230, 2000-947, 2002-3264, 2005-3239, 2008-3903, 2017-342, 2024-5) ;
-    décret n° 2004-1342 et avenants d'Enfidha (n° 2013-1328, 2020-556, 2020-557) ; décret
-    n° 2007-1686 ; code de l'aéronautique civile (loi n° 99-58) ;
+    art. 9 à 17, et modificatifs n° 95-1326, 2008-101 ; exonérations propres à des
+    aéroports (décrets n° 97-230, 2000-947, 2002-3264, 2005-3239, 2008-3903) ;
+    décret n° 2004-1342 et avenant d'Enfidha (n° 2013-1328) ; décret
+    n° 2007-1686 ; code de l'aéronautique civile (loi n° 99-58) ; lus et versés le 31 octobre 2026
+    (PR #658, `_transports.qmd`) : décrets n° 2017-342 et 2024-5 (exonérations des quatre aéroports
+    régionaux), n° 2021-81 (redevance de sûreté de 30 D), n° 2020-556 et 2020-557 (avenants
+    d'Enfidha et de Monastir) ;
+  - exonération de 2022-2023 entre les décrets de 2017 et de 2024 : non établie ;
   - exonération des vols intérieurs après 2023, compensation éventuelle par l'État, régime fiscal
     de l'Office (requête arabe à faire) : non établis ;
   - grandeurs d'activité (passagers, mouvements d'avions, fret) non relevées ; éditions françaises
@@ -4352,9 +4388,12 @@ Ce qui reste :
   (édition arabe), loi de finances complémentaire pour 2014 (art. 46). Glossaire : `regie-alcools`, `mtk`.
   **Reste** :
   - textes **dans le corpus local, non lus** : Régie, décrets n° 75-594, 77-503 et 2007-843, arrêtés
-    des prix de cession des alcools (dernier : 18 novembre 2025, JORT n° 137, p. 3123) ; MTK, décrets
+    des prix de cession des alcools antérieurs à celui du 18 novembre 2025 (lu et versé le 31 octobre
+    2026, PR #653, `r-ep-ra-2025` ; reste l'arrêté du 16 janvier 2023, qu'il abroge, et l'écart entre
+    2 100 et 716 DT pour l'alcool bon goût) ; MTK, décrets
     n° 82-1168, 85-1568, 87-1199, 89-598, 93-114 et 98-1802, décrets n° 2000-1934 et 2008-2398 (achats
-    de tabacs bruts), article 69 de la loi de finances pour 2025 ;
+    de tabacs bruts) ; l'article 69 de la loi de finances pour 2025 est lu et versé (31 octobre 2026,
+    `r-ep-rnta-2025`) ;
   - **demandent l'OCR ou la lecture à l'image** (fascicules sans couche texte) : décret du 20 novembre
     1927 sur le régime de l'alcool (antérieur au corpus), loi n° 59-113 et décret-loi n° 60-5 ;
   - date de dépôt au gouvernorat du JORT n° 93 de 2011 (décret n° 2011-4395), comme pour la RNTA ;
@@ -4424,7 +4463,9 @@ Ce qui reste :
     et 2016-1391 (article 52 bis du code d'incitation aux investissements, **intitulés arabes**) ;
     arrêté du 5 mai 2014 (réserves foncières industrielles) ; décrets d'approbation des ventes au
     dinar symbolique de 2023 à 2026 (n° 2023-613, 2023-614, 2023-659, 2023-660, 2023-771, 2023-772,
-    2024-40, 2026-6, 2026-8) ; décret n° 2026-127 (Sidi Thabet) ; article 23, IV, du code des droits
+    2024-40, 2026-6, 2026-8 : soit 404,9 ha) et décret n° 2026-127 (Sidi Thabet, 916 500 m²), lus et
+    versés le 31 octobre 2026 (PR #658, `_industrie.qmd`, dix lignes de registre) ; avenants et
+    conventions annexés non lus ; article 23, IV, du code des droits
     d'enregistrement et de timbre ;
   - grandeurs d'activité des fiches (surfaces aménagées) : unités incompatibles entre éditions
     (m², « hectare », milliers de m²), non versées ; classements des dettes et créances envers
@@ -4493,8 +4534,11 @@ Ce qui reste :
     et de la BH (n° 2005-965, 2006-1806) ; rectificatif de la loi n° 73-24, décret n° 74-223 et
     modificatifs, suite du décret n° 74-224 et décrets n° 76-271 et 76-1000, loi n° 75-83 (LF
     1976, exonérations de la caisse), lois n° 76-53, 77-63, 79-58, 93-117 (prêts garantis de la
-    caisse), n° 92-34, 2002-70, 2003-72, 2009-78 (BH) ; pour la CPSCL, lois n° 97-78, 2003-19,
-    2003-39, 2005-53 et décrets du personnel, de l'organigramme et des agences régionales ;
+    caisse), n° 92-34, 2002-70, 2003-72 (BH ; loi n° 2009-78 lue le 31 octobre 2026, PR #656) ;
+    pour la CPSCL, lois n° 97-78, 2003-19 et décrets du personnel, de l'organigramme et des
+    agences régionales (lois n° 2003-39 et 2005-53 lues le 31 octobre 2026) ; date de dépôt du
+    JORT n° 57 de 2005, imprimée « 21 juillet 2004 » (erreur), donc date d'effet de la ligne
+    `r-ep-cpscl-2005` non établie ;
   - **à identifier** : filiation entre la Société tunisienne de banque populaire (décret de 1956) et
     la STB ; acte de constitution de la STB ; texte de la fusion de 2000 avec la BNDT et la BDET ;
     date effective de la transformation de la caisse en BH ;
@@ -4530,9 +4574,11 @@ Ce qui reste :
   - textes **dans le corpus local, non lus** : loi n° 59-65 et décret n° 64-295 (BNA) ; suite de la
     convention du 1er août 1959 ; décrets d'organigramme et d'emplois fonctionnels des trois banques
     (n° 2001-982, 2003-1541, 2009-40, 2009-1740, 2008-3923, 2009-1741) ; décret n° 2001-886 (BTS) ;
-    lois de garantie de prêts rétrocédés (BNA : n° 93-94, 95-79, 99-60, 2002-34 ; BFPME : n° 2006-40,
-    2012-5, 2014-53, 2020-24, 2024-39 ; BTS : n° 2001-80) ; loi de finances pour 2024, art. 29 ; pour
-    2025, art. 50-51 ; pour 2026, art. 23, 25, 26, 27 ; décret-loi n° 2022-79, art. 18 ;
+    lois de garantie de prêts rétrocédés (BNA : n° 93-94 ; BFPME : n° 2006-40, 2020-24, 2024-39,
+    cette dernière sans banque bénéficiaire nommée, non rattachée ; BTS : n° 2001-80) ; lois de
+    garantie n° 95-79, 99-60, 2002-34, 2012-5, 2014-53 lues et versées le 31 octobre 2026 (PR #656),
+    ainsi que les lois de finances pour 2024 (art. 19 et 29), 2025 (art. 50-51), 2026 (art. 23, 25,
+    26, 27) et le décret-loi n° 2022-79 (art. 18-19) ;
   - fusion de la BNA et de la Banque nationale de développement agricole (loi n° 83-19 pour la
     seconde) : texte **non identifié** ; statuts de la BFPME (2005) : **à identifier** ;
   - objet des 22,7 MD de transferts à la BFPME en 2022 (LF 2024, tableau 45) ; part de l'État dans
@@ -4581,7 +4627,8 @@ Ce qui reste :
     par ménage, classement par ancienneté de la demande (score N/M × 100), actualisation tous les
     trois ans ; et condition sociale de l'arrêté conjoint du 8 avril 2025 (au moins 50 % des lots
     réalisés sur les terrains acquis au prix préférentiel réservés aux ménages dont le revenu brut
-    mensuel ne dépasse pas trois fois le salaire minimum), à verser.
+    mensuel ne dépasse pas trois fois le salaire minimum) : versée le 31 octobre 2026 au volume
+    « Les prestations sociales » (PR #663, ligne `r-log-afh-2025`).
 - **Société de promotion des logements sociaux — section écrite le 29 octobre 2026**
   (`_autres_entreprises.qmd`, `#sec-ep-ge-sprols`, en fin de chapitre, à déplacer dans un chapitre
   « L'habitat et l'équipement » ; intro, « La source » et TODO final du chapitre mis à jour). Figure
@@ -4651,7 +4698,9 @@ Ce qui reste :
     personnel et organisation (décret n° 74-866, arrêté du 24 février 1979, décrets n° 2000-2493,
     2009-13, 2010-834, 2010-1322) ; textes de création des sociétés régionales (Nord, Centre, Sud) ;
     décrets d'expropriation (1962-1984) ; autres cessions au dinar symbolique (2019-2026, dont
-    n° 2025-205 et 2025-206) ; décret d'application de l'article 21 de la loi de finances pour 2026 ;
+    n° 2025-205 et 2025-206 : lus et versés le 31 octobre 2026, PR #658, `_habitat.qmd`, les autres
+    décrets de 2019 à 2026 restent à lire) ; décret d'application de l'article 21 de la loi de finances
+    pour 2026 ;
   - grandeurs d'activité des fiches (chiffre d'affaires, logements réalisés et vendus) : non
     versées ; la colonne « logements réalisés » de LF 2022 ne recoupe pas celles de LF 2024 ;
 - **Agence de réhabilitation et de rénovation urbaine (ARRU) — section écrite le 29 octobre 2026**
@@ -4743,6 +4792,8 @@ Ce qui reste :
   **Reste** :
   - nature du total des passifs (12 à 15 milliards de dinars, dont 647 à 784 MD dans les rubriques
     détaillées) : la fiche ne la dit pas ; états financiers de l'Office : **à obtenir** ;
+  - LF 2019 (art. 53 et 54) et LF 2026 (art. 100) lues le 31 octobre 2026 (PR #656) ; reste la
+    date d'effet de l'art. 54 de la LF 2019 ;
   - objet des transferts de 2018, 2020 et 2021 (annexe 8, tableaux par établissement, **lisibles
     dans le corpus de `tunisia-data`**) et application à l'Office, depuis 1998, de l'article 8 de la
     loi n° 90-97 (intérêts et rémunération de 1,5 % des avoirs des comptes courants postaux) ;
@@ -4751,7 +4802,7 @@ Ce qui reste :
   - textes **dans le corpus local, non lus** : décret du 28 août 1956 (Caisse d'épargne nationale
     tunisienne) et ses modificatifs, décrets sur les taux de l'épargne et des comptes courants
     postaux (1967-1988), lois de finances pour 1978, 1987, 1988, 2003 (art. 82), 2015 (art. 43,
-    seuil antérieur non lu), 2019 (art. 53 et 54) et 2026 (art. 100), organigramme, statut du
+    seuil antérieur non lu), organigramme, statut du
     personnel, emplois fonctionnels, arrêtés de 2004, 2019 et 2021, circulaire de la Banque
     centrale n° 2022-11 ;
   - grandeurs d'activité du tableau (cartes de paiement, comptes et encours de l'épargne postale)
@@ -4888,9 +4939,9 @@ Ce qui reste :
   activité de la Cour de discipline financière 1986-2009 (figure `fig-ep-cdf`, série `cdf-activite` de tunisia-data, branche `donnees/cdf-activite` ; tableaux repliés `tbl-ep-cdf` et `tbl-ep-cdf-detail`,
   vingt et une notices `cdf-rapport-01` à `-21`) ; passes du 27 octobre versées aux fiches
   `r-loi89-9-modificatifs-apres-2006` et `r-epna-liste-modificatifs-apres-2007` ; fiche
-  `r-cdf-rapports-apres-2009`. **Restent** : fascicules sans couche texte de 2022 (n° 35, 91) et 2025 (n° 67, 70),
-  à lire à l'image ou à océriser pour clore les deux recherches sur la loi n° 89-9 et la liste des établissements ;
-  fascicules arabes de 2008 à 2013 (liste) ; texte qui retire l'Agence tunisienne d'Internet de la liste (piste :
+  `r-cdf-rapports-apres-2009`. Fascicules de 2022 (n° 35, 91) et 2025 (n° 67, 70) lus le 31 octobre 2026
+  (PR #653) : deux pages chacun, ni la loi n° 89-9 ni les entreprises publiques ; recherches sur la
+  loi n° 89-9 et la liste des établissements closes sur ce point. **Restent** : fascicules arabes de 2008 à 2013 (liste) ; texte qui retire l'Agence tunisienne d'Internet de la liste (piste :
   rapport de la Cour des comptes, JORT n° 93 de 2008, p. 3603) ; décrets n° 97-566 et 97-552 (établissements hors
   liste), **lisibles au corpus** (JORT n° 27 de 1997), non lus ; rapports de la Cour de discipline financière
   après 2009 : édition arabe de 2010 à 2016 à océriser ; condamnations touchant une entreprise publique de 1999 à
@@ -5250,9 +5301,11 @@ Plans : `finances-locales-impots-plan-architecte.md`,
   organique n° 2008-57 ; date de dépôt du JORT n° 59 de 1995 (date d'effet de la loi organique
   n° 95-68) ; numéros des art. 43, 44 et 46 après 2006. Le motif du retrait de 1995 n'est dit
   par aucun exposé ni rubrique.
-- **Lectures en attente** : décret-loi n° 2026-4, art. 14 à 27, 35 à 48 et 100 à
-  131, et art. 57 à 99 à relever pour les budgets ; édition française du code de 2018 et du
-  décret-loi de 2026, **à obtenir**.
+- **Lectures en attente** : décret-loi n° 2026-4 lu en entier (art. 14 à 140) le 31 octobre
+  2026 (PR #657) ; reste l'art. 13 (domaines de compétence) à rapprocher du code de 2018 et les
+  textes d'application, non recherchés (le décret-loi n'est pas en vigueur) ; édition française
+  du code de 2018 et du décret-loi de 2026, **à obtenir** (la traduction des termes arabes est
+  la nôtre).
 - **2012** : décrets de dissolution, de nomination et de prorogation à lire ; aucun total pour
   l'année ; rien n'est établi sur ce qui relie les prorogations aux élections de 2018.
 - **Constitution de 2014** : numéro spécial du JORT du 10 février 2014 **à obtenir** ; le
@@ -5276,12 +5329,13 @@ figures nouvelles restent à traduire.
   35 à 56 et 100 à 131 parcourus, à lire en suivi. **Écrit au volume** : signalé une fois, comme
   texte publié qui n'est pas en vigueur, au chapitre des taxes (`#sec-fl-moduler-droits`) et à
   celui des budgets (`#sec-fl-budg-etat-du-droit`, ligne `r-fl-budg-2026` : art. 30, 71, 136,
-  137 et 139). **Reste** : relever pour le chapitre des budgets les art. 57 à 99 (budget,
-  équilibre, emprunt, exécution, comptes), lus mais non relevés ; rien n'est dit au chapitre
-  des transferts de l'art. 134 (fonds de 2021 maintenu et renommé) ; le chapitre d'histoire
+  137 et 139). **Relevé le 31 octobre 2026 (PR #657)** : art. 57 à 99 aux budgets (`_budgets.qmd`,
+  trois lignes), art. 134 aux transferts (fonds de 2021 maintenu et renommé), art. 14 à 140 à
+  l'histoire (`tbl-fl-hist-2026`, sept lignes) et aux compétences (deux lignes) ; l'art. 44 renvoie
+  aux art. 134 et 135 pour la transaction alors que la conciliation est aux art. 125 et 135 (défaut
+  du texte, noté) ; le chapitre d'histoire
   le porte depuis le 10 octobre 2026 comme réforme publiée, non entrée en vigueur
-  (`#sec-fl-hist-2026` : art. 1, 2, 12, 29, 30, 51, 52, 55, 56, 136, 137 et 139 ; p. 2058 et
-  2065 lues à l'image le 10 octobre, art. 14 à 27, 35 à 48 et 100 à 131 à lire) ; celui des
+  (`#sec-fl-hist-2026`) ; celui des
   compétences le donne à l'état du droit comme texte publié non entré en vigueur
   (`#sec-fl-comp-dissolution-2023`, ligne `r-fl-comp-2026` : art. 12, 29, 30, 56, 136 et 139) et
   renvoie à `@sec-fl-hist-2026` pour l'objet du texte et la dissolution ; sort du code de la fiscalité
@@ -5465,8 +5519,8 @@ la fiche a sa seconde ancre, et `#sec-fl-hist-carte` le dit en une proposition a
   - aucune série à périmètre constant n'est publiée : la part de la hausse due aux créations et
     extensions de communes reste non mesurée ; ventilation communal / non communal de 2024 non
     publiée ;
-- décret-loi n° 2026-4 : art. 14 à 27, 35 à 48 et 100 à 131, intitulés des titres III et
-  suivants, mode de nomination de la commission provisoire de gestion ;
+- décret-loi n° 2026-4 : art. 14 à 140 lus et versés le 31 octobre 2026 (PR #657), dont le mode
+  de nomination de la commission provisoire de gestion (art. 57) ;
 - frise des réformes en tête du chapitre (`TODO (rédacteur)`) ; onze attributs `titre` à
   traduire quand le chapitre le sera.
 
@@ -5530,9 +5584,8 @@ publié et non entré en vigueur (art. 1, 12, 29, 30, 55, 56, 136 et 139). Fiche
 - **Lacunes** : modificatifs et édition arabe de la loi n° 75-33, et son sort après 2018 ;
   textes de création des agences citées par Dafflon et Gilbert et décret n° 2004-1182 (couche
   texte décalée) ; activité de la Haute instance des finances locales et existence du
-  Conseil supérieur ; décret-loi n° 2026-4, art. 14 à 27, 35 à 48 et 100 à 131, à lire pour
-  les compétences, les organes et le contrôle (art. 1, 55 et 56 repris de la note du
-  10 octobre, § 3) ; qui adopte le budget communal et arrête un tarif depuis le
+  Conseil supérieur (aucun des 140 articles du décret-loi n° 2026-4 ne les mentionne, lu le
+  31 octobre 2026, PR #657) ; qui adopte le budget communal et arrête un tarif depuis le
   14 mars 2023 ; **dépenses par fonction et part dans la dépense publique : aucune série
   identifiée**, à chercher dans les rapports de la Haute instance — **à obtenir**.
 - **Tableau de tête** : `tbl-fl-comp-etats` suit le plan, sauf deux cases — la colonne de la loi
@@ -5651,8 +5704,8 @@ d'après les lectures du 9 octobre 2026** (`finances-locales-impots-lectures-202
   l'image, page à trancher (4260 ou 4261).
 
 **Lacunes**, lisibles dans le corpus sauf mention : art. 3 du code (six exonérations annoncées,
-cinq énumérées) ; pages françaises des art. 72 (LF 2019), 59 (LF 2023), 59 (LF 2024) et 76
-(LF 2025) ; condition de l'abandon des pénalités des personnes morales (LF 2024, art. 59) ;
+cinq énumérées) ; pages françaises des art. 72 (LF 2019), 59 (DL 2022-79), 59 (LF 2024) et 76
+(LF 2025) portées le 31 octobre 2026 (PR #657) ; condition de l'abandon des pénalités des personnes morales (LF 2024, art. 59) ;
 taxe au profit du Fonds national d'amélioration de l'habitat avant 2005 et produit de la
 contribution depuis 2005 — **à obtenir** ; décrets de 1902, 1919, 1920 et 1948 — **à obtenir**
 pour ceux d'avant 1956 ; arrêtés communaux du prix de référence, **hors corpus** ; portée du
@@ -5679,8 +5732,9 @@ prix homologués, redevables taxés sur leur impôt, maximum et sa suppression) 
 1997-2013, **à obtenir** ; produit de la taxe avant ou après écrêtement au profit du fonds
 depuis 2013, et série du montant écrêté, **à obtenir** ; amnisties de 2012, 2019, 2024 et 2025
 (objet, années, conditions), loi n° 2006-25, décret-loi n° 2006-1, arrêté de calendrier de
-2026 ; pages françaises des art. 37 (LF 2016), 42 (LF 2019), 52 et 57 (LF 2023), 67 et 69
-(LF 2024) ; LF 1993, art. 38 et 39 : date d'effet non établie, édition arabe non relue
+2026 ; pages françaises des art. 37 (LF 2016), 42 (LF 2019), 52 § 3 et 57 (DL 2022-79) et 67
+(LF 2024) portées le 31 octobre 2026 (PR #657), **restent** l'art. 54 du DL 2022-79 et l'art. 69
+de la LF 2024 (p. 3491) ; LF 1993, art. 38 et 39 : date d'effet non établie, édition arabe non relue
 (édition française lue à l'image, p. 1670, fascicule **dans le corpus** sans couche texte),
 et décrets des zones touristiques municipales (décret n° 94-822 et compléments), non lus ;
 décret-loi n° 2020-33 (auto-entrepreneur) : date d'effet et pages à relever, sans clé
@@ -5772,8 +5826,11 @@ aux écarts de 1990 visent le chapitre des budgets (`@sec-fl-lp-sources`,
   figures déclare sa provenance avec une ligne de source unique (**à verser par le
   bibliographe** si l'on veut les citer une à une) ;
 - montant annuel des subventions depuis 2018 ; LF 1977-1979 et arrêtés de 1975-1983 ; montants de 1990-1991 au
-  profit de la caisse à relire à l'image ; les tableaux des LF de 2022 à 2026 semblent en
-  image — **OCR à prévoir** ;
+  profit de la caisse à relire à l'image ; les tableaux des LF de 2022 à 2026 (réserve, fonds
+  d'appui) sont des pages d'images, constaté le 31 octobre 2026 (PR #657) : à partir de la page
+  30 du PDF pour la LF 2022 (JORT n° 119/2021), 23 pour la LF 2023 (n° 141/2022), 28 pour la LF 2024
+  (n° 144/2023), 39 pour la LF 2025 (n° 149/2024) — **OCR massif à prévoir**, une centaine de pages par fascicule ; les articles
+  ne donnent pas les montants ;
 - décret n° 2013-2797 (fonds de coopération) et LF 2013, art. 13-15, sans clé pour le décret ;
   base des proportions de 90 % et 10 % : non dite par la loi ;
 - décret du fonds d'appui et modificatif de l'arrêté après le 29 juin 2021 : non identifiés
@@ -6105,6 +6162,8 @@ reprendre sans refaire la même recherche :
    livres en cours, avec la partie VI (synthèse).
 
 **Nettoyage du 31 octobre 2026** (PR de ce commit) : lignes périmées corrigées après vérification dans les chapitres, d'après la lecture des huit tranches du backlog ; épargne et capital (LF 2002 et 2003, arrêté de 2003, décret-loi n° 2011-100, décret n° 99-2773, loi n° 99-92), TVA (date d'effet de 1994), dates d'application des prestations sociales, décret n° 75-952, loi n° 65-17, grilles et indemnité complémentaire provisoire, SNCFT (statuts de 1969), chapitre « Les transports » (quatre entrées fondues en une), lois de règlement et tableau III-1 de la compensation, forme du livre des entreprises publiques, plafond de garantie 2016-2026, date de la loi n° 2026-1, textes OCR exploités. Non touchés faute de vérification : les lignes des finances locales, de la santé et de l'éducation signalées comme périmées, la ligne « Clés du bibliographe créées le 31 octobre 2026 » de la fiscalité, la contradiction sur la langue du décret-loi n° 2022-79 (retraites), la fiche `r-augmentations-ep-2013-2025`.
+
+**Passage du 1er novembre 2026** (archiviste, d'après les corps des PR #651 à #658 et #663 ; chaque point vérifié dans le chapitre, le registre ou la notice de la branche `master`) : 38 points resserrés ou marqués faits (cotisations sociales et impôt sur la fortune, santé, rémunérations publiques, marché du travail, prestations sociales, finances locales, entreprises publiques : offices, secteur financier, AFI, SNIT, phosphate, OACA, statut) ; aucun point retiré en entier, les restes étant conservés. Tranché : la ligne finances locales « art. 14 à 27, 35 à 48 et 100 à 131 à lire » était périmée (décret-loi n° 2026-4 lu en entier, PR #657) ; la fiche `r-augmentations-ep-2013-2025` reste ouverte (fascicules sans couche texte). Signalés, non tranchés : classement 2016 étape ou rupture (architecte) ; passe à ajouter à la fiche `r-d2019-542-modificatifs-apres-2023` et retrait de « lire le JORT n° 58 de 2026 » dans les `a_faire` de `docs/recherches.yml` (hors du périmètre de ce fichier) ; décret n° 2025-426, que la PR #663 dit « non traité » alors que le chapitre le porte (restent seulement les montants servis en 2025) ; effet du décret de 2000 sur les infirmiers à recalculer sur le dépôt du JORT n° 59 de 2000.
 
 `todo-localisation.md` donne le point de départ pour les numéros et pages, **pas un
 décompte actuel de disponibilité** : un fascicule qui y manque peut depuis avoir été
