@@ -129,10 +129,11 @@ Chaque ligne renvoie à l'article qui fixe la condition, le taux et la durée. L
 <!-- RECHERCHE r-ar-etat-2026-modificatifs : texte postérieur modifiant les art. 71 à 90 de la loi n° 60-30, l'art. 35 de la loi n° 94-28 ou le décret n° 93-308 (voir docs/recherches.yml) -->
 
 <!-- TODO (documentaliste) : restes du ticket de l'architecte (note prestations-sociales-lectures-2026-10-10.md, § 5) —
-D12 : les lois de finances de 2007 à 2026 ne sont pas dépouillées article par article pour les art. 52, 54 et 61 de la
-loi n° 60-30, la majoration pour salaire unique et la contribution de crèche ; D13 : révisions du plafond annuel des
-soins ambulatoires postérieures à l'arrêté du 3 juin 2008, et arrêté conjoint du 25 juin 2007 sur les affections
-lourdes ou chroniques, non cherchés. -->
+D12 : fait le 1er novembre 2026 (lois de finances de 2007 à 2026 lues en texte intégral : aucun article ne touche les
+art. 52, 54 et 61 de la loi n° 60-30, la majoration pour salaire unique ni la contribution de crèche ; voir docs/recherches.yml,
+fiche r-pf-art61-apres-1988) ; D13 : révisions du plafond annuel des soins ambulatoires lues pour 2010, mai 2021 et 2024 ;
+l'arrêté du 8 février 2021 (JORT n° 14, absent du corpus) et l'arrêté conjoint du 25 juin 2007 sur les affections lourdes
+ou chroniques restent non lus. -->
 
 ## Les indemnités de maladie et de maternité {#sec-ar-maladie-maternite}
 
@@ -354,6 +355,10 @@ L'indemnité journalière se calcule sur le trimestre le plus favorable parmi le
 prestations-sociales-lectures-2026-10-10.md, § 1.8, sans guillemets : relire ces articles à l'image (JORT n° 15 du
 22 février 1994, p. 311-313) avant toute citation littérale. -->
 
+Les rentes en cours de paiement suivent le salaire minimum. [Le décret gouvernemental du 26 novembre 2019](#r-ar-at-rev2019) les augmente automatiquement à chaque hausse du salaire minimum interprofessionnel garanti du régime de 48 heures et du salaire minimum agricole garanti : le montant de la rente est multiplié par le taux de hausse du salaire minimum. La CNAM en supporte le coût. L'ajustement court depuis le [1^er^ mai 2018]{.insecable}.
+
+<!-- TODO (documentaliste) : décret gouvernemental n° 2019-1130 lu sur la couche texte des éditions française et arabe (JORT n° 99 du 10 décembre 2019, pp. 4303-4304 en français, 4532-4533 en arabe), non relu à l'image. Les taux de hausse appliqués depuis le 1er mai 2018 et les arrêtés qui les constatent ne sont pas cherchés. -->
+
 :::: {.chronologie-repliable titre="Accidents du travail et maladies professionnelles du secteur privé : définitions, champ, prestations, exclusivité et dispositions transitoires, article par article, loi n° 94-28"}
 
 | Objet | Texte et article | Ce que dit l'article |
@@ -370,6 +375,7 @@ prestations-sociales-lectures-2026-10-10.md, § 1.8, sans guillemets : relire ce
 | []{#r-ar-at-art49}Rentes du conjoint survivant et des orphelins | loi n° 94-28 [@loi94-28, art. 49] | conjoint : 50 % du salaire annuel du défunt sans enfants rentiers, 40 % avec enfants, quel que soit leur nombre ; orphelins : 20 % pour un seul, 30 % pour deux, 40 % pour plus de deux ; orphelins de père et de mère : 50 %, 60 %, 70 % et 80 % pour un, deux, trois, quatre orphelins et plus |
 | []{#r-ar-at-art50}Plafond des rentes d'ayants droit, ascendants | loi n° 94-28 [@loi94-28, art. 50-51] | le total des rentes ne dépasse pas 80 % du salaire du défunt, avec réduction proportionnelle au-delà (article 50) ; à défaut de conjoint et d'enfants, 20 % du salaire annuel par ascendant ou descendant à charge, dans la limite de 50 % (article 51) |
 | []{#r-ar-at-art52}Salaire de référence des rentes | loi n° 94-28 [@loi94-28, art. 52-53] | le trimestre le plus élevé des quatre qui précèdent l'accident, multiplié par quatre, ou la moyenne de l'année précédente, selon ce qui est le plus favorable (article 52) ; salaire annuel retenu dans la limite de six fois le salaire minimum interprofessionnel garanti du régime de 48 heures rapporté à 2 400 heures par an, et jamais inférieur à ce salaire minimum annuel ; dans l'agriculture, les mêmes bornes sur le salaire minimum agricole de 300 jours (article 53) |
+| []{#r-ar-at-rev2019}Revalorisation des rentes en cours | décret gouvernemental n° 2019-1130 du 26 novembre 2019 [@decret-gouv-2019-1130-rentes-atmp, art. 1 à 4] | ajustement des rentes des victimes soumises à la loi n° 94-28 d'après l'évolution des salaires (article 1) : hausse automatique à chaque augmentation du salaire minimum interprofessionnel garanti du régime de 48 heures et du salaire minimum agricole garanti ; montant de la hausse égal au taux de hausse du salaire minimum multiplié par la rente avant la hausse (article 2) ; coût à la charge de la CNAM (article 3) ; ajustement à compter du 1^er^ mai 2018 (article 4) |
 | []{#r-ar-at-art103}Dispositions transitoires | loi n° 94-28 [@loi94-28, art. 103-104] | au 1^er^ janvier 1995, tous les contrats d'assurance couvrant ces risques prennent fin (article 103) ; la caisse se substitue au « Fonds des accidents du travail » et en liquide l'actif et le passif (article 104) |
 | []{#r-ar-at-cnam}Gestion par la CNAM | loi n° 2004-71 [@loi2004-71, art. 8] | la CNAM gère les régimes légaux de réparation des dommages résultant des accidents du travail et des maladies professionnelles dans les secteurs public et privé |
 
