@@ -4654,6 +4654,12 @@
     couverture: 'jort_cache : numero in (97-130, 97-147, 2007-100, 2008-103) — seul 2008-103 répond, pour un autre texte (16 janvier 2008, agence de lutte contre le dopage) ; dates 1997-09-16, 1997-09-18, 1997-11-10, 2007-02-12, 2008-03-04 filtrées sur milit/armee/securite interieure/traitement de base/indemnite/عسكري/الأمن الداخلي : seuls les homologues civils (97-1832, 97-2127, 2007-267, 2007-268). Plein texte (couche texte décodée) des JORT FR 1997 n° 76, 77 et 93 et 2007 n° 14 : aucune occurrence. LIKE sur les titres et objets (arabes compris) pour les termes iort_ar, dont « المرتب الأساسي للعسكريين » : aucun. Fascicules arabes et mars 2008 non parcourus. Requêtes par numéro et par date, hors des champs titres_* : à rejouer à la main.'
     couvert_jusqu_au: 2008-03-04
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [visas]
+    couverture: 'Visas des décrets n° 2000-1013, 2000-1015, 2000-1019 (JORT n° 41 de 2000), n° 2012-1334 à 2012-1336 (JORT n° 68 de 2012) et n° 2012-248 (JORT n° 38 de 2012), lus : le décret du 16 septembre 1997 y est cité « n° 97-130 », sous l''intitulé « fixant le traitement de base des militaires et des forces de sécurité intérieure » (sans les douanes), modifié par le décret « n° 2007-101 du 12 février 2007 » et le décret « n° 2008-103 du 4 mars 2008 ». Le numéro 2007-100 de l''objet est donc peut-être 2007-101. Aucun texte nouveau trouvé ; barème toujours non lu.'
+    couvert_jusqu_au: 2008-03-04
+    resultat: aucun
   a_faire: [parcourir les fascicules arabes de septembre-novembre 1997 et de mars 2008]
 
 - id: r-mil-solde-79-96-1982-1985
