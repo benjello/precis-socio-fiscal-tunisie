@@ -5202,3 +5202,19 @@
     couverture: 'Relance du 1er novembre 2026, textes publiés du 1er décembre 2021 au 12 janvier 2024 : jort_cache (intitulés français et arabes ; seul candidat, le décret n° 2024-5 lui-même), miroir iort (même candidat), plein texte du corpus local des fascicules 2021 n° 112 à 120, 2022, 2023 et 2024 n° 1 à 6 (fascicules absents ou lus en arabe seulement énumérés par la relance). Les visas du décret n° 2024-5 citent le décret gouvernemental n° 2017-342 et aucun autre texte d''exonération des quatre aéroports.'
     couvert_jusqu_au: 2024-01-12
     resultat: aucun
+- id: r-cfl-art19-penalite-apres-2023
+  objet: texte modifiant le paragraphe I de l'article 19 du code de la fiscalité locale (pénalité de retard de la taxe sur les immeubles bâtis) après le décret-loi n° 2022-79 (art. 59, § 7), qui porte la pénalité à 1,25 % par mois
+  ou: [precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-immeubles-penalite]
+  requetes:
+    titres_fts: ['"fiscalite locale"', '"immeubles batis"']
+    titres_like: ['%fiscalite locale%', '%immeubles batis%']
+    iort_ar: [مجلة الجباية المحلية, العقارات المبنية]
+    plein_texte: [article 19 du code de la fiscalité locale, الفصل 19 من مجلة الجباية المحلية, مجلة الجباية المحلية]
+    depuis: 2023-01-01
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, corpus_local, iort]
+    couverture: 'jort_cache : titres FTS et LIKE, français et arabe, du 01/01/2023 au 29/10/2026 ; cinq notices répondent (LF 2024 art. 59 et 67, LF 2025 art. 39, 64 et 76), aucune ne touche l''art. 19. Miroir iort : aucun candidat. Plein texte FR et AR des fascicules du corpus local 2023-2026 : « مجلة الجباية المحلية » n''apparaît que dans les visas de deux décrets de 2023 et aux art. 67 (art. 40 § III) et 59 § 4 (art. 39 § II) de la LF 2024. Code consolidé au 1er janvier 2026 (DGELF) : le texte de l''art. 19 § I ne porte pas d''autre modification que l''art. 54 de la loi de finances pour 2007 et l''art. 59-7 du décret-loi n° 2022-79 (taux de 1,25 %), plus le plafond de l''art. 68-3 du décret-loi n° 2021-21. Lacunes : fascicules FR absents (2023 : 39, 41, 44, 71, 83, 100, 115, 142 ; 2024 : 8, 113, 118, 130, 145 ; 2025 : 4, 88, 90, 95-96, 148 ; 2026 : 10-11, 13, 62, 76, 96), lus en arabe ; fascicules postérieurs au 29/10/2026 non parcourus.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
