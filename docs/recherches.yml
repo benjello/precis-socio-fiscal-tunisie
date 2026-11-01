@@ -5275,3 +5275,24 @@
     couverture: 'Relance du 1er novembre 2026, textes publiés depuis le 23 août 2014 (lendemain de la loi n° 2014-54). jort_cache jusqu''au 29 octobre 2026 : titres français et arabes (FTS et LIKE « redevance de compensation », « أتاوة الدعم », « 27 لسنة 2012 ») : quatre notices, le décret-loi n° 2021-21 (art. 56), l''arrêté du 10 mai 2024 et deux lignes de la loi n° 2015-53 qui citent l''art. 17 de la loi n° 2012-27 sans rapport avec la redevance. Miroir iort, texte arabe de 2014 à 2026 : seul le décret-loi n° 2021-21 cite l''art. 63. Plein texte des fascicules du corpus local, français et arabe : l''art. 63 n''est cité qu''aux JORT n° 119 de 2021 (art. 56, taux de 3 %), n° 144 de 2023 (art. 45 et 69, § 6), n° 61 de 2024 (arrêté du 10 mai 2024) et n° 148 de 2025 (édition arabe, non lue) ; aucune occurrence de 2014 (après le 22 août) à 2020, donc aucune prorogation du n° 4 pour 2016 et les années suivantes. Les lois de finances de 2015 à 2017 (JORT n° 105 de 2014, n° 104 de 2015, n° 105 de 2016) cherchées dans le texte français : l''expression « redevance de compensation » n''y figure pas. Lacunes : fascicules absents ou sans texte exploitable listés par la relance (2015 ar n° 53, 57, 64, 67 ; 2015 fr n° 36 ; 2018 ar n° 26 ; 2018 fr n° 29, 33) ; pist.tn non consulté ; une prorogation qui ne cite ni l''article ni la redevance échappe à la recherche.'
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
+
+- id: r-cfl-art90-parkings-apres-2003
+  objet: texte modifiant l'article 90 du code de la fiscalité locale (barème de la contribution à la réalisation de parkings collectifs) après la loi de finances pour 2003 (art. 79)
+  ou: [precis/fr/finances_locales/_taxes_redevances.qmd#sec-fl-parkings]
+  requetes:
+    titres_fts: ['"fiscalite locale"', parkings]
+    titres_like: ['%fiscalite locale%', '%parkings%']
+    iort_ar: [مجلة الجباية المحلية, مآوي السيارات]
+    plein_texte:
+    - article 90 du code de la fiscalité locale
+    - الفصل 90 من مجلة الجباية المحلية
+    - parkings collectifs
+    - مآوي السيارات الجماعية
+    depuis: 2003-01-01
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026 sans plein texte des fascicules (non parcouru, trop long) : jort_cache, titres FTS et LIKE (fiscalité locale, parkings, stationnement) depuis le 01/01/2003 : seul l''arrêté du 30 mai 2003 (JORT n° 45, p. 1816, liste des communes) touche la contribution ; les lois de finances de 2005, 2006, 2007, 2009, 2012 et 2014 modifient d''autres articles du code. Miroir iort, termes arabes : 83 candidats, deux mentions de مأوى السيارات (LF 2015, LF 2019) qui sont des lignes de crédits d''investissement, non l''art. 90. Code consolidé au 1er janvier 2026 (DGELF) : l''art. 90 ne porte que la mention « Modifié Art 79 LF 2002-101 du 17/12/2002 ». Lacune : plein texte des fascicules 2003-2026 à rejouer.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
