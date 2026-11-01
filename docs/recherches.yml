@@ -2734,8 +2734,13 @@
     couverture: 'jort_cache jusqu''au 10 avril 2026, titres seuls (LIKE français et arabe, FTS) : rien après le n° 2010-3170 ; seconde voie : le décret gouvernemental n° 2019-758 vise le n° 2005-910 « et notamment le décret n° 3170 de 2010 » (JORT n° 68 du 23 août 2019, p. 2690, lu à l''image). Plein texte non joué.'
     couvert_jusqu_au: 2026-04-10
     resultat: aucun
-  a_faire:
-  - rejouer « 2005-910 » et « 910 لسنة 2005 » en plein texte depuis 2011 et lire la forme la plus récente du visa
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local, visas]
+    couverture: 'Plein texte des fascicules français (1 897 fichiers) du corpus local, de 2011 au n° 105 de 2026 (pdftotext, motifs « 2005-910 » et « 2010-3170 ») : les visas qui citent le décret n° 2005-910 le font « tel que modifié et complété notamment par le décret n° 2010-3170 » jusqu''en 2024, puis « ensemble les textes qui l''ont modifié et complété » en 2025 et 2026 ; aucun visa ne cite un autre décret modificatif (les numéros 2016-294, 2016-365, 2011-161 et 2019-758 qui suivent ces visas appartiennent à des visas voisins sur les attributions des ministères et sur un office, non à la désignation de l''autorité de tutelle). Édition arabe non jouée ; fascicules sans couche texte exploitable non lus.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire: [jouer « 910 لسنة 2005 » en plein texte sur l'édition arabe depuis 2011]
 
 - id: r-onpft-classement-entreprise-publique
   objet: texte créant l'Office national des postes frontaliers terrestres et le classant, ou non, parmi les entreprises publiques
