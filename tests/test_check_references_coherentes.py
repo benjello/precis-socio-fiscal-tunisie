@@ -6,6 +6,12 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
+try:
+    import yaml  # noqa: F401
+    AVEC_YAML = True
+except ImportError:
+    AVEC_YAML = False
+
 from check_references_coherentes import charger, ecarts, charger_tolerances  # noqa: E402
 
 
@@ -68,6 +74,7 @@ class Tolerances(unittest.TestCase):
         self.assertTrue(any("date illisible" in p for p in problemes))
 
 
+@unittest.skipUnless(AVEC_YAML, "PyYAML absent")
 class DepotReel(unittest.TestCase):
     def test_le_depot_est_coherent(self):
         self.assertEqual(ecarts(charger(), charger_tolerances()), [])
