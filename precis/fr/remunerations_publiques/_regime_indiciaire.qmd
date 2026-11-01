@@ -20,7 +20,7 @@ Le [régime indiciaire](#g-regime-indiciaire) est le régime de rémunération d
 
 Un tiret dans la colonne « Date d'effet » signale une date qui n'est pas établie ici ; 1983 est l'année de la loi.
 
-<!-- TODO (documentaliste) : relever la date d'effet de la loi n° 83-112 (et celle de la loi n° 97-83), absentes du chapitre ; relever aussi les intitulés et l'objet des décrets n° 97-1832, n° 97-2127, n° 2007-267 et n° 2007-268, pour dire « ce que le texte cherche » dans ses propres mots (fiche de plan de l'architecte, § 10, Q1 et Q4). -->
+<!-- TODO (documentaliste) : relever la date d'effet de la loi n° 83-112 (et celle de la loi n° 97-83), absentes du chapitre. -->
 
 **Ce qui fait évoluer le niveau.** Les deux réformes modifient la structure de la rémunération davantage que son niveau. Celui-ci évolue par les augmentations générales des salaires : négociées par cycles entre l'UGTT et le gouvernement, fixées par décret en dinars, elles sont servies par corps, sur l'indemnité propre à chacun, puis par catégorie (@sec-cycles-revalorisation).
 
@@ -169,11 +169,10 @@ La seconde est la **légalité de la rémunération** : fixée par décret, elle
 
 Aucun indice n'entre dans ce calcul : aucun texte en vigueur ne publie de « valeur du point » qui, appliquée à un indice, déterminerait le traitement. Le régime doit son nom au mécanisme en vigueur jusqu'au 31 décembre 1997, où un chiffre indiciaire était converti en dinars (@sec-ancien-systeme-indiciaire).
 
-La composition de la grille est celle du 1^er^ avril 2007 (@sec-ri-reforme-2007). Le chapitre en donne la structure — trois tableaux, un montant par grade et par échelon — et un exemple de montant, celui du premier échelon de l'inspecteur central des affaires économiques.
+La composition de la grille est celle du 1^er^ avril 2007 (@sec-ri-reforme-2007). Le chapitre en donne la structure — trois tableaux, un montant par niveau de rémunération — et les montants du premier niveau de chaque catégorie (@tbl-ri-grille-reperes), dont celui du premier échelon de l'inspecteur central des affaires économiques.
 
 <!-- TODO (documentaliste) : établir si un texte postérieur au 1er avril 2007 modifie la grille des traitements de base, et sur quel élément de la rémunération les augmentations générales sont servies depuis 2016 ; le chapitre ne cite aucun texte postérieur. Tant que ce n'est pas fait, l'état du droit se date « au 1er avril 2007 » sans dire qu'il est inchangé ; si une recherche est menée sans résultat, créer la fiche RECHERCHE correspondante (fiche de plan de l'architecte, § 10, Q3). -->
-<!-- TODO (rédacteur) : le chapitre ne montre pas la grille des traitements de base, hors l'exemple de l'inspecteur central. Tableau attendu `tbl-ri-grille-reperes` (premier et dernier échelon de quelques grades par catégorie, en 1998 et en 2007), à engendrer et non à recopier une fois les annexes des décrets n° 97-1832 et n° 2007-268 datées et sourcées. Voir docs/notes/backlog-precis.md. -->
-
+<!-- TODO (rédacteur) : le chapitre ne montre que le premier niveau de chaque catégorie (@tbl-ri-grille-reperes) ; les niveaux suivants et le dernier niveau de chaque sous-catégorie restent à engendrer des annexes des décrets n° 97-1832 et n° 2007-268. -->
 ### L'avancement d'échelon et la promotion {#sec-ri-avancement-promotion}
 
 La progression de la rémunération dans la carrière emprunte **deux mécanismes distincts**, que le statut général traite séparément.
@@ -669,10 +668,12 @@ Le système procède d'un **texte budgétaire de 1949**, « le décret du 23 mai
 
 Au 1^er^ janvier 1998, la conversion d'un indice en dinars disparaît : la grille annexée au [décret n°97-1832 du 16 septembre 1997](#r-ri-g-1998) devient le barème lui-même. Le traitement de base est « fixé à compter du **1^er^ janvier 1998**, conformément à la grille des salaires telle que fixée par l'annexe ci-jointe » ; le décret [abroge](#r-ri-g-abrogation), à compter de cette date, toutes dispositions antérieures contraires.
 
-Quatre dispositions accompagnent le passage d'un système à l'autre.
+Cinq dispositions accompagnent le passage d'un système à l'autre.
 
+- **Un champ large.** La grille s'applique aux corps que l'[article 1^er^](#r-ri-g-champ) énumère, dont les magistrats de l'ordre judiciaire, les membres du Tribunal administratif et de la Cour des comptes et les agents des services douaniers.
+- **Un traitement qui en remplace trois.** Le traitement de base mensuel remplace, pour les fonctionnaires et les agents temporaires, le traitement global annuel, l'indemnité complémentaire et l'indemnité provisoire complémentaire ; pour les ouvriers, le tableau des salaires mensuels et l'indemnité provisoire complémentaire.
 - **Un reclassement à rémunération égale.** Chaque agent en exercice est reclassé au traitement de base **égal** à la somme de son traitement indiciaire, de son indemnité complémentaire et de son indemnité provisoire complémentaire ; à défaut d'échelon correspondant exactement à ce total, il est rangé au traitement immédiatement inférieur et perçoit une **[indemnité compensatrice](#g-indemnite-compensatrice)** égale à la différence, en conservant son ancienneté d'échelon et de grade ([article 6](#r-ri-g-reclassement)).
-- **Une indemnité compensatrice appelée à se résorber.** Elle n'est pas un complément pérenne : maintenue lors des avancements d'échelon, elle cesse d'être servie dans trois cas, dont la promotion ([décret n°97-2127 du 10 novembre 1997](#r-ri-g-compensatrice)).
+- **Une indemnité compensatrice appelée à se résorber.** Elle n'est pas un complément pérenne : maintenue lors des avancements d'échelon, elle cesse d'être servie dans trois cas, dont la promotion ([décret n°97-2127 du 10 novembre 1997](#r-ri-g-compensatrice), applicable depuis le 1^er^ janvier 1998).
 - **Une seconde indemnité, pour les indices jusqu'à 200.** Les agents rangés à un indice égal ou inférieur à 200 reçoivent une [seconde indemnité](#r-ri-g-seconde), destinée à compenser la perte nette résultant de l'assujettissement de leur nouveau traitement à la cotisation retraite ; elle se résorbe à hauteur de tout avancement.
 - **Une révision du statut général, la même année.** La [loi n°97-83 du 20 décembre 1997](#r-ri-g-loi97) modifie plusieurs dispositions du statut général, dont celles relatives à la promotion et au reclassement (@sec-ri-avancement-promotion).
 
@@ -682,9 +683,22 @@ Au 1^er^ avril 2007, une partie des indemnités spécifiques de corps est transf
 
 - **Aucune grille nouvelle.** Le second de ces décrets **modifie et complète le décret n°97-1832**. Il y insère un [**article 2 bis**](#r-ri-g-2bis) : les montants transférés sont intégrés au traitement de base, et la grille des salaires est fixée conformément aux annexes — non calculée à partir d'un point d'indice.
 - **Une nouvelle rédaction du reclassement après promotion.** Le même décret **abroge et remplace l'article 10** du décret de 1997 (@sec-ri-avancement-promotion).
-- **Une recomposition, non une hausse nette de rémunération.** Pour le grade d'inspecteur central des affaires économiques, le traitement de base mensuel du premier échelon s'établissait à environ 203 DT sous la [grille antérieure](#r-ri-g-exemple), puis à 611 DT à compter du 1er avril 2007 après l'intégration d'une partie de l'indemnitaire dans la base. L'écart traduit pour l'essentiel le basculement d'indemnités spécifiques vers le traitement de base — opération à somme largement constante au niveau de la rémunération globale — et non un relèvement du salaire net.
+- **Une recomposition, non une hausse nette de rémunération.** Pour le grade d'inspecteur central des affaires économiques, le traitement de base mensuel du premier échelon s'établissait à 203 DT sous la [grille antérieure](#r-ri-g-exemple), puis à 611 DT à compter du 1er avril 2007 après l'intégration d'une partie de l'indemnitaire dans la base. L'écart traduit pour l'essentiel le basculement d'indemnités spécifiques vers le traitement de base — opération à somme largement constante au niveau de la rémunération globale — et non un relèvement du salaire net.
 
-<!-- TODO (documentaliste) : l'exemple de l'inspecteur central donne « environ 203 DT » pour un montant que fixe l'annexe du décret n° 97-1832 : relever le montant exact à l'annexe, et le replacer dans le tableau attendu de la grille (tbl-ri-grille-reperes). -->
+Le montant transféré dépend de la catégorie, non du grade : il est de 408 DT en A1, 340 en A2, 297 en A3, 232 en B, 189,250 en C et 170 en D (@tbl-ri-grille-reperes).
+
+| Catégorie | Premier niveau<br>au 1^er^ janvier 1998 | Montant transféré<br>au 1^er^ avril 2007 | Premier niveau<br>au 1^er^ avril 2007 |
+|---|---:|---:|---:|
+| A1 | 203,000 | 408,000 | 611,000 |
+| A2 | 181,250 | 340,000 | 521,250 |
+| A3 | 146,000 | 297,000 | 443,000 |
+| B | 128,250 | 232,000 | 360,250 |
+| C | 111,500 | 189,250 | 300,750 |
+| D | 100,750 | 170,000 | 270,750 |
+
+: Traitement de base mensuel du premier niveau de rémunération des fonctionnaires, par catégorie, en dinars, 1998 et 2007 (annexes des décrets de [1997](#r-ri-g-1998) et de [2007](#r-ri-g-2bis), montants transférés par le [décret de 2007](#r-ri-g-2007)) {#tbl-ri-grille-reperes}
+
+<!-- TODO (rédacteur) : le tableau ne donne que le premier niveau de chaque catégorie ; les 25 niveaux de chaque sous-catégorie, ceux des agents temporaires et des ouvriers restent à transcrire des annexes (JORT n° 76 de 1997, p. 1777-1790 ; JORT n° 14 de 2007, p. 501-503), à engendrer et non à recopier. -->
 
 :::: {.chronologie-repliable titre="Grille des traitements de base en dinars : passage de 1998, indemnités compensatrices et intégration de 2007 — textes et articles, date par date, 1997-2007"}
 
@@ -692,15 +706,16 @@ Au 1^er^ avril 2007, une partie des indemnités spécifiques de corps est transf
 |---|---|---|---|
 | []{#r-ri-g-1998}[1^er^ janvier 1998]{.insecable} | **rupture** | décret n° 97-1832 du 16 septembre 1997 [@decret-97-1832, art. 2] | chiffre indiciaire converti en dinars par un décret de « traitement global annuel », complété de deux indemnités → traitement de base « fixé à compter du 1^er^ janvier 1998, conformément à la grille des salaires telle que fixée par l'annexe ci-jointe » |
 | []{#r-ri-g-abrogation}[1^er^ janvier 1998]{.insecable} | étape de 1998 | décret n° 97-1832 [@decret-97-1832, art. 11 et 12] | entrée en vigueur du décret ; abrogation, à compter de cette date, de toutes dispositions antérieures contraires |
+| []{#r-ri-g-champ}[1^er^ janvier 1998]{.insecable} | étape de 1998 | décret n° 97-1832 [@decret-97-1832, art. 1^er^, p. 1774-1775] | grille unique pour les corps de l'État, des collectivités locales et des établissements publics administratifs énumérés à l'article 1^er^, dont les magistrats de l'ordre judiciaire, les membres du Tribunal administratif et de la Cour des comptes et les agents des services douaniers |
 | []{#r-ri-g-reclassement}[1^er^ janvier 1998]{.insecable} | étape de 1998 | décret n° 97-1832 [@decret-97-1832, art. 6] | reclassement au traitement de base égal à la somme du traitement indiciaire et des deux indemnités ; à défaut, traitement immédiatement inférieur et indemnité compensatrice égale à la différence, ancienneté conservée |
-| [1^er^ janvier 1998]{.insecable} | étape de 1998 | décret n° 97-1832 [@decret-97-1832, art. 9] | l'indemnité compensatrice est soumise aux mêmes retenues sociales que le traitement |
-| []{#r-ri-g-compensatrice}— | étape de 1998 | décret n° 97-2127 du 10 novembre 1997 [@decret-97-2127, art. 1 et 2] | indemnité compensatrice maintenue lors des avancements d'échelon ; elle cesse d'être servie dans trois cas |
-| []{#r-ri-g-seconde}— | étape de 1998 | décret n° 97-2127 [@decret-97-2127, art. 5 à 7] | seconde indemnité, pour les agents rangés à un indice égal ou inférieur à 200 |
+| [1^er^ janvier 1998]{.insecable} | étape de 1998 | décret n° 97-1832 [@decret-97-1832, art. 9, p. 1777] | l'indemnité compensatrice est soumise aux mêmes retenues sociales que le traitement |
+| []{#r-ri-g-compensatrice}[1^er^ janvier 1998]{.insecable} | étape de 1998 | décret n° 97-2127 du 10 novembre 1997 [@decret-97-2127, art. 1 à 4, 8 et 9, p. 2080-2081] | indemnité compensatrice maintenue lors des avancements d'échelon ; elle cesse d'être servie dans trois cas (fin de la période passée au niveau supérieur au dernier échelon, promotion dans le grade, passage à une autre grille) ; elle est servie quel qu'en soit le montant au reclassement des agents du dernier échelon (art. 3) ; ceux qui y ont cinq ans d'ancienneté sont reclassés en deux opérations (art. 4) ; le paragraphe 3 de l'article 7 du décret n° 97-1832 est abrogé (art. 8) |
+| []{#r-ri-g-seconde}[1^er^ janvier 1998]{.insecable} | étape de 1998 | décret n° 97-2127 [@decret-97-2127, art. 5 à 7 et 9, p. 2081] | seconde indemnité, pour les agents en exercice au 31 décembre 1997 rangés à un indice égal ou inférieur à 200 : différence entre le traitement net après reclassement et le traitement net d'avant ; elle cesse définitivement au niveau 2 de la catégorie B, au niveau 5 de la catégorie C et au niveau 9 de la catégorie D pour les fonctionnaires, au niveau 2 de B, 8 de C et 15 de D pour les agents temporaires |
 | — | ajustements de 1998 | textes du 10 novembre 1997, dont le décret n° 97-2127 [@decret-97-2127] | classement de plusieurs corps et divers régimes indemnitaires ajustés |
 | []{#r-ri-g-loi97}— | étape de 1998 | loi n° 97-83 du 20 décembre 1997 [@loi97-83] | plusieurs dispositions du statut général modifiées, dont la promotion et le reclassement |
-| []{#r-ri-g-2007}[1^er^ avril 2007]{.insecable} | **rupture** | décret n° 2007-267 du 12 février 2007 [@decret-2007-267] ; décret n° 2007-268 du 12 février 2007 [@decret-2007-268, art. 3] | indemnités spécifiques de corps hors du traitement de base → une partie transférée dans le traitement de base ; effet au 1^er^ avril 2007 (article 3 du second décret) |
-| []{#r-ri-g-2bis}[1^er^ avril 2007]{.insecable} | étape de 2007 | décret n° 2007-268 [@decret-2007-268, art. 1 et 2] | article 2 bis inséré dans le décret n° 97-1832 ; article 10 du même décret abrogé et remplacé |
-| []{#r-ri-g-exemple}[1^er^ janvier 1998]{.insecable}<br>[1^er^ avril 2007]{.insecable} | exemple | grilles annexées aux décrets n° 97-1832 [@decret-97-1832] et n° 2007-268 [@decret-2007-268] | inspecteur central des affaires économiques, premier échelon : environ 203 dinars → 611 dinars par mois |
+| []{#r-ri-g-2007}[1^er^ avril 2007]{.insecable} | **rupture** | décret n° 2007-267 du 12 février 2007 [@decret-2007-267, art. 1 et 2, p. 499] ; décret n° 2007-268 du 12 février 2007 [@decret-2007-268, art. 3, p. 500] | indemnités spécifiques de corps hors du traitement de base → une partie transférée dans le traitement de base, dans la limite de 408 D par mois en A1, 340 en A2, 297 en A3, 232 en B, 189,250 en C et 170 en D (ouvriers : 232 pour les unités U3, 189,250 pour U2, 170 pour U1) ; effet au 1^er^ avril 2007 (article 2 du premier décret, article 3 du second) |
+| []{#r-ri-g-2bis}[1^er^ avril 2007]{.insecable} | étape de 2007 | décret n° 2007-268 [@decret-2007-268, art. 1 et 2, p. 500-503] | article 2 bis inséré dans le décret n° 97-1832, avec les grilles des fonctionnaires, des agents temporaires et des ouvriers en annexe ; article 10 du même décret abrogé et remplacé : le reclassement après promotion se fait au traitement de base immédiatement supérieur, sans que l'augmentation soit inférieure à l'avantage d'un avancement normal |
+| []{#r-ri-g-exemple}[1^er^ janvier 1998]{.insecable}<br>[1^er^ avril 2007]{.insecable} | exemple | grilles annexées aux décrets n° 97-1832 [@decret-97-1832] et n° 2007-268 [@decret-2007-268] | inspecteur central des affaires économiques, premier niveau de la sous-catégorie A1 : 203 dinars → 611 dinars par mois |
 
 : La grille des traitements de base, texte par texte, 1997-2007 {#tbl-ri-grille-textes}
 
