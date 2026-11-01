@@ -1148,10 +1148,16 @@
     couverture: 'Intitulés jort_cache jusqu''au 2 octobre 2026 (FTS seule : modulation des cotisations, risques professionnels). Plein texte français 2004-2026, 2 415 fichiers, décalage de 29 décodé pour 116 : motifs de majoration, réduction, cotisation supplémentaire, bonus-malus — aucun texte sur la modulation AT/MP. Plein texte arabe exploitable de 2014 à 2026 seulement (2004-2013 quasi nul), termes du décret arabe de 1995 lus à l''image ; méthode contrôlée sur un texte témoin de 2017, les termes de modulation eux-mêmes sans témoin. Lus : décret n° 2005-321 en entier (rien sur prévention, tarification, modulation, recouvrement) ; loi n° 2004-71, art. 5, 8 à 10, 16 et 29, à l''image dans les deux éditions (aucune clause de substitution ; art. 29 : abrogation des seules dispositions contraires) ; loi n° 2017-47 ; décrets n° 96-1050 et 2009-2344 (substitution expresse de la CNAM à la CNSS pour les prêts et primes de prévention, pas pour le décret n° 95-538). Lacunes : mêmes numéros non lus que la passe du 5 octobre ; édition arabe 2004-2013 ; annexes des organigrammes de la CNAM (décrets n° 2008-3707 et 2018-747) ; décret n° 2002-583 non lu.'
     couvert_jusqu_au: 2026-09-30
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Lus à l''image dans les fascicules français : décret n° 2002-583 (JORT n° 24 de 2002, p. 645-646 : prime de 20 %, prêt de 70 % au plus du coût ; rien sur la modulation) ; décrets n° 2008-3707 (n° 99 de 2008) et n° 2018-747 (n° 73-74 de 2018), cinq et quatre articles, rien sur la prévention ni la modulation. Le schéma et l''annexe des deux organigrammes ne figurent ni dans l''édition française ni dans l''édition arabe des fascicules.'
+    couvert_jusqu_au: 2026-09-30
+    resultat: aucun
   a_faire:
   - lire à l'image ou océriser les 14 fascicules français de 1995-1998 sans couche texte
   - lire les contextes des occurrences de « 94-28 » (115 fascicules français) pour un texte qui modifierait la loi sans viser le décret
-  - lire à l'image les annexes des décrets n° 2008-3707 et 2018-747 (organigrammes de la CNAM)
+  - chercher le schéma et l'annexe des décrets n° 2008-3707 et 2018-747 (organigrammes de la CNAM) hors des fascicules du Journal officiel, où ils ne figurent pas
 
 - id: r-atmp-commission-modulation
   objet: texte instituant ou désignant une commission (nationale, ou placée auprès de la CNAM ou de la CNSS) appelée à connaître des décisions de majoration ou de réduction de la cotisation d'accidents du travail et de maladies professionnelles (loi n° 94-28, art. 90 ; décret n° 95-538, art. 10 à 27)
