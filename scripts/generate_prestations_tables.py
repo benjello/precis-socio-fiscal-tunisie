@@ -182,8 +182,15 @@ CLES_CRECHE = {
 CLES_SALAIRE_UNIQUE = dict.fromkeys(
     (f"{AF}/salaire_unique/enf{i}.yaml" for i in (1, 2, 3)), "loi80-36, art. 1"
 )
-# Les textes de mai 2020 n'ont pas de clause d'effet : ils sont datés du 25 mai 2020, jour où
-# ils deviennent exécutoires (fascicule déposé le 20 mai, cinq jours, loi n° 93-64, art. 2).
+# Les textes de mai 2020 n'ont pas de clause d'effet : le décret-loi n° 2020-1 (art. 2) les rend
+# exécutoires le lendemain de leur publication électronique (JORT n° 45 du 20 mai 2020), soit
+# le 21 mai 2020. Le modèle openfisca-tunisia date encore ces paramètres du 25 mai 2020
+# (ancienne règle, loi n° 93-64) : les clés ci-dessous restent celles du modèle, et
+# `REDATATIONS` corrige la date affichée.
+# Date du modèle -> date d'effet du précis, tant que le modèle n'est pas redaté.
+# 2020-05-25 -> 21 mai 2020 : arrêté du 19 mai 2020 et décret n° 2020-317, JORT n° 45 du 20 mai 2020.
+# 2025-11-09 -> 5 novembre 2025 : arrêté du 3 novembre 2025, JORT n° 132 du 4 novembre 2025.
+REDATATIONS = {"2020-05-25": "2020-05-21", "2025-11-09": "2025-11-05"}
 CLES_AMEN = {
     "2020-05-25": "arrete-2020-05-19-transferts, art. 2",
     "2022-01-01": "arrete-2022-04-01-transferts, art. 1",
@@ -208,7 +215,7 @@ CLES_APPUI = dict.fromkeys(
     CLE_APPUI,
 )
 # L'allocation familiale des moins de six ans naît le 8 avril 2022 et celle des 6 à 18 ans
-# reçoit son montant le 9 novembre 2025, l'une et l'autre entre deux revalorisations du
+# reçoit son montant le 5 novembre 2025 (9 novembre dans le modèle), l'une et l'autre entre deux revalorisations du
 # transfert : leurs lignes ont leur propre clé.
 CLES_AMEN_ET_AFNC = dict(
     CLES_AMEN, **{
@@ -450,6 +457,8 @@ def main() -> int:
             if df is None or df.empty:
                 print(f"✗ {langue}/{nom} : paramètre introuvable ou vide.")
                 return 1
+            df = df.replace({ot.formate_date(ancienne, langue): ot.formate_date(nouvelle, langue)
+                             for ancienne, nouvelle in REDATATIONS.items()})
             ot.ecrire_tableau(sortie / nom, df, liens, langue)
         print(f"✓ {langue} : {len(tableaux(langue))} tableaux")
 
