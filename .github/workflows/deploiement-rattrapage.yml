@@ -1,0 +1,41 @@
+name: Rattrapage du déploiement
+
+# POURQUOI CE WORKFLOW EXISTE
+#
+# Une PR de traduction fusionnée automatiquement l'est au nom du GITHUB_TOKEN. GitHub ne
+# déclenche pas de workflow sur les événements que ce jeton provoque : le `push` sur `master`
+# peut donc ne lancer ni `deploy.yml` ni `release-please.yml`, et le site garderait l'arabe
+# d'avant la fusion. C'est le silence déjà vu le 14/09/2026 (figure arabe non publiée après une
+# fusion d'apparence normale).
+#
+# Filet de sécurité : toutes les six heures, si aucun déploiement n'existe pour le dernier
+# commit de `master`, on lance `deploy.yml` (il accepte `workflow_dispatch`). Un déploiement
+# échoué compte comme existant : on ne relance pas en boucle un échec.
+# Un déploiement manuel ou normal rend ce workflow inerte (aucun appel).
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  rattraper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dernier commit de master a-t-il son déploiement ?
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          SHA=$(gh api "repos/${{ github.repository }}/commits/master" --jq .sha)
+          N=$(gh api "repos/${{ github.repository }}/actions/workflows/deploy.yml/runs?head_sha=$SHA" --jq .total_count)
+          echo "master = $SHA ; déploiements pour ce commit : $N"
+          if [ "$N" = "0" ]; then
+            gh workflow run deploy.yml --repo "${{ github.repository }}" --ref master
+            echo "Déploiement lancé." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Rien à rattraper." >> "$GITHUB_STEP_SUMMARY"
+          fi
