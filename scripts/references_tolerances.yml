@@ -1,0 +1,13 @@
+# Divergences connues entre définitions d'une même clé, déclarées le 1er novembre 2026.
+# Chaque ligne : langue, clé, champs, date, raison. À retirer dès que la divergence est levée
+# (le contrôle refuse une tolérance qui ne sert plus).
+- {langue: ar, cle: lf-1978, champs: [container-title, page, URL], date: 2026-11-01, raison: "les livres arabes citent tantôt l'édition arabe, tantôt l'édition française du fascicule : pagination, adresse et recueil à unifier d'après le fascicule arabe"}
+- {langue: ar, cle: lfc-2020, champs: [volume, page], date: 2026-11-01, raison: "les livres arabes citent tantôt l'édition arabe, tantôt l'édition française du fascicule : pagination, adresse et recueil à unifier d'après le fascicule arabe"}
+- {langue: ar, cle: loi68-8, champs: [title, container-title, issue, page], date: 2026-11-01, raison: "les livres arabes citent tantôt l'édition arabe, tantôt l'édition française du fascicule : pagination, adresse et recueil à unifier d'après le fascicule arabe"}
+- {langue: ar, cle: lfc-2008, champs: [URL], date: 2026-11-01, raison: "les livres arabes citent tantôt l'édition arabe, tantôt l'édition française du fascicule : pagination, adresse et recueil à unifier d'après le fascicule arabe"}
+- {langue: ar, cle: lfc-2014, champs: [URL], date: 2026-11-01, raison: "les livres arabes citent tantôt l'édition arabe, tantôt l'édition française du fascicule : pagination, adresse et recueil à unifier d'après le fascicule arabe"}
+- {langue: ar, cle: loi82-71, champs: [page], date: 2026-11-01, raison: "les livres arabes citent tantôt l'édition arabe, tantôt l'édition française du fascicule : pagination, adresse et recueil à unifier d'après le fascicule arabe"}
+- {langue: ar, cle: lfc-2016, champs: [page, URL], date: 2026-11-01, raison: "les livres arabes citent tantôt l'édition arabe, tantôt l'édition française du fascicule : pagination, adresse et recueil à unifier d'après le fascicule arabe"}
+- {langue: ar, cle: lfc-2017, champs: [URL], date: 2026-11-01, raison: "les livres arabes citent tantôt l'édition arabe, tantôt l'édition française du fascicule : pagination, adresse et recueil à unifier d'après le fascicule arabe"}
+- {langue: ar, cle: lfc-2018, champs: [URL], date: 2026-11-01, raison: "les livres arabes citent tantôt l'édition arabe, tantôt l'édition française du fascicule : pagination, adresse et recueil à unifier d'après le fascicule arabe"}
+- {langue: ar, cle: lfc-2019, champs: [page, URL], date: 2026-11-01, raison: "les livres arabes citent tantôt l'édition arabe, tantôt l'édition française du fascicule : pagination, adresse et recueil à unifier d'après le fascicule arabe"}
