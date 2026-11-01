@@ -54,6 +54,11 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   Réglages en `workflow_dispatch` : `livre`, `max_fichiers`, `max_caracteres`, `budget_mensuel`.
 - **Ne modifie pas les fichiers engendrés** : `_glossaire.qmd`, `_glossaire.infobulles.html`, `translation_glossary.generated.md`,
   `precis/*/*/tables/*`.
+- **Ce dépôt est public (GitHub Pages) : rien sur l'infrastructure de sauvegarde.** Les notes et
+  procédures de la sauvegarde du corpus vivent dans le dépôt privé `tunisia-data`, dont l'`AGENTS.md`
+  fait foi. `scripts/check_pas_d_infra.py` contrôle les fichiers suivis ; la liste des mots qu'il
+  cherche est hors dépôt (fichier de configuration local, décrit dans le script, ou secret de CI
+  `PAS_D_INFRA_MOTS`) : ne la recopie nulle part ici.
 - **Aucune valeur isolée, aucune date, aucune URL sans source vérifiée.** Une case vide honnête vaut
   mieux qu'une valeur plausible. Exception éditoriale : une **série historique importante déjà
   portée par openfisca-tunisia** peut rester visible provisoirement pour que son évolution ne
