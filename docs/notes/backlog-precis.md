@@ -966,7 +966,21 @@ liste qui suit le tableau, citations comprises. Restent :
     est relu à l'image dans l'édition française du fascicule le 31 octobre 2026, PR #663 — et pour 2026 —
     arabe) ; art. 34 de la loi
     n° 60-30 (lu le 2 novembre 2026, PR #706 : rédaction de 1960 plus alinéa 6 de la loi n° 70-34 ; aucune loi de 1988 à 1998 ne le modifie) ; décrets n° 99-1514, n° 2016-1401, n° 93-529, n° 94-1738, n° 2019-1130 (lu et versé le 1er novembre 2026, PR #665 ; reste la relecture à l'image et les taux de hausse appliqués depuis le 1er mai 2018, non cherchés), n° 2002-916 ;
-    décret n° 75-952 ; annexes 2 et 3 de la circulaire n° 42 de 1996 (tableaux des cas d'octroi et modèle de déclaration : lus à l'image le 2 novembre 2026, PR #706, puis gardés en entier dans l'annexe `_annexe_circulaire_42.qmd` du livre prestations_sociales, PR #710, décision du 2 novembre 2026 ; cas 42 et 43 tranchés sur l'édition arabe (pension de réversion du père), pages de la référence `circulaire-42-1996` corrigées, PR #713 ; cas 34 : bénéficiaire non nommé dans les deux éditions, TODO documentaliste dans l'annexe ; codage des 81 cas dans openfisca-tunisia, PR openfisca/openfisca-tunisia#518, TODO modéliste ; texte de la circulaire lu, PR #684) ; arrêté du directeur des finances du 19 mai 1952 (indemnité pour salaire unique du secteur public, annexe 1, point 24 de la circulaire) ; décret du 6 avril 1950 ; loi n° 95-56 art. 5 (non traité : qui gère en 2026 la réparation des accidents du travail du secteur public, question de droit ; l'arrêté conjoint du 25 juin 2007 est lu, PR #684).
+    décret n° 75-952 ; annexes 2 et 3 de la circulaire n° 42 de 1996 (tableaux des cas d'octroi et modèle de déclaration : lus à l'image le 2 novembre 2026, PR #706, puis gardés en entier dans l'annexe `_annexe_circulaire_42.qmd` du livre prestations_sociales, PR #710, décision du 2 novembre 2026 ; cas 42 et 43 tranchés sur l'édition arabe (pension de réversion du père), pages de la référence `circulaire-42-1996` corrigées, PR #713 ; cas 34 : bénéficiaire non nommé dans les deux éditions, TODO documentaliste dans l'annexe ; annexe engendrée depuis le modèle openfisca-tunisia, version 0.157 ou plus, PR #715 (ouverte, bloquée jusqu'à la publication du modèle) ; codage des 81 cas dans openfisca-tunisia, PR openfisca/openfisca-tunisia#518 (non fusionnée, fusion automatique activée en attente de relecture) : la tâche « coder les quatre-vingt-un cas » et le TODO modéliste de l'annexe se ferment à sa fusion ; texte de la circulaire lu, PR #684) ; arrêté du directeur des finances du 19 mai 1952 (indemnité pour salaire unique du secteur public, annexe 1, point 24 de la circulaire) ; décret du 6 avril 1950 ; loi n° 95-56 art. 5 (non traité : qui gère en 2026 la réparation des accidents du travail du secteur public, question de droit ; l'arrêté conjoint du 25 juin 2007 est lu, PR #684).
+  - *Annexe de la circulaire n° 42 engendrée (PR #715, bloquée)* : points ouverts : circularité (garder la
+    transcription d'origine de la circulaire comme référence, l'annexe engendrée ne la remplace pas) ; borne de
+    version globale à restreindre à ce snapshot ; payeur qui ne distingue pas la caisse de la mère de celle du père
+    (et « non servie à la mère » à distinguer, question 2) ; include arabe. Gardé : TODO documentaliste du cas 34
+    (bénéficiaire non nommé par la circulaire).
+  - *Allocataire du secteur privé (PR #718, 2 novembre 2026)* : règle lue au texte (loi n° 60-30, art. 53, 55, 64,
+    65 et 65 bis ; loi n° 63-26 ; loi n° 96-65 ; loi n° 80-36 ; décret n° 81-731) et codée dans
+    openfisca/openfisca-tunisia#518. Restent : cas non codés (couple non séparé depuis 1996 avec deux parents
+    ouvrant droit, sens de « garde » ; tutelle ; décès ; articulation des art. 55 et 64) ; issue
+    openfisca/openfisca-tunisia#519 (`af_mensuelle` de 1961 à 1996 : allocation du père ou la plus élevée) ;
+    art. 61 (1963), montant uniforme à relire avec la série 1961-1975 ; question ouverte : l'article transitoire
+    final de la loi n° 63-26 (numéro illisible, lu comme substitution d'un enfant décédé) et l'art. 57 du Code du
+    statut personnel, non lu ; côté modèle, docstrings de `pf_allocataire` à corriger (« énumère sans ordonner »,
+    « arbitre par le montant »), `pf_payeur` : la caisse n'est pas payeur universel (art. 60, art. 48 2°).
   - *Reste, à dépouiller* : arrêté du 8 février 2021 sur le plafond annuel des soins ambulatoires (JORT n° 14 de 2021 à obtenir ; arrêtés de 2010, du 7 mai 2021 et de 2024 lus le 1er novembre 2026, PR #665) ; arrêtés des familles d'accueil : ceux de 2003 et 2006 sont relus à l'image et ceux du 27 décembre 2017 (200 D) et du 26 décembre 2022 (350 D) ajoutés (PR #684) ; reste la recherche en plein texte des arrêtés postérieurs au 26 décembre 2022 (personne âgée) et au 28 avril 2017 (personne handicapée) ; arrêtés d'application des art. 35, 71 et 81 de la loi de
     finances pour 2026 (passe du 31 octobre 2026 sur les 105 fascicules arabes de 2026, PR #663 :
     aucun arrêté pour les art. 71 et 81) ;
@@ -975,7 +989,7 @@ liste qui suit le tableau, citations comprises. Restent :
     `r-loi96-101-extension`, `r-pf-taux-apres-1996`).
   - *Reste, à obtenir* : le JORT n° 14 de 2021 (arrêté du 8 février 2021 ; les fichiers FR et AR du corpus répètent le n° 13) ; les circulaires n° 12 du 10 mai 2022 et d'octobre 2025 (ministère des Affaires
     sociales) ; le rapport technique entier CRES-Banque mondiale (le résumé est rangé) ; le décret du
-    8 juin 1944 ; l'édition française du JORT n° 149 de 2024 (absente de pist.tn) ; les séries de données
+    8 juin 1944 ; l'édition française du JORT n° 149 de 2024 (absente de pist.tn) ; les PDF des circulaires du PNAFN (attendus, une lectrice les a annoncés) ; les séries de données
     (CNSS, CNAM, CNRPS, PNAFN, versements de 2025 ; ce qui a été servi aux 6-18 ans au titre du décret n° 2025-426 : le rapport de suivi de la Banque mondiale de novembre 2025 ne chiffre que les moins de six ans).
   - *Hors de ce volume* : le volume des cotisations nomme encore le fonds de 2025 par la traduction de
     l'arabe (« perte de postes de travail ») ; le texte français dit « Fonds d'assurance contre la perte
@@ -1960,6 +1974,10 @@ l'État ; les livres « dispositifs » gardent les règles et renvoient ici par 
   ne disent pas ») ; annexes `_chronologie.qmd` puis glossaire. Ancres inchangées ; liens entrants
   corrigés vers la page de chaque chapitre (cotisations, fiscalité, rémunérations, retraites).
   Mêmes chapitres déclarés dans `precis/ar/caisses/_quarto.yml`.
+- **Retours de lectrices (2 novembre 2026)** : en attente de réponse de la première lectrice : place des caisses
+  (partie II ou partie V), titre de la partie V, titre du livre de la sécurité sociale. Relance unique possible
+  le 18 novembre 2026 ; ne nommer personne dans le dépôt. Si les caisses changent de partie, le parcours des <!-- futur-ok -->
+  accidents du travail (`parcours-atmp.qmd`, PR #717) est à revoir.
 - **Histoire — rédigée le 4 octobre 2026** (`_histoire.qmd`, note `caisses-histoire.md`) : avant
   1956, d'après Bertrand (*Bulletin économique et social de la Tunisie*, n° 73 et 74 de 1953) et
   les visas des textes de 1956-1961 — Société de prévoyance des fonctionnaires et employés
@@ -2351,7 +2369,26 @@ mesure ni les soins réalisés ni les revenus des médecins.
   le 13 octobre 2026). Le numéro 15 est bien le 15. **À obtenir** : le vrai n° 14,
   puis lecture des valeurs et de leur date d'effet ; ne pas traiter les métadonnées
   comme le texte de l'arrêté.
-- **Couverture avant 2004, écrite le 14 octobre 2026** (chapitre `_histoire.qmd`, `#sec-soins-histoire`,
+- **Histoire des voies d'accès aux soins, 1951-2004 : déplacée le 2 novembre 2026 (PR #716)** vers
+  `prestations_sociales/_soins.qmd` (« Le droit aux soins », environ 17 800 mots). `sante/_histoire.qmd`
+  devient l'ouverture « politique sanitaire et élargissement de la couverture ». Les lignes de ce livre
+  qui désignent `_histoire.qmd` ou `#sec-soins-histoire*` pour la couverture avant 2004 (ci-dessous) désignent
+  maintenant `_soins.qmd` ; de même dans `taches-legislation-par-date.md` (12 tâches relogées). Les sept fiches
+  de recherche et les TODO du texte déplacé suivent le texte. Validé par les deux lectrices (regroupement du
+  droit aux soins, histoire déplacée).
+  - **Nouveau, `sante/_histoire.qmd`** : orientations de la politique sanitaire avant 1991 (plans, équipement
+    hospitalier, carte sanitaire, formation des médecins) : à documenter, source à chercher.
+  - **Nouveau, `sante/_histoire.qmd`** : population couverte avant 2008 (assurés sociaux, cartes de soins,
+    assistance) : séries à réunir, avec périmètre.
+  - **Reste de la décision, à reformuler** (non modifiés par l'archiviste) : `docs/conventions-redaction.md`
+    § 4 (ligne « Ce qui est servi en nature (les soins) : la santé ») et `docs/notes/chantier-decoupage-livres.md`
+    (même formule) disent encore l'ancien partage ; nouveau partage : le droit aux soins et son histoire dans les
+    prestations sociales ; l'organisation, la dépense et la politique sanitaire dans la santé.
+  - **Reste, traduction** : le rendu arabe de `_soins.qmd` cherchera `precis/ar/prestations_sociales/tables/soins_assures_hopital.md`,
+    que rien n'engendre (le générateur n'écrit que le français) ; `check_translation_parity` signale trois liens
+    arabes (caisses, cotisations) qui pointent vers l'ancien emplacement.
+  - **Reste, à préciser (retour des lectrices)** : voies de recours et fonctions administratives, dans « Le droit aux soins ».
+- **Couverture avant 2004, écrite le 14 octobre 2026** (chapitre `_histoire.qmd`, déplacé dans `_soins.qmd` le 2 novembre 2026, `#sec-soins-histoire`,
   placé en tête du livre et ordonné par périodes le même jour ; `_couverture.qmd`, `#sec-soins-base`, `#sec-soins-assistance` ; note `sante-couverture-avant-2004-2026-10-14.md`).
   Fait : régime de prévoyance de 1951 d'après le *Bulletin économique et social de la Tunisie*
   (Bertrand, n° 71 et 72 ; rubrique « Législation » du n° 52 de 1951) ; réforme de 1972-1973
@@ -6041,6 +6078,9 @@ verser par le terminologue quand un volume les emploiera.
   glossaire ajoutés — sont désormais rétablis par `translate_sync` avant le contrôle de parité
   (`restore_citation_keys`, `remove_extra_glossary_links`, `restore_locators` apparié par clé).
 
+- **Parcours et index par institution (2 novembre 2026, PR #717)** : parcours de lecture des accidents du travail
+  posé (`precis/fr/parcours-atmp.qmd`) ; index par institution : liens CNSS, CNRPS et CNAM étendus aux chapitres de
+  cotisations et de caisses ; restent les ministères, les offices, les banques publiques, le Trésor et l'arabe.
 - **Zotero — à jour le 25 octobre 2026** : la poussée du 25 octobre (neuf lois de finances issues
   de la fusion des doublons, puis rangement) laisse **0 clé absente de Zotero** et 0 à ranger
   (contrôle de rangement, exécution 40222647086 ; détail dans `biblio-a-rapatrier.md`) ; les 72
@@ -6053,6 +6093,10 @@ verser par le terminologue quand un volume les emploiera.
   Zotero, 0 à ranger, **103 à déclasser**, 133 sans citation. Reste, sur feu vert humain, le
   déclassement des 103 (`appliquer-rangement-blanc` puis `appliquer-rangement`) ; la descente
   (`sync_biblio`) n'est pas lancée (détail dans `biblio-a-rapatrier.md`).
+  **Clés ajoutées depuis la poussée** (64, liste dans `biblio-a-rapatrier.md`, section du 2 novembre 2026) : décret
+  n° 81-731, rémunérations publiques (21), entreprises publiques (25, dont `lf-2016-ar`), éducation (15), rapports
+  de la DGI 2013 et 2014 ; `loi63-26` et les notices de l'histoire des soins changent de livre. À verser à la prochaine
+  poussée ; le déclassement des 103 attend toujours un feu vert humain.
 - **Références communes à plusieurs livres (2 novembre 2026, PR #696 et #697)** : les définitions
   d'une même clé sont alignées entre livres (champs, pages, volumes) et un contrôle
   (`scripts/check_references_coherentes.py`, branché dans `verifier-conventions.yml`) refuse deux
@@ -6143,7 +6187,7 @@ reprendre sans refaire la même recherche :
 - **Chaîne éditoriale en attente** : les deux clés des « Prestations sociales » à verser
   dans Zotero après revue, avec comparaison FR/AR à la descente ; puis les traductions
   arabes en retard, à recontrôler au retour du budget de traduction et à rendre avant
-  toute fusion. Les sources du PNAFN et les annexes des statuts des caisses restent à
+  toute fusion. Les sources du PNAFN (PDF des circulaires attendus) et les annexes des statuts des caisses restent à
   obtenir hors du corpus JORT.
 
 1. **Lire ce qui est déjà textuel** : les textes recensés au 23 octobre 2026 sont lus ; vérifier chaque article à sa page, pas seulement
@@ -6183,6 +6227,8 @@ reprendre sans refaire la même recherche :
 **Septième passage du 2 novembre 2026** (archiviste, d'après les corps des PR #701 à #708 ; chaque point vérifié dans le registre, la notice, le chapitre ou le TODO de la branche `master`) : 34 modifications (finances locales, prestations sociales, rémunérations publiques, fiscalité, marché du travail, entreprises publiques), dont aucun point retiré en entier, les restes étant écrits. Consigné comme tranché par l'humain (2 novembre 2026) : décrets de campagne des céréales gardés dans `_offices.qmd`, à reconsidérer ; désaccords du décret n° 2023-461 (art. 11 quinquies, 11 ter, 43) : l'édition arabe fait foi, rien à changer ; LF 2021 : le français est correct (تعديل = régularisation, تسوية = péréquation), point clos ; art. 89 de la loi n° 60-30 : « quatre-vingt-dixième » gardé, TODO de confirmation à l'arabe ; programme 4 « Affaires locales » : TODO ; absence de modification de la loi n° 81-5 après 1981 : TODO de vérification ; fusion `loi2020-45-lfr` / `lfc-2020` : après un changement dans `tunisia-data`. Signalé, non tranché : sens des montants 280, 280 et 290 D du décret n° 2013-1470 ; faut-il demander les rapports sur les fonds spéciaux 2023-2026 au ministère des Finances ; faut-il garder en entier l'annexe 2 de la circulaire n° 42 de 1996 dans le bloc replié. Contradiction corrigée : le glossaire des finances locales donnait « التعديل » pour péréquation. Le test `test_registre_versionne_sous_forme_canonique` échoue sur la PR #707 mais est rétabli par la PR #708.
 
 **Huitième passage du 2 novembre 2026** (archiviste, d'après les corps des PR #710 à #713 ; chaque point vérifié dans le chapitre, le registre ou le TODO de la branche `master`) : 13 points resserrés ou marqués (circulaire n° 42, OTD, cabinets, donations de la LF 1975, bons d'équipement, LF 1989 art. 23-26, avenants n° 2 de 1989, indemnité de magistrature, décret n° 85-614, décrets de 1984, circulaire n° 45 de 1978, fonds spéciaux 2023-2026, décret n° 2013-1470), aucun retiré en entier, 1 contradiction corrigée (lois de finances 2007-2026 pour la loi n° 60-30 : « non dépouillées » au backlog, faites le 1er novembre 2026, PR #665, fiche `r-pf-art61-apres-1988` close sur « aucun » ; le backlog est aligné). Consigné comme tranché par l'humain (2 novembre 2026) : rapports sur les fonds spéciaux 2023-2026 (Finances) non demandés, lacune « introuvable en ligne » ; annexe de la circulaire n° 42 gardée en entier, en annexe du livre prestations_sociales ; règles codées dans openfisca-tunisia (PR openfisca/openfisca-tunisia#518) ; cas 42 et 43 tranchés à l'arabe ; cas 34 : bénéficiaire non nommé, TODO documentaliste. Question ouverte restante : sens des tranches du décret n° 2013-1470 (cumulées ou successives, texte muet). Tâches : `taches-legislation-par-date.md` recomptée (128 faites, 113 partielles, 104 ouvertes).
+
+**Neuvième passage du 2 novembre 2026** (archiviste, d'après les corps des PR #715 (ouverte), #716, #717 et #718 et les décisions de la journée ; chaque point vérifié dans le chapitre, les références ou le dépôt de la branche `master`) : 11 modifications du backlog (santé : histoire des soins déplacée vers `prestations_sociales/_soins.qmd`, deux lacunes nouvelles, restes de traduction ; prestations sociales : annexe de la circulaire n° 42 engendrée (#715, bloquée) et règle d'allocataire du privé (#718, codée dans openfisca-tunisia#518 non fusionnée), PDF du PNAFN attendus ; caisses : questions en attente auprès d'une lectrice ; parcours des accidents du travail et index par institution ; Zotero : 64 clés ajoutées depuis la poussée), aucun point retiré en entier. Vérifié : `_soins.qmd` existe et porte les ancres `r-hist-*` ; `sante/index.qmd` annonce l'ouverture sur la politique sanitaire ; `parcours-atmp.qmd` existe. Tranché dans ce passage : les lignes « Backlog » de #715 sont consignées comme restes, pas comme faites (#518 et #715 non fusionnées) ; les rapports sur les fonds spéciaux 2023-2026 restent une lacune « introuvable en ligne », déjà consignée au passage précédent, sans demande aux administrations. À l'humain : feu vert pour le déclassement des 103 références ; reformulation de `docs/conventions-redaction.md` § 4 et de `docs/notes/chantier-decoupage-livres.md` (partage des soins entre prestations sociales et santé) ; relance unique possible le 18 novembre 2026 ; place des caisses, titre de la partie V et titre du livre de la sécurité sociale en attente. Tâches : `taches-legislation-par-date.md` recomptée (128 faites, 114 partielles, 104 ouvertes, 346 en tout) ; clés à verser : `biblio-a-rapatrier.md`. <!-- futur-ok -->
 
 `todo-localisation.md` donne le point de départ pour les numéros et pages, **pas un
 décompte actuel de disponibilité** : un fascicule qui y manque peut depuis avoir été
