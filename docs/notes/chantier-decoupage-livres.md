@@ -30,7 +30,9 @@ dans `docs/conventions-redaction.md` :
   ses comptes → **Le financement et les caisses** ;
 - ce qui est servi en espèces (pension, allocation, indemnité) → **Les retraites** ou
   **Les prestations sociales** ;
-- ce qui est servi en nature (les soins) → **La santé** ;
+- ce qui est servi en nature, le droit aux soins (assurance maladie, assistance médicale) →
+  **Les prestations sociales** ; la politique sanitaire (organisation du système, étendue de la
+  couverture, dépense, hôpital, médecine de ville) → **La santé** ;
 - un prix ou un tarif administré → **La compensation** ;
 - une règle de salaire → **Les revenus du travail** ;
 - le statut et les comptes d'une entreprise publique → **Les entreprises publiques** ;
@@ -331,13 +333,17 @@ moment de leur conversion, pas avant.
   régime de la CNRPS (inchangé), régimes spéciaux et militaires (scission possible) ; les
   conventions bilatérales de sécurité sociale (à écrire) ; annexes : notations, textes
   modificatifs du décret n° 74-499 et de la loi n° 85-12, glossaire.
-- Les prestations sociales : présentation ; qui est couvert — vue tirée des données du livre
+- Les prestations sociales : présentation ; le droit aux soins (régime de base de 2004,
+  assistance médicale AMG I et II, couvertures complémentaires, avec l'histoire des voies
+  d'accès aux soins de 1951 à 2004) ; qui est couvert — vue tirée des données du livre
   du financement (allégé) ; prestations familiales ; les prestations en espèces des autres
   risques, section « assurance maladie » réduite à un renvoi (allégé, titre raccourci) ;
   assistance sociale (26 400 mots, scission possible) ; glossaire.
 
 **IV. Les politiques sectorielles**
-- La santé : inchangé.
+- La santé : la politique sanitaire et l'élargissement de la couverture, l'étendue de la
+  couverture et la dépense, l'hôpital public, la médecine de ville ; renvoie au droit aux soins
+  des prestations sociales sans le reprendre.
 - La compensation : présentation ; la Caisse (institution), dont le registre absorbe « Les
   réformes, texte par texte » (fusion) ; carburants ; électricité et gaz ; transport public ;
   les produits de base, prix à la consommation et à la production (à écrire) ; la dépense
