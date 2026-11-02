@@ -1,0 +1,20 @@
+---
+title: "Parcours de lecture : les accidents du travail et les maladies professionnelles"
+subtitle: "Dans quel ordre lire les chapitres qui, dans quatre livres, décrivent ce régime"
+format:
+  html:
+    include-in-header: ../accueil.html
+    toc: false
+---
+
+Le régime de réparation des accidents du travail et des maladies professionnelles (ATMP) est réparti entre quatre livres, chaque fait ayant un seul domicile : la prestation dans un livre, la cotisation dans un autre, la caisse dans un troisième. Cette page donne l'ordre de lecture. Elle ne résume rien : chaque lien mène au chapitre.
+
+1. [Les accidents du travail et les maladies professionnelles](prestations_sociales/_autres_risques.html#sec-ar-atmp), dans « Prestations sociales » : qui est couvert, les soins, l'indemnité journalière et les rentes, pour le secteur privé, le secteur public et les travailleuses agricoles.
+2. [Les accidents du travail et les maladies professionnelles](cotisations_sociales/_accidents_travail.html#sec-cot-at), dans « Cotisations sociales » : qui paie le régime, sur quelle assiette et avec quelle modulation par employeur.
+3. [La caisse qui gère et la caisse qui recouvre](cotisations_sociales/_accidents_travail.html#sec-cot-at-modulation-caisses), dans « Cotisations sociales » : la répartition des fonctions entre la CNSS et la CNAM.
+4. [Les salariés du secteur privé : accidents du travail et allocations familiales](caisses/_histoire.html#sec-caisses-prive-protectorat), dans « Les caisses de sécurité sociale » : comment le risque est passé de l'employeur à une caisse.
+5. [Les accidents du travail et la protection sociale des travailleurs](caisses/_comptes_longue_periode.html#sec-caisses-cnss-atmp-pst), dans « Les caisses de sécurité sociale » : ce que le régime a coûté et rapporté à la caisse.
+6. [Le droit aux soins](prestations_sociales/_soins.html#sec-prest-soins), dans « Prestations sociales » : les soins de l'assurance maladie, qui laissent hors de leur champ les frais d'un accident du travail.
+7. [L'étendue de la couverture et la dépense de soins](sante/_couverture.html#sec-sante-couverture), dans « La santé » : la place des charges d'ATMP dans les comptes de la CNAM.
+
+Pour retrouver une caisse à travers tous les livres, voir l'[index par institution](index-institutions.html).
