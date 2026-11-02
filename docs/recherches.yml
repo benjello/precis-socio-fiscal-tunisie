@@ -1581,6 +1581,12 @@
     couverture: 'plein texte (pdftotext, NFKC) des éditions française et arabe des fascicules de 2022 n° 132, de 2023 n° 122 (23 octobre 2023) et de 2026 n° 58 (8 juin 2026), présents au corpus local malgré la mention d''absence des passes précédentes, aux motifs « appui à la décentralisation », « péréquation », صندوق دعم اللامركزية et التعديل والتسوية : seul le n° 122 de 2023 répond, deux fois, pour la cessation de fonctions du directeur général du centre de formation et d''appui à la décentralisation (décrets n° 2023-668 et 2023-669), sans rapport avec le fonds. Le n° 106 de 2026 en arabe reste absent du corpus.'
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [jort_cache, pist, web]
+    couverture: 'Relance du 2 novembre 2026 : jort_cache toujours arrêté au 29 octobre 2026, aucun candidat aux requêtes de la fiche. Sondage de pist.tn pour 2026 (numéros 1 à 110 inconnus de jort_cache) : aucun fascicule nouveau ne concerne le fonds. Recherche sur le web, en français et en arabe, des rapports sur les fonds spéciaux du Trésor joints aux projets de loi de finances pour 2023 à 2026 : aucun rapport trouvé ; le site du ministère des Finances (finances.gov.tn) répond 404 à la page des lois de finances. Aucun texte de ces rapports n''est donc lu pour 2023-2026. Les tableaux B des lois de finances pour 2022 à 2026 sont déjà lus à l''image (aucune ligne pour le fonds).'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
   a_faire:
   - chercher les rapports sur les fonds spéciaux joints aux projets de loi de finances pour 2023 à 2026 (montant du fonds d'appui)
   - relancer --sonder-pist pour 2026 n° 106 AR
