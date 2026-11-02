@@ -648,7 +648,13 @@
     couverture: 'Texte intégral des articles des lois de finances et des lois de finances rectificatives ou complémentaires de 2007 à 2026 (lois n° 2006-85 à n° 2025-17, y compris les décrets-lois de 2021 et 2022), cherché dans le corpus local (couche texte des fascicules et des recueils ; OCR de la fin des fascicules des lois de finances 2021 à 2023 et des lois rectificatives 2007, 2021 à 2023 à 200 dpi) : motifs « 60-30 », « 1960 », « régimes de sécurité sociale », « allocations familiales », « salaire unique », « crèche » et, pour la loi de finances 2026 (édition arabe seule), « المنح العائلية », « الأجر الوحيد », « تنظيم أنظمة الضمان الاجتماعي ». Aucun article ne cite la loi n° 60-30 ni ne touche les articles 52, 54 ou 61. Limites : les tableaux budgétaires en fin de fascicule ne sont pas lus ; les textes qui ne sont pas des lois de finances ne sont pas cherchés par ce motif ; une modification libellée sans nommer la loi ni ses intitulés échappe à la recherche.'
     couvert_jusqu_au: 2025-12-31
     resultat: aucun
-  a_faire: ['requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir']
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Fascicules du JORT de 2007 à 2026 du corpus local (couche texte, éditions française et arabe), motifs « 60-30 », « 14 décembre 1960 », « عدد 30 لسنة 1960 » : 351 occurrences dans 136 fascicules. Toutes sont des visas, des renvois (art. 107, remise de pénalités ; régime de l''auto-entrepreneur, 2020) ou la loi n° 2007-51 (art. 105 et 45). Aucune ne touche les articles 52, 54 ou 61. Limites : le motif arabe ne ressort que deux fascicules, la lecture des éditions arabes reste à faire ; une loi citée par la seule mention « loi de 1960 » échappe au motif.'
+    couvert_jusqu_au: 2026-10-28
+    resultat: aucun
+  a_faire: ['rejouer le motif arabe sur les éditions arabes de 2007 à 2026 après normalisation', 'requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir']
 
 - id: r-lf2025-art17-decret
   objet: décret fixant les conditions et procédures de gestion du fonds d'assurance contre la perte de postes de travail pour raisons économiques (loi n° 2024-48, loi de finances pour 2025, art. 17)
