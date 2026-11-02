@@ -441,7 +441,7 @@ Une famille ne touche l'indemnité familiale qu'une seule fois, et une seule per
 
 Les quatre-vingt-un cas, avec leurs codes et leurs pièces, et le modèle de déclaration sont dans l'annexe @sec-pf-circulaire-42.
 
-<!-- TODO (modéliste) : règles d'octroi de la circulaire n° 42 (81 cas) à coder dans openfisca-tunisia ; chemin des paramètres, des formules et des tests YAML à renseigner ici quand ils existeront (voir le TODO de l'annexe). -->
+<!-- TODO (modéliste) : règles d'octroi de la circulaire n° 42 (81 cas) à coder dans openfisca-tunisia ; formules dans `openfisca_tunisia/variables/prestations/contributives/indemnites_familiales_secteur_public.py`, tests dans `tests/formulas/prestations/contributives/indemnites_familiales_secteur_public.yaml` (PR openfisca/openfisca-tunisia#518 ; voir le TODO de l'annexe). -->
 
 
 ## Longue période et données {#sec-pf-longue-periode}
