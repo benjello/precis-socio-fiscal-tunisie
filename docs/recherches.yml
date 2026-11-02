@@ -654,7 +654,9 @@
     couverture: 'Fascicules du JORT de 2007 à 2026 du corpus local (couche texte, éditions française et arabe), motifs « 60-30 », « 14 décembre 1960 », « عدد 30 لسنة 1960 » : 351 occurrences dans 136 fascicules. Toutes sont des visas, des renvois (art. 107, remise de pénalités ; régime de l''auto-entrepreneur, 2020) ou la loi n° 2007-51 (art. 105 et 45). Aucune ne touche les articles 52, 54 ou 61. Limites : le motif arabe ne ressort que deux fascicules, la lecture des éditions arabes reste à faire ; une loi citée par la seule mention « loi de 1960 » échappe au motif.'
     couvert_jusqu_au: 2026-10-28
     resultat: aucun
-  a_faire: ['rejouer le motif arabe sur les éditions arabes de 2007 à 2026 après normalisation', 'requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir']
+  a_faire:
+  - rejouer le motif arabe sur les éditions arabes de 2007 à 2026 après normalisation
+  - 'requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir'
 
 - id: r-lf2025-art17-decret
   objet: décret fixant les conditions et procédures de gestion du fonds d'assurance contre la perte de postes de travail pour raisons économiques (loi n° 2024-48, loi de finances pour 2025, art. 17)
