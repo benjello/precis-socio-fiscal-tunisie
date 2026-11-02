@@ -12,6 +12,16 @@
 - **Reste à faire** : verser ces vingt clés dans Zotero (collection « fiscalité », champ « Extra » `citation-key`). Rien n'est poussé ; feu vert humain requis.
 - **Vingt-deux notices neuves** dans `precis/{fr,ar}/fiscalite/references.json`, série annuelle des décrets de TVA sur l'électricité et les produits pétroliers (clés `decret-AAAA-N-tva-electricite` et `decret-AAAA-N-tva-petroliers`) : 99-211, 2000-329, 2001-401, 2002-209, 2003-133, 2004-9, 2004-2727, 2004-2728, 2005-3383, 2005-3384, 2008-1, 2008-2, 2008-3967, 2008-4113, 2009-3761, 2009-3762, 2010-3586, 2010-3587, 2012-6, 2012-9, 2013-5197, 2013-5198. Pages relevées à l'en-tête des fascicules du corpus local et confirmées par `jort_cache.db` ; clause de durée de l'article 2 lue dans chaque décret (à l'image pour 2000-2005). URL françaises et arabes lues dans `pdf_fr` et `pdf_ar` de `jort_cache.db`, non testées en ligne. Les huit autres décrets de la série (98-384, 98-952, 2004-1773, 2007-1, 2007-2, 2012-3413, 2012-3414, 97-1339) existaient déjà. À verser dans Zotero.
 
+## Poussée Zotero du 02/11/2026 (564 clés ajoutées depuis le 25/10)
+
+Séquence `verifier` (local : 3020 entrées, 0 perte) → `dry-run` (exécution 41384434737 :
+3020 références locales, 564 à créer, toutes des clés ajoutées depuis le 25/10) →
+`pousser-tout` (exécution 41384601008 : 564 créées, 0 en échec, artefact `cles-zotero-creees`) →
+`ranger` (exécution 41384738194 : 564 classées, 0 en échec) → `controle-rangement` (exécution
+41384936642 : 0 absente de Zotero, 0 à ranger, 103 à déclasser, 133 sans citation).
+- **Reste** : le déclassement des 103 (`appliquer-rangement-blanc` puis `appliquer-rangement`),
+  sur feu vert humain ; la descente (`sync_biblio`) n'est pas lancée.
+
 ## Poussée Zotero du 25/10/2026 (neuf lois de finances issues de la fusion des doublons)
 
 Séquence `verifier` (local : 1868 entrées éprouvées, 0 perte) → `dry-run` (exécution 40222267791 :

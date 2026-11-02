@@ -1,10 +1,10 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-23
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-26
 # séries (tunisia_data) : droits-douane-pib
 # sources (citation) : @minfin-recettes-fiscales, @minfin-indicateurs-fp, @ins-cnat-2015
 # fiches : 
 # méthode/hypothèses : Le PIB n'est pas chaîné : base 1983 présumée de 1986 à 1991, base 1983 de 1992 à 1996, base 1997 de 1997 à 2001 (rétropolée) et de 2005 à 2009, valeur propre au ministère des Finances, rattachée à aucune base, de 2002 à 2004 et en 2025, base 2015 de l'INS de 2010 à 2024 (rétropolée pour 2010-2014). Chaque changement de base est une rupture.
 # note : Part des droits de douane, redevance de prestations douanières comprise, dans le PIB, par segment de base du PIB, 1986-2025, en %
-Année,"Rubrique « droits de douane », redevances comprises (MD)",PIB (MD),Part du PIB (%),Segment de PIB,PIB rétropolé
+Année,"Rubrique « droits de douane », redevances comprises (MD)",PIB (MD),En % du PIB,Segment de PIB,PIB rétropolé
 1986,277.8,7160.4,3.88,pib-minfin 1986-1991 (base 1983 présumée),non précisé par la source
 1987,348.8,8035.3,4.341,pib-minfin 1986-1991 (base 1983 présumée),non précisé par la source
 1988,398.8,8660.6,4.605,pib-minfin 1986-1991 (base 1983 présumée),non précisé par la source
