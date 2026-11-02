@@ -106,6 +106,14 @@ et sur `pist.tn` en ligne. Voir `docs/notes/outillage-sources.md`.
   écris sont celles du jour (`date`), jamais une date future ; `scripts/check_backlog.py`
   refuse les marqueurs de conflit, les dates futures proches et les clés de citation absentes
   des `references.json`.
+- **Une clé de références dit la même chose dans tous les livres.** Quand tu ajoutes ou corriges
+  une notice dans le `references.json` d'un livre, cherche la même clé dans les autres
+  (`grep -l '"id": "<clé>"' precis/*/references.json precis/*/*/references.json`) et aligne
+  type, titre, recueil, volume, numéro, pages, date et adresse. Une pagination dépend de
+  l'édition (française ou arabe) : si tu cites l'édition arabe, crée une clé distincte
+  (`<clé>-ar`) au lieu de modifier celle de l'édition française.
+  `scripts/check_references_coherentes.py` refuse deux définitions divergentes ; un cas non
+  résolu se déclare, daté et motivé, dans `scripts/references_tolerances.yml`.
 
 - **Les volumes documentent la loi, jamais le modèle.** Ni `openfisca`, ni « le modèle », ni « les
   paramètres » dans le texte rendu d'un volume. La documentation générale — README, page
@@ -182,14 +190,25 @@ lieu des corrections. Ces conventions valent pour toute PR qu'un agent y prépar
 
 ### Dater
 
-- **Une date d'effet énoncée par le texte est reprise telle quelle**, sans report au premier du mois.
-- **Sans clause d'effet**, retiens la date à laquelle le texte devient exécutoire, et écris le calcul
-  dans la `note` :
-  - avant 1993, « un jour franc après la publication au Journal Officiel » — article 3 nouveau du
-    décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956 ;
-  - depuis 1993, « cinq jours après le dépôt du journal officiel au siège du gouvernorat de Tunis »,
-    jour du dépôt non compté — loi n° 93-64, article 2.
-- **Jamais la date de signature ni la date de publication brute.**
+- **La date d'effet est très importante : cherche-la, dans cet ordre.**
+  1. **Une date d'effet énoncée par le texte est reprise telle quelle**, sans report au premier du
+     mois. Une clause relative (« six mois à compter de sa publication ») se calcule, quantième à
+     quantième, à partir de la publication.
+  2. **Sinon, la date calculée par la règle d'entrée en vigueur**, quand elle s'applique, avec le
+     calcul écrit dans la `note` :
+     - avant 1993, « un jour franc après la publication au Journal Officiel » — article 3 nouveau du
+       décret du 27 janvier 1883, rédaction du décret du 13 septembre 1956 ;
+     - de 1993 au 13 avril 2020, « cinq jours après le dépôt du journal officiel au siège du
+       gouvernorat de Tunis », jour du dépôt non compté — loi n° 93-64, article 2 ;
+     - depuis le 14 avril 2020, « le lendemain de la publication dans l'édition électronique » du
+       Journal Officiel et de son dépôt électronique, « contrairement aux dispositions de la loi
+       n° 93-64 » — décret-loi n° 2020-1 (JORT n° 32 de 2020, p. 767). Règle tranchée par le
+       propriétaire le 20 octobre 2026. La date de publication est celle du fascicule.
+  3. **Si le texte ne dit rien et que le calcul n'est pas sûr**, donne la date de publication
+     (« publié le … ») au lieu de laisser la disposition sans date ou d'en déduire une.
+- **La date de publication au JORT se relève et s'écrit toujours** (numéro et date du fascicule), en
+  plus de la date d'effet, y compris quand une clause énonce l'effet.
+- **Jamais la date de signature.** La date de publication ne se donne qu'au cas 3, présentée comme telle (« publié le … »), jamais comme date d'effet.
 - **Une valeur antérieure identique à la valeur sourcée, laissée sans référence, n'est pas un état du
   droit** : elle disparaît, et le paramètre commence à la date sourcée — même si des calculs
   antérieurs cessent alors d'aboutir. Une erreur explicite vaut mieux qu'une valeur inventée. À ne

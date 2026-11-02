@@ -111,6 +111,9 @@
       "type": "legislation",
       "note": "citation-key: loi68-8",
       "title": "Loi n° 68-8 du 8 mars 1968, portant organisation de la Cour des comptes",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "11",
+      "page": "252-254",
       "URL": "https://www.pist.tn/jort/1968/1968F/Jo01168.pdf",
       "issued": {
         "date-parts": [
@@ -434,7 +437,7 @@
     {
       "id": "decret-97-2127",
       "type": "legislation",
-      "note": "citation-key: decret-97-2127",
+      "note": "citation-key: decret-97-2127\nJournal officiel n° 93 du 21 novembre 1997, édition française, p. 2081, couche texte lue. Dépôt au gouvernorat de Tunis le 22 novembre 1997. Art. 9 : entrée en vigueur à compter du 1er janvier 1998.",
       "title": "Décret n° 97-2127 du 10 novembre 1997, relatif aux indemnités compensatrices instituées par le décret n° 97-1832 du 16 septembre 1997, fixant le traitement de base des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif",
       "URL": "https://www.pist.tn/jort/1997/1997F/Jo09397.pdf",
       "issued": {
@@ -451,7 +454,7 @@
     {
       "id": "decret-97-1832",
       "type": "legislation",
-      "note": "citation-key: decret-97-1832",
+      "note": "citation-key: decret-97-1832\nJournal officiel n° 76 du 23 septembre 1997, édition française, p. 1771-1780 ; art. 1er p. 1774-1775, art. 9 à 12 p. 1777 et annexe pp. 1777-1780 (tableaux n° 1 à 3, lus à l'image) ; couche texte lue pour les articles 1 à 8. Dépôt au gouvernorat de Tunis le 25 septembre 1997. Art. 12 : entrée en vigueur à compter du 1er janvier 1998.",
       "title": "Décret n° 97-1832 du 16 septembre 1997, fixant le traitement de base des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif",
       "URL": "https://www.pist.tn/jort/1997/1997F/Jo07697.pdf",
       "issued": {
@@ -681,7 +684,7 @@
     {
       "id": "decret-2007-268",
       "type": "legislation",
-      "note": "citation-key: decret-2007-268",
+      "note": "citation-key: decret-2007-268\nJournal officiel n° 14 du 16 février 2007, édition française, p. 500-503 ; articles lus dans la couche texte, annexes des pp. 501 à 503 (tableaux n° 1 à 3) lues à l'image. Dépôt au gouvernorat de Tunis le 17 février 2007. Art. 3 : entrée en vigueur à compter du 1er avril 2007.",
       "title": "Décret n° 2007-268 du 12 février 2007, modifiant et complétant le décret n° 97-1832 du 16 septembre 1997, fixant le traitement de base des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif",
       "URL": "https://www.pist.tn/jort/2007/2007F/Jo0142007.pdf",
       "issued": {
@@ -698,7 +701,7 @@
     {
       "id": "decret-2007-267",
       "type": "legislation",
-      "note": "citation-key: decret-2007-267",
+      "note": "citation-key: decret-2007-267\nJournal officiel n° 14 du 16 février 2007, édition française, p. 497-499, couche texte lue. Dépôt au gouvernorat de Tunis le 17 février 2007. Art. 2 : entrée en vigueur à compter du 1er avril 2007.",
       "title": "Décret n° 2007-267 du 12 février 2007, portant transfert d'une partie des indemnités spécifiques allouées aux agents publics au traitement de base fixé par leur grille des salaires",
       "URL": "https://www.pist.tn/jort/2007/2007F/Jo0142007.pdf",
       "issued": {
@@ -764,7 +767,10 @@
     {
       "id": "cc-banques-2014",
       "type": "legislation",
-      "note": "citation-key: cc-banques-2014",
+      "note": "citation-key: cc-banques-2014\nJournal officiel n° 23 du 21 mars 2014, édition française (« traduction française pour information »), p. 718 : l'arrêté seul, le texte de la convention étant « publié uniquement en langue arabe ». Édition arabe : arrêté p. 694 (https://www.pist.tn/jort/2014/2014A/Ja0232014.pdf). Texte de la convention : clé cc-banques-texte-2014. Fascicule déposé le 24 mars 2014.",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "23",
+      "page": "718",
       "title": "Arrêté du ministre des affaires sociales du 17 février 2014, portant agrément de la convention collective sectorielle du personnel des banques et des établissements financiers (révisée)",
       "URL": "https://www.pist.tn/jort/2014/2014F/Jo0232014.pdf",
       "issued": {
@@ -777,6 +783,26 @@
         ]
       },
       "title-short": "Arrêté du ministre des affaires sociales du 17 février 2014"
+    },
+    {
+      "id": "cc-banques-texte-2014",
+      "type": "legislation",
+      "title": "Convention collective sectorielle du personnel des banques et des établissements financiers (révisée), signée le 29 novembre 2013",
+      "container-title": "Journal officiel de la République tunisienne (édition arabe)",
+      "issue": "23",
+      "page": "695-716",
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            11,
+            29
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2014/2014A/Ja0232014.pdf",
+      "title-short": "Convention collective des banques et établissements financiers (révisée), 29 novembre 2013",
+      "note": "citation-key: cc-banques-texte-2014\nJournal officiel n° 23 du 21 mars 2014, édition arabe seule (le texte n'est pas traduit dans l'édition française) : convention pp. 695-715, grille des salaires applicable à partir du 1er mai 2012 p. 716. Texte annexé à l'arrêté du 17 février 2014 (clé cc-banques-2014). Signée par l'Association professionnelle tunisienne des banques et des établissements financiers et la Fédération générale des banques et des établissements financiers de l'UGTT."
     },
     {
       "id": "decret-95-2487",
@@ -1021,6 +1047,26 @@
       "title-short": "Décret n° 97-2134 du 10 novembre 1997"
     },
     {
+      "id": "circulaire-pm-45-1978",
+      "type": "legislation",
+      "note": "citation-key: circulaire-pm-45-1978\nJournal officiel n° 2 du 5 janvier 1979, édition française, p. 89-91. Circulaire n° 45 du Premier ministre du 27 novembre 1978 aux ministres et secrétaires d'État. Lue à l'image le 2 novembre 2026. Le numéro est imprimé « N° 45 PM-SGG-LGFP » ; la forme « 78-45 » est celle de la base de métadonnées. Page arabe non relevée. URL d'après le nom du fascicule du corpus local, non testée en ligne.",
+      "title": "Circulaire n° 45 du 27 novembre 1978, relative à la rémunération des chefs d'entreprises publiques",
+      "URL": "https://www.pist.tn/jort/1979/1979F/Jo00279.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "2",
+      "page": "89-91",
+      "issued": {
+        "date-parts": [
+          [
+            1978,
+            11,
+            27
+          ]
+        ]
+      },
+      "title-short": "Circulaire n° 45 du 27 novembre 1978"
+    },
+    {
       "id": "decret-78-885",
       "type": "legislation",
       "note": "citation-key: decret-78-885\nJournal officiel n° 68 du 13 octobre 1978, édition française, p. 2844-2845.",
@@ -1263,7 +1309,7 @@
     {
       "id": "cc-banques-avenant5-2022",
       "type": "legislation",
-      "note": "citation-key: cc-banques-avenant5-2022\nJournal officiel n° 126 du 22 novembre 2022, édition française, p. 3137 (arrêté seul : le texte de l'avenant n'est publié qu'en arabe). Avenant signé le 22 août 2022.",
+      "note": "citation-key: cc-banques-avenant5-2022\nJournal officiel n° 126 du 22 novembre 2022, édition française, p. 3137 (arrêté seul : le texte de l'avenant n'est publié qu'en arabe). Avenant signé le 22 août 2022. Texte de l'avenant (articles 1 à 4, augmentations par catégorie) lu dans l'édition arabe, p. 3440-3442 ; grilles p. 3443 (1er septembre 2020) et 3444 (1er mai 2021), lues à l'image.",
       "title": "Arrêté du ministre des affaires sociales du 17 novembre 2022, portant agrément de l'avenant n° 5 à la convention collective sectorielle du personnel des banques et des établissements financiers",
       "URL": "https://www.pist.tn/jort/2022/2022F/Jo1262022.pdf",
       "container-title": "Journal officiel de la République tunisienne",
@@ -1279,6 +1325,86 @@
         ]
       },
       "title-short": "Arrêté du ministre des affaires sociales du 17 novembre 2022"
+    },
+    {
+      "id": "cc-banques-avenant1-2014",
+      "type": "legislation",
+      "note": "citation-key: cc-banques-avenant1-2014\nJournal officiel n° 2 du 6 janvier 2015, édition arabe, p. 41-45 (arrêté, avenant signé le 27 novembre 2014 et grille). Grille du 1er mai 2014 p. 45.",
+      "title": "Arrêté du ministre des affaires sociales du 16 décembre 2014, portant agrément de l'avenant n° 1 à la convention collective sectorielle du personnel des banques et des établissements financiers",
+      "URL": "https://www.pist.tn/jort/2015/2015A/Ja0022015.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "2",
+      "page": "41-45",
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            16
+          ]
+        ]
+      },
+      "title-short": "Arrêté du ministre des affaires sociales du 16 décembre 2014"
+    },
+    {
+      "id": "cc-banques-avenant2-2016",
+      "type": "legislation",
+      "note": "citation-key: cc-banques-avenant2-2016\nJournal officiel n° 29 du 8 avril 2016, édition française, p. 1147-1148 (arrêté seul : le texte de l'avenant n'est publié qu'en arabe). Avenant signé le 9 mars 2016. Texte de l'avenant et grilles lus dans l'édition arabe, p. 1235-1237. Grille du 1er mai 2015 p. 1237.",
+      "title": "Arrêté du ministre des affaires sociales du 5 avril 2016, portant agrément de l'avenant n° 2 à la convention collective sectorielle du personnel des banques et des établissements financiers",
+      "URL": "https://www.pist.tn/jort/2016/2016F/Jo0292016.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "29",
+      "page": "1147-1148",
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            5
+          ]
+        ]
+      },
+      "title-short": "Arrêté du ministre des affaires sociales du 5 avril 2016"
+    },
+    {
+      "id": "cc-banques-avenant3-2017",
+      "type": "legislation",
+      "note": "citation-key: cc-banques-avenant3-2017\nJournal officiel n° 50 du 23 juin 2017, édition française, p. 2258 (arrêté seul : le texte de l'avenant n'est publié qu'en arabe). Avenant signé le 15 mai 2017. Texte de l'avenant et grilles lus dans l'édition arabe, p. 2081-2084. Grilles du 1er mai 2016 et du 1er mai 2017 p. 2083 et 2084.",
+      "title": "Arrêté du ministre des affaires sociales du 15 juin 2017, portant agrément de l'avenant n° 3 à la convention collective sectorielle du personnel des banques et des établissements financiers",
+      "URL": "https://www.pist.tn/jort/2017/2017F/Jo0502017.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "50",
+      "page": "2258",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            15
+          ]
+        ]
+      },
+      "title-short": "Arrêté du ministre des affaires sociales du 15 juin 2017"
+    },
+    {
+      "id": "cc-banques-avenant4-2019",
+      "type": "legislation",
+      "note": "citation-key: cc-banques-avenant4-2019\nJournal officiel n° 17 du 26 février 2019, édition française, p. 520 (arrêté seul : le texte de l'avenant n'est publié qu'en arabe). Avenant signé le 28 janvier 2019. Texte de l'avenant et grilles lus dans l'édition arabe, p. 607-609. Grilles du 1er mai 2018 et du 1er mai 2019 p. 608 et 609.",
+      "title": "Arrêté du ministre des affaires sociales du 18 février 2019, portant agrément de l'avenant n° 4 à la convention collective sectorielle du personnel des banques et des établissements financiers",
+      "URL": "https://www.pist.tn/jort/2019/2019F/Jo0172019.pdf",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "17",
+      "page": "520",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            2,
+            18
+          ]
+        ]
+      },
+      "title-short": "Arrêté du ministre des affaires sociales du 18 février 2019"
     },
     {
       "id": "loi85-80",
@@ -1359,6 +1485,126 @@
       "URL": "https://www.pist.tn/jort/1985/1985F/Jo04885.pdf",
       "title-short": "Décret n° 85-814 du 7 juin 1985",
       "note": "citation-key: decret85-814\nJournal officiel n° 48 du 18 juin 1985, édition française, p. 842-843. Métadonnées jort_cache.db (recid 95793)."
+    },
+    {
+      "id": "decret89-873",
+      "type": "legislation",
+      "title": "Décret n° 89-873 du 6 juillet 1989, modifiant le décret n° 85-908 du 1er juillet 1985, relatif à l'indemnité de magistrature attribuée aux magistrats du tribunal administratif",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "50",
+      "page": "1089-1090",
+      "issued": {
+        "date-parts": [
+          [
+            1989,
+            7,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1989/1989F/Jo05089.pdf",
+      "title-short": "Décret n° 89-873 du 6 juillet 1989",
+      "note": "citation-key: decret89-873\nJournal officiel n° 50 du 21 juillet 1989, édition française, p. 1089-1090 (p. 1089 : article 1er, premier tableau ; p. 1090 : second tableau et article 2). Lu à l'image le 2 novembre 2026. Métadonnées jort_cache.db."
+    },
+    {
+      "id": "decret89-874",
+      "type": "legislation",
+      "title": "Décret n° 89-874 du 6 juillet 1989, modifiant le décret n° 85-907 du 1er juillet 1985, relatif à l'indemnité de magistrature attribuée aux magistrats de la Cour des comptes",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "50",
+      "page": "1089-1090",
+      "issued": {
+        "date-parts": [
+          [
+            1989,
+            7,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1989/1989F/Jo05089.pdf",
+      "title-short": "Décret n° 89-874 du 6 juillet 1989",
+      "note": "citation-key: decret89-874\nJournal officiel n° 50 du 21 juillet 1989, édition française, p. 1089-1090 (p. 1089 : visas et article 1er ; p. 1090 : tableaux et article 2). Lu à l'image le 2 novembre 2026. Métadonnées jort_cache.db."
+    },
+    {
+      "id": "decret90-1622",
+      "type": "legislation",
+      "title": "Décret n° 90-1622 du 8 octobre 1990, modifiant le décret n° 85-908 du 1er juillet 1985 relatif à l'indemnité de magistrature attribuée aux magistrats du tribunal administratif",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "66",
+      "page": "1459",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            10,
+            8
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo06690.pdf",
+      "title-short": "Décret n° 90-1622 du 8 octobre 1990",
+      "note": "citation-key: decret90-1622\nJournal officiel n° 66 du 16 octobre 1990, édition française, p. 1459. Lu à l'image le 2 novembre 2026. Métadonnées jort_cache.db."
+    },
+    {
+      "id": "decret90-1623",
+      "type": "legislation",
+      "title": "Décret n° 90-1623 du 8 octobre 1990, modifiant le décret n° 85-907 du 1er juillet 1985 portant attribution d'une indemnité de magistrature aux magistrats de la cour des comptes",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "66",
+      "page": "1459",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            10,
+            8
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo06690.pdf",
+      "title-short": "Décret n° 90-1623 du 8 octobre 1990",
+      "note": "citation-key: decret90-1623\nJournal officiel n° 66 du 16 octobre 1990, édition française, p. 1459. Lu à l'image le 2 novembre 2026. Métadonnées jort_cache.db."
+    },
+    {
+      "id": "decret91-1665",
+      "type": "legislation",
+      "title": "Décret n° 91-1665 du 4 novembre 1991 relatif à l'indemnité de magistrature attribuée aux magistrats du tribunal administratif",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "79",
+      "page": "1853",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            11,
+            4
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo07991.pdf",
+      "title-short": "Décret n° 91-1665 du 4 novembre 1991",
+      "note": "citation-key: decret91-1665\nJournal officiel n° 79 du 22 novembre 1991, édition française, p. 1853. Lu à l'image le 2 novembre 2026. Métadonnées jort_cache.db."
+    },
+    {
+      "id": "decret91-1666",
+      "type": "legislation",
+      "title": "Décret n° 91-1666 du 4 novembre 1991 relatif à l'indemnité de magistrature attribuée aux magistrats de la cour des comptes",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "79",
+      "page": "1853",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            11,
+            4
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo07991.pdf",
+      "title-short": "Décret n° 91-1666 du 4 novembre 1991",
+      "note": "citation-key: decret91-1666\nJournal officiel n° 79 du 22 novembre 1991, édition française, p. 1853. Lu à l'image le 2 novembre 2026. Métadonnées jort_cache.db."
     },
     {
       "id": "decret89-464",
@@ -3378,6 +3624,146 @@
       "note": "citation-key: loi79-17\nJournal officiel n° 18 du 9 mars 1979, édition française, p. 708. Métadonnées jort_cache.db (recid 115589)."
     },
     {
+      "id": "loi67-56",
+      "type": "legislation",
+      "title": "Loi n° 67-56 du 30 décembre 1967, modifiant l'article 1er du décret-loi n° 60-9 du 18 février 1960, relatif à l'indemnité parlementaire",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "55",
+      "page": "1647",
+      "issued": {
+        "date-parts": [
+          [
+            1967,
+            12,
+            30
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1967/1967F/Jo05567.pdf",
+      "title-short": "Loi n° 67-56 du 30 décembre 1967",
+      "note": "citation-key: loi67-56\nJournal officiel n° 55 des 29 et 30 décembre 1967, édition française, p. 1647. Métadonnées jort_cache.db (recid 117117)."
+    },
+    {
+      "id": "loi72-78",
+      "type": "legislation",
+      "title": "Loi n° 72-78 du 6 décembre 1972, modifiant le décret-loi n° 60-9 du 18 février 1960, modifié par la loi n° 67-56 du 30 décembre 1967 et relatif à l'indemnité parlementaire",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "49",
+      "page": "1700",
+      "issued": {
+        "date-parts": [
+          [
+            1972,
+            12,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1972/1972F/Jo04972.pdf",
+      "title-short": "Loi n° 72-78 du 6 décembre 1972",
+      "note": "citation-key: loi72-78\nJournal officiel n° 49 des 5 à 8 décembre 1972, édition française, p. 1700. Métadonnées jort_cache.db (recid 116585)."
+    },
+    {
+      "id": "loi72-86",
+      "type": "legislation",
+      "title": "Loi n° 72-86 du 27 décembre 1972, modifiant le décret-loi n° 60-9 du 18 février 1960, relatif à l'indemnité parlementaire",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "52",
+      "page": "1852-1853",
+      "issued": {
+        "date-parts": [
+          [
+            1972,
+            12,
+            27
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1972/1972F/Jo05272.pdf",
+      "title-short": "Loi n° 72-86 du 27 décembre 1972",
+      "note": "citation-key: loi72-86\nJournal officiel n° 52 des 26 à 29 décembre 1972, édition française, p. 1852-1853. Métadonnées jort_cache.db (recid 116559)."
+    },
+    {
+      "id": "loi75-80",
+      "type": "legislation",
+      "title": "Loi n° 75-80 du 30 décembre 1975, modifiant le décret-loi n° 60-9 du 18 février 1960, relatif à l'indemnité parlementaire",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "87",
+      "page": "2852",
+      "issued": {
+        "date-parts": [
+          [
+            1975,
+            12,
+            30
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1975/1975F/Jo08775.pdf",
+      "title-short": "Loi n° 75-80 du 30 décembre 1975",
+      "note": "citation-key: loi75-80\nJournal officiel n° 87 des 30 et 31 décembre 1975, édition française, p. 2852. Métadonnées jort_cache.db (recid 116048)."
+    },
+    {
+      "id": "decret83-681",
+      "type": "legislation",
+      "title": "Décret n° 83-681 du 18 juillet 1983, portant exonération de l'indemnité parlementaire, de l'impôt sur les traitements et salaires, de la contribution personnelle et la contribution exceptionnelle de solidarité",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "51",
+      "page": "1994",
+      "issued": {
+        "date-parts": [
+          [
+            1983,
+            7,
+            18
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1983/1983F/Jo05183.pdf",
+      "title-short": "Décret n° 83-681 du 18 juillet 1983",
+      "note": "citation-key: decret83-681\nJournal officiel n° 51 des 19 à 22 juillet 1983, édition française, p. 1994. Métadonnées jort_cache.db (recid 96892)."
+    },
+    {
+      "id": "decret72-230",
+      "type": "legislation",
+      "title": "Décret n° 72-230 du 12 juillet 1972, fixant le statut particulier des fonctionnaires des services actifs de la Sûreté nationale",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "29",
+      "page": "995-1003",
+      "issued": {
+        "date-parts": [
+          [
+            1972,
+            7,
+            12
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1972/1972F/Jo02972.pdf",
+      "title-short": "Décret n° 72-230 du 12 juillet 1972",
+      "note": "citation-key: decret72-230\nJournal officiel n° 29 des 14 à 18 juillet 1972, édition française, p. 995-1003. Métadonnées jort_cache.db (recid 103110)."
+    },
+    {
+      "id": "decret72-231",
+      "type": "legislation",
+      "title": "Décret n° 72-231 du 12 juillet 1972, relatif au classement hiérarchique et à l'échelonnement indiciaire applicables aux personnels actifs de la Sûreté nationale",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "29",
+      "page": "1003",
+      "issued": {
+        "date-parts": [
+          [
+            1972,
+            7,
+            12
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1972/1972F/Jo02972.pdf",
+      "title-short": "Décret n° 72-231 du 12 juillet 1972",
+      "note": "citation-key: decret72-231\nJournal officiel n° 29 des 14 à 18 juillet 1972, édition française, p. 1003. Métadonnées jort_cache.db (recid 103111)."
+    },
+    {
       "id": "loi2005-55",
       "type": "legislation",
       "title": "Loi n° 2005-55 du 18 juillet 2005, portant allocation d'avantages en nature aux Premiers ministres, aux présidents de la chambre des députés et aux présidents de la chambre des conseillers lors de leur mise à la retraite et modifiant les articles 60 et 61 de la loi de finances pour l'année 1988",
@@ -3395,7 +3781,7 @@
       },
       "URL": "https://www.pist.tn/jort/2005/2005F/Jo0572005.pdf",
       "title-short": "Loi n° 2005-55 du 18 juillet 2005",
-      "note": "citation-key: loi2005-55\nJournal officiel n° 57 du 19 juillet 2005, édition française, p. 1749-1750. Métadonnées jort_cache.db (recid 110643)."
+      "note": "citation-key: loi2005-55\nJournal officiel n° 57 du 19 juillet 2005, édition française, p. 1749-1750, couche texte lue (articles à la p. 1750). Pas de date d'effet énoncée ; la mention de dépôt du fascicule porte « 21 juillet 2004 », date manifestement fautive, d'où la date de publication retenue. Métadonnées jort_cache.db (recid 110643)."
     },
     {
       "id": "arrete-anc-2012-07-21-membres",
@@ -3796,6 +4182,26 @@
       "note": "citation-key: decret2000-243\nJournal officiel n° 12 du 11 février 2000, édition française, p. 398. Métadonnées jort_cache.db (recid 88343)."
     },
     {
+      "id": "decret2009-910",
+      "type": "legislation",
+      "title": "Décret n° 2009-910 du 4 avril 2009, modifiant le décret n° 2000-241 du 31 janvier 2000, portant institution d'une indemnité spécifique au profit du corps des enseignants chercheurs des universités et des établissements d'enseignement supérieur et de recherche",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "29",
+      "page": "1019",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            4,
+            4
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009F/Jo0292009.pdf",
+      "title-short": "Décret n° 2009-910 du 4 avril 2009",
+      "note": "citation-key: decret2009-910\nJournal officiel n° 29 du 10 avril 2009, édition française, p. 1019 (article 3 nouveau et tableau lus à l'image le 2 novembre 2026)."
+    },
+    {
       "id": "decret2013-1470",
       "type": "legislation",
       "title": "Décret n° 2013-1470 du 6 mai 2013, portant augmentation de l'indemnité spécifique allouée au profit du corps des enseignants chercheurs des universités et des établissements d'enseignement supérieur et de recherche",
@@ -3813,7 +4219,7 @@
       },
       "URL": "https://www.pist.tn/jort/2013/2013F/Jo0382013.pdf",
       "title-short": "Décret n° 2013-1470 du 6 mai 2013",
-      "note": "citation-key: decret2013-1470\nJournal officiel n° 38 du 10 mai 2013, édition française, p. 1445-1446. Métadonnées jort_cache.db (recid 79475)."
+      "note": "citation-key: decret2013-1470\nJournal officiel n° 38 du 10 mai 2013, édition française, p. 1445-1446 (tableau p. 1446, lu à l'image le 2 novembre 2026 ; édition arabe : tableau p. 1679). Métadonnées jort_cache.db (recid 79475)."
     },
     {
       "id": "decret-gouv2016-399",
@@ -4613,7 +5019,7 @@
       },
       "URL": "https://www.pist.tn/jort/1985/1985F/Jo06885.pdf",
       "title-short": "Décret n° 85-1183 du 24 septembre 1985",
-      "note": "citation-key: decret85-1183\nJournal officiel n° 68 de 1985, édition française, p. 1256-1257. Métadonnées jort_cache.db."
+      "note": "citation-key: decret85-1183\nJournal officiel n° 68 du 1er octobre 1985, édition française, p. 1256-1257, lu à l'image. Art. 1er : article 33 (nouveau) du décret n° 73-167, prise en charge à 90 % des frais d'enseignement. Pas de date d'effet énoncée. Métadonnées jort_cache.db."
     },
     {
       "id": "decret2006-1245",
@@ -4676,6 +5082,26 @@
       "note": "citation-key: decret76-843\nJournal officiel n° 57 de 1976, édition française, p. 2266. Métadonnées jort_cache.db."
     },
     {
+      "id": "arrete-1976-09-23-cabinets",
+      "type": "legislation",
+      "title": "Arrêté du Premier ministre du 23 septembre 1976, fixant les taux des avantages et indemnités alloués aux membres des cabinets ministériels",
+      "title-short": "Arrêté du 23 septembre 1976 (cabinets)",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "57",
+      "page": "2266-2267",
+      "issued": {
+        "date-parts": [
+          [
+            1976,
+            9,
+            24
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1976/1976F/Jo05776.pdf",
+      "note": "citation-key: arrete-1976-09-23-cabinets\nJournal officiel n° 57 des 24-28 septembre 1976, édition française, p. 2266-2267. Articles 1 à 4 lus à l'image le 2 novembre 2026 (PDF 2 et 3). Métadonnées jort_cache.db."
+    },
+    {
       "id": "decret2025-459",
       "type": "legislation",
       "title": "Décret n° 2025-459 du 19 novembre 2025, modifiant le décret gouvernemental n° 2021-436 du 17 juin 2021 relatif à la cessation de l'application du mécanisme de l'emploi des ouvriers des chantiers régionaux et des chantiers agricoles hors chantier",
@@ -4735,12 +5161,331 @@
       "note": "citation-key: decret-gouv2019-1129\nJournal officiel n° 99 de 2019, p. 4516-4517 (édition arabe). Pas d'édition française dans la notice : pas d'URL dans ce fichier ; édition arabe : https://www.pist.tn/jort/2019/2019A/Ja0992019.pdf. Intitulé : arabe de la notice, traduction française de travail entre crochets. Modifié par le décret gouvernemental n° 2021-370. Métadonnées jort_cache.db."
     },
     {
+      "id": "decret2001-2775",
+      "type": "legislation",
+      "title": "Décret n° 2001-2775 du 6 décembre 2001, portant institution d'une indemnité spécifique au profit des magistrats du tribunal administratif",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "100",
+      "page": "4139",
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            12,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2001/2001F/Jo1002001.pdf",
+      "title-short": "Décret n° 2001-2775 du 6 décembre 2001",
+      "note": "citation-key: decret2001-2775\nJournal officiel n° 100 du 14 décembre 2001, édition française, p. 4139. Couche texte du fichier illisible (codage décalé) : lu à l'image le 1er novembre 2026. Métadonnées jort_cache.db (recid 87099)."
+    },
+    {
+      "id": "decret2001-2776",
+      "type": "legislation",
+      "title": "Décret n° 2001-2776 du 6 décembre 2001, portant institution d'une indemnité spécifique au profit des magistrats de la cour des comptes",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "100",
+      "page": "4139-4140",
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            12,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2001/2001F/Jo1002001.pdf",
+      "title-short": "Décret n° 2001-2776 du 6 décembre 2001",
+      "note": "citation-key: decret2001-2776\nJournal officiel n° 100 du 14 décembre 2001, édition française, pp. 4139-4140. Couche texte du fichier illisible (codage décalé) : lu à l'image le 1er novembre 2026. Métadonnées jort_cache.db (recid 87100)."
+    },
+    {
+      "id": "decret2009-2791",
+      "type": "legislation",
+      "title": "Décret n° 2009-2791 du 28 septembre 2009, modifiant le décret n° 2001-2775 du 6 décembre 2001 portant institution d'une indemnité spécifique au profit des magistrats du tribunal administratif",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "80",
+      "page": "2853-2854",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            9,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009F/Jo0802009.pdf",
+      "title-short": "Décret n° 2009-2791 du 28 septembre 2009",
+      "note": "citation-key: decret2009-2791\nJournal officiel n° 80 du 6 octobre 2009, édition française (« traduction française pour information »), pp. 2853-2854. Métadonnées jort_cache.db (recid 81634)."
+    },
+    {
+      "id": "decret2009-2792",
+      "type": "legislation",
+      "title": "Décret n° 2009-2792 du 28 septembre 2009, modifiant le décret n° 2001-2776 du 6 décembre 2001 portant institution d'une indemnité spécifique au profit des magistrats de la cour des comptes",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "80",
+      "page": "2854-2855",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            9,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009F/Jo0802009.pdf",
+      "title-short": "Décret n° 2009-2792 du 28 septembre 2009",
+      "note": "citation-key: decret2009-2792\nJournal officiel n° 80 du 6 octobre 2009, édition française (« traduction française pour information »), pp. 2854-2855. Métadonnées jort_cache.db (recid 81635)."
+    },
+    {
+      "id": "decret2009-2826",
+      "type": "legislation",
+      "title": "Décret n° 2009-2826 du 28 septembre 2009, portant modification du décret n° 2001-2125 du 10 septembre 2001, portant institution d'une indemnité spécifique au profit des magistrats de l'ordre judiciaire",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "80",
+      "page": "2866",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            9,
+            28
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2009/2009F/Jo0802009.pdf",
+      "title-short": "Décret n° 2009-2826 du 28 septembre 2009",
+      "note": "citation-key: decret2009-2826\nJournal officiel n° 80 du 6 octobre 2009, édition française (« traduction française pour information »), p. 2866. Métadonnées jort_cache.db (recid 81649)."
+    },
+    {
+      "id": "decret2019-654",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2019-654 du 5 août 2019, fixant les conditions et les modalités de la réparation au profit des magistrats exerçant en dehors de leurs horaires habituels du travail dans les juridictions de l'ordre judiciaire en application de la loi n° 2016-5 du 16 février 2016, modifiant et complétant certaines dispositions du code de procédure pénale",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "63",
+      "page": "2309-2311",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            5
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2019/2019F/Jo0632019.pdf",
+      "title-short": "Décret gouvernemental n° 2019-654 du 5 août 2019",
+      "note": "citation-key: decret2019-654\nJournal officiel n° 63 du 6 août 2019, édition française (« traduction française pour information »), pp. 2309-2311 ; arts 1er à 3 p. 2310, arts 4 à 7 p. 2311. Édition arabe : pp. 2453-2454 (https://www.pist.tn/jort/2019/2019A/Ja0632019.pdf). Fascicule déposé le 8 août 2019 : décret exécutoire le 13 août 2019 (loi n° 93-64, art. 2). Métadonnées jort_cache.db (recid 126278)."
+    },
+    {
+      "id": "decret71-364",
+      "type": "legislation",
+      "title": "Décret n° 71-364 du 9 octobre 1971, règlementant l'attribution et la rémunération des emplois fonctionnels des administrations centrales",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "44",
+      "page": "1346-1347",
+      "issued": {
+        "date-parts": [
+          [
+            1971,
+            10,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1971/1971F/Jo04471.pdf",
+      "title-short": "Décret n° 71-364 du 9 octobre 1971",
+      "note": "citation-key: decret71-364\nJournal officiel n° 44 des 12-15 octobre 1971, édition française, pp. 1346-1347. Fascicule lu à l'image le 1er novembre 2026 (couche texte absente). Métadonnées jort_cache.db (recid 103321)."
+    },
+    {
+      "id": "decret71-365",
+      "type": "legislation",
+      "title": "Décret n° 71-365 du 9 octobre 1971, fixant le taux de l'indemnité de fonction attribuée aux agents chargés d'un emploi fonctionnel",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "44",
+      "page": "1347-1348",
+      "issued": {
+        "date-parts": [
+          [
+            1971,
+            10,
+            9
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1971/1971F/Jo04471.pdf",
+      "title-short": "Décret n° 71-365 du 9 octobre 1971",
+      "note": "citation-key: decret71-365\nJournal officiel n° 44 des 12-15 octobre 1971, édition française, pp. 1347-1348. Fascicule lu à l'image le 1er novembre 2026 (couche texte absente)."
+    },
+    {
+      "id": "decret88-188",
+      "type": "legislation",
+      "title": "Décret n° 88-188 du 11 février 1988, réglementant les conditions d'attribution et de retrait des emplois fonctionnels de secrétaire général de ministère, de directeur général d'administration centrale, de directeur d'administration centrale, de sous-directeur d'administration centrale et de chef de service d'administration centrale",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "13",
+      "page": "261-263",
+      "issued": {
+        "date-parts": [
+          [
+            1988,
+            2,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1988/1988F/Jo01388.pdf",
+      "title-short": "Décret n° 88-188 du 11 février 1988",
+      "note": "citation-key: decret88-188\nJournal officiel n° 13 des 16-19 février 1988, édition française, pp. 261-263. Fascicule lu à l'image le 1er novembre 2026 (couche texte absente). Métadonnées jort_cache.db (recid 94559)."
+    },
+    {
+      "id": "decret91-800",
+      "type": "legislation",
+      "title": "Décret n° 91-800 du 25 mai 1991, modifiant le décret n° 76-843 du 23 septembre 1976, fixant le régime applicable aux membres des cabinets ministériels",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "38",
+      "page": "1070",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            5,
+            25
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo03891.pdf",
+      "title-short": "Décret n° 91-800 du 25 mai 1991",
+      "note": "citation-key: decret91-800\nJournal officiel n° 38 du 30 mai 1991, édition française, p. 1070. Fascicule lu à l'image le 1er novembre 2026 (couche texte absente). Métadonnées jort_cache.db (recid 92873)."
+    },
+    {
+      "id": "decret91-801",
+      "type": "legislation",
+      "title": "Décret n° 91-801 du 25 mai 1991, modifiant le décret n° 83-576 du 17 juin 1983, fixant le taux de l'indemnité de fonction attribuée aux agents chargés d'un emploi fonctionnel",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "38",
+      "page": "1071",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            5,
+            25
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo03891.pdf",
+      "title-short": "Décret n° 91-801 du 25 mai 1991",
+      "note": "citation-key: decret91-801\nJournal officiel n° 38 du 30 mai 1991, édition française, p. 1071. Fascicule lu à l'image le 1er novembre 2026 (couche texte absente)."
+    },
+    {
+      "id": "decret97-1321",
+      "type": "legislation",
+      "title": "Décret n° 97-1321 du 7 juillet 1997, relatif à l'institution d'indemnités complémentaires aux indemnités spécifiques allouées à certains agents nantis d'emplois fonctionnels",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "57",
+      "page": "1270-1274",
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            7,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1997/1997F/Jo05797.pdf",
+      "title-short": "Décret n° 97-1321 du 7 juillet 1997",
+      "note": "citation-key: decret97-1321\nJournal officiel n° 57 du 18 juillet 1997, édition française (« traduction française pour information »), pp. 1270-1274. Métadonnées jort_cache.db (recid 89888)."
+    },
+    {
+      "id": "decret2006-1718",
+      "type": "legislation",
+      "title": "Décret n° 2006-1718 du 19 juin 2006, modifiant le décret n° 76-843 du 23 septembre 1976 fixant le régime applicable aux membres des cabinets ministériels",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "50",
+      "page": "1661",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            6,
+            19
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0502006.pdf",
+      "title-short": "Décret n° 2006-1718 du 19 juin 2006",
+      "note": "citation-key: decret2006-1718\nJournal officiel n° 50 du 23 juin 2006, édition française (« traduction française pour information »), p. 1661. Métadonnées jort_cache.db (recid 84198)."
+    },
+    {
+      "id": "decret2006-1719",
+      "type": "legislation",
+      "title": "Décret n° 2006-1719 du 19 juin 2006, modifiant et complétant le décret n° 91-801 du 25 mai 1991, fixant le taux de l'indemnité de fonction attribuée aux agents chargés d'un emploi fonctionnel",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "50",
+      "page": "1661-1662",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            6,
+            19
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0502006.pdf",
+      "title-short": "Décret n° 2006-1719 du 19 juin 2006",
+      "note": "citation-key: decret2006-1719\nJournal officiel n° 50 du 23 juin 2006, édition française (« traduction française pour information »), pp. 1661-1662."
+    },
+    {
+      "id": "decret2017-985",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2017-985 du 15 août 2017, modifiant et complétant le décret n° 2013-4506 du 6 novembre 2013, relatif à la création de l'agence technique des télécommunications et fixant son organisation administrative, financière et les modalités de son fonctionnement",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "70-71",
+      "page": "2928-2935",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            8,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2017/2017F/Jo0712017.pdf",
+      "title-short": "Décret gouvernemental n° 2017-985 du 15 août 2017",
+      "note": "citation-key: decret2017-985\nJournal officiel n° 70-71 des 1er et 5 septembre 2017, édition française (« traduction française pour information »), pp. 2928-2935 ; art. 4 (nouveau) p. 2930. Édition arabe : pp. 2958-2964, art. 4 (nouveau) p. 2960 (https://www.pist.tn/jort/2017/2017A/Ja0712017.pdf). Le sommaire de l'édition française imprime « 2828 » pour la première page. Fascicule déposé le 7 septembre 2017 : décret exécutoire le 12 septembre 2017 (loi n° 93-64, art. 2)."
+    },
+    {
+      "id": "decret2023-294",
+      "type": "legislation",
+      "title": "Décret n° 2023-294 du 19 avril 2023, أمر عدد 294 لسنة 2023 يتعلق بإحداث المستشفى العسكري الجامعي بصفاقس كمؤسسة عمومية للصحة وضبط تنظيمه الإداري والمالي وبالمصادقة على هيكله التنظيمي [portant création de l'hôpital militaire universitaire de Sfax en établissement public de santé, fixant son organisation administrative et financière et approuvant sa structure organisationnelle]",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "44",
+      "page": "1410-1419",
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            19
+          ]
+        ]
+      },
+      "title-short": "Décret n° 2023-294 du 19 avril 2023",
+      "note": "citation-key: decret2023-294\nJournal officiel n° 44 du 2 mai 2023, pp. 1410-1419 (art. 16 p. 1413). Pas d'édition française : le fichier servi à l'adresse française de ce fascicule est l'édition arabe ; pas d'adresse française dans ce fichier. Édition arabe : https://www.pist.tn/jort/2023/2023A/Ja0442023.pdf. Intitulé : arabe du fascicule, traduction française de travail entre crochets. Fascicule déposé le 2 mai 2023 : décret exécutoire le 3 mai 2023 (décret-loi n° 2020-1, art. 2)."
+    },
+    {
       "id": "decret2023-592",
       "type": "legislation",
-      "title": "Décret n° 2023-592 du 21 septembre 2023, أمر عدد 592 لسنة 2023 يتعلق بتنقيح الأمر عدد 1245 لسنة 2006 المتعلق بضبط نظام إسناد الخطط الوظيفية بالإدارة المركزية والإعفاء منها [modifiant le décret n° 2006-1245 du 24 avril 2006 relatif au régime d'attribution des emplois fonctionnels d'administration centrale et à leur retrait]",
+      "title": "Décret n° 2023-592 du 21 septembre 2023, portant modification du décret n° 2006-1245 du 24 avril 2006, fixant le régime d'attribution et de retrait des emplois fonctionnels d'administration centrale",
       "container-title": "Journal officiel de la République tunisienne",
       "issue": "108",
-      "page": "5288-5290",
+      "page": "2402-2403",
       "issued": {
         "date-parts": [
           [
@@ -4750,8 +5495,9 @@
           ]
         ]
       },
+      "URL": "https://www.pist.tn/jort/2023/2023F/Jo1082023.pdf",
       "title-short": "Décret n° 2023-592 du 21 septembre 2023",
-      "note": "citation-key: decret2023-592\nJournal officiel n° 108 de 2023, p. 5288-5290 (édition arabe). Pas d'édition française dans la notice : pas d'URL dans ce fichier ; édition arabe : https://www.pist.tn/jort/2023/2023A/Ja1082023.pdf. Intitulé : arabe de la notice, traduction française de travail entre crochets. Métadonnées jort_cache.db."
+      "note": "citation-key: decret2023-592\nJournal officiel n° 108 du 22 septembre 2023, édition française (« traduction française pour information »), pp. 2402-2403 ; art. 1er p. 2403. Édition arabe : début p. 5290 ; art. 1er sur la page suivante, numérotée 5291 d'après l'ordre des pages, le numéro n'étant pas imprimé sur cette page (https://www.pist.tn/jort/2023/2023A/Ja1082023.pdf). Fascicule déposé le 22 septembre 2023 : décret exécutoire le 23 septembre 2023 (décret-loi n° 2020-1, art. 2). Métadonnées jort_cache.db."
     },
     {
       "id": "minfin-rapport-budget-actualise-2012",
@@ -4903,6 +5649,633 @@
         ]
       },
       "note": "citation-key: decret-gouv-2018-904-prime-rentree-universitaire\nJORT n° 90 de 2018. Lu dans l'édition arabe : prime annuelle des enseignants permanents de l'enseignement supérieur (règle de rémunération, pour le livre des rémunérations publiques ; ni aide aux étudiants, ni aide de rentrée de l'Amen social). Notice jort_cache.db (recid 76708) ; pages non relevées, d'où l'absence de champ page. Intitulé : arabe de la notice, traduction française de travail entre crochets. PAS D'URL dans ce fichier français : la notice n'a pas d'édition française. Édition arabe : https://www.pist.tn/jort/2018/2018A/Ja0902018.pdf (champ pdf_ar de la notice). Note documentaire : docs/notes/education-aides-universitaires-2026-10-17.md, § 2.7."
+    },
+    {
+      "id": "decret-gouv2016-512",
+      "type": "legislation",
+      "title": "Décret gouvernemental n° 2016-512 du 20 avril 2016, modifiant et complétant le décret n° 96-2311 du 3 décembre 1996, fixant le statut particulier du corps des agents des services douaniers",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "1369-1370",
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            20
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2016/2016F/Jo0342016.pdf",
+      "title-short": "Décret gouvernemental n° 2016-512 du 20 avril 2016",
+      "note": "citation-key: decret-gouv2016-512\nJournal officiel n° 34 du 26 avril 2016, édition française, p. 1369-1370. Lu : texte (3 articles ; arts 1 à 3 p. 1370). Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 27 avril 2016 ; exécutoire le 2 mai 2016 (loi n° 93-64, art. 2). Ajoute l'art. 7 ter au décret n° 2013-4651 : intégration des adjudants majors des douanes au grade de sous-lieutenant. Ne vise ni le décret n° 97-130 ni le décret n° 97-1832. Métadonnées jort_cache.db (recid 78062)."
+    },
+    {
+      "id": "arrete-anc-2012-08-15-president",
+      "type": "legislation",
+      "title": "Arrêté du président de l'Assemblée nationale constituante du 15 août 2012, fixant les indemnités et les avantages attribués au président de l'Assemblée nationale constituante",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "72",
+      "page": "2084",
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2012/2012F/Jo0722012.pdf",
+      "title-short": "Arrêté du président de l'ANC du 15 août 2012",
+      "note": "citation-key: arrete-anc-2012-08-15-president\nJournal officiel n° 72 du 11 septembre 2012, édition française, p. 2084. Lu : texte (5 articles). Effet au 15 novembre 2011 (art. 4). Fascicule déposé au siège du gouvernorat de Tunis le 13 septembre 2012. Métadonnées jort_cache.db (recid 51978)."
+    },
+    {
+      "id": "decret2012-1334",
+      "type": "legislation",
+      "title": "Décret n° 2012-1334 du 6 août 2012, portant modification du décret n° 2006-1163 du 13 avril 2006 fixant la concordance entre l'échelonnement des grades des agents du corps de la garde nationale et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "68",
+      "page": "1989",
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2012/2012F/Jo0682012.pdf",
+      "title-short": "Décret n° 2012-1334 du 6 août 2012",
+      "note": "citation-key: decret2012-1334\nJournal officiel n° 68 du 28 août 2012, édition française, p. 1989. Lu : texte. Supprime le grade de caporal-major (en arabe : « رقيب من الصنف الأعلى ») des tableaux de la concordance de la garde nationale. L'édition française imprime à l'article 1er une référence à la sûreté nationale (décret n° 2006-1163 « sûreté nationale et police nationale ») ; l'intitulé et l'édition arabe visent la garde nationale. Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 août 2012 ; exécutoire le 3 septembre 2012. Métadonnées jort_cache.db (recid 79936)."
+    },
+    {
+      "id": "decret2012-1335",
+      "type": "legislation",
+      "title": "Décret n° 2012-1335 du 6 août 2012, portant modification du décret n° 2006-1165 du 13 avril 2006, fixant la concordance entre l'échelonnement des grades des agents du corps de la protection civile et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "68",
+      "page": "1989-1990",
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2012/2012F/Jo0682012.pdf",
+      "title-short": "Décret n° 2012-1335 du 6 août 2012",
+      "note": "citation-key: decret2012-1335\nJournal officiel n° 68 du 28 août 2012, édition française, p. 1989-1990. Lu : texte. Supprime le grade de caporal-major des tableaux de la concordance de la protection civile (art. 1er, p. 1990). Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 août 2012 ; exécutoire le 3 septembre 2012. Métadonnées jort_cache.db (recid 79937)."
+    },
+    {
+      "id": "decret2012-1336",
+      "type": "legislation",
+      "title": "Décret n° 2012-1336 du 6 août 2012, portant modification du décret n° 2006-1161 du 13 avril 2006, fixant la concordance entre l'échelonnement des grades des agents du corps de la sûreté nationale et de la police nationale et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "68",
+      "page": "1990",
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2012/2012F/Jo0682012.pdf",
+      "title-short": "Décret n° 2012-1336 du 6 août 2012",
+      "note": "citation-key: decret2012-1336\nJournal officiel n° 68 du 28 août 2012, édition française, p. 1990. Lu : texte. Supprime le grade de caporal-major (en arabe : « رقيب أمن من الصنف الأعلى ») des tableaux de la concordance de la sûreté nationale et de la police nationale. L'édition française imprime à l'article 1er une référence à la garde nationale (décret n° 2006-1163) ; l'intitulé et l'édition arabe visent la sûreté nationale (décret n° 2006-1161). Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 août 2012 ; exécutoire le 3 septembre 2012. Métadonnées jort_cache.db (recid 79938)."
+    },
+    {
+      "id": "decret2012-248",
+      "type": "legislation",
+      "title": "Décret n° 2012-248 du 5 mai 2012, portant modification du décret n° 2006-1168 du 13 avril 2006, fixant la concordance entre l'échelonnement des grades des cadres et agents des prisons et de la rééducation et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "38",
+      "page": "876-883",
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            5,
+            5
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2012/2012F/Jo0382012.pdf",
+      "title-short": "Décret n° 2012-248 du 5 mai 2012",
+      "note": "citation-key: decret2012-248\nJournal officiel n° 38 du 15 mai 2012, édition française, p. 876-883. Lu : texte (2 articles ; tableaux pp. 876-883). Remplace le premier alinéa de l'art. 1er du décret n° 2006-1168 : nouvelle concordance pour le sous-corps de la tenue civile et le sous-corps de la tenue réglementaire. Vise les décrets n° 97-1832 et n° 97-130. Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 16 mai 2012 ; exécutoire le 21 mai 2012. Métadonnées jort_cache.db (recid 80074)."
+    },
+    {
+      "id": "decret2000-1013",
+      "type": "legislation",
+      "title": "Décret n° 2000-1013 du 11 mai 2000, fixant la concordance entre l'échelonnement des grades des agents de la garde nationale et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "41",
+      "page": "1133-1138",
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            5,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2000/2000F/Jo0412000.pdf",
+      "title-short": "Décret n° 2000-1013 du 11 mai 2000",
+      "note": "citation-key: decret2000-1013\nJournal officiel n° 41 du 23 mai 2000, édition française, p. 1133-1138. Lu : texte (6 articles ; art. 1er p. 1133, arts 2 à 6 p. 1138). Rang des échelons sur « la grille des salaires des militaires et des forces de sécurité intérieure prévue par le décret n° 97-130 du 16 septembre 1997 » ; abroge les décrets n° 84-751 et n° 84-752. Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 24 mai 2000 ; exécutoire le 29 mai 2000. Métadonnées jort_cache.db (recid 88178)."
+    },
+    {
+      "id": "decret2000-1015",
+      "type": "legislation",
+      "title": "Décret n° 2000-1015 du 11 mai 2000, fixant la concordance entre l'échelonnement des grades des agents de la protection civile et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "41",
+      "page": "1140-1145",
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            5,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2000/2000F/Jo0412000.pdf",
+      "title-short": "Décret n° 2000-1015 du 11 mai 2000",
+      "note": "citation-key: decret2000-1015\nJournal officiel n° 41 du 23 mai 2000, édition française, p. 1140-1145. Lu : texte (6 articles ; art. 1er p. 1140, arts 2 et 3 p. 1144, arts 4 à 6 p. 1145). Même grille que le décret n° 2000-1013 (décret n° 97-130) ; abroge le décret n° 84-756. Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 24 mai 2000 ; exécutoire le 29 mai 2000. Métadonnées jort_cache.db (recid 88180)."
+    },
+    {
+      "id": "decret2000-1019",
+      "type": "legislation",
+      "title": "Décret n° 2000-1019 du 11 mai 2000, fixant la concordance entre l'échelonnement des grades de la catégorie d'agents temporaires des prisons et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "41",
+      "page": "1152-1154",
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            5,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2000/2000F/Jo0412000.pdf",
+      "title-short": "Décret n° 2000-1019 du 11 mai 2000",
+      "note": "citation-key: decret2000-1019\nJournal officiel n° 41 du 23 mai 2000, édition française, p. 1152-1154. Lu : texte (7 articles ; art. 1er pp. 1152-1153, arts 2 à 7 p. 1154). Visa le décret n° 97-130 (grille des militaires et des forces de sécurité intérieure) ; abroge le décret n° 88-788. Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 24 mai 2000 ; exécutoire le 29 mai 2000. Métadonnées jort_cache.db (recid 88184)."
+    },
+    {
+      "id": "decret85-907",
+      "type": "legislation",
+      "title": "Décret n° 85-907 du 1er juillet 1985, portant attribution d'une indemnité de magistrature attribuée aux magistrats de la cour des comptes",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "54",
+      "page": "921",
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            7,
+            1
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1985/1985F/Jo05485.pdf",
+      "title-short": "Décret n° 85-907 du 1er juillet 1985",
+      "note": "citation-key: decret85-907\nJournal officiel n° 54 du 12 juillet 1985, édition française, p. 921, lu à l'image. Art. 4 : le décret prend effet à compter du 1er juin 1985. Abroge le décret n° 81-56 (art. 3)."
+    },
+    {
+      "id": "decret85-908",
+      "type": "legislation",
+      "title": "Décret n° 85-908 du 1er juillet 1985, relatif à l'indemnité de magistrature attribuée aux magistrats du tribunal administratif",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "54",
+      "page": "921-922",
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            7,
+            1
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1985/1985F/Jo05485.pdf",
+      "title-short": "Décret n° 85-908 du 1er juillet 1985",
+      "note": "citation-key: decret85-908\nJournal officiel n° 54 du 12 juillet 1985, édition française, p. 921-922, lu à l'image. Art. 4 : le décret prend effet à compter du 1er juin 1985. Abroge le décret n° 81-55 (art. 3)."
+    },
+    {
+      "id": "decret93-2453",
+      "type": "legislation",
+      "title": "Décret n° 93-2453 du 13 décembre 1993, relatif à l'indemnité de magistrature attribuée aux magistrats du tribunal administratif",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "99",
+      "page": "2185",
+      "issued": {
+        "date-parts": [
+          [
+            1993,
+            12,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1993/1993F/Jo09993.pdf",
+      "title-short": "Décret n° 93-2453 du 13 décembre 1993",
+      "note": "citation-key: decret93-2453\nJournal officiel n° 99 du 28 décembre 1993, édition française, p. 2185, lu à l'image. Taux mensuels à compter des 1er octobre 1993, 1994 et 1995 (art. 1er)."
+    },
+    {
+      "id": "decret93-2581",
+      "type": "legislation",
+      "title": "Décret n° 93-2581 du 20 décembre 1993, relatif à l'indemnité de magistrature attribuée aux magistrats de la cour des comptes",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "3",
+      "page": "27",
+      "issued": {
+        "date-parts": [
+          [
+            1993,
+            12,
+            20
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1994/1994F/Jo00394.pdf",
+      "title-short": "Décret n° 93-2581 du 20 décembre 1993",
+      "note": "citation-key: decret93-2581\nJournal officiel n° 3 du 11 janvier 1994, traduction française pour information, p. 27, couche texte lue. Taux mensuels à compter des 1er octobre 1993, 1994 et 1995 (art. 1er)."
+    },
+    {
+      "id": "decret90-1001",
+      "type": "legislation",
+      "title": "Décret n° 90-1001 du 11 juin 1990, portant modification du décret n° 82-505 du 16 mars 1982 instituant une indemnité spécifique dite indemnité de gestion et d'exécution au profit des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif, tel qu'il a été modifié par le décret n° 83-579 du 17 juin 1983",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "42",
+      "page": "807-808",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            6,
+            11
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo04290.pdf",
+      "title-short": "Décret n° 90-1001 du 11 juin 1990",
+      "note": "citation-key: decret90-1001\nJournal officiel n° 42 du 19 juin 1990, édition française, p. 807-808, lu à l'image. Taux mensuels à compter des 1er juillet 1990, 1991 et 1992 (art. 3 nouveau). Annulé à compter du 1er octobre 1990 par le décret n° 91-803 (art. 1er)."
+    },
+    {
+      "id": "decret91-803",
+      "type": "legislation",
+      "title": "Décret n° 91-803 du 25 mai 1991, portant modification du décret n° 82-505 du 16 mars 1982, instituant une indemnité spécifique dite indemnité de gestion et d'exécution au profit des personnels de l'État, des collectivités publiques locales et des établissements publics à caractère administratif",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "38",
+      "page": "1071-1072",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            5,
+            25
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo03891.pdf",
+      "title-short": "Décret n° 91-803 du 25 mai 1991",
+      "note": "citation-key: decret91-803\nJournal officiel n° 38 du 30 mai 1991, édition française, p. 1071-1072, lu à l'image. Art. 1er : annule le décret n° 90-1001 à compter du 1er octobre 1990 ; art. 2 : nouveaux articles 3 et 4 du décret n° 82-505, taux mensuels à compter des 1er octobre 1990, 1er juillet 1991 et 1er juillet 1992 (ouvriers : 1er juillet de chaque année)."
+    },
+    {
+      "id": "decret89-842",
+      "type": "legislation",
+      "title": "Décret n° 89-842 du 3 juillet 1989, modifiant le décret n° 73-167 du 6 avril 1973 réglementant la rémunération, les indemnités spéciales et la prise en charge des frais divers consentis aux ambassadeurs et aux agents du ministère des affaires étrangères en service à l'étranger ainsi que leur régime social",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "50",
+      "page": "1091-1093",
+      "issued": {
+        "date-parts": [
+          [
+            1989,
+            7,
+            3
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1989/1989F/Jo05089.pdf",
+      "title-short": "Décret n° 89-842 du 3 juillet 1989",
+      "note": "citation-key: decret89-842\nJournal officiel n° 50 du 21 juillet 1989, édition française, p. 1091-1093, lu à l'image. Art. 1er : articles 2, 4, 9, 25 et 27 du décret n° 73-167 remplacés ; art. 2 : articles 3, 5, 6, 7, 10, 11, 12, 18, 20, 30 et 52 abrogés. Pas de date d'effet énoncée."
+    },
+    {
+      "id": "decret90-721",
+      "type": "legislation",
+      "title": "Décret n° 90-721 du 25 avril 1990, complétant et modifiant le décret n° 73-167 du 6 avril 1973 réglementant la rémunération, les indemnités spéciales et la prise en charge des frais divers consentis aux ambassadeurs et aux agents du ministère des affaires étrangères en service à l'étranger ainsi que leur régime social",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "32",
+      "page": "605",
+      "issued": {
+        "date-parts": [
+          [
+            1990,
+            4,
+            25
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1990/1990F/Jo03290.pdf",
+      "title-short": "Décret n° 90-721 du 25 avril 1990",
+      "note": "citation-key: decret90-721\nJournal officiel n° 32 du 15 mai 1990, édition française, p. 605, lu à l'image. Art. 1er : article 31 bis ; art. 2 : articles 23, 44 et 45 ; art. 3 : article 46. Pas de date d'effet énoncée."
+    },
+    {
+      "id": "decret91-664",
+      "type": "legislation",
+      "title": "Décret n° 91-664 du 13 mai 1991, étendant les dispositions du décret n° 90-721 du 25 avril 1990, complétant et modifiant le décret n° 73-167 du 6 avril 1973, aux cadres et agents des forces de sécurité intérieure en fonction auprès des ambassades à l'étranger",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "37",
+      "page": "1059-1060",
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            5,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1991/1991F/Jo03791.pdf",
+      "title-short": "Décret n° 91-664 du 13 mai 1991",
+      "note": "citation-key: decret91-664\nJournal officiel n° 37 du 28 mai 1991, édition française, p. 1059-1060, numéro lu à l'image sur le fascicule ; jort_cache.db le porte sous le n° 91-666 (recid 92886). Art. 2 : effet à partir du 1er janvier 1991."
+    },
+    {
+      "id": "decret92-93",
+      "type": "legislation",
+      "title": "Décret n° 92-93 du 13 janvier 1992, étendant les dispositions du décret n° 89-842 du 3 juillet 1989, modifiant le décret n° 73-167 du 6 avril 1973, aux cadres et agents des forces de sécurité intérieure et aux personnels militaires en fonction auprès des missions diplomatiques, permanentes et consulaires de la République tunisienne",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "6",
+      "page": "107-108",
+      "issued": {
+        "date-parts": [
+          [
+            1992,
+            1,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1992/1992F/Jo00692.pdf",
+      "title-short": "Décret n° 92-93 du 13 janvier 1992",
+      "note": "citation-key: decret92-93\nJournal officiel n° 6 du 28 janvier 1992, édition française, p. 107-108, lu à l'image. Art. 2 : effet à partir du 1er septembre 1991."
+    },
+    {
+      "id": "arrete-1985-03-01-zones",
+      "type": "legislation",
+      "title": "Arrêté du ministre des affaires étrangères du 1er mars 1985, complétant le décret n° 73-168 du 6 avril 1973, fixant les zones et les taux pour le calcul de l'indemnité de poste servie au personnel du ministère des affaires étrangères en service à l'étranger",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "21",
+      "page": "377",
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            3,
+            1
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1985/1985F/Jo02185.pdf",
+      "title-short": "Arrêté du 1er mars 1985 (zones)",
+      "note": "citation-key: arrete-1985-03-01-zones\nJournal officiel n° 21 du 15 mars 1985, édition française, p. 377, lu à l'image. Article unique : article 1er du décret n° 73-168 complété ; zone I : Sanaa, Aden, El Manama, Libreville."
+    },
+    {
+      "id": "arrete-1985-03-01-logement",
+      "type": "legislation",
+      "title": "Arrêté du ministre des affaires étrangères du 1er mars 1985, modifiant et complétant l'arrêté du 6 avril 1973, fixant la liste des pays dans lesquels l'indemnité de logement est de l'ordre de 50 %",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "21",
+      "page": "377",
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            3,
+            1
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1985/1985F/Jo02185.pdf",
+      "title-short": "Arrêté du 1er mars 1985 (logement)",
+      "note": "citation-key: arrete-1985-03-01-logement\nJournal officiel n° 21 du 15 mars 1985, édition française, p. 377, lu à l'image. Art. 1er : Libreville, Sanaa, Aden et El Manama ajoutés à la liste ; art. 2 : effet à compter du 1er mars 1985."
+    },
+    {
+      "id": "imf-scr-1997-57",
+      "type": "report",
+      "title": "Tunisia — Selected Issues",
+      "author": [
+        {
+          "literal": "International Monetary Fund"
+        }
+      ],
+      "publisher": "International Monetary Fund",
+      "publisher-place": "Washington, D.C.",
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            7
+          ]
+        ]
+      },
+      "URL": "https://www.elibrary.imf.org/view/journals/002/1997/057/article-A001-en.xml",
+      "title-short": "FMI, Tunisia — Selected Issues (1997)",
+      "note": "citation-key: imf-scr-1997-57\nIMF Staff Country Report No. 97/57. Couverture : July 1997 ; rapport préparé par une équipe du personnel du FMI (H. Ghesquiere, chef), approuvé le 13 juin 1997. Tableau 6 « Consolidated Financial Operations of the Central Government, 1991-96 » (p. 88, millions de dinars) : « Wages and salaries » 1 165, 1 310, 1 450, 1 609, 1 776 et 1 969 pour 1991 à 1996 ; source « Data provided by the Tunisian authorities » ; la note 1 dit le périmètre : fonds spéciaux, fonds de concours, opérations financées de l'extérieur, opérations nettes de trésorerie et caisses de sécurité sociale. Copie locale : tunisia-data/data/raw/banque-mondiale-rapports/imf_1997_057_red_tunisia.pdf (couche texte lue le 1er novembre 2026)."
+    },
+    {
+      "id": "imf-scr-2000-37",
+      "type": "report",
+      "title": "Tunisia: Recent Economic Developments",
+      "author": [
+        {
+          "literal": "International Monetary Fund"
+        }
+      ],
+      "publisher": "International Monetary Fund",
+      "publisher-place": "Washington, D.C.",
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            3,
+            29
+          ]
+        ]
+      },
+      "URL": "https://www.elibrary.imf.org/view/journals/002/2000/037/article-A001-en.xml",
+      "title-short": "FMI, Tunisia: Recent Economic Developments (2000)",
+      "note": "citation-key: imf-scr-2000-37\nIMF Staff Country Report No. 00/37, 29 mars 2000. Tableau 13 « Consolidated Financial Operations of the Central Government, 1994-98 » et tableau 15 (millions de dinars) : « Wages and salaries » 1 609, 1 776, 1 969, 2 320 et 2 533 pour 1994 à 1998 ; source « Data provided by the Ministry of Finance ». Note 3 : à partir de 1997, la ligne inclut la masse salariale des collectivités locales, des établissements publics à caractère administratif et des établissements à caractère industriel commercial non marchands, et celle du personnel des ambassades, auparavant classée en transferts. Lu dans la page HTML de l'eLibrary (le PDF local n'a pas de couche texte) : tunisia-data/data/raw/banque-mondiale-rapports/imf_2000_037_red_tunisia.html."
+    },
+    {
+      "id": "decret2006-1160",
+      "type": "legislation",
+      "title": "Décret n° 2006-1160 du 13 avril 2006, portant statut particulier des agents du corps de la sûreté nationale et de la police nationale",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "1004-1029",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            4,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0342006.pdf",
+      "title-short": "Décret n° 2006-1160 du 13 avril 2006",
+      "note": "citation-key: decret2006-1160\nJournal officiel n° 34 du 28 avril 2006, édition française, p. 1004-1029. Lu à l'image : art. 87 et 88, p. 1029 (agents temporaires de la sûreté maintenus jusqu'à leur titularisation, trois ans au plus ; abrogation des décrets n° 84-748 et n° 87-1174). Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 avril 2006 ; exécutoire le 4 mai 2006. Métadonnées jort_cache.db (recid 84341)."
+    },
+    {
+      "id": "decret2006-1161",
+      "type": "legislation",
+      "title": "Décret n° 2006-1161 du 13 avril 2006, fixant la concordance entre l'échelonnement des grades des agents du corps de la sûreté nationale et de la police nationale et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "1030-1039",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            4,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0342006.pdf",
+      "title-short": "Décret n° 2006-1161 du 13 avril 2006",
+      "note": "citation-key: decret2006-1161\nJournal officiel n° 34 du 28 avril 2006, édition française, p. 1030-1039. Lu à l'image : tableau de l'art. 1er (pp. 1031-1038), art. 3 (p. 1038-1039), art. 4 et 5 (p. 1039). Abroge les décrets n° 2000-1009 et n° 2000-1011. Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 avril 2006 ; exécutoire le 4 mai 2006. Métadonnées jort_cache.db (recid 84342)."
+    },
+    {
+      "id": "decret2006-1162",
+      "type": "legislation",
+      "title": "Décret n° 2006-1162 du 13 avril 2006, portant statut particulier des agents du corps de la garde nationale",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "1040-1059",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            4,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0342006.pdf",
+      "title-short": "Décret n° 2006-1162 du 13 avril 2006",
+      "note": "citation-key: decret2006-1162\nJournal officiel n° 34 du 28 avril 2006, édition française, p. 1040-1059. Lu à l'image : art. 70 et 71, p. 1059 (agents temporaires maintenus jusqu'à leur titularisation, trois ans au plus ; abrogation des décrets n° 84-750 et n° 2000-1012). Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 avril 2006 ; exécutoire le 4 mai 2006. Métadonnées jort_cache.db (recid 84343)."
+    },
+    {
+      "id": "decret2006-1163",
+      "type": "legislation",
+      "title": "Décret n° 2006-1163 du 13 avril 2006, fixant la concordance entre l'échelonnement des grades des agents du corps de la garde nationale et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "1060-1067",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            4,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0342006.pdf",
+      "title-short": "Décret n° 2006-1163 du 13 avril 2006",
+      "note": "citation-key: decret2006-1163\nJournal officiel n° 34 du 28 avril 2006, édition française, p. 1060-1067. Lu à l'image : tableau de l'art. 1er (pp. 1061-1065), art. 3 (p. 1066), art. 4 et 5 (pp. 1066-1067). Abroge le décret n° 2000-1013. Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 avril 2006 ; exécutoire le 4 mai 2006. Métadonnées jort_cache.db (recid 84344)."
+    },
+    {
+      "id": "decret2006-1164",
+      "type": "legislation",
+      "title": "Décret n° 2006-1164 du 13 avril 2006, portant statut particulier des agents du corps de la protection civile",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "1068-1086",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            4,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0342006.pdf",
+      "title-short": "Décret n° 2006-1164 du 13 avril 2006",
+      "note": "citation-key: decret2006-1164\nJournal officiel n° 34 du 28 avril 2006, édition française, p. 1068-1086. Lu à l'image : art. 69, p. 1086 (abrogation du décret n° 84-755). Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 avril 2006 ; exécutoire le 4 mai 2006. Métadonnées jort_cache.db (recid 84345)."
+    },
+    {
+      "id": "decret2006-1165",
+      "type": "legislation",
+      "title": "Décret n° 2006-1165 du 13 avril 2006, fixant la concordance entre l'échelonnement des grades des agents du corps de la protection civile et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "1087-1094",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            4,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0342006.pdf",
+      "title-short": "Décret n° 2006-1165 du 13 avril 2006",
+      "note": "citation-key: decret2006-1165\nJournal officiel n° 34 du 28 avril 2006, édition française, p. 1087-1094. Lu à l'image : tableau de l'art. 1er (pp. 1088-1092), art. 3 à 5 (pp. 1092-1093), art. 6 (p. 1094). Abroge le décret n° 2000-1015. Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 avril 2006 ; exécutoire le 4 mai 2006. Métadonnées jort_cache.db (recid 84346)."
+    },
+    {
+      "id": "decret2006-1167",
+      "type": "legislation",
+      "title": "Décret n° 2006-1167 du 13 avril 2006, fixant le statut particulier du corps des cadres et agents des prisons et de la rééducation",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "1118-1145",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            4,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0342006.pdf",
+      "title-short": "Décret n° 2006-1167 du 13 avril 2006",
+      "note": "citation-key: decret2006-1167\nJournal officiel n° 34 du 28 avril 2006, édition française, p. 1118-1145. Lu à l'image : art. 76, p. 1145 (abrogation des décrets n° 84-753 et n° 88-787). Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 avril 2006 ; exécutoire le 4 mai 2006. Métadonnées jort_cache.db (recid 84348)."
+    },
+    {
+      "id": "decret2006-1168",
+      "type": "legislation",
+      "title": "Décret n° 2006-1168 du 13 avril 2006, fixant la concordance entre l'échelonnement des grades des cadres et agents des prisons et de la rééducation et les niveaux de rémunération",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "1146-1154",
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            4,
+            13
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2006/2006F/Jo0342006.pdf",
+      "title-short": "Décret n° 2006-1168 du 13 avril 2006",
+      "note": "citation-key: decret2006-1168\nJournal officiel n° 34 du 28 avril 2006, édition française, p. 1146-1154. Lu à l'image : tableaux de l'art. 1er (pp. 1147-1152), art. 3 (p. 1153), art. 4 (pp. 1153-1154), art. 5 (p. 1154). Abroge les décrets n° 2000-1017 et n° 2000-1019. Le premier alinéa de l'art. 1er est remplacé par le décret n° 2012-248. Pas de clause d'effet. Fascicule déposé au siège du gouvernorat de Tunis le 29 avril 2006 ; exécutoire le 4 mai 2006. Métadonnées jort_cache.db (recid 84349)."
     }
   ]
 }

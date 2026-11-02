@@ -20,7 +20,7 @@ précis n'est modifié par cette note.
     `https://www.pist.tn/jort/2015/2015A/Ja1012015.pdf`.
 - **Lecture** : le texte français se lit directement, sans OCR. Il a été lu en entier
   (11 articles). En arabe, les intitulés et les termes clés ont été relevés après
-  normalisation NFKC. Le texte arabe n'a pas été comparé article par article.
+  normalisation NFKC. Comparaison article par article faite le 1er novembre 2026 (§ 7).
 - **Signataire** : Habib Essid, Chef du Gouvernement.
 - **Visas** : loi n° 89-9 ; décret n° 90-1855, modifié par les décrets n° 92-1 et
   n° 2006-2564 ; décret n° 2006-242, liste de la catégorie exceptionnelle, modifié notamment
@@ -478,8 +478,16 @@ rapport n'est cité ; rien n'est donc à verser dans `tunisia-data`.
    recherche web. Elle n'est sans doute pas au JORT ; à obtenir.
 6. **Liste nominative des « banques publiques »** au sens des décrets n° 2013-4953 et
    n° 2015-968 : non établie.
-7. **Texte arabe** : il n'a pas été comparé article par article au texte français. Les
-   libellés arabes des catégories et des indemnités sont à relever aux pp. 3469-3471.
+7. **Texte arabe** : comparé article par article au texte français le 1er novembre 2026
+   (édition arabe, pp. 3469-3471 ; couche texte normalisée en NFKC, tableaux des articles 3
+   et 4 relus sur l'image de la p. 3470). Aucune divergence de fond : mêmes articles (11),
+   mêmes montants (745, 610, 560, 515, 445 ; 900 et 200 ; 4 600, 3 795, 3 010, 2 410, 1 985,
+   1 690), mêmes délais (un an pour l'option, un mois de congé, trois mois au plus), mêmes
+   abrogations (décrets n° 90-1855 et n° 2014-12) et mêmes visas (le décret n° 2006-242 est
+   daté du 12 octobre 2006 dans les deux éditions). Libellés arabes des catégories : « استثنائي »
+   (exceptionnelle), « ك » (G), « م » (M), « أ » (A), « ب » (B), « ج » (C) ; première modalité :
+   « الصيغة الأولى », « منحة تكميلية بعنوان المسؤولية » ; deuxième modalité : « المرتب الأساسي »,
+   « منحة السكن », « منحة المسؤولية ».
 8. **Série** : aucune revalorisation des montants de 2015 n'a été trouvée dans le corpus
    jusqu'au 2 octobre 2026. C'est un constat de recherche, pas une preuve d'absence (voir
    section 9). Les augmentations générales des entreprises publiques

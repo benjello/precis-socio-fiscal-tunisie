@@ -11,6 +11,8 @@ format:
 
 Le précis range ses chapitres par flux d'argent : une institution y apparaît donc dans plusieurs livres, selon ce qu'elle prélève, sert ou gère. Cette page renvoie chaque institution aux chapitres où elle est traitée. Elle ne résume rien : chaque lien mène au chapitre.
 
+Le régime des accidents du travail et des maladies professionnelles est réparti entre quatre livres : le [parcours de lecture](parcours-atmp.html) en donne l'ordre.
+
 Une institution n'est indexée que dans les chapitres où elle est un objet d'étude, et non partout où son nom est cité.
 
 <!-- TODO (rédacteur) : étendre l'index aux autres institutions (ministères, offices, banques publiques, Trésor) et à l'arabe ; vérifier à la relecture de chaque livre que les sigles ci-dessous renvoient aux bons chapitres. -->
@@ -20,13 +22,18 @@ Une institution n'est indexée que dans les chapitres où elle est un objet d'é
 
 - [Des caisses du Protectorat aux caisses nationales](caisses/_histoire.html#sec-caisses-panorama), dans « Les caisses de sécurité sociale »
 - [Trois caisses, un même statut](caisses/_statut_cadre.html#sec-caisses-statut), dans « Les caisses de sécurité sociale »
+- [L'État et les caisses](caisses/_etat_caisses.html#sec-caisses-etat), dans « Les caisses de sécurité sociale »
 - [Une comptabilité par régime](caisses/_comptes_regimes.html#sec-caisses-regimes), dans « Les caisses de sécurité sociale »
+- [Les textes, dans l'ordre](caisses/_chronologie.html#sec-caisses-chronologie), dans « Les caisses de sécurité sociale »
 - [La longue période](caisses/_comptes_longue_periode.html#sec-caisses-longue-periode), dans « Les caisses de sécurité sociale »
 - [Les accidents du travail et les maladies professionnelles](cotisations_sociales/_accidents_travail.html#sec-cot-at), dans « Les cotisations sociales »
+- [Parcours de lecture : les accidents du travail et les maladies professionnelles](parcours-atmp.html)
 - [Recouvrement, rendement, vue d'ensemble](cotisations_sociales/_bilan.html#sec-cot-bilan), dans « Les cotisations sociales »
+- [Ce qui distingue les régimes](cotisations_sociales/_regimes.html#sec-cot-regimes), dans « Les cotisations sociales »
+- [L'assurance maladie](cotisations_sociales/_maladie.html#sec-cot-maladie), dans « Les cotisations sociales »
 - [Le secteur privé : la CNSS](retraites/_secteur_prive.html#sec-secteur-prive), dans « Les retraites »
 - [Maladie, maternité, décès, accidents du travail, cessation d'activité pour raisons économiques](prestations_sociales/_autres_risques.html#sec-prest-autres-risques), dans « Les prestations sociales »
-- [Des protections distinctes à l'assurance maladie, 1951-2004](sante/_histoire.html#sec-soins-histoire), dans « La santé »
+- [La construction du droit aux soins, 1951-2004](prestations_sociales/_soins.html#sec-soins-histoire), dans « Les prestations sociales »
 - [Le droit aux soins : l'assurance maladie et l'assistance médicale](prestations_sociales/_soins.html#sec-prest-soins), dans « Les prestations sociales »
 - [L'étendue de la couverture et la dépense de soins](sante/_couverture.html#sec-sante-couverture), dans « La santé »
 
@@ -36,22 +43,28 @@ Une institution n'est indexée que dans les chapitres où elle est un objet d'é
 - [Trois caisses, un même statut](caisses/_statut_cadre.html#sec-caisses-statut), dans « Les caisses de sécurité sociale »
 - [L'État et les caisses](caisses/_etat_caisses.html#sec-caisses-etat), dans « Les caisses de sécurité sociale »
 - [Une comptabilité par régime](caisses/_comptes_regimes.html#sec-caisses-regimes), dans « Les caisses de sécurité sociale »
+- [Les textes, dans l'ordre](caisses/_chronologie.html#sec-caisses-chronologie), dans « Les caisses de sécurité sociale »
 - [Le secteur public : la CNRPS](retraites/_secteur_public.html#sec-secteur-public), dans « Les retraites »
 - [Un regard extérieur : la Banque mondiale](retraites/_regard_banque_mondiale.html#sec-banque-mondiale), dans « Les retraites »
 - [Le régime indiciaire](remunerations_publiques/_regime_indiciaire.html#sec-regime-indiciaire), dans « Les rémunérations publiques »
 - [Le régime conventionnel public](remunerations_publiques/_regime_conventionnel.html#sec-regime-conventionnel), dans « Les rémunérations publiques »
+- [Ce qui distingue les régimes](cotisations_sociales/_regimes.html#sec-cot-regimes), dans « Les cotisations sociales »
+- [L'assurance maladie](cotisations_sociales/_maladie.html#sec-cot-maladie), dans « Les cotisations sociales »
 - [Maladie, maternité, décès, accidents du travail, cessation d'activité pour raisons économiques](prestations_sociales/_autres_risques.html#sec-prest-autres-risques), dans « Les prestations sociales »
-- [Des protections distinctes à l'assurance maladie, 1951-2004](sante/_histoire.html#sec-soins-histoire), dans « La santé »
+- [La construction du droit aux soins, 1951-2004](prestations_sociales/_soins.html#sec-soins-histoire), dans « Les prestations sociales »
 - [Le droit aux soins : l'assurance maladie et l'assistance médicale](prestations_sociales/_soins.html#sec-prest-soins), dans « Les prestations sociales »
 - [L'étendue de la couverture et la dépense de soins](sante/_couverture.html#sec-sante-couverture), dans « La santé »
 
 ## Caisse nationale d'assurance maladie (CNAM)
 
 - [Trois caisses, un même statut](caisses/_statut_cadre.html#sec-caisses-statut), dans « Les caisses de sécurité sociale »
+- [La Caisse nationale d'assurance maladie (2004)](caisses/_histoire.html#sec-caisses-cnam), dans « Les caisses de sécurité sociale »
 - [Une comptabilité par régime](caisses/_comptes_regimes.html#sec-caisses-regimes), dans « Les caisses de sécurité sociale »
 - [Les accidents du travail et les maladies professionnelles](cotisations_sociales/_accidents_travail.html#sec-cot-at), dans « Les cotisations sociales »
+- [Parcours de lecture : les accidents du travail et les maladies professionnelles](parcours-atmp.html)
+- [L'assurance maladie](cotisations_sociales/_maladie.html#sec-cot-maladie), dans « Les cotisations sociales »
 - [Maladie, maternité, décès, accidents du travail, cessation d'activité pour raisons économiques](prestations_sociales/_autres_risques.html#sec-prest-autres-risques), dans « Les prestations sociales »
-- [Des protections distinctes à l'assurance maladie, 1951-2004](sante/_histoire.html#sec-soins-histoire), dans « La santé »
+- [La construction du droit aux soins, 1951-2004](prestations_sociales/_soins.html#sec-soins-histoire), dans « Les prestations sociales »
 - [Le droit aux soins : l'assurance maladie et l'assistance médicale](prestations_sociales/_soins.html#sec-prest-soins), dans « Les prestations sociales »
 - [L'étendue de la couverture et la dépense de soins](sante/_couverture.html#sec-sante-couverture), dans « La santé »
 - [L'hôpital public : soins, financement et personnels](sante/_hopital.html#sec-sante-hopital), dans « La santé »

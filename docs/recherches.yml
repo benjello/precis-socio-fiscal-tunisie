@@ -80,7 +80,6 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
-  - 'lire le JORT n° 58 de 2026 : inconnu de jort_cache, absent du corpus local, et pist.tn répond 404 dans les deux éditions (24 septembre 2026) ; le n° 59 commence p. 1129'
   - 'lire les numéros postérieurs au n° 93 de 2026 : jort_cache s''arrête au 18 septembre 2026, et le n° 94 répond 404 sur pist.tn (24 septembre 2026)'
 
 - id: r-dec74-499-modificatifs
@@ -137,7 +136,6 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
-  - 'lire le JORT n° 58 de 2026 : inconnu de jort_cache, absent du corpus local, et pist.tn répond 404 dans les deux éditions (24 septembre 2026) ; le n° 59 commence p. 1129'
   - 'lire les numéros postérieurs au n° 93 de 2026 : jort_cache s''arrête au 18 septembre 2026, et le n° 94 répond 404 sur pist.tn (24 septembre 2026)'
   - 'fascicules parcourus dans aucune édition depuis 2007 (passe du 24 septembre 2026) : 2011 n° 62, 73, 90-99 ; 2012 n° 12, 41, 43, 100 ; 2013 n° 47 ; 2015 n° 53 ; 2019 n° 23 ; 2020 n° 23-29, 31-33 ; 2021 n° 45-46 ; 2022 n° 92, 132 ; 2026 n° 58 — à télécharger ou à océriser ; et vérifier l''existence des numéros ni dans le corpus local ni dans jort_cache, dont l''existence n''est donc pas établie : 2019 n° 83 ; 2020 n° 4, 30, 39, 86, 96-98, 102, 125 ; 2023 n° 122'
 
@@ -168,7 +166,6 @@
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
   a_faire:
-  - lire le JORT n° 58 de 2026 (pp. 1073-1127)
   - lire les numéros postérieurs au n° 93 de 2026
   - 'le même projet porterait de 50 à 55 ans l''âge minimum du départ pour raisons économiques ou techniques : source primaire non ouverte (rsna-histoire-reformes.md, § 4.3)'
 
@@ -336,7 +333,6 @@
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
   a_faire:
-  - 'lire le JORT n° 58 de 2026 : inconnu de jort_cache, absent du corpus local, et pist.tn répond 404 dans les deux éditions (24 septembre 2026) ; le n° 59 commence p. 1129'
   - 'lire les numéros postérieurs au n° 93 de 2026 : jort_cache s''arrête au 18 septembre 2026, et le n° 94 répond 404 sur pist.tn (24 septembre 2026)'
   - 'le plein texte ne couvre pas 1981-1993 (fascicules sans couche texte dans les deux éditions) ni, pour l''essentiel, les éditions arabes de 1994 à 2013 (sans texte ou codage illisible) : pour ces années, seuls les intitulés de jort_cache et du miroir iort et les visas couvrent la fiche ; océriser ou décoder pour étendre (passe du 24 septembre 2026)'
   - 'les éditions françaises de 1999 à 2005 (couche texte décalée de 29 caractères) n''ont été parcourues que par un décodage hors outil (passe du 24 septembre 2026) : à intégrer à recherches.py pour que la relance les couvre'
@@ -392,9 +388,7 @@
     couverture: 'jort_cache (FTS et LIKE, intitulés arabes « 1166 لسنة 1995 », « غير الأجراء ») jusqu''au 10 avril 2026 ; texte des fascicules FR et AR du corpus local de 2024 au n° 56 de 2026, 2025 en partie seulement ; n° 57 à 93 de 2026 depuis pist.tn, sauf le n° 58. Seconde voie : visas des arrêtés conjoints du 10 juillet 2020, du 29 août 2025 et du 5 août 2026, qui citent le décret n° 2008-172 comme dernier modificatif. Note : docs/notes/cnss-autres-regimes.md, § 12.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire:
-  - lire le JORT n° 58 de 2026 (pist.tn)
-  - 'fascicules absents du corpus local : voir la fiche r-dl2024-4-art33'
+  a_faire: ['fascicules absents du corpus local : voir la fiche r-dl2024-4-art33']
 
 - id: r-rtte-decret-art23
   objet: décret de révision des pensions du régime des Tunisiens à l'étranger pris en application de l'article 23 du décret n° 89-107
@@ -410,9 +404,7 @@
     couverture: 'jort_cache jusqu''au 10 avril 2026 (seul modificatif : décret n° 91-604) ; texte des fascicules FR et AR du corpus local de 2024 au n° 56 de 2026, 2025 en partie seulement ; n° 57 à 93 de 2026 depuis pist.tn, sauf le n° 58. Seconde voie : visas de l''arrêté conjoint du 10 juillet 2020 (« tel que modifié et complété par le décret n° 91-604 »). Note : docs/notes/cnss-autres-regimes.md, § 7 et 12.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire:
-  - lire le JORT n° 58 de 2026 (pist.tn)
-  - 'fascicules absents du corpus local : voir la fiche r-dl2024-4-art33'
+  a_faire: ['fascicules absents du corpus local : voir la fiche r-dl2024-4-art33']
 
 - id: r-raci-minimum-200
   objet: texte relevant le montant minimal de 200 dinars par mois des pensions du régime des artistes, créateurs et intellectuels (loi n° 2002-104, art. 13 et 15 ; décret n° 2003-894, art. 17)
@@ -428,9 +420,7 @@
     couverture: 'jort_cache jusqu''au 10 avril 2026 (seul modificatif du régime : loi n° 2007-43) ; rien dans les fascicules 2024-2026 du corpus local (2025 en partie seulement) ni dans les n° 57 à 93 de 2026, sauf le n° 58. Seconde voie par les visas incomplète : la loi n° 2002-104 n''est pas visée par les arrêtés conjoints de 2020 et de 2026. Note : docs/notes/cnss-autres-regimes.md, § 8 et 12.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire:
-  - lire le JORT n° 58 de 2026 (pist.tn)
-  - trouver un texte récent qui vise la loi n° 2002-104 (seconde voie)
+  a_faire: [trouver un texte récent qui vise la loi n° 2002-104 (seconde voie)]
 
 - id: r-cnrps-partie-active-avant-1967
   objet: décret classant des emplois dans la partie active (loi n° 59-18, art. 10) antérieur au décret n° 67-282 ; pour les douanes, antérieur au décret n° 81-1600
@@ -652,8 +642,20 @@
     couverture: 'jort_cache, intitulés seuls, FR et AR : lois dont l''intitulé contient « 60-30 » ou « عدد 30 لسنة 1960 », signées depuis le 1er janvier 2007 : la seule loi n° 2007-51 du 23 juillet 2007 (art. 105 et 45, lue) ; intitulés depuis le 1er octobre 1996 sur les allocations familiales, la majoration pour salaire unique et les crèches : aucun texte de taux ni d''assiette après le décret n° 96-1906. Limites : une modification par une loi de finances ou par une loi dont l''intitulé ne nomme pas la loi n° 60-30 échappe à ces requêtes ; lois de finances de 2007 à 2026 non dépouillées. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 5.5.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Texte intégral des articles des lois de finances et des lois de finances rectificatives ou complémentaires de 2007 à 2026 (lois n° 2006-85 à n° 2025-17, y compris les décrets-lois de 2021 et 2022), cherché dans le corpus local (couche texte des fascicules et des recueils ; OCR de la fin des fascicules des lois de finances 2021 à 2023 et des lois rectificatives 2007, 2021 à 2023 à 200 dpi) : motifs « 60-30 », « 1960 », « régimes de sécurité sociale », « allocations familiales », « salaire unique », « crèche » et, pour la loi de finances 2026 (édition arabe seule), « المنح العائلية », « الأجر الوحيد », « تنظيم أنظمة الضمان الاجتماعي ». Aucun article ne cite la loi n° 60-30 ni ne touche les articles 52, 54 ou 61. Limites : les tableaux budgétaires en fin de fascicule ne sont pas lus ; les textes qui ne sont pas des lois de finances ne sont pas cherchés par ce motif ; une modification libellée sans nommer la loi ni ses intitulés échappe à la recherche.'
+    couvert_jusqu_au: 2025-12-31
+    resultat: aucun
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Fascicules du JORT de 2007 à 2026 du corpus local (couche texte, éditions française et arabe), motifs « 60-30 », « 14 décembre 1960 », « عدد 30 لسنة 1960 » : 351 occurrences dans 136 fascicules. Toutes sont des visas, des renvois (art. 107, remise de pénalités ; régime de l''auto-entrepreneur, 2020) ou la loi n° 2007-51 (art. 105 et 45). Aucune ne touche les articles 52, 54 ou 61. Limites : le motif arabe ne ressort que deux fascicules, la lecture des éditions arabes reste à faire ; une loi citée par la seule mention « loi de 1960 » échappe au motif.'
+    couvert_jusqu_au: 2026-10-28
+    resultat: aucun
   a_faire:
-  - prolonger le dépouillement des lois modifiant les articles 52, 54 et 61 de la loi n° 60-30 de 2007 à 2026 (D12)
+  - rejouer le motif arabe sur les éditions arabes de 2007 à 2026 après normalisation
   - 'requêtes de la passe d''origine non consignées : rejouer celle-ci et l''élargir'
 
 - id: r-lf2025-art17-decret
@@ -919,9 +921,13 @@
     couverture: 'Intitulés FR et AR. Loi n° 60-30 : lois signées depuis le 1er janvier 2007 seulement (un résultat, loi n° 2007-51, lue : art. 105 et 45). Loi n° 94-28 : depuis le 1er mars 1994 (loi n° 95-103, lue : art. 7 ; décret gouvernemental n° 2019-1130, non lu). Décret n° 93-308 : aucun résultat. Lacunes : modifications de la loi n° 60-30 antérieures à 2007 non rejouées ici (registre du chapitre) ; textes dont l''intitulé ne nomme pas le texte modifié ; lois de finances non dépouillées. Note : docs/notes/prestations-sociales-lectures-2026-10-10.md, § 1.3.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire:
-  - lire le décret gouvernemental n° 2019-1130 (JORT n° 99 de 2019, p. 4532-4533)
-  - rejouer la requête 60-30 depuis 1960 sur les décrets et arrêtés
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: Lecture à l'image des lois n° 80-36, 81-5, 82-71, 86-75 et 88-38 (JORT de 1980 à 1988). La loi n° 81-5 du 12 février 1981 (JORT n° 9, pp. 263-265) réécrit les art. 77, 82 à 87 quater et 93 ; les quatre autres ne touchent pas les art. 71 à 90. Les lois de finances et les décrets de 1961 à 1993 ne sont pas rejoués.
+    couvert_jusqu_au: 1988-12-31
+    resultat: aucun
+  a_faire: [rejouer la requête 60-30 depuis 1960 sur les décrets et arrêtés]
 
 - id: r-am-extension-loi2002-32
   objet: décret étendant la loi n° 2004-71 (assurance maladie) au régime de la loi n° 2002-32, en application de l'art. 2 du décret n° 2007-1366
@@ -1076,7 +1082,7 @@
     couverture: 'Objet relu au fascicule le 24 septembre 2026 : loi n° 2024-48, art. 15, 1), al. 2, JORT n° 149 du 10 décembre 2024, éd. ar. p. 6420 (« وتضبط طرق تسيير الصندوق وشروط تدخلاته بمقتضى أمر » : modalités de fonctionnement du fonds et conditions de ses interventions) ; l''édition française (pp. 3421-3422, lue sur la copie de PDFs-legislation-tunisie/PDFs/Lois_de_Finances/Loi_de_Finances_2025.pdf, absente du corpus JORT local) porte, p. 3421, « Les conditions et les modalités d''intervention du fonds sont fixées par décret. » Terme français « travailleuses agricoles » ajouté au plein texte et rejoué depuis le 10 décembre 2024 : aucune occurrence dans les éditions françaises (témoin positif hors période : JORT n° 129/2024, éd. fr.) ; en arabe, seules les pp. 6420-6421 du n° 149/2024 (art. 15 et 16). jort_cache jusqu''au 18 septembre 2026 : les deux notices des art. 15 et 16. Miroir iort : le seul décret-loi n° 2024-4. Fascicules lus : 2024 n° 149-159 (ar), 150-159 (fr) ; 2025 n° 1-156 (ar), 1-156 sauf 29, 47 et 77 (fr) ; 2026 n° 1-93 (ar) sauf 3 et 58, 1-93 (fr) sauf 11, 13 et 58. Lacunes : n° 58 de 2026 dans les deux éditions ; éditions françaises 2024 n° 149, 2025 n° 29, 47 et 77, 2026 n° 11 et 13 ; éd. arabe 2026 n° 3 (ces numéros, hors le n° 58, ont été lus dans l''autre édition par la passe précédente) ; fichiers « français » identiques à l''édition arabe, où le terme français ne pouvait donc pas se trouver : 2025 n° 4, 88, 90, 95, 96, 148 ; 2026 n° 10, 62, 76 ; rien après le n° 93 de 2026. Aucun décret d''application.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire: [lire le JORT n° 58 de 2026, lire les numéros postérieurs au n° 93 de 2026]
+  a_faire: [lire les numéros postérieurs au n° 93 de 2026]
 
 - id: r-atmp-echelle-modificatifs
   objet: texte modifiant, après le décret n° 99-1010, l'échelle des taux de cotisation au régime de réparation des accidents du travail et des maladies professionnelles (articles 1er et 2 nouveaux du décret n° 95-538)
@@ -1144,10 +1150,16 @@
     couverture: 'Intitulés jort_cache jusqu''au 2 octobre 2026 (FTS seule : modulation des cotisations, risques professionnels). Plein texte français 2004-2026, 2 415 fichiers, décalage de 29 décodé pour 116 : motifs de majoration, réduction, cotisation supplémentaire, bonus-malus — aucun texte sur la modulation AT/MP. Plein texte arabe exploitable de 2014 à 2026 seulement (2004-2013 quasi nul), termes du décret arabe de 1995 lus à l''image ; méthode contrôlée sur un texte témoin de 2017, les termes de modulation eux-mêmes sans témoin. Lus : décret n° 2005-321 en entier (rien sur prévention, tarification, modulation, recouvrement) ; loi n° 2004-71, art. 5, 8 à 10, 16 et 29, à l''image dans les deux éditions (aucune clause de substitution ; art. 29 : abrogation des seules dispositions contraires) ; loi n° 2017-47 ; décrets n° 96-1050 et 2009-2344 (substitution expresse de la CNAM à la CNSS pour les prêts et primes de prévention, pas pour le décret n° 95-538). Lacunes : mêmes numéros non lus que la passe du 5 octobre ; édition arabe 2004-2013 ; annexes des organigrammes de la CNAM (décrets n° 2008-3707 et 2018-747) ; décret n° 2002-583 non lu.'
     couvert_jusqu_au: 2026-09-30
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Lus à l''image dans les fascicules français : décret n° 2002-583 (JORT n° 24 de 2002, p. 645-646 : prime de 20 %, prêt de 70 % au plus du coût ; rien sur la modulation) ; décrets n° 2008-3707 (n° 99 de 2008) et n° 2018-747 (n° 73-74 de 2018), cinq et quatre articles, rien sur la prévention ni la modulation. Le schéma et l''annexe des deux organigrammes ne figurent ni dans l''édition française ni dans l''édition arabe des fascicules.'
+    couvert_jusqu_au: 2026-09-30
+    resultat: aucun
   a_faire:
   - lire à l'image ou océriser les 14 fascicules français de 1995-1998 sans couche texte
   - lire les contextes des occurrences de « 94-28 » (115 fascicules français) pour un texte qui modifierait la loi sans viser le décret
-  - lire à l'image les annexes des décrets n° 2008-3707 et 2018-747 (organigrammes de la CNAM)
+  - chercher le schéma et l'annexe des décrets n° 2008-3707 et 2018-747 (organigrammes de la CNAM) hors des fascicules du Journal officiel, où ils ne figurent pas
 
 - id: r-atmp-commission-modulation
   objet: texte instituant ou désignant une commission (nationale, ou placée auprès de la CNAM ou de la CNSS) appelée à connaître des décisions de majoration ou de réduction de la cotisation d'accidents du travail et de maladies professionnelles (loi n° 94-28, art. 90 ; décret n° 95-538, art. 10 à 27)
@@ -1234,6 +1246,12 @@
     couverture: 'Intitulés seulement (requêtes FTS sur 1976-2026, 1976-1990 ; LIKE sur 1970-2000). Candidats non lus : décret n° 75-775 (attributions du ministère des affaires sociales, JORT n° 72/1975, p. 2340), décret n° 86-454 (attributions du ministère de la protection sociale, n° 25/1986, p. 531), postérieur à la période. Aucun plein texte des fascicules 1976-1985.'
     couvert_jusqu_au: 1986-01-07
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: Lecture à l'image du décret n° 75-775 (JORT n° 72 du 4 novembre 1975, p. 2340 ; art. 4 et 7) et du décret n° 86-454 (JORT n° 25 des 15-18 avril 1986, p. 531 ; art. 3 et 6). Tous deux posent la tutelle du ministère en termes généraux ; aucun ne nomme la CNRPS.
+    couvert_jusqu_au: 1986-01-07
+    resultat: aucun
   a_faire:
   - plein texte (OCR) des fascicules 1976-1985 sur « retraite et de prévoyance » + « tutelle » ou « rattach »
 
@@ -1286,7 +1304,14 @@
     couverture: 'Intitulés seulement, 1960-2000. Une troisième requête, LIKE combiné (titre LIKE %placement% OU %disponibilites%) ET (titre LIKE %securite sociale% OU %caisse% OU %organismes%), 1960-2010, n''a rien ajouté. Candidats non lus : articles « bons d''équipement » des lois de finances n° 71-59 (art. 9), 72-87 (art. 13), 73-82 (art. 42), 74-101 (art. 40) ; loi n° 90-111 (LF 1991), art. 64, « conversion en bons d''équipement des montants versés au titre de la retraite anticipée volontaire » (JORT n° 86/1990, p. 2056) ; arrêtés annuels d''émission des tranches (1960-1973). LF 1992 non examinée.'
     couvert_jusqu_au: 1992-12-31
     resultat: aucun
-  a_faire: [lire les articles candidats ci-dessus (OCR) et la loi de finances pour 1992]
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Lois de finances pour 1972, 1973, 1974 et 1975 (art. 9, 13, 42 et 40) lues à l''image le 2 novembre 2026 : chacune autorise une tranche annuelle de bons d''équipement à dix ans (huitième à onzième), sans viser les caisses. Loi de finances pour 1971 : pas d''article sur les bons d''équipement à l''OCR. Rectificatifs au JORT et loi de finances pour 1992 non lus ; texte imposant le placement aux caisses non identifié.'
+    couvert_jusqu_au: 1975-12-31
+    resultat: aucun
+  a_faire:
+  - lire l'art. 64 de la loi n° 90-111 (LF 1991), la loi de finances pour 1992 et les arrêtés d'émission des tranches
 
 - id: r-norme-comptable-securite-sociale
   objet: norme comptable sectorielle (loi n° 96-112, art. 10) applicable aux organismes de sécurité sociale
@@ -1497,8 +1522,9 @@
   ou: [precis/fr/finances_locales/_transferts.qmd#sec-fl-fccl-reserve]
   requetes:
     titres_fts: ['"fonds commun"', reserve AND fonds AND commun]
-    titres_like: ['%fonds commun des collectivit%', '%المال المشترك%']
-    iort_ar: [المال المشترك]
+    titres_like: ['%fonds commun des collectivit%', '%المال المشترك%', '%المدخر%', '%reserve du fonds commun%']
+    iort_ar: [المال المشترك, المدخر]
+    plein_texte: [réserve du fonds commun, المال المشترك للجماعات المحلية]
     depuis: 2014-01-01
   passes:
   - date: 2026-10-04
@@ -1507,7 +1533,13 @@
     couverture: 'titres FR (FTS et LIKE) et AR (LIKE) de jort_cache jusqu''à la dernière publication indexée ; miroir iort (dec_, dec_gouv_, arr_, loi_). Dernier décret de répartition trouvé : n° 2013-1503. Lacunes : pas de plein texte dans les fascicules 2014-2017 ; « المدخر » non cherché dans les titres ; pist.tn non consulté. Note : docs/notes/finances-locales-transferts.md, § 5 et 12.'
     couvert_jusqu_au: 2026-09-18
     resultat: aucun
-  a_faire: [elargir avec le terme المدخر (titres_like), plein texte 2014-2017]
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local, visas]
+    couverture: 'Relance du 1er novembre 2026, textes publiés depuis le 1er janvier 2014. jort_cache jusqu''au 29 octobre 2026 : titres français (FTS « fonds commun », LIKE « réserve du fonds commun », « fonds commun des collectivités ») et arabes (LIKE « المال المشترك », « المدخر ») : aucun décret ni arrêté de répartition ; le dernier est le n° 2013-1503 (JORT n° 39 du 14 mai 2013). Miroir iort, texte arabe de 2014 à 2026 (décrets, décrets gouvernementaux, arrêtés) : « المال المشترك » ne figure que dans le décret gouvernemental n° 2016-367 (taux et délais des prêts de la caisse) et « المدخر » n''y figure que dans des lois (lois de finances et loi n° 2016-48), au sens d''épargne ou de provision. Plein texte des fascicules du corpus local (français et arabe, 2014 à 2026) : « réserve du fonds commun » sans occurrence ; « المال المشترك للجماعات المحلية » en sept occurrences, toutes dans des visas ou des articles de textes de la caisse de prêts (n° 79 de 2014, n° 58, 69 et 104 de 2015, n° 23 de 2016) ou dans la suppression du compte (n° 101 de 2017). Lacunes : fascicules absents ou sans texte exploitable listés par la relance ; pist.tn non consulté. Note : docs/notes/finances-locales-transferts.md, § 5 et 12.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire: [pist.tn non consulté, fascicules arabes sans texte exploitable à océriser]
 
 - id: r-fl-criteres-subventions-apres-2021
   objet: arrêté modifiant ou remplaçant, après celui du 29 juin 2021, l'arrêté conjoint du 22 juin 2018 fixant les critères de répartition des subventions annuelles du budget de l'État entre les collectivités locales (loi de finances pour 2018, art. 11, § 3 ; loi de finances pour 2021, art. 13, § 5)
@@ -1529,9 +1561,13 @@
     couverture: 'titres FR et AR de jort_cache (FTS et LIKE) jusqu''à la dernière publication indexée, 2 octobre 2026 : seuls les arrêtés de 2019 et 2021. Plein texte par un script de circonstance (pdftotext, texte arabe normalisé, motifs fixes ; non par recherches.py) sur les fascicules FR et AR du corpus local, 2021 à 2026 jusqu''au n° 97 du 2 octobre 2026, 1 578 fichiers : les deux termes de la fiche, plus deux conditions composées (« 22 juin 2018 » et « critères de répartition » dans le même fascicule ; leur équivalent arabe). Seul le n° 58 de 2021 répond, dans les deux langues : le détecteur retrouve le positif connu. Lacunes : fascicules sans couche texte dans aucune édition présente, non lus — 2022 n° 35, 91, 92 ; 2024 n° 120, 125 ; 2025 n° 67, 70. Numéros absents du corpus, existence non vérifiée sur pist.tn — 2022 n° 132 ; 2023 n° 122 ; 2026 n° 58. Quatorze fichiers « fr » sont en fait l''édition arabe : pour eux seule l''édition arabe vaut. pist.tn non sondé. Une première tentative de balayage, au motif mal formé, n''a rien testé et n''est pas comptée. Note : docs/notes/finances-locales-transferts-budgets-lectures-2026-10-09.md, Q7.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire:
-  - océriser 2022 n° 35 91 92 puis 2024 n° 120 125 puis 2025 n° 67 70
-  - relancer --sonder-pist pour 2022 n° 132 et 2023 n° 122 et 2026 n° 58
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache jusqu''au 29 octobre 2026, dernière notice indexée : aucun candidat depuis le 2 octobre 2026 aux requêtes de la fiche (FTS, LIKE, arabe), rejouées par recherches.py relancer, et seuls les arrêtés de 2019 et 2021 depuis 2018. Plein texte, par le même script de circonstance, sur les fascicules de 2026 n° 98 à 105 en FR et AR et n° 106 en FR (30 octobre 2026 ; n° 106 AR absent du corpus) : aucune réponse à « subventions annuelles », « critères de répartition », « الدعم المالي السنوي », « مقاييس توزيع » ni « الدعم السنوي ». Lacunes de la passe du 9 octobre closes : 2022 n° 35 et 91, 2024 n° 120 et 125, 2025 n° 67 et 70 sont des numéros de deux pages lus sur leur couche texte, 2022 n° 92 est lu en FR (couche texte) et en AR (océrisation de 50 pages), sans réponse. Le rapport du ministère des Finances sur les fonds spéciaux joint au projet de loi de finances pour 2022 (tunisia-data, p. 74) donne l''arrêté du 22 juin 2018 modifié le 29 mars 2019 comme toujours appliqué. Lacunes : numéros absents du corpus (2022 n° 132, 2023 n° 122, 2026 n° 58, 2026 n° 106 AR), existence non vérifiée sur pist.tn.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire: [relancer --sonder-pist pour 2022 n° 132 et 2023 n° 122 et 2026 n° 58 et 2026 n° 106 AR]
 
 - id: r-fl-decret-fonds-appui-decentralisation
   objet: décret gouvernemental fixant les conditions d'application de la répartition des crédits du fonds d'appui à la décentralisation, de péréquation, de régularisation et de solidarité entre les collectivités locales (loi de finances pour 2021, art. 13, § 4 ; code des collectivités locales, art. 150)
@@ -1548,9 +1584,27 @@
     couverture: 'titres FR et AR de jort_cache jusqu''au 2 octobre 2026 : seule la notice de l''article 13 de la loi n° 2020-46 répond. Plein texte par le même script de circonstance sur les fascicules FR et AR de 2020 à 2026, jusqu''au n° 97 du 2 octobre 2026 : répondent le n° 128 de 2020 (la loi de finances pour 2021, FR et AR — positif connu retrouvé), le n° 9 de 2020 (décret gouvernemental n° 2020-52, nomenclature budgétaire des communes, qui nomme le fonds) et le n° 96 de 2026 (décret-loi n° 2026-4, art. 134, qui maintient et renomme le fonds et renvoie ses critères à un arrêté conjoint). Aucun décret d''application. Lacunes : les mêmes fascicules sans couche texte et numéros absents que la fiche r-fl-criteres-subventions-apres-2021 ; les tableaux des lois de finances de 2022 à 2026 ne répondent pas au nom du fonds, ce qui laisse penser qu''ils sont en image — non vérifié.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache jusqu''au 29 octobre 2026, dernière notice indexée : aucun candidat depuis le 2 octobre 2026 aux requêtes de la fiche (FTS, LIKE, arabe), rejouées par recherches.py relancer, et aucun décret d''application depuis le 25 décembre 2020. Plein texte, par le même script de circonstance (pdftotext, texte arabe normalisé, motifs fixes), sur les fascicules de 2026 n° 98 à 105 en FR et AR et n° 106 en FR (30 octobre 2026 ; n° 106 AR absent du corpus) : aucune réponse à « appui à la décentralisation », « دعم اللامركزية », « الدعم المالي السنوي », « subventions annuelles », « critères de répartition », « مقاييس توزيع » ni « الدعم السنوي ». Lacunes de la passe du 9 octobre closes : 2022 n° 35 et 91, 2024 n° 120 et 125, 2025 n° 67 et 70 sont des numéros de deux pages (une décision, un décret, des cessations de fonctions), lus sur leur couche texte sans réponse ; 2022 n° 92 (numéro spécial du 18 août 2022) : édition française de 20 pages lue sur sa couche texte, édition arabe de 50 pages océrisée en entier (tesseract ara, 150 dpi), sans réponse. Les tableaux « B » (comptes spéciaux du Trésor) des lois de finances pour 2022 à 2026 sont lus à l''image : aucune ligne pour le fonds. Le rapport du ministère des Finances sur les fonds spéciaux joint au projet de loi de finances pour 2022 (tunisia-data, 128 pages sans couche texte, océrisé en arabe, chiffres lus à l''image) donne le décret comme à prendre. Lacunes : numéros absents du corpus (2022 n° 132, 2023 n° 122, 2026 n° 58, 2026 n° 106 AR), existence non vérifiée sur pist.tn.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'plein texte (pdftotext, NFKC) des éditions française et arabe des fascicules de 2022 n° 132, de 2023 n° 122 (23 octobre 2023) et de 2026 n° 58 (8 juin 2026), présents au corpus local malgré la mention d''absence des passes précédentes, aux motifs « appui à la décentralisation », « péréquation », صندوق دعم اللامركزية et التعديل والتسوية : seul le n° 122 de 2023 répond, deux fois, pour la cessation de fonctions du directeur général du centre de formation et d''appui à la décentralisation (décrets n° 2023-668 et 2023-669), sans rapport avec le fonds. Le n° 106 de 2026 en arabe reste absent du corpus.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [jort_cache, pist, web]
+    couverture: 'Relance du 2 novembre 2026 : jort_cache toujours arrêté au 29 octobre 2026, aucun candidat aux requêtes de la fiche. Sondage de pist.tn pour 2026 (numéros 1 à 110 inconnus de jort_cache) : aucun fascicule nouveau ne concerne le fonds. Recherche sur le web, en français et en arabe, des rapports sur les fonds spéciaux du Trésor joints aux projets de loi de finances pour 2023 à 2026 : aucun rapport trouvé ; le site du ministère des Finances (finances.gov.tn) répond 404 à la page des lois de finances. Aucun texte de ces rapports n''est donc lu pour 2023-2026. Les tableaux B des lois de finances pour 2022 à 2026 sont déjà lus à l''image (aucune ligne pour le fonds).'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
   a_faire:
-  - océriser les fascicules sans couche texte
-  - lire les tableaux des comptes et fonds spéciaux des lois de finances de 2021 à 2026 à l'image pour le montant du fonds
+  - chercher les rapports sur les fonds spéciaux joints aux projets de loi de finances pour 2023 à 2026 (montant du fonds d'appui)
+  - relancer --sonder-pist pour 2026 n° 106 AR
 
 - id: r-fl-loi-competences-partagees
   objet: loi fixant les conditions et procédures d'exercice des compétences partagées (code des collectivités locales, art. 13, al. 2) ou loi de transfert de compétences (art. 16)
@@ -2357,6 +2411,12 @@
     couverture: 'intitulés de jort_cache, textes publiés après le 9 juin 2023, jusqu''au n° 97 du 2 octobre 2026 ; plein texte des fascicules du corpus local de 2023 à 2026 (522 fichiers français, 555 arabes, jusqu''au n° 97 de 2026), plus le n° 98 du 6 octobre 2026 pris sur pist.tn. Plein texte en deux passes : la première, ligne par ligne (« 2019-542 », « 542 *لسنة *2019 », « عدد *542 »), écartée — elle manquait les numéros coupés en fin de ligne et, en arabe, les marques bidirectionnelles ; la seconde, qui fait foi, sur le texte remis sur une ligne, par expressions régulières : « 2019 ?[-‐–]? ?542 » (fichiers français), « 542 *لسنة *2019 » ou « برامج *الصندوق *الوطني *للتشغيل » (fichiers arabes, marques bidirectionnelles retirées). Aucun modificatif. Candidats lus et écartés : lois de finances pour 2024, 2025 et 2026 (lignes de crédit ; art. 14 de la loi de finances pour 2026, qui modifie la loi de finances pour 2000 et non le décret) ; décret n° 2024-182 et arrêté conjoint du 16 août 2024 (simples visas). Lacunes : fascicules inconnus de la base (parcourus en plein texte seulement) ; faux fascicules français (parcourus par leur jumeau arabe) ; pages sans couche texte ; citation arabe coupée par un saut de ligne ; un texte qui remplacerait le décret sans le citer et sans nommer le Fonds dans son intitulé. Note : docs/notes/marche-travail-politiques-emploi-objets-des-reformes.md, § 6 et § 11.1.'
     couvert_jusqu_au: 2026-10-06
     resultat: aucun
+  - date: 2026-11-01
+    role: archiviste
+    sources: [corpus_local]
+    couverture: 'Passe du 1er novembre 2026. Le décret 2024-182 et l''arrêté du 16 août 2024 sont déjà au chapitre (ligne r-mt-pe-rg-2024, dates d''effet corrigées par la PR #669) ; leurs visas ne citent que le décret n° 2023-461. Plein texte du JORT n° 58 de 2026 (8 juin 2026, éditions française et arabe, maintenant au corpus local) avec les motifs « 2019 ?-? ?542 », « 542 لسنة 2019 », « Fonds national de l''emploi », « الصندوق الوطني للتشغيل » et « 2023-461 » : aucune occurrence. Le n° 58 ne contient que les états financiers 2025 de la Banque centrale de Tunisie et le rapport des commissaires aux comptes. Les numéros postérieurs au n° 98 de 2026 ne sont pas relus ici.'
+    couvert_jusqu_au: 2026-10-06
+    resultat: aucun
 
 - id: r-btp-avenant-16-grilles
   objet: texte et grilles de l'avenant n° 16 à la convention collective sectorielle du bâtiment et des travaux publics (arrêté du 25 novembre 2022)
@@ -2467,6 +2527,12 @@
     sources: [jort_cache, corpus_local, web]
     couverture: 'titres de jort_cache jusqu''au n° 97 du 2 octobre 2026 ; plein texte des 581 fascicules arabes du corpus du n° 116/2022 au n° 97/2026 (2022 : 26 ; 2023 : 146 ; 2024 : 158 ; 2025 : 156 ; 2026 : 95) — la requête retrouve bien l''avenant n° 15 au n° 116/2022, seul résultat ; fascicules arabes absents du corpus, donc non parcourus : n° 130 et 132 de 2022, n° 45, 122 et 146 de 2023, n° 9 de 2024, n° 3 et 58 de 2026 (2025 complet jusqu''au n° 156 ; derniers numéros présents : 143, 149, 159, 156, 97) ; cinq fascicules à couche texte très courte non contrôlés à l''image (Ja0842024, Ja1252024, Ja0372025, Ja0672025, Ja0702025) ; grilles et pages numérisées sans couche texte hors d''atteinte de la requête ; page du tiers paie-tunisie.com (8 octobre 2026) : dernier document proposé = avenant n° 15'
     couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'titres de jort_cache jusqu''au n° 107 du 29 octobre 2026 ; plein texte des fascicules français n° 98 à 106 et arabes n° 98 à 105 de 2026, depuis le 3 octobre : aucune occurrence ; fascicules au-delà du 29 octobre hors de portée (liste non connue localement)'
+    couvert_jusqu_au: 2026-10-29
     resultat: aucun
 
 - id: r-ccl-2018-decrets-art391
@@ -2600,8 +2666,12 @@
     couverture: 'Plein texte du corpus local, 4 585 fascicules français et arabes de 2006 à 2026 (pdftotext ; marques bidirectionnelles retirées), « 89-9 du 1er février 1989 » et « عدد 9 لسنة 1989 » : 350 fascicules français et 144 arabes citent la loi ; leurs visas ne nomment aucun texte postérieur à la loi n° 2006-36 (une coquille « loi n° 2011-33 du 29 mars 2001 », JORT n° 78 de 2012, pour la loi n° 2001-33). Visa explicite du décret n° 2024-184 (JORT n° 47 de 2024, p. 1188) : « dont le dernier en date la loi n° 2006-36 du 12 juin 2006 ». Fascicules absents du corpus : 404 sur pist.tn dans les deux éditions, sauf 2020 n° 86, 96, 97, 98, 102, 125 et 2023 n° 122 (arabe), téléchargés et parcourus sans résultat. Non lus : 36 fichiers sans couche texte, dont les deux éditions des n° 35 et 91 de 2022 et 67 et 70 de 2025 ; textes qui modifieraient la loi sans la viser par son numéro.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire:
-  - lire à l'image ou océriser les fascicules sans couche texte (2022 n° 35 et 91, 2025 n° 67 et 70, deux éditions)
+  - date: 2026-10-31
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Les huit fichiers (éditions française et arabe) des JORT n° 35 et 91 de 2022 et n° 67 et 70 de 2025 ont une couche de texte ; ils ne sont pas des scans. Chacun compte deux pages : n° 35 de 2022, dissolution de l''Assemblée des représentants du peuple ; n° 91 de 2022, décret présidentiel promulguant la Constitution (le texte de la Constitution n''est pas dans le fichier) ; n° 67 et 70 de 2025, cessations de fonctions. Aucune mention de la loi n° 89-9, d''entreprise publique, de participation ou de leur équivalent arabe.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
 
 - id: r-epna-liste-modificatifs-apres-2007
   objet: décret modifiant ou remplaçant, après le décret n° 2007-2560 du 23 octobre 2007, la liste des établissements publics à caractère non administratif considérés comme entreprises publiques (décret n° 2004-2265 du 27 septembre 2004)
@@ -2636,9 +2706,15 @@
     couverture: 'Plein texte du corpus local, 4 585 fascicules de 2006 à 2026 (français et arabes, marques bidirectionnelles retirées) : formules françaises « caractère d''entreprise publique », « parmi les entreprises publiques », « comme (une) entreprise(s) publique(s) » ; arabes « صبغة المنشأة العمومية », « تعتبر / يعتبر / تكتسي / تصنف … منشأة عمومية ». Visas du décret n° 2004-2265 : modificatifs nommés n° 2006-2579, 2007-1865, 2007-2560, aucun après. Classements par texte de création : n° 2019-758, 2023-452, 2024-5, 2024-184, 2024-500, déjà connus. Une sortie signalée par le rapport de la Cour des comptes (JORT n° 93 du 18 novembre 2008, p. 3603) : Agence tunisienne d''Internet. Fascicules absents du corpus : voir la passe de r-loi89-9-modificatifs-apres-2006 du même jour (404 sur pist.tn, sept fascicules téléchargés et parcourus sans résultat). Non lus : fascicules arabes de 2008 à 2013, 36 fichiers sans couche texte.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
+  - date: 2026-10-31
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Les huit fichiers (éditions française et arabe) des JORT n° 35 et 91 de 2022 et n° 67 et 70 de 2025 ont une couche de texte ; ils ne sont pas des scans. Chacun compte deux pages : n° 35 de 2022, dissolution de l''Assemblée des représentants du peuple ; n° 91 de 2022, décret présidentiel promulguant la Constitution (le texte de la Constitution n''est pas dans le fichier) ; n° 67 et 70 de 2025, cessations de fonctions. Aucune mention de la loi n° 89-9, d''entreprise publique, de participation ou de leur équivalent arabe.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
   a_faire:
   - 'chercher les sorties : décrets de dissolution, de fusion ou de transformation d''un établissement de la liste après 2007 ; piste : l''Agence tunisienne d''Internet, qui « n''est plus considérée comme entreprise publique » d''après le rapport de la Cour des comptes (JORT n° 93 du 18 novembre 2008, p. 3603)'
-  - lire à l'image ou océriser les fascicules sans couche texte (2022 n° 35 et 91, 2025 n° 67 et 70, deux éditions) et les fascicules arabes de 2008 à 2013
+  - lire à l'image ou océriser les fascicules arabes de 2008 à 2013
 
 - id: r-cdf-rapports-apres-2009
   objet: rapports annuels de la Cour de discipline financière postérieurs au vingt et unième (activité 2009, JORT n° 56 du 13 juillet 2010), jusqu'à la reprise de ses attributions par la Cour des comptes au 1er janvier 2020
@@ -2655,8 +2731,14 @@
     couverture: 'jort_cache jusqu''au 2 octobre 2026, titres (LIKE et FTS) : vingt et un rapports de 1990 à 2010, aucun après (les 5e, 7e et 9e ne sont pas indexés sous ce titre et ont été retrouvés en plein texte : JORT n° 100 de 1994, n° 13 de 1997, n° 29 de 1999). Plein texte français 2010-2019 (« discipline financi », ordinaux « vingt-deuxième », « 22ème », « vingt-troisième ») : seulement des nominations, des renvois à la loi n° 85-74 et une mention d''affaires en cours (2019, n° 39). Édition arabe 2017-2019 (« دائرة الزجر المالي ») : nominations seulement ; elle couvre les numéros manquants en français en 2018 et 2019, sauf le n° 83 de 2019 (404 sur pist.tn). Lacunes : édition arabe 2010-2016 sans couche texte suffisante ; 2015 n° 36 français illisible.'
     couvert_jusqu_au: 2019-12-31
     resultat: aucun
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Édition arabe, 2 novembre 2026. 2010-2013 (fascicules sans couche texte : 2010, 2012, une partie de 2011 et de 2013) : OCR tesseract ara, 150 dpi, des pages 1 à 3 de chaque fascicule, c''est-à-dire du sommaire (105 fascicules de 2010, 90 de 2011, 103 de 2012, 87 de 2013) ; le sommaire du n° 56 de 2010 donne bien le vingt et unième rapport (activité 2009), preuve que la méthode le repère ; dans les autres, seulement des nominations de membres, de présidents et de délégués du gouvernement près la Cour (2010 n° 75 et 83, 2013 n° 79). 2011 et 2013, fascicules avec couche texte, et 2014-2016 : couche texte normalisée (NFKC, marques d''orientation et caractères d''usage privé retirés) du fascicule entier, motif « الزجر المالي » : nominations (2011 n° 75, 2014 n° 67, 2015 n° 69), attributions d''autres organes (2011 n° 77 et 88) et visas de la loi n° 85-74 (2014 n° 22, 2016 n° 51), jamais un rapport ; le fascicule arabe de 2015 n° 36 (français illisible) est parcouru de même. Les couches texte arabes de 2014 à 2016 sont exploitables une fois normalisées : le constat de la passe du 27 octobre 2026 (« sans couche texte suffisante ») ne vaut que pour 2010, 2012 et une partie de 2011 et de 2013.'
+    couvert_jusqu_au: 2016-12-31
+    resultat: aucun
   a_faire:
-  - océriser l'édition arabe 2010-2016 ou parcourir les sommaires français de ces années pour confirmer l'absence
+  - lire le JORT n° 83 de 2019 en arabe (404 sur pist.tn) ; fascicules de 2011 et de 2013 avec couche texte lus par plein texte seulement
 
 - id: r-ep-privatisation-ecarts-recueil
   objet: pièce de la Direction générale de la privatisation qui donne le total des opérations du tourisme et de l'artisanat (225 050,85 mD au recueil des opérations depuis 1998, 3 000 mD de plus que ses lignes) et le mode retenu au bilan global pour les entreprises mêlant concession et vente d'actifs (ONP, SOCOMENA)
@@ -2691,8 +2773,13 @@
     couverture: 'jort_cache jusqu''au 10 avril 2026, titres seuls (LIKE français et arabe, FTS) : rien après le n° 2010-3170 ; seconde voie : le décret gouvernemental n° 2019-758 vise le n° 2005-910 « et notamment le décret n° 3170 de 2010 » (JORT n° 68 du 23 août 2019, p. 2690, lu à l''image). Plein texte non joué.'
     couvert_jusqu_au: 2026-04-10
     resultat: aucun
-  a_faire:
-  - rejouer « 2005-910 » et « 910 لسنة 2005 » en plein texte depuis 2011 et lire la forme la plus récente du visa
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local, visas]
+    couverture: 'Plein texte des fascicules français (1 897 fichiers) du corpus local, de 2011 au n° 105 de 2026 (pdftotext, motifs « 2005-910 » et « 2010-3170 ») : les visas qui citent le décret n° 2005-910 le font « tel que modifié et complété notamment par le décret n° 2010-3170 » jusqu''en 2024, puis « ensemble les textes qui l''ont modifié et complété » en 2025 et 2026 ; aucun visa ne cite un autre décret modificatif (les numéros 2016-294, 2016-365, 2011-161 et 2019-758 qui suivent ces visas appartiennent à des visas voisins sur les attributions des ministères et sur un office, non à la désignation de l''autorité de tutelle). Édition arabe non jouée ; fascicules sans couche texte exploitable non lus.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire: [jouer « 910 لسنة 2005 » en plein texte sur l'édition arabe depuis 2011]
 
 - id: r-onpft-classement-entreprise-publique
   objet: texte créant l'Office national des postes frontaliers terrestres et le classant, ou non, parmi les entreprises publiques
@@ -2923,7 +3010,7 @@
 
 - id: r-sante-prevoyance-1951-texte
   objet: texte du décret du 12 avril 1951 instituant un régime de prévoyance en faveur des personnels de l'État et des collectivités publiques, et de ses arrêtés d'application (17 juillet 1951, 23 juillet 1952, 10 octobre 1952) ; existence d'un régime de prévoyance antérieur, de 1948
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire]
   requetes:
     titres_like: ['%prevoyance%']
     depuis: 1956-01-01
@@ -2954,7 +3041,7 @@
 
 - id: r-sante-prevoyance-egt-1951
   objet: texte du décret du 13 décembre 1951 instituant un régime de prévoyance sociale en faveur des agents des services publics de l'électricité, du gaz et des transports (risques couverts, frais de soins) ; texte du décret du 26 août 1948 sur leurs retraites
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-1951]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire-1951]
   requetes:
     titres_like: ['%electricite%gaz%transport%']
     depuis: 1956-01-01
@@ -2973,7 +3060,7 @@
 
 - id: r-sante-admission-1939
   objet: décret du 23 décembre 1939 fixant les conditions d'admission des malades dans les établissements hospitaliers publics (preuve de l'indigence avant la carte de soins de 1958)
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire]
   requetes:
     titres_like: ['%indigen%', '%gratuit%des soins%', '%soins gratuits%', '%admission dans les etablissements hospitaliers%']
     iort_ar: [شهادة الفقر]
@@ -2994,7 +3081,7 @@
 
 - id: r-sante-am-preparation-1996-2004
   objet: textes et décisions de préparation de l'assurance maladie entre 1996 et 2004, dont la décision du conseil des ministres du 16 février 1996 et la place de l'assurance maladie dans le IXe Plan (1997-2001)
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-1987]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire-1987]
   requetes:
     titres_like: ['%assurance maladie%', '%assurance-maladie%', '%prestations de soins%', '%couverture sociale%']
     iort_ar: [التأمين على المرض, تأمين على المرض, اللجنة الوطنية للتأمين على المرض]
@@ -3063,7 +3150,7 @@
 - id: r-cnrps-cotisation-retraites-1973-2007
   objet: texte fixant la cotisation des retraités et des veuves de la CNRPS au régime obligatoire de prévoyance (les rapports de la Banque mondiale de 1993 et 2006 donnent 1 % de la pension), entre la loi n° 72-2 (art. 7, al. 2) et le décret n° 2007-1406 ; le décret n° 73-91 ne fixe que 2 % dans son article sur le facultatif (art. 15, al. 5)
   ou:
-  - precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses
+  - precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire-caisses
   - precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-pensionnes
   requetes:
     titres_fts: ['"73-91"', '"88-186"', '"regime de prevoyance sociale"', '"prestations de prevoyance"']
@@ -3087,7 +3174,7 @@
 
 - id: r-cnss-polycliniques-fondation
   objet: texte créant les polycliniques de la CNSS ou en autorisant la création (avant 1993, six polycliniques « expanded during the 1980s » selon la Banque mondiale), et texte fixant leurs tarifs ou tickets modérateurs avant 2007
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire-caisses]
   requetes:
     titres_fts: [polyclinique, polycliniques, '"action sanitaire"', '"caisse nationale de securite sociale"']
     titres_like: ['%polycli%']
@@ -3109,7 +3196,7 @@
 
 - id: r-caisses-soins-lourds-etranger
   objet: textes (conventions, décisions, circulaires) organisant avant 2007 la prise en charge par la CNSS et la CNRPS des soins lourds chez des prestataires conventionnés et des soins à l'étranger, et texte fondant des prestations supplémentaires de la CNRPS
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire-caisses]
   requetes:
     titres_fts: ['"soins etranger"', '"prise en charge"', '"prestations complementaires"']
     titres_like: ['%prestations supplementaires%', '%soins%etranger%', '%a l''etranger%soins%']
@@ -4213,7 +4300,15 @@
     couverture: 'plein texte (commande relancer --depuis 1988-07-08) des fascicules du corpus local lisibles, français et arabes, de 1997 à 2026 pour la chaîne « 85-614 » : 0 occurrence. Non lus : fascicules de 1988 à 1996 (images sans couche texte, français et arabes), fascicules arabes de 1997 et 1999 en partie, fascicules absents du corpus local listés par la commande.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire: [océriser les fascicules de 1988 à 1996 pour « 85-614 »]
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'OCR à 200 dpi (tesseract fra, psm 4) des pages imprimées de 108 groupes de pages du corpus local français, du 8 juillet 1988 à 1996, dont la notice de jort_cache porte « magistrat », « judiciaire », « cassation », « procureur » ou « conseil supérieur » dans le titre (lois organiques n° 88-73 et n° 91-9, décrets sur les fonctions exercées par les magistrats, l''indemnité de magistrature, l''institut supérieur de la magistrature, arrêtés du ministre de la Justice) ; recherche des chaînes « 85-614 » (avec ou sans espaces ni tiret typographique) et « limite d''âge ». Aucune notice de jort_cache de 1988 à 1997 ne porte « limite d''âge » ou « mise à la retraite » avec « magistrat » ou « judiciaire » dans son titre. Non lu : les autres pages des fascicules de 1988 à 1996, les fascicules arabes.'
+    couvert_jusqu_au: 1996-12-31
+    resultat: aucun
+  a_faire:
+  - océriser les pages des fascicules de 1988 à 1996 dont le titre ne dit pas la magistrature (décrets de portée générale sur la limite d'âge ou le maintien en activité)
+  - éditions française et arabe
 
 - id: r-banque-donnees-2014-1526-suite
   objet: texte prolongeant à nouveau, modifiant ou abrogeant le décret n° 2014-1526 (unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité) après le décret gouvernemental n° 2018-626, dont la prolongation d'un an court jusque vers mai 2019
@@ -4229,6 +4324,12 @@
     sources: [jort_cache]
     couverture: 'jort_cache, notices publiées de 2014 au 2 octobre 2026 ; LIKE sur titre et objet (« %1526%2014% »), LIKE sur titre (« %banque de donnees sur les familles% »), LIKE sur titre, deux conditions jointes par AND (« %unite de gestion par objectifs% » et « %affaires sociales% »), FTS « "banque de donnees" AND necessiteuses », LIKE arabe sur les titres de l''index (« %بنك معطيات% », « %العائلات المعوزة ومحدودة الدخل% », « %وحدة تصرف حسب الأهداف%الشؤون الاجتماعية% »), 2018-2026 pour ce dernier. Résultats : décrets n° 2014-1526 et 2018-626, décret n° 2018-400 (autre unité), art. 96 de la loi n° 2025-17 (fonds des orphelins). Miroir iort non interrogé ; plein texte des fascicules non parcouru ; fascicules inconnus de la base non sondés. Note : docs/notes/prestations-2018-626-lf2025-art26.md, § 1.4.'
     couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Texte intégral des fascicules français du Journal officiel de 2018, 2019 et 2020 du corpus local (couche texte) : motifs « 2014-1526 », « banque de données sur les familles » et « unité de gestion par objectifs au ministère des affaires sociales ». Seul le décret gouvernemental n° 2018-626 (JORT n° 63 de 2018) porte les deux premiers motifs ; le troisième ne renvoie qu''au décret gouvernemental n° 2018-400 (projet de réforme de la gestion du budget), sans rapport. Aucun texte postérieur ne prolonge, modifie ou abroge le décret n° 2014-1526. Limites : fascicules dont la couche texte est incomplète non rejoués à l''image ; les années 2021 à 2026 ne sont couvertes que par les intitulés (passe du 23 octobre 2026) ; éditions arabes non lues.'
+    couvert_jusqu_au: 2020-12-31
     resultat: aucun
   a_faire: [rejouer les termes arabes sur le miroir iort ; parcourir le plein texte 2018-2020]
 
@@ -4247,7 +4348,13 @@
     couverture: 'jort_cache, notices de 2025 et 2026 publiées jusqu''au 2 octobre 2026 : FTS « glycemie », « diabetiques », « autistique », « autisme » sans résultat ; LIKE arabe sur les titres de l''index (« %التوحد% », « %السكري% », « %نسبة السكر% ») : seuls les articles 36, 71 et 81 de la loi n° 2025-17. Plein texte du corpus local 2026 jusqu''au n° 97 (2 octobre 2026) : 94 fascicules français (« glyc[ée]mie », « autisti », « spectre de l.autisme » ; manquent les n° 11, 13 et 58) et 95 arabes après NFKC (« طيف التوحد », « مرض السكري », « نسبة السكر » ; manquent les n° 3 et 58). Seul résultat hors de la loi : décret n° 2026-192 du 27 juillet 2026 (JORT n° 76, AR p. 1600), programme d''intégration des enfants autistes en jardin d''enfants, qui n''applique pas l''art. 81. Miroir iort non interrogé. Note : docs/notes/prestations-2018-626-lf2025-art26.md, § 6.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire: [rejouer les termes arabes sur le miroir iort ; lire les fascicules postérieurs au n° 97]
+  - date: 2026-10-31
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'plein texte des 105 fascicules arabes de 2026 du corpus local (n° 1 à 105, jusqu''au 28 octobre 2026), après NFKC, termes « طيف التوحد », « قيس السكري », « مرض السكري », « نسبة السكر » : seul le fascicule n° 76 (27 et 28 juillet 2026) correspond, pour le décret n° 2026-192 sur l''intégration des enfants autistes dans les jardins d''enfants, qui ne vise pas la loi de finances pour 2026 ; édition française du n° 76 absente (le fichier du répertoire fr contient l''arabe)'
+    couvert_jusqu_au: 2026-10-28
+    resultat: aucun
+  a_faire: [rejouer les termes arabes sur le miroir iort ; lire les fascicules postérieurs au n° 105]
 
 - id: r-dl2024-4-cotisations
   objet: décret fixant les modalités, conditions et procédures d'affiliation aux régimes du décret-loi n° 2024-4 (art. 19 et 22, CNSS) et la base de calcul et le paiement des cotisations de risques professionnels (art. 41, CNAM), ou tout texte fixant le taux ou l'assiette de leurs cotisations
@@ -4273,7 +4380,7 @@
     couverture: 'Passe du 31 octobre 2026. jort_cache, dernière publication indexée le 29 octobre 2026 (JORT n° 105) : LIKE sur titres et objets (travailleuses agricoles, الفلاحيات, affiliation, risques professionnels, المخاطر المهنية) depuis le 2 octobre 2026, 0 candidat. Plein texte (pdftotext, NFKC pour l''arabe) du JORT n° 58 de 2026 (8 juin 2026, éditions française et arabe, maintenant au corpus local), des n° 94 à 105 en arabe et des n° 94 à 106 en français, avec les motifs « العاملات الفلاحيات », « عاملات الفلاحيات », « travailleuses agricoles », « femmes rurales », « 2024-4 », « 4 لسنة 2024 » : aucune occurrence. Le n° 58 ne contient que les états financiers 2025 de la Banque centrale de Tunisie. Lacunes : n° 106 en arabe absent du corpus local et de jort_cache ; décrets d''application des art. 19, 22, 33 et 41 non publiés à cette date.'
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
-  a_faire: [lire le JORT n° 58 de 2026, relancer après mise à jour de jort_cache au-delà du 2 octobre 2026]
+  a_faire: [relancer après mise à jour de jort_cache au-delà du 2 octobre 2026]
 
 - id: r-decret-2015-2217-application
   objet: textes d'application, modificatifs ou dérogations du décret gouvernemental n° 2015-2217 du 11 décembre 2015 (rémunération des chefs d'entreprises publiques) — en particulier le décret gouvernemental fixant la liste des entreprises classées en catégorie exceptionnelle (art. 2, dernier alinéa), les arrêtés de classement et l'arrêté sur la commission de classement
@@ -4381,8 +4488,14 @@
     couverture: 'Rapport annuel de la direction générale des impôts sur 2014 (portail ancien du ministère, 40 pages, arabe) : 16 pages sur 40 parcourues à l''image (plan d''action, contrôle fiscal, contentieux, formation, moyens) : rapport d''activité administrative, aucune série de crédit ou de restitution de TVA. Rapport sur 2013 non parcouru à l''image. Lacunes : 24 pages du rapport de 2014 et tout le rapport de 2013 non vues ; rapports postérieurs à 2014 absents du corpus local.'
     couvert_jusqu_au: 2014-12-31
     resultat: aucun
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Rapports annuels de la direction générale des impôts sur 2013 (42 pages) et sur 2014 (40 pages), portail ancien du ministère, arabe, police non Unicode : pages 11, 19, 21, 22, 24 et 27 du rapport sur 2013 et 20 à 25 du rapport sur 2014 lues à l''image (pages choisies par les mots de la TVA et de la restitution dans la couche texte). Résultat : restitutions de 2013 et 2014 (670,1 et 427,2 MD, dont 402,3 et 307,2 MD de TVA) identiques à celles du rapport sur le contrôle fiscal ; montants autorisés à la restitution (652,3 et 467,1 MD, tous impôts) ; attestations de suspension de la TVA par cadre légal, 2011-2014. Aucun stock de crédit de TVA ni série de restitutions antérieure à 2010. Lacunes : 31 pages du rapport sur 2013 et 34 pages du rapport sur 2014 non lues à l''image ; rapports postérieurs à 2014 absents du corpus local.'
+    couvert_jusqu_au: 2014-12-31
+    resultat: aucun
   a_faire:
-  - parcourir à l'image les 24 pages restantes du rapport de la direction générale des impôts sur 2014 et le rapport sur 2013
+  - parcourir à l'image les pages restantes des rapports de la direction générale des impôts sur 2013 (31 pages) et sur 2014 (34 pages)
   - chercher les rapports annuels de la direction générale des impôts postérieurs à 2014
   - parcourir les rapports annuels de performance de la mission Finances
 
@@ -4612,6 +4725,12 @@
     couverture: 'jort_cache : numero in (97-130, 97-147, 2007-100, 2008-103) — seul 2008-103 répond, pour un autre texte (16 janvier 2008, agence de lutte contre le dopage) ; dates 1997-09-16, 1997-09-18, 1997-11-10, 2007-02-12, 2008-03-04 filtrées sur milit/armee/securite interieure/traitement de base/indemnite/عسكري/الأمن الداخلي : seuls les homologues civils (97-1832, 97-2127, 2007-267, 2007-268). Plein texte (couche texte décodée) des JORT FR 1997 n° 76, 77 et 93 et 2007 n° 14 : aucune occurrence. LIKE sur les titres et objets (arabes compris) pour les termes iort_ar, dont « المرتب الأساسي للعسكريين » : aucun. Fascicules arabes et mars 2008 non parcourus. Requêtes par numéro et par date, hors des champs titres_* : à rejouer à la main.'
     couvert_jusqu_au: 2008-03-04
     resultat: aucun
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [visas]
+    couverture: 'Visas des décrets n° 2000-1013, 2000-1015, 2000-1019 (JORT n° 41 de 2000), n° 2012-1334 à 2012-1336 (JORT n° 68 de 2012) et n° 2012-248 (JORT n° 38 de 2012), lus : le décret du 16 septembre 1997 y est cité « n° 97-130 », sous l''intitulé « fixant le traitement de base des militaires et des forces de sécurité intérieure » (sans les douanes), modifié par le décret « n° 2007-101 du 12 février 2007 » et le décret « n° 2008-103 du 4 mars 2008 ». Le numéro 2007-100 de l''objet est donc peut-être 2007-101. Aucun texte nouveau trouvé ; barème toujours non lu.'
+    couvert_jusqu_au: 2008-03-04
+    resultat: aucun
   a_faire: [parcourir les fascicules arabes de septembre-novembre 1997 et de mars 2008]
 
 - id: r-mil-solde-79-96-1982-1985
@@ -4720,6 +4839,24 @@
   - sources parlementaires (débats budgétaires
   - mission « Présidence du gouvernement »)
 
+- id: r-anciens-pm-avantages-decret
+  objet: décret fixant les avantages en nature des anciens Premiers ministres et des anciens présidents de la Chambre des députés et de la Chambre des conseillers, pris en application de l'art. 3 de la loi n° 2005-55 du 18 juillet 2005
+  ou: [precis/fr/remunerations_publiques/_fonctions_politiques.qmd#sec-fp-anciens]
+  requetes:
+    titres_fts:
+    - titre:(avantages) AND titre:("premiers ministres" OR "premier ministre" OR "chambre des deputes" OR "chambre des conseillers")
+    titres_like: ['%2005-55%']
+    iort_ar: [الوزراء الأولين, رؤساء مجلس النواب]
+    depuis: 2005-07-19
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort]
+    couverture: 'titres et objets de jort_cache, 19 juillet 2005 au 2 octobre 2026 (FTS français ; LIKE « 2005-55 » ; LIKE arabe « رؤساء مجلس النواب » sur le miroir iort) : seuls la loi n° 2005-55 et l''avis n° 33-2005 sur son projet ; aucun décret d''application. Plein texte, fascicules arabes et fascicules de 2024-2026 inconnus de jort_cache non parcourus ; --sonder-pist non lancé.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte des fascicules, décrets non publiés au JORT]
+
 - id: r-indemnite-parlementaire-decret
   objet: décret fixant les indemnités mensuelles du président et des membres de la Chambre des députés en application de l'art. 72 de la loi de finances pour 1989 (loi n° 88-145), puis textes fixant l'indemnité des membres de la Chambre des conseillers (loi n° 2005-54), de l'Assemblée des représentants du peuple (2014-2021) et des assemblées élues en 2022-2024
   ou: [precis/fr/remunerations_publiques/_fonctions_politiques.qmd#sec-fp-parlementaires]
@@ -4762,7 +4899,7 @@
     resultat: aucun
 
 - id: r-diplomates-indemnite-poste-apres-1998
-  objet: texte transposant à la grille en dinars (décret n° 97-1832, concordance n° 99-2358) les tranches d'« indice » de l'indemnité de poste (décret n° 73-168, art. 2) et de l'indemnité de perte de change (décret n° 73-167, art. 11-12) ; arrêtés de classement zonal des postes postérieurs à 1985
+  objet: texte rapportant à la grille en dinars (décret n° 97-1832, concordance n° 99-2358) les indices de référence du tableau de l'article 2 (nouveau) du décret n° 73-167, issu du décret n° 89-842, qui servent à l'impôt et aux retenues de retraite des agents en poste ; arrêtés annuels du Premier ministre fixant la rémunération par pays, fonction et grade
   ou: [precis/fr/remunerations_publiques/_regime_indiciaire.qmd#sec-ri-diplomates]
   requetes:
     titres_fts:
@@ -4777,7 +4914,13 @@
     couverture: 'titres de jort_cache, 1956 au 2 octobre 2026 : modificatifs du décret n° 73-167 jusqu''au décret n° 2008-3481 (aucun ne touche l''art. 2 du décret n° 73-168 d''après les intitulés ; 2004-1772 et 2008-3481 lus : bagages, enseignement des enfants) ; pour le décret n° 73-168, seul l''arrêté du 1er mars 1985. Arrêtés de classement zonal non indexés sous ces termes. Plein texte non parcouru ; les arrêtés peuvent ne pas être publiés. Fascicules de 2024-2026 inconnus de jort_cache non parcourus ; --sonder-pist non lancé.'
     couvert_jusqu_au: 2026-10-02
     resultat: aucun
-  a_faire: [lire les décrets n° 85-1183, 89-842, 90-721 (1985-1990, scans), plein texte]
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'Décrets n° 85-1183, 89-842, 90-721, 91-664 (porté sous 91-666 par jort_cache) et 92-93 lus à l''image (corpus local, JORT n° 68 de 1985, n° 50 de 1989, n° 32 de 1990, n° 37 de 1991, n° 6 de 1992), ainsi que les articles 2 à 12 du décret n° 73-167 (JORT n° 14 de 1973, p. 588-592). Le décret n° 89-842 abroge les articles 5 (indemnité de poste), 6 (zones), 7 (représentation), 10 (logement à 50 %), 11 et 12 (perte de change) et remplace les articles 2, 4, 9, 25 et 27 : la rémunération devient un montant en dinars fixé chaque année par arrêté du Premier ministre, et un tableau d''indices de référence (155 à 800) sert à l''impôt et aux retenues de retraite. Aucun texte n''est trouvé qui rapporte ces indices à la grille de 1997 ; les arrêtés annuels ne sont pas indexés sous ces termes. Plein texte et fascicules arabes non parcourus.'
+    couvert_jusqu_au: 2026-10-02
+    resultat: aucun
+  a_faire: [plein texte, arrêtés annuels du Premier ministre]
 
 - id: r-loi2020-38-decrets-application
   objet: décrets gouvernementaux d'application des art. 1 à 3 de la loi n° 2020-38 (recrutement direct des chômeurs diplômés de longue durée)
@@ -5241,3 +5384,185 @@
     couvert_jusqu_au: 2026-10-29
     resultat: aucun
   a_faire: ['lire les fascicules postérieurs au 29 octobre 2026 (corpus local, pist.tn)']
+
+- id: r-autoroutes-a1-msaken-gabes-peage-apres-2022
+  objet: texte postérieur au décret présidentiel n° 2022-56 qui modifie l'article 7 du décret gouvernemental n° 2019-1066 (date d'application du péage sur l'autoroute A1 M'saken-Gabès)
+  ou: [precis/fr/entreprises_publiques/_transports.qmd#sec-ep-ge-autoroutes]
+  requetes:
+    titres_like: ['%2019-1066%', '%péage%', '%autoroute A1%']
+    iort_ar: [معلوم المرور, الطريق السيارة أ1, 1066 لسنة 2019]
+    plein_texte: [2019-1066, 1066 لسنة 2019]
+    depuis: 2022-02-01
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026, textes publiés depuis le 1er février 2022 : jort_cache (dernière publication indexée le 29 octobre 2026, intitulés français et arabes), miroir iort, plein texte du corpus local des fascicules 2022 à 2026 (français et arabe ; absents : 2022 n° 55 et 105 en français, n° 203 de 2025 et n° 107 de 2026 mal numérotés dans jort_cache ; aucune liste des fascicules parus après le 29 octobre 2026). Seules occurrences de « 2019-1066 » et de « 1066 لسنة 2019 » : le décret présidentiel n° 2022-56 lui-même (JORT n° 12 de 2022). Aucun texte postérieur.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+
+- id: r-oaca-vols-interieurs-apres-2023
+  objet: décret renouvelant, après le 31 décembre 2023, l'exonération des passagers et des avions des vols commerciaux intérieurs des redevances d'aéroport et de services de navigation aérienne
+  ou: [precis/fr/entreprises_publiques/_transports.qmd#sec-ep-ge-oaca]
+  requetes:
+    titres_like: ['%vols commerciaux intérieurs%', '%2020-778%', '%renouvellement de l''exonération%']
+    iort_ar: [الرحلات التجارية الداخلية, معاليم المطارات, 778 لسنة 2020]
+    plein_texte: [2020-778, 778 لسنة 2020, الرحلات التجارية الداخلية]
+    depuis: 2023-06-01
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026, textes publiés depuis le 1er juin 2023 : jort_cache (dernière publication indexée le 29 octobre 2026, intitulés français et arabes), miroir iort, plein texte du corpus local des fascicules 2023 à 2026 (français et arabe ; fascicules lus en arabe seulement ou absents énumérés par la relance ; aucune liste des fascicules parus après le 29 octobre 2026). Le seul candidat, le décret n° 2024-5 du 5 janvier 2024, exonère quatre aéroports régionaux, non les vols intérieurs. Aucune occurrence de « 2020-778 » ni de « 778 لسنة 2020 » dans un texte postérieur.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+
+- id: r-oaca-exoneration-aeroports-regionaux-2012-2016
+  objet: décret prorogeant ou renouvelant, après le 31 décembre 2011 et avant le décret gouvernemental n° 2017-342, l'exonération des redevances d'aéroport et de navigation aérienne aux aéroports internationaux de Tabarka-7 novembre, de Tozeur-Nefta et de Gafsa-Ksar
+  ou: [precis/fr/entreprises_publiques/_transports.qmd#sec-ep-ge-oaca]
+  requetes:
+    titres_like: ['%redevances d''aéroport%', '%Tozeur-Nefta%', '%Tabarka%', '%Gafsa-Ksar%']
+    iort_ar: [معاليم المطارات, مطار توزر نفطة, مطار طبرقة]
+    plein_texte: [2008-3903, 3903 لسنة 2008]
+    depuis: 2011-12-01
+  periode:
+    jusqu_au: 2017-03-07
+    motif: le décret gouvernemental n° 2017-342 du 1er mars 2017 (JORT du 7 mars 2017) fixe une nouvelle exonération à partir du 1er janvier 2017
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026, textes publiés du 1er décembre 2011 au 7 mars 2017 : jort_cache (intitulés français et arabes, requêtes sur les aéroports de Tabarka, Tozeur-Nefta, Gafsa-Ksar et sur les redevances d''aéroport), miroir iort, plein texte du corpus local des fascicules 2011 à 2017 n° 19 (fascicules sans texte exploitable : 2015 n° 36 en français, n° 53, 57, 64 et 67 en arabe ; n° 59 de 2015 absent du corpus). Huit candidats de jort_cache, tous étrangers à l''objet (dissolution du conseil municipal de Tabarka, expropriations, plan d''aménagement) hors le décret n° 2014-2235, qui concerne les vols intérieurs. Aucune exonération des trois aéroports entre le 31 décembre 2011 et le 1er janvier 2017.'
+    couvert_jusqu_au: 2017-03-07
+    resultat: aucun
+
+- id: r-oaca-exoneration-aeroports-regionaux-2022-2023
+  objet: décret exonérant des redevances d'aéroport et de navigation aérienne les aéroports internationaux de Tozeur-Nafta, de Tabarka-Aïn Draham, de Gafsa-Ksar et de Gabès-Matmata entre le 1er janvier 2022 et le décret n° 2024-5 du 5 janvier 2024
+  ou: [precis/fr/entreprises_publiques/_transports.qmd#sec-ep-ge-oaca]
+  requetes:
+    titres_like: ['%redevances d''aéroport%', '%Tozeur-Nafta%', '%Gabès-Matmata%', '%Gafsa-Ksar%']
+    iort_ar: [معاليم المطارات, مطار توزر نفطة, مطار قفصة القصر, مطار قابس مطماطة]
+    plein_texte: [2017-342, 342 لسنة 2017]
+    depuis: 2021-12-01
+  periode:
+    jusqu_au: 2024-01-12
+    motif: le décret n° 2024-5 du 5 janvier 2024 (JORT du 12 janvier 2024) fixe une nouvelle exonération à partir de sa publication
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026, textes publiés du 1er décembre 2021 au 12 janvier 2024 : jort_cache (intitulés français et arabes ; seul candidat, le décret n° 2024-5 lui-même), miroir iort (même candidat), plein texte du corpus local des fascicules 2021 n° 112 à 120, 2022, 2023 et 2024 n° 1 à 6 (fascicules absents ou lus en arabe seulement énumérés par la relance). Les visas du décret n° 2024-5 citent le décret gouvernemental n° 2017-342 et aucun autre texte d''exonération des quatre aéroports.'
+    couvert_jusqu_au: 2024-01-12
+    resultat: aucun
+
+- id: r-cfl-art19-penalite-apres-2023
+  objet: texte modifiant le paragraphe I de l'article 19 du code de la fiscalité locale (pénalité de retard de la taxe sur les immeubles bâtis) après le décret-loi n° 2022-79 (art. 59, § 7), qui porte la pénalité à 1,25 % par mois
+  ou: [precis/fr/finances_locales/_impots_immeubles.qmd#sec-fl-immeubles-penalite]
+  requetes:
+    titres_fts: ['"fiscalite locale"', '"immeubles batis"']
+    titres_like: ['%fiscalite locale%', '%immeubles batis%']
+    iort_ar: [مجلة الجباية المحلية, العقارات المبنية]
+    plein_texte: [article 19 du code de la fiscalité locale, الفصل 19 من مجلة الجباية المحلية, مجلة الجباية المحلية]
+    depuis: 2023-01-01
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, corpus_local, iort]
+    couverture: 'jort_cache : titres FTS et LIKE, français et arabe, du 01/01/2023 au 29/10/2026 ; cinq notices répondent (LF 2024 art. 59 et 67, LF 2025 art. 39, 64 et 76), aucune ne touche l''art. 19. Miroir iort : aucun candidat. Plein texte FR et AR des fascicules du corpus local 2023-2026 : « مجلة الجباية المحلية » n''apparaît que dans les visas de deux décrets de 2023 et aux art. 67 (art. 40 § III) et 59 § 4 (art. 39 § II) de la LF 2024. Code consolidé au 1er janvier 2026 (DGELF) : le texte de l''art. 19 § I ne porte pas d''autre modification que l''art. 54 de la loi de finances pour 2007 et l''art. 59-7 du décret-loi n° 2022-79 (taux de 1,25 %), plus le plafond de l''art. 68-3 du décret-loi n° 2021-21. Lacunes : fascicules FR absents (2023 : 39, 41, 44, 71, 83, 100, 115, 142 ; 2024 : 8, 113, 118, 130, 145 ; 2025 : 4, 88, 90, 95-96, 148 ; 2026 : 10-11, 13, 62, 76, 96), lus en arabe ; fascicules postérieurs au 29/10/2026 non parcourus.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+
+- id: r-compensation-redevance-revenu-prorogation
+  objet: texte prorogeant, au-delà de l'année 2015, le volet de la redevance de compensation assis sur le revenu des personnes physiques (n° 4 du paragraphe I de l'article 63 de la loi n° 2012-27, borné aux années 2014 et 2015 par le paragraphe III, art. 78 de la loi n° 2013-54 et art. 40 de la loi n° 2014-54)
+  ou: [precis/fr/compensation/_reformes.qmd#sec-compensation-redevance]
+  requetes:
+    titres_fts: ['"redevance de compensation"']
+    titres_like: ['%redevance de compensation%', '%الصندوق العام للتعويض%']
+    iort_ar: [أتاوة الدعم, الفصل 63 من القانون عدد 27 لسنة 2012]
+    plein_texte:
+    - redevance de compensation
+    - article 63 de la loi n° 2012-27
+    - أتاوة الدعم
+    - الفصل 63 من القانون عدد 27 لسنة 2012
+    depuis: 2014-08-23
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026, textes publiés depuis le 23 août 2014 (lendemain de la loi n° 2014-54). jort_cache jusqu''au 29 octobre 2026 : titres français et arabes (FTS et LIKE « redevance de compensation », « أتاوة الدعم », « 27 لسنة 2012 ») : quatre notices, le décret-loi n° 2021-21 (art. 56), l''arrêté du 10 mai 2024 et deux lignes de la loi n° 2015-53 qui citent l''art. 17 de la loi n° 2012-27 sans rapport avec la redevance. Miroir iort, texte arabe de 2014 à 2026 : seul le décret-loi n° 2021-21 cite l''art. 63. Plein texte des fascicules du corpus local, français et arabe : l''art. 63 n''est cité qu''aux JORT n° 119 de 2021 (art. 56, taux de 3 %), n° 144 de 2023 (art. 45 et 69, § 6), n° 61 de 2024 (arrêté du 10 mai 2024) et n° 148 de 2025 (édition arabe, non lue) ; aucune occurrence de 2014 (après le 22 août) à 2020, donc aucune prorogation du n° 4 pour 2016 et les années suivantes. Les lois de finances de 2015 à 2017 (JORT n° 105 de 2014, n° 104 de 2015, n° 105 de 2016) cherchées dans le texte français : l''expression « redevance de compensation » n''y figure pas. Lacunes : fascicules absents ou sans texte exploitable listés par la relance (2015 ar n° 53, 57, 64, 67 ; 2015 fr n° 36 ; 2018 ar n° 26 ; 2018 fr n° 29, 33) ; pist.tn non consulté ; une prorogation qui ne cite ni l''article ni la redevance échappe à la recherche.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+
+- id: r-cfl-art90-parkings-apres-2003
+  objet: texte modifiant l'article 90 du code de la fiscalité locale (barème de la contribution à la réalisation de parkings collectifs) après la loi de finances pour 2003 (art. 79)
+  ou: [precis/fr/finances_locales/_taxes_redevances.qmd#sec-fl-parkings]
+  requetes:
+    titres_fts: ['"fiscalite locale"', parkings]
+    titres_like: ['%fiscalite locale%', '%parkings%']
+    iort_ar: [مجلة الجباية المحلية, مآوي السيارات]
+    plein_texte:
+    - article 90 du code de la fiscalité locale
+    - الفصل 90 من مجلة الجباية المحلية
+    - parkings collectifs
+    - مآوي السيارات الجماعية
+    depuis: 2003-01-01
+  passes:
+  - date: 2026-11-01
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Relance du 1er novembre 2026 sans plein texte des fascicules (non parcouru, trop long) : jort_cache, titres FTS et LIKE (fiscalité locale, parkings, stationnement) depuis le 01/01/2003 : seul l''arrêté du 30 mai 2003 (JORT n° 45, p. 1816, liste des communes) touche la contribution ; les lois de finances de 2005, 2006, 2007, 2009, 2012 et 2014 modifient d''autres articles du code. Miroir iort, termes arabes : 83 candidats, deux mentions de مأوى السيارات (LF 2015, LF 2019) qui sont des lignes de crédits d''investissement, non l''art. 90. Code consolidé au 1er janvier 2026 (DGELF) : l''art. 90 ne porte que la mention « Modifié Art 79 LF 2002-101 du 17/12/2002 ». Lacune : plein texte des fascicules 2003-2026 à rejouer.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+
+- id: r-onh-oc-garanties-apres-2011
+  objet: garantie de l'État, compensation de créances ou dotation au profit de l'Office national de l'huile ou de l'Office des céréales après 2011, en dehors des textes déjà versés au registre (décret-loi n° 2022-64 et décret n° 2022-729, décret-loi n° 2023-4 et décret n° 2023-126, décret n° 2023-35)
+  ou: [precis/fr/entreprises_publiques/_offices.qmd#sec-ep-ge-onh]
+  requetes:
+    titres_like: ['%office national de l''huile%', '%office des cereales%']
+    iort_ar: [الديوان الوطني للزيت, ديوان الحبوب]
+    plein_texte: [Office national de l'huile, Office des céréales, الديوان الوطني للزيت, ديوان الحبوب]
+    depuis: 2012-01-01
+  passes:
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache jusqu''au 29 octobre 2026, titres et objets, français et arabe : seuls les textes du registre, le décret n° 2013-4706 et le décret gouvernemental n° 2019-339 (statut et organigramme de l''Office des céréales) nomment l''un des deux offices. Édition arabe, 2 novembre 2026 : 2014-2026 (fascicules avec couche texte une fois normalisée en NFKC, marques d''orientation, voyelles brèves et caractères d''usage privé retirés), motifs « ديوان الحبوب » et « الديوان الوطني للزيت » dans tout le fascicule, avec ou sans un mot de garantie, de dette, de compensation, de prime, de budget ou de dotation à proximité : nominations aux conseils d''administration, décrets de campagne des céréales, lignes du budget de développement de l''Office des céréales (lois de finances pour 2014 à 2019), textes du registre ; aucune garantie, compensation de créances ni dotation en dehors d''eux. 2012-2013 (fascicules sans couche texte : 103 en 2012, 87 en 2013) : OCR tesseract ara, 150 dpi, des pages 1 à 3 de chaque fascicule, c''est-à-dire du sommaire ; contrôle positif sur les lois de garantie de 2012 (JORT n° 50, 59 et 65), retrouvées ; nominations seulement. Articles de la loi de finances pour 2012 (16 pages), de la loi de finances complémentaire pour 2012 (22 pages) et de la loi de finances pour 2013 (28 pages) : OCR 300 dpi, texte rangé hors dépôt ; aucune mention des deux offices ; le contrôle positif (article sur la dette de la Société tunisienne de la sidérurgie) est retrouvé. Limites : corps des fascicules arabes de 2011, 2012 et 2013 sans couche texte non océrisé hors ces trois lois ; tableaux de crédits des lois de finances de 2012 et 2013 en arabe non océrisés (lignes de l''Office des céréales relevées dans l''édition française).'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire:
+  - océriser le corps des fascicules arabes de 2012 et de 2013 sans couche texte, si un indice de garantie ou de dotation apparaît au sommaire d'un autre fascicule
+
+- id: r-oc-prix-reduits-retrocession
+  objet: décisions du ministre chargé du commerce fixant les prix réduits de rétrocession des céréales, dont la différence avec les prix normaux des décrets de campagne donne la prime de compensation de l'Office des céréales
+  ou: [precis/fr/entreprises_publiques/_offices.qmd#sec-ep-ge-oc]
+  requetes:
+    titres_like: ['%prix reduits%', '%retrocession des cereales%']
+    iort_ar: [أسعار الإحالة المخفضة]
+    plein_texte: [prix réduits de rétrocession, الإحالة المخفضة]
+    depuis: 2011-01-01
+  passes:
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [jort_cache, corpus_local]
+    couverture: 'jort_cache jusqu''au 29 octobre 2026, titres (LIKE « %prix reduits% », « %retrocession des cereales% », « %prix de retrocession% », arabe « %أسعار الإحالة% », « %سعر الإحالة% ») : seuls les décrets de campagne (sept intitulés « fixant le prix et les modalités de paiement, de stockage et de rétrocession des céréales » depuis 2011, plus les textes de 2022, 2024, 2025 et 2026 que l''index ne titre pas ainsi). Plein texte français 2011-2013 (« prix réduits de rétrocession ») : les trois décrets de campagne de 2011, 2012 et 2013, article sur la prime de compensation seulement. Plein texte arabe 2012-2026 (« الإحالة المخفضة », « الأسعار المخفضة للإحالة ») : même constat sur 13 fascicules, tous ceux qui portent un décret de campagne ; 2012 et 2013 sans couche texte, non parcourus. Limites : les décisions du ministre du commerce peuvent ne pas être publiées au Journal officiel ; circulaires et notes de l''Office non cherchées.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire:
+  - chercher les prix réduits dans les rapports de l'Office ou de la Caisse générale de compensation, ou auprès du ministère du Commerce
+
+- id: r-oc-subvention-semences-apres-2019
+  objet: ligne de la subvention du budget de l'État à l'Office des céréales pour la constitution d'un stock prévisionnel et stratégique de semences, dans les lois de finances pour 2020 et suivantes
+  ou: [precis/fr/entreprises_publiques/_offices.qmd#sec-ep-ge-oc]
+  requetes:
+    iort_ar: [منحة تكوين المخزون الاحتياطي والاستراتيجي من البذور]
+    plein_texte: [stock prévisionnel, stratégique des semences, منحة تكوين المخزون, المخزون الاحتياطي والاستراتيجي من البذور]
+    depuis: 2019-12-01
+  passes:
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Éditions arabes de 2019 à 2026, couche texte normalisée, motifs « منحة تكوين المخزون », « المخزون الاحتياطي و الإستراتيجي » et « المخزون الاستراتيجي من البذور » : aucune occurrence ; la dernière ligne lue est celle de la loi de finances pour 2019 (JORT n° 104 du 28 décembre 2018, p. 4596 de l''édition française). Éditions françaises de 2019 à 2026, motifs « constitution d''un stock », « stock prévisionnel », « stock stratégique » avec « Office des céréales » dans la même page : aucune occurrence. Limites : la forme des tableaux de crédits des lois de finances de 2020 à 2026 n''a pas été examinée, et une ligne sous un autre libellé n''aurait pas été retrouvée.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire:
+  - parcourir les tableaux de crédits de la loi de finances pour 2020 et des suivantes pour une ligne de l'Office des céréales sous un autre libellé
