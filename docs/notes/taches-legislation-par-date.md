@@ -31,6 +31,8 @@ Mise à jour du 1er novembre 2026 (PR #690 à #694) : 25 tâches marquées faite
 
 Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faites, 21 resserrées (statut « partiel » avec le reste), 1 annotée (fonds d'appui à la décentralisation, toujours ouverte) ; les autres inchangées, dont celles que la PR #658 avait déjà closes (AFI, SNCFT, SNIT).
 
+Mise à jour du 2 novembre 2026 (PR #696 à #698) : 1 tâche marquée faite (loi n° 96-65 et art. 41 de la loi n° 60-30), 1 annotée (loi n° 96-65 dans la liste des modificatifs) ; les autres inchangées.
+
 
 ## 2026
 
@@ -381,7 +383,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 - **[S] Circulaire n° 42 du 25 octobre 1996 (JORT n° 94, p. 2349-2364)** — Lire les seize pages, source la plus détaillée sur la gestion des indemnités familiales (lisible sans OCR). _(chapitre : prestations_sociales/_prestations_familiales.qmd ; source : lisible (1996/fr/Jo09496.pdf) ; statut : ouvert)_
 - **[M] Extension de la loi n° 96-101 aux régimes agricoles et aux contractuels publics (fiche r-loi96-101-extension)** — Recherche faite sur les intitulés (aucun texte d'extension identifié, aucun modificatif après 2006 jusqu'au 2 octobre 2026) ; plein texte non fait. _(chapitre : prestations_sociales/_matrice.qmd, _autres_risques.qmd ; source : jort_cache ; statut : partiel)_
 - **[M] Décret n° 85-614 après la loi organique n° 88-73 (fiche r-decret-85-614-sort)** — Océriser les fascicules 1988-1996 pour établir le sort du décret ; plein texte 1997-2026 sans occurrence. _(chapitre : retraites/_secteur_public.qmd (§ magistrats) ; source : OCR à lancer (corpus 1988-1996) ; statut : ouvert)_
-- **[S] Loi n° 96-65 : art. 41 de la loi n° 60-30 (taux de base)** — Lire la loi 96-65 (deux lois portent ce numéro) pour savoir si elle récrit l'art. 41 ; les lois 80-36, 81-5, 82-71, 86-75 et 88-38 ne le touchent pas. _(chapitre : cotisations sociales, _taux_global.qmd ; source : lisible ; statut : ouvert (PR #694))_
+- **[S] Loi n° 96-65 : art. 41 de la loi n° 60-30 (taux de base)** — Lire la loi 96-65 (deux lois portent ce numéro) pour savoir si elle récrit l'art. 41 ; les lois 80-36, 81-5, 82-71, 86-75 et 88-38 ne le touchent pas. _(chapitre : cotisations sociales, _taux_global.qmd ; source : lisible ; statut : fait le 2 novembre 2026 (PR #697) : la loi 96-65 ne touche pas l'art. 41, pas plus que les lois 80-36, 81-5, 82-71, 86-75 et 88-38 (relue à l'image, art. 1 à 5) ; reste le dépouillement des lois de finances de 1961 à 1996 pour l'art. 41)_
 
 ## 1995
 
@@ -598,7 +600,7 @@ Mise à jour du 1er novembre 2026 (PR #665 à #671) : 18 tâches marquées faite
 - 1990 — Décret n° 74-499 et décret n° 90-1455 : conditions d'orphelin (âge, études, ressources), règles de survivants du RSNA (remariage, cumul) _(_secteur_prive.qmd l. 514-531 (tbl-rsna-survivants engendré, sources decret90-1455 art. 1) ; backlog l. 872 « à la main » périmé)_
 - 1989 — Décrets n° 76-3 et n° 89-1890 (organisation de la CNRPS) _(caisses/references.json : decret76-3 « Lu à l'image » (art. 7, 9-15), decret89-1890 « Lu à l'image » ; cités _chronologie.qmd l.20 et l.31, _comptes_regimes.qmd l.13-21)_
 - 1982 — Rectificatif du décret n° 82-1030 (19 octobre 1982) _(_secteur_prive.qmd l. 1741 (rectificatif publié le 19 octobre 1982), l. 1783-1785 « Les rectificatifs des décrets n° 74-499 et 82-1030 sont lus »)_
-- 1975 — Modificatifs de la loi n° 60-30 avant 1996 (lois 61-9, 63-26, 64-31, 70-34, 75-82, 95-101) _(caisses/_statut_cadre.qmd l.27 ; _comptes_longue_periode.qmd l.198-200 ; lues le 1er novembre 2026, PR #694 : 80-36, 81-5, 82-71, 86-75, 88-38 ; reste la loi 96-65)_
+- 1975 — Modificatifs de la loi n° 60-30 avant 1996 (lois 61-9, 63-26, 64-31, 70-34, 75-82, 95-101) _(caisses/_statut_cadre.qmd l.27 ; _comptes_longue_periode.qmd l.198-200 ; lues le 1er novembre 2026, PR #694 : 80-36, 81-5, 82-71, 86-75, 88-38 ; loi 96-65 lue, PR #697 : elle ne touche pas l'art. 41)_
 - 1969 — SNCFT : loi n° 69-31 du 9 mai 1969 (statuts, JORT n° 19/1969, p. 581-584) _(_transports.qmd registre r-ep-sncft-1969 (loi 69-31, art. 1-3 et statuts art. 1-26, p. 581-584))_
 - 1968 — Décret 68-104 du 20 avril 1968 _(r-pi-a-1969 et r-te-s-1968 citent decret-68-104-taux pp. 417-420 ; TODO timbre l.51 sur le jour d'effet)_
 - 1965 — Loi n° 65-17 du 28 juin 1965 (étudiants) _(cotisations_sociales/_regimes.qmd l.217-241 : loi 65-17 rédigée ; backlog l.1920-1922)_
