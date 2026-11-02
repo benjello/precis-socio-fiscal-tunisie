@@ -3010,7 +3010,7 @@
 
 - id: r-sante-prevoyance-1951-texte
   objet: texte du décret du 12 avril 1951 instituant un régime de prévoyance en faveur des personnels de l'État et des collectivités publiques, et de ses arrêtés d'application (17 juillet 1951, 23 juillet 1952, 10 octobre 1952) ; existence d'un régime de prévoyance antérieur, de 1948
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire]
   requetes:
     titres_like: ['%prevoyance%']
     depuis: 1956-01-01
@@ -3041,7 +3041,7 @@
 
 - id: r-sante-prevoyance-egt-1951
   objet: texte du décret du 13 décembre 1951 instituant un régime de prévoyance sociale en faveur des agents des services publics de l'électricité, du gaz et des transports (risques couverts, frais de soins) ; texte du décret du 26 août 1948 sur leurs retraites
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-1951]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire-1951]
   requetes:
     titres_like: ['%electricite%gaz%transport%']
     depuis: 1956-01-01
@@ -3060,7 +3060,7 @@
 
 - id: r-sante-admission-1939
   objet: décret du 23 décembre 1939 fixant les conditions d'admission des malades dans les établissements hospitaliers publics (preuve de l'indigence avant la carte de soins de 1958)
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire]
   requetes:
     titres_like: ['%indigen%', '%gratuit%des soins%', '%soins gratuits%', '%admission dans les etablissements hospitaliers%']
     iort_ar: [شهادة الفقر]
@@ -3081,7 +3081,7 @@
 
 - id: r-sante-am-preparation-1996-2004
   objet: textes et décisions de préparation de l'assurance maladie entre 1996 et 2004, dont la décision du conseil des ministres du 16 février 1996 et la place de l'assurance maladie dans le IXe Plan (1997-2001)
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-1987]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire-1987]
   requetes:
     titres_like: ['%assurance maladie%', '%assurance-maladie%', '%prestations de soins%', '%couverture sociale%']
     iort_ar: [التأمين على المرض, تأمين على المرض, اللجنة الوطنية للتأمين على المرض]
@@ -3150,7 +3150,7 @@
 - id: r-cnrps-cotisation-retraites-1973-2007
   objet: texte fixant la cotisation des retraités et des veuves de la CNRPS au régime obligatoire de prévoyance (les rapports de la Banque mondiale de 1993 et 2006 donnent 1 % de la pension), entre la loi n° 72-2 (art. 7, al. 2) et le décret n° 2007-1406 ; le décret n° 73-91 ne fixe que 2 % dans son article sur le facultatif (art. 15, al. 5)
   ou:
-  - precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses
+  - precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire-caisses
   - precis/fr/cotisations_sociales/_regimes.qmd#sec-cot-pensionnes
   requetes:
     titres_fts: ['"73-91"', '"88-186"', '"regime de prevoyance sociale"', '"prestations de prevoyance"']
@@ -3174,7 +3174,7 @@
 
 - id: r-cnss-polycliniques-fondation
   objet: texte créant les polycliniques de la CNSS ou en autorisant la création (avant 1993, six polycliniques « expanded during the 1980s » selon la Banque mondiale), et texte fixant leurs tarifs ou tickets modérateurs avant 2007
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire-caisses]
   requetes:
     titres_fts: [polyclinique, polycliniques, '"action sanitaire"', '"caisse nationale de securite sociale"']
     titres_like: ['%polycli%']
@@ -3196,7 +3196,7 @@
 
 - id: r-caisses-soins-lourds-etranger
   objet: textes (conventions, décisions, circulaires) organisant avant 2007 la prise en charge par la CNSS et la CNRPS des soins lourds chez des prestataires conventionnés et des soins à l'étranger, et texte fondant des prestations supplémentaires de la CNRPS
-  ou: [precis/fr/sante/_histoire.qmd#sec-soins-histoire-caisses]
+  ou: [precis/fr/prestations_sociales/_soins.qmd#sec-soins-histoire-caisses]
   requetes:
     titres_fts: ['"soins etranger"', '"prise en charge"', '"prestations complementaires"']
     titres_like: ['%prestations supplementaires%', '%soins%etranger%', '%a l''etranger%soins%']

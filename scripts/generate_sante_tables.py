@@ -1,7 +1,10 @@
 """Régénère les snapshots Markdown des tableaux de tarifs hospitaliers du livre « La santé ».
 
 Même contrat que les autres générateurs : le build du site n'exécute PAS ce script, il lit les
-fichiers qu'il produit, versionnés dans `precis/fr/sante/tables/`.
+fichiers qu'il produit, versionnés dans `precis/fr/sante/tables/` (et, pour le tableau des tarifs
+réduits et des contributions des assurés, `soins_assures_hopital.md`, dans
+`precis/fr/prestations_sociales/tables/` : il illustre l'histoire du droit aux soins, qui vit
+dans le chapitre « Le droit aux soins » de ce livre).
 
     OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \
         uv run python scripts/generate_sante_tables.py
@@ -17,7 +20,7 @@ CE QUI EST ENGENDRÉ (quatre tableaux) :
     (`tbl-hopital-lettres-cles`) ;
   - `hopital_forfaits_actes.md` : forfaits d'actes des arrêtés de 1996, 1998, 2003 et 2008
     (`tbl-hopital-forfaits-actes`) ;
-  - `soins_assures_hopital.md` : tarifs réduits de 1993, contributions de 1994, tarifs des
+  - `soins_assures_hopital.md` (écrit dans `prestations_sociales/tables/`) : tarifs réduits de 1993, contributions de 1994, tarifs des
     malades payants de 1996 et tarifs réduits de 1998 (`tbl-soins-assures-hopital`).
 
 DEUX LECTURES DU TEMPS. Les tarifs des malades payants de 1993 et de 1996 sont lus À LA DATE
@@ -65,6 +68,9 @@ LC = f"{MP}/lettres_cles"
 FA = f"{MP}/forfaits_actes"
 TR = f"{S}/tarifs_reduits"
 RACINE = Path(__file__).parent.parent / "precis" / "fr" / "sante" / "tables"
+RACINE_PRESTATIONS = Path(__file__).parent.parent / "precis" / "fr" / "prestations_sociales" / "tables"
+# Tableaux qui ne vivent pas dans le livre « La santé ».
+AILLEURS = {"soins_assures_hopital.md": RACINE_PRESTATIONS}
 
 # Dates d'effet lues dans les paramètres (arrêtés et décrets du livre).
 D_1993_PAYANTS, D_1996_PAYANTS = "1993-02-07", "1997-01-04"
@@ -465,13 +471,14 @@ def main() -> int:
         )
         return 1
     RACINE.mkdir(parents=True, exist_ok=True)
+    RACINE_PRESTATIONS.mkdir(parents=True, exist_ok=True)
     for nom, fabrique in TABLEAUX.items():
         try:
             df, liens = ot.avec_liens(fabrique)
         except Ecart as erreur:
             print(f"✗ {nom} : {erreur}", file=sys.stderr)
             return 1
-        ot.ecrire_tableau(RACINE / nom, df, liens, "fr", a_gauche=True)
+        ot.ecrire_tableau(AILLEURS.get(nom, RACINE) / nom, df, liens, "fr", a_gauche=True)
         print(f"✓ fr/{nom} : {len(df)} lignes, {len(liens)} paramètres lus")
     return 0
 
