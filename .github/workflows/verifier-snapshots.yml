@@ -32,6 +32,8 @@ on:
       # contrat, même risque de survivre à la correction du paramètre (#165).
       - 'precis/_seriescache/**'
       - 'scripts/generate_*_tables.py'
+      # Pièces à fournir et pages du JORT des cas de la circulaire n° 42, que le modèle ne porte pas.
+      - 'scripts/circulaire_42_metadonnees.yml'
       - 'scripts/openfisca_tables.py'
       # Le relevé de tarifs de l'impôt sur les sociétés est tenu à la main, mais ses
       # valeurs doivent concorder avec le modèle : le contrôle rejoue quand l'un ou
@@ -95,6 +97,12 @@ jobs:
           uv run python scripts/generate_marche_travail_tables.py
           uv run python scripts/generate_finances_locales_tables.py
           uv run python scripts/generate_sante_tables.py
+          # Les quatre-vingt-un cas de la circulaire n° 42 de 1996 (annexe du chapitre des
+          # prestations familiales) : lus dans les variables de l'indemnité familiale du
+          # secteur public, openfisca-tunisia >= 0.157 (PR #518). Tant que cette version n'est
+          # pas publiée sur master, la borne de `openfisca_tables.py` refuse tous les
+          # générateurs et ce job échoue.
+          uv run python scripts/generate_circulaire_42_tables.py
 
       # POURQUOI UN CONTRÔLE ET NON UN GÉNÉRATEUR ICI. Le relevé de l'impôt sur les
       # sociétés porte des lignes qu'un paramètre ne peut pas porter — la NATURE du
@@ -159,6 +167,8 @@ jobs:
             echo '    uv run python scripts/generate_finances_locales_tables.py'
             echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
             echo '    uv run python scripts/generate_sante_tables.py'
+            echo 'OPENFISCA_TUNISIA_PATH=../openfisca-tunisia PYTHONPATH=scripts \'
+            echo '    uv run python scripts/generate_circulaire_42_tables.py'
             echo '```'
             echo
             echo "puis relire le diff — une valeur qui change est un fait juridique, pas"

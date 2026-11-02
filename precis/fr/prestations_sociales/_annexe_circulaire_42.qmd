@@ -2,143 +2,15 @@
 
 Cette annexe reproduit les annexes 2 et 3 de la [circulaire du Premier ministre n° 42 du 25 octobre 1996](_prestations_familiales.qmd#r-pf-public-circulaire-1996) : les quatre-vingt-un cas d'octroi de l'indemnité familiale et de l'indemnité pour salaire unique aux agents du secteur public, puis le modèle de déclaration de situation familiale. Le principe, la liste des situations et les pièces à fournir sont exposés dans la section @sec-pf-secteur-public du chapitre « Les prestations familiales ».
 
-<!-- TODO (modéliste) : coder ces quatre-vingt-un cas dans openfisca-tunisia (paramètres et formules de l'indemnité familiale et de l'indemnité pour salaire unique du secteur public, une variable d'entrée par position du père, de la mère et des enfants) et les reprendre en tests YAML, un test par code de 1 à 81 ; les fichiers sont `openfisca_tunisia/variables/prestations/contributives/indemnites_familiales_secteur_public.py` et `tests/formulas/prestations/contributives/indemnites_familiales_secteur_public.yaml` (PR openfisca/openfisca-tunisia#518). Les ancres r-pf-public-annexe2 et r-pf-public-annexe3 sont les renvois de ces tests vers le texte. -->
+<!-- PROVENANCE : les sept tableaux de l'annexe 2 sont engendrés (`tables/circulaire_42_annexe_2.md`, par `scripts/generate_circulaire_42_tables.py`) depuis les variables de l'indemnité familiale et de l'indemnité pour salaire unique du secteur public d'openfisca-tunisia, version 0.157 au moins (PR openfisca/openfisca-tunisia#518) : codes, positions du père, de la mère et de l'enfant, bénéficiaire et payeur de chaque indemnité. Les pièces à fournir et les pages du JORT viennent de `scripts/circulaire_42_metadonnees.yml`. Source des valeurs : circulaire n° 42 du 25 octobre 1996, annexe 2 (JORT n° 94 du 22 novembre 1996, p. 2353-2362). Ne pas modifier le snapshot à la main : corriger le modèle ou les métadonnées, puis régénérer. -->
 
 L'annexe 2 de la circulaire, intitulée « Les indemnités familiales au titre des enfants de l'agent public, ou de ses enfants adoptés, et l'indemnité pour salaire unique », range les cas en sept situations : parents en vie et non divorcés, père décédé, mère décédée, divorce avec garde au père, divorce avec garde à la mère, divorce avec garde partagée, tuteur ou tutrice. Chaque cas croise la position du père, celle de la mère et celle des enfants (communs, ou d'un premier mariage de l'un des deux, à sa charge) ; il porte un code de 1 à 81 et dit à qui chacune des deux indemnités est servie, avec les pièces à fournir en plus du contrat de mariage, des extraits de naissance et de l'attestation de scolarité des enfants de 16 ans révolus. L'annexe est publiée au *Journal officiel* n° 94 du 22 novembre 1996, p. 2353-2362. Les tableaux suivent la circulaire dans son ordre, avec ses mots. Là où la traduction française du n° 94 et l'édition arabe du n° 89 diffèrent, le tableau suit l'édition arabe, qui est le texte publié le 5 novembre 1996 : au cas 43, le père bénéficie de la pension de réversion, alors que la traduction française décrit les cas 42 et 43 de la même façon (père ne la percevant pas) et sert l'indemnité pour salaire unique au 42 seulement ; au cas 34, la déclaration sur l'honneur n'est pas demandée, et elle l'est au cas 35 ([édition arabe de la circulaire](_prestations_familiales.qmd#r-pf-public-circulaire-1996), annexe 2, p. 2540 et 2542).
 
 :::: {.chronologie-repliable titre="Circulaire n° 42 du 25 octobre 1996, annexes 2 et 3 : les quatre-vingt-un cas d'octroi de l'indemnité familiale et de l'indemnité pour salaire unique, et le modèle de déclaration de situation familiale"}
 
-**I. Père et mère en vie, non divorcés** (JORT n° 94 du 22 novembre 1996, p. 2353-2355)
-
-| Cas | Père | Mère | Enfants | Code | Indemnité familiale | Indemnité pour salaire unique | Pièces |
-|---|---|---|---|---|---|---|---|
-| []{#r-pf-public-annexe2}I-A [@circulaire-42-1996, annexe 2, p. 2353-2362] | agent public | agent public | communs | 1 | servie au père | non servie |  |
-|  |  |  | d'un premier mariage du père, à sa charge | 2 | servie au père | non servie |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 3 | le montant dont elle bénéficiait avant le second mariage | non servie |  |
-| I-B | agent public | exerce une activité professionnelle libérale | communs | 4 | servie au père | non servie |  |
-|  |  |  | d'un premier mariage du père, à sa charge | 5 | servie au père | non servie |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 6 | non servie | non servie |  |
-| I-C | agent public | salariée | communs | 7 | servie au père | non servie |  |
-|  |  |  | d'un premier mariage du père, à sa charge | 8 | servie au père | non servie |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 9 | non servie | non servie |  |
-| I-D | agent public | n'exerce pas d'activité professionnelle rémunérée et ne bénéficie pas d'une pension | communs | 10 | servie au père | servie au père | déclaration sur l'honneur certifiant que le conjoint n'exerce pas une activité professionnelle rémunérée |
-|  |  |  | d'un premier mariage du père, à sa charge | 11 | servie au père | servie au père |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 12 | non servie | non servie |  |
-| I-E | agent public | bénéficie d'une pension de l'une des caisses sociales | communs | 13 | servie au père | non servie |  |
-|  |  |  | d'un premier mariage du père, à sa charge | 14 | servie au père | non servie |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 15 | non servie | non servie |  |
-| I-F | exerce une activité professionnelle libérale | agent public | communs | 16 | servie à la mère | non servie | déclaration sur l'honneur certifiant que la famille ne bénéficie pas des indemnités familiales de la part d'aucune administration |
-|  |  |  | d'un premier mariage du père, à sa charge | 17 | non servie | non servie |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 18 | le montant dont elle bénéficiait avant le second mariage | non servie |  |
-| I-G | salarié bénéficiant des indemnités familiales | agent public | communs | 19 | non servie à la mère | non servie à la mère |  |
-|  |  |  | d'un premier mariage du père, à sa charge | 20 | servie au père de la part de la CNSS | non servie |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 21 | le montant dont elle bénéficiait avant le second mariage | non servie |  |
-| I-H | salarié ne bénéficiant pas des indemnités familiales | agent public | communs | 22 | servie à la mère | non servie | déclaration sur l'honneur certifiant que la famille ne bénéficie pas des indemnités familiales de la part d'aucune administration |
-|  |  |  | d'un premier mariage du père, à sa charge | 23 | non servie | non servie |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 24 | le montant dont elle bénéficiait avant le second mariage | non servie |  |
-| I-I | n'exerce pas d'activité professionnelle rémunérée et ne bénéficie pas d'une pension | agent public | communs | 25 | servie à la mère | servie à la mère | déclaration sur l'honneur certifiant que le conjoint n'exerce pas une activité professionnelle rémunérée |
-|  |  |  | d'un premier mariage du père, à sa charge | 26 | non servie | non servie |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 27 | le montant dont elle bénéficiait avant le second mariage | id. (cellule commune aux deux colonnes) |  |
-| I-J | bénéficie d'une pension de retraite au titre d'un régime ouvrant droit au bénéfice des indemnités familiales | agent public | communs | 28 | non servie à la mère | non servie à la mère |  |
-|  |  |  | d'un premier mariage du père, à sa charge | 29 | servie au père de la part de la caisse de retraite | non servie |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 30 | le montant dont elle bénéficiait avant le second mariage | non servie |  |
-| I-K | bénéficie d'une pension de retraite au titre d'un régime n'ouvrant pas droit au bénéfice des indemnités familiales | agent public | communs | 31 | servie à la mère | non servie | déclaration sur l'honneur certifiant que la famille ne bénéficie pas des indemnités familiales de la part d'aucune administration |
-|  |  |  | d'un premier mariage du père, à sa charge | 32 | non servie | non servie |  |
-|  |  |  | d'un premier mariage de la mère, à sa charge | 33 | le montant dont elle bénéficiait avant le second mariage | non servie |  |
-
-: Circulaire n° 42, annexe 2, I : cas d'octroi {#tbl-pf-public-annexe2-i}
-
-**II. Père décédé, mère non remariée** (JORT n° 94 du 22 novembre 1996, p. 2355-2356)
-
-| Cas | Père | Mère | Enfants | Code | Indemnité familiale | Indemnité pour salaire unique | Pièces |
-|---|---|---|---|---|---|---|---|
-| II-A | agent public | agent public bénéficiant de la pension de réversion et des indemnités familiales | communs | 34 | servie par la caisse de retraite | non servie |  |
-| II-B | décédé ayant exercé une activité professionnelle libérale | agent public | communs | 35 | servie à la mère | servie à la mère |déclaration sur l'honneur certifiant que la famille ne bénéficie pas des indemnités familiales de la part d'aucune administration |
-| II-C | salarié décédé | agent public bénéficiant de la pension de réversion et des indemnités familiales | communs | 36 | servie à la mère par la CNSS | non servie |  |
-| II-D | salarié décédé | agent public bénéficiant de la pension de réversion et non bénéficiaire des indemnités familiales | communs | 37 | servie à la mère | non servie | déclaration sur l'honneur certifiant que la famille ne bénéficie pas des indemnités familiales de la part d'aucune administration |
-| II-E | salarié décédé | agent public ne bénéficiant ni des indemnités familiales ni de la pension de réversion | communs | 38 | servie à la mère | servie à la mère | déclaration sur l'honneur certifiant que la famille ne bénéficie pas des indemnités familiales de la part d'aucune administration |
-| II-F | décédé, n'avait pas exercé une activité professionnelle rémunérée et n'avait pas de pension de retraite | agent public | communs | 39 | servie à la mère | servie à la mère | déclaration sur l'honneur certifiant que la famille ne bénéficie pas des indemnités familiales de la part d'aucune administration |
-| II-G | retraité décédé | agent public bénéficiant de la pension de réversion et des indemnités familiales | communs | 40 | servie à la mère par la caisse qui lui sert la pension de réversion | non servie |  |
-| II-H | retraité décédé | agent public bénéficiant de la pension de réversion et ne bénéficiant pas des indemnités familiales | communs | 41 | servie à la mère | non servie |  |
-
-: Circulaire n° 42, annexe 2, II : cas d'octroi {#tbl-pf-public-annexe2-ii}
-
 <!-- TODO (documentaliste) : le cas 34 dit l'indemnité familiale « servie par la caisse de retraite » sans nommer le bénéficiaire, dans les éditions arabe et française ; la mère est la seule personne en cause (elle perçoit déjà la pension de réversion et les indemnités familiales), mais le texte ne le dit pas. À confirmer auprès de la caisse ou d'une circulaire d'application. -->
 
-**III. Mère décédée, père non remarié** (JORT n° 94 du 22 novembre 1996, p. 2356)
-
-| Cas | Père | Mère | Enfants | Code | Indemnité familiale | Indemnité pour salaire unique | Pièces |
-|---|---|---|---|---|---|---|---|
-| III-A | agent public non remarié et ne bénéficiant pas de la pension de réversion | décédée | communs | 42 | servie au père | servie au père |  |
-| III-B | agent public non remarié et bénéficiant de la pension de réversion | décédée | communs | 43 | servie au père | non servie |  |
-| III-C | exerce une activité professionnelle libérale | agent public décédée | communs | 44 | non servie | non servie |  |
-| III-D | salarié | agent public décédée | communs | 45 | non servie | non servie |  |
-| III-E | n'exerce pas d'activité professionnelle rémunérée et ne bénéficie pas de pension | agent public décédée | communs | 46 | non servie | non servie |  |
-| III-F | retraité bénéficiant d'une pension | agent public décédée | communs | 47 | non servie | non servie |  |
-
-: Circulaire n° 42, annexe 2, III : cas d'octroi {#tbl-pf-public-annexe2-iii}
-
-**IV. Divorce, le père assure la garde et n'est pas remarié** (JORT n° 94 du 22 novembre 1996, p. 2357)
-
-| Cas | Père | Mère | Enfants | Code | Indemnité familiale | Indemnité pour salaire unique | Pièces |
-|---|---|---|---|---|---|---|---|
-| IV-A | agent public divorcé assurant la garde | agent public divorcée | communs | 48 | servie au père | servie au père | copie du jugement de divorce |
-| IV-B | agent public divorcé assurant la garde | exerce une activité professionnelle libérale et divorcée | communs | 49 | servie au père | servie au père | copie du jugement de divorce |
-| IV-C | agent public divorcé assurant la garde | salariée divorcée | communs | 50 | servie au père | servie au père | copie du jugement de divorce |
-| IV-D | agent public divorcé assurant la garde | n'exerce pas d'activité professionnelle rémunérée, n'est pas titulaire d'une pension et divorcée | communs | 51 | servie au père | servie au père |  |
-| IV-E | agent public divorcé assure la garde | retraité titulaire d'une pension de retraite | communs | 52 | servie au père | servie au père | copie du jugement de divorce |
-| IV-F | exerce une activité professionnelle libérale, divorcé et assurant la garde | agent public divorcée | communs | 53 | non servie | non servie | copie du jugement de divorce |
-| IV-G | salarié divorcé et assure la garde | agent public divorcée | communs | 54 | non servie | non servie |  |
-| IV-H | n'exerce pas d'activité professionnelle rémunérée, n'est pas titulaire d'une pension et assurant la garde | agent public divorcée | communs | 55 | non servie | non servie | copie du jugement de divorce |
-| IV-I | divorcé titulaire d'une pension de retraite et assure la garde | agent public divorcée | communs | 56 | servie au père par la caisse de retraite | servie au père par la caisse de retraite | copie du jugement de divorce |
-
-: Circulaire n° 42, annexe 2, IV : cas d'octroi {#tbl-pf-public-annexe2-iv}
-
-**V. Divorce, la mère assure la garde et n'est pas remariée** (JORT n° 94 du 22 novembre 1996, p. 2358-2359)
-
-| Cas | Père | Mère | Enfants | Code | Indemnité familiale | Indemnité pour salaire unique | Pièces |
-|---|---|---|---|---|---|---|---|
-| V-A | agent public divorcé | agent public divorcée et assure la garde | communs | 57 | servie à la mère par l'employeur du père | servie à la mère par l'employeur du père | copie du jugement de divorce |
-| V-B | agent public divorcé | exerce une activité professionnelle libérale, divorcée et assure la garde | communs | 58 | servie à la mère par l'employeur du père | servie à la mère par l'employeur du père | copie du jugement de divorce |
-| V-C | agent public divorcé | salariée, divorcée et assure la garde | communs | 59 | servie à la mère par l'employeur du père | servie à la mère par l'employeur du père | copie du jugement de divorce |
-| V-D | agent public divorcé | n'exerce pas une activité professionnelle rémunérée, ne perçoit pas de pension, divorcée et assure la garde | communs | 60 | servie à la mère par l'employeur du père | servie à la mère par l'employeur du père | copie du jugement de divorce |
-| V-E | agent public divorcé | titulaire d'une pension de retraite, divorcée et assure la garde | communs | 61 | servie à la mère par l'employeur du père | servie à la mère par l'employeur du père | copie du jugement de divorce |
-| V-F | exerce une activité professionnelle libérale et divorcé | agent public divorcée et assure la garde | communs | 62 | servie à la mère | servie à la mère | copie du jugement de divorce ; déclaration sur l'honneur certifiant que la famille ne bénéficie pas des indemnités familiales de la part d'aucune administration |
-| V-G | salarié divorcé et bénéficie des indemnités familiales | agent public, divorcée et assure la garde | communs | 63 | servie à la mère par la CNSS | servie à la mère par la CNSS |  |
-| V-H | salarié divorcé et ne bénéficie pas des indemnités familiales | agent public, divorcée et assure la garde | communs | 64 | servie à la mère | servie à la mère | copie du jugement de divorce |
-| V-I | n'exerce pas une activité professionnelle rémunérée, n'est pas titulaire d'une pension et divorcé | agent public divorcée et assure la garde | communs | 65 | servie à la mère | servie à la mère | copie du jugement de divorce ; déclaration sur l'honneur certifiant que le père n'exerce pas d'activité professionnelle rémunérée et n'est pas titulaire d'une pension |
-| V-J | retraité disposant d'une pension au titre d'un régime lui ouvrant le droit de bénéficier des indemnités familiales et divorcé | agent public divorcée et assure la garde | communs | 66 | servie à la mère par la caisse servant la pension du père | servie à la mère par la caisse servant la pension du père |  |
-| V-K | retraité disposant d'une pension au titre d'un régime de retraite ne lui ouvrant pas droit au bénéfice des indemnités familiales et divorcé | agent public divorcée et assure la garde | communs | 67 | servie à la mère | servie à la mère | copie du jugement de divorce |
-
-: Circulaire n° 42, annexe 2, V : cas d'octroi {#tbl-pf-public-annexe2-v}
-
-**VI. Divorce, garde assurée conjointement par les parents, non remariés** (JORT n° 94 du 22 novembre 1996, p. 2360-2361)
-
-| Cas | Père | Mère | Enfants | Code | Indemnité familiale | Indemnité pour salaire unique | Pièces |
-|---|---|---|---|---|---|---|---|
-| VI-A | agent public divorcé et assure la garde de quelques enfants | agent public, divorcée et assure la garde de quelques enfants | communs | 68 | servie au père et à la mère par l'employeur du père, en fonction du nombre des enfants dont la garde est assurée | servie au père et à la mère par l'employeur du père, en fonction du nombre des enfants dont la garde est assurée | copie du jugement de divorce |
-| VI-B | agent public divorcé et assure la garde de quelques enfants | exerce une activité professionnelle libérale, divorcée et assure la garde de quelques enfants | communs | 69 | servie au père et à la mère par l'employeur du père, en fonction du nombre des enfants dont la garde est assurée | servie au père et à la mère par l'employeur du père, en fonction du nombre des enfants dont la garde est assurée | copie du jugement de divorce |
-| VI-C | agent public divorcé et assure la garde de quelques enfants | salariée divorcée et assure la garde de quelques enfants | communs | 70 | servie au père et à la mère par l'employeur du père, en fonction du nombre des enfants dont la garde est assurée | servie au père et à la mère par l'employeur du père, en fonction du nombre des enfants dont la garde est assurée | copie du jugement de divorce |
-| VI-D | agent public divorcé et assure la garde de quelques enfants | n'exerce pas d'activité professionnelle rémunérée, ne perçoit pas de pensions, divorcée et assure la garde de quelques enfants | communs | 71 | servie au père et à la mère par l'employeur du père, en fonction du nombre des enfants dont la garde est assurée | servie au père et à la mère par l'employeur du père, en fonction du nombre des enfants dont la garde est assurée | copie du jugement de divorce ; déclaration sur l'honneur certifiant que la mère n'exerce pas une activité professionnelle rémunérée |
-| VI-E | agent public divorcé et assure la garde de quelques enfants | divorcée, titulaire d'une pension de retraite et assure la garde de quelques enfants | communs | 72 | servie au père et à la mère par l'employeur du père, en fonction du nombre des enfants dont la garde est assurée | servie au père et à la mère par l'employeur du père, en fonction du nombre des enfants dont la garde est assurée | copie du jugement de divorce |
-| VI-F | divorcé, exerce une activité professionnelle libérale et assure la garde de quelques enfants | agent public, divorcée et assure la garde de quelques enfants | communs | 73 | servie à la mère en fonction du nombre des enfants dont elle assure la garde et n'est pas servie au père | servie à la mère en fonction du nombre des enfants dont elle assure la garde et n'est pas servie au père | copie du jugement de divorce ; déclaration sur l'honneur certifiant que la famille ne bénéficie pas des indemnités familiales de la part d'aucune administration |
-| VI-G | salarié, divorcé, bénéficie des indemnités familiales et assure la garde de quelques enfants | agent public, divorcée et assure la garde de quelques enfants | communs | 74 | servie au père et à la mère en fonction du nombre des enfants dont ils assurent la garde, par la CNSS | servie au père et à la mère en fonction du nombre des enfants dont ils assurent la garde, par la CNSS |  |
-| VI-H | divorcé, salarié ne bénéficie pas des indemnités familiales et assure la garde de quelques enfants | agent public, divorcée et assure la garde de quelques enfants | communs | 75 | servie à la mère en fonction du nombre des enfants dont elle assure la garde et n'est pas servie au père | servie à la mère en fonction du nombre des enfants dont elle assure la garde et n'est pas servie au père | copie du jugement de divorce |
-| VI-I | divorcé, n'exerce pas une activité professionnelle rémunérée, n'est pas titulaire d'une pension et assure la garde de quelques enfants | agent public, divorcée et assure la garde de quelques enfants | communs | 76 | servie à la mère en fonction du nombre des enfants dont elle assure la garde et n'est pas servie au père | servie à la mère en fonction du nombre des enfants dont elle assure la garde et n'est pas servie au père | copie du jugement de divorce ; déclaration sur l'honneur certifiant que le père n'exerce pas d'activité professionnelle rémunérée et n'est pas titulaire d'une pension |
-| VI-J | retraité, divorcé, titulaire d'une pension et bénéficie des indemnités familiales et assure la garde de quelques enfants | agent public, divorcée et assure la garde de quelques enfants | communs | 77 | servie au père et à la mère en fonction du nombre des enfants dont ils assurent la garde, par la caisse de retraite servant la pension du père | servie au père et à la mère en fonction du nombre des enfants dont ils assurent la garde, par la caisse de retraite servant la pension du père |  |
-| VI-K | retraité, divorcé, titulaire d'une pension, ne bénéficie pas des indemnités familiales et assure la garde de quelques enfants | agent public, divorcée et assure la garde de quelques enfants | communs | 78 | servie à la mère en fonction du nombre des enfants dont elle assure la garde et n'est pas servie au père | servie à la mère en fonction du nombre des enfants dont elle assure la garde et n'est pas servie au père | copie du jugement de divorce |
-
-: Circulaire n° 42, annexe 2, VI : cas d'octroi {#tbl-pf-public-annexe2-vi}
-
-**VII. Le tuteur ou la tutrice** (JORT n° 94 du 22 novembre 1996, p. 2362)
-
-| Cas | Situation du tuteur (ou de la tutrice) | Situation des enfants | Code | Indemnité familiale | Indemnité pour salaire unique | Pièces |
-|---|---|---|---|---|---|---|
-| VII-A | le tuteur (trice) est célibataire | enfants à charge | 79 | servie au tuteur (trice) | servie au tuteur (trice) | copie de l'acte de tutelle officieuse |
-| VII-B | le tuteur (trice) est marié(e) à un conjoint n'exerçant pas une activité professionnelle rémunérée | enfants à charge | 80 | servie au tuteur (trice) | servie au tuteur (trice) | copie de l'acte de tutelle officieuse ; déclaration sur l'honneur certifiant que le conjoint n'exerce pas une activité professionnelle rémunérée |
-| VII-C | le tuteur (trice) est marié(e) à un conjoint disposant d'un revenu professionnel ou d'une pension | enfants à charge | 81 | servie au tuteur (trice) | non servie | copie de l'acte de tutelle officieuse |
-
-: Circulaire n° 42, annexe 2, VII : cas d'octroi {#tbl-pf-public-annexe2-vii}
+{{< include tables/circulaire_42_annexe_2.md >}}
 
 
 L'annexe 3, « Déclaration afférente à la situation familiale des agents bénéficiant des indemnités familiales », est le modèle de déclaration annoncé par la circulaire (JORT n° 94 du 22 novembre 1996, p. 2363-2364).

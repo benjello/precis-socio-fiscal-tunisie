@@ -197,7 +197,15 @@ PAQUETS = {
         # `fiscalite_indirecte/droits_douane/`) : en deçà, les tableaux de la redevance et du
         # minimum de perception du chapitre « Droits de douane » ne pourraient être engendrés.
         # Aucun chemin déjà lu ne bouge. La borne passe à la 0.156, publiée le 28 octobre 2026.
-        "version_minimale": (0, 156),
+        # La 0.157 verse l'indemnité familiale et l'indemnité pour salaire unique du secteur
+        # public (PR #518, `variables/prestations/contributives/
+        # indemnites_familiales_secteur_public.py`) : les quatre-vingt-un cas de l'annexe 2 de
+        # la circulaire n° 42 de 1996, que `generate_circulaire_42_tables.py` lit pour engendrer
+        # l'annexe du chapitre « Les prestations familiales ». En deçà, le module n'existe pas
+        # et le snapshot ne pourrait être engendré. Aucun chemin déjà lu ne bouge. La borne
+        # passe à la 0.157, PAS ENCORE PUBLIÉE à la date de cette PR : tant que #518 n'est pas
+        # fusionnée et publiée, aucun générateur ne s'exécute (la borne les refuse tous).
+        "version_minimale": (0, 157),
     },
 }
 
