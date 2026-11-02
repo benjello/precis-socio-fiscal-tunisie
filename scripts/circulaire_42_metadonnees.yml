@@ -49,7 +49,7 @@ situations:
     enfants: "enfants à charge"
 
 # Positions dont le libellé du modèle décrit son regroupement des cas plutôt que le mot de la
-# circulaire. Clé : membre de `StatutParentSecteurPublic`. Toute autre position garde le
+# circulaire. Clé : membre de `StatutParent`. Toute autre position garde le
 # libellé du modèle.
 positions:
   salarie: "salarié(e)"

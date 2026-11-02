@@ -158,7 +158,7 @@ def cellule_indemnite(modele: dict, meta: dict, code: int, colonne: str, valeur)
         return meta["garde_partagee"][symbole].format(payeur=phrase_payeur)
     if symbole not in SYMBOLES_BENEFICIAIRE:
         raise Ecart(f"cas {code} : bénéficiaire inconnu {symbole!r}")
-    libelle = _libelle(modele, "BeneficiaireIndemniteSecteurPublic", SYMBOLES_BENEFICIAIRE[symbole])
+    libelle = _libelle(modele, "Allocataire", SYMBOLES_BENEFICIAIRE[symbole])
     return minuscule(libelle) + phrase_payeur
 
 
@@ -173,7 +173,7 @@ def position_parent(modele: dict, meta: dict, meta_situation: dict, cle: str,
             raise Ecart(f"position indifférente sans qualificatif pour {cle}")
         return qualificatif
     texte = meta.get("positions", {}).get(membre)
-    texte = texte or minuscule(_libelle(modele, "StatutParentSecteurPublic", membre))
+    texte = texte or minuscule(_libelle(modele, "StatutParent", membre))
     return f"{texte}, {qualificatif}" if qualificatif else texte
 
 
@@ -187,7 +187,7 @@ def pieces_du_cas(meta: dict, code: int) -> str:
 
 def ordre_situations(modele: dict) -> list[str]:
     """Les situations dans l'ordre de l'annexe (I à VII) : celui de l'`Enum`."""
-    return list(modele["libelles"]["SituationParentsSecteurPublic"])
+    return list(modele["libelles"]["SituationParents"])
 
 
 def verifier(modele: dict, meta: dict) -> None:
@@ -222,7 +222,7 @@ def construire(modele: dict, meta: dict) -> str:
     for numero, nom in enumerate(situations, start=1):
         romain = ROMAINS[numero]
         meta_sit = meta["situations"][nom]
-        titre = _libelle(modele, "SituationParentsSecteurPublic", nom)
+        titre = _libelle(modele, "SituationParents", nom)
         titre = titre.rsplit(" (", 1)[0] if titre.endswith(f"({romain})") else titre
         lignes = [ligne for ligne in modele["cas"] if ligne[2] == nom]
         tuteur = nom == "tutelle"
@@ -244,7 +244,7 @@ def construire(modele: dict, meta: dict) -> str:
             ]
             pieces = pieces_du_cas(meta, code)
             if tuteur:
-                situation_tuteur = _libelle(modele, "StatutTuteurSecteurPublic", st_tuteur)
+                situation_tuteur = _libelle(modele, "StatutTuteur", st_tuteur)
                 cellules = [lettre, minuscule(situation_tuteur), meta_sit["enfants"], str(code),
                             *indemnites, pieces]
             else:
@@ -252,7 +252,7 @@ def construire(modele: dict, meta: dict) -> str:
                     etiquette,
                     position_parent(modele, meta, meta_sit, "pere", pere) if premier else "",
                     position_parent(modele, meta, meta_sit, "mere", mere) if premier else "",
-                    _libelle(modele, "FiliationEnfantSecteurPublic", filiation),
+                    _libelle(modele, "FiliationEnfant", filiation),
                     str(code), *indemnites, pieces,
                 ]
             morceaux.append("| " + " | ".join(cellules) + " |")

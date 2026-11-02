@@ -24,18 +24,18 @@ except ImportError:  # pragma: no cover
 SOURCE = '''
 from openfisca_tunisia.variables.base import *
 
-class SituationParentsSecteurPublic(Enum):
+class SituationParents(Enum):
     __order__ = "a b"
     a = "Père et mère en vie, non divorcés (I)"
     b = "Père décédé, mère non remariée (II)"
 
-class BeneficiaireIndemniteSecteurPublic(Enum):
+class Allocataire(Enum):
     non_servie = "Non servie"
     pere = "Servie au père"
 
 _N = ("N", None)
 _c, _ap = "communs", "agent_public"
-_S = SituationParentsSecteurPublic
+_S = SituationParents
 
 CAS_ANNEXE_2 = [
     (1, "I-A", "a", _ap, _ap, _c, None, ("P", "C"), _N),
@@ -47,7 +47,7 @@ META = {
     "garde_partagee": {"G": "servie au père et à la mère{payeur}"},
     "libelles_circulaire": {7: {"indemnite_familiale": "texte de la circulaire"}},
 }
-MODELE = {"libelles": {"BeneficiaireIndemniteSecteurPublic": {
+MODELE = {"libelles": {"Allocataire": {
     "non_servie": "Non servie", "pere": "Servie au père"}}, "cas": []}
 
 
@@ -58,8 +58,8 @@ class LectureDuModule(unittest.TestCase):
             modele["cas"], [(1, "I-A", "a", "agent_public", "agent_public", "communs", None,
                              ("P", "C"), ("N", None))])
         self.assertEqual(
-            modele["libelles"]["BeneficiaireIndemniteSecteurPublic"]["pere"], "Servie au père")
-        self.assertNotIn("__order__", modele["libelles"]["SituationParentsSecteurPublic"])
+            modele["libelles"]["Allocataire"]["pere"], "Servie au père")
+        self.assertNotIn("__order__", modele["libelles"]["SituationParents"])
 
     def test_une_table_non_litterale_fait_echouer(self):
         with self.assertRaises(g.Ecart):
@@ -99,7 +99,7 @@ class MiseEnForme(unittest.TestCase):
             g.position_parent({}, {}, {}, "mere", None)
 
     def test_libelle_de_position_des_metadonnees_puis_du_modele(self):
-        modele = {"libelles": {"StatutParentSecteurPublic": {
+        modele = {"libelles": {"StatutParent": {
             "salarie": "Salarié(e), sans distinction", "sans_activite": "N'exerce pas"}}}
         meta = {"positions": {"salarie": "salarié(e)"}}
         self.assertEqual(g.position_parent(modele, meta, {}, "pere", "salarie"), "salarié(e)")
