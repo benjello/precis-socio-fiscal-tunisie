@@ -4465,8 +4465,14 @@
     couverture: 'Rapport annuel de la direction générale des impôts sur 2014 (portail ancien du ministère, 40 pages, arabe) : 16 pages sur 40 parcourues à l''image (plan d''action, contrôle fiscal, contentieux, formation, moyens) : rapport d''activité administrative, aucune série de crédit ou de restitution de TVA. Rapport sur 2013 non parcouru à l''image. Lacunes : 24 pages du rapport de 2014 et tout le rapport de 2013 non vues ; rapports postérieurs à 2014 absents du corpus local.'
     couvert_jusqu_au: 2014-12-31
     resultat: aucun
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Rapports annuels de la direction générale des impôts sur 2013 (42 pages) et sur 2014 (40 pages), portail ancien du ministère, arabe, police non Unicode : pages 11, 19, 21, 22, 24 et 27 du rapport sur 2013 et 20 à 25 du rapport sur 2014 lues à l''image (pages choisies par les mots de la TVA et de la restitution dans la couche texte). Résultat : restitutions de 2013 et 2014 (670,1 et 427,2 MD, dont 402,3 et 307,2 MD de TVA) identiques à celles du rapport sur le contrôle fiscal ; montants autorisés à la restitution (652,3 et 467,1 MD, tous impôts) ; attestations de suspension de la TVA par cadre légal, 2011-2014. Aucun stock de crédit de TVA ni série de restitutions antérieure à 2010. Lacunes : 31 pages du rapport sur 2013 et 34 pages du rapport sur 2014 non lues à l''image ; rapports postérieurs à 2014 absents du corpus local.'
+    couvert_jusqu_au: 2014-12-31
+    resultat: aucun
   a_faire:
-  - parcourir à l'image les 24 pages restantes du rapport de la direction générale des impôts sur 2014 et le rapport sur 2013
+  - parcourir à l'image les pages restantes des rapports de la direction générale des impôts sur 2013 (31 pages) et sur 2014 (34 pages)
   - chercher les rapports annuels de la direction générale des impôts postérieurs à 2014
   - parcourir les rapports annuels de performance de la mission Finances
 
