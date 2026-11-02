@@ -6,6 +6,18 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Clés ajoutées depuis la poussée du 02/11/2026 (état du 2 novembre 2026)
+
+Liste établie en comparant les `references.json` du commit qui a consigné la poussée (343badda) et ceux de `master` après la PR #718 : 64 clés absentes du premier état. Elle est indicative ; le `dry-run` de la prochaine poussée fait foi. Rien n'est poussé ; feu vert humain requis.
+- **Prestations sociales** : `decret81-731` (décret n° 81-731, allocataire du privé, PR #718).
+- **Rémunérations publiques** (21, FR et AR) : `arrete-1976-09-23-cabinets`, `circulaire-pm-45-1978`, `decret89-873`, `decret89-874`, `decret90-1622`, `decret90-1623`, `decret91-1665`, `decret91-1666`, `decret2006-1160` à `decret2006-1165`, `decret2006-1167`, `decret2006-1168`, `decret2009-910`, `cc-banques-avenant1-2014`, `cc-banques-avenant2-2016`, `cc-banques-avenant3-2017`, `cc-banques-avenant4-2019`.
+- **Entreprises publiques** (25, français seul) : `lf-2016-ar` (loi de finances pour 2016, édition arabe), `arrete2026-07-24-oc`, les décrets de l'Office du commerce (`decret2011-325-oc` à `decret2025-344-oc`, seize clés), de l'Office des terres domaniales (`decret73-390-otd`, `decret78-60-otd`, `decret2001-2430-otd`, `decret2001-2431-otd`) et de Tunisair (`decret2015-154-tunisair`, `-155-`, `-156-`).
+- **Éducation** (15, français seul) : arrêtés du baccalauréat (`arrete1963-04-01-bac` à `arrete1994-04-30-bac-consistance`, huit clés), du certificat de fin d'études primaires (`arrete1959-04-15-cfep`, `arrete1963-05-31-cfep`), `decret86-681`, `decret92-1180`, `decret96-681`, `decret2000-2168`, `decret2019-1085`.
+- **Fiscalité** (2, FR et AR) : `minfin-dgi-rapport-2013`, `minfin-dgi-rapport-2014`.
+- **Changement de livre, sans clé nouvelle** : `loi63-26` (déjà dans les caisses et les cotisations) et les notices de l'histoire des soins (`loi58-67`, `loi60-13`, `decret69-399`, `decret74-899`, `decret91-487`, `arrete-1996-12-19-tarifs`, etc.) sont rattachées aussi au livre des prestations sociales depuis les PR #716 et #718. Le livre de rattachement est à revoir au prochain contrôle de rangement.
+- **Annexe de la circulaire n° 42** (PR #710, #713) : cite `circulaire-42-1996`, déjà versée ; aucune clé nouvelle.
+- **Déclassement des 103** clés citées par plusieurs livres : toujours en attente de feu vert humain (`appliquer-rangement-blanc` puis `appliquer-rangement`).
+
 ## Lot B de la fiscalité (31/10/2026) : clés de l'IRPP et décrets de TVA, bibliographe
 
 - **Vingt clés de l'IRPP** (passe du 07/09/2026) : contrôlées. Les onze textes législatifs (`lf-2005`, `lf-2007`, `lf-2010`, `lf-2016`, `lf-2018`, `lf-2020`, `lf-2021`, `lf-2023`, `lf-2024`, `dl2021-21-lf2022` qui remplace `lf-2022` depuis la fusion des doublons, et `loi-avantages-fiscaux-2017`) et les neuf notes communes sont présents dans les `references.json` français et arabe. Dans le fonds commun, l'entrée française de `lf-2005`, `lf-2007` et `lf-2010` porte la page de début de la loi (3432, 4380, 3911) et l'entrée arabe la page des articles cités (3440, 4387, 3919), qui est celle de l'édition française : les deux sont exactes, les citations du chapitre donnent leur propre page. `lf-2023` n'a pas de champ `page` (page de fin non relevée). Rien à recopier.
