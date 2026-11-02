@@ -91,6 +91,30 @@ pour 4 D, 600). Toute valeur se relève à l'image.
 
 Non traitée ici : extraction par `pdftotext` puis normalisation NFKC, sans OCR (point 2 du backlog).
 
+## 6. OCR arabe du 2 novembre 2026 (entreprises publiques)
+
+- `tesseract -l ara` n'est pas installé avec le système (langues `eng`, `fra`, `osd`) : le modèle
+  est dans `~/projets/PDFs-legislation-tunisie/tessdata` (`TESSDATA_PREFIX`).
+- Les éditions arabes de 2014 à 2026 ont presque toutes une couche texte : elle est en formes de
+  présentation (U+FE70-FEFF), avec des marques d'orientation (U+202A-202E) et des caractères d'usage
+  privé (U+E000-F8FF) au milieu des mots. Après `unicodedata.normalize("NFKC", …)` et retrait de ces
+  caractères et des voyelles brèves, le plein texte arabe marche (2014-2026 : de 0 à 6 fascicules sans
+  texte par an). Sans ce traitement, la recherche manque les mots coupés par un caractère d'usage
+  privé, et « environ la moitié » des fascicules paraissent sans couche texte.
+- Fascicules arabes sans couche texte : 2010 (105), 2011 (90 sur 99), 2012 (103), 2013 (87 sur 105).
+  Leurs trois premières pages (sommaire) sont océrisées à 150 dpi (`psm 4`), contrôle positif fait
+  (rapport de la Cour de discipline financière dans le n° 56 de 2010 ; lois de garantie des n° 50, 59
+  et 65 de 2012). Textes rangés dans `~/projets/tunisia-data/data/raw/jort-ocr/` :
+  `jort-AAAA-ar-pdf1-3_sommaires-sans-couche-texte.txt` (2010 à 2013).
+- Articles océrisés à 300 dpi : loi de finances pour 2012 (`jort-2012-n01-ar-pdf1-16_lf-2012.txt`),
+  loi de finances complémentaire pour 2012 (`jort-2012-n39-ar-pdf1-22_lfc-2012.txt`), loi de finances
+  pour 2013 (`jort-2013-n01-ar-pdf1-20_lf-2013.txt` et `…pdf21-28…`). Les deux offices n'y sont pas
+  nommés ; les tableaux de crédits qui suivent les articles ne sont pas océrisés.
+- Les dépôts du *Journal officiel* de 2011 à 2019 se lisent à l'image sur la dernière page de
+  l'édition arabe (ou sur l'une des trois pages qui la précèdent) ; l'édition française n'en porte pas.
+- Fiches : `r-cdf-rapports-apres-2009`, `r-onh-oc-garanties-apres-2011`,
+  `r-oc-prix-reduits-retrocession`, `r-oc-subvention-semences-apres-2019`.
+
 ## Limites
 
 - Les images lues sont les pages 3 (1965), 34 et 35 (1975), 18 (1990), 24 (1988) ; les autres
