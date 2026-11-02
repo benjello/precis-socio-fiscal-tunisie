@@ -1,47 +1,72 @@
-# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-23
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-10-26
 # séries (tunisia_data) : recettes-fiscales-composition, irpp-ratios
 # sources (citation) : @minfin-recettes-fiscales, @minfin-indicateurs-fp
 # fiches : sources/minfinances-recettes-fiscales.md
-# méthode/hypothèses : sources/minfinances-recettes-fiscales.md
+# méthode/hypothèses : sources/minfinances-recettes-fiscales.md, LE PIB DU MINISTÈRE (`pib_minfin_MDT`) N'EST PAS D'UNE SEULE BASE : base 1983 jusqu'en 1996 (présumée avant 1992), base 1997 en 1997-2001 et 2005-2009, valeurs propres au ministère en 2002-2004 et 2025, base 2015 de l'INS de 2010 à 2024 (rétropolée par l'INS pour 2010-2014). RUPTURES DE SÉRIE (colonne `rupture`) : 1997 (niveau + 9,8 %), 2002, 2005, 2010 (niveau + 4,9 %), 2025. Tracer toute part du PIB par segments (`segment_pib`), jamais d'un trait continu. `pib_cnat_MDT` est le PIB de la série `masse-salariale-ratios` : il n'est celui des Comptes de la nation que pour 2010-2024, et ses valeurs ont changé en octobre 2026 : 2012-2014 (base 1997 → base 2015 rétropolée : 70 354,4 → 73 895,4 ; 75 144,1 → 79 096,6 ; 80 865,5 → 85 345,7) et 2023-2024 (dernière édition des Comptes de la nation : 149 733,8 → 149 793,6 ; 159 760,6 → 159 852,7) ; il est égal à `pib_minfin_MDT` de 1990 à 2025, sauf 2023-2024 où le ministère garde l'édition 2020-2024. Voir sources/minfinances-recettes-fiscales.md.
 # note : مردود معاليم الاستهلاك مقارنة بالناتج المحلي الإجمالي ونفقات الدولة، 1986-2025
-السنة,% من الناتج المحلي الإجمالي (وزارة المالية),% من نفقات الدولة,% من الناتج المحلي الإجمالي (الحسابات القومية),% من المداخيل الجبائية,المعلوم على الاستهلاك (م.د)
-1986,1.45,,,6.35,103.6
-1987,1.6,,,7.71,128.5
-1988,2.31,,,11.29,200.1
-1989,3.0,,,14.79,287.8
-1990,3.01,10.24,3.01,15.01,325.7
-1991,3.33,11.41,3.33,16.27,400.9
-1992,3.24,12.13,3.24,15.78,443.4
-1993,3.27,11.94,3.27,15.56,479.2
-1994,3.73,13.78,3.73,17.95,589.3
-1995,3.5,13.01,3.5,17.07,596.2
-1996,3.37,13.21,3.37,16.98,641.9
-1997,3.15,13.65,3.15,17.07,722.4
-1998,3.12,13.82,3.12,16.27,774.8
-1999,3.15,13.91,3.15,16.47,857.8
-2000,3.11,13.8,3.11,16.14,916.276
-2001,3.21,14.15,3.21,16.39,1019.8
-2002,3.25,13.9,3.25,16.25,1044.9
-2003,3.1,13.53,3.1,16.18,1073.1
-2004,3.06,13.49,3.06,15.86,1150.4
-2005,2.89,13.18,2.89,15.33,1211.64
-2006,2.74,12.58,2.74,14.82,1254.9
-2007,2.73,12.19,2.73,14.32,1361.55
-2008,2.65,11.45,2.65,12.93,1464.8
-2009,2.71,11.26,2.71,13.66,1596.2
-2010,2.36,10.96,2.36,12.31,1563.3
-2011,2.17,8.57,2.17,10.78,1468.7
-2012,2.16,8.35,2.27,10.75,1597.6
-2013,2.09,7.52,2.2,10.15,1656.0
-2014,2.17,8.24,2.29,9.91,1850.9
-2015,1.97,7.97,1.97,9.56,1772.9
-2016,2.28,9.02,2.28,11.63,2174.2
-2017,2.44,9.14,2.44,11.77,2492.9
-2018,2.53,9.6,2.53,11.69,2863.6
-2019,2.34,8.79,2.34,9.94,2872.2
-2020,2.42,7.66,2.42,10.64,2889.1
-2021,2.44,7.96,2.44,10.54,3203.2
-2022,2.58,7.8,2.58,10.17,3604.0
-2023,2.54,7.83,2.54,10.01,3809.4
-2024,2.49,7.78,2.49,9.55,3983.8
-2025,2.45,8.07,2.45,9.47,4237.5
+السنة,أساس الناتج,ناتج هذا الأساس (م.د جارية),ناتج أعيد احتسابه للماضي,المعلوم على الاستهلاك (م.د),المعلوم على الاستهلاك % من ناتج هذا الأساس,% من نفقات الدولة,% من المداخيل الجبائية,مصدر الناتج
+1986,1983 (مفترض),7160.4,غير محدّد في المصدر,103.6,1.45,,6.35,Indicateurs des finances publiques 2025 (PIB déduit : déficit en millions de dinars ÷ déficit en % du PIB)
+1987,1983 (مفترض),8035.3,غير محدّد في المصدر,128.5,1.6,,7.71,Indicateurs des finances publiques 2025 (PIB déduit : déficit en millions de dinars ÷ déficit en % du PIB)
+1988,1983 (مفترض),8660.6,غير محدّد في المصدر,200.1,2.31,,11.29,Indicateurs des finances publiques 2025 (PIB déduit : déficit en millions de dinars ÷ déficit en % du PIB)
+1989,1983 (مفترض),9589.8,غير محدّد في المصدر,287.8,3.0,,14.79,Indicateurs des finances publiques 2025 (PIB déduit : déficit en millions de dinars ÷ déficit en % du PIB)
+1990,1983 (مفترض),10815.7,غير محدّد في المصدر,325.7,3.01,10.24,15.01,Indicateurs des finances publiques 2025 (PIB déduit : déficit en millions de dinars ÷ déficit en % du PIB)
+1991,1983 (مفترض),12028.8,غير محدّد في المصدر,400.9,3.33,11.41,16.27,Indicateurs des finances publiques 2025 (PIB déduit : déficit en millions de dinars ÷ déficit en % du PIB)
+1992,1983,13706.0,غير محدّد في المصدر,443.4,3.24,12.13,15.78,"UNdata, National Accounts Official Country Data, tableau 4.1, série 30 (SCN 1968 (base 1983))"
+1993,1983,14663.0,غير محدّد في المصدر,479.2,3.27,11.94,15.56,"UNdata, National Accounts Official Country Data, tableau 4.1, série 30 (SCN 1968 (base 1983))"
+1994,1983,15814.0,غير محدّد في المصدر,589.3,3.73,13.78,17.95,"UNdata, National Accounts Official Country Data, tableau 4.1, série 30 (SCN 1968 (base 1983))"
+1995,1983,17052.0,غير محدّد في المصدر,596.2,3.5,13.01,17.07,"UNdata, National Accounts Official Country Data, tableau 4.1, série 30 (SCN 1968 (base 1983))"
+1996,1983,19066.0,غير محدّد في المصدر,641.9,3.37,13.21,16.98,"UNdata, National Accounts Official Country Data, tableau 4.1, série 30 (SCN 1968 (base 1983))"
+1997,1983,20898.0,غير محدّد في المصدر,722.4,3.46,13.65,17.07,"UNdata, National Accounts Official Country Data, tableau 4.1, série 30 (SCN 1968 (base 1983))"
+1997,1997,22943.9,نعم,722.4,3.15,13.65,17.07,"UNdata, National Accounts Official Country Data, tableau 4.1, série 100 (SCN 1993 (base 1997))"
+1998,1983,22561.0,غير محدّد في المصدر,774.8,3.43,13.82,16.27,"UNdata, National Accounts Official Country Data, tableau 4.1, série 30 (SCN 1968 (base 1983))"
+1998,1997,24827.6,نعم,774.8,3.12,13.82,16.27,"UNdata, National Accounts Official Country Data, tableau 4.1, série 100 (SCN 1993 (base 1997))"
+1999,1983,24672.0,غير محدّد في المصدر,857.8,3.48,13.91,16.47,"UNdata, National Accounts Official Country Data, tableau 4.1, série 30 (SCN 1968 (base 1983))"
+1999,1997,27215.9,نعم,857.8,3.15,13.91,16.47,"UNdata, National Accounts Official Country Data, tableau 4.1, série 100 (SCN 1993 (base 1997))"
+2000,1983,26651.0,غير محدّد في المصدر,916.276,3.44,13.8,16.14,"UNdata, National Accounts Official Country Data, tableau 4.1, série 30 (SCN 1968 (base 1983))"
+2000,1997,29433.3,نعم,916.276,3.11,13.8,16.14,"UNdata, National Accounts Official Country Data, tableau 4.1, série 100 (SCN 1993 (base 1997))"
+2001,1983,28757.2,غير محدّد في المصدر,1019.8,3.55,14.15,16.39,"Les Comptes de la nation, édition 2001-2005 (base 1983)"
+2001,1997,31746.5,نعم,1019.8,3.21,14.15,16.39,"UNdata, National Accounts Official Country Data, tableau 4.1, série 100 (SCN 1993 (base 1997))"
+2002,1983,29923.8,غير محدّد في المصدر,1044.9,3.49,13.9,16.25,"Les Comptes de la nation, édition 2002-2006 (base 1983)"
+2002,1997,32901.4,نعم,1044.9,3.18,13.9,16.25,"UNdata, National Accounts Official Country Data, tableau 4.1, série 100 (SCN 1993 (base 1997))"
+2002,غير مرتبط (وزارة المالية),32112.0,غير محدّد في المصدر,1044.9,3.25,13.9,16.25,Indicateurs des finances publiques 2025 (PIB déduit : déficit en millions de dinars ÷ déficit en % du PIB)
+2003,1983,32170.2,غير محدّد في المصدر,1073.1,3.34,13.53,16.18,"Les Comptes de la nation, édition 2003-2007 (base 1983)"
+2003,1997,35373.3,نعم,1073.1,3.03,13.53,16.18,"UNdata, National Accounts Official Country Data, tableau 4.1, série 100 (SCN 1993 (base 1997))"
+2003,غير مرتبط (وزارة المالية),34630.0,غير محدّد في المصدر,1073.1,3.1,13.53,16.18,Indicateurs des finances publiques 2025 (PIB déduit : déficit en millions de dinars ÷ déficit en % du PIB)
+2004,1983,35216.8,غير محدّد في المصدر,1150.4,3.27,13.49,15.86,"Les Comptes de la nation, édition 2004-2008 (base 1983)"
+2004,1997,38838.6,نعم,1150.4,2.96,13.49,15.86,"UNdata, National Accounts Official Country Data, tableau 4.1, série 100 (SCN 1993 (base 1997))"
+2004,غير مرتبط (وزارة المالية),37601.2,غير محدّد في المصدر,1150.4,3.06,13.49,15.86,Indicateurs des finances publiques 2025 (PIB déduit : déficit en millions de dinars ÷ déficit en % du PIB)
+2005,1983,37751.2,غير محدّد في المصدر,1211.64,3.21,13.18,15.33,"Les Comptes de la nation, édition 2004-2008 (base 1983)"
+2005,1997,41871.0,لا,1211.64,2.89,13.18,15.33,"Les Comptes de la nation, édition 2005-2009 (base 1997)"
+2006,1983,41384.7,غير محدّد في المصدر,1254.9,3.03,12.58,14.82,"Les Comptes de la nation, édition 2004-2008 (base 1983)"
+2006,1997,45756.2,لا,1254.9,2.74,12.58,14.82,"Les Comptes de la nation, édition 2006-2010 (base 1997)"
+2007,1983,45638.1,غير محدّد في المصدر,1361.55,2.98,12.19,14.32,"Les Comptes de la nation, édition 2004-2008 (base 1983)"
+2007,1997,49857.5,لا,1361.55,2.73,12.19,14.32,"Les Comptes de la nation, édition 2007-2011 (base 1997)"
+2008,1983,50440.5,غير محدّد في المصدر,1464.8,2.9,11.45,12.93,"Les Comptes de la nation, édition 2004-2008 (base 1983)"
+2008,1997,55267.8,لا,1464.8,2.65,11.45,12.93,"Les Comptes de la nation, édition 2008-2012 (base 1997)"
+2009,1983,53419.1,غير محدّد في المصدر,1596.2,2.99,11.26,13.66,"UNdata, National Accounts Official Country Data, tableau 4.1, série 30 (SCN 1968 (base 1983))"
+2009,1997,58677.2,لا,1596.2,2.72,11.26,13.66,"Les Comptes de la nation, édition 2009-2013 (base 1997)"
+2010,1997,63054.8,لا,1563.3,2.48,10.96,12.31,"Les Comptes de la nation, édition 2010-2014 (base 1997)"
+2010,2015,66139.7,نعم,1563.3,2.36,10.96,12.31,"INS, classeur « Données annuelles » joint au communiqué « Les Comptes Nationaux changent de base », 15 août 2021"
+2011,1997,64492.2,لا,1468.7,2.28,8.57,10.78,"Les Comptes de la nation, édition 2011-2015 (base 1997)"
+2011,2015,67747.3,نعم,1468.7,2.17,8.57,10.78,"INS, classeur « Données annuelles » joint au communiqué « Les Comptes Nationaux changent de base », 15 août 2021"
+2012,1997,70354.4,لا,1597.6,2.27,8.35,10.75,"Les Comptes de la nation, édition 2012-2016 (base 1997)"
+2012,2015,73895.4,نعم,1597.6,2.16,8.35,10.75,"INS, classeur « Données annuelles » joint au communiqué « Les Comptes Nationaux changent de base », 15 août 2021"
+2013,1997,75144.1,لا,1656.0,2.2,7.52,10.15,"Les Comptes de la nation, édition 2013-2017 (base 1997)"
+2013,2015,79096.6,نعم,1656.0,2.09,7.52,10.15,"INS, classeur « Données annuelles » joint au communiqué « Les Comptes Nationaux changent de base », 15 août 2021"
+2014,1997,80865.5,لا,1850.9,2.29,8.24,9.91,"Les Comptes de la nation, édition 2013-2017 (base 1997)"
+2014,2015,85345.7,نعم,1850.9,2.17,8.24,9.91,"INS, classeur « Données annuelles » joint au communiqué « Les Comptes Nationaux changent de base », 15 août 2021"
+2015,1997,84689.2,لا,1772.9,2.09,7.97,9.56,"Les Comptes de la nation, édition 2013-2017 (base 1997)"
+2015,2015,89802.2,لا,1772.9,1.97,7.97,9.56,"Les Comptes de la nation, édition 2015-2020 (base 2015)"
+2016,1997,89792.2,لا,2174.2,2.42,9.02,11.63,"Les Comptes de la nation, édition 2013-2017 (base 1997)"
+2016,2015,95286.9,لا,2174.2,2.28,9.02,11.63,"Les Comptes de la nation, édition 2015-2020 (base 2015)"
+2017,1997,96324.7,لا,2492.9,2.59,9.14,11.77,"Les Comptes de la nation, édition 2013-2017 (base 1997)"
+2017,2015,102011.5,لا,2492.9,2.44,9.14,11.77,"Les Comptes de la nation, édition 2017-2021 (base 2015)"
+2018,2015,112985.5,لا,2863.6,2.53,9.6,11.69,"Les Comptes de la nation, édition 2018-2022 (base 2015)"
+2019,2015,122969.3,لا,2872.2,2.34,8.79,9.94,"Les Comptes de la nation, édition 2019-2023 (base 2015)"
+2020,2015,119502.1,لا,2889.1,2.42,7.66,10.64,"Les Comptes de la nation, édition 2020-2024 (base 2015)"
+2021,2015,131544.6,لا,3203.2,2.44,7.96,10.54,"Les Comptes de la nation, édition 2021-2025 (base 2015)"
+2022,2015,139444.5,لا,3604.0,2.58,7.8,10.17,"Les Comptes de la nation, édition 2021-2025 (base 2015)"
+2023,2015,149793.6,لا,3809.4,2.54,7.83,10.01,"Les Comptes de la nation, édition 2021-2025 (base 2015)"
+2024,2015,159852.7,لا,3983.8,2.49,7.78,9.55,"Les Comptes de la nation, édition 2021-2025 (base 2015)"
+2025,2015,171642.1,لا,4237.5,2.47,8.07,9.47,"Les Comptes de la nation, édition 2021-2025 (base 2015)"
+2025,غير مرتبط (وزارة المالية),172614.0,غير محدّد في المصدر,4237.5,2.45,8.07,9.47,Indicateurs des finances publiques 2025 (PIB déduit : déficit en millions de dinars ÷ déficit en % du PIB)
