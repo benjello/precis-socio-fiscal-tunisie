@@ -245,7 +245,9 @@ ou un tableau court tiré des mêmes données, jamais la prose recopiée.
   comptes : le livre du financement et des caisses de la sécurité sociale.
 - Ce qui est servi en espèces (pension, allocation, indemnité) : les retraites ou les prestations
   sociales.
-- Ce qui est servi en nature (les soins) : la santé.
+- Ce qui est servi en nature, le droit aux soins (assurance maladie, assistance médicale) : les
+  prestations sociales ; la politique sanitaire (organisation, étendue de la couverture, dépense,
+  hôpital, médecine de ville) : la santé.
 - Un prix ou un tarif administré : la compensation.
 - Une règle de salaire : les revenus du travail (marché du travail, rémunérations publiques).
 - Le statut et les comptes d'une entreprise publique : les entreprises publiques.
