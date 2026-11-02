@@ -22,7 +22,8 @@ le script au lieu de donner un tableau faux.
 CE QUI VIENT DE `circulaire_42_metadonnees.yml`. Ce que le modèle ne porte pas : les pièces à
 fournir, les pages du Journal officiel, les mots qui qualifient un parent dans une situation
 (« décédé », « divorcée »), les tournures du payeur et de la garde partagée, et trois cellules où
-la circulaire dit autre chose que la valeur du modèle. Voir l'en-tête de ce fichier.
+la circulaire dit autre chose que la valeur du modèle, et quelques libellés de positions. Voir
+l'en-tête de ce fichier.
 
 L'ARABE N'EST PAS ENGENDRÉ. Le chapitre arabe de l'annexe est une page-relais vers le français.
 """
@@ -161,12 +162,18 @@ def cellule_indemnite(modele: dict, meta: dict, code: int, colonne: str, valeur)
     return minuscule(libelle) + phrase_payeur
 
 
-def position_parent(modele: dict, meta_situation: dict, cle: str, membre: str | None,
-                    indifferente: str) -> str:
+def position_parent(modele: dict, meta: dict, meta_situation: dict, cle: str,
+                    membre: str | None) -> str:
+    """Position d'un parent : libellé du modèle (ou son remplaçant des métadonnées), suivi du
+    qualificatif de la situation. Une position que le modèle laisse indifférente (None : la
+    mère des cas 42 et 43) ne garde que le qualificatif."""
     qualificatif = meta_situation.get(cle)
     if membre is None:
-        return f"{qualificatif} ({indifferente})" if qualificatif else indifferente
-    texte = minuscule(_libelle(modele, "StatutParentSecteurPublic", membre))
+        if not qualificatif:
+            raise Ecart(f"position indifférente sans qualificatif pour {cle}")
+        return qualificatif
+    texte = meta.get("positions", {}).get(membre)
+    texte = texte or minuscule(_libelle(modele, "StatutParentSecteurPublic", membre))
     return f"{texte}, {qualificatif}" if qualificatif else texte
 
 
@@ -241,11 +248,10 @@ def construire(modele: dict, meta: dict) -> str:
                 cellules = [lettre, minuscule(situation_tuteur), meta_sit["enfants"], str(code),
                             *indemnites, pieces]
             else:
-                indiff = meta["position_indifferente"]
                 cellules = [
                     etiquette,
-                    position_parent(modele, meta_sit, "pere", pere, indiff) if premier else "",
-                    position_parent(modele, meta_sit, "mere", mere, indiff) if premier else "",
+                    position_parent(modele, meta, meta_sit, "pere", pere) if premier else "",
+                    position_parent(modele, meta, meta_sit, "mere", mere) if premier else "",
                     _libelle(modele, "FiliationEnfantSecteurPublic", filiation),
                     str(code), *indemnites, pieces,
                 ]

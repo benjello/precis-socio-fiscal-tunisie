@@ -94,9 +94,18 @@ class MiseEnForme(unittest.TestCase):
 
     def test_position_indifferente_et_qualificatif(self):
         sit = {"mere": "décédée"}
+        self.assertEqual(g.position_parent({}, {}, sit, "mere", None), "décédée")
+        with self.assertRaises(g.Ecart):
+            g.position_parent({}, {}, {}, "mere", None)
+
+    def test_libelle_de_position_des_metadonnees_puis_du_modele(self):
+        modele = {"libelles": {"StatutParentSecteurPublic": {
+            "salarie": "Salarié(e), sans distinction", "sans_activite": "N'exerce pas"}}}
+        meta = {"positions": {"salarie": "salarié(e)"}}
+        self.assertEqual(g.position_parent(modele, meta, {}, "pere", "salarie"), "salarié(e)")
         self.assertEqual(
-            g.position_parent({}, sit, "mere", None, "position indifférente"),
-            "décédée (position indifférente)")
+            g.position_parent(modele, meta, {"pere": "décédé"}, "pere", "sans_activite"),
+            "n'exerce pas, décédé")
 
 
 @unittest.skipIf(yaml is None, "PyYAML absent")

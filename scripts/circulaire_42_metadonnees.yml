@@ -48,9 +48,14 @@ situations:
     pages: "p. 2362"
     enfants: "enfants à charge"
 
-# Mot mis à la place de la position d'un parent que le modèle laisse indifférente (cas 42 et
-# 43 : la mère y est seulement « décédée »).
-position_indifferente: "position indifférente"
+# Positions dont le libellé du modèle décrit son regroupement des cas plutôt que le mot de la
+# circulaire. Clé : membre de `StatutParentSecteurPublic`. Toute autre position garde le
+# libellé du modèle.
+positions:
+  salarie: "salarié(e)"
+  retraite: "titulaire d'une pension de retraite"
+  agent_public_sans_reversion: "agent public non remarié et ne bénéficiant pas de la pension de réversion"
+  agent_public_avec_reversion: "agent public non remarié et bénéficiant de la pension de réversion"
 
 # Tournure du payeur après le bénéficiaire (« servie au père par la CNSS »).
 payeurs:
@@ -72,6 +77,11 @@ libelles_circulaire:
   28: {indemnite_familiale: "non servie à la mère", salaire_unique: "non servie à la mère"}
   # Le modèle retient la mère, déduite ; la circulaire ne nomme pas le bénéficiaire.
   34: {indemnite_familiale: "servie par la caisse de retraite"}
+  # Le modèle dit « caisse de retraite » sans dire de qui : la circulaire nomme la caisse de la
+  # mère (cas 40) ou celle du père (cas 66 et 77).
+  40: {indemnite_familiale: "servie à la mère par la caisse qui lui sert la pension de réversion"}
+  66: {indemnite_familiale: "servie à la mère par la caisse servant la pension du père", salaire_unique: "servie à la mère par la caisse servant la pension du père"}
+  77: {indemnite_familiale: "servie au père et à la mère en fonction du nombre des enfants dont ils assurent la garde, par la caisse de retraite servant la pension du père", salaire_unique: "servie au père et à la mère en fonction du nombre des enfants dont ils assurent la garde, par la caisse de retraite servant la pension du père"}
 
 pieces:
   jugement_divorce: "copie du jugement de divorce"
