@@ -960,7 +960,7 @@ figtools.figure_tabs(
 )
 ```
 
-<!-- TODO (documentaliste) : prolonger ces séries après 2014 : rapports annuels de la DGI postérieurs à 2014 (absents du corpus local), rapports annuels de performance de la mission Finances ; le rapport de la DGI sur 2014 est un rapport d'activité administrative (16 pages sur 40 parcourues), sans série. Voir docs/notes/backlog-precis.md. -->
+<!-- TODO (documentaliste) : prolonger ces séries après 2014 : rapports annuels de la DGI postérieurs à 2014 (absents du corpus local), rapports annuels de performance de la mission Finances ; pages des rapports de la DGI sur 2013 et 2014 non lues à l'image : 2013, 31 pages sur 42 ; 2014, 34 pages sur 40. Voir docs/notes/backlog-precis.md. -->
 
 Trois précautions commandent la lecture de cette figure.
 
@@ -969,6 +969,19 @@ Aucun de ces documents ne décrit sa méthode. Celui du groupe de travail ne dit
 Les deux séries de TVA restituée ne coïncident pas : 320,8 millions de dinars (MD) contre 349,9 MD en 2010, 301,2 contre 268,3 en 2011, 179,2 contre 287,7 en 2012. Rien, dans l'un ou l'autre document, ne permet d'en dire la raison ; elles ne se fondent donc pas en une seule série.
 
 Le rendement de la retenue à la source pour 2012 est donné à 305,5 MD par le groupe de travail d'août 2013, et à 298,9 MD par le rapport de synthèse du Conseil national de la fiscalité de novembre 2013, valeur reprise par le projet présenté aux Assises nationales de la fiscalité de novembre 2014 [@minfin-cnf-2013-synthese, p. 82 ; @minfin-assises-2014-projet-reforme, p. 76]. Une troisième valeur, plus basse et antérieure à la clôture de l'exercice — la barre hachurée de la figure —, vient d'un tableau de l'administration que reproduit un rapport d'assistance technique présenté avec les rapports extérieurs (@sec-tva-credit-etudes).
+
+Les rapports annuels de la direction générale des impôts sur 2013 et 2014 donnent pour ces deux années les mêmes restitutions que le rapport sur le contrôle fiscal : 670,1 MD remboursés en 2013, dont 402,3 MD de TVA (60 %), et 427,2 MD en 2014, dont 307,2 MD de TVA (72 %) ; ce sont les sommes que les receveurs des finances remboursent [@minfin-dgi-rapport-2013, p. 22 ; @minfin-dgi-rapport-2014, p. 23]. Ils ajoutent les montants dont les services du contrôle fiscal autorisent la restitution après étude des demandes, sans distinguer l'impôt : 652,3 MD en 2013 et 467,1 MD en 2014 [@minfin-dgi-rapport-2013, p. 22 ; @minfin-dgi-rapport-2014, p. 22]. Ils chiffrent aussi les attestations de suspension de la TVA, c'est-à-dire d'achat en suspension de la taxe, par cadre légal (@tbl-tva-suspension-dgi).
+
+| Cadre légal | 2011 | 2012 | 2013 | 2014 |
+|---|---:|---:|---:|---:|
+| Code de la TVA (article 11) | 7,71 | 13,04 | 59,87 | 102,25 |
+| Code d'incitation aux investissements | 36,04 | 35,7 | 389,93 | 261,99 |
+| Autres textes | 69,67 | 85,95 | 269,84 | 333,44 |
+| Total | 113,42 | 134,69 | 719,64 | 697,68 |
+
+: Montants des attestations de suspension de la TVA par cadre légal, 2011-2014, en millions de dinars, d'après les rapports annuels de la direction générale des impôts [@minfin-dgi-rapport-2013, p. 22 ; @minfin-dgi-rapport-2014, p. 22] {#tbl-tva-suspension-dgi}
+
+Le nombre d'attestations délivrées est de 13 527 en 2013 et de 15 012 en 2014 [@minfin-dgi-rapport-2013, p. 22 ; @minfin-dgi-rapport-2014, p. 22]. Les montants de 2011-2012 et ceux de 2013-2014 viennent de deux rapports différents, sans méthode décrite : le total de 2013 dépasse cinq fois celui de 2012 (719,64 contre 134,69 MD), et les quatre années ne forment pas une série raccordée.
 
 Rapporté aux recettes de TVA de l'année — dernière vue de la figure —, le crédit enregistré en représente 37,7 % en 2010, 39,0 % en 2011 et 38,7 % en 2012 ; la TVA restituée par la direction générale des impôts, 9,3 % en 2010, 7,0 % en 2011, 6,6 % en 2012, 9,0 % en 2013 et 6,0 % en 2014 ; la retenue à la source, 10,3 % en 2010, 9,1 % en 2011 et 7,0 % en 2012, sur la série du groupe de travail. Le dénominateur appelle lui-même une réserve. [Le code des droits et procédures fiscaux](#r-tva-restitution-2002-cdpf) dispose que la restitution « s'effectue par prélèvement direct sur les recettes » de l'impôt en cause ; les rapports sur le projet de budget de l'État pour 2013 et pour 2014 écrivent, de leur côté, que l'évolution des impôts indirects reste tributaire de la croissance de la TVA et du volume de la restitution du crédit de taxe [@minfin-rapport-budget-2013, p. 33 ; @minfin-rapport-budget-2014, p. 16]. La série des recettes ne dit pas si elle est nette des restitutions, et aucun document budgétaire ne publie ici la recette brute.
 
