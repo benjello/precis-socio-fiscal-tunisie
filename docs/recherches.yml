@@ -4299,7 +4299,9 @@
     couverture: 'OCR à 200 dpi (tesseract fra, psm 4) des pages imprimées de 108 groupes de pages du corpus local français, du 8 juillet 1988 à 1996, dont la notice de jort_cache porte « magistrat », « judiciaire », « cassation », « procureur » ou « conseil supérieur » dans le titre (lois organiques n° 88-73 et n° 91-9, décrets sur les fonctions exercées par les magistrats, l''indemnité de magistrature, l''institut supérieur de la magistrature, arrêtés du ministre de la Justice) ; recherche des chaînes « 85-614 » (avec ou sans espaces ni tiret typographique) et « limite d''âge ». Aucune notice de jort_cache de 1988 à 1997 ne porte « limite d''âge » ou « mise à la retraite » avec « magistrat » ou « judiciaire » dans son titre. Non lu : les autres pages des fascicules de 1988 à 1996, les fascicules arabes.'
     couvert_jusqu_au: 1996-12-31
     resultat: aucun
-  a_faire: [océriser les pages des fascicules de 1988 à 1996 dont le titre ne dit pas la magistrature (décrets de portée générale sur la limite d'âge ou le maintien en activité), éditions française et arabe]
+  a_faire:
+  - océriser les pages des fascicules de 1988 à 1996 dont le titre ne dit pas la magistrature (décrets de portée générale sur la limite d'âge ou le maintien en activité)
+  - éditions française et arabe
 
 - id: r-banque-donnees-2014-1526-suite
   objet: texte prolongeant à nouveau, modifiant ou abrogeant le décret n° 2014-1526 (unité de gestion par objectifs, banque de données sur les familles nécessiteuses et à revenu limité) après le décret gouvernemental n° 2018-626, dont la prolongation d'un an court jusque vers mai 2019
