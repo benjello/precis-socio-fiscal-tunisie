@@ -110,8 +110,10 @@ Non traitée ici : extraction par `pdftotext` puis normalisation NFKC, sans OCR 
   loi de finances complémentaire pour 2012 (`jort-2012-n39-ar-pdf1-22_lfc-2012.txt`), loi de finances
   pour 2013 (`jort-2013-n01-ar-pdf1-20_lf-2013.txt` et `…pdf21-28…`). Les deux offices n'y sont pas
   nommés ; les tableaux de crédits qui suivent les articles ne sont pas océrisés.
-- Les dépôts du *Journal officiel* de 2011 à 2019 se lisent à l'image sur la dernière page de
-  l'édition arabe (ou sur l'une des trois pages qui la précèdent) ; l'édition française n'en porte pas.
+- Les dépôts du *Journal officiel* de 2011 à 2019 se lisent à l'image sur l'édition arabe, dans un
+  cadre sous le dernier texte, avant les notices et les pages d'abonnement (page 19 de 32 en 2012,
+  27 de 32 en 2011, 19 de 24 en 2013, 23 de 24 pour le n° 93 de 2011, dernière page pour d'autres) ;
+  l'édition française n'en porte pas.
 - Fiches : `r-cdf-rapports-apres-2009`, `r-onh-oc-garanties-apres-2011`,
   `r-oc-prix-reduits-retrocession`, `r-oc-subvention-semences-apres-2019`.
 
