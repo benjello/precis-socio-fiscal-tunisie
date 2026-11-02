@@ -1304,7 +1304,14 @@
     couverture: 'Intitulés seulement, 1960-2000. Une troisième requête, LIKE combiné (titre LIKE %placement% OU %disponibilites%) ET (titre LIKE %securite sociale% OU %caisse% OU %organismes%), 1960-2010, n''a rien ajouté. Candidats non lus : articles « bons d''équipement » des lois de finances n° 71-59 (art. 9), 72-87 (art. 13), 73-82 (art. 42), 74-101 (art. 40) ; loi n° 90-111 (LF 1991), art. 64, « conversion en bons d''équipement des montants versés au titre de la retraite anticipée volontaire » (JORT n° 86/1990, p. 2056) ; arrêtés annuels d''émission des tranches (1960-1973). LF 1992 non examinée.'
     couvert_jusqu_au: 1992-12-31
     resultat: aucun
-  a_faire: [lire les articles candidats ci-dessus (OCR) et la loi de finances pour 1992]
+  - date: 2026-11-02
+    role: documentaliste
+    sources: [corpus_local]
+    couverture: 'Lois de finances pour 1972, 1973, 1974 et 1975 (art. 9, 13, 42 et 40) lues à l''image le 2 novembre 2026 : chacune autorise une tranche annuelle de bons d''équipement à dix ans (huitième à onzième), sans viser les caisses. Loi de finances pour 1971 : pas d''article sur les bons d''équipement à l''OCR. Rectificatifs au JORT et loi de finances pour 1992 non lus ; texte imposant le placement aux caisses non identifié.'
+    couvert_jusqu_au: 1975-12-31
+    resultat: aucun
+  a_faire:
+  - lire l'art. 64 de la loi n° 90-111 (LF 1991), la loi de finances pour 1992 et les arrêtés d'émission des tranches
 
 - id: r-norme-comptable-securite-sociale
   objet: norme comptable sectorielle (loi n° 96-112, art. 10) applicable aux organismes de sécurité sociale
