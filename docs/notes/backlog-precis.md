@@ -1938,6 +1938,11 @@ liste qui suit le tableau, citations comprises. Restent :
   trois textes, ventilation, montée en charge AMU, longue période) : ils attendent des PR
   openfisca-tunisia.
 
+- **Article 41 de la loi n° 60-30, taux de base (2 novembre 2026, PR #697)** : les lois modificatives
+  n° 61-9, 63-26, 64-31, 70-34, 75-82, 80-36, 81-5, 82-71, 86-75, 88-38, 95-101 et 96-65 ne le touchent
+  pas (TODO de `_taux_global.qmd`). Reste à dépouiller les lois de finances de 1961 à 1996 ; le taux de
+  20 % de 1960 à la loi n° 97-4 repose sur cette absence.
+
 ## Les caisses de sécurité sociale
 
 Livre créé le 4 octobre 2026 (`precis/fr/caisses/`) ; plan approuvé : architecture A, étapes 2
@@ -3466,7 +3471,7 @@ Proposées par les notes et **non versées**, faute d'ancre dans le texte :
     chapitre** : `_carburants.qmd` (l. 29, légende de `tbl-compensation-prix-cession`) écrit
     encore « arrêté du ministre de l'Économie nationale du 8 octobre 1993 » ; la nature de
     l'acte n'est pas établie (« قرار » selon le rapport de contrôle). Bibliographe : doublon
-    `lf-2019` (Fiscalité) / `loi2018-56-lf2019` (fonds commun) à résoudre. Terminologue : notions
+    `lf-2019` / `loi2018-56-lf2019` fondu le 23 octobre 2026. Terminologue : notions
     du § 9 de la note `compensation-electricite-gaz-objets-des-reformes.md` (tranche
     économique, tranche normale, Fonds de transition énergétique, homologation des prix,
     décision ministérielle).
@@ -6014,6 +6019,24 @@ verser par le terminologue quand un volume les emploiera.
   (exécution 40223425216, 0 échec). Reste la **descente** (exécution 40222650564 : les 24
   `references.json` réécrits, ordre et forme des champs pour l'essentiel), à relire dans sa PR
   propre en contrôlant la préservation des URL et notes par langue.
+- **Zotero — poussée du 2 novembre 2026** : 564 clés ajoutées depuis le 25 octobre créées (0 en
+  échec) et classées (564, 0 en échec) ; contrôle de rangement (exécution 41384936642) : 0 absente de
+  Zotero, 0 à ranger, **103 à déclasser**, 133 sans citation. Reste, sur feu vert humain, le
+  déclassement des 103 (`appliquer-rangement-blanc` puis `appliquer-rangement`) ; la descente
+  (`sync_biblio`) n'est pas lancée (détail dans `biblio-a-rapatrier.md`).
+- **Références communes à plusieurs livres (2 novembre 2026, PR #696 et #697)** : les définitions
+  d'une même clé sont alignées entre livres (champs, pages, volumes) et un contrôle
+  (`scripts/check_references_coherentes.py`, branché dans `verifier-conventions.yml`) refuse deux
+  définitions divergentes ; l'édition arabe de la LF 2019 a sa clé `loi2018-56-lf2019-ar`
+  (`loi2018-56-lf2019` ne désigne plus que l'édition française) ; cinq doublons sont fusionnés
+  (liste dans le corps de la PR #697). Restent :
+  - unifier la pagination et les adresses des clés de la version arabe, dix clés déclarées dans
+    `scripts/references_tolerances.yml`, d'après les fascicules arabes, puis retirer les tolérances
+    (le contrôle refuse une tolérance devenue inutile) ;
+  - fusionner `loi2020-45-lfr` et `lfc-2020` (même loi) : `loi2020-45-lfr` figure dans des données
+    engendrées (`_seriescache`, `figdata`, `docs/recherches.yml`) à régénérer ;
+  - clés orphelines du livre Fiscalité en attente de lecture : `loi-76-63`, `loi-81-56`, `loi-82-67`,
+    `loi92-81`, `decret-loi-85-14` (TODO de `_regimes_incitation.qmd`).
 - **Titres arabes et glossaire** : des notices restent en français dans la bibliographie
   arabe et des notions sont encore à valider (issues #151, #77, #54, #53). Recompter
   avant de réutiliser les totaux anciens de 69 notices et 26 termes.
@@ -6123,6 +6146,8 @@ reprendre sans refaire la même recherche :
 **Quatrième passage du 1er novembre 2026** (archiviste, d'après les corps des PR #683 à #688 ; chaque point vérifié dans le chapitre, le registre, la notice ou le TODO de la branche `master`) : 72 modifications du backlog (marché du travail, prestations sociales, santé, cotisations sociales, compensation, finances locales, fiscalité, rémunérations publiques, retraites et caisses, entreprises publiques), dont 2 points retirés en entier (décret n° 2002-13, rectificatif de la loi n° 92-81), les autres points resserrés (le fait est retiré, le reste est écrit), et des lacunes ajoutées (rémunérations publiques : PR #687 ; incitations : zones de 1994 et de 1999, adresse du document OMC, quatre clés à verser dans Zotero ; constat de corpus sur `Loi_de_finances_2000.pdf`). Signalés, non tranchés : le backlog donne le 1er mai 1966 pour la loi n° 66-27 alors que le registre `#r-mt-inst-1966-duree` écrit le 30 avril 1966 et le registre `#r-mt-sm-1966-duree` un tiret ; le TODO de `_tva_tableaux.qmd` (ligne 34) range encore l'art. 71 de la LF 2005 parmi les retraits du tableau C alors que la PR #686 le lit comme l'ajout d'une position ; les tâches de l'arrêté conjoint du 25 juin 2007 figurent deux fois dans la liste par date (marquées faites toutes les deux) ; `Loi_de_finances_2000.pdf` est la loi de finances pour 2022 (corpus à corriger côté `tunisia-data`).
 
 **Cinquième passage du 1er novembre 2026** (archiviste, d'après les corps des PR #690 à #694 ; chaque point vérifié dans le chapitre, le registre ou le TODO de la branche `master`) : 34 modifications du backlog (fiscalité : timbre et enregistrement ; entreprises publiques : SNDP, SNIT, SOTRAPIL, garanties ; marché du travail ; rémunérations publiques et retraites ; prestations sociales, santé, caisses, cotisations), dont 14 tâches ajoutées à la liste par date ; aucun point retiré en entier, les restes étant conservés. Corrections de la même PR : le TODO de `_tva_tableaux.qmd` ne range plus l'art. 71 de la LF 2005 parmi les retraits du tableau C (le texte du JORT, dans `Loi_de_Finances_2005.pdf`, dit « Est ajouté au tableau C ... le numéro Ex 84.18 ») ; le TODO de `_regime_conventionnel.qmd` ne demande plus la comparaison arabe-français du décret n° 2015-2217 (faite, note § 7, PR #676) ; le doublon de la tâche « arrêté conjoint du 25 juin 2007 » est retiré de la liste par date ; la note sur `Loi_de_finances_2000.pdf` (loi de finances pour 2022) est ajoutée en tête de la section des fascicules du corpus. Tranché : la loi n° 66-27 est au 1er mai 1966 dans `#r-mt-sm-1966-duree` et au 30 avril (promulgation) avec l'entrée en vigueur du 1er mai dans `#r-mt-inst-1966-duree`, ce qui est cohérent (PR #692) . Signalés, non tranchés : le TODO de `_fonctions_politiques.qmd` (ligne 138) demande encore de lire les art. 60 et 61 de la LF 1988 alors que la section `#sec-fp-anciens` les porte (PR #693), et le TODO de `_taux_global.qmd` cite encore six lois modificatives de la loi n° 60-30 dont cinq sont lues (PR #694) : à retirer par le documentaliste ; le TODO de `_accidents_travail.qmd` (art. 46 et art. 42) garde la relecture de l'art. 46 ; l'art. 89 de la loi n° 60-30 (« quatre-vingt-dixième ») et l'absence de texte modifiant la loi n° 81-5 sont à confirmer par la revue.
+
+**Sixième passage du 2 novembre 2026** (archiviste, d'après les corps des PR #696 à #698 et la poussée Zotero du 2 novembre ; chaque point vérifié dans le TODO, la notice ou le script de la branche `master`) : 5 modifications du backlog (références communes : nouveau point ; article 41 de la loi n° 60-30 : point ouvert dans les cotisations sociales ; poussée Zotero : 564 clés créées et classées, 103 à déclasser ; doublon `lf-2019` marqué fondu ; loi n° 96-65 lue) ; les 2 tests de `tests/test_sync_agents.py` sont corrigés par #698 et ne figurent plus en reste. Non tranché, à l'humain : fusion de `loi2020-45-lfr` et `lfc-2020` (données engendrées à régénérer), art. 89 de la loi n° 60-30 en arabe.
 
 `todo-localisation.md` donne le point de départ pour les numéros et pages, **pas un
 décompte actuel de disponibilité** : un fascicule qui y manque peut depuis avoir été
