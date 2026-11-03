@@ -41,7 +41,7 @@ GRANDEURS = {
 }
 LIGNE = re.compile(
     r"^\s*(Engagements|Garanties de l.[ée]tat|Autres [Gg]aranties|Agios et int[ée]r[êe]ts r[ée]serv[ée]s|Classe|Provisions)"
-    r" au (\d\d/\d\d/(\d{4}))\s*(?:\(\*\))?\s{2,}(.*)$"
+    r" au (\d\d/\d\d/(\d{4}))\s*(?:\(\*+\))?\s{2,}(.*)$"
 )
 
 
@@ -59,6 +59,15 @@ NOMS = re.compile(
     r"STIR|TUNIS ?AIR|TRANSTU|ETAP|OCT|O\.T\.D|O\.N\.H|El Fouledh|SNCFT|STEG|SONEDE",
     re.I,
 )
+
+
+def nom_normalise(nom: str) -> str:
+    """Un même nom d'entité s'écrit de la même façon dans tous les exercices (« TUNIS AIR » → Tunisair, « TRANSTU » → Transtu)."""
+    return {"tunisair": "Tunisair", "tunis air": "Tunisair", "transtu": "Transtu"}.get(
+        nom.lower(), nom
+    )
+
+
 AMORCE = re.compile(r"^\s*Engagements au \d\d/\d\d/\d{4}\s*(?:\(\*\))?\s{2,}\d")
 COUPE = re.compile(
     r"^\s*(Engagements|Garanties de l.[ée]tat|Autres [Gg]aranties(?: \(\*+\))?|Agios et int[ée]r[êe]ts r[ée]serv[ée]s|Classe|Provisions)\s+au\s*$"
@@ -135,6 +144,33 @@ def lignes_coupees(lignes: list[str], debut: int) -> list[tuple[str, str, list[s
     return sortie
 
 
+def page_de_ligne(pages: list[str], page_tableau: int, ligne: list[str]) -> int:
+    """Page où commence la ligne du tableau : le tableau peut passer à la page suivante (état de 2022).
+
+    On cherche, sur la page du tableau puis la suivante, l'amorce du libellé de la grandeur, suivie dans les trois
+    lignes de la date de l'exercice ; à défaut, la page du tableau.
+    """
+    amorce = {
+        "engagements": r"Engagements",
+        "garanties de l'État": r"Garanties de",
+        "autres garanties": r"Autres [Gg]aranties",
+        "agios et intérêts réservés": r"Agios et int",
+        "classe de risque": r"Classe",
+        "provisions": r"Provisions",
+    }[ligne[2]]
+    date = f"31/12/{ligne[0]}"
+    for numero in (page_tableau, page_tableau + 1):
+        if numero > len(pages):
+            break
+        lignes = pages[numero - 1].splitlines()
+        for i, texte in enumerate(lignes):
+            if re.match(rf"^\s*{amorce}", texte) and any(
+                date in t for t in lignes[i : i + 4]
+            ):
+                return numero
+    return page_tableau
+
+
 def releve(exercice: int) -> list[list[str]]:
     chemin = DONNEES / f"{exercice}_individuel.pdf"
     pages = subprocess.run(
@@ -143,6 +179,11 @@ def releve(exercice: int) -> list[list[str]]:
         text=True,
         check=True,
     ).stdout.split("\f")
+    return releve_pages(exercice, pages)
+
+
+def releve_pages(exercice: int, pages: list[str]) -> list[list[str]]:
+    """Le tableau d'un état dont le texte est donné page par page (sortie de `pdftotext -layout` coupée aux sauts de page)."""
     candidats: list[list[list[str]]] = []
     for numero, page in enumerate(pages, start=1):
         lignes = "\n".join(
@@ -163,7 +204,7 @@ def releve(exercice: int) -> list[list[str]]:
         noms = [
             "Total des entreprises publiques",
             "Office des céréales",
-            *[re.sub(r"(?i)tunis ?air", "Tunisair", n) for n in NOMS.findall(entete)],
+            *[nom_normalise(n) for n in NOMS.findall(entete)],
         ]
         sortie = []
         for libelle, annee, valeurs in (
@@ -171,6 +212,11 @@ def releve(exercice: int) -> list[list[str]]:
             if COUPE.match(lignes[debut])
             else lignes_de_valeurs(lignes, debut)
         ):
+            if libelle == "Classe" and len(valeurs) == len(noms) - 1:
+                valeurs = [
+                    "-",
+                    *valeurs,
+                ]  # le total n'a pas de classe : cellule laissée vide par la note
             if len(valeurs) != len(noms):
                 print(
                     f"{exercice} p. {numero} : {libelle} {annee} : {len(valeurs)} valeurs pour {len(noms)} colonnes",
@@ -205,7 +251,7 @@ def releve(exercice: int) -> list[list[str]]:
                 numero,
             )
             for ligne in sortie:
-                ligne[4] = str(page_tableau)
+                ligne[4] = str(page_de_ligne(pages, page_tableau, ligne))
             candidats.append(sortie)
     return max(candidats, key=len, default=[])
 

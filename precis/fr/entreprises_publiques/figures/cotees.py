@@ -118,7 +118,7 @@ figtools.register_provenance(
                "des entreprises publiques et pour l'Office des céréales et quelques entités nommées"),
     caveats=("Les entités nommées changent d'un exercice à l'autre (STIR et Tunisair jusqu'en 2020, puis ETAP, OCT et Transtu) : "
              "l'ensemble « autres entités nommées » n'est pas constant. Une somme n'est pas un total consolidé de l'État. "
-             "L'exercice 2018 vient de l'état de 2018 ; 2016 ne donne que les engagements."))
+             "Chaque exercice vient de l'état de cet exercice ; 2016, qui vient de l'état de 2017, ne donne que les engagements."))
 
 
 def _md(entete: list[str], lignes: list[list[str]], caption: str, tbl_id: str, gauche: tuple[int, ...] = ()) -> None:
