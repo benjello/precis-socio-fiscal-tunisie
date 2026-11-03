@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import datetime as _dt
 import functools
+import sys
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -981,6 +982,13 @@ def _image_vue(fig, png: Path, nom: str, alt: str) -> str:
     """
     png_path = png / f"{nom}.png"
     fig.savefig(png_path, dpi=150, bbox_inches="tight")
+    # La vue est enregistrée : on la ferme. Une figure laissée ouverte, Jupyter l'affiche à la
+    # fin du chunk et Quarto la rattache à la figure numérotée ; en PDF elle tombe DANS la
+    # légende (`\caption{\includegraphics…}`) et LaTeX s'arrête (« Missing number »), ce qui
+    # laissait le livre de la fiscalité sans PDF. `fig` reste utilisable après `close`.
+    plt = sys.modules.get("matplotlib.pyplot")  # jamais importé : aucune figure n'est ouverte
+    if plt is not None:
+        plt.close(fig)
     image = f'![]({png_path}){{fig-alt="{alt}"}}'
     if getattr(fig, "_infobulles", None):
         # HTML : SVG en ligne, survolable ; ailleurs (PDF) : l'image fixe.
