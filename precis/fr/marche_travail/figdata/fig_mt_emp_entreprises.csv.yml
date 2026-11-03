@@ -1,0 +1,5 @@
+series: [ins-repertoire-entreprises-tranche, ins-repertoire-entreprises-forme]
+sources: [ins-repertoire-entreprises-2016, ins-repertoire-entreprises-2017, ins-repertoire-entreprises-2018, ins-repertoire-entreprises-2021, ins-repertoire-entreprises-2025]
+fiches: [sources/ins-rne-statistiques.md]
+caveats: [SECTEUR PRIVÉ SEULEMENT : les administrations, les associations et les entreprises publiques sont dans le répertoire mais non publiées. Statut administratif et non statistique d'activité : la tranche 0 (aucun salarié), surtout des indépendants, est probablement surestimée de 11 % (faux actifs, estimation de 2009). La taille vient des déclarations trimestrielles des employeurs à la CNSS. 2018 : la tranche 0 passe de 676 140 à 635 571 alors que les autres tranches augmentent, sans explication de l'INS. Éditions antérieures à 2016 non lues ; éditions 2019, 2020 et 2023 absentes d'ins.tn., Voir ins-repertoire-entreprises-tranche (secteur privé, statut administratif, faux actifs). Les personnes physiques sont environ 75 % des entreprises.]
+generated: 2026-11-03
