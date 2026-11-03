@@ -86,7 +86,8 @@ def publications(identifiant_societe: str) -> list[tuple[str, str, str, str]]:
                 r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", texte))
             ).strip()
             trouve = re.search(
-                r"(?i)[ée]tats\s+financiers\s+annuels?\s+(consolid[ée]s?|individuels?)?.*?(?:au|du)\s+31/12/(\d{4})",
+                r"(?i)[ée]tats\s+financiers\s+annuels?\s+(consolid[ée]s?|individuels?)?.*?"
+                r"(?:(?:au|du)\s+31/12/|au\s+titre\s+de\s+l.ann[ée]e\s+)(\d{4})",
                 titre,
             )
             if not trouve or "semestr" in titre.lower():
