@@ -4,6 +4,10 @@ project:
 
 lang: fr
 
+# Espaces insécables posées au rendu (nombres, %, « n° », « p. », guillemets, ponctuation double).
+filters:
+  - ../../filtres/insecables.lua
+
 book:
   title: "Les finances locales"
   author: "Mahdi Ben Jelloul"
