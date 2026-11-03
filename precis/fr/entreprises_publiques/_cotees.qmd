@@ -110,6 +110,8 @@ ct.tableau_resultats(
 
 ## Les filiales des trois banques publiques {#sec-ep-cotees-filiales}
 
+### Au 31 décembre 2021 {#sec-ep-cotees-filiales-2021}
+
 **Au 31 décembre 2021, le groupe BNA consolide 22 entités autour de la banque (18 filiales et 4 entreprises associées), le groupe STB 21 et le groupe BH 11, avec la méthode et les pourcentages de contrôle et d'intérêt que chaque rapport annuel de gestion imprime.** [@bvmt-ra-bna-2021, p. 127 ; @bvmt-ra-stb-2021, p. 96-97 ; @bvmt-ra-bh-2021, p. 240]
 
 - **Le pourcentage de contrôle** est la part des droits de vote, **le pourcentage d'intérêt** la part du capital détenue directement et indirectement. Ce n'est pas la part directe de la banque : la BH détient 41,64 % de BH Leasing d'après la Bourse, pour 57,05 % d'intérêt du groupe dans son rapport (@sec-ep-cotees-detention).
@@ -131,6 +133,36 @@ ct.tableau_perimetres(
              "directe et indirecte). « – » : le rapport ne donne pas la valeur ; la STB ne donne pas "
              "la méthode dans ce tableau et la BH ne donne pas le pourcentage de contrôle. La "
              "mère consolidante est la première ligne de chaque groupe"))
+```
+
+:::
+
+### La STB, de 2010 à 2021 {#sec-ep-cotees-filiales-stb}
+
+**La STB consolide 17 entités en 2010, 24 en 2012 et 2013, 19 en 2014 et 21 en 2020 et 2021, mère non comprise ; les rapports annuels de 2011 à 2018 donnent chacun deux exercices, celui de 2019 n'est pas lu.** [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2015 ; @ra-stb-2017 ; @ra-stb-2018 ; @bvmt-ra-stb-2021]
+
+- **2011 et 2012 : le périmètre s'élargit.** Six entités entrent en 2011 (BFT, SMT Maison Blanche, SED Sousse Nord, Soni Bank, la SCI La Maison du banquier et la SPCM Elfejja), puis STB Finance et SIDCO Sicar en 2012, tandis que la SOFIGES sort [@ra-stb-2011 ; @ra-stb-2013].
+- **2014 : cinq sorties.** La Banque d'affaires de Tunisie, la SICOAC, SIDCO Sicar, la SMT Maison Blanche et El Wifack Leasing ne sont plus consolidées ; le rapport de 2014 note la SICOAC comme « filiale cédée en 2014 » [@ra-stb-2014 ; @ra-stb-2015].
+- **2015 à 2018.** Ahla Hotel Neptunia et la Société des moyens généraux entrent en 2015, STB Sécurité et gardiennage en 2016 ; Ahla Hotel Neptunia sort en 2016, la SED Sousse Nord en 2017 et la BFT en 2018 [@ra-stb-2015 ; @ra-stb-2017 ; @ra-stb-2018].
+- **2020.** Les Magasins généraux et entrepôts réels de Tunis et deux SICAV (Épargnant et Épargne obligataire) entrent dans le périmètre, que la SOFI Elan Sicaf quitte [@bvmt-ra-stb-2021].
+
+::: {.chronologie-repliable titre="Les entités que la STB consolide, exercice par exercice, 2010-2021 : pourcentage d'intérêt"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_evolution(
+    "STB",
+    caption=("Les entités que la STB consolide, mère non comprise, de 2010 à 2021 (31 décembre) : "
+             "pourcentage d'intérêt du groupe, ou pourcentage de contrôle quand le rapport ne donne "
+             "pas l'intérêt ; « (ME) » : mise en équivalence (le rapport de 2021 ne donne pas la méthode pour 2020 et 2021) ; "
+             "« – » : entité non consolidée cet exercice-là. Rapports annuels de 2011, 2013, 2014, 2015, 2017, 2018 et 2021 (chacun donne "
+             "deux exercices ; pour un exercice, la lecture qui compte le plus d'entités). 2019 n'est "
+             "pas lu. [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2017 ; "
+             "@ra-stb-2018 ; @bvmt-ra-stb-2021]"),
+    tbl_id="tbl-ep-cotees-evolution-stb")
 ```
 
 :::

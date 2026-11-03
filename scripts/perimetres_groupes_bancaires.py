@@ -1,22 +1,28 @@
-"""Relève le périmètre de consolidation de la STB, de la BH et de la BNA au 31 décembre 2021.
+"""Relève le périmètre de consolidation de la STB, de la BH et de la BNA, exercice par exercice.
 
-Le rapport annuel de gestion de chaque banque, publié sur la page de la Bourse de Tunis, donne les
-entités que le groupe consolide, avec la méthode et les pourcentages de contrôle et d'intérêt. Les
-trois PDF sont rangés dans `tunisia-data/data/raw/entreprises-publiques/bvmt-rapports/` (hors git ;
-catalogue : `sources/bvmt-rapports-annuels-urls.csv`). Ce script en lit le texte avec `pdftotext`
-(poppler) et n'écrit que le relevé du volume :
+Le rapport annuel ou les états financiers consolidés de chaque banque donnent les entités que le
+groupe consolide, avec la méthode et les pourcentages de contrôle et d'intérêt. Les PDF sont
+rangés dans `tunisia-data/data/raw/entreprises-publiques/` (hors git) : `bvmt-rapports/` pour ceux
+de la page de la Bourse de Tunis (exercice 2021), `bvmt-rapports-archives/` pour ceux que
+l'Internet Archive a gardés des sites des banques (catalogue : `sources/bvmt-rapports-*-urls.csv`).
+Le script lit le texte avec `pdftotext` (poppler) et n'écrit que le relevé du volume :
 
-    uv run python scripts/perimetres_groupes_bancaires.py
+    uv run python scripts/perimetres_groupes_bancaires.py STB      # une banque à la fois
+    uv run python scripts/perimetres_groupes_bancaires.py          # toutes
 
-Sortie : `precis/fr/entreprises_publiques/listes/groupes-bancaires-perimetre.csv`.
+Sortie : `precis/fr/entreprises_publiques/listes/groupes-bancaires-perimetre.csv`. Lancé pour une
+banque, le script remplace ses lignes et garde celles des autres.
 
-  groupe, entite, methode     banque, entité consolidée, méthode (intégration globale, mise en équivalence)
-  controle_pct, interet_pct   pourcentage de contrôle (droits de vote) et d'intérêt (part du capital),
-                              tels que le rapport les imprime ; vide quand le rapport ne donne pas la colonne
-  pays                        pays de l'entité quand le rapport le donne (BH)
+  groupe, exercice, entite    banque, exercice (31 décembre), entité consolidée telle que le rapport l'imprime
+  methode                     intégration globale, mise en équivalence, ou « mère » ; vide quand le
+                              rapport ne la donne pas (STB 2020 et 2021)
+  controle_pct, interet_pct   pourcentage de contrôle (droits de vote) et d'intérêt (part du capital,
+                              directe et indirecte) ; vide quand le rapport ne donne pas la colonne
+  pays                        pays de l'entité quand le rapport le donne
+  source                      clé de la notice de bibliographie du rapport lu
 
-La mère consolidante est reprise (pourcentage de 100 % ou presque) ; elle porte la méthode « mère ».
-La STB ne donne pas la méthode : elle est vide. Le rapport de la BH ne donne que le pourcentage d'intérêt.
+Un rapport donne souvent deux exercices (N et N-1). Pour un exercice, on garde la lecture qui compte le
+plus d'entités (certains rapports tronquent leur tableau), à égalité celle du rapport de cet exercice.
 """
 
 from __future__ import annotations
@@ -25,25 +31,108 @@ import csv
 import os
 import re
 import subprocess
+import sys
+import unicodedata
 from pathlib import Path
 
-RAPPORTS = (
+DONNEES = (
     Path(os.environ.get("TUNISIA_DATA", "~/projets/tunisia-data")).expanduser()
-    / "data/raw/entreprises-publiques/bvmt-rapports"
+    / "data/raw/entreprises-publiques"
 )
 SORTIE = (
     Path(__file__).resolve().parent.parent
     / "precis/fr/entreprises_publiques/listes/groupes-bancaires-perimetre.csv"
 )
-FICHIERS = {
-    "STB": "stb/stb-rapport-annuel-de-gestion-31-12-2021.pdf",
-    "BH": "bh-bank/bh-rapport-annuel-de-gestion-31-12-2021.pdf",
-    "BNA": "bna/bna-rapport-annuel-de-gestion-31-12-2021.pdf",
-}
+COLONNES = [
+    "groupe",
+    "exercice",
+    "entite",
+    "methode",
+    "controle_pct",
+    "interet_pct",
+    "pays",
+    "source",
+]
+
+# (groupe, exercice du rapport, fichier sous DONNEES, lecteur, clé de la notice)
+DOCUMENTS = [
+    (
+        "STB",
+        2011,
+        "bvmt-rapports-archives/stb/20211103_Rapport_STB_Fr__2011.pdf",
+        "stb_ancien",
+        "ra-stb-2011",
+    ),
+    (
+        "STB",
+        2013,
+        "bvmt-rapports-archives/stb/20211103_Rapport_STB_Fr_2013.pdf",
+        "stb_ancien",
+        "ra-stb-2013",
+    ),
+    (
+        "STB",
+        2014,
+        "bvmt-rapports-archives/stb/20211103_Rapport_STB_Fr_2014.pdf",
+        "stb_ancien",
+        "ra-stb-2014",
+    ),
+    (
+        "STB",
+        2015,
+        "bvmt-rapports-archives/stb/20211103_Rapport_STB_Fr__2015.pdf",
+        "stb_ancien",
+        "ra-stb-2015",
+    ),
+    (
+        "STB",
+        2017,
+        "bvmt-rapports-archives/stb/20230228_Rapport_STB_Fr_2017.pdf",
+        "stb_ancien",
+        "ra-stb-2017",
+    ),
+    (
+        "STB",
+        2018,
+        "bvmt-rapports-archives/stb/20211103_STB_RAPPORT_2018_FRANÇAIS.pdf",
+        "stb_ancien",
+        "ra-stb-2018",
+    ),
+    (
+        "STB",
+        2021,
+        "bvmt-rapports/stb/stb-rapport-annuel-de-gestion-31-12-2021.pdf",
+        "stb",
+        "bvmt-ra-stb-2021",
+    ),
+    (
+        "BH",
+        2021,
+        "bvmt-rapports/bh-bank/bh-rapport-annuel-de-gestion-31-12-2021.pdf",
+        "bh",
+        "bvmt-ra-bh-2021",
+    ),
+    (
+        "BNA",
+        2021,
+        "bvmt-rapports/bna/bna-rapport-annuel-de-gestion-31-12-2021.pdf",
+        "bna",
+        "bvmt-ra-bna-2021",
+    ),
+]
 METHODES = {
     "integration globale": "intégration globale",
     "mise en equivalence": "mise en équivalence",
 }
+METHODES_STB = {
+    "I-G": "intégration globale",
+    "IG": "intégration globale",
+    "M-E": "mise en équivalence",
+    "ME": "mise en équivalence",
+}
+JETON = re.compile(
+    r"(?<![\w.,-])-?\d+[.,]\d+\s*%?|\b(?:I-G|M-E|H-P|IG|ME|HP)\b|(?<!\S)-(?=\s|$)"
+)
 
 
 def texte(chemin: Path) -> str:
@@ -59,28 +148,41 @@ def nombre(valeur: str) -> str:
     return valeur.replace(",", ".").rstrip("%")
 
 
+def normalise_pct(valeur: str) -> str:
+    return re.sub(r"\s+", "", valeur).replace(",", ".").rstrip("%")
+
+
 def propre(nom: str) -> str:
     return re.sub(r"\s*\(\d\)\s*$", "", " ".join(nom.split())).strip()
 
 
 def methode(valeur: str) -> str:
-    import unicodedata
-
     cle = (
         unicodedata.normalize("NFKD", valeur).encode("ascii", "ignore").decode().lower()
     )
     return METHODES.get(cle, valeur.lower())
 
 
-def stb(contenu: str) -> list[list[str]]:
-    """Deux tableaux numérotés de 22 lignes : contrôle (le premier), intérêt (le second)."""
+def nettoie_nombres(texte: str) -> str:
+    """Recolle les nombres que la mise en page ou l'extraction a coupés (« 70 ,70% », « 0, 30 % »)."""
+    texte = re.sub(r"[\x00-\x08\x0b-\x1f]", "", texte)
+    texte = re.sub(r"(?<=\d)\s+(?=[.,]\d)", "", texte)
+    return re.sub(r"(?<=\d[.,])\s+(?=\d)", "", texte)
+
+
+# --- STB ---------------------------------------------------------------------------------
+
+
+def stb(contenu: str, exercice: int = 2021) -> list[list[str]]:
+    """Rapport de 2020 et de 2021 : deux tableaux numérotés (contrôle, puis intérêt), chacun avec la
+    colonne de l'exercice, celle de l'exercice précédent et la variation ; la méthode n'y figure pas."""
     motif = re.compile(
         r"(\d{1,2})\.\s+(.+?)\s{2,}(\d+,\d+)%\s+(\d+,\d+)%\s+(-?\d+,\d+)%"
     )
     debut = contenu.index("SOCIETES CONSOLIDEES")
-    vues: dict[str, dict[str, str]] = {}
+    vues: dict[str, dict] = {}
     ordre: list[str] = []
-    rang = {}
+    rang: dict[str, int] = {}
     for ligne in contenu[debut:].splitlines():
         trouve = motif.search(ligne)
         if not trouve:
@@ -90,28 +192,100 @@ def stb(contenu: str) -> list[list[str]]:
         if rang[numero] > 2:
             break
         champ = "controle" if rang[numero] == 1 else "interet"
-        entree = vues.setdefault(numero, {"nom": nom})
-        entree[champ] = nombre(trouve.group(3))
+        entree = vues.setdefault(
+            numero, {"nom": re.sub(r"\s*\(société Mère\)", "", nom)}
+        )
+        entree[champ] = (nombre(trouve.group(3)), nombre(trouve.group(4)))
         if numero not in ordre:
             ordre.append(numero)
     lignes = []
     for numero in ordre:
         e = vues[numero]
-        mere = "mère" if numero == "1" else ""
-        lignes.append(
-            [
-                "STB",
-                re.sub(r"\s*\(société Mère\)", "", e["nom"]),
-                mere,
-                e.get("controle", ""),
-                e.get("interet", ""),
-                "",
-            ]
-        )
+        for decalage in (0, 1):
+            controle = e.get("controle", ("", ""))[decalage]
+            interet = e.get("interet", ("", ""))[decalage]
+            lignes.append(
+                [
+                    "STB",
+                    str(exercice - decalage),
+                    e["nom"],
+                    "mère" if numero == "1" else "",
+                    controle,
+                    interet,
+                    "",
+                ]
+            )
     return lignes
 
 
-def bna(contenu: str) -> list[list[str]]:
+def ligne_stb_ancienne(ligne: str):
+    """Une ligne des rapports de la STB de 2011 à 2018 : contrôle (N, N-1, variation), méthode (N, N-1),
+    intérêt (N, N-1, variation). Rend (nom, [valeur N, valeur N-1]), chaque valeur étant
+    (méthode, contrôle, intérêt) ou None quand l'entité est hors du périmètre cet exercice-là
+    (tiret ou « H-P »), ou rend None si la ligne n'a pas huit jetons."""
+    ligne = nettoie_nombres(ligne)
+    trouve = re.match(
+        r"^\s*(?:\d+\s+)?(\d{1,2})\.\s+(?:\d{1,2}\.\s+)?(.+?)\s*(?=(?<![\w.,-])-?\d+[.,]\d+\s*%|\bH-P\b|\bHP\b)",
+        ligne,
+    )
+    if not trouve:
+        return None
+    nom = propre(re.sub(r"\(société Mère\)", "", trouve.group(2)))
+    jetons = [j.group(0).strip() for j in JETON.finditer(ligne[trouve.end() :])]
+    if len(jetons) != 8:
+        return None
+    controle_n, controle_p, _, methode_n, methode_p, interet_n, interet_p, _ = jetons
+
+    def pct(jeton):
+        return (
+            None
+            if jeton in ("-", "H-P", "HP") or not re.match(r"-?\d", jeton)
+            else normalise_pct(jeton)
+        )
+
+    def valeur(methode_, controle, interet):
+        if methode_ not in METHODES_STB or pct(controle) is None:
+            return None
+        return (METHODES_STB[methode_], pct(controle), pct(interet) or "")
+
+    return nom, [
+        valeur(methode_n, controle_n, interet_n),
+        valeur(methode_p, controle_p, interet_p),
+    ]
+
+
+def stb_ancien(contenu: str, exercice: int) -> list[list[str]]:
+    lignes, vus = [], set()
+    debut = contenu.find("% de Contrôle")
+    for ligne in contenu[debut:].splitlines() if debut >= 0 else []:
+        lue = ligne_stb_ancienne(ligne)
+        if not lue:
+            continue
+        nom, valeurs = lue
+        if nom in vus:  # le tableau reparaît plus loin : on garde la première lecture
+            continue
+        vus.add(nom)
+        for decalage, valeur in enumerate(valeurs):
+            if valeur:
+                mere = nom.startswith("STB BANK")
+                lignes.append(
+                    [
+                        "STB",
+                        str(exercice - decalage),
+                        nom,
+                        "mère" if mere else valeur[0],
+                        valeur[1],
+                        valeur[2],
+                        "Tunisie",
+                    ]
+                )
+    return lignes
+
+
+# --- BNA et BH -----------------------------------------------------------------------------
+
+
+def bna(contenu: str, exercice: int = 2021) -> list[list[str]]:
     debut = contenu.index("4- PÉRIMÈTRE DE CONSOLIDATION")
     fin = contenu.index("(1) La BNA détient 33,926%", debut)
     motif = re.compile(
@@ -130,6 +304,7 @@ def bna(contenu: str) -> list[list[str]]:
             lignes.append(
                 [
                     "BNA",
+                    str(exercice),
                     nom,
                     mere,
                     nombre(trouve.group(3)),
@@ -140,7 +315,7 @@ def bna(contenu: str) -> list[list[str]]:
     return lignes
 
 
-def bh(contenu: str) -> list[list[str]]:
+def bh(contenu: str, exercice: int = 2021) -> list[list[str]]:
     debut = contenu.index(
         "Les entreprises retenues dans le périmètre de consolidation, le pourcentage d'intérêt"
     )
@@ -155,25 +330,79 @@ def bh(contenu: str) -> list[list[str]]:
             nom = propre(trouve.group(1))
             mere = "mère" if nom == "BH BANK" else methode(trouve.group(4))
             lignes.append(
-                ["BH", nom, mere, "", nombre(trouve.group(2)), trouve.group(5)]
+                [
+                    "BH",
+                    str(exercice),
+                    nom,
+                    mere,
+                    "",
+                    nombre(trouve.group(2)),
+                    trouve.group(5),
+                ]
             )
     return lignes
 
 
-def main() -> int:
-    lignes: list[list[str]] = []
-    for groupe, lecteur in (("STB", stb), ("BH", bh), ("BNA", bna)):
-        lues = lecteur(texte(RAPPORTS / FICHIERS[groupe]))
-        print(f"{groupe} : {len(lues)} entités")
-        lignes += lues
+LECTEURS = {"stb": stb, "stb_ancien": stb_ancien, "bna": bna, "bh": bh}
+
+
+def lire_documents(groupes: list[str]) -> list[list[str]]:
+    """Lit les documents des groupes demandés ; pour chaque exercice, la lecture du rapport de cet
+    exercice l'emporte sur celle du rapport suivant."""
+    retenues: dict[tuple[str, str], tuple[int, list[list[str]]]] = {}
+    for groupe, exercice, fichier, lecteur, source in DOCUMENTS:
+        if groupe not in groupes:
+            continue
+        chemin = DONNEES / fichier
+        if not chemin.exists():
+            print(
+                f"{groupe} {exercice} : {chemin.name} manque, ignoré", file=sys.stderr
+            )
+            continue
+        lues = LECTEURS[lecteur](texte(chemin), exercice)
+        par_exercice: dict[str, list[list[str]]] = {}
+        for ligne in lues:
+            par_exercice.setdefault(ligne[1], []).append(ligne + [source])
+        for annee, lignes in par_exercice.items():
+            distance = exercice - int(annee)
+            actuel = retenues.get((groupe, annee))
+            if actuel is None or (len(lignes), -distance) > (
+                len(actuel[1]),
+                -actuel[0],
+            ):
+                retenues[(groupe, annee)] = (distance, lignes)
+    return [ligne for (_, lignes) in retenues.values() for ligne in lignes]
+
+
+def main(arguments: list[str]) -> int:
+    groupes = [a.upper() for a in arguments] or ["STB", "BH", "BNA"]
+    nouvelles = lire_documents(groupes)
+    gardees: list[list[str]] = []
+    if SORTIE.exists():
+        with SORTIE.open(encoding="utf-8", newline="") as source:
+            gardees = [
+                [r.get(c, "") for c in COLONNES]
+                for r in csv.DictReader(source)
+                if r["groupe"] not in groupes
+            ]
+    tout = gardees + nouvelles
+    ordre = {"STB": 0, "BH": 1, "BNA": 2}
+    tout.sort(key=lambda r: (ordre.get(r[0], 9), r[1], r[3] != "mère", r[2]))
     with SORTIE.open("w", encoding="utf-8", newline="") as sortie:
         ecrivain = csv.writer(sortie)
-        ecrivain.writerow(
-            ["groupe", "entite", "methode", "controle_pct", "interet_pct", "pays"]
+        ecrivain.writerow(COLONNES)
+        ecrivain.writerows(tout)
+    for groupe in groupes:
+        par: dict[str, int] = {}
+        for r in nouvelles:
+            if r[0] == groupe:
+                par[r[1]] = par.get(r[1], 0) + 1
+        print(
+            f"{groupe} : "
+            + ", ".join(f"{a} : {n} lignes" for a, n in sorted(par.items()))
         )
-        ecrivain.writerows(lignes)
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(main(sys.argv[1:]))

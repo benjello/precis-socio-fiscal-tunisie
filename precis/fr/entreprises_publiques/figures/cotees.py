@@ -42,6 +42,7 @@ CAPITAL = "societes-cotees-capital"
 RESULTATS = "societes-cotees-resultats"
 REGISTRE = "entreprises-publiques-registre"
 PERIMETRE = "groupes-bancaires-perimetre"
+ALIAS_ENTITES = {"STCVERITAS": "STCVVERITAS"}  # « S.T.C VERITAS » et « S.T.C.V VERITAS » : la même société
 RAPPORTS = {"STB": "bvmt-ra-stb-2021", "BH": "bvmt-ra-bh-2021", "BNA": "bvmt-ra-bna-2021"}
 PAGES_RAPPORT = {"STB": "p. 96-97", "BH": "p. 240", "BNA": "p. 127"}
 COULEURS = {"STB": "#0969da", "BH": "#bc4c00", "BNA": "#1a7f37"}
@@ -129,15 +130,43 @@ def tableau_resultats(caption: str, tbl_id: str = "tbl-ep-cotees-resultats") -> 
 def tableau_perimetres(caption: str, tbl_id: str = "tbl-ep-cotees-perimetres") -> None:
     """Les entités consolidées par la STB, la BH et la BNA : méthode, contrôle, intérêt."""
     d = _lire(PERIMETRE)
+    d = d[d["exercice"] == "2021"]
     lignes, precedent = [], None
     for _, r in d.iterrows():
         groupe = f"**{r['groupe']}**" if r["groupe"] != precedent else ""
         precedent = r["groupe"]
         controle = _pct(r["controle_pct"]) if r["controle_pct"] else "–"
         lignes.append([groupe, r["entite"], r["methode"] or "–", controle, _pct(r["interet_pct"]),
-                       f"[@{RAPPORTS[r['groupe']]}, {PAGES_RAPPORT[r['groupe']]}]"])
+                       f"[@{r['source']}, {PAGES_RAPPORT[r['groupe']]}]"])
     _md(["Groupe", "Entité consolidée", "Méthode", "Contrôle (%)", "Intérêt (%)", "Source"],
         lignes, caption, tbl_id)
+
+
+def _cle_entite(nom: str) -> str:
+    import re
+    import unicodedata
+    brut = unicodedata.normalize("NFKD", nom).encode("ascii", "ignore").decode().upper()
+    brut = re.sub(r"\(.*?\)|\bEX\b.*", "", brut)
+    cle = re.sub(r"[^A-Z0-9]", "", brut)
+    return ALIAS_ENTITES.get(cle, cle)
+
+
+def tableau_evolution(groupe: str, caption: str, tbl_id: str) -> None:
+    """Les entités d'un groupe, exercice par exercice : pourcentage d'intérêt (à défaut de contrôle),
+    « (ME) » pour la mise en équivalence, « – » quand l'entité n'est pas consolidée cet exercice-là."""
+    d = _lire(PERIMETRE)
+    d = d[(d["groupe"] == groupe) & (d["methode"] != "mère")]
+    exercices = sorted(d["exercice"].unique())
+    entites: dict[str, dict] = {}
+    for _, r in d.sort_values("exercice").iterrows():
+        e = entites.setdefault(_cle_entite(r["entite"]), {"nom": r["entite"], "premier": r["exercice"], "val": {}})
+        e["nom"] = r["entite"]
+        valeur = _pct(r["interet_pct"] or r["controle_pct"])
+        e["val"][r["exercice"]] = valeur + (" (ME)" if r["methode"] == "mise en équivalence" else "")
+    lignes = [[e["nom"].replace("’", "'")] + [e["val"].get(x, "–") for x in exercices]
+              for e in sorted(entites.values(), key=lambda e: (e["premier"], e["nom"]))]
+    lignes.append(["**Nombre d'entités**"] + [str(sum(1 for e in entites.values() if x in e["val"])) for x in exercices])
+    _md(["Entité"] + exercices, lignes, caption, tbl_id)
 
 
 def tableau_registre(caption: str, tbl_id: str = "tbl-ep-registre-entreprises") -> None:

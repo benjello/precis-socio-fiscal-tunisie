@@ -1,58 +1,277 @@
-groupe,entite,methode,controle_pct,interet_pct,pays
-STB,STB BANK,mère,100.00,99.98,
-STB,STB INVEST,,95.05,94.72,
-STB,STB MANAGER,,99.99,99.40,
-STB,STB FINANCE,,96.71,95.55,
-STB,STB SICAR,,99.50,98.58,
-STB,L’IMMOBILIERE DE L'AVENUE,,99.90,99.16,
-STB,STE TUN.RECOUVR. DES CREANCES “STRC”,,100.00,99.72,
-STB,SOCIETE LA GENERALE DES VENTES,,50.00,49.99,
-STB,SOCIETE ED DKHILA,,67.87,67.51,
-STB,SOCIETE ACTIVHOTELS,,100.00,99.93,
-STB,SICAV L'INVESTISSEUR,,78.17,75.85,
-STB,SICAV L’AVENIR,,98.35,97.55,
-STB,SICAV EPARGNE OBLIGATAIRE,,1.61,1.56,
-STB,SICAV EPARGNANT,,8.83,8.68,
-STB,TUNISIAN FOREIGN BANK,,49.46,49.45,
-STB,STE MOYENS GENERAUX,,99.98,97.15,
-STB,MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS,,49.95,49.93,
-STB,S.T.C VERITAS,,27.06,27.05,
-STB,SONI BANK,,25.00,25.00,
-STB,"S.C.I "" LA MAISON DU BANQUIER""",,19.96,19.96,
-STB,"S.P.C.M ""ELFEJJA""",,20.00,20.00,
-STB,STB SECURITE ET GARDIENNAGE,,99.90,97.06,
-BH,BH BANK,mère,,100.00,Tunisie
-BH,BH SICAF,intégration globale,,53.18,Tunisie
-BH,TFB,mise en équivalence,,27.86,France
-BH,STIMEC,intégration globale,,43.11,Tunisie
-BH,BH INVEST,intégration globale,,62.31,Tunisie
-BH,SICAV BH-Obligataire,intégration globale,,10.00,Tunisie
-BH,BH ASSURANCES,intégration globale,,34.13,Tunisie
-BH,BH EQUITY,intégration globale,,53.08,Tunisie
-BH,BH IMMO,intégration globale,,58.52,Tunisie
-BH,BH RECOUVREMENT,intégration globale,,77.84,Tunisie
-BH,BH LEASING,intégration globale,,57.05,Tunisie
-BH,SICAV BH-Capitalisation,intégration globale,,21.24,Tunisie
-BNA,Banque Nationale Agricole,mère,100.000,99.833,Tunisie
-BNA,BNA Capitaux,intégration globale,99.996,99.27,Tunisie
-BNA,SOFINREC,intégration globale,100.000,99.29,Tunisie
-BNA,SICAR INVEST,intégration globale,93.300,74.77,Tunisie
-BNA,SOIVM SICAF,intégration globale,100.000,77.58,Tunisie
-BNA,SICAF Participations,intégration globale,99.986,99.82,Tunisie
-BNA,SICAV BNA,intégration globale,35.22,31.66,Tunisie
-BNA,Placement Obligataire SICAV,intégration globale,0.09,0.06,Tunisie
-BNA,ZIED SARL,intégration globale,100.00,30.65,Tunisie
-BNA,CAP BANK,mise en équivalence,23.82,23.78,Tunisie
-BNA,TUNIS-RE,mise en équivalence,21.51,19.77,Tunisie
-BNA,AMI,intégration globale,52.16,52.07,Tunisie
-BNA,SODINO,mise en équivalence,24.75,24.71,Tunisie
-BNA,SIMPAR,intégration globale,40.51,33.38,Tunisie
-BNA,ESSOUKNA,intégration globale,69.96,23.41,Tunisie
-BNA,SIVIA,intégration globale,99.99,42.24,Tunisie
-BNA,SPI MADINA,intégration globale,100.00,41.04,Tunisie
-BNA,LES ŒILLETS,intégration globale,100.00,52.88,Tunisie
-BNA,Tunisie Informatique Services,intégration globale,74.00,46.64,Tunisie
-BNA,SODET SUD,intégration globale,74.57,53.95,Tunisie
-BNA,SOGEST,intégration globale,94.76,44.93,Tunisie
-BNA,AGROSERVICES,intégration globale,34.85,34.79,Tunisie
-BNA,GENERALE DE VENTE,mise en équivalence,50.00,49.91,Tunisie
+groupe,exercice,entite,methode,controle_pct,interet_pct,pays,source
+STB,2010,STB BANK,mère,99.62,99.62,Tunisie,ra-stb-2011
+STB,2010,BANQUE D’AFFAIRE DE TUNISIE « B.A.T »,mise en équivalence,30.00,29.89,Tunisie,ra-stb-2011
+STB,2010,L’IMMOBILIERE DE L’AVENUE,intégration globale,99.91,97.97,Tunisie,ra-stb-2011
+STB,2010,S.T.C.V VERITAS,mise en équivalence,27.06,26.96,Tunisie,ra-stb-2011
+STB,2010,SICAV L’AVENIR,mise en équivalence,94.95,94.00,Tunisie,ra-stb-2011
+STB,2010,SICAV L’INVESTISSEUR,mise en équivalence,74.85,73.88,Tunisie,ra-stb-2011
+STB,2010,SICOAC,mise en équivalence,23.57,23.48,Tunisie,ra-stb-2011
+STB,2010,SOCIETE ACTIVHOTELS,intégration globale,99.97,95.95,Tunisie,ra-stb-2011
+STB,2010,SOCIETE ED DKHILA,intégration globale,67.87,67.53,Tunisie,ra-stb-2011
+STB,2010,SOCIETE FINANCIERE DE GESTION “SOFIGES”,intégration globale,96.70,92.81,Tunisie,ra-stb-2011
+STB,2010,SOCIETE LA GENERALE DES VENTES,intégration globale,50.00,49.81,Tunisie,ra-stb-2011
+STB,2010,SOFI ELAN SICAF,intégration globale,58.59,57.10,Tunisie,ra-stb-2011
+STB,2010,STB INVEST,intégration globale,99.01,98.39,Tunisie,ra-stb-2011
+STB,2010,STB MANAGER,intégration globale,99.96,90.89,Tunisie,ra-stb-2011
+STB,2010,STB SICAR,intégration globale,99.43,83.04,Tunisie,ra-stb-2011
+STB,2010,STE EL WEAFAK LEASING,mise en équivalence,22.62,22.15,Tunisie,ra-stb-2011
+STB,2010,STE TUN.RECOUVR. DES CREANCES “STRC”,intégration globale,99.99,99.54,Tunisie,ra-stb-2011
+STB,2010,TUNISIAN FOREIGN BANK EX « U.T.B»,mise en équivalence,43.43,43.26,Tunisie,ra-stb-2011
+STB,2011,STB BANK,mère,99.53,99.78,Tunisie,ra-stb-2011
+STB,2011,BANQUE D’AFFAIRE DE TUNISIE « B.A.T »,mise en équivalence,30.00,29.93,Tunisie,ra-stb-2011
+STB,2011,BFT,intégration globale,78.77,78.55,Tunisie,ra-stb-2011
+STB,2011,L’IMMOBILIERE DE L’AVENUE,intégration globale,99.91,98.13,Tunisie,ra-stb-2011
+STB,2011,S.C.I « LA MAISON DU BANQUIER»,mise en équivalence,21.64,21.23,Tunisie,ra-stb-2011
+STB,2011,S.E.D SOUSSE NORD,mise en équivalence,24.92,24.86,Tunisie,ra-stb-2011
+STB,2011,S.P.C.M «ELFEJJA»,mise en équivalence,20.00,19.96,Tunisie,ra-stb-2011
+STB,2011,S.T.C.V VERITAS,mise en équivalence,27.06,27.00,Tunisie,ra-stb-2011
+STB,2011,SICAV L’AVENIR,mise en équivalence,98.68,95.96,Tunisie,ra-stb-2011
+STB,2011,SICAV L’INVESTISSEUR,mise en équivalence,68.08,67.33,Tunisie,ra-stb-2011
+STB,2011,SICOAC,mise en équivalence,23.57,23.52,Tunisie,ra-stb-2011
+STB,2011,SMT (MAISON BLANCHE),mise en équivalence,39.01,38.92,Tunisie,ra-stb-2011
+STB,2011,SOCIETE ACTIVHOTELS,intégration globale,99.97,96.17,Tunisie,ra-stb-2011
+STB,2011,SOCIETE ED DKHILA,intégration globale,67.87,67.64,Tunisie,ra-stb-2011
+STB,2011,SOCIETE FINANCIERE DE GESTION “SOFIGES”,intégration globale,96.70,93.01,Tunisie,ra-stb-2011
+STB,2011,SOCIETE LA GENERALE DES VENTES,intégration globale,50.00,49.89,Tunisie,ra-stb-2011
+STB,2011,SOFI ELAN SICAF,intégration globale,58.59,57.20,Tunisie,ra-stb-2011
+STB,2011,SONI BANK,mise en équivalence,25.00,24.94,Tunisie,ra-stb-2011
+STB,2011,STB INVEST,intégration globale,99.01,98.55,Tunisie,ra-stb-2011
+STB,2011,STB MANAGER,intégration globale,99.96,91.10,Tunisie,ra-stb-2011
+STB,2011,STB SICAR,intégration globale,99.43,83.53,Tunisie,ra-stb-2011
+STB,2011,STE EL WEAFAK LEASING,mise en équivalence,21.71,20.77,Tunisie,ra-stb-2011
+STB,2011,STE TUN.RECOUVR. DES CREANCES “STRC”,intégration globale,99.99,99.70,Tunisie,ra-stb-2011
+STB,2011,TUNISIAN FOREIGN BANK EX « U.T.B»,mise en équivalence,43.42,43.32,Tunisie,ra-stb-2011
+STB,2012,STB BANK (parent company),mère,99.43,99.43,Tunisie,ra-stb-2013
+STB,2012,BANQUE D’AFFAIRE DE TUNISIE « B.A.T »,mise en équivalence,30.00,29.83,Tunisie,ra-stb-2013
+STB,2012,BFT,intégration globale,78.77,78.28,Tunisie,ra-stb-2013
+STB,2012,L’IMMOBILIERE DE L’AVENUE,intégration globale,99.91,97.82,Tunisie,ra-stb-2013
+STB,2012,S.C.I « LA MAISON DU BANQUIER»,mise en équivalence,21.64,21.16,Tunisie,ra-stb-2013
+STB,2012,S.E.D SOUSSE NORD,mise en équivalence,24.92,24.78,Tunisie,ra-stb-2013
+STB,2012,S.P.C.M «ELFEJJA»,mise en équivalence,16.67,16.58,Tunisie,ra-stb-2013
+STB,2012,S.T.C.V VERITAS,mise en équivalence,27.06,26.91,Tunisie,ra-stb-2013
+STB,2012,SICAV L’AVENIR,mise en équivalence,98.69,95.83,Tunisie,ra-stb-2013
+STB,2012,SICAV L’INVESTISSEUR,mise en équivalence,70.89,69.90,Tunisie,ra-stb-2013
+STB,2012,SICOAC,mise en équivalence,23.57,23.44,Tunisie,ra-stb-2013
+STB,2012,SIDCO SICAR,mise en équivalence,34.34,32.07,Tunisie,ra-stb-2013
+STB,2012,SMT (MAISON BLANCHE),mise en équivalence,38.90,38.68,Tunisie,ra-stb-2013
+STB,2012,SOCIETE ACTIVHOTELS,intégration globale,99.97,96.27,Tunisie,ra-stb-2013
+STB,2012,SOCIETE ED DKHILA,intégration globale,67.87,67.41,Tunisie,ra-stb-2013
+STB,2012,SOCIETE LA GENERALE DES VENTES,intégration globale,50.00,49.72,Tunisie,ra-stb-2013
+STB,2012,SOFI ELAN SICAF,intégration globale,58.59,57.05,Tunisie,ra-stb-2013
+STB,2012,SONI BANK,mise en équivalence,25.00,24.86,Tunisie,ra-stb-2013
+STB,2012,STB FINANCE,intégration globale,96.70,92.99,Tunisie,ra-stb-2013
+STB,2012,STB INVEST,intégration globale,99.01,98.24,Tunisie,ra-stb-2013
+STB,2012,STB MANAGER,intégration globale,99.96,91.20,Tunisie,ra-stb-2013
+STB,2012,STB SICAR,intégration globale,99.51,85.37,Tunisie,ra-stb-2013
+STB,2012,STE EL WEAFAK LEASING,mise en équivalence,21.71,20.70,Tunisie,ra-stb-2013
+STB,2012,STE TUN.RECOUVR. DES CREANCES “STRC”,intégration globale,99.99,99.36,Tunisie,ra-stb-2013
+STB,2012,TUNISIAN FOREIGN BANK EX « U.T.B»,mise en équivalence,43.42,43.17,Tunisie,ra-stb-2013
+STB,2013,STB BANK (parent company),mère,99.43,99.43,Tunisie,ra-stb-2013
+STB,2013,BANQUE D’AFFAIRE DE TUNISIE « B.A.T »,mise en équivalence,30.00,29.83,Tunisie,ra-stb-2013
+STB,2013,BFT,intégration globale,78.77,78.28,Tunisie,ra-stb-2013
+STB,2013,L’IMMOBILIERE DE L’AVENUE,intégration globale,99.91,97.84,Tunisie,ra-stb-2013
+STB,2013,S.C.I « LA MAISON DU BANQUIER»,mise en équivalence,21.64,21.16,Tunisie,ra-stb-2013
+STB,2013,S.E.D SOUSSE NORD,mise en équivalence,24.92,24.78,Tunisie,ra-stb-2013
+STB,2013,S.P.C.M «ELFEJJA»,mise en équivalence,20.00,19.89,Tunisie,ra-stb-2013
+STB,2013,S.T.C.V VERITAS,mise en équivalence,27.06,26.91,Tunisie,ra-stb-2013
+STB,2013,SICAV L’AVENIR,mise en équivalence,98.68,95.81,Tunisie,ra-stb-2013
+STB,2013,SICAV L’INVESTISSEUR,mise en équivalence,70.70,69.70,Tunisie,ra-stb-2013
+STB,2013,SICOAC,mise en équivalence,23.57,23.44,Tunisie,ra-stb-2013
+STB,2013,SIDCO SICAR,mise en équivalence,34.34,32.07,Tunisie,ra-stb-2013
+STB,2013,SMT (MAISON BLANCHE),mise en équivalence,38.90,38.68,Tunisie,ra-stb-2013
+STB,2013,SOCIETE ACTIVHOTELS,intégration globale,99.97,96.28,Tunisie,ra-stb-2013
+STB,2013,SOCIETE ED DKHILA,intégration globale,67.87,67.41,Tunisie,ra-stb-2013
+STB,2013,SOCIETE LA GENERALE DES VENTES,intégration globale,50.00,49.72,Tunisie,ra-stb-2013
+STB,2013,SOFI ELAN SICAF,intégration globale,59.39,57.84,Tunisie,ra-stb-2013
+STB,2013,SONI BANK,mise en équivalence,25.00,24.86,Tunisie,ra-stb-2013
+STB,2013,STB FINANCE,intégration globale,96.70,93.01,Tunisie,ra-stb-2013
+STB,2013,STB INVEST,intégration globale,99.01,98.24,Tunisie,ra-stb-2013
+STB,2013,STB MANAGER,intégration globale,99.96,91.28,Tunisie,ra-stb-2013
+STB,2013,STB SICAR,intégration globale,99.51,85.38,Tunisie,ra-stb-2013
+STB,2013,STE EL WEAFAK LEASING,mise en équivalence,31.57,29.98,Tunisie,ra-stb-2013
+STB,2013,STE TUN.RECOUVR. DES CREANCES “STRC”,intégration globale,99.99,99.36,Tunisie,ra-stb-2013
+STB,2013,TUNISIAN FOREIGN BANK EX « U.T.B»,mise en équivalence,43.42,43.17,Tunisie,ra-stb-2013
+STB,2014,STB BANK,mère,99.43,99.43,Tunisie,ra-stb-2015
+STB,2014,BFT,intégration globale,78.80,78.31,Tunisie,ra-stb-2015
+STB,2014,L’IMMOBILIERE DE L’AVENUE,intégration globale,99.91,97.84,Tunisie,ra-stb-2015
+STB,2014,S.C.I «LA MAISON DU BANQUIER»,mise en équivalence,21.64,21.16,Tunisie,ra-stb-2015
+STB,2014,S.E.D SOUSSE NORD,mise en équivalence,24.92,24.78,Tunisie,ra-stb-2015
+STB,2014,S.P.C.M «ELFEJJA»,mise en équivalence,20.00,19.89,Tunisie,ra-stb-2015
+STB,2014,S.T.C.V VERITAS,mise en équivalence,27.06,26.91,Tunisie,ra-stb-2015
+STB,2014,SICAV L’AVENIR,mise en équivalence,98.66,95.77,Tunisie,ra-stb-2015
+STB,2014,SICAV L’INVESTISSEUR,mise en équivalence,73.44,72.40,Tunisie,ra-stb-2015
+STB,2014,SOCIETE ACTIVHOTELS,intégration globale,99.97,96.28,Tunisie,ra-stb-2015
+STB,2014,SOCIETE ED DKHILA,intégration globale,67.87,67.41,Tunisie,ra-stb-2015
+STB,2014,SOCIETE LA GENERALE DES VENTES,intégration globale,50.00,49.72,Tunisie,ra-stb-2015
+STB,2014,SOFI ELAN SICAF,intégration globale,59.40,57.85,Tunisie,ra-stb-2015
+STB,2014,SONI BANK,mise en équivalence,25.00,24.86,Tunisie,ra-stb-2015
+STB,2014,STB FINANCE,intégration globale,96.70,93.01,Tunisie,ra-stb-2015
+STB,2014,STB INVEST,intégration globale,99.01,98.24,Tunisie,ra-stb-2015
+STB,2014,STB MANAGER,intégration globale,99.96,91.28,Tunisie,ra-stb-2015
+STB,2014,STB SICAR,intégration globale,99.51,85.38,Tunisie,ra-stb-2015
+STB,2014,STE TUN.RECOUVR. DES CREANCES “STRC”,intégration globale,99.99,99.36,Tunisie,ra-stb-2015
+STB,2014,TUNISIAN FOREIGN BANK EX «U.T.B»,mise en équivalence,43.42,43.17,Tunisie,ra-stb-2015
+STB,2015,STB BANK,mère,99.69,99.69,Tunisie,ra-stb-2015
+STB,2015,BFT,intégration globale,78.80,78.52,Tunisie,ra-stb-2015
+STB,2015,L’IMMOBILIERE DE L’AVENUE,intégration globale,99.91,98.10,Tunisie,ra-stb-2015
+STB,2015,S.C.I «LA MAISON DU BANQUIER»,mise en équivalence,21.64,21.22,Tunisie,ra-stb-2015
+STB,2015,S.E.D SOUSSE NORD,mise en équivalence,24.92,24.85,Tunisie,ra-stb-2015
+STB,2015,S.P.C.M «ELFEJJA»,mise en équivalence,20.00,19.94,Tunisie,ra-stb-2015
+STB,2015,S.T.C.V VERITAS,mise en équivalence,27.06,26.98,Tunisie,ra-stb-2015
+STB,2015,SICAV L’AVENIR,mise en équivalence,98.62,95.94,Tunisie,ra-stb-2015
+STB,2015,SICAV L’INVESTISSEUR,mise en équivalence,73.55,72.70,Tunisie,ra-stb-2015
+STB,2015,SOCIETE ACTIVHOTELS,intégration globale,99.97,96.53,Tunisie,ra-stb-2015
+STB,2015,SOCIETE ED DKHILA,intégration globale,67.87,67.58,Tunisie,ra-stb-2015
+STB,2015,SOCIETE LA GENERALE DES VENTES,intégration globale,50.00,49.85,Tunisie,ra-stb-2015
+STB,2015,SOFI ELAN SICAF,intégration globale,59.40,58.00,Tunisie,ra-stb-2015
+STB,2015,SONI BANK,mise en équivalence,25.00,24.92,Tunisie,ra-stb-2015
+STB,2015,STB FINANCE,intégration globale,96.70,93.25,Tunisie,ra-stb-2015
+STB,2015,STB INVEST,intégration globale,99.01,98.50,Tunisie,ra-stb-2015
+STB,2015,STB MANAGER,intégration globale,99.96,91.52,Tunisie,ra-stb-2015
+STB,2015,STB SICAR,intégration globale,99.51,85.60,Tunisie,ra-stb-2015
+STB,2015,STE AHLA HOTEL NEPTUNIA,intégration globale,46.81,46.67,Tunisie,ra-stb-2015
+STB,2015,STE MOYENS GENERAUX,intégration globale,100.00,90.79,Tunisie,ra-stb-2015
+STB,2015,STE TUN.RECOUVR. DES CREANCES “STRC”,intégration globale,99.99,99.62,Tunisie,ra-stb-2015
+STB,2015,TUNISIAN FOREIGN BANK EX «U.T.B»,mise en équivalence,43.42,43.29,Tunisie,ra-stb-2015
+STB,2016,STB BANK,mère,99.69,99.69,Tunisie,ra-stb-2017
+STB,2016,BFT,intégration globale,78.80,78.52,Tunisie,ra-stb-2017
+STB,2016,L’IMMOBILIERE DE L’AVENUE,intégration globale,99.90,98.07,Tunisie,ra-stb-2017
+STB,2016,S.C.I «LA MAISON DU BANQUIER»,mise en équivalence,21.64,21.22,Tunisie,ra-stb-2017
+STB,2016,S.E.D SOUSSE NORD,mise en équivalence,24.92,24.85,Tunisie,ra-stb-2017
+STB,2016,S.P.C.M «ELFEJJA»,mise en équivalence,20.00,19.94,Tunisie,ra-stb-2017
+STB,2016,S.T.C.V VERITAS,mise en équivalence,27.06,26.98,Tunisie,ra-stb-2017
+STB,2016,SICAV L’AVENIR,mise en équivalence,98.61,96.26,Tunisie,ra-stb-2017
+STB,2016,SICAV L’INVESTISSEUR,mise en équivalence,73.28,72.43,Tunisie,ra-stb-2017
+STB,2016,SOCIETE ACTIVHOTELS,intégration globale,99.97,96.53,Tunisie,ra-stb-2017
+STB,2016,SOCIETE ED DKHILA,intégration globale,67.87,67.58,Tunisie,ra-stb-2017
+STB,2016,SOCIETE LA GENERALE DES VENTES,intégration globale,50.00,49.85,Tunisie,ra-stb-2017
+STB,2016,SOFI ELAN SICAF,intégration globale,58.59,57.22,Tunisie,ra-stb-2017
+STB,2016,SONI BANK,mise en équivalence,25.00,24.92,Tunisie,ra-stb-2017
+STB,2016,STB FINANCE,intégration globale,96.70,93.23,Tunisie,ra-stb-2017
+STB,2016,STB INVEST,intégration globale,99.01,98.50,Tunisie,ra-stb-2017
+STB,2016,STB MANAGER,intégration globale,99.96,91.43,Tunisie,ra-stb-2017
+STB,2016,STB SECURITE ET GARDIENNAGE,intégration globale,99.95,90.71,Tunisie,ra-stb-2017
+STB,2016,STB SICAR,intégration globale,99.50,85.59,Tunisie,ra-stb-2017
+STB,2016,STE MOYENS GENERAUX,intégration globale,100.00,90.68,Tunisie,ra-stb-2017
+STB,2016,STE TUN.RECOUVR. DES CREANCES “STRC”,intégration globale,100.00,99.63,Tunisie,ra-stb-2017
+STB,2016,TUNISIAN FOREIGN BANK EX « U.T.B»,mise en équivalence,46.00,45.86,Tunisie,ra-stb-2017
+STB,2017,STB BANK,mère,99.91,99.69,Tunisie,ra-stb-2017
+STB,2017,BFT,intégration globale,78.80,78.53,Tunisie,ra-stb-2017
+STB,2017,L’IMMOBILIERE DE L’AVENUE,intégration globale,99.90,98.28,Tunisie,ra-stb-2017
+STB,2017,S.C.I «LA MAISON DU BANQUIER»,mise en équivalence,21.64,21.22,Tunisie,ra-stb-2017
+STB,2017,S.P.C.M «ELFEJJA»,mise en équivalence,20.00,19.94,Tunisie,ra-stb-2017
+STB,2017,S.T.C.V VERITAS,mise en équivalence,27.06,26.97,Tunisie,ra-stb-2017
+STB,2017,SICAV L’AVENIR,mise en équivalence,98.44,97.79,Tunisie,ra-stb-2017
+STB,2017,SICAV L’INVESTISSEUR,mise en équivalence,71.35,70.92,Tunisie,ra-stb-2017
+STB,2017,SOCIETE ACTIVHOTELS,intégration globale,99.97,99.35,Tunisie,ra-stb-2017
+STB,2017,SOCIETE ED DKHILA,intégration globale,67.87,67.63,Tunisie,ra-stb-2017
+STB,2017,SOCIETE LA GENERALE DES VENTES,intégration globale,50.00,49.85,Tunisie,ra-stb-2017
+STB,2017,SOFI ELAN SICAF,intégration globale,58.59,57.68,Tunisie,ra-stb-2017
+STB,2017,SONI BANK,mise en équivalence,25.00,24.92,Tunisie,ra-stb-2017
+STB,2017,STB FINANCE,intégration globale,96.70,95.17,Tunisie,ra-stb-2017
+STB,2017,STB INVEST,intégration globale,99.51,99.19,Tunisie,ra-stb-2017
+STB,2017,STB MANAGER,intégration globale,99.96,94.08,Tunisie,ra-stb-2017
+STB,2017,STB SECURITE ET GARDIENNAGE,intégration globale,100.00,93.88,Tunisie,ra-stb-2017
+STB,2017,STB SICAR,intégration globale,99.50,98.77,Tunisie,ra-stb-2017
+STB,2017,STE MOYENS GENERAUX,intégration globale,100.00,93.79,Tunisie,ra-stb-2017
+STB,2017,STE TUN.RECOUVR. DES CREANCES “STRC”,intégration globale,100.00,99.67,Tunisie,ra-stb-2017
+STB,2017,TUNISIAN FOREIGN BANK EX « U.T.B»,mise en équivalence,44.18,44.04,Tunisie,ra-stb-2017
+STB,2018,STB BANK,mère,99.91,99.72,Tunisie,ra-stb-2018
+STB,2018,L’IMMOBILIERE DE L’AVENUE,intégration globale,99.90,98.36,Tunisie,ra-stb-2018
+STB,2018,S.C.I «LA MAISON DU BANQUIER»,mise en équivalence,19.96,19.90,Tunisie,ra-stb-2018
+STB,2018,S.P.C.M «ELFEJJA»,mise en équivalence,20.00,19.94,Tunisie,ra-stb-2018
+STB,2018,S.T.C.V VERITAS,mise en équivalence,27.06,26.98,Tunisie,ra-stb-2018
+STB,2018,SICAV L’AVENIR,mise en équivalence,98.44,97.82,Tunisie,ra-stb-2018
+STB,2018,SICAV L’INVESTISSEUR,mise en équivalence,76.27,75.84,Tunisie,ra-stb-2018
+STB,2018,SOCIETE ACTIVHOTELS,intégration globale,99.97,99.38,Tunisie,ra-stb-2018
+STB,2018,SOCIETE ED DKHILA,intégration globale,67.87,67.65,Tunisie,ra-stb-2018
+STB,2018,SOCIETE LA GENERALE DES VENTES,intégration globale,50.00,49.86,Tunisie,ra-stb-2018
+STB,2018,SOFI ELAN SICAF,intégration globale,60.63,59.73,Tunisie,ra-stb-2018
+STB,2018,SONI BANK,mise en équivalence,25.00,24.93,Tunisie,ra-stb-2018
+STB,2018,STB FINANCE,intégration globale,96.71,95.26,Tunisie,ra-stb-2018
+STB,2018,STB INVEST,intégration globale,99.51,99.22,Tunisie,ra-stb-2018
+STB,2018,STB MANAGER,intégration globale,99.96,94.33,Tunisie,ra-stb-2018
+STB,2018,STB SECURITE ET GARDIENNAGE,intégration globale,99.95,94.09,Tunisie,ra-stb-2018
+STB,2018,STB SICAR,intégration globale,99.50,98.81,Tunisie,ra-stb-2018
+STB,2018,STE MOYENS GENERAUX,intégration globale,99.98,94.06,Tunisie,ra-stb-2018
+STB,2018,STE TUN.RECOUVR. DES CREANCES “STRC”,intégration globale,100.00,99.69,Tunisie,ra-stb-2018
+STB,2018,TUNISIAN FOREIGN BANK EX « U.T.B»,mise en équivalence,44.93,44.80,Tunisie,ra-stb-2018
+STB,2020,STB BANK,mère,100.00,99.99,,bvmt-ra-stb-2021
+STB,2020,L’IMMOBILIERE DE L'AVENUE,,99.90,99.16,,bvmt-ra-stb-2021
+STB,2020,MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS,,49.95,49.94,,bvmt-ra-stb-2021
+STB,2020,"S.C.I "" LA MAISON DU BANQUIER""",,19.96,19.96,,bvmt-ra-stb-2021
+STB,2020,"S.P.C.M ""ELFEJJA""",,20.00,20.00,,bvmt-ra-stb-2021
+STB,2020,S.T.C VERITAS,,27.06,27.05,,bvmt-ra-stb-2021
+STB,2020,SICAV EPARGNANT,,3.35,3.20,,bvmt-ra-stb-2021
+STB,2020,SICAV EPARGNE OBLIGATAIRE,,1.98,1.89,,bvmt-ra-stb-2021
+STB,2020,SICAV L'INVESTISSEUR,,78.29,75.97,,bvmt-ra-stb-2021
+STB,2020,SICAV L’AVENIR,,98.37,97.58,,bvmt-ra-stb-2021
+STB,2020,SOCIETE ACTIVHOTELS,,100.00,99.94,,bvmt-ra-stb-2021
+STB,2020,SOCIETE ED DKHILA,,67.87,67.51,,bvmt-ra-stb-2021
+STB,2020,SOCIETE LA GENERALE DES VENTES,,50.00,49.99,,bvmt-ra-stb-2021
+STB,2020,SONI BANK,,25.00,25.00,,bvmt-ra-stb-2021
+STB,2020,STB FINANCE,,96.71,95.55,,bvmt-ra-stb-2021
+STB,2020,STB INVEST,,94.60,94.73,,bvmt-ra-stb-2021
+STB,2020,STB MANAGER,,99.96,97.05,,bvmt-ra-stb-2021
+STB,2020,STB SECURITE ET GARDIENNAGE,,99.90,97.06,,bvmt-ra-stb-2021
+STB,2020,STB SICAR,,99.50,98.58,,bvmt-ra-stb-2021
+STB,2020,STE MOYENS GENERAUX,,99.98,97.15,,bvmt-ra-stb-2021
+STB,2020,STE TUN.RECOUVR. DES CREANCES “STRC”,,100.00,99.72,,bvmt-ra-stb-2021
+STB,2020,TUNISIAN FOREIGN BANK,,49.46,49.45,,bvmt-ra-stb-2021
+STB,2021,STB BANK,mère,100.00,99.98,,bvmt-ra-stb-2021
+STB,2021,L’IMMOBILIERE DE L'AVENUE,,99.90,99.16,,bvmt-ra-stb-2021
+STB,2021,MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS,,49.95,49.93,,bvmt-ra-stb-2021
+STB,2021,"S.C.I "" LA MAISON DU BANQUIER""",,19.96,19.96,,bvmt-ra-stb-2021
+STB,2021,"S.P.C.M ""ELFEJJA""",,20.00,20.00,,bvmt-ra-stb-2021
+STB,2021,S.T.C VERITAS,,27.06,27.05,,bvmt-ra-stb-2021
+STB,2021,SICAV EPARGNANT,,8.83,8.68,,bvmt-ra-stb-2021
+STB,2021,SICAV EPARGNE OBLIGATAIRE,,1.61,1.56,,bvmt-ra-stb-2021
+STB,2021,SICAV L'INVESTISSEUR,,78.17,75.85,,bvmt-ra-stb-2021
+STB,2021,SICAV L’AVENIR,,98.35,97.55,,bvmt-ra-stb-2021
+STB,2021,SOCIETE ACTIVHOTELS,,100.00,99.93,,bvmt-ra-stb-2021
+STB,2021,SOCIETE ED DKHILA,,67.87,67.51,,bvmt-ra-stb-2021
+STB,2021,SOCIETE LA GENERALE DES VENTES,,50.00,49.99,,bvmt-ra-stb-2021
+STB,2021,SONI BANK,,25.00,25.00,,bvmt-ra-stb-2021
+STB,2021,STB FINANCE,,96.71,95.55,,bvmt-ra-stb-2021
+STB,2021,STB INVEST,,95.05,94.72,,bvmt-ra-stb-2021
+STB,2021,STB MANAGER,,99.99,99.40,,bvmt-ra-stb-2021
+STB,2021,STB SECURITE ET GARDIENNAGE,,99.90,97.06,,bvmt-ra-stb-2021
+STB,2021,STB SICAR,,99.50,98.58,,bvmt-ra-stb-2021
+STB,2021,STE MOYENS GENERAUX,,99.98,97.15,,bvmt-ra-stb-2021
+STB,2021,STE TUN.RECOUVR. DES CREANCES “STRC”,,100.00,99.72,,bvmt-ra-stb-2021
+STB,2021,TUNISIAN FOREIGN BANK,,49.46,49.45,,bvmt-ra-stb-2021
+BH,2021,BH BANK,mère,,100.00,Tunisie,bvmt-ra-bh-2021
+BH,2021,BH ASSURANCES,intégration globale,,34.13,Tunisie,bvmt-ra-bh-2021
+BH,2021,BH EQUITY,intégration globale,,53.08,Tunisie,bvmt-ra-bh-2021
+BH,2021,BH IMMO,intégration globale,,58.52,Tunisie,bvmt-ra-bh-2021
+BH,2021,BH INVEST,intégration globale,,62.31,Tunisie,bvmt-ra-bh-2021
+BH,2021,BH LEASING,intégration globale,,57.05,Tunisie,bvmt-ra-bh-2021
+BH,2021,BH RECOUVREMENT,intégration globale,,77.84,Tunisie,bvmt-ra-bh-2021
+BH,2021,BH SICAF,intégration globale,,53.18,Tunisie,bvmt-ra-bh-2021
+BH,2021,SICAV BH-Capitalisation,intégration globale,,21.24,Tunisie,bvmt-ra-bh-2021
+BH,2021,SICAV BH-Obligataire,intégration globale,,10.00,Tunisie,bvmt-ra-bh-2021
+BH,2021,STIMEC,intégration globale,,43.11,Tunisie,bvmt-ra-bh-2021
+BH,2021,TFB,mise en équivalence,,27.86,France,bvmt-ra-bh-2021
+BNA,2021,Banque Nationale Agricole,mère,100.000,99.833,Tunisie,bvmt-ra-bna-2021
+BNA,2021,AGROSERVICES,intégration globale,34.85,34.79,Tunisie,bvmt-ra-bna-2021
+BNA,2021,AMI,intégration globale,52.16,52.07,Tunisie,bvmt-ra-bna-2021
+BNA,2021,BNA Capitaux,intégration globale,99.996,99.27,Tunisie,bvmt-ra-bna-2021
+BNA,2021,CAP BANK,mise en équivalence,23.82,23.78,Tunisie,bvmt-ra-bna-2021
+BNA,2021,ESSOUKNA,intégration globale,69.96,23.41,Tunisie,bvmt-ra-bna-2021
+BNA,2021,GENERALE DE VENTE,mise en équivalence,50.00,49.91,Tunisie,bvmt-ra-bna-2021
+BNA,2021,LES ŒILLETS,intégration globale,100.00,52.88,Tunisie,bvmt-ra-bna-2021
+BNA,2021,Placement Obligataire SICAV,intégration globale,0.09,0.06,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SICAF Participations,intégration globale,99.986,99.82,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SICAR INVEST,intégration globale,93.300,74.77,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SICAV BNA,intégration globale,35.22,31.66,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SIMPAR,intégration globale,40.51,33.38,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SIVIA,intégration globale,99.99,42.24,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SODET SUD,intégration globale,74.57,53.95,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SODINO,mise en équivalence,24.75,24.71,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SOFINREC,intégration globale,100.000,99.29,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SOGEST,intégration globale,94.76,44.93,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SOIVM SICAF,intégration globale,100.000,77.58,Tunisie,bvmt-ra-bna-2021
+BNA,2021,SPI MADINA,intégration globale,100.00,41.04,Tunisie,bvmt-ra-bna-2021
+BNA,2021,TUNIS-RE,mise en équivalence,21.51,19.77,Tunisie,bvmt-ra-bna-2021
+BNA,2021,Tunisie Informatique Services,intégration globale,74.00,46.64,Tunisie,bvmt-ra-bna-2021
+BNA,2021,ZIED SARL,intégration globale,100.00,30.65,Tunisie,bvmt-ra-bna-2021
