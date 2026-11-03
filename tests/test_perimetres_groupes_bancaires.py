@@ -27,6 +27,28 @@ SOFELAN                      0,00%      60,63%      -60,63%            NI       
 MGERT                        49,95%      0,00%      49,95%             IG          NI               49,94%         0,00%        49,94%
 SICAV OBLIG                  1,61%       1,59%          0,01%       MEE           MEE               1,55%       1,47%         0,07%
 """
+BH_RAPPORT_2019 = """
+Les entreprises retenues dans le périmètre de consolidation, le pourcentage d'intérêt ainsi que les méthodes de leur
+consolidation, se présentent comme suit:
+Désignation
+2019 2018 2019 2018
+BH BANK 100,00 100,00 100,00 100,00
+Intégration
+Globale
+Tunisie
+TFB 34,22 33,42 34,22 33,41
+Mise en équiva-
+lence
+France
+Méthodes de consolidation
+"""
+BH_RAPPORT_2022 = """
+se présentent comme suit :
+BH BANK 100,00 100,00 Intégration Globale Tunisie
+TFB 18,79 27,86 Mise en équivalence France
+SICAV BH-Capitalisation 20,25 21,24 Intégration Globale Tunisie
+• Méthodes de consolidation
+"""
 STB = """
 SOCIETES CONSOLIDEES
    1. STB BANK (société Mère)                           100,00%   100,00%    0,00%
@@ -34,6 +56,53 @@ SOCIETES CONSOLIDEES
 SOCIETES CONSOLIDEES
    1. STB BANK (société Mère)                              99,98%     99,99%      0,00%
    2. STB INVEST                                           94,72%     94,73%      0,00%
+"""
+
+BTE_2009 = """
+Le tableau suivant synthétise le périmètre et les méthodes de consolidation utilisées pour
+l'élaboration des états financiers consolidés du Groupe BTE :
+Sociétés Secteur
+Pourcentage
+de contrôle Qualification
+Méthode de
+consolidation
+Pourcentage
+d'intérêt
+Banque de Tunisie
+et des Emirats financier 100% Mère
+intégration
+globale 100%
+L'Intermédiaire International financier 39,47% Associée
+mise en
+équivalence 39,47%
+Société Djerba Aghir touristique 43,67% Associée
+mise en
+équivalence 43 ,67%
+Tuniso Emiratie Sicav (TES) * financier 25.26% Filiale
+intégration
+globale 20,44%
+*Données retraitées pour les besoins de comparabilité
+5. PRINCIPES COMPTABLES DE PRESENTATION ET D'EVALUATION
+"""
+BTE_2020 = """
+Le tableau suivant synthétise le périmètre
+Sociétés Secteur
+Pourcentage
+de contrôle
+Qualification
+Méthode de
+consolidation
+Pourcentage
+d'intérêt
+Banque de Tunisie et des Émirats Financier 100% Mère
+Intégration
+globale
+100%
+Tuniso Émiratie Sicav (TES) Financier 5.73% Filiale
+Intégration
+globale
+5.73%
+ Nature de la relation entre la société mère BTE et la SICAV TES
 """
 
 
@@ -77,6 +146,58 @@ class TestStbConsolide2019(unittest.TestCase):
             par[("2018", "SICAV EPARGNE OBLIGATAIRE")][3], "mise en équivalence"
         )
         self.assertEqual(len(lignes), 6)
+
+
+class TestBhRapport(unittest.TestCase):
+    def test_quatre_pourcentages_puis_methode_sur_les_lignes_suivantes(self):
+        par = {(r[1], r[2]): r for r in p.bh_rapport(BH_RAPPORT_2019, 2019)}
+        self.assertEqual(
+            par[("2019", "TFB")][3:6], ["mise en équivalence", "34.22", "34.22"]
+        )
+        self.assertEqual(par[("2018", "TFB")][4:6], ["33.42", "33.41"])
+        self.assertEqual(par[("2019", "BH BANK")][3], "mère")
+
+    def test_deux_pourcentages_et_methode_sur_la_ligne(self):
+        lignes = p.bh_rapport(BH_RAPPORT_2022, 2022)
+        par = {(r[1], r[2]): r for r in lignes}
+        self.assertEqual(len(lignes), 6)
+        self.assertEqual(par[("2021", "TFB")][5], "27.86")
+        self.assertEqual(
+            par[("2022", "SICAV BH-Capitalisation")][3:6],
+            ["intégration globale", "", "20.25"],
+        )
+
+
+class TestBte(unittest.TestCase):
+    def test_methode_pourcentages_et_nom_sans_etoile(self):
+        par = {r[2]: r for r in p.bte(BTE_2009, 2009)}
+        self.assertEqual(len(par), 4)
+        self.assertEqual(
+            par["Banque de Tunisie et des Emirats"][:7],
+            [
+                "BTE",
+                "2009",
+                "Banque de Tunisie et des Emirats",
+                "mère",
+                "100",
+                "100",
+                "",
+            ],
+        )
+        self.assertEqual(
+            par["Société Djerba Aghir"][3:6], ["mise en équivalence", "43.67", "43.67"]
+        )  # « 43 ,67% » recollé
+        self.assertEqual(
+            par["Tuniso Emiratie Sicav (TES)"][3:6],
+            ["intégration globale", "25.26", "20.44"],
+        )  # l'astérisque de renvoi n'est pas gardé
+
+    def test_la_derniere_ligne_n_est_pas_prise_pour_un_titre(self):
+        # « 5.73% » en début de ligne n'est pas le titre « 5. Principes comptables »
+        noms = [r[2] for r in p.bte(BTE_2020, 2020)]
+        self.assertEqual(
+            noms, ["Banque de Tunisie et des Émirats", "Tuniso Émiratie Sicav (TES)"]
+        )
 
 
 if __name__ == "__main__":

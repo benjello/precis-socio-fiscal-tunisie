@@ -42,9 +42,16 @@ CAPITAL = "societes-cotees-capital"
 RESULTATS = "societes-cotees-resultats"
 REGISTRE = "entreprises-publiques-registre"
 PERIMETRE = "groupes-bancaires-perimetre"
+ENGAGEMENTS_BNA = "bna-engagements-entreprises-publiques"
 # Un nom d'entité change d'un rapport à l'autre (« S.T.C VERITAS » et « S.T.C.V VERITAS ») : la clé les réunit.
 ALIAS_ENTITES = {"STCVERITAS": "STCVVERITAS", "GENERALEDESVENTES": "GENERALEDEVENTE", "ELMEDINA": "SPIMADINA", "ZIED": "ZIEDSARL",
-                 "TIS": "TUNISIEINFORMATIQUESERVICES", "TUNISIENNEDEREASSURANCE": "TUNISRE", "TUNISIERE": "TUNISRE", "SICAFPARTICIPATIONSBNA": "SICAFPARTICIPATIONS", "SPBSICAFPARTICIPATIONS": "SICAFPARTICIPATIONS"}
+                 "TIS": "TUNISIEINFORMATIQUESERVICES", "TUNISIENNEDEREASSURANCE": "TUNISRE", "TUNISIERE": "TUNISRE", "SICAFPARTICIPATIONSBNA": "SICAFPARTICIPATIONS", "SPBSICAFPARTICIPATIONS": "SICAFPARTICIPATIONS",
+                 # BH : noms d'avant 2019 (rapport de 2017) rapprochés des noms d'après ; BH Bank, BH Assurances et la SICAV BH-Capitalisation sont attestés par un acte ou par les rapports, Modern Leasing par un projet de résolutions, les suivants par les pourcentages d'intérêt (voir le commentaire TODO de la section de la BH)
+                 "BANQUEDELHABITAT": "BHBANK", "ASSURANCESALIM": "BHASSURANCES", "MODERNLEASING": "BHLEASING", "SICAVBHPLACEMENT": "SICAVBHCAPITALISATION",
+                 "SICAVBHOBLIGATOIRE": "SICAVBHOBLIGATAIRE", "SICAFBHEPARGNEINVESTISSEMENT": "BHSICAF", "GENERALRECOUVREMENT": "BHRECOUVREMENT", "SIMSICAR": "BHEQUITY",
+                 "SOPIVEL": "BHIMMO", "STIMEC": "BHPRINT"}
+# Tunisair : « SEVENAIR » (2009) est rapproché de « TUNISAIR EXPRESS » (2010 à 2022) par le pourcentage (88,73 %) et l'activité ; TUNINTER (2006, 83,37 %) reste à part
+ALIAS_ENTITES.update({"SEVENAIR": "TUNISAIREXPRESS"})
 RAPPORTS = {"STB": "bvmt-ra-stb-2021", "BH": "bvmt-ra-bh-2021", "BNA": "bvmt-ra-bna-2021"}
 PAGES_RAPPORT = {"STB": "p. 96-97", "BH": "p. 240", "BNA": "p. 127"}
 COULEURS = {"STB": "#0969da", "BH": "#bc4c00", "BNA": "#1a7f37"}
@@ -103,6 +110,17 @@ figtools.register_provenance(
              "Bourse, non celui de l'assemblée."))
 
 
+figtools.register_provenance(
+    ENGAGEMENTS_BNA, titre="Engagements de la BNA envers les entreprises publiques",
+    sources=_sources(ENGAGEMENTS_BNA), unite="milliers de dinars",
+    perimetre=("tableau de la note « Engagements des entreprises publiques » des états financiers individuels de la BNA, "
+               "2016 à 2024 : engagements, garanties de l'État, autres garanties, agios réservés et provisions, pour le total "
+               "des entreprises publiques et pour l'Office des céréales et quelques entités nommées"),
+    caveats=("Les entités nommées changent d'un exercice à l'autre (STIR et Tunisair jusqu'en 2020, puis ETAP, OCT et Transtu) : "
+             "l'ensemble « autres entités nommées » n'est pas constant. Une somme n'est pas un total consolidé de l'État. "
+             "Chaque exercice vient de l'état de cet exercice ; 2016, qui vient de l'état de 2017, ne donne que les engagements."))
+
+
 def _md(entete: list[str], lignes: list[list[str]], caption: str, tbl_id: str, gauche: tuple[int, ...] = ()) -> None:
     out = ["| " + " | ".join(entete) + " |",
            "|---|" + "|".join("---" if i + 1 in gauche else ":-:" for i in range(len(entete) - 1)) + "|"]
@@ -152,7 +170,7 @@ def tableau_resultats(caption: str, tbl_id: str = "tbl-ep-cotees-resultats") -> 
 def tableau_perimetres(caption: str, tbl_id: str = "tbl-ep-cotees-perimetres") -> None:
     """Les entités consolidées par la STB, la BH et la BNA : méthode, contrôle, intérêt."""
     d = _lire(PERIMETRE)
-    d = d[d["exercice"] == "2021"]
+    d = d[(d["exercice"] == "2021") & d["groupe"].isin(PAGES_RAPPORT)]  # les banques seules : les autres groupes ont leur propre section
     lignes, precedent = [], None
     for _, r in d.iterrows():
         groupe = f"**{r['groupe']}**" if r["groupe"] != precedent else ""
@@ -213,7 +231,7 @@ def _matrice(groupe: str):
     return liste, exercices
 
 
-def fig_evolution(groupe: str):
+def fig_evolution(groupe: str, etiquette: str = "Pourcentage d'intérêt"):
     import numpy as np
     figtools.apply_lang_font()
     ft = figtools.fig_text
@@ -242,7 +260,7 @@ def fig_evolution(groupe: str):
     for cote in ("top", "right", "left", "bottom"):
         ax.spines[cote].set_visible(False)
     ax.tick_params(length=0)
-    fig.colorbar(image, ax=ax, fraction=0.025, pad=0.02, label=ft("Pourcentage d'intérêt"))
+    fig.colorbar(image, ax=ax, fraction=0.025, pad=0.02, label=ft(etiquette))
     fig.tight_layout()
     return fig
 
@@ -255,8 +273,8 @@ def table_evolution(groupe: str):
     return pd.DataFrame(lignes)
 
 
-def figure_evolution(groupe: str, caption: str, note_lecture: str | None = None) -> None:
-    figtools.figure_tabs(fig_evolution(groupe), table_evolution(groupe), PERIMETRE,
+def figure_evolution(groupe: str, caption: str, note_lecture: str | None = None, etiquette: str = "Pourcentage d'intérêt") -> None:
+    figtools.figure_tabs(fig_evolution(groupe, etiquette), table_evolution(groupe), PERIMETRE,
                          slug=f"fig_ep_cotees_evolution_{groupe.lower()}", caption=caption,
                          note_lecture=note_lecture, nominal=False)
     plt.close("all")
@@ -285,10 +303,34 @@ THEMES_CAC = {
     "ecarts": "Écarts avec la base de gestion ou la BCT",
     "immobilisations": "Inventaire des immobilisations",
     "fonds_social": "« Réserves pour fonds social »",
+    "avocats": "Confirmations des avocats",
+    "retraites": "Indemnités de départ à la retraite",
+    "fonds_etat": "Fonds budgétaires de l'État",
+    "produits": "Produits identifiés par client",
+    # STAR (assureur) : thèmes propres, tracés seulement pour le groupe STAR
+    "star_provisions_techniques": "Provisions techniques insuffisantes",
+    "star_ecarts_comptes": "Écarts comptables, primes",
+    "star_exercices_anterieurs": "Exercices antérieurs dans le résultat",
+    "tunisair_tiers": "Clients, fournisseurs, comptes d'attente",
+    "tunisair_provisions": "Provisions et risques non constatés",
+    "tunisair_flotte": "Flotte : avions, moteurs, maintenance",
+    "tunisair_fonds_social": "Fonds social et paie",
+    "tunisair_redevances": "Redevances aéroportuaires collectées",
+    "tunisair_banques": "Rapprochements bancaires, caisses",
+    "tunisair_immobilisations": "Inventaire des immobilisations",
+    "tunisair_informatique": "Système d'information, prestations d'AISA",
+    "tunisair_filiales": "Comptes réciproques avec les filiales",
+    "tunisair_oaca": "Dettes et concessions envers l'OACA",
+    "tunisair_stocks": "Stocks techniques",
+    "tunisair_hors_bilan": "Engagements hors bilan (Tunisair)",
+    "tunisair_limitations": "Limitation des travaux",
+    "tunisair_presentation": "Présentation des états financiers",
+    "sotumag_chambres_froides": "Chambres froides louées comme boxes d'emballage (SOTUMAG)",
+    "sotumag_pharmacies": "Pharmacies et laboratoires conventionnés (SOTUMAG)",
 }
 
 
-def fig_cac(groupe: str, societe: str):
+def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     """Trois vues sur les mêmes exercices : thèmes de réserve (carte), nombre de motifs (barres), délai de publication (courbe)."""
     import numpy as np
     figtools.apply_lang_font()
@@ -296,16 +338,23 @@ def fig_cac(groupe: str, societe: str):
     d = _lire("opinions-cac")
     d = d[d["groupe"] == groupe]
     delais = _lire("delais-publication")
-    delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel")]
+    # un délai nul est la date de clôture que la Bourse porte faute de date de publication : il n'est pas tracé
+    delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel") & (delais["jours"].astype(int) > 0)]
+    delais = delais[~delais["exercice"].astype(int).isin(delais_ecartes)]  # dates de la Bourse sans valeur (BTE)
     lus = sorted(int(x) for x in d["exercice"].unique())
     fin = max(lus + [int(x) for x in delais["exercice"]])
     exercices = list(range(min(lus) - 1, fin + 1))  # un exercice avant le premier rapport lu, jusqu'au dernier délai connu
     delais = delais[delais["exercice"].astype(int) >= exercices[0]]
-    themes = list(THEMES_CAC)
+    utilises = {t for ligne in d.loc[~d["opinion"].str.startswith("sans"), "themes"] for t in ligne.split(";")}
+    themes = [t for t in THEMES_CAC if t in utilises]  # une ligne par thème que le groupe porte : pas de ligne vide
+    if not themes:  # groupe sans aucune réserve : les thèmes communs, en cases blanches
+        themes = [t for t in THEMES_CAC if not t.startswith(("star_", "tunisair_", "cimbiz_", "sotumag_", "tunisre_", "bte_"))]
     carte = np.full((len(themes), len(exercices)), np.nan)
     nombres = np.zeros(len(exercices))
     for _, r in d.iterrows():
         j = exercices.index(int(r["exercice"]))
+        if r["opinion"].startswith("sans"):  # exercice lu, sans réserve : case blanche, zéro motif
+            continue
         nombres[j] += 1
         for t in r["themes"].split(";"):
             carte[themes.index(t), j] = 1
@@ -344,11 +393,85 @@ def fig_cac(groupe: str, societe: str):
     return fig
 
 
-def figure_cac(groupe: str, societe: str, caption: str, note_lecture: str | None = None) -> None:
+def figure_cac(groupe: str, societe: str, caption: str, note_lecture: str | None = None,
+               delais_ecartes: tuple[int, ...] = ()) -> None:
     d = _lire("opinions-cac")
-    figtools.figure_tabs(fig_cac(groupe, societe), d[d["groupe"] == groupe], "opinions-cac",
+    figtools.figure_tabs(fig_cac(groupe, societe, delais_ecartes), d[d["groupe"] == groupe], "opinions-cac",
                          slug=f"fig_ep_cotees_cac_{societe}", caption=caption, note_lecture=note_lecture, nominal=False)
     plt.close("all")
+
+
+def _fr(valeur: float, decimales: int = 1) -> str:
+    return f"{valeur:,.{decimales}f}".replace(",", " ").replace(".", ",").replace("-", "−")
+
+
+def _engagements_bna() -> "pd.DataFrame":
+    """Une ligne par exercice : engagements (MD) du total, de l'Office des céréales, des autres entités nommées, et le reste."""
+    d = _lire(ENGAGEMENTS_BNA)
+    d = d[d["valeur_kdt"] != ""].copy()
+    d["valeur"] = d["valeur_kdt"].astype(float) / 1000
+    lignes = {}
+    for exercice, g in d.groupby("exercice"):
+        eng = g[g["grandeur"] == "engagements"]
+        total = eng[eng["entite"] == "Total des entreprises publiques"]["valeur"].sum()
+        oc = eng[eng["entite"] == "Office des céréales"]["valeur"].sum()
+        autres = eng[~eng["entite"].isin(["Total des entreprises publiques", "Office des céréales"])]["valeur"].sum()
+        gar = g[(g["grandeur"] == "garanties de l'État") & (g["entite"] == "Total des entreprises publiques")]["valeur"].sum()
+        lignes[int(exercice)] = {"total": total, "oc": oc, "autres": autres, "reste": total - oc - autres, "garanties": gar}
+    return pd.DataFrame(lignes).T.sort_index()
+
+
+def fig_engagements_bna():
+    """Engagements de la BNA envers les entreprises publiques (barres empilées) et part garantie par l'État (courbe)."""
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    e = _engagements_bna()
+    fig, (a1, a2) = plt.subplots(2, 1, figsize=(9, 6.5), sharex=True, gridspec_kw={"height_ratios": [3, 1.4], "hspace": 0.12})
+    x = list(range(len(e)))
+    fond = [0.0] * len(e)
+    for cle, nom, couleur in (("oc", "Office des céréales", "#cf222e"), ("autres", "Autres entités nommées par la note", "#0969da"),
+                              ("reste", "Reste des entreprises publiques", "#8c959f")):
+        a1.bar(x, e[cle], bottom=fond, color=couleur, width=0.65, label=ft(nom))
+        fond = [f + v for f, v in zip(fond, e[cle])]
+    for i, total in enumerate(e["total"]):
+        a1.text(i, total + 80, _fr(total, 0), ha="center", fontsize=8)
+    a1.set_ylabel(ft("millions de dinars courants"))
+    a1.legend(fontsize=8, loc="upper left", frameon=False)
+    a1.set_title(ft("Engagements de la BNA envers les entreprises publiques (fin d'exercice)"), fontsize=10, loc="left")
+    a1.grid(axis="y", alpha=0.3)
+    part = (e["garanties"] / e["total"] * 100).where(e["garanties"] > 0)
+    a2.plot(x, part, marker="o", color="#1a7f37")
+    for i, v in enumerate(part):
+        if v == v:
+            a2.text(i, v + 5, f"{v:.0f} %", ha="center", fontsize=8)
+    a2.set_ylim(0, 115)
+    a2.set_ylabel(ft("garanties de l'État, % des engagements"), fontsize=8)
+    a2.set_xticks(x, [str(i) for i in e.index], fontsize=8)
+    a2.grid(axis="y", alpha=0.3)
+    return fig
+
+
+def figure_engagements_bna(caption: str, note_lecture: str | None = None) -> None:
+    d = _lire(ENGAGEMENTS_BNA)
+    figtools.figure_tabs(fig_engagements_bna(), d, ENGAGEMENTS_BNA, slug="fig_ep_bna_engagements",
+                         caption=caption, note_lecture=note_lecture, nominal=False)
+    plt.close("all")
+
+
+def tableau_engagements_bna(caption: str, tbl_id: str = "tbl-ep-bna-engagements") -> None:
+    """Total et Office des céréales : engagements, garanties de l'État, autres garanties, agios réservés, provisions (MD)."""
+    d = _lire(ENGAGEMENTS_BNA)
+    d = d[d["valeur_kdt"] != ""].copy()
+    d["valeur"] = d["valeur_kdt"].astype(float) / 1000
+    exercices = sorted(d["exercice"].unique())
+    lignes = []
+    for entite, court in (("Total des entreprises publiques", "Total"), ("Office des céréales", "Office des céréales")):
+        for grandeur in ("engagements", "garanties de l'État", "autres garanties", "agios et intérêts réservés", "provisions"):
+            x = d[(d["entite"] == entite) & (d["grandeur"] == grandeur)].set_index("exercice")["valeur"]
+            if x.empty:
+                continue
+            lignes.append([f"{court} : {grandeur}"] + [_fr(x[e]) if e in x.index else "–" for e in exercices])
+    _md(["Grandeur (MD)"] + exercices, lignes, caption, tbl_id)
 
 
 def tableau_registre(caption: str, tbl_id: str = "tbl-ep-registre-entreprises") -> None:

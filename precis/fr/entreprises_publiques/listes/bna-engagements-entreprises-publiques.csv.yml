@@ -1,0 +1,23 @@
+# Manifeste du relevé « engagements de la BNA envers les entreprises publiques ».
+#
+# Fichier lu par figures/cotees.py (sous-section « Les engagements envers les entreprises publiques » de la section BNA).
+# Produit par scripts/bna_engagements_entreprises_publiques.py (texte des états financiers individuels de la Bourse de Tunis,
+# `pdftotext -layout`, colonnes séparées par au moins deux espaces). Chaque état donne l'exercice et le précédent ; pour un
+# exercice, la lecture de l'état de cet exercice l'emporte sur celle de l'état suivant. Un montant imprimé entre parenthèses
+# est lu en négatif. La page est celle du PDF, non la page imprimée. Pour chaque ligne, c'est la page où la ligne commence (le tableau de 2022 passe de la page 19 à la page 20).
+# Les agios et les provisions de 2017 et 2018 sont imprimés entre parenthèses (lus en négatif) ; à partir de 2019 ils sont imprimés sans signe (lus en positif) : le relevé garde l'impression de chaque état.
+# Les colonnes d'entités changent d'un exercice à l'autre (STIR et Tunisair jusqu'en 2020, puis ETAP, OCT, Transtu) : les
+# entités sont celles que la note de chaque état nomme, le total est celui des entreprises publiques de la note.
+
+format: long
+cle_de_ligne: [exercice, entite, grandeur]
+
+colonnes:
+  exercice: exercice (31 décembre)
+  entite: total des entreprises publiques, Office des céréales, ou entité nommée par la note
+  grandeur: engagements, garanties de l'État, autres garanties, agios et intérêts réservés, classe de risque, provisions
+  valeur_kdt: montant en milliers de dinars (KDT) ; vide quand la note imprime un tiret ; la classe de risque est un numéro
+  page_pdf: page du PDF où commence la ligne du tableau
+  source: clé de la notice de l'état financier
+
+sources: [bvmt-ef-bna-2017-individuel, bvmt-ef-bna-2018-individuel, bvmt-ef-bna-2019-individuel, bvmt-ef-bna-2020-individuel, bvmt-ef-bna-2021-individuel, bvmt-ef-bna-2022-individuel, bvmt-ef-bna-2023-individuel, bvmt-ef-bna-2024-individuel]

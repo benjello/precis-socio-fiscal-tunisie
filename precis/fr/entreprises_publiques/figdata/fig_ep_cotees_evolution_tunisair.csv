@@ -1,0 +1,124 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-03
+# séries (tunisia_data) : groupes-bancaires-perimetre
+# sources (citation) : @bvmt-ra-stb-2021, @bvmt-ra-bh-2021, @bvmt-ra-bna-2021, @ra-stb-2011, @ra-stb-2013, @ra-stb-2014, @ra-stb-2015, @ra-stb-2017, @ra-stb-2018, @bvmt-ef-stb-2019-consolide, @ra-bna-2007, @ra-bna-2020, @ra-bh-2017, @ra-bh-2019, @ra-bh-2021, @ra-bh-2022, @bvmt-ef-bte-2007-consolide, @bvmt-ef-bte-2008-consolide, @bvmt-ef-bte-2009-consolide, @bvmt-ef-bte-2011-consolide, @bvmt-ef-bte-2013-consolide, @bvmt-ef-bte-2016-consolide, @bvmt-ef-bte-2017-consolide, @bvmt-ef-bte-2018-consolide, @bvmt-ef-bte-2019-consolide, @bvmt-ef-bte-2020-consolide, @bvmt-ef-bte-2021-consolide, @bvmt-ef-bte-2022-consolide, @bvmt-ef-bte-2023-consolide, @bvmt-ef-bte-2024-consolide, @bvmt-ef-tunisair-2006-consolide, @bvmt-ef-tunisair-2009-consolide, @bvmt-ef-tunisair-2010-consolide, @bvmt-ef-tunisair-2011-consolide, @bvmt-ef-tunisair-2012-consolide, @bvmt-ef-tunisair-2013-consolide, @bvmt-ef-tunisair-2014-consolide, @bvmt-ef-tunisair-2015-consolide, @bvmt-ef-tunisair-2016-consolide, @bvmt-ef-tunisair-2017-consolide, @bvmt-ef-tunisair-2018-consolide, @bvmt-ef-tunisair-2019-consolide, @bvmt-ef-tunisair-2020-consolide, @bvmt-ef-tunisair-2021-consolide, @bvmt-ef-tunisair-2022-consolide
+# fiches : 
+# méthode/hypothèses : Le pourcentage d'intérêt est la part du capital détenue directement et indirectement par le groupe, non la part directe de la banque. Un exercice sans rapport lu (2019 pour la STB) n'a pas de colonne. La méthode n'est pas donnée pour 2020 et 2021 (STB).
+# note : Les sociétés que Tunisair consolide, mère non comprise, en 2006 et de 2009 à 2022 (31 décembre) : pourcentage des droits de vote ; « ME » : mise en équivalence ; une case vide : société non consolidée cet exercice-là. États financiers consolidés de la Bourse de Tunis. Source : [@bvmt-ef-tunisair-2006-consolide ; @bvmt-ef-tunisair-2009-consolide ; @bvmt-ef-tunisair-2010-consolide ; @bvmt-ef-tunisair-2011-consolide ; @bvmt-ef-tunisair-2012-consolide ; @bvmt-ef-tunisair-2013-consolide ; @bvmt-ef-tunisair-2014-consolide ; @bvmt-ef-tunisair-2015-consolide ; @bvmt-ef-tunisair-2016-consolide ; @bvmt-ef-tunisair-2017-consolide ; @bvmt-ef-tunisair-2018-consolide ; @bvmt-ef-tunisair-2019-consolide ; @bvmt-ef-tunisair-2020-consolide ; @bvmt-ef-tunisair-2021-consolide ; @bvmt-ef-tunisair-2022-consolide]
+entite,exercice,interet_ou_controle_pct,methode
+AMADEUS,2006,70.0,intégration globale ou non précisée
+AMADEUS,2009,70.0,intégration globale ou non précisée
+AMADEUS,2010,70.0,intégration globale ou non précisée
+AMADEUS,2011,70.0,intégration globale ou non précisée
+AMADEUS,2012,70.0,intégration globale ou non précisée
+AMADEUS,2013,70.0,intégration globale ou non précisée
+AMADEUS,2014,70.0,intégration globale ou non précisée
+AMADEUS,2015,70.0,intégration globale ou non précisée
+AMADEUS,2016,70.0,intégration globale ou non précisée
+AMADEUS,2017,70.0,intégration globale ou non précisée
+AMADEUS,2018,70.0,intégration globale ou non précisée
+AMADEUS,2019,70.0,intégration globale ou non précisée
+AMADEUS,2020,70.0,intégration globale ou non précisée
+AMADEUS,2021,70.0,intégration globale ou non précisée
+AMADEUS,2022,70.0,intégration globale ou non précisée
+ATCT,2006,34.0,mise en équivalence
+ATCT,2009,34.0,mise en équivalence
+ATCT,2010,34.0,mise en équivalence
+ATCT,2011,34.0,mise en équivalence
+ATCT,2012,34.0,mise en équivalence
+ATCT,2013,34.0,mise en équivalence
+ATCT,2014,34.0,mise en équivalence
+ATCT,2015,34.0,mise en équivalence
+ATCT,2016,34.0,mise en équivalence
+ATCT,2017,34.0,mise en équivalence
+ATCT,2018,34.0,mise en équivalence
+ATCT,2019,37.0,mise en équivalence
+ATCT,2020,37.0,mise en équivalence
+ATCT,2021,37.0,mise en équivalence
+ATCT,2022,37.0,mise en équivalence
+MAURITANIA AIRWAYS,2006,51.0,intégration globale ou non précisée
+MAURITANIA AIRWAYS,2009,51.0,intégration globale ou non précisée
+MAURITANIA AIRWAYS,2010,51.0,intégration globale ou non précisée
+SCI ESSAFA,2006,99.9,intégration globale ou non précisée
+SCI ESSAFA,2009,99.9,intégration globale ou non précisée
+SCI ESSAFA,2010,99.9,intégration globale ou non précisée
+SCI ESSAFA,2011,99.9,intégration globale ou non précisée
+SCI ESSAFA,2012,99.9,intégration globale ou non précisée
+SCI ESSAFA,2013,99.9,intégration globale ou non précisée
+SCI ESSAFA,2014,99.9,intégration globale ou non précisée
+SCI ESSAFA,2015,99.9,intégration globale ou non précisée
+SCI ESSAFA,2016,99.9,intégration globale ou non précisée
+SCI ESSAFA,2017,99.9,intégration globale ou non précisée
+SCI ESSAFA,2018,99.9,intégration globale ou non précisée
+SCI ESSAFA,2019,99.9,intégration globale ou non précisée
+SCI ESSAFA,2020,99.9,intégration globale ou non précisée
+SCI ESSAFA,2021,99.9,intégration globale ou non précisée
+SCI ESSAFA,2022,99.9,intégration globale ou non précisée
+TUNINTER,2006,83.37,intégration globale ou non précisée
+TUNISAIR HANDLING,2006,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2009,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2010,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2011,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2012,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2013,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2014,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2015,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2016,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2017,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2018,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2019,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2020,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2021,100.0,intégration globale ou non précisée
+TUNISAIR HANDLING,2022,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2006,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2009,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2010,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2011,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2012,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2013,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2014,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2015,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2016,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2017,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2018,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2019,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2020,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2021,100.0,intégration globale ou non précisée
+TUNISAIR TECHNICS,2022,100.0,intégration globale ou non précisée
+TUNISIE CATERING,2006,45.0,mise en équivalence
+TUNISIE CATERING,2009,45.0,mise en équivalence
+TUNISIE CATERING,2010,45.0,mise en équivalence
+TUNISIE CATERING,2011,45.0,mise en équivalence
+TUNISIE CATERING,2012,45.0,mise en équivalence
+TUNISIE CATERING,2013,45.0,mise en équivalence
+TUNISIE CATERING,2014,45.0,mise en équivalence
+TUNISIE CATERING,2015,45.0,mise en équivalence
+TUNISIE CATERING,2016,45.0,mise en équivalence
+TUNISIE CATERING,2017,45.0,mise en équivalence
+TUNISIE CATERING,2018,45.0,mise en équivalence
+TUNISIE CATERING,2019,45.0,mise en équivalence
+TUNISIE CATERING,2020,45.0,mise en équivalence
+TUNISIE CATERING,2021,45.0,mise en équivalence
+TUNISIE CATERING,2022,45.0,mise en équivalence
+AISA,2009,50.0,intégration globale ou non précisée
+AISA,2010,50.0,intégration globale ou non précisée
+AISA,2011,50.0,intégration globale ou non précisée
+AISA,2012,100.0,intégration globale ou non précisée
+AISA,2013,100.0,intégration globale ou non précisée
+AISA,2014,100.0,intégration globale ou non précisée
+AISA,2015,100.0,intégration globale ou non précisée
+AISA,2016,100.0,intégration globale ou non précisée
+AISA,2017,100.0,intégration globale ou non précisée
+TUNISAIR EXPRESS,2009,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2010,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2011,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2012,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2013,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2014,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2015,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2016,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2017,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2018,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2019,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2020,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2021,88.73,intégration globale ou non précisée
+TUNISAIR EXPRESS,2022,88.73,intégration globale ou non précisée

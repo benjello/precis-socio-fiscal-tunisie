@@ -1,0 +1,76 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-03
+# séries (tunisia_data) : groupes-bancaires-perimetre
+# sources (citation) : @bvmt-ra-stb-2021, @bvmt-ra-bh-2021, @bvmt-ra-bna-2021, @ra-stb-2011, @ra-stb-2013, @ra-stb-2014, @ra-stb-2015, @ra-stb-2017, @ra-stb-2018, @bvmt-ef-stb-2019-consolide, @ra-bna-2007, @ra-bna-2020, @ra-bh-2017, @ra-bh-2019, @ra-bh-2021, @ra-bh-2022, @bvmt-ef-bte-2007-consolide, @bvmt-ef-bte-2008-consolide, @bvmt-ef-bte-2009-consolide, @bvmt-ef-bte-2011-consolide, @bvmt-ef-bte-2013-consolide, @bvmt-ef-bte-2016-consolide, @bvmt-ef-bte-2017-consolide, @bvmt-ef-bte-2018-consolide, @bvmt-ef-bte-2019-consolide, @bvmt-ef-bte-2020-consolide, @bvmt-ef-bte-2021-consolide, @bvmt-ef-bte-2022-consolide, @bvmt-ef-bte-2023-consolide, @bvmt-ef-bte-2024-consolide, @bvmt-ef-tunisair-2006-consolide, @bvmt-ef-tunisair-2009-consolide, @bvmt-ef-tunisair-2010-consolide, @bvmt-ef-tunisair-2011-consolide, @bvmt-ef-tunisair-2012-consolide, @bvmt-ef-tunisair-2013-consolide, @bvmt-ef-tunisair-2014-consolide, @bvmt-ef-tunisair-2015-consolide, @bvmt-ef-tunisair-2016-consolide, @bvmt-ef-tunisair-2017-consolide, @bvmt-ef-tunisair-2018-consolide, @bvmt-ef-tunisair-2019-consolide, @bvmt-ef-tunisair-2020-consolide, @bvmt-ef-tunisair-2021-consolide, @bvmt-ef-tunisair-2022-consolide
+# fiches : 
+# méthode/hypothèses : Le pourcentage d'intérêt est la part du capital détenue directement et indirectement par le groupe, non la part directe de la banque. Un exercice sans rapport lu (2019 pour la STB) n'a pas de colonne. La méthode n'est pas donnée pour 2020 et 2021 (STB).
+# note : Les entités que la BTE consolide, mère non comprise, de 2007 à 2024 (31 décembre) : pourcentage d'intérêt du groupe, d'après les états financiers consolidés de la Bourse de Tunis. Source : [@bvmt-ef-bte-2007-consolide ; @bvmt-ef-bte-2008-consolide ; @bvmt-ef-bte-2009-consolide ; @bvmt-ef-bte-2011-consolide ; @bvmt-ef-bte-2013-consolide ; @bvmt-ef-bte-2016-consolide ; @bvmt-ef-bte-2017-consolide ; @bvmt-ef-bte-2018-consolide ; @bvmt-ef-bte-2019-consolide ; @bvmt-ef-bte-2020-consolide ; @bvmt-ef-bte-2021-consolide ; @bvmt-ef-bte-2022-consolide ; @bvmt-ef-bte-2023-consolide ; @bvmt-ef-bte-2024-consolide]
+entite,exercice,interet_ou_controle_pct,methode
+BTE – SICAR,2007,99.93,intégration globale ou non précisée
+BTE – SICAR,2008,99.93,intégration globale ou non précisée
+BTE – SICAR,2009,99.93,intégration globale ou non précisée
+BTE – SICAR,2011,99.93,intégration globale ou non précisée
+BTE – SICAR,2013,99.93,intégration globale ou non précisée
+BTE – SICAR,2016,100.0,intégration globale ou non précisée
+BTE – SICAR,2017,100.0,intégration globale ou non précisée
+BTE – SICAR,2018,100.0,intégration globale ou non précisée
+BTE – SICAR,2019,100.0,intégration globale ou non précisée
+BTE – SICAR,2020,100.0,intégration globale ou non précisée
+BTE – SICAR,2021,100.0,intégration globale ou non précisée
+BTE – SICAR,2022,100.0,intégration globale ou non précisée
+BTE – SICAR,2023,100.0,intégration globale ou non précisée
+BTE – SICAR,2024,100.0,intégration globale ou non précisée
+Compagnie de Tunisie et des Émirats d'Investissement,2007,99.99,intégration globale ou non précisée
+Compagnie de Tunisie et des Émirats d'Investissement,2008,99.99,intégration globale ou non précisée
+Compagnie de Tunisie et des Émirats d'Investissement,2009,100.0,intégration globale ou non précisée
+Compagnie de Tunisie et des Émirats d'Investissement,2011,100.0,intégration globale ou non précisée
+Compagnie de Tunisie et des Émirats d'Investissement,2013,100.0,intégration globale ou non précisée
+L'Intermédiaire International,2007,47.37,mise en équivalence
+L'Intermédiaire International,2008,47.37,mise en équivalence
+L'Intermédiaire International,2009,39.47,mise en équivalence
+Rapid Recouvrement,2007,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2008,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2009,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2011,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2013,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2016,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2017,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2018,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2019,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2020,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2021,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2022,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2023,99.73,intégration globale ou non précisée
+Rapid Recouvrement,2024,99.73,intégration globale ou non précisée
+Société Djerba Aghir,2007,43.62,mise en équivalence
+Société Djerba Aghir,2008,43.62,mise en équivalence
+Société Djerba Aghir,2009,43.67,mise en équivalence
+Société Djerba Aghir,2011,43.67,mise en équivalence
+Société Djerba Aghir,2013,43.67,mise en équivalence
+Société Nouvelle des Villages de Vacances,2007,87.43,intégration globale ou non précisée
+Société Nouvelle des Villages de Vacances,2008,87.43,intégration globale ou non précisée
+Société Nouvelle des Villages de Vacances,2009,87.43,intégration globale ou non précisée
+Société Nouvelle des Villages de Vacances,2011,87.43,intégration globale ou non précisée
+Société Nouvelle des Villages de Vacances,2013,87.43,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2007,34.21,mise en équivalence
+Tuniso Émiratie Sicav (TES),2008,25.13,mise en équivalence
+Tuniso Émiratie Sicav (TES),2009,20.44,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2011,20.8,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2013,14.25,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2016,9.64,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2017,7.36,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2018,10.87,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2019,10.79,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2020,5.73,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2021,4.57,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2022,1.62,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2023,6.85,intégration globale ou non précisée
+Tuniso Émiratie Sicav (TES),2024,4.02,intégration globale ou non précisée
+T.E.P (C.T.E.I),2016,100.0,intégration globale ou non précisée
+T.E.P (C.T.E.I),2017,100.0,intégration globale ou non précisée
+T.E.P (C.T.E.I),2018,100.0,intégration globale ou non précisée
+T.E.P (C.T.E.I),2019,100.0,intégration globale ou non précisée
+T.E.P (C.T.E.I),2020,100.0,intégration globale ou non précisée
+T.E.P (C.T.E.I),2021,100.0,intégration globale ou non précisée
+T.E.P (C.T.E.I),2022,100.0,intégration globale ou non précisée
+T.E.P (C.T.E.I),2023,100.0,intégration globale ou non précisée
+T.E.P (C.T.E.I),2024,100.0,intégration globale ou non précisée

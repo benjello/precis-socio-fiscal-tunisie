@@ -27,12 +27,23 @@ LIVRE = (
     Path(__file__).resolve().parent.parent
     / "precis/fr/entreprises_publiques/references.json"
 )
-EDITEURS = {"stb": "Société tunisienne de banque"}
+# dossier de la société sous bvmt-etats-financiers : (clé courte des notices, éditeur)
+EDITEURS = {
+    "stb": ("stb", "Société tunisienne de banque"),
+    "bh-bank": ("bh", "Banque de l'habitat"),
+    "bna": ("bna", "Banque nationale agricole"),
+    "star": ("star", "Société tunisienne d'assurances et de réassurances"),
+    "bte-adp": ("bte", "Banque de Tunisie et des Emirats"),
+    "tunis-re": ("tunisre", "Société tunisienne de réassurance"),
+    "tunisair": ("tunisair", "Société tunisienne de l'air"),
+    "ciments-de-bizerte": ("cimbiz", "Les Ciments de Bizerte"),
+    "sotumag": ("sotumag", "Société tunisienne des marchés de gros"),
+}
 
 
 def main(arguments: list[str]) -> int:
     societe, documents = arguments[0], arguments[1:]
-    editeur = EDITEURS[societe]
+    court, editeur = EDITEURS[societe]
     with CATALOGUE.open(encoding="utf-8", newline="") as source:
         urls = {r["fichier"]: r for r in csv.DictReader(source)}
     donnees = json.loads(LIVRE.read_text(encoding="utf-8"))
@@ -41,7 +52,7 @@ def main(arguments: list[str]) -> int:
     for document in documents:
         exercice, nature, *autre = document.split(":")
         fichier_nature = autre[0] if autre else nature
-        cle = f"bvmt-ef-{societe}-{exercice}-{nature}"
+        cle = f"bvmt-ef-{court}-{exercice}-{nature}"
         if cle in existants:
             continue
         fichier = f"bvmt-etats-financiers/{societe}/{exercice}_{fichier_nature}.pdf"
