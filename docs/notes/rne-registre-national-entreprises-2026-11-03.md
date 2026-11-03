@@ -179,7 +179,7 @@ encore extraite.
 2. Acheter un bilan test (10 DT, par exemple « Bilan 2023 » des Ciments de Bizerte) et une liste d'actionnaires
    (20 DT, par exemple Tunisie Trade Net) avec un compte créé par l'humain ; vérifier si un tiers peut acheter les
    états financiers au tarif unitaire.
-3. Lire les circulaires n° 17 de 2020 et n° 3 de 2021.
+3. Circulaires n° 17 de 2020 et n° 3 de 2021 : non accessibles en ligne (voir § 19) ; la loi n° 2018-52 est lue.
 4. Rédiger, si utile, une demande d'accès à l'information à `a.information@e-rne.tn` : liste des entreprises à
    participation publique avec capital et associés.
 5. Si le contraste formel et informel est retenu, tirer des éditions de l'INS une série versée dans `tunisia-data`.
@@ -430,3 +430,61 @@ décrets de statut du personnel (n° 99-1944, n° 2000-2366, n° 99-2743) et non
 **Restent sans identifiant (11)** : Tunisie Télécom (deux enregistrements « اتصالات تونس », `0642506S` et `0621863X`, sans
 dénomination ni forme), Transtu, SORETRAS, SRTB, SOTRAPIL, BFPME, ARRU, SOGEMT, CIOK, RFR et SNTRI. Recherches latines et arabes sans
 résultat hors associations. Plusieurs ne sont peut-être pas immatriculées sous ces noms ou ne le sont pas au RNE.
+
+## 18. Croisement avec la Bourse de Tunis (3 novembre 2026)
+
+Les pages de la Bourse (75 sociétés cotées, `tunisia-data`, `sources/bvmt-societes-cotees.md`) donnent le numéro de Registre
+de chaque société. Croisés avec les 50 entreprises de la liste (`sources/rne-entreprises-publiques.csv`), ils donnent six
+concordances (`sources/rne-bourse-correspondance.csv`, `tunisia-data` PR #118) :
+
+| Sigle | Identifiant du Registre | Forme (Registre et Bourse) | État au Registre |
+|---|---|---|---|
+| STB | 0001237A (la Bourse écrit A0001237) | société anonyme | actif |
+| BNA | 0000123L | société anonyme | actif |
+| BH | 00024588W | société anonyme | **non actif** |
+| Ciments de Bizerte | 0003242F | société anonyme | actif |
+| Tunisair | 0002672W | société anonyme | actif |
+| SOTRAPIL | 0006473H | société anonyme | actif |
+
+- **SOTRAPIL** n'avait pas d'identifiant ; la Bourse le donne, et la fiche lue au Registre le confirme (société anonyme,
+  active, 18 documents déposés, états financiers 2023 à 2025). La liste passe à 40 identifiants sur 50 (inventaire : 40 fiches,
+  394 documents).
+- **La BH est « non active » au Registre** alors qu'elle est cotée : à signaler, sans l'interpréter (état administratif du
+  dossier d'immatriculation, non état d'activité).
+- Les dix entreprises restées sans identifiant (BFPME, ARRU, SOGEMT, Tunisie Télécom, Ciments d'Oum El Kélil, Transtu, RFR,
+  SNTRI, SORETRAS, SRTB) ne sont pas cotées : la Bourse n'aide plus ; la recherche au Registre par dénomination reste à refaire
+  (noms arabes officiels).
+- La Bourse nomme en outre des sociétés cotées à participation publique absentes de la liste des 50 (STAR, SOTUMAG, BTE,
+  SOTETEL, notamment), dont les numéros de Registre figurent dans `bvmt-societes.csv`.
+- Les numéros s'écrivent de deux façons : sept chiffres et une lettre (0001237A), ou lettre en tête (A0001237) ; SOTUMAG est
+  donnée sous un numéro de l'ancien registre du commerce (B193791991).
+
+## 19. Les comptes déposés au Registre : ce que dit la loi n° 2018-52
+
+Texte lu dans le fascicule du JORT n° 89 du 6 novembre 2018 (traduction française pour information), pp. 3781 et suivantes :
+
+- **Art. 7, alinéa 6 (p. 3782)** : sont obligatoirement inscrits au Registre « les entreprises publiques et les établissements
+  publics à caractère non administratif ». L'article 8 les range au registre de commerce.
+- **Art. 32 (pp. 3787-3788)** : « les personnes physiques soumises obligatoirement à la tenue d'une comptabilité […], les
+  personnes morales, les constructions juridiques et les associations doivent déposer, au registre au plus tard dans le septième
+  mois suivant la clôture de l'exercice comptable, leurs états financiers » et les rapports des commissaires aux comptes ; les
+  sociétés y ajoutent la liste mise à jour des actionnaires ou des associés. Une société mère dépose les documents consolidés
+  dans le mois de leur approbation.
+- **Art. 51 (p. 3790) et suivants** : un dépôt tardif, états financiers compris, entraîne une pénalité de la moitié de la redevance par
+  mois de retard ou fraction de mois ; à défaut de régularisation après un procès-verbal et quinze jours, le Centre suspend le
+  registre de l'entreprise et saisit le ministère public (art. 52) ; amende de 1 000 à 5 000 dinars (art. 53).
+- **Conséquence pour le volume « Les entreprises publiques »** : une phrase est justifiée au chapitre du statut — les entreprises
+  publiques sont inscrites au Registre et leurs états financiers y sont déposés au plus tard le dernier jour du septième mois
+  après la clôture, soit le 31 juillet pour un exercice clos le 31 décembre. Les entreprises publiques déposent effectivement :
+  les fiches lues portent des exercices déposés (STEG 2024, SOTRAPIL 2023 à 2025), mais d'autres n'en portent aucun (OACA, CTN) :
+  l'écart se lit dans `rne-fiches.csv`, colonne `exercices_etats_financiers`.
+- **Circulaires n° 17 de 2020 et n° 3 de 2021** : non lues. Le site institutionnel du Centre (`rne.tn`) présente un certificat
+  qui ne lui correspond pas (nom d'hôte absent du certificat, certificat d'un autre organisme) : la connexion est refusée et ne
+  se contourne pas (règle : TLS contournable pour `pist.tn` seulement). La presse en rapporte le contenu (communiqué du Centre
+  du 30 juin 2020 : tous les assujettis tenant une comptabilité, délai du septième mois, pénalité de 50 % de la redevance par
+  mois), sans citer les articles. Pour les lire : demande à `a.information@e-rne.tn` (voir le brouillon de demande d'accès).
+- **Phrase proposée pour le chapitre du statut** (à insérer par la session qui tient le volume) : « Les entreprises publiques
+  et les établissements publics à caractère non administratif sont inscrits au Registre national des entreprises, et les
+  personnes morales y déposent leurs états financiers au plus tard dans le septième mois suivant la clôture de l'exercice
+  [@loi2018-52, art. 7 et 32]. » La notice `loi2018-52` est à créer (JORT n° 89 du 6 novembre 2018, à partir de la p. 3781 ; URL pist.tn
+  d'après `jort_cache.db`, recid 108642).
