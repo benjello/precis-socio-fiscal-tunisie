@@ -8,6 +8,8 @@ Les souscriptions de 2013 à 2015 au capital des banques publiques, dont 757 MD 
 
 **La [Société tunisienne de banque](#g-stb) (STB), au capital de laquelle l'État souscrit depuis 1957, est la plus grande des banques publiques par le total des actifs : 14 597 MD fin 2023, contre 10 520 MD fin 2018, selon le tableau des banques publiques du rapport du ministère des Finances. Son résultat net passe de 80,8 MD en 2018 à 157,3 MD en 2019, puis à 50,6 MD en 2023, et elle ne verse pas de dividende à l'État de 2020 à 2023.**
 
+Au 30 avril 2026, l'État détient 71,54 % du capital de la STB, de 776,875 MD depuis 2015, et la CNSS 5,69 % ; l'historique du capital est au chapitre des sociétés cotées (@sec-ep-cotees-capital) [@bvmt-stb].
+
 ```{python}
 #| label: fig-ep-stb-fiches
 #| echo: false
@@ -85,6 +87,8 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 Les souscriptions de 2013 à 2015 au capital des banques publiques, dont 110 MD au plus pour la Banque de l'habitat, sont exposées au chapitre « Restructurer » (@sec-ep-banques-publiques) ; la part de l'État dans les bénéfices des entreprises publiques, au chapitre « Les dividendes et les versements au budget » (@sec-ep-dividendes-part).
 
 **La [Banque de l'habitat](#g-bh) (BH) est issue en 1989 de la transformation en banque de la Caisse nationale d'épargne-logement, établissement public créé en 1973 pour gérer le régime d'épargne-logement. Selon le tableau des banques publiques du rapport du ministère des Finances, son total des actifs passe de 11 912 MD fin 2018 à 13 515 MD fin 2023, son résultat net reste entre 72,9 et 142,0 MD par an, et la part de l'État dans ses dividendes passe de 9,5 MD sur l'exercice 2020 à 17,47 MD sur l'exercice 2023.**
+
+Au 30 avril 2026, l'État détient 33,37 % du capital de la BH et l'ETAP 16,57 % ; le capital est de 238 MD depuis 2017 (@sec-ep-cotees-capital) [@bvmt-bh-bank].
 
 ```{python}
 #| label: fig-ep-bh-budget
@@ -192,6 +196,8 @@ La recapitalisation des banques publiques de 2013 à 2019, dont la souscription 
 - **Des ratios au-dessus des minimums.** Le ratio de solvabilité passe de 14,7 % en 2018 à 21,4 % en 2023 et le ratio Tier 1 de 9,9 % à 17,8 %, pour des minimums de 10 % et de 7 % ; le ratio de liquidité à court terme reste au-dessus de 100 %, avec un point bas de 104,1 % en 2021. Les créances classées représentent de 15,4 % à 15,8 % des engagements de 2018 à 2022, puis 19,4 % en 2023, et les provisions en couvrent de 59,3 % à 69,8 %. Le coefficient d'exploitation baisse de 48 % à 38,5 %.
 
 :::: {.chronologie-repliable titre="Banque nationale agricole : tableau des banques publiques du ministère des Finances, exercices 2018-2023 (bilan, produit net bancaire, résultat, dividendes, ratios, effectif), et textes de capital, de transfert de créances, de garantie et de financement de l'agriculture, 1959-2026"}
+
+Au 30 avril 2026, l'État détient 35,26 % du capital de la BNA, de 320 MD depuis 2019 ; la BNA détient à son tour des parts de sociétés cotées (@sec-ep-cotees-detention) [@bvmt-bna].
 
 ```{python}
 #| label: fig-ep-bna-fiches

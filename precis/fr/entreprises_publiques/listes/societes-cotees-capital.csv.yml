@@ -1,0 +1,23 @@
+# Manifeste du relevé « historique du capital de la STB, de la BH et de la BNA ».
+#
+# Fichier lu par figures/cotees.py (figure du capital des banques publiques cotées).
+# Engendré par `scripts/bvmt_societes_cotees.py livre` à partir de l'historique du capital que
+# donne la page de chaque société à la Bourse de Tunis (lu le 3 novembre 2026).
+#
+# CE QUE LA PAGE IMPRIME, TEL QUEL : date de la décision de l'assemblée, nature de l'opération,
+# augmentation et capital après l'opération, en dinars. Les lignes sans capital imprimé (« capital
+# initial » de la BH) ne sont pas reprises. Une ligne de la BH (6 juin 1995) imprime un capital
+# inférieur à celui de la ligne précédente : la figure ne la trace pas.
+
+format: long
+cle_de_ligne: [page, date, operation]
+
+colonnes:
+  banque: sigle de la banque
+  page: nom de la page de la société à la Bourse (clé de citation bvmt-<page>)
+  date: date de la décision de l'assemblée
+  operation: nature de l'opération, telle que la page l'imprime
+  augmentation_dt: augmentation du capital, en dinars
+  capital_dt: capital après l'opération, en dinars
+
+sources: [bvmt-stb, bvmt-bh-bank, bvmt-bna]

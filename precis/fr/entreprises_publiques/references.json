@@ -15361,6 +15361,438 @@
       },
       "URL": "https://www.pist.tn/jort/2001/2001F/Jo0852001.pdf",
       "note": "citation-key: decret2001-2431-otd\nJORT n° 85 du 23 octobre 2001, déposé au gouvernorat de Tunis le 24 octobre 2001 (mention de la dernière page de l'édition française). Couche texte à police décalée ; art. 1er à 8 ; tableau des conditions p. 3736, lus à l'image le 2 novembre 2026. Pas de clause d'effet. Métadonnées jort_cache.db (recid 87174)."
+    },
+    {
+      "id": "bvmt-air-liquide-tunisie",
+      "type": "webpage",
+      "title": "Informations sur la société : Air Liquide Tunisie",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, Air Liquide Tunisie",
+      "URL": "https://tunis-stockexchange.com/informations-air-liquide-tunisie",
+      "note": "citation-key: bvmt-air-liquide-tunisie\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 30/06/2025, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/air-liquide-tunisie.html (252641 octets, SHA-256 15cc344d5cb8f9016a78fa5e07cd9eccafb5aed181b07d5523489a20b9e80af0), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-atl",
+      "type": "webpage",
+      "title": "Informations sur la société : ATL",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, ATL",
+      "URL": "https://tunis-stockexchange.com/informations-atl",
+      "note": "citation-key: bvmt-atl\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 21/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/atl.html (194293 octets, SHA-256 2cb9fb133e369a7d1eca27e635eedbe2d607dd10fb36969ec2286562082d22e0), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-bh-assurance",
+      "type": "webpage",
+      "title": "Informations sur la société : BH Assurance",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, BH Assurance",
+      "URL": "https://tunis-stockexchange.com/informations-bh-assurance",
+      "note": "citation-key: bvmt-bh-assurance\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 27/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/bh-assurance.html (183250 octets, SHA-256 090584380e149404f6345f5727df1908e4823fac927a10e189efd116139ff95a), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-bh-bank",
+      "type": "webpage",
+      "title": "Informations sur la société : BH",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, BH",
+      "URL": "https://tunis-stockexchange.com/informations-bh-bank",
+      "note": "citation-key: bvmt-bh-bank\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 30/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/bh-bank.html (215553 octets, SHA-256 fba832299b10e7d6873e183dba5c7db0963eef753f0ba619bda79657d5573704), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-bh-leasing",
+      "type": "webpage",
+      "title": "Informations sur la société : BH Leasing",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, BH Leasing",
+      "URL": "https://tunis-stockexchange.com/informations-bh-leasing",
+      "note": "citation-key: bvmt-bh-leasing\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 15/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/bh-leasing.html (184333 octets, SHA-256 f8699968c5181b2a911c8874f246a2908395d0c4d981436d6c11f70ee4ef721c), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-bna",
+      "type": "webpage",
+      "title": "Informations sur la société : BNA",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, BNA",
+      "URL": "https://tunis-stockexchange.com/informations-bna",
+      "note": "citation-key: bvmt-bna\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 30/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/bna.html (212071 octets, SHA-256 bd6a06607c1ed84a6bbfccd5ffd7e7839e69150efd44a373351fe779f1e2b642), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-bna-assurances",
+      "type": "webpage",
+      "title": "Informations sur la société : BNA Assurances",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, BNA Assurances",
+      "URL": "https://tunis-stockexchange.com/informations-bna-assurances",
+      "note": "citation-key: bvmt-bna-assurances\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 08/05/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/bna-assurances.html (181809 octets, SHA-256 496bcd2edddd33c984d9625d5600664390d755524e31b32cd0b50e1028bd60cc), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-bte-adp",
+      "type": "webpage",
+      "title": "Informations sur la société : BTE",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, BTE",
+      "URL": "https://tunis-stockexchange.com/informations-bte-adp",
+      "note": "citation-key: bvmt-bte-adp\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 30/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/bte-adp.html (179142 octets, SHA-256 8064676aae8a2846d3276082fc14454234c711208e382449a032c79dfe86e31f), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-ciments-de-bizerte",
+      "type": "webpage",
+      "title": "Informations sur la société : Ciments de Bizerte",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, Ciments de Bizerte",
+      "URL": "https://tunis-stockexchange.com/informations-ciments-de-bizerte",
+      "note": "citation-key: bvmt-ciments-de-bizerte\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 24/06/2025, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/ciments-de-bizerte.html (179555 octets, SHA-256 d8caea5019f21bdb7626d67407df2367126e126b6836a1329036a7ecab09e44e), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-simpar",
+      "type": "webpage",
+      "title": "Informations sur la société : SIMPAR",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, SIMPAR",
+      "URL": "https://tunis-stockexchange.com/informations-simpar",
+      "note": "citation-key: bvmt-simpar\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 25/06/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/simpar.html (193370 octets, SHA-256 140c127df093ffb63440db839c7a666fb793cb90ec60b7bd5170113efe9b8def), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-sotetel",
+      "type": "webpage",
+      "title": "Informations sur la société : SOTETEL",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, SOTETEL",
+      "URL": "https://tunis-stockexchange.com/informations-sotetel",
+      "note": "citation-key: bvmt-sotetel\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 30/06/2025, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/sotetel.html (192748 octets, SHA-256 87419e8ebb9eb15c5a9d559c7742d8415d7bf02ed7c8ef892cc4b16c73387f2c), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-sotrapil",
+      "type": "webpage",
+      "title": "Informations sur la société : SOTRAPIL",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, SOTRAPIL",
+      "URL": "https://tunis-stockexchange.com/informations-sotrapil",
+      "note": "citation-key: bvmt-sotrapil\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 10/06/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/sotrapil.html (199760 octets, SHA-256 a2ce51514db221fd79ff61811365a3e227d0d8611bf5d9ac46827be23dacd672), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-sotumag",
+      "type": "webpage",
+      "title": "Informations sur la société : SOTUMAG",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, SOTUMAG",
+      "URL": "https://tunis-stockexchange.com/informations-sotumag",
+      "note": "citation-key: bvmt-sotumag\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 10/06/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/sotumag.html (180008 octets, SHA-256 346f6cde56847236beccf86811aa63ed55d96ee03972dd838f9f6b95cf4a9bcd), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-star",
+      "type": "webpage",
+      "title": "Informations sur la société : STAR",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, STAR",
+      "URL": "https://tunis-stockexchange.com/informations-star",
+      "note": "citation-key: bvmt-star\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 22/04/2025, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/star.html (191894 octets, SHA-256 098cc37fcd690a3bfcb6a6325fc2182006b6babb0c62d989e077b1b407917088), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-stb",
+      "type": "webpage",
+      "title": "Informations sur la société : STB",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, STB",
+      "URL": "https://tunis-stockexchange.com/informations-stb",
+      "note": "citation-key: bvmt-stb\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 30/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/stb.html (212201 octets, SHA-256 9414ee43dee8f21372c48beca80baad5aaac5c3a1ead464d389ee80e7557bee1), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-tunis-re",
+      "type": "webpage",
+      "title": "Informations sur la société : Tunis Re",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, Tunis Re",
+      "URL": "https://tunis-stockexchange.com/informations-tunis-re",
+      "note": "citation-key: bvmt-tunis-re\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 24/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/tunis-re.html (215379 octets, SHA-256 575e622c53e512d5eed3c41eaa638906fbf3cbdbc2404143d38abb044c323a72), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-tunisair",
+      "type": "webpage",
+      "title": "Informations sur la société : Tunisair",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, Tunisair",
+      "URL": "https://tunis-stockexchange.com/informations-tunisair",
+      "note": "citation-key: bvmt-tunisair\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 29/05/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/tunisair.html (212808 octets, SHA-256 752ac7e8255051ac27cc6f64ffe1209b5dc974a9dc26b87a0cc7b72ffea5be5e), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
+    },
+    {
+      "id": "bvmt-wifak-international-bank",
+      "type": "webpage",
+      "title": "Informations sur la société : Wifak International Bank",
+      "author": [
+        {
+          "literal": "Bourse de Tunis"
+        }
+      ],
+      "publisher": "Bourse de Tunis",
+      "publisher-place": "Tunis",
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Bourse de Tunis, Wifak International Bank",
+      "URL": "https://tunis-stockexchange.com/informations-wifak-international-bank",
+      "note": "citation-key: bvmt-wifak-international-bank\nPage publique de la société sur le site de la Bourse de Tunis, lue le 3 novembre 2026 : principaux actionnaires (plus de 5 %) à l'assemblée du 24/04/2026, capital social et fonds propres des trois derniers exercices, historique du capital. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt/wifak-international-bank.html (188004 octets, SHA-256 2ac7e435c93345a93eb05bb8d38f228a29b5fbe7889c242bd4eb3df95235cab3), ignorée par git. Relevé : scripts/bvmt_societes_cotees.py. Les actionnaires sous 5 % ne sont pas nommés ; la page ne donne ni cours ni capitalisation."
     }
   ]
 }
