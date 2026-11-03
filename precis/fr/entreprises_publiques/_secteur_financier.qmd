@@ -8,7 +8,7 @@ Les souscriptions de 2013 à 2015 au capital des banques publiques, dont 757 MD 
 
 **La [Société tunisienne de banque](#g-stb) (STB), au capital de laquelle l'État souscrit depuis 1957, est la plus grande des banques publiques par le total des actifs : 14 597 MD fin 2023, contre 10 520 MD fin 2018, selon le tableau des banques publiques du rapport du ministère des Finances. Son résultat net passe de 80,8 MD en 2018 à 157,3 MD en 2019, puis à 50,6 MD en 2023, et elle ne verse pas de dividende à l'État de 2020 à 2023.**
 
-Au 30 avril 2026, l'État détient 71,54 % du capital de la STB, de 776,875 MD depuis 2015, et la CNSS 5,69 % ; l'historique du capital et les filiales consolidées sont au chapitre des sociétés cotées (@sec-ep-cotees-capital, @sec-ep-cotees-filiales) [@bvmt-stb].
+Au 30 avril 2026, l'État détient 71,54 % du capital de la STB, de 776,875 MD depuis 2015, et la CNSS 5,69 % ; l'historique du capital est au chapitre des sociétés cotées (@sec-ep-cotees-capital), les filiales consolidées et l'opinion des commissaires aux comptes plus bas (@sec-ep-ge-stb-filiales, @sec-ep-ge-stb-cac) [@bvmt-stb].
 
 ```{python}
 #| label: fig-ep-stb-fiches
@@ -80,6 +80,103 @@ ge.tableau_banque_detail("stb", ("LF2024", "LF2025"),
 La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances, éditions LF 2022, LF 2024 et LF 2025. Pour une banque, ce n'est pas une fiche d'entreprise mais le tableau des banques publiques : bilan résumé, total des actifs, engagements et dépôts de la clientèle, produit net bancaire, résultats, provisions, dividendes, ratios de solvabilité, de liquidité et de créances classées, effectif ; l'édition LF 2022 n'y donne ni le résultat d'exploitation ni les dividendes, et, dans les éditions LF 2024 et LF 2025, le commentaire de chaque banque donne son capital et la part de l'État. Ce que l'État paie à la place de la banque au titre de sa dette garantie vient d'une autre source, les rapports de la Cour des comptes sur la clôture du budget, cités à part.
 
 :::::
+
+### Les filiales, de 2010 à 2021 {#sec-ep-ge-stb-filiales}
+
+**La STB consolide 17 entités en 2010, 24 en 2012 et 2013, 19 en 2014 et 21 en 2020 et 2021, mère non comprise ; les rapports annuels de 2011 à 2018 donnent chacun deux exercices, celui de 2019 n'est pas lu.** [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2015 ; @ra-stb-2017 ; @ra-stb-2018 ; @bvmt-ra-stb-2021]
+
+- **2011 et 2012 : le périmètre s'élargit.** Six entités entrent en 2011 (BFT, SMT Maison Blanche, SED Sousse Nord, Soni Bank, la SCI La Maison du banquier et la SPCM Elfejja), puis STB Finance et SIDCO Sicar en 2012, tandis que la SOFIGES sort [@ra-stb-2011 ; @ra-stb-2013].
+- **2014 : cinq sorties.** La Banque d'affaires de Tunisie, la SICOAC, SIDCO Sicar, la SMT Maison Blanche et El Wifack Leasing ne sont plus consolidées ; le rapport de 2014 note la SICOAC comme « filiale cédée en 2014 » [@ra-stb-2014 ; @ra-stb-2015].
+- **2015 à 2018.** Ahla Hotel Neptunia et la Société des moyens généraux entrent en 2015, STB Sécurité et gardiennage en 2016 ; Ahla Hotel Neptunia sort en 2016, la SED Sousse Nord en 2017 et la BFT en 2018 [@ra-stb-2015 ; @ra-stb-2017 ; @ra-stb-2018].
+- **2020.** Les Magasins généraux et entrepôts réels de Tunis et deux SICAV (Épargnant et Épargne obligataire) entrent dans le périmètre, que la SOFI Elan Sicaf quitte [@bvmt-ra-stb-2021].
+
+```{python}
+#| label: fig-ep-cotees-evolution-stb
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.figure_evolution(
+    "STB",
+    caption=("Les entités que la STB consolide, mère non comprise, de 2010 à 2021 (31 décembre) : "
+             "pourcentage d'intérêt du groupe, d'après les rapports annuels de la banque. Source : "
+             "[@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2017 ; "
+             "@ra-stb-2018 ; @bvmt-ra-stb-2021]"),
+    note_lecture=(
+        "Une ligne par entité, dans l'ordre de leur entrée dans le périmètre ; une cellule vide est "
+        "une entité non consolidée cet exercice-là ; « ME » : mise en équivalence (le pourcentage "
+        "d'intérêt est alors dans l'onglet des données) ; le rapport de 2021 ne donne pas la méthode "
+        "pour 2020 et 2021. 2019 n'est pas lu. Pour chaque exercice, la lecture qui compte le plus "
+        "d'entités : certains rapports tronquent leur tableau."))
+```
+
+::: {.chronologie-repliable titre="Les entités que la STB consolide, exercice par exercice, 2010-2021 : pourcentage d'intérêt"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_evolution(
+    "STB",
+    caption=("Les entités que la STB consolide, mère non comprise, de 2010 à 2021 (31 décembre) : "
+             "pourcentage d'intérêt du groupe, ou pourcentage de contrôle quand le rapport ne donne "
+             "pas l'intérêt ; « (ME) » : mise en équivalence (le rapport de 2021 ne donne pas la méthode pour 2020 et 2021) ; "
+             "« – » : entité non consolidée cet exercice-là. Rapports annuels de 2011, 2013, 2014, 2015, 2017, 2018 et 2021 (chacun donne "
+             "deux exercices ; pour un exercice, la lecture qui compte le plus d'entités). 2019 n'est "
+             "pas lu. [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2017 ; "
+             "@ra-stb-2018 ; @bvmt-ra-stb-2021]"),
+    tbl_id="tbl-ep-cotees-evolution-stb")
+```
+
+:::
+
+### L'opinion des commissaires aux comptes {#sec-ep-ge-stb-cac}
+
+**Les commissaires aux comptes de la STB émettent une opinion avec réserves sur ses comptes individuels dans les huit rapports annuels lus, ceux de 2011, 2013, 2014, 2015, 2016, 2017, 2018 et 2019.** [@ra-stb-2011, p. 74 ; @ra-stb-2013, p. 68 ; @ra-stb-2014, p. 64 ; @ra-stb-2015, p. 78 ; @ra-stb-2016, p. 64 ; @ra-stb-2017, p. 84 ; @ra-stb-2018, p. 87 ; @ra-stb-2019, p. 104]
+
+- **Des comptes de suspens anciens** (comptes BCT en dinars et en devises, correspondants en devises) sont signalés en 2013, 2017, 2018 et 2019 ; en 2018 et 2019 s'y ajoutent des soldes figés sur les comptes inter-sièges et des insuffisances du système d'information qui limitent la justification et la réconciliation des flux ; en 2019, la banque confie la justification à des cabinets externes, travail en cours à la clôture dont l'impact ne peut pas être cerné [@ra-stb-2013 ; @ra-stb-2017 ; @ra-stb-2018 ; @ra-stb-2019].
+- **Les engagements hors bilan** n'ont pas de comptabilité régulière et exhaustive en 2013, 2016, 2017, 2018 et 2019 : l'état est arrêté de façon extracomptable (en 2016, 1 609 832 KDT d'engagements donnés et 1 418 553 KDT d'engagements reçus) [@ra-stb-2013 ; @ra-stb-2016 ; @ra-stb-2017 ; @ra-stb-2018 ; @ra-stb-2019].
+- **Les garanties reçues** font l'objet d'une réserve en 2011, 2014, 2015 et 2016 : base non exhaustive, pas d'inventaire physique, documentation de leur valeur indisponible (hypothèques, rapports d'expertise) ; en 2011, 159 MD de provisions sont constatées pour des risques d'exercices antérieurs insuffisamment couverts, dont 117 MD en diminution des capitaux propres d'ouverture ; en 2013, 486,734 MD de provisions additionnelles suivent la circulaire n° 2013-21, et l'inventaire physique des immobilisations (83 MD nets) n'est pas fait [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2016].
+
+```{python}
+#| label: fig-ep-cotees-cac-stb
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.figure_cac(
+    "STB", "stb",
+    caption=("Les réserves des commissaires aux comptes sur les comptes individuels de la STB, par thème et par "
+             "exercice, leur nombre, et le délai de publication des états financiers annuels, d'après les rapports "
+             "annuels de la banque et les publications de la Bourse de Tunis. Source : [@ra-stb-2011 ; @ra-stb-2013 ; "
+             "@ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2016 ; @ra-stb-2017 ; @ra-stb-2018 ; @ra-stb-2019]"),
+    note_lecture=(
+        "En haut, une case par thème de réserve et par exercice ; en gris, un exercice dont le rapport n'est pas lu "
+        "(2012, et 2020 à 2025 pour lesquels les états de la Bourse sont à lire). Au milieu, le nombre de motifs. "
+        "En bas, le nombre de jours entre le 31 décembre de l'exercice et la date que la Bourse porte à la publication "
+        "des états individuels. Le thème d'un motif est un classement fixé dans le relevé (onglet des données), non un "
+        "jugement du rapport."))
+```
+
+::: {.chronologie-repliable titre="L'opinion des commissaires aux comptes sur les comptes de la STB et les motifs de réserve, exercice par exercice, 2011-2019"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_opinions(
+    "STB",
+    caption=("L'opinion des commissaires aux comptes sur les comptes individuels de la STB et les motifs de "
+             "réserve, d'après le rapport général de chaque rapport annuel : 2011, 2013, 2014, 2015, 2016, 2017, 2018 et "
+             "2019 ; l'exercice 2012 n'a pas de rapport lu. Chaque motif résume l'intitulé "
+             "du rapport, avec la page "),
+    tbl_id="tbl-ep-cotees-cac-stb")
+```
+
+:::
+
 
 
 ## La Banque de l'habitat {#sec-ep-ge-bh}
@@ -197,7 +294,7 @@ La recapitalisation des banques publiques de 2013 à 2019, dont la souscription 
 
 :::: {.chronologie-repliable titre="Banque nationale agricole : tableau des banques publiques du ministère des Finances, exercices 2018-2023 (bilan, produit net bancaire, résultat, dividendes, ratios, effectif), et textes de capital, de transfert de créances, de garantie et de financement de l'agriculture, 1959-2026"}
 
-Au 30 avril 2026, l'État détient 35,26 % du capital de la BNA, de 320 MD depuis 2019 ; la BNA détient à son tour des parts de sociétés cotées (@sec-ep-cotees-detention) et le groupe consolide 22 entités (@sec-ep-cotees-filiales) [@bvmt-bna].
+Au 30 avril 2026, l'État détient 35,26 % du capital de la BNA, de 320 MD depuis 2019 ; la BNA détient à son tour des parts de sociétés cotées (@sec-ep-cotees-detention) et le groupe consolide 22 entités (@sec-ep-cotees-filiales, et le détail à la fin de cette section) [@bvmt-bna].
 
 ```{python}
 #| label: fig-ep-bna-fiches
@@ -263,6 +360,49 @@ ge.tableau_fiche_banque("bna", ("LF2024", "LF2025"),
 La source est le rapport sur les entreprises publiques que le ministère des Finances joint au projet de loi de finances, éditions LF 2022, LF 2024 et LF 2025. Pour une banque, ce n'est pas une fiche d'entreprise mais le tableau des banques publiques : bilan résumé, total des actifs, engagements et dépôts de la clientèle, produit net bancaire, résultats, provisions, dividendes, ratios de solvabilité, de liquidité et de créances classées, effectif ; l'édition LF 2022 n'y donne ni le résultat d'exploitation ni les dividendes, et, dans les éditions LF 2024 et LF 2025, le commentaire de chaque banque donne son capital et la part de l'État. Ce que l'État paie à la place de la banque au titre de sa dette garantie vient d'une autre source, les rapports de la Cour des comptes sur la clôture du budget, cités à part.
 
 :::::
+
+
+**La BNA consolide 22 entités en 2007, en 2020 et en 2021, mère non comprise ; ses promotions immobilières (SIMPAR, Essoukna, SIVIA, SPI Madina, Les Œillets) sont dans le périmètre dès 2007.** [@ra-bna-2007 ; @ra-bna-2020 ; @bvmt-ra-bna-2021]
+
+- **Contrôle sans majorité du capital.** En 2021, la BNA détient 69,96 % des droits de vote d'Essoukna et 99,99 % de ceux de SIVIA, pour 23,41 % et 42,24 % du capital : elle contrôle ces sociétés sans en détenir la majorité du capital, ce que le pourcentage d'intérêt, plus bas que celui de contrôle, laisse voir [@bvmt-ra-bna-2021, p. 127].
+- **De 2007 à 2020.** Quatre entités sortent du périmètre (Ifrikia, SIP Sicar, Sahara Palace et la STIA, société d'industrie automobile) et quatre entrent : AMI, CAP Bank, SODET Sud et SODINO ; Tunis Re, mise en équivalence en 2007 et en 2020, reste dans le périmètre [@ra-bna-2007 ; @ra-bna-2020].
+- **2021 : AMI change de méthode.** Mise en équivalence en 2020 (25,90 % de contrôle, 25,85 % d'intérêt), AMI Assurances est consolidée par intégration globale en 2021 (52,16 % et 52,07 %), après une levée de fonds de 93 MD à laquelle la BNA a participé [@ra-bna-2020 ; @bvmt-ra-bna-2021].
+- **Un rapport par exercice lu.** Les exercices intermédiaires (2008 à 2019) ne sont pas lus : les documents que l'Internet Archive a gardés du site de la BNA pour ces années n'ont pas de tableau du périmètre.
+
+```{python}
+#| label: fig-ep-cotees-evolution-bna
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.figure_evolution(
+    "BNA",
+    caption=("Les entités que la BNA consolide, mère non comprise, en 2007, 2020 et 2021 (31 décembre) : "
+             "pourcentage d'intérêt du groupe, d'après le rapport annuel de 2007, les états financiers "
+             "consolidés de 2020 et le rapport annuel de 2021. Source : [@ra-bna-2007 ; @ra-bna-2020 ; "
+             "@bvmt-ra-bna-2021]"),
+    note_lecture=(
+        "Une ligne par entité, dans l'ordre de leur entrée dans le périmètre ; une cellule vide est "
+        "une entité non consolidée cet exercice-là ; « ME » : mise en équivalence. Les exercices "
+        "2008 à 2019 ne sont pas lus : ils n'ont pas de colonne."))
+```
+
+::: {.chronologie-repliable titre="Les entités que la BNA consolide, en 2007, 2020 et 2021 : pourcentage d'intérêt"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_evolution(
+    "BNA",
+    caption=("Les entités que la BNA consolide, mère non comprise, en 2007, 2020 et 2021 (31 décembre) : "
+             "pourcentage d'intérêt du groupe ; « (ME) » : mise en équivalence ; « – » : entité non "
+             "consolidée cet exercice-là. [@ra-bna-2007 ; @ra-bna-2020 ; @bvmt-ra-bna-2021]"),
+    tbl_id="tbl-ep-cotees-evolution-bna")
+```
+
+:::
 
 
 ## La Banque de financement des petites et moyennes entreprises {#sec-ep-ge-bfpme}
