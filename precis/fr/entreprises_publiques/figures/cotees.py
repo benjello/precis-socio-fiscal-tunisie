@@ -5,7 +5,7 @@
     ct.figure_resultats(caption=…, note_lecture=…)  # résultat net et dividende de l'État
     ct.tableau_resultats(caption=…)               # résultat net et dividendes des sociétés où l'État est actionnaire
     ct.tableau_perimetres(caption=…)              # les entités consolidées par la STB, la BH et la BNA
-    ct.tableau_registre(caption=…)                # l'identité des entreprises publiques au Registre national
+    ct.tableau_registre(caption=…)                # l'identité des entreprises publiques au Registre national (annexe)
     ct.figure_capital(caption=…, note_lecture=…)  # le capital de la STB, de la BH et de la BNA
 
 D'OÙ VIENNENT LES DONNÉES. Des relevés versionnés DANS le livre (`listes/*.csv`, chacun avec son manifeste `.csv.yml`) :

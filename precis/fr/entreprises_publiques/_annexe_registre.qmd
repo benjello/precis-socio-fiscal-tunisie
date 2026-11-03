@@ -1,0 +1,41 @@
+# Le Registre national des entreprises, source du volume {#sec-ep-registre}
+
+Le Registre national des entreprises est une source du volume, non un sujet : cette annexe dit ce qu'il est, depuis quand il existe et ce que le portail en montre sans compte, puis ce que le volume en tire. Les actionnaires et le capital des sociétés cotées viennent de la Bourse de Tunis, au chapitre des sociétés cotées (@sec-ep-cotees).
+
+## Ce qu'est le Registre {#sec-ep-registre-source}
+
+**Le Registre national des entreprises est créé par la loi n° 2018-52 du 29 octobre 2018 ; depuis le décret présidentiel n° 2022-298 du 28 mars 2022, chaque service du Centre national du Registre des entreprises est tarifé.** [@loi2018-52-rne ; @decret2022-298-rne, p. 853-855]
+
+- **Les textes.** La loi est publiée au *Journal officiel* n° 89 du 6 novembre 2018 [@loi2018-52-rne]. Un décret gouvernemental n° 2019-52 du 21 janvier 2019 règle l'organisation administrative et financière du Centre national du Registre des entreprises, et le décret de 2022, qui vise l'article 15 de la loi, fixe les redevances pour ses services [@decret2022-298-rne, p. 853].
+- **Ce qui est tarifé.** Les montants s'entendent toutes taxes comprises (art. 3) : la fiche d'identité de l'entreprise coûte 5 dinars, la copie électronique d'un contrat ou d'un procès-verbal 5 dinars le document, celle des états financiers 10 dinars le document, la liste des associés ou actionnaires 20 dinars par identifiant, et l'abonnement annuel d'accès à la base de données 500 dinars par utilisateur [@decret2022-298-rne, p. 854-855].
+- **Ce que le portail affiche sans compte.** Une recherche par dénomination, en français ou en arabe, renvoie l'identifiant, la forme juridique, l'état du registre et la liste des documents déposés, avec leur nature, leur date, leur prix et, pour un état financier, l'exercice ; il n'affiche pas le contenu des documents [@rne-portail].
+- **Un autre fichier porte presque le même nom.** Le répertoire national d'entreprises, créé par le décret n° 94-780 du 4 avril 1994, relève de l'Institut national de la statistique et attribue un identifiant national à chaque entreprise ; il ne se confond pas avec le Registre [@decret94-780-repertoire, art. 1 à 3].
+
+## Ce que le volume en tire {#sec-ep-registre-emploi}
+
+**Pour 39 entreprises publiques du volume, le portail donne l'identifiant, la forme juridique, l'état du registre et les états financiers déposés : 26 ont déposé au moins un état financier, de 2019 à 2025.** [@rne-portail]
+
+- **La forme juridique.** Le Registre compte 23 établissements publics, dont trois à caractère non administratif, 15 sociétés anonymes et une entreprise classée « autre », l'Office du commerce de la Tunisie. Il ne distingue pas les établissements à caractère industriel et commercial des établissements administratifs, que les textes de création distinguent (@sec-ep-statut).
+- **L'état.** 37 fiches sont actives ; la Banque de l'habitat et la Compagnie tunisienne de forage sont « non actives » et ne listent qu'un document.
+- **Les états financiers.** 17 des 23 établissements publics et 8 des 15 sociétés anonymes en ont déposé au moins un, ainsi que l'Office du commerce de la Tunisie. Treize entreprises n'en ont aucun : l'Agence foncière industrielle, la Banque de l'habitat, la Compagnie des phosphates de Gafsa, la Compagnie tunisienne de forage, la Compagnie tunisienne de navigation, le Groupe chimique tunisien, l'Office de l'aviation civile et des aéroports, l'Office des terres domaniales, La Poste, la RNTA, la SNCFT, la STB et El Fouladh. Les dépôts les plus anciens sont de 2019.
+- **Les procès-verbaux.** Le portail liste 268 procès-verbaux de modification pour ces 39 entreprises, dont 143 de mise à jour des dirigeants et 21 de changement de capital ; on y lit la date et la nature de l'opération, non le contenu.
+
+::: {.chronologie-repliable titre="Les entreprises publiques au Registre national des entreprises : identifiant, forme, état et états financiers déposés, au 3 novembre 2026"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_registre(
+    caption=("Les 39 entreprises publiques du volume retrouvées au Registre national des "
+             "entreprises : identifiant, forme juridique et état du registre tels que le portail "
+             "les imprime, exercices dont un état financier est déposé, et nombre de documents "
+             "listés, d'après la consultation du portail le 3 novembre 2026 en parcours de "
+             "visiteur [@rne-portail]. Onze entreprises du volume n'y sont pas retrouvées sous "
+             "leur nom"))
+```
+
+:::
+
+<!-- TODO (documentaliste) : (1) Histoire du Registre avant 2018 (registre du commerce, tribunaux) : non établie ici ; le Registre est cité par la loi n° 2018-52, dont seule l'édition arabe est en ligne (JORT n° 89) : lire l'article 15 et la définition du Registre dans le texte. (2) Onze entreprises sans identifiant : SOTRAPIL (0006473H à la Bourse de Tunis), BFPME, ARRU, SOGEMT, Tunisie Trade Net, CIOK, Transtu, RFR, SNTRI, SORETRAS, SRTB ; pistes : recherche par identifiant fiscal, par nom commercial, par année de création. (3) Identifiants à départager : STB (0001237A au portail, A0001237 à la Bourse) et BH (00024588W au portail, 0024588W à la Bourse, avec une fiche « non active » et trois numéros). (4) Forme juridique : le chapitre du statut ne dit pas la forme d'El Fouladh, des Ciments de Bizerte, de la SNCPA et de Tunisair (sociétés anonymes au Registre) ; l'Office du commerce de la Tunisie est « autre » au Registre et établissement public dans le chapitre ; à recouper avec le texte de création avant de modifier. (5) Contenu des documents (actionnaires, capital, états financiers) : payant, rien n'est acheté ; la demande d'accès à l'information (a.information@e-rne.tn) n'est pas rédigée ; circulaires RNE n° 17 de 2020 et n° 3 de 2021 non lues (qui doit déposer ses comptes). Voir docs/notes/rne-registre-national-entreprises-2026-11-03.md. -->

@@ -15910,6 +15910,65 @@
       "title-short": "BNA, rapport annuel 2021",
       "URL": "https://tunis-stockexchange.com/sites/default/files/societes/bna/rapport-annuel-de-gestion/bna-rapport-annuel-de-gestion-31-12-2021.pdf",
       "note": "citation-key: bvmt-ra-bna-2021\nRapport annuel de gestion de l'exercice 2021, rapport du groupe et états financiers consolidés, publié sur la page de la société à la Bourse de Tunis (/node/81184). Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports/bna/bna-rapport-annuel-de-gestion-31-12-2021.pdf (7579385 octets, SHA-256 8a01faa407f1628b6b9257644ebb20b90a41fa5083a09f9a9f5850374df381d7), ignorée par git. Cité pour : périmètre de consolidation au 31 décembre 2021 (entités, méthode, pourcentages de contrôle et d'intérêt). Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "loi2018-52-rne",
+      "type": "legislation",
+      "title": "Loi n° 2018-52 du 29 octobre 2018, relative au Registre national des entreprises",
+      "title-short": "Loi n° 2018-52 du 29 octobre 2018",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "89",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            11,
+            6
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2018/2018A/Ja0892018.pdf",
+      "note": "citation-key: loi2018-52-rne\nJORT n° 89 du 6 novembre 2018 (métadonnées jort_cache.db : date de signature 29 octobre 2018, titre arabe « يتعلق بالسجل الوطني للمؤسسات »). Seule l'édition arabe est en ligne sur pist.tn ; le texte n'est pas lu ici : la loi est citée par le visa du décret présidentiel n° 2022-298 (p. 853), qui en vise l'article 15."
+    },
+    {
+      "id": "decret2022-298-rne",
+      "type": "legislation",
+      "title": "Décret présidentiel n° 2022-298 du 28 mars 2022, fixant les montants des redevances pour services rendus par le Centre national du registre des entreprises et les modalités de leur recouvrement",
+      "title-short": "Décret présidentiel n° 2022-298 du 28 mars 2022",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "34",
+      "page": "853-855",
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            30
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/2022/2022F/Jo0342022.pdf",
+      "note": "citation-key: decret2022-298-rne\nJORT n° 34 du 30 mars 2022. Lu le 3 novembre 2026 (couche texte du fascicule français) : visas p. 853 (loi n° 2018-52, article 15 ; décret gouvernemental n° 2019-52 du 21 janvier 2019, relatif à l'organisation administrative et financière du Centre national du Registre des entreprises) ; trois tableaux de redevances p. 853-855 ; article 3 : montants toutes taxes comprises ; article 4 : réduction de 50 % des redevances du tableau n° 1."
+    },
+    {
+      "id": "decret94-780-repertoire",
+      "type": "legislation",
+      "title": "Décret n° 94-780 du 4 avril 1994, portant création du répertoire national d'entreprises",
+      "title-short": "Décret n° 94-780 du 4 avril 1994",
+      "container-title": "Journal officiel de la République tunisienne",
+      "issue": "29",
+      "page": "613-614",
+      "issued": {
+        "date-parts": [
+          [
+            1994,
+            4,
+            15
+          ]
+        ]
+      },
+      "URL": "https://www.pist.tn/jort/1994/1994F/Jo02994.pdf",
+      "note": "citation-key: decret94-780-repertoire\nJORT n° 29 du 15 avril 1994. Lu le 3 novembre 2026 (couche texte) : article premier, « il est créé un répertoire national d'entreprises » ; article 2, définition de l'entreprise et de l'établissement ; article 3, identifiant national attribué à chaque entreprise ; visas de l'Institut national de la statistique. Métadonnées jort_cache.db."
     }
   ]
 }
