@@ -16299,6 +16299,435 @@
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://www.stb.com.tn/uploads/indicateurs%20d'activite/Rapport%202019%20FRANCAIS.pdf",
       "note": "citation-key: ra-stb-2019\nRapport annuel de l'exercice 2019, consulté dans la capture de l'Internet Archive du 03/11/2021 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/stb/20211103_Rapport_2019_FRANCAIS.pdf (8872908 octets, SHA-256 704b3629bd022b321362b4d85640b823a8c6706b852b55cbced84dff9539c4d8), ignorée par git. Cité pour : opinion des commissaires aux comptes de l'exercice 2019. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2012-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2012",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers individuels 2012",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2012.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2012.pdf",
+      "note": "citation-key: bvmt-ef-stb-2012-individuel\nÉtats financiers individuels de l'exercice 2012, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2012_individuel.pdf (5791152 octets, SHA-256 9a9cf39f7449a555b786e6bd4f1757b478bc8e1c33df51f1a8fc8629caf24add), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2021-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers individuels 2021",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2021.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2021.pdf",
+      "note": "citation-key: bvmt-ef-stb-2021-individuel\nÉtats financiers individuels de l'exercice 2021, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2021_individuel.pdf (583989 octets, SHA-256 48c4e4277a6f7739b5455b47d7a31ae7b56014e4a412060f9a260710c576ac40), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2022-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2022",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers individuels 2022",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2022.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2022.pdf",
+      "note": "citation-key: bvmt-ef-stb-2022-individuel\nÉtats financiers individuels de l'exercice 2022, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2022_individuel.pdf (4141131 octets, SHA-256 8f9698f35ddfaedb81e272ce0d57ffd8fe33682b48195556d453451826a4e6dd), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2023-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2023",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers individuels 2023",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2023.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2023.pdf",
+      "note": "citation-key: bvmt-ef-stb-2023-individuel\nÉtats financiers individuels de l'exercice 2023, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2023_individuel.pdf (3329122 octets, SHA-256 aef3d20afc815cdbe753c95c9afee06c93cba9e3ca344279cff60e8c01e71c8e), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2024-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2024",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers individuels 2024",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2024.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2024.pdf",
+      "note": "citation-key: bvmt-ef-stb-2024-individuel\nÉtats financiers individuels de l'exercice 2024, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2024_individuel.pdf (674923 octets, SHA-256 0d9117555072c25f5c215d9363aa7c2879714bd46d81a573066f5801d1275707), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2025-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2025",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers individuels 2025",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/2026-04/stb_efd311225.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/2026-04/stb_efd311225.pdf",
+      "note": "citation-key: bvmt-ef-stb-2025-individuel\nÉtats financiers individuels de l'exercice 2025, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2025_individuel.pdf (1277103 octets, SHA-256 98c6a3ff970653d0e7b0d1cf6b5b2d62b090fe19bb658a230878049a9fdb0f5f), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2020-individuel",
+      "type": "report",
+      "title": "États financiers individuels 2020",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers individuels 2020",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2020.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2020.pdf",
+      "note": "citation-key: bvmt-ef-stb-2020-individuel\nÉtats financiers individuels de l'exercice 2020, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2020_consolide.pdf (3815078 octets, SHA-256 087834eaf8b01fafc5c6bf42fa64bf95efe6ad9b559a9d95f14d982251bd016c), ignorée par git. Cité pour : opinion des commissaires aux comptes. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2019-consolide",
+      "type": "report",
+      "title": "États financiers consolidés 2019",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers consolidés 2019",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2019.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2019.pdf",
+      "note": "citation-key: bvmt-ef-stb-2019-consolide\nÉtats financiers consolidés de l'exercice 2019, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2019_consolide.pdf (4051747 octets, SHA-256 e97719c6fde1f6886b7f2eccf50459a98c5f6be96ddb63cab0c97efcc9ef6c7a), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2020-consolide",
+      "type": "report",
+      "title": "États financiers consolidés 2020",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers consolidés 2020",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2020.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-individuels-31-12-2020.pdf",
+      "note": "citation-key: bvmt-ef-stb-2020-consolide\nÉtats financiers consolidés de l'exercice 2020, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2020_individuel.pdf (3860178 octets, SHA-256 3db8fc5dcf3c147ca09b39e214de789d9681fb1b32071de7945de3317c949fb0), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2021-consolide",
+      "type": "report",
+      "title": "États financiers consolidés 2021",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers consolidés 2021",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2021.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2021.pdf",
+      "note": "citation-key: bvmt-ef-stb-2021-consolide\nÉtats financiers consolidés de l'exercice 2021, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2021_consolide.pdf (610986 octets, SHA-256 130c43cc05dd7a4b1f1c03966ca6f1a6925b95a7dcc1499eb0e9e3ebfe5977c7), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2022-consolide",
+      "type": "report",
+      "title": "États financiers consolidés 2022",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers consolidés 2022",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2022.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2022.pdf",
+      "note": "citation-key: bvmt-ef-stb-2022-consolide\nÉtats financiers consolidés de l'exercice 2022, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2022_consolide.pdf (3209731 octets, SHA-256 7b526458c5949b1b60c55733cd58a5d9908bf088cf2bda225a6f8e8fa6775b2a), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2023-consolide",
+      "type": "report",
+      "title": "États financiers consolidés 2023",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers consolidés 2023",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2023.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2023.pdf",
+      "note": "citation-key: bvmt-ef-stb-2023-consolide\nÉtats financiers consolidés de l'exercice 2023, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2023_consolide.pdf (3034969 octets, SHA-256 62664d448230a6901a8ff6784fbfb81bc5cc206a2dd01bca2ec4b20266550f91), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "bvmt-ef-stb-2024-consolide",
+      "type": "report",
+      "title": "États financiers consolidés 2024",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, états financiers consolidés 2024",
+      "URL": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2024.pdf",
+      "archive": "Bourse de Tunis",
+      "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/stb/etats-financiers/stb-etats-financiers-annuels-consolides-31-12-2024.pdf",
+      "note": "citation-key: bvmt-ef-stb-2024-consolide\nÉtats financiers consolidés de l'exercice 2024, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/stb/2024_consolide.pdf (718261 octets, SHA-256 05a3fc33c6187f4f56b86fcfab7da6149c57b470d694f2db5008829ea82cbdaa), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
     }
   ]
 }

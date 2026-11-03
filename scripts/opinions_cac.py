@@ -75,6 +75,48 @@ DOCUMENTS = [
         "bvmt-rapports-archives/stb/20211103_STB_RAPPORT_2018_FRANÇAIS.pdf",
         "ra-stb-2018",
     ),
+    (
+        "STB",
+        2012,
+        "bvmt-etats-financiers/stb/2012_individuel.pdf",
+        "bvmt-ef-stb-2012-individuel",
+    ),
+    (
+        "STB",
+        2020,
+        "bvmt-etats-financiers/stb/2020_consolide.pdf",
+        "bvmt-ef-stb-2020-individuel",
+    ),
+    (
+        "STB",
+        2021,
+        "bvmt-etats-financiers/stb/2021_individuel.pdf",
+        "bvmt-ef-stb-2021-individuel",
+    ),
+    (
+        "STB",
+        2022,
+        "bvmt-etats-financiers/stb/2022_individuel.pdf",
+        "bvmt-ef-stb-2022-individuel",
+    ),
+    (
+        "STB",
+        2023,
+        "bvmt-etats-financiers/stb/2023_individuel.pdf",
+        "bvmt-ef-stb-2023-individuel",
+    ),
+    (
+        "STB",
+        2024,
+        "bvmt-etats-financiers/stb/2024_individuel.pdf",
+        "bvmt-ef-stb-2024-individuel",
+    ),
+    (
+        "STB",
+        2025,
+        "bvmt-etats-financiers/stb/2025_individuel.pdf",
+        "bvmt-ef-stb-2025-individuel",
+    ),
 ]
 TITRE = re.compile(
     r"(?i)(justification|fondement)\s+de\s+l.opinion\s+avec\s+r[ée]serves?"

@@ -1,9 +1,9 @@
 # Figure-data du précis socio-fiscal tunisien — généré le 2026-11-03
 # séries (tunisia_data) : groupes-bancaires-perimetre
-# sources (citation) : @bvmt-ra-stb-2021, @bvmt-ra-bh-2021, @bvmt-ra-bna-2021, @ra-stb-2011, @ra-stb-2013, @ra-stb-2014, @ra-stb-2015, @ra-stb-2017, @ra-stb-2018, @ra-bna-2007, @ra-bna-2020
+# sources (citation) : @bvmt-ra-stb-2021, @bvmt-ra-bh-2021, @bvmt-ra-bna-2021, @ra-stb-2011, @ra-stb-2013, @ra-stb-2014, @ra-stb-2015, @ra-stb-2017, @ra-stb-2018, @bvmt-ef-stb-2019-consolide, @ra-bna-2007, @ra-bna-2020
 # fiches : 
 # méthode/hypothèses : Le pourcentage d'intérêt est la part du capital détenue directement et indirectement par le groupe, non la part directe de la banque. Un exercice sans rapport lu (2019 pour la STB) n'a pas de colonne. La méthode n'est pas donnée pour 2020 et 2021 (STB).
-# note : Les entités que la STB consolide, mère non comprise, de 2010 à 2021 (31 décembre) : pourcentage d'intérêt du groupe, d'après les rapports annuels de la banque. Source : [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2017 ; @ra-stb-2018 ; @bvmt-ra-stb-2021]
+# note : Les entités que la STB consolide, mère non comprise, de 2010 à 2021 (31 décembre) : pourcentage d'intérêt du groupe, d'après les rapports annuels de la banque. Source : [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2017 ; @bvmt-ef-stb-2019-consolide ; @bvmt-ra-stb-2021]
 entite,exercice,interet_ou_controle_pct,methode
 BANQUE D’AFFAIRE DE TUNISIE « B.A.T »,2010,29.89,mise en équivalence
 BANQUE D’AFFAIRE DE TUNISIE « B.A.T »,2011,29.93,mise en équivalence
@@ -17,7 +17,8 @@ L’IMMOBILIERE DE L'AVENUE,2014,97.84,intégration globale ou non précisée
 L’IMMOBILIERE DE L'AVENUE,2015,98.1,intégration globale ou non précisée
 L’IMMOBILIERE DE L'AVENUE,2016,98.07,intégration globale ou non précisée
 L’IMMOBILIERE DE L'AVENUE,2017,98.28,intégration globale ou non précisée
-L’IMMOBILIERE DE L'AVENUE,2018,98.36,intégration globale ou non précisée
+L’IMMOBILIERE DE L'AVENUE,2018,98.61,intégration globale ou non précisée
+L’IMMOBILIERE DE L'AVENUE,2019,99.16,intégration globale ou non précisée
 L’IMMOBILIERE DE L'AVENUE,2020,99.16,intégration globale ou non précisée
 L’IMMOBILIERE DE L'AVENUE,2021,99.16,intégration globale ou non précisée
 S.T.C VERITAS,2010,26.96,mise en équivalence
@@ -28,7 +29,8 @@ S.T.C VERITAS,2014,26.91,mise en équivalence
 S.T.C VERITAS,2015,26.98,mise en équivalence
 S.T.C VERITAS,2016,26.98,mise en équivalence
 S.T.C VERITAS,2017,26.97,mise en équivalence
-S.T.C VERITAS,2018,26.98,mise en équivalence
+S.T.C VERITAS,2018,27.05,mise en équivalence
+S.T.C VERITAS,2019,27.05,mise en équivalence
 S.T.C VERITAS,2020,27.05,intégration globale ou non précisée
 S.T.C VERITAS,2021,27.05,intégration globale ou non précisée
 SICAV L'INVESTISSEUR,2010,73.88,mise en équivalence
@@ -39,7 +41,8 @@ SICAV L'INVESTISSEUR,2014,72.4,mise en équivalence
 SICAV L'INVESTISSEUR,2015,72.7,mise en équivalence
 SICAV L'INVESTISSEUR,2016,72.43,mise en équivalence
 SICAV L'INVESTISSEUR,2017,70.92,mise en équivalence
-SICAV L'INVESTISSEUR,2018,75.84,mise en équivalence
+SICAV L'INVESTISSEUR,2018,76.03,mise en équivalence
+SICAV L'INVESTISSEUR,2019,74.01,mise en équivalence
 SICAV L'INVESTISSEUR,2020,75.97,intégration globale ou non précisée
 SICAV L'INVESTISSEUR,2021,75.85,intégration globale ou non précisée
 SICAV L’AVENIR,2010,94.0,mise en équivalence
@@ -50,7 +53,8 @@ SICAV L’AVENIR,2014,95.77,mise en équivalence
 SICAV L’AVENIR,2015,95.94,mise en équivalence
 SICAV L’AVENIR,2016,96.26,mise en équivalence
 SICAV L’AVENIR,2017,97.79,mise en équivalence
-SICAV L’AVENIR,2018,97.82,mise en équivalence
+SICAV L’AVENIR,2018,98.08,mise en équivalence
+SICAV L’AVENIR,2019,97.65,mise en équivalence
 SICAV L’AVENIR,2020,97.58,intégration globale ou non précisée
 SICAV L’AVENIR,2021,97.55,intégration globale ou non précisée
 SICOAC,2010,23.48,mise en équivalence
@@ -65,7 +69,8 @@ SOCIETE ACTIVHOTELS,2014,96.28,intégration globale ou non précisée
 SOCIETE ACTIVHOTELS,2015,96.53,intégration globale ou non précisée
 SOCIETE ACTIVHOTELS,2016,96.53,intégration globale ou non précisée
 SOCIETE ACTIVHOTELS,2017,99.35,intégration globale ou non précisée
-SOCIETE ACTIVHOTELS,2018,99.38,intégration globale ou non précisée
+SOCIETE ACTIVHOTELS,2018,99.81,intégration globale ou non précisée
+SOCIETE ACTIVHOTELS,2019,98.58,intégration globale ou non précisée
 SOCIETE ACTIVHOTELS,2020,99.94,intégration globale ou non précisée
 SOCIETE ACTIVHOTELS,2021,99.93,intégration globale ou non précisée
 SOCIETE ED DKHILA,2010,67.53,intégration globale ou non précisée
@@ -76,7 +81,8 @@ SOCIETE ED DKHILA,2014,67.41,intégration globale ou non précisée
 SOCIETE ED DKHILA,2015,67.58,intégration globale ou non précisée
 SOCIETE ED DKHILA,2016,67.58,intégration globale ou non précisée
 SOCIETE ED DKHILA,2017,67.63,intégration globale ou non précisée
-SOCIETE ED DKHILA,2018,67.65,intégration globale ou non précisée
+SOCIETE ED DKHILA,2018,67.82,intégration globale ou non précisée
+SOCIETE ED DKHILA,2019,67.51,intégration globale ou non précisée
 SOCIETE ED DKHILA,2020,67.51,intégration globale ou non précisée
 SOCIETE ED DKHILA,2021,67.51,intégration globale ou non précisée
 SOCIETE FINANCIERE DE GESTION “SOFIGES”,2010,92.81,intégration globale ou non précisée
@@ -89,7 +95,8 @@ SOCIETE LA GENERALE DES VENTES,2014,49.72,intégration globale ou non précisée
 SOCIETE LA GENERALE DES VENTES,2015,49.85,intégration globale ou non précisée
 SOCIETE LA GENERALE DES VENTES,2016,49.85,intégration globale ou non précisée
 SOCIETE LA GENERALE DES VENTES,2017,49.85,intégration globale ou non précisée
-SOCIETE LA GENERALE DES VENTES,2018,49.86,intégration globale ou non précisée
+SOCIETE LA GENERALE DES VENTES,2018,49.99,intégration globale ou non précisée
+SOCIETE LA GENERALE DES VENTES,2019,49.99,intégration globale ou non précisée
 SOCIETE LA GENERALE DES VENTES,2020,49.99,intégration globale ou non précisée
 SOCIETE LA GENERALE DES VENTES,2021,49.99,intégration globale ou non précisée
 SOFI ELAN SICAF,2010,57.1,intégration globale ou non précisée
@@ -100,7 +107,7 @@ SOFI ELAN SICAF,2014,57.85,intégration globale ou non précisée
 SOFI ELAN SICAF,2015,58.0,intégration globale ou non précisée
 SOFI ELAN SICAF,2016,57.22,intégration globale ou non précisée
 SOFI ELAN SICAF,2017,57.68,intégration globale ou non précisée
-SOFI ELAN SICAF,2018,59.73,intégration globale ou non précisée
+SOFI ELAN SICAF,2018,59.89,intégration globale ou non précisée
 STB INVEST,2010,98.39,intégration globale ou non précisée
 STB INVEST,2011,98.55,intégration globale ou non précisée
 STB INVEST,2012,98.24,intégration globale ou non précisée
@@ -109,7 +116,8 @@ STB INVEST,2014,98.24,intégration globale ou non précisée
 STB INVEST,2015,98.5,intégration globale ou non précisée
 STB INVEST,2016,98.5,intégration globale ou non précisée
 STB INVEST,2017,99.19,intégration globale ou non précisée
-STB INVEST,2018,99.22,intégration globale ou non précisée
+STB INVEST,2018,99.48,intégration globale ou non précisée
+STB INVEST,2019,94.73,intégration globale ou non précisée
 STB INVEST,2020,94.73,intégration globale ou non précisée
 STB INVEST,2021,94.72,intégration globale ou non précisée
 STB MANAGER,2010,90.89,intégration globale ou non précisée
@@ -120,7 +128,8 @@ STB MANAGER,2014,91.28,intégration globale ou non précisée
 STB MANAGER,2015,91.52,intégration globale ou non précisée
 STB MANAGER,2016,91.43,intégration globale ou non précisée
 STB MANAGER,2017,94.08,intégration globale ou non précisée
-STB MANAGER,2018,94.33,intégration globale ou non précisée
+STB MANAGER,2018,94.6,intégration globale ou non précisée
+STB MANAGER,2019,97.05,intégration globale ou non précisée
 STB MANAGER,2020,97.05,intégration globale ou non précisée
 STB MANAGER,2021,99.4,intégration globale ou non précisée
 STB SICAR,2010,83.04,intégration globale ou non précisée
@@ -131,7 +140,8 @@ STB SICAR,2014,85.38,intégration globale ou non précisée
 STB SICAR,2015,85.6,intégration globale ou non précisée
 STB SICAR,2016,85.59,intégration globale ou non précisée
 STB SICAR,2017,98.77,intégration globale ou non précisée
-STB SICAR,2018,98.81,intégration globale ou non précisée
+STB SICAR,2018,99.07,intégration globale ou non précisée
+STB SICAR,2019,98.58,intégration globale ou non précisée
 STB SICAR,2020,98.58,intégration globale ou non précisée
 STB SICAR,2021,98.58,intégration globale ou non précisée
 STE EL WEAFAK LEASING,2010,22.15,mise en équivalence
@@ -146,7 +156,8 @@ STE TUN.RECOUVR. DES CREANCES “STRC”,2014,99.36,intégration globale ou non 
 STE TUN.RECOUVR. DES CREANCES “STRC”,2015,99.62,intégration globale ou non précisée
 STE TUN.RECOUVR. DES CREANCES “STRC”,2016,99.63,intégration globale ou non précisée
 STE TUN.RECOUVR. DES CREANCES “STRC”,2017,99.67,intégration globale ou non précisée
-STE TUN.RECOUVR. DES CREANCES “STRC”,2018,99.69,intégration globale ou non précisée
+STE TUN.RECOUVR. DES CREANCES “STRC”,2018,99.94,intégration globale ou non précisée
+STE TUN.RECOUVR. DES CREANCES “STRC”,2019,99.72,intégration globale ou non précisée
 STE TUN.RECOUVR. DES CREANCES “STRC”,2020,99.72,intégration globale ou non précisée
 STE TUN.RECOUVR. DES CREANCES “STRC”,2021,99.72,intégration globale ou non précisée
 TUNISIAN FOREIGN BANK,2010,43.26,mise en équivalence
@@ -157,7 +168,8 @@ TUNISIAN FOREIGN BANK,2014,43.17,mise en équivalence
 TUNISIAN FOREIGN BANK,2015,43.29,mise en équivalence
 TUNISIAN FOREIGN BANK,2016,45.86,mise en équivalence
 TUNISIAN FOREIGN BANK,2017,44.04,mise en équivalence
-TUNISIAN FOREIGN BANK,2018,44.8,mise en équivalence
+TUNISIAN FOREIGN BANK,2018,44.92,mise en équivalence
+TUNISIAN FOREIGN BANK,2019,45.73,mise en équivalence
 TUNISIAN FOREIGN BANK,2020,49.45,intégration globale ou non précisée
 TUNISIAN FOREIGN BANK,2021,49.45,intégration globale ou non précisée
 BFT,2011,78.55,intégration globale ou non précisée
@@ -174,7 +186,8 @@ BFT,2017,78.53,intégration globale ou non précisée
 "S.C.I "" LA MAISON DU BANQUIER""",2015,21.22,mise en équivalence
 "S.C.I "" LA MAISON DU BANQUIER""",2016,21.22,mise en équivalence
 "S.C.I "" LA MAISON DU BANQUIER""",2017,21.22,mise en équivalence
-"S.C.I "" LA MAISON DU BANQUIER""",2018,19.9,mise en équivalence
+"S.C.I "" LA MAISON DU BANQUIER""",2018,19.95,mise en équivalence
+"S.C.I "" LA MAISON DU BANQUIER""",2019,19.96,mise en équivalence
 "S.C.I "" LA MAISON DU BANQUIER""",2020,19.96,intégration globale ou non précisée
 "S.C.I "" LA MAISON DU BANQUIER""",2021,19.96,intégration globale ou non précisée
 S.E.D SOUSSE NORD,2011,24.86,mise en équivalence
@@ -190,7 +203,8 @@ S.E.D SOUSSE NORD,2016,24.85,mise en équivalence
 "S.P.C.M ""ELFEJJA""",2015,19.94,mise en équivalence
 "S.P.C.M ""ELFEJJA""",2016,19.94,mise en équivalence
 "S.P.C.M ""ELFEJJA""",2017,19.94,mise en équivalence
-"S.P.C.M ""ELFEJJA""",2018,19.94,mise en équivalence
+"S.P.C.M ""ELFEJJA""",2018,19.99,mise en équivalence
+"S.P.C.M ""ELFEJJA""",2019,20.0,mise en équivalence
 "S.P.C.M ""ELFEJJA""",2020,20.0,intégration globale ou non précisée
 "S.P.C.M ""ELFEJJA""",2021,20.0,intégration globale ou non précisée
 SMT (MAISON BLANCHE),2011,38.92,mise en équivalence
@@ -203,7 +217,8 @@ SONI BANK,2014,24.86,mise en équivalence
 SONI BANK,2015,24.92,mise en équivalence
 SONI BANK,2016,24.92,mise en équivalence
 SONI BANK,2017,24.92,mise en équivalence
-SONI BANK,2018,24.93,mise en équivalence
+SONI BANK,2018,24.99,mise en équivalence
+SONI BANK,2019,25.0,mise en équivalence
 SONI BANK,2020,25.0,intégration globale ou non précisée
 SONI BANK,2021,25.0,intégration globale ou non précisée
 SIDCO SICAR,2012,32.07,mise en équivalence
@@ -214,24 +229,32 @@ STB FINANCE,2014,93.01,intégration globale ou non précisée
 STB FINANCE,2015,93.25,intégration globale ou non précisée
 STB FINANCE,2016,93.23,intégration globale ou non précisée
 STB FINANCE,2017,95.17,intégration globale ou non précisée
-STB FINANCE,2018,95.26,intégration globale ou non précisée
+STB FINANCE,2018,95.62,intégration globale ou non précisée
+STB FINANCE,2019,95.55,intégration globale ou non précisée
 STB FINANCE,2020,95.55,intégration globale ou non précisée
 STB FINANCE,2021,95.55,intégration globale ou non précisée
 STE AHLA HOTEL NEPTUNIA,2015,46.67,intégration globale ou non précisée
 STE MOYENS GENERAUX,2015,90.79,intégration globale ou non précisée
 STE MOYENS GENERAUX,2016,90.68,intégration globale ou non précisée
 STE MOYENS GENERAUX,2017,93.79,intégration globale ou non précisée
-STE MOYENS GENERAUX,2018,94.06,intégration globale ou non précisée
+STE MOYENS GENERAUX,2018,94.31,intégration globale ou non précisée
+STE MOYENS GENERAUX,2019,97.16,intégration globale ou non précisée
 STE MOYENS GENERAUX,2020,97.15,intégration globale ou non précisée
 STE MOYENS GENERAUX,2021,97.15,intégration globale ou non précisée
 STB SECURITE ET GARDIENNAGE,2016,90.71,intégration globale ou non précisée
 STB SECURITE ET GARDIENNAGE,2017,93.88,intégration globale ou non précisée
-STB SECURITE ET GARDIENNAGE,2018,94.09,intégration globale ou non précisée
+STB SECURITE ET GARDIENNAGE,2018,94.35,intégration globale ou non précisée
+STB SECURITE ET GARDIENNAGE,2019,97.11,intégration globale ou non précisée
 STB SECURITE ET GARDIENNAGE,2020,97.06,intégration globale ou non précisée
 STB SECURITE ET GARDIENNAGE,2021,97.06,intégration globale ou non précisée
-MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS,2020,49.94,intégration globale ou non précisée
-MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS,2021,49.93,intégration globale ou non précisée
+SICAV EPARGNANT,2018,4.19,mise en équivalence
+SICAV EPARGNANT,2019,3.08,mise en équivalence
 SICAV EPARGNANT,2020,3.2,intégration globale ou non précisée
 SICAV EPARGNANT,2021,8.68,intégration globale ou non précisée
+SICAV EPARGNE OBLIGATAIRE,2018,1.47,mise en équivalence
+SICAV EPARGNE OBLIGATAIRE,2019,1.55,mise en équivalence
 SICAV EPARGNE OBLIGATAIRE,2020,1.89,intégration globale ou non précisée
 SICAV EPARGNE OBLIGATAIRE,2021,1.56,intégration globale ou non précisée
+MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS,2019,49.94,intégration globale ou non précisée
+MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS,2020,49.94,intégration globale ou non précisée
+MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS,2021,49.93,intégration globale ou non précisée

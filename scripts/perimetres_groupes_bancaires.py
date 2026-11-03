@@ -120,6 +120,13 @@ DOCUMENTS = [
         "ra-bna-2020",
     ),
     (
+        "STB",
+        2019,
+        "bvmt-etats-financiers/stb/2019_consolide.pdf",
+        "stb_consolide_2019",
+        "bvmt-ef-stb-2019-consolide",
+    ),
+    (
         "BH",
         2021,
         "bvmt-rapports/bh-bank/bh-rapport-annuel-de-gestion-31-12-2021.pdf",
@@ -395,7 +402,65 @@ def bh(contenu: str, exercice: int = 2021) -> list[list[str]]:
     return lignes
 
 
+NOMS_STB_2019 = {
+    "STB": "STB BANK",
+    "SOFELAN": "SOFI ELAN SICAF",
+    "IMM. AVENUE": "L’IMMOBILIERE DE L’AVENUE",
+    "STRC": "STE TUN.RECOUVR. DES CREANCES “STRC”",
+    "GEVE": "SOCIETE LA GENERALE DES VENTES",
+    "EDDKHILA": "SOCIETE ED DKHILA",
+    "ACTIVHOTELS": "SOCIETE ACTIVHOTELS",
+    "SICAV INVEST": "SICAV L’INVESTISSEUR",
+    "SICAV AVENIR": "SICAV L’AVENIR",
+    "SICAV OBLIG": "SICAV EPARGNE OBLIGATAIRE",
+    "TFB": "TUNISIAN FOREIGN BANK",
+    "STBMG": "STE MOYENS GENERAUX",
+    "MGERT": "MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS",
+    "STCV": "S.T.C.V VERITAS",
+    "SONIBANK": "SONI BANK",
+    "SCIMB": "S.C.I «LA MAISON DU BANQUIER»",
+    "ELFEJJA": "S.P.C.M «ELFEJJA»",
+    "STBSG": "STB SECURITE ET GARDIENNAGE",
+}
+
+
+def stb_consolide_2019(contenu: str, exercice: int = 2019) -> list[list[str]]:
+    """Tableau « 4.1 » des états consolidés de 2019 : une ligne par entité, avec les pourcentages de contrôle
+    et d'intérêt de 2019 et de 2018 (révisé) et la méthode de chaque exercice (IG, MEE ou NI : hors périmètre)."""
+    motif = re.compile(
+        r"^\s*(\S.*?)\s{2,}(\d+,\d+)%\s+(\d+,\d+)%\s+-?\d+,\d+%\s+(IG|MEE|NI)\s+(IG|MEE|NI)\s+(\d+,\d+)%\s+(\d+,\d+)%"
+    )
+    par_methode = {"IG": "intégration globale", "MEE": "mise en équivalence"}
+    lignes = []
+    for ligne in contenu.splitlines():
+        trouve = motif.match(ligne)
+        if not trouve:
+            continue
+        abrege = " ".join(trouve.group(1).split())
+        nom = NOMS_STB_2019.get(abrege, abrege)
+        for annee, controle, methode_, interet in (
+            (exercice, trouve.group(2), trouve.group(4), trouve.group(6)),
+            (exercice - 1, trouve.group(3), trouve.group(5), trouve.group(7)),
+        ):
+            if methode_ == "NI":
+                continue
+            mere = "mère" if abrege == "STB" else par_methode[methode_]
+            lignes.append(
+                [
+                    "STB",
+                    str(annee),
+                    nom,
+                    mere,
+                    nombre(controle),
+                    nombre(interet),
+                    "Tunisie",
+                ]
+            )
+    return lignes
+
+
 LECTEURS = {
+    "stb_consolide_2019": stb_consolide_2019,
     "stb": stb,
     "stb_ancien": stb_ancien,
     "bna": bna,

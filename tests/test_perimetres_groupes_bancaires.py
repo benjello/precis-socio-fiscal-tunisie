@@ -21,6 +21,12 @@ BH BANK                                                                    100,0
 TFB                                                                         27,86            27,86                    Mise en équivalence                               France
 • Méthodes de consolidation
 """
+STB_2019 = """
+STB INVEST                   94,60%     99,51%          -4,91%         IG          IG               94,73%        99,48%         -4,75%
+SOFELAN                      0,00%      60,63%      -60,63%            NI          IG                  0,00%      59,89%        -59,89%
+MGERT                        49,95%      0,00%      49,95%             IG          NI               49,94%         0,00%        49,94%
+SICAV OBLIG                  1,61%       1,59%          0,01%       MEE           MEE               1,55%       1,47%         0,07%
+"""
 STB = """
 SOCIETES CONSOLIDEES
    1. STB BANK (société Mère)                           100,00%   100,00%    0,00%
@@ -52,6 +58,25 @@ class PerimetresTest(unittest.TestCase):
             lignes[0][:6], ["STB", "2021", "STB BANK", "mère", "100.00", "99.98"]
         )
         self.assertEqual(lignes[1][4:6], ["95.05", "94.72"])
+
+
+class TestStbConsolide2019(unittest.TestCase):
+    def test_deux_exercices_et_hors_perimetre(self):
+        lignes = p.stb_consolide_2019(STB_2019, 2019)
+        par = {(l[1], l[2]): l for l in lignes}
+        self.assertNotIn(("2019", "SOFI ELAN SICAF"), par)  # NI en 2019
+        self.assertEqual(par[("2018", "SOFI ELAN SICAF")][5], "59.89")
+        self.assertNotIn(
+            ("2018", "MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS"), par
+        )  # NI en 2018
+        self.assertEqual(
+            par[("2019", "MAGASINS GENERAUX ET ENTREPORTS REELS DE TUNIS")][4:6],
+            ["49.95", "49.94"],
+        )
+        self.assertEqual(
+            par[("2018", "SICAV EPARGNE OBLIGATAIRE")][3], "mise en équivalence"
+        )
+        self.assertEqual(len(lignes), 6)
 
 
 if __name__ == "__main__":

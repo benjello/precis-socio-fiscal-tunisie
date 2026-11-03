@@ -83,12 +83,13 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 
 ### Les filiales, de 2010 à 2021 {#sec-ep-ge-stb-filiales}
 
-**La STB consolide 17 entités en 2010, 24 en 2012 et 2013, 19 en 2014 et 21 en 2020 et 2021, mère non comprise ; les rapports annuels de 2011 à 2018 donnent chacun deux exercices, celui de 2019 n'est pas lu.** [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2015 ; @ra-stb-2017 ; @ra-stb-2018 ; @bvmt-ra-stb-2021]
+**La STB consolide 17 entités en 2010, 24 en 2012 et 2013, 19 en 2014 et 21 de 2018 à 2021, mère non comprise ; de 2020 à 2024, chaque rapport écrit que le périmètre n'a pas varié par rapport à l'exercice précédent.** Les rapports annuels de 2011 à 2017 et les états consolidés de 2019 donnent chacun deux exercices ; l'exercice 2018 est lu dans la version révisée des états de 2019. [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2015 ; @ra-stb-2017 ; @bvmt-ef-stb-2019-consolide, p. 14-16 ; @bvmt-ra-stb-2021]
 
 - **2011 et 2012 : le périmètre s'élargit.** Six entités entrent en 2011 (BFT, SMT Maison Blanche, SED Sousse Nord, Soni Bank, la SCI La Maison du banquier et la SPCM Elfejja), puis STB Finance et SIDCO Sicar en 2012, tandis que la SOFIGES sort [@ra-stb-2011 ; @ra-stb-2013].
 - **2014 : cinq sorties.** La Banque d'affaires de Tunisie, la SICOAC, SIDCO Sicar, la SMT Maison Blanche et El Wifack Leasing ne sont plus consolidées ; le rapport de 2014 note la SICOAC comme « filiale cédée en 2014 » [@ra-stb-2014 ; @ra-stb-2015].
-- **2015 à 2018.** Ahla Hotel Neptunia et la Société des moyens généraux entrent en 2015, STB Sécurité et gardiennage en 2016 ; Ahla Hotel Neptunia sort en 2016, la SED Sousse Nord en 2017 et la BFT en 2018 [@ra-stb-2015 ; @ra-stb-2017 ; @ra-stb-2018].
-- **2020.** Les Magasins généraux et entrepôts réels de Tunis et deux SICAV (Épargnant et Épargne obligataire) entrent dans le périmètre, que la SOFI Elan Sicaf quitte [@bvmt-ra-stb-2021].
+- **2015 à 2018.** Ahla Hotel Neptunia et la Société des moyens généraux entrent en 2015, STB Sécurité et gardiennage en 2016 ; Ahla Hotel Neptunia sort en 2016, la SED Sousse Nord en 2017 et la BFT en 2018, année où deux SICAV (Épargnant et Épargne obligataire) entrent dans le périmètre [@ra-stb-2015 ; @ra-stb-2017 ; @bvmt-ef-stb-2019-consolide, p. 14-16].
+- **2019.** Les Magasins généraux et entrepôts réels de Tunis entrent dans le périmètre au 31 décembre 2019, avec 49,95 % des droits de vote ; la SOFI Elan Sicaf en sort, absorbée par STB Invest à effet du 1^er^ janvier 2019 [@bvmt-ef-stb-2019-consolide, p. 16].
+- **2020 à 2024 : un périmètre inchangé.** Les états consolidés de chaque exercice écrivent que le périmètre n'a pas varié par rapport à l'exercice précédent ; la banque et ses 21 entités de 2021 sont donc les mêmes jusqu'en 2024 [@bvmt-ef-stb-2020-consolide, p. 18 ; @bvmt-ef-stb-2021-consolide, p. 17 ; @bvmt-ef-stb-2022-consolide, p. 17 ; @bvmt-ef-stb-2023-consolide, p. 19 ; @bvmt-ef-stb-2024-consolide, p. 18].
 
 ```{python}
 #| label: fig-ep-cotees-evolution-stb
@@ -101,12 +102,12 @@ ct.figure_evolution(
     caption=("Les entités que la STB consolide, mère non comprise, de 2010 à 2021 (31 décembre) : "
              "pourcentage d'intérêt du groupe, d'après les rapports annuels de la banque. Source : "
              "[@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2017 ; "
-             "@ra-stb-2018 ; @bvmt-ra-stb-2021]"),
+             "@bvmt-ef-stb-2019-consolide ; @bvmt-ra-stb-2021]"),
     note_lecture=(
         "Une ligne par entité, dans l'ordre de leur entrée dans le périmètre ; une cellule vide est "
         "une entité non consolidée cet exercice-là ; « ME » : mise en équivalence (le pourcentage "
         "d'intérêt est alors dans l'onglet des données) ; le rapport de 2021 ne donne pas la méthode "
-        "pour 2020 et 2021. 2019 n'est pas lu. Pour chaque exercice, la lecture qui compte le plus "
+        "pour 2020 et 2021. 2018 est lu dans les états de 2019 (version révisée). Pour chaque exercice, la lecture qui compte le plus "
         "d'entités : certains rapports tronquent leur tableau."))
 ```
 
@@ -122,10 +123,9 @@ ct.tableau_evolution(
     caption=("Les entités que la STB consolide, mère non comprise, de 2010 à 2021 (31 décembre) : "
              "pourcentage d'intérêt du groupe, ou pourcentage de contrôle quand le rapport ne donne "
              "pas l'intérêt ; « (ME) » : mise en équivalence (le rapport de 2021 ne donne pas la méthode pour 2020 et 2021) ; "
-             "« – » : entité non consolidée cet exercice-là. Rapports annuels de 2011, 2013, 2014, 2015, 2017, 2018 et 2021 (chacun donne "
-             "deux exercices ; pour un exercice, la lecture qui compte le plus d'entités). 2019 n'est "
-             "pas lu. [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2017 ; "
-             "@ra-stb-2018 ; @bvmt-ra-stb-2021]"),
+             "« – » : entité non consolidée cet exercice-là. Rapports annuels de 2011, 2013, 2014, 2015, 2017 et 2021 et états consolidés de 2019 (chacun donne "
+             "deux exercices ; pour un exercice, la lecture qui compte le plus d'entités). [@ra-stb-2011 ; @ra-stb-2013 ; "
+             "@ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2017 ; @bvmt-ef-stb-2019-consolide ; @bvmt-ra-stb-2021]"),
     tbl_id="tbl-ep-cotees-evolution-stb")
 ```
 
@@ -133,11 +133,16 @@ ct.tableau_evolution(
 
 ### L'opinion des commissaires aux comptes {#sec-ep-ge-stb-cac}
 
-**Les commissaires aux comptes de la STB émettent une opinion avec réserves sur ses comptes individuels dans les huit rapports annuels lus, ceux de 2011, 2013, 2014, 2015, 2016, 2017, 2018 et 2019.** [@ra-stb-2011, p. 74 ; @ra-stb-2013, p. 68 ; @ra-stb-2014, p. 64 ; @ra-stb-2015, p. 78 ; @ra-stb-2016, p. 64 ; @ra-stb-2017, p. 84 ; @ra-stb-2018, p. 87 ; @ra-stb-2019, p. 104]
+**Les commissaires aux comptes de la STB émettent une opinion avec réserves sur ses comptes individuels dans les quinze exercices lus, de 2011 à 2025 : huit rapports annuels (2011, 2013 à 2019) et sept états financiers de la Bourse de Tunis (2012 et 2020 à 2025).** [@ra-stb-2011, p. 74 ; @ra-stb-2013, p. 68 ; @ra-stb-2014, p. 64 ; @ra-stb-2015, p. 78 ; @ra-stb-2016, p. 64 ; @ra-stb-2017, p. 84 ; @ra-stb-2018, p. 87 ; @ra-stb-2019, p. 104 ; @bvmt-ef-stb-2012-individuel, p. 47 ; @bvmt-ef-stb-2020-individuel, p. 39 ; @bvmt-ef-stb-2021-individuel, p. 35 ; @bvmt-ef-stb-2022-individuel, p. 40 ; @bvmt-ef-stb-2023-individuel, p. 45 ; @bvmt-ef-stb-2024-individuel, p. 45 ; @bvmt-ef-stb-2025-individuel, p. 48]
 
 - **Des comptes de suspens anciens** (comptes BCT en dinars et en devises, correspondants en devises) sont signalés en 2013, 2017, 2018 et 2019 ; en 2018 et 2019 s'y ajoutent des soldes figés sur les comptes inter-sièges et des insuffisances du système d'information qui limitent la justification et la réconciliation des flux ; en 2019, la banque confie la justification à des cabinets externes, travail en cours à la clôture dont l'impact ne peut pas être cerné [@ra-stb-2013 ; @ra-stb-2017 ; @ra-stb-2018 ; @ra-stb-2019].
 - **Les engagements hors bilan** n'ont pas de comptabilité régulière et exhaustive en 2013, 2016, 2017, 2018 et 2019 : l'état est arrêté de façon extracomptable (en 2016, 1 609 832 KDT d'engagements donnés et 1 418 553 KDT d'engagements reçus) [@ra-stb-2013 ; @ra-stb-2016 ; @ra-stb-2017 ; @ra-stb-2018 ; @ra-stb-2019].
 - **Les garanties reçues** font l'objet d'une réserve en 2011, 2014, 2015 et 2016 : base non exhaustive, pas d'inventaire physique, documentation de leur valeur indisponible (hypothèques, rapports d'expertise) ; en 2011, 159 MD de provisions sont constatées pour des risques d'exercices antérieurs insuffisamment couverts, dont 117 MD en diminution des capitaux propres d'ouverture ; en 2013, 486,734 MD de provisions additionnelles suivent la circulaire n° 2013-21, et l'inventaire physique des immobilisations (83 MD nets) n'est pas fait [@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2016].
+
+- **2012.** Six réserves : garanties reçues non exhaustives, hors bilan arrêté de façon extracomptable et pas de comptabilité multidevises autonome ; 287 MD de provisions complémentaires pour des risques d'exercices antérieurs (159 MD constatés en 2011, 128 MD en 2012), sans retraitement des données de 2011 ; 303 MD de garanties réelles datant de 2006 et avant ; un déséquilibre de 16 MD sur le fonds social ; pas d'inventaire physique des immobilisations (82 MD nets) ; des suspens anciens [@bvmt-ef-stb-2012-individuel, p. 47].
+- **2020 à 2022 : les mêmes réserves.** Les insuffisances du système d'information et les suspens anciens (comptes BCT, correspondants, soldes figés des comptes inter-sièges) reviennent chaque année, avec la justification confiée à des cabinets externes et un impact « qui ne peut pas être cerné ». En 2020 s'y ajoutent l'absence de comptabilité exhaustive des engagements hors bilan et 33,320 MD d'engagements déclarés à la BCT en dessous de ceux des états financiers [@bvmt-ef-stb-2020-individuel, p. 39 ; @bvmt-ef-stb-2021-individuel, p. 35 ; @bvmt-ef-stb-2022-individuel, p. 40].
+- **2023 et 2024 : la comptabilité multidevises.** Les commissaires relèvent une comptabilité multidevises non conforme aux normes NC 22 et NC 23, avec 58 927 KDT d'écarts de conversion créditeurs fin 2023 et 9 891 KDT débiteurs fin 2024, une provision de 12 105 KDT dont ils ne peuvent pas apprécier le fondement, 841 482 KDT puis 812 371 KDT de suspens de rapprochement avec la BCT et les correspondants (provisions de 27 533 puis 28 551 KDT), et des comptes figés d'« Autres actifs » et d'« Autres passifs » ; 2023 ajoute l'absence d'inventaire physique des immobilisations, 2024 des écarts de caisse (794 KDT nets) et l'absence de base fiable sur les garanties [@bvmt-ef-stb-2023-individuel, p. 45 ; @bvmt-ef-stb-2024-individuel, p. 45].
+- **2025.** Une seule réserve : 94 176 KDT d'« Autres actifs » et 114 125 KDT d'« Autres passifs » sur des comptes figés, des comptes d'attente non justifiés, une provision de 27 484 KDT dont le fondement n'est pas vérifiable, et 19 151 KDT d'anciens passifs non mouvementés [@bvmt-ef-stb-2025-individuel, p. 48].
 
 ```{python}
 #| label: fig-ep-cotees-cac-stb
@@ -149,17 +154,20 @@ ct.figure_cac(
     "STB", "stb",
     caption=("Les réserves des commissaires aux comptes sur les comptes individuels de la STB, par thème et par "
              "exercice, leur nombre, et le délai de publication des états financiers annuels, d'après les rapports "
-             "annuels de la banque et les publications de la Bourse de Tunis. Source : [@ra-stb-2011 ; @ra-stb-2013 ; "
-             "@ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2016 ; @ra-stb-2017 ; @ra-stb-2018 ; @ra-stb-2019]"),
+             "annuels de la banque et les états financiers de la Bourse de Tunis. Source : [@ra-stb-2011 ; @ra-stb-2013 ; "
+             "@ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2016 ; @ra-stb-2017 ; @ra-stb-2018 ; @ra-stb-2019 ; "
+             "@bvmt-ef-stb-2012-individuel ; @bvmt-ef-stb-2020-individuel ; @bvmt-ef-stb-2021-individuel ; "
+             "@bvmt-ef-stb-2022-individuel ; @bvmt-ef-stb-2023-individuel ; @bvmt-ef-stb-2024-individuel ; "
+             "@bvmt-ef-stb-2025-individuel]"),
     note_lecture=(
         "En haut, une case par thème de réserve et par exercice ; en gris, un exercice dont le rapport n'est pas lu "
-        "(2012, et 2020 à 2025 pour lesquels les états de la Bourse sont à lire). Au milieu, le nombre de motifs. "
+        "(2010). Au milieu, le nombre de motifs. "
         "En bas, le nombre de jours entre le 31 décembre de l'exercice et la date que la Bourse porte à la publication "
         "des états individuels. Le thème d'un motif est un classement fixé dans le relevé (onglet des données), non un "
         "jugement du rapport."))
 ```
 
-::: {.chronologie-repliable titre="L'opinion des commissaires aux comptes sur les comptes de la STB et les motifs de réserve, exercice par exercice, 2011-2019"}
+::: {.chronologie-repliable titre="L'opinion des commissaires aux comptes sur les comptes de la STB et les motifs de réserve, exercice par exercice, 2011-2025"}
 
 ```{python}
 #| echo: false
@@ -169,8 +177,8 @@ from figures import cotees as ct
 ct.tableau_opinions(
     "STB",
     caption=("L'opinion des commissaires aux comptes sur les comptes individuels de la STB et les motifs de "
-             "réserve, d'après le rapport général de chaque rapport annuel : 2011, 2013, 2014, 2015, 2016, 2017, 2018 et "
-             "2019 ; l'exercice 2012 n'a pas de rapport lu. Chaque motif résume l'intitulé "
+             "réserve, d'après le rapport général de chaque rapport annuel (2011, 2013 à 2019) ou état financier de la "
+             "Bourse de Tunis (2012, 2020 à 2025). Chaque motif résume l'intitulé "
              "du rapport, avec la page "),
     tbl_id="tbl-ep-cotees-cac-stb")
 ```
