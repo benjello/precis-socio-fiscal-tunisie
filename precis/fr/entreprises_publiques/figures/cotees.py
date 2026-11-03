@@ -293,6 +293,20 @@ THEMES_CAC = {
     "retraites": "Indemnités de départ à la retraite",
     "fonds_etat": "Fonds budgétaires de l'État",
     "produits": "Produits identifiés par client",
+    "tunisair_tiers": "Clients, fournisseurs, comptes d'attente",
+    "tunisair_provisions": "Provisions et risques non constatés",
+    "tunisair_flotte": "Flotte : avions, moteurs, maintenance",
+    "tunisair_fonds_social": "Fonds social et paie",
+    "tunisair_redevances": "Redevances aéroportuaires collectées",
+    "tunisair_banques": "Rapprochements bancaires, caisses",
+    "tunisair_immobilisations": "Inventaire des immobilisations",
+    "tunisair_informatique": "Système d'information, prestations d'AISA",
+    "tunisair_filiales": "Comptes réciproques avec les filiales",
+    "tunisair_oaca": "Dettes et concessions envers l'OACA",
+    "tunisair_stocks": "Stocks techniques",
+    "tunisair_hors_bilan": "Engagements hors bilan (Tunisair)",
+    "tunisair_limitations": "Limitation des travaux",
+    "tunisair_presentation": "Présentation des états financiers",
 }
 
 
@@ -304,12 +318,14 @@ def fig_cac(groupe: str, societe: str):
     d = _lire("opinions-cac")
     d = d[d["groupe"] == groupe]
     delais = _lire("delais-publication")
-    delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel")]
+    # un délai nul est la date de clôture que la Bourse porte faute de date de publication : il n'est pas tracé
+    delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel") & (delais["jours"].astype(int) > 0)]
     lus = sorted(int(x) for x in d["exercice"].unique())
     fin = max(lus + [int(x) for x in delais["exercice"]])
     exercices = list(range(min(lus) - 1, fin + 1))  # un exercice avant le premier rapport lu, jusqu'au dernier délai connu
     delais = delais[delais["exercice"].astype(int) >= exercices[0]]
-    themes = list(THEMES_CAC)
+    utilises = {t for ligne in d.loc[~d["opinion"].str.startswith("sans"), "themes"] for t in ligne.split(";")}
+    themes = [t for t in THEMES_CAC if t in utilises]  # une ligne par thème que le groupe porte : pas de ligne vide
     carte = np.full((len(themes), len(exercices)), np.nan)
     nombres = np.zeros(len(exercices))
     for _, r in d.iterrows():
