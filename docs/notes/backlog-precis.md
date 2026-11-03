@@ -22,6 +22,16 @@ ci-dessous sont relatifs à `~/projets/PDFs-legislation-tunisie/PDFs/JORT/` ; le
 extraits des lois de finances sont dans le dossier voisin `PDFs/Lois_de_Finances/`.
 
 
+## Réglages du dépôt GitHub à faire par le propriétaire (3 novembre 2026)
+
+Ces trois réglages ne se font pas par un agent : ils demandent les droits de propriétaire du dépôt. Les deux premiers conditionnent l'auto-fusion des PR de traduction du robot (PR #619, fusionnée le 3 novembre 2026) ; le troisième conditionne le contrôle de l'infrastructure de sauvegarde (PR #659, fusionnée le 3 novembre 2026).
+
+- [ ] **Allow auto-merge.** Settings > General > Pull Requests : cocher « Allow auto-merge ». Sans cela, `scripts/auto_fusion.py` ne peut pas activer la fusion automatique ; la PR du robot reste ouverte avec un commentaire qui en donne la raison.
+- [ ] **Protection de `master`.** Settings > Branches (ou Rulesets) : ne marquer comme contrôles obligatoires que ceux qui tournent sur les PR du robot. Aucun des workflows `rendre-les-livres`, `verify-translation`, `tests`, `verifier-conventions` ne tourne sur ces PR (une PR ouverte avec le `GITHUB_TOKEN` ne déclenche aucun workflow) : si l'un d'eux est obligatoire, la PR du robot attend indéfiniment et reste listée dans l'issue d'état comme « fusion automatique activée, en attente ». N'exiger aucune approbation humaine pour le robot si l'on veut la fusion sans geste. Vérifier aussi, dans Settings > Actions > General, que « Allow GitHub Actions to create and approve pull requests » est coché (il l'est aujourd'hui, la PR du robot s'ouvre).
+- [ ] **Secret de CI `PAS_D_INFRA_MOTS`.** Settings > Secrets and variables > Actions : créer le secret avec le contenu du fichier local de mots interdits (celui que lit `scripts/check_pas_d_infra.py`). Sans lui, le workflow `pas-d-infra` passe sans rien contrôler et le dit. Ne jamais écrire cette liste dans le dépôt : elle rendrait publics les mots qu'elle cherche.
+
+Quand un réglage est fait, cocher la case et dater la ligne.
+
 ## Chantier transversal — les ruptures au premier plan, le détail replié
 
 - **Numérotation de l'annexe des tableaux de la TVA** (remarque du propriétaire, 7 octobre 2026) :
