@@ -6114,10 +6114,9 @@ verser par le terminologue quand un volume les emploiera.
   `tunisia-data`) ; la liste des mots n'est pas dans le dépôt. **À l'humain** : créer le secret de CI
   `PAS_D_INFRA_MOTS` (contenu du fichier local de mots) dans les réglages du dépôt ; sans lui, le workflow passe sans
   rien contrôler.
-- **Tests de rôles (PR #660, 2 novembre 2026)** : la PR signale deux tests de `tests/test_sync_agents.py`
-  (`test_niveaux_conformes_a_la_consigne`, `test_roles_editoriaux_presents`) qui échouent sur `master` depuis l'ajout
-  du rôle `archiviste-backlog` : le test ne connaît pas ce rôle. Non vérifié dans ce passage ; à corriger par qui tient
-  `docs/agents/roles.yml`.
+- **Tests de rôles (PR #660, 2 novembre 2026)** : la PR signalait deux tests de `tests/test_sync_agents.py`
+  (`test_niveaux_conformes_a_la_consigne`, `test_roles_editoriaux_presents`) en échec sur `master` depuis l'ajout du rôle
+  `archiviste-backlog`. **Résolu** : les 13 tests du fichier passent sur `master` le 3 novembre 2026.
 - **Zotero — à jour le 25 octobre 2026** : la poussée du 25 octobre (neuf lois de finances issues
   de la fusion des doublons, puis rangement) laisse **0 clé absente de Zotero** et 0 à ranger
   (contrôle de rangement, exécution 40222647086 ; détail dans `biblio-a-rapatrier.md`) ; les 72
