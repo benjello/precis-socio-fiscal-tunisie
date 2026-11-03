@@ -313,6 +313,8 @@ THEMES_CAC = {
     "tunisair_hors_bilan": "Engagements hors bilan (Tunisair)",
     "tunisair_limitations": "Limitation des travaux",
     "tunisair_presentation": "Présentation des états financiers",
+    "sotumag_chambres_froides": "Chambres froides louées comme boxes d'emballage (SOTUMAG)",
+    "sotumag_pharmacies": "Pharmacies et laboratoires conventionnés (SOTUMAG)",
 }
 
 
