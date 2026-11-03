@@ -1,7 +1,13 @@
 name: Rendre le site
 
-# Workflow APPELÉ — par `deploy.yml` (avec PDF, puis publication) et par `rendre-les-livres.yml`
-# (HTML seul, contrôle de PR). Il rend UN livre par job, en parallèle, puis assemble le site.
+# Workflow APPELÉ — par `deploy.yml` (deux fois : HTML, puis PDF) et par `rendre-les-livres.yml`
+# (HTML seul, contrôle de PR). Il rend UN livre par job, en parallèle.
+#
+#   mode html : rend le HTML de chaque livre, puis assemble le site (avec `publier`, le dépose pour
+#               GitHub Pages sous le nom `site-html`) ;
+#   mode pdf  : rend le PDF de chaque livre (échec toléré), sans assembler : `deploy.yml` assemble
+#               le site final une fois les PDF rendus.
+# Le site ne dépend donc pas des PDF, qui sont la partie lente : voir `deploy.yml`.
 #
 # Avant (build.sh en série) : 53 min pour 13 livres français et 10 arabes, le 3 novembre 2026,
 # dont 15 min pour `entreprises_publiques` ; une fusion qui ne touchait qu'un livre les
@@ -21,22 +27,23 @@ name: Rendre le site
 on:
   workflow_call:
     inputs:
-      pdf:
-        description: "Produire aussi les PDF"
-        type: boolean
-        default: false
+      mode:
+        description: "html (HTML puis assemblage du site) ou pdf (PDF seuls)"
+        type: string
+        default: html
       publier:
-        description: "Déposer le site assemblé comme artefact GitHub Pages"
+        description: "Déposer le site assemblé comme artefact GitHub Pages (mode html)"
         type: boolean
         default: false
 
-  # Lancement à la main, pour essayer le rendu avec PDF sans rien publier (`publier` reste faux).
+  # Lancement à la main, pour essayer un rendu sans rien publier (`publier` reste faux).
   workflow_dispatch:
     inputs:
-      pdf:
-        description: "Produire aussi les PDF"
-        type: boolean
-        default: true
+      mode:
+        description: "html (HTML puis assemblage du site) ou pdf (PDF seuls)"
+        type: choice
+        options: [html, pdf]
+        default: html
       publier:
         description: "Déposer le site assemblé comme artefact GitHub Pages (sans le déployer)"
         type: boolean
@@ -64,6 +71,8 @@ jobs:
   livre:
     needs: plan
     runs-on: ubuntu-latest
+    # Un PDF qui échoue n'arrête rien : le livre garde le PDF du site en ligne.
+    continue-on-error: ${{ inputs.mode == 'pdf' }}
     strategy:
       fail-fast: false
       matrix: ${{ fromJSON(needs.plan.outputs.matrice) }}
@@ -75,8 +84,8 @@ jobs:
         id: cache
         uses: actions/cache@v4
         with:
-          path: precis/${{ matrix.unite }}/public
-          key: rendu-${{ env.CACHE_VERSION }}-${{ inputs.pdf && 'pdf' || 'html' }}-${{ matrix.unite }}-${{ hashFiles(format('precis/{0}/**', matrix.unite), format('!precis/{0}/public/**', matrix.unite), format('precis/{0}/*.json', matrix.lang), format('precis/{0}/*.bib', matrix.lang), 'precis/*.yml', 'precis/*.csl', 'precis/*.scss', 'precis/*.html', 'precis/*.json', 'precis/*.bib', 'precis/_seriescache/**', 'scripts/**', 'pyproject.toml', 'uv.lock', 'build.sh', '.github/workflows/rendre.yml') }}
+          path: ${{ inputs.mode == 'pdf' && format('precis/{0}/public/*.pdf', matrix.unite) || format('precis/{0}/public', matrix.unite) }}
+          key: rendu-${{ env.CACHE_VERSION }}-${{ inputs.mode }}-${{ matrix.unite }}-${{ hashFiles(format('precis/{0}/**', matrix.unite), format('!precis/{0}/public/**', matrix.unite), format('precis/{0}/*.json', matrix.lang), format('precis/{0}/*.bib', matrix.lang), 'precis/*.yml', 'precis/*.csl', 'precis/*.scss', 'precis/*.html', 'precis/*.json', 'precis/*.bib', 'precis/_seriescache/**', 'scripts/**', 'pyproject.toml', 'uv.lock', 'build.sh', '.github/workflows/rendre.yml') }}
 
       - name: Set up Quarto
         if: steps.cache.outputs.cache-hit != 'true'
@@ -86,7 +95,7 @@ jobs:
       # GitHub ; sans jeton, l'appel anonyme est refusé (403) dès que la limitation de débit
       # s'applique. Le PDF est un supplément : l'étape ne doit pas arrêter le rendu du HTML.
       - name: Install TinyTeX for PDF rendering
-        if: steps.cache.outputs.cache-hit != 'true' && inputs.pdf
+        if: steps.cache.outputs.cache-hit != 'true' && inputs.mode == 'pdf'
         continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -102,17 +111,18 @@ jobs:
 
       - name: Rendre le livre
         if: steps.cache.outputs.cache-hit != 'true'
-        run: ./build.sh --only ${{ matrix.unite }} ${{ inputs.pdf && ' ' || '--no-pdf' }}
+        run: ./build.sh --only ${{ matrix.unite }} ${{ inputs.mode == 'pdf' && '--pdf-only' || '--no-pdf' }}
 
       - name: Garder le livre rendu pour l'assemblage
         uses: actions/upload-artifact@v4
         with:
-          name: public-${{ matrix.lang }}-${{ matrix.book }}
-          path: precis/${{ matrix.unite }}/public
+          name: ${{ inputs.mode == 'pdf' && 'pdf' || 'public' }}-${{ matrix.lang }}-${{ matrix.book }}
+          path: ${{ inputs.mode == 'pdf' && format('precis/{0}/public/*.pdf', matrix.unite) || format('precis/{0}/public', matrix.unite) }}
           retention-days: 1
-          if-no-files-found: error
+          if-no-files-found: ${{ inputs.mode == 'pdf' && 'ignore' || 'error' }}
 
   assemblage:
+    if: inputs.mode == 'html'
     needs: livre
     runs-on: ubuntu-latest
     steps:
@@ -134,15 +144,10 @@ jobs:
           pattern: public-*
           path: livres
 
+      # Un site déployé remplace tout le précédent : les PDF du site en ligne sont repris, avec
+      # une infobulle « version précédente » sur leur lien, jusqu'au déploiement final.
       - name: Remettre chaque livre à sa place
-        run: |
-          for d in livres/public-*; do
-            n="${d#livres/public-}"
-            lang="${n%%-*}"
-            book="${n#*-}"
-            mkdir -p "precis/$lang/$book/public"
-            cp -r "$d"/. "precis/$lang/$book/public/"
-          done
+        run: scripts/placer_livres.sh livres ${{ inputs.publier && '--pdf-en-ligne' || '' }}
 
       - name: Pages générales et assemblage du site
         run: ./build.sh --assemble --no-pdf
@@ -151,6 +156,7 @@ jobs:
         if: inputs.publier
         uses: actions/upload-pages-artifact@v4
         with:
+          name: site-html
           path: local_site
 
       - name: Ce qui a été produit

@@ -58,5 +58,5 @@ jobs:
   rendre:
     uses: ./.github/workflows/rendre.yml
     with:
-      pdf: false
+      mode: html
       publier: false

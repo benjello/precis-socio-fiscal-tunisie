@@ -6,6 +6,7 @@
 #   ./build.sh --no-pdf   # skip PDF rendering
 #   ./build.sh --list-units          # liste JSON des livres (un par langue et par livre)
 #   ./build.sh --only fr/informel    # rend UN livre (ni pages générales, ni assemblage)
+#   ./build.sh --only fr/informel --pdf-only   # le PDF de ce livre seulement
 #   ./build.sh --assemble            # pages générales + assemblage, sans rendre de livre
 #   ./build.sh --help     # affiche l'aide
 #
@@ -27,6 +28,7 @@ PAGES=(index comment-lire comment-constitue a-propos principes-structure annexe-
 
 DO_PDF=true
 ONLY_UNIT=""
+PDF_ONLY=false
 ASSEMBLE_ONLY=false
 LIST_UNITS=false
 
@@ -39,6 +41,7 @@ Usage :
   ./build.sh --no-pdf   rend le HTML seul, sans PDF
   ./build.sh --list-units          liste JSON {"include":[…]} des livres à rendre
   ./build.sh --only fr/informel    rend UN livre, sans pages générales ni assemblage
+  ./build.sh --only fr/informel --pdf-only   le PDF de ce livre seulement (échec toléré)
   ./build.sh --assemble            pages générales et assemblage, sans rendre de livre
   ./build.sh --help     affiche cette aide
 
@@ -63,6 +66,7 @@ while [[ $# -gt 0 ]]; do
     --no-pdf)     DO_PDF=false ;;
     --list-units) LIST_UNITS=true ;;
     --assemble)   ASSEMBLE_ONLY=true ;;
+    --pdf-only)   PDF_ONLY=true ;;
     --only)
       shift
       if [[ $# -eq 0 || "$1" != */* ]]; then
@@ -90,6 +94,11 @@ unit_exists() {
   fi
   return 0
 }
+
+if $PDF_ONLY && [[ -z "$ONLY_UNIT" ]]; then
+  echo "build.sh : --pdf-only s'emploie avec --only." >&2
+  exit 2
+fi
 
 if [[ -n "$ONLY_UNIT" ]] && ! unit_exists "${ONLY_UNIT%%/*}" "${ONLY_UNIT#*/}"; then
   echo "build.sh : « $ONLY_UNIT » n'est pas un livre à rendre (voir --list-units)." >&2
@@ -196,7 +205,16 @@ for lang in "${LANGUAGES[@]}"; do
       continue
     fi
 
-    if $DO_PDF; then
+    if $PDF_ONLY; then
+      # Le PDF d'un livre se rend à part du HTML (le site ne l'attend pas) : un échec est dit
+      # et toléré, le livre garde alors le PDF du site en ligne.
+      echo "[build] Rendering $book ($lang) (PDF seul)..."
+      if (cd "$BOOK_DIR" && uv run quarto render --to pdf); then
+        echo "[build] ✓ $book PDF rendered"
+      else
+        echo "[build] ⚠ $book: PDF failed — le PDF du site en ligne reste en place"
+      fi
+    elif $DO_PDF; then
       echo "[build] Rendering $book ($lang) (HTML + PDF)..."
       if (cd "$BOOK_DIR" && uv run quarto render); then
         echo "[build] ✓ $book rendered (HTML + PDF)"
