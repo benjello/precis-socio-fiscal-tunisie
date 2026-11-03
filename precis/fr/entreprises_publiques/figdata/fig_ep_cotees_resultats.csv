@@ -1,0 +1,27 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-03
+# séries (tunisia_data) : societes-cotees-resultats
+# sources (citation) : @bvmt-bh-bank, @bvmt-bna, @bvmt-ciments-de-bizerte, @bvmt-sotumag, @bvmt-star, @bvmt-stb, @bvmt-tunisair
+# fiches : 
+# méthode/hypothèses : Le dividende revenant à l'État est CALCULÉ : dividende par action de l'exercice N, multiplié par les actions de l'État à l'assemblée de l'année N+1 ; il n'est calculé que dans ce cas et n'est pas une recette du budget. Une case vide est une valeur que la page n'imprime pas, non un zéro.
+# note : Le résultat net des sociétés cotées où l'État est actionnaire, par exercice, et le dividende qui revient à l'État, calculé, en millions de dinars courants, d'après la page de chaque société à la Bourse de Tunis. Source : Bourse de Tunis [@bvmt-bna ; @bvmt-stb ; @bvmt-bh-bank ; @bvmt-star ; @bvmt-sotumag ; @bvmt-ciments-de-bizerte ; @bvmt-tunisair]
+societe,exercice,resultat_net_dt,dividende_par_action_dt,actions_etat,assemblee,dividende_etat_dt
+BH,2023,142978000,1.1,15882109,30/04/2026,
+BH,2024,71028000,0.9,15882109,30/04/2026,
+BH,2025,42857000,,15882109,30/04/2026,
+BNA,2023,212043000,0.9,22565045,30/04/2026,
+BNA,2024,251881000,1.0,22565045,30/04/2026,
+BNA,2025,287737000,1.15,22565045,30/04/2026,25949802.0
+Ciments de Bizerte,2022,-28950468,,35155560,24/06/2025,
+Ciments de Bizerte,2023,-34355944,,35155560,24/06/2025,
+Ciments de Bizerte,2024,-44790355,,35155560,24/06/2025,
+SOTUMAG,2023,7650860,0.52,4950000,10/06/2026,
+SOTUMAG,2024,7058807,,4950000,10/06/2026,
+SOTUMAG,2025,8592079,0.58,4950000,10/06/2026,2871000.0
+STAR,2022,29341890,6.22,891720,22/04/2025,
+STAR,2023,23271443,6.427,891720,22/04/2025,
+STAR,2024,27492685,8.397,891720,22/04/2025,7487773.0
+STB,2023,59694000,,111160004,30/04/2026,
+STB,2024,103304000,,111160004,30/04/2026,
+STB,2025,58743000,0.2,111160004,30/04/2026,22232001.0
+Tunisair,2022,-220802000,,79033825,29/05/2026,
+Tunisair,2023,-242998000,,79033825,29/05/2026,

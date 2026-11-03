@@ -1,0 +1,63 @@
+name: Liens externes des références
+
+# POURQUOI CE CONTRÔLE EXISTE
+#
+# Le rendu du livre ne s'arrête pas sur un lien mort, et un vert ailleurs ne dit rien des
+# adresses de la bibliographie. Les administrations tunisiennes déplacent leurs documents
+# sans redirection (la STEG a supprimé ses anciens chemins `/dwl/` et
+# `/fr/institutionnel/publication/`), laissent expirer leurs certificats ou omettent le
+# certificat intermédiaire (ETAP, CNSS, ministère des Affaires sociales), et le JORT n'a pas
+# toujours son édition française en ligne. Un lecteur le voit avant nous.
+#
+# Ce passage hebdomadaire interroge le champ `URL` de chaque notice et publie le rapport.
+# Il n'échoue jamais : un site tunisien indisponible un lundi matin ne doit pas bloquer une
+# fusion. Il écrit le détail dans le résumé du job ; la correction passe par une PR relue
+# (copie web.archive.org, édition arabe du JORT), comme le reste.
+
+on:
+  schedule:
+    - cron: '43 5 * * 1'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/verifier_liens_externes.py'
+      - '.github/workflows/verifier-liens-externes.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verifier-liens:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: astral-sh/setup-uv@v7
+
+      # Sur une PR qui touche le script ou ce workflow, un essai court (les adresses de la STEG) ;
+      # le passage complet, qui interroge un millier d'adresses et l'Internet Archive à son
+      # rythme, est celui du lundi ou du déclenchement à la main.
+      - name: Vérifier les liens
+        env:
+          PERIMETRE: ${{ github.event_name == 'pull_request' && '--hote steg.com.tn' || '' }}
+        run: |
+          uv run --isolated --no-project python scripts/verifier_liens_externes.py --archive --avertir $PERIMETRE | tee liens.txt
+
+      - name: Résumé
+        if: always()
+        run: |
+          {
+            echo '## Liens externes des références'
+            echo
+            echo '```'
+            tail -n 120 liens.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Rapport complet
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: liens-externes-rapport
+          path: liens-externes-rapport.json
