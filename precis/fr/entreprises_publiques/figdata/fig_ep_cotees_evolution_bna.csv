@@ -1,0 +1,73 @@
+# Figure-data du précis socio-fiscal tunisien — généré le 2026-11-03
+# séries (tunisia_data) : groupes-bancaires-perimetre
+# sources (citation) : @bvmt-ra-stb-2021, @bvmt-ra-bh-2021, @bvmt-ra-bna-2021, @ra-stb-2011, @ra-stb-2013, @ra-stb-2014, @ra-stb-2015, @ra-stb-2017, @ra-stb-2018, @ra-bna-2007, @ra-bna-2020
+# fiches : 
+# méthode/hypothèses : Le pourcentage d'intérêt est la part du capital détenue directement et indirectement par le groupe, non la part directe de la banque. Un exercice sans rapport lu (2019 pour la STB) n'a pas de colonne. La méthode n'est pas donnée pour 2020 et 2021 (STB).
+# note : Les entités que la BNA consolide, mère non comprise, en 2007, 2020 et 2021 (31 décembre) : pourcentage d'intérêt du groupe, d'après le rapport annuel de 2007, les états financiers consolidés de 2020 et le rapport annuel de 2021. Source : [@ra-bna-2007 ; @ra-bna-2020 ; @bvmt-ra-bna-2021]
+entite,exercice,interet_ou_controle_pct,methode
+AGROSERVICES,2007,29.29,intégration globale ou non précisée
+AGROSERVICES,2020,34.79,intégration globale ou non précisée
+AGROSERVICES,2021,34.79,intégration globale ou non précisée
+BNA Capitaux,2007,97.41,intégration globale ou non précisée
+BNA Capitaux,2020,99.26,intégration globale ou non précisée
+BNA Capitaux,2021,99.27,intégration globale ou non précisée
+ESSOUKNA,2007,23.72,intégration globale ou non précisée
+ESSOUKNA,2020,23.41,intégration globale ou non précisée
+ESSOUKNA,2021,23.41,intégration globale ou non précisée
+GENERALE DE VENTE,2007,48.98,mise en équivalence
+GENERALE DE VENTE,2020,49.91,mise en équivalence
+GENERALE DE VENTE,2021,49.91,mise en équivalence
+IFRIKIA,2007,38.09,intégration globale ou non précisée
+LES ŒILLETS,2007,52.36,intégration globale ou non précisée
+LES ŒILLETS,2020,52.87,intégration globale ou non précisée
+LES ŒILLETS,2021,52.88,intégration globale ou non précisée
+Placement Obligataire SICAV,2007,0.07,intégration globale ou non précisée
+Placement Obligataire SICAV,2020,0.08,intégration globale ou non précisée
+Placement Obligataire SICAV,2021,0.06,intégration globale ou non précisée
+SICAF Participations,2007,97.97,intégration globale ou non précisée
+SICAF Participations,2020,99.81,intégration globale ou non précisée
+SICAF Participations,2021,99.82,intégration globale ou non précisée
+SICAR INVEST,2007,41.3,intégration globale ou non précisée
+SICAR INVEST,2020,74.75,intégration globale ou non précisée
+SICAR INVEST,2021,74.77,intégration globale ou non précisée
+SICAV BNA,2007,20.19,intégration globale ou non précisée
+SICAV BNA,2020,31.18,intégration globale ou non précisée
+SICAV BNA,2021,31.66,intégration globale ou non précisée
+SIMPAR,2007,33.47,intégration globale ou non précisée
+SIMPAR,2020,33.37,intégration globale ou non précisée
+SIMPAR,2021,33.38,intégration globale ou non précisée
+SIP SICAR,2007,35.54,intégration globale ou non précisée
+SIVIA,2007,42.01,intégration globale ou non précisée
+SIVIA,2020,42.23,intégration globale ou non précisée
+SIVIA,2021,42.24,intégration globale ou non précisée
+SOFINREC,2007,95.84,intégration globale ou non précisée
+SOFINREC,2020,99.28,intégration globale ou non précisée
+SOFINREC,2021,99.29,intégration globale ou non précisée
+SOGEST,2007,44.61,intégration globale ou non précisée
+SOGEST,2020,44.92,intégration globale ou non précisée
+SOGEST,2021,44.93,intégration globale ou non précisée
+SOIVM SICAF,2007,64.69,intégration globale ou non précisée
+SOIVM SICAF,2020,75.1,intégration globale ou non précisée
+SOIVM SICAF,2021,77.58,intégration globale ou non précisée
+SPI MADINA,2007,40.86,intégration globale ou non précisée
+SPI MADINA,2020,41.04,intégration globale ou non précisée
+SPI MADINA,2021,41.04,intégration globale ou non précisée
+Société SAHARA PALACE,2007,26.53,mise en équivalence
+Société Tunisienne d’Industrie Automobile « STIA »,2007,48.98,mise en équivalence
+TUNIS-RE,2007,22.18,mise en équivalence
+TUNIS-RE,2020,19.07,mise en équivalence
+TUNIS-RE,2021,19.77,mise en équivalence
+Tunisie Informatique Services,2007,43.6,intégration globale ou non précisée
+Tunisie Informatique Services,2020,46.64,intégration globale ou non précisée
+Tunisie Informatique Services,2021,46.64,intégration globale ou non précisée
+ZIED SARL,2007,32.1,intégration globale ou non précisée
+ZIED SARL,2020,30.65,intégration globale ou non précisée
+ZIED SARL,2021,30.65,intégration globale ou non précisée
+AMI,2020,25.85,mise en équivalence
+AMI,2021,52.07,intégration globale ou non précisée
+CAP BANK,2020,23.78,mise en équivalence
+CAP BANK,2021,23.78,mise en équivalence
+SODET SUD,2020,53.95,intégration globale ou non précisée
+SODET SUD,2021,53.95,intégration globale ou non précisée
+SODINO,2020,24.71,mise en équivalence
+SODINO,2021,24.71,mise en équivalence

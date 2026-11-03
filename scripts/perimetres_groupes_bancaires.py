@@ -106,6 +106,20 @@ DOCUMENTS = [
         "bvmt-ra-stb-2021",
     ),
     (
+        "BNA",
+        2007,
+        "bvmt-rapports-archives/bna/20190711_rapport_annuel_2007_fr.pdf",
+        "bna_ancien",
+        "ra-bna-2007",
+    ),
+    (
+        "BNA",
+        2020,
+        "bvmt-rapports-archives/bna/20260317_États_financiers_consolidés_au_31_décembre_2020.pdf",
+        "bna",
+        "ra-bna-2020",
+    ),
+    (
         "BH",
         2021,
         "bvmt-rapports/bh-bank/bh-rapport-annuel-de-gestion-31-12-2021.pdf",
@@ -286,16 +300,18 @@ def stb_ancien(contenu: str, exercice: int) -> list[list[str]]:
 
 
 def bna(contenu: str, exercice: int = 2021) -> list[list[str]]:
-    debut = contenu.index("4- PÉRIMÈTRE DE CONSOLIDATION")
-    fin = contenu.index("(1) La BNA détient 33,926%", debut)
+    """Tableau « entités retenues dans le périmètre » : méthode, % de contrôle, % d'intérêt (première occurrence)."""
     motif = re.compile(
-        r"^\s*(?:[A-Z]{1,3}\s{2,})?(\S.*?)\s{2,}(Intégration globale|Mise en équivalence)\s+(\d+,\d+)%\s+(\d+,\d+)%"
+        r"^\s*(?:[A-Z]{1,3}\s{2,})?(\S.*?)\s{2,}(Intégration globale|Mise en équivalence)\s+(\d+,\d+)\s*%\s+(\d+,\d+)\s*%"
     )
-    lignes = []
-    for ligne in contenu[debut:fin].splitlines():
+    lignes, vus = [], set()
+    for ligne in contenu.splitlines():
         trouve = motif.match(ligne)
         if trouve:
             nom = propre(trouve.group(1))
+            if nom in vus:
+                continue
+            vus.add(nom)
             mere = (
                 "mère"
                 if nom == "Banque Nationale Agricole"
@@ -312,6 +328,42 @@ def bna(contenu: str, exercice: int = 2021) -> list[list[str]]:
                     "Tunisie",
                 ]
             )
+    return lignes
+
+
+def bna_ancien(contenu: str, exercice: int) -> list[list[str]]:
+    """Rapports annuels de 2007 à 2009 : « PERIMETRE DE CONSOLIDATION AU 31/12/… », nom, activité, contrôle, intérêt,
+    sous les titres « intégrées globalement » et « mise en équivalence »."""
+    debut = contenu.find("PERIMETRE DE CONSOLIDATION AU")
+    if debut < 0:
+        return []
+    motif = re.compile(
+        r"^\s*(\S.*?)\s{2,}(?:\S[^%]*?\s{2,})?(\d+,\d+)\s*%\s+(\d+,\d+)\s*%\s*$"
+    )
+    lignes, mode, vus = [], "intégration globale", set()
+    for ligne in contenu[debut : debut + 12000].splitlines():
+        minuscule = ligne.lower()
+        if "mise en équivalence" in minuscule and "entreprises" in minuscule:
+            mode = "mise en équivalence"
+        trouve = motif.match(ligne)
+        if not trouve:
+            continue
+        nom = propre(trouve.group(1))
+        if nom in vus or nom.upper().startswith(("DENOMINATION", "DÉNOMINATION")):
+            continue
+        vus.add(nom)
+        mere = nom.replace(".", "").upper() == "BNA"
+        lignes.append(
+            [
+                "BNA",
+                str(exercice),
+                nom,
+                "mère" if mere else mode,
+                nombre(trouve.group(2)),
+                nombre(trouve.group(3)),
+                "Tunisie",
+            ]
+        )
     return lignes
 
 
@@ -343,7 +395,13 @@ def bh(contenu: str, exercice: int = 2021) -> list[list[str]]:
     return lignes
 
 
-LECTEURS = {"stb": stb, "stb_ancien": stb_ancien, "bna": bna, "bh": bh}
+LECTEURS = {
+    "stb": stb,
+    "stb_ancien": stb_ancien,
+    "bna": bna,
+    "bna_ancien": bna_ancien,
+    "bh": bh,
+}
 
 
 def lire_documents(groupes: list[str]) -> list[list[str]]:

@@ -16167,6 +16167,72 @@
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://www.stb.com.tn/uploads/STB%20RAPPORT%202018%20FRAN%C3%87AIS.pdf",
       "note": "citation-key: ra-stb-2018\nRapport annuel de l'exercice 2018 (états financiers consolidés compris), consulté dans la capture de l'Internet Archive du 03/11/2021 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/stb/20211103_STB_RAPPORT_2018_FRANÇAIS.pdf (18420641 octets, SHA-256 6731c8c08df5dbbfd9ac1e06ec408976cfb51da7fb9cb76c45b5322ccb6abaa1), ignorée par git. Cité pour : périmètre de consolidation aux 31 décembre 2017 et 2018. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "ra-bna-2007",
+      "type": "report",
+      "title": "Rapport annuel 2007",
+      "author": [
+        {
+          "literal": "Banque nationale agricole"
+        }
+      ],
+      "publisher": "Banque nationale agricole",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2007
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Banque nationale agricole, rapport annuel 2007",
+      "URL": "https://web.archive.org/web/20190711153126/http://www.bna.tn:80/documents/rapport_annuel_2007_fr.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.bna.tn:80/documents/rapport_annuel_2007_fr.pdf",
+      "note": "citation-key: ra-bna-2007\nRapport annuel de l'exercice 2007, consulté dans la capture de l'Internet Archive du 11/07/2019 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/bna/20190711_rapport_annuel_2007_fr.pdf (975165 octets, SHA-256 d37a8b96cb6d62e36e9509735a6002a4b48ee069fbcc65946c051802bebecfad), ignorée par git. Cité pour : périmètre de consolidation au 31 décembre 2007. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "ra-bna-2020",
+      "type": "report",
+      "title": "États financiers consolidés 2020",
+      "author": [
+        {
+          "literal": "Banque nationale agricole"
+        }
+      ],
+      "publisher": "Banque nationale agricole",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Banque nationale agricole, états financiers consolidés 2020",
+      "URL": "https://web.archive.org/web/20260317005348/http://www.bna.tn/documents/%C3%89tats_financiers_consolid%C3%A9s_au_31_d%C3%A9cembre_2020.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.bna.tn/documents/%C3%89tats_financiers_consolid%C3%A9s_au_31_d%C3%A9cembre_2020.pdf",
+      "note": "citation-key: ra-bna-2020\nÉtats financiers consolidés de l'exercice 2020, consulté dans la capture de l'Internet Archive du 17/03/2026 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/bna/20260317_États_financiers_consolidés_au_31_décembre_2020.pdf (2165565 octets, SHA-256 f039bdd3e672ad6b74a7218822b34e5ab84c4a54dfde19587a7fbdefaaaef088), ignorée par git. Cité pour : périmètre de consolidation au 31 décembre 2020. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
     }
   ]
 }

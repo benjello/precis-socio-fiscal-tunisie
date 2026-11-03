@@ -1,0 +1,31 @@
+# Documents à récupérer dans l'Internet Archive, par groupe : site, puis motifs (expressions régulières
+# sur l'adresse d'origine) des fichiers voulus. Lu par scripts/rapports_archives.py.
+bna:
+  sites: [www.bna.tn/*]
+  motifs:
+    - Rapport_Annuel%20_2020
+    - rapport_annuel_200[89]_fr
+    - Rapport_CONSOLIDES_DEF_2019
+    - NotesauxEFetrapportg
+    - RAPPORT_DES_CAC_EF_CONSOLIDES_2017_C
+    - Rapport_et_notes_aux_Etas_fin_consolides
+    - rapports-cac-bna-2016
+star:
+  sites: [www.star.com.tn/*]
+  motifs: [RAPPORT-ANNUEL-STAR-2023, storage/RAPPORT%20ANNUEL%202020, STAR_rapport_annuel_2018_fr, STAR-rapport-annuel-2017-fr]
+tunisre:
+  sites: [www.tunisre.com.tn/*]
+  motifs: [Tunis-Re-Rapport-Annuel-2024, Tunis-Re-RA-2023, Rapport-Annuel-2021-F\.pdf]
+bte:
+  sites: [www.bte.com.tn/*]
+  motifs: [RAPPORT_ANNUEL_2023_FINAL, Rapport--annuel--FR-2017, RAPPORT_-ANNUEL_BTE_2015_FR]
+bh:
+  sites: [www.bhbank.tn/*, bhbank.tn/*, www.bh.com.tn/*]
+  motifs:
+    - Rapport-annuel-Fr_2017
+    - Rapport%20BH%202019_FR_VF
+    - BH_Rapport_d%27activit%C3%A9_FR_2020
+    - BH_Rapport%20annuel_2021Part
+    - Rapport-Annuel-Fr_2022-PART
+    - RAPPORT%20BH%202023_compressed-PART
+    - Rapport_Annuel_BHBANK_2024\.pdf

@@ -42,7 +42,9 @@ CAPITAL = "societes-cotees-capital"
 RESULTATS = "societes-cotees-resultats"
 REGISTRE = "entreprises-publiques-registre"
 PERIMETRE = "groupes-bancaires-perimetre"
-ALIAS_ENTITES = {"STCVERITAS": "STCVVERITAS"}  # « S.T.C VERITAS » et « S.T.C.V VERITAS » : la même société
+# Un nom d'entité change d'un rapport à l'autre (« S.T.C VERITAS » et « S.T.C.V VERITAS ») : la clé les réunit.
+ALIAS_ENTITES = {"STCVERITAS": "STCVVERITAS", "GENERALEDESVENTES": "GENERALEDEVENTE", "ELMEDINA": "SPIMADINA", "ZIED": "ZIEDSARL",
+                 "TIS": "TUNISIEINFORMATIQUESERVICES", "TUNISIENNEDEREASSURANCE": "TUNISRE", "TUNISIERE": "TUNISRE", "SICAFPARTICIPATIONSBNA": "SICAFPARTICIPATIONS", "SPBSICAFPARTICIPATIONS": "SICAFPARTICIPATIONS"}
 RAPPORTS = {"STB": "bvmt-ra-stb-2021", "BH": "bvmt-ra-bh-2021", "BNA": "bvmt-ra-bna-2021"}
 PAGES_RAPPORT = {"STB": "p. 96-97", "BH": "p. 240", "BNA": "p. 127"}
 COULEURS = {"STB": "#0969da", "BH": "#bc4c00", "BNA": "#1a7f37"}
@@ -153,10 +155,16 @@ def tableau_perimetres(caption: str, tbl_id: str = "tbl-ep-cotees-perimetres") -
 
 
 def _cle_entite(nom: str) -> str:
+    """Clé de rapprochement d'un nom d'entité d'un rapport à l'autre : le texte entre guillemets quand il y en a,
+    sans « Société »/« STE » initial, sans parenthèses, en majuscules sans accents ni ponctuation."""
     import re
     import unicodedata
-    brut = unicodedata.normalize("NFKD", nom).encode("ascii", "ignore").decode().upper()
-    brut = re.sub(r"\(.*?\)|\bEX\b.*", "", brut)
+    nom = re.sub(r"\(.*?\)|\b[Ee][Xx]\b.*", "", nom)
+    guillemets = re.search(r"\u00ab\s*(.+?)\s*\u00bb|[\"\u201c]\s*(.+?)\s*[\"\u201d]", nom)
+    texte = (guillemets.group(1) or guillemets.group(2)) if guillemets else nom
+    brut = unicodedata.normalize("NFKD", texte).encode("ascii", "ignore").decode().upper()
+    if not guillemets:
+        brut = re.sub(r"^(SOCIETE|STE)\s+", "", brut.strip())
     cle = re.sub(r"[^A-Z0-9]", "", brut)
     return ALIAS_ENTITES.get(cle, cle)
 
@@ -200,7 +208,12 @@ def fig_evolution(groupe: str):
     figtools.apply_lang_font()
     ft = figtools.fig_text
     liste, lus = _matrice(groupe)
-    exercices = [str(a) for a in range(int(lus[0]), int(lus[-1]) + 1)]  # une année sans rapport lu reste une colonne vide
+    # une année sans rapport lu reste une colonne vide quand elle est seule ; un long trou n'a pas de colonnes
+    exercices = []
+    for a in lus:
+        if exercices and int(a) - int(exercices[-1]) == 2:
+            exercices.append(str(int(a) - 1))
+        exercices.append(a)
     valeurs = np.array([[e["val"].get(x, np.nan) for x in exercices] for e in liste])
     fig, ax = plt.subplots(figsize=(9.5, 0.28 * len(liste) + 1.8))
     image = ax.imshow(valeurs, aspect="auto", cmap="Blues", vmin=0, vmax=100)

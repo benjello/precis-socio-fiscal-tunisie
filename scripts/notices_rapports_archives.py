@@ -29,8 +29,24 @@ LIVRE = (
     Path(__file__).resolve().parent.parent
     / "precis/fr/entreprises_publiques/references.json"
 )
-# clé, éditeur, exercice, fichier sous bvmt-rapports-archives, objet cité
+# clé, éditeur, exercice, fichier sous bvmt-rapports-archives, objet cité, type de document
 SPECS = [
+    (
+        "ra-bna-2007",
+        "Banque nationale agricole",
+        2007,
+        "bna/20190711_rapport_annuel_2007_fr.pdf",
+        "périmètre de consolidation au 31 décembre 2007",
+        "Rapport annuel",
+    ),
+    (
+        "ra-bna-2020",
+        "Banque nationale agricole",
+        2020,
+        "bna/20260317_États_financiers_consolidés_au_31_décembre_2020.pdf",
+        "périmètre de consolidation au 31 décembre 2020",
+        "États financiers consolidés",
+    ),
     (
         "ra-stb-2011",
         "Société tunisienne de banque",
@@ -85,7 +101,8 @@ def main() -> int:
     donnees = json.loads(LIVRE.read_text(encoding="utf-8"))
     existants = {e["id"] for e in donnees["items"]}
     ajoutes = 0
-    for cle, editeur, exercice, fichier, objet in SPECS:
+    for cle, editeur, exercice, fichier, objet, *reste in SPECS:
+        genre = reste[0] if reste else "Rapport annuel"
         if cle in existants:
             continue
         chemin = DONNEES / "bvmt-rapports-archives" / fichier
@@ -97,18 +114,18 @@ def main() -> int:
             {
                 "id": cle,
                 "type": "report",
-                "title": f"Rapport annuel {exercice}",
+                "title": f"{genre} {exercice}",
                 "author": [{"literal": editeur}],
                 "publisher": editeur,
                 "publisher-place": "Tunis",
                 "issued": {"date-parts": [[exercice]]},
                 "accessed": {"date-parts": [[2026, 11, 3]]},
-                "title-short": f"{editeur}, rapport annuel {exercice}",
+                "title-short": f"{editeur}, {genre.lower()} {exercice}",
                 "URL": capture or ligne.get("url_origine", ""),
                 "archive": "Internet Archive (Wayback Machine)",
                 "archive_location": ligne.get("url_origine", ""),
                 "note": (
-                    f"citation-key: {cle}\nRapport annuel de l'exercice {exercice} (états financiers consolidés compris), "
+                    f"citation-key: {cle}\n{genre} de l'exercice {exercice}, "
                     f"consulté dans la capture de l'Internet Archive du {date[6:8]}/{date[4:6]}/{date[:4]} du site de l'éditeur. "
                     f"Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/{fichier} "
                     f"({len(contenu)} octets, SHA-256 {hashlib.sha256(contenu).hexdigest()}), ignorée par git. "
