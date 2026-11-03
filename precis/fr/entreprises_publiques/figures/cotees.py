@@ -81,6 +81,16 @@ figtools.register_provenance(
              "que la page n'imprime pas, non un zéro."))
 
 
+figtools.register_provenance(
+    PERIMETRE, titre="Périmètre de consolidation de la STB, de la BH et de la BNA",
+    sources=_sources(PERIMETRE), unite="% d'intérêt",
+    perimetre=("entités consolidées par chaque banque, exercice par exercice, d'après les rapports annuels "
+               "(Bourse de Tunis, Internet Archive) : méthode, pourcentage de contrôle et d'intérêt"),
+    caveats=("Le pourcentage d'intérêt est la part du capital détenue directement et indirectement par le groupe, "
+             "non la part directe de la banque. Un exercice sans rapport lu (2019 pour la STB) n'a pas de colonne. "
+             "La méthode n'est pas donnée pour 2020 et 2021 (STB)."))
+
+
 def _md(entete: list[str], lignes: list[list[str]], caption: str, tbl_id: str) -> None:
     out = ["| " + " | ".join(entete) + " |",
            "|---|" + "|".join(":-:" for _ in entete[1:]) + "|"]
@@ -167,6 +177,66 @@ def tableau_evolution(groupe: str, caption: str, tbl_id: str) -> None:
               for e in sorted(entites.values(), key=lambda e: (e["premier"], e["nom"]))]
     lignes.append(["**Nombre d'entités**"] + [str(sum(1 for e in entites.values() if x in e["val"])) for x in exercices])
     _md(["Entité"] + exercices, lignes, caption, tbl_id)
+
+
+def _matrice(groupe: str):
+    """Entités × exercices : (noms, exercices, valeurs d'intérêt, indicateurs de mise en équivalence)."""
+    d = _lire(PERIMETRE)
+    d = d[(d["groupe"] == groupe) & (d["methode"] != "mère")]
+    exercices = sorted(d["exercice"].unique())
+    entites: dict[str, dict] = {}
+    for _, r in d.sort_values("exercice").iterrows():
+        e = entites.setdefault(_cle_entite(r["entite"]), {"nom": r["entite"], "premier": r["exercice"], "val": {}, "me": set()})
+        e["nom"] = r["entite"]
+        e["val"][r["exercice"]] = float(r["interet_pct"] or r["controle_pct"])
+        if r["methode"] == "mise en équivalence":
+            e["me"].add(r["exercice"])
+    liste = sorted(entites.values(), key=lambda e: (e["premier"], e["nom"]))
+    return liste, exercices
+
+
+def fig_evolution(groupe: str):
+    import numpy as np
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    liste, lus = _matrice(groupe)
+    exercices = [str(a) for a in range(int(lus[0]), int(lus[-1]) + 1)]  # une année sans rapport lu reste une colonne vide
+    valeurs = np.array([[e["val"].get(x, np.nan) for x in exercices] for e in liste])
+    fig, ax = plt.subplots(figsize=(9.5, 0.28 * len(liste) + 1.8))
+    image = ax.imshow(valeurs, aspect="auto", cmap="Blues", vmin=0, vmax=100)
+    for i, e in enumerate(liste):
+        for j, x in enumerate(exercices):
+            if x in e["val"]:
+                marque = "ME" if x in e["me"] else f"{e['val'][x]:.0f}"
+                ax.text(j, i, marque, ha="center", va="center", fontsize=6.5,
+                        color="white" if e["val"][x] > 60 else "#24292f")
+    ax.set_xticks(range(len(exercices)), exercices, fontsize=8)
+    ax.set_yticks(range(len(liste)), [e["nom"].replace("’", "'")[:38] for e in liste], fontsize=7)
+    ax.xaxis.tick_top()
+    nombres = [int(np.sum(~np.isnan(valeurs[:, j]))) for j in range(len(exercices))]
+    ax.set_xlabel(ft("Nombre d'entités consolidées : " + " · ".join(f"{x} : {n}" for x, n in zip(exercices, nombres) if n)),
+                  fontsize=7)
+    for cote in ("top", "right", "left", "bottom"):
+        ax.spines[cote].set_visible(False)
+    ax.tick_params(length=0)
+    fig.colorbar(image, ax=ax, fraction=0.025, pad=0.02, label=ft("Pourcentage d'intérêt"))
+    fig.tight_layout()
+    return fig
+
+
+def table_evolution(groupe: str):
+    liste, exercices = _matrice(groupe)
+    lignes = [{"entite": e["nom"], "exercice": x, "interet_ou_controle_pct": v,
+               "methode": "mise en équivalence" if x in e["me"] else "intégration globale ou non précisée"}
+              for e in liste for x, v in sorted(e["val"].items())]
+    return pd.DataFrame(lignes)
+
+
+def figure_evolution(groupe: str, caption: str, note_lecture: str | None = None) -> None:
+    figtools.figure_tabs(fig_evolution(groupe), table_evolution(groupe), PERIMETRE,
+                         slug=f"fig_ep_cotees_evolution_{groupe.lower()}", caption=caption,
+                         note_lecture=note_lecture, nominal=False)
+    plt.close("all")
 
 
 def tableau_registre(caption: str, tbl_id: str = "tbl-ep-registre-entreprises") -> None:

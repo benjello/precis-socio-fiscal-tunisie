@@ -146,6 +146,26 @@ ct.tableau_perimetres(
 - **2015 à 2018.** Ahla Hotel Neptunia et la Société des moyens généraux entrent en 2015, STB Sécurité et gardiennage en 2016 ; Ahla Hotel Neptunia sort en 2016, la SED Sousse Nord en 2017 et la BFT en 2018 [@ra-stb-2015 ; @ra-stb-2017 ; @ra-stb-2018].
 - **2020.** Les Magasins généraux et entrepôts réels de Tunis et deux SICAV (Épargnant et Épargne obligataire) entrent dans le périmètre, que la SOFI Elan Sicaf quitte [@bvmt-ra-stb-2021].
 
+```{python}
+#| label: fig-ep-cotees-evolution-stb
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.figure_evolution(
+    "STB",
+    caption=("Les entités que la STB consolide, mère non comprise, de 2010 à 2021 (31 décembre) : "
+             "pourcentage d'intérêt du groupe, d'après les rapports annuels de la banque. Source : "
+             "[@ra-stb-2011 ; @ra-stb-2013 ; @ra-stb-2014 ; @ra-stb-2015 ; @ra-stb-2017 ; "
+             "@ra-stb-2018 ; @bvmt-ra-stb-2021]"),
+    note_lecture=(
+        "Une ligne par entité, dans l'ordre de leur entrée dans le périmètre ; une cellule vide est "
+        "une entité non consolidée cet exercice-là ; « ME » : mise en équivalence (le pourcentage "
+        "d'intérêt est alors dans l'onglet des données) ; le rapport de 2021 ne donne pas la méthode "
+        "pour 2020 et 2021. 2019 n'est pas lu. Pour chaque exercice, la lecture qui compte le plus "
+        "d'entités : certains rapports tronquent leur tableau."))
+```
+
 ::: {.chronologie-repliable titre="Les entités que la STB consolide, exercice par exercice, 2010-2021 : pourcentage d'intérêt"}
 
 ```{python}
