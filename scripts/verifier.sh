@@ -82,6 +82,7 @@ fi
 
 # ── 2-4. Contrôles de contenu, sans réseau ─────────────────────────────────────
 etape "Le précis ne parle pas du modèle" uv run python scripts/check_pas_de_modele.py
+etape "Le dépôt public ne parle pas de la sauvegarde" uv run python scripts/check_pas_d_infra.py
 etape "Le précis ne parle pas du dépouillement" uv run python scripts/check_jargon_depouillement.py
 etape "La numérotation se lit sans trou" uv run python scripts/check_numerotation.py
 etape "Chaque recherche infructueuse a sa fiche" uv run python scripts/recherches.py verifier

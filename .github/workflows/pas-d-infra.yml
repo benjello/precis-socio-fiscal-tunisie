@@ -1,0 +1,31 @@
+name: Pas d'infrastructure dans le dépôt public
+
+# POURQUOI CE CONTRÔLE EXISTE
+#
+# Ce dépôt est public (GitHub Pages) : tout fichier suivi est lisible par tous. Les notes, les
+# procédures, les noms d'hôtes et les adresses de la sauvegarde du corpus vivent dans le
+# dépôt privé `tunisia-data`. Une note de ce genre, poussée par erreur, ne se retire pas
+# vraiment : elle reste dans l'historique et dans les copies. Le contrôle regarde donc tous
+# les fichiers suivis, quel que soit leur dossier.
+#
+# La liste des mots à chercher n'est pas dans le dépôt (elle les rendrait publics) : elle vient du
+# secret PAS_D_INFRA_MOTS. Sans ce secret, le contrôle se saute et le dit.
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  pas-d-infra:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+      - run: uv run python scripts/check_pas_d_infra.py
+        env:
+          PAS_D_INFRA_MOTS: ${{ secrets.PAS_D_INFRA_MOTS }}
