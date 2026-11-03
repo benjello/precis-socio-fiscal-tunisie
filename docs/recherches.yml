@@ -5578,3 +5578,21 @@
     resultat: aucun
   a_faire:
   - parcourir les tableaux de crédits de la loi de finances pour 2020 et des suivantes pour une ligne de l'Office des céréales sous un autre libellé
+
+- id: r-csc-art-2-90-160-modificatifs
+  objet: textes modifiant les articles 2, 90 et 160 du code des sociétés commerciales (loi n° 2000-93), postérieurs à sa publication
+  ou: [precis/fr/marche_travail/_employeurs.qmd#sec-mt-emp-forme-definition]
+  requetes:
+    titres_fts: ['"code des societes commerciales"']
+    titres_like: ['%societes commerciales%']
+    iort_ar: [مجلة الشركات التجارية]
+    plein_texte: [article 160 du code des societes commerciales, الفصل 160 من مجلة الشركات التجارية, مجلة الشركات التجارية]
+    depuis: 2000-11-08
+  passes:
+  - date: 2026-11-03
+    role: documentaliste
+    sources: [jort_cache, corpus_local, iort]
+    couverture: 'Édition consolidée de l''Imprimerie officielle du code, à jour au 10 février 2022 : les articles 2, 90 et 160 figurent sans note de modification. jort_cache jusqu''au 29 octobre 2026 (titres, français et arabe ; plein texte calibré, qui retrouve la loi n° 2019-47 du JORT n° 47 de 2019) : toutes les occurrences postérieures au 10 février 2022 lues dans leurs extraits (2022 n° 2, 19, 37, 48, 65, 99, 114 ; 2023 n° 44, 62, 144 ; 2024 n° 5, 43, 47, 63, 96, 116, 130 ; 2025 n° 23) sont des visas ou des renvois à d''autres articles. Limites : la passe sur les termes propres à chaque article (2000-2026) n''est pas calibrée, et les couches texte françaises de 2000 à 2006 sont décalées ; fascicules illisibles : 2015 fr n° 36, 2018 fr n° 29 et 33 ; absent du corpus local : 2015 n° 59 ; fascicules français lus jusqu''au n° 106 de 2026, arabes jusqu''au n° 105. Les articles 149, 154, 98 et 96 sont modifiés par la loi n° 2019-47 (article 4), et les articles 92 et 161 par la loi n° 2005-12.'
+    couvert_jusqu_au: 2026-10-29
+    resultat: aucun
+  a_faire: ['lire les fascicules illisibles ou absents (2015 fr n° 36 et n° 59, 2018 fr n° 29 et 33)']
