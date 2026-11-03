@@ -168,6 +168,104 @@ DOCUMENTS = [
         "bna",
         "bvmt-ra-bna-2021",
     ),
+    (
+        "BTE",
+        2007,
+        "bvmt-etats-financiers/bte-adp/2007_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2007-consolide",
+    ),
+    (
+        "BTE",
+        2008,
+        "bvmt-etats-financiers/bte-adp/2008_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2008-consolide",
+    ),
+    (
+        "BTE",
+        2009,
+        "bvmt-etats-financiers/bte-adp/2009_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2009-consolide",
+    ),
+    (
+        "BTE",
+        2011,
+        "bvmt-etats-financiers/bte-adp/2011_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2011-consolide",
+    ),
+    (
+        "BTE",
+        2013,
+        "bvmt-etats-financiers/bte-adp/2013_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2013-consolide",
+    ),
+    (
+        "BTE",
+        2016,
+        "bvmt-etats-financiers/bte-adp/2016_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2016-consolide",
+    ),
+    (
+        "BTE",
+        2017,
+        "bvmt-etats-financiers/bte-adp/2017_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2017-consolide",
+    ),
+    (
+        "BTE",
+        2018,
+        "bvmt-etats-financiers/bte-adp/2018_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2018-consolide",
+    ),
+    (
+        "BTE",
+        2019,
+        "bvmt-etats-financiers/bte-adp/2019_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2019-consolide",
+    ),
+    (
+        "BTE",
+        2020,
+        "bvmt-etats-financiers/bte-adp/2020_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2020-consolide",
+    ),
+    (
+        "BTE",
+        2021,
+        "bvmt-etats-financiers/bte-adp/2021_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2021-consolide",
+    ),
+    (
+        "BTE",
+        2022,
+        "bvmt-etats-financiers/bte-adp/2022_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2022-consolide",
+    ),
+    (
+        "BTE",
+        2023,
+        "bvmt-etats-financiers/bte-adp/2023_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2023-consolide",
+    ),
+    (
+        "BTE",
+        2024,
+        "bvmt-etats-financiers/bte-adp/2024_consolide.pdf",
+        "bte",
+        "bvmt-ef-bte-2024-consolide",
+    ),
 ]
 METHODES = {
     "integration globale": "intégration globale",
@@ -194,7 +292,7 @@ def texte_brut(chemin: Path) -> str:
     ).stdout
 
 
-LECTEURS_BRUTS = {"bh_rapport"}
+LECTEURS_BRUTS = {"bh_rapport", "bte"}
 
 
 def texte(chemin: Path) -> str:
@@ -567,6 +665,47 @@ def bh_rapport(contenu: str, exercice: int) -> list[list[str]]:
     return sortie
 
 
+def bte(contenu: str, exercice: int) -> list[list[str]]:
+    """Tableau « 4. Périmètre et méthodes de consolidation » des états financiers consolidés de la BTE
+    (texte `-raw`) : société, secteur, pourcentage de contrôle, qualification (mère, filiale, associée),
+    méthode, pourcentage d'intérêt. Un seul exercice par rapport : le tableau ne donne pas l'exercice précédent."""
+    debut = contenu.find("synthétise")
+    if debut < 0:
+        return []
+    entete = re.compile(r"Pourcentage\s+d['’]int[ée]r[êe]t", re.I).search(
+        contenu, debut
+    )
+    if not entete:
+        return []
+    reste = contenu[entete.end() :]
+    fin = re.search(
+        r"\n\s*(?:5\.\s+PRINC|\*\s*Donn|\(\*\)\s+La soci|Nature de la relation)", reste
+    )
+    bloc = " ".join((reste[: fin.start()] if fin else reste).split())
+    motif = re.compile(
+        r"(?P<nom>\S.*?)\s+(?:financier|touristique)\s+(?P<ctrl>[\d.,\s]+?)\s*%\s+"
+        r"(?P<qual>M[èe]re|Filiale|Associ[ée]e)\s+(?P<meth>int[ée]gration globale|mise en [ée]quivalence)\s+"
+        r"(?P<int>[\d.,\s]+?)\s*%",
+        re.I,
+    )
+    lignes = []
+    for trouve in motif.finditer(bloc):
+        nom = re.sub(r"\s*\(?\*\)?\s*$", "", trouve.group("nom")).strip()
+        mere = trouve.group("qual").lower().startswith("m")
+        lignes.append(
+            [
+                "BTE",
+                str(exercice),
+                nom,
+                "mère" if mere else methode(trouve.group("meth")),
+                normalise_pct(trouve.group("ctrl")),
+                normalise_pct(trouve.group("int")),
+                "",
+            ]
+        )
+    return lignes
+
+
 LECTEURS = {
     "bh_rapport": bh_rapport,
     "stb_consolide_2019": stb_consolide_2019,
@@ -575,6 +714,7 @@ LECTEURS = {
     "bna": bna,
     "bna_ancien": bna_ancien,
     "bh": bh,
+    "bte": bte,
 }
 
 
@@ -609,7 +749,7 @@ def lire_documents(groupes: list[str]) -> list[list[str]]:
 
 
 def main(arguments: list[str]) -> int:
-    groupes = [a.upper() for a in arguments] or ["STB", "BH", "BNA"]
+    groupes = [a.upper() for a in arguments] or ["STB", "BH", "BNA", "BTE"]
     nouvelles = lire_documents(groupes)
     gardees: list[list[str]] = []
     if SORTIE.exists():
@@ -620,7 +760,7 @@ def main(arguments: list[str]) -> int:
                 if r["groupe"] not in groupes
             ]
     tout = gardees + nouvelles
-    ordre = {"STB": 0, "BH": 1, "BNA": 2}
+    ordre = {"STB": 0, "BH": 1, "BNA": 2, "BTE": 3}
     tout.sort(key=lambda r: (ordre.get(r[0], 9), r[1], r[3] != "mère", r[2]))
     with SORTIE.open("w", encoding="utf-8", newline="") as sortie:
         ecrivain = csv.writer(sortie)

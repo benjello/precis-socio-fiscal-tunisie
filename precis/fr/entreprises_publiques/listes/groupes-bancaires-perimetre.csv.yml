@@ -13,6 +13,11 @@
 # Bourse donne par ailleurs (BH Bank détient 41,64 % de BH Leasing, pour 57,05 % d'intérêt du groupe).
 # Exercice 2021 : c'est le dernier rapport annuel de gestion que la Bourse met en ligne pour ces banques.
 
+# BTE : tableau « 4. Périmètre et méthodes de consolidation » des états financiers consolidés de la page de la Bourse de
+# Tunis, exercices 2007, 2008, 2009, 2011, 2013 et 2016 à 2024 (pas d'états consolidés pour 2010, 2012, 2014, 2015 sur la
+# page). Le tableau donne contrôle, qualification, méthode et intérêt ; pas le pays (sauf en note, 2016 et 2017 : Tunisie).
+# En 2007 et 2008, la TES est qualifiée de filiale mais mise en équivalence, comme le dit la note 6 des états.
+
 format: long
 cle_de_ligne: [groupe, exercice, entite]
 
@@ -26,4 +31,4 @@ colonnes:
   interet_pct: pourcentage d'intérêt (part du capital, directe et indirecte)
   pays: pays de l'entité quand le rapport le donne
 
-sources: [bvmt-ra-stb-2021, bvmt-ra-bh-2021, bvmt-ra-bna-2021, ra-stb-2011, ra-stb-2013, ra-stb-2014, ra-stb-2015, ra-stb-2017, ra-stb-2018, bvmt-ef-stb-2019-consolide, ra-bna-2007, ra-bna-2020, ra-bh-2017, ra-bh-2019, ra-bh-2021, ra-bh-2022]
+sources: [bvmt-ra-stb-2021, bvmt-ra-bh-2021, bvmt-ra-bna-2021, ra-stb-2011, ra-stb-2013, ra-stb-2014, ra-stb-2015, ra-stb-2017, ra-stb-2018, bvmt-ef-stb-2019-consolide, ra-bna-2007, ra-bna-2020, ra-bh-2017, ra-bh-2019, ra-bh-2021, ra-bh-2022, bvmt-ef-bte-2007-consolide, bvmt-ef-bte-2008-consolide, bvmt-ef-bte-2009-consolide, bvmt-ef-bte-2011-consolide, bvmt-ef-bte-2013-consolide, bvmt-ef-bte-2016-consolide, bvmt-ef-bte-2017-consolide, bvmt-ef-bte-2018-consolide, bvmt-ef-bte-2019-consolide, bvmt-ef-bte-2020-consolide, bvmt-ef-bte-2021-consolide, bvmt-ef-bte-2022-consolide, bvmt-ef-bte-2023-consolide, bvmt-ef-bte-2024-consolide]
