@@ -42,6 +42,7 @@ CAPITAL = "societes-cotees-capital"
 RESULTATS = "societes-cotees-resultats"
 REGISTRE = "entreprises-publiques-registre"
 PERIMETRE = "groupes-bancaires-perimetre"
+ENGAGEMENTS_BNA = "bna-engagements-entreprises-publiques"
 # Un nom d'entité change d'un rapport à l'autre (« S.T.C VERITAS » et « S.T.C.V VERITAS ») : la clé les réunit.
 ALIAS_ENTITES = {"STCVERITAS": "STCVVERITAS", "GENERALEDESVENTES": "GENERALEDEVENTE", "ELMEDINA": "SPIMADINA", "ZIED": "ZIEDSARL",
                  "TIS": "TUNISIEINFORMATIQUESERVICES", "TUNISIENNEDEREASSURANCE": "TUNISRE", "TUNISIERE": "TUNISRE", "SICAFPARTICIPATIONSBNA": "SICAFPARTICIPATIONS", "SPBSICAFPARTICIPATIONS": "SICAFPARTICIPATIONS",
@@ -107,6 +108,17 @@ figtools.register_provenance(
     caveats=("Le thème d'un motif est un classement fixé dans le relevé (colonne themes), non un jugement du rapport ; "
              "un exercice sans rapport lu n'a pas de case. Le délai de publication est celui de la mise en ligne sur la "
              "Bourse, non celui de l'assemblée."))
+
+
+figtools.register_provenance(
+    ENGAGEMENTS_BNA, titre="Engagements de la BNA envers les entreprises publiques",
+    sources=_sources(ENGAGEMENTS_BNA), unite="milliers de dinars",
+    perimetre=("tableau de la note « Engagements des entreprises publiques » des états financiers individuels de la BNA, "
+               "2016 à 2024 : engagements, garanties de l'État, autres garanties, agios réservés et provisions, pour le total "
+               "des entreprises publiques et pour l'Office des céréales et quelques entités nommées"),
+    caveats=("Les entités nommées changent d'un exercice à l'autre (STIR et Tunisair jusqu'en 2020, puis ETAP, OCT et Transtu) : "
+             "l'ensemble « autres entités nommées » n'est pas constant. Une somme n'est pas un total consolidé de l'État. "
+             "L'exercice 2018 vient de l'état de 2018 ; 2016 ne donne que les engagements."))
 
 
 def _md(entete: list[str], lignes: list[list[str]], caption: str, tbl_id: str, gauche: tuple[int, ...] = ()) -> None:
@@ -387,6 +399,79 @@ def figure_cac(groupe: str, societe: str, caption: str, note_lecture: str | None
     figtools.figure_tabs(fig_cac(groupe, societe, delais_ecartes), d[d["groupe"] == groupe], "opinions-cac",
                          slug=f"fig_ep_cotees_cac_{societe}", caption=caption, note_lecture=note_lecture, nominal=False)
     plt.close("all")
+
+
+def _fr(valeur: float, decimales: int = 1) -> str:
+    return f"{valeur:,.{decimales}f}".replace(",", " ").replace(".", ",").replace("-", "−")
+
+
+def _engagements_bna() -> "pd.DataFrame":
+    """Une ligne par exercice : engagements (MD) du total, de l'Office des céréales, des autres entités nommées, et le reste."""
+    d = _lire(ENGAGEMENTS_BNA)
+    d = d[d["valeur_kdt"] != ""].copy()
+    d["valeur"] = d["valeur_kdt"].astype(float) / 1000
+    lignes = {}
+    for exercice, g in d.groupby("exercice"):
+        eng = g[g["grandeur"] == "engagements"]
+        total = eng[eng["entite"] == "Total des entreprises publiques"]["valeur"].sum()
+        oc = eng[eng["entite"] == "Office des céréales"]["valeur"].sum()
+        autres = eng[~eng["entite"].isin(["Total des entreprises publiques", "Office des céréales"])]["valeur"].sum()
+        gar = g[(g["grandeur"] == "garanties de l'État") & (g["entite"] == "Total des entreprises publiques")]["valeur"].sum()
+        lignes[int(exercice)] = {"total": total, "oc": oc, "autres": autres, "reste": total - oc - autres, "garanties": gar}
+    return pd.DataFrame(lignes).T.sort_index()
+
+
+def fig_engagements_bna():
+    """Engagements de la BNA envers les entreprises publiques (barres empilées) et part garantie par l'État (courbe)."""
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    e = _engagements_bna()
+    fig, (a1, a2) = plt.subplots(2, 1, figsize=(9, 6.5), sharex=True, gridspec_kw={"height_ratios": [3, 1.4], "hspace": 0.12})
+    x = list(range(len(e)))
+    fond = [0.0] * len(e)
+    for cle, nom, couleur in (("oc", "Office des céréales", "#cf222e"), ("autres", "Autres entités nommées par la note", "#0969da"),
+                              ("reste", "Reste des entreprises publiques", "#8c959f")):
+        a1.bar(x, e[cle], bottom=fond, color=couleur, width=0.65, label=ft(nom))
+        fond = [f + v for f, v in zip(fond, e[cle])]
+    for i, total in enumerate(e["total"]):
+        a1.text(i, total + 80, _fr(total, 0), ha="center", fontsize=8)
+    a1.set_ylabel(ft("millions de dinars courants"))
+    a1.legend(fontsize=8, loc="upper left", frameon=False)
+    a1.set_title(ft("Engagements de la BNA envers les entreprises publiques (fin d'exercice)"), fontsize=10, loc="left")
+    a1.grid(axis="y", alpha=0.3)
+    part = (e["garanties"] / e["total"] * 100).where(e["garanties"] > 0)
+    a2.plot(x, part, marker="o", color="#1a7f37")
+    for i, v in enumerate(part):
+        if v == v:
+            a2.text(i, v + 5, f"{v:.0f} %", ha="center", fontsize=8)
+    a2.set_ylim(0, 115)
+    a2.set_ylabel(ft("garanties de l'État, % des engagements"), fontsize=8)
+    a2.set_xticks(x, [str(i) for i in e.index], fontsize=8)
+    a2.grid(axis="y", alpha=0.3)
+    return fig
+
+
+def figure_engagements_bna(caption: str, note_lecture: str | None = None) -> None:
+    d = _lire(ENGAGEMENTS_BNA)
+    figtools.figure_tabs(fig_engagements_bna(), d, ENGAGEMENTS_BNA, slug="fig_ep_bna_engagements",
+                         caption=caption, note_lecture=note_lecture, nominal=False)
+    plt.close("all")
+
+
+def tableau_engagements_bna(caption: str, tbl_id: str = "tbl-ep-bna-engagements") -> None:
+    """Total et Office des céréales : engagements, garanties de l'État, autres garanties, agios réservés, provisions (MD)."""
+    d = _lire(ENGAGEMENTS_BNA)
+    d = d[d["valeur_kdt"] != ""].copy()
+    d["valeur"] = d["valeur_kdt"].astype(float) / 1000
+    exercices = sorted(d["exercice"].unique())
+    lignes = []
+    for entite, court in (("Total des entreprises publiques", "Total"), ("Office des céréales", "Office des céréales")):
+        for grandeur in ("engagements", "garanties de l'État", "autres garanties", "agios et intérêts réservés", "provisions"):
+            x = d[(d["entite"] == entite) & (d["grandeur"] == grandeur)].set_index("exercice")["valeur"]
+            if x.empty:
+                continue
+            lignes.append([f"{court} : {grandeur}"] + [_fr(x[e]) if e in x.index else "–" for e in exercices])
+    _md(["Grandeur (MD)"] + exercices, lignes, caption, tbl_id)
 
 
 def tableau_registre(caption: str, tbl_id: str = "tbl-ep-registre-entreprises") -> None:
