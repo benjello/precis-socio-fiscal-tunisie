@@ -286,6 +286,8 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 :::::
 
 
+### Les filiales, de 2016 à 2022 {#sec-ep-ge-bh-filiales}
+
 **Le groupe BH consolide les mêmes onze entités autour de la banque de 2016 à 2022, dix filiales par intégration globale et une entreprise associée, la TFB, mise en équivalence ; seuls leurs noms, à partir de 2019, et leurs pourcentages changent.** Les rapports annuels de 2017, 2019, 2021 et 2022 donnent chacun deux exercices ; le rapport de 2017 annonce douze entités autour de la mère mais n'en imprime que onze dans son tableau. [@ra-bh-2017, p. 71 ; @ra-bh-2019, p. 103 ; @ra-bh-2021, p. 105 ; @ra-bh-2022, p. 73]
 
 - **Des noms qui changent en 2019.** Le rapport de 2017 imprime Modern Leasing, Assurance SALIM, SIM SICAR, SOPIVEL, Société Général Recouvrement, SICAF BH Epargne Investissement et SICAV BH-Placement ; celui de 2019, pour 2018 et 2019, BH Leasing, BH Assurances, BH Equity, BH Immo, BH Recouvrement, BH SICAF et SICAV BH-Capitalisation. Le tableau rapproche chaque nom ancien du nouveau par le pourcentage d'intérêt, qui reste à quelques centièmes près : 52,84 % pour SIM SICAR en 2017, 53,02 % pour BH Equity en 2018 [@ra-bh-2017 ; @ra-bh-2019].
@@ -327,7 +329,52 @@ ct.tableau_evolution(
 
 :::
 
-<!-- TODO (documentaliste) : BH : (a) sources des changements de nom de 2019 : Banque de l'habitat devenue BH Bank (AGE du 30 avril 2019), Assurances Salim devenue BH Assurance (AGE du 8 août 2019), Modern Leasing devenue BH Leasing (AGE du 11 octobre 2019, bvmt.com.tn/sites/default/files/societes/modern-leasing/assemblee-generale/ml-assemblee-generale-extraordinaire-11-10-2019.pdf), SICAV BH-Placement devenue BH-Capitalisation (effet du 2 janvier 2019, communiqué CMF) ; pas de source trouvée pour SIM SICAR/BH Equity, SOPIVEL/BH Immo, Général Recouvrement/BH Recouvrement, SICAF BH Epargne Investissement/BH SICAF : rapprochement par les pourcentages seulement. (b) rapport de 2017 : le texte annonce « 12 entités » (11 filiales par intégration globale et une entreprise associée) outre la mère, le tableau imprime la mère et 11 lignes (10 filiales par intégration globale et la TFB) ; le texte semble compter la mère parmi les 11 filiales, alors que ceux de 2019, 2021 et 2022 comptent 10 filiales hors mère (vérifié : même effectif de 10 filiales dans le tableau de 2018 lu dans le rapport de 2019). (c) exercices 2023 et 2024 : rapport de 2023 en deux parties sans tableau lisible par le texte, rapport de 2024 corrompu (à retélécharger). (d) opinion des commissaires aux comptes de la BH, par exercice. -->
+### L'opinion des commissaires aux comptes {#sec-ep-ge-bh-cac}
+
+**Les commissaires aux comptes de la BH émettent une opinion avec réserves sur ses comptes individuels dans les treize exercices lus, de 2011 à 2024 ; l'exercice 2018 n'a pas d'états individuels sur la page de la Bourse de Tunis.** [@bvmt-ef-bh-2011-individuel, p. 6 ; @bvmt-ef-bh-2012-individuel, p. 3 ; @bvmt-ef-bh-2013-individuel, p. 22 ; @bvmt-ef-bh-2014-individuel, p. 6 ; @bvmt-ef-bh-2015-individuel, p. 6 ; @bvmt-ef-bh-2016-individuel, p. 6 ; @bvmt-ef-bh-2017-individuel, p. 31 ; @bvmt-ef-bh-2019-individuel, p. 4 ; @bvmt-ef-bh-2020-individuel, p. 5 ; @bvmt-ef-bh-2021-individuel, p. 6 ; @bvmt-ef-bh-2022-individuel, p. 39 ; @bvmt-ef-bh-2023-individuel, p. 41 ; @bvmt-ef-bh-2024-individuel, p. 47]
+
+- **2011 et 2012 : le contrôle interne et les fonds de l'État.** Les commissaires relèvent des insuffisances de justification comptable (caisse, suspens de la monétique, comptes inter-sièges), des fonds spéciaux et budgétaires à rapprocher (avance à la SNIT, programme de résorption des logements rudimentaires), des garanties mal inventoriées et l'absence de provision pour les indemnités de départ à la retraite (14,4 MD en 2011, 16,1 MD en 2012) ; en 2012, 322 MD d'engagements d'entreprises publiques en difficulté sont classés en actifs courants [@bvmt-ef-bh-2011-individuel, p. 6 ; @bvmt-ef-bh-2012-individuel, p. 3].
+- **2013 à 2016 : dix à onze motifs par an.** Les avocats ne répondent pas à la demande de confirmation (93 sur 152 en 2013, 96 sur 108 en 2014, 102 sur 110 en 2015, 99 sur 110 en 2016), des états financiers récents ou des notations manquent pour des clients importants, les garanties hypothécaires ne sont pas évaluées de façon indépendante, les produits ne sont pas identifiés par client et les créances ne sont pas reprises de façon exhaustive dans le tableau des engagements (452,7 MD en 2013). Les suspens sur les valeurs de la clientèle gérées par la banque atteignent 192,8 MD au débit en 2014, 223,4 MD en 2015 et 281,8 MD en 2016, et la comptabilité multidevises n'est pas conforme à la norme comptable n° 23 [@bvmt-ef-bh-2013-individuel, p. 22 ; @bvmt-ef-bh-2014-individuel, p. 6 ; @bvmt-ef-bh-2015-individuel, p. 6 ; @bvmt-ef-bh-2016-individuel, p. 6].
+- **2017 à 2021 : des réserves moins nombreuses.** Six motifs en 2017, quatre en 2019 et en 2020, trois en 2021 : les états financiers et la notation des relations (jusqu'en 2020), le recensement des garanties (de 2019 à 2021), l'identification des produits par client et les fonds budgétaires de l'État [@bvmt-ef-bh-2017-individuel, p. 31 ; @bvmt-ef-bh-2019-individuel, p. 4 ; @bvmt-ef-bh-2020-individuel, p. 5 ; @bvmt-ef-bh-2021-individuel, p. 6].
+- **2022 à 2024 : deux motifs.** Les insuffisances du système d'information, qui empêchent d'identifier les produits par client et laissent des suspens non apurés (en 2024, une mission d'apurement est en cours et son impact n'est pas estimable), et les fonds budgétaires confiés par l'État, dont les passifs ne sont pas confirmés par le ministère des Finances [@bvmt-ef-bh-2022-individuel, p. 39 ; @bvmt-ef-bh-2023-individuel, p. 41 ; @bvmt-ef-bh-2024-individuel, p. 47].
+- **Une réserve qui ne change pas.** Les fonds budgétaires confiés par l'État sont signalés dans chacun des treize exercices lus [@bvmt-ef-bh-2011-individuel ; @bvmt-ef-bh-2012-individuel ; @bvmt-ef-bh-2013-individuel ; @bvmt-ef-bh-2014-individuel ; @bvmt-ef-bh-2015-individuel ; @bvmt-ef-bh-2016-individuel ; @bvmt-ef-bh-2017-individuel ; @bvmt-ef-bh-2019-individuel ; @bvmt-ef-bh-2020-individuel ; @bvmt-ef-bh-2021-individuel ; @bvmt-ef-bh-2022-individuel ; @bvmt-ef-bh-2023-individuel ; @bvmt-ef-bh-2024-individuel].
+
+```{python}
+#| label: fig-ep-bh-cac
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.figure_cac(
+    "BH", "bh-bank",
+    caption=("Les réserves des commissaires aux comptes sur les comptes individuels de la BH, par thème et par "
+             "exercice, leur nombre, et le délai de publication des états financiers annuels, d'après les états "
+             "financiers et les publications de la Bourse de Tunis. Source : [@bvmt-ef-bh-2011-individuel ; @bvmt-ef-bh-2012-individuel ; @bvmt-ef-bh-2013-individuel ; @bvmt-ef-bh-2014-individuel ; @bvmt-ef-bh-2015-individuel ; @bvmt-ef-bh-2016-individuel ; @bvmt-ef-bh-2017-individuel ; @bvmt-ef-bh-2019-individuel ; @bvmt-ef-bh-2020-individuel ; @bvmt-ef-bh-2021-individuel ; @bvmt-ef-bh-2022-individuel ; @bvmt-ef-bh-2023-individuel ; @bvmt-ef-bh-2024-individuel]"),
+    note_lecture=(
+        "En haut, une case par thème de réserve et par exercice ; en gris, un exercice dont les états individuels ne "
+        "sont pas lus (2018). Au milieu, le nombre de motifs. En bas, le nombre de jours entre le 31 décembre de "
+        "l'exercice et la date que la Bourse porte à la publication des états individuels. Le thème d'un motif est "
+        "un classement fixé dans le relevé (onglet des données), non un jugement du rapport."))
+```
+
+::: {.chronologie-repliable titre="L'opinion des commissaires aux comptes sur les comptes de la BH et les motifs de réserve, exercice par exercice, 2011-2024"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_opinions(
+    "BH",
+    caption=("L'opinion des commissaires aux comptes sur les comptes individuels de la BH et les motifs de "
+             "réserve, d'après le rapport général joint aux états financiers de la Bourse de Tunis (2011 à 2017, "
+             "2019 à 2024). Chaque motif résume l'intitulé du rapport, avec la page "),
+    tbl_id="tbl-ep-bh-cac")
+```
+
+:::
+
+<!-- TODO (documentaliste) : BH : (a) sources des changements de nom de 2019 : Banque de l'habitat devenue BH Bank (AGE du 30 avril 2019), Assurances Salim devenue BH Assurance (AGE du 8 août 2019), Modern Leasing devenue BH Leasing (AGE du 11 octobre 2019, bvmt.com.tn/sites/default/files/societes/modern-leasing/assemblee-generale/ml-assemblee-generale-extraordinaire-11-10-2019.pdf), SICAV BH-Placement devenue BH-Capitalisation (effet du 2 janvier 2019, communiqué CMF) ; pas de source trouvée pour SIM SICAR/BH Equity, SOPIVEL/BH Immo, Général Recouvrement/BH Recouvrement, SICAF BH Epargne Investissement/BH SICAF : rapprochement par les pourcentages seulement. (b) rapport de 2017 : le texte annonce « 12 entités » (11 filiales par intégration globale et une entreprise associée) outre la mère, le tableau imprime la mère et 11 lignes (10 filiales par intégration globale et la TFB) ; le texte semble compter la mère parmi les 11 filiales, alors que ceux de 2019, 2021 et 2022 comptent 10 filiales hors mère (vérifié : même effectif de 10 filiales dans le tableau de 2018 lu dans le rapport de 2019). (c) exercices 2023 et 2024 : rapport de 2023 en deux parties sans tableau lisible par le texte, rapport de 2024 corrompu (à retélécharger). (d) exercice 2018 : états individuels absents de la page de la Bourse, rapport annuel 2018 de la BH à chercher dans l'Internet Archive ; délai de 395 jours pour 2013 à vérifier sur la page de la Bourse. -->
 
 ## La Banque nationale agricole {#sec-ep-ge-bna}
 
