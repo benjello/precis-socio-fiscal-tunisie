@@ -29,15 +29,20 @@ permissions:
 jobs:
   verifier-liens:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v5
 
       - uses: astral-sh/setup-uv@v7
 
+      # Sur une PR qui touche le script ou ce workflow, un essai court (les adresses de la STEG) ;
+      # le passage complet, qui interroge un millier d'adresses et l'Internet Archive à son
+      # rythme, est celui du lundi ou du déclenchement à la main.
       - name: Vérifier les liens
+        env:
+          PERIMETRE: ${{ github.event_name == 'pull_request' && '--hote steg.com.tn' || '' }}
         run: |
-          uv run --isolated --no-project python scripts/verifier_liens_externes.py --archive --avertir | tee liens.txt
+          uv run --isolated --no-project python scripts/verifier_liens_externes.py --archive --avertir $PERIMETRE | tee liens.txt
 
       - name: Résumé
         if: always()
