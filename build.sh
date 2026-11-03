@@ -4,6 +4,9 @@
 # Usage:
 #   ./build.sh            # full build (HTML + PDF) — le PDF est le défaut
 #   ./build.sh --no-pdf   # skip PDF rendering
+#   ./build.sh --list-units          # liste JSON des livres (un par langue et par livre)
+#   ./build.sh --only fr/informel    # rend UN livre (ni pages générales, ni assemblage)
+#   ./build.sh --assemble            # pages générales + assemblage, sans rendre de livre
 #   ./build.sh --help     # affiche l'aide
 #
 # Attention : une option inconnue sort en code 2. Si vous appelez ce script
@@ -23,6 +26,9 @@ BOOKS=(prestations_sociales retraites fiscalite remunerations_publiques cotisati
 PAGES=(index comment-lire comment-constitue a-propos principes-structure annexe-pib index-institutions parcours-atmp)
 
 DO_PDF=true
+ONLY_UNIT=""
+ASSEMBLE_ONLY=false
+LIST_UNITS=false
 
 usage() {
   cat <<'USAGE'
@@ -31,7 +37,14 @@ build.sh — rend tous les précis Quarto et assemble le site local.
 Usage :
   ./build.sh            build complet (HTML + PDF)
   ./build.sh --no-pdf   rend le HTML seul, sans PDF
+  ./build.sh --list-units          liste JSON {"include":[…]} des livres à rendre
+  ./build.sh --only fr/informel    rend UN livre, sans pages générales ni assemblage
+  ./build.sh --assemble            pages générales et assemblage, sans rendre de livre
   ./build.sh --help     affiche cette aide
+
+Le workflow `.github/workflows/rendre.yml` rend un livre par job (`--only`) puis assemble
+le site (`--assemble`) : les livres se rendent en parallèle et un livre inchangé n'est pas
+rendu de nouveau.
 
 Le PDF est produit PAR DÉFAUT ; il n'existe pas d'option « --pdf ».
 
@@ -45,18 +58,58 @@ Codes de retour :
 USAGE
 }
 
-for arg in "$@"; do
-  case "$arg" in
+while [[ $# -gt 0 ]]; do
+  case "$1" in
     --no-pdf)     DO_PDF=false ;;
+    --list-units) LIST_UNITS=true ;;
+    --assemble)   ASSEMBLE_ONLY=true ;;
+    --only)
+      shift
+      if [[ $# -eq 0 || "$1" != */* ]]; then
+        echo "build.sh : --only attend « langue/livre » (par ex. fr/informel)." >&2
+        exit 2
+      fi
+      ONLY_UNIT="$1" ;;
     --help|-h)    usage; exit 0 ;;
     *)
-      echo "build.sh : option inconnue « $arg »." >&2
+      echo "build.sh : option inconnue « $1 »." >&2
       echo >&2
       usage >&2
       exit 2
       ;;
   esac
+  shift
 done
+
+# Un livre arabe dont `index.qmd` manque n'est pas encore traduit : il n'est ni rendu ni listé.
+unit_exists() {
+  local lang="$1" book="$2"
+  [[ -d "$PRECIS_DIR/$lang/$book" ]] || return 1
+  if [[ "$lang" == "ar" && ! -f "$PRECIS_DIR/$lang/$book/index.qmd" ]]; then
+    return 1
+  fi
+  return 0
+}
+
+if [[ -n "$ONLY_UNIT" ]] && ! unit_exists "${ONLY_UNIT%%/*}" "${ONLY_UNIT#*/}"; then
+  echo "build.sh : « $ONLY_UNIT » n'est pas un livre à rendre (voir --list-units)." >&2
+  exit 2
+fi
+
+if $LIST_UNITS; then
+  sep=""
+  printf '{"include":['
+  for lang in "${LANGUAGES[@]}"; do
+    for book in "${BOOKS[@]}"; do
+      if unit_exists "$lang" "$book"; then
+        printf '%s{"unite":"%s/%s","lang":"%s","book":"%s"}' "$sep" "$lang" "$book" "$lang" "$book"
+        sep=","
+      fi
+    done
+  done
+  printf ']}\n'
+  exit 0
+fi
 
 # ── Python / Quarto environment ────────────────────────────────────────────────
 if [[ -z "${QUARTO_PYTHON:-}" ]]; then
@@ -69,8 +122,10 @@ if [[ -z "${QUARTO_PYTHON:-}" ]]; then
   fi
 fi
 
-rm -rf "$LOCAL_SITE"
-mkdir -p "$LOCAL_SITE"
+if [[ -z "$ONLY_UNIT" ]]; then
+  rm -rf "$LOCAL_SITE"
+  mkdir -p "$LOCAL_SITE"
+fi
 
 # ── Step 0: Regenerate the bilingual glossary from precis/glossaire.yml ─────────
 if [[ -f "$ROOT_DIR/precis/glossaire.yml" ]]; then
@@ -102,6 +157,7 @@ for lang in "${LANGUAGES[@]}"; do
   # (voir plus bas) : on saute la page arabe absente, en le disant. L'accueil, lui, existe
   # dans les deux langues — son absence reste une erreur.
   for page in "${PAGES[@]}"; do
+    [[ -n "$ONLY_UNIT" ]] && break  # un seul livre demandé : pas de pages générales
     if [[ "$page" != "index" && "$lang" == "ar" && ! -f "$LANG_DIR/$page.qmd" ]]; then
       echo "[build] ⚠ $page ($lang) : traduction pas encore livrée — page sautée."
       continue
@@ -118,6 +174,10 @@ for lang in "${LANGUAGES[@]}"; do
   # ── Render each book ──────────────────────────────────────────────────────
   for book in "${BOOKS[@]}"; do
     BOOK_DIR="$LANG_DIR/$book"
+    $ASSEMBLE_ONLY && continue  # les `public/` sont déjà rendus
+    if [[ -n "$ONLY_UNIT" && "$ONLY_UNIT" != "$lang/$book" ]]; then
+      continue
+    fi
     echo ""
     echo "── $lang / $book ──────────────────────────────"
 
@@ -158,6 +218,16 @@ for lang in "${LANGUAGES[@]}"; do
       fi
     fi
   done
+
+  # Un seul livre rendu : son PDF est rangé dans `public/`, d'où l'assemblage le reprend
+  # (le workflow n'emporte que ce dossier).
+  if [[ -n "$ONLY_UNIT" ]]; then
+    ubook="${ONLY_UNIT#*/}"
+    if [[ "${ONLY_UNIT%%/*}" == "$lang" && -f "$LANG_DIR/$ubook/$ubook.pdf" && ! -f "$LANG_DIR/$ubook/public/$ubook.pdf" ]]; then
+      cp "$LANG_DIR/$ubook/$ubook.pdf" "$LANG_DIR/$ubook/public/$ubook.pdf"
+    fi
+    continue
+  fi
 
   # ── Assemble local site for this language ─────────────────────────────────
   mkdir -p "$LOCAL_SITE/$lang"
@@ -203,6 +273,14 @@ for lang in "${LANGUAGES[@]}"; do
 done
 
 # Optional root index redirect
+if [[ -n "$ONLY_UNIT" ]]; then
+  if [[ ${#FAILED_BOOKS[@]} -gt 0 ]]; then
+    echo "[build] ✗ Failed builds: ${FAILED_BOOKS[*]}"
+    exit 1
+  fi
+  echo "[build] ✓ $ONLY_UNIT rendered."
+  exit 0
+fi
 cat <<EOF > "$LOCAL_SITE/index.html"
 <!DOCTYPE html>
 <html lang="fr">
