@@ -22303,6 +22303,247 @@
       "archive": "Bourse de Tunis",
       "archive_location": "https://tunis-stockexchange.com/sites/default/files/societes/sotumag/etats-financiers/mgr-etats-financiers-annuels-31-12-2024.pdf",
       "note": "citation-key: bvmt-ef-sotumag-2024-individuel\nÉtats financiers individuels de l'exercice 2024, page de la société sur le site de la Bourse de Tunis. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-etats-financiers/sotumag/2024_individuel.pdf (241104 octets, SHA-256 da5e37eee6875f637284b7085ca849f5ee417c1ffd9b0c2cdbd009831a40d8fb), ignorée par git. Cité pour : opinion des commissaires aux comptes et périmètre de consolidation. Preuve : couche texte du PDF, lue par scripts/opinions_cac.py et scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "ra-onh-2017-2018",
+      "type": "report",
+      "title": "Rapport d'activité de la campagne 2017-2018",
+      "author": [
+        {
+          "literal": "Office national de l'huile"
+        }
+      ],
+      "publisher": "Office national de l'huile",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Office national de l'huile, rapport d'activité 2017-2018",
+      "URL": "https://www.onh.com.tn/wp-content/uploads/2024/10/rapport_17_18-1.pdf",
+      "archive": "Site de l'éditeur",
+      "archive_location": "https://www.onh.com.tn/wp-content/uploads/2024/10/rapport_17_18-1.pdf",
+      "language": "ar",
+      "note": "citation-key: ra-onh-2017-2018\nRapport d'activité de la campagne oléicole 2017-2018 (en arabe), consulté sur le site de l'éditeur le 04/11/2026 ; aucune capture de l'Internet Archive. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/onh/2017-2018_rapport_activite.pdf (780312 octets, SHA-256 100c7d61c9c0d6d48b8ff6cdb343a05b2fb9db4cc05295ed097b2ca6a5d0ee91), ignorée par git. Cité pour : inventaire des documents en ligne de l'Office (listes/inventaire-rapports-offices.csv) ; le document ne contient ni états financiers ni rapport des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-onh-2018-2019",
+      "type": "report",
+      "title": "Rapport d'activité de la campagne 2018-2019",
+      "author": [
+        {
+          "literal": "Office national de l'huile"
+        }
+      ],
+      "publisher": "Office national de l'huile",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Office national de l'huile, rapport d'activité 2018-2019",
+      "URL": "https://www.onh.com.tn/wp-content/uploads/2024/10/rapport_18_19.pdf",
+      "archive": "Site de l'éditeur",
+      "archive_location": "https://www.onh.com.tn/wp-content/uploads/2024/10/rapport_18_19.pdf",
+      "language": "ar",
+      "note": "citation-key: ra-onh-2018-2019\nRapport d'activité de la campagne oléicole 2018-2019 (en arabe), consulté sur le site de l'éditeur le 04/11/2026 ; aucune capture de l'Internet Archive. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/onh/2018-2019_rapport_activite.pdf (686014 octets, SHA-256 dbc3ef471d70990598a6589c869ec1353e2f322b31673b7f349d96120699bbaf), ignorée par git. Cité pour : inventaire des documents en ligne de l'Office (listes/inventaire-rapports-offices.csv) ; le document ne contient ni états financiers ni rapport des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-onh-2019-2020",
+      "type": "report",
+      "title": "Rapport d'activité de la campagne 2019-2020",
+      "author": [
+        {
+          "literal": "Office national de l'huile"
+        }
+      ],
+      "publisher": "Office national de l'huile",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Office national de l'huile, rapport d'activité 2019-2020",
+      "URL": "https://www.onh.com.tn/wp-content/uploads/2024/10/rapport_19_20.pdf",
+      "archive": "Site de l'éditeur",
+      "archive_location": "https://www.onh.com.tn/wp-content/uploads/2024/10/rapport_19_20.pdf",
+      "language": "ar",
+      "note": "citation-key: ra-onh-2019-2020\nRapport d'activité de la campagne oléicole 2019-2020 (en arabe), consulté sur le site de l'éditeur le 04/11/2026 ; aucune capture de l'Internet Archive. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/onh/2019-2020_rapport_activite.pdf (880020 octets, SHA-256 0539cc1da1555c0ed01acd117d37a6d9a0ea67a850906d7e56e5a1e0381fb770), ignorée par git. Cité pour : inventaire des documents en ligne de l'Office (listes/inventaire-rapports-offices.csv) ; le document ne contient ni états financiers ni rapport des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-onh-2020-2021",
+      "type": "report",
+      "title": "Rapport d'activité de la campagne 2020-2021",
+      "author": [
+        {
+          "literal": "Office national de l'huile"
+        }
+      ],
+      "publisher": "Office national de l'huile",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Office national de l'huile, rapport d'activité 2020-2021",
+      "URL": "https://www.onh.com.tn/wp-content/uploads/2024/10/rapport-dactivite-2021.pdf",
+      "archive": "Site de l'éditeur",
+      "archive_location": "https://www.onh.com.tn/wp-content/uploads/2024/10/rapport-dactivite-2021.pdf",
+      "language": "ar",
+      "note": "citation-key: ra-onh-2020-2021\nRapport d'activité de la campagne oléicole 2020-2021 (en arabe), consulté sur le site de l'éditeur le 04/11/2026 ; aucune capture de l'Internet Archive. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/onh/2020-2021_rapport_activite.pdf (689884 octets, SHA-256 17606957f0b7982758924cc17d684615f6cc2cca4725a85c5d94cc12da6a4a8a), ignorée par git. Cité pour : inventaire des documents en ligne de l'Office (listes/inventaire-rapports-offices.csv) ; le document ne contient ni états financiers ni rapport des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "ra-onh-2021-2022",
+      "type": "report",
+      "title": "Rapport d'activité de la campagne 2021-2022",
+      "author": [
+        {
+          "literal": "Office national de l'huile"
+        }
+      ],
+      "publisher": "Office national de l'huile",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Office national de l'huile, rapport d'activité 2021-2022",
+      "URL": "https://www.onh.com.tn/wp-content/uploads/2024/10/rapport-dactivite-2021-2022-final.pdf",
+      "archive": "Site de l'éditeur",
+      "archive_location": "https://www.onh.com.tn/wp-content/uploads/2024/10/rapport-dactivite-2021-2022-final.pdf",
+      "language": "ar",
+      "note": "citation-key: ra-onh-2021-2022\nRapport d'activité de la campagne oléicole 2021-2022 (en arabe), consulté sur le site de l'éditeur le 04/11/2026 ; aucune capture de l'Internet Archive. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/onh/2021-2022_rapport_activite.pdf (709577 octets, SHA-256 ebe4fb34acba20ea9f286f49f5b21b5aa9bb856d45d892805811a0826e983a44), ignorée par git. Cité pour : inventaire des documents en ligne de l'Office (listes/inventaire-rapports-offices.csv) ; le document ne contient ni états financiers ni rapport des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext)."
+    },
+    {
+      "id": "es-rnta-2019",
+      "type": "report",
+      "title": "États financiers 2019",
+      "author": [
+        {
+          "literal": "Régie nationale des tabacs et des allumettes"
+        }
+      ],
+      "publisher": "Régie nationale des tabacs et des allumettes",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            7,
+            19
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Régie nationale des tabacs et des allumettes, états financiers 2019",
+      "URL": "http://www.rnta.tn/fr/actualites/etats-financiers-2019",
+      "archive": "Site de l'éditeur",
+      "archive_location": "http://www.rnta.tn/fr/actualites/etats-financiers-2019",
+      "language": "ar",
+      "note": "citation-key: es-rnta-2019\nÉtats financiers de l'exercice 2019 (bilan en deux pages, état de résultat, tableau des flux de trésorerie ; en arabe), publiés le 19/07/2021 sur le site de l'éditeur en quatre images, consultés le 04/11/2026 ; aucune capture de l'Internet Archive. Copies locales : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/rnta/2019_etats_financiers_p1.jpg (650839 octets, SHA-256 3476f2ea2687ad2fc252cfae04542c72313278c93e52751a472d1c7035fce7f8) ; tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/rnta/2019_etats_financiers_p2.jpg (512089 octets, SHA-256 854372c9548390e0ef7b6cfdb29ca6c81651be89d42d06bf0cad000d3c086968) ; tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/rnta/2019_etats_financiers_p3.jpg (647860 octets, SHA-256 ead770b911181fd9cf473aa4763762fd8f56053e369a1ee39378c0ad5add1772) ; tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/rnta/2019_etats_financiers_p4.jpg (656851 octets, SHA-256 14a8d3878ae7211ae647929a1440457c347e5fcb0d719b48fe8fdbd8523d40ee), ignorées par git. Pages : 1, actif ; 2, capitaux propres et passif ; 3, état de résultat ; 4, flux de trésorerie. Cité pour : inventaire des documents en ligne de la Régie (listes/inventaire-rapports-offices.csv) et recoupement des chiffres de la section de la RNTA ; le document ne contient pas de rapport des commissaires aux comptes. Preuve : lu à l'image."
+    },
+    {
+      "id": "es-rnta-2020",
+      "type": "report",
+      "title": "États financiers 2020, après audit",
+      "author": [
+        {
+          "literal": "Régie nationale des tabacs et des allumettes"
+        }
+      ],
+      "publisher": "Régie nationale des tabacs et des allumettes",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            5
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            4
+          ]
+        ]
+      },
+      "title-short": "Régie nationale des tabacs et des allumettes, états financiers 2020",
+      "URL": "https://web.archive.org/web/20220808103747/http://www.rnta.tn/sites/default/files/2022-05/Etats%20financiers%202020apres%20audit.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.rnta.tn/sites/default/files/2022-05/Etats%20financiers%202020apres%20audit.pdf",
+      "language": "ar",
+      "note": "citation-key: es-rnta-2020\nÉtats financiers de l'exercice 2020 « après audit » (cinq pages : titre, bilan en deux pages, état de résultat, tableau des flux de trésorerie ; en arabe), consultés le 04/11/2026 sur le site de l'éditeur et dans la capture de l'Internet Archive du 08/08/2022. Copie locale : tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/rnta/2020_etats_financiers.pdf (220298 octets, SHA-256 befb09a626eebee49b6edffbdea7fde9d5c9fcf4e49c75c095d0ae5a1609519a), ignorée par git. Pages du PDF : 2, actif ; 3, capitaux propres et passif ; 4, état de résultat ; 5, flux de trésorerie. Cité pour : inventaire des documents en ligne de la Régie (listes/inventaire-rapports-offices.csv) et recoupement des chiffres de la section de la RNTA ; le document ne contient pas de rapport des commissaires aux comptes. Preuve : couche texte du PDF (pdftotext -layout), chiffres relus à l'écran."
     }
   ]
 }
