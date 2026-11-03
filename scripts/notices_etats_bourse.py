@@ -36,6 +36,7 @@ EDITEURS = {
     "bte-adp": ("bte", "Banque de Tunisie et des Emirats"),
     "tunis-re": ("tunisre", "Société tunisienne de réassurance"),
     "tunisair": ("tunisair", "Société tunisienne de l'air"),
+    "ciments-de-bizerte": ("cimbiz", "Les Ciments de Bizerte"),
 }
 
 
