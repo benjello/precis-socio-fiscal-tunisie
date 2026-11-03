@@ -315,6 +315,61 @@ La source est le rapport sur les entreprises publiques que le ministère des Fin
 :::::
 
 
+### Les rapports annuels en ligne {#sec-ep-ge-tt-rapports}
+
+Un seul document en ligne porte des rapports des commissaires aux comptes de Tunisie Telecom : le document de référence de 2010, déposé sur le site du Conseil du marché financier (CMF).
+
+- **Exercices 2007, 2008 et 2009.** Le document présente les états financiers individuels et consolidés des exercices clos les 31 décembre 2007, 2008 et 2009, en normes tunisiennes, et les états consolidés de la période de neuf mois close le 30 septembre 2010 [@es-tt-2009, p. 2]. Les opinions sur les comptes individuels de 2007 et de 2008 y sont reproduites [@es-tt-2009, p. 16-19] ; le rapport général de 2009 y figure en entier [@es-tt-2009, p. 209-212].
+- **Exercices 2004 à 2006.** Le document ne les contient pas ; il dit seulement que les commissaires émettent une réserve sur les immeubles apportés « depuis 2005 » [@es-tt-2009, p. 164].
+- **Exercices 2010 et suivants.** Aucun rapport n'a été relevé en ligne.
+
+<!-- TODO (documentaliste) : recherche du 4 novembre 2026 sans résultat pour les exercices 2004 à 2006 et 2010 à 2025 : le site de la société (pas de page « investisseurs » ; les adresses /investisseurs/, /institutionnel/ et /espace-investisseurs/ répondent 404 ; le plan du site ne contient que /particulier/a-propos-de-tt/), le CMF (Tunisie Telecom n'est pas dans les listes des sociétés faisant appel public à l'épargne ni dans celle des rapports annuels des sociétés), la Bourse de Tunis (société non cotée). Les rapports des commissaires aux comptes de 2005 et de 2006 sont à chercher ailleurs (Journal officiel, avis de sociétés du CMF). Les documents sont catalogués dans listes/inventaire-rapports-eau.csv. -->
+
+### L'opinion des commissaires aux comptes {#sec-ep-ge-tt-cac}
+
+**Les commissaires aux comptes de Tunisie Telecom émettent une opinion avec réserves sur les comptes individuels de chacun des trois exercices lus, 2007, 2008 et 2009, avec sept motifs en 2007, cinq en 2008 et un seul en 2009 ; la réserve sur les immeubles apportés à la création de la société figure dans les trois rapports.** [@es-tt-2009, p. 16-17 ; @es-tt-2009, p. 19 ; @es-tt-2009, p. 210]
+
+- **2007 : sept motifs.** L'audit est limité par sept points : les immobilisations en cours, reclassées d'après des fichiers hors comptabilité, et un inventaire physique non achevé ; le rattachement des charges à la période ; la situation juridique et comptable des immeubles apportés ; l'absence de comptabilité auxiliaire des clients, avec 49,8 MD d'encaissements non identifiés et 336,2 MD de provisions établies sur des situations hors comptabilité ; les avances sur consommation (23,6 MD) et les redevances perçues d'avance (17,9 MD) sans situation par abonné ; l'absence de réponse aux demandes de confirmation de soldes ; le passage du chiffre d'affaires prépayé à la méthode de la consommation, avec un ajustement préalable de 11 MD [@es-tt-2009, p. 16-17]. Les provisions cumulées sur les créances clients représentent 78 % en 2007 contre 84,4 % en 2006 [@es-tt-2009, p. 17]. Les commissaires attirent en outre l'attention sur un risque fiscal de 44,6 MD sur la TVA du chiffre d'affaires international, un ajustement d'impôt sur les sociétés de 10,9 MD au titre d'exercices antérieurs et des corrections d'erreurs qui réduisent les capitaux propres de 19,4 MD [@es-tt-2009, p. 17].
+- **2008 : cinq motifs.** Les immeubles apportés ; l'absence de comptabilité auxiliaire des clients, avec 52,5 MD d'encaissements non identifiés ; les avances sur consommation (23,6 MD) ; le chiffre d'affaires prépayé, avec un ajustement préalable de 22 MD ; l'absence de réponse aux demandes de confirmation de soldes [@es-tt-2009, p. 19]. Les provisions cumulées sur les créances clients représentent 73 % contre 78 % en 2007 [@es-tt-2009, p. 19]. Les observations portent sur l'inventaire physique des immobilisations corporelles, un apurement de 10,9 MD des redevances perçues d'avance, la migration des comptes fournisseurs vers un nouveau système sans balances auxiliaires, et des corrections d'erreurs qui réduisent les capitaux propres de 18,6 MD [@es-tt-2009, p. 19].
+- **2009 : un motif.** Seule la situation des immeubles apportés reste en réserve [@es-tt-2009, p. 210]. Les observations portent sur les clients (61,1 MD d'encaissements non identifiés ; un excédent de provisionnement de l'ordre de 46 MD, dont 20 MD repris par anticipation ; des provisions cumulées de 71 % contre 73 % en 2008), sur un apurement de 8,5 MD des avances sur consommation et sur le parc El Ghazala, de valeur comptable nette 19,9 MD, dont le ministre des Domaines de l'État a remis la propriété en question [@es-tt-2009, p. 210-211].
+
+```{python}
+#| label: fig-ep-tt-cac
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.figure_cac(
+    "TT", "tt",
+    caption=("Les réserves des commissaires aux comptes sur les comptes individuels de Tunisie Telecom, par thème "
+             "et par exercice, et leur nombre, d'après le document de référence de 2010. Source : "
+             "[@es-tt-2009, p. 16-17 ; @es-tt-2009, p. 19 ; @es-tt-2009, p. 210]"),
+    note_lecture=(
+        "En haut, une case par thème de réserve et par exercice ; en gris, l'exercice 2006, sans rapport lu. En bas, "
+        "le nombre de motifs. Tunisie Telecom n'est pas cotée : il n'y a pas de date de publication des états "
+        "financiers, donc pas de courbe des délais. Le thème d'un motif est un classement fixé dans le relevé "
+        "(onglet des données), non un jugement du rapport."),
+)
+```
+
+::: {.chronologie-repliable titre="L'opinion des commissaires aux comptes sur les comptes de Tunisie Telecom et les motifs de réserve, exercice par exercice, 2007-2009"}
+
+```{python}
+#| echo: false
+#| output: asis
+import sys; sys.path.insert(0, "."); sys.path.insert(0, "../../../scripts")
+from figures import cotees as ct
+ct.tableau_opinions(
+    "TT",
+    caption=("L'opinion des commissaires aux comptes sur les comptes individuels de Tunisie Telecom et les motifs "
+             "de réserve, d'après le document de référence de 2010 (exercices 2007 à 2009). Chaque motif résume "
+             "l'intitulé du rapport, avec la page du PDF."),
+    tbl_id="tbl-ep-tt-cac")
+```
+
+:::
+
+
 ## La Poste {#sec-ep-ge-poste}
 
 Ce que la Poste verse à l'État au titre de sa part dans les bénéfices est exposé au chapitre « Les dividendes et les versements au budget » (@sec-ep-dividendes-part).
