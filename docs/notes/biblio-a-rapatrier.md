@@ -6,9 +6,17 @@
 > `references.json` doit être **remontée dans Zotero** pour être pérenne et obtenir une
 > clé de citation stable (champ « Extra » : `citation-key: xxx`).
 
+## Seconde poussée Zotero du 02/11/2026 et descente mesurée (état du 3 novembre 2026)
+
+Cette section remplace l'état « 64 clés à verser » et « 103 à déclasser » des deux sections qui suivent.
+
+- **Seconde poussée (2 novembre 2026)** : 64 références créées dans Zotero (les clés ajoutées depuis la première poussée, listées dans la section suivante). 140 articles déclassés : ils étaient rattachés à un livre alors que plusieurs livres les citent (le déclassement les sort de la collection du livre pour qu'ils soient communs). Contrôle de rangement final : 0 à déclasser, 0 à ranger, 0 absente de Zotero, 132 sans citation (références versées dans Zotero qu'aucun chapitre ne cite).
+- **Descente (action « descendre ») mesurée, NON commitée** : 25 fichiers `references.json` touchés, 440 entrées ajoutées, 657 retirées, 4 014 modifiées. La plupart des écarts sont des notes plus anciennes côté Zotero : `pousser-tout` crée les notices absentes et ne met pas à jour celles qui existent, donc Zotero garde la note d'avant les corrections faites à la main dans les fichiers. Une descente commitée telle quelle écraserait ces corrections.
+- **Décision en attente (humain)** : ne rien commiter de la descente. Trier clé par clé (entrées ajoutées, retirées, modifiées) avant une éventuelle action « corriger », qui renvoie dans Zotero la version des fichiers locaux. Rien n'est à faire d'ici là.
+
 ## Clés ajoutées depuis la poussée du 02/11/2026 (état du 2 novembre 2026)
 
-Liste établie en comparant les `references.json` du commit qui a consigné la poussée (343badda) et ceux de `master` après la PR #718 : 64 clés absentes du premier état. Elle est indicative ; le `dry-run` de la prochaine poussée fait foi. Rien n'est poussé ; feu vert humain requis.
+Liste établie en comparant les `references.json` du commit qui a consigné la poussée (343badda) et ceux de `master` après la PR #718 : 64 clés absentes du premier état. Elle est indicative. *Ces 64 clés ont été créées dans Zotero par la seconde poussée du 2 novembre 2026 (section précédente).*
 - **Prestations sociales** : `decret81-731` (décret n° 81-731, allocataire du privé, PR #718).
 - **Rémunérations publiques** (21, FR et AR) : `arrete-1976-09-23-cabinets`, `circulaire-pm-45-1978`, `decret89-873`, `decret89-874`, `decret90-1622`, `decret90-1623`, `decret91-1665`, `decret91-1666`, `decret2006-1160` à `decret2006-1165`, `decret2006-1167`, `decret2006-1168`, `decret2009-910`, `cc-banques-avenant1-2014`, `cc-banques-avenant2-2016`, `cc-banques-avenant3-2017`, `cc-banques-avenant4-2019`.
 - **Entreprises publiques** (25, français seul) : `lf-2016-ar` (loi de finances pour 2016, édition arabe), `arrete2026-07-24-oc`, les décrets de l'Office du commerce (`decret2011-325-oc` à `decret2025-344-oc`, seize clés), de l'Office des terres domaniales (`decret73-390-otd`, `decret78-60-otd`, `decret2001-2430-otd`, `decret2001-2431-otd`) et de Tunisair (`decret2015-154-tunisair`, `-155-`, `-156-`).
@@ -16,7 +24,7 @@ Liste établie en comparant les `references.json` du commit qui a consigné la p
 - **Fiscalité** (2, FR et AR) : `minfin-dgi-rapport-2013`, `minfin-dgi-rapport-2014`.
 - **Changement de livre, sans clé nouvelle** : `loi63-26` (déjà dans les caisses et les cotisations) et les notices de l'histoire des soins (`loi58-67`, `loi60-13`, `decret69-399`, `decret74-899`, `decret91-487`, `arrete-1996-12-19-tarifs`, etc.) sont rattachées aussi au livre des prestations sociales depuis les PR #716 et #718. Le livre de rattachement est à revoir au prochain contrôle de rangement.
 - **Annexe de la circulaire n° 42** (PR #710, #713) : cite `circulaire-42-1996`, déjà versée ; aucune clé nouvelle.
-- **Déclassement des 103** clés citées par plusieurs livres : toujours en attente de feu vert humain (`appliquer-rangement-blanc` puis `appliquer-rangement`).
+- **Déclassement** des clés citées par plusieurs livres : fait le 2 novembre 2026 (140 articles, voir la section précédente).
 
 ## Lot B de la fiscalité (31/10/2026) : clés de l'IRPP et décrets de TVA, bibliographe
 
@@ -31,8 +39,8 @@ Séquence `verifier` (local : 3020 entrées, 0 perte) → `dry-run` (exécution 
 `pousser-tout` (exécution 41384601008 : 564 créées, 0 en échec, artefact `cles-zotero-creees`) →
 `ranger` (exécution 41384738194 : 564 classées, 0 en échec) → `controle-rangement` (exécution
 41384936642 : 0 absente de Zotero, 0 à ranger, 103 à déclasser, 133 sans citation).
-- **Reste** : le déclassement des 103 (`appliquer-rangement-blanc` puis `appliquer-rangement`),
-  sur feu vert humain ; la descente (`sync_biblio`) n'est pas lancée.
+- **Reste** *(état du 2 novembre au matin, dépassé : voir la section « Seconde poussée »)* : le déclassement des 103
+  (fait ensuite) ; la descente (`sync_biblio`), mesurée depuis et non commitée.
 
 ## Poussée Zotero du 25/10/2026 (neuf lois de finances issues de la fusion des doublons)
 
