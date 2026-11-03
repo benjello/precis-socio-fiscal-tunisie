@@ -4238,8 +4238,14 @@
     couverture: 'Lecture ciblée du 3 novembre 2026 de la loi n° 2009-40 en édition arabe (JORT n° 55, p. 2368 et 2374 ; PDF p. 4 à 14 océrisées en arabe, lues à l''image). Les art. 2 à 4 confirment le texte français : pourcentages fixés par décret, aucun chiffre dans la loi. Aucun décret de pourcentages dans ces pages. Corps des 361 autres fascicules arabes de 2009 à 2012 non océrisé. Note : docs/notes/ocr-loi-2009-40-edition-arabe-2026-11-03.md.'
     couvert_jusqu_au: 2009-07-10
     resultat: aucun
+  - date: 2026-11-03
+    role: documentaliste
+    sources: [jort_cache, iort, corpus_local]
+    couverture: 'Recherche des décrets de pourcentages de l''art. 3 de la loi n° 2009-40 : jort_cache (FTS et LIKE, français et arabe, 2009-2025 : « mesures exceptionnelles », « mise à la retraite », tabac, allumettes, jeux, SMS, « ضبط موارد », « النسب المنصوص عليها بالفصل 3 ») et fascicule n° 52 de 2011 (14 textes) ; miroir iort ; plein texte (pdftotext) de tous les fascicules français du corpus local de 2009 à 2024 (« article 3 … 2009-40 », « fonds / compte de financement des mesures », « messages courts » près de « tabac »). Seul texte de pourcentages : décret n° 2011-932 (JORT n° 52/2011, p. 1252 fr, 1246 ar, lu à l''image dans les deux éditions : 14 % tabac et allumettes, 100 % jeux SMS/téléphone/serveur vocal, année 2010 ; exécutoire le 21 juillet 2011 par calcul). Texte voisin : décret n° 2009-2508 du 3 septembre 2009 (JORT n° 72, p. 2654), droit sur les jeux au taux de 30 % (pas une part du compte). Fin du compte : loi de finances pour 2025, art. 17, 4) (JORT n° 149, p. 3423), qui écrit elle-même 14 % pour le nouveau fonds : la recherche de décrets s''arrête à 2024. Aucun décret pour 2009, 2011, 2012 ni autre exercice. Non couverts : corps des fascicules arabes de 2009 à 2012 (non océrisés), plein texte arabe de 2017 à 2024. Note : docs/notes/ocr-decrets-pourcentages-compte-retraite-2026-11-03.md.'
+    couvert_jusqu_au: 2009-07-10
+    resultat: aucun
   a_faire:
-  - lire le corps des fascicules arabes de 2009 à 2012 (seuls les sommaires ont été océrisés) ; parcourir le plein texte de 2018 à 2024
+  - lire le corps des fascicules arabes de 2009 à 2012 (seuls les sommaires ont été océrisés) ; parcourir le plein texte arabe de 2017 à 2024
 
 - id: r-cnrps-compte-retraite-avant-age-2009-depenses
   objet: dépenses et exécution du compte de financement des mesures exceptionnelles de mise à la retraite (loi n° 2009-40, art. 2 à 4), pensions et contributions imputées, de 2009 à son abrogation par la loi de finances pour 2025
