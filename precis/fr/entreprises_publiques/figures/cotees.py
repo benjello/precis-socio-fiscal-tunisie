@@ -289,6 +289,10 @@ THEMES_CAC = {
     "ecarts": "Écarts avec la base de gestion ou la BCT",
     "immobilisations": "Inventaire des immobilisations",
     "fonds_social": "« Réserves pour fonds social »",
+    "avocats": "Confirmations des avocats",
+    "retraites": "Indemnités de départ à la retraite",
+    "fonds_etat": "Fonds budgétaires de l'État",
+    "produits": "Produits identifiés par client",
 }
 
 
