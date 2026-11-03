@@ -16,8 +16,9 @@ sourçage par chiffre, le descriptif avant l'analyse, les études extérieures �
 5. Fiche opérationnelle par entreprise (M).
 6. Subventions : transparence et retards de paiement (M).
 7. Sources complémentaires à l'officiel (S, attend la réponse aux questions du mail).
-8. Prévisions à 2030-2035 (décision à prendre ; recommandation : ne pas le faire dans le volume).
-9. Portage collectif d'une ressource ouverte (S, hors volume).
+8. Portage collectif d'une ressource ouverte (S, hors volume).
+
+Écarté le 3 novembre 2026 : les prévisions à 2030-2035. Le volume reste descriptif et sourcé.
 
 ## 1. Matrice de couverture des données (S)
 
@@ -88,14 +89,7 @@ Travaux de la commission de la productivité de la Présidence du gouvernement e
 entreprises publiques. Attendre les références demandées dans le mail ; les ranger dans la partie « Rapports et
 études », chacune avec sa méthode, jamais mêlées aux chiffres budgétaires.
 
-## 8. Prévisions à 2030-2035 (décision)
-
-Le volume est descriptif et sourcé ; une projection suppose un modèle, des hypothèses et une méthode que le
-lecteur peut contester. Recommandation : ne pas l'ajouter au volume. Option si elle est voulue : une section
-d'études séparée, avec la méthode en tête, quelques scénarios simples sur les transferts et la dette (tendance,
-choc, ajustement), et un renvoi explicite vers les séries sources.
-
-## 9. Portage collectif (S, hors volume)
+## 8. Portage collectif (S, hors volume)
 
 Un volume en licence ouverte, relu par des experts tunisiens. À préciser : qui relit quoi, par quel canal
 (tickets du dépôt), et comment les retours sont consignés. Sans engagement de suivi tant qu'une personne n'a
