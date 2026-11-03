@@ -93,6 +93,16 @@ figtools.register_provenance(
              "La méthode n'est pas donnée pour 2020 et 2021 (STB)."))
 
 
+figtools.register_provenance(
+    "opinions-cac", titre="Opinion des commissaires aux comptes et motifs de réserve",
+    sources=_sources("opinions-cac"), unite="motifs",
+    perimetre=("rapport général des commissaires aux comptes de chaque rapport annuel lu : opinion et motifs de réserve, "
+               "rangés par thème ; délai de publication d'après la date que la Bourse de Tunis porte à la publication"),
+    caveats=("Le thème d'un motif est un classement fixé dans le relevé (colonne themes), non un jugement du rapport ; "
+             "un exercice sans rapport lu n'a pas de case. Le délai de publication est celui de la mise en ligne sur la "
+             "Bourse, non celui de l'assemblée."))
+
+
 def _md(entete: list[str], lignes: list[list[str]], caption: str, tbl_id: str, gauche: tuple[int, ...] = ()) -> None:
     out = ["| " + " | ".join(entete) + " |",
            "|---|" + "|".join("---" if i + 1 in gauche else ":-:" for i in range(len(entete) - 1)) + "|"]
@@ -261,8 +271,84 @@ def tableau_opinions(groupe: str, caption: str, tbl_id: str) -> None:
         exercice = f"**{r['exercice']}**" if r["exercice"] != precedent else ""
         opinion = r["opinion"] if r["exercice"] != precedent else ""
         precedent = r["exercice"]
-        lignes.append([exercice, opinion, r["motif"], f"[@{r['source']}, p. {r['page_pdf']} du PDF]"])
+        lignes.append([exercice, opinion, r["motif"], f"[@{r['source']}, p. {r['page_pdf']}]"])
     _md(["Exercice", "Opinion", "Motif de la réserve", "Source"], lignes, caption, tbl_id, gauche=(2,))
+
+
+THEMES_CAC = {
+    "suspens": "Comptes de suspens et soldes figés",
+    "hors_bilan": "Engagements hors bilan non exhaustifs",
+    "garanties": "Garanties reçues",
+    "si": "Système d'information, multidevises",
+    "provisions": "Provisions, risques antérieurs",
+    "notation": "Notation ou états financiers des relations",
+    "ecarts": "Écarts avec la base de gestion ou la BCT",
+    "immobilisations": "Inventaire des immobilisations",
+    "fonds_social": "« Réserves pour fonds social »",
+}
+
+
+def fig_cac(groupe: str, societe: str):
+    """Trois vues sur les mêmes exercices : thèmes de réserve (carte), nombre de motifs (barres), délai de publication (courbe)."""
+    import numpy as np
+    figtools.apply_lang_font()
+    ft = figtools.fig_text
+    d = _lire("opinions-cac")
+    d = d[d["groupe"] == groupe]
+    delais = _lire("delais-publication")
+    delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel")]
+    lus = sorted(int(x) for x in d["exercice"].unique())
+    fin = max(lus + [int(x) for x in delais["exercice"]])
+    exercices = list(range(min(lus) - 1, fin + 1))  # un exercice avant le premier rapport lu, jusqu'au dernier délai connu
+    delais = delais[delais["exercice"].astype(int) >= exercices[0]]
+    themes = list(THEMES_CAC)
+    carte = np.full((len(themes), len(exercices)), np.nan)
+    nombres = np.zeros(len(exercices))
+    for _, r in d.iterrows():
+        j = exercices.index(int(r["exercice"]))
+        nombres[j] += 1
+        for t in r["themes"].split(";"):
+            carte[themes.index(t), j] = 1
+    fig, (a1, a2, a3) = plt.subplots(3, 1, figsize=(9.5, 8), sharex=True, gridspec_kw={"height_ratios": [3.2, 1, 1.3], "hspace": 0.12})
+    # 1. thèmes : une case par thème et exercice ; gris : exercice sans rapport lu
+    for j, x in enumerate(exercices):
+        if x not in lus:
+            a1.add_patch(plt.Rectangle((j - 0.5, -0.5), 1, len(themes), color="#eaeef2", lw=0, zorder=0))
+    a1.imshow(np.ma.masked_invalid(carte), aspect="auto", cmap="Reds", vmin=0, vmax=1.6, extent=(-0.5, len(exercices) - 0.5, len(themes) - 0.5, -0.5), zorder=1)
+    a1.set_yticks(range(len(themes)), [ft(THEMES_CAC[t]) for t in themes], fontsize=8)
+    a1.set_title(ft("Thèmes des réserves (gris : exercice sans rapport lu)"), fontsize=9, loc="left")
+    for j in range(len(exercices)):
+        for i in range(len(themes)):
+            if not np.isnan(carte[i, j]):
+                figtools.infobulle(a1.plot([j], [i], "s", color="none")[0], f"{exercices[j]} · {THEMES_CAC[themes[i]]}")
+    # 2. nombre de motifs
+    a2.bar(range(len(exercices)), nombres, color="#cf222e", width=0.6)
+    for j, n in enumerate(nombres):
+        if n:
+            a2.text(j, n + 0.1, f"{int(n)}", ha="center", fontsize=8)
+    a2.set_ylim(0, max(nombres.max() + 1.5, 4))
+    a2.set_title(ft("Nombre de motifs de réserve"), fontsize=9, loc="left")
+    # 3. délai de publication
+    pts = sorted((int(r["exercice"]), int(r["jours"])) for _, r in delais.iterrows())
+    if pts:
+        a3.plot([exercices.index(x) for x, _ in pts], [j for _, j in pts], "-o", color="#0969da", ms=4)
+        for x, jours in pts:
+            a3.annotate(str(jours), (exercices.index(x), jours), xytext=(0, 6), textcoords="offset points", ha="center", fontsize=7)
+    a3.set_title(ft("Délai de publication des états financiers annuels individuels (jours après le 31 décembre)"), fontsize=9, loc="left")
+    a3.set_ylim(0, max([j for _, j in pts] + [100]) * 1.2)
+    a3.set_xticks(range(len(exercices)), [str(x) for x in exercices], fontsize=8)
+    for axe in (a1, a2, a3):
+        axe.grid(axis="y", color="#d0d7de", lw=0.5)
+        for cote in ("top", "right"):
+            axe.spines[cote].set_visible(False)
+    return fig
+
+
+def figure_cac(groupe: str, societe: str, caption: str, note_lecture: str | None = None) -> None:
+    d = _lire("opinions-cac")
+    figtools.figure_tabs(fig_cac(groupe, societe), d[d["groupe"] == groupe], "opinions-cac",
+                         slug=f"fig_ep_cotees_cac_{societe}", caption=caption, note_lecture=note_lecture, nominal=False)
+    plt.close("all")
 
 
 def tableau_registre(caption: str, tbl_id: str = "tbl-ep-registre-entreprises") -> None:

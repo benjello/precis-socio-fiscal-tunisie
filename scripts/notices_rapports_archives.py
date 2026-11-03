@@ -32,6 +32,20 @@ LIVRE = (
 # clé, éditeur, exercice, fichier sous bvmt-rapports-archives, objet cité, type de document
 SPECS = [
     (
+        "ra-stb-2016",
+        "Société tunisienne de banque",
+        2016,
+        "stb/20211103_Rapport_fr_STB_2016.pdf",
+        "opinion des commissaires aux comptes de l'exercice 2016",
+    ),
+    (
+        "ra-stb-2019",
+        "Société tunisienne de banque",
+        2019,
+        "stb/20211103_Rapport_2019_FRANCAIS.pdf",
+        "opinion des commissaires aux comptes de l'exercice 2019",
+    ),
+    (
         "ra-bna-2007",
         "Banque nationale agricole",
         2007,

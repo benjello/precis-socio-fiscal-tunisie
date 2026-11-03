@@ -71,9 +71,9 @@ def identifiant(nom: str) -> str:
     return trouve.group(1)
 
 
-def publications(identifiant_societe: str) -> list[tuple[str, str, str]]:
-    """(exercice, nature, chemin de la page) des états financiers annuels, du plus récent au plus ancien."""
-    trouvees: list[tuple[str, str, str]] = []
+def publications(identifiant_societe: str) -> list[tuple[str, str, str, str]]:
+    """(exercice, nature, chemin de la page, date de publication jj/mm/aaaa) des états financiers annuels."""
+    trouvees: list[tuple[str, str, str, str]] = []
     for categorie, page in ((c, p) for c in CATEGORIES for p in range(0, 12)):
         corps = demander(
             f"{RACINE}/publications-societes?type_societe={identifiant_societe}&categorie={categorie}&page={page}"
@@ -98,7 +98,8 @@ def publications(identifiant_societe: str) -> list[tuple[str, str, str]]:
             )
             if "consolid" in titre.lower() and nature == "individuel":
                 nature = "consolide"
-            cle = (trouve.group(2), nature, chemin)
+            date = re.match(r"\s*(\d{2}/\d{2}/\d{4})", titre)
+            cle = (trouve.group(2), nature, chemin, date.group(1) if date else "")
             if cle not in trouvees:
                 trouvees.append(cle)
                 nouvelles += 1
@@ -121,18 +122,73 @@ def inscrire(lignes: dict[str, dict]) -> None:
         ecrivain.writerows(sorted(existantes.values(), key=lambda r: r["fichier"]))
 
 
+def delais(societe: str, trouvees: list[tuple[str, str, str, str]]) -> None:
+    """Relevé « délai de publication » : jours entre le 31 décembre de l'exercice et la date que la Bourse porte à la
+    publication (la date de mise en ligne sur la Bourse, non celle de l'assemblée ni du rapport)."""
+    from datetime import datetime
+
+    sortie = (
+        Path(__file__).resolve().parent.parent
+        / "precis/fr/entreprises_publiques/listes/delais-publication.csv"
+    )
+    lignes = []
+    if sortie.exists():
+        with sortie.open(encoding="utf-8", newline="") as source:
+            lignes = [r for r in csv.DictReader(source) if r["societe"] != societe]
+    for exercice, nature, chemin, date in trouvees:
+        if not date:
+            continue
+        jours = (
+            datetime.strptime(date, "%d/%m/%Y") - datetime(int(exercice), 12, 31)
+        ).days
+        lignes.append(
+            {
+                "societe": societe,
+                "exercice": exercice,
+                "nature": nature,
+                "date_publication": date,
+                "jours": jours,
+                "page": chemin,
+            }
+        )
+    lignes.sort(key=lambda r: (r["societe"], r["exercice"], r["nature"]))
+    with sortie.open("w", encoding="utf-8", newline="") as ecrit:
+        ecrivain = csv.DictWriter(
+            ecrit,
+            fieldnames=[
+                "societe",
+                "exercice",
+                "nature",
+                "date_publication",
+                "jours",
+                "page",
+            ],
+        )
+        ecrivain.writeheader()
+        ecrivain.writerows(lignes)
+    print(f"{len(lignes)} lignes de délais écrites")
+
+
 def main() -> int:
     analyseur = argparse.ArgumentParser(description=(__doc__ or "").split("\n")[0])
     analyseur.add_argument("societe")
     analyseur.add_argument("--liste", action="store_true")
+    analyseur.add_argument(
+        "--delais",
+        action="store_true",
+        help="écrit le relevé des délais de publication, sans télécharger",
+    )
     options = analyseur.parse_args()
     identifiant_societe = identifiant(options.societe)
     trouvees = publications(identifiant_societe)
     print(
         f"{len(trouvees)} publications d'états financiers annuels pour {options.societe}"
     )
+    if options.delais:
+        delais(options.societe, trouvees)
+        return 0
     nouvelles: dict[str, dict] = {}
-    for exercice, nature, chemin in trouvees:
+    for exercice, nature, chemin, _date in trouvees:
         if options.liste:
             print(f"  {exercice} {nature} {chemin}")
             continue

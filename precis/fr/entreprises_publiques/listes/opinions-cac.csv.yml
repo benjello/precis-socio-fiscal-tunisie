@@ -3,7 +3,7 @@
 # Fichier lu par figures/cotees.py (tableau de la sous-section « La STB, opinion des commissaires aux comptes »).
 # Préparé par scripts/opinions_cac.py (lecture du texte des rapports annuels, colonne par colonne), puis relu à la
 # main sur la page du PDF : le motif est une reformulation courte de l'intitulé du rapport, sans qualification.
-# Les rapports lus sont les rapports annuels de 2011, 2013, 2014, 2015, 2017 et 2018 (comptes individuels) ;
+# Les rapports lus sont les rapports annuels de 2011, 2013, 2014, 2015, 2016, 2017, 2018 et 2019 (comptes individuels) ;
 # les autres exercices n'ont pas de rapport récupéré. La page est celle du PDF, non la page imprimée.
 
 format: long
@@ -17,5 +17,6 @@ colonnes:
   motif: motif de la réserve, en une ligne
   page_pdf: page du PDF où il figure
   source: clé de la notice du rapport
+  themes: "thèmes du motif, séparés par un point-virgule (suspens : comptes de suspens et soldes figés ; hors_bilan : engagements hors bilan non exhaustifs ; garanties : garanties reçues ; si : système d'information et comptabilité multidevises ; provisions : provisions et risques d'exercices antérieurs ; notation : notation ou états financiers des relations ; ecarts : écarts entre engagements comptables et base de gestion ou BCT ; immobilisations : inventaire physique ; fonds_social : compte « réserves pour fonds social »)"
 
-sources: [ra-stb-2011, ra-stb-2013, ra-stb-2014, ra-stb-2015, ra-stb-2017, ra-stb-2018]
+sources: [ra-stb-2011, ra-stb-2013, ra-stb-2014, ra-stb-2015, ra-stb-2016, ra-stb-2017, ra-stb-2018, ra-stb-2019]

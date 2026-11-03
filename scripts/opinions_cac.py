@@ -29,6 +29,18 @@ COLONNES = ["groupe", "exercice", "opinion", "rang", "motif", "page_pdf", "sourc
 DOCUMENTS = [
     (
         "STB",
+        2016,
+        "bvmt-rapports-archives/stb/20211103_Rapport_fr_STB_2016.pdf",
+        "ra-stb-2016",
+    ),
+    (
+        "STB",
+        2019,
+        "bvmt-rapports-archives/stb/20211103_Rapport_2019_FRANCAIS.pdf",
+        "ra-stb-2019",
+    ),
+    (
+        "STB",
         2011,
         "bvmt-rapports-archives/stb/20211103_Rapport_STB_Fr__2011.pdf",
         "ra-stb-2011",

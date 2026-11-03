@@ -16233,6 +16233,72 @@
       "archive": "Internet Archive (Wayback Machine)",
       "archive_location": "http://www.bna.tn/documents/%C3%89tats_financiers_consolid%C3%A9s_au_31_d%C3%A9cembre_2020.pdf",
       "note": "citation-key: ra-bna-2020\nÉtats financiers consolidés de l'exercice 2020, consulté dans la capture de l'Internet Archive du 17/03/2026 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/bna/20260317_États_financiers_consolidés_au_31_décembre_2020.pdf (2165565 octets, SHA-256 f039bdd3e672ad6b74a7218822b34e5ab84c4a54dfde19587a7fbdefaaaef088), ignorée par git. Cité pour : périmètre de consolidation au 31 décembre 2020. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "ra-stb-2016",
+      "type": "report",
+      "title": "Rapport annuel 2016",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, rapport annuel 2016",
+      "URL": "https://web.archive.org/web/20211103003216/http://www.stb.com.tn/uploads/Rapport%20fr%20STB%202016.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.stb.com.tn/uploads/Rapport%20fr%20STB%202016.pdf",
+      "note": "citation-key: ra-stb-2016\nRapport annuel de l'exercice 2016, consulté dans la capture de l'Internet Archive du 03/11/2021 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/stb/20211103_Rapport_fr_STB_2016.pdf (9295021 octets, SHA-256 453c4d136c182c47ad1c5a76faa1910132d87e60ff1e2ea0440ae543910ffe8a), ignorée par git. Cité pour : opinion des commissaires aux comptes de l'exercice 2016. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
+    },
+    {
+      "id": "ra-stb-2019",
+      "type": "report",
+      "title": "Rapport annuel 2019",
+      "author": [
+        {
+          "literal": "Société tunisienne de banque"
+        }
+      ],
+      "publisher": "Société tunisienne de banque",
+      "publisher-place": "Tunis",
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            2026,
+            11,
+            3
+          ]
+        ]
+      },
+      "title-short": "Société tunisienne de banque, rapport annuel 2019",
+      "URL": "https://web.archive.org/web/20211103003216/http://www.stb.com.tn/uploads/indicateurs%20d'activite/Rapport%202019%20FRANCAIS.pdf",
+      "archive": "Internet Archive (Wayback Machine)",
+      "archive_location": "http://www.stb.com.tn/uploads/indicateurs%20d'activite/Rapport%202019%20FRANCAIS.pdf",
+      "note": "citation-key: ra-stb-2019\nRapport annuel de l'exercice 2019, consulté dans la capture de l'Internet Archive du 03/11/2021 du site de l'éditeur. Copie locale : tunisia-data/data/raw/entreprises-publiques/bvmt-rapports-archives/stb/20211103_Rapport_2019_FRANCAIS.pdf (8872908 octets, SHA-256 704b3629bd022b321362b4d85640b823a8c6706b852b55cbced84dff9539c4d8), ignorée par git. Cité pour : opinion des commissaires aux comptes de l'exercice 2019. Preuve : couche texte du PDF, tableau lu ligne à ligne par scripts/perimetres_groupes_bancaires.py."
     }
   ]
 }
