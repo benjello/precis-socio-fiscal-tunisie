@@ -3,12 +3,13 @@
 # Fichier lu par figures/cotees.py (tableau de la sous-section « La STB, opinion des commissaires aux comptes »).
 # Préparé par scripts/opinions_cac.py (lecture du texte des rapports annuels, colonne par colonne), puis relu à la
 # main sur la page du PDF : le motif est une reformulation courte de l'intitulé du rapport, sans qualification.
-# Tunisair (groupe TUNISAIR) : états financiers individuels de la Bourse de Tunis, exercices 2002 à 2004, 2006 à 2010 et 2012 à 2022 ;
-# l'opinion de chaque exercice est le rapport général des commissaires aux comptes, relu à la main (2007 et 2008 : PDF numérisés, lus par
-# reconnaissance de caractères puis relus sur l'image) ; 2000, 2001, 2005 et 2011 sans rapport sur la page de la Bourse. Les observations
-# (continuité d'exploitation, avions présidentiels, OACA) ne sont pas des motifs de réserve et ne figurent pas dans ce relevé.
 # Les rapports lus sont les rapports annuels de 2011, 2013, 2014, 2015, 2016, 2017, 2018 et 2019 (comptes individuels) ;
 # les autres exercices n'ont pas de rapport récupéré. La page est celle du PDF, non la page imprimée.
+#
+# Tunisair (groupe TUNISAIR) : états financiers individuels de la Bourse de Tunis, exercices 2002 à 2004, 2006 à 2010 et 2012 à 2022 ;
+# l'opinion de chaque exercice est le rapport général des commissaires aux comptes, relu à la main (2007 et 2008 : PDF numérisés, lus par
+# reconnaissance de caractères puis relus sur l'image) ; 2000, 2001, 2005 et 2011 sans rapport sur la page de la Bourse. Les paragraphes
+# d'observations et les sections sur la continuité d'exploitation ne sont pas des motifs de réserve et ne figurent pas dans ce relevé.
 
 format: long
 cle_de_ligne: [groupe, exercice, rang]

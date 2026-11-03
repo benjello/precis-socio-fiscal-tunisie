@@ -49,6 +49,8 @@ ALIAS_ENTITES = {"STCVERITAS": "STCVVERITAS", "GENERALEDESVENTES": "GENERALEDEVE
                  "BANQUEDELHABITAT": "BHBANK", "ASSURANCESALIM": "BHASSURANCES", "MODERNLEASING": "BHLEASING", "SICAVBHPLACEMENT": "SICAVBHCAPITALISATION",
                  "SICAVBHOBLIGATOIRE": "SICAVBHOBLIGATAIRE", "SICAFBHEPARGNEINVESTISSEMENT": "BHSICAF", "GENERALRECOUVREMENT": "BHRECOUVREMENT", "SIMSICAR": "BHEQUITY",
                  "SOPIVEL": "BHIMMO", "STIMEC": "BHPRINT"}
+# Tunisair : « SEVENAIR » (2009) est rapproché de « TUNISAIR EXPRESS » (2010 à 2022) par le pourcentage (88,73 %) et l'activité ; TUNINTER (2006, 83,37 %) reste à part
+ALIAS_ENTITES.update({"SEVENAIR": "TUNISAIREXPRESS"})
 RAPPORTS = {"STB": "bvmt-ra-stb-2021", "BH": "bvmt-ra-bh-2021", "BNA": "bvmt-ra-bna-2021"}
 PAGES_RAPPORT = {"STB": "p. 96-97", "BH": "p. 240", "BNA": "p. 127"}
 COULEURS = {"STB": "#0969da", "BH": "#bc4c00", "BNA": "#1a7f37"}
@@ -217,7 +219,7 @@ def _matrice(groupe: str):
     return liste, exercices
 
 
-def fig_evolution(groupe: str):
+def fig_evolution(groupe: str, etiquette: str = "Pourcentage d'intérêt"):
     import numpy as np
     figtools.apply_lang_font()
     ft = figtools.fig_text
@@ -246,7 +248,7 @@ def fig_evolution(groupe: str):
     for cote in ("top", "right", "left", "bottom"):
         ax.spines[cote].set_visible(False)
     ax.tick_params(length=0)
-    fig.colorbar(image, ax=ax, fraction=0.025, pad=0.02, label=ft("Pourcentage d'intérêt"))
+    fig.colorbar(image, ax=ax, fraction=0.025, pad=0.02, label=ft(etiquette))
     fig.tight_layout()
     return fig
 
@@ -259,8 +261,8 @@ def table_evolution(groupe: str):
     return pd.DataFrame(lignes)
 
 
-def figure_evolution(groupe: str, caption: str, note_lecture: str | None = None) -> None:
-    figtools.figure_tabs(fig_evolution(groupe), table_evolution(groupe), PERIMETRE,
+def figure_evolution(groupe: str, caption: str, note_lecture: str | None = None, etiquette: str = "Pourcentage d'intérêt") -> None:
+    figtools.figure_tabs(fig_evolution(groupe, etiquette), table_evolution(groupe), PERIMETRE,
                          slug=f"fig_ep_cotees_evolution_{groupe.lower()}", caption=caption,
                          note_lecture=note_lecture, nominal=False)
     plt.close("all")
