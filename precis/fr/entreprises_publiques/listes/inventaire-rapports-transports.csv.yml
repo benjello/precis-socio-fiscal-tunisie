@@ -7,7 +7,7 @@
 # Registre national des entreprises est payant et n'a pas été consulté.
 # Les copies locales sont sous tunisia-data/data/raw/entreprises-publiques/rapports-entreprises/<sigle>/, ignorées par git.
 # Constat : aucun des documents trouvés ne contient de rapport des commissaires aux comptes (colonne rapport_cac = non). Ce sont
-# des rapports d'activité (Transtu 2010-2021, SNCFT 2010-2023, OMMP 2017 et 2022-2025) et les états financiers retraités de 2022
+# des rapports d'activité (Transtu 2010-2021, SNCFT 2010-2023, OMMP 2011, 2012, 2015, 2017 et 2022-2025) et les états financiers retraités de 2022
 # de Tunisie Autoroutes (bilan, résultat, flux, sans notes ni rapport). Recherche des termes « commissaire », « opinion »,
 # « certifi » dans la couche texte, des termes arabes correspondants après normalisation Unicode, et lecture directe des pages des
 # fichiers sans couche texte (SNCFT 2012 et 2016, Tunisie Autoroutes 2022).
@@ -29,4 +29,4 @@ colonnes:
   consultation: date de la consultation
   rapport_cac: « oui » si le document contient le rapport des commissaires aux comptes, « non » sinon (vide pour « aucun »)
 
-sources: [ra-transtu-2010, ra-transtu-2011, ra-transtu-2012, ra-transtu-2013, ra-transtu-2014, ra-transtu-2015, ra-transtu-2016, ra-transtu-2017, ra-transtu-2018, ra-transtu-2019, ra-transtu-2020, ra-transtu-2021, ra-sncft-2010, ra-sncft-2011, ra-sncft-2012, ra-sncft-2013, ra-sncft-2014, ra-sncft-2015, ra-sncft-2016, ra-sncft-2017, ra-sncft-2018, ra-sncft-2019, ra-sncft-2020, ra-sncft-2021, ra-sncft-2022, ra-sncft-2023, ra-ommp-2017, ra-ommp-2022, ra-ommp-2023, ra-ommp-2024, ra-ommp-2025, es-tunisie-autoroutes-2022]
+sources: [ra-transtu-2010, ra-transtu-2011, ra-transtu-2012, ra-transtu-2013, ra-transtu-2014, ra-transtu-2015, ra-transtu-2016, ra-transtu-2017, ra-transtu-2018, ra-transtu-2019, ra-transtu-2020, ra-transtu-2021, ra-sncft-2010, ra-sncft-2011, ra-sncft-2012, ra-sncft-2013, ra-sncft-2014, ra-sncft-2015, ra-sncft-2016, ra-sncft-2017, ra-sncft-2018, ra-sncft-2019, ra-sncft-2020, ra-sncft-2021, ra-sncft-2022, ra-sncft-2023, ra-ommp-2011, ra-ommp-2012, ra-ommp-2015, ra-ommp-2017, ra-ommp-2022, ra-ommp-2023, ra-ommp-2024, ra-ommp-2025, es-tunisie-autoroutes-2022]
