@@ -327,11 +327,16 @@ THEMES_CAC = {
     "tunisair_presentation": "Présentation des états financiers",
     "sotumag_chambres_froides": "Chambres froides louées comme boxes d'emballage (SOTUMAG)",
     "sotumag_pharmacies": "Pharmacies et laboratoires conventionnés (SOTUMAG)",
+    "bfpme_fonds_exterieurs": "Fonds suisse et fonds qatari dans les capitaux propres (BFPME)",
+    "bfpme_sotugar_interets": "Intérêts de trésorerie dus par la SOTUGAR (BFPME)",
 }
 
 
 def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
-    """Trois vues sur les mêmes exercices : thèmes de réserve (carte), nombre de motifs (barres), délai de publication (courbe)."""
+    """Trois vues sur les mêmes exercices : thèmes de réserve (carte), nombre de motifs (barres), délai de publication (courbe).
+
+    Une entreprise sans page à la Bourse (aucune ligne dans `delais-publication.csv`) n'a pas de délai de publication :
+    la figure n'a alors que les deux premières vues."""
     import numpy as np
     figtools.apply_lang_font()
     ft = figtools.fig_text
@@ -339,6 +344,7 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     d = d[d["groupe"] == groupe]
     delais = _lire("delais-publication")
     # un délai nul est la date de clôture que la Bourse porte faute de date de publication : il n'est pas tracé
+    avec_delais = bool((delais["societe"] == societe).any())  # sans aucune ligne : pas de page à la Bourse
     delais = delais[(delais["societe"] == societe) & (delais["nature"] == "individuel") & (delais["jours"].astype(int) > 0)]
     delais = delais[~delais["exercice"].astype(int).isin(delais_ecartes)]  # dates de la Bourse sans valeur (BTE)
     lus = sorted(int(x) for x in d["exercice"].unique())
@@ -348,7 +354,7 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
     utilises = {t for ligne in d.loc[~d["opinion"].str.startswith("sans"), "themes"] for t in ligne.split(";")}
     themes = [t for t in THEMES_CAC if t in utilises]  # une ligne par thème que le groupe porte : pas de ligne vide
     if not themes:  # groupe sans aucune réserve : les thèmes communs, en cases blanches
-        themes = [t for t in THEMES_CAC if not t.startswith(("star_", "tunisair_", "cimbiz_", "sotumag_", "tunisre_", "bte_"))]
+        themes = [t for t in THEMES_CAC if not t.startswith(("star_", "tunisair_", "cimbiz_", "sotumag_", "tunisre_", "bte_", "bfpme_", "bts_", "cpscl_"))]
     carte = np.full((len(themes), len(exercices)), np.nan)
     nombres = np.zeros(len(exercices))
     for _, r in d.iterrows():
@@ -358,7 +364,11 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
         nombres[j] += 1
         for t in r["themes"].split(";"):
             carte[themes.index(t), j] = 1
-    fig, (a1, a2, a3) = plt.subplots(3, 1, figsize=(9.5, 8), sharex=True, gridspec_kw={"height_ratios": [3.2, 1, 1.3], "hspace": 0.12})
+    if avec_delais:
+        fig, (a1, a2, a3) = plt.subplots(3, 1, figsize=(9.5, 8), sharex=True, gridspec_kw={"height_ratios": [3.2, 1, 1.3], "hspace": 0.12})
+    else:
+        fig, (a1, a2) = plt.subplots(2, 1, figsize=(9.5, 6.2), sharex=True, gridspec_kw={"height_ratios": [3.2, 1], "hspace": 0.12})
+        a3 = None
     # 1. thèmes : une case par thème et exercice ; gris : exercice sans rapport lu
     for j, x in enumerate(exercices):
         if x not in lus:
@@ -377,16 +387,18 @@ def fig_cac(groupe: str, societe: str, delais_ecartes: tuple[int, ...] = ()):
             a2.text(j, n + 0.1, f"{int(n)}", ha="center", fontsize=8)
     a2.set_ylim(0, max(nombres.max() + 1.5, 4))
     a2.set_title(ft("Nombre de motifs de réserve"), fontsize=9, loc="left")
-    # 3. délai de publication
-    pts = sorted((int(r["exercice"]), int(r["jours"])) for _, r in delais.iterrows())
-    if pts:
-        a3.plot([exercices.index(x) for x, _ in pts], [j for _, j in pts], "-o", color="#0969da", ms=4)
-        for x, jours in pts:
-            a3.annotate(str(jours), (exercices.index(x), jours), xytext=(0, 6), textcoords="offset points", ha="center", fontsize=7)
-    a3.set_title(ft("Délai de publication des états financiers annuels individuels (jours après le 31 décembre)"), fontsize=9, loc="left")
-    a3.set_ylim(0, max([j for _, j in pts] + [100]) * 1.2)
-    a3.set_xticks(range(len(exercices)), [str(x) for x in exercices], fontsize=8)
-    for axe in (a1, a2, a3):
+    # 3. délai de publication (seulement pour une société qui a une page à la Bourse)
+    if a3 is not None:
+        pts = sorted((int(r["exercice"]), int(r["jours"])) for _, r in delais.iterrows())
+        if pts:
+            a3.plot([exercices.index(x) for x, _ in pts], [j for _, j in pts], "-o", color="#0969da", ms=4)
+            for x, jours in pts:
+                a3.annotate(str(jours), (exercices.index(x), jours), xytext=(0, 6), textcoords="offset points", ha="center", fontsize=7)
+        a3.set_title(ft("Délai de publication des états financiers annuels individuels (jours après le 31 décembre)"), fontsize=9, loc="left")
+        a3.set_ylim(0, max([j for _, j in pts] + [100]) * 1.2)
+    bas = a3 if a3 is not None else a2
+    bas.set_xticks(range(len(exercices)), [str(x) for x in exercices], fontsize=8)
+    for axe in [a for a in (a1, a2, a3) if a is not None]:
         axe.grid(axis="y", color="#d0d7de", lw=0.5)
         for cote in ("top", "right"):
             axe.spines[cote].set_visible(False)
